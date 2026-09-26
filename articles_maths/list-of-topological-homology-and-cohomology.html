@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Topological Homology and Cohomology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-topological-homology-and-cohomology"><strong>List of Topological Homology and Cohomology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the homology and cohomology theories of Parts I to III, each with the coefficient system it takes and the article that introduces it. The theories fall into four families: the singular, simplicial and cellular theories of a space, which take coefficients in a commutative ring or a module over it; the de Rham, Dolbeault and Hodge theories of a smooth or complex manifold, which take real or complex coefficients through differential forms; the sheaf and Grothendieck theories, which take coefficients in a sheaf and are defined for a space, a scheme or a site; and the algebraic theories of a group, a Galois extension, a Lie algebra or an algebra, which take coefficients in a module over the group ring, the Galois group, the enveloping algebra or the enveloping algebra of the algebra. The generalised cohomology theories and the duality theorems are listed with them.</p>
+<p>Every entry points to the article that introduces the theory or the coefficient system. The article introduces nothing and proves nothing: it records the coefficients the introducing article allows and the degree in which the theory begins, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the theories that compute the same invariant it lists the pairs that do not agree — the de Rham cohomology, which takes real coefficients and is blind to torsion, so that it misses the $\mathbb{Z}/2$ in $H_1(\mathbb{RP}^2)$; the Čech cohomology, which agrees with sheaf cohomology over a good cover and disagrees with it in general; the Hochschild and cyclic theories, which are related by the Connes sequence and are not equal — each with the failure named and the article that records it.</p>
+<h2 id="the-singular-simplicial-and-cellular-theories">The Singular, Simplicial and Cellular Theories</h2>
+<p>These theories attach a graded module to a space, a pair or a simplicial complex, and their coefficients are a commutative ring $R$ with identity $1 \neq 0$, or a module $G$ over it. The default is $R = \mathbb{Z}$ and the modules are abelian groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Its coefficients</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>simplicial homology $H_n^\Delta(K;R)$</td>
+<td>an $R$-module, $R$ commutative with $1 \neq 0$; the chain groups are free of rank the number of $n$-simplices</td>
+<td><em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>singular homology $H_n(X;R)$</td>
+<td>an $R$-module; the $n$-chains are formal sums of continuous maps $\Delta_n \to X$</td>
+<td><em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>reduced homology $\tilde H_n(X;R)$</td>
+<td>an $R$-module; the augmentation removes the degree-zero class of a point</td>
+<td><em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>relative homology $H_n(X,A;R)$</td>
+<td>an $R$-module; the long exact sequence of a pair has connecting map $\partial$</td>
+<td><em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>cellular homology $H_n^{\mathrm{CW}}(X;R)$</td>
+<td>an $R$-module; agrees with the singular theory on a CW complex</td>
+<td><em>CW Complexes and Cellular Approximation</em></td>
+</tr>
+<tr>
+<td>singular cohomology $H^n(X;G)$</td>
+<td>an $R$-module $G$; contravariant in $X$, with the universal coefficient sequence and the Bockstein</td>
+<td><em>Cohomology and the Universal Coefficient Theorem</em></td>
+</tr>
+<tr>
+<td>the cohomology ring $H^*(X;R)$</td>
+<td>a commutative ring $R$; the cup product makes the direct sum a graded-commutative ring</td>
+<td><em>Cup and Cap Products</em></td>
+</tr>
+<tr>
+<td>homology and cohomology with local coefficients</td>
+<td>a local system, that is a representation of $\pi_1(X)$</td>
+<td><em>Poincaré Duality</em>; <em>The Leray–Serre Spectral Sequence</em></td>
+</tr>
+<tr>
+<td>the Künneth and cross products</td>
+<td>a commutative ring $R$, with a $\operatorname{Tor}$ correction over a general ring</td>
+<td><em>Cup and Cap Products</em></td>
+</tr>
+<tr>
+<td>the Bockstein homomorphism $\beta_m$</td>
+<td>the coefficient sequence $0 \to \mathbb{Z} \to \mathbb{Z} \to \mathbb{Z}/m \to 0$</td>
+<td><em>Cohomology and the Universal Coefficient Theorem</em></td>
+</tr>
+<tr>
+<td>the Euler characteristic $\chi(X)$</td>
+<td>integral; the alternating sum of the ranks of $H_n(X;\mathbb{Z})$</td>
+<td><em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>Alexander duality</td>
+<td>integral coefficients; the duality of a compact subset of $S^n$ with its complement</td>
+<td><em>Degree Theory and the Brouwer Fixed Point Theorem</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-de-rham-dolbeault-and-hodge-theories">The de Rham, Dolbeault and Hodge Theories</h2>
+<p>The theories of a manifold take their coefficients from the differential forms, so the coefficient field is $\mathbb{R}$ or $\mathbb{C}$ and the torsion of the integral theory is invisible.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Its coefficients</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de Rham cohomology $H^\bullet_{dR}(M)$</td>
+<td>real coefficients, through the differential forms; $H^\bullet_{dR}(M) \cong H^\bullet(M;\mathbb{R})$ for a smooth manifold</td>
+<td><em>Sheaves and the de Rham Complex</em></td>
+</tr>
+<tr>
+<td>the de Rham complex as a resolution</td>
+<td>the constant sheaf $\underline{\mathbb{R}}$; the Poincaré lemma makes the complex a resolution, so sheaf cohomology computes de Rham cohomology</td>
+<td><em>Sheaf Cohomology</em>; <em>Sheaves and the de Rham Complex</em></td>
+</tr>
+<tr>
+<td>Stokes' theorem and the de Rham pairing</td>
+<td>real coefficients; the integration of an $n$-form over an $n$-cycle</td>
+<td><em>Differential Forms and Stokes' Theorem</em></td>
+</tr>
+<tr>
+<td>Dolbeault cohomology $H^{p,q}_{\bar\partial}(M)$</td>
+<td>complex coefficients; the $\bar\partial$-closed $(p,q)$-forms modulo the $\bar\partial$-exact ones</td>
+<td><em>Sheaves and the de Rham Complex</em>; <em>Several Complex Variables</em></td>
+</tr>
+<tr>
+<td>the Hodge decomposition</td>
+<td>complex coefficients on a compact Kähler manifold; $H^k(M;\mathbb{C}) = \bigoplus_{p+q=k}H^{p,q}$</td>
+<td><em>Kähler Geometry</em>; <em>Sheaves and the de Rham Complex</em></td>
+</tr>
+<tr>
+<td>the Hodge theorem</td>
+<td>real coefficients; each de Rham class has a unique harmonic representative</td>
+<td><em>Differential Forms and Stokes' Theorem</em>; <em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>the de Rham theorem</td>
+<td>the comparison of the smooth theory with the singular one, over $\mathbb{R}$</td>
+<td><em>Sheaves and the de Rham Complex</em></td>
+</tr>
+<tr>
+<td>the Dolbeault theorem</td>
+<td>the identification of $H^{p,q}_{\bar\partial}$ with the sheaf cohomology $H^q(M,\Omega^p)$</td>
+<td><em>Sheaves and the de Rham Complex</em>; <em>Coherent Sheaves</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-sheaf-and-grothendieck-theories">The Sheaf and Grothendieck Theories</h2>
+<p>A sheaf cohomology theory takes its coefficients in a sheaf of abelian groups on a space, a scheme or a site; the groups are the right derived functors of the global-section functor, and the coefficients range from the constant sheaf to the coherent, the étale and the constructible.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Its coefficients</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sheaf cohomology $H^i(X,\mathcal{F})$</td>
+<td>a sheaf of abelian groups $\mathcal{F}$; $H^0$ is the global sections, and flabby and soft resolutions compute</td>
+<td><em>Sheaf Cohomology</em></td>
+</tr>
+<tr>
+<td>the comparison with singular cohomology</td>
+<td>the constant sheaf $\underline{A}$ on a locally contractible paracompact space; $H^i(X,\underline{A}) \cong H^i(X;A)$</td>
+<td><em>Sheaf Cohomology</em></td>
+</tr>
+<tr>
+<td>cohomology with support</td>
+<td>a family $\Phi$ of supports, in particular the compact supports $H^i_c$</td>
+<td><em>Sheaf Cohomology</em></td>
+</tr>
+<tr>
+<td>higher direct images and the Leray spectral sequence</td>
+<td>a sheaf $\mathcal{F}$ and a map $f$; $E_2^{p,q} = H^p(Y,R^qf_*\mathcal{F})$</td>
+<td><em>Sheaf Cohomology</em>; <em>The Leray–Serre Spectral Sequence</em></td>
+</tr>
+<tr>
+<td>Čech cohomology $\check H^p(X,\mathcal{F})$</td>
+<td>a sheaf $\mathcal{F}$; agrees with sheaf cohomology over a good cover by the Leray theorem</td>
+<td><em>Čech Cohomology</em></td>
+</tr>
+<tr>
+<td>coherent sheaf cohomology $H^i(X,\mathcal{F})$</td>
+<td>a coherent $\mathcal{O}_X$-module on a scheme or a complex manifold</td>
+<td><em>Coherent Sheaves</em>; <em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>Serre duality</td>
+<td>a coherent sheaf on a smooth projective variety; $H^i(X,\mathcal{F}) \cong H^{n-i}(X,\mathcal{F}^\vee\otimes\omega_X)^\vee$</td>
+<td><em>Coherent Sheaves</em>; <em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>sheaf cohomology on a site, and étale cohomology</td>
+<td>a sheaf on a Grothendieck site; the étale site of a scheme with coefficients in a sheaf of abelian groups</td>
+<td><em>Sheaves on Sites</em>; <em>Schemes</em></td>
+</tr>
+<tr>
+<td>the derived functors of a left exact functor</td>
+<td>an abelian category with enough injectives; $R^iF$ with the long exact sequence</td>
+<td><em>Derived Functors</em>; <em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>the Grothendieck spectral sequence</td>
+<td>the composite of two derived functors; $E_2^{p,q} = R^pG(R^qF(A))$</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>the Čech-to-derived spectral sequence</td>
+<td>a sheaf and its presheaf of cohomology; converges to the sheaf cohomology</td>
+<td><em>Čech Cohomology</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-algebraic-theories-groups-galois-lie-and-hochschild">The Algebraic Theories: Groups, Galois, Lie and Hochschild</h2>
+<p>These theories attach a graded module to an algebraic object, and the coefficients are modules over the group ring, the Galois group, the universal enveloping algebra, the algebra or the enveloping algebra of the algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Its coefficients</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>group cohomology $H^n(G,M)$</td>
+<td>a $G$-module $M$, equivalently a module over the group ring $\mathbb{Z}[G]$</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>group homology $H_n(G,M)$</td>
+<td>a $G$-module; $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}}$ and $M(G) = H_2(G,\mathbb{Z})$ is the Schur multiplier</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Tate cohomology $\hat H^n(G,M)$</td>
+<td>a $G$-module for a finite group $G$; defined in all degrees $n \in \mathbb{Z}$</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>the classification of group extensions</td>
+<td>an abelian group $M$; $H^2(G,M)$ is the extension classes</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>group cohomology through a classifying space</td>
+<td>a $G$-module, through $H^*(G;M) \cong H^*(BG;M)$</td>
+<td><em>Classifying Spaces and Cohomology Operations</em></td>
+</tr>
+<tr>
+<td>Galois cohomology $H^n(K,A)$</td>
+<td>a Galois module $A$: $\mu_n$, $\overline K^\times$, $\mathbb{Z}/n$, with the action of $G_K$</td>
+<td><em>Galois Cohomology</em></td>
+</tr>
+<tr>
+<td>the Brauer group as a second cohomology</td>
+<td>$H^2(K,\overline K^\times)$; the $n$-torsion ${}_n\operatorname{Br}(K)$</td>
+<td><em>Galois Cohomology</em>; <em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Lie algebra cohomology $H^\bullet(\mathfrak{g};M)$</td>
+<td>a $\mathfrak{g}$-module $M$, equivalently a module over $U(\mathfrak{g})$; the Chevalley–Eilenberg complex</td>
+<td><em>Lie Algebra Cohomology</em></td>
+</tr>
+<tr>
+<td>Hochschild homology and cohomology $HH_\bullet(A,M)$</td>
+<td>an $A$-bimodule $M$, equivalently a module over $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$</td>
+<td><em>Hochschild Homology</em></td>
+</tr>
+<tr>
+<td>Hochschild–Kostant–Rosenberg</td>
+<td>the identification of $HH_\bullet(A)$ with the Kähler differential forms for a smooth commutative algebra</td>
+<td><em>Hochschild Homology</em></td>
+</tr>
+<tr>
+<td>cyclic homology $HC_\bullet(A)$</td>
+<td>an algebra $A$ over a commutative ring, with a cyclic structure on the Hochschild complex</td>
+<td><em>Cyclic Homology</em></td>
+</tr>
+<tr>
+<td>cyclic cohomology $HC^\bullet(A)$</td>
+<td>an algebra over a field of characteristic zero; the dual complex, pairing with the $K$-theory</td>
+<td><em>Cyclic Cohomology</em></td>
+</tr>
+<tr>
+<td>the Dennis trace and the Chern character</td>
+<td>the maps $K_n(R) \to HH_n(R)$ and to cyclic homology</td>
+<td><em>Cyclic Homology</em></td>
+</tr>
+<tr>
+<td>the $\operatorname{Ext}$ and $\operatorname{Tor}$ families</td>
+<td>$R$-modules; the universal coefficient and Künneth corrections</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>algebraic $K$-theory</td>
+<td>the $K$-theory of a ring; coefficients in the category of projective modules</td>
+<td><em>K-Theory of Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-generalised-cohomology-theories-and-the-dualities">The Generalised Cohomology Theories and the Dualities</h2>
+<p>A generalised cohomology theory is a graded functor on spaces that satisfies the Eilenberg–Steenrod axioms except the dimension axiom; the corpus's examples take their coefficients in vector bundles, in spectra or in analytic data, and the duality theorems are the pairings that organise the coefficients.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theory</th>
+<th>Its coefficients</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>topological $K$-theory $K^*(X)$</td>
+<td>real or complex vector bundles, equivalently finitely generated projective modules over $C(X)$</td>
+<td><em>Topological K-Theory</em></td>
+</tr>
+<tr>
+<td>the Atiyah–Singer index theorem</td>
+<td>the $K$-theory of the symbol and the index pairing; the topological index equals the analytic one</td>
+<td><em>The Atiyah–Singer Index Theorem and K-Theory</em></td>
+</tr>
+<tr>
+<td>$K$-theory of operator algebras</td>
+<td>the projection classes of a $\mathrm{C}^*$-algebra in $K_0$ and the unitaries in $K_1$</td>
+<td><em>K-Theory of Operator Algebras</em></td>
+</tr>
+<tr>
+<td>$KK$-theory</td>
+<td>the Kasparov bimodules; the bivariant theory whose $KK(A,B)$ classifies the extensions</td>
+<td><em>KK-Theory</em></td>
+</tr>
+<tr>
+<td>higher algebraic $K$-theory</td>
+<td>the Quillen $K$-groups of an exact category; coefficients in the category of modules</td>
+<td><em>Higher Algebraic K-Theory</em></td>
+</tr>
+<tr>
+<td>cohomology operations and the Steenrod algebra</td>
+<td>$\mathbb{Z}/2$ and $\mathbb{Z}/p$ coefficients; the algebra of stable operations</td>
+<td><em>Classifying Spaces and Cohomology Operations</em></td>
+</tr>
+<tr>
+<td>cobordism</td>
+<td>the bordism classes of manifolds, with the Thom spectrum coefficients</td>
+<td><em>Cobordism and Surgery Theory</em></td>
+</tr>
+<tr>
+<td>Floer homology</td>
+<td>analytic coefficients, through the moduli spaces of trajectories; the homology of an infinite-dimensional Morse theory</td>
+<td><em>Floer Homology</em></td>
+</tr>
+<tr>
+<td>Poincaré duality</td>
+<td>a fundamental class over $\mathbb{Z}$ for a closed orientable manifold, and over $\mathbb{Z}/2$ in general</td>
+<td><em>Poincaré Duality</em></td>
+</tr>
+<tr>
+<td>Lefschetz and Poincaré–Lefschetz duality</td>
+<td>a compact manifold with boundary and the cohomology with compact supports</td>
+<td><em>Poincaré Duality</em></td>
+</tr>
+<tr>
+<td>the homology of a Lie group and its homogeneous spaces</td>
+<td>the classifying-space coefficients, through the Leray–Serre spectral sequence</td>
+<td><em>Homology of Classical Groups and Homogeneous Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-coefficients">The Coefficients</h2>
+<p>The coefficient system is the part of the theory that the article introducing the theory fixes, and the same letters appear in different theories with different meanings. The table collects the principal coefficients and the theory each serves.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Coefficient system</th>
+<th>The theory it serves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a commutative ring $R$ with $1 \neq 0$</td>
+<td>simplicial, singular, cellular homology and cohomology; the default is $\mathbb{Z}$</td>
+<td><em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>an $R$-module $G$</td>
+<td>singular cohomology, through $\operatorname{Hom}_R$; the universal coefficient theorem</td>
+<td><em>Cohomology and the Universal Coefficient Theorem</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Z}/m$</td>
+<td>the integral theories and the Bockstein; the torsion of the coefficient group</td>
+<td><em>Cohomology and the Universal Coefficient Theorem</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/2$</td>
+<td>characteristic classes, Steenrod operations and the unoriented cobordism</td>
+<td><em>Classifying Spaces and Cohomology Operations</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>de Rham cohomology and the de Rham theorem; torsion is invisible</td>
+<td><em>Sheaves and the de Rham Complex</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>Dolbeault cohomology and the Hodge decomposition of a Kähler manifold</td>
+<td><em>Several Complex Variables</em></td>
+</tr>
+<tr>
+<td>a local system</td>
+<td>homology and cohomology with local coefficients, through $\pi_1$</td>
+<td><em>Poincaré Duality</em></td>
+</tr>
+<tr>
+<td>a sheaf of abelian groups</td>
+<td>sheaf cohomology, with the comma convention $H^i(X,\mathcal{F})$</td>
+<td><em>Sheaf Cohomology</em></td>
+</tr>
+<tr>
+<td>a coherent $\mathcal{O}_X$-module</td>
+<td>coherent sheaf cohomology and Serre duality</td>
+<td><em>Coherent Sheaves</em></td>
+</tr>
+<tr>
+<td>a $G$-module, or a $\mathbb{Z}[G]$-module</td>
+<td>group cohomology and homology</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>a Galois module, such as $\mu_n$ or $\overline K^\times$</td>
+<td>Galois cohomology and the Brauer group</td>
+<td><em>Galois Cohomology</em></td>
+</tr>
+<tr>
+<td>a $\mathfrak{g}$-module</td>
+<td>Lie algebra cohomology, through the universal enveloping algebra</td>
+<td><em>Lie Algebra Cohomology</em></td>
+</tr>
+<tr>
+<td>an $A$-bimodule</td>
+<td>Hochschild homology and cohomology</td>
+<td><em>Hochschild Homology</em></td>
+</tr>
+<tr>
+<td>a vector bundle</td>
+<td>topological $K$-theory</td>
+<td><em>Topological K-Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-and-warnings">Non-examples and Warnings</h2>
+<p>The failures of agreement are recorded beside the theories, since the reader who expects one theorem of comparison must find where it fails.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why the expected statement fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H_1(\mathbb{RP}^2;\mathbb{Z}) = \mathbb{Z}/2$</td>
+<td>the torsion is invisible to de Rham cohomology, which takes real coefficients; the de Rham theorem sees only $H^\bullet(M;\mathbb{R})$</td>
+<td><em>Sheaves and the de Rham Complex</em></td>
+</tr>
+<tr>
+<td>the non-abelian fundamental group $\pi_1(X,x)$</td>
+<td>there is no homology or cohomology with coefficients in a non-abelian group; $H_1$ is the abelianisation, and the description of $\pi_1$ is of <em>The Fundamental Group and Covering Spaces</em></td>
+<td><em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>Čech cohomology in general</td>
+<td>it agrees with sheaf cohomology over a good cover and over a paracompact space, and it is only an approximation in general; the Leray theorem names the hypothesis</td>
+<td><em>Čech Cohomology</em></td>
+</tr>
+<tr>
+<td>singular cohomology of the constant sheaf</td>
+<td>the comparison $H^i(X,\underline{A}) \cong H^i(X;A)$ needs the space locally contractible and paracompact; the proof is by a flabby resolution</td>
+<td><em>Sheaf Cohomology</em></td>
+</tr>
+<tr>
+<td>group cohomology versus Lie algebra cohomology</td>
+<td>the two are different theories; Van Est's comparison requires the exponential, a manifold and a limit, and belongs to Parts II and III</td>
+<td><em>Lie Algebra Cohomology</em></td>
+</tr>
+<tr>
+<td>Hochschild homology versus cyclic homology</td>
+<td>the two are related by the Connes $SBI$ sequence and are not equal; the cyclic theory remembers the cyclic symmetry of the Hochschild complex</td>
+<td><em>Cyclic Homology</em></td>
+</tr>
+<tr>
+<td>Tate cohomology for an infinite group</td>
+<td>it is defined only for a finite group; for an infinite group the norm map has no meaning</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Floer homology</td>
+<td>an infinite-dimensional homology whose definition uses the analytic moduli spaces of Part III; it is named here with its coefficients and not computed</td>
+<td><em>Floer Homology</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Objects that a reader may expect to find in a list of homology and cohomology theories, and does not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Borel–Moore homology</td>
+<td>the corpus does not introduce it; the cohomology with compact supports $H^i_c$ is the form in which it meets the compactly supported theory</td>
+<td><em>Sheaf Cohomology</em></td>
+</tr>
+<tr>
+<td>Deligne cohomology</td>
+<td>not introduced; the Hodge-theoretic combination of the de Rham and integral theories is not one of the corpus's theories</td>
+<td><em>Sheaves and the de Rham Complex</em></td>
+</tr>
+<tr>
+<td>intersection cohomology</td>
+<td>not introduced as such; it appears only as a name in the Hecke-theoretic literature</td>
+<td><em>Hecke Algebras</em></td>
+</tr>
+<tr>
+<td>crystalline cohomology</td>
+<td>recorded with the divided-power constructions of the algebraic geometry and not as a theory of this list</td>
+<td><em>Divided Powers</em></td>
+</tr>
+<tr>
+<td>étale cohomology as a topological theory</td>
+<td>it is a sheaf cohomology on the étale site of a scheme and is listed with the sheaf theories</td>
+<td><em>Schemes</em>; <em>Sheaves on Sites</em></td>
+</tr>
+<tr>
+<td>Morse homology</td>
+<td>the corpus reaches it through Floer homology and does not introduce the finite-dimensional Morse theory</td>
+<td><em>Floer Homology</em></td>
+</tr>
+<tr>
+<td>orbifold and equivariant cohomology</td>
+<td>the corpus treats the equivariant theories through the classifying spaces and the group cohomology</td>
+<td><em>Classifying Spaces and Cohomology Operations</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the homology and cohomology theories of the corpus with their coefficients: the simplicial, singular and cellular theories with coefficients in a ring or a module; the de Rham, Dolbeault and Hodge theories with real or complex coefficients; the sheaf, Čech, coherent, étale and derived-functor theories with coefficients in a sheaf on a space, a scheme or a site; the group, Galois, Lie algebra, Hochschild and cyclic theories with coefficients in a module over the appropriate algebra; and the generalised theories of $K$-theory, cobordism and Floer homology, together with the duality theorems of Poincaré, Lefschetz, Serre and Alexander. Beside the theories that agree stand the pairs that do not: de Rham cohomology blind to torsion, Čech cohomology agreeing with the derived theory only under the Leray hypothesis, and the Hochschild and cyclic theories separated by the Connes sequence. The list introduces and proves nothing; it is the index of the (co)homology theories of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H_n(X;R)$, $H^n(X;G)$</td>
+<td>singular homology and cohomology; the semicolon separates the space from the coefficient</td>
+</tr>
+<tr>
+<td>$H^i(X,\mathcal{F})$</td>
+<td>sheaf cohomology; the comma is the convention of <em>Sheaf Cohomology</em>, deliberately distinct from the semicolon</td>
+</tr>
+<tr>
+<td>$\check H^p$</td>
+<td>Čech cohomology, with the check</td>
+</tr>
+<tr>
+<td>$\tilde H_n$, $\tilde H^n$</td>
+<td>reduced homology and cohomology</td>
+</tr>
+<tr>
+<td>$\partial$, $\delta$</td>
+<td>the boundary and the coboundary</td>
+</tr>
+<tr>
+<td>$\smile$, $\frown$</td>
+<td>the cup and cap products</td>
+</tr>
+<tr>
+<td>$\chi(X)$</td>
+<td>the Euler characteristic</td>
+</tr>
+<tr>
+<td>$[M] \in H_n(M;\mathbb{Z})$</td>
+<td>the fundamental class of a closed orientable manifold</td>
+</tr>
+<tr>
+<td>$H^i_c$</td>
+<td>cohomology with compact supports</td>
+</tr>
+<tr>
+<td>$R$, $G$, $M$, $A$</td>
+<td>a commutative coefficient ring with $1 \neq 0$; an $R$-module; a module of coefficients; a coefficient group or algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[G]$</td>
+<td>the group ring of $G$</td>
+</tr>
+<tr>
+<td>$A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$</td>
+<td>the enveloping algebra of an algebra $A$</td>
+</tr>
+<tr>
+<td>$U(\mathfrak{g})$</td>
+<td>the universal enveloping algebra of a Lie algebra</td>
+</tr>
+<tr>
+<td>$H^n(G,M)$, $H^n(K,A)$, $H^\bullet(\mathfrak{g};M)$, $HH_\bullet(A,M)$</td>
+<td>group, Galois, Lie algebra and Hochschild theories</td>
+</tr>
+<tr>
+<td>$HC_\bullet(A)$, $HC^\bullet(A)$</td>
+<td>cyclic homology and cyclic cohomology</td>
+</tr>
+<tr>
+<td>$K^*(X)$, $K_*(A)$</td>
+<td>topological $K$-theory; the $K$-theory of an operator algebra or a ring</td>
+</tr>
+<tr>
+<td>$\beta_m$</td>
+<td>the Bockstein homomorphism of the coefficient sequence $0 \to \mathbb{Z} \to \mathbb{Z} \to \mathbb{Z}/m \to 0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the singular, simplicial and cellular theories, the universal coefficient theorem and Poincaré duality.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the de Rham theory, the Čech–de Rham complex and the spectral sequences of a fibration.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for the derived functors, Ext and Tor, the spectral sequences and the algebraic theories of groups and Lie algebras.</li>
+<li>Joseph Bernstein and Valery Lunts, <em>Equivariant Sheaves and Functors</em> (Springer, 1994), for the sheaf-theoretic cohomology, the higher direct images and the derived categories used with them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

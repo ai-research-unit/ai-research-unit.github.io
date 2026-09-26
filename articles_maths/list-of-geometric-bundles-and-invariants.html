@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Geometric Bundles and Invariants — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-geometric-bundles-and-invariants"><strong>List of Geometric Bundles and Invariants</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the bundles of the corpus — the fibre, vector and principal bundles — the connections carried on them, and the characteristic classes and characteristic numbers that measure each bundle. Every entry points to the article that introduces the object, and the article introduces nothing and proves nothing.</p>
+<p>The list follows the chain that the two articles of the theme set out. A fibre bundle is a local product with transition functions; a principal bundle carries the structure group and the associated bundles are built from it; a connection on a bundle is the rule of parallel transport, and its curvature is the local measure of the failure of the transport to commute; the invariant polynomials of the curvature give the characteristic classes, and the evaluation of those classes on a manifold gives the characteristic numbers that the index theorem computes. The invariants of the list are the classes and numbers that are independent of the connection, and the classifying spaces and K-theory are the functors in which the classes are naturally indexed.</p>
+<p>The article records examples and non-examples side by side. Beside the bundles and their invariants it lists the structures that are not bundles, the bundles that carry no Euler class because they are not orientable, and the characteristic classes that vanish for a flat connection, each with the failure named and the article that records it.</p>
+<h2 id="fibre-vector-and-principal-bundles">Fibre, Vector and Principal Bundles</h2>
+<p>A fibre bundle is a map that is locally a product, and the structure of the bundle is encoded in its transition functions and in its structure group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a fibre bundle $\pi : E \to B$</td>
+<td>locally a product $U\times F$, with fibre $F$</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the transition functions $g_{\alpha\beta}$</td>
+<td>the clutching data, with $g_{\alpha\beta}g_{\beta\gamma} = g_{\alpha\gamma}$</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>a principal $G$-bundle $P \to M$</td>
+<td>a bundle with a free transitive right action of the structure group $G$</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the associated bundle $P\times_G F$</td>
+<td>the bundle with fibre $F$ built from a $G$-space and a principal bundle</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the frame bundle of $M$</td>
+<td>the principal bundle of the frames, whose associated bundles are the tensor bundles</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the tangent and cotangent bundles $TM$, $T^*M$</td>
+<td>the vector bundles of the tangent and cotangent spaces</td>
+<td><em>Smooth Manifolds and Differential Geometry</em></td>
+</tr>
+<tr>
+<td>a vector bundle $E \to B$</td>
+<td>a fibre bundle with a vector space as fibre and linear transitions</td>
+<td><em>Fibre Bundles, Connections and Curvature</em>; <em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the section space $\Gamma(E)$</td>
+<td>the smooth sections of a bundle; the fields of the theory</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the tautological bundle $\gamma_k$ on a Grassmannian</td>
+<td>the rank-$k$ bundle whose fibre is the subspace itself</td>
+<td><em>Grassmannians and Stiefel Manifolds</em></td>
+</tr>
+<tr>
+<td>a line bundle and its class in $H^2(B;\mathbb{Z})$</td>
+<td>the isomorphism classes of complex line bundles</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the canonical bundle $K_M$</td>
+<td>the top exterior power of the holomorphic cotangent bundle</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>the normal bundle and the tubular neighbourhood</td>
+<td>the bundle of the normal directions of a submanifold, and its disc bundle</td>
+<td><em>Differential Topology</em></td>
+</tr>
+<tr>
+<td>the Hopf fibration $S^3 \to S^2$</td>
+<td>the principal $U(1)$-bundle of the three-sphere over the sphere</td>
+<td><em>Spherical Geometry</em>, §The Three-Sphere and the Hopf Fibration; <em>Homotopy Groups and Fibrations</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The transition functions are the complete cocycle data of the bundle, and the principal bundle is the frame bundle of a vector bundle, so that the geometry of a vector bundle and the geometry of its frame bundle carry the same information. The associated-bundle construction produces from a representation of the structure group the tensor, spinor and density bundles that the corpus uses on manifolds.</p>
+<h2 id="connections-and-curvature">Connections and Curvature</h2>
+<p>A connection is a rule of parallel transport, given locally by a connection form, and its curvature measures the failure of the transport to commute.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a connection $\nabla$</td>
+<td>a derivation of the sections, $\nabla(fs) = df\otimes s + f\nabla s$</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the connection form in a frame $\omega = (\omega^i_{\ j})$</td>
+<td>$\nabla = d+\omega$, matrix-valued in the frame</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the change of frame $\omega' = g^{-1}\omega g + g^{-1}dg$</td>
+<td>the transformation of the connection, the gauge transformation rule</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>a connection form on a principal bundle $\omega \in \Omega^1(P;\mathfrak{g})$</td>
+<td>$\omega(A^{\#}) = A$ and $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the horizontal subspace $H_pP = \ker\omega_p$</td>
+<td>the complement to the vertical, defining the transport</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the curvature $R = d\omega + \omega\wedge\omega$</td>
+<td>the $\operatorname{End}(E)$-valued $2$-form measuring noncommutation</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the curvature of a principal connection $\Omega = d\omega + \frac12[\omega,\omega]$</td>
+<td>the $\mathfrak{g}$-valued curvature form</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the Bianchi identity $d^\nabla R = 0$</td>
+<td>the differential condition the curvature satisfies</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the holonomy group of a connection</td>
+<td>the group of the parallel transports around loops</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>a flat connection</td>
+<td>the connection with $R = 0$, locally trivial or a Maurer–Cartan form</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>a gauge transformation</td>
+<td>a change of frame, acting on the connection by the transformation rule</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the Levi-Civita connection</td>
+<td>the metric, torsion-free connection of the tangent bundle</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The curvature is tensorial, so its value at a point depends only on the vectors and not on the extension of the sections, and the Bianchi identity makes it the closed form of the connection. A flat connection has a global system of parallel sections after the passage to the universal cover, and the holonomy group is the algebraic invariant of a connection that the characteristic classes do not see; the Levi-Civita connection is the case in which the connection is determined by a metric.</p>
+<h2 id="characteristic-classes">Characteristic Classes</h2>
+<p>The invariant polynomials of the curvature are closed and their de Rham classes are independent of the connection, and they are the characteristic classes of the bundle.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>The property it measures</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Chern–Weil homomorphism</td>
+<td>the map $S^\bullet(\mathfrak{g}^*)^G \to H^{\mathrm{ev}}_{dR}(M)$ from invariant polynomials to cohomology</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the first Chern class $c_1(L)$</td>
+<td>the class of $\frac{i}{2\pi}\mathcal{F}$, the curvature of a line bundle</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the Euler class $e(E)$</td>
+<td>the class of a real oriented bundle of even rank, the obstruction to a nowhere-zero section</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Stiefel–Whitney classes $w_i(E) \in H^i(B;\mathbb{Z}/2)$</td>
+<td>the $\mathbb{Z}/2$ classes; $w_1$ is orientability and $w_2$ is the spin obstruction</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Chern classes $c_i(E) \in H^{2i}(B;\mathbb{Z})$</td>
+<td>the integral classes of a complex bundle, with $c(E\oplus F) = c(E)c(F)$</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Pontryagin classes $p_i(E)$</td>
+<td>the real classes, $p_i(E) = (-1)^ic_{2i}(E\otimes\mathbb{C})$</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Chern roots and the splitting principle</td>
+<td>the formal factorisation $c(E) = \prod_i(1+x_i)$</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Chern character $\operatorname{ch}(E)$</td>
+<td>the rational class with $K^0(B)\otimes\mathbb{Q} \cong H^{\mathrm{ev}}(B;\mathbb{Q})$</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the relations $p_i \equiv w_{2i}^2$ and $e \equiv w_n \pmod 2$</td>
+<td>the compatibility of the integral and $\mathbb{Z}/2$ classes</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Hirzebruch $L$-polynomial $L_k(p_1,\ldots,p_k)$</td>
+<td>the multiplicative polynomial $\sum_kL_k = \prod_j\frac{x_j}{\tanh x_j}$</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Todd class</td>
+<td>the multiplicative class of the index theorem for the Dolbeault complex</td>
+<td><em>The Atiyah–Singer Index Theorem and K-Theory</em></td>
+</tr>
+<tr>
+<td>the $\hat A$-genus</td>
+<td>the multiplicative class of the Dirac operator</td>
+<td><em>Spin Geometry</em>; <em>The Atiyah–Singer Index Theorem and K-Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The characteristic classes are the cohomological invariants of a bundle, they are natural under pullback, and they are computable from any connection by the invariant polynomials of its curvature. The splitting principle reduces the computation to the case of a sum of line bundles, and the multiplicative sequences — the $L$-polynomial, the Todd class and the $\hat A$-genus — are the generating series in which the classical index theorems are stated.</p>
+<h2 id="characteristic-numbers-and-the-index-theorem">Characteristic Numbers and the Index Theorem</h2>
+<p>A characteristic number is the evaluation of a characteristic class of the tangent bundle on the fundamental class, and the index theorem identifies it with the index of an elliptic operator.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a characteristic number $\langle\kappa(TM),[M]\rangle$</td>
+<td>the evaluation of a class of $TM$ on the fundamental class of a closed manifold</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Gauss–Bonnet theorem $\int_Me(TM) = \chi(M)$</td>
+<td>the Euler class integrates to the Euler characteristic</td>
+<td><em>Fibre Bundles, Connections and Curvature</em>; <em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the signature theorem</td>
+<td>$\operatorname{sign}(M) = \langle L_k,[M]\rangle$ for a closed manifold of dimension $4k$</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the $\hat A$-genus of a spin manifold</td>
+<td>the characteristic number of the Dirac operator</td>
+<td><em>Spin Geometry</em></td>
+</tr>
+<tr>
+<td>the index of an elliptic operator</td>
+<td>the difference of the dimensions of the kernel and cokernel</td>
+<td><em>The Atiyah–Singer Index Theorem and K-Theory</em></td>
+</tr>
+<tr>
+<td>the Atiyah–Singer index theorem</td>
+<td>the index is the evaluation of a characteristic class of the symbol</td>
+<td><em>The Atiyah–Singer Index Theorem and K-Theory</em></td>
+</tr>
+<tr>
+<td>the index of the Dirac operator</td>
+<td>$\hat A$-genus on a spin manifold, with the twisted version by a bundle</td>
+<td><em>The Atiyah–Singer Index Theorem and K-Theory</em>; <em>Spin Geometry</em></td>
+</tr>
+<tr>
+<td>the Riemann–Roch theorem</td>
+<td>the holomorphic Euler characteristic as a Todd-class number</td>
+<td><em>Algebraic Curves</em>; <em>The Atiyah–Singer Index Theorem and K-Theory</em></td>
+</tr>
+<tr>
+<td>the cobordism invariance of the characteristic numbers</td>
+<td>the numbers vanish on a boundary, defining the cobordism ring</td>
+<td><em>Cobordism and Surgery Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The characteristic numbers are the topological invariants of a closed manifold, and they are the integrals that appear on the analytic side of the index theorems. The theorem of Atiyah and Singer computes the index of an elliptic operator from the symbol, and its special cases are the Gauss–Bonnet, signature and Riemann–Roch theorems, each of which identifies a characteristic number with an analytic index.</p>
+<h2 id="classifying-spaces-and-k-theory">Classifying Spaces and K-Theory</h2>
+<p>The isomorphism classes of bundles over a base are classified by maps into a universal base, and K-theory is the cohomology theory in which the classes live.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the classifying space $BO(n)$, $BU(n)$</td>
+<td>the base of the universal bundle, with $\mathbf{Vect}_n^{\mathbb{K}}(B) \cong [B, BO(n)]$</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the universal bundle and the universal classes</td>
+<td>the bundle whose classes pull back to all the classes of the base</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the classifying map</td>
+<td>the map $B \to BO(n)$ whose pullback is the bundle</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Stiefel–Whitney and Chern classes as universal classes</td>
+<td>the generators of $H^*(BO(n))$ and $H^*(BU(n))$</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the K-theory group $K^0(B)$</td>
+<td>the Grothendieck group of the vector bundles, a cohomology theory</td>
+<td><em>Topological K-Theory</em></td>
+</tr>
+<tr>
+<td>the Chern character $K^0(B)\otimes\mathbb{Q} \cong H^{\mathrm{ev}}(B;\mathbb{Q})$</td>
+<td>the rational isomorphism between K-theory and cohomology</td>
+<td><em>Characteristic Classes</em>; <em>Topological K-Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The classifying space is the universal base of the rank-$n$ bundles, so that the characteristic classes are the pullbacks of the universal classes, and the homotopy classification of the bundles replaces the topological one. K-theory is the generalised cohomology theory in which the classes are the stable classes of bundles, and the index theorem is naturally a statement in it.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the geometric bundles and invariants, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a bundle or a characteristic class</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a sheaf on a space</td>
+<td>a presheaf with a gluing condition; a locally free sheaf is a bundle, but a general sheaf is not</td>
+<td><em>Sheaves and the de Rham Complex</em></td>
+</tr>
+<tr>
+<td>a distribution or a foliation</td>
+<td>a subbundle of the tangent bundle with an integrability condition, not itself a bundle over the base</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the Euler class of a non-orientable bundle</td>
+<td>the construction needs an orientation; only the reduction modulo two survives</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the integral Chern classes of a flat complex bundle</td>
+<td>they vanish in real cohomology by Chern–Weil, since the curvature is zero</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>a Möbius band as a trivial bundle</td>
+<td>the non-orientable real line bundle over the circle, non-trivial</td>
+<td><em>Topological K-Theory</em></td>
+</tr>
+<tr>
+<td>the tangent bundle of $S^2$ as a trivial bundle</td>
+<td>it is non-trivial, obstructed by the Euler class</td>
+<td><em>Characteristic Classes</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the bundles of the corpus and the invariants that measure them. The fibre, vector and principal bundles open the list, with the transition functions, the associated bundles, the frame and tautological bundles and the line bundles; the connections and their curvature follow, with the connection form, the gauge transformation rule, the Bianchi identity, the holonomy and the flat case; the characteristic classes are recorded, Chern, Stiefel–Whitney, Pontryagin and Euler, with the Chern–Weil homomorphism, the splitting principle, the Chern character and the multiplicative sequences; the characteristic numbers, the Gauss–Bonnet, signature and Riemann–Roch theorems and the Atiyah–Singer index theorem follow; and the classifying spaces and K-theory close the list. Beside the examples stand the non-examples: a sheaf and a foliation are not bundles, a non-orientable bundle has no Euler class, and the real Chern classes of a flat bundle vanish.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pi : E \to B$, $g_{\alpha\beta}$, $P\times_GF$</td>
+<td>Fibre bundle, transition functions, associated bundle</td>
+</tr>
+<tr>
+<td>$TM$, $T^*M$, $\Gamma(E)$, $K_M$</td>
+<td>Tangent and cotangent bundles, sections, canonical bundle</td>
+</tr>
+<tr>
+<td>$\nabla$, $\omega$, $R$, $\Omega$</td>
+<td>Connection, connection form, curvature, curvature form</td>
+</tr>
+<tr>
+<td>$c_i$, $w_i$, $p_i$, $e(E)$</td>
+<td>Chern, Stiefel–Whitney, Pontryagin and Euler classes</td>
+</tr>
+<tr>
+<td>$\operatorname{ch}$, $L_k$, $\hat A$, Todd</td>
+<td>Chern character, $L$-polynomial, $\hat A$-genus, Todd class</td>
+</tr>
+<tr>
+<td>$BO(n)$, $BU(n)$, $K^0(B)$</td>
+<td>Classifying spaces and K-theory</td>
+</tr>
+<tr>
+<td>$\langle\kappa(TM),[M]\rangle$</td>
+<td>Characteristic number</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{C}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}$, $\operatorname{End}$</td>
+<td>Adjoint action of the structure group on $\mathfrak{g}$; endomorphism bundle of a vector bundle</td>
+</tr>
+<tr>
+<td>$\mathbb{K}$</td>
+<td>The field of scalars of a bundle or of a classifying space</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$, $\operatorname{sign}(M)$</td>
+<td>The curvature of a line bundle, $\frac{i}{2\pi}\mathcal{F} = c_1(L)$; the signature of a closed manifold of dimension $4k$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John W. Milnor and James D. Stasheff, <em>Characteristic Classes</em> (Princeton University Press, 1974), for the bundle theory and the Stiefel–Whitney, Chern, Pontryagin and Euler classes.</li>
+<li>Shiing-Shen Chern, <em>Complex Manifolds without Potential Theory</em> (Springer, 2nd ed. 1979), for the Chern–Weil theory and the invariant polynomials of the curvature.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The Index of Elliptic Operators I", <em>Annals of Mathematics</em> 87 (1968), 484–530, for the index theorem and its characteristic-class form.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the classifying spaces, the Chern–Weil homomorphism and the spectral sequence of a fibration.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

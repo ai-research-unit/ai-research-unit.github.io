@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Non-Commutative Division Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-non-commutative-division-rings"><strong>List of Non-Commutative Division Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the division rings of the corpus, finite-dimensional and infinite-dimensional, with the centre over which each is an algebra, and it records Wedderburn's little theorem and the consequence that every skew field is infinite. Every entry points to the article that introduces the object.</p>
+<p>A division ring, or skew field, is a ring with $1 \neq 0$ in which every nonzero element is invertible, without the commutative hypothesis; the finite-dimensional division rings are the division algebras over a field, the infinite-dimensional ones are the division ring of fractions of the Weyl algebra and the free field, and the commutative ones are exactly the fields. The centre of a division ring is a field, and the division ring is an algebra over that centre, possibly of infinite dimension there.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="what-a-division-ring-is">What a Division Ring Is</h2>
+<p>A field is a commutative division ring, so every field of the corpus is an entry of this list, and the entries that are not fields are the proper skew fields. The division ring is an algebra over its centre, and the centre is a field by the argument of <em>Division Algebras</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Degree over its centre</th>
+<th>Commutative?</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{Q}$, $\mathbb{C}$ and every field</td>
+<td>$1$</td>
+<td>yes</td>
+<td><em>The Real Numbers</em>, <em>The Rational Numbers</em>, <em>The Complex Numbers</em>, <em>Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$4$</td>
+<td>no</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>the rational quaternions $(-1,-1)_{\mathbb{Q}}$</td>
+<td>$4$</td>
+<td>no</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>a central simple algebra that is a division ring</td>
+<td>finite, a square</td>
+<td>no in general</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>the division ring of fractions of $A_1(k)$</td>
+<td>infinite</td>
+<td>no</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>the free field on $n \geq 2$ generators</td>
+<td>infinite</td>
+<td>no</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The commutative entries are the fields and are listed for completeness; the proper skew fields are the quaternions and the two infinite-dimensional rings. The matrix ring $M_n(\mathbb{R})$ for $n \geq 2$ is an algebra over the same centre $\mathbb{R}$ as $\mathbb{H}$, but it is not a division ring, since the matrix units are zero divisors.</p>
+<h2 id="the-finite-dimensional-division-rings">The Finite-Dimensional Division Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Division ring</th>
+<th>Centre</th>
+<th>Dimension over the centre</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}$</td>
+<td>$1$</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{R}$</td>
+<td>$4$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$(-1,-1)_{\mathbb{Q}} = \mathbb{Q} + \mathbb{Q}i + \mathbb{Q}j + \mathbb{Q}k$</td>
+<td>$\mathbb{Q}$</td>
+<td>$4$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>a quaternion algebra $(a,b)_k$ that is not split</td>
+<td>$k$</td>
+<td>$4$</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>a cyclic division algebra over $k$</td>
+<td>$k$</td>
+<td>$\deg^2$</td>
+<td><em>Division Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, by the theorem of Frobenius recorded in <em>Division Algebras</em>; this is why the first three rows are the whole real case. Over $\mathbb{Q}$ there is more than one quaternion division algebra: a quaternion algebra $(a,b)_{\mathbb{Q}}$ is a division ring exactly when its norm form is anisotropic, and the classes of the quaternion algebras over $\mathbb{Q}$ are the elements of order dividing two in the Brauer group of $\mathbb{Q}$, as recorded in <em>Division Algebras</em>.</p>
+<h2 id="the-infinite-dimensional-division-rings">The Infinite-Dimensional Division Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Division ring</th>
+<th>Centre</th>
+<th>Why it is infinite-dimensional over its centre</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the division ring of fractions of $A_1(k)$</td>
+<td>$k$</td>
+<td>it contains $k[x]$ and $k[y]$ as polynomial subrings</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>the free field on $n \geq 2$ generators</td>
+<td>$k$</td>
+<td>it contains the free algebra on $n$ generators, which is infinite-dimensional</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>the Malcev–Neumann division ring of series over an ordered group</td>
+<td>a field containing $k$</td>
+<td>it contains the group ring $k[G]$ of an infinite orderable group</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Weyl algebra $A_1(k)$ is an Ore domain, so it has a division ring of fractions; the free algebra is not Ore, so it has no division ring of fractions, but it embeds in the free field that it generates. This is the separation of the two infinite-dimensional cases.</p>
+<h2 id="the-centre-and-the-algebra-structure">The Centre and the Algebra Structure</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Division ring</th>
+<th>Centre</th>
+<th>The centre is a field because</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{R}$</td>
+<td>the centre consists of the real multiples of $1$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>the division ring of fractions of $A_1(k)$</td>
+<td>$k$</td>
+<td>an element commuting with $x$ and $y$ is in $k$</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>the free field</td>
+<td>$k$</td>
+<td>the centre of the free algebra is $k$</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>a general division ring $D$</td>
+<td>$Z(D)$</td>
+<td>if $a \in Z(D)$ is nonzero then $a^{-1} \in Z(D)$</td>
+<td><em>Division Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The division ring is an algebra over its centre; for $\mathbb{H}$ the dimension is $4$, and for the infinite-dimensional cases the dimension over the centre is infinite. The centre is the maximal commutative subfield in the sense that it is the field of scalars, and the division ring is central when the centre is the whole scalar field.</p>
+<h2 id="wedderburns-little-theorem-and-the-absence-of-finite-skew-fields">Wedderburn's Little Theorem and the Absence of Finite Skew Fields</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>Content</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wedderburn's little theorem</td>
+<td>every finite division ring is a field</td>
+<td><em>Division Rings</em></td>
+</tr>
+<tr>
+<td>Corollary</td>
+<td>every skew field is infinite, since a finite skew field would be a finite division ring</td>
+<td><em>Division Rings</em></td>
+</tr>
+<tr>
+<td>Corollary</td>
+<td>a finite ring with no zero divisors is a field</td>
+<td><em>Division Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The theorem is the reason the finite fields of <em>List of Finite Fields</em> are exhausted by the commutative case: a finite division ring is a field, so the search for a finite skew field has no solution. The proof uses the class equation of the multiplicative group of a finite division ring, and it is recorded in <em>Division Rings</em>.</p>
+<h2 id="the-doubling-chain-and-where-the-properties-are-lost">The Doubling Chain and Where the Properties Are Lost</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Dimension over $\mathbb{R}$</th>
+<th>Commutative?</th>
+<th>Associative?</th>
+<th>Division algebra?</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$1$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes, a field</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$2$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes, a field</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$4$</td>
+<td>no</td>
+<td>yes</td>
+<td>yes, a division ring</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>$8$</td>
+<td>no</td>
+<td>no</td>
+<td>no: not associative, so not a division algebra in the sense of this corpus</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{S}$, the sedenions</td>
+<td>$16$</td>
+<td>no</td>
+<td>no</td>
+<td>no: not associative, and with zero divisors</td>
+<td><em>Division Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Cayley–Dickson doubling chain loses commutativity at the quaternions and associativity at the octonions, and it loses the division property at the sedenions; this is the reason $\mathbb{H}$ is the last division ring in the chain and the octonions are a normed division algebra that is not a division algebra in the sense of this corpus, and not a ring. The Hurwitz theorem that the normed division algebras are exactly $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ is recorded in <em>Division Algebras</em>.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a division ring</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(k)$, $n \geq 2$</td>
+<td>the matrix units $E_{11}E_{22} = 0$ are zero divisors</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, the biquaternions</td>
+<td>zero divisors; not every nonzero element is invertible</td>
+<td><em>Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, the split-biquaternions</td>
+<td>the idempotents $e_{\pm}$ satisfy $e_+e_- = 0$</td>
+<td><em>Split-Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$, $\mathbb{Z}/6\mathbb{Z}$</td>
+<td>commutative, with zero divisors; not even domains</td>
+<td><em>Split-Complex Algebra</em>, <em>Dual-Numbers Algebra</em>, <em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$, $\mathbb{S}$</td>
+<td>normed division algebras whose multiplication is not associative, so not rings</td>
+<td><em>Octonion Algebra</em>, <em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>the group ring $k[G]$</td>
+<td>has zero divisors whenever $G$ has torsion</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$k[G]$ with $G$ torsion-free and nontrivial</td>
+<td>a domain, but not every nonzero element is a unit: $g - 1$ has augmentation $0$</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The split-biquaternions and the biquaternions are the two eight-dimensional algebras closest to $\mathbb{H}$, and both fail the definition by a zero divisor that the quaternion algebra does not have. The octonions are excluded by non-associativity and not by zero divisors, and this is the exact sense in which they are a normed division algebra without being a division ring.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the division rings of the corpus with the centre over which each is an algebra. The commutative entries are the fields, with dimension $1$ over themselves; the finite-dimensional skew fields are $\mathbb{H}$ and the quaternion and cyclic division algebras, with centre a field and dimension a square; the infinite-dimensional ones are the division ring of fractions of the Weyl algebra, the free field and the Malcev–Neumann division rings of series, all of dimension infinite over their centres; and the centre of each is a field. The matrix ring $M_n(k)$ for $n \geq 2$, the biquaternions, the split-biquaternions and the octonions are recorded as the objects that fail to be division rings, with the failure named in each case. Wedderburn's little theorem closes the list by excluding the finite skew fields.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The real quaternions, a division ring</td>
+</tr>
+<tr>
+<td>$(-1,-1)_{\mathbb{Q}}$, $(a,b)_k$</td>
+<td>Quaternion algebra over $\mathbb{Q}$, over $k$</td>
+</tr>
+<tr>
+<td>$Z(D)$, $Z(\mathbb{H}) = \mathbb{R}$</td>
+<td>The centre of a division ring</td>
+</tr>
+<tr>
+<td>$A_1(k)$, $D_1(k)$</td>
+<td>The Weyl algebra and the first Weyl field $\operatorname{Frac}(A_1(k))$</td>
+</tr>
+<tr>
+<td>$M_n(k)$</td>
+<td>The matrix algebra; not a division ring for $n \geq 2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$</td>
+<td>Biquaternions, split-biquaternions; not division rings</td>
+</tr>
+<tr>
+<td>$\mathbb{O}$, $\mathbb{S}$</td>
+<td>Octonions, sedenions; not rings</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$</td>
+<td>The commutative division rings</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for division rings, their centres and Wedderburn's little theorem.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for central simple algebras, the Brauer group and finite-dimensional division algebras.</li>
+<li>Paul M. Cohn, <em>Skew Field Constructions</em> (Cambridge University Press, 1977), for infinite-dimensional division rings and the free field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

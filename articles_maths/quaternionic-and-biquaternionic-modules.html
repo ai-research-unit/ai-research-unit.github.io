@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaternionic and Biquaternionic Modules — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quaternionic-and-biquaternionic-modules"><strong>Quaternionic and Biquaternionic Modules</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion algebra $\mathbb{H}$ is a division algebra and the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is a matrix algebra, and the contrast between these two facts organises the whole module theory of the pair. Over a division algebra every module is free and has a rank, so the module theory of $\mathbb{H}$ is a dimension theory with no structure beyond it; over the matrix algebra $\mathbb{B}$ there is a single irreducible module and the general module is a direct sum of copies of it, so freeness becomes a divisibility condition rather than an automatic one. The passage from $\mathbb{H}$ to $\mathbb{B}$ is base change along $\mathbb{R}\hookrightarrow\mathbb{C}$, and it is the functor that turns the rank theory over $\mathbb{H}$ into the direct-sum theory over $\mathbb{B}$.</p>
+<p>This article develops the three layers in order. It treats first the modules over $\mathbb{H}$, where the theory is that of vector spaces over a division ring; then the modules over $\mathbb{B}$, where the defining module $S$ of <em>The Defining Module of the Biquaternion Algebra</em> controls everything; and finally the base change $\mathbb{R}\to\mathbb{C}$ relating them, in the language of <em>Change of Rings</em>. A section on torsion explains why the naive notion from the commutative theory degenerates here and what replaces it, and a section on dimensions and rank tabulates the invariants. The algebra conventions are those; the module conventions are those of <em>Modules over an Algebra</em>, <em>Modules over a PID</em> and <em>Representations of Algebras</em>. Everything is mathematical: the modules are modules over rings, and no physical interpretation is attached to any of them.</p>
+<p>Throughout, $R$ is a commutative ring with identity and $\mathbb{H}$, $\mathbb{B}$ are as in the shared notation: $\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the central unit $i$ with $i^2=-1$. Modules are left modules unless stated. The base field of a module over $\mathbb{H}$ is $\mathbb{R}$; the base field of a module over $\mathbb{B}$ is $\mathbb{C}$.</p>
+<h2 id="modules-over-the-division-algebra">Modules over the Division Algebra</h2>
+<h3 id="the-division-property">The division property</h3>
+<p>$\mathbb{H}$ is a division algebra: every nonzero element is invertible, with</p>
+<p>$$
+\tilde{Q}^{-1}=\frac{\bar{\tilde{Q}}}{N(\tilde{Q})}, \qquad N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=q_0^2+q_1^2+q_2^2+q_3^2,
+$$</p>
+<p>. It has no zero divisors and no nonzero proper one-sided ideals: if $0\neq I\subseteq\mathbb{H}$ is a left ideal and $x\in I$ is nonzero, then $1=x^{-1}x\in I$, so $I=\mathbb{H}$. Consequently $\mathbb{H}$ is a simple ring with $J(\mathbb{H})=0$, and the only simple left $\mathbb{H}$-module is $\mathbb{H}$ itself.</p>
+<h3 id="freeness">Freeness</h3>
+<p><strong>Theorem.</strong> Every left $\mathbb{H}$-module is free, and every finitely generated left $\mathbb{H}$-module has a well-defined rank.</p>
+<p><em>Proof.</em> Let $M$ be an $\mathbb{H}$-module and let $\mathcal{S}$ be the set of linearly independent subsets of $M$, ordered by inclusion. Every chain in $\mathcal{S}$ has an upper bound, namely its union, which is independent because any finite dependence relation involves finitely many elements and hence lies in one member of the chain. By Zorn's lemma there is a maximal independent set $B$. If $B$ did not span, there would be $m \in M$ not in the span of $B$; then $B\cup\{m\}$ is independent, because a relation $\lambda m=\sum\lambda_i b_i$ with $\lambda\neq0$ would exhibit $m$ in the span, and $\lambda$ is invertible in the division ring; this contradicts maximality. Hence $B$ is a basis and $M$ is free. The rank is well defined because a division ring has the invariant basis number property: if $\mathbb{H}^{(I)}\cong\mathbb{H}^{(J)}$ then $|I|=|J|$, by <em>Modules</em> §19. $\square$</p>
+<p>This is the module-theoretic form of the statement that the scalars form a division ring: linear algebra over $\mathbb{H}$ behaves as over a field, with the single difference that the scalars are noncommutative. A finitely generated $\mathbb{H}$-module is thus isomorphic to $\mathbb{H}^n$ for a unique $n$, its <strong>rank</strong>, and</p>
+<p>$$
+\dim_{\mathbb{R}}\mathbb{H}^n=4n.
+$$</p>
+<h3 id="the-category">The category</h3>
+<p>Restriction of scalars along $\mathbb{R}\hookrightarrow\mathbb{H}$ exhibits $\operatorname{Mod}(\mathbb{H})$ as a subcategory of the real vector spaces, and the free functor $\mathbb{H}\otimes_{\mathbb{R}}-:\operatorname{Vect}_{\mathbb{R}}\to\operatorname{Mod}(\mathbb{H})$ is its left adjoint. The endomorphism ring of the simple module is</p>
+<p>$$
+\operatorname{End}_{\mathbb{H}}(\mathbb{H})=\mathbb{H}^{\mathrm{op}}\cong\mathbb{H},
+$$</p>
+<p>the opposite ring, which is isomorphic to $\mathbb{H}$ through quaternion conjugation ($x\mapsto\bar x$ is an anti-automorphism); for left $\mathbb{H}$-modules of rank $n$,</p>
+<p>$$
+\operatorname{End}_{\mathbb{H}}(\mathbb{H}^n)\cong M_n(\mathbb{H}^{\mathrm{op}})\cong M_n(\mathbb{H}),
+$$</p>
+<p>the last isomorphism being non-canonical. Over $\mathbb{R}$ the module $\mathbb{H}$ is not absolutely irreducible, its commutant being the four-dimensional division algebra $\mathbb{H}$ rather than $\mathbb{R}$; this is the arithmetic feature that base change to $\mathbb{C}$ removes.</p>
+<h2 id="modules-over-the-matrix-algebra">Modules over the Matrix Algebra</h2>
+<h3 id="the-classification">The classification</h3>
+<p>By <em>The Defining Module of the Biquaternion Algebra</em>, the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and artinian, hence semisimple, and has a single simple left module up to isomorphism, the defining module $S=\mathbb{C}^2$. The classification of modules is therefore complete:</p>
+<p><strong>Theorem.</strong> Every left $\mathbb{B}$-module is isomorphic to a direct sum $S^{\oplus k}$ of copies of $S$, with $k$ an integer in the finitely generated case. The left regular module is $\mathbb{B}\cong S\oplus S$.</p>
+<p><em>Proof.</em> Semisimple rings have the property that every module is a direct sum of simple modules, and every simple $\mathbb{B}$-module is $S$; the decomposition of ${}_\mathbb{B}\mathbb{B}$ into the two columns gives $\mathbb{B}\cong S\oplus S$. Uniqueness of $k$ for finitely generated modules follows by counting dimensions. $\square$</p>
+<h3 id="freeness-and-projectivity">Freeness and projectivity</h3>
+<p>Since $\mathbb{B}$ is semisimple, every $\mathbb{B}$-module is projective. Freeness, however, is a genuine restriction rather than an automatic consequence: over a division ring every projective module is free, but over the matrix algebra $M_n(D)$ with $n \geq 2$ the defining module $D^n$ is projective and not free. The precise criterion is the following.</p>
+<p><strong>Proposition.</strong> The $\mathbb{B}$-module $S^{\oplus k}$ is free if and only if $k$ is even. Equivalently, writing $\dim_{\mathbb{C}} S^{\oplus k}=2k$,</p>
+<p>$$
+S^{\oplus k} \text{ is free} \iff 4 \mid \dim_{\mathbb{C}} S^{\oplus k}.
+$$</p>
+<p><em>Proof.</em> $\mathbb{B}\cong S^{\oplus 2}$, so $\mathbb{B}^{\oplus m}\cong S^{\oplus 2m}$, and every free module is of this form; thus $S^{\oplus k}$ is free exactly when $k=2m$ for some $m$. The dimension statement is immediate. $\square$</p>
+<p>Thus the defining module $S$ is projective but not free, a module of dimension $2$ over $\mathbb{C}$ with no basis over $\mathbb{B}$, and the obstruction to freeness is a parity. This is the sharpest contrast with $\mathbb{H}$: over the division algebra every module is free, over the matrix algebra only the even ones are.</p>
+<h3 id="morita-reduction">Morita reduction</h3>
+<p>The Morita equivalence of <em>Morita Equivalence</em> applies with $A=\mathbb{B}$, $B=\mathbb{C}$ and the equivalence bimodule ${}_\mathbb{B}S_\mathbb{C}$:</p>
+<p>$$
+\operatorname{Hom}_{\mathbb{B}}(S,-) : \operatorname{Mod}(\mathbb{B}) \longrightarrow \operatorname{Mod}(\mathbb{C}), \qquad V \longmapsto \operatorname{Hom}_{\mathbb{B}}(S,V),
+$$</p>
+<p>with inverse $W\mapsto S\otimes_{\mathbb{C}}W\cong S^{\oplus\dim_\mathbb{C}W}$, the balanced product of the defining module with a complex vector space. Hence a $\mathbb{B}$-module $V=S^{\oplus k}$ corresponds to the complex vector space $\operatorname{Hom}_{\mathbb{B}}(S,V)\cong\mathbb{C}^k$, and the module theory of the biquaternion algebra is the linear algebra of $\mathbb{C}$ with every dimension doubled. The equivalence is reflected in the hom algebras: $\operatorname{End}_{\mathbb{B}}(S)\cong\mathbb{C}$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$, the double centralizer of <em>The Defining Module of the Biquaternion Algebra</em>.</p>
+<h2 id="torsion-and-the-module-theory-over-a-field">Torsion and the Module Theory over a Field</h2>
+<h3 id="why-the-naive-torsion-definition-fails">Why the naive torsion definition fails</h3>
+<p>Recall that for a commutative domain a nonzero element $m$ of a module is <strong>torsion</strong> if $\operatorname{Ann}(m)\neq0$, and that torsion-free finitely generated modules over a principal ideal domain have a rank; this is the content of <em>Modules over a PID</em>. Over a noncommutative ring with zero divisors the naive definition degenerates. In $\mathbb{B}$ the nonzero element $q$ satisfies $pq=0$ with $p\neq0$, so $q$ is a zero divisor; and for every nonzero $s\in S$ the annihilator</p>
+<p>$$
+\operatorname{Ann}_{\mathbb{B}}(s)=\{b\in\mathbb{B}:bs=0\}
+$$</p>
+<p>is a nonzero proper left ideal, since $s$ spans a submodule isomorphic to $S$ and the kernel of the surjection $\mathbb{B}\to S$, $b\mapsto bs$, is maximal. Under the naive definition every nonzero element of $S$ would be torsion, so the defining module would be entirely torsion; and in a direct sum $S^{\oplus k}$ the torsion elements would be those whose nonzero components are proportional, since the annihilator of two linearly independent vectors of $\mathbb{C}^2$ in $M_2(\mathbb{C})$ is zero. Those elements are not closed under addition, so the naive torsion elements do not form a submodule and carry no information about the module.</p>
+<h3 id="the-correct-notion">The correct notion</h3>
+<p>The remedy is to test against <strong>non-zero-divisors</strong> rather than nonzero elements. An element $a$ of a ring $A$ is a <strong>regular element</strong> if $ab=0$ implies $b=0$ and $ba=0$ implies $b=0$; a module element $m$ is <strong>torsion</strong> if $\operatorname{Ann}(m)$ contains a regular element. Over a commutative domain the regular elements are exactly the nonzero elements and the definition reduces to the classical one.</p>
+<p><strong>Proposition.</strong> Every module over a division ring, and every module over a semisimple ring, is torsion-free.</p>
+<p><em>Proof.</em> In a division ring every nonzero element is a unit, hence regular, so the annihilator of a nonzero element $m$ contains no regular element and $m$ is not torsion. In a semisimple ring every regular element is a unit: if $a$ is regular, then $Aa$ is a nonzero left ideal, hence has a complement $I$ with $A=Aa\oplus I$; regularity forces $I=0$, since $0\neq x\in I$ would give $ax\in Aa\cap I=0$ with $x\neq0$, so $Aa=A$ and $a$ has a right inverse, and symmetrically a left inverse, so $a$ is a unit. A regular $a$ with $am=0$ then gives $m=a^{-1}am=0$. $\square$</p>
+<p>Consequently both $\operatorname{Mod}(\mathbb{H})$ and $\operatorname{Mod}(\mathbb{B})$ are torsion-free categories: torsion plays no role, and the structure theory is that of freeness and direct-sum decompositions rather than of torsion submodules. This is exactly the difference from the commutative theory of <em>Modules over a PID</em>, where the torsion submodule is the essential invariant.</p>
+<h3 id="the-comparison-with-a-field">The comparison with a field</h3>
+<p>Over a field $F$ every module is free and every module is torsion-free, and the classification is by dimension. The quaternion algebra reproduces this: $\operatorname{Mod}(\mathbb{H})$ is the category of vector spaces over the division ring $\mathbb{H}$, with dimension theory, and the only changes from the field case are that dimension is taken over a division ring and that the endomorphism rings of the simple module are division rings rather than the base field. The biquaternion algebra departs from the field case in exactly one way, the failure of $S$ to be free: the free modules are not all the projective modules.</p>
+<h2 id="base-change-from-math169-to-math170">Base Change from $\mathbb{H}$ to $\mathbb{B}$</h2>
+<h3 id="the-two-homomorphisms">The two homomorphisms</h3>
+<p>Two algebra homomorphisms govern the comparison, both instances of the triple of <em>Change of Rings</em>.</p>
+<ol>
+<li>The inclusion $\mathbb{R}\hookrightarrow\mathbb{H}$. Restriction sends an $\mathbb{H}$-module to its underlying real vector space; extension sends a real vector space $V$ to $\mathbb{H}\otimes_{\mathbb{R}}V$; coextension sends $V$ to $\operatorname{Hom}_{\mathbb{R}}(\mathbb{H},V)$.</li>
+<li>
+<p>The algebra homomorphism $\mathbb{H}\to\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$, $h\mapsto h\otimes1$. Restriction sends a $\mathbb{B}$-module to an $\mathbb{H}$-module; extension sends an $\mathbb{H}$-module $V$ to the $\mathbb{B}$-module</p>
+<p>$$
+    \mathbb{B}\otimes_{\mathbb{H}}V \cong \mathbb{C}\otimes_{\mathbb{R}}V,
+    $$</p>
+<p>the <strong>complexification</strong> of $V$; coextension sends $V$ to $\operatorname{Hom}_{\mathbb{H}}(\mathbb{B},V)$.</p>
+</li>
+</ol>
+<p>The isomorphism of the display uses $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ and the unit isomorphism $\mathbb{H}\otimes_{\mathbb{H}}V\cong V$. It is the base change of <em>Change of Rings</em> with $R=\mathbb{R}$, $S=\mathbb{C}$ and $A=\mathbb{H}$.</p>
+<h3 id="complexification-of-modules">Complexification of modules</h3>
+<p><strong>Theorem.</strong> Let $V=\mathbb{H}^n$ be the free left $\mathbb{H}$-module of rank $n$. Then its complexification is the free $\mathbb{B}$-module of rank $n$,</p>
+<p>$$
+\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}^n \cong \mathbb{B}^n \cong S^{\oplus 2n},
+$$</p>
+<p>as a left $\mathbb{B}$-module, of complex dimension $4n$ and real dimension $8n$.</p>
+<p><em>Proof.</em> $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}^n\cong(\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H})^n=\mathbb{B}^n$ because the balanced product commutes with finite direct sums, and $\mathbb{B}\cong S\oplus S$ as a left module, so $\mathbb{B}^n\cong S^{\oplus 2n}$. Dimensions: $\dim_{\mathbb{C}}\mathbb{B}^n=4n$, so the complexification has real dimension $8n=2\dim_{\mathbb{R}}\mathbb{H}^n$; complexification doubles the real dimension. $\square$</p>
+<p>So complexification doubles real dimension: rank $n$ over $\mathbb{H}$ becomes a $\mathbb{B}$-module of complex dimension $4n$, isomorphic to the free module $\mathbb{B}^n$ of rank $n$ and to the direct sum $S^{\oplus 2n}$. In particular the four-dimensional real irreducible module $\mathbb{H}$ complexifies to $\mathbb{B}\cong S\oplus S$, as in <em>The Defining Module of the Biquaternion Algebra</em>.</p>
+<h3 id="restriction-of-modules">Restriction of modules</h3>
+<p><strong>Theorem.</strong> Let $W=S^{\oplus k}$ be a finitely generated left $\mathbb{B}$-module, of complex dimension $2k$. Then its restriction to $\mathbb{H}$ is the free $\mathbb{H}$-module of rank $k$:</p>
+<p>$$
+\operatorname{Res}_{\mathbb{H}}^{\mathbb{B}} W \cong \mathbb{H}^k.
+$$</p>
+<p><em>Proof.</em> Since $\mathbb{R}$-dimension is additive over direct sums and $\operatorname{Res}(S)$ has real dimension $4$, the restriction of $W$ has real dimension $4k$. It is an $\mathbb{H}$-module, hence free of rank equal to its real dimension divided by $4$, by the theorem on freeness over a division ring. $\square$</p>
+<p>In particular $\operatorname{Res}(S)\cong\mathbb{H}$: the two-dimensional complex defining module is, as a real $\mathbb{H}$-module, the four-dimensional regular module. Restriction is thus the operation that halves the complex dimension, carrying a $\mathbb{B}$-module of complex dimension $2k$ to an $\mathbb{H}$-module of rank $k$. Complexification undoes it on free modules: $\mathbb{C}\otimes_{\mathbb{R}}\operatorname{Res}(S^{\oplus k})\cong \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}^k\cong\mathbb{B}^k\cong S^{\oplus 2k}$, so the composite $\mathbb{C}\otimes_{\mathbb{R}}\operatorname{Res}$ doubles the number of copies of $S$. The adjunction of <em>Change of Rings</em> relates the functors: complexification $\mathbb{C}\otimes_{\mathbb{R}}-$ is left adjoint to restriction $\operatorname{Res}_{\mathbb{H}}^{\mathbb{B}}$, so</p>
+<p>$$
+\operatorname{Hom}_{\mathbb{B}}(\mathbb{C}\otimes_{\mathbb{R}}V,\,W) \cong \operatorname{Hom}_{\mathbb{H}}(V,\operatorname{Res}W),
+$$</p>
+<p>Frobenius reciprocity in its algebra form, with no group present.</p>
+<h3 id="real-structures">Real structures</h3>
+<p>A <strong>real structure</strong> on a complex $\mathbb{B}$-module $W$ is an $\mathbb{H}$-module $V$ together with an isomorphism $W \cong \mathbb{C}\otimes_{\mathbb{R}}V$, that is, $W$ is obtained from an $\mathbb{H}$-module by extension of scalars. Since every $\mathbb{H}$-module is free, every complexification is a free $\mathbb{B}$-module, and conversely $\mathbb{B}^n\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}^n$; therefore</p>
+<p>$$
+W \text{ admits a real structure} \iff W \text{ is a free } \mathbb{B}\text{-module},
+$$</p>
+<p>and for $W=S^{\oplus k}$ this holds exactly when $k$ is even, by §Freeness and Projectivity. Not every $\mathbb{B}$-module is defined over $\mathbb{H}$; the obstruction is the same parity that obstructs freeness, and $S$ itself is the minimal example. Restriction and complexification are not inverse functors: $\operatorname{Res}\circ(\mathbb{C}\otimes_{\mathbb{R}}-)$ carries $\mathbb{H}^n$ to $\mathbb{H}^{2n}$, hence carries $V$ to $V\oplus V$. Complexification is not essentially surjective — its image is the class of free $\mathbb{B}$-modules, since $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}^n\cong\mathbb{B}^n$, and $S$ is not free — but it is faithful, and on finitely generated modules it is full, the natural map $\operatorname{Hom}_{\mathbb{H}}(V,W)\otimes_{\mathbb{R}}\mathbb{C}\to\operatorname{Hom}_{\mathbb{B}}(\mathbb{C}\otimes_{\mathbb{R}}V,\mathbb{C}\otimes_{\mathbb{R}}W)$ being an isomorphism for $V=\mathbb{H}^n$ and $W=\mathbb{H}^m$ because both sides have complex dimension $4nm$. It therefore determines $V$ up to isomorphism, and it identifies $\operatorname{Mod}(\mathbb{H})$ with the category of free $\mathbb{B}$-modules. The finer classification of real forms up to isomorphism is the Galois descent for $\mathbb{C}/\mathbb{R}$ and is treated in the literature cited below; module-theoretically, $\operatorname{Mod}(\mathbb{H})$ is equivalent to the category of $\mathbb{B}$-modules equipped with the descent data for the extension $\mathbb{R}\hookrightarrow\mathbb{C}$, restriction being the forgetful functor.</p>
+<h2 id="complex-structures-on-a-quaternionic-module">Complex Structures on a Quaternionic Module</h2>
+<p>A left $\mathbb{H}$-module carries more than its real vector space structure: left multiplications by the two basis units $e_1$ and $e_2$ endow it with a complex structure together with a compatible anti-linear operator. Let $V$ be a left $\mathbb{H}$-module and define</p>
+<p>$$
+I:V\to V, \quad Iv=e_1v, \qquad \mathcal{J}:V\to V, \quad \mathcal{J}v=e_2v .
+$$</p>
+<p>Since $e_1^2=e_2^2=-e_0$ and $e_2e_1=-e_1e_2$,</p>
+<p>$$
+I^2=\mathcal{J}^2=-\mathrm{id}_V, \qquad I\mathcal{J}=-\mathcal{J}I .
+$$</p>
+<p>The first relation shows that $I$ makes $V$ a <strong>complex vector space</strong>, and therefore</p>
+<p>$$
+\dim_{\mathbb{C}}V=\tfrac12\dim_{\mathbb{R}}V;
+$$</p>
+<p>for $V=\mathbb{H}^n$ this gives $\dim_{\mathbb{C}}V=2n$. This is the complex dimension with respect to $I$; the last column of the table of §Dimension and Rank records instead the dimension after base change to $\mathbb{C}$, which is twice as large, namely $4n$ for $V=\mathbb{H}^n$. The second relation says that $\mathcal{J}$ is <strong>anti-linear</strong> with respect to this complex structure:</p>
+<p>$$
+\mathcal{J}(Iv)=e_2e_1v=-e_1e_2v=-I(\mathcal{J}v),
+$$</p>
+<p>and $\mathcal{J}^2=-1$. Thus a left $\mathbb{H}$-module is exactly a complex vector space equipped with an anti-linear operator $\mathcal{J}$ squaring to $-1$; such a $\mathcal{J}$ is called a <strong>quaternionic structure</strong>. Indeed, given a complex vector space $V$ with an anti-linear $\mathcal{J}$, $\mathcal{J}^2=-1$, one recovers a left $\mathbb{H}$-module by</p>
+<p>$$
+e_1\cdot v=I v, \qquad e_2\cdot v=\mathcal{J}v, \qquad e_3\cdot v=I\mathcal{J}v,
+$$</p>
+<p>and the relations $e_1^2=e_2^2=e_3^2=-e_0$ and $e_1e_2=e_3$ are satisfied precisely because $\mathcal{J}$ is anti-linear with $\mathcal{J}^2=-1$. The passage from the quaternionic description to the complex one halves the real dimension, at the cost of an extra operator; this is the module-level form of the statement that a quaternionic vector space is a complex vector space with a quaternionic structure.</p>
+<p><strong>Proposition.</strong> Every left $\mathbb{H}$-module $V$ has $\dim_{\mathbb{C}}V=2\operatorname{rank}_{\mathbb{H}}V$, and the complex structure $I$ and the quaternionic structure $\mathcal{J}$ are unique, being multiplication by the corresponding units of $\mathbb{H}$.</p>
+<p>The rank statement is $\dim_{\mathbb{R}}V=4\operatorname{rank}V$ combined with $\dim_{\mathbb{C}}V=\tfrac12\dim_{\mathbb{R}}V$. Uniqueness is the definition of the module structure.</p>
+<h2 id="dimension-and-rank">Dimension and Rank</h2>
+<p>The invariants of a finitely generated module are collected in one table. Ranks are ranks of free modules over the indicated ring, and the last column records the complex dimension after base change to $\mathbb{C}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Module</th>
+<th>over $\mathbb{H}$ (rank)</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>over $\mathbb{B}$</th>
+<th>$\dim_{\mathbb{C}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}^n$</td>
+<td>$n$</td>
+<td>$4n$</td>
+<td>$\mathbb{B}^n\cong S^{\oplus2n}$</td>
+<td>$4n$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^m$</td>
+<td>$2m$</td>
+<td>$8m$</td>
+<td>free of rank $m$</td>
+<td>$4m$</td>
+</tr>
+<tr>
+<td>$S^{\oplus k}$</td>
+<td>$k$</td>
+<td>$4k$</td>
+<td>$S^{\oplus k}$, free iff $k$ even</td>
+<td>$2k$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>not free</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table records the two asymmetries of the pair. First, the $\mathbb{H}$-rank of a $\mathbb{B}$-module is half its complex dimension: the restriction of $S^{\oplus k}$ is $\mathbb{H}^k$, of rank $k=\dim_{\mathbb{C}}S^{\oplus k}/2$. Second, freeness is automatic over $\mathbb{H}$ and conditional over $\mathbb{B}$: the module $S$ is the minimal counterexample, of rank one over $\mathbb{H}$ and projective but not free over $\mathbb{B}$, while the free $\mathbb{B}$-module of rank $m$ restricts to $\mathbb{H}^{2m}$ and is therefore free of even rank over $\mathbb{H}$.</p>
+<h3 id="lattices">Lattices</h3>
+<p>The contrast of scalars is visible already in additive subgroups. A $\mathbb{Z}$-submodule of $\mathbb{H}$ such as the Lipschitz order $\mathbb{Z}\{e_0,e_1,e_2,e_3\}$ or the Hurwitz order is a torsion-free $\mathbb{Z}$-module of rank $4$, by <em>Modules over a PID</em>; it is not an $\mathbb{H}$-module, since it is not closed under multiplication by scalars outside $\mathbb{Z}$, and the $\mathbb{H}$-submodule of $\mathbb{H}$ that it generates is $\mathbb{H}$ itself, free of rank one because it contains $e_0$. Thus the same additive object changes rank, freeness and torsion behaviour as the ring of scalars grows from $\mathbb{Z}$ to $\mathbb{H}$ to $\mathbb{B}$, which is change of rings read backwards.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The regular modules over $\mathbb{H}$.</strong> ${}_\mathbb{H}\mathbb{H}$ is the simple left module, of rank $1$ and real dimension $4$, with commutant $\operatorname{End}_\mathbb{H}(\mathbb{H})=\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$; the right regular module $\mathbb{H}_\mathbb{H}$ is the simple right module, and the identification of left and right modules uses the anti-automorphism $\bar{\cdot}$. Every left module is $\mathbb{H}^n$.</p>
+<p><strong>(b) The regular module over $\mathbb{B}$.</strong> ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$ has complex dimension $4$ and is free of rank $1$ over $\mathbb{B}$ but of rank $2$ over $\mathbb{H}$; its two summands are the columns of the matrix picture, as in <em>The Defining Module of the Biquaternion Algebra</em>.</p>
+<p><strong>(c) The defining module.</strong> $S$ is projective, simple, absolutely irreducible, of complex dimension $2$ and $\mathbb{H}$-rank $1$; it is not free over $\mathbb{B}$, and this single fact is the entire distinction between the module theory of $\mathbb{B}$ and that of a field.</p>
+<p><strong>(d) Complexification.</strong> Complexifying $\mathbb{H}^n$ gives $\mathbb{B}^n\cong S^{\oplus2n}$; complexifying the real vector space $\mathbb{R}^m$ along $\mathbb{R}\hookrightarrow\mathbb{H}$ gives $\mathbb{H}^m$, of real dimension $4m$; and complexifying $\mathbb{C}^r$ along $\mathbb{R}\hookrightarrow\mathbb{C}$ gives $\mathbb{C}^r$ again, the trivial case. The two functors $\mathbb{H}\otimes_{\mathbb{R}}-$ and $\mathbb{C}\otimes_{\mathbb{R}}-$ compose to give the complexification $\operatorname{Mod}(\mathbb{H})\to\operatorname{Mod}(\mathbb{B})$ of the article.</p>
+<p><strong>(e) Automorphisms.</strong> The $\mathbb{H}$-linear automorphisms of $\mathbb{H}^n$ form $GL_n(\mathbb{H})$, and the $\mathbb{B}$-linear automorphisms of $S^{\oplus k}$ form $GL_k(\mathbb{C})$ under the Morita equivalence; the two groups differ in kind, one being a group of linear transformations over a division ring and the other the general linear group of a complex vector space. This is the module-theoretic content of the automorphism theory of <em>Automorphisms of Modules over an Algebra</em> in the quaternionic case.</p>
+<h2 id="summary">Summary</h2>
+<p>$\mathbb{H}$ is a division algebra and $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ is a matrix algebra, and the module theory of each is dictated by that fact. Over the division algebra every module is free and the finitely generated modules are $\mathbb{H}^n$ for a unique rank $n$, of real dimension $4n$; the category is the category of vector spaces over a division ring, with a single simple module $\mathbb{H}$ whose commutant is $\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$, so the simple module is not absolutely irreducible. Over the matrix algebra every module is a direct sum $S^{\oplus k}$ of copies of the unique simple module $S=\mathbb{C}^2$; every module is projective, the regular module is $\mathbb{B}\cong S\oplus S$, and $S^{\oplus k}$ is free if and only if $k$ is even, equivalently if and only if its complex dimension $2k$ is divisible by $4$. The module theory of $\mathbb{B}$ is the module theory of $\mathbb{C}$ with dimensions doubled, by the Morita equivalence implemented by the bimodule ${}_\mathbb{B}S_\mathbb{C}$.</p>
+<p>Torsion in the naive sense is meaningless over $\mathbb{B}$, because $\mathbb{B}$ has zero divisors and the annihilator of every nonzero element of $S$ is a maximal left ideal, and it is vacuous over $\mathbb{H}$, so it classifies nothing in either case; the correct definition tests annihilators against non-zero-divisors, and with it both categories are torsion-free, since in a semisimple ring every regular element is a unit. The passage between the two module theories is base change along $\mathbb{H}\to\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$: complexification carries $\mathbb{H}^n$ to $\mathbb{B}^n\cong S^{\oplus2n}$, restriction carries $S^{\oplus k}$ to $\mathbb{H}^k$, and the two functors form an adjoint pair whose composite doubles rank. In particular $S$ restricts to $\mathbb{H}$ and $\mathbb{H}$ complexifies to $S\oplus S$, so the minimal projective non-free module over $\mathbb{B}$ and the minimal free module over $\mathbb{H}$ are two faces of the same real four-dimensional object. Rank over $\mathbb{H}$, freeness over $\mathbb{B}$, and complex dimension are the three invariants, and the table of §Dimension and Rank records their relations.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>quaternions, a division algebra over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>biquaternions, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>quaternion basis, $e_0=1$, $e_k^2=-e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>central unit of $\mathbb{B}$, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
+<td>quaternion norm form</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>quaternion conjugation</td>
+</tr>
+<tr>
+<td>$S=\mathbb{C}^2$</td>
+<td>defining module of $\mathbb{B}$, the unique simple $\mathbb{B}$-module</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^n$</td>
+<td>free $\mathbb{H}$-module of rank $n$, real dimension $4n$</td>
+</tr>
+<tr>
+<td>$S^{\oplus k}$</td>
+<td>general finitely generated $\mathbb{B}$-module, complex dimension $2k$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}_A(m)$</td>
+<td>annihilator of a module element</td>
+</tr>
+<tr>
+<td>regular element</td>
+<td>a non-zero-divisor</td>
+</tr>
+<tr>
+<td>torsion</td>
+<td>$m$ with a regular element in $\operatorname{Ann}(m)$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\otimes_{\mathbb{R}}-$</td>
+<td>complexification, extension along $\mathbb{H}\to\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Res}_{\mathbb{H}}^{\mathbb{B}}$</td>
+<td>restriction of a $\mathbb{B}$-module to $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{\mathbb{B}}(S,-)$</td>
+<td>Morita functor to $\operatorname{Mod}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$S\otimes_{\mathbb{C}}-$</td>
+<td>inverse Morita functor, $W\mapsto S\otimes_{\mathbb{C}}W\cong S^{\oplus\dim_\mathbb{C}W}$</td>
+</tr>
+<tr>
+<td>$I=L_{e_1}$, $\mathcal{J}=L_{e_2}$</td>
+<td>complex structure $Iv=e_1v$ and quaternionic structure $\mathcal{J}v=e_2v$ on an $\mathbb{H}$-module</td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{H})$</td>
+<td>automorphisms of $\mathbb{H}^n$</td>
+</tr>
+<tr>
+<td>$J(\mathbb{H})$</td>
+<td>radical, zero because $\mathbb{H}$ is a division ring</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}\{e_0,e_1,e_2,e_3\}$</td>
+<td>Lipschitz order, a torsion-free $\mathbb{Z}$-module of rank $4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul M. Cohn, <em>Skew Fields: Theory of General Division Rings</em> (Cambridge, 1995), for linear algebra and rank over division rings.</li>
+<li>Paul M. Cohn, <em>Free Rings and Their Relations</em> (Academic Press, 2nd ed. 1985), for freeness and the invariant basis number property.</li>
+<li>Israel N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for division rings, simple rings and their modules.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for semisimple rings, matrix algebras and Morita equivalence.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for torsion, regular elements and the structure of modules over noncommutative rings.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for modules over finite-dimensional algebras and projective modules.</li>
+<li>Joseph J. Rotman, <em>Advanced Modern Algebra</em> (American Mathematical Society, 3rd ed. 2015), for the module theory of division rings and matrix algebras.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1989), for division rings, modules over them and the linear algebra of vector spaces over a skew field.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for quaternion algebras, orders, the Lipschitz and Hurwitz orders, and the relation $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

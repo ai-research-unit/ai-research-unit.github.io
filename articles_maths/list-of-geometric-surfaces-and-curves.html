@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Geometric Surfaces and Curves — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-geometric-surfaces-and-curves"><strong>List of Geometric Surfaces and Curves</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the surfaces by genus and Euler characteristic and the curves with their genera, their Jacobians and their points. Every entry points to the article that introduces the surface or the curve, and the article introduces nothing and proves nothing.</p>
+<p>The list gathers the topological surfaces of Part II classified by their genus and their Euler characteristic, the Riemann surfaces that carry a complex structure, the algebraic curves with their arithmetic and geometric genera, the divisors and the Jacobian of a curve, and the rational points of a curve over a finite field and over a number field. Two invariants organise the whole list: the genus, which is the topological invariant of a surface and the arithmetic invariant of a curve and which decides both the uniformisation of the surface and the finiteness of the rational points of the curve, and the Euler characteristic, which is the genus in its topological form.</p>
+<p>The article records examples and non-examples side by side. Beside the surfaces and the curves it lists the singular curves for which the two genera differ, the non-orientable surfaces that carry no complex structure, the curves that have no rational point, and the curves of high genus whose points are finite, each with the failure named and the article that records it.</p>
+<h2 id="surfaces-by-genus-and-euler-characteristic">Surfaces by Genus and Euler Characteristic</h2>
+<p>A closed surface is classified by its genus and its orientability, and its Euler characteristic is the genus in numerical form.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Euler characteristic</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sphere $S^2$</td>
+<td>$2$</td>
+<td>the unique simply connected closed surface</td>
+<td><em>Low-Dimensional Topology</em>; <em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>the torus $T^2 = S^1\times S^1$</td>
+<td>$0$</td>
+<td>the orientable surface of genus one, the first of the connected sums of tori</td>
+<td><em>Low-Dimensional Topology</em>; <em>The Fundamental Group and Covering Spaces</em></td>
+</tr>
+<tr>
+<td>the real projective plane $\mathbb{RP}^2$</td>
+<td>$1$</td>
+<td>non-orientable, the sphere modulo the antipodal map</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the Klein bottle</td>
+<td>$0$</td>
+<td>non-orientable, $\chi = 0$, not a torus</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the closed orientable surface of genus $g$</td>
+<td>$2 - 2g$</td>
+<td>hyperbolic for $g \geq 2$; hyperbolic area $4\pi(g-1)$</td>
+<td><em>Low-Dimensional Topology</em>; <em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>the connected sum $M\# N$</td>
+<td>$\chi(M) + \chi(N) - 2$</td>
+<td>the operation of the classification of surfaces</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a compact surface with boundary</td>
+<td>$2 - 2g - b$</td>
+<td>classified by genus, orientability and boundary number $b$</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a compact flat surface</td>
+<td>$0$</td>
+<td>the torus and the Klein bottle, the two compact flat surfaces</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>a hyperbolic surface</td>
+<td>negative</td>
+<td>a quotient $\mathbf{H}^2/\Gamma$, the hyperbolic area $4\pi(g-1)$</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>the mapping class group of a surface</td>
+<td>—</td>
+<td>the group of the isotopy classes of its homeomorphisms</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The closed surfaces are classified by the two discrete invariants, orientability and Euler characteristic, and the uniformisation theorem gives each one exactly one of the three geometries according to the sign of $\chi$. The connected-sum decomposition reduces the classification to the prime surfaces, the sphere and the projective plane being the two starting points, and the hyperbolic area is the first invariant that is geometric rather than topological.</p>
+<h2 id="riemann-surfaces-and-complex-structures">Riemann Surfaces and Complex Structures</h2>
+<p>A Riemann surface is a surface with a complex structure, and the complex structure is equivalent to a conformal structure by the uniformisation theorem.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a Riemann surface</td>
+<td>a one-dimensional complex manifold, a surface with a holomorphic atlas</td>
+<td><em>Teichmüller Theory</em>; <em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the genus of a Riemann surface</td>
+<td>the topological genus, the number of handles</td>
+<td><em>Teichmüller Theory</em></td>
+</tr>
+<tr>
+<td>the uniformisation of a surface</td>
+<td>the spherical, Euclidean or hyperbolic metric according to the sign of $\chi$</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>the Teichmüller space of a surface</td>
+<td>the space of the marked complex structures, of dimension $3g-3+n$ for $2g-2+n > 0$</td>
+<td><em>Teichmüller Theory</em></td>
+</tr>
+<tr>
+<td>the Teichmüller metric</td>
+<td>the Finsler metric of the extremal quasiconformal dilatation, not Riemannian for $g\geq2$</td>
+<td><em>Teichmüller Theory</em></td>
+</tr>
+<tr>
+<td>the moduli space $M_g$ of curves</td>
+<td>the coarse moduli space of the curves of genus $g$, of dimension $3g-3$</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>the stable-curve compactification $\overline M_g$</td>
+<td>the projective compactification by the stable curves</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The complex structure of a surface is equivalent to a conformal class of metrics, and by uniformisation it is realised by a metric of constant curvature, so that the theory of Riemann surfaces is the theory of hyperbolic surfaces when the genus is at least two. The moduli space is the quotient of the Teichmüller space by the mapping class group, and its dimension $3g-3$ counts the complex moduli of a curve of genus $g$.</p>
+<h2 id="plane-curves-and-their-genera">Plane Curves and their Genera</h2>
+<p>An algebraic curve is given by a polynomial equation, and its genus is computed from its degree and its singularities.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Curve</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>an affine or projective plane curve</td>
+<td>the zero set of a polynomial of degree $d$ in two or three variables</td>
+<td><em>Algebraic Curves</em>, §Plane Curves</td>
+</tr>
+<tr>
+<td>the arithmetic genus $p_a(C) = (d-1)(d-2)/2$</td>
+<td>the genus of a plane curve of degree $d$ before the singularities are resolved</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the geometric genus $g = p_a - \sum_P\delta_P$</td>
+<td>the genus after the singularities are accounted for</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>a rational curve</td>
+<td>a curve of genus $0$, birational to the projective line</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>a nonsingular plane cubic with a rational point</td>
+<td>an elliptic curve of genus $1$, with the group law of the chord and the tangent</td>
+<td><em>Elliptic Curves</em></td>
+</tr>
+<tr>
+<td>the Weierstrass form $y^2 = x^3 + a_4x + a_6$</td>
+<td>the standard equation of an elliptic curve, with discriminant $\Delta$ and $j$-invariant</td>
+<td><em>Elliptic Curves</em></td>
+</tr>
+<tr>
+<td>the Hermitian curve $y^q + y = x^{q+1}$</td>
+<td>a curve over $\mathbb{F}_{q^2}$ of maximal genus, meeting the Hasse–Weil bound</td>
+<td><em>Algebraic Curves</em>, §Curves over Finite Fields</td>
+</tr>
+<tr>
+<td>the function field $K(C)$</td>
+<td>the field of transcendence degree one determining the curve up to birational equivalence</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the canonical divisor $K_C$ and the genus</td>
+<td>the divisor of a rational form, of degree $2g-2$</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The genus of a plane curve is determined by its degree and its singularities, and it is the invariant that governs both the geometry and the arithmetic. A nonsingular cubic is an elliptic curve as soon as it has a rational point, and the group law on it is the geometric form of the identification of the points with the divisor classes of degree zero.</p>
+<h2 id="jacobians-and-divisor-classes">Jacobians and Divisor Classes</h2>
+<p>The divisor classes of a curve form a group, and the degree-zero part is the Jacobian, the group of the divisor classes of degree zero attached to the curve.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the divisor $\operatorname{div}(f)$ of a function</td>
+<td>the formal sum of the zeros and poles, of degree zero</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the divisor class group $\operatorname{Pic}^0(C)$</td>
+<td>the degree-zero divisors modulo the principal ones</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the Riemann–Roch theorem</td>
+<td>$\ell(D) - \ell(K_C - D) = \deg D + 1 - g$</td>
+<td><em>Algebraic Curves</em>, §Divisors and Linear Systems</td>
+</tr>
+<tr>
+<td>the space $L(D)$ and its dimension $\ell(D)$</td>
+<td>the functions with poles bounded by the divisor</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the Jacobian of a curve</td>
+<td>the moduli space of the line bundles of a fixed degree, of dimension $g$</td>
+<td><em>Moduli Spaces</em>; <em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the identification of the points with $\operatorname{Pic}^0$</td>
+<td>the map $P \mapsto$ the class of $P - O$, the origin of the elliptic group law</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the linear flow on the Jacobian</td>
+<td>the straight-line motion of the divisor under an integrable flow</td>
+<td><em>Integrable Systems</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Riemann–Roch theorem computes the dimension of the space of the functions with prescribed poles, and it is the tool by which the genus and the divisor classes are related. The Jacobian is the moduli space of the line bundles of degree zero on the curve, and it is the ambient variety of the elliptic group law in the case $g=1$ and of the finite-gap flow in the theory of integrable systems.</p>
+<h2 id="the-points-of-a-curve">The Points of a Curve</h2>
+<p>The rational points of a curve are governed by the genus: a curve of genus zero is either the line or has none, a curve of genus one is an elliptic curve with a finitely generated group of points, and a curve of genus at least two has only finitely many points over a number field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the set $C(\mathbb{F}_q)$ of rational points</td>
+<td>the points defined over a finite field</td>
+<td><em>Algebraic Curves</em>, §Curves over Finite Fields</td>
+</tr>
+<tr>
+<td>the zeta function $Z(C,T)$</td>
+<td>the generating function of the numbers of points, rational with a functional equation</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the Hasse–Weil bound</td>
+<td>$\lvert C(\mathbb{F}_q)\rvert \leq q + 1 + 2g\sqrt q$</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the roots $\alpha_i$ of the numerator</td>
+<td>the reciprocal roots, of absolute value $\sqrt q$</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>the group $E(K)$ of points of an elliptic curve</td>
+<td>an abelian group under the chord-and-tangent law</td>
+<td><em>Elliptic Curves</em></td>
+</tr>
+<tr>
+<td>the Mordell–Weil theorem</td>
+<td>$E(K)$ is finitely generated over a number field</td>
+<td><em>Elliptic Curves</em></td>
+</tr>
+<tr>
+<td>the torsion subgroup $E(K)_{\mathrm{tors}}$ and the rank $r$</td>
+<td>the finite part and the free rank of $E(K)$</td>
+<td><em>Elliptic Curves</em></td>
+</tr>
+<tr>
+<td>the Tate module $T_\ell(E)$</td>
+<td>the inverse limit of the $\ell^n$-torsion, a Galois representation</td>
+<td><em>Elliptic Curves</em></td>
+</tr>
+<tr>
+<td>the Frobenius endomorphism and $a_q = q+1-\lvert E(\mathbb{F}_q)\rvert$</td>
+<td>the trace of Frobenius, determining the zeta function</td>
+<td><em>Elliptic Curves</em></td>
+</tr>
+<tr>
+<td>the theorem of Faltings</td>
+<td>the set $C(K)$ is finite for a curve of genus $g \geq 2$ over a number field</td>
+<td><em>Algebraic Curves</em>, §The Arithmetic of a General Curve</td>
+</tr>
+</tbody>
+</table></div>
+<p>The genus separates the arithmetic of curves: for genus zero the curve is the projective line or a conic with no point, for genus one the curve is elliptic and its points form the finitely generated group of the Mordell–Weil theorem, and for higher genus the theorem of Faltings makes the set of rational points finite. The zeta function of a curve over a finite field packages the numbers of points, and the Hasse–Weil bound is the arithmetic form of the Riemann hypothesis in dimension one.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the surfaces and curves, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a surface or a curve of the list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a singular plane curve</td>
+<td>its arithmetic genus differs from its geometric genus; only the resolved curve has the genus of the list</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>a non-orientable surface</td>
+<td>it carries no complex structure and is not a Riemann surface</td>
+<td><em>Low-Dimensional Topology</em>; <em>Teichmüller Theory</em></td>
+</tr>
+<tr>
+<td>a curve of genus zero with no rational point</td>
+<td>a conic, not isomorphic to the projective line over the base field</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>a curve of genus at least two with infinitely many rational points</td>
+<td>it cannot exist over a number field, by the theorem of Faltings</td>
+<td><em>Algebraic Curves</em>, §The Arithmetic of a General Curve</td>
+</tr>
+<tr>
+<td>a higher-dimensional analogue of a Riemann surface</td>
+<td>a complex manifold of dimension at least two, treated in the Kähler geometry</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the surfaces and curves of the corpus. The surfaces are classified by genus and Euler characteristic, with the sphere, the torus, the projective plane, the Klein bottle, the genus-$g$ surfaces, the connected sums and the hyperbolic surfaces; the Riemann surfaces follow, with the complex structure, the uniformisation, the Teichmüller space and the moduli space of curves; the plane curves are recorded with their arithmetic and geometric genera, the Weierstrass form, the Hermitian curve and the canonical divisor; the divisors, the Riemann–Roch theorem and the Jacobian follow; and the points of a curve close the list, with the zeta function, the Hasse–Weil bound, the Mordell–Weil theorem and the Tate module. Beside the examples stand the non-examples: a singular curve has two genera that differ, a non-orientable surface is not a Riemann surface, a conic without a rational point is not the line, and a curve of genus at least two has only finitely many rational points.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi$, $g$, $b$</td>
+<td>Euler characteristic, genus, number of boundary components</td>
+</tr>
+<tr>
+<td>$M\# N$</td>
+<td>Connected sum of surfaces</td>
+</tr>
+<tr>
+<td>$M_g$, $\overline M_g$</td>
+<td>Moduli space of curves of genus $g$; its compactification</td>
+</tr>
+<tr>
+<td>$d$, $p_a(C)$, $\delta_P$</td>
+<td>Degree of a plane curve, arithmetic genus, delta invariant</td>
+</tr>
+<tr>
+<td>$K_C$, $L(D)$, $\ell(D)$</td>
+<td>Canonical divisor, space of functions, its dimension</td>
+</tr>
+<tr>
+<td>$\operatorname{Div}^0(C)$, $\operatorname{Pic}^0(C)$</td>
+<td>Degree-zero divisors and their class group</td>
+</tr>
+<tr>
+<td>$C(\mathbb{F}_q)$, $Z(C,T)$, $\alpha_i$</td>
+<td>Rational points, zeta function, reciprocal roots</td>
+</tr>
+<tr>
+<td>$E$, $O$, $\Delta$, $j$, $E(K)$, $E[n]$, $T_\ell(E)$</td>
+<td>Elliptic curve and its invariants, points, torsion, Tate module</td>
+</tr>
+<tr>
+<td>$\mathbf{H}^2$</td>
+<td>The hyperbolic plane, the model of the hyperbolic surfaces</td>
+</tr>
+<tr>
+<td>$\operatorname{div}(f)$</td>
+<td>The divisor of a rational function, of degree zero</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, 1977), for the curves, their genera, the divisors and the Riemann–Roch theorem.</li>
+<li>Joseph H. Silverman, <em>The Arithmetic of Elliptic Curves</em> (Springer, 2nd ed. 2009), for the elliptic curves, the group law, the Mordell–Weil theorem and the Tate module.</li>
+<li>Rick Miranda, <em>Algebraic Curves and Riemann Surfaces</em> (American Mathematical Society, 1995), for the Riemann surfaces, the Jacobians and the divisor theory.</li>
+<li>Benson Farb and Dan Margalit, <em>A Primer on Mapping Class Groups</em> (Princeton University Press, 2012), for the surfaces, the uniformisation and the moduli of the hyperbolic structures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Leray–Serre Spectral Sequence — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lerayserre-spectral-sequence"><strong>The Leray–Serre Spectral Sequence</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A fibration $p : E \to B$ with fibre $F$ relates the three spaces by the long exact sequence on homotopy groups of <em>Homotopy Groups and Fibrations</em>, but homotopy groups are not computable and the sequence does not determine the homology of $E$. The <strong>Leray–Serre spectral sequence</strong> supplies the homology: it is a spectral sequence whose second page is the homology of the base with coefficients in the homology of the fibre,</p>
+<p>$$
+E^2_{p,q} = H_p\bigl(B; H_q(F;R)\bigr) \ \Longrightarrow \ H_{p+q}(E;R),
+$$</p>
+<p>converging to the homology of the total space. It is the machine that computes the homology of a loop space from that of a sphere, the homology of a classifying space from that of a group, and the transgression and edge homomorphisms that generalise the exact sequence of a fibration to all degrees.</p>
+<p>The general theory of spectral sequences — filtered complexes, exact couples, convergence, the comparison theorem — is the subject of the companion article <em>Spectral Sequences</em> of Part I, which is being written in parallel, and none of it is re-derived here. What this article does is the <em>topological</em> instance: it constructs the filtration of the singular chains of the total space by the skeleta of the base, identifies the $E^2$ page, states the convergence and the multiplicative structure, and computes. This division is deliberate and is the corpus's general organisation: the algebra of derived functors and spectral sequences belongs to Part I, the topological and geometric instances belong here.</p>
+<p>Two further articles of this batch depend on the present one:which runs the spectral sequence for the fibrations $G/H \to BH \to BG$, , which uses the Atiyah–Hirzebruch spectral sequence. The article closes by recording the <strong>Leray–Serre spectral sequence with local coefficients</strong>, in which the fundamental group of the base acts on the homology of the fibre, and the <strong>Wang sequence</strong> of a fibration over a sphere.</p>
+<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$; coefficients are in $R$ unless a coefficient system is named; a fibration means a Serre fibration, as in <em>Homotopy Groups and Fibrations</em>. The spectral sequence is indexed homologically unless stated, with total degree $n = p+q$.</p>
+<h2 id="the-algebraic-input">The Algebraic Input</h2>
+<h3 id="filtered-complexes-and-spectral-sequences">Filtered Complexes and Spectral Sequences</h3>
+<p><strong>Definition (quoted from Part I).</strong> A <strong>spectral sequence</strong> is a sequence of bigraded $R$-modules $(E^r_{p,q}, d^r)$ for $r \geq r_0$, with differentials</p>
+<p>$$
+d^r : E^r_{p,q} \longrightarrow E^r_{p-r,\,q+r-1}, \qquad d^r \circ d^r = 0,
+$$</p>
+<p>and isomorphisms $E^{r+1}_{p,q} \cong \ker d^r\big|_{E^r_{p,q}} \big/ \operatorname{im} d^r\big|_{E^r_{p+r,\,q-r+1}}$. A spectral sequence <strong>converges</strong> to a graded module $H_*$ with a filtration $0 \subseteq F_0H_n \subseteq F_1H_n \subseteq \cdots \subseteq H_n$ if there are isomorphisms</p>
+<p>$$
+E^\infty_{p,q} \cong F_p H_{p+q} / F_{p-1}H_{p+q}.
+$$</p>
+<p><strong>Theorem (the spectral sequence of a filtration; Part I).</strong> Let $C_*$ be a chain complex of $R$-modules with a decreasing filtration $F_p C_*$ such that for each $n$ the induced filtration on $C_n$ is finite. Then there is a spectral sequence with</p>
+<p>$$
+E^1_{p,q} = H_{p+q}\bigl(F_p C_* / F_{p+1}C_*\bigr) \ \Longrightarrow \ H_{p+q}(C_*),
+$$</p>
+<p>whose differential $d^1$ is induced by the boundary of $C_*$.</p>
+<p>This theorem, its proof, and the convergence and comparison theorems for spectral sequences are those of the companion article <em>Spectral Sequences</em> of Part I, written in parallel; they are used here as stated.</p>
+<h3 id="the-filtration-of-the-total-space">The Filtration of the Total Space</h3>
+<p><strong>Definition.</strong> Let $p : E \to B$ be a fibration with $B$ a CW complex and let $C_*(E;R)$ be the singular chain complex. The <strong>Serre filtration</strong> is</p>
+<p>$$
+F_p C_n(E;R) = \text{the subgroup spanned by singular simplices } \sigma : \Delta_n \to E
+\text{ with } p\sigma(\Delta_n) \subseteq B^{(p)},
+$$</p>
+<p>where $B^{(p)}$ is the $p$-skeleton of <em>CW Complexes and Cellular Approximation</em>, the filtration of $B$ being by skeleta and hence finite on each chain.</p>
+<p>For each $n$ the filtration is finite because a singular simplex has compact image, which meets only finitely many open cells of a CW complex. The filtration is compatible with $\partial$ because the boundary of a simplex is contained in the simplex.</p>
+<p><strong>Theorem (the Serre spectral sequence).</strong> Let $p : E \to B$ be a Serre fibration with $B$ a CW complex, and suppose that $B$ is path-connected and that $\pi_1(B, b_0)$ acts trivially on $H_*(F;R)$ for the fibre $F$ over $b_0$. Then the spectral sequence of the Serre filtration has</p>
+<p>$$
+E^2_{p,q} = H_p\bigl(B; H_q(F;R)\bigr) \ \Longrightarrow \ H_{p+q}(E;R),
+$$</p>
+<p>with the coefficient module $H_q(F;R)$ constant, and the differential on the second page is</p>
+<p>$$
+d^2 : E^2_{p,q} \to E^2_{p-2,\,q+1}.
+$$</p>
+<p>Dually, in cohomology, $E_2^{p,q} = H^p(B;H^q(F;R)) \Rightarrow H^{p+q}(E;R)$, with $d_2 : E_2^{p,q}\to E_2^{p+2,q-1}$.</p>
+<p><em>Proof sketch.</em> The $E^1$ page of the filtered complex computes the homology of the graded pieces $F_pC_*/F_{p+1}C_*$. A simplex in $F_p$ but not in $F_{p+1}$ projects to a simplex in a single $p$-cell of $B$; the quotient complex is therefore the relative chain complex of the fibration over the pair $(B^{(p)}, B^{(p-1)})$, and excision identifies it with the chains of a disjoint union of copies of the fibre, one for each $p$-cell. Hence</p>
+<p>$$
+E^1_{p,q} \cong C_p^{\mathrm{CW}}\bigl(B; H_q(F;R)\bigr),
+$$</p>
+<p>the cellular chains of $B$ with coefficients in $H_q(F)$, and the differential $d^1$ is the cellular boundary twisted by the action of $\pi_1(B)$; when the action is trivial, $E^2_{p,q} = H_p(B;H_q(F;R))$ as stated. Convergence is the theorem of Part I applied to the Serre filtration. $\square$</p>
+<p><strong>Remark.</strong> The triviality of the action of $\pi_1(B)$ on $H_q(F;R)$ holds automatically when $B$ is simply connected, and when $R = \mathbb{Q}$ and the action is finite it may be replaced by the invariant and coinvariant parts. The general statement with local coefficients is recorded at the end of the article.</p>
+<h2 id="the-exact-sequence-of-a-fibration-revisited">The Exact Sequence of a Fibration, Revisited</h2>
+<h3 id="edge-homomorphisms">Edge Homomorphisms</h3>
+<p><strong>Definition.</strong> In a first quadrant spectral sequence converging to $H_*(E)$, the <strong>edge homomorphisms</strong> are the maps</p>
+<p>$$
+H_p(E) \longrightarrow E^\infty_{p,0} \subseteq E^2_{p,0} = H_p(B; H_0(F)), \qquad E^2_{0,q} = H_q(F) = H_0(B;H_q(F)) \longrightarrow E^\infty_{0,q} \subseteq H_q(E),
+$$</p>
+<p>obtained by projecting the filtration quotients. When $B$ is path-connected and $F$ connected, $H_0(F;R) \cong R$ and $H_0(B;H_q(F)) \cong H_q(F)$, so the second is a map $H_q(F) \to H_q(E)$, the map induced by the inclusion of the fibre; the first is a map $H_p(E) \to H_p(B)$, the map induced by $p$.</p>
+<p><strong>Theorem.</strong> The edge homomorphisms coincide with the maps induced by the inclusion $F \hookrightarrow E$ and the projection $p : E \to B$.</p>
+<p><em>Proof.</em> A cycle whose simplices all project to the basepoint is a cycle in the fibre, and a cycle whose simplices project into the $0$-skeleton... more precisely, the projection of the filtration identifies the $(0,q)$-entry with the chains in $F$, and the identification of the $(p,0)$-entry passes to the base's cellular chains through $p_\#$. Naturality of the filtration under the inclusion and the projection gives the identification on homology. $\square$</p>
+<h3 id="the-five-term-and-low-degree-exact-sequences">The Five-Term and Low-Degree Exact Sequences</h3>
+<p><strong>Theorem (the five-term exact sequence).</strong> For a fibration $F \to E \to B$ as in the theorem above, the low-degree terms of the spectral sequence give the exact sequence</p>
+<p>$$
+H_2(E;R) \to H_2(B;R) \xrightarrow{\ \tau\ } H_1(F;R)_B \to H_1(E;R) \to H_1(B;R) \to 0,
+$$</p>
+<p>where the subscript denotes the coinvariants under the action of $\pi_1(B)$ (no subscript when the action is trivial), and $\tau$ is the <strong>transgression</strong>, which in these degrees is the differential $d^2$. In cohomology the corresponding sequence is</p>
+<p>$$
+0 \to H^1(B;R) \to H^1(E;R) \to H^1(F;R)^{B} \xrightarrow{\ \tau\ } H^2(B;R) \to H^2(E;R).
+$$</p>
+<p><em>Proof.</em> These are the statements that in the spectral sequence of a first quadrant double complex all differentials into and out of the entries of total degree $\leq 2$ vanish or are the only ones present; reading off $E^\infty$ from $E^2$ and using the filtration gives the sequences. $\square$</p>
+<p><strong>Definition.</strong> The <strong>transgression</strong> of the spectral sequence of a fibration is the map that a class of the fibre acquires when it survives long enough to receive a differential. In the cohomological indexing $E_r^{p,q} = H^p(B;H^q(F))$, a class of $E_2^{0,q}$ that is killed by $d_2, d_3, \ldots, d_q$ survives to the entry $E_{q+1}^{0,q}$, and $d_{q+1}$ then carries it to $E_{q+1}^{q+1,0}$; this assignment is the transgression</p>
+<p>$$
+\tau : \operatorname{dom}\tau \subseteq E_2^{0,q} \xrightarrow{\ d_{q+1}\ } E_{q+1}^{q+1,0}.
+$$</p>
+<p>No differential can leave the entry $(q+1,0)$ in a first quadrant spectral sequence — the target of $d_r$ from that bidegree is $(q+1+r, 1-r)$, with negative second index for $r \geq 2$ — so after the incoming differentials have been factored out the target may be identified with $E_2^{q+1,0}$, and the transgression is written $\tau : E_2^{0,q} \to E_2^{q+1,0}$. Homologically, with the indexing of the five-term sequence above, the transgression is the differential $d^q : E^2_{q,0} \to E^2_{0,q-1}$.</p>
+<p>Geometrically, the transgression is the obstruction to extending a class of the fibre to a class of the total space: a class of $H^q(F)$ that is the restriction of a class of $H^q(E)$ transgresses to zero, the classes on which $\tau$ is defined form the subgroup that survives the earlier differentials, and the values of $\tau$ lie in the cohomology of the base one degree higher.</p>
+<p><strong>Remark.</strong> The transgression is the spectral-sequence generalisation of the connecting homomorphism of the long exact sequence of a fibration; for a fibration with fibre an Eilenberg–MacLane space it computes the $k$-invariants, and for the path–loop fibration it produces the suspension isomorphism. It is natural in maps of fibrations.</p>
+<p><strong>Corollary (the exact sequence of a fibration on homology, low degrees).</strong> Comparing the five-term sequence above with the Hurewicz isomorphism $\pi_1^{\mathrm{ab}} \cong H_1$ of <em>Homotopy Groups and Fibrations</em> recovers the exactness of the homotopy sequence in degrees one and two; the spectral sequence is thus strictly stronger than the homotopy sequence, since it computes all degrees at once.</p>
+<h2 id="computations">Computations</h2>
+<h3 id="fibrations-over-spheres-and-the-wang-sequence">Fibrations over Spheres and the Wang Sequence</h3>
+<p><strong>Theorem (Wang sequence).</strong> Let $F \to E \to S^n$ be a fibration over the sphere with $n \geq 2$, so that the base is simply connected and the action of $\pi_1(B)$ is trivial. Then the Serre spectral sequence has only two nonzero columns, $p = 0$ and $p = n$, so the only possibly nonzero differential is</p>
+<p>$$
+d^n : E^n_{n,q} \to E^n_{0,\,q+n-1},
+$$</p>
+<p>and the spectral sequence collapses at $E^{n+1} = E^\infty$. It need not collapse at $E^2$: for the Hopf fibration below the differential $d^2$ is an isomorphism. Reading the convergence off the two-column filtration gives the long exact sequence</p>
+<p>$$
+\cdots \to H_p(F) \xrightarrow{\ i_*\ } H_p(E) \xrightarrow{\ p_*\ } H_{p-n}(F) \xrightarrow{\ \partial\ } H_{p-1}(F) \to H_{p-1}(E) \to \cdots,
+$$</p>
+<p>the <strong>Wang sequence</strong> of the fibration; the map $\partial$ is the differential $d^n$ in the indexing of the sequence. The sequence does not split in general: for the Hopf fibration the term $H_1(E) = H_1(S^3)$ vanishes while $H_1(F) \oplus H_{1-n}(F) = H_1(S^1) \cong R$, so $H_*(E)$ is not the direct sum of the two columns.</p>
+<p><em>Proof.</em> The $E^2$ page has $E^2_{p,q} = H_p(S^n;H_q(F))$, which is nonzero only for $p = 0$ and $p = n$; hence the only possibly nonzero differential is $d^n : E^n_{n,q} \to E^n_{0,q+n-1}$, and the spectral sequence collapses at $E^{n+1} = E^\infty$. Reading the convergence off the filtration gives the exact sequence. $\square$</p>
+<p><strong>Example (the Hopf fibration).</strong> For $F = S^1$, $E = S^3$, $B = S^2$ and $n = 2$, the Wang sequence is</p>
+<p>$$
+\cdots \to H_p(S^1) \to H_p(S^3) \to H_{p-2}(S^1) \xrightarrow{\ \partial\ } H_{p-1}(S^1) \to H_{p-1}(S^3) \to \cdots,
+$$</p>
+<p>and in degree $p = 2$ it reads $H_2(S^1) \to H_2(S^3) \to H_0(S^1) \to H_1(S^1) \to H_1(S^3)$, that is, $0 \to 0 \to R \xrightarrow{\ \cong\ } R \to 0$. The spectral sequence therefore has its only nonzero differential $d^2$ mapping $E^2_{2,0} = H_2(S^2;H_0(S^1)) \cong R$ isomorphically onto $E^2_{0,1} = H_1(S^1) \cong R$, and it reads off the known homology $H_0(S^3) = H_3(S^3) = R$ with all other reduced groups zero. The geometric content is that the fundamental class of the fibre transgresses to the fundamental class of the base.</p>
+<p><strong>Example (the loop space of a sphere, in the small dimensions).</strong> For the path–loop fibration $\Omega S^n \to PS^n \to S^n$ with $PS^n$ contractible, the Wang sequence computes the homology of $\Omega S^n$ from that of the point, and since it reads $H_i(\Omega S^n) \cong H_{i-n+1}(\Omega S^n)$ it gives a periodicity of $n-1$. For $S^2$ the period is one, so</p>
+<p>$$
+H_k(\Omega S^2;R) \cong R \text{ for every } k \geq 0,
+$$</p>
+<p>while for $S^3$ the period is two and, since there is nothing in negative degrees, the groups vanish in odd degree:</p>
+<p>$$
+H_k(\Omega S^3;R) \cong \begin{cases} R, & k \text{ even}, \\ 0, & k \text{ odd.}\end{cases}
+$$</p>
+<p>The general statement, that $\Omega S^n$ has the homology of a free monoid on a single generator of degree $n-1$, is the content of the James construction and of the Bott–Samelson theorem; the rational statement is used through the Chern character.</p>
+<h3 id="eilenbergmaclane-spaces-and-the-pathloop-fibration">Eilenberg–MacLane Spaces and the Path–Loop Fibration</h3>
+<p><strong>Definition.</strong> For an abelian group $\pi$ and $n \geq 1$, an <strong>Eilenberg–MacLane space</strong> $K(\pi,n)$ is a CW complex with $\pi_n \cong \pi$ and all other homotopy groups zero; the construction, the functoriality and the standard cases are those of <em>Classifying Spaces and Cohomology Operations</em>, above this article, and are used here as they stand there.</p>
+<p><strong>Theorem (the path–loop spectral sequence).</strong> For $n \geq 2$ and $X = K(\pi,n)$ with $\pi$ finitely generated, the path–loop fibration $\Omega X \to PX \to X$ gives a spectral sequence</p>
+<p>$$
+E^2_{p,q} = H_p\bigl(K(\pi,n); H_q(\Omega X;R)\bigr) \Longrightarrow H_{p+q}(PX;R) = \begin{cases} R, & p+q = 0, \\ 0, & \text{otherwise},\end{cases}
+$$</p>
+<p>and the collapse of the target computes $H_*(K(\pi,n);R)$ from $H_*(\Omega K(\pi,n);R)$ by an induction in the total degree.</p>
+<p><strong>Example.</strong> For $n = 2$ and $\pi = \mathbb{Z}$, the first computations give $H_0(K(\mathbb{Z},2)) = R$, $H_1 = 0$, $H_2 = R$ generated by the fundamental class $\iota_2$, $H_3 = 0$, and $H_4 \cong R$ generated by $\iota_2^2$; this is the pattern of a polynomial algebra. Indeed $K(\mathbb{Z},2) = \mathbb{CP}^\infty$, whose cohomology is the polynomial ring $R[x]$ with $|x| = 2$, consistent with the ring structure of <em>Cup and Cap Products</em>. For $n$ odd and $\pi = \mathbb{Z}$ the answer is an exterior algebra on a generator of degree $n$, and for $n$ even, a divided polynomial algebra; these are the standard computations of the cohomology of Eilenberg–MacLane spaces.</p>
+<p><strong>Remark.</strong> The path–loop method is the standard route to the cohomology of Eilenberg–MacLane spaces, and it is the input to obstruction theory and to the Postnikov tower, which assembles a space from its homotopy groups by a sequence of fibrations with Eilenberg–MacLane fibres. The $k$-invariants appearing at each stage are the transgressions of the corresponding path–loop spectral sequence, and they are the cohomology operations of the stable theory.</p>
+<h2 id="multiplicativity-and-local-coefficients">Multiplicativity and Local Coefficients</h2>
+<h3 id="the-product-structure">The Product Structure</h3>
+<p><strong>Theorem.</strong> Let $p : E \to B$ be a fibration with fibre $F$ and $B$ simply connected. Then the Leray–Serre spectral sequence in cohomology is a spectral sequence of rings: there is a product</p>
+<p>$$
+\smile : E_r^{p,q} \otimes_R E_r^{p',q'} \longrightarrow E_r^{p+p',q+q'}
+$$</p>
+<p>satisfying the Leibniz rule $d_r(x \smile y) = d_r x \smile y + (-1)^{p+q}x \smile d_r y$, and on the $E_2$ page it is the cup product</p>
+<p>$$
+H^p(B;H^q(F;R)) \otimes H^{p'}(B;H^{q'}(F;R)) \to H^{p+p'}(B;H^{q+q'}(F;R))
+$$</p>
+<p>induced by the cross product and the multiplication of $H^*(F;R)$. The product on $E_\infty$ induces the cup product on $H^*(E;R)$.</p>
+<p><em>Proof sketch.</em> The product is induced by the Eilenberg–Zilber map of <em>Cup and Cap Products</em> applied to the filtered complexes: $\Xi$ is compatible with the filtrations because the product of a simplex projecting to $B^{(p)}$ with one projecting to $B^{(p')}$ projects to $B^{(p+p')}$. The Leibniz rule is the derivation property of the differential, and the identification on $E_2$ uses the Künneth theorem of <em>Cup and Cap Products</em> for the tensor product of the base's cochains with $H^*(F)$. $\square$</p>
+<p><strong>Corollary.</strong> If the coefficient module $H^*(F;R)$ is free over $R$ and the spectral sequence degenerates, then $E_2 = E_\infty = H^*(B;R)\otimes_R H^*(F;R)$ by the universal coefficient theorem, so $H^*(E;R)$ is the associated graded of a filtration of that tensor product, and the edge homomorphisms assemble into the successive quotients of the filtration. For a fibration $F \to E \to B$ with $B$ simply connected and $R$ a field, the multiplicativity of the spectral sequence makes the computation of $H^*(E;R)$ from the $E_2$ page a computation of rings and not merely of groups.</p>
+<p><strong>Example (the transgression of the Euler class).</strong> For an oriented sphere bundle $S^{n-1} \to E \to B$ with $B$ simply connected, the only possible differential is $d^n : E_n^{0,n-1} \to E_n^{n,0}$, from the fundamental class of the fibre to the top cohomology of the base; the transgression of that class is the <strong>Euler class</strong> $e \in H^n(B;R)$ of the bundle. The Euler class is thus a cohomology class of the base measuring the failure of the sphere bundle to admit a section, and it is the basic example of a characteristic class; the characteristic-class theory itself is the subject of <em>Fibre Bundles, Connections and Curvature</em> and of <em>Characteristic Classes</em>, both earlier in this Part.</p>
+<h3 id="local-coefficients">Local Coefficients</h3>
+<p><strong>Definition.</strong> Let $p : E \to B$ be a fibration with $B$ path-connected and fibre $F$ over $b_0$. The <strong>monodromy</strong> of the fibration is the action of $\pi_1(B,b_0)$ on $H_*(F;R)$ obtained by lifting loops in $B$ to homotopy equivalences of $F$ over the loop, as in <em>Homotopy Groups and Fibrations</em>. The corresponding local coefficient system on $B$ is written $\mathcal{H}_q(F;R)$.</p>
+<p><strong>Theorem (Leray–Serre with local coefficients).</strong> For a Serre fibration $p : E \to B$ with $B$ path-connected, there is a first quadrant spectral sequence</p>
+<p>$$
+E^2_{p,q} = H_p\bigl(B; \mathcal{H}_q(F;R)\bigr) \Longrightarrow H_{p+q}(E;R),
+$$</p>
+<p>the homology of $B$ with coefficients in the local system $\mathcal{H}_q(F;R)$; when the monodromy is trivial this is the constant-coefficient statement above. The theory of local coefficients is the sheaf theory of andwritten later in this batch, and the identification of $H_*(B;\mathcal{H})$ with the cohomology of the corresponding sheaf is made there.</p>
+<p><strong>Remark.</strong> The monodromy is the reason the orientation hypothesis appears with a coefficient twist in the Gysin and Thom sequences of <em>Fibre Bundles, Connections and Curvature</em>: an oriented bundle is one whose top local system is constant.</p>
+<h2 id="summary">Summary</h2>
+<p>The Leray–Serre spectral sequence is the spectral sequence of the filtration of the singular chains of the total space of a fibration by the skeleta of the base. Its second page is the homology of the base with coefficients in the homology of the fibre, $E^2_{p,q} = H_p(B;H_q(F;R))$, and it converges to the homology of the total space; dually in cohomology, $E_2^{p,q} = H^p(B;H^q(F;R)) \Rightarrow H^{p+q}(E;R)$. The construction uses the filtration theorem for a filtered chain complex, which is the algebraic input of Part I's <em>Spectral Sequences</em> and is not re-derived here.</p>
+<p>The edge homomorphisms of the spectral sequence are the maps induced by the inclusion of the fibre and the projection to the base, and the transgression is the differential carrying a class of the fibre to one of the base. In low degrees the spectral sequence reduces to the five-term exact sequence relating $H_1$ and $H_2$ of the three spaces, which recovers and extends the long exact sequence of a fibration on homotopy groups. The spectral sequence is multiplicative, with the cup product on the $E_2$ page induced by the cross product and the product of $H^*(F)$; this makes the computation of the cohomology ring of the total space a ring computation, and it produces the transgression whose value on the fundamental class of the fibre is the Euler class of a sphere bundle. For a fibration over a sphere the Wang sequence isolates the single differential, and it computes the homology of loop spaces and of Eilenberg–MacLane spaces; and with the triviality of the monodromy removed, the coefficients become a local system, which is the sheaf-theoretic form of the theorem.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p : E \to B$, $F$</td>
+<td>Fibration, total space, base, fibre (Serre fibration)</td>
+</tr>
+<tr>
+<td>$E^r_{p,q}$, $d^r$</td>
+<td>Spectral sequence pages and differentials, $d^r : E^r_{p,q} \to E^r_{p-r,q+r-1}$</td>
+</tr>
+<tr>
+<td>$E^2_{p,q} = H_p(B;H_q(F;R))$</td>
+<td>Leray–Serre $E^2$ page, homology form</td>
+</tr>
+<tr>
+<td>$E_2^{p,q} = H^p(B;H^q(F;R))$</td>
+<td>Leray–Serre $E_2$ page, cohomology form</td>
+</tr>
+<tr>
+<td>$\Longrightarrow$</td>
+<td>Convergence: $E^\infty_{p,q} \cong F_pH_{p+q}/F_{p-1}H_{p+q}$</td>
+</tr>
+<tr>
+<td>$F_pC_*(E;R)$</td>
+<td>Serre filtration by preimages of the skeleta of $B$</td>
+</tr>
+<tr>
+<td>$B^{(p)}$</td>
+<td>$p$-skeleton of the base</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>Transgression; in cohomology $\tau : E_2^{0,q}\to E_2^{q+1,0}$</td>
+</tr>
+<tr>
+<td>Edge homomorphism</td>
+<td>$H_q(F) \to H_q(E)$ and $H_p(E) \to H_p(B)$</td>
+</tr>
+<tr>
+<td>Five-term sequence</td>
+<td>$H_2(E) \to H_2(B) \to H_1(F)_B \to H_1(E) \to H_1(B) \to 0$</td>
+</tr>
+<tr>
+<td>Wang sequence</td>
+<td>Long exact sequence for a fibration over $S^n$, $n \geq 2$</td>
+</tr>
+<tr>
+<td>$K(\pi,n)$</td>
+<td>Eilenberg–MacLane space; $\pi_n \cong \pi$, others zero</td>
+</tr>
+<tr>
+<td>$e \in H^n(B;R)$</td>
+<td>Euler class; transgression of the fibre's fundamental class</td>
+</tr>
+<tr>
+<td>$\mathcal{H}_q(F;R)$</td>
+<td>Local coefficient system from the monodromy action of $\pi_1(B)$</td>
+</tr>
+<tr>
+<td>$H_p(B;\mathcal{H})$</td>
+<td>Homology with local coefficients</td>
+</tr>
+<tr>
+<td>$\smile$</td>
+<td>Product on the spectral sequence; Leibniz rule with $d_r$</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Homologie singulière des espaces fibrés</em> (Annals of Mathematics 54, 1951), for the original construction of the spectral sequence of a fibration.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the Serre spectral sequence and its edge homomorphisms and transgression.</li>
+<li>John McCleary, <em>A User's Guide to Spectral Sequences</em> (Cambridge University Press, 2nd ed. 2001), for the spectral sequence of a fibration with full proofs and many computations.</li>
+<li>Jean Leray, <em>Sur les anneaux spectraux</em> (Journal de Mathématiques Pures et Appliquées, 1946), for the original filtered-complex construction.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the de Rham form of the spectral sequence and the transgression of the Euler class.</li>
+<li>Allen Hatcher, <em>Spectral Sequences</em> (unpublished notes, 2004), for a concise treatment aimed at the computations of this article.</li>
+<li>Mimura Mamoru and Hirosi Toda, <em>Topology of Lie Groups</em> (American Mathematical Society, 1991), for the spectral-sequence computations of the homology of Lie groups and their homogeneous spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

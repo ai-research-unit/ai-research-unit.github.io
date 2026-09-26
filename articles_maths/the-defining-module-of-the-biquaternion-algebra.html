@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Defining Module of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-defining-module-of-the-biquaternion-algebra"><strong>The Defining Module of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is isomorphic to the algebra $M_2(\mathbb{C})$ of $2\times2$ complex matrices, and like every matrix algebra it has a single irreducible module up to isomorphism. That module — the <strong>defining module</strong> $S$ — is the object through which the module theory of $\mathbb{B}$ is computed, and it is the smallest carrier that remembers the full algebra: the double centralizer theorem recovers $\mathbb{B}$ from $S$ as the algebra of all $\mathbb{C}$-linear endomorphisms of $S$, while the commutant of the module is only the scalars $\mathbb{C}$.</p>
+<p>This article studies $S$ in its own right. It constructs $S$ as the minimal left ideal $\mathbb{B}p$ of the biquaternion algebra, exhibits its left and right actions explicitly, computes its commutant and its endomorphism algebra, determines the invariant forms on it, and explains how the module determines the algebra and its Morita class. The algebra $\mathbb{B}$ itself — its two ground fields, its basis $e_0,e_1,e_2,e_3$ and central unit $i$, its simplicity — is standard and is not restated; the idempotents $p,q$, the matrix units $x,y$ and the Peirce decomposition are standard, and so is the matrix realization. The Morita theory used at the end is that of <em>Morita Equivalence</em> and <em>Hilbert and C*-Modules</em>. Nothing in the article is physical: $S$ is a module, its elements are vectors, and the forms on it are bilinear or sesquilinear.</p>
+<h2 id="the-algebra-and-its-matrix-units">The Algebra and Its Matrix Units</h2>
+<p>Recall that $\mathbb{B}$, as a complex algebra, carries the orthogonal primitive idempotents</p>
+<p>$$
+p=\frac{e_0+ie_3}{2}, \qquad q=\frac{e_0-ie_3}{2}, \qquad p^2=p,\quad q^2=q,\quad pq=qp=0,\quad p+q=e_0,
+$$</p>
+<p>and that the four elements</p>
+<p>$$
+p, \qquad x=\frac{ie_1-e_2}{2}, \qquad y=\frac{ie_1+e_2}{2}, \qquad q
+$$</p>
+<p>form a $\mathbb{C}$-basis of $\mathbb{B}$ satisfying the matrix-unit relations</p>
+<p>$$
+px=x=xq, \qquad qy=y=yp, \qquad xy=p, \qquad yx=q, \qquad x^2=y^2=0,
+$$</p>
+<p>together with $xp=qx=py=yq=0$. The identifications</p>
+<p>$$
+E_{11}=p, \qquad E_{12}=x, \qquad E_{21}=y, \qquad E_{22}=q
+$$</p>
+<p>exhibit a $\mathbb{C}$-algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$. The Peirce decomposition reads</p>
+<p>$$
+\mathbb{B}=\mathbb{B}p\oplus\mathbb{B}q=\mathbb{C}\{p,y\}\oplus\mathbb{C}\{x,q\}
+$$</p>
+<p>on the left and dually on the right, and in each case the two summands are minimal left ideals isomorphic to the unique simple module.</p>
+<h2 id="the-defining-module">The Defining Module</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>defining module</strong> of $\mathbb{B}$ is the left ideal</p>
+<p>$$
+S=\mathbb{B}p,
+$$</p>
+<p>the first column of the matrix picture. Using the multiplication table,</p>
+<p>$$
+\mathbb{B}p=\mathbb{C}\,p\oplus\mathbb{C}\,y, \qquad \dim_{\mathbb{C}}S=2,
+$$</p>
+<p>so $S$ is a two-dimensional complex vector space with basis $\{p,y\}$. It is the minimal left ideal generated by the primitive idempotent $p$, hence a simple left $\mathbb{B}$-module; since $\mathbb{B}$ is simple and artinian, $S$ is the unique simple left module up to isomorphism. Equivalently, fixing the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ of §The Algebra and Its Matrix Units,</p>
+<p>$$
+S \cong \mathbb{C}^2
+$$</p>
+<p>with $\mathbb{B}$ acting by matrix multiplication on column vectors, and this is the identification used throughout the article.</p>
+<h3 id="the-left-action">The left action</h3>
+<p>The left action of $\mathbb{B}$ on $S$ is left multiplication, and in the basis $\{p,y\}$ it is computed from the multiplication table immediately:</p>
+<p>$$
+p\cdot p=p, \quad p\cdot y=0, \qquad q\cdot p=0, \quad q\cdot y=y, \qquad x\cdot p=0, \quad x\cdot y=p, \qquad y\cdot p=y, \quad y\cdot y=0.
+$$</p>
+<p>The idempotent $p$ therefore acts not as the identity on $S$ but as the projection onto $\mathbb{C}p$ along $\mathbb{C}y$, annihilating the second basis vector; it is $q$, not $p$, that projects onto $\mathbb{C}y$ along $\mathbb{C}p$. In matrices with respect to the basis $(p,y)$ the four algebra generators therefore act as</p>
+<p>$$
+p \mapsto \begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11}, \qquad q \mapsto \begin{pmatrix}0&0\\0&1\end{pmatrix}=E_{22}, \qquad x \mapsto \begin{pmatrix}0&1\\0&0\end{pmatrix}=E_{12}, \qquad y \mapsto \begin{pmatrix}0&0\\1&0\end{pmatrix}=E_{21}.
+$$</p>
+<p>The assignment $a\mapsto (\text{multiplication by }a)$ is the algebra homomorphism $\rho:\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(S)\cong M_2(\mathbb{C})$ with $\rho(p)=E_{11}$, $\rho(q)=E_{22}$, $\rho(x)=E_{12}$ and $\rho(y)=E_{21}$, and it is an isomorphism by dimension count: $\dim_{\mathbb{C}}\mathbb{B}=4=\dim_{\mathbb{C}}\operatorname{End}_{\mathbb{C}}(S)$, and it is injective because $\mathbb{B}$ is simple, so its kernel, a two-sided ideal, is zero. This single computation is the double centralizer statement of §The Commutant and the Double Centralizer in miniature.</p>
+<h3 id="the-right-action-and-the-bimodule-structure">The right action and the bimodule structure</h3>
+<p>$S$ is also a right $\mathbb{C}$-module by scalar multiplication, and the two actions commute because $\mathbb{C}$ is central in $\mathbb{B}$:</p>
+<p>$$
+(bs)\lambda=b(s\lambda), \qquad b\in\mathbb{B},\ s\in S,\ \lambda\in\mathbb{C}.
+$$</p>
+<p>Hence $S$ is a $(\mathbb{B},\mathbb{C})$-bimodule, the <strong>standard bimodule</strong> of the pair $(\mathbb{B},\mathbb{C})$. In the matrix identification the left action is the usual multiplication of a $2\times2$ matrix on a column vector, and the right action multiplies the column by a scalar. The left and right actions are genuinely different data: the columns $\mathbb{B}p$ and $\mathbb{B}q$ are isomorphic as left $\mathbb{B}$-modules, both being copies of $S=\mathbb{C}^2$, but they are different subsets of $\mathbb{B}$, and by $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ the only isomorphisms between them are the nonzero scalars. This asymmetry is the module-theoretic face of the noncommutativity of $\mathbb{B}$.</p>
+<h2 id="the-commutant-and-the-double-centralizer">The Commutant and the Double Centralizer</h2>
+<h3 id="the-commutant">The commutant</h3>
+<p><strong>Theorem.</strong> $\operatorname{End}_{\mathbb{B}}(S)\cong\mathbb{C}$ and $\operatorname{Aut}_{\mathbb{B}}(S)\cong\mathbb{C}^{\times}$.</p>
+<p><em>Proof.</em> Let $T:S\to S$ be $\mathbb{B}$-linear. Since $S=\mathbb{B}p$, the endomorphism $T$ is determined by $T(p)$, and the condition $\mathbb{B}$-linearity applied to $p$ gives $b\,T(p)=T(bp)$ for all $b\in\mathbb{B}$. Taking $b=q$ gives $q\,T(p)=T(qp)=0$, so $T(p)\in\{s\in S: qs=0\}=\mathbb{C}p$. Hence $T(p)=\lambda p$ for a unique $\lambda\in\mathbb{C}$, and for a general element $s=bp$ of $S$ one has $T(s)=b\,T(p)=\lambda bp=\lambda s$, so $T=\lambda\,\mathrm{id}$ is scalar. Conversely every scalar is $\mathbb{B}$-linear. Therefore $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}\,\mathrm{id}\cong\mathbb{C}$, and the units are the nonzero scalars. $\square$</p>
+<p>The computation can be read as Schur's lemma, which says that the commutant of an irreducible module is a division algebra and, over the algebraically closed field $\mathbb{C}$, is $\mathbb{C}$; the proof above exhibits the division algebra explicitly. The module $S$ is <strong>absolutely irreducible</strong>, and its commutant is exactly the scalars, so $\operatorname{Aut}_{\mathbb{B}}(S)$ is the multiplicative group $\mathbb{C}^{\times}$ and the representation is rigid.</p>
+<h3 id="the-double-centralizer">The double centralizer</h3>
+<p><strong>Theorem.</strong> The natural map</p>
+<p>$$
+\mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{C}}(S), \qquad b \longmapsto (s \mapsto bs),
+$$</p>
+<p>is an isomorphism. Hence the defining module determines the algebra: $\mathbb{B}=\operatorname{End}_{\mathbb{C}}(S)$, and the pair $(\operatorname{End}_{\mathbb{C}}(S),\ \operatorname{End}_{\mathbb{B}}(S))=(\mathbb{B},\mathbb{C})$ is a double centralizer pair.</p>
+<p><em>Proof.</em> The map is a unital $\mathbb{C}$-algebra homomorphism; it is injective because $\mathbb{B}$ is simple and the action of $\mathbb{B}$ on $S=\mathbb{B}p$ is faithful (a nonzero two-sided ideal acts nonzero on a nonzero left ideal, and the kernel is a two-sided ideal). Both sides have $\mathbb{C}$-dimension $4$, since $\dim_{\mathbb{C}}S=2$ gives $\dim_{\mathbb{C}}\operatorname{End}_{\mathbb{C}}(S)=4=\dim_{\mathbb{C}}\mathbb{B}$. An injective map between spaces of equal finite dimension is an isomorphism. $\square$</p>
+<p>This is the finite-dimensional instance of the density theorem of <em>Automorphisms of Modules over an Algebra</em>, and it says that no information about the algebra is lost by passing to its defining module: the module $S$ together with the algebra $\operatorname{End}_{\mathbb{C}}(S)$ of all its $\mathbb{C}$-linear endomorphisms reconstructs $\mathbb{B}$. In this sense $S$ is not merely a representation of $\mathbb{B}$; it is a carrier of $\mathbb{B}$ itself. The same statement for a general algebra $A$ is that $A\cong\operatorname{End}_D(S)$ for an irreducible module with $\dim_D S<\infty$, which is the double centralizer theorem for a simple algebra.</p>
+<h2 id="the-invariant-forms">The Invariant Forms</h2>
+<p>The module $S$ carries two canonical forms, one bilinear and one Hermitian. They are distinguished by which involution of $\mathbb{B}$ is used.</p>
+<h3 id="the-bilinear-form">The bilinear form</h3>
+<p>Symmetrize with respect to quaternion conjugation $\bar{\cdot}$, which is the $\mathbb{C}$-linear anti-automorphism generated by $e_k\mapsto -e_k$. Under the matrix realization,</p>
+<p>$$
+\Phi(\bar b)=\epsilon\,\Phi(b)^{\mathsf T}\epsilon^{-1}, \qquad \epsilon=i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+$$</p>
+<p>so quaternion conjugation is the matrix adjugate. Define the antisymmetric bilinear form</p>
+<p>$$
+[u,v]=u^{\mathsf T}\epsilon v=u_1v_2-u_2v_1, \qquad u,v\in S.
+$$</p>
+<p><strong>Theorem.</strong> The form $[\cdot,\cdot]$ is nondegenerate and invariant:</p>
+<p>$$
+[bu,v]=[u,\bar b v] \qquad (b\in\mathbb{B},\ u,v\in S).
+$$</p>
+<p>It is the unique nonzero $\mathbb{B}$-invariant bilinear form on $S$ up to scalar.</p>
+<p><em>Proof.</em> Nondegeneracy is $\det\epsilon=-1\neq0$. For invariance, substitute $bu$:</p>
+<p>$$
+[bu,v]=(bu)^{\mathsf T}\epsilon v=u^{\mathsf T}\Phi(b)^{\mathsf T}\epsilon v,
+$$</p>
+<p>while</p>
+<p>$$
+[u,\bar b v]=u^{\mathsf T}\epsilon\Phi(\bar b)v=u^{\mathsf T}\epsilon\,\epsilon\Phi(b)^{\mathsf T}\epsilon^{-1}v=u^{\mathsf T}(-1)\Phi(b)^{\mathsf T}\epsilon^{-1}v.
+$$</p>
+<p>These agree because $\epsilon^{-1}=-\epsilon$ and $\epsilon^2=-1$, so $\epsilon^2\Phi(b)^{\mathsf T}\epsilon^{-1}=\Phi(b)^{\mathsf T}\epsilon$. Uniqueness: if $[\cdot,\cdot]'$ is a second invariant bilinear form, nondegeneracy of $[\cdot,\cdot]$ gives a unique $\mathbb{C}$-linear $T$ with $[\cdot,\cdot]'=[T\cdot,\cdot]$; then for all $b,u,v$,</p>
+<p>$$
+[T(bu),v]=[bu,v]'=[u,\bar b v]'=[Tu,\bar b v]=[b\,Tu,v],
+$$</p>
+<p>using the invariance of both forms and the identity $[w,\bar b v]=[bw,v]$, so $T(bu)=b\,T(u)$ and $T$ is $\mathbb{B}$-linear. Since $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, one has $T=\lambda\,\mathrm{id}$ and $[\cdot,\cdot]'=\lambda[\cdot,\cdot]$. $\square$</p>
+<p>The form is alternating, $[u,u]=0$, rather than symmetric: it is the symplectic form associated with the quaternion conjugation, and it reflects that the anti-involution fixing the quaternion basis is symplectic rather than orthogonal. In the matrix picture $[u,v]=u_1v_2-u_2v_1$ is the determinant of the $2\times2$ matrix with columns $u,v$, and invariance under quaternion conjugation is the statement that the determinant is unchanged by the adjugate involution.</p>
+<h3 id="the-hermitian-form">The Hermitian form</h3>
+<p>Symmetrize instead with respect to Hermitian conjugation ${}^\dagger$, the composition of quaternion conjugation with complex conjugation of the coefficients, which corresponds to the conjugate transpose. The standard form is</p>
+<p>$$
+\langle u,v\rangle=u^{\dagger}v=\bar u_1v_1+\bar u_2v_2 .
+$$</p>
+<p><strong>Theorem.</strong> The form $\langle\cdot,\cdot\rangle$ is Hermitian, positive definite, and invariant:</p>
+<p>$$
+\langle bu,v\rangle=\langle u,b^{\dagger}v\rangle \qquad (b\in\mathbb{B},\ u,v\in S).
+$$</p>
+<p>It is the unique nonzero $\mathbb{B}$-invariant Hermitian form on $S$ up to a positive scalar.</p>
+<p><em>Proof.</em> Hermitian symmetry is $\overline{\langle u,v\rangle}=\langle v,u\rangle$; positive definiteness is $\langle u,u\rangle=|u_1|^2+|u_2|^2\geq0$ with equality only for $u=0$. Invariance is $(bu)^\dagger v=u^\dagger b^\dagger v$. Uniqueness: if $\langle\cdot,\cdot\rangle'$ is a second invariant Hermitian form, positive definiteness of $\langle\cdot,\cdot\rangle$ gives a unique $\mathbb{C}$-linear $T$ with $\langle\cdot,\cdot\rangle'=\langle T\cdot,\cdot\rangle$, and the same computation as for the bilinear form, now with the identity $\langle w,b^\dagger v\rangle=\langle bw,v\rangle$, shows $T(bu)=b\,T(u)$; hence $T=\lambda\,\mathrm{id}$ and $\langle\cdot,\cdot\rangle'=\lambda\langle\cdot,\cdot\rangle$ with $\lambda>0$ by positive definiteness. $\square$</p>
+<p>The two forms are related by the identity</p>
+<p>$$
+u^{\dagger}v=\bar u^{\mathsf T}v=\overline{u^{\mathsf T}\bar v},
+$$</p>
+<p>so that the Hermitian form is the sesquilinear companion of the symmetric bilinear form $u^{\mathsf T}v$, while the invariant bilinear form is its $\epsilon$-twist, $u^{\mathsf T}\epsilon v$. In particular the Hermitian form makes $S$ a Hilbert space and gives the $C^*$-structure used in <em>Hilbert and C*-Modules</em>; the bilinear form makes $S$ self-dual, exhibiting $S$ as its own dual $S^*=\operatorname{Hom}_{\mathbb{C}}(S,\mathbb{C})$: with the right $\mathbb{B}$-structure $s\cdot b=\bar b s$ on $S$, the map $u\mapsto[u,\cdot]$ is an isomorphism of right $\mathbb{B}$-modules onto $S^*$, which is the finite-dimensional shadow of the self-duality of finitely generated projective modules.</p>
+<h2 id="the-matrix-realization-from-the-module">The Matrix Realization from the Module</h2>
+<p>The module determines not only the algebra, by the double centralizer, but also its matrix realization, and the derivation is a computation with the multiplication table. In the basis $(p,y)$ of $S$ fixed in §The Defining Module, the basis elements $e_0,e_1,e_2,e_3$ and the central unit $i$ of $\mathbb{B}$ act as follows, the entries recording the image of each basis vector.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$p$</th>
+<th>$y$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$p$</td>
+<td>$y$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$-iy$</td>
+<td>$-ip$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$y$</td>
+<td>$-p$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$-ip$</td>
+<td>$iy$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>$ip$</td>
+<td>$iy$</td>
+</tr>
+</tbody>
+</table></div>
+<p>For instance</p>
+<p>$$
+e_1p=\frac{e_1(e_0+ie_3)}{2}=\frac{e_1-ie_2}{2}=-iy, \qquad e_1y=\frac{e_1(ie_1+e_2)}{2}=\frac{-ie_0+e_3}{2}=-ip,
+$$</p>
+<p>using $e_1e_3=-e_2$ and $e_1e_2=e_3$; the remaining entries follow in the same way from the relations $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$. Reading the columns as the images of $p$ and $y$ gives the matrices</p>
+<p>$$
+e_1\mapsto\begin{pmatrix}0&-i\\-i&0\end{pmatrix}=-i\sigma_1, \qquad e_2\mapsto\begin{pmatrix}0&-1\\1&0\end{pmatrix}=-i\sigma_2, \qquad e_3\mapsto\begin{pmatrix}-i&0\\0&i\end{pmatrix}=-i\sigma_3, \qquad i\mapsto i\begin{pmatrix}1&0\\0&1\end{pmatrix},
+$$</p>
+<p>and the assignment extends to a $\mathbb{C}$-algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$. It is exactly the realization $\Phi$, with $\Phi(e_k)=-i\sigma_k$; the basis $(p,y)$ of the defining module is the basis in which that realization holds. The matrix units are recovered as $\Phi(p)=E_{11}$, $\Phi(x)=E_{12}$, $\Phi(y)=E_{21}$, $\Phi(q)=E_{22}$, and the identity $\Phi(\bar b)=\epsilon\Phi(b)^{\mathsf T}\epsilon^{-1}$ used in §The Invariant Forms is verified on the generators by direct computation.</p>
+<h2 id="the-module-as-the-carrier-of-the-algebra">The Module as the Carrier of the Algebra</h2>
+<p>The results of the preceding sections combine into a description of $\mathbb{B}$ and its module category entirely in terms of $S$.</p>
+<ul>
+<li><strong>The algebra.</strong> $\mathbb{B}=\operatorname{End}_{\mathbb{C}}(S)$, by the double centralizer theorem, so the defining module alone reconstructs the algebra once its commutant is known to be $\mathbb{C}$.</li>
+<li><strong>The irreducible modules.</strong> $S$ is the unique simple left $\mathbb{B}$-module, and $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ makes it absolutely irreducible.</li>
+<li><strong>All modules.</strong> Since $\mathbb{B}$ is semisimple, every left $\mathbb{B}$-module is a direct sum of copies of $S$: every module is $S^{\oplus k}$ for a unique cardinal $k$, and for finite-dimensional modules a unique integer $k$. The left regular module is $\mathbb{B}\cong S\oplus S$, matching the Peirce decomposition into the two columns.</li>
+<li><strong>The regular representation.</strong> $\mathbb{B}$ is a free left module of rank one over itself — the unit $e_0$ is a basis — and the regular representation, left multiplication on $\mathbb{B}$, decomposes as the direct sum of two copies of the defining representation, $\mathbb{B}\cong S\oplus S$. The free rank-one module and the simple module are therefore different objects: $\mathbb{B}$ is free of rank one over itself while $S$ is not free at all, even though both are built from the same simple module.</li>
+<li><strong>Projectivity and freeness.</strong> $S$ is projective but not free; $\mathbb{B}^{\oplus m}\cong S^{\oplus 2m}$, so $S^{\oplus k}$ is free exactly when $k$ is even, equivalently when $\dim_{\mathbb{C}}S^{\oplus k}=2k$ is divisible by $4$.</li>
+<li><strong>Morita equivalence.</strong> The functor $\operatorname{Hom}_{\mathbb{B}}(S,-):\operatorname{Mod}(\mathbb{B})\to\operatorname{Mod}(\mathbb{C})$ is an equivalence, with inverse $V\mapsto S\otimes_{\mathbb{C}}V\cong S^{\oplus\dim_{\mathbb{C}}V}$, so that a complex vector space of dimension $d$ becomes a $\mathbb{B}$-module of complex dimension $2d$. Thus the module theory of $\mathbb{B}$ is the module theory of $\mathbb{C}$ doubled, and $\mathbb{B}$ is Morita equivalent to $\mathbb{C}$, as in <em>Morita Equivalence</em>. The bimodule $({}_\mathbb{B}S_{\mathbb{C}})$ is the equivalence bimodule, and in the $C^*$-algebraic refinement of <em>Hilbert and C*-Modules</em> it is the $\mathbb{B}$-$\mathbb{C}$-imprimitivity bimodule with the two forms of §The Invariant Forms as its inner products.</li>
+<li><strong>The generator.</strong> $S$ is a projective generator of $\operatorname{Mod}(\mathbb{B})$, and ${}_\mathbb{B}S_{\mathbb{C}}$ is a Morita bimodule; the endomorphism ring $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ is the algebra to which $\mathbb{B}$ is Morita equivalent.</li>
+</ul>
+<p>The following table records the object and its invariants.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$M_2(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(S)$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>$\mathbb{B}p=\mathbb{C}\{p,y\}\cong\mathbb{C}^2$, the unique simple module</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{C}}S$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{B}}(S)$</td>
+<td>$\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_{\mathbb{B}}(S)$</td>
+<td>$\mathbb{C}^{\times}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ as a left module</td>
+<td>$S\oplus S$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ as a free module over itself</td>
+<td>free of rank one, basis $\{e_0\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ as a left module, basis</td>
+<td>$\{p,y\}\cup\{x,q\}$, the two columns</td>
+</tr>
+<tr>
+<td>invariant bilinear form</td>
+<td>$[u,v]=u^{\mathsf T}\epsilon v$, alternating, $[bu,v]=[u,\bar b v]$</td>
+</tr>
+<tr>
+<td>invariant Hermitian form</td>
+<td>$\langle u,v\rangle=u^{\dagger}v$, $\langle bu,v\rangle=\langle u,b^{\dagger}v\rangle$</td>
+</tr>
+<tr>
+<td>Morita class</td>
+<td>$\mathbb{B}\sim_M\mathbb{C}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="examples-and-remarks">Examples and Remarks</h2>
+<p><strong>(a) The two columns.</strong> $S=\mathbb{B}p$ and $\mathbb{B}q$ are both copies of the defining module, and the left regular module is their direct sum. The vector spaces are different but the modules are isomorphic, and every nonzero proper left ideal of $\mathbb{B}$ is minimal, namely a line in $\mathbb{C}^2$ parametrized by $\mathbb{P}^1(\mathbb{C})$. The module $S$ is therefore one point of a projective family of minimal left ideals, all isomorphic.</p>
+<p><strong>(b) The dual module.</strong> The right dual $S^*=\operatorname{Hom}_{\mathbb{C}}(S,\mathbb{C})$ carries the contragredient left action and is again simple, hence $S^*\cong S$; the rows of $\mathbb{B}$ model it, and the invariant bilinear form is an explicit isomorphism $S\to S^*$, $u\mapsto[u,\cdot]$. Under this isomorphism the quaternion conjugation on $\mathbb{B}$ corresponds to the adjugate on $\operatorname{End}_{\mathbb{C}}(S)$, that is, to the transpose in a suitable basis.</p>
+<p><strong>(c) The real structure.</strong> Regarded over $\mathbb{R}$, the module $S$ has real dimension $4$ and carries an anti-linear complex conjugation; the biquaternion conjugation $\bar{\cdot}$ and the complex conjugation ${}^*$ act differently, and no minimal left ideal is stable under coefficient conjugation. The Hermitian form is the bridge: it is conjugate-linear in its first variable and its real part is a real positive definite form on the underlying real vector space.</p>
+<p><strong>(d) The quaternion subcase.</strong> Over $\mathbb{R}$ the quaternion algebra $\mathbb{H}$ is a division algebra, and its unique irreducible module is $\mathbb{H}$ itself, of real dimension $4$, with commutant $\operatorname{End}_{\mathbb{H}}(\mathbb{H})=\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$; the module is not absolutely irreducible. Extension of scalars along $\mathbb{R}\hookrightarrow\mathbb{C}$ in the sense of <em>Change of Rings</em> carries this module to $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}=\mathbb{B}$, which as a left $\mathbb{B}$-module is $S\oplus S$: the four-dimensional real irreducible complexifies to two copies of the two-dimensional defining module. Complexifying the algebra therefore collapses the division-algebra commutant to $\mathbb{C}$ and halves the dimension of the irreducible module. This contrast is developed.</p>
+<p><strong>(e) Reconstruction.</strong> Reading the table of §The Module as the Carrier of the Algebra backwards gives a reconstruction procedure: from the two-dimensional complex vector space $S$ with a chosen basis and a bilinear form, the algebra $\operatorname{End}_{\mathbb{C}}(S)$ is constructed, and the double centralizer identifies it with $\mathbb{B}$. The module is the primary object; the algebra is recovered from it.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ has a unique simple left module, the defining module $S=\mathbb{B}p=\mathbb{C}\{p,y\}\cong\mathbb{C}^2$, where $p=\frac{1}{2}(e_0+ie_3)$ is one of the orthogonal primitive idempotents of the algebra. The left action of $\mathbb{B}$ on $S$ is given in the basis $(p,y)$ by $p\mapsto E_{11}$, $q\mapsto E_{22}$, $x\mapsto E_{12}$, $y\mapsto E_{21}$, so that the module is the standard column space of the matrix algebra and the idempotent $p$ projects onto the first column. The module carries also a commuting right $\mathbb{C}$-action, making it a $(\mathbb{B},\mathbb{C})$-bimodule, and the left and right structures are distinct data. The commutant is $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}\,\mathrm{id}\cong\mathbb{C}$, so $S$ is absolutely irreducible and its automorphism group is $\mathbb{C}^{\times}$; the double centralizer theorem gives $\mathbb{B}=\operatorname{End}_{\mathbb{C}}(S)$, so $S$ reconstructs the algebra. Two canonical forms exist: the invariant bilinear form $[u,v]=u^{\mathsf T}\epsilon v$ with $\epsilon=i\sigma_2$, which is alternating and satisfies $[bu,v]=[u,\bar b v]$ for quaternion conjugation, and the invariant Hermitian form $\langle u,v\rangle=u^{\dagger}v$, which is positive definite and satisfies $\langle bu,v\rangle=\langle u,b^{\dagger}v\rangle$; each is unique up to scale. All $\mathbb{B}$-modules are direct sums of copies of $S$, with $\mathbb{B}=S\oplus S$; as a module over itself $\mathbb{B}$ is free of rank one, with $e_0$ a basis, and its regular representation is the direct sum of two copies of the defining representation; the module $S$ itself is projective but not free, and $S^{\oplus k}$ is free exactly when $k$ is even. The spinor structure carried by $S$ is treated. The defining module is a projective generator and the equivalence bimodule for the Morita equivalence of $\mathbb{B}$ with $\mathbb{C}$, so the module theory of the biquaternion algebra is the module theory of the complex field, doubled.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>quaternion basis, $e_0=1$, $e_k^2=-e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>central unit, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$p=\frac{1}{2}(e_0+ie_3)$, $q=\frac{1}{2}(e_0-ie_3)$</td>
+<td>orthogonal primitive idempotents, $p+q=e_0$</td>
+</tr>
+<tr>
+<td>$x=\frac{1}{2}(ie_1-e_2)$, $y=\frac{1}{2}(ie_1+e_2)$</td>
+<td>off-diagonal matrix units</td>
+</tr>
+<tr>
+<td>$E_{11},E_{12},E_{21},E_{22}$</td>
+<td>matrix units, $E_{11}=p$, $E_{12}=x$, $E_{21}=y$, $E_{22}=q$</td>
+</tr>
+<tr>
+<td>$S=\mathbb{B}p=\mathbb{C}\{p,y\}$</td>
+<td>defining module, $\cong\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$\rho : \mathbb{B}\to\operatorname{End}_{\mathbb{C}}(S)$</td>
+<td>the defining representation</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{B}}(S)$</td>
+<td>commutant, $\cong\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_{\mathbb{B}}(S)$</td>
+<td>$\cong\mathbb{C}^{\times}$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>quaternion conjugation, $\bar e_k=-e_k$</td>
+</tr>
+<tr>
+<td>${}^*$</td>
+<td>complex conjugation of coefficients</td>
+</tr>
+<tr>
+<td>${}^\dagger$</td>
+<td>Hermitian conjugation $=*\circ\bar{\cdot}$, the conjugate transpose</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli matrices, so that $\Phi(e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\epsilon=i\sigma_2=\Phi(-e_2)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$</td>
+<td>antisymmetric matrix defining the bilinear form</td>
+</tr>
+<tr>
+<td>$[u,v]=u^{\mathsf T}\epsilon v$</td>
+<td>invariant bilinear (symplectic) form</td>
+</tr>
+<tr>
+<td>$\langle u,v\rangle=u^{\dagger}v$</td>
+<td>invariant Hermitian form</td>
+</tr>
+<tr>
+<td>$S^*$</td>
+<td>contragredient (dual) module, $\cong S$</td>
+</tr>
+<tr>
+<td>$S^{\oplus k}$</td>
+<td>the general $\mathbb{B}$-module, of complex dimension $2k$</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^1(\mathbb{C})$</td>
+<td>projective line parametrizing the minimal left ideals</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the matrix-unit description of $M_n(F)$ and its defining module.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Wiley, 1962), for irreducible modules, commutants and invariant forms.</li>
+<li>Israel N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the double centralizer theorem.</li>
+<li>Nathan Jacobson, <em>Basic Algebra II</em> (Dover, 2nd ed. 2009), for the structure of matrix algebras and their unique simple module.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for Schur's lemma, simple modules and the density theorem.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for idempotents, minimal left ideals and the Peirce decomposition.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2nd ed. 2013), for the adjugate identity $\mathrm{adj}(M)=\epsilon M^{\mathsf T}\epsilon^{-1}$ for $2\times2$ matrices used in the identification of quaternion conjugation with the adjugate.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the norm form, conjugation and the quaternion basis conventions used throughout.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

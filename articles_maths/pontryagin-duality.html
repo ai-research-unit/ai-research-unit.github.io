@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontryagin Duality — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="pontryagin-duality"><strong>Pontryagin Duality</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Pontryagin duality is the theorem that a locally compact abelian group is canonically isomorphic to its own double character group. It is the exact analogue, for topological groups, of the duality of a finite abelian group with its character group, and it is stronger in one essential respect: the two constructions are inverse functors, so the category of locally compact abelian groups is <em>equivalent to its own opposite</em>, with compactness and discreteness exchanged. The theorem converts every statement about a locally compact abelian group into a statement about its characters, and it is what makes the classical Fourier analysis of the line, the circle, the integers and the finite cyclic groups four instances of a single theory.</p>
+<p>This article states the duality theorem and proves the cases from which it follows, develops the duality dictionary between subgroups and quotients, and records the consequences that do not require integration: the exchange of compactness and discreteness, the structure of the dual of a subgroup and of a quotient, the Bohr compactification as the dual of a discrete group, and the failure of reflexivity outside local compactness. The character group and the structure theorem for locally compact abelian groups are those of the companion article <em>Abelian Topological Groups</em>; the present article takes those objects and proves the duality that the former states. The Haar measure used in the definition of the dual topology, when a measure is needed at all, is standard, and the Fourier transform, the convolution algebra $L^1(G)$ and the Plancherel theorem belong to the analysis of Part III, where the measure and the limit are available.</p>
+<p>The conventions are those of the companion articles of the category: $G$ is a locally compact abelian group written additively, $S^1 = \mathbb{R}/\mathbb{Z}$ is the circle written multiplicatively, $G^\vee$ is the character group with the compact-open topology, and $\iota_G : G \to G^{\vee\vee}$ is the evaluation map. The hat is reserved for the completion of a topological group and for the profinite completion $\hat G^{\mathrm{pf}}$, and is never used for the dual. No physics is invoked.</p>
+<h2 id="characters-and-the-dual-group">Characters and the Dual Group</h2>
+<h3 id="characters">Characters</h3>
+<p><strong>Definition.</strong> A <strong>character</strong> of a topological abelian group $G$ is a continuous homomorphism $\chi : G \to S^1$. The <strong>dual group</strong> or <strong>character group</strong> $G^\vee$ is the set of characters with the pointwise product</p>
+<p>$$
+(\chi_1 + \chi_2)(x) = \chi_1(x)\,\chi_2(x),
+$$</p>
+<p>so written because the group of characters is an abelian group; its identity is the trivial character and the inverse of $\chi$ is $\bar\chi$.</p>
+<p>The following elementary facts are used without further comment.</p>
+<p><strong>Proposition.</strong> Let $G, H$ be topological abelian groups.</p>
+<p><strong>(a)</strong> A continuous homomorphism $f : G \to H$ induces a continuous homomorphism $f^\vee : H^\vee \to G^\vee$ by $f^\vee(\psi) = \psi \circ f$, and $(\mathrm{id}_G)^\vee = \mathrm{id}_{G^\vee}$, $(g \circ f)^\vee = f^\vee \circ g^\vee$. Thus $G \mapsto G^\vee$ is a contravariant functor.</p>
+<p><strong>(b)</strong> A character of $G$ has image in the compact group $S^1$, so its image is compact; a character is trivial on the identity component $G_0$ if and only if the image of $G$ is totally disconnected, and the dual of a connected group is torsion-free.</p>
+<p><strong>(c)</strong> A character of a compact group $G$ is determined, among all homomorphisms, by its values on a generating set that generates $G$ as a topological group; a character of a discrete group is an arbitrary homomorphism $G \to S^1$.</p>
+<p><strong>Proof.</strong> (a) The composite of continuous homomorphisms is a continuous homomorphism, and the two identities are immediate. (b) The image of a character is a compact subgroup of $S^1$; a continuous homomorphism from a connected group to a totally disconnected group is trivial, and $S^1$ is connected, so the image of a connected group is connected, which forces torsion-freeness of the dual: if $\chi^n = 1$ then $\chi$ takes values in the finite group of $n$-th roots of unity and the image of the connected group $G$ is connected, hence a single point. (c) Continuity is automatic for a homomorphism on a discrete group; for a compact group the stated determination follows from the density of the subgroup generated by the generating set. $\square$</p>
+<h3 id="the-compact-open-topology">The Compact-Open Topology</h3>
+<p>The set $G^\vee$ carries a natural topology, and with it is an abelian topological group.</p>
+<p><strong>Definition.</strong> The <strong>compact-open topology</strong> on $G^\vee$ is generated by the subbase of sets</p>
+<p>$$
+W(K, U) = \{\chi \in G^\vee : \chi(K) \subseteq U\}, \qquad K \subseteq G \text{ compact}, \quad U \subseteq S^1 \text{ open}.
+$$</p>
+<p>Equivalently, it is the topology of uniform convergence on compact subsets of $G$.</p>
+<p><strong>Theorem.</strong> For a locally compact abelian group $G$ the dual $G^\vee$ is a locally compact abelian group, and the evaluation map</p>
+<p>$$
+G \times G^\vee \longrightarrow S^1, \qquad (x, \chi) \mapsto \chi(x),
+$$</p>
+<p>is continuous. If $G$ is compact then $G^\vee$ is discrete, and if $G$ is discrete then $G^\vee$ is compact.</p>
+<p><strong>Proof.</strong> The group operations on $G^\vee$ are continuous for the compact-open topology: multiplication is continuous because evaluation at a point is continuous and the product in $S^1$ is continuous; inversion is continuous because it is complex conjugation, which is continuous. The evaluation map on the product is continuous because the compact-open topology is exactly the topology making evaluation $G^\vee \to C(G, S^1)$ continuous with the compact-open topology on the function space, and the evaluation $G \times C(G, S^1) \to S^1$ is continuous (this is the universal property of the compact-open topology for a locally compact domain). The interchange of compactness and discreteness is proved in <em>Abelian Topological Groups</em>, §Characters and the Dual: a discrete group has only finite compact subsets, so its dual is a closed subgroup of the compact product $(S^1)^G$; a compact group has the property that the set of characters lying in a sufficiently small neighbourhood of the trivial character is trivial, so the dual is discrete. Local compactness of the dual in the general case is the topological content of the duality theorem proved below. $\square$</p>
+<h2 id="the-duality-theorem">The Duality Theorem</h2>
+<h3 id="statement">Statement</h3>
+<p><strong>Theorem (Pontryagin).</strong> For every locally compact abelian group $G$, the evaluation map</p>
+<p>$$
+\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x),
+$$</p>
+<p>is an isomorphism of topological groups. The contravariant functor $G \mapsto G^\vee$ is an equivalence of categories between the category of locally compact abelian groups and its opposite.</p>
+<p><strong>Remark.</strong> The statement has three parts, and it is worth separating them. The map $\iota_G$ is a homomorphism because evaluation is additive in the first variable: $\iota_G(x + y)(\chi) = \chi(x + y) = \chi(x)\chi(y) = \iota_G(x)(\chi)\,\iota_G(y)(\chi)$. It is injective because the characters separate the points of a locally compact abelian group. It is surjective, and its inverse is continuous, because of the structure theorem and the explicit duality of the standard factors. The last two statements are the substance of the theorem.</p>
+<h3 id="the-standard-cases">The Standard Cases</h3>
+<p>The theorem is proved by verifying it for the building blocks of the structure theorem and then assembling.</p>
+<p><strong>Proposition (the line).</strong> $\mathbb{R}^\vee \cong \mathbb{R}$, with the character $\chi_\xi(x) = e^{2\pi i \xi x}$ for a unique $\xi \in \mathbb{R}$, and evaluation is a homeomorphism.</p>
+<p><strong>Proof.</strong> Let $\chi : \mathbb{R} \to S^1$ be a continuous character. Since $S^1$ has no small subgroups, there is $\delta > 0$ with $\chi([-\delta, \delta]) \neq S^1$, and after shrinking $\delta$ the image lies in the arc $\{e^{2\pi i t} : |t| < \tfrac12\}$, on which the logarithm is a continuous branch. Define $\theta : \mathbb{R} \to \mathbb{R}$ by $\theta(x) = \frac{1}{2\pi i}\log \chi(x)$ near $0$ and extend by $\theta(n x) = n \theta(x)$ for integers $n$, using $\chi(nx) = \chi(x)^n$; the extension is well defined and continuous because $\mathbb{R}$ is divisible and the relation is compatible with the logarithm. Then $\theta$ is a continuous additive map: $\theta(x + y) = \theta(x) + \theta(y)$ by the multiplicativity of $\chi$ and the continuity of the branch. A continuous additive map $\mathbb{R} \to \mathbb{R}$ is linear, $\theta(x) = \xi x$ with $\xi = \theta(1)$, by the standard argument that first gives $\theta(q) = \xi q$ for rationals $q$ and then extends by continuity. Hence $\chi = \chi_\xi$, and $\xi \mapsto \chi_\xi$ is an isomorphism of topological groups with inverse $\chi \mapsto \chi(1)$ up to the branch. $\square$</p>
+<p><strong>Proposition (the discrete and compact cases).</strong> $\mathbb{Z}^\vee \cong S^1$ and $(S^1)^\vee \cong \mathbb{Z}$; more generally a discrete abelian group $D$ has compact dual $D^\vee = \operatorname{Hom}(D, S^1)$, and $D^{\vee\vee} \cong D$.</p>
+<p><strong>Proof.</strong> A character of $\mathbb{Z}$ is determined by $\chi(1)$ and $\chi(1)$ is arbitrary in $S^1$, so $\mathbb{Z}^\vee \cong S^1$ as groups; the compact-open topology on a discrete group is the topology of pointwise convergence, which is the topology of $S^1$, so the isomorphism is topological. For $S^1$ write $z = e^{2\pi i t}$ and lift a character to a continuous map $\theta : \mathbb{R} \to \mathbb{R}$ with $\chi(e^{2\pi i t}) = e^{2\pi i\theta(t)}$; the homomorphism property gives $\theta(s+t) - \theta(s) - \theta(t) \in \mathbb{Z}$, and the left-hand side is a continuous function of $(s,t) \in \mathbb{R}^2$ with values in $\mathbb{Z}$, hence constant, equal to $-\theta(0)$; therefore $t \mapsto \theta(t) - \theta(0)$ is a continuous additive map of $\mathbb{R}$, so $\theta(t) = nt + \theta(0)$ with $n = \theta(1) - \theta(0) \in \mathbb{Z}$, and $\chi(z) = e^{2\pi i nt}\,e^{2\pi i\theta(0)} = z^n$. The trivial character is $n = 0$, so $(S^1)^\vee \cong \mathbb{Z}$. For a discrete $D$ the dual is $\operatorname{Hom}(D, S^1)$ with the compact-open topology; evaluation $D \to D^{\vee\vee}$ is injective because a nontrivial element of a discrete abelian group is separated by a homomorphism to $S^1$ (use the structure of finitely generated abelian groups and the divisibility of $S^1$, or Zorn), and surjective by the compact case of the assembly of the proof below — the Gelfand–Raĭkov statement that a compact abelian group is the character group of its discrete dual; a discrete group and its double dual are therefore isomorphic, the isomorphism being the evaluation. $\square$</p>
+<p><strong>Proposition (the torus and the p-adics).</strong> $T^n{}^\vee \cong \mathbb{Z}^n$ and $\mathbb{Z}^n{}^\vee \cong T^n$; $\mathbb{Z}_p{}^\vee \cong \mu_{p^\infty}$ and $\mu_{p^\infty}{}^\vee \cong \mathbb{Z}_p$.</p>
+<p><strong>Proof.</strong> For $T^n = \mathbb{R}^n/\mathbb{Z}^n$, a character of the quotient is a character of $\mathbb{R}^n$ trivial on $\mathbb{Z}^n$, hence $\chi_\xi$ with $\xi \in \mathbb{Z}^n$; this identifies $T^n{}^\vee$ with $\mathbb{Z}^n$, and the dual statement is the same computation read backwards. For $\mathbb{Z}_p = \varprojlim_k \mathbb{Z}/p^k\mathbb{Z}$, a continuous character of $\mathbb{Z}_p$ is a compatible family of characters of the finite quotients, because the finite quotients are discrete and the kernels form a neighbourhood base at $0$: a continuous homomorphism is trivial on some $p^k\mathbb{Z}_p$. The character group of $\mathbb{Z}/p^k\mathbb{Z}$ is $\mu_{p^k}$, and the compatibility of the family is exactly the direct limit, so $\mathbb{Z}_p{}^\vee \cong \varinjlim_k \mu_{p^k} = \mu_{p^\infty}$. Dually, a character of the discrete group $\mu_{p^\infty}$ is determined by its values on the compatible system of primitive $p^k$-th roots of unity, and continuity is automatic; the resulting dual is $\varprojlim_k \mathbb{Z}/p^k\mathbb{Z} = \mathbb{Z}_p$. $\square$</p>
+<p><strong>Proposition (finite groups).</strong> For a finite abelian group $G$ the evaluation map is an isomorphism $G \cong G^{\vee\vee}$, and after the choice of a primitive $|G|$-th root of unity the group is isomorphic to its dual.</p>
+<p><strong>Proof.</strong> The dual is $\operatorname{Hom}(G, S^1)$, of the same order as $G$ by the structure theorem for finite abelian groups: it suffices to check the cyclic case, where $\mathbb{Z}/n\mathbb{Z}^\vee \cong \mu_n \cong \mathbb{Z}/n\mathbb{Z}$. An isomorphism $G \to G^\vee$ requires a choice of roots of unity, but the canonical evaluation is well defined without any choice and is an isomorphism because it is injective and both groups have the same finite order. $\square$</p>
+<h3 id="assembly-of-the-proof">Assembly of the Proof</h3>
+<p><strong>Theorem (proof of Pontryagin duality).</strong> Suppose $G$ contains an open subgroup $G_1 = \mathbb{R}^n \times K$ with $K$ compact. Then $\iota_G$ is an isomorphism.</p>
+<p><strong>Proof.</strong> The proof has three steps.</p>
+<p><em>Step 1: the compact case.</em> Let $K$ be compact abelian. The dual $K^\vee$ is discrete, and $\iota_K: K \to K^{\vee\vee}$ is a continuous homomorphism from a compact group to a Hausdorff group; it is injective because the characters separate the points of $K$, and an injective continuous map from a compact space to a Hausdorff space is a homeomorphism onto its image, so only surjectivity is at issue. Surjectivity is the Gelfand–Raĭkov theorem: every character of the discrete group $K^\vee$ is the evaluation at a point of $K$, so that $K$ is the character group of $K^\vee$. The theorem is proved by the theory of almost periodic functions, and its standard proof uses the Haar measure of $K$ together with the integration of Part III and the Peter–Weyl theorem; it is quoted here as standard from the literature.</p>
+<p><em>Step 2: the Euclidean case.</em> For $\mathbb{R}^n$ the evaluation map is an isomorphism because $\mathbb{R}^n$ is its own dual by the proposition on the line applied coordinatewise, and the same computation identifies the double dual.</p>
+<p><em>Step 3: from $G_1$ to $G$.</em> The open subgroup $G_1$ has discrete quotient $Q = G/G_1$, so there is a short exact sequence $0 \to G_1 \to G \to Q \to 0$ with $Q$ discrete. Duality is exact and the annihilator of $G_1$ is $G_1^\perp \cong Q^\vee$, which is compact; and $G_1^\vee \cong G^\vee / G_1^\perp$ with $G_1^\vee$ locally compact. The commutativity of the diagram relating the exact sequences for $G$ and for $G^{\vee\vee}$ reduces the statement to the already proven cases of $G_1 = \mathbb{R}^n \times K$ and to the discrete quotient, whose dual is again in the standard case. More precisely, one checks that $\iota_{G_1}$ is an isomorphism and that the quotient map $G \to Q$ induces an isomorphism of the cokernel of $\iota_{G_1}$ onto the cokernel of the evaluation of $Q$, both cokernels being trivial; the five lemma for the diagram of exact sequences then gives that $\iota_G$ is injective and surjective. Continuity of $\iota_G$ is the continuity of the evaluation pairing. For the inverse, a continuous bijective homomorphism of $\sigma$-compact locally compact groups is a homeomorphism by the open mapping theorem; in general $G$ is the union of its open $\sigma$-compact subgroups, and the argument applies to each of them, so $\iota_G$ is a homeomorphism onto its image in every case. $\square$</p>
+<p><strong>Corollary (Pontryagin duality, complete form).</strong> Every locally compact abelian group $G$ carries an open subgroup of the form $\mathbb{R}^n \times K$, so $\iota_G$ is an isomorphism in general; consequently $G \mapsto G^\vee$ is a contravariant equivalence with $G^{\vee\vee} \cong G$ naturally.</p>
+<p><strong>Proof.</strong> The existence of the open subgroup is the structure theorem of <em>Abelian Topological Groups</em>; the theorem just proved applies. $\square$</p>
+<h2 id="the-duality-dictionary">The Duality Dictionary</h2>
+<p>Duality is exact, and it inverts the lattice of closed subgroups. The following table is used throughout the rest of the corpus; each row is proved by the annihilator theorem of <em>Abelian Topological Groups</em> together with the duality theorem.</p>
+<p><strong>Theorem (dictionary).</strong> Let $G$ be a locally compact abelian group, $H$ a closed subgroup and $N$ a family of closed subgroups. Under evaluation, the following correspond.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure in $G$</th>
+<th>Structure in $G^\vee$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>closed subgroup $H$</td>
+<td>closed subgroup $H^\perp$, with $(G/H)^\vee \cong H^\perp$</td>
+</tr>
+<tr>
+<td>quotient $G/H$</td>
+<td>annihilator $H^\perp$, closed</td>
+</tr>
+<tr>
+<td>open subgroup $H$</td>
+<td>compact subgroup $H^\perp$</td>
+</tr>
+<tr>
+<td>compact subgroup $H$</td>
+<td>discrete quotient $G^\vee/H^\perp$</td>
+</tr>
+<tr>
+<td>discrete subgroup $H$</td>
+<td>subgroup $H^\perp$ with compact quotient $G^\vee/H^\perp$</td>
+</tr>
+<tr>
+<td>finite subgroup $H$</td>
+<td>subgroup $H^\perp$ that is open of finite index</td>
+</tr>
+<tr>
+<td>intersection $H_1 \cap H_2$</td>
+<td>closed subgroup generated by $H_1^\perp + H_2^\perp$</td>
+</tr>
+<tr>
+<td>closed subgroup generated by $H_1 + H_2$</td>
+<td>$H_1^\perp \cap H_2^\perp$</td>
+</tr>
+<tr>
+<td>$G$ compact</td>
+<td>$G^\vee$ discrete</td>
+</tr>
+<tr>
+<td>$G$ discrete</td>
+<td>$G^\vee$ compact</td>
+</tr>
+<tr>
+<td>$G$ connected</td>
+<td>$G^\vee$ torsion-free</td>
+</tr>
+<tr>
+<td>$G$ compact totally disconnected</td>
+<td>$G^\vee$ discrete torsion</td>
+</tr>
+<tr>
+<td>finite product $\prod_{i \leq n} G_i$</td>
+<td>finite product $\prod_{i \leq n} G_i^\vee$</td>
+</tr>
+<tr>
+<td>direct sum $\bigoplus_i G_i$</td>
+<td>product $\prod_i G_i^\vee$</td>
+</tr>
+<tr>
+<td>product $\prod_i G_i$, locally compact</td>
+<td>direct sum $\bigoplus_i G_i^\vee$</td>
+</tr>
+<tr>
+<td>inverse limit of compact groups</td>
+<td>direct limit of discrete duals</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The annihilator rows are the annihilator theorem; the compact/discrete rows are the theorem on the topology of the dual; connectedness corresponds to torsion-freeness by the proposition on characters, since a character with values in the finite group of $n$-th roots of unity is trivial on a connected group. The product rows are checked by the factoring of a character through finitely many coordinates: a neighbourhood of $0$ in a product involves finitely many coordinates, a character is trivial on some neighbourhood of $0$ because $S^1$ has no small subgroups, and hence a character factors through the product of finitely many factors; the dual of a finite product is the product of the duals, and the direct limit over the finite subsets of the index set gives the direct sum $\bigoplus_i G_i^\vee$. The direct sum row is the same statement dualised, and the inverse-limit row is the exactness of duality on the limit. $\square$</p>
+<p><strong>Corollary (reflexive substructure).</strong> The assignment $H \mapsto H^\perp$ is an order-reversing bijection between the closed subgroups of $G$ and the closed subgroups of $G^\vee$ that satisfy $N = N^{\perp\perp}$; every closed subgroup of $G$ satisfies $H = H^{\perp\perp}$ once $G$ is identified with $G^{\vee\vee}$. In particular, a closed subgroup $H$ is open if and only if $H^\perp$ is compact, and $H$ is compact if and only if $H^\perp$ is open.</p>
+<p><strong>Proof.</strong> The annihilator theorem gives $\iota_G(H) = H^{\perp\perp}$ for $H$ closed, because $\iota_G$ is an isomorphism; the map is order-reversing and involutive on the closed subgroups. The compactness statement is the row of the dictionary. $\square$</p>
+<h2 id="applications-and-consequences">Applications and Consequences</h2>
+<h3 id="duality-as-a-classification-principle">Duality as a Classification Principle</h3>
+<p><strong>Theorem.</strong> The contravariant functor $G \mapsto G^\vee$ restricts to an equivalence between the category of compact abelian groups and the opposite of the category of discrete abelian groups, equivalently to a duality between compact and discrete abelian groups. Consequently two compact abelian groups are isomorphic if and only if their character groups are isomorphic, and the structure theory of compact abelian groups can be read off from the structure theory of discrete abelian groups.</p>
+<p><strong>Proof.</strong> The functor carries compact groups to discrete groups and conversely, by the compact/discrete rows of the dictionary; the two compositions are naturally isomorphic to the identity by the duality theorem. $\square$</p>
+<p><strong>Example.</strong> A connected compact abelian group is the dual of a discrete torsion-free abelian group, and a totally disconnected compact abelian group (a profinite abelian group) is the dual of a discrete torsion group. The torus $T^n$ is the dual of $\mathbb{Z}^n$, the profinite group $\prod_p \mathbb{Z}_p$ is the dual of $\mathbb{Q}/\mathbb{Z}$, and the solenoid $\Sigma_p$ is the dual of $\mathbb{Z}[1/p]$. This is the reason the classification of compact abelian groups requires no separate argument: it is the classification of discrete abelian groups read backwards, which is the content of <em>Finitely Generated Abelian Groups</em> and <em>Infinite Abelian Groups</em>.</p>
+<h3 id="the-bohr-compactification">The Bohr Compactification</h3>
+<p><strong>Definition.</strong> Let $D$ be an abstract abelian group. Its <strong>Bohr compactification</strong> is the compact abelian group $bD = D^\vee{}^\vee$ where the first dual is taken with $D$ discrete; the natural map $\beta : D \to bD$ is the evaluation, and it has dense image.</p>
+<p><strong>Theorem.</strong> The map $\beta : D \to bD$ is an injective continuous homomorphism onto a dense subgroup, and it is universal among continuous homomorphisms from the discrete group $D$ to compact abelian groups: every such homomorphism factors uniquely through $\beta$.</p>
+<p><strong>Proof.</strong> Injectivity and continuity of evaluation are the duality theorem; density is the statement that a character of $bD$ vanishing on the image of $D$ is trivial, which is the injectivity of $\beta^\vee$ and hence of the double dual of the discrete group. Universality: a continuous homomorphism $D \to K$ with $K$ compact abelian dualises to $K^\vee \to D^\vee = bD^\vee$, and dualising again gives the required factorisation $bD \to K$. $\square$</p>
+<p><strong>Example.</strong> $b\mathbb{Z} = \hat{\mathbb{Z}} = \prod_p \mathbb{Z}_p$, the profinite completion of $\mathbb{Z}$, is the Bohr compactification of the discrete group $\mathbb{Z}$; its dual is $\mathbb{Q}/\mathbb{Z}$. The compactification $b\mathbb{Q}$ is a compact connected group of infinite dimension, and $b\mathbb{R}$ is the dual of the discrete group $\mathbb{R}$, a compact group whose character group is the abstract group $\mathbb{R}$ with the discrete topology.</p>
+<h3 id="reflexivity-outside-local-compactness">Reflexivity Outside Local Compactness</h3>
+<p>Local compactness is not a technical convenience in the duality theorem; without it the double dual can be strictly larger.</p>
+<p><strong>Example (the rational line).</strong> Let $\mathbb{Q}$ carry the topology induced from $\mathbb{R}$. A continuous character $\mathbb{Q} \to S^1$ extends uniquely to a continuous character $\mathbb{R} \to S^1$, since $\mathbb{Q}$ is dense in $\mathbb{R}$ and a uniformly continuous character extends to the completion; hence $\mathbb{Q}^\vee \cong \mathbb{R}$ and $\mathbb{Q}^{\vee\vee} \cong \mathbb{R}^\vee \cong \mathbb{R}$, so the evaluation map $\mathbb{Q} \to \mathbb{R}$ is not surjective and $\mathbb{Q}$ is not reflexive. The failure is the failure of local compactness: $\mathbb{Q}$ with the topology induced from $\mathbb{R}$ is not locally compact, its dual is $\mathbb{R}$ because a continuous character of the dense subgroup $\mathbb{Q}$ is uniformly continuous and extends to $\mathbb{R}$, and the double dual is $\mathbb{R}$ again; the evaluation $\mathbb{Q} \to \mathbb{Q}^{\vee\vee}$ is then the inclusion of the rationals in the reals, which is not surjective.</p>
+<p><strong>Remark.</strong> Reflexivity holds for the wider class of the <em>reflexive</em> topological abelian groups of the literature, which contains the locally compact abelian groups; the general theory is developed with dual pairs and the topology of uniform convergence on a family of sets — compact, precompact or equicontinuous. What is used in this corpus is the locally compact case, where duality is an equivalence, and the negative example above marks the boundary.</p>
+<h3 id="the-connection-with-harmonic-analysis">The Connection with Harmonic Analysis</h3>
+<p>The duality theorem is the structural half of Fourier analysis, and the analytic half is not taken here.</p>
+<ul>
+<li>The <strong>Fourier transform</strong> of a function on $G$, the <strong>inversion theorem</strong> and the <strong>Plancherel theorem</strong> are formulated on the dual group $G^\vee$ and require the Haar measure and the integration of Part III; they are not covered here.</li>
+<li>The classical instances — the Fourier transform on $\mathbb{R}^n$, the Fourier series on $S^1$, the discrete Fourier transform on a finite cyclic group and the decomposition of a function on $T^n$ into characters — are the standard cases of a single statement, and they are developed and in Part III.</li>
+<li>The <strong>Pontryagin–van Kampen duality theorem</strong>, the compact-group case of the theorem, is the form in which duality is applied in the theory and of the Topological Rings and Fields slot; the annihilator formalism is used there in the form of the Galois correspondence between closed subgroups and intermediate extensions.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>For a locally compact abelian group $G$, the characters $\chi : G \to S^1$ form the dual group $G^\vee$ under pointwise multiplication with the compact-open topology; the dual is locally compact abelian, the evaluation pairing $G \times G^\vee \to S^1$ is continuous, the dual of a compact group is discrete and the dual of a discrete group is compact. Pontryagin duality asserts that evaluation $\iota_G : G \to G^{\vee\vee}$ is an isomorphism of topological groups, so that $G \mapsto G^\vee$ is a contravariant equivalence of the category with its opposite. The proof reduces to the cases $\mathbb{R}$, $\mathbb{Z}$, $S^1$, the finite cyclic groups and $\mathbb{Z}_p$ with its Prüfer dual, and then assembles them along the open subgroup $\mathbb{R}^n \times K$ supplied by the structure theorem.</p>
+<p>Annihilators convert the closed subgroups of $G$ into the closed subgroups of $G^\vee$ with quotients, reversing inclusions and exchanging openness with compactness and discreteness with compactness; finite products go to finite products and discrete direct sums to products, and inverse limits of compact groups to direct limits of discrete duals. The Bohr compactification of a discrete abelian group is its double dual, and the profinite completion $\hat{\mathbb{Z}} = \prod_p \mathbb{Z}_p$ is the Bohr compactification of $\mathbb{Z}$. Reflexivity is a property of local compactness: the rational line with its usual topology has dual $\mathbb{R}$ and double dual $\mathbb{R}$, so it is not reflexive. The analytic consequences — the Fourier transform, inversion and Plancherel — belong in Part III.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$, $H$, $K$</td>
+<td>Locally compact abelian groups, written additively</td>
+</tr>
+<tr>
+<td>$S^1 = \mathbb{R}/\mathbb{Z}$</td>
+<td>The circle group, written multiplicatively</td>
+</tr>
+<tr>
+<td>$G^\vee$, $\chi$</td>
+<td>Dual group with the compact-open topology; a character $G \to S^1$</td>
+</tr>
+<tr>
+<td>$\chi_\xi(x) = e^{2\pi i \xi x}$</td>
+<td>Characters of $\mathbb{R}^n$, indexed by $\xi$ in the dual vector space</td>
+</tr>
+<tr>
+<td>$\iota_G : G \to G^{\vee\vee}$</td>
+<td>Evaluation map; an isomorphism by Pontryagin duality</td>
+</tr>
+<tr>
+<td>$W(K, U)$</td>
+<td>Subbasic open set $\{\chi : \chi(K) \subseteq U\}$ of the compact-open topology</td>
+</tr>
+<tr>
+<td>$H^\perp$</td>
+<td>Annihilator of a closed subgroup $H$</td>
+</tr>
+<tr>
+<td>$T^n = \mathbb{R}^n/\mathbb{Z}^n$</td>
+<td>The $n$-torus; dual of $\mathbb{Z}^n$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$, $\mu_{p^\infty}$</td>
+<td>$p$-adic integers and Prüfer group, mutually dual</td>
+</tr>
+<tr>
+<td>$bD = D^\vee{}^\vee$</td>
+<td>Bohr compactification of a discrete abelian group $D$</td>
+</tr>
+<tr>
+<td>$\hat{\mathbb{Z}} = \prod_p \mathbb{Z}_p$</td>
+<td>Profinite completion of $\mathbb{Z}$; dual is $\mathbb{Q}/\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\Sigma_p$</td>
+<td>Solenoid, dual of $\mathbb{Z}[1/p]$</td>
+</tr>
+<tr>
+<td>$\varprojlim$, $\varinjlim$</td>
+<td>Inverse and direct limits; duals of each other</td>
+</tr>
+<tr>
+<td>$\operatorname{Irr}(G)$</td>
+<td>Unitary dual of a non-abelian group; the notation is used in the companion articles</td>
+</tr>
+<tr>
+<td>$b\mathbb{Q}$, $b\mathbb{R}$</td>
+<td>Bohr compactifications of the discrete groups $\mathbb{Q}$ and $\mathbb{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lev S. Pontryagin, <em>Topological Groups</em> (Gordon and Breach, 2nd ed. 1966), for the original development of the duality theorem.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, 2nd ed. 1979), for the full proof of duality, the structure theorem and the dictionary of substructures.</li>
+<li>Sidney A. Morris, <em>Pontryagin Duality and the Structure of Locally Compact Abelian Groups</em> (Cambridge University Press, 1977), for the structure theorem and reflexivity.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962; reprinted Wiley, 1990), for duality as the frame of harmonic analysis.</li>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953; reprinted Dover, 2011), for a concise proof of the duality theorem.</li>
+<li>David L. Armacost, <em>The Structure of Locally Compact Abelian Groups</em> (Marcel Dekker, 1981), for the classification of locally compact abelian groups and their duals.</li>
+<li>George A. Reid, <em>Almost Periodic Functions</em> (Chelsea, 1971), for the Bohr compactification and almost periodic functions.</li>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters 1–4 (Springer, 1995), for uniform spaces, completion and the open mapping arguments used in the proof.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

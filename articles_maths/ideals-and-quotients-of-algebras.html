@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideals and Quotients of Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ideals-and-quotients-of-algebras"><strong>Ideals and Quotients of Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An algebra over a commutative ring $R$ is an $R$-module equipped with a bilinear product. That is the broad sense fixed in <em>Algebras: A General Introduction</em>: an algebra need not be associative, need not be commutative, and need not have a unit. This article develops the part of the structure theory on which every later construction rests — subalgebras, the three kinds of ideal, quotient algebras, algebra homomorphisms, and the isomorphism theorems.</p>
+<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$, and $A$ is an algebra over $R$ in the broad sense, unless a sentence names a stronger hypothesis. Associativity is flagged at each point where it is used. The module-theoretic facts we invoke — submodules, quotient modules, kernels, images, and the correspondence between the submodules of a quotient and the submodules above the kernel — are those of <em>Modules</em>, §4–§7, and the ring-theoretic analogues are those of <em>Rings</em>, §6.</p>
+<p>The guiding observation is that the formalism of ideals and quotients depends very little on associativity. The definitions, the quotient construction, and the isomorphism theorems need only bilinearity. Associativity enters when one wants to multiply ideals, to describe a generated ideal by expressions $asb$, or to speak of powers of an ideal. The final sections collect the ideals of the small algebras and the quotient presentations that produce the number systems.</p>
+<h2 id="subalgebras">Subalgebras</h2>
+<p><strong>Definition.</strong> Let $A$ be an $R$-algebra. A submodule $B \subseteq A$ is a <strong>subalgebra</strong> of $A$ if it is closed under the product, that is, $xy \in B$ for all $x, y \in B$. With the restricted product, $B$ is an $R$-algebra in its own right.</p>
+<p>A subalgebra of an associative algebra is associative, and a subalgebra of a commutative algebra is commutative; these properties are inherited because they are identities between products. The unit does not automatically lie in a subalgebra: $\{0\}$ is a subalgebra of every algebra, unital or not. A <strong>unital subalgebra</strong> of a unital algebra $A$ is one containing $1_A$; then it has its own unit, necessarily $1_A$.</p>
+<p><strong>Proposition.</strong> The intersection $\bigcap_i B_i$ of any family of subalgebras of $A$ is a subalgebra.</p>
+<p><em>Proof.</em> The intersection is a submodule by <em>Modules</em>, §4, and if $x, y$ lie in every $B_i$ then $xy$ lies in every $B_i$ by closure. $\square$</p>
+<p>The <strong>subalgebra generated</strong> by a subset $S \subseteq A$ is the intersection of all subalgebras containing $S$; it is the smallest subalgebra containing $S$. Its elements are the $R$-linear combinations of products of elements of $S$. For a general algebra the products are read as iterated products with a fixed bracketing, since no associativity is available to reassociate them.</p>
+<p><strong>Example.</strong> The subspaces of a matrix algebra and of a tensor algebra discussed in <em>Algebras: A General Introduction</em> are subalgebras: the diagonal matrices in $M_n(k)$ form a commutative subalgebra isomorphic to $k^n$; the upper triangular matrices form a subalgebra; the purely off-diagonal matrices do not, since the square of an off-diagonal matrix can be diagonal.</p>
+<h2 id="ideals">Ideals</h2>
+<p>There are three notions, distinguished by the side on which the algebra acts.</p>
+<p><strong>Definition.</strong> Let $A$ be an $R$-algebra. A submodule $I \subseteq A$ is a</p>
+<ul>
+<li><strong>left ideal</strong> if $ax \in I$ for all $a \in A$ and $x \in I$;</li>
+<li><strong>right ideal</strong> if $xa \in I$ for all $a \in A$ and $x \in I$;</li>
+<li><strong>two-sided ideal</strong> (or simply <strong>ideal</strong>) if it is both a left and a right ideal.</li>
+</ul>
+<p>Every two-sided ideal is a submodule and, since $xx' \in I$ for $x, x' \in I$, also a subalgebra. Left ideals and right ideals need not be subalgebras. If $A$ is commutative the three notions coincide, and we speak of <strong>ideals</strong> without qualification.</p>
+<p>The trivial ideals are $\{0\}$ and $A$; an ideal is <strong>proper</strong> if it is neither. In a unital algebra $A$ a proper ideal $I$ contains no unit, because $u \in I$ together with $u u^{-1} = 1$ would give $1 \in I$ and then $I = A$; consequently $A$ is a division algebra precisely when it is unital and its only left ideals are $0$ and $A$, a point developed.</p>
+<p><strong>Proposition (kernels and images).</strong> Let $\varphi : A \to B$ be an algebra homomorphism. Then $\ker \varphi$ is a two-sided ideal of $A$ and $\operatorname{im} \varphi$ is a subalgebra of $B$.</p>
+<p><em>Proof.</em> The kernel is a submodule by module theory, and for $x \in \ker\varphi$ and $a \in A$ one has $\varphi(ax) = \varphi(a)\varphi(x) = 0$ and $\varphi(xa) = \varphi(x)\varphi(a) = 0$, so $\ker\varphi$ is two-sided. The image is a submodule closed under products, since $\varphi(x)\varphi(y) = \varphi(xy)$ is again in the image. $\square$</p>
+<p><strong>Proposition (preimages and images of ideals).</strong> Let $\varphi : A \to B$ be an algebra homomorphism. If $J \subseteq B$ is a (left, right, two-sided) ideal, then $\varphi^{-1}(J)$ is an ideal of $A$ of the same kind. If $I \subseteq A$ is a two-sided ideal with $\ker \varphi \subseteq I$, then $\varphi(I)$ is a two-sided ideal of $\operatorname{im}\varphi$.</p>
+<p><em>Proof.</em> For the preimage, if $\varphi(x) \in J$ then $\varphi(ax) = \varphi(a)\varphi(x) \in J$, and dually on the right. For the image, if $y = \varphi(x)$ with $x \in I$ and $b = \varphi(a)$, then $by = \varphi(ax)$ with $ax \in I$, and dually. $\square$</p>
+<p>The hypothesis $\ker\varphi \subseteq I$ is exactly what makes $I$ the preimage of $\varphi(I)$: an element $x \in A$ with $\varphi(x) \in \varphi(I)$ differs from an element of $I$ by an element of $\ker\varphi$, hence lies in $I$.</p>
+<h3 id="generated-ideals">Generated Ideals</h3>
+<p><strong>Definition.</strong> For a subset $S \subseteq A$, the <strong>two-sided ideal generated by $S$</strong>, written $(S)$ or $\langle S \rangle$, is the intersection of all two-sided ideals containing $S$.</p>
+<p><strong>Proposition.</strong> The ideal generated by $S$ consists of the finite $R$-linear combinations of elements obtained from elements of $S$ by repeatedly multiplying on the left or on the right by elements of $A$.</p>
+<p><em>Proof.</em> The set described is a submodule containing $S$, and it is closed under left and right multiplication by $A$ because adjoining one more factor preserves the description. It is therefore a two-sided ideal containing $S$, and it is contained in every such ideal by induction on the number of factors. $\square$</p>
+<p>When $A$ is associative the description simplifies: the two-sided ideal generated by $S$ is the set of finite sums</p>
+<p>$$
+\sum_i a_i s_i b_i, \qquad a_i, b_i \in A, \ s_i \in S,
+$$</p>
+<p>with the $R$-linear combinations absorbed into the coefficients. In the commutative associative case this collapses further to $\sum_i a_i s_i$, the familiar ideal generated by a set in a ring.</p>
+<p><strong>Example.</strong> In the polynomial algebra $k[x]$, the ideal generated by $f$ is $(f) = \{fg: g \in k[x]\}$, and $k[x]/(f)$ is the quotient algebra; for $f$ irreducible this quotient is a field, and for $f = (x-a)^2$ it is the algebra of dual numbers over $k$.</p>
+<h3 id="products-and-sums-of-ideals">Products and Sums of Ideals</h3>
+<p><strong>Proposition.</strong> Let $I$ and $J$ be two-sided ideals of $A$. Then $I \cap J$ and $I + J$ are two-sided ideals. If $A$ is associative, the submodule $IJ$ spanned by the products $xy$ with $x \in I$, $y \in J$ is a two-sided ideal, and $IJ \subseteq I \cap J$.</p>
+<p><em>Proof.</em> Intersections and sums of submodules are submodules (<em>Modules</em>, §4), and both are stable under multiplication by $A$ because each summand is. For $IJ$, associativity gives $a(xy) = (ax)y \in IJ$ and $(xy)a = x(ya) \in IJ$; the inclusion $IJ \subseteq I \cap J$ holds because $xy \in I$ and $xy \in J$ for $x \in I$, $y \in J$. $\square$</p>
+<p>Associativity is genuinely needed for $IJ$ to be an ideal. In a non-associative algebra the span of the products need not be closed under multiplication by $A$, and one must work instead with the ideal generated by the products.</p>
+<p><strong>Example (square-zero ideals).</strong> An ideal $I$ with $I^2 = 0$ is called <strong>square-zero</strong>. The dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ have the maximal ideal $(\varepsilon)$, which is square-zero. A square-zero ideal is the algebraic expression of an infinitesimal thickening, and it is the local model for a deformation.</p>
+<h2 id="quotient-algebras">Quotient Algebras</h2>
+<p>The purpose of an ideal is to be divided out.</p>
+<p><strong>Theorem.</strong> Let $I$ be a two-sided ideal of the $R$-algebra $A$. On the quotient module $A/I$ define a product by</p>
+<p>$$
+(a + I)(b + I) = ab + I.
+$$</p>
+<p>This is well defined, and it makes $A/I$ an $R$-algebra. The natural projection $\pi : A \to A/I$, $\pi(a) = a + I$, is a surjective algebra homomorphism with kernel $I$.</p>
+<p><em>Proof.</em> Suppose $a' = a + x$ and $b' = b + y$ with $x, y \in I$. Bilinearity gives</p>
+<p>$$
+a'b' = (a + x)(b + y) = ab + ay + xb + xy.
+$$</p>
+<p>Now $ay \in I$ and $xb \in I$ because $I$ is a right ideal and a left ideal respectively, and $xy \in I$ because $I$ is closed under products. Hence $a'b' - ab \in I$, and $a'b' + I = ab + I$: the product is well defined. The algebra axioms transfer from $A$ because addition, scalar multiplication and the product are computed from representatives, and bilinearity of the product on $A$ gives bilinearity on $A/I$. The projection is $R$-linear, surjective, multiplicative, and has kernel $I$. $\square$</p>
+<p>Notice that the proof uses only that $I$ is closed under products and under multiplication by $A$; associativity of $A$ is never invoked. The quotient of a non-associative algebra by a two-sided ideal is therefore again an algebra of the same kind, and the quotient of an associative algebra is associative.</p>
+<p><strong>Definition.</strong> $A/I$ is the <strong>quotient algebra</strong> of $A$ by $I$, and $\pi$ is the <strong>quotient map</strong>.</p>
+<p><strong>Example.</strong> Every quotient of $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ is read off from the idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$. The ideals $\mathbb{D}e_+$ and $\mathbb{D}e_-$ are two-sided, $\mathbb{D}/\mathbb{D}e_- \cong \mathbb{R}$, and since $e_+ e_- = 0$ one has $\mathbb{D} \cong \mathbb{R}\oplus\mathbb{R}$ as an algebra, so $\mathbb{D}$ is the direct sum of the two quotients.</p>
+<p><strong>Example.</strong> $\mathbb{H}$ has no proper nonzero two-sided ideal, so the only quotients of $\mathbb{H}$ are $0$ and $\mathbb{H}$ itself. This is the content of $\mathbb{H}$ being a division algebra, and it is proved in <em>Quaternion Algebra ($\mathbb{H}$)</em>.</p>
+<h2 id="algebra-homomorphisms">Algebra Homomorphisms</h2>
+<p><strong>Definition.</strong> Let $A$ and $B$ be $R$-algebras. A map $\varphi : A \to B$ is an <strong>algebra homomorphism</strong> if it is $R$-linear and multiplicative:</p>
+<p>$$
+\varphi(x + y) = \varphi(x) + \varphi(y), \quad \varphi(rx) = r\varphi(x), \quad \varphi(xy) = \varphi(x)\varphi(y)
+$$</p>
+<p>for all $x, y \in A$ and $r \in R$. It is a <strong>monomorphism</strong> if injective, an <strong>epimorphism</strong> if surjective, an <strong>isomorphism</strong> if bijective, an <strong>endomorphism</strong> if $A = B$, and an <strong>automorphism</strong> if it is a bijective endomorphism. A homomorphism of unital algebras is <strong>unital</strong> if $\varphi(1_A) = 1_B$.</p>
+<p>The composite of two homomorphisms is a homomorphism, and the identity is a homomorphism; consequently the $R$-algebra automorphisms of $A$ form a group under composition, written $\operatorname{Aut}_R(A)$ and studied.</p>
+<p><strong>Proposition.</strong> A homomorphism $\varphi$ is injective if and only if $\ker\varphi = 0$. A bijective homomorphism has a two-sided inverse, which is again a homomorphism.</p>
+<p><em>Proof.</em> The first statement is the module-theoretic criterion. For the second, if $\varphi$ is bijective and $u, v \in B$, write $u = \varphi(x)$, $v = \varphi(y)$; then $\varphi^{-1}(uv) = \varphi^{-1}(\varphi(xy)) = xy = \varphi^{-1}(u)\varphi^{-1}(v)$, and $R$-linearity of $\varphi^{-1}$ follows from that of $\varphi$. $\square$</p>
+<p><strong>Example (the universal property of a quotient).</strong> Let $I$ be a two-sided ideal of $A$. For every algebra $B$, precomposition with the quotient map is a bijection</p>
+<p>$$
+\{\text{algebra homomorphisms } A/I \to B\} \;\longrightarrow\; \{\text{algebra homomorphisms } \varphi : A \to B \text{ with } I \subseteq \ker\varphi\}.
+$$</p>
+<p>This is the defining universal property of the quotient, and it is the form in which quotients are used to present algebras by generators and relations.</p>
+<p><strong>Example (evaluation).</strong> For a commutative ring $k$ and a point $a \in k$, the evaluation map $k[x] \to k$, $f \mapsto f(a)$, is a unital homomorphism of $k$-algebras with kernel the ideal $(x - a)$. The map $k[x] \to \operatorname{Fun}(k,k)$ recording all evaluations is not injective in general: over $k = \mathbb{Z}/4\mathbb{Z}$ the polynomial $2x^2 + 2x$ is nonzero and vanishes at all four points $0, 1, 2, 3$, and over the field $\mathbb{F}_2$ the polynomial $x^2 - x$ is nonzero and vanishes at both points. Over an infinite integral domain the map <em>is</em> injective, since a nonzero polynomial has only finitely many roots there.</p>
+<p><strong>Remark (no algebra structure on $\operatorname{Hom}$).</strong> The set $\operatorname{Hom}_R(A,B)$ of algebra homomorphisms is not an $R$-algebra under pointwise operations: the pointwise product of two multiplicative maps need not be multiplicative. It is a set, and when $A = B$ it is a monoid under composition. The pointwise operations do make the <em>linear</em> maps $\operatorname{Hom}_R(A,B)$ into an $R$-module, and into an $R$-algebra when $B$ is commutative.</p>
+<h2 id="the-isomorphism-theorems">The Isomorphism Theorems</h2>
+<p>The three isomorphism theorems and the correspondence theorem carry over from modules without change, with "submodule" replaced by "subalgebra" or "ideal" as appropriate.</p>
+<p><strong>Theorem (first isomorphism theorem).</strong> Let $\varphi : A \to B$ be an algebra homomorphism. Then $\varphi$ induces an isomorphism</p>
+<p>$$
+A/\ker\varphi \;\cong\; \operatorname{im}\varphi,
+$$</p>
+<p>given by $a + \ker\varphi \mapsto \varphi(a)$.</p>
+<p><em>Proof.</em> The map is well defined and $R$-linear by the module theorem; it is multiplicative because $\varphi$ is, and it is bijective onto the image by construction. $\square$</p>
+<p><strong>Theorem (second isomorphism theorem).</strong> Let $B$ be a subalgebra and $I$ a two-sided ideal of $A$. Then $B + I$ is a subalgebra of $A$, $B \cap I$ is a two-sided ideal of $B$, and</p>
+<p>$$
+(B + I)/I \;\cong\; B/(B \cap I).
+$$</p>
+<p><em>Proof.</em> For $b, b' \in B$ and $x, x' \in I$,</p>
+<p>$$
+(b + x)(b' + x') = bb' + bx' + xb' + xx' \in B + I,
+$$</p>
+<p>since $bb' \in B$ and the remaining three terms lie in $I$; this also shows that $I$ is an ideal of $B + I$. The intersection $B \cap I$ is a submodule of $B$ closed under multiplication by $B$, hence an ideal of $B$, and the map $b + (B\cap I) \mapsto b + I$ is the required isomorphism. $\square$</p>
+<p><strong>Theorem (third isomorphism theorem).</strong> Let $I \subseteq J$ be two-sided ideals of $A$. Then $J/I$ is a two-sided ideal of $A/I$, and</p>
+<p>$$
+(A/I)/(J/I) \;\cong\; A/J.
+$$</p>
+<p><em>Proof.</em> The set $J/I$ is the image of $J$ under the quotient map, so it is an ideal by the proposition on images of ideals. The composite $A \to A/I \to (A/I)/(J/I)$ has kernel $J$, so the first isomorphism theorem applies. $\square$</p>
+<p><strong>Theorem (correspondence theorem).</strong> Let $I$ be a two-sided ideal of $A$ and $\pi : A \to A/I$ the quotient map. The map $J \mapsto \pi^{-1}(J)$ is a bijection from the set of two-sided ideals of $A/I$ onto the set of two-sided ideals of $A$ containing $I$, with inverse $J \mapsto J/I$. The bijection preserves inclusion, and it restricts to a bijection between the maximal ideals on the two sides.</p>
+<p><em>Proof.</em> Combine the module correspondence theorem with the proposition on preimages and images; the preimage of an ideal of $A/I$ is an ideal of $A$ containing $I = \ker\pi$, and the two constructions are mutually inverse. The statement about maximal ideals is immediate from the preservation of inclusion. $\square$</p>
+<h2 id="simplicity-maximality-and-the-radical">Simplicity, Maximality and the Radical</h2>
+<p><strong>Definition.</strong> A nonzero algebra $A$ is <strong>simple</strong> if its only two-sided ideals are $0$ and $A$. In the non-unital case one adds the requirement $A^2 \neq 0$, so that an algebra with $A^2 = 0$ is not counted as simple.</p>
+<p><strong>Definition.</strong> A proper two-sided ideal $I \subsetneq A$ is <strong>maximal</strong> if there is no two-sided ideal strictly between $I$ and $A$. Over a unital algebra, Zorn's lemma applied to the proper ideals containing a given proper ideal produces a maximal ideal above it, exactly as for rings (<em>Rings</em>, §6).</p>
+<p><strong>Proposition.</strong> Let $I$ be a proper two-sided ideal of a unital algebra $A$. Then $I$ is maximal if and only if $A/I$ is simple.</p>
+<p><em>Proof.</em> By the correspondence theorem, the ideals of $A/I$ correspond to the ideals of $A$ containing $I$. The quotient $A/I$ has only the two trivial ideals exactly when there is no proper ideal strictly between $I$ and $A$. The condition $A^2 \nsubseteq I$ holds for a maximal ideal of a unital algebra because otherwise $A^2 \subseteq I$ and, since $A^2 = A$ for unital $A$, $I = A$. $\square$</p>
+<p><strong>Corollary.</strong> Let $k$ be a field and $A$ a commutative unital $k$-algebra. A two-sided ideal $I \subsetneq A$ is maximal if and only if $A/I$ is a field.</p>
+<p><em>Proof.</em> A commutative unital algebra is simple exactly when it is a field: if $A/I$ is simple and $a + I \neq 0$, the ideal generated by $a + I$ is nonzero, hence all of $A/I$, so $a + I$ is a unit; conversely a field has no proper nonzero ideals. $\square$</p>
+<p>The <strong>Jacobson radical</strong> $J(A)$ of a unital associative algebra is the intersection of its maximal left ideals; it is a two-sided ideal, and $x \in J(A)$ if and only if $1 - ax$ is a unit for every $a \in A$. The radical is the natural home of the algebra analogue of Nakayama's lemma (<em>Modules</em>, §11), and it measures the failure of the regular module to be semisimple. The structure theory of modules over an algebra belongs to category 08 and is not developed here.</p>
+<h2 id="ideals-and-quotients-in-the-small-algebras">Ideals and Quotients in the Small Algebras</h2>
+<p>The ideals of the standard examples are collected in the following table, with the quotient that each produces. The entries are verified in the companion articles named in the right-hand column; the table is a guide to those computations, not a substitute for them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Two-sided ideals</th>
+<th>Quotient</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$0$, $\mathbb{R}$</td>
+<td>field, no proper quotient</td>
+<td></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$0$, $\mathbb{C}$</td>
+<td>field</td>
+<td></td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$0$, $\mathbb{D}e_+$, $\mathbb{D}e_-$, $\mathbb{D}$</td>
+<td>$\mathbb{D}/\mathbb{D}e_\pm \cong \mathbb{R}$</td>
+<td><em>Split Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>$0$, $(\varepsilon)$, $\mathbb{D}'$</td>
+<td>$\mathbb{D}'/(\varepsilon)\cong\mathbb{R}$</td>
+<td><em>Dual Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$0$, $\mathbb{H}$</td>
+<td>$\mathbb{H}$ is a division algebra</td>
+<td><em>Quaternion Algebra ($\mathbb{H}$)</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>$0$, $\mathbb{H}_{\mathbb{D}}e_+$, $\mathbb{H}_{\mathbb{D}}e_-$, $\mathbb{H}_{\mathbb{D}}$</td>
+<td>$\mathbb{H}_{\mathbb{D}}/\mathbb{H}_{\mathbb{D}}e_\pm \cong \mathbb{H}$</td>
+<td></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$0$, $\mathbb{B}$</td>
+<td>$M_2(\mathbb{C})$ is simple</td>
+<td><em>Biquaternion Algebra ($\mathbb{B}$)</em></td>
+</tr>
+<tr>
+<td>$M_n(k)$</td>
+<td>$0$, $M_n(k)$</td>
+<td>$M_n(k)$ is simple</td>
+<td></td>
+</tr>
+<tr>
+<td>$k[x]$, $k$ a field</td>
+<td>$(f)$, $f \in k[x]$</td>
+<td>$k[x]/(f)$</td>
+<td></td>
+</tr>
+<tr>
+<td>$k[G]$</td>
+<td>augmentation ideal and its sub-ideals</td>
+<td>$k[G]/I(G) \cong k$</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>The pattern is that the ideals of a division algebra are trivial, that a simple algebra which is not a division algebra — $M_n(k)$, $\mathbb{B}$ — also has trivial two-sided ideals, and that zero divisors bring nontrivial ideals with them. The precise relation between zero divisors, units and division algebras is not covered here.</p>
+<p><strong>Example (the quotient presentations of the number systems).</strong> The complex, split complex and dual numbers are the quotients of a polynomial algebra by the principal ideals generated by $x^2 + 1$, $x^2 - 1$ and $x^2$ respectively:</p>
+<p>$$
+\mathbb{C} = \mathbb{R}[x]/(x^2+1), \qquad \mathbb{D} = \mathbb{R}[x]/(x^2-1), \qquad \mathbb{D}' = \mathbb{R}[x]/(x^2).
+$$</p>
+<p>In each case the quotient is generated as an $\mathbb{R}$-algebra by the image of $x$, whose square is $-1$, $+1$ and $0$ respectively. The quaternion algebra admits the analogous presentation by two generators and three relations,</p>
+<p>$$
+\mathbb{H} = \mathbb{R}\langle x, y \rangle / (x^2 + 1, y^2 + 1, xy + yx),
+$$</p>
+<p>where $\mathbb{R}\langle x, y \rangle$ is the free algebra on two generators, constructed. These presentations are the simplest instances of the general quotient construction, and they are worked out.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>subalgebra</strong> is a submodule closed under the product; a <strong>left</strong>, <strong>right</strong> or <strong>two-sided ideal</strong> is a submodule closed under multiplication by the algebra on the left, on the right, or on both sides. Kernels of algebra homomorphisms are two-sided ideals and images are subalgebras; preimages of ideals are ideals. A two-sided ideal $I$ is exactly what is needed to form the quotient algebra $A/I$, whose product $(a+I)(b+I) = ab + I$ is well defined by bilinearity and by the closure of $I$.</p>
+<p>The first isomorphism theorem gives $A/\ker\varphi \cong \operatorname{im}\varphi$, the second gives $(B+I)/I \cong B/(B\cap I)$ for a subalgebra $B$ and an ideal $I$, the third gives $(A/I)/(J/I) \cong A/J$ for ideals $I \subseteq J$, and the correspondence theorem identifies the ideals of $A/I$ with the ideals of $A$ containing $I$. A nonzero algebra is <strong>simple</strong> when it has no proper nonzero two-sided ideal, a proper ideal is <strong>maximal</strong> when nothing lies strictly between it and the algebra, and maximality is equivalent to simplicity of the quotient.</p>
+<p>Associativity is not needed for any of this. It is needed only to multiply ideals — to make the span of the products $xy$, $x \in I$, $y \in J$ an ideal — and to describe a generated ideal by expressions $asb$. The quotient presentations $\mathbb{C} = \mathbb{R}[x]/(x^2+1)$, $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, $\mathbb{D}' = \mathbb{R}[x]/(x^2)$ and $\mathbb{H} = \mathbb{R}\langle x,y\rangle/(x^2+1, y^2+1, xy+yx)$ are the concrete output of the construction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$A$, $B$</td>
+<td>$R$-algebras</td>
+</tr>
+<tr>
+<td>$I$, $J$</td>
+<td>Ideals (two-sided unless qualified)</td>
+</tr>
+<tr>
+<td>$ax$, $xa$</td>
+<td>Left and right multiplication by $a$</td>
+</tr>
+<tr>
+<td>$(S)$, $\langle S \rangle$</td>
+<td>Two-sided ideal generated by $S$</td>
+</tr>
+<tr>
+<td>$I + J$, $I \cap J$, $IJ$</td>
+<td>Sum, intersection, product of ideals</td>
+</tr>
+<tr>
+<td>$A/I$</td>
+<td>Quotient algebra by a two-sided ideal $I$</td>
+</tr>
+<tr>
+<td>$\pi : A \to A/I$</td>
+<td>Quotient map, $\ker\pi = I$</td>
+</tr>
+<tr>
+<td>$\varphi : A \to B$</td>
+<td>Algebra homomorphism</td>
+</tr>
+<tr>
+<td>$\ker\varphi$, $\operatorname{im}\varphi$</td>
+<td>Kernel (an ideal) and image (a subalgebra)</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_R(A)$</td>
+<td>Group of $R$-algebra automorphisms of $A$</td>
+</tr>
+<tr>
+<td>$J(A)$</td>
+<td>Jacobson radical</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\langle x, y\rangle$</td>
+<td>Free algebra on two generators</td>
+</tr>
+<tr>
+<td>$\mathbb{C} = \mathbb{R}[x]/(x^2+1)$</td>
+<td>Complex numbers as a quotient</td>
+</tr>
+<tr>
+<td>$\mathbb{D} = \mathbb{R}[x]/(x^2-1)$</td>
+<td>Split complex numbers as a quotient</td>
+</tr>
+<tr>
+<td>$\mathbb{D}' = \mathbb{R}[x]/(x^2)$</td>
+<td>Dual numbers as a quotient</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Quaternions as a quotient of the free algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009), for ideals, quotients and the isomorphism theorems in the general algebra setting.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for the structure theory of algebras and their ideals.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the Jacobson radical and simplicity.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the full structure theory of associative algebras.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the ring-theoretic analogue of the isomorphism theorems.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991), for algebras over commutative rings and their quotients.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples in the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-in-the-biquaternion-algebra"><strong>Worked Examples in the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><em>Biquaternion Algebra ($\mathbb{B}$)</em> developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions and its quadratic forms. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the matrix representation that identifies $\mathbb{B}$ with $M_2(\mathbb{C})$, the six subspaces exhibited on one element, the four conjugations applied to that element, the norm form and the unit criterion, the idempotents and the minimal left ideals, explicit zero-divisor pairs, and the realisation of $\mathbb{C}^2$ as a left ideal of $\mathbb{B}$.</p>
+<p>Notation follows <em>Biquaternion Algebra ($\mathbb{B}$)</em>. A biquaternion is written in developed form</p>
+<p>$$
+\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3, \qquad Q_\mu \in \mathbb{C},
+$$</p>
+<p>with the quaternion basis $e_0 = 1$, $e_1, e_2, e_3$, and the central complex unit $i$, $i^2 = -1$, commuting with every $e_\mu$. The scalar part of $\tilde{Q}$ is $\mathrm{Sc}\,\tilde{Q} = Q_0$, its vector part is $\mathbf{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3$, and the quaternion conjugate is $\bar{\tilde{Q}} = Q_0e_0 - \mathbf{Q}$. The fixed element used throughout is</p>
+<p>$$
+\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3 .
+$$</p>
+<h2 id="the-multiplication-table">The Multiplication Table</h2>
+<p>The products of the quaternion basis elements follow the cyclic rule $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$, with $e_k^2 = -e_0$ and $e_je_k = -e_ke_j$ for $j\neq k$. Writing the products in a table, with the left factor as the row and the right factor as the column:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$e_1$</td>
+<td>$-e_0$</td>
+<td>$e_3$</td>
+<td>$-e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$e_2$</td>
+<td>$-e_3$</td>
+<td>$-e_0$</td>
+<td>$e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$e_3$</td>
+<td>$e_2$</td>
+<td>$-e_1$</td>
+<td>$-e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the quaternion table, but the coefficients are now complex and the central element $i$ multiplies every entry: $i e_\mu = e_\mu i$. The full multiplication of $\mathbb{B}$ is therefore determined by the table above together with $i^2 = -1$ and centrality of $i$. As a $\mathbb{C}$-algebra the dimension is $4$; as a real algebra the basis may be taken as $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$ and the dimension is $8$.</p>
+<p><strong>Example.</strong> The products used below are</p>
+<p>$$
+e_1^2 = e_2^2 = e_3^2 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_1 = -e_3, \quad e_1e_3 = -e_2, \quad e_3e_2 = -e_1 .
+$$</p>
+<h2 id="the-matrix-representation">The Matrix Representation</h2>
+<p>The identification $\mathbb{B} \cong M_2(\mathbb{C})$ is exhibited by the algebra homomorphism $\Phi$ determined on the basis by</p>
+<p>$$
+\Phi(e_0) = I_2, \quad
+\Phi(e_1) = -i\sigma_1 = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \quad
+\Phi(e_2) = -i\sigma_2 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
+\Phi(e_3) = -i\sigma_3 = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
+$$</p>
+<p>and by $\Phi(i) = i I_2$ on the central complex unit; this is the matrix model fixed in <em>Biquaternion Algebraic Representations</em>, and it is the one used throughout the biquaternion articles. That $\Phi$ respects the quaternion relations is checked directly:</p>
+<p>$$
+\Phi(e_1)^2 = \Phi(e_2)^2 = \Phi(e_3)^2 = -I_2, \qquad \Phi(e_1)\Phi(e_2) = (-i\sigma_1)(-i\sigma_2) = -\sigma_1\sigma_2 = -i\sigma_3 = \Phi(e_3),
+$$</p>
+<p>and cyclically.</p>
+<p><strong>Example.</strong> For the fixed element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$,</p>
+<p>$$
+\Phi(\tilde{Q}) = (2+i)I_2 + (1-i)(-i\sigma_1) + 3(-i\sigma_2) + i(-i\sigma_3) = \begin{pmatrix} 3+i & -4-i \\ 2-i & 1+i \end{pmatrix}.
+$$</p>
+<p>The two invariants of the matrix recover the two invariants of the biquaternion:</p>
+<p>$$
+\operatorname{Tr}\Phi(\tilde{Q}) = 4 + 2i = 2Q_0 = 2\,\mathrm{Sc}\,\tilde{Q}, \qquad \det\Phi(\tilde{Q}) = (3+i)(1+i) - (-4-i)(2-i) = 11 + 2i = N(\tilde{Q}).
+$$</p>
+<p>So the trace detects the scalar part and the determinant is the norm form; this is the $\mathbb{C}$-algebra version of the statement that $\mathbb{B}$ is the algebra of $2\times2$ complex matrices.</p>
+<h2 id="the-six-subspaces-on-a-concrete-element">The Six Subspaces on a Concrete Element</h2>
+<p>The six distinguished real subspaces are the fixed and anti-fixed spaces of the three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger} = \bar{\cdot}\circ{}^{*}$; the fourth conjugation $\flat = -\dagger$ has the same two eigenspaces as ${}^{\dagger}$ with the roles of the fixed and anti-fixed space interchanged, so it contributes no further subspaces. On the fixed element the decompositions are as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Defining condition</th>
+<th>Component of $\tilde{Q}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$ (centre)</td>
+<td>$\bar{\tilde{Q}} = \tilde{Q}$</td>
+<td>$(2+i)e_0$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$ (vector)</td>
+<td>$\bar{\tilde{Q}} = -\tilde{Q}$</td>
+<td>$(1-i)e_1 + 3e_2 + ie_3$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$ (quaternion)</td>
+<td>$\tilde{Q}^{*} = \tilde{Q}$</td>
+<td>$2e_0 + e_1 + 3e_2$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion)</td>
+<td>$\tilde{Q}^{*} = -\tilde{Q}$</td>
+<td>$ie_0 - ie_1 + ie_3$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$ (Hermitian)</td>
+<td>$\tilde{Q}^{\dagger} = \tilde{Q}$</td>
+<td>$2e_0 - ie_1 + ie_3$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$ (anti-Hermitian)</td>
+<td>$\tilde{Q}^{\flat} = \tilde{Q}$</td>
+<td>$ie_0 + e_1 + 3e_2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The decomposition into scalar and vector parts reads $\tilde{Q} = (2+i)e_0 + \bigl((1-i)e_1 + 3e_2 + ie_3\bigr)$, and the decomposition into quaternion and anti-quaternion parts reads</p>
+<p>$$
+\tilde{Q} = \bigl(2e_0 + e_1 + 3e_2\bigr) + i\bigl(e_0 - e_1 + e_3\bigr) = \tilde{Q}_r + i\tilde{Q}_i,
+$$</p>
+<p>with $\tilde{Q}_r, \tilde{Q}_i \in \mathbb{H}_{\mathbb{B}}$, as the basis of the quaternion subspace consists of the basis elements with real coefficients. The Hermitian decomposition reads</p>
+<p>$$
+\tilde{Q} = \bigl(2e_0 - ie_1 + ie_3\bigr) + \bigl(ie_0 + e_1 + 3e_2\bigr) = \tilde{Q}_+ + \tilde{Q}_-,
+$$</p>
+<p>and the two pieces are distinguished by the signs of the scalar and vector coefficients: $\tilde{Q}_+$ has real scalar part and purely imaginary vector part, $\tilde{Q}_-$ has purely imaginary scalar part and real vector part. Each of the three decompositions is a direct sum of two of the six subspaces, and the components above are the concrete instances.</p>
+<h2 id="the-four-conjugations-on-the-concrete-element">The Four Conjugations on the Concrete Element</h2>
+<p>Applying the four conjugations to $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ gives</p>
+<p>$$
+\bar{\tilde{Q}} = (2+i)e_0 - (1-i)e_1 - 3e_2 - ie_3,
+$$</p>
+<p>$$
+\tilde{Q}^{*} = (2-i)e_0 + (1+i)e_1 + 3e_2 - ie_3,
+$$</p>
+<p>$$
+\tilde{Q}^{\dagger} = \bar{\tilde{Q}}^{*} = (2-i)e_0 - (1+i)e_1 - 3e_2 + ie_3,
+$$</p>
+<p>$$
+\tilde{Q}^{\flat} = -\tilde{Q}^{\dagger} = -(2-i)e_0 + (1+i)e_1 + 3e_2 - ie_3 .
+$$</p>
+<p>Each is an involution, and the Klein group is visible in the relations $\tilde{Q}^{\dagger} = \bar{\tilde{Q}}^{*} = \tilde{Q}^{*\bar{}}$; the fourth conjugation satisfies $(\tilde{Q}^{\dagger})^{\flat} = -\tilde{Q}$ and $(\tilde{Q}^{\flat})^{\dagger} = -\tilde{Q}$, so it is the composition of $\dagger$ with the central sign $-1$. The fixed points of each involution give one of the six subspaces tabulated above: for instance, the Hermitian part of $\tilde{Q}$ is $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\dagger}) = 2e_0 - ie_1 + ie_3$, which agrees with the table.</p>
+<h2 id="the-norm-form-and-the-unit-criterion">The Norm Form and the Unit Criterion</h2>
+<p><strong>Definition.</strong> The <strong>norm form</strong> of a biquaternion is</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 \in \mathbb{C},
+$$</p>
+<p>a central element of $\mathbb{B}$. It is multiplicative: $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$.</p>
+<p><strong>Proposition (unit criterion).</strong> A biquaternion $\tilde{Q}$ is a unit if and only if $N(\tilde{Q}) \neq 0$, and then</p>
+<p>$$
+\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})} .
+$$</p>
+<p><em>Proof.</em> If $N(\tilde{Q}) \neq 0$ the displayed element is a two-sided inverse, since $\tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = N(\tilde{Q})$ is central. Conversely let $\tilde{Q} \neq 0$ with $N(\tilde{Q}) = 0$. Then $\tilde{Q}\bar{\tilde{Q}} = 0$; if $\bar{\tilde{Q}} \neq 0$ this exhibits $\tilde{Q}$ as a zero divisor, hence a non-unit; and if $\bar{\tilde{Q}} = 0$ then all four coefficients of $\tilde{Q}$ vanish, so $\tilde{Q} = 0$, contrary to hypothesis. Hence $\tilde{Q}$ is not a unit. $\square$</p>
+<p><strong>Example (a unit).</strong> For the fixed element,</p>
+<p>$$
+N(\tilde{Q}) = (2+i)^2 + (1-i)^2 + 3^2 + i^2 = (3+4i) + (-2i) + 9 - 1 = 11 + 2i \neq 0,
+$$</p>
+<p>so $\tilde{Q}$ is a unit, with inverse $\bar{\tilde{Q}}/(11+2i)$. The determinant computed above, $\det\Phi(\tilde{Q}) = 11+2i$, agrees, as it must.</p>
+<p><strong>Example (the norm under conjugation).</strong> The conjugation rules give</p>
+<p>$$
+N(\bar{\tilde{Q}}) = N(\tilde{Q}) = 11+2i, \qquad N(\tilde{Q}^{*}) = N(\tilde{Q})^{*} = 11-2i, \qquad N(\tilde{Q}^{\dagger}) = 11-2i, \qquad N(\tilde{Q}^{\flat}) = 11-2i,
+$$</p>
+<p>because $N$ is invariant under $\bar{\cdot}$ and conjugate-linear in the complex coefficient under ${}^{*}$, and $\flat$ differs from $\dagger$ by the sign $-1$, whose square is $1$.</p>
+<h2 id="idempotents-and-the-two-minimal-left-ideals">Idempotents and the Two Minimal Left Ideals</h2>
+<p><strong>Proposition (idempotents).</strong> The elements</p>
+<p>$$
+p = \tfrac{1}{2}(e_0 + ie_3), \qquad q = \tfrac{1}{2}(e_0 - ie_3)
+$$</p>
+<p>are orthogonal idempotents: $p^2 = p$, $q^2 = q$, $pq = qp = 0$, and $p + q = e_0$. They are the idempotents $p, q$ of <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<p><em>Proof.</em> Since $i$ is central, $(ie_3)^2 = i^2e_3^2 = (-1)(-1) = 1$. Hence</p>
+<p>$$
+(e_0 \pm ie_3)^2 = e_0 \pm 2ie_3 + (ie_3)^2 = 2e_0 \pm 2ie_3 = 2(e_0 \pm ie_3),
+$$</p>
+<p>so $p^2 = p$ and $q^2 = q$, and $(e_0+ie_3)(e_0-ie_3) = e_0 - (ie_3)^2 = 0$, so $pq = 0$. $\square$</p>
+<p><strong>Proposition (the minimal left ideals).</strong> The left ideals</p>
+<p>$$
+\mathbb{B}p = \{\tilde{Q}p : \tilde{Q} \in \mathbb{B}\}, \qquad \mathbb{B}q = \{\tilde{Q}q : \tilde{Q} \in \mathbb{B}\}
+$$</p>
+<p>satisfy $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ as left $\mathbb{B}$-modules, and each is a minimal left ideal, of dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$.</p>
+<p><em>Proof.</em> Every $\tilde{Q}$ satisfies $\tilde{Q} = \tilde{Q}(p + q) = \tilde{Q}p + \tilde{Q}q$, and the intersection of the two ideals is zero because $pq = 0$: if $\tilde{Q}p = \tilde{P}q$ then multiplying on the right by $p$ gives $\tilde{Q}p = 0$. Under the matrix representation, $\Phi(ie_3) = \Phi(i)\Phi(e_3) = i(-i\sigma_3) = \sigma_3$, so</p>
+<p>$$
+\Phi(p) = \tfrac{1}{2}(I_2 + \sigma_3) = \operatorname{diag}(1,0) = E_{11}, \qquad \Phi(q) = \tfrac{1}{2}(I_2 - \sigma_3) = \operatorname{diag}(0,1) = E_{22},
+$$</p>
+<p>and $\mathbb{B}p$ corresponds to the matrices with only the first column nonzero, which is a minimal left ideal of $M_2(\mathbb{C})$. $\square$</p>
+<h2 id="explicit-zero-divisors">Explicit Zero Divisors</h2>
+<p><strong>Example (an explicit pair).</strong> With $p, q$ as above, $pq = 0$ and both factors are nonzero: this is a zero-divisor pair. In unnormalised form, set $a = e_0 + ie_3$ and $b = e_0 - ie_3$. Then</p>
+<p>$$
+ab = e_0 - (ie_3)^2 = e_0 - 1 = 0, \qquad a \neq 0, \qquad b \neq 0,
+$$</p>
+<p>and the norms vanish: $N(a) = 1^2 + i^2 = 0$, $N(b) = 1 + i^2 = 0$. Both $a$ and $b$ have two nonzero complex coefficients, $a = e_0 + ie_3$ and $b = e_0 - ie_3$.</p>
+<p><strong>Example (matrix confirmation).</strong> For $a = e_0 + ie_3$ and $b = e_0 - ie_3$ the matrix images are</p>
+<p>$$
+\Phi(a) = I_2 + \sigma_3 = \operatorname{diag}(2,0), \qquad \Phi(b) = I_2 - \sigma_3 = \operatorname{diag}(0,2),
+$$</p>
+<p>and $\Phi(a)\Phi(b) = \operatorname{diag}(2,0)\operatorname{diag}(0,2) = 0$, confirming the product $ab = 0$. The zero divisors of $\mathbb{B}$ are exactly the nonzero elements of norm $0$, that is, the nonzero solutions of $Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 0$, a quadric hypersurface in $\mathbb{C}^4$.</p>
+<h2 id="math194-as-a-left-ideal">$\mathbb{C}^2$ as a Left Ideal</h2>
+<p><strong>Proposition.</strong> The minimal left ideal $\mathbb{B}p$ is isomorphic to $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the central element $i$ acts on it as multiplication by $i$.</p>
+<p><em>Proof.</em> Under $\Phi$, the ideal $\mathbb{B}p$ corresponds to the set of matrices with zero second column,</p>
+<p>$$
+\left\{ \begin{pmatrix} \alpha & 0 \\ \beta & 0 \end{pmatrix} : \alpha, \beta \in \mathbb{C} \right\},
+$$</p>
+<p>which is $\mathbb{C}^2$ by the map $\begin{pmatrix}\alpha&0\\\beta&0\end{pmatrix} \mapsto (\alpha,\beta)$, and left multiplication by a matrix in $M_2(\mathbb{C})$ acts on the first column by the corresponding linear map. The identification $\Phi$ is an algebra isomorphism, so this is an isomorphism of left $\mathbb{B}$-modules. The central unit $i$ maps to $iI_2$, which acts as multiplication by $i$. $\square$</p>
+<p><strong>Corollary (the module structure).</strong> $\mathbb{B}$ is a free left module of rank one over itself — the unit $e_0$ is a basis — and, as a module, it decomposes as $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$; each summand is a simple left $\mathbb{B}$-module isomorphic to $\mathbb{C}^2$, and since $M_2(\mathbb{C})$ is simple all its simple left modules are isomorphic, so the two summands are isomorphic and correspond to the two columns.</p>
+<p>The computations show all the structural features asserted in <em>Biquaternion Algebra ($\mathbb{B}$)</em> on a single element and on the standard idempotents: the six subspaces split the element into its centre, vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian parts; the four conjugations act as listed; the norm form decides invertibility and is computed by the determinant of the matrix representation; and the two primitive idempotents produce the decomposition of $\mathbb{B}$ into two copies of $\mathbb{C}^2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2 = -1$; the algebra is isomorphic to $M_2(\mathbb{C})$ through the explicit map $\Phi$ sending $e_0, e_1, e_2, e_3$ to the matrices $I_2$, $-i\sigma_1$, $-i\sigma_2$, $-i\sigma_3$. On the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the trace of the matrix is twice the scalar part and the determinant is the <strong>norm form</strong> $N(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 11+2i$; the element is a unit because $N\neq0$, with inverse $\bar{\tilde{Q}}/N$. The six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat} = -\dagger$ act on it as listed.</p>
+<p>The idempotents $p = \tfrac12(e_0+ie_3)$ and $q = \tfrac12(e_0-ie_3)$ satisfy $pq = 0$ and give $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ with each summand minimal and isomorphic to $\mathbb{C}^2$; the pair $a = e_0+ie_3$, $b = e_0-ie_3$ is an explicit zero-divisor pair of norm $0$; and the zero divisors of $\mathbb{B}$ are exactly the nonzero isotropic vectors of the complex quadratic form $Q_0^2+Q_1^2+Q_2^2+Q_3^2$. As a left module over itself, $\mathbb{B}$ is free of rank one, with $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ its decomposition into two copies of the simple module.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$</td>
+<td>Developed form, $Q_\mu \in \mathbb{C}$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central complex unit, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}\,\tilde{Q} = Q_0$</td>
+<td>Scalar part</td>
+</tr>
+<tr>
+<td>$\mathbf{Q} = \sum_{k=1}^3 Q_ke_k$</td>
+<td>Vector part</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>Quaternion conjugation</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>Complex conjugation</td>
+</tr>
+<tr>
+<td>${}^{\dagger} = \bar{\cdot}\circ{}^{*}$</td>
+<td>Hermitian conjugation</td>
+</tr>
+<tr>
+<td>${}^{\flat} = -\dagger$</td>
+<td>Anti-Hermitian conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$</td>
+<td>The six subspaces</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>Norm form, multiplicative</td>
+</tr>
+<tr>
+<td>$\Phi : \mathbb{B} \to M_2(\mathbb{C})$</td>
+<td>Matrix representation, $\Phi(e_k) = -i\sigma_k$</td>
+</tr>
+<tr>
+<td>$p = \tfrac12(e_0+ie_3),\ q = \tfrac12(e_0-ie_3)$</td>
+<td>Orthogonal primitive idempotents</td>
+</tr>
+<tr>
+<td>$\mathbb{B}p,\ \mathbb{B}q$</td>
+<td>Minimal left ideals, each $\cong \mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>Pauli matrices</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the structure of $M_2(\mathbb{C})$, its idempotents and its minimal left ideals.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for idempotents, minimal ideals and the decomposition of a ring into simple modules.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the quaternion and biquaternion computations.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2nd ed. 2001), for the complexification of the quaternions and its matrix representation.</li>
+<li>Andrew Baker, <em>Matrix Groups: An Introduction to Lie Group Theory</em> (Springer, 2002), for the use of the identification $\mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

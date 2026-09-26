@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higher Algebraic K-Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="higher-algebraic-k-theory"><strong>Higher Algebraic K-Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>$K$-theory</strong> of a ring is the study of its projective modules: $K_0(R)$ is the Grothendieck group of finitely generated projective $R$-modules, and $K_1(R)$ is the abelianisation of the stable general linear group, with its determinant and its relation to the Whitehead group. These two groups are the subject of the companion article <em>$K$-Theory of Rings</em> of Part I, written in parallel, and they are functors of the ring alone. <strong>Higher algebraic $K$-theory</strong> is the extension of the theory to the groups $K_n(R)$ for all $n \geq 0$, and it is a functor not of the ring but of a <em>homotopical</em> object: the category of projective $R$-modules, or the classifying space of the general linear group, or the stable $\infty$-category of perfect $R$-modules. Two definitions dominate: the <strong>plus construction</strong> of Quillen, which attaches cells to $BGL(R)$ to make the commutator subgroup of $\pi_1$ trivial without changing homology, and the <strong>$S_\bullet$-construction</strong>, which produces a simplicial object whose homotopy groups are the $K$-groups. Their equivalence is the main theorem, and the <strong>$Q = +$ theorem</strong> and the <strong>group-completion theorem</strong> relate $K$-theory to the classifying spaces of categories and to loop spaces.</p>
+<p>This is one of four $K$-theories in the corpus, and the four must be distinguished at once.</p>
+<ul>
+<li><strong>$K$-theory of rings</strong> (Part I, planned): the algebraic theory of $K_0$ and $K_1$ of a ring, with projective modules, the determinant, the Whitehead group and the Bass–Heller–Swan theorem. It is the <em>input</em> to the present article, not a competitor.</li>
+<li><strong>Higher algebraic $K$-theory</strong> (this article): the functors $K_n(R)$ defined homotopically from the category of projective modules, together with their relation to the general linear group, to group completion and to the $S_\bullet$-construction.</li>
+<li><strong>Topological $K$-theory</strong> (another agent of this Part, planned): the generalised cohomology theory $KU^*(X)$ of a space, represented by a spectrum, with Bott periodicity, which appears in the previous article <em>Stable Homotopy Theory</em> as the spectrum $KU$.</li>
+<li><strong>$K$-theory of operator algebras</strong> (another agent of this Part, planned): the $K$-theory of $C^*$-algebras and von Neumann algebras, in which $K_0(A)$ is the Grothendieck group of projections in matrix algebras over $A$ and $K_1(A)$ is the group of unitaries modulo homotopy. On the commutative $C^*$-algebra $C(X)$ of continuous functions on a compact space it agrees with the topological $K$-theory of $X$ by Gelfand duality, and Bott periodicity holds for all $C^*$-algebras; it is not the algebraic theory of this article.</li>
+</ul>
+<p>The four share a vocabulary and a group-completion mechanism; they are not the same theory, and the relation between them — the <strong>comparison map</strong> from algebraic to topological $K$-theory — is a theorem (the <strong>Barratt–Priddy–Quillen</strong> and the <strong>Sullivan</strong> theorems for finite groups and their group rings; the <strong>Swan</strong> theorem for affine varieties; the <strong>Quillen–Lichtenbaum</strong> conjectures in general).</p>
+<p>The article presents the plus construction and its universal property, the $S_\bullet$-construction and the equivalence of the two definitions, the low-degree computations and $\pi_1$ via the Whitehead group, the <strong>localisation and devissage theorems</strong>, the relation with the Atiyah–Hirzebruch spectral sequence and with topological $K$-theory, and the definitions through stable $\infty$-categories, which is the modern form and the one that makes the multiplicative structure available. The $\infty$-categorical language is that of <em>Higher Algebra and Higher Categories</em>, the spectral sequences are those of <em>The Leray–Serre Spectral Sequence</em> and <em>Stable Homotopy Theory</em>, and the ring-theoretic input is Part I's <em>$K$-Theory of Rings</em>, written in parallel.</p>
+<p>Throughout, $R$ is a ring; when the theory needs commutativity, unit, regularity or Noetherian hypotheses, they are stated. The symbol $\mathrm{Proj}(R)$ denotes the category of finitely generated projective left $R$-modules, and $GL(R) = \operatorname{colim}_n GL_n(R)$ the stable general linear group.</p>
+<h2 id="the-plus-construction">The Plus Construction</h2>
+<h3 id="statement-and-universal-property">Statement and Universal Property</h3>
+<p><strong>Definition.</strong> Let $X$ be a based CW complex and $N \leq \pi_1(X, x_0)$ a normal subgroup. A <strong>plus construction</strong> with respect to $N$ is a based CW complex $X^+$ and a map $q : X \to X^+$ such that:</p>
+<ol>
+<li>$q_* : \pi_1(X,x_0) \to \pi_1(X^+,x_0)$ is surjective with kernel $N$;</li>
+<li>for every local system of coefficients on $X^+$, the map $q_* : H_*(X; q^*L) \to H_*(X^+;L)$ is an isomorphism.</li>
+</ol>
+<p><strong>Theorem (existence and uniqueness).</strong> For every based CW complex $X$ and normal subgroup $N \leq \pi_1(X)$, a plus construction exists, and it is unique up to homotopy equivalence under $X$; the map $q$ is the universal map to a space that kills $N$ and is a homology isomorphism over the coefficients above.</p>
+<p><em>Proof sketch.</em> Attach $2$-cells along loops representing a generating set of $N$ and $3$-cells along the resulting relations, so that $N$ is killed without changing homology; then attach cells of dimension $\geq 3$ to make the new fundamental group exactly $\pi_1(X)/N$ and to kill the excess homology created in dimensions $\geq 3$, by an induction in which each stage corrects $\pi_1$ and $H_i$ for $i \geq 2$. The weak topology of <em>CW Complexes and Cellular Approximation</em> allows the transfinite construction. Uniqueness follows from the universal property. $\square$</p>
+<p><strong>Definition.</strong> For a ring $R$ and $n \geq 0$ the <strong>higher algebraic $K$-groups</strong> in Quillen's plus construction definition are</p>
+<p>$$
+K_n(R) = \pi_n\bigl(BGL(R)^+\bigr) \quad (n \geq 1),
+$$</p>
+<p>with $K_0(R)$ the Grothendieck group of finitely generated projective $R$-modules, as in Part I's <em>$K$-Theory of Rings</em>. Here $BGL(R)$ is the classifying space of the discrete group $GL(R) = \operatorname{colim}_n GL_n(R)$, the colimit being formed along the inclusions $A \mapsto \operatorname{diag}(A,1)$, and $BGL(R)^+$ the plus construction with respect to the commutator subgroup $E(R) = [GL(R),GL(R)]$, the subgroup generated by elementary matrices.</p>
+<p><strong>Remark.</strong> The subgroup killed by the plus construction is the <strong>elementary subgroup</strong> $E(R) = [GL(R),GL(R)]$ generated by the elementary matrices $I + r e_{ij}$ for $i \neq j$; for a commutative ring with $1 \neq 0$ the <strong>Whitehead lemma</strong> states that $E(R) = [GL(R),GL(R)]$, so $\pi_1(BGL(R)^+) \cong K_1(R) = GL(R)/E(R) \cong GL(R)^{\mathrm{ab}}$, the group of Part I's <em>$K$-Theory of Rings</em>. The plus construction is thus exactly the device that turns $BGL(R)$ into a space whose $\pi_1$ is $K_1$.</p>
+<p><strong>Example.</strong> For $R$ a field $F$, $GL_n(F)$ acts transitively on the nonzero vectors of $F^n$, and the plus construction gives $K_0(F) \cong \mathbb{Z}$, $K_1(F) \cong F^\times$, $K_2(F)$ the <strong>Milnor $K_2$</strong>, and $K_n(F)$ the higher groups computed by the <strong>Matsumoto</strong> and <strong>Milnor</strong> theory in low degrees; for a finite field $\mathbb{F}_q$, Quillen's computation gives $K_{2i}(\mathbb{F}_q) = 0$ and $K_{2i-1}(\mathbb{F}_q) \cong \mathbb{Z}/(q^i-1)$ for $i \geq 1$.</p>
+<h3 id="the-universal-property-and-its-consequences">The Universal Property and its Consequences</h3>
+<p><strong>Theorem (functoriality and the Whitehead group).</strong> The assignment $R \mapsto K_n(R)$ is functorial for ring homomorphisms, and for a ring $R$ the group $K_1(R)$ fits into the exact sequence</p>
+<p>$$
+1 \to E(R) \to GL(R) \to K_1(R) \to 1,
+$$</p>
+<p>so that $K_1(R) \cong GL(R)^{\mathrm{ab}}$; the <strong>Whitehead group</strong> $Wh(\pi)$ of a group $\pi$ is $K_1(\mathbb{Z}[\pi])/(\pm\pi)$, and it is the obstruction group in the $s$-cobordism theorem of surgery theory.</p>
+<p><em>Proof.</em> Functoriality is the functoriality of $BGL(-)$ and the universal property of the plus construction; the exact sequence is the definition of the plus construction's effect on $\pi_1$. $\square$</p>
+<p><strong>Remark.</strong> The plus construction is the precise sense in which algebraic $K$-theory is a homology theory of the general linear group: by the theorem, $H_*(BGL(R)^+) \cong H_*(BGL(R))$ with trivial coefficients, so the $K$-groups are computed by the homology of $BGL(R)$ in the range where the plus construction does not alter it, which is the route to the <strong>Lichtenbaum–Quillen conjectures</strong>.</p>
+<h2 id="the-math125-construction">The $S_\bullet$-Construction</h2>
+<h3 id="exact-categories-and-the-math126-construction">Exact Categories and the $Q$-Construction</h3>
+<p><strong>Definition.</strong> An <strong>exact category</strong> is an additive category $\mathcal{M}$ equipped with a class of diagrams $M' \rightarrowtail M \twoheadrightarrow M''$ called <strong>exact sequences</strong>, closed under isomorphism, containing the split exact sequences, and satisfying the closure properties that make the notions of "kernel" and "cokernel" in the class well behaved. The standard example is the category of finitely generated projective $R$-modules with the split exact sequences, or the category of coherent sheaves on a noetherian scheme with the short exact sequences.</p>
+<p><strong>Definition ($Q$-construction).</strong> For an exact category $\mathcal{M}$ let $Q\mathcal{M}$ be the category with the same objects, in which a morphism $M \to N$ is the isomorphism class of a diagram $M \leftarrowtail M' \twoheadrightarrow N$ in $\mathcal{M}$, composition being defined by pullback along the admissible epimorphisms. The identity of $M$ is represented by the split sequence $M \xleftarrow{\ \cong\ } M \twoheadrightarrow 0$, and the <strong>Quillen $Q$-construction</strong> is the classifying space $BQ\mathcal{M}$, with</p>
+<p>$$
+K_n(\mathcal{M}) = \pi_{n+1}\bigl(BQ\mathcal{M}\bigr) \quad (n \geq 0),
+$$</p>
+<p>with the loop space $\Omega BQ\mathcal{M}$ homotopy equivalent to $BGL(R)^+$ in the case $\mathcal{M} = \mathrm{Proj}(R)$.</p>
+<p><em>Proof sketch.</em> The category $Q\mathcal{M}$ carries a composition law making $BQ\mathcal{M}$ a monoid up to homotopy, and the <strong>group-completion theorem</strong> of Quillen identifies its group completion with $\Omega BQ\mathcal{M}$; the comparison with the plus construction is obtained by exhibiting a homotopy equivalence $\Omega BQ\mathcal{M} \simeq BGL(R)^+$ through the action of $GL(R)$ on a suitable resolution of the objects of $\mathcal{M}$. $\square$</p>
+<p><strong>Remark.</strong> The $Q$-construction is the reason algebraic $K$-theory is computable in principle: it turns the $K$-groups into the homotopy groups of a space constructed from the category, and it makes the theory functorial for exact functors, not only for ring maps. In this form it applies to categories of modules, of coherent sheaves, of vector bundles, and to the stable $\infty$-category of perfect complexes below.</p>
+<h3 id="the-math155-construction">The $S_\bullet$-Construction</h3>
+<p><strong>Definition ($S_\bullet$).</strong> For an exact category $\mathcal{M}$, let $S_n\mathcal{M}$ be the category of <strong>filtered objects</strong> $0 = M_0 \rightarrowtail M_1 \rightarrowtail \cdots \rightarrowtail M_n = M$, with the morphisms that are isomorphisms on the graded pieces; the face maps forget a term and the degeneracies repeat one, and the simplicial category $S_\bullet\mathcal{M}$ has geometric realisation $|S_\bullet\mathcal{M}|$.</p>
+<p><strong>Theorem (Waldhausen).</strong> For a ring $R$ and $\mathcal{M} = \mathrm{Proj}(R)$ there is a natural weak homotopy equivalence</p>
+<p>$$
+\Omega|S_\bullet\mathcal{M}| \simeq K(\mathcal{M}) = \Omega BQ\mathcal{M},
+$$</p>
+<p>so that $K_n(\mathcal{M}) \cong \pi_n(\Omega|S_\bullet\mathcal{M}|) \cong \pi_{n+1}(|S_\bullet\mathcal{M}|)$; equivalently $K_n \cong \pi_n$ of the loop space of the realisation.</p>
+<p><em>Proof sketch.</em> The simplicial object $S_\bullet\mathcal{M}$ and the $Q$-construction are related by a comparison of the two filtrations: $S_n\mathcal{M}$ has a filtration by the length of the flags, and the associated graded can be identified with $BQ\mathcal{M}$ iterated; the resulting weak equivalence $\Omega|S_\bullet| \xrightarrow{\sim}\Omega BQ\mathcal{M}$ is the <strong>additivity theorem</strong>'s consequence, and it is the form in which the theory generalises to Waldhausen categories. $\square$</p>
+<p><strong>Remark.</strong> The $S_\bullet$-construction is the one that generalises: for a <strong>Waldhausen category</strong> (a category with cofibrations and weak equivalences satisfying the gluing axioms) the same construction defines $K$-theory, and this is the form in which algebraic $K$-theory is applied to topological spaces (the $A$-theory of Waldhausen), to spectra, and to the stable homotopy theory of <em>Stable Homotopy Theory</em>.</p>
+<p><strong>Definition ($K$-theory of a stable $\infty$-category).</strong> For a stable $\infty$-category $\mathcal{C}$ with a symmetric monoidal structure, the <strong>algebraic $K$-theory spectrum</strong> $K(\mathcal{C})$ is defined by the $\infty$-categorical version of the $S_\bullet$-construction, or equivalently as $\Omega^\infty$ of the group completion of the underlying $E_\infty$-space of $\mathcal{C}$ with respect to the direct sum:</p>
+<p>$$
+K(\mathcal{C}) = \bigl(\text{group completion of } \coprod_n \operatorname{Map}_{\mathcal{C}}(0, \bigoplus^n X)\bigr),
+$$</p>
+<p>a spectrum with $\pi_0K(\mathcal{C}) \cong K_0(\mathcal{C})$. The distinction between this and the classical construction is that the symmetric monoidal structure provides the multiplicative (ring spectrum) structure on $K(\mathcal{C})$ when $\mathcal{C}$ is symmetric monoidal.</p>
+<h2 id="theorems-and-computations">Theorems and Computations</h2>
+<h3 id="the-fundamental-theorems">The Fundamental Theorems</h3>
+<p><strong>Theorem (additivity).</strong> Let $\mathcal{A} \to \mathcal{B} \to \mathcal{C}$ be a sequence of exact categories in which $\mathcal{A}$ is a full subcategory of $\mathcal{B}$ closed under extensions and $\mathcal{C}$ is the quotient, so that every object of $\mathcal{B}$ sits in an exact sequence with outer terms in $\mathcal{A}$ and $\mathcal{C}$. Then there is a weak homotopy equivalence</p>
+<p>$$
+K(\mathcal{B}) \xrightarrow{\ \simeq\ } K(\mathcal{A}) \times K(\mathcal{C}),
+$$</p>
+<p>and the corresponding long exact sequence of $K$-groups degenerates into split short exact sequences.</p>
+<p><strong>Theorem (devissage).</strong> Let $\mathcal{A}$ be an abelian category and $\mathcal{B}$ a full abelian subcategory closed under subobjects and quotients, such that every object of $\mathcal{A}$ has a finite filtration with quotients in $\mathcal{B}$. Then the inclusion induces a weak homotopy equivalence $K(\mathcal{B}) \to K(\mathcal{A})$.</p>
+<p><strong>Theorem (localisation).</strong> Let $\mathcal{A}$ be an abelian category and $\mathcal{B} \subseteq \mathcal{A}$ a <strong>Serre subcategory</strong> (closed under subobjects, quotients and extensions), with quotient $\mathcal{A}/\mathcal{B}$. Then there is a fibration of spectra</p>
+<p>$$
+K(\mathcal{B}) \to K(\mathcal{A}) \to K(\mathcal{A}/\mathcal{B}),
+$$</p>
+<p>and hence a long exact sequence</p>
+<p>$$
+\cdots \to K_n(\mathcal{B}) \to K_n(\mathcal{A}) \to K_n(\mathcal{A}/\mathcal{B}) \to K_{n-1}(\mathcal{B}) \to \cdots .
+$$</p>
+<p><em>Proof sketch.</em> All three theorems are proved from the $S_\bullet$-construction and the additivity theorem: the localisation theorem uses the fibration sequence of Waldhausen categories associated to the quotient, and the long exact sequence is the homotopy long exact sequence of the fibration of spectra. $\square$</p>
+<p><strong>Remark.</strong> These three theorems are the working tools of the subject. Localisation gives the $K$-theory of a scheme from that of its closed subschemes and open complements; devissage gives the $K$-theory of a noetherian abelian category from that of the semisimple pieces in a filtration; additivity is the mechanism that makes $K$-theory a homology theory of categories rather than a functor with no exactness.</p>
+<h3 id="low-degrees-and-the-relation-to-topological-math216-theory">Low Degrees and the Relation to Topological $K$-Theory</h3>
+<p><strong>Example ($K_0$, $K_1$, $K_2$).</strong> $K_0(R)$ is the Grothendieck group of finitely generated projective modules, as in <em>$K$-Theory of Rings</em>; $K_1(R) \cong GL(R)^{\mathrm{ab}}$; and $K_2(R)$ is the centre of the universal central extension of $E(R)$, the <strong>Steinberg group</strong> quotient, with $K_2(R) \cong H_2(E(R);\mathbb{Z})$ by the Hopf formula. For a field these recover the Milnor groups, and for a local ring $K_2$ is generated by the symbols $\{a,b\}$ with the Steinberg relations.</p>
+<p><strong>Example (finite fields).</strong> For $R = \mathbb{F}_q$, Quillen's computation by the <strong>Quillen spectral sequence</strong> (the Atiyah–Hirzebruch sequence applied to the classifying space of the general linear group of a finite field, using the action on the building) gives</p>
+<p>$$
+K_0(\mathbb{F}_q) \cong \mathbb{Z}, \qquad K_{2i-1}(\mathbb{F}_q) \cong \mathbb{Z}/(q^i - 1), \qquad K_{2i}(\mathbb{F}_q) = 0 \quad (i \geq 1).
+$$</p>
+<p>The first few values, $K_0 = \mathbb{Z}$, $K_1 \cong \mathbb{Z}/(q-1)$, $K_2 = 0$, $K_3 \cong \mathbb{Z}/(q^2-1)$, show that the groups are finite of computable orders.</p>
+<p><strong>Example ($R = \mathbb{Z}$).</strong> $K_0(\mathbb{Z}) \cong \mathbb{Z}$, $K_1(\mathbb{Z}) \cong \mathbb{Z}/2$, $K_2(\mathbb{Z}) \cong \mathbb{Z}/2$, and $K_3(\mathbb{Z}) \cong \mathbb{Z}/48$. The higher groups are the subject of the <strong>Quillen–Lichtenbaum conjectures</strong>, which relate $K_n(\mathbb{Z})$ to the étale cohomology of $\mathbb{Z}$ up to finite groups of small order in the range $n \geq 2$. The ranks are known by Borel's computation of the cohomology of arithmetic groups:</p>
+<p>$$
+\operatorname{rk} K_n(\mathbb{Z}) = \begin{cases} 1, & n > 1,\ n \equiv 1 \bmod 4, \\ 0, & \text{otherwise}, \end{cases}
+$$</p>
+<p>so that $K_1$, $K_2$, $K_3$, $K_4$ are finite — $K_1 \cong \mathbb{Z}/2$, $K_2 \cong \mathbb{Z}/2$, $K_3 \cong \mathbb{Z}/48$, $K_4 = 0$ — and the first groups of positive rank are $K_5, K_9, K_{13}, \ldots$, each free of rank one. The torsion is where the Borel regulator and the image of the $J$-homomorphism of <em>Stable Homotopy Theory</em> interfere.</p>
+<p><strong>Theorem (the comparison map and the Atiyah–Hirzebruch sequence).</strong> For a ring $R$ that is regular and noetherian there is a natural map, the <strong>Chern character</strong>,</p>
+<p>$$
+\operatorname{ch} : K_n(R)\otimes\mathbb{Q} \longrightarrow \bigoplus_{i\geq 0} H^{n-2i}\bigl(\mathrm{Spec}\,R;\mathbb{Q}\bigr),
+$$</p>
+<p>obtained from the $\lambda$-operations on the $K$-theory and the Chern classes of a projective module, and it is an isomorphism after tensoring with $\mathbb{Q}$ for $R$ regular. The <strong>Atiyah–Hirzebruch spectral sequence</strong> of <em>Stable Homotopy Theory</em>,</p>
+<p>$$
+E^2_{p,q} = H_p(X;K_q(R)) \Longrightarrow K_{p+q}(R),
+$$</p>
+<p>organises the computation. In particular for $R = \mathbb{C}$ the comparison with topological $K$-theory is detected by the Chern character: $K_0(\mathbb{C}) \cong \mathbb{Z}$ and $K_1(\mathbb{C}) \cong \mathbb{C}^\times$, and rationally $K_n(\mathbb{C})\otimes\mathbb{Q}$ is $\mathbb{Q}$ for even $n$ and $0$ for odd $n$, matching the topological $K$-theory of a point of <em>Stable Homotopy Theory</em>; the higher algebraic $K$-groups of $\mathbb{C}$ are divisible by the theorem of Suslin, so the comparison is rational and not integral, and this is the precise sense in which algebraic $K$-theory of $\mathbb{C}$ agrees with topological $K$-theory after inverting the primes.</p>
+<p><strong>Remark (the four $K$-theories, again).</strong> The comparison with topological $K$-theory is a theorem, not an identification: algebraic $K$-theory of a ring is built from algebraic modules and is not a generalised cohomology theory of a space with a suspension axiom; topological $K$-theory is a spectrum-valued theory of spaces; the $K$-theory of operator algebras extends the topological one from spaces to $C^*$-algebras, agreeing with it on the commutative $C^*$-algebra $C(X)$ by Gelfand duality, where $K_0$ counts projections and $K_1$ counts unitaries, with the same Bott periodicity but with the algebra structure carried along; and the $K$-theory of rings of Part I is the degree-zero and degree-one part of the present theory with the module-theoretic proofs.</p>
+<h2 id="the-math286-theory-spectrum-and-waldhausens-generalisation">The $K$-Theory Spectrum and Waldhausen's Generalisation</h2>
+<h3 id="the-math287-theory-spectrum">The $K$-Theory Spectrum</h3>
+<p><strong>Definition.</strong> The $S_\bullet$-construction is a simplicial object in exact categories, and its realisation is the based space $|S_\bullet\mathcal{C}|$, whose loop space is the zeroth space of the $K$-theory <strong>spectrum</strong> $K(\mathcal{C})$: the spectrum has $n$-th space $\Omega^{n-1}|S_\bullet\mathcal{C}|$ for $n\geq1$, its homotopy groups are the groups $K_n(\mathcal{C})$, and it is connected, so $K_0$ appears as $\pi_0$ of the first space and the $S_\bullet$-construction recovers the plus construction for the exact category of finitely generated projective modules over a ring.</p>
+<p><strong>Theorem.</strong> Let $R$ be a ring.</p>
+<ol>
+<li>$K(R)$ is a commutative ring spectrum: the tensor product of projective modules, together with the $\lambda$-operations, defines a multiplication $K(R)\wedge K(R)\to K(R)$ which is associative, commutative and unital up to coherent homotopy, so that $K_*(R) = \pi_*K(R)$ is a graded commutative ring and $K_0(R)$ carries the ring structure of the Grothendieck ring of Part I's <em>$K$-Theory of Rings</em>.</li>
+<li>For rings $R$ and $S$ there is a product $K(R)\wedge K(S)\to K(R\otimes_{\mathbb{Z}}S)$, the <strong>external product</strong>, and the resulting multiplicative structure on the $K$-groups is the one used in the comparison theorems.</li>
+<li>The $K$-theory of a regular noetherian ring is <strong>homotopy invariant</strong>: $K_n(R[t]) \cong K_n(R)$ for all $n$, and more generally $K_n(R[t_1,\ldots,t_m]) \cong K_n(R)$; for a general ring the fundamental theorem gives $K_n(R[t,t^{-1}])\cong K_n(R)\oplus K_{n-1}(R)$ for $n\geq1$, with the two summands coming from the localisation sequence of the affine line at the origin and infinity.</li>
+</ol>
+<p><em>Proof.</em> (1) the tensor product and the $\lambda$-operations are defined on the exact category of projective modules, they are compatible with the $S_\bullet$-construction, and the coherence is the standard one for the multiplicative structure of $K$-theory; the identification of $\pi_0$ is the Grothendieck construction of Part I's <em>$K$-Theory of Rings</em>. (2) is the tensor product of modules over the two rings. (3) is Quillen's resolution theorem applied to the comparison of the categories of projective modules over $R$ and over $R[t]$, the polynomial ring being flat and the theorem giving the equivalence of the $K$-theory spectra; the fundamental theorem is the localisation sequence for the pair $(\mathbb{A}^1,\mathbb{G}_m)$ over $R$. $\square$</p>
+<h3 id="waldhausens-generalisation">Waldhausen's Generalisation</h3>
+<p><strong>Definition.</strong> A <strong>Waldhausen category</strong> is a category with a class of <strong>cofibrations</strong>, a class of <strong>weak equivalences</strong> containing the isomorphisms and compatible with the cofibrations, and a zero object, satisfying the axioms that make the quotient of a cofibration by a cofibration a cofibration and the pushout of a weak equivalence along a cofibration a weak equivalence. The $S_\bullet$-construction applies verbatim to a Waldhausen category with the cofibrations in place of the admissible monomorphisms, and its homotopy groups are the <strong>Waldhausen $K$-groups</strong>.</p>
+<p><strong>Theorem (the algebraic $K$-theory of spaces).</strong> Let $X$ be a based finite CW complex and let $\mathcal{R}(X)$ be the Waldhausen category of retractive spaces over $X$, with the cofibrations the maps with the homotopy extension property and the weak equivalences the homotopy equivalences. Then the Waldhausen $K$-theory of $\mathcal{R}(X)$ is the <strong>$A$-theory</strong> $A(X)$, and:</p>
+<ol>
+<li>$A(\ast)$ is equivalent to the sphere spectrum, so $\pi_nA(\ast)\cong\pi_n^s(\mathbb{S})$, the stable homotopy groups of spheres of <em>Stable Homotopy Theory</em>;</li>
+<li>for a ring $R$ there is a natural map $K(R)\to A(BGL(R)^+)$, Waldhausen's <strong>linear approximation</strong>, which is an equivalence in a range of degrees, so that the algebraic $K$-theory of a ring is the linear part of the $K$-theory of its classifying space;</li>
+<li>the <strong>Whitehead theorem</strong> of Waldhausen identifies the diffeomorphism groups of high-dimensional manifolds with the $K$-theory of spaces up to a codimension-three range, which is the bridge from the present article to the surgery theory of <em>Cobordism and Surgery Theory</em>.</li>
+</ol>
+<p><em>Proof.</em> (1) is the theorem of Barratt, Priddy and Quillen in its algebraic form, the group completion of the monoid of spheres; (2) is the comparison of the linear category of free modules with the category of retractive spaces over $BGL(R)^+$, which is a theorem of Waldhausen quoted as standard; (3) is Waldhausen's theorem on the relation of $A(X)$ to the pseudoisotopy space and hence to the diffeomorphism groups by the $h$- and $s$-cobordism theorems, stated in <em>Cobordism and Surgery Theory</em>. $\square$</p>
+<p><strong>Remark (the additive structure of the arithmetic computations).</strong> The computations quoted above acquire their shape from the general theory. For a finite field the Quillen spectral sequence degenerates in the fashion described, and $K_{2i-1}(\mathbb{F}_q)$ is cyclic of order $q^i-1$; for a number field the Borel computation determines the ranks through the values of the Riemann zeta function at negative integers, the regulator being the volume of the lattice of $K$-classes in the cohomology of the arithmetic group; and the torsion of $K_*(\mathbb{Z})$, such as $K_3(\mathbb{Z})\cong\mathbb{Z}/48$, is the arithmetic content of the torsion conjectures and of the $J$-homomorphism of <em>Stable Homotopy Theory</em>. The general theorems above — multiplicativity, homotopy invariance, the fundamental theorem — supply the structural frame, and the arithmetic supplies the deviations from it.</p>
+<h2 id="summary">Summary</h2>
+<p>The plus construction attaches cells to a based CW complex to kill a normal subgroup of its fundamental group while preserving homology, and it is universal and essentially unique. Applying it to $BGL(R)$ with respect to the elementary subgroup $E(R)$ defines the higher algebraic $K$-groups $K_n(R) = \pi_n(BGL(R)^+)$ for $n \geq 1$, with $\pi_1(BGL(R)^+) \cong K_1(R)$ by the Whitehead lemma. The $Q$-construction and the equivalent $S_\bullet$-construction realise the same groups as the homotopy of a space built from an exact category; the $S_\bullet$ form generalises to Waldhausen categories and to the algebraic $K$-theory spectrum of a symmetric monoidal stable $\infty$-category, where the multiplicative structure is available.</p>
+<p>The theory is governed by additivity, devissage and localisation, the last giving a fibration of $K$-theory spectra and hence a long exact sequence for a Serre subcategory and its quotient. The low groups recover $K_0$ and $K_1$ of the ring-theoretic theory, $K_2$ is the second homology of the elementary group, and the computations for finite fields and for $\mathbb{Z}$ give finite values in low degrees with arithmetic meaning. The comparison with topological $K$-theory is by the Chern character and by the Atiyah–Hirzebruch spectral sequence, and it is an isomorphism only after inverting the primes and only in a range; the four $K$-theories of the corpus — of rings, higher algebraic, topological, and of operator algebras — are related by comparison maps and are not the same theory. The $K$-groups are the homotopy groups of a commutative ring spectrum, whose multiplication comes from the tensor product and whose external form is used in the comparison theorems, and Waldhausen's generalisation applies the construction to categories with cofibrations and weak equivalences, producing the $K$-theory of spaces, whose value at a point is the sphere spectrum and which is the input to the surgery theory of high-dimensional manifolds.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X^+$, $q : X \to X^+$</td>
+<td>Plus construction killing $N \leq \pi_1(X)$</td>
+</tr>
+<tr>
+<td>$GL(R) = \operatorname{colim}_n GL_n(R)$</td>
+<td>Stable general linear group</td>
+</tr>
+<tr>
+<td>$E(R) = [GL(R),GL(R)]$</td>
+<td>Elementary subgroup; killed by the plus construction</td>
+</tr>
+<tr>
+<td>$K_n(R) = \pi_n(BGL(R)^+)$</td>
+<td>Higher algebraic $K$-groups, $n \geq 1$</td>
+</tr>
+<tr>
+<td>$K_0(R)$</td>
+<td>Grothendieck group of finitely generated projective $R$-modules</td>
+</tr>
+<tr>
+<td>$Wh(\pi)$</td>
+<td>Whitehead group $K_1(\mathbb{Z}[\pi])/(\pm\pi)$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}$, $\mathrm{Proj}(R)$</td>
+<td>Exact category; finitely generated projective $R$-modules</td>
+</tr>
+<tr>
+<td>$Q\mathcal{M}$, $BQ\mathcal{M}$</td>
+<td>$Q$-construction and its classifying space</td>
+</tr>
+<tr>
+<td>$S_\bullet\mathcal{M}$, $|S_\bullet\mathcal{M}|$</td>
+<td>$S_\bullet$-construction and its realisation</td>
+</tr>
+<tr>
+<td>$K(\mathcal{C})$</td>
+<td>Algebraic $K$-theory spectrum; $\pi_nK(\mathcal{C}) = K_n(\mathcal{C})$</td>
+</tr>
+<tr>
+<td>Waldhausen category</td>
+<td>Category with cofibrations and weak equivalences, for which $S_\bullet$ applies</td>
+</tr>
+<tr>
+<td>$A(X)$</td>
+<td>Waldhausen's algebraic $K$-theory of a space $X$; $A(\ast)$ is the sphere spectrum</td>
+</tr>
+<tr>
+<td>$R[t]$, $R[t,t^{-1}]$</td>
+<td>Polynomial and Laurent extensions; homotopy invariance and the fundamental theorem</td>
+</tr>
+<tr>
+<td>Additivity, devissage, localisation</td>
+<td>The three structural theorems of the theory</td>
+</tr>
+<tr>
+<td>$K(\mathcal{A}/\mathcal{B})$</td>
+<td>Quotient of an abelian category by a Serre subcategory</td>
+</tr>
+<tr>
+<td>Chern character</td>
+<td>Comparison $K_n(R)\otimes\mathbb{Q} \to$ (co)homology of $\mathrm{Spec}\,R$</td>
+</tr>
+<tr>
+<td>$KU$, $KO$</td>
+<td>Topological $K$-theory spectra (other agent's article)</td>
+</tr>
+<tr>
+<td>$K_*(A)$, $A$ a $C^*$-algebra</td>
+<td>Operator-algebraic $K$-theory (other agent's article)</td>
+</tr>
+<tr>
+<td>Atiyah–Hirzebruch SS</td>
+<td>$E^2_{p,q} = H_p(X;K_q(R)) \Rightarrow K_{p+q}(R)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Daniel G. Quillen, <em>Higher Algebraic K-Theory I</em> (Springer Lecture Notes in Mathematics 341, 1973), for the plus construction, the $Q$-construction and the fundamental theorems.</li>
+<li>Friedhelm Waldhausen, <em>Algebraic K-Theory of Generalized Free Products</em> (Annals of Mathematics 108, 1978), for the $S_\bullet$-construction and Waldhausen categories.</li>
+<li>Jonathan Rosenberg, <em>Algebraic K-Theory and Its Applications</em> (Springer, 1994), for a systematic account with the computations for finite fields and for $\mathbb{Z}$.</li>
+<li>Charles A. Weibel, <em>The K-Book: An Introduction to Algebraic K-Theory</em> (American Mathematical Society, 2013), for the exact-category approach, localisation and devissage.</li>
+<li>Daniel R. Grayson, <em>Higher Algebraic K-Theory II</em> (Springer Lecture Notes in Mathematics 551, 1976), for the computations and the localisation theorem.</li>
+<li>Eric M. Friedlander and Daniel R. Grayson, <em>Handbook of K-Theory</em> (Springer, 2005), for the comparison with topological $K$-theory and the Quillen–Lichtenbaum conjectures.</li>
+<li>Clark Barwick, <em>On the Algebraic K-Theory of Higher Categories</em> (Journal of Topology 9, 2016), for the $\infty$-categorical construction and its multiplicative structure.</li>
+<li>Armand Borel, <em>Stable Real Cohomology of Arithmetic Groups</em> (Annales Scientifiques de l'École Normale Supérieure 7, 1974), for the ranks of the $K$-groups of rings of integers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

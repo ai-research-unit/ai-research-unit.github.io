@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Center of the Biquaternion Algebra as the Classical Sector — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-center-of-the-biquaternion-algebra-as-the-classical-sector"><strong>The Center of the Biquaternion Algebra as the Classical Sector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is non-commutative, and the failure of commutativity is what makes it a quantum algebra. It is therefore natural to ask which part of it <strong>does</strong> commute, and the answer is the centre $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})$. The thesis of this article is that the centre is the framework's canonical classical sector: it is the largest commuting subalgebra that is fixed by the whole symmetry group, the part of the algebra whose Hermitian elements are the real multiples of the unit and on which the Hermitian conjugation reduces to complex conjugation, and the home of the $c$-number parameters that a quantum theory needs.</p>
+<p>The centre is small. Writing $\tilde{X}=x_0e_0+x_1e_1+x_2e_2+x_3e_3$, one finds
+$$
+Z(\mathbb{B})=\bigl\{\tilde{X}:\tilde{X}\tilde{Y}=\tilde{Y}\tilde{X}\ \ \forall\tilde{Y}\bigr\}
+=\bigl\{x_0e_0:\ x_0\in\mathbb{C}\bigr\}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C},
+$$
+a <strong>two-real-dimensional</strong> commutative subalgebra, with Hermitian part
+$$
+Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_0
+$$
+of real dimension one. So the classical sector of the algebra is one-dimensional in the operator sense: the only Hermitian central element is a real multiple of the identity. Three consequences follow, and together they are the content of the article.</p>
+<p>First, <strong>the centre is exactly the set of observables invariant under every symmetry.</strong> The adjoint action $\tilde{X}\mapsto\tilde{U}\tilde{X}\tilde{U}^\dagger$ of the unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.</p>
+<p>Second, <strong>the centre is the classical sector in the literal sense of $c$-numbers.</strong> Central elements are the ones that multiply every element on the same side, so they are the scalars with respect to which all algebraic operations are linear. The framework's external parameters — $\hbar$, the speed $c$, a mass $m$, a coupling constant — enter the equations as real multiples of $e_0$, hence as central elements, and the chirality-off-diagonal mass of the linear extension enters as the central coefficient $m e_0$. The centre is where the theory's classical data live.</p>
+<p>Third, and this is the honest boundary of the classical reading, <strong>the centre is trivial as an operator algebra.</strong> $\mathbb{B}$ is a central simple algebra over $\mathbb{C}$ — a factor — so it has no non-trivial two-sided ideals and no non-trivial central idempotents. Consequently the framework possesses no intrinsic superselection structure, no central projections to label classical branches, and no canonical decomposition into superselection sectors. Genuine classical structure in this framework arises from <em>state-dependent</em> maximal commutative subalgebras, not from the centre; the centre is the canonical but minimal classical sector. This is a limitation of the algebra, and it belongs to the algebra's catalogue of limitations as much as to its successes.</p>
+<p>The article proceeds: the centre is defined and computed; five equivalent characterizations are given; its role as the classical sector is developed, including the superselection question; the state-dependent commuting slices are described and their non-canonicity is contrasted with the centre's canonicity; and the limitations are stated. The companion articles <em>The Quantum–Classical Divide in the Biquaternion Framework</em> and <em>Fundamental and Derived Elements in the Biquaternion Framework</em> are the companions for the physical and the structural readings respectively, and the present article supplies the algebraic identification on which both rest.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$, $i^2=-1$. Conjugations: $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), $\dagger=\bar{\cdot}\circ{}^{*}$ (Hermitian), $\flat=-\dagger$. The Hermitian and anti-Hermitian subspaces are
+$$
+\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
+\qquad
+\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\},
+\qquad
+\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
+$$
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{X},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{X}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.</p>
+<h2 id="the-center-definition-and-computation">The Center: Definition and Computation</h2>
+<p><strong>Definition.</strong> The centre of $\mathbb{B}$ is the set of elements that commute with every element,
+$$
+Z(\mathbb{B})=\bigl\{\tilde{X}\in\mathbb{B}:\ \tilde{X}\tilde{Y}=\tilde{Y}\tilde{X}\ \text{for all }\tilde{Y}\in\mathbb{B}\bigr\}.
+$$
+Equivalently, since $\mathbb{B}$ is generated as a real algebra by $e_0,e_1,e_2,e_3,i$, an element is central if and only if it commutes with $e_1,e_2,e_3$ and with $i$; commutation with $i$ is automatic because $i$ is central, and commutation with $e_0$ is automatic because $e_0$ is the unit.</p>
+<p><strong>Computation.</strong> Write $\tilde{X}=x_0e_0+\mathbf{x}$ with $\mathbf{x}=x_1e_1+x_2e_2+x_3e_3$ the pure-quaternion part. For $k=1,2,3$,
+$$
+[\tilde{X},e_k]=[\mathbf{x},e_k]=2\,\mathbf{x}\times e_k ,
+$$
+where the cross product is that of $\mathbb{R}^3$ under the identification $e_j\leftrightarrow$ the $j$-th basis vector. If $\tilde{X}$ is central then $[\tilde{X},e_k]=0$ for all $k$, so $\mathbf{x}\times e_k=0$ for $k=1,2,3$. Since $e_1,e_2,e_3$ span $\mathbb{R}^3$, this forces $\mathbf{x}=0$. Hence a central element is a complex multiple of the unit,
+$$
+\boxed{\ Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\bigl\{x_0e_0:\ x_0\in\mathbb{C}\bigr\}=\mathbb{C}e_0\cong\mathbb{C}.\ }
+$$
+Conversely every $x_0e_0$ is central because $e_0$ is the unit and $x_0$ is a complex number, and complex numbers commute with every element. This proves the displayed identification.</p>
+<p><strong>Real dimension and the two parts.</strong> As a real vector space the centre is
+$$
+Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_0,ie_0\},
+$$
+of real dimension two. Its Hermitian part and its anti-Hermitian part are
+$$
+Z(\mathbb{B})\cap\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0\}=\mathbb{R}e_0,
+\qquad
+Z(\mathbb{B})\cap\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0\}=\mathbb{R}\,ie_0 ,
+$$
+of real dimensions one each, and $Z(\mathbb{B})$ is their direct sum. The Hermitian part is the real line of Hermitian central observables; the anti-Hermitian part carries the complex structure. The split reflects the decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ restricted to the centre: it is the same decomposition, intersected with the scalars.</p>
+<p><strong>The centre of the matrix model.</strong> Under $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, which $\mathbb{C}$-linearity extends by $\Phi(i)=iI_2$, the algebra is represented by all complex $2\times2$ matrices, $\Phi(\mathbb{B})=M_2(\mathbb{C})$, and the centre corresponds to the scalar matrices,
+$$
+\Phi\bigl(Z(\mathbb{B})\bigr)=\mathbb{C}\,I_2 .
+$$
+The identification $Z(M_2(\mathbb{C}))=\mathbb{C}I_2$ is the standard statement that the matrix algebra is central over $\mathbb{C}$, and the computation above is its biquaternion transcription.</p>
+<p><strong>The two forms on the centre.</strong> The Hermitian form restricts to
+$$
+\langle\lambda e_0,\mu e_0\rangle_\dagger=\mathrm{Tr}\bigl((\lambda e_0)^\dagger(\mu e_0)\bigr)=2\,\lambda^{*}\mu ,
+$$
+positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the trace normalization $\mathrm{Tr}(e_0)=2$. The norm form restricts to the <strong>complex square</strong>,
+$$
+N(\lambda e_0)=\lambda^2e_0 ,
+$$
+which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $N(ae_0)=a^2e_0\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $N(ibe_0)=-b^2e_0\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the norm form indefinite (on the complexified directions). The verification of $N(\lambda e_0)=\lambda^2e_0$ for representative $\lambda$ is elementary and was checked numerically.</p>
+<p><strong>Commutativity and associativity.</strong> The centre is commutative, $\tilde{X}\tilde{Y}=\tilde{Y}\tilde{X}$, and associative, being a subalgebra; its multiplication is complex multiplication,
+$$
+(\lambda e_0)(\mu e_0)=(\lambda\mu)e_0 ,
+$$
+and its unit is $e_0$. As a real algebra, $Z(\mathbb{B})\cong\mathbb{C}$; as a complex algebra, $Z(\mathbb{B})\cong\mathbb{C}$. It is the largest subalgebra of $\mathbb{B}$ that is commutative <em>and</em> central at once.</p>
+<h2 id="five-characterizations-of-the-center">Five Characterizations of the Center</h2>
+<p>The centre can be described from five directions, and the equivalence of the descriptions is what makes it canonical rather than conventional.</p>
+<p><strong>1. The commuting part.</strong> This is the definition: $\tilde{X}\in Z(\mathbb{B})$ if and only if $\tilde{X}$ commutes with every element. In the language of observables, the central Hermitian elements are exactly the observables compatible with every observable; they form the maximally commutative and symmetry-blind part of the algebra.</p>
+<p><strong>2. The fixed points of the adjoint action.</strong> Let $\mathrm{Ad}_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^{-1}$; for $\tilde{U}$ unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
+$$
+\bigl\{\tilde{X}:\ \mathrm{Ad}_{\tilde{U}}\tilde{X}=\tilde{X}\ \ \forall\tilde{U}\in U(2)\bigr\}=Z(\mathbb{B}).
+$$
+This is the operational characterization of the classical sector: it is the set of algebraic objects that no symmetry of the framework can move. Since the adjoint action descends to the rotations of the Bloch sphere, the rotation-invariant Hermitian observables are the real multiples of the identity, and there is exactly a one-parameter family of them.</p>
+<p><strong>3. Vanishing of the inner derivations.</strong> The inner derivation attached to $\tilde{X}$ is $\mathrm{ad}_{\tilde{X}}(\tilde{Y})=[\tilde{X},\tilde{Y}]$. The centre is the common kernel,
+$$
+Z(\mathbb{B})=\bigcap_{\tilde{X}\in\mathbb{B}}\ker\bigl(\mathrm{ad}_{\tilde{X}}\bigr),
+$$
+and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the unitary group here is $\mathfrak{u}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathfrak{u}(2)$ on which the adjoint representation is trivial, $\mathfrak{z}(\mathfrak{u}(2))=\mathbb{R}\,ie_0$.</p>
+<p><strong>4. Factorization of the trace pairing.</strong> An element $\tilde{X}$ is central if and only if its Hilbert–Schmidt correlations factorize,
+$$
+\tilde{X}\in Z(\mathbb{B})
+\iff
+\mathrm{Tr}\bigl(\tilde{X}\tilde{Y}\bigr)=\tfrac12\,\mathrm{Tr}(\tilde{X})\,\mathrm{Tr}(\tilde{Y})
+\quad\text{for all }\tilde{Y}\in\mathbb{B}.
+$$
+The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{X}-\tfrac12\mathrm{Tr}(\tilde{X})e_0)\tilde{Y}\bigr)=0$ for all $\tilde{Y}$, and the trace pairing is non-degenerate, so the bracket vanishes. The physical reading is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.</p>
+<p><strong>5. The matrix-model characterization.</strong> Under the representation, $Z(\mathbb{B})$ corresponds to the scalar matrices $\mathbb{C}I_2$; equivalently, these are the elements on which the left regular representation and the right regular representation coincide. This is the form in which the statement is standard: a full matrix algebra over a field has the field itself as its centre.</p>
+<p>The five characterizations — commuting, symmetry-fixed, derivation-free, correlation-free, representation-theoretic — agree because each is a facet of the same subalgebra. That agreement is what justifies calling the centre <em>the</em> classical sector rather than <em>a</em> classical sector: it is picked out by the algebra's own operations, by its automorphism group, by its trace form, and by its representation, with no further input.</p>
+<h2 id="central-simple-structure-and-the-absence-of-superselection">Central Simple Structure and the Absence of Superselection</h2>
+<p>The centre's smallness has a structural consequence that limits what classical structure the framework can carry, and it should be stated precisely.</p>
+<p><strong>$\mathbb{B}$ is a factor.</strong> Since the matrix model is an isomorphism $\Phi(\mathbb{B})=M_2(\mathbb{C})$ of complex algebras, $\mathbb{B}$ is a <strong>central simple algebra</strong> over its centre: it has no non-trivial two-sided ideals, and its centre is exactly the scalars. Every non-zero $\tilde{X}\in\mathbb{B}$ generates the whole algebra as a two-sided ideal,
+$$
+\mathbb{B}\tilde{X}\mathbb{B}=\mathbb{B}\qquad(\tilde{X}\neq0),
+$$
+a fact visible in the matrix model (a single non-zero matrix and its two-sided multiples span all matrices).</p>
+<p><strong>No central idempotents.</strong> A central idempotent is a $\tilde{C}\in Z(\mathbb{B})$ with $\tilde{C}^2=\tilde{C}$. Writing $\tilde{C}=c\,e_0$ and using $\tilde{C}^2=c^2e_0$, the equation is $c^2=c$, whose only solutions are $c=0,1$. Hence
+$$
+\bigl\{\text{central idempotents of }\mathbb{B}\bigr\}=\{0,\ e_0\}.
+$$
+The check was performed numerically on the central candidates and confirms that $0$ and $e_0$ are the only ones.</p>
+<p><strong>The superselection consequence.</strong> In the standard algebraic theory of superselection, a superselection sector is a central projection of the observable algebra, and a non-trivial centre is what permits a theory to be written as a direct sum of sectors with no interference between them. Because $\mathbb{B}$ is a factor, it admits no non-trivial central projection, so <strong>the framework has no intrinsic superselection structure</strong>. There is no classical label internal to $\mathbb{B}$ that could split the theory into non-interfering branches.</p>
+<p><strong>What the sector decomposition is not.</strong> The Hermitian/anti-Hermitian split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ must not be mistaken for a superselection structure. It is the eigenspace decomposition of the involution $\dagger$; it is not a decomposition by central projections, and the subspace $\mathbb{M}_+$ is not a subalgebra — the product of two Hermitian elements is Hermitian only if they commute:
+$$
+\tilde{H},\tilde{K}\in\mathbb{M}_+
+\ \Longrightarrow\
+(\tilde{H}\tilde{K})^\dagger=\tilde{K}\tilde{H},
+$$
+which equals $\tilde{H}\tilde{K}$ if and only if $[\tilde{H},\tilde{K}]=0$. The sectors are a grading of the vector space, not a splitting of the algebra, and they are mixed by multiplication. They are the material and informational subspaces of the foundational articles, and their role is kinematic; they do not constitute superselection sectors.</p>
+<p>The absence of central projections is therefore a genuine algebraic limitation, and it is the structural reason that the framework's classical sector is minimal. A reader who expects the two sectors, or the two spin components, to furnish superselection labels will not find them in the centre; the centre contains only the scalars.</p>
+<h2 id="the-center-as-the-classical-sector">The Center as the Classical Sector</h2>
+<p>The limitations of the preceding section are structural, and they do not diminish the sense in which the centre <strong>is</strong> the classical sector. That sense is made precise by four properties of central elements, each of which is a classical marker.</p>
+<p><strong>1. Central observables have no dispersion and no state dependence.</strong> Let $\tilde{C}=\lambda e_0$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{\rho}$ be any state. The trace formula gives
+$$
+\langle\tilde{C}\rangle_{\tilde{\rho}}=\mathrm{Tr}\bigl(\tilde{\rho}\lambda e_0\bigr)=\lambda\,\mathrm{Tr}\bigl(\tilde{\rho}\bigr)=\lambda ,
+$$
+independently of the state. The variance vanishes in every state,
+$$
+\bigl\langle(\tilde{C}-\lambda e_0)^2\bigr\rangle_{\tilde{\rho}}
+=\mathrm{Tr}\Bigl(\tilde{\rho}\,(\tilde{C}-\lambda e_0)^2\Bigr)=0 .
+$$
+A quantity whose expectation value is the same in every state and whose uncertainty is zero is not a quantum observable in any operational sense; it is a <strong>parameter</strong>. The centre is exactly the set of such quantities, and this is the sharpest algebraic expression of the statement that its elements are classical.</p>
+<p><strong>2. Central elements are conserved under every dynamics.</strong> For any Hermitian generator $\tilde{H}\in\mathbb{M}_+$, the Heisenberg evolution of a central element is trivial,
+$$
+\frac{d}{dt}\tilde{C}=\frac{1}{i\hbar}\bigl[\tilde{H},\tilde{C}\bigr]=0 ,
+$$
+because the commutator vanishes identically. A central element is therefore a constant of the motion for <strong>every</strong> Hamiltonian, which is the algebraic counterpart of a classical conserved parameter: it does not evolve, cannot be prepared, and carries no dynamical information. The comparison with the Poisson bracket is standard: the commutator is the quantum bracket and $(1/i\hbar)[\cdot,\cdot]$ reduces to the Poisson bracket in the classical limit; a quantity whose bracket with everything vanishes has identically zero Poisson bracket and is a classical constant.</p>
+<p><strong>3. The centre is where the framework's parameters live.</strong> The constants that a quantum theory must be given rather than derived — $\hbar$, the speed $c$, masses, couplings — enter its equations as real multiples of the unit, hence as central elements. The chirality-off-diagonal mass of the linear extension enters as the central coefficient $m e_0$; a scalar potential term is $V(\phi)e_0$, central; a constant external field that is not dynamical is a fixed central element. The algebraic reason is characterization 1: a parameter must be representable in every state with the same value, and only central elements have that property. The companion article <em>Conventions in the Biquaternion Universe</em> records the mass term and the d'Alembertian term by term, which is where this is visible in the equations.</p>
+<p><strong>4. The centre is a commutative algebra of the simplest kind.</strong> As a real algebra $Z(\mathbb{B})\cong\mathbb{C}$, and as a commutative $C^{*}$-algebra it is the algebra of continuous functions on a <strong>single point</strong>,
+$$
+Z(\mathbb{B})\cong C(\{\ast\}) ,
+$$
+by the Gelfand duality that identifies a commutative unital $C^{*}$-algebra with the algebra of functions on its character space. The character space of the centre is one point, so the framework's canonical classical sector describes a classical system with no degrees of freedom: a single classical parameter, the overall complex scale (equivalently, a real scale and a global phase). This is the precise formulation of the statement that the strict classical sector is minimal: it is non-empty, it is canonical, and it is one-dimensional.</p>
+<p><strong>The division of labour.</strong> Putting the four properties together, the centre plays the classical role in the following exact sense: it is the algebra of quantities that are state-independent, dispersion-free, dynamically frozen, and compatible with every observable, and it is the home of the theory's classical parameters. It is <em>not</em> the algebra of a classical phase space, and it is not a set of superselection labels; those stronger classical structures do not exist in this algebra, as the previous section showed. The positive and negative statements are complementary, and both are needed for a correct reading of the framework.</p>
+<h2 id="commuting-sectors-and-state-dependent-classical-slices">Commuting Sectors and State-Dependent Classical Slices</h2>
+<p>If the centre is too small to carry the classical limit, the framework's classical structure must arise somewhere else. The candidates are the maximal commutative subalgebras, and their essential feature is that they are <strong>not canonical</strong>.</p>
+<p><strong>Maximal commutative subalgebras.</strong> A subalgebra $\mathbb{A}\subset\mathbb{B}$ is maximal commutative if it is commutative and is not properly contained in a larger commutative subalgebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a factor, every maximal commutative subalgebra is a MASA of a full matrix algebra, and each is isomorphic to $\mathbb{C}^2$ as a complex algebra — concretely, the diagonal matrices with respect to some orthonormal basis,
+$$
+\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde{P}(\hat{n}),\ e_0-\tilde{P}(\hat{n})\},
+\qquad \hat{n}\ \text{a unit vector},
+$$
+with $\tilde{P}(\hat{n})$ and $e_0-\tilde{P}(\hat{n})$ the two orthogonal projections along the axis $\hat{n}$. The projections are idempotent and mutually orthogonal, and their algebra is exactly the algebra of a classical two-valued observable — a classical <strong>bit</strong>. Two different axes give different MASAs, conjugate under $U(2)$ but distinct as subalgebras.</p>
+<p>The two projections are the density matrices of the two possible outcomes along the axis, with $\mathrm{Tr}(\tilde{P}(\hat{n}))=\mathrm{Tr}(e_0-\tilde{P}(\hat{n}))=1$ and $\tilde{P}(\hat{n})\,(e_0-\tilde{P}(\hat{n}))=0$; their sum is the unit, $\tilde{P}(\hat{n})+(e_0-\tilde{P}(\hat{n}))=e_0$, whose trace is $\mathrm{Tr}(e_0)=2$. The family of MASAs is parametrized by the axis modulo its sign, because
+$$
+\mathbb{A}_{-\hat{n}}=\mathrm{span}_\mathbb{C}\bigl\{\tilde{P}(-\hat{n}),e_0-\tilde{P}(-\hat{n})\bigr\}
+=\mathrm{span}_\mathbb{C}\bigl\{e_0-\tilde{P}(\hat{n}),\tilde{P}(\hat{n})\bigr\}=\mathbb{A}_{\hat{n}} .
+$$
+The space of contexts is therefore the sphere modulo antipodes, the real projective plane $\mathbb{RP}^2$: every classical bit requires a point of $\mathbb{RP}^2$ to be specified, and no point is preferred. The verification of idempotency, orthogonality, and the intersection property was carried out numerically on the matrix model for two distinct axes.</p>
+<p><strong>The centre is the canonical common part.</strong> The intersection of all MASAs is the centre,
+$$
+\bigcap_{\hat{n}}\mathbb{A}_{\hat{n}}=Z(\mathbb{B}),
+$$
+because an element commuting with every projector $\tilde{P}(\hat{n})$ for every axis $\hat{n}$ commutes with everything. The centre is therefore the canonical commutative subalgebra common to every MASA, and the only commutative subalgebra that requires no choice to specify; it is not itself maximal, and every MASA beyond it requires the selection of an axis, i.e. of a preferred observable or pointer basis. This is complementarity in algebraic form: the algebra contains many classical bits, but no canonical classical bit.</p>
+<p><strong>The classical sector of a context is a MASA.</strong> Relative to a chosen Hermitian observable $\tilde{H}$ with distinct spectral projections, the set of observables compatible with it is its centralizer, which is the MASA generated by its projections. In that context — and only in that context — the theory looks classical: the MASA is commutative, its elements can be simultaneously diagonalized, and it contains idempotents that behave as classical propositions. The classical sector is thus <strong>context-relative</strong>: it is the centralizer $\{\tilde{X}:[\tilde{X},\tilde{H}]=0\}$, a subalgebra that depends on which observable defines the context.</p>
+<p><strong>Relation to the quantum–classical divide.</strong> The companion article <em>The Quantum–Classical Divide in the Biquaternion Framework</em> treats the divide dynamically and statistically. The algebraic identification supplied here is its structural backdrop: the divide is not a direct-sum decomposition of $\mathbb{B}$ into a quantum part and a classical part, because $\mathbb{B}$ is a factor and admits no such central splitting. It is instead the distinction between the canonical centre — the classical parameters — and the state- or context-dependent MASAs, which supply the classical bits. A theory written over $\mathbb{B}$ has a classical sector at every context, and it has no context-free classical sector beyond the scalars. This is the honest position, and it is the reason the framework cannot manufacture superselection labels out of its own centre.</p>
+<h2 id="what-the-center-cannot-do">What the Center Cannot Do</h2>
+<p>The identification of the centre with the classical sector is exact, and its exactness includes the statement of what it excludes. Four things the centre cannot supply should be recorded, because each is a natural expectation that the algebra does not meet.</p>
+<p><strong>1. It cannot split the theory into superselection sectors.</strong> Since $\mathbb{B}$ is a factor, its only central projections are $0$ and $e_0$, and there is no non-trivial decomposition $\mathbb{B}=\mathbb{B}_1\oplus\mathbb{B}_2$ with the summands annihilating one another. A framework whose classical sector is the scalars has no internal machine for declaring two branches of the world incoherent, and no central charge to label them. Any such label must be adjoined to the algebra, or realised on its modules, not found in its centre.</p>
+<p><strong>2. It cannot supply a canonical classical bit.</strong> The MASAs contain the classical bits, but no MASA is singled out by the algebra. The classical sector of a context is the centralizer of the observable that defines the context, and different observables give different centralizers; the centre, being their intersection, contains none of the bits. The framework therefore has no preferred pointer basis, which is the algebraic face of the measurement problem treated in the companion article <em>The Measurement Problem in Algebraic Form</em>.</p>
+<p><strong>3. It cannot carry a dynamics.</strong> Every central element commutes with every generator, so it is frozen; the centre is the fix-point set of the whole adjoint action and supports no non-trivial flow. It follows that the centre cannot be the arena of a classical dynamics either: a classical flow needs a non-degenerate Poisson structure, and the bracket on the centre is identically zero. The centre is a Poisson algebra with zero bracket, the degenerate case, corresponding through Gelfand duality to a one-point manifold.</p>
+<p><strong>4. It cannot distinguish the framework's structures.</strong> The material/informational split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the two spin components of the state module, and the particle-like structures built on them are all non-central: they are permuted by the algebra's non-commutative operations, and none of them descends to a central label. The centre sees none of this structure. It is the same two-real-dimensional algebra for every spin, every representation, and every Hamiltonian, which is precisely why it can serve as the universal classical sector and precisely why it is too small to encode any of the framework's physics.</p>
+<p><strong>The correct summary of the limitations.</strong> The centre is the largest subalgebra on which the algebra becomes commutative <strong>and</strong> which is invariant under all of the algebra's symmetries. Those two requirements together force it to be the scalars. If one relaxes the invariance requirement, one obtains the MASAs, which are large enough to carry classical bits but are context-dependent; if one relaxes the commutativity requirement, one obtains the whole algebra, which is quantum. The centre is the unique compromise that is both commutative and canonical, and its very uniqueness is what makes it small. This trade-off — canonicity against size — is the algebraic reason that a quantum theory has only a minimal context-free classical sector, and it is the structural lesson the framework's catalogue of obstructions draws from the present identification.</p>
+<h2 id="the-center-in-the-commutant-picture-and-in-the-equations">The Center in the Commutant Picture, and in the Equations</h2>
+<p>Four further roles of the centre place it inside the framework's standard machinery.</p>
+<p><strong>1. Commutant and bicommutant.</strong> For a subset $\mathbb{S}\subseteq\mathbb{B}$ write $\mathbb{S}'=\{\tilde{X}:[\tilde{X},\tilde{s}]=0\ \forall\tilde{s}\in\mathbb{S}\}$ for its commutant. The centre is the commutant of the largest possible set,
+$$
+Z(\mathbb{B})=\mathbb{B}',
+$$
+and dually the commutant of the centre is the whole algebra,
+$$
+Z(\mathbb{B})'=\mathbb{B},
+$$
+because every element commutes with the scalars. The two statements together identify the centre as the fixed point of the commutant operation: it is the subalgebra whose commutant is as large as possible, and it is itself the commutant of the algebra. For a maximal commutative subalgebra $\mathbb{A}$ one has $\mathbb{A}'=\mathbb{A}$, so the MASAs are exactly the self-commuting subalgebras, and the centre is their common part. This is the von Neumann bicommutant picture restricted to the finite-dimensional matrix algebra; there is no topological content to add.</p>
+<p><strong>2. Trivial action on the projective state space.</strong> A central element acts on the state module by scalar multiplication, $\tilde{C}\psi=(\lambda e_0)\psi=\lambda\psi$. On a ray $[\psi]$ this is invisible, since $[\lambda\psi]=[\psi]$ for $\lambda\neq0$. The centre is therefore the <strong>kernel of the action of $\mathbb{B}^\times$ on the projective state space</strong>: its unitary part $U(1)=\{\lambda e_0:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
+$$
+\Gamma_{\tilde{C}}(\tilde{\rho})=(\lambda e_0)\,\tilde{\rho}\,(\lambda e_0)^\dagger=|\lambda|^2\tilde{\rho},
+$$
+a positive multiple of $\tilde{\rho}$ and hence the same state after normalization, and the identity on trace-one states exactly for the unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.</p>
+<p><strong>3. The central normalizations.</strong> The two normalizations that the framework imposes on its states are central conditions. The trace-one condition is $\mathrm{Tr}(\tilde{\rho})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $\mathrm{Tr}(\psi^\dagger\psi)=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.</p>
+<p><strong>4. The centre through the passage $\mathbb{R}\to\mathbb{C}\to\mathbb{H}$.</strong> The three division algebras have centres $\mathbb{R}$, $\mathbb{R}$, and $\mathbb{C}$ respectively:
+$$
+Z(\mathbb{R})=\mathbb{R},
+\qquad
+Z(\mathbb{H})=\mathbb{R},
+\qquad
+Z(\mathbb{C}\otimes_\mathbb{R}\mathbb{H})=\mathbb{C}\otimes_\mathbb{R}\mathbb{R}=\mathbb{C}.
+$$
+The tensor product multiplies the centres, and this is the algebraic origin of the framework's scalar field: the quaternionic centre is real, and complexifying the quaternions complexifies the centre. The central imaginary $i$ is not an element of $\mathbb{H}$; it is the complexification of the unit, and it is central by construction. The companion articles on the material and informational spaces use this fact when they separate the two sectors: $i$ commutes with everything, which is why it can serve as a global complex structure on the modules while the non-central roots of $-e_0$ cannot.</p>
+<p><strong>5. Casimir elements.</strong> In the enveloping algebra of $\mathfrak{u}(2)=\mathbb{M}_-$ the central elements are the Casimirs, and on each irreducible module they act as scalars. The quadratic Casimir and the identity furnish the labels by which a representation is characterized, and those labels — a mass, a spin quantum number — are classical data attached to the representation rather than to the algebra. They are central in the enveloping algebra, not in $\mathbb{B}$ itself, and the distinction is the representation-theoretic counterpart of the statement that the framework's classical sector is minimal: the labels live in the centre of the symmetry algebra, and the symmetry algebra is larger than $\mathbb{B}$'s centre.</p>
+<h2 id="summary">Summary</h2>
+<p>The centre of the biquaternion algebra is
+$$
+Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C},
+$$
+the two-real-dimensional subalgebra of complex multiples of the unit; its Hermitian part is the one-real-dimensional line $\mathbb{R}e_0$. It is characterized equivalently as the commuting part of the algebra, the fix-point set of the adjoint action of the unitary group, the common kernel of the inner derivations, the locus where the trace pairing factorizes, and the preimage of the scalar matrices in the matrix model. These characterizations agree, which is what makes the centre canonical rather than conventional, and it is in this sense that it is <strong>the</strong> classical sector.</p>
+<p>As a classical sector it has four exact properties: central observables have state-independent expectation values and zero variance, so they are parameters rather than observables; they commute with every generator, so they are frozen under every dynamics; they are the home of the framework's $c$-number data, including the central mass coefficient $m e_0$; and as a commutative $C^{*}$-algebra the centre is $C(\{\ast\})$, the algebra of a one-point space, a single classical degree of freedom. The framework's genuine classical bits live in the maximal commutative subalgebras, which are isomorphic to $\mathbb{C}^2$ and are context-dependent: their common intersection is the centre, and no one of them is singled out by the algebra.</p>
+<p>The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is a central simple algebra — a factor — its only central idempotents are $0$ and $e_0$, so the framework has no intrinsic superselection structure, no canonical pointer basis, no central charge, and no place to put a classical flow. The classical sector of the biquaternion framework is therefore canonical, minimal, and one-dimensional: it is the scalars, and everything classical beyond the scalars is relative to a context.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>Quaternion basis, $e_k^2=-e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$\dagger=\bar{\cdot}\circ{}^{*}$</td>
+<td>Hermitian conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$</td>
+<td>Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$</td>
+</tr>
+<tr>
+<td>$Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_0$</td>
+<td>Hermitian central elements</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$</td>
+<td>Trace, $\mathrm{Tr}(e_0)=2$</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
+<td>Norm form, $N(\lambda e_0)=\lambda^2e_0$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^{-1}$</td>
+<td>Adjoint (inner) action</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde{X}}(\tilde{Y})=[\tilde{X},\tilde{Y}]$</td>
+<td>Inner derivation</td>
+</tr>
+<tr>
+<td>$\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde{P}(\hat{n}),e_0-\tilde{P}(\hat{n})\}$</td>
+<td>Maximal commutative subalgebra (MASA)</td>
+</tr>
+<tr>
+<td>$\tilde{P}(\hat{n})=\tfrac12(e_0+i\hat{n})$</td>
+<td>Pure-state projection, $|\hat{n}|=1$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)=\mathbb{M}_-$</td>
+<td>Lie algebra of the unitary group</td>
+</tr>
+<tr>
+<td>$C(\{\ast\})$</td>
+<td>Gelfand character algebra of the centre</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. von Neumann, <em>Mathematical Foundations of Quantum Mechanics</em> (Princeton University Press, 1955), for the algebraic treatment of observables, the commutant, and the origin of superselection.</li>
+<li>G. G. Emch, <em>Algebraic Methods in Statistical Mechanics and Quantum Field Theory</em> (Wiley-Interscience, 1972), for the centre of the algebra of observables, factors, and superselection sectors.</li>
+<li>J. Dixmier, <em>von Neumann Algebras</em> (North-Holland, 1981), for the theory of factors, centres, and central projections.</li>
+<li>R. Haag, <em>Local Quantum Physics: Fields, Particles, Algebras</em> (Springer, 2nd ed., 1996), for superselection rules and the algebraic characterization of observables.</li>
+<li>G. C. Wick, A. S. Wightman, and E. P. Wigner, "The intrinsic parity of elementary particles", <em>Physical Review</em> <strong>88</strong>, 101 (1952), for the original superselection-rule argument.</li>
+<li>N. P. Landsman, <em>Foundations of Quantum Theory: From Classical Concepts to Operator Algebras</em> (Springer, 2017), for Gelfand duality, the classical limit, and the quantum–classical relation.</li>
+<li>E. M. Alfsen and F. W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for state spaces, faces, and the algebraic distinction between classical and quantum.</li>
+<li>N. Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for central simple algebras, their centres, and their maximal commutative subalgebras.</li>
+<li>R. S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the structure of full matrix algebras, their centres $\mathbb{C}I_2$, and their MASAs.</li>
+<li>S. Adler, <em>Quaternionic Quantum Mechanics and Quantum Fields</em> (Oxford University Press, 1995), for the quaternionic and biquaternionic readings of the classical sector and of the scalar field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

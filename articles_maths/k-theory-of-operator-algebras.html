@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Theory of Operator Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="k-theory-of-operator-algebras"><strong>K-Theory of Operator Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The $K$-theory of a $\mathrm{C}^*$-algebra is the invariant that assigns to the algebra two abelian groups built from its projections and its unitaries, and it is the invariant in which the index problems of operator theory take their values. Its data are entirely algebraic and topological: a projection is an element $p$ with $p = p^2 = p^*$, two projections are equivalent when a partial isometry carries one to the other, the equivalence classes form a monoid under the addition $[p]+[q] = [p\oplus q]$, and $K_0(A)$ is the Grothendieck group of that monoid; the unitary group, with its topology as a subspace of the algebra of a Hilbert space, gives the second group $K_1(A)$ as the group of connected components of the unitary group of the stabilization. The two groups are related by <strong>Bott periodicity</strong>, which for $\mathrm{C}^*$-algebras is a theorem rather than a construction, and together they form the $\mathbb{Z}/2$-graded functor $K_*$ that is half-exact, homotopy invariant, stable under tensoring with the compacts and computed by the <strong>six-term exact sequence</strong> of an ideal.</p>
+<p>Four boundaries must be stated, because "$K$-theory" denotes several theories in this corpus. The <strong>topological</strong> $K$-theory of vector bundles over a compact space is the commutative case of the theory of this article, through Gelfand duality and Swan's theorem; <em>Topological K-Theory</em> develops it and is the article immediately before this one. The <strong>$K$-theory of rings</strong>, the Grothendieck group of the finitely generated projective modules over a ring together with its higher groups, is Part I's <em>K-Theory of Rings</em>; for a unital $\mathrm{C}^*$-algebra the monoid of projections up to Murray–von Neumann equivalence is the monoid of isomorphism classes of finitely generated projective modules, so the two definitions of $K_0$ agree, and the higher groups of the algebraic theory are a different family which is not computed here. The <strong>higher algebraic</strong> $K$-groups are likewise a different family: the $K$-groups of a $\mathrm{C}^*$-algebra are periodic of period two and are defined without any of the machinery of the plus or $Q$-constructions. Finally, <strong>$KK$-theory</strong> is the bivariant generalisation in which the groups of this article are the bivariant groups with the trivial coefficient; it belongs in this Part, and the Pimsner–Voiculescu sequence and the Kasparov product are named here only as forward references.</p>
+<p>This article develops Murray–von Neumann equivalence and the stabilization, the two groups $K_0$ and $K_1$ with their functoriality and their agreement with the algebraic definition, Bott periodicity and the six-term exact sequence, the invariance properties, and the computations: finite-dimensional algebras, the compact operators, the commutative algebras with their identification with the topological theory, the Toeplitz extension whose index map is the Fredholm index, and the rotation algebras with their trace pairing. Throughout, $A$ is a $\mathrm{C}^*$-algebra, $A^+$ its unitisation when it is not unital, $\tilde A$ the unital algebra $A$ or $A^+$ according to the case, $M_n(A)$ the algebra of $n\times n$ matrices over $A$, $M_\infty(A) = \bigcup_n M_n(A)$ the algebraic inductive limit of the matrix algebras with the inclusions in the upper left corner, $U_n(A)$ the unitary group of $M_n(A)$ and $U_\infty(A)$ its inductive limit, $K(H)$ the compact operators on a separable infinite-dimensional Hilbert space and $SA = C_0(\mathbb{R})\otimes A$ the suspension. The projections, unitaries, traces and tensor products of $\mathrm{C}^*$-algebras are those of <em>Operator Algebras</em>, the Hilbert $\mathrm{C}^*$-modules and Morita equivalence those of <em>Hilbert and C</em>-Modules<em>, the crossed products those of </em>Crossed Products of C<em>-Algebras</em>, the graph and groupoid algebras those of <em>Graph C</em>-Algebras<em> and </em>Groupoid C<em>-Algebras</em>, and the vector-bundle groups those of <em>Topological K-Theory</em>. The Fredholm index and the analytic index require the analysis of Part III, and the index theorem is not covered here.</p>
+<hr />
+<h2 id="projections-unitaries-and-stabilization">Projections, Unitaries and Stabilization</h2>
+<h3 id="projections-and-murrayvon-neumann-equivalence">Projections and Murray–von Neumann Equivalence</h3>
+<p><strong>Definition.</strong> An element $p$ of a $\mathrm{C}^*$-algebra $A$ is a <strong>projection</strong> if $p = p^* = p^2$. Two projections $p,q \in A$ are <strong>Murray–von Neumann equivalent</strong>, written $p \sim q$, if there is a partial isometry $v \in A$ with $v^*v = p$ and $vv^* = q$. The relation $\sim$ is an equivalence relation on the projections, and the equivalence class of $p$ is written $[p]$.</p>
+<p><strong>Definition.</strong> The <strong>direct sum</strong> of projections $p \in A$, $q\in A$ is the projection $p\oplus q = \operatorname{diag}(p,q)$ of $M_2(A)$, and more generally the projections of $A$ are regarded as projections of $M_n(A)$ by the inclusion in the upper left corner. The <strong>stabilization</strong> is the set $P_\infty(A)$ of projections of $M_\infty(A)$, and the <strong>monoid of projections</strong> is</p>
+<p>$$
+V(A) = P_\infty(A)/\!\sim , \qquad [p]+[q] = [p\oplus q] ,
+$$</p>
+<p>a commutative monoid with zero the class of the zero projection, in which $[p]+[q]$ depends only on the classes of $p$ and $q$.</p>
+<p><strong>Proposition.</strong> The relation $\sim$ is an equivalence relation, the addition of $V(A)$ is well defined and commutative, and for $p,q\in M_n(A)$ one has $p\sim q$ if and only if there are $w_1,w_2 \in M_n(A)$ with $p = w_1^*w_1$, $q = w_1w_1^*$ and $q = w_2^*w_2$, $p = w_2w_2^*$; in particular $\sim$ is symmetric and transitive by the composition of partial isometries.</p>
+<p><strong>Proof.</strong> If $v^*v = p$, $vv^* = q$ and $w^*w = q$, $ww^* = r$, then $(wv)^*(wv) = p$ and $(wv)(wv)^* = r$, so $\sim$ is transitive; symmetry is $v^*$; reflexivity is $v = p$. The direct sum is additive on classes because $(v\oplus w)^*(v\oplus w) = p\oplus q$. $\square$</p>
+<p><strong>Example (matrix algebras).</strong> In $M_n(\mathbb{C})$ two projections are Murray–von Neumann equivalent if and only if they have the same rank, since the rank is unchanged by $v^*v$ and $vv^*$ and is a complete invariant for projections of a matrix algebra. For $n = 3$ and the rank-one projections $P = |v\rangle\langle v|$ with $v = (1,0,0)$ and $Q = |w\rangle\langle w|$ with $w = (\frac35,\frac45,0)$, the partial isometry $u = |w\rangle\langle v|$ satisfies $u^*u = P$ and $uu^* = Q$; both identities have been verified exactly in rational arithmetic. Consequently $V(M_n(\mathbb{C}))\cong\mathbb{N}$ generated by the class of a rank-one projection, and $V(\bigoplus_{i=1}^{r}M_{n_i}(\mathbb{C}))\cong\mathbb{N}^r$, the class of a projection being its <strong>dimension vector</strong> of ranks in the $r$ matrix blocks.</p>
+<h3 id="homotopy-of-unitaries-and-the-stabilization-of-the-algebra">Homotopy of Unitaries and the Stabilization of the Algebra</h3>
+<p><strong>Definition.</strong> Let $A$ be unital. Two unitaries $u,v\in U_n(A)$ are <strong>homotopic</strong> if there is a continuous path $t\mapsto w_t$ in $U_n(A)$ with $w_0 = u$, $w_1 = v$, the topology being that of $M_n(A)$; the set of homotopy classes is $\pi_0(U_n(A))$, and the inclusions $U_n(A)\to U_{n+1}(A)$, $u\mapsto \operatorname{diag}(u,1)$, are compatible with homotopy, so that the inductive limit $U_\infty(A)$ has a well-defined group of components $\pi_0(U_\infty(A))$.</p>
+<p><strong>Proposition.</strong> For a unital $\mathrm{C}^*$-algebra $A$, the group $\pi_0(U_\infty(A))$ is abelian and is isomorphic to the abelianisation of the stable general linear group, $\pi_0(U_\infty(A))\cong GL_\infty(A)^{\mathrm{ab}}$, so that the components of the unitary group form a group under matrix multiplication.</p>
+<p><strong>Proof.</strong> The homotopy classes of unitaries in the stable unitary group multiply by the block sum, and the block sum is homotopic to the matrix product through the standard homotopy connecting $\operatorname{diag}(u,v)$ with $uv\oplus 1$; the resulting group is abelian because $\operatorname{diag}(u,v)$ and $\operatorname{diag}(v,u)$ are conjugate by a permutation matrix which is homotopic to the identity in the stable group. This is the standard Whitehead-type description of $K_1$; it is quoted. $\square$</p>
+<p><strong>Definition.</strong> The algebra is <strong>stable</strong> if $A\cong A\otimes K(H)$; every $\mathrm{C}^*$-algebra is stabilized by tensoring with the compacts, and the identification $M_n(A)\otimes K(H)\cong A\otimes K(H)$ for the corner structure is used to compare the projections and the unitaries of $A$ with those of $A\otimes K(H)$.</p>
+<hr />
+<h2 id="the-k-groups">The K-Groups</h2>
+<h3 id="the-group-math125">The Group $K_0(A)$</h3>
+<p><strong>Definition.</strong> For a unital $\mathrm{C}^*$-algebra $A$, the group $K_0(A)$ is the <strong>Grothendieck group</strong> of the monoid $V(A)$: the abelian group generated by the classes $[p]$ of projections in $M_\infty(A)$ subject to the relations $[p\oplus q] = [p]+[q]$, with elements written as formal differences $[p]-[q]$. For a non-unital $A$ one sets</p>
+<p>$$
+K_0(A) = \ker\bigl(K_0(A^+)\longrightarrow K_0(\mathbb{C})\bigr) ,
+$$</p>
+<p>the kernel of the map induced by the character $A^+\to\mathbb{C}$; equivalently, $K_0(A)$ is the Grothendieck group of the finitely generated projective right $A$-modules, which agrees with the projection definition for unital $A$.</p>
+<p><strong>Theorem (the two definitions agree).</strong> For a unital $\mathrm{C}^*$-algebra $A$ the correspondence $p\mapsto pA^n$ between projections $p\in M_n(A)$ and finitely generated projective right $A$-modules induces an isomorphism between the Grothendieck group of $V(A)$ and the Grothendieck group of the isomorphism classes of finitely generated projective right $A$-modules of <em>K-Theory of Rings</em>. Consequently $K_0(A)$ as defined above is the algebraic $K_0$ of the ring $A$.</p>
+<p><strong>Proof.</strong> Two projections $p,q \in M_n(A)$ are Murray–von Neumann equivalent if and only if the modules $pA^n$ and $qA^n$ are isomorphic: given a partial isometry $v$ with $v^*v = p$, $vv^* = q$, the map $a\mapsto va$ is an isomorphism of $pA^n$ onto $qA^n$, and conversely an isomorphism of the modules is given by right multiplication by a matrix $v$ satisfying $v^*v = p$, $vv^* = q$ after the identification of the modules as corner submodules. The direct sums correspond, and the Grothendieck groups are therefore isomorphic. This is standard; it is quoted. $\square$</p>
+<p><strong>Proposition (basic properties).</strong> $K_0$ is a functor: a $*$-homomorphism $\varphi : A\to B$ induces $\varphi_* : K_0(A)\to K_0(B)$, $[p]\mapsto [\varphi_n(p)]$ with $\varphi_n : M_n(A)\to M_n(B)$ the extension to matrices, and $(\psi\circ\varphi)_* = \psi_*\circ\varphi_*$. Homotopic $*$-homomorphisms induce the same map, and the inclusion $A\hookrightarrow A\otimes K(H)$ induces an isomorphism $K_0(A)\cong K_0(A\otimes K(H))$.</p>
+<p><strong>Proof.</strong> The extension to matrices preserves projections, partial isometries and the relations, giving the functoriality; a homotopy of $*$-homomorphisms gives a path of projections or of partial isometries, hence a homotopy of the classes; the stabilization is the standard stability theorem, proved by transporting projections across the corner embeddings $A\hookrightarrow A\otimes K(H)$ using that $K(H)$ contains rank-one projections with the same behaviour. It is quoted. $\square$</p>
+<h3 id="the-group-math177">The Group $K_1(A)$</h3>
+<p><strong>Definition.</strong> For a unital $\mathrm{C}^*$-algebra $A$, set</p>
+<p>$$
+K_1(A) = \pi_0\bigl(U_\infty(A)\bigr) ,
+$$</p>
+<p>the group of homotopy classes of unitaries in the stabilization; for a non-unital $A$ one sets $K_1(A) = \pi_0(U_\infty(A^+))$.</p>
+<p><strong>Proposition.</strong> $K_1$ is a functor on $\mathrm{C}^*$-algebras with the same formal properties as $K_0$: functoriality under $*$-homomorphisms, invariance under homotopy, and stability under tensoring with the compacts, $K_1(A)\cong K_1(A\otimes K(H))$. The unitisation map $A\to A^+$ is an isomorphism on $K_1$, so the definition extends from the unital to the general case without loss.</p>
+<p><strong>Proof.</strong> The functoriality and the homotopy invariance are immediate from the definition, and the stability is proved as for $K_0$; the unitisation map is split by the quotient $A^+\to\mathbb{C}$ whose induced map on $K_1$ is the identity on $\pi_0(U(\mathbb{C})) = 0$, and the resulting exact sequence identifies $K_1(A)$ with $K_1(A^+)$. This is standard; it is quoted. $\square$</p>
+<p><strong>Example (finite-dimensional algebras and the compacts).</strong> For $A = \mathbb{C}$ one has $V(\mathbb{C}) = \mathbb{N}$ generated by $[1]$, so $K_0(\mathbb{C}) = \mathbb{Z}$ with $[1]\mapsto1$, and $U_\infty(\mathbb{C})$ is connected, so $K_1(\mathbb{C}) = 0$. For $A = M_n(\mathbb{C})$ the same computation with $V(M_n(\mathbb{C}))\cong\mathbb{N}$ gives $K_0(M_n(\mathbb{C}))\cong\mathbb{Z}$ and $K_1(M_n(\mathbb{C})) = 0$, since $U_n(\mathbb{C})$ is connected. For $A = \bigoplus_{i=1}^rM_{n_i}(\mathbb{C})$ one has $K_0(A)\cong\mathbb{Z}^r$, the map being the dimension vector, and $K_1(A) = 0$. For $A = K(H)$ the projections of $M_n(K(H))$ are classified by their rank, which may be finite or infinite, so $K_0(K(H))\cong\mathbb{Z}$ and $K_1(K(H)) = 0$; the last computation is the stability of the finite-dimensional case.</p>
+<hr />
+<h2 id="bott-periodicity-and-the-six-term-sequence">Bott Periodicity and the Six-Term Sequence</h2>
+<h3 id="the-suspension-and-bott-periodicity">The Suspension and Bott Periodicity</h3>
+<p><strong>Definition.</strong> The <strong>suspension</strong> of a $\mathrm{C}^*$-algebra $A$ is $SA = C_0(\mathbb{R})\otimes A$, with $C_0(\mathbb{R})$ the algebra of continuous complex functions vanishing at infinity on the line; more generally $S^nA = C_0(\mathbb{R}^n)\otimes A$.</p>
+<p><strong>Theorem (Bott periodicity for $\mathrm{C}^*$-algebras; standard).</strong> For every $\mathrm{C}^*$-algebra $A$ there are natural isomorphisms</p>
+<p>$$
+K_0(A) \;\cong\; K_1(SA) , \qquad K_0(A) \;\cong\; K_0(S^2A) , \qquad K_1(A)\cong K_1(S^2A) ,
+$$</p>
+<p>so that the functors $K_n(A) = K_0(S^nA)$ for $n \geq 0$ are periodic of period two, $K_{n+2}(A)\cong K_n(A)$, with $K_0$ and $K_1$ the only two groups. The isomorphism $K_0(A)\to K_1(SA)$ is the <strong>Bott map</strong>.</p>
+<p><strong>Proof.</strong> The Bott map sends the class $[p]$ of a projection $p$ over $A$ to the class of the unitary $e^{2\pi i f}\otimes p + (1-p)$ in $(SA)^+$ formed from a function $f\in C_0(\mathbb{R})$ that is a suitable "Bott function", a continuous real function going from $0$ at $-\infty$ to $1$ at $+\infty$; the theorem is that the map so defined is an isomorphism, and the second isomorphism follows from the first applied twice together with the identification $S^2A$. This is the Bott periodicity theorem for $\mathrm{C}^*$-algebras; it is quoted as standard. $\square$</p>
+<p><strong>Corollary.</strong> $K_0(C_0(\mathbb{R}^2))\cong\mathbb{Z}$ and $K_1(C_0(\mathbb{R}))\cong\mathbb{Z}$, generated by the Bott class; and for the compact operators $K_0(K(H))\cong\mathbb{Z}$ with generator the class of a rank-one projection, consistently with the computation above.</p>
+<h3 id="the-six-term-exact-sequence">The Six-Term Exact Sequence</h3>
+<p><strong>Definition.</strong> A <strong>short exact sequence</strong> of $\mathrm{C}^*$-algebras is an exact sequence $0\to J\to A\to A/J\to0$ with $J$ a closed two-sided ideal of $A$ and $A/J$ the quotient.</p>
+<p><strong>Theorem (the six-term exact sequence; standard).</strong> For every short exact sequence $0\to J\xrightarrow{\iota}A\xrightarrow{\pi}A/J\to0$ of $\mathrm{C}^*$-algebras the induced maps on $K$-theory are accompanied by a <strong>boundary (index) map</strong> $\partial : K_1(A/J)\to K_0(J)$ and fit into the cyclic exact sequence</p>
+<p>$$
+K_0(J) \xrightarrow{\iota_*} K_0(A) \xrightarrow{\pi_*} K_0(A/J) \xrightarrow{\ \partial\ } K_1(J) \xrightarrow{\iota_*} K_1(A) \xrightarrow{\pi_*} K_1(A/J) \xrightarrow{\ \partial\ } K_0(J) ,
+$$</p>
+<p>in which the last map returns to the first term; exactness holds at each of the six terms.</p>
+<p><strong>Proof.</strong> Exactness at the first four terms is proved by lifting projections and unitaries along the quotient map, using that a projection or a unitary in $A/J$ can be lifted and that the obstruction to lifting it to $A$ is measured in the ideal; the boundary map is defined by the index of a partial isometry implementing the lift, and the argument is the standard one for the exact sequence of an ideal. It is quoted as standard. $\square$</p>
+<p><strong>Theorem (invariance properties).</strong> The functor $K_* = K_0\oplus K_1$ is homotopy invariant, stable under tensoring with $K(H)$, half-exact (the middle maps of the six-term sequence are exact) and <strong>Morita invariant</strong>: Morita equivalent $\mathrm{C}^*$-algebras have isomorphic $K$-theory, with the isomorphism induced by an imprimitivity bimodule. In particular $K_*(A)\cong K_*(A\otimes K(H))$ and, for the algebra of a graph or groupoid, the $K$-theory may be computed from the groupoid data.</p>
+<p><strong>Proof.</strong> The homotopy invariance and the stability are as above; the half-exactness is a formal consequence of the six-term sequence; the Morita invariance is proved by constructing the map $K_0$ from the bimodule and showing it invertible by the inverse bimodule, the projections and the unitaries being transported along the equivalence of module categories. This is standard; it is quoted, and the Morita theory of $\mathrm{C}^*$-algebras is that of <em>Hilbert and C</em>-Modules*. $\square$</p>
+<hr />
+<h2 id="computations-and-pairings">Computations and Pairings</h2>
+<h3 id="the-commutative-case">The Commutative Case</h3>
+<p><strong>Theorem (Gelfand duality and the topological theory).</strong> Let $X$ be a compact Hausdorff space and $A = C(X)$. Then there are natural isomorphisms</p>
+<p>$$
+K_0(A) \cong K^0(X) , \qquad K_1(A) \cong K^1(X) ,
+$$</p>
+<p>where $K^0$ and $K^1$ are the topological $K$-groups of <em>Topological K-Theory</em>; the identification on $K_0$ is Swan's theorem, and the identification on $K_1$ matches the components of the unitary group of $C(X)$ with the clutching classes on the suspension.</p>
+<p><strong>Proof.</strong> The first isomorphism is Swan's theorem: finitely generated projective modules over $C(X)$ are the modules of sections of vector bundles, which is the definition of the algebraic $K_0$ of $C(X)$ and, by the agreement theorem above, of $K_0(C(X))$. For the second, a unitary of $M_n(C(X))$ is a continuous map $X\to U(n)$, and the homotopy classification of such maps is the clutching classification of bundles over the suspension of $X$, which is the definition of $K^1(X)$. This is standard. $\square$</p>
+<h3 id="the-toeplitz-extension-and-the-index-map">The Toeplitz Extension and the Index Map</h3>
+<p><strong>Example (the Toeplitz extension).</strong> Let $\mathcal{T}$ be the Toeplitz algebra of <em>Toeplitz Algebras</em>, with its shift $S$, and let $0\to K(H^2)\to\mathcal{T}\to C(\mathbb{T})\to0$ be the extension with $S$ mapping to the generator $z$ and $S^*S = 1$, $SS^* = 1-P_0$. The six-term sequence for this extension begins</p>
+<p>$$
+K_0(K) \xrightarrow{\iota_*} K_0(\mathcal{T}) \xrightarrow{\pi_*} K_0(C(\mathbb{T})) \xrightarrow{\ \partial\ } K_1(K) , \qquad K_1(K)=0 ,
+$$</p>
+<p>and gives $K_0(\mathcal{T})\cong\mathbb{Z}$ generated by $[1]$, since $\partial$ is injective and $\pi_*$ is an isomorphism onto $\mathbb{Z}$; the boundary map on $K_1$,</p>
+<p>$$
+\partial : K_1(C(\mathbb{T}))\cong\mathbb{Z}\longrightarrow K_0(K)\cong\mathbb{Z} ,
+$$</p>
+<p>is multiplication by the <strong>Fredholm index</strong> of the Toeplitz operators, namely $-1$; the index of the shift, $\operatorname{ind}(S) = \dim\ker S - \dim\ker S^* = 0-1 = -1$, has been verified as exact index arithmetic, and the surjectivity of the boundary map gives $K_1(\mathcal{T}) = 0$. This example is the simplest instance of the general principle that the boundary map of a Toeplitz-type extension is an index, which is the reason the $K$-groups of this article are the natural home of index theory.</p>
+<h3 id="traces-and-the-pairing">Traces and the Pairing</h3>
+<p><strong>Definition.</strong> A <strong>trace</strong> on a $\mathrm{C}^*$-algebra $A$ is a bounded linear functional $\tau : A\to\mathbb{C}$ with $\tau(ab) = \tau(ba)$ for all $a,b$; a trace is positive if $\tau(a^*a)\geq0$ and a tracial state if moreover $\lVert\tau\rVert = 1$.</p>
+<p><strong>Proposition (the trace pairing).</strong> If $\tau$ is a trace on $A$, then $\tau$ depends only on the Murray–von Neumann class of a projection and extends to a homomorphism</p>
+<p>$$
+\tau_* : K_0(A)\longrightarrow\mathbb{R} , \qquad \tau_*([p]) = \tau(p) ,
+$$</p>
+<p>which is well defined because $p\sim q$ gives $\tau(p) = \tau(v^*v) = \tau(vv^*) = \tau(q)$.</p>
+<p><strong>Proof.</strong> The displayed computation is the trace property, and additivity under $p\oplus q$ gives $\tau(p\oplus q) = \tau(p)+\tau(q)$ by the trace property applied in $M_2(A)$; the universal property of the Grothendieck group gives the extension. $\square$</p>
+<p><strong>Example (the rotation algebras).</strong> Let $\theta \in \mathbb{R}\setminus\mathbb{Q}$ and let $A_\theta$ be the rotation algebra of <em>Crossed Products of C</em>-Algebras<em>, the universal $\mathrm{C}^*$-algebra generated by unitaries $U,V$ with $UV = e^{-2\pi i\theta}VU$. Then $K_0(A_\theta)\cong\mathbb{Z}^2$ with basis $[1]$ and $[p_\theta]$ for a projection $p_\theta$ (the </em><em>Rieffel projection</em>*) and $K_1(A_\theta)\cong\mathbb{Z}^2$, and the trace $\tau$, unique among tracial states with $\tau(1) = 1$ because the algebra is simple, satisfies</p>
+<p>$$
+\tau_*([1]) = 1 , \qquad \tau_*([p_\theta]) = \theta ,
+$$</p>
+<p>so that the trace pairing detects the order structure of the $\mathbb{Z}^2$. The computation is due to Pimsner and Voiculescu and to Rieffel and is quoted as standard; the six-term sequence used in it is the Pimsner–Voiculescu sequence, whose general form belongs in this Part.</p>
+<p><strong>Example (a finite model of the rotation relation).</strong> The algebraic relations of the rotation algebra are realised in a matrix algebra as follows: in $M_q(\mathbb{C})$, take $U$ the cyclic shift, $Ue_j = e_{j+1}$ with the indices modulo $q$, and $V$ the diagonal unitary $\operatorname{diag}(\omega^{jp})$ with $\omega = e^{2\pi i/q}$ and $p$ an integer. Then $UV = e^{-2\pi ip/q}VU$, an identity verified numerically for $q = 5$, $p = 2$ to machine precision, and the normalised trace $\tau = \frac1q\operatorname{Tr}$ takes the value $\tau_*([1]) = 1$ on the unit and $\tau_*([e_p]) = p/q$ on the class of the rank-$p$ projection $e_p = \operatorname{diag}(1,\dots,1,0,\dots,0)$, verified exactly; the pair $\bigl(1,p/q\bigr)$ is the finite counterpart of the trace pairing on $K_0(A_{p/q})$. The finite model realises the relations and the pairing, not the full $K$-theory of $A_\theta$, which requires the six-term sequence.</p>
+<p><strong>Remark (group and groupoid algebras).</strong> For the free group on $n$ generators the Pimsner–Voiculescu computation gives $K_0(C^*_r(\mathbb{F}_n))\cong\mathbb{Z}$ and $K_1(C^*_r(\mathbb{F}_n))\cong\mathbb{Z}^n$; for the Cuntz algebra $\mathcal{O}_n$ one has $K_0(\mathcal{O}_n)\cong\mathbb{Z}/(n-1)$ and $K_1(\mathcal{O}_n) = 0$; and for a graph $\mathrm{C}^*$-algebra the Pimsner–Voiculescu six-term sequence computes $K_0$ and $K_1$ from the adjacency matrix, as quoted in <em>Graph C</em>-Algebras*. These are the standard computations of the theory; the sequence itself, the Kasparov product, and the equivariant and bivariant generalisations belong in this Part, and the index-theoretic consequences for manifolds belong to the analysis of Part III.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A <strong>projection</strong> in a $\mathrm{C}^*$-algebra $A$ is an element $p = p^* = p^2$, and two projections are <strong>Murray–von Neumann equivalent</strong> when there is a partial isometry $v$ with $v^*v = p$, $vv^* = q$; the classes of projections in the stabilization $M_\infty(A)$ form a commutative monoid $V(A)$ under $[p]+[q] = [p\oplus q]$, and $K_0(A)$ is its <strong>Grothendieck group</strong>, equal for unital $A$ to the algebraic $K_0$ of the ring $A$ (the Grothendieck group of the finitely generated projective $A$-modules), while for non-unital $A$ one sets $K_0(A) = \ker(K_0(A^+)\to K_0(\mathbb{C}))$. The second group is $K_1(A) = \pi_0(U_\infty(A))$, the components of the stable unitary group, equal to $GL_\infty(A)^{\mathrm{ab}}$; both groups are functorial, homotopy invariant, stable under tensoring with the compact operators, and Morita invariant. <strong>Bott periodicity</strong> gives $K_0(A)\cong K_1(SA)\cong K_0(S^2A)$ with $SA = C_0(\mathbb{R})\otimes A$, so that the functors $K_n = K_0(S^n\,\cdot\,)$ are periodic of period two and there are only two groups; the <strong>Bott map</strong> sends a projection class to the class of $e^{2\pi if}\otimes p + (1-p)$. For every ideal $0\to J\to A\to A/J\to0$ there is the cyclic <strong>six-term exact sequence</strong> with its boundary map $\partial : K_1(A/J)\to K_0(J)$.</p>
+<p>The computations are: $K_0(\mathbb{C}) = \mathbb{Z}$, $K_1(\mathbb{C}) = 0$; $K_0(M_n(\mathbb{C}))\cong\mathbb{Z}$ with rank as a complete Murray–von Neumann invariant, and $K_0(\bigoplus_{i\leq r}M_{n_i}(\mathbb{C}))\cong\mathbb{Z}^r$ with the dimension vector, $K_1 = 0$; $K_0(K(H))\cong\mathbb{Z}$; for a compact space $X$, $K_0(C(X))\cong K^0(X)$ and $K_1(C(X))\cong K^1(X)$ by Swan's theorem and the clutching description, which is the commutative case of the theory; for the Toeplitz extension the boundary map is the Fredholm index, $\partial = -1$, giving $\operatorname{ind}(S) = -1$, $K_0(\mathcal{T})\cong\mathbb{Z}$ and $K_1(\mathcal{T}) = 0$; and for the rotation algebras $K_0(A_\theta)\cong K_1(A_\theta)\cong\mathbb{Z}^2$ with the trace pairing $\tau_*([1]) = 1$, $\tau_*([p_\theta]) = \theta$, the finite model $U$ = shift, $V = \operatorname{diag}(\omega^{jp})$ realising the relation $UV = e^{-2\pi ip/q}VU$ and the pairing values $1$ and $p/q$. Traces pair with $K_0$ and are Murray–von Neumann invariant, so the pairing with projections is the source of the dimension invariants. The Pimsner–Voiculescu sequence, the Kasparov product and the bivariant generalisation belong; the index theorem and the analytic index belong to the analysis of Part III and to the other articles of this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p$, $p^* = p = p^2$</td>
+<td>Projection</td>
+</tr>
+<tr>
+<td>$p\sim q$, $v^*v = p$, $vv^* = q$</td>
+<td>Murray–von Neumann equivalence by a partial isometry</td>
+</tr>
+<tr>
+<td>$M_n(A)$, $M_\infty(A)$</td>
+<td>Matrix algebra; stabilization</td>
+</tr>
+<tr>
+<td>$P_\infty(A)$, $V(A)$</td>
+<td>Projections of $M_\infty(A)$; monoid of their classes</td>
+</tr>
+<tr>
+<td>$K_0(A)$</td>
+<td>Grothendieck group of $V(A)$; algebraic $K_0$ of $A$</td>
+</tr>
+<tr>
+<td>$A^+$</td>
+<td>Unitisation; $K_0(A) = \ker(K_0(A^+)\to K_0(\mathbb{C}))$</td>
+</tr>
+<tr>
+<td>$U_n(A)$, $U_\infty(A)$, $\pi_0$</td>
+<td>Unitary groups, their inductive limit, components</td>
+</tr>
+<tr>
+<td>$K_1(A)$</td>
+<td>$\pi_0(U_\infty(A))$, the stable unitary components</td>
+</tr>
+<tr>
+<td>$SA = C_0(\mathbb{R})\otimes A$, $S^nA$</td>
+<td>Suspension and its iterates</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>Bott map $K_0(A)\to K_1(SA)$</td>
+</tr>
+<tr>
+<td>$\partial : K_1(A/J)\to K_0(J)$</td>
+<td>Boundary (index) map of an ideal</td>
+</tr>
+<tr>
+<td>$\tau$, $\tau_*$</td>
+<td>Trace; its induced homomorphism on $K_0$</td>
+</tr>
+<tr>
+<td>$A_\theta$, $p_\theta$</td>
+<td>Rotation algebra; Rieffel projection</td>
+</tr>
+<tr>
+<td>$\mathcal{T}$, $S$</td>
+<td>Toeplitz algebra; shift, $\operatorname{ind}(S) = -1$</td>
+</tr>
+<tr>
+<td>$K(H)$</td>
+<td>Compact operators, $K_0(K(H))\cong\mathbb{Z}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Bruce Blackadar, <em>K-Theory for Operator Algebras</em> (Springer, second edition, 1998), for the systematic theory of the $K$-groups of $\mathrm{C}^*$-algebras, the six-term sequence and the stable rank theory.</li>
+<li>Nigel Higson and John Roe, <em>Analytic K-Homology</em> (Oxford University Press, 2000), for the index-theoretic side, the boundary maps and the relation to $KK$-theory.</li>
+<li>Michael Rørdam, Flemming Larsen and Niels Laustsen, <em>An Introduction to K-Theory for $\mathrm{C}^*$-Algebras</em> (Cambridge University Press, 2000), for the elementary theory with the computations for the standard examples.</li>
+<li>Marc A. Rieffel, "$\mathrm{C}^*$-algebras associated with irrational rotations", <em>Pacific Journal of Mathematics</em> <strong>93</strong> (1981), 415–429, for the rotation algebras, the Rieffel projection and the trace pairing.</li>
+<li>Mihai Pimsner and Dan-Virgil Voiculescu, "Exact sequences for $K$-groups and Ext-groups of certain cross-product $\mathrm{C}^*$-algebras", <em>Journal of Operator Theory</em> <strong>4</strong> (1980), 93–118, for the Pimsner–Voiculescu six-term sequence and the computations for crossed products.</li>
+<li>Gennadi Kasparov, "The operator $K$-functor and extensions of $\mathrm{C}^*$-algebras", <em>Mathematics of the USSR-Izvestiya</em> <strong>16</strong> (1981), 513–572, for the bivariant theory in which the groups of this article appear as coefficient groups.</li>
+<li>Jonathan Rosenberg, <em>Algebraic K-Theory and Its Applications</em> (Springer, 1994), for the comparison between the algebraic and the operator-algebraic $K$-theories and the role of Morita invariance.</li>
+<li>Ronald G. Douglas, <em>Banach Algebra Techniques in Operator Theory</em> (Springer, second edition, 1998), for the Toeplitz extension, the index and the boundary map of the algebra of the shift.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

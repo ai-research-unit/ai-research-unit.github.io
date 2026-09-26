@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proof Theory and Type Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="proof-theory-and-type-theory"><strong>Proof Theory and Type Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Proof theory studies derivations as mathematical objects rather than as instruments of justification. It asks how a proof is shaped, how one proof can be transformed into another, and what structural properties a system of rules possesses. Its two founding results are the <strong>cut-elimination theorem</strong> of Gentzen for the sequent calculus and the <strong>normalisation theorem</strong> for natural deduction: every derivation can be brought into a canonical form in which no detour occurs, and from which the structure of the conclusion can be read off. Type theory is the other face of the same subject: the observation that a derivation in intuitionistic logic is the same thing as a term of a type, the <strong>Curry–Howard correspondence</strong>, which turns logic into a calculus of functions and makes the study of proofs and the study of programs one subject.</p>
+<p>The article is the eighth of the corpus, above <em>Formal Logic and Computability</em> and <em>Model Theory</em>, and it uses the first-order syntax and the formal systems of <em>Formal Logic and Computability</em>, the semantic notions of satisfaction and completeness developed there and in <em>Model Theory</em>, and the ordinals of <em>Set-Theoretic Foundations</em>. It is the second half of the corpus's logical layer: where the earlier articles treated logic through its models, this one treats it through its proofs. It states the natural-deduction and sequent rules, proves the cut-elimination and normalisation theorems in outline, derives their standard consequences — consistency of the logical systems, the disjunction and existence properties, the subformula property — and develops the lambda calculus and its typed versions far enough to state the Curry–Howard correspondence and to describe the principal type theories.</p>
+<p>The article does not develop the categorical reading of the correspondence, which requires the language; it points in that direction and stops. It does not develop the semantics of the intuitionistic propositional calculus, which is the subject of <em>Model Theory</em> and of <em>Set-Theoretic Foundations</em> through the notion of a Heyting algebra. The results it proves about derivations are finitary and combinatorial, and the only structure it uses beyond first-order syntax is that of the ordinals, for the ordinal analysis at the end.</p>
+<h2 id="natural-deduction">Natural Deduction</h2>
+<h3 id="rules-and-derivations">Rules and Derivations</h3>
+<p><strong>Definition.</strong> A <strong>natural-deduction derivation</strong> is a finite tree whose nodes are formulas, whose leaves are the <strong>assumptions</strong> (each annotated with an assumption class), and whose internal nodes are instances of the <strong>rules of inference</strong>. The rules are the <strong>introduction</strong> and <strong>elimination</strong> rules for each connective and quantifier.</p>
+<p>The propositional rules are the following, where a formula above a line is a premise and one below is the conclusion; an assumption class discharged by a rule is written in brackets.</p>
+<p>$$
+\frac{\varphi \qquad \psi}{\varphi \wedge \psi} \wedge I
+\qquad
+\frac{\varphi \wedge \psi}{\varphi} \wedge E_1
+\qquad
+\frac{\varphi \wedge \psi}{\psi} \wedge E_2
+$$</p>
+<p>$$
+\frac{[\varphi]}{\psi} \quad
+\frac{}{\varphi \to \psi} \to I
+\qquad
+\frac{\varphi \to \psi \qquad \varphi}{\psi} \to E
+$$</p>
+<p>$$
+\frac{\varphi}{\varphi \vee \psi} \vee I_1
+\qquad
+\frac{\psi}{\varphi \vee \psi} \vee I_2
+\qquad
+\frac{\varphi \vee \psi \quad [\varphi] \quad [\psi]}{\chi} \vee E
+$$</p>
+<p>with the side condition for $\vee E$ that the assumptions of the two minor premises other than $\varphi$ and $\psi$ remain undischarged. Negation is defined: $\neg\varphi$ abbreviates $\varphi \to \bot$, with the rules $\bot E$, whose conclusion is any formula, and the derived rule $\neg E$, from $\varphi$ and $\neg\varphi$ to $\bot$. The quantifier rules adjoin $\forall I$, from $\varphi$ to $\forall x\,\varphi$ with the <strong>eigenvariable condition</strong> that $x$ not occur free in any undischarged assumption, and $\exists E$, from $\exists x\,\varphi$ and a derivation of $\psi$ from $\varphi$ to conclude $\psi$ with the analogous condition.</p>
+<p><strong>Definition.</strong> A <strong>theory</strong> in natural deduction consists of a set of <strong>nonlogical axioms</strong>, formulas of the language taken as undischarged leaves. A formula $\varphi$ is <strong>derivable</strong> from a theory $T$, written $T \vdash \varphi$, if some derivation with conclusion $\varphi$ has all its undischarged assumptions among the nonlogical axioms and the formulas of $T$. A <strong>proof</strong> is a derivation with no undischarged assumptions.</p>
+<p><strong>Proposition (deduction theorem).</strong> $T \cup \{\varphi\} \vdash \psi$ if and only if $T \vdash \varphi \to \psi$.</p>
+<p><strong>Proof.</strong> From $T \vdash \varphi \to \psi$ and $T \cup \{\varphi\} \vdash \varphi$ one concludes $T \cup \{\varphi\} \vdash \psi$ by $\to E$. Conversely, given a derivation of $\psi$ from $T \cup \{\varphi\}$, add the assumption $\varphi$ at the leaves discharging to $\varphi$ and apply $\to I$ at the root. $\square$</p>
+<p><strong>Definition (sequent notation).</strong> The derivation tree is more compactly written as a <strong>sequent</strong> $\Gamma \vdash \varphi$, where $\Gamma$ is the multiset of undischarged assumptions and $\varphi$ the conclusion. The rules are then displayed with sequents as premises and conclusion. The derivation of the previous proposition is exactly the passage between the two notations.</p>
+<h3 id="intuitionistic-and-classical-logic">Intuitionistic and Classical Logic</h3>
+<p>The rules above constitute <strong>intuitionistic</strong> logic: the systems of <em>Logic and Proof</em> and <em>Formal Logic and Computability</em> without the axiom of excluded middle. Classical logic is obtained by adjoining one of the equivalent principles</p>
+<p>$$
+\varphi \vee \neg\varphi, \qquad \neg\neg\varphi \to \varphi, \qquad (\varphi \to \psi) \to \neg\varphi \vee \psi,
+$$</p>
+<p>any one of which is derivable from the others in the intuitionistic system together with the rest. The rule of <strong>double-negation elimination</strong> is the official classical addition, and the resulting system is denoted NK, with the intuitionistic one NJ.</p>
+<p><strong>Example.</strong> $\varphi \vee \neg\varphi$ is not derivable in NJ. If it were, a normal derivation of it would exist by the normalisation theorem below, and a derivation of a disjunction that contains no detour must end in a $\vee I$ rule with the same conclusion; it would then be a derivation of $\varphi$ from no assumptions or a derivation of $\neg\varphi$ from no assumptions, and neither is derivable for a general $\varphi$ (a normal derivation of $\neg\varphi$ would end in $\to I$ with conclusion $\varphi \to \bot$, which requires a derivation of $\bot$ from $\varphi$, and no rule introduces $\bot$).</p>
+<p>The disjunction property illustrated by the example is proved in general for intuitionistic logic below; it fails for classical logic, since $\varphi \vee \neg\varphi$ is a theorem with neither disjunct a theorem.</p>
+<p><strong>Definition.</strong> A formula is <strong>classically valid</strong> if it holds in every structure in the sense of <em>Model Theory</em>; it is <strong>intuitionistically valid</strong> if it is derivable in NJ. Soundness and completeness for NJ are stated with respect to <strong>Kripke models</strong>, and the classical completeness theorem of <em>Formal Logic and Computability</em> is the special case of a single world; the corpus cites the standard treatment for the details.</p>
+<h2 id="sequent-calculi">Sequent Calculi</h2>
+<h3 id="sequents-and-rules">Sequents and Rules</h3>
+<p>A second formulation, more symmetric than natural deduction, is Gentzen's <strong>sequent calculus</strong>.</p>
+<p><strong>Definition.</strong> A <strong>sequent</strong> is an expression $\Gamma \vdash \Delta$ in which $\Gamma$ and $\Delta$ are finite multisets of formulas. Its intended meaning is that the conjunction of $\Gamma$ implies the disjunction of $\Delta$. The <strong>sequent calculus LK</strong> has the following rules, in addition to the <strong>initial sequents</strong> $\varphi \vdash \varphi$ and $\bot \vdash$.</p>
+<p>$$
+\frac{\Gamma \vdash \Delta, \varphi \qquad \varphi, \Pi \vdash \Lambda}{\Gamma, \Pi \vdash \Delta, \Lambda} \ \text{cut}
+\qquad
+\frac{\Gamma \vdash \Delta, \varphi \qquad \Gamma \vdash \Delta, \psi}{\Gamma \vdash \Delta, \varphi \wedge \psi} \wedge R
+\qquad
+\frac{\varphi, \Gamma \vdash \Delta}{\varphi \wedge \psi, \Gamma \vdash \Delta} \wedge L_1
+$$</p>
+<p>$$
+\frac{\varphi, \Gamma \vdash \Delta, \psi}{\Gamma \vdash \Delta, \varphi \to \psi} \to R
+\qquad
+\frac{\Gamma \vdash \Delta, \varphi \qquad \psi, \Pi \vdash \Lambda}{\varphi \to \psi, \Gamma, \Pi \vdash \Delta, \Lambda} \to L
+$$</p>
+<p>$$
+\frac{\varphi, \Gamma \vdash \Delta \qquad \psi, \Gamma \vdash \Delta}{\varphi \vee \psi, \Gamma \vdash \Delta} \vee L
+\qquad
+\frac{\Gamma \vdash \Delta, \varphi}{\Gamma \vdash \Delta, \varphi \vee \psi} \vee R_1
+\qquad
+\frac{\Gamma \vdash \Delta, \varphi(x)}{\Gamma \vdash \Delta, \forall x\,\varphi(x)} \forall R
+$$</p>
+<p>with the remaining rules for $\neg$, $\forall L$, the two $\exists$ rules and the <strong>structural rules</strong> of weakening and contraction. The system <strong>LJ</strong> for intuitionistic logic restricts $\Delta$ to at most one formula, and the restriction is what excludes the classical derivations of excluded middle.</p>
+<p><strong>Example.</strong> The law of excluded middle has the following LK derivation, read from the initial sequent at the top downwards:</p>
+<p>$$
+\frac{\varphi \vdash \varphi}{\vdash \varphi, \neg\varphi} \neg R
+\quad \longrightarrow \quad
+\frac{\vdash \varphi, \neg\varphi}{\vdash \varphi \vee \neg\varphi, \neg\varphi} \vee R_1
+\quad \longrightarrow \quad
+\frac{\vdash \varphi \vee \neg\varphi, \neg\varphi}{\vdash \varphi \vee \neg\varphi, \varphi \vee \neg\varphi} \vee R_2
+\quad \longrightarrow \quad
+\frac{\vdash \varphi \vee \neg\varphi, \varphi \vee \neg\varphi}{\vdash \varphi \vee \neg\varphi} CR
+$$</p>
+<p>The final step is contraction on the right, which is available in LK; in LJ the right side holds at most one formula, so the two copies of $\varphi \vee \neg\varphi$ cannot both appear and the derivation is blocked.</p>
+<h3 id="cut-elimination">Cut Elimination</h3>
+<p><strong>Definition.</strong> The <strong>cut rule</strong> is the only rule of LK in which a formula, the <strong>cut formula</strong> $\varphi$, disappears in passing from the premises to the conclusion. The <strong>subformula property</strong> of a derivation is that every formula occurring in it is a subformula of the conclusion or of the initial sequents; a derivation with the cut rule need not have it.</p>
+<p><strong>Theorem (Gentzen's Hauptsatz; cut elimination).</strong> Every LK derivation of a sequent has a cut-free derivation of the same sequent. The same holds for LJ.</p>
+<p><strong>Proof sketch.</strong> One assigns to each derivation a <strong>cut rank</strong>, the maximum size of a cut formula, and a measure of the number of cuts of that rank, and shows that a derivation with a cut can be transformed into one with a smaller measure. The essential case is a cut whose cut formula is introduced by the last rules on both sides; it is replaced by two cuts on formulas of smaller size, using the rules that introduced the connectives. The transformation is the <strong>reduction</strong> of the cut, and iterating it terminates by induction on the cut rank, with the number of cuts of maximal rank decreasing at each step. $\square$</p>
+<p><strong>Corollary (subformula property).</strong> Every theorem of LK or LJ has a derivation in which every formula is a subformula of the theorem.</p>
+<p><strong>Corollary (consistency).</strong> LK is consistent: the sequent $\vdash$ (the empty sequent, expressing a contradiction) has no cut-free derivation, since no rule has the empty sequent as conclusion and the initial sequents have formulas on at least one side.</p>
+<p><strong>Corollary (disjunction and existence properties of LJ).</strong> If $\vdash \varphi \vee \psi$ is derivable in LJ, then $\vdash \varphi$ or $\vdash \psi$; if $\vdash \exists x\,\varphi(x)$ is derivable, then $\vdash \varphi(t)$ is derivable for some term $t$.</p>
+<p><strong>Proof sketch.</strong> In a cut-free derivation of $\vdash \varphi \vee \psi$, the last rule must be the introduction of the disjunction, since no other rule can introduce a disjunction on the right without a cut; its premise is a derivation of one of the disjuncts. For the existential statement, the last rule must be $\exists R$, and its premise supplies a witness term. $\square$</p>
+<p>Cut elimination is the central theorem of proof theory and the model of every later result of the same shape: it converts a derivation into one whose structure follows the structure of its conclusion, and the byproducts — the subformula property, consistency, the disjunction property — are all immediate from that structure.</p>
+<p><strong>Remark (consistency of arithmetic).</strong> For a system with the induction schema, cut elimination does not suffice, because the axiom of induction is not a rule of the calculus and the cut-elimination argument applies only to the logical rules. Gentzen's consistency proof for arithmetic uses cut elimination on an infinitary version of the calculus together with transfinite induction up to the ordinal $\varepsilon_0 = \sup\{\omega, \omega^\omega, \omega^{\omega^\omega}, \ldots\}$, and the ordinal is the <strong>proof-theoretic ordinal</strong> of the theory. That the well-foundedness of $\varepsilon_0$ is itself unprovable in arithmetic is the content of Gödel's second incompleteness theorem of <em>Formal Logic and Computability</em> applied to Gentzen's proof.</p>
+<h2 id="normalisation">Normalisation</h2>
+<h3 id="normalisation-for-natural-deduction">Normalisation for Natural Deduction</h3>
+<p><strong>Definition.</strong> In a natural-deduction derivation, an <strong>introduction followed immediately by an elimination</strong> of the same connective is a <strong>detour</strong> (or <strong>redex</strong>), for instance a derivation of $\varphi \wedge \psi$ by $\wedge I$ used as the premise of $\wedge E_1$, or a derivation of $\varphi \to \psi$ by $\to I$ used as the premise of $\to E$. The <strong>reduction</strong> of a detour replaces it by a derivation of the same conclusion without it.</p>
+<p><strong>Theorem (normalisation).</strong> Every derivation in NJ reduces to a <strong>normal</strong> derivation, in which no detour occurs. Consequently every derivation in NJ reduces to one with the <strong>subformula property</strong>: every formula in it is a subformula of the conclusion or of an undischarged assumption.</p>
+<p><strong>Proof sketch.</strong> Assign to each formula its <strong>degree</strong> and to each derivation the pair (highest degree of a detour, number of detours of that degree). The reduction of a detour of maximal degree produces detours of strictly smaller degree or fewer detours of the same degree, so the pair decreases in the lexicographic order on natural numbers, and the process terminates. The result is a normal derivation. In a normal derivation, an introduction rule cannot be followed by an elimination of the same connective, which forces the derivation to have the <strong>path property</strong>: every formula on a path from a leaf to the root is a subformula of the leaf or of the conclusion, giving the subformula property. $\square$</p>
+<p><strong>Corollary.</strong> NJ is consistent: there is no derivation of $\bot$ from no assumptions. Indeed, $\bot$ has no introduction rule, so a normal derivation of $\bot$ must end in an elimination rule; its major premise is then a formula which, by normality, is the conclusion of an introduction rule, and the two form a detour, unless the major premise is an undischarged assumption — and there is none. Hence no derivation of $\bot$ from no assumptions exists.</p>
+<h3 id="strong-normalisation-for-typed-systems">Strong Normalisation for Typed Systems</h3>
+<p><strong>Definition.</strong> A term of a typed system is <strong>strongly normalising</strong> if every reduction sequence starting from it terminates. It is <strong>weakly normalising</strong> if some sequence terminates. A system has the <strong>Church–Rosser</strong> (confluence) property if whenever a term reduces to two terms, both reduce to a common term.</p>
+<p><strong>Theorem (strong normalisation).</strong> Every term of the simply typed lambda calculus of the next section is strongly normalising; equivalently, every derivation of intuitionistic propositional logic reduces to a normal form in finitely many steps, whatever the order of reduction.</p>
+<p><strong>Proof sketch.</strong> One assigns to each type a <strong>reducibility candidate</strong>, a set of strongly normalising terms closed under reduction and under application, and proves by induction on the type that every term of that type belongs to the candidate. The argument, due to Tait, is the prototype of the <strong>computability</strong> arguments used throughout proof theory and type theory. $\square$</p>
+<p>Strong normalisation is strictly stronger than the normalisation theorem for derivations; it says that no clever choice of reduction order can cause a loop, which is what is needed to run a typed program with the guarantee that it halts. The untyped lambda calculus below fails it.</p>
+<h2 id="the-lambda-calculus">The Lambda Calculus</h2>
+<h3 id="syntax-and-reduction">Syntax and Reduction</h3>
+<p><strong>Definition.</strong> The <strong>terms</strong> of the lambda calculus are the variables $x, y, \ldots$, the <strong>applications</strong> $MN$ and the <strong>abstractions</strong> $\lambda x.\,M$, together with the constant for the identity and function formation. <strong>$\alpha$-conversion</strong> renames bound variables, and <strong>substitution</strong> $M[x := N]$ replaces free occurrences of $x$ by $N$, renaming bound variables to avoid capture. The <strong>$\beta$-reduction</strong> is</p>
+<p>$$
+(\lambda x.\,M)\,N \to_\beta M[x := N],
+$$</p>
+<p>and <strong>$\eta$-reduction</strong> is $\lambda x.\,Mx \to_\eta M$ when $x$ is not free in $M$. A term is in <strong>$\beta$-normal form</strong> if it contains no $\beta$-redex $(\lambda x.\,M)N$.</p>
+<p><strong>Theorem (Church–Rosser).</strong> The relation $\to_\beta$ is confluent: if $M \to_\beta^* N_1$ and $M \to_\beta^* N_2$ then there is $P$ with $N_1 \to_\beta^* P$ and $N_2 \to_\beta^* P$. Consequently a term has at most one $\beta$-normal form.</p>
+<p>The proof is by the <strong>Tait–Martin-Löf</strong> method of parallel reduction, or by the Rosser argument on residuals; either reduces confluence to a diamond property for a suitably defined reduction.</p>
+<p><strong>Example (Church numerals).</strong> The natural numbers are represented by the terms</p>
+<p>$$
+\bar n = \lambda f.\,\lambda x.\,\underbrace{f(f(\cdots f}_{n}\,x)\cdots),
+$$</p>
+<p>so that $\bar 0 = \lambda f.\lambda x.x$ and $\bar{n+1} = \lambda f.\lambda x.\,f(\bar n\,f\,x)$. Addition is represented by the term</p>
+<p>$$
+\mathsf{add} = \lambda m.\lambda n.\lambda f.\lambda x.\,m\,f\,(n\,f\,x),
+$$</p>
+<p>which reduces as $\mathsf{add}\,\bar m\,\bar n \to_\beta^* \overline{m+n}$. The verification is by induction on $m$ and is the content of the computation below.</p>
+<p><strong>Example (fixed points).</strong> The <strong>fixed-point combinator</strong></p>
+<p>$$
+Y = \lambda f.\,(\lambda x.\,f(x\,x))(\lambda x.\,f(x\,x))
+$$</p>
+<p>satisfies $Y\,f =_\beta f\,(Y\,f)$ for every term $f$, since both sides reduce to $f\big((\lambda x.\,f(x\,x))(\lambda x.\,f(x\,x))\big)$; every term therefore has a fixed point up to $\beta$-conversion. The property is the source of both the computational power of the calculus and its failure to be normalising: the term $\Omega = (\lambda x.\,x\,x)(\lambda x.\,x\,x)$ reduces in one step to itself, so it has no normal form.</p>
+<h3 id="undecidability-and-expressiveness">Undecidability and Expressiveness</h3>
+<p><strong>Theorem (Church; Turing).</strong> The untyped lambda calculus is computationally universal: every recursive function is represented by a term. Moreover the problem of deciding whether a given term has a normal form, and the problem of deciding whether two terms are $\beta$-convertible, are undecidable.</p>
+<p><strong>Proof sketch.</strong> The Church numerals and the combinators for primitive recursion represent the initial recursive functions of <em>Formal Logic and Computability</em>, and minimisation is represented by a search whose termination is tested by a fixed point; the converse representation of terms by natural numbers gives the undecidability by the halting problem. The fixed-point combinator $Y$ is the mechanism that makes the representation of recursion possible. $\square$</p>
+<h2 id="the-curryhoward-correspondence">The Curry–Howard Correspondence</h2>
+<h3 id="propositions-as-types">Propositions as Types</h3>
+<p>The correspondence is a dictionary in which formulas are types, derivations are terms, and the rules of natural deduction are the typing rules of a calculus of functions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Logic</th>
+<th>Type theory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Formula $\varphi$</td>
+<td>Type $A$</td>
+</tr>
+<tr>
+<td>Derivation of $\varphi$ from assumptions</td>
+<td>Term $M$ of type $A$ in context</td>
+</tr>
+<tr>
+<td>Assumption $\varphi$</td>
+<td>Variable $x : A$</td>
+</tr>
+<tr>
+<td>$\varphi \to \psi$</td>
+<td>Function type $A \to B$</td>
+</tr>
+<tr>
+<td>$\varphi \wedge \psi$</td>
+<td>Product type $A \times B$</td>
+</tr>
+<tr>
+<td>$\varphi \vee \psi$</td>
+<td>Sum type $A + B$</td>
+</tr>
+<tr>
+<td>$\bot$</td>
+<td>Empty type $\mathbf{0}$</td>
+</tr>
+<tr>
+<td>$\top$</td>
+<td>Unit type $\mathbf{1}$</td>
+</tr>
+<tr>
+<td>$\forall x\,\varphi$</td>
+<td>Dependent function type $\Pi x : A.\,B(x)$</td>
+</tr>
+<tr>
+<td>$\exists x\,\varphi$</td>
+<td>Dependent sum type $\Sigma x : A.\,B(x)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (Curry–Howard, for implication).</strong> The derivations of the implicational fragment of intuitionistic propositional logic from assumptions $\varphi_1,\ldots,\varphi_n$ correspond exactly to the terms of the simply typed lambda calculus in context $x_1 : \varphi_1, \ldots, x_n : \varphi_n$, with</p>
+<p>$$
+\frac{\Gamma, x : \varphi \vdash M : \psi}{\Gamma \vdash \lambda x.\,M : \varphi \to \psi} \to I
+\qquad
+\frac{\Gamma \vdash M : \varphi \to \psi \qquad \Gamma \vdash N : \varphi}{\Gamma \vdash M\,N : \psi} \to E,
+$$</p>
+<p>and $\beta$-reduction of terms corresponds to the reduction of detours in the derivation, while $\eta$-conversion corresponds to the two-way equivalence of a detour with the derivation obtained by removing it.</p>
+<p><strong>Proof.</strong> Structural induction on derivations and on terms: each rule of NJ corresponds to a typing rule, and each typing rule to a rule of NJ, with the variables of the context corresponding to undischarged assumptions. The reduction of a detour $(\to I)$ followed by $(\to E)$ is exactly the substitution $(\lambda x.M)N \to_\beta M[x:=N]$. $\square$</p>
+<p><strong>Corollary.</strong> Normalisation of NJ derivations is equivalent to weak normalisation of the simply typed lambda calculus, and the disjunction and existence properties of NJ are the <strong>canonicity</strong> properties of the corresponding type theory.</p>
+<p>The correspondence extends to the full language: product types realise conjunctions, sum types disjunctions, the empty type falsity, and dependent types the quantifiers. Under it, a proof of a proposition is a program of the corresponding type and the normal form of the program is the canonical proof; the execution of the program is the removal of detours in the proof. This is the reason type theory is the foundation of proof assistants and of the computational reading of constructive mathematics.</p>
+<h3 id="simply-typed-lambda-calculus">Simply Typed Lambda Calculus</h3>
+<p><strong>Definition.</strong> The <strong>simple types</strong> are generated from a set of base types by the rule: if $A$ and $B$ are types, so is $A \to B$. The <strong>simply typed lambda calculus</strong> $\lambda_\to$ has the terms of the lambda calculus together with the typing rules above, the product and sum rules when the corresponding connectives are present, and the base constants. Its reduction is $\beta$ (and $\eta$).</p>
+<p><strong>Theorem.</strong> $\lambda_\to$ has the Church–Rosser property and is strongly normalising. Its definable functions on the natural numbers — those represented by terms of type $(\iota \to \iota) \to \iota \to \iota$ for a base type $\iota$ — are exactly the <strong>extended polynomials</strong>, that is, the functions built from addition, multiplication and the conditional on zero; consequently the untyped fixed-point combinator $Y$ is not typable in $\lambda_\to$.</p>
+<p>Strong normalisation is the proof-theoretic strength of $\lambda_\to$: since every term normalises, every function definable in it is total, and the class of definable functions is small. Adding the fixed-point combinator to a typed system destroys strong normalisation, and the programming languages that admit general recursion pay for it with the possibility of nontermination.</p>
+<h3 id="polymorphism-and-dependent-types">Polymorphism and Dependent Types</h3>
+<p><strong>Definition.</strong> <strong>System F</strong> (the second-order lambda calculus, or the polymorphic lambda calculus) adds <strong>type variables</strong> and <strong>quantification over types</strong>: if $A$ is a type, so is $\forall X.\,A$, with the rules</p>
+<p>$$
+\frac{\Gamma \vdash M : A}{\Gamma \vdash \Lambda X.\,M : \forall X.\,A} \quad (X \text{ not free in } \Gamma)
+\qquad
+\frac{\Gamma \vdash M : \forall X.\,A}{\Gamma \vdash M\,B : A[X := B]}
+$$</p>
+<p>and the corresponding $\beta$-reduction $(\Lambda X.M)B \to M[X:=B]$. System F is strongly normalising and its definable functions on the Church numerals are exactly the ones provably total in <strong>second-order arithmetic</strong>, which is the proof-theoretic strength of the system. The impredicativity of $\forall X$ is what gives it that strength: a type may be quantified over all types, including itself.</p>
+<p><strong>Definition.</strong> A <strong>dependent type theory</strong> adds types depending on terms. If $A$ is a type and $B(x)$ a type for $x : A$, then $\Pi x : A.\,B(x)$ is the type of functions taking $x$ to a term of $B(x)$, and $\Sigma x : A.\,B(x)$ is the type of pairs $(a,b)$ with $a : A$ and $b : B(a)$. The <strong>lambda cube</strong> arranges the systems obtained by allowing, independently, terms to depend on types ($\lambda_\to$ and its extension to polymorphism), types to depend on types (type operators) and types to depend on terms (dependency); its eight vertices include $\lambda_\to$, System F, and the <strong>calculus of constructions</strong>, the type theory of the Coq proof assistant.</p>
+<p><strong>Definition.</strong> <strong>Martin-Löf type theory</strong> is a dependent type theory with $\Pi$, $\Sigma$, a type of natural numbers, and <strong>identity types</strong> $\mathrm{Id}_A(a,b)$, whose elements are witnesses that $a$ and $b$ are equal. Its <strong>propositions-as-types</strong> reading strengthens the Curry–Howard correspondence: a proposition is a type, a proof is an element, and the equality of two proofs is itself a type. The identity types are the origin of <strong>homotopy type theory</strong>, in which a type is read as a space and its identity types as path spaces; that reading requires the topological language of Part II and is not developed here.</p>
+<p><strong>Remark.</strong> The correspondence between proofs and terms means that a <strong>proof assistant</strong> is a type checker: a formal proof is a term whose type is the theorem, and the correctness of the proof is the correctness of the typing derivation. The strong normalisation of the underlying type theory is what guarantees that a checked proof cannot be circular, and the impossibility of typing the fixed-point combinator is what forbids a proof from referring to itself. The corpus returns to these systems, where the categorical semantics of the typed calculi — the interpretation of types as objects and terms as morphisms — is available.</p>
+<h2 id="summary">Summary</h2>
+<p>Natural deduction is a calculus of introduction and elimination rules for each connective and quantifier, with assumptions discharged by the introduction rules and with the deduction theorem relating entailment and implication. The intuitionistic system NJ omits the law of excluded middle, and $\varphi \vee \neg\varphi$ is not derivable in it; classical logic NK is obtained by adding the rule of double-negation elimination. The sequent calculus LK is the symmetric formulation, with initial sequents and structural rules, and LJ is its intuitionistic restriction.</p>
+<p>Gentzen's cut-elimination theorem removes the cut rule from every derivation, yielding the subformula property, the consistency of the logical systems, and the disjunction and existence properties of LJ. The normalisation theorem for natural deduction is the same result in a different shape, removing detours from a derivation; the consistency of arithmetic requires the stronger method of ordinal analysis, with proof-theoretic ordinal $\varepsilon_0$.</p>
+<p>The lambda calculus has variables, application and abstraction, with $\beta$- and $\eta$-reduction; it is confluent by the Church–Rosser theorem and computationally universal, and the fixed-point combinator $Y$ gives every term a fixed point and produces terms such as $\Omega$ with no normal form, so the calculus is undecidable. The simply typed lambda calculus and its extensions are strongly normalising; the definable functions are the extended polynomials for $\lambda_\to$ and the provably total functions of second-order arithmetic for System F.</p>
+<p>The Curry–Howard correspondence identifies propositions with types, derivations with terms, and the reduction of detours with $\beta$-reduction; product, sum, empty and unit types realise conjunction, disjunction, falsity and truth, and dependent types realise the quantifiers. Martin-Löf type theory adds identity types and gives the propositions-as-types reading its strongest form, and the lambda cube arranges the typed systems by what depends on what. The categorical semantics of these calculi belongs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Gamma \vdash \varphi$</td>
+<td>Sequent: $\varphi$ derivable from the assumptions $\Gamma$</td>
+</tr>
+<tr>
+<td>$\varphi \to \psi$, $\varphi \wedge \psi$, $\varphi \vee \psi$, $\neg\varphi$, $\bot$, $\top$</td>
+<td>Connectives; falsity and truth</td>
+</tr>
+<tr>
+<td>$\forall x\,\varphi$, $\exists x\,\varphi$</td>
+<td>Quantifiers</td>
+</tr>
+<tr>
+<td>$\wedge I, \wedge E$, $\to I, \to E$, $\vee I, \vee E$</td>
+<td>Introduction and elimination rules</td>
+</tr>
+<tr>
+<td>NJ, NK</td>
+<td>Intuitionistic and classical natural deduction</td>
+</tr>
+<tr>
+<td>LK, LJ</td>
+<td>Classical and intuitionistic sequent calculi</td>
+</tr>
+<tr>
+<td>$\Gamma \vdash \Delta$</td>
+<td>Sequent with multisets on both sides</td>
+</tr>
+<tr>
+<td>$M[x := N]$</td>
+<td>Substitution of $N$ for free $x$ in $M$</td>
+</tr>
+<tr>
+<td>$\lambda x.\,M$, $MN$</td>
+<td>Abstraction and application</td>
+</tr>
+<tr>
+<td>$\to_\beta$, $\to_\eta$</td>
+<td>$\beta$-reduction, $\eta$-reduction</td>
+</tr>
+<tr>
+<td>$\bar n$</td>
+<td>Church numeral</td>
+</tr>
+<tr>
+<td>$Y$, $\Omega$</td>
+<td>Fixed-point combinator; the looping term $(\lambda x.xx)(\lambda x.xx)$</td>
+</tr>
+<tr>
+<td>$A \to B$, $A \times B$, $A + B$</td>
+<td>Function, product and sum types</td>
+</tr>
+<tr>
+<td>$\Pi x : A.\,B(x)$, $\Sigma x : A.\,B(x)$</td>
+<td>Dependent function and sum types</td>
+</tr>
+<tr>
+<td>$\mathrm{Id}_A(a,b)$</td>
+<td>Identity type</td>
+</tr>
+<tr>
+<td>$\lambda_\to$, System F</td>
+<td>Simply typed and polymorphic lambda calculus</td>
+</tr>
+<tr>
+<td>$\varepsilon_0$</td>
+<td>Proof-theoretic ordinal of arithmetic</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gerhard Gentzen, "Untersuchungen über das logische Schließen I, II", <em>Mathematische Zeitschrift</em> <strong>39</strong> (1935), 176–210 and 405–431, for natural deduction, the sequent calculus and cut elimination.</li>
+<li>Gerhard Gentzen, "Die Widerspruchsfreiheit der reinen Zahlentheorie", <em>Mathematische Annalen</em> <strong>112</strong> (1936), 493–565, for the consistency of arithmetic by transfinite induction.</li>
+<li>Dag Prawitz, <em>Natural Deduction: A Proof-Theoretical Study</em> (Almqvist and Wiksell, 1965; reprinted Dover, 2006), for normalisation and the structure of normal derivations.</li>
+<li>Jean-Yves Girard, Paul Taylor and Yves Lafont, <em>Proofs and Types</em> (Cambridge University Press, 1989), for System F, strong normalisation and the Curry–Howard correspondence.</li>
+<li>Haskell B. Curry and Robert Feys, <em>Combinatory Logic</em>, vol. 1 (North-Holland, 1958), for the original formulation of the propositions-as-types idea.</li>
+<li>William A. Howard, "The formulae-as-types notion of construction", in <em>To H. B. Curry: Essays on Combinatory Logic, Lambda Calculus and Formalism</em> (Academic Press, 1980), 479–490, for the correspondence in its modern form.</li>
+<li>Per Martin-Löf, <em>Intuitionistic Type Theory</em> (Bibliopolis, 1984), for dependent type theory and identity types.</li>
+<li>Henk Barendregt, <em>The Lambda Calculus: Its Syntax and Semantics</em>, rev. ed. (North-Holland, 1984), for the untyped calculus, confluence and undecidability.</li>
+<li>Wolfram Pohlers, <em>Proof Theory: The First Step into Impredicativity</em> (Springer, 2009), for ordinal analysis and proof-theoretic ordinals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

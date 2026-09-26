@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Diffeomorphism and Homeomorphism Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-diffeomorphism-and-homeomorphism-groups"><strong>List of Diffeomorphism and Homeomorphism Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the groups of homeomorphisms, diffeomorphisms, mapping classes and birational maps that the corpus meets, together with the automorphism groups of a topological or a smooth structure. The property that the article gathers is that the group is a group of symmetries of a <em>structure</em> on a space rather than of a form or a distance, and the entries are grouped by the category in which the structure lives: topological, smooth, symplectic or algebraic. Every entry points to the article that introduces the group, and the article introduces nothing and proves nothing.</p>
+<p>The unifying feature of the list is that the groups are typically infinite-dimensional and that the algebraic object studied is not the group itself but its connected components, its isotopy or homotopy type, or its quotient by the identity component. The mapping class group, the flux group and the Torelli group are the quotients and subgroups by which the large transformation groups are made tractable, and the homeomorphism group of the Cantor set is the one case in which the group itself is simple and the topological structure gives the complete invariant.</p>
+<p>The article records examples and non-examples side by side. Beside the transformation groups it lists the groups that are only quotients of them, the groups that fail to be finite-dimensional Lie groups, and the groups whose elements are only locally defined, each with the failure named and the article that records it.</p>
+<h2 id="homeomorphism-groups">Homeomorphism Groups</h2>
+<p>A homeomorphism group is the group of all self-homeomorphisms of a topological space, the $C^0$ member of the hierarchy of structure-preserving transformation groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Homeo}(X)$</td>
+<td>the group of all homeomorphisms $X \to X$, the $C^0$-ambient group</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(X)$</td>
+<td>the group of automorphisms of a structure on a set $X$, of which $\operatorname{Homeo}(X)$ is the topological case</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(X)$</td>
+<td>the group of all bijections, the automorphism group of a bare set</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the symplectic homeomorphism group</td>
+<td>the $C^0$-closure of $\operatorname{Ham}(M,\omega)$ in $\operatorname{Homeo}(M)$, a closed subgroup that is not a Lie group</td>
+<td><em>Diffeomorphism Groups</em>, §The $C^0$-Closure and the Rigidity</td>
+</tr>
+<tr>
+<td>$\operatorname{Homeo}_0(S,\partial S)$</td>
+<td>the homeomorphisms of a surface isotopic to the identity relative to the boundary</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The homeomorphism group is the group whose quotient by its identity component is the mapping class group, and the difference between a homeomorphism and a diffeomorphism is invisible to the topology but visible to the smooth structure: the two groups have the same set of connected components on a smooth manifold but not the same local structure.</p>
+<h2 id="diffeomorphism-groups">Diffeomorphism Groups</h2>
+<p>A diffeomorphism group is the group of self-diffeomorphisms of a smooth manifold, the smooth member of the hierarchy, together with its structure-preserving subgroups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Diff}(M)$</td>
+<td>the group of smooth diffeomorphisms $M \to M$</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Diff}^k(M)$</td>
+<td>the group of $C^k$ diffeomorphisms</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Diff}_0(M)$</td>
+<td>the identity component, the diffeomorphisms isotopic to the identity</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Diff}^+(M)$</td>
+<td>the orientation-preserving diffeomorphisms, an index-two subgroup</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Diff}(M,\Omega)$</td>
+<td>the volume-preserving diffeomorphisms, $\mathcal{L}_X\Omega = 0$</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Symp}(M,\omega)$</td>
+<td>the symplectomorphisms, the diffeomorphisms preserving a symplectic form</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Ham}(M,\omega)$</td>
+<td>the Hamiltonian group, the identity component of the group of exact symplectomorphisms</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>the Hofer metric $d_H$</td>
+<td>the metric on $\operatorname{Ham}(M,\omega)$ defined by the Hofer length</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>the flux homomorphism</td>
+<td>the map from $\pi_0(\operatorname{Symp})$ to $H^1$, whose image is the flux group</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>the Virasoro cocycle</td>
+<td>the cocycle on the Lie algebra of vector fields of the circle</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Lie algebra of $\operatorname{Diff}(M)$ is the Lie algebra of vector fields, the exponential is the time-one map of the flow, and the group is the differentiable structure's own symmetry group; it is infinite-dimensional and its subgroups defined by a preserved structure — a volume form, a symplectic form, a contact form — recover the classical transformation groups of Part II. The Hofer metric and the flux homomorphism are the two invariants that survive the passage from the Lie algebra to the group and give the symplectomorphism group its large-scale geometry.</p>
+<h2 id="the-mapping-class-group">The Mapping Class Group</h2>
+<p>The mapping class group is the group of isotopy classes of orientation-preserving homeomorphisms or diffeomorphisms of a surface, equivalently the component group of the orientation-preserving diffeomorphism group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Mod}(S) = \pi_0\operatorname{Diff}^+(S)$</td>
+<td>the mapping class group of an oriented surface</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Mod}^{\pm}(S)$</td>
+<td>the extended mapping class group, including the orientation-reversing classes</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>a Dehn twist $T_a$</td>
+<td>the mapping class supported on an annulus about a simple closed curve</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>a pseudo-Anosov class</td>
+<td>a class of stretch factor $\lambda > 1$, of positive topological entropy</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>the Torelli group $\mathcal{I}(S)$</td>
+<td>the kernel of the action on homology</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>the braid group $B_n = \operatorname{Mod}(D^2,n)$</td>
+<td>the mapping class group of the disk with $n$ marked points</td>
+<td><em>Mapping Class Groups</em>; <em>Braid Groups</em></td>
+</tr>
+<tr>
+<td>$Sp_{2g}(\mathbb{Z})$</td>
+<td>the target of the symplectic representation of $\operatorname{Mod}(S_g)$</td>
+<td><em>Mapping Class Groups</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the curve complex $\mathcal{C}(S)$</td>
+<td>the complex on which $\operatorname{Mod}(S)$ acts, encoding the Nielsen–Thurston classification</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>the mapping torus $M_f$</td>
+<td>the three-manifold of a mapping class, hyperbolic exactly for the pseudo-Anosov classes</td>
+<td><em>Mapping Class Groups</em>; <em>Low-Dimensional Topology</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The mapping class group is the quotient of the homeomorphism group by its identity component, and the Nielsen–Thurston classification of its elements — finite order, reducible or pseudo-Anosov — is the surface analogue of the classification of the Möbius transformations. The Torelli group, the Johnson homomorphism and the Miller–Morita–Mumford classes measure the deviation of the group from its homology approximation, and the Dehn twists generate it.</p>
+<h2 id="birational-maps-and-algebraic-automorphisms">Birational Maps and Algebraic Automorphisms</h2>
+<p>In algebraic geometry the analogue of the diffeomorphism group is the group of birational maps, and for a smooth or topological structure there is in addition the automorphism group of the structure itself.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the birational maps of a variety</td>
+<td>the rational maps with a rational inverse, forming a group under composition</td>
+<td><em>Algebraic Geometry</em>, §Rational Maps, Function Fields and Birational Geometry</td>
+</tr>
+<tr>
+<td>the automorphisms of a variety</td>
+<td>the birational maps that are everywhere defined isomorphisms</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the blow-up</td>
+<td>the birational map replacing a subvariety by the projectivised normal directions</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_k(M_n(k)) \cong PGL_n(k)$</td>
+<td>the automorphism group of a matrix algebra, an algebraic transformation group</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(G)$</td>
+<td>the group of automorphisms of a group, a transformation group of the underlying set</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(G) \cong G/Z(G)$</td>
+<td>the inner automorphisms, the image of the conjugation action</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The birational group is the algebraic analogue of the group of homeomorphisms of a compact manifold, but it is larger than the automorphism group of the variety and its elements are only partially defined: a birational map is an isomorphism on a dense open set and may contract or blow up a subvariety. The passage from the birational group to the automorphism group is the algebraic analogue of the passage from all homeomorphisms to those preserving the smooth structure, and the blow-up is the elementary move by which the two are related.</p>
+<h2 id="the-cantor-set-and-the-thompson-groups">The Cantor Set and the Thompson Groups</h2>
+<p>The homeomorphism group of the Cantor set is the one infinite transformation group of the list whose algebraic structure is simple, and its finitely generated subgroups — the Thompson groups — are the standard examples.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Cantor set</td>
+<td>the compact, perfect, totally disconnected space of the corpus</td>
+<td><em>Symbolic Dynamics</em>; <em>Dimension Theory</em></td>
+</tr>
+<tr>
+<td>the full shift</td>
+<td>a homeomorphism of the Cantor set, conjugate to the middle-third set</td>
+<td><em>Symbolic Dynamics</em></td>
+</tr>
+<tr>
+<td>the homeomorphism group of the Cantor set</td>
+<td>the group of all self-homeomorphisms of the Cantor set, a simple group</td>
+<td><em>Thompson Groups and the Cantor Set</em> (planned)</td>
+</tr>
+<tr>
+<td>Thompson's group $V$</td>
+<td>the finitely presented subgroup acting on the Cantor set by prefix replacement</td>
+<td><em>Thompson Groups and the Cantor Set</em> (planned)</td>
+</tr>
+<tr>
+<td>Thompson's groups $F$ and $T$</td>
+<td>the subgroups acting on the interval and the circle; $T$ acts on the boundary of the disk</td>
+<td><em>Thompson Groups and the Cantor Set</em> (planned)</td>
+</tr>
+<tr>
+<td>the stabiliser of a point of the Cantor set</td>
+<td>the subgroup fixing a point, related to Thompson's group $F$</td>
+<td><em>Thompson Groups and the Cantor Set</em> (planned)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Cantor set is the unique compact, perfect, totally disconnected metrisable space up to homeomorphism, so its homeomorphism group is a complete invariant of that class of space; the result, and the simplicity of the group, belong to the planned article, to which every entry of this section points. The relation to the rest of the list is that Thompson's group $V$ is a finitely presented group of homeomorphisms of a totally disconnected space, so it sits beside the mapping class groups as a group whose elements are transformations of a low-dimensional space.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the diffeomorphism and homeomorphism groups, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a diffeomorphism or homeomorphism group</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Diff}(M)$ as a finite-dimensional Lie group</td>
+<td>it is infinite-dimensional, a Fréchet manifold, not a Lie group in the sense of the list</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>$\pi_0\operatorname{Diff}(S)$</td>
+<td>it is the mapping class group, recorded above as a quotient of $\operatorname{Diff}(S)$ rather than as that group</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>a birational map of $\mathbb{P}^2$ as an automorphism</td>
+<td>it is only a rational map, defined on a dense open set</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the orthogonal group $O(n)$</td>
+<td>defined by a form, it belongs to the classical groups rather than the structure-preserving groups</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the general linear group $GL(n,\mathbb{R})$</td>
+<td>the automorphism group of a vector space, a finite-dimensional linear group</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>the isometry group $\operatorname{Isom}(M,g)$</td>
+<td>defined by a metric rather than by a structure on the space; it belongs to the isometry groups of the Riemannian list</td>
+<td><em>Riemannian Geometry</em>, §Isometries and the Myers–Steenrod Theorem</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the groups of homeomorphisms, diffeomorphisms, mapping classes and birational maps of the corpus. The homeomorphism groups open the list, with $\operatorname{Homeo}(X)$ as the $C^0$ member of the hierarchy and with the Cantor set as the space whose homeomorphism group is simple; the diffeomorphism groups follow, with $\operatorname{Diff}(M)$, its identity component, its orientation-preserving and volume-preserving subgroups, and the symplectomorphism and Hamiltonian groups with their flux and Hofer invariants; the mapping class group is the component group of the surface diffeomorphisms, with its Dehn twists, its pseudo-Anosov classes, its Torelli subgroup and its braid-group specialisation; and the birational and algebraic automorphism groups close the list. Beside the examples stand the non-examples: the diffeomorphism group is not a finite-dimensional Lie group, the mapping class group is a quotient of the diffeomorphism group and not the group itself, and a birational map is only locally defined.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Homeo}(X)$, $\operatorname{Homeo}_0(S,\partial S)$</td>
+<td>Homeomorphism group; its identity component relative to the boundary</td>
+</tr>
+<tr>
+<td>$\operatorname{Diff}(M)$, $\operatorname{Diff}^k(M)$, $\operatorname{Diff}_0(M)$, $\operatorname{Diff}^+(M)$</td>
+<td>Diffeomorphism group, its $C^k$ version, its identity component, its orientation-preserving subgroup</td>
+</tr>
+<tr>
+<td>$\operatorname{Diff}(M,\Omega)$</td>
+<td>Volume-preserving diffeomorphisms</td>
+</tr>
+<tr>
+<td>$\operatorname{Symp}(M,\omega)$, $\operatorname{Ham}(M,\omega)$</td>
+<td>Symplectomorphisms; Hamiltonian group</td>
+</tr>
+<tr>
+<td>$d_H$, $\Gamma$</td>
+<td>Hofer metric; flux group</td>
+</tr>
+<tr>
+<td>$\operatorname{Mod}(S)$, $\operatorname{Mod}^{\pm}(S)$, $\mathcal{I}(S)$</td>
+<td>Mapping class group, extended mapping class group, Torelli group</td>
+</tr>
+<tr>
+<td>$T_a$, $\mathcal{C}(S)$</td>
+<td>Dehn twist; curve complex</td>
+</tr>
+<tr>
+<td>$B_n$</td>
+<td>Braid group $= \operatorname{Mod}(D^2,n)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(X)$, $\operatorname{Inn}(G)$, $\operatorname{Sym}(X)$</td>
+<td>Automorphism group of a structure; inner automorphisms; symmetric group</td>
+</tr>
+<tr>
+<td>$V$, $F$, $T$</td>
+<td>Thompson groups (planned article)</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{R}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(M,g)$</td>
+<td>Isometry group of a metric, a Lie group by Myers–Steenrod</td>
+</tr>
+<tr>
+<td>$\operatorname{Aff}(n)$</td>
+<td>The affine group, $GL(n)\ltimes\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^n$</td>
+<td>Projective space; the plane $\mathbb{P}^2$ of the birational maps</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_X$</td>
+<td>The Lie derivative along the field $X$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Augustin Banyaga, <em>The Structure of Classical Diffeomorphism Groups</em> (Kluwer, 1997), for the diffeomorphism groups, their subgroups and the flux homomorphism.</li>
+<li>Dusa McDuff and Dietmar Salamon, <em>Introduction to Symplectic Topology</em> (Oxford University Press, 3rd ed. 2017), for the symplectomorphism and Hamiltonian groups and the Hofer metric.</li>
+<li>Benson Farb and Dan Margalit, <em>A Primer on Mapping Class Groups</em> (Princeton University Press, 2012), for the mapping class group, the Dehn twists and the Nielsen–Thurston classification.</li>
+<li>James Belk, <em>The Structure of Thompson's Groups $F$ and $T$</em> (Ph.D. thesis, Cornell University, 2004), for the homeomorphism group of the Cantor set and the Thompson groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Central Simple Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-central-simple-algebras"><strong>List of Central Simple Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the central simple algebras over a field that the corpus meets, together with the algebras that fail to be central or fail to be simple. A central simple algebra is a finite-dimensional algebra with $1 \neq 0$ whose centre is exactly the scalar copy of the field and whose only two-sided ideals are $0$ and the algebra itself; its dimension is a perfect square, its degree, and it is a matrix algebra over a central division algebra by Wedderburn's structure theorem. Every entry points to the article that introduces the object.</p>
+<p>The list is a proper subclass of <em>List of Algebras</em>: that article carries the algebras over a field of the corpus with their dimension, their centre and their ideals, and this one carries the central simple algebras, with the degree of each and the division algebra it is a matrix algebra over, and beside them the algebras that fail centrality or simplicity.</p>
+<p>This article introduces nothing and proves nothing. It records examples and non-examples side by side, a non-example being an algebra whose centre is larger than the field, or an algebra with a proper nonzero two-sided ideal, with the failure named and the article that records it.</p>
+<h2 id="the-definition-the-degree-and-the-dimension">The Definition, the Degree and the Dimension</h2>
+<p>A central simple $F$-algebra is central when its centre is the scalar copy $F \cdot 1_A$ of the field, and simple when its only two-sided ideals are $0$ and $A$; the two conditions are independent, and each fails in examples of the corpus. The degree is the square root of the dimension, so centrality and simplicity together force the dimension to be a square.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Central $F$-algebra $A$</td>
+<td>$1 \neq 0$ and $Z(A) = F \cdot 1_A$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Simple algebra $A$</td>
+<td>the only two-sided ideals are $0$ and $A$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Central simple algebra</td>
+<td>central and simple; finite-dimensional over $F$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The degree $\deg(A) = \sqrt{\dim_F A}$</td>
+<td>the square root of the dimension; the dimension of a central simple algebra is always a perfect square</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The tensor product $A \otimes_F B$</td>
+<td>central simple of degree $\deg(A)\deg(B)$ and dimension $(\dim_F A)(\dim_F B)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The opposite algebra $A^{\mathrm{op}}$</td>
+<td>central simple; $A \otimes_F A^{\mathrm{op}} \cong M_{d^2}(F)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Skolem–Noether</td>
+<td>every $F$-algebra automorphism of $A$ is inner, and $\operatorname{Aut}_F(A) \cong A^\times/F^\times$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The centralizer $C_A(B)$ and the double centralizer</td>
+<td>$C_A(B)$ has dimension $\dim_F A / \dim_F B$ for a simple subalgebra $B$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The reduced trace and norm $\operatorname{Trd}, \operatorname{Nrd}$</td>
+<td>the degree-$d$ analogues of the trace and determinant, becoming them over a splitting field $L$ with $A \otimes_F L \cong M_d(L)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Simplicity is detected after base change, since a central simple algebra becomes a full matrix algebra after a suitable extension of scalars, and centrality and simplicity are both preserved by base change; the phrase <em>central over $F$</em> names the ground field, which is not a matter of indifference: the biquaternions have centre $\mathbb{C}$, so they are central simple over $\mathbb{C}$ and not central over $\mathbb{R}$.</p>
+<h2 id="the-central-simple-algebras-of-the-corpus">The Central Simple Algebras of the Corpus</h2>
+<p>The examples fall into three families: the matrix algebras, which are the split case; the division algebras, which are the non-split case; and the four-dimensional quaternion algebras, which are the first case where both occur.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Its degree and simplicity</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(F)$, the matrix algebra</td>
+<td>central simple of degree $n$ and dimension $n^2$; centre $F I_n$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>A finite-dimensional central division algebra $D$ over $F$</td>
+<td>central simple exactly when its centre is $F$; degree $\deg(D)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The quaternion algebra $(a,b)_F$</td>
+<td>central simple of degree $2$ and dimension $4$; either a division algebra or $M_2(F)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H} = (-1,-1)_{\mathbb{R}}$</td>
+<td>the real quaternion algebra; a central division algebra over $\mathbb{R}$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>The biquaternions $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$</td>
+<td>central simple over $\mathbb{C}$, where it is $M_2(\mathbb{C})$; simple but not central over $\mathbb{R}$</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>The field $F$ itself</td>
+<td>central simple of degree $1$; the identity of the Brauer group</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The matrix algebra is central simple because its centre is the scalars and its matrix units generate it from any nonzero element, and the quaternion algebras are the four-dimensional case: $(a,b)_F$ is a division algebra for suitable $a$ and $b$, and otherwise it splits to $M_2(F)$.</p>
+<h2 id="the-division-algebra-part-the-index-and-the-exponent">The Division Algebra Part, the Index and the Exponent</h2>
+<p>Wedderburn's structure theorem writes every central simple algebra as a matrix algebra over a central division algebra, and the size of that division algebra is the index of the class.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wedderburn's structure theorem</td>
+<td>$A \cong M_n(D)$ with $D$ a central division $F$-algebra, determined up to isomorphism</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The index $\operatorname{ind}(A) = \sqrt{\dim_F D} = \deg(D)$</td>
+<td>the degree of the division algebra part; it divides the degree $\deg(A)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>A splitting field $L/F$</td>
+<td>a field extension with $A \otimes_F L \cong M_d(L)$, $d = \deg(A)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Splitting by a maximal subfield</td>
+<td>a maximal subfield of $D$ has degree $\operatorname{ind}(A)$ and splits $A$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The exponent $\exp(A)$</td>
+<td>the order of $[A]$ in $\operatorname{Br}(F)$; it divides the index</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The division algebra of index $n$</td>
+<td>$\dim_F D = n^2$, and every maximal subfield of $D$ has degree $n$ and splits it</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The index and the degree are the two numerical invariants of a central simple algebra, and the theorem that the exponent divides the index is the arithmetic relation between the two; the index is always realised, because a maximal subfield of the division algebra has degree equal to it.</p>
+<h2 id="the-central-division-algebras">The Central Division Algebras</h2>
+<p>A central division algebra is a central simple algebra that is itself a division algebra, and it is the canonical representative of its class under similarity. The list records them here because the scope of the article asks for the division algebra a central simple algebra is a matrix algebra over.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A central division algebra over $F$</td>
+<td>finite-dimensional, centre exactly $F$, no zero divisors; central simple of degree its index</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The quaternion algebra $(a,b)_F$ as a division algebra</td>
+<td>a division algebra exactly when it does not split to $M_2(F)$, that is, when the norm condition fails</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>A cyclic algebra $(\chi,a)$</td>
+<td>a division algebra when $a$ is not a norm from the cyclic extension</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The Hasse invariant $\operatorname{inv}_v(D)$</td>
+<td>the local invariant that determines a central division algebra over a number field</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The division algebras themselves, with the classification theorems of Frobenius, Wedderburn and Hurwitz, are carried by <em>List of Division Algebras</em>; the division rings without a chosen ground field, including the division ring of fractions of the Weyl algebra and the free field, are carried by <em>List of Non-Commutative Division Rings</em>. This list carries the same objects only as the division-algebra representatives of the classes in the Brauer group, and the pointer for each is the article that introduces it, <em>Central Simple Algebras and the Brauer Group</em>.</p>
+<h2 id="the-brauer-group-of-similarity-classes">The Brauer Group of Similarity Classes</h2>
+<p>The similarity classes of central simple algebras form an abelian group under the tensor product, and the group is the invariant that the classification produces.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Similarity $A \sim B$</td>
+<td>$A \otimes_F M_m(F) \cong B \otimes_F M_n(F)$ for some $m, n$; equivalent to $D_A \cong D_B$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The division algebra representative of $[A]$</td>
+<td>the unique representative of the class that is a division algebra, up to isomorphism</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The Brauer group $\operatorname{Br}(F)$</td>
+<td>similarity classes under $\otimes_F$, identity $[F]$, inverse $[A^{\mathrm{op}}]$; abelian</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The relative Brauer group $\operatorname{Br}(L/F)$</td>
+<td>the classes split by $L$, isomorphic to $H^2(G, L^\times)$ for $G = \operatorname{Gal}(L/F)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>A crossed product</td>
+<td>the central simple algebra attached to a factor set of a finite Galois extension</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>The cyclic algebra $(\chi,a) = (L/F,\sigma,a)$</td>
+<td>$z^n = a$, $z\ell = \sigma(\ell)z$; the explicit crossed product over a cyclic extension</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The quaternion algebras are the cyclic algebras for the quadratic extensions, and the crossed-product description makes the Brauer group the cohomological home of the factor-set classification: the class of a central simple algebra is a second cohomology class of the splitting extension.</p>
+<h2 id="computations-of-the-brauer-group">Computations of the Brauer Group</h2>
+<p>The Brauer group is computed for the standard fields, and each computation is a statement about which central division algebras the field admits.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field $F$</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebraically closed $F$</td>
+<td>$\operatorname{Br}(F) = 0$: every central simple algebra is $M_n(F)$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Finite $\mathbb{F}_q$</td>
+<td>$\operatorname{Br}(\mathbb{F}_q) = 0$, by Wedderburn's little theorem</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\operatorname{Br}(\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$, generated by $[\mathbb{H}]$, with $\mathbb{H} \otimes_\mathbb{R} \mathbb{H} \cong M_4(\mathbb{R})$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\operatorname{Br}(\mathbb{C}) = 0$; the relative group $\operatorname{Br}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>A non-Archimedean local field</td>
+<td>$\operatorname{Br}(F) \cong \mathbb{Q}/\mathbb{Z}$, with invariant $1/n$ for a degree-$n$ unramified cyclic algebra</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>A number field</td>
+<td>Hasse–Brauer–Noether: the local invariants with the reciprocity relation, identifying $\operatorname{Br}(F)$ with a subgroup of $\bigoplus_v \mathbb{Q}/\mathbb{Z}$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em>; the reciprocity law belongs to <em>Class Field Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Over an algebraically closed field and over a finite field there is no central division algebra beyond the field itself, so every central simple algebra is split; over $\mathbb{R}$ there is exactly one nontrivial class, that of the quaternions; and over a number field the group is infinite and is computed by the local invariants.</p>
+<h2 id="algebras-that-fail-centrality-or-simplicity">Algebras That Fail Centrality or Simplicity</h2>
+<p>The objects below are the ones a reader might expect among the central simple algebras and will not find, and each row names the condition that fails.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Why it is not central simple</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The biquaternions $\mathbb{B}$ over $\mathbb{R}$</td>
+<td>the centre is $\mathbb{C}$ and not $\mathbb{R}$, so it is not central over $\mathbb{R}$; it is central simple over $\mathbb{C}$, where it is $M_2(\mathbb{C})$</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$ as an $\mathbb{R}$-algebra</td>
+<td>the centre is all of $\mathbb{C}$, so it is simple but not central over $\mathbb{R}$</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>The split-complex algebra $\mathbb{D}$ over $\mathbb{R}$</td>
+<td>not simple: it is $\mathbb{R} \times \mathbb{R}$, with the proper ideals generated by the idempotents $\tfrac{1}{2}(1 \pm j)$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>The dual numbers $\mathbb{D}'$</td>
+<td>not simple: the maximal ideal $(\varepsilon)$ is a proper nonzero two-sided ideal</td>
+<td><em>Dual Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>The group algebra $\mathbb{C}[G]$ for a nontrivial finite group $G$</td>
+<td>not simple: the augmentation ideal $I(G)$ is a proper nonzero two-sided ideal; it is a product of two or more matrix algebras</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>A product $\prod_i M_{n_i}(D_i)$ with two or more factors</td>
+<td>semisimple but not simple: each factor is a proper nonzero two-sided ideal</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Centrality and simplicity are independent conditions, and the rows show both failures: the biquaternions and $\mathbb{C}$ over $\mathbb{R}$ are simple and not central, while the split-complex numbers and the dual numbers are not simple, each with a proper nonzero two-sided ideal that the commutative case exhibits explicitly. The biquaternions are the sharpest case, because they become central simple after the scalar extension to $\mathbb{C}$ that exposes the ground field in the phrase.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is absent from the list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A central division algebra over $\mathbb{C}$ other than $\mathbb{C}$</td>
+<td>does not exist: an algebraically closed field carries no proper finite-dimensional division algebra</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>A finite central division algebra that is not a field</td>
+<td>does not exist, by Wedderburn's little theorem</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>A central simple algebra of non-square dimension</td>
+<td>does not exist: the dimension of a central simple algebra is a perfect square</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>A commutative central simple $F$-algebra other than $F$</td>
+<td>does not exist: the split case $M_n(F)$ is central simple and non-commutative for $n \geq 2$, and the non-split case is a division algebra, of degree $1$ when it is commutative</td>
+<td><em>Central Simple Algebras and the Brauer Group</em>; <em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The division ring of fractions of an Ore domain</td>
+<td>not central simple: it is a division ring, but it need not be finite-dimensional over its centre</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The warnings record that the class is small in the ways a reader might not expect: the base change to an algebraic closure always splits the algebra, the base field fixes the centre, and the square dimension is forced by the two axioms together.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the central simple algebras of the corpus, the algebras that fail centrality or simplicity, and the computations of the Brauer group. A central simple $F$-algebra is a finite-dimensional algebra with $1 \neq 0$, centre $F \cdot 1_A$ and no two-sided ideal but $0$ and $A$; its dimension is a perfect square $d^2$, its degree is $d$, and it is a matrix algebra $M_n(D)$ over a central division algebra $D$ by Wedderburn's structure theorem. The index $\operatorname{ind}(A) = \deg(D)$ divides the degree, the exponent $\exp(A)$, the order of the class in the Brauer group, divides the index, and a maximal subfield of $D$ has degree the index and splits the algebra. The examples are the matrix algebras $M_n(F)$, the central division algebras, the quaternion algebras $(a,b)_F$ and $\mathbb{H} = (-1,-1)_{\mathbb{R}}$, and the cyclic algebras and crossed products. The similarity classes of central simple algebras form the Brauer group $\operatorname{Br}(F)$, with $\operatorname{Br}(F) = 0$ for algebraically closed and for finite fields, $\operatorname{Br}(\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$ generated by $[\mathbb{H}]$, $\operatorname{Br}(F) \cong \mathbb{Q}/\mathbb{Z}$ for a non-Archimedean local field, and the Hasse–Brauer–Noether isomorphism for a number field. The non-examples — the biquaternions over $\mathbb{R}$, the complex numbers over $\mathbb{R}$, the split-complex numbers, the dual numbers, the group algebra of a nontrivial finite group and a product of two or more simple factors — each name the failure of centrality or of simplicity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $L$</td>
+<td>field and a field extension of $F$</td>
+</tr>
+<tr>
+<td>$A$, $B$</td>
+<td>central simple $F$-algebras</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>central division algebra, the division algebra part of $A$</td>
+</tr>
+<tr>
+<td>$M_n(F)$, $M_n(D)$</td>
+<td>matrix algebras over a field and over a division algebra</td>
+</tr>
+<tr>
+<td>$F \cdot 1_A$, $Z(A)$</td>
+<td>the scalar copy of the field and the centre of $A$</td>
+</tr>
+<tr>
+<td>$\deg(A)$, $\operatorname{ind}(A)$, $\exp(A)$</td>
+<td>degree, index and exponent</td>
+</tr>
+<tr>
+<td>$\operatorname{Br}(F)$, $\operatorname{Br}(L/F)$, $\operatorname{inv}_v$</td>
+<td>Brauer group, relative Brauer group, Hasse invariant</td>
+</tr>
+<tr>
+<td>$A \sim B$, $[A]$, $A^{\mathrm{op}}$</td>
+<td>similarity, a class in $\operatorname{Br}(F)$, the opposite algebra</td>
+</tr>
+<tr>
+<td>$A \otimes_F B$</td>
+<td>tensor product, the group law of $\operatorname{Br}(F)$</td>
+</tr>
+<tr>
+<td>$(a,b)_F$, $(\chi,a)$, $(L/F,\sigma,a)$</td>
+<td>quaternion algebra, cyclic algebra and crossed product</td>
+</tr>
+<tr>
+<td>$\operatorname{Trd}$, $\operatorname{Nrd}$, $C_A(B)$</td>
+<td>reduced trace, reduced norm, centralizer</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{B}$, $\mathbb{D}$, $\mathbb{D}'$</td>
+<td>quaternions, biquaternions, split-complex numbers, dual numbers</td>
+</tr>
+<tr>
+<td>$H^2(G, L^\times)$</td>
+<td>second cohomology, isomorphic to $\operatorname{Br}(L/F)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Philippe Gille and Tamás Szamuely, <em>Central Simple Algebras and Galois Cohomology</em> (Cambridge University Press, 2006), for the structure theory, the Brauer group and its cohomological description.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for centrality, simplicity, the division algebra part and the reduced trace and norm.</li>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the central simple algebras and the Brauer group in the classical formulation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

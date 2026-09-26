@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Discrete Geometric Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-discrete-geometric-groups"><strong>List of Discrete Geometric Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the discrete groups that act on the geometries of the corpus: the crystallographic groups of dimensions one, two and three with their point groups, the frieze groups, the reflection and triangle groups, the Fuchsian and Kleinian groups, and the lattices and arithmetic subgroups of the Lie groups of the corpus. The property that the article gathers is that the group is a <em>discrete</em> subgroup of a geometric symmetry group, and the entries are grouped by the geometry on which they act. Every entry points to the article that introduces the group, and the article introduces nothing and proves nothing.</p>
+<p>Discreteness, cocompactness and the quotient organise the list. A discrete subgroup of an isometry group has the identity isolated in the subspace topology; when the quotient of the geometry by the group is compact the group is cocompact, or uniform, and otherwise it is non-uniform and its quotient has cusps. The quotient is in general an orbifold, its singular set consisting of the fixed points of the elements of finite order, and it is a manifold exactly when the group is torsion-free.</p>
+<p>The article records examples and non-examples side by side. Beside the discrete and cocompact groups it lists the geometric groups that are not discrete, the discrete groups that are not cocompact, and the lattices that are not arithmetic, each with the failure named and the article that records it.</p>
+<h2 id="the-crystallographic-groups">The Crystallographic Groups</h2>
+<p>A crystallographic group is a discrete cocompact subgroup $\Gamma \leq E(n) = \mathbb{R}^n \rtimes O(n)$. Its linear part is finite, its translation subgroup is a lattice, and the quotient $\mathbb{R}^n/\Gamma$ is a compact flat orbifold; the classification is finite in each dimension by the crystallographic restriction.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the translation subgroup $T_\Gamma = \Gamma \cap \mathbb{R}^n$</td>
+<td>a lattice of rank $n$ in $\mathbb{R}^n$, the kernel of the linear part</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the point group $P = \ell(\Gamma)$</td>
+<td>a finite subgroup of $O(n)$ acting faithfully on the translation lattice</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the infinite cyclic group</td>
+<td>the pure translation crystallographic group on the line</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the infinite dihedral group $D_\infty$</td>
+<td>the crystallographic group on the line containing a reflection</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Coxeter Groups</em>, §Dihedral and Rank-Two Cases</td>
+</tr>
+<tr>
+<td>the $17$ wallpaper groups</td>
+<td>the discrete cocompact groups of the Euclidean plane</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the $7$ frieze groups</td>
+<td>the discrete groups of a band, periodic in one direction and bounded in the other</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the $230$ space groups</td>
+<td>the discrete cocompact groups of Euclidean three-space</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the $10$ two-dimensional point groups</td>
+<td>the finite linear parts of the wallpaper groups</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the $32$ three-dimensional point groups</td>
+<td>the finite linear parts of the space groups</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the $5$ and $14$ Bravais lattices</td>
+<td>the translation lattices in dimensions two and three up to the holohedral equivalence</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the torsion-free crystallographic groups</td>
+<td>those with no element of finite order, whose quotient is a flat manifold</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the Klein bottle group</td>
+<td>a torsion-free crystallographic group of the plane with point group of order two</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The two-dimensional classification is classical: the two groups of the line are the cyclic and the infinite dihedral group, the $17$ of the plane are the wallpaper groups, and the $7$ frieze groups are the subfamily of the wallpaper groups of a strip. The point groups number $10$ and $32$ in dimensions two and three, and the torsion-free groups give the compact flat manifolds, of which there are two in dimension two and ten in dimension three. The classification is finite because the crystallographic restriction permits only the rotation orders $1, 2, 3, 4, 6$, a fact used in <em>Euclidean Geometry</em>.</p>
+<h2 id="reflection-groups-and-triangle-groups">Reflection Groups and Triangle Groups</h2>
+<p>A reflection group is generated by reflections, and the discrete reflection groups of a geometry of constant curvature are the triangle groups: the group generated by the reflections in the sides of a triangle, with the angles $\pi/p, \pi/q, \pi/r$ determining whether the group is finite, Euclidean or hyperbolic by the sign of $1/p + 1/q + 1/r - 1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a finite Coxeter group $(W,S)$</td>
+<td>a finite group generated by reflections, classified by its diagram</td>
+<td><em>Coxeter Groups</em></td>
+</tr>
+<tr>
+<td>the dihedral group $I_2(m)$</td>
+<td>the rank-two Coxeter group of order $2m$, the reflection group of a regular $m$-gon</td>
+<td><em>Coxeter Groups</em>, §Examples</td>
+</tr>
+<tr>
+<td>an affine Coxeter group</td>
+<td>an infinite discrete reflection group with finite parabolics, virtually abelian</td>
+<td><em>Coxeter Groups</em></td>
+</tr>
+<tr>
+<td>a hyperbolic Coxeter group</td>
+<td>a discrete reflection group with $1/m_{12} + 1/m_{23} + 1/m_{31} < 1$</td>
+<td><em>Coxeter Groups</em>, §Dihedral and Rank-Two Cases</td>
+</tr>
+<tr>
+<td>a triangle group $(p,q,r)$</td>
+<td>the reflection group of a triangle with angles $\pi/p, \pi/q, \pi/r$</td>
+<td><em>Coxeter Groups</em>; <em>Teichmüller Theory</em></td>
+</tr>
+<tr>
+<td>the $(2,3,7)$ triangle group</td>
+<td>the triangle group of the hyperbolic orbifold of least area, of orbifold Euler characteristic $-1/42$</td>
+<td><em>Teichmüller Theory</em></td>
+</tr>
+<tr>
+<td>the finite rotation groups of $S^2$</td>
+<td>the spherical triangle groups $C_m$, $D_m$, $A_4$, $S_4$, $A_5$</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>the symmetry group of a regular tiling</td>
+<td>the affine reflection group of the corresponding root lattice</td>
+<td><em>Coxeter Groups</em>; <em>Euclidean Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The triangle groups are the bridge between the algebraic Coxeter theory and the geometry: the spherical and Euclidean triangle groups reappear as the finite rotation groups of <em>Spherical Geometry</em> and the symmetry groups of the regular tilings, while the hyperbolic ones are the first genuinely hyperbolic discrete groups. The triangle group is the simplest instance of the general reflection group, and its quotients and coverings are treated with the discrete subgroups of the hyperbolic plane in the next section.</p>
+<h2 id="fuchsian-and-kleinian-groups">Fuchsian and Kleinian Groups</h2>
+<p>A Fuchsian group is a discrete subgroup of $PSL(2,\mathbb{R})$, acting on the hyperbolic plane, and a Kleinian group is a discrete subgroup of $PSL(2,\mathbb{C})$, acting on hyperbolic three-space; the quotient of hyperbolic space by a torsion-free such group is a complete hyperbolic manifold.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a Fuchsian group</td>
+<td>a discrete subgroup of $PSL(2,\mathbb{R})$</td>
+<td><em>Hyperbolic Geometry</em>, §Fuchsian and Kleinian Groups</td>
+</tr>
+<tr>
+<td>a Kleinian group</td>
+<td>a discrete subgroup of $PSL(2,\mathbb{C})$</td>
+<td><em>Hyperbolic Geometry</em>, §Fuchsian and Kleinian Groups</td>
+</tr>
+<tr>
+<td>a torsion-free Fuchsian group</td>
+<td>a Fuchsian group whose quotient is a complete hyperbolic surface</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>a torsion-free Kleinian group</td>
+<td>a Kleinian group whose quotient is a complete hyperbolic three-manifold</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>a lattice in $PSL(2,\mathbb{R})$</td>
+<td>a Fuchsian group of finite covolume; uniform if the surface is closed</td>
+<td><em>Lattices in Lie Groups</em>, §Rank-One Lattices</td>
+</tr>
+<tr>
+<td>the fundamental group of a closed hyperbolic surface</td>
+<td>a uniform lattice in $PSL(2,\mathbb{R})$, of genus $g \geq 2$</td>
+<td><em>Hyperbolic Geometry</em>; <em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>a lattice in $SO(n,1)$</td>
+<td>a discrete subgroup of finite covolume, uniform or non-uniform; it gives a closed or cusped hyperbolic $n$-manifold</td>
+<td><em>Lattices in Lie Groups</em>, §Rank-One Lattices</td>
+</tr>
+</tbody>
+</table></div>
+<p>Mostow rigidity makes the hyperbolic structure of a finite-volume manifold of dimension at least three unique, so that the lattices of $SO(n,1)$, $n \geq 3$, are rigid, while in dimension two the Fuchsian lattices deform and their deformation space is the Teichmüller space of the sibling articles. This dichotomy is the reason Fuchsian groups require the deformation theory of <em>Teichmüller Theory</em> and <em>Mapping Class Groups</em> while Kleinian groups in higher dimension do not.</p>
+<h2 id="lattices-in-lie-groups">Lattices in Lie Groups</h2>
+<p>A lattice in a locally compact group is a discrete subgroup of finite covolume, and the theory of lattices in Lie groups is the general setting of the discrete geometric groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a lattice $\Gamma \leq G$</td>
+<td>a discrete subgroup of finite covolume in a locally compact group</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>a uniform (cocompact) lattice</td>
+<td>a lattice whose quotient $G/\Gamma$ is compact</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>a non-uniform lattice</td>
+<td>a lattice of finite covolume whose quotient is non-compact, with cusps</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}^n \leq \mathbb{R}^n$</td>
+<td>the elementary uniform lattice, of covolume $1$</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>$SL_n(\mathbb{Z}) \leq SL_n(\mathbb{R})$</td>
+<td>the standard non-uniform lattice, $n \geq 2$</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>$PSL_2(\mathbb{Z})$</td>
+<td>the modular group, a non-uniform lattice in $PSL_2(\mathbb{R})$</td>
+<td><em>Bass–Serre Theory</em>; <em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>a lattice in a nilpotent group</td>
+<td>a discrete cocompact subgroup whose quotient is a nilmanifold</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>a rank-one lattice</td>
+<td>a lattice in $SO(n,1)$, $SU(n,1)$, $Sp(n,1)$ or $F_4^{-20}$</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The covolume is the measure of the quotient and is defined up to the normalisation of the Haar measure; the Švarc–Milnor lemma makes a cocompact lattice quasi-isometric to its ambient group, which places the theory alongside <em>Geometric Group Theory</em> and <em>Hyperbolic Groups</em>. The rigidity results — Mostow–Prasad in higher rank and the failure of rigidity in rank one — are the reason the list divides sharply between the arithmetic setting of the next section and the deformation theory of the hyperbolic surfaces.</p>
+<h2 id="arithmetic-lattices-and-the-bianchi-groups">Arithmetic Lattices and the Bianchi Groups</h2>
+<p>An arithmetic subgroup is a lattice commensurable with the integral points of a linear algebraic group, and by the theorems of Borel–Harish-Chandra and Margulis these are the lattices of higher rank.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>an arithmetic subgroup</td>
+<td>a subgroup commensurable with $\mathbf{G}(\mathcal{O}_k[S^{-1}])$</td>
+<td><em>Arithmetic Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbf{G}(\mathbb{Z})$</td>
+<td>the $\mathbb{Z}$-points of a $\mathbb{Q}$-group, a lattice by Borel–Harish-Chandra</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>an $S$-arithmetic lattice</td>
+<td>a lattice of the form $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ in a product of local groups</td>
+<td><em>Lattices in Lie Groups</em>; <em>Arithmetic Groups</em></td>
+</tr>
+<tr>
+<td>a congruence subgroup</td>
+<td>a subgroup containing the kernel of the reduction modulo an ideal</td>
+<td><em>Arithmetic Groups</em></td>
+</tr>
+<tr>
+<td>the Hilbert modular group $SL_2(\mathcal{O}_k)$</td>
+<td>an arithmetic lattice in $SL_2(\mathbb{R})^{r_1} \times SL_2(\mathbb{C})^{r_2}$</td>
+<td><em>Arithmetic Groups</em></td>
+</tr>
+<tr>
+<td>the Siegel modular group $Sp_{2n}(\mathbb{Z})$</td>
+<td>an arithmetic lattice in $Sp_{2n}(\mathbb{R})$</td>
+<td><em>Arithmetic Groups</em></td>
+</tr>
+<tr>
+<td>the Bianchi group $PSL_2(\mathcal{O}_d)$</td>
+<td>a non-uniform arithmetic lattice in $PSL_2(\mathbb{C})$</td>
+<td><em>Lattices in Lie Groups</em>, §Arithmetic Lattices</td>
+</tr>
+<tr>
+<td>$SL_n(\mathbb{Z})$, $n \geq 3$</td>
+<td>an arithmetic lattice with the congruence subgroup property</td>
+<td><em>Arithmetic Groups</em></td>
+</tr>
+<tr>
+<td>$O_k^\times$ modulo torsion</td>
+<td>a lattice in the norm-one subgroup of the archimedean places, by Dirichlet's unit theorem</td>
+<td><em>Arithmetic Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Margulis's arithmeticity theorem makes every irreducible lattice of real rank at least two arithmetic, and the congruence subgroup property controls the finite-index subgroups; both fail in rank one. The Bianchi groups $PSL_2(\mathcal{O}_d)$ are the standard non-uniform lattices in a rank-one group, and they are the point at which the crystallographic, the Fuchsian and the arithmetic strands of the list meet.</p>
+<h2 id="discreteness-cocompactness-and-the-quotient-orbifold">Discreteness, Cocompactness and the Quotient Orbifold</h2>
+<p>The three conditions that separate the families are recorded here together, since the same group may satisfy some and not others.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a discrete subgroup</td>
+<td>one in which the identity is isolated in the subspace topology</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>a cocompact (uniform) group</td>
+<td>one whose quotient is compact</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n/\Gamma$</td>
+<td>the compact flat orbifold of a crystallographic group</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>a flat manifold</td>
+<td>the torsion-free quotient $\mathbb{R}^n/\Gamma$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>a hyperbolic surface $\Gamma\backslash\mathbf{H}^2$</td>
+<td>the quotient of the plane by a Fuchsian group</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>a hyperbolic three-manifold $\Gamma\backslash\mathbf{H}^3$</td>
+<td>the quotient of three-space by a Kleinian group</td>
+<td><em>Hyperbolic Geometry</em>; <em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a nilmanifold $N/\Gamma$</td>
+<td>the quotient of a nilpotent Lie group by a lattice</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>an orbifold</td>
+<td>a quotient by a group acting with finite stabilisers, with a singular set</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the modular surface</td>
+<td>the non-compact quotient of the modular group, of finite volume</td>
+<td><em>Lattices in Lie Groups</em>, §Rank-One Lattices; <em>Bass–Serre Theory</em>, §The Modular Group</td>
+</tr>
+</tbody>
+</table></div>
+<p>The quotient is a manifold exactly when the action is free, that is, when the group is torsion-free; otherwise the fixed points of the elements of finite order produce the orbifold singularities. The compact flat orbifolds of the crystallographic groups, the hyperbolic orbifolds of the Fuchsian and Kleinian groups, and the nilmanifolds of the lattices in nilpotent groups are the three standard families, and the passage from the group to its quotient is the construction that turns the algebra of the list into the geometry of the article on orbifolds.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the discrete geometric groups, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a discrete geometric group</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Euclidean group $E(n)$</td>
+<td>continuous, not discrete; it is the ambient group of the crystallographic groups</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>a finite subgroup of a compact group</td>
+<td>trivially a lattice and cocompact in the compact ambient, so the notion of lattice carries no information there</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>the irrational line in the torus</td>
+<td>a connected immersed subgroup that is dense, hence not discrete</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$PSL(2,\mathbb{R})$, $PSL(2,\mathbb{C})$</td>
+<td>the ambient isometry groups, not discrete subgroups</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>a non-arithmetic lattice in a rank-one group</td>
+<td>a lattice that is not arithmetic, so outside the arithmetic table</td>
+<td><em>Arithmetic Groups</em></td>
+</tr>
+<tr>
+<td>the orthogonal group $O(n)$</td>
+<td>a continuous group defined by a form, not a discrete subgroup</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the discrete groups of the corpus as they act on the geometries of Parts I to III. The crystallographic groups open the list, with their translation subgroups lattices, their finite point groups, the $17$ wallpaper groups, the $7$ frieze groups and the $230$ space groups; the reflection and triangle groups follow, with the finite and affine Coxeter groups and the $(p,q,r)$ triangle groups of the sphere, the plane and the hyperbolic plane; the Fuchsian and Kleinian groups act on the hyperbolic plane and three-space; and the lattices of Lie groups, the arithmetic subgroups, the Hilbert and Siegel modular groups and the Bianchi groups close it. Beside the examples stand the non-examples — the continuous Euclidean group, the dense irrational line in the torus, the non-arithmetic rank-one lattices, and the orthogonal group — each with the failure named. The three conditions of discreteness, cocompactness and torsion-freeness are recorded separately, and the quotient orbifold is the object in which they are read.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>Euclidean isometry group</td>
+</tr>
+<tr>
+<td>$\Gamma$, $T_\Gamma$, $P = \ell(\Gamma)$</td>
+<td>Crystallographic group, its translation subgroup, its point group</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n/\Gamma$</td>
+<td>Compact flat orbifold or flat manifold</td>
+</tr>
+<tr>
+<td>$I_2(m)$, $(W,S)$</td>
+<td>Dihedral Coxeter group; Coxeter system</td>
+</tr>
+<tr>
+<td>$PSL(2,\mathbb{R})$, $PSL(2,\mathbb{C})$</td>
+<td>Isometry groups of $\mathbf{H}^2$ and $\mathbf{H}^3$; ambients of the Fuchsian and Kleinian groups</td>
+</tr>
+<tr>
+<td>$\Gamma \backslash \mathbf{H}^n$</td>
+<td>Hyperbolic quotient by a discrete group</td>
+</tr>
+<tr>
+<td>$\operatorname{covol}(\Gamma)$</td>
+<td>Covolume of a lattice</td>
+</tr>
+<tr>
+<td>$SL_n(\mathbb{Z})$, $PSL_2(\mathbb{Z})$</td>
+<td>Standard lattices; the modular group</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_k$, $\mathcal{O}_k[S^{-1}]$</td>
+<td>Ring of integers, ring of $S$-integers</td>
+</tr>
+<tr>
+<td>$PSL_2(\mathcal{O}_d)$</td>
+<td>Bianchi group</td>
+</tr>
+<tr>
+<td>$N/\Gamma$</td>
+<td>Nilmanifold</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+<tr>
+<td>$\mathbf{G}$, $\mathbf{G}(\mathbb{Z})$</td>
+<td>A linear algebraic $\mathbb{Q}$-group and its $\mathbb{Z}$-points</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ludwig Bieberbach, "Über die Bewegungsgruppen der Euklidischen Räume I, II", <em>Mathematische Annalen</em> 70 (1911), 297–336, and 72 (1912), 400–412, for the theorems on the crystallographic groups.</li>
+<li>John Conway, Olaf Delgado Friedrichs, Daniel H. Huson and William P. Thurston, "On three-dimensional space groups", <em>Beiträge zur Algebra und Geometrie</em> 42 (2001), 475–507, for the enumeration of the $230$ space groups and the orbifold point of view.</li>
+<li>M. S. Raghunathan, <em>Discrete Subgroups of Lie Groups</em> (Springer, 1972), for the general theory of lattices, covolumes and the arithmetic constructions.</li>
+<li>Dave Witte Morris, <em>Introduction to Arithmetic Groups</em> (American Mathematical Society, 2015), for arithmetic subgroups, the Bianchi groups and the congruence subgroup property.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

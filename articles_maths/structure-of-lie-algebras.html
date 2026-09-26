@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structure of Lie Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="structure-of-lie-algebras"><strong>Structure of Lie Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The companion article <em>Lie Algebras</em> introduces Lie algebras, the Jacobi identity, and the vocabulary of solvable, nilpotent and simple algebras. This article develops the structure theory that organises that vocabulary: the radical, the nilradical, the Killing form, and the two criteria of Cartan, which decide solvability and semisimplicity from a single bilinear form. The theory culminates in the Levi decomposition, which writes every finite-dimensional Lie algebra over a field of characteristic zero as a semidirect product of a semisimple algebra by a solvable one, and in the theorem that a semisimple algebra is a direct sum of simple ideals. Together with the classification of simple algebras by root systems, this is the structure theory of Lie algebras.</p>
+<p>The theory is carried out over a field $K$ of characteristic zero; this is the setting in which the classical results hold cleanly, and where a result needs more than that — an algebraically closed field, or the finite dimension of the algebra — this is stated explicitly. Lie algebras are written in lowercase fraktur, so $\mathfrak{g}$, $\mathfrak{h}$ are Lie algebras, $\mathfrak{i}$ is an ideal, $\mathfrak{r}$ the radical, $\mathfrak{n}$ the nilradical, and $\mathfrak{z}(\mathfrak{g})$ the centre; the field is $K$, and $R$ is reserved for the commutative-ring statements of the earlier articles. No physics is invoked.</p>
+<p>The general facts about Lie algebras used below — the definition, the Jacobi identity, ideals, quotients, homomorphisms, the centre, the derived subalgebra, and the elementary properties of solvable and nilpotent algebras — are assumed from <em>Lie Algebras</em>, and the representation-theoretic notions are developed further .</p>
+<h2 id="recapitulation-and-the-radical">Recapitulation and the Radical</h2>
+<h3 id="ideals-quotients-and-homomorphisms">Ideals, Quotients and Homomorphisms</h3>
+<p>A <strong>Lie algebra</strong> over $K$ is a $K$-vector space $\mathfrak{g}$ with a bilinear, alternating bracket $[\cdot, \cdot] : \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$ satisfying the Jacobi identity</p>
+<p>$$
+[x, [y, z]] + [y, [z, x]] + [z, [x, y]] = 0.
+$$</p>
+<p>The centre of $\mathfrak{g}$ is</p>
+<p>$$
+\mathfrak{z}(\mathfrak{g}) = \{x \in \mathfrak{g} : [x, y] = 0 \text{ for all } y \in \mathfrak{g}\},
+$$</p>
+<p>and the derived subalgebra is $[\mathfrak{g}, \mathfrak{g}] = \operatorname{span}\{[x, y] : x, y \in \mathfrak{g}\}$. A subspace $\mathfrak{i} \subseteq \mathfrak{g}$ is an <strong>ideal</strong> if $[\mathfrak{g}, \mathfrak{i}] \subseteq \mathfrak{i}$; the centre and the derived subalgebra are ideals, and the quotient $\mathfrak{g}/\mathfrak{i}$ inherits a bracket. A linear map $\varphi : \mathfrak{g} \to \mathfrak{h}$ is a <strong>homomorphism</strong> if $\varphi([x, y]) = [\varphi(x), \varphi(y)]$; its kernel is an ideal and its image is a subalgebra, and the first isomorphism theorem holds. All of this is the content of <em>Lie Algebras</em>.</p>
+<p>Recall also that the bracket of ideals is an ideal, so the derived subalgebra of an ideal is again an ideal; iterating this observation produces the derived series below.</p>
+<h3 id="solvable-and-nilpotent-algebras">Solvable and Nilpotent Algebras</h3>
+<p><strong>Definition.</strong> The <strong>derived series</strong> of $\mathfrak{g}$ is</p>
+<p>$$
+\mathfrak{g}^{(0)} = \mathfrak{g}, \qquad \mathfrak{g}^{(k+1)} = [\mathfrak{g}^{(k)}, \mathfrak{g}^{(k)}],
+$$</p>
+<p>and the <strong>lower central series</strong> is</p>
+<p>$$
+\mathfrak{g}_0 = \mathfrak{g}, \qquad \mathfrak{g}_{k+1} = [\mathfrak{g}, \mathfrak{g}_k].
+$$</p>
+<p>The algebra $\mathfrak{g}$ is <strong>solvable</strong> if $\mathfrak{g}^{(k)} = 0$ for some $k$, and <strong>nilpotent</strong> if $\mathfrak{g}_k = 0$ for some $k$. The least such $k$ is the <strong>derived length</strong>, respectively the <strong>nilpotency class</strong>.</p>
+<p><strong>Proposition.</strong> Every nilpotent Lie algebra is solvable, but not conversely. Subalgebras and quotients of solvable algebras are solvable, and the same holds for nilpotent algebras.</p>
+<p><strong>Proof.</strong> $\mathfrak{g}^{(k)} \subseteq \mathfrak{g}_k$ by induction, so nilpotency implies solvability. The two-dimensional nonabelian Lie algebra with basis $x, y$ and $[x, y] = x$ is solvable, since $[\mathfrak{g}, \mathfrak{g}] = \langle x\rangle$ is abelian, but it is not nilpotent, since $\mathfrak{g}_k = \langle x\rangle$ for all $k \geq 1$. The claims about subalgebras and quotients follow from the definitions. $\square$</p>
+<p><strong>Proposition.</strong> Let $\mathfrak{i}$ be an ideal of $\mathfrak{g}$. If $\mathfrak{i}$ and $\mathfrak{g}/\mathfrak{i}$ are solvable, then so is $\mathfrak{g}$; the analogous statement holds for nilpotency. Consequently the sum of two solvable ideals is solvable, and the sum of two nilpotent ideals is nilpotent.</p>
+<p><strong>Proof.</strong> If $\mathfrak{g}/\mathfrak{i}$ is solvable, then $\mathfrak{g}^{(k)} \subseteq \mathfrak{i}$ for some $k$; if $\mathfrak{i}$ is solvable, then $\mathfrak{i}^{(l)} = 0$ for some $l$, and since $\mathfrak{i}$ is an ideal the derived series of $\mathfrak{g}$ satisfies $\mathfrak{g}^{(k+l)} \subseteq \mathfrak{i}^{(l)} = 0$. For nilpotency the argument is the same with the lower central series: the ideal property gives $\mathfrak{g}_{k+l} \subseteq \mathfrak{i}_l$. For the sums, note that $(\mathfrak{i} + \mathfrak{a})/\mathfrak{a} \cong \mathfrak{i}/(\mathfrak{i} \cap \mathfrak{a})$ is solvable, and apply the extension statement. $\square$</p>
+<h3 id="the-radical-and-the-nilradical">The Radical and the Nilradical</h3>
+<p><strong>Definition.</strong> Because the sum of solvable ideals is solvable, the solvable ideals of $\mathfrak{g}$ have a largest element, the <strong>radical</strong></p>
+<p>$$
+\mathfrak{r}(\mathfrak{g}) = \sum_{\mathfrak{a} \text{ solvable ideal}} \mathfrak{a}.
+$$</p>
+<p>It is a solvable ideal containing every solvable ideal. Similarly the <strong>nilradical</strong> $\mathfrak{n}(\mathfrak{g})$ is the largest nilpotent ideal, and it is contained in the radical.</p>
+<p><strong>Definition.</strong> The Lie algebra $\mathfrak{g}$ is <strong>semisimple</strong> if $\mathfrak{r}(\mathfrak{g}) = 0$, equivalently if it has no nonzero solvable ideal; it is <strong>simple</strong> if it is nonabelian and has no nonzero proper ideal; and it is <strong>reductive</strong> if $\mathfrak{r}(\mathfrak{g}) = \mathfrak{z}(\mathfrak{g})$.</p>
+<p><strong>Proposition.</strong> $\mathfrak{g}$ is semisimple if and only if it has no nonzero abelian ideal. In particular every simple Lie algebra is semisimple, and the semisimple algebras are exactly the direct sums of simple algebras.</p>
+<p><strong>Proof.</strong> If $\mathfrak{g}$ has a nonzero solvable ideal $\mathfrak{a} \neq 0$, then the last nonzero term of its derived series is a nonzero abelian ideal of $\mathfrak{g}$, because it is a characteristic ideal of $\mathfrak{a}$ and $\mathfrak{a}$ is an ideal. Conversely a nonzero abelian ideal is solvable, so its presence contradicts semisimplicity. The remaining statements follow from the decomposition theorem proved below. $\square$</p>
+<h2 id="the-adjoint-representation-and-derivations">The Adjoint Representation and Derivations</h2>
+<h3 id="the-adjoint-map">The Adjoint Map</h3>
+<p><strong>Definition.</strong> For $x \in \mathfrak{g}$ the <strong>adjoint map</strong> is $\operatorname{ad}_x : \mathfrak{g} \to \mathfrak{g}$, $\operatorname{ad}_x(y) = [x, y]$. The Jacobi identity is equivalent to</p>
+<p>$$
+\operatorname{ad}_x([y, z]) = [\operatorname{ad}_x(y), z] + [y, \operatorname{ad}_x(z)],
+$$</p>
+<p>so each $\operatorname{ad}_x$ is a derivation of the bracket, and</p>
+<p>$$
+\operatorname{ad}_{[x, y]} = [\operatorname{ad}_x, \operatorname{ad}_y].
+$$</p>
+<p>Hence $\operatorname{ad} : \mathfrak{g} \to \mathfrak{gl}(\mathfrak{g})$ is a Lie algebra homomorphism, the <strong>adjoint representation</strong>, whose kernel is the centre:</p>
+<p>$$
+\ker(\operatorname{ad}) = \mathfrak{z}(\mathfrak{g}), \qquad \operatorname{ad}(\mathfrak{g}) \cong \mathfrak{g}/\mathfrak{z}(\mathfrak{g}).
+$$</p>
+<h3 id="derivations-of-a-lie-algebra">Derivations of a Lie Algebra</h3>
+<p><strong>Definition.</strong> A <strong>derivation</strong> of $\mathfrak{g}$ is a linear map $D : \mathfrak{g} \to \mathfrak{g}$ satisfying the Leibniz rule with respect to the bracket,</p>
+<p>$$
+D([x, y]) = [D(x), y] + [x, D(y)].
+$$</p>
+<p>The derivations form a Lie algebra $\operatorname{Der}(\mathfrak{g})$ under the commutator $[D_1, D_2] = D_1 D_2 - D_2 D_1$; the <strong>inner derivations</strong> are those of the form $\operatorname{ad}_x$, and they form the subspace $\operatorname{Inn}(\mathfrak{g}) = \operatorname{ad}(\mathfrak{g})$.</p>
+<p><strong>Proposition.</strong> $\operatorname{Inn}(\mathfrak{g})$ is an ideal of $\operatorname{Der}(\mathfrak{g})$, and the quotient $\operatorname{Out}(\mathfrak{g}) = \operatorname{Der}(\mathfrak{g})/\operatorname{Inn}(\mathfrak{g})$ is the Lie algebra of <strong>outer derivations</strong>. For a semisimple $\mathfrak{g}$ over a field of characteristic zero, $\operatorname{Der}(\mathfrak{g}) = \operatorname{Inn}(\mathfrak{g})$; every derivation is inner.</p>
+<p><strong>Proof.</strong> For $D \in \operatorname{Der}(\mathfrak{g})$ and $x \in \mathfrak{g}$ one computes</p>
+<p>$$
+[D, \operatorname{ad}_x](y) = D([x, y]) - [x, D(y)] = [D(x), y] = \operatorname{ad}_{D(x)}(y),
+$$</p>
+<p>so $[D, \operatorname{ad}_x] = \operatorname{ad}_{D(x)} \in \operatorname{Inn}(\mathfrak{g})$, which is the ideal property. The vanishing of $\operatorname{Out}(\mathfrak{g})$ for semisimple algebras is a standard theorem of the structure theory, proved by showing that a derivation orthogonal to the inner ones annihilates the Killing form and hence vanishes; the result is the infinitesimal form of the statement that the automorphism group of a semisimple algebra has Lie algebra $\operatorname{Der}(\mathfrak{g}) = \mathfrak{g}$. $\square$</p>
+<h2 id="the-killing-form">The Killing Form</h2>
+<h3 id="definition-and-symmetry">Definition and Symmetry</h3>
+<p><strong>Definition.</strong> The <strong>Killing form</strong> of a finite-dimensional Lie algebra $\mathfrak{g}$ is the bilinear form</p>
+<p>$$
+\kappa(x, y) = \operatorname{tr}\bigl(\operatorname{ad}_x \circ \operatorname{ad}_y\bigr), \qquad x, y \in \mathfrak{g}.
+$$</p>
+<p><strong>Proposition.</strong> $\kappa$ is a symmetric bilinear form on $\mathfrak{g}$, and it is <strong>invariant</strong> in the sense that</p>
+<p>$$
+\kappa([x, y], z) = \kappa(x, [y, z])
+$$</p>
+<p>for all $x, y, z \in \mathfrak{g}$; equivalently, $\kappa(\operatorname{ad}_y(x), z) + \kappa(x, \operatorname{ad}_y(z)) = 0$.</p>
+<p><strong>Proof.</strong> Bilinearity is immediate, and symmetry follows from the trace identity $\operatorname{tr}(AB) = \operatorname{tr}(BA)$. For invariance, use the identity $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x, \operatorname{ad}_y]$ and the trace identity $\operatorname{tr}([A, B]C) = \operatorname{tr}(A[B, C])$:</p>
+<p>$$
+\kappa([x, y], z) = \operatorname{tr}(\operatorname{ad}_{[x,y]}\operatorname{ad}_z) = \operatorname{tr}([\operatorname{ad}_x, \operatorname{ad}_y]\operatorname{ad}_z) = \operatorname{tr}(\operatorname{ad}_x[\operatorname{ad}_y, \operatorname{ad}_z]) = \operatorname{tr}(\operatorname{ad}_x \operatorname{ad}_{[y,z]}) = \kappa(x, [y, z]).
+$$</p>
+<p>$\square$</p>
+<p><strong>Corollary.</strong> Every algebra automorphism of $\mathfrak{g}$ preserves $\kappa$, and every derivation of $\mathfrak{g}$ is skew with respect to $\kappa$: $\kappa(D(x), y) + \kappa(x, D(y)) = 0$.</p>
+<h3 id="the-radical-of-the-killing-form">The Radical of the Killing Form</h3>
+<p><strong>Definition.</strong> The <strong>radical</strong> of $\kappa$ is</p>
+<p>$$
+\mathfrak{g}^{\perp} = \{x \in \mathfrak{g} : \kappa(x, y) = 0 \text{ for all } y \in \mathfrak{g}\},
+$$</p>
+<p>and $\kappa$ is <strong>nondegenerate</strong> if $\mathfrak{g}^{\perp} = 0$.</p>
+<p><strong>Proposition.</strong> $\mathfrak{g}^{\perp}$ is an ideal of $\mathfrak{g}$. The form $\kappa$ is nondegenerate if and only if the pairing $\mathfrak{g} \times \mathfrak{g} \to K$ it induces identifies $\mathfrak{g}$ with its dual $\mathfrak{g}^*$.</p>
+<p><strong>Proof.</strong> If $x \in \mathfrak{g}^{\perp}$ then for all $y, z$ invariance gives $\kappa([x, y], z) = \kappa(x, [y, z]) = 0$, so $[x, y] \in \mathfrak{g}^{\perp}$; hence $\mathfrak{g}^{\perp}$ is an ideal. The second statement is the definition of nondegeneracy for a bilinear form. $\square$</p>
+<h2 id="cartans-criteria">Cartan's Criteria</h2>
+<h3 id="cartans-criterion-for-solvability">Cartan's Criterion for Solvability</h3>
+<p><strong>Theorem (Cartan's criterion for solvability).</strong> Let $\mathfrak{g}$ be a finite-dimensional Lie algebra over a field of characteristic zero. Then $\mathfrak{g}$ is solvable if and only if</p>
+<p>$$
+\kappa(\mathfrak{g}, [\mathfrak{g}, \mathfrak{g}]) = 0,
+$$</p>
+<p>that is, $\kappa(x, y) = 0$ for all $x \in \mathfrak{g}$ and all $y \in [\mathfrak{g}, \mathfrak{g}]$.</p>
+<p><strong>Proof sketch.</strong> If $\mathfrak{g}$ is solvable, then over an algebraic closure of $K$ the algebra $\mathfrak{g}$ is isomorphic to a subalgebra of the upper triangular matrices by Lie's theorem, so each $\operatorname{ad}_x$ is upper triangular and each commutator $\operatorname{ad}_y$ with $y \in [\mathfrak{g}, \mathfrak{g}]$ is strictly upper triangular; the product $\operatorname{ad}_x \operatorname{ad}_y$ is then strictly upper triangular, hence has trace zero. Conversely, if $\kappa(\mathfrak{g}, [\mathfrak{g}, \mathfrak{g}]) = 0$, one shows that $[\mathfrak{g}, \mathfrak{g}]$ is nilpotent by applying Engel's theorem, which forces $\mathfrak{g}$ to be solvable. The second implication is the substance of the theorem and is standard. $\square$</p>
+<p><strong>Theorem (Engel).</strong> A finite-dimensional Lie algebra $\mathfrak{g}$ is nilpotent if and only if $\operatorname{ad}_x$ is nilpotent for every $x \in \mathfrak{g}$.</p>
+<p><strong>Theorem (Lie).</strong> Let $\mathfrak{g} \subseteq \mathfrak{gl}(V)$ be a solvable Lie subalgebra over an algebraically closed field of characteristic zero. Then there is a basis of $V$ in which every element of $\mathfrak{g}$ is upper triangular.</p>
+<p>Engel's and Lie's theorems are used in the proof of Cartan's criterion and are stated here for reference; both are proved in the standard texts listed under Further Reading.</p>
+<h3 id="cartans-criterion-for-semisimplicity">Cartan's Criterion for Semisimplicity</h3>
+<p><strong>Theorem (Cartan's criterion for semisimplicity).</strong> Let $\mathfrak{g}$ be a finite-dimensional Lie algebra over a field of characteristic zero. Then $\mathfrak{g}$ is semisimple if and only if the Killing form $\kappa$ is nondegenerate.</p>
+<p><strong>Proof.</strong> Suppose first that $\mathfrak{g}^{\perp} \neq 0$. The radical $\mathfrak{g}^{\perp}$ is an ideal, and the Killing form of the algebra $\mathfrak{g}^{\perp}$, computed in $\mathfrak{g}^{\perp}$ itself, is the restriction of $\kappa$ to it. For $x \in \mathfrak{g}^{\perp}$ and $y \in \mathfrak{g}^{\perp}$ the trace $\operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$ taken in $\mathfrak{g}$ equals the trace taken in $\mathfrak{g}^{\perp}$: indeed $\operatorname{ad}_x$ maps $\mathfrak{g}$ into $\mathfrak{g}^{\perp}$, and on $\mathfrak{g}^{\perp}$ the endomorphism $\operatorname{ad}_x$ is the same whether computed in $\mathfrak{g}$ or in $\mathfrak{g}^{\perp}$ because $\mathfrak{g}^{\perp}$ is an ideal. Since $x, y \in \mathfrak{g}^{\perp}$ the trace is zero by definition of the radical, so $\kappa|_{\mathfrak{g}^{\perp}} = 0$. By Cartan's solvability criterion applied to $\mathfrak{g}^{\perp}$, whose Killing form vanishes on the whole algebra and hence on $(\mathfrak{g}^{\perp}, [\mathfrak{g}^{\perp}, \mathfrak{g}^{\perp}])$, the ideal $\mathfrak{g}^{\perp}$ is solvable and nonzero, contradicting semisimplicity. Hence $\kappa$ is nondegenerate.</p>
+<p>Conversely, suppose $\mathfrak{a} \neq 0$ is an abelian ideal of $\mathfrak{g}$. For $x \in \mathfrak{a}$ and $y \in \mathfrak{g}$, the endomorphism $\operatorname{ad}_x \operatorname{ad}_y$ maps $\mathfrak{g}$ into $\mathfrak{a}$, because $\mathfrak{a}$ is an ideal, and maps $\mathfrak{a}$ to zero, because $\mathfrak{a}$ is abelian and $x \in \mathfrak{a}$; hence $(\operatorname{ad}_x\operatorname{ad}_y)^2 = 0$ and $\kappa(x, y) = 0$. Therefore $x \in \mathfrak{g}^{\perp}$, so $\mathfrak{g}^{\perp} \neq 0$ and $\kappa$ is degenerate. Contrapositively, nondegeneracy of $\kappa$ forbids nonzero abelian ideals, hence forbids nonzero solvable ideals, so $\mathfrak{g}$ is semisimple. $\square$</p>
+<h2 id="semisimple-lie-algebras">Semisimple Lie Algebras</h2>
+<h3 id="the-decomposition-into-simple-ideals">The Decomposition into Simple Ideals</h3>
+<p><strong>Theorem.</strong> Let $\mathfrak{g}$ be a finite-dimensional semisimple Lie algebra over a field of characteristic zero. Then $\mathfrak{g}$ is the direct sum of its minimal nonzero ideals,</p>
+<p>$$
+\mathfrak{g} = \mathfrak{g}_1 \oplus \cdots \oplus \mathfrak{g}_r,
+$$</p>
+<p>and each $\mathfrak{g}_i$ is simple. The ideals $\mathfrak{g}_i$ are pairwise orthogonal with respect to $\kappa$, the direct sum is orthogonal, and the decomposition is unique up to order.</p>
+<p><strong>Proof.</strong> Let $\mathfrak{g}_1$ be a minimal nonzero ideal. Its orthogonal complement $\mathfrak{g}_1^{\perp}$ with respect to the nondegenerate form $\kappa$ is an ideal, because $\kappa$ is invariant, and $\mathfrak{g} = \mathfrak{g}_1 \oplus \mathfrak{g}_1^{\perp}$ as vector spaces. The ideal $\mathfrak{g}_1$ is simple: if $\mathfrak{a} \subseteq \mathfrak{g}_1$ is a nonzero ideal of $\mathfrak{g}_1$, then $[\mathfrak{a}, \mathfrak{g}] \subseteq [\mathfrak{a}, \mathfrak{g}_1] + [\mathfrak{a}, \mathfrak{g}_1^{\perp}] \subseteq \mathfrak{a} + [\mathfrak{g}_1, \mathfrak{g}_1^{\perp}] = \mathfrak{a}$, because $\mathfrak{g}_1^{\perp}$ is an ideal and $[\mathfrak{g}_1, \mathfrak{g}_1^{\perp}] \subseteq \mathfrak{g}_1 \cap \mathfrak{g}_1^{\perp} = 0$; so $\mathfrak{a}$ is an ideal of $\mathfrak{g}$ and equals $\mathfrak{g}_1$ by minimality. The orthogonal complement $\mathfrak{g}_1^{\perp}$, being a summand, is an ideal that is semisimple with nondegenerate Killing form; induction on the dimension applies to it, and uniqueness follows because the minimal ideals are the simple summands. $\square$</p>
+<p><strong>Corollary.</strong> A semisimple Lie algebra satisfies $[\mathfrak{g}, \mathfrak{g}] = \mathfrak{g}$: it is perfect. Every ideal of a semisimple algebra is a sum of some of the simple summands, and is itself semisimple; the only abelian ideal is zero.</p>
+<h3 id="weyls-complete-reducibility">Weyl's Complete Reducibility</h3>
+<p><strong>Theorem (Weyl).</strong> Let $\mathfrak{g}$ be a finite-dimensional semisimple Lie algebra over a field of characteristic zero. Then every finite-dimensional representation of $\mathfrak{g}$ is completely reducible: every invariant subspace has an invariant complement, and every representation is a direct sum of irreducible representations.</p>
+<p><strong>Proof sketch.</strong> One proves the vanishing of the first cohomology $H^1(\mathfrak{g}, V) = 0$ for every finite-dimensional module $V$, using the Casimir element of the representation. Given a submodule $W \subseteq V$, the short exact sequence $0 \to W \to V \to V/W \to 0$ has a splitting over the field, and the Casimir element corrects that linear splitting to a $\mathfrak{g}$-equivariant one; the corrected splitting exists because the Casimir element acts invertibly on the relevant space for a semisimple $\mathfrak{g}$. $\square$</p>
+<p><strong>Corollary.</strong> Every finite-dimensional representation of a semisimple Lie algebra is a direct sum of irreducible representations, and these are classified by their highest weights, as developed.</p>
+<h2 id="the-levi-decomposition">The Levi Decomposition</h2>
+<p><strong>Theorem (Levi).</strong> Let $\mathfrak{g}$ be a finite-dimensional Lie algebra over a field of characteristic zero, with radical $\mathfrak{r} = \mathfrak{r}(\mathfrak{g})$. Then there is a semisimple subalgebra $\mathfrak{s} \subseteq \mathfrak{g}$, a <strong>Levi factor</strong>, such that $\mathfrak{g}$ is the semidirect sum</p>
+<p>$$
+\mathfrak{g} = \mathfrak{r} \rtimes \mathfrak{s},
+$$</p>
+<p>that is, $\mathfrak{g} = \mathfrak{r} + \mathfrak{s}$ with $\mathfrak{r} \cap \mathfrak{s} = 0$ and $[\mathfrak{r}, \mathfrak{s}] \subseteq \mathfrak{r}$. The radical $\mathfrak{r}$ is an ideal, $\mathfrak{s}$ is a subalgebra isomorphic to $\mathfrak{g}/\mathfrak{r}$, and any two Levi factors are conjugate by an element of the group generated by the inner automorphisms corresponding to nilpotent elements of $\mathfrak{r}$.</p>
+<p><strong>Proof sketch.</strong> The quotient $\mathfrak{g}/\mathfrak{r}$ is semisimple. One shows by induction on $\dim\mathfrak{r}$ that the extension splits: the semisimple quotient has vanishing second cohomology with coefficients in $\mathfrak{r}$, $H^2(\mathfrak{g}/\mathfrak{r}, \mathfrak{r}) = 0$, and a splitting of the extension is exactly a Levi factor. The conjugacy statement is the theorem of Malcev–Harish-Chandra. $\square$</p>
+<p><strong>Corollary.</strong> Every finite-dimensional Lie algebra over a field of characteristic zero is built from a semisimple algebra and a solvable ideal, and every solvable Lie algebra is an iterated extension of abelian algebras.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>The general linear algebra.</strong> For $\mathfrak{gl}(n, K)$ with $K$ of characteristic zero, the Killing form is</p>
+<p>$$
+\kappa(X, Y) = 2n \operatorname{tr}(XY) - 2 \operatorname{tr}(X)\operatorname{tr}(Y).
+$$</p>
+<p>For $\mathfrak{sl}(n, K) \subseteq \mathfrak{gl}(n, K)$ the restriction is $\kappa(X, Y) = 2n\operatorname{tr}(XY)$, which is nondegenerate on the traceless matrices; hence $\mathfrak{sl}(n, K)$ is semisimple for $n \geq 2$. It has no nonzero proper ideals: $\mathfrak{sl}(n, K)$ is simple for $n \geq 2$.</p>
+<p><strong>The Heisenberg algebra.</strong> Let $\mathfrak{n}$ have basis $x, y, z$ with $[x, y] = z$ and $z$ central. Then $\mathfrak{n}$ is nilpotent of class $2$, with derived subalgebra and centre both equal to $\langle z\rangle$. The Killing form vanishes identically, since every $\operatorname{ad}_u$ is nilpotent and so every product $\operatorname{ad}_u\operatorname{ad}_v$ has zero trace; the form is maximally degenerate, and $\mathfrak{n}$ is neither semisimple nor reductive. This is the standard example in which Cartan's criterion detects solvability: $\kappa(\mathfrak{n}, [\mathfrak{n}, \mathfrak{n}]) = 0$.</p>
+<p><strong>The orthogonal algebra.</strong> For $\mathfrak{so}(n, K)$ with $n \geq 3$ and $K$ of characteristic zero, the Killing form is a nonzero multiple of the trace form $\operatorname{tr}(XY)$, and $\mathfrak{so}(n)$ is simple for $n \neq 4$; for $n = 4$ it is the direct sum of two copies of $\mathfrak{sl}(2, K)$, the exceptional isogeny $\mathfrak{so}(4) \cong \mathfrak{sl}(2) \oplus \mathfrak{sl}(2)$.</p>
+<p><strong>A solvable non-nilpotent algebra.</strong> The two-dimensional algebra with basis $x, y$ and $[x, y] = x$ has radical equal to itself, radical series $\mathfrak{g}^{(1)} = \langle x\rangle$, $\mathfrak{g}^{(2)} = 0$, and lower central series $\mathfrak{g}_1 = \langle x\rangle = \mathfrak{g}_k$ for all $k \geq 1$; it is solvable of derived length $2$ and not nilpotent. Its Killing form is nonzero but degenerate, and the Levi decomposition is trivial, $\mathfrak{g} = \mathfrak{g} \rtimes 0$.</p>
+<h2 id="summary">Summary</h2>
+<p>A finite-dimensional Lie algebra over a field of characteristic zero has a largest solvable ideal, the radical $\mathfrak{r}$, and a largest nilpotent ideal contained in it, the nilradical; the algebra is semisimple when the radical is zero, and simple when it is nonabelian with no nonzero proper ideal. Solvability and nilpotency are detected by the derived series and the lower central series, and the classes of solvable and nilpotent algebras are closed under subalgebras, quotients, and extensions.</p>
+<p>The adjoint map $x \mapsto \operatorname{ad}_x$ is a representation with kernel the centre, and its image is the ideal of inner derivations inside the Lie algebra of all derivations; for a semisimple algebra every derivation is inner. The Killing form $\kappa(x, y) = \operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$ is symmetric and invariant, its radical is an ideal, and Cartan's criteria give the two decisive tests: $\mathfrak{g}$ is solvable exactly when $\kappa(\mathfrak{g}, [\mathfrak{g}, \mathfrak{g}]) = 0$, and $\mathfrak{g}$ is semisimple exactly when $\kappa$ is nondegenerate. A semisimple algebra is a direct sum of simple ideals, pairwise orthogonal for $\kappa$ and unique up to order, it is perfect, and by Weyl's theorem all its finite-dimensional representations are completely reducible. Every finite-dimensional Lie algebra of characteristic zero is a semidirect sum $\mathfrak{r} \rtimes \mathfrak{s}$ of its radical and a semisimple Levi factor.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>Field of characteristic zero for the structure theory</td>
+</tr>
+<tr>
+<td>$\mathfrak{g}, \mathfrak{h}$</td>
+<td>Lie algebras over $K$</td>
+</tr>
+<tr>
+<td>$\mathfrak{i}, \mathfrak{a}$</td>
+<td>Ideals of a Lie algebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{z}(\mathfrak{g})$</td>
+<td>Centre, $\{x : [x, y] = 0 \ \forall y\}$; equals $\ker(\operatorname{ad})$</td>
+</tr>
+<tr>
+<td>$[\mathfrak{g}, \mathfrak{g}]$</td>
+<td>Derived subalgebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{g}^{(k)}, \mathfrak{g}_k$</td>
+<td>Derived series and lower central series</td>
+</tr>
+<tr>
+<td>$\mathfrak{r}(\mathfrak{g})$</td>
+<td>Radical, the largest solvable ideal</td>
+</tr>
+<tr>
+<td>$\mathfrak{n}(\mathfrak{g})$</td>
+<td>Nilradical, the largest nilpotent ideal</td>
+</tr>
+<tr>
+<td>Semisimple, simple, reductive</td>
+<td>$\mathfrak{r} = 0$; nonabelian with no nonzero proper ideal; $\mathfrak{r} = \mathfrak{z}(\mathfrak{g})$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_x(y) = [x, y]$</td>
+<td>Adjoint map; $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x, \operatorname{ad}_y]$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(\mathfrak{g})$</td>
+<td>Lie algebra of derivations</td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(\mathfrak{g}) = \operatorname{ad}(\mathfrak{g})$</td>
+<td>Inner derivations, an ideal of $\operatorname{Der}(\mathfrak{g})$</td>
+</tr>
+<tr>
+<td>$\operatorname{Out}(\mathfrak{g})$</td>
+<td>Outer derivations, $\operatorname{Der}(\mathfrak{g})/\operatorname{Inn}(\mathfrak{g})$</td>
+</tr>
+<tr>
+<td>$\kappa(x, y) = \operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$</td>
+<td>Killing form; symmetric, invariant</td>
+</tr>
+<tr>
+<td>$\mathfrak{g}^{\perp}$</td>
+<td>Radical of $\kappa$; an ideal; nonzero iff $\mathfrak{g}$ not semisimple</td>
+</tr>
+<tr>
+<td>$\mathfrak{g} = \mathfrak{r} \rtimes \mathfrak{s}$</td>
+<td>Levi decomposition; $\mathfrak{s}$ a semisimple Levi factor</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(n), \mathfrak{sl}(n), \mathfrak{so}(n)$</td>
+<td>General linear, special linear, orthogonal Lie algebras</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the structure theory, Killing form, and Cartan's criteria.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the radical, nilradical, and the Levi decomposition developed in full.</li>
+<li>Karin Erdmann and Mark J. Wildon, <em>Introduction to Lie Algebras</em> (Springer, 2006), for an elementary treatment of solvable, nilpotent and semisimple algebras.</li>
+<li>Jean-Pierre Serre, <em>Complex Semisimple Lie Algebras</em> (Springer, 1987), for the structure theory over the complex numbers and the route to the classification.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Interscience, 1962), for Engel's theorem, Lie's theorem, and Cartan's criteria with complete proofs.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2nd ed. 2002), for the structure theory in the setting of Lie groups.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2nd ed. 2015), for Cartan's criteria and complete reducibility with proofs.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

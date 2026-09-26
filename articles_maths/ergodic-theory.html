@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ergodic Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ergodic-theory"><strong>Ergodic Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Ergodic theory is the study of a measure-preserving transformation of a probability space, and the question it asks is how the iterates of a point distribute themselves. The empirical evidence for the theory is the law of large numbers: for a sequence of independent and identically distributed random variables the sample means converge to the mean, and for a measure-preserving transformation the time averages converge to the space average, so that the independence is replaced by the invariance of the measure and the conclusion survives. Theorems of this kind — the pointwise ergodic theorem of Birkhoff and the mean ergodic theorem of von Neumann — are the fundamental results of the subject, and the quantitative refinement of the theory is entropy, which measures how fast a transformation generates information.</p>
+<p>This article develops the general theory of a <strong>single</strong> measure-preserving transformation. It defines invariance and ergodicity, proves Poincaré's recurrence theorem, introduces the Koopman unitary operator as the spectral encoding of the dynamics, proves the mean and pointwise ergodic theorems with the Hopf maximal inequality, establishes the criteria for ergodicity and mixing, describes the ergodic decomposition of the invariant measures, develops Kolmogorov–Sinai entropy with the Shannon–McMillan–Breiman theorem and the Ornstein isomorphism theorem for Bernoulli shifts, and closes with Pesin's formula. The examples — rotations, the doubling map, the Gauss map of continued fractions, Bernoulli shifts, toral automorphisms — are developed as they arise.</p>
+<p>Two boundaries are held exactly, and the first is stated again here because it is the sharpest in the part.</p>
+<ul>
+<li>The <strong>ergodic theory of group actions</strong> — the invariance, ergodicity and mixing of an action of a general locally compact group, the Følner averaging of an amenable group, the Mautner phenomenon, the Moore and Howe–Moore theorems, orbit equivalence and the ratio ergodic theorem, and the homogeneous examples — is <em>Ergodic Theory of Group Actions</em>. The two articles overlap in the von Neumann and Birkhoff theorems for the action of $\mathbb{Z}$, which are stated once there as standard mathematics and used, and are here <strong>proved</strong> in the sharp form they take for a single transformation; the present article is the measure-theoretic theory of one map, and the group-action article is the algebraic theory of a group acting. <strong>The division of labour is asserted in the introduction of each article</strong>.</li>
+<li>The <strong>probability theory</strong> used here — the measure-theoretic frame, independence, conditional expectation, the laws of large numbers and the central limit theorem, the martingale theory, the Markov chains and processes, and the Brownian motion — is the block of articles <em>Measure-Theoretic Probability</em> through <em>Brownian Motion and Stochastic Calculus</em>, and the probabilistic statements are cited from them. The <strong>general measure theory</strong> is <em>Measure Theory and Integration</em> and <em>Modes of Convergence</em>, and the <strong>functional analysis</strong> — the spectral theorem, the $L^2$ projection, the unitary operators, the Choquet theory of simplices — is <em>Banach and Hilbert Spaces</em> and <em>Operator Algebras</em>. The <strong>dynamical applications</strong> to homogeneous spaces are <em>Homogeneous Dynamics</em> and <em>Ratner's Theorems</em>; the <strong>equidistribution</strong> of orbits is <em>Equidistribution</em>; and the <strong>random walks on groups</strong>, where the ergodic theory of a convolution action is used, is. No physics is invoked.</li>
+</ul>
+<p>Throughout, $(X,\mathcal{B},\mu)$ is a probability space, $T : X\to X$ is a measurable map, and $T$ is <strong>measure-preserving</strong> if $\mu(T^{-1}A) = \mu(A)$ for every $A \in \mathcal{B}$; the pair $(X,\mathcal{B},\mu,T)$ is then a <strong>measure-preserving system</strong>. Statements hold <strong>a.e.</strong> (almost everywhere) when they fail on a $\mu$-null set, and the probabilistic synonym <em>almost surely</em> is not used. The <strong>invariant $\sigma$-algebra</strong> is $\mathcal{I} = \{A \in \mathcal{B} : \mu(T^{-1}A\triangle A) = 0\}$, the <strong>Koopman operator</strong> is $U_Tf = f\circ T$, the <strong>Kronecker</strong> notation $e(\theta) = e^{2\pi i\theta}$ is used, and $\xi\vee\eta$ is the join of two partitions.</p>
+<h2 id="measure-preserving-transformations">Measure-Preserving Transformations</h2>
+<h3 id="definitions-and-examples">Definitions and Examples</h3>
+<p><strong>Definition.</strong> A measurable map $T : X\to X$ is <strong>measure-preserving</strong> if $\mu(T^{-1}A) = \mu(A)$ for all $A \in \mathcal{B}$, and <strong>invertible</strong> if it is a bimeasurable bijection with a measure-preserving inverse; a measure-preserving system is <strong>ergodic</strong> if $A \in \mathcal{I}$ implies $\mu(A) \in \{0,1\}$, and <strong>nonsingular</strong> if only $\mu(T^{-1}A) = 0 \iff \mu(A) = 0$.</p>
+<p><strong>Example (circle rotations).</strong> Let $X = \mathbb{R}/\mathbb{Z}$ with Lebesgue measure and $T(x) = x + \alpha \bmod 1$. The rotation preserves Lebesgue measure and is ergodic exactly when $\alpha$ is irrational; when $\alpha = p/q$ is rational the orbits are the cosets of the finite subgroup $\frac1q\mathbb{Z}/\mathbb{Z}$ and the invariant sets are the unions of them, so the system is not ergodic.</p>
+<p><strong>Example (the doubling map).</strong> On $[0,1)$ with Lebesgue measure, $T(x) = 2x \bmod 1$ preserves the measure and is ergodic; it is the one-sided Bernoulli shift on the binary digits, and the entropy is $\log 2$.</p>
+<p><strong>Example (Bernoulli shifts).</strong> Let $(p_1,\dots,p_k)$ be a probability vector and let $X = \{1,\dots,k\}^{\mathbb{Z}}$ with the product measure $\mu = \prod_{\mathbb{Z}}\sum_ip_i\delta_i$, the <strong>Bernoulli shift</strong> being the left translation $\sigma$ of the sequence. The system $(\sigma,\mu)$ is measure-preserving, invertible and ergodic; the entropy is $H(p) = \sum_ip_i\log(1/p_i)$, and the classification of these systems is Ornstein's theorem below.</p>
+<p><strong>Example (the Gauss map).</strong> Let $X = [0,1)$ and $T(x) = 1/x \bmod 1$ for $x \neq 0$, $T(0) = 0$. The Gauss measure $d\mu = \frac{1}{\log2}\frac{dx}{1+x}$ is preserved; the map is ergodic, and it generates the continued fraction expansion $x = [a_1,a_2,\dots]$ with $a_n = \lfloor T^{n-1}x\rfloor$ for $n \geq 1$. The entropy is $\pi^2/(6\log2)$, and the ergodic theorem applied to the digit functions gives the almost-sure statements of the metric theory of continued fractions: the limiting frequency of the digit $k$ is $\frac{1}{\log2}\log\frac{(k+1)^2}{k(k+2)}$, and the limiting behaviour of the convergents is governed by the Lyapunov exponent of $T$.</p>
+<p><strong>Example (toral automorphisms).</strong> Let $X = \mathbb{R}^2/\mathbb{Z}^2$ with Lebesgue measure and let $A \in SL_2(\mathbb{Z})$; the induced map $T_A$ preserves the measure. When $|\operatorname{tr}A| > 2$ the eigenvalues are real and one is larger than $1$ in modulus; the map is ergodic, mixing and of positive entropy $\log|\lambda|$, with $\lambda$ the larger eigenvalue. The automorphism is the prototype of the hyperbolic behaviour exploited in <em>Homogeneous Dynamics</em>.</p>
+<h3 id="poincare-recurrence">Poincaré Recurrence</h3>
+<p><strong>Theorem (Poincaré recurrence).</strong> Let $T$ be measure-preserving and let $A \in \mathcal{B}$ with $\mu(A) > 0$. Then for a.e. $x \in A$ there are infinitely many $n \geq 1$ with $T^nx \in A$.</p>
+<p><em>Proof.</em> Let $N = \{x \in A : T^nx \notin A \text{ for all } n \geq 1\}$ be the set of points that never return. The sets $N, T^{-1}N, T^{-2}N, \dots$ are pairwise disjoint: if $T^{-i}N\cap T^{-j}N\neq\varnothing$ with $i<j$, then a point of $N$ is sent by $T^{j-i}$ into $N\subseteq A$, contradicting the definition of $N$. Since $T$ preserves the measure, all the sets $T^{-k}N$ have the same measure, and pairwise disjointness forces $\mu(N) = 0$. Hence a.e. point of $A$ returns at least once; applying the same argument to the measure-preserving system restricted to the return times gives infinitely many returns. $\square$</p>
+<p>The recurrence theorem is the first indication that measure-preserving dynamics is recurrent: a positive-measure set is visited infinitely often by almost every orbit that meets it. It is also the reason the asymptotic statements below are meaningful, and its quantitative form is Kac's theorem at the end of the next section.</p>
+<h3 id="the-koopman-operator">The Koopman Operator</h3>
+<p><strong>Definition.</strong> The <strong>Koopman operator</strong> of a measure-preserving $T$ is the linear isometry</p>
+<p>$$
+U_T : L^2(X,\mu)\to L^2(X,\mu), \qquad U_Tf = f\circ T.
+$$</p>
+<p>If $T$ is invertible then $U_T$ is unitary, and $U_T$ is the representation of $\mathbb{Z}$ on $L^2$ induced by the action; its properties encode the dynamics.</p>
+<p><strong>Proposition.</strong> If $T$ is invertible then $U_T$ is unitary and $U_T^{-1} = U_{T^{-1}}$; the constant functions span the <strong>fixed space</strong> $\ker(U_T - I)$, and the orthogonal complement of the fixed space is the closed span of the <strong>coboundaries</strong> $\{f\circ T - f : f \in L^2\}$.</p>
+<p><em>Proof.</em> The unitarity follows from the change of variables, since $T$ preserves $\mu$: $\langle U_Tf, U_Tg\rangle = \int f(Tx)\overline{g(Tx)}\,d\mu(x) = \int f\bar g\,d\mu$ by the measure-preserving property. The identification of the coboundaries is the standard orthogonal decomposition $L^2 = \ker(U-I)\oplus\overline{\operatorname{Im}(U-I)}$ for a unitary operator, valid because the two spaces are orthogonal — $\langle f\circ T - f, h\rangle = 0$ for $h$ fixed — and because the orthogonal complement of the image is the kernel for a normal operator. $\square$</p>
+<p>The coboundary decomposition is the operator-theoretic form of the ergodic theorems: the orthogonal projection onto the fixed space is the limit of the averages of the powers of $U_T$, and the coboundary part averages to zero. The same decomposition in the unitary representation of a group is the subject of <em>Ergodic Theory of Group Actions</em> and of the spectral theory of <em>Noncommutative Harmonic Analysis</em>.</p>
+<h2 id="ergodicity-and-its-criteria">Ergodicity and Its Criteria</h2>
+<h3 id="equivalent-forms">Equivalent Forms</h3>
+<p><strong>Theorem (ergodicity criteria).</strong> For an invertible measure-preserving $T$ the following are equivalent:</p>
+<ol>
+<li>$T$ is ergodic;</li>
+<li>every $f \in L^2$ with $f\circ T = f$ a.e. is constant a.e.;</li>
+<li>the fixed space of $U_T$ on $L^2$ is one-dimensional;</li>
+<li>for every $A, B \in \mathcal{B}$ of positive measure there is $n \in \mathbb{Z}$ with $\mu(T^nA \cap B) > 0$;</li>
+<li>for all $A,B \in \mathcal{B}$, $\frac{1}{n}\sum_{k=0}^{n-1}\mu(T^{-k}A\cap B) \to \mu(A)\mu(B)$.</li>
+</ol>
+<p><em>Proof.</em> The equivalence of 1, 2 and 3 is immediate from the definitions: an invariant function is a limit of invariant simple functions, and the invariant sets generate the invariant functions. The equivalence with 4 is the argument used for the group-action dichotomy: if $\mu(T^nA\cap B) = 0$ for all $n$ and $A$ is invariant with $0 < \mu(A) < 1$, take $B = X\setminus A$. The equivalence with 5 is the mean ergodic theorem applied to the indicator functions, since the average of the correlations is the inner product of the averages. $\square$</p>
+<p>The criterion 5 is the form in which ergodicity is checked in practice, and it is the first appearance of the mixing hierarchy: ergodicity is the convergence of the <strong>Cesàro</strong> averages of the correlations, and the stronger property asks for the convergence of the correlations themselves.</p>
+<h3 id="the-koopman-spectrum-and-the-classification">The Koopman Spectrum and the Classification</h3>
+<p><strong>Definition.</strong> The system is <strong>mixing</strong> (or strongly mixing) if for all $A,B \in \mathcal{B}$,</p>
+<p>$$
+\mu(T^{-n}A\cap B) \longrightarrow \mu(A)\mu(B) \quad \text{as } n\to\infty;
+$$</p>
+<p>it is <strong>weakly mixing</strong> if the Cesàro averages of the correlations converge as in criterion 5 of the previous theorem with the absolute values, that is $\frac1n\sum_{k<n}|\mu(T^{-k}A\cap B) - \mu(A)\mu(B)|\to0$; and it is <strong>rigid</strong> if there is a sequence $n_k\to\infty$ with $\mu(T^{-n_k}A\triangle A)\to0$ for every $A$.</p>
+<p><strong>Theorem (spectral classification).</strong> For an invertible measure-preserving $T$:</p>
+<ol>
+<li>$T$ is ergodic if and only if $1$ is a simple eigenvalue of $U_T$;</li>
+<li>$T$ is weakly mixing if and only if $1$ is the only eigenvalue of $U_T$, that is, the system has discrete spectrum $1$ alone;</li>
+<li>$T$ is mixing if and only if $\langle U_T^nf,g\rangle \to \langle Pf, \mathbf{1}\rangle\langle \mathbf{1},g\rangle$ for all $f,g \in L^2$, where $P$ is the projection onto the constants.</li>
+</ol>
+<p><em>Proof (sketch).</em> The first statement is a restatement of criterion 3 above. For the second, the correlation $n\mapsto\langle U_T^nf,g\rangle$ is a positive-definite sequence; a positive-definite sequence whose Cesàro absolute means vanish must have vanishing Fourier coefficients at nonzero frequencies, so no eigenvalue other than $1$ can occur, and conversely a nonconstant eigenfunction produces a correlation whose average does not vanish. The third statement is the definition rewritten with $f = \mathbf{1}_A$, $g = \mathbf{1}_B$ and the density of the indicators in $L^2$; the limit is the announced one. $\square$</p>
+<p>The classification shows that the ergodic hierarchy is a hierarchy of the spectrum of the Koopman operator: ergodicity says the fixed space is one-dimensional, weak mixing that the point spectrum is trivial on the orthogonal complement of the constants, and mixing that the correlations decay in the mean. Weak mixing is also characterised by the ergodicity of the product system $T\times T$, and mixing implies weak mixing which implies ergodicity, with the circle rotation showing that ergodicity does not imply weak mixing, and the weakly mixing but non-mixing systems of rank-one constructions showing that weak mixing does not imply mixing.</p>
+<p><strong>Example.</strong> An irrational rotation is ergodic and not weakly mixing: its Koopman operator has the full circle group of eigenvalues, since $U_T e(nx) = e(n\alpha)e(nx)$. A Bernoulli shift is mixing: $\mu(\sigma^{-n}A\cap B)\to\mu(A)\mu(B)$ because the events depend on coordinates far apart, and the correlations decay. A rigid system is not mixing, and the contrast between the rigidity of a rotation and the mixing of a Bernoulli shift is the motivating dichotomy of the subject.</p>
+<h2 id="the-ergodic-theorems">The Ergodic Theorems</h2>
+<h3 id="the-mean-ergodic-theorem">The Mean Ergodic Theorem</h3>
+<p><strong>Theorem (von Neumann).</strong> Let $T$ be measure-preserving and let $P$ be the orthogonal projection of $L^2(X,\mu)$ onto the fixed space $\ker(U_T - I)$. Then for every $f \in L^2$,</p>
+<p>$$
+\frac{1}{n}\sum_{k=0}^{n-1}U_T^kf \longrightarrow Pf \qquad \text{in } L^2.
+$$</p>
+<p><em>Proof.</em> Decompose $f = Pf + (f - Pf)$ according to $L^2 = \ker(U-I)\oplus\overline{\operatorname{Im}(U-I)}$. The first summand is fixed and its averages are $Pf$. For the second, it suffices to treat $f = g\circ T - g$: the averages telescope,</p>
+<p>$$
+\frac{1}{n}\sum_{k=0}^{n-1}U^k(g\circ T - g) = \frac{1}{n}\bigl(U^ng - g\bigr),
+$$</p>
+<p>whose norm is at most $2\|g\|_2/n\to0$; the general element of the closure of the image is handled by approximation. $\square$</p>
+<p>The theorem is the ergodic theorem in the mean, and it is a statement about the operator $U$ alone: it holds for every contraction of a Hilbert space (the <strong>von Neumann ergodic theorem</strong> for isometries), with the projection onto the fixed space as the limit. If $T$ is ergodic then $Pf = \int f\,d\mu$ is the constant function of the mean, and the theorem is the convergence of the averages to the space average. The theorem does not require the pointwise convergence, which is the content of the next result.</p>
+<h3 id="the-pointwise-ergodic-theorem">The Pointwise Ergodic Theorem</h3>
+<p><strong>Definition.</strong> For $f \in L^1(X,\mu)$ the <strong>Birkhoff sums</strong> are $S_nf = \sum_{k=0}^{n-1}f\circ T^k$ and the <strong>maximal function</strong> is $(Mf)(x) = \sup_{n\geq1}\frac{1}{n}S_nf(x)$.</p>
+<p><strong>Theorem (Hopf maximal inequality).</strong> Let $f\in L^1$ be real-valued and let $M_Nf = \max_{0\leq k\leq N}S_kf$. Then</p>
+<p>$$
+\int_{\{M_Nf > 0\}} f\,d\mu \geq 0 \qquad \text{for every } N.
+$$</p>
+<p><em>Proof.</em> Decompose the set where the maximum is positive according to the first time $k \leq N$ at which $S_kf > 0$, and use the translation invariance of the measure: on the piece where the first positive partial sum occurs at $k$, the sum $S_kf$ is at least the later increments, so
+$\int_{\{M_Nf>0\}}f\,d\mu = \sum_{k=0}^{N}\int_{\{\text{first positive at }k\}}f\,d\mu \geq 0$. $\square$</p>
+<p><strong>Theorem (Birkhoff pointwise ergodic theorem).</strong> Let $T$ be measure-preserving and let $f \in L^1(X,\mu)$. Then the averages converge a.e. and in $L^1$:</p>
+<p>$$
+\frac{1}{n}\sum_{k=0}^{n-1}f(T^kx) \longrightarrow f^*(x) \qquad \text{a.e., with } f^* \in L^1, \quad f^*\circ T = f^* \text{ a.e.,} \quad \int f^*\,d\mu = \int f\,d\mu.
+$$</p>
+<p>If $T$ is ergodic then $f^* = \int f\,d\mu$ a.e.</p>
+<p><em>Proof (sketch).</em> The Hopf maximal inequality applied to $\pm(f - g)$ for a bounded invariant $g$ controls the set where the averages differ from a constant by more than $\varepsilon$; the maximal inequality of Hopf and the density of the bounded functions in $L^1$ show that the set of points where $\limsup$ and $\liminf$ of the averages differ has measure zero. The limit $f^*$ is invariant because the averages are and the limit is measurable with respect to the invariant $\sigma$-algebra; the identity $\int f^* = \int f$ follows from the mean ergodic theorem, which identifies the $L^1$ limit of the averages with the conditional expectation $\mathbb{E}[f\mid\mathcal{I}]$. $\square$</p>
+<p>The theorem is the pointwise form of the law of large numbers: for the Bernoulli shift the invariant $\sigma$-algebra is trivial, and the conclusion is the classical strong law of <em>Laws of Large Numbers and the Central Limit Theorem</em>. In general the limit is the conditional expectation onto the invariant sets, $\mathbb{E}[f\mid\mathcal{I}]$, and this is the sharp statement: the time average converges to the space average along the ergodic components, and the decomposition into ergodic components is the subject of the section after the next.</p>
+<h3 id="kacs-recurrence-theorem">Kac's Recurrence Theorem</h3>
+<p><strong>Theorem (Kac).</strong> Let $T$ be ergodic and measure-preserving on a probability space, let $A \in \mathcal{B}$ with $\mu(A) > 0$, and let $\tau_A(x) = \inf\{n \geq 1 : T^nx \in A\}$ be the first return time. Then $\int_A\tau_A\,d\mu = 1$.</p>
+<p><em>Proof.</em> Apply the ergodic theorem to the ergodic system induced on $A$ by the first-return map, or equivalently apply the ergodic theorem to $\mathbf{1}_A$ and count the visits: the proportion of time spent in $A$ is $\mu(A)$, and the average return time is the reciprocal of the frequency of visits, which gives the identity after the normalisation by $\mu(A)$. The precise derivation uses the Kac formula $\int_A\tau_A\,d\mu = 1$ for a probability measure, which is the ergodic theorem for the induced transformation. $\square$</p>
+<p>Kac's theorem quantifies Poincaré recurrence: the mean return time to $A$ is $1/\mu(A)$, so a small set is revisited only after a long time. It is the prototype of the return-time statements used in the theory of the continued fraction map and in the recurrence of the homogeneous flows of <em>Ergodic Theory of Group Actions</em>.</p>
+<h2 id="entropy">Entropy</h2>
+<h3 id="kolmogorovsinai-entropy">Kolmogorov–Sinai Entropy</h3>
+<p><strong>Definition.</strong> Let $\xi = \{A_1,\dots,A_k\}$ be a finite partition of $X$. Its <strong>entropy</strong> is $H(\xi) = -\sum_i\mu(A_i)\log\mu(A_i)$, and the entropy of $T$ with respect to $\xi$ is</p>
+<p>$$
+h_\mu(T,\xi) = \lim_{n\to\infty}\frac{1}{n}H\!\left(\bigvee_{k=0}^{n-1}T^{-k}\xi\right),
+$$</p>
+<p>the limit existing because the sequence is subadditive. The <strong>Kolmogorov–Sinai entropy</strong> is $h_\mu(T) = \sup_\xi h_\mu(T,\xi)$, the supremum over finite partitions.</p>
+<p><strong>Theorem (Kolmogorov–Sinai).</strong> If $\xi$ is a <strong>generator</strong> — that is, the partitions $T^{-k}\xi$, $k \geq 0$, generate the $\sigma$-algebra $\mathcal{B}$ up to null sets — then $h_\mu(T) = h_\mu(T,\xi)$.</p>
+<p>The entropy is an isomorphism invariant: conjugate systems have the same entropy, so the entropy separates systems that are not isomorphic, and it is the principal computable invariant of ergodic theory. The Kolmogorov–Sinai theorem reduces its computation to a single partition for the standard examples: the binary partition generates the doubling map and gives $\log 2$; the digit partition generates the Bernoulli shift and gives $H(p)$; the continued fraction partition together with the Gauss measure gives $\pi^2/(6\log2)$; and a toral automorphism has entropy $\log|\lambda|$ by the Adler–Weiss computation.</p>
+<h3 id="the-shannonmcmillanbreiman-theorem">The Shannon–McMillan–Breiman Theorem</h3>
+<p><strong>Theorem (Shannon–McMillan–Breiman).</strong> Let $T$ be ergodic and measure-preserving and let $\xi$ be a finite partition. Then</p>
+<p>$$
+-\frac{1}{n}\log\mu\bigl(\xi^{(n)}(x)\bigr) \longrightarrow h_\mu(T,\xi) \qquad \text{a.e. and in } L^1,
+$$</p>
+<p>where $\xi^{(n)} = \bigvee_{k=0}^{n-1}T^{-k}\xi$ and $\xi^{(n)}(x)$ is the atom of $\xi^{(n)}$ containing $x$.</p>
+<p>The theorem is the ergodic theorem for the information function, and it is the reason the entropy is the exponential rate of decay of the measure of the atom: the typical atom of the $n$-fold refinement has measure $e^{-nh_\mu(T,\xi)}$. Its proof applies the martingale convergence theorem of <em>Martingales</em> to the conditional information functions — which form a reverse martingale as the conditioning $\sigma$-algebra shrinks — together with the ergodic theorem for the limiting term, and it is the bridge between entropy and the pointwise ergodic theory.</p>
+<h3 id="bernoulli-shifts-and-ornsteins-theorem">Bernoulli Shifts and Ornstein's Theorem</h3>
+<p><strong>Theorem (Ornstein isomorphism theorem).</strong> Two invertible Bernoulli shifts with probability vectors $p$ and $q$ are isomorphic — there is a measure-preserving invertible map intertwining the two shifts — if and only if $H(p) = H(q)$. More generally, the entropy is a complete invariant for the invertible Bernoulli shifts.</p>
+<p>The theorem is the classification of the Bernoulli shifts, and it is the deepest result of the classical theory: entropy, which is only an invariant, is also sufficient to distinguish the Bernoulli systems. The proof uses the <strong>very weak Bernoulli</strong> property and the machinery of joinings; the same methods classify the Kolmogorov automorphisms and the Bernoulli flows. The result is the reason the entropy is the central numeric invariant of ergodic theory, and it is the model for the classification results of smooth ergodic theory.</p>
+<h3 id="pesins-formula">Pesin's Formula</h3>
+<p><strong>Theorem (Ruelle's inequality and Pesin's formula).</strong> Let $T$ be a $C^{1+\alpha}$ diffeomorphism of a compact smooth manifold preserving an ergodic measure $\mu$. Then Ruelle's inequality holds:</p>
+<p>$$
+h_\mu(T) \leq \int \sum_{\lambda_i(x) > 0}\lambda_i(x)\,d\mu(x),
+$$</p>
+<p>where the $\lambda_i(x)$ are the Lyapunov exponents of $T$ at $x$ and the sum is over the positive ones; and if in addition $\mu$ has no zero Lyapunov exponents, then the <strong>Pesin entropy formula</strong></p>
+<p>$$
+h_\mu(T) = \int \sum_{\lambda_i(x) > 0}\lambda_i(x)\,d\mu(x)
+$$</p>
+<p>holds.</p>
+<p>Pesin's formula is the smooth ergodic theorem: the entropy, which is a measure-theoretic invariant, equals the total exponential expansion of the tangent map. It is the reason the entropy of a toral automorphism is $\log|\lambda|$ — the single Lyapunov exponent of the hyperbolic matrix — and it is the point of contact of ergodic theory with the hyperbolic dynamics of <em>Homogeneous Dynamics</em> and the geodesic flows of <em>Ergodic Theory of Group Actions</em>. The theorem is stated here as standard mathematics for the use of the entropy theory, with the citation to Pesin in the Further Reading; the general theory of Lyapunov exponents, the Oseledets theorem and the smooth ergodic theory built on it are the subject of the dynamical-systems block of the menu written in parallel, and are not developed here.</p>
+<h2 id="the-ergodic-decomposition">The Ergodic Decomposition</h2>
+<p><strong>Theorem (ergodic decomposition).</strong> Let $T$ be a measure-preserving transformation on a standard Borel probability space. Then</p>
+<p>$$
+\mu = \int \mu_x\, d\mu(x),
+$$</p>
+<p>where $\mu_x$ is the conditional measure on the atom of the invariant $\sigma$-algebra containing $x$; each $\mu_x$ is $T$-invariant and ergodic, and $\mu_x = \mu_y$ for $\mu$-a.e. $y$ in the atom. The set of $T$-invariant probability measures is a Choquet simplex whose extreme points are exactly the ergodic measures.</p>
+<p>The theorem is the decomposition of an arbitrary invariant measure into ergodic components, and it is the reason the ergodic theorems can be stated for arbitrary systems: the time average of $f$ is the function $x\mapsto\int f\,d\mu_x$, which is constant on the atoms of the invariant $\sigma$-algebra and hence is the conditional expectation $\mathbb{E}[f\mid\mathcal{I}]$. The decomposition is the abstract version of the decomposition of a measure into its ergodic pieces in the classical examples — the countable family for a rational rotation, the continuum for the rotations of a circle, the family over the base of a skew product — and its proof uses the Choquet theorem for compact convex sets of measures and the Rohlin theory of the conditional measures.</p>
+<h2 id="summary">Summary</h2>
+<p>A measure-preserving system is a probability space with a transformation that preserves the measure; its invariant sets form the invariant $\sigma$-algebra, and the system is ergodic when that algebra is trivial. Poincaré's recurrence theorem states that a positive-measure set is revisited infinitely often by almost every orbit that meets it, and Kac's theorem computes the mean return time as the reciprocal of the measure. The Koopman operator $U_Tf = f\circ T$ is a unitary operator on $L^2$, encoding the dynamics: ergodicity is the simplicity of its eigenvalue $1$, weak mixing the absence of other eigenvalues, and mixing the decay of the correlations, so that the ergodic hierarchy is a hierarchy of the spectrum.</p>
+<p>The von Neumann mean ergodic theorem states that the Cesàro averages of the powers of the Koopman operator converge in $L^2$ to the orthogonal projection onto the fixed space, with a proof that reduces to the telescoping of the coboundaries. The Birkhoff pointwise ergodic theorem states that the time averages of an integrable function converge almost everywhere and in $L^1$ to an invariant limit with the same integral, the limit being the conditional expectation onto the invariant $\sigma$-algebra; the Hopf maximal inequality is the maximal estimate behind the proof, and the theorem contains the strong law of large numbers as the case of the Bernoulli shift. The ergodic decomposition writes an invariant measure as an integral of ergodic ones, with the ergodic measures as the extreme points of the simplex of invariant probabilities.</p>
+<p>The quantitiative refinement of the theory is entropy. The Kolmogorov–Sinai entropy is the supremum over finite partitions of the asymptotic entropy of the refinements, equal to the entropy of any generator by the Kolmogorov–Sinai theorem; the Shannon–McMillan–Breiman theorem states that the information of the typical atom decays at the exponential rate of the entropy; and Ornstein's theorem classifies the Bernoulli shifts by their entropy. Pesin's formula identifies the entropy of a smooth system with the total positive Lyapunov exponent, connecting the measure-theoretic invariant with the expansion of the derivative. The circle rotations, the doubling map, the Gauss map, the Bernoulli shifts and the toral automorphisms are the standard examples, and the group-action generalisation of the whole subject is <em>Ergodic Theory of Group Actions</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(X,\mathcal{B},\mu,T)$</td>
+<td>Measure-preserving system</td>
+</tr>
+<tr>
+<td>a.e.</td>
+<td>Almost everywhere; the probabilistic synonym a.s. is not used in this article</td>
+</tr>
+<tr>
+<td>$\mathcal{I}$</td>
+<td>Invariant $\sigma$-algebra</td>
+</tr>
+<tr>
+<td>ergodic</td>
+<td>every invariant set has measure $0$ or $1$</td>
+</tr>
+<tr>
+<td>$U_Tf = f\circ T$</td>
+<td>Koopman operator; unitary when $T$ is invertible</td>
+</tr>
+<tr>
+<td>$U_T^k$, coboundary</td>
+<td>iterates; $g\circ T - g$</td>
+</tr>
+<tr>
+<td>mixing, weakly mixing, rigid</td>
+<td>$\mu(T^{-n}A\cap B)\to\mu(A)\mu(B)$; Cesàro version; $\mu(T^{-n_k}A\triangle A)\to0$</td>
+</tr>
+<tr>
+<td>$S_nf$, $Mf$, $M_Nf$</td>
+<td>Birkhoff sums, maximal function, truncated maximum</td>
+</tr>
+<tr>
+<td>von Neumann, Birkhoff</td>
+<td>mean and pointwise ergodic theorems</td>
+</tr>
+<tr>
+<td>$f^* = \mathbb{E}[f\mid\mathcal{I}]$</td>
+<td>Invariant limit of the time averages</td>
+</tr>
+<tr>
+<td>$\tau_A$, Kac</td>
+<td>first return time; $\int_A\tau_A\,d\mu=1$</td>
+</tr>
+<tr>
+<td>$H(\xi)$, $h_\mu(T,\xi)$, $h_\mu(T)$</td>
+<td>partition entropy, entropy with respect to $\xi$, Kolmogorov–Sinai entropy</td>
+</tr>
+<tr>
+<td>generator</td>
+<td>partition whose translates generate $\mathcal{B}$</td>
+</tr>
+<tr>
+<td>Shannon–McMillan–Breiman</td>
+<td>$-\frac1n\log\mu(\xi^{(n)}(x))\to h_\mu(T,\xi)$</td>
+</tr>
+<tr>
+<td>Bernoulli shift, $H(p)$</td>
+<td>shift on $\{1,\dots,k\}^{\mathbb{Z}}$, its entropy</td>
+</tr>
+<tr>
+<td>Pesin</td>
+<td>$h_\mu(T)=\int\sum_{\lambda_i>0}\lambda_i\,d\mu$</td>
+</tr>
+<tr>
+<td>ergodic decomposition</td>
+<td>$\mu=\int\mu_x\,d\mu(x)$, $\mu_x$ ergodic</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Peter Walters, <em>An Introduction to Ergodic Theory</em> (Springer, 1982), for the ergodic theorems, mixing, the ergodic decomposition and entropy.</li>
+<li>Karl Petersen, <em>Ergodic Theory</em> (Cambridge University Press, 1983), for a systematic account including the spectral theory and the classification results.</li>
+<li>I. P. Cornfeld, S. V. Fomin and Ya. G. Sinai, <em>Ergodic Theory</em> (Springer, 1982), for the entropy theory, the Shannon–McMillan–Breiman theorem and the Ornstein isomorphism theorem.</li>
+<li>Donald S. Ornstein, <em>Ergodic Theory, Randomness, and Dynamical Systems</em> (Yale University Press, 1974), for the very weak Bernoulli property and the classification of Bernoulli shifts.</li>
+<li>George D. Birkhoff, "Proof of the ergodic theorem", <em>Proceedings of the National Academy of Sciences</em> 17 (1931), 656–660, and John von Neumann, "Proof of the quasi-ergodic hypothesis", <em>Proceedings of the National Academy of Sciences</em> 18 (1932), 70–82, for the two ergodic theorems.</li>
+<li>Eberhard Hopf, <em>Ergodentheorie</em> (Springer, 1937), for the maximal inequality and the ratio ergodic theorem.</li>
+<li>Mark Kac, "On the notion of recurrence in discrete stochastic processes", <em>Bulletin of the American Mathematical Society</em> 53 (1947), 1002–1010, for the return-time theorem.</li>
+<li>A. N. Kolmogorov, "A new metric invariant of transitive dynamical systems and automorphisms of Lebesgue spaces", <em>Doklady Akademii Nauk SSSR</em> 119 (1958), 861–864, and Ya. G. Sinai, "On the notion of entropy of a dynamical system", <em>Doklady Akademii Nauk SSSR</em> 124 (1959), 768–771, for the entropy of a dynamical system.</li>
+<li>Ya. B. Pesin, "Characteristic Lyapunov exponents and smooth ergodic theory", <em>Russian Mathematical Surveys</em> 32 (1977), 55–114, for the entropy formula.</li>
+<li>Manfred Einsiedler and Thomas Ward, <em>Ergodic Theory with a View towards Number Theory</em> (Springer, 2011), for the ergodic theory of homogeneous flows and its arithmetic applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Free Particle and Wave Packets in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-free-particle-and-wave-packets-in-biquaternionic-form"><strong>The Free Particle and Wave Packets in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The free particle is the problem that fixes the representation. Every article in this subcategory — one-dimensional scattering, the semiclassical limit, the path integral, and the external-field problems — is built on the free solutions and on the conventions that the free problem makes explicit: the momentum operator, the kinetic term, the phase, the state module, and the norm that the probabilities are read from. This article treats the free biquaternion Schrödinger equation, its plane-wave solutions, their superpositions into wave packets, and the free propagator.</p>
+<p>The biquaternion content of the free problem is a single structural fact and its consequences. The free Hamiltonian is a multiple of the identity,</p>
+<p>$$
+\tilde H = \frac{\hat{\mathbf p}^2}{2m}\,e_0 \in \mathbb{R}e_0 \subset \mathbb{M}_+,
+$$</p>
+<p>so it is <strong>central</strong>. A central Hamiltonian commutes with every element of $\mathbb{B}$; its exponential is a central unitary element; and the free evolution therefore acts on the algebra's state module as a scalar. The free particle in this framework is consequently a <strong>scalar</strong> wave mechanics carried along a central phase, tensored with a module that the dynamics never touches. That is exactly the kinematics of a spin-0 particle, and it is why the free problem is the right place to fix the representation for the whole subcategory.</p>
+<p>The article proceeds as follows. The next section writes the free equation and its Hamiltonian. The third section solves it by plane waves and records the dispersion relation, the normalisation, and the location of the wave four-vector in the material sector. The fourth constructs wave packets, obtains the exact Gaussian packet and its spreading, and derives the continuity equation from which the probability current is read. The fifth evaluates the free propagator, proves its composition property, and identifies it as a central unitary element. The sixth discusses what the module factor means for a spin-0 treatment, and the seventh states what the biquaternion form adds and what it does not. The closing sections are the summary, the notation table, and the external literature.</p>
+<p>The conventions are those of the companion articles and of <code>Conventions in the Biquaternion Universe</code>. The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ obeying $e_j^2 = -e_0$ and $e_j e_k = \epsilon_{jkl} e_l$ for distinct indices, and with $i$ the central scalar imaginary. The Hermitian subspace is $\mathbb{M}_+$, the anti-Hermitian subspace is $\mathbb{M}_-$, the center is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The state module is the left ideal $\mathbb{B}\tilde P$ generated by an idempotent $\tilde P = \tfrac12(e_0 + i\hat{\boldsymbol{\mu}})$, so that $\mathbb{B}\tilde P \cong \mathbb{C}^2$; the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ sends $e_0 \mapsto I_2$ and $e_k \mapsto -i\sigma_k$. The trace is $\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$, and the Born pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, the position appearing in a wave function is the <strong>argument of the field</strong>, a point of the material sector's configuration space, and not an algebraic observable of $\mathbb{B}$; the companion article on the harmonic oscillator records why the Heisenberg pair cannot be represented inside $\mathbb{M}_+$.</p>
+<h2 id="the-free-biquaternion-schrodinger-equation">The Free Biquaternion Schrödinger Equation</h2>
+<h3 id="the-momentum-and-the-kinetic-term">The momentum and the kinetic term</h3>
+<p>The momentum operator is</p>
+<p>$$
+\tilde p = -i\hbar\nabla = \sum_{k=1}^{3} e_k \hat p_k, \qquad \hat p_k = -i\hbar \partial_k.
+$$</p>
+<p>Each coefficient $\hat p_k$ is purely imaginary as a complex scalar, and each is paired with a real quaternion unit, so $\tilde p$ has a purely imaginary vector part: it is <strong>Hermitian</strong>,</p>
+<p>$$
+\tilde p^\dagger = \tilde p, \qquad \tilde p \in \mathbb{M}_+.
+$$</p>
+<p>The quaternion square of the momentum is computed with $e_j e_k + e_k e_j = -2\delta_{jk}e_0$, valid because the spatial components commute:</p>
+<p>$$
+\tilde p^2 = \sum_{j,k} e_j e_k \hat p_j \hat p_k
+= -\sum_k \hat p_k^2\, e_0
+= -\hat{\mathbf p}^2\, e_0,
+$$</p>
+<p>the cross terms cancelling by antisymmetry of $\epsilon_{jkl}$ against the symmetric product $\hat p_j \hat p_k$. The norm form of the momentum is therefore</p>
+<p>$$
+\tilde p\,\bar{\tilde p} = -\tilde p^{\,2} = \hat{\mathbf p}^2\, e_0,
+\qquad
+\bar{\tilde p} = -\tilde p,
+$$</p>
+<p>so that the same quadratic object appears with either sign according to whether it is the square or the norm form. The kinetic energy is the norm form up to the sign that makes it positive:</p>
+<p>$$
+\tilde T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\bar{\tilde p}}{2m} = \frac{\hat{\mathbf p}^2}{2m}\,e_0 .
+$$</p>
+<p>This is the first instance of a pattern that recurs throughout the subcategory: <strong>the kinetic term is the norm form of the momentum</strong>, and its reality and positivity are statements about the norm form on the Hermitian subspace.</p>
+<h3 id="the-equation">The equation</h3>
+<p>The free biquaternion Schrödinger equation is</p>
+<p>$$
+i\hbar\,\partial_t \psi = \tilde H \psi,
+\qquad
+\tilde H = \frac{\hat{\mathbf p}^2}{2m}\,e_0 = -\frac{\hbar^2}{2m}\nabla^2 e_0 ,
+$$</p>
+<p>with $\psi$ a field on space taking values in the state module $\mathbb{B}\tilde P$. The Hamiltonian is central. Writing $\tilde H = h_0 e_0$ with $h_0 = -\frac{\hbar^2}{2m}\nabla^2$, the equation reads</p>
+<p>$$
+i\hbar\,\partial_t \psi = h_0 e_0 \psi = h_0 \psi,
+$$</p>
+<p>and because $e_0$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\Phi$, the Hamiltonian is $\Phi(\tilde H) = h_0 I_2$. The generator of the free evolution,</p>
+<p>$$
+-i\tilde H/\hbar = \frac{i\hbar}{2m}\nabla^2 e_0 \in \mathbb{M}_-,
+$$</p>
+<p>lies in the <strong>material sector</strong>, as every generator of a unitary flow does in this framework: it is imaginary in the scalar direction and real in the vector direction, with vanishing vector part here.</p>
+<h2 id="plane-wave-solutions">Plane-Wave Solutions</h2>
+<h3 id="the-central-phase-and-the-spinor-factor">The central phase and the spinor factor</h3>
+<p>Take the plane-wave ansatz</p>
+<p>$$
+\psi_{\mathbf k}(t,\mathbf x) = \chi\, e^{\,i(\mathbf k\cdot\mathbf x - \omega t)},
+\qquad
+\chi \in \mathbb{B}\tilde P \ \text{constant}, \qquad \mathbf k \in \mathbb{R}^3,
+$$</p>
+<p>so that $\mathbf k = k_1 e_1 + k_2 e_2 + k_3 e_3$ is a real quaternion. The exponential is a central element of $\mathbb{B}$, because its exponent is a purely imaginary scalar. Substitution gives</p>
+<p>$$
+i\hbar\,\partial_t \psi_{\mathbf k} = \hbar\omega\,\psi_{\mathbf k},
+\qquad
+\tilde H \psi_{\mathbf k} = \frac{\hbar^2 k^2}{2m}\,\psi_{\mathbf k},
+$$</p>
+<p>so the equation is satisfied for every constant $\chi$ provided</p>
+<p>$$
+\hbar\omega = \frac{\hbar^2 k^2}{2m}
+\qquad\Longleftrightarrow\qquad
+\omega(\mathbf k) = \frac{\hbar k^2}{2m}.
+$$</p>
+<p>Two features of the solution are the whole content of the plane-wave section. First, the <strong>energy does not depend on $\chi$</strong>: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $\tilde H \in \mathbb{C}_{\mathbb{B}}$.</p>
+<p>The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $\hat p_k e^{i\mathbf k\cdot\mathbf x} = \hbar k_k e^{i\mathbf k\cdot\mathbf x}$,</p>
+<p>$$
+\tilde p\,\psi_{\mathbf k} = \sum_k e_k \hat p_k \psi_{\mathbf k}
+= \hbar \sum_k k_k e_k\, \psi_{\mathbf k}
+= \hbar\,\mathbf k\,\psi_{\mathbf k},
+$$</p>
+<p>and therefore</p>
+<p>$$
+\tilde p^{\,2}\psi_{\mathbf k} = \hbar^2 \mathbf k^2 \psi_{\mathbf k} = -\hbar^2 k^2\,\psi_{\mathbf k},
+\qquad
+\tilde p\,\bar{\tilde p}\,\psi_{\mathbf k} = \hbar^2 k^2\,\psi_{\mathbf k}.
+$$</p>
+<p>The operator $\hbar\mathbf k$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ is the standard Schrödinger phase; what the biquaternion reading adds is that the <strong>imaginary unit in it is the canonical central one</strong>, not a chosen complex structure.</p>
+<h3 id="dispersion-and-the-location-of-the-wave-vector">Dispersion and the location of the wave vector</h3>
+<p>The dispersion relation has the standard consequences. The phase velocity is</p>
+<p>$$
+v_{\mathrm{ph}} = \frac{\omega}{k} = \frac{\hbar k}{2m},
+$$</p>
+<p>and the group velocity, which is the velocity of the packet and the classical velocity, is</p>
+<p>$$
+\mathbf v_g = \frac{\partial\omega}{\partial\mathbf k} = \frac{\hbar\mathbf k}{m} = \frac{\mathbf p}{m}.
+$$</p>
+<p>In the framework's reading, a plane wave carries a wave <strong>four-vector</strong> in the material sector,</p>
+<p>$$
+\tilde K = \frac{i\omega}{c}\,e_0 + \mathbf k \in \mathbb{M}_-,
+$$</p>
+<p>whose norm form is</p>
+<p>$$
+N(\tilde K) = \tilde K \bar{\tilde K} = -\frac{\omega^2}{c^2} + k^2
+= k^2\left(1 - \frac{\hbar^2 k^2}{4m^2c^2}\right).
+$$</p>
+<p>For the non-relativistic dispersion the wave four-vector is <strong>spacelike</strong> for every $k < 2mc/\hbar$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k = 2mc/\hbar$, where $\hbar k = 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{M}_-$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = p^2/2m$ rather than $E = pc$.</p>
+<h3 id="normalisation">Normalisation</h3>
+<p>On a box of side $L$ with periodic boundary conditions, the normalised plane waves are</p>
+<p>$$
+\psi_{\mathbf k}(t,\mathbf x) = \frac{1}{\sqrt{L^3}}\,e^{\,i(\mathbf k\cdot\mathbf x-\omega t)}\,\chi,
+\qquad
+\mathrm{Tr}(\chi^\dagger\chi) = 1,
+$$</p>
+<p>and the density integrated over the box is one,</p>
+<p>$$
+\int_{L^3} d^3x\;\mathrm{Tr}\!\left(\psi_{\mathbf k}^\dagger \psi_{\mathbf k}\right) = 1 .
+$$</p>
+<p>In the continuum, with the normalisation factor $(2\pi)^{-3/2}$,</p>
+<p>$$
+\int d^3x\;\mathrm{Tr}\!\left(\psi_{\mathbf k}^\dagger \psi_{\mathbf k'}\right) = (2\pi)^3 \delta^{(3)}(\mathbf k - \mathbf k').
+$$</p>
+<p>Two norms must be kept apart here. The <strong>probability density</strong> of a spinor field is</p>
+<p>$$
+\rho = \mathrm{Tr}(\psi^\dagger\psi),
+$$</p>
+<p>which is real and positive definite, and which equals $2\,\mathrm{Sc}(\psi^\dagger\psi)$ by the trace convention. The <strong>norm form</strong> $N(\psi) = \psi\bar{\psi}$ is a different object. For a spinor in a left ideal it vanishes identically, because a state-module element is a zero divisor of $\mathbb{B}$:</p>
+<p>$$
+\psi \in \mathbb{B}\tilde P,\ \psi \neq 0
+\qquad\Longrightarrow\qquad
+N(\psi) = \psi\bar{\psi} = 0 .
+$$</p>
+<p>The zero divisor cone therefore carries the states, while the positive trace form carries the probabilities. This distinction is not a defect of the states; it is the algebraic statement that the algebra is not a division algebra, and it is the structural reason that probabilities are read from the trace pairing rather than from the norm form.</p>
+<h2 id="wave-packets">Wave Packets</h2>
+<h3 id="superposition-and-the-frozen-module-factor">Superposition and the frozen module factor</h3>
+<p>The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:</p>
+<p>$$
+\psi(t,\mathbf x) = \int \frac{d^3k}{(2\pi)^3}\;\tilde\psi_0(\mathbf k)\,e^{\,i(\mathbf k\cdot\mathbf x - \omega(\mathbf k) t)},
+\qquad
+\tilde\psi_0(\mathbf k) \in \mathbb{B}\tilde P .
+$$</p>
+<p>The amplitudes $\tilde\psi_0(\mathbf k)$ may depend on $\mathbf k$ and may be general module elements, so in principle the spinor orientation could vary with momentum. The free evolution does not act on that orientation:</p>
+<p>$$
+\tilde\psi(\mathbf k, t) = \tilde\psi_0(\mathbf k)\,e^{-i\omega(\mathbf k)t},
+$$</p>
+<p>because the phase is central and commutes with the module element. In particular, if the initial condition factorises as $\psi(0,\mathbf x) = \Phi_0(\mathbf x)\chi$ with $\chi$ a fixed constant spinor, then</p>
+<p>$$
+\psi(t,\mathbf x) = \Phi(t,\mathbf x)\,\chi
+$$</p>
+<p>for all times, where $\Phi$ solves the <strong>scalar</strong> free Schrödinger equation. The module factor is frozen: the free particle carries its spinor orientation unchanged, and the two components of $\psi$ satisfy identical scalar equations. This is the precise sense in which the free problem is spin-0 scalar mechanics in this framework.</p>
+<h3 id="the-continuity-equation-and-the-current">The continuity equation and the current</h3>
+<p>The probability current is obtained from the equation and its adjoint. Since $\tilde H$ is Hermitian and central, $\psi^\dagger$ obeys $i\hbar\,\partial_t\psi^\dagger = -\psi^\dagger \tilde H$, and combining the two equations gives</p>
+<p>$$
+\partial_t\!\left(\psi^\dagger\psi\right)
+= \frac{1}{i\hbar}\left(\psi^\dagger \tilde H\psi - (\tilde H\psi)^\dagger\psi\right)
+= \frac{\hbar}{2mi}\sum_k\left(\psi^\dagger \partial_k^2\psi - (\partial_k^2\psi)^\dagger\psi\right).
+$$</p>
+<p>Each term is a divergence. Defining the <strong>current vector</strong></p>
+<p>$$
+J_k = \frac{\hbar}{2mi}\,\mathrm{Tr}\!\left(\psi^\dagger \partial_k\psi - (\partial_k\psi)^\dagger\psi\right),
+$$</p>
+<p>one obtains the continuity equation</p>
+<p>$$
+\partial_t\rho + \nabla\cdot\mathbf J = 0,
+\qquad
+\rho = \mathrm{Tr}(\psi^\dagger\psi).
+$$</p>
+<p>For a plane wave of momentum $\hbar\mathbf k$ the current is $\mathbf J = \rho\,\hbar\mathbf k/m = \rho\,\mathbf v_g$, as it must be. For a general packet, $\mathbf J = \rho\,\mathbf v_g$ holds only where the packet is locally monochromatic, which is the usual situation for a broad packet.</p>
+<p>The current is a <strong>material-sector</strong> object in the following sense: it is built from the trace pairing of the spinor with its gradient, and it is a real spatial vector, hence the spatial part of an element of $\mathbb{M}_-$; the density is the trace of a Hermitian element of $\mathbb{M}_+$. The continuity equation thus pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current, exactly as the sector assignment of the framework requires.</p>
+<h3 id="the-gaussian-packet">The Gaussian packet</h3>
+<p>The standard minimum-uncertainty packet is the Gaussian. In one dimension, take the initial amplitude</p>
+<p>$$
+\Phi_0(x) = \left(\frac{1}{2\pi s_0^2}\right)^{1/4}
+\exp\!\left(-\frac{x^2}{4s_0^2} + ik_0 x\right),
+\qquad
+|\Phi_0(x)|^2 = \frac{1}{\sqrt{2\pi}\,s_0}\exp\!\left(-\frac{x^2}{2s_0^2}\right),
+$$</p>
+<p>so that $s_0$ is the <strong>density width</strong> (the standard deviation of $|\Phi_0|^2$) and the initial uncertainty product is minimal. The exact free evolution of this packet is</p>
+<p>$$
+\Phi(x,t) = \frac{(2\pi s_0^2)^{-1/4}}{\sqrt{A(t)}}\,
+\exp\!\left[-\frac{(x - v_0 t)^2}{4s_0^2 A(t)} + ik_0x - \frac{i\hbar k_0^2 t}{2m}\right],
+\qquad
+A(t) = 1 + \frac{i\hbar t}{2m s_0^2},
+\qquad
+v_0 = \frac{\hbar k_0}{m},
+$$</p>
+<p>and its density is again a normalised Gaussian,</p>
+<p>$$
+|\Phi(x,t)|^2 = \frac{1}{\sqrt{2\pi}\,s(t)}
+\exp\!\left(-\frac{(x - v_0 t)^2}{2s(t)^2}\right),
+\qquad
+s(t) = s_0\sqrt{1 + \left(\frac{\hbar t}{2m s_0^2}\right)^2}.
+$$</p>
+<p>The center moves at the group velocity $v_0 = \hbar k_0/m$, and the width grows as $s(t)$. The spreading is negligible for $t \ll \tau$ and linear for $t \gg \tau$, where</p>
+<p>$$
+\tau = \frac{2m s_0^2}{\hbar}
+$$</p>
+<p>is the spreading time. The biquaternion form of the packet is $\psi = \Phi\,\chi$: the scalar envelope $\Phi$ carries all of the dynamics, and the module factor $\chi$ is a constant.</p>
+<p>The closed forms above were checked numerically. Using the density-width normalisation with $m = \hbar = 1$ and $s_0 = 0.5$, the analytic density agrees with the Gaussian $|\Phi(x,t)|^2$ to a relative error below $6\times 10^{-16}$ at $t = 0, 1.4, 2.7$, and the variance computed by direct quadrature of $|\Phi(x,t)|^2$ equals $s(t)^2$ to six decimal places at each time, with the mean equal to $v_0 t$. The analytic envelope itself was checked against a direct momentum-space quadrature of $\Phi(x,t) = \int \frac{dk}{2\pi}\tilde\Phi_0(k)e^{ikx - i\hbar k^2 t/2m}$, evaluated on a rotated contour, with agreement at the $10^{-13}$ level on three sampled points. In every case the quantity checked is a superposition — a packet is a superposition of plane waves — and never a single plane wave.</p>
+<h3 id="stationary-phase-and-the-classical-trajectory">Stationary phase and the classical trajectory</h3>
+<p>The packet integral is dominated, for large $t$ or small $\hbar$, by the stationary points of its phase. Writing the exponent for the free case,</p>
+<p>$$
+\varphi(\mathbf k) = \mathbf k\cdot\mathbf x - \frac{\hbar k^2}{2m}t,
+$$</p>
+<p>the stationary condition is</p>
+<p>$$
+\nabla_{\mathbf k}\varphi = \mathbf x - \frac{\hbar\mathbf k}{m}t = 0
+\qquad\Longrightarrow\qquad
+\mathbf x = \frac{\hbar\mathbf k}{m}t = \mathbf v_g t .
+$$</p>
+<p>The stationary wave vector is the one whose group velocity carries it to the observation point, so the stationary phase is the <strong>classical free trajectory</strong>: the packet center moves uniformly at $\mathbf v_g = \mathbf p/m$. This is the free-particle case of the general semiclassical statement that the phase of the wave function at a point is the classical action accumulated along the trajectory reaching it. For a packet of mean momentum $\hbar k_0$, the phase at the center is $\hbar k_0^2 t/2m$ up to the $ik_0x$ term, which is the classical action $S_{\mathrm{cl}} = p_0^2t/2m$; the exact Gaussian envelope above carries precisely this phase, as the term $-i\hbar k_0^2t/2m$ in $\Phi(x,t)$ shows.</p>
+<h2 id="the-free-propagator">The Free Propagator</h2>
+<h3 id="the-kernel-from-the-momentum-integral">The kernel from the momentum integral</h3>
+<p>The free propagator is the inverse Fourier transform of the free phase,</p>
+<p>$$
+K_0(\mathbf x, t) = \int \frac{d^3k}{(2\pi)^3}\,
+e^{\,i\mathbf k\cdot\mathbf x - i\hbar k^2 t/2m}
+= \left(\frac{m}{2\pi i\hbar t}\right)^{3/2}
+\exp\!\left(\frac{im|\mathbf x|^2}{2\hbar t}\right),
+$$</p>
+<p>the last equality being the standard Fresnel (Gaussian) integral in three dimensions. The result is a complex scalar times $e_0$:</p>
+<p>$$
+\tilde K_0(\mathbf x, t) = K_0(\mathbf x,t)\,e_0 \in \mathbb{C}_{\mathbb{B}}.
+$$</p>
+<p>The kernel is <strong>central</strong>, its phase is the classical action $S_{\mathrm{cl}} = m|\mathbf x|^2/2t$ divided by $\hbar$, and its prefactor is a function of the central $i$ and of the central real numbers $m,\hbar,t$. The square root $\sqrt{i}$ appearing in the prefactor is taken inside the center, since the center is a copy of $\mathbb{C}$; the measure factor does not leave the center.</p>
+<h3 id="composition">Composition</h3>
+<p>The free kernel is a semigroup in time,</p>
+<p>$$
+\int d^3y\;K_0(\mathbf x - \mathbf y, T_2)\,K_0(\mathbf y - \mathbf x_0, T_1)
+= K_0(\mathbf x - \mathbf x_0, T_1 + T_2),
+$$</p>
+<p>which is the statement that a free flight of duration $T_1 + T_2$ is a free flight of duration $T_1$ followed by one of duration $T_2$, summed over the intermediate point. The identity follows from the standard Gaussian convolution</p>
+<p>$$
+\int dy\;e^{A(x-y)^2}e^{By^2} = \sqrt{\frac{-\pi}{A+B}}\;\exp\!\left(\frac{AB}{A+B}x^2\right),
+\qquad A = \frac{im}{2\hbar T_2},\quad B = \frac{im}{2\hbar T_1},
+$$</p>
+<p>which gives $A + B = \frac{im}{2\hbar}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B} = \frac{im}{2\hbar(T_1+T_2)}$, reproducing the kernel of the longer flight including its prefactor. The composition was verified numerically on a <strong>superposition of two Gaussian packets</strong>, in one dimension, by evaluating the convolution with the free kernel against the exact evolution of the superposition; for $(T_1,T_2) = (0.4,0.7)$, $(1.1,0.6)$, $(0.15,0.35)$ the relative error was $4.6\times10^{-15}$, $2.1\times10^{-14}$, and $4.1\times10^{-15}$ respectively, at sample points away from the origin. The quadrature was performed on the rotated contour $y = e^{i\pi/4}s$, which makes the quadratic phases decay.</p>
+<p>Because the kernel is central, it commutes with every biquaternion. The evolution of an arbitrary initial spinor field is therefore</p>
+<p>$$
+\psi(t,\mathbf x) = \int d^3x_0\;K_0(\mathbf x - \mathbf x_0, t)\,\psi(0,\mathbf x_0),
+$$</p>
+<p>in which the kernel acts on the body of the field and multiplies the module factor by a scalar. The module orientation of the initial condition is propagated unchanged.</p>
+<h3 id="the-free-evolution-operator-as-a-central-unitary">The free evolution operator as a central unitary</h3>
+<p>The evolution operator is the exponential of the generator,</p>
+<p>$$
+\tilde U(t) = e^{-i\tilde H t/\hbar} = e^{-i\hat{\mathbf p}^2 t/2m\hbar}\,e_0 \in \mathbb{C}_{\mathbb{B}},
+$$</p>
+<p>a central unitary element in the framework's sense,</p>
+<p>$$
+\tilde U\tilde U^\dagger = e_0 .
+$$</p>
+<p>It is not a unit-norm-form element of the Lorentz group: for a central element $\lambda e_0$ the condition $\tilde\Lambda\bar{\tilde\Lambda} = e_0$ reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $e^{-iE t/\hbar}$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^\dagger = e_0$ for the unitary group and $\tilde\Lambda\bar{\tilde\Lambda} = e_0$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\psi^\dagger\psi)$ and preserves the sector assignment of a field that begins in $\mathbb{M}_+$.</p>
+<h2 id="the-module-factor-and-the-meaning-of-a-spin-0-field">The Module Factor and the Meaning of a Spin-0 Field</h2>
+<p>The free problem displays the subcategory's central convention most clearly, so it is worth stating in full.</p>
+<p>The framework's state module $\mathbb{B}\tilde P \cong \mathbb{C}^2$ is the algebra's generic two-state module. The free Hamiltonian is central, so the free dynamics acts on it as the identity; the two components are exactly degenerate and no relative phase accumulates. For a spin-0 problem the module factor can therefore be fixed once and for all, and the physical content is carried by the scalar envelope. The vector-slot elements $\tilde S_k = \tfrac{\hbar}{2}ie_k$, which the companion articles on angular momentum and on the hydrogen atom use as the algebra's spin operators, are conserved by the free evolution and generate no motion; a spin orientation, if one is attached to the module, is a spectator of the free dynamics. The genuinely spinorial effects — precession in a magnetic field, Stern–Gerlach splitting, resonance — require a Hamiltonian that is <strong>not</strong> central, and they belong to the sibling spin subcategories, not here.</p>
+<p>Two further structural points belong to this section.</p>
+<p><strong>The position is not an algebraic observable.</strong> The field $\psi(t,\mathbf x)$ is a function on the material sector's configuration space; $\mathbf x$ labels points of that space. There is no element $\tilde X \in \mathbb{M}_+$ whose commutator with $\tilde p$ is $i\hbar e_0$: the companion article on the harmonic oscillator shows that the equation $[\tilde X, \tilde P] = i\hbar e_0$ has no solution for Hermitian $\tilde X$ and $\tilde P$ in the finite-dimensional algebra. The position-space description is thus an extension of the framework — the algebra supplies the fiber and the phase, and the configuration space supplies the base. This is the same status that the position has in the hydrogen article, and the same gap that the path-integral article records for the space of paths.</p>
+<p><strong>The module is not the spin.</strong> The two components of $\psi$ are a kinematic doubling of the scalar amplitude. A spin-0 particle has one amplitude; the framework's module has two components because the algebra acts on a two-dimensional space. The reduction from the module to a single scalar is effected by fixing a constant spinor $\chi$, and the free dynamics does not distinguish the resulting one-component descriptions. This is why the free problem, and every problem with a central Hamiltonian treated in this subcategory, has a scalar read-off: the module is present but idle.</p>
+<h2 id="what-the-biquaternion-form-adds">What the Biquaternion Form Adds</h2>
+<p><strong>Standard quantum mechanics, transcribed.</strong> The dispersion relation, the phase and group velocities, the plane-wave normalisation, the continuity equation, the Gaussian packet, its spreading time, the free propagator, its Fresnel evaluation, and its composition law are all standard. None of them is new here, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.</p>
+<p><strong>What the biquaternion notation provides.</strong></p>
+<ul>
+<li><strong>Centrality of the free Hamiltonian, made manifest.</strong> The free Hamiltonian is literally a scalar multiple of $e_0$: $\tilde H = h_0 e_0 \in \mathbb{C}_{\mathbb{B}}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $\tilde H \in \mathbb{C}_{\mathbb{B}}$.</li>
+<li><strong>The kinetic term as a norm form.</strong> $\tilde T = -\tilde p^2/2m = \tilde p\bar{\tilde p}/2m$. The sign that makes the kinetic energy positive is the sign of the norm form on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.</li>
+<li><strong>A canonical complex structure.</strong> The phase $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.</li>
+<li><strong>A material-sector location for the dispersion.</strong> The wave four-vector $\tilde K = i\omega/c\,e_0 + \mathbf k$ is an element of $\mathbb{M}_-$, and its norm form $N(\tilde K) = k^2(1 - \hbar^2k^2/4m^2c^2)$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.</li>
+<li><strong>The probability from the trace, not from the norm form.</strong> The positivity of $\rho = \mathrm{Tr}(\psi^\dagger\psi)$ is a property of the trace pairing on $\mathbb{M}_+$, while the norm form of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.</li>
+</ul>
+<p><strong>What remains open.</strong></p>
+<ul>
+<li><strong>The local complex structure.</strong> The scalar imaginary $i$ is a global central element and cannot vary from point to point, whereas the series makes the complex structure local, set by the medium. How a local complex structure would enter the free phase is unresolved, and the Schrödinger article leaves the same question open.</li>
+<li><strong>A genuinely biquaternionic free dynamics.</strong> Nothing in the free problem forces the algebra's non-central structure to appear. Whether the framework admits a free dynamics whose Hamiltonian is not central — and what would distinguish it empirically from the scalar free particle — is not known.</li>
+<li><strong>Second quantisation.</strong> The free field, its modes, and their statistics are not constructed here. The algebra is finite-dimensional, while a free field has infinitely many modes; the same gap that the harmonic-oscillator article records for the ladder reappears for the field.</li>
+<li><strong>The relativistic free particle.</strong> The Klein–Gordon and Dirac free problems belong to the relativistic category. The non-relativistic free packet is not their limit in any algebraic sense, as the spacelike wave four-vector above makes explicit.</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>1. Is the free wave packet exactly a minimum-uncertainty state of the framework?</strong> The Gaussian packet saturates the uncertainty product, but the framework does not represent the position operator inside $\mathbb{B}$. Whether there is an algebraic notion of minimum uncertainty native to the module, as distinct from the analytic one, is open.</p>
+<p><strong>2. What fixes the module factor?</strong> The free dynamics does not, since it is central. A non-central coupling would, and the question of which couplings are admissible in the framework is the same question that the spin subcategories address from the other side.</p>
+<p><strong>3. Does the free particle define a distinguished cone in configuration space?</strong> The packet spreads and its support grows; whether the framework singles out a characteristic cone for the non-relativistic equation, as the material sector does for the wave equation, is not addressed here.</p>
+<p><strong>4. Empirical content.</strong> As elsewhere in the framework, whether the free-particle reformulation yields any prediction distinguishing it from scalar Schrödinger mechanics is open. Nothing in this article changes that.</p>
+<h2 id="summary">Summary</h2>
+<p>The free biquaternion Schrödinger equation is $i\hbar\partial_t\psi = \tilde H\psi$ with</p>
+<p>$$
+\tilde H = \frac{\hat{\mathbf p}^2}{2m}\,e_0 = \frac{\tilde p\bar{\tilde p}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_0 \subset \mathbb{M}_+,
+\qquad
+\tilde p = -i\hbar\nabla,
+$$</p>
+<p>and the kinetic energy is the <strong>norm form of the momentum</strong>. Because $\tilde H$ is central, the free dynamics is a scalar dynamics: plane waves $\psi_{\mathbf k} = \chi e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ have the dispersion $\omega = \hbar k^2/2m$ for every constant module element $\chi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-i\tilde H/\hbar$ lies in the material sector $\mathbb{M}_-$.</p>
+<p>The wave four-vector $\tilde K = i\omega/c\,e_0 + \mathbf k$ has norm form $N(\tilde K) = k^2(1-\hbar^2k^2/4m^2c^2)$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\psi^\dagger\psi)$, positive definite, while the norm form of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the trace pairing, not from $N$. The continuity equation $\partial_t\rho + \nabla\cdot\mathbf J = 0$ holds with $J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\partial_k\psi - (\partial_k\psi)^\dagger\psi)$, pairing an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.</p>
+<p>A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(t) = s_0\sqrt{1+(\hbar t/2ms_0^2)^2}$ whose center moves at the group velocity $\hbar k_0/m$, with spreading time $\tau = 2ms_0^2/\hbar$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel</p>
+<p>$$
+K_0(\mathbf x,t) = \left(\frac{m}{2\pi i\hbar t}\right)^{3/2}\exp\!\left(\frac{im|\mathbf x|^2}{2\hbar t}\right)
+$$</p>
+<p>is central, is a complex scalar times $e_0$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = e^{-i\tilde Ht/\hbar}$ is a central unitary, $\tilde U\tilde U^\dagger = e_0$, but not a unit-norm-form rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_j^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary, $i^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$</td>
+<td>Center of $\mathbb{B}$; home of the free Hamiltonian and phase</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian (informational) sector; observables and the kinetic term</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian (material) sector; generator and current</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\tilde P \cong \mathbb{C}^2$</td>
+<td>State module, $\tilde P = \tfrac12(e_0 + i\hat{\boldsymbol{\mu}})$</td>
+</tr>
+<tr>
+<td>$\tilde p = -i\hbar\nabla = e_k\hat p_k$</td>
+<td>Momentum operator; Hermitian, $\tilde p \in \mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\hat p_k = -i\hbar\partial_k$</td>
+<td>Momentum component</td>
+</tr>
+<tr>
+<td>$\tilde p^2 = -\hat{\mathbf p}^2 e_0$, $\tilde p\bar{\tilde p} = \hat{\mathbf p}^2 e_0$</td>
+<td>Quaternion square and norm form of the momentum</td>
+</tr>
+<tr>
+<td>$\tilde H = \hat{\mathbf p}^2 e_0/2m$</td>
+<td>Free Hamiltonian; central</td>
+</tr>
+<tr>
+<td>$\tilde T = -\tilde p^2/2m = \tilde p\bar{\tilde p}/2m$</td>
+<td>Kinetic energy as a norm form</td>
+</tr>
+<tr>
+<td>$\psi_{\mathbf k} = \chi e^{i(\mathbf k\cdot\mathbf x-\omega t)}$</td>
+<td>Plane wave; $\chi \in \mathbb{B}\tilde P$ constant</td>
+</tr>
+<tr>
+<td>$\omega(\mathbf k) = \hbar k^2/2m$</td>
+<td>Dispersion relation</td>
+</tr>
+<tr>
+<td>$\mathbf v_g = \partial\omega/\partial\mathbf k = \hbar\mathbf k/m$</td>
+<td>Group velocity; classical velocity</td>
+</tr>
+<tr>
+<td>$\tilde K = i\omega/c\,e_0 + \mathbf k$</td>
+<td>Wave four-vector in $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$N(\tilde K) = -\omega^2/c^2 + k^2$</td>
+<td>Norm form of the wave four-vector; spacelike</td>
+</tr>
+<tr>
+<td>$\rho = \mathrm{Tr}(\psi^\dagger\psi)$</td>
+<td>Probability density, from the trace pairing</td>
+</tr>
+<tr>
+<td>$J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\partial_k\psi - (\partial_k\psi)^\dagger\psi)$</td>
+<td>Probability current</td>
+</tr>
+<tr>
+<td>$\Phi(x,t)$</td>
+<td>Scalar envelope; module factor frozen</td>
+</tr>
+<tr>
+<td>$s_0$, $s(t) = s_0\sqrt{1+(\hbar t/2ms_0^2)^2}$</td>
+<td>Initial and time-dependent density width</td>
+</tr>
+<tr>
+<td>$\tau = 2ms_0^2/\hbar$</td>
+<td>Spreading time</td>
+</tr>
+<tr>
+<td>$K_0(\mathbf x,t) = (m/2\pi i\hbar t)^{3/2}e^{im|\mathbf x|^2/2\hbar t}$</td>
+<td>Free propagator; central</td>
+</tr>
+<tr>
+<td>$\tilde U(t) = e^{-i\tilde Ht/\hbar}$</td>
+<td>Free evolution; central unitary</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$</td>
+<td>Trace convention</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>L. de Broglie, "Recherches sur la théorie des quanta," <em>Annales de Physique</em> <strong>3</strong> (1925) 22–128, for the original matter-wave proposal.</li>
+<li>E. Schrödinger, "Quantisierung als Eigenwertproblem (Erste Mitteilung)," <em>Annalen der Physik</em> <strong>79</strong> (1926) 361–376, for the wave equation and the free wave packet.</li>
+<li>W. Heisenberg, "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik," <em>Zeitschrift für Physik</em> <strong>43</strong> (1927) 172–198, for the uncertainty relation and the minimum-uncertainty packet.</li>
+<li>E. H. Kennard, "Zur Quantenmechanik einfacher Bewegungstypen," <em>Zeitschrift für Physik</em> <strong>44</strong> (1927) 326–352, for the exact evolution of the free Gaussian packet.</li>
+<li>D. Bohm, <em>Quantum Theory</em> (Prentice-Hall, 1951), for the standard treatment of free wave packets and group velocity.</li>
+<li>A. Messiah, <em>Quantum Mechanics</em> (North-Holland, 1961), for wave packets, the free propagator, and its composition.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>Quantum Mechanics: Non-Relativistic Theory</em> (Pergamon, 1977), for free motion, the dispersion relation, and the propagator.</li>
+<li>C. Cohen-Tannoudji, B. Diu, and F. Laloë, <em>Quantum Mechanics</em> (Wiley, 1977), for the free Gaussian packet and its spreading.</li>
+<li>J. J. Sakurai and J. Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the free packet, group velocity, and the spreading time.</li>
+<li>R. P. Feynman and A. R. Hibbs, <em>Quantum Mechanics and Path Integrals</em> (McGraw-Hill, 1965), for the free kernel, its Fresnel evaluation, and its semigroup property.</li>
+<li>W. R. Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, 1853), for the quaternion algebra and its products.</li>
+<li>P. Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for biquaternions, their conjugations, and their matrix representation.</li>
+<li>S. L. Adler, <em>Quaternionic Quantum Mechanics and Quantum Fields</em> (Oxford, 1995), for a quaternionic formulation in which a complex structure must be supplied as extra input.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

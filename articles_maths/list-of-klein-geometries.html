@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Klein Geometries — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-klein-geometries"><strong>List of Klein Geometries</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the geometries of the corpus that are given by a pair $(G,H)$ of a Lie group $G$ and a closed subgroup $H$, the geometry being the homogeneous space $G/H$ on which $G$ acts transitively. The list gathers the classical geometries — Euclidean, spherical, elliptic, hyperbolic, affine, projective, conformal and Möbius — together with the flag manifolds, the symmetric spaces and the maximal model geometries of Thurston, and it records the classification of the geometries of constant curvature and their space forms. Every entry points to the article that introduces the geometry, and the article introduces nothing and proves nothing.</p>
+<p>The property that the article gathers is that the geometry is homogeneous: the space is the orbit of a single point under a group of transformations, and the subgroup $H$ is the stabiliser of that point. The object is the homogeneous space $G/H$, and the classical geometries are the cases in which $G$ is the isometry group of a form or the linear group of a projective space.</p>
+<p>The article records examples and non-examples side by side. Beside the homogeneous spaces it lists the geometries whose isometry group does not act transitively, the coset spaces that fail to be manifolds because the subgroup is not closed, and the geometries that are only locally homogeneous, each with the failure named and the article that records it.</p>
+<h2 id="the-pairs-and-the-homogeneous-space">The Pairs and the Homogeneous Space</h2>
+<p>A homogeneous space is a manifold $G/H$ on which the Lie group $G$ acts transitively with stabiliser $H$; the tangent space at the identity coset carries the isotropy representation of $H$, and the geometry of $G/H$ is the study of the $G$-invariant structures it carries.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the pair $(G,H)$</td>
+<td>a Lie group and a closed subgroup, the data of the geometry</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the homogeneous space $G/H$</td>
+<td>the orbit space of the transitive action, of dimension $\dim G - \dim H$</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the orbit map $\theta_p(g) = g\cdot p$</td>
+<td>the surjection $G \to G/H$ exhibiting the principal $H$-bundle</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the isotropy representation</td>
+<td>the linear action of $H$ on the tangent space $T_{eH}(G/H)$</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the reductive decomposition $\mathfrak{g} = \mathfrak{h}\oplus\mathfrak{m}$</td>
+<td>the splitting with $[\mathfrak{h},\mathfrak{m}] \subseteq \mathfrak{m}$, carrying the geometry</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the $G$-invariant metric on $G/H$</td>
+<td>the metric determined by an $\operatorname{Ad}(H)$-invariant inner product on $\mathfrak{m}$</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the isometry group $\operatorname{Isom}(M,g)$</td>
+<td>a Lie group by Myers–Steenrod, the ambient group of a geometry</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The isotropy representation is the linear data that survives the passage from the pair $(G,H)$ to the space, and the invariant metric, the invariant complex structure and the invariant forms are all determined by invariant tensors on the tangent space at a single point. The transitivity is the whole content of the homogeneous case: it reduces the local differential geometry of the space to the linear algebra of $\mathfrak{g}$, $\mathfrak{h}$ and $\mathfrak{m}$.</p>
+<h2 id="the-classical-geometries">The Classical Geometries</h2>
+<p>The classical geometries of Part II are the cases of the construction in which $G$ is an isometry group, a linear group or a conformal group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Geometry</th>
+<th>The homogeneous space it is</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Euclidean geometry</td>
+<td>$\mathbb{R}^n = E(n)/O(n)$, of curvature zero</td>
+<td><em>Euclidean Geometry</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>spherical geometry</td>
+<td>$S^n = O(n+1)/O(n)$, of curvature $+1$</td>
+<td><em>Spherical Geometry</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>elliptic geometry</td>
+<td>the quotient $S^n/\{\pm 1\}$ of the sphere by the antipodal map</td>
+<td><em>Spherical Geometry</em>, §Elliptic Geometry</td>
+</tr>
+<tr>
+<td>hyperbolic geometry</td>
+<td>$\mathbf{H}^n = SO(n,1)/SO(n)$, of curvature $-1$</td>
+<td><em>Hyperbolic Geometry</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>non-Euclidean geometry</td>
+<td>the spherical and hyperbolic geometries in the classical opposition to the Euclidean</td>
+<td><em>Non-Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>affine geometry</td>
+<td>the affine space $\mathbb{A}^n = \operatorname{Aff}(n)/GL(n)$</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>projective geometry</td>
+<td>$\mathbb{P}^n = PGL(n+1)/P$ with $P$ the stabiliser of a flag</td>
+<td><em>Projective Geometry</em></td>
+</tr>
+<tr>
+<td>conformal geometry</td>
+<td>the conformal sphere $S^n = O(n+1,1)/P$ with $P$ a parabolic subgroup</td>
+<td><em>Conformal Geometry</em></td>
+</tr>
+<tr>
+<td>Möbius geometry</td>
+<td>the sphere $S^n$ with the Möbius group $O(n+1,1)/\{\pm 1\}$</td>
+<td><em>Möbius and Lie Sphere Geometry</em></td>
+</tr>
+<tr>
+<td>Lie sphere geometry</td>
+<td>the quadric of the oriented spheres, with group $PO(n+1,2)$</td>
+<td><em>Möbius and Lie Sphere Geometry</em></td>
+</tr>
+<tr>
+<td>the Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n)$</td>
+<td>$O(n)/(O(k)\times O(n-k))$, a homogeneous space of $O(n)$</td>
+<td><em>Grassmannians and Stiefel Manifolds</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the flag manifold $F\ell_n(\mathbb{K})$</td>
+<td>$GL(n,\mathbb{K})/B$ with $B$ the Borel subgroup of upper triangular matrices</td>
+<td><em>Flag Manifolds</em></td>
+</tr>
+<tr>
+<td>real projective space $\mathbb{RP}^n$</td>
+<td>$O(n+1)/(O(1)\times O(n))$, the Grassmannian of lines</td>
+<td><em>Projective Geometry</em>; <em>Grassmannians and Stiefel Manifolds</em></td>
+</tr>
+<tr>
+<td>the Stiefel manifold $V_k(\mathbb{R}^n)$</td>
+<td>$O(n)/O(n-k)$, the manifold of orthonormal $k$-frames</td>
+<td><em>Grassmannians and Stiefel Manifolds</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Each geometry is read from its pair: the Euclidean geometry from the Euclidean group and the orthogonal stabiliser, the projective from the general linear group and a parabolic subgroup, the conformal from the pseudo-orthogonal group of a form of signature $(n+1,1)$. The generalised flag manifolds $G/P$ for a parabolic subgroup $P$ of a semisimple group are the geometries of the corresponding incidence structures, and they are the standard parabolic cases of the construction.</p>
+<h2 id="the-geometries-of-constant-curvature-and-the-space-forms">The Geometries of Constant Curvature and the Space Forms</h2>
+<p>The geometries of constant curvature are the three model geometries, and their quotients by discrete groups are the space forms.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the three model geometries</td>
+<td>the complete simply connected manifolds of constant curvature $+1$, $0$, $-1$</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the space-form theorem</td>
+<td>every complete connected manifold of constant curvature is a quotient of a model</td>
+<td><em>Riemannian Geometry</em>; <em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>a spherical space form</td>
+<td>a quotient $S^n/\Gamma$ with $\Gamma$ a finite free subgroup of $O(n+1)$</td>
+<td><em>Spherical Geometry</em>, §Spherical Space Forms</td>
+</tr>
+<tr>
+<td>a hyperbolic space form</td>
+<td>a quotient $\mathbf{H}^n/\Gamma$ by a free discrete group of isometries</td>
+<td><em>Hyperbolic Geometry</em>, §Hyperbolic Space Forms and the Trichotomy</td>
+</tr>
+<tr>
+<td>a Euclidean space form</td>
+<td>a compact flat manifold, the quotient of $\mathbb{R}^n$ by a torsion-free crystallographic group</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the spherical space form problem</td>
+<td>the classification of the finite free orthogonal actions, of which the lens spaces are the three-dimensional cases</td>
+<td><em>Low-Dimensional Topology</em>; <em>Lens Spaces</em></td>
+</tr>
+<tr>
+<td>the lens spaces $L(p,q)$</td>
+<td>the quotients $S^3/(\mathbb{Z}/p)$ by a free cyclic action</td>
+<td><em>Lens Spaces</em></td>
+</tr>
+<tr>
+<td>the trichotomy of curvature</td>
+<td>the division of the constant-curvature geometries by the sign of the curvature</td>
+<td><em>Curvature and Geodesics</em>; <em>Euclidean Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The space-form theorem is proved by the comparison theory of the curvature, and it is the reason the geometries of constant curvature are exhausted by the three models and their discrete quotients. The spherical case is rigid and finite, the Euclidean case is classified by the Bieberbach theorems and finite in each dimension, and the hyperbolic case is the richest: its lattices deform in dimension two and are rigid in higher dimensions, which is the dichotomy recorded in the list of discrete geometric groups.</p>
+<h2 id="the-maximal-model-geometries">The Maximal Model Geometries</h2>
+<p>Thurston's geometries are the maximal pairs $(X,G)$ of a simply connected space and a transitive group with compact stabilisers, and they are the geometries with which the low-dimensional classification is stated.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a model geometry $(X,G)$</td>
+<td>a simply connected Riemannian manifold with a transitive group $G$ maximal among those with compact stabilisers</td>
+<td><em>Low-Dimensional Topology</em>, §Geometrisation and the Eight Model Geometries</td>
+</tr>
+<tr>
+<td>the eight three-dimensional model geometries</td>
+<td>$S^3$, $E^3$, $\mathbf{H}^3$, $S^2\times\mathbb{R}$, $\mathbf{H}^2\times\mathbb{R}$, $\widetilde{SL_2(\mathbb{R})}$, $\mathrm{Nil}$, $\mathrm{Sol}$</td>
+<td><em>Low-Dimensional Topology</em>, §Geometrisation and the Eight Model Geometries</td>
+</tr>
+<tr>
+<td>a geometric three-manifold</td>
+<td>a quotient $X/\Gamma$ by a free properly discontinuous discrete group</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the geometrisation theorem</td>
+<td>every closed three-manifold decomposes into geometric pieces</td>
+<td><em>Low-Dimensional Topology</em>; <em>Ricci Flow</em></td>
+</tr>
+<tr>
+<td>the Seifert fibred and hyperbolic pieces</td>
+<td>the two kinds of piece into which the torus decomposition splits a three-manifold</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>In dimension two there are three model geometries, the spherical, Euclidean and hyperbolic, and they are the three cases of the trichotomy; in dimension three there are eight, the three of constant curvature together with the five product, fibre and solvable cases. The model geometry is a homogeneous space with a prescribed transitive group, and it is the form in which the uniformisation theorem and its three-dimensional analogue are stated.</p>
+<h2 id="symmetric-spaces-and-parabolic-geometries">Symmetric Spaces and Parabolic Geometries</h2>
+<p>A symmetric space is a homogeneous space $G/H$ in which the stabiliser is the fixed-point set of an involution of $G$, and it is the case of the construction in which the curvature is parallel.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a symmetric space $G/H$</td>
+<td>a homogeneous space with a Cartan involution $\sigma$ of $G$ whose fixed group is $H$</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>the symmetric pair $(\mathfrak{g},\sigma)$</td>
+<td>the Lie algebra with the involution splitting $\mathfrak{g} = \mathfrak{h}\oplus\mathfrak{m}$</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>a compact or noncompact symmetric space</td>
+<td>the sign of the curvature, decided by the sign of the invariant form</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>the rank of a symmetric space</td>
+<td>the dimension of a maximal flat totally geodesic submanifold</td>
+<td><em>Symmetric Spaces</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>a Hermitian symmetric space</td>
+<td>a symmetric space with a parallel invariant complex structure</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>a locally symmetric space</td>
+<td>a quotient of a symmetric space by a discrete group; equivalently $\nabla R = 0$</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>the building at infinity of a symmetric space</td>
+<td>the spherical building whose chambers are the Weyl chambers at infinity</td>
+<td><em>Buildings and Tits Systems</em>, §Trees and the Buildings at Infinity</td>
+</tr>
+</tbody>
+</table></div>
+<p>The symmetric spaces are the homogeneous spaces whose isotropy representation is the restriction of an involution, so that the geodesic symmetry at each point extends to a global symmetry; they are the geometries of constant curvature in rank one and the Hermitian, quaternionic and exceptional geometries above, and their classification is the classification of the real forms of the simple Lie algebras.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the Klein geometries, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a Klein geometry</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a general Riemannian manifold</td>
+<td>its isometry group need not act transitively, so it is not homogeneous</td>
+<td><em>Riemannian Geometry</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>a coset space $G/H$ with $H$ not closed</td>
+<td>the quotient is not Hausdorff and not a manifold</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the flat torus and the Klein bottle</td>
+<td>compact flat manifolds, quotients $\mathbb{R}^n/\Gamma$ of the Euclidean model by a discrete group rather than the model geometry $E(n)/O(n)$ itself</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the unit tangent bundle $SM$</td>
+<td>a manifold associated with a geometry, carrying the geodesic flow, not itself a Klein geometry</td>
+<td><em>The Geodesic Flow</em></td>
+</tr>
+<tr>
+<td>a locally homogeneous manifold</td>
+<td>only its universal cover is a homogeneous space</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the geometries of the corpus that are homogeneous spaces $G/H$ of a Lie group by a closed subgroup. The pairs and their invariant data open the list; the classical geometries follow, with Euclidean space $E(n)/O(n)$, the sphere $O(n+1)/O(n)$, the elliptic and hyperbolic geometries, the affine and projective spaces, the conformal and Möbius geometries, the Lie sphere geometry, and the Grassmannian, Stiefel and flag manifolds as homogeneous spaces of the orthogonal and general linear groups; the geometries of constant curvature and their space forms, spherical, Euclidean, hyperbolic and lens, are recorded with the space-form theorem; the eight maximal model geometries of Thurston are gathered with the geometries of low-dimensional topology; and the symmetric spaces close the list. Beside the examples stand the non-examples: a general Riemannian manifold is not homogeneous, a coset space by a non-closed subgroup is not a manifold, and the compact flat manifolds are quotients of a model rather than Klein geometries in the strict sense.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G/H$, $\mathfrak{g}$, $\mathfrak{h}$, $\mathfrak{m}$</td>
+<td>Homogeneous space, Lie algebra, isotropy algebra, isotropy complement</td>
+</tr>
+<tr>
+<td>$E(n)$, $O(n)$, $SO(n)$</td>
+<td>Euclidean and orthogonal groups</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n$, $S^n$, $\mathbf{H}^n$, $\mathbb{A}^n$, $\mathbb{P}^n$</td>
+<td>Euclidean, spherical, hyperbolic, affine and projective spaces</td>
+</tr>
+<tr>
+<td>$O(n+1,1)$, $SO(n,1)$</td>
+<td>Conformal and hyperbolic isometry groups</td>
+</tr>
+<tr>
+<td>$O(n+1,1)/\{\pm 1\}$, $PO(n+1,2)$</td>
+<td>Möbius group; Lie sphere group</td>
+</tr>
+<tr>
+<td>$\mathrm{Gr}_k(\mathbb{R}^n)$, $V_k(\mathbb{R}^n)$, $F\ell_n(\mathbb{K})$</td>
+<td>Grassmannian, Stiefel manifold, flag manifold</td>
+</tr>
+<tr>
+<td>$S^n/\Gamma$, $\mathbf{H}^n/\Gamma$, $L(p,q)$</td>
+<td>Spherical and hyperbolic space forms; lens space</td>
+</tr>
+<tr>
+<td>$S^3$, $E^3$, $\mathbf{H}^3$, $S^2\times\mathbb{R}$, $\mathbf{H}^2\times\mathbb{R}$, $\widetilde{SL_2(\mathbb{R})}$, $\mathrm{Nil}$, $\mathrm{Sol}$</td>
+<td>The eight three-dimensional model geometries</td>
+</tr>
+<tr>
+<td>$(\mathfrak{g},\sigma)$, rank</td>
+<td>Symmetric pair and rank of a symmetric space</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(M,g)$</td>
+<td>Isometry group of a metric, a Lie group by Myers–Steenrod</td>
+</tr>
+<tr>
+<td>$\operatorname{Aff}(n)$</td>
+<td>The affine group, $GL(n)\ltimes\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}(H)$</td>
+<td>The adjoint action of the isotropy group on $\mathfrak{m}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Felix Klein, <em>Vorlesungen über höhere Geometrie</em> (Springer, 1926), for the classical geometries as homogeneous spaces and the classification of the geometries of constant curvature.</li>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry</em>, Volume II (Interscience, 1969), for the homogeneous spaces, the isotropy representation and the invariant connections.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the homogeneous spaces, the symmetric spaces and their classification.</li>
+<li>William P. Thurston, <em>Three-Dimensional Geometry and Topology</em>, Volume 1 (Princeton University Press, 1997), for the eight model geometries and the geometric structures on three-manifolds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

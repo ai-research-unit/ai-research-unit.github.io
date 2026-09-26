@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Balanced Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-balanced-product"><strong>The Balanced Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The bilinear maps $M \times N \to P$ of two modules are not the morphisms of a category, because they have two arguments; the balanced product, or tensor product, is the module $M \otimes_R N$ that linearises them. It is defined by a universal property, constructed as a quotient of a free module by the relations forced by that property, and it converts two modules into a third on which the calculus of linear maps applies. Over a commutative ring every bilinear map is balanced, and the product represents the bilinear maps into $R$-modules; the construction is symmetric in its two arguments.</p>
+<p>Throughout, $R$ is a commutative ring with $1 \neq 0$ and $M,N,P$ are $R$-modules; where a statement holds for a general, possibly noncommutative, ring it is stated for a ring, and then $M$ is a right module and $N$ a left module. The article covers the universal problem for balanced maps, the generators-and-relations construction, the universal property $\operatorname{Hom}_R(M \otimes_R N,P) \cong \operatorname{Bilin}_R(M,N;P)$, the functoriality of the construction, the symmetry and associativity isomorphisms for commutative $R$, and the worked examples $\mathbb{Z}/m\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/\gcd(m,n)\mathbb{Z}$ and $\mathbb{Q} \otimes_{\mathbb{Z}} \mathbb{Z}/n\mathbb{Z}=0$, together with the rank formula $\operatorname{rank}_R(M \otimes_R N)=\operatorname{rank}_R M \cdot \operatorname{rank}_R N$ for free modules. The right exactness of the tensor product, flatness and the tensor–hom adjunction are taken up in the companion article of this category on flatness and exactness.</p>
+<h2 id="bilinear-and-balanced-maps">Bilinear and Balanced Maps</h2>
+<h3 id="bilinear-maps">Bilinear Maps</h3>
+<p><strong>Definition.</strong> For a commutative ring $R$, a map $f:M \times N \to P$ is <strong>$R$-bilinear</strong> if it is $R$-linear in each argument separately:</p>
+<p>$$
+f(m+m',n)=f(m,n)+f(m',n), \qquad f(m,n+n')=f(m,n)+f(m,n'),
+$$</p>
+<p>$$
+f(rm,n)=r\,f(m,n)=f(m,rn)
+$$</p>
+<p>for all $m,m' \in M$, $n,n' \in N$ and $r \in R$. The set of such maps is written $\operatorname{Bilin}_R(M,N;P)$; it is an $R$-module under pointwise operations.</p>
+<h3 id="balanced-maps">Balanced Maps</h3>
+<p>For a general ring the two scalar actions live on opposite sides, and the middle condition of the definition is replaced by the requirement that the scalar can pass from the right module to the left one.</p>
+<p><strong>Definition.</strong> Let $R$ be a ring, $M$ a right $R$-module, $N$ a left $R$-module and $P$ an abelian group. A map $f:M \times N \to P$ is <strong>$R$-balanced</strong> if</p>
+<p>$$
+f(m+m',n)=f(m,n)+f(m',n), \qquad f(m,n+n')=f(m,n)+f(m,n'),
+$$</p>
+<p>$$
+f(mr,n)=f(m,rn)
+$$</p>
+<p>for all $m,m' \in M$, $n,n' \in N$ and $r \in R$. The set of balanced maps is written $\operatorname{Bal}_R(M,N;P)$. When $R$ is commutative and $M,N,P$ are $R$-modules every bilinear map is balanced, since $f(mr,n)=r\,f(m,n)=f(m,rn)$; the converse fails in general, because balancedness constrains the two scalar actions only through the identification $f(mr,n)=f(m,rn)$ and does not require $f(m,\cdot)$ to be $R$-linear. The balanced product nevertheless represents the bilinear maps into $R$-modules, as the universal property below records.</p>
+<p>The condition $f(mr,n)=f(m,rn)$ is the only place where the ring structure enters beyond additivity; it says that the two actions of $R$ may be identified in the target, which is an abelian group and not assumed to be an $R$-module.</p>
+<h3 id="the-universal-problem">The Universal Problem</h3>
+<p><strong>Definition.</strong> A <strong>balanced product</strong> of $M$ and $N$ over $R$ is an abelian group $T$ together with a balanced map $\otimes:M \times N \to T$, written $(m,n) \mapsto m \otimes n$, with the following property: for every abelian group $P$ and every balanced map $f:M \times N \to P$ there is a unique group homomorphism $\bar f:T \to P$ such that $\bar f(m \otimes n)=f(m,n)$ for all $m,n$.</p>
+<p>In the commutative case the target $P$ is an $R$-module and $\bar f$ is required to be $R$-linear. The property is a universal property: the data $(T,\otimes)$ represent the functor $P \mapsto \operatorname{Bal}_R(M,N;P)$.</p>
+<h2 id="construction">Construction</h2>
+<h3 id="generators-and-relations">Generators and Relations</h3>
+<p><strong>Theorem.</strong> For every pair of modules $M,N$ over a ring $R$ a balanced product $M \otimes_R N$ exists, and it is unique up to a unique isomorphism commuting with the maps $\otimes$.</p>
+<p><em>Proof.</em> Let $F$ be the free abelian group on the set $M \times N$, with basis symbols $e_{(m,n)}$, and let $K$ be the subgroup generated by all elements</p>
+<p>$$
+e_{(m+m',n)}-e_{(m,n)}-e_{(m',n)}, \qquad e_{(m,n+n')}-e_{(m,n)}-e_{(m,n')}, \qquad e_{(mr,n)}-e_{(m,rn)} .
+$$</p>
+<p>Put $M \otimes_R N=F/K$ and $m \otimes n=e_{(m,n)}+K$. By construction the map $(m,n) \mapsto m \otimes n$ is balanced and the elementary tensors generate $M \otimes_R N$, because the $e_{(m,n)}$ generate $F$. Given a balanced $f:M \times N \to P$, the universal property of $F$ gives a homomorphism $\tilde f:F \to P$ with $\tilde f(e_{(m,n)})=f(m,n)$; the three displayed relations are killed by the balanced condition, so $\tilde f$ factors through $K$, giving $\bar f$. Uniqueness of $\bar f$ follows because the $m \otimes n$ generate. For uniqueness of $T$, apply the property to the balanced map $\otimes':M \times N \to T'$ to obtain a map $T \to T'$ inverse to the map obtained symmetrically. $\square$</p>
+<h3 id="elementary-tensors">Elementary Tensors</h3>
+<p><strong>Definition.</strong> Elements of $M \otimes_R N$ of the form $m \otimes n$ are <strong>elementary tensors</strong>; a general element is a finite sum $\sum_i m_i \otimes n_i$, not in general an elementary tensor.</p>
+<p><strong>Proposition.</strong> The elementary tensors satisfy, for all $m,m' \in M$, $n,n' \in N$, $r \in R$:</p>
+<p>(i) $m \otimes (n+n')=m \otimes n+m \otimes n'$ and $(m+m') \otimes n=m \otimes n+m' \otimes n$;</p>
+<p>(ii) $mr \otimes n=m \otimes rn$;</p>
+<p>(iii) $0 \otimes n=m \otimes 0=0$ and $(-m) \otimes n=m \otimes (-n)=-(m \otimes n)$;</p>
+<p>(iv) $r(m \otimes n)=(rm) \otimes n=m \otimes (rn)$ when $R$ is commutative.</p>
+<p><em>Proof.</em> All are the defining relations in $F/K$, read in the quotient. For (iii): $0 \otimes n=(0+0) \otimes n=0 \otimes n+0 \otimes n$, so $0 \otimes n=0$ by cancellation in the abelian group; similarly for $m \otimes 0$. $\square$</p>
+<p><strong>Remark.</strong> The relations are not a definition of $M \otimes_R N$ as a set of symbols: the scalars $r$ do not exist inside $F$, and the quotient imposes only the relations above. In particular distinct elementary tensors can coincide, as $m \otimes n=(mr) \otimes n'$ when $n=rn'$.</p>
+<h2 id="the-universal-property">The Universal Property</h2>
+<p><strong>Theorem.</strong> Let $R$ be a commutative ring and $M,N,P$ be $R$-modules. There is an isomorphism, natural in each variable,</p>
+<p>$$
+\operatorname{Hom}_R(M \otimes_R N,\,P) \;\cong\; \operatorname{Bilin}_R(M,N;P), \qquad \varphi \longmapsto \bigl((m,n) \mapsto \varphi(m \otimes n)\bigr).
+$$</p>
+<p>For a general ring $R$ with $M$ a right module and $N$ a left module, the same statement holds with $\operatorname{Bilin}_R$ replaced by $\operatorname{Bal}_R$ and $\operatorname{Hom}_R$ by $\operatorname{Hom}_{\mathbb{Z}}$.</p>
+<p><em>Proof.</em> The map displayed is well defined because $m \otimes n$ depends on $(m,n)$ and is balanced. It is injective because the elementary tensors generate $M \otimes_R N$, so two maps agreeing on all of them agree. It is surjective by the universal property. Naturality is immediate from the definitions. $\square$</p>
+<p>This adjunction-like statement is the working form of the universal property: it converts the construction of balanced maps into the construction of linear maps, and it is the source of every functoriality statement below.</p>
+<h2 id="functoriality">Functoriality</h2>
+<p><strong>Proposition.</strong> Let $\alpha:M \to M'$ and $\beta:N \to N'$ be $R$-linear. There is a unique $R$-linear map $\alpha \otimes \beta:M \otimes_R N \to M' \otimes_R N'$ with</p>
+<p>$$
+(\alpha \otimes \beta)(m \otimes n)=\alpha(m) \otimes \beta(n) .
+$$</p>
+<p>Moreover $\operatorname{id}_M \otimes \operatorname{id}_N=\operatorname{id}_{M \otimes N}$ and $(\alpha' \otimes \beta')(\alpha \otimes \beta)=(\alpha'\alpha) \otimes (\beta'\beta)$ whenever the composites are defined. So the balanced product is a functor of two variables.</p>
+<p><em>Proof.</em> Apply the universal property to the balanced map $(m,n) \mapsto \alpha(m) \otimes \beta(n)$ to obtain $\alpha \otimes \beta$, and the stated identities follow because both sides agree on elementary tensors, which generate. $\square$</p>
+<p><strong>Proposition (additivity).</strong> With $\alpha,\alpha':M \to M'$ and $\beta:N \to N'$, one has $(\alpha+\alpha') \otimes \beta=\alpha \otimes \beta+\alpha' \otimes \beta$ and $\alpha \otimes (\beta+\beta')=\alpha \otimes \beta+\alpha \otimes \beta'$. Hence $\alpha \otimes \beta$ depends $R$-linearly on each variable, and the functors $M \otimes_R -$ and $-\otimes_R N$ are additive functors.</p>
+<p><em>Proof.</em> Both sides agree on elementary tensors: $((\alpha+\alpha') \otimes \beta)(m \otimes n)=(\alpha(m)+\alpha'(m)) \otimes \beta(n)$, which by bilinearity of $\otimes$ equals $\alpha(m) \otimes \beta(n)+\alpha'(m) \otimes \beta(n)$, the value of the sum on $m \otimes n$. $\square$</p>
+<h2 id="symmetry-and-associativity">Symmetry and Associativity</h2>
+<h3 id="symmetry">Symmetry</h3>
+<p><strong>Proposition.</strong> For a commutative ring $R$ and $R$-modules $M,N$ there is a natural isomorphism</p>
+<p>$$
+\sigma:M \otimes_R N \xrightarrow{\ \sim\ } N \otimes_R M, \qquad m \otimes n \longmapsto n \otimes m,
+$$</p>
+<p>with $\sigma^2=\operatorname{id}$.</p>
+<p><em>Proof.</em> Both $(m,n) \mapsto n \otimes m$ and its inverse $(n,m) \mapsto m \otimes n$ are balanced, since $R$ is commutative; the universal property gives mutually inverse maps. $\square$</p>
+<p>The commutativity hypothesis is necessary for symmetry in this form: for a general ring $M \otimes_R N$ and $N \otimes_R M$ can be very different, the first being a balanced product of a right and a left module and the second of a left and a right one.</p>
+<h3 id="associativity">Associativity</h3>
+<p><strong>Proposition.</strong> For a commutative ring $R$ and $R$-modules $M,N,P$ there is a natural isomorphism</p>
+<p>$$
+(M \otimes_R N) \otimes_R P \;\cong\; M \otimes_R (N \otimes_R P), \qquad (m \otimes n) \otimes p \longmapsto m \otimes (n \otimes p).
+$$</p>
+<p><em>Proof.</em> Fix $p \in P$. The map $(m,n) \mapsto m \otimes (n \otimes p)$ is balanced in $m,n$, so it induces $M \otimes_R N \to M \otimes_R(N \otimes_R P)$ sending $m \otimes n$ to $m \otimes(n \otimes p)$; this is additive in $p$, so the map $\Psi:(M \otimes_R N) \times P \to M \otimes_R(N \otimes_R P)$, $(t,p) \mapsto \Psi_p(t)$, is balanced and induces a map on $(M \otimes_R N) \otimes_R P$ sending $(m \otimes n) \otimes p$ to $m \otimes(n \otimes p)$. The same construction in the other order gives an inverse, since the two agree on the generating elementary tensors. $\square$</p>
+<p>Associativity makes it meaningful to write $M_1 \otimes_R \cdots \otimes_R M_k$ without parentheses and to speak of the tensor product of a family; the general element is a sum of $k$-fold elementary tensors.</p>
+<h2 id="examples-and-the-rank-formula">Examples and the Rank Formula</h2>
+<h3 id="the-basic-isomorphisms">The Basic Isomorphisms</h3>
+<p><strong>Proposition.</strong> Let $R$ be a commutative ring and $M$ an $R$-module. Then</p>
+<p>$$
+R \otimes_R M \cong M, \qquad m \mapsto 1 \otimes m \text{ inverse}, \qquad r \otimes m \longleftrightarrow rm,
+$$</p>
+<p>and more generally $R^n \otimes_R M \cong M^n$; and for free modules $M \cong R^m$, $N \cong R^n$,</p>
+<p>$$
+M \otimes_R N \cong R^{mn} .
+$$</p>
+<p><em>Proof.</em> The map $R \times M \to M$, $(r,m) \mapsto rm$, is balanced and induces $R \otimes_R M \to M$ with $r \otimes m \mapsto rm$; the map $m \mapsto 1 \otimes m$ is its inverse because $r \otimes m=r(1 \otimes m)$ and $1 \otimes m$ recovers $m$. For the rank formula, if $e_1,\dots,e_m$ and $f_1,\dots,f_n$ are bases then the $mn$ elements $e_i \otimes f_j$ form a basis: they generate, since elementary tensors generate and $(\sum r_ie_i) \otimes (\sum s_jf_j)=\sum_{i,j}r_is_j\,e_i \otimes f_j$; and they are independent because the balanced map $\bigl(\sum_ir_ie_i,\sum_js_jf_j\bigr) \mapsto (r_is_j)_{i,j}$ from $R^m \times R^n$ to $R^{mn}$ induces a homomorphism $R^m \otimes_R R^n \to R^{mn}$ carrying $e_i \otimes f_j$ to the standard basis vector $E_{ij}$, so a relation $\sum_{i,j}c_{ij}\,e_i \otimes f_j=0$ would give $\sum_{i,j}c_{ij}E_{ij}=0$, hence $c_{ij}=0$ for all $i,j$. Hence $\operatorname{rank}_R(M \otimes_R N)=mn=\operatorname{rank}_R M \cdot \operatorname{rank}_R N$ for free modules. $\square$</p>
+<p>The rank formula requires $R$ to have the invariant basis number property, which is used in the companion article on direct sums, free modules and rank; over a commutative ring it holds, and the phrase $\operatorname{rank}_R$ is unambiguous.</p>
+<h3 id="the-tensor-product-with-a-quotient-ring">The Tensor Product with a Quotient Ring</h3>
+<p><strong>Proposition.</strong> Let $R$ be a commutative ring, $I \subseteq R$ an ideal and $M$ an $R$-module. Then</p>
+<p>$$
+R/I \otimes_R M \;\cong\; M/IM, \qquad (r+I) \otimes m \longmapsto rm+IM .
+$$</p>
+<p>This is the form in which the tensor product is computed in practice: it identifies the tensor product with a quotient ring as a quotient of $M$.</p>
+<p><em>Proof.</em> The map $R/I \times M \to M/IM$, $(r+I,m) \mapsto rm+IM$, is balanced and surjective. The map $M/IM \to R/I \otimes_R M$, $m+IM \mapsto 1 \otimes m$, is well defined, since for $a \in I$ one has $1 \otimes am=a(1 \otimes m)=(a+I) \otimes m=0$. The two are inverse, because $r \otimes m=r(1 \otimes m) \mapsto rm+IM$ and $m+IM \mapsto 1 \otimes m \mapsto m+IM$. $\square$</p>
+<h3 id="direct-sums">Direct Sums</h3>
+<p><strong>Proposition.</strong> For any family $\{M_i\}_{i \in I}$ of $R$-modules and any $R$-module $N$ the natural map</p>
+<p>$$
+\Bigl(\bigoplus_{i \in I}M_i\Bigr) \otimes_R N \;\cong\; \bigoplus_{i \in I}(M_i \otimes_R N), \qquad \Bigl(\sum_im_i\Bigr) \otimes n \longmapsto \sum_i(m_i \otimes n),
+$$</p>
+<p>is an isomorphism, so the tensor product commutes with arbitrary direct sums in each variable.</p>
+<p><em>Proof.</em> The displayed map is induced by the universal property from the balanced map $((m_i),n) \mapsto (m_i \otimes n)$, which is well defined because the families are finitely supported; it is surjective because the elementary tensors of the direct sum are images. The inclusions $\iota_i:M_i \to \bigoplus_iM_i$ give $\iota_i \otimes \operatorname{id}$, and the sum of these over finitely supported families is a homomorphism $\bigoplus_i(M_i \otimes_R N) \to (\bigoplus_iM_i) \otimes_R N$ inverse to it, the two agreeing on elementary tensors. $\square$</p>
+<h3 id="torsion-examples">Torsion Examples</h3>
+<p><strong>Proposition.</strong> Over $R=\mathbb{Z}$:</p>
+<p>(i) $\mathbb{Z}/m\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/d\mathbb{Z}$ where $d=\gcd(m,n)$;</p>
+<p>(ii) $\mathbb{Q} \otimes_{\mathbb{Z}} \mathbb{Z}/n\mathbb{Z}=0$ for $n \ge 1$.</p>
+<p><em>Proof.</em> (i) In the balanced product $1 \otimes 1$ generates, since $(k \bmod m) \otimes(\ell \bmod n)=k\ell(1 \otimes 1)$; and $m(1 \otimes 1)=m \cdot 1 \otimes 1=0$, $n(1 \otimes 1)=1 \otimes n\cdot 1=0$, so $d(1 \otimes 1)=0$ by Bézout, giving a surjection $\mathbb{Z}/d\mathbb{Z} \to \mathbb{Z}/m \otimes \mathbb{Z}/n$. For injectivity, the map $\mathbb{Z}/m \times \mathbb{Z}/n \to \mathbb{Z}/d$, $(k,\ell) \mapsto k\ell \bmod d$, is balanced and sends $(1,1)$ to $1$. (ii) Every $q \otimes(k \bmod n)$ equals $(q/n) \otimes (nk \bmod n)=(q/n) \otimes 0=0$, since $\mathbb{Q}$ is divisible and $n$ is invertible in it: writing $q=n(q/n)$ moves the scalar across. $\square$</p>
+<p><strong>Example.</strong> $\mathbb{Z}/2\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/3\mathbb{Z}=0$ is the case $d=1$: the tensor product of two finite abelian groups of coprime order vanishes, so the tensor product does not preserve the information contained in the factors. This is the first sign that the functor is not left exact, a phenomenon taken up in the companion article on flatness and exactness.</p>
+<h2 id="summary">Summary</h2>
+<p>A balanced map $f:M \times N \to P$ over a ring $R$ is additive in each argument and satisfies $f(mr,n)=f(m,rn)$, and the balanced product $M \otimes_R N$ is the universal target for such maps: it is generated by the elementary tensors $m \otimes n$ subject to exactly those relations, and the universal property reads $\operatorname{Hom}_R(M \otimes_R N,P) \cong \operatorname{Bilin}_R(M,N;P)$ over a commutative ring. Uniqueness up to a unique isomorphism is a formal consequence of the universal property, so the generators-and-relations construction may be replaced by any model with the same property.</p>
+<p>The construction is functorial in both variables, $\alpha \mapsto \alpha \otimes \beta$, preserving identities, composition and sums, so $\otimes_R$ is an additive bifunctor; for commutative $R$ it is symmetric, $M \otimes_R N \cong N \otimes_R M$, and associative, $(M \otimes_R N) \otimes_R P \cong M \otimes_R(N \otimes_R P)$, which justifies unparenthesised tensor products. The basic isomorphisms are $R \otimes_R M \cong M$ and $M \otimes_R R^n \cong M^n$; for free modules $M \cong R^m$ and $N \cong R^n$ the tensor product is free of rank $mn$, the rank being multiplicative. Over $\mathbb{Z}$, $\mathbb{Z}/m \otimes_{\mathbb{Z}} \mathbb{Z}/n \cong \mathbb{Z}/\gcd(m,n)$ and $\mathbb{Q} \otimes_{\mathbb{Z}} \mathbb{Z}/n=0$, so the tensor product is not left exact and loses torsion information; the exactness properties and the notion of flatness belong to the companion article on flatness and exactness.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>a commutative ring with $1 \neq 0$, or a ring in the balanced statements</td>
+</tr>
+<tr>
+<td>$M,N,P$</td>
+<td>$R$-modules, right and left modules in the balanced case</td>
+</tr>
+<tr>
+<td>$\operatorname{Bilin}_R(M,N;P)$</td>
+<td>$R$-bilinear maps</td>
+</tr>
+<tr>
+<td>$\operatorname{Bal}_R(M,N;P)$</td>
+<td>balanced maps</td>
+</tr>
+<tr>
+<td>$M \otimes_R N$</td>
+<td>the balanced product / tensor product</td>
+</tr>
+<tr>
+<td>$m \otimes n$</td>
+<td>elementary tensor</td>
+</tr>
+<tr>
+<td>$\otimes=\otimes_R$</td>
+<td>the balanced map $M \times N \to M \otimes_R N$</td>
+</tr>
+<tr>
+<td>$\alpha \otimes \beta$</td>
+<td>tensor product of linear maps</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>symmetry isomorphism $M \otimes_R N \to N \otimes_R M$</td>
+</tr>
+<tr>
+<td>$R^n$</td>
+<td>free module on $n$ generators</td>
+</tr>
+<tr>
+<td>$\gcd(m,n)$</td>
+<td>greatest common divisor</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}_R M$</td>
+<td>rank of a free module</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the balanced product over a general ring.</li>
+<li>Henri Cartan and Samuel Eilenberg, <em>Homological Algebra</em> (Princeton University Press, 1956), for the tensor product as a functor and its derived functors.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the generators-and-relations construction.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for the universal property and the tensor product of algebras.</li>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em> (Springer, 2nd ed. 1998), for the tensor–hom adjunction and the categorical reading of the universal property.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for $\otimes$ and $\operatorname{Hom}$ and the exactness properties.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for the tensor product in the derived setting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

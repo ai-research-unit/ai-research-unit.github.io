@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaos and Strange Attractors — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="chaos-and-strange-attractors"><strong>Chaos and Strange Attractors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Chaos</strong> is the property of a deterministic system whose orbits separate at an exponential rate and yet whose asymptotic behaviour is confined: it is the coexistence of sensitive dependence on the initial condition, which makes prediction at long range impossible, with recurrence, which makes the statistics of the motion stable and computable. <strong>Strange attractors</strong> are the invariant sets on which this behaviour occurs — compact, invariant, attracting a neighbourhood, not a finite union of submanifolds, with a fractal structure, and carrying an invariant measure whose entropy is positive and whose Lyapunov exponents are nonzero. The two notions are distinct: a hyperbolic set need not attract, and a chaotic invariant set need not be strange. The theory has a topological side — sensitivity, transitivity, the density of periodic orbits, Li–Yorke chaos and positive entropy — and a definition of the notion of attractor from <em>Topological Dynamics</em> and <em>Smooth Dynamical Systems</em>, and it has a measure-theoretic side — the Lyapunov exponents, the entropy, the SRB measures and the dimension — inherited from <em>Hyperbolic Dynamics and Anosov Systems</em> and <em>Ergodic Theory</em>.</p>
+<p>The article begins with the definitions of chaos: sensitive dependence, the definition of Devaney by transitivity, dense periodic points and sensitivity, the theorem that the first two imply the third on a perfect compact metric space, and the notion of <strong>Li–Yorke chaos</strong> with its scrambled sets and its relation to positive entropy; the hierarchies are stated, with the theorem that positive entropy implies Li–Yorke chaos and the example of Smítal of a zero-entropy Li–Yorke chaotic interval map showing that the converse fails. The <strong>attractors</strong> are treated next: topological attractors and their basins, the Conley decomposition inherited from the chain recurrence, Milnor attractors, and the definition of a <strong>strange attractor</strong> as an attractor with sensitive dependence and a fractal structure. The examples follow: the solenoid of Smale, the Plykin and DA attractors of hyperbolic type, the <strong>Lorenz attractor</strong> of the system $\dot x=\sigma(y-x)$, $\dot y=x(\rho-z)-y$, $\dot z=xy-\beta z$, the geometric Lorenz model of Guckenheimer and Williams and the theorem of Tucker that the Lorenz attractor is a robust strange attractor, and the <strong>Hénon attractor</strong> of the map $(x,y)\mapsto(1-ax^2+y,bx)$. The <strong>fractal dimension</strong> is then developed: the Hausdorff and box dimensions, the middle-third Cantor set, the Kaplan–Yorke formula and the conjecture, proved in important cases by Ledrappier and Young, that the dimension of a hyperbolic attractor is the Kaplan–Yorke number; and the article closes with the statistics of a strange attractor — the SRB measure, the entropy and the physical measure — and with the relation of chaos to the entropy of <em>Topological Dynamics</em> and to the symbolic models.</p>
+<p>The topological dynamics, the transitivity, the entropy, the recurrence and the mixing are those of <em>Topological Dynamics</em>; the flows, the linearisation, the structural stability and the attractors of the smooth theory are those of <em>Smooth Dynamical Systems</em>; the hyperbolicity, the Lyapunov exponents, the Pesin formula and the SRB measures are those of <em>Hyperbolic Dynamics and Anosov Systems</em>; the measure-preserving transformations, the ergodicity and the entropy are those of <em>Ergodic Theory</em>. The Hausdorff and box dimensions are standard real analysis and are defined in line with the citation of the standard literature, the fractal dimension being absent from the corpus. The symbolic models, the bifurcations that generate the attractors and the smooth systems with random perturbations belong to later categories of this Part.</p>
+<p>No physics is invoked; the equations are given as differential equations and maps and no mechanical or physical interpretation is attached to them.</p>
+<h2 id="notions-of-chaos">Notions of Chaos</h2>
+<h3 id="sensitive-dependence">Sensitive Dependence</h3>
+<p><strong>Definition.</strong> Let $X$ be a compact metric space and $T:X\to X$ continuous. The system has <strong>sensitive dependence on the initial condition</strong> if there is $\delta>0$ such that for every $x \in X$ and every $\epsilon>0$ there is $y \in X$ with $d(x,y)<\epsilon$ and an $n \ge0$ with $d(T^nx,T^ny)>\delta$. The system is <strong>chaotic in the sense of Devaney</strong> if it is topologically transitive, its periodic points are dense, and it has sensitive dependence on the initial condition.</p>
+<p>Sensitivity is the failure of the family of iterates to be equicontinuous: a rotation of the circle, or any equicontinuous system, is not sensitive, and the classification of the minimal equicontinuous systems as translations of <em>Topological Dynamics</em> is thus a classification of the minimal systems without chaos.</p>
+<p><strong>Theorem (Banks–Brooks–Cairns–Davis–Stacey).</strong> Let $X$ be a compact metric space with no isolated points and let $T:X\to X$ be continuous. If $T$ is topologically transitive and the periodic points of $T$ are dense in $X$, then $T$ has sensitive dependence on the initial condition. Consequently a transitive system with dense periodic points is chaotic in the sense of Devaney.</p>
+<p><em>Proof.</em> The theorem is the one proved in the paper cited below. The content of the hypothesis is exactly what the failure of sensitivity denies: if $T$ is not sensitive, then there are $\delta>0$, a point $x$ and a radius $\epsilon>0$ such that $d(T^nx,T^ny)\le\delta$ for every $y$ in the $\epsilon$-ball of $x$ and every $n \ge0$ — that is, the family of iterates is $\delta$-equicontinuous at $x$ — and the theorem states that this local equicontinuity is incompatible with the transitivity, the density of the periodic points and the absence of isolated points. The use of the last hypothesis is that it supplies a pair of distinct periodic points at positive distance whose images can be separated: without it the statement fails, since the transposition of a two-point space is transitive, has dense periodic points and is not sensitive, the ball of radius $\epsilon<d(a,b)$ around $a$ containing only $a$ itself. $\square$</p>
+<h3 id="liyorke-chaos-and-the-hierarchies">Li–Yorke Chaos and the Hierarchies</h3>
+<p><strong>Definition.</strong> A pair $x,y$ is <strong>$\delta$-scrambled</strong> for $T$ if $\liminf_{n}d(T^nx,T^ny)=0$ and $\limsup_nd(T^nx,T^ny)>\delta$; the system is <strong>chaotic in the sense of Li–Yorke</strong> if there is an uncountable set $S$ such that every pair of distinct points of $S$ is $\delta$-scrambled for some $\delta>0$. The notion is the formalisation of the unpredictability of a pair of orbits that approach and separate infinitely often.</p>
+<p><strong>Theorem (Li–Yorke).</strong> Let $f:[0,1]\to[0,1]$ be continuous. If $f$ has a periodic orbit of period $3$, then $f$ is chaotic in the sense of Li–Yorke and, moreover, has periodic orbits of every period.</p>
+<p><em>Proof (sketch).</em> By the theorem of Sharkovskii the existence of a period-three orbit implies the existence of orbits of all periods; the uncountable scrambled set is constructed from the itinerary of the points with respect to the intervals determined by the period-three orbit, and the stretching of the intervals under the iterate of $f$ produces the two limit behaviours. $\square$</p>
+<p><strong>Theorem (Blanchard–Glasner–Kolyada).</strong> Let $T$ be a continuous map of a compact metric space with positive topological entropy. Then $T$ is chaotic in the sense of Li–Yorke; consequently positive entropy is a sufficient condition for chaos in the sense of Li–Yorke.</p>
+<p><strong>Theorem (Smítal).</strong> There is a continuous map of the interval with zero topological entropy which is chaotic in the sense of Li–Yorke; consequently the converse of the previous theorem fails, and the Li–Yorke notion and positive entropy are not equivalent even in dimension one.</p>
+<p><strong>Remark (the hierarchy).</strong> Two implications hold in general: positive topological entropy implies Li–Yorke chaos (Blanchard–Glasner–Kolyada), and transitivity together with the density of the periodic points implies sensitivity on a perfect space (Banks and others). The notions are not equivalent, however: the example of Smítal separates Li–Yorke chaos from positive entropy, since it has zero entropy, and the precise relations among the several definitions of chaos on a given class of systems are the subject of the literature cited below.</p>
+<h3 id="the-horseshoe-as-the-model">The Horseshoe as the Model</h3>
+<p><strong>Example (the Smale horseshoe).</strong> The horseshoe of <em>Smooth Dynamical Systems</em> has a hyperbolic invariant Cantor set on which the dynamics is conjugate to the full two-sided two-shift; it therefore has sensitive dependence (the shift separates points at the first coordinate where their sequences differ), dense periodic points, positive entropy $\log2$, and an uncountable scrambled set. Every one of the notions of chaos above is realised by the horseshoe, and the horseshoe is the model to which the chaotic invariant sets of <em>Hyperbolic Dynamics and Anosov Systems</em> reduce through the Markov partitions; the symbolic models are developed.</p>
+<p><strong>Example (the doubling map and the shift).</strong> The map $x\mapsto2x\bmod1$ of the circle has sensitive dependence with $\delta=\frac14$, dense periodic points and entropy $\log2$, and it is conjugate to the full two-shift on the complement of the countable set of dyadic rationals; it is a chaotic system in every sense above, and its periodic points are the rationals with odd denominators.</p>
+<h2 id="attractors-and-strange-attractors">Attractors and Strange Attractors</h2>
+<h3 id="attractors-and-their-basins">Attractors and Their Basins</h3>
+<p><strong>Definition.</strong> Let $M$ be a compact metric space and $T:M\to M$ continuous. A compact invariant set $A \subseteq M$ is an <strong>attractor</strong> if there is a neighbourhood $U$ of $A$ with $T(\bar U)\subseteq U$ and $A=\bigcap_{n\ge0}T^n(U)$ — a <strong>trapping region</strong> — and $T|_A$ is topologically transitive; the <strong>basin</strong> of $A$ is $\{x \in M:\omega(x)\subseteq A\}$, an open invariant set. A <strong>Milnor attractor</strong> is a compact invariant set $A$ such that the set of points whose $\omega$-limit set meets $A$ has positive measure with respect to a reference measure — for a diffeomorphism, the Riemannian volume — and $A$ is minimal with this property; the Milnor notion is weaker than the topological one and is the natural one for the attractors with a fractal structure, whose basin of attraction in the topological sense may be small.</p>
+<p><strong>Proposition (attractors and chain recurrence).</strong> Every attractor contains a chain transitive component and its basin is open and invariant; by Conley's theorem, every point of $M\setminus\mathrm{CR}(T)$ lies in the basin of some attractor, and the attractors are the maximal chain transitive pieces that can be isolated by a trapping region. This is Conley's decomposition of <em>Topological Dynamics</em>, and it gives the general framework in which the strange attractors sit.</p>
+<h3 id="strange-attractors">Strange Attractors</h3>
+<p><strong>Definition.</strong> An attractor $A$ is <strong>strange</strong> if it is not a finite union of submanifolds of $M$, its restriction $T|_A$ has sensitive dependence on the initial condition, and it carries an invariant measure with a positive Lyapunov exponent; the last condition makes the strange attractor a <strong>chaotic attractor</strong> in the measure-theoretic sense as well. The definition is descriptive: the class is not closed under topological conjugacy in a way that is invariant under all the definitions in the literature, and the examples below are those for which the strong properties — hyperbolicity or its singular analogue, a positive exponent and a fractal dimension — have been established.</p>
+<p><strong>Example (hyperbolic attractors).</strong> (i) The <strong>solenoid</strong> of Smale is the attractor of a diffeomorphism of the solid torus that is the inverse limit of the doubling map of the circle: the attracting set is a hyperbolic attractor, homeomorphic to the inverse limit of the circle under $z\mapsto z^2$, locally the product of a Cantor set and an interval, and not a manifold; the restriction of the map to it is hyperbolic with a one-dimensional expanding direction and a Cantor set of contracting directions, and its entropy is $\log2$.</p>
+<p>(ii) The <strong>Plykin attractor</strong> is a hyperbolic attractor of a diffeomorphism of the two-sphere with a finite number of holes, a one-dimensional expanding attractor whose stable manifolds foliate the basin; the <strong>DA attractor</strong> of Smale is obtained from an Anosov diffeomorphism by a surgery that turns a periodic orbit into a source and produces an attractor with a one-dimensional unstable direction.</p>
+<p>(iii) The attractors of the hyperbolic type carry Bowen–Ruelle measures by the theory of <em>Hyperbolic Dynamics and Anosov Systems</em>, and their dimension is given by the Kaplan–Yorke formula in the cases covered by the theorem of Ledrappier and Young stated below.</p>
+<p><strong>Example (the Lorenz attractor).</strong> Consider the system</p>
+<p>$$
+\dot x=\sigma(y-x), \qquad \dot y=x(\rho-z)-y, \qquad \dot z=xy-\beta z ,
+$$</p>
+<p>with $\sigma=10$, $\rho=28$, $\beta=\frac83$. The origin is a hyperbolic equilibrium of saddle type whose eigenvalues are all real, namely $\lambda^2+11\lambda-270=0$ together with $-\beta$, that is $11.83$, $-22.83$ and $-2.67$; the two remaining equilibria have a pair of complex eigenvalues with positive real part, and numerically the orbits spiral in the two wings of a butterfly-shaped set and never settle: the set</p>
+<p>$$
+A=\bigcap_{t\ge0}\overline{\varphi([t,\infty)\times U)}
+$$</p>
+<p>for a suitable trapping region $U$ is the <strong>Lorenz attractor</strong>. The geometric model of Guckenheimer and Williams replaces the flow near the origin by a fixed linear behaviour and the return map by a one-dimensional map with a single discontinuity and a negative Schwarzian derivative, and in the model the attractor has sensitive dependence, a dense orbit, a countable set of periodic orbits, and a positive Lyapunov exponent; the attractor is not uniformly hyperbolic, because the equilibrium inside it has a direction of contraction, and the appropriate notion is that of a <strong>singular hyperbolic</strong> attractor, in which the expansion of the volume along the invariant directions dominates the contraction and is uniform away from the equilibrium. The theorem of Tucker establishes by rigorous computation that the Lorenz attractor is a genuine strange attractor of the system: the trapping region is absorbing for the given parameters, the return map is well defined and uniformly expanding on its domain, and the attractor has a positive Lyapunov exponent and a fractal structure, so the system is chaotic and the attractor is robust under perturbations of the parameters.</p>
+<p><strong>Example (the Hénon attractor).</strong> The <strong>Hénon map</strong> is the diffeomorphism of the plane</p>
+<p>$$
+(x,y)\mapsto(1-ax^2+y,\ bx),
+$$</p>
+<p>which for $a=1.4$, $b=0.3$ has a compact invariant set that attracts an open set and is numerically a fractal curve of dimension slightly above $1$; the map is not uniformly hyperbolic, and the existence of the strange attractor for a positive measure set of parameters $(a,b)$ with $b$ small is the theorem of Benedicks and Carleson and of Benedicks and Young, in which the attractor is shown to have a positive Lyapunov exponent, an SRB measure and a dimension strictly between $1$ and $2$; the SRB measure of the Hénon attractor and its dimension were obtained by Benedicks and Young. The map is a diffeomorphism with $\det Df=-b$ constant, and hence the two Lyapunov exponents of any invariant measure satisfy $\lambda_1+\lambda_2=\log|b|$ exactly; at $a=1.4$, $b=0.3$ the numerical exponents are $\lambda_1\approx0.4192$ and $\lambda_2\approx-1.6232$, whose sum is $-1.2040$, in agreement with the exact value $\log0.3=-1.2040$ to four decimal places.</p>
+<h2 id="fractal-dimension">Fractal Dimension</h2>
+<h3 id="hausdorff-and-box-dimension">Hausdorff and Box Dimension</h3>
+<p><strong>Definition.</strong> Let $A$ be a subset of a metric space. For $s \ge0$ and $\delta>0$ put</p>
+<p>$$
+H^s_\delta(A)=\inf\Bigl\{\sum_{i}(\operatorname{diam}U_i)^s : A \subseteq\bigcup_iU_i,\ \operatorname{diam}U_i<\delta\Bigr\},
+\qquad H^s(A)=\lim_{\delta\to0}H^s_\delta(A),
+$$</p>
+<p>the <strong>Hausdorff measure</strong> of dimension $s$; there is a unique $s_0$ with $H^s(A)=\infty$ for $s<s_0$ and $H^s(A)=0$ for $s>s_0$, namely the <strong>Hausdorff dimension</strong> $\dim_HA$. The <strong>box dimension</strong> is</p>
+<p>$$
+\dim_BA=\lim_{\delta\to0}\frac{\log N_\delta(A)}{-\log\delta},
+$$</p>
+<p>when the limit exists, with $N_\delta(A)$ the least number of sets of diameter $\le\delta$ needed to cover $A$; its upper and lower variants always exist, and the inequality</p>
+<p>$$
+\dim_HA\le\underline{\dim}_BA\le\overline{\dim}_BA
+$$</p>
+<p>holds. The Hausdorff dimension is countably stable, $\dim_H\bigcup_kA_k=\sup_k\dim_HA_k$, while the box dimension is only finitely stable; neither is a topological invariant, and the theory is that of the standard literature on fractal geometry, cited below.</p>
+<p><strong>Example.</strong> The middle-third Cantor set $C \subseteq[0,1]$ satisfies $C=\frac13C\cup(\frac23+\frac13C)$, the two pieces being disjoint, so $H^s(C)=2\cdot3^{-s}H^s(C)$ for the critical value and $H^s(C)$ is finite and nonzero only for $s=\log2/\log3$; hence</p>
+<p>$$
+\dim_HC=\dim_BC=\frac{\log2}{\log3}=0.630929\ldots
+$$</p>
+<p>and the measure $H^s$ with $s=\log2/\log3$ is positive and finite on $C$. The same computation gives the dimension of the self-similar sets of an iterated function system as the solution of $\sum_i\rho_i^s=1$ when the open set condition holds, which is the content of the Moran–Hutchinson theorem.</p>
+<h3 id="the-kaplanyorke-formula-and-the-dimension-of-an-attractor">The Kaplan–Yorke Formula and the Dimension of an Attractor</h3>
+<p><strong>Definition.</strong> Let $\mu$ be an ergodic invariant measure of a $C^1$ diffeomorphism with Lyapunov exponents $\lambda_1\ge\cdots\ge\lambda_d$ and $j$ the largest index with $\lambda_1+\cdots+\lambda_j \ge0$ (so that $j<d$ unless the measure is volume-preserving with all the sums nonnegative). The <strong>Kaplan–Yorke number</strong> is</p>
+<p>$$
+D_{KY}=j+\frac{\lambda_1+\cdots+\lambda_j}{|\lambda_{j+1}|} .
+$$</p>
+<p><strong>Theorem (Ledrappier–Young).</strong> Let $f$ be a $C^{1+\alpha}$ diffeomorphism of a surface and let $\mu$ be an ergodic hyperbolic measure with a positive exponent and an SRB property. Then the Hausdorff dimension of $\mu$ — the infimum of the Hausdorff dimensions of the sets of full measure — satisfies the <strong>dimension formula</strong> of Ledrappier and Young, and in the case in which the unstable distribution is one-dimensional and the measure is the SRB measure, it equals the Kaplan–Yorke number $1+\lambda_1/|\lambda_2|$; the equality of the Hausdorff dimension of a hyperbolic attractor with the Kaplan–Yorke number is the <strong>Kaplan–Yorke conjecture</strong>, proved in this and in more general settings by the dimension theory of the invariant measures.</p>
+<p><strong>Example (the Hénon attractor continued).</strong> With $\lambda_1\approx0.4192$, $\lambda_2\approx-1.6232$ the Kaplan–Yorke number is</p>
+<p>$$
+D_{KY}=1+\frac{0.4192}{1.6232}=1.2583 ,
+$$</p>
+<p>and the numerically computed box dimension of the Hénon attractor at $a=1.4$, $b=0.3$ is approximately $1.26$, in agreement with the formula; the attractor therefore has a non-integer dimension strictly between $1$ and $2$, which is the quantitative form of its strangeness.</p>
+<h2 id="the-statistics-of-a-strange-attractor">The Statistics of a Strange Attractor</h2>
+<p><strong>Theorem (SRB measures and physical measures).</strong> Let $A$ be a hyperbolic attractor or a singular hyperbolic attractor of the Lorenz type, and let $T$ be the map or the time-one map of the flow. Then the Bowen–Ruelle measure $\mu$ of <em>Hyperbolic Dynamics and Anosov Systems</em> is an invariant probability measure on $A$, it is ergodic, and it is mixing when $T|_A$ is topologically mixing; its entropy satisfies Pesin's formula $h_\mu=\sum\lambda_i^+$, and its basin has positive measure with respect to the Riemannian volume; such a measure is a <strong>physical measure</strong>, in that for a positive-measure set of initial conditions the Birkhoff averages converge to the averages with respect to $\mu$, so that the statistics of the orbit are computable even though the individual orbit is unpredictable. The entropy, the mixing and the decay of correlations of $\mu$ are those of <em>Ergodic Theory</em>, and the symbolic model of the attractor by a subshift of finite type, obtained from a Markov partition, is .</p>
+<p><strong>Corollary (chaos and entropy).</strong> For a chaotic attractor whose SRB measure has a positive Lyapunov exponent, the entropy of that measure is positive, by Pesin's formula, and hence the system is chaotic in the sense of Li–Yorke by the theorem of Blanchard–Glasner–Kolyada of the first section; the dimension, the entropy and the exponents of a strange attractor are thus three quantitative invariants linked by Pesin's formula and by the Kaplan–Yorke formula, and the computation of any two of them determines the third, up to the identification of the measure.</p>
+<p><strong>Remark (the role of the attractor).</strong> A hyperbolic set which is not attracting is invisible to the statistics of a typical orbit, but it is the invariant set that persists under perturbations and that is detected by the periodic orbits; a strange attractor is exactly a hyperbolic, or singular hyperbolic, invariant set that attracts, so that it has both the structural robustness of the hyperbolic theory and the statistical relevance of an attractor. The interplay of these two properties — robustness under perturbation and absolute continuity of the invariant measure on the unstable manifolds — is the content of the theory of the physical measures and is the reason why the Lorenz and Hénon attractors, though not uniformly hyperbolic, are the prototypes of the observed chaos.</p>
+<h2 id="summary">Summary</h2>
+<p>Chaos is the conjunction of sensitive dependence on the initial condition — there is $\delta>0$ such that every point has arbitrarily close companions whose orbits separate by $\delta$ at some time — with recurrence. <strong>Devaney chaos</strong> requires topological transitivity, dense periodic points and sensitivity; on a perfect compact metric space transitivity and dense periodic points already imply sensitivity, by the theorem of Banks–Brooks–Cairns–Davis–Stacey. <strong>Li–Yorke chaos</strong> requires an uncountable set whose pairs are $\delta$-scrambled ($\liminf$ of the distance $0$ and $\limsup$ above $\delta$); positive topological entropy implies Li–Yorke chaos, by Blanchard–Glasner–Kolyada, while Smítal's zero-entropy interval map is Li–Yorke chaotic, so the converse fails; the horseshoe, the doubling map and the shifts realise all the notions, and the symbolic models belong. The <strong>attractors</strong> are the compact transitive invariant sets with a trapping region and an open bas; the <strong>Milnor attractor</strong> relaxes the topological basin to a positive-measure condition; and a <strong>strange attractor</strong> is an attractor that is not a finite union of submanifolds, has sensitive dependence and carries an invariant measure with a positive exponent. The hyperbolic attractors — the solenoid, the Plykin and the DA attractors — the <strong>Lorenz attractor</strong>, whose geometric model of Guckenheimer and Williams is a singular hyperbolic attractor and which the theorem of Tucker proves to be a robust strange attractor of the system $\dot x=\sigma(y-x)$, $\dot y=x(\rho-z)-y$, $\dot z=xy-\beta z$ at $\sigma=10$, $\rho=28$, $\beta=\frac83$, and the <strong>Hénon attractor</strong> of the map $(x,y)\mapsto(1-ax^2+y,bx)$ at $a=1.4$, $b=0.3$ are the examples.</p>
+<p>The <strong>Hausdorff dimension</strong> $\dim_HA$ is the critical exponent of the Hausdorff measure, the <strong>box dimension</strong> counts the covering sets, and $\dim_H\le\underline{\dim}_B\le\overline{\dim}_B$; the middle-third Cantor set has dimension $\log2/\log3=0.630929\ldots$. The <strong>Kaplan–Yorke number</strong> $D_{KY}=j+(\lambda_1+\cdots+\lambda_j)/|\lambda_{j+1}|$ is conjectured to be the Hausdorff dimension of a hyperbolic attractor and is proved to be so, for surface diffeomorphisms and SRB measures, by the dimension theory of Ledrappier and Young; for the Hénon attractor the exponents satisfy $\lambda_1+\lambda_2=\log|b|$ exactly and $D_{KY}=1.2583$, in agreement with the numerical box dimension $\approx1.26$. The statistics of a strange attractor are carried by its <strong>SRB (physical) measure</strong>, ergodic and mixing in the standard examples, with Pesin's formula $h_\mu=\sum\lambda_i^+$; the positivity of the exponent gives positive entropy and hence Li–Yorke chaos, and the entropy, the exponents and the dimension are the three quantitative invariants of the attractor, linked by Pesin's formula and the Kaplan–Yorke formula.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta$</td>
+<td>sensitivity constant; scrambling constant</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>scrambled set of Li–Yorke chaos</td>
+</tr>
+<tr>
+<td>$A$, $U$</td>
+<td>attractor and trapping region</td>
+</tr>
+<tr>
+<td>$\omega(x)$</td>
+<td>limit set, defining the basin</td>
+</tr>
+<tr>
+<td>$\dim_H$, $\dim_B$</td>
+<td>Hausdorff and box dimension</td>
+</tr>
+<tr>
+<td>$H^s$, $H^s_\delta$</td>
+<td>Hausdorff measure and its outer approximation</td>
+</tr>
+<tr>
+<td>$N_\delta(A)$</td>
+<td>least number of $\delta$-sets covering $A$</td>
+</tr>
+<tr>
+<td>$\lambda_1\ge\cdots\ge\lambda_d$</td>
+<td>Lyapunov exponents</td>
+</tr>
+<tr>
+<td>$D_{KY}$</td>
+<td>Kaplan–Yorke number</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>SRB (physical) measure</td>
+</tr>
+<tr>
+<td>$h_\mu$</td>
+<td>measure-theoretic entropy</td>
+</tr>
+<tr>
+<td>$\sigma,\rho,\beta$</td>
+<td>parameters of the Lorenz system</td>
+</tr>
+<tr>
+<td>$a,b$</td>
+<td>parameters of the Hénon map</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>middle-third Cantor set</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John Banks, Jeffrey Brooks, Grant Cairns, Gary Davis and Peter Stacey, "On Devaney's definition of chaos", <em>American Mathematical Monthly</em> 99 (1992), 332–334, for the theorem that transitivity and dense periodic points imply sensitivity.</li>
+<li>Tien-Yien Li and James A. Yorke, "Period three implies chaos", <em>American Mathematical Monthly</em> 82 (1975), 985–992, for Li–Yorke chaos and the scrambled sets.</li>
+<li>François Blanchard, Eli Glasner and Sergiy Kolyada, "On Li–Yorke pairs", <em>Journal für die reine und angewandte Mathematik</em> 547 (2002), 51–68, for the theorem that positive entropy implies Li–Yorke chaos.</li>
+<li>Jaroslav Smítal, "Chaotic functions with zero topological entropy", <em>Transactions of the American Mathematical Society</em> 297 (1986), 269–282, for the zero-entropy Li–Yorke chaotic interval maps.</li>
+<li>John Guckenheimer and Philip Holmes, <em>Nonlinear Oscillations, Dynamical Systems, and Bifurcations of Vector Fields</em> (Springer, 1983), for the geometric Lorenz model and the analysis of the Lorenz equations.</li>
+<li>Warwick Tucker, "A rigorous ODE solver and Smale's 14th problem", <em>Foundations of Computational Mathematics</em> 2 (2002), 53–117, for the proof that the Lorenz attractor is a genuine strange attractor.</li>
+<li>Michael Benedicks and Lennart Carleson, "The dynamics of the Hénon map", <em>Annals of Mathematics</em> 133 (1991), 73–169, for the existence of the strange attractor of the Hénon family.</li>
+<li>Michael Benedicks and Lai-Sang Young, "Sinai–Bowen measures for certain Hénon maps", <em>Inventiones Mathematicae</em> 112 (1993), 541–576, for the SRB measure and the dimension of the Hénon attractor.</li>
+<li>François Ledrappier and Lai-Sang Young, "The metric entropy of diffeomorphisms I, II", <em>Annals of Mathematics</em> 122 (1985), 509–574, and "Dimension formula for random transformations", <em>Communications in Mathematical Physics</em> 117 (1988), 529–548, for the dimension formula and the Kaplan–Yorke conjecture.</li>
+<li>Kenneth Falconer, <em>Fractal Geometry: Mathematical Foundations and Applications</em> (Wiley, 1990), for the Hausdorff and box dimensions and the self-similar sets.</li>
+<li>James C. Robinson, <em>Dimensions, Embeddings, and Attractors</em> (Cambridge University Press, 2011), for the theory of the dimension of attractors and the Lyapunov exponents.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

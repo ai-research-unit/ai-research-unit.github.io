@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Dynamical Systems — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="smooth-dynamical-systems"><strong>Smooth Dynamical Systems</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>smooth dynamical system</strong> is a smooth manifold $M$ together with a smooth vector field $X$ on it, or a diffeomorphism $f:M\to M$; the continuous-time system produced by the vector field is its <strong>flow</strong> $\varphi_t$, the one-parameter group of diffeomorphisms obtained by solving $\dot x=X(x)$, and the discrete-time system produced by the diffeomorphism is the iteration of $f$. Unlike the topological theory, which assumes only continuity, the smooth theory has a derivative at every point, and the derivative linearises the system: near a fixed point the flow is governed by the spectrum of $DX(p)$, near a periodic orbit by the derivatives of the return map, and the fundamental theorems — the straightening lemma, the linearisation theorem of Hartman and Grobman, the stable manifold theorem, the Poincaré–Bendixson theorem in the plane and the theory of structural stability and genericity — all rest on the analysis of that derivative. The hyperbolicity that arises when no eigenvalue of the linearisation is neutral is the subject, to which this article hands over the stable manifold theorem, the Anosov systems, the Axiom A theory and the measure of maximal entropy; here the smooth foundations, the local and global structure of flows in low dimension, the stability theory and the genericity of the qualitative behaviour are developed.</p>
+<p>The article begins with vector fields and flows: the existence and uniqueness of the integral curve through a point, the local flow and the group property, the completeness of the flow, and the straightening lemma that makes every non-singular point look like a translation locally. It continues with the fixed points, their linearisations, the periodic orbits and their return maps, the Floquet theory of the linearised equation along a periodic orbit, and the statement of the Hartman–Grobman theorem, with the details deferred. It then treats stability: the Lyapunov stability and asymptotic stability, the Lyapunov functions and the invariance principle of LaSalle, the exponential stability of a linear system in terms of the spectrum, and the converse theorem of Lyapunov that builds a quadratic Lyapunov function from the resolvent. The planar theory follows: the index of an isolated equilibrium, the Poincaré–Hopf theorem and the Poincaré–Bendixson theorem, with the Dulac criterion and the classification of the limit sets of a planar flow. The article closes with structural stability and genericity — the Whitney topology, the Kupka–Smale theorem on the genericity of hyperbolicity and transversality, the closing lemma of Pugh, the stability conjecture and the suspension and cross-section constructions that identify the discrete and the continuous theories.</p>
+<p>The smooth manifolds, the tangent bundle, the vector fields, the differential forms and the flows of vector fields are those of <em>Smooth Manifolds and Differential Geometry</em>; the transversality, the Sard theorem and the jet transversality are those of <em>Differential Topology</em>; the smooth maps with the Whitney topologies are standard and are not developed here. The existence and uniqueness of the solutions of the differential equation, the dependence on the initial conditions and on parameters, the Floquet theory of the linear equation with periodic coefficients and the variational equation are those of <em>Ordinary Differential Equations</em>, where the theory of a first-order system is developed; the Hamiltonian and Lagrangian formulations are those of <em>Lagrangian and Hamiltonian Systems</em>. The invariant measures, the ergodicity and the entropy of the smooth systems are those of <em>Ergodic Theory</em>, and the topological notions used here are those of <em>Topological Dynamics</em>. The hyperbolicity, the Anosov systems, the Axiom A theory, the Gibbs measures, the bifurcations of the families of vector fields and the geodesic flow lie outside this article.</p>
+<p>No physics is invoked.</p>
+<h2 id="vector-fields-and-flows">Vector Fields and Flows</h2>
+<h3 id="integral-curves-and-the-flow">Integral Curves and the Flow</h3>
+<p><strong>Definition.</strong> Let $M$ be a smooth manifold and let $\mathfrak X(M)$ be the space of smooth vector fields on $M$. An <strong>integral curve</strong> of $X \in\mathfrak X(M)$ through $p \in M$ is a smooth curve $\gamma:I\to M$ on an interval $I \ni0$ with $\gamma(0)=p$ and $\gamma'(t)=X(\gamma(t))$; the <strong>local flow</strong> of $X$ is the map $\varphi:\mathcal D\to M$, $\mathcal D$ an open neighbourhood of $\{0\}\times M$ in $\mathbb{R}\times M$, defined by $\varphi(t,p)=\gamma_p(t)$ for the maximal integral curve $\gamma_p$ through $p$. The vector field is <strong>complete</strong> if $\mathcal D=\mathbb{R}\times M$, and then $\varphi_t=\varphi(t,\cdot)$ is a one-parameter group of diffeomorphisms: $\varphi_0=\mathrm{id}$, $\varphi_{s+t}=\varphi_s\circ\varphi_t$, and each $\varphi_t$ is a diffeomorphism of $M$ with inverse $\varphi_{-t}$.</p>
+<p><strong>Theorem (existence, uniqueness and smooth dependence).</strong> Let $M$ be a smooth manifold and $X \in\mathfrak X(M)$. Then for every $p \in M$ there is a unique maximal integral curve through $p$, the domain $\mathcal D$ of the flow is open, the flow $\varphi:\mathcal D\to M$ is smooth, and for every $(t,p) \in\mathcal D$ the derivative $D_p\varphi_t$ is the fundamental matrix of the <strong>variational equation</strong></p>
+<p>$$
+\dot\Phi(t)=DX(\varphi_t(p))\,\Phi(t), \qquad \Phi(0)=\mathrm{id},
+$$</p>
+<p>so the derivative of the flow solves the linearised equation along the orbit. If $M$ is compact, every vector field is complete.</p>
+<p><em>Proof.</em> In a coordinate chart the equation $\dot x=X(x)$ is a first-order system with a smooth right-hand side, and the existence, uniqueness and smooth dependence on the initial condition are the standard theorems of <em>Ordinary Differential Equations</em>; the openness of $\mathcal D$ and the maximality of the curves are the continuation properties of the solutions. For the compact case one covers $M$ by finitely many charts and uses the local existence time, which is bounded below by the compactness. $\square$</p>
+<p><strong>Example (linear and rotational flows).</strong> (i) On $\mathbb{R}^n$ the constant vector field $X(x)=Ax$ has the complete flow $\varphi_t(x)=e^{tA}x$, and the flow is a group of linear maps; the orbit structure is governed by the Jordan form of $A$.</p>
+<p>(ii) On $\mathbb{C}\cong\mathbb{R}^2$ the vector field $X(z)=iz$ has the flow $\varphi_t(z)=e^{it}z$, the rotation of the plane; its orbits are the circles centred at the origin and the fixed point at the origin, and the flow is periodic of period $2\pi$.</p>
+<p>(iii) On the torus $\mathbb{T}^2$ the constant vector field $X(\theta_1,\theta_2)=(1,\alpha)$ has the flow $\varphi_t(\theta_1,\theta_2)=(\theta_1+t,\theta_2+\alpha t)$; the orbits are dense when $\alpha$ is irrational and periodic when $\alpha$ is rational, which is the Kronecker flow of <em>Topological Dynamics</em>.</p>
+<p><strong>Theorem (straightening lemma).</strong> Let $X \in\mathfrak X(M)$ and let $p \in M$ with $X(p)\neq0$. Then there are coordinates $(x_1,\dots,x_n)$ on a neighbourhood of $p$ in which $X=\partial/\partial x_1$, and the flow is the translation $x\mapsto(x_1+t,x_2,\dots,x_n)$.</p>
+<p><em>Proof.</em> Choose a hypersurface $N$ through $p$ transverse to $X(p)$ and coordinates $y_2,\dots,y_n$ on $N$; the map $(t,y_2,\dots,y_n)\mapsto\varphi_t(0,y_2,\dots,y_n)$ is a local diffeomorphism at the origin by the inverse function theorem, because its derivative at $p$ is invertible with $X(p)$ as the first column; in these coordinates the flow is the translation in $t$ and the vector field is the first coordinate field. $\square$</p>
+<h3 id="invariant-sets-and-limit-sets">Invariant Sets and Limit Sets</h3>
+<p><strong>Definition.</strong> A subset $A \subseteq M$ is <strong>invariant</strong> for the flow if $\varphi_t(A)\subseteq A$ for all $t$ (and $\varphi_t(A)=A$ when the flow is complete and invertible), and a <strong>first integral</strong> of $X$ is a smooth function $H$ with $XH=0$, that is, constant along the orbits. The <strong>$\omega$-limit set</strong> of $p$ for the flow is</p>
+<p>$$
+\omega(p)=\bigcap_{t\ge0}\overline{\{\varphi(s,p):s\ge t\}},
+$$</p>
+<p>and the $\alpha$-limit set is defined with $t\to-\infty$.</p>
+<p><strong>Proposition.</strong> Let $M$ be compact and $X \in\mathfrak X(M)$. Then $\omega(p)$ is nonempty, compact, connected and invariant, and it consists of the points that are limits of $\varphi(t_k,p)$ for a sequence $t_k\to+\infty$; if $H$ is a first integral, then $H$ is constant on $\omega(p)$.</p>
+<p><em>Proof.</em> The sets $\overline{\varphi([t,\infty)\times\{p\})}$ form a decreasing family of nonempty compact connected sets, so their intersection is nonempty, compact and connected; the invariance follows from the continuity of the flow and the group property; the constancy of a first integral on the limit set follows by continuity along the orbit. $\square$</p>
+<h2 id="fixed-points-periodic-orbits-and-linearisation">Fixed Points, Periodic Orbits and Linearisation</h2>
+<h3 id="fixed-points-and-the-linearisation">Fixed Points and the Linearisation</h3>
+<p><strong>Definition.</strong> A point $p \in M$ is a <strong>fixed point</strong> (or equilibrium) of $X$ if $X(p)=0$; the <strong>linearisation</strong> at $p$ is the endomorphism $A=DX(p)$ of $T_pM$, and $p$ is <strong>hyperbolic</strong> if no eigenvalue of $A$ has zero real part. The <strong>stable</strong> and <strong>unstable</strong> subspaces of a hyperbolic fixed point are the $A$-invariant subspaces</p>
+<p>$$
+E^s=\bigoplus_{\operatorname{Re}\lambda<0}\ker(A-\lambda)^{\nu(\lambda)},
+\qquad
+E^u=\bigoplus_{\operatorname{Re}\lambda>0}\ker(A-\lambda)^{\nu(\lambda)} ,
+$$</p>
+<p>and the <strong>centre subspace</strong> $E^c$ collects the eigenvalues on the imaginary axis.</p>
+<p><strong>Theorem (Hartman–Grobman).</strong> Let $p$ be a hyperbolic fixed point of $X \in\mathfrak X(M)$. Then there is a homeomorphism taking a neighbourhood of $p$ to a neighbourhood of the origin in $T_pM$ that carries the flow of $X$ to the flow of the linear field $y\mapsto Ay$ with $A=DX(p)$; in particular the local topological structure of the flow at a hyperbolic fixed point is that of its linearisation.</p>
+<p><em>Proof (sketch).</em> One writes the equation as $\dot x=Ax+g(x)$ with $g=O(\|x\|^2)$ and constructs the homeomorphism as a limit of conjugacies between the nonlinear flow truncated at large frequency and the linear flow, using the hyperbolicity to invert $A$ on the complement of the neutral spectrum and a fixed point argument in the Banach space of bounded maps. The details are the standard proof, cited below; the refinement to a $C^1$ linearisation fails in general, and the obstruction is the resonance of the eigenvalues. $\square$</p>
+<p><strong>Theorem (stable manifold theorem).</strong> Let $p$ be a hyperbolic fixed point of $X$ with $A=DX(p)$ and decomposition $T_pM=E^s\oplus E^u$. Then there are smooth <em>immersed</em> submanifolds $W^s(p)$ and $W^u(p)$, tangent at $p$ to $E^s$ and $E^u$, with</p>
+<p>$$
+W^s(p)=\{q:\varphi_t(q)\to p \text{ as } t\to+\infty\}, \qquad W^u(p)=\{q:\varphi_t(q)\to p \text{ as } t\to-\infty\},
+$$</p>
+<p>of the same dimensions as $E^s$ and $E^u$; they are invariant and their tangent spaces vary smoothly. The theorem, its global form and the Hadamard–Perron construction of the manifolds are developed.</p>
+<h3 id="periodic-orbits-and-the-return-map">Periodic Orbits and the Return Map</h3>
+<p><strong>Definition.</strong> A point $p$ is <strong>periodic</strong> of period $T>0$ if $\varphi_T(p)=p$ and $\varphi_t(p)\neq p$ for $0<t<T$; the orbit $\{\varphi_t(p):t \in\mathbb{R}\}$ is a <strong>periodic orbit</strong> (or closed orbit). A <strong>cross-section</strong> at $p$ is a smooth hypersurface $\Sigma$ through $p$ transverse to $X(p)$; the <strong>Poincaré return map</strong> (first return map) $P:\Sigma_0\to\Sigma$ is defined on a neighbourhood $\Sigma_0$ of $p$ in $\Sigma$ by $P(q)=\varphi_{\tau(q)}(q)$, where $\tau(q)>0$ is the first return time to $\Sigma$.</p>
+<p><strong>Theorem (return map).</strong> Let $p$ be a periodic point of period $T$ and let $\Sigma$ be a cross-section at $p$. Then the return map $P$ is a smooth diffeomorphism from a neighbourhood of $p$ in $\Sigma$ onto its image, its derivative at $p$ is obtained from $D_p\varphi_T$ by restricting to $T_p\Sigma$ and projecting along $X(p)$; the <strong>Floquet multipliers</strong> of the periodic orbit are the eigenvalues of $D_p\varphi_T$ on the full tangent space $T_pM$, one of which equals $1$, the eigenvector being $X(p)$, so that the nontrivial multiplier data are the $n-1$ eigenvalues of the derivative of the return map on $T_p\Sigma$, and the orbit is <strong>hyperbolic</strong> when those $n-1$ multipliers lie off the unit circle. The linearised equation along the periodic orbit, its fundamental matrix and the Floquet multipliers are the Floquet theory of an equation with periodic coefficients, developed in <em>Ordinary Differential Equations</em>.</p>
+<p><strong>Theorem (Poincaré section).</strong> Let $\Sigma \subseteq M$ be a codimension-one submanifold transverse to a complete flow $\varphi_t$ on $M$. Then the return map $P$ is defined on the set of points of $\Sigma$ whose forward orbit meets $\Sigma$ again, and the qualitative behaviour of the flow near $\Sigma$ is determined by that of $P$: periodic orbits of the flow crossing $\Sigma$ correspond to periodic points of $P$, invariant sets correspond to invariant sets, and the stability of a periodic orbit is that of the corresponding fixed point of $P$.</p>
+<p><em>Proof.</em> The existence and smoothness of the return time $\tau(q)$ follow from the transversality of $\Sigma$ to $X$ and the implicit function theorem applied to the equation $h(\varphi_\tau(q))=0$, where $h$ is a local defining function of $\Sigma$ with $dh\neq0$, which is solvable near the return time because $\frac{\partial}{\partial\tau}h(\varphi_\tau(q))=dh(X)\neq0$ by transversality; the correspondence of the invariant sets is by definition of the return map, and the derivative computation is the chain rule. $\square$</p>
+<p><strong>Example (the linear flow on the torus and the rotation).</strong> The constant flow on $\mathbb{T}^2$ with vector field $(1,\alpha)$ has the cross-section $\{\theta_1=0\}=\mathbb{T}$ and the return map the rotation $R_\alpha$ of the circle; the periodic orbits correspond to the periodic points of $R_\alpha$, and the topological structure of the flow is that of the suspension of $R_\alpha$, as constructed below.</p>
+<h2 id="stability-and-lyapunov-functions">Stability and Lyapunov Functions</h2>
+<h3 id="lyapunov-stability">Lyapunov Stability</h3>
+<p><strong>Definition.</strong> Let $p$ be a fixed point of $X$ and let $d$ be a metric inducing the topology of $M$. The point is <strong>Lyapunov stable</strong> if for every $\epsilon>0$ there is $\delta>0$ such that $d(q,p)<\delta$ implies $d(\varphi_t(q),p)<\epsilon$ for all $t \ge0$; it is <strong>asymptotically stable</strong> if it is Lyapunov stable and there is $\delta>0$ such that $d(q,p)<\delta$ implies $\varphi_t(q)\to p$ as $t\to+\infty$; it is <strong>exponentially stable</strong> if the convergence is bounded by $Ce^{-\lambda t}$ with $\lambda>0$.</p>
+<p><strong>Theorem (linear stability).</strong> Let $p$ be a fixed point of $X$ and $A=DX(p)$. If every eigenvalue of $A$ has negative real part, then $p$ is exponentially stable; if some eigenvalue has positive real part, then $p$ is unstable; if eigenvalues lie on the imaginary axis the linearisation decides nothing, and the stability depends on the nonlinear terms.</p>
+<p><em>Proof.</em> In coordinates the equation is $\dot x=Ax+g(x)$ with $g=O(\|x\|^2)$. If the spectrum lies in the open left half-plane, there is an inner product whose quadratic form $x\mapsto\langle x,x\rangle$ satisfies $\frac{d}{dt}\langle x,x\rangle\le-\lambda\|x\|^2$ for small $\|x\|$, which gives the exponential decay; a positive eigenvalue produces growth along the corresponding unstable manifold, whence instability. The neutral case is decided by the higher-order terms: the systems $\dot x=x^2$ and $\dot x=-x^3$ on the line have the same linearisation at the origin and different stability. $\square$</p>
+<p><strong>Theorem (Lyapunov functions).</strong> Let $p$ be a fixed point and let $V:U\to[0,\infty)$ be a smooth function on a neighbourhood $U$ of $p$ with $V(p)=0$, $V(q)>0$ for $q \neq p$, and $\dot V(q)=\langle\nabla V(q),X(q)\rangle\le0$. Then $p$ is Lyapunov stable. If in addition $\dot V<0$ off $p$, then $p$ is asymptotically stable.</p>
+<p><em>Proof.</em> The function $V$ is nonincreasing along orbits, so the sublevel sets $\{V\le\alpha\}$ are invariant; for each $\epsilon$ choose $\alpha$ with $\{V\le\alpha\}\subseteq B(p,\epsilon)$, which is possible by the continuity of $V$ and the fact that $p$ is the strict minimum, and this gives stability. The strict decrease in the second case forces every orbit in a small sublevel set to converge to $p$ by a compactness argument. $\square$</p>
+<p><strong>Theorem (LaSalle invariance principle).</strong> Let $V$ be a smooth function on a neighbourhood of a compact invariant set $K$ with $\dot V\le0$ on $K$, and let $E=\{q \in K:\dot V(q)=0\}$; let $M$ be the largest invariant subset of $E$. Then every orbit in $K$ converges to $M$ as $t\to+\infty$.</p>
+<p><em>Proof.</em> The function $V$ is nonincreasing and bounded below, so it converges along an orbit to a limit $c$; the $\omega$-limit set is nonempty, compact, invariant and contained in $V^{-1}(c)$, and on it $\dot V=0$ because $V$ is constant; hence $\omega$-limit sets are contained in $M$, which is the assertion. $\square$</p>
+<p><strong>Theorem (converse of Lyapunov).</strong> Let $p$ be an exponentially stable fixed point of $X$ and let $A=DX(p)$ have its spectrum in the open left half-plane. Then for every symmetric positive definite matrix $Q$ there is a unique symmetric positive definite $P$ with $A^{\mathsf T}P+PA=-Q$, and $V(x)=x^{\mathsf T}Px$ is a Lyapunov function with $\dot V\le-\lambda\|x\|^2$ on a neighbourhood of $p$.</p>
+<p><em>Proof.</em> The Lyapunov equation has the solution $P=\int_0^\infty e^{tA^{\mathsf T}}Qe^{tA}\,dt$, convergent because the spectrum is in the left half-plane, and the stated inequality follows by differentiating $V$ along the linearised field and then using the smoothness of $X$ to absorb the nonlinear terms in a small neighbourhood. $\square$</p>
+<h2 id="the-poincarebendixson-theory-in-the-plane">The Poincaré–Bendixson Theory in the Plane</h2>
+<h3 id="the-index-of-an-equilibrium">The Index of an Equilibrium</h3>
+<p><strong>Definition.</strong> Let $X$ be a smooth vector field on an open set $U \subseteq\mathbb{R}^2$ and let $p$ be an isolated zero of $X$. The <strong>index</strong> $\operatorname{ind}_p(X)$ is the degree of the map $z\mapsto X(z)/|X(z)|$ from a small positively oriented circle around $p$ to the unit circle; equivalently, the winding number of $X$ along that circle. For a domain $\Omega$ with smooth boundary and finitely many zeros in its interior, $\operatorname{ind}_\Omega(X)$ is the winding number of $X$ along $\partial\Omega$.</p>
+<p><strong>Theorem (index and the Poincaré–Hopf theorem).</strong> (i) The index of an isolated zero is an integer, independent of the circle chosen small enough, and invariant under smooth changes of coordinates and under homotopies of $X$ that do not introduce zeros on the circle. (ii) If $\Omega$ is a domain with finitely many zeros of $X$ in its interior and no zeros on its boundary, then</p>
+<p>$$
+\operatorname{ind}_\Omega(X)=\sum_{p:X(p)=0}\operatorname{ind}_p(X).
+$$</p>
+<p>(iii) If $M$ is a closed oriented surface and $X$ a smooth vector field on $M$ with finitely many zeros, then the sum of the indices of the zeros equals the Euler characteristic $\chi(M)$; in particular the sphere has no nonvanishing vector field, and the index of a source, a sink or a saddle is $+1,+1,-1$ respectively. The theorem is the Poincaré–Hopf theorem of <em>Differential Topology</em> and <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, where the degree and the winding number are developed.</p>
+<h3 id="the-poincarebendixson-theorem">The Poincaré–Bendixson Theorem</h3>
+<p><strong>Theorem (Poincaré–Bendixson).</strong> Let $X$ be a smooth vector field on an open set $U \subseteq\mathbb{R}^2$ and let $p \in U$ be such that $\varphi_t(p)$ is defined for all $t \ge0$ and its forward orbit is contained in a compact subset of $U$. If $\omega(p)$ contains no fixed point, then $\omega(p)$ is a periodic orbit.</p>
+<p><strong>Corollary (trichotomy of limit sets).</strong> For a planar flow, every compact $\omega$-limit set either contains a fixed point, or is a periodic orbit, or consists of fixed points together with orbits connecting them.</p>
+<p><em>Proof (sketch).</em> The limit set is compact, connected and invariant. If it contains no fixed point, take $q \in\omega(p)$; the orbit of $q$ is contained in $\omega(p)$ and meets a small transverse segment $\Sigma$ at $q$. The orbit returns to $\Sigma$ infinitely often, and the monotonicity of the sequence of intersections along $\Sigma$ — a consequence of the Jordan curve theorem in the plane — forces the intersections to converge to $q$; hence the orbit is periodic, and the whole limit set is that periodic orbit. The corollary follows by applying the argument to a limit set that contains a fixed point and otherwise choosing a point whose orbit returns to a transverse segment. $\square$</p>
+<p><strong>Theorem (Dulac's criterion).</strong> Let $X$ be a smooth vector field on a simply connected open set $U \subseteq\mathbb{R}^2$. If there is a smooth positive function $g$ on $U$ with $\operatorname{div}(gX)$ of one sign and not identically zero on $U$, then $X$ has no periodic orbit in $U$.</p>
+<p><em>Proof.</em> A periodic orbit bounds a disc $D$ in $U$ by the Jordan curve theorem; the divergence theorem gives $\int_D\operatorname{div}(gX)\,dx=0$ because the boundary integral of $gX$ along the periodic orbit vanishes, contradicting the strict one-signedness of the divergence. $\square$</p>
+<p><strong>Example (limit cycle).</strong> The vector field in polar coordinates $\dot r=r(1-r)$, $\dot\theta=1$ has the unit circle $r=1$ as a periodic orbit, and every orbit with $r>0$ converges to it as $t\to+\infty$; the circle is a <strong>limit cycle</strong>, that is, a periodic orbit that is the $\omega$-limit set of a point outside it. The linearisation of the return map around the circle has multiplier $e^{-2\pi}<1$, so the cycles attract, and the example is the standard model of a stable limit cycle.</p>
+<h2 id="structural-stability-and-genericity">Structural Stability and Genericity</h2>
+<h3 id="the-whitney-topology-and-structural-stability">The Whitney Topology and Structural Stability</h3>
+<p><strong>Definition.</strong> For $r \in\mathbb{N}_0\cup\{\infty\}$ the <strong>Whitney $C^r$ topology</strong> on the space $\mathfrak X^r(M)$ of $C^r$ vector fields is the topology generated by the sets $\{Y:\|Y-X\|_{C^r}<\epsilon\}$ with respect to a finite atlas and the norms of the derivatives up to order $r$; the space of $C^r$ diffeomorphisms carries the induced $C^r$ topology. A vector field $X$ is <strong>structurally stable</strong> if there is a neighbourhood $\mathcal U$ of $X$ in the $C^1$ topology such that every $Y \in\mathcal U$ is topologically conjugate to $X$, that is, there is a homeomorphism $h$ with $h\circ\varphi^X_t=\varphi^Y_t\circ h$ for all $t$; the diffeomorphism version is defined with conjugacy of the maps.</p>
+<p><strong>Theorem (Kupka–Smale).</strong> For $r \ge1$ there is a residual (dense $G_\delta$) subset of $\mathfrak X^r(M)$ consisting of vector fields all of whose fixed points and periodic orbits are hyperbolic and whose stable and unstable manifolds intersect transversely; such a field is called <strong>Kupka–Smale</strong>. The proof uses the jet transversality theorem of <em>Differential Topology</em>: hyperbolicity of the periodic orbits is generated by small perturbations of the derivatives along the orbits, and the transversality of the invariant manifolds by the Sard and Thom transversality theorems applied to the evaluation maps.</p>
+<p><strong>Theorem (the closing lemma; Pugh).</strong> Let $p$ be a point that is recurrent for $X$ in the sense that it lies in its own $\omega$-limit set, and let $r \ge1$. Then arbitrarily $C^1$-close to $X$ there is a vector field $Y$ having a periodic orbit through $p$. Consequently, for a residual subset of $\mathfrak X^1(M)$, the periodic orbits are dense in the non-wandering set, which is the general density theorem.</p>
+<p>The closing lemma is the tool by which genericity statements about periodic orbits are proved; its proof is delicate and is cited below. The corresponding statements for diffeomorphisms are the closing lemma of Pugh and the $C^1$-generic theory of the dynamics.</p>
+<p><strong>Theorem (stability conjecture).</strong> A $C^1$ diffeomorphism of a compact manifold is structurally stable if and only if it satisfies Axiom A and the strong transversality condition; structural stability is an open property in the $C^1$ topology, and the analogous statements hold for flows. The Axiom A condition — that the non-wandering set is hyperbolic and that the periodic points are dense in it — and the spectral decomposition of the non-wandering set are developed; the sufficiency is due to Robbin and Robinson and the necessity to Mañé, so that the conjecture of Palis and Smale is settled for diffeomorphisms in the $C^1$ topology. For flows the statement needs a modification: the geometric Lorenz attractor is structurally stable although it is not hyperbolic, the singularity being an indispensable part of the attractor, so Axiom A is not necessary for a flow either, and the classification of the robust attractors of a flow must allow the singularly hyperbolic ones. The Lorenz attractor and its structural stability belong.</p>
+<p><strong>Example (Morse–Smale and the horseshoe).</strong> (i) A <strong>Morse–Smale</strong> vector field has a non-wandering set consisting of finitely many hyperbolic fixed points and periodic orbits, and the stable and unstable manifolds of distinct orbits meet transversely; the gradients of Morse functions are the basic examples and the invariant set is a finite union of points and closed orbits.</p>
+<p>(ii) The <strong>Smale horseshoe</strong> is a diffeomorphism of the disc that stretches, folds and reinserts it so that the invariant set is a Cantor set on which the map is conjugate to the full two-sided two-shift; it is the model of a hyperbolic set with infinitely many periodic orbits and is the first example of the chaotic behaviour treated .</p>
+<h3 id="suspensions-and-cross-sections">Suspensions and Cross-Sections</h3>
+<p><strong>Definition.</strong> Let $f:N\to N$ be a diffeomorphism and let $\tau:N\to(0,\infty)$ be a smooth function (the <strong>roof</strong>). The <strong>suspension</strong> of $f$ with roof $\tau$ is the flow on the quotient $M=\{(x,s):x \in N,\ 0\le s\le\tau(x)\}/\sim$ with $(x,\tau(x))\sim(f(x),0)$, defined by translation in $s$ modulo the identification.</p>
+<p><strong>Theorem (suspension and return map).</strong> The suspension of $(f,\tau)$ is a smooth flow whose return map to the section $N\times\{0\}$ is $f$, and whose periods are the sums $\sum_{k}\tau(f^kx)$ over the periodic orbits of $f$. Conversely, if $X$ is a complete flow on $M$ and $\Sigma \subseteq M$ is a closed hypersurface transverse to $X$ meeting every orbit, then the return map $P$ of $\Sigma$ is a diffeomorphism and the flow is the suspension of $P$ with the return time as roof. The two constructions are inverse to one another up to conjugacy, and they identify the dynamics of a flow with that of the discrete system of its return map.</p>
+<p><em>Proof.</em> The quotient is a smooth manifold because $f$ is a diffeomorphism and $\tau$ is smooth; the flow is constructed from the translation in $s$, and the identification produces a smooth vector field transverse to the section, whose return map is manifestly $f$. The converse is the content of the Poincaré section theorem together with the smoothness of the return time. $\square$</p>
+<p><strong>Corollary (transfer of properties).</strong> The suspension of a hyperbolic diffeomorphism is a hyperbolic flow, the suspension of an Anosov diffeomorphism is an Anosov flow, and the entropy of the suspension of $(P,\tau)$ with respect to an invariant measure $m$ of $P$ is $h_m(P)/\int\tau\,dm$ by Abramov's formula, so that the entropy per unit time is the entropy of the return map divided by its mean return time whenever the roof is constant; consequently the discrete and the continuous theories have the same catalogue of examples, and many results stated for a diffeomorphism have a flow version obtained by suspension. The precise statements about hyperbolicity, the Anosov property and the entropy belong and <em>Ergodic Theory</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A smooth dynamical system is a vector field $X$ on a smooth manifold $M$, whose <strong>flow</strong> $\varphi_t$ solves $\dot x=X(x)$ and is a one-parameter group of local diffeomorphisms; the local flow is smooth in $(t,p)$, the derivative $D_p\varphi_t$ satisfies the variational equation $\dot\Phi=DX(\varphi_t(p))\Phi$, and the flow is complete when $M$ is compact. The <strong>straightening lemma</strong> makes the flow a translation near every non-singular point, and the limit sets $\omega(p)$ are nonempty, compact, connected and invariant over a compact manifold. A fixed point is <strong>hyperbolic</strong> when no eigenvalue of $A=DX(p)$ is purely imaginary; the <strong>Hartman–Grobman theorem</strong> linearises the flow topologically at a hyperbolic fixed point, and the <strong>stable manifold theorem</strong> produces the invariant manifolds $W^s(p)$, $W^u(p)$ tangent to the stable and unstable subspaces, whose global theory belongs. A <strong>periodic orbit</strong> has a <strong>Poincaré return map</strong> on a transverse section, with derivative whose eigenvalues are the <strong>Floquet multipliers</strong>; one multiplier is $1$ and the orbit is hyperbolic when the others are off the unit circle.</p>
+<p>For stability, <strong>Lyapunov stability</strong> is proved from a <strong>Lyapunov function</strong> $V\ge0$ with $\dot V\le0$, asymptotic stability from the strict version, the <strong>LaSalle invariance principle</strong> from the largest invariant subset of $\{\dot V=0\}$, and the stability of a linear system is read from the spectrum of $A$, with the hyperbolic cases decided by the linearisation and the neutral cases by the higher-order terms; the <strong>converse theorem</strong> solves the Lyapunov equation $A^{\mathsf T}P+PA=-Q$. In the plane the <strong>index</strong> of an isolated zero of a vector field is an integer, the indices of the zeros in a domain add to the winding number of the field on the boundary, the sum of the indices on a closed surface is the Euler characteristic (<strong>Poincaré–Hopf</strong>), and the <strong>Poincaré–Bendixson theorem</strong> states that a compact $\omega$-limit set with no fixed point is a periodic orbit; <strong>Dulac's criterion</strong> excludes periodic orbits from a simply connected region carrying a positive factor $g$ with $\operatorname{div}(gX)$ of one sign.</p>
+<p>Structural stability in the <strong>Whitney $C^1$ topology</strong> means conjugacy with all nearby fields; the <strong>Kupka–Smale theorem</strong> gives a residual set of fields with hyperbolic periodic orbits and transversal intersections of their invariant manifolds, the <strong>closing lemma</strong> of Pugh turns recurrent points into periodic orbits under a small perturbation, and the <strong>stability conjecture</strong>, proved for diffeomorphisms by Robbin and Robinson for the sufficiency and by Mañé for the necessity, identifies the structurally stable diffeomorphisms with those satisfying Axiom A and strong transversality, a condition whose hyperbolic content is developed; for flows the characterisation fails, the geometric Lorenz attractor being structurally stable without being hyperbolic. The <strong>suspension</strong> of a diffeomorphism with a roof function is a flow whose return map is the diffeomorphism, and every flow with a closed transverse section is such a suspension, so the discrete and continuous theories share their examples; the <strong>Morse–Smale</strong> fields and the <strong>Smale horseshoe</strong> are the fundamental models of the finite and the infinite dynamical complexity respectively.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M$</td>
+<td>smooth manifold</td>
+</tr>
+<tr>
+<td>$\mathfrak X(M)$, $\mathfrak X^r(M)$</td>
+<td>smooth and $C^r$ vector fields</td>
+</tr>
+<tr>
+<td>$X$, $A=DX(p)$</td>
+<td>vector field and its linearisation</td>
+</tr>
+<tr>
+<td>$\varphi_t$, $\varphi(t,p)$</td>
+<td>flow of $X$</td>
+</tr>
+<tr>
+<td>$\mathcal D$</td>
+<td>domain of the local flow</td>
+</tr>
+<tr>
+<td>$E^s$, $E^u$, $E^c$</td>
+<td>stable, unstable, centre subspaces</td>
+</tr>
+<tr>
+<td>$W^s(p)$, $W^u(p)$</td>
+<td>stable and unstable manifolds</td>
+</tr>
+<tr>
+<td>$\Sigma$, $P$</td>
+<td>cross-section, Poincaré return map</td>
+</tr>
+<tr>
+<td>$T$, Floquet multipliers</td>
+<td>period and multipliers of a periodic orbit</td>
+</tr>
+<tr>
+<td>$V$, $\dot V$</td>
+<td>Lyapunov function and its derivative along $X$</td>
+</tr>
+<tr>
+<td>$\operatorname{ind}_p(X)$</td>
+<td>index of an isolated equilibrium</td>
+</tr>
+<tr>
+<td>$\chi(M)$</td>
+<td>Euler characteristic</td>
+</tr>
+<tr>
+<td>$\tau$, $N$</td>
+<td>roof function and base of a suspension</td>
+</tr>
+<tr>
+<td>$\Omega(X)$</td>
+<td>non-wandering set</td>
+</tr>
+<tr>
+<td>$C^r$ topology</td>
+<td>Whitney topology on fields and diffeomorphisms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Philip Hartman, "A lemma in the theory of structural stability of differential equations", <em>Proceedings of the American Mathematical Society</em> 11 (1960), 610–620, and David M. Grobman, "Homeomorphism of systems of differential equations", <em>Doklady Akademii Nauk SSSR</em> 128 (1959), 880–881, for the linearisation theorem at a hyperbolic equilibrium.</li>
+<li>Morris W. Hirsch, Charles C. Pugh and Michael Shub, <em>Invariant Manifolds</em> (Springer, 1977), for the stable manifold theorem and the Hadamard–Perron construction.</li>
+<li>Solomon Lefschetz, <em>Differential Equations: Geometric Theory</em> (Interscience, 1957), for the Poincaré–Bendixson theory and the index of a planar equilibrium.</li>
+<li>Philip Hartman, <em>Ordinary Differential Equations</em> (Wiley, 1964), for the existence theory, the variational equation and the Floquet theory.</li>
+<li>Ivan G. Malkin, <em>Theory of Stability of Motion</em> (United States Atomic Energy Commission, 1952), and Joseph P. LaSalle, "An extension of Liapunov's direct method", <em>Journal of Mathematical Analysis and Applications</em> 3 (1961), 434–444, for the Lyapunov stability theory and the invariance principle.</li>
+<li>Maurício M. Peixoto, "Structural stability on two-dimensional manifolds", <em>Topology</em> 1 (1962), 101–120, for the planar structural stability and the Morse–Smale theory.</li>
+<li>Jacob Palis and Stephen Smale, "Structural stability theorems", in <em>Global Analysis</em> (American Mathematical Society, 1970), 223–231, for the stability conjecture and the Axiom A theory.</li>
+<li>Ricardo Mañé, "A proof of the $C^1$ stability conjecture", <em>Publications Mathématiques de l'IHÉS</em> 66 (1988), 161–210, for the solution of the stability conjecture.</li>
+<li>John Guckenheimer and Robert F. Williams, "Structural stability of Lorenz attractors", <em>Publications Mathématiques de l'IHÉS</em> 50 (1979), 59–72, for the structural stability of a flow that is not hyperbolic, which modifies the stability conjecture in the continuous case.</li>
+<li>Charles C. Pugh, "The closing lemma", <em>American Journal of Mathematics</em> 89 (1967), 956–1009, and "An improved closing lemma and a general density theorem", <em>American Journal of Mathematics</em> 89 (1967), 1010–1021, for the closing lemma and the density of the periodic orbits.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

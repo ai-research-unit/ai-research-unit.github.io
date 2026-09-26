@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Norms and Seminorms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-norms-and-seminorms"><strong>List of Norms and Seminorms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the norms, seminorms and families of seminorms that the corpus uses, together with the completeness each one confers on the space it defines. A norm is a real-valued function on a vector space that is positive definite, homogeneous and satisfies the triangle inequality; a seminorm drops positive definiteness; a family of seminorms defines a locally convex topology without necessarily defining a norm. Each row names one such object, records the space or the class of spaces it acts on and the completeness it produces there, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The objects are grouped by the layer that introduces them, and the functions that look like norms and are not — seminorms that vanish on nonzero vectors, quasi-norms that fail the triangle inequality, norms that are not submultiplicative — are recorded beside them as non-examples.</p>
+<h2 id="norms-on-linear-spaces">Norms on Linear Spaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The space it defines, and the completeness it gives</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a norm $\lVert\cdot\rVert$</td>
+<td>a normed space; complete exactly when the space is Banach</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>the operator norm $\lVert T\rVert = \sup_{\lVert x\rVert\leq1}\lVert Tx\rVert$</td>
+<td>$B(X,Y)$; complete when $Y$ is complete</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>the inner-product norm $\lVert x\rVert = \langle x,x\rangle^{1/2}$</td>
+<td>an inner product space; complete exactly when it is a Hilbert space</td>
+<td><em>Banach and Hilbert Spaces</em></td>
+</tr>
+<tr>
+<td>the dual norm on $X^*$</td>
+<td>the dual space $X^* = B(X,\mathbb K)$; always complete</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>the quotient norm</td>
+<td>$X/M$ for a closed subspace $M$; complete when $X$ is</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>equivalence of norms</td>
+<td>finitely many norms on a finite-dimensional space are equivalent, so all give the same completeness</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="norms-on-sequence-and-function-spaces">Norms on Sequence and Function Spaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The space it defines, and the completeness it gives</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the $\ell^p$ norm $\lVert(x_n)\rVert_p$</td>
+<td>$\ell^p$; complete for $1 \leq p \leq \infty$</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>the supremum norm $\lVert f\rVert_\infty = \sup_x \lvert f(x)\rvert$</td>
+<td>$C(K)$, $C_b(X)$, $B(X,Y)$; complete when the target is complete</td>
+<td><em>Normed and Banach Spaces</em>; <em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the essential supremum norm</td>
+<td>$L^\infty(\mu)$; complete</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the $L^p$ norm $\lVert f\rVert_p$</td>
+<td>$L^p(\mu)$; complete for $1 \leq p \leq \infty$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the Sobolev norm $\lVert f\rVert_{W^{k,p}}$</td>
+<td>$W^{k,p}(\Omega)$; complete</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>the homogeneous Sobolev norm, and $p^* = np/(n-p)$</td>
+<td>the Sobolev conjugate exponent, with the embedding $W^{1,p}\hookrightarrow L^{p^*}$</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>the Bessel-potential norm $\lVert(1-\Delta)^{s/2}f\rVert_p$</td>
+<td>$H^s_p$; complete</td>
+<td><em>Interpolation Theory</em></td>
+</tr>
+<tr>
+<td>the Hölder norm</td>
+<td>$C^{k,\alpha}$; complete</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>the Besov norm (an $\ell^q(L^p)$ norm of the Littlewood–Paley blocks)</td>
+<td>$B^s_{p,q}$; a quasi-norm for $p<1$ or $q<1$, complete</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>the Triebel–Lizorkin norm (an $L^p(\ell^q)$ norm of the blocks)</td>
+<td>$F^s_{p,q}$; complete</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>the Lorentz norm</td>
+<td>$L^{p,q}$; complete, and the interpolation norm between two $L^p$ norms</td>
+<td><em>Interpolation Theory</em></td>
+</tr>
+<tr>
+<td>the Hardy-space norm $\lVert f\rVert_{H^p}$</td>
+<td>$H^p(\mathbb D)$ for $1 \leq p \leq \infty$; complete for $1 \leq p < \infty$, and $H^\infty$ is the bounded holomorphic functions</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Paley–Wiener norm inherited from $L^2$</td>
+<td>$PW_B$; a closed subspace of $L^2$, hence complete</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the total-variation norm $\lvert\nu\rvert(X)$</td>
+<td>the space of signed and complex measures; complete</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="norms-on-algebras-and-in-duality">Norms on Algebras and in Duality</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The space it defines, and the completeness it gives</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the submultiplicative norm, $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$</td>
+<td>a normed algebra; complete exactly when it is a Banach algebra</td>
+<td><em>Topological Algebras and Banach Algebras</em></td>
+</tr>
+<tr>
+<td>the Neumann-series bound $(1-x)^{-1} = \sum_n x^n$ for $\lVert x\rVert<1$</td>
+<td>the openness of the unit group in a normed algebra</td>
+<td><em>Topological Algebras and Banach Algebras</em></td>
+</tr>
+<tr>
+<td>the spectral radius $r(a) = \lim_n \lVert a^n\rVert^{1/n}$</td>
+<td>a quantity bounded above by the norm, $r(a) \leq \lVert a\rVert$, but not a norm itself</td>
+<td><em>Topological Algebras and Banach Algebras</em></td>
+</tr>
+<tr>
+<td>the Hilbert–Schmidt norm</td>
+<td>$L^2(H)$; complete, an inner-product norm</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>the trace-class norm $\lVert T\rVert_1 = \operatorname{Tr}\lvert T\rvert$</td>
+<td>$L^1(H)$; complete</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>the strong and weak operator seminorms</td>
+<td>the initial topologies of the operator families; not norms</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>the polar and the Minkowski gauge $p_A$</td>
+<td>a seminorm when $A$ is convex, balanced and absorbing; gives local convexity</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>the seminorm of a topological vector space</td>
+<td>a locally convex topology, complete exactly when the space is Fréchet or otherwise as stated</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="seminorms-and-families-of-seminorms">Seminorms and Families of Seminorms</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The topology or property it defines</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a seminorm $p$</td>
+<td>a convex, balanced, absorbing unit ball $B_p = \{x : p(x)\leq1\}$; the topology of a locally convex space</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>a generating family $\mathcal P$ of seminorms</td>
+<td>the locally convex topology it generates; complete exactly when the resulting space is complete</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>a basic convex neighbourhood $U_{p_1,\dots,p_n;\varepsilon}$</td>
+<td>the neighbourhood filter of $0$</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>an increasing sequence $(p_n)$ of seminorms</td>
+<td>the Fréchet topology it generates</td>
+<td><em>Fréchet Spaces</em></td>
+</tr>
+<tr>
+<td>the $F$-norm $\lvert x\rvert = \sum_n 2^{-n}\min(1,p_n(x))$</td>
+<td>the invariant metric $d(x,y) = \lvert x-y\rvert$; an $F$-space when complete</td>
+<td><em>Fréchet Spaces</em></td>
+</tr>
+<tr>
+<td>the Schwartz seminorms $p_{\alpha,\beta}(f) = \sup_x \lvert x^\alpha\partial^\beta f\rvert$</td>
+<td>the Fréchet topology of $\mathcal S(\mathbb R^n)$; complete</td>
+<td><em>Fréchet Spaces</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>the seminorms of the derivatives on compacta</td>
+<td>the Fréchet topology of $C^\infty(U)$ and of $\mathcal O(\Omega)$; complete</td>
+<td><em>Fréchet Spaces</em></td>
+</tr>
+<tr>
+<td>the seminorms $\sup_K \lvert\partial^\alpha f\rvert$ on $\mathcal D_K$</td>
+<td>the inductive-limit topology of $\mathcal D(\Omega)$; complete and not normable</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the $p$-adic absolute value $\lvert\cdot\rvert_p$</td>
+<td>an absolute value satisfying the strong triangle inequality; gives a non-Archimedean norm</td>
+<td><em>Topological Modules and Vector Spaces</em>; <em>p-adic Integration</em></td>
+</tr>
+<tr>
+<td>a valuation $v = v_p$</td>
+<td>a non-Archimedean valuation, $\lvert x\rvert_p = p^{-v(x)}$</td>
+<td><em>Topological Modules and Vector Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="functions-that-are-not-norms">Functions That Are Not Norms</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property that fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lvert f(0)\rvert$ on the continuous functions</td>
+<td>vanishes on the nonzero functions that are $0$ at $0$: a seminorm and not a norm</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>$L^p(\mu)$ with $0 < p < 1$</td>
+<td>the triangle inequality fails; the function is a quasi-norm and not a norm, and the topology is not locally convex</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>the constant function $0$</td>
+<td>vanishes on every vector: the degenerate seminorm</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>the sup norm on $C^k(U)$</td>
+<td>does not control the derivatives, so it does not make $C^k$ complete: a norm, but not the one the class carries</td>
+<td><em>Differential Calculus on Normed Spaces</em></td>
+</tr>
+<tr>
+<td>the spectral radius $r(a)$</td>
+<td>subadditive and submultiplicative, but not positive definite: a quasinilpotent element satisfies $r(a) = 0$ with $a \neq 0$</td>
+<td><em>Topological Algebras and Banach Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the norms of the corpus — the operator, inner-product, supremum, $L^p$, Sobolev, Hölder, Besov, Triebel–Lizorkin and Lorentz norms, with the completeness each confers — and the seminorms, either single or in generating families, that define the locally convex, Fréchet and inductive-limit topologies. The final table records the functions that are named or used as norms and fail to be one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects are named rather than denoted; the symbols used in the tables are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lVert\cdot\rVert$</td>
+<td>a norm; $\lVert T\rVert$ the operator norm</td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>a seminorm, and $B_p$ its unit ball</td>
+</tr>
+<tr>
+<td>$\mathcal P$</td>
+<td>a generating family of seminorms</td>
+</tr>
+<tr>
+<td>$\lvert\cdot\rvert_p$, $v_p$</td>
+<td>the $p$-adic absolute value and valuation</td>
+</tr>
+<tr>
+<td>$F$-norm, Fréchet</td>
+<td>the invariant metric norm and the complete metrisable locally convex case</td>
+</tr>
+<tr>
+<td>quasi-norm</td>
+<td>a function failing the triangle inequality, as in $L^p$ with $p<1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Albrecht Pietsch, <em>History of Banach Spaces and Linear Operators</em> (Birkhäuser, 2007), for the classical norms and their completeness properties.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for norms, seminorms and the locally convex topologies they generate.</li>
+<li>Hans Triebel, <em>Theory of Function Spaces</em> (Birkhäuser, 1983), for the norms and quasi-norms of the Sobolev, Besov and Triebel–Lizorkin scales.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

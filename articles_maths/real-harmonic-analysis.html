@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Harmonic Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-harmonic-analysis"><strong>Real Harmonic Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces harmonic analysis on the real line and on Euclidean space as the study of the Fourier transform, convolution, and the function spaces on which they act. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. Only the real analysis of the companion article is assumed; Lebesgue measure and integration are used throughout, and no complex analysis and no abstract topology are invoked. The Fourier transform is normalized so that the factor $2\pi$ sits in the exponent and no prefactor appears in either the transform or its inverse:</p>
+<p>$$
+\hat{f}(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i \xi x} \, dx.
+$$</p>
+<p>With this normalization the transform is an isometry of $L^2$ and the inversion and Plancherel theorems carry no constants. The real line is treated first, and the definitions are then extended verbatim to $\mathbb{R}^n$ with the pairing $\xi \cdot x$ in place of the product $\xi x$.</p>
+<h2 id="fourier-series-on-the-circle">Fourier Series on the Circle</h2>
+<h3 id="definition">Definition</h3>
+<p>Let $\mathbb{T} = \mathbb{R}/\mathbb{Z}$, identified with $[0, 1]$ with endpoints joined. For $f \in L^1(\mathbb{T})$ the <strong>Fourier coefficients</strong> are</p>
+<p>$$
+\hat{f}(n) = \int_0^1 f(x) e^{-2\pi i n x} \, dx, \qquad n \in \mathbb{Z},
+$$</p>
+<p>and the <strong>partial sums</strong> are $S_N f(x) = \sum_{n=-N}^{N} \hat{f}(n) e^{2\pi i n x}$.</p>
+<h3 id="the-dirichlet-and-fejer-kernels">The Dirichlet and Fejér Kernels</h3>
+<p>Writing the partial sum as a convolution,</p>
+<p>$$
+S_N f(x) = (f * D_N)(x), \qquad D_N(x) = \sum_{n=-N}^{N} e^{2\pi i n x} = \frac{\sin((2N+1)\pi x)}{\sin(\pi x)},
+$$</p>
+<p>where $D_N$ is the <strong>Dirichlet kernel</strong>. The <strong>Fejér kernel</strong> is the Cesàro average $F_N = \frac{1}{N+1} \sum_{k=0}^{N} D_k$, explicitly</p>
+<p>$$
+F_N(x) = \frac{1}{N+1} \left( \frac{\sin((N+1)\pi x)}{\sin(\pi x)} \right)^{\!2},
+$$</p>
+<p>and the Cesàro means are $\sigma_N f = f * F_N$.</p>
+<p><strong>Theorem (Fejér).</strong> If $f : \mathbb{T} \to \mathbb{C}$ is continuous, then $\sigma_N f \to f$ uniformly on $\mathbb{T}$. If $f \in L^p(\mathbb{T})$ for $1 \le p < \infty$, then $\sigma_N f \to f$ in $L^p(\mathbb{T})$.</p>
+<p>The Fejér kernel is non-negative, has integral $1$, and concentrates at the origin, which is why the Cesàro means behave better than the partial sums.</p>
+<h3 id="orthogonality-plancherel-and-riemannlebesgue">Orthogonality, Plancherel, and Riemann–Lebesgue</h3>
+<p>The functions $e_n(x) = e^{2\pi i n x}$ form an orthonormal basis of $L^2(\mathbb{T})$: $\int_0^1 e_m \overline{e_n} = \delta_{mn}$.</p>
+<p><strong>Theorem (Plancherel, circle).</strong> For $f \in L^2(\mathbb{T})$,</p>
+<p>$$
+\sum_{n \in \mathbb{Z}} |\hat{f}(n)|^2 = \int_0^1 |f(x)|^2 \, dx,
+$$</p>
+<p>and $f \mapsto (\hat{f}(n))$ is a unitary isomorphism $L^2(\mathbb{T}) \to \ell^2(\mathbb{Z})$. Consequently, for $f, g \in L^2(\mathbb{T})$,</p>
+<p>$$
+\sum_{n \in \mathbb{Z}} \hat{f}(n) \overline{\hat{g}(n)} = \int_0^1 f(x) \overline{g(x)} \, dx.
+$$</p>
+<p><strong>Theorem (Riemann–Lebesgue).</strong> If $f \in L^1(\mathbb{T})$, then $\hat{f}(n) \to 0$ as $|n| \to \infty$. The trigonometric polynomials are dense in $L^p(\mathbb{T})$ for $1 \le p < \infty$.</p>
+<h2 id="the-fourier-transform-on-the-line">The Fourier Transform on the Line</h2>
+<h3 id="definition_1">Definition</h3>
+<p>For $f \in L^1(\mathbb{R})$ the <strong>Fourier transform</strong> is</p>
+<p>$$
+\hat{f}(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i \xi x} \, dx.
+$$</p>
+<p>The integral converges absolutely and $\|\hat{f}\|_\infty \le \|f\|_1$.</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Linearity.</strong> $\widehat{af + bg} = a \hat{f} + b \hat{g}$.</p>
+<p><strong>Translation.</strong> If $f_a(x) = f(x - a)$, then $\hat{f}_a(\xi) = e^{-2\pi i \xi a} \hat{f}(\xi)$.</p>
+<p><strong>Modulation.</strong> If $g(x) = e^{2\pi i \eta x} f(x)$, then $\hat{g}(\xi) = \hat{f}(\xi - \eta)$.</p>
+<p><strong>Scaling.</strong> If $f_\lambda(x) = f(\lambda x)$ for $\lambda \neq 0$, then $\widehat{f_\lambda}(\xi) = |\lambda|^{-1} \hat{f}(\xi/\lambda)$.</p>
+<p><strong>Conjugation.</strong> $\widehat{\bar{f}}(\xi) = \overline{\hat{f}(-\xi)}$.</p>
+<p><strong>Differentiation.</strong> If $f$ is absolutely continuous with $f' \in L^1(\mathbb{R})$, then $\widehat{f'}(\xi) = 2\pi i \xi \, \hat{f}(\xi)$.</p>
+<p><strong>Multiplication by the variable.</strong> If $f \in L^1(\mathbb{R})$ and $x f(x) \in L^1(\mathbb{R})$, then $\hat{f}$ is differentiable and $\widehat{x f}(\xi) = \frac{i}{2\pi} \frac{d}{d\xi} \hat{f}(\xi)$.</p>
+<p><strong>Theorem (Riemann–Lebesgue).</strong> If $f \in L^1(\mathbb{R})$, then $\hat{f} \in C_0(\mathbb{R})$ and $\|\hat{f}\|_\infty \le \|f\|_1$. The transform of an interval indicator is computed explicitly; the span of step functions is dense in $L^1$, and $C_0(\mathbb{R})$ is closed.</p>
+<h2 id="the-inversion-theorem-and-the-plancherel-theorem">The Inversion Theorem and the Plancherel Theorem</h2>
+<h3 id="the-inversion-theorem">The Inversion Theorem</h3>
+<p><strong>Theorem (Inversion).</strong> If $f \in L^1(\mathbb{R})$ and $\hat{f} \in L^1(\mathbb{R})$, then</p>
+<p>$$
+f(x) = \int_{\mathbb{R}} \hat{f}(\xi) e^{2\pi i \xi x} \, d\xi
+$$</p>
+<p>for almost every $x$, and for every $x$ if $f$ is continuous.</p>
+<p><strong>Proof.</strong> For $\epsilon > 0$ define $f_\epsilon(x) = \int \hat{f}(\xi) e^{-\pi \epsilon^2 \xi^2} e^{2\pi i \xi x} d\xi$. Since $\hat{f} \in L^1$, convolution with the Gaussian $G_\epsilon(x) = \epsilon^{-1} e^{-\pi x^2/\epsilon^2}$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(x) \to \int \hat{f}(\xi) e^{2\pi i \xi x} d\xi$ at every $x$. $\square$</p>
+<h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
+<p><strong>Theorem (Plancherel).</strong> The Fourier transform on $L^1(\mathbb{R}) \cap L^2(\mathbb{R})$ satisfies $\|\hat{f}\|_2 = \|f\|_2$ and $\langle \hat{f}, \hat{g} \rangle = \langle f, g \rangle$, and extends uniquely to a unitary operator</p>
+<p>$$
+\mathcal{F} : L^2(\mathbb{R}) \to L^2(\mathbb{R}).
+$$</p>
+<p><strong>Proof.</strong> For $f \in L^1 \cap L^2$, put $\tilde{f}(x) = \overline{f(-x)}$. Then $\widehat{f * \tilde{f}} = |\hat{f}|^2$, so inversion at $0$ gives $\int |\hat{f}|^2 = (f * \tilde{f})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense. $\square$</p>
+<p>For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated integrals, and $\mathcal{F}^2 f(x) = f(-x)$, $\mathcal{F}^{-1} = \mathcal{F}^3$, $\mathcal{F}^4 = \mathrm{Id}$.</p>
+<h2 id="the-fourier-transform-on-math97">The Fourier Transform on $\mathbb{R}^n$</h2>
+<h3 id="definition_2">Definition</h3>
+<p>For $f \in L^1(\mathbb{R}^n)$ the <strong>Fourier transform</strong> is</p>
+<p>$$
+\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2\pi i \xi \cdot x} \, dx, \qquad \xi \cdot x = \sum_{j=1}^{n} \xi_j x_j.
+$$</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Translation.</strong> If $f_a(x) = f(x - a)$, then $\hat{f}_a(\xi) = e^{-2\pi i \xi \cdot a} \hat{f}(\xi)$.</p>
+<p><strong>Modulation.</strong> If $g(x) = e^{2\pi i \eta \cdot x} f(x)$, then $\hat{g}(\xi) = \hat{f}(\xi - \eta)$.</p>
+<p><strong>Scaling.</strong> If $f_\lambda(x) = f(\lambda x)$ for $\lambda > 0$, then $\widehat{f_\lambda}(\xi) = \lambda^{-n} \hat{f}(\xi/\lambda)$.</p>
+<p><strong>Rotation invariance.</strong> If $R$ is orthogonal and $f_R(x) = f(Rx)$, then $\hat{f}_R(\xi) = \hat{f}(R\xi)$; the transform commutes with rotations.</p>
+<p><strong>Differentiation.</strong> For a multi-index $\alpha$, $\widehat{\partial^\alpha f}(\xi) = (2\pi i)^{|\alpha|} \xi^\alpha \hat{f}(\xi)$ whenever the derivatives lie in $L^1$. In particular the Laplacian has symbol $-4\pi^2 |\xi|^2$:</p>
+<p>$$
+\widehat{\Delta f}(\xi) = -4\pi^2 |\xi|^2 \hat{f}(\xi).
+$$</p>
+<h3 id="inversion-and-plancherel-on-math115">Inversion and Plancherel on $\mathbb{R}^n$</h3>
+<p><strong>Theorem (Inversion).</strong> If $f \in L^1(\mathbb{R}^n)$ and $\hat{f} \in L^1(\mathbb{R}^n)$, then $f(x) = \int_{\mathbb{R}^n} \hat{f}(\xi) e^{2\pi i \xi \cdot x} d\xi$ for almost every $x$, and everywhere if $f$ is continuous.</p>
+<p><strong>Theorem (Plancherel).</strong> The Fourier transform extends uniquely to a unitary operator $\mathcal{F} : L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)$, and for all $f, g \in L^2(\mathbb{R}^n)$,</p>
+<p>$$
+\|\hat{f}\|_2 = \|f\|_2, \qquad \langle \hat{f}, \hat{g} \rangle = \langle f, g \rangle.
+$$</p>
+<p><strong>Theorem (Riemann–Lebesgue).</strong> If $f \in L^1(\mathbb{R}^n)$, then $\hat{f} \in C_0(\mathbb{R}^n)$ and $\|\hat{f}\|_\infty \le \|f\|_1$.</p>
+<h2 id="convolution">Convolution</h2>
+<h3 id="definition-and-basic-properties">Definition and Basic Properties</h3>
+<p>The <strong>convolution</strong> of measurable $f, g : \mathbb{R}^n \to \mathbb{C}$ is</p>
+<p>$$
+(f * g)(x) = \int_{\mathbb{R}^n} f(x - y) g(y) \, dy,
+$$</p>
+<p>defined whenever the integral converges for almost every $x$. Convolution is commutative, associative, bilinear, and translation invariant: $(\tau_a f) * g = \tau_a (f * g)$ for $\tau_a f(x) = f(x - a)$.</p>
+<p><strong>Young's inequality.</strong> If $1 \le p, q, r \le \infty$ and $\frac{1}{p} + \frac{1}{q} = \frac{1}{r} + 1$, then</p>
+<p>$$
+\|f * g\|_r \le \|f\|_p \, \|g\|_q.
+$$</p>
+<p>In particular $\|f * g\|_1 \le \|f\|_1 \|g\|_1$ and $\|f * g\|_p \le \|f\|_1 \|g\|_p$.</p>
+<p><strong>Continuity.</strong> If $f \in L^p$ and $g \in L^1$ with $1 \le p < \infty$, then $f * g \in L^p$ and $\|f * g\|_p \le \|f\|_p \|g\|_1$. If $f \in L^\infty$ and $g \in L^1$, then $f * g$ is bounded and uniformly continuous, with $\|f * g\|_\infty \le \|f\|_\infty \|g\|_1$.</p>
+<h3 id="the-convolution-theorem">The Convolution Theorem</h3>
+<p><strong>Theorem.</strong> If $f, g \in L^1(\mathbb{R}^n)$, then $f * g \in L^1(\mathbb{R}^n)$ and</p>
+<p>$$
+\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
+$$</p>
+<p><strong>Proof.</strong> By Fubini, $\widehat{f * g}(\xi) = \int g(y) e^{-2\pi i \xi \cdot y} \big( \int f(x - y) e^{-2\pi i \xi \cdot (x - y)} dx \big) dy$, and the inner integral is $\hat{f}(\xi)$. $\square$</p>
+<p>The theorem extends to $L^2$ and to tempered distributions in the sense described below.</p>
+<h2 id="approximate-identities">Approximate Identities</h2>
+<h3 id="definition_3">Definition</h3>
+<p>A family $(\phi_\epsilon)_{\epsilon > 0}$ in $L^1(\mathbb{R}^n)$ is an <strong>approximate identity</strong> if $\int \phi_\epsilon = 1$, $\sup_\epsilon \|\phi_\epsilon\|_1 < \infty$, and for every $\delta > 0$,</p>
+<p>$$
+\int_{|x| > \delta} |\phi_\epsilon(x)| \, dx \to 0 \qquad (\epsilon \to 0).
+$$</p>
+<p>The last condition says that the mass of $\phi_\epsilon$ concentrates near the origin.</p>
+<p><strong>Theorem.</strong> If $(\phi_\epsilon)$ is an approximate identity and $f \in L^p(\mathbb{R}^n)$ with $1 \le p < \infty$, then $\|f * \phi_\epsilon - f\|_p \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \phi_\epsilon \to f$ uniformly. If $x$ is a Lebesgue point of $f \in L^p$, then $(f * \phi_\epsilon)(x) \to f(x)$.</p>
+<h2 id="the-schwartz-space-and-tempered-distributions">The Schwartz Space and Tempered Distributions</h2>
+<h3 id="the-schwartz-space">The Schwartz Space</h3>
+<p>The <strong>Schwartz space</strong> $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\phi$ with $\|\phi\|_{\alpha, \beta} = \sup_x |x^\alpha \partial^\beta \phi(x)| < \infty$ for all multi-indices $\alpha, \beta$. The seminorms $\|\cdot\|_{\alpha, \beta}$ make $\mathcal{S}(\mathbb{R}^n)$ a Fréchet space, closed under differentiation and multiplication by polynomials.</p>
+<p><strong>Theorem.</strong> The Fourier transform is a bijection $\mathcal{F} : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n)$. Indeed $\widehat{\partial^\alpha \phi} = (2\pi i)^{|\alpha|} \xi^\alpha \hat{\phi}$ and $\widehat{x^\alpha \phi} = (-2\pi i)^{-|\alpha|} \partial^\alpha \hat{\phi}$, so the seminorms of $\hat{\phi}$ are controlled by those of $\phi$ and conversely. The inversion formula and Plancherel's identity hold on $\mathcal{S}(\mathbb{R}^n)$ with no further hypotheses.</p>
+<h3 id="tempered-distributions">Tempered Distributions</h3>
+<p>A <strong>tempered distribution</strong> is a continuous linear functional on $\mathcal{S}(\mathbb{R}^n)$; the space is denoted $\mathcal{S}'(\mathbb{R}^n)$ and contains $L^p(\mathbb{R}^n)$ for $1 \le p \le \infty$, all finite measures, and all polynomials. The operations are defined by duality:</p>
+<ul>
+<li><strong>Differentiation:</strong> $\langle \partial^\alpha T, \phi \rangle = (-1)^{|\alpha|} \langle T, \partial^\alpha \phi \rangle$.</li>
+<li><strong>Multiplication:</strong> for $f$ smooth of polynomial growth, $\langle f T, \phi \rangle = \langle T, f \phi \rangle$.</li>
+<li><strong>Fourier transform:</strong> $\langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle$.</li>
+</ul>
+<p>These extend the classical operations, and the Fourier transform is a bijection $\mathcal{S}'(\mathbb{R}^n) \to \mathcal{S}'(\mathbb{R}^n)$.</p>
+<p><strong>Examples.</strong> The delta distribution $\langle \delta, \phi \rangle = \phi(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/x)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\xi)$. For $0 < \alpha < n$, the transform of $|x|^{-\alpha}$ is a constant multiple of $|\xi|^{\alpha - n}$.</p>
+<h2 id="the-hardylittlewood-maximal-function">The Hardy–Littlewood Maximal Function</h2>
+<h3 id="definition-and-the-maximal-inequality">Definition and the Maximal Inequality</h3>
+<p>For $f \in L^1_{\mathrm{loc}}(\mathbb{R}^n)$ the <strong>Hardy–Littlewood maximal function</strong> is</p>
+<p>$$
+Mf(x) = \sup_{r > 0} \frac{1}{|B(x, r)|} \int_{B(x, r)} |f(y)| \, dy.
+$$</p>
+<p><strong>Theorem (Hardy–Littlewood).</strong> There is a dimensional constant $C_n$ such that for every $f \in L^1(\mathbb{R}^n)$ and every $\lambda > 0$,</p>
+<p>$$
+|\{x : Mf(x) > \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1.
+$$</p>
+<p><strong>Proof.</strong> For each $x$ with $Mf(x) > \lambda$ choose a ball $B(x, r_x)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$. $\square$</p>
+<p><strong>Theorem.</strong> For $1 < p \le \infty$ there is $C_{n,p}$ with $\|Mf\|_p \le C_{n,p} \|f\|_p$.</p>
+<p>The case $p = \infty$ is immediate; the case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the $L^\infty$ estimate by interpolation. The operator $M$ is not bounded on $L^1$: for $f = \mathbf{1}_{[0,1]}$ on $\mathbb{R}$ one has $Mf(x) \gtrsim 1/x$ for large $x$, and $1/x \notin L^1$.</p>
+<h3 id="the-lebesgue-differentiation-theorem">The Lebesgue Differentiation Theorem</h3>
+<p><strong>Theorem (Lebesgue).</strong> If $f \in L^1_{\mathrm{loc}}(\mathbb{R}^n)$, then</p>
+<p>$$
+\lim_{r \to 0} \frac{1}{|B(x, r)|} \int_{B(x, r)} f(y) \, dy = f(x)
+$$</p>
+<p>for almost every $x$.</p>
+<p><strong>Proof.</strong> It suffices to prove the statement for $f \in L^1$. For $\epsilon > 0$ write $f = g + h$ with $g$ continuous and $\|h\|_1 < \epsilon$. For $g$ the statement holds at every point, while the maximal inequality bounds the measure of the set where the oscillation of the averages of $h$ exceeds $\lambda$ by $C_n \|h\|_1/\lambda$. Letting $\epsilon \to 0$ gives the result. $\square$</p>
+<p>A point where the conclusion holds is a <strong>Lebesgue point</strong> of $f$. The maximal function gives the quantitative form of the theorem.</p>
+<h2 id="the-hilbert-transform">The Hilbert Transform</h2>
+<h3 id="definition_4">Definition</h3>
+<p>The <strong>Hilbert transform</strong> of $f \in L^p(\mathbb{R})$, $1 \le p < \infty$, is the principal value integral</p>
+<p>$$
+Hf(x) = \frac{1}{\pi} \, \mathrm{p.v.} \int_{\mathbb{R}} \frac{f(x - t)}{t} \, dt
+= \frac{1}{\pi} \lim_{\epsilon \to 0} \int_{|t| > \epsilon} \frac{f(x - t)}{t} \, dt.
+$$</p>
+<p>The singular integral converges almost everywhere for $f$ in $L^p$, $1 \le p < \infty$, and in $L^2$ it converges in norm.</p>
+<h3 id="the-fourier-multiplier">The Fourier Multiplier</h3>
+<p><strong>Theorem.</strong> On $L^2(\mathbb{R})$ the Hilbert transform is given by the multiplier</p>
+<p>$$
+\widehat{Hf}(\xi) = -i \, \mathrm{sgn}(\xi) \, \hat{f}(\xi).
+$$</p>
+<p><strong>Proof.</strong> Let $K_\epsilon(x) = \frac{1}{\pi x} \mathbf{1}_{|x| > \epsilon}$ and $H_\epsilon f = f * K_\epsilon$. A computation gives</p>
+<p>$$
+\hat{K}_\epsilon(\xi) = -i \, \mathrm{sgn}(\xi) \left( 1 - \frac{2}{\pi} \mathrm{Si}(2\pi |\xi| \epsilon) \right),
+$$</p>
+<p>where $\mathrm{Si}(t) = \int_0^t \frac{\sin s}{s} ds$ is the sine integral. These multipliers are bounded uniformly in $\epsilon$ and converge pointwise to $-i \, \mathrm{sgn}(\xi)$; Plancherel gives $\|H_\epsilon f\|_2 \le C \|f\|_2$, and the convolution theorem with dominated convergence identifies the limit on a dense subset of $L^2$. $\square$</p>
+<h3 id="basic-properties_2">Basic Properties</h3>
+<p><strong>Isometry on $L^2$.</strong> Since $|-i \, \mathrm{sgn}(\xi)| = 1$ for $\xi \neq 0$, Plancherel gives</p>
+<p>$$
+\|Hf\|_2 = \|f\|_2, \qquad H^2 = -I, \qquad H^* = -H,
+$$</p>
+<p>so $H$ is a skew-adjoint isometry of $L^2(\mathbb{R})$, the operator corresponding to the conjugate-function operator of Fourier series.</p>
+<p><strong>Boundedness on $L^p$.</strong> The Hilbert transform is bounded on $L^p(\mathbb{R})$ for every $1 < p < \infty$: there is $C_p$ with $\|Hf\|_p \le C_p \|f\|_p$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.</p>
+<p><strong>Weak $(1,1)$.</strong> For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{x : |Hf(x)| > \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^p$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon > 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^p$ bounds.</p>
+<h2 id="interpolation-and-math281-theory">Interpolation and $L^p$ Theory</h2>
+<h3 id="the-rieszthorin-theorem">The Riesz–Thorin Theorem</h3>
+<p><strong>Theorem (Riesz–Thorin).</strong> Let $1 \le p_0, p_1, q_0, q_1 \le \infty$ and let $T$ be a linear operator bounded from $L^{p_0}$ to $L^{q_0}$ with norm $M_0$ and from $L^{p_1}$ to $L^{q_1}$ with norm $M_1$. For $0 < \theta < 1$ define</p>
+<p>$$
+\frac{1}{p} = \frac{1 - \theta}{p_0} + \frac{\theta}{p_1}, \qquad \frac{1}{q} = \frac{1 - \theta}{q_0} + \frac{\theta}{q_1}.
+$$</p>
+<p>Then $T$ is bounded from $L^p$ to $L^q$ with norm at most $M_0^{1 - \theta} M_1^{\theta}$.</p>
+<p>The conclusion holds for sublinear operators as well, by the same three-lines argument applied to an analytic family $z \mapsto \langle T f_z, g_z \rangle$ built from $L^p$ functions with suitable complex exponents.</p>
+<h3 id="the-hausdorffyoung-theorem">The Hausdorff–Young Theorem</h3>
+<p><strong>Theorem (Hausdorff–Young).</strong> Let $1 \le p \le 2$ and let $q$ be the conjugate exponent, $\frac{1}{p} + \frac{1}{q} = 1$. If $f \in L^p(\mathbb{R}^n)$, then $\hat{f} \in L^q(\mathbb{R}^n)$ and</p>
+<p>$$
+\|\hat{f}\|_q \le \|f\|_p.
+$$</p>
+<p><strong>Proof.</strong> The transform is bounded $L^1 \to L^\infty$ with norm $1$ and $L^2 \to L^2$ with norm $1$ by Plancherel. Riesz–Thorin interpolation between $(p_0, q_0) = (1, \infty)$ and $(p_1, q_1) = (2, 2)$ gives the result. $\square$</p>
+<p>The endpoints are sharp: at $p = 1$ the transform is bounded but need not be integrable, and at $p = 2$ it is an isometry. For $p > 2$ the inequality fails, because the Fourier transform of an $L^p$ function need not lie in $L^q$; the defining integral need not converge absolutely, so the transform is taken in the distributional sense.</p>
+<h3 id="the-marcinkiewicz-interpolation-theorem">The Marcinkiewicz Interpolation Theorem</h3>
+<p><strong>Theorem (Marcinkiewicz).</strong> Let $T$ be a sublinear operator of weak type $(p_0, p_0)$ and weak type $(p_1, p_1)$, where $1 \le p_0 < p_1 \le \infty$. Then $T$ is of strong type $(p, p)$ for every $p_0 < p < p_1$. This is the distribution-function form of interpolation; it produces the $L^p$ bounds for the Hilbert transform and the maximal function from their weak endpoint estimates.</p>
+<h2 id="littlewoodpaley-theory">Littlewood–Paley Theory</h2>
+<h3 id="the-littlewoodpaley-decomposition">The Littlewood–Paley Decomposition</h3>
+<p>Choose $\psi \in \mathcal{S}(\mathbb{R}^n)$ whose Fourier transform is supported in the annulus $\{1/2 \le |\xi| \le 2\}$ and satisfies $\sum_{j \in \mathbb{Z}} \hat{\psi}(2^{-j} \xi) = 1$ for $\xi \neq 0$. Set $\widehat{\Delta_j f}(\xi) = \hat{\psi}(2^{-j} \xi) \hat{f}(\xi)$, so $\Delta_j f$ has frequency support in the annulus $2^{j-1} \le |\xi| \le 2^{j+1}$, and $f = \sum_j \Delta_j f$ for $f$ in a suitable space.</p>
+<h3 id="the-square-function">The Square Function</h3>
+<p>The <strong>Littlewood–Paley square function</strong> of $f$ is</p>
+<p>$$
+S f(x) = \left( \sum_{j \in \mathbb{Z}} |\Delta_j f(x)|^2 \right)^{\!1/2}.
+$$</p>
+<p><strong>Theorem (Littlewood–Paley).</strong> For $1 < p < \infty$ there are constants depending only on $n$, $p$, and $\psi$ such that</p>
+<p>$$
+c_{n,p} \|f\|_p \le \|S f\|_p \le C_{n,p} \|f\|_p.
+$$</p>
+<p>For $p = 2$ the two-sided bound follows from Plancherel: because at most finitely many annuli overlap at each frequency and their multipliers sum to $1$, the quantity $\sum_j |\hat{\psi}(2^{-j}\xi)|^2$ is bounded above and below on $\mathbb{R}^n \setminus \{0\}$.</p>
+<h3 id="bernstein-inequalities">Bernstein Inequalities</h3>
+<p><strong>Theorem (Bernstein).</strong> Suppose the Fourier transform of $f$ is supported in $\{|\xi| \le R\}$. Then for every multi-index $\alpha$ and all $1 \le p \le q \le \infty$,</p>
+<p>$$
+\|\partial^\alpha f\|_q \le C R^{|\alpha| + n(1/p - 1/q)} \|f\|_p,
+$$</p>
+<p>with $C$ independent of $R$ and $f$. Conversely, if the support lies in $\{R/2 \le |\xi| \le 2R\}$, then $\|\partial^\alpha f\|_p \ge c R^{|\alpha|} \|f\|_p$ for a constant $c > 0$ independent of $R$ and $f$.</p>
+<p>These inequalities are the mechanism by which Littlewood–Paley theory converts frequency localization into size estimates; they underlie multiplier theorems and Sobolev embedding.</p>
+<h2 id="sobolev-spaces">Sobolev Spaces</h2>
+<h3 id="definition_5">Definition</h3>
+<p>For an integer $k \ge 0$ and $1 \le p \le \infty$, the <strong>Sobolev space</strong> $W^{k,p}(\mathbb{R}^n)$ is the set of $f \in L^p(\mathbb{R}^n)$ whose distributional derivatives $\partial^\alpha f$ of order $|\alpha| \le k$ all lie in $L^p$, with</p>
+<p>$$
+\|f\|_{W^{k,p}} = \left( \sum_{|\alpha| \le k} \|\partial^\alpha f\|_p^p \right)^{\!1/p}
+$$</p>
+<p>for $p < \infty$, and the corresponding supremum for $p = \infty$.</p>
+<h3 id="characterization-by-the-fourier-transform">Characterization by the Fourier Transform</h3>
+<p>For $p = 2$ the Fourier transform gives a complete description. For real $s$, the <strong>Sobolev space</strong> $H^s(\mathbb{R}^n)$ is the set of tempered distributions $f$ with</p>
+<p>$$
+\|f\|_{H^s}^2 = \int_{\mathbb{R}^n} (1 + |\xi|^2)^s \, |\hat{f}(\xi)|^2 \, d\xi < \infty.
+$$</p>
+<p><strong>Theorem.</strong> For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\xi|^2)^s \hat{f}(\xi) \overline{\hat{g}(\xi)} d\xi$, and the Fourier transform is a unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\xi|^2)^s d\xi)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.</p>
+<p>The <strong>homogeneous</strong> Sobolev space $\dot{H}^s$ uses the seminorm $\|f\|_{\dot{H}^s}^2 = \int |\xi|^{2s} |\hat{f}(\xi)|^2 d\xi$, and $\partial^\alpha : H^s \to H^{s - |\alpha|}$ is bounded for all real $s$.</p>
+<h3 id="sobolev-embedding">Sobolev Embedding</h3>
+<p><strong>Theorem (Sobolev embedding).</strong> Let $k \ge 1$ and $1 \le p < \infty$. If $k < n/p$, then $W^{k,p}(\mathbb{R}^n) \subset L^q(\mathbb{R}^n)$ continuously for $\frac{1}{q} = \frac{1}{p} - \frac{k}{n}$. If $k = n/p$, then $W^{k,p}(\mathbb{R}^n) \subset L^q(\mathbb{R}^n)$ for every $p \le q < \infty$. If $k > n/p$, then $W^{k,p}(\mathbb{R}^n) \subset C^m(\mathbb{R}^n)$ for $m < k - n/p$, after modification on a null set.</p>
+<p><strong>Theorem.</strong> If $s > n/2$, then every class in $H^s(\mathbb{R}^n)$ has a representative in $C_0(\mathbb{R}^n)$, and $\|f\|_\infty \le C_{n,s} \|f\|_{H^s}$.</p>
+<p><strong>Proof.</strong> By Cauchy–Schwarz, $\int |\hat{f}| = \int (1 + |\xi|^2)^{-s/2} (1 + |\xi|^2)^{s/2} |\hat{f}| \le \big( \int (1 + |\xi|^2)^{-s} d\xi \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s > n$. $\square$</p>
+<h3 id="the-riesz-potential">The Riesz Potential</h3>
+<p>For $0 < \alpha < n$ the <strong>Riesz potential</strong> of order $\alpha$ is the operator $\widehat{I_\alpha f}(\xi) = |\xi|^{-\alpha} \hat{f}(\xi)$, the fractional integral $(-\Delta)^{-\alpha/2}$ up to a constant.</p>
+<p><strong>Theorem (Hardy–Littlewood–Sobolev).</strong> If $0 < \alpha < n$, $1 < p < q < \infty$, and $\frac{1}{q} = \frac{1}{p} - \frac{\alpha}{n}$, then $\|I_\alpha f\|_q \le C_{n, \alpha, p} \|f\|_p$.</p>
+<p>The Riesz potential saturates the Sobolev embedding: it maps $L^p$ into $L^q$ in exactly the range dictated by a gain of $\alpha$ derivatives.</p>
+<h2 id="the-uncertainty-principle">The Uncertainty Principle</h2>
+<h3 id="the-heisenberg-inequality">The Heisenberg Inequality</h3>
+<p><strong>Theorem (Heisenberg).</strong> Let $f \in L^2(\mathbb{R})$ with $\|f\|_2 = 1$, $x f \in L^2(\mathbb{R})$, and $\xi \hat{f} \in L^2(\mathbb{R})$. Then</p>
+<p>$$
+\left( \int_{\mathbb{R}} x^2 |f(x)|^2 \, dx \right)^{\!1/2}
+\left( \int_{\mathbb{R}} \xi^2 |\hat{f}(\xi)|^2 \, d\xi \right)^{\!1/2}
+\ge \frac{1}{4\pi}.
+$$</p>
+<p>Equivalently, for any centers $x_0, \xi_0 \in \mathbb{R}$ the same lower bound holds with $(x - x_0)^2$ and $(\xi - \xi_0)^2$.</p>
+<p><strong>Proof.</strong> By translation and modulation one may take $x_0 = \xi_0 = 0$. Integration by parts and Plancherel give</p>
+<p>$$
+1 = \int_{\mathbb{R}} |f|^2 = -\int_{\mathbb{R}} x \, \frac{d}{dx} |f|^2 \, dx \le 2 \int_{\mathbb{R}} |x| \, |f| \, |f'| \, dx
+\le 2 \left( \int_{\mathbb{R}} x^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |f'|^2 \right)^{\!1/2},
+$$</p>
+<p>and $\|f'\|_2 = 2\pi \|\xi \hat{f}\|_2$ by Plancherel and the differentiation rule. $\square$</p>
+<p>Equality holds if and only if $f(x) = c \, e^{-a x^2}$ for some $a > 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.</p>
+<h3 id="qualitative-forms">Qualitative Forms</h3>
+<p><strong>Theorem.</strong> There is no nonzero $f \in L^2(\mathbb{R})$ such that both $f$ and $\hat{f}$ are compactly supported.</p>
+<p><strong>Proof.</strong> If $f$ is compactly supported, then $\hat{f}(\xi) = \int f(x) e^{-2\pi i \xi x} dx$ extends to an entire function of the complex variable $\xi$; if $\hat{f}$ were also compactly supported, the identity theorem for holomorphic functions would force $\hat{f} \equiv 0$. $\square$</p>
+<p><strong>Theorem (Amrein–Berthier–Benedicks).</strong> If $f \in L^2(\mathbb{R})$ and both $f$ and $\hat{f}$ are supported on sets of finite Lebesgue measure, then $f = 0$.</p>
+<p>These statements are the qualitative counterparts of the Heisenberg inequality: a function and its transform cannot both be concentrated, in the strong sense of compact or finite-measure support.</p>
+<h2 id="summary">Summary</h2>
+<p>Harmonic analysis on the real line and on Euclidean space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act. It begins on the circle, where the Fourier coefficients of an $L^1$ function are defined and the Fourier series is developed, and passes to the line, where the Fourier transform $\hat{f}(\xi) = \int_{\mathbb{R}} f(x)e^{-2\pi i\xi x}\,dx$ and its inversion and Plancherel theorems are established, and then to $\mathbb{R}^n$.</p>
+<p>Convolution and the approximate identities built from it form the second theme, together with the Schwartz space and its tempered distributions. The theory is then developed in the $L^p$ setting: the Hardy–Littlewood maximal function with its maximal inequality, the Hilbert transform as a principal value integral, and the interpolation results organised by the Riesz–Thorin theorem.</p>
+<p>The remaining sections take up the finer structure of the subject: the Littlewood–Paley decomposition, the Sobolev spaces and their role in regularity, and the uncertainty principle in its Heisenberg form, which bounds a function and its transform simultaneously.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{T} = \mathbb{R}/\mathbb{Z}$</td>
+<td>Circle, identified with $[0, 1]$</td>
+</tr>
+<tr>
+<td>$\hat{f}(n)$</td>
+<td>Fourier coefficient on the circle</td>
+</tr>
+<tr>
+<td>$D_N, F_N$</td>
+<td>Dirichlet, Fejér kernels</td>
+</tr>
+<tr>
+<td>$\hat{f}(\xi) = \int f(x) e^{-2\pi i \xi \cdot x} dx$</td>
+<td>Fourier transform on $\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>Fourier transform operator</td>
+</tr>
+<tr>
+<td>$f * g$</td>
+<td>Convolution</td>
+</tr>
+<tr>
+<td>$\phi_\epsilon$</td>
+<td>Approximate identity</td>
+</tr>
+<tr>
+<td>$\mathcal{S}(\mathbb{R}^n)$</td>
+<td>Schwartz space</td>
+</tr>
+<tr>
+<td>$\mathcal{S}'(\mathbb{R}^n)$</td>
+<td>Tempered distributions</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>delta distribution</td>
+</tr>
+<tr>
+<td>$Mf$</td>
+<td>Hardy–Littlewood maximal function</td>
+</tr>
+<tr>
+<td>$Hf$</td>
+<td>Hilbert transform</td>
+</tr>
+<tr>
+<td>$R_j$</td>
+<td>Riesz transform</td>
+</tr>
+<tr>
+<td>$S f$</td>
+<td>Littlewood–Paley square function</td>
+</tr>
+<tr>
+<td>$\Delta_j$</td>
+<td>Littlewood–Paley frequency projection</td>
+</tr>
+<tr>
+<td>$W^{k,p}(\mathbb{R}^n)$</td>
+<td>Sobolev space, integer order</td>
+</tr>
+<tr>
+<td>$H^s(\mathbb{R}^n)$</td>
+<td>Sobolev space, real order</td>
+</tr>
+<tr>
+<td>$I_\alpha$</td>
+<td>Riesz potential</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Antoni Zygmund, <em>Trigonometric Series</em> (Cambridge, 1959), for the classical theory of Fourier series.</li>
+<li>Yitzhak Katznelson, <em>An Introduction to Harmonic Analysis</em> (Dover, 1976), for Fourier series and the circle.</li>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton, 1971), for the classical Fourier transform on $\mathbb{R}^n$.</li>
+<li>Elias M. Stein, <em>Singular Integrals and Differentiability Properties of Functions</em> (Princeton, 1970), for the maximal function, the Hilbert transform, and Calderón–Zygmund theory.</li>
+<li>Elias M. Stein, <em>Harmonic Analysis: Real-Variable Methods, Orthogonality, and Oscillatory Integrals</em> (Princeton, 1993), for Littlewood–Paley theory and the square function.</li>
+<li>Loukas Grafakos, <em>Classical Fourier Analysis</em> and <em>Modern Fourier Analysis</em> (Springer, 2014), for a systematic modern account.</li>
+<li>Gerald B. Folland, <em>Real Analysis: Modern Techniques and Their Applications</em> (Wiley, 1999), for the maximal function and distribution theory.</li>
+<li>Robert A. Adams and John J. F. Fournier, <em>Sobolev Spaces</em> (Academic Press, 2003), for Sobolev embedding and the Riesz potential.</li>
+<li>Elias M. Stein and Rami Shakarchi, <em>Fourier Analysis: An Introduction</em> (Princeton, 2003), for the circle and the line together, including the uncertainty principle.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

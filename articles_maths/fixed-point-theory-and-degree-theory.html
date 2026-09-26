@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Point Theory and Degree Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fixed-point-theory-and-degree-theory"><strong>Fixed Point Theory and Degree Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A fixed point of a map $T$ of a set into itself is a solution of the equation $x=Tx$, and the fixed-point theorems are the existence statements for that equation. In finite dimensions the existence is governed by the topology of the domain through the <strong>Brouwer degree</strong>, and the Brouwer fixed point theorem is its corollary; in infinite dimensions the same construction is not available directly, because a closed bounded set is no longer compact and the degree of a map of the unit ball into itself has no finite-dimensional definition. What replaces compactness of the space is compactness of the map: a continuous map whose image of a bounded set is relatively compact behaves in every essential respect like a map of a finite-dimensional set, and the degree of the finite-dimensional theory can be transported to the operators $I-T$, first by finite-dimensional approximation and then by the homotopy properties of the resulting integer. The resulting <strong>Leray–Schauder degree</strong> exists for the maps $I-T$ with $T$ compact, and from it follow the analytic fixed point theorems: the <strong>Schauder theorem</strong>, that a continuous compact self-map of a closed bounded convex set has a fixed point; the <strong>Leray–Schauder continuation theorem</strong>, that a compact homotopy connecting $T$ to $0$ whose fixed points stay away from the boundary has a fixed point; <strong>Schaefer's theorem</strong>, that a compact map whose fixed-point set is bounded along the homotopy has a fixed point; and <strong>Krasnoselskii's theorem</strong>, that a compact perturbation of a contraction has a fixed point.</p>
+<p>The topological degree in its finite-dimensional form — the degree of a map of spheres and of closed oriented manifolds, the Brouwer fixed point theorem, the Lefschetz fixed point theorem, the Jordan–Brouwer separation theorem — is the subject of the companion article <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, which is written; the present article is the <strong>analytic</strong> fixed-point theory, in which compactness of the map replaces compactness of the domain, and it takes the finite-dimensional degree as an input, citing it rather than re-deriving it. The classification in the two articles is deliberate and is recorded on both sides: the topological and homological degree there, the analytic fixed point theorems and the degree of a compact perturbation of the identity here.</p>
+<p>The article begins with the contraction principle, the metric fixed-point theorem that needs completeness and not compactness, and with its extensions. It then develops the compact-mapping theory: the Schauder projection, the Schauder fixed point theorem and its finite-dimensional input from <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, and the Leray–Schauder degree with its properties. It proves the continuation and Schaefer theorems, states the theorems of Krasnoselskii, Rothe and Altman, introduces the measures of noncompactness and the fixed-point theorems for condensing maps, and closes with the fixed point index and its applications.</p>
+<p>The calculus on normed spaces, the Fréchet derivative and the inverse function theorem are those of <em>Differential Calculus on Normed Spaces</em> and <em>Nonlinear Functional Analysis</em>; convexity, the subdifferential and the monotone operators are those of <em>Nonlinear Functional Analysis</em>. The finite-dimensional degree, the Brouwer fixed point theorem and the Lefschetz fixed point theorem are those of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, and the topological degrees of the classical one-dimensional case are the winding numbers of that article. The compact operators and the Fredholm theory are those of <em>Fredholm Theory</em>; the Ascoli–Arzelà theorem and the compactness in the function spaces are those of <em>Metric, Uniform and Complete Spaces</em>, <em>Topological Spaces</em> and <em>Topology on Linear Spaces</em>; the locally convex version of the fixed point theory (Tychonoff's theorem for locally convex spaces) uses <em>Topological Modules and Vector Spaces</em>. The applications to ordinary equations, to elliptic boundary problems and to the Cauchy problem belong to <em>Differential Equations</em>.</p>
+<p>No physics is invoked.</p>
+<h2 id="the-contraction-principle">The Contraction Principle</h2>
+<h3 id="statement-and-sharpness">Statement and Sharpness</h3>
+<p><strong>Theorem (Banach contraction principle).</strong> Let $(M,d)$ be a complete metric space and $T:M\to M$ a contraction with constant $\kappa<1$, that is, $d(Tx,Ty)\le\kappa\,d(x,y)$ for all $x,y$. Then $T$ has exactly one fixed point $x^*$, and for every $x \in M$,</p>
+<p>$$
+d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}\,d(x,Tx),
+$$</p>
+<p>so the iterates converge to $x^*$ at the rate of a geometric series.</p>
+<p><em>Proof.</em> Let $x_0=x$ and $x_n=T^nx$. Then $d(x_{n+1},x_n)\le\kappa^nd(x_1,x_0)$, so for $m>n$,</p>
+<p>$$
+d(x_m,x_n)\le\sum_{j=n}^{m-1}\kappa^jd(x_1,x_0)\le\frac{\kappa^n}{1-\kappa}d(x_1,x_0),
+$$</p>
+<p>and $(x_n)$ is Cauchy; its limit $x^*$ satisfies $Tx^*=x^*$ by continuity of $T$. Uniqueness: if $Tx^*=x^*$ and $Ty^*=y^*$ then $d(x^*,y^*)=d(Tx^*,Ty^*)\le\kappa d(x^*,y^*)$, so $d(x^*,y^*)=0$. $\square$</p>
+<p><strong>Example (completeness is needed).</strong> On $M=(0,1]$ with the usual metric, $Tx=x/2$ is a contraction with no fixed point in $M$; the fixed point $0$ lies outside. On $M=\mathbb{R}$, the translation $Tx=x+1$ has no fixed point and is an isometry, not a contraction. On the closed unit ball of a Banach space, the map $Tx=(1-\|x\|)x$ is continuous and has fixed points, but it is not a contraction.</p>
+<h3 id="local-and-weaker-forms">Local and Weaker Forms</h3>
+<p><strong>Theorem (local contraction).</strong> Let $T$ map the closed ball $\overline B(x_0,r)$ into itself and satisfy $d(Tx,Ty)\le\kappa d(x,y)$ there with $\kappa<1$ and $d(Tx_0,x_0)\le(1-\kappa)r$. Then $T$ has a unique fixed point in $\overline B(x_0,r)$.</p>
+<p><strong>Theorem (Edelstein).</strong> Let $(M,d)$ be compact and $T:M\to M$ satisfy $d(Tx,Ty)<d(x,y)$ for all $x \neq y$. Then $T$ has a unique fixed point.</p>
+<p><em>Proof.</em> The function $x\mapsto d(x,Tx)$ is continuous on the compact set $M$ and attains its minimum at some $x^*$; if $Tx^*\neq x^*$ then $d(T^2x^*,Tx^*)<d(Tx^*,x^*)$ contradicts minimality, so $d(x^*,Tx^*)=0$; uniqueness is immediate from the strict inequality. $\square$</p>
+<p><strong>Theorem (Rakotch).</strong> Let $(M,d)$ be complete and let $T:M\to M$ satisfy $d(Tx,Ty)\le\alpha(d(x,y))\,d(x,y)$ where $\alpha:[0,\infty)\to[0,1)$ is nonincreasing. Then $T$ has a unique fixed point.</p>
+<p>These forms are the standard weakening of the contraction hypothesis; the strict contraction is what makes the iteration converge uniformly, and the compactness in Edelstein's theorem replaces the uniformity.</p>
+<p><strong>Example (applications).</strong> The contraction principle gives the existence and uniqueness for the initial-value problem $y'=f(x,y)$, $y(x_0)=y_0$ with $f$ Lipschitz in $y$, by solving the integral equation $y(x)=y_0+\int_{x_0}^xf(t,y(t))dt$ on a small interval; it gives the inverse function theorem of <em>Nonlinear Functional Analysis</em> and the convergence of Newton's method; and it gives the convergence of the Neumann series for the resolvent of an operator with small norm and, more generally, of the successive approximations for a Fredholm integral equation of the second kind, as in <em>Fredholm Theory</em>. The ordinary differential equation and the Picard–Lindelöf theorem belong to <em>Differential Equations</em>.</p>
+<h2 id="compact-maps-and-schauders-theorem">Compact Maps and Schauder's Theorem</h2>
+<h3 id="the-schauder-projection">The Schauder Projection</h3>
+<p><strong>Definition.</strong> Let $C$ be a subset of a Banach space $X$. A continuous map $T:C\to X$ is <strong>compact</strong> if the image of every bounded subset of $C$ is relatively compact; equivalently, if $T$ is continuous and maps bounded sets into sets whose closure is compact. The map is <strong>finite-dimensional</strong> if its image lies in a finite-dimensional subspace.</p>
+<p><strong>Lemma (Schauder projection).</strong> Let $K \subseteq X$ be compact and $\epsilon>0$. Then there is a finite-dimensional subspace $X_\epsilon \subseteq X$ and a continuous map $P_\epsilon:K\to X_\epsilon$ with $\|P_\epsilon x-x\|\le\epsilon$ for all $x \in K$; the map can be taken to have its image in the convex hull of a finite $\epsilon$-net for $K$.</p>
+<p><em>Proof.</em> Choose $x_1,\dots,x_m \in K$ with the balls $B(x_i,\epsilon)$ covering $K$, let $X_\epsilon=\operatorname{span}\{x_1,\dots,x_m\}$, and set</p>
+<p>$$
+P_\epsilon x=\frac{\sum_{i=1}^m\max\{0,\ \epsilon-\|x-x_i\|\}\,x_i}{\sum_{i=1}^m\max\{0,\ \epsilon-\|x-x_i\|\}} ,
+$$</p>
+<p>the denominator being positive on $K$; the map is continuous, its image lies in the convex hull of the $x_i$, and for $x$ in $K$ the estimate $\|P_\epsilon x-x\|\le\epsilon$ follows because $P_\epsilon x$ is a convex combination of the centres of the balls containing $x$. $\square$</p>
+<h3 id="the-schauder-fixed-point-theorem">The Schauder Fixed Point Theorem</h3>
+<p><strong>Theorem (Schauder).</strong> Let $C$ be a nonempty closed bounded convex subset of a Banach space $X$ and let $T:C\to C$ be continuous and compact. Then $T$ has a fixed point.</p>
+<p><em>Proof.</em> For $n \in \mathbb{N}$ let $P_n:T(C)\to X_n$ be the Schauder projection of the compact set $\overline{T(C)}$ with constant $1/n$, and put $T_n=P_n\circ T$. Then $T_n$ maps $C$ into the finite-dimensional convex set $C_n=X_n\cap C$, and the Brouwer fixed point theorem of <em>Degree Theory and the Brouwer Fixed Point Theorem</em> gives $x_n \in C_n$ with $T_nx_n=x_n$. Since $T(C)$ is relatively compact and the projection moves points by at most $1/n$,</p>
+<p>$$
+\|x_n-Tx_n\|=\|T_nx_n-Tx_n\|\le1/n ,
+$$</p>
+<p>so $(Tx_n)$ has a convergent subsequence, say $Tx_{n_k}\to x^* \in\overline{T(C)}\subseteq C$; then $x_{n_k}=T_{n_k}x_{n_k}\to x^*$ as well, and continuity of $T$ gives $Tx^*=\lim Tx_{n_k}=x^*$. $\square$</p>
+<p>The proof is the model of the passage from the finite-dimensional to the infinite-dimensional theory: the finite-dimensional theorem is applied to the projections, and the compactness of $T$ upgrades the approximate fixed points to an exact one.</p>
+<p><strong>Corollary (unbounded convex sets).</strong> If $C$ is a closed convex set and $T:C\to C$ is continuous and compact with $T(C)$ bounded, then $T$ has a fixed point: choose $r$ with $T(C)\subseteq B(0,r)$ and apply Schauder's theorem to the closed bounded convex set $C\cap\overline{B(0,r)}$, which is invariant under $T$. If the fixed point is sought in a specified bounded open set rather than anywhere in $C$, the degree theory of the next section is used instead.</p>
+<p><strong>Corollary (compact convex sets).</strong> Let $C$ be a compact convex subset of $X$ and $T:C\to C$ continuous. Then $T$ has a fixed point, since $T$ is compact and $C$ is closed, bounded and convex; in particular every nonexpansive self-map of a compact convex set has a fixed point. The generalisation to a weakly compact convex set and a nonexpansive map, in the form of the Ryll-Nardzewski theorem, needs the weak topology and the existence of an invariant mean, and its statement and proof belong to the topological fixed point theory .</p>
+<h2 id="the-lerayschauder-degree">The Leray–Schauder Degree</h2>
+<h3 id="construction-and-properties">Construction and Properties</h3>
+<p><strong>Definition.</strong> Let $X$ be a Banach space, $\Omega \subseteq X$ a bounded open set, and $T:\overline\Omega\to X$ continuous and compact with $p \notin(I-T)(\partial\Omega)$. The <strong>Leray–Schauder degree</strong> $\deg(I-T,\Omega,p)$ is the integer defined by finite-dimensional approximation: choose a finite-dimensional subspace $X_\epsilon$ containing $p$ and a Schauder projection $P_\epsilon$ of the compact set $\overline{T(\overline\Omega)}$ with constant $\epsilon$; on a finite-dimensional subspace containing $X_\epsilon$ and invariant for the projected map, the Brouwer degree of $I-P_\epsilon T$ at $p$ relative to $\Omega\cap X_\epsilon$ is defined, and the value is independent of the approximation once $\epsilon$ is small enough.</p>
+<p><strong>Theorem (properties of the degree).</strong> The integer $\deg(I-T,\Omega,p)$ is well defined and has the following properties:</p>
+<p>(i) <strong>Normalisation.</strong> $\deg(I,\Omega,p)=1$ if $p \in\Omega$, and $\deg(I,\Omega,p)=0$ if $p \notin\overline\Omega$; in finite dimensions the integer reduces to the Brouwer degree of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>.</p>
+<p>(ii) <strong>Solvability.</strong> If $\deg(I-T,\Omega,p)\neq0$ then $p \in(I-T)(\Omega)$, so the equation $x-Tx=p$ has a solution in $\Omega$.</p>
+<p>(iii) <strong>Additivity.</strong> If $\Omega_1,\Omega_2$ are disjoint open subsets of $\Omega$ with $p \notin(I-T)(\overline\Omega\setminus(\Omega_1\cup\Omega_2))$, then $\deg(I-T,\Omega,p)=\deg(I-T,\Omega_1,p)+\deg(I-T,\Omega_2,p)$.</p>
+<p>(iv) <strong>Homotopy invariance.</strong> If $H:[0,1]\times\overline\Omega\to X$ is continuous, $H(t,\cdot)$ compact for every $t$, and $p \notin(I-H(t,\cdot))(\partial\Omega)$ for every $t$, then $\deg(I-H(t,\cdot),\Omega,p)$ is independent of $t$.</p>
+<p>(v) <strong>Excision.</strong> If $\Omega_0 \subseteq\Omega$ is open and $p \notin(I-T)(\overline\Omega\setminus\Omega_0)$, then $\deg(I-T,\Omega,p)=\deg(I-T,\Omega_0,p)$.</p>
+<p><em>Proof (sketch).</em> For the finite-dimensional case the statements are those of the Brouwer degree, cited from <em>Degree Theory and the Brouwer Fixed Point Theorem</em>; for the general case one observes that the approximation used in the definition has a uniform bound on the finite-dimensional degrees when the homotopy stays away from $p$ on the boundary, by the homotopy property in finite dimensions, and the integer obtained is therefore independent of the choice. The properties follow by passing to the limit in the corresponding finite-dimensional identities. $\square$</p>
+<p><strong>Corollary.</strong> $\deg(I-T,\Omega,p)$ depends only on the restriction of $T$ to $\partial\Omega$ and on the connected component of $X\setminus(I-T)(\partial\Omega)$ containing $p$; in particular, if $T$ is not defined on all of $\overline\Omega$ but only on a neighbourhood of $\overline\Omega$, the degree is unchanged.</p>
+<h3 id="the-continuation-theorem-and-schauders-consequence">The Continuation Theorem and Schauder's Consequence</h3>
+<p><strong>Theorem (Leray–Schauder continuation).</strong> Let $H:[0,1]\times\overline\Omega\to X$ be a compact homotopy with $H(0,\cdot)=0$ and with $x \neq H(t,x)$ for all $x \in\partial\Omega$ and $t \in[0,1]$. Then $H(1,\cdot)$ has a fixed point in $\Omega$.</p>
+<p><em>Proof.</em> By homotopy invariance and normalisation, $\deg(I-H(1,\cdot),\Omega,0)=\deg(I,\Omega,0)=1$, and the solvability property gives a fixed point. $\square$</p>
+<p>The theorem is the standard tool for existence in nonlinear problems: one embeds the given equation in a one-parameter family joining it to the trivial equation, proves the a priori bound that keeps the fixed points away from the boundary, and concludes.</p>
+<p><strong>Theorem (Schaefer).</strong> Let $T:X\to X$ be continuous and compact, and suppose the set</p>
+<p>$$
+S=\{x \in X:x=\lambda\,Tx \text{ for some } \lambda \in[0,1]\}
+$$</p>
+<p>is bounded. Then $T$ has a fixed point.</p>
+<p><em>Proof.</em> Choose $r>\sup_{x \in S}\|x\|$ and $\Omega=B(0,r)$; the homotopy $H(t,x)=t\,Tx$ has no fixed point on $\partial\Omega$ for $t \in[0,1]$, because a fixed point with $\|x\|=r$ would lie in $S$; the continuation theorem applies. $\square$</p>
+<p><strong>Corollary (Schauder for unbounded sets).</strong> If $C$ is a closed convex set and $T:C\to C$ is continuous and compact with $T(C)$ bounded, then $T$ has a fixed point: take $r$ with $T(C)\subseteq B(0,r)$ and apply Schauder's theorem to the closed bounded convex set $C\cap\overline{B(0,r)}$, which is invariant under $T$.</p>
+<h2 id="further-fixed-point-theorems">Further Fixed Point Theorems</h2>
+<h3 id="krasnoselskii-rothe-and-altman">Krasnoselskii, Rothe and Altman</h3>
+<p><strong>Theorem (Krasnoselskii).</strong> Let $C$ be a nonempty closed bounded convex subset of a Banach space $X$, let $S:C\to X$ be a contraction with constant $\kappa<1$, and let $K:C\to X$ be continuous and compact. If $Sx+Ky \in C$ for all $x,y \in C$, then $S+K$ has a fixed point in $C$.</p>
+<p><em>Proof.</em> Extend $S$ to a map of $X$ with the same constant $\kappa$, which is possible because $C$ is a convex subset of a Banach space; then the series $\sum_{j\ge0}S^j$ converges in the operator norm, so $I-S$ is invertible with $(I-S)^{-1}=\sum_{j\ge0}S^j$ and $\|(I-S)^{-1}\|\le\frac1{1-\kappa}$. Put $T=(I-S)^{-1}K$; then $T$ is continuous and compact, as the composition of a continuous map with a compact one. To see that $T(C)\subseteq C$, fix $y \in C$ and let $z$ be the fixed point of the contraction $x\mapsto Sx+Ky$, which exists by the contraction principle; starting the iteration from any $x_0 \in C$, each iterate lies in $C$ by the hypothesis $Sx+Ky \in C$, so the limit $z$ lies in $C$ (which is closed). Hence $T(C)\subseteq C$, Schauder's theorem gives $z=Tz$, and $z=Tz$ means $(I-S)z=Kz$, that is, $z=Sz+Kz$. $\square$</p>
+<p><strong>Theorem (Rothe).</strong> Let $C$ be a nonempty closed bounded convex subset of $X$ with $0 \in C$, and let $T:C\to X$ be continuous and compact with $T(\partial C)\subseteq C$. Then $T$ has a fixed point in $C$.</p>
+<p><strong>Theorem (Altman).</strong> Let $C$ be a nonempty closed bounded convex subset of $X$ with $0 \in C$ and let $T:C\to X$ be continuous and compact. If $\|Tx-x\|^2\ge\|Tx\|^2-\|x\|^2$ for every $x \in\partial C$, then $T$ has a fixed point in $C$.</p>
+<p>The three theorems are different boundary conditions under which the compact map cannot escape the convex set; they are proved from the Leray–Schauder degree by verifying that $\deg(I-T,C,0)\neq0$ on the boundary, and their proofs are the standard ones cited below.</p>
+<h3 id="measures-of-noncompactness-and-condensing-maps">Measures of Noncompactness and Condensing Maps</h3>
+<p><strong>Definition.</strong> The <strong>Kuratowski measure of noncompactness</strong> of a bounded set $A \subseteq X$ is</p>
+<p>$$
+\alpha(A)=\inf\{d>0:A \text{ is covered by finitely many sets of diameter at most } d\},
+$$</p>
+<p>and the <strong>Hausdorff measure of noncompactness</strong> is $\beta(A)=\inf\{r>0:A \text{ has a finite cover by balls of radius } r\}$. A continuous map $T:D\to X$ is <strong>condensing</strong> (or $\alpha$-condensing) if $\alpha(T(A))<\alpha(A)$ for every bounded $A \subseteq D$ with $\alpha(A)>0$.</p>
+<p><strong>Theorem (Darbo–Sadovskii).</strong> Let $C$ be nonempty, closed, bounded and convex and let $T:C\to C$ be continuous and condensing. Then $T$ has a fixed point.</p>
+<p><em>Proof (sketch).</em> One constructs a transfinite sequence of closed convex sets $C_\alpha$ by $C_{\alpha+1}=\overline{\mathrm{conv}}\,T(C_\alpha)$, starting from $C_0=C$, and shows that the ordinal sequence must stabilise at a set with $\alpha=0$, that is, at a compact convex set, on which Schauder's theorem applies. The construction is the standard transfinite one of the theory of condensing maps, cited below. $\square$</p>
+<p>A compact map is condensing, so the theorem contains Schauder's; the value of the extension is that many integral operators and many perturbations of the identity are condensing without being compact, and the theory applies to them.</p>
+<h2 id="the-fixed-point-index">The Fixed Point Index</h2>
+<p><strong>Definition.</strong> For a bounded open set $\Omega \subseteq X$ and a continuous compact map $T:\overline\Omega\to X$ with no fixed point on $\partial\Omega$, the <strong>fixed point index</strong> is</p>
+<p>$$
+i(T,\Omega)=\deg(I-T,\Omega,0).
+$$</p>
+<p><strong>Theorem (properties of the index).</strong> The index satisfies:</p>
+<p>(i) <strong>Normalisation.</strong> $i(T,\Omega)=1$ for the constant map with value in $\Omega$, and $i(T,\Omega)$ is the Brouwer index when an isolated nondegenerate fixed point $x_0$ is concerned, in the sense of the computation below.</p>
+<p>(ii) <strong>Solvability.</strong> $i(T,\Omega)\neq0$ implies that $T$ has a fixed point in $\Omega$.</p>
+<p>(iii) <strong>Additivity.</strong> If $\Omega_1,\Omega_2$ are disjoint open subsets of $\Omega$ and $T$ has no fixed point in $\overline\Omega\setminus(\Omega_1\cup\Omega_2)$, then $i(T,\Omega)=i(T,\Omega_1)+i(T,\Omega_2)$.</p>
+<p>(iv) <strong>Homotopy invariance.</strong> If $H:[0,1]\times\overline\Omega\to X$ is a compact homotopy with no fixed point of $H(t,\cdot)$ on $\partial\Omega$ for any $t$, then $i(H(t,\cdot),\Omega)$ is independent of $t$.</p>
+<p>(v) <strong>Excision.</strong> The index depends only on the values of $T$ on a neighbourhood of the set of its fixed points in $\Omega$.</p>
+<p><em>Proof.</em> The statements are the degree properties of the previous section translated by the definition, since $i(T,\Omega)=\deg(I-T,\Omega,0)$ and a fixed point of $T$ is a zero of $I-T$. $\square$</p>
+<p><strong>Example (the index of a nondegenerate fixed point).</strong> If $T$ is $C^1$ near a fixed point $x_0$, if $I-T'(x_0)$ is invertible, and if $x_0$ is the only fixed point in a small ball $\Omega$, then</p>
+<p>$$
+i(T,\Omega)=\operatorname{sign}\det\bigl(I-T'(x_0)\bigr)
+$$</p>
+<p>in the finite-dimensional case, and $i(T,\Omega)=\pm1$ according to the parity of the number of negative real eigenvalues of $I-T'(x_0)$ in the general case; the index is thus a local invariant computed from the derivative, and the global index is the sum of the local indices by additivity. This is the analytic counterpart of the local-degree formula of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, and it is the beginning of the Lefschetz theory for compact maps, whose topological form belongs to that article.</p>
+<p><strong>Corollary (index and multiplicity).</strong> If the fixed points of $T$ in $\Omega$ are isolated and their indices are $i_1,\dots,i_m$, then $i(T,\Omega)=\sum_ji_j$; consequently an index different from zero gives at least one fixed point, and an index with absolute value exceeding one gives several, counted with multiplicity.</p>
+<h2 id="applications">Applications</h2>
+<p><strong>Example (an integral equation).</strong> Let $k:[0,1]\times[0,1]\to\mathbb{R}$ be continuous and let $g:\mathbb{R}\to\mathbb{R}$ be continuous and bounded; the operator</p>
+<p>$$
+(Tu)(x)=\int_0^1k(x,y)\,g(u(y))\,dy
+$$</p>
+<p>is continuous and compact on $C[0,1]$ by the Ascoli–Arzelà theorem, and if $\|g\|_\infty\int|k|\,dy\le1$ then $T$ maps a ball into itself and Schauder's theorem gives a solution of $u=Tu$. The example is the standard existence theorem for a nonlinear integral equation, and the detailed regularity theory belongs andboth.</p>
+<p><strong>Example (the Cauchy problem).</strong> The local existence theorem of Peano for $y'=f(x,y)$ follows by applying Schauder's theorem to the compact operator $u\mapsto y_0+\int_{x_0}^x f(t,u(t))dt$ on a ball in $C[x_0-\delta,x_0+\delta]$; the a priori bound that makes the ball invariant is the boundedness of $f$ on the relevant strip. The theorem, its sharpness and the uniqueness theory belong to <em>Differential Equations</em>.</p>
+<p><strong>Example (a semilinear elliptic problem).</strong> For the boundary problem $-\Delta u=g(u)$ on a bounded domain with $u=0$ on the boundary, the inverse of $-\Delta$ with Dirichlet conditions is compact on the appropriate space, and the problem is equivalent to the fixed point equation $u=(-\Delta)^{-1}g(u)$; the growth and sign conditions on $g$ that make the Schauder or Schaefer hypotheses hold are the hypotheses of the existence theory, which belongs .</p>
+<p><strong>Example (a monotone perturbation).</strong> If $A$ is maximal monotone and $K$ is compact, the equation $Au+Ku\ni0$ is solved by combining the surjectivity theorem for monotone operators of <em>Nonlinear Functional Analysis</em> with the Leray–Schauder degree; the abstract scheme is the content of the present article, and the concrete applications are to variational inequalities and to evolution equations, treated and <em>Differential Equations</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The analytic fixed point theory solves $x=Tx$ by two devices: completeness together with contractivity, and compactness of the map. The <strong>contraction principle</strong> states that a contraction of a complete metric space has a unique fixed point, with the iterates converging geometrically at the rate $d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}d(x,Tx)$; completeness is essential, and the local, Edelstein and Rakotch forms weaken the hypotheses without abandoning the iteration. The <strong>Schauder projection</strong> replaces a compact set by a finite-dimensional approximant at distance $\epsilon$, and the <strong>Schauder theorem</strong> applies the Brouwer fixed point theorem to the projected maps and passes to the limit, giving a fixed point for every continuous compact self-map of a nonempty closed bounded convex set. From it follow the fixed point theorem for continuous maps of compact convex sets and, with an a priori bound, for maps of unbounded convex sets with bounded image.</p>
+<p>The <strong>Leray–Schauder degree</strong> $\deg(I-T,\Omega,p)$ is the integer defined for a bounded open $\Omega$ and a compact $T$ with $p$ outside $(I-T)(\partial\Omega)$ by finite-dimensional approximation, and it satisfies normalisation, solvability, additivity, homotopy invariance and excision; the solution of $x-Tx=p$ in $\Omega$ is guaranteed by a nonzero degree. The <strong>continuation theorem</strong> deduces a fixed point of $H(1,\cdot)$ from the absence of fixed points of the homotopy on the boundary and from $H(0,\cdot)=0$, and <strong>Schaefer's theorem</strong> gives a fixed point of a compact map whose homotopy fixed-point set is bounded. <strong>Krasnoselskii's theorem</strong> solves $x=Sx+Kx$ for a contraction $S$ and a compact $K$ on a closed bounded convex set by applying Schauder to $(I-S)^{-1}K$, and the boundary conditions of <strong>Rothe</strong> and <strong>Altman</strong> are further criteria for the same conclusion. The <strong>measures of noncompactness</strong> and the <strong>Darbo–Sadovskii theorem</strong> extend the theory to condensing maps, which need not be compact. The <strong>fixed point index</strong> $i(T,\Omega)=\deg(I-T,\Omega,0)$ satisfies the same properties, and the index of an isolated nondegenerate fixed point is computed from $I-T'(x_0)$; sums of local indices give the global index and hence multiplicity statements. The topological degree in finite dimensions, the Brouwer fixed point theorem and the Lefschetz fixed point theorem are the subject of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>; the present article is the analytic theory that uses them.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$</td>
+<td>Banach space</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>closed convex subset</td>
+</tr>
+<tr>
+<td>$\Omega$</td>
+<td>bounded open subset</td>
+</tr>
+<tr>
+<td>$T$, $S$, $K$, $H$</td>
+<td>maps and homotopies</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>contraction constant</td>
+</tr>
+<tr>
+<td>$\overline B(x_0,r)$</td>
+<td>closed ball</td>
+</tr>
+<tr>
+<td>$P_\epsilon$</td>
+<td>Schauder projection</td>
+</tr>
+<tr>
+<td>$\deg(I-T,\Omega,p)$</td>
+<td>Leray–Schauder degree</td>
+</tr>
+<tr>
+<td>$i(T,\Omega)$</td>
+<td>fixed point index</td>
+</tr>
+<tr>
+<td>$\alpha(A)$, $\beta(A)$</td>
+<td>Kuratowski and Hausdorff measures of noncompactness</td>
+</tr>
+<tr>
+<td>$\overline{\mathrm{conv}}$</td>
+<td>closed convex hull</td>
+</tr>
+<tr>
+<td>$(-\Delta)^{-1}$</td>
+<td>inverse of the Dirichlet Laplacian</td>
+</tr>
+<tr>
+<td>$C[0,1]$</td>
+<td>space of continuous functions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Stefan Banach, "Sur les opérations dans les ensembles abstraits et leur application aux équations intégrales", <em>Fundamenta Mathematicae</em> 3 (1922), 133–181, for the contraction principle and its applications.</li>
+<li>Juliusz Schauder, "Der Fixpunktsatz in Funktionalräumen", <em>Studia Mathematica</em> 2 (1930), 171–180, for the fixed point theorem for compact maps.</li>
+<li>Jean Leray and Juliusz Schauder, "Topologie et équations fonctionnelles", <em>Annales Scientifiques de l'École Normale Supérieure</em> 51 (1934), 45–78, for the degree of a compact perturbation of the identity and the continuation theorem.</li>
+<li>Mark A. Krasnoselskii, <em>Topological Methods in the Theory of Nonlinear Integral Equations</em> (Pergamon, 1964), for the fixed point theorems of Krasnoselskii, Rothe and Altman and their applications.</li>
+<li>Felix E. Browder, "On a generalization of the Schauder fixed point theorem", <em>Duke Mathematical Journal</em> 26 (1959), 291–303, for the theory of condensing maps and the fixed point index.</li>
+<li>Klaus Deimling, <em>Nonlinear Functional Analysis</em> (Springer, 1985), for the Leray–Schauder degree, the fixed point index and the boundary conditions.</li>
+<li>Roger D. Nussbaum, "The fixed point index and fixed point theorems", in <em>Topological Methods in Nonlinear Functional Analysis</em> (American Mathematical Society, 1983), for the fixed point index and its computation.</li>
+<li>Andrzej Granas and James Dugundji, <em>Fixed Point Theory</em> (Springer, 2003), for the systematic treatment of the finite-dimensional degree, the infinite-dimensional extension and the applications to differential equations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

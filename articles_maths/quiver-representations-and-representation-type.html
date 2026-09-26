@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiver Representations and Representation Type — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quiver-representations-and-representation-type"><strong>Quiver Representations and Representation Type</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A quiver is a finite directed graph, and a representation of a quiver assigns to each vertex a module and to each arrow a linear map between the modules at its ends; a morphism of representations is a family of maps compatible with the arrows. The collection of representations of a quiver $Q$ with values in the $k$-modules is equivalent to the category of modules over the <strong>path algebra</strong> $kQ$, whose basis is the set of directed paths and whose multiplication is the concatenation of paths. In this way the representation theory of quivers becomes a chapter of the module theory: the simple modules are the one-dimensional modules at the vertices, the indecomposables are the modules with a local endomorphism ring, and the classification of the representations up to isomorphism is the classification of the indecomposable $kQ$-modules. The path algebra is hereditary, so every module has a projective resolution of length at most one and the whole homological algebra of the category is controlled by the arrows.</p>
+<p>The guiding question is the classification of the indecomposable representations, and the answer partitions the quivers into two great families. A quiver is of <strong>finite representation type</strong> when there are only finitely many indecomposable representations up to isomorphism; by Gabriel's theorem this happens exactly when the underlying graph of the quiver is a disjoint union of Dynkin diagrams of types $A$, $D$, $E$, and then the dimension vectors of the indecomposables are the positive roots of the diagram, one indecomposable for each. A quiver is of <strong>tame representation type</strong> when the indecomposables in each dimension occur in finitely many one-parameter families; the extended Dynkin or affine diagrams are exactly the connected tame quivers. All the remaining quivers are <strong>wild</strong>, their representation theory containing the classification of the modules over a free algebra on two generators, so that no reasonable classification exists. For finite-dimensional algebras over a field the dichotomy is exhaustive: Drozd's theorem says every algebra is tame or wild and never both.</p>
+<p>This article develops quivers and paths, the path algebra and its basic properties, representations and their equivalence with modules, the simple, projective and injective representations and the standard resolution, the Cartan matrix and the numerical invariants of dimension vectors, Gabriel's theorem for finite representation type, the tame and wild dichotomy with the Kronecker and three-Kronecker examples, and the relations with the later representation-theoretic articles. It follows<em>Homological Algebra</em>, *Ext.</p>
+<p>Throughout, $k$ is a field and representations are finite-dimensional over $k$ unless stated; a quiver is finite (finitely many vertices and arrows) and the composition of paths is read from right to left, so that a path $a_1a_2\cdots a_n$ has source the source of $a_n$ and target the target of $a_1$. Where a classification is stated in terms of the roots of a diagram, the corresponding quadratic function on the dimension lattice is named only and its theory — the forms, their signatures and their classification — belongs to Part II, where forms are available; the present article uses the Dynkin and affine diagrams as graphs and the roots as lattice points.</p>
+<h2 id="quivers-paths-and-the-path-algebra">Quivers, Paths and the Path Algebra</h2>
+<h3 id="quivers">Quivers</h3>
+<p><strong>Definition.</strong> A <strong>quiver</strong> $Q=(Q_0,Q_1,s,t)$ consists of a finite set $Q_0$ of <strong>vertices</strong>, a finite set $Q_1$ of <strong>arrows</strong>, and maps $s,t:Q_1\to Q_0$ giving the <strong>source</strong> and <strong>target</strong> of each arrow. A <strong>path</strong> of length $n\ge1$ is a sequence $a_1a_2\cdots a_n$ of arrows with $t(a_i)=s(a_{i+1})$ for $i=1,\dots,n-1$; the paths of length $0$ are the <strong>trivial paths</strong> $e_i$ at the vertices. The quiver is <strong>connected</strong> if its underlying undirected graph is connected, it is <strong>acyclic</strong> if it has no directed cycle, and its <strong>underlying graph</strong> has the vertices $Q_0$ and an edge for each arrow, forgetting the orientation.</p>
+<p><strong>Definition.</strong> The <strong>path algebra</strong> $kQ$ is the $k$-module with basis the paths of $Q$, with the product of two paths the concatenation if it is defined and $0$ otherwise, extended bilinearly. It is graded by the length of the path, $kQ=\bigoplus_{n\ge0}kQ_n$ with $kQ_n$ spanned by the paths of length $n$, and it is finite-dimensional exactly when $Q$ is acyclic.</p>
+<p><strong>Proposition.</strong> The path algebra $kQ$ is an associative $k$-algebra with unit $1=\sum_{i\in Q_0}e_i$, the $e_i$ are pairwise orthogonal idempotents, and $kQ_n$ is spanned by $kQ_{n-1}Q_1$: the algebra is generated by the $e_i$ and the arrows. For an acyclic quiver the length grading is a nonnegative grading with $kQ_0=\prod_{i}k$, and the idempotents $e_i$ are primitive and central in $kQ_0$ though not in $kQ$.</p>
+<p><em>Proof.</em> The associativity of concatenation of paths is the associativity of the composition of maps. The idempotent relations $e_i^2=e_i$, $e_ie_j=0$ for $i\neq j$, and $e_{s(a)}a=a=ae_{t(a)}$ follow from the definitions, and the unit is the sum of the $e_i$ because every path begins and ends at a vertex. The generation statement is that every path is the concatenation of its arrows. $\square$</p>
+<p><strong>Example.</strong> For the quiver with one vertex and no arrows, $kQ=k$. For the quiver with one vertex and one loop $a$, $kQ=k[a]$ is the polynomial algebra in one variable, infinite-dimensional and not semiperfect. For the quiver $1\xrightarrow{\ a\ }2$, $kQ$ has basis $e_1,e_2,a$ with $a^2=0$, the algebra of the $2\times2$ lower-triangular matrices. For the quiver with two vertices and arrows $1\to2$ and $2\to1$, $kQ$ has basis the $e_i$ and the paths $ab$, $ba$, $aba$, $bab,\dots$, infinite-dimensional, and contains a cycle.</p>
+<h3 id="representations-and-modules">Representations and Modules</h3>
+<p><strong>Definition.</strong> A <strong>representation</strong> of a quiver $Q$ is the data of a $k$-module $V_i$ for each vertex $i$ and a $k$-linear map $V_a:V_{s(a)}\to V_{t(a)}$ for each arrow $a$. A <strong>morphism</strong> $\varphi:V\to W$ is a family of $k$-linear maps $\varphi_i:V_i\to W_i$ with $W_a\varphi_{s(a)}=\varphi_{t(a)}V_a$ for every arrow. The <strong>dimension vector</strong> of a representation is the element $\underline{\dim}V=\sum_{i}(\dim_kV_i)\,[i]$ of the free abelian group $\mathbb{Z}^{Q_0}$ with basis the vertices, and the <strong>total dimension</strong> is $\sum_i\dim_kV_i$.</p>
+<p><strong>Theorem.</strong> Let $Q$ be a quiver and let $kQ$-$\mathrm{Mod}$ be the category of left $kQ$-modules. The functor sending a representation $V$ to the $kQ$-module $\bigoplus_{i\in Q_0}V_i$ on which $e_i$ acts as the projection onto $V_i$ and an arrow $a$ acts by $V_a$ on the appropriate summand and by $0$ on the others is an equivalence of categories
+$$
+\mathrm{Rep}_k(Q)\xrightarrow{\ \sim\ }kQ\text{-}\mathrm{Mod},
+$$
+which restricts to an equivalence between the finite-dimensional representations and the finite-dimensional modules.</p>
+<p><em>Proof.</em> A $kQ$-module $M$ restricts to the $k$-modules $M_i=e_iM$ and the maps $a:M_{s(a)}\to M_{t(a)}$ given by the action of the arrow; the relations $a=ae_{t(a)}=e_{s(a)}a$ show that the action on each summand lands where it should, and the concatenation of paths matches the composition of the maps. Conversely, a representation extends to a $kQ$-module by linear extension over the paths, and the two constructions are inverse up to the canonical isomorphisms. The statement about finite-dimensional objects follows because $\dim_kM=\sum_i\dim_kM_i$. $\square$</p>
+<p><strong>Definition.</strong> A representation is <strong>simple</strong> if it has no nonzero proper subrepresentation, <strong>indecomposable</strong> if it is not the direct sum of two nonzero subrepresentations, and <strong>semi-simple</strong> if it is a direct sum of simples. The category of representations is <strong>abelian</strong>, with kernels, images and cokernels computed vertexwise.</p>
+<p><strong>Theorem (Krull–Schmidt).</strong> Every finite-dimensional representation of a quiver decomposes as a direct sum of indecomposable representations, and the decomposition is unique up to an isomorphism and a permutation of the summands.</p>
+<p><em>Proof.</em> The category of finite-dimensional $kQ$-modules is a module category over a finite-dimensional algebra, hence every object has finite length and a local endomorphism ring for each indecomposable summand; the Krull–Schmidt theorem for modules over an Artinian ring applies. $\square$</p>
+<h2 id="projectives-simples-and-the-standard-resolution">Projectives, Simples and the Standard Resolution</h2>
+<h3 id="the-simple-and-the-indecomposable-projective-representations">The Simple and the Indecomposable Projective Representations</h3>
+<p><strong>Definition.</strong> For a vertex $i$ the <strong>simple representation</strong> $S_i$ has $k$ at the vertex $i$, zero elsewhere, and all arrows zero; it is simple because any nonzero subrepresentation contains the whole one-dimensional space at $i$. The <strong>projective representation</strong> $P_i=kQe_i$ has at a vertex $j$ the $k$-module $e_jkQe_i$, the linear span of the paths from $i$ to $j$, with the maps given by concatenation. Dually the <strong>injective representation</strong> $I_i$ is the dual construction.</p>
+<p><strong>Proposition.</strong> The $S_i$, $i\in Q_0$, are a complete set of pairwise non-isomorphic simple representations. The $P_i$ are projective and indecomposable with $\operatorname{End}(P_i)=k$, they are the projective covers of the $S_i$, and $P_i$ has a unique maximal subrepresentation, the span of the paths of positive length. The dimension vector of $P_i$ is $\sum_j p_{ij}[j]$, where $p_{ij}$ is the number of paths from $i$ to $j$, and $P_i$ is finite-dimensional exactly when only finitely many such paths exist.</p>
+<p><em>Proof.</em> The simple modules of a finite-dimensional algebra are the quotients of the indecomposable projectives by their maximal submodules; here the maximal subrepresentation of $P_i$ is the span of the paths of positive length, and the quotient is $S_i$. The endomorphism ring of $P_i$ is $e_ikQe_i=k$, spanned by the trivial path, so $P_i$ is indecomposable. The dimension count is immediate from the definition of $P_i$ as $kQe_i$. $\square$</p>
+<p><strong>Theorem (standard resolution).</strong> For each vertex $i$ there is an exact sequence of $kQ$-modules
+$$
+0\to\bigoplus_{a\in Q_1,\ s(a)=i}P_{t(a)}\xrightarrow{\ \alpha\ }P_i\to S_i\to0,
+$$
+where $\alpha$ sends the copy of $P_{t(a)}$ to the submodule generated by $a$. Consequently the path algebra $kQ$ is <strong>hereditary</strong>: every $kQ$-module has projective dimension at most one, and for finite-dimensional modules $M,N$ the homological dimension count gives
+$$
+\dim_k\operatorname{Hom}_{kQ}(M,N)-\dim_k\operatorname{Ext}^1_{kQ}(M,N)=\langle\underline{\dim}M,\underline{\dim}N\rangle,
+\qquad
+\langle d,e\rangle=\sum_{i\in Q_0}d_ie_i-\sum_{a\in Q_1}d_{s(a)}e_{t(a)}.
+$$
+The function $\langle\,,\,\rangle$ is additive in each argument, and $\langle d,e\rangle$ coincides with the alternating sum of the dimensions of the Ext groups in all degrees because the higher Ext groups vanish.</p>
+<p><em>Proof.</em> The map $\alpha$ is injective because the paths from $t(a)$ that begin with $a$ are exactly the paths of $P_i$ of positive length beginning with $a$, and their sum over the arrows out of $i$ is the whole maximal subrepresentation; the quotient is $S_i$ by the description of the maximal subrepresentation. The exact sequence exhibits a projective resolution of $S_i$ of length one, and a finite-dimensional module has a finite filtration with simple factors, each with a length-one projective resolution, so the global dimension is at most one. The dimension count follows by applying $\operatorname{Hom}_{kQ}(M,-)$ to the resolution of $N$ filtered by its composition factors, or by summing the standard sequences for the simples; the right-hand side is the alternating sum of the dimensions of $\operatorname{Hom}(P,M)$ and $\operatorname{Hom}(\alpha,M)$, which computes the number. $\square$</p>
+<p><strong>Corollary (Cartan matrix).</strong> The <strong>Cartan matrix</strong> of $Q$ has entries $C_{ij}=\dim_k\operatorname{Hom}_{kQ}(P_i,P_j)$; for an acyclic quiver this is the number of paths from $j$ to $i$, so that the $j$-th column of $C$ is the dimension vector of $P_j$. The numerical invariant of the standard resolution is $\langle d,e\rangle=dEe^{\mathsf T}$ for the dimension vectors written as row vectors, where $E$ has entries $E_{ij}=\delta_{ij}-\#\{\text{arrows }i\to j\}$; for acyclic $Q$ the matrix $E$ is inverse to the matrix whose $i$-th row is the dimension vector of $P_i$, that is, $EC^{\mathsf T}=I$.</p>
+<p><em>Proof.</em> The functor $\operatorname{Hom}(P_i,-)$ is evaluation at the vertex $i$, so $\operatorname{Hom}(P_i,P_j)$ is the vector space of $P_j$ at $i$, which is spanned by the paths from $j$ to $i$; this gives the entries of $C$ and shows that the $j$-th column of $C$ is the dimension vector of $P_j$ by the previous proposition. The inverse of $E$ is the matrix of dimension vectors because the standard resolutions of the simples give the recurrence $\sum_j(\delta_{ij}-\#\{i\to j\})\,(\underline{\dim}P_j)_k=\delta_{ik}$, which is the statement $EC^{\mathsf T}=I$; for an acyclic quiver the matrix of dimension vectors is triangular in a suitable ordering of the vertices. $\square$</p>
+<p><strong>Example.</strong> For the quiver $1\to2$ the Cartan matrix has $C_{11}=C_{22}=1$, $C_{12}=0$ and $C_{21}=1$, its columns being the dimension vectors $(1,1)$ of $P_1$ and $(0,1)$ of $P_2$; the standard resolution of $S_1$ is $0\to P_2\to P_1\to S_1\to0$ and that of $S_2$ is $0\to0\to P_2\to S_2\to0$. Taking dimensions, every representation of the quiver is determined by the ranks of the arrows, and the indecomposables are $S_1$, $S_2$ and the two-dimensional representation $k\xrightarrow{\ \sim\ }k$.</p>
+<h2 id="gabriels-theorem-and-finite-representation-type">Gabriel's Theorem and Finite Representation Type</h2>
+<h3 id="roots-and-the-classification">Roots and the Classification</h3>
+<p><strong>Definition.</strong> Let $Q$ be a connected acyclic quiver with underlying graph $\Gamma$. A <strong>root</strong> is a nonzero vector in $\mathbb{Z}^{Q_0}$ which is the dimension vector of some indecomposable representation, and a <strong>positive root</strong> is a root all of whose entries are nonnegative. For a Dynkin diagram the positive roots are the finitely many vectors obtained from the simple roots by the reflections of the Weyl group, and they are counted by the formulas below.</p>
+<p><strong>Theorem (Gabriel).</strong> Let $Q$ be a connected quiver. Then $Q$ is of finite representation type, that is, it has finitely many indecomposable representations up to isomorphism, if and only if its underlying graph is a Dynkin diagram of type $A_n$ $(n\ge1)$, $D_n$ $(n\ge4)$, $E_6$, $E_7$ or $E_8$. In that case:
+- the assignment sending an indecomposable to its dimension vector is a bijection onto the set of positive roots;
+- the number of indecomposables is $n(n+1)/2$ for $A_n$, $n(n-1)$ for $D_n$, and $36,63,120$ for $E_6,E_7,E_8$;
+- every indecomposable is determined up to isomorphism by its dimension vector, and the endomorphism ring of an indecomposable is $k$.</p>
+<p><em>Proof (in outline).</em> The necessity of the Dynkin condition is reduced to the impossibility of the affine diagrams: the extended Dynkin diagrams are realised as full subquivers whose representations are in bijection with the positive imaginary roots, and they already yield infinitely many indecomposables. The sufficiency is an induction on the dimension vector using the reflection functors, which replace the orientation of a sink or a source by the opposite orientation and preserve the indecomposables of the diagrams; the dimension vectors organise into the root system of the diagram, and the induction terminates because the positive roots are finite in number. The count of the positive roots is the classical count for the root systems of types $A$, $D$, $E$, and the computation of $n(n+1)/2$ and $n(n-1)$ is by the Weyl dimension formula. $\square$</p>
+<p><strong>Example ($A_2$).</strong> For the quiver $1\to2$ the positive roots are $(1,0)$, $(0,1)$ and $(1,1)$, corresponding to $S_1$, $S_2$ and $k\to k$, three indecomposables as found above, and the count $n(n+1)/2=3$ for $n=2$.</p>
+<p><strong>Example ($A_3$).</strong> For the quiver $1\to2\to3$ the positive roots are $(1,0,0)$, $(0,1,0)$, $(0,0,1)$, $(1,1,0)$, $(0,1,1)$, $(1,1,1)$, six in number, and each is realised by exactly one indecomposable representation; the count is $3\cdot4/2=6$.</p>
+<p><strong>Example ($A_2$ with opposite orientation).</strong> The quiver $1\leftarrow2$ has the same underlying graph and the same three indecomposables, the two-dimensional one being $k$ at both vertices with an isomorphism; the reflection functors implement the change of orientation.</p>
+<p><strong>Example.</strong> For the quiver with one vertex and one loop the path algebra is $k[a]$, whose indecomposables are the $k[a]/(a-\lambda)^m$ for $\lambda\in k$ and $m\ge1$; there are infinitely many as soon as $k$ is infinite, and the underlying graph is the affine diagram $\tilde A_1$, so the quiver is not of finite type. This is the algebraic content of the Jordan form.</p>
+<h3 id="tame-and-wild">Tame and Wild</h3>
+<p><strong>Definition.</strong> A quiver $Q$ is of <strong>tame representation type</strong> if for every dimension vector $d$ the isomorphism classes of indecomposable representations of dimension $d$ form a finite union of one-parameter families. It is of <strong>wild representation type</strong> if there is a full exact embedding of the category of finite-dimensional modules over a free algebra on two generators into the category of finite-dimensional $kQ$-modules.</p>
+<p><strong>Theorem (classification of tame quivers).</strong> A connected quiver $Q$ is of tame representation type and not of finite type if and only if its underlying graph is an extended Dynkin or affine diagram $\tilde A_n$, $\tilde D_n$, $\tilde E_6$, $\tilde E_7$, $\tilde E_8$. In that case the indecomposables of dimension $d$ form a finite number of one-parameter families indexed by the points of the projective line over $k$, and the dimension vectors organise into the positive roots of the affine root system with the imaginary root $\delta$ of dimension $(1,1,\dots,1)$ or its analogue.</p>
+<p><em>Proof (in outline).</em> The affine diagrams contain a copy of the Kronecker quiver as a full subquiver in such a way that every indecomposable of the Kronecker type occurs; conversely the regular representations of an affine quiver are classified by the rank and degree of a vector bundle on the projective line, which supplies the one-parameter families. The embedding statement and the classification of the representations of the affine quivers are due to Donovan–Freislich and Nazarova; the key case is the Kronecker quiver below. $\square$</p>
+<p><strong>Example (Kronecker quiver).</strong> Let $Q$ be the quiver with two vertices $1,2$ and two arrows $a,b:1\to2$; this is the affine diagram $\tilde A_1$. A representation is a pair of $k$-modules $V_1,V_2$ with two linear maps $a,b:V_1\to V_2$. The indecomposables are:
+- the preprojective representations of dimension vectors $(n,n+1)$ for $n\ge0$, beginning with $S_2$ of dimension $(0,1)$;
+- the preinjective representations of dimension vectors $(n+1,n)$ for $n\ge0$, beginning with $S_1$ of dimension $(1,0)$;
+- the regular representations of dimension vectors $(n,n)$ for $n\ge1$, classified by the orbits of the action of $GL_n(k)$ on the space of pairs of $n\times n$ matrices, which is the classical classification of matrix pencils by the Kronecker normal form: for each $n\ge1$ there is one one-parameter family, indexed by the slope in $k\cup\{\infty\}$.
+Since there are infinitely many regular indecomposables of dimension $(1,1)$ alone when $k$ is infinite, the quiver is tame but not of finite type.</p>
+<p><strong>Example (three-Kronecker quiver).</strong> Let $Q$ have two vertices and three arrows $a,b,c:1\to2$. The dimension-$(n,n)$ representations are the triples of $n\times n$ matrices, whose classification up to simultaneous conjugation contains the classification of pairs of matrices up to simultaneous conjugation; that problem is wild, since it contains the representations of the free algebra on two generators. Hence the three-Kronecker quiver is of wild representation type, and the pattern is general: a connected quiver with underlying graph other than a Dynkin or affine diagram is wild.</p>
+<p><strong>Theorem (Drozd's dichotomy).</strong> Let $A$ be a finite-dimensional algebra over an algebraically closed field $k$. Then $A$ is either of tame representation type or of wild representation type, and not both. For the path algebra of a connected quiver the type is determined by the underlying graph as above: Dynkin for finite, affine for tame, the rest wild.</p>
+<p><em>Proof (in outline).</em> The dichotomy is Drozd's theorem; the refinement for path algebras combines the classification of the tame quivers with the observation that every non-Dynkin, non-affine graph contains a subgraph which is either $\tilde A_1$ with three arrows or a suitable $\tilde D_4$ with an extra branch, and both are wild by an explicit reduction from pairs of matrices. $\square$</p>
+<p><strong>Remark.</strong> The criterion for the type of a quiver is usually stated with the help of the quadratic function on $\mathbb{Z}^{Q_0}$ associated with the graph, whose study is the theory of forms and belongs to Part II, where the forms and their classification are available; the present article uses only the Dynkin and affine diagrams as graphs and the roots as lattice points.</p>
+<h2 id="auslanderreiten-theory-and-tilting-pointers">Auslander–Reiten Theory and Tilting: Pointers</h2>
+<p><strong>Remark.</strong> The classification above is refined by two further theories. The <strong>Auslander–Reiten quiver</strong> of a representation-finite or tame algebra has as vertices the indecomposable representations and as arrows the irreducible morphisms, and the <strong>Auslander–Reiten translation</strong> $\tau$ gives the almost split sequences; for a hereditary algebra the translation is computed by the Coxeter transformation, and the Auslander–Reiten quiver of a Dynkin quiver is the corresponding finite translation quiver. The <strong>tilting modules</strong> give equivalences between the derived categories of two algebras, and for the path algebras of quivers the tilting theory relates the representation theory of a quiver to that of a different orientation of the same underlying graph. Both are developed.</p>
+<p><strong>Example.</strong> For the quiver $1\to2$ the Auslander–Reiten quiver has the three indecomposables $S_2$, $S_1$ and the two-dimensional $M=k\xrightarrow{\;\sim\;}k$, with irreducible morphisms $S_2\to M$ and $M\to S_1$; the unique almost split sequence is $0\to S_2\to M\to S_1\to0$, which is the standard sequence $0\to S_2\to P_1\to S_1\to0$, and the translation sends $S_1$ to $S_2$ and fixes $M$, the projective–injective representation.</p>
+<h2 id="summary">Summary</h2>
+<p>A quiver is a finite directed graph and its path algebra $kQ$ is spanned by the directed paths with the concatenation product; a representation of $Q$ is exactly a $kQ$-module, so the representation theory of quivers is the module theory of the path algebras. The simple representations are the one-dimensional $S_i$ at the vertices; the indecomposable projective $P_i$ has dimension vector the number of paths from $i$ to each vertex, its vector of path counts, and is the projective cover of $S_i$; and the standard resolution $0\to\bigoplus_{s(a)=i}P_{t(a)}\to P_i\to S_i\to0$ exhibits the path algebra as hereditary of global dimension at most one. The numerical count $\dim\operatorname{Hom}(M,N)-\dim\operatorname{Ext}^1(M,N)=\langle\underline{\dim}M,\underline{\dim}N\rangle$ then computes the homological dimensions from the dimension vectors.</p>
+<p>The representation type is governed by the underlying graph. Gabriel's theorem says that the quivers of finite representation type are exactly the Dynkin diagrams $A$, $D$, $E$, with one indecomposable for each positive root and the number of indecomposables $n(n+1)/2$, $n(n-1)$ and $36,63,120$ for the three families; the Kronecker quiver, the simplest affine diagram, is tame with one-parameter families of regular indecomposables classified by matrix pencils; the three-Kronecker quiver is wild; and Drozd's dichotomy says that a finite-dimensional algebra is tame or wild and never both. The refinement by almost split sequences and by tilting is developed andand the quadratic function attached to a diagram, whose theory belongs to Part II, is named only.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q=(Q_0,Q_1,s,t)$</td>
+<td>quiver with vertex set, arrow set, source and target</td>
+</tr>
+<tr>
+<td>$e_i$</td>
+<td>trivial path at the vertex $i$, an idempotent</td>
+</tr>
+<tr>
+<td>$kQ$</td>
+<td>path algebra, basis the paths</td>
+</tr>
+<tr>
+<td>$S_i$, $P_i$, $I_i$</td>
+<td>simple, indecomposable projective, injective at $i$</td>
+</tr>
+<tr>
+<td>$\underline{\dim}V$</td>
+<td>dimension vector in $\mathbb{Z}^{Q_0}$</td>
+</tr>
+<tr>
+<td>$\langle d,e\rangle$</td>
+<td>numerical invariant $\sum_i d_ie_i-\sum_a d_{s(a)}e_{t(a)}$</td>
+</tr>
+<tr>
+<td>$C_{ij}=\dim\operatorname{Hom}(P_i,P_j)$</td>
+<td>Cartan matrix, the number of paths from $j$ to $i$</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>Auslander–Reiten translation</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>imaginary root of an affine diagram</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ibrahim Assem, Daniel Simson and Andrzej Skowroński, <em>Elements of the Representation Theory of Associative Algebras</em>, Vol. 1 (Cambridge University Press, 2006), for the path algebras, the standard resolution and the representation type.</li>
+<li>Michel Auslander, Idun Reiten and Sverre O. Smalø, <em>Representation Theory of Artin Algebras</em> (Cambridge University Press, 1995), for the module-theoretic development and the almost split sequences.</li>
+<li>Yuri A. Drozd, "Tame and wild matrix problems", in <em>Representations and Quadratic Forms</em> (Kiev, 1979), for the tame–wild dichotomy.</li>
+<li>Peter Gabriel, "Unzerlegbare Darstellungen I", <em>Manuscripta Mathematica</em> 6 (1972), 71–103, for the theorem classifying the finite representation type by the Dynkin diagrams.</li>
+<li>Peter Gabriel and Andrei V. Roiter, <em>Representations of Finite-Dimensional Algebras</em> (Springer, 1992), for the classification of the tame quivers and the matrix problems.</li>
+<li>Dieter Happel, <em>Triangulated Categories in the Representation Theory of Finite-Dimensional Algebras</em> (Cambridge University Press, 1988), for the homological development and the Auslander–Reiten quiver.</li>
+<li>Claus M. Ringel, <em>Tame Algebras and Integral Quadratic Forms</em> (Springer Lecture Notes in Mathematics 1099, 1984), for the integral quadratic form and the tame classification.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

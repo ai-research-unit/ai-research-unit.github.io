@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamics and Number Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dynamics-and-number-theory"><strong>Dynamics and Number Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The dynamical systems of arithmetic origin are those whose orbits encode the arithmetic of a number: the <strong>Gauss map</strong> $x\mapsto\{1/x\}$ produces the continued fraction expansion of $x$ and is ergodic with respect to the Gauss measure $\frac{dx}{(1+x)\log2}$, so that the arithmetic statistics of almost every real number become an instance of the Birkhoff ergodic theorem; the <strong>$\beta$-transformation</strong> $x\mapsto\beta x\bmod1$ produces the expansions in a non-integer base and has entropy $\log\beta$; the rotations of the circle produce the Sturmian codings and the three-distance structure; and the whole continued fraction theory reappears as the symbolic dynamics of the <strong>geodesic flow on the modular surface</strong>, whose return map to a cross-section is the Gauss map. The subject is therefore the meeting point of three theories: the ergodic theory of <em>Ergodic Theory</em>, the symbolic dynamics of <em>Symbolic Dynamics</em>, and the homogeneous dynamics of <em>Homogeneous Dynamics</em>, <em>Ratner's Theorems</em> and <em>Equidistribution</em>. What is specific to the subject is that the invariant measure, the entropy and the recurrence rates carry arithmetic information — the mean rate of growth of the continued fraction denominators is $\frac{\pi^2}{12\log2}$, the entropy of the Gauss map is $\frac{\pi^2}{6\log2}$, the almost-sure geometric mean of the partial quotients is the Khinchin constant — so that the dynamics computes arithmetic constants.</p>
+<p>The article begins with the Gauss map: the continued fraction algorithm, the expansion $x=[0;a_1,a_2,\dots]$, the Gauss measure and its invariance, the <strong>Gauss–Kuzmin theorem</strong> on the distribution of the iterates and its rate, and the <strong>Gauss–Kuzmin–Wirsing operator</strong> with its spectral gap. The statistics follow: the law of the partial quotients, the infinite mean, the law of large numbers and the constant of Lévy, the theorem of Khinchin on the geometric mean, the central limit theorem for the digits, and the relation of the expansion to the Diophantine approximation, with the Khinchin and Jarník theorems and the dimension of the badly approximable numbers. The article then turns to the <strong>homogeneous dynamics</strong> of the modular group: the modular surface, the geodesic flow, the cross-section whose return map is the Gauss map, the ergodicity and mixing of the flow, and the equidistribution results that put the continued fraction statistics into the framework of <em>Homogeneous Dynamics</em> and <em>Ratner's Theorems</em>. It closes with the further arithmetic systems: the $\beta$-shifts, the rotations and the three-distance theorem, the theorem of Furstenberg on the $\times2$ and $\times3$ orbits, and the open problems of the arithmetic dynamics, the Collatz map among them.</p>
+<p>The measure-preserving transformations, the ergodicity, the mixing, the entropy and the Birkhoff and von Neumann theorems are those of <em>Ergodic Theory</em>; the shift spaces, the $\beta$-shifts and the subshifts are those of <em>Symbolic Dynamics</em>; the topological dynamics and the topological entropy are those of <em>Topological Dynamics</em>; the rotations, the equidistribution and the Weyl criterion are those of <em>Equidistribution</em>; the modular surface, the unipotent flows and the classification theorems are those of <em>Homogeneous Dynamics</em>, <em>Ratner's Theorems</em> and <em>Lattices in Lie Groups</em>; the hyperbolic geometry of the modular surface is that of <em>Hyperbolic Geometry</em>; the geodesic flow and its ergodicity are standard. The arithmetic of the continued fractions of the rational numbers, as a chapter of the synthetic study of that number system, belongs to Part V .</p>
+<p>No physics is invoked.</p>
+<h2 id="the-gauss-map-and-continued-fractions">The Gauss Map and Continued Fractions</h2>
+<h3 id="the-expansion">The Expansion</h3>
+<p><strong>Definition.</strong> The <strong>Gauss map</strong> is $T:(0,1]\to[0,1)$, $T(x)=\frac1x-\bigl\lfloor\frac1x\bigr\rfloor=\{\frac1x\}$, with $T(0)=0$ by convention; the <strong>partial quotients</strong> of $x \in(0,1)$ are $a_n(x)=\bigl\lfloor\frac{1}{T^{n-1}x}\bigr\rfloor \in\mathbb{N}$, and the corresponding <strong>continued fraction expansion</strong> is</p>
+<p>$$
+x=\cfrac{1}{a_1+\cfrac{1}{a_2+\cfrac{1}{a_3+\cdots}}}=[0;a_1,a_2,a_3,\dots].
+$$</p>
+<p>The expansion terminates exactly for the rationals, so that the Gauss map is the dynamics of the continued fraction algorithm: the <strong>convergents</strong> $\frac{p_n}{q_n}=[0;a_1,\dots,a_n]$ satisfy the recursions $p_n=a_np_{n-1}+p_{n-2}$, $q_n=a_nq_{n-1}+q_{n-2}$ with $\frac{p_0}{q_0}=\frac01$, $\frac{p_1}{q_1}=\frac{1}{a_1}$, and the error is</p>
+<p>$$
+\Bigl|x-\frac{p_n}{q_n}\Bigr|=\frac1{q_n\bigl(q_n+T^nx\,q_{n-1}\bigr)},
+\qquad
+\frac{q_n}{q_{n-1}}=a_n+\frac{q_{n-2}}{q_{n-1}} .
+$$</p>
+<p><strong>Theorem (the Gauss measure).</strong> The measure</p>
+<p>$$
+\mu(A)=\frac1{\log2}\int_A\frac{dx}{1+x} \qquad (A \subseteq(0,1] \text{ measurable})
+$$</p>
+<p>is $T$-invariant and ergodic; it is the unique absolutely continuous invariant probability measure of the Gauss map. Its density $\frac{1}{(1+x)\log2}$ is the <strong>Gauss density</strong>, and the invariance is the identity</p>
+<p>$$
+\frac1{\log2}\int_0^1\frac{f(Tx)}{1+x}\,dx=\frac1{\log2}\int_0^1\frac{f(x)}{1+x}\,dx ,
+$$</p>
+<p>which for the branches $T|_{(\frac{1}{k+1},\frac1k]}(x)=\frac1x-k$ reduces to a telescoping sum.</p>
+<p><em>Proof.</em> The preimage of $(y,1]$ under $T$ is the union of the intervals $(\frac{1}{k+y},\frac1k)$, $k \ge1$; summing the Gauss measure of these intervals gives the identity by the telescoping of $\log(1+\frac{1}{k})-\log(1+\frac{1}{k+y})$, and the identity is the stated invariance. The ergodicity follows from the exactness of $T$, or from the spectral gap of the Gauss–Kuzmin–Wirsing operator acting on the functions of bounded variation, which makes the invariant density unique; the uniqueness of the absolutely continuous invariant measure is then the standard consequence. $\square$</p>
+<p><strong>Theorem (Gauss–Kuzmin).</strong> For every interval $A \subseteq(0,1]$,</p>
+<p>$$
+\mu(T^{-n}A)\to\mu(A) \qquad (n\to\infty),
+$$</p>
+<p>so that the distribution of the preimages converges to the Gauss measure, whatever the initial measure; more precisely, the <strong>Gauss–Kuzmin–Wirsing</strong> theorem gives the rate</p>
+<p>$$
+\mu(T^{-n}A)=\mu(A)+O(\lambda^n)
+$$</p>
+<p>with $\lambda<1$ an explicit spectral radius, and the convergence is exponentially fast for the classes of sets and functions on which the transfer operator has a spectral gap. For Lebesgue-almost every $x$, the sequence $T^nx$ is equidistributed with respect to $\mu$.</p>
+<h3 id="the-gausskuzminwirsing-operator">The Gauss–Kuzmin–Wirsing Operator</h3>
+<p><strong>Definition.</strong> The <strong>Gauss–Kuzmin–Wirsing operator</strong> (the transfer operator of the Gauss map) is</p>
+<p>$$
+(\mathcal Pf)(x)=\sum_{k\ge1}\frac{1}{(x+k)^2}f\Bigl(\frac1{x+k}\Bigr),
+$$</p>
+<p>acting on the functions on $[0,1]$; the Gauss density $h(x)=\frac{1}{(1+x)\log2}$ satisfies $\mathcal Ph=h$, and more generally $\mathcal P$ is the adjoint of the Koopman operator $f\mapsto f\circ T$ with respect to the Lebesgue measure, so that $\mu$ is invariant exactly when $h$ is a fixed point.</p>
+<p><strong>Theorem (spectral gap; Wirsing, Babenko, Mayer).</strong> The operator $\mathcal P$ acting on a suitable Banach space of holomorphic functions on the disc $|z-1|<r$ with $r>\frac12$, or on the functions of bounded variation on $[0,1]$, has the eigenvalue $1$ with a simple eigenfunction the Gauss density, its remaining spectrum inside a disc of radius strictly less than $1$, and in particular an isolated second eigenvalue $\lambda_2=-0.303663\ldots$, the <strong>Gauss–Kuzmin–Wirsing constant</strong>; consequently the convergence in the Gauss–Kuzmin theorem is exponentially fast with rate $|\lambda_2|$ up to the logarithmic factor of the variation norm.</p>
+<p><em>Proof (sketch).</em> One shows that $\mathcal P$ is a compact perturbation of a rank-one operator on the appropriate analytic space, using the analyticity of the branches and the decay of the coefficients, and that the eigenvalue $1$ is simple because the fixed point equation $\mathcal Pf=f$ has the unique analytic solution $h$ up to scalars; the compactness gives the discrete spectrum off the unit circle and the numerical value of $\lambda_2$ is computed from the integral equation of the operator. $\square$</p>
+<h3 id="the-natural-extension-and-exactness">The Natural Extension and Exactness</h3>
+<p><strong>Definition.</strong> The <strong>natural extension</strong> of the Gauss map is the invertible map $\mathcal T$ of the square $[0,1]^2$ given by</p>
+<p>$$
+\mathcal T(x,y)=\Bigl(Tx,\ \frac{1}{a(x)+y}\Bigr), \qquad a(x)=\Bigl\lfloor\frac1x\Bigr\rfloor ,
+$$</p>
+<p>with $\mathcal T(0,y)=(0,y)$ and $\mathcal T(x,0)$ defined by continuity; it preserves the probability measure</p>
+<p>$$
+d\bar\mu=\frac{1}{\log2}\,\frac{dx\,dy}{(1+xy)^2},
+$$</p>
+<p>projects onto the Gauss map in the first coordinate and onto the backward continued fraction map in the second, and is the two-dimensional system whose return map is the cross-section of the modular flow of the next section.</p>
+<p><strong>Remark (normalisation and invariance).</strong> The density $\frac{1}{\log2}(1+xy)^{-2}$ is a probability density on the square: the inner integral is $\int_0^1\frac{dx}{(1+xy)^2}=\frac{1}{1+y}$, and $\frac1{\log2}\int_0^1\frac{dy}{1+y}=1$. The invariance of $\bar\mu$ under $\mathcal T$ is the two-dimensional form of the telescoping identity that gives the invariance of the Gauss measure, and it is proved by the same change of variables in each of the branches.</p>
+<p><strong>Theorem (exactness and decorrelation).</strong> The Gauss map is exact: the tail $\sigma$-algebra $\bigcap_{n\ge0}T^{-n}\mathcal B$ is trivial, and consequently it is ergodic and mixing for the Gauss measure. The decay of correlations of Hölder functions is exponential, with the rate given by the spectral radius of the Gauss–Kuzmin–Wirsing operator on the complement of the eigenvalue $1$; the natural extension inherits the exponential mixing, and it is Bernoulli, so the continued fraction process is Bernoulli up to the natural extension. The mixing is the dynamical statement behind the convergence of the distributions in the Gauss–Kuzmin theorem and behind the limit theorems of the next section.</p>
+<p><em>Proof (sketch).</em> The exactness is proved by showing that the transfer operator sends the functions of bounded variation into a space on which it is a strict contraction of the part with mean zero; the Bernoulli property follows from the very weak Bernoulli condition verified by the bounded distortion of the branches of $T^n$. $\square$</p>
+<h2 id="statistics-equidistribution-and-diophantine-approximation">Statistics, Equidistribution and Diophantine Approximation</h2>
+<h3 id="the-law-of-the-partial-quotients">The Law of the Partial Quotients</h3>
+<p><strong>Theorem (law of the partial quotients).</strong> The partial quotient $a_1$ has the distribution</p>
+<p>$$
+\mu(a_1=k)=\frac1{\log2}\log\Bigl(1+\frac1{k(k+2)}\Bigr)=\log_2\frac{(k+1)^2}{k(k+2)}, \qquad k \ge1,
+$$</p>
+<p>so that $\mu(a_1=1)=\log_2\frac43=0.41504\ldots$ and the distribution of $a_n$ converges to the same law; the mean of $a_1$ is infinite, $\int a_1\,d\mu=\infty$, because the tail is $\mu(a_1=k)\sim\frac1{k^2\log2}$.</p>
+<p><em>Proof.</em> The set $\{a_1=k\}$ is the interval $(\frac{1}{k+1},\frac1k]$, whose Gauss measure is $\frac{1}{\log2}\log\frac{1+1/k}{1+1/(k+1)}=\frac1{\log2}\log\frac{(k+1)^2}{k(k+2)}$; the distribution of $a_n$ converges to the law of $a_1$ by the Gauss–Kuzmin theorem, and the divergence of the mean is the divergence of the harmonic tail. $\square$</p>
+<p><strong>Theorem (law of large numbers and Lévy's constant).</strong> For Lebesgue-almost every $x$,</p>
+<p>$$
+\frac1n\log q_n\to\frac{\pi^2}{12\log2}=1.186569\ldots,
+$$</p>
+<p>the <strong>Lévy constant</strong>, and in particular the denominators of the convergents grow like $e^{n\pi^2/(12\log2)}$.</p>
+<p><em>Proof.</em> The recursion for the denominators gives $\log q_n=\log q_0+\sum_{k=1}^n\log\frac{q_k}{q_{k-1}}$, and the ratios $\frac{q_{k}}{q_{k-1}}=a_k+\frac{q_{k-2}}{q_{k-1}}$ converge to the corresponding function of $T^{k}x$; since $\frac{q_{k-2}}{q_{k-1}}\in(0,1)$, the summand is $\log(a_k+\theta_k)$ and is not $\log a_k$, and the Birkhoff ergodic theorem applied to the natural extension, whose second coordinate carries the backward digits, gives the limit as the mean of $\log(1/T^{k}x)$ along the orbit, that is $\frac1{\log2}\int_0^1\frac{-\log x}{1+x}\,dx$, since the ratios $q_k/q_{k-1}$ and $1/T^kx$ differ by a bounded factor. The value is</p>
+<p>$$
+\frac{\pi^2}{12\log2}=1.186569\ldots,
+$$</p>
+<p>which is exactly half the measure-theoretic entropy $h(T)=\frac{\pi^2}{6\log2}=2.373138\ldots$ of the Gauss map; the identity $L=\frac12h(T)$ between the Lévy constant and the entropy is the arithmetic form of the relation between the entropy and the mean return time of the modular flow, established in the next section. $\square$</p>
+<p><strong>Theorem (Khinchin's theorem; the geometric mean).</strong> For Lebesgue-almost every $x$,</p>
+<p>$$
+(a_1a_2\cdots a_n)^{1/n}\to K_0=2.6854520010\ldots,
+$$</p>
+<p>the <strong>Khinchin constant</strong>. The theorem is the statement that the ergodic average of $\log a_n$ converges, and by the ergodicity of the Gauss measure its value is $\log K_0=\int\log a_1\,d\mu$; the integral is $0.987849\ldots$, obtained by summing the convergent series $\sum_k\log k\,\mu(a_1=k)$ (the partial sum up to $k=2\cdot10^6$ gives $0.987838$, and $e^{0.987838}=2.685422$, in agreement with $K_0=2.6854520\ldots$), and $K_0$ has no known closed form. The statement holds with the same constant for every measure absolutely continuous with respect to the Gauss measure.</p>
+<p><strong>Theorem (central limit theorem; Heinrich).</strong> For Lebesgue-almost every $x$ the normalised sums of the logarithms of the partial quotients satisfy</p>
+<p>$$
+\frac1{\sqrt n}\sum_{k=1}^n\bigl(\log a_k-\log K_0\bigr)\longrightarrow\mathcal N(0,\sigma^2)
+$$</p>
+<p>in distribution, with a finite variance $\sigma^2$ given by the Green–Kubo sum $\sum_{k\in\mathbb{Z}}\operatorname{cov}(\log a_1,\log a_{k+1})$ of the stationary sequence of digits, finite because the correlations decay exponentially by the spectral gap; the result is proved by the martingale approximation of the sums, and it shows that the partial quotients, though not independent, obey the classical limit theorems with computable constants. The theorem and its refinements are instances of the general limit theory of the ergodic sums of a stationary process: the convergence of the normalised sums is the content of the central limit theorem and of the law of large numbers for the process of the digits, whose general form is that of <em>Laws of Large Numbers and the Central Limit Theorem</em>.</p>
+<h3 id="diophantine-approximation">Diophantine Approximation</h3>
+<p><strong>Theorem (Khinchin's approximation theorem).</strong> Let $\psi:(0,\infty)\to(0,\infty)$ be decreasing. Then for Lebesgue-almost every $x$ the inequality</p>
+<p>$$
+\Bigl|x-\frac pq\Bigr|<\frac{\psi(q)}{q}
+$$</p>
+<p>has finitely many solutions in the rationals $\frac pq$ when $\sum_q\frac{\psi(q)}{q}<\infty$, and infinitely many when $\sum_q\frac{\psi(q)}{q}=\infty$; the function $\frac{\psi(q)}{q}$ is decreasing, so the second case is Khinchin's divergence theorem applied to it, and the first case follows from the Borel–Cantelli lemma and the estimate $\sum_q\frac{2\psi(q)}{q}$ for the measure of the approximable set. The threshold exponent $2$ in $|x-\frac pq|<q^{-2}$ is the statement that almost every $x$ has only finitely many approximations with exponent $2+\epsilon$, for every $\epsilon>0$.</p>
+<p><strong>Theorem (Lagrange; Jarník).</strong> A real $x$ is <strong>badly approximable</strong> — there is $c>0$ with $|x-\frac pq|>\frac{c}{q^2}$ for all rationals $\frac pq$ — if and only if its partial quotients are bounded; the set of the badly approximable numbers has Lebesgue measure zero and Hausdorff dimension $1$, by the theorem of Jarník. More generally the set of the $x$ whose partial quotients are bounded by $M$ has Hausdorff dimension tending to $1$ as $M\to\infty$, and the dimension of the set of the $x$ with a prescribed growth of the partial quotients is computed by the general Besicovitch–Eggleston theory of the digit restrictions.</p>
+<h2 id="homogeneous-dynamics-and-the-modular-flow">Homogeneous Dynamics and the Modular Flow</h2>
+<h3 id="the-modular-surface">The Modular Surface</h3>
+<p><strong>Definition.</strong> The <strong>modular surface</strong> is the quotient $M=\mathbb{H}/SL(2,\mathbb{Z})$ of the hyperbolic plane by the modular group, a finite-volume noncompact hyperbolic surface with a cusp; the <strong>modular flow</strong> is the geodesic flow of the hyperbolic metric on $M$, acting on the unit tangent bundle $SM$, and the <strong>continued fraction map</strong> arises as the return map of the flow to a suitable cross-section: the geodesics that return to the cross-section are coded by the continued fraction expansion of their endpoint, and the successive return times of the flow to the cross-section are $2\log q_n$, so that the partial quotients are the itinerary of the geodesic and the denominators $q_n$ carry its return times.</p>
+<p><strong>Theorem (Artin; Series).</strong> The geodesic flow on the modular surface is a cross-section-suspension of the Gauss map: the return map of the flow to the cross-section is conjugate to the Gauss map, the return time function is $2\log(1/x)$ up to an additive constant, and the natural extension of the Gauss map is the return map to the cross-section of the two-dimensional extension of the flow. Consequently the ergodicity of the modular flow, the mixing, and the equidistribution of its periodic orbits, are equivalent to the corresponding properties of the Gauss map. Since the mean of $\log(1/x)$ under $\mu$ is the Lévy constant $\frac{\pi^2}{12\log2}$, the mean return time is twice it, namely the entropy $\frac{\pi^2}{6\log2}$ of the Gauss map, and Abramov's formula $h_{\mathrm{flow}}=h(T)/\bar\tau$ shows that the entropy of the flow is $1$ in this normalisation.</p>
+<p><em>Proof (sketch).</em> The strongly stable and strongly unstable manifolds of the modular flow are the horocycles; the cross-section is a set of horocycle arcs, and the return map is computed by the action of the modular group on the endpoints, which reproduces the recursion of the continued fraction algorithm. $\square$</p>
+<p><strong>Theorem (ergodicity and equidistribution of the modular flow).</strong> The modular geodesic flow is ergodic and mixing with respect to the Liouville measure, its periodic orbits equidistribute, and its closed geodesics are in bijection with the conjugacy classes of hyperbolic elements of $SL(2,\mathbb{Z})$, hence with the periodic continued fractions; the distribution of the closed geodesics and the asymptotics of their counting function are governed by the equidistribution theory of <em>Homogeneous Dynamics</em>, <em>Ratner's Theorems</em> and <em>Equidistribution</em>, of which the modular case is the simplest instance. The ergodicity and the mixing of the geodesic flow of a hyperbolic surface are those, and the counting of the closed geodesics by the trace formula is the arithmetic input of the <em>Lattices in Lie Groups</em> and the analytic number theory of the corpus.</p>
+<h2 id="further-arithmetic-systems">Further Arithmetic Systems</h2>
+<h3 id="rotations-and-the-three-distance-theorem">Rotations and the Three-Distance Theorem</h3>
+<p><strong>Theorem (three-distance theorem; Steinhaus).</strong> Let $\alpha$ be irrational and let $\{k\alpha\}$, $k=1,\dots,n$, be the first $n$ multiples of $\alpha$ on the circle. Then the $n$ points divide the circle into $n+1$ intervals whose lengths take at most three distinct values, and the lengths are determined by the continued fraction expansion of $\alpha$; the result is the combinatorial form of the equidistribution of the rotation, and the return times of the rotation to an interval are the Sturmian sequences of <em>Symbolic Dynamics</em>.</p>
+<p><strong>Theorem (Furstenberg).</strong> Let $X \subseteq\mathbb{T}^1$ be a closed set invariant under both $x\mapsto2x$ and $x\mapsto3x\pmod1$. Then $X$ is either finite or the whole circle. The theorem is the prototype of the rigidity results for the semigroup generated by two multiplicatively independent endomorphisms, and its proofs and generalisations belong to the ergodic theory of group actions and to the homogeneous dynamics of <em>Ergodic Theory of Group Actions</em> and <em>Homogeneous Dynamics</em>.</p>
+<h3 id="the-shifts-and-the-expansions">The β-Shifts and the Expansions</h3>
+<p><strong>Example (the $\beta$-transformation).</strong> For $\beta>1$ the <strong>$\beta$-transformation</strong> is $x\mapsto\beta x\bmod1$ on $[0,1)$, and the $\beta$-expansion of $x$ is the sequence of the integer parts of the iterates; the associated <strong>$\beta$-shift</strong> of <em>Symbolic Dynamics</em> is the closure of the set of the expansions, its topological entropy is $\log\beta$, and it is sofic when $\beta$ is a Parry number, that is, when the $\beta$-expansion of $1$ is eventually periodic; conversely the soficity forces $\beta$ to be a Perron number. The $\beta$-transformation is the natural generalisation of the doubling map $x\mapsto2x\bmod1$, and the arithmetic of the expansions — the greedy algorithm, the admissibility of the digit strings and the Pisot and Salem numbers — is the number-theoretic counterpart of the entropy formula.</p>
+<p><strong>Example (the Collatz map).</strong> The <strong>Collatz map</strong> is $C(n)=\frac n2$ for even $n$ and $C(n)=\frac{3n+1}{2}$ for odd $n$, acting on the positive integers; its conjectural behaviour is that every orbit reaches the cycle $1\to2\to1$, and the problem is open. The map is an arithmetic dynamical system with a known invariant measure structure only conjecturally, and the partial results — the almost-sure boundedness of the normalised orbits, and the density of the set of the points with a finite orbit — are proved by the methods of the measure-theoretic dynamics applied to the conjugating map to the $2$-adic integers, which exhibits the Collatz map as a piecewise translation. The problem is stated here as the standard open problem of the arithmetic dynamics; the $2$-adic conjugation used to state it is an instance of the local-field analysis of the corpus.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>Gauss map</strong> $T(x)=\{1/x\}$ generates the continued fraction expansion $x=[0;a_1,a_2,\dots]$; it preserves the <strong>Gauss measure</strong> $d\mu=\frac{dx}{(1+x)\log2}$, which is ergodic and is the unique absolutely continuous invariant measure, and the <strong>Gauss–Kuzmin theorem</strong> states that $\mu(T^{-n}A)\to\mu(A)$ exponentially, with the <strong>Gauss–Kuzmin–Wirsing operator</strong> $\mathcal Pf(x)=\sum_k\frac{1}{(x+k)^2}f(\frac1{x+k})$ supplying the spectral gap and the second eigenvalue $\lambda_2=-0.303663\ldots$; the natural extension $\mathcal T(x,y)=(Tx,\frac{1}{a(x)+y})$ on $[0,1]^2$ with density $\frac{1}{\log2}(1+xy)^{-2}$ makes the map invertible and Bernoulli, and gives the exponential decay of correlations. The partial quotients obey the law $\mu(a_1=k)=\log_2\frac{(k+1)^2}{k(k+2)}$ with $\mu(a_1=1)=0.41504\ldots$ and infinite mean; the <strong>Lévy constant</strong> $\frac1n\log q_n\to\frac{\pi^2}{12\log2}=1.186569\ldots$ gives the growth of the denominators, the <strong>Khinchin constant</strong> $K_0=2.6854520\ldots$ is the almost-sure geometric mean of the digits, and a <strong>central limit theorem</strong> holds for the logarithms of the digits. <strong>Khinchin's approximation theorem</strong> decides the divergence and convergence of the approximations $|x-\frac pq|<\frac{\psi(q)}{q}$, and the <strong>badly approximable</strong> numbers are exactly those with bounded partial quotients, with Hausdorff dimension $1$ by the theorem of <strong>Jarník</strong>.</p>
+<p>The <strong>modular surface</strong> $\mathbb{H}/SL(2,\mathbb{Z})$ and its geodesic flow place the continued fractions in homogeneous dynamics: by the theorems of <strong>Artin</strong> and <strong>Series</strong> the return map of the modular flow to a cross-section is the Gauss map, so the ergodicity, the mixing and the equidistribution of the flow are equivalent to the properties of the arithmetic map, and the mean return time of the flow to the cross-section is twice the Lévy constant, namely the entropy of the Gauss map; the closed geodesics correspond to the periodic continued fractions. The <strong>three-distance theorem</strong> of Steinhaus describes the combinatorial structure of the rotations, <strong>Furstenberg's theorem</strong> gives the rigidity of the closed sets invariant under $x\mapsto2x$ and $x\mapsto3x$, and the <strong>$\beta$-shifts</strong> realise the non-integer expansions with entropy $\log\beta$. The <strong>Collatz map</strong> is the standard open problem of the arithmetic dynamics. Throughout, the ergodic theory is that of <em>Ergodic Theory</em>, the symbolic models that of <em>Symbolic Dynamics</em>, the homogeneous dynamics that of <em>Homogeneous Dynamics</em> and <em>Ratner's Theorems</em>, and the arithmetic of the continued fractions of the rationals that of Part V .</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T(x)=\{1/x\}$</td>
+<td>Gauss map</td>
+</tr>
+<tr>
+<td>$a_n$, $[0;a_1,a_2,\dots]$</td>
+<td>partial quotients and continued fraction expansion</td>
+</tr>
+<tr>
+<td>$p_n/q_n$, $q_n$</td>
+<td>convergents and their denominators</td>
+</tr>
+<tr>
+<td>$\mu$, $\frac{1}{(1+x)\log2}$</td>
+<td>Gauss measure and Gauss density</td>
+</tr>
+<tr>
+<td>$\mathcal P$</td>
+<td>Gauss–Kuzmin–Wirsing operator</td>
+</tr>
+<tr>
+<td>$\mathcal T$, $\bar\mu$</td>
+<td>natural extension of the Gauss map and its invariant measure</td>
+</tr>
+<tr>
+<td>$\lambda_2$</td>
+<td>Gauss–Kuzmin–Wirsing constant $-0.303663\ldots$</td>
+</tr>
+<tr>
+<td>$\frac{\pi^2}{12\log2}$</td>
+<td>Lévy constant $1.186569\ldots$</td>
+</tr>
+<tr>
+<td>$K_0$</td>
+<td>Khinchin constant $2.6854520\ldots$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $SL(2,\mathbb{Z})$</td>
+<td>hyperbolic plane, modular group</td>
+</tr>
+<tr>
+<td>$M=\mathbb{H}/SL(2,\mathbb{Z})$</td>
+<td>modular surface</td>
+</tr>
+<tr>
+<td>$SM$</td>
+<td>unit tangent bundle of the modular surface</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>base of the $\beta$-transformation</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>Collatz map</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Carl F. Gauss, <em>Werke</em>, vol. 10, part 1 (Teubner, 1917), for the original computation of the invariant measure of the continued fraction map.</li>
+<li>Rodion O. Kuzmin, "On a problem of Gauss", <em>Doklady Akademii Nauk SSSR</em> (1928), 375–380, and Eduard Wirsing, "On the theorem of Gauss–Kuzmin–Lévy and a Frobenius-type theorem for function spaces", <em>Acta Arithmetica</em> 24 (1974), 507–528, for the Gauss–Kuzmin theorem and its rate.</li>
+<li>Dieter H. Mayer, "On the thermodynamic formalism for the Gauss map", <em>Communications in Mathematical Physics</em> 130 (1990), 311–333, for the spectral gap and the value $\lambda_2=-0.303663\ldots$.</li>
+<li>Aleksandr Ya. Khinchin, <em>Continued Fractions</em> (University of Chicago Press, 1964), for the metric theory of the continued fractions and the constant $K_0$.</li>
+<li>Patrick Billingsley, <em>Ergodic Theory and Information</em> (Wiley, 1965), for the limit theorems for the partial quotients and the Lévy constant.</li>
+<li>Wolfgang Heinrich, "Rates of convergence in stable limit theorems for sums of exponentially $\psi$-mixing random variables with an application to metric theory of continued fractions", <em>Mathematische Nachrichten</em> 131 (1987), 149–165, for the central limit theorem for the logarithms of the partial quotients, with rates.</li>
+<li>Vojtěch Jarník, "Zur metrischen Theorie der diophantischen Approximationen", <em>Prace Matematyczno-Fizyczne</em> 36 (1928–1929), 91–106, for the dimension of the badly approximable numbers.</li>
+<li>Emil Artin, "Ein mechanisches System mit quasiergodischen Bahnen", <em>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</em> 3 (1924), 170–175, and Caroline Series, "The modular surface and continued fractions", <em>Journal of the London Mathematical Society</em> 31 (1985), 69–80, for the coding of the modular geodesic flow by the continued fractions.</li>
+<li>Harry Furstenberg, "Disjointness in ergodic theory, minimal sets, and a problem in Diophantine approximation", <em>Mathematical Systems Theory</em> 1 (1967), 1–49, for the rigidity of the $\times2$ and $\times3$ orbits.</li>
+<li>Jeffrey C. Lagarias, ed., <em>The Ultimate Challenge: The $3x+1$ Problem</em> (American Mathematical Society, 2010), for the state of the Collatz problem and its $2$-adic conjugation.</li>
+<li>Marius Iosifescu and Cor Kraaikamp, <em>Metrical Theory of Continued Fractions</em> (Kluwer, 2002), for the systematic account of the statistics of the continued fractions and the limit theorems.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

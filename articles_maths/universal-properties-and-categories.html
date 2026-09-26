@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Properties and Categories — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="universal-properties-and-categories"><strong>Universal Properties and Categories</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A universal property describes an object by the maps into or out of it, rather than by its internal construction. The free monoid on a set, the product of two sets, the quotient of a set by an equivalence relation and the type of functions from one type to another are all solutions to problems of the same shape: an object is required, together with a map satisfying a condition, such that every other candidate factors through it uniquely. Category theory is the language in which this shape is stated once and for all. A <strong>category</strong> carries objects and composable maps, a <strong>functor</strong> carries one category into another, a <strong>natural transformation</strong> compares two functors, and the notions of <strong>limit</strong>, <strong>adjoint functor</strong> and <strong>monad</strong> are the general forms of the universal constructions that algebra performs.</p>
+<p>The article is the ninth and last of the foundational layer of the corpus, above <em>Sets, Functions and Relations</em>, <em>Order Theory and Lattices</em>, <em>Set-Theoretic Foundations</em>, <em>Formal Logic and Computability</em>, <em>Model Theory</em> and <em>Proof Theory and Type Theory</em>. Its examples are drawn from those articles: the category of sets and functions, the category attached to a partial order and the lattice constructions of <em>Order Theory and Lattices</em>, the models and structures of <em>Model Theory</em>, and the types and terms of <em>Proof Theory and Type Theory</em>. Its purpose is to fix the vocabulary that the remainder of the corpus uses, and in particular the language in whichstates its constructions. Because it is foundational, it develops no algebra of its own: the examples are the sets, orders, monoids and types that the earlier articles provide, and the algebraic categories whose objects are introduced later — groups, rings, modules, vector spaces — are named and deferred, not developed.</p>
+<p>The article is written under the same restriction as the rest of the foundational layer. No distance, no topology, no form appears. Where a construction has a richer form once a topology is available — the topological group, the completion, the sheaf — the article states the algebraic or order-theoretic version and defers the enrichment to Part II. The general homological algebra over a ring, and the functors $\operatorname{Ext}$ and $\operatorname{Tor}$, belong to the module-theoretic articles and are not developed here; the categorical constructions that those articles use — in particular the universal property of the tensor product — are stated in the form in which they will be applied and are proved there.</p>
+<h2 id="categories-functors-and-natural-transformations">Categories, Functors and Natural Transformations</h2>
+<h3 id="categories">Categories</h3>
+<p><strong>Definition.</strong> A <strong>category</strong> $\mathcal{C}$ consists of</p>
+<ol>
+<li>a class $\operatorname{Ob}(\mathcal{C})$ of <strong>objects</strong>;</li>
+<li>for each pair of objects $A, B$, a set $\mathcal{C}(A,B)$ of <strong>morphisms</strong> from $A$ to $B$, written $f : A \to B$, with $A$ the <strong>domain</strong> and $B$ the <strong>codomain</strong>;</li>
+<li>for each triple $A,B,C$ a <strong>composition</strong> function $\mathcal{C}(B,C) \times \mathcal{C}(A,B) \to \mathcal{C}(A,C)$, $(g,f) \mapsto g \circ f$;</li>
+<li>for each object $A$ an <strong>identity</strong> morphism $\mathrm{id}_A : A \to A$;</li>
+</ol>
+<p>subject to the axioms</p>
+<p>$$
+h \circ (g \circ f) = (h \circ g) \circ f, \qquad \mathrm{id}_B \circ f = f = f \circ \mathrm{id}_A
+$$</p>
+<p>for all $f : A \to B$, $g : B \to C$, $h : C \to D$. A category is <strong>small</strong> if its objects and morphisms form sets, and <strong>locally small</strong> if each $\mathcal{C}(A,B)$ is a set.</p>
+<p>The class-and-set distinction is that of <em>Set-Theoretic Foundations</em>: the objects of a category are usually a proper class, which is why the definition says "class". A morphism $f : A \to B$ is an <strong>isomorphism</strong> if there is $g : B \to A$ with $g \circ f = \mathrm{id}_A$ and $f \circ g = \mathrm{id}_B$; the inverse is unique when it exists, and $A \cong B$ means that the two objects are isomorphic.</p>
+<p><strong>Example (Set).</strong> The category $\mathbf{Set}$ has all sets as objects and all functions as morphisms, with the usual composition and identity functions. It is locally small but not small.</p>
+<p><strong>Example (Pos).</strong> The category $\mathbf{Pos}$ has partially ordered sets as objects and order-preserving maps as morphisms; the facts used are those of <em>Order Theory and Lattices</em>.</p>
+<p><strong>Example (a poset as a category).</strong> A partially ordered set $(P, \leq)$ becomes a category whose objects are the elements of $P$, with a single morphism $x \to y$ when $x \leq y$ and none otherwise. Composition is transitivity and the identity is reflexivity. This example is the bridge between order theory and category theory: a <strong>monotone map</strong> is exactly a functor between such categories, and the order-theoretic constructions of <em>Order Theory and Lattices</em> are the categorical limits and colimits of the next sections.</p>
+<p><strong>Definition.</strong> A <strong>monoid</strong> is a set $M$ with an associative binary operation and an identity element; a <strong>monoid homomorphism</strong> is a function preserving the operation and the identity. Monoids are used in this article as the simplest algebraic example of a category, and their theory, like that of the groups that refine them, belongs to the algebraic articles of the corpus.</p>
+<p><strong>Example (a monoid as a category).</strong> A monoid $(M, \cdot, e)$ becomes a category with a single object $\ast$, whose morphisms $\ast \to \ast$ are the elements of $M$, with composition the multiplication and the identity $e$. Conversely a category with one object is a monoid. This example shows that the composition axiom is exactly associativity, and it is the reason the categorical formulation of a group action is stated with a single object.</p>
+<p><strong>Example (the category of types).</strong> The simply typed lambda calculus of <em>Proof Theory and Type Theory</em> yields a category $\mathbf{Type}$ whose objects are the types and whose morphisms $A \to B$ are the terms of type $A \to B$ modulo $\beta\eta$-conversion, with composition the substitution of one term into another. The categorical reading of the Curry–Howard correspondence is that this category has, for each pair of types, a product and an exponential, which is the content of the last section.</p>
+<h3 id="functors">Functors</h3>
+<p><strong>Definition.</strong> A <strong>functor</strong> $F : \mathcal{C} \to \mathcal{D}$ assigns to each object $A$ of $\mathcal{C}$ an object $F(A)$ of $\mathcal{D}$, and to each morphism $f : A \to B$ a morphism $F(f) : F(A) \to F(B)$, such that</p>
+<p>$$
+F(\mathrm{id}_A) = \mathrm{id}_{F(A)}, \qquad F(g \circ f) = F(g) \circ F(f).
+$$</p>
+<p>A <strong>contravariant functor</strong> reverses the arrows: $F(f) : F(B) \to F(A)$ and $F(g \circ f) = F(f) \circ F(g)$. A functor preserves composition and identities but need not preserve the properties of morphisms: $F(f)$ can fail to be injective or surjective when $f$ is.</p>
+<p><strong>Example (forgetful functors).</strong> The functor $U : \mathbf{Pos} \to \mathbf{Set}$ sending a partially ordered set to its underlying set and an order-preserving map to itself is <strong>forgetful</strong>: it discards structure. The functor from monoids to sets is forgetful in the same sense. Forgetful functors are the typical right adjoints of the next sections, and the free constructions are their left adjoints.</p>
+<p><strong>Example (hom-functors).</strong> For a fixed object $A$ of a locally small category $\mathcal{C}$, the assignment $B \mapsto \mathcal{C}(A,B)$ extends to a functor $\mathcal{C}(A,-) : \mathcal{C} \to \mathbf{Set}$, called the <strong>covariant hom-functor</strong>, by sending $f : B \to C$ to the function $g \mapsto f \circ g$. Dually $B \mapsto \mathcal{C}(B,A)$ extends to a contravariant functor $\mathcal{C}(-,A)$. These functors are the subject of the Yoneda lemma.</p>
+<h3 id="natural-transformations">Natural Transformations</h3>
+<p><strong>Definition.</strong> Let $F, G : \mathcal{C} \to \mathcal{D}$ be functors. A <strong>natural transformation</strong> $\eta : F \Rightarrow G$ assigns to each object $A$ of $\mathcal{C}$ a morphism $\eta_A : F(A) \to G(A)$ in $\mathcal{D}$ such that for every $f : A \to B$ the two composites</p>
+<p>$$
+F(A) \xrightarrow{\ \eta_A\ } G(A) \xrightarrow{\ G(f)\ } G(B), \qquad F(A) \xrightarrow{\ F(f)\ } F(B) \xrightarrow{\ \eta_B\ } G(B)
+$$</p>
+<p>are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a <strong>natural isomorphism</strong> if every $\eta_A$ is an isomorphism, and then $F \cong G$.</p>
+<p><strong>Definition.</strong> A <strong>functor category</strong> $[\mathcal{C},\mathcal{D}]$ (also written $\mathcal{D}^{\mathcal{C}}$) has the functors $\mathcal{C} \to \mathcal{D}$ as objects and the natural transformations between them as morphisms, with composition defined objectwise. A <strong>presheaf</strong> on $\mathcal{C}$ is a functor $\mathcal{C}^{\mathrm{op}} \to \mathbf{Set}$, that is, a contravariant functor from $\mathcal{C}$ to sets.</p>
+<p><strong>Example (the singleton map).</strong> Let $\mathcal{P} : \mathbf{Set} \to \mathbf{Set}$ send a set to its power set and a function $f : X \to Y$ to the image map $A \mapsto f(A)$. The assignment $x \mapsto \{x\}$ is a natural transformation $\mathrm{id}_{\mathbf{Set}} \Rightarrow \mathcal{P}$: the square commutes because $f(\{x\}) = \{f(x)\}$. It is injective on every set and surjective only on the empty set and the singletons, so it is a natural transformation that is not an isomorphism; the same transformation is the unit of the power-set monad below.</p>
+<p><strong>Definition.</strong> A functor $F : \mathcal{C} \to \mathcal{D}$ is an <strong>equivalence of categories</strong> if there is a functor $G : \mathcal{D} \to \mathcal{C}$ and natural isomorphisms $G \circ F \cong \mathrm{id}_{\mathcal{C}}$ and $F \circ G \cong \mathrm{id}_{\mathcal{D}}$. An equivalence is the correct notion of sameness of categories: it need not be a bijection on objects, only on isomorphism classes.</p>
+<p><strong>Theorem.</strong> A functor $F : \mathcal{C} \to \mathcal{D}$ is an equivalence if and only if it is <strong>fully faithful</strong> (each map $\mathcal{C}(A,B) \to \mathcal{D}(F(A),F(B))$, $f \mapsto F(f)$, is a bijection) and <strong>essentially surjective</strong> (every object of $\mathcal{D}$ is isomorphic to $F(A)$ for some $A$).</p>
+<p><strong>Proof sketch.</strong> Given an equivalence, the full faithfulness follows from the natural isomorphism and the essential surjectivity from the counit. Conversely, choose for each object $D$ of $\mathcal{D}$ an object $G(D)$ of $\mathcal{C}$ and an isomorphism $\varepsilon_D : F(G(D)) \to D$, and define $G$ on morphisms by transporting along $\varepsilon$ and using full faithfulness. The natural transformations $\varepsilon$ and the analogous $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ are then isomorphisms. $\square$</p>
+<h2 id="universal-properties">Universal Properties</h2>
+<h3 id="initial-and-terminal-objects">Initial and Terminal Objects</h3>
+<p><strong>Definition.</strong> An object $I$ of a category $\mathcal{C}$ is <strong>initial</strong> if for every object $A$ there is exactly one morphism $I \to A$. It is <strong>terminal</strong> if for every $A$ there is exactly one morphism $A \to I$. An object that is both is a <strong>zero object</strong>.</p>
+<p><strong>Proposition.</strong> Initial and terminal objects are unique up to isomorphism when they exist.</p>
+<p><strong>Proof.</strong> If $I$ and $I'$ are initial, the unique morphisms $I \to I'$ and $I' \to I$ compose to the unique endomorphisms of $I$ and $I'$, which are the identities; hence they are inverse isomorphisms. The terminal case is dual. $\square$</p>
+<p><strong>Example.</strong> In $\mathbf{Set}$ the empty set is initial and every singleton is terminal. In the category attached to a poset, an initial object is a least element and a terminal object a greatest element. In the category of monoids, the one-element monoid is both initial and terminal, hence a zero object. In the category of types of the previous section, the empty type is initial and the unit type is terminal, in the reading of <em>Proof Theory and Type Theory</em>.</p>
+<h3 id="products-and-coproducts">Products and Coproducts</h3>
+<p><strong>Definition.</strong> Let $A$ and $B$ be objects of a category $\mathcal{C}$. A <strong>product</strong> of $A$ and $B$ is an object $A \times B$ with morphisms $\pi_1 : A \times B \to A$ and $\pi_2 : A \times B \to B$, the <strong>projections</strong>, such that for every object $X$ and every pair of morphisms $f : X \to A$, $g : X \to B$ there is a unique morphism $\langle f, g\rangle : X \to A \times B$ with $\pi_1 \circ \langle f,g\rangle = f$ and $\pi_2 \circ \langle f,g\rangle = g$. A <strong>coproduct</strong> $A + B$ is the dual: morphisms $\iota_1 : A \to A+B$, $\iota_2 : B \to A+B$, and for every $X$ with $f : A \to X$, $g : B \to X$ a unique $[f,g] : A+B \to X$ with $[f,g]\circ\iota_1 = f$ and $[f,g]\circ\iota_2 = g$.</p>
+<p><strong>Proposition.</strong> Products and coproducts are unique up to isomorphism when they exist.</p>
+<p><strong>Proof.</strong> If $(A\times B, \pi_1,\pi_2)$ and $(P, p_1, p_2)$ are both products, the universal property applied to $P$ gives a morphism $P \to A \times B$, and applied to $A\times B$ gives one back; the composites satisfy the universal property of the identity and hence equal $\mathrm{id}$ by uniqueness. $\square$</p>
+<p><strong>Example.</strong> In $\mathbf{Set}$ the product is the Cartesian product with its coordinate projections, and the coproduct is the disjoint union with its inclusions. In the category attached to a poset, the product is the greatest lower bound and the coproduct the least upper bound, when they exist: the universal property of a product is exactly the property of a meet in <em>Order Theory and Lattices</em>. In the category of types, the product and coproduct are the product and sum types of <em>Proof Theory and Type Theory</em>, and the universal property is the typing of the pairing and case-splitting rules.</p>
+<p><strong>Definition.</strong> A <strong>cartesian closed category</strong> has a terminal object, a product $A \times B$ for every pair, and for every pair $A, B$ an object $B^A$ together with an <strong>evaluation</strong> morphism $\mathrm{ev} : B^A \times A \to B$ such that for every $f : X \times A \to B$ there is a unique $\lambda f : X \to B^A$ with $\mathrm{ev} \circ (\lambda f \times \mathrm{id}_A) = f$. The object $B^A$ is the <strong>exponential</strong>.</p>
+<p><strong>Theorem.</strong> The category of types of <em>Proof Theory and Type Theory</em> is cartesian closed, with the unit type as terminal object, the product types as products and the function types as exponentials.</p>
+<p><strong>Proof sketch.</strong> The projections and pairing are the elimination rules of the product, and the evaluation and currying are the rules for the function type; the uniqueness clauses are the $\beta\eta$-equalities of the typed calculus, which hold by construction in the category of types modulo $\beta\eta$-conversion. $\square$</p>
+<h3 id="universal-arrows-and-free-objects">Universal Arrows and Free Objects</h3>
+<p><strong>Definition.</strong> Let $F : \mathcal{C} \to \mathcal{D}$ be a functor and $D$ an object of $\mathcal{D}$. A <strong>universal arrow</strong> from $D$ to $F$ is a pair $(C, u)$ with $C$ an object of $\mathcal{C}$ and $u : D \to F(C)$ a morphism such that for every $C'$ and every $v : D \to F(C')$ there is a unique $f : C \to C'$ with $F(f) \circ u = v$.</p>
+<p><strong>Example (free monoid).</strong> Let $U : \mathbf{Mon} \to \mathbf{Set}$ be the forgetful functor from monoids to sets. For a set $X$, let $X^*$ be the set of finite words in the alphabet $X$, with concatenation and the empty word as multiplication and identity; this is the <strong>free monoid</strong> on $X$. The insertion $u : X \to U(X^*)$ sending a letter to the one-letter word, with $X^*$, is a universal arrow from $X$ to $U$. Indeed, a monoid homomorphism $X^* \to M$ is determined by its values on the one-letter words, and any function $X \to U(M)$ extends uniquely to a homomorphism.</p>
+<p><strong>Remark.</strong> The free group on a set, the free module on a set, the free algebra of a signature and the tensor product of modules are all universal arrows of the same shape, and their constructions belong,andall. The present article supplies the schema; those articles supply the objects.</p>
+<h2 id="limits-and-colimits">Limits and Colimits</h2>
+<h3 id="diagrams-and-cones">Diagrams and Cones</h3>
+<p><strong>Definition.</strong> Let $\mathcal{J}$ be a small category, the <strong>index category</strong>, and $\mathcal{C}$ a category. A <strong>diagram</strong> of shape $\mathcal{J}$ in $\mathcal{C}$ is a functor $D : \mathcal{J} \to \mathcal{C}$. A <strong>cone</strong> over $D$ is an object $L$ of $\mathcal{C}$ with morphisms $\lambda_j : L \to D(j)$ for each object $j$ of $\mathcal{J}$, such that for every morphism $u : j \to k$ of $\mathcal{J}$ one has $D(u) \circ \lambda_j = \lambda_k$. A <strong>cocone</strong> is the dual, with morphisms $D(j) \to L$ and the reverse equations.</p>
+<p><strong>Definition.</strong> A <strong>limit</strong> of $D$ is a cone $(\varprojlim D, \lambda_j)$ such that for every cone $(L', \lambda'_j)$ there is a unique morphism $h : L' \to \varprojlim D$ with $\lambda_j \circ h = \lambda'_j$ for all $j$. A <strong>colimit</strong> $\varinjlim D$ is the dual notion.</p>
+<p><strong>Example.</strong> The limit of the empty diagram is the terminal object and its colimit the initial object. The limit of a diagram with two objects and no nonidentity morphisms is the product, and the colimit is the coproduct. The limit of a diagram $\cdot \rightrightarrows \cdot$ (two parallel morphisms) is the <strong>equaliser</strong>, and the colimit is the <strong>coequaliser</strong>. In $\mathbf{Set}$, the equaliser of $f, g : A \to B$ is $\{a \in A : f(a) = g(a)\}$ with its inclusion, and the coequaliser is the quotient of $B$ by the least equivalence relation generated by the pairs $(f(a), g(a))$. The quotient construction of <em>Sets, Functions and Relations</em> is therefore the coequaliser of the two projections of the equivalence relation, and this is its categorical characterisation.</p>
+<p><strong>Definition.</strong> A category is <strong>complete</strong> if it has all small limits, and <strong>cocomplete</strong> if it has all small colimits. A functor <strong>preserves limits</strong> if it carries every limit cone to a limit cone, and <strong>preserves</strong> a limit <strong>up to isomorphism</strong> if it carries a limiting cone to a cone that is again limiting.</p>
+<p><strong>Theorem.</strong> A category is complete if and only if it has all small products and all equalisers. It is cocomplete if and only if it has all small coproducts and all coequalisers.</p>
+<p><strong>Proof sketch.</strong> A limit of an arbitrary small diagram is built as the equaliser of two morphisms between products indexed by the objects and by the morphisms of the index category: one of the two maps uses the projections of the diagram and the other the action of the diagram's morphisms. The converse is immediate. $\square$</p>
+<p><strong>Example.</strong> $\mathbf{Set}$ is complete and cocomplete: products, coproducts, equalisers and coequalisers are constructed as above, and the theorem gives all small limits and colimits. The category of types with sums and products is similarly complete and cocomplete for the limits and colimits generated by the type formers. The category attached to a poset is complete exactly when the poset has all meets of small subsets, and the completeness of a lattice in the sense of <em>Order Theory and Lattices</em> is this condition.</p>
+<h2 id="adjoint-functors">Adjoint Functors</h2>
+<h3 id="definition-and-examples">Definition and Examples</h3>
+<p><strong>Definition.</strong> Let $F : \mathcal{C} \to \mathcal{D}$ and $G : \mathcal{D} \to \mathcal{C}$ be functors. $F$ is <strong>left adjoint</strong> to $G$, written $F \dashv G$, if there is a bijection</p>
+<p>$$
+\mathcal{D}(F(C), D) \cong \mathcal{C}(C, G(D))
+$$</p>
+<p>for all objects $C$ of $\mathcal{C}$ and $D$ of $\mathcal{D}$, natural in $C$ and in $D$. The functor $G$ is the <strong>right adjoint</strong> of $F$.</p>
+<p><strong>Example.</strong> The free-monoid functor $(-)^* : \mathbf{Set} \to \mathbf{Mon}$ is left adjoint to the forgetful functor $U : \mathbf{Mon} \to \mathbf{Set}$: the universal property of the free monoid is exactly the natural bijection $\mathbf{Mon}(X^*, M) \cong \mathbf{Set}(X, U(M))$. In the same way, a forgetful functor from any category of algebras to sets has a left adjoint, the free algebra on the set.</p>
+<p><strong>Example.</strong> In $\mathbf{Set}$, the product functor $(-) \times A$ is left adjoint to the exponential functor $(-)^A$: the bijection $\mathbf{Set}(X \times A, B) \cong \mathbf{Set}(X, B^A)$ is currying, and it is the equational form of the cartesian closed condition. This is the categorical form of the rule that a function of two variables is the same thing as a function of one variable with values in functions, which is the rule for the function type in <em>Proof Theory and Type Theory</em>.</p>
+<p><strong>Example.</strong> In the category attached to a poset, $F \dashv G$ is a <strong>Galois connection</strong> in the sense of <em>Order Theory and Lattices</em>: monotone maps with $F(x) \leq y \iff x \leq G(y)$. The Knaster–Tarski fixed-point theorem is the special case in which the two adjoints coincide.</p>
+<p><strong>Proposition (uniqueness).</strong> Left adjoints are unique up to natural isomorphism, and right adjoints are unique up to natural isomorphism.</p>
+<p><strong>Proof.</strong> If $F$ and $F'$ are both left adjoint to $G$, the natural bijections give a natural bijection $\mathcal{D}(F(C), D) \cong \mathcal{D}(F'(C), D)$ for all $D$, and the Yoneda lemma below identifies $F(C)$ with $F'(C)$ naturally. $\square$</p>
+<h3 id="unit-and-counit">Unit and Counit</h3>
+<p><strong>Definition.</strong> Let $F \dashv G$ with bijection $\varphi_{C,D} : \mathcal{D}(F(C),D) \to \mathcal{C}(C,G(D))$. The <strong>unit</strong> $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ has components $\eta_C = \varphi_{C,F(C)}(\mathrm{id}_{F(C)}) : C \to G(F(C))$, and the <strong>counit</strong> $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ has components $\varepsilon_D = \varphi_{G(D),D}^{-1}(\mathrm{id}_{G(D)}) : F(G(D)) \to D$.</p>
+<p><strong>Theorem (triangular identities).</strong> With the notation above, the composites</p>
+<p>$$
+F \xrightarrow{\ F\eta\ } F \circ G \circ F \xrightarrow{\ \varepsilon F\ } F,
+\qquad
+G \xrightarrow{\ \eta G\ } G \circ F \circ G \xrightarrow{\ G\varepsilon\ } G
+$$</p>
+<p>are the identities of $F$ and of $G$. Conversely, a pair of natural transformations $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ and $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ satisfying the two identities makes $F$ left adjoint to $G$.</p>
+<p><strong>Proof sketch.</strong> The first identity is checked on components using the naturality of $\varphi$: $(\varepsilon F)_C \circ (F\eta)_C = \varepsilon_{F(C)} \circ F(\eta_C)$, and under the adjunction bijection this is the identity of $F(C)$. The converse defines $\varphi$ by $\varphi(f) = G(f) \circ \eta_C$ and $\varphi^{-1}(g) = \varepsilon_D \circ F(g)$, and the triangular identities are what make the two inverse. $\square$</p>
+<p>The unit and counit are the useful form of an adjunction: the unit is the insertion of an object into its free algebra, and the counit is the evaluation of a free algebra on its generators. In the free-monoid example, $\eta_X : X \to U(X^*)$ is the insertion of letters and $\varepsilon_M : U(M)^* \to M$ is the multiplication of a word in $M$.</p>
+<p><strong>Theorem (general adjoint functor theorem, statement).</strong> Let $G : \mathcal{D} \to \mathcal{C}$ be a functor with $\mathcal{D}$ complete and locally small. Then $G$ has a left adjoint if and only if $G$ preserves all small limits and satisfies the <strong>solution set condition</strong>: for every object $C$ of $\mathcal{C}$ there is a set of objects $D_i$ of $\mathcal{D}$ such that every morphism $C \to G(D)$ factors through some $C \to G(D_i)$. Freyd's special form replaces the solution set condition by the hypotheses that $\mathcal{C}$ be well powered and that the hom-sets of $\mathcal{D}$ be small. The theorem is what turns the existence of free objects, of products and of quotients in a concrete algebraic category into a set-theoretic verification.</p>
+<h2 id="the-yoneda-lemma">The Yoneda Lemma</h2>
+<h3 id="presheaves-and-representables">Presheaves and Representables</h3>
+<p><strong>Definition.</strong> Let $\mathcal{C}$ be locally small. The <strong>Yoneda embedding</strong> is the functor $Y : \mathcal{C} \to [\mathcal{C}^{\mathrm{op}}, \mathbf{Set}]$ sending an object $A$ to the presheaf $\mathcal{C}(-,A)$ and a morphism $f : A \to B$ to the natural transformation $\mathcal{C}(-,A) \Rightarrow \mathcal{C}(-,B)$ given by composition with $f$. A presheaf is <strong>representable</strong> if it is naturally isomorphic to $\mathcal{C}(-,A)$ for some $A$, and then $A$ <strong>represents</strong> it.</p>
+<p><strong>Theorem (Yoneda lemma).</strong> For a locally small category $\mathcal{C}$, an object $A$ and a presheaf $F : \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}$, the map</p>
+<p>$$
+[\mathcal{C}^{\mathrm{op}},\mathbf{Set}](\mathcal{C}(-,A), F) \longrightarrow F(A), \qquad \eta \mapsto \eta_A(\mathrm{id}_A),
+$$</p>
+<p>is a bijection, natural in $A$ and in $F$.</p>
+<p><strong>Proof.</strong> Given $\eta : \mathcal{C}(-,A) \Rightarrow F$, the component $\eta_A$ sends $\mathrm{id}_A$ to an element of $F(A)$; this defines the map. In the other direction, an element $x \in F(A)$ determines $\eta_x$ by $\eta_x{}_B(f) = F(f)(x)$ for $f : B \to A$; naturality is the equation $F(g)(F(f)(x)) = F(f \circ g)(x)$ for $g : C \to B$, which holds because $F$ is a functor. The two assignments are inverse: from $x$ one recovers $x$ as $\eta_x{}_A(\mathrm{id}_A)$, and from $\eta$ one recovers $\eta$ because $\eta_B(f) = \eta_B(\mathcal{C}(-,A)(f)(\mathrm{id}_A)) = F(f)(\eta_A(\mathrm{id}_A))$ by naturality. Naturality in $A$ and $F$ is a diagram chase. $\square$</p>
+<h3 id="consequences">Consequences</h3>
+<p><strong>Corollary (Yoneda embedding is full and faithful).</strong> The functor $Y$ is fully faithful: for all $A, B$ the map $\mathcal{C}(A,B) \to [\mathcal{C}^{\mathrm{op}},\mathbf{Set}](\mathcal{C}(-,A),\mathcal{C}(-,B))$ is a bijection.</p>
+<p><strong>Proof.</strong> Apply the Yoneda lemma with $F = \mathcal{C}(-,B)$: the natural transformations $\mathcal{C}(-,A) \Rightarrow \mathcal{C}(-,B)$ correspond bijectively to the elements of $\mathcal{C}(A,B)$, and the correspondence is composition with $f$. $\square$</p>
+<p><strong>Corollary (representing objects are unique).</strong> If $\mathcal{C}(-,A) \cong \mathcal{C}(-,B)$ then $A \cong B$.</p>
+<p><strong>Corollary (a universal property determines its object).</strong> An object defined by a universal property is determined up to isomorphism, and any two objects satisfying the property are canonically isomorphic. This is the corollary that justifies the whole practice of algebra by universal properties: a free object, a product, a tensor product or a quotient is determined by its mapping property, and the explicit construction is used only to prove existence.</p>
+<p><strong>Corollary (limits by representability).</strong> A cone $(\varprojlim D, \lambda_j)$ over a diagram $D : \mathcal{J} \to \mathcal{C}$ is a limit if and only if the presheaf $\mathcal{C}(-, \varprojlim D)$ is naturally isomorphic to the presheaf $X \mapsto \varprojlim_j \mathcal{C}(X, D(j))$ of cones over $D$ with apex $X$.</p>
+<p>The last corollary is the reason limits are a universal property: a limit is the representing object of the functor of cones, and the Yoneda lemma then characterises it up to isomorphism.</p>
+<h2 id="monads">Monads</h2>
+<h3 id="definition-and-examples_1">Definition and Examples</h3>
+<p><strong>Definition.</strong> A <strong>monad</strong> on a category $\mathcal{C}$ is a triple $(T, \eta, \mu)$ consisting of a functor $T : \mathcal{C} \to \mathcal{C}$ and natural transformations $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow T$ and $\mu : T \circ T \Rightarrow T$ satisfying</p>
+<p>$$
+\mu \circ T\mu = \mu \circ \mu T, \qquad \mu \circ T\eta = \mathrm{id}_T = \mu \circ \eta T.
+$$</p>
+<p>A <strong>comonad</strong> is the dual.</p>
+<p><strong>Example (the list monad).</strong> On $\mathbf{Set}$, let $T(X) = X^*$ be the free monoid on $X$, $\eta_X : X \to X^*$ the insertion of one-letter words and $\mu_X : (X^*)^* \to X^*$ the flattening of a list of lists into a single list by concatenation. The two monad laws are the statement that flattening is associative and that flattening a list of one-letter lists reproduces the list. The same data arise in the category of types as the type of lists, and the monad laws are the equations of the <strong>fold</strong> operations.</p>
+<p><strong>Example (the power-set monad).</strong> $T(X) = \mathcal{P}(X)$, with $\eta_X(x) = \{x\}$ and $\mu_X(\mathcal{A}) = \bigcup \mathcal{A}$, is a monad on $\mathbf{Set}$; the monad laws are the elementary properties of union and singleton.</p>
+<p><strong>Example (a closure operator).</strong> In a poset, a monotone map $T$ with $x \leq T(x)$ and $T(T(x)) \leq T(x)$ is a monad on the poset regarded as a category; a <strong>closure operator</strong> in the sense of <em>Order Theory and Lattices</em> is exactly a monad that is <strong>idempotent</strong>, that is, $\mu$ is an isomorphism. This example is the reason the general theory of monads subsumes both algebraic closure and the algebraic operations of the next sections.</p>
+<h3 id="algebras-for-a-monad-and-monads-from-adjunctions">Algebras for a Monad, and Monads from Adjunctions</h3>
+<p><strong>Definition.</strong> An <strong>algebra</strong> for a monad $(T,\eta,\mu)$ on $\mathcal{C}$ is a pair $(A, a)$ with $a : T(A) \to A$ a morphism satisfying $a \circ \eta_A = \mathrm{id}_A$ and $a \circ \mu_A = a \circ T(a)$. A <strong>homomorphism</strong> of algebras $(A,a) \to (B,b)$ is a morphism $f : A \to B$ with $f \circ a = b \circ T(f)$. The resulting category is the <strong>Eilenberg–Moore category</strong> $\mathcal{C}^T$.</p>
+<p><strong>Example.</strong> For the list monad, an algebra is a set $A$ with a function $a : A^* \to A$ that is a left inverse to the insertion and is compatible with flattening; by the first law, $a$ is determined by its values on two-letter words, and the second law makes the resulting binary operation associative with the empty word as identity. Thus the algebras for the list monad are exactly the monoids, and the Eilenberg–Moore category of the list monad is the category of monoids. This is the general phenomenon: <strong>an algebraic theory is a monad, and its models are its algebras</strong>.</p>
+<p><strong>Theorem.</strong> Every adjunction $F \dashv G$ between categories $\mathcal{C}$ and $\mathcal{D}$ gives rise to a monad on $\mathcal{C}$ with $T = G \circ F$, $\eta$ the unit of the adjunction and $\mu = G\varepsilon F$; dually it gives a comonad on $\mathcal{D}$. Conversely every monad arises from an adjunction, in fact from two: the <strong>Kleisli</strong> adjunction, whose category has the objects of $\mathcal{C}$ and whose morphisms $A \to B$ are the morphisms $A \to T(B)$ composed through $\mu$, and the Eilenberg–Moore adjunction, whose category is $\mathcal{C}^T$.</p>
+<p><strong>Proof sketch.</strong> For the first statement, the triangular identities of the adjunction give the two monad laws, and the verification is a calculation with $\eta$ and $\varepsilon$. For the converse, the Kleisli category has the free algebras as its objects, and the Eilenberg–Moore category has all algebras; the two adjunctions induce the given monad because $G \circ F$ recovers $T$ on both. $\square$</p>
+<p><strong>Remark.</strong> The monadicity theorem of Beck gives a criterion for a right adjoint to be the Eilenberg–Moore comparison functor, hence for a category to be the category of algebras of a monad over another. The theory is the categorical form of universal algebra, and it is used in the corpus for the algebraic theories whose models are groups, rings and modules, whose constructions are in the corresponding articles .</p>
+<h2 id="universal-properties-in-algebra">Universal Properties in Algebra</h2>
+<h3 id="the-pattern-of-universal-constructions">The Pattern of Universal Constructions</h3>
+<p>The constructions of algebra are of two related kinds: those that freely add structure, and those that impose relations.</p>
+<p><strong>Definition.</strong> Let $\mathcal{C}$ be a category and let $R$ be a relation on the morphisms of $\mathcal{C}$, that is, a set of pairs of parallel morphisms. A <strong>quotient</strong> of $A$ by $R$ is a coequaliser of the two morphisms of a pair in $R$, when it exists. A <strong>free object</strong> on a set $X$ with respect to a forgetful functor $U$ is the universal arrow from $X$ to $U$.</p>
+<p><strong>Example (quotient in Set).</strong> The coequaliser of two maps $f, g : A \to B$ in $\mathbf{Set}$ is the quotient of $B$ by the smallest equivalence relation containing all pairs $(f(a), g(a))$, with the universal property that a function on the quotient is a function on $B$ constant on the equivalence classes. The quotients of <em>Sets, Functions and Relations</em> are the coequalisers of this form.</p>
+<p><strong>Example (tensor product, stated).</strong> For modules $M$ and $N$ over a commutative ring $R$, the tensor product $M \otimes_R N$ is characterised by the universal property that $R$-bilinear maps $M \times N \to P$ correspond naturally to $R$-linear maps $M \otimes_R N \to P$. The construction and the proof of existence belong and <em>Linear Spaces</em>; the universal property is recorded here because it is the prototype of a <strong>representable functor</strong> defined by multilinear data, and becauseuses the same form of argument.</p>
+<h3 id="the-categorical-content-of-the-curryhoward-correspondence">The Categorical Content of the Curry–Howard Correspondence</h3>
+<p>The categories of <em>Proof Theory and Type Theory</em> assemble into a picture that the categorical language describes.</p>
+<p><strong>Theorem.</strong> The simply typed lambda calculus gives a cartesian closed category: the objects are the types, the morphisms $A \to B$ are the terms of type $B$ in a context containing a variable of type $A$, modulo $\beta\eta$-conversion, and the constructions of products and exponentials are the type formers with their introduction and elimination rules. Under the Curry–Howard correspondence, a term is a derivation, and the commutative diagrams of the category are the equations between derivations induced by $\beta\eta$-conversion.</p>
+<p><strong>Proof sketch.</strong> Composition is substitution, which is associative by the substitution lemma; the identity is the variable; the terminal object is the unit type, the product is the product type with the pairing and projections, and the exponential is the function type with abstraction and evaluation. The universal properties are the typing rules, and uniqueness is the $\eta$-equation. $\square$</p>
+<h2 id="summary">Summary</h2>
+<p>A category consists of objects, morphisms with domains and codomains, associative composition and identities. The examples include the category of sets, the category of partially ordered sets, a partially ordered set regarded as a category, a monoid regarded as a one-object category, and the category of types of the typed lambda calculus. A functor preserves composition and identities; a natural transformation compares two functors by a family of morphisms commuting with the action of both; an equivalence of categories is a fully faithful and essentially surjective functor.</p>
+<p>Initial and terminal objects, products and coproducts, and more generally limits and colimits of diagrams, are defined by universal properties and are unique up to isomorphism when they exist. Limits are the representing objects of the functors of cones; a category is complete exactly when it has all small products and equalisers, and cocomplete exactly when it has all small coproducts and coequalisers. Products and coproducts in a poset are meets and joins, and in the category of types they are the product and sum types.</p>
+<p>An adjunction $F \dashv G$ is a natural bijection between the morphisms $F(C) \to D$ and $C \to G(D)$; the free-forgetful adjunctions, currying and the Galois connections of order theory are the standard examples. An adjunction is equivalently given by a unit and a counit satisfying the triangular identities, and the adjoint functor theorem gives a criterion for a left adjoint to exist. The Yoneda lemma identifies the natural transformations from a representable presheaf into a presheaf $F$ with the elements of $F(A)$; it makes the Yoneda embedding full and faithful and shows that an object defined by a universal property is determined up to isomorphism.</p>
+<p>A monad is a functor with a unit and a multiplication satisfying associativity and the unit laws; the list monad and the power-set monad are the standard examples, and the algebras for the list monad are the monoids. Every adjunction produces a monad, and every monad arises from the Kleisli and Eilenberg–Moore adjunctions. In algebra, free objects are universal arrows from a set to a forgetful functor, quotients are coequalisers, and the tensor product is the representing object of the bilinear maps; the constructions themselves belong to the algebraic other articles, and the categorical schema is the one fixed here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{C}, \mathcal{D}$</td>
+<td>Categories</td>
+</tr>
+<tr>
+<td>$\operatorname{Ob}(\mathcal{C})$</td>
+<td>Class of objects of $\mathcal{C}$</td>
+</tr>
+<tr>
+<td>$\mathcal{C}(A,B)$, $\operatorname{Hom}(A,B)$</td>
+<td>Morphisms from $A$ to $B$</td>
+</tr>
+<tr>
+<td>$g \circ f$, $\mathrm{id}_A$</td>
+<td>Composition and identity morphism</td>
+</tr>
+<tr>
+<td>$\mathbf{Set}$, $\mathbf{Pos}$, $\mathbf{Mon}$</td>
+<td>Categories of sets, posets, monoids</td>
+</tr>
+<tr>
+<td>$F : \mathcal{C} \to \mathcal{D}$</td>
+<td>Functor; contravariant functor reverses arrows</td>
+</tr>
+<tr>
+<td>$\eta : F \Rightarrow G$</td>
+<td>Natural transformation; natural isomorphism $F \cong G$</td>
+</tr>
+<tr>
+<td>$[\mathcal{C},\mathcal{D}]$, $\mathcal{D}^{\mathcal{C}}$</td>
+<td>Functor category</td>
+</tr>
+<tr>
+<td>$A \times B$, $A + B$</td>
+<td>Product and coproduct</td>
+</tr>
+<tr>
+<td>$B^A$, $\mathrm{ev}$</td>
+<td>Exponential and evaluation; cartesian closed category</td>
+</tr>
+<tr>
+<td>$I$, $A \times B$, $A+B$, equaliser, coequaliser</td>
+<td>Constructions by universal property</td>
+</tr>
+<tr>
+<td>$\varprojlim D$, $\varinjlim D$</td>
+<td>Limit and colimit of a diagram $D$</td>
+</tr>
+<tr>
+<td>$F \dashv G$</td>
+<td>$F$ left adjoint to $G$</td>
+</tr>
+<tr>
+<td>$\eta$, $\varepsilon$</td>
+<td>Unit and counit of an adjunction</td>
+</tr>
+<tr>
+<td>$\mathcal{C}(-,A)$, $Y$</td>
+<td>Representable presheaf; Yoneda embedding</td>
+</tr>
+<tr>
+<td>$(T,\eta,\mu)$</td>
+<td>Monad; $\mathcal{C}^T$ Eilenberg–Moore category</td>
+</tr>
+<tr>
+<td>$X^*$</td>
+<td>Free monoid on $X$</td>
+</tr>
+<tr>
+<td>$\otimes_R$</td>
+<td>Tensor product over $R$ (universal property stated here)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em>, 2nd ed. (Springer, 1998), for the canonical treatment of categories, functors, limits, adjoints and monads.</li>
+<li>Samuel Eilenberg and Saunders Mac Lane, "General theory of natural equivalences", <em>Transactions of the American Mathematical Society</em> <strong>58</strong> (1945), 231–294, for the origin of categories, functors and natural transformations.</li>
+<li>Nobuo Yoneda, "On the homology theory of modules", <em>Journal of the Faculty of Science, University of Tokyo</em> <strong>7</strong> (1954), 193–227, for the lemma that carries his name.</li>
+<li>Peter Freyd, <em>Abelian Categories: An Introduction to the Theory of Functors</em> (Harper and Row, 1964), for adjoint functors and the adjoint functor theorems.</li>
+<li>Saunders Mac Lane, "Groups, categories and duality", <em>Proceedings of the National Academy of Sciences</em> <strong>34</strong> (1948), 263–267, for the categorical treatment of groups and the origin of monads.</li>
+<li>Michael Barr and Charles Wells, <em>Category Theory for Computing Science</em>, 3rd ed. (Les Publications CRM, 1999), for limits, adjunctions and the categorical reading of type theories.</li>
+<li>Joachim Lambek and Philip J. Scott, <em>Introduction to Higher Order Categorical Logic</em> (Cambridge University Press, 1986), for cartesian closed categories and the Curry–Howard correspondence.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

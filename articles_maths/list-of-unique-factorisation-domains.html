@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Unique Factorisation Domains — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-unique-factorisation-domains"><strong>List of Unique Factorisation Domains</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the unique factorisation domains of the corpus, with the irreducibles of each example, and it records the failure of unique factorisation for each non-example with the two factorisations that witness it. Every entry points to the article that introduces the object.</p>
+<p>A unique factorisation domain is an integral domain in which every nonzero nonunit is a product of irreducibles and the factorisation is unique up to order and associates; equivalently, by the criterion of <em>Unique Factorisation Domains</em>, every irreducible element is prime. The list gathers the Euclidean domains and their rings of integers, the polynomial rings over a field or a unique factorisation domain, and the power series rings, and it records $\mathbb{Z}[\sqrt{-5}]$ and the imaginary quadratic rings of class number greater than one on the other side.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="the-criterion-and-the-transfer">The Criterion and the Transfer</h2>
+<p>The equivalence of unique factorisation with "every irreducible is prime" is the working criterion of <em>Unique Factorisation Domains</em>, and Euclid's lemma is its first consequence. The transfer to a polynomial ring is Gauss's lemma: if $R$ is a unique factorisation domain then $R[x]$ is one, with the content $c(f)$ and the primitive polynomials carrying the arithmetic. Eisenstein's criterion is the standard test for an irreducible polynomial. All of this is the subject of <em>Unique Factorisation Domains</em>; a catalogue records only which rings the corpus meets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>Content</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a domain is a UFD iff every irreducible is prime</td>
+<td>irreducibles and primes</td>
+<td><em>Unique Factorisation Domains</em></td>
+</tr>
+<tr>
+<td>$R$ a UFD implies $R[x]$ a UFD</td>
+<td>content and Gauss's lemma</td>
+<td><em>Unique Factorisation Domains</em></td>
+</tr>
+<tr>
+<td>Eisenstein's criterion</td>
+<td>irreducibility of a polynomial over a UFD</td>
+<td><em>Unique Factorisation Domains</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-unique-factorisation-domains-and-their-irreducibles">The Unique Factorisation Domains and Their Irreducibles</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Unique factorisation domain</th>
+<th>The irreducibles, up to associates</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>the rational primes $\pm p$</td>
+<td><em>The Integers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[i]$</td>
+<td>$1+i$, the rational primes $p \equiv 3 \bmod 4$, and the elements $\pi$ with $N(\pi) = p$ for $p \equiv 1 \bmod 4$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-2}]$</td>
+<td>$\sqrt{-2}$, and the elements of norm $p$ for a rational prime $p$ with $-2$ a square modulo $p$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{2}]$</td>
+<td>$\sqrt{2}$, and the elements of norm $\pm p$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\tfrac{1+\sqrt{-3}}{2}]$, the Eisenstein integers</td>
+<td>$\sqrt{-3}$, and the elements of norm $p \equiv 1 \bmod 3$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$k[x]$</td>
+<td>the monic irreducible polynomials; the linear ones when $k$ is algebraically closed</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q[x]$</td>
+<td>the monic irreducible polynomials over the finite field</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[x]$</td>
+<td>the rational primes $p$, and the primitive irreducible polynomials</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$k[x_1, \dots, x_n]$</td>
+<td>the irreducible polynomials in $n$ variables</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$k[x_1, x_2, \ldots]$ in infinitely many variables</td>
+<td>the irreducible polynomials in finitely many variables</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$k[[x]]$</td>
+<td>$x$ alone, up to units</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>every field, for instance $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_p$, $\mathbb{Q}_p$</td>
+<td>none: every nonzero element is a unit</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>$\mathcal{O}_{K,\mathfrak{p}}$, a discrete valuation ring</td>
+<td>the uniformiser, a generator of the maximal ideal</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}[x]$, $\mathbb{R}[x]$, $\mathbb{C}[x]$</td>
+<td>the monic irreducibles; the linear ones over $\mathbb{C}$</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Gaussian integers give the standard worked example: $2 = -i(1+i)^2$ ramifies, an odd prime $p \equiv 3 \bmod 4$ remains irreducible, and a prime $p \equiv 1 \bmod 4$ splits as $\pi\bar\pi$ with $N(\pi) = p$, the case $5 = (2+i)(2-i)$. In the power series ring the only irreducible is $x$, and the localisation $\mathbb{Z}_{(p)}$ has the single irreducible $p$; a discrete valuation ring has one irreducible up to associates, and this is recorded in <em>List of Local Rings and Valuations</em>.</p>
+<h2 id="unique-factorisation-in-the-local-and-power-series-rings">Unique Factorisation in the Local and Power Series Rings</h2>
+<p>The discrete valuation rings are the unique factorisation domains with the smallest possible supply of irreducibles: one, up to associates, because the nonzero ideals form a single chain.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Unique factorisation domain</th>
+<th>The single irreducible</th>
+<th>The maximal ideal it generates</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>$p$</td>
+<td>$p\mathbb{Z}_{(p)}$</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$</td>
+<td>$p$</td>
+<td>$p\mathbb{Z}_p$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$k[t]_{(t)}$</td>
+<td>$t$</td>
+<td>$tk[t]_{(t)}$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p[x]_{(x)}$</td>
+<td>$x$</td>
+<td>$x\mathbb{F}_p[x]_{(x)}$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$k[[x]]$</td>
+<td>$x$</td>
+<td>$(x)$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathcal{O}_{K,\mathfrak{p}}$</td>
+<td>a generator of $\mathfrak{p}$</td>
+<td>$\mathfrak{p}$</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Each of these rings is a principal ideal domain and hence a unique factorisation domain, and in each the factorisation of an element is the statement that its value is a nonnegative integer. The power series ring is not a field, and its single irreducible is a nonunit that is not a zero divisor.</p>
+<h2 id="domains-that-are-not-unique-factorisation-domains">Domains That Are Not Unique Factorisation Domains</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>The failure</th>
+<th>Class number</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+<td>$6 = 2 \cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5})$, four pairwise nonassociate irreducibles</td>
+<td>$2$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-6}]$</td>
+<td>the class group is nontrivial, so some element has two factorisations</td>
+<td>$2$</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-10}]$</td>
+<td>the class group is nontrivial</td>
+<td>$2$</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-14}]$</td>
+<td>the class group is cyclic of order $4$</td>
+<td>$4$</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>$\mathcal{O}_K$ with nontrivial class group</td>
+<td>unique factorisation of elements fails; ideals still factor uniquely</td>
+<td>varies</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Z}}$</td>
+<td>Bézout and not Noetherian, hence not a UFD</td>
+<td>—</td>
+<td><em>Bézout Domains</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>For $\mathbb{Z}[\sqrt{-5}]$ the element $2$ is irreducible but not prime, since $\mathbb{Z}[\sqrt{-5}]/(2)$ is not a domain; the ideal class group has order $2$, generated by the class of the non-principal prime $P = (2, 1+\sqrt{-5})$, and the failure of unique factorisation of elements is repaired by the unique factorisation of ideals. The four factors $2$, $3$, $1+\sqrt{-5}$ and $1-\sqrt{-5}$ all have norm $4$, $9$, $6$, $6$, and no element of norm $2$ or $3$ exists in the ring, which is why they are irreducible; the units are $\pm 1$, which is why they are pairwise nonassociate. This computation is recorded in <em>Dedekind Domains and Ideal Class Groups</em> and in <em>Examples of Rings and Fields</em>, and it is the failure that <em>Unique Factorisation Domains</em> treats in detail.</p>
+<h2 id="unique-factorisation-that-survives-without-principal-ideals">Unique Factorisation That Survives Without Principal Ideals</h2>
+<p>A unique factorisation domain need not be a principal ideal domain, and the standard witnesses are polynomial rings.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Why it is a UFD</th>
+<th>Why it is not principal</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}[x]$</td>
+<td>Gauss's lemma applied to $\mathbb{Z}$</td>
+<td>the ideal $(2, x)$ is not principal</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$k[x_1, \dots, x_n]$, $n \geq 2$</td>
+<td>the iterated Gauss's lemma</td>
+<td>the ideal $(x_1, x_2)$ is not principal</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$k[x_1, x_2, \ldots]$</td>
+<td>the iterated Gauss's lemma on finitely many variables</td>
+<td>not Noetherian</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$R[x]$ for $R$ a UFD</td>
+<td>Gauss's lemma</td>
+<td>not principal in general</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q[x, y]$</td>
+<td>the iterated Gauss's lemma over $\mathbb{F}_q$</td>
+<td>the ideal $(x, y)$ is not principal</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[x_1, \dots, x_n]$</td>
+<td>Gauss's lemma applied to $\mathbb{Z}$, iterated</td>
+<td>the ideal $(2, x_1)$ is not principal</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two are the reason the ladder of <em>List of Structures from Rings to Fields</em> has a strict step between a unique factorisation domain and a principal ideal domain, and the third is the reason a unique factorisation domain need not be Noetherian.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a unique factorisation domain of this list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_2(\mathbb{R})$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$</td>
+<td>not commutative, and the matrix, biquaternion and split-biquaternion rings have zero divisors</td>
+<td><em>Matrix Algebras</em>, <em>Quaternion Algebra</em>, <em>Biquaternion Algebra</em>, <em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>not domains: the split-complex numbers have $e_+e_- = 0$ and the dual numbers a nilpotent</td>
+<td><em>Split-Complex Algebra</em>, <em>Dual-Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>not a domain: $2 \cdot 3 = 0$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>not a ring</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>a general Dedekind domain $\mathcal{O}_K$</td>
+<td>a UFD exactly when its class number is $1$</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the unique factorisation domains of the corpus with the irreducibles of each: the rational primes in $\mathbb{Z}$, the Gaussian, quadratic and Eisenstein primes in the rings of integers of class number one, the monic irreducible polynomials in $k[x]$ and $\mathbb{F}_q[x]$, the primitive irreducibles and the rational primes in $\mathbb{Z}[x]$, the irreducible polynomials in several and in infinitely many variables, the single irreducible $x$ in $k[[x]]$, and no irreducible at all in a field. It has recorded the failures: the two factorisations of $6$ in $\mathbb{Z}[\sqrt{-5}]$, the nontrivial class groups of $\mathbb{Z}[\sqrt{-6}]$, $\mathbb{Z}[\sqrt{-10}]$, $\mathbb{Z}[\sqrt{-14}]$ and a general $\mathcal{O}_K$, and the non-Noetherian Bézout domain $\overline{\mathbb{Z}}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_q$</td>
+<td>The number systems and the finite fields</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{-2}]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-5}]$</td>
+<td>Quadratic integer rings</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\tfrac{1+\sqrt{-3}}{2}]$</td>
+<td>The Eisenstein integers</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-6}]$, $\mathbb{Z}[\sqrt{-10}]$, $\mathbb{Z}[\sqrt{-14}]$</td>
+<td>Imaginary quadratic rings of class number $> 1$</td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Z}}$, $\mathcal{O}_K$</td>
+<td>All algebraic integers, ring of integers of $K$</td>
+</tr>
+<tr>
+<td>$N(\cdot)$, $c(f)$</td>
+<td>Norm, content of a polynomial</td>
+</tr>
+<tr>
+<td>$k[x]$, $k[x_1,\dots,x_n]$, $\mathbb{Z}[x]$, $k[[x]]$</td>
+<td>Polynomial and power series rings</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$, $\mathbb{Z}_{(p)}$</td>
+<td>$p$-adic numbers, localisation at $p$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$, $M_2(\mathbb{R})$</td>
+<td>Non-commutative rings, named in the warnings</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paulo Ribenboim, <em>Classical Theory of Algebraic Numbers</em> (Springer, 2001), for the quadratic rings, their class numbers and the explicit factorisations.</li>
+<li>Oscar Zariski and Pierre Samuel, <em>Commutative Algebra</em>, Volume I (Van Nostrand, 1958), for unique factorisation, Gauss's lemma and content.</li>
+<li>Irving Kaplansky, <em>Commutative Rings</em> (University of Chicago Press, revised ed. 1974), for unique factorisation domains and their failure in Dedekind domains.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

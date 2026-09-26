@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Zero Divisors — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-zero-divisors"><strong>Split-Quaternion Zero Divisors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the zero divisors of the split-quaternion algebra. It defines them, proves the criterion that identifies them with the null cone of the determinant form, describes them as the rank-one matrices of the matrix model, exhibits the two families into which the null cone splits, proves the existence of nonzero nilpotents, and describes the distribution of the zero divisors among the distinguished subspaces.</p>
+<p>The split-quaternion algebra, its matrix model $\Phi$, its norm form $N$, its idempotents $u_\pm$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from <em>Split-Quaternion Algebra</em>. The invertibility criterion and the identification of the norm form with the determinant are assumed from <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em> and §<em>The Norm Form and the Determinant Form</em>; the criterion is not re-proved here. The rank and the kernel of a $2 \times 2$ matrix are assumed from <em>Matrix Algebras</em>. Nothing physical is invoked.</p>
+<h2 id="definition-and-criterion">Definition and Criterion</h2>
+<p><strong>Definition.</strong> A nonzero element $x \in \mathbb{H}_{\mathrm{s}}$ is a <strong>zero divisor</strong> if there exists a nonzero $y \in \mathbb{H}_{\mathrm{s}}$ with $xy = 0$ or a nonzero $z \in \mathbb{H}_{\mathrm{s}}$ with $zx = 0$. The <strong>zero divisor set</strong> is</p>
+<p>$$
+Z = \{x \in \mathbb{H}_{\mathrm{s}} : x \neq 0 \text{ and } x \text{ is a zero divisor}\}.
+$$</p>
+<p><strong>Theorem (The Criterion).</strong> Let $x$ be nonzero. Then $x$ is a zero divisor if and only if $N(x) = 0$. Equivalently, the zero divisor set is the null cone of the determinant form with the origin removed:</p>
+<p>$$
+Z = \{x \neq 0 : N(x) = 0\} = \{x \neq 0 : \det \Phi(x) = 0\}.
+$$</p>
+<p><strong>Proof.</strong> The criterion is the corollary of the invertibility criterion proved in <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>: a nonzero element is a zero divisor exactly when it is not invertible, and it is invertible exactly when $N(x) \neq 0$. The second form is the identity $N(x) = \det \Phi(x)$ proved in the same article, §<em>The Norm Form and the Determinant Form</em>. $\square$</p>
+<p>The set</p>
+<p>$$
+\mathcal{N} = \{x : N(x) = 0\} = Z \cup \{0\}
+$$</p>
+<p>is the <strong>null cone</strong> of $N$. It is a cone: if $N(x) = 0$ then $N(\lambda x) = \lambda^2 N(x) = 0$ for every real $\lambda$. It is closed, it has real dimension $3$, and its only singular point is the origin; away from the origin it is a smooth three-dimensional cone. The complement of $Z$ in $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ is the set of units, an open dense set of full measure by <em>Split-Quaternion Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>.</p>
+<p>The zero divisor set is <strong>connected</strong>. Indeed, every isotropic vector $x$ is a positive multiple of a vector $(\cos\alpha, \sin\alpha, \cos\beta, \sin\beta)$ by <em>Split-Quaternion Norm and Invertibility</em>, §<em>Isotropy</em>, and the parametrisation is continuous in the pair of angles; the set of isotropic vectors is therefore homeomorphic to a cone on a connected base, and removing the vertex leaves it connected.</p>
+<h2 id="the-zero-divisor-set-as-the-null-cone">The Zero Divisor Set as the Null Cone</h2>
+<p>The null cone has a concrete description in the matrix model.</p>
+<p><strong>Theorem (The Zero Divisors Are the Rank-One Matrices).</strong> Let $x$ be nonzero. Then $x$ is a zero divisor if and only if $\Phi(x)$ is a <strong>rank-one</strong> matrix. Consequently</p>
+<p>$$
+\Phi(Z) = \{M \in M_2(\mathbb{R}) : M \neq 0, \ \operatorname{rank} M = 1\},
+$$</p>
+<p>and every nonzero singular $2 \times 2$ matrix is the image of a zero divisor.</p>
+<p><strong>Proof.</strong> The matrix $\Phi(x)$ is singular exactly when $\det \Phi(x) = N(x) = 0$. For a nonzero $2 \times 2$ matrix, singularity means rank one, since the rank can only be $0$ or $1$; rank $0$ is excluded because $x \neq 0$ and $\Phi$ is injective. Thus $\Phi(Z)$ is exactly the set of nonzero singular matrices, which is the set of rank-one matrices. $\square$</p>
+<p><strong>Corollary (The Rank-One Description).</strong> Every zero divisor has the form</p>
+<p>$$
+x = \Phi^{-1}(u v^{\top}), \qquad u, v \in \mathbb{R}^2 \setminus \{0\},
+$$</p>
+<p>and the pair $(u,v)$ is determined by $x$ up to the replacement $(u,v) \mapsto (\lambda u, \lambda^{-1} v)$ for $\lambda \in \mathbb{R}^{\times}$. The line $\mathbb{R}u$ is the <strong>image line</strong> of $x$ and the line $\mathbb{R}v$ is the <strong>kernel line</strong>; together they characterise $x$ up to a nonzero scalar.</p>
+<p><strong>Proof.</strong> A rank-one matrix is $uv^{\top}$ for nonzero column vectors $u$ and $v$, and two such representations give the same matrix exactly when the pairs differ by the stated replacement. The image of $uv^{\top}$ is $\mathbb{R}u$, and its kernel is $\{v\}^{\perp} = \mathbb{R} v^{\perp}$ where $v^{\perp} = (-v_2, v_1)$; the statement follows. $\square$</p>
+<p><strong>Corollary (The Isotropic Lines).</strong> Every isotropic line $\mathbb{R}x$ is a line of rank-one matrices, and the isotropic lines are precisely the projective null quadric</p>
+<p>$$
+Q = \{[x] \in \mathbb{P}^3 : N(x) = 0\}.
+$$</p>
+<p>The line of $x$ determines, and is determined by, the pair consisting of the image line and the kernel line of $\Phi(x)$.</p>
+<p><strong>Proof.</strong> Immediate from the criterion and the rank-one description: an isotropic line consists of scalar multiples of one zero divisor, and a zero divisor is a rank-one matrix. $\square$</p>
+<h2 id="the-two-families">The Two Families</h2>
+<p>A rank-one matrix carries two one-dimensional data, its image line and its kernel line, and the maximal totally isotropic subspaces organise these data into two families.</p>
+<h3 id="the-two-families-of-maximal-isotropic-subspaces">The Two Families of Maximal Isotropic Subspaces</h3>
+<p><strong>Definition.</strong> For a line $\ell \subset \mathbb{R}^2$, define</p>
+<p>$$
+R_\ell = \{M \in M_2(\mathbb{R}) : \operatorname{im} M \subseteq \ell\}, \qquad
+K_\ell = \{M \in M_2(\mathbb{R}) : \ker M \supseteq \ell\}.
+$$</p>
+<p>Both are real linear subspaces of $M_2(\mathbb{R})$, and both are <strong>totally isotropic</strong> for the determinant form and <strong>maximal</strong> with that property.</p>
+<p><strong>Theorem (The Two Families).</strong> For every line $\ell$, the subspaces $R_\ell$ and $K_\ell$ are two-dimensional, they satisfy $\det M = 0$ for every $M$ in them, and they are maximal totally isotropic. Every maximal totally isotropic subspace of $M_2(\mathbb{R})$ is one of the $R_\ell$ or one of the $K_\ell$. The two collections</p>
+<p>$$
+\mathcal{R} = \{R_\ell : \ell \in \mathbb{P}^1\}, \qquad \mathcal{K} = \{K_\ell : \ell \in \mathbb{P}^1\}
+$$</p>
+<p>are the <strong>two families</strong> of the null cone; each is parametrised by the projective line $\mathbb{P}^1$, and the two families are disjoint.</p>
+<p><strong>Proof.</strong> <em>Dimension.</em> The condition $\operatorname{im} M \subseteq \ell$ restricts the two columns of $M$ to a one-dimensional space, leaving two real parameters, so $\dim R_\ell = 2$; dually, the condition $\ker M \supseteq \ell$ restricts the two rows of $M$ to the annihilator of $\ell$, again leaving two parameters, so $\dim K_\ell = 2$. <em>Isotropy.</em> If $\operatorname{im} M \subseteq \ell$ then the columns of $M$ are linearly dependent, so $\operatorname{rank} M \leq 1$ and $\det M = 0$; if $\ker M \supseteq \ell$ then $M$ has a nonzero kernel, so $M$ is singular, so $\det M = 0$. <em>Maximality.</em> The form has signature $(2,2)$, so a totally isotropic subspace has dimension at most $2$, by the inertia law of <em>Quadratic Forms and Polarisation</em>; since $R_\ell$ and $K_\ell$ have dimension $2$ and are isotropic, they are maximal. <em>Classification.</em> Let $P$ be a two-dimensional totally isotropic subspace. Then $P$ contains a nonzero matrix, and every nonzero matrix of $P$ is singular because $P$ is isotropic, hence of rank one; so $P = \operatorname{span}\{M, N\}$ with $M = uv^{\top}$ and $N = xy^{\top}$ for nonzero column vectors $u, v, x, y$. The condition that every element of $P$ be singular is the single condition $B(M,N) = 0$, since $\det(M + tN)$ is a quadratic polynomial in $t$ whose vanishing for all $t$ forces the vanishing of its three coefficients, which are $\det M$, $B(M,N)$ and $\det N$. Now $M + N = [\,u \ x\,]\,[\,v \ y\,]^{\top}$ in block form, so by the multiplicativity of the determinant</p>
+<p>$$
+B(M,N) = \det(M+N) = \det(u, x) \cdot \det(v, y),
+$$</p>
+<p>where $\det(u,x) = u_1 x_2 - u_2 x_1$. Hence $x$ is proportional to $u$, or $y$ is proportional to $v$. In the first case $N$ and $M$ both have image contained in the line $\mathbb{R}u$, so $P \subseteq R_{\mathbb{R}u}$, and the two dimensions force $P = R_{\mathbb{R}u}$. In the second case $N$ and $M$ both have kernel containing the line $\mathbb{R}v^{\perp}$, so $P \subseteq K_{\mathbb{R}v^{\perp}}$, and again $P = K_{\mathbb{R}v^{\perp}}$. The two cases cannot occur together, since their conjunction would place $P$ in the one-dimensional space $R_{\mathbb{R}u} \cap K_{\mathbb{R}v^{\perp}} = \operatorname{span}\{uv^{\top}\}$. <em>Disjointness.</em> Were $R_\ell = K_{\ell'}$, the space $R_\ell \cap K_{\ell'}$ would be two-dimensional; but $R_\ell \cap K_{\ell'}$ consists of the matrices $uv^{\top}$ with $\mathbb{R}u = \ell$ and $\mathbb{R}v^{\perp} = \ell'$, a one-dimensional space. Hence the two families are disjoint. $\square$</p>
+<p><strong>Corollary (Each Zero Divisor Lies in One Plane of Each Family).</strong> Let $x$ be a zero divisor with image line $\ell_1$ and kernel line $\ell_2$ under $\Phi$. Then</p>
+<p>$$
+\Phi(x) \in R_{\ell_1} \cap K_{\ell_2},
+$$</p>
+<p>and $R_{\ell_1}$ is the unique member of $\mathcal{R}$ containing $\Phi(x)$, while $K_{\ell_2}$ is the unique member of $\mathcal{K}$ containing it. Hence the null cone is the union of the planes of the two families, and through every isotropic line pass exactly two maximal isotropic planes, one from each family.</p>
+<p><strong>Proof.</strong> The image of $\Phi(x)$ is $\ell_1$, so $\Phi(x) \in R_{\ell_1}$; if also $\Phi(x) \in R_{\ell'}$ then $\operatorname{im}\Phi(x) \subseteq \ell \cap \ell'$, which is zero for $\ell \neq \ell'$ and would force $\Phi(x) = 0$; hence $\ell_1 = \ell'$ and the member is unique. The kernel statement is dual. Every zero divisor is a rank-one matrix and therefore belongs to the two displayed planes. $\square$</p>
+<p><strong>Corollary (Transposition Swaps the Families).</strong> The transpose $M \mapsto M^{\top}$ is an anti-automorphism of $M_2(\mathbb{R})$ and satisfies</p>
+<p>$$
+R_\ell^{\top} = K_{\ell^{\perp}} \qquad (\ell \in \mathbb{P}^1),
+$$</p>
+<p>where $\ell^{\perp}$ is the orthogonal line with respect to the standard inner product of $\mathbb{R}^2$. In the algebra, the corresponding anti-automorphism $\tau = \Phi^{-1} \circ (\cdot)^{\top} \circ \Phi$ satisfies $\tau(e_1) = -e_1$, $\tau(e_2) = e_2$, $\tau(e_3) = e_3$, and it exchanges the two families.</p>
+<p><strong>Proof.</strong> $\operatorname{im} M \subseteq \ell$ is equivalent to $\operatorname{im} M \perp \ell^{\perp}$, which is equivalent to $\ell^{\perp} \subseteq \ker M^{\top}$. This gives the identity of the subspaces, and it exhibits the exchange of families. The action of $\tau$ on the generators is read from the matrices $\Phi(e_k)$ of (<em>Split-Quaternion Algebra</em>, §<em>The Matrix Model</em>): the transpose of the rotation matrix $\Phi(e_1) = \begin{pmatrix}0&-1\\1&0\end{pmatrix}$ is its negative, while $\Phi(e_2)$ and $\Phi(e_3)$ are symmetric. $\square$</p>
+<h3 id="the-two-families-in-the-algebra">The Two Families in the Algebra</h3>
+<p>Transporting the two families back through $\Phi$ gives a statement about the algebra itself.</p>
+<p><strong>Definition.</strong> For a line $\ell \subset \mathbb{R}^2$, put</p>
+<p>$$
+\mathcal{R}_\ell = \Phi^{-1}(R_\ell), \qquad \mathcal{K}_\ell = \Phi^{-1}(K_\ell).
+$$</p>
+<p>These are the two families of <strong>maximal isotropic subspaces of the algebra</strong>: each is a two-dimensional real subspace of $\mathbb{H}_{\mathrm{s}}$ on which $N$ vanishes identically.</p>
+<p><strong>Proposition (The Minimal Ideals Are Members of the Families).</strong> Let $\ell_v$ be the line spanned by $v = (1,1)$ and $\ell_w$ the line spanned by $w = (1,-1)$. Then</p>
+<p>$$
+u_+ \mathbb{H}_{\mathrm{s}} = \mathcal{R}_{\ell_v}, \qquad \mathbb{H}_{\mathrm{s}} u_+ = \mathcal{K}_{\ell_w}, \qquad
+u_- \mathbb{H}_{\mathrm{s}} = \mathcal{R}_{\ell_w}, \qquad \mathbb{H}_{\mathrm{s}} u_- = \mathcal{K}_{\ell_v}.
+$$</p>
+<p>Thus the four minimal ideals of the algebra are the four distinguished members of the two families, and the total isotropy of the minimal ideals proved in <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Minimal Left and Right Ideals</em> is the statement that they are members of the families.</p>
+<p><strong>Proof.</strong> In the matrix model, $u_+ \mapsto \tfrac12(I + K) = \tfrac12 vv^{\top}$ with $v = (1,1)$, and $u_- \mapsto \tfrac12(I - K) = \tfrac12 ww^{\top}$ with $w = (1,-1)$. A product $u_+ M \propto v v^{\top} M$ has image contained in $\mathbb{R}v$, so $u_+ M_2(\mathbb{R}) = R_{\ell_v}$; a product $M u_+ \propto M v v^{\top}$ is annihilated on the right by every vector orthogonal to $v$, so its kernel contains $\ell_w$, and $\mathbb{H}_{\mathrm{s}} u_+ = K_{\ell_w}$. The other two identities are identical with $v$ and $w$ exchanged. $\square$</p>
+<h2 id="nonzero-nilpotents">Nonzero Nilpotents</h2>
+<p><strong>Definition.</strong> A nonzero element $x$ is <strong>nilpotent</strong> if $x^2 = 0$.</p>
+<p><strong>Theorem (The Nilpotents).</strong> A nonzero element $x$ is nilpotent if and only if</p>
+<p>$$
+x \in V \quad \text{and} \quad N(x) = 0,
+$$</p>
+<p>that is, if and only if $x$ is a nonzero vector of the vector subspace lying on the light cone $b^2 = c^2 + d^2$. The set of nilpotents is therefore a two-dimensional cone, and in particular</p>
+<p>$$
+(e_1 + e_3)^2 = e_1^2 + e_1 e_3 + e_3 e_1 + e_3^2 = -1 + 0 + 1 = 0 .
+$$</p>
+<p>Every nilpotent is a zero divisor, and the nilpotents form a proper subset of the zero divisor set.</p>
+<p><strong>Proof.</strong> Write $x = a + u$ with $a \in S$ and $u \in V$. Since $e_1, e_2, e_3$ are traceless and the product of two distinct generators is the third with a sign, the square is</p>
+<p>$$
+x^2 = a^2 + 2au + u^2 = a^2 + 2au - N(u),
+$$</p>
+<p>where $u^2 = -N(u)$ is the identity for pure vectors recorded in (<em>Split-Quaternion Algebra</em>, §<em>The Restricted Form on the Vector Subspace</em>). If $x^2 = 0$, then comparing the components in $S$ and in $V$ gives $2au = 0$, so $a = 0$ or $u = 0$. If $u = 0$ then $a^2 = 0$, so $a = 0$ and $x = 0$, excluded by hypothesis; hence $a = 0$ and $x = u \in V$. Then $x^2 = -N(x)$, so $x^2 = 0$ exactly when $N(x) = 0$. Conversely every such $x$ has $x^2 = 0$. The computation for $e_1 + e_3$ uses $e_1 e_3 = -e_3 e_1$ and $e_1^2 = -1$, $e_3^2 = +1$. Every nilpotent satisfies $N(x)^2 = N(x^2) = 0$, hence $N(x) = 0$, so it is a zero divisor; the element $1 + e_2$ is a zero divisor with $N(1+e_2) = 0$ but $(1+e_2)^2 = 2(1+e_2) \neq 0$, so the inclusion is proper. $\square$</p>
+<p>The nilpotent set is the light cone of the signature-$(2,1)$ form of $V$; by <em>Split-Quaternion Norm and Invertibility</em>, §<em>Isotropy</em>, its lines are the circle $\mathbb{R}(e_1 + \cos\theta\, e_2 + \sin\theta\, e_3)$.</p>
+<h3 id="the-contrast-with-the-division-algebras">The Contrast with the Division Algebras</h3>
+<p>The existence of nilpotents is the sharpest structural contrast the category has.</p>
+<p><strong>Theorem (No Nilpotents in the Division Algebras).</strong> The quaternion algebra $\mathbb{H}$ has no nonzero nilpotent, and the eight-dimensional $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ has no nonzero nilpotent.</p>
+<p><strong>Proof.</strong> The quaternion algebra is a division algebra by <em>Quaternion Algebra</em>, so $x \neq 0$ implies $x$ invertible, and $x^2 = 0$ would give $x = 0$ after multiplying by $x^{-1}$. The eight-dimensional algebra is a product of two copies of $\mathbb{H}$ by the dictionary of <em>The Number Systems as Clifford Algebras</em>, and a nilpotent in a product of algebras would have a nilpotent component in one of the factors; a division algebra has none, so the product has none. $\square$</p>
+<p><strong>Remark.</strong> The comparison isolates the phenomenon. A <strong>simple</strong> real algebra with nilpotents, such as $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$, and a <strong>semisimple, non-simple</strong> product of division algebras without nilpotents, such as $\mathbb{H}_{\mathbb{D}}$, lie on opposite sides of the line that the nilpotent draws. The eight-dimensional algebra is treated later in Part V, under Split-Biquaternions; nothing of it is used here beyond the identification already stated in <em>The Number Systems as Clifford Algebras</em>.</p>
+<h2 id="distribution-of-the-zero-divisors">Distribution of the Zero Divisors</h2>
+<p>The zero divisors are distributed over the distinguished subspaces as follows. The subspaces are those of <em>Split-Quaternion Algebra</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Zero divisors</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S = \mathbb{R}\cdot 1$</td>
+<td>none</td>
+<td>every nonzero scalar is a unit</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the nonzero vectors with $b^2 = c^2 + d^2$</td>
+<td>the light cone, a two-dimensional cone, every nonzero point of which is nilpotent</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$</td>
+<td>the nonzero multiples of $1 \pm e_2$</td>
+<td>two isotropic lines</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$</td>
+<td>the nonzero multiples of $1 \pm e_3$</td>
+<td>two isotropic lines</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}} u_\pm$, $u_\pm \mathbb{H}_{\mathrm{s}}$</td>
+<td>the whole subspace minus the origin</td>
+<td>four maximal isotropic planes</td>
+</tr>
+<tr>
+<td>$u_\pm$ themselves</td>
+<td>$u_+$ and $u_-$</td>
+<td>the two non-central idempotents</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is completed by the following observations.</p>
+<p><strong>The vector subspace.</strong> On $V$ the zero divisors are exactly the lightlike vectors, and by <em>Nonzero Nilpotents</em> they are exactly the nonzero nilpotents. Every zero divisor of $V$ has square zero; this is peculiar to the traceless part and does not hold in the whole algebra.</p>
+<p><strong>The idempotents.</strong> The idempotents $u_\pm = \tfrac12(1 \pm e_2)$ are zero divisors with $u_+ u_- = 0$; they are not nilpotent, since $u_\pm^2 = u_\pm \neq 0$. Together with $0$ and $1$ they are two of the idempotents of the algebra: the general non-scalar idempotent is $\tfrac12(1 \pm \eta)$ for a root $\eta$ of $+1$ in the vector subspace, a one-sheeted hyperboloid's worth of idempotents, as recorded in <em>Split-Quaternion Roots of Minus One</em>.</p>
+<p><strong>The splitting.</strong> The zero divisor set is connected, and it is the union of the planes of the two families of <em>The Two Families</em>. The nilpotent set is the two-dimensional subcone of $V$, and the non-scalar idempotents form a one-sheeted hyperboloid of points of the zero divisor set lying outside that subcone.</p>
+<p><strong>Measure.</strong> The zero divisor set is closed and has Lebesgue measure zero in $\mathbb{R}^4$, since it is the zero set of a nonconstant polynomial; the units are its open dense complement.</p>
+<h2 id="summary">Summary</h2>
+<p>A nonzero split-quaternion is a zero divisor exactly when $N(x) = 0$, and the zero divisor set is the null cone of the determinant form with the origin removed. Under the matrix model it is the set of rank-one $2 \times 2$ real matrices, and a zero divisor is described by its image line and its kernel line.</p>
+<p>The null cone splits into the two families of maximal totally isotropic subspaces, $\mathcal{R}_\ell$ and $\mathcal{K}_\ell$, indexed by the lines $\ell$ of $\mathbb{R}^2$; each is two-dimensional, each consists of singular matrices, and they are the two rulings of the projective null quadric. Every zero divisor lies in exactly one member of each family, the two families are exchanged by transposition, and the four minimal ideals of the algebra are members of the families: $u_+ \mathbb{H}_{\mathrm{s}} = \mathcal{K}_{\ell_w}$, $\mathbb{H}_{\mathrm{s}} u_+ = \mathcal{R}_{\ell_v}$, and their analogues.</p>
+<p>The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when it lies in the vector subspace and on its light cone, and $(e_1 + e_3)^2 = 0$. The quaternion algebra and the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ have no nonzero nilpotent, the first because it is a division algebra and the second because it is a product of division algebras. The zero divisor set is a connected three-dimensional cone of measure zero, the nilpotents form its two-dimensional subcone inside $V$, and the two non-central idempotents are two further points of it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z$</td>
+<td>the zero divisor set $\{x \neq 0 : N(x) = 0\}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathcal{N}$</td>
+<td>the null cone $\{x : N(x) = 0\}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\Phi(Z)$</td>
+<td>the rank-one matrices of $M_2(\mathbb{R})$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>image line, kernel line</td>
+<td>the two lines attached to a rank-one matrix</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathbb{R}x$, $[x]$</td>
+<td>an isotropic line of the projective null quadric $Q$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$R_\ell$, $K_\ell$</td>
+<td>$\{M : \operatorname{im} M \subseteq \ell\}$, $\{M : \ker M \supseteq \ell\}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathcal{R}$, $\mathcal{K}$</td>
+<td>the two families of maximal isotropic subspaces</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathcal{R}_\ell$, $\mathcal{K}_\ell$</td>
+<td>the same, transported to $\mathbb{H}_{\mathrm{s}}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>the anti-automorphism $\Phi^{-1}\circ(\cdot)^{\top}\circ\Phi$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>nilpotent</td>
+<td>nonzero $x$ with $x^2 = 0$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\ell_v, \ell_w$</td>
+<td>the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$u_\pm = \tfrac12(1 \pm e_2)$</td>
+<td>the non-central idempotents</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$N(x) = \det \Phi(x)$</td>
+<td>the norm and determinant form</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the coquaternions, their idempotents and their nilpotents.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for maximal isotropic subspaces and the ruling of the null quadric.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for isotropic forms, the inertia law and the geometry of the null cone.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the split composition algebras and their zero divisors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

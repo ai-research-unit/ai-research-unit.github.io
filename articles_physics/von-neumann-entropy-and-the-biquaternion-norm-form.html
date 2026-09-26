@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Von Neumann Entropy and the Biquaternion Norm Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="von-neumann-entropy-and-the-biquaternion-norm-form"><strong>Von Neumann Entropy and the Biquaternion Norm Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The von Neumann entropy of a state is the fundamental quantitative measure of the information a quantum state fails to hold: it vanishes on the pure states, is maximal on the maximally mixed state, and quantifies the compression achievable in the quantum source coding theorem. In the biquaternion framework the state space of a qubit is the trace-one slice of the positive cone of $\mathbb{M}_+$, and the cone is defined by the algebra's norm form. The question this article answers is what the entropy is, in that geometry.</p>
+<p>The answer is a single clean statement: on the state space of the framework, the von Neumann entropy is a function of the norm form alone. For a state $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ one has</p>
+<p>$$
+N(\tilde{\rho}) = \tfrac{1}{4}\bigl(1 - |\mathbf{r}|^2\bigr)e_0 ,
+$$</p>
+<p>so the norm form carries exactly one real number, the Bloch radius squared; and the spectrum of the state depends on the state only through that number, $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$. The entropy is therefore</p>
+<p>$$
+S(\tilde{\rho}) = h\!\left(\frac{1+|\mathbf{r}|}{2}\right)
+= h\!\left(\frac{1+\sqrt{1-4N(\tilde{\rho})}}{2}\right),
+\qquad h(p) = -p\log p - (1-p)\log(1-p),
+$$</p>
+<p>a function of $N$ and nothing else. Equivalently, since the deviation of a state from idempotency is</p>
+<p>$$
+\tilde{\rho}^2 - \tilde{\rho} = -N(\tilde{\rho})\,e_0 ,
+$$</p>
+<p>the entropy is a function of the single scalar by which the state fails to be idempotent. Pure states are the zero divisors of the norm form, maximally mixed is its maximum on the state space, and entropy measures the position of the state between them.</p>
+<p>This is the informational reading of a geometric fact. The article does not claim that entropy is <em>derived</em> from the norm form in the sense of being forced by it — the function $h$ is the standard one, and its form is a theorem of information theory, not of the algebra — but it makes precise which algebraic invariant the entropy sees. The norm form supplies the number; information theory supplies the function. Two invariants of the algebra are in play throughout the framework and must not be conflated: the <strong>trace pairing</strong> $\mathrm{Tr}(\tilde{P}\tilde{H})$, which is positive definite and gives the Born rule, and the <strong>norm form</strong> $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, which is indefinite of signature $(1,3)$ and gives the cone. Entropy belongs to the second.</p>
+<p>The article proceeds as follows. The state, its purity, and the norm form are recalled and the identities connecting them are derived. Then the spectral decomposition is used to compute the entropy and to write it as a function of the norm form, and the logarithm is exhibited as an element of the algebra. Then the consequences are collected: monotonicity, bounds, concavity, unitary invariance, and the behaviour at the two ends of the cone slice. Then the relation to the standard matrix formula is stated, and a section separates what the norm-form description adds from what it merely restates. Open questions and the usual closing sections follow.</p>
+<h2 id="the-state-its-purity-and-the-norm-form">The State, Its Purity, and the Norm Form</h2>
+<h3 id="the-state-space">The state space</h3>
+<p>A state of the informational sector is an element of the Hermitian subspace</p>
+<p>$$
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\,\mathbf{r}\bigr), \qquad \mathbf{r} = r_1e_1 + r_2e_2 + r_3e_3, \quad r_k\in\mathbb{R},
+$$</p>
+<p>with trace $\mathrm{Tr}(\tilde{\rho}) = 2\,\mathrm{Sc}(\tilde{\rho}) = 1$. Its matrix image is</p>
+<p>$$
+M(\tilde{\rho}) = \tfrac{1}{2}\bigl(I_2 + \mathbf{r}\cdot\boldsymbol{\sigma}\bigr),
+$$</p>
+<p>whose eigenvalues are $\tfrac12(1\pm|\mathbf{r}|)$. Positivity, $M(\tilde{\rho})\geq0$, is therefore equivalent to $|\mathbf{r}|\leq1$, and the states form the Bloch ball. The boundary $|\mathbf{r}|=1$ is the set of pure states; the center $\mathbf{r}=0$ is the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$.</p>
+<h3 id="purity-and-the-deviation-from-idempotency">Purity and the deviation from idempotency</h3>
+<p>Squaring the state gives, using $e_ke_l = -\delta_{kl}e_0 + \epsilon_{klm}e_m$ and the vanishing of the cross terms for the pure scalar part,</p>
+<p>$$
+\tilde{\rho}^2 = \tfrac{1}{4}\bigl(e_0 + i\mathbf{r}\bigr)^2
+= \tfrac{1}{4}\bigl((1+|\mathbf{r}|^2)e_0 + 2i\mathbf{r}\bigr).
+$$</p>
+<p>Hence the <strong>purity</strong> is</p>
+<p>$$
+\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}\bigl(1 + |\mathbf{r}|^2\bigr),
+$$</p>
+<p>and the <strong>deviation from idempotency</strong> is a pure scalar multiple of the identity,</p>
+<p>$$
+\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\mathbf{r}|^2 - 1\bigr)e_0 .
+$$</p>
+<p>The state is pure, $\tilde{\rho}^2 = \tilde{\rho}$, exactly when $|\mathbf{r}|=1$; it is idempotent exactly when its purity is one. Everything that follows is a statement about the single real number $\mathrm{Sc}(\tilde{\rho}^2-\tilde{\rho}) = \tfrac14(|\mathbf{r}|^2-1)\leq0$.</p>
+<h3 id="the-norm-form-on-math27">The norm form on $\mathbb{M}_+$</h3>
+<p>The norm form of the algebra is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde{H} = h_0e_0 + i\mathbf{h}$ with real coefficients it is the real scalar</p>
+<p>$$
+N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 ,
+$$</p>
+<p>so it has signature $(1,3)$; the cone $N(\tilde{H})\geq0$ with $h_0\geq0$ is the positive cone of the Hermitian subspace, and positivity of the operator is exactly $N(\tilde{H})\geq0$ together with $h_0\geq0$. Equivalently, the norm form is the determinant of the matrix image,</p>
+<p>$$
+N(\tilde{H}) = \det M(\tilde{H}) ,
+$$</p>
+<p>which is why it is the natural scalar for the cone: a Hermitian matrix is positive semidefinite precisely when its trace and determinant are both non-negative.</p>
+<p>For a state the norm form is</p>
+<p>$$
+N(\tilde{\rho}) = \tfrac{1}{4}\bigl(1 - |\mathbf{r}|^2\bigr)e_0 ,
+$$</p>
+<p>a scalar element of the center. Three readings of this single identity organize the rest of the article:</p>
+<ul>
+<li>$N(\tilde{\rho})\geq0$ is positivity, with equality exactly on the pure states; the norm form's zero set is the boundary of the Bloch ball, the zero-divisor cone of $\mathbb{M}_+$.</li>
+<li>Comparing with the deviation from idempotency, $\tilde{\rho}^2-\tilde{\rho} = -N(\tilde{\rho})e_0$: <strong>the mixedness of a state is minus its norm form</strong>. There is no other mixedness parameter.</li>
+<li>The purity is an affine function of the norm form, $\mathrm{Tr}(\tilde{\rho}^2) = 1 - 2N(\tilde{\rho})$.</li>
+</ul>
+<p>The norm form therefore measures the failure of a state to be a zero divisor of the algebra, and it does so with one number. On the trace-one slice it takes its minimum $0$ on the pure states and its maximum $\tfrac14$ at the maximally mixed state.</p>
+<h2 id="the-spectral-decomposition-and-the-entropy">The Spectral Decomposition and the Entropy</h2>
+<h3 id="the-spectrum">The spectrum</h3>
+<p>The state has a spectral decomposition into the two complementary idempotents along its Bloch direction. Writing $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ for $\mathbf{r}\neq0$,</p>
+<p>$$
+\tilde{\rho} = \lambda_+\,\tilde{P}_+(\hat{\mathbf{r}}) + \lambda_-\,\tilde{P}_-(\hat{\mathbf{r}}),
+\qquad
+\tilde{P}_\pm(\hat{\mathbf{r}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\mathbf{r}}\bigr),
+\qquad
+\lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\mathbf{r}|\bigr).
+$$</p>
+<p>The two projectors are idempotent, Hermitian, orthogonal, and sum to the identity: $\tilde{P}_\pm^2 = \tilde{P}_\pm$, $\tilde{P}_+\tilde{P}_- = 0$, $\tilde{P}_+ + \tilde{P}_- = e_0$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde{P}_\pm\tilde{\rho}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\mathbf{r}|$ and $\lambda_+ + \lambda_- = 1$.</p>
+<h3 id="entropy-as-a-function-of-the-norm-form">Entropy as a function of the norm form</h3>
+<p>The <strong>von Neumann entropy</strong> is</p>
+<p>$$
+S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-
+= h\!\left(\lambda_+\right).
+$$</p>
+<p>Since $|\mathbf{r}| = \sqrt{1-4N(\tilde{\rho})}$ on the trace-one slice, this is a function of the norm form alone:</p>
+<p>$$
+S(\tilde{\rho}) = H\!\left(N(\tilde{\rho})\right),
+\qquad
+H(N) = h\!\left(\frac{1+\sqrt{1-4N}}{2}\right).
+$$</p>
+<p>The function $H$ is defined on the interval $N\in[0,\tfrac14]$ that the norm form takes on the state space. At the pure-state end $N=0$ it gives $H(0) = h(1) = 0$; at the maximally mixed end $N=\tfrac14$ it gives $H(\tfrac14) = h(\tfrac12) = \log 2$. On the interior it is smooth and strictly increasing, because $h$ is increasing on $[\tfrac12,1]$ and $\sqrt{1-4N}$ is decreasing. Its derivative,</p>
+<p>$$
+\frac{dS}{dN} = -\frac{1}{\sqrt{1-4N}}\log\!\left(\frac{1-\sqrt{1-4N}}{1+\sqrt{1-4N}}\right) > 0 .
+$$</p>
+<p>As $N\to0$ this derivative diverges to $+\infty$: the entropy leaves the pure states — the zero-divisor cone — with infinite slope in the norm-form coordinate. As $N\to\tfrac14$ it tends to the finite value $2$, matching the expansion $S\approx\log2-\tfrac12+2N$ near the maximally mixed state. The entropy is thus a monotone function of the norm form, and the norm form is its argument.</p>
+<h3 id="the-logarithm-as-an-element-of-the-algebra">The logarithm as an element of the algebra</h3>
+<p>The standard formula can also be written algebraically. On the interior of the Bloch ball the state has full rank, so its real logarithm exists and lies in $\mathbb{M}_+$:</p>
+<p>$$
+\log \tilde{\rho} = \log\lambda_+\, \tilde{P}_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde{P}_-(\hat{\mathbf{r}}) .
+$$</p>
+<p>Multiplying by $\tilde{\rho}$ and taking the scalar part,</p>
+<p>$$
+-2\,\mathrm{Sc}\bigl(\tilde{\rho}\log\tilde{\rho}\bigr)
+= -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-
+= S(\tilde{\rho}) ,
+$$</p>
+<p>because the projectors are orthogonal and each has scalar part $\tfrac12$. Equivalently, in the trace notation,</p>
+<p>$$
+S(\tilde{\rho}) = -\mathrm{Tr}\bigl(\tilde{\rho}\log\tilde{\rho}\bigr),
+$$</p>
+<p>which is the ordinary matrix formula read in the algebra. The derivation uses only $\mathrm{Tr}(\tilde{\rho}) = 1$, the spectral decomposition, and the trace formula $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$; no property of the module beyond the spectral theorem is required.</p>
+<p>Two caveats belong here. First, the expression requires the logarithm, whose value on the rank-one idempotents is unbounded below; the convention $0\log 0 = 0$ removes the boundary points and assigns the pure states entropy zero as a limit. In the interior the formula is exact; at the boundary it is a limiting statement. Second, the base of the logarithm is conventional; with the natural logarithm the maximal entropy is $\log 2$, and with base two it is one bit. The article uses the natural logarithm and states when a base-two value is quoted.</p>
+<h3 id="the-entropy-of-a-state-as-a-function-of-its-purity">The entropy of a state as a function of its purity</h3>
+<p>Combining the two scalar invariants, the entropy depends on the state through the purity or through the norm form, and the two are affinely related:</p>
+<p>$$
+\mathrm{Tr}(\tilde{\rho}^2) = 1 - 2N(\tilde{\rho}) , \qquad
+S = h\!\left(\frac{1+\sqrt{2\,\mathrm{Tr}(\tilde{\rho}^2)-1}}{2}\right).
+$$</p>
+<p>On the state space the purity ranges over $[\tfrac12,1]$ and the norm form over $[0,\tfrac14]$; the entropy is a concave function of the purity and an increasing function of the norm form. For a qubit the three invariants — Bloch radius, purity, norm form — carry exactly the same information, and the entropy is a function of any one of them. This degeneracy is special to two dimensions; for a $d$-level system the norm form is no longer a single number, and the entropy depends on the full spectrum rather than on one scalar.</p>
+<h2 id="consequences-of-the-norm-form-dependence">Consequences of the Norm-Form Dependence</h2>
+<h3 id="bounds">Bounds</h3>
+<p>Since $N(\tilde{\rho})\in[0,\tfrac14]$ and $H$ is increasing,</p>
+<p>$$
+0 \;\leq\; S(\tilde{\rho}) \;\leq\; \log 2 ,
+$$</p>
+<p>with $S=0$ exactly on the pure states (the zero divisors of the norm form) and $S=\log 2$ exactly at the maximally mixed state, the unique maximizer. The upper bound is the dimension of the module in nats, $\log\dim_{\mathbb{C}}S = \log2$, and it is attained at the center of the Bloch ball, which is also the point where the norm form takes its maximal value $\tfrac14$ on the trace-one slice.</p>
+<h3 id="monotonicity-and-the-cone">Monotonicity and the cone</h3>
+<p>Define the "radial" coordinate $\rho_{\mathrm{B}} = |\mathbf{r}| = \sqrt{1-4N}$. Radial contraction of the state toward the center — the operation $\mathbf{r}\mapsto(1-p)\mathbf{r}$ for $0\leq p\leq1$, which is depolarization — strictly increases $N$ and strictly increases $S$ for any state with $\mathbf{r}\neq0$. Radial expansion toward the boundary strictly decreases both. In the language of the cone, moving the state deeper into the positive cone (larger $N$) increases its entropy; approaching the zero-divisor cone ($N\to0$) decreases it to zero. Entropy is thus a monotone coordinate on the cone slice, and the pure states form its boundary.</p>
+<h3 id="concavity">Concavity</h3>
+<p>The entropy is concave. For two states and $0\leq t\leq1$,</p>
+<p>$$
+S\bigl(t\tilde{\rho}_1 + (1-t)\tilde{\rho}_2\bigr) \;\geq\; t\,S(\tilde{\rho}_1) + (1-t)\,S(\tilde{\rho}_2).
+$$</p>
+<p>In the norm-form description this is the statement that the composition $H\circ N$ is concave along convex combinations of states. Since $N$ is a quadratic (and hence not affine) function of the state, the concavity of $H\circ N$ is not a trivial consequence of the concavity of $H$; it is the statement that mixing cannot decrease information, verified spectrum by spectrum. The maximally mixed state is the unique fixed point of the mixing map $\tilde{\rho}\mapsto\tfrac12\tilde{\rho}+\tfrac14 e_0$ and is the state of largest entropy.</p>
+<h3 id="unitary-invariance">Unitary invariance</h3>
+<p>Rotor conjugation by a matrix-unitary biquaternion, $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^\dagger$ with $\tilde{U}\tilde{U}^\dagger = e_0$, rotates the Bloch vector without changing its length. It therefore preserves $N(\tilde{\rho})$, the purity, the spectrum, and the entropy. This is the statement that the entropy is a unitary invariant, as it must be; in the framework it is the statement that $S$ is a function of the norm form, which the inner automorphisms of the algebra preserve.</p>
+<h2 id="relation-to-the-standard-formula">Relation to the Standard Formula</h2>
+<p>The standard von Neumann entropy of a density operator is $S = -\mathrm{Tr}(\rho\log\rho)$ with eigenvalues $\lambda_i$. For a qubit with Bloch vector $\mathbf{r}$, the eigenvalues are $\tfrac12(1\pm|\mathbf{r}|)$ and the entropy is $h\!\left(\tfrac{1+|\mathbf{r}|}{2}\right)$. This is exactly the formula derived above, so the framework's entropy is the standard entropy. Nothing here changes a numerical prediction.</p>
+<p>What the norm-form reading adds is the <em>location</em> of the entropy's argument. In the matrix formulation the entropy is a function of the spectrum, and the spectrum is obtained by diagonalizing a matrix. In the biquaternion formulation the state carries a norm form, and on the trace-one slice the norm form is the deviation from idempotency; the entropy is a function of that scalar. The operative content is that:</p>
+<ul>
+<li>purity is an affine function of the norm form, $\mathrm{Tr}(\tilde{\rho}^2) = 1-2N(\tilde{\rho})$;</li>
+<li>the mixedness scalar is exactly the norm form up to sign, $\tilde{\rho}^2-\tilde{\rho} = -N(\tilde{\rho})e_0$;</li>
+<li>the entropy is a monotone function of the position of the state in the cone of the norm form.</li>
+</ul>
+<p>None of this is available in the same form for a general $d$-level system, where the norm form is not a single number; the qubit is special because its state space is the cone slice of a single quadratic form.</p>
+<h2 id="what-the-norm-form-description-does-and-does-not-claim">What the Norm-Form Description Does and Does Not Claim</h2>
+<p><strong>What it does.</strong></p>
+<ul>
+<li>It exhibits the entropy as a function of the norm form, $S = H(N)$, on the whole state space, with $H$ explicit.</li>
+<li>It identifies the pure states as the zero divisors of the norm form and the maximally mixed state as its maximum on the trace-one slice.</li>
+<li>It gives the algebraic identity $\tilde{\rho}^2-\tilde{\rho} = -N(\tilde{\rho})e_0$ relating mixedness to the norm form.</li>
+<li>It reproduces the standard qubit entropy and its bounds $0\leq S\leq\log2$.</li>
+</ul>
+<p><strong>What it does not.</strong></p>
+<ul>
+<li>It does not derive the Shannon function $h$; the functional form of the entropy is a theorem of information theory, imported as standard.</li>
+<li>It does not extend the "entropy is a function of the norm form" statement beyond the qubit. For larger systems the norm form is not a single real number, and the argument fails.</li>
+<li>It does not by itself give the entropy of a <em>reduced</em> state of a composite system except through the partial trace, which is an additional structure on $\mathbb{B}\otimes\mathbb{B}$ and is treated in the companion articles on entanglement.</li>
+<li>It does not supply data-processing inequalities, monotonicity under channels, or strong subadditivity; those are properties of the entropy under maps and are developed with the channel formalism.</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>1. Entropy from the algebra alone.</strong> The entropy is a function of the norm form, but the function $h$ is not algebraic. Is there a characterization of the entropy as the unique (up to scale) quantity on the cone slice that is monotone, concave, and unitary invariant? For the qubit this is plausible; a derivation from algebraic axioms alone has not been given.</p>
+<p><strong>2. The many-qubit case.</strong> For $n$ qubits the state space is the positive cone slice of $\mathbb{M}_+^{\otimes n}$, and the norm form is replaced by a family of invariants. Which algebraic data determine the entropy there, and does the norm form of the tensor product play the role the single norm form plays here?</p>
+<p><strong>3. Entropy and the trace pairing.</strong> Entropy is a function of the norm form; the Born rule is a function of the trace pairing. Is there an algebraic relation between the two pairings that makes this division of labour inevitable, or is it an accident of the qubit?</p>
+<p><strong>4. Relative entropy.</strong> The quantum relative entropy $S(\rho\|\sigma)$ measures distinguishability and underlies the Holevo bound. Its biquaternion form, and whether it admits a norm-form expression in the qubit case, is the natural continuation of this article.</p>
+<p><strong>5. Empirical content.</strong> As elsewhere in the framework, the entropy in biquaternion form is the standard entropy transcribed. It predicts nothing new; its value is structural.</p>
+<h2 id="summary">Summary</h2>
+<p>The state space of the qubit is the trace-one slice of the positive cone of the Hermitian subspace $\mathbb{M}_+$, and the cone is defined by the algebra's norm form</p>
+<p>$$
+N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}), \qquad
+N(\tilde{\rho}) = \tfrac{1}{4}\bigl(1-|\mathbf{r}|^2\bigr)e_0 .
+$$</p>
+<p>The norm form of a state is a single real number taking values in $[0,\tfrac14]$ on the state space. The deviation of the state from idempotency is minus that number, $\tilde{\rho}^2-\tilde{\rho} = -N(\tilde{\rho})e_0$, and the purity is affine in it, $\mathrm{Tr}(\tilde{\rho}^2) = 1-2N(\tilde{\rho})$. The spectrum is $\lambda_\pm = \tfrac12(1\pm\sqrt{1-4N})$, so the von Neumann entropy is a function of the norm form and nothing else,</p>
+<p>$$
+S(\tilde{\rho}) = h\!\left(\frac{1+\sqrt{1-4N(\tilde{\rho})}}{2}\right) = -\mathrm{Tr}\bigl(\tilde{\rho}\log\tilde{\rho}\bigr),
+$$</p>
+<p>with $S=0$ exactly on the pure states (the zero divisors of the norm form) and $S=\log2$ exactly at the maximally mixed state (the maximum of the norm form on the slice). Entropy is monotone in the norm form, concave, and invariant under the unitary inner automorphisms that preserve the norm form.</p>
+<p>The description is the standard qubit entropy, and it predicts nothing new. What it makes precise is which invariant the entropy measures: not the trace pairing of the Born rule, but the norm form whose cone is the state space, and, on that cone slice, the distance of the state from the zero-divisor boundary.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (states and observables)</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion units, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$</td>
+<td>State with Bloch vector $\mathbf{r}$, $|\mathbf{r}|\le1$</td>
+</tr>
+<tr>
+<td>$\tilde{P}_\pm(\hat{\mathbf{r}}) = \tfrac12(e_0\pm i\hat{\mathbf{r}})$</td>
+<td>Spectral idempotents of the state</td>
+</tr>
+<tr>
+<td>$\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$</td>
+<td>Eigenvalues</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$</td>
+<td>Trace</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H})$</td>
+<td>Norm form of a Hermitian element</td>
+</tr>
+<tr>
+<td>$N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$</td>
+<td>Norm form of a state</td>
+</tr>
+<tr>
+<td>$\tilde{\rho}^2 - \tilde{\rho} = -N(\tilde{\rho})e_0$</td>
+<td>Deviation from idempotency</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{\rho}^2) = 1-2N(\tilde{\rho})$</td>
+<td>Purity</td>
+</tr>
+<tr>
+<td>$h(p) = -p\log p-(1-p)\log(1-p)$</td>
+<td>Binary entropy</td>
+</tr>
+<tr>
+<td>$S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$</td>
+<td>Von Neumann entropy</td>
+</tr>
+<tr>
+<td>$S = H(N) = h\!\left(\tfrac{1+\sqrt{1-4N}}{2}\right)$</td>
+<td>Entropy as a function of the norm form</td>
+</tr>
+<tr>
+<td>$0 \le S \le \log 2$</td>
+<td>Entropy bounds</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. von Neumann, <em>Mathematical Foundations of Quantum Mechanics</em> (Princeton, 1955), for the original definition of the entropy of a density operator.</li>
+<li>A. Wehrl, "General properties of entropy," <em>Reviews of Modern Physics</em> <strong>50</strong> (1978) 221–260, for concavity, monotonicity, and the standard properties of the von Neumann entropy.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the entropy of a qubit, the Bloch-ball parametrization, and the bounds $0\leq S\leq\log2$.</li>
+<li>A. Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for the spectral decomposition of a qubit state and the geometry of the Bloch ball.</li>
+<li>I. Bengtsson and K. Życzkowski, <em>Geometry of Quantum States</em> (Cambridge, 2006), for the state space as a cone slice and for the geometric meaning of positivity and purity.</li>
+<li>M. Ohya and D. Petz, <em>Quantum Entropy and Its Use</em> (Springer, 1993), for the axiomatic characterization of entropy and the relative entropy.</li>
+<li>T. M. Cover and J. A. Thomas, <em>Elements of Information Theory</em> (Wiley, 2006), for the Shannon function $h$ and the source-coding interpretation of the entropy.</li>
+<li>The companion articles of this series: <em>Quantum Mechanics in Biquaternionic Form</em>, <em>The Born Rule as a Trace Formula — Derivation and Comparison</em>, <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, and <em>Decoherence as Idempotent Projection</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

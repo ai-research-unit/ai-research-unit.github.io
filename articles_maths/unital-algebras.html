@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unital Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unital-algebras"><strong>Unital Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the second of the two axioms that the corpus adds to the broad sense of an algebra. An $R$-algebra in the sense fixed in <em>Algebras</em> is an $R$-module with a bilinear product; the previous article of this category, <em>Associative Algebras</em>, adds associativity; this article adds the existence of an <strong>identity</strong> $1$ with $1x = x1 = x$ for every $x$. The two axioms are independent, and most of the corpus assumes both. Associativity without unitality is the ideal $(x) \subseteq R[x]$ of §<em>The Non-Unital Algebras of the Corpus</em>; unitality without associativity is the symmetrised algebra of $M_2(k)$ over a field of characteristic not $2$, in <em>Jordan Algebras</em>, §<em>The Symmetrisation of an Associative Algebra</em>: with the product $x \circ y = \tfrac12(xy + yx)$ the identity matrix is an identity, and the product is not associative.</p>
+<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is an $R$-algebra in the broad sense, unless a sentence names a stronger hypothesis. The article is algebraic throughout and uses no distance, no norm and no limit; the one notion of the corpus that is defined by convergence, the approximate identity, is stated in §<em>Approximate Identities</em> for the sake of the examples, and it belongs to <em>The Convolution Algebra $L^1(G)$</em>.</p>
+<p>The aim of the article is the equivalence of §<em>Unital Algebras as Rings over the Centre</em>: a unital $R$-algebra is a ring with identity together with a unital ring homomorphism $R \to Z(A)$, and conversely. From it, the article treats the trivial cases and the standing hypothesis $1 \neq 0$, the unit group and its specialisations, the unitisation $A^+$ by which a unit is adjoined to any algebra, the homomorphisms that preserve the identity and those that do not, and the idempotents, whose central ones decompose a unital algebra as a product. It closes with the non-unital algebras of the corpus and with the approximate identities that its topological ones carry instead of a unit.</p>
+<p>The unit theory is not repeated here. The general unit group $A^\times$, the statement that a unit is not a zero divisor and lies in no proper ideal, and the division-algebra criterion are the subject of <em>Centre, Units, Zero Divisors and Division Algebras</em>, §<em>Units</em>, §<em>Zero Divisors</em> and §<em>The Regular Module and Division Algebras</em>; the product of ideals is <em>Ideals and Quotients of Algebras</em>, §<em>Products and Sums of Ideals</em>, and the fact that a proper ideal of a unital algebra contains no unit is <em>Ideals and Quotients of Algebras</em>, §<em>Ideals</em>; the units of the matrix, group and polynomial algebras are specialised in §<em>The Unit Group</em> and proved in <em>Matrix Algebras</em>, <em>Group Algebras</em> and <em>Polynomial Algebras</em>. The convolution algebra is <em>The Convolution Algebra $L^1(G)$</em>, in Part III, and the operator algebras are <em>Operator Algebras</em>, in Part II.</p>
+<h2 id="the-identity-and-the-canonical-map">The Identity and the Canonical Map</h2>
+<p><strong>Definition.</strong> Let $A$ be an $R$-algebra. An element $1_A \in A$ is an <strong>identity</strong> of $A$ if</p>
+<p>$$
+1_A x = x 1_A = x
+$$</p>
+<p>for every $x \in A$. The algebra is <strong>unital</strong> if it has an identity, and $A$ is then a <strong>unital $R$-algebra</strong>. When no confusion arises the identity is written $1$.</p>
+<p><strong>Proposition (uniqueness).</strong> A unital algebra has exactly one identity.</p>
+<p><em>Proof.</em> If $1$ and $1'$ are identities then $1 = 1\,1' = 1'$, since $1'$ is an identity for the first product and $1$ for the second. $\square$</p>
+<p><strong>Definition.</strong> Let $A$ be a unital $R$-algebra. The <strong>canonical map</strong> is</p>
+<p>$$
+\eta : R \longrightarrow A, \qquad \eta(r) = r\,1_A ,
+$$</p>
+<p>the action of $r$ on the identity.</p>
+<p><strong>Proposition.</strong> Let $A$ be a unital $R$-algebra with canonical map $\eta$. Then:</p>
+<ol>
+<li>$\eta$ is a unital ring homomorphism, $\eta(1_R) = 1_A$ and $\eta(r + s) = \eta(r) + \eta(s)$, $\eta(rs) = \eta(r)\eta(s)$;</li>
+<li>the image $R \cdot 1_A = \eta(R)$ is contained in the centre $Z(A)$;</li>
+<li>$R \cdot 1_A$ is the smallest unital $R$-subalgebra of $A$, and $\eta$ is the unique unital $R$-algebra homomorphism $R \to A$.</li>
+</ol>
+<p><em>Proof.</em> (1) Additivity is the module axiom $\eta(r+s) = (r+s)1_A = r1_A + s1_A$. For multiplicativity, the scalar compatibility and the bilinearity give</p>
+<p>$$
+(r1_A)(s1_A) = r\bigl(1_A(s1_A)\bigr) = r\bigl(s(1_A1_A)\bigr) = rs\,1_A = \eta(rs),
+$$</p>
+<p>and $\eta(1_R) = 1_R1_A = 1_A$. (2) For $a \in A$ the first $R$-linearity axiom and the identity give $(r1_A)a = r(1_Aa) = ra$, and the second gives $a(r1_A) = r(a1_A) = ra$; hence $(r1_A)a = a(r1_A)$ and $r1_A \in Z(A)$. (3) A unital $R$-subalgebra contains $1_A$, hence contains $r1_A$ for every $r$, so it contains $R\cdot1_A$; and that set is closed under the operations because $\eta$ is a ring homomorphism and the product is $R$-bilinear. A unital homomorphism $\varphi : R \to A$ has $\varphi(r) = \varphi(r1_R) = r\varphi(1_R) = r1_A = \eta(r)$ by $R$-linearity and unitality, so it is $\eta$. $\square$</p>
+<p>The centrality in statement (2) is not a technicality: it is exactly what makes the multiplication by scalars compatible with the multiplication of $A$ in both variables.</p>
+<h2 id="unital-algebras-as-rings-over-the-centre">Unital Algebras as Rings over the Centre</h2>
+<p>The canonical map converts the algebra structure into a ring structure with a distinguished central homomorphism, and the conversion is reversible. This is the spine of the article.</p>
+<p><strong>Theorem (associative unital algebras are rings over their centre).</strong> Let $R$ be a commutative ring with identity $1 \neq 0$. The following are equivalent:</p>
+<ol>
+<li>an associative unital $R$-algebra structure on a set $A$, with product $A \times A \to A$;</li>
+<li>a ring structure with identity on $A$, associative, together with a unital ring homomorphism $\eta : R \to Z(A)$ into its centre.</li>
+</ol>
+<p>The two constructions are inverse to one another, and they establish an equivalence between the category of associative unital $R$-algebras with unital $R$-algebra homomorphisms and the category of associative rings with identity equipped with a unital ring homomorphism from $R$ into the centre, with the ring homomorphisms that make the evident triangle commute.</p>
+<p><em>Proof.</em> (1) $\Rightarrow$ (2). An $R$-algebra is a ring, associative when the algebra is; the identity of the algebra is the identity of the ring; and the canonical map $\eta : r \mapsto r1_A$ is a unital ring homomorphism with image in $Z(A)$ by the proposition of §<em>The Identity and the Canonical Map</em>.</p>
+<p>(2) $\Rightarrow$ (1). Let $A$ be an associative ring with identity $1_A$ and let $\eta : R \to Z(A)$ be a unital ring homomorphism. Define the action of $R$ on $A$ by</p>
+<p>$$
+r \cdot a = \eta(r)\,a .
+$$</p>
+<p>This is an $R$-module structure: distributivity in $a$ is the distributivity of the ring, distributivity in $r$ is the additivity of $\eta$, the associativity $(rs)\cdot a = \eta(rs)a = \eta(r)\bigl(\eta(s)a\bigr) = r\cdot(s\cdot a)$ is the multiplicativity of $\eta$, and $1_R \cdot a = \eta(1_R)a = 1_Aa = a$ is the unitality of $\eta$. The ring multiplication is $R$-bilinear with respect to this action: for $a, b \in A$,</p>
+<p>$$
+(r \cdot a)b = \bigl(\eta(r)a\bigr)b = \eta(r)(ab) = r \cdot (ab)
+$$</p>
+<p>by the associativity of $A$, and</p>
+<p>$$
+a(r \cdot b) = a\bigl(\eta(r)b\bigr) = \bigl(a\eta(r)\bigr)b = \bigl(\eta(r)a\bigr)b = r \cdot (ab),
+$$</p>
+<p>where the middle equality uses $\eta(r) \in Z(A)$. Hence $A$ is an $R$-algebra with identity $1_A$. The two passages are mutually inverse: the canonical map of the algebra constructed from $\eta$ is $r \mapsto r\cdot1_A = \eta(r)1_A = \eta(r)$, and the ring structure of an algebra is the one it started with. A unital algebra homomorphism is a ring homomorphism commuting with the algebra action, which is the condition that it intertwines the canonical maps. $\square$</p>
+<p><strong>Corollary (rings as algebras).</strong> Every associative ring with identity is a unital $\mathbb{Z}$-algebra in exactly one way, the canonical map being $n \mapsto n1_A$; the category of such rings is the category of unital $\mathbb{Z}$-algebras. More generally a ring $A$ with identity carries a unital $R$-algebra structure exactly when a unital ring homomorphism $R \to Z(A)$ is given, so a ring may carry several distinct $R$-algebra structures with the same product.</p>
+<p><strong>Example (centrality is a real condition).</strong> Let $A = \mathbb{H}$ be the quaternions, a unital $\mathbb{R}$-algebra with $Z(\mathbb{H}) = \mathbb{R}$, as computed in <em>Centre, Units, Zero Divisors and Division Algebras</em>, §<em>The Centre</em>. There is no unital ring homomorphism $\mathbb{C} \to \mathbb{H}$ with image in the centre, since $Z(\mathbb{H}) = \mathbb{R}$ contains no copy of $\mathbb{C}$; hence $\mathbb{H}$ is not a $\mathbb{C}$-algebra, although it is a left $\mathbb{C}$-module through any embedding of $\mathbb{C}$ in $\mathbb{H}$. The module structure is not enough: the two sides of the product must commute with the scalars, which is the centrality.</p>
+<p><strong>Remark.</strong> The theorem explains the convention, stated in <em>introduction-and-mathematical-conventions</em>, that a module is written with its scalars on the left and that the side begins to matter when the ring is non-commutative. For a unital algebra over a commutative $R$ the scalars lie in the centre, so the left and right actions agree, and no side is preferred; the centrality of $\eta$ is what makes the notation unambiguous.</p>
+<h2 id="trivial-cases-and-the-hypothesis-math137">Trivial Cases and the Hypothesis $1 \neq 0$</h2>
+<p><strong>Theorem.</strong> In a unital algebra $A$, if $1 = 0$ then $A = \{0\}$.</p>
+<p><em>Proof.</em> For every $a \in A$, $a = a1 = a0 = 0$. $\square$</p>
+<p><strong>Corollary.</strong> A nonzero unital algebra has $1 \neq 0$. The zero algebra is the only algebra in which the identity equals the zero element, and in it $0$ is a unit, $0 \cdot 0 = 0 = 1$, with unit group $A^\times = \{0\}$ the trivial group.</p>
+<p><strong>Remark (the standing hypothesis).</strong> The corpus writes $1 \neq 0$ throughout, and it is a hypothesis on the coefficient structure rather than on the algebra: it is part of the definition of a field in <em>introduction-and-mathematical-conventions</em>; it opens the standing hypotheses of the algebra articles, among them <em>Ideals and Quotients of Algebras</em>, <em>Centre, Units, Zero Divisors and Division Algebras</em>, <em>Tensor Powers and the Free Algebra</em> and <em>Matrix Algebras</em>, each of which fixes a commutative ring $R$ with identity $1 \neq 0$ before anything else; and <em>Non-Associative Algebras and the Property Ladder</em> builds it into the word <em>unital</em>, an identity being written $1 \neq 0$. The corollary is the reason: $1 \neq 0$ excludes exactly the zero algebra, the one algebra in which the identity carries no information, and it is the zero algebra that the definition of a simple algebra in <em>Ideals and Quotients of Algebras</em>, §<em>Simplicity, Maximality and the Radical</em>, excludes when it speaks of a <em>nonzero</em> algebra. The hypothesis is therefore not a matter of taste but the exclusion of the one degenerate case.</p>
+<p><strong>Remark (subalgebras).</strong> If $B$ is a subalgebra of a unital algebra $A$ and $1_A \in B$, then $B$ is unital with $1_B = 1_A$, by the uniqueness of the identity. If $1_A \notin B$, then $B$ may still be unital with an identity of its own, and then that identity is an idempotent of $A$ different from $1_A$; a subalgebra of this kind is not a unital subalgebra of $A$. The algebra $R \times 0$ inside $R \times R$ is the simplest instance.</p>
+<h2 id="the-unit-group">The Unit Group</h2>
+<p><strong>Definition.</strong> An element $u$ of a unital algebra $A$ is a <strong>unit</strong> if there is $u^{-1} \in A$ with $uu^{-1} = u^{-1}u = 1$; the <strong>unit group</strong> $A^\times$ is the set of units.</p>
+<p>That $A^\times$ is a group under the multiplication of $A$, that the inverse is unique and two-sided, that a unit is not a zero divisor, and that a unit lies in no proper ideal are the subject of <em>Centre, Units, Zero Divisors and Division Algebras</em>, §<em>Units</em> and §<em>Zero Divisors</em>, and are not repeated. What follows is the specialisation to the algebras in which the corpus computes it.</p>
+<p><strong>Theorem (specialisations).</strong></p>
+<ol>
+<li>In the matrix algebra $M_n(R)$ the units are the matrices of invertible determinant,
+   $M_n(R)^\times = \mathrm{GL}_n(R) = \{A : \det A \in R^\times\}$; over a field this is the general linear group (<em>Matrix Algebras</em>).</li>
+<li>In the group algebra $k[G]$ over a field $k$ the group $G$ and the scalars $k^\times$ lie in $k[G]^\times$, so $k^\times G \subseteq k[G]^\times$, and the inclusion is strict in general (<em>Group Algebras</em>, §<em>Units and Zero Divisors</em>).</li>
+<li>In the polynomial algebra $k[x]$ the units are the nonzero constants, $k[x]^\times = k^\times$; the proof is the degree function, and it is in <em>Polynomial Algebras</em>.</li>
+<li>In a division algebra $A \neq 0$, $A^\times = A \setminus \{0\}$; this characterises the division algebras among the unital algebras, and it is the criterion of <em>Centre, Units, Zero Divisors and Division Algebras</em>, §<em>The Regular Module and Division Algebras</em>. Over $\mathbb{R}$ the examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, with the last computed from the norm form in <em>Centre, Units, Zero Divisors and Division Algebras</em>.</li>
+<li>In the algebra $C(X)$ of continuous complex-valued functions on a compact Hausdorff space, with the pointwise operations, the units are the functions that vanish nowhere: a unit cannot vanish at a point, and conversely a function with no zero has the pointwise reciprocal as its inverse, continuous because $|f|$ attains a positive minimum on the compact space $X$. The algebra is the commutative unital case of the identification of <em>Operator Algebras</em>, §<em>The Gelfand–Naimark Theorems</em>, where a commutative $\mathrm{C}^*$-algebra is $C_0(X)$ and is $C(X)$ precisely when $X$ is compact; the same statement for the smooth algebra $C^\infty(S^1)$ is used in <em>Cyclic Cohomology</em>, §<em>The Pairing with K-Theory</em>, where an invertible element of $C^\infty(S^1)$ is a nowhere-vanishing smooth function.</li>
+</ol>
+<p><strong>Remark.</strong> The unit group is a functor on unital algebras, by the theorem of §<em>Homomorphisms and the Identity</em>, and it is the group through which the multiplicative structure of an algebra is visible: for a group algebra $k[G]$ it contains $G$, and the representation theory of <em>Group Algebras</em> is the representation theory of the algebra through it. The division algebras are exactly the unital algebras for which $A^\times$ is as large as it can be, $A^\times = A \setminus \{0\}$.</p>
+<h2 id="the-unitisation">The Unitisation</h2>
+<p>A non-unital algebra is embedded in a unital one in a universal way, and the construction is functorial.</p>
+<p><strong>Definition.</strong> Let $A$ be an $R$-algebra. The <strong>unitisation</strong> of $A$ is the $R$-module</p>
+<p>$$
+A^+ = A \oplus R
+$$</p>
+<p>with the product</p>
+<p>$$
+(a, r)(b, s) = (ab + rb + sa,\, rs), \qquad a, b \in A, \quad r, s \in R ,
+$$</p>
+<p>where $rb$ and $sa$ denote the $R$-module action. The symbol $A^+$ for the unitisation is the one used by <em>K-Theory of Operator Algebras</em>; <em>Jordan Algebras</em> uses the same symbol for a different construction, the symmetrised algebra of an associative algebra, and the two are not to be confused.</p>
+<p><strong>Theorem (the unitisation is unital, with $A$ an ideal).</strong> In the algebra $A^+$:</p>
+<ol>
+<li>the element $(0, 1)$ is an identity;</li>
+<li>the inclusion $a \mapsto (a, 0)$ is an injective algebra homomorphism whose image $A \oplus 0$ is a two-sided ideal;</li>
+<li>the quotient map $A^+ \to R$, $(a, r) \mapsto r$, is a unital algebra homomorphism with kernel $A \oplus 0$, so that $A^+/A \cong R$;</li>
+<li>$A^+$ is associative if and only if $A$ is.</li>
+</ol>
+<p><em>Proof.</em> (1) $(0,1)(b,s) = (0\cdot b + 1\cdot b + s\cdot 0,\, 1\cdot s) = (b,s)$ and $(a,r)(0,1) = (a\cdot 0 + r\cdot 0 + 1\cdot a,\, r\cdot 1) = (a,r)$. (2) The map is $R$-linear and $(a,0)(b,0) = (ab, 0)$, so it is a homomorphism, injective because $a \mapsto (a,0)$ is. For the ideal property, $(b,s)(a,0) = (ba + sa, 0)$ and $(a,0)(b,s) = (ab + ra, 0)$ lie in $A \oplus 0$. (3) The map is $R$-linear, multiplicative because the second coordinate of a product is the product of the second coordinates, and unital because $(0,1) \mapsto 1$; its kernel is the set of pairs with second coordinate zero, which is $A \oplus 0$. (4) The computation is</p>
+<p>$$
+\bigl((a,r)(b,s)\bigr)(c,t) = (ab + rb + sa,\, rs)(c,t) = \bigl((ab + rb + sa)c + rs\,c + t(ab + rb + sa),\, rst\bigr),
+$$</p>
+<p>$$
+(a,r)\bigl((b,s)(c,t)\bigr) = (a,r)(bc + sc + tb,\, st) = \bigl(a(bc + sc + tb) + r(bc + sc + tb) + st\,a,\, rst\bigr),
+$$</p>
+<p>and the two differ by the difference of $a(bc)$ and $(ab)c$, which is zero exactly when $A$ is associative, all other terms agreeing. $\square$</p>
+<p><strong>Theorem (universal property).</strong> Let $A$ be an $R$-algebra and let $B$ be a unital associative $R$-algebra. Then every $R$-algebra homomorphism $\varphi : A \to B$ extends uniquely to a unital $R$-algebra homomorphism $\varphi^+ : A^+ \to B$, given by</p>
+<p>$$
+\varphi^+(a, r) = \varphi(a) + r\,1_B .
+$$</p>
+<p>Equivalently, restriction along the inclusion $A \hookrightarrow A^+$ is a bijection $\operatorname{Hom}^{1}_{R\text{-alg}}(A^+, B) \to \operatorname{Hom}_{R\text{-alg}}(A, B)$, natural in $A$ and in $B$: the unitisation is left adjoint to the forgetful functor from unital associative $R$-algebras to $R$-algebras.</p>
+<p><em>Proof.</em> The map $\varphi^+$ is $R$-linear, and it is multiplicative:</p>
+<p>$$
+\varphi^+\bigl((a,r)(b,s)\bigr) = \varphi(ab + rb + sa) + rs\,1_B = \varphi(a)\varphi(b) + r\varphi(b) + s\varphi(a) + rs\,1_B,
+$$</p>
+<p>while</p>
+<p>$$
+\varphi^+(a,r)\varphi^+(b,s) = \bigl(\varphi(a) + r1_B\bigr)\bigl(\varphi(b) + s1_B\bigr) = \varphi(a)\varphi(b) + s\varphi(a) + r\varphi(b) + rs\,1_B ,
+$$</p>
+<p>the two being equal, the middle two terms differing only in their order. It is unital because $\varphi^+(0,1) = 1_B$. If $\psi : A^+ \to B$ is a unital homomorphism that restricts to $\varphi$ on $A$, then $\psi(0,1) = 1_B$ and hence $\psi(a,r) = \psi(a,0) + \psi(0,r) = \varphi(a) + r\,1_B$ by linearity, which is $\varphi^+$; so the extension is unique. Naturality is the identity $\varphi^+(f^+(a,r)) = (\varphi f)^+(a,r)$ for a homomorphism $f : A \to A'$, immediate from the definitions. $\square$</p>
+<p><strong>Corollary (functoriality).</strong> For an $R$-algebra homomorphism $f : A \to A'$, the assignment $f^+(a,r) = (f(a), r)$ is a unital $R$-algebra homomorphism $A^+ \to A'^+$, and the unitisation is a functor. The unitisation of a unital algebra gains nothing and loses nothing: for unital $A$ the map</p>
+<p>$$
+(a, r) \longmapsto (a + r\,1_A,\, r)
+$$</p>
+<p>is an isomorphism of $R$-algebras $A^+ \to A \times R$ onto the direct product, with inverse $(c,r) \mapsto (c - r\,1_A,\, r)$; under it $A$ corresponds to $A \times 0$, and the identity $(0,1)$ of $A^+$ corresponds to $(1_A, 1)$, while the original identity $(1_A, 0)$ of $A$ is not the identity of $A^+$.</p>
+<p><em>Proof.</em> Multiplicativity of $f^+$ is the multiplicativity of $f$, and $f^+(0,1) = (0,1)$. For the isomorphism, the displayed map $\theta(a,r) = (a + r1_A, r)$ is $R$-linear and bijective with the stated inverse, and it is multiplicative because</p>
+<p>$$
+\theta\bigl((a,r)(b,s)\bigr) = \bigl(ab + rb + sa + rs\,1_A,\, rs\bigr) = \bigl((a + r1_A)(b + s1_A),\, rs\bigr) = \theta(a,r)\,\theta(b,s),
+$$</p>
+<p>the middle equality being the expansion of the product in the unital algebra $A$. $\square$</p>
+<p><strong>Remark.</strong> The unitisation is the smallest unital algebra through which every homomorphism from $A$ to a unital algebra factors: it is initial among the unital algebras receiving an $R$-algebra homomorphism from $A$, and every such algebra receives a unique unital homomorphism from $A^+$ extending it. Applied to an algebra that already has an identity it adjoins a new one rather than preserving the old, by the corollary, so $A^+$ is not $A$ when $A$ is unital; what the corollary says is that $A^+$ is then the direct product of $A$ with the base ring. The construction is used without comment in Part II, where the proof of the Gelfand–Naimark theorem applies the GNS construction of <em>Operator Algebras</em>, §<em>The Gelfand–Naimark Theorems</em>, to $A^+$ when $A$ has no identity, and in Part III, where <em>K-Theory of Operator Algebras</em> records that $A \to A^+$ is an isomorphism on $K_1$ and that $K_0(A) = \ker\bigl(K_0(A^+) \to K_0(\mathbb{C})\bigr)$; the universal property is stated here because it is a Part I statement.</p>
+<h2 id="homomorphisms-and-the-identity">Homomorphisms and the Identity</h2>
+<p><strong>Definition.</strong> A homomorphism $\varphi : A \to B$ of unital $R$-algebras is <strong>unital</strong> if $\varphi(1_A) = 1_B$.</p>
+<p>This is the definition used in <em>Ideals and Quotients of Algebras</em>, and it is not automatic.</p>
+<p><strong>Theorem.</strong> Let $\varphi : A \to B$ be an $R$-algebra homomorphism of unital algebras.</p>
+<ol>
+<li>$\varphi(1_A)$ is an idempotent of $B$, and $\varphi$ is unital if and only if that idempotent is $1_B$.</li>
+<li>If $\varphi$ is unital then $\varphi(A^\times) \subseteq B^\times$, and $\varphi$ restricts to a group homomorphism $A^\times \to B^\times$, $u \mapsto \varphi(u)$, with $\varphi(u^{-1}) = \varphi(u)^{-1}$.</li>
+<li>Conversely, if $\varphi$ maps some unit of $A$ to a unit of $B$, then $\varphi$ is unital.</li>
+</ol>
+<p><em>Proof.</em> (1) $\varphi(1_A)^2 = \varphi(1_A1_A) = \varphi(1_A)$, so the image of the identity is idempotent; it equals $1_B$ exactly when $\varphi$ is unital. (2) If $u \in A^\times$ then $\varphi(u)\varphi(u^{-1}) = \varphi(uu^{-1}) = \varphi(1_A) = 1_B$ and likewise on the other side, so $\varphi(u) \in B^\times$ with inverse $\varphi(u^{-1})$. (3) Suppose $u \in A^\times$ and $\varphi(u) \in B^\times$, and let $e = \varphi(1_A)$. Since $\varphi(u1_A) = \varphi(u)e$ and $\varphi(u1_A) = \varphi(u)$, the idempotent $e$ satisfies $\varphi(u)e = \varphi(u)$; multiplying this on the left by the inverse of $\varphi(u)$ gives $e = 1_B$, so $\varphi$ is unital. $\square$</p>
+<p><strong>Example (homomorphisms that do not preserve the identity).</strong> The zero homomorphism $A \to B$ between nonzero unital algebras is not unital; it sends $1_A$ to the idempotent $0$. For an associative unital algebra $A$ and a central idempotent $e \in Z(A)$ the map $\varphi(a) = eae$ is an algebra homomorphism, since</p>
+<p>$$
+\varphi(a)\varphi(b) = eaebe = e^2abe = eab e = \varphi(ab)
+$$</p>
+<p>using $e$ central and idempotent, with $\varphi(1_A) = e$; it is unital exactly when $e = 1_A$. Its image is the ideal $Ae$, and for $A = R \times R$ and $e = (1,0)$ it is the projection onto the first factor.</p>
+<p><strong>Remark (why the corpus insists).</strong> The distinction between the two notions of homomorphism is not a convention of convenience. A unital homomorphism is what makes the passage to units a functor, as statement (2) shows; it is what the universal properties of the unitisation and of the enveloping algebra of <em>Universal Enveloping Algebras</em> quantify over; it is what makes a quotient map $A \to A/I$ unital and therefore makes the quotient of a unital algebra unital; and it is what makes the augmentation $k[G] \to k$ of <em>Group Algebras</em>, $g \mapsto 1$, a unital homomorphism whose kernel is the augmentation ideal. A module over a unital algebra is required to be <strong>unital</strong>, $1 \cdot m = m$, for the same reason: the identity of the algebra must act as the identity of the module, and the representation theory of <em>Group Algebras</em> and <em>Matrix Algebras</em> is the theory of unital modules.</p>
+<h2 id="idempotents-and-the-peirce-decomposition">Idempotents and the Peirce Decomposition</h2>
+<p><strong>Definition.</strong> An element $e$ of an associative algebra $A$ is an <strong>idempotent</strong> if $e^2 = e$. Two idempotents $e, f$ are <strong>orthogonal</strong> if $ef = fe = 0$, a family $e_1, \dots, e_n$ is <strong>complete</strong> if $e_1 + \cdots + e_n = 1_A$, and an idempotent is <strong>central</strong> if it lies in the centre, $e \in Z(A)$.</p>
+<p>The identity $1_A$ and the zero element are idempotents, and they are the only idempotents of a division algebra: if $e^2 = e$ with $e \neq 0$ then $e = 1_A$ after multiplying by $e^{-1}$. An idempotent different from $0$ and $1_A$ is neither a unit nor nilpotent. The idempotents of a ring are treated in <em>Rings</em>, §<em>Idempotents</em>, and collected ring by ring in <em>List of Rings by Their Idempotents</em>; the statement that a one-sided ideal is generated by an idempotent exactly when it is a direct summand of the regular module is <em>Modules</em>, §<em>Examples</em> and <em>Direct Sums, Free Modules and Rank</em>, §<em>Direct Summands and Idempotents</em>.</p>
+<p><strong>Theorem (Peirce decomposition, one idempotent).</strong> Let $A$ be an associative unital $R$-algebra, let $e \in A$ be an idempotent and put $f = 1_A - e$. Then $f$ is an idempotent orthogonal to $e$, and every $a \in A$ expands as</p>
+<p>$$
+a = eae + eaf + fae + faf ,
+$$</p>
+<p>a direct sum of $R$-submodules</p>
+<p>$$
+A = eAe \oplus eAf \oplus fAe \oplus fAf .
+$$</p>
+<p>The summands are the <strong>Peirce spaces</strong> of $e$. Writing $e_1 = e$ and $e_2 = f$, the products obey</p>
+<p>$$
+(e_i A e_j)(e_k A e_l) \subseteq \delta_{jk}\, e_i A e_l .
+$$</p>
+<p>The corners $eAe$ and $fAf$ are subalgebras with identities $e$ and $f$ respectively; the off-diagonal spaces $eAf$ and $fAe$ are not subalgebras, but each is a bimodule over the two corners.</p>
+<p><em>Proof.</em> Since $1_A = e + f$ acts as an identity, $a = (e+f)a(e+f) = eae + eaf + fae + faf$. The element $f$ is idempotent because $f^2 = (1-e)^2 = 1 - 2e + e^2 = 1 - e = f$, and $ef = e(1-e) = 0 = (1-e)e = fe$. For the directness, suppose $x_{11} + x_{12} + x_{21} + x_{22} = 0$ with $x_{ij} \in e_i A e_j$. Multiplying the relation on the left by $e_1 = e$ and on the right by $e_1$ annihilates the three terms carrying a factor $e_2 = f$, leaving $x_{11} = 0$; the same computation with $e_1$ on the left and $e_2$ on the right leaves $x_{12} = 0$, and symmetrically $x_{21} = x_{22} = 0$. The product rule follows from $e_je_k = \delta_{jk}e_j$, which gives $e_iAe_j \cdot e_kAe_l = e_iA(e_je_k)Ae_l \subseteq \delta_{jk}e_iAe_l$. In particular $eAe \cdot eAe \subseteq e^2Ae^2 = eAe$, and $e \cdot eae \cdot e = eae$, so $eAe$ is a subalgebra with identity $e$; the same argument applies to $f$. $\square$</p>
+<p><strong>Corollary (a central idempotent splits the algebra).</strong> If $e$ is central then $eAf = Aef = 0$ and $fAe = Afe = 0$, the Peirce decomposition reduces to</p>
+<p>$$
+A = Ae \oplus Af = Ae \oplus A(1_A - e),
+$$</p>
+<p>both summands are two-sided ideals, they annihilate one another, and the map $a \mapsto (ae, af)$ is an isomorphism of unital $R$-algebras</p>
+<p>$$
+A \cong Ae \times A(1_A - e)
+$$</p>
+<p>onto the product of $Ae$ and $Af$ with the identity $e$ and $1_A - e$ respectively.</p>
+<p><em>Proof.</em> If $e \in Z(A)$ then $eAf = (eA)f = (Ae)f = A(ef) = 0$, and similarly $fAe = 0$, so the four-corner sum collapses to the two diagonal corners; also $a \mapsto ae$ is $R$-linear, and $a(xe) = (ax)e$ and $(xe)a = (xa)e$ show that $Ae$ is an ideal, likewise $Af$. The map $\varphi(a) = (ae, af)$ is additive and multiplicative, since $(ae)(be) = aebe = ab e^2 = abe$ using the centrality of $e$, and the same for $f$; the cross terms never occur because $\varphi(ab) = (abe, abf)$ already has the two components separate. It is unital, $\varphi(1_A) = (e, f)$, which is the identity of the product. It is injective because $ae = 0$ and $af = 0$ give $a = a(e+f) = 0$, and surjective because an element of $Ae \times Af$ is $(xe, yf)$ and is the image of $xe + yf$, with $\varphi(xe+yf) = (xe, yf)$ since $fe = 0$ and $ef = 0$. $\square$</p>
+<p><strong>Remark (why centrality is needed).</strong> Without it the Peirce pieces are not ideals and no product decomposition follows, so the Peirce decomposition is strictly finer than the decomposition by central idempotents. For $A = M_2(k)$ the idempotent $E_{11}$ does not commute with $E_{12}$ and so is not central, and the decomposition is $M_2(k) = kE_{11} \oplus kE_{12} \oplus kE_{21} \oplus kE_{22}$, four one-dimensional Peirce spaces none of which is two-sided; $M_2(k)$ is simple, so its only two-sided ideals are $0$ and $M_2(k)$, and no product decomposition exists (<em>Matrix Algebras</em>, §<em>Ideals and Simplicity</em>). The Peirce spaces of $E_{11}$ are the matrix units, the observations $E_{11}M_2E_{22} = kE_{12}$ and $E_{22}M_2E_{11} = kE_{21}$ being the two off-diagonal corners of <em>Matrix Algebras</em>, §<em>Matrix Units</em>. The endomorphism ring of a module gives the same corners in the general form $M = eM \oplus (1-e)M$ (<em>Direct Sums, Free Modules and Rank</em>, §<em>Direct Summands and Idempotents</em>).</p>
+<p><strong>Example (the split algebras).</strong> Let $A = \mathbb{R} \times \mathbb{R}$ and $e = (1,0)$. Then $e$ is a central idempotent, $Ae = \mathbb{R} \times 0$, $A(1-e) = 0 \times \mathbb{R}$, and the corollary is the tautology $A \cong Ae \times Af$. The same pattern with a nontrivial computation is the <strong>split-complex algebra</strong> $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$, where</p>
+<p>$$
+e_+ = \tfrac{1+j}{2}, \qquad e_- = \tfrac{1-j}{2}
+$$</p>
+<p>are central idempotents with $e_+ + e_- = 1$ and $e_+e_- = 0$; the corollary gives $\mathbb{D} = \mathbb{D}e_+ \oplus \mathbb{D}e_-$ with $\mathbb{D}e_\pm \cong \mathbb{R}$, that is $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ by $a + bj \mapsto (a+b, a-b)$ (<em>Split Complex Algebra</em>, §<em>The Idempotent Basis</em>, §<em>Idempotent Decomposition</em>). Over $\mathbb{R}$ the field $\mathbb{C}$ has no idempotent other than $0$ and $1$, so it admits no such decomposition; this is the algebraic content of the fact that $\mathbb{D}$ splits and $\mathbb{C}$ does not, although the two are equal in dimension. The only ideals of $\mathbb{D}$ are $0$, $\mathbb{D}e_+$, $\mathbb{D}e_-$ and $\mathbb{D}$, so its ideal lattice and its Peirce decomposition are read from the same two idempotents.</p>
+<p><strong>Remark (in the corpus).</strong> The four-corner decomposition for an algebra that is not commutative, together with the matrix-unit computation of its corners, is carried out for the biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$ in <em>Biquaternion Ideals and Peirce Decomposition</em>, §<em>The Peirce Decomposition</em>, and catalogued in <em>List of Rings by Their Idempotents</em>, §<em>The Peirce Decomposition</em>. The analogue for a Jordan algebra, where the middle space $J_{1/2}(e)$ appears in place of the two off-diagonal corners and the theorem is proved from the cubic identity $2L_e^3 - 3L_e^2 + L_e = 0$, is <em>Jordan Algebras</em>, §<em>The Peirce Decomposition</em>; the two theories agree on a symmetrised associative algebra only in the diagonal part.</p>
+<h2 id="the-non-unital-algebras-of-the-corpus">The Non-Unital Algebras of the Corpus</h2>
+<p>Each of the following is an algebra of the corpus that has no identity, with the article that establishes it.</p>
+<ul>
+<li>
+<p><strong>The polynomials of positive degree.</strong> The ideal $(x) \subseteq R[x]$, consisting of the polynomials with zero constant term, is an $R$-algebra under the inherited product; it has no identity, because an identity $e$ would satisfy $xe = x$, and writing $e = xh$ with $h \in R[x]$ gives $x(xh) = x$, that is $x(xh - 1) = 0$. The coefficient of $x$ in $x(xh-1)$ is the constant term of $xh - 1$, which is $-1$; comparing with the zero polynomial gives $-1 = 0$, against the standing hypothesis $1 \neq 0$. The polynomial algebra and its ideals are <em>Polynomial Algebras</em>, §<em>Ideals and Quotients</em>, and the general statement that a proper ideal of a unital algebra contains no unit is <em>Ideals and Quotients of Algebras</em>, §<em>Ideals</em>.</p>
+</li>
+<li>
+<p><strong>A square-zero ideal.</strong> If $I^2 = 0$ and $I$ is nonzero then $I$ has no identity: an identity $e$ would satisfy $e = e^2 \in I^2 = 0$. The maximal ideal $(\varepsilon)$ of the dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is the standard instance, and $(\varepsilon)$ is exactly the set of zero divisors of $\mathbb{D}'$, the zero divisors of <em>Centre, Units, Zero Divisors and Division Algebras</em>, §<em>Zero Divisors</em>.</p>
+</li>
+<li>
+<p><strong>A proper ideal of a unital algebra.</strong> A proper two-sided ideal $I$ of a unital algebra $A$ contains no unit of $A$, so $1_A \notin I$ (<em>Ideals and Quotients of Algebras</em>, §<em>Ideals</em>); an ideal of this kind is non-unital as a subalgebra of $A$, but it may carry an identity of its own, an idempotent of $A$ different from $1_A$, and then it is a unital algebra. The two cases occur: $(x) \subset R[x]$ is non-unital, while the augmentation ideal $I(G) \subset k[G]$ of a group algebra is spanned in the case $G = \mathbb{Z}/2$ over a field of characteristic not $2$ by $1 - g$ with $(1-g)^2 = 2(1-g)$, so it carries the identity $(1-g)/2$ and is unital (<em>Group Algebras</em>, §<em>The Augmentation Ideal</em>).</p>
+</li>
+<li>
+<p><strong>The convolution algebra $L^1(G)$.</strong> For a locally compact group $G$ the convolution algebra of <em>The Convolution Algebra $L^1(G)$</em>, §<em>Associativity, Involution and the Banach Algebra Structure</em>, is associative and has no identity when $G$ is not discrete, while for discrete $G$ it is unital with identity the point mass $\delta_e$; the algebra is therefore unital exactly when $G$ is discrete. The statement is quoted from that article, where the convolution, the involution and the norm are set up; the algebra is not an object of Part I.</p>
+</li>
+<li>
+<p><strong>The algebras of compact operators.</strong> Let $H$ be an infinite-dimensional Hilbert space. The algebra $B(H)$ of bounded operators is unital, and the algebra $K(H)$ of compact operators is a proper two-sided ideal of it; <em>Operator Algebras</em> states that $K(H)$ is a $\mathrm{C}^*$-subalgebra without identity unless $H$ is finite-dimensional, and that $K(H)$ is simple. Hence a simple algebra need not be unital, and the unitisation $K(H)^+$ is the unital $\mathrm{C}^*$-algebra in which $K(H)$ sits as an ideal with $K(H)^+/K(H) \cong \mathbb{C}$. The compact operators themselves, their norm and their closedness are set up in <em>Banach and Hilbert Spaces</em>, in Part III.</p>
+</li>
+<li>
+<p><strong>The algebra $C_0(X)$.</strong> For a locally compact Hausdorff space $X$ the algebra $C_0(X)$ of continuous complex functions vanishing at infinity is commutative and unital exactly when $X$ is compact. If $C_0(X)$ has an identity $e$ then $ef = f$ for every $f$, so $e(x) \neq 0$ at every $x$: were $e$ to vanish at a point, every $f$ of $C_0(X)$ would vanish there too, against the existence of a continuous compactly supported function nonzero at that point. With $e^2 = e$ this gives $e \equiv 1$, and since $e \in C_0(X)$ the constant function $1$ vanishes at infinity, which is exactly the compactness of $X$. In the compact case $C_0(X) = C(X)$, and in the non-compact locally compact case it is the standard non-unital commutative example of the operator-algebraic side; the identification of commutative $\mathrm{C}^*$-algebras with the algebras $C_0(X)$ is <em>Operator Algebras</em>, §<em>The Gelfand–Naimark Theorems</em>.</p>
+</li>
+<li>
+<p><strong>The zero algebra.</strong> The algebra $\{0\}$ has $1 = 0$ and is the degenerate case of §<em>Trivial Cases and the Hypothesis $1 \neq 0$</em>; it is the unique unital algebra whose identity is also its zero element.</p>
+</li>
+<li>
+<p><strong>The commutator algebra $A^-$.</strong> It has no identity for nonzero $A$: an identity $e$ of any algebra satisfies $e \cdot e = e$, while the product of $A^-$ is the commutator, so $e \cdot e = [e,e] = 0$ and hence $e = 0$, which forces $A = 0$. The construction is that of <em>Associative Algebras</em>, §<em>The Universal Enveloping Algebra</em>, and it shows that a non-associative algebra of the corpus may be non-unital as well, for a reason independent of the failure of associativity.</p>
+</li>
+</ul>
+<p>These are the non-unital algebras of the corpus, and they are not deficient for it: each is an algebra in the sense fixed in <em>Algebras</em>, and a construction that needs an identity is applied to its unitisation, §<em>The Unitisation</em>. A topological one among them may carry instead a net that plays the role of the identity in the limit, the subject of §<em>Approximate Identities</em>.</p>
+<h2 id="approximate-identities">Approximate Identities</h2>
+<p>A non-unital algebra has no identity, but one carrying a topology may carry a net that plays its role in the limit.</p>
+<p><strong>Definition.</strong> Let $A$ be a Banach algebra, in the sense of <em>Topological Algebras and Banach Algebras</em>, §<em>Banach Algebras</em>. A <strong>left approximate identity</strong> for $A$ is a net $(u_\alpha) \subseteq A$ with $\|u_\alpha f - f\| \to 0$ for every $f \in A$; it is <strong>two-sided</strong> if also $\|f u_\alpha - f\| \to 0$, and <strong>bounded</strong> with bound $M$ if $\|u_\alpha\| \leq M$ for all $\alpha$.</p>
+<p>The definition is that of <em>The Convolution Algebra $L^1(G)$</em>, §<em>Approximate Identities and Amenability</em>, and it uses a norm and a limit, neither of which is available in Part I. That article proves that every $L^1(G)$ has a two-sided approximate identity with $u_\alpha \geq 0$, $\int_G u_\alpha = 1$ and $\|u_\alpha\|_1 = 1$, and that it can be chosen approximately invariant under left translation exactly when $G$ is amenable, Reiter's property $P_1$; an approximate identity of an ideal is used again in <em>Operator Algebras</em>, §<em>Ideals and Quotients</em>, where it is a net $(u_\lambda)$ with $0 \leq u_\lambda \leq 1$ in the ideal. The approximate identity is the topological substitute for the missing identity of the examples of §<em>The Non-Unital Algebras of the Corpus</em>: it recovers the statement $uf = f$ in the limit, and it is what replaces the identity in the representation theory of <em>The Convolution Algebra $L^1(G)$</em>.</p>
+<p><strong>Remark.</strong> The topological hypothesis is not incidental: the definition quantifies over a net and uses the norm, and no purely algebraic device of the same kind is available in a general non-unital algebra. For the algebras of Part I the unitisation of §<em>The Unitisation</em> supplies an identity, at the cost of enlarging the algebra, the new identity lying outside the original copy of $A$; the approximate identity supplies one only in the limit, and only when a topology is present.</p>
+<h2 id="summary">Summary</h2>
+<p>A unital $R$-algebra is an $R$-algebra with an element $1$ satisfying $1x = x1 = x$; the identity is unique. The <strong>canonical map</strong> $\eta(r) = r1_A$ is a unital ring homomorphism whose image lies in the centre, and the resulting equivalence is the article's spine: a unital $R$-algebra is the same thing as an associative ring $A$ with identity together with a unital ring homomorphism $R \to Z(A)$, the two constructions being inverse; in particular the rings with identity are exactly the unital $\mathbb{Z}$-algebras. If $1 = 0$ then $A = \{0\}$, so a nonzero unital algebra has $1 \neq 0$, the standing hypothesis under which the corpus states its ring- and field-based results and the reason the definition of a simple algebra in <em>Ideals and Quotients of Algebras</em> speaks of a <em>nonzero</em> algebra.</p>
+<p>The <strong>unit group</strong> $A^\times$ is a group; it is specialised to $\mathrm{GL}_n(R)$ for $M_n(R)$, to the subgroup containing $k^\times G$ for $k[G]$, to $k^\times$ for $k[x]$, to $A \setminus \{0\}$ for a division algebra, and to the nowhere-vanishing functions for $C(X)$, the general theory being that of <em>Centre, Units, Zero Divisors and Division Algebras</em>. The <strong>unitisation</strong> $A^+ = A \oplus R$ with $(a,r)(b,s) = (ab + rb + sa, rs)$ is unital with identity $(0,1)$, contains $A$ as a two-sided ideal with $A^+/A \cong R$, is associative exactly when $A$ is, and is characterised by the universal property that every homomorphism $A \to B$ into a unital associative algebra extends uniquely to a unital homomorphism $A^+ \to B$; it is left adjoint to the forgetful functor, and for unital $A$ it is $A \times R$. A homomorphism of unital algebras sends $1_A$ to an idempotent and is unital exactly when that idempotent is $1_B$, equivalently when it carries some unit to a unit; a unital homomorphism restricts to a group homomorphism of the unit groups.</p>
+<p>An <strong>idempotent</strong> $e$, one with $e^2 = e$, gives the <strong>Peirce decomposition</strong> $A = eAe \oplus eAf \oplus fAe \oplus fAf$ with $f = 1_A - e$, a direct sum of $R$-submodules whose diagonal corners $eAe$ and $fAf$ are subalgebras with identities $e$ and $f$ and whose products obey $(e_iAe_j)(e_kAe_l) \subseteq \delta_{jk}e_iAe_l$. The decomposition is generally finer than the decomposition of $A$ by its ideals: when $e$ is <strong>central</strong> the two off-diagonal corners vanish and the sum becomes a product $A \cong Ae \times A(1_A - e)$ of unital algebras with identities $e$ and $1_A - e$, and when $e$ is not central, as for $E_{11} \in M_2(k)$, the Peirce pieces are not ideals and no product is obtained. The trivial idempotents $0$ and $1_A$ give nothing, the division algebras and the field $\mathbb{C}$ have no others, and the split-complex algebra with its two central idempotents $(1 \pm j)/2$ is the smallest case in which the product is nontrivial.</p>
+<p>The non-unital algebras of the corpus are the polynomials of positive degree, the square-zero ideals, the proper ideals that carry no identity of their own, the commutator algebra $A^-$, the convolution algebra $L^1(G)$ for non-discrete $G$, the compact operators $K(H)$ on an infinite-dimensional Hilbert space, $C_0(X)$ for locally compact non-compact $X$, and the zero algebra; each is pointed to its own article, and a proper ideal that does carry an identity, such as the augmentation ideal of $k[\mathbb{Z}/2]$ over a field of characteristic not $2$, is a unital algebra and not on the list. A topological algebra of the list carries instead of an identity an approximate identity, a notion defined by a norm limit and belonging to <em>The Convolution Algebra $L^1(G)$</em>; no purely algebraic analogue is defined in the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>An $R$-algebra in the broad sense of <em>Algebras</em>, associative or unital where stated</td>
+</tr>
+<tr>
+<td>$1_A$ (or $1$)</td>
+<td>The identity of $A$, unique when it exists; an algebra that has one is <strong>unital</strong></td>
+</tr>
+<tr>
+<td>$\eta : R \to A$, $\eta(r) = r1_A$</td>
+<td>The canonical map; a unital ring homomorphism with image in $Z(A)$</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>The centre of $A$, as in <em>Centre, Units, Zero Divisors and Division Algebras</em></td>
+</tr>
+<tr>
+<td>unit, $u$</td>
+<td>An invertible element, as fixed in <em>Rings</em>, §<em>Units</em>; the corpus also says of a ring that it "need not have a unit" in the sense of an identity, the sense this article calls unital</td>
+</tr>
+<tr>
+<td>$A^\times$</td>
+<td>The unit group, as in <em>Centre, Units, Zero Divisors and Division Algebras</em>, §<em>Units</em></td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_n(R) = M_n(R)^\times$</td>
+<td>The units of the matrix algebra, $\det A \in R^\times$, as in <em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$x \circ y = \tfrac12(xy + yx)$</td>
+<td>The symmetrised product, unital with identity $I$ in $M_n(k)$; <em>Jordan Algebras</em> writes the same symmetrisation as $xy + yx$, differing by the unit $2$</td>
+</tr>
+<tr>
+<td>$k^\times G \subseteq k[G]^\times$</td>
+<td>Units of a group algebra over a field $k$, as in <em>Group Algebras</em>, §<em>Units and Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$(x) \subseteq R[x]$</td>
+<td>The polynomials of positive degree, a non-unital algebra</td>
+</tr>
+<tr>
+<td>$A^+ = A \oplus R$</td>
+<td>The unitisation, with $(a,r)(b,s) = (ab+rb+sa, rs)$ and identity $(0,1)$; not the symmetrised algebra $A^+$ of <em>Jordan Algebras</em></td>
+</tr>
+<tr>
+<td>$\varphi^+$</td>
+<td>The unique unital extension $A^+ \to B$ of $\varphi : A \to B$, $\varphi^+(a,r) = \varphi(a) + r1_B$</td>
+</tr>
+<tr>
+<td>$\varphi(1_A)$</td>
+<td>Idempotent in $B$; $\varphi$ unital exactly when it is $1_B$</td>
+</tr>
+<tr>
+<td>$e$, $e^2 = e$</td>
+<td>An idempotent; <strong>central</strong> when $e \in Z(A)$, and then it splits $A$ as the product $Ae \times A(1_A - e)$</td>
+</tr>
+<tr>
+<td>$eAe$, $eAf$, $fAe$, $fAf$</td>
+<td>The Peirce spaces of $e$, with $f = 1_A - e$; the diagonal corners are subalgebras with identities $e$ and $f$</td>
+</tr>
+<tr>
+<td>$L^1(G)$, $\delta_e$</td>
+<td>The convolution algebra, unital exactly for discrete $G$ with identity $\delta_e$</td>
+</tr>
+<tr>
+<td>$K(H)$</td>
+<td>The compact operators, non-unital for infinite-dimensional $H$ and simple, <em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>$C_0(X)$, $C(X)$</td>
+<td>Functions vanishing at infinity, and the compact case, <em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>$I(G) \subseteq k[G]$</td>
+<td>The augmentation ideal of a group algebra; unital as an algebra for $G = \mathbb{Z}/2$ over a field of characteristic not $2$</td>
+</tr>
+<tr>
+<td>$(u_\alpha)$, $P_1$</td>
+<td>A (left, two-sided, bounded) approximate identity, and Reiter's property, <em>The Convolution Algebra $L^1(G)$</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the unit group, the idempotents and the rings with identity as algebras over their centre.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the unitisation, the central idempotents and the decomposition of a unital algebra by them.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for unital modules, the unitisation as a left adjoint and the categorical form of the equivalence.</li>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for approximate identities in non-unital Banach and $\mathrm{C}^*$-algebras and the unitisation in the operator-algebraic setting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

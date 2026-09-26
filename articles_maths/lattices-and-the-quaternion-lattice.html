@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lattices and the Quaternion Lattice — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lattices-and-the-quaternion-lattice"><strong>Lattices and the Quaternion Lattice</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A lattice is a free abelian group of finite rank together with a chosen embedding in a real vector space, so that a discrete geometry is available; equivalently, it is a free $\mathbb{Z}$-module of finite rank with a positive definite form on the real vector space it spans. The quaternions furnish the standard four-dimensional example: the integer quaternions form the Lipschitz lattice, and adjoining the half-integral element $\tfrac12(1+e_1+e_2+e_3)$ gives the Hurwitz lattice, which contains the Lipschitz lattice with index $2$. This article treats both strictly as free $\mathbb{Z}$-modules with rank, index, covolume and base change; the multiplicative structure of the quaternions, and the fact that these lattices are orders in a division algebra rather than merely sublattices, belongs to <em>Division Algebras</em>; it is used here only where the norm form carries it.</p>
+<p>Throughout, a lattice is a free $\mathbb{Z}$-module $\Lambda$ of finite rank $n$ together with an $\mathbb{R}$-linear embedding $\Lambda \otimes_{\mathbb{Z}}\mathbb{R} \hookrightarrow \mathbb{R}^n$ and a positive definite form on $\mathbb{R}^n$; the base change $\Lambda \otimes_{\mathbb{Z}}\mathbb{R}$ is the real span of $\Lambda$. The extension and restriction of scalars of <em>Extension of Scalars</em> is used throughout, and the structure theory of finitely generated $\mathbb{Z}$-modules of <em>Finitely Generated Abelian Groups</em> supplies the index computations; both are articles of Part I, and the positive definite form that makes a lattice a quadratic space is the subject of the present category, so the article is placed here rather than with the module theory.</p>
+<h2 id="lattices-as-free-math13-modules">Lattices as Free $\mathbb{Z}$-Modules</h2>
+<h3 id="definition-and-rank">Definition and Rank</h3>
+<p><strong>Definition.</strong> A <strong>lattice</strong> is a free $\mathbb{Z}$-module $\Lambda$ of finite rank $n$; its <strong>rank</strong> is $n$. A <strong>sublattice</strong> is a subgroup $\Lambda' \subseteq \Lambda$ that is free of the same rank; it then has finite index. An <strong>embedded lattice</strong> is a lattice $\Lambda$ together with an injective linear map $\Lambda \otimes_{\mathbb{Z}}\mathbb{R} \to \mathbb{R}^n$ whose image spans, and a positive definite inner product on $\mathbb{R}^n$.</p>
+<p><strong>Proposition.</strong> Let $\Lambda' \subseteq \Lambda$ be sublattices of the same rank $n$, with $\mathbb{Z}$-bases $u_1,\dots,u_n$ and $v_1,\dots,v_n$. Write $v_j=\sum_i a_{ij}u_i$ with $a_{ij} \in \mathbb{Z}$; then $A=(a_{ij})$ is an integer matrix of nonzero determinant and</p>
+<p>$$
+[\Lambda:\Lambda']=|\det A| .
+$$</p>
+<p><em>Proof.</em> By the structure theorem for finitely generated $\mathbb{Z}$-modules, the Smith normal form $\operatorname{diag}(d_1,\dots,d_n)$ of $A$ satisfies $\Lambda/\Lambda' \cong \bigoplus_i\mathbb{Z}/d_i\mathbb{Z}$, where the $d_i$ are the invariant factors, each positive because the rank is the same; the order of the quotient is $\prod_i d_i=|\det A|$, which is the index. $\square$</p>
+<p><strong>Definition.</strong> For an embedded lattice $\Lambda$ with a $\mathbb{Z}$-basis $v_1,\dots,v_n$, the <strong>Gram matrix</strong> is $G=(v_i \cdot v_j)$ and the <strong>covolume</strong> is $\operatorname{covol}(\Lambda)=\sqrt{\det G}$, the $n$-dimensional volume of the fundamental parallelepiped. For two sublattices of the same rank,</p>
+<p>$$
+[\Lambda:\Lambda']=\frac{\operatorname{covol}(\Lambda')}{\operatorname{covol}(\Lambda)} .
+$$</p>
+<p><em>Proof.</em> The determinant of $A$ relates the two Gram matrices by $G'=A^{\mathsf{T}}GA$, so $\det G'=(\det A)^2\det G$ and the covolumes are in the ratio $|\det A|$, which is the index. $\square$</p>
+<h3 id="base-change">Base Change</h3>
+<p><strong>Proposition.</strong> Let $\Lambda$ be a lattice of rank $n$. Then $\Lambda \otimes_{\mathbb{Z}}\mathbb{R} \cong \mathbb{R}^n$ as $\mathbb{R}$-modules, and for any ring homomorphism $\mathbb{Z} \to R$ the base change $\Lambda \otimes_{\mathbb{Z}}R$ is a free $R$-module of rank $n$. In particular rank is preserved by base change from $\mathbb{Z}$ to $\mathbb{R}$, to $\mathbb{C}$ or to $\mathbb{Z}/m\mathbb{Z}$.</p>
+<p><em>Proof.</em> This is the statement $R \otimes_{\mathbb{Z}}\mathbb{Z}^n \cong R^n$ of the companion article on extension of scalars, applied to $\Lambda \cong \mathbb{Z}^n$. $\square$</p>
+<h2 id="the-quaternion-lattice">The Quaternion Lattice</h2>
+<h3 id="the-lipschitz-lattice">The Lipschitz Lattice</h3>
+<p><strong>Definition.</strong> The algebra of quaternions is $\mathbb{H}=\mathbb{R} \oplus \mathbb{R}e_1 \oplus \mathbb{R}e_2 \oplus \mathbb{R}e_3$ with $e_k^2=-1$ and $e_ie_j=\varepsilon_{ijk}e_k$ for $(i,j,k)$ a cyclic permutation of $(1,2,3)$. The <strong>Lipschitz lattice</strong> is the free abelian group</p>
+<p>$$
+\mathbb{H}(\mathbb{Z})=\mathbb{Z} \oplus \mathbb{Z}e_1 \oplus \mathbb{Z}e_2 \oplus \mathbb{Z}e_3 \subseteq \mathbb{H},
+$$</p>
+<p>of rank $4$ over $\mathbb{Z}$, with the standard basis $1,e_1,e_2,e_3$.</p>
+<p><strong>Proposition.</strong> (i) As a $\mathbb{Z}$-module, $\mathbb{H}(\mathbb{Z}) \cong \mathbb{Z}^4$, and its base change is the module of the algebra: $\mathbb{H}(\mathbb{Z}) \otimes_{\mathbb{Z}}\mathbb{R} \cong \mathbb{H}$ as $\mathbb{R}$-modules, of dimension $4$; more generally $\mathbb{H}(\mathbb{Z}) \otimes_{\mathbb{Z}}\mathbb{C} \cong \mathbb{B}$ as $\mathbb{C}$-modules, of complex dimension $4$.</p>
+<p>(ii) The <strong>norm</strong> $N(x)=x\bar x$ of $x=a_0+a_1e_1+a_2e_2+a_3e_3$ is $N(x)=a_0^2+a_1^2+a_2^2+a_3^2$, an integer for $x \in \mathbb{H}(\mathbb{Z})$; the polar form is $(x,y)=\operatorname{Sc}(x\bar y)=a_0b_0+a_1b_1+a_2b_2+a_3b_3$, the Euclidean inner product of the coefficient vectors.</p>
+<p>(iii) The Gram matrix of the standard basis is the identity, so $\operatorname{covol}(\mathbb{H}(\mathbb{Z}))=1$, and $\mathbb{H}(\mathbb{Z})$ is self-dual for the form $(x,y)=\operatorname{Sc}(x\bar y)$.</p>
+<p><em>Proof.</em> (i) The first statement is the definition and the base-change proposition. For the second, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}=\mathbb{B}$ is the biquaternion algebra, of real dimension $8$, hence of complex dimension $4$; the module statement is immediate from $R\otimes_{\mathbb{Z}}\mathbb{Z}^4 \cong R^4$. (ii) Expanding $x\bar x$ with $\bar x=a_0-a_1e_1-a_2e_2-a_3e_3$, the cross terms cancel and the squares contribute $a_i^2$ because $e_i^2=-1$; the scalar part of $x\bar y$ is the stated dot product. (iii) With the standard basis, $(e_i,e_j)=\delta_{ij}$ and $(1,1)=1$, so $G=I$. Self-duality: $y \in \mathbb{H}(\mathbb{Z})^*$ means $\operatorname{Sc}(x\bar y) \in \mathbb{Z}$ for all $x \in \mathbb{H}(\mathbb{Z})$; taking $x \in \{1,e_1,e_2,e_3\}$ gives the coordinates of $y$ integral, so $y \in \mathbb{H}(\mathbb{Z})$. $\square$</p>
+<p><strong>Remark.</strong> The norm form is multiplicative, $N(xy)=N(x)N(y)$, because $\overline{xy}=\bar y\bar x$; this is the algebra-level statement used by the four-square theorem, and it is mentioned only to explain why the norm is the natural form on these lattices.</p>
+<h3 id="the-hurwitz-lattice">The Hurwitz Lattice</h3>
+<p><strong>Definition.</strong> Let $\omega=\tfrac12(1+e_1+e_2+e_3)$. The <strong>Hurwitz lattice</strong> is</p>
+<p>$$
+\mathbb{H}'(\mathbb{Z})=\mathbb{Z} \oplus \mathbb{Z}e_1 \oplus \mathbb{Z}e_2 \oplus \mathbb{Z}e_3 \oplus \mathbb{Z}\omega ,
+$$</p>
+<p>the subgroup generated by $\mathbb{H}(\mathbb{Z})$ and $\omega$.</p>
+<p><strong>Proposition.</strong> (i) $\mathbb{H}'(\mathbb{Z})$ is free of rank $4$ with basis $\omega,e_1,e_2,e_3$, and it contains $\mathbb{H}(\mathbb{Z})$ as a sublattice of index $2$; the quotient $\mathbb{H}'(\mathbb{Z})/\mathbb{H}(\mathbb{Z}) \cong \mathbb{Z}/2\mathbb{Z}$.</p>
+<p>(ii) The norm is integer-valued on $\mathbb{H}'(\mathbb{Z})$: every element of $\mathbb{H}'(\mathbb{Z})$ has coordinates $b_0,b_1,b_2,b_3$ in $\tfrac12\mathbb{Z}$ that are either all integers or all odd half-integers, and then $N(y)=\sum_ib_i^2$ is an integer, since a square of an odd half-integer contributes $\tfrac14$ of an odd square and four such contributions sum to an integer.</p>
+<p>(iii) The Gram matrix of the basis $\omega,e_1,e_2,e_3$ for the polar form $(x,y)=\operatorname{Sc}(x\bar y)$ is</p>
+<p>$$
+G'=\begin{pmatrix}1&\tfrac12&\tfrac12&\tfrac12\\ \tfrac12&1&0&0\\ \tfrac12&0&1&0\\ \tfrac12&0&0&1\end{pmatrix}, \qquad \det G'=\tfrac14,
+$$</p>
+<p>so $\operatorname{covol}(\mathbb{H}'(\mathbb{Z}))=\tfrac12$ and the index relation $\operatorname{covol}(\mathbb{H})/\operatorname{covol}(\mathbb{H}')=2$ recovers $[\mathbb{H}':\mathbb{H}]=2$.</p>
+<p><em>Proof.</em> (i) Every element is $u+t\omega$ with $u \in \mathbb{H}(\mathbb{Z})$ and $t \in \mathbb{Z}$; writing $u=a_0+a_1e_1+a_2e_2+a_3e_3$, the coefficients of $u+t\omega$ are $a_0+t/2$ and $a_i+t/2$. The map $\mathbb{H}'(\mathbb{Z}) \to \mathbb{Z}/2$ sending $u+t\omega$ to $t \bmod 2$ is a surjection with kernel $\mathbb{H}(\mathbb{Z})$, so the quotient is $\mathbb{Z}/2$ and the index is $2$; the elements $\omega,e_1,e_2,e_3$ are visibly independent over $\mathbb{Z}$, so the rank is $4$ and the index formula gives $|\det(\text{inclusion})|=2$, whose Smith normal form is $\operatorname{diag}(1,1,1,2)$.</p>
+<p>(ii) The coordinates of $y$ satisfy $y=\sum a_ie_i$ with $e_0=1$; if $t$ is even the coefficients $a_i+t/2$ are integers and the sum of their squares is an integer; if $t$ is odd they are all odd half-integers $c_i/2$ with $c_i$ odd, and $\sum_i(c_i/2)^2=\tfrac14\sum_ic_i^2$ is an integer because each odd square is $1 \bmod 8$ and the sum of four of them is $4 \bmod 8$, making $\sum_ic_i^2$ divisible by $4$.</p>
+<p>(iii) $(e_i,e_j)=\delta_{ij}$ and $(e_i,\omega)=-\operatorname{Sc}(e_i\omega)$. Since $\omega e_1=\tfrac12(e_1-1+e_2-e_3)$ has scalar part $-\tfrac12$, one gets $(\omega,e_1)=\tfrac12$, and similarly for $e_2,e_3$; $(\omega,\omega)=N(\omega)=1$. A block determinant gives $\det G'=\det I_3\cdot\bigl(1-\tfrac14(1,1,1)I_3^{-1}(1,1,1)^{\mathsf{T}}\bigr)=1-\tfrac34=\tfrac14$, using the block formula for a partitioned matrix. Hence $\operatorname{covol}=\tfrac12$, and the covolume ratio is $2$. $\square$</p>
+<p>The two lattices are both integral for the norm form, and the half-integral element $\omega$ has integral norm $1$; the sublattice relation between them is index $2$, and the duality computation inverts this index.</p>
+<h2 id="sublattices-index-and-duality">Sublattices, Index and Duality</h2>
+<p><strong>Proposition.</strong> (i) There is no lattice strictly between $\mathbb{H}(\mathbb{Z})$ and $\mathbb{H}'(\mathbb{Z})$; equivalently the quotient $\mathbb{H}'(\mathbb{Z})/\mathbb{H}(\mathbb{Z}) \cong \mathbb{Z}/2\mathbb{Z}$ has prime order.</p>
+<p>(ii) For the form $(x,y)=\operatorname{Sc}(x\bar y)$ the Lipschitz lattice is self-dual, $\mathbb{H}(\mathbb{Z})^*=\mathbb{H}(\mathbb{Z})$, while the dual of the Hurwitz lattice is</p>
+<p>$$
+\mathbb{H}'(\mathbb{Z})^*=\{y \in \mathbb{H}(\mathbb{Z}): y_0+y_1+y_2+y_3 \equiv 0 \pmod 2\},
+$$</p>
+<p>a sublattice of $\mathbb{H}(\mathbb{Z})$ of index $2$ and covolume $2$; thus $\mathbb{H}'(\mathbb{Z})$ is not self-dual and $[\mathbb{H}'(\mathbb{Z}):\mathbb{H}'(\mathbb{Z})^*]=4$.</p>
+<p>(iii) The lattice $\tfrac12\mathbb{H}(\mathbb{Z})$ contains $\mathbb{H}'(\mathbb{Z})$ with index $8$ and covolume $\tfrac1{16}$.</p>
+<p><em>Proof.</em> (i) A lattice $M$ with $\mathbb{H} \subsetneq M \subseteq \mathbb{H}'$ has quotient $M/\mathbb{H}$ a nonzero subgroup of $\mathbb{H}'/\mathbb{H} \cong \mathbb{Z}/2$, hence equal to the whole of it, so $M=\mathbb{H}'$. (ii) The self-duality of $\mathbb{H}$ was shown. For $\mathbb{H}'$ with basis $\omega,e_1,e_2,e_3$, a vector $y$ lies in the dual exactly when $y \cdot e_i \in \mathbb{Z}$ for $i=1,2,3$, forcing $y_1,y_2,y_3 \in \mathbb{Z}$, and $y \cdot \omega=\tfrac12(y_0+y_1+y_2+y_3) \in \mathbb{Z}$, forcing $y_0 \in \mathbb{Z}$ with $y_0+y_1+y_2+y_3$ even; this is the displayed sublattice. Its index in $\mathbb{H}(\mathbb{Z})$ is $2$, since it is the kernel of the surjection $\mathbb{H}(\mathbb{Z}) \to \mathbb{Z}/2$, $y \mapsto y_0+y_1+y_2+y_3$. Duality inverts covolume, so $\operatorname{covol}((\mathbb{H}')^*)=1/\operatorname{covol}(\mathbb{H}')=2$, and $[\mathbb{H}':(\mathbb{H}')^*]=\operatorname{covol}((\mathbb{H}')^*)/\operatorname{covol}(\mathbb{H}')=4$, consistent with the chain $(\mathbb{H}')^* \subset \mathbb{H} \subset \mathbb{H}'$ of successive index $2$. (iii) The covolume of $\tfrac12\mathbb{H}$ is $2^{-4}=\tfrac1{16}$, so the index is $\operatorname{covol}(\mathbb{H}')/\operatorname{covol}(\tfrac12\mathbb{H})=(\tfrac12)/(\tfrac1{16})=8$. $\square$</p>
+<p><strong>Remark.</strong> Duality for a form inverts index and covolume: the dual of a sublattice of index $m$ in a unimodular lattice has index $m$ and lies on the other side, and a sublattice containing the unimodular one has a dual contained in it. Here $\mathbb{H}$ is unimodular, so $\mathbb{H}'$ of index $2$ has $(\mathbb{H}')^*$ of index $2$ inside $\mathbb{H}$, and the chain $(\mathbb{H}')^* \subset \mathbb{H} \subset \mathbb{H}'$ has successive indices $2,2$.</p>
+<h2 id="base-change-and-dimension">Base Change and Dimension</h2>
+<p><strong>Proposition.</strong> The ranks and dimensions of the lattices over their various base rings are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Lattice</th>
+<th>over $\mathbb{Z}$</th>
+<th>over $\mathbb{R}$</th>
+<th>over $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}(\mathbb{Z})$</td>
+<td>rank $4$</td>
+<td>$\dim_{\mathbb{R}}\mathbb{H}=4$</td>
+<td>$\dim_{\mathbb{C}}\mathbb{B}=4$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}'(\mathbb{Z})$</td>
+<td>rank $4$</td>
+<td>$\dim_{\mathbb{R}}\mathbb{H}=4$</td>
+<td>$\dim_{\mathbb{C}}\mathbb{B}=4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Both lattices span the same real vector space $\mathbb{H}$, since $\omega=\tfrac12(1+e_1+e_2+e_3)$ is an $\mathbb{R}$-linear combination of the standard basis, and both complexify to $\mathbb{B}$; the base change forgets the index and remembers only the rank, because $\mathbb{R} \otimes_{\mathbb{Z}}\mathbb{H}(\mathbb{Z}) \cong \mathbb{R} \otimes_{\mathbb{Z}}\mathbb{H}'(\mathbb{Z}) \cong \mathbb{H}$ and $\mathbb{Q} \otimes_{\mathbb{Z}}\mathbb{H}(\mathbb{Z}) \cong \mathbb{Q} \otimes_{\mathbb{Z}}\mathbb{H}'(\mathbb{Z}) \cong \mathbb{H}(\mathbb{Q})=\mathbb{Q} \oplus \mathbb{Q}e_1 \oplus \mathbb{Q}e_2 \oplus \mathbb{Q}e_3$.</p>
+<p><em>Proof.</em> The dimensions are the base-change proposition: $\mathbb{Z}^4 \otimes_{\mathbb{Z}}R \cong R^4$ for $R=\mathbb{R},\mathbb{C},\mathbb{Q}$, and $\dim_{\mathbb{R}}\mathbb{H}=4$, $\dim_{\mathbb{C}}\mathbb{B}=4$; the two lattices have the same real span because they have the same rank and both lie in $\mathbb{H}$. $\square$</p>
+<p><strong>Remark.</strong> This is the module-level content of the quaternion lattice: rank, index, covolume, duality, and base change recovering real and complex vector spaces of the same rank. The product, the norm's multiplicativity, the maximality of the Hurwitz order and the resulting arithmetic of sums of four squares are algebra-level statements, and they belong to the companion category.</p>
+<h2 id="summary">Summary</h2>
+<p>A lattice is a free $\mathbb{Z}$-module of finite rank, embedded in a real vector space with a positive definite form; a sublattice of the same rank has finite index equal to the absolute value of the determinant of the change-of-basis matrix, and for embedded lattices the index is the ratio of covolumes, where the covolume is the square root of the determinant of the Gram matrix. Base change along $\mathbb{Z} \to R$ sends a lattice of rank $n$ to the free $R$-module of rank $n$, so rank is preserved by extension of scalars to $\mathbb{R}$, to $\mathbb{C}$ or to $\mathbb{Q}$.</p>
+<p>The Lipschitz lattice $\mathbb{H}(\mathbb{Z})=\mathbb{Z} \oplus \mathbb{Z}e_1 \oplus \mathbb{Z}e_2 \oplus \mathbb{Z}e_3$ is free of rank $4$, base changes to $\mathbb{H}=\mathbb{H}(\mathbb{Z})\otimes_{\mathbb{Z}}\mathbb{R}$ and to the biquaternions $\mathbb{B}=\mathbb{H}(\mathbb{Z})\otimes_{\mathbb{Z}}\mathbb{C}$ at the module level, carries the integer-valued norm $N(x)=a_0^2+a_1^2+a_2^2+a_3^2$ with polar form the Euclidean dot product, has Gram matrix the identity and covolume $1$, and is self-dual. The Hurwitz lattice $\mathbb{H}'(\mathbb{Z})=\mathbb{H}(\mathbb{Z}) \oplus \mathbb{Z}\omega$ with $\omega=\tfrac12(1+e_1+e_2+e_3)$ is free of rank $4$ on the basis $\omega,e_1,e_2,e_3$, contains the Lipschitz lattice with index $2$ and covolume $\tfrac12$, and has an integer-valued norm; its Gram determinant is $\tfrac14$, and the index and covolume computations agree. The Lipschitz lattice is a maximal proper sublattice of the Hurwitz lattice, the two have the same real and complex spans, and the further multiplicative and arithmetic structure of these orders is treated in the companion category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda$, $\Lambda'$</td>
+<td>lattices, free $\mathbb{Z}$-modules</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>rank of a lattice</td>
+</tr>
+<tr>
+<td>$[\Lambda:\Lambda']$</td>
+<td>index of a sublattice</td>
+</tr>
+<tr>
+<td>$A=(a_{ij})$</td>
+<td>change-of-basis matrix</td>
+</tr>
+<tr>
+<td>$G=(v_i\cdot v_j)$</td>
+<td>Gram matrix</td>
+</tr>
+<tr>
+<td>$\operatorname{covol}(\Lambda)=\sqrt{\det G}$</td>
+<td>covolume</td>
+</tr>
+<tr>
+<td>$\Lambda^*$</td>
+<td>dual lattice with respect to a form</td>
+</tr>
+<tr>
+<td>$\mathbb{H}(\mathbb{Z})$</td>
+<td>Lipschitz lattice, rank $4$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}'(\mathbb{Z})$</td>
+<td>Hurwitz lattice, rank $4$</td>
+</tr>
+<tr>
+<td>$\omega=\tfrac12(1+e_1+e_2+e_3)$</td>
+<td>half-integral generator</td>
+</tr>
+<tr>
+<td>$N(x)=x\bar x$</td>
+<td>norm form, $a_0^2+a_1^2+a_2^2+a_3^2$</td>
+</tr>
+<tr>
+<td>$(x,y)=\operatorname{Sc}(x\bar y)$</td>
+<td>polar form, Euclidean dot product</td>
+</tr>
+<tr>
+<td>$e_0=1,e_1,e_2,e_3$</td>
+<td>quaternion basis, $e_k^2=-1$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{B}$</td>
+<td>quaternions and biquaternions</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>base ring for extension of scalars</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John H. Conway and Neil J. A. Sloane, <em>Sphere Packings, Lattices and Groups</em> (Springer, 3rd ed. 1999), for lattices, covolumes and the quaternionic examples.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for orders, the Lipschitz and Hurwitz orders, and their arithmetic.</li>
+<li>Marie-France Vignéras, <em>Arithmétique des algèbres de quaternions</em> (Springer, 1980), for maximal orders and norms.</li>
+<li>Jean-Pierre Serre, <em>A Course in Arithmetic</em> (Springer, 1973), for the four-square theorem and the theta series of these lattices.</li>
+<li>Henri Cohen, <em>A Course in Computational Algebraic Number Theory</em> (Springer, 1993), for lattice algorithms and covolume computations.</li>
+<li>Martin Eichler, <em>Quadratische Formen und orthogonale Gruppen</em> (Springer, 1952), for integral quadratic forms on lattices.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

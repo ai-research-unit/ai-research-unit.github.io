@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superalgebras and Graded Structures — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="superalgebras-and-graded-structures"><strong>Superalgebras and Graded Structures</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A graded algebra is an algebra with a decomposition labelled by a monoid, and the sign rule $(-1)^{|a||b|}$ of the exterior algebra of the companion article <em>The Exterior Algebra</em> is the characteristic feature of the degree-labelled case. When the labels are taken modulo $2$, so that the only information retained is <strong>parity</strong>, the sign rule becomes the defining relation of a <strong>superalgebra</strong>, and the identities of the theory acquire a sign in every place where two odd objects are exchanged. The subject of this article is that theory: graded-commutative associative superalgebras, Lie superalgebras, the Grassmann envelope that reduces the theory of Lie superalgebras to ordinary Lie algebras, and the Berezinian, which is the determinant of an even invertible supermatrix.</p>
+<p>The exterior algebra is the universal example: if $M$ is placed in odd parity, then $\Lambda(M)$ is a graded-commutative superalgebra, and its Koszul sign rule is exactly the super sign rule. This is why graded structures and anti-symmetric algebras belong to one category: the exterior algebra is the free graded-commutative superalgebra on an odd space, and the theory of Lie superalgebras is the theory of algebras whose Grassmann envelope is a Lie algebra.</p>
+<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$ in which $2$ is invertible, and $K$ is a field of characteristic different from $2$; the sign rule reduces to commutativity when $2 = 0$, so the theory is vacuous in characteristic $2$ and that case is excluded. Modules are $R$-modules, and the exterior algebra is written $\Lambda(M)$ with the notation of <em>Exterior Powers</em> and <em>The Exterior Algebra</em>. Superalgebras are written lowercase fraktur when they are Lie superalgebras, so $\mathfrak{g} = \mathfrak{g}_0 \oplus \mathfrak{g}_1$. No physics is invoked.</p>
+<h2 id="graded-vector-spaces-and-superalgebras">Graded Vector Spaces and Superalgebras</h2>
+<h3 id="math14-and-math15-gradings">$\mathbb{Z}$- and $\mathbb{Z}/2$-Gradings</h3>
+<p><strong>Definition.</strong> A <strong>graded $R$-module</strong> is a module $A$ with a direct sum decomposition $A = \bigoplus_{n \in \mathbb{Z}} A_n$; a <strong>graded algebra</strong> is a graded module with a multiplication satisfying $A_p A_q \subseteq A_{p+q}$. A <strong>superalgebra</strong> is an algebra with a decomposition into two parts,</p>
+<p>$$
+A = A_0 \oplus A_1,
+$$</p>
+<p>such that $A_p A_q \subseteq A_{p+q}$ for $p, q \in \mathbb{Z}/2\mathbb{Z}$; the elements of $A_0$ are <strong>even</strong> and those of $A_1$ are <strong>odd</strong>. A <strong>super vector space</strong> is an $R$-module with such a decomposition, and a <strong>supermodule</strong> over a superalgebra is a super vector space with a parity-respecting action.</p>
+<p>Every $\mathbb{Z}$-grading induces a $\mathbb{Z}/2$-grading by reduction modulo $2$: the even part is the sum of the even-degree pieces and the odd part the sum of the odd-degree pieces. Thus $\Lambda(M) = \bigoplus_n \Lambda^n M$ is a superalgebra with</p>
+<p>$$
+\Lambda(M)_0 = \Lambda^{\mathrm{ev}}(M) = \bigoplus_{n \text{ even}} \Lambda^n M, \qquad \Lambda(M)_1 = \Lambda^{\mathrm{odd}}(M) = \bigoplus_{n \text{ odd}} \Lambda^n M.
+$$</p>
+<p><strong>Definition.</strong> For a homogeneous element $a$ of a superalgebra, its <strong>parity</strong> is $|a| = 0$ if $a$ is even and $|a| = 1$ if $a$ is odd. Every element is a sum of a unique even and a unique odd part, and a statement about homogeneous elements extends by linearity; in particular $(-1)^{|a|}$ means $+1$ on the even part and $-1$ on the odd part.</p>
+<h3 id="the-super-sign-rule">The Super Sign Rule</h3>
+<p><strong>Definition.</strong> An associative superalgebra $A$ is <strong>supercommutative</strong>, or <strong>graded-commutative</strong>, if</p>
+<p>$$
+ab = (-1)^{|a||b|}\, ba
+$$</p>
+<p>for all homogeneous $a, b \in A$. It is <strong>superanticommutative</strong> if $ab = -(-1)^{|a||b|}ba$.</p>
+<p><strong>Proposition.</strong> In a supercommutative algebra, $a^2 = 0$ for every odd $a$, and the even part $A_0$ is a commutative algebra. If $2$ is invertible in $R$, the converse holds under one further hypothesis: if $A_0$ is commutative, if $a^2 = 0$ for every odd $a$ and if every even element commutes with every odd element, then $A$ is supercommutative.</p>
+<p><strong>Proof.</strong> For odd $a$, the sign is $(-1)^{1 \cdot 1} = -1$, so $a^2 = -a^2$ and $2a^2 = 0$; invertibility of $2$ gives $a^2 = 0$. For even $a, b$ the sign is $+1$. Conversely, polarising $0 = (a+b)^2 = a^2 + ab + ba + b^2$ for odd $a, b$ gives $ab = -ba$, so odd elements anticommute; the mixed case is the extra hypothesis, since an odd element can fail to commute with an even one while both of the other conditions hold. $\square$</p>
+<p><strong>Example.</strong> The exterior algebra $\Lambda(M)$ with $M$ declared odd is supercommutative, by the Koszul sign rule of <em>The Exterior Algebra</em>. Its degree grading refines the parity grading, and the identity $x \wedge x = 0$ for $x \in M$ is the super sign rule in parity one.</p>
+<h3 id="constructing-superalgebras">Constructing Superalgebras</h3>
+<p>The standard constructions of algebra carry over with the sign inserted.</p>
+<p><strong>Definition.</strong> The <strong>tensor product</strong> of two superalgebras $A$ and $B$ is the superalgebra $A \otimes_R B$ with the multiplication</p>
+<p>$$
+(a \otimes b)(a' \otimes b') = (-1)^{|b||a'|}\, (a a') \otimes (b b').
+$$</p>
+<p><strong>Proposition.</strong> $A \otimes_R B$ is associative if $A$ and $B$ are; it is supercommutative if $A$ and $B$ are; and the exterior algebra satisfies</p>
+<p>$$
+\Lambda(M \oplus N) \cong \Lambda(M) \otimes_R \Lambda(N)
+$$</p>
+<p>as superalgebras, which is the isomorphism of <em>The Exterior Algebra</em> with the graded tensor product reinterpreted as a super tensor product.</p>
+<p><strong>Proof.</strong> Associativity is the verification that the two bracketings of $(a \otimes b)(a' \otimes b')(a'' \otimes b'')$ have the same sign, namely $(-1)^{|b||a'|} \cdot (-1)^{|b||a''| + |b'||a''|}$; supercommutativity follows by moving the two tensor factors past one another and collecting the signs. The isomorphism is the one already constructed degree by degree. $\square$</p>
+<h2 id="the-grassmann-envelope">The Grassmann Envelope</h2>
+<h3 id="the-parity-extension">The Parity Extension</h3>
+<p>Superalgebra has a universal property that makes it redundant in a precise sense: it is a theory of ordinary algebra with coefficients extended by odd variables.</p>
+<p><strong>Definition.</strong> Let $G = G_0 \oplus G_1$ be a graded-commutative associative $R$-algebra with $G_0$ containing $R$, called a <strong>Grassmann algebra</strong> if $G_1$ generates $G$ over $G_0$ and $G_1$ is generated by odd elements that square to zero. The standard example is $G = \Lambda(V)$ for an odd module $V$.</p>
+<p><strong>Definition.</strong> Let $\mathfrak{g} = \mathfrak{g}_0 \oplus \mathfrak{g}_1$ be a Lie superalgebra and $G$ a Grassmann algebra. The <strong>Grassmann envelope</strong> is the $R$-module</p>
+<p>$$
+G(\mathfrak{g}) = (G_0 \otimes_R \mathfrak{g}_0) \oplus (G_1 \otimes_R \mathfrak{g}_1),
+$$</p>
+<p>with the bracket</p>
+<p>$$
+[g \otimes x, h \otimes y] = (-1)^{|h||x|}\, (gh) \otimes [x, y], \qquad g, h \in G,\ x, y \in \mathfrak{g}.
+$$</p>
+<p>Note that $G(\mathfrak{g})$ is concentrated in parity zero: it pairs even elements of $G$ with even elements of $\mathfrak{g}$ and odd with odd. It is therefore an ordinary $R$-module with an ordinary bracket.</p>
+<h3 id="the-structural-theorem">The Structural Theorem</h3>
+<p><strong>Theorem (Berezin–Kac).</strong> Let $\mathfrak{g} = \mathfrak{g}_0 \oplus \mathfrak{g}_1$ be a superalgebra over $R$, and let $G$ be a Grassmann algebra with $G_1 \neq 0$. Then $\mathfrak{g}$ is a Lie superalgebra if and only if its Grassmann envelope $G(\mathfrak{g})$ is a Lie algebra over $R$.</p>
+<p><strong>Proof sketch.</strong> Write $g \in G$ and $x \in \mathfrak{g}$ as homogeneous and expand. The superbracket on $\mathfrak{g}$ is recovered from the bracket on the envelope by tensoring with a basis of $G$ and using the fact that products of odd generators are nonzero, so that no relation between the structure constants is lost. The ordinary Jacobi identity for $G(\mathfrak{g})$, expanded in a basis of $G$, has components that are exactly the super Jacobi identity for $\mathfrak{g}$ together with the super antisymmetry of the bracket. $\square$</p>
+<p><strong>Corollary.</strong> Every theorem about Lie algebras that is proved by multilinear identities has a version for Lie superalgebras, and the proof is the proof of the Lie algebra statement applied to the Grassmann envelope and then read off. This is the sense in which the exterior algebra is the universal passage from an anti-symmetric structure to an ordinary one.</p>
+<p><strong>Remark.</strong> The argument also explains the presence of the signs: the sign $(-1)^{|h||x|}$ in the definition of the envelope is forced, because it is the sign that makes $G(\mathfrak{g})$ land in parity zero and makes the bracket satisfy the ordinary Jacobi identity.</p>
+<h2 id="lie-superalgebras">Lie Superalgebras</h2>
+<h3 id="definitions-and-the-sign-rule">Definitions and the Sign Rule</h3>
+<p><strong>Definition.</strong> A <strong>Lie superalgebra</strong> over $R$ is a super vector space $\mathfrak{g} = \mathfrak{g}_0 \oplus \mathfrak{g}_1$ with a bilinear bracket $\mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$ preserving parity, $[\mathfrak{g}_p, \mathfrak{g}_q] \subseteq \mathfrak{g}_{p+q}$, which is <strong>super anticommutative</strong>,</p>
+<p>$$
+[x, y] = -(-1)^{|x||y|}\,[y, x],
+$$</p>
+<p>and satisfies the <strong>super Jacobi identity</strong></p>
+<p>$$
+(-1)^{|x||z|}\,[x, [y, z]] + (-1)^{|y||x|}\,[y, [z, x]] + (-1)^{|z||y|}\,[z, [x, y]] = 0.
+$$</p>
+<p><strong>Remark.</strong> In parity zero the definition is that of an ordinary Lie algebra. For odd $x$ the super anticommutativity gives $[x, x] = [x,x]$, hence <strong>no constraint</strong>: odd elements may have nonzero bracket with themselves. This is the single structural difference between Lie algebras and Lie superalgebras, and it is a consequence of the sign rule rather than an independent axiom.</p>
+<p><strong>Example.</strong> Let $A$ be an associative superalgebra. Define the <strong>superbracket</strong></p>
+<p>$$
+[a, b] = ab - (-1)^{|a||b|}\, ba.
+$$</p>
+<p>Then $A$ with this bracket is a Lie superalgebra: the superbracket is super anticommutative by construction, and the super Jacobi identity follows from associativity. This is the super analogue of the fact that an associative algebra is a Lie algebra under the commutator, and the sign in the bracket is the sign required to make the associativity identity close up.</p>
+<h3 id="the-general-linear-superalgebra">The General Linear Superalgebra</h3>
+<p><strong>Definition.</strong> Let $V = K^{m} \oplus K^{n}$ with the first summand even and the second odd. The <strong>general linear superalgebra</strong> $\mathfrak{gl}(m|n)$ is the Lie superalgebra of endomorphisms of $V$, which are the block matrices</p>
+<p>$$
+X = \begin{pmatrix} A & B \\ C & D \end{pmatrix}, \qquad A \in \mathfrak{gl}(m),\ D \in \mathfrak{gl}(n),\ B, C \text{ of the appropriate parity},
+$$</p>
+<p>with bracket $[X, Y] = XY - (-1)^{|X||Y|}YX$. Its even part is $\mathfrak{gl}(m) \oplus \mathfrak{gl}(n)$ and its odd part is the space of off-diagonal blocks, of dimension $2mn$.</p>
+<p><strong>Definition.</strong> The <strong>supertrace</strong> of $X = \begin{pmatrix} A & B \\ C & D\end{pmatrix}$ is</p>
+<p>$$
+\operatorname{str}(X) = \operatorname{tr}(A) - \operatorname{tr}(D).
+$$</p>
+<p><strong>Proposition.</strong> $\operatorname{str}$ vanishes on superbrackets: $\operatorname{str}([X, Y]) = 0$ for all $X, Y \in \mathfrak{gl}(m|n)$. Consequently</p>
+<p>$$
+\mathfrak{sl}(m|n) = \{X \in \mathfrak{gl}(m|n) : \operatorname{str}(X) = 0\}
+$$</p>
+<p>is a Lie subalgebra of $\mathfrak{gl}(m|n)$.</p>
+<p><strong>Proof.</strong> For homogeneous $X$ and $Y$ one has $\operatorname{str}(XY) = (-1)^{|X||Y|}\operatorname{str}(YX)$. If the parities are opposite then $XY$ and $YX$ are odd, so both have zero diagonal blocks and both supertraces vanish. If $X$ and $Y$ are even, the diagonal blocks of $XY$ are $A_XA_Y$ and $D_XD_Y$ and those of $YX$ are $A_YA_X$ and $D_YD_X$, and the trace identity $\operatorname{tr}(PQ) = \operatorname{tr}(QP)$ gives equality. If $X$ and $Y$ are odd, the diagonal blocks of $XY$ are $B_XC_Y$ and $C_XB_Y$ and those of $YX$ are $B_YC_X$ and $C_YB_X$, so</p>
+<p>$$
+\operatorname{str}(XY) = \operatorname{tr}(B_XC_Y) - \operatorname{tr}(C_XB_Y) = \operatorname{tr}(B_XC_Y) - \operatorname{tr}(B_YC_X) = -\operatorname{str}(YX).
+$$</p>
+<p>In each case $\operatorname{str}(XY) = (-1)^{|X||Y|}\operatorname{str}(YX)$, and substituting into the superbracket gives $\operatorname{str}([X,Y]) = \operatorname{str}(XY) - (-1)^{|X||Y|}\operatorname{str}(YX) = 0$. $\square$</p>
+<p><strong>Remark.</strong> When $m = n$ the identity matrix has $\operatorname{str}(I_{2n}) = n - n = 0$, so $\mathfrak{sl}(n|n)$ contains the central element $I_{2n}$ and is not simple; the simple algebra is the quotient $\mathfrak{psl}(n|n) = \mathfrak{sl}(n|n)/\langle I_{2n}\rangle$, which appears in the classification below.</p>
+<p><strong>Definition.</strong> Let $\beta$ be a nondegenerate even or odd supersymmetric bilinear form on $V$. The <strong>orthosymplectic Lie superalgebra</strong> $\mathfrak{osp}(\beta)$ is the subalgebra of $\mathfrak{gl}(m|n)$ consisting of those $X$ with $\beta(Xv, w) + (-1)^{|X||v|}\beta(v, Xw) = 0$ for all homogeneous $v, w$; with the standard choices it is written $\mathfrak{osp}(m|n)$.</p>
+<p><strong>Remark (classification).</strong> Over $\mathbb{C}$ the finite-dimensional simple Lie superalgebras are classified. They are the classical algebras $\mathfrak{sl}(m|n)$, $\mathfrak{psl}(n|n)$, $\mathfrak{osp}(m|n)$ with the natural restrictions on $m, n$, the exceptional superalgebras $D(2,1;\alpha)$, $F(4)$ and $G(3)$, and the four infinite families $W$, $S$, $\tilde S$, $H$ of superalgebras of vector fields, due to Cartan. This classification is due to Kac and is the super analogue of the Killing–Cartan classification of <em>Root Systems and Classification</em>; the simple Lie superalgebras are not all semisimple in the ordinary sense, which is the reason the classification is a separate theorem.</p>
+<h2 id="graded-commutative-superalgebras">Graded-Commutative Superalgebras</h2>
+<h3 id="alternating-and-symmetric-elements">Alternating and Symmetric Elements</h3>
+<p><strong>Definition.</strong> Let $A$ be a supercommutative associative superalgebra. The <strong>supercommutator</strong> is the bracket $[a, b] = ab - (-1)^{|a||b|}ba$, which vanishes identically on $A$, so a supercommutative algebra is exactly a Lie superalgebra with zero bracket; its structure is that of a commutative algebra in the symmetric monoidal category of super vector spaces.</p>
+<p><strong>Proposition.</strong> In a supercommutative algebra, the even part is commutative, the odd part is a module over the even part, and the product of two odd elements is even and symmetric: for odd $a, b, c$,</p>
+<p>$$
+abc = -cba, \qquad (ab)c = c(ab), \qquad (ab)c = (bc)a.
+$$</p>
+<p><strong>Proof.</strong> For odd $a, b$ the sign in $ab = -ba$ is $-1$, and the product $ab$ is even, so it commutes with $c$: $(ab)c = c(ab)$. Associativity and the anticommutativity of odd elements give $cba = (cb)a = -(bc)a = -a(bc) = -(ab)c$, which is $abc = -cba$; the last identity is the same computation with the letters cyclically permuted. $\square$</p>
+<p><strong>Example.</strong> In $\Lambda(M)$ with $M$ odd, the even part $\Lambda^{\mathrm{ev}}(M)$ is commutative, and the product of two odd elements is even and behaves accordingly: for $x, y, z \in M$ one has $(x \wedge y) \wedge z = z \wedge (x \wedge y)$ in the even part.</p>
+<h3 id="the-super-trace-and-the-berezinian">The Super Trace and the Berezinian</h3>
+<p>The determinant has a super analogue, and it is not the naive determinant of the block matrix.</p>
+<p><strong>Definition.</strong> Let $X = \begin{pmatrix} A & B \\ C & D\end{pmatrix}$ be an even supermatrix over a supercommutative algebra, with $A$ and $D$ even and invertible and $B, C$ odd. The <strong>Berezinian</strong> of $X$ is</p>
+<p>$$
+\operatorname{Ber}(X) = \det(A - B D^{-1} C)\, \det(D)^{-1} = \det(A)\, \det(D - C A^{-1} B)^{-1}.
+$$</p>
+<p>The two expressions agree over a supercommutative algebra, and the Berezinian is an even invertible element.</p>
+<p><strong>Theorem.</strong> The Berezinian is multiplicative:</p>
+<p>$$
+\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)
+$$</p>
+<p>for even supermatrices with invertible even diagonal blocks, and it is characterised by the two properties $\operatorname{Ber}\!\begin{pmatrix} A & 0 \\ 0 & D\end{pmatrix} = \det(A)\det(D)^{-1}$ and multiplicativity.</p>
+<p><strong>Proof.</strong> Both sides are rational functions of the entries; by the super analogue of the splitting principle one reduces to supermatrices that are products of block diagonal and block triangular factors, and for those the formula is immediate from the definition and the multiplicativity of the ordinary determinant. The odd entries are nilpotent over a finitely generated supercommutative algebra, so the rational expression is a polynomial in the odd variables and the reduction is legitimate. $\square$</p>
+<p><strong>Proposition.</strong> For an even supermatrix $X$ one has $\operatorname{Ber}(e^X) = e^{\operatorname{str}(X)}$, where $\operatorname{str}$ is the supertrace.</p>
+<p><strong>Proof.</strong> Reduce to the diagonal case by multiplicativity: the relation is multiplicative in $X$ to first order, and both sides have the same derivative at $X = 0$, namely $\operatorname{str}$. $\square$</p>
+<p><strong>Remark.</strong> Unlike the determinant, the Berezinian is defined only on the even supermatrices: the block formula uses determinants, so the diagonal blocks must be invertible, and an odd block would have no inverse. For an even supermatrix the odd blocks are corrections to the block diagonal part, and the invertibility of the supermatrix forces the invertibility of both diagonal blocks; the two displayed expressions are therefore available and agree. The group on which $\operatorname{Ber}$ is defined is the even part of the general linear supergroup, and on it $\operatorname{Ber}$ is a homomorphism with values in the even units, so the special linear supergroup is the kernel of the Berezinian in the same way that the special linear group is the kernel of the determinant.</p>
+<h2 id="the-algebra-of-odd-generators">The Algebra of Odd Generators</h2>
+<h3 id="odd-generators-and-the-exterior-algebra">Odd Generators and the Exterior Algebra</h3>
+<p><strong>Definition.</strong> Let $M$ be an $R$-module, placed in odd parity, and let $\Lambda(M)$ be its exterior algebra with the Koszul sign rule. Then $\Lambda(M)$ is the <strong>free supercommutative algebra</strong> on the odd module $M$: for any supercommutative algebra $A$ and any $R$-linear map $f : M \to A_1$ with $f(x)^2 = 0$, there is a unique morphism of superalgebras $\Lambda(M) \to A$ extending $f$.</p>
+<p><strong>Proof.</strong> This is the universal property of <em>The Exterior Algebra</em>, read in parity: an odd element has square zero in a supercommutative algebra, and the parity-respecting algebra maps are exactly the algebra maps sending $M$ into the odd part. $\square$</p>
+<h3 id="the-commutation-factors">The Commutation Factors</h3>
+<p>Let $M$ be free with a basis of odd generators $x_1, \ldots, x_m$. The exterior algebra has the basis of squarefree monomials $x_{i_1} \cdots x_{i_k}$ with $i_1 < \cdots < i_k$, and the super sign rule reads</p>
+<p>$$
+x_{i_1} \cdots x_{i_k} = (-1)^{\sigma(i_1, \ldots, i_k)}\, x_{\sigma(i_1)} \cdots x_{\sigma(i_k)}
+$$</p>
+<p>for a permutation $\sigma$, where the sign is the sign of the permutation restricted to the chosen indices. Equivalently, the monomial $x_{i_1}\cdots x_{i_k}$ corresponding to a subset $I = \{i_1 < \cdots < i_k\}$ satisfies</p>
+<p>$$
+x_I\, x_J = \varepsilon(I, J)\, x_{I \cup J}, \qquad \varepsilon(I, J) = (-1)^{\#\{(i,j) \in I \times J : i > j\}},
+$$</p>
+<p>with $x_{I\cup J} = 0$ when $I \cap J \neq \varnothing$. The factor $\varepsilon(I, J)$ is the <strong>commutation factor</strong>, and the identity $\varepsilon(I,J)\varepsilon(J,I) = (-1)^{|I||J|}$ is the super sign rule.</p>
+<p><strong>Proposition.</strong> The assignment $I \mapsto x_I$ is a bijection from the finite subsets of $\{1, \ldots, m\}$ to a basis of $\Lambda(M)$, and the commutation factors satisfy the cocycle identity</p>
+<p>$$
+\varepsilon(I, J)\, \varepsilon(I \cup J, L) = \varepsilon(J, L)\, \varepsilon(I, J \cup L)
+$$</p>
+<p>for pairwise disjoint subsets $I, J, L$.</p>
+<p><strong>Proof.</strong> The basis statement is the rank computation of <em>Exterior Powers</em>. The cocycle identity counts the inversions on both sides: each of the three sets contributes its inversions with each of the others, and the counting is symmetric. $\square$</p>
+<p><strong>Remark.</strong> The commutation factors are the data that a general <strong>graded-commutative algebra</strong> with an arbitrary abelian grading carries: for a grading by an abelian group $\Gamma$ with a bilinear pairing $\varepsilon : \Gamma \times \Gamma \to R^\times$, the algebras with $ab = \varepsilon(|a|, |b|) ba$ are the <strong>colour algebras</strong>, and the exterior algebra with its Koszul sign is the case $\Gamma = \mathbb{Z}/2$ and $\varepsilon(p, q) = (-1)^{pq}$. Colour algebras are the natural generalisation of the anti-symmetric algebras of this category, and they reduce to superalgebras when the colour group is $\mathbb{Z}/2$.</p>
+<h2 id="summary">Summary</h2>
+<p>A superalgebra is an algebra graded by $\mathbb{Z}/2$; an associative superalgebra is supercommutative when $ab = (-1)^{|a||b|}ba$, and in that case odd elements square to zero and the even part is commutative. The exterior algebra with its generators placed in odd parity is the universal example and the free supercommutative algebra on an odd module; a $\mathbb{Z}$-grading with the Koszul rule reduces to a supergrading by parity.</p>
+<p>A Lie superalgebra is super anticommutative, $[x,y] = -(-1)^{|x||y|}[y,x]$, and satisfies the super Jacobi identity; in parity zero this is an ordinary Lie algebra, and the only structural novelty is that odd elements need not bracket to zero with themselves. The associative superbracket $[a,b] = ab - (-1)^{|a||b|}ba$ makes an associative superalgebra a Lie superalgebra, and the general linear superalgebra $\mathfrak{gl}(m|n)$ with its supertrace and the orthosymplectic algebras are the basic examples; the simple Lie superalgebras over $\mathbb{C}$ are classified by Kac. The Grassmann envelope reduces the theory of Lie superalgebras to ordinary Lie algebras, which is the precise sense in which the exterior algebra is universal for the sign rule. The Berezinian is the multiplicative determinant of an even supermatrix, defined on the even part of the general linear supergroup, with $\operatorname{Ber}(e^X) = e^{\operatorname{str}(X)}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity in which $2$ is invertible</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Field of characteristic different from $2$</td>
+</tr>
+<tr>
+<td>$A = A_0 \oplus A_1$</td>
+<td>Superalgebra with even and odd parts</td>
+</tr>
+<tr>
+<td>$\vert a\vert \in \{0,1\}$</td>
+<td>Parity of a homogeneous element</td>
+</tr>
+<tr>
+<td>$ab = (-1)^{\vert a\vert\vert b\vert}ba$</td>
+<td>Supercommutativity; Koszul sign rule in parity</td>
+</tr>
+<tr>
+<td>$\Lambda(M)$ with $M$ odd</td>
+<td>Free supercommutative algebra on an odd module</td>
+</tr>
+<tr>
+<td>$A \otimes_R B$, $(a\otimes b)(a'\otimes b') = (-1)^{\vert b\vert\vert a'\vert}(aa')\otimes(bb')$</td>
+<td>Super tensor product</td>
+</tr>
+<tr>
+<td>$G(\mathfrak{g}) = (G_0\otimes\mathfrak{g}_0)\oplus(G_1\otimes\mathfrak{g}_1)$</td>
+<td>Grassmann envelope; a Lie algebra iff $\mathfrak{g}$ is a Lie superalgebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{g} = \mathfrak{g}_0\oplus\mathfrak{g}_1$</td>
+<td>Lie superalgebra</td>
+</tr>
+<tr>
+<td>$[x,y] = -(-1)^{\vert x\vert\vert y\vert}[y,x]$</td>
+<td>Super anticommutativity; $[x,x]$ unconstrained for odd $x$</td>
+</tr>
+<tr>
+<td>$[a,b] = ab - (-1)^{\vert a\vert\vert b\vert}ba$</td>
+<td>Superbracket of an associative superalgebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(m\vert n)$</td>
+<td>General linear superalgebra of $K^m\oplus K^n$</td>
+</tr>
+<tr>
+<td>$\operatorname{str}\begin{pmatrix}A&B\\C&D\end{pmatrix} = \operatorname{tr}A - \operatorname{tr}D$</td>
+<td>Supertrace; vanishes on superbrackets</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(m\vert n)$, $\mathfrak{psl}(n\vert n)$, $\mathfrak{osp}(m\vert n)$</td>
+<td>Supertraceless, projective and orthosymplectic subalgebras; $\mathfrak{psl}(n\vert n) = \mathfrak{sl}(n\vert n)/\langle I_{2n}\rangle$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ber}(X) = \det(A-BD^{-1}C)\det(D)^{-1}$</td>
+<td>Berezinian of an even supermatrix</td>
+</tr>
+<tr>
+<td>$\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)$, $\operatorname{Ber}(e^X) = e^{\operatorname{str}X}$</td>
+<td>Multiplicativity and the trace relation</td>
+</tr>
+<tr>
+<td>$\varepsilon(I,J) = (-1)^{\#\{(i,j)\in I\times J : i>j\}}$</td>
+<td>Commutation factor of squarefree monomials</td>
+</tr>
+<tr>
+<td>Colour algebra</td>
+<td>$\Gamma$-graded algebra with $ab = \varepsilon(\vert a\vert,\vert b\vert)ba$; $\Gamma = \mathbb{Z}/2$ gives superalgebras</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for graded algebras, superalgebras, and the graded tensor product.</li>
+<li>F. A. Berezin, <em>Introduction to Superanalysis</em> (Reidel, 1987), for the Grassmann envelope, the supertrace, and the Berezinian.</li>
+<li>Victor G. Kac, "Lie Superalgebras", <em>Advances in Mathematics</em> 26 (1977), for the classification of simple Lie superalgebras.</li>
+<li>Manfred Scheunert, <em>The Theory of Lie Superalgebras</em> (Springer, 1979), for a systematic treatment of Lie superalgebras and their representations.</li>
+<li>I. N. Bernstein, D. A. Leites, and V. I. Shander, "Lie Superalgebras and Supergravity" (in <em>Lie Groups and Lie Algebras: Their Representations, Generalisations and Applications</em>, Kluwer, 1998), for the superalgebraic formalism.</li>
+<li>Pierre Deligne and John W. Morgan, "Notes on Supersymmetry (following Joseph Bernstein)" (in <em>Quantum Fields and Strings: A Course for Mathematicians</em>, AMS, 1999), for a rigorous algebraic development of super linear algebra.</li>
+<li>V. S. Varadarajan, <em>Supersymmetry for Mathematicians: An Introduction</em> (AMS, 2004), for Lie superalgebras, the Berezinian, and their geometric applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

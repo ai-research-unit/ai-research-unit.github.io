@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topological Algebras and Banach Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="topological-algebras-and-banach-algebras"><strong>Topological Algebras and Banach Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra theory so far has been algebraic: an $R$-algebra is a module with a bilinear product, and nothing is assumed about a topology. The hypercomplex analysis needs more. Differentiation, integration and limits require a topology in which the algebra operations are continuous, and the completeness needed for the exponential and for the solution of differential equations requires that topology to come from a norm that is compatible with the product. This article supplies that layer: topological algebras, normed algebras, Banach algebras, the openness of the unit group, the exponential map, the Gelfand–Mazur theorem, and the precise sense in which a norm controls divisibility.</p>
+<p>The base ring of this article is no longer an arbitrary commutative ring. Topology enters through a complete valued ground field, and we take</p>
+<p>$$
+\mathbb{K} = \mathbb{R} \quad \text{or} \quad \mathbb{K} = \mathbb{C},
+$$</p>
+<p>with the usual absolute value and its topology. Every algebra below is over $\mathbb{K}$, so that linear combinations with coefficients in $\mathbb{K}$ can be limited. This is the one point in the category where the field hypothesis cannot be avoided, and it is flagged here once and for all: the algebraic constructions of the preceding entries hold over a commutative ring, whereas the four hypercomplex-analysis articles require a complete valued ground field of the kind fixed here.</p>
+<p>The four analysis articles —and— take place over general hypercomplex systems. This article stays general too: it develops the topological and Banach-algebra machinery once, without reference to a particular number system.</p>
+<h2 id="topological-algebras">Topological Algebras</h2>
+<p><strong>Definition.</strong> A <strong>topological algebra</strong> over $\mathbb{K}$ is a $\mathbb{K}$-algebra $A$ equipped with a topology such that:</p>
+<ol>
+<li>the addition $A \times A \to A$, $(x,y) \mapsto x + y$, is continuous;</li>
+<li>the scalar multiplication $\mathbb{K} \times A \to A$, $(\lambda, x) \mapsto \lambda x$, is continuous;</li>
+<li>the product $A \times A \to A$, $(x,y) \mapsto xy$, is continuous.</li>
+</ol>
+<p>Here $A \times A$ carries the product topology and $\mathbb{K}$ its usual topology. A topological algebra is <strong>Hausdorff</strong> if its topology is, and in this article all topological algebras are Hausdorff, as they are for the purposes of analysis.</p>
+<p>The continuity of a bilinear map is not automatic from separate continuity in infinite dimensions; the two are equivalent in the normed case below, which is the case used throughout the analysis.</p>
+<p><strong>Proposition (the topology is determined at $0$).</strong> Let $A$ be a topological algebra. The additive group of $A$ is a topological group, so its topology is translation invariant and is determined by the neighbourhoods of $0$: the translates $x + V$, as $V$ runs through a basis of neighbourhoods of $0$, form a basis of neighbourhoods of $x$, and a subset $U \subseteq A$ is open if and only if for every $x \in U$ there is a neighbourhood $V$ of $0$ with $x + V \subseteq U$. The closure of $\{0\}$ is</p>
+<p>$$
+\overline{\{0\}} = \bigcap \{V : V \text{ a neighbourhood of } 0\},
+$$</p>
+<p>a two-sided ideal of $A$ contained in every neighbourhood of $0$. Consequently $A$ is Hausdorff if and only if $\{0\}$ is closed, that is, if and only if this ideal is zero.</p>
+<p><em>Proof.</em> Translation $y \mapsto x + y$ is continuous because addition is, and it is a homeomorphism because it has the continuous inverse $y \mapsto -x + y$ (scalar multiplication by $-1$ is continuous). Hence $x + V$ is a neighbourhood of $x$ and every neighbourhood of $x$ is of that form, which gives the characterisation of open sets. For the closure, $x \in \overline{\{0\}}$ means that every neighbourhood of $x$ contains $0$, which by translation invariance says exactly that $x$ lies in every neighbourhood of $0$; that is the displayed identity. That set is an ideal: if $a, b \in \overline{\{0\}}$ then $a + b \in \overline{\{0\} + \{0\}} = \overline{\{0\}}$ and $-a \in \overline{\{0\}}$ by continuity of addition and of negation, while for any $x \in A$ the element $ax$ lies in $\overline{\{0\}\cdot x} \subseteq \overline{\{0\}}$ because right multiplication by $x$ is continuous; the left case is the same. Finally, in a topological group the Hausdorff property is equivalent to the closedness of the identity: if $\{0\}$ is closed and $x \neq y$ then $x - y \neq 0$, so some neighbourhood $W$ of $0$ misses $x - y$, and continuity of subtraction produces neighbourhoods $U, V$ of $0$ with $U - V \subseteq W$, whence $x + U$ and $y + V$ are disjoint. $\square$</p>
+<p><strong>Remark.</strong> The proposition is the reason a topological algebra can be specified by a neighbourhood basis of $0$ alone, and it is what makes the normed case below a special case: when the topology comes from a norm, the balls about $0$ are such a basis. If $A$ is not Hausdorff, the ideal $\overline{\{0\}}$ is the obstruction, and the quotient $A/\overline{\{0\}}$ is Hausdorff; every topological algebra below is Hausdorff, so this ideal is zero.</p>
+<p><strong>Example.</strong> $\mathbb{K}$ itself, with its usual topology, is a topological algebra; the product and sum are continuous by the elementary properties of limits. Any $\mathbb{K}$-subalgebra of a topological algebra, with the subspace topology, is a topological algebra.</p>
+<p><strong>Example.</strong> Let $X$ be a compact Hausdorff space. The algebra $C(X, \mathbb{K})$ of continuous $\mathbb{K}$-valued functions on $X$, with pointwise operations and the topology of uniform convergence, is a commutative unital topological algebra: addition, scalar multiplication and multiplication of functions are continuous with respect to the supremum norm $\|f\|_\infty = \sup_{x \in X} |f(x)|$.</p>
+<p><strong>Example.</strong> The matrix algebra $M_n(\mathbb{K})$ with the topology of entrywise convergence is a topological algebra; the product entries are polynomials in the entries of the factors, hence continuous.</p>
+<p><strong>Example.</strong> The real number-system algebras are topological algebras over $\mathbb{R}$: with the Euclidean topology on $\mathbb{R}^n$, the sum and the product are the polynomial maps given by the multiplication tables, hence continuous.</p>
+<h3 id="the-unit-group">The Unit Group</h3>
+<p><strong>Proposition.</strong> Let $A$ be a unital topological algebra whose topology is induced by a norm. Then the group $A^\times$ of units is an open subset of $A$, and the inversion map $A^\times \to A^\times$, $x \mapsto x^{-1}$, is continuous.</p>
+<p><em>Proof.</em> Let $a \in A^\times$ and set $c = \|a^{-1}\|$. If $\|x - a\| < c^{-1}$ then $\|a^{-1}(x - a)\| \leq c\|x-a\| < 1$, so by the Neumann series below the element $1 + a^{-1}(x-a) = a^{-1}x$ is a unit, hence $x = a(a^{-1}x)$ is a unit. Thus the ball of radius $c^{-1}$ around $a$ lies in $A^\times$, so $A^\times$ is open. For continuity, write</p>
+<p>$$
+x^{-1} - a^{-1} = x^{-1}(a - x)a^{-1},
+$$</p>
+<p>so that $\|x^{-1} - a^{-1}\| \leq \|x^{-1}\|\,\|a^{-1}\|\,\|a - x\|$; since $\|x^{-1}\|$ is bounded on a small neighbourhood of $a$ by the previous estimate, the right side tends to $0$ as $x \to a$. $\square$</p>
+<p><strong>Corollary.</strong> In a unital normed algebra, an element $x$ with $\|1 - x\| < 1$ is a unit, and</p>
+<p>$$
+x^{-1} = \sum_{n \geq 0} (1 - x)^n, \qquad \|x^{-1}\| \leq \frac{1}{1 - \|1 - x\|}.
+$$</p>
+<p><em>Proof.</em> This is the Neumann series, valid because the geometric series converges absolutely when $\|1 - x\| < 1$; the estimate follows from the submultiplicative inequality $\|(1-x)^n\| \leq \|1-x\|^n$. $\square$</p>
+<p>The openness of $A^\times$ is the algebraic expression of the fact that invertibility is a stable condition, and it is used repeatedly in the hypercomplex analysis entries, where the set of units is open and the set of zero divisors is its closed complement together with $0$: in a finite-dimensional algebra the left zero divisors are exactly the elements $x$ with $\det\lambda_x = 0$, a closed condition on $x$.</p>
+<h2 id="normed-algebras">Normed Algebras</h2>
+<p><strong>Definition.</strong> A <strong>normed algebra</strong> over $\mathbb{K}$ is a $\mathbb{K}$-algebra $A$ equipped with a norm $\|\cdot\| : A \to \mathbb{R}_{\geq 0}$ such that</p>
+<p>$$
+\|xy\| \leq \|x\|\,\|y\| \qquad \text{for all } x, y \in A,
+$$</p>
+<p>the norm being <strong>submultiplicative</strong>. If $A$ is unital one may and does assume $\|1\| = 1$, replacing $\|\cdot\|$ by the equivalent norm $\sup\{\|xy\| : \|y\| \leq 1\}$ when necessary.</p>
+<p>The inequality $\|xy\| \leq \|x\|\|y\|$ is the compatibility between the metric and the algebraic structure. It implies the joint continuity of the product.</p>
+<p><strong>Theorem.</strong> Let $A$ be a normed algebra. Then the product is jointly continuous: for $(x_n) \to x_0$ and $(y_n) \to y_0$,</p>
+<p>$$
+\|x_n y_n - x_0 y_0\| \leq \|x_n - x_0\|\,\|y_n\| + \|x_0\|\,\|y_n - y_0\| \longrightarrow 0.
+$$</p>
+<p>Hence $A$, with its norm topology, is a topological algebra, and if $A$ is unital then $\|x^{-1}\| \geq \|x\|^{-1}$ for every unit.</p>
+<p><em>Proof.</em> The displayed estimate is the triangle inequality and submultiplicativity. The norm topology makes addition and scalar multiplication continuous by the definition of a normed vector space. For the last statement, $1 = \|xx^{-1}\| \leq \|x\|\|x^{-1}\|$. $\square$</p>
+<p><strong>Definition.</strong> A normed algebra is a <strong>normed division algebra</strong> if it is unital and every nonzero element is a unit; the norm is <strong>multiplicative</strong> if $\|xy\| = \|x\|\|y\|$ for all $x,y$. An algebra with a multiplicative norm is a <strong>composition algebra</strong>.</p>
+<p><strong>Proposition.</strong> Let $A$ be a normed algebra with multiplicative norm. Then $A$ has no zero divisors, and if $A$ is finite-dimensional and unital it is a normed division algebra.</p>
+<p><em>Proof.</em> If $xy = 0$ then $\|x\|\|y\| = \|xy\| = 0$, so $x = 0$ or $y = 0$. If $A$ is finite-dimensional, no zero divisors implies every nonzero element is a unit by <em>Centre, Units, Zero Divisors and Division Algebras</em>. $\square$</p>
+<p><strong>Completion.</strong> Let $A$ be a normed algebra and let $\bar{A}$ be the completion of the underlying normed space. The product extends uniquely to a continuous bilinear map $\bar{A} \times \bar{A} \to \bar{A}$, because it is uniformly continuous on bounded sets; the extension is associative when $A$ is, and unital with the same unit. Hence</p>
+<p>$$
+\text{the completion of a normed algebra is a Banach algebra.}
+$$</p>
+<h2 id="banach-algebras">Banach Algebras</h2>
+<p><strong>Definition.</strong> A <strong>Banach algebra</strong> is a normed algebra that is complete in its norm. A <strong>Banach algebra over $\mathbb{K}$</strong> means a Banach algebra over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ in the sense above.</p>
+<p><strong>Example.</strong> $C(X,\mathbb{K})$ with the supremum norm is a commutative unital Banach algebra: uniform limits of continuous functions are continuous, and $\|fg\|_\infty \leq \|f\|_\infty\|g\|_\infty$.</p>
+<p><strong>Example.</strong> $M_n(\mathbb{K})$ with the operator norm $\|M\| = \sup\{\|Mv\| : \|v\| \leq 1\}$ is a unital Banach algebra; the operator norm is submultiplicative by submultiplicativity of the composition of operators.</p>
+<p><strong>Example.</strong> For a locally compact group $G$, the convolution algebra $L^1(G)$ with the $L^1$-norm is a Banach algebra, commutative when $G$ is abelian; it need not have a unit. Group algebras over a field are the subject of <em>Group Algebras</em>; the analytic version is quoted here only as an example.</p>
+<p><strong>Example.</strong> The finite-dimensional algebras $\mathbb{H}$ and $\mathbb{B}$ are Banach algebras: $\mathbb{H}$ with the norm $\|q\| = N(q)^{1/2}$, which is multiplicative because $N$ is; $\mathbb{B}$ with the operator norm transported across the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of <em>Biquaternion Algebra ($\mathbb{B}$)</em>.</p>
+<h3 id="finite-dimensional-algebras">Finite-Dimensional Algebras</h3>
+<p><strong>Theorem.</strong> Let $A$ be a finite-dimensional unital algebra over $\mathbb{K}$. Then $A$ carries a norm making it a normed algebra, and it is complete for it; consequently $A$ is a Banach algebra. Moreover all norms on $A$ are equivalent, so the topology is unique.</p>
+<p><em>Proof.</em> Choose a basis $e_1, \dots, e_m$ and let $\|\cdot\|_1$ be the $\ell^1$-norm in that basis; submultiplicativity may fail, so define</p>
+<p>$$
+\|x\| = \sup\{\|xy\|_1 : \|y\|_1 \leq 1\}.
+$$</p>
+<p>This is a norm: it is subadditive and absolutely homogeneous because the product is bilinear, and $\|x\| = 0$ gives $xe_j = 0$ for every $j$, hence $x = x \cdot \sum_j c_j e_j = 0$ where $1 = \sum_j c_j e_j$. It is equivalent to $\|\cdot\|_1$: expanding $x = \sum_i x_i e_i$ and $y = \sum_j y_j e_j$ with $\sum_j |y_j| \leq 1$ gives</p>
+<p>$$
+\|xy\|_1 \leq \sum_{i,j} |x_i|\,|y_j|\,\|e_ie_j\|_1 \leq C\,\|x\|_1, \qquad C = \max_{i,j}\|e_ie_j\|_1 ,
+$$</p>
+<p>so $\|x\| \leq C\|x\|_1$, and conversely if the two norms were not equivalent there would be a sequence with $\|x_n\|_1 = 1$ and $\|x_n\| \to 0$; a subsequence converges in $\|\cdot\|_1$ to some $x \ne 0$, and $\|x\| = \lim_n\|x_n\| = 0$, since $\|\cdot\|$ is continuous for $\|\cdot\|_1$ by the bound just proved — impossible for a norm. Hence the two norms are equivalent. Finally it is submultiplicative, by the definition of $\|\cdot\|$ and the bilinearity of the product: for $\|w\|_1 \leq 1$,</p>
+<p>$$
+\|xyw\|_1 = \|x(yw)\|_1 \leq \|x\|\,\|yw\|_1 \leq \|x\|\,\|y\|\,\|w\|_1 .
+$$</p>
+<p>Completeness follows from finite dimension and equivalence of the norm with $\|\cdot\|_1$. The last statement is the standard equivalence of all norms on a finite-dimensional $\mathbb{K}$-vector space. $\square$</p>
+<p><strong>Corollary.</strong> Every finite-dimensional unital $\mathbb{K}$-algebra — in particular $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{D}$, $\mathbb{D}'$, every matrix algebra $M_n(\mathbb{K})$ and every Clifford algebra $\mathrm{Cl}_{p,q}$ — is a Banach algebra in its unique vector-space topology, and every $\mathbb{K}$-linear map between finite-dimensional algebras is continuous.</p>
+<p>The uniqueness of the topology means that for finite-dimensional algebras the topological notions of convergence, continuity and differentiability do not depend on the norm chosen. This is what permits the hypercomplex-analysis entries to speak of the Euclidean topology on $\mathbb{H}$ or $\mathbb{B}$ without further qualification.</p>
+<h2 id="the-unit-group-and-the-exponential">The Unit Group and the Exponential</h2>
+<p><strong>Theorem.</strong> Let $A$ be a unital Banach algebra. Then $A^\times$ is an open subset of $A$, inversion is continuous, and $A^\times$ is a topological group under multiplication. Moreover $A^\times$ is a <strong>Banach Lie group</strong>, and its Lie algebra is $A$ itself with the commutator bracket</p>
+<p>$$
+[x,y] = xy - yx.
+$$</p>
+<p><em>Proof.</em> The first two statements are the proposition above specialised to a complete normed algebra. For the Lie structure, the exponential below gives local coordinates near $1$, and the Lie algebra of the group of units is the tangent space at $1$, identified with $A$; the bracket is the commutator because the group law is multiplication. $\square$</p>
+<p><strong>Definition.</strong> For $x \in A$, the <strong>exponential</strong> is</p>
+<p>$$
+\exp(x) = \sum_{n \geq 0} \frac{x^n}{n!}.
+$$</p>
+<p><strong>Theorem.</strong> Let $A$ be a unital Banach algebra over $\mathbb{K}$. Then the series defining $\exp(x)$ converges absolutely for every $x$, with $\|\exp(x)\| \leq e^{\|x\|}$; the map $\exp : A \to A^\times$ is continuous; and</p>
+<p>$$
+\exp(x + y) = \exp(x)\exp(y) \quad \text{whenever } xy = yx.
+$$</p>
+<p>The derivative of $\exp$ at $0$ is the identity, so $\exp$ maps a neighbourhood of $0$ diffeomorphically onto a neighbourhood of $1$ in $A^\times$.</p>
+<p><em>Proof.</em> Absolute convergence follows from $\sum \|x\|^n/n! = e^{\|x\|} < \infty$ and completeness. The functional equation is the binomial theorem, valid because $x$ and $y$ commute. For the last statement, expand</p>
+<p>$$
+\exp(h) = 1 + h + O(\|h\|^2),
+$$</p>
+<p>so the Fréchet derivative of $\exp$ at $0$ is $\mathrm{id}_A$; the inverse function theorem in Banach spaces gives a local diffeomorphism, and the image lies in $A^\times$ because $\exp(x)\exp(-x) = 1$. $\square$</p>
+<p><strong>Corollary (the exponential and inner automorphisms).</strong> For $a, x \in A$,</p>
+<p>$$
+\exp(\mathrm{ad}_a)(x) = \exp(a)\,x\,\exp(-a),
+$$</p>
+<p>where $\mathrm{ad}_a(x) = [a,x]$. The inner automorphisms of $A$ therefore arise from exponentials of inner derivations, and the correspondence between derivations and automorphisms of <em>Automorphisms and Derivations of Algebras</em> is exact in the Banach setting.</p>
+<p><strong>Example (units of the number systems).</strong> The group of units of a finite-dimensional algebra is an open subset, as above. For the number systems:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>$A^\times$</th>
+<th>Components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}\setminus\{0\}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{C}\setminus\{0\}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{H}\setminus\{0\} \cong \mathbb{R}_{>0} \times SU(2)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}^\times \cong GL_2(\mathbb{C})$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$a^2 \neq b^2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>$a \neq 0$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The unit group of $\mathbb{B}$ is $GL_2(\mathbb{C})$ under the algebra isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, which is connected; that of $\mathbb{H}$ retracts onto the unit sphere $S^3 = SU(2)$, which is connected and simply connected.</p>
+<h2 id="the-gelfandmazur-theorem">The Gelfand–Mazur Theorem</h2>
+<p>The norm constrains the division algebras that can exist over $\mathbb{C}$.</p>
+<p><strong>Theorem (Gelfand–Mazur).</strong> Let $A$ be a unital Banach algebra over $\mathbb{C}$ in which every nonzero element is invertible. Then $A$ is isometrically isomorphic to $\mathbb{C}$.</p>
+<p><em>Proof (sketch).</em> For $x \in A$ the spectrum $\sigma(x) = \{\lambda \in \mathbb{C} : x - \lambda 1 \notin A^\times\}$ is nonempty, compact and contained in the closed disc of radius $\|x\|$; nonemptiness is the deepest step and uses the analyticity of the resolvent $\lambda \mapsto (x - \lambda 1)^{-1}$ together with Liouville's theorem. If every nonzero element of $A$ is invertible then $\sigma(x)$ consists of a single point $\lambda(x)$ for each $x$, and $\lambda : A \to \mathbb{C}$ is a unital algebra homomorphism; it is an isometry by the spectral radius formula, and it is injective because $\lambda(x) = 0$ gives $x = 0$. $\square$</p>
+<p><strong>Corollary.</strong> There is no normed division algebra over $\mathbb{C}$ other than $\mathbb{C}$ itself, and every complex Banach algebra that is a division algebra is one-dimensional.</p>
+<p><strong>Corollary (Hurwitz and Frobenius in the normed setting).</strong> The finite-dimensional normed division algebras with multiplicative norm over $\mathbb{R}$ are exactly $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and the octonions $\mathbb{O}$ (Hurwitz); the associative ones among them are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ (Frobenius). The octonions are non-associative, so they fall outside the associative range of this category; the three division algebras of the Frobenius list are treated in <em>Division Algebras</em>.</p>
+<p>The Gelfand–Mazur theorem is the reason the hypercomplex analysis over $\mathbb{C}$ has no nontrivial finite-dimensional theory of division-algebra type: any complex Banach algebra whose elements are all divisible is $\mathbb{C}$. The interesting hypercomplex systems are either over $\mathbb{R}$ or have zero divisors, and the following section makes the distinction precise.</p>
+<h2 id="characters-the-gelfand-transform-and-duality">Characters, the Gelfand Transform and Duality</h2>
+<p>Commutative Banach algebras over $\mathbb{C}$ are governed by their one-dimensional representations, and the theory of them is the analytical counterpart of the reconstruction of an algebra from its quotient fields.</p>
+<p><strong>Definition.</strong> Let $A$ be a commutative unital Banach algebra over $\mathbb{C}$. A <strong>character</strong> of $A$ is a nonzero algebra homomorphism $\chi : A \to \mathbb{C}$. The <strong>maximal ideal space</strong> (also called the <strong>character space</strong> or <strong>Gelfand spectrum</strong>) of $A$ is</p>
+<p>$$
+\operatorname{Max}(A) = \{\chi : \chi \text{ a character of } A\},
+$$</p>
+<p>topologised as a subset of the unit ball of the dual space $A'$ in the weak-$*$ topology. For a commutative ring the characters correspond to the maximal ideals, and for a Banach algebra the correspondence is a bijection.</p>
+<p><strong>Theorem (characters and maximal ideals, standard).</strong> Let $A$ be a commutative unital $\mathbb{C}$-Banach algebra. Every character is continuous of norm one, the map $\chi \mapsto \ker\chi$ is a bijection from $\operatorname{Max}(A)$ onto the set of maximal ideals of $A$, and $\operatorname{Max}(A)$ is a nonempty compact Hausdorff space in the weak-$*$ topology.</p>
+<p><em>Proof (sketch).</em> The kernel of a character is a proper ideal, and if $I \supseteq \ker\chi$ then $A/I$ is a quotient of $\mathbb{C}$, hence $\mathbb{C}$; so $\ker\chi$ is maximal. Conversely, if $M$ is maximal then $A/M$ is a unital complex Banach algebra whose only ideals are trivial, hence a division algebra, and Gelfand–Mazur gives $A/M \cong \mathbb{C}$; the quotient map is therefore a character. A maximal ideal of a unital Banach algebra is closed, because its closure is again a proper ideal — the open unit ball about $1$ consists of units, so no sequence from $M$ can converge to $1$ — hence $\ker\chi$ is closed and $\chi$, whose kernel has codimension one, is continuous. Compactness of $\operatorname{Max}(A)$ in the weak-$*$ topology follows from the Banach–Alaoglu theorem together with the closedness of the character conditions, and nonemptiness from the existence of maximal ideals. $\square$</p>
+<p><strong>Theorem (Gelfand transform).</strong> Let $A$ be a commutative unital $\mathbb{C}$-Banach algebra. The <strong>Gelfand transform</strong></p>
+<p>$$
+a \longmapsto \hat a, \qquad \hat a(\chi) = \chi(a),
+$$</p>
+<p>is a continuous unital algebra homomorphism $A \to C(\operatorname{Max}(A))$ with $\|\hat a\|_\infty \leq \|a\|$ and</p>
+<p>$$
+\hat a\bigl(\operatorname{Max}(A)\bigr) = \sigma(a), \qquad \|\hat a\|_\infty = r(a) = \lim_{n\to\infty}\|a^n\|^{1/n},
+$$</p>
+<p>the <strong>spectral radius formula</strong>. The kernel of the Gelfand transform is the intersection of the maximal ideals, the <strong>Jacobson radical</strong> of $A$, so the transform is injective exactly when $A$ is semisimple.</p>
+<p><em>Proof (sketch).</em> Each $\hat a$ is continuous by definition of the weak-$*$ topology on $\operatorname{Max}(A)$, and multiplicativity and unitality are immediate from the definitions. The identification of the range of $\hat a$ with $\sigma(a)$ is the statement that $a - \lambda 1$ is non-invertible exactly when it lies in some maximal ideal, that is, when some character annihilates it. The spectral radius formula is the standard theorem on the convergence of the power series for the resolvent on the complement of $\sigma(a)$. $\square$</p>
+<p><strong>Example (the Fourier transform).</strong> For the convolution algebra $L^1(\mathbb{R})$ the characters are</p>
+<p>$$
+\chi_\xi(f) = \int_\mathbb{R}f(x)\,e^{-i\xi x}\,dx, \qquad \xi \in \mathbb{R},
+$$</p>
+<p>so $\operatorname{Max}\bigl(L^1(\mathbb{R})\bigr) = \mathbb{R}$ and the Gelfand transform is the Fourier transform, with $\|\hat f\|_\infty = r(f) \leq \|f\|_1$ for the spectral radius formula. For a finite abelian group $G$ the group algebra $\mathbb{C}[G]$ is semisimple with $\operatorname{Max}(\mathbb{C}[G])$ the character group $\hat G$, and the Gelfand transform is the discrete Fourier transform, $\mathbb{C}[G] \cong \prod_{\chi \in \hat G}\mathbb{C}$; the same computation over a general base ring is the content of <em>Group Algebras</em>.</p>
+<p><strong>Definition.</strong> A <strong>$\mathrm{C}^*$-algebra</strong> is a complex Banach algebra $A$ with an involution $a \mapsto a^*$ satisfying</p>
+<p>$$
+(ab)^* = b^*a^*, \qquad (a^*)^* = a, \qquad \|a^*a\| = \|a\|^2
+$$</p>
+<p>for all $a, b \in A$.</p>
+<p><strong>Theorem (Gelfand duality; commutative Gelfand–Naimark).</strong> Let $A$ be a commutative unital $\mathrm{C}^*$-algebra. Then the Gelfand transform is an isometric $*$-isomorphism $A \to C(\operatorname{Max}(A))$, so $A$ is recovered from the compact Hausdorff space $\operatorname{Max}(A)$; the assignment $A \mapsto \operatorname{Max}(A)$ is a contravariant equivalence between commutative unital $\mathrm{C}^*$-algebras with unital $*$-homomorphisms and compact Hausdorff spaces with continuous maps.</p>
+<p><em>Proof (sketch).</em> For a character of a $\mathrm{C}^*$-algebra one has $\chi(a^*) = \overline{\chi(a)}$, because $a = u + iv$ with $u,v$ self-adjoint and $\chi(u)$ is real; hence the Gelfand transform is a $*$-homomorphism. The $\mathrm{C}^*$-identity gives</p>
+<p>$$
+\|\hat a\|_\infty^2 = \|\widehat{a^*a}\|_\infty = r(a^*a) = \|a^*a\| = \|a\|^2,
+$$</p>
+<p>using the spectral radius formula and the fact that $a^*a$ is self-adjoint, so the transform is isometric; its image is a closed $*$-subalgebra of $C(\operatorname{Max}(A))$ separating points and containing the constants, hence all of $C(\operatorname{Max}(A))$ by the Stone–Weierstrass theorem. The equivalence statement is the functoriality of the constructions, a unital $*$-homomorphism $A \to B$ inducing a continuous map $\operatorname{Max}(B) \to \operatorname{Max}(A)$ by composition, and the inverse functor sending a compact space $X$ to $C(X)$. $\square$</p>
+<p><strong>Corollary (the continuous functional calculus).</strong> Let $a$ be a normal element of a unital $\mathrm{C}^*$-algebra $A$, so that $a^*a = aa^*$. Then there is a unique isometric $*$-isomorphism</p>
+<p>$$
+C(\sigma(a)) \longrightarrow C^*(a,1), \qquad f \longmapsto f(a),
+$$</p>
+<p>onto the $\mathrm{C}^*$-subalgebra generated by $a$ and $1$, and $f(g(a)) = (f \circ g)(a)$.</p>
+<p><em>Proof.</em> The subalgebra $C^*(a,1)$ is commutative, since $a$ and $a^*$ commute, so Gelfand duality identifies it with $C(\operatorname{Max}(C^*(a,1)))$; the map $a \mapsto \hat a$ is a homeomorphism of $\operatorname{Max}(C^*(a,1))$ onto $\sigma(a)$, and the inverse of the Gelfand transform is the required calculus. $\square$</p>
+<p>The corollary supplies square roots of positive elements, moduli and the polar decomposition, and it is the technical heart of the spectral theorem. The non-commutative theory — the realisation of an abstract $\mathrm{C}^*$-algebra as operators on a Hilbert space, the Gelfand–Naimark–Segal construction, von Neumann algebras and the modular theory — is developed, which continues the present section with the involution present.</p>
+<h2 id="the-norm-and-divisibility">The Norm and Divisibility</h2>
+<p>A norm and a norm form are different objects, and the difference governs what the analysis can detect.</p>
+<p><strong>Definition.</strong> Let $A$ be a $\mathbb{K}$-algebra. A <strong>norm</strong> on $A$ is a subadditive, positive-definite, absolutely homogeneous function $\|\cdot\| : A \to \mathbb{R}_{\geq 0}$; it vanishes only at $0$. A <strong>norm form</strong> on $A$ is a quadratic form $N : A \to \mathbb{K}$, possibly indefinite and possibly vanishing on nonzero elements.</p>
+<p><strong>Proposition.</strong> Let $A$ be a unital normed algebra. Then:</p>
+<ol>
+<li>$\|x^{-1}\| \geq \|x\|^{-1}$ for every unit $x$;</li>
+<li>if $\|1 - x\| < 1$ then $x$ is a unit, and $\|x^{-1}\| \leq (1 - \|1-x\|)^{-1}$;</li>
+<li>if the norm is multiplicative, then $A$ has no zero divisors and $\|x^{-1}\| = \|x\|^{-1}$ for every unit $x$;</li>
+<li>no norm can vanish on a nonzero element, so a norm never detects a zero divisor.</li>
+</ol>
+<p><em>Proof.</em> Statement 1 is $\|1\| \leq \|x\|\|x^{-1}\|$ with $\|1\| = 1$. Statement 2 is the Neumann series. Statement 3: multiplicativity gives $\|x\|\|y\| = \|xy\| = 0$ if $xy = 0$, and $\|x\|\|x^{-1}\| = \|1\| = 1$. Statement 4 is the positive definiteness of a norm. $\square$</p>
+<p><strong>Example (the quaternions).</strong> For $\mathbb{H}$ the Euclidean norm $\|q\| = N(q)^{1/2}$ is multiplicative, because the norm form $N(q) = \sum_\mu q_\mu^2$ is; so $\mathbb{H}$ is a normed division algebra, and $\|q^{-1}\| = \|q\|^{-1}$.</p>
+<p><strong>Example (the biquaternions).</strong> For $\mathbb{B}$ the quadratic form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is complex-valued and vanishes on the nonzero zero divisors, so it is a norm form and not a norm. The Euclidean norm</p>
+<p>$$
+\|\tilde{Q}\|_E = \Bigl(\sum_{\mu} |Q_\mu|^2\Bigr)^{1/2} = \Bigl(\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)\Bigr)^{1/2}
+$$</p>
+<p>is a genuine norm, positive definite and vanishing only at $\tilde{Q} = 0$; it is not multiplicative, and it carries no information about divisibility: an element can be a zero divisor while having large Euclidean norm. This is the reason $\mathbb{B}$ is a Banach algebra but not a normed division algebra, and it is why the analysis over $\mathbb{B}$ must work with the norm form and the quadratic structure rather than with a multiplicative absolute value.</p>
+<p><strong>Example (the split complex and dual numbers).</strong> For $\mathbb{D}$ the form $N(a+bj) = a^2 - b^2$ is indefinite, so it is not a norm; for $\mathbb{D}'$ the form $N(a + b\varepsilon) = a^2$ vanishes on the maximal ideal $(\varepsilon)$. In both cases the Euclidean norm of the underlying $\mathbb{R}^2$ is a genuine norm, submultiplicative after a rescaling, but not multiplicative; the zero divisors are detected by the vanishing of the norm form, not by the norm.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>topological algebra</strong> is a $\mathbb{K}$-algebra whose addition, scalar multiplication and product are continuous, and a <strong>normed algebra</strong> is one whose norm is submultiplicative, which makes the product jointly continuous. A <strong>Banach algebra</strong> is a complete normed algebra; the completion of a normed algebra is a Banach algebra. Every finite-dimensional $\mathbb{K}$-algebra is a Banach algebra in a unique topology, all norms on it being equivalent, so the number systems, the matrix algebras and the Clifford algebras are all Banach algebras.</p>
+<p>In a unital normed algebra the <strong>unit group</strong> $A^\times$ is open and inversion is continuous, by the Neumann series; in a unital Banach algebra $A^\times$ is a Banach Lie group with Lie algebra $A$ under the commutator bracket, and the <strong>exponential</strong> $\exp(x) = \sum x^n/n!$ converges everywhere, satisfies $\exp(x+y) = \exp(x)\exp(y)$ for commuting $x,y$, and is a local diffeomorphism at $0$; inner derivations exponentiate to inner automorphisms, as in <em>Automorphisms and Derivations of Algebras</em>. The <strong>Gelfand–Mazur theorem</strong> states that a unital complex Banach algebra in which every nonzero element is invertible is $\mathbb{C}$; with Hurwitz and Frobenius this pins the normed real division algebras to $\mathbb{R}, \mathbb{C}, \mathbb{H}$ (associative) and to $\mathbb{O}$ as well without associativity.</p>
+<p>A <strong>norm</strong> is positive definite and never vanishes on a nonzero element, whereas a <strong>norm form</strong> is a quadratic form that may vanish on the zero divisors; the norm form $N(\tilde{Q})$ of $\mathbb{B}$, being complex-valued and vanishing on the null set, is not a norm, and the Euclidean norm of $\mathbb{B}$ detects only the zero element. Divisibility is read from the norm form, not from the norm, and this distinction is what the hypercomplex analysis has to respect.</p>
+<p>A <strong>character</strong> of a commutative unital complex Banach algebra is a nonzero homomorphism into $\mathbb{C}$, and the characters, equivalently the maximal ideals, form the compact Hausdorff <strong>maximal ideal space</strong> $\operatorname{Max}(A)$. The <strong>Gelfand transform</strong> $\hat a(\chi) = \chi(a)$ is a contractive unital homomorphism $A \to C(\operatorname{Max}(A))$ whose range on $a$ is $\sigma(a)$, with $\|\hat a\|_\infty = r(a) = \lim\|a^n\|^{1/n}$, and whose kernel is the Jacobson radical; it is the Fourier transform when $A = L^1(\mathbb{R})$ and the discrete Fourier transform when $A = \mathbb{C}[G]$. For a commutative unital <strong>$\mathrm{C}^*$-algebra</strong> the Gelfand transform is an isometric $*$-isomorphism onto $C(\operatorname{Max}(A))$, which is <strong>Gelfand duality</strong>, a contravariant equivalence with compact Hausdorff spaces; the <strong>continuous functional calculus</strong> for a normal element $a$ is the same theorem applied to the commutative $\mathrm{C}^*$-algebra $C^*(a,1)$, and identifies it with $C(\sigma(a))$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{K}$</td>
+<td>$\mathbb{R}$ or $\mathbb{C}$, the complete valued ground field here</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>Topological / normed / Banach algebra over $\mathbb{K}$</td>
+</tr>
+<tr>
+<td>$\|\cdot\|$</td>
+<td>Submultiplicative norm; $\|xy\| \leq \|x\|\|y\|$</td>
+</tr>
+<tr>
+<td>$\|\cdot\|_\infty$</td>
+<td>Supremum norm on $C(X,\mathbb{K})$</td>
+</tr>
+<tr>
+<td>$A^\times$</td>
+<td>Group of units, open in a normed algebra</td>
+</tr>
+<tr>
+<td>$(1-x)^{-1} = \sum_{n} x^n$</td>
+<td>Neumann series, valid for $\|x\| < 1$</td>
+</tr>
+<tr>
+<td>$\exp(x) = \sum_n x^n/n!$</td>
+<td>Exponential map, defined on a Banach algebra</td>
+</tr>
+<tr>
+<td>$[x,y] = xy - yx$</td>
+<td>Commutator, the bracket of $A$ as Lie algebra of $A^\times$</td>
+</tr>
+<tr>
+<td>$\sigma(x)$</td>
+<td>Spectrum of $x$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>Norm form; may be indefinite and may vanish</td>
+</tr>
+<tr>
+<td>$\|\tilde{Q}\|_E$</td>
+<td>Euclidean norm of a biquaternion, $(\sum_\mu |Q_\mu|^2)^{1/2}$</td>
+</tr>
+<tr>
+<td>$C(X,\mathbb{K})$</td>
+<td>Continuous functions on compact $X$, a Banach algebra</td>
+</tr>
+<tr>
+<td>$M_n(\mathbb{K})$</td>
+<td>Matrix algebra with operator norm</td>
+</tr>
+<tr>
+<td>$SU(2)$</td>
+<td>Unit quaternions; $\mathbb{H}^\times \cong \mathbb{R}_{>0} \times SU(2)$</td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>Octonions, the non-associative normed real division algebra</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>Character of a commutative unital complex Banach algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{Max}(A)$</td>
+<td>Maximal ideal space (character space) of $A$</td>
+</tr>
+<tr>
+<td>$\hat a(\chi) = \chi(a)$</td>
+<td>Gelfand transform of $a$</td>
+</tr>
+<tr>
+<td>$r(a) = \lim_n\|a^n\|^{1/n}$</td>
+<td>Spectral radius, $= \|\hat a\|_\infty$</td>
+</tr>
+<tr>
+<td>$C^*(a,1)$</td>
+<td>$\mathrm{C}^*$-subalgebra generated by a normal element $a$ and $1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw–Hill, 2nd ed. 1991), for normed algebras, the Neumann series and the spectrum.</li>
+<li>I. M. Gelfand, D. A. Raikov and G. E. Shilov, <em>Commutative Normed Rings</em> (Chelsea, 1964), for characters, the Gelfand transform and Gelfand duality.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the maximal ideal space, the spectral radius formula, the functional calculus and the Gelfand–Mazur theorem.</li>
+<li>Garth Warner, <em>Topological Fields</em> (North-Holland, 1989), for topological algebras over valued fields.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for Banach algebras, the exponential and spectral theory.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for finite-dimensional algebras and their unique topology.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for composition algebras and the Hurwitz theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

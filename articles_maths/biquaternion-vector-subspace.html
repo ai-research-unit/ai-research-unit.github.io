@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Vector Subspace — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-vector-subspace"><strong>Biquaternion Vector Subspace</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Of the six distinguished subspaces of the biquaternion algebra $\mathbb{B}$, the <strong>vector subspace</strong> $\mathrm{Vect}(\mathbb{B})$ is the largest: the only one of dimension six. It is the anti-fixed space of quaternion conjugation, the kernel of the scalar-part functional, the derived subspace spanned by the commutators, and the Lie algebra of the unit-norm group; these four descriptions are proved below to coincide. It is not a subalgebra, its elements have central squares, and the zero divisors it contains are exactly the null elements with respect to the norm form.</p>
+<p>As in the companion articles, everything here is algebraic and nothing is physical: the elements are written $\tilde{Q}, \tilde{R}$, their coefficients $Q_0, \dots, Q_3$ with $Q_\mu = q_\mu + i q'_\mu$, and no further coordinates are introduced. The other five subspaces are treated in <em>Biquaternion Centre Subspace</em>, <em>Biquaternion Quaternion Subspace</em>, <em>Biquaternion Anti-Quaternion Subspace</em>, <em>Biquaternion Hermitian Subspace</em> and <em>Biquaternion Anti-Hermitian Subspace</em>.</p>
+<h2 id="definition-and-basis">Definition and Basis</h2>
+<h3 id="the-defining-involution">The Defining Involution</h3>
+<p><strong>Definition.</strong> The <strong>vector subspace</strong> is the anti-fixed space of quaternion conjugation,</p>
+<p>$$
+\mathrm{Vect}(\mathbb{B}) = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = -\tilde{Q} \right\} ,
+$$</p>
+<p>with $\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.</p>
+<p>Together with the centre subspace it gives the <strong>scalar–vector decomposition</strong> $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, the eigenspace decomposition of $\bar{\cdot}$ for the eigenvalues $+1$ and $-1$.</p>
+<h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
+<p>Comparing $\bar{\tilde{Q}} = -\tilde{Q}$ coefficient by coefficient, the three vector coefficients impose $Q_k = -(-Q_k)$ for $k = 1, 2, 3$, which is no condition at all, while the scalar coefficient imposes $Q_0 = -Q_0$, that is $Q_0 = 0$:</p>
+<p>$$
+\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3 , \qquad Q_1, Q_2, Q_3 \in \mathbb{C} .
+$$</p>
+<p>The vector subspace is thus the set of elements of <strong>vanishing scalar part</strong>, the elements the corpus calls <strong>pure</strong> in the theory of the zero divisors.</p>
+<h3 id="basis-and-dimension">Basis and Dimension</h3>
+<p><strong>Proposition.</strong> $\mathrm{Vect}(\mathbb{B})$ is a real vector space of dimension $6$, with basis</p>
+<p>$$
+e_1, \ e_2, \ e_3, \ ie_1, \ ie_2, \ ie_3 ,
+$$</p>
+<p>and it splits as the direct sum of the <strong>real vectors</strong> and the <strong>imaginary vectors</strong>,</p>
+<p>$$
+\mathrm{Vect}(\mathbb{B}) = \operatorname{span}\{e_1, e_2, e_3\} \oplus \operatorname{span}\{ie_1, ie_2, ie_3\} ,
+$$</p>
+<p>two three-dimensional real subspaces.</p>
+<p><strong>Proof.</strong> The three complex coefficients $Q_k$ are six real parameters; the six displayed elements are independent over $\mathbb{R}$ and span the set. $\square$</p>
+<p>The two summands are precisely two of the four coordinate blocks of the algebra: $\operatorname{span}\{e_1, e_2, e_3\}$ is also the intersection of the vector subspace with the quaternion subspace and with the anti-Hermitian subspace, and $\operatorname{span}\{ie_1, ie_2, ie_3\}$ is also its intersection with the anti-quaternion subspace and with the Hermitian subspace.</p>
+<h2 id="the-four-descriptions-coincide">The Four Descriptions Coincide</h2>
+<h3 id="it-is-the-kernel-of-the-scalar-part">It Is the Kernel of the Scalar Part</h3>
+<p><strong>Proposition.</strong> $\mathrm{Vect}(\mathbb{B}) = \ker \operatorname{Sc}$, where $\operatorname{Sc}(\tilde{Q}) = Q_0 = \tfrac{1}{2}(\tilde{Q} + \bar{\tilde{Q}})$.</p>
+<p><strong>Proof.</strong> Immediate from the coordinate condition $Q_0 = 0$, and the second expression is the projection onto the fixed space of $\bar{\cdot}$ along the anti-fixed space. $\square$</p>
+<h3 id="it-is-the-derived-subspace">It Is the Derived Subspace</h3>
+<p><strong>Theorem.</strong> $\mathrm{Vect}(\mathbb{B}) = [\mathbb{B}, \mathbb{B}]$, the complex span of the commutators $\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q}$.</p>
+<p><strong>Proof.</strong> For the basis elements, $[e_j, e_k] = 2 e_{j \times k}$ when $j \neq k$ in cyclic order and $[e_j, e_k] = 0$ when $j = k$, and the products with $i$ are obtained by complex linearity; every bracket is therefore traceless, so $[\mathbb{B}, \mathbb{B}] \subseteq \mathrm{Vect}(\mathbb{B})$. Conversely $e_1 = \tfrac12 [e_2, e_3]$ and its cyclic analogues give the three real vector units as brackets, and $ie_k = i e_k$ is then a complex multiple of a bracket; the six basis elements of the subspace lie in $[\mathbb{B}, \mathbb{B}]$, which therefore contains it. $\square$</p>
+<h3 id="it-is-the-lie-algebra-of-the-unit-norm-group">It Is the Lie Algebra of the Unit-Norm Group</h3>
+<p><strong>Theorem.</strong> Let $\tilde{X} \in \mathbb{B}$ and let $\Phi$ be the matrix realization. Then $\tilde{X} \in \mathrm{Vect}(\mathbb{B})$ if and only if the one-parameter family $t \mapsto \Phi^{-1}\!\left(e^{t\Phi(\tilde{X})}\right)$ lies in the norm-one group $\{\tilde{Q} : N(\tilde{Q}) = 1\}$ for all real $t$.</p>
+<p><strong>Proof.</strong> $\det \Phi(\tilde{Q}) = N(\tilde{Q})$, and $\det e^{M} = e^{\operatorname{Tr}M}$ for every matrix $M$, so the norm form of the exponential is $e^{t\operatorname{Tr}\Phi(\tilde{X})}$; this equals $1$ for all $t$ exactly when $\operatorname{Tr}\Phi(\tilde{X}) = 0$, and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ vanishes exactly on the vector subspace. $\square$</p>
+<p>The proposition identifies $\mathrm{Vect}(\mathbb{B})$ with the Lie algebra of the unit-norm group, which is $\mathfrak{sl}(2, \mathbb{C})$ in the matrix picture; the same statement appears in <em>Biquaternion Exponential and Lie Group Structure</em> from the side of the group.</p>
+<h2 id="algebra-and-module-structure">Algebra and Module Structure</h2>
+<h3 id="it-is-not-a-subalgebra">It Is Not a Subalgebra</h3>
+<p><strong>Proposition.</strong> $\mathrm{Vect}(\mathbb{B})$ is not closed under multiplication.</p>
+<p><strong>Proof.</strong> $e_1^2 = -e_0$ has scalar part $-1$ and therefore does not lie in the subspace. $\square$</p>
+<p>The failure is systematic rather than exceptional: the product of two vector elements has a scalar part given by the dot product of their coefficient vectors, as the next proposition records. What does hold is the following structural statement.</p>
+<p><strong>Proposition.</strong> $\mathrm{Vect}(\mathbb{B})$ is closed under the commutator; it is therefore a Lie subalgebra of $\mathbb{B}$ as a complex Lie algebra, of dimension $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The bracket is traceless by the theorem above, and it is bilinear and alternating; the bracket relations $[e_j, e_k] = 2e_{j \times k}$ and $[e_j, ie_k] = 2i e_{j \times k}$ close on the six basis elements. $\square$</p>
+<h3 id="the-product-of-two-vector-elements">The Product of Two Vector Elements</h3>
+<p><strong>Theorem.</strong> Let $\tilde{Q} = \sum_{k=1}^{3} Q_k e_k$ and $\tilde{R} = \sum_{k=1}^{3} R_k e_k$ be elements of the vector subspace, and write $\mathbf{Q} = (Q_1, Q_2, Q_3)$, $\mathbf{R} = (R_1, R_2, R_3)$ for their coefficient triples. Then</p>
+<p>$$
+(\mathbf{Q}, \mathbf{R}) = \sum_{k=1}^{3} Q_k R_k , \qquad \mathbf{Q} \times \mathbf{R} = \left(Q_2 R_3 - Q_3 R_2, \ Q_3 R_1 - Q_1 R_3, \ Q_1 R_2 - Q_2 R_1\right) ,
+$$</p>
+<p>$$
+\tilde{Q}\tilde{R} = -(\mathbf{Q}, \mathbf{R}) e_0 + \sum_{k=1}^{3} (\mathbf{Q} \times \mathbf{R})_k e_k .
+$$</p>
+<p><strong>Proof.</strong> Expansion of the product with $e_j e_k = -\delta_{jk} e_0 + \varepsilon_{jkl} e_l$ gives the two terms shown. $\square$</p>
+<p>Three consequences are read off at once. First, the product of two vector elements lies in the vector subspace exactly when the dot product $(\mathbf{Q}, \mathbf{R})$ vanishes; otherwise it has a non-zero scalar part. Second, the commutator is twice the cross product, $\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = 2 \sum_k (\mathbf{Q}\times\mathbf{R})_k e_k$, so the Lie structure of the subspace is that of the complex three-space under the cross product. Third, the <strong>square of a vector element is central</strong>:</p>
+<p>$$
+\tilde{Q}^2 = -N(\tilde{Q}) e_0 , \qquad N(\tilde{Q}) = Q_1^2 + Q_2^2 + Q_3^2 ,
+$$</p>
+<p>because the cross product of a triple with itself vanishes. Every element of the vector subspace therefore satisfies the quadratic identity $\tilde{Q}^2 + N(\tilde{Q}) e_0 = 0$, and its powers are the powers of the central element $-N(\tilde{Q})e_0$.</p>
+<h3 id="modules-over-the-other-subspaces">Modules over the Other Subspaces</h3>
+<p><strong>Proposition.</strong> $\mathrm{Vect}(\mathbb{B})$ is not a module over the quaternion subspace: for $h \in \mathbb{H}_{\mathbb{B}}$ and $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ the scalar part of $h\tilde{Q}$ is $-\sum_{k} h_k Q_k$, which does not vanish in general. It is not a module over the anti-quaternion subspace either, for the same reason with $h$ replaced by $ih'$. It is a module over the centre subspace.</p>
+<p><strong>Proof.</strong> The scalar part of $h\tilde{Q}$ is read from the product formula, and it vanishes for all pairs only in the degenerate cases $h = 0$ or $Q = 0$; the centre is contained in the commuting elements and acts by scalar extension. $\square$</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<p><strong>Proposition.</strong> On the vector subspace the norm form is the complex bilinear form in the three coefficients,</p>
+<p>$$
+N(\tilde{Q}) = Q_1^2 + Q_2^2 + Q_3^2 ,
+$$</p>
+<p>complex-valued in general, with real restriction of signature $(3, 3)$ in the basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, since $N(e_k) = 1$ and $N(ie_k) = -1$.</p>
+<p><strong>Proof.</strong> Substituting $Q_0 = 0$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ leaves the three terms; the signs of the real basis vectors are computed from $(ie_k)^2 = i^2 e_k^2 = -(-1) = 1$ for the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. $\square$</p>
+<p>Like the centre subspace and unlike the four others, the vector subspace is a subspace on which the norm form is not real-valued. Its <strong>null elements</strong> are the solutions of $Q_1^2 + Q_2^2 + Q_3^2 = 0$, a complex cone through the origin of real dimension four.</p>
+<h3 id="units-and-zero-divisors">Units and Zero Divisors</h3>
+<p><strong>Theorem.</strong> For $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q}$ is not a zero divisor. The zero divisors are exactly the null elements, $\tilde{Q} \neq 0$ with $N(\tilde{Q}) = 0$.</p>
+<p><strong>Proof.</strong> The general invertibility criterion gives the equivalence of the first two; for the third, if $N(\tilde{Q}) \neq 0$ then $\tilde{Q}$ has the inverse $-\bar{\tilde{Q}}/N(\tilde{Q})$, since $\tilde{Q}^2 = -N(\tilde{Q})e_0$ implies $\bar{\tilde{Q}} = -\tilde{Q}$ and hence $\tilde{Q}(-\bar{\tilde{Q}}/N(\tilde{Q})) = -\tilde{Q}(-\tilde{Q})/N(\tilde{Q}) = \tilde{Q}^2/N(\tilde{Q}) = -e_0$; and if $N(\tilde{Q}) = 0$ then $\tilde{Q}^2 = 0$ with $\tilde{Q} \neq 0$, so $\tilde{Q}$ annihilates itself. $\square$</p>
+<p><strong>Corollary.</strong> Every null vector is nilpotent of index two: $\tilde{Q}^2 = 0$ but $\tilde{Q} \neq 0$. The vector subspace contains no idempotent other than $0$.</p>
+<p><strong>Proof.</strong> The first statement is the square formula with $N(\tilde{Q}) = 0$. For the second, if $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ satisfies $\tilde{Q}^2 = \tilde{Q}$, then $-\tilde{Q} = N(\tilde{Q})e_0$ by the square formula, so $\tilde{Q}$ is both a vector element and a central one; the intersection of the two subspaces is the origin, whence $\tilde{Q} = 0$. $\square$</p>
+<p>The zero divisors of the vector subspace are called the <strong>pure zero divisors</strong> in <em>Biquaternion Zero Divisors</em>, which develops the classification and the two families of the algebra as a whole.</p>
+<h2 id="the-matrix-image">The Matrix Image</h2>
+<p><strong>Proposition.</strong> Under the matrix realization $\Phi$,</p>
+<p>$$
+\Phi\!\left(\mathrm{Vect}(\mathbb{B})\right) = \left\{ M \in M_2(\mathbb{C}) : \operatorname{Tr} M = 0 \right\} = \mathfrak{sl}(2, \mathbb{C}) .
+$$</p>
+<p><strong>Proof.</strong> $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$, so the trace vanishes exactly when the scalar part does. $\square$</p>
+<p>In the coefficients the image reads</p>
+<p>$$
+\Phi(\tilde{Q}) = \begin{pmatrix} -iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & iQ_3 \end{pmatrix} ,
+$$</p>
+<p>the general traceless matrix. The determinant of the image is the norm form, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$, so the null elements are exactly the singular traceless matrices, and the nilpotent ones are the rank-one elements with zero square, in agreement with the nilpotency proved above.</p>
+<h2 id="the-four-involutions-on-it">The Four Involutions on It</h2>
+<p>In the basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ the four involutions act diagonally:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>matrix</th>
+<th>sign pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$-\mathrm{id}$</td>
+<td>all six signs negative</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$\operatorname{diag}(1,1,1,-1,-1,-1)$</td>
+<td>real vectors fixed, imaginary vectors negated</td>
+</tr>
+<tr>
+<td>${}^{\dagger}$</td>
+<td>$\operatorname{diag}(-1,-1,-1,1,1,1)$</td>
+<td>real vectors negated, imaginary vectors fixed</td>
+</tr>
+<tr>
+<td>$\flat$</td>
+<td>$\operatorname{diag}(1,1,1,-1,-1,-1)$</td>
+<td>as ${}^{*}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The subspace is invariant under all four. Quaternion conjugation acts as the negative of the identity, which is the defining property of the subspace; complex conjugation exchanges the two coordinate blocks it contains, so it does not preserve either $\operatorname{span}\{e_k\}$ or $\operatorname{span}\{ie_k\}$ separately — those two are preserved by $\dagger$ and by $\flat$ in the exchanged roles.</p>
+<h2 id="relations-to-the-other-five-subspaces">Relations to the Other Five Subspaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>intersection</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B}) \cap \mathbb{C}_{\mathbb{B}}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B}) \cap \mathbb{H}_{\mathbb{B}}$</td>
+<td>$\operatorname{span}\{e_1, e_2, e_3\}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B}) \cap i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\operatorname{span}\{ie_1, ie_2, ie_3\}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B}) \cap \mathbb{M}_+$</td>
+<td>$\operatorname{span}\{ie_1, ie_2, ie_3\}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B}) \cap \mathbb{M}_-$</td>
+<td>$\operatorname{span}\{e_1, e_2, e_3\}$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The vector subspace is complementary to the centre, $\mathbb{B} = \mathrm{Vect}(\mathbb{B}) \oplus \mathbb{C}_{\mathbb{B}}$, and with each of the other four its sum has dimension $7$, so the pair spans all but one real dimension and no other pair is a decomposition. The four intersections of dimension three are the four coordinate blocks of the algebra away from the scalar lines; the pattern is recorded in <em>Biquaternion Relations Between Subspaces</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-product-of-two-vector-units">The Product of Two Vector Units</h3>
+<p>Take $\tilde{Q} = e_1$ and $\tilde{R} = e_2$. Their coefficient triples are $(1, 0, 0)$ and $(0, 1, 0)$, with $(\mathbf{Q}, \mathbf{R}) = 0$ and $\mathbf{Q}\times\mathbf{R} = (0, 0, 1)$, so</p>
+<p>$$
+e_1 e_2 = e_3 \in \mathrm{Vect}(\mathbb{B}) , \qquad [e_1, e_2] = 2e_3 .
+$$</p>
+<p>Take instead $\tilde{Q} = \tilde{R} = e_1$: the dot product is $1$ and the cross product vanishes, so</p>
+<p>$$
+e_1^2 = -e_0 \notin \mathrm{Vect}(\mathbb{B}) .
+$$</p>
+<p>The two computations are the two faces of the product formula, and together they show that the subspace is closed under neither multiplication nor squaring.</p>
+<h3 id="a-non-null-vector">A Non-Null Vector</h3>
+<p>For $\tilde{Q} = e_1 + e_2$ one has $N(\tilde{Q}) = 2$, so $\tilde{Q}$ is a unit with $\tilde{Q}^2 = -2e_0$ and</p>
+<p>$$
+\tilde{Q}^{-1} = -\frac{\bar{\tilde{Q}}}{2} = \frac{e_1 + e_2}{2} ,
+$$</p>
+<p>which is again a vector element; the inverse of a non-null vector stays in the subspace, as the formula for the inverse of a pure element requires.</p>
+<h3 id="a-null-vector-and-its-matrix">A Null Vector and Its Matrix</h3>
+<p>For $\tilde{Q} = e_1 + ie_2$ one has $N(\tilde{Q}) = 1 + i^2 = 0$, so $\tilde{Q}$ is a zero divisor, and indeed</p>
+<p>$$
+\tilde{Q}^2 = -N(\tilde{Q})e_0 = 0 , \qquad \tilde{Q} \neq 0 ,
+$$</p>
+<p>so $\tilde{Q}$ is its own annihilator. Its matrix image is</p>
+<p>$$
+\Phi(\tilde{Q}) = \begin{pmatrix} 0 & -2i \\ 0 & 0 \end{pmatrix} ,
+$$</p>
+<p>of rank one and square zero, the Jordan block of size two in nilpotent form. The example exhibits the coincidence of three conditions that hold only on the vector subspace among the six: purity of the element, nullity of the norm form, and nilpotency of index two.</p>
+<h3 id="an-imaginary-vector-and-the-cross-product">An Imaginary Vector and the Cross Product</h3>
+<p>For $\tilde{Q} = e_1$ and $\tilde{R} = ie_2$, the product is</p>
+<p>$$
+e_1 \cdot ie_2 = i e_3 \in \mathrm{Vect}(\mathbb{B}) , \qquad [e_1, ie_2] = 2ie_3 ,
+$$</p>
+<p>with vanishing dot product of the triples $(1, 0, 0)$ and $(0, i, 0)$. The bracket relations with a factor $i$ are the complexification of the real ones and are the reason the Lie algebra of the subspace is $\mathfrak{sl}(2, \mathbb{C})$ over $\mathbb{C}$ while its real form $\operatorname{span}\{e_1,e_2,e_3\}$ is $\mathfrak{su}(2)$.</p>
+<h2 id="summary">Summary</h2>
+<p>The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quaternion conjugation, the set of elements of vanishing scalar part, a real vector space of dimension $6$ with basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, splitting into the real and imaginary vectors. It is simultaneously the kernel of the scalar-part functional, the derived subspace $[\mathbb{B}, \mathbb{B}]$, and the Lie algebra of the unit-norm group; its matrix image is $\mathfrak{sl}(2,\mathbb{C})$. It is not a subalgebra and not a module over the quaternion or anti-quaternion subspaces, but it is closed under the commutator, where the bracket is twice the cross product of the coefficient triples. The square of a vector element is central, $\tilde{Q}^2 = -N(\tilde{Q})e_0$, so null elements are nilpotent and units have their inverses in the subspace. The norm form restricts to $Q_1^2+Q_2^2+Q_3^2$, complex-valued, of real signature $(3,3)$; the zero divisors are exactly the null elements. Quaternion conjugation acts as minus the identity, complex conjugation exchanges the two coordinate blocks it contains, and all four involutions preserve the subspace. It is complementary to the centre, and its intersections with the other four subspaces are three-dimensional.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the vector subspace, $\{\tilde{Q} : \bar{\tilde{Q}} = -\tilde{Q}\}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sc}$</td>
+<td>the scalar-part functional, $\operatorname{Sc}(\tilde{Q}) = Q_0$</td>
+</tr>
+<tr>
+<td>$\mathbf{Q} = (Q_1,Q_2,Q_3)$</td>
+<td>the coefficient triple of a vector element</td>
+</tr>
+<tr>
+<td>$(\mathbf{Q},\mathbf{R})$</td>
+<td>the complex bilinear dot product</td>
+</tr>
+<tr>
+<td>$\mathbf{Q}\times\mathbf{R}$</td>
+<td>the complex bilinear cross product</td>
+</tr>
+<tr>
+<td>$\operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>the real vectors</td>
+</tr>
+<tr>
+<td>$\operatorname{span}\{ie_1,ie_2,ie_3\}$</td>
+<td>the imaginary vectors</td>
+</tr>
+<tr>
+<td>$[\mathbb{B},\mathbb{B}]$</td>
+<td>the derived subspace, equal to $\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = Q_1^2+Q_2^2+Q_3^2$</td>
+<td>the norm form on the subspace</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>the matrix image of the subspace</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$</td>
+<td>the four involutions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion Algebra</em> (<code>articles_maths/biquaternion-algebra.md</code>), for the multiplication of $\mathbb{B}$ and the scalar–vector decomposition</li>
+<li><em>Biquaternion Centre Subspace</em> (<code>articles_maths/biquaternion-centre-subspace.md</code>), the fixed companion of the present subspace</li>
+<li><em>Biquaternion Zero Divisors</em> (<code>articles_maths/biquaternion-zero-divisors.md</code>), for the pure and non-pure zero divisors and the two families of the algebra</li>
+<li><em>Biquaternion Relations Between Subspaces</em> (<code>articles_maths/biquaternion-relations-between-subspaces.md</code>), for the intersections, the sums and the coordinate blocks of the six</li>
+<li><em>Biquaternion Involution Lattice</em> (<code>articles_maths/biquaternion-involution-lattice.md</code>), for the four involutions and the two spaces each defines</li>
+<li><em>Biquaternion Exponential and Lie Group Structure</em> (<code>articles_maths/biquaternion-exponential-and-lie-group-structure.md</code>), for the Lie algebra of the group of units and of the norm-one group</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the norm form and the invertibility criterion</li>
+<li><em>The Orthogonal Lie Algebra</em> (<code>articles_maths/the-orthogonal-lie-algebra.md</code>), for the cross-product Lie structure in its general setting</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

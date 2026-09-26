@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poincaré Duality — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="poincare-duality"><strong>Poincaré Duality</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For a closed and connected manifold of dimension $n$ that is orientable, the cohomology groups are determined by the homology groups in the complementary degrees: there are isomorphisms</p>
+<p>$$
+H^k(M;\mathbb{Z}) \cong H_{n-k}(M;\mathbb{Z})
+$$</p>
+<p>for every $k$. This is <strong>Poincaré duality</strong>, and it is the deepest structural theorem about the cohomology of manifolds: it halves the number of computations one has to perform, it makes the cup product a nondegenerate pairing, and it produces an integral quadratic form on the middle-dimensional cohomology whose invariants — rank, signature, parity — are the manifold's most sensitive numerical invariants other than the homotopy type itself.</p>
+<p>The statement belongs to algebraic topology in the strict sense: it requires a distance and no more. The compactness used is the compactness of <em>Topological Spaces</em>, the orientation is a combinatorial condition on the local homology groups, and the proof is the computation of the cohomology of a manifold with the help of a finite open cover by discs. No smooth structure, no measure and no integration enters: the <strong>fundamental class</strong> $[M] \in H_n(M;\mathbb{Z})$ is a homology class, not an integration current, and the isomorphism is the cap product with it. The smooth version, in which the pairing is integration of a wedge of forms over the manifold and the fundamental class is defined by the top-form integral of <em>Differential Forms and Stokes' Theorem</em>, is the subject , written later in this batch; the vector-bundle version, in which the orientation is a Thom class of the tangent bundle, is treated in <em>Fibre Bundles, Connections and Curvature</em>. The <strong>intersection form</strong> that results is a symmetric or alternating bilinear form in the sense of <em>Bilinear Forms</em>, and the classification theory developed in the category <em>Quadratic Forms and Clifford Algebras</em> of this Part applies to it; the signature is the invariant of that classification.</p>
+<p>Throughout, a <strong>manifold</strong> of dimension $n$ means a second countable Hausdorff space locally homeomorphic to $\mathbb{R}^n$; a <strong>closed</strong> manifold is one that is compact and has empty boundary. Coefficients are in a commutative ring $R$ with identity $1 \neq 0$ unless stated, and $\mathbb{Z}$ coefficients are the default for the duality isomorphisms because they are the ones sensitive to orientability. The cup and cap products are those of <em>Cup and Cap Products</em>.</p>
+<h2 id="orientations-and-the-fundamental-class">Orientations and the Fundamental Class</h2>
+<h3 id="local-homology-and-orientability">Local Homology and Orientability</h3>
+<p><strong>Definition.</strong> Let $M$ be an $n$-manifold and $x \in M$. The <strong>local homology</strong> of $M$ at $x$ is $H_n(M, M \setminus \{x\}; \mathbb{Z})$, and excision identifies it with $H_n(U, U \setminus \{x\};\mathbb{Z})$ for any open neighbourhood $U$ of $x$ homeomorphic to $\mathbb{R}^n$. Since $U \setminus \{x\}$ is homotopy equivalent to $S^{n-1}$, the long exact sequence of the pair gives</p>
+<p>$$
+H_n(M, M\setminus\{x\};\mathbb{Z}) \cong \tilde H_{n-1}(S^{n-1};\mathbb{Z}) \cong \mathbb{Z},
+$$</p>
+<p>a copy of $\mathbb{Z}$ canonically attached to $x$ up to sign.</p>
+<p><strong>Definition.</strong> An <strong>orientation</strong> of $M$ at $x$ is a choice of generator $\mu_x$ of $H_n(M, M\setminus\{x\};\mathbb{Z})$. An <strong>orientation</strong> of $M$ is a function $x \mapsto \mu_x$ that is <em>locally consistent</em>: for every $x$ there is an open neighbourhood $U$ homeomorphic to $\mathbb{R}^n$ and a class $\mu_U \in H_n(M, M \setminus \overline{B};\mathbb{Z})$ for a closed ball $B$ inside $U$ about $x$ that restricts to $\mu_y$ for every $y$ in the ball. A manifold is <strong>orientable</strong> if it admits an orientation, and a <strong>connected</strong> orientable manifold admits exactly two, the second being $-x \mapsto -\mu_x$.</p>
+<p><strong>Theorem (the orientation double cover).</strong> Let $M$ be a connected $n$-manifold. Then there is a two-sheeted covering $\pi : \tilde M_\omega \to M$ whose fibre over $x$ is the two-element set of generators of $H_n(M,M\setminus\{x\};\mathbb{Z})$, the total space is connected exactly when $M$ is non-orientable, and an orientation of $M$ is a section of $\pi$.</p>
+<p><em>Proof.</em> Topologise the disjoint union of the two-element sets by transporting a chosen generator along a homeomorphism onto a ball; the local consistency required for a topology is precisely the local consistency in the definition of an orientation, and the resulting map is a covering because each ball neighbourhood trivialises it. $\square$</p>
+<p><strong>Corollary.</strong> A connected manifold is orientable if and only if $\pi_1(M)$ acts trivially on $\mathbb{Z}$ through the orientation character, and the covering $\tilde M_\omega$ has deck group $\mathbb{Z}/2$ generated by the sign reversal. If $M$ is simply connected it is orientable; if $M$ is connected and $H_1(M;\mathbb{Z}/2) = 0$ it is orientable, since the orientation character factors through the abelianisation.</p>
+<p><strong>Example.</strong> The sphere $S^n$, the torus $T^n$, the complex projective space $\mathbb{CP}^n$ and every simply connected manifold are orientable. The real projective space $\mathbb{RP}^n$ is orientable exactly when $n$ is odd; the Möbius band and the Klein bottle are not orientable.</p>
+<h3 id="orientation-and-the-top-homology">Orientation and the Top Homology</h3>
+<p><strong>Theorem.</strong> Let $M$ be a connected $n$-manifold without boundary.</p>
+<ol>
+<li>If $M$ is closed and orientable then $H_n(M;\mathbb{Z}) \cong \mathbb{Z}$, and $H_n(M;\mathbb{Z}) = 0$ otherwise.</li>
+<li>For every $x$, the map $H_n(M;\mathbb{Z}) \to H_n(M, M\setminus\{x\};\mathbb{Z})$ induced by the inclusion of pairs is injective when $M$ is compact, and its image determines the orientation at $x$ from a global class.</li>
+</ol>
+<p><em>Proof.</em> The first statement follows from the computation of $H_n(M;\mathbb{Z})$ by the Mayer–Vietoris sequence over a finite cover by balls, in which the nerve is connected and the top group is generated by a single fundamental class when the local orientations can be chosen consistently; for a closed non-orientable manifold the consistent choice is obstructed by the orientation double cover, and $H_n = 0$. The second is obtained from the same cover: a global class restricts to a local orientation, and the restriction map to the local group is injective. $\square$</p>
+<p><strong>Definition.</strong> Let $M$ be a closed connected orientable $n$-manifold with orientation $\mu$. The <strong>fundamental class</strong> $[M] \in H_n(M;\mathbb{Z})$ is the unique class restricting to the chosen generator $\mu_x$ of $H_n(M, M\setminus\{x\};\mathbb{Z})$ for every $x \in M$. For a non-orientable $M$ the fundamental class exists with coefficients in $\mathbb{Z}/2$ but not in $\mathbb{Z}$; for a compact manifold with boundary one uses the <strong>relative fundamental class</strong> $[M,\partial M] \in H_n(M,\partial M;\mathbb{Z})$.</p>
+<p><strong>Remark.</strong> The fundamental class is not an integration current and is not defined by a measure; it is a homology class characterised by its restrictions to local homology groups, and every property of it below is a statement about the cap product.</p>
+<h2 id="poincare-duality_1">Poincaré Duality</h2>
+<h3 id="the-cap-product-isomorphism">The Cap Product Isomorphism</h3>
+<p><strong>Theorem (Poincaré duality).</strong> Let $M$ be a closed connected orientable $n$-manifold with fundamental class $[M] \in H_n(M;\mathbb{Z})$, and let $G$ be any coefficient module. Then the cap product</p>
+<p>$$
+-\frown [M] : H^k(M;G) \longrightarrow H_{n-k}(M;G)
+$$</p>
+<p>is an isomorphism for every $k$. With coefficients in a ring $R$, and with $[M] \in H_n(M;R)$ the image of the integral fundamental class, the same statement holds.</p>
+<p><em>Proof sketch.</em> The proof is by induction over a finite cover of $M$ by open discs whose intersections are discs or empty, comparing both sides by Mayer–Vietoris. For a single disc $D$, both sides vanish in the range where they can be nonzero except in degrees $0$ and $n$: $H^k(D;G) = 0$ for $k \neq 0$ and $H_{n-k}(D;G) = 0$ for $n-k \neq 0$ when $k \neq n$, and in degrees $0$ and $n$ the cap product with the fundamental class of the disc is an isomorphism. The Mayer–Vietoris sequences for $H^*$ and for $H_*$ and the naturality of the cap product in the diagram then extend the statement to unions, and the induction terminates because $M$ is covered by finitely many such discs. $\square$</p>
+<p><strong>Corollary (duality for compact manifolds with boundary; Lefschetz duality).</strong> If $M$ is a compact orientable $n$-manifold with boundary $\partial M$, then cap product with the relative fundamental class $[M,\partial M] \in H_n(M,\partial M;\mathbb{Z})$ gives isomorphisms</p>
+<p>$$
+H^k(M;\mathbb{Z}) \cong H_{n-k}(M,\partial M;\mathbb{Z}), \qquad H^k(M,\partial M;\mathbb{Z}) \cong H_{n-k}(M;\mathbb{Z}),
+$$</p>
+<p>the second following from the first applied to the double of $M$ and the long exact sequence of the pair.</p>
+<p><strong>Corollary (Poincaré–Lefschetz for non-compact manifolds).</strong> For an orientable $n$-manifold $M$ without boundary, cap product with a fundamental class in locally finite homology gives $H^k_c(M;\mathbb{Z}) \cong H_{n-k}(M;\mathbb{Z})$ between compactly supported cohomology and homology. For a compactly supported cohomology class the statement reduces to the compactly supported case of the theorem; the locally finite form is quoted here for completeness.</p>
+<h3 id="immediate-consequences">Immediate Consequences</h3>
+<p><strong>Corollary (Betti number symmetry).</strong> For a closed orientable $n$-manifold with field coefficients, $\dim_F H^k(M;F) = \dim_F H^{n-k}(M;F)$, hence by the universal coefficient theorem for field coefficients also $\dim_F H_k(M;F) = \dim_F H_{n-k}(M;F)$: the <strong>Poincaré polynomial</strong> $P_M(t) = \sum_k b_k t^k$ satisfies $P_M(t) = t^n P_M(1/t)$.</p>
+<p><strong>Proof.</strong> The universal coefficient theorem over a field identifies $H^k$ with the dual of $H_k$ in each degree of the same dimension. $\square$</p>
+<p><strong>Corollary (Euler characteristic).</strong> A closed orientable manifold of odd dimension has $\chi(M) = 0$.</p>
+<p><em>Proof.</em> The alternating sum of the Betti numbers pairs the term in degree $k$ with that in degree $n-k$, whose signs are opposite when $n$ is odd, so the terms cancel in pairs, with the middle term absent. $\square$</p>
+<p><strong>Corollary (top cohomology and orientation).</strong> For a closed connected $n$-manifold, $H^n(M;\mathbb{Z}) \cong \mathbb{Z}$ if $M$ is orientable, with generator $[M]^*$ satisfying $\langle [M]^*, [M]\rangle = 1$, and $H^n(M;\mathbb{Z}) = 0$ if $M$ is non-orientable while $H^n(M;\mathbb{Z}/2) \cong \mathbb{Z}/2$. In particular orientability is detected by the top cohomology.</p>
+<p><strong>Example.</strong> For $S^n$ the duality is trivial to check: $H^k(S^n) \cong H_{n-k}(S^n) \cong \mathbb{Z}$ for $k \in \{0,n\}$ and zero otherwise. For the torus $T^2$, $H^0 \cong H_2 \cong \mathbb{Z}$, $H^1 \cong H_1 \cong \mathbb{Z}^2$, $H^2 \cong H_0 \cong \mathbb{Z}$; the Poincaré polynomial $1 + 2t + t^2$ is symmetric. For $\mathbb{CP}^2$, $H^k = \mathbb{Z}$ in degrees $0,2,4$, symmetric about $2$. For $\mathbb{RP}^2$ the integral groups are $H^0 \cong \mathbb{Z}$, $H^1 = 0$, $H^2 \cong \mathbb{Z}/2$ in cohomology, against $H_0 \cong \mathbb{Z}$, $H_1 \cong \mathbb{Z}/2$, $H_2 = 0$ in homology, so the pairing $H^1 \times H_1 \to \mathbb{Z}$ is degenerate; with $\mathbb{Z}/2$ coefficients all three groups become $\mathbb{Z}/2$ and the duality holds. The failure without orientability is exactly what the hypothesis prevents, and the fix is the twisted coefficient system in which the local system of orientations replaces the constant sheaf.</p>
+<h2 id="the-intersection-form">The Intersection Form</h2>
+<h3 id="definition-and-nondegeneracy">Definition and Nondegeneracy</h3>
+<p><strong>Definition.</strong> Let $M$ be a closed connected orientable $n$-manifold with fundamental class $[M]$. The <strong>intersection pairing</strong> is</p>
+<p>$$
+I : H^k(M;\mathbb{Z}) \times H^{n-k}(M;\mathbb{Z}) \longrightarrow \mathbb{Z}, \qquad I(\varphi,\psi) = \bigl\langle \varphi \smile \psi, [M]\bigr\rangle,
+$$</p>
+<p>the evaluation of the cup product on the fundamental class; it is $\mathbb{Z}$-bilinear and graded-symmetric, in the sense that $I(\psi,\varphi) = (-1)^{k(n-k)}I(\varphi,\psi)$. When $n = 2m$ is even the restriction to the middle degree is the <strong>intersection form</strong></p>
+<p>$$
+Q_M : H^m(M;\mathbb{Z}) \times H^m(M;\mathbb{Z}) \to \mathbb{Z}, \qquad Q_M(\varphi,\psi) = \bigl\langle \varphi \smile \psi, [M]\bigr\rangle,
+$$</p>
+<p>which is symmetric for $m$ even and alternating for $m$ odd.</p>
+<p><strong>Theorem.</strong> The intersection pairing is nondegenerate: for every nonzero $\varphi \in H^k(M;\mathbb{Z})$ there is $\psi \in H^{n-k}(M;\mathbb{Z})$ with $I(\varphi,\psi) \neq 0$. Equivalently, the map $\varphi \mapsto I(\varphi,-)$ is an isomorphism from $H^k(M;\mathbb{Z})$ modulo torsion to $\operatorname{Hom}(H^{n-k}(M;\mathbb{Z}),\mathbb{Z})$.</p>
+<p><em>Proof.</em> By Poincaré duality the class $\varphi$ corresponds to $\varphi \frown [M] \in H_{n-k}(M;\mathbb{Z})$; nonvanishing of $\varphi$ is equivalent to nonvanishing of this class modulo torsion. By the universal coefficient theorem a nonzero homology class modulo torsion pairs nontrivially with some cohomology class $\psi$ of complementary degree, and the pairing $\langle \varphi\smile\psi,[M]\rangle$ equals the evaluation of $\psi$ on $\varphi\frown[M]$ by the associativity of cap and cup. $\square$</p>
+<p><strong>Corollary (Poincaré duality on the level of the middle form).</strong> The form $Q_M$ over $\mathbb{Q}$ is a nondegenerate symmetric bilinear form on the finite-dimensional $\mathbb{Q}$-vector space $H^m(M;\mathbb{Q})$; hence it has a well-defined <strong>signature</strong> $\sigma(M)$, the number of positive minus the number of negative entries in its diagonalisation, which is a symmetric bilinear form invariant of the manifold in the sense of <em>Bilinear Forms</em>.</p>
+<p><strong>Example.</strong> $S^2$: $H^1 = 0$ and $Q$ on $H^1(S^2)$ is the zero form on a zero space. $T^2$: $H^1(T^2;\mathbb{Z}) \cong \mathbb{Z}^2$ with basis $\alpha, \beta$ of degree one and $Q(\alpha,\alpha) = Q(\beta,\beta) = 0$, $Q(\alpha,\beta) = 1$, so $Q$ is the standard alternating (symplectic) form on $\mathbb{Z}^2$ of determinant one. $\mathbb{CP}^2$: $H^2(\mathbb{CP}^2;\mathbb{Z}) \cong \mathbb{Z}$ generated by $x$, $Q(x,x) = \langle x^2, [\mathbb{CP}^2]\rangle = 1$, so $Q$ is the form $(1)$ of rank one and signature $1$; on $\overline{\mathbb{CP}}^2$, with the reversed orientation, $Q = (-1)$ and the signature is $-1$.</p>
+<p><strong>Example (K3 surface).</strong> A compact complex surface has an indefinite intersection form of rank $b_2$. For the K3 surface the form is even, unimodular, of rank $22$ and signature $-16$, and is isomorphic to $2(-E_8) \oplus 3U$, where $U$ is the hyperbolic plane of rank two and signature $0$ and $E_8$ the positive definite even form of rank eight; the rank count $2\cdot 8 + 3\cdot 2 = 22$ and the signature count $2\cdot(-8) = -16$ confirm the identification. The classification of indefinite even unimodular forms underlying it belongs to the articles of the category <em>Quadratic Forms and Clifford Algebras</em> in this Part, and the surface belongs to the algebraic-geometry articles of this batch.</p>
+<h3 id="the-cohomology-ring-and-the-signature">The Cohomology Ring and the Signature</h3>
+<p><strong>Theorem.</strong> Let $M$ be a closed connected orientable manifold of dimension $n$. Then under the identification $H^k(M;\mathbb{Z}) \cong H_{n-k}(M;\mathbb{Z})$ given by cap product with $[M]$, the cup product corresponds to the <strong>homology intersection product</strong> $\cdot : H_{n-k} \times H_{n-l} \to H_{n-k-l}$ defined by</p>
+<p>$$
+a \cdot b = \Delta^*(a \times b),
+$$</p>
+<p>where $\Delta : M \to M \times M$ is the diagonal and $\Delta^*$ the induced map on homology; the products are related by $[M] \frown (\varphi \smile \psi) = ([M]\frown \varphi)\cdot([M]\frown\psi)$.</p>
+<p><em>Proof.</em> Apply the naturality of the cap product to the diagonal: $\Delta^*(\varphi\times\psi) = \Delta^*(\mathrm{pr}_1^*\varphi \smile \mathrm{pr}_2^*\psi) = \varphi\smile\psi$, and pair with $[M]$, which is $\Delta_*[M]$ in $H_n(M\times M)$. $\square$</p>
+<p><strong>Corollary.</strong> The cohomology ring of a closed orientable manifold determines, and is determined by, the homology with the intersection product, and hence the ring structure is constrained by Poincaré duality. In particular the cohomology ring of $\mathbb{CP}^n$ is $\mathbb{Z}[x]/(x^{n+1})$ from <em>Cup and Cap Products</em>, consistent with $Q(x^j,x^{n-j}) = 1$ for the appropriate evaluation.</p>
+<p><strong>Remark (Lefschetz duality and the signature theorem).</strong> The signature is multiplicative in products and additive in connected sums: $\sigma(M\#N) = \sigma(M)+\sigma(N)$ and $\sigma(M\times N) = \sigma(M)\sigma(N)$ for closed orientable manifolds of dimension divisible by four. These are properties of the algebraic classification of symmetric bilinear forms over $\mathbb{R}$ in the sense of <em>Bilinear Forms</em>, and the deeper theorem relating the signature to the characteristic classes of the tangent bundle — the <strong>Hirzebruch signature theorem</strong> — belongs to the theory of characteristic classes of <em>Fibre Bundles, Connections and Curvature</em> and to <em>Characteristic Classes</em>, earlier in this Part.</p>
+<h2 id="duality-with-coefficients-products-and-applications">Duality with Coefficients, Products and Applications</h2>
+<h3 id="lefschetz-duality-and-manifolds-with-boundary">Lefschetz Duality and Manifolds with Boundary</h3>
+<p><strong>Theorem (Lefschetz duality).</strong> Let $M$ be a compact connected orientable $n$-manifold with boundary $\partial M$, oriented by a relative fundamental class $[M,\partial M]\in H_n(M,\partial M;\mathbb{Z})$. Then cap product with $[M,\partial M]$ gives isomorphisms</p>
+<p>$$
+-\frown[M,\partial M] : H^k(M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M,\partial M;\mathbb{Z}), \qquad
+-\frown[M,\partial M] : H^k(M,\partial M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M;\mathbb{Z}),
+$$</p>
+<p>and, with coefficients in an arbitrary module $G$, the same statements hold. Moreover, if $M$ is connected, non-compact and orientable, with $H^*_c$ denoting cohomology with compact supports — the colimit of the cohomology of the compact subsets — then</p>
+<p>$$
+H^k_c(M;\mathbb{Z})\cong H_{n-k}(M;\mathbb{Z}).
+$$</p>
+<p><em>Proof.</em> For the compact case, double $M$ along its boundary to obtain a closed orientable manifold $N = M\cup_{\partial M}M$, apply Poincaré duality to $N$, and compare with the long exact sequences of the pairs $(N,M)$ and $(N,M')$ for the two copies $M, M'$ using the five lemma; the orientation of $N$ restricts to the given relative orientation of $M$, and the two copies of $\partial M$ in $N$ have opposite orientation, which is the sign that makes the comparison work. For the non-compact case one applies the compactly supported statement to an exhaustion and passes to the colimit. $\square$</p>
+<p><strong>Corollary (the duality of the boundary).</strong> Let $M$ be a compact connected orientable $n$-manifold with boundary. Then the boundary, if connected, is a closed orientable $(n-1)$-manifold carrying Poincaré duality in its own right, with fundamental class the image of $[M,\partial M]$ under the connecting homomorphism, and the pairing $H^k(\partial M;\mathbb{Z})\cong H_{n-1-k}(\partial M;\mathbb{Z})$ holds. Consequently $\chi(\partial M) = 0$ when $n$ is even.</p>
+<p><em>Proof.</em> The long exact sequence of the pair $(M,\partial M)$ has its terms identified by Lefschetz duality with the cohomology of $M$ and of the pair, and the resulting diagram exhibits the duality of $\partial M$ and identifies its fundamental class; the vanishing of the Euler characteristic is the theorem above applied to the odd-dimensional closed manifold $\partial M$. $\square$</p>
+<h3 id="poincare-duals-of-submanifolds-and-intersections">Poincaré Duals of Submanifolds and Intersections</h3>
+<p><strong>Theorem (the Poincaré dual of a submanifold).</strong> Let $M$ be a closed connected orientable $n$-manifold and let $S\subseteq M$ be a closed connected orientable $k$-submanifold, oriented and with inclusion $i : S\to M$. Then there is a class $\eta_S\in H^{n-k}(M;\mathbb{Z})$, unique, the <strong>Poincaré dual</strong> of $S$, such that</p>
+<p>$$
+\eta_S\frown[M] = i_*[S]\in H_k(M;\mathbb{Z}),
+$$</p>
+<p>and it is characterised by the property that its restriction to a small neighbourhood of $S$ is the image of the generator of $H^{n-k}(M,M\setminus S;\mathbb{Z})\cong\mathbb{Z}$ under the excision isomorphism $H^{n-k}(M,M\setminus S)\cong H^{n-k}(M)$.</p>
+<p><strong>Corollary (intersections by cup products).</strong> If $S,T\subseteq M$ are closed oriented submanifolds meeting transversely, of codimension $p$ and $q$, then the Poincaré dual of $S\cap T$ is the cup product:</p>
+<p>$$
+\eta_{S\cap T} = \eta_S\smile\eta_T,
+$$</p>
+<p>so that the cup product computes the intersection numbers, and when $p+q = n$ the oriented count of the intersection points is $\langle\eta_S\smile\eta_T,[M]\rangle$. This is the cohomological form of the intersection product of the previous section and the mechanism by which enumerative statements about submanifolds are turned into computations in the cohomology ring; the Thom class of the normal bundle and the differential-topological transversality theorem are its other formulations, in <em>Fibre Bundles, Connections and Curvature</em> and <em>Differential Topology</em>.</p>
+<p><em>Proof.</em> The Poincaré dual of the graph of the inclusion or, more directly, the class of the normal bundle's Thom class restricted to $M$; the naturality of the cap product under $i$ gives $\eta_S\frown[M] = i_*[S]$, and multiplicativity of the cap product with the diagonal gives $\eta_S\smile\eta_T\frown[M] = \eta_{S\cap T}\frown[M]$ for transverse $S,T$; nondegeneracy of the cap product then identifies the classes. $\square$</p>
+<h3 id="duality-with-coefficients-and-the-torsion">Duality with Coefficients and the Torsion</h3>
+<p><strong>Theorem (Poincaré duality with coefficients, and torsion).</strong> Let $M$ be a closed connected orientable $n$-manifold and $G$ an abelian group. Then $-\frown[M] : H^k(M;G)\to H_{n-k}(M;G)$ is an isomorphism for every $k$, and consequently:</p>
+<ol>
+<li>$\operatorname{Tors}H_k(M;\mathbb{Z})\cong\operatorname{Tors}H^{n-k}(M;\mathbb{Z})\cong\operatorname{Tors}H_{n-k-1}(M;\mathbb{Z})$, the last by the universal coefficient theorem of <em>Cohomology and the Universal Coefficient Theorem</em>;</li>
+<li>the Betti numbers satisfy $b_k = b_{n-k}$ and the torsion of $H_k$ is determined by the torsion of $H_{n-k-1}$, so the integral homology of a closed orientable manifold is symmetric about the middle degree up to this shift;</li>
+<li>$\chi(M) = \sum_k(-1)^kb_k$ vanishes when $n$ is odd, and the Poincaré polynomial satisfies $P_M(t) = t^nP_M(1/t)$.</li>
+</ol>
+<p><em>Proof.</em> The coefficient independence of the duality isomorphism is the naturality of the cap product in the coefficients, since the fundamental class is integral and the cap product is defined over any ring of coefficients. (1) combines the duality with the universal coefficient theorem, whose torsion term is the one of the next lower homology, and the symmetry in (2) is the statement of the isomorphism in each degree. (3) follows from (2): the terms of the alternating sum pair off when $n$ is odd. $\square$</p>
+<p><strong>Example (the first and second homology of a $3$-manifold).</strong> For a closed orientable $3$-manifold $M$ the duality gives $H_2(M)\cong H^2(M)$ and the universal coefficient theorem gives $H^2(M)\cong H_1(M)/\text{torsion}$, so that the second homology is the free part of the first and the torsion of $H_1$ is invisible in $H_2$. The shift $\operatorname{Tors}H_k\cong\operatorname{Tors}H_{n-k-1}$ with $n = 3$ and $k = 2$ gives $\operatorname{Tors}H_2\cong\operatorname{Tors}H_0 = 0$, in agreement. The lens space $L(n;1)$ of <em>Cohomology and the Universal Coefficient Theorem</em> is the standard witness: $H_1\cong\mathbb{Z}/n$ is pure torsion, so $H_2 = 0$, while $H_3\cong\mathbb{Z}$ supplies the free part required of a closed orientable three-manifold; the sphere $S^1\times S^2$ has $H_1\cong\mathbb{Z}$ and $H_2\cong\mathbb{Z}$, the free case.</p>
+<p><strong>Remark (the Lefschetz number and the Euler characteristic).</strong> For a map $f: M\to M$ of a finite CW complex the <strong>Lefschetz number</strong> $L(f) = \sum_k(-1)^k\operatorname{tr}\bigl(f_*: H_k(M;\mathbb{Q})\to H_k(M;\mathbb{Q})\bigr)$ is computed by the fixed points of $f$ when they are nondegenerate, and $L(\mathrm{id}) = \chi(M)$; the identity case is the Euler characteristic computed above, and the fixed-point theorem for a general $f$ is a statement about the degree theory of the graph of $f$. That theorem, and the Brouwer fixed point theorem it generalises, belong; the algebraic input used here is only the duality and the trace.</p>
+<h2 id="summary">Summary</h2>
+<p>An orientation of an $n$-manifold is a locally consistent choice of generator of the local homology $H_n(M,M\setminus\{x\};\mathbb{Z}) \cong \mathbb{Z}$; the two local choices at each point assemble into the orientation double cover, whose connectedness is equivalent to non-orientability, and a connected orientable manifold has exactly two orientations. A closed connected orientable manifold has $H_n(M;\mathbb{Z}) \cong \mathbb{Z}$ with a canonical generator up to sign, the fundamental class $[M]$, characterised by its restrictions to local homology.</p>
+<p>Cap product with the fundamental class is an isomorphism $H^k(M;G) \to H_{n-k}(M;G)$ for every coefficient module and every $k$. Its consequences are the symmetry $b_k = b_{n-k}$ of the Betti numbers and the vanishing of the Euler characteristic in odd dimensions, the identification of the top cohomology with $\mathbb{Z}$ or $0$ according to orientability, and the Lefschetz duality for compact manifolds with boundary, obtained from the closed case by doubling. The evaluation of the cup product on the fundamental class is the intersection pairing, which is nondegenerate by the universal coefficient theorem, and which in the middle degree of an even-dimensional manifold is the intersection form, symmetric or alternating according to the parity of half the dimension; its signature is a bilinear-form invariant. The interplay of the cap product with the diagonal identifies the cup product on cohomology with the intersection product on homology, and the Poincaré dual of a closed oriented submanifold is the class whose cap product with the fundamental class is the submanifold's fundamental class, so that transverse intersections are computed by cup products. Lefschetz duality extends the isomorphism to compact manifolds with boundary, where the boundary inherits the duality in one dimension less, and to the compactly supported cohomology of an open manifold. With arbitrary coefficients the duality holds unchanged, and combined with the universal coefficient theorem it gives $\operatorname{Tors}H_k\cong\operatorname{Tors}H_{n-k-1}$, the symmetry of the Betti numbers and the vanishing of the Euler characteristic in odd dimensions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M$</td>
+<td>A topological manifold of dimension $n$; closed if compact and $\partial M = \varnothing$</td>
+</tr>
+<tr>
+<td>$H_n(M, M\setminus\{x\};\mathbb{Z})$</td>
+<td>Local homology at $x$; isomorphic to $\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mu_x$</td>
+<td>Orientation at $x$; a chosen generator of the local homology</td>
+</tr>
+<tr>
+<td>$\tilde M_\omega$</td>
+<td>Orientation double cover; connected iff $M$ is non-orientable</td>
+</tr>
+<tr>
+<td>$[M] \in H_n(M;\mathbb{Z})$</td>
+<td>Fundamental class of a closed orientable $M$</td>
+</tr>
+<tr>
+<td>$[M,\partial M] \in H_n(M,\partial M;\mathbb{Z})$</td>
+<td>Relative fundamental class of a compact manifold with boundary</td>
+</tr>
+<tr>
+<td>$-\frown [M] : H^k(M;G) \to H_{n-k}(M;G)$</td>
+<td>Poincaré duality isomorphism</td>
+</tr>
+<tr>
+<td>$H^k(M;\mathbb{Z}) \cong H_{n-k}(M,\partial M;\mathbb{Z})$</td>
+<td>Lefschetz duality</td>
+</tr>
+<tr>
+<td>$H^k_c(M;\mathbb{Z}) \cong H_{n-k}(M;\mathbb{Z})$</td>
+<td>Poincaré–Lefschetz duality for non-compact $M$</td>
+</tr>
+<tr>
+<td>$b_k = \dim_F H^k(M;F)$</td>
+<td>Betti numbers; $b_k = b_{n-k}$</td>
+</tr>
+<tr>
+<td>$P_M(t) = \sum_k b_k t^k$</td>
+<td>Poincaré polynomial; $P_M(t) = t^nP_M(1/t)$</td>
+</tr>
+<tr>
+<td>$I(\varphi,\psi) = \langle \varphi\smile\psi,[M]\rangle$</td>
+<td>Intersection pairing</td>
+</tr>
+<tr>
+<td>$Q_M$</td>
+<td>Intersection form on $H^m(M)$ when $n = 2m$</td>
+</tr>
+<tr>
+<td>$\sigma(M)$</td>
+<td>Signature of $Q_M$ over $\mathbb{Q}$</td>
+</tr>
+<tr>
+<td>$a\cdot b = \Delta^*(a\times b)$</td>
+<td>Intersection product on homology; $\Delta$ the diagonal</td>
+</tr>
+<tr>
+<td>$\langle-,-\rangle$</td>
+<td>Evaluation pairing between cohomology and homology</td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^n$, $\mathbb{CP}^n$, $T^n$</td>
+<td>Standard examples; orientability of $\mathbb{RP}^n$ iff $n$ odd</td>
+</tr>
+<tr>
+<td>$M\#N$</td>
+<td>Connected sum; $\sigma(M\#N) = \sigma(M)+\sigma(N)$</td>
+</tr>
+<tr>
+<td>$\eta_S \in H^{n-k}(M;\mathbb{Z})$</td>
+<td>Poincaré dual of a closed oriented $k$-submanifold $S\subseteq M$; $\eta_S\frown[M] = i_*[S]$</td>
+</tr>
+<tr>
+<td>$\eta_{S\cap T} = \eta_S\smile\eta_T$</td>
+<td>Cup product computes transverse intersections</td>
+</tr>
+<tr>
+<td>$H^*_c(M)$</td>
+<td>Cohomology with compact supports; $H^k_c(M)\cong H_{n-k}(M;\mathbb{Z})$</td>
+</tr>
+<tr>
+<td>$\chi(M) = \sum_k(-1)^kb_k$</td>
+<td>Euler characteristic; zero for odd-dimensional closed orientable $M$</td>
+</tr>
+<tr>
+<td>$L(f) = \sum_k(-1)^k\operatorname{tr}(f_*)$</td>
+<td>Lefschetz number; $L(\mathrm{id}) = \chi(M)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the local homology proof of Poincaré duality and Lefschetz duality.</li>
+<li>James R. Munkres, <em>Elements of Algebraic Topology</em> (Addison-Wesley, 1984), for the duality theorems with the covering argument in full.</li>
+<li>Glen E. Bredon, <em>Topology and Geometry</em> (Springer, 1993), for the intersection form, the signature and the applications to manifolds.</li>
+<li>Edwin H. Spanier, <em>Algebraic Topology</em> (McGraw–Hill, 1966), for Poincaré duality with local coefficients and the duality of the cap product.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the de Rham form of the duality and the Thom isomorphism.</li>
+<li>John W. Milnor and James D. Stasheff, <em>Characteristic Classes</em> (Princeton University Press, 1974), for the signature theorem and the Thom class approach to orientation.</li>
+<li>Friedrich Hirzebruch, <em>Topological Methods in Algebraic Geometry</em> (Springer, 1966), for the signature theorem and the multiplicativity of the signature.</li>
+<li>Wolfgang Lück, <em>A Basic Introduction to Surgery Theory</em> (ICTP Lecture Notes, 2002), for the intersection form, the signature and the role of Poincaré duality in the classification of manifolds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

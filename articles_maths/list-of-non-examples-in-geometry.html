@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Non-Examples in Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-non-examples-in-geometry"><strong>List of Non-Examples in Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the objects of the corpus that fail one geometric property, each with the property it breaks and the article that records the failure. Every entry points to the article that introduces the object, and the article introduces nothing and proves nothing.</p>
+<p>The list gathers the objects that look like manifolds, or like standard manifolds, and are not: the Alexander horned sphere, a topological sphere whose embedding is wild; the Whitehead manifold, contractible and not homeomorphic to $\mathbb{R}^3$; the exotic spheres, homeomorphic to $S^7$ and not diffeomorphic to it; the exceptional smooth structures on $\mathbb{R}^4$ and the $E_8$ manifold, which is a topological four-manifold with no smooth structure; the singular curves and the spaces with a singular point that fail the local Euclidean condition; the long line, which is locally Euclidean and not second countable; the non-orientable surfaces, which fail orientability; and the Kodaira–Thurston manifold and the non-spin manifolds, which fail the Kähler and the spin conditions. The objects are grouped by the property they fail: tameness of an embedding, the smooth structure, the manifold condition, the countability axioms, orientability, and the symplectic and spin structures.</p>
+<p>The article records examples and non-examples side by side. The typical row names an object and the property it <em>fails</em>, so that the object can be read as the boundary of the definition it is usually taken to test; where the corpus also states the positive property the object retains, both are named.</p>
+<h2 id="wild-embeddings">Wild Embeddings</h2>
+<p>A tame embedding is one that can be straightened by an ambient homeomorphism; the objects of this group are the embeddings that cannot.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Alexander horned sphere</td>
+<td>homeomorphic to $S^2$ but not tamely embedded in $S^3$: the bounded complementary domain is not simply connected</td>
+<td><em>Wild and Exotic Manifolds</em> (planned)</td>
+</tr>
+<tr>
+<td>a wild knot</td>
+<td>a knot in $S^3$ not isotopic to a polygonal one; it is excluded from the theory</td>
+<td><em>Knot Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The horned sphere is the standard wild embedding of a sphere, and the failure is visible in the complement, which has a non-trivial fundamental group in contrast to the tame case; the wild knot is the corresponding phenomenon in dimension one, and the corpus excludes it from knot theory. Both show that the homeomorphism type of an embedded object does not determine its position, so that tameness is a genuine additional hypothesis.</p>
+<h2 id="exotic-structures">Exotic Structures</h2>
+<p>An exotic structure is a smooth structure on a topological manifold that is not the standard one, so that the topological and the smooth classifications differ.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Whitehead manifold</td>
+<td>a contractible open three-manifold that is not homeomorphic to $\mathbb{R}^3$</td>
+<td><em>Wild and Exotic Manifolds</em> (planned)</td>
+</tr>
+<tr>
+<td>the exotic spheres of Milnor</td>
+<td>the $28$ oriented diffeomorphism classes of smooth structures on the topological seven-sphere: homeomorphic to $S^7$ but not diffeomorphic to it</td>
+<td><em>Cobordism and Surgery Theory</em>, §Homotopy Spheres and Exotic Spheres</td>
+</tr>
+<tr>
+<td>an exotic smooth structure on $\mathbb{R}^4$</td>
+<td>a smooth structure on the topological $\mathbb{R}^4$ not diffeomorphic to the standard one; $\mathbb{R}^4$ is the only Euclidean space with this property</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the $E_8$ manifold</td>
+<td>a closed simply connected topological four-manifold with intersection form $E_8$, which is not smoothable</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a topological manifold with no smooth structure</td>
+<td>a topological manifold carrying no smooth atlas, such as the $E_8$ manifold</td>
+<td><em>Low-Dimensional Topology</em>, §Four-Manifolds and the Intersection Form</td>
+</tr>
+<tr>
+<td>a non-smoothable intersection form</td>
+<td>a form realised by a topological four-manifold but by no smooth one; the obstruction is the Donaldson invariant</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The exotic spheres are detected by the signature of a bounding manifold through the Hirzebruch signature theorem, and the class $\Theta_7 \cong \mathbb{Z}/28$ counts them; the exotic structures on $\mathbb{R}^4$ and the non-smoothability of the $E_8$ manifold show that the same phenomenon occurs in dimension four for the simplest topological manifolds. The Whitehead manifold fails a different property: it is contractible and simply connected at infinity in a weaker sense, so its homotopy type does not determine its homeomorphism type.</p>
+<h2 id="failures-of-the-manifold-condition">Failures of the Manifold Condition</h2>
+<p>An object fails the manifold condition when some point has no neighbourhood homeomorphic to an open subset of $\mathbb{R}^n$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a singular plane curve</td>
+<td>not a manifold at a node or a cusp; the tangent space has dimension larger than the local dimension</td>
+<td><em>Algebraic Curves</em>, §Plane Curves</td>
+</tr>
+<tr>
+<td>the pseudo-arc</td>
+<td>a continuum that is not locally Euclidean at any point, hence not a manifold</td>
+<td><em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the figure-eight curve</td>
+<td>the union of two circles meeting at a point, not a manifold at the point of tangency</td>
+<td><em>Continuum Theory</em>, §Cut Points and the Structure of Arcs</td>
+</tr>
+<tr>
+<td>the quotient of a Lie group by a dense subgroup</td>
+<td>not a manifold: the quotient by the irrational line is not locally Euclidean</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>the orbifold quotient $\mathbb{R}^n/\Gamma$ of a crystallographic group</td>
+<td>not a manifold at the fixed points of the elements of finite order, at which it is singular</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>, §The Classical Counts</td>
+</tr>
+<tr>
+<td>the solenoid</td>
+<td>a hyperbolic attractor that is not a manifold</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+<tr>
+<td>the null cone $\mathcal{N}$ of the biquaternion algebra</td>
+<td>not a manifold at the origin, though $\mathcal{N}\setminus\{0\}$ is a smooth real six-manifold</td>
+<td><em>Biquaternion Topology</em></td>
+</tr>
+<tr>
+<td>the zero-divisor set of the split biquaternions</td>
+<td>not a manifold at the origin</td>
+<td><em>Split-Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>a supermanifold</td>
+<td>a supermanifold that is not a manifold: the odd directions have no topological model</td>
+<td><em>Supergeometry</em></td>
+</tr>
+<tr>
+<td>a Gromov–Hausdorff limit of manifolds</td>
+<td>may be a space that is not a manifold at all</td>
+<td><em>Gromov–Hausdorff Convergence</em></td>
+</tr>
+<tr>
+<td>the Zariski topology on a variety</td>
+<td>not Hausdorff, and so not a manifold; the manifold condition includes the separation axioms</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the preimage of a critical value</td>
+<td>it may fail to be a submanifold altogether, the regular value theorem requiring regularity</td>
+<td><em>Differential Topology</em>, §Critical Points and Regular Values</td>
+</tr>
+</tbody>
+</table></div>
+<p>The singularities of algebraic curves and surfaces are the geometric source of the failure: the tangent space at a singular point is larger than the local dimension, and the resolution of the singularity, the blow-up, is the operation that replaces the point by the projective tangent cone. The singular locus may reduce to a single point, as for the figure-eight curve and the zero-divisor set, or fill a whole subvariety, as for the null cone; the pseudo-arc fails at every point and shows that compactness and connectedness are far from the manifold condition, and the Gromov–Hausdorff limit shows that the limit of a sequence of manifolds need not be a manifold. Two failures are not singularities of a single space: the orbifold quotient is singular along the fixed-point set of the group, and the preimage of a critical value fails to be a submanifold although the map defining it is smooth.</p>
+<h2 id="the-countability-axioms">The Countability Axioms</h2>
+<p>The long line satisfies the local model of a manifold and fails the countability axioms that the definition of a manifold requires.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the long line</td>
+<td>every point has a neighbourhood homeomorphic to an open interval of $\mathbb{R}$, but it is not second countable, so it is not a manifold in the sense of the corpus</td>
+<td><em>Paracompactness and Partitions of Unity</em>, §The Smirnov Metrisation Theorem</td>
+</tr>
+<tr>
+<td>the long line</td>
+<td>countably compact but not compact, and not paracompact, so no smooth partition of unity subordinates to a cover</td>
+<td><em>Paracompactness and Partitions of Unity</em>, §The Smirnov Metrisation Theorem</td>
+</tr>
+<tr>
+<td>the long ray $[0,\omega_1)$</td>
+<td>locally metrisable and not paracompact; not second countable</td>
+<td><em>Paracompactness and Partitions of Unity</em>, §The Smirnov Metrisation Theorem</td>
+</tr>
+</tbody>
+</table></div>
+<p>The long line is the standard example that local Euclideanity does not imply the countability and paracompactness that the definition of a manifold imposes, and the smooth theory of the corpus uses the existence of partitions of unity, which fails there. The example is the boundary of the definition rather than a manifold with an unusual smooth structure.</p>
+<h2 id="orientability-and-the-non-orientable-surfaces">Orientability and the Non-Orientable Surfaces</h2>
+<p>A non-orientable surface is a manifold that fails the consistency of the local orientations, so that the integral fundamental class and the integral degree are not available.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the projective plane $\mathbb{RP}^2$</td>
+<td>non-orientable: $w_1(T\mathbb{RP}^2) \neq 0$, the first Stiefel–Whitney class being the obstruction to orientation</td>
+<td><em>Low-Dimensional Topology</em>; <em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>the Klein bottle</td>
+<td>non-orientable: it admits no consistent orientation of its tangent bundle</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the Möbius band</td>
+<td>a non-orientable surface with boundary, so a manifold with boundary, not a closed manifold</td>
+<td><em>Poincaré Duality</em>; <em>Topological K-Theory</em></td>
+</tr>
+<tr>
+<td>the connected sum $N_k$ of $k$ projective planes</td>
+<td>non-orientable of genus $k$, with $H_1(N_k;\mathbb{Z}) = \mathbb{Z}^{k-1}\oplus\mathbb{Z}/2$</td>
+<td><em>Cup and Cap Products</em></td>
+</tr>
+<tr>
+<td>a non-orientable manifold in the degree theory</td>
+<td>the integral degree is not defined; only the degree modulo $2$ remains</td>
+<td><em>Degree Theory and the Brouwer Fixed-Point Theorem</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The non-orientable surfaces are the two-dimensional instances of the failure of orientability, and the invariant that survives is the degree modulo $2$; the Stiefel–Whitney class $w_1$ is the obstruction to orientability in general. The projective plane and the Klein bottle show that the failure has a global effect: the integral fundamental class and the integral degree are unavailable, and only the mod-$2$ theory survives.</p>
+<h2 id="the-symplectic-and-the-spin-structures">The Symplectic and the Spin Structures</h2>
+<p>Two further structures have their standard failures, witnessed by the four-dimensional instances below: the symplectic structure is strictly weaker than the Kähler one, and the spin structure is strictly stronger than the orientation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Kodaira–Thurston manifold</td>
+<td>compact and symplectic but not Kähler: its first Betti number is odd</td>
+<td><em>Kähler Geometry</em>, §Examples</td>
+</tr>
+<tr>
+<td>a non-spin manifold</td>
+<td>oriented but with $w_2 \neq 0$, so it carries no spin structure</td>
+<td><em>Spin Geometry</em>, §The Definition; <em>Characteristic Classes</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Kodaira–Thurston manifold is the quotient of the Heisenberg group by a lattice, and it shows that the containment of the Kähler manifolds in the symplectic ones is strict. The second class $w_2$ is the obstruction to a spin structure, so a manifold may be orientable and still carry no spinor bundle and no Dirac operator; the two conditions are successive refinements of the tangent bundle, and neither is automatic.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the objects of the corpus that fail one geometric property, each with the property it breaks. The Alexander horned sphere and the wild knot are the wild embeddings; the Whitehead manifold, the exotic spheres, the exotic structures on $\mathbb{R}^4$ and the $E_8$ manifold are the exotic structures; the singular plane curve, the pseudo-arc, the figure-eight curve, the quotient by a dense subgroup, the solenoid, the null cone and the Zariski topology fail the manifold condition; the long line fails the countability axioms while satisfying the local model; the orbifold quotient and the preimage of a critical value fail to be manifolds without failing smoothness; the Kodaira–Thurston manifold is symplectic and not Kähler, and a non-spin manifold carries no spin structure; and the projective plane, the Klein bottle and the Möbius band fail orientability. The objects are grouped by the property they test, and the positive property each retains is named beside the failure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S^2$, $S^3$, $S^7$</td>
+<td>Sphere of the wild embedding, the complement and the exotic structure</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^3$, $\mathbb{R}^4$</td>
+<td>Euclidean spaces of the Whitehead manifold and the exotic structures</td>
+</tr>
+<tr>
+<td>$\Theta_7$</td>
+<td>Group of the smooth structures on the topological seven-sphere, $\Theta_7 \cong \mathbb{Z}/28$</td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^2$, $N_k$</td>
+<td>Projective plane, connected sum of $k$ projective planes</td>
+</tr>
+<tr>
+<td>$w_1$, $w_2$</td>
+<td>First and second Stiefel–Whitney classes, the obstructions to orientation and to a spin structure</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n/\Gamma$</td>
+<td>Compact flat orbifold of a crystallographic group</td>
+</tr>
+<tr>
+<td>$\deg_2$</td>
+<td>Degree modulo $2$</td>
+</tr>
+<tr>
+<td>$E_8$</td>
+<td>Intersection form of the non-smoothable four-manifold</td>
+</tr>
+<tr>
+<td>$\mathcal{N}$</td>
+<td>The null cone of the biquaternion algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robion Kirby and Laurence Taylor, "A Survey of 4-Manifolds through the Eyes of Surgery", in <em>Surveys on Surgery Theory</em> (Princeton University Press, 2000), for the exotic smooth structures on four-manifolds and the failure of smoothing.</li>
+<li>John Milnor, "On Manifolds Homeomorphic to the 7-Sphere", <em>Annals of Mathematics</em> 64 (1956), for the exotic spheres and the computation of $\Theta_7$.</li>
+<li>Michael H. Freedman and Frank Quinn, <em>Topology of 4-Manifolds</em> (Princeton University Press, 1990), for the topological classification, the $E_8$ manifold and the non-smoothability.</li>
+<li>J. H. C. Whitehead, "A Certain Open Manifold whose Group is Unity", <em>Quarterly Journal of Mathematics</em> 6 (1935), 268–279, for the Whitehead manifold.</li>
+<li>Ralph H. Fox and Emil Artin, "Some Wild Cells and Spheres in Three-Dimensional Space", <em>Annals of Mathematics</em> 49 (1948), 979–990, for the horned sphere and the wild embeddings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

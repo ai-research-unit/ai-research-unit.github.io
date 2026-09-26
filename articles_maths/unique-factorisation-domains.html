@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Factorisation Domains — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unique-factorisation-domains"><strong>Unique Factorisation Domains</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An integral domain is a <strong>unique factorisation domain</strong> when every nonzero non-unit is a product of irreducible elements in exactly one way up to order and multiplication by units. The definition is the arithmetic one, and the article's work is to make it checkable: a domain is a unique factorisation domain exactly when factorisations exist and every irreducible is prime, and in that case the divisibility theory of the domain is the arithmetic of its prime elements, with the gcd of a pair read off from the two factorisations. The rung is the highest in the category at which this reading of divisibility is available by elements alone.</p>
+<p>Two tools make the theory effective and are the part of this article that other articles cite: <strong>Gauss's lemma</strong>, which controls the passage of factorisation between a unique factorisation domain and its polynomial ring, and <strong>Eisenstein's criterion</strong>, which certifies irreducibility of a polynomial from the divisibility of its coefficients. The failure that the rung is defined against is $\mathbb{Z}[\sqrt{-5}]$, where $6 = 2 \cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5})$ are two factorisations into irreducibles, and it is worked in full here.</p>
+<p>Throughout, $R$ is an integral domain; divisibility, associates, irreducibles, primes and the gcd are used in the sense of <em>Integral Domains</em> and <em>GCD Domains</em>, both above this article in this category. Fields are used where a field is needed and are introduced in <em>Fields</em>, later in this category. The fraction field $\operatorname{Frac}(R)$, used for Gauss's lemma, is constructed in <em>Localization and the Fraction Field</em>, below this article in this category.</p>
+<hr />
+<h2 id="irreducibles-primes-and-factorisation">Irreducibles, Primes and Factorisation</h2>
+<h3 id="the-vocabulary">The Vocabulary</h3>
+<p>Recall from <em>Integral Domains</em>, above, that a nonzero non-unit $a$ of the domain $R$ is <strong>irreducible</strong> if every factorisation $a = bc$ has $b$ or $c$ a unit, and <strong>prime</strong> if $a \mid bc$ always implies $a \mid b$ or $a \mid c$. Every prime element is irreducible, and the converse may fail; the failure is exactly what a unique factorisation domain excludes.</p>
+<p><strong>Definition.</strong> An integral domain $R$ is a <strong>unique factorisation domain</strong> (UFD) if</p>
+<p><strong>(a)</strong> every nonzero non-unit of $R$ is a product of irreducible elements, and</p>
+<p><strong>(b)</strong> the factorisation is unique up to order and units: if</p>
+<p>$$
+a = p_1 p_2 \cdots p_r = q_1 q_2 \cdots q_s
+$$</p>
+<p>with all $p_i$ and $q_j$ irreducible, then $r = s$ and, after reordering, $p_i \sim q_i$ for every $i$.</p>
+<p>Condition (a) speaks of nonzero non-units, since $0$ and the units are not products of irreducibles; condition (b) is the uniqueness, where the order of the factors is irrelevant by commutativity, so the content of the condition is the pairing of the factors up to units.</p>
+<p><strong>Definition.</strong> $R$ satisfies the <strong>ascending chain condition on principal ideals</strong> (ACCP) if there is no infinite strictly increasing chain</p>
+<p>$$
+(a_1) \subsetneq (a_2) \subsetneq (a_3) \subsetneq \cdots
+$$</p>
+<p>of principal ideals of $R$.</p>
+<h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
+<p><strong>Theorem.</strong> An integral domain $R$ is a unique factorisation domain if and only if every irreducible element of $R$ is prime and every nonzero non-unit of $R$ is a product of irreducibles. Equivalently, $R$ is a unique factorisation domain if and only if $R$ satisfies ACCP and every irreducible element of $R$ is prime.</p>
+<p><strong>Proof.</strong> Suppose first that $R$ is a unique factorisation domain. If $p$ is irreducible and $p \mid ab$, say $ab = pc$, factor $a$, $b$ and $c$ into irreducibles. The two factorisations of $ab$ and of $pc$ have the same irreducible factors up to order and units, so $p$ is an associate of a factor of $a$ or of $b$; hence $p \mid a$ or $p \mid b$. For ACCP, a strictly increasing chain $(a_1) \subsetneq (a_2) \subsetneq \cdots$ gives $a_n = a_{n+1} b_n$ with $b_n$ a non-unit, so a factorisation of $a_1$ would refine at every step, contradicting the finiteness of $r$ in the definition.</p>
+<p>Conversely, suppose every irreducible is prime and every nonzero non-unit is a product of irreducibles. Let $p_1 \cdots p_r = q_1 \cdots q_s$ with all factors irreducible, hence all prime. Since $p_1$ is prime and divides the right-hand product, $p_1 \mid q_j$ for some $j$; as $q_j$ is irreducible and $p_1$ is not a unit, $p_1 \sim q_j$. Reordering so that $j = 1$ and cancelling $p_1$ by <em>Integral Domains</em>, above, gives $p_2 \cdots p_r = q_2 \cdots q_s$, and induction gives $r = s$ and the pairing. For the second form of the criterion, ACCP supplies the existence of factorisations: if a nonzero non-unit $a$ had none, then $a = a_1 b_1$ with both factors non-units, at least one of $a_1, b_1$ would again have no factorisation, and iterating would produce a strictly increasing chain $(a) \subsetneq (a_1) \subsetneq (a_2) \subsetneq \cdots$, contradicting ACCP. $\square$</p>
+<p><strong>Corollary.</strong> Let $R$ be a unique factorisation domain and let $a = u p_1^{e_1} \cdots p_r^{e_r}$ be the factorisation of a nonzero non-unit, with the $p_i$ pairwise non-associate irreducibles and $u$ a unit. Then the divisors of $a$ are, up to units, exactly the products $p_1^{f_1} \cdots p_r^{f_r}$ with $0 \leq f_i \leq e_i$, and the gcd of two nonzero elements is the product of the common prime factors, each to the smaller exponent.</p>
+<p><strong>Proof.</strong> Every divisor is a product of irreducibles drawn from the factors of $a$ with exponents bounded by $e_i$, by uniqueness applied to the factorisation of a multiple; conversely each such product divides $a$. The statement about the gcd is <em>GCD Domains</em>, above. $\square$</p>
+<p><strong>Remark.</strong> The corollary is the sense in which a unique factorisation domain has an arithmetic: divisibility is decided by comparing exponents of prime elements. The article <em>Bézout Domains</em>, above this article in this category, shows that the class of domains in which this reading is available by identity instead of by factorisation is incomparable with the class of unique factorisation domains; $\mathbb{Z}[x]$ is a unique factorisation domain that is not a Bézout domain.</p>
+<h3 id="euclids-lemma">Euclid's Lemma</h3>
+<p><strong>Theorem (Euclid's lemma).</strong> Let $R$ be a Bézout domain, or more generally a domain in which every gcd is a Bézout combination, and let $p \in R$ be irreducible. If $p \mid ab$ then $p \mid a$ or $p \mid b$.</p>
+<p><strong>Proof.</strong> Suppose $p \nmid a$. Since $p$ is irreducible, its divisors are the units and the associates of $p$; as $p \nmid a$, the element $p$ is not a common divisor of $p$ and $a$, so $\gcd(p,a) \sim 1$. Write $up + va = 1$ with $u, v \in R$, possible by <em>Bézout Domains</em>, above. Multiplying by $b$ gives</p>
+<p>$$
+b = upb + vab .
+$$</p>
+<p>The first term is divisible by $p$, and the second is divisible by $p$ because $p \mid ab$; hence $p \mid b$. $\square$</p>
+<p><strong>Corollary.</strong> In a Bézout domain every irreducible element is prime.</p>
+<p><strong>Proof.</strong> This is the lemma with the definition of a prime element. $\square$</p>
+<p>Thus in $\mathbb{Z}$ the lemma reads: if a prime divides a product then it divides a factor, which is the step that makes the fundamental theorem of arithmetic independent of the uniqueness of factorisation. In a unique factorisation domain the lemma is true for prime elements by definition, and the criterion of the previous section makes it true for irreducibles.</p>
+<hr />
+<h2 id="the-failure-in-math101">The Failure in $\mathbb{Z}[\sqrt{-5}]$</h2>
+<h3 id="the-two-factorisations-of-math102">The Two Factorisations of $6$</h3>
+<p>Let $R = \mathbb{Z}[\sqrt{-5}] = \{a + b\sqrt{-5} : a, b \in \mathbb{Z}\}$ with the multiplicative norm</p>
+<p>$$
+N(a + b\sqrt{-5}) = a^2 + 5b^2, \qquad N(xy) = N(x)N(y),
+$$</p>
+<p>as in <em>Integral Domains</em>, above. The units are the elements of norm $1$, namely $\pm 1$, so two elements are associates exactly when they are equal up to sign.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Norm</th>
+<th>Irreducible?</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>a factor would have norm $2$, and $a^2 + 5b^2 = 2$ has no integer solution</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$9$</td>
+<td>yes</td>
+<td>a factor would have norm $3$, and $a^2 + 5b^2 = 3$ has no integer solution</td>
+</tr>
+<tr>
+<td>$1 + \sqrt{-5}$</td>
+<td>$6$</td>
+<td>yes</td>
+<td>a factor would have norm $2$ or $3$, both impossible</td>
+</tr>
+<tr>
+<td>$1 - \sqrt{-5}$</td>
+<td>$6$</td>
+<td>yes</td>
+<td>as for $1 + \sqrt{-5}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> The two factorisations</p>
+<p>$$
+6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5})
+$$</p>
+<p>are factorisations of $6$ into irreducibles, and they differ neither by the order of the factors nor by units.</p>
+<p><strong>Proof.</strong> Both identities are verified by expanding: $2 \cdot 3 = 6$ and $(1+\sqrt{-5})(1-\sqrt{-5}) = 1 - (-5) = 6$. The four factors are irreducible by the table, whose entries use the multiplicativity of $N$: a proper factor of an element of norm $n$ would have norm a proper divisor of $n$ greater than $1$. Finally the two sides are not the same list up to units: $N(2) = 4$ while $N(1 \pm \sqrt{-5}) = 6$, so no factor of the left side is an associate of a factor of the right side, and the units are $\pm 1$. $\square$</p>
+<p><strong>Corollary.</strong> $\mathbb{Z}[\sqrt{-5}]$ is not a unique factorisation domain.</p>
+<p><strong>Proof.</strong> The proposition exhibits a nonzero non-unit with two factorisations into irreducibles that do not agree up to order and units. $\square$</p>
+<p><strong>Corollary.</strong> In $\mathbb{Z}[\sqrt{-5}]$ the element $2$ is irreducible but not prime.</p>
+<p><strong>Proof.</strong> $2$ is irreducible by the table. It divides $(1+\sqrt{-5})(1-\sqrt{-5}) = 6$, but it divides neither factor: $2 \nmid 1 + \sqrt{-5}$ and $2 \nmid 1 - \sqrt{-5}$, since $2$ does not divide either coefficient. $\square$</p>
+<p>So the criterion of the previous section fails at exactly the point it names: irreducibles need not be prime. The same ring is the standard witness that a domain need not be a GCD domain (<em>GCD Domains</em>, above), and the two failures have the same content, since a unique factorisation domain is a GCD domain in which the gcd is computed by exponents.</p>
+<hr />
+<h2 id="content-and-gausss-lemma">Content and Gauss's Lemma</h2>
+<h3 id="content-and-primitive-polynomials">Content and Primitive Polynomials</h3>
+<p>Let $R$ be a unique factorisation domain and let $f = a_n x^n + \cdots + a_0 \in R[x]$ be nonzero. The <strong>content</strong> of $f$ is the greatest common divisor of its coefficients,</p>
+<p>$$
+c(f) = \gcd(a_0, a_1, \ldots, a_n),
+$$</p>
+<p>which exists by <em>GCD Domains</em>, above, and is defined up to associates; a representative is fixed once for all. The polynomial $f$ is <strong>primitive</strong> if $c(f) \sim 1$.</p>
+<p><strong>Lemma.</strong> Every nonzero $f \in R[x]$ can be written $f = c(f) f_0$ with $f_0 \in R[x]$ primitive.</p>
+<p><strong>Proof.</strong> Divide each coefficient by the gcd of them all; the quotient polynomial has content a unit. $\square$</p>
+<h3 id="gausss-lemma">Gauss's Lemma</h3>
+<p><strong>Theorem (Gauss's lemma).</strong> Let $R$ be a unique factorisation domain and $F = \operatorname{Frac}(R)$ its fraction field, constructed in <em>Localization and the Fraction Field</em>, below this article in this category.</p>
+<p><strong>(a)</strong> For nonzero $f, g \in R[x]$, $\ c(fg) \sim c(f) c(g)$. In particular the product of two primitive polynomials is primitive.</p>
+<p><strong>(b)</strong> A primitive $f \in R[x]$ is irreducible in $R[x]$ if and only if it is irreducible in $F[x]$.</p>
+<p><strong>Proof sketch.</strong> (a) It suffices to show that the product of primitive polynomials is primitive. Let $p \in R$ be a prime element; a primitive polynomial has at least one coefficient not divisible by $p$, so its image in $(R/pR)[x]$ is nonzero, and the same holds for the other factor. Since $p$ is prime the ring $R/pR$ is an integral domain by <em>Integral Domains</em>, above, so the image of the product is nonzero: $fg$ has a coefficient not divisible by $p$. Hence no prime element divides $c(fg)$, and $c(fg)$ is a unit; the general statement follows by writing $f = c(f)f_0$ and $g = c(g)g_0$ with $f_0, g_0$ primitive. (b) Let $f$ be primitive. If $f$ is reducible in $F[x]$, say $f = gh$ with $g, h \in F[x]$ of positive degree, clear denominators and divide out contents to write $f = c\,g_0h_0$ with $c \in F$ and $g_0, h_0 \in R[x]$ primitive of positive degree; by (a) the product $g_0h_0$ is primitive, so taking contents gives $c \sim c(f) \sim 1$, that is, $c$ is a unit of $R$, and $f = (c\,g_0)h_0$ is a factorisation of $f$ in $R[x]$ into two elements of positive degree, neither a unit. Hence $f$ is reducible in $R[x]$. Conversely, if $f$ is reducible in $R[x]$, say $f = gh$ with $g, h$ non-units, then $c(g)c(h) \sim c(f) \sim 1$ by (a), so neither $g$ nor $h$ is a constant and both have positive degree, hence both are non-units of $F[x]$; so $f$ is reducible in $F[x]$. $\square$</p>
+<p><strong>Remark.</strong> Part (b) needs the fraction field, which is why the statement is placed here and not in the Euclidean theory of polynomials. The content is not multiplicative on sums: $c(f+g)$ need not divide $c(f)c(g)$.</p>
+<hr />
+<h2 id="eisensteins-criterion">Eisenstein's Criterion</h2>
+<h3 id="the-criterion">The Criterion</h3>
+<p><strong>Theorem (Eisenstein's criterion).</strong> Let $R$ be a unique factorisation domain and let</p>
+<p>$$
+f = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0 \in R[x]
+$$</p>
+<p>be primitive of positive degree. If there is a prime element $p \in R$ with</p>
+<p>$$
+p \nmid a_n, \qquad p \mid a_i \ \text{for} \ 0 \leq i < n, \qquad p^2 \nmid a_0,
+$$</p>
+<p>then $f$ is irreducible in $R[x]$.</p>
+<p><strong>Proof.</strong> Suppose $f = gh$ with $g, h$ non-units of $R[x]$. Since $f$ is primitive of positive degree, neither factor is a non-unit constant, so both have positive degree and $\deg g + \deg h = n$. Reducing coefficients modulo $p$ gives, in $(R/pR)[x]$,</p>
+<p>$$
+\bar f = \bar a_n x^n, \qquad \bar a_n \neq 0,
+$$</p>
+<p>because all lower coefficients vanish modulo $p$. The ring $(R/pR)[x]$ is a polynomial ring over the domain $R/pR$, so $\bar g$ and $\bar h$ are monomials; since $\deg \bar g \leq \deg g$ and $\deg \bar h \leq \deg h$ with $\deg \bar g + \deg \bar h = n = \deg g + \deg h$, both degrees are positive. Hence the constant terms of $g$ and of $h$ are divisible by $p$, and $p^2$ divides $g(0)h(0) = a_0$, contradicting the hypothesis. $\square$</p>
+<p><strong>Corollary.</strong> Let $R$ be a unique factorisation domain and let $f \in R[x]$ have positive degree. If $f$ is not primitive then $f$ is reducible in $R[x]$, since $f = c(f) f_0$ with $c(f)$ a non-unit of $R$ and $f_0$ of the same positive degree, hence a non-unit of $R[x]$. Eisenstein's criterion is therefore applied only to primitive polynomials, after dividing out the content.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example ($x^3 - 2$).</strong> The polynomial $x^3 - 2$ is primitive in $\mathbb{Z}[x]$ and Eisenstein at $p = 2$: the leading coefficient $1$ is not divisible by $2$, the coefficients of $x^2$, $x$ and $x^0$ are $0, 0, -2$, all divisible by $2$, and $4 \nmid 2$. Hence $x^3 - 2$ is irreducible over $\mathbb{Q}$.</p>
+<p><strong>Example ($x^4 + 1$).</strong> The polynomial $x^4 + 1$ is not itself Eisenstein, but its translate is. Expanding,</p>
+<p>$$
+(x+1)^4 + 1 = x^4 + 4x^3 + 6x^2 + 4x + 2,
+$$</p>
+<p>the coefficients $4, 6, 4, 2$ are divisible by $2$, the leading coefficient $1$ is not, and the constant term $2$ is not divisible by $4$: so the translate is Eisenstein at $2$. Since $x \mapsto x+1$ is a ring automorphism of $\mathbb{Z}[x]$, irreducibility of the translate is equivalent to irreducibility of $x^4 + 1$.</p>
+<p><strong>Theorem (irreducibility of $\Phi_p$).</strong> Let $p$ be a prime number and let</p>
+<p>$$
+\Phi_p(x) = \frac{x^p - 1}{x - 1} = x^{p-1} + x^{p-2} + \cdots + x + 1 \in \mathbb{Z}[x].
+$$</p>
+<p>Then $\Phi_p$ is irreducible in $\mathbb{Z}[x]$.</p>
+<p><strong>Proof.</strong> Substitute $x + 1$ for $x$:</p>
+<p>$$
+\Phi_p(x+1) = \frac{(x+1)^p - 1}{x} = \sum_{k=1}^{p} \binom{p}{k} x^{k-1} = x^{p-1} + p x^{p-2} + \cdots + p .
+$$</p>
+<p>The coefficients $\binom{p}{k}$ with $1 \leq k \leq p-1$ are divisible by $p$, the leading coefficient $\binom{p}{p} = 1$ is not, and the constant term $\binom{p}{1} = p$ is not divisible by $p^2$. So $\Phi_p(x+1)$ is Eisenstein at $p$, hence irreducible in $\mathbb{Z}[x]$, and the substitution $x \mapsto x+1$ preserves irreducibility. $\square$</p>
+<p><strong>Corollary.</strong> $[\mathbb{Q}(\zeta_p) : \mathbb{Q}] = p - 1$ for a primitive $p$-th root of unity $\zeta_p$, since $\Phi_p$ is the minimal polynomial of $\zeta_p$ over $\mathbb{Q}$; the theory of the cyclotomic fields is <em>Cyclotomic Fields</em>, later in this category.</p>
+<hr />
+<h2 id="polynomial-rings-and-unique-factorisation">Polynomial Rings and Unique Factorisation</h2>
+<h3 id="transfer-to-the-polynomial-ring">Transfer to the Polynomial Ring</h3>
+<p><strong>Theorem.</strong> If $R$ is a unique factorisation domain then so is $R[x]$, and the units of $R[x]$ are the units of $R$.</p>
+<p><strong>Proof sketch.</strong> Let $f$ be a nonzero non-unit and write $f = c(f) f_0$ with $f_0$ primitive. The content $c(f) \in R$ is a product of irreducibles of $R$, which remain irreducible in $R[x]$; and $f_0$ factors in $F[x]$, which is a Euclidean domain and hence a unique factorisation domain, by <em>Euclidean Domains</em>, below this article in this category, into irreducible factors of $F[x]$, which by Gauss's lemma lie in $R[x]$ up to units of $F$ and can be taken primitive. Uniqueness is inherited from the unique factorisation in $F[x]$ together with the uniqueness of the content, which is an element of the unique factorisation domain $R$. $\square$</p>
+<p><strong>Corollary.</strong> $\mathbb{Z}[x]$ and, for a field $F$, the ring $F[x_1, \ldots, x_n]$ are unique factorisation domains, by induction on the number of indeterminates.</p>
+<p><strong>Corollary.</strong> For a field $F$ the polynomial ring $F[x]$ is a unique factorisation domain; more precisely $F[x]$ is a Euclidean domain, hence a principal ideal domain, hence a unique factorisation domain, and therefore Noetherian. The Euclidean and principal ideal rungs are <em>Euclidean Domains</em> and <em>Principal Ideal Domains</em>, below this article in this category, and the Noetherian statement is <em>Noetherian and Artinian Rings</em>, below this article in this category.</p>
+<p><strong>Corollary.</strong> The chain of implications</p>
+<p>$$
+\text{Euclidean} \Longrightarrow \text{principal} \Longrightarrow \text{unique factorisation} \Longrightarrow \text{integral domain}
+$$</p>
+<p>holds, and each implication is strict: $\mathbb{Z}[(1+\sqrt{-19})/2]$ is a principal ideal domain that is not Euclidean, $\mathbb{Z}[x]$ is a unique factorisation domain that is not principal, and $\mathbb{Z}[\sqrt{-5}]$ is a domain that is not a unique factorisation domain. The strictness of the first two implications is established in <em>Euclidean Domains</em> and <em>Principal Ideal Domains</em>, below this article in this category, and the third by the section on $\mathbb{Z}[\sqrt{-5}]$ of this article.</p>
+<h3 id="factorisation-of-polynomials-over-a-field">Factorisation of Polynomials over a Field</h3>
+<p><strong>Theorem.</strong> Let $F$ be a field. Every nonzero $f \in F[x]$ has a factorisation</p>
+<p>$$
+f = c \, p_1(x) \, p_2(x) \cdots p_r(x)
+$$</p>
+<p>with $c \in F^{\times}$ and the $p_i$ monic irreducible polynomials, and this factorisation is unique up to the order of the factors.</p>
+<p><strong>Proof.</strong> $F[x]$ is a unique factorisation domain by the corollary above; the units of $F[x]$ are the nonzero constants, and multiplying an irreducible by the inverse of its leading coefficient makes it monic, which fixes the representative of each associate class. $\square$</p>
+<p><strong>Corollary.</strong> Let $F$ be a field and $f \in F[x]$ nonzero. Then $f$ is irreducible in $F[x]$ if and only if it is not the product of two polynomials of positive degree, and a polynomial of degree $2$ or $3$ is irreducible if and only if it has no root in $F$.</p>
+<p><strong>Proof.</strong> The first statement is the definition of irreducibility in a domain. For the second, a reducible polynomial of degree $2$ or $3$ has a factor of degree $1$, hence a root, by the root theorem of <em>Integral Domains</em>, above; and a root gives a linear factor by the same theorem. $\square$</p>
+<p><strong>Corollary.</strong> The quotient $F[x]/(f)$ of the polynomial ring by a nonzero polynomial $f$ decomposes according to the factorisation of $f$ into irreducibles, by the Chinese remainder theorem of <em>Commutative Rings</em>, above; the ideal structure of the quotient under a given factorisation is <em>Principal Ideal Domains</em>, below this article in this category.</p>
+<p><strong>Remark.</strong> The divisibility theory of $F[x]$ is the arithmetic of its irreducible polynomials: a nonzero $g$ divides $f$ exactly when every irreducible factor of $g$ occurs in the factorisation of $f$ with an exponent at least as large, by the corollary on divisors above. This is the form in which divisibility is used whenever a quotient $F[x]/(f)$ is studied one irreducible factor of $f$ at a time.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A unique factorisation domain is an integral domain in which every nonzero non-unit is a product of irreducibles and this factorisation is unique up to order and units. It is equivalently a domain satisfying the ascending chain condition on principal ideals in which every irreducible is prime, or a domain in which every irreducible is prime and factorisations exist. In such a ring the divisors of an element are read off from the exponents in its factorisation, and the gcd of two elements is the product of the common prime factors to the smaller exponent. Euclid's lemma, that a prime element dividing a product divides a factor, holds in every Bézout domain, where it follows from the Bézout combination $up + va = 1$; in a unique factorisation domain it is the definition of primality applied to irreducibles.</p>
+<p>The rung is strictly stronger than being a domain: $\mathbb{Z}[\sqrt{-5}]$ is a domain in which $6 = 2\cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5})$ are two inequivalent factorisations into irreducibles, so $2$ is irreducible and not prime. Over a unique factorisation domain the polynomial ring is again a unique factorisation domain, by Gauss's lemma: the content is multiplicative, a primitive polynomial is irreducible over the ring exactly when it is irreducible over the fraction field, and Eisenstein's criterion certifies irreducibility from the divisibility of the coefficients, as in the proof that $\Phi_p$ is irreducible. Over a field every polynomial factors uniquely into monic irreducibles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Integral domain, and a unique factorisation domain where stated</td>
+</tr>
+<tr>
+<td>$R^{\times}$</td>
+<td>Group of units</td>
+</tr>
+<tr>
+<td>$a \mid b$, $a \sim b$</td>
+<td>Divisibility; associates</td>
+</tr>
+<tr>
+<td>irreducible, prime</td>
+<td>Nonzero non-unit with no nontrivial factorisation; dividing products only through factors</td>
+</tr>
+<tr>
+<td>UFD</td>
+<td>Unique factorisation domain</td>
+</tr>
+<tr>
+<td>ACCP</td>
+<td>Ascending chain condition on principal ideals</td>
+</tr>
+<tr>
+<td>$R[x]$</td>
+<td>Polynomial ring in one indeterminate</td>
+</tr>
+<tr>
+<td>$c(f)$</td>
+<td>Content of $f$, a gcd of its coefficients</td>
+</tr>
+<tr>
+<td>primitive</td>
+<td>$c(f) \sim 1$</td>
+</tr>
+<tr>
+<td>$F = \operatorname{Frac}(R)$</td>
+<td>Fraction field of $R$</td>
+</tr>
+<tr>
+<td>$N(a + b\sqrt{-5}) = a^2 + 5b^2$</td>
+<td>Multiplicative norm on $\mathbb{Z}[\sqrt{-5}]$</td>
+</tr>
+<tr>
+<td>$\Phi_p(x)$</td>
+<td>Cyclotomic polynomial $x^{p-1} + \cdots + x + 1$</td>
+</tr>
+<tr>
+<td>$\zeta_p$</td>
+<td>Primitive $p$-th root of unity</td>
+</tr>
+<tr>
+<td>PID</td>
+<td>Principal ideal domain</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991), for irreducibles, primes and the failure of unique factorisation in quadratic rings.</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004), for the criterion UFD $\Leftrightarrow$ ACCP plus prime irreducibles, content, Gauss's lemma and Eisenstein's criterion.</li>
+<li>Irving Kaplansky, <em>Commutative Rings</em> (University of Chicago Press, rev. ed. 1974), for unique factorisation domains, Gauss's lemma and the ideal-theoretic reading of divisibility.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for Eisenstein's criterion, the irreducibility of the cyclotomic polynomials and factorisation over a field.</li>
+<li>Paulo Ribenboim, <em>Classical Theory of Algebraic Numbers</em> (Springer, 2001), for $\mathbb{Z}[\sqrt{-5}]$ and the arithmetic of quadratic rings.</li>
+<li>Oscar Zariski and Pierre Samuel, <em>Commutative Algebra, Volume I</em> (Van Nostrand, 1958), for content, primitive polynomials and the transfer of unique factorisation to polynomial rings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

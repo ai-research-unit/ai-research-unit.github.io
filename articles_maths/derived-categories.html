@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derived Categories — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="derived-categories"><strong>Derived Categories</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The derived functors of a functor that is not exact are computed by a choice of resolution, and the comparison theorem says the choice does not matter: any two resolutions are linked by a chain map unique up to homotopy. The derived category turns this statement into structure. It adjoins to the complexes of an abelian category formal inverses for the quasi-isomorphisms, retaining the homotopy category as its place of computation, and in the derived category the exact functors are precisely those that were merely left or right exact before: $\operatorname{Hom}$ becomes $\operatorname{Hom}$ in the derived category, the tensor product becomes the derived tensor product, and a short exact sequence produces the distinguished triangles that carry the long exact sequences. The construction does not create new homological data; it repackages the data of resolutions, derived functors and spectral sequences into a single additive category in which the triangle replaces the exact sequence.</p>
+<p>This article develops the homotopy category of complexes, the localisation of a category at a class of morphisms, the derived category of an abelian category, the structure of triangulated categories and the distinguished triangles, the identification of derived functors with functors on the derived category, the derived functors $\operatorname{RHom}$ and $\otimes^{\mathbb{L}}$, and the equivalences of derived categories that occur for rings of finite global dimension. It follows <em>Derived Functors</em>, <em>Ext and Tor</em> and <em>Spectral Sequences</em>, and it prepares.</p>
+<p>Throughout, $\mathcal{A}$ is an abelian category, most often $R\text{-}\mathbf{Mod}$ for a commutative ring $R$ with $1\neq0$, and $D(\mathcal{A})$ is its derived category; $K(\mathcal{A})$ is the homotopy category. The article assumes the complexes, chain homotopies, mapping cones, resolutions and hom complexes of <em>Homological Algebra</em>, the derived functors of <em>Derived Functors</em>, and the Ext and Tor families of <em>Ext and Tor</em>. No topology and no form occurs; the words <em>localisation</em>, <em>limit</em> and <em>complete</em> are used in their algebraic senses. The derived categories of sheaves on a site and the six-functor formalism for a map of schemes belong to Part II, where they are treated in <em>Sheaves and Cohomology</em>; the triangulated and higher-categorical machinery that surrounds the theory borders andboth being written in this same batch, and this article keeps to the algebraic side and cites those companions.</p>
+<h2 id="the-homotopy-category">The Homotopy Category</h2>
+<h3 id="complexes-up-to-homotopy">Complexes up to Homotopy</h3>
+<p><strong>Definition.</strong> The <strong>homotopy category</strong> $K(\mathcal{A})$ has as objects the chain complexes of $\mathcal{A}$, and as morphisms the homotopy classes of chain maps:</p>
+<p>$$
+K(\mathcal{A})(C_\bullet,D_\bullet)=H^0\bigl(\operatorname{Hom}^\bullet(C_\bullet,D_\bullet)\bigr).
+$$</p>
+<p>Composition is induced by composition of chain maps, which descends to homotopy classes by the additivity of the hom functor.</p>
+<p><strong>Proposition.</strong> $K(\mathcal{A})$ is an additive category with biproducts, and the canonical functor $\mathbf{Ch}(\mathcal{A})\to K(\mathcal{A})$ is additive and the identity on objects. Homotopic maps become equal, so every null-homotopic complex is isomorphic to zero in $K(\mathcal{A})$.</p>
+<p><em>Proof.</em> The hom functor $\operatorname{Hom}^\bullet$ is a complex of abelian groups whose $H^0$ is chain maps modulo homotopy; composition is compatible with the differential and descends. Direct sums and their structure maps are those of $\mathbf{Ch}(\mathcal{A})$, and the homotopy relation is additive, so they descend. A complex with a contracting homotopy has the identity homotopic to zero, hence the identity is zero in $K(\mathcal{A})$ and the object is zero. $\square$</p>
+<p><strong>Definition.</strong> The full subcategories $K^+(\mathcal{A})$, $K^-(\mathcal{A})$ and $K^b(\mathcal{A})$ consist of the complexes bounded below, bounded above and bounded on both sides.</p>
+<p><strong>Example.</strong> Over a ring $R$, the complex $0\to R\xrightarrow{\operatorname{id}}R\to0$ is null-homotopic and therefore zero in $K(R\text{-}\mathbf{Mod})$, although it is not the zero complex. This is the essential difference between $\mathbf{Ch}$ and $K$: the homotopy category does not see contractible complexes.</p>
+<h3 id="shift-and-mapping-cone">Shift and Mapping Cone</h3>
+<p><strong>Definition.</strong> The <strong>shift</strong> of a complex $C_\bullet$ by $n$ is the complex $C[n]_\bullet$ with $C[n]_k=C_{k+n}$ and differential $(-1)^nd$; a chain map $f:C\to D$ of degree $p$ is a morphism $C\to D[p]$ in the homotopy category.</p>
+<p><strong>Proposition.</strong> The mapping cone of a chain map $f:C\to D$ fits into a diagram</p>
+<p>$$
+C\xrightarrow{\ f\ }D\xrightarrow{\ i\ }\operatorname{Cone}(f)\xrightarrow{\ q\ }C[1],
+$$</p>
+<p>in which $i$ is the inclusion of $D$ as the degree-$0$ component of the cone and $q$ is the projection onto $C[1]$; the composite of any two consecutive maps is zero, and the induced maps on homology form the long exact sequence of <em>Homological Algebra</em>.</p>
+<p><em>Proof.</em> The maps are $i(d)=(d,0)$ and $q(c,d)=-c$, the sign being chosen with the cone's differential of <em>Homological Algebra</em> so that $q\,i=0$ and $i\,f=0$. The homology statement is the long exact sequence of the cone. $\square$</p>
+<h2 id="localisation">Localisation</h2>
+<h3 id="the-universal-property">The Universal Property</h3>
+<p><strong>Definition.</strong> Let $\mathcal{C}$ be a category and $\Sigma$ a class of morphisms. A <strong>localisation</strong> of $\mathcal{C}$ at $\Sigma$ is a category $\mathcal{C}[\Sigma^{-1}]$ together with a functor $Q:\mathcal{C}\to\mathcal{C}[\Sigma^{-1}]$ that sends every morphism of $\Sigma$ to an isomorphism and is universal with this property: every functor $F:\mathcal{C}\to\mathcal{D}$ carrying $\Sigma$ to isomorphisms factors uniquely through $Q$, up to natural isomorphism.</p>
+<p><strong>Proposition.</strong> The localisation, when it exists, is unique up to equivalence of categories. It exists whenever the class $\Sigma$ admits a calculus of fractions; in that case the morphisms of $\mathcal{C}[\Sigma^{-1}]$ are represented by <strong>roofs</strong> $A\xleftarrow{s}B\xrightarrow{f}C$ with $s\in\Sigma$, two roofs being identified when they are linked by a commutative diagram of roofs.</p>
+<p><em>Proof.</em> Uniqueness is the universal property applied to the identity functor. For the calculus of fractions one imposes that $\Sigma$ be closed under composition and contain the identities, and the two conditions that every diagram with one arrow in $\Sigma$ can be completed to a commuting square with the other arrow in $\Sigma$, in both orientations; then the roofs compose and the identification relation is an equivalence, giving a category with the universal property. $\square$</p>
+<p><strong>Example.</strong> The localisation of a commutative ring at a multiplicative set, which is the article <em>Localization and Completion of Modules</em>, is the special case of the construction for the category with one object whose endomorphisms are the ring: the localised ring is the localisation of that one-object category at the multiplicative set, and its universal property is the same statement. The same construction applies to modules over the ring.</p>
+<h3 id="localising-the-homotopy-category">Localising the Homotopy Category</h3>
+<p><strong>Definition.</strong> A <strong>quasi-isomorphism</strong> is a chain map inducing isomorphisms on all homology groups. The <strong>derived category</strong> $D(\mathcal{A})$ is the localisation of the homotopy category at the class of quasi-isomorphisms:</p>
+<p>$$
+D(\mathcal{A})=K(\mathcal{A})[\mathrm{qis}^{-1}].
+$$</p>
+<p>The bounded versions $D^+(\mathcal{A})$, $D^-(\mathcal{A})$ and $D^b(\mathcal{A})$ are the localisations of $K^+$, $K^-$ and $K^b$ at the quasi-isomorphisms between their objects.</p>
+<p><strong>Theorem.</strong> The localisation $D(\mathcal{A})=K(\mathcal{A})[\mathrm{qis}^{-1}]$ exists, and the objects whose cohomology is bounded, bounded above or bounded below form full subcategories closed under the construction, so that the localisations of $K^b$, $K^-$ and $K^+$ at their quasi-isomorphisms are these subcategories. Moreover, when $\mathcal{A}$ has enough injectives the class of quasi-isomorphisms between complexes of injectives admits a calculus of fractions, so that every morphism of $D(\mathcal{A})$ is represented by a roof $A\xleftarrow{s}B\xrightarrow{f}C$ of chain maps with $s$ a quasi-isomorphism; dually when $\mathcal{A}$ has enough projectives.</p>
+<p><em>Proof (in outline).</em> The localisation exists by the general construction of a category of fractions of Gabriel and Zisman, in which the morphisms are formal zigzags and the class of quasi-isomorphisms is saturated. The technical heart of the calculability is the replacement of an arbitrary complex by a complex of projectives or injectives without changing its quasi-isomorphism type: if every object of $\mathcal{A}$ embeds in an injective, then every complex admits a quasi-isomorphism into a complex of injectives, and between complexes of injectives every quasi-isomorphism is a homotopy equivalence, which makes the roofs composable and the Ore conditions verifiable. In general the morphisms of $D(\mathcal{A})$ are represented by three-arrow zigzags rather than by roofs, and the bounded subcategories are handled by the same replacements truncated at the ends. Dually with projectives. $\square$</p>
+<p><strong>Proposition.</strong> The canonical functor $K(\mathcal{A})\to D(\mathcal{A})$ is the identity on objects and is additive. A chain map becomes an isomorphism in $D(\mathcal{A})$ if and only if it is a quasi-isomorphism; a complex becomes isomorphic to zero in $D(\mathcal{A})$ if and only if it is acyclic.</p>
+<p><em>Proof.</em> The first statement is the definition of the localisation. For the second, the localisation inverts exactly the quasi-isomorphisms by construction, and a complex is acyclic exactly when the map from it to the zero complex is a quasi-isomorphism. $\square$</p>
+<p><strong>Example.</strong> In $D(R\text{-}\mathbf{Mod})$ the acyclic complex $0\to R\xrightarrow{\operatorname{id}}R\to0$ is zero, and a module $M$ placed in degree $0$ is isomorphic to any resolution of $M$: the resolution is exact except in degree $0$ with homology $M$, and the augmentation is a quasi-isomorphism. Hence a module and its projective resolution are the same object of the derived category, which is the sense in which resolutions compute derived functors.</p>
+<h2 id="triangulated-categories">Triangulated Categories</h2>
+<h3 id="the-axioms">The Axioms</h3>
+<p><strong>Definition.</strong> A <strong>triangulated category</strong> is an additive category $\mathcal{T}$ equipped with an equivalence $T$, the <strong>translation</strong> or shift, and a class of <strong>distinguished triangles</strong> $X\to Y\to Z\to TX$, called exact triangles, subject to the following axioms.</p>
+<p>(i) The class is closed under isomorphism of triangles, and for every morphism $f:X\to Y$ there is a distinguished triangle $X\xrightarrow{f}Y\to Z\to TX$; a triangle of this form is an exact triangle on $f$.</p>
+<p>(ii) The triangle $X\xrightarrow{\operatorname{id}}X\to0\to TX$ is distinguished.</p>
+<p>(iii) A triangle $X\to Y\to Z\to TX$ is distinguished if and only if the rotated triangles $Y\to Z\to TX\to TY$ and $T^{-1}Z\to X\to Y\to Z$ are distinguished.</p>
+<p>(iv) Given distinguished triangles on $f:X\to Y$, on $g:Y\to Z$ and on $gf:X\to Z$, together with morphisms of the first two triangles compatible with $f$ and $g$, the three triangles fit into the <strong>octahedron</strong> of the definition below.</p>
+<p><strong>Definition (octahedral axiom).</strong> The four objects $X,Y,Z$ and the three cones $Z'=\operatorname{Cone}(f)$, $X'=\operatorname{Cone}(g)$, $Y'=\operatorname{Cone}(gf)$ are the vertices of an octahedron whose faces are the four distinguished triangles on $f$, $g$, $gf$ and on the induced map $Z'\to Y'$; the axiom asserts that the induced maps can be chosen so that all faces commute, that the triangle $Z'\to Y'\to X'\to TZ'$ is distinguished, and that the two composites $X'\to TZ'\to TY$ and $X'\to TY'\to TY$ agree up to the sign forced by the translation.</p>
+<p><strong>Theorem.</strong> The derived category $D(\mathcal{A})$ is triangulated with translation $C\mapsto C[1]$ and distinguished triangles the images of the cone diagrams $C\to D\to\operatorname{Cone}(f)\to C[1]$ of the homotopy category.</p>
+<p><em>Proof.</em> Distinguished triangles are defined by the cone construction of <em>Homological Algebra</em>, and the axioms are verified using the explicit mapping-cylinder models of the maps, which exist because the localisation can be computed with complexes of injectives or projectives. The octahedral axiom follows from the construction of the mapping cone of a composition. $\square$</p>
+<p><strong>Definition.</strong> A functor between triangulated categories is <strong>exact</strong> if it is additive, commutes with the translation up to natural isomorphism, and carries distinguished triangles to distinguished triangles.</p>
+<p><strong>Definition.</strong> A functor $H:\mathcal{T}\to\mathbf{Ab}$ from a triangulated category to abelian groups is <strong>cohomological</strong> if it carries every distinguished triangle $X\to Y\to Z\to TX$ to an exact sequence $H(X)\to H(Y)\to H(Z)$.</p>
+<p><strong>Theorem.</strong> For a cohomological functor $H$ and a distinguished triangle $X\to Y\to Z\to TX$, the rotated triangles give a long exact sequence</p>
+<p>$$
+\cdots\to H(T^nX)\to H(T^nY)\to H(T^nZ)\to H(T^{n+1}X)\to\cdots,
+$$</p>
+<p>and an exact functor between triangulated categories carries distinguished triangles to distinguished triangles, so it preserves these long exact sequences when the target is the derived category.</p>
+<p><em>Proof.</em> The composition of two consecutive maps of a distinguished triangle is zero, so the displayed sequence is a complex; exactness at each term is obtained by rotating the triangle and applying $H$ to the exact triangle on the relevant morphism, using that a rotation of a distinguished triangle is distinguished. $\square$</p>
+<h3 id="cohomological-functors-and-homology">Cohomological Functors and Homology</h3>
+<p><strong>Example.</strong> The functor $H^0:D(\mathcal{A})\to\mathcal{A}$ sending a complex to its zeroth cohomology is <strong>cohomological</strong>: it carries distinguished triangles to long exact sequences. More generally $H^n$ is cohomological for every $n$, and the long exact homology sequence of a short exact sequence of complexes is the instance of the theorem for the triangle of the cone.</p>
+<p><strong>Example.</strong> For an object $M$ of $\mathcal{A}$ placed in degree $0$, the groups $\operatorname{Hom}_{D(\mathcal{A})}(M,N[n])$ are the derived functors $\operatorname{Ext}_{\mathcal{A}}^n(M,N)$; the proof is that the maps in the derived category from $M$ to $N[n]$ can be computed by a projective resolution of $M$ or an injective resolution of $N$, which is exactly the balanced computation of Ext. The derived category therefore contains the Ext groups as its hom groups.</p>
+<h2 id="derived-functors-as-functors-on-the-derived-category">Derived Functors as Functors on the Derived Category</h2>
+<h3 id="total-derived-functors">Total Derived Functors</h3>
+<p><strong>Definition.</strong> Let $F:\mathcal{A}\to\mathcal{B}$ be an additive functor between abelian categories. A <strong>right derived functor</strong> of $F$ is an exact functor $\mathbb{R}F:D(\mathcal{A})\to D(\mathcal{B})$ together with a natural transformation $Q_{\mathcal{B}}F\to\mathbb{R}FQ_{\mathcal{A}}$ that is universal among such; the <strong>left derived functor</strong> $\mathbb{L}F$ is defined dually. Universality means that any natural transformation from $Q_{\mathcal{B}}F$ to an exact functor factors uniquely through the comparison.</p>
+<p><strong>Theorem.</strong> If $\mathcal{A}$ has enough injectives then every left exact additive functor $F:\mathcal{A}\to\mathcal{B}$ has a right derived functor $\mathbb{R}F$, and if $\mathcal{A}$ has enough projectives then every right exact $F$ has a left derived functor $\mathbb{L}F$. In either case</p>
+<p>$$
+H^n\bigl(\mathbb{R}F(A)\bigr)\cong R^nF(A), \qquad H_n\bigl(\mathbb{L}F(A)\bigr)\cong L_nF(A),
+$$</p>
+<p>so the derived functors of <em>Derived Functors</em> are recovered as the cohomology of the total derived functor.</p>
+<p><em>Proof.</em> Define $\mathbb{R}F$ on the full subcategory of complexes of injectives by applying $F$ degreewise; a quasi-isomorphism between complexes of injectives is a homotopy equivalence, so this descends to the derived category, and the universal property of the localisation extends it to all of $D(\mathcal{A})$. The identification of the cohomology follows from the definition of $R^nF$. The projective case is dual. $\square$</p>
+<p><strong>Corollary.</strong> $\mathbb{R}\operatorname{Hom}_R(M,-)$ and $\mathbb{L}(-\otimes_RN)$ are exact functors on $D(R\text{-}\mathbf{Mod})$, and their cohomology in degree $n$ is $\operatorname{Ext}_R^n(M,-)$ and $\operatorname{Tor}_n^R(-,N)$ respectively.</p>
+<h3 id="the-derived-hom-and-tensor-product">The Derived Hom and Tensor Product</h3>
+<p><strong>Definition.</strong> For complexes $M,N$ over a ring $R$, the <strong>derived hom</strong> is</p>
+<p>$$
+\mathbb{R}\operatorname{Hom}_R(M,N)=\operatorname{Hom}_R^\bullet(M,I^\bullet)
+$$</p>
+<p>for an injective resolution $I^\bullet$ of $N$, and the <strong>derived tensor product</strong> is</p>
+<p>$$
+M\otimes_R^{\mathbb{L}}N=P_\bullet\otimes_RN
+$$</p>
+<p>for a projective resolution $P_\bullet$ of $M$; both are well-defined objects of $D(R\text{-}\mathbf{Mod})$.</p>
+<p><strong>Theorem (adjunction).</strong> The derived functors satisfy</p>
+<p>$$
+\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}(M\otimes_R^{\mathbb{L}}N,P)\cong\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}\bigl(M,\mathbb{R}\operatorname{Hom}_R(N,P)\bigr),
+$$</p>
+<p>so $-\otimes_R^{\mathbb{L}}N$ is left adjoint to $\mathbb{R}\operatorname{Hom}_R(N,-)$ on the derived category. There is also a natural isomorphism $M\otimes_R^{\mathbb{L}}N\cong N\otimes_R^{\mathbb{L}}M$.</p>
+<p><em>Proof.</em> The adjunction of the tensor product and Hom on the level of complexes, together with the fact that a complex of projectives computes the derived tensor product and a complex of injectives the derived hom, gives the displayed bijection; the universal property of the localisation shows that it is the hom set of the derived category. The commutativity follows from the corresponding isomorphism in the homotopy category and the symmetry of the resolutions. $\square$</p>
+<p><strong>Example.</strong> For modules $M,N$ placed in degree $0$, the cohomology of $\mathbb{R}\operatorname{Hom}_R(M,N)$ is $\operatorname{Ext}_R^\bullet(M,N)$ and the homology of $M\otimes_R^{\mathbb{L}}N$ is $\operatorname{Tor}_\bullet^R(M,N)$, with the extra structure that the derived objects carry: the cup product on $\mathbb{R}\operatorname{Hom}$ and the graded-commutative product on the derived tensor product, coming from the total complexes of <em>Homological Algebra</em>.</p>
+<h2 id="equivalences-and-rings-of-finite-global-dimension">Equivalences and Rings of Finite Global Dimension</h2>
+<h3 id="coherent-sheaves-and-perfect-complexes-named-only">Coherent Sheaves and Perfect Complexes, Named Only</h3>
+<p><strong>Remark.</strong> The <strong>perfect complexes</strong> are the complexes quasi-isomorphic to bounded complexes of finitely generated projective modules. They form a full triangulated subcategory of $D(R\text{-}\mathbf{Mod})$, and the derived tensor product restricts to it. In algebraic geometry the corresponding notion for sheaves on a scheme, together with the derived category of coherent sheaves and the six operations, is developed in Part II; here the definition is recorded in the module case as the object on which the K-theory is built.</p>
+<h3 id="rings-of-finite-global-dimension">Rings of Finite Global Dimension</h3>
+<p><strong>Definition.</strong> The <strong>global dimension</strong> of a ring $R$ is the supremum of the projective dimensions of its modules, equivalently the largest $n$ for which there exist modules $M,N$ with $\operatorname{Ext}_R^n(M,N)\neq0$.</p>
+<p><strong>Theorem.</strong> For a ring $R$ and an integer $n\ge0$ the following are equivalent: (i) every $R$-module has projective dimension at most $n$; (ii) $\operatorname{Ext}_R^k(-,-)=0$ for all $k>n$. Moreover the canonical functor $K^b(R\text{-}\mathbf{Proj})\to D^b(R\text{-}\mathbf{Mod})$ from the homotopy category of bounded complexes of projective modules is an equivalence if and only if $R$ has finite global dimension, that is, if and only if every module has finite projective dimension.</p>
+<p><em>Proof.</em> (i) and (ii) are equivalent because a module of projective dimension at most $n$ is exactly one with a projective resolution of length at most $n$, and $\operatorname{Ext}^k$ vanishes beyond the resolution length. If every module has finite projective dimension, resolving each term of a bounded complex and applying the horseshoe lemma produces a bounded complex of projectives quasi-isomorphic to it, and between bounded complexes of projectives a quasi-isomorphism is a homotopy equivalence, so the canonical functor is an equivalence. Conversely, if the functor is an equivalence, a module $M$ placed in degree $0$ is quasi-isomorphic to a bounded complex of projectives, and the cone of the comparison map exhibits a finite projective resolution of $M$; so the global dimension is finite. $\square$</p>
+<p><strong>Example.</strong> A field has global dimension $0$: every module is free, so $\operatorname{Ext}^n=0$ for $n\ge1$ and $D^b$ is the homotopy category of bounded complexes of vector spaces. A principal ideal domain that is not a field has global dimension $1$: every module has a free resolution of length one, so $\operatorname{Ext}^n=0$ for $n\ge2$ and every bounded complex is quasi-isomorphic to a bounded complex of free modules by the structure theorem. Both examples show that when the global dimension is finite every object of $D^b(R\text{-}\mathbf{Mod})$ is isomorphic to a bounded complex of projective modules, so that $D^b(R\text{-}\mathbf{Mod})\simeq K^b(R\text{-}\mathbf{Proj})$ and no objects beyond these complexes appear; it is the unbounded complexes, and the rings of infinite global dimension, that require the full localisation.</p>
+<p><strong>Remark.</strong> The derived category of a ring is not abelian in general: it is triangulated, and a triangulated category has no notion of kernel and cokernel that would make it abelian. It is therefore not a module category over any ring, and the Gabriel–Popescu theory of <em>Abelian and Grothendieck Categories</em> does not apply to it. The triangulated structure is the replacement, and it is the reason the articles that work in the derived setting use triangles and exact triangles rather than short exact sequences.</p>
+<h2 id="the-triangle-of-a-short-exact-sequence">The Triangle of a Short Exact Sequence</h2>
+<h3 id="distinguished-triangles-from-short-exact-sequences">Distinguished Triangles from Short Exact Sequences</h3>
+<p><strong>Proposition.</strong> A short exact sequence of complexes $0\to A_\bullet\to B_\bullet\to C_\bullet\to0$ gives a distinguished triangle</p>
+<p>$$
+A_\bullet\to B_\bullet\to C_\bullet\to A_\bullet[1]
+$$</p>
+<p>in $D(\mathcal{A})$, and the long exact homology sequence is the long exact sequence of this triangle under the cohomological functor $H^0$.</p>
+<p><em>Proof.</em> The sequence is degreewise a surjection $B^n\to C^n$ of modules, so a degreewise section of the underlying sets exists; the standard construction of <em>Homological Algebra</em> assembles it into a chain map $C_\bullet\to A_\bullet[1]$ whose mapping cone is quasi-isomorphic to $B_\bullet$, and the comparison with the mapping cone of $A_\bullet\to B_\bullet$ gives the distinguished triangle. The long exact sequence is the theorem on cohomological functors applied to it. $\square$</p>
+<p><strong>Corollary.</strong> The connecting morphism of the long exact sequence is, in the derived category, the morphism $C\to A[1]$ of the triangle; the naturality of the connecting morphism is the functoriality of the cone construction.</p>
+<h3 id="the-octahedron-in-practice">The Octahedron in Practice</h3>
+<p><strong>Proposition.</strong> A composition of morphisms in $D(\mathcal{A})$ and distinguished triangles on the two composites and on the middle morphism fit into the octahedron; equivalently, the induced maps on cohomology fit into the braid diagram of a composition of two connecting morphisms, which is the algebraic content of the octahedral axiom. The formulation is used to compare the two spectral sequences of a double complex, as in <em>Spectral Sequences</em>.</p>
+<p><strong>Theorem (Verdier).</strong> In a triangulated category the octahedral axiom is equivalent to the following sharpened form: for a composition $X\xrightarrow{f}Y\xrightarrow{g}Z$ with cones $Z'=\operatorname{Cone}(f)$, $X'=\operatorname{Cone}(g)$ and $Y'=\operatorname{Cone}(gf)$, there is a morphism $Z'\to Y'$ completing the diagrams to a distinguished triangle $Z'\to Y'\to X'\to TZ'$ such that the composite $X'\to TZ'\to TY$ differs from the structure morphism $X'\to TY$ by the sign forced by the translation. Thus the axiom asserts the functoriality of the cone construction on a composition, not merely the existence of a fourth triangle.</p>
+<p><em>Proof.</em> This is the classical form of the axiom, due to Verdier; the equivalence with the version stated above is the standard rearrangement of the diagrams, and the comparison of signs is the comparison of the two rotations of the triangle on $gf$. The proof is a diagram chase in the triangulated category, and is standard. $\square$</p>
+<h2 id="summary">Summary</h2>
+<p>The homotopy category $K(\mathcal{A})$ of complexes has as morphisms the chain maps modulo homotopy; it is additive, contractible complexes are zero in it, and the mapping cone produces the cone diagrams whose homology is the long exact sequence. The derived category $D(\mathcal{A})$ is the localisation of $K(\mathcal{A})$ at the quasi-isomorphisms; it exists by the general construction of a category of fractions, and its morphisms are computable by roofs once complexes of injectives or of projectives are available; a module becomes isomorphic to any of its resolutions in $D(\mathcal{A})$.</p>
+<p>The derived category is triangulated: it carries a translation and a class of distinguished triangles with the cone construction, rotation, the octahedral axiom, and a long exact sequence for every cohomological functor. The hom groups are the Ext groups, $\operatorname{Hom}_{D(\mathcal{A})}(M,N[n])=\operatorname{Ext}^n_{\mathcal{A}}(M,N)$, so the derived category is the natural home of Ext. Every left exact functor with enough injectives has a total right derived functor $\mathbb{R}F$ whose cohomology recovers $R^nF$, and every right exact functor with enough projectives has $\mathbb{L}F$ with homology $L_nF$; the total derived functors are exact, they satisfy the derived tensor–hom adjunction, and the derived tensor product is commutative.</p>
+<p>For a ring of finite global dimension the derived category of bounded complexes is equivalent to the homotopy category of bounded complexes of projectives, so the theory adds nothing in that case; the general theory is genuinely larger because the derived category need not be abelian. The derived categories of sheaves, the six operations for schemes and the geometric applications are part of Part II, and the model-category and higher-categorical formulations that underlie the construction are treated .</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K(\mathcal{A})$, $K^+$, $K^-$, $K^b$</td>
+<td>homotopy category of complexes, bounded below, above, both</td>
+</tr>
+<tr>
+<td>$\mathbf{Ch}(\mathcal{A})$</td>
+<td>category of chain complexes</td>
+</tr>
+<tr>
+<td>$D(\mathcal{A})$, $D^\pm$, $D^b$</td>
+<td>derived category and its bounded variants</td>
+</tr>
+<tr>
+<td>$\Sigma$, $\mathcal{C}[\Sigma^{-1}]$</td>
+<td>a class of morphisms and the localisation at it</td>
+</tr>
+<tr>
+<td>$C[n]$</td>
+<td>shift of a complex by $n$</td>
+</tr>
+<tr>
+<td>$\operatorname{Cone}(f)$</td>
+<td>mapping cone, the third vertex of a distinguished triangle</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>translation functor of a triangulated category</td>
+</tr>
+<tr>
+<td>$X\to Y\to Z\to TX$</td>
+<td>distinguished triangle</td>
+</tr>
+<tr>
+<td>$\mathbb{R}F$, $\mathbb{L}F$</td>
+<td>total right and left derived functors</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\operatorname{Hom}_R(M,N)$</td>
+<td>derived hom complex</td>
+</tr>
+<tr>
+<td>$M\otimes_R^{\mathbb{L}}N$</td>
+<td>derived tensor product</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{D(\mathcal{A})}(M,N[n])=\operatorname{Ext}^n_{\mathcal{A}}(M,N)$</td>
+<td>hom groups of the derived category</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>commutative ring with $1\neq0$ unless stated</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexander Beilinson, Joseph Bernstein and Pierre Deligne, "Faisceaux pervers", <em>Astérisque</em> 100 (1982), for the triangulated formalism and the t-structures of derived categories.</li>
+<li>Alexei I. Bondal and Mikhail M. Kapranov, "Enhanced triangulated categories", <em>Mathematics of the USSR Sbornik</em> 70 (1991), 93–107, for the limits of the triangulated formalism.</li>
+<li>Pierre Deligne, <em>Cohomologie à supports propres</em>, in <em>Théorie des topos et cohomologie étale des schémas</em> (Springer Lecture Notes in Mathematics 305, 1973), for derived categories and the six operations.</li>
+<li>Robin Hartshorne, <em>Residues and Duality</em> (Springer Lecture Notes in Mathematics 20, 1966), for the derived category in algebraic geometry.</li>
+<li>Luc Illusie, <em>Complexe cotangent et déformations I</em> (Springer Lecture Notes in Mathematics 239, 1971), for derived categories in deformation theory.</li>
+<li>Masaki Kashiwara and Pierre Schapira, <em>Categories and Sheaves</em> (Springer, 2006), for triangulated categories and derived functors in the categorical setting.</li>
+<li>Amnon Neeman, <em>Triangulated Categories</em> (Princeton University Press, 2001), for the axioms and their consequences.</li>
+<li>Jean-Louis Verdier, "Catégories dérivées: quelques résultats", in <em>Séminaire de Géométrie Algébrique du Bois-Marie</em>, SGA 4½ (Springer Lecture Notes in Mathematics 569, 1977), for the localisation theorem and the octahedral axiom.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Automorphisms and Derivations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-automorphisms-and-derivations"><strong>Biquaternion Automorphisms and Derivations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>biquaternion algebra</strong> is the complexification of the quaternion algebra,</p>
+<p>$$
+\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}.
+$$</p>
+<p>It carries two structures, distinguished by the ground field. Over $\mathbb{C}$ it is a four-dimensional algebra isomorphic to $M_2(\mathbb{C})$; over $\mathbb{R}$ the same set is an eight-dimensional algebra isomorphic to $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$. This article describes two standard invariants of $\mathbb{B}$: the group of algebra <strong>automorphisms</strong> and the Lie algebra of <strong>derivations</strong>. Both depend on the ground field, so the two views are kept separate and the field is named at each step.</p>
+<p>We use the conventions of the article on the biquaternion algebra throughout: the basis $\{e_0, e_1, e_2, e_3\}$ with $e_k^2 = -e_0$; the central scalar imaginary $i$ with $i^2 = -1$; the conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = \bar{\cdot} \circ {}^{*}$, ${}^{\flat} = -{}^{\dagger}$; and the six distinguished subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{C}$.</p>
+<p>No physics is invoked and no new results are claimed. Everything below is standard structure theory of the algebra $M_2(\mathbb{C})$ and of its real form $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$.</p>
+<h2 id="1-ideal-structure-and-central-simplicity">1. Ideal Structure and Central Simplicity</h2>
+<p>Before automorphisms and derivations, we record the ideal structure, because both invariants are governed by it.</p>
+<p><strong>Definition.</strong> A <strong>two-sided ideal</strong> of $\mathbb{B}$ is a vector subspace $I \subseteq \mathbb{B}$ with $xy, yx \in I$ for all $x \in \mathbb{B}$, $y \in I$. An algebra is <strong>simple</strong> if its only two-sided ideals are $\{0\}$ and itself.</p>
+<p>The ideal lattice of $\mathbb{B}$ is the same over $\mathbb{R}$ and over $\mathbb{C}$, because the conditions $xy, yx \in I$ are field-independent.</p>
+<p><strong>The ideals of $\mathbb{B}$ are only $\{0\}$ and $\mathbb{B}$.</strong> Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, ideals correspond to ideals. The matrix algebra $M_2(\mathbb{C})$ is simple: a nonzero two-sided ideal contains a nonzero matrix, and multiplying that matrix by matrix units on the left and right produces every matrix unit, hence the whole algebra. Therefore $\mathbb{B}$ has no nonzero proper two-sided ideal.</p>
+<p><strong>The center.</strong> The center of $\mathbb{B}$ is $Z(\mathbb{B}) = \mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$, a complex vector space of dimension $1$ in the $\mathbb{C}$-algebra view. In the $\mathbb{R}$-algebra view the same center is the real vector space $\mathbb{C}_{\mathbb{B}} = \mathbb{R} e_0 \oplus \mathbb{R}(i e_0)$, of real dimension $2$ and isomorphic to $\mathbb{C}$ as a real algebra.</p>
+<p><strong>Central simplicity, in the correct ground field.</strong> An algebra is <strong>central</strong> over a field $F$ if its center equals $F \cdot 1$, and <strong>central simple</strong> if in addition it is simple. Therefore:</p>
+<ul>
+<li>Over $\mathbb{C}$, the algebra $\mathbb{B}$ is central simple: it is simple, of dimension $4$, and its center is $\mathbb{C} \cdot e_0 = \mathbb{C}$.</li>
+<li>Over $\mathbb{R}$, the algebra $\mathbb{B}$ is simple but <strong>not central</strong>, because its center $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ is strictly larger than $\mathbb{R} \cdot e_0$. Equivalently, $\mathbb{B}$ is an Azumaya algebra over its center $\mathbb{C}_{\mathbb{B}}$, not over $\mathbb{R}$.</li>
+</ul>
+<p>Stating that "$\mathbb{B}$ is central simple" without naming the field $\mathbb{C}$ would be false over $\mathbb{R}$, and the sections below respect this distinction. The algebra is simple but is <strong>not</strong> a division algebra, since it has zero divisors; by Wedderburn–Artin a finite-dimensional simple unital algebra over an algebraically closed field is a full matrix algebra, and here it is $M_2(\mathbb{C})$, of dimension $4 = 2^2$.</p>
+<h2 id="2-automorphisms-over-math66">2. Automorphisms over $\mathbb{C}$</h2>
+<p>Throughout this section the ground field is $\mathbb{C}$.</p>
+<p><strong>Definition.</strong> A <strong>$\mathbb{C}$-algebra automorphism</strong> of $\mathbb{B}$ is a bijective $\mathbb{C}$-linear map $\sigma : \mathbb{B} \to \mathbb{B}$ with $\sigma(xy) = \sigma(x)\sigma(y)$ and $\sigma(e_0) = e_0$. These maps form a group under composition, written $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$.</p>
+<p><strong>Inner automorphisms.</strong> For any invertible $g \in \mathbb{B}$ the map $\iota_g(x) = g x g^{-1}$ is a $\mathbb{C}$-algebra automorphism, the <strong>inner automorphism</strong> determined by $g$. Since $\mathbb{C}$ is central, $\iota_g = \iota_{\lambda g}$ for every nonzero $\lambda \in \mathbb{C}$, so $\iota_g$ depends only on the class of $g$ modulo the scalars.</p>
+<p><strong>Theorem (Skolem–Noether).</strong> For any field $k$ and $n \geq 1$, every $k$-algebra automorphism of $M_n(k)$ is inner: for each $\sigma$ there exists $g \in GL_n(k)$ with $\sigma(x) = gxg^{-1}$ for all $x$.</p>
+<p>Applied to $\mathbb{B} \cong M_2(\mathbb{C})$, the theorem says that <strong>every $\mathbb{C}$-linear automorphism of $\mathbb{B}$ is inner</strong>. Under the identification of invertible biquaternions with $GL_2(\mathbb{C})$, this gives a surjection</p>
+<p>$$
+GL_2(\mathbb{C}) \longrightarrow \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}), \qquad g \longmapsto \iota_g,
+$$</p>
+<p>whose kernel is the group of scalar matrices $\mathbb{C}^{*} I$. Hence</p>
+<p>$$
+\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong GL_2(\mathbb{C}) / \mathbb{C}^{*} = PGL(2,\mathbb{C}).
+$$</p>
+<p>Because $\mathbb{C}$ is algebraically closed, every scalar is a square and every element of $GL_2(\mathbb{C})$ can be scaled to determinant $1$, so $PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$ and $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$.</p>
+<p><strong>Dimension.</strong> Since $GL_2(\mathbb{C})$ has complex dimension $4$ and $\mathbb{C}^{*}$ has complex dimension $1$, $\dim_{\mathbb{C}} \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = 4 - 1 = 3$. Equivalently, the group has real dimension $6$, and it is connected.</p>
+<p><strong>Example.</strong> For $g = e_1$, with $e_1^{-1} = -e_1$, conjugation fixes $e_1$, $e_0$, $i$ and reverses the signs of $e_2$ and $e_3$: $\iota_{e_1}(e_1) = e_1$, $\iota_{e_1}(e_2) = -e_2$, $\iota_{e_1}(e_3) = -e_3$. Indeed $e_1 e_2 e_1^{-1} = -(e_1 e_2)e_1 = -e_3 e_1 = -e_2$, using $e_1 e_2 = e_3$ and $e_3 e_1 = e_2$.</p>
+<p><strong>Remark.</strong> Quaternion conjugation satisfies $\overline{xy} = \bar{y}\,\bar{x}$ and is an <strong>anti-automorphism</strong>, not an automorphism, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; complex conjugation is an automorphism but is not $\mathbb{C}$-linear, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ either. It reappears over $\mathbb{R}$ below.</p>
+<h2 id="3-automorphisms-over-math128">3. Automorphisms over $\mathbb{R}$</h2>
+<p>Now the ground field is $\mathbb{R}$: $\mathbb{B}$ is eight-dimensional, and automorphisms need only be $\mathbb{R}$-linear, not $\mathbb{C}$-linear, which makes the group strictly larger.</p>
+<p><strong>Automorphisms preserve the center.</strong> If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $z$ is central, then $\sigma(z)\sigma(x) = \sigma(zx) = \sigma(xz) = \sigma(x)\sigma(z)$ for every $x$, so $\sigma(z)$ is central. Thus $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$; since $\mathbb{C}$ as a real algebra has exactly two automorphisms, the identity and $\kappa(z) = z^{*}$, restriction gives a homomorphism $\rho : \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}}) = \{\mathrm{id}, \kappa\} \cong \mathbb{Z}/2$.</p>
+<p><strong>The kernel is the $\mathbb{C}$-linear part.</strong> An automorphism lies in $\ker \rho$ exactly when it fixes the center pointwise, and an $\mathbb{R}$-linear map fixing $\mathbb{C}_{\mathbb{B}}$ pointwise is automatically $\mathbb{C}$-linear, since it commutes with multiplication by the central element $i$. Hence $\ker \rho = \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C})$, the group computed above; these are precisely the inner automorphisms, by Skolem–Noether.</p>
+<p><strong>The conjugation coset.</strong> The map $\rho$ is surjective: $c(\tilde{Q}) = \tilde{Q}^{*}$ is an $\mathbb{R}$-algebra automorphism, since $(xy)^{*} = x^{*}y^{*}$, and it induces $\kappa$ on the center, since $c(i) = -i$. It is not $\mathbb{C}$-linear, and it is not inner, because inner automorphisms fix the center pointwise while $c(i) = -i \neq i$. So the extension is nontrivial.</p>
+<p><strong>The full real automorphism group.</strong> There is a short exact sequence $1 \to PGL(2,\mathbb{C}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \xrightarrow{\rho} \mathbb{Z}/2 \to 1$, split by $c$ because $c^{2} = \mathrm{id}$. Hence</p>
+<p>$$
+\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2,
+$$</p>
+<p>the generator acting on $PGL(2,\mathbb{C})$ by $\iota_g \mapsto \iota_{g^{*}}$. Concretely, every real automorphism of $\mathbb{B}$ has exactly one of the two forms $\sigma(x) = g x g^{-1}$ or $\sigma(x) = g\, x^{*}\, g^{-1}$, with $g \in GL_2(\mathbb{C})$ determined up to a nonzero complex scalar. The first family is the identity coset of $\mathbb{C}$-linear inner automorphisms; the second is the coset of $c$, consisting of <strong>conjugate-linear</strong> automorphisms.</p>
+<p><strong>Dimension and scope.</strong> As a real Lie group, $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$ has real dimension $6$ and exactly two connected components, each a copy of $PGL(2,\mathbb{C})$; it is larger than $PGL(2,\mathbb{C})$ and is a real group rather than a complex one. Skolem–Noether describes the identity component $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C})$; the conjugate-linear coset exists because $\mathbb{C}/\mathbb{R}$ has a nontrivial Galois automorphism, and it is not inner.</p>
+<h2 id="4-derivations-over-math178">4. Derivations over $\mathbb{C}$</h2>
+<p>Throughout this section the ground field is $\mathbb{C}$.</p>
+<p><strong>Definition.</strong> A <strong>$\mathbb{C}$-linear derivation</strong> of $\mathbb{B}$ is a $\mathbb{C}$-linear map $D : \mathbb{B} \to \mathbb{B}$ with $D(xy) = D(x)\,y + x\,D(y)$ for all $x, y \in \mathbb{B}$. The set of all such maps is a complex vector space, written $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, and it is a Lie algebra under the commutator bracket $[D_1, D_2] = D_1 \circ D_2 - D_2 \circ D_1$.</p>
+<p>Every derivation satisfies $D(e_0) = 0$, since $D(e_0) = D(e_0 e_0) = 2D(e_0)$.</p>
+<p><strong>Inner derivations.</strong> For each $a \in \mathbb{B}$ the map $\mathrm{ad}_a(x) = a x - x a = [a, x]$ is a $\mathbb{C}$-linear derivation, the <strong>inner derivation</strong> determined by $a$; the Jacobi identity in the form $[[a,x],y] + [x,[a,y]] = [a,[x,y]]$ is exactly the Leibniz rule for $\mathrm{ad}_a$. The map $\mathrm{ad} : \mathbb{B} \to \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, $a \mapsto \mathrm{ad}_a$, is $\mathbb{C}$-linear with kernel the center, since $\mathrm{ad}_a = 0$ says exactly that $a$ commutes with everything: $\ker(\mathrm{ad}) = Z(\mathbb{B}) = \mathbb{C}_{\mathbb{B}}$.</p>
+<p><strong>Every derivation is inner.</strong> For a central simple algebra over a field, and in particular for $M_2(\mathbb{C})$, every derivation is inner; for a matrix algebra this follows from a computation with matrix units. Hence $\mathrm{ad}$ is surjective and induces a $\mathbb{C}$-linear isomorphism</p>
+<p>$$
+\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B} / \mathbb{C}_{\mathbb{B}}.
+$$</p>
+<p><strong>Identification with the traceless part.</strong> Under $\mathbb{B} \cong M_2(\mathbb{C})$ the trace is $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, so $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$ is the <strong>traceless part</strong> of $M_2(\mathbb{C})$, that is, $\mathfrak{sl}(2,\mathbb{C})$, a complex vector space of dimension $3$. Equivalently it is the subspace of vanishing scalar part $\{\tilde{Q} : Q_0 = 0\} = \mathrm{span}_{\mathbb{C}}\{e_1, e_2, e_3\}$, the <strong>complex pure-vector part</strong> of $\mathbb{B}$. The isomorphism is one of Lie algebras, because $[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$.</p>
+<p><strong>Dimension.</strong> The derivation space has $\dim_{\mathbb{C}} \mathrm{Der}_{\mathbb{C}}(\mathbb{B}) = 3$, hence real dimension $6$. This matches the automorphism group: $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C})$ also has complex dimension $3$, and $\mathfrak{sl}(2,\mathbb{C})$ is its Lie algebra.</p>
+<p><strong>The bivector reading.</strong> Under the identification $\mathbb{B} \cong \mathrm{Cl}^{+}_{1,3}$, the real span $\mathrm{span}_{\mathbb{R}}\{e_1, e_2, e_3, i e_1, i e_2, i e_3\}$ is the six-dimensional <strong>bivector subspace</strong>, the real form of the complex pure-vector part, and its elements bracket into themselves. Thus the derivation algebra, viewed as a real Lie algebra, is the bivector part of $\mathrm{Cl}^{+}_{1,3}$, equivalently the realification $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ of real dimension $6$, which is the Lie algebra of the Lorentz group. The traceless part, the complex pure-vector part, and the bivector part are three descriptions of one object, with $\dim_{\mathbb{R}} = 2 \dim_{\mathbb{C}}$.</p>
+<p><strong>An explicit basis.</strong> The three derivations $D_1 = \tfrac{1}{2}\mathrm{ad}_{e_1}$, $D_2 = \tfrac{1}{2}\mathrm{ad}_{e_2}$, $D_3 = \tfrac{1}{2}\mathrm{ad}_{e_3}$ are $\mathbb{C}$-linear, so each vanishes on $e_0$ and on $i$, and they act on $e_1, e_2, e_3$ by</p>
+<p>$$
+D_1(e_2) = e_3, \quad D_1(e_3) = -e_2; \qquad D_2(e_3) = e_1, \quad D_2(e_1) = -e_3; \qquad D_3(e_1) = e_2, \quad D_3(e_2) = -e_1,
+$$</p>
+<p>with $D_1(e_1) = D_2(e_2) = D_3(e_3) = 0$. They satisfy the standard $\mathfrak{su}(2)$ commutation relations,</p>
+<p>$$
+[D_1, D_2] = D_3, \qquad [D_2, D_3] = D_1, \qquad [D_3, D_1] = D_2,
+$$</p>
+<p>so $\{D_1, D_2, D_3\}$ is a complex basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C})$. For instance $D_1(e_2) = \tfrac{1}{2}(e_1 e_2 - e_2 e_1) = \tfrac{1}{2}(e_3 + e_3) = e_3$, and $[D_1, D_2] = \tfrac{1}{4}\mathrm{ad}_{[e_1,e_2]} = \tfrac{1}{4}\mathrm{ad}_{2e_3} = D_3$.</p>
+<p><strong>Derivations and automorphisms.</strong> The two structures are linked by the exponential: $\exp(t\,\mathrm{ad}_a)(x) = e^{ta}\, x\, e^{-ta}$ for $a \in \mathbb{B}$, $t \in \mathbb{R}$. The right-hand side is the inner automorphism determined by $e^{ta}$, so the Lie algebra of the automorphism group is the derivation algebra, $\mathrm{Lie}\,\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B}) = \mathfrak{sl}(2,\mathbb{C})$.</p>
+<h2 id="5-derivations-over-math246">5. Derivations over $\mathbb{R}$</h2>
+<p>Now the ground field is $\mathbb{R}$. An $\mathbb{R}$-linear derivation is required to satisfy the Leibniz rule but need not be $\mathbb{C}$-linear. At first sight this seems to allow a larger space, but in fact it does not.</p>
+<p><strong>Every real derivation is automatically $\mathbb{C}$-linear.</strong> Let $D$ be an $\mathbb{R}$-linear derivation. As in the automorphism case, $D$ maps the center into itself: if $z$ is central, then for every $x$,</p>
+<p>$$
+D(z)x = D(zx) - zD(x) = D(xz) - D(x)z = xD(z).
+$$</p>
+<p>So $D$ restricts to a derivation $\mathbb{C}_{\mathbb{B}} \to \mathbb{C}_{\mathbb{B}}$. But $\mathbb{C}$ has no nonzero $\mathbb{R}$-linear derivations: a derivation of $\mathbb{C}$ is determined by $D(i)$, and $0 = D(-1) = D(i^{2}) = i\,D(i) + D(i)\,i = 2i\,D(i)$ forces $D(i) = 0$, hence $D$ vanishes on the center. Since $i$ is central, the Leibniz rule then gives $D(i x) = D(i)\,x + i\,D(x) = i\,D(x)$, so $D$ is $\mathbb{C}$-linear. Therefore $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.</p>
+<p>There is no semilinear analogue for derivations: a derivation cannot conjugate a coefficient.</p>
+<p><strong>Dimension and structure.</strong> Consequently the real derivation space has real dimension $6$, that is, complex dimension $3$, and $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$, the realification of $\mathfrak{sl}(2,\mathbb{C})$. As a real Lie algebra this is the orthogonal Lie algebra $\mathfrak{so}(1,3)$ of the Lorentz group, equivalently the bivector subspace of $\mathrm{Cl}^{+}_{1,3}$ under the commutator. The derivations $D_1, D_2, D_3$ of the previous section span it over $\mathbb{C}$, and together with $iD_1, iD_2, iD_3$ over $\mathbb{R}$.</p>
+<p><strong>Summary of the asymmetry.</strong> For <strong>automorphisms</strong>, the real group is strictly larger than the complex one, because complex conjugation supplies a second coset. For <strong>derivations</strong>, the real and complex spaces coincide, because the center is étale over $\mathbb{R}$ and admits no nonzero derivation. This is a ground-field distinction and not a convention.</p>
+<h2 id="6-worked-examples">6. Worked Examples</h2>
+<p><strong>The conjugation involution.</strong> Complex conjugation $c(\tilde{Q}) = \tilde{Q}^{*}$ is an $\mathbb{R}$-algebra automorphism with $c(e_k) = e_k$ ($k = 0,1,2,3$) and $c(i) = -i$; it fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise, negates the scalar imaginary, satisfies $c^{2} = \mathrm{id}$, preserves the product, and is conjugate-linear over $\mathbb{C}$. It is not inner, because inner automorphisms fix the center pointwise whereas $c(i) = -i$, so it represents the nontrivial coset of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ in $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$.</p>
+<p><strong>A rotation derivation.</strong> Take $D = D_3 = \tfrac{1}{2}\mathrm{ad}_{e_3}$, so that $D(e_1) = e_2$ and $D(e_2) = -e_1$. Its exponential acts by</p>
+<p>$$
+\exp(tD)(e_1) = \cos t\, e_1 + \sin t\, e_2,
+$$</p>
+<p>as one checks by summing the series. Equivalently, $e^{t e_3/2} = \cos(t/2) + \sin(t/2) e_3$, and conjugation by this unit quaternion rotates the $e_1$-$e_2$ plane, matching $\exp(t D) = \mathrm{Ad}_{e^{t e_3/2}}$.</p>
+<p>Every element of $\mathrm{span}_{\mathbb{C}}\{e_1, e_2, e_3\}$ gives an inner derivation, and $\mathrm{ad}_a$ depends only on $a$ modulo the center $\mathbb{C}_{\mathbb{B}}$; for instance $a = e_1 + i e_2$ gives a derivation that is not a scalar multiple of any $D_k$.</p>
+<h2 id="summary">Summary</h2>
+<p>The two ground fields give the following table; the field is stated explicitly in every entry.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Over $\mathbb{C}$</th>
+<th>Over $\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra</td>
+<td>$M_2(\mathbb{C})$, complex dimension $4$</td>
+<td>$\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, real dimension $8$</td>
+</tr>
+<tr>
+<td>Ideals</td>
+<td>$\{0\}$ and $\mathbb{B}$ only</td>
+<td>$\{0\}$ and $\mathbb{B}$ only</td>
+</tr>
+<tr>
+<td>Center</td>
+<td>$\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$, dimension $1$ over $\mathbb{C}$</td>
+<td>$\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$, dimension $2$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>Central simple?</td>
+<td>yes, central simple over $\mathbb{C}$</td>
+<td>no: simple, but center $\mathbb{C} \neq \mathbb{R}$</td>
+</tr>
+<tr>
+<td>Automorphism group</td>
+<td>$PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$, complex dimension $3$ ($6$ over $\mathbb{R}$), connected</td>
+<td>$PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$, real dimension $6$, two components</td>
+</tr>
+<tr>
+<td>Derivation space (the Lie algebra of the automorphism group)</td>
+<td>$\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C})$, complex dimension $3$ ($6$ over $\mathbb{R}$); traceless part, complex pure-vector part, bivectors</td>
+<td>$\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}} \cong \mathfrak{so}(1,3)$, real dimension $6$</td>
+</tr>
+</tbody>
+</table></div>
+<p>In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism is inner, and $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$; over $\mathbb{R}$ complex conjugation adds a second, conjugate-linear coset, so $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$ is strictly larger; and over either field the derivations are the inner derivations $x \mapsto [a,x]$ with $a$ traceless, forming $\mathfrak{sl}(2,\mathbb{C})$, of dimension $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$, identified with the bivector part of $\mathrm{Cl}^{+}_{1,3}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>Biquaternion algebra; $M_2(\mathbb{C})$ over $\mathbb{C}$, real dimension $8$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$e_0, e_1, e_2, e_3$</td>
+<td>Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$</td>
+<td>Center of $\mathbb{B}$; the scalar subspace</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>Vector subspace, vanishing scalar part</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real-quaternion and anti-quaternion subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+, \mathbb{M}_-$</td>
+<td>Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$</td>
+<td>Quaternion, complex, Hermitian and anti-Hermitian conjugations</td>
+</tr>
+<tr>
+<td>$\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>Algebra automorphisms over $\mathbb{C}$: $PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$</td>
+<td>Algebra automorphisms over $\mathbb{R}$: $PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>Derivations over $\mathbb{C}$, $\cong \mathfrak{sl}(2,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathrm{Der}_{\mathbb{R}}(\mathbb{B})$</td>
+<td>Derivations over $\mathbb{R}$, $\cong \mathfrak{sl}(2,\mathbb{C})$ as a real Lie algebra, $\cong \mathfrak{so}(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_a(x) = [a,x]$</td>
+<td>Inner derivation by $a$</td>
+</tr>
+<tr>
+<td>$D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$</td>
+<td>Basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, $[D_1,D_2] = D_3$ etc.</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{1,3}^{+}$</td>
+<td>Even Clifford algebra; isomorphic to $\mathbb{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88, Springer, 1982.</li>
+<li>I. N. Herstein, <em>Noncommutative Rings</em>, Carus Mathematical Monographs 15, Mathematical Association of America, 1968.</li>
+<li>Benson Farb and R. Keith Dennis, <em>Noncommutative Algebra</em>, Graduate Texts in Mathematics 144, Springer, 1993.</li>
+<li>John Voight, <em>Quaternion Algebras</em>, Graduate Texts in Mathematics 288, Springer, 2021.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294, Springer, 1991.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em>, Graduate Texts in Mathematics 129, Springer, 1991.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd edition, Cambridge University Press, 2001.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em>, 2nd edition, Graduate Texts in Mathematics 222, Springer, 2015.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

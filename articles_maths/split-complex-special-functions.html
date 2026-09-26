@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Complex Special Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-complex-special-functions"><strong>Split Complex Special Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the split complex special functions as a collection of named functions that arise repeatedly in split complex analysis, hyperbolic differential equations, and the geometry of Minkowski space. The goal is to define each function precisely, establish its basic properties, and describe the relations among them.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. Split complex analysis is assumed from the article on split complex analysis, and the idempotent decomposition is used throughout. The order of presentation follows the dependency order: the split complex exponential and its consequences first, then functions defined from them, then functions defined by series and integrals.</p>
+<h2 id="the-split-complex-exponential-and-logarithm">The Split Complex Exponential and Logarithm</h2>
+<h3 id="the-split-complex-exponential">The Split Complex Exponential</h3>
+<p>The <strong>split complex exponential</strong> is defined for $z \in \mathbb{D}$ by</p>
+<p>$$
+\exp(z) = \sum_{n=0}^\infty \frac{z^n}{n!}.
+$$</p>
+<p>The series converges absolutely for every $z$ in the Euclidean norm. The function is entire in the split complex sense, and it satisfies</p>
+<p>$$
+\exp(z + w) = \exp(z) \exp(w), \qquad \exp(0) = 1, \qquad \exp'(z) = \exp(z).
+$$</p>
+<p>For $z = x + jy$ with $x, y \in \mathbb{R}$,</p>
+<p>$$
+\exp(z) = e^x (\cosh y + j \sinh y).
+$$</p>
+<p>This is the <strong>split Euler formula</strong>, and it is the bridge between the exponential and the hyperbolic functions. In particular, for $y = \theta$,</p>
+<p>$$
+e^{j\theta} = \cosh\theta + j \sinh\theta.
+$$</p>
+<p>The exponential is <strong>not</strong> periodic. Unlike the complex exponential, which is $2\pi i$-periodic, the split complex exponential is injective on the real axis and has no period.</p>
+<h3 id="the-idempotent-form">The Idempotent Form</h3>
+<p>In the idempotent basis, the exponential decomposes as</p>
+<p>$$
+\exp(z) = e^{z_+} e_+ + e^{z_-} e_-, \qquad z_+ = x + y, \quad z_- = x - y.
+$$</p>
+<p>So the split complex exponential is the pair of ordinary real exponentials, one for each idempotent. This is the fundamental structural fact about the exponential, and it is the reason most split complex special functions are pairs of real special functions.</p>
+<h3 id="the-split-complex-logarithm">The Split Complex Logarithm</h3>
+<p>The <strong>split complex logarithm</strong> is the inverse of the exponential. It is defined for $z$ with $z_+ > 0$ and $z_- > 0$ by</p>
+<p>$$
+\log z = \frac{1}{2} \log(z_+ z_-) + \frac{j}{2} \log\left(\frac{z_+}{z_-}\right).
+$$</p>
+<p>Equivalently, in the idempotent basis,</p>
+<p>$$
+\log z = \log(z_+) e_+ + \log(z_-) e_-.
+$$</p>
+<p>The logarithm is defined only on the region where both idempotent components are positive. It is not defined on the light cone, because one of the components vanishes there.</p>
+<p>The logarithm is split complex differentiable on its domain, with derivative $1/z$. It satisfies</p>
+<p>$$
+\log(z w) = \log z + \log w
+$$</p>
+<p>whenever both sides are defined.</p>
+<h3 id="split-complex-powers">Split Complex Powers</h3>
+<p>For $a \in \mathbb{D}$ and $z$ in the domain of the logarithm,</p>
+<p>$$
+z^a = \exp(a \log z).
+$$</p>
+<p>This is single-valued on the domain of the logarithm, unlike the complex case, where the logarithm is multivalued. The reason is that the split complex exponential is injective on its domain, so the logarithm is single-valued.</p>
+<h2 id="the-hyperbolic-functions">The Hyperbolic Functions</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>split hyperbolic sine</strong> and <strong>cosine</strong> are defined by</p>
+<p>$$
+\sinh z = \frac{e^z - e^{-z}}{2}, \qquad \cosh z = \frac{e^z + e^{-z}}{2}.
+$$</p>
+<p>They are entire in the split complex sense, and they satisfy</p>
+<p>$$
+\sinh' z = \cosh z, \qquad \cosh' z = \sinh z,
+$$</p>
+<p>$$
+\cosh^2 z - \sinh^2 z = 1.
+$$</p>
+<p>In the idempotent basis,</p>
+<p>$$
+\sinh z = \sinh(z_+) e_+ + \sinh(z_-) e_-,
+$$</p>
+<p>$$
+\cosh z = \cosh(z_+) e_+ + \cosh(z_-) e_-.
+$$</p>
+<p>So the split hyperbolic functions are pairs of ordinary real hyperbolic functions.</p>
+<h3 id="the-other-hyperbolic-functions">The Other Hyperbolic Functions</h3>
+<p>$$
+\tanh z = \frac{\sinh z}{\cosh z}, \qquad \coth z = \frac{\cosh z}{\sinh z}.
+$$</p>
+<p>These are defined wherever the denominator is invertible. The denominator $\cosh z$ is invertible unless $\cosh(z_+) = 0$ or $\cosh(z_-) = 0$, which never happens for real $z_+$ and $z_-$. So $\tanh$ is defined on all of $\mathbb{D}$, and $\coth$ is defined except on the light cone.</p>
+<h3 id="inverse-hyperbolic-functions">Inverse Hyperbolic Functions</h3>
+<p>The <strong>split inverse hyperbolic sine</strong> is defined by</p>
+<p>$$
+\operatorname{arsinh} z = \log\left(z + \sqrt{z^2 + 1}\right),
+$$</p>
+<p>where the square root is the split complex square root. The <strong>split inverse hyperbolic cosine</strong> is</p>
+<p>$$
+\operatorname{arcosh} z = \log\left(z + \sqrt{z^2 - 1}\right),
+$$</p>
+<p>defined for $z$ with $z_+ \geq 1$ and $z_- \geq 1$. The <strong>split inverse hyperbolic tangent</strong> is</p>
+<p>$$
+\operatorname{artanh} z = \frac{1}{2} \log \frac{1 + z}{1 - z},
+$$</p>
+<p>defined for $z$ with $|z_+| < 1$ and $|z_-| < 1$.</p>
+<p>In the idempotent basis, each of these is the ordinary real inverse hyperbolic function applied to the corresponding component.</p>
+<h2 id="the-gamma-function">The Gamma Function</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>split complex gamma function</strong> is defined for $z$ with $z_+ > 0$ and $z_- > 0$ by</p>
+<p>$$
+\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt,
+$$</p>
+<p>where the integral is along the positive real axis, and $t^{z-1}$ is the split complex power. In the idempotent basis,</p>
+<p>$$
+\Gamma(z) = \Gamma(z_+) e_+ + \Gamma(z_-) e_-.
+$$</p>
+<p>So the split complex gamma function is the pair of ordinary real gamma functions, one for each idempotent.</p>
+<h3 id="functional-equation">Functional Equation</h3>
+<p>$$
+\Gamma(z + 1) = z \Gamma(z).
+$$</p>
+<p>This follows from integration by parts, exactly as in the real case.</p>
+<h3 id="special-values">Special Values</h3>
+<p>$$
+\Gamma(n + 1) = n!
+$$</p>
+<p>for non-negative integers $n$, where the factorial is the ordinary real factorial applied to each idempotent component.</p>
+<h3 id="reflection-formula">Reflection Formula</h3>
+<p>$$
+\Gamma(z) \Gamma(1 - z) = \frac{\pi}{\sin(\pi z)},
+$$</p>
+<p>where the sine is the ordinary real sine applied to each idempotent component.</p>
+<h2 id="the-beta-function">The Beta Function</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>split complex beta function</strong> is defined for $x, y$ with $x_+ > 0$, $x_- > 0$, $y_+ > 0$, $y_- > 0$ by</p>
+<p>$$
+B(x, y) = \int_0^1 t^{x-1} (1 - t)^{y-1} \, dt.
+$$</p>
+<p>In the idempotent basis,</p>
+<p>$$
+B(x, y) = B(x_+, y_+) e_+ + B(x_-, y_-) e_-.
+$$</p>
+<h3 id="relation-to-the-gamma-function">Relation to the Gamma Function</h3>
+<p>$$
+B(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}.
+$$</p>
+<p>This follows from the same substitution as in the real case, applied to each idempotent component.</p>
+<h3 id="symmetry">Symmetry</h3>
+<p>$$
+B(x, y) = B(y, x).
+$$</p>
+<h2 id="the-error-function">The Error Function</h2>
+<h3 id="definition_3">Definition</h3>
+<p>The <strong>split complex error function</strong> is defined by</p>
+<p>$$
+\operatorname{erf}(z) = \frac{2}{\sqrt{\pi}} \int_0^z e^{-t^2} \, dt,
+$$</p>
+<p>where the integral is along a path from $0$ to $z$ that does not cross the light cone. In the idempotent basis,</p>
+<p>$$
+\operatorname{erf}(z) = \operatorname{erf}(z_+) e_+ + \operatorname{erf}(z_-) e_-.
+$$</p>
+<p>So the split complex error function is the pair of ordinary real error functions.</p>
+<h3 id="properties">Properties</h3>
+<p>$$
+\operatorname{erf}'(z) = \frac{2}{\sqrt{\pi}} e^{-z^2},
+$$</p>
+<p>$$
+\lim_{z \to \infty} \operatorname{erf}(z) = 1, \qquad \lim_{z \to -\infty} \operatorname{erf}(z) = -1,
+$$</p>
+<p>where the limits are taken along the real axis.</p>
+<h3 id="the-complementary-error-function">The Complementary Error Function</h3>
+<p>$$
+\operatorname{erfc}(z) = 1 - \operatorname{erf}(z) = \frac{2}{\sqrt{\pi}} \int_z^\infty e^{-t^2} \, dt.
+$$</p>
+<p>In the idempotent basis, this is the ordinary real complementary error function applied to each component.</p>
+<h2 id="the-airy-functions">The Airy Functions</h2>
+<h3 id="definition_4">Definition</h3>
+<p>The <strong>split complex Airy function</strong> is defined by</p>
+<p>$$
+\operatorname{Ai}(z) = \frac{1}{\pi} \int_0^\infty \cos\left(\frac{t^3}{3} + zt\right) dt,
+$$</p>
+<p>where the cosine is the ordinary real cosine applied to each idempotent component. In the idempotent basis,</p>
+<p>$$
+\operatorname{Ai}(z) = \operatorname{Ai}(z_+) e_+ + \operatorname{Ai}(z_-) e_-.
+$$</p>
+<p>So the split complex Airy function is the pair of ordinary real Airy functions.</p>
+<h3 id="differential-equation">Differential Equation</h3>
+<p>$$
+y'' - z y = 0.
+$$</p>
+<p>This is Airy's equation, and it holds in each idempotent component separately.</p>
+<h3 id="asymptotics">Asymptotics</h3>
+<p>For $z_+ \to +\infty$,</p>
+<p>$$
+\operatorname{Ai}(z_+) \sim \frac{1}{2 \sqrt{\pi} z_+^{1/4}} e^{-2 z_+^{3/2}/3}.
+$$</p>
+<p>For $z_+ \to -\infty$,</p>
+<p>$$
+\operatorname{Ai}(z_+) \sim \frac{1}{\sqrt{\pi} |z_+|^{1/4}} \sin\left(\frac{2 |z_+|^{3/2}}{3} + \frac{\pi}{4}\right).
+$$</p>
+<p>The same asymptotics hold for the minus component.</p>
+<h2 id="the-bessel-functions">The Bessel Functions</h2>
+<h3 id="definition_5">Definition</h3>
+<p>The <strong>split complex Bessel function</strong> of the first kind of order $\nu$ is defined by</p>
+<p>$$
+J_\nu(z) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{z}{2} \right)^{2n + \nu},
+$$</p>
+<p>where the power and the gamma function are split complex. In the idempotent basis,</p>
+<p>$$
+J_\nu(z) = J_\nu(z_+) e_+ + J_\nu(z_-) e_-.
+$$</p>
+<p>So the split complex Bessel function is the pair of ordinary real Bessel functions.</p>
+<h3 id="differential-equation_1">Differential Equation</h3>
+<p>$$
+z^2 y'' + z y' + (z^2 - \nu^2) y = 0.
+$$</p>
+<p>This is Bessel's equation, and it holds in each idempotent component separately.</p>
+<h3 id="modified-bessel-functions">Modified Bessel Functions</h3>
+<p>The <strong>split complex modified Bessel function</strong> of the first kind is</p>
+<p>$$
+I_\nu(z) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{z}{2} \right)^{2n + \nu}.
+$$</p>
+<p>In the idempotent basis, this is the ordinary real modified Bessel function applied to each component.</p>
+<h2 id="the-hypergeometric-function">The Hypergeometric Function</h2>
+<h3 id="definition_6">Definition</h3>
+<p>The <strong>split complex Gauss hypergeometric function</strong> is defined for $|z_+| < 1$ and $|z_-| < 1$ by</p>
+<p>$$
+{}_2F_1(a, b; c; z) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{z^n}{n!},
+$$</p>
+<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and all operations are split complex. In the idempotent basis,</p>
+<p>$$
+{}_2F_1(a, b; c; z) = {}_2F_1(a_+, b_+; c_+; z_+) e_+ + {}_2F_1(a_-, b_-; c_-; z_-) e_-.
+$$</p>
+<p>So the split complex hypergeometric function is the pair of ordinary real hypergeometric functions.</p>
+<h3 id="differential-equation_2">Differential Equation</h3>
+<p>$$
+z(1 - z) y'' + [c - (a + b + 1) z] y' - ab y = 0.
+$$</p>
+<p>This is the hypergeometric equation, and it holds in each idempotent component separately.</p>
+<h3 id="special-cases">Special Cases</h3>
+<p>$$
+{}_2F_1(1, 1; 2; z) = -\frac{\log(1 - z)}{z},
+$$</p>
+<p>$$
+{}_2F_1(a, b; b; z) = (1 - z)^{-a},
+$$</p>
+<p>$$
+{}_2F_1\left(\frac{1}{2}, \frac{1}{2}; \frac{3}{2}; z^2\right) = \frac{\arcsin z}{z},
+$$</p>
+<p>where the arcsine is the ordinary real arcsine applied to each idempotent component.</p>
+<h3 id="the-generalized-hypergeometric-function">The Generalized Hypergeometric Function</h3>
+<p>$$
+{}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; z) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{z^n}{n!}.
+$$</p>
+<p>In the idempotent basis, this is the ordinary real generalized hypergeometric function applied to each component.</p>
+<h2 id="the-lambert-w-function">The Lambert W Function</h2>
+<h3 id="definition_7">Definition</h3>
+<p>The <strong>split complex Lambert W function</strong> is the inverse of</p>
+<p>$$
+f(w) = w e^w.
+$$</p>
+<p>That is, $W(z)$ is any solution of</p>
+<p>$$
+W(z) e^{W(z)} = z.
+$$</p>
+<p>In the idempotent basis,</p>
+<p>$$
+W(z) = W(z_+) e_+ + W(z_-) e_-,
+$$</p>
+<p>where $W$ on the right is the ordinary real Lambert W function.</p>
+<h3 id="derivative">Derivative</h3>
+<p>$$
+W'(z) = \frac{W(z)}{z(1 + W(z))},
+$$</p>
+<p>defined wherever the denominator is invertible.</p>
+<h3 id="branches">Branches</h3>
+<p>The split complex Lambert W function has two real branches, corresponding to the two real branches $W_0$ and $W_{-1}$ of the ordinary Lambert W function. On the region where $z_+ > -1/e$ and $z_- > -1/e$, the principal branch is defined, and it is split complex differentiable.</p>
+<h2 id="the-idempotent-principle">The Idempotent Principle</h2>
+<p>The pattern in all the definitions above is the same: every split complex special function is the pair of ordinary real special functions, one for each idempotent component. This is not a coincidence; it is a theorem.</p>
+<p><strong>Theorem (Idempotent Principle).</strong> Let $F$ be a split complex special function defined by a formula that involves only the split complex algebra operations, the split complex exponential, and the split complex logarithm. Then $F$ decomposes in the idempotent basis as</p>
+<p>$$
+F(z) = F_+(z_+) e_+ + F_-(z_-) e_-,
+$$</p>
+<p>where $F_+$ and $F_-$ are the corresponding real special functions.</p>
+<p><strong>Proof.</strong> The split complex algebra is isomorphic to $\mathbb{R} \oplus \mathbb{R}$ via the idempotent decomposition. Every operation in the split complex algebra corresponds to the componentwise operation in $\mathbb{R} \oplus \mathbb{R}$. Every split complex special function is defined by a formula built from these operations, so it decomposes componentwise. $\square$</p>
+<p>This theorem is the reason split complex special functions are simpler than complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, because the split complex algebra is a product of two copies of $\mathbb{R}$ and the exponential is injective.</p>
+<h2 id="summary">Summary</h2>
+<p>The split complex special functions are the named functions that arise in split complex analysis, in hyperbolic geometry and in the theory of the wave equation. Each is obtained by carrying the corresponding real or complex definition to the split complex variable by means of the split complex exponential and the algebra operations.</p>
+<p>The exponential is defined by its series, and the hyperbolic functions are built from it, the trigonometric functions being replaced by their hyperbolic analogues because $j^2 = +1$. Integral representations then supply the gamma and beta functions, the error function, the Airy function, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $w \mapsto we^w$.</p>
+<p>The section on the idempotent principle states what organises the whole collection: every split complex special function is the pair of ordinary real special functions obtained by evaluating it on the two idempotent components, one for $e_+$ and one for $e_-$, so that each definition is a real definition applied twice.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>Split imaginary unit, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$e^z, \log z$</td>
+<td>Split complex exponential, logarithm</td>
+</tr>
+<tr>
+<td>$\sinh z, \cosh z, \tanh z$</td>
+<td>Split hyperbolic functions</td>
+</tr>
+<tr>
+<td>$\Gamma(z)$</td>
+<td>Split complex gamma function</td>
+</tr>
+<tr>
+<td>$B(x, y)$</td>
+<td>Split complex beta function</td>
+</tr>
+<tr>
+<td>$\operatorname{erf}(z), \operatorname{erfc}(z)$</td>
+<td>Split error function, complementary error function</td>
+</tr>
+<tr>
+<td>$\operatorname{Ai}(z)$</td>
+<td>Split Airy function</td>
+</tr>
+<tr>
+<td>$J_\nu(z), I_\nu(z)$</td>
+<td>Split Bessel functions</td>
+</tr>
+<tr>
+<td>${}_pF_q$</td>
+<td>Split generalized hypergeometric function</td>
+</tr>
+<tr>
+<td>$W(z)$</td>
+<td>Split Lambert W function</td>
+</tr>
+<tr>
+<td>$e_+ = (1 + j)/2$</td>
+<td>Positive idempotent</td>
+</tr>
+<tr>
+<td>$e_- = (1 - j)/2$</td>
+<td>Negative idempotent</td>
+</tr>
+<tr>
+<td>$z = z_+ e_+ + z_- e_-$</td>
+<td>Idempotent decomposition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the geometric interpretation of split complex numbers.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of SL(2, ℝ)</em> (Imperial College Press, 2012), for the analytic applications.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em> (McGraw-Hill, 1987), for the comparison with the complex case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

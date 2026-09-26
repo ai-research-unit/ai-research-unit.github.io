@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithmic Randomness and Chaitin's $\Omega$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="algorithmic-randomness-and-chaitins-math0"><strong>Algorithmic Randomness and Chaitin's $\Omega$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article stands in <em>Foundations of Analysis</em>, immediately after <em>Measure Theory and Integration</em>, and it is the effective refinement of that measure theory: the null sets are replaced by the effective null sets, and the reals that lie in no such set are the random reals. Both ingredients are above. The measure, the null sets and the measure algebra are <em>Measure Theory and Integration</em>, directly above; the computability, the computably enumerable sets and the halting problem are <em>Formal Logic and Computability</em>, in Part I, and the effective refinement of the real numbers is not redefined here. The article is in Part III for exactly this reason: it needs measure, which is a Part III object, and placing it in Part I would make a Part I article depend on Part III.</p>
+<p>Two boundaries are respected throughout. The article does not build a probability space of its own and does not use the martingale or the betting definitions of randomness; that apparatus belongs to <em>Probability and Ergodic Theory</em>, elsewhere in this Part. And the article does not use the combinatorial definitions of complexity beyond what it states; the complexity of a finite string is defined here in the two forms needed, with the theorems cited.</p>
+<hr />
+<h2 id="effective-measure-theory">Effective Measure Theory</h2>
+<p><strong>Definition.</strong> A real number is <strong>computable</strong> if there is a computable sequence of rationals converging to it with a computable rate of convergence, that is a computable function $n \mapsto q_n \in \mathbb{Q}$ with $|x - q_n| < 2^{-n}$ for every $n$. A set is <strong>computably enumerable</strong> if it is the range of a partial computable function, as in <em>Formal Logic and Computability</em>, above; a <strong>computably enumerable real</strong> is the limit of a computable increasing sequence of rationals, that is a real whose left Dedekind cut is computably enumerable.</p>
+<p><strong>Definition.</strong> A <strong>computable open set</strong> is a union $\bigcup_n (a_n, b_n)$ of rational intervals whose endpoints are given by a computable sequence. An <strong>effective null set</strong> is a set of the form</p>
+<p>$$
+\bigcap_{n \geq 0} U_n ,
+$$</p>
+<p>where $(U_n)$ is a computable sequence of computable open sets with $U_n \subseteq (0,1)$ and Lebesgue measure $\lambda(U_n) \leq 2^{-n}$ for every $n$. A real $x$ is <strong>Martin-Löf random</strong> if it lies in no effective null set.</p>
+<p><strong>Theorem.</strong> The effective null sets are null sets of <em>Measure Theory and Integration</em>, above; their union has measure zero, and consequently the set of Martin-Löf random reals has measure one.</p>
+<p><strong>Proof.</strong> Each effective null set is contained in a null set of the measure theory, since it is contained in $U_n$ for every $n$ and $\lambda(U_n) \to 0$, as in <em>Measure Theory and Integration</em>, above. The union of the effective null sets is itself an effective null set: enumerate the computable sequences of rational intervals, and for the $n$-th effective null set inside the enumeration absorb a factor $2^{-n}$, so that the union has measure zero. Hence the union of the effective null sets is null and its complement, the set of random reals, has measure one. $\square$</p>
+<p><strong>Remark.</strong> The definition is the effective form of "almost every": a property holds for almost every real when the set where it fails is null, and it holds for random reals when the failure set is effectively null. The two notions agree in that every effective null set is null, and they differ in that not every null set is effective: there are null sets that contain random reals, so the effective null sets are the ones a computable test can name. The article uses only the effective notion, and the refinement of the Borel sets to the effective hierarchy belongs to <em>Descriptive Set Theory</em>, elsewhere in this Part.</p>
+<hr />
+<h2 id="complexity-of-finite-strings">Complexity of Finite Strings</h2>
+<p><strong>Definition.</strong> Fix a universal partial computable function $U$ on binary strings, as in <em>Formal Logic and Computability</em>, above. The <strong>Kolmogorov complexity</strong> of a finite binary string $x$ is</p>
+<p>$$
+C(x) = \min \{ |p| : U(p) = x \} ,
+$$</p>
+<p>the length of the shortest program that outputs $x$; the <strong>prefix complexity</strong> $K(x)$ is the same with $U$ required to be prefix-free, that is to have no two inputs one of which is a proper initial segment of the other.</p>
+<p><strong>Theorem (invariance).</strong> The quantities $C$ and $K$ depend on the choice of $U$ only up to an additive constant: for any two universal machines there is a constant $c$ with $|C_1(x) - C_2(x)| \leq c$ for every $x$, and likewise for $K$.</p>
+<p><strong>Proof.</strong> A universal machine can simulate another with a fixed overhead: the simulation program has a fixed finite length, and the simulating machine is universal, so the shortest program on one machine for $x$ is at most the shortest program on the other plus the length of the simulator. The argument for $K$ is the same, the prefix-free requirement being preserved by prefixing a fixed program. $\square$</p>
+<p><strong>Theorem (the counting bound).</strong> For every $n$ and every constant $c$, the number of strings $x$ of length $n$ with $C(x) \leq n - c$ is at most $2^{n-c+1} - 1$; hence the number of strings of length $n$ that are incompressible to within $c$, that is with $C(x) > n - c$, is at least $2^n - 2^{n-c+1}$, a fraction at least $1 - 2^{1-c}$ of all of them.</p>
+<p><strong>Proof.</strong> There are exactly $2^m$ programs of length $m$, so the programs of length at most $n - c$ number $2^{n-c+1} - 1$, and each string has at most one shortest program, so at most that many strings of length $n$ have $C(x) \leq n - c$. The rest follow by subtracting, and the fraction is that number divided by $2^n$. $\square$</p>
+<p><strong>Remark.</strong> The counting bound is the finite form of the statement that almost every real is random: a string of length $n$ that has no short program is incompressible, and the theorem says that all but a fraction $2^{1-c}$ of the strings of length $n$ are incompressible to within $c$. The infinite form is the theorem of the next section.</p>
+<hr />
+<h2 id="chaitins-math56">Chaitin's $\Omega$</h2>
+<p><strong>Definition.</strong> Fix a prefix-free universal partial computable function $U$, as in the definition of $K$. <strong>Chaitin's constant</strong> is</p>
+<p>$$
+\Omega = \sum_{p : U(p) \text{ halts}} 2^{-|p|} ,
+$$</p>
+<p>the halting probability of $U$: the measure of the set of infinite binary sequences that begin with a program on which $U$ halts.</p>
+<p><strong>Theorem.</strong> The series defining $\Omega$ converges, and $\Omega$ is a real number in $(0,1)$. It is a computably enumerable real: its left Dedekind cut is computably enumerable, by enumerating the halting programs and summing the dyadic contributions.</p>
+<p><strong>Proof.</strong> The prefix-free condition makes the cylinders of the programs pairwise disjoint, so the total measure of their union is $\sum 2^{-|p|}$, which is at most the measure of the whole space, namely $1$; hence the series converges and its sum lies in $[0,1]$. It is positive because some program halts. It is less than $1$: if the sum were $1$ the cylinders of the halting programs would cover the whole space, so every program would be comparable in the prefix order with a halting program; the halting problem would then be decidable, by enumerating the halting programs until one comparable with a given program appears, the prefix-free condition turning that appearance into a decision, and this contradicts <em>Formal Logic and Computability</em>, above. The enumeration is the dovetailing of the computations of $U$: when a program of length $|p|$ is found to halt, add $2^{-|p|}$ to the partial sum, which gives a computable increasing sequence of rationals with limit $\Omega$. $\square$</p>
+<p><strong>Theorem (Chaitin).</strong> $\Omega$ is a Martin-Löf random real. Consequently $\Omega$ is not computable, and the halting problem is computable from the binary expansion of $\Omega$: there is an algorithm that, given an oracle for the bits of $\Omega$, decides whether $U(p)$ halts.</p>
+<p><strong>Proof.</strong> That $\Omega$ is random is the standard theorem of the subject, cited from the literature: if $\Omega$ lay in an effective null set, then the incompressibility of the initial segments of $\Omega$ would fail, and the counting bound above would be contradicted infinitely often; the proof uses the prefix complexity $K$ and the fact that the initial segments of a random real are incompressible. That no random real is computable is the fact proved below, so $\Omega$ is not computable. For the last statement, the algorithm enumerates the halting programs until the partial sums exceed the rational number obtained by truncating the expansion of $\Omega$, and the comparison with the truncated value decides halting; the argument is the standard one and is cited. $\square$</p>
+<p><strong>Corollary.</strong> $\Omega$ is transcendental.</p>
+<p><strong>Proof.</strong> Every algebraic real is computable: a defining polynomial with integer coefficients is evaluated exactly at rationals, its roots are isolated by rational intervals, and bisection on such an interval computes the real to any prescribed precision. No computable real is random, by the theorem below, and $\Omega$ is random; so $\Omega$ is not algebraic. $\square$</p>
+<p><strong>Corollary (incompressibility criterion).</strong> A real $x$ is Martin-Löf random exactly when there is a constant $c$ with</p>
+<p>$$
+K(x \upharpoonright n) \geq n - c
+$$</p>
+<p>for every $n$, where $x \upharpoonright n$ is the first $n$ bits of $x$.</p>
+<p><strong>Proof.</strong> If $x$ has incompressible initial segments then no effective null set contains $x$, because membership in an effective null set is certified by a computable sequence of tests each of which could be used to compress the initial segments; conversely if $x$ is random then the set of reals whose initial segments are compressible by more than a fixed amount is an effective null set, by the counting bound, so randomness forbids it. The equivalence is the standard one, cited from the literature. $\square$</p>
+<hr />
+<h2 id="immunity-and-the-failure-of-closure">Immunity and the Failure of Closure</h2>
+<p><strong>Theorem.</strong> Every Martin-Löf random real is incomputable: no computable real is random.</p>
+<p><strong>Proof.</strong> Let $x$ be computable. Then the set of reals whose first $n$ bits agree with those of $x$ is a computable open set of measure $2^{-n}$, given by a computable sequence of intervals; the intersection over $n$ of the sets obtained by taking the first $n$ bits and absorbing the factor is an effective null set containing $x$, since the $n$-th open set has measure $2^{-n}$. Hence $x$ is not random. $\square$</p>
+<p><strong>Theorem (immunity).</strong> Let a real $x$ be identified with the set of positions of the ones in its binary expansion. If $x$ is Martin-Löf random, then the set is <strong>immune</strong>: it has no infinite computably enumerable subset. The complement of the set is immune as well.</p>
+<p><strong>Proof.</strong> If $A \subseteq \mathbb{N}$ were an infinite computably enumerable subset of the set of positions of ones of $x$, then the reals whose binary expansion has ones at all elements of $A$ would form an effective null set containing $x$, since $A$ is enumerated by a computable process and the measure of the set of reals with ones prescribed on $n$ elements of $A$ is $2^{-n}$, which can be made to tend to zero computably; so randomness forbids an infinite computably enumerable subset. The same argument with zeros in place of ones gives the statement for the complement. $\square$</p>
+<p><strong>Remark.</strong> Immunity is not sparsity. The effective form of the law of large numbers — that the set of reals whose first $n$ bits contain fewer than $n/3$ ones for infinitely many $n$ is an effective null set, since the measures of the successive events are bounded by a summable sequence — shows that for a random real the number of ones among the first $n$ bits is at least $n/3$ for all large $n$; hence some computable function, say $n \mapsto 3n + c$ for a suitable integer $c$, dominates the principal function of the set, and the set of ones of a random real is dense in the computable sense rather than sparse. What randomness forbids is the existence of an infinite computably enumerable subset, and that is what the theorem states.</p>
+<p><strong>Theorem (failure of closure under arithmetic).</strong> The Martin-Löf random reals are not closed under addition and not closed under multiplication: for every random real $x$ there is a random real $y$ with $x + y$ computable and a random real $z$ with $xz$ computable.</p>
+<p><strong>Proof.</strong> Let $x$ be random and put $y = 1 - x$. The map $t \mapsto 1 - t$ is an isometry of the interval with computable inverse, so it carries a computable open set to a computable open set and preserves Lebesgue measure; hence it carries effective null sets to effective null sets, $y$ is random, and $x + y = 1$ is computable. For the product, let $z = 1/x$, which is defined because a random real is incomputable and hence nonzero; the map $t \mapsto 1/t$ is a computable homeomorphism of the non-zero reals with computable inverse, and that it preserves Martin-Löf randomness is the standard invariance of the notion under computable homeomorphisms, cited from the literature. Hence $z$ is random, while $xz = 1$ is computable. So the sum, and the product, of two random reals can be a computable real, and the classes are not closed. $\square$</p>
+<p><strong>Remark.</strong> The failures above are the standard content of the statement that randomness is not preserved by the arithmetic operations; the set of random reals is large, being of measure one, and it is not closed under the most elementary maps of the field. The corresponding statement for the effective refinement of a general measure space is the theory of the effective null sets, and the refinement of convergence and of probability belongs to <em>Probability and Ergodic Theory</em> and to <em>Modes of Convergence</em>, elsewhere in this Part, and is not used here.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>The effective refinement of measure theory replaces the null sets of <em>Measure Theory and Integration</em>, above, by the effective null sets, the sets of the form $\bigcap_n U_n$ with $(U_n)$ a computable sequence of computable open sets of measure at most $2^{-n}$, and defines the Martin-Löf random reals as those lying in no effective null set; the union of the effective null sets is null and the random reals therefore have measure one. The Kolmogorov and prefix complexities $C$ and $K$ measure the length of the shortest program for a finite string, depend on the machine only up to an additive constant, and satisfy the counting bound, which gives the incompressibility criterion: a real is random exactly when its initial segments are incompressible. Chaitin's $\Omega$ is the halting probability of a prefix-free universal machine, a computably enumerable real that is Martin-Löf random and therefore not computable, and the halting problem is computable from its bits. Every random real is incomputable, the set of ones of a random real and its complement each contain no infinite computably enumerable subset, and the random reals are not closed under addition or multiplication: the sum, and the product, of two random reals can be computable.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Omega$</td>
+<td>Chaitin's halting probability, a computably enumerable real</td>
+</tr>
+<tr>
+<td>$C(x)$, $K(x)$</td>
+<td>The Kolmogorov and prefix complexity of a finite binary string</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>A prefix-free universal partial computable function</td>
+</tr>
+<tr>
+<td>$x \upharpoonright n$</td>
+<td>The first $n$ bits of a real $x$</td>
+</tr>
+<tr>
+<td>$U_n$, $\bigcap_n U_n$</td>
+<td>A computable sequence of computable open sets, and an effective null set</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>Lebesgue measure, of <em>Measure Theory and Integration</em>, above</td>
+</tr>
+<tr>
+<td>computably enumerable real</td>
+<td>The limit of a computable increasing sequence of rationals</td>
+</tr>
+<tr>
+<td>Martin-Löf random</td>
+<td>Lying in no effective null set</td>
+</tr>
+<tr>
+<td>immune</td>
+<td>Containing no infinite computably enumerable subset</td>
+</tr>
+<tr>
+<td>$\{0,1\}^{\mathbb{N}}$</td>
+<td>The space of binary sequences, whose cylinders carry the halting probability</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>R. G. Downey and D. R. Hirschfeldt, <em>Algorithmic Randomness and Complexity</em> (Springer, 2010), for the Martin-Löf definition, the complexity of finite strings and the immunity properties of random sets.</li>
+<li>P. Martin-Löf, <em>The definition of random sequences</em> (Information and Control, 1966), for the original definition by effective null sets.</li>
+<li>A. Nies, <em>Computability and Randomness</em> (Oxford University Press, 2009), for the incompressibility criterion, the halting probability and the failure of closure under the arithmetic operations.</li>
+<li>G. J. Chaitin, <em>A theory of program size formally identical to information theory</em> (Journal of the ACM, 1975), for the halting probability and its randomness.</li>
+<li>M. Li and P. Vitányi, <em>An Introduction to Kolmogorov Complexity and Its Applications</em> (Springer, 3rd ed. 2008), for the invariance theorem, the counting bound and the two forms of complexity.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

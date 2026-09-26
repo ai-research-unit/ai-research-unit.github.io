@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Biquaternion Continuous Harmonic Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-biquaternion-continuous-harmonic-analysis"><strong>Split-Biquaternion Continuous Harmonic Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces harmonic analysis for split-biquaternion-valued functions of a real variable. It follows the article on split biquaternion discrete harmonic analysis, which defined the discrete split-biquaternion Fourier transform, and it uses the analysis article, which defined the split-biquaternion gradient, the d'Alembertian, and the convective derivative on the four-dimensional subspaces of $\mathbb{H}_{\mathbb{D}}$.</p>
+<p>The treatment is purely mathematical. The goal is to define the continuous split-biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms via the idempotent decomposition, and identify the points where the split biquaternion structure creates genuinely new phenomena. The relation to the differential operators of the analysis article is the main structural content of this article.</p>
+<p>The key structural fact is the same as in the discrete case: the <strong>idempotent decomposition</strong> of the split biquaternion algebra reduces the transform to two independent quaternion Fourier transforms, one for each idempotent component. The split complex unit $j$ does not appear in the kernel; it only appears in the idempotent decomposition that separates the two components. This is the fundamental simplification relative to the biquaternion case.</p>
+<p>Throughout, a split biquaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+$$</p>
+<p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.</p>
+<p>The <strong>idempotent components</strong> of $\tilde{Q}$ are the real quaternions</p>
+<p>$$
+\tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
+$$</p>
+<p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$, with $e_\pm = \tfrac{1}{2}(1 \pm j)$.</p>
+<p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.</p>
+<h2 id="the-fourier-kernel">The Fourier Kernel</h2>
+<h3 id="definition">Definition</h3>
+<p>Fix a root $\rho$ of $-1$ in the quaternion algebra $\mathbb{H}$, i.e., an element $\rho \in \mathbb{H}$ with</p>
+<p>$$
+\rho^2 = -1.
+$$</p>
+<p>The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions, i.e., the elements of the form $\rho = \mu$ with $\mu \in \mathbb{R}^3_{\mathbb{H}}$ and $|\mu| = 1$.</p>
+<p>The <strong>split biquaternion Fourier kernel</strong> is the function</p>
+<p>$$
+W(t, \omega) = \exp(-2\pi \rho \omega t), \qquad t, \omega \in \mathbb{R},
+$$</p>
+<p>where the exponential is the split biquaternion exponential and $\rho$ is viewed as an element of $\mathbb{H}_{\mathbb{D}}$ via the embedding $\mathbb{H} \hookrightarrow \mathbb{H}_{\mathbb{D}}$.</p>
+<p>Because $\rho^2 = -1$, the kernel takes the closed form</p>
+<p>$$
+W(t, \omega) = \cos(2\pi \omega t) \, e_0 - \sin(2\pi \omega t) \, \rho,
+$$</p>
+<p>where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi \omega t$. The kernel is therefore a unit quaternion:</p>
+<p>$$
+N(W(t, \omega)) = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = 1.
+$$</p>
+<p>In particular, the kernel is always invertible, and its inverse is its quaternion conjugate:</p>
+<p>$$
+W(t, \omega)^{-1} = \overline{W(t, \omega)} = \cos(2\pi \omega t) \, e_0 + \sin(2\pi \omega t) \, \rho.
+$$</p>
+<p>The kernel is the same in both idempotent components, so the split biquaternion kernel is the diagonal embedding of the quaternion kernel. This is the same as in the discrete case.</p>
+<h3 id="the-condition-on-the-root">The Condition on the Root</h3>
+<p>A quaternion $\rho$ satisfies $\rho^2 = -1$ if and only if it is a pure real quaternion of unit norm:</p>
+<p>$$
+\rho \in \mathbb{R}^3_{\mathbb{H}}, \qquad |\rho| = 1.
+$$</p>
+<p>So the roots of $-1$ in the quaternion algebra form the unit two-sphere $\mathbb{S}^2$ in the three-dimensional space of pure real quaternions. This is the same as in the discrete case.</p>
+<p>The choice of root $\rho$ determines the <strong>axis</strong> of the Fourier transform. Different choices of $\rho$ give different decompositions, and the transforms are related by conjugation in the quaternion algebra.</p>
+<h2 id="the-continuous-transform-pair">The Continuous Transform Pair</h2>
+<h3 id="definition_1">Definition</h3>
+<p>Let $f : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ be a split-biquaternion-valued function. The <strong>continuous split-biquaternion Fourier transform</strong> of $f$ is</p>
+<p>$$
+F(\omega) = \int_{-\infty}^{\infty} W(t, \omega) f(t) \, dt = \int_{-\infty}^{\infty} \exp(-2\pi \rho \omega t) f(t) \, dt, \qquad \omega \in \mathbb{R},
+$$</p>
+<p>provided the integral converges. The <strong>inverse transform</strong> is</p>
+<p>$$
+f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega = \int_{-\infty}^{\infty} \exp(2\pi \rho \omega t) F(\omega) \, d\omega,
+$$</p>
+<p>provided the integral converges.</p>
+<p>The placement of the kernel on the <strong>left</strong> of $f(t)$ is a choice. An alternative transform has the kernel on the right:</p>
+<p>$$
+F(\omega) = \int_{-\infty}^{\infty} f(t) \, W(t, \omega) \, dt.
+$$</p>
+<p>The two transforms are related as in the discrete case: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $\overline{K(t,\omega) f(t)} = \overline{f(t)}\,\overline{K(t,\omega)}$.)</p>
+<h3 id="convergence">Convergence</h3>
+<p>The integral defining the transform converges absolutely if $f$ is integrable, i.e., if</p>
+<p>$$
+\int_{-\infty}^{\infty} \|f(t)\|_E \, dt < \infty.
+$$</p>
+<p>Under this condition, the transform $F$ is bounded and uniformly continuous:</p>
+<p>$$
+\|F(\omega)\|_E \leq \int_{-\infty}^{\infty} \|f(t)\|_E \, dt, \qquad \omega \in \mathbb{R}.
+$$</p>
+<p>The convergence of the inverse transform requires additional conditions, as in the ordinary complex case. The standard conditions are:</p>
+<ul>
+<li>$f$ is integrable and continuous at the point $t$.</li>
+<li>$F$ is integrable.</li>
+<li>The kernel is chosen so that the inversion formula holds pointwise.</li>
+</ul>
+<p>Under these conditions, the inverse formula holds at every point of continuity of $f$.</p>
+<h3 id="the-riemannlebesgue-lemma">The Riemann–Lebesgue Lemma</h3>
+<p><strong>Theorem (Riemann–Lebesgue).</strong> If $f : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ is integrable, then</p>
+<p>$$
+\lim_{|\omega| \to \infty} \|F(\omega)\|_E = 0.
+$$</p>
+<p><strong>Proof.</strong> The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement. $\square$</p>
+<h3 id="the-inversion-theorem">The Inversion Theorem</h3>
+<p><strong>Theorem (inversion).</strong> Let $f : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ be integrable and continuous at a point $t \in \mathbb{R}$, and let $F$ be integrable. Then</p>
+<p>$$
+f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega.
+$$</p>
+<p><strong>Proof.</strong> The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the idempotent basis. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the quaternion transform in each component. $\square$</p>
+<h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
+<p><strong>Theorem (Plancherel).</strong> The transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{H}_{\mathbb{D}})$ of square-integrable split-biquaternion-valued functions, with</p>
+<p>$$
+\int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
+$$</p>
+<p><strong>Proof.</strong> The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|_E^2 = \frac12(\|\tilde{Q}_+\|_E^2 + \|\tilde{Q}_-\|_E^2)$, so that the factor cancels between the two sides), the total norm is preserved. $\square$</p>
+<p><strong>Corollary (Parseval).</strong> For $f, g \in L^2(\mathbb{R}, \mathbb{H}_{\mathbb{D}})$,</p>
+<p>$$
+\int_{-\infty}^{\infty} \overline{f(t)} g(t) \, dt = \int_{-\infty}^{\infty} \overline{F(\omega)} G(\omega) \, d\omega.
+$$</p>
+<h2 id="factorization-into-quaternion-and-complex-fourier-transforms">Factorization into Quaternion and Complex Fourier Transforms</h2>
+<h3 id="the-idempotent-decomposition-of-the-transform">The Idempotent Decomposition of the Transform</h3>
+<p>The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) e_+ + f_-(t) e_-$ and using the fact that the kernel is the same in both components,</p>
+<p>$$
+F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) e_+ + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) e_-.
+$$</p>
+<p>So the transform is the pair of the <strong>quaternion Fourier transforms</strong> of the two idempotent components:</p>
+<p>$$
+F(\omega) = F_+(\omega) e_+ + F_-(\omega) e_-,
+$$</p>
+<p>where $F_\pm(\omega) = \int_{-\infty}^{\infty} W(t, \omega) f_\pm(t) \, dt$ is the quaternion Fourier transform of the component $f_\pm$.</p>
+<p>This is the fundamental simplification: the split biquaternion Fourier transform reduces to <strong>two independent quaternion Fourier transforms</strong>, one for each idempotent component.</p>
+<h3 id="the-quaternion-fourier-transform">The Quaternion Fourier Transform</h3>
+<p>The quaternion Fourier transform of a quaternion-valued function $g : \mathbb{R} \to \mathbb{H}$ is defined by</p>
+<p>$$
+G(\omega) = \int_{-\infty}^{\infty} W(t, \omega) g(t) \, dt,
+$$</p>
+<p>where $W(t, \omega) = \exp(-2\pi \rho \omega t)$ and $\rho$ is a unit pure real quaternion.</p>
+<p>The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g(t)$ in the basis $\{e_0, \rho, \nu, \xi\}$:</p>
+<p>$$
+g(t) = g_0(t) e_0 + g_\rho(t) \rho + g_\nu(t) \nu + g_\xi(t) \xi, \qquad g_\bullet(t) \in \mathbb{C}.
+$$</p>
+<p>The quaternion Fourier transform then decomposes into <strong>four complex Fourier transforms</strong>, one for each complex coefficient, as discussed in the biquaternion continuous harmonic analysis article.</p>
+<h3 id="the-full-factorization">The Full Factorization</h3>
+<p>Combining the idempotent decomposition with the quaternion Fourier transform factorization, the split biquaternion Fourier transform decomposes into <strong>eight complex Fourier transforms</strong>:</p>
+<ul>
+<li>Two idempotent components, each with four complex coefficients.</li>
+</ul>
+<p>This is the total number of complex transforms required for a general split-biquaternion-valued function.</p>
+<p>If the function takes values in a subspace with fewer complex components, the number of complex transforms is reduced:</p>
+<ul>
+<li><strong>Split complex subspace:</strong> The function has two real components. The transform reduces to <strong>two complex Fourier transforms</strong> (one for each idempotent component, after splitting each component into real and imaginary parts; since the components are real scalars, only two real Fourier transforms are needed).</li>
+<li><strong>Quaternion subspace:</strong> The function has four real components. The transform reduces to <strong>four complex Fourier transforms</strong> (one for each component of the quaternion Fourier transform).</li>
+<li><strong>General split biquaternion:</strong> The function has eight real components. The transform requires <strong>eight complex Fourier transforms</strong>.</li>
+</ul>
+<h3 id="why-this-matters">Why This Matters</h3>
+<p>The factorization shows that the split biquaternion Fourier transform is not a fundamentally new operation: it is the quaternion Fourier transform applied to the two idempotent components, dressed in split biquaternion language. The non-trivial content is the <strong>choice of root</strong> $\rho$ and the <strong>idempotent decomposition</strong>. Everything else is ordinary harmonic analysis.</p>
+<h2 id="the-convolution-theorem">The Convolution Theorem</h2>
+<h3 id="definition-of-convolution">Definition of Convolution</h3>
+<p>Let $f, g : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ be two split-biquaternion-valued functions. The <strong>convolution</strong> of $f$ and $g$ is</p>
+<p>$$
+(f * g)(t) = \int_{-\infty}^{\infty} f(\tau) g(t - \tau) \, d\tau,
+$$</p>
+<p>provided the integral converges. The convolution is <strong>not commutative</strong> in general, because the split biquaternion product is not commutative.</p>
+<h3 id="the-convolution-theorem_1">The Convolution Theorem</h3>
+<p><strong>Theorem (convolution theorem).</strong> Let $f, g : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ be integrable, and let $\mathcal{F}$ denote the continuous split-biquaternion Fourier transform with the kernel on the left:</p>
+<p>$$
+\mathcal{F}[f](\omega) = \int_{-\infty}^{\infty} W(t, \omega) f(t) \, dt.
+$$</p>
+<p>Then</p>
+<p>$$
+\mathcal{F}[f * g](\omega) = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega),
+$$</p>
+<p>where the product on the right is the split biquaternion product.</p>
+<p><strong>Proof.</strong> Compute</p>
+<p>$$
+\mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} W(t, \omega) \int_{-\infty}^{\infty} f(\tau) g(t - \tau) \, d\tau \, dt.
+$$</p>
+<p>Apply Fubini's theorem and change variables $t = \tau + s$:</p>
+<p>$$
+\mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} W(\tau + s, \omega) f(\tau) g(s) \, ds \, d\tau.
+$$</p>
+<p>The kernel is multiplicative in the time argument: $W(\tau + s, \omega) = W(\tau, \omega) W(s, \omega)$. So</p>
+<p>$$
+\mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} W(\tau, \omega) f(\tau) \, d\tau \cdot \int_{-\infty}^{\infty} W(s, \omega) g(s) \, ds = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega).
+$$</p>
+<p>$\square$</p>
+<p><strong>Corollary (right-kernel case).</strong> For the transform with the kernel on the right,</p>
+<p>$$
+\mathcal{F}_{\text{right}}[f * g](\omega) = \mathcal{F}_{\text{right}}[g](\omega) \cdot \mathcal{F}_{\text{right}}[f](\omega).
+$$</p>
+<h3 id="consequences">Consequences</h3>
+<p>The convolution theorem implies that convolution in the time domain becomes <strong>split biquaternion multiplication</strong> in the frequency domain. The convolution is associative, distributive over addition, and not commutative.</p>
+<h3 id="the-convolution-theorem-in-the-idempotent-basis">The Convolution Theorem in the Idempotent Basis</h3>
+<p>In the idempotent basis, the convolution decomposes:</p>
+<p>$$
+(f * g)_+ = f_+ * g_+, \qquad (f * g)_- = f_- * g_-,
+$$</p>
+<p>where $*$ on the right is the quaternion convolution. So the split biquaternion convolution is the pair of the quaternion convolutions of the two idempotent components. This is the cleanest form of the convolution theorem.</p>
+<h2 id="the-relation-to-the-differential-operators">The Relation to the Differential Operators</h2>
+<p>The continuous Fourier transform is the natural tool for analysing the differential operators of the analysis article. This is the main structural content of the continuous theory.</p>
+<h3 id="the-gradient">The Gradient</h3>
+<p>Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $x_0, x_1, x_2, x_3$. For a function $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $x_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:</p>
+<p>$$
+\mathcal{F}[\partial_0 \tilde{F}](\omega) = 2\pi \rho \omega \, \mathcal{F}[\tilde{F}](\omega),
+$$</p>
+<p>where the sign depends on the convention for the kernel.</p>
+<p>If the transform is taken in all four variables, the gradient becomes multiplication by the split biquaternion</p>
+<p>$$
+2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+$$</p>
+<p>where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $x_0, x_1, x_2, x_3$. The precise form depends on the placement of the root $\rho$ and on the choice of basis, but the structural fact is that the gradient becomes a split-biquaternion-valued multiplier.</p>
+<h3 id="the-dalembertian">The d'Alembertian</h3>
+<p>The d'Alembertian $\Box = \partial_0^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,</p>
+<p>$$
+\mathcal{F}[\Box \tilde{F}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[\tilde{F}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[\tilde{F}](\omega).
+$$</p>
+<p>The multiplier is a scalar (times $e_0$), and it vanishes on the <strong>light cone</strong></p>
+<p>$$
+\omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
+$$</p>
+<p>So the Fourier transform of a solution of $\Box \tilde{F} = 0$ is supported on the light cone.</p>
+<h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
+<p>The square of the gradient $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a split-biquaternion-valued operator. Under the transform, it becomes multiplication by</p>
+<p>$$
+-4\pi^2 \Big[\Big(\omega_0^2 - \sum_k \omega_k^2\Big) e_0 + 2\omega_0 \sum_k e_k \omega_k\Big],
+$$</p>
+<p>which is a split-biquaternion-valued multiplier.</p>
+<h3 id="the-convective-derivative">The Convective Derivative</h3>
+<p>The convective derivative $\tilde{D} = \bar{\tilde{U}} \tilde{\nabla}$ becomes multiplication by the split biquaternion</p>
+<p>$$
+\bar{\tilde{U}} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+$$</p>
+<p>which depends on the velocity split biquaternion $\tilde{U}$ and on the frequency variables.</p>
+<h3 id="the-general-principle">The General Principle</h3>
+<p>The general principle is that the continuous Fourier transform <strong>diagonalizes the constant-coefficient differential operators</strong> on the four-dimensional subspaces. The symbol of the operator is a split-biquaternion-valued function of the frequency variables, and the solutions of the operator equation are determined by the support of the transform on the zero set of the symbol.</p>
+<h3 id="the-operators-in-the-idempotent-basis">The Operators in the Idempotent Basis</h3>
+<p>In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as</p>
+<p>$$
+\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) e_+ + (\tilde{\nabla} \tilde{F}_-) e_-,
+$$</p>
+<p>where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.</p>
+<h2 id="the-vanishing-norm-issue">The Vanishing-Norm Issue</h2>
+<h3 id="functions-of-vanishing-norm">Functions of Vanishing Norm</h3>
+<p>A function $f : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ may take values of vanishing norm form on a set of positive measure. In the idempotent basis, such values are exactly those with a vanishing idempotent component: $f_+(t) = 0$ or $f_-(t) = 0$.</p>
+<h3 id="consequences-for-the-transform">Consequences for the Transform</h3>
+<ul>
+<li><strong>The transform is not necessarily invertible on functions that take zero-divisor values on a set of positive measure.</strong></li>
+<li><strong>The transform is invertible on functions where both idempotent components are nonzero almost everywhere.</strong></li>
+</ul>
+<p>The precise condition under which the transform is invertible on a function with zero-divisor values is not known; it depends on the cancellations in the integral.</p>
+<h3 id="structural-interpretation">Structural Interpretation</h3>
+<p>The vanishing-norm issue is a genuinely split biquaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split biquaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a complex cone of complex dimension $3$ (real dimension $6$).</p>
+<p>The issue can be avoided by restricting to functions whose values lie in a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero value is invertible, and the transform is invertible on all functions.</p>
+<h2 id="the-relation-to-the-discrete-transform">The Relation to the Discrete Transform</h2>
+<h3 id="sampling">Sampling</h3>
+<p>The continuous transform is the limit of the discrete transform as the number of samples $N$ tends to infinity and the sampling interval tends to zero. The precise relation is the standard one: if $f$ is a function of bounded variation and $F$ is its continuous transform, then the discrete transform of the samples $f(nT)$ for $n \in \mathbb{Z}$ approximates $F$ as the sampling interval $T$ tends to zero.</p>
+<h3 id="periodization">Periodization</h3>
+<p>Conversely, the discrete transform is the periodization of the continuous transform. If $f$ is a function with continuous transform $F$, then the discrete transform of the samples $f(nT)$ is the periodization of $F$:</p>
+<p>$$
+F_{\text{disc}}[u] = \frac{1}{T} \sum_{k \in \mathbb{Z}} F\left(\frac{u}{NT} + \frac{k}{T}\right).
+$$</p>
+<p>This is the standard Poisson summation formula, and it holds in the split biquaternion case with the same proof, because the kernel is the ordinary complex kernel in the direction $\rho$.</p>
+<h3 id="the-sampling-theorem">The Sampling Theorem</h3>
+<p>The <strong>sampling theorem</strong> (or Shannon–Nyquist theorem) states that a function whose continuous transform is supported in a bounded interval $[-W, W]$ can be reconstructed from its samples at the rate $1/(2W)$. The split biquaternion version of the sampling theorem holds under the same conditions, with the reconstruction formula</p>
+<p>$$
+f(t) = \sum_{n \in \mathbb{Z}} f(nT) \operatorname{sinc}\left(\frac{t - nT}{T}\right),
+$$</p>
+<p>where the sinc function is the ordinary real sinc, and the convergence is in the appropriate sense. The proof is the same as in the complex case, because the reconstruction is component-wise.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The precise invertibility condition.</strong> Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.</p>
+</li>
+<li>
+<p><strong>The support of the transform of solutions of $\tilde{\nabla}\tilde{F} = 0$.</strong> The Fourier transform of a solution of the gradient equation $\tilde{\nabla}\tilde{F} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
+</li>
+<li>
+<p><strong>The Plancherel theorem for general functions.</strong> Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.</p>
+</li>
+<li>
+<p><strong>Wavelets and time-frequency analysis.</strong> Can a split biquaternion wavelet transform be defined, and what are its properties? Can a split biquaternion time-frequency distribution be defined?</p>
+</li>
+<li>
+<p><strong>The relation to the analysis article.</strong> The connection between the continuous Fourier transform and the differential operators is established at the level of symbols. What are the deeper consequences for the structure of the solutions of the operator equations?</p>
+</li>
+<li>
+<p><strong>The Clifford algebra framework.</strong> How does the split biquaternion continuous Fourier transform fit into the general theory of Clifford algebra Fourier transforms with split signature?</p>
+</li>
+<li>
+<p><strong>The relation to the biquaternion case.</strong> The split biquaternion transform reduces to two quaternion transforms, while the biquaternion transform reduces to four complex transforms. What are the advantages and disadvantages of each in applications?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The continuous split-biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi \rho \omega t)$, where $\rho$ is a unit pure real quaternion (a root of $-1$ in the quaternion algebra). The kernel is the same in both idempotent components, so the transform decomposes into two independent quaternion Fourier transforms, one for each component.</p>
+<p>The transform is invertible on functions where both idempotent components are nonzero almost everywhere, and it satisfies the Riemann–Lebesgue lemma, the inversion theorem, and the Plancherel theorem. It factorizes into eight complex Fourier transforms for a general split-biquaternion-valued function, four for a quaternion-valued function, and two for a split-complex-valued function. The convolution theorem holds, with the non-commutativity inherited from the quaternion case.</p>
+<p>The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a split-biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the light cone, and the convective derivative becomes a split-biquaternion-valued multiplier depending on the velocity. In the idempotent basis, the operators act componentwise, and the transform diagonalizes them in each quaternion component.</p>
+<p>The vanishing-norm issue is a genuinely split biquaternion feature: functions that take zero-divisor values on a set of positive measure are not necessarily recoverable from their transform, and the precise invertibility condition is not known.</p>
+<p>The continuous transform is the limit of the discrete transform as the sampling interval tends to zero, and it is related to the discrete transform by the Poisson summation formula and the sampling theorem.</p>
+<p>The key simplification relative to the biquaternion case is the <strong>idempotent decomposition</strong>: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, so the split biquaternion Fourier transform reduces to two quaternion Fourier transforms. The split complex unit $j$ does not appear in the kernel; it only appears in the idempotent decomposition that separates the two components.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions.</li>
+<li>S. Said, N. Le Bihan, S. J. Sangwine, "Fast complexified quaternion Fourier transform", <em>IEEE Transactions on Signal Processing</em> <strong>56</strong> (2008) 1522–1531, for the definition and factorization of the biquaternion Fourier transform, which is closely related.</li>
+<li>S. J. Sangwine and T. A. Ell, "Complexification of the quaternion roots of $-1$", arXiv:math.RA/0506190 (2005), for the classification of the biquaternion roots of $-1$, which provides background for the quaternion roots.</li>
+<li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", arXiv:0812.1102 (2008), for the classification of the zero divisors, which provides background for the split biquaternion zero divisors.</li>
+<li>N. Le Bihan and J. Mars, "Singular value decomposition of quaternion matrices: a new tool for vector-sensor signal processing", <em>Signal Processing</em> <strong>84</strong> (2004) 1177–1199, for the quaternion signal processing background.</li>
+<li>T. A. Ell and S. J. Sangwine, "Hypercomplex Fourier transforms of color images", <em>IEEE Transactions on Image Processing</em> <strong>16</strong> (2007) 22–35, for the quaternion Fourier transform and its applications.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the algebraic structure of the split biquaternions.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford analysis with split signature.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fundamental Group of a Lie Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fundamental-group-of-a-lie-group"><strong>The Fundamental Group of a Lie Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Lie group is a group and a manifold at once, and the two structures constrain each other sharply: the multiplication is smooth, so the group acts on itself by diffeomorphisms, and every local question can be translated to the identity. The first topological invariant of a Lie group is its fundamental group, and the theory of <em>The Fundamental Group and Covering Spaces</em> applies with an extra rigidity. The fundamental group of any topological group is <strong>abelian</strong>; the universal cover of a connected Lie group carries a Lie group structure, so that every connected Lie group is a quotient $\tilde G \to G$ of a simply connected Lie group by a discrete central subgroup isomorphic to $\pi_1(G)$; and for a compact connected Lie group the fundamental group is finite and computable from the combinatorial data of a maximal torus and its roots. The classical groups are the standard examples: $\pi_1(U(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = 0$, $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and the double cover $SU(2) \to SO(3)$ is the first case of the spin cover of <em>The Clifford, Pin and Spin Groups</em>.</p>
+<p>The Lie theory itself — the correspondence between Lie groups and Lie algebras, the exponential map, the closed subgroup theorem, the maximal torus theory — is assumed from the companion article <em>Lie Groups</em> of Part I, and the topological group theory from <em>Topological Groups</em> and <em>Abelian Topological Groups</em>. What this article supplies is the topological computation: the abelianness of $\pi_1$ and its consequences, the classification of connected coverings of a Lie group and the universal covering group, the reduction of $\pi_1(G)$ to the fundamental group of a maximal compact subgroup, the computation of $\pi_1$ for a compact connected group from the coroot lattice of a maximal torus, and the long exact sequence of a homogeneous space, which relates $\pi_1$ of a Lie group to $\pi_1$ of the quotients by closed subgroups. The higher homotopy groups of Lie groups and their homogeneous spaces, and the homology computations that follow from them, are not covered here; the covering-space correspondence is that of <em>The Fundamental Group and Covering Spaces</em>, and the classification of coverings by subgroups of $\pi_1$ is used throughout.</p>
+<p>Throughout, $G$ is a topological group or a Lie group, $\mathfrak{g}$ its Lie algebra, $G_0$ the identity component, $\pi_0(G) = G/G_0$ the group of components, $\tilde G$ the universal cover, and $\exp : \mathfrak{g} \to G$ the exponential map. The symbol $K$ denotes a maximal compact subgroup of a connected Lie group and $T$ a maximal torus of a compact connected Lie group.</p>
+<h2 id="the-fundamental-group-is-abelian">The Fundamental Group is Abelian</h2>
+<h3 id="the-eckmannhilton-argument">The Eckmann–Hilton Argument</h3>
+<p><strong>Theorem.</strong> Let $G$ be a topological group with basepoint the identity. Then $\pi_1(G, e)$ is abelian, and more generally the fundamental group of any group object in the category of pointed topological spaces is abelian.</p>
+<p><em>Proof.</em> Let $\mu : G \times G \to G$ be the multiplication and let $\alpha, \beta : (S^1, 1) \to (G,e)$ be two loops. On the product $S^1 \times S^1$ consider the four maps obtained by inserting the constant loop in one variable; the two loop structures on $S^1\times S^1$ — the one from the first coordinate and the one from the second — are interchanged by the transposition of the factors, and $\mu$ is a map of pointed spaces. Concatenation in the first coordinate followed by $\mu$ gives the composite $\alpha \ast \beta$, and concatenation in the second coordinate gives $\beta \ast \alpha$. Both are homotopic, by the interchange of coordinates in the square, to the map $S^1\times S^1 \to G$ that is $\mu(\alpha,\beta)$ after collapsing the boundary, whence $\alpha\ast\beta \simeq \beta\ast\alpha$. $\square$</p>
+<p><strong>Remark.</strong> The argument is the <strong>Eckmann–Hilton argument</strong>: two monoid structures on the same set that distribute over one another coincide and are commutative. The two structures here are the two concatenations of loops, and the interchange law is the compatibility of the concatenations with the product in $G$. The same argument shows that $\pi_n(G)$ is abelian for $n \geq 2$ for <em>any</em> pointed space, by the two-coordinate interchange on $S^n$; the content of the present theorem is that for a group the abelianness descends to $n=1$.</p>
+<h3 id="consequences">Consequences</h3>
+<p><strong>Proposition.</strong> For a Lie group $G$:</p>
+<ol>
+<li>$\pi_1(G) \cong \pi_1(G_0)$, and the inclusion $G_0 \hookrightarrow G$ induces isomorphisms $\pi_n(G_0) \to \pi_n(G)$ for every $n \geq 1$ and isomorphisms on homology in every degree.</li>
+<li>$H_1(G;\mathbb{Z}) \cong \pi_1(G)$ by the Hurewicz theorem of <em>Homotopy Groups and Fibrations</em>, so the first homology of a Lie group is free abelian or torsion as $\pi_1$ is.</li>
+<li>$\pi_1(G)$ acts trivially on $\pi_n(G)$ for every $n \geq 1$, and the action of $\pi_1$ on the fibre homology in any fibration with connected fibre over a Lie group is trivial, so local coefficients are unnecessary in the computations of this article.</li>
+</ol>
+<p><em>Proof.</em> (1) The projection $G \to \pi_0(G)$ is a covering, since $\pi_0(G)$ is discrete and $G$ is locally connected, so $G$ is a disjoint union of the cosets of $G_0$, each homeomorphic to $G_0$. (2) is the Hurewicz theorem, applicable since $\pi_1$ is abelian and $G$ is connected when restricted to $G_0$. (3) The action of a loop $\gamma$ based at $e$ on $\pi_n(G)$ is by the map induced from translation along $\gamma$; but translation by $\gamma(1) = e$ is the identity, and the homotopy $x \mapsto \gamma(t)x$ deforms translation along the loop to the identity through homotopy equivalences, so the action is trivial. The statement for local coefficients follows. $\square$</p>
+<p><strong>Remark.</strong> The triviality of the $\pi_1$-action makes the Lie group case cleaner than the general case of <em>Homotopy Groups and Fibrations</em>: the Serre spectral sequence of a fibration of Lie groups has constant coefficients, and the homology of a homogeneous space can be computed with ordinary coefficients.</p>
+<h2 id="the-universal-covering-group">The Universal Covering Group</h2>
+<h3 id="coverings-of-a-lie-group">Coverings of a Lie Group</h3>
+<p><strong>Theorem (covering groups).</strong> Let $G$ be a connected Lie group and $p : \hat G \to G$ a connected covering space. Then $\hat G$ carries a unique Lie group structure making $p$ a homomorphism of Lie groups and a local diffeomorphism; the subgroup $p_*\pi_1(\hat G) \leq \pi_1(G)$ determines the covering up to isomorphism, and every subgroup of $\pi_1(G)$ arises.</p>
+<p><em>Proof.</em> Fix the basepoint $\hat e$ over $e$ and define $\hat\mu : \hat G\times\hat G \to \hat G$ as the lift of $\mu \circ (p\times p) : \hat G\times \hat G\to G$ sending $(\hat e,\hat e)$ to $\hat e$; the lift exists and is unique because $\hat G \times \hat G$ is simply connected when $\hat G$ is, and the group axioms follow by uniqueness of lifts of the corresponding maps on the simply connected cover. The statement for a general connected covering follows by factoring through the universal cover. The correspondence between coverings and subgroups is that of <em>The Fundamental Group and Covering Spaces</em>. $\square$</p>
+<p><strong>Corollary (the universal covering group).</strong> Let $G$ be a connected Lie group with universal cover $\tilde G$. Then $\tilde G$ is a simply connected Lie group, and</p>
+<p>$$
+1 \to \pi_1(G) \to \tilde G \xrightarrow{\ p\ } G \to 1
+$$</p>
+<p>is an exact sequence of Lie groups in which $\pi_1(G) \cong p^{-1}(e)$ is a discrete central subgroup.</p>
+<p><em>Proof.</em> The group structure is that of the theorem. The kernel $p^{-1}(e)$ is discrete, being a fibre of a covering, and is central because $\tilde G$ is connected and the conjugation action of $\tilde G$ on the discrete kernel is continuous, hence trivial. $\square$</p>
+<p><strong>Corollary.</strong> For a connected Lie group $G$, the connected coverings of $G$ stand in bijection with the subgroups of $\pi_1(G)$; since $\pi_1(G)$ is abelian, every subgroup is normal, and every connected covering of $G$ is again a Lie group with the covering map a homomorphism. In particular, every connected covering of a connected Lie group is a covering <em>group</em>.</p>
+<p><strong>Example.</strong> For $G = U(1)$ the universal cover is $\mathbb{R} \to U(1)$, $t \mapsto e^{2\pi i t}$, with kernel $\mathbb{Z} \cong \pi_1(U(1))$; the connected coverings are the maps $z \mapsto z^n$. For $G = SO(3) \cong \mathbb{RP}^3$ the universal cover is $SU(2) \cong S^3$ and $\pi_1(SO(3)) \cong \mathbb{Z}/2$; this is the case $n = 3$ of the spin cover $\mathrm{Spin}(n) \to SO(n)$ of <em>The Clifford, Pin and Spin Groups</em>.</p>
+<h3 id="the-case-of-finite-fundamental-group">The Case of Finite Fundamental Group</h3>
+<p><strong>Theorem.</strong> Let $G$ be a compact connected Lie group. Then $\pi_1(G)$ is finitely generated and abelian, and:</p>
+<ol>
+<li>$\tilde G$ is compact if and only if $\pi_1(G)$ is finite.</li>
+<li>If $\pi_1(G)$ is finite then $G = \tilde G/N$ with $N$ a finite central subgroup, and every finite-dimensional representation of $G$ is a representation of $\tilde G$ on which $N$ acts trivially.</li>
+<li>The simply connected cover $\tilde G$ of a compact connected Lie group is compact and is a product of a torus and simply connected simple compact factors.</li>
+</ol>
+<p><em>Proof.</em> (1) If $\tilde G$ is compact then $\pi_1(G) = p^{-1}(e)$ is a discrete closed subset of a compact space, hence finite. Conversely, if $\pi_1(G)$ is finite then $\tilde G$ is a finite covering of a compact space, hence compact. (2) is the exact sequence of the corollary applied to a compact group. (3) is the structure theory of compact connected Lie groups (the classification of <em>Lie Groups</em>): $\tilde G$ is a product of a torus and simply connected simple compact Lie groups, and the splitting follows from the theory of maximal tori. $\square$</p>
+<p><strong>Example ($SO(n)$ and the spin groups).</strong> For $n \geq 3$ the group $SO(n)$ is compact connected with $\pi_1 \cong \mathbb{Z}/2$ and universal cover $\mathrm{Spin}(n)$, so $\mathrm{Spin}(n) \to SO(n)$ is a double cover and $\mathrm{Spin}(n)$ is compact simply connected; for $n \geq 7$, $\mathrm{Spin}(n)$ is simple. For $n = 2$, $SO(2) \cong U(1)$ has $\pi_1 \cong \mathbb{Z}$ and universal cover $\mathbb{R}$; for $n = 1$, $SO(1)$ is trivial.</p>
+<p><strong>Remark.</strong> The universal cover of a connected Lie group is a Lie group, but not necessarily a group of matrices: the universal cover of $SL(2,\mathbb{R})$ has no faithful finite-dimensional representation, while its quotient $SL(2,\mathbb{R})$ does. The passage to the universal cover therefore cannot always be performed inside the category of linear groups, although it can always be performed among Lie groups.</p>
+<h2 id="reduction-to-the-compact-case">Reduction to the Compact Case</h2>
+<h3 id="maximal-compact-subgroups">Maximal Compact Subgroups</h3>
+<p><strong>Theorem (Malcev, Iwasawa).</strong> Let $G$ be a connected Lie group. Then $G$ contains maximal compact subgroups, any two of them are conjugate in $G$, and the inclusion $K \hookrightarrow G$ of a maximal compact subgroup is a homotopy equivalence. Consequently</p>
+<p>$$
+\pi_n(G) \cong \pi_n(K) \quad\text{for all } n \geq 0, \qquad H_n(G;\mathbb{Z}) \cong H_n(K;\mathbb{Z}) \quad\text{for all } n \geq 0,
+$$</p>
+<p>and $\pi_1(G)$ is finitely generated.</p>
+<p><em>Proof sketch.</em> The <strong>Iwasawa decomposition</strong> writes a connected semisimple Lie group as $G = KAN$ with $K$ compact, $A$ a vector group and $N$ nilpotent, and $AN$ is diffeomorphic to a Euclidean space; hence the inclusion $K \to G$ is a homotopy equivalence. The general case is reduced to the semisimple case modulo the centre and the solvable radical, and the conjugacy of maximal compact subgroups is the <strong>Malcev theorem</strong>, proved by applying the Cartan fixed point theorem to the action on the symmetric space $G/K$. $\square$</p>
+<p><strong>Example.</strong> $GL_n(\mathbb{R})$ has maximal compact $O(n)$; $SL_n(\mathbb{R})$ has maximal compact $SO(n)$; $GL_n(\mathbb{C})$ has maximal compact $U(n)$; $SL_n(\mathbb{C})$ has maximal compact $SU(n)$; $Sp_{2n}(\mathbb{R})$ has maximal compact $U(n)$. Each inclusion is a homotopy equivalence, so the homotopy of the real and complex groups is that of the corresponding compact groups; the complex case is the more transparent, since $\pi_1(U(n)) \cong \mathbb{Z}$ and $\pi_1(SU(n)) = 0$.</p>
+<p><strong>Example.</strong> For $G = \mathbb{R}^n$ the maximal compact subgroup is trivial and $\pi_1(\mathbb{R}^n) = 0$; for $G = \mathbb{R}^*_+ \cong \mathbb{R}$ it is trivial; for $G = GL_n(\mathbb{R})$ with $n \geq 3$ it is $O(n)$, giving $\pi_1(GL_n(\mathbb{R})) \cong \pi_1(O(n)) \cong \mathbb{Z}/2$ for $n \geq 3$.</p>
+<h3 id="the-homotopy-sequence-of-a-homogeneous-space">The Homotopy Sequence of a Homogeneous Space</h3>
+<p><strong>Theorem.</strong> Let $G$ be a Lie group and $H$ a closed subgroup. Then $G/H$ has a unique smooth structure making the projection $G \to G/H$ a submersion, the projection is a fibre bundle with fibre $H$, and the <strong>homotopy sequence of the fibration</strong></p>
+<p>$$
+\cdots \to \pi_n(H) \to \pi_n(G) \to \pi_n(G/H) \to \pi_{n-1}(H) \to \cdots \to \pi_0(H) \to \pi_0(G) \to 0
+$$</p>
+<p>is exact.</p>
+<p><em>Proof sketch.</em> The quotient $G/H$ is a manifold by the closed subgroup theorem and the slice theorem of <em>Lie Groups</em>; the projection is a locally trivial fibre bundle by the existence of local sections obtained from a slice at the identity. The long exact sequence is that of a fibration, <em>Homotopy Groups and Fibrations</em>. $\square$</p>
+<p><strong>Corollary.</strong> In low degrees the sequence gives an exact sequence</p>
+<p>$$
+\pi_1(H) \xrightarrow{\ i_*\ } \pi_1(G) \xrightarrow{\ } \pi_1(G/H) \xrightarrow{\ \partial\ } \pi_0(H) \xrightarrow{\ } \pi_0(G) \to 0 .
+$$</p>
+<p>In particular:</p>
+<ol>
+<li>If $G$ is connected, $\pi_1(G/H) \cong \pi_1(G)/i_*\pi_1(H)$ whenever $H$ is connected; the quotient is by the image of $\pi_1(H)$.</li>
+<li>If $G$ is simply connected and $H$ is connected, then $G/H$ is simply connected.</li>
+<li>If $H$ is discrete then $\pi_1(G/H)$ is an extension of $\ker(\pi_0(H)\to\pi_0(G))$ by the cokernel of $i_*$, and if in addition $G$ is connected and simply connected then $\pi_1(G/H) \cong \pi_0(H)$.</li>
+</ol>
+<p><em>Proof.</em> These are the immediate consequences of exactness at the relevant terms. $\square$</p>
+<p><strong>Example ($SO(3)$ again).</strong> Take $G = SU(2)$, $H = \{\pm I\} = \pi_0(H) = \mathbb{Z}/2$, so $G/H = SO(3)$; the corollary with $G$ simply connected and $H$ discrete gives $\pi_1(SO(3)) \cong \mathbb{Z}/2$, recovering the computation of the previous section from the fibre bundle $SU(2)\to SO(3)$ with fibre $\mathbb{Z}/2$.</p>
+<p><strong>Example (spheres as homogeneous spaces).</strong> $S^{n-1} = SO(n)/SO(n-1) = \mathrm{Spin}(n)/\mathrm{Spin}(n-1)$; since $\mathrm{Spin}(n)$ is simply connected and $\mathrm{Spin}(n-1)$ is connected, the corollary gives $\pi_1(S^{n-1}) = 0$ for $n \geq 3$. For $n = 2$ the group $\mathrm{Spin}(1) = \mathbb{Z}/2$ is disconnected, and it is cleaner to take the stabiliser to be $SO(1)$, which is trivial: the fibration $SO(1) \to SO(2) \to S^1$ gives $\pi_1(S^1) \cong \pi_1(SO(2)) \cong \mathbb{Z}$ directly. The case distinction is exactly the failure of connectedness of the stabiliser.</p>
+<h2 id="the-fundamental-group-of-a-compact-group">The Fundamental Group of a Compact Group</h2>
+<h3 id="maximal-tori-and-the-coroot-lattice">Maximal Tori and the Coroot Lattice</h3>
+<p><strong>Definition.</strong> Let $G$ be a compact connected Lie group, $T \leq G$ a <strong>maximal torus</strong>, that is, a maximal connected abelian closed subgroup, and $\mathfrak{t} \subseteq \mathfrak{g}$ its Lie algebra. The <strong>root system</strong> $\Phi(\mathfrak{g},\mathfrak{t})$ consists of the nonzero weights of the adjoint action of $\mathfrak{t}$ on $\mathfrak{g}_{\mathbb{C}}$; for each root $\alpha$ there is a <strong>coroot</strong> $\alpha^\vee : S^1 \to T$, the unique homomorphism whose differential is the element of $\mathfrak{t}$ dual to $\alpha$ under the Killing form normalisation. The subgroup generated by the coroots,</p>
+<p>$$
+Q^\vee = \langle \alpha^\vee(S^1) : \alpha \in \Phi\rangle \leq T,
+$$</p>
+<p>is the <strong>coroot lattice</strong> in $T$, and the coweight lattice is</p>
+<p>$$
+X_*(T) = \operatorname{Hom}(U(1), T) \cong \pi_1(T) \cong \mathbb{Z}^{\dim T}.
+$$</p>
+<p><strong>Theorem (Bott).</strong> Let $G$ be a compact connected Lie group with maximal torus $T$. Then the inclusion $T \hookrightarrow G$ induces a surjection $\pi_1(T) \to \pi_1(G)$ whose kernel is the coroot lattice, so that</p>
+<p>$$
+\pi_1(G) \cong X_*(T)/Q^\vee \cong \pi_1(T)/\langle \alpha^\vee\rangle .
+$$</p>
+<p>In particular $\pi_1(G)$ is a finite group of order equal to the index of the coroot lattice in the coweight lattice, $G$ is simply connected if and only if $X_*(T) = Q^\vee$, and for the <strong>adjoint group</strong> $G_{\mathrm{ad}} = G_{\mathrm{sc}}/Z(G_{\mathrm{sc}})$ — the quotient of the simply connected cover by its centre — there is an isomorphism</p>
+<p>$$
+\pi_1(G_{\mathrm{ad}}) \cong Z(G_{\mathrm{sc}}),
+$$</p>
+<p>the centre of the simply connected cover.</p>
+<p><em>Proof sketch.</em> The quotient $G/T$ admits a cell decomposition into <strong>Schubert cells</strong>, one for each element of the Weyl group, all of even real dimension; consequently $G/T$ has no cells in odd dimensions, and a CW complex with no odd-dimensional cells is simply connected, so $\pi_1(G/T) = 0$. The homotopy sequence of the fibration $T \to G \to G/T$ then reads $\pi_1(T) \xrightarrow{i_*} \pi_1(G) \to 0$, so $\pi_1(G) \cong \pi_1(T)/\ker i_*$. It remains to identify the kernel: $G$ is obtained from $T$ by attaching the cells of $G/T$, the two-dimensional Schubert cells are attached along the coroot circles $\alpha^\vee(S^1) \subseteq T$, and the cells of dimension $\neq 2$ contribute nothing to $\pi_1$; hence $\ker i_*$ is generated by the coroots, and $\pi_1(G) \cong \pi_1(T)/Q^\vee$. The final statement follows because the coverings of $G_{\mathrm{ad}}$ are classified by the subgroups of $Z(G_{\mathrm{sc}})$, whose simply connected total space is $G_{\mathrm{sc}}$. $\square$</p>
+<p><strong>Remark.</strong> The theorem reduces a topological computation to a purely combinatorial one: $\pi_1$ of a compact connected Lie group is the quotient of the coweight lattice of a maximal torus by the coroot lattice, which can be read off from the root system and the Dynkin diagram. The same data classify the compact connected Lie groups, so $\pi_1$ is determined by the root system together with the lattice $X_*(T)$, that is, by the <strong>root datum</strong>.</p>
+<h3 id="computations-for-the-classical-groups">Computations for the Classical Groups</h3>
+<p><strong>Theorem.</strong> The fundamental groups of the classical compact groups are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$G$</th>
+<th>$\pi_1(G)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U(n)$, $n \geq 1$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$SU(n)$, $n \geq 1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$SO(2) \cong U(1)$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$SO(n)$, $n \geq 3$</td>
+<td>$\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$O(n)$, $n \geq 3$</td>
+<td>$\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(n)$, $n \geq 3$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$Sp(n)$, $n \geq 1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{C})$, $n \geq 1$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{R})$, $n \geq 3$</td>
+<td>$\mathbb{Z}/2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> For $U(n)$ the determinant $\det : U(n) \to U(1)$ is a fibre bundle with fibre $SU(n)$, and the homotopy sequence $0 = \pi_1(SU(n)) \to \pi_1(U(n)) \to \pi_1(U(1)) = \mathbb{Z} \to \pi_0(SU(n)) = 0$ gives $\pi_1(U(n)) \cong \mathbb{Z}$ once $SU(n)$ is known simply connected. For $SU(n)$ the theorem of Bott applies: with the standard maximal torus $T = \{ \operatorname{diag}(z_1,\ldots,z_n) : \prod z_i = 1\}$, the coweight lattice is $\{ (m_1,\ldots,m_n)\in\mathbb{Z}^n : \sum m_i = 0\}$, the roots are $z_i z_j^{-1}$ with coroots $z \mapsto (1,\ldots,z,\ldots,z^{-1},\ldots,1)$, and these generate exactly the coweight lattice, so $\pi_1(SU(n)) = 0$. For $SO(n)$, $n \geq 3$, the coroot lattice of the root system $B_{(n-1)/2}$ or $D_{n/2}$ has index $2$ in the coweight lattice, giving $\pi_1 \cong \mathbb{Z}/2$; alternatively $SO(n) = \mathrm{Spin}(n)/\{\pm1\}$ with $\mathrm{Spin}(n)$ simply connected by the theorem, since the coweight lattice of $\mathrm{Spin}(n)$ is the coroot lattice. $O(n)$ has two components and $\pi_1(O(n)) \cong \pi_1(SO(n))$. For $Sp(n)$ the root system $C_n$ has coweight lattice equal to the coroot lattice, so $\pi_1 = 0$. The general linear groups reduce to the compact ones by the Malcev–Iwasawa theorem: $GL_n(\mathbb{C})$ has maximal compact $U(n)$ and $GL_n(\mathbb{R})$ has maximal compact $O(n)$. $\square$</p>
+<p><strong>Example ($\pi_1(U(n))$ and the determinant).</strong> The determinant exhibits $\pi_1(U(n)) \cong \mathbb{Z}$ with a canonical generator, the class of $z \mapsto \operatorname{diag}(z,1,\ldots,1)$; this generator is the one that appears in the first Chern class of a complex line bundle, and it underlies the identification of $\pi_1(U(n))$ with the degree of the determinant.</p>
+<p><strong>Example ($SU(2) \to SO(3)$).</strong> Here $SU(2)$ has root system $A_1$, coweight lattice $\mathbb{Z}$ and coroot lattice $\mathbb{Z}$, so $\pi_1(SU(2)) = 0$; $SO(3)$ has the same root system with coweight lattice $\mathbb{Z}$ and coroot lattice $2\mathbb{Z}$, so $\pi_1(SO(3)) \cong \mathbb{Z}/2$; the quotient is realised by the double cover $SU(2) \to SO(3)$, the adjoint group of type $A_1$, and $\pi_1(SO(3)) \cong Z(SU(2)) = \{\pm I\}$.</p>
+<p><strong>Remark.</strong> The computations identify $\pi_1$ with the cokernel of the coroot inclusion, and dualising gives the finite group $P/Q$ of weights modulo roots, the <strong>fundamental group of the root system</strong> in the classical terminology; for the adjoint group it is isomorphic to the centre of the simply connected cover, and for the simply connected group it vanishes. The simply connected simple compact groups — $SU(n)$, $\mathrm{Spin}(n)$, $Sp(n)$, $E_6$, $E_7$, $E_8$, $F_4$, $G_2$ — are exactly those with vanishing $\pi_1$; the corresponding adjoint groups have $\pi_1$ equal to the centre of the simply connected group, so the possible nontrivial fundamental groups of simple compact groups are $\mathbb{Z}/n$ for $SU(n)$, $\mathbb{Z}/2$ or $\mathbb{Z}/4$ or $\mathbb{Z}/2\oplus\mathbb{Z}/2$ for the spin groups, $\mathbb{Z}/2$ for $Sp(n)$ and $E_7$, $\mathbb{Z}/3$ for $E_6$, and trivial for $E_8$, $F_4$ and $G_2$.</p>
+<h3 id="spin-covers-and-the-general-theory-of-coverings">Spin Covers and the General Theory of Coverings</h3>
+<p><strong>Theorem.</strong> For $n \geq 3$ the double cover $\mathrm{Spin}(n) \to SO(n)$ is the universal cover, and the connected coverings of $SO(n)$ are $\mathrm{Spin}(n) \to SO(n)$ and the identity; for $n = 2$ the connected coverings of $SO(2)$ are the maps $z \mapsto z^m$ of $U(1)$. The coverings of a compact connected Lie group correspond to the subgroups of the finite group $\pi_1(G)$, hence are finite in number and all compact.</p>
+<p><em>Proof.</em> The coverings of a connected space correspond to the subgroups of its fundamental group by <em>The Fundamental Group and Covering Spaces</em>; the fundamental group of a compact connected Lie group is finite by the theorem of Bott, since the coroot lattice has finite index in the coweight lattice. Comparing indices gives the stated covers and the finiteness. $\square$</p>
+<p><strong>Remark.</strong> The finite coverings of a compact connected Lie group are the quotients of the simply connected cover $\tilde G$ by the subgroups of its centre; the simply connected cover is compact by the theorem of the previous section, so this is a classification internal to compact groups.</p>
+<h2 id="summary">Summary</h2>
+<p>The fundamental group of a topological group is abelian, by the Eckmann–Hilton interchange argument; for a Lie group, $\pi_1$ depends only on the identity component, equals $H_1$ by Hurewicz, and acts trivially on all the higher homotopy groups, so the local coefficients of the general fibration theory are constant in this setting. Every connected covering of a connected Lie group is again a Lie group, by lifting the multiplication to the covering, and the connected coverings are classified by the subgroups of $\pi_1(G)$; in particular the universal cover $\tilde G$ is a simply connected Lie group and $G \cong \tilde G/N$ with $N \cong \pi_1(G)$ discrete central. For a compact connected $G$ the fundamental group is finite, $\tilde G$ is compact, and $G$ is a quotient of $\tilde G$ by a finite central subgroup.</p>
+<p>The Malcev–Iwasawa theorem reduces the homotopy of a connected Lie group to that of a maximal compact subgroup, so $\pi_1(GL_n(\mathbb{R})) \cong \pi_1(O(n))$ and $\pi_1(GL_n(\mathbb{C})) \cong \pi_1(U(n))$. For a compact connected group with maximal torus $T$, Bott's theorem identifies $\pi_1(G) \cong X_*(T)/Q^\vee$ with the quotient of the coweight lattice by the coroot lattice; this gives $\pi_1(U(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = \pi_1(Sp(n)) = 0$ and $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and identifies $\pi_1$ of the adjoint group with the centre of the simply connected cover, so that the double cover $SU(2)\to SO(3)$ is the first case of the spin covers. Finally, the long exact homotopy sequence of the fibration $H \to G \to G/H$ computes $\pi_1$ of a homogeneous space from that of the group and the stabiliser; a quotient of a simply connected group by a connected closed subgroup is simply connected.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$, $G_0$, $\pi_0(G) = G/G_0$</td>
+<td>Lie group; identity component; component group</td>
+</tr>
+<tr>
+<td>$\mathfrak{g}$, $\mathfrak{t}$, $\exp$</td>
+<td>Lie algebra, Cartan subalgebra of $\mathfrak{t}$, exponential map</td>
+</tr>
+<tr>
+<td>$\tilde G$, $p : \tilde G \to G$</td>
+<td>Universal covering group and its projection</td>
+</tr>
+<tr>
+<td>$\pi_1(G)$, $H_1(G;\mathbb{Z})$</td>
+<td>Fundamental group of a Lie group; abelian, equals $H_1$</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>Multiplication $G\times G \to G$; the H-space structure</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Maximal compact subgroup; $G \simeq K$ (Malcev–Iwasawa)</td>
+</tr>
+<tr>
+<td>$T$, $X_*(T) = \operatorname{Hom}(U(1),T)$</td>
+<td>Maximal torus; coweight lattice $\cong \pi_1(T)$</td>
+</tr>
+<tr>
+<td>$\Phi(\mathfrak{g},\mathfrak{t})$, $\alpha$, $\alpha^\vee$</td>
+<td>Root system, roots, coroots</td>
+</tr>
+<tr>
+<td>$Q^\vee = \langle \alpha^\vee\rangle$</td>
+<td>Coroot lattice; $\pi_1(G) \cong X_*(T)/Q^\vee$ (Bott)</td>
+</tr>
+<tr>
+<td>$G_{\mathrm{sc}}$, $G_{\mathrm{ad}} = G_{\mathrm{sc}}/Z(G_{\mathrm{sc}})$</td>
+<td>Simply connected cover; adjoint group</td>
+</tr>
+<tr>
+<td>$Z(G)$</td>
+<td>Centre; $\pi_1(G_{\mathrm{ad}}) \cong Z(G_{\mathrm{sc}})$</td>
+</tr>
+<tr>
+<td>$SO(n)$, $SU(n)$, $U(n)$, $Sp(n)$, $O(n)$</td>
+<td>Classical compact groups</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(n)$</td>
+<td>Simply connected double cover of $SO(n)$, $n \geq 3$</td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{R})$, $GL_n(\mathbb{C})$</td>
+<td>General linear groups; maximal compact $O(n)$, $U(n)$</td>
+</tr>
+<tr>
+<td>$G/H$, $\pi_n(G/H)$</td>
+<td>Homogeneous space and its homotopy groups</td>
+</tr>
+<tr>
+<td>$P/Q$</td>
+<td>Weights modulo roots; dual to $\pi_1$ of the adjoint group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Armand Borel, <em>Topology of Lie Groups and Characteristic Classes</em> (Bulletin of the American Mathematical Society 61, 1955), for the fundamental group and the coroot lattice.</li>
+<li>Raoul Bott, <em>An Application of the Morse Theory to the Topology of Lie Groups</em> (Bulletin de la Société Mathématique de France 84, 1956), for the proof that $\pi_1(G) \cong X_*(T)/Q^\vee$.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em> (Academic Press, 1978), for the Iwasawa decomposition and the Malcev theorem.</li>
+<li>J. Frank Adams, <em>Lectures on Lie Groups</em> (University of Chicago Press, 1969), for the structure theory, maximal tori and the exponential map.</li>
+<li>Theodor Bröcker and Tammo tom Dieck, <em>Representations of Compact Lie Groups</em> (Springer, 1985), for the root datum and the classification of compact connected Lie groups.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the covering-space correspondence and the homotopy sequences used here.</li>
+<li>Morris W. Hirsch, <em>Differential Topology</em> (Springer, 1976), for the closed subgroup theorem and the quotient manifold structure of $G/H$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

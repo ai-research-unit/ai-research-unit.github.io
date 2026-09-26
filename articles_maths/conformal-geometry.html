@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conformal Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conformal-geometry"><strong>Conformal Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Riemannian metric is a positive-definite quadratic form on each tangent space of a manifold, and the <strong>conformal structure</strong> it determines is the class of all metrics obtained from it by multiplication by positive smooth functions: two metrics $g$ and $g'$ are conformally equivalent when $g' = \Omega^2 g$ for a positive function $\Omega$, and a <strong>conformal map</strong> is a diffeomorphism whose pullback changes the metric by such a factor. Conformal geometry is the study of the invariants of a conformal class, and it begins with a linear-algebraic observation: the conformal class remembers the quadratic form only up to a positive scalar at each point, so it is the invariant of the form on which the theory of the quadratic-form articles earlier in this Part bears, and the conformal group — the group of conformal automorphisms of the round sphere — is a group of quadratic forms in disguise, namely a group of pseudo-orthogonal transformations of a space of two dimensions more. The purpose of the article is to develop the conformal structure, the conformal group and the conformal invariants of a form, using the Clifford algebra and the spinor formalism of this Part, and to keep the manifold theory itself to the companion articles <em>Riemannian Geometry</em> and <em>Smooth Manifolds and Differential Geometry</em>, earlier in this Part.</p>
+<p>The central facts are these. The conformal group of the round sphere $S^n$ for $n \geq 3$ is the group $O(n+1,1)/\{\pm 1\}$ of the pseudo-orthogonal transformations of the form of signature $(n+1,1)$ of one dimension more, and its action on the sphere is the action of the <strong>Möbius transformations</strong>, the compositions of the rotations, the dilations, the translations and the inversions; by <strong>Liouville's theorem</strong> these are all the conformal maps of a domain of $\mathbb{R}^n$ for $n \geq 3$, and the dimension two is the exceptional case in which the conformal maps are the holomorphic maps of complex analysis. The sphere is the <strong>conformal compactification</strong> of $\mathbb{R}^n$, and it is realised as the projectivised null cone of the space $\mathbb{R}^{n+1,1}$; the conformal group is realised inside the Clifford algebra $\mathrm{Cl}_{n+1,1}$ as a Clifford or Pin group, and the conformal transformations themselves are realised by the two-by-two matrices over the Clifford algebra $\mathrm{Cl}_{0,n}$ of <strong>Vahlen's theorem</strong>. The invariants of the conformal class are carried by the <strong>Weyl tensor</strong> and by the <strong>conformally invariant operators</strong>, of which the conformal Laplacian and the Cauchy–Riemann operator in its conformal weight are the basic examples, and the twistor construction of Penrose is the reduction of the four-dimensional conformal geometry to the complex geometry of a three-dimensional complex manifold.</p>
+<h2 id="conformal-structures">Conformal Structures</h2>
+<h3 id="conformal-equivalence-and-conformal-maps">Conformal Equivalence and Conformal Maps</h3>
+<p><strong>Definition.</strong> Let $M$ be a smooth manifold. Two Riemannian metrics $g$ and $g'$ on $M$ are <strong>conformally equivalent</strong> if $g' = \Omega^2 g$ for a positive smooth function $\Omega : M \to (0,\infty)$; a <strong>conformal structure</strong> on $M$ is a conformal equivalence class $\mathcal{C} = [g]$ of metrics. A diffeomorphism $f : (M,\mathcal{C}) \to (N,\mathcal{D})$ of conformal manifolds is a <strong>conformal map</strong> if $f^*g' = \Omega^2 g$ for representatives $g \in \mathcal{C}$, $g' \in \mathcal{D}$ and a positive function $\Omega$, and the <strong>conformal group</strong> $\operatorname{Conf}(M,\mathcal{C})$ is the group of conformal diffeomorphisms of $M$ onto itself.</p>
+<p><strong>Proposition.</strong> Conformal equivalence is an equivalence relation on the metrics of $M$; the conformal structure determines the same angles and the same ratio of lengths at a point as any representative metric, and the conformal structure is the same data as the metric up to the pointwise scale; the tangent space at each point with the conformal structure is a vector space with a quadratic form up to positive scalar, that is, an element of the <strong>conformal class of the form</strong>, and the linear algebra of this article is the linear algebra of a quadratic form up to scale.</p>
+<p><strong>Proof.</strong> The relation $g' = \Omega^2 g$ is symmetric, reflexive and transitive with the positive functions forming a group under multiplication, so it is an equivalence relation; the angle between two tangent vectors is $\arccos g(u,v)(g(u,u)g(v,v))^{-1/2}$ up to the sign of $g(u,v)$, which is unchanged by a positive scaling of $g$, and a ray of vectors has the same ratio of lengths under the scaling; conversely the conformal structure determines the angles and the ratios, which is the metric up to the pointwise scale. $\square$</p>
+<p><strong>Example (the two-dimensional case).</strong> On a surface the conformal structure is the same data as a complex structure and an orientation: the existence of the <strong>isothermal coordinates</strong> in which every metric of the class is $\Omega^2 (dx^2 + dy^2)$ is the classical theorem of the existence of conformal coordinates on a surface, and it identifies the conformal structures on an oriented surface with the complex structures, that is, with the Riemann surfaces. The two-dimensional case is the case in which the conformal maps are the holomorphic maps and the conformal group is infinite-dimensional; the present article treats the dimensions $n \geq 3$, in which the conformal group is a finite-dimensional Lie group, and the two-dimensional theory belongs to the complex analysis of Part III.</p>
+<h3 id="the-weyl-tensor-and-conformal-flatness">The Weyl Tensor and Conformal Flatness</h3>
+<p><strong>Definition.</strong> Let $(M,g)$ be a Riemannian manifold of dimension $n \geq 3$ with Riemann curvature $\operatorname{Riem}$, Ricci curvature $\operatorname{Ric}$ and scalar curvature $\operatorname{scal}$. The <strong>Weyl tensor</strong> is the $(0,4)$-tensor
+$$
+W = R - \frac{1}{n-2}\left(\operatorname{Ric} - \frac{\operatorname{scal}}{2(n-1)}g\right) \wedge g ,
+$$
+the trace-free part of the curvature with respect to the contractions, where the wedge is the Kulkarni–Nomizu product of the two symmetric $(0,2)$-tensors; equivalently the Weyl tensor is the trace-free part of the curvature tensor under the contractions of the metric, so that its traces with respect to the metric vanish.</p>
+<p><strong>Theorem (Weyl–Schouten; conformal flatness).</strong> A Riemannian manifold of dimension $n \geq 4$ is <strong>conformally flat</strong>, that is, every point has a neighbourhood conformal to the Euclidean space, if and only if the Weyl tensor vanishes identically; in dimension $3$ the obstruction is the <strong>Cotton tensor</strong>, the derivative of the traceless Ricci tensor, and in dimension $2$ the vanishing is automatic. The Weyl tensor is a conformal invariant: it is unchanged by the replacement of $g$ by $\Omega^2 g$, so it is an invariant of the conformal structure, and it is the obstruction to the local flatness of that structure.</p>
+<p>The theorem is the local conformal flatness theorem, and its proof is the transformation formula for the curvature under a conformal change of the metric, computed from the Christoffel symbols of the two metrics; the computation and the result are in <em>Riemannian Geometry</em>, and the article records the statement as the source of the invariants of the conformal structure.</p>
+<p><strong>Example.</strong> The round sphere $S^n$ with the standard metric is conformally flat: the stereographic projection is a conformal diffeomorphism from the sphere minus a point to $\mathbb{R}^n$ with the Euclidean metric, so the sphere is locally conformal to the Euclidean space and its Weyl tensor vanishes; the Euclidean space, the sphere, the hyperbolic space and the cylinder are the standard conformally flat spaces, and they are conformally equivalent after the compactification of the next sections. A product of two spaces of constant curvature is conformally flat only in exceptional cases, and the Weyl tensor of a generic product does not vanish.</p>
+<h3 id="conformal-killing-fields-and-the-conformal-algebra">Conformal Killing Fields and the Conformal Algebra</h3>
+<p><strong>Definition.</strong> A vector field $X$ on a Riemannian manifold $(M,g)$ is a <strong>conformal Killing field</strong> if the Lie derivative of the metric is a multiple of the metric,
+$$
+\mathcal{L}_X g = \lambda\, g
+$$
+for a smooth function $\lambda$; the conformal Killing fields form a Lie algebra $\mathfrak{conf}(M,g)$ under the commutator of vector fields, the <strong>conformal algebra</strong> of the metric, and it is the Lie algebra of the conformal group, a Lie algebra of vector fields of the type of those of <em>Metric, Uniform and Complete Spaces</em> and of the theory of <em>Lie Groups</em>, earlier in this Part.</p>
+<p><strong>Proposition.</strong> The conformal algebra of a Riemannian manifold of dimension $n \geq 3$ is finite-dimensional and of dimension at most
+$$
+\dim \mathfrak{conf}(M,g) \leq \frac{(n+1)(n+2)}{2},
+$$
+with equality exactly when the metric is conformally flat (on a connected open set with the generic metric, and on the conformally flat manifolds); the conformal algebra of the Euclidean space $\mathbb{R}^n$ is the Lie algebra $\mathfrak{so}(n+1,1)$ of dimension $(n+1)(n+2)/2$, spanned by the constant vector fields (translations), the linear fields $x \mapsto \omega x$ with $\omega \in \mathfrak{so}(n)$ (rotations), the radial fields $x \mapsto c x$ (dilations) and the fields $x \mapsto |x|^2 a - 2\langle a,x\rangle x$ (the special conformal transformations).</p>
+<p><strong>Proof sketch.</strong> The conformal Killing equation is an overdetermined linear system of first-order partial differential equations for the components of $X$; differentiating it repeatedly expresses all the higher derivatives of $X$ at a point in terms of the values of $X$, $\lambda$, and their first derivatives together with the curvature, so the space of solutions is finite-dimensional and bounded by the number of the initial data, which is $(n+1)(n+2)/2$; in the flat case the listed fields span a space of that dimension and satisfy the equation. The identification of the flat conformal algebra with $\mathfrak{so}(n+1,1)$ is the linearisation of the conformal compactification of the next section, and the details are in the references. $\square$</p>
+<h2 id="the-conformal-group-and-liouvilles-theorem">The Conformal Group and Liouville's Theorem</h2>
+<h3 id="the-mobius-transformations">The Möbius Transformations</h3>
+<p><strong>Definition.</strong> The <strong>inversion</strong> in the unit sphere is the map $i : \mathbb{R}^n \setminus \{0\} \to \mathbb{R}^n \setminus \{0\}$, $i(x) = x/|x|^2$; a <strong>Möbius transformation</strong> of $\mathbb{R}^n$ is a composition of inversions, rotations, dilations and translations, and the <strong>Möbius group</strong> $\operatorname{Möb}(n)$ is the group of such transformations. The inversion is a conformal map with $\Omega(x) = |x|^{-2}$, and a composition of inversions is conformal; the Möbius transformations preserve the family of spheres and of hyperplanes of $\mathbb{R}^n$, carrying them to spheres or hyperplanes.</p>
+<p><strong>Theorem (Liouville).</strong> Let $n \geq 3$ and let $U \subseteq \mathbb{R}^n$ be a connected open set. Every conformal map $f : U \to \mathbb{R}^n$ of class $C^3$ is the restriction of a Möbius transformation of $\mathbb{R}^n$; consequently the conformal group of a domain of $\mathbb{R}^n$, for $n \geq 3$, is the restriction of the finite-dimensional group $\operatorname{Möb}(n)$.</p>
+<p>The theorem is the rigidity of the conformal maps in dimension at least three, and it fails in dimension two, where the conformal maps are the holomorphic maps and the group is infinite-dimensional. The proof analyses the third derivatives of a conformal map and shows that the derivatives beyond the second are determined by the lower ones, the conformal condition being strong enough to force the Möbius form; the statement and the proof are in the references.</p>
+<p><strong>Theorem.</strong> The Möbius group of the sphere $S^n$ is the group $O(n+1,1)/\{\pm 1\}$ of the pseudo-orthogonal transformations of the form of signature $(n+1,1)$, and the Möbius group of $\mathbb{R}^n$ is the subgroup of the transformations of $S^n$ fixing the point at infinity; the conformal group of the sphere is a Lie group of dimension $(n+1)(n+2)/2$, containing the isometries $O(n+1)$ of the round sphere as a maximal compact subgroup.</p>
+<p><strong>Proof sketch.</strong> The action is constructed on the model of the next section: the sphere $S^n$ is the projectivised null cone of $\mathbb{R}^{n+1,1}$, the group $O(n+1,1)$ acts linearly on the cone and hence on its projectivisation, and the induced transformations are the Möbius transformations; the kernel of the action is the centre $\{\pm 1\}$, the dimension count is $\dim O(n+1,1) = (n+1)(n+2)/2$, and the stabiliser of an isotropic line is the conformal group of the point, isomorphic to the similarity group of $\mathbb{R}^n$. The details are in the references. $\square$</p>
+<h3 id="the-conformal-compactification">The Conformal Compactification</h3>
+<p><strong>Definition.</strong> The <strong>conformal compactification</strong> of the Euclidean space $\mathbb{R}^n$ is the sphere $S^n$, with the embedding $\mathbb{R}^n \hookrightarrow S^n$ given by the inverse of the stereographic projection; the <strong>model of the conformal sphere</strong> is the projectivised null cone of the space $\mathbb{R}^{n+1,1} = \mathbb{R}^{n+1} \oplus \mathbb{R}$ with the form $|u|^2 - v^2$. The null cone is
+$$
+\mathcal{N} = \{(u,v) \in \mathbb{R}^{n+1,1} \setminus \{0\} : |u|^2 = v^2\},
+$$
+a cone of null vectors on which the group $O(n+1,1)$ acts linearly, and the <strong>Möbius sphere</strong> is the space of its lines, the projectivised null cone. The round sphere $S^n \subseteq \mathbb{R}^{n+1}$ embeds by $y \mapsto (y,1)$, whose image is null because $|y|^2 = 1 = v^2$, and the Euclidean space embeds by
+$$
+z(x) = \left(x,\, \frac{|x|^2 - 1}{2},\, \frac{|x|^2 + 1}{2}\right) \in \mathbb{R}^n \oplus \mathbb{R} \oplus \mathbb{R} = \mathbb{R}^{n+1,1},
+$$
+which is null because $|x|^2 + \tfrac14(|x|^2-1)^2 - \tfrac14(|x|^2+1)^2 = |x|^2 - |x|^2 = 0$, and which is the inverse stereographic embedding after clearing the denominators; the point at infinity corresponds to the null line of $(0,1,1)$. The points of the Möbius sphere are the null lines, and the spheres and hyperplanes of $\mathbb{R}^n$ are the intersections of the null cone with the hyperplanes of $\mathbb{R}^{n+1,1}$, which is why the Möbius transformations preserve them.</p>
+<p><strong>Proposition.</strong> The conformal structure of the sphere is the conformal structure induced by the quadratic form of $\mathbb{R}^{n+1,1}$ through the null cone model: the Möbius group $O(n+1,1)/\{\pm 1\}$ acts by conformal transformations, the conformal Killing fields of the sphere are the linear fields of $\mathfrak{so}(n+1,1)$, and the conformal compactification is the maximal extension of the Euclidean space on which the conformal group acts by diffeomorphisms.</p>
+<p><strong>Proof sketch.</strong> A null vector $z \in \mathbb{R}^{n+1,1}$ represents a point of the sphere, and the tangent space of the sphere at that point is the quotient of the orthogonal complement $z^{\perp}$ by the line $\mathbb{R}z$, on which the form of $\mathbb{R}^{n+1,1}$ restricts to a positive-definite form up to scale; a linear transformation of $O(n+1,1)$ preserves the form and hence the conformal structure, and the map $x \mapsto z(x)$ of the display intertwines the Euclidean metric with the restriction of the form to the section, which gives the conformality. The identification of the conformal Killing fields with $\mathfrak{so}(n+1,1)$ is the derivative of the action. $\square$</p>
+<h2 id="the-clifford-realisation-and-vahlen-matrices">The Clifford Realisation and Vahlen Matrices</h2>
+<h3 id="the-conformal-group-as-a-clifford-group">The Conformal Group as a Clifford Group</h3>
+<p><strong>Remark.</strong> The pseudo-orthogonal group of the form of signature $(n+1,1)$ is generated by its reflections, and by <em>The Clifford, Pin and Spin Groups</em> the Pin group $\operatorname{Pin}(n+1,1)$ is a double cover of $O(n+1,1)$ contained in the units of the Clifford algebra $\mathrm{Cl}_{n+1,1}$; the Möbius group of the sphere is therefore a quotient of a Clifford group,
+$$
+\operatorname{Conf}(S^n) = O(n+1,1)/\{\pm 1\} = \operatorname{Pin}(n+1,1)/\{\pm 1\} ,
+$$
+and the elements of the conformal group are realised as products of unit vectors of $\mathbb{R}^{n+1,1}$ acting by the twisted adjoint action on the null cone. This is the reason the conformal group belongs to the category of the Clifford algebras: it is the reflection group of the form of one dimension more, and its spin double cover is the spin group $\operatorname{Spin}(n+1,1)$ of the conformal form.</p>
+<p><strong>Theorem (Vahlen).</strong> For $n \geq 3$ the conformal group of $\mathbb{R}^n$ is isomorphic to the group of invertible two-by-two matrices
+$$
+\begin{pmatrix} a & b\\ c & d\end{pmatrix}, \qquad a, b, c, d \in \mathrm{Cl}_{0,n} \ \text{or the twisted algebra},
+$$
+satisfying the <strong>Vahlen conditions</strong> (the Hermitian conditions with respect to the conjugation of the Clifford algebra) modulo the nonzero scalars, in such a way that the matrix acts on $\mathbb{R}^n \cup \{\infty\}$ by the fractional transformation
+$$
+x \longmapsto (a x + b)(c x + d)^{-1},
+$$
+with the Clifford multiplication in the numerator and the inverse in the Clifford algebra; the matrices form a group isomorphic to the Möbius group, and the action is the conformal action on the sphere.</p>
+<p>The theorem is due to Vahlen and was developed by Ahlfors; the conditions on the matrix are that the products $a\bar c$, $b\bar d$ and the antidiagonal products are the appropriate scalars, so that the matrix preserves the "Hermitian" structure of the Clifford algebra $\mathrm{Cl}_{0,n}$ in the sense of <em>Hermitian Forms and Involutions</em>. The matrix group is the $\operatorname{Pin}(n+1,1)$-group in the matrix coordinates, and the theorem is the concrete form of the identification of the conformal group with the Clifford group of the form of signature $(n+1,1)$; the statement and the proof are in the references.</p>
+<p><strong>Example (the low dimensions).</strong> For $n = 2$ the Clifford algebra $\mathrm{Cl}_{0,2}$ is the quaternion algebra $\mathbb{H}$ and the Vahlen matrices are the two-by-two matrices over $\mathbb{H}$ with the Vahlen conditions; the group they form is the double cover $SL(2,\mathbb{H})$ of the conformal group of the four-sphere, and its restriction gives the Möbius action on the conformal two-sphere. For $n = 3$ the Clifford algebra $\mathrm{Cl}_{0,3}$ is the doubled quaternion algebra $\mathbb{H}\oplus\mathbb{H}$, and the Vahlen matrices over it realise the conformal group of the three-sphere with the spin double cover $\operatorname{Spin}(4,1)$; the biquaternion algebra $\mathbb{B} \cong \mathrm{Cl}_{3,0}$ of <em>The Biquaternion Algebra as a Clifford Algebra</em> plays the corresponding role for the split signature, where the Vahlen construction is carried out over the Clifford algebra of the split form of the same dimension, and the spinor theory of the conformal group in those dimensions is the spinor theory of the corresponding Clifford algebra. The low-dimensional coincidences of <em>The Low-Dimensional Classification</em> are thus the concrete form of the conformal group in dimensions two and three.</p>
+<h2 id="conformal-invariants-and-conformally-invariant-operators">Conformal Invariants and Conformally Invariant Operators</h2>
+<h3 id="the-conformal-laplacian">The Conformal Laplacian</h3>
+<p><strong>Definition.</strong> Let $(M,g)$ be a Riemannian manifold of dimension $n \geq 3$. The <strong>conformal Laplacian</strong> (or <strong>Yamabe operator</strong>) is the second-order operator
+$$
+L_g = \Delta_g + \frac{n-2}{4(n-1)}\operatorname{scal}_g ,
+$$
+acting on functions, where $\Delta_g$ is the Laplacian of the metric and $\operatorname{scal}_g$ is the scalar curvature; the normalisation of the zero-order term is the one that makes the operator conformally invariant in the following sense.</p>
+<p><strong>Theorem (conformal covariance).</strong> Under the conformal change $g' = \Omega^2 g$ the conformal Laplacian transforms by
+$$
+L_{g'}(\Omega^{(n-2)/2}u) = \Omega^{(n+2)/2}\,L_g(u) , \qquad u \in C^\infty(M),
+$$
+so that the operator is conformally covariant with the <strong>conformal weight</strong> of the function $u \mapsto \Omega^{(n-2)/2}u$; the operator is invariant as an operator on the densities of the appropriate weight, and it is the unique second-order conformally invariant operator of its form on functions, the general classification belonging to the conformal invariant theory of the references.</p>
+<p><strong>Proof sketch.</strong> The transformation formula is computed from the transformation of the Laplacian and the scalar curvature under a conformal change: with $g' = \Omega^2 g$ one has $\operatorname{scal}_{g'} = \Omega^{-2}(\operatorname{scal}_g - 2(n-1)\Omega^{-1}\Delta_g\Omega - (n-1)(n-4)\Omega^{-2}|\nabla\Omega|^2)$, and the substitution $u \mapsto \Omega^{(n-2)/2}u$ cancels the extra terms against those produced by the Laplacian, leaving the factor $\Omega^{(n+2)/2}$. The computation is in the references. $\square$</p>
+<p><strong>Corollary (the Yamabe problem; the statement).</strong> The conformal Laplacian is the operator whose linear equation $L_g u = 0$ determines the <strong>conformal factor</strong> that makes a metric of constant scalar curvature in the conformal class: if $g' = u^{4/(n-2)}g$ and $L_g u = 0$, then $\operatorname{scal}_{g'} = 0$; more generally the constant-scalar-curvature equation is $L_g u = c\,u^{(n+2)/(n-2)}$ for the constant $c$, the <strong>Yamabe equation</strong>. The existence and the regularity of the solutions of the Yamabe equation are the analysis of the problem and belong to Part III, where the measure and the limit are available; the article records the operator and its conformal covariance, which is the form-theoretic content.</p>
+<h3 id="the-cauchyriemann-operator-and-conformal-covariance">The Cauchy–Riemann Operator and Conformal Covariance</h3>
+<p><strong>Theorem.</strong> Let $(M,g)$ be a spin manifold of dimension $n$ with the spinor bundle $\mathcal{S}$ and the Cauchy–Riemann operator $D$, the operator classically named after Dirac, and let $g' = \Omega^2 g$ be a conformal metric with the corresponding spin structure and spinor bundle. Under the conformal change the Cauchy–Riemann operator is conformally covariant in the weight $(n-1)/2$:
+$$
+D_{g'}\bigl(\Omega^{-(n-1)/2}\sigma\bigr) = \Omega^{-(n+1)/2}\,D_g(\sigma) , \qquad \sigma \in \Gamma(\mathcal{S}),
+$$
+the identification of the spinor bundles being the natural one of the conformal spin structures. Consequently the <strong>twistor operator</strong> $\nabla_X \sigma - \frac1n X \cdot D\sigma$ is conformally invariant, its kernel consists of the <strong>twistor spinors</strong>, and the twistor spinors are the conformally invariant spinors of the theory.</p>
+<p><strong>Proof sketch.</strong> The conformal change of the Levi-Civita connection contributes a term involving the gradient of $\log\Omega$ and the Clifford multiplication, and the weight $-(n-1)/2$ on the spinors is exactly the one that cancels the contribution of the change of the connection against the change of the volume element in the trace defining the spinor connection; the computation is the spinor analogue of the conformal Laplacian computation, and it is in the references. $\square$</p>
+<p><strong>Remark.</strong> The conformal covariance of the two operators is the beginning of the conformal invariant theory: the conformal Laplacian and the Cauchy–Riemann operator are the conformally weighted operators acting on the scalar functions and on the spinor sections, and their invariance is why the conformal geometry is the natural setting for the conformally invariant operators of the first and second order. The general theory of the conformally invariant operators, the <strong>GJMS operators</strong> of Graham–Jenne–Mason–Sparling, classifies the operators of higher order with the conformal invariance; the classification is in the references, and the article records the two basic cases.</p>
+<h3 id="the-twistor-construction">The Twistor Construction</h3>
+<p><strong>Remark.</strong> In dimension four the conformal geometry has a complex description. The <strong>twistor space</strong> of the conformal four-sphere is the complex projective space $\mathbb{CP}^3$, with the twistor fibration $\mathbb{CP}^3 \to S^4$ whose fibres are the projective lines, and the conformal structure of the four-sphere is encoded in the complex geometry of the twistor space; the twistor space of the conformal four-space is the complement of a line in $\mathbb{CP}^3$. The <strong>Penrose correspondence</strong> relates the conformally invariant equations of the four-dimensional geometry to the sheaf cohomology of the twistor space: the solutions of the twistor equation, the conformal Killing fields and the solutions of the conformally invariant field equations correspond to cohomology classes, and the twistor space is the projectivisation of the spinor bundle of the conformal structure in the sense. The Riemannian twistor theory of the compact anti-self-dual four-manifolds is the analogue of the construction, and the details are in the references.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>conformal structure</strong> on a manifold is the class of metrics $g' = \Omega^2 g$ for positive functions $\Omega$; it remembers the quadratic form of the tangent space up to a positive scalar, so the linear algebra of the conformal structure is the linear algebra of a quadratic form up to scale. A <strong>conformal map</strong> is a diffeomorphism changing the metric by a positive factor, and the conformal maps of a domain of $\mathbb{R}^n$ for $n \geq 3$ are by <strong>Liouville's theorem</strong> the restrictions of the <strong>Möbius transformations</strong>, the compositions of rotations, dilations, translations and inversions; the <strong>Möbius group</strong> of the sphere is $\operatorname{Conf}(S^n) = O(n+1,1)/\{\pm 1\}$, of dimension $(n+1)(n+2)/2$, and the sphere is the <strong>conformal compactification</strong> of $\mathbb{R}^n$, realised as the projectivised null cone of the form of signature $(n+1,1)$, with the section $x \mapsto (x, (|x|^2-1)/2, (|x|^2+1)/2)$. The conformal group is the reflection group of the form of one dimension more: it is the quotient of the <strong>Pin group</strong> $\operatorname{Pin}(n+1,1)$ of the Clifford algebra $\mathrm{Cl}_{n+1,1}$, and by <strong>Vahlen's theorem</strong> it is the group of the two-by-two matrices over the Clifford algebra $\mathrm{Cl}_{0,n}$ satisfying the Vahlen conditions, acting by fractional transformations $x \mapsto (ax+b)(cx+d)^{-1}$. The local invariants of the conformal structure are carried by the <strong>Weyl tensor</strong>, whose vanishing is equivalent to the conformal flatness in dimension $n \geq 4$, and by the conformally invariant operators: the <strong>conformal Laplacian</strong> $L_g = \Delta_g + \frac{n-2}{4(n-1)}\operatorname{scal}_g$ transforms by $L_{\Omega^2g}(\Omega^{(n-2)/2}u) = \Omega^{(n+2)/2}L_g(u)$, and the <strong>Cauchy–Riemann operator</strong> of a spin manifold transforms by $D_{\Omega^2g}(\Omega^{-(n-1)/2}\sigma) = \Omega^{-(n+1)/2}D_g(\sigma)$, with the <strong>twistor operator</strong> as the conformally invariant first-order operator it defines. In dimension four the conformal geometry has the complex <strong>twistor</strong> description, with the twistor space $\mathbb{CP}^3$ of the conformal four-sphere and the Penrose correspondence.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g$, $g' = \Omega^2 g$</td>
+<td>Metrics; $\Omega > 0$ a conformal factor</td>
+</tr>
+<tr>
+<td>$\mathcal{C} = [g]$</td>
+<td>Conformal structure, the conformal class of $g$</td>
+</tr>
+<tr>
+<td>$\operatorname{Conf}(M,\mathcal{C})$</td>
+<td>Conformal group of a conformal manifold</td>
+</tr>
+<tr>
+<td>$\operatorname{Conf}(S^n) = O(n+1,1)/\{\pm 1\}$</td>
+<td>Möbius group of the sphere, $n \geq 3$</td>
+</tr>
+<tr>
+<td>$\operatorname{Riem}$, $\operatorname{Ric}$, $\operatorname{scal}$</td>
+<td>Riemann, Ricci and scalar curvature of $g$</td>
+</tr>
+<tr>
+<td>$W$</td>
+<td>Weyl tensor; vanishing = conformal flatness for $n \geq 4$</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_X g = \lambda g$</td>
+<td>Conformal Killing equation</td>
+</tr>
+<tr>
+<td>$\mathfrak{conf}(M,g) \subseteq \mathfrak{so}(n+1,1)$</td>
+<td>Conformal algebra, dimension $\leq (n+1)(n+2)/2$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^{n+1,1}$</td>
+<td>Conformal model space, signature $(n+1,1)$</td>
+</tr>
+<tr>
+<td>$\mathcal{N}$</td>
+<td>Null cone; Möbius sphere = projectivised null cone</td>
+</tr>
+<tr>
+<td>$\operatorname{Pin}(n+1,1)$, $\operatorname{Spin}(n+1,1)$</td>
+<td>Pin and Spin groups of the conformal form</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{0,n}$</td>
+<td>Clifford algebra of the Vahlen matrices</td>
+</tr>
+<tr>
+<td>$L_g = \Delta_g + \frac{n-2}{4(n-1)}\operatorname{scal}_g$</td>
+<td>Conformal Laplacian (Yamabe operator)</td>
+</tr>
+<tr>
+<td>$D_{g'}(\Omega^{-(n-1)/2}\sigma) = \Omega^{-(n+1)/2}D_g\sigma$</td>
+<td>Conformal covariance of the Cauchy–Riemann operator</td>
+</tr>
+<tr>
+<td>twistor operator</td>
+<td>$\nabla_X\sigma - \frac1n X\cdot D\sigma$; kernel = twistor spinors</td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^3$</td>
+<td>Twistor space of the conformal four-sphere</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Manfredo P. do Carmo, <em>Riemannian Geometry</em> (Birkhäuser, 1992), for the Weyl tensor, the conformal change of the curvature and the conformal flatness theorem.</li>
+<li>Marcel Berger, <em>A Panoramic View of Riemannian Geometry</em> (Springer, 2003), for the conformal group, Liouville's theorem and the Yamabe problem.</li>
+<li>Lars V. Ahlfors, "Möbius Transformations in $\mathbb{R}^n$ Expressed through $2\times2$ Matrices of Clifford Numbers", <em>Complex Variables</em> 5 (1986), 215–224, for Vahlen's theorem.</li>
+<li>Jan Cnops, <em>An Introduction to Dirac Operators on Manifolds</em> (Birkhäuser, 2002), for the conformal covariance of the Cauchy–Riemann operator and the twistor operator.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, Volume 2 (Cambridge University Press, 1986), for the twistor construction and the Penrose correspondence.</li>
+<li>C. Robin Graham, Ralph Jenne, Lionel J. Mason and George A. J. Sparling, "Conformally Invariant Powers of the Laplacian, I: Existence", <em>Journal of the London Mathematical Society</em> 46 (1992), 557–565, for the GJMS operators and the classification of the conformally invariant operators.</li>
+<li>Michael Atiyah, Nigel Hitchin and Isadore Singer, "Self-Duality in Four-Dimensional Riemannian Geometry", <em>Proceedings of the Royal Society A</em> 362 (1978), 425–461, for the Riemannian twistor theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

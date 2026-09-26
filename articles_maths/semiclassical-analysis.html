@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semiclassical Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="semiclassical-analysis"><strong>Semiclassical Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The calculus of pseudodifferential operators has a scaled form in which a small parameter $\hbar$ enters the frequency variable, so that the symbol is a function on phase space and the technical asymptotic expansions of the calculus become expansions in powers of $\hbar$. The scaled calculus, or <strong>semiclassical calculus</strong>, is the right language for every question in which an operator is studied in the limit of large frequency, or equivalently in which the Liouville measure of a Hamiltonian flow is compared with the spectral data of an operator: the commutator of two quantised symbols is $\hbar/i$ times the quantisation of their Poisson bracket, so the noncommutative algebra of operators reduces to the commutative algebra of functions on phase space as $\hbar\to0$; and the flow $t\mapsto\Phi_t$ of a Hamiltonian vector field governs the evolution of the operators through <strong>Egorov's theorem</strong>, $U(t)^*\mathrm{Op}^w_\hbar(a)U(t)=\mathrm{Op}^w_\hbar(a\circ\Phi_t)+O(\hbar)$, which is the semiclassical form of the propagation of singularities.</p>
+<p>The article develops the calculus and its three main consequences. It defines the <strong>$\hbar$-dependent symbol classes</strong> and the <strong>Weyl quantisation</strong> $\mathrm{Op}^w_\hbar$, in which the symbol $\xi^\alpha$ gives the operator $(\hbar D)^\alpha$; it introduces the <strong>Moyal product</strong> $a\#b=ab+\frac{\hbar}{2i}\{a,b\}+O(\hbar^2)$ and derives the semiclassical form of the Poisson-bracket correspondence, $\frac{1}{i\hbar}[\mathrm{Op}^w_\hbar(a),\mathrm{Op}^w_\hbar(b)]\to\{a,b\}$. It proves Egorov's theorem by the calculus, and it defines the <strong>semiclassical defect measures</strong> (Wigner measures) of a bounded family of states, showing that they are positive Radon measures on phase space carried by the energy surface and invariant under the Hamiltonian flow, so that spectral problems become problems of invariant measures of a classical flow. It treats <strong>coherent states</strong> as the phase-space localised families for which the semiclassical limit is transparent. It closes with the <strong>Weyl law</strong> for the counting function of the eigenvalues of an elliptic operator, the first and simplest consequence of the calculus for spectral asymptotics.</p>
+<p>Throughout, $\hbar \in (0,1]$ is the <strong>semiclassical parameter</strong>, $x,\xi \in \mathbb{R}^n$ are position and frequency, $M$ is a smooth manifold, and $T^*M$ is its cotangent bundle. The symbol classes $S^m$, the principal symbol, the Poisson bracket $\{a,b\}=\sum_j(\partial_{\xi_j}a\,\partial_{x_j}b-\partial_{x_j}a\,\partial_{\xi_j}b)$, ellipticity and the left quantisation $a(x,D)$ are those of <em>Pseudodifferential Operators</em>, and the wavefront set, the microlocal elliptic regularity and the propagation theorem are those of <em>Microlocal Analysis</em>; the relation to the classical flow is the statement that the bicharacteristics of the microlocal propagation theorem are the orbits of the Hamiltonian flow used here. The spectral theory of self-adjoint operators and the functional calculus are those of <em>Unbounded Operators and Spectral Measures</em>; the Sobolev spaces and the Weyl law for the Laplacian use <em>Interpolation Theory</em>. The Hamiltonian flows whose invariant measures appear are the subject, , in the geometric case; the ergodic theory that classifies the measures is <em>Probability and Ergodic Theory</em>, and the applications of the semiclassical limit to particular differential equations — the time-dependent equation generated by a pseudodifferential operator, the boundary-value problems, the scattering theory — belong,and <em>Differential Equations</em>, all. Those articles are cited, not developed.</p>
+<p>No physics is invoked; $\hbar$ is a dimensionless small parameter of the calculus.</p>
+<h2 id="the-semiclassical-calculus">The Semiclassical Calculus</h2>
+<h3 id="math20-dependent-symbols">$\hbar$-Dependent Symbols</h3>
+<p><strong>Definition.</strong> For $m \in \mathbb{R}$ let $S^m_\hbar=S^m_{1,0}$ be the class of families $a(\cdot,\cdot;\hbar) \in C^\infty(\mathbb{R}^n\times\mathbb{R}^n)$, $\hbar \in (0,1]$, such that for all multi-indices $\alpha,\beta$ there is $C_{\alpha,\beta}$ with</p>
+<p>$$
+|\partial_\xi^\alpha\partial_x^\beta a(x,\xi;\hbar)| \le C_{\alpha,\beta}(1+|\xi|)^{m-|\alpha|}
+$$</p>
+<p>uniformly in $\hbar$. A family is <strong>semiclassically bounded</strong> if it lies in $S^0_\hbar$; the class $S^{-\infty}_\hbar=\bigcap_mS^m_\hbar$ is the class of families that are $O(\hbar^\infty)$ in every seminorm and whose quantisations are negligible in the limit.</p>
+<p>The symbols of the semiclassical calculus are the same growth classes as before, with the uniformity in $\hbar$ added; the limit $\hbar\to0$ is a limit in which the phase-space structure of the operator is retained while the commutativity defect vanishes.</p>
+<p><strong>Definition.</strong> For $a \in S^m_\hbar$ the <strong>Weyl quantisation</strong> is</p>
+<p>$$
+\mathrm{Op}^w_\hbar(a)u(x)=\frac{1}{(2\pi\hbar)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}e^{i(x-y)\cdot\xi/\hbar}\,a\!\left(\frac{x+y}{2},\xi;\hbar\right)u(y)\,dy\,d\xi ,
+$$</p>
+<p>the normalisation chosen so that the symbol $\xi^\alpha$ gives the operator $(\hbar D)^\alpha$ with $D^\alpha=(-i)^{|\alpha|}\partial^\alpha$; in particular $\mathrm{Op}^w_\hbar(|\xi|^2)=-\hbar^2\Delta$ and $\mathrm{Op}^w_\hbar(\xi_j)=\hbar D_j=-i\hbar\partial_{x_j}$.</p>
+<p><strong>Proposition.</strong> (i) $\mathrm{Op}^w_\hbar$ is linear, and $\mathrm{Op}^w_\hbar(\overline a)=\mathrm{Op}^w_\hbar(a)^*$ on $\mathcal S$, so that real symbols give symmetric operators. (ii) If $a \in S^0_\hbar$ then $\mathrm{Op}^w_\hbar(a)$ is bounded on $L^2$ with $\|\mathrm{Op}^w_\hbar(a)\|\le C\sup_{|\alpha|+|\beta|\le N}\|\partial_\xi^\alpha\partial_x^\beta a\|_\infty$ for a constant and an integer depending only on $n$. (iii) If $a \in S^m_\hbar$ then $\mathrm{Op}^w_\hbar(a)$ maps $H^s$ continuously into $H^{s-m}$, with norms bounded uniformly in $\hbar$. (iv) $\mathrm{Op}^w_\hbar(a)$ differs from the left quantisation at the same scale, $\frac{1}{(2\pi\hbar)^n}\iint e^{i(x-y)\cdot\xi/\hbar}a(x,\xi)u(y)\,dy\,d\xi$, by $\frac{\hbar}{2i}\sum_j\partial_{x_j}\partial_{\xi_j}a$ plus terms of order $\hbar^2$; the two quantisations have the same principal symbol and differ only in the subprincipal terms, exactly as in <em>Pseudodifferential Operators</em> after the scaling $\xi\mapsto\xi/\hbar$.</p>
+<p><em>Proof.</em> (i) is the symmetry of the Weyl kernel. (ii) is the Calderón–Vaillancourt theorem in its scaled form; the scaling $x\mapsto x$, $\xi\mapsto\xi/\hbar$ reduces the estimate to the unscaled one with the constants uniform in $\hbar$. (iii) follows from (ii) applied to $\mathrm{Op}^w_\hbar(a)\langle\hbar D\rangle^{-m}$ and the fact that the Bessel potentials commute with the calculus to leading order. (iv) is the expansion of the argument $(x+y)/2$ that produced the subprincipal term already computed in <em>Pseudodifferential Operators</em>. $\square$</p>
+<h3 id="the-moyal-product">The Moyal Product</h3>
+<p><strong>Theorem (product).</strong> For $a \in S^m_\hbar$ and $b \in S^{m'}_\hbar$,</p>
+<p>$$
+\mathrm{Op}^w_\hbar(a)\mathrm{Op}^w_\hbar(b)=\mathrm{Op}^w_\hbar(a\#b),
+$$</p>
+<p>where the <strong>Moyal product</strong> $a\#b \in S^{m+m'}_\hbar$ has the expansion</p>
+<p>$$
+a\#b=ab+\frac{\hbar}{2i}\{a,b\}+\hbar^2r, \qquad r \in S^{m+m'-2}_\hbar ,
+$$</p>
+<p>and at each order $k$ the coefficient is a bidifferential operator of order $k$ in each group of variables, so that the product is a deformation of the pointwise product with $\hbar$ measuring the noncommutativity. Consequently</p>
+<p>$$
+[\mathrm{Op}^w_\hbar(a),\mathrm{Op}^w_\hbar(b)]=\frac{\hbar}{i}\,\mathrm{Op}^w_\hbar(\{a,b\})+O(\hbar^2)
+$$</p>
+<p>in operator norm for symbols of order $0$. This is the <strong>Poisson-bracket correspondence</strong>: the commutator is the Weyl operator of the Poisson bracket to leading order in $\hbar$.</p>
+<p><em>Proof (sketch).</em> The product of two Weyl operators is computed from the kernel representation: the composed kernel is an oscillatory integral whose phase is expanded to second order about its stationary point, and the expansion produces the bidifferential operators of the statement; the first-order term is the Poisson bracket with the stated sign, checked by the exact computation below. $\square$</p>
+<p><strong>Example (verification).</strong> For $n=1$, $a(x,\xi)=x$ and $b(x,\xi)=\xi$: $\mathrm{Op}^w_\hbar(a)=M_x$ and $\mathrm{Op}^w_\hbar(b)=\hbar D=-i\hbar\partial_x$, and</p>
+<p>$$
+[M_x,-i\hbar\partial_x]u=-i\hbar\bigl(x\partial_xu-\partial_x(xu)\bigr)=i\hbar u ,
+$$</p>
+<p>so the commutator is $i\hbar I$. The Poisson bracket is $\{a,b\}=\partial_\xi x\,\partial_x\xi-\partial_x x\,\partial_\xi\xi=-1$, and the formula predicts $\frac{\hbar}{i}(-1)I=i\hbar I$, in agreement; the product expansion gives $x\#\xi=x\xi+\frac{i\hbar}{2}$ and $\xi\#x=x\xi-\frac{i\hbar}{2}$, again in agreement.</p>
+<p><strong>Corollary (algebra of the semiclassical calculus).</strong> Modulo the negligible class $S^{-\infty}_\hbar$, the Weyl operators of symbols in $S^\infty_\hbar$ form an algebra with involution; its commutator ideal is generated by $\hbar$, and the quotient by $\hbar S^\infty_\hbar$ is the commutative algebra of symbols with the Poisson bracket as its first-order structure. This is the precise sense in which the semiclassical limit recovers the classical algebra of functions on phase space.</p>
+<h2 id="egorovs-theorem">Egorov's Theorem</h2>
+<p><strong>Definition.</strong> Let $p=p(x,\xi)$ be a real symbol of order $m$, let $P=\mathrm{Op}^w_\hbar(p)$ be the corresponding self-adjoint operator (on a suitable domain, by the theory of <em>Unbounded Operators and Spectral Measures</em>), and let</p>
+<p>$$
+U(t)=e^{-itP/\hbar}, \qquad i\hbar\,\partial_tU(t)=P\,U(t), \qquad U(0)=I,
+$$</p>
+<p>the unitary group generated by $P$, defined by the functional calculus of $P$. Let $\Phi_t$ be the Hamiltonian flow of $p$: the flow of the vector field</p>
+<p>$$
+H_p=\sum_{j=1}^{n}\bigl(\partial_{\xi_j}p\,\partial_{x_j}-\partial_{x_j}p\,\partial_{\xi_j}\bigr),
+$$</p>
+<p>so that $\frac{d}{dt}\Phi_t(x,\xi)=H_p(\Phi_t(x,\xi))$ and $\Phi_t^*p=p$.</p>
+<p><strong>Theorem (Egorov).</strong> Let $a \in S^0_\hbar$ and let $T>0$. Then</p>
+<p>$$
+U(t)^*\,\mathrm{Op}^w_\hbar(a)\,U(t)=\mathrm{Op}^w_\hbar\bigl(a\circ\Phi_{t}\bigr)+O(\hbar \langle t\rangle)
+$$</p>
+<p>in operator norm, uniformly for $|t|\le T$ and for $a$ in a bounded subset of $S^0_\hbar$, where $\Phi_t$ is the Hamiltonian flow of $p$; the transport is along $\Phi_{t}$ and not along $\Phi_{-t}$, as the sign in $\frac{d}{dt}a_t=\{p,a_t\}$ determines. Equivalently, the flow of the operator under the unitary group is the transport of the symbol along the Hamiltonian flow to leading order in $\hbar$.</p>
+<p><em>Proof (sketch).</em> Differentiate $t\mapsto U(t)^*\mathrm{Op}^w_\hbar(a)U(t)$ and use the equation $i\hbar\partial_tU=PU$; the derivative is $\frac{i}{\hbar}U(t)^*[P,\mathrm{Op}^w_\hbar(a)]U(t)$, and the commutator is computed by the product theorem:</p>
+<p>$$
+[P,\mathrm{Op}^w_\hbar(a)]=\frac{\hbar}{i}\mathrm{Op}^w_\hbar(\{p,a\})+O(\hbar^2\mathrm{-order}),
+$$</p>
+<p>so that the derivative is $\mathrm{Op}^w_\hbar(\{p,a\})+O(\hbar)$ up to unitary conjugation. The transport equation $\partial_ta_t=\{p,a_t\}$ with $a_0=a$ has the solution $a_t=a\circ\Phi_t$, since $\{p,a\}=-\{a,p\}=-H_pa$; comparing the flow of the operator with the flow of the symbol and integrating the error gives the bound $O(\hbar\langle t\rangle)$. $\square$</p>
+<p><strong>Corollary (propagation of singularities, semiclassical form).</strong> If a family of states $u_\hbar$ is localised on a set $\Lambda \subseteq T^*M$ in the microlocal sense, then $U(t)u_\hbar$ is localised on $\Phi_t(\Lambda)$ to leading order in $\hbar$: the singularities and the phase-space localisation are transported by the Hamiltonian flow. This is the semiclassical form of the propagation theorem of <em>Microlocal Analysis</em>, and the two statements agree in the limit in which the small parameter is the reciprocal of the frequency.</p>
+<p><strong>Example (free motion).</strong> For $p(\xi)=\frac12|\xi|^2$ the flow is $\Phi_t(x,\xi)=(x+t\xi,\xi)$, so that $U(t)=e^{-\frac{it}{2\hbar}\Delta}$ and Egorov's theorem reads $U(t)^*\mathrm{Op}^w_\hbar(a)U(t)=\mathrm{Op}^w_\hbar(a(x+t\xi,\xi))+O(\hbar\langle t\rangle)$; the symbol is transported along the straight lines of the free motion. The example is the exact operator-theoretic version of the statement that the solutions of the free equation are constant along the characteristics.</p>
+<h2 id="semiclassical-measures">Semiclassical Measures</h2>
+<h3 id="definition-and-existence">Definition and Existence</h3>
+<p><strong>Definition.</strong> Let $(u_\hbar)_{\hbar\in(0,1]}$ be a family with $\|u_\hbar\|\le1$ in $L^2(M)$ and suppose $u_\hbar\to0$ weakly as $\hbar\to0$ (a <strong>semiclassically oscillating</strong> family). A <strong>semiclassical measure</strong> (or <strong>defect measure</strong>) associated with the family is a positive Radon measure $\mu$ on $T^*M$ such that for every $a \in C_c^\infty(T^*M)$,</p>
+<p>$$
+\bigl\langle \mathrm{Op}^w_\hbar(a)u_\hbar,u_\hbar\bigr\rangle \;\longrightarrow\; \int_{T^*M}a\,d\mu
+$$</p>
+<p>along a subsequence $\hbar=\hbar_k\to0$.</p>
+<p><strong>Theorem (existence and basic properties).</strong> Every bounded family has a subsequence with a semiclassical measure. The measure $\mu$ is positive, its total mass satisfies $0\le\|\mu\|\le\limsup\|u_\hbar\|^2$, and</p>
+<p>$$
+\operatorname{supp}\mu \subseteq \limsup_{\hbar\to0}\text{(the set on which }u_\hbar\text{ is microlocally concentrated)};
+$$</p>
+<p>if $u_\hbar$ is localised in a compact region of phase space, $\mu$ is a finite measure on that region. Conversely every positive Radon measure on $T^*M$ of finite mass arises from some family of states.</p>
+<p><em>Proof (sketch).</em> For each $a \in C_c^\infty$ the numbers $\langle \mathrm{Op}^w_\hbar(a)u_\hbar,u_\hbar\rangle$ are bounded by $\|a\|$ and the map $a\mapsto$ the limit along a subsequence is positive and linear on the separable algebra $C_c^\infty(T^*M)$; extend by continuity to a positive functional, which is a Radon measure by the Riesz representation theorem of <em>Measure Theory and Integration</em>. The positivity and the mass bound follow from the $L^2$ boundedness and the fact that $a\ge0$ gives an approximately positive operator. $\square$</p>
+<h3 id="invariance-and-the-energy-surface">Invariance and the Energy Surface</h3>
+<p><strong>Theorem (invariance).</strong> Let $p$ be a real symbol, $P=\mathrm{Op}^w_\hbar(p)$, and let $(u_\hbar)$ satisfy</p>
+<p>$$
+\|(P-E)u_\hbar\|=O(\hbar) \qquad \text{for some } E \in \mathbb{R}.
+$$</p>
+<p>Then every semiclassical measure $\mu$ of the family is supported in the energy surface</p>
+<p>$$
+\Sigma_E=\{p=E\}\subseteq T^*M
+$$</p>
+<p>and is invariant under the Hamiltonian flow of $p$: $\Phi_t{}_*\mu=\mu$ for all $t$. Consequently the semiclassical limit of a spectral problem is a problem in the dynamics of the classical flow and its invariant measures.</p>
+<p><em>Proof (sketch).</em> For the support: if $a$ is supported off $\Sigma_E$, then $a=(p-E)b$ for some symbol $b$ that can be chosen compactly supported (Microlocal division of symbols), so $\mathrm{Op}^w_\hbar(a)=\mathrm{Op}^w_\hbar(p-E)\mathrm{Op}^w_\hbar(b)+O(\hbar)$ and the expectation is $O(\hbar)$ plus a term controlled by $\|(P-E)u_\hbar\|$. For the invariance: apply Egorov's theorem to the expectation, using that $U(t)$ commutes with $P$ and hence preserves the hypothesis $\|(P-E)u_\hbar\|=O(\hbar)$; the expectation of $\mathrm{Op}^w_\hbar(a)$ on $u_\hbar$ then equals the expectation of $\mathrm{Op}^w_\hbar(a\circ\Phi_{-t})$ on $U(t)u_\hbar$ up to $O(\hbar)$, and both have the same semiclassical limit after passing to a common subsequence. $\square$</p>
+<p><strong>Example (the circle and the rotation number).</strong> On the circle $S^1$ with $P=-\hbar^2\Delta$, the energy surface for $E>0$ is the pair of circles $\xi=\pm\sqrt E$; the Hamiltonian flow is the rotation at frequency $\pm\sqrt E$, whose invariant probability measures are the rotations, and the semiclassical measures of the eigenfunctions are the corresponding uniform measures on the two energy circles. On the torus the joint spectrum of the commuting operators gives the analogous statement in several frequencies. The classification of the invariant measures of a general flow, and the ergodic theorems that select them, belong,and <em>Probability and Ergodic Theory</em>.</p>
+<h3 id="the-classical-limit-of-expectation-values">The Classical Limit of Expectation Values</h3>
+<p>The definition of a semiclassical measure is a statement about the diagonal matrix elements of quantised symbols, and it is the exact form of the statement that a state with a phase-space profile has an expectation value for the symbol that is its average against that profile. If the family is generated from an initial coherent state by the unitary group, $u_\hbar(t)=U(t)\varphi_{z,\hbar}$, then the invariance theorem says that the semiclassical measure at time $t$ is the push-forward of the point mass at $z$ by $\Phi_t$, that is, the point mass at $\Phi_t(z)$, so the expectation of every symbol follows the classical trajectory to leading order:</p>
+<p>$$
+\bigl\langle \mathrm{Op}^w_\hbar(a)u_\hbar(t),u_\hbar(t)\bigr\rangle \;\longrightarrow\; a(\Phi_t(z)) \qquad (\hbar\to0).
+$$</p>
+<p>For a general state the same computation gives the general principle: the semiclassical measure of the family is the measure on phase space whose averages are the limits of the expectation values, and the flow acts on it by push-forward. When the classical flow is ergodic with respect to a probability measure $\nu$ on the energy surface, the flow-invariant measures include $\nu$, and the corresponding families are those whose diagonal matrix elements converge to the ergodic averages; the theorem of Birkhoff identifies the time averages with the space averages for such $\nu$, and the law of large numbers for the family is the statement that the time evolution of a generic coherent state equidistributes. The precise statements, the classification of the invariant measures and the ergodic theorems used here belong to <em>Probability and Ergodic Theory</em>,; the convergence of the matrix elements for the quantised system is the semiclassical input to those theorems, and it is the content of the present section.</p>
+<h2 id="coherent-states">Coherent States</h2>
+<p><strong>Definition.</strong> For $(x_0,\xi_0) \in \mathbb{R}^{2n}$ the <strong>coherent state</strong> at scale $\hbar$ is</p>
+<p>$$
+\varphi_{x_0,\xi_0,\hbar}(x)=(\pi\hbar)^{-n/4}\,e^{i(x-x_0)\cdot\xi_0/\hbar}\,e^{-|x-x_0|^2/2\hbar},
+$$</p>
+<p>a normalised $L^2$ function, $\|\varphi_{x_0,\xi_0,\hbar}\|=1$, whose mass is concentrated in the ball of radius $O(\sqrt\hbar)$ about $x_0$ and whose frequency content is concentrated in the ball of radius $O(\sqrt\hbar)$ about $\xi_0$.</p>
+<p><strong>Theorem (phase-space localisation).</strong> For $a \in S^0_\hbar$ and every $(x_0,\xi_0)$,</p>
+<p>$$
+\bigl\langle \mathrm{Op}^w_\hbar(a)\varphi_{x_0,\xi_0,\hbar},\varphi_{x_0,\xi_0,\hbar}\bigr\rangle \;\longrightarrow\; a(x_0,\xi_0) \qquad (\hbar\to0),
+$$</p>
+<p>so the semiclassical measure of the coherent-state family is the point mass $\delta_{(x_0,\xi_0)}$; superpositions of coherent states, with the centres spread over a bounded region and the coefficients chosen so that the family remains $L^2$-normalised and weakly convergent, realise the measures that are absolutely continuous with respect to the phase-space volume.</p>
+<p><em>Proof (sketch).</em> The matrix element of a Weyl operator between coherent states is a Gaussian average of the symbol at scale $\sqrt\hbar$ in phase space:</p>
+<p>$$
+\bigl\langle \mathrm{Op}^w_\hbar(a)\varphi_{z},\varphi_{z}\bigr\rangle=\int_{T^*M}a(z')\,(\pi\hbar)^{-n}e^{-|z-z'|^2/\hbar}\,dz' ,
+$$</p>
+<p>up to constants depending only on the dimension and for symbols suitably cut off in the frequency variable. The Gaussian kernel $(\pi\hbar)^{-n}e^{-|z-z'|^2/\hbar}$ is an approximate identity and converges weakly to the point mass $\delta_z$ as $\hbar\to0$; dominated convergence for a symbol in $S^0_\hbar$ gives the limit $a(z)$. $\square$</p>
+<p><strong>Corollary.</strong> Coherent states, translated over phase space, resolve the identity and turn the semiclassical calculus into a pseudodifferential calculus with the phase-space metric $|dz|^2/\hbar$; in this language the limit $\hbar\to0$ reads the symbol off the state, since the matrix element of $\mathrm{Op}^w_\hbar(a)$ in the coherent state centred at $z$ tends to $a(z)$.</p>
+<h2 id="the-weyl-law">The Weyl Law</h2>
+<p><strong>Theorem (Weyl law).</strong> Let $P=\mathrm{Op}^w_\hbar(p)$ be the semiclassical quantisation of an elliptic real symbol $p$ of order $2$ with $p\to\infty$ as $|\xi|\to\infty$, and let $P_\hbar$ be the corresponding self-adjoint operator with spectrum $\{E_j(\hbar)\}$ (the parameter $\hbar$ fixed, the eigenvalues those of the operator). Then the counting function $N(E)=\#\{j:E_j\le E\}$ satisfies</p>
+<p>$$
+N(E)=\frac{1}{(2\pi\hbar)^n}\int_{p\le E}dx\,d\xi+O(\hbar^{-n+1})
+$$</p>
+<p>for $E$ in a compact set of regular values of $p$; in particular, for the Dirichlet Laplacian on a bounded domain $\Omega \subseteq \mathbb{R}^n$ with eigenvalues $\lambda_1\le\lambda_2\le\cdots$,</p>
+<p>$$
+\#\{j:\lambda_j\le\lambda\}=\frac{\operatorname{vol}(\Omega)\,v_n}{(2\pi)^n}\,\lambda^{n/2}+O(\lambda^{(n-1)/2}) \qquad (\lambda\to\infty),
+$$</p>
+<p>where $v_n$ is the volume of the unit ball in $\mathbb{R}^n$; the symbol $\omega_n$ is reserved in this corpus for the surface area of the unit sphere $S^{n-1}$.</p>
+<p><em>Proof (sketch).</em> The functional calculus and the trace give, for a smooth cutoff $\chi$,</p>
+<p>$$
+\operatorname{tr}\chi(P)=\frac{1}{(2\pi\hbar)^n}\int\chi(p(x,\xi))\,dx\,d\xi+O(\hbar^{-n+1}),
+$$</p>
+<p>by the symbol calculus and the fact that the trace of a Weyl operator is the phase-space integral of its symbol to leading order (with a correction of relative order $\hbar$); the singularities of the cutoff as $E$ approaches a value of $p$ give the counting function, and the error term is controlled by the subprincipal expansion. The Dirichlet case is the specialisation $p=|\xi|^2$ on the cotangent bundle of $\Omega$ with the Weyl quantisation of $|\xi|^2$ giving $-\hbar^2\Delta$. $\square$</p>
+<p><strong>Example (the quadratic symbol).</strong> For $n=1$ and $p(x,\xi)=x^2+\xi^2$ the operator $P=\mathrm{Op}^w_\hbar(p)=-\hbar^2\frac{d^2}{dx^2}+x^2$ has the exact spectrum $\{E_k=\hbar(2k+1):k=0,1,2,\dots\}$, since the Hermite functions are its eigenfunctions. Its counting function is $N(E)=\#\{k:E_k\le E\}=\lfloor\frac12(\frac{E}{\hbar}+1)\rfloor$, and the phase-space volume of the sublevel set is</p>
+<p>$$
+\frac{1}{2\pi\hbar}\int_{x^2+\xi^2\le E}dx\,d\xi=\frac{1}{2\pi\hbar}\,\pi E=\frac{E}{2\hbar},
+$$</p>
+<p>so the Weyl law $N(E)=\frac{E}{2\hbar}+O(1)$ holds with the sharp error $O(1)$ and the leading term exact in this solvable case. The example also shows that the error term can be of the order of the level spacing, so that the law determines $N(E)$ only up to the resolution of a single eigenvalue; the finer structure — the fluctuation of $N(E)$ about the Weyl term — is the content of the trace formulae.</p>
+<p><strong>Remarks.</strong> (i) The leading term of the law is the phase-space volume, the natural measure of the classical problem; the law is the first instance of the principle that the spectral asymptotics of an operator are the volume asymptotics of its symbol, and the correction term of order $\hbar^{-n+1}$ is not sharp in general. (ii) The fluctuations of $N(E)$ about its Weyl term are governed by the periodic orbits of the Hamiltonian flow, through trace formulae of the form $\sum_k\delta(E-E_k)=\frac{1}{(2\pi\hbar)^n}\int_{p=E}\frac{dS}{|dp|}+\sum_\gamma(\text{contributions of closed orbits }\gamma)$; the leading term is the Weyl law and the corrections are distributions supported on the lengths of the periodic orbits of $\Phi_t$. This is the trace formula of Selberg and Gutzwiller, and its rigorous forms and applications belong to spectral theory and to the dynamics . (iii) The uniform-in-$\hbar$ calculus also gives the spectral asymptotics of the resonances of non-self-adjoint problems and of the eigenvalue clusters of perturbed operators; those are applications to differential equations and belong.</p>
+<h2 id="summary">Summary</h2>
+<p>Semiclassical analysis is the calculus of pseudodifferential operators with a small parameter $\hbar$ in the frequency variable. The symbols are the classes $S^m_\hbar$ with estimates uniform in $\hbar$, and the Weyl quantisation $\mathrm{Op}^w_\hbar$ is normalised so that $\mathrm{Op}^w_\hbar(|\xi|^2)=-\hbar^2\Delta$ and $\mathrm{Op}^w_\hbar(\xi_j)=\hbar D_j$; it is bounded on $L^2$ for symbols in $S^0_\hbar$ and continuous between Sobolev spaces, and the Weyl symbol of the adjoint is the complex conjugate, so that real symbols give symmetric operators. The product of two Weyl operators is the Weyl operator of the <strong>Moyal product</strong> $a\#b=ab+\frac{\hbar}{2i}\{a,b\}+O(\hbar^2)$, whence the Poisson-bracket correspondence $[\mathrm{Op}^w_\hbar(a),\mathrm{Op}^w_\hbar(b)]=\frac{\hbar}{i}\mathrm{Op}^w_\hbar(\{a,b\})+O(\hbar^2)$; the example $a=x$, $b=\xi$ gives the commutator $i\hbar I$ exactly. The passage from the noncommutative algebra of operators to the Poisson algebra of functions on phase space is the semiclassical limit.</p>
+<p><strong>Egorov's theorem</strong> transports symbols along the Hamiltonian flow: if $p$ is real, $P=\mathrm{Op}^w_\hbar(p)$ and $U(t)=e^{-itP/\hbar}$, then $U(t)^*\mathrm{Op}^w_\hbar(a)U(t)=\mathrm{Op}^w_\hbar(a\circ\Phi_{t})+O(\hbar\langle t\rangle)$, where $\Phi_t$ is the flow of $H_p$. It is the semiclassical form of the propagation of singularities and the analytic content of the statement that the classical and the operator flows agree to leading order. From it follows the invariance of the <strong>semiclassical measures</strong>: the weak limits of $\langle \mathrm{Op}^w_\hbar(a)u_\hbar,u_\hbar\rangle$ define positive Radon measures on $T^*M$, and the families satisfying $\|(P-E)u_\hbar\|=O(\hbar)$ have measures supported in the energy surface $\{p=E\}$ and invariant under the flow, so the spectral problem passes to the classical dynamics.</p>
+<p><strong>Coherent states</strong>, the Gaussian wave packets of width $\sqrt\hbar$ localised at a phase-space point $z$, realise the point masses as semiclassical limits and make the Poisson-bracket correspondence transparent, $\langle \mathrm{Op}^w_\hbar(a)\varphi_z,\varphi_z\rangle\to a(z)$. Finally the <strong>Weyl law</strong> counts the eigenvalues of an elliptic operator by the phase-space volume of the symbol, $N(E)=(2\pi\hbar)^{-n}\int_{p\le E}dx\,d\xi+O(\hbar^{-n+1})$, with the classical specialisation $\#\{\lambda_j\le\lambda\}\sim\operatorname{vol}(\Omega)v_n(2\pi)^{-n}\lambda^{n/2}$ for the Dirichlet Laplacian; its corrections and fluctuations are governed by the periodic orbits of the Hamiltonian flow.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\hbar$</td>
+<td>semiclassical parameter in $(0,1]$</td>
+</tr>
+<tr>
+<td>$S^m_\hbar$, $S^{-\infty}_\hbar$</td>
+<td>semiclassical symbol classes</td>
+</tr>
+<tr>
+<td>$\mathrm{Op}^w_\hbar(a)$</td>
+<td>Weyl quantisation at scale $\hbar$</td>
+</tr>
+<tr>
+<td>$a\#b$</td>
+<td>Moyal product</td>
+</tr>
+<tr>
+<td>$\{a,b\}$</td>
+<td>Poisson bracket</td>
+</tr>
+<tr>
+<td>$p$, $P=\mathrm{Op}^w_\hbar(p)$</td>
+<td>principal symbol and its operator</td>
+</tr>
+<tr>
+<td>$H_p$</td>
+<td>Hamiltonian vector field</td>
+</tr>
+<tr>
+<td>$\Phi_t$</td>
+<td>Hamiltonian flow</td>
+</tr>
+<tr>
+<td>$U(t)=e^{-itP/\hbar}$</td>
+<td>unitary group generated by $P$</td>
+</tr>
+<tr>
+<td>$u_\hbar$</td>
+<td>semiclassically oscillating family</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>semiclassical (defect, Wigner) measure</td>
+</tr>
+<tr>
+<td>$\Sigma_E=\{p=E\}$</td>
+<td>energy surface</td>
+</tr>
+<tr>
+<td>$\varphi_{x_0,\xi_0,\hbar}$</td>
+<td>coherent state</td>
+</tr>
+<tr>
+<td>$N(E)$, $N(\lambda)$</td>
+<td>eigenvalue counting functions</td>
+</tr>
+<tr>
+<td>$v_n$</td>
+<td>volume of the unit ball in $\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$T^*M$</td>
+<td>phase space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lars Hörmander, <em>The Analysis of Linear Partial Differential Operators IV</em> (Springer, 1985), for the semiclassical calculus, the Weyl law and the trace formula.</li>
+<li>André Voros, "Développements semi-classiques", <em>Mémoires de la SMF</em> 1 (1981), 1–172, for the semiclassical expansions and the symbol calculus.</li>
+<li>Yuri A. Kordyukov, "Semiclassical spectral asymptotics", in <em>Encyclopedia of Mathematical Physics</em> (Elsevier, 2006), for a survey of the calculus and its spectral applications.</li>
+<li>Maciej Zworski, <em>Semiclassical Analysis</em> (American Mathematical Society, 2012), for a modern account of the calculus, Egorov's theorem, defect measures and the Weyl law.</li>
+<li>Johannes Sjöstrand, "Microlocal analysis for differential operators: an introduction", <em>Lecture Notes in Mathematics</em> 1851 (Springer, 2004), for the semiclassical analytic theory.</li>
+<li>Victor Ivrii, <em>Microlocal Analysis and Precise Spectral Asymptotics</em> (Springer, 1998), for the sharp form of the Weyl law and its remainder.</li>
+<li>Patrick Gérard, "Mesures semi-classiques et ondes de Bloch", <em>Séminaire Équations aux Dérivées Partielles</em> (École Polytechnique, 1991), for defect measures and their invariance.</li>
+<li>Hermann Weyl, "Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen", <em>Mathematische Annalen</em> 71 (1912), 441–479, for the original eigenvalue counting law.</li>
+<li>William Parry and Mark Pollicott, "Zeta functions and the periodic orbit structure of hyperbolic dynamics", <em>Astérisque</em> 187–188 (1990), 1–268, for the periodic-orbit expansions of the counting function.</li>
+<li>Atle Selberg, "Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces with applications to Dirichlet series", <em>Journal of the Indian Mathematical Society</em> 20 (1956), 47–87, for the trace formula in the case of a compact hyperbolic surface.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

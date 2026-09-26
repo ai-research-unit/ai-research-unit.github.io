@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Quaternion Subspace — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-quaternion-subspace"><strong>Biquaternion Quaternion Subspace</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation: the elements of the biquaternion algebra $\mathbb{B}$ whose four complex coefficients are real. It is the copy of the real quaternion algebra inside $\mathbb{B}$, and it is one of the two distinguished subspaces that are subalgebras — indeed the only one that is non-commutative. On it the norm form is positive definite, so every non-zero element is a unit and there are no zero divisors; this is what separates it from the two sectors and from the vector subspace, where the norm form is indefinite.</p>
+<p>The article follows the same plan as its companion <em>Biquaternion Centre Subspace</em>: definition and basis, algebra and module structure, norm form, matrix image, the action of the four involutions, and the intersections with the other five subspaces. All statements are algebraic; no coordinates other than the coefficients $Q_0, \dots, Q_3$ and their real and imaginary parts $q_\mu, q'_\mu$ are used.</p>
+<h2 id="definition-and-basis">Definition and Basis</h2>
+<h3 id="the-defining-involution">The Defining Involution</h3>
+<p><strong>Definition.</strong> The <strong>quaternion subspace</strong> is the fixed space of complex conjugation,</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{*} = \tilde{Q} \right\} ,
+$$</p>
+<p>where $\tilde{Q}^{*} = Q_0^{*} e_0 + Q_1^{*} e_1 + Q_2^{*} e_2 + Q_3^{*} e_3$ is the coefficient-wise complex conjugate.</p>
+<p>The complementary space, the anti-fixed space of ${}^{*}$, is the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, and $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ is the <strong>quaternion decomposition</strong> of the algebra.</p>
+<h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
+<p>Comparing $\tilde{Q}^{*} = \tilde{Q}$ coefficient by coefficient gives $Q_\mu^{*} = Q_\mu$ for each $\mu = 0, 1, 2, 3$, that is, each coefficient is real:</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 , \qquad q_0, q_1, q_2, q_3 \in \mathbb{R} .
+$$</p>
+<p>In terms of the eight real coordinates of $\mathbb{B}$ the subspace is the coordinate space</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} = \left\{ \tilde{Q} : q'_0 = q'_1 = q'_2 = q'_3 = 0 \right\} ,
+$$</p>
+<p>the four real coordinates $(q_0, q_1, q_2, q_3)$ being free.</p>
+<h3 id="basis-and-dimension">Basis and Dimension</h3>
+<p><strong>Proposition.</strong> $\mathbb{H}_{\mathbb{B}}$ is a real vector space of dimension $4$, with basis $e_0, e_1, e_2, e_3$. It is the real form of $\mathbb{B}$: the algebra is recovered as $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \otimes_{\mathbb{R}} \mathbb{C}$, and $\mathbb{H}_{\mathbb{B}}$ is exactly the set of elements fixed by the coefficient-wise conjugation.</p>
+<p><strong>Proof.</strong> The four coefficients give four real parameters, and $e_0, \dots, e_3$ are linearly independent over $\mathbb{R}$. The tensor product statement is the definition $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ read the other way round. $\square$</p>
+<h2 id="algebra-and-module-structure">Algebra and Module Structure</h2>
+<h3 id="it-is-a-subalgebra">It Is a Subalgebra</h3>
+<p><strong>Proposition.</strong> $\mathbb{H}_{\mathbb{B}}$ is closed under multiplication; it is an associative algebra over $\mathbb{R}$ with unit $e_0$, isomorphic to the real quaternion algebra $\mathbb{H}$ by $q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 \mapsto q_0 + q_1 i + q_2 j + q_3 k$.</p>
+<p><strong>Proof.</strong> The product of two elements with real coefficients has real coefficients, since the structure constants of the basis are real; the displayed map preserves the unit and the products $e_j e_k$ and is bijective. $\square$</p>
+<p>The subspace inherits from $\mathbb{B}$ the multiplication, and it is the only one of the six that is non-commutative. Its products are governed by</p>
+<p>$$
+e_1^2 = e_2^2 = e_3^2 = -e_0 , \qquad e_1e_2 = -e_2e_1 = e_3 , \qquad e_2e_3 = -e_3e_2 = e_1 , \qquad e_3e_1 = -e_1e_3 = e_2 .
+$$</p>
+<h3 id="it-is-a-division-algebra">It Is a Division Algebra</h3>
+<p><strong>Theorem.</strong> $\mathbb{H}_{\mathbb{B}}$ is a division algebra: for non-zero $\tilde{Q}, \tilde{R} \in \mathbb{H}_{\mathbb{B}}$ the product $\tilde{Q}\tilde{R}$ is non-zero. Equivalently, it has no zero divisors.</p>
+<p><strong>Proof.</strong> The norm form is multiplicative and real, $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$, and on the subspace it is the sum of four squares, $N(\tilde{Q}) = q_0^2+q_1^2+q_2^2+q_3^2 \geq 0$, vanishing only at $\tilde{Q} = 0$. Hence $\tilde{Q}\tilde{R} = 0$ with $\tilde{Q} \neq 0$ would give $N(\tilde{R}) = 0$. $\square$</p>
+<p>The theorem is the reason none of the degeneracy of the algebra is visible on this subspace: no null elements, no idempotents beyond the trivial ones, no unbounded families of square roots.</p>
+<h3 id="the-centre-and-the-modules">The Centre and the Modules</h3>
+<p>The centre of the subspace is its intersection with the centre of the algebra,</p>
+<p>$$
+Z(\mathbb{H}_{\mathbb{B}}) = \mathbb{H}_{\mathbb{B}} \cap \mathbb{C}_{\mathbb{B}} = \mathbb{R}e_0 ,
+$$</p>
+<p>one-dimensional and generated by the unit; the subspace is therefore a central simple algebra over $\mathbb{R}$. It is a module over $\mathbb{C}_{\mathbb{B}}$ and over itself, and it is a four-dimensional real vector space on which the four real units $e_0, e_1, e_2, e_3$ multiply; the left and right multiplications by a subspace element are not equal unless that element is central, which is the same statement as the non-commutativity.</p>
+<h3 id="the-imaginary-units-and-the-roots-of-minus-one">The Imaginary Units and the Roots of Minus One</h3>
+<p><strong>Proposition.</strong> The pure imaginary elements of the subspace, $\operatorname{span}\{e_1, e_2, e_3\}$, satisfy $\tilde{Q}^2 = -N(\tilde{Q})e_0$, and the elements of norm form one among them are exactly the roots of minus one inside $\mathbb{H}_{\mathbb{B}}$:</p>
+<p>$$
+\left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{B}} : \tilde{Q}^2 = -e_0 \right\} = \left\{ \tilde{Q} \in \operatorname{span}\{e_1,e_2,e_3\} : N(\tilde{Q}) = 1 \right\} = S^2 ,
+$$</p>
+<p>a two-sphere. The element $\tilde{Q} = q_0e_0 + \mathbf{q}$ with $\mathbf{q}$ in that span satisfies $\tilde{Q}^2 = -e_0$ if and only if $q_0 = 0$ and $|\mathbf{q}| = 1$.</p>
+<p><strong>Proof.</strong> For a pure imaginary element the cross product of its coefficient triple with itself vanishes, so $\tilde{Q}^2 = -N(\tilde{Q})e_0$; the equation $\tilde{Q}^2 = -e_0$ is therefore $N(\tilde{Q}) = 1$ together with slenderness of the scalar part, and the norm form on $\operatorname{span}\{e_1,e_2,e_3\}$ is the Euclidean square $|\mathbf{q}|^2$. $\square$</p>
+<h3 id="the-commutator">The Commutator</h3>
+<p><strong>Proposition.</strong> The derived subspace of $\mathbb{H}_{\mathbb{B}}$ is the pure imaginary part, $[\mathbb{H}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}] = \operatorname{span}\{e_1, e_2, e_3\}$, which is $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ as a real Lie algebra, with brackets $[e_j, e_k] = 2e_{j \times k}$.</p>
+<p><strong>Proof.</strong> The bracket of two subspace elements has vanishing scalar part by the product formula with real coefficients, and $e_1 = \tfrac12[e_2,e_3]$ with its cyclic analogues recovers the three basis vectors. $\square$</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<p><strong>Theorem.</strong> On the quaternion subspace the norm form is the positive definite quadratic form</p>
+<p>$$
+N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2 , \qquad N(\tilde{Q}) \geq 0 , \ \ N(\tilde{Q}) = 0 \iff \tilde{Q} = 0 ,
+$$</p>
+<p>with $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q}$, and it is the square of the Euclidean norm on the four real coordinates.</p>
+<p><strong>Proof.</strong> Setting $Q_\mu = q_\mu$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives the displayed sum of squares, non-negative and vanishing only at the origin; multiplicativity is the multiplicativity of the norm form of $\mathbb{B}$. $\square$</p>
+<p>The subspace is one of four on which the norm form is real — the others being the anti-quaternion subspace and the two sectors — and the only one on which it is positive definite. Its inverse form, so to speak, is the anti-quaternion subspace, where the norm form is negative definite.</p>
+<h3 id="units-and-idempotents">Units and Idempotents</h3>
+<p><strong>Corollary.</strong> Every non-zero element of $\mathbb{H}_{\mathbb{B}}$ is a unit, with</p>
+<p>$$
+\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})} = \frac{q_0e_0 - q_1e_1 - q_2e_2 - q_3e_3}{q_0^2+q_1^2+q_2^2+q_3^2} ,
+$$</p>
+<p>and the group of units is $\mathbb{H}_{\mathbb{B}} \setminus \{0\} \cong \mathbb{R}^4 \setminus \{0\}$, which retracts onto the unit sphere $S^3$ of the norm-one elements.</p>
+<p><strong>Proof.</strong> The inverse formula is the general formula $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ with a non-zero denominator; the deformation retraction is $t \mapsto \tilde{Q}/N(\tilde{Q})^{t}$. $\square$</p>
+<p><strong>Corollary.</strong> The idempotents of $\mathbb{H}_{\mathbb{B}}$ are $0$ and $e_0$.</p>
+<p><strong>Proof.</strong> From $\tilde{Q}^2 = \tilde{Q}$ with $\tilde{Q} \neq 0$ one has $\tilde{Q}(\tilde{Q} - e_0) = 0$, and the absence of zero divisors forces $\tilde{Q} = e_0$. $\square$</p>
+<p>The unit sphere $S^3$ of the subspace is the group of unit quaternions; it is the double cover of the rotation group of the three-dimensional Euclidean space, and the covering is the content of <em>The Rotation and Reflection Groups in the Biquaternion Algebra</em>. The presence of an infinite family of roots of minus one, computed above, is the geometric reason a rotation has two possible interpolating one-parameter families and the double cover is unavoidable.</p>
+<h2 id="the-matrix-image">The Matrix Image</h2>
+<p><strong>Proposition.</strong> Under the matrix realization $\Phi$, the image of the quaternion subspace is the set of matrices of the form</p>
+<p>$$
+\Phi(\tilde{Q}) = \begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix} , \qquad z = q_0 - i q_3 , \quad w = -q_2 - i q_1 ,
+$$</p>
+<p>that is, the matrices fixed by the antilinear conjugation $M \mapsto \epsilon \overline{M} \epsilon^{-1}$ with $\epsilon = \operatorname{diag}(1, -1)$. On this image the trace and the determinant read</p>
+<p>$$
+\operatorname{Tr}\Phi(\tilde{Q}) = 2q_0 = 2\operatorname{Re} z , \qquad \det\Phi(\tilde{Q}) = |z|^2 + |w|^2 = N(\tilde{Q}) > 0 .
+$$</p>
+<p><strong>Proof.</strong> Substitution of the real coefficients in the general matrix $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$ gives the displayed pattern with $z = q_0 - iq_3$ and $w = -q_2 - iq_1$; the determinant is $|z|^2+|w|^2$ and is the norm form, which is positive by the theorem above. $\square$</p>
+<p>The image is a four-dimensional real subspace of $M_2(\mathbb{C})$, closed under multiplication, and its non-zero elements are invertible matrices: it is a realization of the quaternion division algebra inside the matrix algebra.</p>
+<h2 id="the-four-involutions-on-it">The Four Involutions on It</h2>
+<p>In the basis $e_0, e_1, e_2, e_3$ the four involutions act diagonally:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>matrix</th>
+<th>effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>quaternion conjugation on the subspace</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$+\mathrm{id}$</td>
+<td>the identity, by definition of the subspace</td>
+</tr>
+<tr>
+<td>${}^{\dagger}$</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>as quaternion conjugation</td>
+</tr>
+<tr>
+<td>$\flat$</td>
+<td>$\operatorname{diag}(-1,1,1,1)$</td>
+<td>minus quaternion conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<p>The subspace is invariant under all four. Complex conjugation fixes it pointwise, which is its defining property; quaternion and Hermitian conjugations coincide on it and act as the standard quaternion conjugation, an anti-automorphism of the subspace; reversal acts as the negative of that. In particular $\bar{\cdot}$ restricted to $\mathbb{H}_{\mathbb{B}}$ is the operation that inverts every pure imaginary unit and fixes the scalars, and the relations $(e_j e_k)^{*} = e_j e_k$ for the products show that ${}^{*}$ is not merely linear but an algebra automorphism of the whole of $\mathbb{B}$.</p>
+<h2 id="relations-to-the-other-five-subspaces">Relations to the Other Five Subspaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>intersection</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}} \cap \mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{R}e_0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B})$</td>
+<td>$\operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+$</td>
+<td>$\mathbb{R}e_0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$</td>
+<td>$\operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The subspace is complementary to the anti-quaternion subspace, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, and it decomposes along the two coordinate blocks it meets,</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\} = \left(\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+\right) \oplus \left(\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-\right) ,
+$$</p>
+<p>so the scalar line inside it is shared with the Hermitian subspace and the pure imaginary triple with the anti-Hermitian one. Its sums with the centre, with the anti-quaternion subspace and with the sectors have dimensions $5$, $8$ and $7$ in the order of the table, so only the pair with $i\mathbb{H}_{\mathbb{B}}$ spans the algebra, while the pair with $\mathbb{M}_-$ has dimension $5$ and the pair with $\mathbb{M}_+$ has dimension $7$.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="a-unit-quaternion-and-its-inverse">A Unit Quaternion and Its Inverse</h3>
+<p>Take $\tilde{Q} = e_0 + 2e_1 + 2e_2 + 2e_3$. Its norm form is $N(\tilde{Q}) = 1 + 4 + 4 + 4 = 13$, so it is a unit with</p>
+<p>$$
+\tilde{Q}^{-1} = \frac{e_0 - 2e_1 - 2e_2 - 2e_3}{13} ,
+$$</p>
+<p>and the product $\tilde{Q}\tilde{Q}^{-1} = e_0$ is the verification of the inverse formula. The matrix image is $\begin{pmatrix} 1 - 2i & -2 - 2i \\ 2 - 2i & 1 + 2i \end{pmatrix}$, of trace $2$ and determinant $13$; the determinant agrees with the norm form as it must.</p>
+<h3 id="the-imaginary-units-and-their-products">The Imaginary Units and Their Products</h3>
+<p>The three elements $e_1, e_2, e_3$ are roots of minus one, $e_j^2 = -e_0$, and they anticommute, $e_1e_2 = -e_2e_1 = e_3$ and cyclically. The products are again in the subspace, which is the closure statement; the commutators are twice the cyclic units, $[e_1,e_2] = 2e_3$, and the bracket is the three-dimensional cross product, the Lie algebra $\mathfrak{su}(2)$.</p>
+<h3 id="a-family-of-roots-of-minus-one">A Family of Roots of Minus One</h3>
+<p>For every real pair $(a,b)$ with $a^2+b^2 = 1$ the element $\tilde{Q} = a e_1 + b e_2$ satisfies</p>
+<p>$$
+\tilde{Q}^2 = (a^2 + b^2)(-e_0) = -e_0 ,
+$$</p>
+<p>so the roots of minus one in the subspace fill a two-sphere rather than a discrete set. Each root defines a one-parameter subgroup $\cos\theta\, e_0 + \sin\theta\, \tilde{Q}$ interpolating $e_0$ and $-e_0$, and it is the algebraic origin of the two-fold covering of the rotation group: the path $\theta \mapsto \cos\theta e_0 + \sin\theta \tilde{Q}$ closes at $\theta = 2\pi$ with the value $-e_0$ and only at $\theta = 4\pi$ returns to the unit.</p>
+<h3 id="a-non-unit-element-of-the-subspace">A Non-Unit Element of the Subspace</h3>
+<p>The element $\tilde{Q} = e_0 + e_1$ has $N(\tilde{Q}) = 2$, which is non-zero, so it is a unit of the subspace although its square is not a scalar:</p>
+<p>$$
+\tilde{Q}^2 = (e_0 + e_1)^2 = e_0 + 2e_1 + e_1^2 = 2e_1 ,
+$$</p>
+<p>a pure imaginary element. Its inverse is $(e_0 - e_1)/2$, and the computation shows that the square of a subspace element need not be real, in contrast with the squares of the vector subspace, which are always central. The distinction is the presence of the scalar part, which survives squaring as $q_0^2 - |\mathbf{q}|^2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the set of elements with real coefficients, a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, and the real form of the algebra, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \otimes_{\mathbb{R}} \mathbb{C}$. It is a subalgebra, isomorphic to the real quaternions, non-commutative, central simple, and a division algebra: the norm form restricts to the positive definite sum of four squares, every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $e_0$. Its group of units is $\mathbb{R}^4 \setminus \{0\}$, retracting onto the unit sphere $S^3$, and the roots of minus one in it fill a two-sphere. Its matrix image is the set of matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, on which the determinant is $|z|^2+|w|^2$. Of the four involutions, complex conjugation fixes the subspace pointwise, quaternion and Hermitian conjugation coincide on it and act as quaternion conjugation, and reversal acts as its negative; the subspace is invariant under all four. It is complementary to the anti-quaternion subspace, its intersection with the vector subspace is the pure imaginary triple, and its decompositions along the coordinate blocks are $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>the quaternion subspace, $\{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>the centre subspace</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the vector subspace</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the anti-quaternion subspace, the anti-fixed space of ${}^{*}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$q_0, q_1, q_2, q_3$</td>
+<td>the four real coefficients of an element of the subspace</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q})$</td>
+<td>the norm form, $q_0^2+q_1^2+q_2^2+q_3^2$ on the subspace</td>
+</tr>
+<tr>
+<td>$S^3$</td>
+<td>the unit sphere of the subspace, $N(\tilde{Q}) = 1$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)$</td>
+<td>the derived subspace $\operatorname{span}\{e_1,e_2,e_3\}$</td>
+</tr>
+<tr>
+<td>$z, w$</td>
+<td>the complex entries of $\Phi(\tilde{Q})$ in the quaternionic pattern</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$</td>
+<td>the four involutions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion Algebra</em> (<code>articles_maths/biquaternion-algebra.md</code>), for the quaternion decomposition and the six subspaces in their original setting</li>
+<li><em>Quaternion Algebra</em> (<code>articles_maths/quaternion-algebra.md</code>), for the algebra $\mathbb{H}$ in its own right</li>
+<li><em>Biquaternion Anti-Quaternion Subspace</em> (<code>articles_maths/biquaternion-anti-quaternion-subspace.md</code>), the complementary subspace of the decomposition</li>
+<li><em>Biquaternion Relations Between Subspaces</em> (<code>articles_maths/biquaternion-relations-between-subspaces.md</code>), for the intersections, the sums and the coordinate blocks of the six</li>
+<li><em>Biquaternion Involution Lattice</em> (<code>articles_maths/biquaternion-involution-lattice.md</code>), for the four involutions, their composition law and their fixed spaces</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for multiplicativity, the invertibility criterion and the group of units</li>
+<li><em>Biquaternion Roots of Minus One</em> (<code>articles_maths/biquaternion-roots-of-minus-one.md</code>), for the classification of the solutions of $\xi^2 = -1$ in the whole algebra</li>
+<li><em>The Rotation and Reflection Groups in the Biquaternion Algebra</em> (<code>articles_maths/the-rotation-and-reflection-groups-in-the-biquaternion-algebra.md</code>), for the covering of the rotation group by the unit sphere</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

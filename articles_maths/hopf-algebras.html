@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hopf Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hopf-algebras"><strong>Hopf Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hopf algebra is an algebra and a coalgebra at once, tied together by the requirement that the comultiplication and the counit be algebra homomorphisms, and equipped with a single extra map — the <strong>antipode</strong> — that plays the role of inversion. The definition is the smallest algebraic structure in which one can add, multiply, and also split elements apart and read off a constant term, in a way that is compatible with the multiplication. Group algebras and universal enveloping algebras are the two primordial examples, and most of the constructions that look like "algebra plus a symmetry operation" — convolution algebras, the dual of a finite group algebra, quantum groups, and the combinatorics of the shuffle and quasi-shuffle products — are Hopf algebras.</p>
+<p>This article is the fifth of the category. It follows <em>Frobenius Algebras</em>, whose coalgebraic side it takes up and completes: a finite-dimensional Hopf algebra is Frobenius, and the Frobenius functional is precisely an integral. It precedeswhere the construction of this article is deformed by a parameter, and it is the algebraic theory of the quantum groups of Part II: the locally compact quantum groups, the von Neumann algebraic and $C^*$-algebraic versions, are a different subject, defined with a topology that this Part does not have, and they are deferred there.</p>
+<p>The article develops coalgebras and bialgebras first, so that the definition of a Hopf algebra can be stated coherently; then the antipode and its properties; then the examples, of which the group algebra and the enveloping algebra are the two that generate the theory; then integrals, the Hopf-algebraic Maschke theorem and the Frobenius structure; and finally the fundamental theorem of Hopf modules. Everything is over a field, and no notion of convergence, completion or topology is used: a formal power series algebra appears only as the algebraic object.</p>
+<p>Throughout, $k$ is a field, all tensor products are over $k$, $H$ is a $k$-vector space, and we use <strong>Sweedler notation</strong></p>
+<p>$$
+\Delta(h) = \sum h_{(1)} \otimes h_{(2)} = h_{(1)} \otimes h_{(2)} ,
+$$</p>
+<p>with the summation sign suppressed, for the comultiplication; iterated comultiplications are written $h_{(1)}\otimes h_{(2)} \otimes h_{(3)}$ and are unambiguous by coassociativity.</p>
+<h2 id="coalgebras-and-bialgebras">Coalgebras and Bialgebras</h2>
+<h3 id="coalgebras">Coalgebras</h3>
+<p><strong>Definition.</strong> A <strong>coalgebra</strong> over $k$ is a $k$-vector space $C$ with $k$-linear maps</p>
+<p>$$
+\Delta : C \to C \otimes_k C \quad \text{(comultiplication)}, \qquad \varepsilon : C \to k \quad \text{(counit)}
+$$</p>
+<p>satisfying coassociativity and the counit axioms,</p>
+<p>$$
+(\mathrm{id}\otimes\Delta)\circ\Delta = (\Delta\otimes\mathrm{id})\circ\Delta, \qquad (\varepsilon\otimes\mathrm{id})\circ\Delta = \mathrm{id} = (\mathrm{id}\otimes\varepsilon)\circ\Delta .
+$$</p>
+<p>In Sweedler notation these read</p>
+<p>$$
+h_{(1)(1)}\otimes h_{(1)(2)}\otimes h_{(2)} = h_{(1)}\otimes h_{(2)(1)}\otimes h_{(2)(2)}, \qquad \varepsilon(h_{(1)})h_{(2)} = h = h_{(1)}\varepsilon(h_{(2)}) .
+$$</p>
+<p>A <strong>coalgebra homomorphism</strong> is a $k$-linear map $f : C \to D$ with $\Delta_D \circ f = (f\otimes f)\circ\Delta_C$ and $\varepsilon_D\circ f = \varepsilon_C$. The definitions are the formal duals of those of an algebra: the diagrams are the algebra diagrams with the arrows reversed.</p>
+<p><strong>Example.</strong> For any set $S$, the vector space $kS$ with basis $S$ and</p>
+<p>$$
+\Delta(s) = s\otimes s, \qquad \varepsilon(s) = 1
+$$</p>
+<p>is a coalgebra, the <strong>group-like coalgebra</strong>; it is commutative and cocommutative as a coalgebra. Its dual $k^S = \operatorname{Hom}_k(kS,k)$ is the algebra of functions on $S$ with pointwise multiplication.</p>
+<p><strong>Example (the dual of a finite-dimensional algebra).</strong> If $A$ is a finite-dimensional $k$-algebra, then $A^* = \operatorname{Hom}_k(A,k)$ is a coalgebra with</p>
+<p>$$
+\Delta(f)(a\otimes b) = f(ab), \qquad \varepsilon(f) = f(1),
+$$</p>
+<p>the transposes of the multiplication and the unit. The finite-dimensionality is used to identify $(A\otimes_k A)^*$ with $A^*\otimes_k A^*$.</p>
+<h3 id="bialgebras-and-the-convolution-algebra">Bialgebras and the convolution algebra</h3>
+<p><strong>Definition.</strong> A <strong>bialgebra</strong> is a $k$-vector space $B$ that is simultaneously an algebra $(B, \mu, \eta)$ and a coalgebra $(B,\Delta,\varepsilon)$ such that $\Delta$ and $\varepsilon$ are algebra homomorphisms:</p>
+<p>$$
+\Delta(ab) = \Delta(a)\Delta(b), \qquad \Delta(1) = 1\otimes 1, \qquad \varepsilon(ab) = \varepsilon(a)\varepsilon(b), \qquad \varepsilon(1) = 1 .
+$$</p>
+<p>Equivalently, the multiplication and the unit are coalgebra homomorphisms. A <strong>bialgebra homomorphism</strong> is a map that is both an algebra and a coalgebra homomorphism.</p>
+<p><strong>Definition.</strong> For a coalgebra $C$ and an algebra $A$, the <strong>convolution product</strong> on $\operatorname{Hom}_k(C,A)$ is</p>
+<p>$$
+(f * g)(c) = \mu_A\bigl((f\otimes g)(\Delta(c))\bigr) = f(c_{(1)})\,g(c_{(2)}) .
+$$</p>
+<p><strong>Proposition.</strong> With the convolution product $\operatorname{Hom}_k(C,A)$ is an associative $k$-algebra with identity the map $\eta_A\circ\varepsilon_C$. If $C$ is cocommutative or $A$ is commutative, the convolution product is commutative.</p>
+<p><em>Proof.</em> Associativity is the coassociativity of $\Delta$ together with the associativity of $\mu_A$: both sides of $(f*g)*h = f*(g*h)$ evaluated at $c$ compute $f(c_{(1)})g(c_{(2)})h(c_{(3)})$. The identity is $\eta\circ\varepsilon$ because $(\eta\varepsilon * f)(c) = \varepsilon(c_{(1)})f(c_{(2)}) = f(c)$ by the counit axiom, and symmetrically. Commutativity in the two stated cases follows because the transposition of the two middle factors does not change the product. $\square$</p>
+<p>For a bialgebra $B$ the convolution product makes $\operatorname{End}_k(B) = \operatorname{Hom}_k(B,B)$ an algebra, and the identity map $\mathrm{id}_B$ has a distinguished role: a bialgebra is a Hopf algebra exactly when $\mathrm{id}_B$ is convolution-invertible.</p>
+<h2 id="hopf-algebras-and-the-antipode">Hopf Algebras and the Antipode</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>Hopf algebra</strong> is a bialgebra $H$ together with a $k$-linear map $S : H \to H$, the <strong>antipode</strong>, that is inverse to $\mathrm{id}_H$ under convolution:</p>
+<p>$$
+S * \mathrm{id}_H = \eta\circ\varepsilon = \mathrm{id}_H * S ,
+$$</p>
+<p>that is, in Sweedler notation,</p>
+<p>$$
+S(h_{(1)})\,h_{(2)} = \varepsilon(h)\,1 = h_{(1)}\,S(h_{(2)}) \qquad \text{for all } h \in H .
+$$</p>
+<p>A <strong>Hopf algebra homomorphism</strong> is a bialgebra homomorphism commuting with the antipodes.</p>
+<p><strong>Proposition (uniqueness and basic properties of the antipode).</strong> Let $H$ be a Hopf algebra.</p>
+<ol>
+<li>The antipode is unique.</li>
+<li>$S$ is an algebra anti-homomorphism and a coalgebra anti-homomorphism:
+$$
+S(ab) = S(b)S(a), \qquad S(1) = 1, \qquad \Delta(S(h)) = S(h_{(2)})\otimes S(h_{(1)}), \qquad \varepsilon(S(h)) = \varepsilon(h) .
+$$</li>
+</ol>
+<p><em>Proof.</em> 1: if $S'$ is another convolution inverse of $\mathrm{id}$ then $S = S * \eta\varepsilon = S * (\mathrm{id} * S') = (S*\mathrm{id})*S' = \eta\varepsilon * S' = S'$. 2: consider the convolution algebra $\operatorname{Hom}_k(H\otimes_k H, H)$ and the elements $\alpha = \mu\circ(S\otimes S)\circ\tau$ and $\beta = S\circ\mu$, where $\tau$ is the transposition. Both are convolution-inverses of $\mu$ in $\operatorname{Hom}_k(H\otimes_k H,H)$, since $S$ is a convolution inverse of $\mathrm{id}$ and convolution is compatible with the tensor algebra structure; by uniqueness of inverses in an associative algebra $\alpha = \beta$. The coalgebra statements are proved by the dual argument, or by applying the algebra statement to $H^{\mathrm{op}}$ and $H^{\mathrm{cop}}$. $\square$</p>
+<h3 id="group-like-and-primitive-elements">Group-like and primitive elements</h3>
+<p><strong>Definition.</strong> An element $g \in H$ is <strong>group-like</strong> if $\Delta(g) = g\otimes g$ and $\varepsilon(g) = 1$; the set $G(H)$ of group-like elements is a group under multiplication, with inverse $S(g)$. An element $x \in H$ is <strong>primitive</strong> if $\Delta(x) = x\otimes 1 + 1\otimes x$; the set $P(H)$ of primitive elements is a Lie subalgebra of $H$ under the commutator bracket $[x,y] = xy - yx$.</p>
+<p><em>Proof (of the group statement).</em> If $g, g'$ are group-like then $\Delta(gg') = (g\otimes g)(g'\otimes g') = gg'\otimes gg'$ and $\varepsilon(gg')=1$, so $G(H)$ is closed under multiplication; $1$ is group-like; and from $S(g)g = \varepsilon(g)1 = 1$ we get $S(g) = g^{-1}$. For primitives, $\Delta([x,y]) = [\Delta x, \Delta y]$ computed in the tensor algebra, which expands to $[x,y]\otimes1 + 1\otimes[x,y]$, so $P(H)$ is closed under the bracket; the Jacobi identity is inherited from the associativity of $H$. $\square$</p>
+<p>For a group algebra $k[G]$ the group-like elements are exactly the elements of $G$; for an enveloping algebra the primitive elements are exactly the Lie algebra, by the Milnor–Moore theorem when $k$ has characteristic $0$.</p>
+<h3 id="cocommutativity-and-the-dual">Cocommutativity and the dual</h3>
+<p><strong>Definition.</strong> A bialgebra is <strong>cocommutative</strong> if $\tau\circ\Delta = \Delta$, where $\tau(x\otimes y) = y\otimes x$, and <strong>commutative</strong> if $ab = ba$. A Hopf algebra is <strong>commutative or cocommutative</strong> accordingly; the group algebra is cocommutative and the algebra of functions on a finite group is commutative.</p>
+<p><strong>Proposition (the dual Hopf algebra).</strong> Let $H$ be a finite-dimensional Hopf algebra. Then $H^* = \operatorname{Hom}_k(H,k)$ is a Hopf algebra with the transposes of the structure maps:</p>
+<p>$$
+(fg)(h) = (f\otimes g)(\Delta(h)), \qquad \eta(1) = \varepsilon, \qquad \Delta(f)(h\otimes h') = f(hh'), \qquad \varepsilon(f) = f(1), \qquad S(f) = f\circ S .
+$$</p>
+<p>The dual is commutative exactly when $H$ is cocommutative, and cocommutative exactly when $H$ is commutative.</p>
+<p><em>Proof.</em> The algebra axioms for $H^*$ are the coalgebra axioms for $H$ and conversely, since transposition reverses all diagrams and finite-dimensionality makes the double dual identity, so every axiom transfers. The last statement is the observation that commutativity of $H^*$ is cocommutativity of $H$ read through the transposition. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the group algebra).</strong> For any group $G$, the group algebra $k[G]$ is a Hopf algebra with</p>
+<p>$$
+\Delta(g) = g\otimes g, \qquad \varepsilon(g) = 1, \qquad S(g) = g^{-1},
+$$</p>
+<p>extended linearly. Coassociativity and the counit axioms are immediate from the group axioms; the antipode identity is $g^{-1}g = 1$. Thusdescribes a Hopf algebra, and the group-like elements are exactly the elements of $G$. The algebra is cocommutative, and it is commutative exactly when $G$ is abelian; when $G$ is abelian and $k$ contains the $\lvert G\rvert$-th roots of unity, the dual Hopf algebra is the group algebra of the dual group $\widehat G$, by Pontryagin duality for finite abelian groups.</p>
+<p><strong>Example (the universal enveloping algebra).</strong> Let $\mathfrak{g}$ be a Lie algebra over $k$, with bracket $[\cdot,\cdot]$, and let</p>
+<p>$$
+U(\mathfrak{g}) = T(\mathfrak{g})\big/\bigl(x\otimes y - y\otimes x - [x,y]\bigr)
+$$</p>
+<p>be its universal enveloping algebra, as in <em>Quotients of the Tensor Algebra</em>; the systematic theory of $U(\mathfrak{g})$ and of the Poincaré–Birkhoff–Witt theorem is developed in the anti-symmetric category. Then $U(\mathfrak{g})$ is a Hopf algebra with</p>
+<p>$$
+\Delta(x) = x\otimes 1 + 1\otimes x, \qquad \varepsilon(x) = 0, \qquad S(x) = -x \qquad (x \in \mathfrak{g}),
+$$</p>
+<p>extended so that $\Delta$ and $\varepsilon$ are algebra homomorphisms and $S$ is an algebra anti-homomorphism. The primitive elements are exactly $\mathfrak{g}$, which is the statement that the Lie algebra can be recovered from its enveloping algebra. The Hopf algebra $U(\mathfrak{g})$ is cocommutative, and it is commutative exactly when $\mathfrak{g}$ is abelian, in which case $U(\mathfrak{g}) = \operatorname{Sym}(\mathfrak{g})$ as a Hopf algebra.</p>
+<p><strong>Example (functions on a finite group).</strong> Let $G$ be finite and let $k^G = \operatorname{Hom}_k(k[G],k)$ be the dual of the group algebra, with basis the coordinate functions $\delta_g$, $\delta_g(h) = \delta_{gh}$. The product in the dual is pointwise, $(fg)(h) = (f\otimes g)(\Delta h) = f(h)g(h)$, so $\delta_g\delta_h = \delta_{gh}\,\delta_g$ where $\delta_{gh}$ is the Kronecker symbol; the algebra is therefore the product $\prod_{g\in G}k$ of $\lvert G\rvert$ copies of $k$, and it has $\lvert G\rvert$ orthogonal idempotents $\delta_g$. The Hopf structure is</p>
+<p>$$
+\Delta(\delta_g) = \sum_{h\ell = g}\delta_h\otimes \delta_\ell, \qquad \varepsilon(\delta_g) = \delta_{g,1}, \qquad S(\delta_g) = \delta_{g^{-1}} .
+$$</p>
+<p>This Hopf algebra is commutative and, for nonabelian $G$, not cocommutative; it is the algebraic model of the functions on the group with convolution as comultiplication, and it is the finite case of the Hopf algebra of functions on an algebraic group.</p>
+<p><strong>Example (the Laurent polynomial algebra).</strong> $H = k[x,x^{-1}]$ with $x$ group-like, $\Delta(x) = x\otimes x$, $\varepsilon(x)=1$, $S(x)=x^{-1}$, is the group algebra $k[\mathbb{Z}]$; it is the simplest Hopf algebra that is neither finite-dimensional nor generated by primitives.</p>
+<p><strong>Example (coordinate Hopf algebras).</strong> Let the coordinate algebra of $n\times n$ matrices be $k[x_{ij}]$, a polynomial algebra in $n^2$ variables, with</p>
+<p>$$
+\Delta(x_{ij}) = \sum_{\ell=1}^n x_{i\ell}\otimes x_{\ell j}, \qquad \varepsilon(x_{ij}) = \delta_{ij} .
+$$</p>
+<p>These formulas make $k[x_{ij}]$ a bialgebra, the comultiplication being the transpose of matrix multiplication; it is not a Hopf algebra, because the antipode would have to be built from the inverse of a matrix and a general matrix is not invertible. Inverting the determinant $D = \det(x_{ij})$ gives the algebra $k[x_{ij},D^{-1}]$, which is a Hopf algebra with $S(x_{ij})$ the $(j,i)$ entry of the inverse matrix, computed by the cofactor formula $S(x_{ij}) = (-1)^{i+j}D^{-1}M_{ji}$ where $M_{ji}$ is the complementary minor. This is the standard source of non-cocommutative examples, and it is the algebra that the quantum groups deform. The determinant and the minors are the algebraic constructions.</p>
+<p><strong>Example (tensor products).</strong> If $H_1, H_2$ are Hopf algebras then so is $H_1\otimes_k H_2$, with all structure maps applied componentwise and the product on the tensor product as in <em>Tensor Products of Algebras</em>; the antipode is $S_1\otimes S_2$. The dual of a tensor product is the tensor product of the duals when both factors are finite-dimensional.</p>
+<h2 id="integrals-and-semisimplicity">Integrals and Semisimplicity</h2>
+<h3 id="integrals">Integrals</h3>
+<p><strong>Definition.</strong> A <strong>left integral</strong> in a Hopf algebra $H$ is an element $\Lambda \in H$ with</p>
+<p>$$
+h\Lambda = \varepsilon(h)\Lambda \qquad \text{for all } h \in H ;
+$$</p>
+<p>a <strong>right integral</strong> is an element $\Lambda$ with $\Lambda h = \varepsilon(h)\Lambda$. The subspaces of left and right integrals are written $\int_H^\ell$ and $\int_H^r$.</p>
+<p><strong>Theorem (Larson–Sweedler, standard).</strong> Let $H$ be a finite-dimensional Hopf algebra. Then $\dim_k\int_H^\ell = 1 = \dim_k\int_H^r$, and the antipode induces an isomorphism $\int_H^\ell \to \int_H^r$.</p>
+<p>This is the theorem that makes the Hopf algebra Frobenius, and the integral is exactly the Frobenius functional's dual object.</p>
+<h3 id="the-hopf-algebraic-maschke-theorem">The Hopf-algebraic Maschke theorem</h3>
+<p><strong>Theorem (Larson–Sweedler, standard).</strong> Let $H$ be a finite-dimensional Hopf algebra. Then the following are equivalent:</p>
+<ol>
+<li>$H$ is semisimple as a left $H$-module;</li>
+<li>there is a left integral $\Lambda$ with $\varepsilon(\Lambda) \neq 0$;</li>
+<li>$H$ is separable over $k$.</li>
+</ol>
+<p><em>Proof (sketch).</em> If $\varepsilon(\Lambda) \neq 0$ then normalising $\Lambda$ to have $\varepsilon(\Lambda) = 1$ and averaging over $H$ with the aid of the comultiplication produces a projection onto the invariants, which is the Maschke argument: for any surjection $M \to N$ of $H$-modules and any $k$-linear splitting $\sigma$, the averaged map $\tilde\sigma(n) = \Lambda_{(1)}\cdot\sigma(S(\Lambda_{(2)})\cdot n)$ is $H$-linear and still splits. Conversely, if $H$ is semisimple then the counit, which is a nonzero $H$-module map onto the trivial module, splits, and the image of $1$ under a splitting is a left integral with $\varepsilon(\Lambda)=1$. The equivalence with separability is the characterisation of separability by the splitting of the multiplication in <em>Separable Algebras</em>, applied to the Hopf algebra whose regular module is semisimple. $\square$</p>
+<p><strong>Corollary.</strong> For a finite group $G$ and a field $k$, the group algebra $k[G]$ is semisimple as a Hopf algebra exactly when $\operatorname{char}k \nmid \lvert G\rvert$; the left integral is $\Lambda = \sum_{g\in G}g$ when $\operatorname{char}k = p \mid \lvert G\rvert$, and $\varepsilon(\Lambda) = \lvert G\rvert = 0$ in that case. This is Maschke's theorem in the form, and the integral is the element that would serve as a normalised average if $\lvert G\rvert$ were invertible. When $\operatorname{char}k = p \mid \lvert G\rvert$ the integral $\sum_g g$ lies in the socle of $k[G]$, which is the module-theoretic form of the failure of semisimplicity.</p>
+<h3 id="the-frobenius-structure">The Frobenius structure</h3>
+<p><strong>Theorem (standard).</strong> Every finite-dimensional Hopf algebra is a Frobenius algebra, and it is symmetric Frobenius when $S^2 = \mathrm{id}$.</p>
+<p><em>Proof (sketch).</em> Let $0 \neq \Lambda \in \int_H^\ell$. Define $\lambda : H \to k$ by $\lambda(h) = \varepsilon(h\Lambda)$; the pairing $(h,h') \mapsto \lambda(hh')$ is non-degenerate because $H$ is a free module over the one-dimensional space of integrals and the composition $H \to \int_H^\ell$, $h \mapsto h\Lambda$ together with the surjectivity of $\varepsilon$ on the integral gives the required splitting. The symmetry statement follows because $\lambda(hh') = \lambda(h'h)$ is equivalent to $S^2 = \mathrm{id}$ for a finite-dimensional Hopf algebra, by the relation between the modular functions. $\square$</p>
+<p>This theorem is the precise link between the present article and <em>Frobenius Algebras</em>: the Frobenius functional is the counit evaluated against the integral, the Nakayama automorphism is the square of the antipode conjugated by the modular function, and the Frobenius algebra is symmetric exactly when $S^2 = \mathrm{id}$.</p>
+<h2 id="hopf-modules-and-the-fundamental-theorem">Hopf Modules and the Fundamental Theorem</h2>
+<p><strong>Definition.</strong> A <strong>(left-left) Hopf module</strong> over a Hopf algebra $H$ is a $k$-vector space $M$ that is a left $H$-module and a left $H$-comodule, with the action and coaction compatible:</p>
+<p>$$
+\delta(h\cdot m) = h_{(1)}m_{(-1)}\otimes h_{(2)}\cdot m_{(0)} ,
+$$</p>
+<p>where $\delta(m) = m_{(-1)}\otimes m_{(0)}$ is the coaction. A Hopf module is <strong>trivial</strong> if the coaction is $\delta(m) = 1\otimes m$.</p>
+<p><strong>Theorem (fundamental theorem of Hopf modules, standard).</strong> Let $H$ be a Hopf algebra with antipode $S$. For a Hopf module $M$ let</p>
+<p>$$
+M^{\mathrm{co}H} = \{m \in M : \delta(m) = 1\otimes m\}
+$$</p>
+<p>be its space of <strong>coinvariants</strong>. Then the multiplication map</p>
+<p>$$
+H\otimes_k M^{\mathrm{co}H} \longrightarrow M, \qquad h\otimes m \longmapsto h\cdot m
+$$</p>
+<p>is an isomorphism of Hopf modules. Consequently every Hopf module is free over $H$ on its coinvariants.</p>
+<p><em>Proof.</em> The map is a Hopf module homomorphism by the compatibility axiom. Its inverse is built from the antipode: $\Phi(m) = m_{(-1)}S(m_{(-2)})\otimes m_{(0)}$, which lands in $H\otimes M^{\mathrm{co}H}$ because the coaction on the first factor is balanced by $S$. Both composites are the identity by the antipode identity and the coassociativity and counit axioms. $\square$</p>
+<p>The theorem is the Hopf-algebraic form of the statement that a module over a group algebra is free over the coinvariants, and it is the engine of the <strong>Galois theory</strong> of Hopf algebras: a Hopf algebra $H$ acting on an algebra $A$ gives a Galois extension precisely when the comparison map $A\otimes_{A^H}A \to A\otimes_k H$ is an isomorphism, and the fundamental theorem of Hopf modules is what makes the coinvariants the correct "fixed algebra". This is the algebraic counterpart of the Galois descent of <em>Group Cohomology</em>.</p>
+<h2 id="actions-smash-products-and-the-quantum-plane-of-the-next-article">Actions, Smash Products and the Quantum Plane of the Next Article</h2>
+<p><strong>Definition.</strong> Let $H$ be a Hopf algebra. An <strong>$H$-module algebra</strong> is an algebra $A$ that is a left $H$-module with</p>
+<p>$$
+h\cdot(ab) = (h_{(1)}\cdot a)(h_{(2)}\cdot b), \qquad h\cdot 1 = \varepsilon(h)1 ,
+$$</p>
+<p>and an <strong>$H$-comodule algebra</strong> is defined dually with a coaction $\delta : A \to H\otimes_k A$ that is an algebra homomorphism. An <strong>$H$-module coalgebra</strong> and an <strong>$H$-comodule coalgebra</strong> are defined by the same pattern with the coalgebra structure preserved.</p>
+<p><strong>Proposition (the smash product).</strong> Let $H$ be a Hopf algebra and $A$ an $H$-module algebra. Then the vector space $A\otimes_k H$ carries an associative multiplication</p>
+<p>$$
+(a\otimes h)(b\otimes g) = a\,(h_{(1)}\cdot b)\otimes h_{(2)}g ,
+$$</p>
+<p>with unit $1\otimes 1$, called the <strong>smash product</strong> $A\# H$. The maps $a \mapsto a\otimes 1$ and $h \mapsto 1\otimes h$ are algebra homomorphisms from $A$ and $H$, and $A\#H$ is generated by their images.</p>
+<p><em>Proof.</em> Associativity is a direct expansion using the module-algebra axiom and the coassociativity and multiplicativity of $\Delta$; the computation of $((a\otimes h)(b\otimes g))(c\otimes \ell)$ and $(a\otimes h)((b\otimes g)(c\otimes \ell))$ both reduce to $a(h_{(1)}\cdot b)(h_{(2)}\cdot c)\otimes h_{(3)}g\ell$. The unit is immediate from $h_{(1)}\varepsilon(h_{(2)}) = h$. $\square$</p>
+<p><strong>Example (the Weyl algebra from a group algebra action).</strong> Let $H = k[\mathbb{Z}] = k[x,x^{-1}]$ act on the polynomial algebra $A = k[y]$ by $x\cdot y = y+1$, extended as an algebra automorphism. Then $A\# H$ has generators $y$ and $x$ with the single relation</p>
+<p>$$
+xy - yx = x ,
+$$</p>
+<p>so the smash product is the localisation of the first Weyl algebra, the algebra of operators generated by multiplication by $y$ and the shift $x$. This is the standard illustration that a Hopf algebra action on an algebra can be encoded in a larger algebra with a commutation relation, and it is the pattern that the quantum groups repeat with a parameter $q$.</p>
+<p>The <strong>quantum plane</strong> is the algebra $k_q[x,y]$ with the single relation $yx = q\,xy$ for $q \in k^\times$. A group-like element $K$ acting by $K\cdot x = x$ and $K\cdot y = q^{-1}y$ extends to an algebra automorphism of $k_q[x,y]$, so the quantum plane is a module algebra over the group algebra $k[\mathbb{Z}]$, with $\mathbb{Z}$ generated by $K$; the smash product $k_q[x,y]\# k[\mathbb{Z}]$ is then an algebra generated by $x, y, K$ with the relations $yx = qxy$ and $KxK^{-1} = x$, $KyK^{-1} = q^{-1}y$. The general theory of these deformations, of the quantised enveloping algebras $U_q(\mathfrak{g})$ and of the quantum groups at roots of unity is developed, which is not covered here; the present article supplies the undeformed structure that the deformation acts on.</p>
+<p><strong>Boundary note.</strong> The word <em>quantum group</em> also names the locally compact quantum groups, which are objects of operator algebra theory defined by a comultiplication on a von Neumann algebra together with left and right Haar weights, and the compact quantum groups defined by Woronowicz with a dense $C^*$-subalgebra and a Haar state. Those theories require a topology, a norm and a completion, and they belong to a later Part; the Hopf algebras of this article and the algebraic quantum groups of the next are the algebraic objects, and no topological statement is made here.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>coalgebra</strong> is the formal dual of an algebra: a space with a coassociative comultiplication $\Delta$ and a counit $\varepsilon$ satisfying $(\varepsilon\otimes\mathrm{id})\Delta = \mathrm{id} = (\mathrm{id}\otimes\varepsilon)\Delta$. A <strong>bialgebra</strong> is an algebra and a coalgebra whose comultiplication and counit are algebra homomorphisms, and the <strong>convolution product</strong> $(f*g)(h) = f(h_{(1)})g(h_{(2)})$ makes $\operatorname{Hom}_k(C,A)$ an algebra with identity $\eta\varepsilon$. A <strong>Hopf algebra</strong> is a bialgebra whose identity map is convolution-invertible; the inverse is the <strong>antipode</strong> $S$, characterised by $S(h_{(1)})h_{(2)} = \varepsilon(h)1 = h_{(1)}S(h_{(2)})$. The antipode is unique, it is an algebra and coalgebra anti-homomorphism, and $\Delta(S(h)) = S(h_{(2)})\otimes S(h_{(1)})$; the <strong>group-like</strong> elements $\Delta(g) = g\otimes g$ form a group, and the <strong>primitive</strong> elements $\Delta(x) = x\otimes 1 + 1\otimes x$ form a Lie algebra.</p>
+<p>The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g)=g^{-1}$ and the enveloping algebra $U(\mathfrak{g})$ with $\Delta(x) = x\otimes 1+1\otimes x$, $\varepsilon(x)=0$, $S(x)=-x$ are the two primordial examples, cocommutative and generating the theory; the dual $H^*$ of a finite-dimensional Hopf algebra is a Hopf algebra with the transposed structure maps, so $k^G = (k[G])^*$ is the commutative Hopf algebra of functions on a finite group. A finite-dimensional Hopf algebra has a one-dimensional space of left integrals and a one-dimensional space of right integrals, the <strong>Larson–Sweedler theorem</strong>; it is semisimple exactly when some left integral has $\varepsilon(\Lambda) \neq 0$, which is the Hopf-algebraic <strong>Maschke theorem</strong> and specialises to the classical one for $k[G]$; and it is a <strong>Frobenius algebra</strong> in the sense of the preceding article, with the Frobenius functional built from the integral and the counit, symmetric exactly when $S^2 = \mathrm{id}$. The <strong>fundamental theorem of Hopf modules</strong> identifies every Hopf module with $H\otimes_k M^{\mathrm{co}H}$, making the coinvariants the correct fixed objects and providing the algebraic engine of Hopf–Galois theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>ground field</td>
+</tr>
+<tr>
+<td>$H$, $C$, $B$</td>
+<td>Hopf algebra, coalgebra, bialgebra</td>
+</tr>
+<tr>
+<td>$\mu$, $\eta$</td>
+<td>multiplication and unit of an algebra</td>
+</tr>
+<tr>
+<td>$\Delta$, $\varepsilon$</td>
+<td>comultiplication and counit of a coalgebra</td>
+</tr>
+<tr>
+<td>$h_{(1)}\otimes h_{(2)}$</td>
+<td>Sweedler notation for $\Delta(h)$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>antipode, $\mathrm{id}$-inverse under convolution</td>
+</tr>
+<tr>
+<td>$(f*g)(c) = f(c_{(1)})g(c_{(2)})$</td>
+<td>convolution product</td>
+</tr>
+<tr>
+<td>$G(H)$</td>
+<td>group-like elements, $\Delta(g)=g\otimes g$</td>
+</tr>
+<tr>
+<td>$P(H)$</td>
+<td>primitive elements, $\Delta(x)=x\otimes1+1\otimes x$</td>
+</tr>
+<tr>
+<td>$H^*$</td>
+<td>dual Hopf algebra for $\dim_k H < \infty$</td>
+</tr>
+<tr>
+<td>$k[G]$</td>
+<td>group algebra, $S(g)=g^{-1}$</td>
+</tr>
+<tr>
+<td>$U(\mathfrak{g})$</td>
+<td>enveloping algebra, $S(x)=-x$</td>
+</tr>
+<tr>
+<td>$k^G = (k[G])^*$</td>
+<td>Hopf algebra of functions on a finite group</td>
+</tr>
+<tr>
+<td>$\int_H^\ell$, $\int_H^r$</td>
+<td>left and right integrals, one-dimensional</td>
+</tr>
+<tr>
+<td>$\varepsilon(\Lambda)\neq0$</td>
+<td>Maschke condition for semisimplicity</td>
+</tr>
+<tr>
+<td>$M^{\mathrm{co}H}$</td>
+<td>coinvariants of a Hopf module</td>
+</tr>
+<tr>
+<td>$m_{(-1)}\otimes m_{(0)}$</td>
+<td>coaction</td>
+</tr>
+<tr>
+<td>$\tau(x\otimes y) = y\otimes x$</td>
+<td>transposition; cocommutativity</td>
+</tr>
+<tr>
+<td>$A\# H$</td>
+<td>smash product, $(a\otimes h)(b\otimes g) = a(h_{(1)}\cdot b)\otimes h_{(2)}g$</td>
+</tr>
+<tr>
+<td>$H$-module algebra</td>
+<td>$h\cdot(ab) = (h_{(1)}\cdot a)(h_{(2)}\cdot b)$, $h\cdot 1 = \varepsilon(h)1$</td>
+</tr>
+<tr>
+<td>$k_q[x,y]$</td>
+<td>quantum plane, $yx = q\,xy$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Moss E. Sweedler, <em>Hopf Algebras</em> (Benjamin, 1969), for the foundational theory, integrals and the fundamental theorem of Hopf modules.</li>
+<li>Susan Montgomery, <em>Hopf Algebras and Their Actions on Rings</em> (American Mathematical Society, 1993), for integrals, the Hopf-algebraic Maschke theorem and Hopf–Galois theory.</li>
+<li>Eiichi Abe, <em>Hopf Algebras</em> (Cambridge, 1980), for the structure theory and the relation to algebraic groups.</li>
+<li>Richard G. Larson and Moss E. Sweedler, "An associative orthogonal bilinear form for Hopf algebras", <em>American Journal of Mathematics</em> <strong>91</strong> (1969), 75–94, for the Frobenius structure of a finite-dimensional Hopf algebra.</li>
+<li>Christian Kassel, <em>Quantum Groups</em> (Springer, 1995), for the deformation theory that begins with the Hopf algebras of this article.</li>
+<li>Sorin Dăscălescu, Constantin Năstăsescu and Șerban Raianu, <em>Hopf Algebras: An Introduction</em> (Marcel Dekker, 2001), for a modern systematic treatment with the categorical constructions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independence and Conditional Expectation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="independence-and-conditional-expectation"><strong>Independence and Conditional Expectation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Independence and conditioning are the two operations that distinguish probability theory from measure theory. Independence is the statement that two experiments carry no information about each other, and it is expressed as the factorisation of a joint measure into a product; conditioning is the operation of updating a measure in the light of partial information, and it is expressed as a projection. The two are dual: the product measure is the construction that makes independence possible, and the conditional expectation is the operator that undoes it, and the interplay between them — the laws of large numbers, the martingale theory, the ergodic theorems — is the substance of the subject.</p>
+<p>This article develops both. It defines independent events and independent random variables, constructs the product measure and the infinite product space by the Kolmogorov extension theorem, proves the Borel–Cantelli lemmas and the Kolmogorov zero–one law, defines the conditional expectation as a Radon–Nikodym derivative and identifies its $L^2$ projection character, records the properties that make it a working tool, constructs regular conditional probabilities and conditional distributions by disintegration, and introduces filtrations as the bookkeeping device for information that grows in time.</p>
+<p>The place of the article is fixed by two boundaries.</p>
+<ul>
+<li>The <strong>measure-theoretic frame</strong> — probability spaces, random variables, distributions, expectation, moments, the modes of convergence and the characteristic function — is <em>Measure-Theoretic Probability</em>, the preceding article, and its notation is held here: $(\Omega,\mathcal{F},\mathbb{P})$, $\mu_X$, $F_X$, $\mathbb{E}$, $\operatorname{Var}$, a.s., $\sigma(X)$, and the four modes of convergence. The <strong>general measure theory</strong> — the Radon–Nikodym theorem, the product measure on two spaces, the monotone class theorem, the disintegration of measures — is <em>Measure Theory and Integration</em>, and the <strong>modes of convergence</strong> are <em>Modes of Convergence</em>.</li>
+<li>The <strong>limit theorems</strong> whose proofs use independence areand the <strong>martingale theory</strong> built on the filtration and the conditional expectation is. This article constructs the objects; two other articles use them.</li>
+</ul>
+<p>No physics is invoked. Throughout, $(\Omega,\mathcal{F},\mathbb{P})$ is a probability space as in <em>Measure-Theoretic Probability</em>; a <strong>$\pi$-system</strong> is a family of sets closed under finite intersections, a <strong>dynkin system</strong> is a family containing $\Omega$ and closed under complements and countable disjoint unions, and a <strong>filtration</strong> is an increasing family $\{\mathcal{F}_n\}$ of sub-$\sigma$-algebras of $\mathcal{F}$, with $\mathcal{F}_\infty = \sigma(\bigcup_n \mathcal{F}_n)$. The conditional expectation of $X$ given $\mathcal{G}$ is written $\mathbb{E}[X \mid \mathcal{G}]$, and the conditional probability of $A$ given $\mathcal{G}$ is $\mathbb{P}(A \mid \mathcal{G}) = \mathbb{E}[\mathbf{1}_A \mid \mathcal{G}]$.</p>
+<h2 id="independent-events">Independent Events</h2>
+<h3 id="the-definition-of-independence">The Definition of Independence</h3>
+<p><strong>Definition.</strong> Let $(\Omega,\mathcal{F},\mathbb{P})$ be a probability space. A finite or countable family of events $\{A_i\}_{i \in I}$ is <strong>independent</strong> if for every finite subset $J \subseteq I$,</p>
+<p>$$
+\mathbb{P}\!\left(\bigcap_{i \in J} A_i\right) = \prod_{i \in J}\mathbb{P}(A_i).
+$$</p>
+<p>The sub-$\sigma$-algebras $\{\mathcal{G}_i\}$ of $\mathcal{F}$ are <strong>independent</strong> if for every choice of sets $A_i \in \mathcal{G}_i$ and every finite set of distinct indices, the events $A_i$ are independent; and the random variables $\{X_i\}$ are independent if the $\sigma$-algebras $\sigma(X_i)$ are independent.</p>
+<p>Two events of positive probability are independent exactly when $\mathbb{P}(A \mid B) = \mathbb{P}(A)$, so the definition is the formal statement that conditioning on $B$ does not change the probability of $A$. Independence of a family is stronger than pairwise independence: the events $A_1, A_2, A_3$ can be pairwise independent without being jointly independent, and the standard example is the family of three subsets of a four-point space corresponding to the binary triples of a two-dimensional vector space over $\mathbb{F}_2$ with the coordinate functionals.</p>
+<p><strong>Proposition (the $\pi$–$\lambda$ criterion).</strong> Let $\mathcal{P}_i$ be $\pi$-systems generating the $\sigma$-algebras $\mathcal{G}_i$. If $\mathbb{P}(\bigcap_{i\in J} A_i) = \prod_i \mathbb{P}(A_i)$ holds for all finite $J$ and all $A_i \in \mathcal{P}_i$, then the $\sigma$-algebras $\mathcal{G}_i$ are independent.</p>
+<p>The proposition is the standard reduction: independence is checked on a generating $\pi$-system, and the passage to the generated $\sigma$-algebra is the monotone class argument of <em>Measure Theory and Integration</em>. It is what makes independence of random variables checkable through the distribution functions or the characteristic functions, since the half-lines form a $\pi$-system generating the Borel $\sigma$-algebra.</p>
+<h3 id="the-borelcantelli-lemmas">The Borel–Cantelli Lemmas</h3>
+<p><strong>Definition.</strong> For a sequence of events $\{A_n\}$, the event that <strong>$A_n$ occurs infinitely often</strong> is</p>
+<p>$$
+\limsup_n A_n = \bigcap_{n\geq1}\bigcup_{m \geq n} A_m = \{A_n \text{ infinitely often}\}, \qquad \text{written } \{A_n \text{ i.o.}\}.
+$$</p>
+<p><strong>Theorem (first Borel–Cantelli lemma).</strong> If $\sum_{n\geq1}\mathbb{P}(A_n) < \infty$ then $\mathbb{P}(A_n \text{ i.o.}) = 0$.</p>
+<p><em>Proof.</em> For every $n$, the event $\{A_n \text{ i.o.}\}$ is contained in $\bigcup_{m\geq n}A_m$, whence</p>
+<p>$$
+\mathbb{P}(A_n \text{ i.o.}) \leq \mathbb{P}\!\left(\bigcup_{m \geq n}A_m\right) \leq \sum_{m\geq n}\mathbb{P}(A_m) \longrightarrow 0
+$$</p>
+<p>as $n\to\infty$ because the tail of a convergent series tends to $0$. $\square$</p>
+<p>The first lemma requires no independence and is the standard tool for almost-sure statements: it shows that a sequence whose probabilities are summable occurs only finitely often, almost surely.</p>
+<p><strong>Theorem (second Borel–Cantelli lemma).</strong> If the events $\{A_n\}$ are independent and $\sum_{n\geq1}\mathbb{P}(A_n) = \infty$ then $\mathbb{P}(A_n \text{ i.o.}) = 1$.</p>
+<p><em>Proof.</em> By the continuity from below it suffices to show $\mathbb{P}(\bigcup_{n\leq m \leq N}A_m) \to 1$ as $N\to\infty$ for each fixed $n$. Using the independence,</p>
+<p>$$
+\mathbb{P}\!\left(\bigcap_{m=n}^{N} A_m^c\right) = \prod_{m=n}^{N}\bigl(1 - \mathbb{P}(A_m)\bigr) \leq \prod_{m=n}^{N}\exp\bigl(-\mathbb{P}(A_m)\bigr) = \exp\!\left(-\sum_{m=n}^{N}\mathbb{P}(A_m)\right),
+$$</p>
+<p>which tends to $0$ as $N\to\infty$ because the series diverges. Hence $\mathbb{P}(\bigcup_{m\geq n}A_m) = 1$ for every $n$, and the intersection over $n$ of these events has probability one. $\square$</p>
+<p>The two lemmas are the standard criterion for the almost-sure occurrence of infinitely many events, and the independence in the second is essential: the events $A_n = [0,1/n]$ in $[0,1]$ with Lebesgue measure have divergent probability sum but do not occur infinitely often, since their intersection is empty. The pair is applied throughout the strong law of large numbers and the theory of records, and it is the model for the more delicate zero–one laws below.</p>
+<h2 id="independent-random-variables">Independent Random Variables</h2>
+<h3 id="product-measures-and-the-extension-theorem">Product Measures and the Extension Theorem</h3>
+<p><strong>Definition.</strong> Let $(S_1,\mathcal{S}_1,\mu_1)$ and $(S_2,\mathcal{S}_2,\mu_2)$ be probability spaces. The <strong>product measure</strong> $\mu_1 \otimes \mu_2$ on $(S_1\times S_2, \mathcal{S}_1\otimes\mathcal{S}_2)$ is the unique measure with</p>
+<p>$$
+(\mu_1\otimes\mu_2)(A_1\times A_2) = \mu_1(A_1)\mu_2(A_2) \qquad \text{for } A_i \in \mathcal{S}_i,
+$$</p>
+<p>and its existence is the product measure theorem of <em>Measure Theory and Integration</em>. The random variables $X_1, \dots, X_n$ are independent if and only if the law of the vector $(X_1,\dots,X_n)$ is the product $\mu_{X_1}\otimes\cdots\otimes\mu_{X_n}$.</p>
+<p><strong>Theorem (Kolmogorov extension theorem).</strong> Let $(S_n,\mathcal{S}_n)$ be standard Borel spaces and let $\mu_n$ be a probability measure on $\prod_{i\leq n}S_i$, the family $\{\mu_n\}$ being consistent in the sense that $\mu_{n+1}(\cdot \times S_{n+1}) = \mu_n$. Then there is a unique probability measure $\mu$ on the product $\prod_{n\geq1}S_n$ with the cylindrical marginals $\mu_n$; the coordinate maps of the product are independent random variables with laws $\mu_{X_n} = $ the one-dimensional marginal.</p>
+<p>The extension theorem is the construction of the countable product of probability spaces, and it is the reason an infinite sequence of independent random variables exists at all. Its hypothesis of consistency is automatic in the applications, and the proof is the Carathéodory extension theorem applied to the algebra of cylinders, together with a compactness argument on the approximating finite-dimensional measures. The continuity of the measures on a projective system of compact classes is the inner regularity that makes the extension possible. The theorem is also the source of the <strong>canonical model</strong>: the sequence space $(S^{\mathbb{N}}, \mathcal{S}^{\otimes\mathbb{N}}, \mu)$ carries the coordinate process, and every sequence of independent random variables with laws $\mu_{X_n}$ is a measurable image of it.</p>
+<h3 id="independence-criteria">Independence Criteria</h3>
+<p><strong>Theorem (factorisation criteria).</strong> For random variables $X$ and $Y$ with values in standard Borel spaces the following are equivalent:</p>
+<ol>
+<li>$X$ and $Y$ are independent;</li>
+<li>the joint law is the product of the marginals: $\mu_{(X,Y)} = \mu_X \otimes \mu_Y$;</li>
+<li>$\mathbb{E}[f(X)g(Y)] = \mathbb{E}[f(X)]\,\mathbb{E}[g(Y)]$ for all bounded measurable $f,g$;</li>
+<li>$\mathbb{E}[e^{i\langle s,X\rangle + i\langle t,Y\rangle}] = \varphi_X(s)\varphi_Y(t)$ for all $s,t$ (Kac's criterion).</li>
+</ol>
+<p><em>Proof.</em> The equivalence of 1 and 2 is the definition; 2 implies 3 by Fubini, and 3 implies 2 by taking $f = \mathbf{1}_{A}$, $g = \mathbf{1}_{B}$ and the $\pi$–$\lambda$ criterion; the equivalence with 4 follows because the exponentials span a convergence-determining class. $\square$</p>
+<p>The boundedness in 3 is essential: uncorrelated is weaker than independent, and the equality $\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y]$ for the two moments alone does not imply independence. The criterion 4 is the one usually applied, because it is stated in terms of characteristic functions and is therefore amenable to the Fourier analysis of <em>Measure-Theoretic Probability</em> and <em>Fourier Analysis on Euclidean Spaces</em>.</p>
+<h2 id="zeroone-laws">Zero–One Laws</h2>
+<h3 id="the-kolmogorov-zeroone-law">The Kolmogorov Zero–One Law</h3>
+<p><strong>Definition.</strong> For a sequence of random variables $\{X_n\}$ on a common probability space, the <strong>tail $\sigma$-algebra</strong> is</p>
+<p>$$
+\mathcal{T} = \bigcap_{n\geq1}\sigma(X_n, X_{n+1}, \dots),
+$$</p>
+<p>the $\sigma$-algebra of the events whose occurrence does not depend on finitely many of the $X_n$.</p>
+<p>An event is in the tail when it is determined by the limiting behaviour of the sequence: the event that $\sum_n X_n$ converges, that $\limsup_n X_n > 0$, that the sample mean converges, and that $X_n \to X$ are all tail events, as is the event that $X_n$ takes a value infinitely often when the $X_n$ are independent and identically distributed.</p>
+<p><strong>Theorem (Kolmogorov's zero–one law).</strong> Let $\{X_n\}$ be independent random variables. Then every tail event has probability $0$ or $1$.</p>
+<p><em>Proof.</em> For each $n$ the $\sigma$-algebras $\sigma(X_1,\dots,X_n)$ and $\sigma(X_{n+1},X_{n+2},\dots)$ are independent, so the algebra $\sigma(X_1,X_2,\dots)$ generated by all the $X_i$ is independent of the tail $\sigma$-algebra: a decisive argument is to note that for each $n$, $\mathcal{T} \subseteq \sigma(X_{n+1},X_{n+2},\dots)$, and the union of the $\sigma(X_1,\dots,X_n)$ over $n$ is a $\pi$-system generating $\sigma(X_1,X_2,\dots)$ that is independent of $\mathcal{T}$; hence $\mathcal{T}$ is independent of $\sigma(X_1,X_2,\dots)$, and since $\mathcal{T} \subseteq \sigma(X_1,X_2,\dots)$, the $\sigma$-algebra $\mathcal{T}$ is independent of itself, which forces every event in it to have probability $0$ or $1$. $\square$</p>
+<p>The theorem is the reason a candidate limit of an independent sequence either exists a.s. or fails a.s., with no intermediate probability; it is the abstract form of the statement that a series of independent terms converges or diverges almost surely, and it is the first of a family of zero–one laws.</p>
+<p><strong>Theorem (Hewitt–Savage).</strong> Let $\{X_n\}$ be an exchangeable sequence — one whose finite-dimensional distributions are invariant under permutations of the indices. Then every <strong>exchangeable event</strong>, one that is invariant under finite permutations, has probability $0$ or $1$.</p>
+<p>The Hewitt–Savage theorem contains the Kolmogorov law as a special case, since a tail event of an exchangeable sequence is exchangeable, and it is the zero–one law behind de Finetti's theorem: an exchangeable sequence of indicator variables is a mixture of independent sequences with a common success probability, and the mixing measure is the law of the limiting frequency.</p>
+<h3 id="the-martingale-zeroone-law-briefly">The Martingale Zero–One Law, Briefly</h3>
+<p>The zero–one laws have a limiting form in the martingale theory: if $X$ is bounded and $\mathbb{E}[X \mid \mathcal{F}_n] = \mathbb{E}[X]$ for all $n$ and $\mathcal{F}_\infty = \sigma(\bigcup_n\mathcal{F}_n)$ then $X = \mathbb{E}[X]$ a.s., which is the statement that the tail of the filtration contributes no information. The Lévy downward theorem makes the same point for a decreasing family, and it is the abstract form of the fact that the conditional expectation on a decreasing family of $\sigma$-algebras converges to the conditional expectation on the intersection. This is the point at which the present article hands over to the martingale theory.</p>
+<h2 id="conditional-expectation">Conditional Expectation</h2>
+<h3 id="the-definition-of-conditional-expectation">The Definition of Conditional Expectation</h3>
+<p><strong>Definition.</strong> Let $X$ be an integrable random variable on $(\Omega,\mathcal{F},\mathbb{P})$ and let $\mathcal{G} \subseteq \mathcal{F}$ be a sub-$\sigma$-algebra. The <strong>conditional expectation</strong> of $X$ given $\mathcal{G}$ is the integrable $\mathcal{G}$-measurable random variable $\mathbb{E}[X \mid \mathcal{G}]$ satisfying</p>
+<p>$$
+\int_G \mathbb{E}[X \mid \mathcal{G}]\, d\mathbb{P} = \int_G X\, d\mathbb{P} \qquad \text{for every } G \in \mathcal{G}.
+$$</p>
+<p><strong>Theorem (existence and uniqueness).</strong> For integrable $X$ the conditional expectation exists and is unique up to a.s. equality; for $X \geq 0$ it exists in $[0,\infty]$ without the integrability assumption.</p>
+<p><em>Proof.</em> The measure $\nu(G) = \int_G X^+\,d\mathbb{P} - \int_G X^-\,d\mathbb{P}$ on $(\Omega,\mathcal{G})$ is finite and absolutely continuous with respect to $\mathbb{P}|_{\mathcal{G}}$; the Radon–Nikodym theorem of <em>Measure Theory and Integration</em> supplies a $\mathcal{G}$-measurable density $Y$ with $\nu(G) = \int_G Y\,d\mathbb{P}$, and $Y$ is the conditional expectation. If $Y'$ is another, then $\int_G (Y - Y')\,d\mathbb{P} = 0$ for all $G \in \mathcal{G}$, including $G = \{Y > Y'\}$ and $G = \{Y < Y'\}$, so $Y = Y'$ a.s. $\square$</p>
+<p><strong>Definition.</strong> The <strong>conditional probability</strong> of $A$ given $\mathcal{G}$ is $\mathbb{P}(A \mid \mathcal{G}) = \mathbb{E}[\mathbf{1}_A \mid \mathcal{G}]$, and for a random variable $Y$ the conditional expectation given $Y$ is $\mathbb{E}[X \mid Y] = \mathbb{E}[X \mid \sigma(Y)]$.</p>
+<p>The conditional expectation is a random variable, not a number: it is the best guess of $X$ available to an observer who knows the information in $\mathcal{G}$. The phrase "the" conditional expectation suppresses the a.s. ambiguity, which is harmless as long as no uncountable family of conditions is being handled simultaneously; the question of choosing the versions coherently is the content of the regular conditional probability below.</p>
+<h3 id="the-math191-projection">The $L^2$ Projection</h3>
+<p><strong>Theorem (projection character).</strong> If $X \in L^2(\Omega,\mathcal{F},\mathbb{P})$ and $\mathcal{G} \subseteq \mathcal{F}$ then $\mathbb{E}[X \mid \mathcal{G}]$ is the orthogonal projection of $X$ onto the closed subspace $L^2(\Omega,\mathcal{G},\mathbb{P})$ of $\mathcal{G}$-measurable square-integrable functions.</p>
+<p><em>Proof.</em> The subspace is closed because $L^2$ convergence preserves measurability up to a.s. equality. For $X \in L^2$ and $Z \in L^2(\mathcal{G})$ the defining relation gives $\mathbb{E}[(X - \mathbb{E}[X\mid\mathcal{G}])Z] = 0$, since $Z$ is $\mathcal{G}$-measurable, so the difference is orthogonal to $L^2(\mathcal{G})$; the projection is characterised by this orthogonality, and the projection is the conditional expectation by uniqueness. $\square$</p>
+<p>The projection picture is the geometric content of conditioning, and it is the reason the conditional expectation is the minimum-mean-square-error predictor: among all $\mathcal{G}$-measurable functions $Z$, the conditional expectation minimises $\mathbb{E}[(X - Z)^2]$ over $Z \in L^2(\mathcal{G})$. It also explains the conditional variance decomposition</p>
+<p>$$
+\operatorname{Var}(X) = \mathbb{E}\bigl[\operatorname{Var}(X \mid \mathcal{G})\bigr] + \operatorname{Var}\bigl(\mathbb{E}[X \mid \mathcal{G}]\bigr),
+$$</p>
+<p>which is the Pythagorean theorem for the orthogonal decomposition $X = \mathbb{E}[X\mid\mathcal{G}] + (X - \mathbb{E}[X\mid\mathcal{G}])$.</p>
+<h3 id="properties">Properties</h3>
+<p><strong>Theorem (properties of conditional expectation).</strong> Let $X, Y$ be integrable and let $\mathcal{G}, \mathcal{H}$ be sub-$\sigma$-algebras of $\mathcal{F}$.</p>
+<ol>
+<li><strong>Linearity.</strong> $\mathbb{E}[aX + bY \mid \mathcal{G}] = a\,\mathbb{E}[X \mid \mathcal{G}] + b\,\mathbb{E}[Y \mid \mathcal{G}]$ a.s.</li>
+<li><strong>Positivity and monotonicity.</strong> $X \geq 0$ implies $\mathbb{E}[X \mid \mathcal{G}] \geq 0$ a.s.; $X \leq Y$ implies $\mathbb{E}[X\mid\mathcal{G}] \leq \mathbb{E}[Y\mid\mathcal{G}]$ a.s.</li>
+<li><strong>Tower property.</strong> If $\mathcal{H} \subseteq \mathcal{G}$ then $\mathbb{E}\bigl[\mathbb{E}[X \mid \mathcal{G}] \mid \mathcal{H}\bigr] = \mathbb{E}[X \mid \mathcal{H}]$ a.s.; in particular $\mathbb{E}[\mathbb{E}[X\mid\mathcal{G}]] = \mathbb{E}[X]$.</li>
+<li><strong>Pull-out.</strong> If $Y$ is bounded and $\mathcal{G}$-measurable then $\mathbb{E}[YX \mid \mathcal{G}] = Y\,\mathbb{E}[X \mid \mathcal{G}]$ a.s.</li>
+<li><strong>Independence.</strong> If $X$ is independent of $\mathcal{G}$ then $\mathbb{E}[X \mid \mathcal{G}] = \mathbb{E}[X]$ a.s.</li>
+<li><strong>Jensen.</strong> If $\varphi$ is convex and $\varphi(X)$ is integrable then $\varphi(\mathbb{E}[X\mid\mathcal{G}]) \leq \mathbb{E}[\varphi(X)\mid\mathcal{G}]$ a.s.</li>
+<li><strong>Convergence.</strong> If $X_n \to X$ a.s. with $|X_n| \leq Y$ integrable, then $\mathbb{E}[X_n\mid\mathcal{G}] \to \mathbb{E}[X\mid\mathcal{G}]$ a.s.</li>
+</ol>
+<p><em>Proof.</em> Each property is proved by checking the defining integral identity on sets of $\mathcal{G}$: linearity and positivity by the linearity and positivity of the integral; the tower property by reducing to $\mathcal{H}$-sets; pull-out by the localising $\pi$–$\lambda$ argument; independence because the constant $\mathbb{E}[X]$ is $\mathcal{G}$-measurable and satisfies the defining relation by the factorisation criterion; Jensen by the supporting line of a convex function and the positivity of the conditional expectation; and the convergence statement by the conditional form of the dominated convergence theorem, applied to the positive and negative parts. $\square$</p>
+<p><strong>Corollary (conditional Cauchy–Schwarz and conditional Hölder).</strong> The conditional expectation is a contraction on $L^p$: $\|\mathbb{E}[X \mid \mathcal{G}]\|_p \leq \|X\|_p$ for $1 \leq p \leq \infty$; and $\left|\mathbb{E}[XY\mid\mathcal{G}]\right| \leq \mathbb{E}[|X|^p\mid\mathcal{G}]^{1/p}\mathbb{E}[|Y|^q\mid\mathcal{G}]^{1/q}$ for conjugate $p,q$. The contraction property follows from Jensen applied to $|x|^p$, and the conditional Hölder inequality from the ordinary Hölder applied conditionally.</p>
+<h2 id="conditional-distributions">Conditional Distributions</h2>
+<h3 id="regular-conditional-probability">Regular Conditional Probability</h3>
+<p><strong>Definition.</strong> Let $X$ be a random variable with values in a measurable space $(S,\mathcal{S})$ and let $\mathcal{G} \subseteq \mathcal{F}$ be a sub-$\sigma$-algebra. A <strong>regular conditional probability</strong> for $X$ given $\mathcal{G}$ is a map $\omega \mapsto \mu_\omega$ from $\Omega$ to the probability measures on $(S,\mathcal{S})$ such that $\omega \mapsto \mu_\omega(B)$ is $\mathcal{G}$-measurable for each $B$ and</p>
+<p>$$
+\mathbb{P}(X \in B \mid \mathcal{G})(\omega) = \mu_\omega(B) \qquad \text{for a.e. } \omega, \text{ for every } B \in \mathcal{S}.
+$$</p>
+<p><strong>Theorem (disintegration; existence on standard Borel spaces).</strong> If $(S,\mathcal{S})$ is a standard Borel space then a regular conditional probability for $X$ given $\mathcal{G}$ exists, and it is unique up to a.s. equality. Consequently for integrable $g$,</p>
+<p>$$
+\mathbb{E}[g(X) \mid \mathcal{G}](\omega) = \int_S g(x)\, \mu_\omega(dx) \qquad \text{a.s.}
+$$</p>
+<p>The theorem is the disintegration of the joint law of $(X, \mathcal{G})$-measurable information, and its proof is a measurable selection argument: the conditional probabilities of a countable generating algebra of $\mathcal{S}$ are chosen measurably and extended by the Carathéodory theorem. On a general measurable space the regular conditional probability can fail to exist, which is the reason the standard Borel hypothesis is imposed. The case $\mathcal{G} = \sigma(Y)$ gives the <strong>conditional distribution of $X$ given $Y$</strong>, written $\mu_{X\mid Y}(y, dx)$ with $y \mapsto \mu_{X \mid Y}(y,\cdot)$ measurable, and the <strong>Bayes formula</strong> $\mathbb{P}(Y \in A \mid X = x) = \mathbb{P}(X = x \mid Y \in A)\mathbb{P}(Y \in A)/\mathbb{P}(X = x)$ is the discrete-case form of the change of variable between the two conditional distributions.</p>
+<p><strong>Example (Gaussian conditioning).</strong> Let $(X,Y)$ be jointly Gaussian with means $\mu_X, \mu_Y$, variances $\sigma_X^2, \sigma_Y^2$ and correlation $\rho$. Then the conditional law of $Y$ given $X = x$ is normal with</p>
+<p>$$
+\mathbb{E}[Y \mid X = x] = \mu_Y + \rho\frac{\sigma_Y}{\sigma_X}(x - \mu_X), \qquad \operatorname{Var}(Y \mid X = x) = \sigma_Y^2(1 - \rho^2),
+$$</p>
+<p>and the conditional expectation is affine in $x$. The example is the prototype of the conditional expectation as a regression, and it shows that the conditional variance is independent of $x$ exactly in the Gaussian case, which is the defining property of the family.</p>
+<h2 id="filtrations-and-martingales">Filtrations and Martingales</h2>
+<h3 id="filtrations">Filtrations</h3>
+<p><strong>Definition.</strong> A <strong>filtration</strong> on $(\Omega,\mathcal{F},\mathbb{P})$ is an increasing family of sub-$\sigma$-algebras $\mathcal{F}_0 \subseteq \mathcal{F}_1 \subseteq \cdots \subseteq \mathcal{F}$; the triple $(\Omega,\mathcal{F},\{\mathcal{F}_n\},\mathbb{P})$ is a <strong>filtered probability space</strong>. A process $\{X_n\}$ is <strong>adapted</strong> if $X_n$ is $\mathcal{F}_n$-measurable for every $n$; it is <strong>predictable</strong> if $X_n$ is $\mathcal{F}_{n-1}$-measurable; and it is <strong>integrable</strong> if $\mathbb{E}|X_n| < \infty$ for every $n$. The <strong>natural filtration</strong> of a process $\{X_n\}$ is $\mathcal{F}_n = \sigma(X_0,\dots,X_n)$.</p>
+<p>The filtration is the mathematical encoding of the information available at time $n$: an adapted process is one whose value at time $n$ is known by time $n$, a predictable process is one whose value at time $n$ is known by time $n-1$, and the conditional expectation $\mathbb{E}[X \mid \mathcal{F}_n]$ is the best estimate of $X$ given the information up to time $n$. The tower property of the conditional expectation is the consistency of these estimates, and it is the defining property of the martingale theory.</p>
+<p><strong>Definition.</strong> An adapted integrable process $\{X_n\}$ is a <strong>martingale</strong> if $\mathbb{E}[X_{n+1} \mid \mathcal{F}_n] = X_n$ a.s. for every $n$; a <strong>submartingale</strong> if $\mathbb{E}[X_{n+1} \mid \mathcal{F}_n] \geq X_n$ a.s.; and a <strong>supermartingale</strong> if the inequality reverses. The definitions extend to continuous time with an increasing family $\{\mathcal{F}_t\}_{t\geq0}$.</p>
+<p>The <strong>optional stopping</strong> theorem, the <strong>maximal inequalities</strong>, the <strong>Doob decomposition</strong> and the <strong>martingale convergence theorem</strong> are the content, where the filtration theory is developed in full. The present article has supplied the conditional expectation and the filtration; the martingale theory is the systematic exploitation of the tower property, and its continuous-time form lies outside this article.</p>
+<h2 id="summary">Summary</h2>
+<p>A family of events is independent when the probability of every finite intersection is the product of the probabilities, a family of random variables is independent when their $\sigma$-algebras are, and independence is equivalent to the joint law being the product of the marginals, to the factorisation of expectations of products of bounded functions, and to the factorisation of the characteristic function. The product measure on two spaces is the measure-theoretic construction of independence, and the Kolmogorov extension theorem builds the countable product so that an infinite sequence of independent random variables exists; the sequence space with the coordinate process is the canonical model.</p>
+<p>The first Borel–Cantelli lemma states that summable probabilities imply finitely many occurrences, with no independence needed; the second states that independent events with divergent probability sum occur infinitely often, almost surely. Kolmogorov's zero–one law states that every tail event of an independent sequence has probability $0$ or $1$, and the Hewitt–Savage theorem extends this to the exchangeable events of an exchangeable sequence. The conditional expectation $\mathbb{E}[X\mid\mathcal{G}]$ is the a.s. unique integrable $\mathcal{G}$-measurable random variable with the same integral as $X$ on every set of $\mathcal{G}$; it exists by the Radon–Nikodym theorem, is the orthogonal projection of $X$ onto $L^2(\mathcal{G})$ when $X \in L^2$, satisfies linearity, positivity, the tower property, pull-out, invariance under independence, Jensen and the conditional convergence theorems, and it is a contraction on every $L^p$. Regular conditional probabilities exist on standard Borel spaces by disintegration, and they give the conditional distribution and the Bayes formula. A filtration is the record of the information available at each time, an adapted process is one known in time, and a martingale is an adapted integrable process whose conditional expectation one step ahead is its present value; the martingale theory is not covered here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\Omega, \mathcal{F}, \mathbb{P})$</td>
+<td>Probability space, as fixed in <em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>a.s.</td>
+<td>Almost surely; synonym of almost everywhere</td>
+</tr>
+<tr>
+<td>independent</td>
+<td>finite intersections factor; joint law is the product</td>
+</tr>
+<tr>
+<td>i.o.</td>
+<td>$\{A_n \text{ i.o.}\}=\bigcap_n\bigcup_{m\ge n}A_m$</td>
+</tr>
+<tr>
+<td>$\mu_1\otimes\mu_2$</td>
+<td>Product measure on $S_1\times S_2$</td>
+</tr>
+<tr>
+<td>i.i.d.</td>
+<td>independent and identically distributed</td>
+</tr>
+<tr>
+<td>$\pi$-system, dynkin system</td>
+<td>closed under finite intersections; closed under complements and disjoint unions</td>
+</tr>
+<tr>
+<td>$\mathcal{T}=\bigcap_n\sigma(X_n,X_{n+1},\dots)$</td>
+<td>Tail $\sigma$-algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{E}[X\mid\mathcal{G}]$</td>
+<td>Conditional expectation, the $\mathcal{G}$-measurable integral matching $X$</td>
+</tr>
+<tr>
+<td>$\mathbb{P}(A\mid\mathcal{G})$</td>
+<td>$\mathbb{E}[\mathbf{1}_A\mid\mathcal{G}]$</td>
+</tr>
+<tr>
+<td>$\mathbb{E}[X\mid Y]$</td>
+<td>$\mathbb{E}[X\mid\sigma(Y)]$</td>
+</tr>
+<tr>
+<td>$\operatorname{Var}(X\mid\mathcal{G})$</td>
+<td>Conditional variance $\mathbb{E}[(X-\mathbb{E}[X\mid\mathcal{G}])^2\mid\mathcal{G}]$</td>
+</tr>
+<tr>
+<td>$\mu_{X\mid Y}(y,dx)$</td>
+<td>Regular conditional distribution of $X$ given $Y$</td>
+</tr>
+<tr>
+<td>$\{\mathcal{F}_n\}$, $\mathcal{F}_\infty$</td>
+<td>Filtration, $\sigma(\bigcup_n\mathcal{F}_n)$</td>
+</tr>
+<tr>
+<td>adapted, predictable</td>
+<td>$X_n$ is $\mathcal{F}_n$-measurable; $X_n$ is $\mathcal{F}_{n-1}$-measurable</td>
+</tr>
+<tr>
+<td>martingale</td>
+<td>$\mathbb{E}[X_{n+1}\mid\mathcal{F}_n]=X_n$ a.s.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Patrick Billingsley, <em>Probability and Measure</em> (Wiley, 3rd edition, 1995), for independence, the Borel–Cantelli lemmas and the product measure construction.</li>
+<li>Andrei N. Kolmogorov, <em>Foundations of the Theory of Probability</em> (Chelsea, 1950), for the original statements of the extension theorem and the zero–one law.</li>
+<li>Kai Lai Chung, <em>A Course in Probability Theory</em> (Academic Press, 3rd edition, 2001), for conditional expectation, the regular conditional probability and the zero–one laws.</li>
+<li>Joseph L. Doob, <em>Stochastic Processes</em> (Wiley, 1953), for the systematic development of conditioning, filtrations and the martingale theory that follows.</li>
+<li>Paul R. Halmos, <em>Measure Theory</em> (Van Nostrand, 1950), for the product measure, the Radon–Nikodym theorem and the monotone class arguments used throughout.</li>
+<li>Edwin Hewitt and Leonard J. Savage, "Symmetric measures on Cartesian products", <em>Transactions of the American Mathematical Society</em> 80 (1955), 470–501, for the exchangeable zero–one law.</li>
+<li>Bruno de Finetti, "La prévision: ses lois logiques, ses sources subjectives", <em>Annales de l'Institut Henri Poincaré</em> 7 (1937), 1–68, for exchangeability and the representation theorem.</li>
+<li>David Williams, <em>Probability with Martingales</em> (Cambridge University Press, 1991), for a concise treatment of conditional expectation and the martingale theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

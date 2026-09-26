@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Erlangen Program Geometries — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-erlangen-program-geometries"><strong>List of Erlangen Program Geometries</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the geometries of the corpus in the form in which Klein's principle presents them: a geometry is the study of the invariants of a transformation group, and a geometric object is a figure on which the group acts. The list gathers the transformation-group form of Euclidean, affine, projective, hyperbolic, conformal, Möbius and symplectic geometry, together with the further homogeneous geometries of the corpus, the correspondence between each geometry and its automorphism group, and the invariant that the group of each geometry preserves. Every entry points to the article that introduces the geometry or the group, and the article introduces nothing and proves nothing.</p>
+<p>The organising relation is the correspondence between a geometry and its automorphism group: the group acts transitively on the space, the stabiliser of a point is the subgroup that fixes it, and the space is recovered as the coset space $G/H$. The Erlangen principle belongs to the planned article <em>Transformation Groups and the Erlangen Program</em>; its statement is named here and pointed to, and the general theory of transformation groups is that of <em>Transformation Groups</em>.</p>
+<p>The article records examples and non-examples side by side. Beside the geometries that a transformation group describes it lists the geometric theories whose isometry group is too small to describe them, the structure groups of bundles that are not transformation groups of a space, and the groups that are defined by a form rather than by an action, each with the failure named and the article that records it.</p>
+<h2 id="kleins-principle-and-transformation-groups">Klein's Principle and Transformation Groups</h2>
+<p>The principle states that a geometry is the study of the invariants of a transformation group, so that the group is the primary datum and the geometric notions are those the group preserves.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klein's principle (the Erlangen program)</td>
+<td>a geometry is the study of the invariants of a transformation group</td>
+<td><em>Transformation Groups and the Erlangen Program</em> (planned)</td>
+</tr>
+<tr>
+<td>a transformation group</td>
+<td>a group acting faithfully on a set with structure, through a permutation representation</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the action $G\times X \to X$</td>
+<td>the map organising the geometry, with orbits and stabilisers</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the automorphism group $\operatorname{Aut}(X)$</td>
+<td>the group of automorphisms of a structure on $X$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the orbit $\operatorname{Orb}(x)$ and stabiliser $\operatorname{Stab}(x)$</td>
+<td>the orbit and the point stabiliser, related by the orbit–stabiliser theorem</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the coset space $G/H$</td>
+<td>a transitive $G$-set, the homogeneous form of a geometry</td>
+<td><em>Transformation Groups</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>a measure-preserving transformation group</td>
+<td>a group of automorphisms of a measure space, whose invariant is the measure</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The ideal of the principle is that every geometric notion is a notion invariant under the group and conversely that every invariant of the group has a geometric meaning. The two classical cases at the extremes are the symmetric group $\operatorname{Sym}(X)$, under which no nontrivial structure is invariant, and the full group of all homeomorphisms of a manifold, under which only the topological invariants are invariant; the geometries of the list are the intermediate cases in which a form, a distance or a conformal or projective structure is preserved.</p>
+<h2 id="the-correspondence-between-a-geometry-and-its-automorphism-group">The Correspondence between a Geometry and its Automorphism Group</h2>
+<p>Each geometry of the list carries a group, and the geometry is recovered from the group together with the subgroup fixing a point.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Geometry</th>
+<th>The transformation group it is the invariant theory of</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a homogeneous geometry</td>
+<td>the pair $(G,H)$ of a group and a stabiliser, with the space $G/H$</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the transitivity of a geometry</td>
+<td>the group acts transitively, so the space is a single orbit</td>
+<td><em>Transformation Groups</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the invariant of a geometry</td>
+<td>a function or tensor on the space fixed by the group action</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the group of a geometry</td>
+<td>the automorphism group of the structure, recovered as $\operatorname{Aut}(X, \text{structure})$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the linear model of a geometry</td>
+<td>the isotropy representation at a point, a linear representation of $H$</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The correspondence is exact when the geometry is homogeneous and the automorphism group is the full structure-preserving group: the space is the coset space, the stabiliser is the isotropy subgroup, and the local geometry is the isotropy representation. The hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots$ of the transformation-group article is the ordering of the geometries from the weakest to the strongest structure.</p>
+<h2 id="the-classical-geometries-as-instances">The Classical Geometries as Instances</h2>
+<p>The classical geometries are the standard instances of the principle, each with the group whose invariants it studies.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Geometry</th>
+<th>Its transformation group</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Euclidean geometry</td>
+<td>the Euclidean group $E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>affine geometry</td>
+<td>the affine group $\operatorname{Aff}(n) = GL(n) \ltimes \mathbb{R}^n$</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>projective geometry</td>
+<td>the projective linear group $PGL(n+1,\mathbb{K})$</td>
+<td><em>Projective Geometry</em></td>
+</tr>
+<tr>
+<td>hyperbolic geometry</td>
+<td>the isometry group $O(n,1)$, orientation-preserving part $PSL(2,\mathbb{R})$ in dimension two</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>spherical geometry</td>
+<td>the orthogonal group $O(n+1)$</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>conformal geometry</td>
+<td>the conformal group $O(n+1,1)/\{\pm 1\}$</td>
+<td><em>Conformal Geometry</em></td>
+</tr>
+<tr>
+<td>Möbius geometry</td>
+<td>the Möbius group $\operatorname{Möb}(n) = O(n+1,1)/\{\pm 1\}$</td>
+<td><em>Möbius and Lie Sphere Geometry</em></td>
+</tr>
+<tr>
+<td>symplectic geometry</td>
+<td>the symplectic group $Sp(2n,\mathbb{R})$, preserving the form $\omega$</td>
+<td><em>Symplectic Geometry</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the linear classical geometry</td>
+<td>the general linear group $GL(n,\mathbb{K})$ and its special, orthogonal, unitary and symplectic subgroups</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the geometry of a quadratic form</td>
+<td>the orthogonal group $O(V,Q)$, the invariants of the form</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The instances are ordered by the size of the group: the general linear group gives the largest geometry and fewest invariants, the Euclidean and hyperbolic groups the metric geometries with distance and angle, the conformal group the angle alone, and the symplectic group a single alternating form. Each group is the automorphism group of the corresponding structure, so each geometry is the invariant theory of that group, which is the content of the principle.</p>
+<h2 id="the-invariants-of-the-classical-geometries">The Invariants of the Classical Geometries</h2>
+<p>The invariant that a geometry studies is the datum its group preserves, and the list of groups with their invariants is the concrete form of the Erlangen correspondence.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Geometry</th>
+<th>The invariant it studies</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>projective geometry</td>
+<td>the cross ratio of four collinear points</td>
+<td><em>Projective Geometry</em>, §Coordinates, Frames and the Cross Ratio</td>
+</tr>
+<tr>
+<td>Euclidean geometry</td>
+<td>distance, angle, area and the congruence of figures</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>affine geometry</td>
+<td>ratios of lengths on a line and the incidence of parallel lines</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>spherical geometry</td>
+<td>the spherical distance and the spherical angle</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>hyperbolic geometry</td>
+<td>the hyperbolic distance and the hyperbolic angle</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>conformal geometry</td>
+<td>the angle, preserved although the length is not</td>
+<td><em>Conformal Geometry</em></td>
+</tr>
+<tr>
+<td>Möbius geometry</td>
+<td>the cross ratio of four points and the generalised spheres</td>
+<td><em>Möbius and Lie Sphere Geometry</em></td>
+</tr>
+<tr>
+<td>symplectic geometry</td>
+<td>the symplectic form $\omega$ and the Hamiltonian vector field it defines</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The invariant theory of a geometry is not the whole of the geometry of that space: the differential geometry of a manifold uses the metric and its derivatives, which are not invariants of a finite-dimensional group, and the topological invariants are those of the homeomorphism group. The distinguishing feature of an Erlangen geometry is that its group is a finite-dimensional Lie group, so that its local invariants are finite in number and computable from the isotropy representation.</p>
+<h2 id="homogeneous-geometries-beyond-the-classical-list">Homogeneous Geometries Beyond the Classical List</h2>
+<p>The correspondence extends beyond the classical geometries to every space whose group acts transitively, with the stabiliser of a point supplying the local model.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Geometry</th>
+<th>Its transformation group</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the geometry of a symmetric space</td>
+<td>the isometry group $G$, with isotropy the fixed-point group $K$ of the geodesic symmetry</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>the geometry of a flag manifold</td>
+<td>the general linear group acting transitively on the flags, with the parabolic stabilisers</td>
+<td><em>Flag Manifolds</em></td>
+</tr>
+<tr>
+<td>the geometry of a Grassmannian</td>
+<td>the orthogonal or the general linear group acting transitively on the subspaces</td>
+<td><em>Grassmannians and Stiefel Manifolds</em></td>
+</tr>
+<tr>
+<td>the geometry of a reflection group</td>
+<td>the group generated by the reflections in the walls of a chamber</td>
+<td><em>Coxeter Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Each of these is a homogeneous geometry in the exact sense of the principle: the space is the coset space of the group by the stabiliser, the invariant theory is the invariant theory of the group, and the local model is the isotropy representation. The symmetric spaces and the flag manifolds are the families in which the correspondence is developed in the corpus, and the reflection groups are the discrete counterpart, whose chambers are the fundamental domains of the group action.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the Erlangen program geometries, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as an Erlangen geometry</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Riemannian geometry of a general manifold</td>
+<td>its isometry group need not act transitively, so no transformation group describes it</td>
+<td><em>Riemannian Geometry</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>spin geometry and the group $\operatorname{Spin}(n)$</td>
+<td>a structure group of a bundle, not the transformation group of a space</td>
+<td><em>Spin Geometry</em>; <em>The Clifford, Pin and Spin Groups</em></td>
+</tr>
+<tr>
+<td>the orthogonal group $O(n)$ as a geometry</td>
+<td>a group defined by a form; the geometry it belongs to is the orthogonal geometry of the form</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the symplectomorphism group</td>
+<td>the automorphisms of a symplectic manifold, generally larger than the finite-dimensional $Sp(2n,\mathbb{R})$</td>
+<td><em>Diffeomorphism Groups</em>; <em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the conformal group in dimension two</td>
+<td>infinite-dimensional, so the invariant theory is not the finite-dimensional one</td>
+<td><em>Complex Analysis</em>; <em>Conformal Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the geometries of the corpus in the form of Klein's principle. The principle and the transformation group open the list, with the action, the orbit, the stabiliser and the automorphism group; the correspondence between a geometry and its automorphism group follows, with the homogeneous space $G/H$ and the isotropy representation as the local model; the classical geometries are the instances, Euclidean, affine, projective, spherical, hyperbolic, conformal, Möbius and symplectic, each with the group whose invariants it studies; and the invariants themselves — the cross ratio, the distance and angle, the conformal angle, the symplectic form and the invariant measure — close it, and the homogeneous geometries beyond the classical list — the symmetric spaces, the flag manifolds, the Grassmannians and the reflection groups — show the correspondence at work outside it. Beside the examples stand the non-examples: a general Riemannian manifold has no transitive transformation group, spin geometry is a structure group rather than a transformation group, and the symplectomorphism group is larger than the finite-dimensional symplectic group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}(X)$, $\operatorname{Aut}(X)$</td>
+<td>Symmetric group, automorphism group of a structure</td>
+</tr>
+<tr>
+<td>$\operatorname{Orb}(x)$, $\operatorname{Stab}(x)$, $G/H$</td>
+<td>Orbit, stabiliser, coset space of a transitive action</td>
+</tr>
+<tr>
+<td>$E(n)$</td>
+<td>The Euclidean isometry group, $\mathbb{R}^n\rtimes O(n)$</td>
+</tr>
+<tr>
+<td>$GL(n,\mathbb{K})$, $PGL(n+1,\mathbb{K})$</td>
+<td>General linear and projective linear groups</td>
+</tr>
+<tr>
+<td>$O(n+1)$, $O(n,1)$, $O(n+1,1)$</td>
+<td>Spherical, hyperbolic and conformal groups</td>
+</tr>
+<tr>
+<td>$\operatorname{Möb}(n) = O(n+1,1)/\{\pm 1\}$</td>
+<td>Möbius group</td>
+</tr>
+<tr>
+<td>$Sp(2n,\mathbb{R})$, $\omega$</td>
+<td>Symplectic group and symplectic form</td>
+</tr>
+<tr>
+<td>$O(V,Q)$</td>
+<td>Orthogonal group of a quadratic form</td>
+</tr>
+<tr>
+<td>$\operatorname{Aff}(n)$</td>
+<td>The affine group, $GL(n)\ltimes\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$\operatorname{Spin}(n)$</td>
+<td>The spin group, the double cover of $SO(n)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Felix Klein, <em>Vergleichende Betrachtungen über neuere geometrische Forschungen</em> (Erlangen, 1872), for the original statement of the programme that defines a geometry by its transformation group.</li>
+<li>Felix Klein, <em>Vorlesungen über höhere Geometrie</em> (Springer, 1926), for the classical geometries and their transformation groups in the Erlangen form.</li>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry</em>, Volume II (Interscience, 1969), for the homogeneous spaces and the correspondence between a geometry and its automorphism group.</li>
+<li>Michael Artin, <em>Geometry</em> (Prentice Hall, 1991), for the classical geometries and their invariants in the transformation-group form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

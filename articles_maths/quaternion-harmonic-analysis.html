@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaternion Harmonic Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quaternion-harmonic-analysis"><strong>Quaternion Harmonic Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces harmonic analysis on the quaternion space as the study of the Fourier transform, convolution, and the function spaces on which they act, with the non-commutative structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers, and the complexification is mentioned only where it clarifies the structure.</p>
+<p>Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.</p>
+<h2 id="the-quaternion-space-as-a-locally-compact-abelian-group">The Quaternion Space as a Locally Compact Abelian Group</h2>
+<h3 id="additive-structure">Additive Structure</h3>
+<p>The quaternion space $\mathbb{H}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^4$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the characters are the ordinary four-dimensional Fourier characters:</p>
+<p>$$
+\chi_\xi(q) = e^{2\pi i \operatorname{Re}(\bar{\xi} q)}, \qquad \xi \in \mathbb{H},
+$$</p>
+<p>where the exponential is the ordinary complex exponential, and the pairing is</p>
+<p>$$
+\langle \xi, q \rangle = \operatorname{Re}(\bar{\xi} q) = \xi_0 q_0 + \xi_1 q_1 + \xi_2 q_2 + \xi_3 q_3.
+$$</p>
+<p>Note the sign: the quaternion conjugation $\bar{\xi} = \xi_0 - \boldsymbol{\xi}$ gives $\bar{\xi} q = (\xi_0 - \boldsymbol{\xi})(q_0 + \mathbf{q})$, whose real part is $\xi_0 q_0 + \boldsymbol{\xi} \cdot \mathbf{q}$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.</p>
+<p>So at the level of the additive group, quaternion harmonic analysis is the same as Fourier analysis on $\mathbb{R}^4$. The non-commutative structure of $\mathbb{H}$ enters only when the algebra structure is used, as in the quaternion Fourier transform and the convolution theorem.</p>
+<h3 id="the-quaternion-characters">The Quaternion Characters</h3>
+<p>The <strong>quaternion characters</strong> are the homomorphisms into the multiplicative group of $\mathbb{H}$:</p>
+<p>$$
+\chi_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)}, \qquad \xi \in \mathbb{H},
+$$</p>
+<p>where $\omega$ is a fixed unit pure quaternion and the exponential is the quaternion exponential. Because $\omega^2 = -1$, this is</p>
+<p>$$
+\chi_\xi(q) = \cos(2\pi \operatorname{Re}(\bar{\xi} q)) + \omega \sin(2\pi \operatorname{Re}(\bar{\xi} q)).
+$$</p>
+<p>These characters are <strong>bounded</strong> in the quaternion norm, because they take values on the unit sphere $\mathbb{S}^3$. This is the fundamental difference from the split complex case, where the characters are unbounded, and the similarity with the complex case, where the characters take values in the compact circle.</p>
+<p>So the quaternion case is intermediate between the complex case and the split complex case: the characters are bounded, but the algebra is non-commutative, and the transform depends on the choice of the unit pure quaternion $\omega$.</p>
+<h2 id="the-quaternion-fourier-transform">The Quaternion Fourier Transform</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>quaternion Fourier transform</strong> of a function $f : \mathbb{H} \to \mathbb{H}$ is</p>
+<p>$$
+\hat{f}(\xi) = \int_{\mathbb{H}} f(q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, dq,
+$$</p>
+<p>where $dq$ is Lebesgue measure on $\mathbb{H} \cong \mathbb{R}^4$, $\omega$ is a fixed unit pure quaternion, and the exponential is the quaternion exponential.</p>
+<p>Because the exponential depends on the choice of $\omega$, there are infinitely many quaternion Fourier transforms, one for each unit pure quaternion. The most common choices are:</p>
+<ul>
+<li><strong>Left-sided transform.</strong> $\hat{f}(\xi) = \int f(q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, dq$, with the exponential on the right.</li>
+<li><strong>Right-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} f(q) \, dq$, with the exponential on the left.</li>
+<li><strong>Two-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega_1 \operatorname{Re}(\bar{\xi} q)} f(q) e^{-2\pi \omega_2 \operatorname{Re}(\bar{\xi} q)} \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.</li>
+</ul>
+<p>The three transforms are related but not equivalent, and the choice depends on the application. The two-sided transform is the most general, and it is the one that diagonalizes the quaternion Cauchy–Riemann operator.</p>
+<h3 id="the-structure-of-the-transform">The Structure of the Transform</h3>
+<p>Write $f(q) = f_0(q) + f_1(q) e_1 + f_2(q) e_2 + f_3(q) e_3$ with $f_\mu : \mathbb{H} \to \mathbb{R}$. Then the quaternion Fourier transform decomposes into four real Fourier transforms, one for each component, with the kernel depending on the choice of $\omega$.</p>
+<p>For the simplest case $\omega = e_1$, the kernel is</p>
+<p>$$
+e^{-2\pi e_1 \operatorname{Re}(\bar{\xi} q)} = \cos(2\pi \operatorname{Re}(\bar{\xi} q)) - e_1 \sin(2\pi \operatorname{Re}(\bar{\xi} q)).
+$$</p>
+<p>So the transform is</p>
+<p>$$
+\hat{f}(\xi) = \int f(q) \cos(2\pi \operatorname{Re}(\bar{\xi} q)) \, dq - e_1 \int f(q) \sin(2\pi \operatorname{Re}(\bar{\xi} q)) \, dq.
+$$</p>
+<p>The first integral is the cosine transform, and the second is the sine transform. Both are real-valued when $f$ is real-valued, and both are ordinary four-dimensional Fourier transforms. So the quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$, tensored with the quaternion algebra.</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Linearity.</strong> The transform is linear over $\mathbb{R}$, but not over $\mathbb{H}$, because $\mathbb{H}$ is non-commutative.</p>
+<p><strong>Translation.</strong> If $f_a(q) = f(q - a)$, then $\hat{f}_a(\xi) = e^{-2\pi \omega \operatorname{Re}(\bar{\xi} a)} \hat{f}(\xi)$ for the left-sided transform.</p>
+<p><strong>Modulation.</strong> If $f_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)} f(q)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.</p>
+<p><strong>Scaling.</strong> If $f_\lambda(q) = f(\lambda q)$ for $\lambda \in \mathbb{H}^\times$, then</p>
+<p>$$
+\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^4} \hat{f}(\bar{\lambda}^{-1}\xi).
+$$</p>
+<p><strong>Rotation.</strong> If $f_u(q) = f(u q u^{-1})$ for a unit quaternion $u$, then $\hat{f}_u(\xi) = \hat{f}(u \xi u^{-1})$. The transform commutes with rotations.</p>
+<p><strong>Conjugation.</strong> $\widehat{\bar{f}}(\xi) = \overline{\hat{f}(-\xi)}$.</p>
+<h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
+<p><strong>Theorem.</strong> The quaternion Fourier transform extends uniquely to a unitary operator</p>
+<p>$$
+\mathcal{F} : L^2(\mathbb{H}) \to L^2(\mathbb{H}),
+$$</p>
+<p>with</p>
+<p>$$
+\|\hat{f}\|_2 = \|f\|_2, \qquad \langle \hat{f}, \hat{g} \rangle = \langle f, g \rangle.
+$$</p>
+<p>This is the Plancherel theorem for $\mathbb{R}^4$, written in quaternion notation. The non-commutativity does not affect the $L^2$ theory, because the transform is defined by an integral against a bounded kernel.</p>
+<h3 id="the-inversion-theorem">The Inversion Theorem</h3>
+<p><strong>Theorem.</strong> If $f \in L^1(\mathbb{H})$ and $\hat{f} \in L^1(\mathbb{H})$, then</p>
+<p>$$
+f(q) = \int_{\mathbb{H}} \hat{f}(\xi) e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, d\xi
+$$</p>
+<p>for almost every $q$.</p>
+<p>The inversion formula holds because the kernel is bounded and the transform is essentially the ordinary Fourier transform on $\mathbb{R}^4$.</p>
+<h2 id="convolution">Convolution</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>convolution</strong> of $f, g : \mathbb{H} \to \mathbb{H}$ is</p>
+<p>$$
+(f * g)(q) = \int_{\mathbb{H}} f(q - r) g(r) \, dr,
+$$</p>
+<p>whenever the integral converges. This is the convolution on the additive group $\mathbb{H} \cong \mathbb{R}^4$.</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Non-commutativity.</strong> The convolution is not commutative in general, because $\mathbb{H}$ is not commutative: $f * g \neq g * f$ in general. It is commutative only when one of the functions takes values in the center of $\mathbb{H}$, which is $\mathbb{R}$.</p>
+<p><strong>Associativity.</strong> $(f * g) * h = f * (g * h)$.</p>
+<p><strong>Young's inequality.</strong> If $1/p + 1/q = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then</p>
+<p>$$
+\|f * g\|_r \leq \|f\|_p \|g\|_q,
+$$</p>
+<p>where the norms are the ordinary $L^p$ norms on $\mathbb{R}^4$.</p>
+<p><strong>Convolution theorem.</strong> For functions for which the quaternion Fourier transform is defined,</p>
+<p>$$
+\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi),
+$$</p>
+<p>with the same ordering on both sides for the left-sided transform. For the two-sided transform, the statement is more complicated, because the two kernels do not commute.</p>
+<p><strong>Proof.</strong> Write the definition, apply Fubini, and change variables. $\square$</p>
+<h3 id="the-structure-of-the-convolution-theorem">The Structure of the Convolution Theorem</h3>
+<p>The convolution theorem for the quaternion Fourier transform is the same as for the complex Fourier transform on $\mathbb{R}^4$, except that the multiplication on the right is quaternion multiplication, which is non-commutative. So the convolution theorem says that the transform turns convolution into quaternion multiplication, and the non-commutativity of the convolution is a reflection of the non-commutativity of $\mathbb{H}$.</p>
+<h3 id="approximate-identities">Approximate Identities</h3>
+<p>A sequence $(\phi_n)$ in $L^1(\mathbb{H})$ is an <strong>approximate identity</strong> if</p>
+<p>$$
+\int_{\mathbb{H}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{|q| > \delta} |\phi_n(q)| \, dq \to 0
+$$</p>
+<p>for every $\delta > 0$.</p>
+<p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^p(\mathbb{H})$ for $1 \leq p < \infty$, then</p>
+<p>$$
+\|f * \phi_n - f\|_p \to 0.
+$$</p>
+<p>This is the same as in the real case, because the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$.</p>
+<h2 id="distributions">Distributions</h2>
+<h3 id="definition_2">Definition</h3>
+<p>A <strong>tempered distribution</strong> on $\mathbb{H}$ is a continuous linear functional on the Schwartz space $\mathcal{S}(\mathbb{H})$. The space of tempered distributions is denoted $\mathcal{S}'(\mathbb{H})$. It includes all functions in $L^p(\mathbb{H})$ for $1 \leq p \leq \infty$, all finite measures, and all derivatives of such objects.</p>
+<h3 id="operations-on-distributions">Operations on Distributions</h3>
+<p><strong>Differentiation.</strong> For $T \in \mathcal{S}'(\mathbb{H})$ and $\phi \in \mathcal{S}(\mathbb{H})$,</p>
+<p>$$
+\langle \partial_\mu T, \phi \rangle = -\langle T, \partial_\mu \phi \rangle, \qquad \mu = 0, 1, 2, 3.
+$$</p>
+<p><strong>Multiplication by a function.</strong> For $f \in C^\infty(\mathbb{H})$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{H})$,</p>
+<p>$$
+\langle f T, \phi \rangle = \langle T, f \phi \rangle.
+$$</p>
+<p><strong>Quaternion Fourier transform.</strong> For $T \in \mathcal{S}'(\mathbb{H})$ and $\phi \in \mathcal{S}(\mathbb{H})$,</p>
+<p>$$
+\langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle.
+$$</p>
+<p>The quaternion Fourier transform is a bijection $\mathcal{S}'(\mathbb{H}) \to \mathcal{S}'(\mathbb{H})$.</p>
+<h3 id="the-delta-distribution">The Delta Distribution</h3>
+<p>The <strong>delta distribution</strong> $\delta$ is the tempered distribution</p>
+<p>$$
+\langle \delta, \phi \rangle = \phi(0).
+$$</p>
+<p>Its quaternion Fourier transform is the constant function $1$, and the quaternion Fourier transform of $1$ is $\delta$. The delta is the identity for convolution: $\delta * T = T$ for every tempered distribution $T$.</p>
+<h3 id="the-cauchy-kernel">The Cauchy Kernel</h3>
+<p>The <strong>Cauchy kernel</strong> is the distribution</p>
+<p>$$
+E(q) = \frac{\bar{q}}{|q|^4},
+$$</p>
+<p>which satisfies</p>
+<p>$$
+D E = 2\pi^2 \delta_0
+$$</p>
+<p>in the sense of distributions, where $D$ is the quaternion Cauchy–Riemann operator. It is the fundamental solution of the Cauchy–Riemann operator, and it is the quaternion analogue of the kernel $1/z$ in complex analysis.</p>
+<h2 id="the-quaternion-hilbert-transform">The Quaternion Hilbert Transform</h2>
+<h3 id="definition_3">Definition</h3>
+<p>The <strong>quaternion Hilbert transform</strong> of $f : \mathbb{H} \to \mathbb{H}$ is defined by the principal value integral</p>
+<p>$$
+Hf(q) = \frac{1}{\pi^2} \, \text{p.v.} \int_{\mathbb{H}} \frac{(r - q)^{-1}}{|r - q|^2} f(r) \, dr,
+$$</p>
+<p>where the integral is over the quaternion space and the principal value is taken with respect to the singularity at $r = q$.</p>
+<h3 id="basic-properties_2">Basic Properties</h3>
+<p><strong>Boundedness.</strong> $H$ is bounded on $L^p(\mathbb{H})$ for $1 < p < \infty$, with</p>
+<p>$$
+\|Hf\|_p \leq C_p \|f\|_p.
+$$</p>
+<p><strong>Fourier multiplier.</strong> In terms of the quaternion Fourier transform,</p>
+<p>$$
+\widehat{Hf}(\xi) = -\omega \operatorname{sgn}(\xi) \hat{f}(\xi),
+$$</p>
+<p>where $\operatorname{sgn}$ is the sign function on the real part.</p>
+<h3 id="the-relation-to-the-cauchyriemann-operator">The Relation to the Cauchy–Riemann Operator</h3>
+<p>The quaternion Hilbert transform is the boundary value of the Cauchy integral for monogenic functions. It is the quaternion analogue of the Hilbert transform in complex analysis, and it is used in the theory of boundary value problems for the Cauchy–Riemann operator.</p>
+<h2 id="maximal-functions">Maximal Functions</h2>
+<h3 id="the-quaternion-maximal-function">The Quaternion Maximal Function</h3>
+<p>The <strong>quaternion Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{H})$ is</p>
+<p>$$
+Mf(q) = \sup_{r > 0} \frac{1}{|B(q, r)|} \int_{B(q, r)} |f(r)| \, dr,
+$$</p>
+<p>where $B(q, r)$ is the Euclidean ball of radius $r$ centered at $q$, and $|B(q, r)|$ is its volume.</p>
+<h3 id="the-maximal-inequality">The Maximal Inequality</h3>
+<p><strong>Theorem (Hardy–Littlewood, quaternion version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{H})$ and every $\lambda > 0$,</p>
+<p>$$
+|\{q : Mf(q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+$$</p>
+<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^p(\mathbb{H})$ for $1 < p \leq \infty$.</p>
+<p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
+<p>$$
+\|Mf\|_p \leq C_p \|f\|_p.
+$$</p>
+<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation. $\square$</p>
+<h3 id="the-structure-of-the-maximal-function">The Structure of the Maximal Function</h3>
+<p>Because the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the maximal function theory is identical to the real theory on $\mathbb{R}^4$. The non-commutativity of $\mathbb{H}$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.</p>
+<h2 id="the-calderonzygmund-theory">The Calderón–Zygmund Theory</h2>
+<h3 id="singular-integrals">Singular Integrals</h3>
+<p>A <strong>quaternion Calderón–Zygmund operator</strong> is a bounded operator $T : L^2(\mathbb{H}) \to L^2(\mathbb{H})$ with a kernel $K : \mathbb{H} \times \mathbb{H} \to \mathbb{H}$ such that</p>
+<p>$$
+Tf(q) = \int_{\mathbb{H}} K(q, r) f(r) \, dr
+$$</p>
+<p>for $q \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
+<p>$$
+|K(q, r)| \leq \frac{C}{|q - r|^4},
+$$</p>
+<p>$$
+|K(q, r) - K(q', r)| \leq C \frac{|q - q'|^\delta}{|q - r|^{4+\delta}}, \qquad |q - q'| < \frac{1}{2} |q - r|,
+$$</p>
+<p>and the analogous estimate in the second variable, for some $\delta > 0$. The power $4$ is the dimension of $\mathbb{H}$ as a real vector space.</p>
+<p><strong>Theorem (Calderón–Zygmund, quaternion version).</strong> Every quaternion Calderón–Zygmund operator is bounded on $L^p(\mathbb{H})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
+<p><strong>Examples.</strong> The quaternion Hilbert transform, the quaternion Riesz transforms, and the Beurling–Ahlfors transform are quaternion Calderón–Zygmund operators.</p>
+<h3 id="the-structure-of-the-theory">The Structure of the Theory</h3>
+<p>Because the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the Calderón–Zygmund theory is identical to the real theory on $\mathbb{R}^4$, with the dimension adjusted from $n$ to $4$. The non-commutativity of $\mathbb{H}$ does not affect the kernel estimates, because they are in terms of the Euclidean norm, which does not see the algebra structure. The non-commutativity affects only the multiplication of the kernel with the function, and this is a minor modification.</p>
+<h2 id="the-mellin-transform">The Mellin Transform</h2>
+<h3 id="definition_4">Definition</h3>
+<p>The <strong>quaternion Mellin transform</strong> of a function $f : (0, \infty) \to \mathbb{H}$ is</p>
+<p>$$
+\mathcal{M} f(s) = \int_0^\infty t^{s-1} f(t) \, dt,
+$$</p>
+<p>where the power is the quaternion power. Because the variable $t$ is real and the quaternion $s$ appears only in the exponent, the integral converges for $s_0$ in the appropriate range.</p>
+<h3 id="relation-to-the-quaternion-fourier-transform">Relation to the Quaternion Fourier Transform</h3>
+<p>Under the change of variables $t = e^x$, the Mellin transform becomes the quaternion Fourier transform on the real line:</p>
+<p>$$
+\mathcal{M} f(\sigma + \omega \tau) = \int_{-\infty}^\infty e^{(\sigma + \omega \tau) x} f(e^x) \, dx = \hat{g}(\tau),
+$$</p>
+<p>where $g(x) = e^{\sigma x} f(e^x)$ and $\omega$ is a unit pure quaternion. So the Mellin transform is the quaternion Fourier transform in logarithmic coordinates.</p>
+<h3 id="the-mellin-convolution">The Mellin Convolution</h3>
+<p>The <strong>quaternion Mellin convolution</strong> is</p>
+<p>$$
+(f \star g)(x) = \int_0^\infty f(x/y) g(y) \frac{dy}{y}.
+$$</p>
+<p>It satisfies</p>
+<p>$$
+\mathcal{M}(f \star g)(s) = \mathcal{M} f(s) \, \mathcal{M} g(s),
+$$</p>
+<p>which is the multiplicative analogue of the convolution theorem.</p>
+<h2 id="the-radon-transform">The Radon Transform</h2>
+<h3 id="definition_5">Definition</h3>
+<p>The <strong>quaternion Radon transform</strong> of a function $f : \mathbb{H} \to \mathbb{H}$ is</p>
+<p>$$
+Rf(\theta, t) = \int_{L(\theta, t)} f(q) \, ds,
+$$</p>
+<p>where $L(\theta, t)$ is the hyperplane with normal direction $\theta \in \mathbb{S}^3$ and signed distance $t$ from the origin, and $ds$ is the Euclidean surface measure.</p>
+<h3 id="the-fourier-slice-theorem">The Fourier Slice Theorem</h3>
+<p><strong>Theorem (Fourier Slice, quaternion version).</strong> The one-dimensional quaternion Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the four-dimensional quaternion Fourier transform of $f$ to the line through the origin in direction $\theta$:</p>
+<p>$$
+\widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \theta).
+$$</p>
+<p><strong>Proof.</strong> Write the definition of the Radon transform, take the quaternion Fourier transform in $t$, and change variables. $\square$</p>
+<p>The Fourier slice theorem is the mathematical basis of quaternion tomography, the analogue of computed tomography for the quaternion space.</p>
+<h3 id="the-inversion-formula">The Inversion Formula</h3>
+<p><strong>Theorem.</strong> For suitable $f$,</p>
+<p>$$
+f(q) = \frac{1}{2} \int_{\mathbb{S}^3} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma|^3 e^{2\pi \omega \operatorname{Re}(\bar{\theta} q)} \, d\sigma \, d\theta,
+$$</p>
+<p>where $d\theta$ is the surface measure on the unit sphere $\mathbb{S}^3$. The factor $|\sigma|^3$ is the ramp filter in dimension four, and it is the source of the high-frequency amplification in quaternion tomography.</p>
+<h2 id="the-wavelet-transform">The Wavelet Transform</h2>
+<h3 id="definition_6">Definition</h3>
+<p>The <strong>quaternion continuous wavelet transform</strong> of $f \in L^2(\mathbb{H})$ with respect to a wavelet $\psi \in L^2(\mathbb{H})$ is</p>
+<p>$$
+W_\psi f(a, b) = \frac{1}{|a|^2} \int_{\mathbb{H}} f(q) \overline{\psi\left( \frac{q - b}{a} \right)} \, dq, \qquad a \in \mathbb{H}^\times, \; b \in \mathbb{H}.
+$$</p>
+<p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\psi$ is assumed to satisfy the <strong>admissibility condition</strong></p>
+<p>$$
+C_\psi = \int_{\mathbb{H}} \frac{|\hat{\psi}(\xi)|^2}{|\xi|^4} \, d\xi < \infty,
+$$</p>
+<p>where $\hat{\psi}$ is the quaternion Fourier transform.</p>
+<h3 id="the-inversion-formula_1">The Inversion Formula</h3>
+<p><strong>Theorem.</strong> If $\psi$ is admissible and $f \in L^2(\mathbb{H})$, then</p>
+<p>$$
+f(q) = \frac{1}{C_\psi} \int_{\mathbb{H}^\times} \int_{\mathbb{H}} W_\psi f(a, b) \frac{1}{|a|^2} \psi\left( \frac{q - b}{a} \right) \frac{da \, db}{|a|^4}.
+$$</p>
+<p>The inversion formula reconstructs $f$ from its wavelet transform.</p>
+<h3 id="the-quaternion-wavelet-transform">The Quaternion Wavelet Transform</h3>
+<p>The quaternion wavelet transform is used in quaternion signal processing, where it provides both magnitude and phase information, and in the analysis of quaternion-valued images, where the three imaginary components encode the color channels.</p>
+<h2 id="the-structure-principle">The Structure Principle</h2>
+<p>The pattern in all the definitions above is the same: whenever the analysis depends only on the additive group structure and the Euclidean norm, the quaternion case is identical to the real case on $\mathbb{R}^4$. Whenever the analysis involves the algebra structure, the non-commutativity of $\mathbb{H}$ makes the theory richer but more complicated.</p>
+<p><strong>Theorem (Structure Principle for quaternion harmonic analysis).</strong> Let $\mathcal{T}$ be a transform or operator defined on functions on $\mathbb{R}^n$ that depends only on the additive group structure and the Euclidean norm. Then the quaternion analogue of $\mathcal{T}$ is identical to $\mathcal{T}$ on $\mathbb{R}^4$, stated in quaternion notation. If $\mathcal{T}$ depends on the algebra structure, then the quaternion analogue depends on the choice of the unit pure quaternion $\omega$, and the non-commutativity of $\mathbb{H}$ prevents the simple identities that hold in the commutative case.</p>
+<p><strong>Consequences.</strong></p>
+<ul>
+<li>The maximal function, the Calderón–Zygmund theory, and the wavelet transform are identical to the real theory on $\mathbb{R}^4$, because they depend only on the additive group and the Euclidean norm.</li>
+<li>The Fourier transform, the convolution theorem, and the Radon transform depend on the choice of $\omega$, and the non-commutativity of $\mathbb{H}$ makes the identities more complicated than in the complex case.</li>
+<li>The quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$ tensored with $\mathbb{H}$, and the non-commutativity enters only in the ordering of the factors.</li>
+</ul>
+<p>This is the fundamental structural fact about quaternion harmonic analysis: the additive group is $\mathbb{R}^4$, so the analysis is the ordinary analysis on $\mathbb{R}^4$, and the quaternion structure enters only through the algebra of the coefficients.</p>
+<h2 id="summary">Summary</h2>
+<p>Harmonic analysis on the quaternion space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the non-commutative structure in an essential role. The space is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^4$, and its characters are the exponentials from which the transform is built.</p>
+<p>The quaternion Fourier transform is defined with a kernel built from the quaternion exponential, and it is developed together with convolution, the Schwartz space and its tempered distributions, the Hilbert transform, the Hardy–Littlewood maximal function, and the Calderón–Zygmund theory of singular integrals. The transform is then extended to the Mellin transform on the multiplicative half-line, the Radon transform along hyperplanes, and the continuous wavelet transform.</p>
+<p>The section on the structure principle states what organises the subject: whenever the analysis depends only on the additive group structure and the Euclidean norm, the quaternion case agrees with the real case on $\mathbb{R}^4$, and the non-commutativity enters only through the kernel of the transform.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Quaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis</td>
+</tr>
+<tr>
+<td>$q = q_0 + \mathbf{q}$</td>
+<td>General quaternion</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>Unit pure quaternion</td>
+</tr>
+<tr>
+<td>$\chi_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)}$</td>
+<td>Quaternion character</td>
+</tr>
+<tr>
+<td>$\hat{f}$</td>
+<td>Quaternion Fourier transform</td>
+</tr>
+<tr>
+<td>$f * g$</td>
+<td>Convolution</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>delta distribution</td>
+</tr>
+<tr>
+<td>$E(q) = \bar{q}/\|q\|^4$</td>
+<td>Cauchy kernel</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>Quaternion Cauchy–Riemann operator</td>
+</tr>
+<tr>
+<td>$Hf$</td>
+<td>Quaternion Hilbert transform</td>
+</tr>
+<tr>
+<td>$Mf$</td>
+<td>Quaternion maximal function</td>
+</tr>
+<tr>
+<td>$\mathcal{M} f$</td>
+<td>Quaternion Mellin transform</td>
+</tr>
+<tr>
+<td>$Rf$</td>
+<td>Quaternion Radon transform</td>
+</tr>
+<tr>
+<td>$W_\psi f$</td>
+<td>Quaternion wavelet transform</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original formulation.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford theory.</li>
+<li>John Ryan, <em>Clifford Algebras in Analysis and Related Topics</em> (CRC Press, 1996), for the analytic theory.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton, 1989), for the role of the Dirac operator in geometry.</li>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton, 1971), for the classical treatment of the Fourier transform on $\mathbb{R}^n$.</li>
+<li>Todd A. Ell and Stephen J. Sangwine, <em>Quaternion Fourier Transforms for Signal and Image Processing</em> (Wiley, 2014), for the engineering applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

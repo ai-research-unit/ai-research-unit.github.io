@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="complex-representations"><strong>Complex Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the representation theory of the complex algebra. The goal is to define representations precisely, classify them, and describe the structure of the representation ring.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The complex algebra is assumed from the article on complex algebra, and the identification of $\mathbb{C}$ with $\mathbb{R}^2$ is used throughout. No physics is invoked.</p>
+<h2 id="representations-of-math2">Representations of $\mathbb{C}$</h2>
+<h3 id="definition">Definition</h3>
+<p>A <strong>representation</strong> of $\mathbb{C}$ is a complex vector space $V$ together with a bilinear map</p>
+<p>$$
+\rho : \mathbb{C} \times V \to V, \qquad \rho(z, v) = z \cdot v,
+$$</p>
+<p>satisfying</p>
+<p>$$
+z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
+$$</p>
+<p>Equivalently, a representation is an algebra homomorphism</p>
+<p>$$
+\rho : \mathbb{C} \to \operatorname{End}(V).
+$$</p>
+<p>Since $\mathbb{C}$ is a field, every representation is a complex vector space, and the action is by complex scalar multiplication.</p>
+<h3 id="the-regular-representation">The Regular Representation</h3>
+<p>The <strong>regular representation</strong> of $\mathbb{C}$ is $\mathbb{C}$ acting on itself by left multiplication:</p>
+<p>$$
+\rho_{\mathrm{reg}}(z) w = z w, \qquad z, w \in \mathbb{C}.
+$$</p>
+<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{C} \to \operatorname{End}(\mathbb{C})$ given by $\rho_{\mathrm{reg}}(z) = z$. It is the representation of $\mathbb{C}$ on a one-dimensional complex vector space.</p>
+<h3 id="the-scalar-maps">The Scalar Maps</h3>
+<p>For each $\lambda \in \mathbb{C}$, the <strong>scalar map</strong> $\rho_\lambda$ is defined on $\mathbb{C}$ by</p>
+<p>$$
+\rho_\lambda(z) w = \lambda z w, \qquad z, w \in \mathbb{C}.
+$$</p>
+<p>Equivalently, $\rho_\lambda(z) = \lambda z$ as a complex-linear map. Since a representation must satisfy $1 \cdot w = w$, this is a representation only for $\lambda = 1$, which is the regular representation; $\lambda = 0$ gives the zero map, which is a representation only on the zero space.</p>
+<h2 id="classification">Classification</h2>
+<h3 id="the-classification-theorem">The Classification Theorem</h3>
+<p><strong>Theorem.</strong> Every finite-dimensional complex representation of $\mathbb{C}$ is isomorphic to a direct sum of copies of the regular representation:</p>
+<p>$$
+V \cong \mathbb{C}^{\oplus n}, \qquad \rho(z)(v_1, \dots, v_n) = (z v_1, \dots, z v_n).
+$$</p>
+<p><strong>Proof.</strong> Let $V$ be a finite-dimensional representation. Choose a basis $(v_1, \dots, v_n)$. For each $i$, the map $z \mapsto z \cdot v_i$ is $\mathbb{C}$-linear, so $z \cdot v_i = \lambda_i(z) v_i$ for some scalar $\lambda_i(z) \in \mathbb{C}$. Since $1 \cdot v_i = v_i$, we have $\lambda_i(1) = 1$. Since $z \cdot (w \cdot v_i) = (zw) \cdot v_i$, we have $\lambda_i(z) \lambda_i(w) = \lambda_i(zw)$. It follows that $\lambda_i(z) = z$ for all $z$, because $\lambda_i$ is $\mathbb{C}$-linear and $\lambda_i(1) = 1$. Hence $z \cdot v_i = z v_i$ in the chosen basis, and the representation is a direct sum of copies of the regular representation. $\square$</p>
+<h3 id="irreducible-representations">Irreducible Representations</h3>
+<p><strong>Theorem.</strong> The regular representation is the unique irreducible complex representation of $\mathbb{C}$, up to isomorphism.</p>
+<p><strong>Proof.</strong> Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{C}$ is a field and every non-zero $\mathbb{C}$-linear map $\mathbb{C} \to V$ is injective. $\square$</p>
+<h3 id="schurs-lemma">Schur's Lemma</h3>
+<p><strong>Theorem (Schur).</strong> Every $\mathbb{C}$-linear endomorphism of an irreducible complex representation of $\mathbb{C}$ is a scalar multiple of the identity.</p>
+<p><strong>Proof.</strong> Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{C}$-linear and commuting with the action. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{C}$ (by the classification theorem), $T$ is multiplication by a non-zero scalar. $\square$</p>
+<p><strong>Corollary.</strong> The endomorphism ring of the regular representation is $\mathbb{C}$ itself.</p>
+<h2 id="the-representation-ring">The Representation Ring</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>representation ring</strong> $R(\mathbb{C})$ is the Grothendieck ring of finite-dimensional complex representations of $\mathbb{C}$. As an abelian group, it is generated by the isomorphism class $[\rho_{\mathrm{reg}}]$, with no relations. So</p>
+<p>$$
+R(\mathbb{C}) \cong \mathbb{Z},
+$$</p>
+<p>with generator $[\rho_{\mathrm{reg}}]$.</p>
+<h3 id="ring-structure">Ring Structure</h3>
+<p>The product in $R(\mathbb{C})$ is given by the tensor product of representations:</p>
+<p>$$
+[V] \cdot [W] = [V \otimes_{\mathbb{C}} W].
+$$</p>
+<p>Since the regular representation is one-dimensional, its tensor powers are</p>
+<p>$$
+\rho_{\mathrm{reg}} \otimes \rho_{\mathrm{reg}} \cong \rho_{\mathrm{reg}}.
+$$</p>
+<p>So the multiplication in $R(\mathbb{C})$ is the ordinary multiplication in $\mathbb{Z}$.</p>
+<h2 id="representations-and-the-field-structure">Representations and the Field Structure</h2>
+<h3 id="the-role-of-the-field">The Role of the Field</h3>
+<p>The representation theory of $\mathbb{C}$ is trivial because $\mathbb{C}$ is a field. Every module over a field is free, so every representation is a direct sum of copies of the regular representation. The irreducible representations are one-dimensional over $\mathbb{C}$, and there is exactly one of them, up to isomorphism.</p>
+<p>This is a general fact about fields: if $F$ is any field, the finite-dimensional representations of $F$ are all direct sums of copies of the regular representation, and the irreducible representations are one-dimensional. The representation ring is $\mathbb{Z}$, generated by the regular representation.</p>
+<h3 id="the-role-of-the-complex-structure">The Role of the Complex Structure</h3>
+<p>The complex structure enters only through the choice of the coefficient field. If we forget the complex structure and consider $\mathbb{C}$ as a real algebra, the representations are real vector spaces and the action is real-linear, but $\mathbb{C}$ is still a division algebra, so there is exactly one irreducible representation, of real dimension two.</p>
+<p>So the representation theory of $\mathbb{C}$ is trivial as a complex algebra, and it remains trivial as a real algebra. The distinction is the distinction between the field $\mathbb{C}$ and the real algebra $\mathbb{C}$, and it is the reason the complex case is both the simplest and the most subtle.</p>
+<h2 id="the-dual-representation">The Dual Representation</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>dual</strong> (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{C}}(V, \mathbb{C})$ defined by</p>
+<p>$$
+(\rho^*(z) f)(v) = f(\rho(z) v), \qquad z \in \mathbb{C}, \; f \in V^*, \; v \in V.
+$$</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$ for finite-dimensional $V$.</p>
+<p><strong>Duality is exact.</strong> It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.</p>
+<p><strong>The dual of an irreducible is irreducible.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
+<p><strong>The dual of the regular representation is the regular representation.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
+<h3 id="the-pairing">The Pairing</h3>
+<p>The natural pairing</p>
+<p>$$
+\langle \cdot, \cdot \rangle : V^* \times V \to \mathbb{C}, \qquad \langle f, v \rangle = f(v),
+$$</p>
+<p>satisfies</p>
+<p>$$
+\langle \rho^*(z) f, v \rangle = \langle f, \rho(z) v \rangle.
+$$</p>
+<p>This is the definition of the dual representation, written as a pairing.</p>
+<h2 id="tensor-products">Tensor Products</h2>
+<h3 id="definition_3">Definition</h3>
+<p>The <strong>tensor product</strong> of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{C}} W$ defined by</p>
+<p>$$
+z \cdot (v \otimes w) = (z \cdot v) \otimes w = v \otimes (z \cdot w).
+$$</p>
+<p>The two definitions agree because $\mathbb{C}$ is commutative.</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Associativity.</strong> $(U \otimes V) \otimes W \cong U \otimes (V \otimes W)$.</p>
+<p><strong>Commutativity.</strong> $V \otimes W \cong W \otimes V$.</p>
+<p><strong>Distributivity.</strong> $U \otimes (V \oplus W) \cong (U \otimes V) \oplus (U \otimes W)$.</p>
+<p><strong>Tensor product of irreducibles.</strong> The tensor product of two copies of the regular representation is the regular representation:</p>
+<p>$$
+\rho_{\mathrm{reg}} \otimes \rho_{\mathrm{reg}} \cong \rho_{\mathrm{reg}}.
+$$</p>
+<h2 id="homomorphisms">Homomorphisms</h2>
+<h3 id="definition_4">Definition</h3>
+<p>A <strong>homomorphism</strong> of representations $V$ and $W$ is a complex-linear map $T : V \to W$ such that</p>
+<p>$$
+T(z \cdot v) = z \cdot T(v), \qquad z \in \mathbb{C}, \; v \in V.
+$$</p>
+<p>The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{C}}(V, W)$.</p>
+<h3 id="basic-properties_2">Basic Properties</h3>
+<p><strong>Composition.</strong> If $T \in \operatorname{Hom}_{\mathbb{C}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{C}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{C}}(V, U)$.</p>
+<p><strong>Schur's lemma.</strong> If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{C}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{C}}(V, V) \cong \mathbb{C}$.</p>
+<p><strong>Dimension count.</strong> For $V \cong \mathbb{C}^{\oplus p}$ and $W \cong \mathbb{C}^{\oplus q}$,</p>
+<p>$$
+\dim_{\mathbb{C}} \operatorname{Hom}_{\mathbb{C}}(V, W) = pq.
+$$</p>
+<p><strong>Proof.</strong> A homomorphism is a complex-linear map between finite-dimensional complex vector spaces, so it is determined by a $q \times p$ complex matrix, of complex dimension $pq$. $\square$</p>
+<h3 id="the-endomorphism-ring">The Endomorphism Ring</h3>
+<p>The <strong>endomorphism ring</strong> of a representation $V$ is $\operatorname{End}_{\mathbb{C}}(V) = \operatorname{Hom}_{\mathbb{C}}(V, V)$. For $V \cong \mathbb{C}^{\oplus n}$,</p>
+<p>$$
+\operatorname{End}_{\mathbb{C}}(V) \cong M_n(\mathbb{C}),
+$$</p>
+<p>the ring of $n \times n$ complex matrices. This is a simple ring, and it is the prototypical example of a central simple algebra over $\mathbb{C}$.</p>
+<h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
+<p>The representation theory of $\mathbb{C}$ differs from that of $\mathbb{D}$ in four essential ways.</p>
+<p><strong>Field versus ring.</strong> $\mathbb{C}$ is a field, so every non-zero element is invertible. $\mathbb{D}$ is not a field, so it has zero divisors. This is the source of all the differences.</p>
+<p><strong>Number of irreducibles.</strong> $\mathbb{C}$ has one irreducible representation, up to isomorphism. $\mathbb{D}$ has two: $\rho_+$ and $\rho_-$.</p>
+<p><strong>Endomorphism rings.</strong> The endomorphism ring of the regular representation of $\mathbb{C}$ is $\mathbb{C}$ itself. The endomorphism ring of the regular representation of $\mathbb{D}$ is $\mathbb{R} \oplus \mathbb{R}$, which is isomorphic to $\mathbb{D}$.</p>
+<p><strong>Representation rings.</strong> $R(\mathbb{C}) \cong \mathbb{Z}$, generated by the regular representation. $R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}$, generated by $\rho_+$ and $\rho_-$. The two rings are not isomorphic: the first has no idempotents other than $0$ and $1$, while the second has a non-trivial idempotent corresponding to $\rho_+$.</p>
+<h2 id="summary">Summary</h2>
+<p>A representation of $\mathbb{C}$ is a complex vector space $V$ together with a bilinear action of $\mathbb{C}$ on it, equivalently an algebra homomorphism $\mathbb{C} \to \operatorname{End}(V)$. Because $\mathbb{C}$ is a field the theory is completely determined: every module over a field is free, and every finite-dimensional representation is isomorphic to a direct sum of copies of the regular representation, $V \cong \mathbb{C}^{\oplus n}$. The regular representation is therefore the unique irreducible representation up to isomorphism, and by Schur's lemma its endomorphism ring is $\mathbb{C}$ itself.</p>
+<p>The representation ring $R(\mathbb{C})$ is the Grothendieck ring of the finite-dimensional representations. It is generated as an abelian group by the class of the regular representation with no relations, so $R(\mathbb{C}) \cong \mathbb{Z}$. The field structure is the source of this simplicity and of every contrast with the split complex case, where $\mathbb{D}$ is a ring with zero divisors rather than a field.</p>
+<p>The article also records the standard constructions on representations: the dual or contragredient representation on $V^*$, defined by $(\rho^*(z)f)(v) = f(\rho(z)v)$; the tensor product, whose action is well defined because $\mathbb{C}$ is commutative; and the homomorphisms, the complex-linear maps intertwining the two actions, with their composition and functorial behaviour. The final section sets out the four essential differences from the representation theory of $\mathbb{D}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>Complex algebra</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Imaginary unit, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\rho : \mathbb{C} \to \operatorname{End}(V)$</td>
+<td>Representation</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{reg}}$</td>
+<td>Regular representation</td>
+</tr>
+<tr>
+<td>$\rho_\lambda$</td>
+<td>Scalar map $z \mapsto \lambda z$</td>
+</tr>
+<tr>
+<td>$V^*$</td>
+<td>Dual representation</td>
+</tr>
+<tr>
+<td>$V \otimes W$</td>
+<td>Tensor product</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{\mathbb{C}}(V, W)$</td>
+<td>Space of homomorphisms</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{C}}(V)$</td>
+<td>Endomorphism ring</td>
+</tr>
+<tr>
+<td>$R(\mathbb{C})$</td>
+<td>Representation ring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Charles C. Pinter, <em>A Book of Abstract Algebra</em> (Dover, 2010), for the representation theory of algebras.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the general theory of modules over rings.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 2002), for the structure theory of semisimple algebras.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of SL(2, ℝ)</em> (Imperial College Press, 2012), for the analytic applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

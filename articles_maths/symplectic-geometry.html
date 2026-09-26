@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symplectic Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="symplectic-geometry"><strong>Symplectic Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>symplectic manifold</strong> is a smooth manifold carrying a closed and nondegenerate $2$-form. The two conditions fight in a productive way: nondegeneracy alone is a fibrewise, linear condition that makes the form an isomorphism $TM\to T^*M$, while closedness binds the forms at nearby points together and is the exact obstruction to the manifold having any local invariants. The result is a geometry with no local curvature, in which the only invariants are global and topological in character.</p>
+<p>This article develops the geometry of a symplectic manifold. It defines symplectic manifolds and the elementary consequences of the definition — even dimension, an orientation, a canonical volume form; it treats the standard examples, the cotangent bundle in particular; it proves the Darboux theorem by the Moser argument and draws the consequence that distinguishes symplectic geometry from Riemannian geometry; it develops Hamiltonian vector fields, the Poisson bracket of functions and the algebra of symplectomorphisms; and it treats Lagrangian submanifolds, the almost complex structures compatible with a symplectic form, and symplectic reduction. The manifold theory is not covered here; the linear algebra on which it rests is not repeated here.</p>
+<p>The <strong>boundary of the article</strong> is worth stating at the outset. The linear-algebraic theory of an alternating form — nondegeneracy, the symplectic basis, the Darboux normal form for a vector space, the symplectic group, isotropic and Lagrangian subspaces, the Pfaffian, and the Poisson bracket on the polynomials of a symplectic vector space — is the subject of the companion article <em>Symplectic Forms and Poisson Brackets</em>, and is assumed throughout. What is added here is the passage from one vector space to a manifold: the form varies from point to point, and the new condition is $d\omega = 0$. The Poisson <em>algebra</em> of an abstract commutative algebra is treated in Part I, and the Poisson <em>manifold</em>, where the bracket is defined by a tensor on a manifold, is. The Hamiltonian systems and the differential equations that a Hamiltonian flow satisfies belong to Part III, where the limit and the derivative of a curve are available; this article uses a flow only as a one-parameter family of symplectomorphisms and states the differential equation in passing.</p>
+<p>Manifolds, charts, smooth maps and their differentials are those of the companion article <em>Smooth Manifolds and Differential Geometry</em>, and transversality and the implicit-function theorem those of <em>Differential Topology</em>; both are being written in parallel in this Part and are cited rather than restated. Differential forms, the exterior derivative $d$, the de Rham complex $H^\bullet_{dR}(M)$ and the integral of a top form are those of <em>Differential Forms and Stokes' Theorem</em>. Vector fields, the Lie bracket of vector fields, bundles and the tangent and cotangent bundles are those of <em>Fibre Bundles, Connections and Curvature</em> and of the articles cited there. Lie groups and their Lie algebras are those of <em>Lie Groups</em>, <em>The Lie Algebra and the Exponential Map</em> and <em>The Lie Correspondence and the Adjoint Representation</em>. The base field is $\mathbb{R}$ and no physics is invoked.</p>
+<h2 id="symplectic-manifolds">Symplectic Manifolds</h2>
+<p><strong>Definition.</strong> A <strong>symplectic form</strong> on a smooth manifold $M$ is a $2$-form $\omega \in \Omega^2(M)$ that is</p>
+<p><strong>(a)</strong> <strong>closed</strong>, $d\omega = 0$; and</p>
+<p><strong>(b)</strong> <strong>nondegenerate</strong>, meaning that for every $x \in M$ the bilinear form $\omega_x$ on $T_xM$ is nondegenerate.</p>
+<p>A <strong>symplectic manifold</strong> is a pair $(M, \omega)$ consisting of a smooth manifold and a symplectic form on it; a <strong>symplectomorphism</strong> between symplectic manifolds $(M, \omega)$ and $(N, \sigma)$ is a diffeomorphism $F : M \to N$ with $F^*\sigma = \omega$.</p>
+<p>Nondegeneracy is exactly the condition that the bundle map</p>
+<p>$$
+\omega^{\flat} : TM \longrightarrow T^*M, \qquad X \longmapsto \omega(X, \cdot)
+$$</p>
+<p>is an isomorphism of vector bundles. Its inverse is written $\omega^{\sharp} : T^*M \to TM$, and it is what turns a $1$-form into a vector field; the Hamiltonian vector fields below are its most important application. When the form is understood, the inverse is also written by raising indices, $\omega^{\sharp}(\alpha) = \alpha^{\sharp}$.</p>
+<p><strong>Proposition.</strong> Let $\omega$ be a nondegenerate $2$-form on an $n$-manifold $M$. Then $n = 2m$ is even; the top form</p>
+<p>$$
+\mathrm{vol}_\omega = \frac{\omega^{\wedge m}}{m!}
+$$</p>
+<p>is nowhere vanishing, so $\omega$ orients $M$ and defines a volume form; and $\omega$ is nondegenerate if and only if $\omega^{\wedge m}$ is nowhere vanishing.</p>
+<p><strong>Proof.</strong> At a point $x$, the form $\omega_x$ is a nondegenerate alternating form on the vector space $T_xM$; by the symplectic-basis theorem of <em>Symplectic Forms and Poisson Brackets</em>, such a form exists only in even dimension, and in a symplectic basis it has the standard matrix. In coordinates adapted to a symplectic basis, $\omega^{\wedge m}$ is $m!$ times the coordinate volume form, which is the statement $\mathrm{vol}_\omega \neq 0$; conversely, if $\omega^{\wedge m} \neq 0$ then $\omega_x$ has maximal rank, hence is nondegenerate. The orientation is the one defined by the nowhere vanishing top form $\mathrm{vol}_\omega$. $\square$</p>
+<p><strong>Remark.</strong> The factor $m!$ is not a normalisation of convenience. If $\omega = \sum_i dx_i \wedge dy_i$, then $\omega^{\wedge m}$ is $m!$ times $dx_1\wedge dy_1\wedge\cdots\wedge dx_m\wedge dy_m$, so $\omega^{\wedge m}/m!$ is the standard volume. The form $\mathrm{vol}_\omega$ is the <strong>symplectic volume form</strong> of the structure, and every symplectomorphism preserves it; a symplectomorphism therefore preserves the volume, and the symplectic condition is strictly stronger than the volume condition; the rigidity that this extra strength produces — Gromov's non-squeezing theorem being the first example — is a global phenomenon and belongs.</p>
+<p><strong>Example.</strong> On $\mathbb{R}^{2m}$ with coordinates $x_1, \ldots, x_m, y_1, \ldots, y_m$ the form</p>
+<p>$$
+\omega_0 = \sum_{i=1}^{m} dx_i \wedge dy_i
+$$</p>
+<p>is closed, because its coefficients are constant, and nondegenerate, because its matrix in the coordinate basis is the invertible block matrix $\begin{pmatrix} 0 & I_m \\ -I_m & 0 \end{pmatrix}$. Every open subset of $\mathbb{R}^{2m}$ is symplectic with the restricted form, and the linear algebra of $\omega_0$ is that of <em>Symplectic Forms and Poisson Brackets</em>.</p>
+<p><strong>Example.</strong> Let $Q$ be a smooth manifold and let $\pi : T^*Q \to Q$ be its cotangent bundle with the projection $\pi$. The <strong>tautological $1$-form</strong> $\theta \in \Omega^1(T^*Q)$ is defined at a covector $p \in T^*_qQ$ and a tangent vector $v \in T_p(T^*Q)$ by</p>
+<p>$$
+\theta_p(v) = p\,(d\pi_p\, v),
+$$</p>
+<p>so that $\theta_p$ evaluates the covector on the projection of the tangent vector. In a chart with coordinates $(q^1, \ldots, q^m)$ on $Q$ and fibre coordinates $(p_1, \ldots, p_m)$, it reads $\theta = \sum_i p_i\, dq^i$. The form</p>
+<p>$$
+\omega = -\,d\theta = \sum_{i=1}^{m} dq^i \wedge dp_i
+$$</p>
+<p>is closed because it is exact, and nondegenerate because in the coordinates $(q, p)$ it has the standard shape; so $(T^*Q, -d\theta)$ is a symplectic manifold, the <strong>cotangent bundle</strong> of $Q$. It is the source of the examples in mechanics and of the local model for a Lagrangian neighbourhood below.</p>
+<p><strong>Example.</strong> An oriented surface $\Sigma$ with an area form $\omega$ is symplectic: a $2$-form on a surface is automatically closed, and nondegeneracy is exactly the nowhere-vanishing condition. The symplectomorphisms are the area-preserving diffeomorphisms, and the symplectic volume is the area. In dimension two, symplectic geometry is thus the geometry of area, and the Darboux theorem says that any two area forms are locally the same; the global invariants are the total area and, more subtly, the isotopy class of the area form.</p>
+<p><strong>Example.</strong> The coadjoint orbit of a Lie group $G$ through a point $\xi \in \mathfrak{g}^*$ carries the <strong>Kirillov–Kostant–Souriau form</strong>, defined by</p>
+<p>$$
+\omega_\xi(X^\#, Y^\#) = \langle \xi, [X, Y]\rangle, \qquad X, Y \in \mathfrak{g},
+$$</p>
+<p>where $X^\#$ is the fundamental vector field of the coadjoint action generated by $X$. The form is well defined and nondegenerate, and it is closed; so every coadjoint orbit is a symplectic manifold. This construction, whose group-theoretic input is that of <em>Lie Groups</em>, produces a large supply of examples, and in the case of a compact Lie group it exhausts the homogeneous symplectic manifolds.</p>
+<h2 id="the-darboux-theorem">The Darboux Theorem</h2>
+<p>The central local fact of symplectic geometry is that a symplectic form has no local invariants at all.</p>
+<p><strong>Theorem (Darboux).</strong> Let $(M, \omega)$ be a symplectic manifold of dimension $2m$. About every point $x \in M$ there is a chart $(U, x_1, \ldots, x_m, y_1, \ldots, y_m)$ centred at $x$ in which</p>
+<p>$$
+\omega = \sum_{i=1}^{m} dx_i \wedge dy_i .
+$$</p>
+<p>Consequently every symplectic manifold of dimension $2m$ is locally symplectomorphic to $(\mathbb{R}^{2m}, \omega_0)$.</p>
+<p><strong>Proof.</strong> By the linear Darboux theorem of <em>Symplectic Forms and Poisson Brackets</em> there is a basis of $T_xM$ in which $\omega_x$ is the standard form; choosing a chart in which this basis is the coordinate basis, the form $\omega_0$ with constant coefficients $\sum_i dx_i\wedge dy_i$ agrees with $\omega$ at $x$. It therefore suffices to prove that on a neighbourhood of the origin in $\mathbb{R}^{2m}$ any closed form $\omega_1$ with $\omega_1(0) = \omega_0$ is symplectomorphic to $\omega_0$ by a diffeomorphism fixing the origin. Consider the homotopy $\omega_t = \omega_0 + t(\omega_1 - \omega_0)$ from $\omega_0$ to $\omega_1$; each $\omega_t$ is closed, and each is nondegenerate near the origin because nondegeneracy is an open condition and $\omega_t(0) = \omega_0$ for every $t$. Since $\omega_1 - \omega_0$ is closed and vanishes at the origin, the Poincaré lemma of <em>Differential Forms and Stokes' Theorem</em> applied on a star-shaped chart provides a $1$-form $\sigma$ with $d\sigma = \omega_1 - \omega_0$. Because $\omega_t$ is nondegenerate, there is a unique time-dependent vector field $X_t$ with</p>
+<p>$$
+\iota_{X_t}\omega_t = -\sigma .
+$$</p>
+<p>Let $\varphi_t$ be its flow, defined near the origin for $t \in [0,1]$; then</p>
+<p>$$
+\frac{d}{dt}\bigl(\varphi_t^*\omega_t\bigr) = \varphi_t^*\Bigl(\mathcal{L}_{X_t}\omega_t + \frac{d\omega_t}{dt}\Bigr) = \varphi_t^*\bigl(d\,\iota_{X_t}\omega_t + (\omega_1-\omega_0)\bigr) = \varphi_t^*(-d\sigma + d\sigma) = 0 .
+$$</p>
+<p>Hence $\varphi_t^*\omega_t$ is constant in $t$, and evaluating at $t = 0$ gives $\varphi_t^*\omega_t = \omega_0$ for all $t$; at $t = 1$ the map $\varphi_1$ pulls $\omega_1$ back to $\omega_0$, which is the Darboux chart. $\square$</p>
+<p><strong>Remark.</strong> The argument is Moser's, and it uses only the closedness of the forms, the Poincaré lemma and the openness of nondegeneracy; it is the standard proof that a family of cohomologous nondegenerate closed forms is trivialised by an isotopy. The contrast with Riemannian geometry is the point of the theorem. A Riemannian metric has local invariants — the curvature and its covariant derivatives — and no two metrics of different curvature are locally isometric; a symplectic form has none, and two symplectic manifolds of the same dimension are always locally symplectomorphic. The sectional curvature, the Ricci tensor and the Levi-Civita connection of a Riemannian metric are those of the companion article <em>Riemannian Geometry</em>, being written in parallel.</p>
+<p><strong>Corollary.</strong> A symplectic invariant of a manifold is never local. Precisely, if $P$ is a function of the values of $\omega$ and finitely many of its derivatives at a single point which is unchanged by every symplectomorphism, then $P$ is constant: in Darboux coordinates the form is the constant form $\sum_i dx_i\wedge dy_i$, so the whole jet of $\omega$ at a point is the same for every symplectic manifold of the given dimension. Every invariant of a symplectic manifold is therefore global, and the theory is a branch of topology rather than of local differential geometry.</p>
+<h2 id="hamiltonian-vector-fields">Hamiltonian Vector Fields</h2>
+<p><strong>Definition.</strong> Let $(M, \omega)$ be a symplectic manifold and let $f \in C^\infty(M)$. The <strong>Hamiltonian vector field</strong> of $f$ is the unique vector field $X_f \in \mathfrak{X}(M)$ with</p>
+<p>$$
+\iota_{X_f}\omega = df, \qquad \text{that is} \quad \omega(X_f, Y) = Y(f) \ \text{ for all } Y \in \mathfrak{X}(M).
+$$</p>
+<p>Existence and uniqueness are the nondegeneracy of $\omega$, read through the bundle isomorphism $\omega^\flat$: the vector field is $X_f = \omega^{\sharp}(df)$. A vector field $X$ is <strong>symplectic</strong> if $\mathcal{L}_X\omega = 0$, and <strong>Hamiltonian</strong> if it is $X_f$ for some function $f$.</p>
+<p><strong>Definition.</strong> The <strong>Poisson bracket</strong> of $f, g \in C^\infty(M)$ is</p>
+<p>$$
+\{f, g\} = \omega(X_f, X_g) = X_g(f) = -X_f(g).
+$$</p>
+<p>The equality of the three expressions is the definition of the Hamiltonian fields read in the two slots: $\omega(X_f, X_g) = df(X_g) = X_g(f)$, and the antisymmetry of $\omega$ gives $\omega(X_f,X_g) = -\omega(X_g,X_f) = -X_f(g)$.</p>
+<p><strong>Proposition.</strong> The bracket is $\mathbb{R}$-bilinear and alternating, and it is a derivation in each argument:</p>
+<p>$$
+\{f, gh\} = \{f, g\}\,h + g\,\{f, h\}.
+$$</p>
+<p><strong>Proof.</strong> Bilinearity and alternation are inherited from $\omega$. For the derivation property, $X_{gh}$ is characterised by $\iota_{X_{gh}}\omega = d(gh) = g\,dh + h\,dg$, while $\iota_{gX_h + hX_g}\omega = g\,dh + h\,dg$; by uniqueness $X_{gh} = gX_h + hX_g$. Substituting into $\{f, gh\} = \omega(X_f, X_{gh})$ and using the bilinearity of $\omega$ gives the identity. $\square$</p>
+<p><strong>Theorem.</strong> The Jacobi identity for the bracket is equivalent to the closedness of $\omega$: substituting the Hamiltonian fields into the invariant formula for the differential of a $2$-form and using $[X_f, X_g] = -X_{\{f,g\}}$ gives</p>
+<p>$$
+d\omega(X_f, X_g, X_h) = -2\bigl(\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}\bigr).
+$$</p>
+<p>Consequently, on a symplectic manifold the bracket satisfies the Jacobi identity, and the vector space $C^\infty(M)$ is a Lie algebra under it.</p>
+<p><strong>Proof.</strong> The invariant formula for the exterior derivative on a $2$-form gives</p>
+<p>$$
+d\omega(X, Y, Z) = X\,\omega(Y, Z) - Y\,\omega(X, Z) + Z\,\omega(X, Y) - \omega([X, Y], Z) + \omega([X, Z], Y) - \omega([Y, Z], X).
+$$</p>
+<p>Put $X = X_f$, $Y = X_g$, $Z = X_h$. The first three terms are $X_f\{g,h\} - X_g\{f,h\} + X_h\{f,g\} = \{\{g,h\},f\} - \{\{f,h\},g\} + \{\{f,g\},h\}$ using $\{u,v\} = X_v(u)$, and the last three require the identity</p>
+<p>$$
+[X_f, X_g] = -X_{\{f,g\}},
+$$</p>
+<p>which follows from $\iota_{[X_f,X_g]}\omega = \mathcal{L}_{X_f}\iota_{X_g}\omega - \iota_{X_g}\mathcal{L}_{X_f}\omega = d\,\iota_{X_f}\iota_{X_g}\omega + \iota_{X_f}d\,\iota_{X_g}\omega = d\,\omega(X_g, X_f) = -d\{f,g\}$, where the second equality uses $d\omega = 0$ and $\mathcal{L}_{X_f}\omega = d\,\iota_{X_f}\omega = d(df) = 0$. Substituting, the last three terms reproduce the three bracket expressions with the signs that make the total equal to twice the negative of the Jacobi sum. Hence the Jacobi sum vanishes for all $f, g, h$ exactly when $d\omega$ vanishes on all triples of Hamiltonian vector fields; since the Hamiltonian fields span the tangent space, the function $d\omega(X_f, X_g, X_h)$ vanishes identically precisely when $d\omega = 0$. $\square$</p>
+<p><strong>Corollary.</strong> On a symplectic manifold, $C^\infty(M)$ is a Lie algebra under the Poisson bracket, the map</p>
+<p>$$
+f \longmapsto X_f : C^\infty(M) \longrightarrow \mathfrak{X}(M)
+$$</p>
+<p>is a homomorphism of Lie algebras from $(C^\infty(M), -\{\cdot,\cdot\})$ onto the Lie subalgebra of Hamiltonian vector fields, with kernel the space of locally constant functions on $M$; when $M$ is connected the kernel is the constants $\mathbb{R} \cdot 1$, and the constants are the centre of the bracket.</p>
+<p><strong>Proof.</strong> The image is closed under the commutator, because $[X_f, X_g] = -X_{\{f,g\}} = X_{-\{f,g\}}$; with the bracket $-\{\cdot,\cdot\}$ on functions, the identity is the statement that $f\mapsto X_f$ preserves the bracket. The kernel consists of the functions with $df = 0$, that is, the locally constant functions. If $f$ is locally constant then $\{f,g\} = X_g(f) = 0$ for every $g$, so it is central; conversely a central $f$ has $\omega(X_f, X_g) = 0$ for all $g$ and hence $X_f = 0$, so $f$ is locally constant. $\square$</p>
+<p><strong>Remark.</strong> The identity $[X_f, X_g] = -X_{\{f,g\}}$ explains the sign that appears between the two descriptions: the map $f\mapsto X_f$ is a homomorphism for the bracket or for its negative, but not for both, and the convention chosen here is the one that makes $\iota_{X_f}\omega = df$ hold. The Hamiltonian vector field is the infinitesimal generator of a one-parameter group of symplectomorphisms, because $\mathcal{L}_{X_f}\omega = d\,\iota_{X_f}\omega + \iota_{X_f}d\omega = d^2f = 0$. The flow itself is the solution of the ordinary differential equation $\dot{x} = X_f(x)$, and that differential equation, its existence theory and its long-time behaviour are treated in Part III, where the limit and the derivative of a curve are available.</p>
+<h2 id="symplectomorphisms-and-the-flux">Symplectomorphisms and the Flux</h2>
+<p><strong>Definition.</strong> The <strong>group of symplectomorphisms</strong> of $(M, \omega)$ is</p>
+<p>$$
+\operatorname{Symp}(M, \omega) = \{F \in \operatorname{Diff}(M) : F^*\omega = \omega\},
+$$</p>
+<p>with the group structure of composition. The identity component is written $\operatorname{Symp}_0(M, \omega)$.</p>
+<p><strong>Proposition.</strong> The Lie algebra of the group of symplectomorphisms is the space of symplectic vector fields, and the Hamiltonian vector fields form the Lie subalgebra of those whose $1$-form $\iota_X\omega$ is exact. The sequence of Lie algebras</p>
+<p>$$
+0 \longrightarrow C^\infty(M)/\mathbb{R} \longrightarrow \mathfrak{X}_{\mathrm{symp}}(M) \longrightarrow H^1_{dR}(M) \longrightarrow 0
+$$</p>
+<p>is exact, the last map sending $X$ to the class $[\iota_X\omega]$.</p>
+<p><strong>Proof.</strong> A vector field $X$ generates a one-parameter group of symplectomorphisms exactly when $\mathcal{L}_X\omega = 0$, and $\mathcal{L}_X\omega = d\,\iota_X\omega + \iota_Xd\omega = d\,\iota_X\omega$; so $X$ is symplectic precisely when $\iota_X\omega$ is closed. The Hamiltonian fields are those for which $\iota_X\omega = df$ is exact, so the image of $f\mapsto X_f$ is the kernel of the class map, and the kernel of $f \mapsto X_f$ is the space of the locally constant functions. $\square$</p>
+<p><strong>Remark.</strong> The group $\operatorname{Symp}(M, \omega)$ is infinite dimensional, and it is not a Lie group in the finite-dimensional sense; for a closed manifold it carries the structure of a Fréchet Lie group modelled on the closed $1$-forms, and for the foundational material on infinite-dimensional groups the reader is referred to <em>Diffeomorphism Groups</em> and <em>Hilbert's Fifth Problem and Infinite-Dimensional Lie Theory</em>, both earlier in this Part. The <strong>flux homomorphism</strong> of the exact sequence measures the failure of a symplectic isotopy to be Hamiltonian, and its image is the <strong>flux group</strong>, a discrete subgroup of $H^1_{dR}(M)$ for a closed manifold.</p>
+<h2 id="lagrangian-submanifolds">Lagrangian Submanifolds</h2>
+<p><strong>Definition.</strong> Let $(M, \omega)$ be a symplectic manifold of dimension $2m$ and let $L \subseteq M$ be a submanifold. Then $L$ is <strong>isotropic</strong> if $\omega$ restricts to zero on $L$, meaning that $\omega_x(u, v) = 0$ for all $x \in L$ and $u, v \in T_xL$; <strong>coisotropic</strong> if the $\omega$-orthogonal complement $TL^{\perp} \subseteq TM|_L$ is contained in $TL$; and <strong>Lagrangian</strong> if it is isotropic and $2\dim L = \dim M$.</p>
+<p><strong>Proposition.</strong> Let $L$ be an isotropic submanifold of a symplectic manifold of dimension $2m$. Then $\dim L \leq m$, and $L$ is Lagrangian if and only if it is isotropic of dimension $m$. If $L$ is Lagrangian then $TL = TL^{\perp}$ and $T^*L \cong TL^{\perp}$ by the bundle isomorphism $v \mapsto \omega(v, \cdot)|_{TL}$.</p>
+<p><strong>Proof.</strong> At each point the tangent space $T_xL$ is an isotropic subspace of the symplectic vector space $T_xM$, so the dimension bound and the characterisation of the Lagrangian case are those of <em>Symplectic Forms and Poisson Brackets</em>. When $\dim L = m$ the isotropic subspace is maximal isotropic, hence equals its own orthogonal complement, and $TL^{\perp}/TL \cong T^*L$. $\square$</p>
+<p><strong>Example.</strong> Let $Q$ be a manifold and let $Q_0 \subseteq T^*Q$ be the zero section, $Q_0 = \{(q, 0)\}$. Then $\theta$ restricts to zero on $Q_0$, since $p = 0$ there, so $\omega = -d\theta$ restricts to zero; hence $Q_0$ is Lagrangian. The same holds for the graph of a closed $1$-form $\beta$ on $Q$: the graph is the image of $s_\beta(q) = (q, \beta_q)$, and $s_\beta^*\omega = s_\beta^*(-d\theta) = -d(\beta) = 0$ exactly when $d\beta = 0$. Thus the closed $1$-forms on $Q$ parametrise the Lagrangian sections of $T^*Q$.</p>
+<p><strong>Example.</strong> Let $N \subseteq Q$ be a submanifold. Its <strong>conormal bundle</strong> $\nu^*N \subseteq T^*Q$ consists of the covectors annihilating $TN$. It is Lagrangian: in adapted coordinates with $N$ given by $q^{k+1} = \cdots = q^m = 0$, it is described by $q^{k+1} = \cdots = q^m = p_1 = \cdots = p_k = 0$, on which $\omega = \sum_i dq^i\wedge dp_i$ vanishes, and its dimension is $m$. The zero section is the case $N = Q$.</p>
+<p><strong>Theorem (Lagrangian neighbourhood theorem).</strong> Let $L$ be a closed Lagrangian submanifold of a symplectic manifold $(M, \omega)$. Then there is a neighbourhood $U$ of $L$ in $M$, a neighbourhood $V$ of the zero section of $T^*L$ and a symplectomorphism $\Phi : U \to V$ that restricts to the identity on $L$, where $T^*L$ carries the form $-d\theta$ of its tautological form.</p>
+<p><strong>Proof sketch.</strong> The bundle isomorphism $TL^{\perp} \cong T^*L$ identifies the normal bundle of $L$ with $T^*L$, and the exponential map of an auxiliary Riemannian metric provides a diffeomorphism from a neighbourhood of the zero section of $TL^{\perp}$ to a neighbourhood of $L$. Pulling $\omega$ back to $T^*L$ gives a closed form agreeing with the standard form along the zero section; the Moser argument of the Darboux theorem, applied with the linear homotopy between the two forms and the fact that they are cohomologous, produces a diffeomorphism of a possibly smaller neighbourhood correcting the difference. $\square$</p>
+<p><strong>Remark.</strong> The theorem is the local normal form for a Lagrangian submanifold and the exact analogue of the Darboux theorem for a symplectic point: a neighbourhood of a Lagrangian is modelled on a neighbourhood of the zero section of a cotangent bundle, and no further invariant survives. The global theory of Lagrangians — their intersections, their generating functions, their Floer theory — is the subject andthe companions to this article in this Part.</p>
+<h2 id="compatible-almost-complex-structures">Compatible Almost Complex Structures</h2>
+<p><strong>Definition.</strong> Let $(M, \omega)$ be a symplectic manifold. An <strong>almost complex structure</strong> $J$ on $M$ is a bundle endomorphism $J : TM \to TM$ with $J^2 = -\mathrm{id}$. It is <strong>compatible</strong> with $\omega$ if</p>
+<p>$$
+\omega(JX, JY) = \omega(X, Y), \qquad g_J(X, Y) = \omega(X, JY) \ \text{ is positive definite}
+$$</p>
+<p>for all $X, Y \in \mathfrak{X}(M)$.</p>
+<p><strong>Theorem.</strong> Every symplectic manifold $(M, \omega)$ admits a compatible almost complex structure, and the space of compatible almost complex structures is nonempty and contractible.</p>
+<p><strong>Proof sketch.</strong> Choose an auxiliary Riemannian metric $g$ and let $A$ be the bundle endomorphism determined by $g(X, AY) = \omega(X, Y)$; the endomorphism $A$ is $g$-skew and, since $\omega$ is nondegenerate, invertible. Then $-A^2$ is $g$-symmetric and positive definite, so it has a positive-definite square root; setting $J = (-A^2)^{-1/2}A$ gives a $g$-orthogonal complex structure compatible with $\omega$. For contractibility, consider the map that assigns to a Riemannian metric the compatible complex structure produced by this construction; the space of metrics is convex, hence contractible, the fibre over a fixed $J$ is the convex set of the metrics making $J$ orthogonal, and the assignment is a fibration, so the space of compatible almost complex structures is contractible as well. $\square$</p>
+<p><strong>Remark.</strong> The pair $(g_J, J)$ makes $M$ an almost Kähler manifold: a Riemannian manifold with a compatible complex structure. The form $\omega$ is then the fundamental $2$-form of the pair, and the almost complex structure is integrable precisely when $M$ is a complex manifold and $\omega$ is its Kähler form; the integrability condition is the vanishing of the Nijenhuis tensor, and the whole circle of ideas belongs to andbeing written in this Part. Compatible almost complex structures are the technical device that turns a symplectic manifold into a complex-looking one, and they are what makes the pseudoholomorphic curves, meaningful.</p>
+<h2 id="symplectic-reduction">Symplectic Reduction</h2>
+<p><strong>Definition.</strong> Let a Lie group $G$ act on a symplectic manifold $(M, \omega)$ by symplectomorphisms, with Lie algebra $\mathfrak{g}$. A <strong>momentum map</strong> for the action is a map $\mu : M \to \mathfrak{g}^*$ such that for every $X \in \mathfrak{g}$ the function $\mu_X = \langle \mu, X\rangle$ satisfies</p>
+<p>$$
+X^{\#} = X_{\mu_X},
+$$</p>
+<p>where $X^{\#}$ is the fundamental vector field of the action and $X_{\mu_X}$ is the Hamiltonian vector field of $\mu_X$. A <strong>coadjoint-equivariant</strong> momentum map in addition intertwines the action on $M$ with the coadjoint action on $\mathfrak{g}^*$.</p>
+<p><strong>Theorem (Marsden–Weinstein).</strong> Let $G$ act freely and properly on the symplectic manifold $(M, \omega)$ with an equivariant momentum map $\mu$, and suppose $0 \in \mathfrak{g}^*$ is a regular value of $\mu$. Then the quotient</p>
+<p>$$
+M /\!/ G = \mu^{-1}(0)/G
+$$</p>
+<p>is a smooth manifold of dimension $\dim M - 2\dim G$, and it carries a unique symplectic form $\omega_{\mathrm{red}}$ with</p>
+<p>$$
+i^*\omega = \pi^*\omega_{\mathrm{red}},
+$$</p>
+<p>where $i : \mu^{-1}(0) \hookrightarrow M$ is the inclusion and $\pi : \mu^{-1}(0) \to M/\!/G$ the quotient map. It is the <strong>symplectic quotient</strong> or <strong>reduced space</strong> of the action.</p>
+<p><strong>Proof sketch.</strong> The regular-value theorem makes $\mu^{-1}(0)$ a submanifold and the quotient a manifold; the tangent space to an orbit is the space of fundamental vector fields, which are Hamiltonian, and the $2$-form $i^*\omega$ annihilates the orbit directions because $\omega(X^{\#}, \cdot) = d\mu_X$ vanishes on $\mu^{-1}(0)$; so $i^*\omega$ descends along $\pi$ and is nondegenerate on the quotient by dimension count, the quotient being symplectic of the stated dimension. $\square$</p>
+<p><strong>Example.</strong> Take $G = U(1)$ acting on $\mathbb{C}^n$ by scalar multiplication with momentum map $\mu(z) = c - |z|^2/2$, where $c > 0$ is a constant; the level $\mu^{-1}(0)$ is the sphere $|z|^2 = 2c$, and the reduced space $\mu^{-1}(0)/U(1)$ is the complex projective space $\mathbb{CP}^{n-1}$, with the induced form the Fubini–Study form. This is the standard construction of the projective spaces as symplectic quotients, and it is the first appearance of the Kähler structures developed.</p>
+<p><strong>Remark.</strong> Reduction is the origin of most of the nontrivial examples of symplectic manifolds, and it is the exact symplectic analogue of the quotient of a manifold by a group action. Its representation-theoretic refinement, the orbit method, identifies the coadjoint orbits of a Lie group with the symplectic manifolds carrying its irreducible representations; the Lie-theoretic input is that of <em>Lie Groups</em>, and the applications to representations belong there and to <em>Representation Theory of Locally Compact Groups</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A symplectic manifold is a smooth manifold with a closed nondegenerate $2$-form $\omega$. Nondegeneracy makes $\omega^\flat : TM \to T^*M$ an isomorphism and forces the dimension to be even, and $\omega^{\wedge m}/m!$ is a nowhere vanishing volume form, so a symplectic manifold is oriented and a symplectomorphism preserves the volume. The standard examples are $\mathbb{R}^{2m}$, the cotangent bundle $T^*Q$ with $\omega = -d\theta$ for the tautological form, the oriented surfaces, and the coadjoint orbits with the Kirillov–Kostant–Souriau form.</p>
+<p>The Darboux theorem says that about each point there are coordinates with $\omega = \sum_i dx_i\wedge dy_i$, so a symplectic form has no local invariants; the proof is the Moser argument, which uses the Poincaré lemma and the openness of nondegeneracy. The Hamiltonian vector field of a function is defined by $\iota_{X_f}\omega = df$, the Poisson bracket is $\{f,g\} = \omega(X_f, X_g)$, it is a derivation in each argument, and its Jacobi identity is equivalent to $d\omega = 0$. The map $f \mapsto X_f$ is a Lie algebra homomorphism from $C^\infty(M)$ with the bracket $-\{\cdot,\cdot\}$, with kernel the locally constant functions, and the group of symplectomorphisms has the symplectic vector fields for its Lie algebra, with the Hamiltonian fields as the exact part and the flux measuring the difference.</p>
+<p>Lagrangian submanifolds are the isotropic submanifolds of half the dimension, and a neighbourhood of a Lagrangian is symplectomorphic to a neighbourhood of the zero section of its cotangent bundle. Every symplectic manifold carries compatible almost complex structures, forming a contractible space, and this makes every symplectic manifold almost Kähler, with the Kähler case exactly the integrable one. Finally, a free proper symplectic action with an equivariant momentum map has a symplectic quotient $\mu^{-1}(0)/G$, which produces the projective spaces and most of the concrete symplectic manifolds.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M, N$</td>
+<td>Smooth manifolds; $T_xM$, $TM$, $T^*M$ the tangent and cotangent objects</td>
+</tr>
+<tr>
+<td>$\mathfrak{X}(M)$, $\Omega^k(M)$</td>
+<td>Smooth vector fields and smooth $k$-forms</td>
+</tr>
+<tr>
+<td>$d$, $\int_M$</td>
+<td>Exterior derivative; integral of a top form over an oriented manifold</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>The symplectic $2$-form; closed and nondegenerate</td>
+</tr>
+<tr>
+<td>$\omega_0 = \sum_i dx_i\wedge dy_i$</td>
+<td>Standard symplectic form on $\mathbb{R}^{2m}$</td>
+</tr>
+<tr>
+<td>$2m$</td>
+<td>The dimension of a symplectic manifold; $m$ half the dimension</td>
+</tr>
+<tr>
+<td>$\omega^{\flat} : TM \to T^*M$, $\omega^{\sharp}$</td>
+<td>Bundle isomorphism $X \mapsto \omega(X,\cdot)$ and its inverse</td>
+</tr>
+<tr>
+<td>$\mathrm{vol}_\omega = \omega^{\wedge m}/m!$</td>
+<td>Symplectic volume form; orients $M$</td>
+</tr>
+<tr>
+<td>$\theta = \sum_i p_i\,dq^i$</td>
+<td>Tautological $1$-form on $T^*Q$; $\omega = -d\theta$</td>
+</tr>
+<tr>
+<td>$F^*\omega = \omega$</td>
+<td>Symplectomorphism $F$; $\operatorname{Symp}(M,\omega)$ the group</td>
+</tr>
+<tr>
+<td>$X_f$, $\iota_{X_f}\omega = df$</td>
+<td>Hamiltonian vector field of $f$</td>
+</tr>
+<tr>
+<td>$\{f,g\} = \omega(X_f,X_g)$</td>
+<td>Poisson bracket of functions on a symplectic manifold</td>
+</tr>
+<tr>
+<td>$[X_f, X_g] = -X_{\{f,g\}}$</td>
+<td>Hamiltonian fields form a Lie algebra; sign convention</td>
+</tr>
+<tr>
+<td>$\mathfrak{X}_{\mathrm{symp}}(M)$</td>
+<td>Symplectic vector fields, $\mathcal{L}_X\omega = 0$; Lie algebra of $\operatorname{Symp}$</td>
+</tr>
+<tr>
+<td>Isotropic, coisotropic, Lagrangian</td>
+<td>$\omega\vert_L = 0$; $TL^{\perp}\subseteq TL$; isotropic of dimension $m$</td>
+</tr>
+<tr>
+<td>$\nu^*N$</td>
+<td>Conormal bundle of a submanifold; Lagrangian in $T^*Q$</td>
+</tr>
+<tr>
+<td>$J$, $\omega(JX,JY)=\omega(X,Y)$</td>
+<td>Compatible almost complex structure; $g_J(X,Y)=\omega(X,JY)$</td>
+</tr>
+<tr>
+<td>$\mu : M \to \mathfrak{g}^*$, $X^{\#} = X_{\mu_X}$</td>
+<td>Momentum map and fundamental vector field of a symplectic action</td>
+</tr>
+<tr>
+<td>$M/\!/G = \mu^{-1}(0)/G$</td>
+<td>Symplectic quotient; $\dim M - 2\dim G$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Vladimir I. Arnold and Alexander B. Givental, <em>Symplectic Geometry</em>, in <em>Dynamical Systems IV</em> (Springer, 2001), for the geometry of symplectic manifolds, Hamiltonian fields and the Darboux theorem.</li>
+<li>Dusa McDuff and Dietmar Salamon, <em>Introduction to Symplectic Topology</em> (Oxford University Press, 3rd ed. 2017), for symplectic manifolds, the Moser argument, compatible almost complex structures and Lagrangian submanifolds.</li>
+<li>Ana Cannas da Silva, <em>Lectures on Symplectic Geometry</em> (Springer, 2008), for a complete treatment of Darboux, Moser and the symplectic group of a manifold.</li>
+<li>Paulette Libermann and Charles-Michel Marle, <em>Symplectic Geometry and Analytical Mechanics</em> (Reidel, 1987), for the cotangent bundle, the tautological form and symplectic reduction.</li>
+<li>Victor Guillemin and Shlomo Sternberg, <em>Symplectic Techniques in Physics</em> (Cambridge University Press, 1984), for momentum maps, coadjoint orbits and the Marsden–Weinstein quotient.</li>
+<li>Jerrold Marsden and Tudor Ratiu, <em>Introduction to Mechanics and Symmetry</em> (Springer, 2nd ed. 1999), for the momentum map and the reduction theorem in detail.</li>
+<li>Jürgen Moser, "On the Volume Elements on a Manifold", <em>Transactions of the American Mathematical Society</em> 120 (1965), 286–294, for the isotopy argument that proves the Darboux theorem.</li>
+<li>John M. Lee, <em>Introduction to Smooth Manifolds</em> (Springer, 2nd ed. 2013), for manifolds, vector fields and the Lie bracket on which the article rests.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

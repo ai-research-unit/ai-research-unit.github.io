@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Brief History of Biquaternions in Physics — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-brief-history-of-biquaternions-in-physics"><strong>A Brief History of Biquaternions in Physics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the complexification of Hamilton's quaternions. In its complexified form it is older than the special theory of relativity and older by three quarters of a century than the quantum mechanics of spin; it is also the algebra in which the Pauli matrices, the two-component spinors, and the double cover of the Lorentz group are written. This article is a history of how $\mathbb{B}$ entered physics: how it was found, how it was used in electromagnetism, how it was published as a language for relativity and then displaced by vectors and tensors, and how it returned in the middle of the twentieth century.</p>
+<p>Two qualifications belong at the start.</p>
+<p>The first is scope. Most nineteenth-century physics that used "quaternions" used the <strong>real</strong> quaternions $\mathbb{H}$, not the biquaternions. The quaternion formulation of Maxwell's equations, the quaternionists' campaign, and the vector revolt all concern real quaternions and their vector parts. The <strong>biquaternion</strong> thread is narrower: it is the complexified algebra, and its principal physical use before 1950 is the formulation of special relativity by Conway and Silberstein. This article follows that narrower thread, keeping the real-quaternion context in view because the thread cannot be understood without it. A history that silently substituted the real quaternions for the biquaternions would be signing for more than the record contains.</p>
+<p>The second is what a history can show. The algebra $\mathbb{B}$ <em>contains</em> $M_2(\mathbb{C})$, and therefore contains, as a matter of algebra, the objects that quantum mechanics later used. That is a structural fact. It is not the same as a historical fact — that anyone <em>intended</em> a quantum-mechanical application, or was on the verge of one. The word "near-miss" that this subject attracts is a retrospective description; where it is used below it is marked as such. Dates and attributions follow the standard references, and the few items that could not be pinned down are flagged in the text and recorded in the companion note.</p>
+<h2 id="hamiltons-quaternions-and-their-complexification">Hamilton's Quaternions and Their Complexification</h2>
+<p>William Rowan Hamilton discovered the quaternions on 16 October 1843, while walking along the Royal Canal in Dublin. The multiplication rules he carved into Broom Bridge (then Brougham Bridge) were</p>
+<p>$$
+i^2 = j^2 = k^2 = ijk = -1 .
+$$</p>
+<p>These are Hamilton's own letters: here $i, j, k$ are the three quaternion units. The article's notation, in which those units are written $e_1, e_2, e_3$ and $i$ denotes the scalar imaginary, is set out below.</p>
+<p>Hamilton had spent years trying to multiply triples of numbers to represent points in space; the breakthrough was to give up triples for quadruples. He named the quadruple a <strong>quaternion</strong> and spent the rest of his life on it. The <em>Lectures on Quaternions</em> (1853) is the comprehensive treatise; the <em>Elements of Quaternions</em> appeared posthumously in 1866, edited by his son William Edwin Hamilton, with a later edition by Charles Jasper Joly (1899–1901). Olinde Rodrigues had published formulas equivalent in substance to quaternion multiplication in the composition of rotations in 1840, without the algebra; the composition law is accordingly shared, while the algebra is Hamilton's.</p>
+<p><strong>Why the coefficients had to become complex.</strong> Hamilton was studying the quaternion algebra and wanted to <strong>solve equations</strong> with it, and when he worked through the cases by degree he found that the algebra stops short.</p>
+<ul>
+<li><strong>Linear equations</strong>: solved, and within $\mathbb{H}$ itself. If $ax = b$ with $a \neq 0$, then $x = a^{-1}b$, and if $xa = b$ then $x = ba^{-1}$, each unique. The side on which $a$ stands matters — $e_1^{-1}e_2 = -e_3$ while $e_2e_1^{-1} = +e_3$ — but every nonzero quaternion is invertible, so a linear equation asked on a definite side always has its answer in $\mathbb{H}$.</li>
+<li><strong>Quadratic equations</strong>: no longer routine. There is no quadratic formula, and the solutions, when they are found, <strong>sometimes require complex coefficients</strong> — that is, complex quaternions rather than quaternions.</li>
+<li><strong>Higher degree</strong>: worse. The root sets cease to be finite. The cubic $x^{3} = 1$ has the root $1$ and a whole sphere of further roots $x = -\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\mathbf{u}$, one for each unit pure quaternion $\mathbf{u}$, so a degree-$n$ equation over $\mathbb{H}$ cannot be reduced to $n$ linear factors.</li>
+</ul>
+<p>The quadratic case fails at the first step of the classroom method. Completing the square requires</p>
+<p>$$
+\left(x + \frac{b}{2}\right)^{2} = x^{2} + b\,x + \frac{1}{2}\left(bx - xb\right) + \frac{b^{2}}{4},
+$$</p>
+<p>and the linear term disappears only if $x$ commutes with $b$, which is not the general case. With the commutator left standing there is no reduction to $y^{2} = \text{const}$, and hence no discriminant to compute with.</p>
+<p><strong>A basic example.</strong> The shortest way to see the obstruction is a quadratic with ordinary real quaternion coefficients:</p>
+<p>$$
+x^{2} + 2e_2\,x - 3 = 0 .
+$$</p>
+<p>Write $x = x_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ and separate the four components of the equation. The $e_1$- and $e_3$-components give $x_3 = -x_0 x_1$ and $x_1 = x_0 x_3$, hence $x_1 = x_3 = 0$; the $e_2$-component gives $x_0\,(x_2 + 1) = 0$, which leaves two branches.</p>
+<p><strong>First branch, $x_2 = -1$.</strong> The scalar component becomes $x_0^{2} = 2$, so $x_0 = \pm\sqrt{2}$ and</p>
+<p>$$
+x = \pm\sqrt{2} - e_2 ,
+$$</p>
+<p>two solutions in $\mathbb{H}$.</p>
+<p><strong>Second branch, $x_0 = 0$.</strong> The scalar component becomes</p>
+<p>$$
+x_2^{2} + 2x_2 + 3 = 0, \qquad \Delta = 4 - 12 = -8 < 0 ,
+$$</p>
+<p>which no real $x_2$ satisfies. The resolution is $x_2 = -1 \pm \sqrt{2}\,i$, so</p>
+<p>$$
+x = \left(-1 \pm \sqrt{2}\,i\right) e_2 ,
+$$</p>
+<p>two complex quaternions, not quaternions.</p>
+<p>Substitution confirms all four. A quadratic with real quaternion coefficients has produced four solutions, two in $\mathbb{H}$ and two outside it — and the second branch is where the coefficients leave the algebra. It leaves because a single <strong>scalar</strong> equation, $x_2^{2} + 2x_2 + 3 = 0$, has a negative discriminant, and solving it calls for a scalar square root of $-1$: a number that commutes with everything, so that the ordinary algebra of equations still applies. The quaternion units are roots of $-1$ in abundance, but they are not central, and $\mathbb{H}$ contains no central root of $-1$ at all, since the only quaternions commuting with every element are the real numbers. Nothing in the reduction is repaired by a quaternion unit; the repair is to let the coefficients themselves be complex.</p>
+<p>That the complexification is forced by this branch, rather than by a shortage of roots, is worth recording, since the point is often overstated. By the Eilenberg–Niven theorem a one-sided quaternion polynomial of positive degree always has a quaternion root, and the first branch above duly supplies two. What fails in $\mathbb{H}$ is the splitting: the quadratic has solutions galore but no factorisation into linear factors, and no scalar discriminant to separate them.</p>
+<p>This is the precise content of the remark that the quaternions were "not enough": they are enough to solve the equation in one branch, and not enough to solve it as an equation.</p>
+<p>The quaternions form a four-dimensional real division algebra. Making them complex produces the biquaternions: the four coefficients are allowed to be complex,</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
+$$</p>
+<p>with the quaternion units $e_0 = 1, e_1, e_2, e_3$ multiplying as in $\mathbb{H}$ and commuting with every complex scalar. Hamilton himself took this step and named the result: the <strong>biquaternion</strong> is the complex quaternion, and its fullest treatment in his own work is in the <em>Lectures on Quaternions</em> (1853). His motive was the algebraic one set out above: in the treatment of general quadratic equations with quaternion coefficients, the resolution called for complex coefficients. The word is his, and so is the surrounding vocabulary — he introduced <em>bivector</em>, <em>biconjugate</em>, <em>bitensor</em>, and <em>biversor</em> alongside it. Because the quaternion units were written $i, j, k$, Hamilton used the letter $h$ — not $i$ — for the square root of $-1$ in the coefficient field, to keep the two imaginary units apart, and Arthur W. Conway later followed the same convention. The companion articles write the quaternion units as $e_1, e_2, e_3$ and reserve $i$ for the scalar imaginary, which removes the clash that $h$ was introduced to avoid. The translation is</p>
+<p>$$
+e_0 \leftrightarrow 1, \qquad e_1 \leftrightarrow i, \qquad e_2 \leftrightarrow j, \qquad e_3 \leftrightarrow k, \qquad i \leftrightarrow h .
+$$</p>
+<p>The biquaternion algebra thus arrived with the quaternions themselves, within the first decade of their discovery. Nothing in its later physics was new algebra; what was new, repeatedly, was the recognition of where the algebra applied.</p>
+<p>A terminological caution is necessary, because the word "biquaternion" has not been used uniformly. The modern convention distinguishes the three tensor products of $\mathbb{H}$ with the three two-dimensional commutative real algebras: the <strong>biquaternions</strong> $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the <strong>split-biquaternions</strong> $\mathbb{D}\otimes_\mathbb{R}\mathbb{H}$ (with $\mathbb{D}$ the split-complex numbers), and the <strong>dual quaternions</strong> $\mathbb{N}\otimes_\mathbb{R}\mathbb{H}$ (with $\mathbb{N}$ the dual numbers). William Kingdon Clifford, who noted that Hamilton's biquaternions were a tensor product of two known algebras, proposed the split and dual variants in his "Preliminary Sketch of Biquaternions" (<em>Proceedings of the London Mathematical Society</em>, vol. 4, pp. 381–395; the volume is dated variously 1871 and 1873). In older texts the words are not always used in this sense, and a reader meeting "biquaternion" in a nineteenth-century source should check which algebra is meant. This article follows the modern convention: the biquaternions are $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.</p>
+<h2 id="the-algebra-in-the-notation-of-the-companion-articles">The Algebra, in the Notation of the Companion Articles</h2>
+<p>The algebra and its subspaces are established in the companion articles and are recalled here only in the form the history needs. The notation is inherited, not redefined.</p>
+<p>$\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four natural conjugations have as fixed-point sets the distinguished real subspaces used throughout the corpus: the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the complex scalars, the center of $\mathbb{B}$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real quaternions), the Hermitian subspace $\mathbb{M}_{+}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{M}_{-}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the norm form</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+$$</p>
+<p>whose indefinite signature on $\mathbb{M}_{-}$ arises algebraically from $i^2 = -1$ in the imaginary time coefficient $ict$. The null elements $N(\tilde{Q}) = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{M}_{-}$ they are the light cone.</p>
+<p>The single structural fact that organizes the whole subsequent history is the isomorphism</p>
+<p>$$
+\mathbb{B} \;\cong\; M_2(\mathbb{C}) ,
+$$</p>
+<p>realized by sending the quaternion units to $-i$ times the Pauli matrices, $e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the <strong>Pauli algebra</strong> — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the norm form is the determinant, $N(\tilde{Q}) = \det\Phi(\tilde{Q})$, and the unit-norm-form elements</p>
+<p>$$
+SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}
+$$</p>
+<p>are the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$, acting on $\mathbb{M}_{-}$ by the rotor conjugation</p>
+<p>$$
+\tilde{X} \;\longmapsto\; \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^{\dagger} .
+$$</p>
+<p>These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions <em>is</em> the algebra of the Pauli matrices; the group of unit biquaternions <em>is</em> the Lorentz double cover; the idempotents $\tilde{P}_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>). None of these identifications was known to Hamilton.</p>
+<h2 id="quaternions-in-electromagnetism-and-the-vector-revolt">Quaternions in Electromagnetism, and the Vector Revolt</h2>
+<p>The first substantial physics to use quaternions was electromagnetism. James Clerk Maxwell's <em>A Treatise on Electricity and Magnetism</em> (1873) employed quaternion notation for some of its vector operations, and in the decades after his death the quaternion calculus became a standard language for the field: topics now written with vectors — kinematics in space and Maxwell's equations among them — were described in quaternion terms. Peter Guthrie Tait, Maxwell's friend and the leading quaternionist after Hamilton's death, published an <em>Elementary Treatise on Quaternions</em> in 1867 (written with Hamilton's advice and published after Hamilton's death) and an <em>Introduction to Quaternions</em> with Philip Kelland in 1873. The quaternion product was attractive because the dot and cross products are cut from a single operation, and the quaternion operator $\nabla$ carried gradient, divergence, and curl together.</p>
+<p>The algebra's hold on physics did not last. From the mid-1880s, vector analysis — developed by Josiah Willard Gibbs and Oliver Heaviside — displaced the quaternions in physics and engineering. Heaviside's <em>Electromagnetic Theory</em> (1893) taught the field in vector form, and Gibbs's lectures, published as <em>Vector Analysis</em> by Edwin Bidwell Wilson (1901), gave the notation its textbook. The reasons were practical rather than algebraic: the vector calculus is notationally cleaner, it separates the dot and cross products instead of carrying the full quaternion product, and it suited the needs of electrical engineering and the emerging field theories. The transition was contested — the quaternionists, organized in a Quaternion Association (Alexander Macfarlane was its secretary from 1896, its president in 1909, and edited its <em>Bibliography of Quaternions</em> in 1904), argued the case for years — but the outcome was not close. Michael J. Crowe's <em>A History of Vector Analysis</em> (1967) is the standard account.</p>
+<p>This part of the story concerns real quaternions and their vector parts almost entirely. The biquaternions played little role in the electromagnetic debates; their physics appearance came later and was about a different subject.</p>
+<h2 id="the-biquaternion-formulation-of-relativity">The Biquaternion Formulation of Relativity</h2>
+<p>Special relativity is where the biquaternions came closest to becoming a standard physical language, and the closeness is structural before it is historical.</p>
+<p>The structural fact is recorded above: the unit-norm-form biquaternions are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, and they act on the four-dimensional real space $\mathbb{M}_{-}$ by rotor conjugation. A four-vector of relativistic physics is an element of $\mathbb{M}_{-}$; a Lorentz transformation is a unit biquaternion; the invariance of the interval is the invariance of the norm form under the action. The biquaternion algebra therefore contained the kinematics of special relativity as soon as the physics was written down — not because anyone looked for it there, but because the group of unit biquaternions had sat inside Hamilton's algebra since the 1840s.</p>
+<p>The historical record then shows that this formulation was published, not merely available. Arthur W. Conway applied biquaternion algebra to special relativity, publishing an article in 1911 and in 1912 asserting priority over Ludwik Silberstein, who had independently applied biquaternions to relativity; Conway's claim was later backed by George Temple, and in 1915 Conway published a 43-page tract, <em>Relativity</em>, in Edinburgh. Silberstein's treatment appeared as "Quaternionic form of relativity" (<em>Philosophical Magazine</em> <strong>23</strong> (1912) 790–809), with a second memoir in 1913, and it became a textbook: <em>The Theory of Relativity</em> (Macmillan, 1914; second edition, 1924), which used biquaternions throughout. Silberstein had also introduced, in 1907, the complex three-vector $\mathbf{E} + ic\mathbf{B}$ of the electromagnetic field — now called the <strong>Riemann–Silberstein vector</strong>. The corpus's Maxwell article writes the same object, up to a normalisation, as $i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$. (The attribution of the name's "Riemann" to Bernhard Riemann I have not verified; the 1907 introduction is Silberstein's. This is flagged in the companion.)</p>
+<p>Around the same time, Alexander Macfarlane developed his "space analysis," an adaptation of quaternions to physics; the historical record notes that his first publication on it preceded Minkowski's presentation of spacetime by seventeen years. Macfarlane's hyperbolic-quaternion program was not the biquaternion formulation, but it belongs to the same moment in which quaternion methods were being stretched toward the geometry of spacetime.</p>
+<p>The displacement, when it came, was by Minkowski's four-dimensional tensor formulation (1908) and the four-vector calculus that grew from it. The tensor formalism was explicitly covariant, it generalized without alteration to curved spacetime, and it separated vectors, covectors, and tensors in a way the quaternion product did not. It is worth stating plainly, because "near-miss" suggests otherwise: the biquaternion relativity of Conway and Silberstein was a published, textbook-level formulation that lost a competition of notations, not a possibility that was never realized.</p>
+<h2 id="the-later-recognition-biquaternions-and-the-quantum-algebra">The Later Recognition: Biquaternions and the Quantum Algebra</h2>
+<p>The connection of $\mathbb{B}$ to quantum mechanics is the sharpest structural fact in this history and the weakest historical one.</p>
+<p>The structural fact is the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$: the biquaternion algebra is the algebra generated by the Pauli matrices, the algebra of operators on a two-state system. In the language of the companion articles, the Hermitian subspace $\mathbb{M}_{+}$ carries the observables, its idempotents the pure states, and the trace formula is the Born rule. Nothing in the algebra of a qubit lies outside $\mathbb{B}$.</p>
+<p>The historical chronology, however, runs the other way, and by a wide margin. Élie Cartan introduced spinors in geometry in 1913, without physics. Wolfgang Pauli introduced the three spin matrices for the electron in 1927 ("Zur Quantenmechanik des magnetischen Elektrons," <em>Zeitschrift für Physik</em> <strong>43</strong> (1927) 601–623), and Paul Dirac gave the relativistic electron equation in 1928. In 1929 the Dirac equation was reformulated in tensor-analytic and covariant terms by Cornelius Lanczos ("Die tensoranalytischen Beziehungen der Diracschen Gleichung" and its companion, <em>Zeitschrift für Physik</em> <strong>57</strong> (1929) 447–473 and 474–483); Lanczos's doctoral dissertation (1921), <em>The Relation of Maxwell's Aether Equations to Functional Theory</em>, had already rewritten Maxwell's equations in quaternion terms and applied a relativistic variational principle to them. In the same year, Hermann Weyl and Bartel van der Waerden brought the two-component spinor into physics. The algebra these developments needed had existed since Hamilton; the developments did not derive from it, and the standard history of quantum mechanics does not run through the biquaternion literature.</p>
+<p>Even the later quaternion work is a separate line: Conway returned to quaternions for quantum mechanics only at the end of his life, in work published in 1948 and cited in a 1950 thesis by Joachim Lambek, and the recognition that the biquaternion algebra and the Pauli algebra are the same became standard in the geometric-algebra literature of the 1960s. The honest statement is two-part: the algebra contains the quantum structures, and no one in the biquaternion tradition is documented as having used it to anticipate them. Only the second kind of connection would justify the word "anticipation."</p>
+<h2 id="why-the-biquaternions-were-displaced">Why the Biquaternions Were Displaced</h2>
+<p>The biquaternions were not abandoned because the algebra failed. They were displaced by notations better suited to the practice of physics, for separable reasons.</p>
+<p><strong>Vector analysis.</strong> The vector calculus of Gibbs and Heaviside was easier to teach, easier to compute with, and adequate for the field theories of the period. It took the parts of the quaternion product that physics used — the dot and cross products — and discarded the rest, and it won on usability.</p>
+<p><strong>Tensor calculus and differential geometry.</strong> Minkowski's four-tensor formulation of relativity (1908) and the tensor calculus of Ricci and Levi-Civita made covariance manifest, distinguished vectors from covectors and one-forms, and generalized directly to the curved spacetime of general relativity. The quaternion product has no corresponding tensor apparatus; when physics moved to differential geometry, the quaternion notation had no place to stand.</p>
+<p><strong>The $ict$ convention and its later abandonment.</strong> The complex structure that the biquaternion formulation makes explicit appeared in mainstream practice as the $ict$ convention — the imaginary time coordinate that makes the Minkowski interval look Euclidean. The companion article <em>Why Complexify Spacetime?</em> records why that convention was given up: it is tied to a global inertial frame, it sits awkwardly with spinors and with curved spacetime, and in quantum field theory the Wick rotation is better understood as a change of causal structure than as a change of coordinates. The abandonment of $ict$ was not an abandonment of the complex structure, but it removed the one place where the complexification was visible in ordinary practice.</p>
+<p><strong>Community and curriculum.</strong> The quaternionists' program was a school with a doctrine; the vectorists' program was a tool set with users. Such a contest is settled by adoption, not by proof, and adoption followed the textbooks and the engineering curriculum.</p>
+<p>The through-line is that the biquaternions lost on notation and practice, not on content — which is exactly what makes their return possible.</p>
+<h2 id="the-return">The Return</h2>
+<p>The biquaternions and the closely related Clifford algebras returned to physics in the second half of the twentieth century, through several independent routes.</p>
+<p>Feza Gürsey's work on conformal-invariant spinor and quaternion equations in the 1950s reopened the quaternion formulation of the Dirac field ("On a conform-invariant spinor wave equation," <em>Il Nuovo Cimento</em> <strong>3</strong> (1956)). In 1962, David Finkelstein, Josef Maria Jauch, Samuel Schiminovich, and David Speiser gave a systematic "Foundations of Quaternion Quantum Mechanics" (<em>Journal of Mathematical Physics</em> <strong>3</strong> (1962) 207–220), the first sustained attempt to build quantum theory on a quaternionic Hilbert space. In 1966 David Hestenes's <em>Space-Time Algebra</em> developed the Clifford algebra $Cl_{1,3}$ as the natural language of relativistic physics; the real Pauli algebra $Cl_{3,0}(\mathbb{R})$ is the biquaternion algebra in real form, and is used in physics under the name "algebra of physical space." Stephen Adler's <em>Quaternionic Quantum Mechanics and Quantum Fields</em> (Oxford, 1995) collected the mid-century program and examined its physical consequences.</p>
+<p>A separate route is twistor theory: Roger Penrose's twistors live on complexified Minkowski space, with real Minkowski space as a slice, so the complexification that the biquaternion formulation makes algebraic is, in twistor theory, the fundamental arena. Modern biquaternionic treatments of the classical field equations — Silberstein's complex-vector Maxwell theory, the algebrodynamics of Vladimir Kassandrov and his collaborators, and the review work of Adrian Gsponer and Jean-Pierre Hurni — continue to use the algebra directly.</p>
+<p>The framework developed in this corpus belongs to this return. The corpus reads the two subspaces $\mathbb{M}_{-}$ and $\mathbb{M}_{+}$ as a material sector and an informational sector, with the rotor conjugation as the coupling between them. That reading is a <strong>proposal</strong>: it is enabled by the algebra, and the algebra is old, but the historical record does not contain the proposal and nothing in the history vindicates it. The history establishes the existence and richness of the algebra, not the truth of the interpretation.</p>
+<h2 id="what-the-history-does-and-does-not-show">What the History Does and Does Not Show</h2>
+<p>The record shows that the algebra was Hamilton's and was named by him; that its structural identifications with the Pauli algebra, the Lorentz double cover, and the qubit operator algebra are theorems about $\mathbb{B}$; that biquaternions were used for special relativity by Conway and Silberstein and then displaced by tensor and vector notation; and that the algebra returned in the mid-twentieth century through quaternionic quantum mechanics, geometric algebra, and twistor theory.</p>
+<p>The record does not show that the biquaternion algebra is nature's, that any near-miss would have changed the physics, or that the biquaternion tradition anticipated quantum mechanics. The needed structures were in the algebra; no documented path runs from Hamilton's or Conway's work to Pauli's or Dirac's, and the connection is a structural identity recognized in retrospect. Nor does the record support the corpus's material/informational reading, which is a proposal placed on an old algebra.</p>
+<p>The distinction on which this turns is between an algebra <strong>containing</strong> a structure and a person <strong>using</strong> it. Containment is a theorem of the 1840s; use is an event of the 1910s or the 1920s. "Near-miss" conflates the two, and this article uses it only where the documented record — the published relativity of Conway and Silberstein — justifies it.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternions are the complex quaternions, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, introduced and named by Hamilton and treated at length in his <em>Lectures on Quaternions</em> (1853). The motive for the complexification was algebraic: in $\mathbb{H}$ a quadratic equation has no quadratic formula, its solution set need not be finite, and its resolution can call for a scalar square root of $-1$ — that is, for complex coefficients. As an algebra the biquaternions are $M_2(\mathbb{C})$, equivalently the Pauli algebra $Cl_{3,0}(\mathbb{R})$ and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Their unit-norm-form elements are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, acting on the material sector $\mathbb{M}_{-}$ by rotor conjugation; the full algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the operator algebra of a two-state system, of which $\mathbb{M}_{+}$ is the Hermitian subspace.</p>
+<p>In physics, real quaternions first entered through Maxwell's electromagnetism and Tait's advocacy, and were displaced from the mid-1880s by the vector analysis of Gibbs and Heaviside. Biquaternions were applied to special relativity by Conway and by Silberstein in the 1910s, most fully in Silberstein's <em>The Theory of Relativity</em> (1914), and were displaced by Minkowski's tensor formalism. The algebra returned in the mid-twentieth century through quaternionic quantum mechanics, geometric algebra, twistor theory, and modern biquaternionic field theory.</p>
+<p>The history shows that the algebra is old, rich, and structurally sufficient for relativity and for the qubit. It does not show that the algebra is nature's, nor that the biquaternion tradition anticipated the physics that later used it. The gap between containing a structure and having used it is the honest content of this history.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra (complex quaternions)</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$ (Hamilton's $h$)</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$</td>
+<td>The four conjugations</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>Complex subspace (complex scalars; center of $\mathbb{B}$)</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Quaternion subspace (real quaternions; norm $(4,0)$)</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+}$</td>
+<td>Hermitian subspace (informational sector; norm $(1,3)$)</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{-}$</td>
+<td>Anti-Hermitian subspace (material sector; norm $(3,1)$)</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>Norm form (zero divisors where $N=0$)</td>
+</tr>
+<tr>
+<td>$\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$</td>
+<td>Pauli algebra; $\Phi(e_k) = -i\sigma_k$</td>
+</tr>
+<tr>
+<td>$SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}$</td>
+<td>Unit-norm-form biquaternions; Lorentz double cover</td>
+</tr>
+<tr>
+<td>$\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^{\dagger}$</td>
+<td>Rotor conjugation on $\mathbb{M}_{-}$</td>
+</tr>
+<tr>
+<td>$\tilde{P}_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$</td>
+<td>Idempotent (pure state of $\mathbb{M}_{+}$)</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>Trace formula (Born rule)</td>
+</tr>
+<tr>
+<td>$\mathbf{E} + ic\mathbf{B}$</td>
+<td>Riemann–Silberstein vector (Silberstein, 1907)</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Real quaternion algebra (Hamilton 1843)</td>
+</tr>
+<tr>
+<td>$ax = b$, $x = a^{-1}b$</td>
+<td>Linear equation in $\mathbb{H}$; the side on which $a$ stands matters</td>
+</tr>
+<tr>
+<td>$x^{2} + bx + c = 0$</td>
+<td>Quaternion quadratic: no completing the square, no discriminant</td>
+</tr>
+<tr>
+<td>$x^{2} + 2e_2x - 3 = 0$</td>
+<td>Worked quadratic: roots $\pm\sqrt{2} - e_2$ in $\mathbb{H}$, and $(-1 \pm \sqrt{2}\,i)e_2$ in $\mathbb{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original treatment of quaternions and biquaternions, including the algebraic motive for the complex coefficients.</li>
+<li>Ivan Niven, "Equations in Quaternions," <em>American Mathematical Monthly</em> <strong>48</strong> (1941) 654–661, for the solution sets of quaternion equations, which may be a point, a circle, or a sphere.</li>
+<li>Samuel Eilenberg and Ivan Niven, "The Fundamental Theorem of Algebra for Quaternions," <em>Bulletin of the American Mathematical Society</em> <strong>50</strong> (1944) 246–248, for the existence of a quaternion root of a one-sided polynomial of positive degree.</li>
+<li>Peter Guthrie Tait, <em>An Elementary Treatise on Quaternions</em> (1867), for the leading nineteenth-century exposition after Hamilton.</li>
+<li>James Clerk Maxwell, <em>A Treatise on Electricity and Magnetism</em> (1873), for the quaternion notation in early electromagnetism.</li>
+<li>Michael J. Crowe, <em>A History of Vector Analysis</em> (University of Notre Dame Press, 1967), for the displacement of quaternions by vectors.</li>
+<li>Ludwik Silberstein, <em>The Theory of Relativity</em> (Macmillan, 1914), for the biquaternion formulation of special relativity.</li>
+<li>Élie Cartan, <em>Leçons sur la théorie des spineurs</em> (Hermann, 1938), for the spinors Cartan introduced in 1913.</li>
+<li>Cornelius Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," <em>Zeitschrift für Physik</em> <strong>57</strong> (1929) 447–473, for the early reformulation of the Dirac equation.</li>
+<li>David Finkelstein, Josef Maria Jauch, Samuel Schiminovich, and David Speiser, "Foundations of Quaternion Quantum Mechanics," <em>Journal of Mathematical Physics</em> <strong>3</strong> (1962) 207–220.</li>
+<li>David Hestenes, <em>Space-Time Algebra</em> (Gordon and Breach, 1966; reissued Springer, 2015), for the Clifford-algebra formulation of relativistic physics.</li>
+<li>Stephen L. Adler, <em>Quaternionic Quantum Mechanics and Quantum Fields</em> (Oxford University Press, 1995).</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2001), for the identification of the biquaternion algebra with the Pauli algebra and the Lorentz double cover.</li>
+<li>Roger Penrose, <em>The Road to Reality</em> (Knopf, 2004), for complexified spacetime and twistor theory.</li>
+<li>Vladimir V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (later published in <em>Gravitation and Cosmology</em>), for a modern biquaternionic approach.</li>
+<li>Adrian Gsponer and Jean-Pierre Hurni, "Cornelius Lanczos's Derivation of the Usual Action Integral of Classical Electrodynamics," <em>Foundations of Physics</em> <strong>35</strong> (2005), for Lanczos's quaternion electrodynamics.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

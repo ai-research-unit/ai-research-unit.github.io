@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grassmannians and Stiefel Manifolds — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="grassmannians-and-stiefel-manifolds"><strong>Grassmannians and Stiefel Manifolds</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>Grassmannian</strong> $\mathrm{Gr}_k(\mathbb{R}^n)$ is the set of $k$-dimensional linear subspaces of $\mathbb{R}^n$, and the <strong>Stiefel manifold</strong> $V_k(\mathbb{R}^n)$ is the set of orthonormal $k$-frames in $\mathbb{R}^n$. Both are smooth manifolds, both are compact, and the second is a principal bundle over the first with structure group $O(k)$: a frame determines the subspace it spans, and the frames spanning a fixed subspace are exactly the orthonormal bases of that subspace, a copy of $O(k)$. The pair is the model example of a homogeneous space and a principal bundle, the simplest nontrivial family of Riemannian symmetric spaces after the spheres, and the ambient space of the Gauss map of a submanifold and of the classifying spaces of vector bundles.</p>
+<p>Grassmannians appear whenever a linear-algebraic object is allowed to vary: a subspace of a vector space, a projection, a line in projective space, a plane in space, a linear system of divisors. The real projective space $\mathbb{RP}^{n-1}$ is the Grassmannian $\mathrm{Gr}_1(\mathbb{R}^n)$ of lines, the sphere $S^{n-1}$ is the Stiefel manifold $V_1(\mathbb{R}^n)$ of unit vectors, and the orthogonal group $O(n)$ is $V_n(\mathbb{R}^n)$. The general linear group acts transitively on the Grassmannians, with stabiliser a parabolic subgroup, so the Grassmannian is the homogeneous space $O(n)/(O(k)\times O(n-k))$ — one of the two great families of symmetric spaces, the one of compact type and rank $\min(k, n-k)$.</p>
+<p>This article defines both manifolds by three routes — as sets of subspaces, as sets of projections, and as quotients of groups — and shows the three descriptions agree. It proves that they are compact smooth manifolds, computes their dimensions, gives the charts from the Stiefel coordinates, identifies the tautological and universal bundles and the principal bundle $V_k(\mathbb{R}^n) \to \mathrm{Gr}_k(\mathbb{R}^n)$, and constructs the natural Riemannian metric as the one induced from the ambient Euclidean space, with its geodesics, curvature and symmetric-space structure. It treats the complex and quaternionic analogues; the Plücker embedding of the Grassmannian into a projective space, whose image is cut out by the Plücker relations; the Schubert cells, which give a cell decomposition and hence the cohomology; the Euler characteristic; and the relation of the Grassmannians to the classifying space $BO(k)$ and to the Gauss map of a submanifold.</p>
+<p>The article assumes <em>Smooth Manifolds and Differential Geometry</em> for manifolds, submanifolds and group actions on manifolds; <em>Fibre Bundles, Connections and Curvature</em> for principal bundles, associated bundles, classifying spaces and the tautological bundle; <em>Riemannian Geometry</em> and <em>Curvature and Geodesics</em> for the metric, geodesics and curvature; <em>Euclidean Geometry</em>, <em>Spherical Geometry</em> and <em>Hyperbolic Geometry</em> for the model geometries that the low-dimensional cases are; <em>Groups</em>, <em>Group Actions and Structure</em> and <em>Matrix Groups and Classical Groups</em> for the group theory; <em>The Exterior Algebra</em> and <em>The Determinant and Alternating Forms</em> for the exterior algebra and the Plücker coordinates; and <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em> for the correspondence between the number systems $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and the division algebras' Grassmannians. The Schubert calculus, the intersection theory of the Grassmannian, belongs to the algebraic side of the corpus and is cited as standard; the homology theory is quoted from algebraic topology. The article is the prerequisite. No physics is invoked.</p>
+<h2 id="the-grassmannian-as-a-manifold">The Grassmannian as a Manifold</h2>
+<h3 id="the-set-of-subspaces">The Set of Subspaces</h3>
+<p><strong>Definition.</strong> Let $V$ be an $n$-dimensional real vector space with an inner product. For $0 \leq k \leq n$ the <strong>Grassmannian</strong> is the set</p>
+<p>$$
+\mathrm{Gr}_k(V) = \{W \subseteq V : W \text{ a linear subspace of dimension } k\},
+$$</p>
+<p>and $\mathrm{Gr}_k(\mathbb{R}^n)$ is written for the case of $V = \mathbb{R}^n$ with the standard inner product.</p>
+<p><strong>Example.</strong> $\mathrm{Gr}_0(\mathbb{R}^n)$ and $\mathrm{Gr}_n(\mathbb{R}^n)$ are single points; $\mathrm{Gr}_1(\mathbb{R}^n) = \mathbb{RP}^{n-1}$ is the real projective space of <em>Smooth Manifolds and Differential Geometry</em>; $\mathrm{Gr}_{n-1}(\mathbb{R}^n) = \mathbb{RP}^{n-1}$ again, by the duality $W \mapsto W^\perp$; and $\mathrm{Gr}_2(\mathbb{R}^3)$ is the set of lines through the origin in $\mathbb{R}^3$, hence also $\mathbb{RP}^2$. The <strong>duality</strong> $\mathrm{Gr}_k(V) \to \mathrm{Gr}_{n-k}(V)$, $W \mapsto W^\perp$, is a diffeomorphism.</p>
+<p><strong>Definition.</strong> For $V = \mathbb{R}^n$ with the standard inner product, a <strong>projection</strong> is an endomorphism $P \in \operatorname{End}(\mathbb{R}^n)$ with $P^2 = P$ and $P^T = P$, that is, an orthogonal projection. The <strong>rank</strong> of $P$ is the dimension of its image.</p>
+<p><strong>Theorem.</strong> The map $W \mapsto P_W$, the orthogonal projection onto $W$, is a bijection from $\mathrm{Gr}_k(\mathbb{R}^n)$ onto the set</p>
+<p>$$
+\{P \in M_n(\mathbb{R}) : P^2 = P,\ P^T = P,\ \operatorname{rank} P = k\}.
+$$</p>
+<p><strong>Proof.</strong> An orthogonal projection has image $W$ of rank $k$, and $W$ is recovered from $P_W$ as its image; conversely a symmetric idempotent of rank $k$ is the orthogonal projection onto its image. The two constructions are inverse. $\square$</p>
+<h3 id="charts-and-the-manifold-structure">Charts and the Manifold Structure</h3>
+<p><strong>Theorem.</strong> The Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n)$ is a compact smooth manifold of dimension $k(n-k)$.</p>
+<p><strong>Proof sketch.</strong> For a partition of $\{1, \ldots, n\}$ into a set $I$ of size $k$ and its complement $J$, let $U_I$ be the set of subspaces $W$ such that the projection $\mathbb{R}^n \to \mathbb{R}^I$ restricts to an isomorphism $W \to \mathbb{R}^I$. Equivalently, $W$ is the graph of a unique linear map $A : \mathbb{R}^I \to \mathbb{R}^J$ given by the matrix with entries $A_{ji}$ such that the columns $\binom{e_i}{A_{\cdot i}}$ span $W$. The assignment $W \mapsto A$ is a bijection $U_I \to M_{J,I}(\mathbb{R}) \cong \mathbb{R}^{k(n-k)}$, and the transition maps between two charts are smooth rational functions of the matrices, so the $U_I$ form a smooth atlas. Compactness is the compactness of the image under the projections: the map $W \mapsto P_W$ has image closed and bounded in the finite-dimensional space $M_n(\mathbb{R})$. $\square$</p>
+<p><strong>Definition.</strong> The coordinates $A$ above are the <strong>Stiefel coordinates</strong> of $W$ in the chart $U_I$, and the chart is the <strong>big cell</strong> when $I = \{1, \ldots, k\}$. The Grassmannian is covered by the $\binom{n}{k}$ charts $U_I$, one for each $k$-element subset of $\{1, \ldots, n\}$.</p>
+<p><strong>Corollary.</strong> $\dim \mathbb{RP}^{n-1} = n - 1$, and $\dim \mathrm{Gr}_2(\mathbb{R}^4) = 4$; in general the dimension $k(n-k)$ is the number of independent entries of the matrix of a projection of rank $k$.</p>
+<h2 id="the-stiefel-manifold">The Stiefel Manifold</h2>
+<h3 id="frames">Frames</h3>
+<p><strong>Definition.</strong> The <strong>Stiefel manifold</strong> $V_k(\mathbb{R}^n)$ is the set of ordered orthonormal $k$-tuples $(v_1, \ldots, v_k)$ of vectors in $\mathbb{R}^n$, that is, the set of matrices $X \in M_{n,k}(\mathbb{R})$ with $X^TX = I_k$. Equivalently, $V_k(\mathbb{R}^n)$ is the set of linear isometries $\mathbb{R}^k \hookrightarrow \mathbb{R}^n$.</p>
+<p><strong>Example.</strong> $V_1(\mathbb{R}^n) = S^{n-1}$; $V_n(\mathbb{R}^n) = O(n)$; $V_2(\mathbb{R}^3)$ is the set of ordered orthonormal pairs in $\mathbb{R}^3$, a three-dimensional manifold.</p>
+<p><strong>Theorem.</strong> The Stiefel manifold $V_k(\mathbb{R}^n)$ is a compact smooth manifold of dimension</p>
+<p>$$
+\dim V_k(\mathbb{R}^n) = nk - \frac{k(k+1)}{2}.
+$$</p>
+<p><strong>Proof.</strong> The map $F : M_{n,k}(\mathbb{R}) \to \operatorname{Sym}_k(\mathbb{R})$, $F(X) = X^TX - I_k$, has $V_k = F^{-1}(0)$. Its differential at $X$ is $dF_X(H) = X^TH + H^TX$; this is surjective whenever $X^TX = I_k$, because for a symmetric $S$ one takes $H = \frac{1}{2}XS$, giving $X^TH + H^TX = \frac{1}{2}S + \frac{1}{2}S = S$. Hence $0$ is a regular value and $V_k = F^{-1}(0)$ is a submanifold of dimension $nk - \dim\operatorname{Sym}_k = nk - k(k+1)/2$, by the regular value theorem of <em>Smooth Manifolds and Differential Geometry</em>. It is closed and bounded in $M_{n,k}$, hence compact. $\square$</p>
+<p><strong>Corollary.</strong> $\dim V_1(\mathbb{R}^n) = n - 1$, recovering the sphere $S^{n-1}$; $\dim V_n(\mathbb{R}^n) = n^2 - n(n+1)/2 = n(n-1)/2$, recovering $\dim O(n)$; $\dim V_2(\mathbb{R}^3) = 6 - 3 = 3$.</p>
+<h3 id="the-frame-bundle">The Frame Bundle</h3>
+<p><strong>Theorem.</strong> The map</p>
+<p>$$
+\pi : V_k(\mathbb{R}^n) \longrightarrow \mathrm{Gr}_k(\mathbb{R}^n), \qquad \pi(v_1, \ldots, v_k) = \operatorname{span}(v_1, \ldots, v_k),
+$$</p>
+<p>is a smooth surjective submersion whose fibre over $W$ is the set of orthonormal bases of $W$, in bijection with $O(k)$. It is a principal $O(k)$-bundle, the <strong>Stiefel bundle</strong>, with the action of $O(k)$ on a frame by right multiplication; the base is the Grassmannian and the total space the Stiefel manifold.</p>
+<p><strong>Proof sketch.</strong> Surjectivity is the existence of an orthonormal basis; the fibre is $O(k)$ by the definition of orthonormal basis; local trivialisations are obtained from a local section of $\pi$ constructed by the Gram–Schmidt process applied to the columns of a projection. The bundle theory is that of <em>Fibre Bundles, Connections and Curvature</em>. $\square$</p>
+<p><strong>Corollary (dimensions).</strong> The dimension count is consistent:</p>
+<p>$$
+\dim V_k(\mathbb{R}^n) = \dim \mathrm{Gr}_k(\mathbb{R}^n) + \dim O(k) = k(n-k) + \frac{k(k-1)}{2} = nk - \frac{k(k+1)}{2}.
+$$</p>
+<p><strong>Definition.</strong> The <strong>tautological bundle</strong> $\gamma_k \to \mathrm{Gr}_k(\mathbb{R}^n)$ has fibre over $W$ the subspace $W$ itself, with total space</p>
+<p>$$
+E(\gamma_k) = \{(W, v) : W \in \mathrm{Gr}_k(\mathbb{R}^n),\ v \in W\} \subseteq \mathrm{Gr}_k(\mathbb{R}^n) \times \mathbb{R}^n .
+$$</p>
+<p>The <strong>orthogonal complement bundle</strong> $\gamma_k^\perp$ has fibre $W^\perp$. Both are smooth vector bundles of rank $k$ and $n-k$, associated to the Stiefel bundle by the standard representation of $O(k)$ and its complement.</p>
+<p><strong>Proposition.</strong> The tangent bundle of the Grassmannian is the bundle</p>
+<p>$$
+T\mathrm{Gr}_k(\mathbb{R}^n) \cong \operatorname{Hom}(\gamma_k, \gamma_k^\perp),
+$$</p>
+<p>whose fibre at $W$ is the space of linear maps $W \to W^\perp$, of dimension $k(n-k)$.</p>
+<p><strong>Proof sketch.</strong> A curve of subspaces through $W$ has derivative a linear map $W \to \mathbb{R}^n/W \cong W^\perp$; the identification of the tangent space with the graph of such a map uses the projection chart. $\square$</p>
+<h2 id="the-natural-metric-and-its-geometry">The Natural Metric and Its Geometry</h2>
+<h3 id="the-riemannian-metric">The Riemannian Metric</h3>
+<p><strong>Definition.</strong> The <strong>standard metric</strong> on $\mathrm{Gr}_k(\mathbb{R}^n)$ is induced by the map $W \mapsto P_W$ into the Euclidean space $M_n(\mathbb{R})$ with the Hilbert–Schmidt inner product $\langle A, B\rangle = \operatorname{tr}(A^TB)$; equivalently, for tangent vectors $X, Y \in \operatorname{Hom}(W, W^\perp)$ at $W$, the metric is $g_W(X, Y) = \operatorname{tr}(X^TY)$.</p>
+<p><strong>Theorem.</strong> The standard metric makes $\mathrm{Gr}_k(\mathbb{R}^n)$ a Riemannian manifold of nonnegative sectional curvature. Its geodesics are the images of the one-parameter subgroups $\exp(tX)$ of $O(n)$ acting on $W$, that is,</p>
+<p>$$
+\gamma(t) = \exp(tX)\,W, \qquad X \in \mathfrak{so}(n),
+$$</p>
+<p>and they are closed, since $O(n)$ is compact and the exponential of $\mathfrak{so}(n)$ is periodic.</p>
+<p><strong>Proof sketch.</strong> The embedding $W \mapsto P_W$ is equivariant for the action of $O(n)$ by conjugation and is isometric for the standard metrics, so the metric is $O(n)$-invariant; an $O(n)$-invariant metric on a homogeneous space has the geodesics given by the one-parameter subgroups through the identity, and the compactness of $O(n)$ makes them closed. $\square$</p>
+<h3 id="the-symmetric-space-structure">The Symmetric Space Structure</h3>
+<p><strong>Theorem.</strong> The Grassmannian is the homogeneous space</p>
+<p>$$
+\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k) \times O(n-k)),
+$$</p>
+<p>and, in the oriented case, $SO(n)/(SO(k) \times SO(n-k))$; the action of $O(n)$ is transitive and the stabiliser of $W_0 = \mathbb{R}^k \times \{0\}$ is $O(k) \times O(n-k)$, acting on $W_0$ and on its orthogonal complement.</p>
+<p><strong>Proof.</strong> The group $O(n)$ acts on subspaces preserving dimension, on the complement, $W \mapsto (AW)$. It is transitive: any $W$ has an orthonormal basis completed to a basis of $\mathbb{R}^n$, giving an orthogonal matrix carrying $W_0$ to $W$. The stabiliser of $W_0$ preserves $W_0$ and its orthogonal complement, hence is $O(k) \times O(n-k)$. $\square$</p>
+<p><strong>Theorem (symmetric space).</strong> The Grassmannian is a Riemannian symmetric space: for each $W$ the <strong>geodesic symmetry</strong> $\sigma_W$ given by reflection in $W$, that is $\sigma_W(v) = v$ for $v \in W$ and $\sigma_W(v) = -v$ for $v \in W^\perp$, is an involutive isometry with isolated fixed point $W$; and $\sigma_W$ reverses every geodesic through $W$.</p>
+<p><strong>Proof.</strong> The reflection $\sigma_W = P_W - P_{W^\perp}$ is an orthogonal transformation, hence an isometry preserving the Grassmannian and acting on the tangent space $T_W\mathrm{Gr} = \operatorname{Hom}(W, W^\perp)$ by $X \mapsto -X$, so its differential at $W$ is $-\mathrm{id}$; an isometry with differential $-\mathrm{id}$ at a fixed point reverses every geodesic through it, which is the defining property of a symmetric space. $\square$</p>
+<p><strong>Corollary (rank and isotropy).</strong> The rank of $\mathrm{Gr}_k(\mathbb{R}^n)$ as a symmetric space is $\min(k, n-k)$, the dimension of a maximal flat totally geodesic submanifold. The space is of <strong>compact type</strong>: the group $O(n)$ is compact, the sectional curvature is nonnegative, and the space has positive curvature.</p>
+<p><strong>Definition.</strong> A maximal flat in $\mathrm{Gr}_k(\mathbb{R}^n)$ is obtained by choosing a decomposition $\mathbb{R}^n = \mathbb{R}^{\min(k,n-k)} \oplus \mathbb{R}^{\min(k,n-k)} \oplus \mathbb{R}^{\text{rest}}$ into mutually orthogonal pieces of the indicated dimensions and varying the graph of a diagonal map between the first two.</p>
+<p><strong>Proof sketch.</strong> The stabiliser $O(k)\times O(n-k)$ acts on the tangent space, and the maximal abelian subalgebra of its action is diagonal of size $\min(k, n-k)$; the corresponding flat is totally geodesic since its tangent directions close under the bracket. $\square$</p>
+<h3 id="curvature">Curvature</h3>
+<p><strong>Theorem.</strong> For an orthonormal pair $X, Y$ of tangent vectors at $W$, the sectional curvature of the standard metric is</p>
+<p>$$
+K(X \wedge Y) = \| [X, Y]\|^2 \geq 0,
+$$</p>
+<p>where the bracket is that of $\mathfrak{so}(n)$, identified with $\bigwedge^2\mathbb{R}^n$, and the norm is the invariant norm (the formula is stated for the normalisation in which the metric is that of the embedding); in particular the curvature of $\mathrm{Gr}_k(\mathbb{R}^n)$ is nonnegative and it vanishes exactly on the two-planes tangent to a maximal flat.</p>
+<p><strong>Proof sketch.</strong> The formula is the general formula $K(X,Y) = \|[X,Y]\|^2$ for the curvature of a symmetric space $G/H$ of compact type with an $\operatorname{Ad}(H)$-invariant metric, applied to $G = O(n)$, $H = O(k)\times O(n-k)$ and the inner product on the complement of $\mathfrak{h}$ in $\mathfrak{so}(n)$; the vanishing of the bracket is exactly the commuting condition that defines a flat, and the nonnegativity is the compact type. $\square$</p>
+<p><strong>Example (the real projective space).</strong> For $k = 1$ the Grassmannian is $\mathbb{RP}^{n-1} = O(n)/(O(1)\times O(n-1)) = S^{n-1}/\{\pm 1\}$, of rank one and constant positive sectional curvature: the map $W \mapsto P_W$ sends a unit vector $v$ to $vv^T$ in the unit sphere of $\operatorname{Sym}_n(\mathbb{R})$, and the differential on a unit normal direction $w \perp v$ has squared norm $2$, so the induced metric is twice the round metric of $S^{n-1}$ and the sectional curvature is $1/2$ in this normalisation. The space is the elliptic space $\mathbb{E}^{n-1}$ of <em>Spherical Geometry</em>, of diameter $\pi/\sqrt2$ in this normalisation and, with the normalisation that makes the curvature $+1$, exactly the quotient of the round sphere of radius one by the antipodal map. Its geodesics are the projective lines, images of great circles.</p>
+<h2 id="the-plucker-embedding">The Plücker Embedding</h2>
+<h3 id="exterior-powers-and-plucker-coordinates">Exterior Powers and Plücker Coordinates</h3>
+<p><strong>Definition.</strong> Let $W = \operatorname{span}(w_1, \ldots, w_k)$ be a $k$-subspace of $V$ with $\dim V = n$, and let $w_1, \ldots, w_k$ be a basis. The <strong>Plücker vector</strong> of $W$ is the decomposable element</p>
+<p>$$
+[w_1 \wedge \cdots \wedge w_k] \in \mathbb{P}\left(\textstyle\bigwedge^k V\right) \cong \mathbb{RP}^{\binom{n}{k} - 1},
+$$</p>
+<p>the class of the wedge product up to scalar; it is independent of the basis chosen, up to the nonzero determinant of the change of basis.</p>
+<p><strong>Theorem (Plücker embedding).</strong> The map</p>
+<p>$$
+\iota : \mathrm{Gr}_k(V) \longrightarrow \mathbb{P}\left(\textstyle\bigwedge^kV\right), \qquad W \longmapsto [w_1 \wedge \cdots \wedge w_k],
+$$</p>
+<p>is well defined and injective; its image is a closed smooth submanifold, and the map is an embedding. The image is the set of <strong>decomposable</strong> classes, characterised by the <strong>Plücker relations</strong>: for $1 \leq k \leq n$ and indices $i_1, \ldots, i_{k+1}$ and $j_1, \ldots, j_{k-1}$,</p>
+<p>$$
+\sum_{r=1}^{k+1}(-1)^r p_{i_1 \ldots \widehat{i_r} \ldots i_{k+1}}\, p_{i_r j_1 \ldots j_{k-1}} = 0,
+$$</p>
+<p>where $p_{i_1\ldots i_k}$ are the coordinates of the class in the basis $e_{i_1}\wedge\cdots\wedge e_{i_k}$.</p>
+<p><strong>Proof sketch.</strong> Injectivity: $W$ is recovered from $[w_1\wedge\cdots\wedge w_k]$ as the set of $v$ with $v \wedge (w_1\wedge\cdots\wedge w_k) = 0$. Well definedness: a change of basis multiplies the wedge by a nonzero scalar, which is the projectivisation. The map is an injective immersion of the compact Grassmannian into the projective space, hence a closed embedding; the Plücker relations, obtained by expanding the identity $w_{k+1}\wedge w_1\wedge\cdots\wedge w_k = 0$ in coordinates, cut out the decomposable classes. $\square$</p>
+<p><strong>Example (lines in $\mathbb{P}^3$).</strong> For $k = 2$, $n = 4$ the Plücker vector has six coordinates $p_{ij}$, $i<j$, and there is a single Plücker relation</p>
+<p>$$
+p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0,
+$$</p>
+<p>which is the <strong>Klein quadric</strong>, a smooth quadric hypersurface in $\mathbb{RP}^5$. The Grassmannian $\mathrm{Gr}_2(\mathbb{R}^4)$ is therefore a four-dimensional quadric in $\mathbb{RP}^5$, the Klein quadric, whose two rulings are the two families of lines of $\mathbb{RP}^3$ and realise the Klein correspondence between the points of one projective three-space and the lines of another. The relation is verified by expanding the six minors of a $2 \times 4$ matrix: the identity $p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0$ is the Laplace expansion of the determinant of a $2\times 2$ matrix with repeated rows. The projective theory of the quadric and of the correspondence is in the article <em>Projective Geometry</em>, written in parallel.</p>
+<p><strong>Remark (complex and quaternionic analogues).</strong> The same construction with $\mathbb{C}$ or $\mathbb{H}$ in place of $\mathbb{R}$ gives the complex Grassmannian $\mathrm{Gr}_k(\mathbb{C}^n)$ and the quaternionic Grassmannian $\mathrm{Gr}_k(\mathbb{H}^n)$, of real dimensions $2k(n-k)$ and $4k(n-k)$, each a complex or quaternionic manifold and a symmetric space of compact type; the complex case carries the natural Kähler structure of the article <em>Kähler Geometry</em>, written in parallel, whose fundamental form and complex structure are defined there, and the complex Grassmannians are the simplest Kähler symmetric spaces. The real dimensions are computed from $\dim_{\mathbb{R}}\mathbb{K} = 1, 2, 4$ for $\mathbb{K} = \mathbb{R}, \mathbb{C}, \mathbb{H}$ and are $(\dim_{\mathbb{R}}\mathbb{K})k(n-k)$.</p>
+<h2 id="schubert-cells-and-the-cohomology">Schubert Cells and the Cohomology</h2>
+<h3 id="the-cell-decomposition">The Cell Decomposition</h3>
+<p><strong>Definition.</strong> Fix a complete flag</p>
+<p>$$
+0 = V_0 \subseteq V_1 \subseteq V_2 \subseteq \cdots \subseteq V_n = \mathbb{R}^n, \qquad \dim V_i = i .
+$$</p>
+<p>For a sequence $\lambda = (\lambda_1, \ldots, \lambda_k)$ with $1 \leq \lambda_1 < \cdots < \lambda_k \leq n$, the <strong>Schubert cell</strong> is</p>
+<p>$$
+e_\lambda = \{W \in \mathrm{Gr}_k(\mathbb{R}^n) : \dim(W \cap V_{\lambda_i}) = i \text{ and } \dim(W \cap V_{\lambda_i - 1}) = i - 1 \text{ for each } i\}.
+$$</p>
+<p>Its closure $X_\lambda = \bar e_\lambda$, the <strong>Schubert variety</strong>, consists of the $W$ with $\dim(W \cap V_{\lambda_i}) \geq i$ for all $i$.</p>
+<p><strong>Theorem.</strong> The Schubert cells partition the Grassmannian, each $e_\lambda$ is homeomorphic to $\mathbb{R}^{|\lambda|}$ where</p>
+<p>$$
+|\lambda| = \sum_{i=1}^{k}(\lambda_i - i),
+$$</p>
+<p>and the cells are the open cells of a CW decomposition whose closures are the Schubert varieties; there is one cell for each $k$-element subset $\lambda$ of $\{1, \ldots, n\}$, so $\binom{n}{k}$ cells in total.</p>
+<p><strong>Proof sketch.</strong> Choose a complete flag adapted to a fixed $W_0$ and put the chart $U_{\lambda_1}$; the condition on the intersections with the flag gives a chain of nested affine spaces; the dimension count is the number of free entries of the matrix of the corresponding projection, which is $\sum_i(\lambda_i - i)$. $\square$</p>
+<p><strong>Corollary (the Poincaré polynomial).</strong> The cells are indexed by the $k$-element subsets, and the generating function of the cell counts by dimension is the <strong>Gaussian binomial coefficient</strong></p>
+<p>$$
+P_t(\mathrm{Gr}_k(\mathbb{R}^n)) = \sum_{\lambda} t^{|\lambda|} = \binom{n}{k}_t ,
+$$</p>
+<p>so with $\mathbb{F}_2$ coefficients the total dimension of the cohomology is $\binom{n}{k}$, and the mod-$2$ Betti numbers are the numbers of cells of each dimension. The Euler characteristic is the value at $t = -1$,</p>
+<p>$$
+\chi(\mathrm{Gr}_k(\mathbb{R}^n)) = \binom{n}{k}_{t=-1} = \begin{cases} 0, & n \text{ even and } k \text{ odd}, \\ \displaystyle\binom{\lfloor n/2\rfloor}{\lfloor k/2\rfloor}, & \text{otherwise}, \end{cases}
+$$</p>
+<p>and in particular $\chi(\mathbb{RP}^{n-1}) = 1$ for $n$ odd and $0$ for $n$ even.</p>
+<p><strong>Proof sketch.</strong> The generating function $\sum_\lambda t^{|\lambda|}$, over the $k$-element subsets $\lambda$ of $\{1,\ldots,n\}$, is by definition the Gaussian binomial coefficient $\binom{n}{k}_t$, the generating function of the partitions fitting in a $k \times (n-k)$ box; the evaluation at $t = -1$ is the standard $q \to -1$ evaluation of the Gaussian binomial, which gives the stated case distinction. The projective-space case $k = 1$ is the alternating sum $1 - 1 + 1 - \cdots$ of $n$ cells of dimensions $0, 1, \ldots, n-1$. $\square$</p>
+<p><strong>Example.</strong> For $k = 2$, $n = 4$ the cells have dimensions $0, 1, 2, 2, 3, 4$ and $\chi = 1 - 1 + 2 - 1 + 1 = 2 = \binom{2}{1}$; the integral cohomology has $2$-torsion in degree $3$, so the integral Betti numbers are not the cell counts while the mod-$2$ Betti numbers are.</p>
+<p><strong>Remark (Schubert calculus).</strong> The intersection ring of the Grassmannian is the ring of symmetric polynomials modulo an ideal; the classes of the Schubert varieties form a basis, and the structure constants are the Littlewood–Richardson coefficients. This is the Schubert calculus, the intersection theory of the Grassmannian, and it belongs to the algebraic-geometric side of the corpus and is quoted here as standard; it is the reason the Grassmannian is the universal home of the enumerative problems of linear geometry.</p>
+<h2 id="the-classifying-space">The Classifying Space</h2>
+<p><strong>Theorem.</strong> The Grassmannian is the classifying space of the orthogonal group in the following sense: the tautological bundle $\gamma_k$ over $\mathrm{Gr}_k(\mathbb{R}^n)$ is a rank-$k$ bundle whose associated Stiefel bundle is universal in the limit</p>
+<p>$$
+\mathrm{Gr}_k(\mathbb{R}^\infty) = \varinjlim_n \mathrm{Gr}_k(\mathbb{R}^n) = BO(k),
+$$</p>
+<p>the classifying space of rank-$k$ real vector bundles, and for a suitable topology every rank-$k$ real vector bundle over a paracompact base is the pullback of $\gamma_k$ along a classifying map unique up to homotopy.</p>
+<p><strong>Proof sketch.</strong> The tautological bundle over the limit Grassmannian is the universal bundle because the space of $k$-frames in $\mathbb{R}^\infty$ is contractible, a fact of the stable linear algebra; the classification theorem is the bundle theory of <em>Fibre Bundles, Connections and Curvature</em>. $\square$</p>
+<p><strong>Corollary.</strong> The characteristic classes of a real vector bundle are the pullbacks of the classes of the universal bundle on $BO(k)$; the Stiefel–Whitney and Pontryagin classes are computed by the cohomology of the Grassmannian, which is why the Schubert cells of the previous section are the computational device for the characteristic classes.</p>
+<p><strong>Theorem (Gauss map).</strong> Let $M \subseteq \mathbb{R}^n$ be a submanifold of dimension $k$. The <strong>Gauss map</strong> $\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$ sending a point to its normal subspace, $\nu(p) = (T_pM)^\perp$, is smooth, and the pullback of the tautological bundle along $\nu$ is the normal bundle of $M$ in $\mathbb{R}^n$, while the pullback of the complement bundle is the tangent bundle.</p>
+<p><strong>Proof.</strong> The tangent space varies smoothly with the point, so the normal subspace does too; the two pullback identifications are the definitions of the bundles involved. $\square$</p>
+<p><strong>Corollary.</strong> The Gauss map is the reason the Grassmannian is the natural home of the extrinsic geometry of submanifolds: the second fundamental form of <em>Riemannian Geometry</em> is the derivative of the Gauss map, and the curvature of a submanifold is computed from its Gauss image in the Grassmannian.</p>
+<h2 id="summary">Summary</h2>
+<p>The Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n)$ is the set of $k$-dimensional subspaces of $\mathbb{R}^n$, and the Stiefel manifold $V_k(\mathbb{R}^n)$ is the set of orthonormal $k$-frames; both are compact smooth manifolds, of dimensions $k(n-k)$ and $nk - k(k+1)/2$. The Grassmannian has the chart description by $k(n-k)$ independent matrix entries of a subspace, the Stiefel manifold is the regular level set $X^TX = I_k$, and the projection from a frame to the subspace it spans is a principal $O(k)$-bundle, whose dimension count gives $\dim V_k = \dim \mathrm{Gr}_k + \dim O(k)$.</p>
+<p>The tautological bundle has fibre $W$ over $W$, the complement bundle has fibre $W^\perp$, and the tangent bundle of the Grassmannian is $\operatorname{Hom}(\gamma_k, \gamma_k^\perp)$. The group $O(n)$ acts transitively, so $\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k)\times O(n-k))$, and the standard metric is the $O(n)$-invariant metric induced from the Euclidean structure of matrices; its geodesics are the orbits of one-parameter subgroups of $O(n)$, its curvature is nonnegative, and the reflection in a subspace is an involutive isometry making the Grassmannian a Riemannian symmetric space of compact type and rank $\min(k, n-k)$. The extreme cases are the projective space at $k = 1$, of constant curvature $+1$, and the orthogonal group at $k = n$.</p>
+<p>The Grassmannian embeds in the projective space of the $k$-th exterior power by the Plücker map, whose image is cut out by the Plücker relations; for $k = 2$, $n = 4$ the image is the Klein quadric in $\mathbb{RP}^5$, a single quadratic relation. The Schubert cells defined by a complete flag give a CW decomposition into $\binom{n}{k}$ cells, whose dimension generating function is the Gaussian binomial coefficient $\binom{n}{k}_t$; the mod-$2$ cohomology has total dimension $\binom{n}{k}$, the integral cohomology carries $2$-torsion in odd degrees, and the Euler characteristic is the evaluation $\binom{n}{k}_{t=-1}$, equal to $0$ for $n$ even and $k$ odd and to $\binom{\lfloor n/2\rfloor}{\lfloor k/2\rfloor}$ otherwise. The intersection theory of the Schubert varieties is the Schubert calculus. In the limit the Grassmannian is the classifying space $BO(k)$, so the characteristic classes of real vector bundles are its cohomology classes, and the Gauss map of a submanifold into a Grassmannian identifies the normal and tangent bundles with pullbacks of the tautological and complement bundles. The complex and quaternionic analogues double and quadruple the dimensions and carry the Kähler structure of the sibling article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Gr}_k(V)$, $\mathrm{Gr}_k(\mathbb{R}^n)$</td>
+<td>Grassmannian of $k$-subspaces; a compact manifold of dimension $k(n-k)$</td>
+</tr>
+<tr>
+<td>$V_k(\mathbb{R}^n)$</td>
+<td>Stiefel manifold of orthonormal $k$-frames; dimension $nk - k(k+1)/2$</td>
+</tr>
+<tr>
+<td>$P_W$</td>
+<td>Orthogonal projection onto $W$; $P_W^2 = P_W$, $P_W^T = P_W$</td>
+</tr>
+<tr>
+<td>$\pi : V_k(\mathbb{R}^n) \to \mathrm{Gr}_k(\mathbb{R}^n)$</td>
+<td>Stiefel bundle; principal $O(k)$-bundle</td>
+</tr>
+<tr>
+<td>$\gamma_k$, $\gamma_k^\perp$</td>
+<td>Tautological bundle and orthogonal complement bundle</td>
+</tr>
+<tr>
+<td>$T\mathrm{Gr}_k \cong \operatorname{Hom}(\gamma_k, \gamma_k^\perp)$</td>
+<td>Tangent bundle</td>
+</tr>
+<tr>
+<td>$O(n)/(O(k)\times O(n-k))$</td>
+<td>Grassmannian as a homogeneous space</td>
+</tr>
+<tr>
+<td>$\sigma_W = P_W - P_{W^\perp}$</td>
+<td>Geodesic symmetry; the symmetric space involution</td>
+</tr>
+<tr>
+<td>rank $\min(k, n-k)$</td>
+<td>Rank of the symmetric space; dimension of a maximal flat</td>
+</tr>
+<tr>
+<td>$\iota : \mathrm{Gr}_k \to \mathbb{P}(\bigwedge^kV)$</td>
+<td>Plücker embedding; image cut out by the Plücker relations</td>
+</tr>
+<tr>
+<td>$p_{i_1\ldots i_k}$</td>
+<td>Plücker coordinates in the basis of exterior monomials</td>
+</tr>
+<tr>
+<td>$p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0$</td>
+<td>The Klein quadric, for $k=2$, $n=4$</td>
+</tr>
+<tr>
+<td>$e_\lambda$, $X_\lambda$, $|\lambda| = \sum(\lambda_i - i)$</td>
+<td>Schubert cell, Schubert variety, dimension of a cell</td>
+</tr>
+<tr>
+<td>$\binom{n}{k}_t$, $\chi = \binom{n}{k}_{t=-1}$</td>
+<td>Gaussian binomial; cell-count generating function; Euler characteristic</td>
+</tr>
+<tr>
+<td>$BO(k) = \mathrm{Gr}_k(\mathbb{R}^\infty)$</td>
+<td>Classifying space of rank-$k$ real bundles</td>
+</tr>
+<tr>
+<td>$\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$</td>
+<td>Gauss map; $\nu^*\gamma = NM$, $\nu^*\gamma^\perp = TM$</td>
+</tr>
+<tr>
+<td>$\mathrm{Gr}_k(\mathbb{K}^n)$</td>
+<td>Complex ($\mathbb{K}=\mathbb{C}$) and quaternionic ($\mathbb{K}=\mathbb{H}$) Grassmannians</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John W. Milnor and James D. Stasheff, <em>Characteristic Classes</em> (Princeton University Press, 1974), for the Grassmannian as a classifying space and the universal bundles.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the Plücker embedding, Schubert varieties and Schubert calculus.</li>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry, Volume II</em> (Interscience, 1969), for the curvature of homogeneous spaces and the symmetric space structure.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the Grassmannians as symmetric spaces and the rank theory.</li>
+<li>Sigurdur Helgason, <em>Groups and Geometric Analysis</em> (Academic Press, 1984), for the invariant metric, the geodesics and the spherical functions on the Grassmannians.</li>
+<li>Sheldon Katz, <em>Enumerative Geometry and String Theory</em> (American Mathematical Society, 2006), for the Schubert calculus and its enumerative applications.</li>
+<li>Armand Borel, "Sur la cohomologie des espaces fibrés principaux et des espaces homogènes de groupes de Lie compacts", <em>Annals of Mathematics</em> 57 (1953), 115–207, for the cohomology of the Grassmannians and the flag manifolds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

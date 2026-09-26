@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Lie Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-lie-groups"><strong>List of Lie Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the Lie groups of the corpus, each with its Lie algebra, its real dimension, its rank and the article that introduces it. The list is organised by the two structures a Lie group carries at once. As a manifold it carries a dimension and, when it is connected and compact, a maximal torus whose dimension is its rank; as a group it carries a Lie algebra, obtained as the tangent space at the identity with the bracket of left-invariant vector fields, and the correspondence between the group and the algebra — local by the exponential map and the Campbell–Baker–Hausdorff formula, global for simply connected groups — is the subject of a chain of articles of Parts I to III.</p>
+<p>The list begins with the classical matrix groups, which are the examples every later construction names, and continues with the abelian, nilpotent and semidirect examples, with the simple groups and their algebras by type, and with the correspondence itself. Every entry points to the article that introduces the group or the algebra.</p>
+<p>The article introduces nothing and proves nothing: it records the dimension and the rank where the introducing article supplies them, and it neither restates a definition nor gives a proof. It records examples and non-examples side by side. Beside the groups that are Lie groups it lists the spheres that are not — only $S^0$, $S^1$ and $S^3$ admit a Lie group structure, so $S^7$ does not — the irrational line of the torus, which is a subgroup but not a Lie subgroup, the quotient by a non-closed subgroup, which is not a manifold, the exponential map, which is not surjective for $SL_2(\mathbb{R})$, and the matrix groups, which fail the correspondence's global form when they are not simply connected, each with the failure named and the article that records it.</p>
+<h2 id="the-classical-matrix-groups">The Classical Matrix Groups</h2>
+<p>These are the closed subgroups of the general linear groups defined by polynomial or rational conditions, and their dimensions are the dimensions of the defining conditions. All are over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ unless a field is named.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Real dimension</th>
+<th>Its structure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_n(\mathbb{R})$</td>
+<td>$n^2$</td>
+<td>not connected, not compact; the open set $\det \neq 0$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{C})$</td>
+<td>$2n^2$</td>
+<td>connected, not compact; the group of units of $M_n(\mathbb{C})$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$SL_n(\mathbb{R})$</td>
+<td>$n^2 - 1$</td>
+<td>connected, not compact; the kernel of the determinant</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$SL_n(\mathbb{C})$</td>
+<td>$2n^2 - 2$</td>
+<td>connected and simply connected</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$O(n)$</td>
+<td>$n(n-1)/2$</td>
+<td>compact, two components; identity component $SO(n)$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$SO(n)$</td>
+<td>$n(n-1)/2$</td>
+<td>compact connected; $\pi_1 = \mathbb{Z}/2$ for $n \geq 3$</td>
+<td><em>Lie Groups</em>; <em>The Orthogonal Lie Algebra</em></td>
+</tr>
+<tr>
+<td>$U(n)$</td>
+<td>$n^2$</td>
+<td>compact connected; $\pi_1 = \mathbb{Z}$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$SU(n)$</td>
+<td>$n^2 - 1$</td>
+<td>compact, connected and simply connected</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$Sp(n)$</td>
+<td>$n(2n+1)$</td>
+<td>compact, connected and simply connected; the quaternionic unitary group</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$Sp(2n,\mathbb{R})$</td>
+<td>$n(2n+1)$</td>
+<td>the real symplectic group, $A^TJA = J$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$S^1 = U(1) = SO(2)$</td>
+<td>$1$</td>
+<td>compact connected abelian; $\pi_1 = \mathbb{Z}$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$S^3 = SU(2) = Sp(1)$</td>
+<td>$3$</td>
+<td>compact, connected and simply connected; the unit quaternions</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Spin}(n)$, $n \geq 3$</td>
+<td>$n(n-1)/2$</td>
+<td>compact, connected and simply connected; the double cover of $SO(n)$</td>
+<td><em>Lie Groups</em>; <em>List of Clifford Algebras and Spin Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}^\times \cong GL_2(\mathbb{C})$</td>
+<td>$8$</td>
+<td>the units of the biquaternion algebra, a real Lie group</td>
+<td><em>Lie Groups</em>; <em>Biquaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-abelian-nilpotent-and-semidirect-examples">The Abelian, Nilpotent and Semidirect Examples</h2>
+<p>The elementary Lie groups come from vector spaces, from their quotients by lattices and from semidirect products of a linear part with a translation part.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Real dimension</th>
+<th>Its structure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}^n$</td>
+<td>$n$</td>
+<td>abelian, simply connected, not compact</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}^n$</td>
+<td>$2n$</td>
+<td>abelian as a real Lie group</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>the torus $T^n = \mathbb{R}^n/\mathbb{Z}^n$</td>
+<td>$n$</td>
+<td>compact connected abelian; $\pi_1 = \mathbb{Z}^n$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>the Heisenberg group $H_3(\mathbb{R})$</td>
+<td>$3$</td>
+<td>simply connected nilpotent, of class $2$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>the Euclidean group $\mathbb{R}^n \rtimes SO(n)$</td>
+<td>$n(n-1)/2 + n$</td>
+<td>the semidirect product of the translations and the rotations</td>
+<td><em>Lie Groups</em>; <em>List of Affine and Euclidean Groups</em></td>
+</tr>
+<tr>
+<td>the affine group $\mathbb{R}^n \rtimes GL_n(\mathbb{R})$</td>
+<td>$n^2 + n$</td>
+<td>the automorphism group of affine $n$-space</td>
+<td><em>List of Affine and Euclidean Groups</em></td>
+</tr>
+<tr>
+<td>the Lorentz group $O(1,3)$</td>
+<td>$6$</td>
+<td>the isometry group of Minkowski space; $SO^+(1,3)$ has cover $SL_2(\mathbb{C})$</td>
+<td><em>Lie Groups</em>; <em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>$S^3/\{\pm1\} \cong SO(3) \cong \mathbb{RP}^3$</td>
+<td>$3$</td>
+<td>compact connected, not simply connected</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>the complex and quaternionic unit spheres</td>
+<td>$2n-1$ and $4n-1$</td>
+<td>closed under multiplication only for $n = 1$ in the complex case, and for $n = 1, 2$ in the quaternionic case, where $S^7$ is a Moufang loop and not a group</td>
+<td><em>Lie Groups</em>; <em>Octonion Representations</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-simple-groups-and-their-lie-algebras-by-type">The Simple Groups and Their Lie Algebras by Type</h2>
+<p>A semisimple complex Lie algebra is a direct sum of simple algebras, and the simple algebras correspond to the connected Dynkin diagrams; the rank is the dimension of a Cartan subalgebra and the dimension is $r + \lvert\Phi\rvert$ for the root system $\Phi$. The corresponding compact simply connected groups are the simply connected forms.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Lie algebra</th>
+<th>Rank</th>
+<th>Dimension of the algebra</th>
+<th>Compact group</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_n$</td>
+<td>$\mathfrak{sl}(n+1,\mathbb{C}) = \mathfrak{su}(n+1)$</td>
+<td>$n$</td>
+<td>$n(n+2)$</td>
+<td>$SU(n+1)$</td>
+<td><em>Root Systems and Classification</em>; <em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$B_n$</td>
+<td>$\mathfrak{so}(2n+1,\mathbb{C})$</td>
+<td>$n$</td>
+<td>$n(2n+1)$</td>
+<td>$\operatorname{Spin}(2n+1)$</td>
+<td><em>Root Systems and Classification</em>; <em>The Orthogonal Lie Algebra</em></td>
+</tr>
+<tr>
+<td>$C_n$</td>
+<td>$\mathfrak{sp}(2n,\mathbb{C})$</td>
+<td>$n$</td>
+<td>$n(2n+1)$</td>
+<td>$Sp(n)$</td>
+<td><em>Root Systems and Classification</em></td>
+</tr>
+<tr>
+<td>$D_n$</td>
+<td>$\mathfrak{so}(2n,\mathbb{C})$</td>
+<td>$n$</td>
+<td>$n(2n-1)$</td>
+<td>$\operatorname{Spin}(2n)$</td>
+<td><em>Root Systems and Classification</em>; <em>The Orthogonal Lie Algebra</em></td>
+</tr>
+<tr>
+<td>$G_2$</td>
+<td>$\mathfrak{g}_2 = \operatorname{Der}(\mathbb{O})$</td>
+<td>$2$</td>
+<td>$14$</td>
+<td>$G_2 = \operatorname{Aut}(\mathbb{O})$</td>
+<td><em>Root Systems and Classification</em>; <em>Octonions and the Exceptional Lie Groups</em></td>
+</tr>
+<tr>
+<td>$F_4$</td>
+<td>$\mathfrak{f}_4$</td>
+<td>$4$</td>
+<td>$52$</td>
+<td>$F_4 = \operatorname{Aut}(\mathfrak{h}_3(\mathbb{O}))$</td>
+<td><em>Root Systems and Classification</em>; <em>Octonions and the Exceptional Lie Groups</em></td>
+</tr>
+<tr>
+<td>$E_6$</td>
+<td>$\mathfrak{e}_6$</td>
+<td>$6$</td>
+<td>$78$</td>
+<td>the simply connected compact $E_6$</td>
+<td><em>Root Systems and Classification</em>; <em>Octonions and the Exceptional Lie Groups</em></td>
+</tr>
+<tr>
+<td>$E_7$</td>
+<td>$\mathfrak{e}_7$</td>
+<td>$7$</td>
+<td>$133$</td>
+<td>the simply connected compact $E_7$</td>
+<td><em>Root Systems and Classification</em>; <em>Octonions and the Exceptional Lie Groups</em></td>
+</tr>
+<tr>
+<td>$E_8$</td>
+<td>$\mathfrak{e}_8$</td>
+<td>$8$</td>
+<td>$248$</td>
+<td>the simply connected compact $E_8$</td>
+<td><em>Root Systems and Classification</em>; <em>Octonions and the Exceptional Lie Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The low-dimensional coincidences of the classification are recorded with it: $B_2 = C_2$ and $A_3 = D_3$, and $A_1 = B_1 = C_1$; on the group side, $Sp(1) \cong SU(2)$, $Sp(2,\mathbb{R}) \cong SL_2(\mathbb{R})$, and $\mathfrak{so}(3,1) \cong \mathfrak{sl}_2(\mathbb{C})$ as complex algebras.</p>
+<h2 id="the-correspondence-between-a-lie-group-and-its-lie-algebra">The Correspondence Between a Lie Group and Its Lie Algebra</h2>
+<p>The passage from the group to the algebra is a functor, and its failure to be an equivalence is measured by the fundamental group of the group; the passage back is the content of Lie's third theorem.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or theorem</th>
+<th>The statement or the structure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Lie algebra $\mathfrak{g} = T_eG$</td>
+<td>the tangent space at the identity, with the bracket of left-invariant vector fields; $[X,Y] = XY - YX$ for a matrix group</td>
+<td><em>Lie Groups</em>; <em>The Lie Algebra and the Exponential Map</em></td>
+</tr>
+<tr>
+<td>the exponential map $\exp : \mathfrak{g} \to G$</td>
+<td>the flow of a left-invariant field; a local diffeomorphism at $0$, natural in homomorphisms</td>
+<td><em>The Lie Algebra and the Exponential Map</em></td>
+</tr>
+<tr>
+<td>the Campbell–Baker–Hausdorff formula</td>
+<td>$\exp(X)\exp(Y) = \exp(Z(X,Y))$ with $Z$ a Lie polynomial; the group law in exponential coordinates</td>
+<td><em>The Lie Algebra and the Exponential Map</em></td>
+</tr>
+<tr>
+<td>the differential $d\varphi_e$</td>
+<td>the functor on homomorphisms; a Lie algebra homomorphism</td>
+<td><em>Lie Groups</em>; <em>The Lie Correspondence and the Adjoint Representation</em></td>
+</tr>
+<tr>
+<td>Lie's third theorem</td>
+<td>every finite-dimensional real Lie algebra is the Lie algebra of a simply connected Lie group</td>
+<td><em>The Lie Correspondence and the Adjoint Representation</em></td>
+</tr>
+<tr>
+<td>the Lie correspondence</td>
+<td>for simply connected $G$, $\varphi \mapsto d\varphi_e$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathfrak{g},\mathfrak{h})$</td>
+<td><em>The Lie Correspondence and the Adjoint Representation</em></td>
+</tr>
+<tr>
+<td>the simply connected cover</td>
+<td>$\pi : \tilde G \to G$ with discrete central kernel; the connected groups with a given algebra are the $\tilde G/D$</td>
+<td><em>The Lie Correspondence and the Adjoint Representation</em>; <em>The Fundamental Group of a Lie Group</em></td>
+</tr>
+<tr>
+<td>the adjoint representation</td>
+<td>$\operatorname{Ad}(g) = d(c_g)_e$ on $\mathfrak{g}$ and $\operatorname{ad}_x(y) = [x,y]$, with $d(\operatorname{Ad})_e = \operatorname{ad}$</td>
+<td><em>The Lie Correspondence and the Adjoint Representation</em></td>
+</tr>
+<tr>
+<td>the centre</td>
+<td>$\ker\operatorname{Ad} = Z(G)$ for connected $G$, and $\operatorname{Lie}(Z(G)) = \mathfrak{z}(\mathfrak{g})$</td>
+<td><em>The Lie Correspondence and the Adjoint Representation</em></td>
+</tr>
+<tr>
+<td>closed subgroups and quotients</td>
+<td>Cartan's theorem makes a closed subgroup embedded; a closed normal $N$ gives $\operatorname{Lie}(G/N) = \mathfrak{g}/\mathfrak{n}$</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>the structure theory of the algebra</td>
+<td>radical, nilradical, Killing form, Cartan's criteria, Levi decomposition, Weyl's complete reducibility</td>
+<td><em>Structure of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>the highest-weight classification</td>
+<td>the irreducible representations of a semisimple algebra by their highest weights</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>the Peter–Weyl theorem</td>
+<td>the decomposition of $L^2(K)$ for a compact group $K$ into finite-dimensional irreducible representations</td>
+<td><em>The Peter–Weyl Theorem</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-and-warnings">Non-examples and Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why the expected statement fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sphere $S^7$</td>
+<td>it is not a Lie group; among the spheres only $S^0$, $S^1$ and $S^3$ admit a Lie group structure</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>the irrational line in $T^2$</td>
+<td>it is a subgroup of a Lie group and is not a Lie subgroup; its closure is all of $T^2$ and it carries no manifold structure making the inclusion an immersion</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>a quotient $G/H$ by a non-closed subgroup</td>
+<td>the quotient is not a manifold; closedness is essential for the homogeneous space to be a Lie group or manifold</td>
+<td><em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>the exponential map of $SL_2(\mathbb{R})$</td>
+<td>it is not surjective; the image omits the matrices with negative eigenvalue and two distinct real eigenvalues</td>
+<td><em>Lie Groups</em>; <em>The Lie Algebra and the Exponential Map</em></td>
+</tr>
+<tr>
+<td>the Lie functor</td>
+<td>it is neither full nor faithful; it sees only the local structure, and the global form needs simple connectivity</td>
+<td><em>The Lie Correspondence and the Adjoint Representation</em></td>
+</tr>
+<tr>
+<td>the matrix group of a disconnected group</td>
+<td>a homomorphism from a disconnected source is not determined by its differential at the identity</td>
+<td><em>The Lie Correspondence and the Adjoint Representation</em></td>
+</tr>
+<tr>
+<td>$O(n)$, $U(n)$ as group-layer objects</td>
+<td>they are <em>defined</em> by a form, so they are introduced among the classical geometric groups and are listed here only as matrix Lie groups</td>
+<td><em>List of Classical Geometric Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Objects that a reader may expect in a list of Lie groups, and does not find here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed here</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>infinite-dimensional Lie groups</td>
+<td>the corpus treats them with Hilbert's fifth problem and the infinite-dimensional theory; they have no dimension in the finite sense and no Lie correspondence of the same kind</td>
+<td><em>Hilbert's Fifth Problem and Infinite-Dimensional Lie Theory</em></td>
+</tr>
+<tr>
+<td>$p$-adic Lie groups</td>
+<td>analytic manifolds over $\mathbb{Q}_p$; they belong to the topological groups list</td>
+<td><em>$p$-adic Lie Groups</em>; <em>List of Topological Groups</em></td>
+</tr>
+<tr>
+<td>algebraic groups and group schemes</td>
+<td>defined over a general field, without a smooth manifold structure</td>
+<td><em>Linear Algebraic Groups</em>; <em>Schemes</em></td>
+</tr>
+<tr>
+<td>the Lorentz group's covering group $SL_2(\mathbb{C})$</td>
+<td>it is a matrix Lie group and is recorded with the classical groups; the geometric Lorentz group is recorded with the isometry groups</td>
+<td><em>Lie Groups</em>; <em>List of Isometry and Symmetry Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Spin}(n)$ as a Clifford-algebra object</td>
+<td>the spin groups are constructed from the Clifford algebra and are listed with it</td>
+<td><em>List of Clifford Algebras and Spin Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the Lie groups of the corpus with their Lie algebras, dimensions and ranks: the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$ and $Sp(2n,\mathbb{R})$; the abelian, nilpotent and semidirect examples, the torus, the Heisenberg group, the Euclidean and affine groups and the Lorentz group; the simple groups and their algebras by type $A_n$, $B_n$, $C_n$, $D_n$, $G_2$, $F_4$, $E_6$, $E_7$, $E_8$, with their ranks and dimensions; and the correspondence between a group and its algebra, the exponential map, the Campbell–Baker–Hausdorff formula, Lie's third theorem, the simply connected cover, the adjoint representation and the structure theory of the algebra. Beside the examples stand the non-examples: $S^7$, the irrational line of the torus, the quotient by a non-closed subgroup, the exponential map of $SL_2(\mathbb{R})$ and the failures of the global correspondence. The list introduces and proves nothing; it is the index of the Lie theory of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$, $H$, $\tilde G$</td>
+<td>a Lie group, a second Lie group, the simply connected cover</td>
+</tr>
+<tr>
+<td>$\mathfrak{g} = T_eG$, $\mathfrak{h}$</td>
+<td>the Lie algebra of $G$, the Lie algebra of $H$; lowercase fraktur throughout</td>
+</tr>
+<tr>
+<td>$\exp : \mathfrak{g} \to G$</td>
+<td>the exponential map</td>
+</tr>
+<tr>
+<td>$[X,Y]$, $\operatorname{ad}_x$, $\operatorname{Ad}(g)$</td>
+<td>the bracket, the adjoint representation of the algebra, of the group</td>
+</tr>
+<tr>
+<td>$d\varphi_e$</td>
+<td>the differential of a homomorphism at the identity</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_n$, $\mathfrak{so}_n$, $\mathfrak{sp}_n$, $\mathfrak{g}_2$, $\mathfrak{f}_4$, $\mathfrak{e}_6$, $\mathfrak{e}_7$, $\mathfrak{e}_8$</td>
+<td>the simple Lie algebras by type</td>
+</tr>
+<tr>
+<td>$A_n$, $B_n$, $C_n$, $D_n$, $G_2$, $F_4$, $E_6$, $E_7$, $E_8$</td>
+<td>the types of the classification, with $r$ the rank and $\Phi$ the root system</td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{K})$, $SL_n(\mathbb{K})$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$, $Sp(2n,\mathbb{R})$</td>
+<td>the classical matrix groups</td>
+</tr>
+<tr>
+<td>$T^n = U(1)^n$</td>
+<td>the maximal torus of the compact examples</td>
+</tr>
+<tr>
+<td>$\operatorname{Spin}(n)$</td>
+<td>the universal cover of $SO(n)$ for $n \geq 3$</td>
+</tr>
+<tr>
+<td>$Z(G)$, $\mathfrak{z}(\mathfrak{g})$</td>
+<td>the centre of a group and of an algebra</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the Killing form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the Lie group and Lie algebra correspondence and the classical groups.</li>
+<li>Jean-Pierre Serre, <em>Lie Algebras and Lie Groups</em> (Springer, 1992), for Lie's third theorem, the correspondence of categories and the exponential map.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2nd ed. 2002), for the structure and classification of the simple groups and their representations.</li>
+<li>John Frank Adams, <em>Lectures on Exceptional Lie Groups</em> (University of Chicago Press, 1996), for the construction and properties of $G_2$, $F_4$, $E_6$, $E_7$ and $E_8$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

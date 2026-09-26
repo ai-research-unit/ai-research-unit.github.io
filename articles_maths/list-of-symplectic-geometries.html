@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Symplectic Geometries — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-symplectic-geometries"><strong>List of Symplectic Geometries</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the symplectic geometries of the corpus: the symplectic manifolds and their forms, the Darboux normal form, the Hamiltonian vector fields and Poisson brackets, the moment maps and the symplectic reduction, and the linear symplectic geometry of the symplectic group. Every entry points to the article that introduces the notion, and the article introduces nothing and proves nothing.</p>
+<p>The symplectic geometry is the even-dimensional counterpart of the Riemannian one, and the list is ordered by the objects that replace its chain: a closed nondegenerate two-form replaces the metric, the Darboux theorem replaces the existence of normal coordinates and shows that the local geometry carries no invariant, the Poisson bracket is the bracket of functions that the form defines, and the Hamiltonian vector fields are the symmetries of the form. The moment map and the symplectic reduction are the operations by which a symmetry of a symplectic manifold produces a smaller symplectic manifold, and they are the geometric form of the conserved quantities of the Hamiltonian systems of Part III.</p>
+<p>The article records examples and non-examples side by side. Beside the symplectic geometries it lists the contact geometries, which are the odd-dimensional analogues and are not symplectic, the Poisson manifolds that are not symplectic, the odd-dimensional manifolds that carry no symplectic form, and the symplectic forms that are not Kähler, each with the failure named and the article that records it.</p>
+<h2 id="symplectic-manifolds-and-forms">Symplectic Manifolds and Forms</h2>
+<p>A symplectic manifold is a smooth manifold with a closed nondegenerate two-form, and the form makes the tangent and cotangent bundles isomorphic.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a symplectic manifold $(M,\omega)$</td>
+<td>a manifold with a closed nondegenerate $2$-form, of even dimension $2m$</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the symplectic form $\omega$</td>
+<td>closed, $d\omega = 0$, and nondegenerate, $\omega^{\flat}$ an isomorphism</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the standard form $\omega_0 = \sum_i dx_i\wedge dy_i$</td>
+<td>the symplectic form of $\mathbb{R}^{2m}$, the local model</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the symplectic volume form $\omega^{\wedge m}/m!$</td>
+<td>the volume the form defines; a symplectic manifold is orientable</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the cotangent bundle $T^*Q$ with $\omega = -d\theta$</td>
+<td>the phase space of a mechanical system, a symplectic manifold</td>
+<td><em>Symplectic Geometry</em>; <em>Lagrangian and Hamiltonian Systems</em></td>
+</tr>
+<tr>
+<td>a Lagrangian submanifold</td>
+<td>an isotropic submanifold of the maximal dimension $m$</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the conormal bundle $\nu^*N$ of a submanifold</td>
+<td>a Lagrangian submanifold of $T^*Q$</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>an isotropic or coisotropic submanifold</td>
+<td>$\omega\vert_L = 0$, or $TL^{\perp}\subseteq TL$</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>a compatible almost complex structure $J$</td>
+<td>$J$ with $\omega(JX,JY) = \omega(X,Y)$ and $g_J$ positive definite</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>a Kähler form $\Omega$</td>
+<td>a symplectic form that is closed and of type $(1,1)$ with respect to an integrable $J$</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The form is the whole geometry: it defines the volume, the orientation, the Lagrangian submanifolds and the almost complex structures compatible with it, and the bundle isomorphism $\omega^{\flat}$ converts functions into vector fields. The cotangent bundle with its tautological form is the universal example, and every symplectic manifold is locally its model by the Darboux theorem.</p>
+<h2 id="the-darboux-theorem-and-local-structure">The Darboux Theorem and Local Structure</h2>
+<p>The Darboux theorem states that every symplectic manifold is locally the standard symplectic space, so that the symplectic geometry has no local invariant.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Darboux theorem</td>
+<td>every point has a chart in which $\omega = \sum_i dx_i\wedge dy_i$</td>
+<td><em>Symplectic Geometry</em>, §The Darboux Theorem</td>
+</tr>
+<tr>
+<td>the Moser trick</td>
+<td>the argument deforming a family of forms to a normal form</td>
+<td><em>Symplectic Geometry</em>, §The Darboux Theorem</td>
+</tr>
+<tr>
+<td>the absence of local invariants</td>
+<td>the converse of the Riemannian situation: the curvature has no symplectic analogue</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the Darboux theorem in contact geometry</td>
+<td>the corresponding local normal form in odd dimensions</td>
+<td><em>Contact Geometry</em>, §The Darboux Theorem and Stability</td>
+</tr>
+<tr>
+<td>the symplectic structure of the coadjoint orbit</td>
+<td>the orbit of the coadjoint action carries a canonical symplectic form</td>
+<td><em>Poisson Geometry</em>, §Casimirs and Symplectic Leaves</td>
+</tr>
+</tbody>
+</table></div>
+<p>The theorem is the reason symplectic geometry is a global theory: the local model is unique, so the invariants are global and belong to the topology and to the dynamics, in contrast to the Riemannian case where the curvature is a local invariant. The existence of the normal form depends on the closedness and nondegeneracy of the form and on the Poincaré lemma, and it is proved by the Moser deformation argument.</p>
+<h2 id="hamiltonian-vector-fields-and-poisson-brackets">Hamiltonian Vector Fields and Poisson Brackets</h2>
+<p>The form converts a function into a vector field and defines a bracket on the functions, so that the symplectic manifold becomes a Lie algebra in two interlocking ways.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Hamiltonian vector field $X_f$</td>
+<td>the field defined by $\iota_{X_f}\omega = df$</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the Poisson bracket $\{f,g\} = \omega(X_f,X_g)$</td>
+<td>a Lie bracket on the functions, a derivation in each argument</td>
+<td><em>Symplectic Geometry</em>; <em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the Lie algebra of the Hamiltonian fields</td>
+<td>$[X_f,X_g] = -X_{\{f,g\}}$, the Poisson algebra acting by derivations</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the conservation law</td>
+<td>a function $f$ with $\{f,H\} = 0$ is constant along the flow of $X_H$</td>
+<td><em>Lagrangian and Hamiltonian Systems</em>, §Conservation Laws and Phase Volume</td>
+</tr>
+<tr>
+<td>the symplectic vector fields</td>
+<td>the fields with $\mathcal{L}_X\omega = 0$, the Lie algebra of $\operatorname{Symp}(M,\omega)$</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>a Poisson manifold $(P,\pi)$</td>
+<td>a manifold with a Poisson bracket not necessarily from a symplectic form</td>
+<td><em>Poisson Geometry</em></td>
+</tr>
+<tr>
+<td>the Schouten bracket and the Jacobi identity</td>
+<td>the integrability condition for a Poisson tensor</td>
+<td><em>Poisson Geometry</em></td>
+</tr>
+<tr>
+<td>a Casimir function</td>
+<td>a function bracketing to zero with every function</td>
+<td><em>Poisson Geometry</em>, §Casimirs and Symplectic Leaves</td>
+</tr>
+<tr>
+<td>the symplectic leaves of a Poisson manifold</td>
+<td>the maximal submanifolds on which the bracket is symplectic</td>
+<td><em>Poisson Geometry</em>, §Casimirs and Symplectic Leaves</td>
+</tr>
+<tr>
+<td>the star product and deformation quantisation</td>
+<td>the associative deformation $f*g = fg + \hbar\{f,g\} + O(\hbar^2)$</td>
+<td><em>Poisson Geometry</em>, §Deformation Quantisation</td>
+</tr>
+</tbody>
+</table></div>
+<p>The bracket makes the functions of a symplectic manifold a Lie algebra, and the Hamiltonian fields are its image under the map $f\mapsto X_f$, whose kernel is the constants. The Poisson manifolds are the degenerate case, in which the bracket may not come from a form and the manifold foliates into the symplectic leaves; the coadjoint orbits of a Lie group are the standard examples, and they are the geometric content of the orbit method.</p>
+<h2 id="moment-maps-and-symplectic-reduction">Moment Maps and Symplectic Reduction</h2>
+<p>A symmetry of a symplectic manifold with a Hamiltonian function defines a moment map, and the level set of the moment map quotiented by the group is again symplectic.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a Hamiltonian action of a Lie group</td>
+<td>an action preserving $\omega$ and admitting a moment map</td>
+<td><em>Symplectic Geometry</em>, §Symplectic Reduction</td>
+</tr>
+<tr>
+<td>the moment map $\mu : M \to \mathfrak{g}^*$</td>
+<td>the map with $d\mu_X = \iota_{X^{\#}}\omega$, encoding the conserved quantities</td>
+<td><em>Symplectic Geometry</em>, §Symplectic Reduction</td>
+</tr>
+<tr>
+<td>the fundamental vector field $X^{\#}$</td>
+<td>the field of the infinitesimal action, Hamiltonian with potential $\mu_X$</td>
+<td><em>Symplectic Geometry</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the equivariance of the moment map</td>
+<td>the compatibility of $\mu$ with the coadjoint action</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the symplectic quotient $M/\!/G = \mu^{-1}(0)/G$</td>
+<td>the reduced symplectic manifold, of dimension $\dim M - 2\dim G$</td>
+<td><em>Symplectic Geometry</em>, §Symplectic Reduction</td>
+</tr>
+<tr>
+<td>the Marsden–Weinstein reduction</td>
+<td>the theorem that the quotient is symplectic when $0$ is regular and $G$ acts freely</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>the reduced Hamiltonian system</td>
+<td>the Hamiltonian system obtained from a symmetric one by reduction</td>
+<td><em>Lagrangian and Hamiltonian Systems</em></td>
+</tr>
+<tr>
+<td>the orbit method</td>
+<td>the construction of the representations from the coadjoint orbits</td>
+<td><em>Poisson Geometry</em>, §Casimirs and Symplectic Leaves</td>
+</tr>
+</tbody>
+</table></div>
+<p>The moment map is the geometric form of the conserved quantity of a symmetry, and the symplectic reduction is the operation that removes the symmetry and produces the reduced phase space. The quotient is the geometric counterpart of the procedure by which a mechanical system with a symmetry is reduced to a system of fewer degrees of freedom.</p>
+<h2 id="the-symplectic-group-and-linear-symplectic-geometry">The Symplectic Group and Linear Symplectic Geometry</h2>
+<p>The linear symplectic geometry is the geometry of a vector space with an alternating nondegenerate form, and its automorphism group is the symplectic group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a symplectic vector space $(V,\omega)$</td>
+<td>a vector space with a nondegenerate alternating form, of dimension $2n$</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>a symplectic basis</td>
+<td>a basis with $\omega(e_i,f_j) = \delta_{ij}$ and $\omega(e_i,e_j) = \omega(f_i,f_j) = 0$</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the symplectic group $Sp(2n,K)$</td>
+<td>the matrices with $A^{\mathsf{T}}JA = J$, contained in $SL$</td>
+<td><em>Symplectic Forms and Poisson Brackets</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the symplectic Lie algebra $\mathfrak{sp}(2n,K)$</td>
+<td>$X^{\mathsf{T}}J + JX = 0$, of dimension $n(2n+1)$</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the Lagrangian Grassmannian $\operatorname{Lag}(V)$</td>
+<td>the variety of the Lagrangian subspaces, of dimension $\tfrac12n(n+1)$</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the Pfaffian $\operatorname{Pf}(\Omega)$</td>
+<td>the square root of $\det\Omega$, invariant up to $\det A$</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the Liouville form $\omega^{\wedge n}/n!$</td>
+<td>the volume form of the linear symplectic space</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The symplectic group is the isometry group of the alternating form, and its linear geometry is the model of the symplectic geometry at a point: the Darboux theorem identifies the tangent space at one point with the linear symplectic space, and the Lagrangian Grassmannian is the manifold of the Lagrangian subspaces through that point.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the symplectic geometries, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a symplectic geometry</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a contact manifold</td>
+<td>odd-dimensional, with a maximally nonintegrable hyperplane field instead of a closed form</td>
+<td><em>Contact Geometry</em></td>
+</tr>
+<tr>
+<td>the Reeb vector field</td>
+<td>the odd-dimensional analogue of the Hamiltonian field, belonging to the contact geometry</td>
+<td><em>Contact Geometry</em>, §The Reeb Vector Field</td>
+</tr>
+<tr>
+<td>an odd-dimensional manifold</td>
+<td>no nondegenerate alternating form exists on an odd-dimensional space</td>
+<td><em>Symplectic Forms and Poisson Brackets</em>, §Non-Degeneracy and the Symplectic Basis</td>
+</tr>
+<tr>
+<td>a Poisson manifold that is not symplectic</td>
+<td>the Poisson tensor may be degenerate; it foliates into symplectic leaves but is not a symplectic manifold</td>
+<td><em>Poisson Geometry</em></td>
+</tr>
+<tr>
+<td>a symplectic form that is not Kähler</td>
+<td>the compatible almost complex structure need not be integrable</td>
+<td><em>Symplectic Geometry</em>, §Compatible Almost Complex Structures</td>
+</tr>
+<tr>
+<td>the symplectomorphism group</td>
+<td>infinite-dimensional, its study belongs to the diffeomorphism groups</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>a Riemannian metric as a symplectic form</td>
+<td>a metric is symmetric and nondegenerate but not alternating</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the symplectic geometries of the corpus. The symplectic manifolds and their forms open the list, with the standard form, the volume, the cotangent bundle and the Lagrangian submanifolds; the Darboux theorem and the absence of a local invariant follow; the Hamiltonian vector fields and the Poisson bracket are recorded with the Poisson manifolds, the Casimir functions, the symplectic leaves and the star product; the moment maps and the symplectic reduction follow with the coadjoint orbits and the orbit method; and the linear symplectic geometry closes the list with the symplectic group, its Lie algebra, the symplectic basis and the Lagrangian Grassmannian. Beside the examples stand the non-examples: a contact manifold is odd-dimensional and is not symplectic, a Poisson manifold may be degenerate, an odd-dimensional manifold carries no symplectic form, and a compatible almost complex structure need not be integrable.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\omega$, $\omega_0$, $\omega^{\wedge m}/m!$</td>
+<td>Symplectic form, standard form, symplectic volume</td>
+</tr>
+<tr>
+<td>$T^*Q$, $\theta = \sum_i p_i\,dq^i$</td>
+<td>Cotangent bundle and tautological form</td>
+</tr>
+<tr>
+<td>$X_f$, $\{f,g\}$</td>
+<td>Hamiltonian vector field, Poisson bracket</td>
+</tr>
+<tr>
+<td>$(P,\pi)$, Schouten bracket, Casimir</td>
+<td>Poisson manifold and its structures</td>
+</tr>
+<tr>
+<td>$\mu : M \to \mathfrak{g}^*$, $M/\!/G$</td>
+<td>Moment map, symplectic quotient</td>
+</tr>
+<tr>
+<td>$Sp(2n,K)$, $\mathfrak{sp}(2n,K)$, $J$</td>
+<td>Symplectic group, Lie algebra, matrix of the form</td>
+</tr>
+<tr>
+<td>$\operatorname{Lag}(V)$, $\operatorname{Pf}(\Omega)$</td>
+<td>Lagrangian Grassmannian, Pfaffian</td>
+</tr>
+<tr>
+<td>$g_J$, $J$</td>
+<td>Compatible metric and almost complex structure</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+<tr>
+<td>$\operatorname{Symp}(M,\omega)$, $\mathcal{L}_X$</td>
+<td>The symplectomorphism group of $(M,\omega)$; the Lie derivative</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Vladimir I. Arnold, <em>Mathematical Methods of Classical Mechanics</em> (Springer, 2nd ed. 1989), for the symplectic form, the Hamiltonian systems and the reduction.</li>
+<li>Ralph Abraham and Jerrold E. Marsden, <em>Foundations of Mechanics</em> (Benjamin/Cummings, 2nd ed. 1978), for the moment maps, the symplectic reduction and the Hamiltonian actions.</li>
+<li>Victor Guillemin and Shlomo Sternberg, <em>Symplectic Techniques in Physics</em> (Cambridge University Press, 1984), for the moment map, the coadjoint orbits and the reduction in the geometric form.</li>
+<li>Dusa McDuff and Dietmar Salamon, <em>Introduction to Symplectic Topology</em> (Oxford University Press, 3rd ed. 2017), for the global symplectic geometry, the Darboux theorem and the symplectomorphism group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

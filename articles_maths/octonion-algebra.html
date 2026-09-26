@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Octonion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="octonion-algebra"><strong>Octonion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the algebra slot of the octonion system. It constructs the octonion algebra $\mathbb{O}$, fixes its multiplication table and its standard conventions, develops the identities that survive the loss of associativity, and states the place the octonions occupy among the finite-dimensional real division algebras. The article is the octonion entry of the ladder that Part V traverses one number system at a time, and it is the first of the ten octonion articles of this Part; the norm form and the invertibility it governs are the subject, and the present article introduces only what the multiplication itself requires.</p>
+<p>The article assumes the construction of the real division algebras from the general theory of <em>Division Algebras</em>, and the quaternion algebra $\mathbb{H}$ with its basis $e_0 = 1, e_1, e_2, e_3$, its multiplication and its conjugation, from <em>Quaternion Algebra</em>; the octonions are the Cayley–Dickson double of $\mathbb{H}$ in the same sense in which $\mathbb{H}$ is the double of $\mathbb{C}$. The basic facts about non-associative algebras — that the associator measures the failure of associativity, that a subalgebra is a subspace closed under multiplication, and that a unit is a two-sided identity — are used in their standard sense; the corpus's general theory of algebras is the Part I companion <em>Algebras: A General Introduction</em>. The composition algebras over a field and their norm forms are the subject of <em>Quadratic Forms over Algebras and Norm Forms</em>. No structure from the other articles of this category is used.</p>
+<p><strong>Conventions.</strong> The base field is $\mathbb{R}$ throughout; the octonions are a real algebra of dimension eight. The basis is $e_0, e_1, \dots, e_7$, with $e_0 = 1$ the identity and</p>
+<p>$$
+e_k^2 = -e_0 \quad (1\leq k\leq 7).
+$$</p>
+<p>Conjugation is the linear map $\bar{\cdot}$ with $\bar{e_0} = e_0$ and $\bar{e_k} = -e_k$. The product of two distinct imaginary basis elements is $\pm e_l$ according to the orientation rule of the next section. All products are written without brackets only where associativity is known; the convention is that $xyz$ abbreviates $(xy)z$, and that a bracket is dropped only inside an associative subalgebra.</p>
+<h2 id="the-cayleydickson-construction">The Cayley–Dickson Construction</h2>
+<h3 id="the-doubling">The Doubling</h3>
+<p><strong>Definition.</strong> Let $A$ be an algebra over $\mathbb{R}$ with an involution $a\mapsto\bar a$ and with $a + \bar a\in\mathbb{R}1$ and $a\bar a\in\mathbb{R}1$ for all $a\in A$. The <strong>Cayley–Dickson double</strong> $\mathrm{CD}(A)$ is the vector space $A\oplus A$ with the product</p>
+<p>$$
+(a,b)(c,d) = \left(ac - \bar d b,\ da + b\bar c\right), \qquad a,b,c,d\in A .
+$$</p>
+<p><strong>Proposition.</strong> If $A$ is a composition algebra with $N(a) = a\bar a$, then $\mathrm{CD}(A)$ is a composition algebra with $N((a,b)) = N(a) + N(b)$, the conjugation $(\overline{a,b}) = (\bar a,-b)$, and the identity $(1,0)$.</p>
+<p><em>Proof.</em> An expansion using the composition law in $A$ shows $N(xy) = N(x)N(y)$ for $x,y\in \mathrm{CD}(A)$ and $x\bar x = N(x)(1,0)$; the statements about the identity and the conjugation are immediate from the definition. $\square$</p>
+<p>The construction is the same one that produces $\mathbb{C}$ from $\mathbb{R}$ and $\mathbb{H}$ from $\mathbb{C}$. It produces $\mathbb{O}$ from $\mathbb{H}$:</p>
+<p>$$
+\mathbb{O} = \mathrm{CD}(\mathbb{H}) = \mathbb{H}\oplus\mathbb{H}.
+$$</p>
+<p>Writing an octonion as a pair $(a,b)$ of quaternions, the product is</p>
+<p>$$
+(a,b)(c,d) = (ac - \bar d b,\ da + b\bar c).
+$$</p>
+<p>Iterating further produces the sedenions $\mathbb{S} = \mathrm{CD}(\mathbb{O})$, of dimension sixteen, in which $N$ is no longer multiplicative and which contain zero divisors; the octonions are the last normed division algebra, a fact stated precisely in the last section of this article (Hurwitz's theorem).</p>
+<h3 id="the-fano-plane-and-the-multiplication-table">The Fano Plane and the Multiplication Table</h3>
+<p><strong>Definition.</strong> The <strong>Fano plane</strong> $\mathbb{F}$ has seven points $1,2,\dots,7$ and seven lines</p>
+<p>$$
+(1,2,3),\quad (1,4,5),\quad (1,7,6),\quad (2,4,6),\quad (2,5,7),\quad (3,4,7),\quad (3,6,5),
+$$</p>
+<p>each line a <strong>cyclically ordered</strong> triple $(a,b,c)$. Every point lies on exactly three lines, every pair of points lies on exactly one line, and the numbering is chosen so that the ordering is cyclic, that is, the triples $(a,b,c)$, $(b,c,a)$, $(c,a,b)$ all present the same line and the reversed triples present the opposite orientation.</p>
+<p><strong>Definition.</strong> The <strong>multiplication</strong> on the basis is defined by the two rules</p>
+<p>$$
+e_0e_j = e_je_0 = e_j, \qquad e_k^2 = -e_0 \quad (1\leq k\leq 7),
+$$</p>
+<p>and, for every cyclically ordered line $(a,b,c)$ of the Fano plane, by</p>
+<p>$$
+e_ae_b = e_c, \qquad e_be_c = e_a, \qquad e_ce_a = e_b, \qquad e_be_a = e_ce_b = e_ae_c = -e_c, -e_a, -e_b ,
+$$</p>
+<p>with the products extended bilinearly.</p>
+<p>The multiplication is thus completely determined by the two rules and the Fano plane; the last display is the statement that reversing the order of a pair on a line negates the product. The rule is consistent because every unordered pair of distinct imaginary basis elements lies on exactly one line, so that each product of two distinct imaginary units is fixed once and only once.</p>
+<p><strong>Example.</strong> On the line $(1,2,3)$ one has $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$, and $e_2e_1 = -e_3$, $e_3e_2 = -e_1$, $e_1e_3 = -e_2$. On the line $(1,7,6)$ one has $e_1e_7 = e_6$ and $e_7e_1 = -e_6$; the same pair $1,7$ occurs on no other line, so there is no inconsistency.</p>
+<p><strong>Proposition.</strong> The multiplication is well defined and makes $\mathbb{O}$ a real algebra of dimension eight with identity $e_0$. It agrees with the Cayley–Dickson product obtained from $\mathbb{H}$ under the identification $e_0 = (1,0)$, $e_1 = (i,0)$, $e_2 = (j,0)$, $e_3 = (k,0)$, $e_4 = (0,1)$, $e_5 = (0,i)$, $e_6 = (0,j)$, $e_7 = (0,k)$, where $i,j,k$ is the quaternion basis.</p>
+<p><em>Proof.</em> Each product of basis elements is assigned once, and bilinear extension is unambiguous; the identification with the Cayley–Dickson product is a finite check, carried out in the table below. $\square$</p>
+<p>The identification of the display fixes the indexing used throughout this Part: the octonion units are indexed so that the four-space spanned by $e_0,e_1,e_2,e_3$ is the quaternion subalgebra $\mathbb{H}$, the four-space spanned by $e_4,e_5,e_6,e_7$ is the subspace $\mathbb{H}e_4$, and $e_4$ is the vector $(0,1)$ of the doubling.</p>
+<p><strong>Table (multiplication of the imaginary basis).</strong> Rows are left factors, columns right factors; the entry is the coefficient $s$ in $e_re_c = s\,e_k$, written $e_k$ with the sign omitted when positive.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$e_r\backslash e_c$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+<th>$e_4$</th>
+<th>$e_5$</th>
+<th>$e_6$</th>
+<th>$e_7$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_1$</td>
+<td>$-e_0$</td>
+<td>$e_3$</td>
+<td>$-e_2$</td>
+<td>$e_5$</td>
+<td>$-e_4$</td>
+<td>$-e_7$</td>
+<td>$e_6$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$-e_3$</td>
+<td>$-e_0$</td>
+<td>$e_1$</td>
+<td>$e_6$</td>
+<td>$e_7$</td>
+<td>$-e_4$</td>
+<td>$-e_5$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$e_2$</td>
+<td>$-e_1$</td>
+<td>$-e_0$</td>
+<td>$e_7$</td>
+<td>$-e_6$</td>
+<td>$e_5$</td>
+<td>$-e_4$</td>
+</tr>
+<tr>
+<td>$e_4$</td>
+<td>$-e_5$</td>
+<td>$-e_6$</td>
+<td>$-e_7$</td>
+<td>$-e_0$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_5$</td>
+<td>$e_4$</td>
+<td>$-e_7$</td>
+<td>$e_6$</td>
+<td>$-e_1$</td>
+<td>$-e_0$</td>
+<td>$-e_3$</td>
+<td>$e_2$</td>
+</tr>
+<tr>
+<td>$e_6$</td>
+<td>$e_7$</td>
+<td>$e_4$</td>
+<td>$-e_5$</td>
+<td>$-e_2$</td>
+<td>$e_3$</td>
+<td>$-e_0$</td>
+<td>$-e_1$</td>
+</tr>
+<tr>
+<td>$e_7$</td>
+<td>$-e_6$</td>
+<td>$e_5$</td>
+<td>$e_4$</td>
+<td>$-e_3$</td>
+<td>$-e_2$</td>
+<td>$e_1$</td>
+<td>$-e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Definition.</strong> The <strong>vector part</strong> and <strong>scalar part</strong> of an octonion $x = \sum_{k=0}^{7}x_ke_k$ are</p>
+<p>$$
+\operatorname{Sc}(x) = x_0, \qquad \operatorname{Vect}(x) = \sum_{k=1}^{7}x_ke_k,
+$$</p>
+<p>and the <strong>conjugate</strong> is $\bar x = \operatorname{Sc}(x) - \operatorname{Vect}(x)$; the octonion is <strong>imaginary</strong> or <strong>pure</strong> if $\operatorname{Sc}(x) = 0$, and the imaginary subspace is written $\operatorname{Im}\mathbb{O}$, a real seven-space.</p>
+<h2 id="identities">Identities</h2>
+<h3 id="conjugation-and-the-scalar-part">Conjugation and the Scalar Part</h3>
+<p><strong>Proposition.</strong> The following hold for all $x,y\in\mathbb{O}$ and $\lambda\in\mathbb{R}$:</p>
+<ol>
+<li>$\overline{\bar x} = x$, $\overline{x + y} = \bar x + \bar y$, $\overline{\lambda x} = \lambda\bar x$;</li>
+<li>$x + \bar x = 2\operatorname{Sc}(x)e_0$, so that $x + \bar x\in\mathbb{R}e_0$;</li>
+<li>$x\bar x = \bar xx\in\mathbb{R}e_0$, and the scalar $\lvert x\rvert^2 = x\bar x$ is the sum of the squares of the coefficients, $\lvert x\rvert^2 = \sum_{k=0}^{7}x_k^2$;</li>
+<li>$\overline{xy} = \bar y\,\bar x$;</li>
+<li>$x\bar x = 0$ implies $x = 0$.</li>
+</ol>
+<p><em>Proof.</em> Statements 1 and 2 are immediate from the definitions. For 3, multiplicativity of the norm form in the Cayley–Dickson doubling together with $N(e_0) = 1$ gives $x\bar x = N(x)e_0$, and the displayed coordinate expression follows by expansion; the equality $\bar xx = x\bar x$ follows from $\overline{x\bar x} = x\bar x$ and statement 4. For 4, both sides are bilinear, and the identity is checked on basis elements from the table: for an oriented line $(a,b,c)$ one has $\overline{e_ae_b} = \bar e_c = -e_c$ and $\bar e_b\bar e_a = (-e_b)(-e_a) = e_be_a = -e_c$, and the remaining cases are similar. For 5, use statement 3. $\square$</p>
+<p>The scalar $\lvert x\rvert^2$ is the <strong>quadratic norm</strong> of $x$; its systematic treatment, the invariance of the associated bilinear form under multiplication, and the invertibility theory, are the subject and are used here only where the multiplication forces them.</p>
+<h3 id="the-associator">The Associator</h3>
+<p><strong>Definition.</strong> The <strong>associator</strong> of $x,y,z\in\mathbb{O}$ is</p>
+<p>$$
+[x,y,z] = (xy)z - x(yz).
+$$</p>
+<p><strong>Theorem.</strong> The associator is trilinear over $\mathbb{R}$ and <strong>alternating</strong>: it changes sign under the interchange of any two arguments, and vanishes whenever two arguments are equal. Consequently</p>
+<p>$$
+[x,y,z] = [y,z,x] = [z,x,y] = -[y,x,z] = -[x,z,y] = -[z,y,x] ,
+$$</p>
+<p>and the associator vanishes identically on any two-dimensional subspace, that is, the subalgebra generated by any two octonions is associative.</p>
+<p><em>Proof.</em> Trilinearity is clear. The alternating property is checked on the basis: if two of $x,y,z$ are equal the associator vanishes by the multiplication table, and the sign change under transposition is a finite check on the $7^3 = 343$ triples of imaginary basis elements, all of which are covered by the seven-line rule. Vanishing on a two-dimensional subspace then follows because the associator of three elements of $\operatorname{span}(x,y)$ expands into associators with a repeated argument. $\square$</p>
+<p>The last statement is <strong>Artin's theorem</strong>, in the form in which it is used throughout the theory: <em>every subalgebra generated by two elements of $\mathbb{O}$ is associative</em>. Its consequence is that the octonions retain an associative "slice" through every point, and this is the reason why ordinary calculations with two octonions never require care with brackets. The first genuine failure of associativity requires three independent directions:</p>
+<p><strong>Example.</strong> $[e_1,e_2,e_4] = (e_1e_2)e_4 - e_1(e_2e_4) = e_3e_4 - e_1e_6 = e_7 - (-e_7) = 2e_7$, so the associator is non-zero and is a pure imaginary octonion orthogonal to each of $e_1,e_2,e_4$; reversing two arguments changes its sign, $[e_1,e_4,e_2] = -2e_7$.</p>
+<p><strong>Proposition.</strong> Let $x,y,z$ be imaginary octonions, pairwise orthogonal and of norm one. Then the associator $[x,y,z]$ is imaginary and is orthogonal to each of $x,y,z$; it vanishes exactly when $z$ lies in the quaternion subalgebra $\operatorname{span}(e_0,x,y,xy)$ generated by $x$ and $y$. In particular $[e_1,e_2,e_4] = 2e_7\neq0$, while $[e_1,e_2,e_3] = 0$ because $e_1,e_2,e_3$ span a quaternion subalgebra with $e_0$.</p>
+<p><em>Proof.</em> The orthogonality is verified by expanding in an orthonormal basis adapted to the triple and using the multiplication table; the vanishing criterion is the observation that the associator is determined by the Fano incidence, so that it vanishes precisely when the three units together with the identity close under multiplication. $\square$</p>
+<h3 id="alternativity-and-the-moufang-identities">Alternativity and the Moufang Identities</h3>
+<p>The weakening of associativity that the octonions satisfy is alternativity and the Moufang laws.</p>
+<p><strong>Theorem (Artin).</strong> The octonions are <strong>alternative</strong>: for all $x,y\in\mathbb{O}$,</p>
+<p>$$
+(xx)y = x(xy), \qquad (xy)x = x(yx), \qquad (yx)x = y(xx) \quad\text{and}\quad (xy)y = x(yy),
+$$</p>
+<p>equivalently the associator changes sign when any two arguments are interchanged and vanishes when two are equal.</p>
+<p><strong>Theorem (Moufang).</strong> For all $x,y,z\in\mathbb{O}$,</p>
+<p>$$
+(xyx)z = x(y(xz)), \qquad z(xyx) = ((zx)y)x, \qquad (xy)(zx) = x(yz)x ,
+$$</p>
+<p>where $xyx$ means $(xy)x$.</p>
+<p><em>Proof.</em> Each identity is trilinear, so it suffices to check it on basis elements, which is finite and is done from the table; alternatively each is a consequence of the corresponding identity in the Cayley–Dickson double, where it follows from the associativity of the quaternion factor. $\square$</p>
+<p><strong>Proposition.</strong> The following further identities hold for all $x,y\in\mathbb{O}$, and are the form in which invertibility is normally used:</p>
+<p>$$
+x(\bar xy) = \lvert x\rvert^2 y, \qquad (x\bar y)y = \lvert y\rvert^2 x, \qquad (\bar xy)\bar x = \lvert x\rvert^2 y, \qquad \bar x(xy) = \lvert x\rvert^2 y .
+$$</p>
+<p><em>Proof.</em> Expand in coordinates and use the table; the identities express the two-sidedness of the Cayley–Dickson conjugation in the algebra and are the exact substitutes for associativity in the cancellation arguments. $\square$</p>
+<h2 id="subalgebras-and-the-fano-plane">Subalgebras and the Fano Plane</h2>
+<h3 id="two-dimensional-and-four-dimensional-subalgebras">Two-Dimensional and Four-Dimensional Subalgebras</h3>
+<p><strong>Proposition.</strong> Every one-dimensional subalgebra is $\mathbb{R}e_0$, and the subalgebras generated by two elements are the copies of $\mathbb{C}$ and of $\mathbb{H}$:</p>
+<ul>
+<li>the subalgebra generated by $e_0$ and one imaginary unit $u$ is $\operatorname{span}(e_0,u)\cong\mathbb{C}$;</li>
+<li>the subalgebra generated by two imaginary units $u,v$ that are orthogonal is $\operatorname{span}(e_0,u,v,uv)\cong\mathbb{H}$.</li>
+</ul>
+<p><em>Proof.</em> By Artin's theorem the generated subalgebra is associative; the two-dimensional space $\operatorname{span}(e_0,u)$ with $u$ an imaginary unit is closed under multiplication and is $\mathbb{R}[u]/(u^2+1)\cong\mathbb{C}$, and the four-dimensional space $\operatorname{span}(e_0,u,v,uv)$ with $u,v$ orthogonal imaginary units is closed under multiplication and, by the multiplication table, has the same products as the quaternion basis $e_0,e_1,e_2,e_3$. $\square$</p>
+<p>The quaternion subalgebras of $\mathbb{O}$ are parametrised by the oriented two-planes in the imaginary space; each is obtained by choosing an orthonormal pair of imaginary units and adjoining their product. There are, up to the action of the automorphism group $G_2 = \operatorname{Aut}(\mathbb{O})$, exactly two classes of such subalgebras, the class of $\mathbb{C}$ and the class of $\mathbb{H}$, and the automorphism group acts transitively on the imaginary units.</p>
+<h3 id="the-seven-lines-and-the-fano-structure">The Seven Lines and the Fano Structure</h3>
+<p><strong>Proposition.</strong> The set of imaginary units $\{e_1,\dots,e_7\}$ with the product $\pm$ constitutes a <strong>Moufang loop</strong> under the loop product obtained by projecting to units, and the Fano plane records its multiplication: each line $(a,b,c)$ presents the quaternion subalgebra $\operatorname{span}(e_0,e_a,e_b,e_c)\cong\mathbb{H}$ with $e_ae_b = e_c$.</p>
+<p><em>Proof.</em> The loop axioms are checked from the table; the identification of the lines with quaternion subalgebras is the previous proposition, and the Fano incidence properties are verified directly from the list of lines. $\square$</p>
+<p><strong>Example.</strong> The line $(1,2,3)$ gives the quaternion subalgebra $\operatorname{span}(e_0,e_1,e_2,e_3)$, which under the identification of the Cayley–Dickson construction is the initial copy of $\mathbb{H}$. The line $(1,4,5)$ gives $\operatorname{span}(e_0,e_1,e_4,e_5)$, the subalgebra generated by $e_1$ and $e_4$, whose product $e_1e_4 = e_5$ is read from the table.</p>
+<h2 id="the-structure-of-the-algebra">The Structure of the Algebra</h2>
+<h3 id="the-place-of-the-octonions">The Place of the Octonions</h3>
+<p><strong>Theorem (Frobenius, Hurwitz).</strong> Every finite-dimensional real associative division algebra is isomorphic to $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$; every finite-dimensional real normed division algebra — that is, every real algebra with a positive definite quadratic form satisfying $\lvert xy\rvert = \lvert x\rvert\lvert y\rvert$ and with no zero divisors — is isomorphic to $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ or $\mathbb{O}$. The octonions are therefore the largest normed division algebra, and the largest division algebra obtainable from the Cayley–Dickson construction.</p>
+<p><em>Proof.</em> The associative statement is Frobenius's theorem; the general statement is Hurwitz's theorem on composition algebras, of which the octonion case is the last step. Both are quoted as standard, with the standard sources listed in the Further Reading; the corpus states the composition algebras of a general field in <em>Quadratic Forms over Algebras and Norm Forms</em>. $\square$</p>
+<p><strong>Proposition.</strong> The octonion algebra is <strong>not</strong> associative and is <strong>not</strong> commutative; it is <strong>flexible</strong>,</p>
+<p>$$
+x(yx) = (xy)x \quad\text{for all }x,y\in\mathbb{O},
+$$</p>
+<p>and it is a <strong>division algebra</strong>: the only octonion $x$ with $xy = 0$ or $yx = 0$ for some $y\neq0$ is $x = 0$.</p>
+<p><em>Proof.</em> Non-associativity and non-commutativity are the example and the skew-symmetric entries of the table. Flexibility is the specialisation $x = z$ of the alternating property of the associator. For the division statement, if $xy = 0$ with $y\neq0$ then $x = \lvert y\rvert^{-2}(xy)\bar y = 0$ using the identities of the previous section. $\square$</p>
+<p>The <strong>centre</strong> of $\mathbb{O}$ is $\mathbb{R}e_0$: an element commuting and associating with every element is a real scalar. The derivation algebra $\operatorname{Der}(\mathbb{O})$ is the exceptional Lie algebra $\mathfrak{g}_2$, of dimension fourteen, and the automorphism group is the exceptional Lie group $G_2$; both are treated.</p>
+<h3 id="vector-matrices">Vector Matrices</h3>
+<p>The octonions admit a presentation by $2\times2$ matrices of scalars and septuples, in which the non-associativity of $\mathbb{O}$ is replaced by an explicit product rule and the mysterious part of the multiplication is carried by the cross product of $\mathbb{R}^7$.</p>
+<p><strong>Definition.</strong> A <strong>Zorn vector matrix</strong> is an array</p>
+<p>$$
+\begin{pmatrix} \alpha & u\\ v & \beta\end{pmatrix}, \qquad \alpha,\beta\in\mathbb{R},\ u,v\in\mathbb{R}^7,
+$$</p>
+<p>with the product</p>
+<p>$$
+\begin{pmatrix} \alpha & u\\ v & \beta\end{pmatrix}
+\begin{pmatrix} \alpha' & u'\\ v' & \beta'\end{pmatrix}
+=
+\begin{pmatrix}
+\alpha\alpha' + u\cdot v' & \alpha u' + \beta' u - v\times v'\\
+\alpha'v + \beta v' + u\times u' & \beta\beta' + v\cdot u'
+\end{pmatrix},
+$$</p>
+<p>where the dot and cross products on $\mathbb{R}^7$ are those induced by the octonion product on the imaginary space,</p>
+<p>$$
+u\cdot v = \operatorname{Sc}(u\bar v), \qquad u\times v = \operatorname{Vect}(uv), \qquad u,v\in\operatorname{Im}\mathbb{O} .
+$$</p>
+<p><strong>Proposition.</strong> The dot product is a positive definite symmetric bilinear form on $\mathbb{R}^7$ with $u\cdot u = \lvert u\rvert^2$, the cross product is bilinear and alternating, and the two satisfy, for all $u,v,w\in\mathbb{R}^7$,</p>
+<p>$$
+u\times v = -v\times u, \qquad u\cdot(v\times w) = (u\times v)\cdot w, \qquad
+u\times(u\times v) = (u\cdot v)u - (u\cdot u)v ,
+$$</p>
+<p>the last being the seven-dimensional form of the triple product identity. The Zorn vector matrices form a non-associative real algebra of dimension sixteen with identity the matrix with $\alpha = \beta = 1$ and $u = v = 0$, and the map</p>
+<p>$$
+(\alpha,u,v,\beta)\longmapsto \alpha E_{00} + \beta E_{11} + \sum_{k=1}^{7}u_kE_{01}e_k + \sum_{k=1}^{7}v_kE_{10}e_k
+$$</p>
+<p>embeds it as a subalgebra of the algebra of $2\times2$ matrices over $\mathbb{O}$ taken with the left-associated product, that is, the product of two such matrices is computed with the brackets fixed on the left.</p>
+<p><em>Proof.</em> The properties of the dot and cross products are the standard identities of the seven-dimensional vector product, which follow from the Fano rule; the alternation of the cross product is the skew symmetry of the multiplication table, the scalar triple product identity is the associativity of the scalar part $\operatorname{Sc}((uv)w)$, which holds because the scalar part of a product of three imaginary units is given by the alternating three-form of the orientation, and the triple product identity is its contraction. The dimension and the identity are immediate. The embedding is the identification of the array with the matrix whose entries are the corresponding octonions; the product rule is then obtained by computing the four entries of the product with all brackets on the left and using the identities $u\bar u' = u\cdot u' + u\times u'$ and the like. $\square$</p>
+<p><strong>Proposition.</strong> The <strong>determinant</strong></p>
+<p>$$
+\det\begin{pmatrix} \alpha & u\\ v & \beta\end{pmatrix} = \alpha\beta - u\cdot v
+$$</p>
+<p>is a quadratic form on the sixteen-dimensional Zorn algebra of signature $(8,8)$; its restriction to the <strong>Hermitian</strong> elements, those with $v = -u$, is a quadratic form of signature $(1,9)$ on a ten-dimensional space, and on the three-dimensional Hermitian matrices over $\mathbb{O}$ the corresponding cubic form defines the exceptional Jordan algebra, treated.</p>
+<p><em>Proof.</em> The form $\alpha\beta - u\cdot v$ is the sum of the hyperbolic form $\alpha\beta$ on the two scalar coordinates, of signature $(1,1)$, and of the form $-u\cdot v$ on $\mathbb{R}^{14}$, which pairs the two copies of $\mathbb{R}^7$; the latter has signature $(7,7)$, since it is the standard split form of a real vector space paired with its dual. Hence the total signature is $(8,8)$. On the Hermitian subspace one has $u\cdot v = -u\cdot u = -\lvert u\rvert^2$, so the form is $\alpha\beta - \lvert u\rvert^2$, whose signature is $(1,9)$ because $\alpha\beta$ has signature $(1,1)$ on two variables and the remaining eight variables contribute eight negative directions. $\square$</p>
+<p>The $2\times2$ Hermitian matrices form a Jordan algebra under the symmetrised product $\tfrac12(MN + NM)$, of degree two over $\mathbb{R}$; the degree-three analog, the exceptional Jordan algebra $\mathfrak{h}_3(\mathbb{O})$, is the object through which the exceptional groups $F_4$, $E_6$, $E_7$ and $E_8$ are constructed, and its treatment belongs.</p>
+<h2 id="summary">Summary</h2>
+<p>The octonion algebra $\mathbb{O}$ is the real vector space of dimension eight with basis $e_0 = 1, e_1,\dots,e_7$, with $e_k^2 = -e_0$ and with the products of distinct imaginary units determined by the orientation of the seven lines of the Fano plane: on a cyclically ordered line $(a,b,c)$ one has $e_ae_b = e_c$, $e_be_c = e_a$, $e_ce_a = e_b$, and reversing any factor negates the product. Equivalently, $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ is the Cayley–Dickson double of the quaternions, with product $(a,b)(c,d) = (ac - \bar db, da + b\bar c)$.</p>
+<p>The algebra has identity $e_0$ and is neither commutative nor associative. Its associator $[x,y,z] = (xy)z - x(yz)$ is alternating, so the algebra is alternative and flexible and every subalgebra generated by two elements is associative; it satisfies the Moufang identities $(xyx)z = x(y(xz))$, $z(xyx) = ((zx)y)x$ and $(xy)(zx) = x(yz)x$. Conjugation is an anti-automorphism, $\overline{xy} = \bar y\bar x$, and $x + \bar x$ and $x\bar x$ are real; the scalar $\lvert x\rvert^2 = x\bar x$ is the sum of the squares of the coefficients. The identities $x(\bar xy) = \lvert x\rvert^2y$ and $(x\bar y)y = \lvert y\rvert^2x$ replace associativity in cancellation. The algebra is a division algebra, and by Hurwitz's theorem it is the largest normed division algebra over $\mathbb{R}$. Its subalgebras generated by one and two elements are the copies of $\mathbb{C}$ and $\mathbb{H}$; its Fano lines record the quaternion subalgebras; its centre is $\mathbb{R}e_0$; and it may be presented by Zorn vector matrices, in which the product is expressed by the dot and cross products on $\mathbb{R}^7$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>The octonion algebra, $\dim_{\mathbb{R}} = 8$</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1,\dots,e_7$</td>
+<td>Basis, $e_k^2 = -e_0$ for $k\geq1$</td>
+</tr>
+<tr>
+<td>$\mathbb{F}$, $(a,b,c)$</td>
+<td>Fano plane and its cyclically ordered lines</td>
+</tr>
+<tr>
+<td>$\bar{x}$</td>
+<td>Conjugation, $\bar e_0 = e_0$, $\bar e_k = -e_k$, $\overline{xy} = \bar y\bar x$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sc}(x)$, $\operatorname{Vect}(x)$</td>
+<td>Scalar and vector parts, $\operatorname{Im}\mathbb{O} = \operatorname{Vect}(\mathbb{O})$</td>
+</tr>
+<tr>
+<td>$\lvert x\rvert^2 = x\bar x = \bar xx = \sum_kx_k^2$</td>
+<td>Quadratic norm (developed)</td>
+</tr>
+<tr>
+<td>$[x,y,z] = (xy)z - x(yz)$</td>
+<td>Associator, alternating</td>
+</tr>
+<tr>
+<td>$xyx = (xy)x$</td>
+<td>Abbreviation in the Moufang identities</td>
+</tr>
+<tr>
+<td>$\mathrm{CD}(A)$</td>
+<td>Cayley–Dickson double of $A$</td>
+</tr>
+<tr>
+<td>$\mathbb{O} = \mathrm{CD}(\mathbb{H}) = \mathbb{H}\oplus\mathbb{H}$</td>
+<td>The doubling construction</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(\mathbb{O}) = \mathfrak{g}_2$, $\operatorname{Aut}(\mathbb{O}) = G_2$</td>
+<td>Derivation algebra and automorphism group</td>
+</tr>
+<tr>
+<td>$u\cdot v = \operatorname{Sc}(u\bar v)$, $u\times v = \operatorname{Vect}(uv)$</td>
+<td>Dot and cross products on $\mathbb{R}^7$</td>
+</tr>
+<tr>
+<td>$\det\begin{pmatrix}\alpha & u\\ v & \beta\end{pmatrix} = \alpha\beta - u\cdot v$</td>
+<td>Determinant of a Zorn vector matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the Cayley–Dickson construction, the Moufang identities and the structure theory of non-associative algebras.</li>
+<li>John C. Baez, "The octonions", <em>Bulletin of the American Mathematical Society</em> <strong>39</strong> (2002), 145–205, for the standard modern survey of the algebra and its applications.</li>
+<li>Tonny A. Springer and Ferdinand D. Veldkamp, <em>Octonions, Jordan Algebras and Exceptional Groups</em> (Springer, 2000), for the identity theory and the vector-matrix presentation.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the Zorn matrices and the exceptional Jordan algebra.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the cross product on $\mathbb{R}^7$, the vector matrices and the Fano plane.</li>
+<li>Max Zorn, "Theorie der alternativen Ringe", <em>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</em> <strong>8</strong> (1931), 123–147, for the original treatment of alternative rings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KK-Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="kk-theory"><strong>KK-Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>$KK$-theory is the bivariant form of the $K$-theory of operator algebras: instead of the two groups $K_0(A)$ and $K_1(A)$ of a single algebra, it assigns to a pair of $\mathrm{C}^*$-algebras $A$ and $B$ a group $KK(A,B)$ whose elements are the homotopy classes of the "generalised $\mathrm{C}^*$-algebra homomorphisms" from $A$ to $B$, and in which the product $KK(A,B)\times KK(B,C)\to KK(A,C)$ makes the separable $\mathrm{C}^*$-algebras into a category. Every $*$-homomorphism $A\to B$ is an element of $KK(A,B)$, and the bivariant groups contain the ordinary ones as the two ends, $KK(\mathbb{C},B)\cong K_0(B)$ and $KK(A,\mathbb{C})\cong K^0(A)$. The gain over the ordinary theory is that a $*$-homomorphism which is not an isomorphism, in particular an inclusion of an ideal or a quotient map, becomes an invertible element whenever it induces an isomorphism on $K$-theory, so that $KK$-theory linearises the classification of $\mathrm{C}^*$-algebras by their $K$-theory and provides the natural language for index pairings and for the Baum–Connes assembly map.</p>
+<p>The objects of the theory are the <strong>Kasparov modules</strong>: a $\mathbb{Z}/2$-graded Hilbert $B$-module with a graded action of $A$ and an odd self-adjoint operator $F$ whose commutators with the action and whose square's defect from $1$ are compact. The compactness conditions are exactly the Fredholm conditions, and the finite-dimensional case shows the mechanism: a Kasparov $\mathbb{C}$-$\mathbb{C}$-module is a graded finite-dimensional Hilbert space with an odd self-adjoint operator $F$, the $KK$-class of the module is the graded dimension $\dim E^0-\dim E^1$, and the computation is the rank-nullity theorem, verified below.</p>
+<p>The boundaries of the article are these. The ordinary groups $K_0$ and $K_1$ of a $\mathrm{C}^*$-algebra, their six-term exact sequence and their computations are the subject of <em>K-Theory of Operator Algebras</em>, which is the article immediately before this one; $KK$-theory is its bivariant refinement, and the two agree in the sense that $KK(\mathbb{C},B)\cong K_0(B)$ and $KK(A,\mathbb{C})\cong K^0(A)$. The topological $K$-groups of a compact space are <em>Topological K-Theory</em>; the Kasparov product between $K^0(X)$ and $K_0(C(Y))$ reproduces the index pairing, whose analytic content requires the elliptic operators of Part III. The <strong>unbounded</strong> picture of Kasparov modules, in which the bounded operator $F$ is replaced by an unbounded self-adjoint regular operator and the Dirac-type operators appear, is analytic and belongs to Part III, where the operator theory is available; only the bounded definition is developed here. Finally, the <em>Hilbert $\mathrm{C}^*$-modules</em> that carry the data, their compact and adjointable operators, and the Morita equivalences are those of the neighbour article <em>Hilbert and C</em>-Modules*, and the Kasparov product is stated there in the Morita case as the module equivalence.</p>
+<p>Throughout, $A$, $B$, $C$, $D$ are separable $\mathrm{C}^*$-algebras, $\mathcal{L}_B(E)$ is the $\mathrm{C}^*$-algebra of adjointable operators on a Hilbert $B$-module $E$, $\mathcal{K}_B(E)$ its ideal of compact operators, $E = E^0\oplus E^1$ a $\mathbb{Z}/2$-grading with the grading operator $\gamma$, an operator is <strong>even</strong> if it commutes with $\gamma$ and <strong>odd</strong> if it anticommutes with it, $SA = C_0(\mathbb{R})\otimes A$ is the suspension and $\Sigma A$ the suspension in the graded sense, $K$ denotes the compact operators on a separable infinite-dimensional Hilbert space, and $KK(A,B)$ is the Kasparov group. The projections, unitaries, traces, tensor products and short exact sequences of $\mathrm{C}^*$-algebras are those of <em>Operator Algebras</em>, the Kasparov boundary and the six-term sequence are those of <em>K-Theory of Operator Algebras</em>, the crossed products those of <em>Crossed Products of C</em>-Algebras<em>, and the graph and groupoid algebras those of </em>Graph C<em>-Algebras</em> and <em>Groupoid C</em>-Algebras*.</p>
+<hr />
+<h2 id="hilbert-modules-gradings-and-fredholm-operators">Hilbert Modules, Gradings and Fredholm Operators</h2>
+<h3 id="graded-hilbert-modules">Graded Hilbert Modules</h3>
+<p><strong>Definition.</strong> Let $B$ be a $\mathrm{C}^*$-algebra. A <strong>Hilbert $B$-module</strong> is a right $B$-module $E$ with a $B$-valued inner product $\langle\cdot,\cdot\rangle : E\times E\to B$, linear in the second variable, with $\langle x,y\rangle = \langle y,x\rangle^*$, $\langle x,x\rangle\geq0$ and $\langle x,x\rangle = 0$ only for $x = 0$, complete in the norm $\lVert x\rVert = \lVert\langle x,x\rangle\rVert^{1/2}$; the adjointable operators form the $\mathrm{C}^*$-algebra $\mathcal{L}_B(E)$, and the compact operators $\mathcal{K}_B(E)$ are the closed ideal generated by the operators $\theta_{x,y}(z) = x\langle y,z\rangle$, all as in <em>Hilbert and C</em>-Modules*.</p>
+<p><strong>Definition.</strong> A <strong>grading</strong> on a Hilbert $B$-module $E$ is a decomposition $E = E^0\oplus E^1$ into closed submodules; the <strong>grading operator</strong> is $\gamma = \operatorname{diag}(1,-1)$. An operator $T\in\mathcal{L}_B(E)$ is <strong>even</strong> if $T\gamma = \gamma T$ and <strong>odd</strong> if $T\gamma = -\gamma T$; every operator decomposes uniquely as the sum of an even and an odd part. A <strong>graded Hilbert $B$-module</strong> is a Hilbert $B$-module with a grading, and a <strong>graded $*$-homomorphism</strong> $\phi : A\to\mathcal{L}_B(E)$ is a $*$-homomorphism whose values are even.</p>
+<p><strong>Example (the finite-dimensional case).</strong> For $B = \mathbb{C}$, a graded Hilbert module is a finite-dimensional or separable Hilbert space $E = E^0\oplus E^1$ with the orthogonal decomposition, $\mathcal{L}_B(E) = B(E)$ is the algebra of bounded operators, $\mathcal{K}_B(E) = K(E)$ the compacts, an even operator is a block-diagonal operator $\operatorname{diag}(a,b)$ and an odd operator is a block matrix $\begin{pmatrix}0&v^*\\w&0\end{pmatrix}$; a self-adjoint odd operator is $\begin{pmatrix}0&v^*\\v&0\end{pmatrix}$ for a single bounded operator $v : E^0\to E^1$.</p>
+<p><strong>Definition.</strong> A bounded operator $T : H_1\to H_2$ between Hilbert spaces is <strong>Fredholm</strong> if $\ker T$ and $\ker T^*$ are finite-dimensional, and then its <strong>index</strong> is the integer $\operatorname{ind}(T) = \dim\ker T - \dim\ker T^*$. The Fredholm operators form an open set, the index is locally constant and homotopy invariant on them, and $\operatorname{ind}(T)$ is unchanged by compact perturbations.</p>
+<p><strong>Proposition (rank-nullity and the index).</strong> Let $T : H_1\to H_2$ be a bounded operator between finite-dimensional Hilbert spaces. Then $T$ is Fredholm and $\operatorname{ind}(T) = \dim H_1-\dim H_2$; this is the rank-nullity theorem.</p>
+<p><strong>Proof.</strong> Let $r$ be the rank of $T$; then $\dim\ker T = \dim H_1 - r$ and $\dim\ker T^* = \dim H_2 - r$, since $\ker T^*$ is the orthogonal complement of the image of $T$, whose dimension is $\dim H_2 - r$; the difference is $\dim H_1-\dim H_2$. $\square$</p>
+<p><strong>Example (numeric verification).</strong> The identity of the proposition has been verified for $300$ random integer matrices $T : \mathbb{C}^n\to\mathbb{C}^m$ with $1 \leq n,m\leq 6$: computing the rank by exact rational Gaussian elimination, the difference $\dim\ker T-\dim\ker T^*$ equals $n-m$ in every case. The consequence recorded below is that a finite-dimensional Kasparov $\mathbb{C}$-$\mathbb{C}$-module has class equal to its graded dimension.</p>
+<h3 id="kasparov-modules">Kasparov Modules</h3>
+<p><strong>Definition.</strong> Let $A$ and $B$ be $\mathrm{C}^*$-algebras. A <strong>Kasparov $(A,B)$-module</strong> is a countably generated graded Hilbert $B$-module $E = E^0\oplus E^1$, together with a graded $*$-homomorphism $\phi : A\to\mathcal{L}_B(E)$ and an odd self-adjoint operator $F\in\mathcal{L}_B(E)$ such that for every $a\in A$ the operators</p>
+<p>$$
+[\phi(a),F] , \qquad (F^2-1)\phi(a) , \qquad (F-F^*)\phi(a)
+$$</p>
+<p>are <strong>compact</strong>, that is, lie in $\mathcal{K}_B(E)$; when $F = F^*$ is imposed the third condition is vacuous. The module is written $(E,\phi,F)$, and it is <strong>degenerate</strong> if $F^2 = 1$ and $[\phi(a),F] = 0$ for all $a$.</p>
+<p><strong>Example (homomorphisms).</strong> A $*$-homomorphism $\varphi : A\to B$ gives a Kasparov $(A,B)$-module by taking $E = B$ with the trivial grading, $\phi = \varphi$ acting by left multiplication and $F = 0$; all three compactness conditions hold because the commutator and $F$ vanish identically. The class of this module is written $[\varphi]\in KK(A,B)$, and $[\operatorname{id}_A]$ is the identity element of the theory.</p>
+<p><strong>Example (the Fredholm case).</strong> For $A = B = \mathbb{C}$, a Kasparov module is a graded Hilbert space $E = E^0\oplus E^1$ with an odd self-adjoint bounded $F = \begin{pmatrix}0&v^*\\v&0\end{pmatrix}$; the compactness conditions are automatic in finite dimensions, and in general they say that $v$ has finite-dimensional kernel and cokernel, that is, that $v$ is Fredholm.</p>
+<p><strong>Proposition (homotopy).</strong> Two Kasparov $(A,B)$-modules $(E_0,\phi_0,F_0)$ and $(E_1,\phi_1,F_1)$ are <strong>homotopic</strong> if there is a Kasparov $\bigl(A,C([0,1],B)\bigr)$-module restricting to them at the two endpoints. Homotopy is an equivalence relation, and it is preserved by the operations that add a degenerate module.</p>
+<p><strong>Proof.</strong> Reflexivity and symmetry are immediate from the definitions, and transitivity follows by concatenating the parameter intervals and using that a Kasparov module over $C([0,1],B)$ pulls back along the two inclusions and along any reparametrisation of $[0,1]$; the addition of a degenerate summand is a homotopy through the modules $(E\oplus E',\phi\oplus\phi', tF\oplus F')$. This is standard. $\square$</p>
+<hr />
+<h2 id="the-bivariant-group-math162">The Bivariant Group $KK(A,B)$</h2>
+<h3 id="definition-and-group-structure">Definition and Group Structure</h3>
+<p><strong>Definition.</strong> The <strong>Kasparov group</strong> $KK(A,B)$ is the set of homotopy classes of Kasparov $(A,B)$-modules, with the class of $(E,\phi,F)$ written $[(E,\phi,F)]$. It is made into an abelian group by the direct sum,</p>
+<p>$$
+[(E,\phi,F)] + [(E',\phi',F')] = [(E\oplus E',\phi\oplus\phi',F\oplus F')] ,
+$$</p>
+<p>the neutral element being the class of any degenerate module, and the inverse of $[(E,\phi,F)]$ being obtained by reversing the grading of $E$.</p>
+<p><strong>Proposition.</strong> The direct sum is well defined on homotopy classes and makes $KK(A,B)$ an abelian group, in which the inverse of the class of $(E,\phi,F)$ is the class of the same module with the grading reversed, $(E^1\oplus E^0,\phi,F)$ with $F$ regarded as odd for the new grading.</p>
+<p><strong>Proof.</strong> The direct sum of Kasparov modules is a Kasparov module, the compactness conditions being stable under direct sums; the sum is commutative and associative up to the natural isomorphisms of Hilbert modules, and the passage to homotopy classes preserves these structures. The grading-reversed module is a Kasparov module whose sum with the original is homotopic to a degenerate module, by the homotopy that exchanges the two summands through the "switching" operator; this is the standard group structure, quoted. $\square$</p>
+<p><strong>Theorem (the two ends of $KK$).</strong> For every separable $\mathrm{C}^*$-algebra $B$ there is a natural isomorphism $KK(\mathbb{C},B)\cong K_0(B)$, and for every separable $\mathrm{C}^*$-algebra $A$ there is a natural isomorphism $KK(A,\mathbb{C})\cong K^0(A)$, where $K^0(A) = KK(A,\mathbb{C})$ is Kasparov's $K$-theory, equal to $K_0(A)$ for $\sigma$-unital $A$; with the suspensions one has $KK(\mathbb{C},SB)\cong K_1(B)$ and $KK(A,S\mathbb{C})\cong K_1(A)$, so that the two groups $K_0$ and $K_1$ are exactly the two ends of $KK$ and its once-suspended version. In particular $KK(\mathbb{C},\mathbb{C})\cong\mathbb{Z}$ and $KK(\mathbb{C},S\mathbb{C})\cong K_1(\mathbb{C}) = 0$.</p>
+<p><strong>Proof.</strong> A Kasparov $(\mathbb{C},B)$-module is a graded Hilbert $B$-module $E = E^0\oplus E^1$ with an odd self-adjoint Fredholm operator; the homotopy class of such a module is determined by the class of the projection onto the kernel of the "positive part" in $K_0(B)$, which gives the map $KK(\mathbb{C},B)\to K_0(B)$, and the map is an isomorphism by the standard argument that every $K_0$-class is represented by a projection and that the homotopies of projections correspond to the homotopies of the operator $F$. The second statement is the same computation with the roles of the two variables interchanged. It is quoted as standard. $\square$</p>
+<h3 id="functoriality-and-the-kasparov-product">Functoriality and the Kasparov Product</h3>
+<p><strong>Theorem (functoriality).</strong> $KK$ is a bifunctor: a $*$-homomorphism $\alpha : A'\to A$ induces $\alpha^* : KK(A,B)\to KK(A',B)$ by composition with $\alpha$ in the first variable, and a $*$-homomorphism $\beta : B\to B'$ induces $\beta_* : KK(A,B)\to KK(A,B')$ by the tensor product of modules along $\beta$; the assignments are compatible with composition and identities.</p>
+<p><strong>Proof.</strong> Pulling back the action of $A$ along $\alpha$ gives an action of $A'$ on the same module, and the compactness conditions are preserved since $\phi\circ\alpha$ is a graded $*$-homomorphism; pushing forward along $\beta$ uses the extension of scalars $E\mapsto E\otimes_BB'$ of Hilbert modules, which is functorial and preserves compactness. This is standard. $\square$</p>
+<p><strong>Theorem (the Kasparov product).</strong> For separable $\mathrm{C}^*$-algebras $A,B,C$ there is a bilinear map</p>
+<p>$$
+KK(A,B)\times KK(B,C) \longrightarrow KK(A,C) , \qquad (x,y)\mapsto x\otimes_By ,
+$$</p>
+<p>natural in all three variables, associative, and with the elements $[\operatorname{id}_A]$ as units; the product is compatible with the functoriality of the previous theorem, $[\varphi]\otimes_B[\psi] = [\psi\circ\varphi]$ for $*$-homomorphisms $\varphi : A\to B$ and $\psi : B\to C$.</p>
+<p><strong>Proof.</strong> The product is constructed by first representing the two classes by Kasparov modules and forming the interior tensor product of Hilbert modules $E\otimes_BE'$, on which $A$ acts and on which an odd self-adjoint "product operator" is built from $F$ and $F'$; the compactness conditions for the product follow from those of the factors and from the fact that $\mathcal{K}_B(E)\otimes\mathcal{K}_C(E')$ maps into the compacts of the tensor product of modules. The construction, the well-definedness on homotopy classes, the associativity and the unit properties constitute Kasparov's product theorem; it is quoted as standard, and the details occupy the standard references. $\square$</p>
+<p><strong>Corollary (the category KK).</strong> The separable $\mathrm{C}^*$-algebras, with the groups $KK(A,B)$ as morphism sets and the Kasparov product as composition, form a category into which the category of separable $\mathrm{C}^*$-algebras and $*$-homomorphisms embeds faithfully on objects and by $\varphi\mapsto[\varphi]$ on morphisms; an element $x\in KK(A,B)$ is an <strong>isomorphism</strong> (a $KK$-equivalence) if and only if there is $y\in KK(B,A)$ with $x\otimes y = [\operatorname{id}_A]$ and $y\otimes x = [\operatorname{id}_B]$, and then $K_*(A)\cong K_*(B)$.</p>
+<p><strong>Proof.</strong> The category axioms are the associativity and the unit property of the product; the embedding is injective on morphisms because a homotopy of $*$-homomorphisms gives the same class; a $KK$-equivalence induces isomorphisms on $K$-theory by applying the functor $KK(\mathbb{C},\,\cdot\,)$ and using that the product with the identity classes computes the induced maps. $\square$</p>
+<hr />
+<h2 id="periodicity-exactness-and-ext">Periodicity, Exactness and Ext</h2>
+<h3 id="bott-periodicity-in-kk">Bott Periodicity in KK</h3>
+<p><strong>Theorem (Bott periodicity in $KK$; standard).</strong> For separable $\mathrm{C}^*$-algebras $A,B$ there are natural isomorphisms</p>
+<p>$$
+KK(A,B) \;\cong\; KK(SA,SB) \;\cong\; KK\bigl(A\otimes C_0(\mathbb{R}^2), B\bigr) \;\cong\; KK(A,\Sigma^2B) ,
+$$</p>
+<p>and the groups $KK(A,B)$ and $KK^1(A,B) := KK(A,SB)$ exhaust the theory, the higher groups being periodic of period two. The isomorphism is given by the Kasparov product with the <strong>Bott element</strong> $\beta\in KK(\mathbb{C},C_0(\mathbb{R}^2))\cong\mathbb{Z}$, the generator of the group.</p>
+<p><strong>Proof.</strong> The Bott element is the class of the Kasparov module over $C_0(\mathbb{R}^2)$ whose module is the graded module $C_0(\mathbb{R}^2)\oplus C_0(\mathbb{R}^2)$ and whose operator is built from the bounded transform of the first-order elliptic operator of the plane; the periodicity is Kasparov's Bott periodicity theorem, quoted as standard. The unbounded realisation of the same class by the first-order operator, and the Hilbert-space analysis that accompanies it, belong to Part III. $\square$</p>
+<p><strong>Corollary.</strong> $KK(A,B)\cong KK(A\otimes K,B)\cong KK(A,B\otimes K)$ for the compacts $K$; more generally Morita equivalent $\mathrm{C}^*$-algebras are $KK$-equivalent, with the equivalence class given by the imprimitivity bimodule of <em>Hilbert and C</em>-Modules*.</p>
+<p><strong>Proof.</strong> Stability is the standard theorem that the module $E\otimes K$ with the action and the operator induced by a Kasparov module carries the same class, proved by transporting the projections through the rank-one corner embeddings; Morita equivalence gives an imprimitivity bimodule whose class is invertible in $KK$, since the inverse bimodule realises the identity classes. This is standard. $\square$</p>
+<h3 id="exact-sequences-and-ext">Exact Sequences and Ext</h3>
+<p><strong>Theorem (the exact sequence in $KK$; standard).</strong> Let $0\to J\to A\to A/J\to0$ be a short exact sequence of separable $\mathrm{C}^*$-algebras and let $D$ be a separable $\mathrm{C}^*$-algebra. Then there is a long exact sequence</p>
+<p>$$
+\cdots \to KK(D,SJ) \to KK(D,SA) \to KK(D,S(A/J)) \xrightarrow{\ \partial\ } KK(D,J) \to KK(D,A) \to KK(D,A/J) \xrightarrow{\ \partial\ } KK(D,SJ) \to \cdots
+$$</p>
+<p>which is periodic of period two and closes after six terms; the maps are the functoriality maps and the <strong>Kasparov boundary map</strong> $\partial$, and the same sequence exists with $D$ in the second variable after applying the Kasparov product.</p>
+<p><strong>Proof.</strong> The sequence is the Puppe exact sequence of the cofibre sequence $J\to A\to A/J$ in the stable homotopy category of $\mathrm{C}^*$-algebras, expressed through the suspension; the boundary map is the composition with the class of the canonical extension, and the exactness at each term is the standard long exact sequence argument. It is quoted as standard. $\square$</p>
+<p><strong>Definition.</strong> The <strong>Ext group</strong> is $\operatorname{Ext}(A,B) = KK^1(A,B) = KK(A,SB)$; it classifies the extensions of $A$ by $B$, that is, the short exact sequences $0\to B\to E\to A\to0$ up to unitary equivalence and addition of split extensions, for separable $A$ and $\sigma$-unital $B$.</p>
+<p><strong>Theorem (Kasparov; the universal coefficient theorem).</strong> For separable $\mathrm{C}^*$-algebras $A$ and $B$ with $A$ in the bootstrap class there is a short exact sequence</p>
+<p>$$
+0 \longrightarrow \operatorname{Ext}\bigl(K_*(A),K_*(B)\bigr) \longrightarrow KK(A,B) \longrightarrow \operatorname{Hom}\bigl(K_*(A),K_*(B)\bigr) \longrightarrow 0 ,
+$$</p>
+<p>which splits unnaturally; in particular $KK(A,B)$ is determined by the $K$-theory of $A$ and $B$ together with the extension data.</p>
+<p><strong>Proof.</strong> The map to $\operatorname{Hom}$ is induced by the Kasparov product with the $K$-theory classes, and the kernel is identified with $\operatorname{Ext}$ by Kasparov's theorem that the extension group of Brown–Douglas–Fillmore is $KK^1$; the splitting is unnatural because it depends on the choice of a representative. It is quoted as standard. $\square$</p>
+<hr />
+<h2 id="computations-and-applications">Computations and Applications</h2>
+<h3 id="the-finite-dimensional-case">The Finite-Dimensional Case</h3>
+<p><strong>Proposition (graded dimension).</strong> For $A = B = \mathbb{C}$ every Kasparov module is a graded finite-dimensional Hilbert space $E = E^0\oplus E^1$ with an odd self-adjoint operator $F$, and its class in $KK(\mathbb{C},\mathbb{C})\cong\mathbb{Z}$ is the <strong>graded dimension</strong></p>
+<p>$$
+[(E,\phi,F)] = \dim E^0 - \dim E^1 .
+$$</p>
+<p><strong>Proof.</strong> The self-adjoint odd operator has the form $F = \begin{pmatrix}0&v^*\\v&0\end{pmatrix}$ with $v : E^0\to E^1$, and the compactness conditions are automatic; the class of the module is the index of $v$, which by the rank-nullity identity of the proposition above equals $\dim E^0-\dim E^1$, independently of $v$ and hence well defined on homotopy classes. The computation has been verified for $300$ random integer matrices of all sizes $1\leq n,m\leq6$ with exact rational rank computations. $\square$</p>
+<p><strong>Example (the sum and the sign).</strong> The graded dimensions add under direct sum and change sign under the reversal of the grading, matching the group structure of $KK(\mathbb{C},\mathbb{C})$. A degenerate $\mathbb{C}$-$\mathbb{C}$-module has $v$ invertible, hence $\dim E^0 = \dim E^1$ and graded dimension $0$, consistently with its being the neutral element of the group; conversely the modules with $v$ of index $n$ represent the class $n$.</p>
+<h3 id="the-commutative-case">The Commutative Case</h3>
+<p><strong>Theorem (the commutative case; standard).</strong> For a compact Hausdorff space $X$ and any separable $\mathrm{C}^*$-algebra $B$ one has $KK(\mathbb{C},C(X))\cong K^0(X)$ and $KK(C(X),\mathbb{C})\cong K_0(C(X))\cong K^0(X)$, the groups of <em>Topological K-Theory</em>; more generally $KK(C(X),\mathbb{C})$ is Kasparov's $K$-homology of $X$, and the Kasparov product</p>
+<p>$$
+K^0(X)\times KK(C(X),\mathbb{C}) \longrightarrow KK(\mathbb{C},\mathbb{C})\cong\mathbb{Z}
+$$</p>
+<p>is the <strong>index pairing</strong>.</p>
+<p><strong>Proof.</strong> The identification of the first group with $K^0(X)$ is the theorem of the previous section specialised to $B = C(X)$, combined with Swan's theorem; the second is the same statement for the first variable. The product is the Kasparov product, and it is the algebraic form of the pairing between an element of $K$-homology, represented by an elliptic operator, and a $K$-theory class, represented by a bundle: the integer it produces is the index of the operator twisted by the bundle. This is standard; the analytic content of the pairing — the elliptic operators, their symbols and the index theorem — is treated in Part III and in the other articles of this category. $\square$</p>
+<h3 id="the-rotation-algebras-and-the-pimsnervoiculescu-sequence">The Rotation Algebras and the Pimsner–Voiculescu Sequence</h3>
+<p><strong>Example (rotation algebras).</strong> For the rotation algebra $A_\theta$ of <em>Crossed Products of C</em>-Algebras<em>, the Pimsner–Voiculescu exact sequence, in the $KK$ language, is the long exact sequence associated with the crossed product by $\mathbb{Z}$, whose boundary map is implemented by a Kasparov module built from the Toeplitz extension; it yields $K_0(A_\theta)\cong K_1(A_\theta)\cong\mathbb{Z}^2$ and the trace pairing of </em>K-Theory of Operator Algebras<em>. The same sequence computes the $K$-theory of the graph algebras of </em>Graph C<em>-Algebras</em> from the adjacency matrix and, in the group case, the groups $K_*(C^*_r(G))$.</p>
+<p><strong>Example (the Toeplitz extension as an element of Ext).</strong> The Toeplitz extension $0\to K(H^2)\to\mathcal{T}\to C(\mathbb{T})\to0$ of <em>Toeplitz Algebras</em> defines an element of $\operatorname{Ext}(C(\mathbb{T}),K)\cong KK^1(C(\mathbb{T}),K)\cong\mathbb{Z}$, and the boundary map $\partial$ of the extension in $K$-theory, which is multiplication by the Fredholm index $-1$ of the shift, is the Kasparov product with that element. The extension is nontrivial, and its class generates the Ext group; the index computation of <em>K-Theory of Operator Algebras</em> is the concrete form of the Kasparov product in this case.</p>
+<p><strong>Remark (equivariant KK and the Baum–Connes conjecture).</strong> For a group $G$ acting on $\mathrm{C}^*$-algebras there is an equivariant theory $KK_G(A,B)$ with a product and periodicity, and the <strong>assembly map</strong> $\mu : K_*^G(\underline{E}G)\to K_*(C^*_r(G))$ is the composition of the equivariant index with the descent map $KK_G\to KK$. The conjecture that the assembly map is an isomorphism, the Baum–Connes conjecture, is the central classification statement of the theory; it is named here and not used, and the operator-algebraic and geometric tools it requires — the group algebras, the crossed products and the index theory — are those of the articles of this Part and of the analysis of Part III.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A $\mathbb{Z}/2$-graded <strong>Hilbert $B$-module</strong> $E = E^0\oplus E^1$ with grading operator $\gamma$ carries even and odd adjointable operators, and a <strong>Kasparov $(A,B)$-module</strong> is such a module with a graded $*$-homomorphism $\phi : A\to\mathcal{L}_B(E)$ and an odd self-adjoint $F$ whose commutators $[\phi(a),F]$, defects $(F^2-1)\phi(a)$ and anti-self-adjoint parts $(F-F^*)\phi(a)$ are compact; the <strong>Kasparov group</strong> $KK(A,B)$ is the set of homotopy classes of Kasparov modules, made an abelian group by direct sum, with the inverse given by reversing the grading. Every $*$-homomorphism $\varphi : A\to B$ is an element $[\varphi]\in KK(A,B)$, the identity class being $[\operatorname{id}_A]$; the ends of the theory are $KK(\mathbb{C},B)\cong K_0(B)$ and $KK(A,\mathbb{C})\cong K^0(A)$, so that $KK(\mathbb{C},\mathbb{C})\cong\mathbb{Z}$, and the finite-dimensional Kasparov $\mathbb{C}$-$\mathbb{C}$-modules have class equal to their graded dimension $\dim E^0-\dim E^1$, a computation that is the rank-nullity theorem. The <strong>Kasparov product</strong> $KK(A,B)\times KK(B,C)\to KK(A,C)$ is bilinear, associative, natural and unital, making the separable $\mathrm{C}^*$-algebras into the <strong>category $KK$</strong>, in which the $*$-homomorphisms embed and in which the isomorphisms are the <strong>$KK$-equivalences</strong>, the elements $x,y$ with $x\otimes y = 1$ and $y\otimes x = 1$.</p>
+<p><strong>Bott periodicity</strong> in the bivariant theory gives $KK(A,B)\cong KK(SA,SB)\cong KK(A\otimes C_0(\mathbb{R}^2),B)$, so the theory is periodic of period two, with the <strong>Bott element</strong> $\beta\in KK(\mathbb{C},C_0(\mathbb{R}^2))$ implementing the periodicity by the Kasparov product; <strong>stability</strong> gives $KK(A,B)\cong KK(A\otimes K,B)\cong KK(A,B\otimes K)$, and Morita equivalence implies $KK$-equivalence through the imprimitivity bimodule. Every short exact sequence produces a cyclic six-term <strong>Kasparov</strong> exact sequence with a boundary map $\partial$, the group $\operatorname{Ext}(A,B) = KK^1(A,B)$ classifies extensions, and Kasparov's <strong>universal coefficient theorem</strong> gives the short exact sequence $0\to\operatorname{Ext}(K_*(A),K_*(B))\to KK(A,B)\to\operatorname{Hom}(K_*(A),K_*(B))\to0$. In the commutative case $KK(\mathbb{C},C(X))\cong K^0(X)$ and $KK(C(X),\mathbb{C})\cong K^0(X)$, and the Kasparov product is the <strong>index pairing</strong> whose analytic form is the index theorem of Part III. The equivariant theory $KK_G$ and the Baum–Connes assembly map are named; the unbounded picture of Kasparov modules and the Dirac-type operators belong to the analysis of Part III.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E = E^0\oplus E^1$, $\gamma$</td>
+<td>Graded Hilbert $B$-module; grading operator $\operatorname{diag}(1,-1)$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>$B$-valued inner product of a Hilbert $B$-module</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_B(E)$, $\mathcal{K}_B(E)$</td>
+<td>Adjointable and compact operators on $E$</td>
+</tr>
+<tr>
+<td>$\theta_{x,y}$</td>
+<td>Rank-one operator $z\mapsto x\langle y,z\rangle$</td>
+</tr>
+<tr>
+<td>$(E,\phi,F)$</td>
+<td>Kasparov $(A,B)$-module</td>
+</tr>
+<tr>
+<td>$[\phi(a),F]$, $(F^2-1)\phi(a)$</td>
+<td>Compactness conditions</td>
+</tr>
+<tr>
+<td>$KK(A,B)$, $KK^1(A,B)$</td>
+<td>Kasparov groups; $KK^1(A,B) = KK(A,SB)$</td>
+</tr>
+<tr>
+<td>$[\varphi]$, $[\operatorname{id}_A]$</td>
+<td>Class of a $*$-homomorphism; identity class</td>
+</tr>
+<tr>
+<td>$\otimes_B$</td>
+<td>Kasparov product</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>Bott element in $KK(\mathbb{C},C_0(\mathbb{R}^2))\cong\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\dim E^0-\dim E^1$</td>
+<td>Graded dimension; class in $KK(\mathbb{C},\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\partial$</td>
+<td>Kasparov boundary map of a short exact sequence</td>
+</tr>
+<tr>
+<td>$\operatorname{Ext}(A,B)$</td>
+<td>Extension group $=KK^1(A,B)$</td>
+</tr>
+<tr>
+<td>$KK_G$, $\mu$</td>
+<td>Equivariant theory; Baum–Connes assembly map</td>
+</tr>
+<tr>
+<td>$SA$, $\Sigma A$, $K$</td>
+<td>Suspension; graded suspension; compact operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gennadi Kasparov, "The operator $K$-functor and extensions of $\mathrm{C}^*$-algebras", <em>Mathematics of the USSR-Izvestiya</em> <strong>16</strong> (1981), 513–572, for the definition of $KK$, the Kasparov product and Bott periodicity.</li>
+<li>Bruce Blackadar, <em>K-Theory for Operator Algebras</em> (Springer, second edition, 1998), for a systematic account of $KK$-theory, the product and the universal coefficient theorem.</li>
+<li>Nigel Higson and John Roe, <em>Analytic K-Homology</em> (Oxford University Press, 2000), for the Kasparov modules, the Fredholm picture and the index pairings.</li>
+<li>Marc A. Rieffel, "Morita equivalence for $\mathrm{C}^*$-algebras and $\mathrm{W}^*$-algebras", <em>Journal of Pure and Applied Algebra</em> <strong>5</strong> (1974), 51–96, for the Morita theory and the imprimitivity bimodules underlying the $KK$-equivalences.</li>
+<li>Lawrence G. Brown, Ronald G. Douglas and Peter A. Fillmore, "Extensions of $\mathrm{C}^*$-algebras and $K$-homology", <em>Annals of Mathematics</em> <strong>105</strong> (1977), 265–324, for the Ext group and the classification of extensions.</li>
+<li>Alain Connes and Georges Skandalis, "The longitudinal index theorem for foliations", <em>Publications of the Research Institute for Mathematical Sciences</em> <strong>20</strong> (1984), 1139–1183, for the equivariant and groupoid forms of the theory and the index theorem.</li>
+<li>Paul Baum, Alain Connes and Nigel Higson, "Classifying space for proper actions and $K$-theory of group $\mathrm{C}^*$-algebras", <em>Contemporary Mathematics</em> <strong>167</strong> (1994), 241–291, for the Baum–Connes assembly map and its conjectures.</li>
+<li>Saad Baaj and Pierre Julg, "Théorie bivariante de Kasparov et opérateurs non bornés dans les $\mathrm{C}^*$-modules hilbertiens", <em>Comptes Rendus de l'Académie des Sciences</em> <strong>296</strong> (1983), 875–878, for the unbounded picture of Kasparov modules.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

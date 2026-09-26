@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morita Equivalence — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="morita-equivalence"><strong>Morita Equivalence</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two algebras have the same module theory when their categories of modules are equivalent, even if the algebras themselves are not isomorphic. This is Morita equivalence, and it is the guiding equivalence relation of the category <em>Linear spaces over Algebras</em>: it says which differences between algebras are invisible to the modules, and therefore which constructions of representation theory can depend only on the module category. The fundamental example is already visible in the preceding articles — a matrix algebra $M_n(A)$ has exactly the same modules as $A$, with the defining module of $M_n(A)$ playing the role of the regular module of $A$ — and the purpose of this article is to make that observation into a theorem, to isolate the invariant that governs it, and to identify what Morita equivalence does and does not preserve.</p>
+<p>The conventions are those of <em>Modules over an Algebra</em>: $R$ is a commutative ring with identity, $A$ and $B$ are unital associative $R$-algebras, modules are left modules unless stated, and ${}_A P_B$ denotes an $(A,B)$-bimodule. The tensor product over an algebra is the balanced product , and the change-of-rings functors used below are those . Schur's lemma, semisimple modules and the Wedderburn–Artin theorem are used from <em>Simple and Semisimple Modules</em>.</p>
+<p>The plan is to define equivalence of module categories, prove that matrix algebras are Morita equivalent to their ground algebra, characterize the equivalence in terms of finitely generated projective generators, and then separate the invariants from the non-invariants. The last two sections treat the two standard applications: group algebras, where Morita equivalence classifies semisimple group algebras by their basic algebra and organizes the modular theory by blocks; and central simple algebras, where Morita equivalence classes are precisely the elements of the Brauer group.</p>
+<h2 id="equivalence-of-module-categories">Equivalence of Module Categories</h2>
+<h3 id="equivalence-of-categories">Equivalence of categories</h3>
+<p>Let $\mathcal{C}$ and $\mathcal{D}$ be categories. An <strong>equivalence</strong> between them is a functor $F: \mathcal{C} \to \mathcal{D}$ that is <strong>fully faithful</strong> — the map $\operatorname{Hom}_{\mathcal{C}}(X,Y)\to\operatorname{Hom}_{\mathcal{D}}(FX,FY)$ is a bijection for all $X,Y$ — and <strong>essentially surjective</strong>: every object of $\mathcal{D}$ is isomorphic to $FX$ for some $X$. Equivalently, there is a functor $G: \mathcal{D} \to \mathcal{C}$ and natural isomorphisms $GF \cong \mathrm{id}_{\mathcal{C}}$, $FG \cong \mathrm{id}_{\mathcal{D}}$; such a $G$ is a <strong>quasi-inverse</strong> of $F$. An equivalence need not be an isomorphism of categories: it is unnatural to demand that $GF$ and $FG$ be equal to the identities rather than naturally isomorphic to them, and the weaker condition is the correct one.</p>
+<p>For module categories one restricts to functors compatible with the linear structure. A functor $F: \operatorname{Mod}(A)\to\operatorname{Mod}(B)$ is <strong>$R$-linear</strong>, or <strong>additive</strong>, if it induces $R$-module maps on hom-sets and preserves finite direct sums. Every equivalence arising below is $R$-linear.</p>
+<h3 id="morita-equivalence_1">Morita equivalence</h3>
+<p>Two $R$-algebras $A$ and $B$ are <strong>Morita equivalent</strong>, written $A \sim_M B$, if there is an $R$-linear equivalence</p>
+<p>$$
+\operatorname{Mod}(A) \xrightarrow{\ \simeq\ } \operatorname{Mod}(B).
+$$</p>
+<p>Since an equivalence preserves every categorical notion, Morita equivalent algebras have the same submodule lattices, the same simple modules up to a bijection, the same injective and projective modules, the same homological algebra, and the same representation theory. They need not be isomorphic, and the smallest example is already decisive.</p>
+<p><strong>Proposition.</strong> $A$ and $M_n(A)$ are Morita equivalent for every $n \geq 1$.</p>
+<p>This is proved below as the fundamental example. It shows, in particular, that $\mathbb{C}$ and $M_2(\mathbb{C})$ are Morita equivalent; since the biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, the module theory of the biquaternion algebra is the module theory of the complex field, a statement used repeatedly .</p>
+<h2 id="the-fundamental-example-matrix-algebras">The Fundamental Example: Matrix Algebras</h2>
+<p>Let $A$ be a unital ring and let $P=A^n$ be the free left $A$-module of rank $n$, whose elements we write as column vectors. The ring $M_n(A)$ acts on $P$ on the left by matrix multiplication, and $P$ is a $(M_n(A),A)$-bimodule: the left action of matrices and the right action of scalars commute by associativity. Since $A$ is not assumed commutative, it matters that the scalars act on the right of the matrices.</p>
+<p><strong>Theorem.</strong> The functor</p>
+<p>$$
+\Phi = P \otimes_A - : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(M_n(A)),
+$$</p>
+<p>given on objects by $M \mapsto P \otimes_A M = A^n \otimes_A M$, is an equivalence of categories.</p>
+<p><em>Pro.</em> First, $A^n \otimes_A M \cong M^n$ naturally in $M$, by the isomorphism $(a_1,\dots,a_n)\otimes m \mapsto (a_1 m,\dots,a_n m)$; so on objects $\Phi(M)=M^n$, the direct sum of $n$ copies of $M$. The $M_n(A)$-action is the evident one, matrices acting on the columns of $M^n$.</p>
+<p>The functor $\Phi$ has a right adjoint, namely</p>
+<p>$$
+\Psi = \operatorname{Hom}_{M_n(A)}(P,-) : \operatorname{Mod}(M_n(A)) \longrightarrow \operatorname{Mod}(A),
+$$</p>
+<p>by the tensor–hom adjunction, applied to the bimodule ${}_{M_n(A)}P_A$. We show that the unit and counit of the adjunction are isomorphisms. For $M \in \operatorname{Mod}(A)$ the unit is the natural map</p>
+<p>$$
+M \longrightarrow \operatorname{Hom}_{M_n(A)}(A^n, M^n), \qquad m \longmapsto \bigl(u \mapsto (u_1 m,\dots,u_n m)\bigr),
+$$</p>
+<p>which is an isomorphism: an $M_n(A)$-linear map $g: A^n \to M^n$ is determined by $g(e_1)$, since equivariance under the matrix units gives $g(e_j)=g(E_{j1}e_1)=E_{j1}g(e_1)$; the same equivariance with $E_{11}$ forces $g(e_1)=E_{11}g(e_1)=(m,0,\dots,0)$ for a unique $m \in M$; and then $g(e_j)$ is the vector with $m$ in the $j$-th place, so that $g(u)=(u_1m,\dots,u_nm)$ for every $u$. For $N \in \operatorname{Mod}(M_n(A))$ the counit is the natural map</p>
+<p>$$
+A^n \otimes_A \operatorname{Hom}_{M_n(A)}(A^n, N) \longrightarrow N,
+$$</p>
+<p>sending $(u,f)$ to $f(u)$; it is surjective because $A^n$ generates $\operatorname{Mod}(M_n(A))$, every module being a quotient of a direct sum of copies of the regular module $M_n(A)=A^n\oplus\cdots$ and each summand being reachable from $A^n$, and it is injective by the same description of $\operatorname{Hom}_{M_n(A)}(A^n,N)$. Hence $\Phi$ is an equivalence, with quasi-inverse $\Psi$. $\square$</p>
+<p>The heart of the theorem is that the free module $A^n$ carries two endomorphism rings: as a left $A$-module its endomorphism ring is $M_n(A^{\mathrm{op}})$, and as a left $M_n(A)$-module its endomorphism ring is $A^{\mathrm{op}}$, the Morita theorem reading these as $M_n(A)\cong\operatorname{End}_A(A^n)^{\mathrm{op}}$ and $A\cong\operatorname{End}_{M_n(A)}(A^n)^{\mathrm{op}}$. When $A$ is commutative the two opposite rings coincide with $M_n(A)$ and $A$. The equivalence exchanges the regular module of $A$ for the module $A^n$ over $M_n(A)$: under $\Phi$, ${}_A A$ corresponds to $A^n$ as a left $M_n(A)$-module, which is the direct sum of $n$ copies of the defining module of $M_n(A)$ when $A$ is a field. This is why the defining module of $M_n(F)$ inherits the role of the regular module of $F$.</p>
+<h2 id="progenerators-and-the-morita-theorems">Progenerators and the Morita Theorems</h2>
+<h3 id="generators">Generators</h3>
+<p>A left $A$-module $P$ is a <strong>generator</strong> if every left $A$-module is a quotient of a direct sum of copies of $P$. Equivalently, the <strong>trace ideal</strong></p>
+<p>$$
+\operatorname{Tr}_A(P)=\Bigl\{\sum_i f_i(p_i) : f_i \in \operatorname{Hom}_A(P,A),\ p_i \in P\Bigr\} \subseteq A
+$$</p>
+<p>is all of $A$. Equivalently, $\operatorname{Hom}_A(P,-): \operatorname{Mod}(A)\to\operatorname{Mod}(\operatorname{End}_A(P)^{\mathrm{op}})$ is faithful. The regular module ${}_A A$ is a generator, and any module admitting $A$ as a direct summand of a finite direct sum of copies of itself is a generator. A <strong>progenerator</strong> is a finitely generated projective generator.</p>
+<h3 id="the-morita-theorems">The Morita theorems</h3>
+<p><strong>Theorem (Morita I).</strong> Let $P$ be a progenerator of left $A$-modules and put</p>
+<p>$$
+B=\operatorname{End}_A(P)^{\mathrm{op}}.
+$$</p>
+<p>Then $P$ is an $(A,B)$-bimodule, and</p>
+<p>$$
+\operatorname{Hom}_A(P,-) : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(B)
+$$</p>
+<p>is an equivalence of categories, with quasi-inverse $P \otimes_B -$. Conversely, every equivalence $\operatorname{Mod}(A)\to\operatorname{Mod}(B)$ arises in this way from a progenerator.</p>
+<p><em>Proof.</em> The right $B$-module structure on $P$ is $p \cdot b = b(p)$, which is a right action because $B$ is the opposite of the endomorphism ring; this makes $P$ an $(A,B)$-bimodule since endomorphisms are $A$-linear. The adjunction $\operatorname{Hom}_A(P \otimes_B -, -)\cong\operatorname{Hom}_B(-,\operatorname{Hom}_A(P,-))$ has unit and counit which are isomorphisms precisely because $P$ is a generator (counit) and finitely generated projective (unit), by the standard argument dual to the matrix case above. $\square$</p>
+<p><strong>Theorem (Morita II).</strong> The following are equivalent for unital rings $A$ and $B$.</p>
+<ol>
+<li>$A$ and $B$ are Morita equivalent.</li>
+<li>$B \cong \operatorname{End}_A(P)^{\mathrm{op}}$ for some progenerator $P$ of left $A$-modules.</li>
+<li>$B \cong eM_n(A)e$ for some $n \geq 1$ and some idempotent $e \in M_n(A)$ with $M_n(A)eM_n(A)=M_n(A)$.</li>
+</ol>
+<p><em>Proof.</em> The equivalence of (1) and (2) is Morita I. For (2)$\Leftrightarrow$(3), a finitely generated projective left $A$-module is a direct summand of $A^n$ for some $n$, hence of the form $P\cong A^ne$ for an idempotent $e \in M_n(A)$ acting on the right of the row module $A^n$; then $\operatorname{End}_A(P)^{\mathrm{op}}\cong eM_n(A)e$, and the generator condition is exactly $M_n(A)eM_n(A)=M_n(A)$. $\square$</p>
+<p>An idempotent $e$ with $M_n(A)eM_n(A)=M_n(A)$ is called <strong>full</strong>. The characterization (3) shows that the Morita equivalence class of $A$ consists exactly of the full corner rings of matrix algebras over $A$, and the algebra $eM_n(A)e$ is the general form of an algebra with the same module category.</p>
+<h3 id="the-basic-algebra">The basic algebra</h3>
+<p>Let $A$ be a finite-dimensional algebra over a field and let $S_1,\dots,S_r$ be its simple modules up to isomorphism, with projective covers $P_1,\dots,P_r$. The module</p>
+<p>$$
+P=P_1 \oplus \cdots \oplus P_r
+$$</p>
+<p>is a finitely generated projective generator — each simple module is a quotient of $P$, and each $P_i$ is a direct summand of the regular module — and</p>
+<p>$$
+A^{\mathrm{b}}=\operatorname{End}_A(P)^{\mathrm{op}}
+$$</p>
+<p>is the <strong>basic algebra</strong> of $A$. It is Morita equivalent to $A$ by Morita II, it is basic in the sense that $A^{\mathrm{b}}/J(A^{\mathrm{b}})\cong\prod_i D_i$ is a product of division rings with no matrix factor of size greater than one, and it is determined by $A$ up to isomorphism. For a semisimple $A$ the projective covers are the simple modules themselves, so that $P=S_1\oplus\cdots\oplus S_r$; by Wedderburn–Artin a semisimple algebra $A\cong\prod_i M_{n_i}(D_i)$ therefore has basic algebra $\prod_i D_i$, and Morita equivalence of semisimple algebras is exactly isomorphism of their basic algebras, that is, equality of the multiset of division rings $\{D_i\}$.</p>
+<h2 id="invariants-and-non-invariants">Invariants and Non-Invariants</h2>
+<p>An $R$-linear equivalence preserves everything expressed categorically in terms of modules and homomorphisms. The following are therefore Morita invariants of $A$.</p>
+<ul>
+<li><strong>The center.</strong> $Z(A)\cong Z(B)$. More precisely, $Z(A)$ is the ring of natural endomorphisms of the identity functor of $\operatorname{Mod}(A)$, and this description is manifestly intrinsic to the category.</li>
+<li><strong>The simple modules.</strong> The equivalence induces a bijection between the isomorphism classes of simple left $A$-modules and those of simple left $B$-modules, and carries the endomorphism division ring $\operatorname{End}_A(S)$ isomorphically onto $\operatorname{End}_B(F(S))$, by the theorem of <em>Automorphisms of Modules over an Algebra</em> on transport of endomorphism rings.</li>
+<li><strong>The finitely generated projectives.</strong> The equivalence restricts to an equivalence between the categories of finitely generated projective modules, and so induces an isomorphism of the Grothendieck groups $K_0(A)\cong K_0(B)$ and preserves the isomorphism classes of indecomposable projectives.</li>
+<li><strong>The lattice of two-sided ideals.</strong> The equivalence induces an order isomorphism between the lattices of two-sided ideals of $A$ and of $B$. Hence simplicity, semisimplicity, primeness and the artinian and noetherian conditions are Morita invariant.</li>
+<li><strong>The isotypic structure.</strong> Multiplicities of simple modules and lengths of modules are preserved.</li>
+</ul>
+<p>The following are not Morita invariants.</p>
+<ul>
+<li><strong>The algebra itself.</strong> $\mathbb{C}$ and $M_2(\mathbb{C})$ are Morita equivalent but not isomorphic, being of different dimensions over $\mathbb{C}$.</li>
+<li><strong>The group of units.</strong> $\mathbb{C}^{\times}$ is abelian and $GL_2(\mathbb{C})$ is not, yet $\mathbb{C}$ and $M_2(\mathbb{C})$ are Morita equivalent. What is preserved is $\operatorname{Aut}_A(M)$ for corresponding modules $M$ and $F(M)$, not the group of units of the algebra as such.</li>
+<li><strong>Dimensions and cardinalities.</strong> Morita equivalence can change the dimension of the algebra over its base ring arbitrarily, as the passage from $A$ to $M_n(A)$ shows.</li>
+<li><strong>The trace form, the norm form and other algebra-level structures.</strong> These are not determined by the module category.</li>
+</ul>
+<p>The dividing line is exact: Morita equivalence has access only to the category of modules, so anything that can be stated using modules and maps is invariant, and anything requiring the elements of the algebra as such need not be.</p>
+<h2 id="simple-modules-under-morita-equivalence">Simple Modules under Morita Equivalence</h2>
+<p>The behaviour of the simple modules deserves to be stated separately, because it is the form in which Morita equivalence is used in representation theory.</p>
+<p><strong>Theorem.</strong> Let $F: \operatorname{Mod}(A)\to\operatorname{Mod}(B)$ be an equivalence. Then $F$ restricts to a bijection between the isomorphism classes of simple left $A$-modules and those of simple left $B$-modules, and for corresponding simple modules $S$ and $S'=F(S)$ there is a ring isomorphism $\operatorname{End}_A(S)\cong\operatorname{End}_B(S')$. Consequently the number of simple modules up to isomorphism is a Morita invariant, and so is the multiset of their endomorphism division rings.</p>
+<p><em>Proof.</em> An equivalence preserves submodule lattices and, being additive and exact, preserves the property of having no proper nonzero submodule; fully faithful functors induce isomorphisms on endomorphism rings. $\square$</p>
+<p>For $A=M_n(F)$ the statement is the one already met: the simple module of $M_n(F)$ is $F^n$, and the simple module of $F$ is $F$, with the same endomorphism ring $F$; the equivalence of §The Fundamental Example carries the one to the other. For the biquaternion algebra, the equivalence $\operatorname{Mod}(\mathbb{B})\simeq\operatorname{Mod}(\mathbb{C})$ matches the simple module $\mathbb{C}^2$ of $\mathbb{B}$ with the simple module $\mathbb{C}$ of $\mathbb{C}$, and the division rings match: $\operatorname{End}_{\mathbb{B}}(\mathbb{C}^2)=\mathbb{C}$ and $\operatorname{End}_{\mathbb{C}}(\mathbb{C})=\mathbb{C}$.</p>
+<p>The multiplicities are visible in the regular module. For $A=F$ and $B=M_n(F)$, with $P=F^n$ regarded as an $(M_n(F),F)$-bimodule, the equivalence $P\otimes_F-$ carries the regular module ${}_F F$ to $P=F^n$, which is the isotypic module with multiplicity $n$ over the unique simple module; this is the categorical origin of the multiplicity $n$ in the Wedderburn–Artin factor $M_n(F)$. In general, with $P$ a progenerator of left $A$-modules and $B=\operatorname{End}_A(P)^{\mathrm{op}}$, the equivalence $\operatorname{Hom}_A(P,-)$ carries ${}_A A$ to the dual progenerator $\operatorname{Hom}_A(P,A)$, while the quasi-inverse $P\otimes_B-$ carries the regular module ${}_B B$ to $P$; the two regular modules, and the multiplicity data they carry, are therefore both read off from the progenerator and its dual.</p>
+<h2 id="morita-equivalence-as-a-tensor-equivalence">Morita Equivalence as a Tensor Equivalence</h2>
+<p>The equivalence of Morita I is implemented by the balanced product. For a progenerator ${}_A P_B$ with $B=\operatorname{End}_A(P)^{\mathrm{op}}$, the two functors</p>
+<p>$$
+P \otimes_B - : \operatorname{Mod}(B) \to \operatorname{Mod}(A), \qquad \operatorname{Hom}_A(P,-) : \operatorname{Mod}(A) \to \operatorname{Mod}(B)
+$$</p>
+<p>are quasi-inverse, and the bimodule $P$ is an <strong>invertible bimodule</strong>: there is a $(B,A)$-bimodule $Q$ with $P\otimes_B Q\cong A$ as $(A,A)$-bimodules and $Q\otimes_A P\cong B$ as $(B,B)$-bimodules, namely $Q=\operatorname{Hom}_A(P,A)$. The tensor product of bimodules, developed, is the composition of the corresponding functors, so the statement that $P$ is invertible is the statement that the two functors are quasi-inverse. The Picard group $\operatorname{Pic}(A)$ consists of the isomorphism classes of invertible $(A,A)$-bimodules, with product $[M][N]=[M\otimes_A N]$ and identity $[A]$; by the Eilenberg–Watts theorem these are the auto-equivalences of $\operatorname{Mod}(A)$ implemented by bimodules. The full group of auto-equivalences of $\operatorname{Mod}(A)$ up to natural isomorphism is the semidirect product $\operatorname{Pic}(A)\rtimes\operatorname{Out}(A)$, in which an automorphism of $A$ twists the left action on an invertible bimodule and $\operatorname{Out}(A)=\operatorname{Aut}(A)/\operatorname{Inn}(A)$; equivalently, the inner automorphisms of $A$ act trivially on the module category, and only the outer ones are visible there.</p>
+<p>The tensor equivalence also explains why Morita equivalence preserves flatness, projectivity and exactness: these are properties of the functors $M\otimes_A-$ or $\operatorname{Hom}_A(M,-)$, and conjugation by an equivalence preserves them.</p>
+<h2 id="group-algebras">Group Algebras</h2>
+<p>Let $G$ be a finite group and $F$ a field. The group algebra $F[G]$ is a unital associative $F$-algebra, and $F[G]$-modules are the representations of $G$ over $F$, . Morita equivalence therefore compares the representation theories of groups, and the general theory applies directly.</p>
+<h3 id="the-semisimple-case">The semisimple case</h3>
+<p>Suppose that $\operatorname{char} F$ does not divide $|G|$, so that $F[G]$ is semisimple by Maschke's theorem. Then, by Wedderburn–Artin,</p>
+<p>$$
+F[G] \cong \prod_{i=1}^{r} M_{n_i}(D_i),
+$$</p>
+<p>where $r$ is the number of isomorphism classes of simple $F[G]$-modules, $S_i$ is the defining module of the $i$-th factor, $\operatorname{End}_{F[G]}(S_i)\cong D_i^{\mathrm{op}}$, and $D_i$ is a finite-dimensional division algebra over $F$. The basic algebra of $F[G]$ is</p>
+<p>$$
+F[G]^{\mathrm{b}} \cong \prod_{i=1}^{r} D_i,
+$$</p>
+<p>and therefore</p>
+<p>$$
+F[G] \sim_M F[H] \iff \prod_{i} D_i(G) \cong \prod_{i} D_i(H),
+$$</p>
+<p>that is, if and only if the two groups have the same number of simple modules with the same endomorphism division algebras, up to permutation. Over an algebraically closed field every $D_i$ is $F$, so the criterion reduces to equality of the number of simple modules. Over $F=\mathbb{C}$ the number of simple modules is the number of conjugacy classes of $G$, and the criterion becomes</p>
+<p>$$
+\mathbb{C}[G] \sim_M \mathbb{C}[H] \iff |\{\text{conjugacy classes of } G\}|=|\{\text{conjugacy classes of } H\}|.
+$$</p>
+<p><strong>Example.</strong> $\mathbb{C}[S_3]\cong\mathbb{C}\times\mathbb{C}\times M_2(\mathbb{C})$ and $\mathbb{C}[C_3]\cong\mathbb{C}^3$, since $S_3$ has three conjugacy classes and $C_3$ has three. Both have basic algebra $\mathbb{C}^3$, so</p>
+<p>$$
+\mathbb{C}[S_3] \sim_M \mathbb{C}[C_3],
+$$</p>
+<p>although $S_3$ and $C_3$ are not isomorphic and their group algebras are not isomorphic. Morita equivalence matches the three simple modules of the one with the three simple modules of the other — the two-dimensional simple module of $\mathbb{C}[S_3]$ corresponding to the simple $\mathbb{C}[C_3]$-module on which a generator acts by a primitive cube root of unity — and it does not preserve the dimensions of simple modules. It does not carry the regular module to the regular module either: an equivalence preserves endomorphism rings, and</p>
+<p>$$
+\operatorname{End}_{\mathbb{C}[S_3]}(\mathbb{C}[S_3])\cong\mathbb{C}\times\mathbb{C}\times M_2(\mathbb{C}) \neq \mathbb{C}^3\cong\operatorname{End}_{\mathbb{C}[C_3]}(\mathbb{C}[C_3]),
+$$</p>
+<p>so the image of the regular module of $\mathbb{C}[S_3]$ has endomorphism algebra $\mathbb{C}\times\mathbb{C}\times M_2(\mathbb{C})$ and is the four-dimensional module with multiplicities $1,1,2$ over the three simples, not the regular module of $\mathbb{C}[C_3]$.</p>
+<p><strong>Example.</strong> Over $\mathbb{R}$ noncommutative division algebras occur. For the quaternion group $Q_8$,</p>
+<p>$$
+\mathbb{R}[Q_8] \cong \mathbb{R} \oplus \mathbb{R} \oplus \mathbb{R} \oplus \mathbb{R} \oplus \mathbb{H},
+$$</p>
+<p>with $r=5$ simple modules: four of dimension one and one of dimension two with endomorphism division ring $\mathbb{H}$. The basic algebra is $\mathbb{R}^4\oplus\mathbb{H}$, and $\mathbb{R}[Q_8]$ is not Morita equivalent to $\mathbb{R}[C_2\times C_2\times C_2]$, whose basic algebra is $\mathbb{R}^8$, nor is it Morita equivalent over $\mathbb{R}$ to any algebra with only real endomorphism rings.</p>
+<h3 id="the-modular-case">The modular case</h3>
+<p>When $\operatorname{char} F=p$ divides $|G|$, the group algebra is not semisimple and its indecomposable two-sided direct summands are the <strong>blocks</strong>:</p>
+<p>$$
+F[G]=\bigoplus_{b} B_b.
+$$</p>
+<p>Each block is an indecomposable $F$-algebra, and the module theory of $F[G]$ is the product of the module theories of its blocks, so the classification problem splits across blocks. Blocks are compared up to Morita equivalence; a block $B$ is Morita equivalent to $B'$ when they have the same module category, and this is the standard sense in which distinct groups can have "the same" modular representation theory. The theory of blocks and their Morita equivalences — Clifford theory for normal subgroups, Green correspondence, and the Picard group of a block — is a substantial subject, developed in the literature cited below. Two immediate facts follow from the general theory: Morita equivalent blocks have isomorphic centers, and a block is Morita equivalent to its basic algebra.</p>
+<h2 id="central-simple-algebras-and-the-brauer-group">Central Simple Algebras and the Brauer Group</h2>
+<p>Let $F$ be a field. A finite-dimensional $F$-algebra $A$ is <strong>central simple</strong> if $Z(A)=F$ and the only two-sided ideals are $0$ and $A$. By Wedderburn, every central simple $F$-algebra is of the form $M_n(D)$ for a division algebra $D$ with center $F$, and the integer $n$ and the division algebra $D$ are determined up to isomorphism.</p>
+<p><strong>Theorem.</strong> Two central simple $F$-algebras $A$ and $B$ are Morita equivalent if and only if they have the same underlying division algebra, i.e. $A\cong M_m(D)$ and $B\cong M_n(D)$ for the same division algebra $D$ with center $F$.</p>
+<p><em>Proof.</em> By the fundamental example, $M_m(D)$ and $M_n(D)$ are both Morita equivalent to $D$. Conversely, if $A\sim_M B$, then their simple modules have isomorphic endomorphism division rings by §Simple Modules under Morita Equivalence; the simple module of $M_n(D)$ is $D^n$ with endomorphism ring $D^{\mathrm{op}}$, so the underlying division algebras of $A$ and $B$ are isomorphic. $\square$</p>
+<p>The set of Morita equivalence classes of central simple $F$-algebras therefore coincides with the set of isomorphism classes of finite-dimensional central division algebras over $F$, and it is a group under</p>
+<p>$$
+[A]\cdot[B]=[A\otimes_F B].
+$$</p>
+<p>This is the <strong>Brauer group</strong> $\operatorname{Br}(F)$. Morita equivalence is thus the equivalence relation that the Brauer group quotients out, and this is the reason Brauer-group computations are phrased in terms of matrix algebras.</p>
+<p><strong>Example.</strong> Over $\mathbb{R}$ the Frobenius theorem gives $\operatorname{Br}(\mathbb{R})=\mathbb{Z}/2$, with classes represented by $\mathbb{R}$ and $\mathbb{H}$. The quaternion algebra $\mathbb{H}$ is a division algebra with center $\mathbb{R}$, so it is not Morita equivalent to $\mathbb{R}$ over $\mathbb{R}$; but</p>
+<p>$$
+\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C}) \sim_M \mathbb{C},
+$$</p>
+<p>so the Brauer class of $\mathbb{H}$ becomes trivial after base change to $\mathbb{C}$. This is the algebraic content of the statement that $\mathbb{H}$ splits over $\mathbb{C}$, and it is the reason the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ is Morita equivalent to $\mathbb{C}$.</p>
+<h2 id="summary">Summary</h2>
+<p>Morita equivalence is the equivalence relation on algebras generated by having equivalent module categories, equivalently by the existence of an $R$-linear equivalence $\operatorname{Mod}(A)\simeq\operatorname{Mod}(B)$. It is realized by a progenerator $P$ of left $A$-modules with $B\cong\operatorname{End}_A(P)^{\mathrm{op}}$, the equivalence being $\operatorname{Hom}_A(P,-)$ with quasi-inverse $P\otimes_B-$; equivalently, $B$ is a full corner $eM_n(A)e$ of a matrix algebra over $A$. The fundamental example is that $A$ and $M_n(A)$ are always Morita equivalent, via $P=A^n$, whose two endomorphism rings are $A^{\mathrm{op}}$ and $M_n(A^{\mathrm{op}})$. Morita equivalence preserves the center, the simple modules together with their endomorphism division rings, the finitely generated projectives and $K_0$, the lattice of two-sided ideals, and the isotypic structure of modules; it does not preserve the algebra, its dimension, its group of units, or algebra-level forms such as the trace and norm. Every finite-dimensional algebra is Morita equivalent to a unique basic algebra, and a semisimple algebra $\prod_i M_{n_i}(D_i)$ has basic algebra $\prod_i D_i$, so semisimple algebras over an algebraically closed field are classified up to Morita equivalence by the number of simple modules. For group algebras this gives $\mathbb{C}[G]\sim_M\mathbb{C}[H]$ exactly when $G$ and $H$ have the same number of conjugacy classes; in the modular case the group algebra splits into blocks and the comparison of blocks up to Morita equivalence is the organising principle. For central simple algebras the Morita equivalence classes are exactly the classes in the Brauer group, so $\operatorname{Br}(F)$ measures the failure of matrix algebras over $F$ to exhaust the central simple ones.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity, the base ring</td>
+</tr>
+<tr>
+<td>$A$, $B$</td>
+<td>unital associative $R$-algebras</td>
+</tr>
+<tr>
+<td>$F$</td>
+<td>a field</td>
+</tr>
+<tr>
+<td>$\operatorname{Mod}(A)$</td>
+<td>category of left $A$-modules</td>
+</tr>
+<tr>
+<td>$A \sim_M B$</td>
+<td>$A$ and $B$ are Morita equivalent</td>
+</tr>
+<tr>
+<td>${}_A P_B$</td>
+<td>$(A,B)$-bimodule</td>
+</tr>
+<tr>
+<td>$P=A^n$</td>
+<td>free left $A$-module of rank $n$, a progenerator</td>
+</tr>
+<tr>
+<td>$M_n(A)$</td>
+<td>matrix algebra over $A$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(P)$</td>
+<td>endomorphism ring of $P$, the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$B=\operatorname{End}_A(P)^{\mathrm{op}}$</td>
+<td>the algebra Morita equivalent to $A$ via $P$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}_A(P)$</td>
+<td>trace ideal of $P$</td>
+</tr>
+<tr>
+<td>$eM_n(A)e$</td>
+<td>full corner ring of a matrix algebra</td>
+</tr>
+<tr>
+<td>$A^{\mathrm{b}}=\operatorname{End}_A(\bigoplus_i P_i)^{\mathrm{op}}$</td>
+<td>basic algebra of $A$, with $P_i$ the projective covers</td>
+</tr>
+<tr>
+<td>$J(A)$</td>
+<td>Jacobson radical</td>
+</tr>
+<tr>
+<td>$S_i$</td>
+<td>simple modules up to isomorphism</td>
+</tr>
+<tr>
+<td>$P_i$</td>
+<td>projective cover of $S_i$</td>
+</tr>
+<tr>
+<td>$D_i\cong\operatorname{End}_A(S_i)^{\mathrm{op}}$</td>
+<td>division ring of the $i$-th Wedderburn factor</td>
+</tr>
+<tr>
+<td>$K_0(A)$</td>
+<td>Grothendieck group of finitely generated projective $A$-modules</td>
+</tr>
+<tr>
+<td>$F[G]$</td>
+<td>group algebra of a finite group $G$</td>
+</tr>
+<tr>
+<td>$B_b$</td>
+<td>a block of $F[G]$</td>
+</tr>
+<tr>
+<td>$\operatorname{Br}(F)$</td>
+<td>Brauer group of $F$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{B}$</td>
+<td>quaternions, biquaternions</td>
+</tr>
+<tr>
+<td>$\operatorname{Pic}(A)$</td>
+<td>Picard group of invertible bimodules</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for the Morita theorems, progenerators and equivalence of module categories.</li>
+<li>Hyman Bass, <em>Algebraic K-Theory</em> (Benjamin, 1968), for the Morita-invariance of $K_0$ and the Picard group.</li>
+<li>Nicolas Bourbaki, <em>Algebra VIII</em> (Springer, 2012), for the structure of semisimple algebras and the Brauer group.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Methods of Representation Theory, Vol. I</em> (Wiley, 1981), for blocks of group algebras and Morita equivalence of blocks.</li>
+<li>Yu. A. Drozd and V. V. Kirichenko, <em>Finite Dimensional Algebras</em> (Springer, 1994), for basic algebras, progenerators and the module category.</li>
+<li>Walter Feit, <em>The Representation Theory of Finite Groups</em> (North-Holland, 1982), for the modular representation theory in which block Morita equivalence is used.</li>
+<li>I. Martin Isaacs, <em>Character Theory of Finite Groups</em> (Academic Press, 1976), for Clifford theory and the reduction of group algebras by normal subgroups.</li>
+<li>Nathan Jacobson, <em>Basic Algebra II</em> (Dover, 2nd ed. 2009), for the Wedderburn theory behind the central simple case.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for Morita equivalence, the density theorem and simple algebras.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the basic algebra and the structure of finite-dimensional algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

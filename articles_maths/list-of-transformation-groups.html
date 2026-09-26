@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Transformation Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-transformation-groups"><strong>List of Transformation Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the transformation groups of the corpus — the groups that are realised as the transformations of a set carrying a structure — together with the structure each preserves and the article that introduces it. The umbrella notion is that of <em>Transformation Groups</em>: a group acts on a set $X$ through a homomorphism $\rho : G \to \operatorname{Sym}(X)$, the action is faithful when that homomorphism is injective, and an automorphism group $\operatorname{Aut}(X)$ is the subgroup of $\operatorname{Sym}(X)$ preserving whatever structure $X$ carries. The list is the entry point for the families that the rest of the category develops: the linear, classical, projective, affine, Euclidean, isometry, Möbius, conformal, symplectic, discrete and automorphism families, each of which is a catalogue of its own.</p>
+<p>Every entry points to the article that introduces the group or the action. The article introduces nothing and proves nothing: it records what each group preserves, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the groups that act faithfully on a space it lists the actions that fail faithfulness — the action of $GL_n$ on the projective space, whose kernel is the scalars — the isometry group of a general Riemannian manifold, which is too small for the manifold to be a homogeneous space, the structure group of a bundle, which acts on the fibres and not on the base, and the mapping class group, which acts on the curve complex rather than on the surface by a faithful action of homeomorphisms, each with the failure named and the article that records it. The Erlangen program itself is the subject of <em>Transformation Groups and the Erlangen Program</em>, and the general theory is taken from <em>Transformation Groups</em>.</p>
+<h2 id="the-transformations-of-a-set-and-the-hierarchy-of-automorphisms">The Transformations of a Set and the Hierarchy of Automorphisms</h2>
+<p>The hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots$ records that a transformation group is determined by what it is required to preserve: each layer of structure cuts down the group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the symmetric group $\operatorname{Sym}(X)$</td>
+<td>the group of all bijections of a bare set; the largest transformation group of $X$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the symmetric group $S_n$</td>
+<td>$\operatorname{Sym}(\{1,\ldots,n\})$, of order $n!$</td>
+<td><em>Transformation Groups</em>; <em>Groups</em></td>
+</tr>
+<tr>
+<td>an action $G \times X \to X$, $a\cdot x$</td>
+<td>a homomorphism $\rho : G \to \operatorname{Sym}(X)$; the realisation of an abstract group by transformations</td>
+<td><em>Transformation Groups</em>; <em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>a faithful action</td>
+<td>$\ker\rho = 1$; the group is a subgroup of $\operatorname{Sym}(X)$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the orbit and the stabiliser</td>
+<td>$\operatorname{Orb}(x)$ and $\operatorname{Stab}(x)$, with the orbit–stabiliser theorem and $G/H$ for a transitive action</td>
+<td><em>Group Actions and Structure</em>; <em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Cayley's embedding $G \hookrightarrow \operatorname{Sym}(G)$</td>
+<td>the left regular action; every group is a transformation group of itself</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the automorphism group $\operatorname{Aut}(X)$</td>
+<td>the transformations preserving the structure on $X$; $\operatorname{Aut}(X) = \operatorname{End}(X)^\times$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the inner automorphisms $\operatorname{Inn}(G)$</td>
+<td>the conjugations $x \mapsto gxg^{-1}$; $\operatorname{Inn}(G) \cong G/Z(G)$</td>
+<td><em>Transformation Groups</em>; <em>List of Automorphism Groups</em></td>
+</tr>
+<tr>
+<td>the automorphism group $\operatorname{Aut}(G)$ of a group</td>
+<td>the transformations preserving the group operation, with $\operatorname{Out}(G) = \operatorname{Aut}(G)/\operatorname{Inn}(G)$</td>
+<td><em>List of Automorphism Groups</em></td>
+</tr>
+<tr>
+<td>the transformation group of a ring $\operatorname{Aut}(R)$</td>
+<td>the automorphisms preserving addition and multiplication; the Frobenius in prime characteristic</td>
+<td><em>Ring and Field Automorphisms</em>; <em>List of Automorphism Groups</em></td>
+</tr>
+<tr>
+<td>the transformation group of an algebra $\operatorname{Aut}_R(A)$</td>
+<td>the $R$-algebra automorphisms; $\operatorname{Der}_R(A)$ the infinitesimal ones</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>the transformation group of a module $\operatorname{Aut}_A(M)$</td>
+<td>the $A$-linear automorphisms; $\operatorname{End}_A(M)$ the monoid</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-families-of-transformation-groups">The Families of Transformation Groups</h2>
+<p>Each family is the transformation group of a space with a definite structure, and each is developed in a catalogue or an article of its own. The table is the entry point of the category.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>The structure preserved</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the linear groups $GL(V)$, $SL(V)$</td>
+<td>the linear structure of a vector space</td>
+<td><em>The General Linear Group</em>; <em>List of Linear Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the classical groups $O(V,Q)$, $U(V,h)$, $Sp(V,\omega)$</td>
+<td>a quadratic, Hermitian or symplectic form</td>
+<td><em>Matrix Groups and Classical Groups</em>; <em>List of Classical Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the projective groups $PGL(V)$, $PSL(V)$, $PO$, $PSU$, $PSp$</td>
+<td>the incidence structure of a projective space; the quotients by the centre</td>
+<td><em>Projective Geometry</em>; <em>List of Projective Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the affine group $\operatorname{Aff}(n) = \mathbb{R}^n \rtimes GL(n)$</td>
+<td>the affine structure; the automorphism group of affine space</td>
+<td><em>Affine Spaces and Translations</em>; <em>List of Affine and Euclidean Groups</em></td>
+</tr>
+<tr>
+<td>the Euclidean group $E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>the Euclidean distance and its isometries</td>
+<td><em>Euclidean Geometry</em>; <em>List of Affine and Euclidean Groups</em>; <em>List of Isometry and Symmetry Groups</em></td>
+</tr>
+<tr>
+<td>the similarity group $\operatorname{Sim}(n)$</td>
+<td>the distance up to a scalar; translations, rotations, reflections and dilatations</td>
+<td><em>Euclidean Geometry</em>; <em>List of Affine and Euclidean Groups</em></td>
+</tr>
+<tr>
+<td>the isometry groups $\operatorname{Isom}(\mathbb{R}^n)$, $\operatorname{Isom}(\mathbb{H}^n)$, $\operatorname{Isom}(S^n)$</td>
+<td>a metric; the model spaces of constant curvature</td>
+<td><em>Non-Euclidean Geometry</em>; <em>List of Isometry and Symmetry Groups</em></td>
+</tr>
+<tr>
+<td>the Möbius and conformal groups $\operatorname{Möb}(n)$, $\operatorname{Conf}(M)$</td>
+<td>a conformal structure; the Möbius group generated by inversions</td>
+<td><em>Möbius and Lie Sphere Geometry</em>; <em>Conformal Geometry</em>; <em>List of Möbius and Conformal Groups</em></td>
+</tr>
+<tr>
+<td>the symplectic group $Sp(2n,\mathbb{R})$ and the symplectomorphisms</td>
+<td>a symplectic form, and the group of diffeomorphisms preserving it</td>
+<td><em>Symplectic Geometry</em>; <em>List of Symplectic Geometries</em></td>
+</tr>
+<tr>
+<td>the orthogonal group of a quadratic space</td>
+<td>a quadratic form, through the reflection theorem of Cartan–Dieudonné</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the discrete geometric groups</td>
+<td>a lattice or a crystallographic structure; discreteness and cocompactness</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>List of Discrete Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the homeomorphism and diffeomorphism groups</td>
+<td>a topological or smooth structure; infinite-dimensional transformation groups</td>
+<td><em>Diffeomorphism Groups</em>; <em>List of Diffeomorphism and Homeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>the mapping class group $\operatorname{Mod}(S)$</td>
+<td>the isotopy classes of homeomorphisms; it acts on the curve complex</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>the birational group $\operatorname{Bir}(X)$</td>
+<td>the birational equivalence of a variety</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>a Lie group acting on itself</td>
+<td>the left translations; the group as a homogeneous space of itself</td>
+<td><em>Lie Groups</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>the Thompson groups $F$, $T$, $V$</td>
+<td>the piecewise-linear homeomorphisms of the interval, the circle and the Cantor set</td>
+<td><em>Thompson Groups and the Cantor Set</em></td>
+</tr>
+<tr>
+<td>the Galois group $\operatorname{Gal}(L/K)$</td>
+<td>the field automorphisms fixing $K$; the transformation group of a field extension</td>
+<td><em>Galois Theory</em>; <em>List of Automorphism Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-erlangen-program-and-the-klein-geometries">The Erlangen Program and the Klein Geometries</h2>
+<p>Klein's principle reads a geometry as the study of the invariants of a transformation group, and a geometry so presented is a pair $(G,H)$ with $G$ a Lie group, $H$ a closed subgroup and $G/H$ the homogeneous space. The program and its limits are the subject of <em>Transformation Groups and the Erlangen Program</em>, and the geometries it organises are catalogued separately.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or principle</th>
+<th>The statement or the structure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klein's principle</td>
+<td>a geometry is the study of the invariants of a transformation group; the correspondence $G \to \operatorname{Aut}(X)$</td>
+<td><em>Transformation Groups and the Erlangen Program</em></td>
+</tr>
+<tr>
+<td>a Klein geometry $(G,H)$</td>
+<td>a Lie group and a closed subgroup, with the homogeneous space $G/H$ as the model space</td>
+<td><em>List of Klein Geometries</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>homogeneous spaces</td>
+<td>$G/H$ with the smooth structure making $G \to G/H$ a submersion, of dimension $\dim G - \dim H$</td>
+<td><em>Homogeneous Spaces</em>; <em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>Euclidean, affine, projective geometry</td>
+<td>the geometries of the corresponding groups $E(n)$, $\operatorname{Aff}(n)$, $PGL(n+1)$</td>
+<td><em>List of Erlangen Program Geometries</em>; <em>List of Klein Geometries</em></td>
+</tr>
+<tr>
+<td>hyperbolic, spherical geometry</td>
+<td>the geometries of $O(n,1)$ and $O(n+1)$; the space forms</td>
+<td><em>List of Erlangen Program Geometries</em>; <em>List of Riemannian Geometries</em></td>
+</tr>
+<tr>
+<td>conformal and Möbius geometry</td>
+<td>the geometries of $O(n+1,1)$ and of the Möbius group</td>
+<td><em>List of Möbius and Conformal Groups</em>; <em>List of Erlangen Program Geometries</em></td>
+</tr>
+<tr>
+<td>symplectic geometry</td>
+<td>the geometry of the symplectic group and the symplectic form</td>
+<td><em>List of Symplectic Geometries</em>; <em>List of Erlangen Program Geometries</em></td>
+</tr>
+<tr>
+<td>the limits of the program</td>
+<td>a Riemannian manifold of general curvature is not a Klein geometry; its isometry group need not act transitively</td>
+<td><em>Transformation Groups and the Erlangen Program</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-constructions-on-an-action">The Constructions on an Action</h2>
+<p>An action is a homomorphism $G \to \operatorname{Sym}(X)$, and the constructions of the group theory of actions are the transformations of the group into $\operatorname{Sym}(X)$ and of the set into its orbits.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or construction</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the action on the cosets $G/H$</td>
+<td>the transitive $G$-set of the left cosets; every transitive $G$-set is of this form</td>
+<td><em>Group Actions and Structure</em>; <em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the conjugation action $G$ on itself</td>
+<td>$g \cdot x = gxg^{-1}$; its orbits are the conjugacy classes and its fixed points the centre</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>the fixed-point set $\operatorname{Fix}(a)$</td>
+<td>the points fixed by $a$; the fixed-point formula of Burnside's lemma counts them</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>the double coset $HaK$</td>
+<td>the orbits of $H$ on $G/K$; the decomposition that generalises the coset decomposition</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>the class equation</td>
+<td>$\lvert G\rvert = \lvert Z(G)\rvert + \sum_i [G : C_G(x_i)]$; the counting identity of the conjugation action</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>the restriction of an action to a subgroup</td>
+<td>$G$ acting on $X$ restricts to $H \leq G$; the orbits refine</td>
+<td><em>Group Actions and Structure</em>; <em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the product action on $X \times Y$</td>
+<td>$g\cdot(x,y) = (gx, gy)$; the action of a direct product $G_1 \times G_2$</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>the induced action on the powers</td>
+<td>the action of $G$ on the subsets, on the $k$-subsets and on the functions of a $G$-set</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Burnside's lemma</td>
+<td>the number of orbits is the average number of fixed points, $\lvert X/G\rvert = \tfrac1{\lvert G\rvert}\sum_g \lvert\operatorname{Fix}(g)\rvert$</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-and-warnings">Non-examples and Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why the expected statement fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the action of $GL_n(K)$ on $P^{n-1}(K)$</td>
+<td>it is not faithful; the kernel is the group of scalars, and the faithful group is the projective quotient $PGL_n(K)$</td>
+<td><em>Projective Geometry</em>; <em>List of Projective Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the trivial action of a group on a set</td>
+<td>it is not faithful, except for the trivial group; $\ker\rho = G$</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>the isometry group of a general Riemannian manifold</td>
+<td>it need not act transitively, so the manifold is not a homogeneous space; the Erlangen principle does not apply</td>
+<td><em>Transformation Groups and the Erlangen Program</em></td>
+</tr>
+<tr>
+<td>the structure group of a principal bundle</td>
+<td>it acts on the fibres of the bundle and not on the base; it is a transformation group of the total space only through the local trivialisations</td>
+<td><em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the mapping class group of a surface</td>
+<td>it does not act by homeomorphisms on the surface itself; it acts faithfully on the set of isotopy classes of simple closed curves</td>
+<td><em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>an abstract group with no faithful action registered</td>
+<td>a group is a transformation group only through an action; the correspondence $G \to \operatorname{Aut}(X)$ requires the action to be named</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>the symplectomorphism group of a symplectic manifold</td>
+<td>it is infinite-dimensional and not the finite-dimensional symplectic group $Sp(2n,\mathbb{R})$</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Objects that a reader may expect in a list of transformation groups, and does not find here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$O(V,Q)$, $U(V,h)$, $Sp(V,\omega)$ as groups</td>
+<td>they are defined by a form, so they are introduced among the classical geometric groups and are listed there</td>
+<td><em>List of Classical Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the spin and pin groups</td>
+<td>they are constructed from the Clifford algebra and are listed with it</td>
+<td><em>List of Clifford Algebras and Spin Groups</em></td>
+</tr>
+<tr>
+<td>the infinite-dimensional Lie groups</td>
+<td>recorded with Hilbert's fifth problem; they are transformation groups without a finite dimension</td>
+<td><em>Hilbert's Fifth Problem and Infinite-Dimensional Lie Theory</em></td>
+</tr>
+<tr>
+<td>the absolute Galois group</td>
+<td>it acts on the algebraic closure; it is not the transformation group of a finite-dimensional geometry</td>
+<td><em>Galois Cohomology</em>; <em>List of Automorphism Groups</em></td>
+</tr>
+<tr>
+<td>the $p$-adic algebraic groups</td>
+<td>they act on buildings and on $p$-adic symmetric spaces; recorded among the topological groups</td>
+<td><em>List of Topological Groups</em>; <em>Buildings and Tits Systems</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the transformation groups of the corpus: the transformations of a bare set and the hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X)$, with the actions, orbits, stabilisers and automorphism groups of a group, a ring, an algebra and a module; the families in which the category is developed — the linear, classical, projective, affine, Euclidean, isometry, Möbius, conformal, symplectic, discrete, homeomorphism and automorphism families, each with the structure it preserves; and the Erlangen program, which reads a geometry as the invariants of a transformation group and presents it as a Klein geometry $G/H$. Beside the examples stand the non-examples: the unfaithful action on projective space, the trivial action, the isometry group of a general Riemannian manifold, the structure group of a bundle, and the mapping class group acting on the curve complex. The list introduces and proves nothing; it is the entry point of the geometric-group family of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}(X)$, $S_n$</td>
+<td>the symmetric group of a set; the symmetric group on $n$ letters</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(X)$, $\operatorname{End}(X)$</td>
+<td>the automorphism group and the endomorphism monoid of a structure</td>
+</tr>
+<tr>
+<td>$\rho : G \to \operatorname{Sym}(X)$</td>
+<td>the permutation representation of an action; $\ker\rho = 1$ when faithful</td>
+</tr>
+<tr>
+<td>$\operatorname{Orb}(x)$, $\operatorname{Stab}(x)$, $G/H$</td>
+<td>orbit, stabiliser and coset space of a transitive action</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(G)$, $\operatorname{Inn}(G)$, $\operatorname{Out}(G)$</td>
+<td>the automorphism, inner and outer groups of a group</td>
+</tr>
+<tr>
+<td>$E(n)$, $\operatorname{Aff}(n)$, $\operatorname{Sim}(n)$</td>
+<td>the Euclidean, affine and similarity groups</td>
+</tr>
+<tr>
+<td>$GL(V)$, $SL(V)$, $PGL(V)$, $PSL(V)$</td>
+<td>the linear and projective linear groups</td>
+</tr>
+<tr>
+<td>$O(V,Q)$, $U(V,h)$, $Sp(V,\omega)$</td>
+<td>the classical groups of a quadratic, Hermitian and symplectic form</td>
+</tr>
+<tr>
+<td>$\operatorname{Möb}(n)$, $\operatorname{Conf}(M)$</td>
+<td>the Möbius group and the conformal group</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(X)$, $\operatorname{Diff}(M)$, $\operatorname{Homeo}(X)$</td>
+<td>the isometry, diffeomorphism and homeomorphism groups</td>
+</tr>
+<tr>
+<td>$\operatorname{Mod}(S)$, $\operatorname{Bir}(X)$</td>
+<td>the mapping class group and the birational group</td>
+</tr>
+<tr>
+<td>$(G,H)$, $G/H$</td>
+<td>a Klein geometry and its homogeneous space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Felix Klein, <em>Vergleichende Betrachtungen über neuere geometrische Forschungen</em> (Erlangen, 1872), for the original statement of the Erlangen programme, that a geometry is the study of the invariants of a transformation group.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the homogeneous spaces, the Klein geometries and the correspondence between a geometry and its automorphism group.</li>
+<li>John L. Alperin and Rowen B. Bell, <em>Groups and Representations</em> (Springer, 1995), for group actions, automorphism groups and the realisation of a group by transformations.</li>
+<li>Benson Farb and Dan Margalit, <em>A Primer on Mapping Class Groups</em> (Princeton University Press, 2012), for the mapping class group and its action on the curve complex.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

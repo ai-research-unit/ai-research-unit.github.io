@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyclic Cohomology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cyclic-cohomology"><strong>Cyclic Cohomology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Cyclic cohomology is the cohomology theory of an algebra that is dual to cyclic homology. It is built from the Hochschild cochains of an algebra up to a cyclic symmetry, and its characteristic feature is that it pairs with the $K$-theory of the algebra: a cyclic $n$-cocycle is a machine that assigns a number to an $n$-dimensional $K$-theory class, and the assignment is the non-commutative generalisation of the integration of a differential form over a cycle. In the commutative case the pairing becomes the classical one between de Rham currents and homology, which is why cyclic cohomology is the algebraic home of the Chern character and of the index formula for elliptic operators.</p>
+<p>The subject has a homology twin. The companion article <em>Cyclic Homology</em>, written in parallel with this one in Part I, treats the homology theory $HC_\bullet(A)$: the cyclic bicomplex as a chain complex, the relation to Hochschild homology $HH_\bullet(A)$, the trace map, and the Connes exact sequence in homology. This article treats the cohomology. Over a field the two are termwise dual — the cochain complex is the dual of the chain complex, and for a finite-dimensional algebra the cohomology is literally the dual of the homology — but the emphasis is different: homology is the natural recipient of the Chern character of a $K$-theory class, cohomology is the natural source of the pairing with it, and the cohomological Connes exact sequence has the arrows of the dual sequence. The two articles share the definitions of the Hochschild complex and of the operators $b$ and $B$, stated here in the cohomological form.</p>
+<p>The base is an algebra $A$ over a field $k$ of characteristic zero, associative and unital unless stated; the characteristic-zero hypothesis is what makes the cyclic complex compute the theory, and it is stated once. The article develops the Hochschild complex and its cyclicity, the cyclic complex and the $(b,B)$-bicomplex, the low-degree identifications and the Connes exact sequence, the pairing with $K_0$ and $K_1$, the Chern character in cyclic form, the Fredholm-module picture of the index pairing, and the commutative case in which de Rham currents appear. The $K$-theory of rings is <em>K-Theory of Rings</em> (Part I, written in parallel), and the topological and operator-algebraic $K$-theory, the index theorem, the Fredholm modules and the local index formula are Part II's: <em>The Atiyah–Singer Index Theorem and K-Theory</em> and <em>Spectral Triples and Noncommutative Geometry</em>, cited; the Fredholm theory of a single operator is Part III's <em>Fredholm Theory</em>. No physics is used; the operators occurring below are operators on algebras.</p>
+<h2 id="the-hochschild-complex-and-cyclicity">The Hochschild Complex and Cyclicity</h2>
+<h3 id="cochains-and-the-coboundary">Cochains and the Coboundary</h3>
+<p>Let $A$ be a $k$-algebra with unit, and let $A^*=\operatorname{Hom}_k(A,k)$ be its linear dual, an $A$-bimodule with $(a\cdot f)(b)=f(ba)$ and $(f\cdot a)(b)=f(ab)$. The <strong>Hochschild cochain complex</strong> of $A$ with coefficients in $A^*$ is</p>
+<p>$$
+C^n(A,A^*) = \operatorname{Hom}_k(A^{\otimes n},A^*) \cong \operatorname{Hom}_k(A^{\otimes(n+1)},k) ,
+$$</p>
+<p>an element $\phi$ of which is written as a multilinear functional $\phi(a_0,\dots,a_n)$; the <strong>Hochschild coboundary</strong> $b:C^n\to C^{n+1}$ is</p>
+<p>$$
+(b\phi)(a_0,\dots,a_{n+1}) = \sum_{i=0}^{n}(-1)^i\phi(a_0,\dots,a_ia_{i+1},\dots,a_{n+1})+(-1)^{n+1}\phi(a_{n+1}a_0,a_1,\dots,a_n) .
+$$</p>
+<p>The identity $b^2=0$ holds; the <strong>Hochschild cohomology</strong> is $HH^n(A,A^*)=\ker b/\operatorname{im}b$. The complex is the dual of the Hochschild chain complex with coefficients in $A$, which is the object of <em>Cyclic Homology</em>.</p>
+<p><strong>Proposition (degree zero and one).</strong> $HH^0(A,A^*)$ is the space of <strong>traces</strong>, the linear functionals $\tau$ with $\tau(a_0a_1)=\tau(a_1a_0)$; and $HH^1(A,A^*)$ is the space of derivations of $A$ into $A^*$ modulo inner derivations, the identification sending $\phi$ to the derivation $a\mapsto\phi(\,\cdot\,,a)-$ (the dual of the usual Hochschild identification).</p>
+<p><em>Proof.</em> The formula for $b$ in degree $0$ is $(b\tau)(a_0,a_1)=\tau(a_0a_1)-\tau(a_1a_0)$, so $b\tau=0$ is exactly the trace condition. For degree $1$ the identity $(b\phi)(a_0,a_1,a_2)=\phi(a_0a_1,a_2)-\phi(a_0,a_1a_2)+\phi(a_2a_0,a_1)$ is the cocycle condition, which is the Leibniz rule for the associated derivation. $\square$</p>
+<h3 id="cyclicity">Cyclicity</h3>
+<p>The cyclic group $\mathbb{Z}/(n+1)$ acts on $C^n$ by</p>
+<p>$$
+(\lambda\phi)(a_0,\dots,a_n) = (-1)^n\phi(a_n,a_0,\dots,a_{n-1}) .
+$$</p>
+<p>A cochain is <strong>cyclic</strong> if $\lambda\phi=\phi$; the cyclic cochains form the subspace $C^n_\lambda(A,A^*)$. The sign is chosen so that the Hochschild coboundary preserves cyclicity, $b\lambda=\lambda b$, hence $b$ restricts to a coboundary on the cyclic subcomplex:</p>
+<p>$$
+\cdots\to C^{n-1}_\lambda\xrightarrow{b}C^n_\lambda\xrightarrow{b}C^{n+1}_\lambda\to\cdots , \qquad b^2=0 .
+$$</p>
+<p><strong>Definition.</strong> The <strong>cyclic cohomology</strong> of $A$ is the cohomology of this complex,</p>
+<p>$$
+HC^n(A) = \ker\bigl(b:C^n_\lambda\to C^{n+1}_\lambda\bigr)\big/\operatorname{im}\bigl(b:C^{n-1}_\lambda\to C^n_\lambda\bigr) ,
+$$</p>
+<p>for $k$ of characteristic zero.</p>
+<p><strong>Example (traces).</strong> $C^0_\lambda=C^0=\operatorname{Hom}_k(A,k)$ and $b$ has no source in degree $-1$, so</p>
+<p>$$
+HC^0(A) = \{\tau\in A^* : \tau(a_0a_1)=\tau(a_1a_0)\} ,
+$$</p>
+<p>the space of traces on $A$; a trace is a cyclic $0$-cocycle. For $A=k$ the space is $k$; for $A=M_n(k)$ it is one-dimensional, spanned by the matrix trace; for a commutative algebra it is the dual of the algebra modulo the span of the commutators.</p>
+<p><strong>Example (the fundamental $1$-cocycle).</strong> For $A=C^\infty(S^1)$ with pointwise product, the functional</p>
+<p>$$
+\tau(f_0,f_1) = \frac{1}{2\pi i}\oint_{S^1}f_0\,df_1
+$$</p>
+<p>is a cyclic $1$-cocycle: cyclicity follows from $df_0f_1=d(f_0f_1)-f_0df_1$ and the vanishing of the integral of an exact form, and the cocycle condition $b\tau=0$ is the statement that $\tau$ is closed. The class $[\tau]\in HC^1(A)$ is the fundamental class of the circle, and the pairing computed below reproduces the winding number. This is the smallest instance of the principle that cyclic cocycles are the non-commutative counterparts of closed currents.</p>
+<h2 id="the-math75-bicomplex-and-the-exact-sequence">The $(b,B)$-Bicomplex and the Exact Sequence</h2>
+<h3 id="the-operator-math76">The Operator $B$</h3>
+<p>Besides the Hochschild coboundary, the cyclic theory uses Connes' <strong>boundary operator</strong> $B:C^{n}\to C^{n-1}$, defined as the composition of the antisymmetrisation $\operatorname{Alt}$, given on a cochain $\phi$ of degree $n-1$ by</p>
+<p>$$
+(\operatorname{Alt}\phi)(a_0,\dots,a_{n-1}) = \sum_{j=0}^{n-1}(-1)^{(n-1)j}\phi(a_j,a_{j+1},\dots,a_{n-1},a_0,\dots,a_{j-1}) ,
+$$</p>
+<p>with the operator $B_0\phi(a_0,\dots,a_{n-1})=\phi(1,a_0,\dots,a_{n-1})-(-1)^{n}\phi(a_0,\dots,a_{n-1},1)$, in the form $B=\operatorname{Alt}\circ B_0$ up to the conventional normalisation.</p>
+<p><strong>Proposition.</strong> The operators satisfy $b^2=0$, $B^2=0$ and $bB+Bb=0$.</p>
+<p><em>Proof.</em> Quoted as standard (Connes). The identity $bB+Bb=0$ is the statement that the Hochschild cocycle condition and the cyclic symmetry are compatible; it is the algebraic content of the fact that the cyclic differential of the non-commutative de Rham complex is the sum $b+B$ of a degree $+1$ and a degree $-1$ operator. $\square$</p>
+<p><strong>Remark (the $(b,B)$-bicomplex).</strong> The relations above make the bigraded module $C^{p,q}$ with $C^n=\bigoplus_{p-q=n}C^{p,q}$ into a bicomplex with differentials $b$ (raising $p$) and $B$ (raising $q$), and the cohomology of the total complex is again $HC^\bullet(A)$. Taking the total complex with the differential $b+B$ exhibits cyclic cohomology as the cohomology of a single complex, and the spectral sequence of the bicomplex computes it from the Hochschild groups; the construction is the cohomological form of the cyclic bicomplex of <em>Cyclic Homology</em>. The <strong>periodic cyclic cohomology</strong> is the cohomology of the complex obtained by replacing $b+B$ by the periodic version with two-periodic indices,</p>
+<p>$$
+HP^\bullet(A) = \varinjlim_S HC^\bullet(A) ,
+$$</p>
+<p>the direct limit of the periodicity operator of the next paragraph.</p>
+<h3 id="the-connes-exact-sequence">The Connes Exact Sequence</h3>
+<p><strong>Theorem (Connes' periodicity sequence).</strong> There is a long exact sequence</p>
+<p>$$
+\cdots\to HC^{n-1}(A)\xrightarrow{S}HC^{n+1}(A)\xrightarrow{I}HH^{n+1}(A)\xrightarrow{B}HC^{n}(A)\xrightarrow{S}HC^{n+2}(A)\to\cdots
+$$</p>
+<p>in which $I$ is induced by the inclusion of the cyclic cochains among all Hochschild cochains, $B$ is Connes' operator, and $S$ is the <strong>periodicity operator</strong>, raising the degree by two. The sequence is the dual of the homology sequence of <em>Cyclic Homology</em>, with the arrows reversed.</p>
+<p><em>Proof.</em> Quoted as standard (Connes). The sequence is the long exact sequence of the short exact sequence of complexes $0\to C^\bullet_\lambda\to C^\bullet\xrightarrow{1-\lambda}C^\bullet\to C^\bullet/(1-\lambda)C^\bullet\to0$, whose middle cohomology is the Hochschild cohomology; the periodicity operator is induced by the cup product with the generator of $HC^2(k)\cong k$, and the identification of the connecting homomorphism with $B$ is the content of Connes' lemma. $\square$</p>
+<p><strong>Corollary (low degrees).</strong> $HC^0(A)=HH^0(A,A^*)=$ traces, and $HC^1(A)$ sits in the exact sequence</p>
+<p>$$
+0\to HC^1(A)\to HH^1(A,A^*)\xrightarrow{B}HC^0(A)\xrightarrow{S}HC^2(A)\xrightarrow{I}HH^2(A)\to\cdots ,
+$$</p>
+<p>so $HC^1(A)$ is the kernel of $B$ on the Hochschild $1$-cochains, modulo the image of $HC^{-1}=0$, and the periodicity operator is injective or surjective according to the vanishing of the intervening Hochschild groups.</p>
+<p><strong>Remark (finite-dimensional algebras).</strong> For a separable finite-dimensional algebra $A$ with centre $Z(A)$, the Hochschild groups vanish in positive degree and the sequence collapses to give $HC^{2m}(A)\cong Z(A)^*$ and $HC^{2m+1}(A)=0$; for $A=M_n(k)$ this reads $HC^{2m}(M_n(k))\cong k$ and $HC^{2m+1}(M_n(k))=0$. The example shows the two-periodicity of the theory and the sense in which the trace detects the whole of the even cohomology of a matrix algebra, which is why the even pairing with $K_0$ is exhaustive in that case.</p>
+<h2 id="the-pairing-with-k-theory">The Pairing with K-Theory</h2>
+<h3 id="the-even-pairing">The Even Pairing</h3>
+<p><strong>Theorem (the $K_0$ pairing).</strong> Let $\tau$ be a trace on $A$, viewed as a class in $HC^0(A)$, and extend it to $M_N(A)$ by</p>
+<p>$$
+\tau_N(x) = \sum_{i=1}^{N}\tau(x_{ii}) .
+$$</p>
+<p>Then $\tau_N$ is a trace on $M_N(A)$, the number $\tau_N(e)$ depends only on the $K_0$-class of the idempotent $e\in M_N(A)$, and the resulting bilinear map</p>
+<p>$$
+\langle\,\cdot\,,\,\cdot\,\rangle : HC^0(A)\times K_0(A)\to k , \qquad \langle[\tau],[e]\rangle = \tau_N(e) ,
+$$</p>
+<p>is the <strong>even pairing</strong>. It is natural in $A$ and is compatible with the periodicity operator: $\langle S\tau,x\rangle=\langle\tau,x\rangle$ under the identification of $K_0$ with the even $K$-groups.</p>
+<p><em>Proof.</em> The extension $\tau_N$ is a trace because the matrix trace is one; the pairing is well defined on $K_0$ because $K_0$ is generated by idempotents with the equivalence generated by conjugation and by the stabilisation $e\mapsto\mathrm{diag}(e,0)$, both of which leave $\tau_N$ unchanged, and because $\tau_N$ is additive over orthogonal sums of idempotents. Naturality and the periodicity compatibility are immediate from the definitions. $\square$</p>
+<p><strong>Example.</strong> For $A=M_n(k)$ the trace pairs with $K_0(A)=\mathbb Z$ by the rank: a projection of rank $r$ pairs to $r$. For a commutative algebra $A=C(X)$ with $X$ compact, a trace is a finite measure $\mu$ on $X$, and the pairing with an idempotent $e$ (a continuous projection-valued function, hence a vector bundle) is $\int_X\mathrm{rank}(e(x))\,d\mu(x)$; the trace sees the rank and the measure, while the finer invariants of the bundle are seen by the higher cocycles through the Chern character below.</p>
+<h3 id="the-odd-pairing">The Odd Pairing</h3>
+<p><strong>Theorem (the $K_1$ pairing).</strong> Let $\tau$ be a cyclic $1$-cocycle on $A$ and let $u$ be an invertible element of $M_N(A)$, the class $[u]\in K_1(A)$; then</p>
+<p>$$
+\langle[\tau],[u]\rangle = \tau_N\bigl(u^{-1},u\bigr) ,
+$$</p>
+<p>where the extension of $\tau$ to matrices is $\tau_N(x_0,x_1)=\sum_{i,j}\tau(x_0^{ij},x_1^{ji})$, depends only on the classes of $\tau$ and $u$, and defines a pairing $HC^1(A)\times K_1(A)\to k$.</p>
+<p><em>Proof.</em> Quoted as standard (Connes). The cocycle identity $b\tau=0$ is exactly what makes the expression invariant under the deformations of $u$ that generate the $K_1$-equivalences, and cyclicity makes it vanish on the image of $B$, so the pairing descends to the cohomology and to $K_1$. $\square$</p>
+<p><strong>Example (the winding number).</strong> For $A=C^\infty(S^1)$ and the fundamental $1$-cocycle $\tau(f_0,f_1)=\frac{1}{2\pi i}\oint f_0df_1$, an invertible element is a nowhere-vanishing smooth function $u:S^1\to\mathbb{C}^*$, and</p>
+<p>$$
+\langle[\tau],[u]\rangle = \frac{1}{2\pi i}\oint u^{-1}\frac{du}{d\theta}\,d\theta ,
+$$</p>
+<p>the winding number of $u$, an integer; the pairing is the map $K_1(C^\infty(S^1))\cong\mathbb{Z}\to\mathbb{Z}$. The same integral is the index of the Toeplitz operator with symbol $u$ on the Hardy space, which is the analytic form of the odd pairing.</p>
+<h3 id="the-chern-character-in-cyclic-form">The Chern Character in Cyclic Form</h3>
+<p><strong>Remark (the character and its properties).</strong> The pairings are the two low cases of a single statement: there is a <strong>Chern character</strong></p>
+<p>$$
+ch : K_*(A)\to HC_*(A) , \qquad ch^* : K^*(A)\to HC^*(A)
+$$</p>
+<p>from the $K$-theory of $A$ to the cyclic homology and from the $K$-cohomology to the cyclic cohomology, natural in $A$, compatible with the products, and reducing in degree zero to the trace of a projection and in degree one to the class of $u^{-1}du$. The pairing of the two theorems is the composition of $ch$ with the duality $HC^\bullet\times HC_\bullet\to k$; the explicit chains are $ch_{2n}(e)=\operatorname{tr}(e\,de\,de\cdots de)$ and $ch_{2n+1}(u)=\operatorname{tr}((u^{-1}du)^{2n+1})$, symmetrised over the cyclic order with the normalising constants of Connes' construction. The <strong>transgression</strong> between the even and odd characters is the operator $B$ of the bicomplex, and the compatibility of the characters with the periodicity operator is the statement that $ch$ is a map of periodicity modules.</p>
+<h2 id="fredholm-modules-and-the-index-pairing">Fredholm Modules and the Index Pairing</h2>
+<p><strong>Definition.</strong> A <strong>Fredholm module</strong> over a $C^*$-algebra or a Banach algebra $A$ is a Hilbert space $\mathcal{H}$ with a representation of $A$ and a bounded operator $F$ with $F^2=1$, $F^*=F$ (or $F^2-1$ and $[F,a]$ compact), together with a $\mathbb{Z}_2$-grading in the even case; the module is <strong>finitely summable</strong> when the commutators $[F,a]$ lie in a Schatten class.</p>
+<p><strong>Theorem (the index pairing).</strong> An even Fredholm module over $A$ determines a cyclic cocycle $\tau_F$ whose pairing with $K_0(A)$ is the index of the Fredholm operator $PFP$ attached to a projection $P$ of $A$; an odd Fredholm module determines a cyclic cocycle whose pairing with $K_1(A)$ is the index of the Toeplitz-type operator $PuP+(1-P)$ for an invertible $u$. The cocycle is the <strong>Connes–Chern character</strong> of the module, and the pairing factors through the $K$-theory as the index map $K_*(A)\to\mathbb{Z}$.</p>
+<p><em>Proof.</em> Quoted as standard (Connes). The commutator conditions make the operator $PFP$ Fredholm, its index is invariant under the perturbations generated by $A$, and the index is computed by a trace over the algebra of the $[F,a]$'s; the trace is closed and cyclic, hence defines the cocycle. $\square$</p>
+<p><strong>Remark (the relation to Part II and to the index theorem).</strong> The Fredholm modules, the Connes–Chern character, the local index formula of Connes and Moscovici and the reconstruction of a spin manifold from a spectral triple are the subject of <em>Spectral Triples and Noncommutative Geometry</em>; the Atiyah–Singer theorem and its $K$-theoretic formulation, together with the computation of the index of a twisted Cauchy–Riemann operator from the characteristic classes, are <em>The Atiyah–Singer Index Theorem and K-Theory</em> and <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em>. What the present article supplies to those is the algebraic machinery: the cyclic cohomology that receives the character, the pairing that turns it into an integer, and the exact sequence that relates it to the Hochschild theory. The Fredholm property of a single operator is <em>Fredholm Theory</em>.</p>
+<p><strong>Remark (the commutative case).</strong> For $A=C^\infty(M)$ with $M$ a closed manifold, the $(b,B)$-bicomplex computes the de Rham complex: the Hochschild cohomology of $A$ is the space of multivectors (with the Schouten bracket as the Gerstenhaber structure), the cyclic cohomology contains the de Rham currents, and the periodicity operator corresponds to the de Rham differential in the sense that the Chern character of a projection — a vector bundle — is the de Rham current represented by the Chern character form of a connection on the bundle. The pairing of the current with the fundamental class of a cycle reproduces the classical integration of the Chern character, and this is the precise sense in which cyclic cohomology extends de Rham theory to the non-commutative setting. The statement is Connes' computation of $HC^\bullet(C^\infty(M))$, and it is the model for the general theory.</p>
+<h2 id="summary">Summary</h2>
+<p>Cyclic cohomology is built from the Hochschild cochain complex $C^n(A,A^*)=\operatorname{Hom}_k(A^{\otimes(n+1)},k)$ with the coboundary $(b\phi)(a_0,\dots,a_{n+1})=\sum_i(-1)^i\phi(a_0,\dots,a_ia_{i+1},\dots,a_{n+1})+(-1)^{n+1}\phi(a_{n+1}a_0,\dots,a_n)$ and the cyclic subcomplex $C^n_\lambda$ of cochains fixed by $\lambda\phi(a_0,\dots,a_n)=(-1)^n\phi(a_n,a_0,\dots,a_{n-1})$; the cohomology $HC^n(A)$ of the cyclic complex, over a field of characteristic zero, is the cyclic cohomology, and it is also the cohomology of the total complex of the $(b,B)$-bicomplex with $B^2=0$ and $bB+Bb=0$. In degree zero it is the space of traces; the periodicity operator $S$ raises the degree by two and the Connes exact sequence $\cdots\to HC^{n-1}\xrightarrow{S}HC^{n+1}\xrightarrow{I}HH^{n+1}\xrightarrow{B}HC^n\to\cdots$ relates it to Hochschild cohomology, with the dual arrows to the homology sequence of <em>Cyclic Homology</em>. Cyclic cohomology pairs with $K$-theory: a trace pairs with $K_0$ by $\langle[\tau],[e]\rangle=\tau_N(e)$ and a cyclic $1$-cocycle pairs with $K_1$ by $\langle[\tau],[u]\rangle=\tau_N(u^{-1},u)$, the two low cases of the Chern character $ch:K_*(A)\to HC_*(A)$ and its dual; in the commutative case the pairing is the integration of a de Rham current, and in the non-commutative case it is the index of a Fredholm operator, the Fredholm module's Connes–Chern character supplying the cocycle. The homology theory, the cyclic bicomplex and the trace map are <em>Cyclic Homology</em> (Part I); the $K$-theory of rings is <em>K-Theory of Rings</em>; the index theory, the spectral triples and the local index formula are Part II's.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $k$</td>
+<td>Algebra and base field of characteristic zero</td>
+</tr>
+<tr>
+<td>$A^*$</td>
+<td>Linear dual, an $A$-bimodule</td>
+</tr>
+<tr>
+<td>$C^n(A,A^*)$</td>
+<td>Hochschild cochains, functionals on $A^{\otimes(n+1)}$</td>
+</tr>
+<tr>
+<td>$b$</td>
+<td>Hochschild coboundary, $b^2=0$</td>
+</tr>
+<tr>
+<td>$HH^n(A,A^*)$</td>
+<td>Hochschild cohomology</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>Cyclic operator $(\lambda\phi)(a_0,\dots,a_n)=(-1)^n\phi(a_n,\dots,a_{n-1})$</td>
+</tr>
+<tr>
+<td>$C^n_\lambda(A,A^*)$</td>
+<td>Cyclic cochains</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>Connes' boundary, $B^2=0$, $bB+Bb=0$</td>
+</tr>
+<tr>
+<td>$HC^n(A)$</td>
+<td>Cyclic cohomology</td>
+</tr>
+<tr>
+<td>$HP^\bullet(A)$</td>
+<td>Periodic cyclic cohomology</td>
+</tr>
+<tr>
+<td>$S$, $I$</td>
+<td>Periodicity operator and inclusion in the Connes sequence</td>
+</tr>
+<tr>
+<td>$\langle[\tau],[e]\rangle=\tau_N(e)$</td>
+<td>Even pairing $HC^0\times K_0\to k$</td>
+</tr>
+<tr>
+<td>$\langle[\tau],[u]\rangle=\tau_N(u^{-1},u)$</td>
+<td>Odd pairing $HC^1\times K_1\to k$</td>
+</tr>
+<tr>
+<td>$ch$</td>
+<td>Chern character $K_*\to HC_*$ and its dual</td>
+</tr>
+<tr>
+<td>$(\mathcal{H},F)$</td>
+<td>Fredholm module</td>
+</tr>
+<tr>
+<td>$\tau_F$</td>
+<td>Connes–Chern character of a Fredholm module</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alain Connes, "Noncommutative Differential Geometry", <em>Publications Mathématiques de l'IHÉS</em> 62 (1985), 41–144, for the definition of cyclic cohomology, the $(b,B)$-bicomplex and the pairing with $K$-theory.</li>
+<li>Alain Connes, <em>Noncommutative Geometry</em> (Academic Press, 1994), for the Chern character in cyclic form, the Fredholm modules and the index formula.</li>
+<li>Jean-Louis Loday, <em>Cyclic Homology</em>, 2nd ed. (Springer, 1998), for the cyclic bicomplex, the Connes exact sequence and the relation between the homology and the cohomology.</li>
+<li>Dan Burghelea, "The Cyclic Homology of Group Rings", <em>Commentarii Mathematici Helvetici</em> 60 (1985), 354–373, for the computation of cyclic cohomology in a class of examples.</li>
+<li>Alain Connes and Henri Moscovici, "The Local Index Formula in Noncommutative Geometry", <em>Geometric and Functional Analysis</em> 5 (1995), 174–243, for the local index formula realising the pairing.</li>
+<li>Ezra Getzler and Andrei Kapranov, "Cyclic Operads and Cyclic Homology", in <em>Geometry, Topology and Physics</em> (International Press, 1995), for the operadic description of the cyclic structure.</li>
+<li>Joachim Cuntz and Daniel Quillen, "Cyclic Homology and Nonsingularity", <em>Journal of the American Mathematical Society</em> 8 (1995), 373–442, for the excision properties and the relation to $K$-theory.</li>
+<li>Tsit Yuen Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for the algebraic $K_0$ and $K_1$ that the pairing takes as its arguments.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

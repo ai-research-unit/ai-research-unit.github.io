@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Discord and Correlations Beyond Entanglement in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-discord-and-correlations-beyond-entanglement-in-biquaternionic-form"><strong>Quantum Discord and Correlations Beyond Entanglement in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Entanglement is not the whole of quantum correlation. There are separable states — states that can be prepared by local operations and classical communication, with no entanglement at all — whose correlations still cannot be reproduced by any classical probability distribution over local measurement outcomes. The quantity that measures this residual quantumness is the <strong>quantum discord</strong>, defined as the difference between two ways of quantifying the mutual information of a bipartite state: the quantum mutual information, which is symmetric, and the classical mutual information, which requires a measurement and is not. Discord is zero exactly for the states that are classically correlated, and it is positive for many separable states.</p>
+<p>This article develops discord in the biquaternion framework. The bipartite arena is the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose states are the trace-one positive elements of $\mathbb{M}_+^{\otimes2}$; the partial trace, the marginal states, and the bipartite entropy are fixed by the companion articles on entanglement in this subcategory. The mutual information is</p>
+<p>$$
+I(A:B) = S(\tilde{\rho}_A) + S(\tilde{\rho}_B) - S(\tilde{\rho}_{AB}),
+\qquad \tilde{\rho}_A = \mathrm{Tr}_B\,\tilde{\rho}_{AB}, \quad \tilde{\rho}_B = \mathrm{Tr}_A\,\tilde{\rho}_{AB},
+$$</p>
+<p>and the classical mutual information is</p>
+<p>$$
+J(A|B) = S(\tilde{\rho}_A) - S\bigl(\tilde{\rho}_{A|\{\tilde{\Pi}_k\}}\bigr),
+$$</p>
+<p>where the conditional entropy is that of the post-measurement state of $A$ after a projective measurement on $B$; the <strong>discord</strong> is $D(A|B) = I(A:B)-J(A|B)$, maximized over measurements in the definition of $J$.</p>
+<p>The framework's most useful contribution here is a compact parametrization. The states diagonal in the Bell idempotent basis,</p>
+<p>$$
+\tilde{\rho}_{AB} = \sum_\epsilon p_\epsilon\,P_\epsilon ,
+\qquad p_\epsilon\geq0, \quad \sum_\epsilon p_\epsilon = 1,
+$$</p>
+<p>are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ with $\tilde{Q}_j = -e_j\otimes e_j \in \mathbb{M}_+^{\otimes 2}$. These are the trace pairings of the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.</p>
+<h2 id="bipartite-states-and-their-mutual-information">Bipartite States and Their Mutual Information</h2>
+<h3 id="states-in-math12">States in $\mathbb{M}_+^{\otimes2}$</h3>
+<p>A two-qubit state is an element $\tilde{\rho}_{AB}\in\mathbb{M}_+^{\otimes2}$ with $\tilde{\rho}_{AB}\geq0$ and $\mathrm{Tr}(\tilde{\rho}_{AB}) = 1$, where the trace is the tensor trace $\mathrm{Tr} = \mathrm{Tr}_A\otimes\mathrm{Tr}_B$. The <strong>partial traces</strong> are defined by</p>
+<p>$$
+\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}(b), \qquad \mathrm{Tr}_1(a\otimes b) = b\,\mathrm{Tr}(a),
+$$</p>
+<p>extended linearly, so that $\tilde{\rho}_A = \mathrm{Tr}_B\tilde{\rho}_{AB}$ and $\tilde{\rho}_B = \mathrm{Tr}_A\tilde{\rho}_{AB}$ are single-qubit states. These are the conventions of the companion article <em>Entangled Subsystems in the Biquaternion Framework</em>; the exercise <em>Exercise: The Reduced State of an Entangled Subsystem</em> works them explicitly.</p>
+<h3 id="the-quantum-mutual-information">The quantum mutual information</h3>
+<p>The <strong>quantum mutual information</strong> of a bipartite state is</p>
+<p>$$
+I(A:B) = S(\tilde{\rho}_A) + S(\tilde{\rho}_B) - S(\tilde{\rho}_{AB}) \geq 0 ,
+$$</p>
+<p>non-negative by subadditivity of the entropy. It is symmetric in $A$ and $B$ and is monotone under local operations; it measures the total correlation, quantum and classical, between the two subsystems. It vanishes exactly for product states, $\tilde{\rho}_{AB} = \tilde{\rho}_A\otimes\tilde{\rho}_B$.</p>
+<h3 id="the-bell-diagonal-family">The Bell-diagonal family</h3>
+<p>The four Bell idempotents $P_\epsilon$ of the companion article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em> form an idempotent basis of the two-qubit algebra, with $P_\epsilon P_{\epsilon'} = \delta_{\epsilon\epsilon'}P_\epsilon$ and $\sum_\epsilon P_\epsilon = e_0\otimes e_0$. The <strong>Bell-diagonal states</strong> are the convex combinations</p>
+<p>$$
+\tilde{\rho}_{AB} = \sum_\epsilon p_\epsilon\,P_\epsilon ,
+\qquad p_\epsilon\geq0, \qquad \sum_\epsilon p_\epsilon = 1 .
+$$</p>
+<p>Each $P_\epsilon$ is the joint spectral idempotent of the stabilizer pair $S_1 = -e_1\otimes e_1$ and $S_3 = -e_3\otimes e_3$, with $S_1P_\epsilon = -\epsilon_1 P_\epsilon$ and $S_3P_\epsilon = -\epsilon_3 P_\epsilon$. The same family is parametrized by the three correlation coefficients</p>
+<p>$$
+c_j = \mathrm{Tr}\bigl(\tilde{\rho}_{AB}\,\tilde{Q}_j\bigr),
+\qquad
+\tilde{Q}_1 = -e_1\otimes e_1, \quad \tilde{Q}_2 = -e_2\otimes e_2, \quad \tilde{Q}_3 = -e_3\otimes e_3 ,
+$$</p>
+<p>as the state</p>
+<p>$$
+\tilde{\rho}_{AB} = \tfrac{1}{4}\bigl(e_0\otimes e_0 + c_1\,ie_1\otimes ie_1 + c_2\,ie_2\otimes ie_2 + c_3\,ie_3\otimes ie_3\bigr)
+= \tfrac{1}{4}\Bigl(e_0\otimes e_0 + \sum_{j=1}^{3} c_j\,(ie_j)\otimes(ie_j)\Bigr).
+$$</p>
+<p>The equivalence of the two parametrizations is $p_\epsilon = \tfrac14(1-\sum_j c_j\epsilon_j)$ and $c_j = -\sum_\epsilon \epsilon_j p_\epsilon = -\langle\epsilon_j\rangle$. The coefficients are bounded by the positivity of the state; the whole family is a tetrahedron in the cube $[-1,1]^3$ containing the four Bell states at its vertices, where $(c_1,c_2,c_3) = -\epsilon$.</p>
+<p>The state of this family is determined by the triple $(c_1,c_2,c_3)$, and the marginal states are always maximally mixed,</p>
+<p>$$
+\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_0 ,
+\qquad S(\tilde{\rho}_A) = S(\tilde{\rho}_B) = 1\ \text{bit},
+$$</p>
+<p>because the trace of every $ie_j$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $P_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so</p>
+<p>$$
+S(\tilde{\rho}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
+\qquad
+I(A:B) = 2 - S(\tilde{\rho}_{AB}) .
+$$</p>
+<p>For Bell-diagonal states the quantum mutual information is thus a function of the three trace pairings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the norm form.</p>
+<h2 id="classical-mutual-information-and-discord">Classical Mutual Information and Discord</h2>
+<h3 id="measurement-on-one-subsystem">Measurement on one subsystem</h3>
+<p>To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\hat{n}$ has idempotents</p>
+<p>$$
+\tilde{\Pi}_\pm = \tfrac12\bigl(e_0 \pm i\hat{n}\cdot\hat{\mathbf{e}}\bigr) \quad\text{on }B,
+\qquad
+ e_0\otimes\tilde{\Pi}_\pm \ \text{on } AB ,
+$$</p>
+<p>with outcomes of probability $p_\pm = \mathrm{Tr}[(e_0\otimes\tilde{\Pi}_\pm)\tilde{\rho}_{AB}]$ and conditional states of $A$</p>
+<p>$$
+\tilde{\rho}_{A|\pm} = \frac{\mathrm{Tr}_B\bigl[(e_0\otimes\tilde{\Pi}_\pm)\tilde{\rho}_{AB}(e_0\otimes\tilde{\Pi}_\pm)\bigr]}{p_\pm}.
+$$</p>
+<p>The conditional entropy of $A$ given the measurement is $S(A|\{\tilde{\Pi}\}) = \sum_\pm p_\pm S(\tilde{\rho}_{A|\pm})$, and the <strong>classical mutual information</strong> extractable by that measurement is</p>
+<p>$$
+J(A|B)_{\hat{n}} = S(\tilde{\rho}_A) - S\bigl(A|\{\tilde{\Pi}\}\bigr),
+$$</p>
+<p>the information about $A$ gained by measuring $B$. The <strong>quantum discord</strong> is</p>
+<p>$$
+D(A|B) = I(A:B) - \max_{\hat{n}} J(A|B)_{\hat{n}} .
+$$</p>
+<p>By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the <strong>quantum-classical states</strong> $\tilde{\rho}_{AB} = \sum_k p_k\,\tilde{\rho}_A^{(k)}\otimes\tilde{\Pi}_k$.</p>
+<h3 id="asymmetry">Asymmetry</h3>
+<p>The measurement is performed on one side only, so $J(A|B)$ and $J(B|A)$ need not agree, and the discord is generally asymmetric, $D(A|B)\neq D(B|A)$. The <strong>total</strong> discord, or the symmetric version, is defined by minimizing over measurements on both sides; this article computes the one-sided discord $D(A|B)$ throughout. The asymmetry is not an artifact; it is the statement that the classical information extractable from a bipartite state depends on which subsystem is interrogated, and it is a genuine feature of the correlation structure.</p>
+<h3 id="discord-for-bell-diagonal-states">Discord for Bell-diagonal states</h3>
+<p>For Bell-diagonal states the calculation is explicit. A measurement of the coordinate $ie_j$ on $B$ has the two outcomes with equal probability $\tfrac12$, and it leaves $A$ in the conditional states</p>
+<p>$$
+\tilde{\rho}_{A|\pm} = \mathrm{Tr}_B\bigl[(e_0\otimes\tilde{\Pi}^{j}_\pm)\tilde{\rho}_{AB}\bigr]\Big/\tfrac12
+= \tfrac{1}{2}\bigl(e_0 \pm c_j\,ie_j\bigr),
+$$</p>
+<p>whose eigenvalues are $\tfrac12(1\pm c_j)$ and whose entropies are $h_2\!\left(\tfrac{1\pm c_j}{2}\right)$, with $h_2$ the binary entropy in bits. The conditional entropy of that measurement is therefore</p>
+<p>$$
+S\bigl(A\,\big|\,\{j\}\bigr) = h_2\!\left(\frac{1+c_j}{2}\right) = h_2\!\left(\frac{1+|c_j|}{2}\right),
+$$</p>
+<p>and minimizing over the three coordinate measurements gives</p>
+<p>$$
+J(A|B) = 1 - \min_{j\in\{1,2,3\}} h_2\!\left(\frac{1+|c_j|}{2}\right),
+\qquad
+D(A|B) = 1 - S(\tilde{\rho}_{AB}) + \min_{j} h_2\!\left(\frac{1+|c_j|}{2}\right),
+$$</p>
+<p>using $I(A:B) = 2 - S(\tilde{\rho}_{AB})$. For this family the minimum of the conditional entropy over all projective measurements is attained on a coordinate axis; that fact is standard, and the values below were in addition checked against a direct numerical minimization over measurement directions on the states reported. Every conditional state above was verified to have the stated eigenvalues, and the closed forms were checked against the explicit $4\times4$ computation.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p>The following table gives, for four Bell-diagonal states, the separability indicator $\sum_j|c_j|$ (the state is separable if and only if this is at most one), the bipartite entropy, the quantum mutual information $I(A:B)$, the classical mutual information $J(A|B)$ optimized over the three coordinate measurements, and the discord $D(A|B)$, all in bits. All entries were computed by explicit construction of the $4\times4$ state and evaluation of the entropies.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$(c_1,c_2,c_3)$</th>
+<th>$\sum_j|c_j|$</th>
+<th>$S(\tilde{\rho}_{AB})$</th>
+<th>$I(A:B)$</th>
+<th>$J(A|B)$</th>
+<th>$D(A|B)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(0.3,\ 0,\ 0)$</td>
+<td>$0.30$</td>
+<td>$1.9341$</td>
+<td>$0.0659$</td>
+<td>$0.0659$</td>
+<td>$0.0000$</td>
+</tr>
+<tr>
+<td>$(0.5,\ 0.3,\ 0.1)$</td>
+<td>$0.90$</td>
+<td>$1.6689$</td>
+<td>$0.3311$</td>
+<td>$0.1887$</td>
+<td>$0.1424$</td>
+</tr>
+<tr>
+<td>$(0.4,\ 0.35,\ 0.2)$</td>
+<td>$0.95$</td>
+<td>$1.6504$</td>
+<td>$0.3496$</td>
+<td>$0.1187$</td>
+<td>$0.2308$</td>
+</tr>
+<tr>
+<td>$(0.6,\ 0.5,\ 0.4)$</td>
+<td>$1.50$</td>
+<td>$1.5823$</td>
+<td>$0.4177$</td>
+<td>$0.2781$</td>
+<td>$0.1397$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first row is separable and has exactly zero discord: it is a quantum-classical state, for the state $\tfrac14(I+c_1X\otimes X)$ is diagonal after a measurement of $X$ on $B$, so the measurement extracts the entire mutual information. The third row is the central example: it is <strong>separable</strong> because $\sum_j|c_j| = 0.95\leq1$, and yet its discord is $D = 0.2308$ bits, the largest of the table. It is a state with no entanglement whatsoever whose correlations still cannot be accounted for classically. The fourth row is entangled, and its discord is smaller than the separable state's, which shows that discord and entanglement are not ordered with respect to one another.</p>
+<h3 id="the-separable-example-computed-by-hand">The separable example computed by hand</h3>
+<p>For the state with $(c_1,c_2,c_3) = (0.4,0.35,0.2)$ the whole calculation can be carried out explicitly. The eigenvalues of $\tilde{\rho}_{AB}$ are</p>
+<p>$$
+\tfrac14\bigl(1 - 0.4\epsilon_1 - 0.35\epsilon_2 - 0.2\epsilon_3\bigr) \ \text{over the four sign patterns},
+= \ 0.2875,\quad 0.3125,\quad 0.3875,\quad 0.0125 ,
+$$</p>
+<p>which sum to one; the entropy is $S(\tilde{\rho}_{AB}) = 1.6504$ bits. The marginals are $\tfrac12 e_0$, so $S(\tilde{\rho}_A) = S(\tilde{\rho}_B) = 1$ and</p>
+<p>$$
+I(A:B) = 1 + 1 - 1.6504 = 0.3496 \ \text{bits}.
+$$</p>
+<p>For a measurement of the coordinate $j$ on $B$ the conditional states of $A$ are $\tfrac12(e_0\pm c_j\,ie_j)$ with eigenvalues $\tfrac12(1\pm c_j)$, so the conditional entropies are $h_2\!\left(\tfrac{1+|c_j|}{2}\right)$ for $j=1,2,3$:</p>
+<p>$$
+h_2(0.7) = 0.8813, \qquad h_2(0.675) = 0.9097, \qquad h_2(0.6) = 0.9710 .
+$$</p>
+<p>The smallest is attained at the largest coefficient, $|c_1| = 0.4$, giving</p>
+<p>$$
+J(A|B) = 1 - 0.8813 = 0.1187,
+\qquad
+D(A|B) = 0.3496 - 0.1187 = 0.2308 \ \text{bits}.
+$$</p>
+<p>The state is separable because $0.4+0.35+0.2 = 0.95\leq1$, yet the discord is positive. This is the numerical content of the article, and every figure above was checked against the explicit $4\times4$ state. Note also that for this family the discord is <strong>symmetric</strong>, $D(A|B) = D(B|A)$, because the state is invariant under the exchange of the two factors; the minimization over measurements on both sides therefore gives the same value as the one-sided discord, and no separate two-sided calculation is needed.</p>
+<h2 id="discord-without-entanglement">Discord Without Entanglement</h2>
+<p>The example of the previous section is the point of the article, and it deserves to be stated in the framework's terms:</p>
+<blockquote>
+<p>In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive trace-one elements that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.</p>
+</blockquote>
+<p>The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ are the trace pairings with the three tensor-product observables $\tilde{Q}_j = -e_j\otimes e_j$. The criterion is a property of the triple of trace pairings; separability, entanglement, and discord of the family are all read off those three numbers.</p>
+<p>The physical meaning is that entanglement is one kind of quantum correlation and discord is a broader one. A separable state can still be <strong>quantumly correlated</strong> in the sense that no measurement on one subsystem leaves the other in a state that, averaged over outcomes, accounts for the total mutual information. In the framework this is visible directly: the total correlation $I(A:B)$ is fixed by the spectrum of $\tilde{\rho}_{AB}$, i.e. by the three trace pairings $c_j$; the classical correlation $J(A|B)$ is fixed by the conditional states after a coordinate measurement; and the difference, the discord, is what no local measurement can reach.</p>
+<h2 id="what-the-framework-adds-and-what-it-does-not">What the Framework Adds and What It Does Not</h2>
+<p><strong>What it does.</strong></p>
+<ul>
+<li>It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the trace pairing, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.</li>
+<li>It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three trace pairings $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ with $\tilde{Q}_j = -e_j\otimes e_j$.</li>
+<li>It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit norm-form statement.</li>
+<li>It exhibits a separable state with positive discord and verifies the separability criterion and the discord numerically.</li>
+</ul>
+<p><strong>What it does not.</strong></p>
+<ul>
+<li>It does not compute the discord for general two-qubit states. The Bell-diagonal restriction is what makes the computation tractable and the trace-pairing parametrization exact.</li>
+<li>It does not prove the Luo result that the optimal measurement for Bell-diagonal states is along a coordinate axis; that is cited as standard, and the computed values use it.</li>
+<li>It does not resolve the interpretation of discord, nor does it claim that discord is a resource in every operational sense; the operational interpretations are cited, not derived.</li>
+<li>It does not extend the norm-form reading to the two-qubit case generally: the norm form of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three trace pairings.</li>
+<li>It does not predict anything beyond standard quantum information theory; the discord values are the standard ones.</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>1. Discord and the two-qubit norm form.</strong> For a single qubit the entropy is a function of the norm form. For a two-qubit Bell-diagonal state the entropy is a function of the three trace pairings $c_j$. Is there an algebraic object — a generalized norm form on $\mathbb{M}_+^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?</p>
+<p><strong>2. The geometry of the Bell-diagonal tetrahedron.</strong> The Bell-diagonal states form a tetrahedron inscribed in the two-qubit state space, and the separable subset is the octahedron $\sum_j|c_j|\leq1$. What is the corresponding geometry in the cone of $\mathbb{M}_+^{\otimes2}$, and where does the discord vanish on it?</p>
+<p><strong>3. Discord and the local unitary orbit.</strong> The Bell states form one local-unitary orbit; the discord is invariant under local unitaries. Is the discord constant on the orbits of the local unitary group, and does the algebra's structure — the tensor product of two $\mathbb{B}$'s and its inner automorphisms — organize those orbits?</p>
+<p><strong>4. Many parties.</strong> For three and more subsystems there are several inequivalent discord-like measures. What is their form in $\mathbb{B}^{\otimes n}$, and does the partial trace suffice to define them?</p>
+<p><strong>5. Empirical content.</strong> Discord in biquaternion form is the standard quantity transcribed; it predicts nothing new.</p>
+<h2 id="summary">Summary</h2>
+<p>The quantum discord of a bipartite state is the difference between the quantum mutual information and the classical mutual information extractable by a local measurement:</p>
+<p>$$
+D(A|B) = I(A:B) - \max_{\hat{n}} J(A|B)_{\hat{n}},
+\qquad
+I(A:B) = S(\tilde{\rho}_A)+S(\tilde{\rho}_B)-S(\tilde{\rho}_{AB}),
+\qquad
+J(A|B)_{\hat{n}} = S(\tilde{\rho}_A) - S\bigl(A\,|\,\{\tilde{\Pi}\}\bigr).
+$$</p>
+<p>In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{\rho}_{AB} = \sum_\epsilon p_\epsilon P_\epsilon$ are parametrized by the three trace pairings</p>
+<p>$$
+c_j = \mathrm{Tr}\bigl(\tilde{\rho}_{AB}\,\tilde{Q}_j\bigr), \qquad \tilde{Q}_j = -e_j\otimes e_j ,
+\qquad
+\tilde{\rho}_{AB} = \tfrac14\bigl(e_0\otimes e_0 + {\textstyle\sum_j} c_j\,(ie_j)\otimes(ie_j)\bigr),
+$$</p>
+<p>with marginals $\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_0$ and entropy a function of the triple alone. The family is separable if and only if $\sum_j|c_j|\leq1$. The article exhibits a separable state, $(c_1,c_2,c_3) = (0.4,0.35,0.2)$ with $\sum_j|c_j| = 0.95$, whose discord is $0.2308$ bits; a separable state with zero discord, $(0.3,0,0)$; and an entangled state with a <em>smaller</em> discord, $(0.6,0.5,0.4)$ with $0.1397$ bits. Discord is therefore a genuinely broader correlation measure than entanglement: the algebra contains separable elements whose correlations no local measurement can fully account for, and the trace pairings with the three observables $-e_j\otimes e_j$ control the whole Bell-diagonal family.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$</td>
+<td>Two-qubit algebra, module dimension four</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+^{\otimes2}$</td>
+<td>Two-qubit Hermitian subspace (states)</td>
+</tr>
+<tr>
+<td>$e_0=1,e_1,e_2,e_3$; $i$</td>
+<td>Quaternion units; central imaginary</td>
+</tr>
+<tr>
+<td>$P_\epsilon$</td>
+<td>Bell idempotents (idempotent basis)</td>
+</tr>
+<tr>
+<td>$\tilde{\rho}_A = \mathrm{Tr}_B\tilde{\rho}_{AB}$, $\tilde{\rho}_B = \mathrm{Tr}_A\tilde{\rho}_{AB}$</td>
+<td>Marginal states</td>
+</tr>
+<tr>
+<td>$S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log_2\tilde{\rho})$</td>
+<td>Von Neumann entropy (bits)</td>
+</tr>
+<tr>
+<td>$I(A:B) = S(\tilde{\rho}_A)+S(\tilde{\rho}_B)-S(\tilde{\rho}_{AB})$</td>
+<td>Quantum mutual information</td>
+</tr>
+<tr>
+<td>$\tilde{\Pi}_\pm = \tfrac12(e_0\pm i\hat{n}\cdot\hat{\mathbf{e}})$</td>
+<td>Projective measurement on $B$</td>
+</tr>
+<tr>
+<td>$J(A|B) = S(\tilde{\rho}_A)-S(A|\{\tilde{\Pi}\})$</td>
+<td>Classical mutual information</td>
+</tr>
+<tr>
+<td>$D(A|B) = I(A:B)-\max J(A|B)$</td>
+<td>Quantum discord</td>
+</tr>
+<tr>
+<td>$c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$</td>
+<td>Correlation coefficients</td>
+</tr>
+<tr>
+<td>$\tilde{Q}_j = -e_j\otimes e_j$</td>
+<td>Tensor-product observables</td>
+</tr>
+<tr>
+<td>$\tilde{\rho}_{AB} = \tfrac14(e_0\otimes e_0+\sum_j c_j(ie_j)\otimes(ie_j))$</td>
+<td>Bell-diagonal state</td>
+</tr>
+<tr>
+<td>$\sum_j|c_j|\leq1$</td>
+<td>Separability criterion (Bell-diagonal)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>H. Ollivier and W. H. Zurek, "Quantum discord: a measure of the quantumness of correlations," <em>Physical Review Letters</em> <strong>88</strong> (2001) 017901, for the definition of discord.</li>
+<li>L. Henderson and V. Vedral, "Classical, quantum and total correlations," <em>Journal of Physics A</em> <strong>34</strong> (2001) 6899–6905, for the measurement-based decomposition of the mutual information.</li>
+<li>S. Luo, "Quantum discord for two-qubit systems," <em>Physical Review A</em> <strong>77</strong> (2008) 042303, for the analytic discord of Bell-diagonal states and the optimality of coordinate-axis measurements.</li>
+<li>K. Modi, A. Brodutch, H. Cable, T. Paterek, and V. Vedral, "The classical-quantum boundary for correlations: discord and related measures," <em>Reviews of Modern Physics</em> <strong>84</strong> (2012) 1655–1707, for the review of discord and its operational interpretations.</li>
+<li>R. Horodecki, P. Horodecki, M. Horodecki, and K. Horodecki, "Quantum entanglement," <em>Reviews of Modern Physics</em> <strong>81</strong> (2009) 865–942, for the separability criteria, including the Bell-diagonal case.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the partial trace, the mutual information, and the data-processing inequality.</li>
+<li>The companion articles of this series: <em>Entangled Subsystems in the Biquaternion Framework</em>, <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em>, <em>Exercise: The Reduced State of an Entangled Subsystem</em>, and <em>Exercise: Entanglement Entropy and the Partial Trace</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

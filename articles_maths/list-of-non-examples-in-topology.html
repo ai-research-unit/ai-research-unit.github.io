@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Non-Examples in Topology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-non-examples-in-topology"><strong>List of Non-Examples in Topology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the standard counterexamples of the corpus, each with the topological property it breaks and the article that records the failure. Every entry points to the article that introduces the space, and the article introduces nothing and proves nothing.</p>
+<p>The list gathers the spaces that are counterexamples to a natural implication: the topologist's sine curve, which is connected but not path connected; the Warsaw circle and the comb space, which are continua but not Peano continua; the pseudo-arc, which is arc-like and contains no arc; the long line, which is locally Euclidean and not metrisable; the Sorgenfrey line and plane and the Niemytzki plane, which show that separability, first countability and normality do not imply metrisability; and the Alexander horned sphere and the wild knot, which are embeddings that fail tameness. The spaces are grouped by the layer of the theory whose implication they break: connectedness, local connectedness, indecomposability, metrisability and countability, the separation axioms, compactness and category, and wildness.</p>
+<p>The article records examples and non-examples side by side. The typical row names a space and the property it <em>fails</em>, so that the space can be read as the boundary of the implication it is usually taken to refute; where the corpus also states the positive property the space retains, both are named.</p>
+<h2 id="connectedness-and-path-connectedness">Connectedness and Path Connectedness</h2>
+<p>The first group breaks the converse of the implication that a path connected space is connected.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the topologist's sine curve</td>
+<td>connected but not path connected: a path from the graph cannot reach the limiting segment</td>
+<td><em>Topological Spaces</em>, §Connectedness</td>
+</tr>
+<tr>
+<td>the topologist's sine curve, as a continuum</td>
+<td>connected and compact but not locally connected at the limiting segment</td>
+<td><em>Continuum Theory</em>, §Peano Continua</td>
+</tr>
+<tr>
+<td>the rationals $\mathbb{Q}$</td>
+<td>not a Baire space: meagre in themselves</td>
+<td><em>Baire Spaces and Category</em>, §The Rationals and the Irrationals</td>
+</tr>
+<tr>
+<td>the rationals $\mathbb{Q}$</td>
+<td>not completely metrisable, and not a $G_\delta$ in a complete space</td>
+<td><em>Baire Spaces and Category</em>, §The Rationals and the Irrationals</td>
+</tr>
+</tbody>
+</table></div>
+<p>The sine curve is the classical witness that connectedness is strictly weaker than path connectedness, and it is also the simplest continuum that is not a Peano continuum. The rationals show the same phenomenon in the category-theoretic direction: a space may be countable and dense and still fail the Baire property that every complete metric space has.</p>
+<h2 id="local-connectedness-and-peano-continua">Local Connectedness and Peano Continua</h2>
+<p>The second group breaks the converse of the Hahn–Mazurkiewicz theorem, which says that the Peano continua are exactly the continuous images of the interval.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Warsaw circle</td>
+<td>a continuum that is not locally connected; it has the Čech cohomology of a circle but is not homotopy equivalent to one</td>
+<td><em>Continuum Theory</em>, §Peano Continua</td>
+</tr>
+<tr>
+<td>the comb space</td>
+<td>a continuum that is not locally connected; it is contractible, so it is not detected by homotopy</td>
+<td><em>Continuum Theory</em>, §Peano Continua</td>
+</tr>
+<tr>
+<td>the bucket-handle continuum</td>
+<td>indecomposable, hence not locally connected and not a Peano continuum</td>
+<td><em>Continuum Theory</em>, §The Standard Indecomposable Continua</td>
+</tr>
+<tr>
+<td>the solenoid</td>
+<td>an indecomposable continuum arising as an inverse limit of circles; not locally connected</td>
+<td><em>Continuum Theory</em>, §The Standard Indecomposable Continua</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Warsaw circle and the comb space are the two standard continua that are not Peano continua, and both are planar; the solenoid is the inverse-limit example, the attractor of a dynamical system that is not a finite graph. Each shows that the continuous-image characterisation of the Peano continua cannot be weakened to compactness and connectedness alone.</p>
+<h2 id="indecomposable-and-hereditarily-indecomposable-continua">Indecomposable and Hereditarily Indecomposable Continua</h2>
+<p>The third group consists of the continua that are not the union of two proper subcontinua, where the intuition drawn from the interval fails.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the pseudo-arc</td>
+<td>a continuum that contains no arc, although it is arc-like</td>
+<td><em>Continuum Theory</em>, §Hereditarily Indecomposable Continua</td>
+</tr>
+<tr>
+<td>the pseudo-arc</td>
+<td>homogeneous, and homeomorphic to each of its nondegenerate subcontinua</td>
+<td><em>Continuum Theory</em>, §Hereditarily Indecomposable Continua</td>
+</tr>
+<tr>
+<td>the bucket-handle continuum</td>
+<td>its proper subcontinua have empty interior, and it is partitioned into pairwise disjoint dense composants</td>
+<td><em>Continuum Theory</em>, §Decompositions and Composants</td>
+</tr>
+<tr>
+<td>the circle $S^1$ as a continuum</td>
+<td>not unicoherent: it contains a simple closed curve, unlike the interval</td>
+<td><em>Continuum Theory</em>, §Unicoherent Continua</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pseudo-arc is the extremal example: it is arc-like, homogeneous and hereditarily indecomposable, and yet it is not an arc and contains none, so that the inverse-limit construction and the local structure point in opposite directions. The bucket-handle continuum shows the same failure of intuition in the decomposable-looking picture: the composants are dense and disjoint, so no decomposition into simpler pieces exists.</p>
+<h2 id="metrisability-countability-and-paracompactness">Metrisability, Countability and Paracompactness</h2>
+<p>The fourth group breaks the implications between the countability and metrisability properties, and shows that separable plus first countable plus perfectly normal does not suffice.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the long line</td>
+<td>locally metrisable but not metrisable, and not paracompact; it is countably compact and not compact</td>
+<td><em>Paracompactness and Partitions of Unity</em>, §The Smirnov Metrisation Theorem</td>
+</tr>
+<tr>
+<td>the Sorgenfrey line $\mathbb{R}_S$</td>
+<td>separable, first countable and perfectly normal, but not second countable and not metrisable</td>
+<td><em>Metrisation and Separation Axioms</em>, §Comparing the Axioms: Counterexamples</td>
+</tr>
+<tr>
+<td>the Sorgenfrey line $\mathbb{R}_S$</td>
+<td>Lindelöf and paracompact, but not locally metrisable</td>
+<td><em>Paracompactness and Partitions of Unity</em>, §The Smirnov Metrisation Theorem</td>
+</tr>
+<tr>
+<td>the Sorgenfrey line $\mathbb{R}_S$</td>
+<td>a Moore space that is not metrisable, and not Čech-complete</td>
+<td><em>Baire Spaces and Category</em></td>
+</tr>
+<tr>
+<td>the Sorgenfrey plane $\mathbb{R}_S^2$</td>
+<td>the square of a paracompact space that is not paracompact, and a product of normal spaces that is not normal</td>
+<td><em>Metrisation and Separation Axioms</em>, §Comparing the Axioms: Counterexamples</td>
+</tr>
+<tr>
+<td>the Niemytzki plane</td>
+<td>a Moore space that is Tychonoff and not normal, and not metrisable</td>
+<td><em>Metrisation and Separation Axioms</em>, §Comparing the Axioms: Counterexamples</td>
+</tr>
+<tr>
+<td>the one-point compactification of an uncountable discrete space</td>
+<td>compact Hausdorff and not metrisable</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>the product $[0,1]^{I}$ for uncountable $I$</td>
+<td>compact Hausdorff and not first countable, hence not metrisable</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The long line is the standard proof that local metrisability is strictly weaker than metrisability, and the Sorgenfrey line is the standard proof that separability, first countability and perfect normality together do not give a metric. The Sorgenfrey plane and the Niemytzki plane show that normality is not preserved by products and is not implied by the Moore-space axioms, and the uncountable products show that compactness does not supply the countable base.</p>
+<h2 id="separation-axioms">Separation Axioms</h2>
+<p>The fifth group consists of the spaces on which one of the separation axioms fails, with the failure named.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the trivial topology on two points</td>
+<td>regular, completely regular and normal, but not $T_1$</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>Mysior's example</td>
+<td>a regular $T_1$ space that is not completely regular</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>the Sorgenfrey plane</td>
+<td>Tychonoff and not normal</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>the Niemytzki plane</td>
+<td>Tychonoff and not normal</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>the Zariski topology on a variety</td>
+<td>not Hausdorff, and not metrisable</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the cofinite topology on an infinite set</td>
+<td>$T_1$ and not Hausdorff</td>
+<td><em>Topological Spaces</em>, §Separation Axioms</td>
+</tr>
+</tbody>
+</table></div>
+<p>The separation hierarchy does not reverse: the trivial topology has all the separation properties except $T_1$, Mysior's example separates a regular $T_1$ space from a completely regular one, and the Zariski topology is the geometric instance of a natural topology that is not Hausdorff and in which the closed sets carry the information.</p>
+<h2 id="compactness-and-category">Compactness and Category</h2>
+<p>A compact space need not satisfy the countability or the category properties that the metric case suggests.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the long line as an ordered set</td>
+<td>countably compact but not compact, since the initial segments have no finite subcover</td>
+<td><em>Paracompactness and Partitions of Unity</em>, §The Smirnov Metrisation Theorem</td>
+</tr>
+<tr>
+<td>the product $[0,1]^{I}$ for uncountable $I$</td>
+<td>compact Hausdorff but not normal</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>the rationals inside $\mathbb{R}$</td>
+<td>meagre but dense, so a dense subset of a Baire space need not be Baire</td>
+<td><em>Baire Spaces and Category</em></td>
+</tr>
+<tr>
+<td>a discrete space in its own topology</td>
+<td>locally compact and metrisable but not compact when infinite</td>
+<td><em>Topological Spaces</em>, §Compactness</td>
+</tr>
+</tbody>
+</table></div>
+<p>The long line is countably compact and not compact, the uncountable Tychonoff cube is compact and not normal, and the rationals show the asymmetry of the Baire property under the passage to a dense subspace. These are the failures of compactness to imply the further properties that hold in the compact metric case.</p>
+<h2 id="wild-embeddings">Wild Embeddings</h2>
+<p>The last group consists of the embedded objects whose embedding is not tame, so that the intrinsic homeomorphism type does not determine their position.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it breaks</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Alexander horned sphere</td>
+<td>a topological 2-sphere in $\mathbb{R}^3$ whose complement is not simply connected: a wild embedding</td>
+<td><em>Wild and Exotic Manifolds</em> (planned)</td>
+</tr>
+<tr>
+<td>a wild knot</td>
+<td>a knot in $S^3$ that is not isotopic to a polygonal one, and is excluded from the theory</td>
+<td><em>Knot Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The horned sphere is the standard wild embedding of a sphere, and its complement has a non-trivial fundamental group in contrast to the tame case; the wild knot is the corresponding one-dimensional phenomenon, excluded from the theory of the tame knots.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the standard counterexamples of the corpus, each with the property it breaks. The topologist's sine curve is connected and not path connected; the Warsaw circle and the comb space are continua and not Peano continua; the pseudo-arc is arc-like and contains no arc; the long line is locally metrisable and not metrisable; the Sorgenfrey line and plane and the Niemytzki plane show that separability, first countability and normality do not give a metric; the trivial topology and Mysior's example break the separation hierarchy; and the Alexander horned sphere and the wild knot are wild embeddings. The spaces are grouped by the layer whose implication they refute, and the positive property each retains is named beside the failure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_S$, $\mathbb{R}_S^2$</td>
+<td>Sorgenfrey line and Sorgenfrey plane</td>
+</tr>
+<tr>
+<td>$[0,1]^{I}$</td>
+<td>Tychonoff cube over an index set $I$</td>
+</tr>
+<tr>
+<td>$T_0$, $T_1$, $T_2$, $T_3$, $T_{3\frac12}$, $T_4$</td>
+<td>Separation axioms: $T_0$, $T_1$, Hausdorff, regular, completely regular, normal</td>
+</tr>
+<tr>
+<td>$S^1$, $\mathbb{R}^3$, $S^3$</td>
+<td>Circle, space, sphere of the wild embeddings</td>
+</tr>
+<tr>
+<td>$L$</td>
+<td>Long line, ordered set $\omega_1\times[0,1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$, $\mathbb{R}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lynn A. Steen and J. Arthur Seebach, <em>Counterexamples in Topology</em> (Springer, 2nd ed. 1978), for the standard list of the counterexamples and the properties they break.</li>
+<li>Ryszard Engelking, <em>General Topology</em> (Heldermann, 2nd ed. 1989), for the separation, metrisation and paracompactness theorems and their sharpness.</li>
+<li>Sam B. Nadler, <em>Continuum Theory: An Introduction</em> (Marcel Dekker, 1992), for the sine curve, the Warsaw circle, the comb space and the pseudo-arc.</li>
+<li>R. H. Bing, "Concerning Hereditarily Indecomposable Continua", <em>Transactions of the American Mathematical Society</em> 71 (1951), for the pseudo-arc and its uniqueness.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

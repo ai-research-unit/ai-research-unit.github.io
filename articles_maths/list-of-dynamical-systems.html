@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Dynamical Systems — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-dynamical-systems"><strong>List of Dynamical Systems</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the dynamical systems the corpus introduces. A dynamical system is a space with a transformation or a flow that preserves a structure, and a row below names one system, records its entropy, its ergodicity and its mixing properties, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The systems are grouped by the layer that introduces them: the rotations and translations, the expanding maps and the symbolic systems, the hyperbolic systems, the systems of geometry and mathematical physics, and the statistical invariants — entropy, Lyapunov exponent and Bowen–Ruelle measure — that the theory computes. The rows that record a failure — a rotation that is ergodic but not mixing, a toral automorphism that is not hyperbolic, an integrable system whose entropy vanishes — stand beside the systems as non-examples.</p>
+<h2 id="rotations-translations-and-equidistribution">Rotations, Translations and Equidistribution</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its entropy, ergodicity and mixing</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the irrational rotation $x \mapsto x+\alpha$</td>
+<td>entropy $0$; ergodic, and not weakly mixing: the Koopman operator has the full circle of eigenvalues</td>
+<td><em>Ergodic Theory</em>; <em>Equidistribution</em></td>
+</tr>
+<tr>
+<td>the rational rotation $x \mapsto x+p/q$</td>
+<td>entropy $0$; not ergodic, its orbits being the cosets of $\frac1q\mathbb{Z}/\mathbb{Z}$</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>the rotation on a torus, and the Kronecker flow</td>
+<td>entropy $0$; ergodic for independent irrational frequencies, and not mixing</td>
+<td><em>Ergodic Theory of Group Actions</em>; <em>Equidistribution</em></td>
+</tr>
+<tr>
+<td>the doubling map $x \mapsto 2x \bmod 1$</td>
+<td>entropy $\log2$; ergodic and mixing; the one-sided binary shift</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>the Gauss map $x \mapsto 1/x \bmod 1$</td>
+<td>entropy $\pi^2/(6\log2)$; ergodic and mixing for the Gauss measure; the generator of the continued fraction</td>
+<td><em>Ergodic Theory</em>; <em>Diophantine Approximation and Continued Fractions</em></td>
+</tr>
+<tr>
+<td>a general expanding map of the circle and of an interval</td>
+<td>entropy $\int\log\lvert T'\rvert\,d\mu$; ergodic and mixing for an absolutely continuous invariant measure</td>
+<td><em>Smooth Dynamical Systems</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="symbolic-and-markov-systems">Symbolic and Markov Systems</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its entropy, ergodicity and mixing</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the full shift on $k$ symbols</td>
+<td>topological entropy $\log k$; the Bernoulli shift with the uniform measure is ergodic and mixing</td>
+<td><em>Symbolic Dynamics</em></td>
+</tr>
+<tr>
+<td>the Bernoulli shift $(\sigma,\mu)$</td>
+<td>metric entropy $H(p) = \sum_ip_i\log(1/p_i)$; ergodic and mixing; classified by Ornstein's theorem</td>
+<td><em>Ergodic Theory</em>; <em>Symbolic Dynamics</em></td>
+</tr>
+<tr>
+<td>a subshift of finite type, and a topological Markov chain</td>
+<td>topological entropy $\log\rho(A)$ with $\rho(A)$ the spectral radius of the transition matrix; the Markov measure is ergodic and mixing when the matrix is irreducible and aperiodic</td>
+<td><em>Symbolic Dynamics</em></td>
+</tr>
+<tr>
+<td>a sofic shift</td>
+<td>topological entropy $\log\rho(A)$ of the underlying graph; the measure-theoretic properties as in the finite-type case</td>
+<td><em>Symbolic Dynamics</em>; <em>Dynamics and Number Theory</em></td>
+</tr>
+<tr>
+<td>a suspension flow over a symbolic system</td>
+<td>entropy of the flow $h_\mu(T)/\int\tau\,d\mu$ with $\tau$ the roof function</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+<tr>
+<td>a Markov partition of a hyperbolic system</td>
+<td>the symbolic model conjugate to the system off a measure-zero set</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="hyperbolic-systems">Hyperbolic Systems</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its entropy, ergodicity and mixing</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a hyperbolic toral automorphism $T_A$, $\lvert\operatorname{tr}A\rvert>2$</td>
+<td>entropy $\log\lvert\lambda\rvert$ for the larger eigenvalue; ergodic, mixing, and the prototype of hyperbolicity</td>
+<td><em>Ergodic Theory</em>; <em>Homogeneous Dynamics</em></td>
+</tr>
+<tr>
+<td>an Anosov diffeomorphism</td>
+<td>topological entropy as the maximum and metric entropy given by Pesin's formula; ergodic and mixing in the volume case</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+<tr>
+<td>an Anosov flow</td>
+<td>entropy from the Lyapunov exponent; the Bowen–Ruelle measure is the equilibrium state</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+<tr>
+<td>an Axiom A diffeomorphism and its spectral decomposition</td>
+<td>the decomposition into finitely many topologically transitive basic sets, each with a Markov partition</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em>; <em>Smooth Dynamical Systems</em></td>
+</tr>
+<tr>
+<td>the Smale horseshoe</td>
+<td>topological entropy $\log2$ on the invariant Cantor set; the model of chaotic behaviour</td>
+<td><em>Chaos and Strange Attractors</em>; <em>Bifurcation Theory</em></td>
+</tr>
+<tr>
+<td>a hyperbolic set with the shadowing and specification properties</td>
+<td>the pseudo-orbit is shadowed by a true orbit; specification gives the entropy and the periodic-point statistics</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-systems-of-geometry-and-physics">The Systems of Geometry and Physics</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its entropy, ergodicity and mixing</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the geodesic flow of a compact hyperbolic surface</td>
+<td>entropy equal to the topological entropy of the surface, positive; ergodic and mixing for the Liouville measure</td>
+<td><em>The Geodesic Flow</em>; <em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+<tr>
+<td>a homogeneous flow and a unipotent flow</td>
+<td>the Ratner classification of closures and equidistribution; equidistributed in the homogeneous space</td>
+<td><em>Homogeneous Dynamics</em>; <em>Ratner's Theorems</em></td>
+</tr>
+<tr>
+<td>a flow of an ergodic action of a Lie group</td>
+<td>ergodic and mixing for the Haar measure under the Howe–Moore property</td>
+<td><em>Ergodic Theory of Group Actions</em></td>
+</tr>
+<tr>
+<td>a Hamiltonian system, and a Lagrangian system</td>
+<td>entropy $0$ in the integrable case; the symplectic form and the Euler–Lagrange flow in general</td>
+<td><em>Lagrangian and Hamiltonian Systems</em></td>
+</tr>
+<tr>
+<td>an integrable system and the soliton equations</td>
+<td>entropy $0$; the invariant tori of Liouville and the inverse-scattering solution</td>
+<td><em>Integrable Systems</em>; <em>Soliton Theory</em></td>
+</tr>
+<tr>
+<td>the Lorenz system</td>
+<td>positive Lyapunov exponents and a strange attractor; the numerical prototype of chaos</td>
+<td><em>Chaos and Strange Attractors</em></td>
+</tr>
+<tr>
+<td>the Hénon map</td>
+<td>a strange attractor of non-integer dimension; the Kaplan–Yorke formula</td>
+<td><em>Chaos and Strange Attractors</em></td>
+</tr>
+<tr>
+<td>the logistic family $x \mapsto \mu x(1-x)$</td>
+<td>period doubling, the Feigenbaum cascade and the chaotic window; the entropy grows with $\mu$</td>
+<td><em>Bifurcation Theory</em>; <em>Chaos and Strange Attractors</em></td>
+</tr>
+<tr>
+<td>a random dynamical system</td>
+<td>the multiplicative ergodic theorem gives the Lyapunov spectrum; the invariant measure is random</td>
+<td><em>Random Dynamical Systems</em></td>
+</tr>
+<tr>
+<td>a stochastic flow and its generator</td>
+<td>the Markov semigroup and the Fokker–Planck equation; the invariant measure and its rate of convergence</td>
+<td><em>Stochastic Differential Equations</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-statistical-invariants">The Statistical Invariants</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it measures</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Kolmogorov–Sinai entropy</td>
+<td>the exponential rate of information, $h_\mu(T)$; an isomorphism invariant, computed by the Kolmogorov–Sinai theorem</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>the topological entropy</td>
+<td>the exponential growth of the number of distinguishable orbit segments; the maximum of the metric entropies</td>
+<td><em>Topological Dynamics</em>; <em>Symbolic Dynamics</em></td>
+</tr>
+<tr>
+<td>ergodicity</td>
+<td>the absence of nontrivial invariant sets; the identity of time and space averages</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>mixing, weak mixing and the K-property</td>
+<td>the decay of correlations, and the hierarchy of mixing notions; the K-property implies mixing, which implies ergodicity</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>the Lyapunov exponents</td>
+<td>the exponential rates of separation of nearby orbits; the Oseledets theorem gives their existence</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+<tr>
+<td>Pesin's formula</td>
+<td>the identity of the metric entropy with the total positive Lyapunov exponent</td>
+<td><em>Ergodic Theory</em>; <em>Hyperbolic Dynamics and Anosov Systems</em></td>
+</tr>
+<tr>
+<td>the Bowen–Ruelle measure</td>
+<td>the invariant measure that is the equilibrium state for the geometric potential, the physical measure of an attractor</td>
+<td><em>Hyperbolic Dynamics and Anosov Systems</em>; <em>The Geodesic Flow</em></td>
+</tr>
+<tr>
+<td>the invariant measure and the ergodic decomposition</td>
+<td>the measure preserved by the system, decomposed into ergodic components</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>the Poincaré recurrence theorem</td>
+<td>the almost-sure return of the orbit to a set of positive measure</td>
+<td><em>Ergodic Theory</em>; <em>Topological Dynamics</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="systems-and-invariants-that-fail-a-property">Systems and Invariants That Fail a Property</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property that fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the irrational rotation</td>
+<td>is ergodic but not weakly mixing: the Koopman operator has eigenvalues of modulus one</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>the rational rotation</td>
+<td>is not ergodic; the invariant sets are the unions of cosets</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>the identity map</td>
+<td>has entropy $0$ and is not ergodic when the space is not a single atom</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>an integrable Hamiltonian system</td>
+<td>has zero entropy, so it is not chaotic; the KAM tori obstruct ergodicity</td>
+<td><em>Lagrangian and Hamiltonian Systems</em>; <em>Integrable Systems</em></td>
+</tr>
+<tr>
+<td>a non-hyperbolic toral automorphism, $\lvert\operatorname{tr}A\rvert \leq 2$</td>
+<td>has no hyperbolic splitting and entropy $0$; the elliptic and parabolic cases</td>
+<td><em>Ergodic Theory</em>; <em>Homogeneous Dynamics</em></td>
+</tr>
+<tr>
+<td>a system with a rigid factor</td>
+<td>is ergodic but not mixing</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>a measure-preserving transformation with an invariant set of intermediate measure</td>
+<td>is not ergodic, however large the set</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>two Bernoulli shifts of different entropy</td>
+<td>are not isomorphic; Ornstein's theorem separates them</td>
+<td><em>Ergodic Theory</em></td>
+</tr>
+<tr>
+<td>a system whose only invariant measure is supported on a periodic orbit</td>
+<td>has vanishing metric entropy and no chaotic statistics</td>
+<td><em>Chaos and Strange Attractors</em>; <em>Topological Dynamics</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the dynamical systems of the corpus: the circle rotations and translations, the doubling and Gauss maps, the Bernoulli and Markov shifts, the hyperbolic toral automorphisms, Anosov and Axiom A systems and the horseshoe, the geodesic and homogeneous flows, the Hamiltonian, integrable, Lorenz, Hénon and logistic systems, the random and stochastic systems, and the invariants — Kolmogorov–Sinai and topological entropy, ergodicity, mixing, the Lyapunov exponents, the Bowen–Ruelle measure and the Poincaré recurrence theorem. The closing table records the systems and invariants that fail a property of the theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects are named by their standard symbols; the tables use the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T$, $\sigma$</td>
+<td>a transformation, the shift</td>
+</tr>
+<tr>
+<td>$\mu$, $h_\mu(T)$</td>
+<td>an invariant measure, the Kolmogorov–Sinai entropy</td>
+</tr>
+<tr>
+<td>$T_A$</td>
+<td>the toral automorphism induced by $A \in SL_n(\mathbb Z)$</td>
+</tr>
+<tr>
+<td>$\lambda$, $\chi_i$</td>
+<td>an eigenvalue, a Lyapunov exponent</td>
+</tr>
+<tr>
+<td>$H(p)$, $\rho(A)$</td>
+<td>the entropy of a probability vector, the spectral radius of a transition matrix</td>
+</tr>
+<tr>
+<td>$h_{\mathrm{top}}$</td>
+<td>topological entropy</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Peter Walters, <em>An Introduction to Ergodic Theory</em> (Springer, 1982), for the entropy, ergodicity and mixing of the standard systems.</li>
+<li>Anatole Katok and Boris Hasselblatt, <em>Introduction to the Modern Theory of Dynamical Systems</em> (Cambridge University Press, 1995), for the catalogue of examples and the hyperbolic theory.</li>
+<li>Rufus Bowen, <em>Equilibrium States and the Ergodic Theory of Anosov Diffeomorphisms</em> (Springer, 1975), for the Bowen–Ruelle measure, Markov partitions and specification.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

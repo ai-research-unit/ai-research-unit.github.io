@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Real Numbers ($\mathbb{R}$) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-real-numbers-math0"><strong>The Real Numbers ($\mathbb{R}$)</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The real numbers are the order completion of the rationals: the unique ordered field with the least upper bound property, obtained by filling the Dedekind cuts of $\mathbb{Q}$. Equivalently they are the metric completion of $\mathbb{Q}$ for the usual absolute value. The two constructions agree, and the result is the unique complete ordered field up to a unique order-preserving isomorphism, so $\mathbb{R}$ is determined by its order and its field structure together, not by either alone.</p>
+<p>This article carries out the two constructions, records the order, field and topological properties of $\mathbb{R}$, proves that the only field automorphism of $\mathbb{R}$ is the identity, and locates $\mathbb{R}$ among the ordered fields and among the completions of $\mathbb{Q}$. Real closedness, the proof that $\mathbb{R}$ is real closed, and the uniqueness of the complete ordered field are proved in <em>Real-Closed and Complete Ordered Fields</em> and are used here; the constructions by cuts and by Cauchy sequences also underlie <em>The Complex Numbers</em> and the valued completion of <em>Absolute Values, Valuations and Completions</em>.</p>
+<p>Throughout, $\mathbb{Q}$ is the field of rationals with its unique order and $\mathbb{R}$ is the order-complete ordered field. Convergence and continuity are used only as the completion and order theories make them necessary; the analytic theory of functions on $\mathbb{R}$ belongs to the companion real-analysis articles of categories 25–26.</p>
+<hr />
+<h2 id="the-two-constructions">The Two Constructions</h2>
+<h3 id="dedekind-cuts">Dedekind Cuts</h3>
+<p><strong>Definition.</strong> A <strong>Dedekind cut</strong> of $\mathbb{Q}$ is a subset $A \subseteq \mathbb{Q}$ such that</p>
+<p><strong>(C1)</strong> $A \neq \emptyset$ and $A \neq \mathbb{Q}$;</p>
+<p><strong>(C2)</strong> if $a \in A$ and $q \in \mathbb{Q}$ with $q < a$, then $q \in A$;</p>
+<p><strong>(C3)</strong> $A$ has no greatest element.</p>
+<p>The set of all cuts is denoted $\mathcal{R}$.</p>
+<p><strong>Theorem.</strong> With the order $A \leq B \iff A \subseteq B$ and the operations</p>
+<p>$$
+A + B = \{a + b : a \in A,\ b \in B\}, \qquad
+A \cdot B = \{ab : a \in A,\ b \in B,\ a, b \geq 0\} \cup \{q \in \mathbb{Q} : q < 0\} \ (\text{for } A, B \geq 0),
+$$</p>
+<p>and with negative elements handled by sign, $\mathcal{R}$ is an order-complete ordered field. The map $q \mapsto \{x \in \mathbb{Q} : x < q\}$ embeds $\mathbb{Q}$ as an ordered subfield, and $\mathcal{R}$ is the order completion of $\mathbb{Q}$.</p>
+<p><strong>Proof sketch.</strong> $\mathcal{R}$ is totally ordered by inclusion, since cuts are downward closed subsets of $\mathbb{Q}$. A nonempty family of cuts that is bounded above has a supremum: every upper bound is a cut and hence is not all of $\mathbb{Q}$, the family is contained in such a bound, so the union of the family is a downward closed subset of $\mathbb{Q}$ that is neither empty nor all of $\mathbb{Q}$, and it has no greatest element because no member of the family has one; hence the union is a cut, and it is the least upper bound. A nonempty family that is bounded below has an infimum, namely the intersection of the family with the greatest element removed if the intersection has one: the intersection is downward closed and nonempty because it contains a lower bound, and a cut contained in every member of the family has no greatest element, so it lies in the intersection with the greatest element removed, which is therefore the largest such cut. Addition of cuts is well defined and makes $\mathcal{R}$ an ordered abelian group whose zero is the cut of negative rationals, and multiplication is defined on nonnegative cuts by the display and extended by the sign rule; the field axioms are verified case by case, distributivity being the only substantive one. The embedding $q \mapsto \{x < q\}$ preserves the order and the operations, and the least upper bound property is the sup-of-unions statement. $\square$</p>
+<p><strong>Remark.</strong> The cut construction is the one explained in <em>Real-Closed and Complete Ordered Fields</em> as the order completion $\widehat{F}$ of an Archimedean ordered field $F$, applied to $F = \mathbb{Q}$.</p>
+<h3 id="cauchy-sequences">Cauchy Sequences</h3>
+<p><strong>Definition.</strong> A sequence $(x_n)$ in $\mathbb{Q}$ is <strong>Cauchy</strong> if for every rational $\epsilon > 0$ there is $n_0$ with $\lvert x_n - x_m \rvert < \epsilon$ for all $n, m \geq n_0$. Two Cauchy sequences are <strong>equivalent</strong> if $\lvert x_n - y_n \rvert \to 0$, and the completion is</p>
+<p>$$
+\mathcal{C} = \{\text{Cauchy sequences in } \mathbb{Q}\}/\sim .
+$$</p>
+<p><strong>Theorem.</strong> With termwise addition and multiplication, $\mathcal{C}$ is an order-complete ordered field, and the map $q \mapsto (q, q, q, \dots)$ embeds $\mathbb{Q}$ as an ordered subfield; $\mathcal{C}$ is the metric completion of $\mathbb{Q}$ for the usual absolute value, and it is complete as a metric space.</p>
+<p><strong>Proof.</strong> Termwise sums and products of Cauchy sequences are Cauchy, and the operations respect the equivalence relation, so $\mathcal{C}$ is a commutative ring with $1$; it is a field because a Cauchy sequence that does not converge to $0$ is eventually bounded away from $0$ in absolute value, so a sufficiently far tail can be inverted termwise, producing an inverse class. Completeness of $\mathcal{C}$ is proved by the diagonal argument on Cauchy sequences of Cauchy sequences, and order-completeness by identifying each class with the cut of rationals below it. $\square$</p>
+<h3 id="agreement">Agreement</h3>
+<p><strong>Theorem.</strong> The two constructions produce isomorphic ordered fields, canonically: the map</p>
+<p>$$
+\Phi : \mathcal{C} \to \mathcal{R}, \qquad \Phi[(x_n)] = \left\{q \in \mathbb{Q} : q + \epsilon < x_n \text{ for all sufficiently large } n \text{ and some rational } \epsilon > 0\right\},
+$$</p>
+<p>is an order-preserving field isomorphism.</p>
+<p><strong>Proof sketch.</strong> The set displayed is a cut: it is nonempty and not all of $\mathbb{Q}$ because $(x_n)$ is Cauchy and hence bounded; it is downward closed, and it has no greatest element, because $q$ lies in it with gap $\epsilon$ precisely when $q + \epsilon/2$ lies in it with gap $\epsilon/2$; and it depends only on the class of $(x_n)$, since two equivalent Cauchy sequences are eventually within any prescribed rational distance of one another. The element $q$ lies in $\Phi[(x_n)]$ exactly when $q < x$, where $x$ is the limit of $(x_n)$ in the complete field $\mathcal{C}$: if $q < x$ then eventually $x_n \geq q + \epsilon$ for a rational $\epsilon$ with $q + \epsilon < x$, and conversely $q + \epsilon < x_n$ eventually gives $q < x$. Conversely every cut arises from a Cauchy sequence, for instance from an increasing sequence of rationals converging to the cut, which exists by density. The map is additive and multiplicative by the arithmetic of cuts, and it preserves the order by construction. $\square$</p>
+<p><strong>Corollary.</strong> Any two order-complete ordered fields are isomorphic by a unique order-preserving isomorphism, by <em>Real-Closed and Complete Ordered Fields</em>; hence $\mathcal{R} \cong \mathcal{C} \cong \mathbb{R}$ and $\mathbb{R}$ is unique up to a unique ordered-field isomorphism.</p>
+<hr />
+<h2 id="the-order-structure">The Order Structure</h2>
+<p><strong>Theorem.</strong> $\mathbb{R}$ has the following properties.</p>
+<p><strong>(a)</strong> $\mathbb{R}$ is a complete ordered field: every nonempty subset that is bounded above has a least upper bound, and every nonempty subset bounded below has a greatest lower bound.</p>
+<p><strong>(b)</strong> $\mathbb{R}$ is Archimedean, and $\mathbb{Q}$ is dense in $\mathbb{R}$; every real is the supremum of the rationals below it.</p>
+<p><strong>(c)</strong> $\mathbb{R}$ is order-complete and therefore, by <em>Real-Closed and Complete Ordered Fields</em>, no proper subfield of $\mathbb{R}$ is order-complete.</p>
+<p><strong>(d)</strong> The order topology on $\mathbb{R}$ is the metric topology of $\lvert \cdot \rvert_\infty$; $\mathbb{R}$ is connected and locally compact in it.</p>
+<p><strong>Proof.</strong> (a) is the least upper bound property, proved in the cut model. (b) is the theorem on order-complete fields from <em>Real-Closed and Complete Ordered Fields</em>. (c) Let $F \subsetneq \mathbb{R}$ be a subfield and let $x \in \mathbb{R} \setminus F$. The set $S = \{q \in \mathbb{Q} : q < x\}$ is a nonempty subset of $F$, since $\mathbb{Q} \subseteq F$, and it is bounded above in $F$ because $\mathbb{R}$ is Archimedean; its least upper bound in $\mathbb{R}$ is $x$. If $y \in F$ is an upper bound of $S$ then $y \geq x$, and if $y > x$ then, $\mathbb{Q}$ being dense in $\mathbb{R}$, there is a rational $q$ with $x < q < y$, and $q \in F$ is an upper bound of $S$ smaller than $y$. Hence a least upper bound of $S$ in $F$, if it existed, would have to equal $x$ and lie in $F$, a contradiction. Hence no proper subfield is order-complete. (d) The intervals with rational endpoints and those with real endpoints define the same topology on $\mathbb{R}$, so the order topology and the metric topology agree. For connectedness, a separation $\mathbb{R} = U \cup V$ into disjoint nonempty open sets, with $a \in U$, $b \in V$ and $a < b$, would give an element $s = \sup([a,b] \cap U)$ lying in $U$ or in $V$: if $s \in U$ then openness at $s$ produces points of the interval above $s$ in $U$, contradicting $s$ being an upper bound, and if $s \in V$ then openness at $s$ puts an interval below $s$ inside $V$, while the definition of supremum puts elements of $U$ arbitrarily close below $s$, so the two sets meet, a contradiction. Local compactness holds because each closed bounded interval is compact and contains a neighbourhood of each of its points. $\square$</p>
+<p><strong>Remark.</strong> Property (b) is what makes the order of $\mathbb{R}$ usable: every real is determined by the rationals below it, which is the content of the cut construction, and by Cantor's theorem this determination is what makes $\mathbb{R}$ unique.</p>
+<hr />
+<h2 id="the-field-and-algebraic-structure">The Field and Algebraic Structure</h2>
+<p><strong>Theorem.</strong> $\mathbb{R}$ has the following properties.</p>
+<p><strong>(a)</strong> $\mathbb{R}$ has characteristic $0$ and contains $\mathbb{Q}$ as its prime field.</p>
+<p><strong>(b)</strong> $\mathbb{R}$ is real closed: every positive real is a square, and every real polynomial of odd degree has a real root.</p>
+<p><strong>(c)</strong> $\mathbb{R}$ is not algebraically closed, and $\mathbb{C} = \mathbb{R}(i)$ with $i^2 = -1$ is an algebraic closure of $\mathbb{R}$; the extension has degree $2$.</p>
+<p><strong>(d)</strong> The algebraic elements of $\mathbb{R}$ over $\mathbb{Q}$ form the subfield $\overline{\mathbb{Q}} \cap \mathbb{R}$ of real algebraic numbers, which is countably infinite, real closed, and not order-complete; it is the real closure of $\mathbb{Q}$.</p>
+<p><strong>(e)</strong> The transcendence degree of $\mathbb{R}$ over $\mathbb{Q}$ is</p>
+<p>$$
+\operatorname{tr.deg}_{\mathbb{Q}} \mathbb{R} = 2^{\aleph_0},
+$$</p>
+<p>and $\mathbb{C}$ is the algebraic closure of a purely transcendental extension $\mathbb{Q}(T)$ where $T$ is a transcendence basis of $\mathbb{C}$ over $\mathbb{Q}$, of cardinality $2^{\aleph_0}$, by the Steinitz classification.</p>
+<p><strong>(f)</strong> $\mathbb{R}$ is perfect, and every algebraic extension of $\mathbb{R}$ is either $\mathbb{R}$ itself or $\mathbb{C}$.</p>
+<p><strong>Proof.</strong> (a) and (b) are from <em>Real-Closed and Complete Ordered Fields</em>, where real closedness is proved from completeness. (c) $x^2 + 1$ has no real root, and $\mathbb{C}$ is algebraically closed and algebraic over $\mathbb{R}$ of degree $2$. (d) The algebraic elements form a subfield; the field is countable because there are countably many polynomials over $\mathbb{Q}$ with finitely many roots each, and real closed because it is the real closure of $\mathbb{Q}$ in the sense of <em>Real-Closed and Complete Ordered Fields</em>. (e) $\mathbb{R}$ has cardinality $2^{\aleph_0}$ and $\overline{\mathbb{Q}}$ is countable, so a transcendence basis has cardinality $2^{\aleph_0}$; the statement about $\mathbb{C}$ is the Steinitz classification of <em>Algebraically Closed Fields</em>. (f) A field of characteristic $0$ is perfect, and the algebraic closure has degree $2$ over $\mathbb{R}$. $\square$</p>
+<p><strong>Corollary (dimension as a $\mathbb{Q}$-vector space).</strong> Every set of $\mathbb{Q}$-linearly independent reals has cardinality at most $2^{\aleph_0}$ and a maximal such set, a <strong>Hamel basis</strong>, has cardinality exactly $2^{\aleph_0}$; the linear-algebraic theory of these bases belongs to <em>Vector Spaces</em>, and its use here is only to record the cardinality.</p>
+<hr />
+<h2 id="the-topological-and-automorphism-structure">The Topological and Automorphism Structure</h2>
+<h3 id="cardinality-and-connectedness">Cardinality and Connectedness</h3>
+<p><strong>Theorem.</strong> $\mathbb{R}$ is uncountable, of cardinality</p>
+<p>$$
+\lvert \mathbb{R} \rvert = 2^{\aleph_0},
+$$</p>
+<p>and the set of irrationals is uncountable, of the same cardinality. The order topology is connected and locally compact, and $\mathbb{R}$ is not countable and not discrete.</p>
+<p><strong>Proof.</strong> $\mathbb{R}$ has a Hamel basis of cardinality continuum, or directly: $\mathbb{R}$ is uncountable by Cantor's diagonal argument applied to the interval $(0,1)$, it has cardinality at most $2^{\aleph_0}$ as the set of Dedekind cuts of $\mathbb{Q}$, which is a subset of the power set of $\mathbb{Q}$, and at least $2^{\aleph_0}$ because the subsets of $\mathbb{N}$ inject into $\mathbb{R}$ by mapping a subset to the real whose ternary expansion has digit $2$ exactly at the positions in that subset. The irrationals are $\mathbb{R} \setminus \mathbb{Q}$, the complement of a countable set in an uncountable one. Connectedness and local compactness are as in the previous section. $\square$</p>
+<h3 id="automorphisms">Automorphisms</h3>
+<p><strong>Theorem.</strong> Every field automorphism of $\mathbb{R}$ is the identity: $\operatorname{Aut}(\mathbb{R}) = 1$. Consequently every order-preserving automorphism of $\mathbb{R}$ is the identity as well, and $\mathbb{R}$ has no nontrivial field automorphism.</p>
+<p><strong>Proof.</strong> Let $\sigma \in \operatorname{Aut}(\mathbb{R})$. Since $\mathbb{R}$ is real closed, a real number $x$ is positive if and only if $x$ is a nonzero square, because every positive real has a square root and every nonzero square is positive. Hence $\sigma(x) = \sigma(y^2) = \sigma(y)^2 > 0$ for $x = y^2 > 0$; so $\sigma$ carries positive elements to positive elements and is therefore order-preserving. Since $\sigma$ fixes $1$ it fixes $\mathbb{Q}$, and an order-preserving map fixing a dense subset of an ordered field is the identity: for any $x$, the rationals below $x$ map to the rationals below $\sigma(x)$, and both are determined by the same set. Hence $\sigma = \mathrm{id}$. $\square$</p>
+<p><strong>Corollary.</strong> The subgroup of order-preserving automorphisms of $\mathbb{R}$ is trivial, in agreement with the general statement of <em>Ordered Fields</em> that an order-preserving automorphism of an ordered field fixes its prime field pointwise and is determined by it when the field is Archimedean.</p>
+<h3 id="math219-among-the-completions-of-math220">$\mathbb{R}$ among the Completions of $\mathbb{Q}$</h3>
+<p><strong>Theorem.</strong> $\mathbb{R}$ is the completion of $\mathbb{Q}$ at the Archimedean place: it is the metric completion of $\mathbb{Q}$ for $\lvert \cdot \rvert_\infty$ and the order completion of $\mathbb{Q}$ for its unique order. The other completions of $\mathbb{Q}$ are the fields $\mathbb{Q}_p$, and no $\mathbb{Q}_p$ is isomorphic to $\mathbb{R}$ as a field.</p>
+<p><strong>Proof.</strong> The two completions of $\mathbb{Q}$ that give $\mathbb{R}$ are the theorems of the first section and of <em>Real-Closed and Complete Ordered Fields</em>; the classification of completions is Ostrowski's theorem from <em>Absolute Values, Valuations and Completions</em>. Finally $\mathbb{R}$ is real closed and hence formally real, while $\mathbb{Q}_p$ is not formally real, so no field isomorphism can exist. $\square$</p>
+<p><strong>Remark (a warning about "the" completion).</strong> A field can have several inequivalent completions, and a field isomorphism between two completions need not respect the topology or the valuation. As abstract fields, $\mathbb{C}$ and the completed algebraic closure $\mathbb{C}_p$ of $\mathbb{Q}_p$ are isomorphic, because both are algebraically closed fields of characteristic $0$ with transcendence degree $2^{\aleph_0}$ and hence fall in the same Steinitz class of <em>Algebraically Closed Fields</em>; they are not isomorphic as topological or as valued fields. The real numbers, by contrast, are rigid in both senses: they have no nontrivial field automorphism, so no such phenomenon occurs for $\mathbb{R}$.</p>
+<hr />
+<h2 id="order-types-and-embeddings">Order Types and Embeddings</h2>
+<h3 id="the-order-type-of-math241">The Order Type of $\mathbb{R}$</h3>
+<p><strong>Definition.</strong> A linear order is <strong>dense</strong> if between any two distinct points there is a third, <strong>without endpoints</strong> if it has neither least nor greatest element, and <strong>complete</strong> if every nonempty subset that is bounded above has a least upper bound.</p>
+<p><strong>Theorem (Cantor).</strong> Any two countable dense linear orders without endpoints are order-isomorphic. In particular every such order is isomorphic to $\mathbb{Q}$.</p>
+<p><strong>Proof.</strong> The back-and-forth argument enumerates both orders as $(a_n)$ and $(b_n)$ and builds an increasing bijection by alternating the extension of the partial isomorphism on the side with the smaller index, using density and the absence of endpoints to place each new point. $\square$</p>
+<p><strong>Theorem.</strong> Any two complete dense linear orders without endpoints that contain a countable dense subset are order-isomorphic; in particular any such order is isomorphic to $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The same back-and-forth construction on the countable dense subsets, with completeness and density extending the partial isomorphism to a map of the whole order: given $x$ in the first order, send it to the supremum in the second order of the images of the dense elements below $x$, which exists by completeness and is strictly increasing by density. $\square$</p>
+<p><strong>Corollary.</strong> The order type of $\mathbb{R}$ is the unique complete dense order type without endpoints that has a countable dense subset; $\mathbb{Q}$ is the unique countable dense order type without endpoints, and it is the dense subset of $\mathbb{R}$ in the above.</p>
+<h3 id="the-archimedean-criterion-for-embedding-into-math253">The Archimedean Criterion for Embedding into $\mathbb{R}$</h3>
+<p><strong>Theorem.</strong> An ordered field $F$ admits an order-preserving field embedding into $\mathbb{R}$ if and only if $F$ is Archimedean, and the embedding is then unique.</p>
+<p><strong>Proof sketch.</strong> If $F$ embeds in $\mathbb{R}$ it is Archimedean, because $\mathbb{R}$ is. Conversely, if $F$ is Archimedean then the map</p>
+<p>$$
+\varphi : F \to \mathbb{R}, \qquad \varphi(x) = \sup\{q \in \mathbb{Q} : q < x\},
+$$</p>
+<p>is well defined because $\{q \in \mathbb{Q} : q < x\}$ is nonempty and bounded above in $F$, hence bounded by a real after the identification of the rationals; it is order-preserving by construction, additive because the rationals below $x + y$ are exactly the sums of rationals below $x$ and below $y$ up to arbitrarily small error, and multiplicative by the analogous squeezing argument using the Archimedean property; it fixes $\mathbb{Q}$ and is therefore the unique such embedding. $\square$</p>
+<p><strong>Corollary.</strong> $\mathbb{R}$ contains an isomorphic copy of every Archimedean ordered field, and it is the order-complete field generated by $\mathbb{Q}$; a non-Archimedean ordered field, such as $\mathbb{Q}(t)$ with $t$ infinite, admits no order-preserving embedding into $\mathbb{R}$, though its underlying field may still embed by a non-order-preserving map.</p>
+<h3 id="subfields-of-math274">Subfields of $\mathbb{R}$</h3>
+<p><strong>Theorem.</strong> Every subfield $F \subseteq \mathbb{R}$ is ordered by the restriction of the order of $\mathbb{R}$, and this order is Archimedean. Let</p>
+<p>$$
+M = \{x \in \mathbb{R} : x \text{ is algebraic over } F\}.
+$$</p>
+<p>Then $M$ is a subfield of $\mathbb{R}$, it is real closed, and it is the smallest real-closed subfield of $\mathbb{R}$ containing $F$; it is the <strong>real closure</strong> of $F$ inside $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The restriction of the order satisfies the ordered-field axioms on any subfield and is Archimedean because $\mathbb{R}$ is. The set of elements algebraic over $F$ is a subfield, being closed under the field operations by the algebraic dependence of sums, products and inverses. It is real closed: a positive $x \in M$ has a square root in the real-closed field $\mathbb{R}$, and $\sqrt x$ satisfies the quadratic $X^2 - x$ over $M$, hence is algebraic over $F$ and lies in $M$; and a polynomial of odd degree over $M$ has a root in the real-closed field $\mathbb{R}$, and that root is algebraic over $M$ and hence over $F$, so it lies in $M$. Minimality is because any real-closed subfield of $\mathbb{R}$ containing $F$ must contain every real root of a polynomial over $F$, hence every element algebraic over $F$. $\square$</p>
+<p><strong>Corollary.</strong> The real closure of an ordered field is unique up to an order-preserving isomorphism, by <em>Real-Closed and Complete Ordered Fields</em>, and inside $\mathbb{R}$ it is the literal set $M$ above; in particular $\overline{\mathbb{Q}} \cap \mathbb{R}$ is the real closure of $\mathbb{Q}$.</p>
+<p><strong>Examples.</strong> The subfields $\mathbb{Q} \subset \mathbb{Q}(\sqrt2) \subset \overline{\mathbb{Q}} \cap \mathbb{R} \subset \mathbb{R}$ show the tower from the prime field to the real algebraic numbers, which are real closed and countable and not order-complete; adjoining a transcendental $t$ gives $\mathbb{Q}(t) \subset \mathbb{R}$ with the induced Archimedean order, in which $t$ is a finite real number rather than an infinite element; and the real closure of $\mathbb{Q}(t)$ inside $\mathbb{R}$ consists of the real numbers algebraic over $\mathbb{Q}(t)$.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>$\mathbb{R}$ is the order completion of $\mathbb{Q}$ and the metric completion of $\mathbb{Q}$ for the usual absolute value; the two constructions, by Dedekind cuts and by Cauchy sequences, give canonically isomorphic ordered fields, and any two order-complete ordered fields are isomorphic by a unique order-preserving isomorphism, so $\mathbb{R}$ is the unique complete ordered field. It is Archimedean, the rationals are dense in it, every real is the supremum of the rationals below it, and no proper subfield of $\mathbb{R}$ is order-complete. The order topology agrees with the metric topology, is connected and locally compact, and $\mathbb{R}$ has cardinality $2^{\aleph_0}$ with an uncountable set of irrationals.</p>
+<p>The field $\mathbb{R}$ has characteristic $0$ and prime field $\mathbb{Q}$; it is real closed, so every positive real is a square and every odd-degree real polynomial has a real root, and it is not algebraically closed, its algebraic closure being $\mathbb{C} = \mathbb{R}(i)$ of degree $2$ over it. The real algebraic numbers $\overline{\mathbb{Q}} \cap \mathbb{R}$ form the real closure of $\mathbb{Q}$ and are countable and not complete, while $\operatorname{tr.deg}_{\mathbb{Q}} \mathbb{R} = 2^{\aleph_0}$. Every field automorphism of $\mathbb{R}$ is the identity, so $\mathbb{R}$ is rigid; and $\mathbb{R}$ is not isomorphic to any $\mathbb{Q}_p$, since it is formally real and they are not.</p>
+<p>In the order-theoretic terms of Cantor's theorems, $\mathbb{Q}$ is the unique countable dense linear order without endpoints and $\mathbb{R}$ is the unique complete dense linear order without endpoints with a countable dense subset. An ordered field embeds order-preservingly into $\mathbb{R}$ exactly when it is Archimedean, the embedding being $x \mapsto \sup\{q \in \mathbb{Q} : q < x\}$, and it is then unique; so $\mathbb{R}$ is the order-complete field universal for Archimedean ordered fields. Every subfield of $\mathbb{R}$ inherits an Archimedean order and has a real closure inside $\mathbb{R}$, namely its relative algebraic closure.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value for $\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Order</td>
+<td>complete, Archimedean, $\mathbb{Q}$ dense</td>
+</tr>
+<tr>
+<td>Uniqueness</td>
+<td>unique order-complete ordered field</td>
+</tr>
+<tr>
+<td>Cardinality</td>
+<td>$2^{\aleph_0}$</td>
+</tr>
+<tr>
+<td>Characteristic</td>
+<td>$0$, prime field $\mathbb{Q}$</td>
+</tr>
+<tr>
+<td>Real closed</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Algebraically closed</td>
+<td>no; closure $\mathbb{C} = \mathbb{R}(i)$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr.deg}_{\mathbb{Q}} \mathbb{R}$</td>
+<td>$2^{\aleph_0}$</td>
+</tr>
+<tr>
+<td>Real algebraic subfield</td>
+<td>$\overline{\mathbb{Q}} \cap \mathbb{R}$, countable, real closed, not complete</td>
+</tr>
+<tr>
+<td>Automorphisms</td>
+<td>$\operatorname{Aut}(\mathbb{R}) = 1$</td>
+</tr>
+<tr>
+<td>Completions of $\mathbb{Q}$ giving $\mathbb{R}$</td>
+<td>$\lvert \cdot \rvert_\infty$, order</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>The real numbers, the complete ordered field</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>Rational numbers, prime field</td>
+</tr>
+<tr>
+<td>$\mathcal{R}$, $\mathcal{C}$</td>
+<td>Cut model and Cauchy-sequence model of $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\lvert \cdot \rvert_\infty$</td>
+<td>Usual absolute value</td>
+</tr>
+<tr>
+<td>$\widehat{F}$</td>
+<td>Order or metric completion of $F$</td>
+</tr>
+<tr>
+<td>$A \leq B \iff A \subseteq B$</td>
+<td>Order on cuts</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Square root of $-1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C} = \mathbb{R}(i)$</td>
+<td>Algebraic closure of $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}} \cap \mathbb{R}$</td>
+<td>Real algebraic numbers, real closure of $\mathbb{Q}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr.deg}_{\mathbb{Q}} \mathbb{R}$</td>
+<td>Transcendence degree, $2^{\aleph_0}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathbb{R})$</td>
+<td>Automorphism group, trivial</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$, $\mathbb{C}_p$</td>
+<td>Non-Archimedean completions of $\mathbb{Q}$</td>
+</tr>
+<tr>
+<td>$\varphi : F \to \mathbb{R}$</td>
+<td>Archimedean embedding $x \mapsto \sup\{q \in \mathbb{Q} : q < x\}$</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>Relative algebraic closure of a subfield $F \subseteq \mathbb{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Dedekind, <em>Stetigkeit und irrationale Zahlen</em> (Vieweg, 1872), for the construction of $\mathbb{R}$ by cuts.</li>
+<li>Georg Cantor, "Über die Ausdehnung eines Satzes aus der Theorie der trigonometrischen Reihen", <em>Mathematische Annalen</em> 5 (1872), for the Cauchy-sequence construction and the uniqueness of the complete ordered field.</li>
+<li>Edmund Landau, <em>Foundations of Analysis</em> (Chelsea, 1951), for a careful construction of $\mathbb{R}$ from $\mathbb{Q}$.</li>
+<li>Walter Rudin, <em>Principles of Mathematical Analysis</em> (McGraw-Hill, 3rd ed. 1976), for the least upper bound property and its consequences.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for real-closed fields, the real algebraic numbers and transcendence degree.</li>
+<li>James R. Munkres, <em>Topology</em> (Prentice Hall, 2nd ed. 2000), for the order topology of $\mathbb{Q}$ and $\mathbb{R}$ and for the completion of a metric space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

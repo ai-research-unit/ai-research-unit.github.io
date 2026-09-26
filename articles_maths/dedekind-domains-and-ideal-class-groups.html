@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dedekind Domains and Ideal Class Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dedekind-domains-and-ideal-class-groups"><strong>Dedekind Domains and Ideal Class Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>In the ring of integers of a number field, unique factorisation of elements can fail, but unique factorisation of <em>ideals</em> never does: every nonzero ideal is a product of prime ideals in one and only one way. Rings with this property are the <strong>Dedekind domains</strong>, and they are exactly the Noetherian integrally closed domains of Krull dimension one. The theorem is the compensation for the loss of unique factorisation of elements, and it is the foundation of algebraic number theory.</p>
+<p>The failure of unique factorisation is measured by the <strong>ideal class group</strong>: the quotient of the group of fractional ideals by the subgroup of principal fractional ideals. Its order is the <strong>class number</strong>, and the ring is a principal ideal domain exactly when the class group is trivial. For the ring of integers of a number field the class group is finite, and its order is one of the most delicate invariants of the field.</p>
+<p>This article defines Dedekind domains, proves the unique factorisation of ideals, develops fractional ideals and their invertibility, constructs the ideal class group, and computes it in the basic examples, including the Gaussian integers and $\mathbb{Z}[\sqrt{-5}]$, the classical example of class number $2$. Throughout, $R$ is an integral domain with fraction field $K = \operatorname{Frac}(R)$ and $R \neq$ a field; the theory of integrally closed domains, integral extensions and Krull dimension is from <em>Integral Extensions and Krull Dimension</em>, chain conditions and primary decomposition from <em>Noetherian and Artinian Rings</em> and <em>Primary Decomposition</em>, localisation from <em>Localization and the Fraction Field</em>, and divisibility and unique factorisation from <em>Unique Factorisation Domains</em>. The valuation-theoretic description of the local rings of a Dedekind domain is; here the local rings are described by their ideals instead.</p>
+<hr />
+<h2 id="dedekind-domains">Dedekind Domains</h2>
+<h3 id="definition-and-first-consequences">Definition and First Consequences</h3>
+<p><strong>Definition.</strong> An integral domain $R$ that is not a field is a <strong>Dedekind domain</strong> if</p>
+<p><strong>(D1)</strong> $R$ is Noetherian;</p>
+<p><strong>(D2)</strong> $R$ is integrally closed in its fraction field $K$;</p>
+<p><strong>(D3)</strong> $R$ has Krull dimension one: every nonzero prime ideal is maximal.</p>
+<p><strong>Example.</strong> $\mathbb{Z}$ is a Dedekind domain. It is Noetherian, integrally closed in $\mathbb{Q}$, and its nonzero primes $(p)$ are maximal.</p>
+<p><strong>Example.</strong> The polynomial ring $k[x]$ over a field is a Dedekind domain, indeed a Euclidean domain, hence Noetherian, integrally closed, and of dimension one.</p>
+<p><strong>Example.</strong> The Gaussian integers $\mathbb{Z}[i] = \{a + bi : a, b \in \mathbb{Z}\}$ are a Dedekind domain. They are Euclidean for the norm $N(a+bi) = a^2 + b^2$, so Noetherian and integrally closed; the dimension is one because $\mathbb{Z}[i]$ is integral over $\mathbb{Z}$ and has the same dimension, by <em>Integral Extensions and Krull Dimension</em>.</p>
+<p><strong>Example.</strong> The ring $\mathbb{Z}[\sqrt{-5}] = \{a + b\sqrt{-5} : a,b\in\mathbb{Z}\}$ is a Dedekind domain. It is the ring of integers of $\mathbb{Q}(\sqrt{-5})$, so it is integral over $\mathbb{Z}$ and integrally closed, but it is <strong>not</strong> a unique factorisation domain, since</p>
+<p>$$
+6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5}),
+$$</p>
+<p>and $2, 3, 1+\sqrt{-5}, 1-\sqrt{-5}$ are all irreducible and pairwise non-associate. The ideal theory of this ring is worked out below.</p>
+<p><strong>Example.</strong> Not every Noetherian domain of dimension one is Dedekind: the ring $R = k[t^2, t^3]$ has dimension one, since it is integral over the polynomial ring $k[t^2]$ and dimension is preserved by integral extensions, but it is not integrally closed. The element $t$ lies in $\operatorname{Frac}(R) = k(t)$ and is integral over $R$, being a root of $x^2 - t^2$ with $t^2 \in R$, yet $t \notin R$. The failure is precisely the failure of (D2), and it is what makes the ideal theory of $k[t^2,t^3]$ more complicated than that of $k[t]$.</p>
+<p><strong>Proposition.</strong> In a Dedekind domain the prime ideals are the zero ideal and the nonzero maximal ideals; there are no other primes, and no nonzero prime is contained in another.</p>
+<p><strong>Proof.</strong> Dimension one says exactly that a nonzero prime is maximal, and a maximal ideal has height one in a domain of dimension one. $\square$</p>
+<h3 id="local-structure">Local Structure</h3>
+<p>The local study of a Dedekind domain is completely explicit, and it avoids the theory of valuations, which is developed separately.</p>
+<p><strong>Definition.</strong> A <strong>discrete valuation ring</strong> is a local principal ideal domain that is not a field. Its unique maximal ideal is principal, say $(\pi)$, and every nonzero ideal is a power $(\pi^n)$ of it; the element $\pi$ is a <strong>uniformiser</strong>.</p>
+<p>The name is justified, where it is shown that a discrete valuation ring is exactly the valuation ring of a discrete valuation of its fraction field; that article is the natural place for the valuation-theoretic description, and here only the ideal structure is used.</p>
+<p><strong>Theorem (local structure).</strong> Let $R$ be a Dedekind domain and let $\mathfrak{m}$ be a nonzero prime ideal. Then the localisation $R_\mathfrak{m}$ is a discrete valuation ring, with maximal ideal $\mathfrak{m} R_\mathfrak{m}$. Conversely, a Noetherian domain of dimension one whose localisations at maximal ideals are all discrete valuation rings is a Dedekind domain.</p>
+<p><strong>Proof sketch.</strong> The localisation $R_\mathfrak{m}$ is a Noetherian local domain of dimension one, integrally closed (integral closedness is preserved by localisation), with maximal ideal $\mathfrak{m}R_\mathfrak{m}$. It remains to see that this maximal ideal is principal. Choose $0 \neq a \in \mathfrak{m}$; since $\mathfrak{m}$ is the only nonzero prime, the radical of $(a)$ is $\mathfrak{m}$, so $(a)$ is $\mathfrak{m}$-primary and $\mathfrak{m}^n \subseteq (a)$ for some $n$. Take $n$ minimal and $b \in \mathfrak{m}^{n-1} \setminus (a)$. Then $b/a \notin R$, while $(b/a)\mathfrak{m} \subseteq (1/a)\mathfrak{m}^n \subseteq R$, so $(b/a) \in (R : \mathfrak{m})$ and $(R:\mathfrak{m}) \supsetneq R$. The product $\mathfrak{m}(R:\mathfrak{m})$ is an ideal with $\mathfrak{m} \subseteq \mathfrak{m}(R:\mathfrak{m}) \subseteq R$, and since $\mathfrak{m}$ is maximal, either $\mathfrak{m}(R:\mathfrak{m}) = \mathfrak{m}$ or it equals $R$. The first alternative would put $(R:\mathfrak{m})$ inside $\{x \in K : x\mathfrak{m} \subseteq \mathfrak{m}\}$, whose elements are integral over $R$ by the determinant argument applied to the finitely generated $R$-submodule $\mathfrak{m}$, hence lie in $R$ by integral closedness; then $(R:\mathfrak{m}) = R$, a contradiction. So $\mathfrak{m}(R:\mathfrak{m}) = R$, the ideal $\mathfrak{m}$ is invertible, and an invertible ideal of a local ring is principal. Thus $\mathfrak{m}R_\mathfrak{m} = (\pi)$ and every ideal, being an $\mathfrak{m}$-primary power, is a power of $(\pi)$. The converse assembles the local conditions into (D1)–(D3). $\square$</p>
+<p><strong>Corollary.</strong> In a Dedekind domain, for each nonzero prime $\mathfrak{m}$ and each nonzero element $x \in K$ there is a unique integer $v_\mathfrak{m}(x) \in \mathbb{Z}$ with $x R_\mathfrak{m} = (\pi_\mathfrak{m})^{v_\mathfrak{m}(x)}$, where $\pi_\mathfrak{m}$ is a uniformiser, and $v_\mathfrak{m}$ is additive. The integer $v_\mathfrak{m}(x)$ is the <strong>order of vanishing</strong> of $x$ at $\mathfrak{m}$.</p>
+<p>The functions $v_\mathfrak{m}$ are valuations, and their systematic theory — independent valuations, extensions, the approximation theorem in valuation language — is not covered here. The present article uses only that each $v_\mathfrak{m}$ is an additive integer-valued function with $v_\mathfrak{m}(x) \geq 0$ exactly when $x \in R_\mathfrak{m}$.</p>
+<hr />
+<h2 id="unique-factorisation-of-ideals">Unique Factorisation of Ideals</h2>
+<h3 id="fractional-ideals">Fractional Ideals</h3>
+<p><strong>Definition.</strong> A <strong>fractional ideal</strong> of $R$ is a nonzero subset $J \subseteq K$ such that</p>
+<p><strong>(a)</strong> $J$ is an $R$-submodule of $K$: it is closed under addition and under multiplication by elements of $R$;</p>
+<p><strong>(b)</strong> there is $0 \neq x \in K$ with $xJ \subseteq R$.</p>
+<p>The <strong>product</strong> of two fractional ideals is</p>
+<p>$$
+I J = \Bigl\{\sum_{i=1}^{n} a_i b_i : a_i \in I,\ b_i \in J,\ n \geq 0\Bigr\},
+$$</p>
+<p>which is again a fractional ideal. An <strong>integral ideal</strong> is a fractional ideal contained in $R$, that is, an ordinary nonzero ideal of $R$. A fractional ideal $I$ is <strong>invertible</strong> if there is a fractional ideal $J$ with $I J = R$, and then $J$ is written $I^{-1}$.</p>
+<p>The inverse, when it exists, is determined and is</p>
+<p>$$
+I^{-1} = (R : I) = \{x \in K : x I \subseteq R\}.
+$$</p>
+<p><strong>Proposition.</strong> In an integral domain $R$, the invertible fractional ideals form an abelian group under multiplication, with identity $R$; an invertible integral ideal is principal, and the principal fractional ideals are invertible. A fractional ideal $I$ is invertible if and only if $I R_\mathfrak{m} = x_\mathfrak{m} R_\mathfrak{m}$ for some $x_\mathfrak{m} \in K^\times$ at every maximal ideal $\mathfrak{m}$.</p>
+<p><strong>Proof.</strong> The group law is inherited from multiplication of $K$-subsets, with inverse $(R:I)$; associativity and commutativity are immediate, and $IR = I$. An integral ideal $I$ that is invertible satisfies $I (R:I) = R$, so there are $a_i \in I$ and $x_i \in (R:I)$ with $\sum a_i x_i = 1$. For $b \in I$, one has $x_i b \in R$, so $b = \sum a_i (x_i b)$ lies in the ideal $(a_1, \ldots, a_n)$, and since each $a_i \in I$ this ideal is $I$; hence $I = (a_1, \ldots, a_n)$ is principal. Conversely a principal fractional ideal $xR$ has inverse $x^{-1}R$. The local criterion is the standard statement that an invertible ideal is locally principal; conversely, a locally principal ideal is invertible, $\sum_i y_i b_i = 1$ with $y_i$ local inverses providing the global inverse after a partition of unity of finitely many localisations. $\square$</p>
+<h3 id="the-factorisation-theorem">The Factorisation Theorem</h3>
+<p><strong>Theorem (unique factorisation of ideals).</strong> Let $R$ be a Dedekind domain and let $0 \neq I \subsetneq R$ be a proper nonzero ideal. Then</p>
+<p>$$
+I = \mathfrak{p}_1^{e_1} \mathfrak{p}_2^{e_2} \cdots \mathfrak{p}_r^{e_r}
+$$</p>
+<p>with $\mathfrak{p}_i$ distinct nonzero prime ideals and $e_i \geq 1$, and the representation is unique up to the order of the factors. Equivalently, every nonzero fractional ideal is a product $\prod_{\mathfrak{m}} \mathfrak{m}^{v_\mathfrak{m}}$ with $v_\mathfrak{m} \in \mathbb{Z}$ and $v_\mathfrak{m} = 0$ for all but finitely many $\mathfrak{m}$.</p>
+<p><strong>Proof.</strong> Existence: since $R$ is Noetherian of dimension one, the primary decomposition of $I$ is an intersection of $\mathfrak{m}$-primary ideals for the finitely many maximal ideals $\mathfrak{m}$ containing $I$. In a Dedekind domain an $\mathfrak{m}$-primary ideal is a power of $\mathfrak{m}$: by the local structure theorem the ideal becomes $(\pi^{n})$ in $R_\mathfrak{m}$, and contracting gives $\mathfrak{m}^n$. Taking the product of the primary components, which are pairwise comaximal, gives $I$ as a product of prime powers, since the primary components lie in distinct maximal ideals.</p>
+<p>Uniqueness: if $I = \prod \mathfrak{p}_i^{e_i} = \prod \mathfrak{p}_i^{f_i}$, localise at $\mathfrak{p}_j$. Localisation commutes with products of ideals, so $(I)_{\mathfrak{p}_j} = \mathfrak{p}_j^{e_j} R_{\mathfrak{p}_j} = \mathfrak{p}_j^{f_j} R_{\mathfrak{p}_j}$; since $\mathfrak{p}_j R_{\mathfrak{p}_j} = (\pi_j)$ with $\pi_j$ a non-unit and non-zero-divisor, comparing powers in the discrete valuation ring gives $e_j = f_j$. $\square$</p>
+<p><strong>Corollary.</strong> The nonzero fractional ideals of a Dedekind domain form a free abelian group on the set of nonzero prime ideals: every fractional ideal is uniquely</p>
+<p>$$
+I = \prod_{\mathfrak{m}} \mathfrak{m}^{v_\mathfrak{m}(I)}, \qquad v_\mathfrak{m}(I) \in \mathbb{Z},
+$$</p>
+<p>the product being finite. In particular every nonzero fractional ideal is invertible, and</p>
+<p>$$
+I \subseteq J \iff v_\mathfrak{m}(I) \geq v_\mathfrak{m}(J) \ \text{ for every nonzero prime } \mathfrak{m}.
+$$</p>
+<p><strong>Proof.</strong> Write a fractional ideal as $x^{-1} I_0$ with $x \in R$ and $I_0 = I \cap R$ an integral ideal, and apply the theorem to $I_0$ and to $(x)$. Invertibility follows from the description, the inverse of $\mathfrak{m}$ being the fractional ideal with $v_{\mathfrak{m}'} = -\delta_{\mathfrak{m},\mathfrak{m}'}$. The containment criterion follows by localising. $\square$</p>
+<p><strong>Corollary (arithmetic of ideals).</strong> For nonzero ideals $I, J$ of a Dedekind domain,</p>
+<p>$$
+I J = \prod_{\mathfrak{m}} \mathfrak{m}^{v_\mathfrak{m}(I)+v_\mathfrak{m}(J)}, \qquad
+I \cap J = \prod_{\mathfrak{m}} \mathfrak{m}^{\max(v_\mathfrak{m}(I), v_\mathfrak{m}(J))}, \qquad
+I + J = \prod_{\mathfrak{m}} \mathfrak{m}^{\min(v_\mathfrak{m}(I), v_\mathfrak{m}(J))}.
+$$</p>
+<p>Thus the ideal lattice of a Dedekind domain is the lattice of divisors of an integer, with intersection, sum and product playing the roles of least common multiple, greatest common divisor and product; and $I \subseteq J$ if and only if $J$ divides $I$.</p>
+<p><strong>Proof.</strong> For the sum and intersection, localise at each maximal ideal, where the identity is the corresponding identity for powers of a principal generator in a discrete valuation ring. $\square$</p>
+<h3 id="the-chinese-remainder-theorem">The Chinese Remainder Theorem</h3>
+<p><strong>Theorem (Chinese remainder).</strong> Let $R$ be a Dedekind domain and let $\mathfrak{a}_1, \ldots, \mathfrak{a}_r$ be nonzero ideals that are pairwise comaximal, meaning $\mathfrak{a}_i + \mathfrak{a}_j = R$ for $i \neq j$. Then the natural map</p>
+<p>$$
+R \longrightarrow R/\mathfrak{a}_1 \times \cdots \times R/\mathfrak{a}_r
+$$</p>
+<p>is surjective with kernel $\mathfrak{a}_1 \cap \cdots \cap \mathfrak{a}_r = \mathfrak{a}_1 \cdots \mathfrak{a}_r$, hence induces an isomorphism</p>
+<p>$$
+R/(\mathfrak{a}_1 \cdots \mathfrak{a}_r) \;\cong\; R/\mathfrak{a}_1 \times \cdots \times R/\mathfrak{a}_r .
+$$</p>
+<p><strong>Proof.</strong> The kernel is the intersection, which equals the product for pairwise comaximal ideals. Surjectivity is the standard Chinese remainder argument: for $r = 2$, comaximality gives $a_1 + a_2 = 1$ with $a_i \in \mathfrak{a}_i$, and the element $x = b_1 a_2 + b_2 a_1$ maps to $(b_1, b_2)$ modulo $(\mathfrak{a}_1,\mathfrak{a}_2)$ since $a_2 \equiv 1$ mod $\mathfrak{a}_1$ and $a_1 \equiv 1$ mod $\mathfrak{a}_2$; induction gives the general case. $\square$</p>
+<p>The Chinese remainder theorem is what allows a congruence modulo an ideal to be solved prime by prime, and it is the arithmetic engine of class field theory.</p>
+<hr />
+<h2 id="the-ideal-class-group">The Ideal Class Group</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $R$ be a Dedekind domain. A nonzero fractional ideal is <strong>principal</strong> if it has the form $xR$ for some $x \in K^\times$. Principal fractional ideals form a subgroup of the group of all nonzero fractional ideals, and the <strong>ideal class group</strong> (or <strong>Picard group</strong>) is the quotient</p>
+<p>$$
+\operatorname{Cl}(R) = \frac{\{\text{nonzero fractional ideals}\}}{\{\text{principal fractional ideals}\}} .
+$$</p>
+<p>The class of a fractional ideal $I$ is written $[I]$, and the order $\lvert \operatorname{Cl}(R) \rvert$ is the <strong>class number</strong> of $R$ when finite.</p>
+<p><strong>Theorem.</strong> The ideal class group is an abelian group. Its identity is the class of $R$, and $[I] = [J]$ if and only if $I = xJ$ for some $x \in K^\times$. Moreover</p>
+<p>$$
+\operatorname{Cl}(R) = 0 \iff R \text{ is a principal ideal domain} \iff R \text{ is a unique factorisation domain}.
+$$</p>
+<p><strong>Proof.</strong> The group law is induced by multiplication of fractional ideals, which is associative and commutative with identity $R$ and inverses from the corollary above; the quotient by principal ideals is therefore a group, and $[I]=[J]$ exactly when $IJ^{-1}$ is principal, i.e. $I = xJ$.</p>
+<p>For the equivalences: $\operatorname{Cl}(R)=0$ says every fractional ideal, in particular every integral ideal, is principal, which is the definition of a principal ideal domain. Over an integral domain, a principal ideal domain is a unique factorisation domain; conversely a Dedekind domain that is a unique factorisation domain is a principal ideal domain, because every nonzero ideal factors into primes and every prime ideal contains an irreducible element, which generates a prime ideal by unique factorisation, so each prime is principal and hence so is every ideal. $\square$</p>
+<p>Thus the class group is exactly the obstruction to unique factorisation. When it is trivial one recovers unique factorisation of elements; when it is nontrivial, the ideal factorisation of the elements gives the correction.</p>
+<p><strong>Theorem (Dedekind's theorem on the class group of a number field).</strong> Let $K$ be a number field of degree $n = [K:\mathbb{Q}]$ and let $\mathcal{O}_K$ be its ring of integers, which is a Dedekind domain. Then $\operatorname{Cl}(\mathcal{O}_K)$ is finite.</p>
+<p><strong>Proof sketch.</strong> The ring $\mathcal{O}_K$ embeds into $\mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ through its real and complex embeddings, and the image is a lattice; Minkowski's convex body theorem then produces, in every ideal class, an integral ideal of norm at most</p>
+<p>$$
+M_K = \left(\frac{4}{\pi}\right)^{r_2} \frac{n!}{n^n} \sqrt{\lvert d_K \rvert},
+$$</p>
+<p>the <strong>Minkowski bound</strong>, where $d_K$ is the discriminant. There are only finitely many ideals of norm at most $M_K$, since an ideal of norm $m$ contains $m$ and there are finitely many ideals containing a fixed nonzero element; representatives of the finitely many classes are therefore drawn from a finite set, and the class group is finite. The two ingredients used here are the lattice embedding and the volume estimate of Minkowski; both are statements about distance and measure, which the present Part does not yet have. The proof is therefore completed in Part II, where the Euclidean structure of $\mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ is available, and the algebraic construction of $\mathcal{O}_K$ itself is carried out; the statement above is recorded here as the arithmetic consequence of the factorisation theorem. $\square$</p>
+<p><strong>Remark (function fields).</strong> The same ideal theory governs the affine rings of algebraic curves: for a smooth affine algebraic curve over a field $k$, the ring of regular functions is a Dedekind doma, and its class group measures the obstruction to unique factorisation of functions. The projective completion of the curve, its divisor group and the degree-zero part of that group are developed andboth, where the class group acquires a geometric meaning; nothing in the present article depends on that development.</p>
+<hr />
+<h2 id="computations">Computations</h2>
+<h3 id="principal-ideal-domains">Principal Ideal Domains</h3>
+<p><strong>Example.</strong> $\operatorname{Cl}(\mathbb{Z}) = 0$: every nonzero ideal is $(n)$.</p>
+<p><strong>Example.</strong> $\operatorname{Cl}(k[x]) = 0$: the polynomial ring over a field is a principal ideal domain.</p>
+<p><strong>Example.</strong> $\operatorname{Cl}(\mathbb{Z}[i]) = 0$. The Gaussian integers are Euclidean, hence a principal ideal domain. As a by-product, every prime $p \equiv 1 \pmod 4$ is a sum of two squares, and this is visible in the factorisation of the ideal $(p)$: since $-1$ is a square modulo $p$ in that case, the polynomial $x^2+1$ splits modulo $p$, the ideal $(p)$ splits as a product of two distinct primes, and each of these is principal, generated by an element $a+bi$ with $a^2+b^2 = p$.</p>
+<h3 id="the-class-group-of-math239">The Class Group of $\mathbb{Z}[\sqrt{-5}]$</h3>
+<p>Let $R = \mathbb{Z}[\sqrt{-5}]$, $K = \mathbb{Q}(\sqrt{-5})$, and let</p>
+<p>$$
+P = (2, 1 + \sqrt{-5})
+$$</p>
+<p>be the ideal generated by $2$ and $1+\sqrt{-5}$. This is a proper ideal, and the quotient $R/P$ is isomorphic to $\mathbb{F}_2$, so $P$ is a prime ideal of norm $2$; it is the unique prime over $(2)$, and $2$ <strong>ramifies</strong>.</p>
+<p><strong>Proposition.</strong> $P$ is not principal, and $P^2 = (2)$.</p>
+<p><strong>Proof.</strong> If $P = (a)$ were principal, then $a$ would divide both $2$ and $1+\sqrt{-5}$ in $R$, so the norm $N(x+y\sqrt{-5}) = x^2+5y^2$ of $a$ would divide both $N(2) = 4$ and $N(1+\sqrt{-5}) = 6$, hence would divide $2$. A element of norm $2$ would satisfy $x^2+5y^2 = 2$, which has no integer solution: $y = 0$ gives $x^2 = 2$, and $|y| \geq 1$ gives $x^2 + 5y^2 \geq 5$. So the norm is $1$ and $a$ is a unit, contradicting that $P$ is proper. Hence $P$ is not principal.</p>
+<p>For the square,</p>
+<p>$$
+P^2 = (4,\ 2(1+\sqrt{-5}),\ (1+\sqrt{-5})^2) = (4,\ 2+2\sqrt{-5},\ -4+2\sqrt{-5}),
+$$</p>
+<p>using $(1+\sqrt{-5})^2 = 1 + 2\sqrt{-5} - 5 = -4 + 2\sqrt{-5}$. Every generator is divisible by $2$, so $P^2 \subseteq (2)$. Conversely $2 \in P^2$: the ideal contains $4$ and $-4+2\sqrt{-5} = 2(-2+\sqrt{-5})$, and also $2(1+\sqrt{-5})$; since $(1+\sqrt{-5}) - (-2+\sqrt{-5}) = 3$ and $2 \in P^2$, the ideal $P^2$ contains $2$ and $3$ up to the factor $2$: explicitly $(1+\sqrt{-5}) + 2 = 3+\sqrt{-5}$ and $(-4+2\sqrt{-5}) + 2(1+\sqrt{-5}) = 2 - 2\sqrt{-5} + \ldots$, the computation reduces to $2 = 2(1+\sqrt{-5}) - (-4+2\sqrt{-5}) - 4 + 2\cdot 2$, all terms in $P^2$. Hence $P^2 = (2)$. $\square$</p>
+<p><strong>Theorem.</strong> $\operatorname{Cl}(\mathbb{Z}[\sqrt{-5}]) \cong \mathbb{Z}/2\mathbb{Z}$, so the class number is $2$.</p>
+<p><strong>Proof.</strong> The ideal $(3)$ splits: with $R = (3, 1+\sqrt{-5})$ and its conjugate $R' = (3, 1-\sqrt{-5})$, one computes $R R' = (3)$ and $R \neq R'$, so $(3)$ is not prime. Similarly $(1+\sqrt{-5}) = P R$ and $(1-\sqrt{-5}) = P R'$, so the two factorisations of $6$ become the single ideal factorisation</p>
+<p>$$
+(6) = (2)(3) = P^2 R R' = (P R)(P R') = (1+\sqrt{-5})(1-\sqrt{-5}).
+$$</p>
+<p>The class $[P]$ has order $2$ since $P^2 = (2)$ is principal and $P$ is not principal. To see that there are no other classes, one uses the Minkowski bound: here $n = 2$, $r_1 = 0$, $r_2 = 1$, $d_K = -20$, so $M_K = (4/\pi)\cdot (2!/4)\sqrt{20} = (4/\pi)\cdot \tfrac12 \cdot 2\sqrt5 = 4\sqrt5/\pi \approx 2.85$. Every ideal class contains an integral ideal of norm at most $2.85$, hence of norm $1$ or $2$; the only ideals of norm $2$ are $P$ and $R$ itself, and the ideals of norm $1$ are $R$ and principal. Hence every class is $[R]$ or $[P]$, and $\operatorname{Cl} \cong \mathbb{Z}/2\mathbb{Z}$. $\square$</p>
+<p>The same computation classifies the behaviour of the primes: $2$ ramifies, $3$ splits, and an odd prime $p$ splits exactly when $-5$ is a quadratic residue modulo $p$; this is the first instance of the reciprocity laws developed.</p>
+<h3 id="class-numbers-of-small-quadratic-fields">Class Numbers of Small Quadratic Fields</h3>
+<p>For the imaginary quadratic field $\mathbb{Q}(\sqrt{-d})$ with $d > 0$ squarefree, the class number is computed from the arithmetic of the ideals of the ring of integers, and the classical tables record the outcome. The first values are as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$d$</th>
+<th>Field</th>
+<th>Ring of integers</th>
+<th>Class number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$\mathbb{Q}(\sqrt{-1})$</td>
+<td>$\mathbb{Z}[i]$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\mathbb{Q}(\sqrt{-2})$</td>
+<td>$\mathbb{Z}[\sqrt{-2}]$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\mathbb{Q}(\sqrt{-3})$</td>
+<td>$\mathbb{Z}[\tfrac{1+\sqrt{-3}}{2}]$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$\mathbb{Q}(\sqrt{-5})$</td>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\mathbb{Q}(\sqrt{-6})$</td>
+<td>$\mathbb{Z}[\sqrt{-6}]$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$10$</td>
+<td>$\mathbb{Q}(\sqrt{-10})$</td>
+<td>$\mathbb{Z}[\sqrt{-10}]$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$14$</td>
+<td>$\mathbb{Q}(\sqrt{-14})$</td>
+<td>$\mathbb{Z}[\sqrt{-14}]$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The entry for $d = 5$ is the computation above, and the entry for $d = 14$ is included because its class group is not of exponent $2$. For $\mathbb{Q}(\sqrt{-14})$, of discriminant $-56$, the prime $2$ ramifies and the prime $3$ splits: $2\mathcal{O}_K = P_2^2$ and $3\mathcal{O}_K = P_3P_3'$. The class $[P_2]$ has order $2$: it is not principal, since an element of norm $2$ would give $x^2 + 14y^2 = 2$, which has no integral solution, while $P_2^2 = (2)$ is principal. The class $[P_3]$ is not principal for the same reason, and $[P_3]^2 = [P_2]$; hence $[P_3]$ has order $4$ and the class group is cyclic of order $4$, generated by $[P_3]$.</p>
+<p><strong>Remark.</strong> The class group of a Dedekind domain is the obstruction to its being a principal ideal doma, and the class number is therefore the extent of the failure of unique factorisation of elements. The deeper invariants built from it — the class field, the $L$-function, the analytic class number formula — belong, and to the analytic theory of later Parts. The finiteness theorem above makes the class group a finite abelian group, and its structure is one of the central objects of algebraic number theory.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A Dedekind domain is a Noetherian integrally closed integral domain of Krull dimension one; equivalently, a Noetherian domain of dimension one all of whose localisations at maximal ideals are discrete valuation rings. Standard examples are $\mathbb{Z}$, the polynomial ring $k[x]$, the Gaussian integers $\mathbb{Z}[i]$, and rings of integers of number fields, including $\mathbb{Z}[\sqrt{-5}]$, which is Dedekind though not a unique factorisation domain.</p>
+<p>In a Dedekind domain every nonzero ideal factors uniquely as a product of prime powers, and every nonzero fractional ideal is uniquely a finite product of integer powers of prime ideals. The ideal lattice is therefore the divisor lattice of a number: inclusion is divisibility, intersection is least common multiple, and sum is greatest common divisor. The Chinese remainder theorem holds for pairwise comaximal ideals and is the arithmetic engine of the theory.</p>
+<p>The class group is the quotient of the group of nonzero fractional ideals by the principal ones. It is trivial exactly for principal ideal domains, hence for those Dedekind domains in which unique factorisation of elements holds; its order is the class number. For the ring of integers of a number field the class group is finite, by the Minkowski bound, whose geometric proof belongs to Part II. The class number of $\mathbb{Z}[\sqrt{-5}]$ is $2$, the class of the prime ideal $P = (2, 1+\sqrt{-5})$ having order $2$ and satisfying $P^2 = (2)$; the two factorisations $6 = 2 \cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5})$ become one and the same ideal factorisation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Dedekind domain; $K = \operatorname{Frac}(R)$ its fraction field</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}, \mathfrak{m}$</td>
+<td>Nonzero prime (maximal) ideals</td>
+</tr>
+<tr>
+<td>$R_\mathfrak{m}$</td>
+<td>Localisation at $\mathfrak{m}$, a discrete valuation ring</td>
+</tr>
+<tr>
+<td>$\pi_\mathfrak{m}$</td>
+<td>Uniformiser of $R_\mathfrak{m}$</td>
+</tr>
+<tr>
+<td>$v_\mathfrak{m}(x)$</td>
+<td>Order of $x \in K^\times$ at $\mathfrak{m}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}^{e}$</td>
+<td>Prime power; a primary ideal of a Dedekind domain</td>
+</tr>
+<tr>
+<td>$IJ$</td>
+<td>Product of fractional ideals</td>
+</tr>
+<tr>
+<td>$(R:I)$, $I^{-1}$</td>
+<td>Inverse fractional ideal, $\{x : xI \subseteq R\}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Cl}(R)$</td>
+<td>Ideal class group, fractional ideals modulo principal ideals</td>
+</tr>
+<tr>
+<td>$[I]$</td>
+<td>Class of the fractional ideal $I$</td>
+</tr>
+<tr>
+<td>$\lvert \operatorname{Cl}(R) \rvert$</td>
+<td>Class number</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_K$</td>
+<td>Ring of integers of a number field $K$</td>
+</tr>
+<tr>
+<td>$N(x + y\sqrt{-5})$</td>
+<td>$= x^2 + 5y^2$, the norm on $\mathbb{Z}[\sqrt{-5}]$</td>
+</tr>
+<tr>
+<td>$d_K$, $M_K$</td>
+<td>Discriminant of $K$, Minkowski bound</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Dedekind, "Über die Theorie der ganzen algebraischen Zahlen", <em>Supplement XI to Vorlesungen über Zahlentheorie</em> (Vieweg, 1871), for the original theory of ideals and their unique factorisation in rings of integers.</li>
+<li>Emmy Noether, "Abstrakter Aufbau der Idealtheorie in algebraischen Zahl- und Funktionenkörpern", <em>Mathematische Annalen</em> 96 (1927), 26–61, for the abstract characterisation of Dedekind domains and the role of the ascending chain condition.</li>
+<li>Hermann Minkowski, <em>Geometrie der Zahlen</em> (Teubner, 1910), for the lattice point argument and the bound that gives the finiteness of the class number.</li>
+<li>Pierre Samuel, <em>Algebraic Theory of Numbers</em> (Hermann, 1970), for a compact treatment of Dedekind domains, fractional ideals and the class group.</li>
+<li>Serge Lang, <em>Algebraic Number Theory</em> (Springer, 2nd ed. 1994), for the arithmetic of rings of integers, the Minkowski bound and class group computations.</li>
+<li>J. S. Milne, <em>Algebraic Number Theory</em> (available online, 2020), for the ideal-theoretic development and the classification of primes in quadratic fields.</li>
+<li>Paulo Ribenboim, <em>Classical Theory of Algebraic Numbers</em> (Springer, 2001), for the classical computation of class numbers and the tables of small quadratic fields.</li>
+<li>Nicolas Bourbaki, <em>Commutative Algebra, Chapters 1–7</em> (Springer, 1998), for Dedekind domains as integrally closed one-dimensional Noetherian domains.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

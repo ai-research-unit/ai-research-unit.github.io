@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Ideals and Peirce Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-ideals-and-peirce-decomposition"><strong>Biquaternion Ideals and Peirce Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, as established in the article on biquaternion algebra. This article studies the ideal structure of $\mathbb{B}$ and the decomposition of $\mathbb{B}$ relative to a family of idempotents.</p>
+<p>Two facts organize the discussion. As a $\mathbb{C}$-algebra, $\mathbb{B}$ is isomorphic to the algebra of $2 \times 2$ complex matrices:</p>
+<p>$$
+\mathbb{B} \cong M_2(\mathbb{C}).
+$$</p>
+<p>And $\mathbb{B}$ is <strong>simple</strong>: its only two-sided ideals are $0$ and $\mathbb{B}$. Its ideal theory is therefore a theory of one-sided ideals, governed by the matrix structure: the main results are the classification of the left ideals — $0$, the minimal ones, and $\mathbb{B}$ — and the Peirce decomposition into four one-dimensional corners relative to a pair of orthogonal idempotents.</p>
+<p>Because the biquaternions carry both a complex and a real structure, every statement is tagged with the field over which it is made. Sections 1 to 10 work over $\mathbb{C}$. Section 11 discusses the $\mathbb{R}$-view, where the ideal lattice itself is unchanged but the real structure leaves further traces. The notation follows the article on biquaternion algebra: $e_0$ is the unit, $e_1, e_2, e_3$ are the quaternion units with $e_1 e_2 = e_3$, $i$ is the central scalar imaginary, and a general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The definitions of the article on rings apply to the noncommutative algebra $\mathbb{B}$, where "left" and "right" must be distinguished.</p>
+<h1 id="part-i-ideals-and-simplicity">Part I: Ideals and Simplicity</h1>
+<h2 id="1-ideals-in-an-algebra">1. Ideals in an Algebra</h2>
+<p>Let $A$ be an associative unital algebra over a field $k$. An additive subgroup $I \subseteq A$ is a <strong>left ideal</strong> if $A I \subseteq I$, a <strong>right ideal</strong> if $I A \subseteq I$, and a <strong>two-sided ideal</strong> if it is both. The distinction matters only when $A$ is noncommutative; for $\mathbb{B}$ the three notions genuinely differ. The ideals $0$ and $A$ are called trivial.</p>
+<p>A base-field remark will be used repeatedly. If $A I \subseteq I$, then $I$ is automatically a $k$-subspace, since $\lambda x = (\lambda 1) x \in I$ for $\lambda \in k$, $x \in I$, as $\lambda 1 \in A$. So the left ideals of a unital algebra do not depend on which field of scalars inside the center is used to view it; in particular the ideal lattice of $\mathbb{B}$ is the same in the $\mathbb{C}$-view and the $\mathbb{R}$-view (Section 11).</p>
+<p>For a two-sided ideal $I$, the <strong>quotient algebra</strong> $A/I$ is the set of cosets with the induced operations, well defined precisely because $I$ absorbs multiplication on both sides. Kernels of algebra homomorphisms are two-sided ideals, and the first isomorphism theorem gives $A/\ker\varphi \cong \operatorname{im}\varphi$. For a left ideal only, $A/I$ is still a left $A$-module but not in general an algebra. Thus the left ideals govern module theory and the two-sided ideals govern quotient algebras.</p>
+<h2 id="2-the-two-sided-ideals-simplicity-of-math48">2. The Two-Sided Ideals: Simplicity of $\mathbb{B}$</h2>
+<p><strong>Theorem.</strong> Over $\mathbb{C}$, the only two-sided ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$. Equivalently, $\mathbb{B}$ is a <strong>simple</strong> $\mathbb{C}$-algebra.</p>
+<p><strong>Proof.</strong> Transport along $\mathbb{B} \cong M_2(\mathbb{C})$. Let the matrix units satisfy</p>
+<p>$$
+E_{ij} E_{kl} = \delta_{jk} E_{il},
+$$</p>
+<p>from which $E_{ik} X E_{lj} = X_{kl} E_{ij}$ for any matrix $X = (X_{kl})$. If $I \neq 0$ is a two-sided ideal and $X \in I$ has $X_{kl} \neq 0$, then</p>
+<p>$$
+E_{ij} = X_{kl}^{-1} E_{ik} X E_{lj} \in I.
+$$</p>
+<p>Hence $I$ contains every matrix unit, so $I = M_2(\mathbb{C})$. Transporting back gives the claim. $\square$</p>
+<p>Consequences over $\mathbb{C}$:</p>
+<ul>
+<li>The only quotient algebras of $\mathbb{B}$ are $\mathbb{B}$ and $0$.</li>
+<li>Every nonzero element generates $\mathbb{B}$ as a two-sided ideal.</li>
+<li>The center of $\mathbb{B}$ is the scalar copy of $\mathbb{C}$, so $\mathbb{B}$ is a <strong>central simple</strong> $\mathbb{C}$-algebra; in particular it is not a product $A_1 \times A_2$ of nonzero algebras, since each factor would give a nontrivial two-sided ideal.</li>
+<li>The many one-sided ideals of Sections 8 and 9 are all non-two-sided, so they do not contradict simplicity.</li>
+</ul>
+<h2 id="3-artinian-semisimple-and-length-two">3. Artinian, Semisimple, and Length Two</h2>
+<p>A nonzero module is <strong>simple</strong> if it has no submodules other than $0$ and itself. A <strong>composition series</strong> is a finite strictly increasing chain $0 = M_0 \subset M_1 \subset \cdots \subset M_r = M$ with simple successive quotients $M_i/M_{i-1}$; the number $r$ is the <strong>length</strong> of $M$. A ring is <strong>left artinian</strong> if every descending chain of left ideals stabilizes, and <strong>semisimple</strong> if its left regular module is a direct sum of simple modules.</p>
+<p>Over $\mathbb{C}$, every descending chain of left ideals of $\mathbb{B}$ is a descending chain of $\mathbb{C}$-subspaces, so it stabilizes; thus $\mathbb{B}$ is artinian. By Wedderburn–Artin, a unital ring is semisimple if and only if it is artinian with zero Jacobson radical, and every simple artinian ring is semisimple. Hence $\mathbb{B}$ is <strong>semisimple</strong>, and every left ideal is a direct sum of minimal left ideals.</p>
+<p>All simple left $\mathbb{B}$-modules are isomorphic to the two-dimensional complex vector space $S = \mathbb{C}^2$, the <strong>spinor module</strong>, on which $\mathbb{B} \cong M_2(\mathbb{C}) = \operatorname{End}_{\mathbb{C}}(S)$ acts. As a left module over itself,</p>
+<p>$$
+\mathbb{B} \cong S \oplus S.
+$$</p>
+<p>With the idempotents $p, q$ of Section 4 this reads $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ with $\mathbb{B}p \cong \mathbb{B}q \cong S$. Hence $0 \subset \mathbb{B}p \subset \mathbb{B}$ is a composition series, and the <strong>length of $\mathbb{B}$ as a left module over itself is $2$</strong>, with both factors isomorphic to $S$. The right regular module has length $2$ as well, with factors the dual module $S^{*}$. All of this is over $\mathbb{C}$.</p>
+<h1 id="part-ii-idempotents-and-the-peirce-decomposition">Part II: Idempotents and the Peirce Decomposition</h1>
+<h2 id="4-idempotents-and-orthogonal-idempotents">4. Idempotents and Orthogonal Idempotents</h2>
+<p>Let $A$ be an associative unital algebra. An element $e \in A$ is an <strong>idempotent</strong> if $e^2 = e$. Idempotents encode direct summands: for idempotent $e$,</p>
+<p>$$
+A = Ae \oplus A(1-e) \quad (\text{left}), \qquad A = eA \oplus (1-e)A \quad (\text{right}),
+$$</p>
+<p>and every such decomposition of the regular module arises from an idempotent. Two idempotents $e, f$ are <strong>orthogonal</strong> if $ef = fe = 0$; then $e+f$ is again idempotent. A family $\{e_1, \dots, e_n\}$ is pairwise orthogonal if $e_i e_j = 0$ for $i \neq j$, and <strong>complete</strong> if in addition $\sum_i e_i = 1$. A nonzero idempotent $e$ is <strong>primitive</strong> if it is not a sum of two nonzero orthogonal idempotents. The criterion used below, for a semisimple algebra $A$, is</p>
+<p>$$
+e \text{ primitive} \iff Ae \text{ is a minimal left ideal} \iff eAe \text{ is a division ring}.
+$$</p>
+<p><strong>Explicit idempotents in $\mathbb{B}$.</strong> Over $\mathbb{C}$, put</p>
+<p>$$
+p = \frac{e_0 + i e_3}{2}, \qquad q = \frac{e_0 - i e_3}{2}.
+$$</p>
+<p>Since $(i e_3)^2 = i^2 e_3^2 = (-1)(-1) = 1$, one has $p^2 = p$, $q^2 = q$ and</p>
+<p>$$
+pq = qp = \frac{e_0 - (i e_3)^2}{4} = 0, \qquad p + q = e_0.
+$$</p>
+<p>So $p$ and $q$ are orthogonal idempotents summing to the unit. They are not central: $e_1$ anticommutes with $i e_3$, hence does not commute with $p$ or $q$. Under $\mathbb{B} \cong M_2(\mathbb{C})$ they correspond to the diagonal matrix units, and each is primitive.</p>
+<h2 id="5-matrix-units-in-the-biquaternion-algebra">5. Matrix Units in the Biquaternion Algebra</h2>
+<p>The off-diagonal matrix units can also be written explicitly. Put</p>
+<p>$$
+x = \frac{i e_1 - e_2}{2}, \qquad y = \frac{i e_1 + e_2}{2}.
+$$</p>
+<p>Then $\{p, x, y, q\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$, and it satisfies the matrix-unit relations with</p>
+<p>$$
+E_{11} = p, \qquad E_{12} = x, \qquad E_{21} = y, \qquad E_{22} = q.
+$$</p>
+<p>Explicitly, $p^2 = p$, $q^2 = q$, $pq = qp = 0$, $p+q = e_0$, and</p>
+<p>$$
+px = x = xq, \qquad qy = y = yp, \qquad xy = p, \qquad yx = q,
+$$</p>
+<p>together with $xp = qx = py = 0$, $yq = 0$, and $x^2 = y^2 = 0$. These are the multiplication table of $M_2(\mathbb{C})$ written in biquaternion coordinates.</p>
+<h2 id="6-the-peirce-decomposition">6. The Peirce Decomposition</h2>
+<p>The <strong>Peirce decomposition</strong> is the decomposition of an algebra relative to a family of orthogonal idempotents; it is the algebraic form of a block decomposition of a matrix.</p>
+<p><strong>One idempotent.</strong> Let $e \in A$ be idempotent and $f = 1-e$. Every $a \in A$ expands as $a = eae + eaf + fae + faf$, giving the direct sum</p>
+<p>$$
+A = eAe \oplus eAf \oplus fAe \oplus fAf,
+$$</p>
+<p>whose summands are the <strong>Peirce spaces</strong>. The corner $eAe$ is a subalgebra with identity $e$; the other corners are only one-sided pieces. The expansion, the directness of the four terms and the product rule below are proved in <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>, where the case of a <strong>central</strong> idempotent is also separated: for a central $e$ the off-diagonal corners vanish and the sum is a product of algebras. That special case does not arise here, since the idempotents of this article lie in a simple algebra and no nontrivial idempotent of $\mathbb{B}$ is central.</p>
+<p><strong>A complete orthogonal family.</strong> If $\{e_1, \dots, e_n\}$ is complete and pairwise orthogonal, the same expansion gives</p>
+<p>$$
+A = \bigoplus_{i,j=1}^{n} e_i A e_j, \qquad (e_i A e_j)(e_k A e_l) \subseteq \delta_{jk}\, e_i A e_l.
+$$</p>
+<p>Each diagonal corner $e_i A e_i$ is an algebra with identity $e_i$, and each off-diagonal piece is a bimodule over the corresponding corners.</p>
+<p><strong>The biquaternion case.</strong> Take $e_1 = p$, $e_2 = q$ from Section 4. The Peirce decomposition of $\mathbb{B}$ is</p>
+<p>$$
+\mathbb{B} = p\mathbb{B}p \oplus p\mathbb{B}q \oplus q\mathbb{B}p \oplus q\mathbb{B}q,
+$$</p>
+<p>and by the table of Section 5 each summand is one-dimensional over $\mathbb{C}$:</p>
+<p>$$
+p\mathbb{B}p = \mathbb{C}p, \qquad p\mathbb{B}q = \mathbb{C}x, \qquad q\mathbb{B}p = \mathbb{C}y, \qquad q\mathbb{B}q = \mathbb{C}q.
+$$</p>
+<p>So the Peirce decomposition is exactly the matrix-unit decomposition</p>
+<p>$$
+\mathbb{B} = \mathbb{C}p \oplus \mathbb{C}x \oplus \mathbb{C}y \oplus \mathbb{C}q = \bigoplus_{i,j=1}^{2} \mathbb{C}E_{ij}.
+$$</p>
+<p>The diagonal part $p\mathbb{B}p \oplus q\mathbb{B}q = \mathbb{C}p \oplus \mathbb{C}q$ is a two-dimensional commutative subalgebra isomorphic to $\mathbb{C} \times \mathbb{C}$, the diagonal subalgebra of the matrix picture. Each diagonal corner is a division ring, namely $\mathbb{C}$, which is the primitivity criterion of Section 4.</p>
+<h2 id="7-the-matrix-unit-decomposition-as-a-sum-of-minimal-ideals">7. The Matrix-Unit Decomposition as a Sum of Minimal Ideals</h2>
+<p>The matrix units group into one-sided ideals in a second way. With $E_{11} = p$ and $E_{22} = q$, the two <strong>columns</strong> $\mathbb{B}p, \mathbb{B}q$ and the two <strong>rows</strong> $p\mathbb{B}, q\mathbb{B}$ are one-sided ideals, and</p>
+<p>$$
+\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q = (\mathbb{C}p \oplus \mathbb{C}y) \oplus (\mathbb{C}x \oplus \mathbb{C}q),
+$$</p>
+<p>$$
+\mathbb{B} = p\mathbb{B} \oplus q\mathbb{B} = (\mathbb{C}p \oplus \mathbb{C}x) \oplus (\mathbb{C}y \oplus \mathbb{C}q).
+$$</p>
+<p>The first exhibits $\mathbb{B}$ as a direct sum of the two minimal left ideals (the columns); the second exhibits it as a direct sum of the two minimal right ideals (the rows). The two groupings of the same four basis elements differ: the Peirce decomposition groups $p$ with $x$ and $q$ with $y$, whereas the column decomposition groups $p$ with $y$ and $q$ with $x$. Each column is two-dimensional over $\mathbb{C}$ and isomorphic, as a left $\mathbb{B}$-module, to $S = \mathbb{C}^2$; each row is isomorphic to the dual $S^{*}$. Since $\mathbb{B}$ is simple, a column or a row is never a two-sided ideal; for instance $\mathbb{B}p$ is not stable under right multiplication by $x$.</p>
+<h1 id="part-iii-one-sided-ideals-the-radical-and-the-real-structure">Part III: One-Sided Ideals, the Radical, and the Real Structure</h1>
+<h2 id="8-minimal-left-and-right-ideals">8. Minimal Left and Right Ideals</h2>
+<p>A <strong>minimal left ideal</strong> is a nonzero left ideal containing no nonzero proper left ideal; equivalently, a simple submodule of the left regular module. A <strong>minimal right ideal</strong> is defined the same way on the right.</p>
+<p>Over $\mathbb{C}$, since $\mathbb{B}$ is semisimple, every left ideal of $\mathbb{B}$ is a direct sum of minimal left ideals, and every minimal left ideal is of the form $\mathbb{B}e$ for a primitive idempotent $e$. The coordinate examples are the columns $\mathbb{B}p$ and $\mathbb{B}q$ of Section 7, and all minimal left ideals are isomorphic as left $\mathbb{B}$-modules to the simple module $S = \mathbb{C}^2$: a general one is obtained from a column by an algebra automorphism, so it is again a column in a suitable basis. Dually, every minimal right ideal is a row and is isomorphic to $S^{*}$, the coordinate examples being $p\mathbb{B}$ and $q\mathbb{B}$. Thus there is one isomorphism class of simple left modules and one of simple right modules. Being nonzero proper one-sided ideals, none of them is two-sided — which is exactly why their abundance is compatible with Section 2.</p>
+<h2 id="9-the-lattice-of-left-ideals-as-a-projective-line">9. The Lattice of Left Ideals as a Projective Line</h2>
+<p>The one-sided ideals can be listed explicitly. Over $\mathbb{C}$, for each $\mathbb{C}$-subspace $W \subseteq \mathbb{C}^2$ define</p>
+<p>$$
+L_W = \{\, M \in M_2(\mathbb{C}) : M|_W = 0 \,\},
+$$</p>
+<p>the matrices annihilating $W$. This is a left ideal, since $\ker(AM) \supseteq \ker M$ for every $A$. The assignment $W \mapsto L_W$ reverses inclusions, and</p>
+<p>$$
+L_0 = \mathbb{B}, \qquad L_{\mathbb{C}^2} = 0, \qquad L_W \text{ is minimal when } \dim_{\mathbb{C}} W = 1.
+$$</p>
+<p>Conversely every left ideal is of this form: a left ideal is a submodule of the left regular module $\mathbb{B} \cong S \oplus S$, and since $S$ is simple and $\mathbb{B}$ has length $2$, the only submodules of $S \oplus S$ are $0$, a copy of $S$, and the whole module. A minimal left ideal $L$ is thus a copy of $S$, determined by the line $W = \bigcap_{M \in L} \ker M$.</p>
+<p><strong>Theorem (over $\mathbb{C}$).</strong> The left ideals of $\mathbb{B}$ are exactly $0$, the whole algebra $\mathbb{B}$, and the minimal left ideals $L_W$ with $W$ a line in $\mathbb{C}^2$. The minimal left ideals are indexed by the projective line</p>
+<p>$$
+\mathbb{P}^1(\mathbb{C}) = \{\, W \subseteq \mathbb{C}^2 : W \text{ a one-dimensional } \mathbb{C}\text{-subspace} \,\},
+$$</p>
+<p>and they form the middle layer of the lattice:</p>
+<p>$$
+0 \;\subset\; \{\, L_W : W \in \mathbb{P}^1(\mathbb{C}) \,\} \;\subset\; \mathbb{B}.
+$$</p>
+<p>The middle elements are pairwise incomparable; each covers $0$ and is covered by $\mathbb{B}$. Because the length of $\mathbb{B}$ as a left module over itself is $2$, every minimal left ideal is also a <strong>maximal</strong> left ideal: nothing lies strictly between it and $\mathbb{B}$. Right ideals admit the same description, with lines in the dual space and the rows as coordinate members.</p>
+<p>The parameter space deserves a caution. The projective space classifying the minimal one-sided ideals of $M_n(D)$ is $\mathbb{P}^{n-1}(D)$, over the <strong>division ring</strong> $D$ in the Wedderburn–Artin decomposition $M_n(D)$ — not over an arbitrary base field. Here $D = \mathbb{C}$ and $n = 2$, so the parameter space is $\mathbb{P}^1(\mathbb{C})$. In particular, regarding $\mathbb{B}$ as an $\mathbb{R}$-algebra does not replace this by $\mathbb{P}^1(\mathbb{R})$: the one-sided ideals are still parametrized by $\mathbb{P}^1(\mathbb{C})$. The real projective line appears only as the subfamily of kernels that the real structure preserves, not as a set of fixed minimal left ideals: Section 11 shows that no minimal left ideal is stable under coefficient conjugation.</p>
+<h2 id="10-the-radical">10. The Radical</h2>
+<p>The <strong>Jacobson radical</strong> $J(A)$ is the intersection of all maximal left ideals of $A$, equivalently of all maximal right ideals; it is a two-sided ideal. For an artinian ring, $J(A)$ is the largest nilpotent ideal and $A/J(A)$ is semisimple; an artinian ring is semisimple if and only if its radical is zero.</p>
+<p>Over $\mathbb{C}$, the radical of $\mathbb{B}$ vanishes:</p>
+<p>$$
+J(\mathbb{B}) = 0.
+$$</p>
+<p>Indeed $J(\mathbb{B})$ is a two-sided ideal, hence by simplicity is $0$ or $\mathbb{B}$; it cannot be $\mathbb{B}$, since in a unital algebra the radical is proper. This restates the semisimplicity of Section 3 in terms of the radical. Consequences over $\mathbb{C}$:</p>
+<ul>
+<li>$\mathbb{B}$ has no nonzero <strong>nilpotent two-sided ideals</strong>; the nilradical is zero.</li>
+<li>It has no nonzero nilpotent left or right ideals either, since such an ideal generates a nonzero nilpotent two-sided ideal.</li>
+<li>The absence of a radical is not the absence of nilpotent <strong>elements</strong>: $x^2 = y^2 = 0$ (Section 5), yet the left ideal generated by $x$ is not nilpotent.</li>
+<li>Every left $\mathbb{B}$-module is semisimple, i.e., a direct sum of copies of $S = \mathbb{C}^2$.</li>
+</ul>
+<h2 id="11-the-real-structure">11. The Real Structure</h2>
+<p>Everything so far was stated over $\mathbb{C}$. We now regard the same set $\mathbb{B}$ as an eight-dimensional algebra over $\mathbb{R}$ and record what changes.</p>
+<p><strong>(a) The ideal lattice does not change.</strong> By the base-field remark of Section 1, an additive subgroup closed under left multiplication by $\mathbb{B}$ is automatically a complex subspace, because multiplication by $i$ is left multiplication by the central element $i e_0$. So an $\mathbb{R}$-left ideal is the same thing as a $\mathbb{C}$-left ideal, and the same holds on the right and for two-sided ideals. In particular, over $\mathbb{R}$: $\mathbb{B}$ is still simple, with two-sided ideals only $0$ and $\mathbb{B}$; the minimal left ideals are the same subsets, parametrized by $\mathbb{P}^1(\mathbb{C})$; the radical is still zero; and the length as a module over itself is still $2$.</p>
+<p><strong>(b) The algebra is not central over $\mathbb{R}$.</strong> The center of $\mathbb{B}$ is the copy of $\mathbb{C}$ spanned by $e_0$ and $i e_0$ — the <strong>complex subspace</strong> $\mathbb{C}_{\mathbb{B}}$ — a proper field extension of $\mathbb{R}$ of degree $2$. Thus $\mathbb{B}$ is a simple $\mathbb{R}$-algebra but not a <strong>central simple</strong> one. In the Wedderburn–Artin description $\mathbb{B} \cong M_n(D)$ over $\mathbb{R}$, one has $n = 2$ and $D = \mathbb{C}$.</p>
+<p><strong>(c) The enrichment appears after extension of scalars.</strong> The complexification of the real algebra $\mathbb{B}$ is</p>
+<p>$$
+\mathbb{B} \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C}) \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C}) \cong M_2(\mathbb{C} \oplus \mathbb{C}) \cong M_2(\mathbb{C}) \oplus M_2(\mathbb{C}),
+$$</p>
+<p>using $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$. The algebra on the right is <strong>not simple</strong>: its two-sided ideals are $0$, the two summands, and the whole ring. So the real biquaternion algebra is <strong>not absolutely simple</strong>: simple over $\mathbb{R}$, but with a complexification that splits as a product of two simple algebras. This is the precise sense in which the real structure carries a richer two-sided ideal theory — not in the lattice of $\mathbb{B}$ itself, which is $\{0, \mathbb{B}\}$ in both views, but in the lattice produced by base change. In contrast, $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{B}$ is simple: it is the real biquaternion algebra, not $\mathbb{H}$, whose complexification splits.</p>
+<p><strong>(d) The action of complex conjugation on the lattice.</strong> Complex conjugation $\tilde{Q} \mapsto \tilde{Q}^{*} = \sum_\mu \bar{Q}_\mu e_\mu$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{B}$ (it is $\mathbb{C}$-antilinear), so it permutes the left ideals, $\sigma(\mathbb{B}\tilde{\chi}) = \mathbb{B}\sigma(\tilde{\chi})$. Since $\sigma(p) = q$ and $\sigma(q) = p$, it <strong>interchanges the two columns</strong>:</p>
+<p>$$
+\sigma(\mathbb{B}p) = \mathbb{B}q, \qquad \sigma(\mathbb{B}q) = \mathbb{B}p.
+$$</p>
+<p>It does <strong>not</strong> act as entrywise conjugation of the matrix. With $\varphi(\tilde{Q}) = M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ under the isomorphism of Section 5, coefficient conjugation is</p>
+<p>$$
+\varphi(\tilde{Q}^{*}) = \begin{pmatrix} \bar{d} & -\bar{c} \\ -\bar{b} & \bar{a} \end{pmatrix} = J\,\overline{M}\,J^{-1}, \qquad J = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = \varphi(-e_2),
+$$</p>
+<p>whereas entrywise conjugation fixes $E_{11} = p$ and would leave $\mathbb{B}p$ invariant. The two differ already on $e_1$: $\varphi(e_1) = -i\sigma_1$ is fixed by $\sigma$, but entrywise conjugation carries it to $+i\sigma_1$.</p>
+<p>On a minimal left ideal $L_W$ the action is</p>
+<p>$$
+\sigma(L_W) = L_{W^{\perp}},
+$$</p>
+<p>where $W^{\perp}$ is the <strong>Hermitian-orthogonal complement</strong> of $W$ in $\mathbb{C}^2$: if $W = \operatorname{span}(w_1, w_2)$, then $W^{\perp} = \operatorname{span}(\bar{w}_2, -\bar{w}_1)$. In the affine coordinate $t = w_2/w_1$ the induced map on $\mathbb{P}^1(\mathbb{C})$ is $t \mapsto -1/\bar{t}$, whose fixed-point equation $t = -1/\bar{t}$ reads $|t|^2 = -1$ and has no solution. So <strong>no minimal left ideal is stable under complex conjugation</strong>: the involution $W \mapsto W^{\perp}$ is fixed-point-free and pairs the two columns, which is the algebraic form of the statement, used elsewhere in the series, that coefficient conjugation exchanges the defining module $S$ and its conjugate $\bar{S}$.</p>
+<p>The <strong>real lines</strong> $W = \overline{W}$ still form the real projective line</p>
+<p>$$
+\mathbb{P}^1(\mathbb{R}) \subset \mathbb{P}^1(\mathbb{C}),
+$$</p>
+<p>and $\sigma$ preserves this subfamily — the Hermitian orthogonal of a real line is again real — acting on it as the antipodal map $W \mapsto W^{\perp}$. So although the lattice of left ideals is unchanged from $\mathbb{C}$ to $\mathbb{R}$, the real structure does not mark out conjugation-stable minimal left ideals; what it marks out is the subfamily $\mathbb{P}^1(\mathbb{R})$ of kernels that it preserves, on which it acts without fixed points.</p>
+<h2 id="summary">Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>Over $\mathbb{C}$</th>
+<th>Over $\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dimension</td>
+<td>$4$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>Algebra type</td>
+<td>$M_2(\mathbb{C})$</td>
+<td>$M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>Two-sided ideals</td>
+<td>$0$, $\mathbb{B}$ (simple)</td>
+<td>$0$, $\mathbb{B}$ (simple)</td>
+</tr>
+<tr>
+<td>Central simple?</td>
+<td>yes, center $\mathbb{C}$</td>
+<td>no, center $\mathbb{C} \neq \mathbb{R}$</td>
+</tr>
+<tr>
+<td>Left ideals</td>
+<td>$0$, the $\mathbb{P}^1(\mathbb{C})$ of minimal ones, $\mathbb{B}$</td>
+<td>same lattice</td>
+</tr>
+<tr>
+<td>Minimal left ideals</td>
+<td>columns, all $\cong \mathbb{C}^2$</td>
+<td>same; $\sigma$ pairs $L_W \leftrightarrow L_{W^{\perp}}$, none stable</td>
+</tr>
+<tr>
+<td>Minimal right ideals</td>
+<td>rows, all $\cong (\mathbb{C}^2)^{*}$</td>
+<td>same</td>
+</tr>
+<tr>
+<td>Jacobson radical</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Length as module over itself</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Base change $\otimes_{\mathbb{R}}\mathbb{C}$</td>
+<td>—</td>
+<td>$M_2(\mathbb{C}) \oplus M_2(\mathbb{C})$, not simple</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>Biquaternion algebra; $M_2(\mathbb{C})$ over $\mathbb{C}$, real dimension $8$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$e_0, e_1, e_2, e_3$</td>
+<td>Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary; $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center</td>
+</tr>
+<tr>
+<td>$p, q$</td>
+<td>Orthogonal idempotents, $p+q = e_0$, $pq = qp = 0$; the diagonal matrix units</td>
+</tr>
+<tr>
+<td>$x, y$</td>
+<td>Nilpotent off-diagonal elements, $x = \tfrac{i e_1 - e_2}{2}$, $y = \tfrac{i e_1 + e_2}{2}$, $x^2 = y^2 = 0$</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>Matrix units, $E_{11} = p$, $E_{12} = x$, $E_{21} = y$, $E_{22} = q$</td>
+</tr>
+<tr>
+<td>$L_W$</td>
+<td>Minimal left ideal defined by a line $W \subset \mathbb{C}^2$; $L_W \perp L_{W'}$ in the Hermitian sense</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^1(\mathbb{C})$</td>
+<td>The projective line parameterising the minimal left ideals</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>The real structure, pairing $L_W \leftrightarrow L_{W^{\perp}}$</td>
+</tr>
+<tr>
+<td>$\mathcal{J}$</td>
+<td>Jacobson radical; it is $0$ for $\mathbb{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982). The standard reference for the Peirce decomposition and the structure theory of finite-dimensional algebras.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em>, Graduate Texts in Mathematics 131 (Springer, 2nd ed. 2001). Simplicity, semisimplicity, the Jacobson radical, and matrix rings.</li>
+<li>Nathan Jacobson, <em>Basic Algebra II</em> (Dover, 2nd ed. 2009). Wedderburn–Artin theory and the radical.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002). Ring and module theory, central simple algebras.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001). The biquaternion algebra as $M_2(\mathbb{C})$ and its matrix and spinor models.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

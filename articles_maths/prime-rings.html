@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="prime-rings"><strong>Prime Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the second rung of the non-commutative chain of <em>Rings and Fields</em>, directly above <em>Semiprime Rings</em>, and it stands after the commutative half of the category, every rung of which is above it. Throughout, $A$ is a ring with $1 \neq 0$ <strong>not assumed commutative</strong>, and ideals are two-sided unless the contrary is said; the commutative theory of prime ideals is above, in <em>Commutative Rings</em>, and the default of the corpus is the commutative ring, not the ring of this article.</p>
+<p>A ring is <strong>prime</strong> when the product of two nonzero ideals is never zero. The condition is the ideal-theoretic weakening of the absence of zero divisors, and the article is organised around the exact sense in which it is a weakening: a ring with no zero divisors is prime, a matrix ring is prime with plenty of zero divisors, and a prime ring need not be either. Prime <strong>ideals</strong> are the ideals whose quotients are prime rings, so that the commutative dictionary — prime ideal, quotient is a domain — is replaced by the two-sided one, and the article records where the old dictionary fails. The semiprime rings of the rung above are shown to contain the prime ones properly; the rings with no zero divisors, in the commutative and in the general case, are <em>Integral Domains</em>, above this article in this category, and <em>Non-Commutative Domains</em>, below it.</p>
+<hr />
+<h2 id="prime-rings_1">Prime Rings</h2>
+<p><strong>Definition.</strong> A ring $A$ is <strong>prime</strong> if $IJ \neq 0$ for all nonzero two-sided ideals $I, J \trianglelefteq A$.</p>
+<p>Equivalently, $A$ is prime exactly when its zero ideal is prime in the sense of the section on prime ideals below.</p>
+<p><strong>Theorem.</strong> $A$ is prime if and only if for all nonzero $a, b \in A$ there is $x \in A$ with $axb \neq 0$.</p>
+<p><strong>Proof.</strong> Suppose first that $A$ is prime and let $a, b \neq 0$. The two-sided ideals $AaA$ and $AbA$ are nonzero, so their product is nonzero; and</p>
+<p>$$
+(AaA)(AbA) \subseteq A(aAb)A ,
+$$</p>
+<p>so $aAb \neq 0$ and there is $x$ with $axb \neq 0$. Conversely, suppose the displayed property holds, let $I, J$ be nonzero ideals and choose $a \in I$, $b \in J$ nonzero. Then $axb \in IJ$ for every $x \in A$, and $axb \neq 0$ for some $x$, so $IJ \neq 0$. $\square$</p>
+<p><strong>Corollary.</strong> A ring in which a product of nonzero elements is nonzero is prime. In particular every ring with no zero divisors is prime, in the commutative and in the general case; the classes themselves are <em>Integral Domains</em>, above this article in this category, and <em>Non-Commutative Domains</em>, below it.</p>
+<p><strong>Proof.</strong> If $ab \neq 0$ for all nonzero $a$ and $b$, take $x = 1$ in the criterion. $\square$</p>
+<p><strong>Theorem.</strong> Every prime ring is semiprime.</p>
+<p><strong>Proof.</strong> If $A$ is prime and $I \neq 0$ satisfies $I^2 = 0$, then the product of the two nonzero ideals $I$ and $I$ is zero, which contradicts primeness. $\square$</p>
+<p>The converse fails, and the standard witness is a product of two rings.</p>
+<p><strong>Proposition.</strong> A direct product $A_1 \times A_2$ of nonzero rings is not prime, while it is semiprime exactly when both factors are semiprime.</p>
+<p><strong>Proof.</strong> The ideals $I = A_1 \times (0)$ and $J = (0) \times A_2$ are nonzero and $IJ = 0$, so the product is not prime. An ideal of a product has square zero exactly when both of its projections do, by the characterisation of the semiprime rings in <em>Semiprime Rings</em>, above. $\square$</p>
+<p><strong>Example.</strong> The ring $k \times k$ is semiprime and not prime, and the matrix ring $M_n(F)$ is prime and contains the nonzero nilpotent element $E_{12}$ for $n \geq 2$, so a prime ring need not be reduced; the two conditions of the pair are ordered as</p>
+<p>$$
+\text{no zero divisors} \implies \text{prime} \implies \text{semiprime} ,
+$$</p>
+<p>and each implication is strict in the non-commutative case, the first witnessed by $M_n(F)$ and the second by $k \times k$. The class of <em>reduced</em> rings, those with no nonzero nilpotent element, lies below semiprime and is not comparable with prime, as the table below records.</p>
+<hr />
+<h2 id="prime-ideals">Prime Ideals</h2>
+<p><strong>Definition.</strong> A proper two-sided ideal $P \subsetneq A$ is <strong>prime</strong> if $IJ \subseteq P$ implies $I \subseteq P$ or $J \subseteq P$ for all two-sided ideals $I, J$, as in <em>Rings</em>, above. The set of prime ideals of $A$ is written $\operatorname{Spec} A$; in the commutative case it is the spectrum of <em>Commutative Rings</em>, above, considered there as a partially ordered set, and no further structure on it is used in this chain.</p>
+<p><strong>Theorem.</strong> Let $P \subsetneq A$ be two-sided. Then $P$ is prime if and only if the quotient ring $A/P$ is prime.</p>
+<p><strong>Proof.</strong> By the correspondence theorem of <em>Rings</em>, above, the two-sided ideals of $A/P$ are exactly the $\pi(I)$ for ideals $I$ of $A$ containing $P$, and $\pi(I)\pi(J) = \pi(IJ)$. Hence $A/P$ has nonzero ideals with zero product exactly when there are ideals $I, J \not\subseteq P$ with $IJ \subseteq P$, that is, exactly when $P$ is not prime. $\square$</p>
+<p><strong>Theorem.</strong> A proper two-sided ideal $P$ is prime if and only if for all $a, b \notin P$ there is $x \in A$ with $axb \notin P$.</p>
+<p><strong>Proof.</strong> Apply the criterion for a prime ring to the quotient $A/P$: the elements outside $P$ are exactly the nonzero elements of the quotient. $\square$</p>
+<p><strong>Corollary.</strong> The zero ideal $(0)$ is prime if and only if $A$ is prime; and a ring with no zero divisors has $(0)$ prime.</p>
+<p><strong>Proof.</strong> The first statement is the definition with $P = (0)$; the second follows from the corollary of the criterion above. $\square$</p>
+<p><strong>Remark.</strong> The commutative case is the familiar one: if $A$ is commutative, $P$ is prime exactly when $ab \in P$ implies $a \in P$ or $b \in P$, and $A/P$ is then a domain, in the terminology of <em>Integral Domains</em>, above this article in this category. In the general case the second half of that statement is false, and the next section shows how.</p>
+<p><strong>Proposition.</strong> Let $I \trianglelefteq A$. Then the prime ideals of $A/I$ are exactly the ideals $P/I$ with $P$ a prime ideal of $A$ containing $I$.</p>
+<p><strong>Proof.</strong> The correspondence theorem of <em>Rings</em>, above, gives the bijection between the ideals of $A/I$ and the ideals of $A$ containing $I$, and it preserves products, so $P$ is prime exactly when $P/I$ is. The case $I = P$ gives the criterion for a ring to be prime in terms of its zero ideal. $\square$</p>
+<h3 id="minimal-primes">Minimal Primes</h3>
+<p><strong>Definition.</strong> A prime ideal $P$ is <strong>minimal over an ideal</strong> $I$ if $P \supseteq I$ and no prime ideal strictly between $I$ and $P$ exists; $P$ is a <strong>minimal prime</strong> of $A$ if it is minimal over $(0)$.</p>
+<p><strong>Theorem.</strong> Every prime ideal contains a minimal prime ideal, and the intersection of the minimal primes of $A$ is $\operatorname{Nil}_*(A)$.</p>
+<p><strong>Proof.</strong> Let $P_{\lambda}$ be a chain of prime ideals under inclusion and let $I, J$ be two-sided ideals with $IJ \subseteq \bigcap_{\lambda} P_{\lambda}$, so that for every $\lambda$ we have $I \subseteq P_{\lambda}$ or $J \subseteq P_{\lambda}$. Suppose neither $I$ nor $J$ is contained in the intersection, and choose $\mu$ with $I \not\subseteq P_{\mu}$ and $\nu$ with $J \not\subseteq P_{\nu}$; then $J \subseteq P_{\mu}$ and $I \subseteq P_{\nu}$. Since the family is a chain, one of $P_{\mu}, P_{\nu}$ contains the other. If $P_{\mu} \subseteq P_{\nu}$ then $J \subseteq P_{\mu} \subseteq P_{\nu}$, contradicting $J \not\subseteq P_{\nu}$; if $P_{\nu} \subseteq P_{\mu}$ then $I \subseteq P_{\nu} \subseteq P_{\mu}$, contradicting $I \not\subseteq P_{\mu}$. Hence the intersection of a chain of prime ideals is prime.</p>
+<p>Zorn's lemma applied to the prime ideals <em>contained in</em> a given prime ideal, ordered by reverse inclusion, now produces one minimal among them: a chain in this order is a descending chain of primes, its intersection is prime by the argument just given, and it lies below the given prime. Hence every prime ideal contains a minimal prime. The intersection of the minimal primes is contained in every prime, hence in $\operatorname{Nil}_*(A)$; and it contains $\operatorname{Nil}_*(A)$, which lies in every prime ideal. The two intersections therefore coincide. $\square$</p>
+<p><strong>Corollary.</strong> $\operatorname{Nil}_*(A)$ is the intersection of the minimal prime ideals, and $A$ is semiprime exactly when its minimal primes intersect in zero.</p>
+<p><strong>Proof.</strong> The first statement is the theorem; the second is the criterion $\operatorname{Nil}_*(A) = 0$ of <em>Semiprime Rings</em>, above. $\square$</p>
+<h3 id="the-failure-of-the-commutative-correspondence">The Failure of the Commutative Correspondence</h3>
+<p><strong>Theorem.</strong> If $A/P$ has no zero divisors then $P$ is prime; the converse fails, and the failure is total: there are prime ideals whose quotients have as many zero divisors as a matrix ring.</p>
+<p><strong>Proof.</strong> If $A/P$ has no zero divisors then it is prime, by the corollary above, hence $P$ is prime. For the failure, take $A = M_n(F)$ with $n \geq 2$ and $P = (0)$: the ring is prime, by the example below, while $E_{12} \neq 0$ and $E_{12}^2 = 0$ show that it has zero divisors. $\square$</p>
+<p><strong>Example ($M_n(F)$).</strong> The only two-sided ideals of $M_n(F)$ are $(0)$ and the whole ring, by <em>Rings</em>, above. Hence the product of two nonzero ideals is the whole ring, which is nonzero, so $M_n(F)$ is prime for every $n \geq 1$, and for $n = 1$ it is the field $F$. For $n \geq 2$ it has zero divisors and nonzero nilpotent elements, so it is prime, semiprime and not reduced; and $(0)$ is its only proper prime ideal, so $\operatorname{Spec} M_n(F)$ has a single point.</p>
+<p><strong>Example.</strong> The ring of integers $\mathbb{Z}$ is prime, and every nonzero prime ideal of $\mathbb{Z}$ has a quotient with no zero divisors; the matrix example above is the standard demonstration that this behaviour is special to the commutative case.</p>
+<p><strong>Theorem.</strong> Let $S$ be a ring and $n \geq 1$. Then the matrix ring $M_n(S)$ is prime if and only if $S$ is prime.</p>
+<p><strong>Proof.</strong> Every two-sided ideal of $M_n(S)$ has the form $M_n(I)$ for a two-sided ideal $I \trianglelefteq S$, and $M_n(I)M_n(J) = M_n(IJ)$: the containment $M_n(I)M_n(J) \subseteq M_n(IJ)$ is immediate from the definition of the matrix product, the entries of a product of a matrix over $I$ and a matrix over $J$ being sums of products $uv$ with $u \in I$ and $v \in J$, and the reverse containment follows from $E_{i1} M E_{1j}$ picking out the $(i,j)$ entry of a matrix $M$. Hence $M_n(I)M_n(J) = 0$ if and only if $IJ = 0$, so $M_n(S)$ has two nonzero ideals with zero product exactly when $S$ does. $\square$</p>
+<p><strong>Corollary.</strong> $M_n(S)$ is semiprime if and only if $S$ is semiprime, and $M_n(S)$ has no zero divisors only when $n = 1$.</p>
+<p><strong>Proof.</strong> The first statement repeats the proof above with $I = J$; the second is the computation $E_{12}E_{12} = 0$ for $n \geq 2$. $\square$</p>
+<p><strong>Remark.</strong> Two further differences from the commutative case are worth recording. First, in the commutative case a proper ideal is maximal exactly when its quotient is a field, so that maximal ideals are prime; in the general case a maximal two-sided ideal is prime, by <em>Rings</em>, above, but its quotient only has no nonzero proper two-sided ideals, and $M_n(F)$ is the quotient of itself by $(0)$ and shows that this is weaker than being a field. Second, the intersection of the prime ideals is the lower nilradical of <em>Semiprime Rings</em>, above, whose computation in the non-commutative case uses the strong nilpotence of that article and not the elementwise nilpotence of the commutative case.</p>
+<hr />
+<h2 id="the-centre-of-a-prime-ring">The Centre of a Prime Ring</h2>
+<p><strong>Proposition.</strong> The centre $Z(A)$ of a prime ring is a commutative ring with no zero divisors.</p>
+<p><strong>Proof.</strong> Let $z, w \in Z(A)$ with $zw = 0$. The ideals $AzA$ and $AwA$ are two-sided, because $z$ and $w$ are central, and</p>
+<p>$$
+(AzA)(AwA) \subseteq A(zAw)A \subseteq AzwA = 0 .
+$$</p>
+<p>Since $A$ is prime, one of the two ideals is zero, and an ideal generated by a central element is zero only when that element is zero: hence $z = 0$ or $w = 0$. $\square$</p>
+<p><strong>Corollary.</strong> If $A$ is prime then $Z(A)$ is an integral domain, and $A$ is an algebra over the field $Z(A)$ when $Z(A)$ is a field. The centre of a prime ring and the structure of a division ring over its centre are taken up in <em>Division Rings</em>, below this article in this category.</p>
+<p><strong>Proof.</strong> The centre is a commutative ring with no zero divisors by the proposition, and it is a field exactly when every nonzero central element is invertible in $A$; the algebra structure is the multiplication by central elements. $\square$</p>
+<p><strong>Example.</strong> For $A = M_n(F)$ the centre is the ring of scalar matrices, isomorphic to $F$, and it is a field. For a commutative domain $R$, the centre is $R$ itself.</p>
+<hr />
+<h2 id="examples-and-non-examples">Examples and Non-Examples</h2>
+<p><strong>Example (rings with no zero divisors are prime).</strong> Let $A$ be a ring in which $ab \neq 0$ whenever $a, b \neq 0$. If $I$ and $J$ are nonzero ideals and $a \in I$, $b \in J$ are nonzero, then $ab \in IJ$ is nonzero, so $IJ \neq 0$ and $A$ is prime. The quaternion division ring $\mathbb{H}$, the free algebra $k\langle x_1, x_2\rangle$, the Weyl algebra $A_1(k)$ and the group ring of an ordered group — conjecturally, of any torsion-free group, by Kaplansky's zero divisor conjecture — are all of this kind, and are treated in <em>Non-Commutative Domains</em> and <em>Ore Domains and Division Rings of Fractions</em>, below this article in this category.</p>
+<p><strong>Example (prime, not with no zero divisors).</strong> $M_n(F)$ for $n \geq 2$, as above: prime, and its zero divisors are all the non-invertible matrices.</p>
+<p><strong>Example (semiprime, not prime).</strong> $k \times k$, and more generally any product of two nonzero rings; also the ring $k[x,y]/(xy)$, whose two nonzero ideals $(x)$ and $(y)$ have zero product. This is the example that separates the two rungs of the chain.</p>
+<h3 id="the-chain-of-classes">The Chain of Classes</h3>
+<p>The four conditions that meet at this rung are tabulated below, with a ring satisfying each and a ring failing it. The first three are defined for a general ring, and the fourth, reducedness, is the commutative rung of <em>Reduced Rings and the Nilradical</em>, above.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Definition</th>
+<th>Example</th>
+<th>Non-example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no zero divisors</td>
+<td>$ab = 0$ forces $a = 0$ or $b = 0$; the class is <em>Non-Commutative Domains</em>, below this article, and <em>Integral Domains</em>, above it</td>
+<td>$\mathbb{H}$</td>
+<td>$M_n(F)$, $n \geq 2$: $E_{12}^2 = 0$</td>
+</tr>
+<tr>
+<td>prime</td>
+<td>$IJ \neq 0$ for all nonzero two-sided ideals $I, J$</td>
+<td>$M_n(F)$, any $n \geq 1$</td>
+<td>$k \times k$: $(k \times 0)(0 \times k) = 0$</td>
+</tr>
+<tr>
+<td>semiprime</td>
+<td>no nonzero nilpotent two-sided ideal</td>
+<td>$k \times k$</td>
+<td>$k[x]/(x^2)$: $(x)$ has square zero</td>
+</tr>
+<tr>
+<td>reduced</td>
+<td>no nonzero nilpotent element</td>
+<td>$k[x,y]/(xy)$</td>
+<td>$\mathbb{Z}/4\mathbb{Z}$: $2 \neq 0$ and $2^2 = 0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The implications $\text{no zero divisors} \implies \text{prime} \implies \text{semiprime}$ hold, and each is strict, by the first two rows. Reducedness implies semiprimality, since a nilpotent ideal consists of nilpotent elements, and the example $M_2(F)$ of the second row shows that the converse fails outside the commutative case; in the commutative case reducedness and semiprimality coincide, by <em>Semiprime Rings</em>, above. Reducedness and primality are incomparable, the ring $k \times k$ being reduced and not prime, and $M_n(F)$ for $n \geq 2$ prime and not reduced.</p>
+<p><strong>Remark.</strong> The implication from prime to semiprime has no counterexample: a prime ring that is not semiprime would be a product of two nonzero ideals equal to zero, which is exactly what primality forbids. The separating example is therefore the semiprime ring $k \times k$, which is not prime.</p>
+<p><strong>Example (an ideal prime in the two-sided sense and not in the elementwise one).</strong> Let $A = M_2(F)$ and let $P = (0)$. The elementwise condition "$ab \in P$ implies $a \in P$ or $b \in P$" fails, since $E_{12} \neq 0$ and $E_{12}^2 = 0$; the ideal $P$ is nevertheless prime in the two-sided sense, by the example above. Hence the elementwise definition of primality from the commutative case is strictly stronger than the two-sided definition, and it is the two-sided definition that survives without commutativity.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A ring is prime when the product of two nonzero two-sided ideals is nonzero, equivalently when for all nonzero $a, b$ there is $x$ with $axb \neq 0$. A ring without zero divisors is prime, a matrix ring $M_n(F)$ with $n \geq 2$ is prime and has zero divisors, and a product of two nonzero rings is semiprime and not prime; so the chain of classes is: no zero divisors, then prime, then semiprime, with both implications strict in the non-commutative case. A two-sided ideal is prime exactly when its quotient ring is prime, and exactly when for all $a, b$ outside it there is $x$ with $axb$ outside it; the commutative correspondence between prime ideals and domains holds in one direction only, $M_n(F)$ by its zero ideal being the counterexample. The centre of a prime ring has no zero divisors, so it is a domain in the commutative sense when it is nonzero.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>A ring with $1 \neq 0$, not assumed commutative; the base of this article</td>
+</tr>
+<tr>
+<td>prime ring</td>
+<td>A ring with $IJ \neq 0$ for all nonzero two-sided ideals $I, J$</td>
+</tr>
+<tr>
+<td>prime ideal</td>
+<td>A proper two-sided ideal with $IJ \subseteq P \Rightarrow I \subseteq P$ or $J \subseteq P$</td>
+</tr>
+<tr>
+<td>semiprime</td>
+<td>Having no nonzero nilpotent two-sided ideal, of <em>Semiprime Rings</em></td>
+</tr>
+<tr>
+<td>reduced</td>
+<td>Having no nonzero nilpotent element, of <em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Spec} A$</td>
+<td>The set of prime ideals of $A$; in the commutative case the poset of <em>Commutative Rings</em></td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>The centre of $A$</td>
+</tr>
+<tr>
+<td>$aAb$, $axb$</td>
+<td>The two-sided product test for primeness</td>
+</tr>
+<tr>
+<td>$M_n(F)$, $E_{ij}$</td>
+<td>The matrix ring and its matrix units; $M_n(F)$ is prime for every $n \geq 1$</td>
+</tr>
+<tr>
+<td>$k \times k$</td>
+<td>A product of two nonzero rings: semiprime and not prime</td>
+</tr>
+<tr>
+<td>$k[x,y]/(xy)$</td>
+<td>A commutative semiprime ring that is not prime</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>The model prime ring whose quotients by nonzero primes have no zero divisors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for prime rings, prime ideals and the two-sided dictionary.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the prime ideals of a general ring and the topology on them.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the chain from domains to prime to semiprime rings and the matrix-ring counterexamples.</li>
+<li>T. Y. Lam, <em>Exercises in Classical Ring Theory</em> (Springer, 2nd ed. 2003), for the standard examples of prime rings that are not domains.</li>
+<li>Louis H. Rowen, <em>Ring Theory, Volume 1</em> (Academic Press, 1988), for prime rings, their centres and the prime spectrum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

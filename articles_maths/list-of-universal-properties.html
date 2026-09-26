@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Universal Properties — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-universal-properties"><strong>List of Universal Properties</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the objects of the corpus that are defined by a universal property, that is, by the maps into or out of them rather than by a construction. The pattern is the same in every case: an object is required, together with a map satisfying a condition, such that every other candidate factors through it uniquely. The corpus meets the pattern in the free objects, in the quotients, in the tensor products, in the localizations, in the completions and in the products and coproducts.</p>
+<p>Every entry points to the article that introduces the object and states the property that fixes it. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being a candidate for which the required factorisation fails, with the failure named and the article that records it.</p>
+<h2 id="free-objects">Free Objects</h2>
+<p>A <strong>free object</strong> is the solution of a universal arrow from a set to a forgetful functor: the free monoid on a set is the universal monoid the set maps into, the free group and the free module are its analogues for groups and for modules, and the free algebra is the universal algebra containing a given module. In each case the universal map is the insertion of the generators, and a homomorphism out of the free object is determined by its values on them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free monoid $X^*$</td>
+<td>the universal monoid on a set, with words as elements</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Free group $F(X)$</td>
+<td>the universal group on a set, with reduced words as elements</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Free abelian group</td>
+<td>the universal abelian group on a set, with rank as its invariant</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Free module $R^{(I)}$</td>
+<td>the universal $R$-module on a set, with basis the inserted elements</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>Free algebra $T(V)$</td>
+<td>the universal associative algebra on a module, the tensor algebra</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>Free commutative algebra $\operatorname{Sym}(V)$</td>
+<td>the universal commutative algebra on a module, the symmetric algebra</td>
+<td><em>The Symmetric Algebra</em></td>
+</tr>
+<tr>
+<td>Polynomial algebra $R[x_1,\dots,x_n]$</td>
+<td>the free commutative $R$-algebra on $n$ generators</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>Free product $G_1 * G_2$</td>
+<td>the coproduct of groups, the universal group receiving both factors</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Free product of algebras $A \sqcup B$</td>
+<td>the coproduct of associative algebras</td>
+<td><em>Tensor Products of Algebras</em></td>
+</tr>
+<tr>
+<td>Free operad</td>
+<td>the free monoid in symmetric sequences, with trees as components</td>
+<td><em>Operads</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}/n\mathbb{Z}$ as a $\mathbb{Z}$-module</td>
+<td>a module that fails to be free: it has no basis</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>Non-example: a group with a presentation $\langle X \mid R \rangle$, $R \neq 1$</td>
+<td>a quotient of the free group that fails freeness</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="products-coproducts-and-limits">Products, Coproducts and Limits</h2>
+<p>The <strong>product</strong> and the <strong>coproduct</strong> are the universal objects receiving the projections and carrying the injections; the <strong>initial</strong> and <strong>terminal</strong> objects are their empty cases, the <strong>equaliser</strong> and the <strong>coequaliser</strong> their diagrammatic forms, and the <strong>limit</strong> and the <strong>colimit</strong> the general construction. In the module-theoretic articles the coproduct is the direct sum and the product the direct product, and the two differ for infinite families. The <strong>pushout</strong> is the coproduct under a common base, which for commutative algebras is the tensor product.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initial and terminal objects</td>
+<td>the universal objects mapping out of and into every object</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Product $A \times B$</td>
+<td>the universal object with two projections</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Coproduct $A + B$</td>
+<td>the universal object with two injections</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Equaliser and coequaliser</td>
+<td>the universal object equalising or coequalising a parallel pair</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Limit and colimit</td>
+<td>the universal cone and cocone over a diagram</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Direct sum $\bigoplus_i M_i$</td>
+<td>the coproduct of modules, the finitely supported submodule of the product</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>Direct product $\prod_i M_i$</td>
+<td>the product of modules, with its coordinate projections</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>Pushout of commutative algebras</td>
+<td>the coproduct under a common base, given by $\otimes_C$</td>
+<td><em>Tensor Products of Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: $\prod_i M_i$ for infinite $I$</td>
+<td>the product is not the coproduct: its elements need not be finitely supported</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>Non-example: a set with two elements</td>
+<td>the coproduct in $\mathbf{Set}$ is the disjoint union, not the union</td>
+<td><em>Sets, Functions and Relations</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="quotients">Quotients</h2>
+<p>A <strong>quotient</strong> is a coequaliser: the quotient of a set by an equivalence relation, of a group by a normal subgroup, of a ring by a two-sided ideal, of a module by a submodule and of an algebra by a two-sided ideal are the universal objects in which the collapsed elements become equal. The <strong>normal closure</strong> of a set of relations is the kernel of the corresponding quotient of the free group, and a <strong>presentation</strong> records the quotient in the language of generators and relations.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quotient set $X/{\sim}$</td>
+<td>the universal set in which equivalent elements coincide</td>
+<td><em>Sets, Functions and Relations</em></td>
+</tr>
+<tr>
+<td>Quotient group $G/N$</td>
+<td>the universal group killing a normal subgroup</td>
+<td><em>Groups</em></td>
+</tr>
+<tr>
+<td>Abelianisation $G^{\mathrm{ab}}$</td>
+<td>the universal abelian quotient of a group</td>
+<td><em>Groups</em></td>
+</tr>
+<tr>
+<td>Quotient ring $R/I$</td>
+<td>the universal ring killing a two-sided ideal</td>
+<td><em>Rings</em></td>
+</tr>
+<tr>
+<td>Quotient module $M/N$</td>
+<td>the universal module killing a submodule</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Quotient algebra $A/I$</td>
+<td>the universal algebra killing a two-sided ideal</td>
+<td><em>Ideals and Quotients of Algebras</em></td>
+</tr>
+<tr>
+<td>Normal closure $\langle\langle R \rangle\rangle$</td>
+<td>the kernel of the quotient of $F(X)$ by the relations $R$</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Non-example: the quotient of a group by a non-normal subgroup</td>
+<td>the candidate fails: only normal subgroups carry a group structure on the cosets</td>
+<td><em>Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: the quotient of a ring by a one-sided ideal</td>
+<td>the candidate fails: the multiplication is not well defined on the cosets</td>
+<td><em>Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="tensor-products">Tensor Products</h2>
+<p>The <strong>tensor product</strong> is the universal object representing the bilinear maps; over a commutative ring it is the balanced product, and it is the underlying construction of the tensor, symmetric, exterior and Clifford algebras alike. The <strong>tensor power</strong>, the <strong>symmetric power</strong> and the <strong>exterior power</strong> are its quotients or its graded pieces, and each of them has the universal property of the multilinear maps it represents.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Balanced product $M \otimes_R N$</td>
+<td>the universal object representing the $R$-bilinear maps</td>
+<td><em>The Balanced Product</em></td>
+</tr>
+<tr>
+<td>Tensor product of algebras $A \otimes_R B$</td>
+<td>the universal algebra receiving two commuting images</td>
+<td><em>Tensor Products of Algebras</em></td>
+</tr>
+<tr>
+<td>Bimodule tensor $M_A \otimes_A {}_A N$</td>
+<td>the balanced product over a non-commutative ring, forcing centrality</td>
+<td><em>The Balanced Product over an Algebra</em></td>
+</tr>
+<tr>
+<td>Tensor power $V^{\otimes n}$</td>
+<td>the universal object for the $n$-multilinear maps</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>Symmetric power $\operatorname{Sym}^n M$</td>
+<td>the universal object for the symmetric $n$-multilinear maps</td>
+<td><em>Symmetric Powers</em></td>
+</tr>
+<tr>
+<td>Symmetric algebra $\operatorname{Sym}(M)$</td>
+<td>the quotient of the tensor algebra by $x \otimes y - y \otimes x$</td>
+<td><em>The Symmetric Algebra</em></td>
+</tr>
+<tr>
+<td>Exterior power $\Lambda^n M$</td>
+<td>the universal object for the alternating $n$-multilinear maps</td>
+<td><em>Exterior Powers</em></td>
+</tr>
+<tr>
+<td>Exterior algebra $\Lambda(M)$</td>
+<td>the quotient of the tensor algebra by $x \otimes x$</td>
+<td><em>The Exterior Algebra</em></td>
+</tr>
+<tr>
+<td>Clifford algebra $\mathrm{Cl}(V,Q)$</td>
+<td>the quotient of $T(V)$ by $x \otimes x - Q(x)$</td>
+<td><em>The Clifford Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: the tensor product over a non-commutative ring without a bimodule structure</td>
+<td>the candidate fails: $M \otimes_R N$ requires one side left and one right</td>
+<td><em>The Balanced Product over an Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="localizations-and-fraction-objects">Localizations and Fraction Objects</h2>
+<p>A <strong>localization</strong> inverts a chosen set of elements and is universal among rings in which they become units. Its two extreme cases are the <strong>fraction field</strong> of an integral domain, the initial field in which the domain embeds, and the <strong>local ring</strong> at a prime ideal; for modules the same construction is the localisation of a module. The non-commutative analogue is the division ring of fractions of an Ore domain.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Localization $S^{-1}R$</td>
+<td>the universal ring in which every element of $S$ becomes a unit</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>Fraction field $\operatorname{Frac}(R)$</td>
+<td>the initial field in which an integral domain embeds</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>Local ring $R_\mathfrak{p}$</td>
+<td>the localization at a prime ideal, with a single maximal ideal</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>Localization of a module $S^{-1}M$</td>
+<td>the universal module over $S^{-1}R$ receiving $M$</td>
+<td><em>Localization and Completion of Modules</em></td>
+</tr>
+<tr>
+<td>Total ring of fractions</td>
+<td>the localization inverting the nonzero non-zero-divisors</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>Division ring of fractions of an Ore domain</td>
+<td>the non-commutative analogue of the fraction field</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>Non-example: $\operatorname{Frac}(R)$ for a ring with zero divisors</td>
+<td>the candidate fails: the fraction field exists only for a domain</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>Non-example: a division ring of fractions for the free algebra</td>
+<td>the candidate fails: the free algebra is not an Ore domain</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="completions">Completions</h2>
+<p>A <strong>completion</strong> is the universal complete object into which the given object embeds densely. The corpus meets the algebraic $I$-adic completion — of a ring, of a module and, for $I = (x_1,\dots,x_n)$, of the polynomial algebra as the formal power series algebra — and, once a distance is available, the metric completion, the profinite completion and the Dedekind completion.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I$-adic completion $\hat A = \varprojlim A/I^k$</td>
+<td>the universal complete ring receiving $A$</td>
+<td><em>Localization and Completion of Modules</em></td>
+</tr>
+<tr>
+<td>Formal power series algebra $R[[x_1,\dots,x_n]]$</td>
+<td>the $I$-adic completion of the polynomial algebra</td>
+<td><em>Formal Power Series and Completion</em></td>
+</tr>
+<tr>
+<td>Associated graded algebra $\operatorname{gr}_{\mathfrak m} A$</td>
+<td>the graded object attached to an $I$-adic filtration</td>
+<td><em>Formal Power Series and Completion</em></td>
+</tr>
+<tr>
+<td>Metric completion</td>
+<td>the universal complete metric space receiving a metric space</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>Profinite completion</td>
+<td>the inverse limit of the finite quotients, universal among profinite groups</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>Dedekind completion</td>
+<td>the universal complete ordered field extension of an ordered field</td>
+<td><em>Real-Closed and Complete Ordered Fields</em></td>
+</tr>
+<tr>
+<td>Non-example: the category of fields</td>
+<td>the coproduct fails to exist there: $\mathbb{C} \otimes_\mathbb{R} \mathbb{C}$ is a ring but not a field</td>
+<td><em>Tensor Products of Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the objects of the corpus that are defined by a universal property. The free objects are the free monoid, the free group, the free abelian group, the free module, the free algebra, the free commutative algebra, the polynomial algebra, the free product and the free operad; the products and coproducts are the initial and terminal objects, the product, the coproduct, the equaliser and coequaliser, the limit and colimit, the direct sum and product and the pushout; the quotients are the quotient set, group, ring, module and algebra, with the abelianisation and the normal closure; the tensor constructions are the balanced product, the tensor product of algebras, the bimodule tensor, the tensor, symmetric and exterior powers and algebras and the Clifford algebra; the localizations are the localization of a ring, the fraction field, the local ring, the localization of a module, the total ring of fractions and the division ring of fractions of an Ore domain; and the completions are the $I$-adic completion, the formal power series algebra, the metric completion, the profinite completion and the Dedekind completion. The non-examples — the non-free module, the non-free presented group, the infinite direct product, the quotient by a non-normal subgroup, the quotient by a one-sided ideal, the tensor product over a non-commutative ring without a bimodule structure, the fraction field of a ring with zero divisors, the division ring of fractions of the free algebra and the missing coproduct in the category of fields — name the hypothesis that each fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X^*$</td>
+<td>free monoid on a set $X$</td>
+</tr>
+<tr>
+<td>$F(X)$</td>
+<td>free group on a set $X$</td>
+</tr>
+<tr>
+<td>$R^{(I)}$, $R^n$</td>
+<td>free module on the index set $I$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>the integers, the reals, the complex numbers</td>
+</tr>
+<tr>
+<td>$T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,Q)$</td>
+<td>tensor, symmetric, exterior and Clifford algebras</td>
+</tr>
+<tr>
+<td>$V^{\otimes n}$, $\operatorname{Sym}^n M$, $\Lambda^n M$</td>
+<td>tensor, symmetric and exterior powers</td>
+</tr>
+<tr>
+<td>$M \otimes_R N$</td>
+<td>balanced product over $R$</td>
+</tr>
+<tr>
+<td>$A \sqcup B$, $A \otimes_C B$</td>
+<td>free product and pushout of algebras</td>
+</tr>
+<tr>
+<td>$S^{-1}R$, $S^{-1}M$</td>
+<td>localizations of a ring and of a module</td>
+</tr>
+<tr>
+<td>$\operatorname{Frac}(R)$</td>
+<td>fraction field</td>
+</tr>
+<tr>
+<td>$R_\mathfrak{p}$</td>
+<td>localization at a prime ideal</td>
+</tr>
+<tr>
+<td>$\hat A = \varprojlim A/I^k$</td>
+<td>$I$-adic completion</td>
+</tr>
+<tr>
+<td>$R[[x_1,\dots,x_n]]$</td>
+<td>formal power series algebra</td>
+</tr>
+<tr>
+<td>$\bigoplus_i M_i$, $\prod_i M_i$</td>
+<td>direct sum and direct product</td>
+</tr>
+<tr>
+<td>$G_1 * G_2$, $G_1 *_H G_2$</td>
+<td>free product and free product with amalgamation</td>
+</tr>
+<tr>
+<td>$\langle X \mid R\rangle$, $\langle\langle R\rangle\rangle$</td>
+<td>presentation; normal closure of the relations</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em> (Springer, 2nd ed. 1998), for universal arrows, adjunctions and the limit and colimit constructions in their general form.</li>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the universal properties of the free objects, the tensor product and the symmetric and exterior algebras.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for the tensor, symmetric and exterior algebras and the localization and fraction field constructions.</li>
+<li>Michael Atiyah and Ian Macdonald, <em>Introduction to Commutative Algebra</em> (Addison–Wesley, 1969), for localization, the $I$-adic completion and the formal power series ring.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

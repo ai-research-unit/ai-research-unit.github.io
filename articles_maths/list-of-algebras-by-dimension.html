@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Algebras by Dimension — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-algebras-by-dimension"><strong>List of Algebras by Dimension</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article gathers the real algebras of dimension $1$, $2$, $4$ and $8$, with the classification in each dimension. The dimensions are the ones the doubling chain produces, and each carries a classification theorem: dimension $1$ has one division algebra, dimension $2$ has $\mathbb{C}$ as its only division algebra, Frobenius' theorem makes $\mathbb{H}$ the only four-dimensional real division algebra, and Hurwitz' theorem makes $\mathbb{O}$ the only eight-dimensional normed division algebra.</p>
+<p>Every entry points to the article that introduces the algebra and states the classification it belongs to. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being an algebra of the given dimension in which a product fails to be a division algebra, or an expected algebra that does not exist in the dimension, with the failure named and the article that records it.</p>
+<h2 id="dimension-1">Dimension 1</h2>
+<p>A one-dimensional real algebra is $\mathbb{R}$ with the product $xy = cxy$ for a scalar $c$; it is a field exactly for $c > 0$, up to isomorphism, and it is a division algebra exactly when $c \neq 0$. There is no other one-dimensional real division algebra, and $\mathbb{R}$ is the field the whole chain starts from.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>The property it has, and the classification</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>dimension $1$; the unique one-dimensional real division algebra; a field, ordered and complete</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$ as a real algebra</td>
+<td>the commutative associative unital algebra of dimension $1$</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$ as a Clifford algebra</td>
+<td>$\mathrm{Cl}_{0,0} \cong \mathbb{R}$; the start of the Clifford description</td>
+<td><em>The Number Systems as Clifford Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: the one-dimensional algebra with $xy = 0$</td>
+<td>fails the unit and the division property: it is a zero algebra</td>
+<td><em>Examples of Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: $F[x]$ as a one-dimensional algebra</td>
+<td>fails: the polynomial ring is infinite-dimensional over $F$</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="dimension-2">Dimension 2</h2>
+<p>The two-dimensional real algebras are $\mathbb{C}$, the split-complex numbers $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$, and the dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, so $\mathbb{R}[t]/(t^2 + 1)$, $\mathbb{R}[t]/(t^2 - 1)$ and $\mathbb{R}[t]/(t^2)$ exhaust the commutative associative unital cases. Only $\mathbb{C}$ is a field; $\mathbb{D}$ is reduced with zero divisors and $\mathbb{D}'$ is local with a nilpotent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>The property it has, and the classification</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>dimension $2$; the unique two-dimensional real division algebra; algebraically closed</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D} = \mathbb{R}[t]/(t^2-1)$</td>
+<td>dimension $2$; split-complex numbers, $\cong \mathbb{R}\times\mathbb{R}$; reduced with zero divisors, not a field</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>dimension $2$; dual numbers, local and non-reduced, nilpotent $\varepsilon$</td>
+<td><em>Dual Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>The three as quotients of $\mathbb{R}[t]$</td>
+<td>$\mathbb{R}[t]/(t^2+1)$, $\mathbb{R}[t]/(t^2-1)$ and $\mathbb{R}[t]/(t^2)$</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>Complex conjugation</td>
+<td>the nontrivial $\mathbb{R}$-automorphism of $\mathbb{C}$, fixing $\mathbb{R}$ pointwise</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$ as a Clifford algebra</td>
+<td>$\mathbb{C} \cong \mathrm{Cl}_{0,1}$, generated by one element with square $-1$</td>
+<td><em>The Number Systems as Clifford Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$ and $\mathbb{D}$ as the two real forms</td>
+<td>the definite and the split form of the same composition law</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>Non-example: the split-complex numbers as a field</td>
+<td>fails: $(1-t)(1+t) = 0$ with both factors nonzero</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: the dual numbers as reduced</td>
+<td>fails: $\varepsilon^2 = 0$ with $\varepsilon \neq 0$</td>
+<td><em>Dual Numbers Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="dimension-4">Dimension 4</h2>
+<p>The four-dimensional real algebras of the corpus are the quaternions $\mathbb{H}$ and the matrix algebra $M_2(\mathbb{R})$, which is the split quaternion algebra of the classical literature, $\mathrm{Cl}_{1,1}$; the corpus's split quaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ are eight-dimensional and are listed in the section below; the biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$ are four-dimensional over $\mathbb{C}$, hence eight-dimensional over $\mathbb{R}$. <strong>Frobenius' theorem</strong> states that $\mathbb{H}$ is the only four-dimensional real division algebra, and that every real division algebra is $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>The property it has, and the classification</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>dimension $4$; the unique four-dimensional real division algebra; associative but not commutative; centre $\mathbb{R}$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Split quaternion algebra of the classical literature, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$</td>
+<td>dimension $4$; the split form of the quaternion composition law; associative with zero divisors, not a division algebra</td>
+<td><em>The Number Systems as Clifford Algebras</em></td>
+</tr>
+<tr>
+<td>Warning: the split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>not a four-dimensional algebra: it is eight-dimensional, and appears in the table of dimension $8$</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>dimension $4$; simple, centre $\mathbb{R}$; zero divisors, not a division algebra</td>
+<td><em>Examples of Algebras</em></td>
+</tr>
+<tr>
+<td>Frobenius' theorem</td>
+<td>the classification $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ of the real division algebras</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>Quaternion units $i,j,k$</td>
+<td>$i^2=j^2=k^2=ijk=-1$; the quaternion relations with $ij=k$, $ji=-k$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Lipschitz quaternion lattice</td>
+<td>the torsion-free $\mathbb{Z}$-module of rank $4$ inside $\mathbb{H}$</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$ as a Clifford algebra</td>
+<td>$\mathbb{H} \cong \mathrm{Cl}_{0,2}$, generated by two elements with square $-1$</td>
+<td><em>The Number Systems as Clifford Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$ and $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ as the two real forms</td>
+<td>the definite and the split form of the same quaternion composition law</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>Non-example: a four-dimensional commutative real division algebra</td>
+<td>does not exist: Frobenius' theorem leaves only $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: the four-dimensional split quaternion algebra as a division algebra</td>
+<td>fails: it has zero divisors and is $M_2(\mathbb{R})$, not $\mathbb{H}$</td>
+<td><em>The Number Systems as Clifford Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="dimension-8">Dimension 8</h2>
+<p>The eight-dimensional real algebras of the corpus are the octonions $\mathbb{O}$, the split-octonions, the split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H} \cong \mathbb{H}\oplus\mathbb{H}$, the biquaternions $\mathbb{B}$ and the matrix algebra $M_2(\mathbb{C})$ over $\mathbb{R}$; the sedenions are not a division algebra. <strong>Hurwitz' theorem</strong> states that the only normed division algebras over $\mathbb{R}$ are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$, so $\mathbb{O}$ is the eight-dimensional case and the chain stops there.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>The property it has, and the classification</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Octonions $\mathbb{O}$</td>
+<td>dimension $8$; the unique normed eight-dimensional real division algebra; non-associative</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Octonion units $e_0,\dots,e_7$</td>
+<td>the multiplication table of the Fano plane; $e_0 = 1$ and $e_i^2 = -1$</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Split-octonions</td>
+<td>dimension $8$; a non-associative algebra with zero divisors and a split form</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>Split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>dimension $8$; centre $\mathbb{D}$; associative with zero divisors, $\cong \mathbb{H}\oplus\mathbb{H}$, and no nonzero nilpotents</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$ and the split octonions as the two real forms</td>
+<td>the definite and the split form; only the definite one is a division algebra</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>dimension $4$ over $\mathbb{C}$, $8$ over $\mathbb{R}$; $\cong M_2(\mathbb{C})$; associative with zero divisors</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ as a Clifford algebra</td>
+<td>$\mathbb{B} \cong \mathrm{Cl}_{3,0}$ and $\cong \mathrm{Cl}_{0,3}$ in the appropriate form</td>
+<td><em>The Biquaternion Algebra as a Clifford Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ as a complexification</td>
+<td>the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; real dimension $8$</td>
+<td><em>Quaternionic and Biquaternionic Modules</em></td>
+</tr>
+<tr>
+<td>Hurwitz' theorem</td>
+<td>the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$, and no others</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>Cayley–Dickson doubling</td>
+<td>the construction producing each dimension from the last and the property lost at each step</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>Non-example: the octonions as associative</td>
+<td>fails associativity: $(e_1 e_2)e_4 \neq e_1(e_2 e_4)$</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: an eight-dimensional associative real division algebra</td>
+<td>does not exist: Hurwitz' theorem and Frobenius' theorem leave only $\mathbb{O}$ at dimension $8$</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{O}$ as a Clifford algebra</td>
+<td>not a Clifford algebra: every Clifford algebra is associative, and $\mathbb{O}$ is not</td>
+<td><em>The Number Systems as Clifford Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-doubling-and-the-property-lost">The Doubling and the Property Lost</h2>
+<p>The four dimensions are linked by the <strong>Cayley–Dickson doubling</strong>: each algebra of dimension $2n$ is built from one of dimension $n$, and the list records the algebra produced and the property that does not survive. The doubling continues beyond dimension $8$, but the norm stops being multiplicative at the sedenions and no larger dimension contributes a normed division algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>The algebra produced</th>
+<th>The property lost at the step</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R} \to \mathbb{C}$</td>
+<td>dimension $2$</td>
+<td>order: $\mathbb{C}$ is not orderable</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C} \to \mathbb{H}$</td>
+<td>dimension $4$</td>
+<td>commutativity: $ij \neq ji$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H} \to \mathbb{O}$</td>
+<td>dimension $8$</td>
+<td>associativity: the associator is nonzero</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O} \to \mathbb{S}$</td>
+<td>dimension $16$</td>
+<td>the multiplicative norm, and with it the division property</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>The split variants</td>
+<td>dimensions $2$, $4$, $8$</td>
+<td>anisotropy of the norm, producing zero divisors</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-classification-in-each-dimension">The Classification in Each Dimension</h2>
+<p>The four dimensions carry four classification statements, and the table gathers them together with the algebra that is the extreme case.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>The algebras of the corpus</th>
+<th>The classification</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$\mathbb{R}$</td>
+<td>the only one-dimensional real division algebra</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$</td>
+<td>$\mathbb{C}$ the only two-dimensional division algebra; $\mathbb{R}\times\mathbb{R}$ and the dual numbers the two others</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\mathbb{H}$, $M_2(\mathbb{R})$</td>
+<td>Frobenius: $\mathbb{H}$ the only four-dimensional real division algebra; $M_2(\mathbb{R})$ is the split quaternion algebra of the classical literature</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$\mathbb{O}$, split-octonions, $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\oplus\mathbb{H}$, $\mathbb{B} \cong M_2(\mathbb{C})$</td>
+<td>Hurwitz: $\mathbb{O}$ the only eight-dimensional normed division algebra</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the real algebras of dimension $1$, $2$, $4$ and $8$ with the classification in each dimension. Dimension $1$ contains $\mathbb{R}$ and its degenerate products, with $\mathbb{R}$ the only division algebra. Dimension $2$ contains $\mathbb{C}$, the split-complex numbers $\mathbb{R}\times\mathbb{R}$ and the dual numbers, with $\mathbb{C}$ the only field and the only division algebra. Dimension $4$ contains the quaternions $\mathbb{H}$, Frobenius' unique four-dimensional real division algebra, together with the matrix algebra $M_2(\mathbb{R})$, which is the split quaternion algebra of the classical literature. Dimension $8$ contains the octonions $\mathbb{O}$, Hurwitz' unique eight-dimensional normed division algebra, together with the split-octonions, the split biquaternions $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\oplus\mathbb{H}$ and the biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$. The Cayley–Dickson doubling runs down the chain and the Hurwitz theorem brings it to a stop after dimension $8$. The non-examples — the zero one-dimensional algebra, the split-complex numbers and the dual numbers as non-fields, a commutative four-dimensional division algebra that does not exist, the four-dimensional split quaternion algebra as a non-division algebra, the octonions as non-associative, and an eight-dimensional associative division algebra that does not exist — each name the failure or the absence.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$</td>
+<td>real, complex, quaternion and octonion algebras</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>split-complex numbers, dual numbers</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>split biquaternions, of real dimension $8$</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>biquaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{S}$</td>
+<td>the sedenions</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>the integers, as in the rank-$4$ Lipschitz lattice</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$, $M_2(\mathbb{C})$</td>
+<td>matrix algebras</td>
+</tr>
+<tr>
+<td>$i, j, k$</td>
+<td>quaternion units</td>
+</tr>
+<tr>
+<td>$e_0,\dots,e_7$</td>
+<td>octonion basis</td>
+</tr>
+<tr>
+<td>$\mathbb{R}[t]/(t^2+1)$ etc.</td>
+<td>the quadratic quotients of the polynomial ring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ferdinand Georg Frobenius, <em>Über lineare Substitutionen und bilineare Formen</em> (Journal für die reine und angewandte Mathematik, 1878), for the classification of the real division algebras.</li>
+<li>Adolf Hurwitz, <em>Über die Composition der quadratischen Formen von beliebig vielen Variabeln</em> (Nachrichten von der Königlichen Gesellschaft der Wissenschaften zu Göttingen, 1898), for the theorem on the normed division algebras.</li>
+<li>Richard Schafer, <em>An Introduction to Nonassociative Algebras</em> (Dover, 1995), for the Cayley–Dickson construction and the octonions.</li>
+<li>Ian Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the Clifford-algebraic description of the real algebras of each dimension.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

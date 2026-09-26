@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topoi — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="topoi"><strong>Topoi</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A topos is a category that behaves like the category of sets: it has finite limits and colimits, it is cartesian closed, it has a distinguished object classifying the subobjects of its objects, and every equivalence relation in it is effective. The notion has two forms. An <strong>elementary topos</strong> is defined by those category-theoretic axioms alone, and its internal language is intuitionistic; a <strong>Grothendieck topos</strong> is a category equivalent to the category of sheaves on a site, and the two notions agree on the Grothendieck toposes, every one of which is elementary. Grothendieck introduced the notion for the cohomological study of schemes, and the elementary notion, isolated by Lawvere and Tierney, turned it into a foundation for mathematics alternative to set theory. For the algebra of this Part the important point is different: a Grothendieck topos is the correct general home of the sheaf-theoretic algebra, it carries a subobject classifier in place of a two-element set, and the functors between toposes that preserve its structure are the <strong>geometric morphisms</strong>, adjoint pairs whose left adjoint is left exact.</p>
+<p>This article develops presheaves and sheaves on a site, the definition of a Grothendieck topos and the examples of the category of sets, the presheaf toposes, the toposes of group and monoid actions, and the slices; the elementary topos axioms with the subobject classifier, the power objects and the internal logic; the geometric morphisms, points and the 2-categorical structure; Giraud's characterisation of the Grothendieck toposes by intrinsic axioms; the classifying topos of a theory and the relation between toposes and models; and the comparison between a topological space and its topos of sheaves, which is developed, other articles. It follows <em>Module Categories</em> and <em>Abelian and Grothendieck Categories</em>, and it prepares; the first of these is not covered here and is named only as a forward reference.</p>
+<p>Throughout, a category is written $\mathcal{C}$ and the presheaf category is $\widehat{\mathcal{C}}=\operatorname{Fun}(\mathcal{C}^{\mathrm{op}},\mathbf{Set})$. Sheaves are presheaves taking values in sets, or in abelian groups when an abelian structure is present, and the site-theoretic machinery is defined in line, as standard mathematics, since the detailed development lies outside this article; the standard source is cited. Toposes are treated as categories, and the algebraic examples — the topos of sets, of $G$-sets, of presheaves on a small category — are the ones used. No distance, no open set and no topological space as a structure is used; the words <em>open</em>, <em>cover</em> and <em>continuous</em> are used here in their site-theoretic and categorical senses only, and the topological realisation of a site, when it exists, is deferred to Part II.</p>
+<h2 id="sites-presheaves-and-sheaves">Sites, Presheaves and Sheaves</h2>
+<p><strong>Definition.</strong> A <strong>sieve</strong> on an object $c$ of a category $\mathcal{C}$ is a set $S$ of morphisms with codomain $c$ such that if $g\in S$ and $hf$ can be formed with $g=hf$ then $hf\in S$; equivalently a subfunctor of the representable functor $\operatorname{Hom}_{\mathcal{C}}(-,c)$. A <strong>Grothendieck topology</strong> on $\mathcal{C}$ assigns to each $c$ a set $J(c)$ of sieves on $c$, the <strong>covering sieves</strong>, such that: the maximal sieve $\operatorname{Hom}_{\mathcal{C}}(-,c)$ lies in $J(c)$; if $S\in J(c)$ and $f:d\to c$ then the pullback sieve $f^*S\in J(d)$; and if $S\in J(c)$ and $R$ is a sieve on $c$ whose pullback along every $f\in S$ lies in $J(d)$, then $R\in J(c)$. The pair $(\mathcal{C},J)$ is a <strong>site</strong>.</p>
+<p><strong>Definition.</strong> A <strong>presheaf</strong> on $\mathcal{C}$ is a functor $F:\mathcal{C}^{\mathrm{op}}\to\mathbf{Set}$, and a presheaf is a <strong>sheaf</strong> for $J$ if for every covering sieve $S\in J(c)$ the natural map $F(c)\to\varprojlim_{f\in S}F(d)$ is a bijection, the limit being taken over the objects and morphisms of the sieve. A presheaf is <strong>separated</strong> if these maps are injective for all covering sieves. The category of sheaves is written $\mathbf{Sh}(\mathcal{C},J)$ and its objects are the sheaves; the <strong>global sections</strong> of a sheaf $F$ on a site with a terminal object is the value $F(1)$ at the terminal object.</p>
+<p><strong>Proposition.</strong> The inclusion $\mathbf{Sh}(\mathcal{C},J)\to\widehat{\mathcal{C}}$ has a left adjoint, the <strong>sheafification</strong> functor, denoted $F\mapsto F^{+}$ or $F\mapsto aF$; it is left exact, it sends a presheaf to the sheaf with the same separated quotient, and the unit of the adjunction is an isomorphism exactly on the sheaves. The category of sheaves is complete and cocomplete, with limits formed as in the presheaf category and colimits formed by sheafifying the presheaf colimit.</p>
+<p><em>Proof (in outline).</em> The sheafification is constructed by the plus construction: $F^{+}(c)$ is the filtered colimit over the covering sieves $S$ of the compatible families of sections over $S$, and $F^{+}$ is a sheaf for the topology generated by $J$ in one step when $F$ is separated and in two steps in general. The left exactness is the key property of a Grothendieck topology and follows from the stability of the covering sieves under pullback; the limit and colimit statements follow from the adjunction and from the exactness, since limits in a full reflective subcategory with a left exact reflector are computed in the ambient category. $\square$</p>
+<p><strong>Example.</strong> On a topological space the open sets with the usual coverings form a site and the sheaves are the sheaves in the classical sense, with $\varprojlim$ over the sieve equal to the equalizer of the restriction maps of a cover; this identification and the topological cohomology it produces belong to Part II, and the site-theoretic form is developed. On a small category with the <strong>trivial topology</strong>, whose only covering sieves are the maximal ones, every presheaf is a sheaf; with the <strong>chaotic topology</strong>, in which every sieve is a covering, the sheaves are the presheaves that are constant on the connected components of the category.</p>
+<h2 id="grothendieck-toposes">Grothendieck Toposes</h2>
+<p><strong>Definition.</strong> A <strong>Grothendieck topos</strong> is a category $\mathcal{E}$ equivalent to $\mathbf{Sh}(\mathcal{C},J)$ for some small site $(\mathcal{C},J)$:
+$$
+\mathcal{E}\simeq\mathbf{Sh}(\mathcal{C},J).$$ A <strong>morphism of sites</strong> $(\mathcal{C},J)\to(\mathcal{D},K)$ is a functor $\mathcal{C}\to\mathcal{D}$ carrying covering sieves to covering sieves, in the sense that the functor induces an adjoint pair of functors between the sheaf categories with the left adjoint left exact; the resulting comparison of toposes is a geometric morphism in the sense defined below.</p>
+<p><strong>Theorem (Giraud).</strong> A category $\mathcal{E}$ is a Grothendieck topos if and only if it satisfies the following intrinsic conditions:
+1. $\mathcal{E}$ is cocomplete;
+2. $\mathcal{E}$ has finite limits and the finite limits commute with the filtered colimits;
+3. the coproducts are disjoint, and the coproduct injections are stable under pullback;
+4. every equivalence relation in $\mathcal{E}$ is effective, and the quotient of an equivalence relation is stable under pullback;
+5. $\mathcal{E}$ has a small generating set.</p>
+<p>A category satisfying these axioms is equivalent to the category of sheaves on a small site, and the site can be taken to be a full subcategory of $\mathcal{E}$ with the topology induced by the epimorphic families.</p>
+<p><em>Proof (in outline).</em> The necessity of the axioms is checked in a sheaf category: the coproducts are computed by sheafifying the presheaf coproducts, which gives disjointness and stability, and the effectiveness of the equivalence relations follows from the description of the sheaves as a full subcategory of the presheaves closed under the relevant quotients. For the sufficiency, the generating set produces a small full subcategory $\mathcal{C}$ and the axioms make the restricted Yoneda functor an equivalence onto the sheaves on $\mathcal{C}$. $\square$</p>
+<p><strong>Example.</strong> The category $\mathbf{Set}$ is a Grothendieck topos, the topos of sheaves on the one-point site; the presheaf category $\widehat{\mathcal{C}}=\operatorname{Fun}(\mathcal{C}^{\mathrm{op}},\mathbf{Set})$ is a Grothendieck topos, the sheaves on $\mathcal{C}$ with the trivial topology; the topos of a group $G$ is the category $G\text{-}\mathbf{Set}$ of sets with an action of $G$, which is the presheaf topos on the groupoid with one object and morphisms $G$; the topos of a monoid $M$ is the category of $M$-sets. Each of these is a category of "sets with structure", and the Yoneda embedding exhibits the objects of $\mathcal{C}$ as the representable sheaves.</p>
+<p><strong>Proposition.</strong> Every Grothendieck topos is a locally presentable category, and the sheafification functor exhibits it as a left exact reflection of a presheaf category; consequently it has all small limits and colimits, it is well-powered and co-well-powered, and the Yoneda embedding of the underlying small category extends to an embedding of $\mathcal{E}$ into a presheaf category. The topos of sheaves on a site contains the site's small category as the full subcategory of representable sheaves when the topology is subcanonical, that is, when every representable presheaf is a sheaf.</p>
+<p><em>Proof.</em> The reflectivity and local presentability are the previous proposition together with the local presentability of the presheaf category, and the subcanonicity is the definition: a topology is subcanonical when the representable presheaves satisfy the sheaf condition. The trivial topology is subcanonical, since with only the maximal sieve covering there is nothing to check; the canonical topology is subcanonical by construction, being the finest topology for which every representable presheaf is a sheaf; the chaotic topology is subcanonical only when every representable presheaf is constant on the connected components of $\mathcal{C}$, which fails as soon as $\mathcal{C}$ has a non-identity morphism. The regular, the étale and the Zariski topologies of algebraic geometry are subcanonical, and their study belongs to Part II. $\square$</p>
+<h2 id="elementary-toposes-and-internal-logic">Elementary Toposes and Internal Logic</h2>
+<p><strong>Definition.</strong> An <strong>elementary topos</strong> is a category $\mathcal{E}$ with finite limits, with a subobject classifier, and with exponentials: there is an object $\Omega$ and a morphism $\mathrm{true}:1\to\Omega$ such that every monomorphism $m:A\to B$ is the pullback of $\mathrm{true}$ along a unique morphism $\chi_m:B\to\Omega$, the <strong>characteristic morphism</strong> of $m$; and for all objects $A,B$ there is an object $B^A$ with a natural bijection $\operatorname{Hom}(C\times A,B)\cong\operatorname{Hom}(C,B^A)$.</p>
+<p><strong>Proposition.</strong> Every Grothendieck topos is an elementary topos. In a Grothendieck topos the subobject classifier is the sheaf $\Omega$ of <strong>closed sieves</strong>: a sieve $R$ on $c$ is closed if, for every $f:d\to c$, the pullback sieve $f^*R$ covering $d$ forces $f \in R$, and $\Omega(c)$ is the set of closed sieves on $c$, with the restriction maps given by pullback of sieves. Thus $\Omega$ is the sheafification of the presheaf of all sieves, and the characteristic morphism of a subobject $A\to B$ sends an element $b$ of a representable sheaf to the sieve of the arrows along which $A$ is the whole of $B$. The topology is recovered from $\Omega$: the covering sieves on $c$ are those containing the restriction to $c$ of the units of the corresponding closed sieves.</p>
+<p><em>Proof.</em> The presheaf of all sieves is separated for every Grothendieck topology, and its sheafification corepresents the subobjects of a representable sheaf; the general case follows by the sheaf condition and the colimit description of arbitrary objects, since the subobjects of a colimit of representables are computed from the subobjects of the representables by the exactness of the reflection. The exponentials follow from the cartesian closedness of the sheaf category, which is inherited from the presheaf category and preserved by the sheafification. $\square$</p>
+<p>The sheafification adjunction is written
+$$
+a\dashv i,\qquad a:\widehat{\mathcal{C}}\to\mathbf{Sh}(\mathcal{C},J),\qquad i:\mathbf{Sh}(\mathcal{C},J)\to\widehat{\mathcal{C}},
+$$
+with $a$ left exact and $i$ the inclusion of the full subcategory of sheaves.</p>
+<p><strong>Definition.</strong> The <strong>internal language</strong> of an elementary topos is the many-sorted intuitionistic type theory whose sorts are the objects of $\mathcal{E}$ and whose terms are the morphisms; a formula with a free variable of a sort $A$ is interpreted as a subobject of $A$, the connectives by the lattice operations on the subobjects, the quantifiers by the adjoints to the pullback functors, and the equality by the diagonal. The subobjects of an object form a <strong>Heyting algebra</strong>, and the logic is intuitionistic because the lattice is not assumed Boolean; the topos is <strong>Boolean</strong> when every subobject has a complement.</p>
+<p><strong>Example.</strong> The topos $\mathbf{Set}$ has the two-element subobject classifier and classical logic; the topos of $G$-sets is Boolean when $G$ is trivial; a topos of sheaves on a site with a nontrivial covering has an intuitionistic logic, because the closed sieves need not have complements. The <strong>effective topos</strong>, which is not a Grothendieck topos, is the standard example of an elementary topos with a non-classical internal logic.</p>
+<h2 id="geometric-morphisms-and-points">Geometric Morphisms and Points</h2>
+<p><strong>Definition.</strong> A <strong>geometric morphism</strong> $f:\mathcal{F}\to\mathcal{E}$ between toposes is an adjoint pair of functors
+$$
+f^*\dashv f_*,\qquad f^*:\mathcal{E}\to\mathcal{F},\qquad f_*:\mathcal{F}\to\mathcal{E},
+$$
+with $f^*$ left exact, that is, preserving finite limits. The functor $f^*$ is the <strong>inverse image</strong> and $f_*$ the <strong>direct image</strong>. The <strong>points</strong> of a topos $\mathcal{E}$ are the geometric morphisms $\mathbf{Set}\to\mathcal{E}$, equivalently the flat left exact functors $\mathcal{E}\to\mathbf{Set}$, and a topos with enough points is one whose points jointly reflect the isomorphisms.</p>
+<p><strong>Proposition.</strong> The toposes and the geometric morphisms form a 2-category whose 2-cells are the natural transformations between the inverse image functors; the composition is the composition of adjunctions. A geometric morphism is an equivalence exactly when $f^*$ is an equivalence, and the inverse image of a morphism of sites is left exact by definition. For a Grothendieck topos the direct image $f_*$ has a further right adjoint exactly when $f$ is <strong>proper</strong> in the sense of the site-theoretic properness, and this notion is the site-theoretic counterpart of properness for maps of spaces, treated in Part II.</p>
+<p><em>Proof.</em> The composition of two left exact left adjoints is left exact, so the geometric morphisms compose; the 2-cells are compatible with the unit and counit, and the identity is the identity adjunction. The statements about properness are the site-theoretic form of the classical topological properness and are cited, not used. $\square$</p>
+<p><strong>Definition.</strong> The <strong>classifying topos</strong> of a geometric theory $\mathbb{T}$ is a topos $\mathcal{E}_{\mathbb{T}}$ with a model $M$ of $\mathbb{T}$ in $\mathcal{E}_{\mathbb{T}}$, the <strong>generic model</strong>, such that for every topos $\mathcal{F}$ the models of $\mathbb{T}$ in $\mathcal{F}$ correspond naturally to the geometric morphisms $\mathcal{F}\to\mathcal{E}_{\mathbb{T}}$:
+$$
+\operatorname{Hom}_{\mathrm{Topos}}(\mathcal{F},\mathcal{E}_{\mathbb{T}})\cong\mathbb{T}\text{-}\mathrm{Mod}(\mathcal{F}).$$ The classifying topos of the theory of objects is the presheaf topos on the category of finite sets, the classifying topos of the theory of groups is the topos of presheaves on the category of finitely presented groups, and the classifying topos of an algebraic theory is the topos of its covariant set-valued functors.</p>
+<p><strong>Example.</strong> The classifying topos of the theory of a single object is $\widehat{\mathbf{FinSet}}$, whose points are the sets; the classifying topos of the theory of a field extension of degree $n$ is the topos of presheaves on the category of finite free algebras, and the generic model is the universal extension. These examples show how a topos encodes a theory and how the geometric morphisms encode the models, which is the logical face of the categorical construction.</p>
+<h2 id="points-and-coherence">Points and Coherence</h2>
+<p><strong>Definition.</strong> A site $(\mathcal{C},J)$ is a <strong>coherent site</strong> when $\mathcal{C}$ has finite limits and the topology $J$ is generated by finite effective-epimorphic families, and a <strong>coherent topos</strong> is the topos of sheaves on a coherent site; equivalently, a coherent topos is the classifying topos of a geometric theory whose axioms are geometric implications between finite conjunctions, finite disjunctions and existential quantifications of atomic formulae.</p>
+<p><strong>Proposition.</strong> A point of $\mathbf{Sh}(\mathcal{C},J)$ is the same thing as a functor $F:\mathcal{C}\to\mathbf{Set}$ whose category of elements is filtered and that carries every sieve of $J$ to a jointly epimorphic family: the inverse image of the point is the left Kan extension of $F$ along the Yoneda embedding, and its left exactness is exactly the filteredness of the category of elements. Consequently a presheaf topos on a nonempty small category has points, since the representable functors are flat and their categories of elements have terminal objects, and the points of a topos of sheaves on a site are the flat functors on the site that are continuous for its topology.</p>
+<p><em>Proof (in outline).</em> A left exact left adjoint $\mathcal{E}\to\mathbf{Set}$ is determined by its restrictions to the representable sheaves, and these assemble into a functor on $\mathcal{C}$; a functor on $\mathcal{C}$ extends to a left adjoint on the presheaf category by left Kan extension, and the left Kan extension is left exact exactly when the category of elements is filtered, which is the standard characterisation of flatness. Continuity with respect to $J$ is the condition that the covering sieves become epimorphic families, and it is what makes the extension factor through sheafification. $\square$</p>
+<p><strong>Theorem (Deligne).</strong> A coherent topos has enough points: a morphism $u$ of a coherent topos is an isomorphism if and only if its image $p^*(u)$ under every point $p$ is an isomorphism.</p>
+<p><em>Proof (in outline).</em> The class of morphisms inverted by all the points is closed under the operations of the coherent structure, and the coherent topology is generated by the finite effective-epimorphic families, so it suffices to test the representable sheaves of the site; the filteredness of the point functors and the finiteness of the covering families then give the comparison, and the argument is the standard one of Deligne in the theory of coherent toposes. $\square$</p>
+<p><strong>Theorem (Barr).</strong> Every Grothendieck topos admits a surjective geometric morphism from a Boolean topos, that is, from a topos whose subobject lattices are Boolean algebras. Consequently a geometric implication that holds in every model in $\mathbf{Set}$ holds in every Grothendieck topos.</p>
+<p><strong>Remark.</strong> The two theorems are the site-theoretic counterparts of classical completeness: Deligne's theorem restricts the class of toposes for which the points separate morphisms, and Barr's theorem supplies, for an arbitrary topos, a Boolean topos covering it in which the set-theoretic reasoning may be carried out and then descended along the surjection. The topological case, in which the site comes from a space and the points are the classical points of that space, and the cohomological use of the resulting sheaves, belong to Part II, where they are treated in <em>Sheaves and Cohomology</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A Grothendieck topos is the category of sheaves on a site, that is, on a small category with a Grothendieck topology of covering sieves; the inclusion of the sheaves into the presheaves has a left exact left adjoint, the sheafification, and the category of sheaves is complete and cocomplete with limits computed in the presheaves. Giraud's theorem characterises the Grothendieck toposes intrinsically by cocompleteness, finite limits commuting with filtered colimits, disjoint and stable coproducts, effective equivalence relations, and a small generating set. Every Grothendieck topos is an elementary topos: it is cartesian closed, it has a subobject classifier given by the closed sieves, and it carries an internal intuitionistic type theory whose subobjects form Heyting algebras. The geometric morphisms are the adjoint pairs with left exact inverse image, they organise the toposes into a 2-category, the points are the geometric morphisms from the topos of sets, and the classifying topos of a geometric theory represents its models as geometric morphisms into a fixed topos.</p>
+<p>The examples used here are the algebraic ones: the topos of sets, the presheaf toposes, the toposes of group and monoid actions, the slices and the classifying toposes of algebraic theories. A site coming from a topological space yields the classical category of sheaves, and the comparison between the site-theoretic and the topological cohomology, together with the properness and the geometric morphisms of spaces, belongs to Part II, where the distance and the open sets are available.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{C}$</td>
+<td>a small category, the underlying category of a site</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>a Grothendieck topology, the covering sieves</td>
+</tr>
+<tr>
+<td>$(\mathcal{C},J)$</td>
+<td>a site</td>
+</tr>
+<tr>
+<td>$\widehat{\mathcal{C}}$</td>
+<td>presheaf category $\operatorname{Fun}(\mathcal{C}^{\mathrm{op}},\mathbf{Set})$</td>
+</tr>
+<tr>
+<td>$\mathbf{Sh}(\mathcal{C},J)$</td>
+<td>category of sheaves on the site</td>
+</tr>
+<tr>
+<td>$aF=F^{+}$</td>
+<td>sheafification of a presheaf</td>
+</tr>
+<tr>
+<td>$\mathcal{E},\mathcal{F}$</td>
+<td>toposes</td>
+</tr>
+<tr>
+<td>$\Omega$</td>
+<td>subobject classifier</td>
+</tr>
+<tr>
+<td>$\chi_m$</td>
+<td>characteristic morphism of a subobject</td>
+</tr>
+<tr>
+<td>$B^A$</td>
+<td>exponential object</td>
+</tr>
+<tr>
+<td>$f^*\dashv f_*$</td>
+<td>geometric morphism, inverse and direct image</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>terminal object</td>
+</tr>
+<tr>
+<td>$F:\mathcal{C}\to\mathbf{Set}$ (flat, continuous)</td>
+<td>a point of the topos $\mathbf{Sh}(\mathcal{C},J)$</td>
+</tr>
+<tr>
+<td>$p^*\dashv p_*$</td>
+<td>the point $p:\mathbf{Set}\to\mathcal{E}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, Alexander Grothendieck and Jean-Louis Verdier, <em>Théorie des topos et cohomologie étale des schémas (SGA 4)</em> (Springer Lecture Notes in Mathematics 269, 270, 305, 1972–1973), for the original theory of sites and toposes.</li>
+<li>Francis Borceux, <em>Handbook of Categorical Algebra 3: Categories of Sheaves</em> (Cambridge University Press, 1994), for the systematic treatment of sheaves, toposes and geometric morphisms.</li>
+<li>Peter T. Johnstone, <em>Sketches of an Elephant: A Topos Theory Compendium</em> (Oxford University Press, 2002), for the reference account of elementary and Grothendieck toposes.</li>
+<li>Peter T. Johnstone, <em>Topos Theory</em> (Academic Press, 1977), for the classical development and the classifying toposes.</li>
+<li>Saunders Mac Lane and Ieke Moerdijk, <em>Sheaves in Geometry and Logic: A First Introduction to Topos Theory</em> (Springer, 1992), for the internal logic and the geometric morphisms.</li>
+<li>Jean-Pierre Serre, "Faisceaux algébriques cohérents", <em>Annals of Mathematics</em> 61 (1955), 197–278, for the sheaf-theoretic methods on which the topological comparison rests.</li>
+<li>William Lawvere (editor), <em>Toposes, Algebraic Geometry and Logic</em> (Springer Lecture Notes in Mathematics 274, 1972), for the elementary topos axioms and the internal language.</li>
+<li>Myles Tierney, "Sheaf theory and the continuum hypothesis", in <em>Toposes, Algebraic Geometry and Logic</em> (Springer Lecture Notes in Mathematics 274, 1972), for the elementary topos and the exactness of the reflector.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

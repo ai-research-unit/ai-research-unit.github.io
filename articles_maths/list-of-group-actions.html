@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Group Actions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-group-actions"><strong>List of Group Actions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the actions by which the corpus realises an abstract group as transformations of a set, an order, a vector space, an algebra or a field. For each action the list records the orbit, the stabiliser and the representation the action furnishes — the permutation representation, the defining representation, the regular representation, the Galois action or the action on a lattice of subgroups — together with the article that introduces it.</p>
+<p>Every entry points to the article that introduces the action. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being an action that fails faithfulness or transitivity where its neighbour has it, with the failure named and the article that records it.</p>
+<h2 id="actions-on-sets">Actions on Sets</h2>
+<p>An <strong>action</strong> of $G$ on a set $X$ is a homomorphism $\rho : G \to \operatorname{Sym}(X)$; the <strong>orbit</strong> of a point is its equivalence class under the action, the <strong>stabiliser</strong> is the subgroup fixing it, and the orbit–stabiliser theorem relates the two to the order of the group. The action is <strong>faithful</strong> when the kernel of $\rho$ is trivial; the left regular action shows every group embeds in a symmetric group, which is Cayley's theorem.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Orbit, stabiliser and representation</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left regular action of $G$ on itself</td>
+<td>one orbit $G$; stabiliser trivial; the regular permutation representation, giving Cayley's embedding $G \hookrightarrow \operatorname{Sym}(G)$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Conjugation action of $G$ on itself</td>
+<td>orbits the conjugacy classes; stabiliser $C_G(g)$, the centraliser; the permutation representation on conjugacy classes</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on the cosets $G/H$</td>
+<td>one orbit; stabiliser a conjugate of $H$; a transitive $G$-set</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on its subgroups by conjugation</td>
+<td>orbits the conjugacy classes of subgroups; stabiliser the normaliser $N_G(H)$</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on the power set of a $G$-set</td>
+<td>orbits the sets of $k$-subsets; the induced permutation representation</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on itself by left multiplication, a monoid action</td>
+<td>the monoid of endomorphisms; $\operatorname{Aut}(X) = \operatorname{End}(X)^\times$ for a structure $X$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Permutation representation</td>
+<td>the homomorphism $\rho : G \to \operatorname{Sym}(X)$; faithful exactly when $\ker\rho = 1$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: the trivial action of a nontrivial group</td>
+<td>fails faithfulness: the kernel is the whole group</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: the action of $S_n$ on $\{1,\dots,n\}$ for $n \geq 3$</td>
+<td>fails to be regular: the stabiliser of a point has order $(n-1)!$, not $1$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="actions-on-lattices-of-subgroups">Actions on Lattices of Subgroups</h2>
+<p>The action-theoretic proofs of finite group theory use carefully chosen sets: the Sylow theorems apply the orbit–stabiliser theorem to the conjugation action on the Sylow subgroups, and the class equation counts the orbits of the conjugation action on the group itself. These actions act on a lattice of subgroups, ordered by inclusion, which is where the corpus meets the action of a group on an order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Orbit, stabiliser and representation</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conjugation action on $\operatorname{Syl}_p(G)$</td>
+<td>the number of orbits $n_p$ divides the index; stabiliser the normaliser of a Sylow subgroup</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on the cosets of a Sylow subgroup</td>
+<td>the representation $G \to S_{n_p}$ whose kernel controls the normal Sylow subgroup</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Class equation</td>
+<td>the orbit decomposition of conjugation; the fixed points are the centre $Z(G)$</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on its subgroups, ordered by inclusion</td>
+<td>the lattice of subgroups is a $G$-poset; the orbits are the conjugacy classes of subgroups</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Double-coset action of $H \times K$ on $G$</td>
+<td>orbits the double cosets $HaK$; stabilisers the intersections $H \cap aKa^{-1}$</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Burnside's lemma</td>
+<td>the number of orbits as the average of the fixed-point counts</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Non-example: the conjugation action of an abelian group</td>
+<td>fails to be interesting only: every orbit is a point, since $C_G(g) = G$</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="actions-on-vector-spaces-and-modules-the-representations">Actions on Vector Spaces and Modules: the Representations</h2>
+<p>An action of $G$ on a vector space by linear maps is a <strong>representation</strong> of $G$, equivalently a module over the group algebra $F[G]$. The corpus meets the permutation representation of a group action, the defining representation of $GL(V)$, the regular representation of $G$ on $F[G]$, the dual and tensor representations, the symmetric and exterior powers, and the adjoint representation of a Lie algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Orbit, stabiliser and representation</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear action of $GL(V)$ on $V$</td>
+<td>the defining representation; the orbit of a vector is its nonzero scalar multiples, and the stabiliser the stabiliser of a line</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>Action of $GL(V)$ on the lines and Grassmannians</td>
+<td>the orbits are the Grassmannians; the stabilisers the parabolic subgroups</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>Regular representation of $G$ on $F[G]$</td>
+<td>$G$ acts on the group algebra; the character is $\chi_{\mathrm{reg}}(e) = |G|$</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>Permutation representation of a $G$-set</td>
+<td>the linearisation of an action on a set; the character counts fixed points</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Tensor, dual, symmetric and exterior powers</td>
+<td>the representations $V \otimes W$, $V^*$, $\operatorname{Sym}^n V$ and $\Lambda^n V$</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Adjoint action of a Lie algebra on itself</td>
+<td>orbits the coadjoint orbits; the representation $\operatorname{ad} : \mathfrak{g} \to \mathfrak{gl}(\mathfrak{g})$</td>
+<td><em>Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Weight decomposition</td>
+<td>the action of a Cartan subalgebra; the weights and the highest weight</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Schur–Weyl action of $S_n \times GL(V)$ on $V^{\otimes n}$</td>
+<td>orbits and stabilisers described by Young diagrams; the decomposition into Schur functors</td>
+<td><em>Schur–Weyl Duality</em></td>
+</tr>
+<tr>
+<td>Non-example: a non-faithful representation</td>
+<td>fails faithfulness: the kernel is a nontrivial normal subgroup</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: a reducible representation in characteristic dividing $|G|$</td>
+<td>fails complete reducibility: Maschke's hypothesis is defeated</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="actions-on-algebras-and-fields">Actions on Algebras and Fields</h2>
+<p>A group acts on an algebra by <strong>automorphisms</strong>, and the subalgebra it fixes is the <strong>ring of invariants</strong>; a group acts on a field extension as its <strong>Galois group</strong>, and the fixed field is the subject of the fundamental theorem. The action of a group on an algebra also builds new algebras, the crossed products, and the infinitesimal version of an automorphism is a derivation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Orbit, stabiliser and representation</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action of $\operatorname{Aut}(R)$ on a ring $R$</td>
+<td>the fixed subring and the invariant centre; the transformation group of the ring</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>Inner action $x \mapsto uxu^{-1}$ by a unit</td>
+<td>the orbit is the conjugacy class; the action is by an inner automorphism</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>Galois action of $\operatorname{Gal}(L/K)$ on $L$</td>
+<td>the fixed field is $K$; the orbit of an element has size the degree of its minimal polynomial</td>
+<td><em>Galois Theory</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on a polynomial ring by graded automorphisms</td>
+<td>the invariant ring $R^G$; the Molien series computes the graded dimensions</td>
+<td><em>Invariant Theory</em></td>
+</tr>
+<tr>
+<td>Crossed product $A \# G$</td>
+<td>the algebra built from a group action, with the action as twisted multiplication</td>
+<td><em>Crossed Products</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on an algebra by automorphisms</td>
+<td>the orbits of the automorphism group; the fixed subalgebra</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>Derivation as the infinitesimal action</td>
+<td>a derivation $\delta$ with the Leibniz rule; the inner derivations $\operatorname{ad}_a$</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>Frobenius action on a finite field</td>
+<td>the automorphism $x \mapsto x^p$, of order the degree over $\mathbb{F}_p$</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>Non-example: an infinite Galois group of a finite extension</td>
+<td>fails the finite-orbit description: the action is trivial on a finite Galois extension</td>
+<td><em>Galois Theory</em></td>
+</tr>
+<tr>
+<td>Non-example: an action of $\operatorname{Aut}(R)$ that fails to preserve the centre</td>
+<td>does not occur: an automorphism preserves the centre, so the centre is a stabilised subring</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="actions-on-spaces">Actions on Spaces</h2>
+<p>Once a distance is available, a group acts on a topological space by homeomorphisms or by isometries, and the orbit–stabiliser theorem acquires the orbit map as a quotient map. The corpus treats these actions in Part II and Part III, and the algebraic layer records only the algebraic shadow of them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Orbit, stabiliser and representation</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action of a topological group on a space</td>
+<td>orbits are the homogeneous spaces; the orbit map is continuous</td>
+<td><em>Topological Groups</em> (Part II)</td>
+</tr>
+<tr>
+<td>Action of a discrete group on a space by deck transformations</td>
+<td>the orbits are the fibres of a covering; the stabilisers are the deck group</td>
+<td><em>The Fundamental Group and Covering Spaces</em> (Part II)</td>
+</tr>
+<tr>
+<td>Isometric action on a metric space</td>
+<td>orbits are the equidistant sets; stabilisers are the isometry subgroups</td>
+<td><em>Metric, Uniform and Complete Spaces</em> (Part II)</td>
+</tr>
+<tr>
+<td>Linear action of a Lie group on a manifold</td>
+<td>the orbits are the homogeneous spaces $G/H$; the representation of the Lie algebra</td>
+<td><em>Lie Groups</em> (Part II)</td>
+</tr>
+<tr>
+<td>Non-example: an action by homeomorphisms that is not by isometries</td>
+<td>fails to preserve the distance: the orbit map is continuous but not Lipschitz</td>
+<td><em>Metric, Uniform and Complete Spaces</em> (Part II)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-three-properties-of-an-action">The Three Properties of an Action</h2>
+<p>Every action in the list is separated by three properties — whether it is faithful, whether it is transitive, and whether it is regular — and the table reads them side by side so that the same group appears with different properties on different sets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Faithful?</th>
+<th>Transitive?</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left regular action of $G$ on itself</td>
+<td>yes: the kernel is trivial</td>
+<td>yes: one orbit</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Action of $G$ on the cosets $G/H$</td>
+<td>exactly when $H$ contains no nontrivial normal subgroup of $G$</td>
+<td>yes, by construction</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Conjugation action of $G$ on itself</td>
+<td>exactly when the centre is trivial</td>
+<td>exactly when $G$ is abelian</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>Trivial action of a nontrivial group</td>
+<td>no: the kernel is the whole group</td>
+<td>yes: one orbit</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Action of $S_n$ on $\{1,\dots,n\}$, $n \geq 3$</td>
+<td>yes</td>
+<td>yes</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the group actions of the corpus. The actions on sets are the left regular action and Cayley's embedding, the conjugation action with the conjugacy classes and centralisers, the action on cosets, on subgroups, on power sets and the permutation representation. The actions on a lattice of subgroups are the conjugation action on the Sylow subgroups, the coset action on a Sylow subgroup, the class equation, the double-coset action and Burnside's lemma. The actions on vector spaces are the defining representation of $GL(V)$, its action on lines and Grassmannians, the regular representation on the group algebra, the permutation representation, the tensor, dual, symmetric and exterior power representations, the adjoint representation of a Lie algebra, the weight decomposition and the Schur–Weyl action on tensor powers. The actions on algebras and fields are the automorphism action on a ring, the inner action, the Galois action, the graded action on a polynomial ring with its invariant ring, the crossed product, the derivation as infinitesimal action and the Frobenius. The actions on spaces are the topological, covering, isometric and Lie-group actions of Parts II and III. The non-examples — the trivial action, the non-regular action on a finite set, the conjugation action of an abelian group, a non-faithful representation, a reducible representation in the modular case, an action failing to preserve the centre, and an action by homeomorphisms that is not isometric — each name the property that fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its actions by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}(X)$, $S_n$</td>
+<td>symmetric group on a set, on $n$ letters</td>
+</tr>
+<tr>
+<td>$\rho : G \to \operatorname{Sym}(X)$</td>
+<td>permutation representation of an action</td>
+</tr>
+<tr>
+<td>$\operatorname{Orb}(x)$, $\operatorname{Stab}(x)$</td>
+<td>orbit and stabiliser</td>
+</tr>
+<tr>
+<td>$C_G(g)$, $Z(G)$, $N_G(H)$</td>
+<td>centraliser, centre, normaliser</td>
+</tr>
+<tr>
+<td>$\operatorname{Syl}_p(G)$, $n_p$</td>
+<td>Sylow $p$-subgroups and their number</td>
+</tr>
+<tr>
+<td>$F[G]$, $\chi_V$, $\operatorname{Rep}_F(G)$</td>
+<td>group algebra, character, representation category</td>
+</tr>
+<tr>
+<td>$V \otimes W$, $V^*$, $\operatorname{Sym}^n V$, $\Lambda^n V$</td>
+<td>tensor, dual, symmetric and exterior power representations</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}$</td>
+<td>adjoint representation of a Lie algebra</td>
+</tr>
+<tr>
+<td>$R^G$</td>
+<td>ring of invariants</td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(L/K)$</td>
+<td>Galois group of a field extension</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(R)$, $\operatorname{Inn}(G)$</td>
+<td>automorphism group; inner automorphisms</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$, $\mathbb{F}_q$</td>
+<td>finite fields</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, 4th ed. 1995), for the conjugation, coset and Sylow actions and the class equation.</li>
+<li>Jean-Pierre Serre, <em>Linear Representations of Finite Groups</em> (Springer, 1977), for the permutation, regular, tensor and symmetric-power representations.</li>
+<li>Igor Shafarevich, <em>Basic Algebraic Geometry 1</em> (Springer, 3rd ed. 2013), for the actions on Grassmannians, the invariant ring and the quotient by a group action.</li>
+<li>Kenneth Brown, <em>Cohomology of Groups</em> (Springer, 1982), for the crossed-product and derivation constructions attached to group actions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

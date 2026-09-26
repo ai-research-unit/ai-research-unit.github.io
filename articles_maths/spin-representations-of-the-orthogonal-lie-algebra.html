@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin Representations of the Orthogonal Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spin-representations-of-the-orthogonal-lie-algebra"><strong>Spin Representations of the Orthogonal Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spinor module of a quadratic space is a module over the Clifford algebra, and therefore over any subalgebra of it; in particular the bivectors act on it by left multiplication. Since the bivectors form the orthogonal Lie algebra under the commutator, the spinor module is a representation of that Lie algebra, and it is a representation of a special kind: its highest weight is the spinorial fundamental weight of the orthogonal type, half the sum of the $\epsilon_i$, its weights are the half-integral vectors of a maximal torus, and it does not descend to the orthogonal group. This article develops the infinitesimal theory: the Lie algebra homomorphism, the weights, the dimensions, the branching rule under the passage from $n$ to $n-1$ dimensions, and the splitting into chiral halves.</p>
+<p>The article is the Lie-theoretic companion of <em>Spin Representations and Clifford Modules</em> and of <em>Spinors as Minimal Left Ideals</em>: the same object is a Clifford module there, an ideal of the algebra there, and a representation of the orthogonal Lie algebra here. The half-integral weights are the infinitesimal form of the double cover; the branching rule is the infinitesimal form of the fact that the spinor module of the algebra in $n$ generators restricts to the spinor modules of the algebra in $n-1$ generators.</p>
+<p>The Clifford algebra, its universal property and the fundamental relation are from <em>The Clifford Algebra</em>; the $k$-vectors, the multivectors, the volume element and reversion are from <em>Clifford Algebras in Finite Dimensions</em>; the identification of the bivectors with the orthogonal Lie algebra, the commutator bracket and the exponential are from <em>The Clifford Algebra as a Lie Algebra</em>; the grade decomposition and the grade projection are from <em>The Geometric Product and the Grade Decomposition</em>; the spinor module, the Clifford module, the complex spin representation and the chiral splitting are from <em>Spin Representations and Clifford Modules</em>; the realisation of a spinor as an element of a minimal left ideal is from <em>Spinors as Minimal Left Ideals</em>; the root systems, the fundamental weights and the highest-weight classification are from <em>Root Systems and Classification</em> and <em>Representations of Lie Algebras</em>; the exponential of a bivector and its action are from <em>Versors, Rotors and the Sandwich Action</em>. Nothing owned by those entries is re-derived. The base is $\mathbb{C}$ unless a real form is named, $V$ is of dimension $n$ with a non-degenerate symmetric bilinear form, and $S$ is the spinor module.</p>
+<h2 id="the-lie-algebra-and-the-spinor-module">The Lie Algebra and the Spinor Module</h2>
+<h3 id="the-orthogonal-lie-algebra">The Orthogonal Lie Algebra</h3>
+<p><strong>Theorem.</strong> The subspace $\mathrm{Cl}_2(V,q)$ of bivectors is closed under the commutator $[A,B]=AB-BA$, and the map</p>
+<p>$$
+\lambda:\mathrm{Cl}_2(V,q)\longrightarrow\mathfrak{so}(V,q),\qquad \lambda(B)=\operatorname{ad}_B,\qquad \operatorname{ad}_B(v)=Bv-vB,
+$$</p>
+<p>is an isomorphism of Lie algebras onto the orthogonal Lie algebra, the bracket being the commutator of endomorphisms on the right. The image consists of the skew endomorphisms, that is of those $f$ with $B(fv,w)+B(v,fw)=0$ for all $v,w$.</p>
+<p><strong>Proof.</strong> The commutator of two bivectors is a bivector, since the grade theorem of <em>The Geometric Product and the Grade Decomposition</em> leaves for the product of two bivectors the grades $0,2,4$ and the commutator kills the symmetric grade $0$ and grade $4$ parts; hence $\mathrm{Cl}_2$ is a Lie subalgebra. The map $\lambda$ is a Lie algebra homomorphism because $\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B]$ for the commutator in an associative algebra, and it is injective because a bivector with $\operatorname{ad}_B=0$ centralises $V$ and is therefore central in the algebra generated by $V$, which contains no central elements of grade two. Skewness and the identification with the orthogonal Lie algebra are recorded in <em>The Clifford Algebra as a Lie Algebra</em>. $\square$</p>
+<p><strong>Remark.</strong> The normalisation of the identification is fixed by the convention $\lambda(B)=\operatorname{ad}_B$; the same correspondence scaled by one half is used in <em>Versors, Rotors and the Sandwich Action</em>, where the endomorphism $J_B=\tfrac12\operatorname{ad}_B$ is the one whose exponential gives the rotation. All statements in this article are made for $\lambda$, and they scale accordingly.</p>
+<h3 id="the-spinor-module">The Spinor Module</h3>
+<p><strong>Theorem.</strong> Let $S$ be an irreducible Clifford module over $\mathrm{Cl}(V,q)$, of dimension $2^{[n/2]}$ over the division algebra of the type, as in <em>Spin Representations and Clifford Modules</em>. Then $S$ is a module over $\mathrm{Cl}_2(V,q)$ by restriction of the algebra action.</p>
+<p><strong>Proof.</strong> A Clifford module is a module over the whole algebra by definition; restricting the action to the subalgebra of bivectors gives the statement. $\square$</p>
+<p><strong>Theorem (the infinitesimal spin representation).</strong> The map</p>
+<p>$$
+\rho_*:\mathfrak{so}(V,q)\longrightarrow\mathfrak{gl}(S),\qquad \rho_*(\operatorname{ad}_B)=\gamma(B),
+$$</p>
+<p>where $\gamma(B)$ denotes left multiplication by the bivector $B$ on $S$, is a well-defined representation of the orthogonal Lie algebra on $S$, and it is the differential of the spin representation of the spin group.</p>
+<p><strong>Proof.</strong> Well-definedness is the bijectivity of $\lambda$. It is a Lie algebra homomorphism because $\gamma$ is an algebra homomorphism and $\lambda$ intertwines the brackets: for bivectors $A,B$,</p>
+<p>$$
+[\rho_*(\operatorname{ad}_A),\rho_*(\operatorname{ad}_B)](\psi)=\bigl(\gamma(A)\gamma(B)-\gamma(B)\gamma(A)\bigr)(\psi)=\gamma([A,B])(\psi)=\rho_*(\operatorname{ad}_{[A,B]})(\psi),
+$$</p>
+<p>so $\rho_*[\xi,\eta]=[\rho_*\xi,\rho_*\eta]$. That it is the differential of the group action $\psi\mapsto R\psi$ follows by exponentiating: for a rotor $R=\exp(B)$ and a spinor $\psi$ the group element acts by left multiplication by $R$, whose derivative at the identity in the direction of $B\in\mathrm{Cl}_2$ is left multiplication by $B$, which is $\rho_*(\lambda(B))$. $\square$</p>
+<p><strong>Corollary.</strong> For an orthogonal pair $u,w\in V$, using $\lambda(uw)=\operatorname{ad}_{uw}$,</p>
+<p>$$
+\rho_*(\lambda(uw))=\gamma(u)\gamma(w)=\tfrac12[\gamma(u),\gamma(w)].
+$$</p>
+<p><strong>Proof.</strong> For an orthogonal pair the generators anticommute, so $\gamma(u)\gamma(w)-\gamma(w)\gamma(u)=2\gamma(u)\gamma(w)$. $\square$</p>
+<h3 id="compatibility-with-the-vector-representation">Compatibility with the Vector Representation</h3>
+<p><strong>Theorem.</strong> For $\xi\in\mathfrak{so}(V,q)$, $v\in V$ and $\psi\in S$,</p>
+<p>$$
+\rho_*(\xi)\bigl(\gamma(v)\psi\bigr)=\gamma(\xi v)\psi+\gamma(v)\rho_*(\xi)\psi,
+$$
+or equivalently, on $S$,
+$$
+[\rho_*(\xi),\gamma(v)]=\gamma(\xi v).
+$$
+That is, $\gamma$ is a map of $\mathfrak{so}(V,q)$-modules from $V\otimes S$ to $S$, the Lie algebra acting on the vector factor in the defining representation and on the spinor factor by $\rho_*$.</p>
+<p><strong>Proof.</strong> The element $\xi$ is $\operatorname{ad}_B$ for a unique bivector $B$. Left multiplication by the algebra is associative, so $\gamma(B)\gamma(v)\psi=\gamma(Bv)\psi$, which is $\rho_*(\xi)(\gamma(v)\psi)$; on the other side, $\gamma(\xi v)\psi+\gamma(v)\rho_*(\xi)\psi=\gamma(Bv-vB)\psi+\gamma(vB)\psi$, and the two terms in $vB$ cancel, leaving $\gamma(Bv)\psi$. The two sides agree, and subtracting the second term gives the commutator form. $\square$</p>
+<p>So the action of the orthogonal Lie algebra on the spinor module is compatible with its action on the vector space, and the compatibility is the associativity of the Clifford product: the multiplication by a vector is a map of modules once the action on the vector factor is taken into account, and the failure of the naive identity $\rho_*(\xi)\gamma(v)=\gamma(\xi v)$ is exactly the second term of the derivation rule. The spin representation is not an additional structure but the left action of the algebra restricted to the bivectors.</p>
+<h2 id="weights-and-dimensions">Weights and Dimensions</h2>
+<h3 id="the-cartan-subalgebra-and-the-weights">The Cartan Subalgebra and the Weights</h3>
+<p>Let $n=2m$ or $n=2m+1$, let $e_1,\ldots,e_n$ be an orthonormal basis with $q(e_i)=1$ after complexification, and let $\mathfrak h$ be the Cartan subalgebra spanned by the bivectors $b_i=\tfrac12e_{2i-1}e_{2i}$, $i=1,\ldots,m$, whose images $\lambda(b_i)$ are the standard diagonal Cartan elements of the orthogonal Lie algebra; the functional $\epsilon_i$ is dual to $\lambda(b_i)$. For $\xi\in\mathfrak h$ the spinor module decomposes into eigenspaces of the commuting operators $\rho_*(\xi)$, and the weights are the labels of those eigenspaces: a vector $\psi$ has weight $\lambda$ when $\rho_*(\xi)\psi=i\lambda(\xi)\psi$ for every $\xi\in\mathfrak h$, the factor $i$ being the one of the Hermitian normalisation, in which $2i\rho_*(b_i)$ has the eigenvalues $\pm1$.</p>
+<p><strong>Theorem.</strong> In the basis of exponential coordinates, the weights of the spinor module are the $2^m$ vectors</p>
+<p>$$
+\tfrac12(\pm\epsilon_1\pm\epsilon_2\pm\cdots\pm\epsilon_m),
+$$</p>
+<p>each of multiplicity one, independently of whether $n$ is even or odd.</p>
+<p><strong>Proof.</strong> The Cartan element $b_i=\tfrac12e_{2i-1}e_{2i}$ acts on the module by left multiplication. It satisfies $b_i^2=-\tfrac14$ and commutes with $b_j$ for $j\neq i$, and it anticommutes with the generators $e_{2i-1}$ and $e_{2i}$; hence $2ib_i$ has square $1$, so that the operators $\tfrac12(1\pm2ib_i)$ are orthogonal projections, onto the two eigenspaces of $b_i$, and they label those eigenspaces by the weights $\mp\tfrac12$ in the $i$-th coordinate. The module is spanned by the vectors obtained from a highest-weight vector by the action of the generators; applying the projections for $i=1,\dots,m$ gives $2^m$ simultaneous eigenspaces, each of dimension one because the product of the projections is a primitive idempotent and the module is irreducible. The labels are the half-integral vectors displayed. $\square$</p>
+<p><strong>Theorem (the chiral splitting).</strong> Let $n=2m$ and let $\omega=e_1e_2\cdots e_{2m}$ be the volume element, of square $\omega^2=(-1)^m$, central in the even part. The action of $\gamma(\omega)$ on $S$ is diagonalisable with the two eigenvalues $\pm\zeta$, where $\zeta^2=(-1)^m$ is a fixed square root; its eigenspaces</p>
+<p>$$
+S^\pm=\{\psi\in S:\gamma(\omega)\psi=\pm\zeta\,\psi\}
+$$</p>
+<p>are the <strong>half-spinor modules</strong>, have dimension $2^{m-1}$ each, and their weights are the vectors $\tfrac12(\pm\epsilon_1\pm\cdots\pm\epsilon_m)$ with an even number of minus signs for one of them and an odd number for the other.</p>
+<p><strong>Proof.</strong> The volume element commutes with the even part, hence with every $\rho_*(\xi)$, and its action on the module is a scalar multiple of the identity on each irreducible component of the action of the even part; the two components are the two minimal left ideals of the even part, as in <em>Spinors as Minimal Left Ideals</em>, and the parity of the number of minus signs in the weight distinguishes them. $\square$</p>
+<h3 id="the-highest-weights">The Highest Weights</h3>
+<p><strong>Theorem.</strong> For $n=2m+1$, of type $B_m$, the spinor module is irreducible with highest weight</p>
+<p>$$
+\tfrac12(\epsilon_1+\epsilon_2+\cdots+\epsilon_m),
+$$</p>
+<p>of dimension $2^m$. For $n=2m$, of type $D_m$, the two half-spinor modules are irreducible with highest weights</p>
+<p>$$
+\tfrac12(\epsilon_1+\cdots+\epsilon_m)\ \text{ and }\ \tfrac12(\epsilon_1+\cdots+\epsilon_{m-1}-\epsilon_m),
+$$</p>
+<p>each of dimension $2^{m-1}$, and the spinor module is their direct sum, of dimension $2^m$.</p>
+<p><strong>Proof.</strong> The weights of the module being the half-integral vectors of multiplicity one, the highest weight of an irreducible component is the largest among them in the order of the root system. The ordering places $\tfrac12(\epsilon_1+\cdots+\epsilon_m)$ at the top, and the component generated by it has as its weights the orbit under the Weyl group subject to the parity constraint; for $B_m$ the constraint is empty and all $2^m$ weights occur, while for $D_m$ the two parities are separated, giving the two components displayed. The dimension count $2^{m-1}+2^{m-1}=2^m$ agrees with the dimension $2^{[n/2]}$ of the Clifford module of <em>Spin Representations and Clifford Modules</em>, and the irreducibility is the standard highest-weight theory of <em>Representations of Lie Algebras</em>. $\square$</p>
+<p><strong>Corollary (dimension table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>Type</th>
+<th>Spinor modules</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2m$</td>
+<td>$D_m$</td>
+<td>$S^+$, $S^-$</td>
+<td>$2^{m-1}$ each</td>
+</tr>
+<tr>
+<td>$2m+1$</td>
+<td>$B_m$</td>
+<td>$S$</td>
+<td>$2^m$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$B_1$</td>
+<td>$S$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$D_2$</td>
+<td>$S^+$, $S^-$</td>
+<td>$2$ each</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$B_2$</td>
+<td>$S$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$D_3$</td>
+<td>$S^+$, $S^-$</td>
+<td>$4$ each</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$B_3$</td>
+<td>$S$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$D_4$</td>
+<td>$S^+$, $S^-$</td>
+<td>$8$ each</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark.</strong> The highest weight of the spinor module is the last fundamental weight of the orthogonal Lie algebra, half the sum of the $\epsilon_i$, an expression that is not an integral weight; this is the Lie-theoretic form of the fact that the representation is a representation of the spin group and not of the orthogonal group. The centre $\{\pm1\}$ of the spin group acts by $-1$ on the odd part of the Clifford algebra and by $+1$ on the even part, so the spinor module is a faithful module of the spin group in which the centre acts by a sign, and no representation of the orthogonal group can have a half-integral weight.</p>
+<h2 id="branching-under-the-subalgebra">Branching under the Subalgebra</h2>
+<p><strong>Theorem (branching).</strong> Let $W\subseteq V$ be a hyperplane on which the form restricts non-degenerately, so that $\mathfrak{so}(W,q)\subseteq\mathfrak{so}(V,q)$ is a subalgebra. Then</p>
+<ol>
+<li>for $n=2m+1$, the spinor module of $\mathfrak{so}(V,q)$ restricts to the direct sum $S^+\oplus S^-$ of the two half-spinor modules of $\mathfrak{so}(W,q)$;</li>
+<li>for $n=2m$, each half-spinor module of $\mathfrak{so}(V,q)$ restricts to the spinor module of $\mathfrak{so}(W,q)$, irreducibly.</li>
+</ol>
+<p><strong>Proof.</strong> The even part of $\mathrm{Cl}(V,q)$ is the Clifford algebra of a hyperplane, $\mathrm{Cl}^0(V,q)\cong\mathrm{Cl}(W,q|_W)$, by the identification recorded in <em>Clifford Algebras in Finite Dimensions</em>. In the first case $n=2m+1$ makes $\dim W=2m$ even, so $\mathrm{Cl}(W,q|_W)$ is of type $D_m$ and its spinor module decomposes into the two half-spinor modules; the restriction of $S$ to the even part is therefore the direct sum of those two, and the dimension count $2^m=2^{m-1}+2^{m-1}$ confirms it. In the second case $n=2m$ makes $\dim W=2m-1$ odd, so $\mathrm{Cl}(W,q|_W)$ is of type $B_{m-1}$ with a single irreducible spinor module of dimension $2^{m-1}$; the volume element $\omega$ of $V$ is even, hence lies in the even part, and it is central there, so each of its eigenspaces $S^\pm$ is a submodule over the even part, of dimension $2^{m-1}$, and therefore irreducible. $\square$</p>
+<p><strong>Remark.</strong> The branching rule is the infinitesimal statement of the relation between the Clifford algebras of $V$ and of a hyperplane, and it is what makes the spin representations of the lower-dimensional orthogonal algebras appear inside the higher-dimensional one. The chain of inclusions of the spin groups that results is the source of the exceptional isomorphisms in low dimensions, developed in <em>The Low-Dimensional Spin Groups and the Exceptional Isomorphisms</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="three-and-four-dimensions">Three and Four Dimensions</h3>
+<p>For $n=3$ the algebra $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})$ has a single spinor module of dimension two, with weights $\pm\tfrac12$, which is the defining representation; the half-integral weight is the infinitesimal signature of the double cover $\mathrm{SU}(2)\to SO(3)$. For $n=4$ the algebra $\mathfrak{so}(4,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$ has two half-spinor modules of dimension two each, the defining representations of the two summands, and the chiral splitting is the infinitesimal form of the two-sided action of the unit quaternions. The branching rule is visible in the pair: the spinor module of $\mathfrak{so}(3)$ becomes one of the half-spinor modules of $\mathfrak{so}(4)$, and the other arises from the other parity.</p>
+<h3 id="five-and-six-dimensions">Five and Six Dimensions</h3>
+<p>For $n=5$ the spinor module has dimension four with weights $\tfrac12(\pm\epsilon_1\pm\epsilon_2)$, all four of them; it is the defining representation of the symplectic algebra under the isomorphism $\mathfrak{so}(5,\mathbb{C})\cong\mathfrak{sp}(2,\mathbb{C})$, and it is self-dual. For $n=6$ the two half-spinor modules have dimension four each, with weights the half-integral vectors of the two parities; they are the defining representation of $\mathfrak{sl}(4,\mathbb{C})$ and its dual under the isomorphism $\mathfrak{so}(6,\mathbb{C})\cong\mathfrak{sl}(4,\mathbb{C})$, and the two are interchanged by the outer automorphism of the Dynkin diagram of $A_3$, which is the diagram symmetry of $D_3$. The pair of examples is the infinitesimal half of the exceptional isomorphisms of the next entry.</p>
+<p><strong>Remark (no descent to the orthogonal group).</strong> For every $n$ the spinor module is a representation of the spin group and of its Lie algebra, and it is not the differential of any representation of $SO(V,q)$, because the centre of the spin group acts by $-1$ while it acts trivially in every representation of the orthogonal group. The half-integral highest weight is the same statement read on the weight lattice: the weight lattice of the spin group is the lattice generated by the fundamental weights including the spinorial one, while that of the orthogonal group contains only the integral weights.</p>
+<h2 id="summary">Summary</h2>
+<p>The bivectors of $\mathrm{Cl}(V,q)$ form the orthogonal Lie algebra under the commutator, the identification being $\lambda(B)=\operatorname{ad}_B$, and the spinor module $S$ of <em>Spin Representations and Clifford Modules</em> is a module over that Lie algebra by the map</p>
+<p>$$
+\rho_*(\operatorname{ad}_B)=\gamma(B),
+$$</p>
+<p>left multiplication by the bivector. It is a Lie algebra homomorphism because $\gamma$ preserves products and $\lambda$ preserves brackets, and it is the differential of the group action $\psi\mapsto R\psi$ of <em>Versors, Rotors and the Sandwich Action</em>. It is compatible with the action on vectors in the sense that $[\rho_*(\xi),\gamma(v)]=\gamma(\xi v)$, equivalently $\rho_*(\xi)(\gamma(v)\psi)=\gamma(\xi v)\psi+\gamma(v)\rho_*(\xi)\psi$, for every $\xi$ in the Lie algebra; for an orthogonal pair $u,w$ one has $\rho_*(\lambda(uw))=\gamma(u)\gamma(w)=\tfrac12[\gamma(u),\gamma(w)]$.</p>
+<p>The weights of the spinor module are the $2^m$ half-integral vectors $\tfrac12(\pm\epsilon_1\pm\cdots\pm\epsilon_m)$, each with multiplicity one, for $n=2m$ or $n=2m+1$; the half-integrality is the infinitesimal form of the double cover. For odd $n$ the module is irreducible of dimension $2^m$ with highest weight $\tfrac12(\epsilon_1+\cdots+\epsilon_m)$; for even $n$ the volume element splits it into the two half-spinor modules of dimension $2^{m-1}$ whose weights are the vectors of even and of odd parity, with highest weights $\tfrac12(\epsilon_1+\cdots+\epsilon_m)$ and $\tfrac12(\epsilon_1+\cdots+\epsilon_{m-1}-\epsilon_m)$. The dimensions agree with the Clifford-module dimension $2^{[n/2]}$, and the representation does not descend to the orthogonal group, since the centre of the spin group acts by $-1$.</p>
+<p>The branching rule relates the representations of consecutive orthogonal algebras: the spinor module of $\mathfrak{so}(2m+1)$ restricts to the sum of the two half-spinor modules of $\mathfrak{so}(2m)$, and each half-spinor module of $\mathfrak{so}(2m)$ restricts to the spinor module of $\mathfrak{so}(2m-1)$, irreducibly. The rule is the infinitesimal form of the identification of the Clifford algebra of a hyperplane with the even part of the Clifford algebra of the space, and it produces the exceptional isomorphisms of low dimension, in which the spinor module of one type is the defining module of another: the two-dimensional module of $\mathfrak{so}(3)$ and the pair of two-dimensional modules of $\mathfrak{so}(4)$, the four-dimensional module of $\mathfrak{so}(5)$ as the defining module of the symplectic algebra, and the two four-dimensional half-spinors of $\mathfrak{so}(6)$ as the defining module of the linear algebra and its dual.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Cl}_2(V,q)$</td>
+<td>Bivectors, the orthogonal Lie algebra</td>
+</tr>
+<tr>
+<td>$\lambda(B)=\operatorname{ad}_B$</td>
+<td>Identification with $\mathfrak{so}(V,q)$</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>The Clifford action on the spinor module $S$</td>
+</tr>
+<tr>
+<td>$\rho_*(\operatorname{ad}_B)=\gamma(B)$</td>
+<td>Infinitesimal spin representation</td>
+</tr>
+<tr>
+<td>$\rho_*(\lambda(uw))=\tfrac12[\gamma(u),\gamma(w)]$</td>
+<td>Value on an orthogonal pair</td>
+</tr>
+<tr>
+<td>$[\rho_*(\xi),\gamma(v)]=\gamma(\xi v)$</td>
+<td>Compatibility with the vector representation</td>
+</tr>
+<tr>
+<td>$m=[n/2]$</td>
+<td>Rank of the orthogonal Lie algebra</td>
+</tr>
+<tr>
+<td>$\tfrac12(\pm\epsilon_1\pm\cdots\pm\epsilon_m)$</td>
+<td>Weights of the spinor module, multiplicity one</td>
+</tr>
+<tr>
+<td>$S=S^+\oplus S^-$</td>
+<td>Chiral splitting in even dimensions</td>
+</tr>
+<tr>
+<td>$B_m$, $D_m$</td>
+<td>Odd and even orthogonal types</td>
+</tr>
+<tr>
+<td>$2^m$, $2^{m-1}$</td>
+<td>Dimensions of the spinor and half-spinor modules</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the bivectors as the orthogonal Lie algebra and the spin representation.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the spin representation, the chiral splitting and the branching rules.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the highest-weight classification, the weights and the dimension formula applied to the spin representations.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the spin representations of the orthogonal Lie algebras, their weights and their branching rules.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the spin representation as the restriction of the Clifford action to the bivectors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

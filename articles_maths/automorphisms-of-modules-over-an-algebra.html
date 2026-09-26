@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automorphisms of Modules over an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="automorphisms-of-modules-over-an-algebra"><strong>Automorphisms of Modules over an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The transformations of a module are its endomorphisms, and the invertible ones form its automorphism group. The object of this article is the pair</p>
+<p>$$
+\operatorname{End}_A(M) \quad \text{and} \quad \operatorname{Aut}_A(M)
+$$</p>
+<p>for a module $M$ over a possibly noncommutative algebra $A$. The first is a ring and the second its group of units, and the passage from $A$ to this pair records how much freedom an $A$-linear map retains once the whole algebra is required to commute with it. When $A=F$ is a field the requirement is vacuous, and the pair is the full ring of $F$-linear maps together with the full general linear group; over a larger algebra the condition is severe, and the gap between $A$-linear and merely $R$-linear maps is not covered here.</p>
+<p>The conventions are those of the companion article <em>Modules over an Algebra</em>: $R$ is a commutative ring with $1 \neq 0$, and $A$ is a unital associative $R$-algebra, generally noncommutative. Modules are left modules unless stated, $A^{\times}$ is the group of units of $A$, and $Z(A)$ is the center. The regular module ${}_A A$ acts on itself by left multiplication, and the endomorphisms of the regular module were identified in the companion article as the right multiplications. That identification is the base case of everything below, and it is the reason the noncommutative case behaves asymmetrically.</p>
+<p>Two facts are used throughout and are stated once. The first is that $\operatorname{End}_A(M)$ is the <strong>centralizer</strong> of the action of $A$ in the ring $\operatorname{End}_R(M)$ of $R$-linear maps: an $R$-linear map is $A$-linear precisely when it commutes with every operator of the representation. The second is Schur's lemma, proved in the companion article and recalled here in the form needed: a nonzero homomorphism between simple modules is an isomorphism, so the endomorphism ring of a simple module is a division ring. The second fact is the engine of the theory, and it converts questions about transformations into questions about division rings and matrices over them.</p>
+<h2 id="endomorphisms-and-automorphisms">Endomorphisms and Automorphisms</h2>
+<h3 id="definition">Definition</h3>
+<p>Let $M$ be a left $A$-module. The <strong>endomorphism ring</strong> of $M$ is</p>
+<p>$$
+\operatorname{End}_A(M)=\{f: M \to M : f \text{ is } A\text{-linear}\},
+$$</p>
+<p>with addition defined pointwise, $(f+g)(m)=f(m)+g(m)$, and multiplication given by composition, $(fg)(m)=f(g(m))$. Addition makes it an abelian group, composition is associative and distributes over addition, the identity map is a unit, and composition is not commutative in general. Thus $\operatorname{End}_A(M)$ is a unital associative ring. It is an $R$-algebra, since $rf$ defined by $(rf)(m)=r f(m)=f(rm)$ is again $A$-linear and central in the ring.</p>
+<p>The <strong>automorphism group</strong> of $M$ is the group of units of this ring,</p>
+<p>$$
+\operatorname{Aut}_A(M)=\{f \in \operatorname{End}_A(M) : f \text{ is bijective}\}=\operatorname{End}_A(M)^{\times}.
+$$</p>
+<p>Both are invariant under isomorphism: an isomorphism $u: M \to N$ induces a ring isomorphism $\operatorname{End}_A(M)\to\operatorname{End}_A(N)$, $f \mapsto u f u^{-1}$, and it carries $\operatorname{Aut}_A(M)$ onto $\operatorname{Aut}_A(N)$.</p>
+<h3 id="the-centralizer-description">The centralizer description</h3>
+<p>Fix the action, that is, the $R$-algebra homomorphism</p>
+<p>$$
+\rho : A \to \operatorname{End}_R(M), \qquad \rho(a)(m)=am.
+$$</p>
+<p>An $R$-linear map $f \in \operatorname{End}_R(M)$ is $A$-linear exactly when $f(am)=a f(m)$ for all $a \in A$ and $m \in M$, that is, when $f \rho(a)=\rho(a) f$ for all $a$. Therefore</p>
+<p>$$
+\operatorname{End}_A(M)=\{f \in \operatorname{End}_R(M) : f \rho(a)=\rho(a) f \text{ for all } a \in A\}=\rho(A)',
+$$</p>
+<p>the <strong>commutant</strong>, or centralizer, of the image of $A$ in $\operatorname{End}_R(M)$. This is the single most useful description of the endomorphism ring. It shows immediately that $\operatorname{End}_A(M)$ depends only on the image $\rho(A)$, hence only on the faithful quotient $A/\operatorname{Ann}_A(M)$, and that enlarging $A$ shrinks its commutant.</p>
+<h3 id="math58-linear-versus-math59-linear">$A$-linear versus $R$-linear</h3>
+<p>Because $\rho$ is an $R$-algebra homomorphism, the inclusion</p>
+<p>$$
+\operatorname{End}_A(M) \subseteq \operatorname{End}_R(M)
+$$</p>
+<p>always holds, and it is strict in general. If $A=R$ is the base ring acting by scalars, then $\rho(A)=R\cdot\mathrm{id}$ is central in $\operatorname{End}_R(M)$, so $\operatorname{End}_A(M)=\operatorname{End}_R(M)$: over a commutative base ring, and in particular over a field, every $R$-linear map is $A$-linear because there is nothing else for the scalars to impose. As soon as the action of $A$ is larger than the scalars, that is $\rho(A)\supsetneq R\cdot\mathrm{id}_M$, the condition $f\rho(a)=\rho(a) f$ removes maps, and the quotient</p>
+<p>$$
+\operatorname{End}_R(M)/\operatorname{End}_A(M)
+$$</p>
+<p>measures the loss. The worked cases over $\mathbb{H}$ and $\mathbb{B}$ below make the loss concrete: over $\mathbb{B}$ the $\mathbb{C}$-linear endomorphisms of the defining module form a four-dimensional algebra, while the $\mathbb{B}$-linear ones are only the scalars.</p>
+<h2 id="the-regular-module">The Regular Module</h2>
+<p>The action of $A$ on itself by left multiplication is the basic example, and its endomorphisms are computed completely. Recall from <em>Modules over an Algebra</em> the theorem that right multiplication identifies the opposite algebra with the endomorphism ring of the left regular module.</p>
+<p><strong>Theorem.</strong> The map</p>
+<p>$$
+A^{\mathrm{op}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto R_a, \quad R_a(b)=ba,
+$$</p>
+<p>is an isomorphism of $R$-algebras. Consequently</p>
+<p>$$
+\operatorname{Aut}_A({}_A A) \cong (A^{\mathrm{op}})^{\times} \cong A^{\times}.
+$$</p>
+<p><em>Proof.</em> The isomorphism is proved in <em>Modules over an Algebra</em>, §The Regular Module and Its Endomorphisms. It is $R$-linear in $a$ because right multiplication is $R$-bilinear, and it carries the reversed product of $A^{\mathrm{op}}$ to composition: $R_{a a'}(b)=b(aa')=(ba)a'=R_{a'}(R_a(b))$. Taking units gives the second statement. $\square$</p>
+<p>Three consequences deserve emphasis. First, the theorem is asymmetric: it is right multiplication, not left multiplication, that gives $A$-linear endomorphisms of ${}_A A$. Left multiplication by $a$ is the module action itself and is $A$-linear only in the trivial sense that it is the action of an element on the module; as a transformation of $A$ it is not $A$-linear unless $a$ is central. Second, the automorphism group of the regular module is the group of units of $A$, so it is small in a precise sense: for $A=M_n(F)$ it is $GL_n(F)$, and for a division algebra $D$ it is $D^{\times}$. Third, the group $\operatorname{Aut}_A({}_A A)$ is not the group of algebra automorphisms of $A$: the latter consists of the bijective $R$-algebra maps $A \to A$ preserving the product, and it can be strictly larger, as the biquaternion case below shows. Automorphisms of the module and automorphisms of the algebra are different objects, and only the first is discussed here.</p>
+<h2 id="what-math104-linearity-forces">What $A$-Linearity Forces</h2>
+<h3 id="the-density-theorem">The density theorem</h3>
+<p>The commutant description has a strong structural converse. A simple module is generated by any nonzero element, and the density theorem says that on a finite set of linearly independent elements the action can realise arbitrary prescribed values, as far as the endomorphism division ring permits.</p>
+<p><strong>Theorem (Jacobson density).</strong> Let $S$ be a simple left $A$-module, put $D=\operatorname{End}_A(S)$, and regard $S$ as a left $D$-module. Let $x_1,\dots,x_n \in S$ be $D$-linearly independent and let $y_1,\dots,y_n \in S$ be arbitrary. Then there exists $a \in A$ such that</p>
+<p>$$
+a x_i=y_i \qquad (i=1,\dots,n).
+$$</p>
+<p>Equivalently, the image of $A$ in $\operatorname{End}_D(S)$ is dense for the finite topology.</p>
+<p><em>Proof sketch.</em> For $n=1$ simplicity gives $Ax_1=S$, so some $a$ carries $x_1$ to $y_1$. For general $n$, consider the submodule $N=\{(ax_1,\dots,ax_n) : a \in A\}$ of $S^{\oplus n}$. If the conclusion failed for some $(y_1,\dots,y_n)$, then $N$ would be a proper submodule of the semisimple module $S^{\oplus n}$ and would miss a simple summand; composing a projection onto that summand with the resulting relation forces a nontrivial $D$-linear dependence among the $x_i$, contradicting independence. $\square$</p>
+<p>The theorem is standard and is quoted as such. It has the following corollary, which is the case used most often.</p>
+<p><strong>Corollary.</strong> Let $S$ be a simple left $A$-module with $D=\operatorname{End}_A(S)$ and suppose $S$ is finite-dimensional over $D$. Then the natural map</p>
+<p>$$
+A/\operatorname{Ann}_A(S) \longrightarrow \operatorname{End}_D(S)
+$$</p>
+<p>is an isomorphism. In particular, if $A$ is finite-dimensional over a field and $S$ is a finite-dimensional simple module with $D=\operatorname{End}_A(S)$, then $A/\operatorname{Ann}_A(S) \cong M_n(D^{\mathrm{op}})$ for $n=\dim_D S$, the opposite being the computation $\operatorname{End}_D(D^n)\cong M_n(D^{\mathrm{op}})$ of §Over a Division Ring applied to a $D$-basis of $S$.</p>
+<p><em>Proof.</em> Density gives surjectivity when the finite topology is discrete, which is the case when $S$ is finite-dimensional over $D$; the kernel is $\operatorname{Ann}_A(S)$; the identification of $\operatorname{End}_D(S)$ with $M_n(D^{\mathrm{op}})$ is the choice of a $D$-basis. $\square$</p>
+<p>This corollary is the precise sense in which a finite-dimensional simple module is the defining module of a matrix algebra. It is the double centralizer statement in the form used by representation theory.</p>
+<h2 id="schurs-lemma-and-simple-modules">Schur's Lemma and Simple Modules</h2>
+<p><strong>Theorem (Schur).</strong> Let $S$ and $T$ be simple left $A$-modules and let $f \in \operatorname{Hom}_A(S,T)$. Then either $f=0$ or $f$ is an isomorphism. Hence</p>
+<p>$$
+\operatorname{Hom}_A(S,T)=\begin{cases} 0, & S \not\cong T,\\ D, & S \cong T,\end{cases}
+$$</p>
+<p>where $D=\operatorname{End}_A(S)$ is a division ring. Therefore $\operatorname{Aut}_A(S)=D^{\times}$.</p>
+<p><em>Proof.</em> The kernel and image of $f$ are submodules, so each is $0$ or everything; a nonzero $f$ has zero kernel and full image, hence is bijective. An $A$-linear bijection has $A$-linear inverse, and a nonzero endomorphism of $S$ is invertible, so $\operatorname{End}_A(S)$ is a division ring whose units are the automorphisms. $\square$</p>
+<p>Consequently, for a simple module the only $A$-linear transformations are zero and invertible, and the invertible ones form the multiplicative group of a division ring. In particular $\operatorname{Aut}_A(S)$ is the unit group of the division ring $D$, not a matrix group, and the size of $D$ depends on the base field: for $A=M_n(\mathbb{C})$ the simple module is $\mathbb{C}^n$ and $D=\mathbb{C}$, so $\operatorname{Aut}_A(\mathbb{C}^n)=\mathbb{C}^{\times}$, while over $\mathbb{R}$ the same matrix algebra has $D=\mathbb{R}$ and automorphism group $\mathbb{R}^{\times}$. Over a non-algebraically-closed field the simple module of a finite-dimensional algebra can have endomorphism ring a larger division algebra.</p>
+<h2 id="the-case-math180">The Case $A=M_n(F)$</h2>
+<p>Let $F$ be a field, let $A=M_n(F)$, and let $S=F^n$ be the defining module of column vectors. Two endomorphism rings arise, one for the simple module and one for the regular module, and their contrast is the heart of the example.</p>
+<p><strong>Theorem.</strong> $\operatorname{End}_{M_n(F)}(S)\cong F$.</p>
+<p><em>Proof.</em> Regard $S$ as the space of column vectors and identify $\operatorname{End}_F(S)$ with $M_n(F)$ acting on the left. An element $T=(t_{kl})$ of $\operatorname{End}_F(S)$ is $A$-linear precisely when $XT=TX$ for every $X \in M_n(F)$, that is, when $T$ lies in the center of $M_n(F)$. To compute that center, let $E_{ij}$ be the matrix units and write $E_{ij}T=TE_{ij}$ in coordinates:</p>
+<p>$$
+\delta_{ki}\,t_{jl}=t_{ki}\,\delta_{jl}.
+$$</p>
+<p>Taking $i=j$ gives $t_{il}=t_{ii}\delta_{il}$, so $T$ is diagonal; taking $i \neq j$, $k=i$, $l=j$ gives $t_{jj}=t_{ii}$, so all diagonal entries are equal. Hence $T=\lambda I$ with $\lambda \in F$, and every scalar matrix is central. Therefore $\operatorname{End}_{M_n(F)}(S)\cong F$. $\square$</p>
+<p><strong>Corollary.</strong> $\operatorname{Aut}_{M_n(F)}(S)\cong F^{\times}$.</p>
+<p>The corollary is the extreme case of Schur's lemma: the only invertible transformations of the defining module commuting with the whole matrix algebra are the nonzero scalars. Passing from $F$-linear to $M_n(F)$-linear therefore discards the whole of $GL_n(F)$ except its center.</p>
+<p><strong>Theorem.</strong> For the regular module,</p>
+<p>$$
+\operatorname{End}_{M_n(F)}(M_n(F))\cong M_n(F)^{\mathrm{op}}\cong M_n(F), \qquad
+\operatorname{Aut}_{M_n(F)}(M_n(F))\cong GL_n(F).
+$$</p>
+<p><em>Proof.</em> The first isomorphism is the theorem on the regular module, applied to $A=M_n(F)$. The transpose $X \mapsto X^{\mathsf T}$ is an $F$-algebra isomorphism $M_n(F)^{\mathrm{op}}\to M_n(F)$, since $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$. Taking units gives $\operatorname{Aut}_{M_n(F)}(M_n(F))\cong GL_n(F)$. $\square$</p>
+<p>Thus the regular module recovers the full matrix group $GL_n(F)$ as its automorphism group, while the simple module contributes only the scalars. Both statements are instances of the general principle that $\operatorname{Aut}_A(M)$ is large when $M$ is the algebra and small when $M$ is rigid.</p>
+<h2 id="over-a-division-ring">Over a Division Ring</h2>
+<p>Let $D$ be a division ring and let $M=D^n$ be a free left $D$-module, so that $A=D$ acts by scalars. Choosing a basis $e_1,\dots,e_n$, a $D$-linear endomorphism is described by its matrix, and the correspondence between endomorphisms and matrices is a ring anti-isomorphism onto $M_n(D)$, equivalently a ring isomorphism</p>
+<p>$$
+\operatorname{End}_D(D^n) \cong M_n(D^{\mathrm{op}}),
+$$</p>
+<p>as one sees by comparing composition with matrix multiplication, or from the general identity $\operatorname{End}_D(M^n)\cong M_n(\operatorname{End}_D(M))$ with $M=D$ and $\operatorname{End}_D(D)\cong D^{\mathrm{op}}$ by the theorem on the regular module. Since every group is isomorphic to its opposite by $g \mapsto g^{-1}$, and $GL_n(D^{\mathrm{op}})$ is the opposite group of $GL_n(D)$, the automorphism group is unambiguous:</p>
+<p>$$
+\operatorname{Aut}_D(D^n)\cong GL_n(D).
+$$</p>
+<p>When $D$ is commutative, $D^{\mathrm{op}}=D$ and the endomorphism ring is $M_n(D)$ without qualification; when $D=\mathbb{H}$, the two are identified by quaternion conjugation in the sense explained below. If instead $A=M_n(D)$ and $M=A$ is the regular module, the theorem of §The Regular Module gives</p>
+<p>$$
+\operatorname{End}_A(A)\cong A^{\mathrm{op}}, \qquad \operatorname{Aut}_A(A)\cong A^{\times}=GL_n(D),
+$$</p>
+<p>the last equality being the definition of $GL_n(D)$ as the group of invertible matrices over a division ring. So $GL_n(D)$ appears as the automorphism group of the regular module over $M_n(D)$, and it is the basic noncommutative linear group of this category.</p>
+<p>A caution on the opposite. For $D$ a field, transposition identifies $M_n(D)$ with its opposite; for $\mathbb{H}$, quaternion conjugation $q \mapsto \bar{q}$ is an anti-automorphism with $\bar{q}q=N(q)$, and applying it entrywise identifies $M_n(\mathbb{H})$ with $M_n(\mathbb{H})^{\mathrm{op}}$. For a general division ring the two opposites may fail to be isomorphic, and this is why $\operatorname{End}_D(D^n)$ is stated with $D^{\mathrm{op}}$. The group $GL_n(D)$ is unaffected, because a group is isomorphic to its opposite.</p>
+<h2 id="worked-case-the-quaternions">Worked Case: The Quaternions</h2>
+<p>The quaternions $\mathbb{H}$ are a division algebra over $\mathbb{R}$, so every $\mathbb{H}$-module is free by <em>Modules</em> §19. Let $M=\mathbb{H}^n$.</p>
+<p><strong>Proposition.</strong> $\operatorname{End}_{\mathbb{H}}(\mathbb{H}^n)\cong M_n(\mathbb{H}^{\mathrm{op}})$, and $\operatorname{Aut}_{\mathbb{H}}(\mathbb{H}^n)\cong GL_n(\mathbb{H})$. In particular $\operatorname{Aut}_{\mathbb{H}}(\mathbb{H})\cong \mathbb{H}^{\times}$, the nonzero quaternions.</p>
+<p>The identification is the one above with $D=\mathbb{H}$, using that $\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$. For $n=1$ it is instructive to see the asymmetry directly, because it is the prototype of the biquaternion case. Regard $\mathbb{H}$ as a left $\mathbb{H}$-module and as a real vector space of dimension four. The endomorphism ring over $\mathbb{R}$ is $\operatorname{End}_{\mathbb{R}}(\mathbb{H})\cong M_4(\mathbb{R})$, of real dimension $16$. The $\mathbb{H}$-linear endomorphisms are the right multiplications $R_q(x)=xq$, and</p>
+<p>$$
+\operatorname{End}_{\mathbb{H}}(\mathbb{H})=\{R_q : q \in \mathbb{H}\}\cong \mathbb{H}^{\mathrm{op}}\cong\mathbb{H},
+$$</p>
+<p>of real dimension $4$. Left multiplication $L_q(x)=qx$ is the module action; it is not $\mathbb{H}$-linear unless $q$ is real, since for non-central $q$ and any $x$, $L_q(q'x)=qq'x$ while $q'L_q(x)=q'qx$, and $qq' \neq q'q$ in general. Thus the image of the algebra inside the $\mathbb{R}$-endomorphism ring is the set of left multiplications, whereas the commutant is the set of right multiplications. This is the simplest visible sign that $\mathbb{H}$ is not commutative, and it says that over a division ring the endomorphism ring of a free module is the matrix ring over the opposite division ring.</p>
+<h2 id="worked-case-the-biquaternions">Worked Case: The Biquaternions</h2>
+<p>Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra, viewed over $\mathbb{C}$, where $\mathbb{B}\cong M_2(\mathbb{C})$. The basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the scalar imaginary $i$ is central, and a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Since $\mathbb{B}$ is a matrix algebra and not a division algebra, its module theory is that of $M_2(\mathbb{C})$, and the transformations of its modules separate sharply into a $\mathbb{C}$-linear part and a $\mathbb{B}$-linear part.</p>
+<p>Let $S=\mathbb{C}^2$ be the defining module. Then $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $S$ by matrices, and:</p>
+<p>$$
+\operatorname{End}_{\mathbb{B}}(S)\cong\mathbb{C}, \qquad \operatorname{Aut}_{\mathbb{B}}(S)\cong\mathbb{C}^{\times}, \qquad
+\operatorname{End}_{\mathbb{C}}(S)=M_2(\mathbb{C})\cong\mathbb{B}.
+$$</p>
+<p>The first two are Schur's lemma and the computation of §The Case $A=M_n(F)$ with $n=2$, $F=\mathbb{C}$. The third is the statement that every $\mathbb{C}$-linear map of $S$ is given by a biquaternion: $\mathbb{B}$ is exactly the full endomorphism ring of its own simple module, by the double centralizer corollary. The contrast is the point. A $\mathbb{C}$-linear endomorphism of $S$ is an arbitrary $2\times2$ complex matrix, a four-complex-dimensional family, and every such matrix is multiplication by an element of $\mathbb{B}$; a $\mathbb{B}$-linear endomorphism is multiplication by a scalar alone, a one-complex-dimensional family. The intermediate group $GL_2(\mathbb{C})$ therefore contains transformations of $S$ that are not $\mathbb{B}$-linear; only its center $\mathbb{C}^{\times}$ survives the restriction.</p>
+<p>For the regular module the theorem on the regular module gives</p>
+<p>$$
+\operatorname{End}_{\mathbb{B}}(\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}\cong\mathbb{B}\cong M_2(\mathbb{C}), \qquad
+\operatorname{Aut}_{\mathbb{B}}(\mathbb{B})\cong\mathbb{B}^{\times}\cong GL_2(\mathbb{C}),
+$$</p>
+<p>using that $\mathbb{B}$ is isomorphic to its opposite (quaternion conjugation is a $\mathbb{C}$-linear anti-automorphism) and that the group of units of $\mathbb{B}$ is the set of elements of nonzero norm, identified with $GL_2(\mathbb{C})$ under the matrix representative. Equivalently $\operatorname{Aut}_{\mathbb{B}}(\mathbb{B})=GL_2(\mathbb{C})$.</p>
+<h3 id="why-the-zero-divisors-obstruct-a-basis">Why the zero divisors obstruct a basis</h3>
+<p>The biquaternion algebra has zero divisors: a nonzero $\tilde{Q}$ is a zero divisor exactly when its norm form vanishes, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=0$. This has an immediate effect on endomorphisms and on bases. In any free module with basis $B$, a basis element $b$ has trivial annihilator: if $ab=0$ then $a$ must vanish, since the coefficient of $b$ in the expansion of $ab$ is the whole of $a$. But a zero divisor $\tilde{Q}$ has $\operatorname{Ann}_{\mathbb{B}}(\tilde{Q})\neq 0$, so $\tilde{Q}$ cannot occur in a basis. More: the cyclic module $\mathbb{B}\tilde{Q}$ is nonzero and not free. A free module of rank $r$ needs at least $r$ generators, so a free quotient of ${}_\mathbb{B}\mathbb{B}$ generated by one element can have rank at most one; and rank one would give $\mathbb{B}\tilde{Q}\cong\mathbb{B}$ with $\tilde{Q}$ the image of $1_{\mathbb{B}}$, forcing $\operatorname{Ann}_{\mathbb{B}}(\tilde{Q})=0$. Hence</p>
+<p>$$
+\tilde{Q} \text{ a zero divisor} \implies \mathbb{B}\tilde{Q} \text{ is a nonzero cyclic module that is not free.}
+$$</p>
+<p>The same argument explains why not every $\mathbb{B}$-module is free and, consequently, why $\operatorname{Aut}_{\mathbb{B}}(M)$ cannot in general be a full linear group. For the regular module the automorphism group is $\mathbb{B}^{\times}$, and the zero divisors are exactly the elements excluded from it: an automorphism is invertible, and an invertible element is never a zero divisor. For the defining module the automorphism group is the scalars, and no zero divisor is a scalar since $N(\lambda)=\lambda^2 \neq 0$ for $\lambda \neq 0$.</p>
+<h3 id="automorphisms-of-the-module-and-of-the-algebra">Automorphisms of the module and of the algebra</h3>
+<p>It is worth recording what $\operatorname{Aut}_{\mathbb{B}}(\mathbb{B})\cong GL_2(\mathbb{C})$ is not. It is the group of $\mathbb{B}$-linear automorphisms of the regular module, and these are the right multiplications by units. The group of $\mathbb{C}$-algebra automorphisms of $\mathbb{B}$ is</p>
+<p>$$
+\operatorname{Aut}_{\mathbb{C}\text{-alg}}(\mathbb{B})\cong PGL(2,\mathbb{C}),
+$$</p>
+<p>by the Skolem–Noether theorem, and over $\mathbb{R}$ it is $PGL(2,\mathbb{C})\rtimes\mathbb{Z}/2$; these are computed . The two groups differ: $GL_2(\mathbb{C})$ and $PGL(2,\mathbb{C})$ have different dimensions, and an algebra automorphism need not be a module automorphism of the regular module, nor conversely. The module automorphism group acts on the module and commutes with the algebra; the algebra automorphism group acts on the algebra and preserves its product.</p>
+<h2 id="transport-along-morita-equivalence">Transport along Morita Equivalence</h2>
+<p>An equivalence of module categories carries endomorphism rings and automorphism groups across. Let $A$ and $B$ be $R$-algebras and let</p>
+<p>$$
+F: \operatorname{Mod}(A) \to \operatorname{Mod}(B)
+$$</p>
+<p>be an $R$-linear equivalence, as . Because an equivalence is fully faithful and additive, it induces a ring isomorphism</p>
+<p>$$
+\operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_B(F(M)), \qquad f \longmapsto F(f),
+$$</p>
+<p>for every left $A$-module $M$, and therefore a group isomorphism $\operatorname{Aut}_A(M)\cong\operatorname{Aut}_B(F(M))$. In particular the whole representation theory of the endomorphism rings is a Morita invariant, and the examples above transport: the simple module of $M_n(A)$ corresponds under the equivalence to the simple module of $A$, with the same endomorphism division ring, which is why $\operatorname{End}_{M_n(F)}(F^n)\cong F$ agrees with the case $n=1$.</p>
+<p>The standard instance is the equivalence between $\operatorname{Mod}(A)$ and $\operatorname{Mod}(M_n(A))$, whose inverse functors are</p>
+<p>$$
+S \longmapsto A^n \otimes_A S, \qquad T \longmapsto \operatorname{Hom}_{M_n(A)}(A^n, T),
+$$</p>
+<p>with $A^n$ regarded as an $(M_n(A),A)$-bimodule. Under it the defining module $S=F^n$ of $M_n(F)$ corresponds to $F$ as a module over $F$, and the endomorphism rings match: $\operatorname{End}_F(F)\cong F$. For the biquaternion algebra, this is the algebraic reason the module theory of $\mathbb{B}\cong M_2(\mathbb{C})$ reduces to the module theory of $\mathbb{C}$: the two algebras are Morita equivalent, and $\operatorname{Aut}_{\mathbb{B}}$ of a module is $\operatorname{Aut}_{\mathbb{C}}$ of the corresponding complex vector space.</p>
+<h2 id="automorphisms-and-representations">Automorphisms and Representations</h2>
+<p>The original meaning of a representation of an algebra is a homomorphism $\rho: A \to \operatorname{End}_F(V)$ of $F$-algebras. In the language of this category it is the same thing as a left module structure on $V$, and the endomorphism ring is the commutant:</p>
+<p>$$
+\operatorname{End}_A(V)=\rho(A)'=\{T \in \operatorname{End}_F(V) : T\rho(a)=\rho(a)T \text{ for all } a\}.
+$$</p>
+<p>The amount by which $\rho$ fails to be surjective is measured exactly by the size of the commutant. If $V$ is finite-dimensional over an algebraically closed field $F$ and is simple, Schur's lemma gives $\operatorname{End}_A(V)=F$, and the density theorem gives that $\rho$ is surjective, so $A/\ker \rho \cong \operatorname{End}_F(V)$: an irreducible finite-dimensional representation over an algebraically closed field is a quotient of the algebra, and the algebra acts as the whole endomorphism ring of its carrier. If $V$ is not simple, the commutant is the ring of intertwiners of the semisimple decomposition and is a product of matrix rings over the endomorphism division rings of the simple constituents.</p>
+<p>The group $\operatorname{Aut}_A(V)$ is the group of invertible <strong>intertwining operators</strong>, that is, of equivalences of the representation with itself. For a simple representation it is the unit group of a division ring, by Schur's lemma; for a direct sum $V=S_1\oplus\cdots\oplus S_k$ of pairwise non-isomorphic simple modules it is the product $\prod_i \operatorname{Aut}_A(S_i)$ of division-ring unit groups, since there are no nonzero maps between distinct simple modules; and when repeated simple summands occur, matrices over the division rings appear, by the theorem of §The Case $A=M_n(F)$ applied in each isotypic component. This is the general shape of $\operatorname{Aut}_A(M)$ for a semisimple module, and it is developed .</p>
+<h2 id="summary">Summary</h2>
+<p>For a left $A$-module $M$, the endomorphisms $\operatorname{End}_A(M)$ form a unital $R$-algebra, and its units are the automorphisms $\operatorname{Aut}_A(M)$. The endomorphism ring is the commutant of the action of $A$ inside $\operatorname{End}_R(M)$, so it depends only on the faithful quotient $A/\operatorname{Ann}_A(M)$; when $A=R$ acts by scalars every $R$-linear map is $A$-linear, and the inclusion $\operatorname{End}_A(M)\subseteq\operatorname{End}_R(M)$ is strict as soon as the action of $A$ is larger than the scalars, that is $\rho(A)\supsetneq R\cdot\mathrm{id}_M$; a module on which $A$ happens to act through the base ring has $\operatorname{End}_A(M)=\operatorname{End}_R(M)$. For the regular module, right multiplication gives $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ and $\operatorname{Aut}_A({}_A A)\cong A^{\times}$, so right multiplications are the $\mathbb{H}$-linear endomorphisms of $\mathbb{H}$ and the images of the module action (left multiplications) are not, unless central.</p>
+<p>Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for simple $S$, with $\operatorname{Aut}_A(S)$ its unit group, and the density theorem gives the converse structure: a finite-dimensional simple module over a finite-dimensional algebra is the defining module of a matrix algebra over the opposite of that division ring, $A/\operatorname{Ann}_A(S)\cong M_n(D^{\mathrm{op}})$. For $A=M_n(F)$ the defining module has commutant $F$ and automorphism group $F^{\times}$, while the regular module has endomorphism ring $M_n(F)^{\mathrm{op}}$ and automorphism group $GL_n(F)$; over a division ring $D$ the free module $D^n$ has automorphism group $GL_n(D)$, and the regular module over $M_n(D)$ also has automorphism group $GL_n(D)$. The worked biquaternion case separates the $\mathbb{C}$-linear from the $\mathbb{B}$-linear: $\operatorname{End}_{\mathbb{C}}(S)=\mathbb{B}$ while $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, and the zero divisors of $\mathbb{B}$, being exactly the non-units, obstruct bases because a basis element must have trivial annihilator. All of it transports along Morita equivalence, which preserves endomorphism rings and automorphism groups; hence the equivalence of $\operatorname{Mod}(\mathbb{B})$ with $\operatorname{Mod}(\mathbb{C})$ explains the reduction of the biquaternion module theory to complex linear algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity, the base ring</td>
+</tr>
+<tr>
+<td>$F$</td>
+<td>a field</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>unital associative $R$-algebra, generally noncommutative</td>
+</tr>
+<tr>
+<td>$A^{\mathrm{op}}$</td>
+<td>opposite algebra, product $a \cdot_{\mathrm{op}} b=ba$</td>
+</tr>
+<tr>
+<td>$A^{\times}$</td>
+<td>group of units of $A$</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>center of $A$</td>
+</tr>
+<tr>
+<td>$M$, $N$, $S$</td>
+<td>left $A$-modules; $S$ simple</td>
+</tr>
+<tr>
+<td>${}_A A$</td>
+<td>left regular module</td>
+</tr>
+<tr>
+<td>$\rho : A \to \operatorname{End}_R(M)$</td>
+<td>the action homomorphism</td>
+</tr>
+<tr>
+<td>$\rho(A)'$</td>
+<td>commutant, $=\{f : f\rho(a)=\rho(a)f\}$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(M)$</td>
+<td>endomorphism ring of $M$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_A(M)$</td>
+<td>automorphism group, $=\operatorname{End}_A(M)^{\times}$</td>
+</tr>
+<tr>
+<td>$R_a(b)=ba$</td>
+<td>right multiplication, an endomorphism of ${}_A A$</td>
+</tr>
+<tr>
+<td>$L_a(b)=ab$</td>
+<td>left multiplication, the module action</td>
+</tr>
+<tr>
+<td>$M_n(D)$</td>
+<td>matrix ring over a division ring $D$</td>
+</tr>
+<tr>
+<td>$GL_n(D)$</td>
+<td>group of invertible $n \times n$ matrices over $D$</td>
+</tr>
+<tr>
+<td>$D=\operatorname{End}_A(S)$</td>
+<td>division ring of a simple module</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>quaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>biquaternions, $\cong M_2(\mathbb{C})$ over $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$S=\mathbb{C}^2$</td>
+<td>defining module of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
+<td>norm form of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Mod}(A)$</td>
+<td>category of left $A$-modules</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for endomorphism rings, the density theorem, and the structure of the regular module.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1989), for the density and double centralizer theorems in the module setting.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the endomorphism ring of a free module over a division ring and linear algebra over a skew field.</li>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the Jacobson density theorem and its consequences.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the density theorem in its original form.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for Schur's lemma, division rings as endomorphism rings, and semisimple modules.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for the centralizer description of $\operatorname{End}_A(M)$.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the endomorphism rings of simple modules over finite-dimensional algebras.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the quaternion and biquaternion linear algebra used in the worked cases.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

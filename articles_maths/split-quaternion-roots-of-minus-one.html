@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Roots of Minus One — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-roots-of-minus-one"><strong>Split-Quaternion Roots of Minus One</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article determines the solutions of the equation $\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.</p>
+<p>The split-quaternion algebra, its basis, its vector subspace $V$, its norm form $N$, its matrix model $\Phi$, its idempotents $u_\pm$ and its conjugation are assumed from <em>Split-Quaternion Algebra</em>. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Zero Divisors</em>; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in <em>Split-Quaternions and Hyperbolic Geometry</em>, and the double cover of the Lorentz group that acts on it in <em>Split-Quaternion Rotations and the Lorentz Group</em>. Nothing physical is invoked.</p>
+<h2 id="the-equation-and-the-reduction-to-the-vector-subspace">The Equation and the Reduction to the Vector Subspace</h2>
+<p><strong>Theorem (The Solutions).</strong> Let $\xi = a + \mathbf{u}$ with $a \in \mathbb{R}$ and $\mathbf{u} \in V$. Then $\xi^2 = -1$ if and only if</p>
+<p>$$
+a = 0 \quad \text{and} \quad N(\mathbf{u}) = 1 .
+$$</p>
+<p>Hence the solution set is</p>
+<p>$$
+\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\} = \{b e_1 + c e_2 + d e_3 : b^2 - c^2 - d^2 = 1\},
+$$</p>
+<p>a subset of the vector subspace. No solution has a nonzero scalar part.</p>
+<p><strong>Proof.</strong> For an element of $V$ the square is $-\!N$ times the identity, by (<em>Split-Quaternion Algebra</em>, §<em>The Restricted Form on the Vector Subspace</em>); so for $\xi = a + \mathbf{u}$,</p>
+<p>$$
+\xi^2 = a^2 + 2a\mathbf{u} + \mathbf{u}^2 = \big(a^2 - N(\mathbf{u})\big) + 2a\mathbf{u},
+$$</p>
+<p>where the first parenthesis is scalar and the second term is a vector. The equation $\xi^2 = -1$ splits into the two equations</p>
+<p>$$
+a^2 - N(\mathbf{u}) = -1, \qquad 2a\mathbf{u} = 0 .
+$$</p>
+<p>If $a \neq 0$ the second equation gives $\mathbf{u} = 0$, and the first then gives $a^2 = -1$, which has no real solution. Hence $a = 0$, and the first equation becomes $-N(\mathbf{u}) = -1$, that is $N(\mathbf{u}) = 1$. Conversely these two conditions give $\xi^2 = -N(\xi) = -1$. $\square$</p>
+<p><strong>Corollary (The Root Set Is a Two-Sheeted Hyperboloid).</strong> The solution set is a surface in the three-dimensional vector space $V$, namely the level set $N = 1$ of the signature-$(2,1)$ form, a hyperboloid of two sheets</p>
+<p>$$
+\mathcal{R}_{-1} = \{b^2 - c^2 - d^2 = 1\} = \{b \geq 1\} \cup \{b \leq -1\},
+$$</p>
+<p>the two sheets being distinguished by the sign of the coefficient $b$ of $e_1$. The set is not connected, and each sheet is diffeomorphic to a plane.</p>
+<p><strong>Proof.</strong> The two sheets are the intersections of the level set with the closed half-spaces $b \geq 1$ and $b \leq -1$; on the first, $b = \sqrt{1 + c^2 + d^2}$, and the map $(\xi_2, \xi_3) \mapsto \big(\sqrt{1 + \xi_2^2 + \xi_3^2}, \xi_2, \xi_3\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second. $\square$</p>
+<p>The solutions therefore have norm one, $N(\xi) = 1$, so by the invertibility criterion every solution is a <strong>unit</strong> and none is a zero divisor. This is the first point of contact with <em>Split-Quaternion Zero Divisors</em> and it is taken up again in <em>The Relation to the Idempotents and to the Zero Divisors</em> below.</p>
+<h2 id="identification-with-the-complex-structures-of-the-plane">Identification with the Complex Structures of the Plane</h2>
+<p>The matrix model turns the equation into a familiar one.</p>
+<p><strong>Definition.</strong> A <strong>complex structure</strong> on $\mathbb{R}^2$ is a real-linear map $J : \mathbb{R}^2 \to \mathbb{R}^2$ with $J^2 = -\mathrm{id}$. It makes $\mathbb{R}^2$ a one-dimensional complex vector space with multiplication $(p + iq)\cdot v = pv + qJv$.</p>
+<p><strong>Theorem (The Root Set Is the Set of Complex Structures).</strong> Under the isomorphism $\Phi : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$, the solutions of $\xi^2 = -1$ correspond exactly to the complex structures of $\mathbb{R}^2$:</p>
+<p>$$
+\Phi(\mathcal{R}_{-1}) = \{X \in M_2(\mathbb{R}) : X^2 = -I\} .
+$$</p>
+<p>A solution $\xi$ and its image $X = \Phi(\xi)$ satisfy $\operatorname{tr} X = 0$ and $\det X = 1$, and conversely every matrix with trace $0$ and determinant $1$ is an image of a solution.</p>
+<p><strong>Proof.</strong> The model is an algebra isomorphism carrying $-1$ to $-I$, so $\xi^2 = -1$ is equivalent to $X^2 = -I$. For the trace and determinant, the Cayley–Hamilton identity for a $2 \times 2$ matrix reads $X^2 - (\operatorname{tr}X) X + (\det X) I = 0$. If $X^2 = -I$, then $(\det X - 1) I = (\operatorname{tr} X) X$. If $\operatorname{tr} X \neq 0$, the identity exhibits $X$ as a scalar matrix, $X = \lambda I$, and then $X^2 = \lambda^2 I = -I$ has no real solution; so $\operatorname{tr} X = 0$, and then the identity gives $\det X = 1$. Conversely, if $\operatorname{tr} X = 0$ and $\det X = 1$, Cayley–Hamilton reads $X^2 + I = 0$. $\square$</p>
+<p><strong>Corollary (The Root Set as Complex Lines).</strong> For each solution $\xi$, the subalgebra generated by $\xi$ is</p>
+<p>$$
+\mathbb{R}[\xi] = \{p + q\xi : p, q \in \mathbb{R}\} \cong \mathbb{C},
+$$</p>
+<p>a copy of the complex numbers inside $\mathbb{H}_{\mathrm{s}}$, and every subalgebra of $\mathbb{H}_{\mathrm{s}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\xi$ is again a solution and $\mathbb{R}[-\xi] = \mathbb{R}[\xi]$, so the map $\xi \mapsto \mathbb{R}[\xi]$ induces a bijection between the antipodal pairs $\{\pm\xi\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different sheets.</p>
+<p><strong>Proof.</strong> $\xi^2 = -1$ gives the isomorphism $p + q\xi \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\xi]$ with square $-1$ are the $p + q\xi$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\xi$; and $\xi$ and $-\xi$ lie on the two sheets, their coefficients of $e_1$ being opposite. $\square$</p>
+<p>The identification is the reason the matrix model is decisive here: the condition $\xi^2 = -1$ is a condition on a linear map, and the statement that the solutions are the complex structures of the plane is invisible in the generator description $b^2 - c^2 - d^2 = 1$ but immediate in the matrix description.</p>
+<h2 id="the-root-set-as-a-conjugacy-class">The Root Set as a Conjugacy Class</h2>
+<p><strong>Theorem (A Single Conjugacy Class).</strong> All solutions of $\xi^2 = -1$ are conjugate to one another under the group of units:</p>
+<p>$$
+\mathcal{R}_{-1} = \{g e_1 g^{-1} : g \in \mathbb{H}_{\mathrm{s}}^{\times}\} .
+$$</p>
+<p>The set is a single conjugacy class of the group $\mathbb{H}_{\mathrm{s}}^{\times}$, and it contains $e_1$, so it is the conjugacy class of $e_1$.</p>
+<p><strong>Proof.</strong> Transport the statement to matrices. Let $X^2 = -I$ and let $v \neq 0$. The vectors $v$ and $Xv$ are linearly independent: if $Xv = \lambda v$ for a real $\lambda$, then applying $X$ gives $-v = \lambda Xv = \lambda^2 v$, so $\lambda^2 = -1$, impossible. In the basis $(v, Xv)$ the map $X$ has the matrix</p>
+<p>$$
+\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \Phi(e_1),
+$$</p>
+<p>since $Xv$ has coordinates $(0,1)$ and $X(Xv) = -v$ has coordinates $(-1,0)$. Hence $X$ is the conjugate of $\Phi(e_1)$ by the change-of-basis matrix, and $X$ is conjugate to $\Phi(e_1)$ within $GL_2(\mathbb{R})$. Transporting through $\Phi$ gives the statement. $\square$</p>
+<p><strong>Corollary (The Two Orbits of the Norm-One Group).</strong> The norm-one group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two sheets of the hyperboloid. The full unit group $\mathbb{H}_{\mathrm{s}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $e_2$, since $e_2 e_1 e_2^{-1} = -e_1$.</p>
+<p><strong>Proof.</strong> The first statement is the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the connectedness of the two sheets. The action of $e_2$ is the computation $e_2 e_1 = -e_3 = -e_1 e_2$, so $e_2 e_1 e_2^{-1} = -e_1$; here $e_2^{-1} = e_2$ and $N(e_2) = -1$. $\square$</p>
+<h2 id="the-root-set-as-a-homogeneous-space">The Root Set as a Homogeneous Space</h2>
+<p><strong>Theorem (The Homogeneous Space).</strong> Let $\operatorname{Cent}(e_1) = \{g \in \mathbb{H}_{\mathrm{s}}^{\times} : g e_1 = e_1 g\}$ be the centraliser of $e_1$ in the group of units. Then $\operatorname{Cent}(e_1)$ is the group of nonzero elements of the copy $\mathbb{R}[e_1] \cong \mathbb{C}$ of the complex numbers, so that</p>
+<p>$$
+\operatorname{Cent}(e_1) \cong \mathbb{C}^{\times},
+$$</p>
+<p>and the map $g \mapsto g e_1 g^{-1}$ induces a bijection of homogeneous spaces</p>
+<p>$$
+\mathcal{R}_{-1} \cong \mathbb{H}_{\mathrm{s}}^{\times} / \operatorname{Cent}(e_1) \cong GL_2(\mathbb{R}) / GL_1(\mathbb{C}).
+$$</p>
+<p>The two sides are real surfaces: $\dim_{\mathbb{R}} GL_2(\mathbb{R}) = 4$ and $\dim_{\mathbb{R}} \mathbb{C}^{\times} = 2$, so the quotient has real dimension $2$, matching the dimension of the hyperboloid.</p>
+<p><strong>Proof.</strong> In the matrix model $e_1$ corresponds to the rotation matrix $J$. A matrix $M$ commutes with $J$ exactly when $M$ has the form $\begin{pmatrix} p & q \\ -q & p \end{pmatrix} = p I + q J$ with $(p,q) \neq (0,0)$, since the equations $MJ = JM$ are $r = -q$ and $s = p$; such matrices are precisely the nonzero complex numbers acting on $\mathbb{R}^2 \cong \mathbb{C}$, and they are invertible with determinant $p^2 + q^2$. Hence the centraliser is $GL_1(\mathbb{C}) \cong \mathbb{C}^{\times}$. The orbit of $e_1$ under conjugation is the whole root set by the theorem that the root set is a single conjugacy class, and the stabiliser of $e_1$ is the centraliser, so the orbit–stabiliser correspondence gives the displayed bijection. $\square$</p>
+<p><strong>Corollary (Each Sheet Is a Hyperbolic Plane).</strong> The quotient $\mathrm{SL}_2(\mathbb{R}) / SO(2)$ is a model of the hyperbolic plane, and each sheet of $\mathcal{R}_{-1}$ is a copy of it, the copy carried by the sheet being acted on transitively by $\mathrm{SL}_2(\mathbb{R})$ with stabiliser $SO(2)$.</p>
+<p><strong>Proof.</strong> The stabiliser of $e_1$ in the norm-one group is $\operatorname{Cent}(e_1) \cap U = GL_1(\mathbb{C}) \cap \{N=1\}$, which is the group of unit complex numbers, isomorphic to $SO(2)$; the orbit of $e_1$ under $U$ is one sheet by the preceding corollary, and the orbit–stabiliser correspondence gives it as $SO(2)$-cosets. The identification of $\mathrm{SL}_2(\mathbb{R})/SO(2)$ with the hyperbolic plane is that of <em>Hyperbolic Geometry</em>. $\square$</p>
+<p>The name for the object is therefore: <strong>the root set is the conjugacy class of $e_1$, a homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times} / \mathbb{C}^{\times}$, whose two connected components are two copies of the hyperbolic plane.</strong></p>
+<h2 id="the-relation-to-the-idempotents-and-to-the-zero-divisors">The Relation to the Idempotents and to the Zero Divisors</h2>
+<h3 id="the-roots-of-math183">The Roots of $+1$</h3>
+<p>The companion equation clarifies the role of the two signs.</p>
+<p><strong>Proposition (The Roots of $+1$).</strong> Let $\eta = a + \mathbf{u}$. Then $\eta^2 = +1$ if and only if either $a = \pm 1$ and $\mathbf{u} = 0$, or $a = 0$ and $N(\mathbf{u}) = -1$. The non-central solutions are the vectors of the <strong>spacelike unit hyperboloid</strong> $N = -1$ in $V$, a one-sheeted hyperboloid; the central solutions are $\pm 1$.</p>
+<p><strong>Proof.</strong> The same splitting as in the proof of the main theorem gives $a^2 - N(\mathbf{u}) = 1$ and $2a\mathbf{u} = 0$. If $\mathbf{u} = 0$ then $a = \pm 1$; if $\mathbf{u} \neq 0$ then $a = 0$ and $N(\mathbf{u}) = -1$. $\square$</p>
+<p><strong>Theorem (The Idempotents Come from the Roots of $+1$).</strong> Let $\eta \in V$ be a solution of $\eta^2 = 1$. Then</p>
+<p>$$
+p_+ = \tfrac{1}{2}(1 + \eta), \qquad p_- = \tfrac{1}{2}(1 - \eta)
+$$</p>
+<p>are idempotents with $p_+ + p_- = 1$ and $p_+ p_- = 0$, and they are zero divisors. The idempotents $u_\pm$ of (<em>Split-Quaternion Algebra</em>, §<em>The Idempotents</em>) are the case $\eta = e_2$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.</p>
+<p><strong>Proof.</strong> The identities are the same computation as for $u_\pm$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The norm is</p>
+<p>$$
+N\big(\tfrac12(1+\eta)\big) = \tfrac14\big(N(1) + 2B(1,\eta) + N(\eta)\big) = \tfrac14(1 + 0 - 1) = 0,
+$$</p>
+<p>so the idempotent is a zero divisor, and the same holds for $p_-$.</p>
+<p>For the converse, let $p$ be a non-scalar idempotent. A non-scalar idempotent of $M_2(\mathbb{R})$ has minimal polynomial dividing $x^2 - x$ but not equal to $x$ or to $x - 1$, so its eigenvalues are $0$ and $1$ and its trace is $1$; equivalently $\operatorname{rank} \Phi(p) = 1$ and $\operatorname{tr}\Phi(p) = 1$. For every $2 \times 2$ matrix the adjugate is $\operatorname{adj} M = (\operatorname{tr} M) I - M$, by direct computation, so for $p$ the identity $\Phi(\bar{p}) = \operatorname{adj}\Phi(p)$ of (<em>Split-Quaternion Algebra</em>, §<em>The Conjugation</em>) gives $\bar{p} = \operatorname{tr}(p) - p = 1 - p$. Put $\eta = 2p - 1$. Then</p>
+<p>$$
+\bar{\eta} = 2\bar{p} - 1 = 2(1 - p) - 1 = 1 - 2p = -\eta,
+$$</p>
+<p>so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\eta^2 = 4p^2 - 4p + 1 = 1$. The element $p$ is recovered from $\eta$ as $\tfrac12(1+\eta)$, so the correspondence is bijective. $\square$</p>
+<h3 id="the-roots-are-not-zero-divisors">The Roots Are Not Zero Divisors</h3>
+<p><strong>Theorem (Disjointness and Generation).</strong> No solution of $\xi^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\xi$ and each idempotent $p$ of a root of $+1$, the product $\xi p$ is a nonzero zero divisor, since</p>
+<p>$$
+N(\xi p) = N(\xi) N(p) = 1 \cdot 0 = 0 .
+$$</p>
+<p><strong>Proof.</strong> $N(\xi) = 1 \neq 0$, so $\xi$ is a unit and not a zero divisor, by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>. The product $\xi p$ is nonzero because $\xi$ is invertible and $p \neq 0$, and its norm is zero by multiplicativity and the vanishing of $N(p)$. $\square$</p>
+<p>The picture is therefore the following. The roots of $+1$ in $V$ form a one-sheeted hyperboloid and produce the idempotents, which are zero divisors and split the algebra; the roots of $-1$ form a two-sheeted hyperboloid, produce the copies of $\mathbb{C}$, and are units. The two loci are disjoint hyperboloids in the same three-dimensional space $V$, one of signature $+1$ in its defining equation and one of norm $-1$.</p>
+<h2 id="comparison-with-the-quaternion-and-biquaternion-cases">Comparison with the Quaternion and Biquaternion Cases</h2>
+<h3 id="the-quaternion-case">The Quaternion Case</h3>
+<p>For the quaternion algebra the equation has a different solution set.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>equation</td>
+<td>$\xi^2 = -1$</td>
+<td>$\xi^2 = -1$</td>
+</tr>
+<tr>
+<td>solution set</td>
+<td>the unit sphere of $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$</td>
+<td>the two-sheeted hyperboloid $\{N=1\} \subset V$</td>
+</tr>
+<tr>
+<td>topology</td>
+<td>$S^2$, compact and connected</td>
+<td>two planes, non-compact and disconnected</td>
+</tr>
+<tr>
+<td>conjugacy class</td>
+<td>single class under $Sp(1)$</td>
+<td>single class under $\mathbb{H}_{\mathrm{s}}^{\times}$</td>
+</tr>
+<tr>
+<td>homogeneous space</td>
+<td>$Sp(1)/U(1) \cong S^2$</td>
+<td>$\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, two hyperbolic planes</td>
+</tr>
+<tr>
+<td>generated algebra</td>
+<td>a copy of $\mathbb{C}$</td>
+<td>a copy of $\mathbb{C}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The quaternion column is the standard description of the pure imaginary units of norm one, recorded in <em>Quaternion Algebra</em>, §<em>The Norm Form</em>: for a pure quaternion $\mathbf{u}$ one has $\mathbf{u}^2 = -N(\mathbf{u})$, so the solutions are the elements of the unit sphere of the imaginary part. The compactness is lost in the split case, and the connectedness of the root set is lost with it; what survives is the statement that the solutions are the complex structures of a plane, which in the quaternion case are the complex structures of the imaginary three-space and in the split case are those of a real two-space.</p>
+<h3 id="the-biquaternion-case">The Biquaternion Case</h3>
+<p>The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a later system of Part V, treated under Biquaternions, and nothing of it is used here. One structural remark is available from the conventions alone: $\mathbb{B}$ is an algebra over the field $\mathbb{C}$, and the equation $\xi^2 = -1$ over a complex algebra has the two central solutions $\xi = \pm i$ in addition to whatever further solutions the embedded real structure supplies; the root set is therefore strictly larger there, and its classification belongs to the later category. The present article is complete for the algebra over $\mathbb{R}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The solutions of $\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $N(\xi) = 1$, that is, the points of the two-sheeted hyperboloid $b^2 - c^2 - d^2 = 1$; no solution has a nonzero scalar part, and every solution has norm one, so every solution is a unit and none is a zero divisor.</p>
+<p>Under the matrix model the solutions correspond to the complex structures of $\mathbb{R}^2$, the matrices $X$ with $X^2 = -I$, equivalently the matrices with trace $0$ and determinant $1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\xi$ and $-\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.</p>
+<p>The solutions form a single conjugacy class, the class of $e_1$; the stabiliser of $e_1$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times} \cong GL_2(\mathbb{R})/GL_1(\mathbb{C})$, of real dimension two. The norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two sheets, and each sheet is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.</p>
+<p>The roots of $+1$ play the companion role: they are $\pm 1$ together with the one-sheeted hyperboloid $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $u_\pm$ are the case $\eta = e_2$. Every solution of $\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected sphere $S^2$ and the homogeneous space is $Sp(1)/U(1)$; the biquaternion case is a later system of Part V, named and pointed forward.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\xi^2 = -1$</td>
+<td>the equation of the article</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\}$</td>
+<td>the solution set</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$b^2 - c^2 - d^2 = 1$</td>
+<td>the two-sheeted hyperboloid in the basis $e_1,e_2,e_3$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$X^2 = -I$</td>
+<td>the corresponding equation for matrices</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$GL_1(\mathbb{C})$</td>
+<td>the centraliser of a complex structure, $\cong \mathbb{C}^{\times}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\operatorname{Cent}(e_1)$</td>
+<td>the centraliser of $e_1$, $\cong \mathbb{C}^{\times}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathcal{R}_{-1} \cong \mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$</td>
+<td>the root set as a homogeneous space</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\eta^2 = +1$, $N(\eta) = -1$</td>
+<td>the root set of $+1$ in $V$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\tfrac12(1 \pm \eta)$</td>
+<td>the idempotents attached to a root of $+1$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$U = \{N=1\} \cong \mathrm{SL}_2(\mathbb{R})$</td>
+<td>the norm-one group</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the vector subspace</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$</td>
+<td>later Part V systems, named only</td>
+<td><em>The Number Systems as Clifford Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the square roots of $-1$ in low-dimensional Clifford algebras and their role as complex structures.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the conjugacy classes of the pseudo-orthogonal groups and the orbit–stabiliser description.</li>
+<li>Igor R. Shafarevich, <em>Basic Algebraic Geometry 1</em> (Springer, 2013), for the hyperboloids and the quadrics of a pseudo-Euclidean space.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the comparison between the definite and indefinite cases of the roots of $-1$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

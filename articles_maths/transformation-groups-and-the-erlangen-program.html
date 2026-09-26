@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformation Groups and the Erlangen Program — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="transformation-groups-and-the-erlangen-program"><strong>Transformation Groups and the Erlangen Program</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article stands in <em>Geometry and Manifolds</em>, immediately after <em>Homogeneous Spaces</em>, and it introduces Klein's principle: a geometry is the study of the invariants of a transformation group. The two ingredients are Part II objects and are already available. The homogeneous space $G/H$ belongs to <em>Homogeneous Spaces</em>, above, and is cited rather than reintroduced; the Lie group $G$ and its closed subgroups belong to <em>Lie Groups</em>, above; and the hierarchy of symmetry groups, $\operatorname{Sym}(X)$ and $\operatorname{Aut}(X)$ and the automorphism groups of structures on $X$, belongs to Part I, in <em>Transformation Groups</em>, and is likewise cited. What this article adds is the principle that organises the classical geometries: the passage from a group to the geometry of its invariants, and the pair $(G,H)$ whose coset space is the space of the geometry.</p>
+<p>It does not construct $G/H$ again, and it does not develop the structure theory of Lie groups; it reads the classical geometries through the pairs that define them, states the correspondence between a geometry and its automorphism group, and records the limits of the principle. The geometries of constant curvature, and the sphere and the hyperbolic space that carry them, are <em>Euclidean Geometry</em>, <em>Spherical Geometry</em> and <em>Hyperbolic Geometry</em>, earlier in this category.</p>
+<hr />
+<h2 id="kleins-principle">Klein's Principle</h2>
+<p><strong>Definition.</strong> A <strong>Klein geometry</strong> is a pair $(G, H)$ together with the homogeneous space $G/H$, where $G$ is a Lie group and $H$ is a closed subgroup of $G$. The <strong>geometry</strong> of the pair is the study of the structures on $G/H$ that are invariant under the left action of $G$, and its <strong>objects</strong> are the subsets of $G/H \times \cdots \times G/H$ that are invariant under the diagonal action. Two Klein geometries are <strong>isomorphic</strong> if there is an isomorphism of pairs, that is an isomorphism $G \to G'$ carrying $H$ to $H'$.</p>
+<p><strong>Remark.</strong> The pair is more than the space: different pairs can have homeomorphic coset spaces and different geometries. The subgroup $H$ is the structure, in the sense that the invariant structures on $G/H$ correspond to the $H$-invariant structures on the tangent space at the base point: a $G$-invariant tensor field on $G/H$ is the same thing as a tensor on $T_{eH}G/H$ fixed by the isotropy action of $H$.</p>
+<p><strong>Theorem (the principle of Klein).</strong> Let $(G,H)$ be a Klein geometry. Then the group of the automorphisms of the geometry that commute with the action of $G$, that is the group of homeomorphisms $\varphi$ of $G/H$ with $\varphi(gx) = g\varphi(x)$ for every $g \in G$, is $N_G(H)/H$, and the map</p>
+<p>$$
+G \to \operatorname{Aut}(G/H), \qquad g \mapsto (xH \mapsto gxH) ,
+$$</p>
+<p>has kernel the largest normal subgroup of $G$ contained in $H$. In particular the action of $G$ on $G/H$ is faithful exactly when $H$ contains no nontrivial normal subgroup of $G$.</p>
+<p><strong>Proof.</strong> That the action is well defined and transitive is the construction of $G/H$ in <em>Homogeneous Spaces</em>, above. An element of the kernel fixes $eH$, hence lies in $H$, and therefore lies in every conjugate of $H$, that is in the largest normal subgroup of $G$ inside $H$; conversely such a normal subgroup acts trivially. For the first statement, an equivariant homeomorphism $\varphi$ is determined by the image of the base point, since $G$ acts transitively: if $\varphi(eH) = nH$ then $\varphi(xH) = x\varphi(eH) = xnH$, so $\varphi$ is the map $xH \mapsto xnH$; conversely the map $xH \mapsto xnH$ is well defined exactly when $n$ normalises $H$, since $xH = x'H$ gives $x' = xh$ and $x' nH = xhnH$, which equals $xnH$ for every $h \in H$ exactly when $n^{-1}hn \in H$ for every $h$, that is when $n \in N_G(H)$; and it is equivariant exactly when $gnH = ngH$ for all $g \in G$, which is the same condition. Two such maps coincide exactly when $nH = n'H$. $\square$</p>
+<p><strong>Remark.</strong> The theorem is the exact statement, and it is not the statement that <em>every</em> homeomorphism preserving the $G$-invariant structures lies in $N_G(H)/H$. The pair is part of the data: for the Euclidean row of the table below, the group of the pair is $E(n)$ with $H = O(n)$, and $O(n)$ is its own normaliser in $E(n)$, so the only homeomorphism of $\mathbb{R}^n$ equivariant for the whole Euclidean group is the identity, whereas the affine maps of $\mathbb{R}^n$ preserve the flat structure without being equivariant for the action of $E(n)$. What a Klein geometry supplies is the transitive action of $G$ and the geometry on the tangent space at the base point, fixed by the isotropy action of $H$.</p>
+<p><strong>Example.</strong> For the sphere, $G = O(n+1)$ and $H = O(n)$ is the stabiliser of a point, and the kernel is trivial since $O(n)$ contains no nontrivial normal subgroup of $O(n+1)$; the invariant structure is the round metric. For the projective space, $G = PGL(n+1,\mathbb{R})$ and $H$ is the stabiliser of a point of $\mathbb{P}^n$, a parabolic subgroup, and the invariant structure is the incidence relation.</p>
+<h3 id="the-correspondence-with-automorphism-groups">The Correspondence with Automorphism Groups</h3>
+<p><strong>Remark.</strong> The principle supplies a map in the other direction as well. Given a space $X$ with a notion of structure, the geometry of $X$ is studied through the group $\operatorname{Aut}(X)$ of the transformations preserving the structure, and the hierarchy</p>
+<p>$$
+\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots
+$$</p>
+<p>of Part I, in <em>Transformation Groups</em>, records the specialisations: a set has only the symmetric group, a space with more structure has the smaller group that preserves it, and the Klein geometries are the case in which the group acts transitively and the structure is recovered from the pair.</p>
+<p><strong>Proposition.</strong> An isomorphism of pairs, that is an isomorphism of Lie groups $\gamma : G \to G'$ with $\gamma(H) = H'$, induces an isomorphism of the Klein geometries, and it induces an isomorphism of the transformation groups of the coset spaces. Conversely an equivariant isomorphism of the geometries, that is a homeomorphism $\varphi : G/H \to G'/H'$ with $\varphi(gx) = \gamma(g)\varphi(x)$ for an isomorphism $\gamma : G \to G'$, is induced by an isomorphism of pairs after the kernels of the two actions are divided out.</p>
+<p><strong>Proof.</strong> For the first statement, $\gamma$ carries the left action of $G$ on $G/H$ to the left action of $G'$ on $G'/H'$, hence carries the $G$-invariant structures to the $G'$-invariant structures. For the second, the kernel of the action of $G$ on $G/H$ is the largest normal subgroup of $G$ inside $H$, by the theorem above, and the same holds for the pair $(G',H')$; dividing by these kernels gives an isomorphism of transformation groups carrying $H$ to $H'$ and the base point to the base point. $\square$</p>
+<p><strong>Remark.</strong> The proposition is the sense in which a Klein geometry determines its pair: not the group itself, which is only determined up to the largest normal subgroup inside $H$, but the transformation group acting faithfully, together with the stabiliser of a base point.</p>
+<hr />
+<h2 id="the-classical-geometries-read-through-their-groups">The Classical Geometries Read through Their Groups</h2>
+<p><strong>Theorem.</strong> Each of the following is a Klein geometry, and the invariant structure named in the last column is what the geometry studies.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>geometry</th>
+<th>$G$</th>
+<th>$H$</th>
+<th>$G/H$</th>
+<th>invariant structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Euclidean</td>
+<td>$E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>$O(n)$</td>
+<td>$\mathbb{R}^n$</td>
+<td>the flat metric, lines, distances, angles</td>
+</tr>
+<tr>
+<td>spherical</td>
+<td>$O(n+1)$</td>
+<td>$O(n)$</td>
+<td>$S^n$</td>
+<td>the round metric, great circles, angles</td>
+</tr>
+<tr>
+<td>hyperbolic</td>
+<td>$O(n,1)$</td>
+<td>$O(n)$</td>
+<td>$\mathbb{H}^n$</td>
+<td>the hyperbolic metric, geodesics, angles</td>
+</tr>
+<tr>
+<td>affine</td>
+<td>$GL(n,\mathbb{R}) \rtimes \mathbb{R}^n$</td>
+<td>$GL(n,\mathbb{R})$</td>
+<td>$\mathbb{A}^n$</td>
+<td>parallelism, the affine structure, ratios on a line</td>
+</tr>
+<tr>
+<td>projective</td>
+<td>$PGL(n+1,\mathbb{R})$</td>
+<td>the stabiliser of a point</td>
+<td>$\mathbb{P}^n$</td>
+<td>incidence, the cross ratio</td>
+</tr>
+<tr>
+<td>conformal</td>
+<td>$O(n+1,1)$</td>
+<td>the stabiliser of a point and a scale</td>
+<td>the conformal sphere</td>
+<td>the conformal class of the metric, angles</td>
+</tr>
+<tr>
+<td>Möbius</td>
+<td>the Möbius group, $PSL(2,\mathbb{C})$</td>
+<td>the stabiliser of a point</td>
+<td>$\mathbb{C}P^1$</td>
+<td>the complex structure, circles, angles</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> In each row $G$ is a Lie group acting transitively on the space, the stabiliser of a base point is the closed subgroup $H$ displayed, and the space is the coset space. For the Euclidean row the translations form a normal subgroup and $E(n)/O(n) = \mathbb{R}^n$; for the spherical and hyperbolic rows the stabiliser of a point is the orthogonal group of the tangent space, of dimension $n$; for the affine row the stabiliser of the origin is $GL(n,\mathbb{R})$; for the projective row the stabiliser of a point is the group of matrices preserving a line, which is parabolic; for the conformal row the stabiliser of a point of the sphere inside $O(n+1,1)$ is the group of similarities of $\mathbb{R}^n$; and the Möbius group acts on the Riemann sphere by Möbius transformations, transitively, with stabiliser the maps $z \mapsto az + b$, that is the rotations and scalings together with the translations. The invariant structure is in each case the structure on the tangent space at the base point fixed by the isotropy action, by the theorem of the previous section; the classical geometries themselves are <em>Euclidean Geometry</em>, <em>Spherical Geometry</em>, <em>Hyperbolic Geometry</em>, <em>Conformal Geometry</em> and <em>Möbius and Lie Sphere Geometry</em>, all earlier in this category. $\square$</p>
+<p><strong>Remark.</strong> The table is the content of the Erlangen program in the classical cases, and it explains why the classification of the geometries of constant curvature is a classification of Klein geometries: a complete connected Riemannian manifold of constant curvature $\kappa$ is, up to isometry, a quotient of the simply connected space of curvature $\kappa$, which is the coset space of one of the first three rows with the metric that the pair determines.</p>
+<hr />
+<h2 id="the-limits-of-the-principle">The Limits of the Principle</h2>
+<p><strong>Theorem (the principle is not universal).</strong> There are Riemannian manifolds that are not Klein geometries, because they carry no transitive group of isometries, and there are Klein geometries that are not of constant curvature.</p>
+<p><strong>Proof.</strong> For the first statement, the isometry group of a generic Riemannian metric on a compact manifold is trivial, a standard consequence of the fact that the isometries of a metric form a compact Lie group whose dimension is a lower semicontinuous function of the metric, so that a generic metric admits no nontrivial isometry; on a manifold of dimension at least two a metric with trivial isometry group is not homogeneous, and hence is not the coset space of a transitive group action. For the second statement, the product $S^2 \times S^2$ with the product metric is acted on transitively by $O(3) \times O(3)$, so it is a Klein geometry, while its sectional curvature takes the value $1$ on the planes tangent to a factor and the value $0$ on the planes spanned by a vector of each factor, so it is not of constant curvature. $\square$</p>
+<p><strong>Remark.</strong> The two failures are different in kind. A Klein geometry is homogeneous by definition, so homogeneity is what a Riemannian manifold must have to be presented by a pair; and homogeneity does not force constant curvature, as the product of two spheres shows. Constant curvature enters through the classification of the space forms of the next remark, and not through the definition of a Klein geometry.</p>
+<p><strong>Remark.</strong> The principle is wider than the $(G,H)$ form of it, since a geometry is the study of the invariants of its automorphism group and that group need not be a Lie group acting transitively. Symplectic geometry is the study of the invariants of the group of symplectomorphisms, which is infinite-dimensional and therefore not the group of a pair of the table above, and Riemannian geometry is the study of the invariants of the isometry group, which is a Lie group and rarely transitive. Both are read through the correspondence $G \to \operatorname{Aut}(X)$ of the hierarchy of <em>Transformation Groups</em> of Part I, and they are <em>Symplectic Geometry</em> and <em>Riemannian Geometry</em>, earlier in this category. A <strong>Klein geometry</strong> in the sense of this article is the case in which the automorphism group is a Lie group acting transitively on the space, so that the space is the coset space $G/H$.</p>
+<p><strong>Remark.</strong> The right generalisation is Cartan's: a manifold with a principal bundle and a Cartan connection whose model is a Klein geometry $(G,H)$ is a <strong>Cartan geometry</strong>, in which the pair survives as the model and the manifold need not be homogeneous. A general Riemannian manifold is then a Cartan geometry modelled on the Euclidean pair, and the classical geometries are the case in which the development is globally injective. The theory of the connections involved is <em>Fibre Bundles, Connections and Curvature</em>, earlier in this category, and the Cartan geometries with their model pairs belong to <em>Symmetric Spaces</em>, the next entry after this article.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A Klein geometry is a pair $(G,H)$, with $G$ a Lie group and $H$ a closed subgroup, together with the homogeneous space $G/H$ of <em>Homogeneous Spaces</em>; the geometry is the study of the $G$-invariant structures on it, and those structures correspond to the structures on the tangent space at the base point fixed by $H$. The action of $G$ on $G/H$ has kernel the largest normal subgroup of $G$ inside $H$, and the automorphisms of the geometry commuting with $G$ form $N_G(H)/H$, so that a Klein geometry determines its pair up to the kernel. Euclidean, spherical, hyperbolic, affine, projective, conformal and Möbius geometry are the Klein geometries of the table, and the classification of the geometries of constant curvature is the classification of the first three rows. The principle is an organising definition of the classical geometries and not a theorem about all manifolds: a generic Riemannian metric admits no transitive group of isometries while homogeneity does not force constant curvature, and the correct generalisation is Cartan's, in which the model pair survives as a Cartan connection and is developed in <em>Symmetric Spaces</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$</td>
+<td>A Lie group</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>A closed subgroup, the isotropy subgroup of a Klein geometry</td>
+</tr>
+<tr>
+<td>$G/H$</td>
+<td>The homogeneous space of <em>Homogeneous Spaces</em>, the space of the geometry</td>
+</tr>
+<tr>
+<td>Klein geometry</td>
+<td>The pair $(G,H)$ together with $G/H$; two words, never hyphenated</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(X)$, $\operatorname{Aut}(X)$</td>
+<td>The symmetry and automorphism groups of a structure, as in Part I's <em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>$N_G(H)/H$</td>
+<td>The automorphisms of the Klein geometry commuting with $G$</td>
+</tr>
+<tr>
+<td>$E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>The Euclidean group</td>
+</tr>
+<tr>
+<td>$O(n+1)$, $O(n,1)$, $PGL(n+1,\mathbb{R})$, $PSL(2,\mathbb{C})$</td>
+<td>The groups of the spherical, hyperbolic, projective and Möbius geometries</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>The constant curvature of a space form</td>
+</tr>
+<tr>
+<td>Cartan geometry</td>
+<td>The generalisation of a Klein geometry by a Cartan connection, developed in <em>Symmetric Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>É. Cartan, <em>La théorie des groupes finis et continus et la géométrie différentielle traitées par la méthode du repère mobile</em> (Gauthier-Villars, 1937), for the generalisation of the Erlangen program to inhomogeneous spaces.</li>
+<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for homogeneous spaces, the isotropy action and the invariant structures on $G/H$.</li>
+<li>F. Klein, <em>Vergleichende Betrachtungen über neuere geometrische Forschungen</em> (Erlanger Programm, 1872), for the original statement of the principle.</li>
+<li>R. W. Sharpe, <em>Differential Geometry: Cartan's Generalization of Klein's Erlangen Program</em> (Springer, 1997), for Cartan geometries modelled on a Klein geometry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

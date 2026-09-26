@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fréchet Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="frechet-spaces"><strong>Fréchet Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Fréchet space is a locally convex space which is metrisable and complete. The definition is short, and it isolates exactly the class of spaces in which the two most useful theorems of functional analysis hold simultaneously: the uniform boundedness principle, which needs the Baire category theorem, and the closed graph theorem, which needs the completeness. Almost every space of functions that arises in analysis — the continuous functions on a compact space with the supremum norm, the smooth functions on an open set with the seminorms of the derivatives on compacta, the holomorphic functions on a domain, the rapidly decreasing functions of Schwartz — is a Fréchet space, and the spaces that are not are usually inductive limits of Fréchet spaces rather than genuinely different objects.</p>
+<p>This article develops the theory of Fréchet spaces from the vocabulary fixed in <em>Locally Convex Spaces</em>. It treats the invariant metric and the $F$-norm, the characterisation of Fréchet spaces as the closed subspaces of countable products of Banach spaces, the Baire category theorem and its consequences, the open mapping and closed graph theorems, the boundedness and the Heine–Borel property of the Montel spaces, and the projective limit picture. It develops the standard examples in detail, with the Schwartz space and the space of smooth functions as the central cases. The analysis of the operators on these spaces, and the distribution theory that the examples support, belongs to <em>Analysis on Linear Spaces</em> in Part III; the general theory of locally convex spaces is that of <em>Locally Convex Spaces</em>, and the duality theory of the dual spaces that appear here is . Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $E$ denotes a locally convex space over $\mathbb{K}$, and a <strong>Fréchet space</strong> is a complete metrisable locally convex space, in the notation of <em>Locally Convex Spaces</em>. A <strong>$F$-space</strong> is a complete metrisable topological vector space, not assumed locally convex. A sequence $(p_n)_{n \geq 0}$ of seminorms is <strong>increasing</strong> if $p_n \leq p_{n+1}$ pointwise.</p>
+<hr />
+<h2 id="metrics-on-locally-convex-spaces">Metrics on Locally Convex Spaces</h2>
+<h3 id="the-invariant-metric">The Invariant Metric</h3>
+<p><strong>Definition.</strong> Let $(p_n)_{n \geq 0}$ be an increasing sequence of seminorms generating the topology of a metrisable locally convex space $E$. The <strong>$F$-norm</strong> associated with $(p_n)$ is</p>
+<p>$$
+\lvert x \rvert = \sum_{n \geq 0} 2^{-n} \min\bigl(1, p_n(x)\bigr) ,
+$$</p>
+<p>and the associated <strong>translation-invariant metric</strong> is $d(x,y) = \lvert x - y \rvert$.</p>
+<p><strong>Proposition.</strong> The $F$-norm has the following properties.</p>
+<p><strong>(a)</strong> $\lvert x \rvert \geq 0$ with $\lvert x \rvert = 0$ if and only if $p_n(x) = 0$ for all $n$; $\lvert \lambda x \rvert \leq \lvert x \rvert$ for $\lvert \lambda \rvert \leq 1$, and $\lvert \lambda x \rvert \to 0$ as $\lambda \to 0$.</p>
+<p><strong>(b)</strong> $\lvert x + y \rvert \leq \lvert x \rvert + \lvert y \rvert$, so $d$ is a metric, and it is translation-invariant: $d(x + z, y + z) = d(x,y)$.</p>
+<p><strong>(c)</strong> $d$ induces the topology generated by the seminorms $p_n$.</p>
+<p><strong>Proof.</strong> (a) is immediate from the definition and the properties of the seminorms. (b) follows from the subadditivity of each $p_n$ and the elementary inequality $\min(1, a+b) \leq \min(1,a) + \min(1,b)$, together with the homogeneity of the weights; translation invariance is the definition $d(x,y) = \lvert x - y\rvert$. (c) The balls of $d$ and the sets $U_{p_1, \dots, p_N; \varepsilon}$ define the same neighbourhood filter of $0$: a $d$-ball of radius $2^{-N-1}$ is contained in $\{p_1 < 1, \dots, p_N < 1\}$ because the weights outside the first $N$ terms sum to $2^{-N}$, and conversely $\{p_1 < \varepsilon_1, \dots, p_N < \varepsilon_N\} \subseteq \{d < 2^{-N} + \sum_{n \leq N}2^{-n}\varepsilon_n'\}$ for suitable small $\varepsilon_1, \dots, \varepsilon_N$. $\square$</p>
+<p><strong>Remark.</strong> The $F$-norm is not a norm unless the space is normable, and it is not homogeneous for general scalars: $\lvert \lambda x \rvert$ need not equal $\lvert \lambda \rvert \lvert x \rvert$. What survives is the continuity of scalar multiplication and the translation invariance, and these are enough for the completeness arguments. The choice of weights $2^{-n}$ is immaterial; any sequence of positive weights with finite sum gives the same topology.</p>
+<p><strong>Theorem (completeness of the metric).</strong> Let $E$ be a metrisable locally convex space with an increasing generating sequence $(p_n)$ and the metric $d$ above. Then $E$ is complete if and only if every sequence $(x_k)$ which is Cauchy for $d$ converges, equivalently if and only if $p_n(x_k - x_l) \to 0$ as $k, l \to \infty$ for every $n$ forces the existence of $x \in E$ with $p_n(x_k - x) \to 0$ for every $n$.</p>
+<p><strong>Proof.</strong> The metric $d$ and the family $(p_n)$ induce the same uniformity, so the two completeness conditions coincide; the statement is then the definition of completeness for the metric. $\square$</p>
+<h3 id="frechet-spaces-as-projective-limits">Fréchet Spaces as Projective Limits</h3>
+<p><strong>Definition.</strong> Let $(E_n)$ be a sequence of Banach spaces and let $\pi_n : E_{n+1} \to E_n$ be continuous linear maps of norm at most $1$. The <strong>projective limit</strong> $\varprojlim_n E_n$ is the subspace of the product $\prod_n E_n$ consisting of the threads $(x_n)$ with $\pi_n(x_{n+1}) = x_n$ for all $n$, equipped with the subspace topology.</p>
+<p><strong>Theorem.</strong> A Hausdorff locally convex space $E$ is a Fréchet space if and only if it is isomorphic to a closed subspace of a countable product of Banach spaces; equivalently, if and only if it is isomorphic to a projective limit $\varprojlim_n E_n$ of a sequence of Banach spaces with linear transition maps.</p>
+<p><strong>Proof.</strong> If $(p_n)$ is an increasing generating sequence of seminorms, let $N_n = \{x : p_n(x) = 0\}$ and let $\widehat{E}_n$ be the completion of $E/N_n$ for the norm induced by $p_n$; the natural maps $E/N_{n+1} \to E/N_n$ extend to contractions of the completions, and the map $E \to \varprojlim_n \widehat{E}_n$ is a topological embedding whose image is closed when $E$ is complete, because a thread in the image is the limit of the images of a Cauchy sequence in $E$. Conversely a closed subspace of a product of countably many Banach spaces, with the product topology given by the countably many norm seminorms, is metrisable and complete, hence Fréchet, and being closed in a product of complete spaces it is complete. $\square$</p>
+<p><strong>Corollary.</strong> A Fréchet space is a closed subspace of a countable product of Banach spaces; consequently it inherits the completeness of the product, and its topology is determined by countably many seminorms, each of which may be taken to be a norm on a quotient.</p>
+<p><strong>Proof.</strong> This restates the theorem. $\square$</p>
+<p><strong>Example (the projective limit picture).</strong> $C^\infty([0,1])$ is the projective limit of the Banach spaces $C^n([0,1])$ with the $\mathcal{C}^n$-norm; the space of smooth functions on a manifold is the projective limit of the spaces of functions of bounded derivative order on a compact exhaustion. The Schwartz space of the next section is the projective limit of the weighted Sobolev spaces $H^{(m)}$.</p>
+<hr />
+<h2 id="the-baire-property-and-its-consequences">The Baire Property and its Consequences</h2>
+<h3 id="baire-category">Baire Category</h3>
+<p><strong>Theorem (Baire).</strong> Every complete metric space is a Baire space: a countable union of nowhere dense subsets has empty interior, equivalently a countable intersection of dense open subsets is dense.</p>
+<p><strong>Proof.</strong> Let $U_1, U_2, \dots$ be dense open subsets of a complete metric space $X$. Given a non-empty open $V_0$, choose a closed ball $B_1 \subseteq U_1 \cap V_0$ of radius less than $1$; having chosen $B_n$, choose a closed ball $B_{n+1} \subseteq U_{n+1} \cap B_n$ of radius less than $1/(n+1)$. The centres form a Cauchy sequence by the shrinking radii, and its limit lies in every $B_n$ by closedness, hence in $V_0 \cap \bigcap_n U_n$; thus the intersection is dense. $\square$</p>
+<p><strong>Corollary.</strong> Every Fréchet space is a Baire space, and hence is barrelled; consequently the Banach–Steinhaus theorem holds for families of continuous linear maps whose domain is a Fréchet space.</p>
+<p><strong>Proof.</strong> A Fréchet space is a complete metric space, so Baire's theorem applies; the passage from Baire to barrelledness is the standard argument: for a barrel $B$, the sets $E = \bigcup_n nB$ exhibit $E$ as a countable union of the closed sets $nB$, one of which has non-empty interior by Baire, and the convexity and balancedness of $B$ translate an interior point of $nB$ into a neighbourhood of $0$ contained in $B$. $\square$</p>
+<h3 id="the-open-mapping-and-closed-graph-theorems">The Open Mapping and Closed Graph Theorems</h3>
+<p><strong>Theorem (open mapping).</strong> Let $T : E \to F$ be a continuous linear surjection of Fréchet spaces. Then $T$ is open: the image of every open set is open.</p>
+<p><strong>Proof.</strong> It suffices to show that $T$ maps a neighbourhood of $0$ in $E$ onto a neighbourhood of $0$ in $F$. Let $U$ be a balanced open neighbourhood of $0$ in $E$ with $U + U \subseteq 2U$. Since $T$ is surjective and $U$ is absorbing, $F = \bigcup_n T(nU) = \bigcup_n \overline{T(nU)}$; by the Baire property of $F$ some $\overline{T(nU)}$ has non-empty interior, and since it is convex and balanced it contains a balanced neighbourhood $W$ of $0$; scaling gives $W \subseteq \overline{T(U)}$. Now fix $y \in W$. Because $\overline{T(U/2^n)} \supseteq W/2^n$ for every $n$, one constructs recursively $x_n \in U/2^{n-1}$ with $y - T(x_1 + \cdots + x_n) \in W/2^n$: the step is possible because $y - T(x_1 + \cdots + x_{n-1})$ lies in $W/2^{n-1}$, whose half meets the image of $U/2^{n-1}$. The series $\sum_n x_n$ converges in the complete space $E$, its sum $x$ lies in $2U$, and $T x = y$ by continuity. Hence $T(2U) \supseteq W$, and $T$ is open. $\square$</p>
+<p><strong>Theorem (closed graph).</strong> Let $T : E \to F$ be a linear map between Fréchet spaces whose graph $\Gamma(T) = \{(x, Tx) : x \in E\}$ is closed in $E \times F$. Then $T$ is continuous.</p>
+<p><strong>Proof.</strong> Let $G = \Gamma(T)$, a closed subspace of the Fréchet space $E \times F$; it is therefore a Fréchet space. The two projections $\pi_1 : G \to E$ and $\pi_2 : G \to F$ are continuous and linear, and $\pi_1$ is a continuous bijection. By the open mapping theorem $\pi_1$ is a homeomorphism, so the composition $\pi_2 \circ \pi_1^{-1} = T$ is continuous. $\square$</p>
+<p><strong>Corollary.</strong> A linear map of Fréchet spaces is continuous if and only if it has closed graph; and a bijective continuous linear map of Fréchet spaces is a topological isomorphism.</p>
+<p><strong>Proof.</strong> The first is the closed graph theorem together with the evident continuity of the graph of a continuous map; the second is the open mapping theorem applied to the bijection and its inverse. $\square$</p>
+<h3 id="boundedness-and-the-heineborel-property">Boundedness and the Heine–Borel Property</h3>
+<p><strong>Definition.</strong> A locally convex space $E$ is <strong>Montel</strong> if it is barrelled and every closed bounded subset is compact; equivalently, if it is barrelled and satisfies the <strong>Heine–Borel property</strong> that every closed bounded set is compact. A <strong>reflexive Montel space</strong> is a Montel space that is also reflexive; reflexivity, its relation to the Montel property and the strong dual are developed.</p>
+<p><strong>Theorem.</strong> A Fréchet space is Montel if and only if every bounded sequence has a convergent subsequence; a Fréchet–Montel space is reflexive, and its strong dual is also a Montel space.</p>
+<p><strong>Pro.</strong> The equivalence uses the metrisability: a closed bounded set is compact exactly when every sequence in it has a convergent subsequence. Reflexivity of a Montel space is a theorem of the duality theory, and the dual statement is the closed-range theorem for Montel spaces; both are quoted as standard and are developed. $\square$</p>
+<p><strong>Example (a non-Montel Fréchet space).</strong> A Banach space of infinite dimension is not Montel: its closed unit ball is bounded but is not compact, since a compact ball would give a finite-dimensional space. So the Heine–Borel property is a genuine restriction even among Fréchet spaces.</p>
+<hr />
+<h2 id="the-standard-examples">The Standard Examples</h2>
+<h3 id="spaces-of-functions">Spaces of Functions</h3>
+<p><strong>Example ($C(X)$ for compact $X$).</strong> Let $X$ be a compact topological space. Then $C(X)$ with the supremum norm $\lVert f \rVert = \sup_X \lvert f \rvert$ is a Banach space, hence a Fréchet space; the topology is that of uniform convergence.</p>
+<p><strong>Example ($C(X)$ with compact convergence).</strong> Let $X$ be locally compact and $\sigma$-compact with an exhaustion $K_1 \subseteq K_2 \subseteq \cdots$ by compact sets. Then the seminorms $p_n(f) = \sup_{K_n}\lvert f \rvert$ are increasing and generate the topology of uniform convergence on compacta, so the space $C(X)$ is a Fréchet space; it is not normable when $X$ is not compact, by the Kolmogorov–von Neumann criterion of <em>Locally Convex Spaces</em>.</p>
+<p><strong>Example ($C^\infty(U)$).</strong> Let $U \subseteq \mathbb{R}^n$ be open and let $K_1 \subseteq K_2 \subseteq \cdots$ be a compact exhaustion. The seminorms</p>
+<p>$$
+p_{n,m}(f) = \sup_{\lvert \alpha \rvert \leq m} \sup_{x \in K_n} \lvert \partial^\alpha f(x) \rvert \qquad (n, m \geq 0)
+$$</p>
+<p>generate a locally convex topology, and $C^\infty(U)$ with this topology is a Fréchet space: a Cauchy sequence for these seminorms is a sequence whose derivatives of every order converge uniformly on every compact set, and the limit is smooth by the standard theorem on the differentiability of a uniform limit of functions with uniformly convergent derivatives. This is the topology of compact convergence of all derivatives, and it is the standard topology of $C^\infty(U)$. The space $C_c^\infty(U)$ of compactly supported smooth functions with the inductive limit topology is not a Fréchet space — it is not metrisable — and is discussed in relation to the space of test functions.</p>
+<p><strong>Example (holomorphic functions).</strong> Let $\Omega \subseteq \mathbb{C}$ be a domain and let $K_n$ be a compact exhaustion. The seminorms $p_n(f) = \sup_{K_n}\lvert f \rvert$ on the space $\mathcal{O}(\Omega)$ of holomorphic functions give a Fréchet topology, and by Montel's theorem a bounded sequence of holomorphic functions has a locally uniformly convergent subsequence whose limit is holomorphic; hence $\mathcal{O}(\Omega)$ is a Fréchet–Montel space. The completeness follows from Weierstrass's theorem on the local uniform limit of holomorphic functions.</p>
+<h3 id="the-schwartz-space">The Schwartz Space</h3>
+<p><strong>Definition.</strong> The <strong>Schwartz space</strong> $\mathcal{S}(\mathbb{R}^n)$ is the space of smooth functions $f : \mathbb{R}^n \to \mathbb{C}$ such that</p>
+<p>$$
+p_{\alpha,\beta}(f) = \sup_{x \in \mathbb{R}^n} \lvert x^\alpha \partial^\beta f(x) \rvert < \infty
+$$</p>
+<p>for all multi-indices $\alpha, \beta$. The family $\{p_{\alpha,\beta}\}$ is countable and generates the Schwartz topology.</p>
+<p><strong>Theorem.</strong> $\mathcal{S}(\mathbb{R}^n)$ is a Fréchet space, and it is a Fréchet–Montel space; the Schwartz seminorms may be replaced by the equivalent family $\sup_x \lvert (1 + \lvert x \rvert^2)^m \partial^\beta f(x) \rvert$, $m \geq 0$.</p>
+<p><strong>Proof.</strong> The seminorms are countable and separate points, so the space is metrisable and locally convex. For completeness, a sequence Cauchy for all $p_{\alpha,\beta}$ has all derivatives converging uniformly on all of $\mathbb{R}^n$ to limits that are again rapidly decreasing, and the limit is smooth because the uniform convergence of the derivatives holds at every order; hence the space is complete. Montel's property is proved by the Arzelà–Ascoli theorem on the bounded sets, using the uniform bounds on the derivatives; and the equivalence of the two families of seminorms is the standard inequality of the weighted estimates. $\square$</p>
+<p><strong>Example (a computation of the seminorms).</strong> For $n=1$ and $f(x) = e^{-x^2}$ one has $f^{(\beta)}(x) = H_\beta(x)e^{-x^2}$ with $H_\beta$ the Hermite polynomial of degree $\beta$, and the seminorms</p>
+<p>$$
+p_{\alpha,\beta}(f) = \sup_{x}\lvert x^\alpha H_\beta(x) \rvert e^{-x^2}
+$$</p>
+<p>are finite for all $\alpha, \beta$. For instance $p_{0,0}(f) = 1$, and</p>
+<p>$$
+p_{2,3}(f) = \sup_x \lvert x^2(8x^3 - 12x)e^{-x^2} \rvert = \sup_x \lvert (8x^5 - 12x^3)e^{-x^2}\rvert \approx 3.184 ,
+$$</p>
+<p>the maximum being attained at $x = \sqrt{(4 + \sqrt7)/2} \approx 1.823$, where the derivative of $8x^5 - 12x^3$ times $e^{-x^2}$ vanishes; the numbers are obtained by direct evaluation. All the seminorms vanish at infinity because the exponential decay dominates every polynomial, which is the defining property of the Schwartz space.</p>
+<p><strong>Example (rapidly decreasing sequences).</strong> The space $s$ of sequences $(a_k)$ with $\sup_k k^m\lvert a_k \rvert < \infty$ for every $m \geq 0$, with the seminorms $q_m(a) = \sup_k k^m \lvert a_k\rvert$, is a Fréchet–Montel space and is isomorphic to $\mathcal{S}(\mathbb{R})$ via the Hermite expansion; it is the model for the projective limit description of $\mathcal{S}$, since $s = \varprojlim_m \{a : q_m(a) < \infty\}$ and each stage is a Banach space.</p>
+<p><strong>Remark.</strong> The Schwartz space is the standard domain of the Fourier transform, and its dual is the space of tempered distributions. The Fourier transform on $\mathcal{S}$ is a topological isomorphism, and the distribution theory built on it belongs to <em>Analysis on Linear Spaces</em> in Part III; this article records only the topological structure of $\mathcal{S}$ as a Fréchet–Montel space. The further property that $\mathcal{S}$ is <strong>nuclear</strong> — a strengthening of being Montel, making the tensor products insensitive to the choice of topology — is treated, written in this Part.</p>
+<h3 id="non-examples-and-delimitations">Non-Examples and Delimitations</h3>
+<p><strong>Example (an $F$-space that is not locally convex).</strong> The space $L^p[0,1]$ with $0 < p < 1$ with the metric $d(f,g) = \int\lvert f - g\rvert^p$ is a complete metrisable topological vector space which is not locally convex, hence not a Fréchet space. The failure of local convexity is exactly the failure of the Hahn–Banach theorem: the dual of $L^p[0,1]$ for $0 < p < 1$ contains only the zero functional. This example marks the boundary of the theory; it is the standard caution that completeness and metrisability alone do not give the convex geometry.</p>
+<p><strong>Example (an inductive limit that is not metrisable).</strong> The space $C_c^\infty(\mathbb{R})$ of compactly supported smooth functions with the finest locally convex topology making all the inclusions $C_c^\infty(K) \hookrightarrow C_c^\infty(\mathbb{R})$ continuous is a complete locally convex space which is not metrisable, being the strict inductive limit of the Fréchet spaces $C_c^\infty(K)$ over the uncountable directed family of compact sets $K$; the same holds for $\mathcal{D}(U)$. Such spaces are <strong>LF-spaces</strong>, and they lie outside the Fréchet class; they are treated.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A <strong>Fréchet space</strong> is a complete metrisable locally convex space; equivalently, a Hausdorff locally convex space whose topology is generated by a countable family of seminorms and which is complete for the induced uniformity. The topology may be given by the translation-invariant metric $d(x,y) = \sum_n 2^{-n}\min(1,p_n(x-y))$ for an increasing generating sequence $(p_n)$; the resulting <strong>$F$-norm</strong> is not homogeneous in general, but it is subadditive and compatible with scalar multiplication. A Fréchet space is isomorphic to a closed subspace of a countable product of Banach spaces, and equivalently to a <strong>projective limit</strong> of a sequence of Banach spaces; the general projective limit of Banach spaces is a Fréchet space, and every Fréchet space arises so.</p>
+<p>By the <strong>Baire category theorem</strong> a Fréchet space is a Baire space, hence <strong>barrelled</strong>, so the <strong>Banach–Steinhaus</strong> theorem holds on it; the <strong>open mapping theorem</strong> says that a continuous linear surjection of Fréchet spaces is open; the <strong>closed graph theorem</strong> says that a linear map of Fréchet spaces with closed graph is continuous; and a continuous bijection of Fréchet spaces is a topological isomorphism. A Fréchet space is <strong>Montel</strong> when every closed bounded subset is compact, equivalently when every bounded sequence has a convergent subsequence; a Fréchet–Montel space is reflexive and has reflexive strong dual. The standard examples are the Banach spaces, the space $C(X)$ of continuous functions with the topology of compact convergence, the space $C^\infty(U)$ with the seminorms of all derivatives on a compact exhaustion, the space $\mathcal{O}(\Omega)$ of holomorphic functions, which is Fréchet–Montel by Montel's theorem, and the <strong>Schwartz space</strong> $\mathcal{S}(\mathbb{R}^n)$ of rapidly decreasing smooth functions, which is Fréchet–Montel; the space $L^p[0,1]$ with $p<1$ is a complete metrisable topological vector space which is not locally convex, and $C_c^\infty(U)$ with its inductive limit topology is a complete locally convex space which is not metrisable.</p>
+<p>The operator theory on these spaces, the Fourier transform and the theory of distributions, belong to <em>Analysis on Linear Spaces</em> in Part III; the duality theory of the dual spaces and the nuclearity of the Schwartz space belong to this Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{K}$</td>
+<td>$\mathbb{R}$ or $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$E$, $F$</td>
+<td>Fréchet or locally convex spaces</td>
+</tr>
+<tr>
+<td>$p_n$</td>
+<td>An increasing generating sequence of seminorms</td>
+</tr>
+<tr>
+<td>$\lvert x \rvert = \sum_n 2^{-n}\min(1,p_n(x))$</td>
+<td>The $F$-norm</td>
+</tr>
+<tr>
+<td>$d(x,y) = \lvert x - y \rvert$</td>
+<td>Translation-invariant metric</td>
+</tr>
+<tr>
+<td>$F$-space</td>
+<td>Complete metrisable topological vector space</td>
+</tr>
+<tr>
+<td>Fréchet space</td>
+<td>Complete metrisable locally convex space</td>
+</tr>
+<tr>
+<td>$\varprojlim_n E_n$</td>
+<td>Projective limit of a sequence of Banach spaces</td>
+</tr>
+<tr>
+<td>$C(X)$, $C^\infty(U)$, $\mathcal{O}(\Omega)$</td>
+<td>Spaces of continuous, smooth and holomorphic functions</td>
+</tr>
+<tr>
+<td>$\mathcal{S}(\mathbb{R}^n)$</td>
+<td>Schwartz space of rapidly decreasing smooth functions</td>
+</tr>
+<tr>
+<td>$p_{\alpha,\beta}(f) = \sup\lvert x^\alpha\partial^\beta f\rvert$</td>
+<td>Schwartz seminorms</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>Space of rapidly decreasing sequences</td>
+</tr>
+<tr>
+<td>$H_\beta$</td>
+<td>Hermite polynomial of degree $\beta$</td>
+</tr>
+<tr>
+<td>Montel</td>
+<td>Barrelled with every closed bounded set compact</td>
+</tr>
+<tr>
+<td>$\Gamma(T) \subseteq E \times F$</td>
+<td>Graph of a linear map</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Stefan Banach, <em>Theory of Linear Operations</em> (North-Holland, 1987; original 1932), for the origins of the open mapping and closed graph theorems for complete metrisable spaces.</li>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces</em> (Springer, 1987), Chapters I–III, for the systematic theory of Fréchet spaces, projective limits and the Baire property.</li>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw–Hill, second edition 1991), Chapters 1–2, for the open mapping and closed graph theorems and the examples.</li>
+<li>François Trèves, <em>Topological Vector Spaces, Distributions and Kernels</em> (Academic Press, 1967), for the Schwartz space, its dual and the projective limit description.</li>
+<li>Laurent Schwartz, <em>Théorie des distributions</em> (Hermann, 1966), for the original construction of the Schwartz space and its role in distribution theory.</li>
+<li>Klaus Floret and Joseph Wloka, <em>Einführung in die Theorie der lokalkonvexen Räume</em> (Springer, 1968), for Montel and reflexive Fréchet spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

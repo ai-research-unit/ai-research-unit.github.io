@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Isometry and Symmetry Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-isometry-and-symmetry-groups"><strong>List of Isometry and Symmetry Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the isometry and symmetry groups of the corpus: the isometry group of a metric space, the isometry groups of the three model geometries, $\operatorname{Isom}(\mathbb{R}^n) = E(n)$, $\operatorname{Isom}(S^n) = O(n+1)$ and $\operatorname{Isom}(\mathbb{H}^n) = O(n,1)$, the crystallographic, wallpaper and frieze groups as the discrete subgroups of a Euclidean isometry group, and the symmetry groups of the regular polytopes. The property the list gathers is that of a group of distance-preserving maps of a metric space: an isometry satisfies $d(fx,fy) = d(x,y)$, and the symmetry group of a figure is the subgroup of the isometries that preserve it.</p>
+<p>Every entry points to the article that introduces the group. The article introduces nothing and proves nothing: it records the space, the metric, the group and its structure as the introducing articles give them, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the groups it lists the cases in which the expected structure fails: the isometry group of a general metric space need not be a Lie group and need not act transitively, unlike the isometry groups of the model spaces; $O(n,1)$ is non-compact while $O(n+1)$ is compact, so the constant-curvature trichotomy is also a compactness trichotomy; the orientation-preserving isometry group of the hyperbolic plane is $\operatorname{PSL}(2,\mathbb{R})$, which is only half of the full group; the symmetry group of a bounded figure fixes a point while that of a periodic figure does not; and the crystallographic restriction forbids a lattice rotation of order other than $1$, $2$, $3$, $4$ or $6$, each with the failure named and the article that records it.</p>
+<h2 id="the-isometry-group-of-a-metric-space">The Isometry Group of a Metric Space</h2>
+<p>The isometry group is introduced for an arbitrary distance space and then refined for the model geometries, where it is a Lie group with a definite dimension.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or statement</th>
+<th>The content</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the isometry group $\operatorname{Isom}(X)$</td>
+<td>the bijections with $d(fx,fy) = d(x,y)$; a group under composition</td>
+<td><em>Metric, Uniform and Complete Spaces</em>; <em>Metric Geometry</em></td>
+</tr>
+<tr>
+<td>the compact-open topology on $\operatorname{Isom}(X)$</td>
+<td>the topology in which the isometry group is a topological group; closed in the space of maps</td>
+<td><em>Metric Geometry</em>; <em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>the Euclidean case</td>
+<td>$\operatorname{Isom}(\mathbb{R}^n) = E(n) = \mathbb{R}^n \rtimes O(n)$, of dimension $n(n+1)/2$</td>
+<td><em>Euclidean Geometry</em>; <em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the Myers–Steenrod theorem</td>
+<td>the isometries of a Riemannian manifold are smooth, so its isometry group is a Lie group</td>
+<td><em>Riemannian Geometry</em>; <em>Metric Geometry</em></td>
+</tr>
+<tr>
+<td>the isometry group of a homogeneous space</td>
+<td>a space $G/H$ with $G$-invariant metric has $\operatorname{Isom}(X) \supseteq G$; the model spaces are symmetric spaces $G/O(2)$</td>
+<td><em>Non-Euclidean Geometry</em>; <em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>the trichotomy of the model geometries</td>
+<td>$E(2) = \mathbb{R}^2 \rtimes O(2)$, $O(3)$ and $\operatorname{PSL}(2,\mathbb{R})\rtimes\mathbb{Z}/2$, all of dimension three</td>
+<td><em>Non-Euclidean Geometry</em>; <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em></td>
+</tr>
+<tr>
+<td>the isometry group of a discrete space</td>
+<td>every bijection is an isometry; $\operatorname{Isom}(X) = \operatorname{Sym}(X)$ when the distance separates the points</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the isometry group as a transformation group</td>
+<td>$\operatorname{Isom}(X)$ acting on $X$, with the action faithful and the orbit the metric class of a point</td>
+<td><em>Transformation Groups</em>; <em>Group Actions and Structure</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-three-model-geometries">The Three Model Geometries</h2>
+<p>Each of the three complete simply connected spaces of constant curvature has its isometry group, and the three groups are the source of the whole geometry of this Part.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The isometry group</th>
+<th>The structure and dimension</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}^n$, curvature $0$</td>
+<td>$\operatorname{Isom}(\mathbb{R}^n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>dimension $n(n+1)/2$; non-compact; the translations are normal and simply transitive</td>
+<td><em>Euclidean Geometry</em>; <em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>$S^n_R$, curvature $+1/R^2$</td>
+<td>$\operatorname{Isom}(S^n) = O(n+1)$</td>
+<td>dimension $n(n+1)/2$; compact; $\operatorname{SO}(n+1)$ is the orientation-preserving part</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}^n$, curvature $-1$</td>
+<td>$\operatorname{Isom}(\mathbb{H}^n) = O(n,1)$</td>
+<td>dimension $n(n+1)/2$; non-compact; $O(n,1)^0$ is the identity component</td>
+<td><em>Hyperbolic Geometry</em>; <em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>the hyperbolic plane $\mathbb{H}^2$</td>
+<td>$\operatorname{Isom}(\mathbb{H}^2) = \operatorname{PGL}(2,\mathbb{R})$; orientation-preserving $\operatorname{PSL}(2,\mathbb{R})$</td>
+<td>dimension three; the boundary $\partial\mathbb{H}^2$ is the projective line</td>
+<td><em>Hyperbolic Geometry</em>; <em>Möbius and Lie Sphere Geometry</em></td>
+</tr>
+<tr>
+<td>the hyperbolic three-space $\mathbb{H}^3$</td>
+<td>$\operatorname{Isom}(\mathbb{H}^3) = \operatorname{PGL}(2,\mathbb{C})$; orientation-preserving $\operatorname{PSL}(2,\mathbb{C})$</td>
+<td>dimension six; the boundary is the Riemann sphere</td>
+<td><em>Hyperbolic Geometry</em>; <em>Möbius and Lie Sphere Geometry</em></td>
+</tr>
+<tr>
+<td>the hyperboloid model</td>
+<td>$\mathbb{H}^n = H^{1,n}$ in $\mathbb{R}^{1,n}$; the isometries are the Lorentz group $O(n,1)$</td>
+<td>the quadric model of hyperbolic space</td>
+<td><em>Hyperbolic Geometry</em>; <em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>the elliptic quotient</td>
+<td>$\mathbb{E}^n = S^n/\{\pm1\}$; $\operatorname{Isom}(\mathbb{E}^n) = O(n+1)/\{\pm I\}$</td>
+<td>curvature $+1$; $\mathbb{E}^2 = \mathbb{RP}^2$</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>the boundary at infinity</td>
+<td>$\partial\mathbb{H}^n$ carries a Möbius action of $\operatorname{Isom}(\mathbb{H}^n)$; $S^n$ and $\mathbb{E}^n$ have no boundary</td>
+<td>the structural difference of the hyperbolic model</td>
+<td><em>Hyperbolic Geometry</em>; <em>Non-Euclidean Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-discrete-subgroups-and-the-crystallographic-groups">The Discrete Subgroups and the Crystallographic Groups</h2>
+<p>A crystallographic group is a discrete subgroup of a Euclidean isometry group with compact quotient; the finite point groups and the lattices are the two ingredients, and the classification is finite in each dimension.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or statement</th>
+<th>The content</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the symmetry group of a figure</td>
+<td>$\operatorname{Sym}(F) = \{g \in E(n) : gF = F\}$; a group under composition</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>a finite symmetry group fixes a point</td>
+<td>a bounded figure has a finite symmetry group conjugate to a finite subgroup of $O(n)$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Finite Groups and Symmetry</em></td>
+</tr>
+<tr>
+<td>the point group $P = \ell(\Gamma)$</td>
+<td>the finite image of a crystallographic group in $O(n)$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the translation subgroup $T_\Gamma$</td>
+<td>$\Gamma \cap \mathbb{R}^n$, a lattice of rank $n$; its basis $b_1,\ldots,b_n$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the crystallographic restriction</td>
+<td>a lattice-compatible rotation has order $1,2,3,4$ or $6$; the pivot identity $2\cos(2\pi/k) \in \mathbb{Z}$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the Bieberbach theorems</td>
+<td>a crystallographic group is determined up to finite index by its point group and lattice; finitely many in each dimension</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the flat quotient $\mathbb{R}^n/\Gamma$</td>
+<td>a compact flat orbifold, a flat manifold when $\Gamma$ is torsion-free</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the classical counts</td>
+<td>$2$ crystallographic groups on the line, $7$ frieze groups, $17$ wallpaper groups, $230$ space groups in three dimensions, $4894$ in four</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the discrete isometry groups of the line</td>
+<td>$D_\infty = \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$; the discrete subgroups are $a\mathbb{Z}$ and $D_\infty(a)$</td>
+<td><em>Real Line Geometry and Isometries</em></td>
+</tr>
+<tr>
+<td>the Fuchsian and Kleinian groups</td>
+<td>the discrete subgroups of $\operatorname{PSL}(2,\mathbb{R})$ and $\operatorname{PSL}(2,\mathbb{C})$; the surfaces and three-manifolds they uniformise</td>
+<td><em>Hyperbolic Geometry</em>; <em>Hyperbolic Groups</em></td>
+</tr>
+<tr>
+<td>the space forms</td>
+<td>the complete constant-curvature manifolds $S^n/\Gamma$, $\mathbb{R}^n/\Gamma$, $\mathbb{H}^n/\Gamma$ for $\Gamma$ discrete acting freely</td>
+<td><em>Riemannian Geometry</em>; <em>Hyperbolic Geometry</em>; <em>Spherical Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-symmetry-groups-of-figures-and-polytopes">The Symmetry Groups of Figures and Polytopes</h2>
+<p>The finite symmetry groups are the finite subgroups of the orthogonal group: the cyclic and dihedral families in the plane, and the polyhedral groups in space, with the rotation groups of the Platonic solids and their full symmetry groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The content</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the symmetry of a regular $m$-gon</td>
+<td>the rotation group $C_m$ and the full symmetry group $D_m$, of order $2m$</td>
+<td><em>Euclidean Geometry</em>; <em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the finite subgroups of $O(2)$</td>
+<td>the cyclic groups $C_m$ and the dihedral groups $D_m$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Finite Groups and Symmetry</em></td>
+</tr>
+<tr>
+<td>the finite subgroups of $SO(3)$</td>
+<td>the cyclic, dihedral and polyhedral families: $T$, $O$, $I$ of orders $12$, $24$, $60$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>the tetrahedral group $T \cong A_4$</td>
+<td>the rotation group of the tetrahedron</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>the octahedral group $O \cong S_4$</td>
+<td>the rotation group of the cube and the octahedron</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>the icosahedral group $I \cong A_5$</td>
+<td>the rotation group of the dodecahedron and the icosahedron; the smallest nonabelian simple group</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Spherical Geometry</em>; <em>Finite Groups and Symmetry</em></td>
+</tr>
+<tr>
+<td>the full symmetry groups of the Platonic solids</td>
+<td>$T_d$, $O_h$, $I_h$ of orders $24$, $48$, $120$; the reflections adjoined to the rotations</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the binary polyhedral groups</td>
+<td>$2T$, $2O$, $2I$ in $Sp(1)$, of orders $24$, $48$, $120$; the preimages in the double cover $S^3 \to SO(3)$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Quaternion Rotations and Reflections</em></td>
+</tr>
+<tr>
+<td>the Platonic solids and the regular polytopes</td>
+<td>the tetrahedron, cube, octahedron, dodecahedron, icosahedron; their symmetry groups</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the finite rotation group as a spherical symmetry</td>
+<td>a finite subgroup of $SO(3)$ is the symmetry group of a spherical figure; the source of $A_4$, $S_4$, $A_5$</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-and-warnings">Non-examples and Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why the expected statement fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the isometry group of a general metric space</td>
+<td>it need not be a Lie group and need not act transitively; a space with a discrete metric has $\operatorname{Isom}(X) = \operatorname{Sym}(X)$</td>
+<td><em>Metric Geometry</em>; <em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the isometry group of the hyperbolic space</td>
+<td>$O(n,1)$ is non-compact and has four components; its identity component is the relevant group, unlike the compact $O(n+1)$</td>
+<td><em>Hyperbolic Geometry</em>; <em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>the orientation-preserving hyperbolic isometry group</td>
+<td>$\operatorname{PSL}(2,\mathbb{R})$ is only the index-two part of $\operatorname{Isom}(\mathbb{H}^2) = \operatorname{PGL}(2,\mathbb{R})$</td>
+<td><em>Hyperbolic Geometry</em>; <em>Möbius and Lie Sphere Geometry</em></td>
+</tr>
+<tr>
+<td>the symmetry group of a periodic figure</td>
+<td>it does not fix a point and is infinite; only the symmetry group of a bounded figure is finite and conjugate to a subgroup of $O(n)$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the rotation of a periodic plane figure</td>
+<td>an order $5$, $7$ or higher rotation is incompatible with a lattice; the crystallographic restriction is a genuine obstruction</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>a hyperbolic space form of dimension $n \geq 3$</td>
+<td>the Mostow rigidity theorem gives that homotopy equivalence implies isometry; the deformation theory of the two-dimensional case does not survive</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>the isometry group of a symmetric space</td>
+<td>it is generally larger than the group $G$ defining the space as $G/H$; the full isometry group can be larger, and the maximal compact subgroup appears in both</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Objects that a reader may expect in a list of isometry and symmetry groups, and does not find here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Euclidean group $E(n)$ and the affine group</td>
+<td>they are listed with the affine and Euclidean groups; here they appear as the isometry group of $\mathbb{R}^n$</td>
+<td><em>List of Affine and Euclidean Groups</em></td>
+</tr>
+<tr>
+<td>the orthogonal, unitary and symplectic groups</td>
+<td>they are the classical groups, defined by a form rather than by a distance</td>
+<td><em>List of Classical Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the Möbius and conformal groups</td>
+<td>they preserve angles and not distances; $\operatorname{Möb}(n) = O(n+1,1)/\{\pm1\}$ is catalogued separately</td>
+<td><em>List of Möbius and Conformal Groups</em></td>
+</tr>
+<tr>
+<td>the isometry groups of the CAT($0$) and Gromov-hyperbolic spaces</td>
+<td>they are metric-geometric generalisations of the symbol $\operatorname{Isom}(X)$</td>
+<td><em>Metric Geometry</em>; <em>Hyperbolic Groups</em></td>
+</tr>
+<tr>
+<td>the Lorentz and Poincaré groups</td>
+<td>they are the symmetry groups of Minkowski space, a physical construction</td>
+<td><em>Pseudo-Riemannian and Lorentzian Geometry</em>; <em>Split-Biquaternion Rotations and the Lorentz Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the isometry and symmetry groups of the corpus: the isometry group $\operatorname{Isom}(X)$ of a metric space with its compact-open topology, the Myers–Steenrod theorem that it is a Lie group for a Riemannian manifold, and its identification with $\operatorname{Sym}(X)$ in the discrete case; the isometry groups of the three model geometries, $\operatorname{Isom}(\mathbb{R}^n) = E(n)$, $\operatorname{Isom}(S^n) = O(n+1)$ and $\operatorname{Isom}(\mathbb{H}^n) = O(n,1)$, with the hyperbolic case read through $\operatorname{PGL}(2,\mathbb{R})$ and $\operatorname{PGL}(2,\mathbb{C})$; the crystallographic, wallpaper and frieze groups with the point group, the lattice, the crystallographic restriction and the Bieberbach theorems; and the symmetry groups of the regular polygons and the Platonic solids, with the polyhedral groups $T$, $O$, $I$ and their binary covers. Beside the examples stand the non-examples: the general metric space whose isometry group need not be a Lie group, the non-compact hyperbolic group and its orientation-preserving part, the periodic figure whose symmetry group is infinite, and the forbidden lattice rotations. The list introduces and proves nothing; it is the index of the isometry and symmetry groups of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are those of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $d(x,y)$</td>
+<td>a metric space, its distance</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(X)$</td>
+<td>the isometry group, with the compact-open topology</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(F)$, $\operatorname{Sym}(X)$</td>
+<td>the symmetry group of a figure, of a set</td>
+</tr>
+<tr>
+<td>$E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>the Euclidean isometry group</td>
+</tr>
+<tr>
+<td>$S^n_R$, $O(n+1)$, $SO(n+1)$</td>
+<td>the round sphere, its isometry group and the orientation-preserving part</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^n$, $O(n,1)$</td>
+<td>hyperbolic space, its isometry group; the Lorentz-type group</td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}(2,\mathbb{R})$, $\operatorname{PGL}(2,\mathbb{R})$</td>
+<td>the orientation-preserving and full isometry groups of $\mathbb{H}^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{E}^n = S^n/\{\pm1\}$</td>
+<td>elliptic space</td>
+</tr>
+<tr>
+<td>$\Gamma \leq E(n)$, $T_\Gamma$, $P = \ell(\Gamma)$</td>
+<td>a crystallographic group, its translation lattice, its point group</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n/\Gamma$</td>
+<td>the compact flat orbifold or flat manifold</td>
+</tr>
+<tr>
+<td>$C_m$, $D_m$</td>
+<td>the rotation and symmetry groups of the regular $m$-gon</td>
+</tr>
+<tr>
+<td>$T$, $O$, $I$</td>
+<td>the rotation groups of the tetrahedron, octahedron and icosahedron</td>
+</tr>
+<tr>
+<td>$T_d$, $O_h$, $I_h$</td>
+<td>the full symmetry groups of the Platonic solids</td>
+</tr>
+<tr>
+<td>$2T$, $2O$, $2I$</td>
+<td>the binary polyhedral groups in $Sp(1)$</td>
+</tr>
+<tr>
+<td>$D_\infty$</td>
+<td>the infinite dihedral group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Marcel Berger, <em>Geometry I</em> (Springer, 1987), for the isometry groups of the model spaces and the classification of the isometries.</li>
+<li>Ludwig Bieberbach, <em>Über die Bewegungsgruppen der euklidischen Räume</em> (Mathematische Annalen 70, 1911 and 72, 1912), for the structure and finiteness of the crystallographic groups.</li>
+<li>John Conway, Olaf Delgado Friedrichs, Daniel Huson and William Thurston, <em>On Three-dimensional Space Groups</em> (Beiträge zur Algebra und Geometrie 42, 2001), for the classification of the three-dimensional crystallographic groups.</li>
+<li>Harold S. M. Coxeter, <em>Regular Polytopes</em> (Dover, 3rd ed. 1973), for the symmetry groups of the regular polytopes and the reflection groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

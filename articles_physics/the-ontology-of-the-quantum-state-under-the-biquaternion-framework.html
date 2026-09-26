@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ontology of the Quantum State under the Biquaternion Framework — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-ontology-of-the-quantum-state-under-the-biquaternion-framework"><strong>The Ontology of the Quantum State under the Biquaternion Framework</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>What is the quantum state? The question is as old as the formalism, and it is usually posed as a choice among readings: is the state a real physical entity, a catalogue of an observer's knowledge, or a relation between a system and a measurement context? This article asks the question inside the biquaternion framework of the companion articles, where the state is not a primitive to be interpreted on its own but an <strong>element of a fixed algebra</strong>.</p>
+<p>The framework's answer is a split one, and the split is the subject of the article. The algebra determines <em>what the element is</em> with unusual precision: a positive trace-one element of the Hermitian subspace $\mathbb{M}_+$, a point of the Bloch ball, with purity an idempotence condition and mixedness a single scalar. The algebra does not determine <em>what the element is an element of</em>: that is the informational-sector hypothesis of <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, labelled there as a hypothesis and not a result. The ontology of the state is therefore not a self-contained question. It is the ontology of $\mathbb{M}_+$.</p>
+<p>This article is interpretive, and it keeps the boundary between what the algebra establishes and what is interpretation explicit in every section. The established facts are recomputed from the definitions, not inherited on authority. The interpretive readings are labelled as readings, and where a reading is not forced by the algebra, that is said rather than smoothed over.</p>
+<p>The material is inherited, unchanged, from the read list. From <em>Quantum Mechanics in Biquaternionic Form</em>: the states are the positive trace-one elements of $\mathbb{M}_+$, the pure states are the idempotents $\tilde{P}_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$, the mixed states are the interior of the Bloch ball $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|<1$, and the Born rule is the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. From <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>: the state space is the intersection of the trace-one hyperplane with the future light cone of the norm form $N(\tilde{H})=\tilde{H}\bar{\tilde{H}}$, and the pure states are the zero divisors at trace one. From <em>The Measurement Problem in Algebraic Form</em>: the element is <strong>provenance-blind</strong> and carries no index of the realised outcome. From <em>Decoherence as Idempotent Projection</em>: decoherence is the deformation of an idempotent into a non-idempotent positive trace-one element, with $\tilde{\rho}^2-\tilde{\rho}=\tfrac14(|\mathbf{r}|^2-1)e_0$. From <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{M}_+$.</p>
+<p>The article proceeds as follows. The next four sections collect the established structure of the state as an element: its definition and geometry; its cohabitation with the observables in one space; its convex structure; and its purity as idempotence and as zero-divisorhood. Two further sections state what the element does not carry and what it is not. The last three sections separate the ontological readings the algebra permits, state the sector hypothesis under which they acquire physical content, and list the questions the algebra leaves open.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center of the algebra. The Hermitian conjugation is $\dagger=\bar{\cdot}^{\,*}$, and the trace is the matrix-representation trace, $\mathrm{Tr}(\tilde{H})=2\,\mathrm{Sc}(\tilde{H})$, with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ inherited unchanged.</p>
+<h2 id="the-state-as-an-element-of-math26">The State as an Element of $\mathbb{M}_+$</h2>
+<p>A state of the informational sector is an element of the Hermitian subspace</p>
+<p>$$
+\tilde{\rho}=\tfrac12\left(e_0+i\,\mathbf{r}\right),\qquad \mathbf{r}=r_1 e_1+r_2 e_2+r_3 e_3\in\mathbb{R}^3,
+$$</p>
+<p>with the positivity condition $|\mathbf{r}|\leq1$. Its scalar part is real and its vector part purely imaginary, so $\tilde{\rho}\in\mathbb{M}_+$ by the definition of that subspace. Its trace is $\mathrm{Tr}(\tilde{\rho})=1$, and it is an observable — a Hermitian element — that is positive and normalized.</p>
+<p>Three identities carry the whole of the state's structure. Expanding the square in the algebra,</p>
+<p>$$
+\tilde{\rho}^2=\tfrac14\left(\left(1+|\mathbf{r}|^2\right)e_0+2i\,\mathbf{r}\right),
+$$</p>
+<p>so the deviation from idempotency is a pure scalar,</p>
+<p>$$
+\tilde{\rho}^2-\tilde{\rho}=\tfrac14\left(|\mathbf{r}|^2-1\right)e_0 ,
+$$</p>
+<p>and the norm form is</p>
+<p>$$
+N(\tilde{\rho})=\tilde{\rho}\bar{\tilde{\rho}}=\tfrac14\left(1-|\mathbf{r}|^2\right)e_0 .
+$$</p>
+<p>The three are consistent: the eigenvalues of $\tilde{\rho}$ are $\lambda_\pm=\tfrac12(1\pm|\mathbf{r}|)$, so positivity is exactly $|\mathbf{r}|\leq1$, which is exactly $N(\tilde{\rho})\geq0$, which is exactly membership of the future light cone of the norm form. The state space is therefore the trace-one slice of that cone,</p>
+<p>$$
+\{\text{states}\}=\left\{\tilde{\rho}\in\mathbb{M}_+:\ \mathrm{Tr}(\tilde{\rho})=1,\ N(\tilde{\rho})\geq0\right\},
+$$</p>
+<p>the Bloch ball of radius one.</p>
+<p><strong>Established, and recomputed.</strong> The state is an element of $\mathbb{M}_+$; positivity, trace normalization, and the norm-form condition are one condition; the deviation from idempotency is a single real scalar. These were checked on randomly generated states, not on the example that suggested them.</p>
+<p><strong>Interpretation begins only at the next question.</strong> The algebra says which elements are states and how they are related. It does not say that these elements are physical, or what they are physical states <em>of</em>. That question is held back until the sector hypothesis, taken up in a later section.</p>
+<h2 id="the-state-and-the-observable-in-one-space">The State and the Observable in One Space</h2>
+<p>A general observable of the informational sector is an element</p>
+<p>$$
+\tilde{H}=h_0 e_0+i\,\mathbf{h},\qquad h_0\in\mathbb{R},\quad \mathbf{h}\in\mathbb{R}^3,
+$$</p>
+<p>of the same subspace $\mathbb{M}_+$. The state $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ is a particular case: an observable with $h_0=\tfrac12$ and $\mathbf{h}=\tfrac12\mathbf{r}$, positive and of trace one. <strong>States are positive trace-one observables.</strong> The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and trace, imposed on elements of one four-dimensional real space.</p>
+<p>Two facts make the cohabitation exact. First, the trace pairing</p>
+<p>$$
+\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}
+$$</p>
+<p>is a positive-definite symmetric form on $\mathbb{M}_+$, with Gram matrix diagonal in the basis $\{e_0,ie_1,ie_2,ie_3\}$; up to the normalization $\mathrm{Tr}(e_0)=2$ it is the Euclidean pairing. Second — and this is the point for the ontology — because the pairing is positive definite, the map</p>
+<p>$$
+\tilde{\rho}\ \longmapsto\ \left(\tilde{H}\mapsto \mathrm{Tr}(\tilde{\rho}\tilde{H})\right)
+$$</p>
+<p>is injective: an element of $\mathbb{M}_+$ is determined by its pairings with observables. So the state, regarded as a functional on observables, is an element of the very space on which it is a functional; $\mathbb{M}_+$ is its own dual under the trace pairing, and there is no second space in which the state lives.</p>
+<p>That the state is a <em>positive</em> functional is part of the same structure. If $\tilde{H}\geq0$, meaning $h_0\geq|\mathbf{h}|$, then</p>
+<p>$$
+\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}\ \geq\ |\mathbf{h}|-|\mathbf{r}|\,|\mathbf{h}|=\left(1-|\mathbf{r}|\right)|\mathbf{h}|\ \geq\ 0 .
+$$</p>
+<p>Positivity of the functional is thus not an extra postulate; it is the positivity condition $|\mathbf{r}|\leq1$ of the state seen from the dual side. The pairing formula, the positivity inequality, and the injectivity were all recomputed on randomly generated states and observables.</p>
+<p><strong>Interpretation.</strong> The cohabitation of states and observables is a structural fact; what it means is a reading. The natural reading is that the framework refuses a dualistic picture in which "states of information" inhabit a different kind of object from "physical quantities". A more cautious reading is that the coincidence is a feature of working in $\mathbb{B}\cong M_2(\mathbb{C})$, where states and effects are both matrices. The algebra does not decide between these readings, and the fact that it does not is itself a datum: it locates the ontological question elsewhere than in a state/observable dichotomy.</p>
+<h2 id="convexity-extremality-and-the-superposition-principle">Convexity, Extremality, and the Superposition Principle</h2>
+<p>The states form a <strong>convex set</strong>. If $\tilde{\rho}_1,\tilde{\rho}_2$ are states and $\lambda\in[0,1]$, then $\lambda\tilde{\rho}_1+(1-\lambda)\tilde{\rho}_2$ is Hermitian, of trace one, and positive — a state. In Bloch coordinates this is the convexity of the ball. The <strong>pure</strong> states, $|\mathbf{r}|=1$, are its <strong>extreme points</strong>: if a pure state is written as a nontrivial convex combination of two states, the two must coincide with it. For distinct unit vectors $\mathbf{r}_1\neq\mathbf{r}_2$ and $\lambda\in(0,1)$ one has $|\lambda\mathbf{r}_1+(1-\lambda)\mathbf{r}_2|<1$ strictly, by the triangle inequality, with equality only for $\mathbf{r}_1=\mathbf{r}_2$. Every mixed state, $|\mathbf{r}|<1$, is an interior point and admits a nontrivial decomposition; its spectral decomposition</p>
+<p>$$
+\tilde{\rho}=\lambda_+\tilde{P}_+(\hat{\mathbf{r}})+\lambda_-\tilde{P}_-(\hat{\mathbf{r}}),\qquad \lambda_\pm=\tfrac12\left(1\pm|\mathbf{r}|\right),
+$$</p>
+<p>is one, and the spectral decomposition is unique for $\mathbf{r}\neq0$.</p>
+<p>The state space is a convex body, not a vector space, and the difference matters. The sum of two states is not a state: $\mathrm{Tr}(\tilde{\rho}_1+\tilde{\rho}_2)=2$, and a scalar multiple of a state is not a state either. In particular the <strong>superposition principle is not a statement about the state space</strong>. Superposition belongs to the spinor module of $\mathbb{B}$ — the complex two-dimensional module entering the correspondence of <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> — which is a vector space; the states are the positive trace-one elements built from that module, and they form the convex ball. The framework's state is therefore not a vector to be added and not a ray to be projected: it is a convex element whose extreme points are the pure states.</p>
+<p><strong>Interpretation.</strong> Convexity gives a precise sense to "the state is a mixture": a mixed state is literally a convex combination of pure states in its own space, and the combination is an element of that space, not a classical probability distribution placed alongside it. This is a suggestive picture — the state as a point of a convex body whose extreme points are the pure states — but it is a picture. It does not by itself say whether the convex point is a real object or a representation of ignorance; and since the decomposition into non-orthogonal pure states is not unique (the next section), the same convex point can be presented as many different mixtures.</p>
+<h2 id="the-pure-state-is-an-idempotent-and-a-zero-divisor">The Pure State Is an Idempotent and a Zero Divisor</h2>
+<p>A state is pure exactly when $\tilde{\rho}^2=\tilde{\rho}$, which is exactly $|\mathbf{r}|=1$, which is exactly $N(\tilde{\rho})=0$. The last equality says that the pure states of trace one are exactly the <strong>zero divisors</strong> of $\mathbb{B}$ on the trace-one slice: a pure state is a nonzero element that annihilates a nonzero element, explicitly</p>
+<p>$$
+\tilde{P}_+(\hat{\mu})\,\tilde{P}_-(\hat{\mu})=0,\qquad \tilde{P}_\pm(\hat{\mu})=\tfrac12\left(e_0\pm i\hat{\mu}\right),
+$$</p>
+<p>with $\hat{\mu}$ a unit pure real quaternion, and $\tilde{P}_++\tilde{P}_-=e_0$. In the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$ a pure state is a rank-one projector, with vanishing determinant, while a mixed state is invertible and of rank two, with $\det=N(\tilde{\rho})=\tfrac14(1-|\mathbf{r}|^2)\neq0$. Purity, idempotence, extremality, and being a zero divisor are the same condition on the element.</p>
+<p><strong>Established, and recomputed.</strong> For random pure states the idempotence, the vanishing norm form, the annihilation identity, and the vanishing determinant all hold; for random mixed states the failure of idempotence and the non-vanishing determinant hold. The determinant identity $\det\varphi(\tilde{X})=N(\tilde{X})$ for the matrix representation $\varphi$ was checked on random biquaternions, which is what identifies the norm-form-zero set with the singular, hence zero-divisor, set.</p>
+<p><strong>Interpretation.</strong> Purity as an annihilation property is a genuinely algebraic way to state what purity is, and it is suggestive: a pure state is an element blind to its complement, in the exact sense that $\tilde{P}_+$ annihilates $\tilde{P}_-$. Whether that blindness should be read as a feature of physical reality or as a feature of the algebra is not decided by the algebra, and it is one of the readings the next sections leave open.</p>
+<h2 id="what-the-element-does-not-carry">What the Element Does Not Carry</h2>
+<p>Two negative facts about the state element are as structural as the positive ones.</p>
+<p><strong>Provenance-blindness.</strong> The state carries no record of how it was prepared. The algebra shows this directly: a mixed state has many ensemble decompositions. For a state with Bloch vector $\mathbf{r}$, $|\mathbf{r}|<1$, and a unit direction $\hat{\mathbf{n}}$ orthogonal to $\mathbf{r}$, put $t=\sqrt{1-|\mathbf{r}|^2}$, so that $\mathbf{r}_\pm=\mathbf{r}\pm t\hat{\mathbf{n}}$ are unit vectors. Then</p>
+<p>$$
+\tilde{\rho}=\tfrac12\,\tilde{P}_+(\mathbf{r}_+)+\tfrac12\,\tilde{P}_+(\mathbf{r}_-)
+$$</p>
+<p>is an ensemble decomposition with two pure states of the same type, distinct from the spectral decomposition (which uses one $\tilde{P}_+$ and one $\tilde{P}_-$). The maximally mixed state is the sharpest case: $\tfrac12 e_0=\tfrac12\tilde{P}_+(\hat{\mathbf{n}})+\tfrac12\tilde{P}_-(\hat{\mathbf{n}})$ for <em>every</em> unit $\hat{\mathbf{n}}$. The element is the same under all of these preparations, so it cannot be a catalogue of which preparation occurred. This was recomputed on random mixed states. <em>The Measurement Problem in Algebraic Form</em> states the same fact as the provenance-blindness of the state, and uses it to explain why a proper and an improper mixture are the same element of $\mathbb{M}_+$.</p>
+<p><strong>No outcome index.</strong> The state determines the Born probabilities</p>
+<p>$$
+p_\pm=\mathrm{Tr}\!\left(\tilde{P}_\pm(\hat{\mathbf{h}})\,\tilde{\rho}\right)=\tfrac12\left(1\pm\hat{\mathbf{h}}\cdot\mathbf{r}\right)
+$$</p>
+<p>of a measurement along $\hat{\mathbf{h}}$, and nothing about which outcome occurs. No element of $\mathbb{M}_+$ and no operation of the algebra carries the index $\pm$; that is the selection problem in algebraic form, established in the measurement-problem article and not resolved here. In the geometric language of that article the statistics determine the segment — the pointer diameter — and the outcomes are its endpoints; the element is the segment.</p>
+<p><strong>Established, inherited, and not repaired.</strong> Both facts are properties of the element at the single-qubit level. They are stated here because they bound what any ontology of the state can claim: an element that carries neither provenance nor outcome cannot be a complete description of an individual measurement event, whatever else it is. In two clauses: the element is <strong>operationally complete</strong> — it determines every statistic and is determined by them — and <strong>ontically incomplete</strong> — it determines no outcome and records no preparation.</p>
+<h2 id="the-state-is-not-a-spacetime-object-and-not-a-spinor-ray">The State Is Not a Spacetime Object, and Not a Spinor Ray</h2>
+<p>The complementarity $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ assigns the state to the informational side. The four-vectors of relativistic physics — position, velocity, momentum, potential, current — lie in $\mathbb{M}_-$, with imaginary scalar part and real vector part; the state has real scalar part and imaginary vector part, so it lies in $\mathbb{M}_+$ and has zero component in $\mathbb{M}_-$. The state is therefore not a configuration in spacetime and not a four-vector; it is an element of the complementary sector. Its relation to the material sector is not that of a configuration but that of an operator: the elements of $\mathbb{M}_+$ act on $\mathbb{M}_-$ by conjugation, and the norm-form-preserving, unit-norm-form ones among them are the Lorentz boost rotors. A state is not one of them. Its norm form is $N(\tilde{\rho})=\tfrac14(1-|\mathbf{r}|^2)\in[0,\tfrac14]$, never $1$, so no state has unit norm form; the state is not an action on spacetime either, but a normalized positive element of the operator subspace.</p>
+<p>The state is equally not a spinor ray. In the correspondence of <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, the spinor module of $\mathbb{B}$ corresponds to the Hilbert space $\mathbb{C}^2$ and the pure states correspond to the rank-one density operators. The framework's state is the second object, not the first: the pure state is the idempotent $\tilde{P}_\pm(\hat{\mu})$, and the passage from a module element to a state is the rank-one projection onto it. A central phase $\psi\mapsto e^{i\theta}\psi$ leaves the idempotent unchanged, because $e^{i\theta}$ lies in the center $\mathbb{C}_{\mathbb{B}}$; the phase of the spinor is therefore not part of the state. So the framework's state is not a vector and not a ray: it is the idempotent built from the ray, with the phase already quotiented out, and for a mixed state there is no spinor to build it from at all.</p>
+<p><strong>Established.</strong> These are statements about which subspace the state lies in and which object the framework calls the state. The interpretive consequence — that a "wavefunction ontology" and a "density-operator ontology" are not merely two readings of one object but, in this framework, readings of two different objects — is a reading, and it is labelled as one.</p>
+<h2 id="ontological-readings-and-what-the-algebra-decides">Ontological Readings and What the Algebra Decides</h2>
+<p>We can now separate what the algebra settles from what it leaves to interpretation.</p>
+<p><strong>Settled by the algebra.</strong></p>
+<ol>
+<li><strong>Identity.</strong> A state is a positive trace-one element of $\mathbb{M}_+$, equivalently a point of the Bloch ball, equivalently a trace-one element of the future light cone of the norm form. The identification is canonical: no choice of basis or representation enters, and the same objects are singled out in every isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$.</li>
+<li><strong>Determinacy of statistics.</strong> The element determines every measurement statistic, through the trace pairing, and is determined by them, because the pairing is positive definite.</li>
+<li><strong>Convex structure.</strong> States form a convex body whose extreme points are the pure states; mixedness is a convex combination in the same space; purity is idempotence and zero-divisorhood; the mixedness of a state is the single scalar $\mathrm{Sc}(\tilde{\rho}^2-\tilde{\rho})$.</li>
+<li><strong>Blindness.</strong> The element carries neither provenance nor outcome index.</li>
+</ol>
+<p><strong>Readings the algebra permits.</strong> Four familiar readings can be stated in these terms.</p>
+<ul>
+<li><strong>State realism.</strong> The element is a real, determinate feature of the world. The algebra is compatible: the element is canonical and observer-independent, and nothing in the framework introduces an observer or a preparation into its definition. The cost is that the element then does not determine the outcome, which is exactly the selection problem; a state-realist reading must therefore be one on which the state is not a complete description of an individual event.</li>
+<li><strong>Epistemic or statistical reading.</strong> The element summarizes an agent's information or the statistics of an ensemble. The algebra is compatible: the element is provenance-blind and determines statistics. The cost is that there is no agent and no ensemble anywhere in the algebra, and the element is not a bookkeeping table but a geometric object in the same space as the observables, with a canonical inner product and a canonical cone. An epistemic reading must explain why a summary of information has the geometry of a convex body of operators.</li>
+<li><strong>Relational reading.</strong> The state is defined relative to a measurement context. The algebra is compatible in that the state's meaning is exhausted by its pairings with observables; the cost is that the element itself is context-independent — the same element enters every pairing — so the relation would have to live in the act of pairing, which is not an object of the algebra.</li>
+<li><strong>Structural reading.</strong> What is real is the structure — the algebra, its subspaces, its pairings, its convex state space — rather than any particular element. The algebra is compatible, and this reading asks least of it. The cost is the familiar one of structural realism: it must say what distinguishes the structure that is realised from the many that are not.</li>
+</ul>
+<p><strong>What is not settled.</strong> The algebra decides none of these readings. It decides what a state <em>is</em> and what it <em>does</em>; it does not decide what a state is <em>of</em>. An added structure — a selection rule, a space of beables, an observer index, a preferred decomposition — would decide among the readings, and the algebra contains no such structure. <strong>This article takes no position among the four.</strong> It claims only that the framework's contribution to the debate is to fix the disputed object more sharply than the standard formalism does, and thereby to relocate the dispute: the question "is the state real?" becomes the question "is $\mathbb{M}_+$ real?".</p>
+<h2 id="the-informational-sector-hypothesis-and-the-ontology-of-the-state">The Informational-Sector Hypothesis and the Ontology of the State</h2>
+<p>The framework's own interpretive hypothesis is stated in <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>: that $\mathbb{M}_+$ is not only a mathematical structure but an <strong>informational sector</strong> of the world, physically realised as the material sector $\mathbb{M}_-$ is. That article is explicit that the algebraic identification of $\mathbb{M}_+$ with the operator algebra of a qubit is established, while the physical realisation is a hypothesis.</p>
+<p>Granting the hypothesis, the ontology of the state follows in one step. If $\mathbb{M}_+$ is a physical sector, then its elements are physical; a state, being a positive trace-one element, is a physical element of that sector; the Bloch ball is a physical convex body; and the readings above are readings of a physical object. This is a <strong>sectorial realism</strong> about the state: the state is real, but its reality is the reality of the sector, not a separate postulate. Denying the hypothesis, the state is a mathematical element of a reformulation of quantum mechanics — real only as mathematics — and the readings above are readings of a formalism.</p>
+<p>The point of separating the two is that the algebra cannot make the choice. The same equations, the same identities, and the same state space serve under either reading; the difference is a commitment about the physical status of a subspace, and the algebra does not contain that commitment. <strong>This is the article's central interpretive claim, and it is offered as a claim, not a result:</strong> the ontology of the quantum state under the biquaternion framework is not an independent question but the ontology of $\mathbb{M}_+$, and the algebra relocates the question rather than answering it.</p>
+<p><strong>A caution against over-reading.</strong> The sector hypothesis does not by itself supply an outcome, a preferred basis, or a dynamics of the sector; those remain open in the parent article. Sectorial realism is therefore not a solution to the measurement problem, and it should not be presented as one. It is a reading of what the element is, not a completion of what the element does.</p>
+<h2 id="what-the-algebra-does-not-decide">What the Algebra Does Not Decide</h2>
+<p>The gaps are as much a part of the ontology as the results. Stated at the single-qubit level the framework supports:</p>
+<ol>
+<li><strong>The selection of an outcome.</strong> No element and no operation selects an outcome as a function of the state. The statistics are determined; the outcome is not. Sectorial realism does not repair this.</li>
+<li><strong>The preferred basis.</strong> The pointer direction is an input to decoherence, not an output of the algebra. A state with $\mathbf{r}\neq0$ has a canonical spectral decomposition, but its eigenbasis is not selected by any physical interaction, and it is not the pointer basis of a measurement.</li>
+<li><strong>The provenance of ensembles and the proper/improper distinction.</strong> The element does not distinguish a proper from an improper mixture; whether that distinction has physical content is not decided by the algebra, and the record that would carry it is not in $\tilde{\rho}$.</li>
+<li><strong>Many-qubit ontology.</strong> The state of $n$ qubits is a positive trace-one element of $\mathbb{M}_+^{\otimes n}$; the tensor product, the partial trace, and the reduced states are inherited rather than derived, and the ontology of a reduced state — its relation to the joint element — is treated in <em>Entangled Subsystems in the Biquaternion Framework</em> and is not developed here.</li>
+<li><strong>Field-theoretic and relativistic states.</strong> The state described is a single-qubit state. The Lorentz action is on $\mathbb{M}_-$; the state lives in $\mathbb{M}_+$ and is not a Lorentz-covariant object in the same sense. A relativistic, many-particle state is not developed here.</li>
+<li><strong>Empirical content.</strong> As everywhere in the framework, whether any of this yields a prediction distinguishing it from standard quantum mechanics is open. A reading of a formalism with the same predictions cannot be decided by experiment unless the formalism is extended.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The quantum state in the biquaternion framework is a <strong>positive trace-one element of the Hermitian subspace $\mathbb{M}_+$</strong>,</p>
+<p>$$
+\tilde{\rho}=\tfrac12\left(e_0+i\mathbf{r}\right),\qquad |\mathbf{r}|\leq1 ,
+$$</p>
+<p>equivalently a point of the Bloch ball, equivalently a trace-one element of the future light cone of the norm form. Its purity is idempotence, $|\mathbf{r}|=1$, equivalently vanishing of the norm form and zero-divisorhood at trace one; its mixedness is the single scalar $\tilde{\rho}^2-\tilde{\rho}=\tfrac14(|\mathbf{r}|^2-1)e_0$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and trace normalization; the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}$ makes the state a positive normalized functional on that space, and its positive definiteness makes the space its own dual. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.</p>
+<p>Two negative facts bound the ontology. The element is <strong>provenance-blind</strong> — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries <strong>no outcome index</strong>, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out.</p>
+<p>The article's interpretive claim is that the algebra settles the identity, the statistics, the convex structure, and the blindness of the state, and settles nothing about its physical status. State realism, the epistemic reading, the relational reading, and the structural reading are all compatible with the algebra, and the algebra decides none of them; an added structure would be needed to do so, and there is none. The framework's own commitment is the informational-sector hypothesis, under which the state is a physical element of a physical sector — a sectorial realism offered as a hypothesis, not a result. The ontology of the quantum state is therefore the ontology of $\mathbb{M}_+$, and the algebra relocates the question rather than answering it. The selection of an outcome, the preferred basis, the proper/improper distinction, the many-qubit and field-theoretic extensions, and empirical contact remain open.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$, central</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (informational sector): real scalar, imaginary vector</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace (material sector): imaginary scalar, real vector</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$</td>
+<td>Real-quaternion subspace; complex scalar center</td>
+</tr>
+<tr>
+<td>$\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$</td>
+<td>State, $|\mathbf{r}|\leq1$ (Bloch ball)</td>
+</tr>
+<tr>
+<td>$\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$</td>
+<td>Pure state (idempotent, rank-one projector, zero divisor)</td>
+</tr>
+<tr>
+<td>$\tilde{H} = h_0e_0 + i\mathbf{h}$</td>
+<td>Observable (general Hermitian element)</td>
+</tr>
+<tr>
+<td>$N(\tilde{H}) = \tilde{H}\bar{\tilde{H}}$</td>
+<td>Norm form, signature $(1,3)$ on $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$</td>
+<td>Norm form of a state; positivity $\Leftrightarrow N\geq0$</td>
+</tr>
+<tr>
+<td>$\tilde{\rho}^2 - \tilde{\rho} = \tfrac14(|\mathbf{r}|^2-1)e_0$</td>
+<td>Deviation from idempotency (mixedness)</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$</td>
+<td>Trace</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$</td>
+<td>Trace pairing (Born rule); positive definite</td>
+</tr>
+<tr>
+<td>$\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$</td>
+<td>Eigenvalues of $\tilde{\rho}$</td>
+</tr>
+<tr>
+<td>$\hat{\mu}, \hat{\mathbf{n}}, \hat{\mathbf{h}}, \hat{\mathbf{r}}$</td>
+<td>Unit pure real quaternions (directions)</td>
+</tr>
+<tr>
+<td>$\dagger = \bar{\cdot}^{\,*}$</td>
+<td>Hermitian conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Biquaternion Universe</em>, for the algebra $\mathbb{B}$, its two sectors, and the conjunctions.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, for the operator-algebra identification and the informational-sector hypothesis.</li>
+<li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the four-vectors and the complementarity $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$.</li>
+<li><em>Quantum Mechanics in Biquaternionic Form</em>, for the state and observable formalism, the Bloch ball, and the Born rule.</li>
+<li><em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, for the state space as a slice of the cone and purity as a boundary condition.</li>
+<li><em>The Born Rule as a Trace Formula — Derivation and Comparison</em>, for what the trace pairing derives and what it restates.</li>
+<li><em>Biquaternion Zero Divisors</em> and <em>Biquaternion Spectral Theory</em>, for the algebraic structure of idempotents, rank-one elements, and zero divisors used in the purity section.</li>
+<li><em>The Measurement Problem in Algebraic Form</em>, for provenance-blindness, the missing outcome index, and the segment-versus-endpoint gap.</li>
+<li><em>Decoherence as Idempotent Projection</em>, for the deformation of an idempotent into a mixed state.</li>
+<li><em>Entangled Subsystems in the Biquaternion Framework</em>, for reduced states and the tensor-product structure.</li>
+<li><em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, for the operation-form reading of evolution and measurement.</li>
+<li><em>The Quantum–Classical Divide in the Biquaternion Framework</em>, for idempotent versus unitary operations.</li>
+<li><em>Quantum Mechanics: Foundations and Structure</em>, for the standard formulation and the structural checklist.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

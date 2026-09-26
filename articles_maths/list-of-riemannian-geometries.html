@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Riemannian Geometries — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-riemannian-geometries"><strong>List of Riemannian Geometries</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the Riemannian geometries of the corpus: the metrics, the connections they determine, the curvatures those connections carry, the geodesics and the comparison theorems that relate a geometry to the constant-curvature models, and the model spaces and space forms themselves. Every entry points to the article that introduces the notion, and the article introduces nothing and proves nothing.</p>
+<p>The list is ordered along the chain by which a Riemannian geometry is built: a metric on a manifold determines a unique torsion-free connection, the connection determines the curvature tensor, the curvature controls the geodesics through the Jacobi equation, and the comparison theorems translate hypotheses on the curvature into statements about the metric. The last section records the model spaces of constant curvature and their space forms, which are the geometries at which the comparison is made, and the Einstein metrics and the Ricci flow, which are the geometries singled out by a condition on the Ricci tensor.</p>
+<p>The article records examples and non-examples side by side. Beside the Riemannian geometries it lists the metrics that are indefinite and so Lorentzian or pseudo-Riemannian, the metric spaces that are not Riemannian, the manifolds that fail completeness, and the structures that are not metrics at all, each with the failure named and the article that records it.</p>
+<h2 id="riemannian-metrics">Riemannian Metrics</h2>
+<p>A Riemannian metric is a smoothly varying positive-definite inner product on each tangent space, and it makes the manifold a metric space by the length functional.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a Riemannian metric $g$</td>
+<td>a positive-definite symmetric bilinear form on each tangent space, varying smoothly</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the first fundamental form $ds^2 = \sum_{ij}g_{ij}dx^idx^j$</td>
+<td>the metric in local coordinates</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the length $L_g(\gamma)$</td>
+<td>the integral of the speed, defining the geometry</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the Riemannian distance $d_g(p,q)$</td>
+<td>the infimum of the lengths of the curves joining the points</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the volume form $\mathrm{vol}_g = \sqrt{\det(g_{ij})}\,dx^1\wedge\cdots\wedge dx^n$</td>
+<td>the measure the metric induces</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the pullback of a metric by an immersion</td>
+<td>the induced metric on a submanifold, the first fundamental form</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the isometry group $\operatorname{Isom}(M,g)$</td>
+<td>a Lie group by Myers–Steenrod, acting by metric-preserving diffeomorphisms</td>
+<td><em>Riemannian Geometry</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The metric and the distance determine each other, and the topology of the manifold is recovered from the metric because the metric topology of $d_g$ is the given topology. The metric is the only datum: the connection, the curvature, the geodesics, the volume and the isometry group are all functions of $g$.</p>
+<h2 id="the-levi-civita-connection-and-geodesics">The Levi-Civita Connection and Geodesics</h2>
+<p>The fundamental theorem of Riemannian geometry gives the metric a unique torsion-free connection, and the geodesics are its straight lines.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Levi-Civita connection $\nabla$</td>
+<td>the unique connection with $\nabla g = 0$ and zero torsion</td>
+<td><em>Riemannian Geometry</em>; <em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the Christoffel symbols $\Gamma^k_{ij}$</td>
+<td>the coefficients of the connection in a chart</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the connection form $\theta^i_{\ j}$</td>
+<td>the connection in a frame, matrix-valued</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>parallel transport $P_\gamma$</td>
+<td>the isometry of tangent spaces along a curve, defined by $\nabla$</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the holonomy group $\operatorname{Hol}_p$</td>
+<td>the group of parallel transports around the loops at $p$</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the geodesic equation $\nabla_{\gamma'}\gamma' = 0$</td>
+<td>the equation of a curve whose velocity is parallel</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the exponential map $\exp_p : T_pM \to M$</td>
+<td>the map sending a tangent vector to the endpoint of its geodesic</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>normal coordinates and the Gauss lemma</td>
+<td>coordinates in which the metric is Euclidean to first order at $p$</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the injectivity radius and the cut locus</td>
+<td>the range in which the exponential map is a diffeomorphism</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the completeness theorem of Hopf–Rinow</td>
+<td>metric completeness, geodesic completeness and finite compactness agree</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Parallel transport is the only invariant of the connection that is local along curves, and the holonomy group measures the failure of transport to return a tangent vector to itself around a closed loop. The exponential map is the bridge from the tangent space to the manifold, and the completeness theorem makes the geodesics of a complete metric global, so that the geometry is controlled by the curvature along them.</p>
+<h2 id="curvature">Curvature</h2>
+<p>The curvature tensor is the failure of second covariant derivatives to commute, and its traces are the sectional, Ricci and scalar curvatures.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the curvature tensor $R(X,Y)Z$</td>
+<td>the commutator of covariant derivatives, an algebraic curvature tensor</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the curvature form $\mathcal{R} = d\theta + \theta\wedge\theta$</td>
+<td>the matrix-valued two-form of the connection in a frame</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the sectional curvature $K(\sigma) = R(v,w,w,v)$</td>
+<td>the curvature of a two-plane, the value that determines $R$</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the Ricci tensor $\operatorname{Ric}(X,Y)$</td>
+<td>the trace of the curvature, the average of the sectional curvatures</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the scalar curvature $S$</td>
+<td>the trace of the Ricci tensor</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the Einstein tensor $G = \operatorname{Ric} - \frac12Sg$</td>
+<td>the divergence-free combination of the curvature</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the Jacobi equation $\frac{D^2J}{dt^2} + R(J,\gamma')\gamma' = 0$</td>
+<td>the linearised geodesic equation, governing the geodesic deviation</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>conjugate points</td>
+<td>the zeros of a Jacobi field, the limit of the minimising range</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the Weyl tensor and its conformal flatness</td>
+<td>the trace-free part of the curvature, controlling the conformal geometry</td>
+<td><em>Conformal Geometry</em></td>
+</tr>
+<tr>
+<td>the Bianchi identities</td>
+<td>the algebraic and differential symmetries of the curvature</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The curvature tensor is the local invariant of the metric, the sectional curvature determines it completely, and the Ricci and scalar curvatures are its two traces. The Bianchi identities and the second Bianchi identity are the source of the divergence-free Einstein tensor and of the contracted identity that makes the curvature the natural object of the variational principles of the field equations.</p>
+<h2 id="comparison-theorems">Comparison Theorems</h2>
+<p>The comparison theorems translate a curvature bound into a statement about the geometry, by comparing the manifold with the constant-curvature model of the bound.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theorem</th>
+<th>The comparison it makes</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the comparison field $s_{\tilde K}(t)$</td>
+<td>the Jacobi field of the constant-curvature model, the standard of comparison</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the Rauch comparison theorem</td>
+<td>a curvature bound compares Jacobi fields and the exponential map with the model</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the Bishop–Gromov volume comparison</td>
+<td>a Ricci bound compares the volumes of balls with the model</td>
+<td><em>Gromov–Hausdorff Convergence</em></td>
+</tr>
+<tr>
+<td>the Cartan–Hadamard theorem</td>
+<td>$K \leq 0$, complete and simply connected implies $\exp_p$ is a diffeomorphism</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the Bonnet–Myers theorem</td>
+<td>$\operatorname{Ric} \geq (n-1)k > 0$ implies compactness and a diameter bound</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the Gauss–Bonnet theorem</td>
+<td>$\int_M K\,\mathrm{vol}_g = 2\pi\chi(M)$ for a compact oriented surface</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the Gauss–Bonnet–Chern theorem</td>
+<td>the Pfaffian of the curvature integrates to the Euler characteristic in every even dimension</td>
+<td><em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>the Gauss equation</td>
+<td>the curvature of a submanifold in terms of the ambient curvature and the second fundamental form</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>the minimal surface equation</td>
+<td>the Euler–Lagrange equation $H = 0$ of the area functional</td>
+<td><em>Minimal Surfaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The comparison field is the Jacobi field of the model, and every comparison theorem is a statement that a curvature inequality makes the Jacobi fields, the volumes or the exponential map monotone relative to the model. The Gauss–Bonnet theorem is the boundary case in which the comparison integrates to a topological invariant, and it is the first instance of the principle that the integral of a curvature is a characteristic number.</p>
+<h2 id="model-spaces-space-forms-and-einstein-geometries">Model Spaces, Space Forms and Einstein Geometries</h2>
+<p>The geometries of constant curvature are the models of the comparison, and the Einstein metrics and the Ricci flow are the geometries selected by a condition on the Ricci tensor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Geometry</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the round sphere $S^n_r$</td>
+<td>constant curvature $1/r^2$, the positive model</td>
+<td><em>Curvature and Geodesics</em>; <em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>Euclidean space $\mathbb{R}^n$</td>
+<td>constant curvature $0$, the flat model</td>
+<td><em>Curvature and Geodesics</em>; <em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>hyperbolic space $\mathbf{H}^n_r$</td>
+<td>constant curvature $-1/r^2$, the negative model</td>
+<td><em>Curvature and Geodesics</em>; <em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>a space form</td>
+<td>a complete connected manifold of constant curvature, a quotient of a model</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>a homogeneous metric</td>
+<td>a $G$-invariant metric on $G/H$, determined on $\mathfrak{m}$</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>a normal homogeneous space</td>
+<td>a homogeneous metric from the Killing form, with Nomizu's curvature formula</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>a symmetric space with its invariant metric</td>
+<td>the metric with $\nabla R = 0$</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>an Einstein metric</td>
+<td>$\operatorname{Ric} = \lambda g$, with $\lambda = S/n$</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>a Kähler–Einstein metric</td>
+<td>a Kähler metric with $\rho = \lambda\Omega$</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>a Calabi–Yau metric</td>
+<td>a Ricci-flat Kähler metric, $c_1 = 0$</td>
+<td><em>Calabi–Yau Manifolds</em></td>
+</tr>
+<tr>
+<td>the Ricci flow</td>
+<td>the evolution $\partial_tg = -2\operatorname{Ric}$, deforming a metric to an Einstein one</td>
+<td><em>Ricci Flow</em></td>
+</tr>
+<tr>
+<td>the Ricci flow with surgery</td>
+<td>the flow continued through singularities, used to prove geometrisation</td>
+<td><em>Ricci Flow</em>; <em>Low-Dimensional Topology</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The three model spaces are the complete simply connected geometries of constant curvature, and the space-form theorem says that every complete constant-curvature geometry is a quotient of one of them. The Einstein condition is the weakest curvature condition that singles out a geometry, and the Ricci flow is the parabolic equation that deforms an arbitrary metric towards it; the flow with surgery is the tool by which the geometrisation of three-manifolds is proved.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the Riemannian geometries, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a Riemannian geometry</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a pseudo-Riemannian metric</td>
+<td>the form is indefinite, so the length is not positive and the metric is not Riemannian</td>
+<td><em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>a Lorentzian metric</td>
+<td>the signature $(n-1,1)$ special case of the pseudo-Riemannian case; the model of Part III</td>
+<td><em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>a general metric space</td>
+<td>no manifold and no metric tensor; the geometry is not defined by a Riemannian metric</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>an incomplete Riemannian manifold</td>
+<td>defined and Riemannian, but the comparison theorems that need completeness do not apply</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>a Finsler metric</td>
+<td>a norm on each tangent space, not a bilinear form; the Teichmüller metric is Finsler and not Riemannian for $g \geq 2$</td>
+<td><em>Teichmüller Theory</em></td>
+</tr>
+<tr>
+<td>a Kähler metric as a Riemannian metric only</td>
+<td>it is Riemannian, but its geometry is the complex one of the Kähler article</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the Riemannian geometries of the corpus along the chain from the metric to the comparison theorems. The metrics open the list, with the first fundamental form, the length, the distance and the volume; the Levi-Civita connection and the geodesics follow, with the Christoffel symbols, parallel transport, the holonomy group, the exponential map and the Hopf–Rinow theorem; the curvature tensor and its traces are gathered, with the Jacobi equation and the Weyl tensor; the comparison theorems, Rauch, Bishop–Gromov, Cartan–Hadamard, Bonnet–Myers and Gauss–Bonnet, are recorded with the comparison each makes; and the model spaces, the space forms, the Einstein and Kähler–Einstein and Calabi–Yau metrics and the Ricci flow close the list. Beside the examples stand the non-examples: a pseudo-Riemannian or Lorentzian metric is indefinite, a general metric space has no metric tensor, an incomplete manifold fails the hypotheses of the comparison theorems, and a Finsler metric such as the Teichmüller metric is not a bilinear form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(M,g)$, $g_{ij}$, $ds^2$</td>
+<td>Riemannian manifold, metric coefficients, first fundamental form</td>
+</tr>
+<tr>
+<td>$L_g$, $d_g$, $\mathrm{vol}_g$</td>
+<td>Length, distance, volume form</td>
+</tr>
+<tr>
+<td>$\nabla$, $\Gamma^k_{ij}$, $\theta^i_{\ j}$</td>
+<td>Levi-Civita connection, Christoffel symbols, connection form</td>
+</tr>
+<tr>
+<td>$R$, $\mathcal{R}$, $K(\sigma)$</td>
+<td>Curvature tensor, curvature form, sectional curvature</td>
+</tr>
+<tr>
+<td>$\operatorname{Ric}$, $S$, $G$</td>
+<td>Ricci tensor, scalar curvature, Einstein tensor</td>
+</tr>
+<tr>
+<td>$\exp_p$, $\operatorname{inj}(p)$</td>
+<td>Exponential map, injectivity radius</td>
+</tr>
+<tr>
+<td>$J$, $\operatorname{Hol}_p$</td>
+<td>Jacobi field, holonomy group</td>
+</tr>
+<tr>
+<td>$S^n_r$, $\mathbf{H}^n_r$, $\mathbb{R}^n$</td>
+<td>Model spaces of constant curvature</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(M,g)$</td>
+<td>Isometry group, a Lie group by Myers–Steenrod</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}$</td>
+<td>The isotropy complement of $\mathfrak{h}$ in $\mathfrak{g}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Manfredo do Carmo, <em>Riemannian Geometry</em> (Birkhäuser, 1992), for the metric, the Levi-Civita connection, the curvature and the comparison theorems.</li>
+<li>Jeff Cheeger and David Ebin, <em>Comparison Theorems in Riemannian Geometry</em> (North-Holland, 1975), for the Rauch, Bishop–Gromov and Cartan–Hadamard theorems in their standard form.</li>
+<li>Sylvestre Gallot, Dominique Hulin and Jacques Lafontaine, <em>Riemannian Geometry</em> (Springer, 3rd ed. 2004), for the curvature, the geodesics and the comparison theory with the models.</li>
+<li>Peter Petersen, <em>Riemannian Geometry</em> (Springer, 3rd ed. 2016), for the Einstein metrics, the holonomy and the modern comparison theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

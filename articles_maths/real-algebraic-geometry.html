@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Algebraic Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-algebraic-geometry"><strong>Real Algebraic Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Real algebraic geometry is the study of polynomial equations and inequalities over an ordered field, and of the fields in which those inequalities behave as they do over the real numbers. Its central object is a <strong>real closed field</strong> — a field with an ordering in which every polynomial of odd degree has a root — because in a real closed field a polynomial takes the sign it takes over $\mathbb{R}$: the ordering determines the signs, a sum of squares is nonnegative and vanishes only when every square vanishes, and every first-order question about the field is decided by a finite computation. The theorems of the subject are the algebraic forms of the geometric facts about real points of real varieties: the real Nullstellensatz describes the polynomials vanishing on the real zeros of an ideal, the Positivstellensatz describes the polynomials positive on a set described by inequalities, and Hilbert's seventeenth problem asks when a polynomial that is never negative is a sum of squares of rational functions.</p>
+<p>All of the objects here are algebraic: fields with orderings, ideals of polynomial rings, sums of squares, and first-order formulas. The topology of the real locus — the number of its maximal pieces, its covering by pieces, the notion of an open condition — belongs to Part II, and the results expressed in those terms are stated and deferred rather than used. The ordered-field theory is <em>Ordered Fields</em> and <em>Real-Closed and Complete Ordered Fields</em>; the ideal theory is <em>Noetherian and Artinian Rings</em>, <em>Primary Decomposition</em> and <em>Gröbner Bases and Elimination Theory</em>; the algebraic-set theory over an algebraically closed field is <em>Algebraically Closed Fields</em> and <em>Algebraic Curves</em>; and the arithmetic of real closed fields as ordered number systems is <em>Real-Closed and Complete Ordered Fields</em>.</p>
+<p>Throughout, $R$ is a real closed field, $K$ a formally real field, and $A = R[x_1,\ldots,x_n]$ the polynomial ring over $R$. A <strong>sum of squares</strong> in $A$ is a finite sum $\sum_ip_i^2$ with $p_i \in A$; the set of sums of squares is closed under addition and multiplication and contains every square, and it is the smallest "cone" of $A$ (a subset closed under addition and multiplication and containing the squares) that one meets. An <strong>ordering</strong> of a field $K$ is a subset $P \subseteq K$ closed under addition and multiplication with $K = P \cup (-P)$ and no nonzero element in both $P$ and $-P$; the elements of $P$ are called nonnegative.</p>
+<hr />
+<h2 id="real-closed-fields-and-orderings">Real Closed Fields and Orderings</h2>
+<h3 id="formally-real-fields">Formally Real Fields</h3>
+<p><strong>Definition.</strong> A field $K$ is <strong>formally real</strong> if $-1$ is not a sum of squares in $K$; an ordering $P$ of $K$ makes $K$ an ordered field in the sense of <em>Ordered Fields</em>, with $x \leq y$ meaning $y-x \in P$.</p>
+<p><strong>Theorem (Artin–Schreier).</strong> Let $K$ be a field and $K^\times$ its multiplicative group.</p>
+<p><strong>(a)</strong> $K$ admits an ordering if and only if $K$ is formally real, that is, if and only if $-1$ is not a sum of squares in $K$.</p>
+<p><strong>(b)</strong> If $K$ is formally real and $x \in K$ is not a sum of squares, then $K$ admits an ordering in which $x$ is negative; equivalently, every element of the field is either a sum of squares or polarised by some ordering.</p>
+<p><strong>(c)</strong> A field $R$ is real closed if and only if it is formally real and admits no proper algebraic extension that is formally real; equivalently, if and only if $\sqrt{-1} \notin R$ and $R(\sqrt{-1})$ is algebraically closed. Every real closed field has exactly one ordering, and every formally real field embeds in a real closed field, its <strong>real closure</strong>, which is unique up to isomorphism over it.</p>
+<p><strong>Proof sketch.</strong> (a) If $-1 = \sum a_i^2$ then some $a_i \neq 0$ and $1 + \sum(a_j/a_i)^2 = 0$, which is impossible in an ordered field since a sum of squares is nonnegative; conversely, one extends a partial cone of sums of squares to a maximal cone, which is an ordering, by the usual maximality argument with the set of cones of $K$ and Zorn's lemma. (b) is the same maximality argument applied to the cone generated by the sums of squares together with $x$, which is proper exactly when $x$ is not a sum of squares. (c) The equivalence of the two characterisations, the uniqueness of the ordering, and the existence and uniqueness of the real closure are the classical theory of Artin and Schreier; the uniqueness of the ordering follows because in a real closed field every element is a square or the negative of a square, so the positive cone is forced. $\square$</p>
+<p><strong>Example.</strong> $\mathbb{R}$ is real closed; so is the field of real algebraic numbers, the real closure of $\mathbb{Q}$; the field $\mathbb{R}(t)$ of rational functions is formally real but not real closed, since $t$ has no square root; the field $\mathbb{R}((t))$ of formal Laurent series is ordered by the sign of the leading coefficient and is real closed. The complex field $\mathbb{C}$ is not formally real, since $-1 = i^2$.</p>
+<p><strong>Definition.</strong> For a field $K$ the set of orderings is written $\operatorname{Sper}K$; for a ring $A$ with fraction field $K$ one writes $\operatorname{Sper}A$ for the set of orderings $P$ of $K$ such that every element of $A$ is bounded by an integer in the sense of the ordering, ordered by inclusion of the positive cones, $P \subseteq P'$ meaning that $P$ is "more special" than $P'$. The set $\operatorname{Sper}A$ with its partial order is the <strong>real spectrum</strong> of $A$; the topological structure of this set, and the sheaf theory attached to it, belong to Part II.</p>
+<h3 id="real-closed-fields-and-signs">Real Closed Fields and Signs</h3>
+<p><strong>Theorem (signs).</strong> Let $R$ be real closed, $f \in R[x_1,\ldots,x_n]$ and $a \in R^n$.</p>
+<p><strong>(a)</strong> If $f^2$ vanishes at $a$, then $f(a) = 0$; a sum of squares in $R[x_1,\ldots,x_n]$ vanishes at $a$ if and only if each of its terms does.</p>
+<p><strong>(b)</strong> For every $f$ and $a$, exactly one of $f(a) > 0$, $f(a) = 0$, $f(a) < 0$ holds, and $f$ is (as a function on $R^n$) nonnegative exactly when it is positive or zero at every point.</p>
+<p><strong>(c)</strong> (the intermediate value property, algebraically) If $f \in R[x]$ and $f(a) < 0 < f(b)$ for $a < b$, then there is $c \in R$ with $f(c) = 0$; more generally every polynomial of odd degree has a root in $R$.</p>
+<p><strong>Proof.</strong> (a) In an ordered field a sum of nonnegative terms vanishes only if every term vanishes, and $f^2 \geq 0$. (b) is the trichotomy of the ordering. (c) The divisibility of $f$ by linear factors and the sign change across a real root is the standard sign argument for ordered fields, using that the ordering of a real closed field extends to any ordered simple extension. $\square$</p>
+<hr />
+<h2 id="real-algebraic-sets">Real Algebraic Sets</h2>
+<h3 id="the-real-variety-and-the-real-radical">The Real Variety and the Real Radical</h3>
+<p><strong>Definition.</strong> For $S \subseteq A = R[x_1,\ldots,x_n]$ the <strong>real variety</strong> is</p>
+<p>$$
+\mathcal{V}(S) = \{a \in R^n : f(a) = 0 \ \text{for every } f \in S\} ,
+$$</p>
+<p>and for $X \subseteq R^n$ the <strong>real ideal</strong> is $\mathcal{I}(X) = \{f \in A : f(a) = 0 \text{ for every } a \in X\}$. The <strong>real radical</strong> of an ideal $I$ is</p>
+<p>$$
+\sqrt[\mathbb{R}]{I} = \left\{f \in A : f^{2m} + \sum_{i=1}^{k}p_i^2 \in I \ \text{for some } m \geq 0,\ p_i \in A\right\},
+$$</p>
+<p>an ideal containing the radical $\sqrt I$ and contained in the set of polynomials vanishing on $\mathcal{V}(I)$.</p>
+<p><strong>Theorem (real Nullstellensatz).</strong> Let $R$ be real closed and $I \subseteq R[x_1,\ldots,x_n]$ an ideal. Then</p>
+<p>$$
+\mathcal{I}(\mathcal{V}(I)) = \sqrt[\mathbb{R}]{I} .
+$$</p>
+<p>In particular, $I$ is a real ideal, meaning $I = \mathcal{I}(\mathcal{V}(I))$, if and only if whenever $f_1^2+\cdots+f_k^2 \in I$ all the $f_i$ lie in $I$; and the real Nullstellensatz is the exact analogue over $R$ of the Hilbert Nullstellensatz over an algebraically closed field.</p>
+<p><strong>Proof sketch.</strong> The inclusion $\sqrt[\mathbb{R}]{I} \subseteq \mathcal{I}(\mathcal{V}(I))$ is clear, since a sum of squares vanishes at a common zero only when each term does. For the converse, one shows that if $f \notin \sqrt[\mathbb{R}]{I}$ then there is a point of $\mathcal{V}(I)$ at which $f$ does not vanish; the argument adjoins a square root of $-1$ formally and uses the algebraic Nullstellensatz over the algebraically closed field $R(\sqrt{-1})$, together with the existence of an ordering of the residue field compatible with the maximal ideal — the passage from the algebraic to the real statement being exactly the passage from all points of the algebraic variety to its real points. $\square$</p>
+<p><strong>Example.</strong> In $\mathbb{R}[x]$, the ideal $(x^2+1)$ is not real: the polynomial $x^2+1$, a sum of squares plus $1$, generates an ideal whose real variety is empty, while $1 \in \mathcal{I}(\emptyset)$ and $1 \notin (x^2+1)$; the real radical of $(x^2+1)$ is the whole ring, consistently. In $\mathbb{R}[x,y]$, the ideal $(x^2+y^2)$ is real, since $x^2+y^2$ is a positive sum of squares vanishing only at the origin; its real variety is the single point $(0,0)$.</p>
+<h3 id="the-positivstellensatz">The Positivstellensatz</h3>
+<p><strong>Definition.</strong> For $f_1,\ldots,f_r \in A$ the <strong>cone</strong> generated by them is the smallest subset $\operatorname{cone}(f_1,\ldots,f_r)$ of $A$ containing all squares, closed under addition and multiplication, and containing $f_1,\ldots,f_r$; its elements are the sums of terms $p^2\prod_{i\in J}f_i$ with $p \in A$ and $J \subseteq \{1,\ldots,r\}$. The <strong>monoid</strong> generated by $g_1,\ldots,g_s$ is $\operatorname{mono}(g_1,\ldots,g_s) = \{\prod_j g_j^{e_j} : e_j \geq 0\}$, the multiplicative set they generate.</p>
+<p><strong>Theorem (Positivstellensatz, Stengle).</strong> Let $R$ be real closed, $f_1,\ldots,f_r, g_1,\ldots,g_s, h_1,\ldots,h_t \in R[x_1,\ldots,x_n]$ and let $W$ be the set of $a \in R^n$ with $f_i(a) \geq 0$, $g_j(a) \neq 0$ and $h_k(a) = 0$ for all $i,j,k$. Then:</p>
+<p><strong>(a)</strong> $W = \emptyset$ if and only if there are $F \in \operatorname{cone}(f_1,\ldots,f_r)$, $G \in \operatorname{mono}(g_1,\ldots,g_s)$ and $H \in (h_1,\ldots,h_t)$ with</p>
+<p>$$
+F + G^2 + H = 0 ;
+$$</p>
+<p><strong>(b)</strong> $f \geq 0$ on $W$ if and only if there are $F, F' \in \operatorname{cone}(f_1,\ldots,f_r)$, $G \in \operatorname{mono}(g_1,\ldots,g_s)$ and $H \in (h_1,\ldots,h_t)$ with</p>
+<p>$$
+f G^2 - F - H \in \operatorname{cone}(f_1,\ldots,f_r) \quad\text{or, equivalently,}\quad f G^2 = F + H ;
+$$</p>
+<p><strong>(c)</strong> $f > 0$ on $W$ if and only if there are $F, F'$ and $H$ in the same sense with $f F' = 1 + F + H$.</p>
+<p><strong>Proof sketch.</strong> The implications from the algebraic identity to the vanishing or sign condition follow by evaluating: a sum of nonnegative terms vanishes only if each does, and a square of a product of the $g_j$ is positive where the $g_j$ do not vanish. The converse direction is the hard one, and the standard proof proceeds by introducing one variable for each inequality and reducing to the real Nullstellensatz in a larger polynomial ring: the absence of a common solution of the enlarged system is the vanishing of a variety, and the Nullstellensatz converts that into the polynomial identity displayed. $\square$</p>
+<p><strong>Example.</strong> For $n = 1$, $f_1 = x$ and $W = \{a \in \mathbb{R} : a \geq 0\}$: the polynomial $x$ is nonnegative on $W$, and (b) is satisfied with $F = x\cdot 1^2$, $G = 1$, $H = 0$. The nonnegativity of $x$ on $\{x \geq 0\}$ would fail on $\{x < 0\}$, and correspondingly no identity of the listed form with the roles reversed exists.</p>
+<hr />
+<h2 id="hilberts-seventeenth-problem">Hilbert's Seventeenth Problem</h2>
+<h3 id="sums-of-squares">Sums of Squares</h3>
+<p><strong>Theorem (Hilbert's seventeenth problem, Artin).</strong> Let $R$ be a real closed field and $f \in R(x_1,\ldots,x_n)$ a rational function which is nonnegative at every point of $R^n$ at which it is defined. Then $f$ is a sum of squares of rational functions of $R(x_1,\ldots,x_n)$:</p>
+<p>$$
+f = \sum_{i=1}^{k}\frac{p_i^2}{q_i^2}, \qquad p_i, q_i \in R[x_1,\ldots,x_n] .
+$$</p>
+<p>Equivalently, writing $f = p/q$ with $p, q \in R[x_1,\ldots,x_n]$, the product $p q$ is a sum of squares of polynomials.</p>
+<p><strong>Proof sketch (Artin).</strong> One shows that if $f$ is not a sum of squares of rational functions, then $-1$ is a sum of squares in the field obtained by adjoining a square root of $-f$; hence that field is not formally real, so by the Artin–Schreier theory it carries no ordering, and a transfer argument with the orderings of the function field produces an ordering of $R(x_1,\ldots,x_n)$ in which $f$ is negative at a suitable "point" — that is, an ordering specialising to a point of $R^n$ at which $f$ takes a negative value, contradicting the hypothesis. The proof is thus a proof about orderings, and it uses no analysis: the "points" are the orderings of the function field, and the specialisation is the extension of orderings from the ring $R[x_1,\ldots,x_n]$ to its field of fractions. $\square$</p>
+<p><strong>Example (Motzkin).</strong> The polynomial</p>
+<p>$$
+M(x,y) = x^4y^2+x^2y^4+1-3x^2y^2
+$$</p>
+<p>is nonnegative at every point of $\mathbb{R}^2$: by the inequality of arithmetic and geometric means applied to the three nonnegative numbers $x^4y^2$, $x^2y^4$ and $1$, whose product is $(x^2y^2)^3$, one has $\frac13(x^4y^2+x^2y^4+1) \geq x^2y^2$, with equality exactly when $x^4y^2 = x^2y^4 = 1$. Nevertheless $M$ is not a sum of squares of polynomials in $\mathbb{R}[x,y]$, as Motzkin showed by a degree argument: a sum of squares of polynomials of degree at most $3$ has no term of the form $x^4y^2$, and the Newton polytope of $M$ forces every square to have degree at most $3$, so the intermediate terms $x^2y^2$ cannot be produced with the correct coefficient. By Artin's theorem $M$ is nonetheless a sum of squares of <em>rational</em> functions, and this is the classical example showing that the seventeenth problem cannot be answered within the polynomial ring.</p>
+<p><strong>Theorem (characterisation of sums of squares).</strong> Let $R$ be real closed and $f \in R[x_1,\ldots,x_n]$.</p>
+<p><strong>(a)</strong> The set of sums of squares of polynomials is a cone, and $f$ is a sum of squares of polynomials if and only if $f$ is a nonnegative element of the cone generated by the squares.</p>
+<p><strong>(b)</strong> Every nonnegative polynomial in one variable is a sum of two squares of polynomials: it is a product of irreducible factors of even multiplicity together with a positive constant, and each pair of conjugate irreducible factors contributes a sum of two squares by the identity $p^2+q^2 = (p+iq)(p-iq)$ read in $R(\sqrt{-1})$. The same conclusion fails in two variables, as the Motzkin example shows, and the general question of which nonnegative polynomials are sums of squares is governed by the degree and the number of variables.</p>
+<p><strong>(c)</strong> (the vanishing form of the same circle) $f$ vanishes at every point of $\mathcal{V}(I)$ if and only if $f \in \sqrt[\mathbb{R}]{I}$; for an ideal that is not real the real variety is smaller than the algebraic one, as $(x^2+1)$ in $R[x]$ shows, where the real variety is empty and the real radical is the whole ring. Note that the analogous statement for nonnegativity is false in the polynomial ring: the Motzkin polynomial is nonnegative on $\mathbb{R}^2 = \mathcal{V}(0)$ and is not a sum of squares of polynomials, and only the Positivstellensatz, with its certificates, covers that case.</p>
+<p><strong>Proof sketch.</strong> (a) is the definition of the cone and the closure properties of squares in an ordered field. (b) In one variable every nonnegative polynomial factors as a product of factors of even multiplicity and a positive leading coefficient, and each pair of conjugate linear factors squares to a sum of two squares by the identity $p^2+q^2 = (p+iq)(p-iq)$ read in $R(\sqrt{-1})$; the Motzkin example refutes the same conclusion in two variables. (c) is the real Nullstellensatz combined with the sign argument. $\square$</p>
+<h3 id="orderings-and-the-real-spectrum">Orderings and the Real Spectrum</h3>
+<p><strong>Theorem (the orderings of a polynomial ring).</strong> Let $R$ be real closed and $A = R[x_1,\ldots,x_n]$. Every point $a \in R^n$ determines an ordering of the fraction field $R(x_1,\ldots,x_n)$ by the sign of the value at $a$, and every ordering of the fraction field in which no element of $A$ is infinitely large is obtained from a point in this way; consequently the maximal elements of $\operatorname{Sper}A$ under the specialisation order correspond to the points of $R^n$, and the deeper orderings correspond to the "points at infinity" of the projective closure and to infinitesimal neighbourhoods, which are described by the theory of valuations of <em>Valuation Theory and Henselian Rings</em>.</p>
+<p><strong>Proof sketch.</strong> Given an ordering $P$ of the fraction field such that each $x_i$ is bounded by an integer, the sign conditions determine a maximal ideal of $A$: the set of elements of $A$ lying between the rational numbers $-1/k$ and $1/k$ in the sense of $P$ bounds the coordinates, and the real Nullstellensatz produces a point; the correspondence is bijective on the maximal orderings. $\square$</p>
+<p><strong>Example.</strong> For $n = 1$ and $A = R[x]$: an ordering of $R(x)$ specialising to the point $a$ is given by the sign of $(x-a)$; the ordering in which $x$ is larger than every real number corresponds similarly to the "point at infinity" of the projective line, and the orderings of $R(x)$ are exactly the points of the projective line with their infinitesimal thickenings.</p>
+<hr />
+<h2 id="quantifier-elimination-and-decidability">Quantifier Elimination and Decidability</h2>
+<h3 id="semialgebraic-sets">Semialgebraic Sets</h3>
+<p><strong>Definition.</strong> A <strong>semialgebraic set</strong> in $R^n$ is a finite Boolean combination — using union, intersection and complement — of sets of the form $\{a : f(a) > 0\}$ and $\{a : f(a) = 0\}$ with $f \in R[x_1,\ldots,x_n]$. Equivalently, it is the set of solutions of a finite system of polynomial equations and inequalities with $>$ and $\geq$; the two descriptions agree because $f \leq 0$ is the complement of $f > 0$ and $f \geq 0$ is $f = 0$ or $f > 0$.</p>
+<p><strong>Theorem (Tarski–Seidenberg).</strong> Let $R$ be real closed. The projection of a semialgebraic set $S \subseteq R^{n+1}$ onto the last $n$ coordinates is a semialgebraic subset of $R^n$; equivalently, every formula of the first-order theory of ordered fields with parameters in $R$ is equivalent, over $R$, to a quantifier-free formula.</p>
+<p><strong>Proof sketch.</strong> It suffices to eliminate one existential quantifier from a formula $\exists x\,\phi(x)$ with $\phi$ a Boolean combination of polynomial sign conditions in $x$ and the remaining variables. Writing the polynomials as elements of $R[y_1,\ldots,y_n][x]$, the sign conditions on the roots of the polynomial appear in the coefficients, and the standard elimination uses the signs of the roots of gcds of the constituent polynomials together with their resultants: the reduced system has coefficients that are polynomial expressions in the original ones. This is the algebraic content of the theorem; the algorithmic version is <em>Gröbner Bases and Elimination Theory</em> in its ordered-field form. $\square$</p>
+<p><strong>Corollary (decidability).</strong> The first-order theory of real closed fields is decidable: there is an algorithm which, given a sentence in the language of ordered rings, decides whether it holds in every real closed field; in particular the statements about real algebraic sets and semialgebraic sets are decidable, in contrast with the undecidability of the theory of arithmetic with multiplication and addition over the integers.</p>
+<p><strong>Corollary.</strong> A semialgebraic set which is defined over a subfield $K \subseteq R$ is defined by polynomial equations and inequalities with coefficients in $K$; the projection of a $K$-semialgebraic set is $K$-semialgebraic. This is the "transfer principle" of the theory of real closed fields: any statement about a real closed field with parameters in a real closed subfield holds in the subfield as well.</p>
+<h3 id="counting-real-roots">Counting Real Roots</h3>
+<p><strong>Theorem (Sturm's theorem).</strong> Let $K$ be an ordered field, $f \in K[x]$ a polynomial with no multiple roots, and let $f_0 = f, f_1 = f'$ and $f_{i+1} = -\operatorname{rem}(f_{i-1},f_i)$ be the Sturm sequence, terminating at $f_k$. Then for $a < b$ the number of roots of $f$ in the interval $[a,b]$ is the difference $V(a)-V(b)$, where $V(c)$ is the number of sign changes in the sequence $f_0(c), f_1(c), \ldots, f_k(c)$.</p>
+<p><strong>Proof sketch.</strong> The sign variations of a Sturm sequence change by exactly the number of roots crossed as the variable passes from $a$ to $b$: between consecutive roots the signs are constant, and at a root of $f$ the first two terms have opposite signs for a jump of $1$, while at a root of any other member of the sequence the variation is unchanged. $\square$</p>
+<p><strong>Example.</strong> For $f = x^3-3x+1$ over $\mathbb{R}$: $f' = 3x^2-3$, and the Sturm sequence, up to positive factors, is $x^3-3x+1$, $3x^2-3$, $2x-1$, $\frac94$, the last term being a positive constant. Evaluating at $-\infty$ and $+\infty$ gives variations $3$ and $0$, so $f$ has three real roots; this agrees with the discriminant $81 > 0$ and with the fact that the Galois group is $\mathbb{Z}/3$ and the splitting field is a real field, as in <em>The Inverse Galois Problem</em>. By contrast $x^3-3x+2 = (x-1)^2(x+2)$ has a multiple root, and the Sturm sequence must be applied to $f/\gcd(f,f')$.</p>
+<hr />
+<h2 id="real-curves-and-the-geometric-reading">Real Curves and the Geometric Reading</h2>
+<p><strong>Definition.</strong> For a real algebraic curve given by $F \in R[x,y]$ the <strong>real locus</strong> is $\mathcal{V}(F) \subseteq R^2$, and the semialgebraic subsets of the line are the finite unions of intervals, defined by inequalities; the theory of real algebraic curves studies the real loci through the orderings of the function field $R(x,y)$ and the valuations refining them, in the terminology of <em>Valuation Theory and Henselian Rings</em>.</p>
+<p><strong>Theorem (statement; deferred).</strong> The real locus of a nonsingular projective real curve of genus $g$ decomposes into at most $g+1$ maximal pieces, a theorem of Harnack, and the bookkeeping of the possible numbers of pieces is the theory of the real locus of a curve. The statement is about the connectedness of the real locus, a topological notion; it belongs to Part II, where the topology of the real locus is available, and only the algebraic description — the curve, its orderings, its places — is used here. The real points of a curve, the number of real solutions of a system, and the sign of a polynomial on a semialgebraic set are nevertheless decided by the algebraic theorems of this article, since by Tarski–Seidenberg every such question reduces to a finite Boolean combination of sign conditions.</p>
+<p><strong>Example.</strong> For the conic $x^2+y^2 = 1$: the real locus is nonempty, and the semialgebraic description $1-x^2 \geq 0$ gives the projection onto the $x$-axis; the algebraic statement that the curve has real points is decided by the fact that $1$ is a sum of squares of rational functions on the curve. For the conic $x^2+y^2 = -1$: the real locus is empty, and the ideal $(x^2+y^2+1)$ has real radical the whole ring, by the real Nullstellensatz, since $x^2+y^2+1$ is a sum of squares plus $1$.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A field is formally real when $-1$ is not a sum of squares, and by the Artin–Schreier theorem this is exactly when it admits an ordering; a real closed field is a formally real field with no proper formally real algebraic extension, it has exactly one ordering, and every formally real field has a unique real closure. In a real closed field $R$ the sign of a polynomial is decided algebraically: a sum of squares vanishes only if each term does, every odd-degree polynomial has a root, and the theory of orderings replaces the topology of the real line.</p>
+<p>For an ideal $I \subseteq R[x_1,\ldots,x_n]$ the real Nullstellensatz states $\mathcal{I}(\mathcal{V}(I)) = \sqrt[\mathbb{R}]{I}$, the real radical being the set of $f$ with $f^{2m}+\sum p_i^2 \in I$; the Positivstellensatz of Stengle characterises the emptiness of a set defined by inequalities $f_i \geq 0$, $g_j \neq 0$, $h_k = 0$ by the existence of an identity $F+G^2+H = 0$ with $F$ in the cone generated by the $f_i$, $G$ in the monoid generated by the $g_j$ and $H$ in the ideal generated by the $h_k$, and its parts (b) and (c) give the certificates of nonnegativity and positivity. Hilbert's seventeenth problem, that a rational function nonnegative on $R^n$ is a sum of squares of rational functions, was solved by Artin by exactly this ordering theory; the Motzkin polynomial $x^4y^2+x^2y^4+1-3x^2y^2$, nonnegative by the inequality of arithmetic and geometric means but not a sum of squares of polynomials, is the classical example showing that the polynomial version fails.</p>
+<p>Semialgebraic sets are the finite Boolean combinations of sign conditions, and the Tarski–Seidenberg theorem states that their projections are semialgebraic, equivalently that the first-order theory of real closed fields admits quantifier elimination and is decidable; the specialisation of orderings of the polynomial ring reproduces $R^n$ as the set of maximal orderings, and the remaining orderings correspond to points at infinity and to infinitesimal concentrations described by valuations. Real root counting is done by Sturm's theorem, whose variation count decides the number of roots in an interval and which applied to $x^3-3x+1$ gives three real roots, in agreement with its square discriminant $81$. The topological reading of these results — the maximal pieces of a real curve and Harnack's bound $g+1$, the open conditions, the real spectrum as a space — belongs to Part II and is stated rather than developed here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Real closed field</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Formally real field</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>An ordering, that is, a positive cone</td>
+</tr>
+<tr>
+<td>$\operatorname{Sper}K$, $\operatorname{Sper}A$</td>
+<td>Set of orderings, real spectrum as a set with its order</td>
+</tr>
+<tr>
+<td>$A = R[x_1,\ldots,x_n]$</td>
+<td>Polynomial ring</td>
+</tr>
+<tr>
+<td>$\mathcal{V}(S)$, $\mathcal{I}(X)$</td>
+<td>Real variety of $S$, real ideal of $X$</td>
+</tr>
+<tr>
+<td>$\sqrt[\mathbb{R}]{I}$</td>
+<td>Real radical of $I$</td>
+</tr>
+<tr>
+<td>$\operatorname{cone}(f_1,\ldots,f_r)$</td>
+<td>Cone generated by the $f_i$</td>
+</tr>
+<tr>
+<td>$\operatorname{mono}(g_1,\ldots,g_s)$</td>
+<td>Monoid generated by the $g_j$</td>
+</tr>
+<tr>
+<td>$M(x,y)$</td>
+<td>The Motzkin polynomial</td>
+</tr>
+<tr>
+<td>$V(c)$</td>
+<td>Number of sign variations of a Sturm sequence at $c$</td>
+</tr>
+<tr>
+<td>$g$</td>
+<td>Genus of a real curve</td>
+</tr>
+<tr>
+<td>$R(\sqrt{-1})$</td>
+<td>The algebraic closure of $R$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Emil Artin and Otto Schreier, "Algebraische Konstruktion reeller Körper", <em>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</em> 5 (1927), 85–99, for the theory of formally real and real closed fields.</li>
+<li>Emil Artin, "Über die Zerlegung definiter Funktionen in Quadrate", <em>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</em> 5 (1927), 100–115, for the solution of Hilbert's seventeenth problem.</li>
+<li>Alfred Tarski, <em>A Decision Method for Elementary Algebra and Geometry</em> (RAND Corporation, 2nd ed. 1951), for quantifier elimination and decidability over real closed fields.</li>
+<li>Abraham Seidenberg, "A new decision method for elementary algebra", <em>Annals of Mathematics</em> 60 (1954), 365–374, for the modern elimination procedure.</li>
+<li>Theodore Motzkin, "The arithmetic-geometric inequality", in <em>Inequalities</em> (Academic Press, 1967), 205–224, for the polynomial that is nonnegative but not a sum of squares.</li>
+<li>Gilbert Stengle, "A Nullstellensatz and a Positivstellensatz in semialgebraic geometry", <em>Mathematische Annalen</em> 207 (1974), 87–97, for the certificates of this article.</li>
+<li>Jacques Risler, "Une caractérisation des idéaux des variétés algébriques réelles", <em>Comptes Rendus de l'Académie des Sciences</em> 271 (1970), 1171–1173, for the real Nullstellensatz.</li>
+<li>Eberhard Becker and Victoria Powers, <em>An Introduction to Real Algebra</em> (Birkhäuser, 2013), for a modern account of orderings, the real spectrum and sums of squares.</li>
+<li>Jacek Bochnak, Michel Coste and Marie-Françoise Roy, <em>Real Algebraic Geometry</em> (Springer, 1998), for the full development, including the results deferred to Part II.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

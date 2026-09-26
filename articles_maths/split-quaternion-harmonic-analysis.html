@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Harmonic Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-harmonic-analysis"><strong>Split-Quaternion Harmonic Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article treats the harmonic analysis of the split-quaternion algebra. It identifies the additive group and its dual, develops the Fourier transform of the group, proves the convolution theorem, introduces the algebra-valued transform and the vanishing-determinant issue on the null cone, treats distributions and the transform of the fundamental solution, relates the whole to the matrix model, and compares the situation with the quaternion and split-complex transforms.</p>
+<p>The split-quaternion algebra, its norm form, its units and its matrix model are assumed from <em>Split-Quaternion Algebra</em>, <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Matrix Representations</em>; the exponential and its invertibility from <em>Split-Quaternion Elementary Functions</em>; the operators, their characteristic variety and the failure of elliptic regularity from <em>Split-Quaternion Analysis</em>; the fundamental solution and its support on the cone from <em>Split-Quaternion Integration</em>; and the metric and the forms from <em>Split-Quaternion Geometry</em>. The harmonic analysis of Euclidean space is that of <em>Fourier Analysis on Euclidean Spaces</em>, the analysis of the abelian group and its dual that of <em>Harmonic Analysis on Groups</em>, the distributions that of <em>Distributions and Fundamental Solutions</em>, the division-algebra transform that of <em>Quaternion Harmonic Analysis</em>, and the two-dimensional hyperbolic transform that of <em>Split-Complex Harmonic Analysis</em>. Nothing physical is invoked.</p>
+<h2 id="the-additive-group-and-its-dual">The Additive Group and Its Dual</h2>
+<p><strong>Theorem (The Group and Its Dual).</strong> The additive group of the algebra, identified with $\mathbb{R}^4$ through the coordinates $x = a + be_1 + ce_2 + de_3$, is a locally compact abelian group, with the Lebesgue measure as its Haar measure. Its dual is again $\mathbb{R}^4$, identified with the frequency vectors $\xi = \alpha + \beta e_1 + \gamma e_2 + \delta e_3$, the pairing being the Euclidean scalar product of the coordinate vectors and the characters being the complex-valued functions</p>
+<p>$$
+\chi_\xi(x) = e^{2\pi \mathrm{i}\langle x,\xi\rangle}, \qquad \langle x,\xi\rangle = a\alpha + b\beta + c\gamma + d\delta ,
+$$</p>
+<p>Pontryagin duality holds, and the dual group is equipped with the dual Haar measure.</p>
+<p><strong>Proof.</strong> The additive group of a finite-dimensional real vector space with its Euclidean topology is locally compact and abelian, and the character group of $\mathbb{R}^n$ is $\mathbb{R}^n$ with the displayed characters; this is the standard duality of <em>Harmonic Analysis on Groups</em>, §<em>Characters and the Dual Group</em>. $\square$</p>
+<p><strong>Remark (The Complex Unit Is Scalar).</strong> The symbol $\mathrm{i}$ in the characters is the usual complex unit, a scalar; it is not an element of the algebra, and no element of the algebra is ever used as the imaginary unit of the transform. The algebra enters only through the values of the functions transformed and through the products of those values.</p>
+<p><strong>Remark (The Corpus Convention).</strong> The characters and the transform are taken with the sign convention of <em>Quaternion Harmonic Analysis</em>, §<em>The Quaternion Characters</em>, so that the pairing is the Euclidean one on $\mathbb{R}^4$ and the transform of a derivative carries the factor $-2\pi\mathrm{i}$. In the quaternion case the algebra-valued characters $e^{2\pi\omega\langle x,\xi\rangle}$ with $\omega^2 = -1$ lie on the unit sphere and are bounded; here the corresponding kernel $e^{-x\xi}$ is bounded only when $\operatorname{Sc}(x\xi) = 0$, and its norm is $e^{-2\operatorname{Sc}(x\xi)}$ in general, because the form is indefinite. The boundedness of the characters in the definite case and its failure in the split case is the same dichotomy as the definiteness of the form.</p>
+<p><strong>Corollary (The Space of Functions).</strong> The algebra-valued functions with square-integrable components form the Hilbert space</p>
+<p>$$
+L^2(\mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathrm{s}}) \cong \big(L^2(\mathbb{R}^4)\big)^4 ,
+$$</p>
+<p>with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f\bar g)$, and the algebra acts pointwise on it by left and right multiplication.</p>
+<p><strong>Proof.</strong> The identification is componentwise, and the scalar product is that of four real functions expressed in the basis. $\square$</p>
+<h2 id="the-fourier-transform-of-the-group">The Fourier Transform of the Group</h2>
+<p><strong>Definition.</strong> For $f \in L^1(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ the <strong>Fourier transform</strong> is</p>
+<p>$$
+\hat f(\xi) = \int_{\mathbb{H}_{\mathrm{s}}} f(x)\, e^{2\pi \mathrm{i}\langle x,\xi\rangle}\,\mathrm{d}x \ \in \mathbb{H}_{\mathrm{s}} ,
+$$</p>
+<p>the transform of the four scalar components of $f$.</p>
+<p><strong>Theorem (Inversion and Plancherel).</strong> For $f$ in the Schwartz class of algebra-valued functions,</p>
+<p>$$
+f(x) = \int_{\mathbb{H}_{\mathrm{s}}} \hat f(\xi)\, e^{-2\pi \mathrm{i}\langle x,\xi\rangle}\,\mathrm{d}\xi ,
+$$</p>
+<p>the transform extends to a unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.</p>
+<p><strong>Proof.</strong> The scalar theory of <em>Fourier Analysis on Euclidean Spaces</em> applies componentwise; the unitarity is the Plancherel theorem in each component. $\square$</p>
+<p><strong>Corollary (The Non-Commutativity Plays No Role Here).</strong> The group transform sees only the abelian additive structure of the algebra: the non-commutativity of the product and the zero divisors do not enter the statements of inversion and Plancherel, because the characters are scalar and commute with everything. They enter as soon as a product of algebra-valued functions is taken, that is in the next two sections.</p>
+<p><strong>Proof.</strong> The characters are central; the transform is componentwise. $\square$</p>
+<h2 id="convolution-and-the-convolution-theorem">Convolution and the Convolution Theorem</h2>
+<p><strong>Definition.</strong> The <strong>convolution</strong> of two algebra-valued functions is</p>
+<p>$$
+(f * g)(x) = \int_{\mathbb{H}_{\mathrm{s}}} f(y)\,g(x-y)\,\mathrm{d}y ,
+$$</p>
+<p>with the product of the algebra inside the integral.</p>
+<p><strong>Theorem (The Convolution Theorem).</strong> For $f, g \in L^1(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ the convolution is well defined almost everywhere, and</p>
+<p>$$
+\widehat{f * g}(\xi) = \hat f(\xi)\,\hat g(\xi),
+$$</p>
+<p>the product being the product of the algebra.</p>
+<p><strong>Proof.</strong> Substituting $z = x-y$ in the transform of $f*g$ and using the multiplicativity of the characters, which are scalar, separates the double integral into the product of the two transforms; the algebra product factors out because the character is central. $\square$</p>
+<p><strong>Corollary (The Transform Is an Algebra Homomorphism).</strong> The Fourier transform carries convolution to the pointwise product of the algebra and the direct sum to the sum, both products taken in the same order; it is therefore an isomorphism of the convolution algebra onto the algebra of algebra-valued functions with the pointwise product. The convolution is associative, because the algebra product is, but it is <strong>not</strong> commutative: $\widehat{f*g} = \hat f\hat g$ while $\widehat{g*f} = \hat g\hat f$, and the two differ as soon as the values of the transforms fail to commute. The transform is an isomorphism onto the pointwise-product algebra, not onto a commutative algebra, and the non-commutativity of the algebra is exactly what is transported.</p>
+<p><strong>Proof.</strong> The theorem and the inversion formula give the isomorphism; for the failure of commutativity take $f = e_1k$ and $g = e_2k$ with a fixed integrable $k$ of positive square integral: then $(f*g)(0) = e_3\int k(y)k(-y)\,\mathrm{d}y$ and $(g*f)(0) = -e_3\int k(y)k(-y)\,\mathrm{d}y$, which differ. Associativity is $\widehat{(f*g)*h} = (\hat f\hat g)\hat h = \hat f(\hat g\hat h)$. $\square$</p>
+<h3 id="approximate-identities-and-youngs-inequality">Approximate Identities and Young's Inequality</h3>
+<p><strong>Definition.</strong> An <strong>approximate identity</strong> is a family $(k_\varepsilon)_{\varepsilon>0}$ of integrable algebra-valued functions with $\int k_\varepsilon = 1$, with $\sup_\varepsilon \|k_\varepsilon\|_1$ finite and with the mass concentrating at the origin as $\varepsilon \to 0$; the standard choice is $k_\varepsilon(x) = \varepsilon^{-4}k(x/\varepsilon)$ for a fixed integrable $k$ with $\int k = 1$.</p>
+<p><strong>Theorem (Young's Inequality and Convergence).</strong> For $f \in L^p$ and $k \in L^1$,</p>
+<p>$$
+\|f * k\|_p \leq C\,\|f\|_p\,\|k\|_1 ,
+$$</p>
+<p>with the constant $C$ comparing the Euclidean norm with the submultiplicative norm of the matrix model as in <em>Split-Quaternion Analysis</em>, §<em>The Metric Structure</em>; and $f * k_\varepsilon \to f$ in $L^p$ as $\varepsilon \to 0$ for $1 \leq p < \infty$, so the $L^1$-convolution has bounded approximate identities.</p>
+<p><strong>Proof.</strong> Young's inequality is the classical one, the algebra-valued integrand being estimated by the submultiplicative norm; the convergence of the approximate identity uses the translation invariance of the Lebesgue measure and the continuity of translation in $L^p$, both componentwise. $\square$</p>
+<h2 id="the-algebra-valued-transform-and-the-vanishing-determinant">The Algebra-Valued Transform and the Vanishing Determinant</h2>
+<p>The transform that uses the algebra itself as the kernel is the analogue of the quaternionic and Clifford transforms; it is not the group transform, and its inversion is where the zero divisors appear.</p>
+<p><strong>Definition.</strong> For a suitable function $f$ the <strong>algebra-kernel transform</strong> is</p>
+<p>$$
+\mathcal{F}f(\xi) = \int_{\mathbb{H}_{\mathrm{s}}} e^{-x\xi}\, f(x)\,\mathrm{d}x , \qquad x\xi \text{ the algebra product},
+$$</p>
+<p>the exponential being that of <em>Split-Quaternion Elementary Functions</em>.</p>
+<p><strong>Theorem (The Kernel Is Never Singular).</strong> The kernel $e^{-x\xi}$ is invertible for all $x$ and all $\xi$, with</p>
+<p>$$
+N\big(e^{-x\xi}\big) = e^{-2\operatorname{Sc}(x\xi)} > 0 ,
+$$</p>
+<p>so the exponential kernel itself is never a zero divisor, and the transform is well defined and bounded on $L^1$ for every frequency.</p>
+<p><strong>Proof.</strong> <em>Split-Quaternion Elementary Functions</em>, §<em>The Exponential</em>, applied to the element $-x\xi$. $\square$</p>
+<p><strong>Theorem (The Inversion Degenerates on the Null Cone).</strong> The kernel $e^{-x\xi}$ is not a character of the group: it is algebra-valued and not multiplicative in $x$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $x-y$, and</p>
+<p>$$
+(x-y)^{-1} = \frac{\overline{x-y}}{N(x-y)}
+$$</p>
+<p>exists exactly when $N(x-y) \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.</p>
+<p><strong>Proof.</strong> The inverse of an element is $\bar{u}/N(u)$ by <em>Split-Quaternion Algebra</em>, §<em>The Norm Form</em>, and $N(u) = 0$ exactly on the zero divisors by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(x+y)\xi} \neq e^{-x\xi}e^{-y\xi}$ unless $x$ and $\xi$ commute, by <em>Split-Quaternion Elementary Functions</em>, §<em>Non-Commutativity and the One-Variable Case</em>. $\square$</p>
+<p><strong>Theorem (The Vanishing Determinant, Stated Precisely).</strong> Let $D = e_1\partial_b + e_2\partial_c + e_3\partial_d$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then</p>
+<p>$$
+\widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, \hat f(\xi),
+$$</p>
+<p>so that the <strong>symbol</strong> of the operator is the frequency vector $\xi \in V$; the symbol is invertible exactly when $\xi$ is a unit, that is exactly when $N(\xi) \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with <em>Split-Quaternion Analysis</em>, §<em>The Differential Operators</em>.</p>
+<p><strong>Proof.</strong> Integration by parts in each coordinate gives $\widehat{\partial_i f} = -2\pi\mathrm{i}\xi_i\hat f$, and the generators multiply the scalar-valued transform centrally; the identification of the invertible frequencies with $N \neq 0$ is the invertibility criterion of <em>Split-Quaternion Norm and Invertibility</em>. $\square$</p>
+<p><strong>Corollary (The Transform of the Fundamental Solution Is Singular on the Cone).</strong> Let $E_D$ be the fundamental solution of $D$ of <em>Split-Quaternion Integration</em>, §<em>The Fundamental Solution</em>. Then, with the principal value of the reciprocal,</p>
+<p>$$
+\hat E_D(\xi) = -\frac{1}{2\pi\mathrm{i}}\,\xi^{-1} = \frac{1}{2\pi\mathrm{i}}\,\frac{\xi}{N(\xi)} ,
+$$</p>
+<p>a distribution whose singular support is exactly the null cone. The vanishing determinant $N(\xi) = 0$ is therefore not a technical nuisance: it is the support of the transformed fundamental solution, and it is the reason the fundamental solution is singular on the cone rather than at a point.</p>
+<p><strong>Proof.</strong> From $\widehat{DE_D} = -2\pi\mathrm{i}\xi\hat E_D = \hat\delta = 1$ and $\xi^{-1} = -\xi/N(\xi)$ for $\xi \in V$; the support statement is then the standard computation of the principal value of $1/N$ on an indefinite quadratic form, as in <em>Distributions and Fundamental Solutions</em>. $\square$</p>
+<h2 id="distributions">Distributions</h2>
+<p><strong>Theorem (Tempered Distributions).</strong> The Fourier transform extends to an isomorphism of the space of tempered algebra-valued distributions onto itself, and it exchanges multiplication by the algebra-valued functions with convolution. The fundamental solution $E_D$ is tempered, being supported in a closed cone and of polynomial growth, so its transform exists and is the distribution displayed above.</p>
+<p><strong>Proof.</strong> The scalar theory of <em>Distributions and Fundamental Solutions</em> applies componentwise; the temperedness of the fundamental solution follows from its homogeneity of degree $-2$ and its support on the cone. $\square$</p>
+<p><strong>Corollary (The Failure of Elliptic Inversion and Its Frequency Location).</strong> The inversion of the transform of a solution of $Df = g$ is obstructed exactly on the null cone: the frequency equation $\hat f = -(2\pi\mathrm{i}\xi)^{-1}\hat g$ cannot be solved by a smooth symbol on the whole frequency space, and any solution must have its singularities concentrated on the characteristic variety. This is the frequency-space form of the failure of the elliptic theory and of the cone support of the fundamental solution.</p>
+<p><strong>Proof.</strong> The symbol is non-invertible on the null cone by the vanishing-determinant theorem, so the inverse symbol is not smooth there and the multiplication by it is not a pseudodifferential operation of the standard elliptic type. $\square$</p>
+<h2 id="the-relation-to-the-matrix-model">The Relation to the Matrix Model</h2>
+<p><strong>Theorem (The Matrix Model of the Transform).</strong> Through the isomorphism $\Phi$ the transform of an algebra-valued function corresponds to the entrywise transform of the matrix-valued function $\Phi \circ f$, the convolution corresponds to the entrywise convolution, and the symbol $\xi$ corresponds to the traceless matrix $\Phi(\xi)$ with</p>
+<p>$$
+\det \Phi(\xi) = N(\xi) .
+$$</p>
+<p>The vanishing of the determinant of the symbol is therefore the vanishing of the determinant of the traceless matrix of the frequency, that is the condition that the frequency be a zero divisor, and the set of singular frequencies corresponds to the singular traceless matrices.</p>
+<p><strong>Proof.</strong> The transform is componentwise and $\Phi$ is a linear isomorphism; the determinant identity is <em>Split-Quaternion Matrix Representations</em>, §<em>The Determinant and the Trace</em>. $\square$</p>
+<p><strong>Corollary (Two Readings of the Same Degeneracy).</strong> The degeneracy of the harmonic analysis on the null cone can be read either in the algebra, as the non-invertibility of the frequency, or in the matrix model, as the singularity of the traceless matrix; the two readings are the same statement.</p>
+<h2 id="comparison-with-the-quaternion-and-split-complex-transforms">Comparison with the Quaternion and Split-Complex Transforms</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{D}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>additive group</td>
+<td>locally compact abelian</td>
+<td>locally compact abelian</td>
+<td>locally compact abelian</td>
+</tr>
+<tr>
+<td>group transform</td>
+<td>four-dimensional Fourier transform</td>
+<td>four-dimensional Fourier transform</td>
+<td>two-dimensional Fourier transform</td>
+</tr>
+<tr>
+<td>convolution theorem</td>
+<td>holds</td>
+<td>holds</td>
+<td>holds</td>
+</tr>
+<tr>
+<td>algebra-kernel transform</td>
+<td>quaternionic Fourier transform, invertible symbol</td>
+<td>algebra-kernel transform, symbol degenerate on the null cone</td>
+<td>hyperbolic transform, degenerate on the isotropic lines</td>
+</tr>
+<tr>
+<td>symbol $\xi$</td>
+<td>invertible for every $\xi \neq 0$</td>
+<td>invertible iff $N(\xi) \neq 0$</td>
+<td>invertible iff $N(\xi) \neq 0$</td>
+</tr>
+<tr>
+<td>transformed fundamental solution</td>
+<td>singular at the origin</td>
+<td>singular on the light cone</td>
+<td>singular on the two isotropic lines</td>
+</tr>
+</tbody>
+</table></div>
+<p>The quaternion column is the content of <em>Quaternion Harmonic Analysis</em> and the split-complex column that of <em>Split-Complex Harmonic Analysis</em>. The decisive difference is that the quaternion norm vanishes only at the origin, so its symbol is invertible at every nonzero frequency and the quaternionic transform has no vanishing-determinant problem; in the split case the norm vanishes on a cone, of real dimension two in $V$, and the transformed fundamental solution is supported there. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.</p>
+<h2 id="summary">Summary</h2>
+<p>The additive group of the split-quaternion algebra is a locally compact abelian group, identified with $\mathbb{R}^4$, with dual $\mathbb{R}^4$ and scalar characters $\chi_\xi(x) = e^{2\pi\mathrm{i}\langle x,\xi\rangle}$. The Fourier transform of the group is the fourfold scalar transform applied to the components, with inversion and Plancherel; the convolution theorem holds with the algebra product, because the characters are scalar, so the transform is an isomorphism of the convolution algebra onto the pointwise product algebra; the convolution is associative because the algebra product is, and it is not commutative, because the algebra product is not.</p>
+<p>The algebra-kernel transform uses the exponential of the algebra as kernel. The kernel is never a zero divisor, since $N(e^u) = e^{2\operatorname{Sc}u} > 0$, but it is not a character, and the inversion formula requires the reciprocal of the difference variable, which exists exactly off the null cone; the transform degenerates there. For the vector operator the symbol is the frequency vector $\xi$, invertible exactly when $N(\xi)\neq0$; the singular frequencies form the null cone, which is the characteristic variety of the operator and the zero divisor set. The transformed fundamental solution is $\hat E_D = -(2\pi\mathrm{i}\xi)^{-1} = \xi/(2\pi\mathrm{i}N(\xi))$, a distribution whose singular support is exactly the null cone, and the vanishing determinant is thus the frequency-space explanation of the cone-supported fundamental solution and of the failure of the elliptic theory. In the matrix model the symbol becomes the traceless matrix $\Phi(\xi)$ with $\det\Phi(\xi) = N(\xi)$, and the two readings of the degeneracy coincide.</p>
+<p>The comparison with the quaternion case is sharp: there the norm vanishes only at the origin, the symbol is invertible at every nonzero frequency, and the transformed fundamental solution is singular at a point; in the split case the norm vanishes on a cone and every degeneracy is located there. The split-complex case is the two-dimensional model of the same phenomenon, with the two isotropic lines in place of the cone. The eight-dimensional relative is a later system of Part V, named only.</p>
+<p>The two transforms of the article are therefore to be kept apart: the group transform is the harmonic analysis of the additive group, complete with inversion, Plancherel and the convolution theorem, and it is blind to the zero divisors; the algebra-kernel transform is the non-commutative transform of the system, and every one of its difficulties is located on the null cone, where the symbol ceases to be invertible. The same cone is the zero divisor set of the algebra, the characteristic variety of the vector operator and the support of the transformed fundamental solution, and it is the single object around which the analysis of this system is organised.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi_\xi(x) = e^{2\pi\mathrm{i}\langle x,\xi\rangle}$</td>
+<td>the scalar characters of the additive group</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\hat f(\xi)$</td>
+<td>the group Fourier transform</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$f * g$</td>
+<td>the convolution with the algebra product</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\widehat{f*g} = \hat f\hat g$</td>
+<td>the convolution theorem</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathcal{F}f(\xi) = \int e^{-x\xi}f$</td>
+<td>the algebra-kernel transform</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$N(e^{-x\xi}) = e^{-2\operatorname{Sc}(x\xi)} > 0$</td>
+<td>the kernel is never a zero divisor</td>
+<td><em>Split-Quaternion Elementary Functions</em></td>
+</tr>
+<tr>
+<td>$\xi^{-1}$, $N(\xi)$</td>
+<td>the symbol and its determinant</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$\hat E_D = -(2\pi\mathrm{i}\xi)^{-1} = \xi/(2\pi\mathrm{i}N(\xi))$</td>
+<td>the transformed fundamental solution, singular on the null cone</td>
+<td><em>Split-Quaternion Integration</em></td>
+</tr>
+<tr>
+<td>$\det\Phi(\xi) = N(\xi)$</td>
+<td>the symbol in the matrix model</td>
+<td><em>Split-Quaternion Matrix Representations</em></td>
+</tr>
+<tr>
+<td>null cone</td>
+<td>the singular frequency set and the zero divisor set</td>
+<td><em>Split-Quaternion Zero Divisors</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton University Press, 1971), for the group transform, the convolution theorem, inversion and Plancherel.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em>, 2nd ed. (CRC Press, 2015), for locally compact abelian groups, Pontryagin duality and the Fourier transform of distributions.</li>
+<li>Lars Hörmander, <em>The Analysis of Linear Partial Differential Operators I</em> (Springer, 1990), for the symbol of a differential operator, its characteristic variety and the failure of inversion there.</li>
+<li>Eckhard Hitzer and Stephen J. Sangwine, <em>Quaternion and Clifford Fourier Transforms and Wavelets</em> (Birkhäuser, 2013), for the non-commutative transforms that motivate the algebra-kernel transform and for the comparison with the quaternionic case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

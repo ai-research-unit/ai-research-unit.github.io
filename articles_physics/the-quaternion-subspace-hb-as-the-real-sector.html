@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$ as the Real Sector — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quaternion-subspace-math0-as-the-real-sector"><strong>The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$ as the Real Sector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is about the <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation.</p>
+<p>$\mathbb{H}_{\mathbb{B}}$ is the image of the quaternion algebra itself inside $\mathbb{B}$. It is spanned by the four basis elements with real coefficients, so a general element of it is a quaternion in the ordinary sense. Its defining feature is that it is a <strong>subalgebra</strong>, and in fact a <strong>division algebra</strong>: every nonzero element has an inverse, and there are no zero divisors. It is also the sector in which the scalar imaginary $i$ plays no role at all, and this is what the name "real sector" records — in both of the senses that the word "real" carries here, real coefficients and fixed points of the real conjugation.</p>
+<p>The article describes the subspace on its own terms: its basis and parameters, its algebraic properties, the reading that gives it its name, its unit group and Lie algebra, and the rotation rotors it contains.</p>
+<h2 id="basic-definition-and-properties">Basic Definition and Properties</h2>
+<h3 id="definition-and-basis">Definition and Basis</h3>
+<p>Complex conjugation is the antilinear map that fixes the quaternion units and negates the scalar imaginary,</p>
+<p>$$
+e_k^* = e_k, \qquad i^* = -i .
+$$</p>
+<p>The <strong>quaternion subspace</strong> is its fixed-point set:</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^* = \tilde{Q}\}.
+$$</p>
+<p>Explicitly, an element belongs to it if and only if all four coefficients in the quaternion basis are real:</p>
+<p>$$
+\tilde{Q} = q_0\,e_0 + q_1\,e_1 + q_2\,e_2 + q_3\,e_3 = (ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>A natural basis is</p>
+<p>$$
+\{e_0,\; e_1,\; e_2,\; e_3\},
+$$</p>
+<p>and as a real vector space $\mathbb{H}_{\mathbb{B}}$ has dimension $4$. Equivalently, since $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the subspace is the image of the inclusion $\mathbb{H} \hookrightarrow \mathbb{B}$, $h \mapsto 1\otimes h$.</p>
+<p>The parameter pattern is the simplest possible: <strong>all four</strong> coefficients are real, and none carries the scalar imaginary. Each of the four complex coefficients $Q_\mu = q_\mu + iq'_\mu$ of a general biquaternion contributes its real part, and the imaginary parts are set to zero.</p>
+<h3 id="the-defining-involution">The Defining Involution</h3>
+<p>The subspace is the fixed space of <strong>complex conjugation</strong> $\tilde{Q}^*$, the antilinear map that fixes the quaternion units and negates the scalar imaginary, $e_\mu^* = e_\mu$ and $i^* = -i$. It is an involution: $(\tilde{Q}^*)^* = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,</p>
+<p>$$
+\tilde{Q} = (q_0 + iq'_0)\,e_0 + (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3, \qquad q_\mu, q'_\mu \in \mathbb{R}.
+$$</p>
+<p>Complex conjugation replaces $i$ by $-i$ in every coefficient and leaves all four units fixed, so it acts coefficient by coefficient,</p>
+<p>$$
+\tilde{Q}^* = (q_0 - iq'_0)\,e_0 + (q_1 - iq'_1)\,e_1 + (q_2 - iq'_2)\,e_2 + (q_3 - iq'_3)\,e_3 ,
+$$</p>
+<p>so that every imaginary part changes sign and every real part is left alone. Coordinate by coordinate,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$q_0$</th>
+<th>$q'_0$</th>
+<th>$q_1$</th>
+<th>$q'_1$</th>
+<th>$q_2$</th>
+<th>$q'_2$</th>
+<th>$q_3$</th>
+<th>$q'_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>image under $*$</td>
+<td>$q_0$</td>
+<td>$-q'_0$</td>
+<td>$q_1$</td>
+<td>$-q'_1$</td>
+<td>$q_2$</td>
+<td>$-q'_2$</td>
+<td>$q_3$</td>
+<td>$-q'_3$</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^* = \tilde{Q}$ requires</td>
+<td>free</td>
+<td>$q'_0 = 0$</td>
+<td>free</td>
+<td>$q'_1 = 0$</td>
+<td>free</td>
+<td>$q'_2 = 0$</td>
+<td>free</td>
+<td>$q'_3 = 0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fixed space.</strong> The two sides of $\tilde{Q}^* = \tilde{Q}$ must agree in each of the four units $e_0, e_1, e_2, e_3$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones, and they read</p>
+<p>$$
+q_0 - iq'_0 = q_0 + iq'_0 \iff q'_0 = 0, \qquad
+q_k - iq'_k = q_k + iq'_k \iff q'_k = 0 \qquad (k = 1, 2, 3),
+$$</p>
+<p>one for each of the four coefficients. The solutions are the elements with $q'_0 = q'_1 = q'_2 = q'_3 = 0$, that is,</p>
+<p>$$
+\tilde{Q}^* = \tilde{Q} \iff \tilde{Q} = q_0\,e_0 + q_1\,e_1 + q_2\,e_2 + q_3\,e_3 .
+$$</p>
+<p><strong>Conversely</strong>, every element of this form is fixed: its four coefficients $q_0, q_1, q_2, q_3$ are real, so replacing $i$ by $-i$ in them changes nothing, and each quaternion unit is fixed by the conjugation, hence $\tilde{Q}^* = \tilde{Q}$ term by term. The two directions together say that the displayed set is <em>exactly</em> the fixed space. The coordinates that survive are the four $q_0, q_1, q_2, q_3$, which is the parametrisation recorded above: the fixed space is exactly the set of elements whose four coefficients are real, carved out of the eight real coordinates by the four equations $q'_\mu = 0$.</p>
+<h3 id="properties">Properties</h3>
+<p><strong>Subalgebra.</strong> The subspace is closed under multiplication: the product of two elements of $\mathbb{H}_{\mathbb{B}}$ is again in $\mathbb{H}_{\mathbb{B}}$, because complex conjugation is a homomorphism on products and fixes each factor. Its multiplication table is that of the quaternions:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$e_1$</td>
+<td>$-e_0$</td>
+<td>$e_3$</td>
+<td>$-e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$e_2$</td>
+<td>$-e_3$</td>
+<td>$-e_0$</td>
+<td>$e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$e_3$</td>
+<td>$e_2$</td>
+<td>$-e_1$</td>
+<td>$-e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The diagonal is $-e_0$ for the three vector units, $e_k^2 = -e_0$, and the off-diagonal entries are antisymmetric, $e_je_k = -e_ke_j$ for $j \neq k$, with the cyclic products $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$. The subspace is therefore non-commutative.</p>
+<p><strong>Division algebra.</strong> The norm form restricted to the subspace is</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2,
+$$</p>
+<p>a <strong>positive definite</strong> quadratic form of signature $(4,0)$. Since $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$, every nonzero element is invertible, with</p>
+<p>$$
+\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})},
+$$</p>
+<p>and there are no zero divisors: a product $\tilde{Q}\tilde{R}$ can vanish only if one factor does. The vanishing of the norm form here cuts out only the origin: the subspace has no light cone.</p>
+<p><strong>Frobenius.</strong> The quaternion algebra is the only four-dimensional real division algebra up to isomorphism. The subspace is therefore not merely <em>a</em> division algebra: as a real algebra it is <em>the</em> four-dimensional one.</p>
+<p><strong>Hermitian parts.</strong> Under Hermitian conjugation, which composes quaternion conjugation with complex conjugation, the unit is fixed and the three vector units change sign,</p>
+<p>$$
+e_0^\dagger = e_0, \qquad e_k^\dagger = -e_k \quad (k = 1,2,3).
+$$</p>
+<p>So the scalar direction of the subspace is Hermitian and the three vector directions are anti-Hermitian. This is the algebraic statement that a real scalar is Hermitian while a real spatial direction is not.</p>
+<p><strong>Not closed under the central scalar.</strong> Multiplication by $i$ takes the subspace out of itself: the product $i\tilde{Q}$ of $i$ with a nonzero element $\tilde{Q}$ of the subspace lies outside it. The condition of belonging to $\mathbb{H}_{\mathbb{B}}$ is therefore $\mathbb{R}$-linear and not $\mathbb{C}$-linear, which is exactly what one expects of a sector defined by a conjugation.</p>
+<h2 id="physical-meaning">Physical Meaning</h2>
+<p>The name "real sector" is earned in two ways at once, and it is worth separating them.</p>
+<p><strong>Real coefficients.</strong> Every element of $\mathbb{H}_{\mathbb{B}}$ has four real coefficients in the quaternion basis. No coefficient carries the scalar imaginary $i$. The sector is therefore the part of the algebra that can be written without ever invoking the complex unit — which is precisely the image of the real quaternion algebra $\mathbb{H}$ under the inclusion $\mathbb{H} \hookrightarrow \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.</p>
+<p><strong>Real conjugation.</strong> The subspace is the fixed-point set of complex conjugation. In the algebra of the framework, complex conjugation is the conjugation that plays the role of the "real structure", and its fixed points are what the framework calls real. The two readings coincide because complex conjugation acts by negating $i$: an element with real coefficients is exactly an element it fixes.</p>
+<p>The physical reading follows from the first of these. In the $ict$ convention the time component of a four-vector is imaginary, $ict$, and it is the imaginary unit that produces the Lorentzian signature $(3,1)$. Inside $\mathbb{H}_{\mathbb{B}}$ that unit is not available, so the norm form is the positive definite form of signature $(4,0)$, the geometry has no light cone, and no direction is singled out as time. This is a <strong>Euclidean</strong> four-dimensional geometry, and it is exactly what the Wick rotation produces: relabelling the imaginary time coefficient $ict$ as a real one turns the material four-vector space into $\mathbb{H}_{\mathbb{B}}$, with the Lorentzian signature traded for a Euclidean one. In this precise sense the real sector is the Euclidean, or Wick-rotated, read of the four-vector space, and the division property of the quaternions is the algebraic reason the Euclidean picture has no null directions.</p>
+<h2 id="advanced-algebraic-properties">Advanced Algebraic Properties</h2>
+<p><strong>The unit group.</strong> The elements of unit norm form, $N(\tilde{Q}) = e_0$, are the <strong>unit quaternions</strong>. In coordinates they form the unit sphere</p>
+<p>$$
+q_0^2 + q_1^2 + q_2^2 + q_3^2 = 1,
+$$</p>
+<p>a three-dimensional sphere. That is precisely the group $SU(2)$, so the unit group of $\mathbb{H}_{\mathbb{B}}$ is the sphere $S^3$, isomorphic to $SU(2)$.</p>
+<p><strong>The Lie algebra.</strong> The three pure vector units $e_1, e_2, e_3$ are the infinitesimal generators of these rotations. They are anti-Hermitian and satisfy $e_k^2 = -e_0$, and their commutators close on themselves,</p>
+<p>$$
+[e_1, e_2] = 2e_3, \qquad [e_2, e_3] = 2e_1, \qquad [e_3, e_1] = 2e_2,
+$$</p>
+<p>which is the rotation algebra $\mathfrak{su}(2)$ up to the factor $2$. So the subspace carries both the finite rotations and their Lie algebra, entirely within itself.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>The rotation rotors.</strong> The unit quaternions act on the subspace itself by conjugation, $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{-1}$, and this action preserves the norm form. Because the group is $SU(2)$, the action on the three-dimensional space of pure vectors is a rotation: the unit quaternions are the <strong>rotation rotors</strong>, and they furnish the double cover of the rotation group. Concretely, a rotation through an angle $\theta$ about the unit vector $\hat{\mathbf{n}}$ is effected by</p>
+<p>$$
+\tilde{U} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat{\mathbf{n}}\cdot\mathbf{e},
+$$</p>
+<p>a unit quaternion whose scalar part is the cosine of the half-angle. The appearance of the half-angle is the familiar sign ambiguity of the spinor cover, and it is a property of the sector: the rotors form a sphere, not a projective space.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, a four-dimensional real subspace of $\mathbb{B}$ spanned by $e_0, e_1, e_2, e_3$ with real coefficients. It is a subalgebra, and as a real algebra it is the unique four-dimensional division algebra. Its norm form is positive definite of signature $(4,0)$; numerically it is the sum of squares $q_0^2 + q_1^2 + q_2^2 + q_3^2$, which never vanishes on a nonzero element. Every nonzero element is invertible, with $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$, and there are no zero divisors and no light cone.</p>
+<p>Its unit group is the sphere $S^3 \cong SU(2)$, the group of rotation rotors, which acts on the subspace by conjugation; the pure vector units $e_1, e_2, e_3$ are the rotation generators, closing under commutation as $\mathfrak{su}(2)$.</p>
+<p>The physical reading of the sector is the Euclidean one: with the scalar imaginary unavailable inside it, the four-dimensional geometry it carries has no distinguished time direction, and the Wick rotation is exactly the relabelling that turns the Lorentzian four-vector space into this sector.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Quaternion subspace (real sector): fixed points of complex conjugation; all four coefficients real</td>
+</tr>
+<tr>
+<td>$q_0, q_1, q_2, q_3$</td>
+<td>Real parameters of an element of $\mathbb{H}_{\mathbb{B}}$, on $e_0, e_1, e_2, e_3$</td>
+</tr>
+<tr>
+<td>$(ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$</td>
+<td>The same element in physical coordinates; $q_0 = ct'$ and $(q_1, q_2, q_3) = (x, y, z)$</td>
+</tr>
+<tr>
+<td>$e_k^2 = -e_0$, $e_1e_2 = e_3$</td>
+<td>Quaternion multiplication rules</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2$</td>
+<td>Norm form; positive definite, signature $(4,0)$</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$</td>
+<td>Inverse; exists for every nonzero element</td>
+</tr>
+<tr>
+<td>$S^3 \cong SU(2)$</td>
+<td>Unit group; the rotation rotors</td>
+</tr>
+<tr>
+<td>$\tilde{U} = \cos(\theta/2) + \sin(\theta/2)\hat{\mathbf{n}}\cdot\mathbf{e}$</td>
+<td>Rotation rotor through $\theta$ about $\hat{\mathbf{n}}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)$</td>
+<td>Lie algebra of the pure vector units $e_k$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$-linear but not $\mathbb{C}$-linear</td>
+<td>The subspace is carried out of itself by multiplication by $i$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original algebra.</li>
+<li>Ferdinand Georg Frobenius, "Über lineare Substitutionen und bilineare Formen" (1878), for the classification of real division algebras.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the quaternion algebra.</li>
+<li><em>Conventions in the Biquaternion Universe</em> and <em>Relations Between Subspaces</em>, the companion articles, for the notation and for the place of $\mathbb{H}_{\mathbb{B}}$ among the six subspaces.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for rotors and the double cover of the rotation group.</li>
+<li>Gian Carlo Wick, "Properties of Bethe-Salpeter Wave Functions" (1954), for the rotation to imaginary time.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

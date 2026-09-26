@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Measure-Theoretic Probability — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="measure-theoretic-probability"><strong>Measure-Theoretic Probability</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Probability theory is measure theory with a normalisation: a probability space is a measure space of total mass one, a random variable is a measurable function, and expectation is the integral. The vocabulary is different from that of analysis, and it carries a century of intuition, but every statement about random variables has a statement about measurable functions behind it, and the theorems are proved by the theorems of the measure theory of <em>Measure Theory and Integration</em>. What the probabilistic formulation adds is a language for independence, for conditioning and for the convergence of distributions, and it is these notions — not the measure theory — that this part of the corpus develops.</p>
+<p>This article sets up the frame and fixes the notation for the probability articles throughout. It defines the probability space, the random variable, the distribution, the expectation and the moments, records the standard inequalities, describes the modes of convergence of random variables and their relations, introduces the characteristic function as the Fourier transform of a distribution, and states the classical limit theorems in outline, leaving their proofs to the articles that own them. Three boundaries are held.</p>
+<ul>
+<li>The <strong>general measure theory</strong> — measurable spaces, measures, the integral, the monotone and dominated convergence theorems, the $L^p$ spaces, the Radon–Nikodym theorem, Fubini's theorem — is the subject of <em>Measure Theory and Integration</em>, and the comparison of the modes of convergence is <em>Modes of Convergence</em>; both are written, and this article uses them.</li>
+<li><strong>Independence and conditional expectation</strong> are not covered here,which develops the product measures, the Borel–Cantelli lemmas, the Kolmogorov zero–one law, the conditional expectation as a projection, and the filtrations. This article defines independence only far enough to state the limit theorems; the proofs of the limit theorems .</li>
+<li>The <strong>Fourier transform on $\mathbb{R}^d$</strong> — the Schwartz space, the inversion theorem, the Parseval identity — is <em>Fourier Analysis on Euclidean Spaces</em>, written; the characteristic function is the Fourier transform of a probability measure, and the general analytical theory is cited there. The <strong>specific distributions</strong> and their special functions are the subject of the Part V articles on the number systems , where the gamma function and its relatives are developed. No physics is invoked.</li>
+</ul>
+<p>Throughout, $(\Omega, \mathcal{F}, \mathbb{P})$ is a probability space: $\mathcal{F}$ is a $\sigma$-algebra of subsets of $\Omega$, and $\mathbb{P}$ is a measure on $\mathcal{F}$ with $\mathbb{P}(\Omega) = 1$. A <strong>random variable</strong> is a measurable function $X : \Omega \to \mathbb{R}^d$ (or to a measurable space), and $\mathbb{E}[X] = \int_\Omega X \, d\mathbb{P}$ is its expectation; the notation $\int X\,d\mathbb{P}$, $\int X$, and $\mathbb{E}[X]$ are used interchangeably. The Borel $\sigma$-algebra of $\mathbb{R}^d$ is $\mathcal{B}(\mathbb{R}^d)$, and a statement holds <strong>almost surely</strong> (a.s.) when it fails on a $\mathbb{P}$-null set; this is the probabilistic name for the <em>almost everywhere</em> of <em>Measure Theory and Integration</em>, and the two phrases are used interchangeably across the corpus. The $\sigma$-algebra generated by a family $\{X_i\}$ is $\sigma(X_i)$.</p>
+<h2 id="probability-spaces-and-random-variables">Probability Spaces and Random Variables</h2>
+<h3 id="the-definitions">The Definitions</h3>
+<p><strong>Definition.</strong> A <strong>probability space</strong> is a measure space $(\Omega, \mathcal{F}, \mathbb{P})$ with $\mathbb{P}(\Omega) = 1$. Its elements are <strong>events</strong> — the measurable subsets of $\Omega$ — and $\mathbb{P}(A)$ is the <strong>probability</strong> of the event $A$.</p>
+<p>The normalisation turns the measure-theoretic statements into statistical ones: $\mathbb{P}(A^c) = 1 - \mathbb{P}(A)$, $\mathbb{P}(\varnothing) = 0$, and the monotone and dominated convergence theorems of the measure theory become the theorems about the limits of expectations. A <strong>null set</strong> is a set of probability zero, and the completion of $\mathcal{F}$ with respect to $\mathbb{P}$ — the process of adjoining all subsets of null sets — is assumed without comment, so that almost-sure statements are insensitive to the choice of version of a random variable.</p>
+<p><strong>Definition.</strong> A <strong>random variable</strong> on $(\Omega,\mathcal{F},\mathbb{P})$ with values in a measurable space $(S,\mathcal{S})$ is a measurable map $X : \Omega \to S$; when $S = \mathbb{R}^d$ and $\mathcal{S} = \mathcal{B}(\mathbb{R}^d)$ one speaks of a real or vector-valued random variable. The <strong>$\sigma$-algebra generated by $X$</strong> is $\sigma(X) = \{X^{-1}(B) : B \in \mathcal{S}\}$, the smallest $\sigma$-algebra making $X$ measurable. A family $\{X_i\}_{i\in I}$ is measurable when each $X_i$ is.</p>
+<p><strong>Example (the finite model).</strong> A fair coin is the space $\Omega = \{0,1\}$ with $\mathcal{F} = 2^\Omega$ and $\mathbb{P}(\{0\}) = \mathbb{P}(\{1\}) = 1/2$; the identity map is the random variable taking the values $0$ and $1$. A sequence of $n$ independent tosses is the product space $\Omega^n$ with the product measure, and the number of heads is the random variable $\sum_{i=1}^n X_i$. The product measure is constructed.</p>
+<p><strong>Example (the uniform model).</strong> The space $\Omega = [0,1]$ with the Borel $\sigma$-algebra and Lebesgue measure is a probability space; the identity is the <strong>uniform random variable</strong>, and every distribution on a Polish space is the image of the uniform distribution under a measurable map by the quantile construction below. This is the sense in which $[0,1]$ is the universal probability space for the standard distributions.</p>
+<h3 id="generated-math53-algebras-and-measurability">Generated $\sigma$-Algebras and Measurability</h3>
+<p><strong>Proposition.</strong> A random variable $Y : \Omega \to \mathbb{R}$ is $\sigma(X)$-measurable if and only if there is a measurable function $f : \mathbb{R}^d \to \mathbb{R}$ with $Y = f(X)$.</p>
+<p><em>Proof.</em> If $Y = f(X)$ the measurability is clear. Conversely, if $Y$ is $\sigma(X)$-measurable, approximate $Y$ by simple $\sigma(X)$-measurable functions, write each as a finite linear combination of indicators of sets $X^{-1}(B)$, and pass to the limit; the resulting function of $X$ is the required $f$. $\square$</p>
+<p>The proposition is the measure-theoretic form of the statement that the information carried by $X$ is exactly the information of its $\sigma$-algebra, and it is the first instance of the general principle that conditioning on $X$ is conditioning on $\sigma(X)$. The same statement with $Y$ vector-valued and $f$ measurable is proved by applying the real case coordinatewise.</p>
+<h2 id="distributions-and-their-properties">Distributions and Their Properties</h2>
+<h3 id="the-distribution-of-a-random-variable">The Distribution of a Random Variable</h3>
+<p><strong>Definition.</strong> The <strong>distribution</strong> (or <strong>law</strong>) of a random variable $X$ on $(\Omega,\mathcal{F},\mathbb{P})$ with values in $(S,\mathcal{S})$ is the pushforward measure</p>
+<p>$$
+\mu_X = \mathbb{P} \circ X^{-1}, \qquad \mu_X(B) = \mathbb{P}(X \in B) = \mathbb{P}\bigl(X^{-1}(B)\bigr), \quad B \in \mathcal{S}.
+$$</p>
+<p>For $S = \mathbb{R}^d$ the <strong>distribution function</strong> is $F_X(x) = \mu_X\bigl((-\infty, x]\bigr) = \mathbb{P}(X \leq x)$, where the inequality is coordinatewise.</p>
+<p>The distribution records everything probabilistic about $X$: two random variables with the same distribution have the same expectation of every measurable function, and one writes $X \stackrel{d}{=} Y$ for equality in distribution. The distribution function of a real random variable is nondecreasing, right-continuous, with limits $0$ at $-\infty$ and $1$ at $+\infty$, and every such function is the distribution function of a unique probability measure on $\mathbb{R}$; the correspondence between measures and distribution functions is a bijection.</p>
+<p><strong>Definition.</strong> A point $x \in \mathbb{R}$ is an <strong>atom</strong> of $\mu$ if $\mu(\{x\}) > 0$; the measure is <strong>discrete</strong> if it is a countable sum of atoms, <strong>absolutely continuous</strong> with density $f$ if $d\mu = f\,dx$ with $f \geq 0$ measurable and $\int f\,dx = 1$, and <strong>singular</strong> if it is supported on a Lebesgue-null set. By the Lebesgue decomposition theorem of <em>Measure Theory and Integration</em> every probability measure on $\mathbb{R}$ decomposes uniquely into an absolutely continuous part, a discrete part and a singular continuous part.</p>
+<p><strong>Example.</strong> The Bernoulli distribution with parameter $p$ is the measure $p\delta_1 + (1-p)\delta_0$ on $\{0,1\}$, discrete with atoms at $0$ and $1$. The binomial distribution $\mathrm{Bin}(n,p)$ is $\sum_{k=0}^{n}\binom{n}{k}p^k(1-p)^{n-k}\delta_k$. The uniform distribution on $[0,1]$ is absolutely continuous with density $\mathbf{1}_{[0,1]}$; the standard normal distribution $N(0,1)$ is absolutely continuous with density $(2\pi)^{-1/2}e^{-x^2/2}$; and the Cantor distribution is singular continuous, with distribution function the Cantor function.</p>
+<h3 id="the-quantile-function-and-the-universal-model">The Quantile Function and the Universal Model</h3>
+<p><strong>Definition.</strong> For a distribution function $F$ the <strong>quantile function</strong> is $F^{-1}(u) = \inf\{x \in \mathbb{R} : F(x) \geq u\}$ for $u \in (0,1)$, and $F^{-1}(0) = -\infty$, $F^{-1}(1) = +\infty$.</p>
+<p><strong>Theorem (Skorokhod representation).</strong> Let $F$ be a distribution function on $\mathbb{R}$ and let $U$ be uniform on $[0,1]$. Then $F^{-1}(U)$ has distribution function $F$. Consequently every probability distribution on $\mathbb{R}$ is the image of the uniform distribution under a measurable map.</p>
+<p><em>Proof.</em> The inequality $F^{-1}(u) \leq x$ is equivalent to $u \leq F(x)$ for $u \in (0,1)$; hence</p>
+<p>$$
+\mathbb{P}\bigl(F^{-1}(U) \leq x\bigr) = \mathbb{P}\bigl(U \leq F(x)\bigr) = F(x),
+$$</p>
+<p>using the uniformity of $U$ and the fact that $F(x)$ lies in $[0,1]$. $\square$</p>
+<p>The theorem is the concrete form of the statement that the uniform distribution on $[0,1]$ is universal, and it is the basis of the simulation of a distribution from uniform variates. It also shows that the arithmetic of a probability space can be reduced to the arithmetic of $[0,1]$, which is the classical construction of a probability space carrying a sequence of independent random variables of prescribed distributions.</p>
+<h2 id="expectation-and-moments">Expectation and Moments</h2>
+<h3 id="expectation">Expectation</h3>
+<p><strong>Definition.</strong> Let $X$ be a real random variable. The <strong>expectation</strong> is the integral</p>
+<p>$$
+\mathbb{E}[X] = \int_\Omega X(\omega)\, d\mathbb{P}(\omega),
+$$</p>
+<p>defined when $\int |X| \, d\mathbb{P} < \infty$, in which case $X$ is <strong>integrable</strong>; and $\mathbb{E}[X] = \int_{\mathbb{R}} x\, d\mu_X(x)$ by the change-of-variables theorem, so the expectation is computed from the distribution alone.</p>
+<p><strong>Proposition (properties).</strong> Expectation is linear, positive and monotone; it satisfies $\mathbb{E}[c] = c$ for a constant, and $|\mathbb{E}[X]| \leq \mathbb{E}[|X|]$. If $X \geq 0$ a.s. and $\mathbb{E}[X] = 0$ then $X = 0$ a.s. If $\{X_n\}$ is a sequence of nonnegative random variables then the monotone convergence theorem gives $\mathbb{E}[\lim_n X_n] = \lim_n \mathbb{E}[X_n]$; if $|X_n| \leq Y$ with $\mathbb{E}[Y] < \infty$ and $X_n \to X$ a.s. then the dominated convergence theorem gives $\mathbb{E}[X_n] \to \mathbb{E}[X]$. These are the convergence theorems of <em>Measure Theory and Integration</em> translated into probabilistic language.</p>
+<h3 id="inequalities">Inequalities</h3>
+<p>The probabilistic inequalities are the quantitative content of the measure theory, and they are the tools of the limit theorems.</p>
+<p><strong>Theorem (Jensen).</strong> Let $\varphi : \mathbb{R} \to \mathbb{R}$ be convex and let $X$ be integrable with $\varphi(X)$ integrable. Then</p>
+<p>$$
+\varphi(\mathbb{E}[X]) \leq \mathbb{E}[\varphi(X)];
+$$</p>
+<p>for $\varphi(x) = |x|^p$, $p \geq 1$, this gives $\|X\|_1 \leq \|X\|_p$ and hence $L^p \subseteq L^1$.</p>
+<p><strong>Theorem (Markov).</strong> For a nonnegative random variable $X$ and $a > 0$,</p>
+<p>$$
+\mathbb{P}(X \geq a) \leq \frac{\mathbb{E}[X]}{a}.
+$$</p>
+<p><strong>Theorem (Chebyshev).</strong> For a random variable with mean $\mu$ and finite variance $\sigma^2$,</p>
+<p>$$
+\mathbb{P}\bigl(|X - \mu| \geq a\bigr) \leq \frac{\sigma^2}{a^2}, \qquad a > 0.
+$$</p>
+<p>The three inequalities are the standard quantitative bounds, and they are proved by elementary manipulations: Jensen by the supporting line of a convex function, Markov by integrating the inequality $a\mathbf{1}_{\{X\geq a\}} \leq X$, and Chebyshev by applying Markov to $(X-\mu)^2$. The Chebyshev inequality is the engine of the weak law of large numbers, and the Markov inequality is the engine of the first-moment bounds.</p>
+<p><strong>Definition.</strong> For $X,Y \in L^2$, the <strong>variance</strong> is $\operatorname{Var}(X) = \mathbb{E}[(X-\mathbb{E}X)^2] = \mathbb{E}[X^2] - (\mathbb{E}X)^2$, the <strong>covariance</strong> is $\operatorname{Cov}(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]$, the <strong>correlation</strong> is $\rho(X,Y) = \operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$, the <strong>moments</strong> are $\mathbb{E}[X^k]$, and the <strong>$L^p$ norm</strong> is $\|X\|_p = (\mathbb{E}[|X|^p])^{1/p}$.</p>
+<p><strong>Theorem (Hölder, Minkowski, Cauchy–Schwarz).</strong> For $p, q > 1$ with $1/p + 1/q = 1$,</p>
+<p>$$
+\mathbb{E}[|XY|] \leq \|X\|_p\|Y\|_q, \qquad \|X + Y\|_p \leq \|X\|_p + \|Y\|_p, \qquad \left|\mathbb{E}[XY]\right| \leq \|X\|_2\|Y\|_2,
+$$</p>
+<p>the last being the case $p=q=2$ of the first. Equality in Hölder holds if and only if $|X|^p$ and $|Y|^q$ are proportional a.s.; equality in Cauchy–Schwarz holds if and only if $X$ and $Y$ are linearly dependent a.s. on the event $\{XY \neq 0\}$.</p>
+<p>The Cauchy–Schwarz inequality makes $L^2$ an inner product space and is the reason the variance is the square of a norm and the covariance is an inner product; the geometric form of the theory, including the projection onto a subspace, is developed in <em>Banach and Hilbert Spaces</em> and is the structure behind conditional expectation.</p>
+<h2 id="convergence-of-random-variables">Convergence of Random Variables</h2>
+<h3 id="the-modes">The Modes</h3>
+<p><strong>Definition.</strong> Let $X, X_1, X_2, \dots$ be random variables on $(\Omega,\mathcal{F},\mathbb{P})$ with values in $\mathbb{R}^d$.</p>
+<ol>
+<li>$X_n \to X$ <strong>almost surely</strong> ($X_n \to X$ a.s.) if $\mathbb{P}(\lim_n X_n = X) = 1$.</li>
+<li>$X_n \to X$ <strong>in probability</strong> ($X_n \xrightarrow{\mathbb{P}} X$) if for every $\varepsilon > 0$, $\mathbb{P}(\|X_n - X\| > \varepsilon) \to 0$.</li>
+<li>$X_n \to X$ <strong>in $L^p$</strong> for $p \geq 1$ if $\|X_n - X\|_p \to 0$.</li>
+<li>$X_n \to X$ <strong>in distribution</strong> ($X_n \xrightarrow{d} X$) if $\mathbb{E}[f(X_n)] \to \mathbb{E}[f(X)]$ for every bounded continuous $f$.</li>
+</ol>
+<p><strong>Theorem (the relations).</strong> Convergence almost sure and convergence in $L^p$ each imply convergence in probability, which implies convergence in distribution. None of the implications reverses. If $X_n \xrightarrow{d} X$ and $X$ is a.s. constant, then $X_n \xrightarrow{\mathbb{P}} X$; if $X_n \xrightarrow{\mathbb{P}} X$ then a subsequence converges a.s.; and $X_n \xrightarrow{d} X$ if and only if $X_n \xrightarrow{\mathbb{P}} X$ together with the uniform integrability of an appropriate family, by the theorem of Vitali.</p>
+<p><em>Proof.</em> Almost sure convergence implies convergence in probability by the continuity from above of the measure; convergence in probability implies convergence in distribution by the portmanteau theorem below and the boundedness of $f$; the strictly decreasing chain is witnessed by the standard examples. The remaining statements are the standard measure-theoretic arguments. $\square$</p>
+<p><strong>Example (the implications are strict).</strong> The <strong>typewriter sequence</strong> $X_n = \mathbf{1}_{[k/2^m, (k+1)/2^m]}$ on $[0,1]$, $n = 2^m + k$, converges in probability and in $L^1$ to $0$ but converges a.s. at no point. The sequence $X_n = 2^n\mathbf{1}_{[0,1/n]}$ converges to $0$ a.s. and in probability but not in $L^1$. And a sequence converging in distribution to a random limit need not converge in probability, as the example $X_n$ uniform on $\{0,1\}$ and $X = 1 - X_n$ shows.</p>
+<h3 id="the-portmanteau-theorem">The Portmanteau Theorem</h3>
+<p><strong>Theorem (portmanteau).</strong> For probability measures $\mu, \mu_n$ on a metric space the following are equivalent: (i) $\mu_n \to \mu$ weakly, that is $\int f\,d\mu_n \to \int f\,d\mu$ for every bounded continuous $f$; (ii) $\liminf_n \mu_n(G) \geq \mu(G)$ for every open $G$; (iii) $\limsup_n \mu_n(F) \leq \mu(F)$ for every closed $F$; (iv) $\mu_n(A) \to \mu(A)$ for every Borel set $A$ with $\mu(\partial A) = 0$; (v) on $\mathbb{R}^d$, the distribution functions converge at every continuity point of $F_\mu$.</p>
+<p>The theorem is the standard coherence statement for convergence in distribution, and its proof is a measure-theoretic approximation argument: the continuous functions are used to test against the closed and open sets, and the boundary of a set is the place where the two can disagree. In the probabilistic language it says that convergence in distribution is weak convergence of the laws, and the two phrases are used interchangeably.</p>
+<p><strong>Theorem (continuous mapping and Slutsky).</strong> If $X_n \xrightarrow{d} X$ and $g$ is continuous then $g(X_n) \xrightarrow{d} g(X)$. If $X_n \xrightarrow{d} X$ and $Y_n \xrightarrow{\mathbb{P}} c$ a constant, then $X_n + Y_n \xrightarrow{d} X + c$ and $X_nY_n \xrightarrow{d} cX$.</p>
+<p>Slutsky's theorem is the working form of the continuous mapping principle: it permits the replacement of the deterministic constants in a limit theorem by consistent estimators, and it is used in every application of the central limit theorem in statistics. Its proof is a direct estimate against a bounded Lipschitz test function, using the tightness of $\{X_n\}$ and the convergence in probability of $Y_n$.</p>
+<h2 id="characteristic-functions">Characteristic Functions</h2>
+<h3 id="the-definition-and-basic-properties">The Definition and Basic Properties</h3>
+<p><strong>Definition.</strong> The <strong>characteristic function</strong> of a random variable $X$ on $\mathbb{R}^d$ is</p>
+<p>$$
+\varphi_X(t) = \mathbb{E}\!\left[e^{i\langle t, X\rangle}\right] = \int_{\mathbb{R}^d} e^{i\langle t,x\rangle}\, d\mu_X(x), \qquad t \in \mathbb{R}^d,
+$$</p>
+<p>the Fourier transform of the distribution $\mu_X$.</p>
+<p><strong>Theorem (basic properties).</strong> The characteristic function satisfies $\varphi_X(0) = 1$, $|\varphi_X(t)| \leq 1$, $\varphi_X(-t) = \overline{\varphi_X(t)}$, and $\varphi_X$ is uniformly continuous on $\mathbb{R}^d$. It is positive definite in the sense that $\sum_{j,k} c_j\overline{c_k}\varphi_X(t_j - t_k) \geq 0$ for all finite families $t_j \in \mathbb{R}^d$ and $c_j \in \mathbb{C}$; conversely, by Bochner's theorem, every continuous positive definite function with $\varphi(0) = 1$ is the characteristic function of a unique probability measure.</p>
+<p><em>Proof.</em> The first four properties are immediate from the definition and the dominated convergence theorem; uniform continuity follows from $\left|\varphi(t+h) - \varphi(t)\right| \leq \mathbb{E}\left|e^{i\langle h,X\rangle} - 1\right|$, whose right-hand side is independent of $t$ and tends to $0$ as $h \to 0$ by dominated convergence. Positive definiteness is the computation $\sum_{j,k}c_j\overline{c_k}\varphi(t_j-t_k) = \mathbb{E}\left|\sum_j c_j e^{i\langle t_j,X\rangle}\right|^2 \geq 0$. The converse is Bochner's theorem, whose proof is the inversion formula of <em>Fourier Analysis on Euclidean Spaces</em>. $\square$</p>
+<p><strong>Theorem (uniqueness and inversion).</strong> The characteristic function determines the distribution: if $\varphi_X = \varphi_Y$ then $\mu_X = \mu_Y$. More precisely, if $\varphi$ is integrable then $\mu_X$ has the continuous density</p>
+<p>$$
+f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} e^{-i\langle t,x\rangle}\varphi(t)\, dt,
+$$</p>
+<p>and in general the distribution is recovered from the characteristic function by the inversion formula for the Fourier transform of a finite measure.</p>
+<p>The uniqueness theorem is the reason the characteristic function is the standard tool for limit theorems: it linearises the operation of passing to a limit of distributions, and it converts the convergence in distribution into the pointwise convergence of functions. The analytic theory behind the inversion formula — the Schwartz space, the Parseval identity and the extension of the Fourier transform to tempered distributions — is the subject of <em>Fourier Analysis on Euclidean Spaces</em>.</p>
+<p><strong>Example.</strong> The normal distribution $N(\mu,\sigma^2)$ has characteristic function $\varphi(t) = e^{i\mu t - \sigma^2t^2/2}$; the Poisson distribution with parameter $\lambda$ has $\varphi(t) = e^{\lambda(e^{it}-1)}$ for a variable on $\mathbb{Z}_{\geq0}$; the Cauchy distribution with density $1/(\pi(1+x^2))$ has $\varphi(t) = e^{-|t|}$; and the Bernoulli distribution has $\varphi(t) = 1 - p + pe^{it}$. The last three show that the characteristic function is generally complex-valued and need not be integrable, so the inversion formula must be applied in the distributional sense.</p>
+<h3 id="moment-generating-and-cumulants">Moment Generating and Cumulants</h3>
+<p><strong>Definition.</strong> When $X$ has finite moments of all orders the <strong>moment generating function</strong> is $M_X(t) = \mathbb{E}[e^{tX}]$, defined near $t=0$ when the expectation converges; the <strong>cumulants</strong> $\kappa_n$ are the coefficients in the expansion $\log \varphi_X(t) = \sum_{n\geq1}\kappa_n (it)^n/n!$. The moments are recovered from the derivatives of $\varphi_X$ at $0$: $\mathbb{E}[X^n] = i^{-n}\varphi_X^{(n)}(0)$ when the moment exists.</p>
+<p>The cumulants are additive for sums of independent random variables, and this is the structural reason they appear in the central limit theorem: the $n$-th cumulant of a sum of independent variables is the sum of the $n$-th cumulants, so the asymptotic distribution of a sum is governed by its first two cumulants. The additivity is a formal consequence of the factorisation $\varphi_{X+Y} = \varphi_X\varphi_Y$ for independent $X,Y$, which is stated in the next section and proved.</p>
+<h2 id="the-limit-theorems-in-outline">The Limit Theorems in Outline</h2>
+<h3 id="independence-briefly">Independence, Briefly</h3>
+<p><strong>Definition.</strong> The random variables $X_1, \dots, X_n$ are <strong>independent</strong> if for all Borel sets $B_1, \dots, B_n$,</p>
+<p>$$
+\mathbb{P}(X_1 \in B_1, \dots, X_n \in B_n) = \prod_{i=1}^n \mathbb{P}(X_i \in B_i),
+$$</p>
+<p>and an infinite family is independent if every finite subfamily is. Equivalently, the joint distribution is the product of the marginal distributions, and the characteristic function factorises: $\varphi_{X_1+\cdots+X_n} = \prod_i \varphi_{X_i}$.</p>
+<p>Independence is the probabilistic content of the product measure, and it is developed elsewhere, where the product measure is constructed, the Borel–Cantelli lemmas and the Kolmogorov zero–one law are proved, and the conditional expectation is defined as a projection. This article uses only the factorisation of the characteristic function and the additivity of the cumulants.</p>
+<h3 id="the-statements">The Statements</h3>
+<p><strong>Theorem (weak law of large numbers; Khinchin).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| < \infty$ and mean $\mu$. Then the sample means converge in probability:</p>
+<p>$$
+\frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{\mathbb{P}} \mu.
+$$</p>
+<p><strong>Theorem (strong law of large numbers; Kolmogorov).</strong> Under the same hypotheses the sample means converge almost surely: $\frac{1}{n}\sum_{i=1}^n X_i \to \mu$ a.s.</p>
+<p><strong>Theorem (central limit theorem; Lindeberg–Lévy).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with mean $\mu$ and finite variance $\sigma^2 > 0$. Then</p>
+<p>$$
+\frac{1}{\sigma\sqrt{n}}\sum_{i=1}^n (X_i - \mu) \xrightarrow{d} N(0,1),
+$$</p>
+<p>the standard normal distribution.</p>
+<p>The three theorems are the classical limit theorems, and they are the subject, where they are proved, refined and generalised: the weak law follows from Chebyshev when the variance is finite and from the truncation argument of Khinchin in general; the strong law is proved by the maximal inequality of Kolmogorov; and the central limit theorem is proved by the convergence of characteristic functions, via the expansion $\varphi(t/\sqrt n)^n \to e^{-t^2/2}$ and the continuity theorem of Lévy. The rate of convergence in the central limit theorem is the Berry–Esseen theorem, and the local form is the local limit theorem; both are developed there.</p>
+<p>The place of the limit theorems in the present article is structural. The weak law is the statement that the empirical mean is a consistent estimator of the mean; the strong law is the statement that the empirical measure converges to the distribution almost surely, and it is the probabilistic form of the pointwise ergodic theorem; and the central limit theorem is the statement that the fluctuations of the empirical mean around its limit are asymptotically Gaussian, and it is the reason the normal distribution is universal. The passage from the law of large numbers to ergodic theory is the passage from independent sequences to stationary ones, and it is developed.</p>
+<h2 id="summary">Summary</h2>
+<p>A probability space is a measure space of total mass one; a random variable is a measurable function, its distribution is the pushforward $\mu_X = \mathbb{P}\circ X^{-1}$, the distribution function $F_X(x) = \mathbb{P}(X \le x)$ is nondecreasing and right-continuous and determines the measure, and the Lebesgue decomposition splits every distribution into an absolutely continuous, a discrete and a singular continuous part. Every distribution on $\mathbb{R}$ is the image of the uniform distribution under the quantile map $F^{-1}$, which makes $[0,1]$ the universal probability space. Expectation is the integral, computed from the distribution by change of variables, and it satisfies the monotone and dominated convergence theorems; the standard inequalities are Jensen, Markov and Chebyshev, together with Hölder, Minkowski and Cauchy–Schwarz, the last making $L^2$ an inner product space whose geometry underlies the covariance and the conditional expectation.</p>
+<p>Convergence of random variables has four modes — almost surely, in probability, in $L^p$ and in distribution — with the implications a.s. and $L^p$ $\Rightarrow$ probability $\Rightarrow$ distribution, none reversible; the portmanteau theorem characterises convergence in distribution by the weak convergence of the laws, and Slutsky's theorem and the continuous mapping principle are the working tools. The characteristic function is the Fourier transform of the distribution: it is uniformly continuous, positive definite, bounded by $1$ and equal to $1$ at the orig, it determines the distribution by the inversion formula and Bochner's theorem, it factorises over independent sums, and its logarithm has additive cumulants. The weak and strong laws of large numbers and the central limit theorem are stated here in their classical form and proved; independence and conditional expectation are constructed, and the ergodic form of the law of large numbers is developed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\Omega, \mathcal{F}, \mathbb{P})$</td>
+<td>Probability space; $\mathbb{P}(\Omega)=1$</td>
+</tr>
+<tr>
+<td>a.s.</td>
+<td>Almost surely; the probabilistic name for almost everywhere</td>
+</tr>
+<tr>
+<td>$X$, $Y$</td>
+<td>Random variables (measurable maps)</td>
+</tr>
+<tr>
+<td>$\sigma(X_i)$</td>
+<td>$\sigma$-algebra generated by the family $\{X_i\}$</td>
+</tr>
+<tr>
+<td>$\mu_X = \mathbb{P}\circ X^{-1}$</td>
+<td>Distribution (law) of $X$</td>
+</tr>
+<tr>
+<td>$F_X(x) = \mathbb{P}(X \le x)$</td>
+<td>Distribution function</td>
+</tr>
+<tr>
+<td>$F^{-1}$</td>
+<td>Quantile function, $F^{-1}(u)=\inf\{x: F(x)\ge u\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{E}[X]$</td>
+<td>Expectation, $\int_\Omega X\,d\mathbb{P}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Var}$, $\operatorname{Cov}$, $\rho$</td>
+<td>Variance, covariance, correlation</td>
+</tr>
+<tr>
+<td>$\|X\|_p$</td>
+<td>$L^p$ norm $(\mathbb{E}\|X\|^p)^{1/p}$</td>
+</tr>
+<tr>
+<td>$\mathbf{1}_A$, $\delta_x$</td>
+<td>Indicator of $A$, point mass at $x$</td>
+</tr>
+<tr>
+<td>$X_n \to X$ a.s., $\xrightarrow{\mathbb{P}}$, $\xrightarrow{L^p}$, $\xrightarrow{d}$</td>
+<td>The four modes of convergence</td>
+</tr>
+<tr>
+<td>$\mu_n \to \mu$ weakly</td>
+<td>$\int f\,d\mu_n \to \int f\,d\mu$ for bounded continuous $f$</td>
+</tr>
+<tr>
+<td>$\varphi_X(t) = \mathbb{E}[e^{i\langle t,X\rangle}]$</td>
+<td>Characteristic function</td>
+</tr>
+<tr>
+<td>$M_X$, $\kappa_n$</td>
+<td>Moment generating function, cumulants</td>
+</tr>
+<tr>
+<td>$N(\mu,\sigma^2)$, $\mathrm{Bin}(n,p)$, $\mathrm{Pois}(\lambda)$</td>
+<td>Normal, binomial, Poisson distributions</td>
+</tr>
+<tr>
+<td>independent</td>
+<td>joint law is the product of the marginals</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Patrick Billingsley, <em>Probability and Measure</em> (Wiley, 3rd edition, 1995), for the measure-theoretic foundations of probability from first principles.</li>
+<li>Andrei N. Kolmogorov, <em>Foundations of the Theory of Probability</em> (Chelsea, 1950), for the original measure-theoretic axiomatisation.</li>
+<li>Kai Lai Chung, <em>A Course in Probability Theory</em> (Academic Press, 3rd edition, 2001), for the modes of convergence, the portmanteau theorem and the classical limit theorems.</li>
+<li>William Feller, <em>An Introduction to Probability Theory and Its Applications</em>, Vols. I and II (Wiley, 1968 and 1971), for the characteristic functions, the standard distributions and their limit behaviour.</li>
+<li>Michel Loève, <em>Probability Theory</em> (Springer, 4th edition, 1977), for the systematic development of distributions and their decompositions.</li>
+<li>David Williams, <em>Probability with Martingales</em> (Cambridge University Press, 1991), for a concise account that passes directly from the measure theory to the martingale theory.</li>
+<li>Elias M. Stein and Rami Shakarchi, <em>Fourier Analysis: An Introduction</em> (Princeton University Press, 2003), for the Fourier transform, the inversion formula and the positive-definite functions used in the characteristic-function theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examples of Rings and Fields — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="examples-of-rings-and-fields"><strong>Examples of Rings and Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A definition of a ring and of a field is only useful once it is known how varied the examples are, and this article collects the objects that recur in the rest of the corpus, together with the invariants that separate them. The list is deliberately heterogeneous: the integers and their quotients, the rings of algebraic integers in small quadratic fields, polynomial and power series rings, the localisations of $\mathbb{Z}$ at a prime, the matrix rings, the group rings of small groups, and the dual and split complex numbers. Each entry is presented as a ring in the sense of <em>Rings</em> — a set with two operations, the multiplication commutative unless the contrary is said — and its properties are recorded: whether it is a domain, whether it is Noetherian, whether it is a unique factorisation domain or a principal ideal domain, whether it is local, whether it is a field, and what its units and its zero divisors are.</p>
+<p>The examples serve a second purpose. They separate the hypotheses of the theorems of this category from one another: $\mathbb{Z}[x]$ is a unique factorisation domain that is not a principal ideal domain; $\mathbb{Z}[\sqrt{-5}]$ is a Noetherian domain that is not a unique factorisation domain; $\mathbb{Z}/6\mathbb{Z}$ is a Noetherian ring that is not a domain; $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ is a local ring in which every nonunit is nilpotent, and the split complex numbers are isomorphic to a product of two fields; and $k[x_1,x_2,\ldots]$ in infinitely many variables is a domain that is not Noetherian. Taken together they show that no one of the implications</p>
+<p>$$
+\text{field} \Rightarrow \text{PID} \Rightarrow \text{UFD} \Rightarrow \text{domain}
+$$</p>
+<p>reverses, and that the Noetherian condition is independent of all of them except as the theorems demand it.</p>
+<p>The background is <em>Rings</em>, <em>Integral Domains</em>, <em>Unique Factorisation Domains</em>, <em>Localization and the Fraction Field</em>, <em>Finite Fields</em>, <em>Algebraically Closed Fields</em>, <em>Real-Closed and Complete Ordered Fields</em>, <em>Dedekind Domains and Ideal Class Groups</em>, <em>Valuation Theory and Henselian Rings</em> and <em>Algebraic Number Theory</em>. Throughout, all rings have $1 \neq 0$ and are commutative unless stated otherwise; the zero ring is excluded by this convention and is not an example of anything below. The symbols $\mathbb{D}$ (split complex numbers, unit $j$, $j^2 = +1$) and $\mathbb{D}'$ (dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$) are those fixed in <em>Dual Numbers Algebra</em>; they are two distinct two-dimensional rings and the notation is chosen so that they do not collide.</p>
+<hr />
+<h2 id="finite-rings-and-their-quotients">Finite Rings and Their Quotients</h2>
+<p><strong>Example ($\mathbb{Z}/n\mathbb{Z}$).</strong> For $n \geq 1$ the ring $\mathbb{Z}/n\mathbb{Z}$ has $n$ elements and characteristic $n$. Its units are the classes of the integers coprime to $n$, so the group of units is $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\varphi(n)$; it is a domain exactly when it is a field, exactly when $n$ is prime, in which case it is $\mathbb{F}_p$; and for composite $n$ every class of a nonunit that is not zero is a zero divisor, since $ab \equiv 0$ with $a,b$ proper divisors of $n$. For $n = 4$ the units are $1, 3$ and the maximal ideal is $(2)$; for $n = 6$ the ring is $\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/3\mathbb{Z}$ by the Chinese remainder theorem, with idempotents $0,1$ in each factor giving four idempotents in the product.</p>
+<p><strong>Example (finite fields).</strong> For $q = p^f$ there is, up to isomorphism, exactly one field $\mathbb{F}_q$ with $q$ elements; its group of units is cyclic of order $q-1$, and its prime subfield is $\mathbb{F}_p$. The smallest cases are $\mathbb{F}_2 = \{0,1\}$, $\mathbb{F}_3$, $\mathbb{F}_4 = \mathbb{F}_2[x]/(x^2+x+1)$ and $\mathbb{F}_8 = \mathbb{F}_2[x]/(x^3+x+1)$; these are the fields in which <em>Finite Fields</em> andbeing, work, and each is a simple extension of its prime field by an irreducible polynomial.</p>
+<p><strong>Example (Boolean rings).</strong> In $\mathbb{F}_2^n$ with coordinatewise operations every element is idempotent, $a^2 = a$, and $a+a = 0$; such a ring is a product of copies of $\mathbb{F}_2$ and is not a domain for $n \geq 2$, since the standard basis elements multiply to zero.</p>
+<p><strong>Example (products).</strong> For rings $R,S$ the product $R\times S$ has units $(u,v)$ with $u,v$ units, idempotents the four combinations of the idempotents of $R$ and $S$, and zero divisors whenever both factors are nonzero: $(1,0)(0,1) = 0$. A product of two nonzero rings is never a domain and never local.</p>
+<hr />
+<h2 id="rings-of-number-theory">Rings of Number Theory</h2>
+<p><strong>Example (the Gaussian integers).</strong> $\mathbb{Z}[i] = \{a+bi : a,b\in\mathbb{Z}\}$ is an integral domain, Euclidean with respect to the norm $N(a+bi) = a^2+b^2$, hence a principal ideal domain and a unique factorisation domain. Its units are $\pm1, \pm i$, the four elements of norm $1$; the element $2$ factors as $-i(1+i)^2$, and an odd rational prime $p$ remains prime in $\mathbb{Z}[i]$ if $p \equiv 3 \bmod 4$ and splits as $\pi\bar\pi$ with $N(\pi) = p$ if $p \equiv 1 \bmod 4$, the case $5 = (2+i)(2-i)$.</p>
+<p><strong>Example ($\mathbb{Z}[\sqrt{-5}]$ and the failure of unique factorisation).</strong> The ring $\mathbb{Z}[\sqrt{-5}] = \{a+b\sqrt{-5}\}$ is an integral domain, being a subring of $\mathbb{C}$, and it is Noetherian, being a quotient of $\mathbb{Z}[x]$ by the Noetherian property of <em>Noetherian and Artinian Rings</em>. It is not a unique factorisation domain:</p>
+<p>$$
+6 = 2\cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5}),
+$$</p>
+<p>and the four factors are irreducible, since the norm $N(a+b\sqrt{-5}) = a^2+5b^2$ takes the values $4, 9, 6, 6$ on them and no element of norm $2$ or $3$ exists in the ring. The two factorisations are genuinely different, since the factors are pairwise nonassociate: the units of the ring are $\pm1$ alone, and $1+\sqrt{-5}$ is not a unit multiple of $2$ or of $3$. The ring is nonetheless a Dedekind domain, and its ideal class group has order $2$, generated by the class of the ideal $(2, 1+\sqrt{-5})$, as in <em>Dedekind Domains and Ideal Class Groups</em>; the failure of unique factorisation of elements is repaired by the unique factorisation of ideals. Its field of fractions is $\mathbb{Q}(\sqrt{-5})$, and $\mathbb{Z}[\sqrt{-5}]$ is the full ring of integers of that field.</p>
+<p><strong>Example (rings of integers).</strong> For a number field $K$ the ring of integers $\mathcal{O}_K$ is a Dedekind domain, hence Noetherian, integrally closed, and of Krull dimension one, and it is a unique factorisation domain exactly when its class group is trivial; $\mathbb{Z}$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{-2}]$ and $\mathbb{Z}[\zeta_n]$ are the classical examples with class number one, and $\mathbb{Z}[\sqrt{-5}]$ the classical counterexample. The cyclotomic case $\mathbb{Z}[\zeta_n]$ is Euclidean for $n \leq 10$ and $n = 12, 14$ and fails to be a unique factorisation domain first at $n = 23$. The theory is <em>Algebraic Number Theory</em> and <em>Cyclotomic Fields</em>.</p>
+<p><strong>Example ($\mathbb{Z}[\sqrt{-2}]$).</strong> This ring is Euclidean with norm $a^2+2b^2$, hence a principal ideal domain and a unique factorisation domain, and the point worth recording is the contrast with $\mathbb{Z}[\sqrt{-5}]$: the norm $a^2+2b^2$ admits a division algorithm with remainder of smaller norm, while $a^2+5b^2$ does not, and this is exactly the difference between class number one and class number two in these two quadratic fields. The same norm renders $\mathbb{Z}[\sqrt{-3}]$ Euclidean only after the ring is enlarged to the full ring of integers $\mathbb{Z}[\zeta_3]$, whose norm is $a^2-ab+b^2$.</p>
+<hr />
+<h2 id="polynomial-power-series-and-quotient-rings">Polynomial, Power Series and Quotient Rings</h2>
+<p><strong>Example ($\mathbb{Z}[x]$ and $K[x]$).</strong> $\mathbb{Z}[x]$ is an integral domain, Noetherian by the Hilbert basis theorem, and a unique factorisation domain by Gauss's lemma; it is not a principal ideal domain, since the ideal $(2,x)$ is not principal: a generator would have to divide $2$, hence be $\pm1$ or $\pm2$, and neither generates $(2,x)$, as $2$ does not divide $x$ and $1 \notin (2,x)$. Over a field the situation improves: $K[x]$ is Euclidean with the degree as Euclidean function, hence a principal ideal domain, and $K[x,y]$ is a unique factorisation domain by Gauss's lemma applied twice but again not principal, since $(x,y)$ is not principal.</p>
+<p><strong>Example (power series).</strong> The ring $K[[x]]$ of formal power series is an integral domain in which every series with nonzero constant term is a unit; consequently it is a local ring with maximal ideal $(x)$, and every nonzero ideal is $(x^n)$ for some $n$, so $K[[x]]$ is a principal ideal domain and a unique factorisation domain: its only irreducible element is $x$, up to multiplication by units. This is the prototype of a discrete valuation ring, as in <em>Valuation Theory and Henselian Rings</em>; the ring is not a field, and $x$ is a nonunit that is not a zero divisor.</p>
+<p><strong>Example (quotients of a polynomial ring).</strong> For $K$ a field and $f \in K[x]$ nonzero of degree $m$, the quotient $K[x]/(f)$ has dimension $m$ over $K$ and is a field exactly when $f$ is irreducible; it is a product of fields exactly when $f$ is squarefree. Thus $\mathbb{R}[x]/(x^2+1) \cong \mathbb{C}$, $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R}\times\mathbb{R}$, and $\mathbb{R}[x]/(x^2) \cong \mathbb{D}'$, the dual numbers, whose elements are $a+b\varepsilon$ with $\varepsilon^2 = 0$, of which the units are those with $a \neq 0$ and the nonunits are all nilpotent.</p>
+<p><strong>Example (split complex numbers).</strong> The split complex numbers $\mathbb{D}$ have basis $1, j$ with $j^2 = +1$; the assignment $j \mapsto (1,-1)$ identifies</p>
+<p>$$
+\mathbb{D} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\times\mathbb{R},
+$$</p>
+<p>so that $\mathbb{D}$ is a product of two fields, with the nontrivial idempotents $e_\pm = \frac12(1\pm j)$ satisfying $e_+e_- = 0$, $e_+^2 = e_+$, $e_-^2 = e_-$. The contrast with $\mathbb{D}'$ is instructive: $j^2 = +1$ splits into two fields, while $\varepsilon^2 = 0$ gives a ring with a nilpotent; the two rings are the two possible two-dimensional quotients of $\mathbb{R}[x]$ by a nonconstant polynomial up to isomorphism, corresponding to a squarefree and to a nonsquarefree quadratic.</p>
+<hr />
+<h2 id="local-noncommutative-and-group-rings">Local, Noncommutative and Group Rings</h2>
+<p><strong>Example (localisations).</strong> For a prime $p$ the localisation $\mathbb{Z}_{(p)}$ of $\mathbb{Z}$ at the multiplicative set of integers prime to $p$ is an integral domain with a unique maximal ideal $(p)$, so it is a local ring; its units are the fractions $a/b$ with $a,b$ both prime to $p$, and it is a principal ideal domain and a discrete valuation ring with value the exponent of $p$. Every nonzero ideal is $(p^n)$. Similarly $\mathbb{F}_p[x]_{(x)}$ and $K[[x]]$ are discrete valuation rings, and a general discrete valuation ring is characterised as a local principal ideal domain with nilradical zero, as in <em>Valuation Theory and Henselian Rings</em>.</p>
+<p><strong>Example (matrix rings).</strong> For a ring $R$ and $n \geq 2$ the ring $M_n(R)$ of $n\times n$ matrices is noncommutative, has zero divisors — the standard matrix units satisfy $E_{11}E_{22} = 0$ while both are nonzero — and has units the invertible matrices; over a field the units are the matrices of nonzero determinant. $M_n(R)$ is Noetherian when $R$ is, and it is never a domain for $n\geq2$. The upper triangular matrices form a subring that is not commutative either and that has many zero divisors.</p>
+<p><strong>Example (group rings).</strong> For a finite group $G$ and a field $K$ the group ring $K[G]$ consists of the formal $K$-linear combinations of elements of $G$, with multiplication induced by the group law. For $G = C_2 = \langle g\rangle$:</p>
+<p>$$
+\mathbb{Q}[C_2] \cong \mathbb{Q}[x]/(x^2-1) \cong \mathbb{Q}\times\mathbb{Q}, \qquad \mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x^2-1) = \mathbb{F}_2[x]/(x+1)^2,
+$$</p>
+<p>the first by the Chinese remainder theorem applied to the coprime factors $x-1$ and $x+1$, and the second because $x^2-1 = (x+1)^2$ in characteristic $2$; so the same group gives a product of two fields in characteristic zero and a local ring with a nilpotent in characteristic two. For $G = C_3$ and $K = \mathbb{Q}$ the factorisation $x^3-1 = (x-1)(x^2+x+1)$ with the second factor irreducible gives $\mathbb{Q}[C_3] \cong \mathbb{Q}\times\mathbb{Q}(\zeta_3)$, a product of the rational field and the quadratic cyclotomic field. The general theory is <em>Representation Theory of Symmetric Groups</em> and <em>Cyclotomic Fields</em>.</p>
+<p><strong>Example (division rings, deferred).</strong> A <strong>division ring</strong> is a ring in which every nonzero element is a unit, and a division ring that is not commutative is a <strong>skew field</strong>. By Wedderburn's little theorem of <em>Division Rings</em>, a finite division ring is a field, so every skew field is infinite; the standard skew field of the corpus is introduced in the algebra layer, in <em>Division Algebras</em>. Nothing in the present category requires its construction.</p>
+<p><strong>Example (a non-Noetherian domain).</strong> The polynomial ring $k[x_1,x_2,x_3,\ldots]$ in countably many indeterminates is an integral domain and a unique factorisation domain, but it is not Noetherian: the ideal $(x_1,x_2,x_3,\ldots)$ is not finitely generated, since any finite set of generators involves only finitely many of the variables. This is the standard witness that the Hilbert basis theorem fails for infinitely many variables, and hence that the Noetherian hypothesis in the theorems of <em>Noetherian and Artinian Rings</em> is not automatic.</p>
+<hr />
+<h2 id="a-table-of-invariants">A Table of Invariants</h2>
+<p>The following table records, for the examples above, the properties discussed in this article. "Domain" means an integral domain, "PID" a principal ideal domain, and "UFD" a unique factorisation domain; "local" means a single maximal ideal, and the entries for rings that are not domains are marked "—" in the factorisation columns, since those notions are defined only for domains.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Domain</th>
+<th>Noetherian</th>
+<th>PID</th>
+<th>UFD</th>
+<th>Local</th>
+<th>Field</th>
+<th>Characteristic</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$\pm1$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p\mathbb{Z} = \mathbb{F}_p$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>$p$</td>
+<td>$p-1$ elements</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>no</td>
+<td>yes</td>
+<td>—</td>
+<td>—</td>
+<td>yes</td>
+<td>no</td>
+<td>$4$</td>
+<td>$\{1,3\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[i]$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$\pm1,\pm i$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-2}]$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$\pm1$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$\pm1$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[x]$</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$\pm1$</td>
+</tr>
+<tr>
+<td>$K[x,y]$</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$K^\times$</td>
+</tr>
+<tr>
+<td>$K[[x]]$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>$0$</td>
+<td>nonzero constant term</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>$0$</td>
+<td>$a/b$, $p\nmid a,b$</td>
+</tr>
+<tr>
+<td>$K[x]/(x^m)$</td>
+<td>no</td>
+<td>yes</td>
+<td>—</td>
+<td>—</td>
+<td>yes</td>
+<td>no</td>
+<td>—</td>
+<td>$a_0\neq0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}' \cong \mathbb{R}[x]/(x^2)$</td>
+<td>no</td>
+<td>yes</td>
+<td>—</td>
+<td>—</td>
+<td>yes</td>
+<td>no</td>
+<td>$0$</td>
+<td>$a\neq0$ in $a+b\varepsilon$</td>
+</tr>
+<tr>
+<td>$\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$</td>
+<td>no</td>
+<td>yes</td>
+<td>—</td>
+<td>—</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$a^2>b^2$ in $a+bj$</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}[C_2] \cong \mathbb{Q}\times\mathbb{Q}$</td>
+<td>no</td>
+<td>yes</td>
+<td>—</td>
+<td>—</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$(a,b)$ with $ab\neq0$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>no</td>
+<td>yes</td>
+<td>—</td>
+<td>—</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$\det\neq0$</td>
+</tr>
+<tr>
+<td>$k[x_1,x_2,\ldots]$</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>$k^\times$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark.</strong> The table shows the independence of the four chain conditions: $\mathbb{Z}[x]$ is a unique factorisation domain that is not principal; $\mathbb{Z}[\sqrt{-5}]$ is Noetherian but not a unique factorisation domain; $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{D}'$ are local and not domains; $M_2(\mathbb{R})$ is Noetherian with zero divisors; and $k[x_1,x_2,\ldots]$ is a unique factorisation domain that is not Noetherian.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>The examples of this article exhibit the separation of the basic properties of rings. $\mathbb{Z}$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{-2}]$ and $K[x]$ are Euclidean and hence principal ideal domains; $\mathbb{Z}[x]$ and $K[x,y]$ are unique factorisation domains that are not principal, the ideals $(2,x)$ and $(x,y)$ being the standard witnesses; $\mathbb{Z}[\sqrt{-5}]$ is a Noetherian integral domain that is not a unique factorisation domain, with $6 = 2\cdot3 = (1+\sqrt{-5})(1-\sqrt{-5})$ two factorisations into irreducible and pairwise nonassociate elements, and it is a Dedekind domain of class number two whose ideals do factor uniquely; and $k[x_1,x_2,\ldots]$ is a unique factorisation domain that is not Noetherian. The finite rings $\mathbb{Z}/n\mathbb{Z}$ are fields exactly for $n$ prime and have zero divisors otherwise; the quotients $K[x]/(f)$ are fields exactly when $f$ is irreducible and products of fields exactly when $f$ is squarefree, which makes $\mathbb{R}[x]/(x^2+1) \cong \mathbb{C}$ and $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R}\times\mathbb{R}$.</p>
+<p>The two two-dimensional rings fixed by the conventions appear in their proper places: the dual numbers $\mathbb{D}' = \mathbb{R}[x]/(x^2)$, a local ring whose nonunits are nilpotent and whose unit group consists of the elements with nonzero constant term, and the split complex numbers $\mathbb{D} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\times\mathbb{R}$, a product of two fields with the idempotents $\frac12(1\pm j)$. $\mathbb{Z}_{(p)}$ and $K[[x]]$ are the discrete valuation rings of the list, local principal ideal domains; $M_2(R)$ and the upper triangular matrices are the noncommutative rings with zero divisors; the skew fields, which are the noncommutative division rings, belong to the algebra layer. Group rings interpolate between the two behaviours according to the characteristic: $\mathbb{Q}[C_2] \cong \mathbb{Q}\times\mathbb{Q}$ and $\mathbb{Q}[C_3]\cong\mathbb{Q}\times\mathbb{Q}(\zeta_3)$ are products of fields, while $\mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x+1)^2$ is local with a nilpotent.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>The number systems</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$, $\mathbb{F}_q$</td>
+<td>Residue rings, prime field, finite field</td>
+</tr>
+<tr>
+<td>$\varphi(n)$</td>
+<td>Euler totient, the order of $(\mathbb{Z}/n\mathbb{Z})^\times$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[i]$</td>
+<td>Gaussian integers, norm $a^2+b^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-2}]$, $\mathbb{Z}[\sqrt{-5}]$</td>
+<td>Quadratic integer rings</td>
+</tr>
+<tr>
+<td>$N(a+b\sqrt{-d})$</td>
+<td>Norm $a^2+db^2$</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_K$</td>
+<td>Ring of integers of a number field</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>Localisation of $\mathbb{Z}$ at $p$</td>
+</tr>
+<tr>
+<td>$K[x]$, $K[x,y]$, $K[[x]]$</td>
+<td>Polynomial and power series rings</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex numbers, $j^2 = +1$, $e_\pm = \frac12(1\pm j)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>Dual numbers, $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$M_n(R)$</td>
+<td>Ring of $n\times n$ matrices over $R$</td>
+</tr>
+<tr>
+<td>$K[G]$</td>
+<td>Group ring of a finite group</td>
+</tr>
+<tr>
+<td>$\zeta_n$</td>
+<td>Primitive $n$-th root of unity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Serge Lang, <em>Algebra</em> (Springer, revised 3rd ed. 2002), for the catalogue of rings and their standard properties.</li>
+<li>Richard Dedekind, <em>Vorlesungen über Zahlentheorie</em>, Supplement XI (Vieweg, 1871), for the ideals of $\mathbb{Z}[\sqrt{-5}]$ and the origin of ideal factorisation.</li>
+<li>Harold Davenport, <em>The Higher Arithmetic</em> (Cambridge University Press, 8th ed. 2008), for the arithmetic of $\mathbb{Z}[i]$ and the quadratic integer rings.</li>
+<li>Paulo Ribenboim, <em>Classical Theory of Algebraic Numbers</em> (Springer, 2001), for rings of integers, class numbers and the failure of unique factorisation.</li>
+<li>Rudolf Lidl and Harald Niederreiter, <em>Finite Fields</em> (Cambridge University Press, 2nd ed. 1997), for the finite rings and fields.</li>
+<li>Bartel Leendert van der Waerden, <em>Algebra</em>, Volume 2 (Springer, 1991), for group rings and matrix rings in the classical setting.</li>
+<li>Oscar Zariski and Pierre Samuel, <em>Commutative Algebra</em>, Volume 1 (Van Nostrand, 1958), for local rings, discrete valuation rings and the Noetherian condition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

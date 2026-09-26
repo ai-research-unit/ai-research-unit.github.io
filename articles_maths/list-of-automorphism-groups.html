@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Automorphism Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-automorphism-groups"><strong>List of Automorphism Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the automorphism groups the corpus attaches to its objects: $\operatorname{Aut}(G)$, $\operatorname{Inn}(G)$ and $\operatorname{Out}(G)$ for a group, $\operatorname{Aut}(R)$ for a ring, $\operatorname{Aut}_F(K) = \operatorname{Gal}(K/F)$ for a field extension, $\operatorname{Aut}_R(A)$ for an algebra and $\operatorname{Aut}_A(M)$ for a module. In every case the automorphism group is the transformation group of the object, determined by what it is required to preserve, and $\operatorname{Inn}(G)$ is normal in $\operatorname{Aut}(G)$ with quotient $\operatorname{Out}(G)$.</p>
+<p>Every entry points to the article that introduces the automorphism group and names its structural features. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being an automorphism group that fails a property its neighbour has, or an object whose automorphisms preserve less than expected, with the failure named and the article that records it.</p>
+<h2 id="automorphisms-of-a-group">Automorphisms of a Group</h2>
+<p>The <strong>automorphism group</strong> $\operatorname{Aut}(G)$ is the group of bijective homomorphisms of $G$ to itself; the <strong>inner</strong> automorphisms are the conjugations $x \mapsto gxg^{-1}$, forming the normal subgroup $\operatorname{Inn}(G) \cong G/Z(G)$, and the <strong>outer</strong> automorphism group is the quotient $\operatorname{Out}(G) = \operatorname{Aut}(G)/\operatorname{Inn}(G)$. For every group these fit into the short exact sequence $1 \to \operatorname{Inn}(G) \to \operatorname{Aut}(G) \to \operatorname{Out}(G) \to 1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Automorphism group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Aut}(G)$</td>
+<td>the group of automorphisms of $G$, an instance of $\operatorname{Aut}(X)$ for a structure</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(G)$</td>
+<td>the inner automorphisms, normal in $\operatorname{Aut}(G)$ and isomorphic to $G/Z(G)$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Out}(G)$</td>
+<td>the outer automorphism group, the quotient $\operatorname{Aut}(G)/\operatorname{Inn}(G)$</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>The exact sequence $1 \to \operatorname{Inn}(G) \to \operatorname{Aut}(G) \to \operatorname{Out}(G) \to 1$</td>
+<td>the inner automorphisms normal, the outer group the quotient</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Out}(G)$ for a finite simple group</td>
+<td>solvable of derived length at most $3$; of order at most $2$ for a sporadic group</td>
+<td><em>The Classification of Finite Simple Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Out}(A_6)$</td>
+<td>of order $4$, the exceptional case among the alternating groups</td>
+<td><em>The Classification of Finite Simple Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Out}(S)$ for a group of Lie type</td>
+<td>generated by the diagonal, field and graph automorphisms</td>
+<td><em>The Classification of Finite Simple Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathbb{H})$</td>
+<td>equal to $\operatorname{Inn}(\mathbb{H})$, the conjugation action of the unit group</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: an abelian group</td>
+<td>fails to have inner automorphisms: $\operatorname{Inn}(G) = 1$ and $\operatorname{Aut}(G) = \operatorname{Out}(G)$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: a complete group</td>
+<td>has $Z(G)=1$ and $\operatorname{Out}(G)=1$, so $\operatorname{Aut}(G) = \operatorname{Inn}(G) \cong G$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="automorphisms-of-a-ring">Automorphisms of a Ring</h2>
+<p>A ring automorphism preserves addition and multiplication, and hence $0$, $1$, the prime subfield, the centre and the ideal structure. The <strong>inner</strong> automorphisms are the conjugations by units, $\operatorname{conj}_u(r) = uru^{-1}$, and the <strong>outer</strong> ring automorphism group is $\operatorname{Out}(R) = \operatorname{Aut}(R)/\operatorname{Inn}(R)$; an automorphism of a ring preserves no metric notion, since no length or angle is available at this layer.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Automorphism group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Aut}(R)$</td>
+<td>the unital ring automorphisms of $R$; preserve $0$, $1$ and the prime subfield</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(R) \cong R^\times/Z(R)^\times$</td>
+<td>the inner automorphisms $r \mapsto uru^{-1}$</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Out}(R)$</td>
+<td>the quotient of the automorphisms by the inner ones</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>Fixed subring $R^G$</td>
+<td>the elements fixed by a subgroup $G \leq \operatorname{Aut}(R)$</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>Frobenius $\varphi(x) = x^p$</td>
+<td>an automorphism of a finite field, of order the degree over $\mathbb{F}_p$</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>Complex conjugation on $\mathbb{C}$</td>
+<td>the nontrivial automorphism of $\mathbb{C}$ over $\mathbb{R}$</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(M_n(k))$</td>
+<td>of order $PGL_n(k)$, the inner automorphisms, for a field $k$</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(R[x])$</td>
+<td>the triangular automorphisms and the affine substitutions, of $R[x]$</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>Non-example: the zero ring</td>
+<td>fails the convention: $\operatorname{Aut}(R)$ requires $1 \neq 0$ and the zero ring is excluded</td>
+<td><em>Rings</em></td>
+</tr>
+<tr>
+<td>Non-example: a ring with a nontrivial centre under a non-inner automorphism</td>
+<td>the automorphism fails to be inner: $\operatorname{Out}(R) \neq 1$ is possible</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="automorphisms-of-a-field-extension-the-galois-group">Automorphisms of a Field Extension: the Galois Group</h2>
+<p>For a field extension $K/F$, the <strong>Galois group</strong> $\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K)$ is the group of field automorphisms of $K$ fixing $F$. The fundamental theorem of Galois theory pairs the intermediate fields with the subgroups of the Galois group when the extension is finite and Galois, and the fixed field $K^H$ of a subgroup is the inverse pairing.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Automorphism group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K)$</td>
+<td>the $F$-automorphisms of $K$; the transformation group of the extension</td>
+<td><em>Galois Theory</em></td>
+</tr>
+<tr>
+<td>Fundamental theorem</td>
+<td>order-preserving bijection between intermediate fields and subgroups for a finite Galois extension</td>
+<td><em>Galois Theory</em></td>
+</tr>
+<tr>
+<td>Fixed field $K^H$</td>
+<td>the field fixed by a subgroup $H$, the inverse of the Galois correspondence</td>
+<td><em>Galois Theory</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(\mathbb{C}/\mathbb{R})$</td>
+<td>of order $2$, generated by complex conjugation</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)$</td>
+<td>cyclic of order $n$, generated by the Frobenius</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$</td>
+<td>isomorphic to $(\mathbb{Z}/n\mathbb{Z})^\times$</td>
+<td><em>Cyclotomic Fields</em></td>
+</tr>
+<tr>
+<td>Absolute Galois group $\operatorname{Gal}(\overline{F}/F)$</td>
+<td>the automorphism group of a separable closure, profinite</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(\overline{\mathbb{F}_p}/\mathbb{F}_p) \cong \hat{\mathbb{Z}}$</td>
+<td>the profinite completion of $\mathbb{Z}$, generated by Frobenius</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>Non-example: $\operatorname{Gal}(K/F)$ for a non-Galois extension</td>
+<td>fails to have order $[K:F]$, and the fundamental theorem fails</td>
+<td><em>Galois Theory</em></td>
+</tr>
+<tr>
+<td>Non-example: an inseparable extension</td>
+<td>fails the Galois correspondence: the separable degree replaces the degree</td>
+<td><em>Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="automorphisms-of-an-algebra-and-of-a-module">Automorphisms of an Algebra and of a Module</h2>
+<p>For an $R$-algebra $A$, the <strong>algebra automorphisms</strong> $\operatorname{Aut}_R(A)$ are the $R$-linear ring automorphisms, the inner ones are $\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$ and $\operatorname{Out}_R(A) = \operatorname{Aut}_R(A)/\operatorname{Inn}_R(A)$. For a module $M$ over a possibly noncommutative algebra $A$, the <strong>$A$-linear automorphisms</strong> $\operatorname{Aut}_A(M)$ form the unit group of the endomorphism ring $\operatorname{End}_A(M)$, and Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for a simple module $S$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Automorphism group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Aut}_R(A)$</td>
+<td>the $R$-algebra automorphisms; preserve addition and the product</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$</td>
+<td>the inner automorphisms by units, normal in $\operatorname{Aut}_R(A)$</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Out}_R(A)$</td>
+<td>the quotient, the outer automorphism group of the algebra</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Der}_R(A)$</td>
+<td>the Lie algebra of derivations, the infinitesimal automorphisms</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_A(M) = \operatorname{End}_A(M)^\times$</td>
+<td>the $A$-linear automorphisms, the units of the endomorphism ring</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(S)$</td>
+<td>a division ring for a simple module $S$, by Schur's lemma</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+<tr>
+<td>$GL_n(D)$</td>
+<td>the automorphism group of a free module of rank $n$ over a division ring $D$</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathbb{H})$</td>
+<td>every automorphism is inner; $\cong \mathbb{H}^\times/\mathbb{R}^\times$, of dimension $3$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Non-example: an $A$-linear map with zero divisors in $A$</td>
+<td>fails to have a basis-like description: $\mathbb{B}$-linear maps do not form $GL_n$ for a single $n$</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: a merely $k$-linear automorphism of an $A$-module</td>
+<td>fails to be $A$-linear: the action of $A$ is not preserved</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-transformation-group-framing">The Transformation-Group Framing</h2>
+<p>Every automorphism group is the transformation group of an object, and the size of the group is governed by the structure the transformations must preserve: the more structure, the smaller the group. This is the monotonicity that the corpus fixes in the article on transformation groups, and it is the reason the orthogonal and unitary groups are absent from the algebraic layer.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The automorphism group and what it preserves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A bare set $X$</td>
+<td>$\operatorname{Sym}(X)$, all bijections; the largest transformation group of $X$</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>A group $G$</td>
+<td>$\operatorname{Aut}(G)$, preserving the multiplication</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>A ring $R$</td>
+<td>$\operatorname{Aut}(R)$, preserving addition and multiplication</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+<tr>
+<td>A field extension $K/F$</td>
+<td>$\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K)$, preserving $F$ pointwise</td>
+<td><em>Galois Theory</em></td>
+</tr>
+<tr>
+<td>An algebra $A$</td>
+<td>$\operatorname{Aut}_R(A)$, preserving the algebra structure</td>
+<td><em>Automorphisms and Derivations of Algebras</em></td>
+</tr>
+<tr>
+<td>A module $M$</td>
+<td>$\operatorname{Aut}_A(M)$, preserving the action of $A$</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+<tr>
+<td>Warning: the orthogonal and unitary groups</td>
+<td>not automorphism groups of a bare object at the algebraic layer: they are defined by a form and a distance and belong to Part II</td>
+<td><em>Transformation Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: an automorphism of a ring expected to preserve a norm</td>
+<td>does not occur: no length, angle or norm is available at the algebraic layer</td>
+<td><em>Ring and Field Automorphisms</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the automorphism groups of the corpus. For a group they are $\operatorname{Aut}(G)$, $\operatorname{Inn}(G)$ and $\operatorname{Out}(G)$, tied by the exact sequence $1 \to \operatorname{Inn}(G) \to \operatorname{Aut}(G) \to \operatorname{Out}(G) \to 1$, with the outer group solvable for a finite simple group and of order $4$ for $A_6$. For a ring they are $\operatorname{Aut}(R)$, $\operatorname{Inn}(R)$ and $\operatorname{Out}(R)$, with the fixed subring, the Frobenius and complex conjugation as worked cases, and $\operatorname{Aut}(M_n(k))$ of order $PGL_n(k)$. For a field extension the automorphism group is the Galois group $\operatorname{Gal}(K/F)$, with the fundamental theorem, the fixed field and the cyclotomic and finite-field cases. For an algebra and a module they are $\operatorname{Aut}_R(A)$, $\operatorname{Inn}_R(A)$, $\operatorname{Out}_R(A)$, the derivations as infinitesimal automorphisms, and $\operatorname{Aut}_A(M) = \operatorname{End}_A(M)^\times$ with Schur's lemma and $GL_n(D)$. The transformation-group framing gathers them as instances of $\operatorname{Aut}(X)$ and records that the orthogonal and unitary groups, being defined by a form, belong to Part II. The non-examples — an abelian group with no inner automorphisms, a ring with a non-inner automorphism, a non-Galois or inseparable extension, an $\mathbb{B}$-linear map without a matrix description, a merely linear automorphism and an automorphism expected to preserve a norm — name the property that fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Aut}(X)$, $\operatorname{Sym}(X)$</td>
+<td>automorphism group and full symmetric group of a structure</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(G)$, $\operatorname{Inn}(G)$, $\operatorname{Out}(G)$</td>
+<td>automorphism, inner and outer groups of a group</td>
+</tr>
+<tr>
+<td>$Z(G)$, $C_G(g)$</td>
+<td>centre and centraliser</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(R)$, $\operatorname{Inn}(R)$, $\operatorname{Out}(R)$</td>
+<td>automorphism groups of a ring</td>
+</tr>
+<tr>
+<td>$R^G$</td>
+<td>fixed subring</td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K)$</td>
+<td>Galois group; $K^H$ the fixed field</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_R(A)$, $\operatorname{Inn}_R(A)$, $\operatorname{Out}_R(A)$</td>
+<td>automorphism groups of an algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}_R(A)$, $\operatorname{ad}_a$</td>
+<td>derivations and inner derivations</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_A(M)$, $\operatorname{End}_A(M)$</td>
+<td>$A$-linear automorphisms and endomorphisms</td>
+</tr>
+<tr>
+<td>$GL_n(D)$, $PGL_n(k)$</td>
+<td>general linear groups over a division ring and a field</td>
+</tr>
+<tr>
+<td>$\hat{\mathbb{Z}}$</td>
+<td>profinite completion of $\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$</td>
+<td>the reals, the complex numbers, the quaternions and the biquaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$, $\mathbb{F}_{p^n}$, $\mathbb{Q}(\zeta_n)$</td>
+<td>finite fields and a cyclotomic field</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, 4th ed. 1995), for automorphism groups, inner automorphisms and complete groups.</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009), for ring and field automorphisms, fixed subrings and the Frobenius.</li>
+<li>Emil Artin, <em>Galois Theory</em> (Dover, 1998), for the Galois group and the fundamental theorem.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the automorphisms and derivations of an algebra and the module automorphism groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

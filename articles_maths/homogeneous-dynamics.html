@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homogeneous Dynamics — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="homogeneous-dynamics"><strong>Homogeneous Dynamics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Homogeneous dynamics is the study of a flow or a group action on a quotient $G/\Gamma$ of a Lie group by a discrete subgroup. The space is at once algebraic and geometric: the group $G$ acts transitively, so the quotient is homogeneous; the discrete group $\Gamma$ makes the quotient a finite-volume manifold in the lattice case; and the action of a one-parameter subgroup draws a flow whose orbits are the projections of the one-parameter subgroups of $G$. The subject sits at the meeting point of the algebra of the group, the geometry of the quotient and the measure theory of the ergodic theorems, and its results are often the only known route to a purely number-theoretic statement.</p>
+<p>The central examples explain the subject. The geodesic flow on a hyperbolic surface is the flow of the diagonal subgroup of $SL_2(\mathbb{R})$ on $SL_2(\mathbb{R})/\Gamma$, and the horocycle flow is the flow of the upper unipotent subgroup; the modular surface, with $\Gamma = SL_2(\mathbb{Z})$, connects the dynamics to the arithmetic of quadratic forms. The rotation flow on a torus is the flow of a one-parameter subgroup of $\mathbb{R}^n$ on $\mathbb{R}^n/\mathbb{Z}^n$, and it is the abelian case of the same picture. The Heisenberg nilmanifold is the first genuinely non-abelian nilpotent example, and it exhibits the phenomenon — unipotent flows equidistribute — that organises the whole subject for nilpotent and, by Ratner's theorems, for general semisimple groups.</p>
+<p>This article develops the frame: the homogeneous space $G/\Gamma$ and its invariant measure, the geodesic and horocycle flows on a hyperbolic surface, unipotent flows and their ergodicity, the abelian and nilpotent cases, the mixing of the Weyl chamber flow, the equidistribution of horocycle orbits, and the place of Ratner's theorems. Three boundaries are held.</p>
+<ul>
+<li>The <strong>lattices</strong>, the <strong>arithmetic groups</strong> and the <strong>homogeneous spaces</strong> themselves are Part II's: the existence and covolume of a lattice, the arithmetic construction of $\Gamma$, the geometry of $G/K$, and the symmetric and locally symmetric spaces are the subject of <em>Lattices in Lie Groups</em>, <em>Arithmetic Groups</em> and <em>Homogeneous Spaces</em>, and are used here as established. This article is the <em>dynamics</em> on those spaces.</li>
+<li>The <strong>ergodic theory</strong> used is that of <em>Ergodic Theory of Group Actions</em>: ergodicity, mixing, the Koopman representation, the Følner mean ergodic theorem, the Mautner phenomenon, Moore's theorem and the Howe–Moore theorem. The present article applies them to homogeneous spaces rather than developing them.</li>
+<li>The <strong>Ratner classification</strong> of orbit closures and invariant measures is not covered here, and the quantitative equidistribution of orbits . Where a statement belongs to those articles it is stated here only as a headline and the reader is directed there. No physics is invoked.</li>
+</ul>
+<p>Throughout, $G$ is a connected Lie group with Lie algebra $\mathfrak{g}$, $K$ a maximal compact subgroup, $\Gamma$ a discrete subgroup of $G$, and $X = G/\Gamma$ the homogeneous space of left cosets with the quotient topology; $e$ is the identity, $dx$ a $G$-invariant measure when it exists, and the action is by left translation, $g \cdot x\Gamma = gx\Gamma$. A <strong>lattice</strong> is a discrete subgroup $\Gamma$ for which $G/\Gamma$ carries a finite $G$-invariant measure; $\Gamma$ is <strong>uniform</strong> or cocompact when $G/\Gamma$ is compact. The Lie functor is that of <em>The Lie Algebra and the Exponential Map</em>, and $\operatorname{Ad}$ is the adjoint representation of <em>The Lie Correspondence and the Adjoint Representation</em>.</p>
+<h2 id="homogeneous-spaces-and-lattices">Homogeneous Spaces and Lattices</h2>
+<h3 id="the-quotient-space">The Quotient Space</h3>
+<p><strong>Definition.</strong> Let $G$ be a locally compact group and $\Gamma$ a discrete subgroup. The <strong>homogeneous space</strong> $G/\Gamma$ is the set of left cosets $\{g\Gamma\}$ with the quotient topology; $G$ acts on it by left translation, $g \cdot x\Gamma = gx\Gamma$.</p>
+<p>The action is transitive, which is the sense in which the space is homogeneous, and the stabiliser of the coset $g\Gamma$ is the conjugate $g\Gamma g^{-1}$. When $G$ is a Lie group and $\Gamma$ is discrete, $G/\Gamma$ is a smooth manifold of dimension $\dim G$ with a smooth free action of $G$, and every orbit is dense in a component of the quotient by the closure of $\Gamma$.</p>
+<p><strong>Theorem (invariant measure).</strong> Let $G$ be unimodular — for instance a connected nilpotent or semisimple Lie group — with Haar measure $dg$, and let $\Gamma$ be a lattice. Then there is a unique (up to scale) $G$-invariant Radon measure $\mu$ on $G/\Gamma$, obtained by integrating over a fundamental domain: $\int_{G/\Gamma} f \, d\mu = \int_{G} \tilde f(g)\, dg$ for a $\Gamma$-invariant lift $\tilde f$ of $f$.</p>
+<p><em>Proof.</em> The function $g \mapsto \sum_{\gamma \in \Gamma}\tilde f(g\gamma)$ is left $\Gamma$-invariant and converges for $\tilde f$ of compact support because $\Gamma$ is discrete; the invariance of $dg$ under left translations gives the left invariance of the resulting functional, and the uniqueness of the Haar measure gives its uniqueness. The finiteness $\mu(G/\Gamma) = \operatorname{vol}(G/\Gamma) < \infty$ is the definition of a lattice. $\square$</p>
+<p>The <strong>covolume</strong> $\operatorname{vol}(G/\Gamma)$ is the common value; for a cocompact lattice the quotient is compact and the volume finite, and for an arithmetic lattice the volume can be computed by the formula of Weil. The existence of lattices is a theorem of Borel for semisimple groups: every connected semisimple Lie group without compact factors contains both uniform and non-uniform lattices.</p>
+<h3 id="the-standard-examples">The Standard Examples</h3>
+<p><strong>Example ($\mathbb{R}^n/\mathbb{Z}^n$).</strong> For $G = \mathbb{R}^n$ and $\Gamma = \mathbb{Z}^n$ the homogeneous space is the $n$-torus $T^n$, a compact homogeneous space of volume $1$. The flow of a one-parameter subgroup is the translation flow $x \mapsto x + t\alpha$ for a fixed vector $\alpha$, and the line generated by $\alpha$ is dense exactly when $1, \alpha_1, \dots, \alpha_n$ are rationally independent; this is the abelian case of the whole theory, and it is where the equidistribution results beg.</p>
+<p><strong>Example (the modular surface).</strong> For $G = SL_2(\mathbb{R})$ and $\Gamma = SL_2(\mathbb{Z})$ the quotient $G/\Gamma$ is not compact but has finite volume: it is the unit tangent bundle of the modular surface $SL_2(\mathbb{Z})\backslash\mathbb{H}$, where $\mathbb{H}$ is the upper half-plane. The modular surface is a hyperbolic surface of finite area, with one cusp and two singular points of orders $2$ and $3$, corresponding to the elliptic elements of $\Gamma$.</p>
+<p><strong>Example (higher-rank).</strong> For $G = SL_n(\mathbb{R})$ and $\Gamma = SL_n(\mathbb{Z})$ the quotient $SL_n(\mathbb{R})/SL_n(\mathbb{Z})$ is non-compact of finite volume for $n \geq 2$, and it carries the dynamics of the Weyl chamber flow, the higher-dimensional analogue of the geodesic flow. Its diagonal subgroup has rank $n-1$, so the flow is a $\mathbb{Z}^{n-1}$- or $\mathbb{R}^{n-1}$-action rather than a single flow, and the ergodic theory of <em>Ergodic Theory of Group Actions</em> applies to this action rather than to a one-parameter group.</p>
+<p><strong>Example (compact quotients of hyperbolic space).</strong> If $\Gamma \le SL_2(\mathbb{R})$ is a cocompact torsion-free lattice, then $\Gamma\backslash\mathbb{H}$ is a compact hyperbolic surface and $G/\Gamma$ is its unit tangent bundle; the dynamics of $G$ on $G/\Gamma$ is then the geodesic flow on a compact surface, without the cusps of the modular case.</p>
+<h2 id="the-geodesic-and-horocycle-flows">The Geodesic and Horocycle Flows</h2>
+<h3 id="the-upper-half-plane">The Upper Half-Plane</h3>
+<p>The model space is $\mathbb{H} = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$ with the hyperbolic metric $ds^2 = (dx^2 + dy^2)/y^2$ of constant curvature $-1$. The group $PSL_2(\mathbb{R})$ acts on $\mathbb{H}$ by</p>
+<p>$$
+\begin{pmatrix} a & b \\ c & d \end{pmatrix} \cdot z = \frac{az+b}{cz+d},
+$$</p>
+<p>transitively and by isometries, and the map $g \mapsto g \cdot i$ identifies $\mathbb{H}$ with $PSL_2(\mathbb{R})/PSO(2)$. The unit tangent bundle is then $PSL_2(\mathbb{R})/PSO(2)$ itself, and a lattice $\Gamma \le PSL_2(\mathbb{R})$ acts on the left, so the unit tangent bundle of $\Gamma\backslash\mathbb{H}$ is the homogeneous space $\Gamma\backslash PSL_2(\mathbb{R})$.</p>
+<h3 id="the-two-flows">The Two Flows</h3>
+<p><strong>Definition.</strong> In $G = PSL_2(\mathbb{R})$ the <strong>diagonal (geodesic) subgroup</strong> and the <strong>horocycle subgroup</strong> are</p>
+<p>$$
+A = \left\{ a_s = \begin{pmatrix} e^{s/2} & 0 \\ 0 & e^{-s/2} \end{pmatrix} : s \in \mathbb{R} \right\}, \qquad
+U = \left\{ u_t = \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix} : t \in \mathbb{R} \right\}.
+$$</p>
+<p>The <strong>geodesic flow</strong> on $G/\Gamma$ is the action of $A$, and the <strong>horocycle flow</strong> is the action of $U$. The two are linked by the commutation relation</p>
+<p>$$
+a_s u_t a_s^{-1} = \begin{pmatrix} 1 & e^{s}t \\ 0 & 1 \end{pmatrix} = u_{e^{s}t},
+$$</p>
+<p>which is the contraction relation of the Mautner phenomenon.</p>
+<p>Geometrically, the $A$-orbit of a unit tangent vector is the geodesic through its base point in the direction of the vector, and the $U$-orbit is the horocycle through that point, the orbit of the parabolic one-parameter group corresponding to the limit point of the geodesic.</p>
+<p><strong>Theorem (ergodicity of the geodesic flow).</strong> Let $\Gamma \le PSL_2(\mathbb{R})$ be a lattice. The geodesic flow on $G/\Gamma$ is ergodic with respect to the invariant measure, and it is mixing.</p>
+<p><em>Proof.</em> The horocycle flow is ergodic: its orbits are the leaves of the stable foliation, and a $U$-invariant function is constant by the classification of the ergodic measures of the horocycle flow together with the density of the horocycle orbit in the non-compact case. By the commutation relation above, $A$ contracts $U$, so the Mautner phenomenon of <em>Ergodic Theory of Group Actions</em> shows that every $A$-invariant function is $U$-invariant, hence constant. Ergodicity follows. Mixing is the Howe–Moore theorem applied to the Koopman representation on the mean-zero part, which has no invariant vectors by ergodicity. $\square$</p>
+<p><strong>Remark (the cusp).</strong> For a non-uniform lattice the quotient is not compact, and the geodesic flow is not uniformly continuous in the sense of the flow being bounded away from the cusp; the ergodicity statement is the same, but the proof must control the visits of the orbit to the cusp. The horocycle flow, by contrast, is <strong>minimal</strong> — every orbit is dense — and <strong>uniquely ergodic</strong>, a theorem of Furstenberg; the geodesic flow is not minimal, and its orbit closures are the geodesics, which are either closed or dense.</p>
+<h2 id="unipotent-flows">Unipotent Flows</h2>
+<h3 id="unipotent-one-parameter-subgroups">Unipotent One-Parameter Subgroups</h3>
+<p><strong>Definition.</strong> An element $g$ of a Lie group $G$ is <strong>unipotent</strong> if $\operatorname{Ad}(g)$ is a unipotent linear transformation — that is, $\operatorname{Ad}(g) - I$ is nilpotent — and a one-parameter subgroup $\{u_t\}$ is <strong>unipotent</strong> if each $u_t$ is unipotent and the map $t \mapsto \operatorname{Ad}(u_t) - I$ is polynomial in $t$ of bounded degree. An element is <strong>semisimple</strong> if $\operatorname{Ad}(g)$ is diagonalisable over $\mathbb{C}$.</p>
+<p>The Jordan decomposition of $\operatorname{Ad}(g)$ writes every element as the product of a commuting semisimple and unipotent part, so every element of a Lie group has a unipotent part; the flow generated by a unipotent element is the simplest kind of flow after the semisimple ones, and it is the one for which the rigidity theorems hold.</p>
+<p><strong>Example.</strong> The horocycle subgroup $U \le SL_2(\mathbb{R})$ is unipotent: $\operatorname{Ad}(u_t) - I$ is nilpotent with square zero. The subgroup generated by $u_t$ and its transpose $u_t^-$ is the whole of $SL_2(\mathbb{R})$, and the commutator $[u_t, u_s^-]$ is a diagonal element, which is the algebraic reason the two horocycle directions generate the geodesic direction.</p>
+<p><strong>Example (the Heisenberg group).</strong> Let $N$ be the group of upper unitriangular $3\times3$ real matrices, with the coordinates</p>
+<p>$$
+(x, y, z) = \begin{pmatrix} 1 & x & z \\ 0 & 1 & y \\ 0 & 0 & 1 \end{pmatrix}, \qquad (x,y,z)(x',y',z') = (x+x', y+y', z+z'+xy').
+$$</p>
+<p>Its Lie algebra is generated by $X, Y, Z$ with $[X,Y] = Z$ and $Z$ central. Every one-parameter subgroup other than the centre direction is unipotent, and the centre direction is semisimple but acts trivially on the quotient by the lattice.</p>
+<h3 id="ergodicity-of-unipotent-flows">Ergodicity of Unipotent Flows</h3>
+<p><strong>Theorem (Dani).</strong> Let $G$ be a connected semisimple Lie group and $\Gamma$ a lattice. Let $\{u_t\}$ be a unipotent one-parameter subgroup of $G$ generated by an element of a simple factor. Then the flow $u_t$ on $G/\Gamma$ is ergodic with respect to the invariant measure if and only if no element of $g\Gamma g^{-1}$ lies in a proper parabolic subgroup of $G$ containing $u_t$; in particular, the flow is ergodic for a.e. $g$ and, for $G$ simple of rank one, it is ergodic for every $g$.</p>
+<p>Dani's theorem is the unipotent counterpart of Moore's theorem; it says that the unipotent flow cannot be trapped by an algebraic subgroup unless the orbit is confined to a smaller homogeneous subspace, and it is the local form of Ratner's classification. For $G = SL_2(\mathbb{R})$ it reduces to the ergodicity of the horocycle flow, which is Furstenberg's theorem, and for nilpotent groups the corresponding statement is unconditional.</p>
+<p><strong>Theorem (ergodicity on nilmanifolds).</strong> Let $N$ be a connected simply connected nilpotent Lie group with a lattice $\Gamma$, and let $\{u_t\}$ be a one-parameter subgroup. Then the flow on $N/\Gamma$ is ergodic if and only if the image of the generator in the abelianisation $\mathfrak{n}/[\mathfrak{n},\mathfrak{n}]$ lies outside the union of the rational hyperplanes of the lattice $\Gamma$, and the flow is then uniquely ergodic with respect to the Haar measure.</p>
+<p>The nilpotent case is the model: the flow is a translation on a nilmanifold, and the criterion is exactly the rational-independence criterion of the torus, transported to the abelianisation. The higher commutators supply the corrections that make the flow non-abelian but do not change the ergodicity criterion.</p>
+<h2 id="nilmanifolds-and-the-abelian-case">Nilmanifolds and the Abelian Case</h2>
+<h3 id="the-torus">The Torus</h3>
+<p>The simplest homogeneous flow is the translation flow on $T^n = \mathbb{R}^n/\mathbb{Z}^n$ generated by $\alpha \in \mathbb{R}^n$. Its orbits are the images of the lines $t \mapsto t\alpha$; the orbit is dense precisely when the coordinates $1, \alpha_1, \dots, \alpha_n$ are rationally independent, and then the flow is uniquely ergodic with respect to Lebesgue measure. Every higher-dimensional nilmanifold is a successive $\mathbb{R}$-bundle over a torus, and this abelian base accounts for the rational-independence part of the ergodicity criterion.</p>
+<h3 id="the-heisenberg-nilmanifold">The Heisenberg Nilmanifold</h3>
+<p><strong>Example.</strong> Let $N$ be the Heisenberg group and $\Gamma = N(\mathbb{Z})$ the integer points. The quotient $N/\Gamma$ is a compact three-manifold, a circle bundle over $T^2$; the projection to the abelianisation is $(x,y,z)\Gamma \mapsto (x,y) + \mathbb{Z}^2$. The centre direction $z$ is a circle, and the flow generated by $Z$ is periodic: its orbits are the fibres. The flow generated by $X$ alone, $\{u_t\}$ with $u_t(x,y,z) = (x+t, y, z + ty)$, is unipotent; its orbits are the lifts of lines of slope $0$ in the base, and they are dense in the nilmanifold, the flow being uniquely ergodic. The flow generated by $X + \lambda Y$ has orbits that are the lifts of lines of slope $\lambda$ and is ergodic for every $\lambda$, exactly as the abelian criterion along the base predicts.</p>
+<p>The nilmanifold case is the natural testing ground for the general statements. The following is the clean form of the classification for unipotent flows on nilmanifolds, and it is a theorem of Leon Green, Parry and Auslander.</p>
+<p><strong>Theorem (Green, Parry, Auslander).</strong> Let $N$ be a connected simply connected nilpotent Lie group, $\Gamma$ a lattice, and $H$ a connected closed subgroup of $N$ acting on $N/\Gamma$ by left translation. Then the orbit closure $\overline{Hx}$ is a finite union of $H$-orbits, each of which is the orbit of $x$ under a closed subgroup $L$ with $L \supseteq H$ and $L \cap x\Gamma x^{-1}$ cocompact in $L$; consequently the action of $H$ on $N/\Gamma$ is uniquely ergodic if and only if it is minimal.</p>
+<p>The theorem is the nilpotent case of Ratner's topological classification, and its proof by the "one-dimensional" reduction via the lower central series is the model for the general proof.</p>
+<h2 id="ergodicity-and-mixing-of-higher-rank-actions">Ergodicity and Mixing of Higher-Rank Actions</h2>
+<h3 id="weyl-chamber-flows">Weyl Chamber Flows</h3>
+<p>For a semisimple group $G$ of real rank at least two the diagonal subgroup $A$ is no longer one-dimensional; it is a product $A \cong \mathbb{R}^r$, and the action of $A$ on $G/\Gamma$ is the <strong>Weyl chamber flow</strong>, with $r$ independent directions. The ergodic theory of the flow is the ergodic theory of a $\mathbb{Z}^r$- or $\mathbb{R}^r$-action, and it is genuinely different from the rank-one case: the action can be ergodic without any single direction being ergodic, and the mixing properties are governed by the geometry of the chamber.</p>
+<p><strong>Theorem (ergodicity of the Weyl chamber flow).</strong> Let $G$ be a connected semisimple Lie group with finite centre and no compact factors, and let $\Gamma$ be an irreducible lattice. Then the action of $A$ on $G/\Gamma$ is ergodic, and it is mixing.</p>
+<p><em>Proof.</em> Ergodicity is Moore's theorem applied to the factors: an $A$-invariant function that is not constant would define a nonzero invariant vector in a representation of a simple factor, contradicting the irreducibility of the lattice. Mixing is the Howe–Moore theorem, whose decay statement holds for the whole group $G$ and hence for $A$; the mean-zero part of $L^2$ has no invariant vectors by ergodicity. $\square$</p>
+<p><strong>Example (the modular surface revisited by a higher-rank action).</strong> For $G = SL_n(\mathbb{R})$, $n \geq 3$, and $\Gamma = SL_n(\mathbb{Z})$ the diagonal subgroup has rank $n-1$, and the Weyl chamber flow mixes. A single diagonal one-parameter subgroup is the horospherical flow of a rank-one subgroup, and its ergodicity follows from the Mautner phenomenon applied to the unipotent subgroup contracted by it; the passage from rank one to higher rank is exactly the passage from a single geodesic to the whole chamber, and it is what makes the higher-rank dynamics rigid.</p>
+<h3 id="rigidity">Rigidity</h3>
+<p><strong>Theorem (Mostow rigidity, dynamical form).</strong> Let $G$ and $G'$ be connected semisimple Lie groups with no compact factors, trivial centre and real rank at least $2$, and let $\Gamma \le G$, $\Gamma' \le G'$ be irreducible lattices. Then any isomorphism of the measure spaces $G/\Gamma$ and $G'/\Gamma'$ that conjugates the $G$-action to the $G'$-action is, up to a normalising factor, the restriction of an isomorphism of Lie groups; there is no measurable deformation of an irreducible lattice in higher rank.</p>
+<p>The dynamical reading is that in higher rank the action of $G$ on $G/\Gamma$ determines $G$ and $\Gamma$ up to finitely many possibilities, so the flow is rigid, in contrast with the rank-one case where the Teichmüller space of a surface supplies a continuum of non-isomorphic lattices. The rigidity is proved by the theory of the Weyl chamber flow, and it is the reason the higher-rank theory has a different flavour: there are no continuous deformations to average over.</p>
+<h2 id="equidistribution-of-orbits">Equidistribution of Orbits</h2>
+<h3 id="horocycle-orbits">Horocycle Orbits</h3>
+<p><strong>Theorem (Furstenberg).</strong> Let $\Gamma \le SL_2(\mathbb{R})$ be a lattice and let $x \in G/\Gamma$. Then the horocycle orbit $\{u_t x : t \in \mathbb{R}\}$ is equidistributed in $G/\Gamma$ with respect to the invariant measure:</p>
+<p>$$
+\frac{1}{T}\int_0^T f(u_t x)\, dt \longrightarrow \int_{G/\Gamma} f \, d\mu \qquad \text{as } T \to \infty,
+$$</p>
+<p>for every $f \in C_c(G/\Gamma)$. In particular the horocycle flow is uniquely ergodic.</p>
+<p>The theorem is the prototype of all equidistribution results of the subject, and it is the statement that the time average along every horocycle equals the space average; it holds for every point $x$, not merely almost every one, which is the sense of unique ergodicity. The proof uses the commutation relation $a_s u_t a_s^{-1} = u_{e^s t}$ to rescale the horocycle, together with the ergodicity of the geodesic flow; the two flows are two sides of the same ergodic theorem.</p>
+<p><strong>Corollary (equidistribution of horocycles over closed geodesics).</strong> If $x$ is a point whose geodesic returns to a neighbourhood of itself — a periodic point of the geodesic flow — then the horocycle through $x$ equidistributes, and the equidistribution is uniform over the set of points with the same period.</p>
+<p>This last statement is the geometric form of Duke's theorem on the equidistribution of Heegner points and of the equidistribution of closed horocycles; the arithmetic content is that the quadratic irrationals are equidistributed in the modular surface ordered by discriminant, and the dynamical content is the unique ergodicity of the horocycle flow. The general quantitative statement lies outside this article.</p>
+<h3 id="from-nilmanifolds-to-semisimple-groups">From Nilmanifolds to Semisimple Groups</h3>
+<p><strong>Example (equidistribution of polynomial sequences).</strong> On the torus $T^n$ the equidistribution of the sequence $\{n\alpha\}$ is Weyl's theorem, and its generalisation to polynomial sequences, $n \mapsto p(n)\alpha$ with $p$ a polynomial, is the theorem of Weyl and of Green: the sequence is equidistributed unless the polynomial takes values in a coset of a proper closed subgroup. This is the abelian model of the general equidistribution theorem for unipotent flows.</p>
+<p><strong>Example (equidistribution of translates).</strong> Let $H \le G$ be a connected subgroup generated by unipotent elements, and let $x \in G/\Gamma$. Then the closure of the orbit $Hx$ is a homogeneous subspace $Lx$ with $L \supseteq H$, and the orbit is equidistributed in $Lx$ with respect to the invariant measure of $Lx$ after normalisation. This single statement contains most of the classical equidistribution theorems as special cases, and it is Ratner's equidistribution theorem; it is not covered here, together with the measure classification that proves it.</p>
+<h2 id="summary">Summary</h2>
+<p>A homogeneous space $G/\Gamma$ is the quotient of a Lie group by a discrete subgroup, acted on by left translations; when $\Gamma$ is a lattice, $G/\Gamma$ carries a finite invariant measure, unique up to scale, and a fundamental domain computes it. The standard examples are the torus $\mathbb{R}^n/\mathbb{Z}^n$, the unit tangent bundle of a hyperbolic surface, the modular surface $SL_2(\mathbb{Z})\backslash\mathbb{H}$, the higher-rank quotients $SL_n(\mathbb{Z})\backslash SL_n(\mathbb{R})$, and the nilmanifolds $N/\Gamma$ of nilpotent groups.</p>
+<p>On $G/\Gamma$ for $G = SL_2(\mathbb{R})$ the geodesic flow is the action of the diagonal subgroup $A$ and the horocycle flow the action of the upper unipotent subgroup $U$, and the commutation relation $a_su_ta_s^{-1}=u_{e^st}$ exposes the contraction that the Mautner phenomenon needs: the geodesic flow is ergodic because the horocycle flow is, and it is mixing by Howe–Moore. Unipotent flows on semisimple quotients are ergodic by Dani's theorem, and on nilmanifolds by the rational-independence criterion in the abelianisation; the orbit closures on a nilmanifold are finite unions of orbits of larger subgroups, the theorem of Green, Parry and Auslander.</p>
+<p>In higher rank the diagonal subgroup is a chamber $\mathbb{R}^r$, the Weyl chamber flow is ergodic and mixing by Moore and Howe–Moore, and the dynamics is rigid: Mostow rigidity says that an isomorphism of the flows is algebraic, so there is no measurable deformation of an irreducible lattice in rank at least two. The equidistribution of horocycles is Furstenberg's theorem, holding for every orbit, and it is the prototype of the general equidistribution of unipotent orbits that is the subject of Ratner's theorems . The nilpotent case is the model throughout: the abelian base supplies the rational-independence criterion, the commutators supply the corrections, and the flow is uniquely ergodic exactly when it is minimal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$, $\mathfrak{g}$, $\Gamma$</td>
+<td>Connected Lie group, its Lie algebra, a discrete subgroup</td>
+</tr>
+<tr>
+<td>$X = G/\Gamma$</td>
+<td>Homogeneous space of left cosets, with the quotient topology</td>
+</tr>
+<tr>
+<td>lattice, uniform</td>
+<td>discrete $\Gamma$ with $G/\Gamma$ of finite invariant volume; cocompact case</td>
+</tr>
+<tr>
+<td>$\mu$, $\operatorname{vol}(G/\Gamma)$</td>
+<td>$G$-invariant measure and covolume</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Maximal compact subgroup; $G/K$ the symmetric space</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $PSL_2(\mathbb{R})$</td>
+<td>Upper half-plane and its isometry group</td>
+</tr>
+<tr>
+<td>$A$, $a_s$</td>
+<td>Diagonal (geodesic) subgroup, $\operatorname{diag}(e^{s/2},e^{-s/2})$</td>
+</tr>
+<tr>
+<td>$U$, $u_t$</td>
+<td>Upper unipotent (horocycle) subgroup, $\begin{pmatrix}1&t\\0&1\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$a_su_ta_s^{-1}=u_{e^st}$</td>
+<td>Commutation relation; the contraction of the Mautner phenomenon</td>
+</tr>
+<tr>
+<td>unipotent</td>
+<td>$\operatorname{Ad}(g)-I$ nilpotent; one-parameter flow with polynomial $\operatorname{Ad}(u_t)-I$</td>
+</tr>
+<tr>
+<td>semisimple</td>
+<td>$\operatorname{Ad}(g)$ diagonalisable over $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$N$, $\mathfrak{n}$, $[\mathfrak{n},\mathfrak{n}]$</td>
+<td>Nilpotent group, its Lie algebra, the abelianisation</td>
+</tr>
+<tr>
+<td>Heisenberg group</td>
+<td>Upper unitriangular $3\times3$ matrices, $[X,Y]=Z$ central</td>
+</tr>
+<tr>
+<td>Weyl chamber flow</td>
+<td>Action of the diagonal subgroup $A\cong\mathbb{R}^r$ in real rank $r$</td>
+</tr>
+<tr>
+<td>Furstenberg</td>
+<td>horocycle orbits are equidistributed for every point; the flow is uniquely ergodic</td>
+</tr>
+<tr>
+<td>Dani</td>
+<td>ergodicity criterion for unipotent flows on semisimple quotients</td>
+</tr>
+<tr>
+<td>Green–Parry–Auslander</td>
+<td>orbit closures on a nilmanifold are finite unions of orbits of larger subgroups</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Morris W. Hirsch, <em>Differential Topology</em> (Springer, 1976), and Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the geometry of homogeneous spaces and symmetric spaces.</li>
+<li>Gustav A. Hedlund, "The dynamics of geodesic flows", <em>Bulletin of the American Mathematical Society</em> 45 (1939), 241–260, for the geodesic and horocycle flows on surfaces.</li>
+<li>Harry Furstenberg, "The unique ergodicity of the horocycle flow", in <em>Recent Advances in Topological Dynamics</em> (Springer Lecture Notes 318, 1973), for the equidistribution of horocycles.</li>
+<li>Armand Borel, <em>Introduction aux groupes arithmétiques</em> (Hermann, 1969), for lattices, arithmetic groups and the finiteness of covolume.</li>
+<li>Gopal Prasad and M. S. Raghunathan, "Cartan subgroups and lattices in semi-simple groups", <em>Annals of Mathematics</em> 96 (1972), 296–317, for the structure of lattices and their relation to unipotent flows.</li>
+<li>S. G. Dani, "Invariant measures and minimal sets of horospherical flows", <em>Inventiones Mathematicae</em> 64 (1981), 357–385, for the ergodicity criterion for unipotent flows.</li>
+<li>Leon Green, "Spectra of nilflows", <em>Bulletin of the American Mathematical Society</em> 67 (1961), 414–415, and William Parry, "Ergodic properties of affine transformations and flows on nilmanifolds", <em>American Journal of Mathematics</em> 91 (1969), 757–771, for the nilmanifold classification.</li>
+<li>G. D. Mostow, <em>Strong Rigidity of Locally Symmetric Spaces</em> (Princeton University Press, 1973), and Marina Ratner, "Rigidity of horocycle flows", <em>Annals of Mathematics</em> 115 (1982), 597–614, for the rigidity of higher-rank dynamics.</li>
+<li>Manfred Einsiedler and Thomas Ward, <em>Ergodic Theory with a View towards Number Theory</em> (Springer, 2011), for the modern unified treatment of homogeneous dynamics and its arithmetic applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

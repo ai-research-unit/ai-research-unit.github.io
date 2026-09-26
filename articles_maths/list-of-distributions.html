@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Distributions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-distributions"><strong>List of Distributions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the distributions and the generalised functions the corpus introduces. A distribution is a continuous linear functional on a space of test functions, so that the objects of the calculus — differentiation, multiplication, convolution, Fourier transformation — are defined by duality, and a row below names one distribution, records the operations it supports and the sense in which it is a generalised function, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The objects are grouped by the layer that introduces them: the distribution spaces and their duality, the distinguished distributions — the delta, the Heaviside function, the principal value and the finite part — the operations and their limits, the fundamental solutions and kernels, and the distributions of the $p$-adic, complex and hypercomplex grounds. The rows that record an operation which is not defined — the product of two distributions, the restriction without a transversality hypothesis, the Fourier transform of an untempered distribution — stand beside the distributions as non-examples.</p>
+<h2 id="the-distribution-spaces">The Distribution Spaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it is dual to, and what that buys</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a distribution $u \in \mathcal D'(\Omega)$</td>
+<td>the test functions $\mathcal D(\Omega) = C_c^\infty(\Omega)$ under the LF topology; all derivatives and all multiplications by smooth functions are defined</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>a distribution of finite order</td>
+<td>the dual of $C^k_c$ for some $k$; the smallest $k$ is the order</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>a compactly supported distribution $u \in \mathcal E'(\Omega)$</td>
+<td>the dual of $C^\infty(\Omega)$; convolution with every distribution is defined</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>a tempered distribution $u \in \mathcal S'(\mathbb R^n)$</td>
+<td>the Schwartz class $\mathcal S(\mathbb R^n)$; the Fourier transform is defined</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>a distribution of function type</td>
+<td>a locally integrable function $f$, acting by $\varphi \mapsto \int f\varphi$; the embedding of $L^1_{loc}$ into $\mathcal D'$</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>a measure as a distribution</td>
+<td>a Radon measure, acting by $\varphi \mapsto \int\varphi\,d\mu$; the continuous dual of $C_0$ is a subspace of $\mathcal D'$</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>a positive distribution</td>
+<td>the distribution associated to the measure it defines by the Riesz representation theorem</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the Schwartz kernel $K \in \mathcal D'(Y \times X)$</td>
+<td>the distribution representing a continuous operator $T : \mathcal D(X) \to \mathcal D'(Y)$; unique</td>
+<td><em>The Schwartz Kernel Theorem</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-distinguished-distributions">The Distinguished Distributions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its definition, and the operations it supports</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the delta distribution $\delta$</td>
+<td>$\langle\delta,\varphi\rangle = \varphi(0)$; differentiable, the convolution identity, Fourier transform $1$</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the translated delta $\delta_a$</td>
+<td>$\langle\delta_a,\varphi\rangle = \varphi(a)$; the derivative of the Heaviside step at $a$</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the derivatives $\partial^\alpha\delta$</td>
+<td>$\langle\partial^\alpha\delta,\varphi\rangle = (-1)^{|\alpha|}\partial^\alpha\varphi(0)$; the only distributions supported at a point are their finite combinations</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the Heaviside function $H$</td>
+<td>$H(x) = \mathbf 1_{x>0}$ as a distribution; its derivative is $\delta$</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the principal value $\mathrm{pv}\,\frac1x$</td>
+<td>$\langle \mathrm{pv}\,\frac1x,\varphi\rangle = \lim_{\epsilon\to0}\int_{\lvert x\rvert>\epsilon}\frac{\varphi(x)}{x}dx$; the distributional derivative of $\log\lvert x\rvert$, with Fourier transform $-\pi i\,\mathrm{sgn}$</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>the finite part $\mathrm{pf}\,\frac1{x^2}$</td>
+<td>the Hadamard regularisation of the divergent integral; it supports a derivative and a convolution with the Hilbert kernel</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the delta distribution of a hypercomplex system</td>
+<td>the identity of the convolution algebra of the split-complex, dual-number, quaternion or biquaternion plane</td>
+<td><em>Split-Complex Harmonic Analysis</em>; <em>Dual-Numbers Harmonic Analysis</em>; <em>Quaternion Harmonic Analysis</em>; <em>Biquaternion Integration</em></td>
+</tr>
+<tr>
+<td>the delta distribution on a locally compact group</td>
+<td>the identity $\delta_e$ of the convolution algebra of measures, together with the Haar measure</td>
+<td><em>Harmonic Analysis on Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="operations-and-their-limits">Operations and Their Limits</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The operation it supports, and the limit of that operation</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>differentiation of a distribution</td>
+<td>$\langle u',\varphi\rangle = -\langle u,\varphi'\rangle$; defined for every distribution and of no higher order than the distribution</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>multiplication by a smooth function</td>
+<td>$\langle au,\varphi\rangle = \langle u,a\varphi\rangle$; defined for $a \in C^\infty$</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the product of two distributions</td>
+<td>defined only when their wave front sets do not meet in a forbidden way; $\delta\cdot\delta$ and $\delta\cdot\mathrm{pv}\frac1x$ are not defined</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Microlocal Analysis</em></td>
+</tr>
+<tr>
+<td>convolution with a test function</td>
+<td>$u * \varphi$ is a smooth function, a mollification and approximation of $u$</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>convolution of two distributions</td>
+<td>defined when one has compact support; it is commutative only under that hypothesis</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the Fourier transform of a tempered distribution</td>
+<td>$\langle\hat u,\varphi\rangle = \langle u,\hat\varphi\rangle$; exchanges differentiation and multiplication</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>restriction and pullback</td>
+<td>defined under a transversality condition on the wave front set; the trace on a boundary needs it</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Microlocal Analysis</em></td>
+</tr>
+<tr>
+<td>the wave front set $\operatorname{WF}(u)$</td>
+<td>the refined singular support: the directions in which $u$ fails to be smooth; the product and the pullback are governed by it</td>
+<td><em>Microlocal Analysis</em></td>
+</tr>
+<tr>
+<td>the order and the singular support</td>
+<td>the structure theorem: a distribution of finite order is a sum of derivatives of measures</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="fundamental-solutions-parametrices-and-kernels">Fundamental Solutions, Parametrices and Kernels</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it is, and the operations it supports</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a fundamental solution $E$ of $P$</td>
+<td>$P E = \delta$; it solves $Pu = f$ by $u = E * f$ when the convolution is defined</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the fundamental solution of the Laplacian</td>
+<td>the Newtonian potential, $E = \lvert x\rvert^{2-n}/((2-n)\omega_n)$, for $n \geq 3$</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Potential Theory</em></td>
+</tr>
+<tr>
+<td>the fundamental solution of the heat operator</td>
+<td>the Gaussian kernel, giving the heat semigroup and the solution of the initial-value problem</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Semigroups and Evolution Equations</em></td>
+</tr>
+<tr>
+<td>the fundamental solution of the Cauchy–Riemann and Dirac operators</td>
+<td>the Cauchy kernel $1/(\pi z)$ and the Clifford kernel $\bar x/\lvert x\rvert^{n+1}$</td>
+<td><em>Regularity and the Cauchy–Riemann Operator</em>; <em>Dirac Operators</em></td>
+</tr>
+<tr>
+<td>a parametrix of an elliptic operator</td>
+<td>a distribution $E$ with $PE = \delta + R$ for a smoothing remainder $R$; it gives elliptic regularity</td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Pseudodifferential Operators</em></td>
+</tr>
+<tr>
+<td>the Green function</td>
+<td>the fundamental solution of a boundary-value problem, carrying the boundary conditions</td>
+<td><em>Partial Differential Equations</em>; <em>Potential Theory</em></td>
+</tr>
+<tr>
+<td>the smooth kernel</td>
+<td>a kernel $K \in C^\infty(Y\times X)$; it defines a smoothing operator, and this is the converse direction of elliptic regularity</td>
+<td><em>The Schwartz Kernel Theorem</em></td>
+</tr>
+<tr>
+<td>the kernel of a pseudodifferential operator</td>
+<td>a distribution on the diagonal whose singularities are encoded by the symbol</td>
+<td><em>The Schwartz Kernel Theorem</em>; <em>Pseudodifferential Operators</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distributions-on-other-grounds">Distributions on Other Grounds</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its definition, and the operations it supports</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a $p$-adic distribution</td>
+<td>a continuous linear functional on $C(\mathbb Z_p,\mathbb Q_p)$; the Amice transform identifies it with a power series of bounded coefficients</td>
+<td><em>p-adic Integration</em></td>
+</tr>
+<tr>
+<td>a $p$-adic measure</td>
+<td>a $p$-adic distribution of norm at most $1$; identified with $\mathbb Z_p[[T]]$, the Iwasawa algebra</td>
+<td><em>p-adic Integration</em></td>
+</tr>
+<tr>
+<td>the Bernoulli distribution</td>
+<td>a $p$-adic distribution that is not a measure; its integral against a power of $x$ gives the Kubota–Leopoldt $p$-adic $L$-function</td>
+<td><em>p-adic Integration</em></td>
+</tr>
+<tr>
+<td>the distributional boundary value of a holomorphic function</td>
+<td>the limit of $f(x+iy)$ as $y \to 0$; the Sokhotski–Plemelj formula for the jump</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the delta distribution on the dual numbers and the split complex plane</td>
+<td>the identity for the convolution of the hypercomplex system</td>
+<td><em>Dual-Numbers Harmonic Analysis</em>; <em>Split-Complex Harmonic Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="operations-that-are-not-defined">Operations That Are Not Defined</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the product $\delta\cdot\delta$ and $\delta\cdot\mathrm{pv}\frac1x$</td>
+<td>no associative multiplication of distributions extends the product of functions; the wave front sets meet in a forbidden way</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>"the delta function" as a function</td>
+<td>there is no function $\delta$ with the defining property; the object exists only as a functional</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the derivative of a distribution times itself</td>
+<td>not defined without a Hörmander product condition</td>
+<td><em>Microlocal Analysis</em></td>
+</tr>
+<tr>
+<td>the restriction of a distribution to a hypersurface</td>
+<td>not defined without the transversality of the wave front set with the conormal</td>
+<td><em>Microlocal Analysis</em></td>
+</tr>
+<tr>
+<td>the Fourier transform of an arbitrary distribution</td>
+<td>not defined: only the tempered distributions carry it, and the general distribution has no decay</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the convolution of two distributions without compact support</td>
+<td>not defined in general; the supports must be compatible</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the integral of a distribution over an unbounded set</td>
+<td>not defined: only the pairing with a test function is</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the distributions of the corpus: the spaces $\mathcal D'$, $\mathcal E'$ and $\mathcal S'$ and the function-type, measure and positive distributions; the delta and its derivatives, the Heaviside function, the principal value and the finite part; the operations of differentiation, multiplication, convolution, Fourier transformation and restriction, with the limits each meets; the fundamental solutions, parametrices, Green functions and Schwartz kernels; and the $p$-adic, holomorphic and hypercomplex distributions. The closing table records the operations that the theory does not define.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects are named by their standard symbols; the tables use the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal D$, $\mathcal E$, $\mathcal S$</td>
+<td>test functions, smooth functions, Schwartz class</td>
+</tr>
+<tr>
+<td>$\mathcal D'$, $\mathcal E'$, $\mathcal S'$</td>
+<td>distributions, compactly supported and tempered distributions</td>
+</tr>
+<tr>
+<td>$\langle u,\varphi\rangle$</td>
+<td>the duality pairing</td>
+</tr>
+<tr>
+<td>$\delta$, $\delta_a$, $\partial^\alpha\delta$</td>
+<td>the delta distribution, its translate, its derivatives</td>
+</tr>
+<tr>
+<td>$H$, $\mathrm{pv}\frac1x$, $\mathrm{pf}\frac1{x^2}$</td>
+<td>Heaviside function, principal value, finite part</td>
+</tr>
+<tr>
+<td>$\hat u$</td>
+<td>the Fourier transform of a tempered distribution</td>
+</tr>
+<tr>
+<td>$E$, $R$</td>
+<td>a fundamental solution or parametrix, and the smoothing remainder</td>
+</tr>
+<tr>
+<td>$\operatorname{WF}(u)$</td>
+<td>the wave front set</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lars Hörmander, <em>The Analysis of Linear Partial Differential Operators</em>, vol. I (Springer, 1983), for the theory of distributions, the product and pullback conditions and the fundamental solutions.</li>
+<li>Laurent Schwartz, <em>Théorie des distributions</em> (Hermann, 2nd ed. 1966), for the original treatment of the distribution spaces and their operations.</li>
+<li>Israel M. Gelfand and Georgi E. Shilov, <em>Generalized Functions</em>, vols. I and II (Academic Press, 1964–1968), for the generalised functions of analysis and the distributions on other grounds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

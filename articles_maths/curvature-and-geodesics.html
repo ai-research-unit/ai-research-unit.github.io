@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curvature and Geodesics — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="curvature-and-geodesics"><strong>Curvature and Geodesics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Riemannian metric is a distance that varies from point to point. It assigns to each tangent space a positive definite inner product, and the assignment varies smoothly; the geometry of the resulting manifold is the study of the consequences of that variation. Three objects carry the whole of the theory. The <strong>Levi-Civita connection</strong> is the unique rule for differentiating vector fields that is compatible with the metric and free of torsion; it makes it possible to compare tangent vectors at different points by <strong>parallel transport</strong>. The <strong>geodesics</strong> are the curves that parallel-transport their own tangent vector, and they are exactly the curves that minimise length locally; they define the <strong>exponential map</strong> of the metric, which is not the exponential map of a Lie algebra. The <strong>curvature</strong> measures the failure of parallel transport to be independent of the path, and it appears in three increasing averages: the <strong>sectional curvature</strong> of a plane, the <strong>Ricci curvature</strong> of a direction, and the <strong>scalar curvature</strong> of a point.</p>
+<p>This article develops these objects and explains what each measures. It defines the Levi-Civita connection by the Koszul formula and proves uniqueness; it defines parallel transport and the curvature tensor, and proves the symmetries of the curvature and the two Bianchi identities; it defines the sectional, Ricci and scalar curvatures and states what each detects; it writes the geodesic equation, explains why a geodesic minimises length locally, and contrasts the metric exponential with the Lie-algebra exponential; it treats the three simply connected complete surfaces of constant curvature — elliptic, Euclidean and hyperbolic — and identifies them with the geometries of the three two-dimensional algebras of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>; and it states the Gauss–Bonnet theorem, which relates the integral of the curvature of a compact surface to its Euler characteristic. The point of the article is the final observation: the topology of a manifold is fixed, but the metric on it is not, and curvature is the invariant that distinguishes two metrics with the same underlying space.</p>
+<p>The article assumes <em>Smooth Manifolds and Differential Geometry</em> for manifolds, tangent spaces, vector fields and the Riemannian metric; it defines the connection on the tangent bundle, its curvature and the Bianchi identity itself; the quadratic forms of <em>Bilinear Forms</em>, <em>Quadratic Forms and Polarisation</em> and <em>Isometries and Orthogonal Transformations</em>; and <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em> for the three model geometries in dimension two. The existence, uniqueness and smooth-dependence theory of the geodesic equation, the first-variation computation and the completeness theory that depend on limits belong to Part III, where the differential equations and the limit are available; they are stated here and not proved. The comparison theorems and the submanifold theory are not developed here, and the systematic account of them is not part of this article. No physics is invoked.</p>
+<h2 id="the-metric-as-a-distance">The Metric as a Distance</h2>
+<h3 id="length-and-the-riemannian-distance">Length and the Riemannian Distance</h3>
+<p>Let $(M, g)$ be a Riemannian manifold of dimension $n$, with the conventions of <em>Smooth Manifolds and Differential Geometry</em>: for each $p \in M$ the bilinear form $g_p$ is a positive definite inner product on $T_pM$, and in a chart with coordinates $x^i$ the coefficients are $g_{ij} = g(\partial_{x^i}, \partial_{x^j})$. The <strong>speed</strong> of a smooth curve $\gamma$ is $|\gamma'|_g = \sqrt{g(\gamma', \gamma')}$ and the <strong>length</strong> is the integral of the speed. The <strong>Riemannian distance</strong> $d_g(p, q)$ is the infimum of the lengths of the piecewise smooth curves joining $p$ to $q$, and it is a metric whose topology is the topology of $M$.</p>
+<p><strong>Definition.</strong> The <strong>volume form</strong> of an oriented Riemannian manifold is the unique $n$-form $\mathrm{vol}_g \in \Omega^n(M)$ that assigns the value $1$ to every positively oriented orthonormal frame; in a positively oriented chart,</p>
+<p>$$
+\mathrm{vol}_g = \sqrt{\det(g_{ij})}\; dx^1 \wedge \cdots \wedge dx^n .
+$$</p>
+<p>It is the top form whose integral is the Riemannian volume, and its existence is the form theory.</p>
+<h3 id="the-metric-topology-and-the-distance-function">The Metric Topology and the Distance Function</h3>
+<p><strong>Definition.</strong> The <strong>distance function</strong> from a point $p$ is $r_p(x) = d_g(p, x)$. It is continuous for the metric topology, and it is smooth away from the <strong>cut locus</strong> of $p$, the set of points at which the minimising geodesics from $p$ cease to be minimising; the cut locus is closed and of empty interior, and its complement is star-shaped with respect to $p$ in the sense of the exponential map below.</p>
+<p><strong>Theorem.</strong> The distance function satisfies $|\nabla r_p|_g = 1$ at every point where it is smooth. Its Hessian and its Laplacian are the invariants that carry the curvature: the Hessian comparison theorem and the Laplacian comparison theorem compare them with the corresponding objects of the constant-curvature model, and their proofs are analytic and belong to Part III, where the differential equations are available. The comparison is the analytical form of the statement that curvature controls the rate at which geodesics spread.</p>
+<p>The statement is recorded here because it is the bridge between the metric and the curvature. The Laplace–Beltrami operator, of which $\Delta$ is the case, is the Laplace–de Rham operator acting on functions, and the comparison theorems for it are proved in Part III with the differential equations.</p>
+<h2 id="the-levi-civita-connection">The Levi-Civita Connection</h2>
+<h3 id="the-koszul-formula">The Koszul Formula</h3>
+<p><strong>Definition.</strong> A <strong>connection</strong> on the tangent bundle $TM$ is an $\mathbb{R}$-bilinear map $\nabla : \mathfrak{X}(M) \times \mathfrak{X}(M) \to \mathfrak{X}(M)$ such that $\nabla_{fX}Y = f\nabla_XY$ and $\nabla_X(fY) = X(f)Y + f\nabla_XY$ for $f \in C^\infty(M)$; it is the covariant derivative specialised to the tangent bundle. It is <strong>metric</strong> if</p>
+<p>$$
+X\,g(Y, Z) = g(\nabla_XY, Z) + g(Y, \nabla_XZ),
+$$</p>
+<p>and <strong>torsion-free</strong> if</p>
+<p>$$
+\nabla_XY - \nabla_YX = [X, Y].
+$$</p>
+<p><strong>Theorem (fundamental theorem of Riemannian geometry).</strong> On a Riemannian manifold $(M, g)$ there is exactly one connection $\nabla$ that is metric and torsion-free. It is the <strong>Levi-Civita connection</strong>, and it is determined by the <strong>Koszul formula</strong></p>
+<p>$$
+2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y]).
+$$</p>
+<p><strong>Proof.</strong> The right-hand side is manifestly $\mathbb{R}$-linear in $X$ and, by the Leibniz rule for $X, Y, Z$ acting on functions, it is $C^\infty(M)$-linear in each of $X, Y, Z$. It therefore defines a tensor, and since $g$ is nondegenerate it determines the vector field $\nabla_XY$ uniquely. The two required properties follow by substituting into the formula and cancelling terms: metricity uses the first three terms and the skew symmetry of the bracket, torsion-freeness uses the last three and the identity $[X, Y] = -[Y, X]$. $\square$</p>
+<p><strong>Definition.</strong> In a chart the Christoffel symbols are</p>
+<p>$$
+\nabla_{\partial_{x^i}}\partial_{x^j} = \sum_k \Gamma^k_{ij}\,\partial_{x^k},
+\qquad
+\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\Bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\Bigr),
+$$</p>
+<p>where $(g^{kl})$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $\theta = (\theta^i_{\ j})$ of $1$-forms with $\theta^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$; the connection-form letter is $\theta$ and not $\omega$, which is reserved for the symplectic form.</p>
+<h3 id="parallel-transport">Parallel Transport</h3>
+<p><strong>Definition.</strong> A vector field $V$ along a curve $\gamma$ is <strong>parallel</strong> if $\nabla_{\gamma'}V = 0$. For each curve $\gamma : [a, b] \to M$ and each $v \in T_{\gamma(a)}M$ there is a unique parallel field $V$ along $\gamma$ with $V(a) = v$; the proof is the existence and uniqueness theory for the linear equation $\nabla_{\gamma'}V = 0$, which is that of Part III, where the differential equations are available; the <strong>parallel transport</strong> is the linear isomorphism</p>
+<p>$$
+P_\gamma : T_{\gamma(a)}M \longrightarrow T_{\gamma(b)}M, \qquad P_\gamma(v) = V(b).
+$$</p>
+<p>The transport is an isometry of tangent spaces because $\nabla$ is metric:</p>
+<p>$$
+g_{\gamma(b)}\bigl(P_\gamma(v), P_\gamma(w)\bigr) = g_{\gamma(a)}(v, w).
+$$</p>
+<p><strong>Proposition.</strong> Parallel transport is invariant under reparametrisation and is compatible with concatenation and reversal of curves. Its dependence on the path is measured by the curvature.</p>
+<p><strong>Proof.</strong> The parallel field along a reparametrised curve is the reparametrised field; concatenation composes the transports and reversal inverts them, since the equation $\nabla_{\gamma'}V = 0$ is preserved by reversing the curve. $\square$</p>
+<p><strong>Definition.</strong> The <strong>holonomy group</strong> of $\nabla$ at $p$ is the group of isometries of $T_pM$ obtained as parallel transport around piecewise smooth loops based at $p$. It is a subgroup of the orthogonal group of the metric at $p$, and the <strong>restricted holonomy group</strong> is the subgroup obtained from loops homotopic to the constant loop. The Lie algebra of the holonomy group is spanned by the curvature endomorphisms, which is the Ambrose–Singer theorem.</p>
+<h2 id="geodesics-and-the-metric-exponential">Geodesics and the Metric Exponential</h2>
+<h3 id="the-geodesic-equation">The Geodesic Equation</h3>
+<p><strong>Definition.</strong> A smooth curve $\gamma$ is a <strong>geodesic</strong> if its velocity is parallel along itself,</p>
+<p>$$
+\nabla_{\gamma'}\gamma' = 0 .
+$$</p>
+<p>In a chart, writing $\gamma(t) = (x^1(t), \ldots, x^n(t))$, this is the system</p>
+<p>$$
+\frac{d^2x^k}{dt^2} + \sum_{i, j} \Gamma^k_{ij}\,\frac{dx^i}{dt}\frac{dx^j}{dt} = 0, \qquad k = 1, \ldots, n,
+$$</p>
+<p>the <strong>geodesic equation</strong>. It is a second-order ordinary differential equation; the <em>equation</em> is written here, and its solvability — the existence, uniqueness and smooth dependence on initial conditions of its solutions — is the theory of differential equations and belongs to Part III. What the equation says is that a geodesic is a curve that does not turn: its acceleration in the sense of the connection vanishes.</p>
+<p><strong>Definition.</strong> The <strong>exponential map</strong> of the metric at $p$ is</p>
+<p>$$
+\exp_p : U_p \subseteq T_pM \longrightarrow M, \qquad \exp_p(v) = \gamma_v(1),
+$$</p>
+<p>where $U_p$ is the set of vectors $v$ for which the geodesic $\gamma_v$ with $\gamma_v(0) = p$ and $\gamma_v'(0) = v$ is defined up to time $1$. The set $U_p$ is an open neighbourhood of $0$ in $T_pM$ containing a ball of some radius on which the geodesics exist, and $\exp_p$ is a local diffeomorphism at $0$ with $d(\exp_p)_0 = \mathrm{id}_{T_pM}$.</p>
+<p><strong>Theorem (Gauss lemma).</strong> For $v \in U_p$ and $w \in T_{v}(T_pM) \cong T_pM$,</p>
+<p>$$
+g_{\exp_p(v)}\bigl(d(\exp_p)_v(v),\, d(\exp_p)_v(w)\bigr) = g_p(v, w).
+$$</p>
+<p>In words, the radial geodesics leave $p$ orthogonally to the spheres of constant radius, and the exponential map is a radial isometry.</p>
+<p><strong>Proof sketch.</strong> The identity is the first-variation computation for the length applied to a geodesic and a variation by a family of geodesics; the derivative of $t \mapsto g(\gamma_v'(t), \partial_s\gamma_s(t))$ at $s = 0$ vanishes because $\gamma_v$ is a geodesic. $\square$</p>
+<p><strong>Definition.</strong> The <strong>normal coordinates</strong> at $p$ are obtained by choosing an orthonormal basis $u_1, \ldots, u_n$ of $T_pM$ and, for a point $x$ near $p$, taking the unique $v \in T_pM$ with $\exp_p(v) = x$ and setting $x^i = v^i$, where $v = \sum_i v^i u_i$. Equivalently, the coordinates are the coefficients of $v$ in the orthonormal basis, so that the geodesic through $p$ in the direction $u_i$ is the $i$-th coordinate axis. In normal coordinates $g_{ij}(p) = \delta_{ij}$ and the first derivatives of $g_{ij}$ vanish at $p$, so the Christoffel symbols vanish at $p$ and the metric is Euclidean to second order there; the second derivatives of the metric at $p$ are exactly the curvature.</p>
+<h3 id="geodesics-minimise-locally">Geodesics Minimise Locally</h3>
+<p><strong>Definition.</strong> A curve joining $p$ to $q$ is <strong>locally minimising</strong> if every sufficiently short subarc of it has length not exceeding the length of any nearby curve with the same endpoints.</p>
+<p><strong>Theorem.</strong> Every geodesic is locally minimising. Conversely, a locally minimising curve, parametrised proportionally to arclength and of class $C^2$, satisfies the geodesic equation.</p>
+<p><strong>Proof sketch.</strong> For a geodesic $\gamma$ and a nearby curve $\sigma$ from $\gamma(a)$ to $\gamma(b)$ with $b - a$ small, the comparison formula</p>
+<p>$$
+L_g(\sigma) - L_g(\gamma) = \tfrac{1}{2}\int_a^b g\!\left(\frac{D}{dt}\,\frac{\partial \sigma}{\partial s}, \frac{\partial\sigma}{\partial s}\right) dt
+$$</p>
+<p>expresses the length difference, to second order, as the integral of the squared normal component of the variation, which is nonnegative; the converse is the first-variation formula, whose vanishing for all variations supported in the interior is exactly the geodesic equation. Both computations use the calculus of variations of Part III, where the analytic details are supplied; the results are standard. $\square$</p>
+<p><strong>Example (Euclidean and spherical geodesics).</strong> In $\mathbb{R}^n$ with the standard metric the Christoffel symbols vanish, so the geodesics are the straight lines. On the round sphere $S^{n-1}$ the geodesics are the great circles: the intersection of the sphere with a plane through the origin. In the hyperbolic metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$ on the upper half-space, the geodesics are the vertical lines and the semicircles orthogonal to the boundary.</p>
+<h3 id="the-metric-exponential-and-the-lie-algebra-exponential">The Metric Exponential and the Lie-Algebra Exponential</h3>
+<p>The exponential map defined here must not be confused with the exponential map of a Lie group. For a Lie group $G$ with Lie algebra $\mathfrak{g}$ and a left-invariant metric, a one-parameter subgroup $t \mapsto \exp(tX)$ of <em>Lie Groups</em> is a geodesic of the metric if and only if the metric is <strong>bi-invariant</strong>, and in that case the two exponentials agree: $\exp_e(v) = \exp(v)$ for the identification $T_eG \cong \mathfrak{g}$. For a general left-invariant metric the group exponential and the metric exponential differ, and the geodesics are the solutions of the <strong>Euler–Arnold equation</strong>, whose study belongs to the geometry of Lie groups. The distinction is the reason the two constructions carry the same name: each is the solution of the flow of a natural vector field — the right-invariant field for the group exponential, the geodesic spray for the metric exponential — and they coincide only when the metric is compatible with the group structure in the strongest sense.</p>
+<h2 id="curvature">Curvature</h2>
+<h3 id="the-curvature-tensor">The Curvature Tensor</h3>
+<p><strong>Definition.</strong> The <strong>curvature tensor</strong> of the Levi-Civita connection is</p>
+<p>$$
+R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X, Y]}Z,
+$$</p>
+<p>a $(1, 3)$-tensor, and the associated $(0, 4)$-tensor is $R(X, Y, Z, W) = g(R(X, Y)Z, W)$.</p>
+<p>The curvature form is read on $TM$: in a coordinate frame the curvature form is the matrix $\mathcal{R} = d\theta + \theta \wedge \theta$, and $R(X, Y)Z$ is its evaluation on $X, Y$ applied to $Z$.</p>
+<p><strong>Theorem (symmetries).</strong> The $(0,4)$-curvature tensor satisfies</p>
+<p>$$
+R(X, Y, Z, W) = -R(Y, X, Z, W) = -R(X, Y, W, Z) = R(Z, W, X, Y),
+$$</p>
+<p>the <strong>first Bianchi identity</strong></p>
+<p>$$
+R(X, Y, Z, W) + R(Y, Z, X, W) + R(Z, X, Y, W) = 0,
+$$</p>
+<p>and, for the Levi-Civita connection, the <strong>second Bianchi identity</strong></p>
+<p>$$
+(\nabla_X R)(Y, Z)W + (\nabla_Y R)(Z, X)W + (\nabla_Z R)(X, Y)W = 0.
+$$</p>
+<p><strong>Proof sketch.</strong> The first symmetry is the definition; the second and third follow from metricity and from the vanishing of the torsion; the first Bianchi identity is the cyclic sum of the three curvature terms, in which the bracket terms cancel by the Jacobi identity; the second Bianchi identity is the exterior covariant derivative identity $d^\nabla \mathcal{R} = 0$, read on the tangent bundle. $\square$</p>
+<h3 id="sectional-curvature">Sectional Curvature</h3>
+<p><strong>Definition.</strong> Let $\sigma \subseteq T_pM$ be a two-dimensional subspace with an orthonormal basis $v, w$. The <strong>sectional curvature</strong> of $\sigma$ is</p>
+<p>$$
+K(\sigma) = R(v, w, w, v) = g\bigl(R(v, w)w, v\bigr).
+$$</p>
+<p>The definition is independent of the orthonormal basis chosen, by the symmetries of $R$; for a general basis $v, w$ of $\sigma$,</p>
+<p>$$
+K(\sigma) = \frac{R(v, w, w, v)}{g(v, v)g(w, w) - g(v, w)^2}.
+$$</p>
+<p><strong>Theorem.</strong> The sectional curvature determines the curvature tensor completely: if two $(0,4)$-tensors with the symmetries above have the same sectional curvatures on every two-plane, they are equal. Consequently the curvature of a Riemannian manifold is exactly the assignment to each point and each two-plane of the number $K(\sigma)$.</p>
+<p><strong>Proof sketch.</strong> The symmetries express a $(0,4)$-tensor as a linear combination of the quadrilateral expressions $R(v, w, w, v)$; polarisation in each argument recovers the full tensor from the values of $K$ on the planes. $\square$</p>
+<p><strong>Remark (what $K$ measures).</strong> The sectional curvature is the curvature of the surface swept out by the geodesics in the plane $\sigma$: it is the Gaussian curvature of the two-dimensional submanifold $\exp_p(\sigma \cap U_p)$. Positive $K$ means that nearby geodesics in that plane converge, as they do on the sphere; negative $K$ means that they diverge, as they do in the hyperbolic plane; $K = 0$ means that they neither converge nor diverge, as they do in the Euclidean plane. This is the statement that curvature measures the spreading of geodesics, and it is the model for the Jacobi-field comparison theory.</p>
+<p><strong>Example.</strong> The round sphere $S^n$ of radius $r$ has $K = 1/r^2$ on every plane; Euclidean space has $K = 0$; the hyperbolic space of curvature $-1/r^2$ has $K = -1/r^2$. These are the three simply connected complete manifolds of constant curvature, and by the classification their universal covers exhaust the possibilities.</p>
+<h3 id="ricci-and-scalar-curvature">Ricci and Scalar Curvature</h3>
+<p><strong>Definition.</strong> The <strong>Ricci tensor</strong> is the trace of the curvature over one pair of arguments,</p>
+<p>$$
+\operatorname{Ric}(X, Y) = \sum_{i=1}^{n} R(e_i, X, Y, e_i),
+$$</p>
+<p>where $e_1, \ldots, e_n$ is an orthonormal frame; it is a symmetric $(0, 2)$-tensor. The <strong>scalar curvature</strong> is the trace of the Ricci tensor,</p>
+<p>$$
+S = \sum_{i=1}^{n} \operatorname{Ric}(e_i, e_i).
+$$</p>
+<p><strong>Proposition.</strong> In an orthonormal frame, $\operatorname{Ric}(v, v)$ is the sum of the sectional curvatures of the planes spanned by $v$ and the frame vectors orthogonal to $v$. The scalar curvature is the total of the sectional curvatures over an orthonormal basis of two-planes, up to the normalisation of the double count.</p>
+<p><strong>Proof.</strong> Substitute the definition of sectional curvature into the trace: $\operatorname{Ric}(v, v) = \sum_i R(e_i, v, v, e_i) = \sum_i K(e_i \wedge v)$ when the frame is orthonormal and $v$ is one of its members. $\square$</p>
+<p><strong>Remark (what each measures).</strong> The Ricci curvature is the average of the sectional curvatures in the directions orthogonal to $v$, so $\operatorname{Ric}(v, v) > 0$ means that, on average, the geodesics starting in the direction $v$ spread more slowly than in Euclidean space; it is the curvature that controls the growth of the volume element along a geodesic and, through it, the behaviour of the distance function. The scalar curvature is a single number at each point, the weakest of the three invariants, and it is the one that appears in the variational problems of the theory. The chain</p>
+<p>$$
+R \;\longrightarrow\; K \;\longrightarrow\; \operatorname{Ric} \;\longrightarrow\; S
+$$</p>
+<p>goes from the complete curvature information to successively averaged shadows of it; each level is the trace of the one before, and each loses information.</p>
+<h3 id="the-second-bianchi-identity-and-its-contractions">The Second Bianchi Identity and Its Contractions</h3>
+<p><strong>Definition.</strong> The <strong>Einstein tensor</strong> is $G = \operatorname{Ric} - \frac{1}{2}S g$.</p>
+<p><strong>Theorem (contracted Bianchi identity).</strong> The divergence of the Einstein tensor vanishes:</p>
+<p>$$
+\operatorname{div} G = 0, \qquad \text{equivalently} \qquad \sum_i (\nabla_{e_i}\operatorname{Ric})(e_i, X) = \tfrac{1}{2}\,dS(X).
+$$</p>
+<p><strong>Proof.</strong> Contract the second Bianchi identity in two pairs of indices. $\square$</p>
+<p>The contracted identity is the reason the Einstein tensor is the natural divergence-free object built by tracing the curvature, and it is the curvature equation that the analysis of the metric, in Part III, takes up.</p>
+<h2 id="the-three-constant-curvature-models">The Three Constant-Curvature Models</h2>
+<p>By the classification of the simply connected complete Riemannian manifolds of constant sectional curvature, there are exactly three families, one for each sign of $K$. Each has the geometry of one of the three two-dimensional algebras of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>, and each is the symmetric space of a classical group.</p>
+<h3 id="the-elliptic-model">The Elliptic Model</h3>
+<p><strong>Definition.</strong> The <strong>round sphere</strong> of radius $r$ is</p>
+<p>$$
+S^n_r = \{x \in \mathbb{R}^{n+1} : \langle x, x\rangle = r^2\}
+$$</p>
+<p>with the metric induced by the standard inner product. Its sectional curvature is $K = 1/r^2$ on every plane, its geodesics are the great circles, and its isometry group is the orthogonal group $O(n+1)$, acting transitively.</p>
+<p>The sphere is compact, its diameter is $\pi r$, and every pair of geodesics meets, so there are no parallel lines: the elliptic geometry is the one in which the parallel postulate fails in the direction of no parallels. In dimension two it is the geometry of the algebra $\mathbb{C}$ with $\omega^2 = -1$, whose rotation group $SO(2)$ is the elliptic rotation group.</p>
+<h3 id="the-euclidean-model">The Euclidean Model</h3>
+<p><strong>Definition.</strong> Euclidean space $\mathbb{R}^n$ with the standard metric has $K = 0$ on every plane, its geodesics are the straight lines, and its isometry group is the Euclidean group $E(n) = \mathbb{R}^n \rtimes O(n)$ acting transitively.</p>
+<p>It is the geometry in which the parallel postulate holds: through each point outside a given line there is exactly one line not meeting it, and the angle sum of a triangle is $\pi$. In dimension two it is the geometry of the algebra $\mathbb{D}'$ with $\omega^2 = 0$, whose rotation group is the transvection group, the parabolic rotation group.</p>
+<h3 id="the-hyperbolic-model">The Hyperbolic Model</h3>
+<p><strong>Definition.</strong> <strong>Hyperbolic space</strong> $\mathbb{H}^n_r$ is the complete simply connected Riemannian manifold of constant sectional curvature $-1/r^2$; a concrete model is the upper half-space with the metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$, whose geodesics are the vertical lines and the semicircles orthogonal to the boundary.</p>
+<p>Hyperbolic space is non-compact, its geodesics diverge exponentially, and through each point outside a given geodesic there are infinitely many geodesics not meeting it: the parallel postulate fails in the direction of too many parallels, and the angle sum of a triangle is less than $\pi$. In dimension two it is the geometry of the algebra $\mathbb{D}$ with $\omega^2 = +1$, whose identity component of the rotation group is $SO(1,1)_0$, the hyperbolic rotation group. The metric is developed.</p>
+<h3 id="the-comparison-table">The Comparison Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>$K$</th>
+<th>Geodesics</th>
+<th>Parallel postulate</th>
+<th>Angle sum of a triangle</th>
+<th>Isometry group</th>
+<th>Algebra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elliptic $S^n_r$</td>
+<td>$+1/r^2$</td>
+<td>great circles</td>
+<td>no parallels</td>
+<td>$> \pi$</td>
+<td>$O(n+1)$</td>
+<td>$\mathbb{C}$</td>
+</tr>
+<tr>
+<td>Euclidean $\mathbb{R}^n$</td>
+<td>$0$</td>
+<td>straight lines</td>
+<td>exactly one parallel</td>
+<td>$= \pi$</td>
+<td>$\mathbb{R}^n \rtimes O(n)$</td>
+<td>$\mathbb{D}'$</td>
+</tr>
+<tr>
+<td>Hyperbolic $\mathbb{H}^n_r$</td>
+<td>$-1/r^2$</td>
+<td>lines and semicircles</td>
+<td>infinitely many parallels</td>
+<td>$< \pi$</td>
+<td>$O(n,1)$</td>
+<td>$\mathbb{D}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the reason the three two-dimensional algebras of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em> are the three model geometries: the sign of the square of their generator is the sign of the curvature of the geometry their rotation group implements.</p>
+<h2 id="the-gaussbonnet-theorem">The Gauss–Bonnet Theorem</h2>
+<h3 id="the-surface-case">The Surface Case</h3>
+<p><strong>Theorem (Gauss–Bonnet).</strong> Let $M$ be a compact oriented Riemannian surface with Gaussian curvature $K$ and Euler characteristic $\chi(M)$. Then</p>
+<p>$$
+\int_M K\, \mathrm{vol}_g = 2\pi\,\chi(M).
+$$</p>
+<p><strong>Proof sketch.</strong> For a geodesic triangle with interior angles $\alpha, \beta, \gamma$ the Gauss–Bonnet formula with boundary is $\int_T K\,\mathrm{vol}_g = \alpha + \beta + \gamma - \pi$; triangulating the surface and summing, the boundary terms cancel in pairs and the angle sums contribute $2\pi$ times the alternating count of the vertices, faces and edges, which is $2\pi\chi(M)$. $\square$</p>
+<p><strong>Corollary (angle sums).</strong> A geodesic triangle in the sphere of radius $1$ has angle sum $\pi + \mathrm{area}$; a Euclidean triangle has angle sum $\pi$; a hyperbolic triangle has angle sum $\pi - \mathrm{area}$. This is the quantitative form of the comparison table above: the sign of $K$ is the sign of the deviation of the angle sum from $\pi$.</p>
+<p><strong>Corollary (topological obstruction).</strong> A compact surface admits a metric of constant curvature $+1$ only if $\chi(M) > 0$, a metric of curvature $0$ only if $\chi(M) = 0$, and a metric of constant curvature $-1$ only if $\chi(M) < 0$. The Euler characteristic therefore obstructs the existence of the three geometries, and the classification of the compact surfaces with these geometries is the uniformisation stated.</p>
+<h3 id="the-higher-dimensional-case">The Higher-Dimensional Case</h3>
+<p><strong>Theorem (generalised Gauss–Bonnet–Chern).</strong> Let $M$ be a compact oriented Riemannian manifold of even dimension $2k$. Then the integral of the Pfaffian of the curvature form,</p>
+<p>$$
+\int_M \operatorname{Pf}\!\left(\frac{\mathcal{R}}{2\pi}\right) = \chi(M),
+$$</p>
+<p>equals the Euler characteristic.</p>
+<p>The form $\operatorname{Pf}(\mathcal{R}/2\pi)$ is the Euler class of the tangent bundle constructed by the Chern–Weil homomorphism, and the theorem identifies its integral with the topological Euler characteristic. In dimension two it reduces to the surface case above.</p>
+<p><strong>Remark (curvature and topology).</strong> The Gauss–Bonnet theorem is the first and simplest instance of a general principle: the integral of a curvature expression is a topological invariant. The principle is made systematic by the Chern–Weil construction, which turns invariant polynomials in the curvature of any connection into characteristic classes of the bundle, and it is the reason curvature, although it is a local differential-geometric datum, computes global topological information. The shape of the metric — which curves are geodesics, how fast they spread, where they focus — is what separates one geometry from another on the same manifold; the topology is what the integral of the curvature cannot change.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Riemannian manifold the metric defines a length for each curve and a distance for each pair of points, whose topology is the topology of the manifold. The fundamental theorem of Riemannian geometry gives a unique metric and torsion-free connection, the Levi-Civita connection, determined by the Koszul formula and read in a chart from the Christoffel symbols. The connection defines parallel transport, an isometry of tangent spaces along each curve, whose path-dependence is the curvature; the holonomy group consists of the transports around loops and its Lie algebra is spanned by the curvature.</p>
+<p>A geodesic is a curve whose velocity is parallel along itself; it satisfies the second-order geodesic equation, and it is exactly the locally length-minimising curve. The metric exponential map sends a tangent vector to the endpoint of the geodesic it generates, and it is a local diffeomorphism whose derivative at the origin is the identity; the Gauss lemma makes the radial geodesics orthogonal to the geodesic spheres. Normal coordinates make the metric Euclidean to first order at a point, with the curvature appearing in the second order. The metric exponential agrees with the Lie-algebra exponential exactly for a bi-invariant metric; the general relation is the Euler–Arnold equation.</p>
+<p>The curvature tensor has the algebraic symmetries of a curvature form and satisfies the first and second Bianchi identities. The sectional curvature of a plane is the Gaussian curvature of the surface it sweeps out and measures the convergence or divergence of geodesics in that plane; the Ricci tensor is its average over the directions orthogonal to a given vector and controls the growth of the volume element; the scalar curvature is the trace of the Ricci tensor and is the weakest of the three. The contraction of the second Bianchi identity says that the Einstein tensor $\operatorname{Ric} - \frac{1}{2}Sg$ has vanishing divergence.</p>
+<p>The complete simply connected manifolds of constant curvature are the round sphere ($K = 1/r^2$), Euclidean space ($K = 0$) and hyperbolic space ($K = -1/r^2$), the three model geometries whose two-dimensional cases are the geometries of the algebras $\mathbb{C}$, $\mathbb{D}'$ and $\mathbb{D}$. The Gauss–Bonnet theorem integrates the curvature of a compact oriented surface to $2\pi$ times its Euler characteristic and, in its generalised form, identifies the integral of the Pfaffian of the curvature form with the Euler characteristic in every even dimension; it is the first instance of the principle that an integral of curvature is a topological invariant, and it shows that the topology constrains, while the metric realises, the geometry.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(M, g)$, $g_{ij}$, $g^{ij}$</td>
+<td>Riemannian manifold; metric coefficients and their inverse matrix</td>
+</tr>
+<tr>
+<td>$\nabla$, $\nabla_XY$</td>
+<td>Levi-Civita connection; covariant derivative of $Y$ along $X$</td>
+</tr>
+<tr>
+<td>$\theta = (\theta^i_{\ j})$, $\Gamma^k_{ij}$</td>
+<td>Connection form and Christoffel symbols; $\theta$ is the connection-form letter of half A</td>
+</tr>
+<tr>
+<td>$P_\gamma$</td>
+<td>Parallel transport along the curve $\gamma$; an isometry of tangent spaces</td>
+</tr>
+<tr>
+<td>$\operatorname{Hol}_p$</td>
+<td>Holonomy group at $p$; its Lie algebra is spanned by the curvature</td>
+</tr>
+<tr>
+<td>$R(X,Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$</td>
+<td>Curvature tensor</td>
+</tr>
+<tr>
+<td>$\mathcal{R} = d\theta + \theta\wedge\theta$</td>
+<td>Curvature $2$-form, matrix-valued, in a frame; no bare $\Omega$ is used</td>
+</tr>
+<tr>
+<td>$K(\sigma) = R(v,w,w,v)$</td>
+<td>Sectional curvature of the two-plane $\sigma$ with orthonormal basis $v,w$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ric}(X,Y) = \sum_i R(e_i,X,Y,e_i)$</td>
+<td>Ricci tensor; average of sectional curvatures</td>
+</tr>
+<tr>
+<td>$S = \sum_i \operatorname{Ric}(e_i,e_i)$</td>
+<td>Scalar curvature</td>
+</tr>
+<tr>
+<td>$G = \operatorname{Ric} - \frac12 Sg$</td>
+<td>Einstein tensor; $\operatorname{div} G = 0$</td>
+</tr>
+<tr>
+<td>$\nabla_{\gamma'}\gamma' = 0$</td>
+<td>Geodesic equation in invariant form</td>
+</tr>
+<tr>
+<td>$\ddot x^k + \sum_{ij}\Gamma^k_{ij}\dot x^i\dot x^j = 0$</td>
+<td>Geodesic equation in a chart</td>
+</tr>
+<tr>
+<td>$\exp_p : T_pM \to M$</td>
+<td>Exponential map of the metric; $d(\exp_p)_0 = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>Gauss lemma</td>
+<td>$g(d\exp_p(v), d\exp_p(w)) = g(v,w)$ for the radial direction</td>
+</tr>
+<tr>
+<td>Normal coordinates</td>
+<td>Coordinates in which $g_{ij}(p) = \delta_{ij}$ and $\partial_k g_{ij}(p) = 0$</td>
+</tr>
+<tr>
+<td>$\mathrm{vol}_g = \sqrt{\det(g_{ij})}\,dx^1\wedge\cdots\wedge dx^n$</td>
+<td>Riemannian volume form</td>
+</tr>
+<tr>
+<td>$K = 1/r^2,\ 0,\ -1/r^2$</td>
+<td>Curvatures of the elliptic, Euclidean and hyperbolic models</td>
+</tr>
+<tr>
+<td>$S^n_r$, $\mathbb{H}^n_r$</td>
+<td>Round sphere and hyperbolic space of radius $r$</td>
+</tr>
+<tr>
+<td>$\int_M K\,\mathrm{vol}_g = 2\pi\chi(M)$</td>
+<td>Gauss–Bonnet theorem for a compact oriented surface</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}(\mathcal{R}/2\pi)$</td>
+<td>Pfaffian form; its integral is the Euler characteristic</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Manfredo P. do Carmo, <em>Riemannian Geometry</em> (Birkhäuser, 1992), for the Levi-Civita connection, geodesics, curvature and the Gauss–Bonnet theorem.</li>
+<li>John M. Lee, <em>Introduction to Riemannian Manifolds</em>, 2nd ed. (Springer, 2018), for a complete modern treatment with normal coordinates and Jacobi fields.</li>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry, Volume I</em> (Interscience, 1963), for connections, holonomy and the structure equations.</li>
+<li>Michael Spivak, <em>A Comprehensive Introduction to Differential Geometry, Volume II</em> (Publish or Perish, 3rd ed. 1999), for the classical development of curvature and geodesics.</li>
+<li>Barrett O'Neill, <em>Semi-Riemannian Geometry with Applications to Relativity</em> (Academic Press, 1983), for the same theory with an indefinite metric.</li>
+<li>Shiing-Shen Chern, "A simple intrinsic proof of the Gauss–Bonnet formula for closed Riemannian manifolds", <em>Annals of Mathematics</em> 45 (1944), 747–752, for the generalised Gauss–Bonnet theorem.</li>
+<li>Richard S. Hamilton, "Three-manifolds with positive Ricci curvature", <em>Journal of Differential Geometry</em> 17 (1982), 255–306, for the Ricci flow that the Ricci curvature generates.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

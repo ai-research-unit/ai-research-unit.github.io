@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Modes of Convergence — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-modes-of-convergence"><strong>List of Modes of Convergence</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the modes of convergence the corpus uses. A mode of convergence is a prescription of what it means for a sequence to approach a limit — at every point, uniformly, off a null set, in a mean, in duality — and a row below names one mode, records the setting in which it is defined and its relation of implication to the modes above and below it, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The modes are grouped by the layer that introduces them: convergence in a topological and a uniform space, the pointwise and uniform modes of function theory, the measure-theoretic modes of almost everywhere and in measure, convergence in the $L^p$ norms, and the weak and weak-$\ast$ modes of functional analysis. Beside them stand the non-examples that separate them — a pointwise convergence that is not uniform, an in-measure convergence with no pointwise limit, a weakly convergent sequence that does not converge in norm — recorded as rows whose property cells name the failure, so that the article records examples and non-examples side by side.</p>
+<h2 id="convergence-in-a-topological-and-a-uniform-space">Convergence in a Topological and a Uniform Space</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The setting, and the property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>convergence of a sequence</td>
+<td>a topological space; every neighbourhood of the limit contains all but finitely many terms</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>convergence of a net and of a filter</td>
+<td>an arbitrary directed set, and a filter; the general form of the limit</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>Cauchy sequence, Cauchy filter</td>
+<td>a uniform space; the terms are eventually close to one another</td>
+<td><em>Modes of Convergence</em>; <em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>completeness</td>
+<td>a uniform space; every Cauchy sequence or filter converges</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>convergence in a metric space</td>
+<td>the metric; $d(x_n, x) \to 0$</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>uniform convergence in a uniform space</td>
+<td>$f_n$ eventually within every entourage of $f$, uniformly in the point</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="pointwise-and-uniform-convergence">Pointwise and Uniform Convergence</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its definition, and its relation to the other modes</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pointwise convergence</td>
+<td>$f_n(x) \to f(x)$ for each $x$; the weakest of the function modes</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>uniform convergence</td>
+<td>$\sup_x \lVert f_n(x) - f(x)\rVert \to 0$; convergence in the supremum metric, hence implies pointwise</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>locally uniform convergence, uniform on compacta</td>
+<td>uniform on every compact subset; lies between uniform and pointwise, and neither implication reverses</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>Dini's monotone convergence</td>
+<td>a compact space and a monotone sequence of continuous functions with a continuous pointwise limit; the convergence is then uniform</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>convergence in the space $B(X,Y)$</td>
+<td>the sup metric; complete when $Y$ is complete, and the home of uniform convergence</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="almost-everywhere-and-in-measure">Almost Everywhere and in Measure</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its definition, and its relation to the other modes</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>convergence almost everywhere</td>
+<td>$f_n(x) \to f(x)$ outside a null set; a mode on the quotient by a.e. equality</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>almost uniform convergence</td>
+<td>uniform convergence off sets of arbitrarily small measure; implies both a.e. and in measure</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>convergence in measure</td>
+<td>$\mu(\{\lvert f_n - f\rvert > \epsilon\}) \to 0$ for every $\epsilon>0$</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>convergence in probability</td>
+<td>convergence in measure on a probability space; the same condition under the probabilistic name</td>
+<td><em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>Egorov's theorem</td>
+<td>a finite measure space; a.e. convergence implies almost uniform convergence</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>Riesz's theorem</td>
+<td>in-measure convergence implies a.e. convergence along a subsequence</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="convergence-in-math13">Convergence in $L^p$</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its definition, and its relation to the other modes</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>convergence in $L^p$, $1 \leq p < \infty$</td>
+<td>$\lVert f_n - f\rVert_p \to 0$; implies convergence in measure, by Chebyshev</td>
+<td><em>Modes of Convergence</em>; <em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>convergence in $L^\infty$</td>
+<td>essential supremum convergence; equivalent to uniform convergence off a null set</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>uniform integrability</td>
+<td>the condition that makes in-measure convergence into $L^1$ convergence</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>the Vitali convergence theorem</td>
+<td>a finite measure space and uniform integrability; in-measure convergence becomes $L^1$ convergence</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>monotone, Fatou and dominated convergence</td>
+<td>$L^1$ convergence from a.e. convergence, under monotonicity, nonnegativity or a dominating function</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>inclusion of $L^q$ in $L^p$, $q \geq p$</td>
+<td>a finite measure space; then $L^q \subseteq L^p$ and $L^q$ convergence implies $L^p$ convergence</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="weak-and-weak-math27-convergence">Weak and Weak-$\ast$ Convergence</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its definition, and its relation to the other modes</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>weak convergence $x_n \rightharpoonup x$</td>
+<td>$\varphi(x_n) \to \varphi(x)$ for every bounded functional; implied by norm convergence</td>
+<td><em>Modes of Convergence</em>; <em>Banach and Hilbert Spaces</em></td>
+</tr>
+<tr>
+<td>weak-$\ast$ convergence $f_n \overset{\ast}{\rightharpoonup} f$</td>
+<td>pointwise convergence on the predual; on $X^\ast$</td>
+<td><em>Modes of Convergence</em>; <em>Banach and Hilbert Spaces</em></td>
+</tr>
+<tr>
+<td>Banach–Alaoglu theorem</td>
+<td>the weak-$\ast$ compactness of the unit ball of a dual space</td>
+<td><em>Banach and Hilbert Spaces</em></td>
+</tr>
+<tr>
+<td>weak lower semicontinuity of the norm</td>
+<td>$\lVert x\rVert \leq \liminf \lVert x_n\rVert$ along a weakly convergent sequence</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>weak convergence of measures</td>
+<td>$\int f\,d\mu_n \to \int f\,d\mu$ for every bounded continuous $f$; the weak-$\ast$ convergence on $C_0(X)$</td>
+<td><em>Modes of Convergence</em>; <em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>convergence in distribution</td>
+<td>weak convergence of laws on a metric space; also written $\mu_n \Rightarrow \mu$</td>
+<td><em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>vague convergence of measures</td>
+<td>weak-$\ast$ convergence tested against $C_c(X)$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the portmanteau theorem</td>
+<td>the equivalence of the definitions of weak convergence of measures</td>
+<td><em>Modes of Convergence</em>; <em>Measure-Theoretic Probability</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-counterexamples-that-separate-the-modes">The Counterexamples That Separate the Modes</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The implication it refutes</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f_n = x^n$ on $[0,1)$</td>
+<td>locally uniform convergence does not imply uniform convergence</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>$f_n = \min(1, \lvert x\rvert/n)$ on $\mathbb R$</td>
+<td>locally uniform convergence does not imply uniform convergence</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>the dyadic sliding intervals on $[0,1]$</td>
+<td>convergence in measure (and in every $L^p$, $p<\infty$) does not imply convergence at any point</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>$f_n = n\mathbf 1_{(0,1/n)}$</td>
+<td>a.e. convergence does not imply convergence in $L^1$; in-measure convergence does not imply $L^1$ convergence</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>$f_n = \mathbf 1_{[n,n+1]}$</td>
+<td>on an infinite measure space, a.e. convergence does not control the integrals</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>$e_n$, the unit vectors of $\ell^2$</td>
+<td>weak convergence does not imply norm convergence in infinite dimensions</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>a pointwise convergence without a continuous limit</td>
+<td>pointwise convergence does not preserve continuity, while uniform convergence does</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>a uniformly convergent sequence of Riemann integrable functions with bounded pointwise convergence and a limit that is not Riemann integrable</td>
+<td>bounded pointwise convergence does not permit the interchange of limit and Riemann integral</td>
+<td><em>Real Integration</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the modes of convergence of the corpus: convergence in a topological and a uniform space, pointwise, uniform and locally uniform convergence, convergence almost everywhere, almost uniformly, in measure and in probability, convergence in the $L^p$ norms with uniform integrability, and weak and weak-$\ast$ convergence together with the weak convergence of measures. The implication structure is that uniform convergence implies locally uniform, which implies pointwise; that a.e. convergence and convergence in measure are linked by Egorov and Riesz; that $L^p$ convergence implies convergence in measure but not a.e.; and that norm convergence implies weak, which implies weak-$\ast$ on a dual. The inseparable cases are recorded in the closing table.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects are named rather than denoted; the symbols used in the tables are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f_n \to f$</td>
+<td>pointwise convergence</td>
+</tr>
+<tr>
+<td>$f_n \rightrightarrows f$</td>
+<td>uniform convergence</td>
+</tr>
+<tr>
+<td>$f_n \to f$ a.e.</td>
+<td>convergence almost everywhere</td>
+</tr>
+<tr>
+<td>$f_n \xrightarrow{\mu} f$</td>
+<td>convergence in measure</td>
+</tr>
+<tr>
+<td>$f_n \xrightarrow{L^p} f$</td>
+<td>convergence in the $L^p$ norm</td>
+</tr>
+<tr>
+<td>$x_n \rightharpoonup x$, $f_n \overset{\ast}{\rightharpoonup} f$</td>
+<td>weak convergence, weak-$\ast$ convergence</td>
+</tr>
+<tr>
+<td>$\mu_n \to \mu$ weakly, $\Rightarrow$</td>
+<td>weak convergence of measures, convergence in distribution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gerald B. Folland, <em>Real Analysis: Modern Techniques and Their Applications</em>, 2nd ed. (Wiley, 1999), for the modes of convergence collected with their counterexamples and for the weak topologies.</li>
+<li>Halsey L. Royden and Patrick M. Fitzpatrick, <em>Real Analysis</em>, 4th ed. (Pearson, 2010), for the implications between the modes and the interchange theorems.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for weak and weak-$\ast$ convergence and the Banach–Alaoglu theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

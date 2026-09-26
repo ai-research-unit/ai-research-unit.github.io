@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Atiyah–Singer Index Theorem and K-Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-atiyahsinger-index-theorem-and-k-theory"><strong>The Atiyah–Singer Index Theorem and K-Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The index of an elliptic operator is an analytic integer: the difference of the dimensions of the kernel and the cokernel. The index theorem of Atiyah and Singer identifies it with a topological integer built from the symbol of the operator, and the language in which the identification is cleanest is topological $K$-theory, the Grothendieck group of vector bundles. The theorem is the meeting point of the two halves of this category: the Clifford modules and the twisted Cauchy–Riemann operator of the preceding article supply the operators, and the characteristic classes of the differential-geometric layer supply the topological invariants, with $K$-theory the ring in which the two are compared.</p>
+<p>This article develops the $K$-theory, states the theorem and its local form, sketches the heat-kernel pro, and computes the spin and de Rham cases. The twisted operator whose index was computed in <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em> is the principal example; the characteristic classes, connections and curvature are; and the Clifford modules are from <em>Spin Representations and Clifford Modules</em>. The index theorem itself is standard mathematics and is stated as such.</p>
+<h2 id="vector-bundles-and-topological-k-theory">Vector Bundles and Topological K-Theory</h2>
+<p><strong>Definition.</strong> Let $X$ be a compact Hausdorff space and let $\mathrm{Vect}(X)$ be the set of isomorphism classes of complex vector bundles on $X$. The <strong>direct sum</strong> $\oplus$ makes $\mathrm{Vect}(X)$ a commutative monoid with identity the trivial bundle of rank zero, and the <strong>topological K-group</strong> $K^0(X)$ is the Grothendieck group of this monoid:</p>
+<p>$$
+K^0(X)=\Bigl\{\,[E]-[F]\ :\ E,F\in\mathrm{Vect}(X)\,\Bigr\}\big/\sim, \qquad [E]-[F]\sim[E']-[F']\iff E\oplus F'\oplus G\cong E'\oplus F\oplus G.
+$$</p>
+<p><strong>Theorem.</strong> $K^0(X)$ is an abelian group, every element is a difference of classes of honest bundles, and the <strong>rank</strong> map $r\colon K^0(X)\to\mathbb{Z}$, $[E]-[F]\mapsto\operatorname{rank}E-\operatorname{rank}F$, is a surjective homomorphism. Its kernel is the <strong>reduced group</strong> $\widetilde K^0(X)$, so that</p>
+<p>$$
+K^0(X)\cong\widetilde K^0(X)\oplus\mathbb{Z}.
+$$</p>
+<p><strong>Proof.</strong> The Grothendieck construction on a commutative monoid always gives a group; the relation exhibited is the standard one for the free abelian group on $\mathrm{Vect}(X)$ modulo the submonoid of relations $[E\oplus F]-[E]-[F]$. The rank is well defined on the relations and surjective because $\mathbb{C}^n$ has rank $n$. $\square$</p>
+<p><strong>Definition.</strong> The <strong>tensor product</strong> of bundles, $(E\otimes F)_x=E_x\otimes F_x$, makes $K^0(X)$ a commutative ring with unit the trivial line bundle; the operations are</p>
+<p>$$
+[E]\cdot[F]=[E\otimes F], \qquad [E]+[F]=[E\oplus F].
+$$</p>
+<p><strong>Example.</strong> For a point, $\mathrm{Vect}(\mathrm{pt})=\mathbb{N}$ and $K^0(\mathrm{pt})=\mathbb{Z}$. For the circle, $\widetilde K^0(S^1)=0$ and $K^0(S^1)=\mathbb{Z}$; for the two-sphere, $\widetilde K^0(S^2)=\mathbb{Z}$, generated by the class of the Hopf line bundle minus the trivial bundle, and the integer is the degree.</p>
+<p><strong>Remark.</strong> The relation to the form theory is through the exterior algebra: for a vector bundle $E$ of rank $n$ the classes $\Lambda^kE$ and the <strong>total exterior power</strong> $\lambda_t(E)=\sum_k[\Lambda^kE]t^k$ generate a $\lambda$-ring structure on $K^0(X)$, and the exterior powers are the characteristic-class generators of the next section. The Clifford modules of the previous articles are themselves bundles of modules whose classes lie in $K^0(X)$, and the Clifford multiplication gives the operations that make $K^0(X)$ a module over the Clifford bundle.</p>
+<h2 id="bott-periodicity-and-the-graded-groups">Bott Periodicity and the Graded Groups</h2>
+<p><strong>Definition.</strong> The <strong>suspension</strong> of $X$ is $SX=S^1\wedge X$, and the higher $K$-groups are</p>
+<p>$$
+K^{-n}(X)=\widetilde K^0(S^n\wedge X), \qquad K^{n}(X)=K^{-n}(X)
+$$</p>
+<p>for $n\geq0$, with $K^1(X)=\widetilde K^0(SX)$.</p>
+<p><strong>Theorem (Bott periodicity).</strong> For every compact $X$ there is a natural isomorphism</p>
+<p>$$
+K^{n+2}(X)\cong K^n(X),
+$$</p>
+<p>and consequently $K^{*}(X)=K^0(X)\oplus K^1(X)$ is a $\mathbb{Z}/2$-graded ring with $K^0\cdot K^0\subseteq K^0$, $K^0\cdot K^1\subseteq K^1$, $K^1\cdot K^1\subseteq K^0$.</p>
+<p><strong>Proof sketch.</strong> The periodicity is equivalent to the statement that the clutching construction gives $K^1(X)\cong[X,U(\infty)]$, the group of homotopy classes of maps into the infinite unitary group, and to the Bott periodicity of the homotopy groups $\pi_{n}(U(\infty))=\mathbb{Z}$ for $n$ odd and $0$ for $n$ even. The graded ring structure is the tensor product of bundles combined with the suspension. $\square$</p>
+<p><strong>Example.</strong> For a sphere, $K^0(S^{2k})=\mathbb{Z}^2$ and $K^0(S^{2k+1})=\mathbb{Z}$, the periodicity visible in the ranks and the Hopf classes. For a compact Riemann surface of genus $g$, $K^{0}$ has rank two — the rank and the degree — the reduced group $\widetilde K^{0}$ is $\mathbb{Z}$, generated by the class of the Hopf bundle pulled back along the collapse to the two-sphere, and $K^{1}$ has rank $2g$, so that the total rank of $K^{*}$ is $2+2g$, in agreement with the total rank of $H^{*}$.</p>
+<p><strong>Remark.</strong> The period two of topological $K$-theory is not the period eight of the real Clifford classification; the two are related by the <strong>realification</strong> and <strong>complexification</strong> maps and by the groups $KO^{*}$, whose period is eight, exactly as the real and complex Clifford algebras of <em>Bott Periodicity and the Classification</em> differ by a factor of two in their period. The eightfold way of the earlier articles is the real $KO$-theoretic statement, and the two-periodicity here is its complex shadow.</p>
+<h2 id="the-chern-character">The Chern Character</h2>
+<p><strong>Definition.</strong> For a complex vector bundle $E$ with a connection of curvature $R$, the <strong>Chern character</strong> is</p>
+<p>$$
+\operatorname{ch}(E)=\operatorname{tr}\exp\!\left(\frac{iR}{2\pi}\right)=\operatorname{rank}E+\sum_{k\geq1}\frac{1}{k!}\operatorname{tr}\!\left(\frac{iR}{2\pi}\right)^{k}\in H^{\mathrm{ev}}_{dR}(X;\mathbb{Q}),
+$$</p>
+<p>a closed form whose de Rham class is independent of the connection. In terms of the Chern classes, $\operatorname{ch}(E)=\operatorname{rank}E+c_1(E)+\tfrac12(c_1^2-2c_2)+\cdots$, and for a line bundle $L$, $\operatorname{ch}(L)=1+c_1(L)$.</p>
+<p><strong>Theorem.</strong> The Chern character is a ring homomorphism</p>
+<p>$$
+\operatorname{ch}\colon K^0(X)\longrightarrow H^{\mathrm{ev}}_{dR}(X;\mathbb{Q}), \qquad \operatorname{ch}(E\oplus F)=\operatorname{ch}(E)+\operatorname{ch}(F), \quad \operatorname{ch}(E\otimes F)=\operatorname{ch}(E)\operatorname{ch}(F),
+$$</p>
+<p>and after tensoring with $\mathbb{Q}$ it is an isomorphism $\operatorname{ch}\colon K^*(X)\otimes\mathbb{Q}\to H^*(X;\mathbb{Q})$ onto cohomology, carrying $K^0$ to the even part and $K^1$ to the odd part.</p>
+<p><strong>Proof sketch.</strong> Additivity and multiplicativity follow from the trace identities $\operatorname{tr}\exp(A\oplus B)=\operatorname{tr}e^A+\operatorname{tr}e^B$ and $\operatorname{tr}\exp(A\otimes1+1\otimes B)=\operatorname{tr}e^A\cdot\operatorname{tr}e^B$. The statement that the induced map on $K\otimes\mathbb{Q}$ is an isomorphism is a theorem of Atiyah–Hirzebruch; it says that from the rational point of view $K$-theory is even cohomology, with the integral lattice carrying the refinement. $\square$</p>
+<p><strong>Corollary.</strong> The Chern character converts the tensor product of bundles into the cup product of classes, so computations in $K$-theory can be performed in cohomology after tensoring with $\mathbb{Q}$. The integrality of the results, which is the content of the index theorem, is the information lost in this passage.</p>
+<h2 id="algebraic-k-theory">Algebraic K-Theory</h2>
+<p>The topological theory has an algebraic counterpart, and for commutative C*-algebras the two agree.</p>
+<p><strong>Definition.</strong> Let $R$ be a unital ring. Let $\mathcal{P}(R)$ be the set of isomorphism classes of finitely generated projective left $R$-modules. The <strong>algebraic K-group</strong> $K_0(R)$ is the Grothendieck group of the monoid $(\mathcal{P}(R),\oplus)$:</p>
+<p>$$
+K_0(R)=\Bigl\{\,[P]-[Q]\ :\ P,Q\in\mathcal{P}(R)\,\Bigr\}\big/\sim .
+$$</p>
+<p>The group $K_0(R)$ is generated by the classes $[P]$ of finitely generated projective modules with the relations $[P\oplus Q]=[P]+[Q]$.</p>
+<p><strong>Theorem (Serre–Swan).</strong> Let $X$ be a compact Hausdorff space and $C(X)$ its ring of continuous complex-valued functions. Then the functor $\Gamma$ of global sections is an equivalence between complex vector bundles on $X$ and finitely generated projective $C(X)$-modules, and it induces an isomorphism</p>
+<p>$$
+K^0(X)\cong K_0(C(X)).
+$$</p>
+<p><strong>Proof sketch.</strong> A bundle $E\to X$ has a module of sections $\Gamma(E)$ which is finitely generated and projective because $E$ is a direct summand of a trivial bundle, and every finitely generated projective module arises this way; the two constructions are inverse up to natural isomorphism. $\square$</p>
+<p><strong>Remark.</strong> The higher algebraic $K$-groups $K_n(R)$ are defined by the $+$-construction or by Quillen's $Q$-construction, and $K_1(R)=GL(R)^{\mathrm{ab}}=GL(R)/E(R)$ classifies the units modulo elementary matrices. The <strong>fundamental theorem</strong> of algebraic $K$-theory, $K_n(R[t,t^{-1}])\cong K_{n-1}(R)\oplus K_n(R)$, is the algebraic form of Bott periodicity: the Laurent polynomial ring adds a circle, and the suspension shifts the degree by one. The comparison with the topological theory is the content of the Chern character of the next sections and of the index theorem itself.</p>
+<h2 id="elliptic-operators-symbols-and-the-analytic-index">Elliptic Operators, Symbols and the Analytic Index</h2>
+<p><strong>Definition.</strong> Let $M$ be a closed smooth manifold and let $D\colon\Gamma(E)\to\Gamma(F)$ be a linear differential operator of order $m$ between smooth vector bundles. The <strong>principal symbol</strong> is the bundle map</p>
+<p>$$
+\sigma_m(D)\colon\pi^{*}E\longrightarrow\pi^{*}F, \qquad \sigma_m(D)(x,\xi)=\lim_{t\to\infty}t^{-m}e^{-itf}D(e^{itf}s)(x)
+$$</p>
+<p>for a function $f$ with $df_x=\xi$ and a section $s$ with $s(x)=v$, a well-defined map on the cotangent bundle $\pi\colon T^{*}M\to M$. The operator is <strong>elliptic</strong> when $\sigma_m(D)(x,\xi)$ is invertible for every $\xi\neq0$.</p>
+<p><strong>Definition.</strong> For an elliptic operator on a closed manifold the <strong>analytic index</strong> is</p>
+<p>$$
+\operatorname{ind}_a(D)=\dim\ker D-\dim\operatorname{coker}D,
+$$</p>
+<p>a finite integer, equal to $\dim\ker D-\dim\ker D^{*}$ when $M$ carries a Riemannian metric and the adjoint is taken with respect to the $L^2$ structures.</p>
+<p><strong>Definition.</strong> The symbol of an elliptic operator, restricted to the unit sphere bundle and extended by homogeneity, defines a class</p>
+<p>$$
+[\sigma(D)]\in K^0_c(TM)\cong K^0(TM,TM\setminus M),
+$$</p>
+<p>the <strong>symbol class</strong>, the $K$-theory of the cotangent bundle with compact supports along the fibres. For a $\mathbb{Z}/2$-graded operator $D=D_+\oplus D_-$ the symbol is the difference of the symbol classes of the two halves.</p>
+<p><strong>Theorem (homotopy invariance of the index).</strong> The analytic index is constant on the open set of elliptic symbols and depends only on the symbol class $[\sigma(D)]\in K^0_c(TM)$; it defines a homomorphism</p>
+<p>$$
+\operatorname{ind}_a\colon K^0_c(TM)\longrightarrow\mathbb{Z}.
+$$</p>
+<p><strong>Proof sketch.</strong> Ellipticity is an open condition on symbols, and the space of elliptic symbols is a union of components indexed by classes in $K^0_c(TM)$. Within a component the kernel and cokernel dimensions can change, but only by equal amounts, so the difference is constant; this is the continuity of the index, proved by a deformation argument using the parametrices of the operators. $\square$</p>
+<h2 id="the-topological-index-and-the-atiyahsinger-theorem">The Topological Index and the Atiyah–Singer Theorem</h2>
+<p><strong>Definition.</strong> Let $M$ be a closed manifold, embedded in a Euclidean space $\mathbb{R}^{N}$ with normal bundle $\nu$, and let $U$ be a tubular neighbourhood of $M$ in $\mathbb{R}^{N}$. The <strong>topological index</strong> is the composite</p>
+<p>$$
+\operatorname{ind}_t\colon K^0_c(TM)\xrightarrow{\ \cong\ }K^0_c(T\nu)\xrightarrow{\ \cong\ }K^0_c(TU)\xrightarrow{\ \cong\ }K^0_c(T\mathbb{R}^{N})\xrightarrow{\ \cong\ }K^0(\mathrm{pt})\cong\mathbb{Z},
+$$</p>
+<p>in which the first map is the Thom isomorphism of the normal bundle, the second is the excision isomorphism carried by the tubular neighbourhood, and the last is the Bott periodicity isomorphism of the tangent bundle of $\mathbb{R}^{N}$. The composite is independent of the embedding, and it is the map that assigns to a symbol class the index of any elliptic operator having that symbol.</p>
+<p><strong>Theorem (Atiyah–Singer).</strong> Let $M$ be a closed smooth manifold and let $D$ be an elliptic operator on $M$. Then</p>
+<p>$$
+\operatorname{ind}_a(D)=\operatorname{ind}_t\bigl([\sigma(D)]\bigr).
+$$</p>
+<p>In particular the analytic index depends only on the symbol class, and the symbolic homomorphism $\operatorname{ind}_a$ of the previous section equals the topological homomorphism.</p>
+<p><strong>Proof sketch.</strong> Both sides are homomorphisms $K^0_c(TM)\to\mathbb{Z}$; the symbol map $\sigma\mapsto[\sigma(D)]$ is an isomorphism from the symbol classes to $K^0_c(TM)$ (the difference construction), so it suffices to verify the identity on a generating set. One checks it for the Bott class, for which the operator is the Dolbeault operator on a projective space and the index is computed by a direct dimension count; multiplicativity under products and the naturality of the symbol and the topological index then extend the identity to all classes. This is the proof of Atiyah–Singer; the heat-kernel proof of the next section is the alternative. $\square$</p>
+<p><strong>Theorem (cohomological form).</strong> For the operators whose symbols arise from classical complexes the index is a characteristic number. For the Dolbeault operator $\bar\partial_E$ of a holomorphic bundle $E$ on a compact complex manifold $X$,</p>
+<p>$$
+\operatorname{ind}(\bar\partial_E)=\int_X\operatorname{ch}(E)\wedge\operatorname{td}(TX),
+$$</p>
+<p>and for the Cauchy–Riemann operator of the spinor bundle twisted by a Clifford module bundle $W$ on a closed spin manifold $M$,</p>
+<p>$$
+\operatorname{ind}=\int_M\hat{A}(TM)\wedge\operatorname{ch}(W).
+$$</p>
+<p>In general the Chern character converts the $K$-theoretic statement into a cohomological one: the cohomological Thom isomorphism is multiplication by a characteristic class of the bundle — the Todd class in the complex case — and the remaining step is the integration over the manifold.</p>
+<p><strong>Proof sketch.</strong> The cohomological version follows from the $K$-theoretic statement by applying the Chern character, which converts the Thom isomorphism into multiplication by the Todd class and the pushforward into integration over the manifold. $\square$</p>
+<h2 id="the-local-index-formula-and-the-heat-kernel-proof">The Local Index Formula and the Heat-Kernel Proof</h2>
+<p><strong>Theorem (Atiyah–Singer–Patodi, local form).</strong> Let $D$ be an elliptic operator on a closed manifold, and let $e^{-tD^{*}D}$, $e^{-tDD^{*}}$ be the heat kernels of the Laplace-type operators formed from $D$ and its adjoint. Then for every $t>0$</p>
+<p>$$
+\operatorname{ind}_a(D)=\operatorname{Tr}\bigl(e^{-tD^{*}D}\bigr)-\operatorname{Tr}\bigl(e^{-tDD^{*}}\bigr),
+$$</p>
+<p>and as $t\to0^{+}$ the pointwise supertrace of the heat kernel has an asymptotic expansion whose constant term is the local index density, a differential form depending only on the symbol and the geometry; integrating it gives the topological index.</p>
+<p><strong>Proof sketch.</strong> The trace identity is the McKean–Singer argument of <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em>: the nonzero spectra of $D^{*}D$ and $DD^{*}$ coincide, so the supertrace selects the kernel difference and is $t$-independent. The heat kernel has a short-time asymptotic expansion $K(t,x,x)\sim\sum_{k\geq-n/2}a_k(x)t^{k}$ with local coefficients built from the symbol; the supertrace kills all but one coefficient, and the surviving term is identified with $\operatorname{ch}([\sigma(D)])\operatorname{td}(TM)$ by the Getzler calculus or the Atiyah–Singer–Patodi approach. $\square$</p>
+<p><strong>Remark.</strong> The heat-kernel proof is a local theorem in a strong sense: the index density is a local geometric expression, so the integral of a local quantity is a topological invariant. This is the analytic content of the theorem and the source of the local index formula used in the applications, where the density can be computed from the curvature and integrated to give the index.</p>
+<h2 id="the-spin-case-and-examples">The Spin Case and Examples</h2>
+<p><strong>Theorem (spin case).</strong> Let $(M,g)$ be a closed spin manifold of even dimension, let $E=S\otimes W$ be a twisted Clifford module bundle with twisting bundle $W$, and let $D_E$ be the twisted Cauchy–Riemann operator. Then the symbol class is the class of the spinor bundle together with the twisting, and the index reduces to the characteristic number</p>
+<p>$$
+\operatorname{ind}(D_E)=\int_M\hat{A}(TM)\operatorname{ch}(W).
+$$</p>
+<p>In particular, for untwisted $W$ the index is the $\hat{A}$-genus of $M$, and the spin case of the theorem is the statement that the index of the Cauchy–Riemann operator is a topological characteristic number.</p>
+<p><strong>Proof.</strong> The symbol of $D_E$ is Clifford multiplication by $i\xi$, invertible off the zero section, so the operator is elliptic and its symbol class is the $K$-theory class of the twisted spinor bundle, the class of the spinor bundle multiplied by the class of $W$. Substituting this class in the cohomological form of the theorem gives the stated density: the Thom isomorphism converts the symbol class into a characteristic class on $M$, and the standard computation of the index density of the Cauchy–Riemann operator — the Chern character of the spinor bundle under the Thom isomorphism, its multiplicativity $\operatorname{ch}(S\otimes W)=\operatorname{ch}(S)\operatorname{ch}(W)$, and the identification of the spinor class with the $\hat{A}$-class — produces $\hat{A}(TM)\operatorname{ch}(W)$ in the top degree. For $W$ trivial the density is $\hat{A}(TM)$, and the index is the $\hat{A}$-genus. $\square$</p>
+<p><strong>Example (Gauss–Bonnet).</strong> Let $D=d+d^{*}$ be the de Rham operator on the even and odd parts of the exterior algebra of a closed oriented even-dimensional manifold. It is elliptic and self-adjoint, and its index is the Euler characteristic; the theorem gives</p>
+<p>$$
+\chi(M)=\operatorname{ind}(d+d^{*})=\int_Me(TM),
+$$</p>
+<p>the Euler class case of the index theorem. For the two-sphere, $\chi(S^2)=2=\int_{S^2}e(TS^2)$.</p>
+<p><strong>Example (signature).</strong> The signature operator on the middle-degree forms of a closed oriented $4k$-manifold has index the signature $\sigma(M)$, and the theorem gives $\sigma(M)=\int_ML(TM)$ with $L$ the $L$-genus, the Hirzebruch signature theorem.</p>
+<p><strong>Example (Riemann–Roch).</strong> The Dolbeault operator $\bar\partial_E$ on a compact complex manifold $X$ with coefficients in a holomorphic bundle $E$ has index the holomorphic Euler characteristic $\chi(X,E)=\sum_q(-1)^q\dim H^q(X,E)$, and the theorem gives</p>
+<p>$$
+\chi(X,E)=\int_X\operatorname{ch}(E)\operatorname{td}(TX),
+$$</p>
+<p>the Hirzebruch–Riemann–Roch theorem. For a compact Riemann surface of genus $g$ and a line bundle $L$ of degree $k$ this reads $\chi(X,L)=k+1-g$, the classical Riemann–Roch.</p>
+<p><strong>Remark.</strong> The four examples are the standard specialisations of the index theorem, and each identifies an analytic index with a characteristic number: the Euler class for the de Rham complex, the $L$-genus for the signature, the Todd class for the Dolbeault complex, and the $\hat{A}$-class for the Cauchy–Riemann operator. The Clifford-module theory of this category enters through the spin case, and the exterior-algebra structure that generates the de Rham and signature complexes is the Clifford algebra of the differential forms.</p>
+<h2 id="summary">Summary</h2>
+<p>Topological $K$-theory is the Grothendieck group $K^0(X)$ of complex vector bundles with $[E]+[F]=[E\oplus F]$, a commutative ring under the tensor product; its higher groups are defined by suspension and are two-periodic by Bott periodicity, and the Chern character $\operatorname{ch}$ is a ring homomorphism to even cohomology which becomes an isomorphism after tensoring with $\mathbb{Q}$. The algebraic counterpart is $K_0(R)$, the Grothendieck group of finitely generated projective modules, which for a compact space agrees with the topological group through the Serre–Swan equivalence $K^0(X)\cong K_0(C(X))$; the fundamental theorem of algebraic $K$-theory is the algebraic form of Bott periodicity.</p>
+<p>An elliptic operator has a symbol and an analytic index, and the index depends only on the symbol class $[\sigma(D)]\in K^0_c(TM)$. The Atiyah–Singer theorem identifies the analytic index with the topological index, the pushforward of the symbol class to a point; in cohomological form the index is a characteristic number, the Todd class for the Dolbeault operator and the $\hat{A}$-class for the Cauchy–Riemann operator. The local index formula identifies the index with the constant term of the short-time heat-kernel supertrace, and the heat-kernel proof exhibits the index density as a local geometric expression integrating to a topological invariant.</p>
+<p>For a closed spin manifold with a twisted Clifford module bundle the index reduces to the characteristic number $\int_M\hat{A}(TM)\operatorname{ch}(W)$; the untwisted case is the $\hat{A}$-genus. The standard specialisations are Gauss–Bonnet, $\chi(M)=\int_Me(TM)$; the signature theorem, $\sigma(M)=\int_ML(TM)$; the Riemann–Roch theorem, $\chi(X,E)=\int_X\operatorname{ch}(E)\operatorname{td}(TX)$; and the spin index.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Vect}(X)$</td>
+<td>Monoid of isomorphism classes of complex vector bundles</td>
+</tr>
+<tr>
+<td>$K^0(X)$</td>
+<td>Grothendieck group of $\mathrm{Vect}(X)$; ring under $\otimes$</td>
+</tr>
+<tr>
+<td>$\widetilde K^0(X)$</td>
+<td>Reduced group, kernel of the rank map</td>
+</tr>
+<tr>
+<td>$K^{-n}(X)=\widetilde K^0(S^n\wedge X)$</td>
+<td>Higher $K$-groups, two-periodic</td>
+</tr>
+<tr>
+<td>$\lambda_t(E)=\sum_k[\Lambda^kE]t^k$</td>
+<td>Total exterior power, $\lambda$-ring structure</td>
+</tr>
+<tr>
+<td>$\operatorname{ch}(E)=\operatorname{tr}\exp(iR/2\pi)$</td>
+<td>Chern character to $H^{\mathrm{ev}}_{dR}(X;\mathbb{Q})$</td>
+</tr>
+<tr>
+<td>$K_0(R)$, $K_1(R)$</td>
+<td>Grothendieck group of f.g. projective modules; units mod elementary matrices</td>
+</tr>
+<tr>
+<td>$K^0(X)\cong K_0(C(X))$</td>
+<td>Serre–Swan</td>
+</tr>
+<tr>
+<td>$\sigma_m(D)$, $\sigma(D)(x,\xi)$</td>
+<td>Principal symbol</td>
+</tr>
+<tr>
+<td>$\operatorname{ind}_a(D)=\dim\ker D-\dim\operatorname{coker}D$</td>
+<td>Analytic index</td>
+</tr>
+<tr>
+<td>$[\sigma(D)]\in K^0_c(TM)$</td>
+<td>Symbol class, compactly supported along the fibres</td>
+</tr>
+<tr>
+<td>$\operatorname{ind}_t$</td>
+<td>Topological index, pushforward $K^0_c(TM)\to\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\operatorname{td}(TM)$, $\hat{A}(TM)$, $L(TM)$, $e(TM)$</td>
+<td>Todd, $\hat{A}$, $L$ and Euler classes</td>
+</tr>
+<tr>
+<td>$\int_X\operatorname{ch}(E)\operatorname{td}(TX)$, $\int_M\hat{A}(TM)\operatorname{ch}(W)$</td>
+<td>Cohomological forms of the index (Riemann–Roch, spin)</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}(e^{-tD^{*}D})-\operatorname{Tr}(e^{-tDD^{*}})$</td>
+<td>Heat-kernel supertrace, equal to the index</td>
+</tr>
+<tr>
+<td>$\chi(M)=\int_Me(TM)$</td>
+<td>Gauss–Bonnet</td>
+</tr>
+<tr>
+<td>$\sigma(M)=\int_ML(TM)$</td>
+<td>Signature theorem</td>
+</tr>
+<tr>
+<td>$\chi(X,E)=\int_X\operatorname{ch}(E)\operatorname{td}(TX)$</td>
+<td>Hirzebruch–Riemann–Roch</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael F. Atiyah, <em>K-Theory</em> (Benjamin, 1967), for the Grothendieck group of vector bundles, Bott periodicity and the Chern character.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The index of elliptic operators I, III," <em>Annals of Mathematics</em> <strong>87</strong> (1968), 484–530 and 546–604, for the index theorem and its $K$-theoretic formulation.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the Thom isomorphism, characteristic classes and the cohomological form of the index theorem.</li>
+<li>Peter B. Gilkey, <em>Invariance Theory, the Heat Equation and the Atiyah–Singer Index Theorem</em> (CRC Press, 2nd ed. 1995), for the heat-kernel proof and the local index formula.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the spin case and the $\hat{A}$-genus.</li>
+<li>Charles A. Weibel, <em>The K-Book: An Introduction to Algebraic K-Theory</em> (American Mathematical Society, 2013), for $K_0$, $K_1$ and the fundamental theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

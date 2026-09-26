@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Continuous Harmonic Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-continuous-harmonic-analysis"><strong>Biquaternion Continuous Harmonic Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces harmonic analysis for biquaternion-valued functions of a real variable. It follows the article on biquaternion discrete harmonic analysis, which defined the discrete biquaternion Fourier transform, and it uses the analysis article, which defined the biquaternion gradient, the d'Alembertian, and the convective derivative on the four-dimensional subspaces of $\mathbb{B}$.</p>
+<p>The treatment is purely mathematical. The goal is to define the continuous biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms, and identify the points where the biquaternion structure creates genuinely new phenomena. The relation to the differential operators of the analysis article is the main structural content of this article.</p>
+<p>The key structural fact is the same as in the discrete case: the Fourier kernel is a biquaternion exponential, and the exponential is defined by a <strong>root of $-1$</strong>. The choice of root determines the nature of the transform, and the transform decomposes into a finite number of ordinary complex Fourier transforms. The genuinely biquaternionic content is the choice of root, the decomposition, and the vanishing-norm issue.</p>
+<p>Throughout, a biquaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
+$$</p>
+<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.</p>
+<p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.</p>
+<h2 id="the-fourier-kernel">The Fourier Kernel</h2>
+<h3 id="definition">Definition</h3>
+<p>Fix a root $\rho$ of $-1$, i.e., an element $\rho \in \mathbb{B}$ with</p>
+<p>$$
+\rho^2 = -e_0.
+$$</p>
+<p>The <strong>biquaternion Fourier kernel</strong> is the function</p>
+<p>$$
+W(t, \omega) = \exp(-2\pi \rho \omega t), \qquad t, \omega \in \mathbb{R}.
+$$</p>
+<p>Because $\rho^2 = -e_0$, the kernel takes the closed form</p>
+<p>$$
+W(t, \omega) = \cos(2\pi \omega t) \, e_0 - \sin(2\pi \omega t) \, \rho,
+$$</p>
+<p>where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi \omega t$. The kernel is therefore a unit biquaternion:</p>
+<p>$$
+N(W(t, \omega)) = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = 1, \qquad N(W(t, \omega)) = e_0.
+$$</p>
+<p>In particular, the kernel is always invertible, and its inverse is its quaternion conjugate:</p>
+<p>$$
+W(t, \omega)^{-1} = \overline{W(t, \omega)} = \cos(2\pi \omega t) \, e_0 + \sin(2\pi \omega t) \, \rho.
+$$</p>
+<h3 id="the-condition-on-the-root">The Condition on the Root</h3>
+<p>A biquaternion $\rho$ satisfies $\rho^2 = -e_0$ if and only if it is a pure biquaternion (i.e., its scalar part vanishes) and</p>
+<p>$$
+\Re(\rho) \perp \Im(\rho), \qquad \|\Re(\rho)\|^2 - \|\Im(\rho)\|^2 = 1,
+$$</p>
+<p>where $\Re(\rho)$ and $\Im(\rho)$ are the real and imaginary quaternion parts of $\rho$. This is the content of the classification of the biquaternion roots of $-1$ given in the division theory article. The classification yields three families: the scalar imaginary $\rho = \pm i$, the unit pure real quaternions $\rho = \pm \mu_{\mathbb{R}}$, and the non-trivial roots $\rho = b\mu + d\nu i$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$.</p>
+<p>The three families give three essentially different Fourier transforms, as in the discrete case.</p>
+<h2 id="the-continuous-transform-pair">The Continuous Transform Pair</h2>
+<h3 id="definition_1">Definition</h3>
+<p>Let $f : \mathbb{R} \to \mathbb{B}$ be a biquaternion-valued function. The <strong>continuous biquaternion Fourier transform</strong> of $f$ is</p>
+<p>$$
+F(\omega) = \int_{-\infty}^{\infty} W(t, \omega) f(t) \, dt = \int_{-\infty}^{\infty} \exp(-2\pi \rho \omega t) f(t) \, dt, \qquad \omega \in \mathbb{R},
+$$</p>
+<p>provided the integral converges. The <strong>inverse transform</strong> is</p>
+<p>$$
+f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega = \int_{-\infty}^{\infty} \exp(2\pi \rho \omega t) F(\omega) \, d\omega,
+$$</p>
+<p>provided the integral converges.</p>
+<p>The placement of the kernel on the <strong>left</strong> of $f(t)$ is a choice. An alternative transform has the kernel on the right:</p>
+<p>$$
+F(\omega) = \int_{-\infty}^{\infty} f(t) \, W(t, \omega) \, dt.
+$$</p>
+<p>The two transforms are related as in the discrete case: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $\overline{K(t,\omega) f(t)} = \overline{f(t)}\,\overline{K(t,\omega)}$.)</p>
+<h3 id="convergence">Convergence</h3>
+<p>The integral defining the transform converges absolutely if $f$ is integrable, i.e., if</p>
+<p>$$
+\int_{-\infty}^{\infty} \|f(t)\|_E \, dt < \infty.
+$$</p>
+<p>Under this condition, the transform $F$ is bounded and uniformly continuous:</p>
+<p>$$
+\|F(\omega)\|_E \leq \int_{-\infty}^{\infty} \|f(t)\|_E \, dt, \qquad \omega \in \mathbb{R}.
+$$</p>
+<p>The convergence of the inverse transform requires additional conditions, as in the ordinary complex case. The standard conditions are:</p>
+<ul>
+<li>$f$ is integrable and continuous at the point $t$.</li>
+<li>$F$ is integrable.</li>
+<li>The kernel is chosen so that the inversion formula holds pointwise.</li>
+</ul>
+<p>Under these conditions, the inverse formula holds at every point of continuity of $f$.</p>
+<h3 id="the-riemannlebesgue-lemma">The Riemann–Lebesgue Lemma</h3>
+<p><strong>Theorem (Riemann–Lebesgue).</strong> If $f : \mathbb{R} \to \mathbb{B}$ is integrable, then</p>
+<p>$$
+\lim_{|\omega| \to \infty} \|F(\omega)\|_E = 0.
+$$</p>
+<p><strong>Proof.</strong> The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement. $\square$</p>
+<h3 id="the-inversion-theorem">The Inversion Theorem</h3>
+<p><strong>Theorem (inversion).</strong> Let $f : \mathbb{R} \to \mathbb{B}$ be integrable and continuous at a point $t \in \mathbb{R}$, and let $F$ be integrable. Then</p>
+<p>$$
+f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega.
+$$</p>
+<p><strong>Proof.</strong> The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_0, \rho, \nu, \xi\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform. $\square$</p>
+<h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
+<p><strong>Theorem (Plancherel).</strong> The transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{B})$ of square-integrable biquaternion-valued functions, with</p>
+<p>$$
+\int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
+$$</p>
+<p><strong>Proof.</strong> The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below. Since the factorization is an isometry on each complex component, the total norm is preserved. $\square$</p>
+<p><strong>Corollary (Parseval).</strong> For $f, g \in L^2(\mathbb{R}, \mathbb{B})$,</p>
+<p>$$
+\int_{-\infty}^{\infty} \overline{f(t)} g(t) \, dt = \int_{-\infty}^{\infty} \overline{F(\omega)} G(\omega) \, d\omega.
+$$</p>
+<h2 id="factorization-into-complex-fourier-transforms">Factorization into Complex Fourier Transforms</h2>
+<h3 id="the-change-of-basis">The Change of Basis</h3>
+<p>Let $\rho$ be the root of $-1$ used in the kernel. Choose two other unit pure biquaternions $\nu$ and $\xi$ such that</p>
+<p>$$
+\rho \perp \nu, \qquad \nu \perp \xi, \qquad \xi \perp \rho, \qquad \rho \nu = \xi.
+$$</p>
+<p>The four elements $\{e_0, \rho, \nu, \xi\}$ form a <strong>complex orthonormal basis</strong> of $\mathbb{B}$. Any biquaternion can be written in this basis as</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_\rho \rho + Q_\nu \nu + Q_\xi \xi,
+$$</p>
+<p>with $Q_0, Q_\rho, Q_\nu, Q_\xi \in \mathbb{C}$.</p>
+<h3 id="the-factorization">The Factorization</h3>
+<p>Writing the function $f$ in the new basis,</p>
+<p>$$
+f(t) = w(t) e_0 + x(t) \rho + y(t) \nu + z(t) \xi,
+$$</p>
+<p>and substituting into the transform with the closed form of the kernel, we obtain</p>
+<p>$$
+F(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, e_0 - \sin(2\pi \omega t) \, \rho\right) \left(w(t) e_0 + x(t) \rho + y(t) \nu + z(t) \xi\right) dt.
+$$</p>
+<p>Expanding the product and collecting terms by basis element gives four sums:</p>
+<p>$$
+F(\omega) = F_0(\omega) e_0 + F_\rho(\omega) \rho + F_\nu(\omega) \nu + F_\xi(\omega) \xi,
+$$</p>
+<p>where</p>
+<p>$$
+F_0(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, w(t) + \sin(2\pi \omega t) \, x(t)\right) dt,
+$$</p>
+<p>$$
+F_\rho(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, x(t) - \sin(2\pi \omega t) \, w(t)\right) dt,
+$$</p>
+<p>$$
+F_\nu(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, y(t) + \sin(2\pi \omega t) \, z(t)\right) dt,
+$$</p>
+<p>$$
+F_\xi(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, z(t) - \sin(2\pi \omega t) \, y(t)\right) dt.
+$$</p>
+<h3 id="the-complex-fourier-transforms">The Complex Fourier Transforms</h3>
+<p>Each of the four sums is a complex linear combination of the cosine and sine transforms of the real and imaginary parts of the complex coefficients. Using the complex exponential, we can write each sum as a combination of two ordinary complex Fourier transforms:</p>
+<p>$$
+F_\bullet(\omega) = \frac{1}{2}\left(\hat{G}_\bullet^{(+)}(\omega) + \hat{G}_\bullet^{(-)}(\omega)\right) + \frac{1}{2i}\left(\hat{G}_\bullet^{(+)}(\omega) - \hat{G}_\bullet^{(-)}(\omega)\right),
+$$</p>
+<p>where $\hat{G}_\bullet^{(\pm)}(\omega)$ are the ordinary complex Fourier transforms of the complex functions $G_\bullet^{(\pm)}(t)$ defined by</p>
+<p>$$
+G_\bullet^{(\pm)}(t) = G_\bullet(t) \exp(\pm 2\pi i t),
+$$</p>
+<p>and $G_\bullet(t)$ are the complex coefficients of $f(t)$ in the new basis.</p>
+<p>Concretely, the factorization is the following procedure:</p>
+<ol>
+<li><strong>Change of basis.</strong> For each $t$, write the function value $f(t)$ in the basis $\{e_0, \rho, \nu, \xi\}$, obtaining four complex functions $w(t), x(t), y(t), z(t)$.</li>
+<li><strong>Complex Fourier transforms.</strong> Apply the ordinary complex Fourier transform to the four complex functions obtained by combining the coefficients as above. The result is four complex spectra.</li>
+<li><strong>Reassemble.</strong> Combine the four complex spectra into the biquaternion spectrum $F(\omega)$.</li>
+</ol>
+<p>The factorization shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied to the entries of the matrix representation, dressed in biquaternion language. The non-trivial content is the choice of root and the basis change that it induces.</p>
+<h3 id="the-number-of-complex-transforms">The Number of Complex Transforms</h3>
+<p>The number of complex Fourier transforms required depends on the choice of root and on the values of the function.</p>
+<p><strong>Scalar imaginary, $\rho = i$.</strong> The kernel reduces to the ordinary complex exponential, and the transform requires <strong>four</strong> complex Fourier transforms, one for each complex coefficient of $f$ in the standard basis.</p>
+<p><strong>Unit pure real quaternion, $\rho = \mu_{\mathbb{R}}$.</strong> The kernel is a real quaternion exponential. If $f$ takes values in $\mathbb{H}_{\mathbb{B}}$ or in $i \mathbb{H}_{\mathbb{B}}$, the transform requires <strong>two</strong> complex Fourier transforms. If $f$ takes values in the full algebra, the transform requires <strong>four</strong> complex Fourier transforms.</p>
+<p><strong>Non-trivial root, signal in a subspace.</strong> If $\rho$ is a non-trivial root and $f$ takes values in $\mathbb{H}_{\mathbb{B}}$ or in $i \mathbb{H}_{\mathbb{B}}$, the transform requires <strong>two</strong> complex Fourier transforms.</p>
+<p><strong>Non-trivial root, fully biquaternion signal.</strong> If $\rho$ is a non-trivial root and $f$ takes values in the full algebra, the transform requires <strong>four</strong> complex Fourier transforms.</p>
+<p>So the generic case is four complex transforms, and the degenerate cases reduce to two or one.</p>
+<h2 id="the-convolution-theorem">The Convolution Theorem</h2>
+<h3 id="definition-of-convolution">Definition of Convolution</h3>
+<p>Let $f, g : \mathbb{R} \to \mathbb{B}$ be two biquaternion-valued functions. The <strong>convolution</strong> of $f$ and $g$ is</p>
+<p>$$
+(f * g)(t) = \int_{-\infty}^{\infty} f(\tau) g(t - \tau) \, d\tau,
+$$</p>
+<p>provided the integral converges. The convolution is <strong>not commutative</strong> in general, because the biquaternion product is not commutative.</p>
+<h3 id="the-convolution-theorem_1">The Convolution Theorem</h3>
+<p><strong>Theorem (convolution theorem).</strong> Let $f, g : \mathbb{R} \to \mathbb{B}$ be integrable, and let $\mathcal{F}$ denote the continuous biquaternion Fourier transform with the kernel on the left:</p>
+<p>$$
+\mathcal{F}[f](\omega) = \int_{-\infty}^{\infty} W(t, \omega) f(t) \, dt.
+$$</p>
+<p>Then</p>
+<p>$$
+\mathcal{F}[f * g](\omega) = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega),
+$$</p>
+<p>where the product on the right is the biquaternion product.</p>
+<p><strong>Proof.</strong> Compute</p>
+<p>$$
+\mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} W(t, \omega) \int_{-\infty}^{\infty} f(\tau) g(t - \tau) \, d\tau \, dt.
+$$</p>
+<p>Apply Fubini's theorem and change variables $t = \tau + s$:</p>
+<p>$$
+\mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} W(\tau + s, \omega) f(\tau) g(s) \, ds \, d\tau.
+$$</p>
+<p>The kernel is multiplicative in the time argument: $W(\tau + s, \omega) = W(\tau, \omega) W(s, \omega)$. So</p>
+<p>$$
+\mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} W(\tau, \omega) f(\tau) \, d\tau \cdot \int_{-\infty}^{\infty} W(s, \omega) g(s) \, ds = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega).
+$$</p>
+<p>$\square$</p>
+<p><strong>Corollary (right-kernel case).</strong> For the transform with the kernel on the right,</p>
+<p>$$
+\mathcal{F}_{\text{right}}[f * g](\omega) = \mathcal{F}_{\text{right}}[g](\omega) \cdot \mathcal{F}_{\text{right}}[f](\omega).
+$$</p>
+<h3 id="consequences">Consequences</h3>
+<p>The convolution theorem implies that convolution in the time domain becomes <strong>biquaternion multiplication</strong> in the frequency domain. The convolution is associative, distributive over addition, and not commutative.</p>
+<h2 id="the-relation-to-the-differential-operators">The Relation to the Differential Operators</h2>
+<p>The continuous Fourier transform is the natural tool for analysing the differential operators of the analysis article. This is the main structural content of the continuous theory.</p>
+<h3 id="the-gradient">The Gradient</h3>
+<p>Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $x_0, x_1, x_2, x_3$. For a function $\tilde{F} : V \to \mathbb{B}$, the Fourier transform in the variable $x_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:</p>
+<p>$$
+\mathcal{F}[\partial_0 \tilde{F}](\omega) = 2\pi \rho \omega \, \mathcal{F}[\tilde{F}](\omega),
+$$</p>
+<p>where the sign depends on the convention for the kernel (the sign is positive for the kernel $\exp(+2\pi \rho \omega t)$ and negative for $\exp(-2\pi \rho \omega t)$).</p>
+<p>If the transform is taken in all four variables, the gradient becomes multiplication by the biquaternion</p>
+<p>$$
+2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+$$</p>
+<p>where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $x_0, x_1, x_2, x_3$. The precise form depends on the placement of the root $\rho$ and on the choice of basis, but the structural fact is that the gradient becomes a biquaternion-valued multiplier.</p>
+<h3 id="the-dalembertian">The d'Alembertian</h3>
+<p>The d'Alembertian $\Box = \partial_0^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,</p>
+<p>$$
+\mathcal{F}[\Box \tilde{F}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[\tilde{F}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[\tilde{F}](\omega).
+$$</p>
+<p>The multiplier is a scalar (times $e_0$), and it vanishes on the <strong>light cone</strong></p>
+<p>$$
+\omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
+$$</p>
+<p>So the Fourier transform of a solution of $\Box \tilde{F} = 0$ is supported on the light cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.</p>
+<h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
+<p>The square of the gradient $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a biquaternion-valued operator. Under the transform, it becomes multiplication by</p>
+<p>$$
+\left((2\pi \omega_0)^2 + (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) e_0 + 2 \sum_k e_k (2\pi \omega_0)(2\pi \omega_k),
+$$</p>
+<p>which is a biquaternion-valued multiplier. The precise form depends on the sign convention and on the placement of the root.</p>
+<h3 id="the-convective-derivative">The Convective Derivative</h3>
+<p>The convective derivative $\tilde{D} = \bar{\tilde{U}} \tilde{\nabla}$ becomes multiplication by the biquaternion</p>
+<p>$$
+\bar{\tilde{U}} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+$$</p>
+<p>which depends on the velocity biquaternion $\tilde{U}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.</p>
+<h3 id="the-general-principle">The General Principle</h3>
+<p>The general principle is that the continuous Fourier transform <strong>diagonalizes the constant-coefficient differential operators</strong> on the four-dimensional subspaces. The symbol of the operator is a biquaternion-valued function of the frequency variables, and the solutions of the operator equation are determined by the support of the transform on the zero set of the symbol.</p>
+<p>This is the same principle as in the complex and quaternion cases, and it is the reason the continuous Fourier transform is the natural tool for the analysis of the biquaternion differential operators.</p>
+<h2 id="the-vanishing-norm-issue">The Vanishing-Norm Issue</h2>
+<h3 id="functions-of-vanishing-norm">Functions of Vanishing Norm</h3>
+<p>A function $f : \mathbb{R} \to \mathbb{B}$ may take values of vanishing norm form on a set of positive measure. On such a set, the values are zero divisors, and the transform may not be invertible.</p>
+<p>More precisely, if $f(t)$ is a zero divisor for some $t$, then there exists a nonzero biquaternion $\tilde{Z}(t)$ with $f(t) \circ \tilde{Z}(t) = 0$ or $\tilde{Z}(t) \circ f(t) = 0$. The kernel is invertible, so the product $W(t, \omega) f(t)$ is also a zero divisor, and the integral over $t$ may or may not preserve the information of $f(t)$.</p>
+<h3 id="consequences-for-the-transform">Consequences for the Transform</h3>
+<ul>
+<li><strong>The transform is not necessarily invertible on functions that take zero-divisor values on a set of positive measure.</strong></li>
+<li><strong>The transform is invertible on functions of non-vanishing norm</strong>, i.e., on functions whose values lie in the complement of the zero divisor set.</li>
+</ul>
+<h3 id="structural-interpretation">Structural Interpretation</h3>
+<p>The vanishing-norm issue is a genuinely biquaternionic feature. It does not arise in the complex or quaternion Fourier transforms, because the complex and quaternion algebras are division algebras. The biquaternion algebra is not a division algebra, and this is reflected in the harmonic analysis.</p>
+<p>The issue can be avoided by restricting to functions whose values lie in a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$, every nonzero value is invertible, and the transform is invertible on all functions. On the anti-Hermitian subspace $\mathbb{M}_-$, the functions with vanishing norm lie on a cone, and the transform is invertible only for functions whose values lie off the cone.</p>
+<h3 id="the-open-question">The Open Question</h3>
+<p>The precise condition under which the transform is invertible on a function that takes zero-divisor values on a set of positive measure is not known. It depends on the cancellations in the integral $\int W(t, \omega) f(t) \, dt$, and it is not determined by the norms of the values alone. This is one of the open questions listed below.</p>
+<h2 id="the-relation-to-the-discrete-transform">The Relation to the Discrete Transform</h2>
+<h3 id="sampling">Sampling</h3>
+<p>The continuous transform is the limit of the discrete transform as the number of samples $N$ tends to infinity and the sampling interval tends to zero. The precise relation is the standard one: if $f$ is a function of bounded variation and $F$ is its continuous transform, then the discrete transform of the samples $f(nT)$ for $n \in \mathbb{Z}$ approximates $F$ as the sampling interval $T$ tends to zero.</p>
+<h3 id="periodization">Periodization</h3>
+<p>Conversely, the discrete transform is the periodization of the continuous transform. If $f$ is a function with continuous transform $F$, then the discrete transform of the samples $f(nT)$ is the periodization of $F$:</p>
+<p>$$
+F_{\text{disc}}[u] = \frac{1}{T} \sum_{k \in \mathbb{Z}} F\left(\frac{u}{NT} + \frac{k}{T}\right).
+$$</p>
+<p>This is the standard Poisson summation formula, and it holds in the biquaternion case with the same proof, because the kernel is the ordinary complex kernel in the direction $\rho$.</p>
+<h3 id="the-sampling-theorem">The Sampling Theorem</h3>
+<p>The <strong>sampling theorem</strong> (or Shannon–Nyquist theorem) states that a function whose continuous transform is supported in a bounded interval $[-W, W]$ can be reconstructed from its samples at the rate $1/(2W)$. The biquaternion version of the sampling theorem holds under the same conditions, with the reconstruction formula</p>
+<p>$$
+f(t) = \sum_{n \in \mathbb{Z}} f(nT) \operatorname{sinc}\left(\frac{t - nT}{T}\right),
+$$</p>
+<p>where the sinc function is the ordinary real sinc, and the convergence is in the appropriate sense. The proof is the same as in the complex case, because the reconstruction is component-wise.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The precise invertibility condition.</strong> Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.</p>
+</li>
+<li>
+<p><strong>The support of the transform of solutions of $\tilde{\nabla}\tilde{F} = 0$.</strong> The Fourier transform of a solution of the gradient equation $\tilde{\nabla}\tilde{F} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
+</li>
+<li>
+<p><strong>The Plancherel theorem for general functions.</strong> Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.</p>
+</li>
+<li>
+<p><strong>Wavelets and time-frequency analysis.</strong> Can a biquaternion wavelet transform be defined, and what are its properties? Can a biquaternion time-frequency distribution be defined?</p>
+</li>
+<li>
+<p><strong>The relation to the analysis article.</strong> The connection between the continuous Fourier transform and the differential operators is established at the level of symbols. What are the deeper consequences for the structure of the solutions of the operator equations?</p>
+</li>
+<li>
+<p><strong>The Clifford algebra framework.</strong> How does the biquaternion continuous Fourier transform fit into the general theory of Clifford algebra Fourier transforms?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The continuous biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi \rho \omega t)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.</p>
+<p>The transform is invertible on functions of non-vanishing norm, and it satisfies the Riemann–Lebesgue lemma, the inversion theorem, and the Plancherel theorem. It factorizes into four complex Fourier transforms, which is the computational and structural content of the theory.</p>
+<p>The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the light cone, and the convective derivative becomes a biquaternion-valued multiplier depending on the velocity.</p>
+<p>The vanishing-norm issue is a genuinely biquaternionic feature: functions that take zero-divisor values on a set of positive measure are not necessarily recoverable from their transform, and the precise invertibility condition is not known.</p>
+<p>The continuous transform is the limit of the discrete transform as the sampling interval tends to zero, and it is related to the discrete transform by the Poisson summation formula and the sampling theorem.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$f : \mathbb{R} \to \mathbb{B}$</td>
+<td>Biquaternion-valued function of one real variable</td>
+</tr>
+<tr>
+<td>$F = \mathcal{F}[f]$</td>
+<td>Continuous biquaternion Fourier transform of $f$</td>
+</tr>
+<tr>
+<td>$W(t,\omega) = \exp(-2\pi\rho\omega t)$</td>
+<td>Fourier kernel, placed on the left of $f$; the conjugate kernel $\overline{W}$ gives the inverse transform</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>Root of $-1$ in $\mathbb{B}$ fixing the transform; a local notation, not the scalar imaginary $i$</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>Frequency variable, $\omega \in \mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
+<td>Vector part of a biquaternion</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>Norm form; it vanishes on the zero divisors</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}$</td>
+<td>Biquaternionic gradient on a four-dimensional subspace</td>
+</tr>
+<tr>
+<td>$\Box = \partial_0^2 + \Delta$</td>
+<td>d'Alembertian, the scalar part of $\tilde{\nabla}\bar{\tilde{\nabla}}$</td>
+</tr>
+<tr>
+<td>$\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$</td>
+<td>Convective derivative with velocity $\tilde{U}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S. Said, N. Le Bihan, S. J. Sangwine, "Fast complexified quaternion Fourier transform", <em>IEEE Transactions on Signal Processing</em> <strong>56</strong> (2008) 1522–1531, for the discrete biquaternion Fourier transform.</li>
+<li>S. J. Sangwine and T. A. Ell, "Complexification of the quaternion roots of $-1$", arXiv:math.RA/0506190 (2005), for the classification of the biquaternion roots of $-1$.</li>
+<li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", arXiv:0812.1102 (2008), for the classification of the zero divisors.</li>
+<li>N. Le Bihan and J. Mars, "Singular value decomposition of quaternion matrices: a new tool for vector-sensor signal processing", <em>Signal Processing</em> <strong>84</strong> (2004) 1177–1199, for the quaternion signal processing background.</li>
+<li>T. A. Ell and S. J. Sangwine, "Hypercomplex Fourier transforms of color images", <em>IEEE Transactions on Image Processing</em> <strong>16</strong> (2007) 22–35, for the quaternion Fourier transform and its applications.</li>
+<li>R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", <em>Commentarii Mathematici Helvetici</em> <strong>7</strong> (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford analysis.</li>
+<li>W. R. Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and biquaternions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

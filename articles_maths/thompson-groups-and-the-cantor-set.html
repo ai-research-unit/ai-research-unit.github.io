@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thompson Groups and the Cantor Set — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="thompson-groups-and-the-cantor-set"><strong>Thompson Groups and the Cantor Set</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article stands in <em>Geometry and Manifolds</em>, immediately after <em>Mapping Class Groups</em>, and it treats the three Thompson groups $F$, $T$ and $V$. They are the same kind of object as the mapping class groups: groups described by finite combinatorial data, acting on a space. The article is in Part II rather than in the group theory of Part I for one reason: $V$ acts on the Cantor set, the Cantor set is a Part II object, and a Part I article may not depend on Part II. The Cantor set, its topology and its universal properties are <em>Topological Spaces</em> and <em>Continuum Theory</em>, earlier in this Part, and its metric and dimension are <em>Fractal Geometry</em>, below this article; the group-theoretic background, including the notions of presentation, simplicity and finite generation, is Part I's, and in particular the homeomorphism groups of spaces are <em>Diffeomorphism Groups</em>, above, where $\operatorname{Homeo}(X)$ is treated.</p>
+<p>The three groups are written $F$, $T$ and $V$, in that order, throughout. Each is described twice: once by pairs of finite binary trees, and once, for $V$, by prefix replacement on the binary sequences that form the Cantor set. The article states the finite presentability of $F$ and $T$, the finite generation without finite presentability of $V$, the simplicity of $T$ and of $V$, and the failure of simplicity for $F$, with the standard citations.</p>
+<hr />
+<h2 id="the-cantor-set-and-the-dyadic-trees">The Cantor Set and the Dyadic Trees</h2>
+<p><strong>Remark.</strong> The Cantor set $\{0,1\}^{\mathbb{N}}$, with the product topology of the discrete two-point space, is a compact metrisable totally disconnected perfect space, and it is the unique such space up to homeomorphism, as in <em>Topological Spaces</em> and <em>Continuum Theory</em>, above. This article uses three of its presentations, which are homeomorphic and are used interchangeably: the set of binary sequences; the set of infinite paths in the infinite binary tree; and the boundary of the infinite binary tree, whose finite paths are the <strong>nodes</strong>.</p>
+<p><strong>Definition.</strong> A <strong>finite binary tree</strong> is a finite set of nodes closed under taking prefixes, containing the empty word, in which every node has either zero or two children. A leaf is a node with no children; a node is internal if it has two children. The <strong>leaves</strong> of a finite binary tree with $n$ internal nodes are $n+1$ words in $\{0,1\}^{*}$, and the sets of infinite sequences beginning with those words form the <strong>cylinders</strong> of a partition of $\{0,1\}^{\mathbb{N}}$ into $n+1$ clopen sets.</p>
+<p><strong>Definition.</strong> The <strong>interval</strong> presentation and the <strong>circle</strong> presentation are obtained from the binary expansions: a finite binary tree with $n+1$ leaves gives a subdivision of the unit interval $[0,1]$ into $n+1$ closed intervals, its leaves read from left to right corresponding to the dyadic intervals of the same lengths, and the same tree read cyclically gives a subdivision of the circle $S^1 = \mathbb{R}/\mathbb{Z}$ into $n+1$ intervals. A map between two such subdivisions is <strong>piecewise linear</strong> when it is affine with slope a power of two on each interval of the subdivision.</p>
+<p><strong>Remark.</strong> The Cantor set is not a new object in this article and its properties are not rederived; what the article takes from <em>Continuum Theory</em>, above, is the characterisation quoted in the remark, and what it adds is the group of homeomorphisms of the Cantor set generated by the maps of the next section.</p>
+<hr />
+<h2 id="the-three-thompson-groups">The Three Thompson Groups</h2>
+<p><strong>Definition.</strong> Let $s$ and $t$ be finite binary trees with the same number of leaves. The pair $(s,t)$ defines a map of the interval, of the circle or of the Cantor set, according as the leaves are read linearly, cyclically, or as cylinders, by sending the $i$-th interval of $s$ to the $i$-th interval of $t$ in a manner prescribed once and for all: on the interval by the orientation-preserving affine map, on the circle by the orientation-preserving affine map, and on the Cantor set by replacement of the $i$-th word of $s$ by the $i$-th word of $t$. The resulting maps form groups</p>
+<p>$$
+F \subseteq T \subseteq V ,
+$$</p>
+<p>the <strong>Thompson groups</strong>: $F$ is generated by the maps of the interval defined by pairs of trees, $T$ by the maps of the circle, and $V$ by the maps of the Cantor set.</p>
+<p><strong>Theorem.</strong> The maps defined by pairs of trees are homeomorphisms of the interval, the circle and the Cantor set respectively; each of $F$, $T$, $V$ is a group under composition; and the inclusions $F \subseteq T \subseteq V$ hold.</p>
+<p><strong>Proof.</strong> The map determined by $(s,t)$ is a bijection because it is a bijection on each of the finitely many pieces, and it is a homeomorphism because it is affine, hence continuous, on each piece and the pieces fit at the endpoints; for the Cantor set the cylinder of a leaf is mapped onto the cylinder of a leaf, which is a homeomorphism in the product topology. A composition of two such maps is again piecewise affine with respect to the common refinement of the two subdivisions, and the common refinement of two finite binary trees is a finite binary tree, so the set of maps is closed under composition and inversion. A map of the interval fixes $0$ and $1$ and so induces a map of the circle fixing the point $0$, and a map of the circle carried by a pair of trees induces a map of the Cantor set preserving the cylinders; hence the inclusions. $\square$</p>
+<p><strong>Example (the generators).</strong> For $F$ the two standard generators are $A$ and $B$, given by explicit pairs of finite binary trees with few leaves; the standard presentation of $F$ has two generators and two relations,</p>
+<p>$$
+\langle A, B \mid [AB^{-1}, A^{-1}BA] = 1, \ [AB^{-1}, A^{-2}BA^{2}] = 1 \rangle ,
+$$</p>
+<p>cited from the literature. The corresponding presentations of $T$ and $V$ are likewise standard and are cited; the one for $V$ is infinite.</p>
+<h3 id="the-prefix-replacement-description-of-math58">The Prefix Replacement Description of $V$</h3>
+<p><strong>Theorem.</strong> Every element of $V$ is described by <strong>prefix replacement</strong>: there are finitely many pairs of finite binary words $(u_i, v_i)$ with the cylinders of the $u_i$ partitioning $\{0,1\}^{\mathbb{N}}$, and the element acts by</p>
+<p>$$
+u_i w \mapsto v_i w \quad \text{for every } w \in \{0,1\}^{\mathbb{N}} .
+$$</p>
+<p>Conversely every such finite prefix replacement defines an element of $V$, and two such descriptions define the same element exactly when they agree after a common refinement.</p>
+<p><strong>Proof.</strong> The description of an element of $V$ by a pair of trees gives exactly such a finite set of pairs, the words being the leaves of the two trees and the refinement being the passage to a common refinement of the two subdivisions. Conversely a finite prefix replacement is the map determined by the pair of trees whose leaves are the $u_i$ and the $v_i$. The last statement is the uniqueness of the description after refinement, which holds because both descriptions determine the map and the map determines an element of $V$. $\square$</p>
+<p><strong>Remark.</strong> The prefix replacement description is the reason $V$ is called the group of the Cantor set: it realises $V$ as a subgroup of $\operatorname{Homeo}(\{0,1\}^{\mathbb{N}})$, the transformation group of <em>Diffeomorphism Groups</em>, above, where the infinite-dimensional transformation groups are treated. The group $V$ is not the whole of that homeomorphism group; it is the subgroup generated by the maps given by finite data, in the same way that the mapping class group of a surface, above, is the group of the maps given by finite data on the surface.</p>
+<hr />
+<h2 id="presentations-generation-and-simplicity">Presentations, Generation and Simplicity</h2>
+<p><strong>Theorem.</strong> $F$ and $T$ are finitely presented; $V$ is finitely generated and not finitely presented.</p>
+<p><strong>Proof.</strong> The standard presentations are explicit and are cited from the literature: $F$ has two generators and two relations, as displayed above, and $T$ has the two generators of $F$ together with one further generator and a finite list of relations. For $V$ the group is generated by the same finite set, since the maps given by pairs of trees are generated by the maps given by the elementary trees, but no finite presentation exists. That $V$ is not finitely presented is a standard theorem of the literature, cited rather than reproduced here; its proof uses the subgroup structure of $V$. $\square$</p>
+<p><strong>Theorem (simplicity).</strong> The groups $T$ and $V$ are simple. The group $F$ is not simple.</p>
+<p><strong>Proof.</strong> The simplicity of $T$ and of $V$ is Thompson's theorem, cited from the literature. For $F$, the slope of an element at the two endpoints of the interval is a power of $2$, since the slopes of the elements of $F$ are powers of $2$, and slopes multiply under composition; hence</p>
+<p>$$
+F \to \mathbb{Z} \times \mathbb{Z}, \qquad f \mapsto \big(\log_2 f'(0^+), \log_2 f'(1^-)\big) ,
+$$</p>
+<p>is a homomorphism, and it is surjective because a piecewise-linear homeomorphism of the interval with breakpoints in $\mathbb{Z}[1/2]$, slopes a power of $2$ on each piece and prescribed endpoint slopes $2^a$ and $2^b$ lies in $F$ for all $a, b \in \mathbb{Z}$. The abelianisation of $F$ is $\mathbb{Z} \times \mathbb{Z}$: the standard presentation of $F$ has two generators, and its two relators are commutators, so they become trivial in every abelian quotient. Hence $F$ has a proper nontrivial normal subgroup, namely its derived subgroup $F'$, and it is not simple; a simple group is perfect, so the nonzero abelianisation alone rules simplicity out. $\square$</p>
+<p><strong>Corollary.</strong> $F$ is finitely presented, infinite and not simple, while $T$ is finitely presented, infinite and simple: $T$ is the infinite finitely presented simple group of this family. The simplest element of the family that is simple and finitely presented is therefore $T$, and $F$ is the finitely presented member of the family that is not simple, its abelianisation being free of rank two.</p>
+<p><strong>Remark.</strong> Whether $F$ is amenable is a well-known open problem, and it is recorded here only because it is the standard reason the group is studied; nothing in this article depends on it. The corresponding question for $T$ and $V$ has the same status.</p>
+<p><strong>Example (the place of $F$ and of $T$).</strong> The finite simple groups are classified in <em>Finite Simple Groups</em>, in the group theory of Part I, and $T$ is not among them: it is infinite. $T$ and $V$ are the simple members of the family, $T$ finitely presented and $V$ only finitely generated, so $T$ is the infinite finitely presented simple group here, and $F$ is the finitely presented member that is not simple, its derived subgroup being proper. All three are of exponential growth, and $F$ is of type $F_\infty$, that is, it has a classifying space with finitely many cells in each dimension, a finiteness property it shares with the mapping class groups of compact surfaces, above. What it shares with those groups more essentially is the description by finite combinatorial data: a word in the generators of $F$ and a pair of trees encode the same element.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>The three Thompson groups $F$, $T$ and $V$ are the groups generated by the homeomorphisms of the interval, the circle and the Cantor set defined by pairs of finite binary trees; each is a group of piecewise-linear or prefix-replacement maps, and $F \subseteq T \subseteq V$. Equivalently, $V$ is the group of the finite prefix replacements of binary sequences, hence a subgroup of the homeomorphism group of the Cantor set of <em>Topological Spaces</em> and <em>Continuum Theory</em>; $F$ and $T$ are finitely presented, by explicit presentations with finitely many generators and relations, and $V$ is finitely generated and not finitely presented; $T$ and $V$ are simple, $T$ being the infinite finitely presented simple group of the family, while $F$ is not simple, its abelianisation being $\mathbb{Z} \times \mathbb{Z}$, computed from the endpoint slopes. The groups are the same kind of object as the mapping class groups, above: groups presented by finite combinatorial data acting on a space, and the Cantor set they act on is a Part II object, which is why the article is in Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{0,1\}^{\mathbb{N}}$</td>
+<td>The Cantor set, as the set of binary sequences, from <em>Topological Spaces</em> and <em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>$F$, $T$, $V$</td>
+<td>The three Thompson groups, of the interval, the circle and the Cantor set, in that order</td>
+</tr>
+<tr>
+<td>finite binary tree</td>
+<td>A finite prefix-closed set of nodes in which every node has zero or two children</td>
+</tr>
+<tr>
+<td>leaf, cylinder</td>
+<td>A node with no children; the clopen set of sequences beginning with a leaf word</td>
+</tr>
+<tr>
+<td>$A$, $B$</td>
+<td>The standard generators of $F$, and of $T$ together with one further generator</td>
+</tr>
+<tr>
+<td>$\log_2 f'(0^+)$, $\log_2 f'(1^-)$</td>
+<td>The endpoint slopes of an element of $F$, the two coordinates of the abelianisation</td>
+</tr>
+<tr>
+<td>prefix replacement</td>
+<td>The action $u_i w \mapsto v_i w$ of $V$ on $\{0,1\}^{\mathbb{N}}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Homeo}(X)$</td>
+<td>The homeomorphism group of a space, as in <em>Diffeomorphism Groups</em>, above</td>
+</tr>
+<tr>
+<td>$S^1 = \mathbb{R}/\mathbb{Z}$</td>
+<td>The circle, carrying the action of $T$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. W. Cannon, W. J. Floyd and W. R. Parry, <em>Introductory notes on Richard Thompson's groups</em> (L'Enseignement Mathématique, 1996), for the tree diagrams, the presentations and the simplicity of $F$, $T$ and $V$.</li>
+<li>R. Geoghegan, <em>Topological Methods in Group Theory</em> (Springer, 2008), for the finiteness properties of the Thompson groups and their classifying spaces.</li>
+<li>V. S. Guba and M. V. Sapir, <em>Diagram groups</em> (Memoirs of the American Mathematical Society, 1997), for the diagrammatic description of the Thompson groups and their finite presentability.</li>
+<li>M. Brin, <em>The chameleon groups of Richard J. Thompson</em> (Publications Mathématiques de l'IHÉS, 1996), for the automorphisms of $F$ and the question of its amenability.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

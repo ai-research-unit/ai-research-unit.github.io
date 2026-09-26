@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bloch Ball as the Trace-One Slice of the Future Light Cone — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone"><strong>The Bloch Ball as the Trace-One Slice of the Future Light Cone</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The companion articles established that the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries the operator algebra of a two-state quantum system. Its Hermitian elements are the observables, its positive trace-one elements are the states, and the trace formula</p>
+<p>$$
+\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})
+$$</p>
+<p>is the Born rule. This article is about the <strong>geometry</strong> of that state space. Its subject is one structural fact, developed in full:</p>
+<blockquote>
+<p>The state space of a qubit — the Bloch ball — is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ in $\mathbb{M}_+$ with the future light cone of the norm form $N(\tilde{H}) = \tilde{H}\bar{\tilde{H}}$.</p>
+</blockquote>
+<p>In the standard formalism the Bloch ball is assembled state by state: one takes the set of positive trace-one operators on a two-dimensional Hilbert space and derives the condition $|\mathbf{r}| \leq 1$ from the positivity of a $2 \times 2$ matrix. In the biquaternion framework the same object appears as a <strong>slice of a cone by a hyperplane</strong>. The three conditions that look independent in the matrix formalism — Hermitian, positive, trace one — become, in the algebra, membership in $\mathbb{M}_+$, a trace normalization, and a single quadratic inequality that is the causal condition of a Lorentzian form. Purity becomes a boundary condition; mixedness becomes the interior of the ball; and the zero divisors of the algebra at trace one, which elsewhere in the series describe light-like propagation, here describe the pure states.</p>
+<p>The article is organized as follows. First the Hermitian subspace, its trace, and its norm form are recalled, together with the light cone and the zero divisors. Then the trace-one hyperplane is described and coordinatized by the Bloch vector. Then the Bloch ball is obtained as the slice of the future cone by that hyperplane, and the positivity of a state is identified with its causality. Then the pure states are characterized as the boundary of the ball — idempotents, extreme rays, and zero divisors at trace one — and the mixed states as its interior. Then purity, the Bloch radius, entropy, and fidelity are expressed in these terms. The article closes with the symmetries of the slice, with what the picture shows, and with open questions.</p>
+<p>The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The four fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the center of $\mathbb{B}$), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), and the two complementary four-dimensional subspaces $\mathbb{M}_+$ (Hermitian) and $\mathbb{M}_-$ (anti-Hermitian), with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.</p>
+<h2 id="the-hermitian-subspace-and-the-norm-form">The Hermitian Subspace and the Norm Form</h2>
+<h3 id="coordinates-and-trace">Coordinates and Trace</h3>
+<p>An element of the Hermitian subspace is written</p>
+<p>$$
+\tilde{H} = h_0\,e_0 + i\,\mathbf{h}, \qquad h_0 \in \mathbb{R}, \qquad \mathbf{h} = h_1 e_1 + h_2 e_2 + h_3 e_3,
+$$</p>
+<p>where $\mathbf{h}$ is a pure real quaternion, identified with the vector $(h_1, h_2, h_3) \in \mathbb{R}^3$. The scalar part $h_0 e_0$ lies in the center $\mathbb{C}_{\mathbb{B}}$; here it is real, and the imaginary vector part $i\mathbf{h}$ carries the three remaining real coordinates. A natural basis of $\mathbb{M}_+$ over $\mathbb{R}$ is</p>
+<p>$$
+\{e_0,\; i e_1,\; i e_2,\; i e_3\},
+$$</p>
+<p>so that $\mathbb{M}_+$ is a four-dimensional real vector space and the fixed-point set of the Hermitian conjugation $\dagger$. Its <strong>trace</strong> is twice the scalar part:</p>
+<p>$$
+\mathrm{Tr}(\tilde{H}) = 2 h_0 .
+$$</p>
+<h3 id="the-norm-form">The Norm Form</h3>
+<p>The quaternion conjugate $\bar{\tilde{H}} = h_0 e_0 - i\mathbf{h}$ is again Hermitian, so quaternion conjugation preserves $\mathbb{M}_+$; it leaves the scalar part and negates the imaginary vector part. The <strong>norm form</strong> is</p>
+<p>$$
+N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = \bigl(h_0^2 - |\mathbf{h}|^2\bigr) e_0 ,
+$$</p>
+<p>a real-valued quadratic form on $\mathbb{M}_+$, of <strong>signature $(1,3)$</strong>: the scalar direction $e_0$ is positive, the three imaginary directions $i e_1, i e_2, i e_3$ are negative. This is the mirror image of the signature $(3,1)$ that the same norm form carries on the anti-Hermitian subspace $\mathbb{M}_-$.</p>
+<p>The norm form is not the trace pairing. The trace pairing</p>
+<p>$$
+\mathrm{Tr}(\tilde{H}\tilde{K}) = 2\bigl(h_0 k_0 + \mathbf{h}\cdot\mathbf{k}\bigr)
+$$</p>
+<p>is positive-definite, of signature $(4,0)$; it is the analogue of the Hilbert–Schmidt inner product. The norm form and the trace pairing are distinct quadratic structures on the same four-dimensional space, and keeping them apart is essential: positivity of a state is a condition on the norm form, while the Born rule is a condition on the trace pairing.</p>
+<h3 id="the-light-cone-and-the-zero-divisors">The Light Cone and the Zero Divisors</h3>
+<p>The vanishing of the norm form defines the <strong>light cone</strong> of $\mathbb{M}_+$:</p>
+<p>$$
+N(\tilde{H}) = 0 \quad\Longleftrightarrow\quad h_0^2 = |\mathbf{h}|^2 ,
+$$</p>
+<p>a double cone in $\mathbb{R}^4$ with apex at the origin. The complement of the cone has three connected components: the spacelike region $N < 0$ (a single component), and the two components of the timelike region $N > 0$, namely $h_0 > |\mathbf{h}|$ and $h_0 < -|\mathbf{h}|$. The first of these, $h_0 > |\mathbf{h}|$, is the <strong>future</strong> component.</p>
+<p>Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ that maps $e_0 \mapsto I$ and $e_j \mapsto -i\sigma_j$, a Hermitian element $\tilde{H} = h_0 e_0 + i\mathbf{h}$ maps to the Hermitian matrix $h_0 I + \mathbf{h}\cdot\boldsymbol{\sigma}$, whose determinant is $h_0^2 - |\mathbf{h}|^2$. The norm form is therefore the determinant form:</p>
+<p>$$
+N(\tilde{H}) \;\longmapsto\; \det\bigl(h_0 I + \mathbf{h}\cdot\boldsymbol{\sigma}\bigr) I .
+$$</p>
+<p>Consequently the nonzero elements of the light cone are exactly the <strong>zero divisors</strong> of $\mathbb{B}$ that lie in $\mathbb{M}_+$: $N(\tilde{H}) = 0$ with $\tilde{H} \neq 0$ means the corresponding matrix is singular, hence a zero divisor. Conversely every zero divisor in $\mathbb{M}_+$ has vanishing norm form. This is the same zero-divisor cone that, in $\mathbb{M}_-$, describes null four-vectors; here it will describe the pure states.</p>
+<h3 id="the-positive-cone-is-the-future-light-cone">The Positive Cone Is the Future Light Cone</h3>
+<p>The decisive structural fact is that, in $\mathbb{M}_+$, the algebra's positive cone and the geometry's future cone are the same set. A Hermitian element $\tilde{H} = h_0 e_0 + i\mathbf{h}$ has eigenvalues $h_0 \pm |\mathbf{h}|$ (they are the eigenvalues of $h_0 I + \mathbf{h}\cdot\boldsymbol{\sigma}$), so it is positive semidefinite precisely when the smaller eigenvalue is non-negative. This gives:</p>
+<p><strong>Proposition.</strong> For $\tilde{H} \in \mathbb{M}_+$,</p>
+<p>$$
+\tilde{H} \geq 0 \quad\Longleftrightarrow\quad N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 \geq 0 \ \ \text{and}\ \ h_0 \geq 0 .
+$$</p>
+<p>The right-hand side is exactly the statement that $\tilde{H}$ lies in the closed future cone of the norm form. Thus the <strong>positive cone of $\mathbb{M}_+$ coincides with the future light cone</strong>, region for region, boundary included. In particular the positive cone is the future cone of a form of signature $(1,3)$, and the rank-one projections — the extreme rays of the positive cone — are precisely its null generators, $N(\tilde{H}) = 0$.</p>
+<p>This is why the qubit state space is a canonical object of the algebra rather than a postulated set: one starts with a quadratic form that the algebra supplies, and one reads off a cone; positivity and causality are then two names for the same condition. Note also that the positive cone is exactly the set of squares of Hermitian elements: every $\tilde{H} \geq 0$ has a Hermitian square root $\sqrt{\tilde{H}} \in \mathbb{M}_+$, and conversely $A^2 = AA^\dagger \geq 0$ for Hermitian $A$.</p>
+<h2 id="the-trace-one-hyperplane">The Trace-One Hyperplane</h2>
+<p>The <strong>trace-one hyperplane</strong> is the affine hyperplane</p>
+<p>$$
+\mathcal{S} = \bigl\{\tilde{H} \in \mathbb{M}_+ : \mathrm{Sc}(\tilde{H}) = \tfrac{1}{2}\bigr\} = \bigl\{\tilde{H} \in \mathbb{M}_+ : \mathrm{Tr}(\tilde{H}) = 1\bigr\},
+$$</p>
+<p>the two descriptions being equivalent by $\mathrm{Tr} = 2\,\mathrm{Sc}$. In coordinates it is the level set $h_0 = \tfrac{1}{2}$. It is an affine hyperplane of real dimension three, with direction space the traceless subspace</p>
+<p>$$
+\{\tilde{H} \in \mathbb{M}_+ : h_0 = 0\} = \operatorname{span}_\mathbb{R}\{i e_1, i e_2, i e_3\}.
+$$</p>
+<p>The hyperplane does not contain the origin, and its normal direction is $e_0$. Since $N(e_0) = 1 > 0$, the normal is timelike and the hyperplane is <strong>spacelike</strong>; the quadratic form induced on it by (minus) the norm form is positive-definite. The slice is therefore a Euclidean three-space, and the ball that it will be found to contain is a genuine round ball in that Euclidean structure.</p>
+<p>Every element of $\mathcal{S}$ is written uniquely as</p>
+<p>$$
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\,\mathbf{r}\bigr), \qquad \mathbf{r} = (r_1, r_2, r_3) \in \mathbb{R}^3 ,
+$$</p>
+<p>where $\mathbf{r} = 2\mathbf{h}$. The map $\mathbf{r} \mapsto \tilde{\rho}$ is an affine isomorphism $\mathbb{R}^3 \to \mathcal{S}$, and $\mathbf{r}$ is the <strong>Bloch vector</strong>. In this parametrization the trace pairing on the slice reads</p>
+<p>$$
+\mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s}\bigr) \qquad \text{for } \tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r}),\ \tilde{\sigma} = \tfrac{1}{2}(e_0 + i\mathbf{s}),
+$$</p>
+<p>so the Hilbert–Schmidt geometry of the slice is the Euclidean geometry of $\mathbb{R}^3$, up to the additive constant and the factor inherited from the trace.</p>
+<h2 id="the-bloch-ball-as-the-trace-one-slice-of-the-future-cone">The Bloch Ball as the Trace-One Slice of the Future Cone</h2>
+<h3 id="the-slice-lemma">The Slice Lemma</h3>
+<p>The intersection of an affine hyperplane $h_0 = c$ with the closed future cone is easy to describe. If $c > 0$, the future condition $h_0 \geq 0$ is automatic, the causal condition reduces to $|\mathbf{h}| \leq c$, and the apex is excluded; the intersection is a closed three-dimensional ball of radius $c$ in $\mathbf{h}$-coordinates, centered at $\mathbf{h} = 0$. If $c = 0$ the intersection degenerates to the single point at the apex, and if $c < 0$ the intersection with the future cone is empty.</p>
+<p>For the trace-one hyperplane $c = \tfrac{1}{2}$, the ball has radius $\tfrac{1}{2}$ in $\mathbf{h}$-coordinates, equivalently radius $1$ in the Bloch coordinate $\mathbf{r} = 2\mathbf{h}$. Explicitly, the norm form on the slice is</p>
+<p>$$
+N(\tilde{\rho}) = \bigl(h_0^2 - |\mathbf{h}|^2\bigr)e_0 = \tfrac{1}{4}\bigl(1 - |\mathbf{r}|^2\bigr)e_0 ,
+$$</p>
+<p>so the causal condition $N(\tilde{\rho}) \geq 0$ is exactly</p>
+<p>$$
+|\mathbf{r}|^2 = r_1^2 + r_2^2 + r_3^2 \leq 1 .
+$$</p>
+<p>The intersection is the closed unit ball $B^3 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| \leq 1\}$: the <strong>Bloch ball</strong>.</p>
+<h3 id="positivity-is-causality-on-the-slice">Positivity Is Causality on the Slice</h3>
+<p>The eigenvalues of $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ are</p>
+<p>$$
+\lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\mathbf{r}|\bigr),
+$$</p>
+<p>and they are non-negative if and only if $|\mathbf{r}| \leq 1$. Their product is the norm form,</p>
+<p>$$
+\lambda_+ \lambda_- = \tfrac{1}{4}\bigl(1 - |\mathbf{r}|^2\bigr) = N(\tilde{\rho}),
+$$</p>
+<p>so the norm form is exactly the product of the two eigenvalues. Because $h_0 = \tfrac{1}{2} > 0$ forces $\lambda_+ = h_0 + |\mathbf{h}| > 0$, the sign of $N$ determines the sign of the remaining eigenvalue: $N(\tilde{\rho}) \geq 0$ if and only if $\tilde{\rho} \geq 0$. Thus, restricted to the trace-one hyperplane, the Proposition of the previous section specializes to a clean statement.</p>
+<p><strong>The state space.</strong> The states of a qubit — the positive, trace-one elements of $\mathbb{M}_+$ — are exactly the elements of the trace-one hyperplane that lie in the closed future light cone:</p>
+<p>$$
+\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r}), \qquad |\mathbf{r}| \leq 1 .
+$$</p>
+<p>The intersection with the null cone $N(\tilde{\rho}) = 0$, i.e. the sphere $|\mathbf{r}| = 1$, is the boundary of the ball; the intersection with the interior of the cone, $N(\tilde{\rho}) > 0$, i.e. $|\mathbf{r}| < 1$, is the interior of the ball.</p>
+<p>The elements of the trace-one hyperplane with $|\mathbf{r}| > 1$ have $N(\tilde{\rho}) < 0$; they are Hermitian and of trace one but not positive semidefinite (each has one negative eigenvalue), so they are not states. They lie outside the cone, in the spacelike region. The picture is summarized in the following table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition on $\tilde{\rho}\in\mathcal{S}$</th>
+<th>Algebraic form</th>
+<th>Geometric form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hermitian</td>
+<td>$\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$</td>
+<td>trace-one hyperplane of $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>positive semidefinite</td>
+<td>$\lambda_\pm = \tfrac{1}{2}(1 \pm |\mathbf{r}|) \geq 0$</td>
+<td>closed future cone, $N(\tilde{\rho}) \geq 0$</td>
+</tr>
+<tr>
+<td>pure</td>
+<td>idempotent, rank one</td>
+<td>boundary of the cone, $N(\tilde{\rho}) = 0$</td>
+</tr>
+<tr>
+<td>mixed</td>
+<td>not idempotent, rank two</td>
+<td>interior of the cone, $N(\tilde{\rho}) > 0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="pure-states-the-boundary-of-the-ball">Pure States: The Boundary of the Ball</h2>
+<p>The boundary $|\mathbf{r}| = 1$ consists of the states that lie on the null cone. In the algebra these have three equivalent descriptions, and the equivalence is the content of this section.</p>
+<p><strong>Idempotents and rank-one projections.</strong> For $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$,</p>
+<p>$$
+\tilde{\rho}^2 = \tfrac{1}{4}\bigl(e_0 + i\mathbf{r}\bigr)^2 = \tfrac{1}{4}\bigl(1 + |\mathbf{r}|^2\bigr)e_0 + \tfrac{1}{2} i\mathbf{r},
+$$</p>
+<p>using $(i\mathbf{r})^2 = |\mathbf{r}|^2 e_0$. Hence</p>
+<p>$$
+\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\mathbf{r}|^2 - 1\bigr)e_0 ,
+$$</p>
+<p>and $\tilde{\rho}$ is idempotent if and only if $|\mathbf{r}| = 1$. The idempotents of trace one have the form</p>
+<p>$$
+\tilde{P}_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\boldsymbol{\mu}}\bigr), \qquad |\hat{\boldsymbol{\mu}}| = 1 ,
+$$</p>
+<p>and are the rank-one projections of $\mathbb{M}_+$; under the isomorphism they are the standard spin-up and spin-down projectors along $\hat{\boldsymbol{\mu}}$. The boundary is thus parametrized by the unit sphere $S^2 \subset \mathbb{R}^3$, with $\hat{\boldsymbol{\mu}}$ and $-\hat{\boldsymbol{\mu}}$ giving the complementary idempotents:</p>
+<p>$$
+\tilde{P}_+(\hat{\boldsymbol{\mu}}) + \tilde{P}_-(\hat{\boldsymbol{\mu}}) = e_0, \qquad \tilde{P}_+(\hat{\boldsymbol{\mu}})\tilde{P}_-(\hat{\boldsymbol{\mu}}) = 0 .
+$$</p>
+<p><strong>Zero divisors.</strong> On the boundary $N(\tilde{\rho}) = 0$ with $\tilde{\rho} \neq 0$, so $\tilde{\rho}$ is a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing norm form, hence $|\mathbf{r}| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,</p>
+<p>$$
+\text{pure state} \quad\Longleftrightarrow\quad \text{idempotent} \quad\Longleftrightarrow\quad \text{zero divisor} \quad\Longleftrightarrow\quad N(\tilde{\rho}) = 0 .
+$$</p>
+<p>This is the sense in which "the pure states are the zero divisors at trace one": the ideal boundary of the state space is exactly the set of elements at which the algebra ceases to be invertible. An interior state has $N(\tilde{\rho}) > 0$ and is invertible; a pure state has $N(\tilde{\rho}) = 0$ and is not. Purity is the loss of invertibility at the boundary of the cone.</p>
+<p><strong>Extreme rays.</strong> The positive cone is generated by its extreme rays, and these are the rank-one projections. Equivalently, the pure states are the extreme points of the Bloch ball: every state in the interior of the ball is a nontrivial convex combination of boundary points, while no boundary point is a convex combination of two other states.</p>
+<p>The transition probability between two pure states is the trace pairing,</p>
+<p>$$
+\mathrm{Tr}\bigl(\tilde{P}(\hat{\boldsymbol{\mu}})\tilde{P}(\hat{\boldsymbol{\nu}})\bigr) = \tfrac{1}{2}\bigl(1 + \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}\bigr) = \cos^2\frac{\theta}{2},
+$$</p>
+<p>where $\theta$ is the angle between the two Bloch directions. It equals $1$ for $\hat{\boldsymbol{\mu}} = \hat{\boldsymbol{\nu}}$ and $0$ for $\hat{\boldsymbol{\mu}} = -\hat{\boldsymbol{\nu}}$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the trace pairing is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.</p>
+<h2 id="mixed-states-the-interior-of-the-ball">Mixed States: The Interior of the Ball</h2>
+<p>The interior $|\mathbf{r}| < 1$ consists of the states that lie strictly inside the future cone. For these, $N(\tilde{\rho}) > 0$ and $\tilde{\rho}$ is invertible, with eigenvalues</p>
+<p>$$
+\lambda_+ = \tfrac{1}{2}\bigl(1 + |\mathbf{r}|\bigr), \qquad \lambda_- = \tfrac{1}{2}\bigl(1 - |\mathbf{r}|\bigr),
+$$</p>
+<p>both strictly positive and summing to one. The spectral decomposition is</p>
+<p>$$
+\tilde{\rho} = \lambda_+ \tilde{P}_+(\hat{\mathbf{r}}) + \lambda_- \tilde{P}_-(\hat{\mathbf{r}}), \qquad \hat{\mathbf{r}} = \frac{\mathbf{r}}{|\mathbf{r}|},
+$$</p>
+<p>a convex combination of the two complementary pure states along the Bloch direction $\hat{\mathbf{r}}$. This is the algebraic statement that every mixed state is a statistical mixture of two orthogonal pure states, with weights determined by the radius.</p>
+<p>The center of the ball is the <strong>maximally mixed state</strong></p>
+<p>$$
+\mathbf{r} = 0, \qquad \tilde{\rho} = \tfrac{1}{2} e_0 ,
+$$</p>
+<p>with equal eigenvalues $\tfrac{1}{2}, \tfrac{1}{2}$; it is the barycenter of the ball and the only state invariant under all rotations of the boundary sphere. It is the state of minimal purity and maximal entropy.</p>
+<p>The affine structure of the slice matches the convex structure of the state space. If $\tilde{\rho}_i = \tfrac{1}{2}(e_0 + i\mathbf{r}_i)$ are states and $p_i \geq 0$ with $\sum_i p_i = 1$, then</p>
+<p>$$
+\sum_i p_i \tilde{\rho}_i = \tfrac{1}{2}\Bigl(e_0 + i \sum_i p_i \mathbf{r}_i\Bigr)
+$$</p>
+<p>is again a state, with Bloch vector $\sum_i p_i \mathbf{r}_i$. Convex combinations of states are convex combinations of Bloch vectors, so the Bloch ball is a faithful affine model of the state space. The deviation of a state from purity is captured by</p>
+<p>$$
+\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\mathbf{r}|^2 - 1\bigr)e_0 ,
+$$</p>
+<p>which vanishes identically on the boundary and is strictly negative at every interior point.</p>
+<h2 id="the-bloch-vector-purity-and-mixedness">The Bloch Vector, Purity, and Mixedness</h2>
+<p>The <strong>purity</strong> of a state is</p>
+<p>$$
+\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}\bigl(1 + |\mathbf{r}|^2\bigr),
+$$</p>
+<p>which ranges from $\tfrac{1}{2}$ at the center of the ball ($|\mathbf{r}| = 0$) to $1$ on the boundary ($|\mathbf{r}| = 1$). Inverting,</p>
+<p>$$
+|\mathbf{r}| = \sqrt{2\,\mathrm{Tr}(\tilde{\rho}^2) - 1},
+$$</p>
+<p>so the Bloch radius is a monotone function of the purity: the radius <strong>is</strong> the purity, measured in the Euclidean geometry of the slice. Purity is the statement $|\mathbf{r}| = 1$, and it is equivalent to idempotency and to membership of the boundary.</p>
+<p>A convenient measure of mixedness is the <strong>linear entropy</strong></p>
+<p>$$
+S_{\mathrm{lin}}(\tilde{\rho}) = 1 - \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}\bigl(1 - |\mathbf{r}|^2\bigr) = 2\,N(\tilde{\rho}) ,
+$$</p>
+<p>which vanishes on the boundary and is maximal, equal to $\tfrac{1}{2}$, at the center. The last equality is worth emphasis: <strong>the norm form is, up to the factor $2$, the linear entropy on the trace-one hyperplane.</strong> The quadratic form whose cone cuts out the state space is the same form that measures how mixed a state is. The reason mixedness has a norm-form expression is that both are governed by the same quantity $\lambda_+ \lambda_- = N(\tilde{\rho})$.</p>
+<p>Finally, the Euclidean geometry of the slice gives the trace pairing a direct metrical meaning on states. The squared Hilbert–Schmidt distance between $\tilde{\rho}$ and $\tilde{\sigma}$ is</p>
+<p>$$
+\mathrm{Tr}\bigl((\tilde{\rho} - \tilde{\sigma})^2\bigr) = \tfrac{1}{2}|\mathbf{r} - \mathbf{s}|^2 ,
+$$</p>
+<p>and the trace distance from a state to the maximally mixed state is</p>
+<p>$$
+D\bigl(\tilde{\rho}, \tfrac{1}{2}e_0\bigr) = \tfrac{1}{2}\bigl|\mathbf{r}\bigr| .
+$$</p>
+<p>The Bloch radius is thus twice the trace distance to the center of the ball — another expression of the same fact, that the radius is the state's purity.</p>
+<h2 id="entropy">Entropy</h2>
+<p>The <strong>von Neumann entropy</strong> of a state is defined spectrally,</p>
+<p>$$
+S(\tilde{\rho}) = -\mathrm{Tr}\bigl(\tilde{\rho}\log\tilde{\rho}\bigr) = -\lambda_+ \log \lambda_+ - \lambda_- \log \lambda_-,
+$$</p>
+<p>with $\lambda_\pm = \tfrac{1}{2}(1 \pm |\mathbf{r}|)$ the eigenvalues. Written in terms of the Bloch radius $r = |\mathbf{r}|$,</p>
+<p>$$
+S(\tilde{\rho}) = -\frac{1+r}{2}\log\frac{1+r}{2} - \frac{1-r}{2}\log\frac{1-r}{2},
+$$</p>
+<p>which depends on the state only through $r$, not through the direction $\hat{\mathbf{r}}$. This is the geometric statement that entropy is a function of the radius: the level sets of entropy on the Bloch ball are the concentric spheres, and two states are equally mixed precisely when they have the same radius.</p>
+<p>On the boundary, $r = 1$, the eigenvalues are $1$ and $0$, and the entropy vanishes: pure states carry no entropy. At the center, $r = 0$, both eigenvalues are $\tfrac{1}{2}$ and the entropy is $\log 2$, its maximum on the ball. Between them, $S$ decreases strictly with $r$: differentiating the expression above,</p>
+<p>$$
+\frac{dS}{dr} = -\frac{1}{2}\log\frac{1+r}{1-r} < 0 \qquad (0 < r < 1),
+$$</p>
+<p>so entropy decreases monotonically from the center to the boundary, in step with the increase of purity. Entropy and purity therefore carry the same information on a qubit — both are functions of $|\mathbf{r}|$, and each determines the other — the entropy being the steeper, logarithmically scaled version.</p>
+<p>Because the logarithm is the spectral logarithm on the positive cone, the trace form of the entropy is unambiguous for interior states: writing $\log\tilde{\rho} = \log\lambda_+\, \tilde{P}_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde{P}_-(\hat{\mathbf{r}})$, one has $-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = S(\tilde{\rho})$, consistent with $\mathrm{Tr} = 2\,\mathrm{Sc}$.</p>
+<h2 id="fidelity-and-transition-probability">Fidelity and Transition Probability</h2>
+<p>For two pure states, the <strong>transition probability</strong> is the trace pairing computed above,</p>
+<p>$$
+\mathrm{Tr}\bigl(\tilde{P}(\hat{\boldsymbol{\mu}})\tilde{P}(\hat{\boldsymbol{\nu}})\bigr) = \tfrac{1}{2}\bigl(1 + \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}\bigr) = \cos^2\frac{\theta}{2},
+$$</p>
+<p>a function of the angle between the Bloch directions alone. In terms of the boundary of the ball, it is a function of the chordal separation of two points of the sphere.</p>
+<p>For two general states the Uhlmann transition probability is</p>
+<p>$$
+T(\tilde{\rho},\tilde{\sigma}) = \Bigl(\mathrm{Tr}\sqrt{\sqrt{\tilde{\rho}}\;\tilde{\sigma}\sqrt{\tilde{\rho}}}\,\Bigr)^{2}.
+$$</p>
+<p>All square roots here are the positive square roots within $\mathbb{M}_+$: since $\tilde{\rho}$ is a convex combination of complementary idempotents, $\sqrt{\tilde{\rho}} = \sqrt{\lambda_+}\,\tilde{P}_+(\hat{\mathbf{r}}) + \sqrt{\lambda_-}\,\tilde{P}_-(\hat{\mathbf{r}})$ lies in $\mathbb{M}_+$, and the same holds for the inner square root. In Bloch coordinates the expression evaluates to the closed form</p>
+<p>$$
+T(\tilde{\rho},\tilde{\sigma}) = \tfrac{1}{2}\Bigl(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{\bigl(1 - |\mathbf{r}|^2\bigr)\bigl(1 - |\mathbf{s}|^2\bigr)}\Bigr).
+$$</p>
+<p>Three checks are immediate. When both states are pure, $|\mathbf{r}| = |\mathbf{s}| = 1$, the radical vanishes and $T = \tfrac{1}{2}(1 + \mathbf{r}\cdot\mathbf{s})$, recovering the pure-state transition probability. When the states coincide, $\mathbf{s} = \mathbf{r}$, the expression is $\tfrac{1}{2}(1 + |\mathbf{r}|^2 + 1 - |\mathbf{r}|^2) = 1$. When $\tilde{\rho}$ is maximally mixed, $\mathbf{r} = 0$, it reduces to $T = \tfrac{1}{2}\bigl(1 + \sqrt{1 - |\mathbf{s}|^2}\bigr)$, which equals $\tfrac{1}{2}$ for a pure $\tilde{\sigma}$ and $1$ for $\tilde{\sigma}$ maximally mixed. The transition probability therefore measures, through $\mathbf{r}\cdot\mathbf{s}$, the alignment of the two Bloch vectors, and, through the radical, how far the two states are from the boundary. For mixed states it depends on the angle between the Bloch vectors as well as on the two radii; only the pure-pure case is a function of the angle alone.</p>
+<h2 id="symmetries-of-the-slice">Symmetries of the Slice</h2>
+<p>The structure just described is preserved by the unitary action. If $\tilde{U}$ is a unitary biquaternion, $\tilde{U}\tilde{U}^\dagger = e_0$, then the conjugation</p>
+<p>$$
+\tilde{\rho} \;\longmapsto\; \tilde{U}\tilde{\rho}\tilde{U}^\dagger
+$$</p>
+<p>fixes the scalar part, hence preserves the trace-one hyperplane, and preserves the Hermitian property; because conjugation by a unitary is an algebra automorphism, it preserves the norm form $N(\tilde{U}\tilde{\rho}\tilde{U}^\dagger) = N(\tilde{\rho})$, hence preserves the future cone and its boundary. It therefore maps the Bloch ball to itself.</p>
+<p>On the Bloch vector the action is a rotation. The unit quaternions — the elements of $\mathbb{H}_{\mathbb{B}}$ of unit quaternion norm, forming $SU(2)$ — act by rotating the imaginary vector part and fixing the scalar part, so they act on the ball by the rotation group $SO(3)$. The general unitary group $U(2)$ acts through the same rotations, with a central phase that fixes every state. The maximally mixed state is the unique fixed point; the boundary sphere is homogeneous, and the purity radius is a complete invariant of the orbit. The slice is thus not merely a ball but a ball with its rotation group, and the geometry that makes the trace-one slice of the cone into a state space is exactly the geometry that the algebra's unitary group preserves.</p>
+<h2 id="what-the-slice-picture-shows">What the Slice Picture Shows</h2>
+<p>The main structural points are these. The state space of a qubit is not postulated as a ball of vectors; it is the trace-one slice of a cone. The cone is the positive cone of the Hermitian subspace, and the positive cone is, in turn, exactly the future light cone of the algebra's norm form. The three conditions that define a state — Hermitian, positive, trace one — become membership in $\mathbb{M}_+$, a trace normalization, and a single quadratic inequality supplied by the norm form; positivity is not an extra axiom but the statement that the state lies in the cone. Purity is a boundary condition rather than a separate axiom: the pure states are the idempotents, the rank-one projections, and the zero divisors of trace one, all at once, and they are the extreme rays of the cone. Mixedness is the interior, and the norm form restricted to the slice is, up to a factor, the linear entropy. Entropy and fidelity are then functions of the radius and of the Bloch vectors in the Euclidean geometry of the slice.</p>
+<p>Several points are left open in this picture. The base of the logarithm in the entropy is a convention, natural logarithms giving nats and base-two logarithms giving bits; the geometry does not prefer one. The normalization of the transition probability is likewise a convention, since some authors take the unsquared expression as the fidelity and others its square; the closed form above is stated for the squared normalization, which is the one that reduces to the pure-state transition probability. The extension of the slice picture to $n$ qubits requires the tensor product and the corresponding higher-dimensional cones, and the identification of the correct positivity domain there is a separate problem. Finally, this article has used only the future cone; the past cone, and the negative-trace elements of $\mathbb{M}_+$, have no state interpretation here, and whether they acquire one in a wider reading of the algebra is an open question.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra carries a norm form of signature $(1,3)$, whose positive cone coincides exactly with its future light cone. The qubit state space is the intersection of that cone with the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$. Writing a state as</p>
+<p>$$
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{r}\bigr),
+$$</p>
+<p>the intersection is the closed unit ball $|\mathbf{r}| \leq 1$, the <strong>Bloch ball</strong>, whose boundary is the intersection with the null cone.</p>
+<p>The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde{P}_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\mathbf{r}|)$; the maximally mixed state is the center $\mathbf{r} = 0$.</p>
+<p>Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{\rho}^2) = 2N(\tilde{\rho})$, twice the norm form. The von Neumann entropy depends only on $|\mathbf{r}|$, vanishing on the boundary and maximal, equal to $\log 2$, at the center. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the norm form and the trace on $\mathbb{M}_+$, without additional postulates.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>Complex subspace (center), fixed points of quaternion conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real-quaternion subspace, fixed points of complex conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace, fixed points of $\dagger$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace, fixed points of $\flat$</td>
+</tr>
+<tr>
+<td>$\tilde{H} = h_0 e_0 + i\mathbf{h}$</td>
+<td>General Hermitian element</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{H}) = 2 h_0$</td>
+<td>Trace</td>
+</tr>
+<tr>
+<td>$N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = (h_0^2 - |\mathbf{h}|^2)e_0$</td>
+<td>Norm form, signature $(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \mathbf{h}\cdot\mathbf{k})$</td>
+<td>Trace pairing, signature $(4,0)$</td>
+</tr>
+<tr>
+<td>$\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$</td>
+<td>Trace-one hyperplane</td>
+</tr>
+<tr>
+<td>$\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$</td>
+<td>State, Bloch vector $\mathbf{r}$</td>
+</tr>
+<tr>
+<td>$\tilde{P}_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$</td>
+<td>Idempotent (pure state), $|\hat{\boldsymbol{\mu}}| = 1$</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$</td>
+<td>Purity</td>
+</tr>
+<tr>
+<td>$S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$</td>
+<td>Von Neumann entropy</td>
+</tr>
+<tr>
+<td>$T(\tilde{\rho},\tilde{\sigma}) = (\mathrm{Tr}\sqrt{\sqrt{\tilde{\rho}}\,\tilde{\sigma}\sqrt{\tilde{\rho}}})^2$</td>
+<td>Uhlmann transition probability</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the Bloch sphere, the density matrix formalism, and the standard fidelity.</li>
+<li>Ingemar Bengtsson and Karol Życzkowski, <em>Geometry of Quantum States</em> (Cambridge, 2006), for the differential and convex geometry of the state space and the Bloch ball.</li>
+<li>Asher Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for the operational meaning of states, purity, and distinguishability.</li>
+<li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the spin-1/2 formalism and the Bloch vector.</li>
+<li>Richard Jozsa, "Fidelity for mixed quantum states," <em>Journal of Modern Optics</em> <strong>41</strong> (1994) 2315–2323, for the closed-form Uhlmann fidelity of a qubit.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the algebraic structure of $\mathrm{Cl}_{1,3}$ and its idempotents.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric algebra treatment of spinors, projectors, and the light cone.</li>
+<li>Jacques Faraut and Adam Korányi, <em>Analysis on Symmetric Cones</em> (Oxford, 1994), for the cone-of-squares description of the positive cone of a Euclidean Jordan algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

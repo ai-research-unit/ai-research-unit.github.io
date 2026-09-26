@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacks — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="stacks"><strong>Stacks</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two facts discovered in <em>Moduli Spaces</em> force a change in the foundations. The first is that a moduli problem is more than its set of isomorphism classes: it is the functor that records, for every base $T$, the objects over $T$ and, between two such objects, their isomorphisms, and the natural home of such data is not a category of sets but a category of groupoids, since two objects over a base can be isomorphic in many ways. The second is that the failure of representability is caused exactly by the automorphisms: a curve of genus two has a nontrivial automorphism, a stable bundle of rank at least two has the scalars, and the presence of a nontrivial automorphism of an object over a point is incompatible with the existence of a universal family, hence with a fine moduli space. The repair is not to discard the automorphisms but to keep them: one replaces the functor to sets by a functor to groupoids and requires it to satisfy the descent conditions of Part I's <em>Descent Theory</em>, obtaining the notion of a <strong>stack</strong>; the moduli problem then has a representing object, the <strong>moduli stack</strong>, which carries a universal family, and the classical coarse space of <em>Moduli Spaces</em> is recovered from the stack by forgetting the automorphism groups.</p>
+<p>Stack theory is the groupoid-valued version of the theory of sheaves on a site, so its formal part belongs to Part I: the Grothendieck topologies, the sheaves on sites and the descent conditions are <em>Sheaves on Sites</em> and <em>Descent Theory</em>, and the 2-categorical foundations — the categories fibered in groupoids, the 2-Yoneda lemma, the limits indexed by 2-categories, the higher categories in which the descent conditions are expressed — are <em>Higher Algebra and Higher Categories</em>. This article is the geometric instance: it defines the stacks that arise from moduli problems over the étale and smooth sites of schemes, defines algebraic (Artin) stacks and Deligne–Mumford stacks by the existence of a smooth, respectively étale, atlas, proves the elementary properties of the 2-fibre product and the diagonal on which everything rests, describes the sheaves and the cohomology of a stack by descent along an atlas, and applies the theory to the moduli stacks of curves and of vector bundles, whose coarse spaces were constructed in <em>Moduli Spaces</em>. The organisational points are these. A stack is a sheaf of groupoids on a site, and a sheaf of groupoids is a descent datum, so the first theorem is that every descent datum along a cover of a scheme is effective in the groupoid setting, which is the hypothesis under which the moduli problems of algebraic geometry are stacks at all. An algebraic stack is a stack presented by a scheme $U$ with a smoothly surjective morphism $U\to\mathcal{X}$, and a Deligne–Mumford stack is one presented by an étale surjection, equivalently one whose diagonal is unramified, equivalently one all of whose automorphism groups are finite and reduced — the last equivalence is the one that makes the theory usable, because the finiteness of the stabilisers is what the moduli problems of curves and of semistable bundles satisfy. The cohomology of a stack is computed by descent from the atlas, and for a Deligne–Mumford stack with finite stabilisers over the complex numbers it agrees with the cohomology of the coarse space with rational coefficients, which is the precise sense in which the stacky refinement does not change the cohomological invariants of the underlying space but only resolves the automorphisms.</p>
+<p>The article closes the category. <em>Algebraic Geometry</em> gave the varieties, <em>Schemes</em> the general objects and their morphisms, <em>Coherent Sheaves</em> the sheaves and their cohomology, <em>Moduli Spaces</em> the classical quotients; the present article supplies the foundational setting in which a moduli problem is representable without artificial hypotheses, and it is the natural language of the modern theory of the moduli of curves, of bundles and of the arithmetic objects whose study lies outside this Part.</p>
+<h2 id="sites-groupoids-and-descent">Sites, Groupoids and Descent</h2>
+<p><strong>Definition.</strong> A <strong>Grothendieck topology</strong> on a category $\mathcal{C}$ with fibre products is a notion of covering family $\{U_i\to U\}$, closed under base change, under refinement and containing the isomorphisms, with the transitivity property; the pair is a <strong>site</strong>. The sites used below are the <strong>Zariski</strong> site of a scheme, the <strong>étale</strong> site, whose coverings are surjective families of étale morphisms, the <strong>smooth</strong> site, whose coverings are surjective families of smooth morphisms, and the <strong>fppf</strong> site, whose coverings are surjective families of faithfully flat morphisms locally of finite presentation. A <strong>sheaf</strong> on a site is a presheaf whose sections satisfy the glueing conditions with respect to every covering, as in Part I's <em>Sheaves on Sites</em>.</p>
+<p><strong>Definition.</strong> A <strong>category fibered in groupoids</strong> over a site $\mathcal{C}$ is a functor $\mathcal{X}\to\mathcal{C}$ such that the fibres are groupoids and the lifting conditions hold: for every morphism $T\to S$ in $\mathcal{C}$ and every object $x\in\mathcal{X}(S)$ there is a pullback $x|_T\in\mathcal{X}(T)$, unique up to a unique isomorphism compatible with the compositions. A <strong>stack</strong> over $\mathcal{C}$ is a category fibered in groupoids satisfying descent: for every covering $\{U_i\to U\}$ the groupoid $\mathcal{X}(U)$ is equivalent to the groupoid of descent data</p>
+<p>$$
+\mathcal{X}(U)\ \simeq\ \Bigl\{x_i\in\mathcal{X}(U_i),\ \ \varphi_{ij} : x_i|_{U_{ij}}\xrightarrow{\ \sim\ }x_j|_{U_{ij}},\ \ \varphi_{jk}\varphi_{ij} = \varphi_{ik}\ \text{on } U_{ijk}\Bigr\},
+$$</p>
+<p>where $U_{ij} = U_i\times_UU_j$ and $U_{ijk} = U_i\times_UU_j\times_UU_k$; equivalently, in the language of higher categories, $\mathcal{X}(U)$ is the homotopy limit of the groupoids on the pieces of the nerve, the compatibility being the cocycle condition of Part I's <em>Descent Theory</em>. A morphism of stacks is a natural transformation, and the morphisms of stacks form a groupoid, so the stacks over $\mathcal{C}$ form a 2-category; the <strong>2-Yoneda lemma</strong> identifies the morphisms from a scheme $T$, regarded as a stack by its functor of points, to a stack $\mathcal{X}$ with the groupoid $\mathcal{X}(T)$.</p>
+<p><strong>Theorem (descent for groupoids and for schemes).</strong> Let $\{U_i\to U\}$ be a covering in the étale, smooth or fppf topology.</p>
+<ol>
+<li>The stack of quasi-coherent sheaves on the site: a quasi-coherent sheaf on $U$ is the same as a descent datum of quasi-coherent sheaves on the $U_i$ with isomorphisms over the double overlaps satisfying the cocycle condition. This is the effectiveness of descent for modules, Part I's <em>Descent Theory</em>.</li>
+<li>The stack of schemes: a scheme over $U$ is the same as a descent datum of schemes over the $U_i$ with the cocycle condition; this is the effectiveness of descent for schemes, which is what permits a stack to be presented by an atlas and is the reason moduli problems are algebraic.</li>
+<li>The stack of $G$-torsors for a group scheme $G$ is the <strong>classifying stack</strong> $BG$, whose value at $T$ is the groupoid of $G$-torsors over $T$ with their isomorphisms; for $G$ smooth and affine over a field, $BG$ is an algebraic stack, and a morphism $T\to BG$ is the same as a $G$-torsor on $T$. When $G$ is the trivial group $BG$ is the terminal stack, a scheme; when $G$ acts on a scheme $X$, the quotient stack $[X/G]$ has value at $T$ the groupoid of pairs of a $G$-torsor $P\to T$ and a $G$-equivariant morphism $P\to X$.</li>
+</ol>
+<p><em>Proof.</em> (1) is the descent theorem for modules over a faithfully flat or étale cover, proved by the exactness of the Amitsur complex; (2) is the corresponding statement for schemes, proved by glueing, and (3) follows from (1) and (2) by writing a torsor as a scheme with a free $G$-action and applying descent to it. The identification of the morphisms $T\to BG$ with the torsors is the 2-Yoneda lemma applied to the definition of $BG$. $\square$</p>
+<p><strong>Remark (why the groupoid-valued formulation repairs representability).</strong> In the set-valued formulation the constant family over a base with a nontrivial automorphism is not constant, and Yoneda's lemma forbids the universal family. In the groupoid-valued formulation the same phenomenon is a morphism from the classifying stack $B\operatorname{Aut}(x)$ to the moduli stack, whose very presence records the automorphism group; there is no contradiction, the universal family exists, and the automorphism group is not lost but classified. This is the whole content of the transition from <em>Moduli Spaces</em> to the present article, and it explains why $\mathcal{M}_g$ is a better object than $M_g$: the stack knows the automorphism group of every curve, the coarse space knows only the curve.</p>
+<h2 id="algebraic-and-delignemumford-stacks">Algebraic and Deligne–Mumford Stacks</h2>
+<p><strong>Definition.</strong> Let $\mathcal{X}$ be a stack over the smooth or étale site of schemes over a base $S$.</p>
+<ol>
+<li>A morphism of stacks $\mathcal{X}\to\mathcal{Y}$ is <strong>representable</strong> if for every scheme $T$ and every morphism $T\to\mathcal{Y}$ the 2-fibre product $\mathcal{X}\times_{\mathcal{Y}}T$ is equivalent to a scheme; the morphism then has any property of morphisms of schemes that is stable under base change, by declaring it to have the property when every such base change does.</li>
+<li>The <strong>diagonal</strong> of $\mathcal{X}$ is the morphism $\Delta : \mathcal{X}\to\mathcal{X}\times_S\mathcal{X}$; it is representable when $\mathcal{X}$ is algebraic, so that a property of the diagonal — affine, quasicompact, separated, locally of finite presentation, unramified, flat — makes sense.</li>
+<li>$\mathcal{X}$ is <strong>algebraic</strong> (an <strong>Artin stack</strong>) if it is a stack for the smooth topology, the diagonal is representable, separated and locally of finite presentation, and there is a scheme $U$ and a smooth surjective morphism $U\to\mathcal{X}$, an <strong>atlas</strong>. It is a <strong>Deligne–Mumford stack</strong> if in addition the atlas can be taken étale, equivalently if the diagonal is unramified.</li>
+</ol>
+<p><strong>Theorem (the structure of algebraic stacks).</strong> Let $\mathcal{X}$ be a stack over the étale or smooth site.</p>
+<ol>
+<li>$\mathcal{X}$ is algebraic if and only if the diagonal is representable, separated and locally of finite presentation and there is a smooth atlas, and $\mathcal{X}$ is Deligne–Mumford if and only if the diagonal is unramified, if and only if every automorphism group scheme of a point of $\mathcal{X}$ is finite and reduced over its residue field, if and only if there is an étale atlas.</li>
+<li>A quotient stack $[X/G]$ for a smooth affine group scheme $G$ acting on a scheme $X$ locally of finite type over a field is algebraic; it is Deligne–Mumford exactly when the stabilisers of the action are finite and reduced, and it is a scheme exactly when the action is free and the quotient exists as a scheme.</li>
+<li>The 2-fibre product $\mathcal{X}\times_{\mathcal{Z}}\mathcal{Y}$ of algebraic stacks exists, is algebraic, and is computed by the 2-universal property in the 2-category of stacks; base change of an algebraic stack along a morphism of schemes is algebraic, and the properties of type (2) are stable under base change.</li>
+<li>For $\mathcal{X}$ Deligne–Mumford with finite stabilisers there is a <strong>coarse moduli space</strong> $X$: a scheme with a morphism $\pi : \mathcal{X}\to X$ such that $\pi$ is initial among morphisms to schemes and induces a bijection on geometric points, and $\pi$ is universal for maps to algebraic spaces; the coarse space is obtained by descent as the quotient of the atlas by the equivalence relation of the groupoid, and it is a scheme when the stabilisers are finite and the atlas is quasiprojective.</li>
+</ol>
+<p><em>Proof.</em> (1) the equivalence of the étale atlas with the unramified diagonal is the standard characterisation of Deligne–Mumford stacks, and the identification of the unramified diagonal with finite reduced stabilisers is the definition of a point of a stack read through the 2-fibre product. (2) the atlas of $[X/G]$ is $X$ itself, with the smooth surjection $X\to[X/G]$, and the stabilisers are the stabiliser subgroups of the action. (3) is the 2-categorical universal property of the fibre product, together with the verification of the atlas condition by base change. (4) the coarse space is the sheafification of the presheaf of isomorphism classes for the étale topology, and the finiteness of the stabilisers makes the sheafification representable by a scheme, by the theorem of Keel and Mori; the construction by descent from the atlas is the groupoid quotient of Part I's <em>Descent Theory</em>. $\square$</p>
+<p><strong>Example (the elementary stacks).</strong> (i) $BG$ for a finite group $G$ is a Deligne–Mumford stack whose coarse space is a point; its points have automorphism group $G$, so it is the simplest example of a stack whose coarse space forgets something and the basic example in which stacky cohomology differs from the cohomology of the coarse space. (ii) $[\mathbb{A}^1/\mathbb{G}_m]$, the quotient of the affine line by the standard scaling action, is an algebraic stack with two isomorphism classes of geometric points: the origin, whose automorphism group is $\mathbb{G}_m$, and the generic point, whose automorphism group is trivial. It is not Deligne–Mumford, since the stabiliser at the origin is infinite, and it shows that an Artin stack with infinite stabilisers need not have a coarse moduli space: the only functions on $\mathbb{A}^1$ invariant under scaling are the constants, so the natural morphism to a scheme lands in a point and identifies the two classes, and the stack records the $\mathbb{G}_m$ that acts at the origin. (iii) $\mathcal{M}_g$, the moduli stack of smooth curves of genus $g$, is Deligne–Mumford for $g\geq2$ because the automorphism group of a curve of genus at least two is finite; the coarse space is the $M_g$ of <em>Moduli Spaces</em>. (iv) The moduli stack $\mathcal{M}(r,d)$ of semistable bundles of rank $r$ and degree $d$ on a curve is an Artin stack, with the scalars $\mathbb{G}_m$ acting trivially on the moduli problem, so that the stabilisers are the scalars and the stack is not Deligne–Mumford; the coarse space is the $M(r,d)$ of <em>Moduli Spaces</em>.</p>
+<p><strong>Remark (Artin's criteria, stack form).</strong> The algebraicity of a moduli stack is verified in practice by Artin's criteria of <em>Moduli Spaces</em>: a limit-preserving stack locally of finite presentation, with representable separated diagonal and effective deformation functors of finite dimension, is an algebraic stack. The verification is the same computation as for the coarse space — the tangent space $H^1(C,T_C)$ for curves, $\operatorname{Ext}^1(E,E)$ for bundles, the obstructions in $H^2$ — and the additional bookkeeping is the effectivity, which is the descent theorem for objects and morphisms.</p>
+<h2 id="sheaves-and-cohomology-on-a-stack">Sheaves and Cohomology on a Stack</h2>
+<p><strong>Definition.</strong> Let $\mathcal{X}$ be an algebraic stack presented by an atlas $u : U\to\mathcal{X}$, with 2-fibre products $U\times_{\mathcal{X}}U$, $U\times_{\mathcal{X}}U\times_{\mathcal{X}}U$ forming the <strong>Čech nerve</strong> of the atlas, a simplicial scheme $U_\bullet$. An $\mathcal{O}_{\mathcal{X}}$-<strong>module</strong> on $\mathcal{X}$ is the data of a quasi-coherent sheaf $\mathcal{F}$ on $U$ with an isomorphism $\alpha : p_1^*\mathcal{F}\to p_2^*\mathcal{F}$ over $U\times_{\mathcal{X}}U$ satisfying the cocycle condition over $U\times_{\mathcal{X}}U\times_{\mathcal{X}}U$; equivalently, a quasi-coherent sheaf on $\mathcal{X}$ is a descent datum for the atlas, and the category of quasi-coherent sheaves on $\mathcal{X}$ is identified with the category of quasi-coherent sheaves on $U$ with the descent datum. The <strong>cohomology</strong> is the cohomology of the simplicial scheme, that is, of the total complex of the Čech nerve,</p>
+<p>$$
+H^i(\mathcal{X},\mathcal{F}) = R^i\Gamma(\mathcal{X},\mathcal{F}) = H^i\bigl(\check C^\bullet(U_\bullet,\mathcal{F})\bigr),
+$$</p>
+<p>or, in the étale or smooth topology, the derived functors of the global sections functor on the lisse-étale site.</p>
+<p><strong>Theorem (cohomology by descent, and comparison with the coarse space).</strong> Let $\mathcal{X}$ be an algebraic stack with an atlas $u : U\to\mathcal{X}$ and $\mathcal{F}$ a quasi-coherent sheaf on $\mathcal{X}$.</p>
+<ol>
+<li>The cohomology of $\mathcal{F}$ is computed by the Čech nerve: $H^i(\mathcal{X},\mathcal{F})$ is the $i$-th cohomology of the complex of the simplicial structure, and it agrees with the derived functors of global sections, so the long exact sequences and the spectral sequences of <em>Sheaf Cohomology</em> and <em>Derived Functors and Sheaf Cohomology</em> hold verbatim for stacks.</li>
+<li>If $\mathcal{X}$ is Deligne–Mumford with finite stabilisers over the complex numbers and $X$ is its coarse space, then for the étale cohomology with rational coefficients
+   $$H^i(\mathcal{X},\mathbb{Q})\cong H^i(X,\mathbb{Q}),$$
+ so that the stacky refinement does not change the rational cohomology of the moduli problem.</li>
+<li>For the classifying stack $BG$ of a finite group $G$ one has $H^i(BG,\mathbb{Q}) = H^i(G,\mathbb{Q})$, the group cohomology in degree $i$, which vanishes for $i>0$ when $G$ is finite and $\mathbb{Q}$ is the coefficient module; hence the comparison of (2) is a statement about finite stabilisers, and the cohomology with integral coefficients, or with coefficients in a nontrivial local system, does see the stack structure.</li>
+</ol>
+<p><em>Proof.</em> (1) the descent condition identifies the category of sheaves on $\mathcal{X}$ with the category of descent data, and the derived functor of global sections is then computed by the Čech complex of the nerve, as in <em>Čech Cohomology</em>, the nerve being a hypercover of $\mathcal{X}$. (2) is the comparison theorem for Deligne–Mumford stacks, proved by decomposing the atlas into the loci of constant stabiliser and using the finiteness of the stabilisers together with the vanishing of the rational cohomology of a finite group in positive degree. (3) the identification of $H^i(BG,\mathbb{Q})$ with the group cohomology is the definition of $BG$ and the homotopy-invariance of group cohomology for a finite group and rational coefficients. $\square$</p>
+<p><strong>Example (the stacky difference).</strong> For $\mathcal{X} = B\mathbb{Z}/2\mathbb{Z}$ the coarse space is a point, so $H^0(\mathbb{Q}) = \mathbb{Q}$ and all higher rational cohomology vanishes, while the integral cohomology is the group cohomology of $\mathbb{Z}/2$, nonzero in every degree. For $\mathcal{X} = [\mathbb{A}^1/\mathbb{G}_m]$ the coarse space is $\mathbb{A}^1$ and the rational cohomology of the stack and of the coarse space agree, while the automorphism group $\mathbb{G}_m$ at the origin is visible in the cohomology with coefficients in the classifying sheaf of the group. The general principle is that the coarse space is the correct target for cohomological invariants with coefficients in a vector space over a field of characteristic zero, while the stack is needed for the finer invariants, the intersection theory with the virtual fundamental class, and the arithmetic of the moduli problem.</p>
+<p><strong>Remark (the six operations and the derived category).</strong> The functors $f^*$, $f_*$, $Rf_*$, $\otimes$, $\mathcal{H}om$ and the duality of <em>Coherent Sheaves</em> extend to algebraic stacks, the derived category of an algebraic stack is the derived category of the abelian category of $\mathcal{O}$-modules satisfying descent, and the formalism of Part I's <em>Derived Categories</em> and <em>Derived Functors</em> applies verbatim once the descent condition is imposed. The intersection theory of stacks — the virtual fundamental class, the Gromov–Witten invariants, the deformation-obstruction theory with the perfect obstruction theory of Behrend and Fantechi — uses the cotangent complex and the obstruction theory of Part I's <em>Deformation Theory</em>; its geometric content lies beyond this Part.</p>
+<h2 id="the-moduli-stacks-of-the-classical-problems">The Moduli Stacks of the Classical Problems</h2>
+<p><strong>Theorem (the moduli stacks).</strong> Let $k$ be a field of characteristic zero and let the stacks be over the étale site of $k$-schemes.</p>
+<ol>
+<li>The moduli stack $\mathcal{M}_g$ of smooth projective curves of genus $g\geq2$ is a Deligne–Mumford stack of dimension $3g-3$, smooth over $k$, with coarse moduli space the quasiprojective variety $M_g$ of <em>Moduli Spaces</em>; the universal curve $\mathcal{C}_g\to\mathcal{M}_g$ is a representable morphism whose fibre at a moduli point $[C]$ is the curve $C$ with its automorphism group, and the tangent space at the point is $H^1(C,T_C)$.</li>
+<li>The moduli stack $\overline{\mathcal{M}}_g$ of stable curves of genus $g\geq2$ is a smooth proper Deligne–Mumford stack with coarse space the projective $\overline M_g$ of <em>Moduli Spaces</em>; the boundary is a divisor with normal crossings, and the theory of the stable curve is the compactification theory of the moduli problem stated in stack form.</li>
+<li>The moduli stack $\mathcal{M}(r,d)$ of semistable vector bundles of rank $r$ and degree $d$ on a smooth projective curve $C$ is an Artin stack, smooth, whose coarse space is the quasiprojective $M(r,d)$ of <em>Moduli Spaces</em>; it is Deligne–Mumford exactly when the bundles are stable and the scalars are killed, that is, after rigidifying the $\mathbb{G}_m$ of scalar automorphisms, and the rigidified stack is the Deligne–Mumford stack whose coarse space is the moduli of stable bundles.</li>
+<li>In each case the stack is the correct object on which the universal family lives: the universal curve over $\mathcal{M}_g$, the universal bundle over $\mathcal{M}(r,d)$ after the standard rigidification, and the coarse space is obtained from the stack by the coarse moduli space morphism of the previous section.</li>
+</ol>
+<p><em>Proof.</em> (1) and (2): the automorphism groups are finite for $g\geq2$ by the finiteness theorem for the automorphisms of a curve of genus at least two, and the deformation theory is unobstructed with tangent space $H^1(C,T_C)$ and vanishing obstruction space, so the stack is smooth of the stated dimension, with the coarse space computed in <em>Moduli Spaces</em>; the universal curve is the representable morphism from the stack of pairs $(C,p)$ with $p$ a point. (3) the stack of bundles is algebraic by Artin's criteria, with the deformation theory of <em>Coherent Sheaves</em>, and its stabilisers are the automorphism group schemes of the bundles, which contain the scalars, so it is Artin and not Deligne–Mumford; killing the scalars by requiring a trivialisation of the determinant rigidifies the problem and makes the automorphism groups finite for stable bundles. (4) is the content of the universal property of the stack and of the coarse moduli space morphism. $\square$</p>
+<p><strong>Remark (why the stack is the right home).</strong> Three things become available on the moduli stack that the coarse space does not carry, and each is used elsewhere in the subject. The <strong>universal family</strong> exists, so that a family over a base $T$ is a morphism $T\to\mathcal{M}$ and the fibre products $\mathcal{M}\times_{\mathcal{M}\times\mathcal{M}}\mathcal{M}$ compute the intersections of the corresponding loci — the correct operation for the enumerative geometry of the moduli problem. The <strong>virtual fundamental class</strong> exists when the stack carries a perfect obstruction theory, giving the intersection numbers of the moduli problem even when the coarse space is highly singular, which is the mechanism of the enumerative theories of curves and of stable maps. The <strong>automorphism groups</strong> are part of the object, so that the deformation theory remembers the infinitesimal automorphisms and the obstruction theory is the one of the derived category, with the cotangent complex in place of the cotangent sheaf; this is the sense in which a moduli stack is the technically correct definition of a moduli problem, the coarse space being a derived notion obtained from it by forgetting the stabilisers.</p>
+<h2 id="summary">Summary</h2>
+<p>A stack is a category fibered in groupoids over a site satisfying descent, so that the objects over a scheme form a groupoid and the groupoid over a base is recovered from the groupoids over a cover by the cocycle condition; stacks are the groupoid-valued form of sheaves, and their theory is the descent theory of Part I's <em>Sheaves on Sites</em> and <em>Descent Theory</em> in the case of coefficients in groupoids. The stacks that arise in algebraic geometry are those associated with moduli problems: the classifying stack $BG$ of a group scheme, whose morphisms from a scheme are the $G$-torsors on it, and the quotient stack $[X/G]$ of an action, whose morphisms are the pairs of a torsor and an equivariant map. A stack is algebraic if it admits a smooth atlas, a scheme $U$ with a smooth surjective morphism $U\to\mathcal{X}$ and representable separated diagonal locally of finite presentation, and it is Deligne–Mumford if the atlas can be taken étale, equivalently if the diagonal is unramified, equivalently if all its stabiliser group schemes are finite and reduced; the 2-fibre products exist and are computed by the 2-universal property, and the properties of morphisms are defined representably and are stable under base change. Deligne–Mumford stacks with finite stabilisers have coarse moduli spaces, obtained by descent from the atlas, which are the classical moduli spaces of <em>Moduli Spaces</em>, and the morphism to the coarse space is initial among morphisms to schemes and bijective on geometric points.</p>
+<p>Sheaves on a stack are descent data along an atlas, their cohomology is the cohomology of the Čech nerve of the atlas, and it agrees with the cohomology of the coarse space with rational coefficients when the stack is Deligne–Mumford with finite stabilisers over the complex numbers; with integral coefficients or with nontrivial coefficients the stack structure is visible, already in the example $B\mathbb{Z}/2\mathbb{Z}$, whose integral cohomology is the group cohomology of $\mathbb{Z}/2$. Applied to the classical problems, the moduli stack of curves of genus at least two is a smooth Deligne–Mumford stack of dimension $3g-3$ with the universal curve, its compactification by stable curves is smooth and proper with normal-crossing boundary, and the moduli stack of semistable bundles is an Artin stack whose rigidified stable locus is Deligne–Mumford, each with the coarse space constructed in <em>Moduli Spaces</em>. The gain over the coarse formulation is the universal family, the virtual fundamental class and the obstruction theory, and with them the enumerative and deformation-theoretic machinery of the modern theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{X}\to\mathcal{C}$</td>
+<td>category fibered in groupoids; stack when descent holds</td>
+</tr>
+<tr>
+<td>$\operatorname{holim}$, descent datum</td>
+<td>homotopy limit over the nerve; cocycle condition</td>
+</tr>
+<tr>
+<td>$BG$</td>
+<td>classifying stack of torsors, $\operatorname{Mor}(T,BG) = G$-torsors on $T$</td>
+</tr>
+<tr>
+<td>$[X/G]$</td>
+<td>quotient stack; value = pairs of a $G$-torsor and an equivariant map</td>
+</tr>
+<tr>
+<td>$\Delta : \mathcal{X}\to\mathcal{X}\times_S\mathcal{X}$</td>
+<td>diagonal; representable for algebraic stacks</td>
+</tr>
+<tr>
+<td>algebraic (Artin) stack</td>
+<td>smooth atlas, representable separated diagonal, locally of finite presentation</td>
+</tr>
+<tr>
+<td>Deligne–Mumford stack</td>
+<td>étale atlas; unramified diagonal; finite reduced stabilisers</td>
+</tr>
+<tr>
+<td>$\mathcal{X}\times_{\mathcal{Y}}\mathcal{Z}$</td>
+<td>2-fibre product</td>
+</tr>
+<tr>
+<td>$U_\bullet$, $\check C^\bullet(U_\bullet,\mathcal{F})$</td>
+<td>Čech nerve of an atlas; complex computing cohomology</td>
+</tr>
+<tr>
+<td>$H^i(\mathcal{X},\mathcal{F})$</td>
+<td>cohomology of a stack, by descent along an atlas</td>
+</tr>
+<tr>
+<td>$\pi : \mathcal{X}\to X$</td>
+<td>coarse moduli space morphism; initial for maps to schemes</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_g$, $\overline{\mathcal{M}}_g$, $\mathcal{M}(r,d)$</td>
+<td>moduli stacks of curves, stable curves, semistable bundles</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gérard Laumon and Laurent Moret-Bailly, <em>Champs algébriques</em> (Springer, 2000), for the foundations of algebraic stacks, atlases and the diagonal.</li>
+<li>Pierre Deligne and David Mumford, <em>The irreducibility of the space of curves of given genus</em> (Publications Mathématiques de l'IHÉS 36, 1969), for the moduli stack of stable curves and its boundary.</li>
+<li>Michael Artin, <em>Versal deformations and algebraic stacks</em> (Inventiones Mathematicae 27, 1974), for the criteria for algebraicity.</li>
+<li>Sean Keel and Shigefumi Mori, <em>Quotients by groupoids</em> (Annals of Mathematics 145, 1997), for the existence of coarse moduli spaces of groupoids with finite stabilisers.</li>
+<li>Angelo Vistoli, <em>Intersection theory on algebraic stacks and on their moduli spaces</em> (Inventiones Mathematicae 97, 1989), for the cohomology and intersection theory of stacks.</li>
+<li>Martin Olsson, <em>Algebraic Spaces and Stacks</em> (American Mathematical Society, 2016), for a modern textbook development of the same material.</li>
+<li>Barbara Fantechi, Lothar Göttsche, Luc Illusie, Steven Kleiman, Nitin Nitsure and Angelo Vistoli, <em>Fundamental Algebraic Geometry: Grothendieck's FGA Explained</em> (American Mathematical Society, 2005), for the descent theory and the representability theorems used throughout.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

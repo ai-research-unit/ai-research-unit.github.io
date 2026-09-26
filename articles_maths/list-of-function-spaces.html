@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Function Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-function-spaces"><strong>List of Function Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the function spaces the corpus meets. A function space is a collection of functions carrying a topology — usually a norm or a family of seminorms — in which limits may be taken, and the rows below name each such space, record the norm or the topology that makes it a space of analysis, record whether that topology is complete, and point to the article that introduces the space. Every row points to an article; this article introduces nothing and proves nothing. The spaces are grouped by the layer that introduces them — the measurable and sequence spaces, the continuous and smooth spaces, the smoothness scales, and the analytic and test-function spaces — and the spaces that fail completeness, or that carry no norm at all, are recorded beside the complete ones as non-examples, so that the class is visibly a proper part of the class above it.</p>
+<h2 id="the-measurable-and-sequence-spaces">The Measurable and Sequence Spaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The norm it carries, and its completeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L^p(\mu)$, $1 \leq p < \infty$</td>
+<td>$\lVert f\rVert_p = \left(\int \lvert f\rvert^p d\mu\right)^{1/p}$; complete by the Riesz–Fischer theorem</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>$L^\infty(\mu)$</td>
+<td>essential supremum norm $\lVert f\rVert_\infty = \inf\{c : \lvert f\rvert \leq c \text{ a.e.}\}$; complete</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>$L^2(\mu)$</td>
+<td>the norm of the inner product $\langle f,g\rangle = \int f\bar g\,d\mu$; complete, and the basic Hilbert space</td>
+<td><em>Banach and Hilbert Spaces</em></td>
+</tr>
+<tr>
+<td>$\ell^p$, $1 \leq p < \infty$</td>
+<td>$\lVert(x_n)\rVert_p = \left(\sum_n \lvert x_n\rvert^p\right)^{1/p}$; complete</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>$\ell^\infty$</td>
+<td>$\lVert(x_n)\rVert_\infty = \sup_n \lvert x_n\rvert$; complete</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>$c_0$, $c$</td>
+<td>sup norm; complete, and closed subspaces of $\ell^\infty$</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>$B(X,Y)$, $C_b(X,Y)$</td>
+<td>operator norm and sup norm; complete when $Y$ is complete</td>
+<td><em>Normed and Banach Spaces</em>; <em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>$L^p(0,T;V)$, Bochner space</td>
+<td>$\left(\int_0^T \lVert u(t)\rVert_V^p dt\right)^{1/p}$; complete when $V$ is Banach</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The measurable spaces are the ones on which the integral is available, and their completeness is the completeness that makes the convergence theorems of the integral into existence theorems for limits.</p>
+<h2 id="the-continuous-and-smooth-spaces">The Continuous and Smooth Spaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The norm or topology it carries, and its completeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C(K)$, $K$ compact</td>
+<td>supremum norm $\lVert f\rVert_\infty$; complete</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>$C_0(X)$, $C_c(X)$</td>
+<td>sup norm; $C_0$ complete, $C_c$ dense in $C_0$</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em>; <em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>$C^k(U,Y)$, $0 \leq k < \infty$</td>
+<td>the seminorms of the derivatives up to order $k$ on compacta; complete</td>
+<td><em>Differential Calculus on Normed Spaces</em></td>
+</tr>
+<tr>
+<td>$C^\infty(U) = \mathcal E(\Omega)$</td>
+<td>the increasing seminorms $\sup_K \lvert\partial^\alpha f\rvert$, $K$ compact, $\lvert\alpha\rvert \leq n$; a Fréchet space, hence complete</td>
+<td><em>Fréchet Spaces</em></td>
+</tr>
+<tr>
+<td>$\mathcal O(\Omega)$, holomorphic functions</td>
+<td>the seminorms of the supremum on compacta; a Fréchet space, hence complete and Montel</td>
+<td><em>Fréchet Spaces</em></td>
+</tr>
+<tr>
+<td>$B M O$, bounded mean oscillation</td>
+<td>$\sup_Q \frac{1}{\lvert Q\rvert}\int_Q \lvert f - f_Q\rvert$, a seminorm modulo constants; complete</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-smoothness-scales">The Smoothness Scales</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The norm it carries, and its completeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W^{k,p}(\Omega)$, $W^{k,p}_0(\Omega)$</td>
+<td>$\lVert f\rVert_{W^{k,p}}^p = \sum_{\lvert\gamma\rvert\leq k}\lVert\partial^\gamma f\rVert_p^p$; a Banach space, hence complete</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>$H^k(\Omega) = W^{k,2}(\Omega)$</td>
+<td>the inner product $\sum_{\lvert\gamma\rvert\leq k}\langle\partial^\gamma f,\partial^\gamma g\rangle$; a Hilbert space</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>$H^{-1}(\Omega)$</td>
+<td>the operator norm in the dual of $H^1_0(\Omega)$; complete</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>$H^s(\mathbb R^n)$, $s \in \mathbb R$</td>
+<td>$\lVert f\rVert_{H^s}^2 = \int(1+\lvert\xi\rvert^2)^s\lvert\hat f(\xi)\rvert^2 d\xi$; complete</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>$H^s_p$, Bessel-potential space</td>
+<td>$\lVert f\rVert = \lVert(1-\Delta)^{s/2}f\rVert_p$; complete</td>
+<td><em>Interpolation Theory</em></td>
+</tr>
+<tr>
+<td>$C^{k,\alpha}$, Hölder space</td>
+<td>$\lVert f\rVert = \sum_{\lvert\gamma\rvert\leq k}\lVert\partial^\gamma f\rVert_\infty + \sup_{x\neq y}\frac{\lvert\partial^\gamma f(x)-\partial^\gamma f(y)\rvert}{\lvert x-y\rvert^\alpha}$; complete</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>$\Lambda^s = C^s$, Hölder–Zygmund space</td>
+<td>the Besov norm $B^s_{\infty,\infty}$; complete</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>$B^s_{p,q}$, Besov space</td>
+<td>the mixed $\ell^q(L^p)$ norm of the Littlewood–Paley blocks; a quasi-Banach space, complete</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>$F^s_{p,q}$, Triebel–Lizorkin space</td>
+<td>the mixed $L^p(\ell^q)$ norm of the Littlewood–Paley blocks; complete</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>$H^1$, real Hardy space</td>
+<td>$\lVert f\rVert_{H^1} = \lVert \sup_t \lvert f * \phi_t\rvert\rVert_1$; complete, and the borderline case $F^0_{1,2}$</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>$L^{p,q}$, Lorentz space</td>
+<td>the norm of the decreasing rearrangement, $\lVert f\rVert = \left(\int_0^\infty (t^{1/p}f^*(t))^q \frac{dt}{t}\right)^{1/q}$; complete</td>
+<td><em>Interpolation Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-analytic-and-test-function-spaces">The Analytic and Test-Function Spaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The norm or topology it carries, and its completeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H^p(\mathbb D)$, Hardy space</td>
+<td>$\lVert f\rVert_{H^p} = \sup_{0<r<1}\left(\frac{1}{2\pi}\int_0^{2\pi}\lvert f(re^{i\theta})\rvert^p d\theta\right)^{1/p}$; complete</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>$A^p(\mathbb D)$, Bergman space</td>
+<td>$\left(\frac{1}{\pi}\int_{\mathbb D}\lvert f\rvert^p dA\right)^{1/p}$; complete</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>$\mathcal B$, Bloch space</td>
+<td>$\sup_z (1-\lvert z\rvert^2)\lvert f'(z)\rvert$; complete modulo constants</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>$PW_B$, Paley–Wiener space</td>
+<td>the $L^2$ norm of the boundary function; a closed subspace of $L^2$</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>$\mathcal S(\mathbb R^n)$, Schwartz class</td>
+<td>the seminorms $p_{\alpha,\beta}(f) = \sup_x \lvert x^\alpha\partial^\beta f\rvert$; a Fréchet space, hence complete</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em>; <em>Fréchet Spaces</em></td>
+</tr>
+<tr>
+<td>$\mathcal D(\Omega) = C_c^\infty(\Omega)$</td>
+<td>the LF inductive limit of the $\mathcal D_K$; complete, and not normable</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>$\mathcal D_K(\Omega)$</td>
+<td>the seminorms $\sup_K \lvert\partial^\alpha f\rvert$; a Fréchet space</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>$\mathcal D'(\Omega)$, $\mathcal E'(\Omega)$, $\mathcal S'(\mathbb R^n)$</td>
+<td>the strong dual topologies; complete</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The test-function spaces are the ones whose duals are the distributions, and the last three rows are recorded here as spaces, their distribution-theoretic content belonging to the catalogue of distributions.</p>
+<h2 id="spaces-without-a-norm-and-spaces-that-are-not-complete">Spaces Without a Norm, and Spaces That Are Not Complete</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property that fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L^p(\mu)$ with $0 < p < 1$</td>
+<td>carries a quasi-norm but no norm, and is not locally convex</td>
+<td><em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>$\mathcal D(\Omega)$, $C_c^\infty(\Omega)$</td>
+<td>complete in its LF topology, but no norm defines that topology</td>
+<td><em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>$\mathcal P([0,1])$, the polynomials</td>
+<td>dense in $C[0,1]$ under the supremum norm, hence normed but not complete; its completion is $C[0,1]$</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>$c_{00}$, finitely supported sequences</td>
+<td>dense in $\ell^p$, hence normed but not complete</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>$C([0,1])$ under the $L^2$ norm</td>
+<td>the norm is genuine, but the space is not complete; its completion is $L^2([0,1])$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>Riemann integrable functions under the supremum norm</td>
+<td>a pointwise limit of Riemann integrable functions need not be Riemann integrable, so the space is not complete</td>
+<td><em>Real Integration</em></td>
+</tr>
+<tr>
+<td>a countable direct sum $\bigoplus_n X_n$ of nonzero Banach spaces</td>
+<td>incomplete under each of the sum, maximum and Euclidean norms; its completions are the sequences with $\sum_i \lVert x_i\rVert < \infty$ and those with $\lVert x_i\rVert \to 0$</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the function spaces of the corpus in four families: the measurable spaces $L^p$ and their discrete counterparts $\ell^p$; the continuous and smooth spaces $C^k$, $C^\infty$ and the holomorphic spaces; the smoothness scales $W^{k,p}$, $H^s$, the Hölder, Besov, Triebel–Lizorkin and Hardy spaces; and the analytic and test-function spaces $H^p$, $A^p$, the Schwartz class and $\mathcal D$. Each row records the norm or the topology the space carries and whether it is complete, and the final table records the spaces for which completeness or normability fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects of this list are named rather than denoted; the few symbols used in the tables are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb K$</td>
+<td>$\mathbb R$ or $\mathbb C$</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>a measure, so that $L^p(\mu)$ is a Lebesgue space</td>
+</tr>
+<tr>
+<td>$\Omega$, $U$</td>
+<td>an open subset of $\mathbb R^n$, or of a normed space</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>a compact set</td>
+</tr>
+<tr>
+<td>$p,q$</td>
+<td>conjugate exponents, $1/p + 1/q = 1$</td>
+</tr>
+<tr>
+<td>$k,\alpha,s$</td>
+<td>differentiability order, Hölder exponent, real smoothness index</td>
+</tr>
+<tr>
+<td>$\mathcal D$, $\mathcal S$, $\mathcal E$</td>
+<td>test functions, Schwartz class, smooth functions</td>
+</tr>
+<tr>
+<td>$\mathcal D'$, $\mathcal S'$, $\mathcal E'$</td>
+<td>their duals, the spaces of distributions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Albrecht Pietsch, <em>History of Banach Spaces and Linear Operators</em> (Birkhäuser, 2007), for the catalogue of the classical Banach function spaces and their completeness.</li>
+<li>Hans Triebel, <em>Theory of Function Spaces</em> (Birkhäuser, 1983), for the Sobolev, Hölder, Besov and Triebel–Lizorkin scales tabulated side by side.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part I</em> (Interscience, 1958), for the standard function spaces of analysis with their norms and completeness properties.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

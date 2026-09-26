@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Double-Slit Experiment in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-double-slit-experiment-in-biquaternionic-form"><strong>The Double-Slit Experiment in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The double-slit experiment is the minimal experiment in which a quantum amplitude is the <strong>sum of two alternatives</strong>. A particle reaches a screen point by either slit, the two routes contribute two amplitudes, and the intensity at the screen is the squared modulus of their sum. The cross term is the interference pattern; closing one slit removes it. Everything that is strange and everything that is ordinary about quantum amplitudes is visible in this one arrangement.</p>
+<p>This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. <em>The Path Integral in Biquaternionic Form</em> identifies the symbol $i$ of the phase $e^{iS/\hbar}$ with the <strong>central scalar imaginary</strong>, places the exponent $iS/\hbar$ in the material sector $\mathbb{M}_-$, and records that only <em>relative</em> phases of paths are observable. <em>The Schrödinger Equation in Biquaternionic Form</em> identifies the wave function not with an element of $\mathbb{M}_+$ but with a <strong>spinor in a minimal left ideal</strong> $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. <em>Quantum Mechanics in Biquaternionic Form</em> supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em> identifies the state space with a slice of the norm-form cone, and <em>Decoherence as Idempotent Projection</em> describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.</p>
+<p>The division between what is established and what is interpretation is stated here and kept explicit.</p>
+<ul>
+<li><strong>Established, and recomputed below.</strong> Two route amplitudes add, $K = K_1 + K_2$, and the intensity is $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ with $\delta$ the relative phase; a common phase shift of both routes is unobservable. The which-path degree of freedom is a qubit whose state is an element $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ of $\mathbb{M}_+$. The fringe <strong>visibility</strong> is the length of the equatorial part of its Bloch vector, the <strong>path predictability</strong> is its polar part, and $V^2 + P^2 = |\mathbf{r}|^2 \le 1$, with equality if and only if $\tilde{\rho}$ is pure — that is, if and only if $\tilde{\rho}$ lies on the zero-divisor cone of $\mathbb{M}_+$. A which-path measurement, or full dephasing along the path axis, annihilates the equatorial part and with it the fringes. For spinor-valued routes, $I = I_1 + I_2 + 2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2)$, and a spin overlap reduces the visibility.</li>
+<li><strong>Interpretation.</strong> Reading the fringe pattern as the projection of a rotating equatorial Bloch vector, and reading the two-slit arrangement as the place where a material-sector action is converted through the central phase into an informational-sector state, are geometric and structural readings of the algebra. The algebra is consistent with them; it does not force them.</li>
+<li><strong>Gap, left visible.</strong> The framework supplies the phase and the state geometry but not the <strong>action</strong>, the <strong>measure</strong>, or the space of paths; and it does not select which slit, or which screen point, a given detection realises. The first gap is inherited from the path-integral article, the second from the measurement-problem article; both are restated where they arise and collected in the open questions.</li>
+</ul>
+<p>One further finding is reported as a <strong>limit on what the double slit demonstrates</strong>. For a beam whose two routes carry the same spin state, the <em>spin-summed</em> two-path intensity is unchanged when the central root $i$ of the phase is replaced by a fixed non-central root $\hat{\mu}$; the difference between the two choices appears only under spin analysis, or when the two routes carry different spin states. The spin-summed double-slit pattern therefore does not by itself witness the centrality of the phase; the framework's grounds for the central root lie in the state-vector equation and in the complex structure of the state module, not in this pattern. The computation is in the section on the phase root below, and it is stated against the pull to claim more for the experiment than it shows.</p>
+<p>The article is organized as follows. The next section writes the two-route amplitude and its interference. The section after that treats the fringe pattern and its standard geometry. The following section identifies the which-path qubit and its Bloch ball. The next proves the visibility–predictability bound and reads it as the cone condition. A section treats which-path detection and dephasing. A section examines the choice of phase root. A section treats spinor-valued routes and spin-dependent fringes. The article closes with what the algebra supplies, what it does not, and the open questions.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$. A Hermitian element is written $\tilde{H} = h_0 e_0 + i\mathbf{h}$, an idempotent is $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, and a state is $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le 1$. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged, as is the statement that multiplication by $i$ exchanges the sectors, $i\,\mathbb{M}_\pm = \mathbb{M}_\mp$.</p>
+<h2 id="the-two-path-amplitude">The Two-Path Amplitude</h2>
+<p>Let $\tilde{K}_j(P)$ be the amplitude for the particle to arrive at the screen point $P$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a <strong>central</strong> unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:</p>
+<p>$$
+\tilde{K}_j(P) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; e^{iS_j[x]/\hbar}, \qquad e^{iS_j/\hbar} \in \mathbb{C}_{\mathbb{B}}, \qquad \frac{iS_j}{\hbar} \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- .
+$$</p>
+<p>Because each phase factor is central and the sum of central elements is central, each $\tilde{K}_j$ is a complex scalar times $e_0$. Writing $a_j(P) = |\tilde{K}_j(P)| \ge 0$ and $\varphi_j(P) = S_j(P)/\hbar$ for its phase,</p>
+<p>$$
+\tilde{K}_j(P) = a_j(P)\, e^{i\varphi_j(P)}\, e_0 .
+$$</p>
+<p>The total amplitude is the <strong>sum of the two alternatives</strong>,</p>
+<p>$$
+\tilde{K}(P) = \tilde{K}_1(P) + \tilde{K}_2(P) = \bigl(a_1 e^{i\varphi_1} + a_2 e^{i\varphi_2}\bigr) e_0 ,
+$$</p>
+<p>which is again central. The additivity is the superposition principle; in the algebra it is the linearity of the complex one-dimensional space $\mathbb{C}_{\mathbb{B}}$ over $\mathbb{C}$ (equivalently, the additivity of the path integral, which the path-integral article takes as its starting point). The intensity is the scalar coefficient of the Hermitian norm of the amplitude:</p>
+<p>$$
+\tilde{K}(P)\tilde{K}(P)^\dagger = I(P)\,e_0, \qquad I(P) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(P), \qquad \delta(P) := \varphi_1(P) - \varphi_2(P).
+$$</p>
+<p><strong>Only the relative phase is observable.</strong> The substitution $\varphi_j \mapsto \varphi_j + c$ with $c$ constant multiplies both amplitudes by the same central element $e^{ic}$, which cancels in the Hermitian norm $\tilde{K}\tilde{K}^\dagger$; and it cancels in any state built from $\tilde{K}$ as well, since $\tilde{K}\tilde{K}^\dagger \mapsto e^{ic}\tilde{K}\tilde{K}^\dagger e^{-ic} = \tilde{K}\tilde{K}^\dagger$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.</p>
+<p>Two observations about where the objects live belong here, because later sections use them.</p>
+<ul>
+<li><strong>The relative phase is central.</strong> $\delta = \varphi_1 - \varphi_2$ is a real number, and $i\,\delta \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_-$ lies along the $ict$ direction, the same axis on which the path-integral article locates the phase exponent and the Feynman-propagator article locates $i\epsilon$. The argument of the complex number $e^{i\delta}$ is supplied by the central imaginary; a non-central root would supply a different kind of argument, and the section on the phase root examines what that changes.</li>
+<li><strong>The scalar amplitude carries no spin.</strong> $\tilde{K}$ is a complex scalar times $e_0$; it is not an element of $\mathbb{M}_+$ and not a spinor. For a spin-independent beam this is the whole amplitude, and the pattern it produces is a statement about the center $\mathbb{C}_{\mathbb{B}}$. When the two routes can be distinguished by spin, the amplitude is a spinor and the cross term acquires a spin overlap; that is the subject of the later section on spinor-valued routes.</li>
+</ul>
+<h2 id="the-fringe-pattern">The Fringe Pattern</h2>
+<p>The standard idealisation of the experiment is two narrow slits separated by a distance $d$ and a screen at distance $D$, with the point $P$ at transverse coordinate $x$ and the two routes equally illuminated. The path-length difference is $L_1 - L_2 \approx d\sin\theta \approx dx/D$, so the relative phase is</p>
+<p>$$
+\delta(x) = k\,(L_1 - L_2) \approx \frac{2\pi d}{\lambda D}\, x,
+$$</p>
+<p>with $k = 2\pi/\lambda$ the wavenumber. With equal amplitudes $a_1 = a_2 = a$, the intensity is</p>
+<p>$$
+I(x) = 4a^2\cos^2\!\Big(\frac{\delta(x)}{2}\Big) = 2a^2\bigl(1 + \cos\delta(x)\bigr).
+$$</p>
+<p>Maxima occur where $d\sin\theta = m\lambda$ and nodes where $d\sin\theta = (m + \tfrac12)\lambda$, with $m \in \mathbb{Z}$; the fringe spacing on the screen is $\lambda D/d$. For $\lambda = 600\,\mathrm{nm}$, $d = 0.1\,\mathrm{mm}$, $D = 1\,\mathrm{m}$, the spacing is $6\,\mathrm{mm}$ and the first node sits at $3\,\mathrm{mm}$.</p>
+<p>Two remarks keep this section honest.</p>
+<ul>
+<li><strong>Finite slit width adds an envelope, which is standard.</strong> A slit of finite width has its own diffraction pattern, and the observed intensity is the two-slit interference modulated by the single-slit envelope. Nothing about the biquaternion framework changes this; it is ordinary wave optics, and this article does not develop it.</li>
+<li><strong>The numbers are inputs, not outputs.</strong> The wavelength, the separation $d$, the distance $D$, and the action $S_j$ itself are not supplied by the algebra. What the biquaternion reading supplies is the <em>identification</em> of the $i$ in $e^{iS_j/\hbar}$ with the central scalar imaginary, the <em>location</em> of the exponent $iS_j/\hbar$ in $\mathbb{M}_-$, and the <em>statement</em> that only $\delta$ is observable. It does not supply the action, the measure, or the geometry; that is the path-integral article's central gap, and it is inherited here without change.</li>
+</ul>
+<h2 id="the-which-path-qubit-and-the-bloch-ball">The Which-Path Qubit and the Bloch Ball</h2>
+<p>The two slits define a <strong>which-path</strong> degree of freedom with exactly two alternatives. In the framework it is a qubit, and its state is an element of $\mathbb{M}_+$. Choose a unit pure real quaternion $\hat{\mu}$ to name the path axis; the two alternatives are the idempotents</p>
+<p>$$
+\tilde{P}_\pm(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr),
+$$</p>
+<p>with $\tilde{P}_+ + \tilde{P}_- = e_0$ and $\tilde{P}_+ \tilde{P}_- = 0$. The which-path state is</p>
+<p>$$
+\tilde{\rho} = \tfrac12\bigl(e_0 + i\mathbf{r}\bigr), \qquad |\mathbf{r}| \le 1,
+$$</p>
+<p>with <strong>polar</strong> part $r_\parallel = \hat{\mu}\cdot\mathbf{r}$ and <strong>equatorial</strong> part $\mathbf{r}_\perp = \mathbf{r} - (\hat{\mu}\cdot\mathbf{r})\,\hat{\mu}$. The polar part is the population bias between the two paths; the equatorial part is the coherence between them. The state is pure, $\tilde{\rho}^2 = \tilde{\rho}$ and $|\mathbf{r}| = 1$, exactly when it lies on the two-sphere; it is mixed, $|\mathbf{r}| < 1$, otherwise.</p>
+<p>The connection with the two route amplitudes is explicit. For a spin-independent beam, write the two amplitudes at the screen point $P$ as $\tilde{K}_j = A_j e_0$ and form the spinor $\psi = \bigl(A_1, A_2\bigr)$ in the framework's state module $\cong \mathbb{C}^2$. The Schrödinger article's construction gives</p>
+<p>$$
+\tilde{\rho} = \frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
+$$</p>
+<p>and the entries are, with $\rho_{jk}$ the matrix elements in the path basis,</p>
+<p>$$
+\rho_{11} = \frac{|A_1|^2}{|A_1|^2 + |A_2|^2}, \qquad
+\rho_{22} = \frac{|A_2|^2}{|A_1|^2 + |A_2|^2}, \qquad
+\rho_{12} = \frac{A_1 A_2^{*}}{|A_1|^2 + |A_2|^2}.
+$$</p>
+<p>Three identifications follow, each of which is a translation rather than a new fact.</p>
+<ol>
+<li><strong>The population bias is the polar component,</strong> $r_\parallel = \rho_{11} - \rho_{22} = \dfrac{|A_1|^2 - |A_2|^2}{|A_1|^2 + |A_2|^2}$.</li>
+<li><strong>The coherence is the equatorial component,</strong> with length $|\mathbf{r}_\perp| = 2|\rho_{12}| = \dfrac{2|A_1 A_2|}{|A_1|^2 + |A_2|^2}$.</li>
+<li><strong>The relative phase is the argument of the off-diagonal element,</strong> $\arg \rho_{12} = \arg A_1 - \arg A_2 = \delta(P)$.</li>
+</ol>
+<p>So the central phase does double duty. It is the <em>global</em> phase of each route, which cancels in the state, and it is the <em>complex structure</em> whose argument is the relative phase stored in the off-diagonal element. As the screen point sweeps and $\delta(x)$ varies, the equatorial vector $(r_1, r_2)$ rotates in the equatorial plane of the Bloch sphere. The normalised intensity is exactly the equatorial component along one axis,</p>
+<p>$$
+\frac{I(x)}{|A_1|^2 + |A_2|^2} = 1 + r_1(x),
+$$</p>
+<p>which was checked on random amplitudes independently of the derivation: the normalised intensity and $1 + r_1$ agreed to machine precision, and the reconstruction $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ from the Bloch components agreed with $\psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ to machine precision.</p>
+<p><strong>Interpretation.</strong> Reading the fringe pattern as the projection of a rotating equatorial Bloch vector is a geometric reading. The algebra is consistent with it and makes it precise, but the algebra does not require the reading; the standard statement in terms of the two amplitudes is complete without it.</p>
+<h2 id="visibility-predictability-and-the-norm-form-bound">Visibility, Predictability, and the Norm-Form Bound</h2>
+<p>Two numbers summarise the pattern and the path information. The <strong>visibility</strong> is the contrast of the fringes,</p>
+<p>$$
+V = \frac{I_{\max} - I_{\min}}{I_{\max} + I_{\min}} = \frac{2|\rho_{12}|}{\rho_{11} + \rho_{22}} = |\mathbf{r}_\perp|,
+$$</p>
+<p>and the <strong>path predictability</strong> is the population bias,</p>
+<p>$$
+P = \frac{|\rho_{11} - \rho_{22}|}{\rho_{11} + \rho_{22}} = |r_\parallel| .
+$$</p>
+<p>Their squares add to the squared Bloch radius:</p>
+<p>$$
+V^2 + P^2 = |\mathbf{r}_\perp|^2 + r_\parallel^2 = |\mathbf{r}|^2 \le 1 .
+$$</p>
+<p>This was checked on random pure and mixed which-path states; the identity held to machine precision, and equality held exactly for the pure states and failed for the mixed ones. The bound has a clean biquaternion reading. The norm form of $\tilde{\rho}$ is</p>
+<p>$$
+N(\tilde{\rho}) = \tilde{\rho}\,\bar{\tilde{\rho}} = \tfrac14\bigl(1 - |\mathbf{r}|^2\bigr)e_0,
+$$</p>
+<p>so that $|\mathbf{r}|^2 = 1 - 4\,\mathrm{Sc}\bigl(N(\tilde{\rho})\bigr)$, and therefore</p>
+<p>$$
+V^2 + P^2 = 1 - 4\,\mathrm{Sc}\bigl(N(\tilde{\rho})\bigr).
+$$</p>
+<p>By <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, a trace-one element of $\mathbb{M}_+$ is a physical state exactly when it lies in the future light cone of the norm form, and it is pure exactly when it lies <em>on</em> the cone, where it is a zero divisor. Hence</p>
+<blockquote>
+<p><strong>maximal fringe contrast is the statement that the which-path state lies on the zero-divisor cone of $\mathbb{M}_+$; partial contrast is the statement that it lies in the interior.</strong></p>
+</blockquote>
+<p>Half-filled fringes and a mixed which-path state are the same fact, and it is a fact about the norm form. This is the framework's translation of the standard two-path duality $V^2 + P^2 \le 1$; the algebra does not change the number, it identifies the bound with the cone condition that the framework already uses for purity.</p>
+<h2 id="which-path-detection-and-the-loss-of-interference">Which-Path Detection and the Loss of Interference</h2>
+<p>The framework describes the destruction of the fringes by the same algebraic operations it uses for any measurement.</p>
+<p><strong>Selective detection.</strong> A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde{P}_\pm(\hat{\mu})$ — has the Born probabilities $p_\pm = \mathrm{Tr}(\tilde{P}_\pm \tilde{\rho}) = \tfrac12(1 \pm r_\parallel)$ and post-measurement states $\tilde{\rho}' = \tilde{P}_\pm(\hat{\mu})$. The equatorial component is annihilated: $\mathbf{r}' = \pm\hat{\mu}$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.</p>
+<p><strong>Non-selective detection.</strong> If the which-path record is not read, the operation is the dephasing channel along $\hat{\mu}$ of <em>Decoherence as Idempotent Projection</em>. At full strength ($p = 1$),</p>
+<p>$$
+\tilde{\rho} \;\longmapsto\; p_+\,\tilde{P}_+(\hat{\mu}) + p_-\,\tilde{P}_-(\hat{\mu}),
+$$</p>
+<p>which preserves the populations and destroys the coherence; again $\mathbf{r}_\perp = 0$ and $V = 0$. At partial strength $p \in (0,1)$ the equatorial component is scaled by $1-p$, so</p>
+<p>$$
+V = (1 - p)\,|\mathbf{r}_\perp^{(0)}|,
+$$</p>
+<p>a reduced contrast rather than a vanished one. The channel is a contractive, information-losing map, idempotent only at full strength, exactly as the decoherence article establishes.</p>
+<p>Two structural points, both inherited and neither resolved here.</p>
+<ul>
+<li><strong>Which direction is measured is an input.</strong> The path axis $\hat{\mu}$ is the pointer direction; the decoherence article records that the framework represents the <em>consequence</em> of a system–environment coupling — the channel and its fixed subalgebra — but contains no coupling dynamics from which $\hat{\mu}$ could be derived. The double slit does not change this: the algebra will kill the coherence along any axis one names, and it does not name the axis.</li>
+<li><strong>Which outcome is realised is not supplied.</strong> Full dephasing yields the mixture $p_+\tilde{P}_+ + p_-\tilde{P}_-$; the <em>measurement-problem article</em> shows that the mixture and the single outcome are different objects, and that no change of notation makes the outcome a function of the state. The double slit exhibits both facts at once: the fringes disappear when the paths are distinguished, and the formalism says which record was <em>made</em> only probabilistically.</li>
+</ul>
+<h2 id="the-phase-root-central-or-not">The Phase Root: Central, or Not</h2>
+<p>It is natural to ask whether the double slit requires the phase's root to be the central imaginary $i$. The path-integral and Schrödinger articles argue for the central root on grounds of the complex structure of the state module and of norm preservation. The narrower question here is what the two-slit <em>intensity</em> can show, and the honest answer is: less than one might expect.</p>
+<p>Take a <strong>non-central</strong> root $\hat{\mu}$ — a unit pure real quaternion, $\hat{\mu}^2 = -e_0$, lying in $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$. The phase factor is</p>
+<p>$$
+e^{\hat{\mu}\,S/\hbar} = \cos\!\Big(\frac{S}{\hbar}\Big)e_0 + \sin\!\Big(\frac{S}{\hbar}\Big)\hat{\mu},
+$$</p>
+<p>which is unitary, $(e^{\hat{\mu}S/\hbar})(e^{\hat{\mu}S/\hbar})^\dagger = e_0$, and whose exponent $\hat{\mu}S/\hbar$ also lies in $\mathbb{M}_-$. Under the isomorphism $e_k \mapsto -i\sigma_k$ with $\hat{\mu} = e_3$ it maps to</p>
+<p>$$
+e^{e_3 S/\hbar} \;\longmapsto\; \operatorname{diag}\!\bigl(e^{-iS/\hbar},\, e^{+iS/\hbar}\bigr),
+$$</p>
+<p>verified directly in the matrix representation. It is a <strong>relative</strong> phase between the two spin components — a spin rotation — not a global phase shared by both.</p>
+<p>Now compute the two-path intensity with this root, for a beam whose two routes carry the same spinor $\hat{s}$ (normalised, $\mathrm{Tr}(\hat{s}^\dagger\hat{s}) = 1$). The total amplitude is $\tilde{W}\hat{s}$ with $\tilde{W} = a_1 e^{\hat{\mu}\varphi_1} + a_2 e^{\hat{\mu}\varphi_2}$, an element of the plane $\mathrm{span}\{e_0, \hat{\mu}\}$. Its Hermitian norm is</p>
+<p>$$
+\mathrm{Tr}\!\bigl((\tilde{W}\hat{s})^\dagger(\tilde{W}\hat{s})\bigr) = \mathrm{Tr}\bigl(\hat{s}^\dagger \bar{\tilde{W}}\tilde{W}\hat{s}\bigr) = N(\tilde{W})\,\mathrm{Tr}(\hat{s}^\dagger\hat{s}) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
+$$</p>
+<p>because $\bar{\tilde{W}}\tilde{W} = N(\tilde{W})e_0$ is central and $N(\tilde{W}) = \bigl(\sum_k a_k\cos\varphi_k\bigr)^2 + \bigl(\sum_k a_k\sin\varphi_k\bigr)^2 = |a_1 e^{i\varphi_1} + a_2 e^{i\varphi_2}|^2$. This is <em>exactly</em> the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.</p>
+<p>So the <em>spin-summed</em> two-slit intensity, for a common spin state, is <strong>root-independent</strong>; the double slit, read as an intensity pattern without spin analysis, does not by itself witness the centrality of the phase. What the non-central choice changes is not this number but the <em>type</em> of the amplitude and the <em>action</em> of the phase:</p>
+<ul>
+<li>the amplitude is a quaternion in a plane that must be chosen, rather than a complex scalar;</li>
+<li>the phase rotates the spin: a spin-resolved intensity <em>in a basis not aligned with</em> $\hat{\mu}$ distinguishes the roots, while the intensity resolved in the $\hat{\mu}$ eigenbasis does not (the transverse difference is generically of order unity — about $10.9$ on random cases — whereas the $\hat{\mu}$-resolved difference between the roots agrees with the spin-summed difference to about $4\times10^{-14}$);</li>
+<li>when the two routes carry <strong>different</strong> spin states the <em>total</em> intensity itself differs between the two choices, again generically by an order-unity amount (about $9.5$ on random cases);</li>
+<li>the choice of $\hat{\mu}$ is extra input that the algebra does not supply, whereas the central $i$ is fixed by $\mathbb{C} \subset \mathbb{B}$.</li>
+</ul>
+<p>The framework's grounds for the central root therefore lie where the Schrödinger and path-integral articles put them — in the complex structure of the state module and in the unitarity of the state-vector equation, which fail for a non-central generator unless the Hamiltonian commutes with it — and not in the scalar two-slit pattern. This section is written against the temptation to overstate what the experiment shows.</p>
+<h2 id="spinor-valued-routes-and-spin-dependent-fringes">Spinor-Valued Routes and Spin-Dependent Fringes</h2>
+<p>When the two routes can be distinguished by an internal state, the amplitudes are spinors $\psi_1, \psi_2 \in \mathbb{B}\tilde{P}$ and the total amplitude is their sum, $\psi = \psi_1 + \psi_2$. The Schrödinger article's Hermitian norm gives</p>
+<p>$$
+I = \mathrm{Tr}(\psi^\dagger\psi) = \mathrm{Tr}(\psi_1^\dagger\psi_1) + \mathrm{Tr}(\psi_2^\dagger\psi_2) + 2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2),
+$$</p>
+<p>which was checked on random spinor pairs to machine precision. Write $\psi_j = a_j e^{i\varphi_j}\hat{s}_j$ with $\hat{s}_j$ normalised spinors. Then $\mathrm{Tr}(\psi_j^\dagger\psi_j) = a_j^2$ and the cross term is</p>
+<p>$$
+2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2) = 2a_1a_2\,\bigl|\langle \hat{s}_1, \hat{s}_2\rangle\bigr|\,\cos\!\bigl(\delta - \arg\langle \hat{s}_1,\hat{s}_2\rangle\bigr),
+$$</p>
+<p>where $\langle \hat{s}_1,\hat{s}_2\rangle := \mathrm{Tr}(\hat{s}_1^\dagger\hat{s}_2)$ is the module inner product, of modulus at most one. The visibility is therefore</p>
+<p>$$
+V = \frac{2a_1a_2\,|\langle \hat{s}_1,\hat{s}_2\rangle|}{a_1^2 + a_2^2},
+$$</p>
+<p>maximal when the two route spinors are parallel (the scalar case) and vanishing when they are orthogonal, whatever the relative phase. Here the route label $j$ is the index of the two terms, not a second factor of the module; describing a path and a spin together as two qubits would require the tensor-product extension that <em>Quantum Mechanics in Biquaternionic Form</em> leaves open. This is the <strong>spin-dependent double slit</strong> in the framework's language, and it makes two things visible at once.</p>
+<ul>
+<li><strong>The central phase cannot itself produce spin dependence,</strong> because it multiplies both components of the spinor equally; a spin-dependent pattern requires the two routes to differ in their spin part (or a non-central phase, as the preceding section discusses).</li>
+<li><strong>Which-path and which-spin are complementary.</strong> Any measurement that reveals which route was taken — including one performed on the spin, if the two routes carry orthogonal spin states — supplies the which-path information and removes the cross term. In the algebra this is the loss of the off-diagonal element of $\tilde{\rho}$, and it is the same operation as in the preceding two sections, applied to the spin label instead of the path label.</li>
+</ul>
+<h2 id="what-the-algebra-supplies-and-what-it-merely-transcribes">What the Algebra Supplies and What It Merely Transcribes</h2>
+<p><strong>Standard quantum mechanics, transcribed.</strong></p>
+<ul>
+<li>The sum of two route amplitudes, the relative-phase interference formula, the nodes and maxima, the fringe geometry, and the diffraction envelope are all standard. None is new, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.</li>
+</ul>
+<p><strong>What the biquaternion notation provides.</strong></p>
+<ul>
+<li>A <strong>canonical complex structure.</strong> The $i$ of the phase and of the relative phase is the central scalar imaginary, fixed by the algebra rather than chosen; the amplitude is a complex scalar, and the relative phase is the argument of the off-diagonal element of $\tilde{\rho}$.</li>
+<li>A <strong>home for the amplitude.</strong> Each route amplitude is a central element of $\mathbb{C}_{\mathbb{B}}$, and the exponent $iS_j/\hbar$ lies in the material sector $\mathbb{M}_-$ along $ict$, as the path-integral article establishes.</li>
+<li>A <strong>state geometry for the which-path degree of freedom.</strong> The which-path state is an element $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ of $\mathbb{M}_+$; visibility and predictability are its equatorial and polar components; and the duality bound $V^2 + P^2 \le 1$ is exactly the trace-one-slice-of-the-cone condition of the Bloch-ball article, with equality on the zero-divisor cone.</li>
+<li><strong>Measurement and dephasing as algebraic operations.</strong> The projective sandwich and the dephasing channel are the same operations the framework uses elsewhere; the double slit is an application, not a new mechanism.</li>
+<li><strong>The sector chain, restated.</strong> A material-sector quantity (the action along a route in $\mathbb{M}_-$) is converted, through the central complex structure, into a central phase, and the state it produces, $\tilde{\rho} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$, lies in the informational sector $\mathbb{M}_+$.</li>
+</ul>
+<p><strong>What is interpretation.</strong></p>
+<ul>
+<li>The reading of the fringes as the projection of a rotating equatorial Bloch vector, and the reading of the arrangement as a conversion from the material to the informational sector, are structural and geometric readings. The algebra is consistent with them; it does not require them, and the standard amplitude language states the same results without them.</li>
+</ul>
+<p><strong>What remains open.</strong></p>
+<ul>
+<li><strong>The action, the measure, and the space of paths.</strong> The algebra supplies the phase and its imaginary unit; it does not supply $S$, $\mathcal{D}x$, or the (infinite-dimensional) domain of integration. This is the path-integral article's gap, unchanged.</li>
+<li><strong>The preferred direction and the selected outcome.</strong> The framework represents the effect of a which-path coupling, not the coupling; and it yields the mixture, not the realised record. These are the decoherence article's and the measurement-problem article's gaps, unchanged.</li>
+<li><strong>Empirical content.</strong> For a two-path system the framework reproduces the standard predictions exactly. It supplies no deviation here.</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The measure and the action.</strong> Can the algebra supply a distinguished measure or action for the paths, or is the double-slit pattern irreducibly an analytic construction laid on biquaternion-valued fibres? (Inherited from <em>The Path Integral in Biquaternionic Form</em>.)</p>
+</li>
+<li>
+<p><strong>The which-path coupling.</strong> The dephasing channel is the consequence of a system–environment coupling that the framework does not contain. Can a biquaternion field equation produce the coupling, and with it the pointer direction $\hat{\mu}$? (<em>Decoherence as Idempotent Projection</em> leaves this open.)</p>
+</li>
+<li>
+<p><strong>Spin-dependent routes from first principles.</strong> The spin-dependent fringe formula above is standard once the route spinors differ. Does the framework produce the spin-path coupling of its own accord — for instance through a non-central phase generated by a spinor field equation — or must the route spinors be put in by hand? (Compare <em>The Path Integral in Biquaternionic Form</em>, open question 2.)</p>
+</li>
+<li>
+<p><strong>Does the cone reading add content?</strong> The identity $V^2 + P^2 = 1 - 4\,\mathrm{Sc}(N(\tilde{\rho}))$ identifies the duality bound with the norm-form cone. Is that identification merely a restatement, or does the cone's Lorentzian geometry constrain interference in ways the standard inequality does not?</p>
+</li>
+<li>
+<p><strong>More than two paths.</strong> The which-path state of a two-slit experiment is a qubit, and its state space is the Bloch ball. A three-slit experiment is a three-state system, whose framework state space would require the tensor or module extension that <em>Quantum Mechanics in Biquaternionic Form</em> leaves open. Does the cone picture survive, and in what dimension?</p>
+</li>
+<li>
+<p><strong>The local complex structure.</strong> The series makes the complex structure local through $c = 1/\sqrt{\epsilon\mu}$, hence a medium-dependent wavelength $\lambda = c/\nu$; but the $i$ of the phase is a global central element. The relation between the local frame and the global phase is unresolved here, as in the Schrödinger and path-integral articles.</p>
+</li>
+<li>
+<p><strong>Empirical content.</strong> As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard quantum mechanics. The double slit, on the evidence of this article, does not.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The double-slit experiment in biquaternionic form is the statement that two route amplitudes, each a <strong>central</strong> complex phase $a_j e^{iS_j/\hbar}$, add, and that the intensity is their squared modulus:</p>
+<p>$$
+I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta, \qquad \delta = \frac{S_1 - S_2}{\hbar}.
+$$</p>
+<p>A common phase shift is unobservable, so only the relative phase $\delta$ — a central element whose exponent lies in $\mathbb{M}_-$ along $ict$ — is read off. The standard geometry (nodes where $d\sin\theta = (m+\tfrac12)\lambda$, spacing $\lambda D/d$) is unchanged and is an input, not an output, of the algebra.</p>
+<p>The which-path degree of freedom is a qubit with state $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r}) \in \mathbb{M}_+$. Its equatorial component is the coherence, and its length is the fringe <strong>visibility</strong> $V = |\mathbf{r}_\perp| = 2|\rho_{12}|$; its polar component is the path <strong>predictability</strong> $P = |r_\parallel| = |\rho_{11}-\rho_{22}|$. They satisfy</p>
+<p>$$
+V^2 + P^2 = |\mathbf{r}|^2 = 1 - 4\,\mathrm{Sc}\bigl(N(\tilde{\rho})\bigr) \le 1,
+$$</p>
+<p>with equality if and only if $\tilde{\rho}$ is pure — that is, if and only if the which-path state lies on the zero-divisor cone of $\mathbb{M}_+$. Partial fringe contrast and an interior (mixed) which-path state are the same fact. The normalised intensity is the equatorial component, $I/(|A_1|^2+|A_2|^2) = 1 + r_1$.</p>
+<p>A which-path measurement, whether selective (projective) or non-selective (full dephasing along the path axis), annihilates the equatorial component and the fringes; partial dephasing scales the visibility by $1-p$. The preferred direction and the realised outcome are not supplied by the algebra.</p>
+<p>The <strong>spin-summed</strong> two-slit intensity is <strong>root-independent</strong> for a beam with a common spin state: replacing the central $i$ by a fixed non-central root leaves it unchanged. Read without spin analysis, the double slit therefore does not witness the centrality of the phase; that centrality is required by the complex structure of the state module and by the unitarity of the state-vector equation, not by this pattern. The difference between the roots reappears under spin analysis in a basis not aligned with $\hat{\mu}$, and the total intensity differs when the two routes carry different spinors — when it acquires a spin overlap $\langle\hat{s}_1,\hat{s}_2\rangle$ that reduces the visibility (the spin-dependent double slit). The scalar case is the parallel-spinor case.</p>
+<p>The algebra supplies the phase's imaginary unit, the sector of its exponent, a state geometry for the which-path qubit, and algebraic accounts of measurement and dephasing. It does not supply the action, the measure, the space of paths, the preferred direction, or the selection of an outcome; and it makes no prediction here that standard quantum mechanics does not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, central, $i^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$</td>
+<td>Center; home of the path phase</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real-quaternion subspace</td>
+</tr>
+<tr>
+<td>$\tilde{K}_j = a_j e^{i\varphi_j} e_0$</td>
+<td>Route amplitude through slit $j$; central</td>
+</tr>
+<tr>
+<td>$\varphi_j = S_j/\hbar$, $\delta = \varphi_1 - \varphi_2$</td>
+<td>Route phase; relative phase</td>
+</tr>
+<tr>
+<td>$I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$</td>
+<td>Two-path intensity</td>
+</tr>
+<tr>
+<td>$d, D, \lambda, k = 2\pi/\lambda$</td>
+<td>Slit separation, screen distance, wavelength, wavenumber</td>
+</tr>
+<tr>
+<td>$\hat{\mu}$</td>
+<td>Unit pure real quaternion; path (pointer) axis</td>
+</tr>
+<tr>
+<td>$\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$</td>
+<td>Which-path idempotents</td>
+</tr>
+<tr>
+<td>$\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$</td>
+<td>Which-path state</td>
+</tr>
+<tr>
+<td>$r_\parallel = \hat{\mu}\cdot\mathbf{r}$, $\mathbf{r}_\perp$</td>
+<td>Polar (predictability) and equatorial (coherence) parts</td>
+</tr>
+<tr>
+<td>$V = |\mathbf{r}_\perp| = 2|\rho_{12}|$</td>
+<td>Fringe visibility</td>
+</tr>
+<tr>
+<td>$P = |r_\parallel| = |\rho_{11}-\rho_{22}|$</td>
+<td>Path predictability</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>Norm form; $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$</td>
+</tr>
+<tr>
+<td>$V^2 + P^2 = |\mathbf{r}|^2 \le 1$</td>
+<td>Visibility–predictability (duality) bound = cone condition</td>
+</tr>
+<tr>
+<td>$\psi = \psi_1 + \psi_2 \in \mathbb{B}\tilde{P} \cong \mathbb{C}^2$</td>
+<td>Spinor-valued two-route amplitude</td>
+</tr>
+<tr>
+<td>$\langle\hat{s}_1,\hat{s}_2\rangle = \mathrm{Tr}(\hat{s}_1^\dagger\hat{s}_2)$</td>
+<td>Module inner product; spin overlap</td>
+</tr>
+<tr>
+<td>$e^{\hat{\mu}S/\hbar}$</td>
+<td>Non-central phase; a spin rotation</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>Trace formula (Born rule)</td>
+</tr>
+<tr>
+<td>$i\,\mathbb{M}_\pm = \mathbb{M}_\mp$</td>
+<td>The scalar imaginary exchanges the sectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Biquaternion Universe</em> — the algebra, its two sectors, and the local complex structure.</li>
+<li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> — the anti-Hermitian sector and the four-vectors.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> — the Hermitian sector, its idempotents, and the trace formula.</li>
+<li><em>Quantum Mechanics in Biquaternionic Form</em> — states, observables, the Born rule, and the measurement update.</li>
+<li><em>The Schrödinger Equation in Biquaternionic Form</em> — the wave function as a spinor in a minimal left ideal, and the central imaginary as the complex structure.</li>
+<li><em>The Path Integral in Biquaternionic Form</em> — the phase $e^{iS/\hbar}$ as a central unitary, its exponent in $\mathbb{M}_-$, and the measure/paths gap.</li>
+<li><em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em> — the state space as a slice of the norm-form cone.</li>
+<li><em>Decoherence as Idempotent Projection</em> — the dephasing channel and the destruction of coherence.</li>
+<li><em>The Measurement Problem in Algebraic Form</em> — the mixture versus the realised outcome.</li>
+<li><em>The Born Rule as a Trace Formula — Derivation and Comparison</em> — the trace formula and its comparison with the standard postulate.</li>
+<li><em>Angular Momentum and Spin in Biquaternionic Form</em> — the spin degree of freedom used in the spinor-valued routes.</li>
+<li><em>The Feynman Propagator in Biquaternionic Form</em> — the $i\epsilon$ direction shared with the phase exponent.</li>
+<li><em>The Wick Rotation in the Biquaternion Universe</em> — the transfer $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ that turns the phase into a decaying weight.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

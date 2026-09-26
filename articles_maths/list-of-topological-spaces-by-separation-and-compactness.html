@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Topological Spaces by Separation and Compactness — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-topological-spaces-by-separation-and-compactness"><strong>List of Topological Spaces by Separation and Compactness</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the separation axioms and the compactness conditions that Parts I to III of the corpus use, and tabulates which of the spaces of the corpus satisfies which. The separation axioms record how far a space separates points from points, points from closed sets, and closed sets from closed sets; the compactness conditions record how far the open covers of a space can be reduced to a finite, a countable or a locally finite family. The two families are the ones that decide which theorems apply to a space, and the article collects them in one place so that the same space can be read down a column.</p>
+<p>Every entry points to the article that introduces the space, the axiom or the condition, and every space tabulated appears in Parts I to III. The article introduces nothing and proves nothing: it records the implications that the corpus establishes and the examples that show the implications do not reverse, and it does not restate a definition or give a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the spaces that satisfy an axiom or a compactness condition it lists the spaces that fail it — the cofinite topology on an infinite set, which is $T_1$ and not Hausdorff; the Sorgenfrey plane, which is Tychonoff and not normal; Mysior's example, which is regular and not completely regular; the long line, which is countably compact and not compact and not paracompact — each with the failure named and the article that records it.</p>
+<h2 id="the-separation-axioms">The Separation Axioms</h2>
+<p>The axioms are those of <em>Topological Spaces</em> and <em>Metrisation and Separation Axioms</em>, where the hierarchy, its permanence and the metrisation theorems are proved. The convention of the corpus is that $T_3$, $T_{3\frac12}$ and $T_4$ denote the corresponding condition together with $T_1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Axiom</th>
+<th>What it separates</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_0$</td>
+<td>any two distinct points, by an open set containing exactly one of them</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>$T_1$</td>
+<td>any two distinct points, by open sets each avoiding the other; equivalently points are closed</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>Hausdorff ($T_2$)</td>
+<td>any two distinct points, by disjoint open sets; equivalently limits of nets are unique</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>regular ($T_3$)</td>
+<td>a point from a closed set not containing it, by disjoint open sets; with $T_1$, the regular Hausdorff spaces</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>completely regular ($T_{3\frac12}$)</td>
+<td>a point from a closed set not containing it, by a continuous function to $[0,1]$; with $T_1$, the Tychonoff spaces</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>normal ($T_4$)</td>
+<td>two disjoint closed sets, by disjoint open sets; with $T_1$, the normal Hausdorff spaces</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>perfectly normal</td>
+<td>two disjoint closed sets, by a continuous function; every closed set a countable intersection of open sets</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>collectionwise normal</td>
+<td>a discrete family of closed sets, by a discrete family of open sets</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The implications run one way only:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Implication</th>
+<th>The condition that strengthens it</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_4 \Rightarrow T_{3\frac12} \Rightarrow T_3 \Rightarrow T_2 \Rightarrow T_1 \Rightarrow T_0$</td>
+<td>each condition implies the one to its right; no arrow reverses</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>compact Hausdorff $\Rightarrow$ normal</td>
+<td>every compact Hausdorff space is normal, hence satisfies Urysohn and Tietze</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>metric $\Rightarrow$ perfectly normal, collectionwise normal</td>
+<td>every metrisable space is perfectly normal and collectionwise normal</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>paracompact Hausdorff $\Rightarrow$ normal</td>
+<td>paracompactness supplies the shrinkings from which the separation is built</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>normal $\Rightarrow$ Tietze, Urysohn</td>
+<td>the extension and separation theorems hold in every normal space</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-spaces-that-separate-the-axioms">The Spaces That Separate the Axioms</h2>
+<p>The axioms do not collapse, and each collapse is prevented by a space of the corpus. The failures are recorded beside the spaces that satisfy the axiom, in the same table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>$T_0$</th>
+<th>$T_1$</th>
+<th>Hausdorff</th>
+<th>regular</th>
+<th>completely regular</th>
+<th>normal</th>
+<th>metrisable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{R}^n$, $\mathbb{Q}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$, $\mathbb{C}^n$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$S^n$, $T^n$, $\mathbb{RP}^n$, $\mathbb{CP}^n$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the Cantor set, $\mathbb{Z}_p$, a compact metric space</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>a compact Hausdorff space</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>not always</td>
+</tr>
+<tr>
+<td>a paracompact Hausdorff space</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>not always</td>
+</tr>
+<tr>
+<td>a metric space</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\beta\mathbb{N}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the long line $L$, $[0,\omega_1)$, $[0,\omega_1]$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the Sorgenfrey line $\mathbb{R}_S$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the Sorgenfrey plane $\mathbb{R}_S^2$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td><strong>no</strong></td>
+<td>no</td>
+</tr>
+<tr>
+<td>the Niemytzki plane</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td><strong>no</strong></td>
+<td>no</td>
+</tr>
+<tr>
+<td>Mysior's example</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td>no</td>
+</tr>
+<tr>
+<td>the cofinite topology on an infinite set</td>
+<td>yes</td>
+<td>yes</td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td>no</td>
+</tr>
+<tr>
+<td>the indiscrete topology on two points</td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$[0,1]^{I}$ for uncountable $I$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td><strong>no</strong></td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\operatorname{Spec} R$ with the Zariski topology</td>
+<td>yes</td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rows are read as follows. The cofinite topology is $T_1$ and not Hausdorff, and since $T_1$ together with normality implies Hausdorff, it is neither regular nor normal; this is the counterexample of <em>Topological Spaces</em>. The Sorgenfrey plane and the Niemytzki plane are Tychonoff and not normal, so $T_{3\frac12}$ does not imply $T_4$, and the Sorgenfrey plane is a finite product of normal spaces that is not normal. Mysior's example is regular and not completely regular, so $T_3$ does not imply $T_{3\frac12}$. The indiscrete topology is regular, completely regular and normal and not $T_1$, which is why the corpus defines $T_3$, $T_{3\frac12}$ and $T_4$ with the $T_1$ clause. The product of uncountably many intervals is compact Hausdorff and not normal, so normality is not productive. The prime spectrum is $T_0$ and not $T_1$ whenever a nonzero prime is contained in another, so it is not metrisable, and this failure is one of separation and not of countability.</p>
+<h2 id="the-compactness-and-countability-conditions">The Compactness and Countability Conditions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Its definition</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>compact</td>
+<td>every open cover has a finite subcover; equivalently every ultrafilter converges</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>countably compact</td>
+<td>every countable open cover has a finite subcover; equivalently every sequence has a cluster point</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>sequentially compact</td>
+<td>every sequence has a convergent subsequence; equivalent to compactness in a metric space</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>Lindelöf</td>
+<td>every open cover has a countable subcover</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>$\sigma$-compact</td>
+<td>a countable union of compact subsets</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>locally compact</td>
+<td>every point has a neighbourhood base of compact neighbourhoods</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>paracompact</td>
+<td>every open cover has a locally finite open refinement</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>fully normal</td>
+<td>every open cover has an open star refinement; equivalent to paracompactness for Hausdorff spaces</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>totally bounded</td>
+<td>for every $\varepsilon$ a finite cover by sets of diameter less than $\varepsilon$</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The implications among the conditions are these, and each is recorded with the article that proves it:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Implication</th>
+<th>The statement</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>compact $\Rightarrow$ countably compact</td>
+<td>a finite subcover is a finite subcover of every countable subfamily</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>compact $\Rightarrow$ Lindelöf</td>
+<td>a finite subcover is countable</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>compact $\Rightarrow$ $\sigma$-compact</td>
+<td>the space itself is the single compact set</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>compact Hausdorff $\Rightarrow$ paracompact</td>
+<td>a finite subcover is locally finite</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>paracompact + countably compact $\Rightarrow$ compact</td>
+<td>a locally finite family of nonempty sets is finite in a countably compact space</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>countably compact + Lindelöf $\Rightarrow$ compact</td>
+<td>the countable subcover has a finite subcover</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>metric: compact $\Leftrightarrow$ sequentially compact $\Leftrightarrow$ complete + totally bounded</td>
+<td>the metric characterisation of compactness</td>
+<td><em>Topological Spaces</em>; <em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>metric $\Rightarrow$ paracompact (Stone)</td>
+<td>every metrisable space is paracompact</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>Lindelöf + regular $\Rightarrow$ paracompact</td>
+<td>the countable refinement is locally finite</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-matrix-of-the-standard-spaces">The Matrix of the Standard Spaces</h2>
+<p>The following table records the compactness and countability conditions satisfied by the spaces of the corpus. A blank cell is not a claim of failure; it records that the corpus does not establish the condition for that space.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>compact</th>
+<th>countably compact</th>
+<th>Lindelöf</th>
+<th>$\sigma$-compact</th>
+<th>locally compact</th>
+<th>paracompact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{R}^n$, $\mathbb{C}^n$</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$[0,1]$, $S^n$, $T^n$, $\mathbb{RP}^n$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the Cantor set, $\mathbb{Z}_p$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{N}$</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the long line $L$</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$[0,\omega_1)$</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$[0,\omega_1]$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\beta\mathbb{N}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the Sorgenfrey line $\mathbb{R}_S$</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the Sorgenfrey plane $\mathbb{R}_S^2$</td>
+<td>no</td>
+<td>—</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the Niemytzki plane</td>
+<td>no</td>
+<td>—</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>a metric space</td>
+<td>not always</td>
+<td>not always</td>
+<td>not always</td>
+<td>not always</td>
+<td>not always</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>a compact Hausdorff space</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three standard separations of the table are the long line, the Sorgenfrey line and the Sorgenfrey plane. The long line is countably compact and not compact, and it is locally metrisable and not paracompact: the cover by its initial segments has no locally finite refinement. The Sorgenfrey line is Lindelöf, hence paracompact and normal, and it is not $\sigma$-compact, not locally compact and not metrisable; it shows that Lindelöf and paracompact do not give a distance. The Sorgenfrey plane is the product of two paracompact spaces and is not paracompact, and it is not Lindelöf; it shows that paracompactness is not finitely productive.</p>
+<h2 id="warnings">Warnings</h2>
+<p>Objects that a reader may expect to find among the spaces classified here, and does not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not tabulated</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Zariski topology alone</td>
+<td>a topology that is $T_0$ and not $T_1$; it is recorded through $\operatorname{Spec} R$ and the real Zariski topology, and it carries no metric</td>
+<td><em>Schemes</em>; <em>Real Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>pseudocompactness</td>
+<td>the corpus does not introduce pseudocompact or limit-point compact spaces, and no entry relies on them</td>
+<td>—</td>
+</tr>
+<tr>
+<td>countable compactness of a general non-Hausdorff space</td>
+<td>the corpus records countable compactness only where the paracompactness theory uses it, and not for the pathological spaces</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>the axiom $T_5$</td>
+<td>the corpus uses the separation hierarchy only up to $T_4$ and perfect normality</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the separation axioms $T_0$ to $T_4$, the complete regularity and perfect normality that sit beside them, and the compactness and countability conditions of the corpus, and has tabulated which spaces satisfy which. The implications run $T_4 \Rightarrow T_{3\frac12} \Rightarrow T_3 \Rightarrow T_2 \Rightarrow T_1 \Rightarrow T_0$ with no arrow reversing, compactness implies countable compactness, the Lindelöf property and $\sigma$-compactness, and countable compactness together with the Lindelöf property gives compactness. Each non-implication is witnessed by a space of the corpus: the cofinite topology for $T_1$ without Hausdorff, Mysior's example for regularity without complete regularity, the Sorgenfrey plane and the Niemytzki plane for Tychonoff without normal, the indiscrete space for normal without $T_1$, and the long line and the Sorgenfrey line for the independence of compactness, paracompactness and metrisability. The tables introduce and prove nothing; they record the properties that the introducing articles establish.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_0$, $T_1$, $T_2$, $T_3$, $T_{3\frac12}$, $T_4$</td>
+<td>the separation axioms; $T_2$ is Hausdorff, $T_3$ regular, $T_{3\frac12}$ Tychonoff, $T_4$ normal, each with the $T_1$ clause</td>
+</tr>
+<tr>
+<td>$T_3$, $T_{3\frac12}$</td>
+<td>the corpus's numbering, in which complete regularity is stronger than regularity</td>
+</tr>
+<tr>
+<td>regular, completely regular, normal, paracompact</td>
+<td>the conditions as in <em>Metrisation and Separation Axioms</em> and <em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}_S$, $\mathbb{R}_S^2$</td>
+<td>the Sorgenfrey line and its square</td>
+</tr>
+<tr>
+<td>$\beta\mathbb{N}$</td>
+<td>the Stone–Čech compactification of $\mathbb{N}$</td>
+</tr>
+<tr>
+<td>$L$, $[0,\omega_1)$, $[0,\omega_1]$</td>
+<td>the long line and the two ordinal spaces</td>
+</tr>
+<tr>
+<td>$\operatorname{Spec} R$</td>
+<td>the prime spectrum with the Zariski topology</td>
+</tr>
+<tr>
+<td>$[0,1]^{I}$</td>
+<td>a product of intervals, compact Hausdorff for every $I$</td>
+</tr>
+<tr>
+<td>$\sigma$-compact, Lindelöf</td>
+<td>countable union of compact sets; every open cover has a countable subcover</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ryszard Engelking, <em>General Topology</em> (Heldermann, rev. ed. 1989), for the separation axioms, the compactness conditions and the counterexamples in their standard form.</li>
+<li>Lynn A. Steen and J. Arthur Seebach, <em>Counterexamples in Topology</em> (Springer, 2nd ed. 1978), for the Sorgenfrey line and plane, the Niemytzki plane, Mysior's example, the long line and the ordinal spaces.</li>
+<li>K. P. Hart, Jun-iti Nagata and Jerry E. Vaughan (eds.), <em>Encyclopedia of General Topology</em> (Elsevier, 2004), for the charts of implications among the covering and separation properties.</li>
+<li>James R. Munkres, <em>Topology</em> (Pearson, 2nd ed. 2000), for the separation axioms, compactness and local compactness in their textbook order.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

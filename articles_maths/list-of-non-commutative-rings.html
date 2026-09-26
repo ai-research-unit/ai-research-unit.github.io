@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Non-Commutative Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-non-commutative-rings"><strong>List of Non-Commutative Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the non-commutative rings of the corpus — the matrix rings, the quaternions and their relatives, the group rings, the free algebra, the tensor algebra and the Weyl algebra — and it records what is lost by comparison with the commutative case. Every entry points to the article that introduces the object.</p>
+<p>The list gathers the rings in which $ab \neq ba$ for some pair of elements. It includes the division ring $\mathbb{H}$, which is the non-commutative ring with the fewest zero divisors; the matrix rings, which are the non-commutative source of idempotents and one-sided ideals; the group rings, which are non-commutative exactly when the group is; the free algebra and the tensor algebra, which are the freely generated cases; and the Weyl algebra, which is the quantised polynomial ring.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side, and it names the commutative features that each non-commutative ring replaces.</p>
+<h2 id="the-matrix-rings">The Matrix Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Centre</th>
+<th>Zero divisors</th>
+<th>The structure that is lost</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(R)$, $n \geq 2$</td>
+<td>the scalars</td>
+<td>$E_{11}E_{22} = 0$</td>
+<td>commutativity; the ring is simple for $R$ a field</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>$\mathbb{C}$</td>
+<td>yes</td>
+<td>the biquaternion algebra is this ring</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>the upper triangular matrices</td>
+<td>the diagonal</td>
+<td>strictly upper triangular matrices square to zero</td>
+<td>not simple: it has a nontrivial nilpotent ideal</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$M_n(R) \times M_m(S)$</td>
+<td>$Z(R) \times Z(S)$</td>
+<td>$(1,0)(0,1) = 0$</td>
+<td>not simple</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The matrix ring is the standard non-commutative ring: it is simple when the coefficient ring is a field, so it has no nontrivial two-sided ideals, and it is therefore not a domain and not a division ring, since the matrix units are zero divisors. The Wedderburn–Artin theorem writes every finite-dimensional semisimple algebra as a product of matrix algebras over division algebras, and this is recorded in <em>Division Algebras</em>.</p>
+<h2 id="the-quaternion-algebras-and-their-relatives">The Quaternion Algebras and Their Relatives</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Centre</th>
+<th>Zero divisors</th>
+<th>What it is</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{R}$</td>
+<td>none</td>
+<td>a division ring, and a domain</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, the biquaternions</td>
+<td>$\mathbb{C}$</td>
+<td>yes</td>
+<td>isomorphic to $M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, the split-biquaternions</td>
+<td>$\mathbb{D}$</td>
+<td>yes</td>
+<td>isomorphic to $\mathbb{H} \oplus \mathbb{H}$ via the idempotents $e_{\pm}$</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$, the octonions</td>
+<td>$\mathbb{R}$</td>
+<td>none</td>
+<td>not a ring: the multiplication is not associative</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The three eight-dimensional relatives of $\mathbb{H}$ differ exactly in the sign of the norm form, and the sign decides whether a zero divisor exists. The biquaternions have the algebraically closed centre $\mathbb{C}$ and split as $M_2(\mathbb{C})$; the split-biquaternions have the split centre $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ and split as $\mathbb{H} \oplus \mathbb{H}$ through the idempotents $e_{\pm} = \tfrac{1}{2}(1 \pm j)$, which satisfy $e_+ e_- = 0$. The octonions are excluded from the list of rings by non-associativity and not by a zero divisor.</p>
+<h2 id="the-group-rings">The Group Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group ring</th>
+<th>The group</th>
+<th>Commutative?</th>
+<th>Zero divisors</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k[G]$ for $G$ abelian</td>
+<td>abelian</td>
+<td>yes, a commutative ring</td>
+<td>none if $G$ is torsion-free and $k$ a domain</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$k[G]$ for $G$ non-abelian</td>
+<td>non-abelian</td>
+<td>no</td>
+<td>none if $G$ is torsion-free and $k$ a domain</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$k[F_n]$, the free group</td>
+<td>$F_n$</td>
+<td>no for $n \geq 2$</td>
+<td>none: $F_n$ is torsion-free</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}[C_3]$</td>
+<td>$C_3$</td>
+<td>yes</td>
+<td>$\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$, so it has idempotents</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2[C_2]$</td>
+<td>$C_2$</td>
+<td>yes</td>
+<td>$\mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x+1)^2$, with a nilpotent</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$k[C_p]$, with $\zeta_p \in k$ and $\operatorname{char} k \nmid p$</td>
+<td>$C_p$</td>
+<td>yes</td>
+<td>$k[C_p] \cong k^p$, a product of fields</td>
+<td><em>Group Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A group ring is commutative exactly when the group is abelian, so the non-commutative group rings are those of the non-abelian groups. The torsion-free hypothesis governs the zero divisors and not the commutativity: $k[F_n]$ is a non-commutative domain, while $k[C_2]$ is a commutative ring with zero divisors. The group ring of a torsion-free group is a domain, and it is listed among the non-commutative domains in <em>List of Domains</em>.</p>
+<h2 id="the-free-algebra-the-tensor-algebra-and-the-weyl-algebra">The Free Algebra, the Tensor Algebra and the Weyl Algebra</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Presentation</th>
+<th>The universal property</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R\langle x_1, \dots, x_n\rangle$, the free algebra</td>
+<td>the non-commuting polynomial ring</td>
+<td>the free $R$-algebra on $n$ generators</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$T(V)$, the tensor algebra</td>
+<td>$\bigoplus_{n \geq 0} V^{\otimes n}$</td>
+<td>the free associative algebra on the vector space $V$</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$\Lambda(V)$, the exterior algebra</td>
+<td>$T(V)/(v \otimes v)$</td>
+<td>the free graded-commutative algebra; $v^2 = 0$</td>
+<td><em>The Exterior Algebra</em></td>
+</tr>
+<tr>
+<td>$A_1(k) = k\langle x, y\rangle/(yx - xy - 1)$, the Weyl algebra</td>
+<td>the quantised polynomial ring in two variables</td>
+<td>the algebra of differential operators on $k[x]$</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}\ell(V, q)$, a Clifford algebra</td>
+<td>$T(V)/(v \otimes v - q(v))$</td>
+<td>the quantised exterior algebra</td>
+<td><em>The Clifford Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The free algebra and the tensor algebra are the non-commutative analogues of the polynomial ring, and they lose the commutative universal property: a homomorphism from $R\langle x_1, \dots, x_n\rangle$ may send the $x_i$ to arbitrary elements, but the images need not commute, so the commutative polynomial ring is a quotient of the free algebra by the commutator ideal. The Weyl algebra and the Clifford algebras are the quotients of the tensor algebra in which the commutator and the square are fixed by a relation, and they are the standard quantisations.</p>
+<h2 id="the-two-sided-ideals">The Two-Sided Ideals</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Simple?</th>
+<th>The two-sided ideals</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(k)$, $n \geq 2$</td>
+<td>yes</td>
+<td>$(0)$ and $M_n(k)$ alone</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>yes</td>
+<td>$(0)$ and $\mathbb{H}$ alone</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B} \cong M_2(\mathbb{C})$</td>
+<td>yes</td>
+<td>$(0)$ and $\mathbb{B}$ alone</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$</td>
+<td>no</td>
+<td>the two ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$A_1(k)$</td>
+<td>yes</td>
+<td>$(0)$ and $A_1(k)$ alone</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>the free algebra $R\langle x_1, \dots, x_n\rangle$</td>
+<td>no</td>
+<td>the commutator ideal and the ideals generated by the relations</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>the upper triangular matrices</td>
+<td>no</td>
+<td>the nilpotent ideal of strictly upper triangular matrices</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The simple rings replace the maximal ideals of the commutative theory: a commutative ring is a field exactly when its only ideals are $(0)$ and $(1)$, and the non-commutative analogue is the simple ring, of which $M_n(k)$ and $A_1(k)$ are the standard examples. The split-biquaternions are the example that shows the difference between simple and semisimple, since they are semisimple without being simple, and their two ideals come from the idempotents $e_{\pm}$.</p>
+<h2 id="what-is-lost-by-comparison-with-the-commutative-case">What Is Lost by Comparison with the Commutative Case</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Commutative feature</th>
+<th>What replaces it</th>
+<th>The witness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ab = ba$</td>
+<td>the commutator $[a,b] = ab - ba$</td>
+<td>$M_2(\mathbb{R})$ and every matrix ring</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>left ideals are right ideals</td>
+<td>the two-sided, left and right ideals differ</td>
+<td>the free algebra</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+<tr>
+<td>the field of fractions always exists</td>
+<td>a division ring of fractions exists only under the Ore condition</td>
+<td>$A_1(k)$ is Ore, the free algebra is not</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>every finite domain is a field</td>
+<td>Wedderburn's little theorem: every finite division ring is a field</td>
+<td>the finite fields of <em>List of Finite Fields</em></td>
+<td><em>Division Rings</em></td>
+</tr>
+<tr>
+<td>the maximal ideals give quotients that are fields</td>
+<td>simple rings replace the maximal ideals</td>
+<td>$M_n(\mathbb{R})$ is simple, and not a field</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The losses accumulate from the first row to the last: the commutative theory of divisibility rests on the maximal ideals and the primes, and the non-commutative theory replaces them with the simple rings and the one-sided ideals. Every row of the table is a feature that a reader arriving from the commutative sections of this Part will look for in vain, and the last column names where the non-commutative substitute is developed.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a non-commutative ring of this list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$, the octonions</td>
+<td>not associative, so not a ring</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{S}$, the sedenions</td>
+<td>not associative, and with zero divisors</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, the split-complex numbers</td>
+<td>commutative, with zero divisors</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$, the dual numbers</td>
+<td>commutative, with a nilpotent</td>
+<td><em>Dual-Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>commutative, with zero divisors</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>every commutative ring</td>
+<td>not on this list: commutativity is the criterion for exclusion</td>
+<td><em>Commutative Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The objects in the first two rows are the ones a reader might expect here on the strength of the quaternions: they are the next two algebras of the Cayley–Dickson chain, and they are excluded by the failure of associativity at the octonions.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the non-commutative rings of the corpus: the matrix rings $M_n(R)$, which are simple and have zero divisors; the quaternions, which are a division ring; the biquaternions and split-biquaternions, which are the eight-dimensional relatives with zero divisors and the identifications $M_2(\mathbb{C})$ and $\mathbb{H} \oplus \mathbb{H}$; the group rings, non-commutative exactly for the non-abelian groups and a domain for the torsion-free ones; the free algebra and the tensor algebra, which are the freely generated cases; and the Weyl algebra and the Clifford algebras, which are the quantised quotients. Beside them the article has recorded what the commutative case loses: commutativity replaced by the commutator, the coincidence of left and right ideals lost, the field of fractions made conditional on the Ore condition, the maximal ideals replaced by the simple rings, and unique factorisation without a general theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(R)$</td>
+<td>The $n \times n$ matrix ring</td>
+</tr>
+<tr>
+<td>$E_{11}, E_{22}$</td>
+<td>Matrix units</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{O}$</td>
+<td>Quaternions, biquaternions, split-biquaternions, octonions</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>The split-complex numbers, the centre of $\mathbb{H}_{\mathbb{D}}$</td>
+</tr>
+<tr>
+<td>$e_{\pm} = \tfrac{1}{2}(1 \pm j)$</td>
+<td>The idempotents of $\mathbb{H}_{\mathbb{D}}$</td>
+</tr>
+<tr>
+<td>$k[G]$, $k[F_n]$, $k[C_2]$</td>
+<td>Group rings; $F_n$ free, $C_2$ of order two</td>
+</tr>
+<tr>
+<td>$R\langle x_1,\dots,x_n\rangle$</td>
+<td>The free algebra</td>
+</tr>
+<tr>
+<td>$T(V)$, $\Lambda(V)$, $\mathbb{C}\ell(V,q)$</td>
+<td>Tensor, exterior and Clifford algebras</td>
+</tr>
+<tr>
+<td>$A_1(k)$</td>
+<td>The Weyl algebra $k\langle x,y\rangle/(yx - xy - 1)$</td>
+</tr>
+<tr>
+<td>$[a,b] = ab - ba$</td>
+<td>The commutator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for matrix rings, simple rings and the non-commutative substitutes for the commutative theory.</li>
+<li>Paul M. Cohn, <em>Free Rings and Their Relations</em> (Academic Press, 2nd ed. 1985), for the free algebra, the tensor algebra and the free ideal theory.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the group ring and the zero-divisor problem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

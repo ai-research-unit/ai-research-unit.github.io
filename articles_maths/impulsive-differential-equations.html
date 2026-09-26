@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impulsive Differential Equations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="impulsive-differential-equations"><strong>Impulsive Differential Equations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An impulsive differential equation combines two kinds of evolution. Between certain instants the unknown changes continuously, according to an ordinary differential equation; at those instants it changes discontinuously, by a prescribed jump that may depend on the state reached. The instants themselves are either fixed in advance — the equation has a list of impulse times — or determined by the state, as when the trajectory meets a prescribed surface and is then reset. The combination is the natural language for systems in which a continuous process is interrupted by abrupt events, and its mathematics is the mathematics of a piecewise continuous solution produced by gluing ordinary solutions across jumps.</p>
+<p>The new features are all caused by the jumps. A solution is no longer continuous, only piecewise continuous with one-sided limits at the impulse times, so the very notion of a solution has to be stated with care. Uniqueness of an initial-value problem must be checked on each interval separately, and it can fail through the interaction of the jumps with the differential equation, through the coincidence of two impulses or of an impulse with a zero of the solution, or through an accumulation of impulse times at a finite limit. The theory therefore consists of the ordinary theory applied interval by interval together with a vocabulary for the pathologies that the gluing creates.</p>
+<p>The setting is a Banach space $X$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, an interval $I \subseteq \mathbb{R}$, and a right-hand side $f : I \times X \to X$, exactly as in <em>Ordinary Differential Equations</em>, whose results are used throughout; the impulsive perturbations are the new ingredient. The article treats first the impulsive initial-value problem with fixed impulse times, its existence and uniqueness by the interval method, and the pathologies of accumulation and beating; then the linear theory, with the fundamental matrix as a product of ordinary fundamental matrices and exponentials of the jumps, and the variation-of-constants formula; then stability, where the jumps enter through a discrete Lyapunov condition; and finally the measure-driven formulation, in which the impulses are a measure and the equation is a differential equation driven by that measure, the Stieltjes integral being the one supplied by <em>Measure Theory and Integration</em>.</p>
+<h2 id="the-impulsive-initial-value-problem">The Impulsive Initial-Value Problem</h2>
+<h3 id="definition-and-solution-concept">Definition and Solution Concept</h3>
+<p><strong>Definition.</strong> Let $(\tau_k)_{k \in \mathbb{Z}}$ be a strictly increasing sequence of real numbers, the <strong>impulse times</strong> or <strong>jump times</strong>, and let $f : I \times X \to X$ and $I_k : X \to X$ be functions for each $k$, the <strong>jump maps</strong>. The <strong>impulsive differential equation</strong> determined by $f$ and $(I_k,\tau_k)$ is</p>
+<p>$$
+y'(t) = f(t,y(t)), \quad t \neq \tau_k; \qquad \Delta y\bigr|_{t=\tau_k} = I_k\bigl(y(\tau_k^-)\bigr),
+$$</p>
+<p>where $\Delta y|_{t=\tau_k} = y(\tau_k^+) - y(\tau_k^-)$ and $y(\tau_k^\pm)$ are the one-sided limits. A <strong>solution</strong> on an interval $J$ is a function $y$ that is continuous on $J$ except at the impulse times in $J$, differentiable with $y'(t) = f(t,y(t))$ at every $t \in J$ that is not an impulse time, satisfies the jump condition at each impulse time interior to $J$, and is left-continuous at the endpoints, $y(t)=y(t^-)$; if the impulse time is an endpoint of the domain, only the appropriate one-sided value is prescribed. The solution is <strong>piecewise continuously differentiable</strong>.</p>
+<p><strong>Definition.</strong> An impulsive equation <strong>has an impulse at the initial time</strong> if the initial datum is specified at a jump time; then the correct initial condition is the right-hand limit $y(\tau_0^+) = y_0$, and the left-hand value is immaterial. Otherwise the initial condition is $y(\tau_0) = y_0$ in the ordinary sense. The <strong>pre-jump value</strong> of a solution at $\tau_k$ is $y(\tau_k^-)$ and the <strong>post-jump value</strong> is $y(\tau_k^+)$.</p>
+<p>The convention on one-sided values is the only point of care in the definition, and it matters for the composition of jumps: the jump map acts on the value <em>before</em> the jump, which is the limit from the left, so the value immediately after is $I_k(y(\tau_k^-)) + y(\tau_k^-)$.</p>
+<p><strong>Example (a scalar impulsive logistic equation).</strong> With $f(t,y) = y(1-y)$, impulse times $\tau_k = k$ and jumps $I_k(y) = -\tfrac12 y$, the solution grows logistically between integers and is halved at each integer; the piecewise continuous solution is computed by the interval method below, and its asymptotic size is smaller than the carrying capacity $1$ by a factor determined by the halving.</p>
+<h3 id="existence-and-uniqueness-by-the-interval-method">Existence and Uniqueness by the Interval Method</h3>
+<p><strong>Theorem (interval method).</strong> Suppose $f$ is continuous and locally Lipschitz in its second variable, each $I_k$ is continuous, and the impulse times are locally finite, that is, every compact subinterval of $I$ contains only finitely many $\tau_k$. Then for every initial datum there is a unique maximal solution.</p>
+<p><em>Proof.</em> On the interval $[\tau_0, \tau_1]$, before the first impulse, the equation is the ordinary problem $y' = f(t,y)$ with the given initial value, and the Picard–Lindelöf theorem of <em>Ordinary Differential Equations</em> gives a unique maximal solution there. If the solution reaches $\tau_1$ with a left limit $y(\tau_1^-)$, the jump condition defines $y(\tau_1^+) = y(\tau_1^-) + I_1(y(\tau_1^-))$, which is continuous in $y(\tau_1^-)$ because $I_1$ is; the ordinary argument then restarts at $(\tau_1, y(\tau_1^+))$ on $[\tau_1,\tau_2]$. Because the impulse times are locally finite, finitely many steps cover any compact subinterval, and the solution is obtained by gluing. Uniqueness is the uniqueness of each ordinary subproblem together with the determinism of the jump maps. $\square$</p>
+<p><strong>Corollary (maximal interval and blow-up).</strong> The maximal solution has an interval $(\alpha,\beta)$; if $\beta < \infty$ and $\beta$ is not an accumulation point of impulse times, then the solution is unbounded on $[\tau_0,\beta)$, and if $\beta$ is an accumulation point the solution may have a finite limit or no limit at all.</p>
+<p><em>Proof.</em> If the solution were bounded on $[\tau_0,\beta)$ and there were a final impulse time $\tau_N < \beta$ before $\beta$, the boundedness and the local Lipschitz condition would extend the solution beyond $\beta$, as in the ordinary maximal-interval theorem. When the impulse times accumulate at $\beta$ the limit need not exist, and the standard examples below show both possibilities. $\square$</p>
+<h3 id="accumulation-of-impulses-and-beating">Accumulation of Impulses and Beating</h3>
+<p><strong>Definition.</strong> The impulse times <strong>accumulate</strong> at $\tau^*$ if $\tau_k \to \tau^*$ from below with $\tau_k < \tau^*$; a solution exhibits the <strong>Zeno phenomenon</strong> if the number of impulses performed before a finite time $\tau^*$ is infinite. Two solutions <strong>beat</strong> at $\tau_k$ if the trajectory meets the same impulse surface of a state-dependent impulse problem more than once.</p>
+<p>Accumulation of impulse times destroys the local finiteness on which the interval method rests, and the solution may fail to exist beyond $\tau^*$ in the ordinary sense. The two behaviours that occur are these.</p>
+<p><strong>Example (a solution terminating).</strong> Let $\tau_k = 1 - 2^{-k}$ and let the jump map at every $\tau_k$ be $I_k(y) = -1$ on the state $y$, with $f \equiv 0$. Starting from $y(0)=1$, the solution is $y(t) = 1$ for $t<\tau_1=\tfrac12$, then $0$, then $-1$, and after $k$ impulses $y = 1-k$; the trajectory is defined up to $t=1$ and takes the value $-k\to-\infty$ along the sequence, so it has no finite limit as $t \to 1^-$ and is unbounded on every neighbourhood of $1$. The maximal interval is $(-\infty,1)$ and the solution blows up at the accumulation point.</p>
+<p><strong>Example (a solution with a finite limit).</strong> With the same impulse times and jumps $I_k(y) = -2^{-k}$, the partial sums $\sum_{j\le k}2^{-j}$ converge to $1$, so $y(t) \to 1-1=0$ as $t\to1^-$; the solution has a finite limit and can be extended through the accumulation point by continuity, after which the equation is again ordinary. Thus accumulation does not always terminate the solution: it depends on the summability of the jumps.</p>
+<p><strong>Remark.</strong> The two examples show that the local finiteness of the impulse times is a genuine hypothesis of the existence theorem and not a technical convenience. In applications one imposes it, or one replaces the impulsive problem by the measure-driven formulation below, in which the accumulated impulses are carried by a measure and the solution is defined by a Stieltjes integral that can converge even when the individual impulses are infinitely many.</p>
+<h2 id="linear-impulsive-systems">Linear Impulsive Systems</h2>
+<h3 id="the-fundamental-matrix">The Fundamental Matrix</h3>
+<p><strong>Definition.</strong> A <strong>linear impulsive system</strong> is</p>
+<p>$$
+y'(t) = A(t)\,y(t), \quad t \neq \tau_k; \qquad y(\tau_k^+) = (I + B_k)\,y(\tau_k^-),
+$$</p>
+<p>with $A : I \to B(X)$ continuous and $B_k \in B(X)$. Its <strong>fundamental matrix</strong> at $t_0$ is the solution of the matrix problem with $W(t_0) = I$, written $W(t,t_0)$ when both arguments are needed; it is <strong>causal</strong>, $W(t,s)W(s,r) = W(t,r)$ for $r \le s \le t$, and invertible, $W(t,s)^{-1} = W(s,t)$.</p>
+<p><strong>Theorem (product formula).</strong> On the interval $(\tau_k,\tau_{k+1}]$ the fundamental matrix is obtained by multiplying the ordinary fundamental matrices and the jump factors:</p>
+<p>$$
+W(t,\tau_k^+) = \Phi_k(t)\,\bigl(I + B_k\bigr), \qquad
+W(t,t_0) = \Phi_k(t)\,(I+B_k)\,\Phi_{k-1}(\tau_k)\cdots(I+B_1)\,\Phi_0(\tau_1)\,(I+B_0)\,\Phi_{t_0}(\tau_0),
+$$</p>
+<p>where $\Phi_j$ denotes the ordinary fundamental matrix of $y'=A(t)y$ on the relevant interval. When $A$ is constant and the jumps occur at equally spaced times $\tau_k = kT$, the one-period product is</p>
+<p>$$
+M = e^{A(T-\tau)}\,\bigl(I+B\bigr),
+$$</p>
+<p>the <strong>monodromy matrix</strong>, and the fundamental matrix satisfies $W(t+T) = W(t)M$ for $t$ in the first period.</p>
+<p><em>Proof.</em> The formula is the interval method applied to the matrix equation: between impulses the matrix solves the linear equation $W' = AW$, so it equals the ordinary fundamental matrix; across an impulse left multiplication by $I+B_k$ performs the jump. The causality and invertibility are immediate from the formula and from the invertibility of each factor. $\square$</p>
+<p><strong>Theorem (Floquet).</strong> If $A$ is $T$-periodic and the jump pattern is $T$-periodic with finitely many jumps per period, then $W(t,t_0) = P(t)e^{(t-t_0)C}$ where $P$ is $T$-periodic and invertible in $t$ and $C$ is constant, $e^{TC}=M$.</p>
+<p><em>Proof.</em> Since $W(t+T) = W(t)M$ by periodicity, and $M$ is invertible as a product of invertible factors, choose a logarithm $C$ with $e^{TC}=M$ and put $P(t) = W(t)e^{-tC}$; then $P(t+T) = W(t+T)e^{-(t+T)C} = W(t)Me^{-TC}e^{-tC} = W(t)e^{-tC} = P(t)$. $\square$</p>
+<p><strong>Corollary (stability).</strong> The linear impulsive periodic system is asymptotically stable if and only if every eigenvalue of the monodromy matrix $M$ has modulus strictly less than $1$; it is stable if and only if the eigenvalues have modulus at most $1$ and those of modulus $1$ are semisimple. The eigenvalues of $M$ are the <strong>Floquet multipliers</strong> and the eigenvalues of $C$ the <strong>Floquet exponents</strong>.</p>
+<p><em>Proof.</em> By Floquet's theorem $W(t) = P(t)e^{tC}$ with $P$ bounded and invertible, so the growth of $W(t)$ as $t\to\infty$ is governed by $e^{tC}$, hence by the eigenvalues of $C$; these are $\log\mu/T$ for the eigenvalues $\mu$ of $M$, so $|\mu|<1$ is equivalent to strictly negative real part for the exponents. $\square$</p>
+<p><strong>Example (an oscillator with a periodic kick).</strong> With $A = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$, a period $T = 2\pi$ and one impulse per period with $B = \alpha I$ at $t = \pi$, the monodromy over one period is the product of two rotation-half matrices and the factor $1+\alpha$:</p>
+<p>$$
+M = (1+\alpha)e^{A\pi}e^{A\pi} = (1+\alpha)e^{2\pi A} = (1+\alpha)I,
+$$</p>
+<p>since $e^{2\pi A} = I$ for the rotation generator $A$. The multipliers are $1+\alpha$ twice, so the system is asymptotically stable exactly for $-2 < \alpha < 0$. The computation is exact and shows that a kick can stabilise an oscillator that is otherwise neutrally stable, and destabilise it when too strong.</p>
+<h3 id="variation-of-constants">Variation of Constants</h3>
+<p><strong>Theorem (variation of constants).</strong> The solution of the inhomogeneous linear impulsive system $y' = A(t)y + b(t)$, $y(\tau_k^+) = (I+B_k)y(\tau_k^-) + c_k$, with $y(t_0)=y_0$, is</p>
+<p>$$
+y(t) = W(t,t_0)y_0 + \int_{t_0}^{t}W(t,s)\,b(s)\,ds + \sum_{\tau_k \in (t_0,t]} W(t,\tau_k^+)\,c_k ,
+$$</p>
+<p>the sum being finite on every compact interval when the impulse times are locally finite.</p>
+<p><em>Proof.</em> By linearity it suffices to verify each term. The first is the homogeneous solution; the integral term is the ordinary variation-of-constants formula between impulses, its value jumping correctly because $W$ does; and each $c_k$ contributes the response of an impulse to the state at $\tau_k$, propagated forward by $W(t,\tau_k^+)$, which is the definition of $c_k$. Uniqueness of the solution of the impulsive initial-value problem completes the proof. $\square$</p>
+<h2 id="stability">Stability</h2>
+<h3 id="lyapunov-functions-with-jumps">Lyapunov Functions with Jumps</h3>
+<p><strong>Definition.</strong> For the impulsive system with impulse times $(\tau_k)$ the <strong>jump operator</strong> at time $t$ associated with the impulsive equation $y' = f(t,y)$ is the map sending the pre-jump value to the post-jump value; a <strong>Lyapunov function</strong> is a continuous positive definite $V : \mathbb{R}\times X \to \mathbb{R}$ that is continuously differentiable off the impulse times, whose derivative $\dot V(t,y) = \partial_tV + \partial_yV\cdot f(t,y)$ along the continuous flow is nonpositive, and whose jumps satisfy</p>
+<p>$$
+V\bigl(\tau_k^+, y(\tau_k^+)\bigr) \le V\bigl(\tau_k^-, y(\tau_k^-)\bigr)
+$$</p>
+<p>along solutions.</p>
+<p><strong>Theorem (stability).</strong> If such a Lyapunov function exists with $\dot V \le 0$ and nonincreasing jumps, the zero solution is stable; if in addition $\dot V \le -w(\|y\|)$ for a positive definite $w$ and the jumps satisfy $V(\tau_k^+,y^+) \le (1 - d_k)V(\tau_k^-,y^-)$ with $d_k \ge 0$ and $\sum_k d_k = \infty$, the zero solution is asymptotically stable.</p>
+<p><em>Proof.</em> Between impulses $V(\tau_k^+,y(t))$ is nonincreasing by $\dot V \le 0$, and the jump hypothesis makes it nonincreasing across the impulses as well; so $V$ is a nonincreasing function of time along the solution, and positive definiteness gives stability exactly as in the direct method of Lyapunov for ordinary equations. Under the stronger hypotheses the total decrement is infinite, so $V \to 0$ and, by positive definiteness, $y \to 0$. $\square$</p>
+<p><strong>Corollary (linear systems).</strong> For the linear impulsive system with constant $A$ and jumps $B_k$, the quadratic $V(y) = y^*y$ gives</p>
+<p>$$
+V(y(\tau_k^+)) = \|(I+B_k)y(\tau_k^-)\|^2 \le \|I+B_k\|^2\,V(y(\tau_k^-)),
+$$</p>
+<p>and the derivative along the flow is $\dot V = y^*(A^*+A)y$. Hence if $A^*+A \le -2\alpha I$ and $\|I+B_k\|^2 \le e^{-2\beta_k}$ with $\alpha$ and the $\beta_k$ giving an infinite total decrement, the zero solution is asymptotically stable.</p>
+<p><em>Proof.</em> Immediate from the theorem applied to the quadratic; the infinite decrement condition is $\sum_k(\beta_k) = \infty$ when the impulses are separated in a bounded way, more precisely when the inter-impulse times are bounded above, so that the continuous decrement $\alpha \cdot$ (time) is not lost. $\square$</p>
+<p><strong>Example (a stable discrete map).</strong> For the pure impulse problem with $A=0$, $B_k = B$ constant and impulses at every integer, the theorem gives the sufficient discrete-time condition $\|(I+B)\|<1$; the sharp condition for the stability of the iteration $x \mapsto (I+B)x$ is the spectral one $\rho(I+B)<1$, which is strictly weaker — the norm of a matrix can exceed its spectral radius, as it does for a nilpotent $I+B$ of large norm — and which is equivalent to $\|(I+B)^n\|<1$ for some $n$ by the spectral radius formula $\rho(M)=\lim_n\|M^n\|^{1/n}$. The two conditions agree when $I+B$ is normal, since then $\|I+B\|=\rho(I+B)$ in the operator norm induced by the Euclidean norm. The example shows that the impulsive theory contains the theory of the iterated linear map $x \mapsto (I+B)x$ as the special case $A=0$.</p>
+<h3 id="comparison-and-an-explicit-estimate">Comparison and an Explicit Estimate</h3>
+<p><strong>Theorem (impulsive Gronwall inequality).</strong> Let $u : [t_0,\beta) \to [0,\infty)$ be piecewise continuous, continuous at all non-impulse times, and suppose</p>
+<p>$$
+u(t) \le a + \int_{t_0}^{t}\beta(s)u(s)\,ds + \sum_{\tau_k \in (t_0,t]}\gamma_k\,u(\tau_k^-)
+$$</p>
+<p>with $a \ge 0$, $\beta \ge 0$ continuous, $\gamma_k \ge 0$. Then</p>
+<p>$$
+u(t) \le a\,\exp\Bigl(\int_{t_0}^t\beta(s)\,ds\Bigr)\prod_{\tau_k \in (t_0,t]}(1+\gamma_k) .
+$$</p>
+<p><em>Proof.</em> Apply the ordinary Gronwall inequality of <em>Ordinary Differential Equations</em> on each interval between consecutive impulse times, accumulating the factor $1+\gamma_k$ at each impulse. $\square$</p>
+<p>The inequality is the working tool for continuous dependence and for existence proofs with non-Lipschitz impulses; it shows that the jumps multiply the ordinary estimate by the product of the jump factors, so that stability is a question about the convergence of that product.</p>
+<h2 id="measure-driven-impulsive-equations">Measure-Driven Impulsive Equations</h2>
+<h3 id="the-stieltjes-formulation">The Stieltjes Formulation</h3>
+<p><strong>Definition.</strong> Let $\mu$ be a locally finite positive measure on $I$, the <strong>impulse measure</strong>, and let $F : I\times X \to X$ be continuous. The <strong>measure-driven differential equation</strong> is</p>
+<p>$$
+dy = F(t,y)\,d\mu ,
+$$</p>
+<p>understood as the integral equation</p>
+<p>$$
+y(t) = y(t_0) + \int_{[t_0,t]}F(s, y(s))\,d\mu(s),
+$$</p>
+<p>the integral being the Lebesgue–Stieltjes (or Kurzweil–Stieltjes) integral of <em>Measure Theory and Integration</em>. When $\mu = \lambda + \sum_k m_k\delta_{\tau_k}$ with $\lambda$ Lebesgue measure, $m_k$ masses and $\delta_{\tau_k}$ Dirac measures, and $F = f\cdot(d\lambda/d\mu) + \sum_k I_k(\cdot)\cdot(dm_k\delta/d\mu)$, the measure-driven equation is the impulsive equation of the preceding sections with $I_k$ scaled by $m_k$.</p>
+<p><strong>Theorem (existence and uniqueness).</strong> If $F$ is continuous, $\mu$ is locally finite, and $F$ satisfies a global Lipschitz condition in the second variable with $\mu$-integrable constant, then for every $t_0$ and $y_0$ there is a unique solution on the whole interval.</p>
+<p><em>Proof.</em> The integral operator is a contraction on the space of $\mu$-a.e. continuous functions with the sup norm when the Lipschitz constant times $\mu([t_0,t])$ is less than $1$, which holds on a sufficiently short interval and can be iterated; this is the Picard argument with the Stieltjes integral replacing the Lebesgue integral, and the completeness of the space is that of $C([t_0,t],X)$ under the supremum norm. $\square$</p>
+<p><strong>Remark (why the measure language is the right one).</strong> The measure formulation removes the need for local finiteness of the impulse times: an accumulated sequence of impulses is carried by a measure $\sum_k m_k\delta_{\tau_k}$ that is finite on compact sets whenever $\sum_{k:\tau_k\le t}m_k < \infty$, and the Stieltjes integral converges under this summability even though the intervals between impulses shrink to zero length. The Zeno phenomenon is then a statement about the mass of the measure on a small interval, not about the count of the impulse times, and the solution continues to exist when the total mass is finite. The general interaction of this formulation with the ordinary equation in the absolutely continuous part of $\mu$ is the theory of measure differential equations, and its study for finite-dimensional $X$ and a general $\mu$ is a standard chapter of the field.</p>
+<h2 id="summary">Summary</h2>
+<p>An impulsive differential equation is an ordinary differential equation punctuated by state-dependent or time-dependent jumps; a solution is piecewise continuously differentiable, with left and right limits at each impulse time and a jump prescribed in terms of the left limit. If the impulse times are locally finite, the right-hand side is continuous and locally Lipschitz, and the jump maps are continuous, then the interval method — solving the ordinary equation between impulses and applying the jump at each impulse time — gives a unique maximal solution, exactly as the ordinary theory would on each piece. Accumulation of impulse times destroys local finiteness; a solution then may blow up at the accumulation point, as a divergent sum of jumps does, or may have a finite limit and extend through it, as a convergent sum does, so the phenomenon is governed by the summability of the jumps.</p>
+<p>For linear impulsive systems the fundamental matrix is a product of ordinary fundamental matrices and jump factors, and the variation-of-constants formula adds a finite sum of responses at the impulse times to the ordinary integral. When the coefficients and the impulse pattern are periodic, Floquet's theorem writes the fundamental matrix as a periodic factor times an exponential of the logarithm of the monodromy matrix, and asymptotic stability is exactly the condition that every Floquet multiplier have modulus less than one. Stability in the nonlinear case is decided by a Lyapunov function whose derivative is nonpositive along the flow and whose value does not increase across the jumps, the strong form giving asymptotic stability, and the impulsive Gronwall inequality multiplies the ordinary estimate by the product of the jump factors.</p>
+<p>The measure-driven formulation $dy = F(t,y)\,d\mu$ replaces the discrete list of impulses by a locally finite measure and the Stieltjes integral by the Lebesgue or Kurzweil–Stieltjes integral of <em>Measure Theory and Integration</em>; it subsumes the impulsive equation, removes the hypothesis of local finiteness when the total mass is finite, and is the natural setting in which the Zeno phenomenon becomes a statement about the mass of the measure on a short interval.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$</td>
+<td>Banach state space over $\mathbb{K}$</td>
+</tr>
+<tr>
+<td>$f(t,y)$</td>
+<td>Continuous part of the impulsive equation</td>
+</tr>
+<tr>
+<td>$(\tau_k)$</td>
+<td>Impulse times, strictly increasing</td>
+</tr>
+<tr>
+<td>$I_k$, $B_k$</td>
+<td>Jump map and linear jump matrix at $\tau_k$</td>
+</tr>
+<tr>
+<td>$y(\tau_k^-)$, $y(\tau_k^+)$</td>
+<td>Pre-jump and post-jump values</td>
+</tr>
+<tr>
+<td>$\Delta y|_{\tau_k}$</td>
+<td>Jump $y(\tau_k^+)-y(\tau_k^-)$</td>
+</tr>
+<tr>
+<td>$W(t,s)$</td>
+<td>Fundamental matrix of a linear impulsive system</td>
+</tr>
+<tr>
+<td>$\Phi_j$</td>
+<td>Ordinary fundamental matrix $y'=A(t)y$ between impulses</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>Monodromy matrix over one period</td>
+</tr>
+<tr>
+<td>Floquet multipliers, exponents</td>
+<td>Eigenvalues of $M$ and of its logarithm $C$</td>
+</tr>
+<tr>
+<td>$\rho(M)$</td>
+<td>Spectral radius of the jump matrix, $\rho(M)=\lim_n\|M^n\|^{1/n}$</td>
+</tr>
+<tr>
+<td>$V(t,y)$</td>
+<td>Lyapunov function; $\dot V$ its derivative along the flow</td>
+</tr>
+<tr>
+<td>$d_k$</td>
+<td>Fractional decrement $V(\tau_k^+,y^+)\le(1-d_k)V(\tau_k^-,y^-)$</td>
+</tr>
+<tr>
+<td>$\mu$, $\delta_{\tau}$</td>
+<td>Impulse measure and Dirac measure at $\tau$</td>
+</tr>
+<tr>
+<td>$dy = F(t,y)\,d\mu$</td>
+<td>Measure-driven (Stieltjes) formulation</td>
+</tr>
+<tr>
+<td>Zeno phenomenon</td>
+<td>Infinitely many impulses before a finite time</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Marat Akhmet, <em>Principles of Discontinuous Dynamical Systems</em> (Springer, 2010), for the interval method, the beating phenomenon and B-equivalence.</li>
+<li>Marat Akhmet and Mehmet O. Fen, <em>Impulsive Differential Equations and Applications</em> (Hindawi, 2007), for the modern formulation and stability.</li>
+<li>Vangipuram Lakshmikantham, Drumi D. Bainov and Pavel S. Simeonov, <em>Theory of Impulsive Differential Equations</em> (World Scientific, 1989), for the classical existence, linear and stability theory.</li>
+<li>Drumi D. Bainov and Pavel S. Simeonov, <em>Impulsive Differential Equations: Periodic Solutions and Applications</em> (Longman, 1993), for periodic solutions and the monodromy matrix.</li>
+<li>Štefan Schwabik and Guoju Ye, <em>Topics in Banach Space Integration</em> (World Scientific, 2005), for the Kurzweil–Stieltjes integral used in the measure-driven formulation.</li>
+<li>Jaroslav Kurzweil, "Generalized Ordinary Differential Equations", <em>Czechoslovak Mathematical Journal</em> 8 (1958), for the integral of the measure-driven equation.</li>
+<li>Anatoly D. Myshkis and Anatoly M. Samoilenko, "Systems with Impulses at Fixed Times", <em>Differential Equations</em> 9 (1973), for the accumulation of impulses and the Zeno phenomenon.</li>
+<li>Peter E. Kloeden and Eckhard Platen, <em>Numerical Solution of Stochastic Differential Equations</em> (Springer, 1992), for the interval-gluing technique that the impulsive and stochastic theories share.</li>
+<li>Alexander Halanay and Demetrios Wexler, <em>Qualitative Theory of Impulsive Systems</em> (Editura Academiei, 1968), for the early systematic treatment.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

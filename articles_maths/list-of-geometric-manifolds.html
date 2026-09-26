@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Geometric Manifolds — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-geometric-manifolds"><strong>List of Geometric Manifolds</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the manifolds and smooth structures that the corpus meets, with the data that separate them: their dimension, their curvature and their invariants. The list gathers the model spaces of constant curvature, the surfaces and the manifolds of dimension three and four, the complex, Kähler, quaternionic and exceptional-holonomy manifolds, the homogeneous and symmetric spaces, the space forms and the compact flat manifolds, and the smooth structures of the exotic phenomena. Every entry points to the article that introduces the manifold, and the article introduces nothing and proves nothing.</p>
+<p>The manifolds of the list are geometric manifolds: they carry a metric, a complex structure, a form or a holonomy reduction that is stated in the entry, and the invariants recorded beside each are the ones the corpus computes for it, among them the Euler characteristic, the Betti and Hodge numbers, the signature and the fundamental group. The dimension is the first division of the list, because the classification of manifolds changes character at each of the low dimensions, and the curvature is the second, because the constant-curvature and holonomy-reduced cases are the ones the corpus treats in full.</p>
+<p>The article records examples and non-examples side by side. Beside the manifolds it lists the compact spaces that fail to be manifolds, the manifolds that are homeomorphic but not diffeomorphic, and the exotic smooth structures, each with the failure named and the article that records it.</p>
+<h2 id="the-model-manifolds-and-the-space-forms">The Model Manifolds and the Space Forms</h2>
+<p>The model manifolds are the complete simply connected manifolds of constant curvature, and the space forms are their quotients by discrete groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Manifold</th>
+<th>Dimension</th>
+<th>Curvature</th>
+<th>Invariants</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}^n$</td>
+<td>$n$</td>
+<td>$0$</td>
+<td>contractible; Euler characteristic $1$</td>
+<td><em>Euclidean Geometry</em>; <em>Smooth Manifolds and Differential Geometry</em></td>
+</tr>
+<tr>
+<td>$S^n$</td>
+<td>$n$</td>
+<td>$+1$</td>
+<td>compact, simply connected; $\chi = 1 + (-1)^n$</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbf{H}^n$</td>
+<td>$n$</td>
+<td>$-1$</td>
+<td>contractible; infinite volume</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^n$</td>
+<td>$n$</td>
+<td>$+1$</td>
+<td>$\pi_1 = \mathbb{Z}/2$; non-orientable for even $n$</td>
+<td><em>Smooth Manifolds and Differential Geometry</em>; <em>Projective Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^n$</td>
+<td>$2n$</td>
+<td>positive</td>
+<td>$h^{p,p} = 1$; $\chi = n+1$</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbb{HP}^n$</td>
+<td>$4n$</td>
+<td>positive</td>
+<td>quaternionic Kähler; $\chi = n+1$</td>
+<td><em>Quaternionic Geometry</em></td>
+</tr>
+<tr>
+<td>the $n$-torus $T^n$</td>
+<td>$n$</td>
+<td>$0$</td>
+<td>$\pi_1 = \mathbb{Z}^n$; $\chi = 0$</td>
+<td><em>Smooth Manifolds and Differential Geometry</em>; <em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the Klein bottle</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>non-orientable; $\chi = 0$</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>a spherical space form $S^n/\Gamma$</td>
+<td>$n$</td>
+<td>$+1$</td>
+<td>$\pi_1 = \Gamma$ finite; $\chi = \lvert\Gamma\rvert^{-1}\chi(S^n)$</td>
+<td><em>Spherical Geometry</em>, §Spherical Space Forms</td>
+</tr>
+<tr>
+<td>a hyperbolic space form $\mathbf{H}^n/\Gamma$</td>
+<td>$n$</td>
+<td>$-1$</td>
+<td>$\pi_1 = \Gamma$; rigidity in dimension $\geq 3$</td>
+<td><em>Hyperbolic Geometry</em>, §Hyperbolic Space Forms and the Trichotomy</td>
+</tr>
+<tr>
+<td>a compact flat manifold</td>
+<td>$n$</td>
+<td>$0$</td>
+<td>torsion-free crystallographic fundamental group</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the lens space $L(p,q)$</td>
+<td>$3$</td>
+<td>$+1$</td>
+<td>$\pi_1 = \mathbb{Z}/p$; linking form $q^*/p$</td>
+<td><em>Lens Spaces</em></td>
+</tr>
+<tr>
+<td>a nilmanifold $N/\Gamma$</td>
+<td>varies</td>
+<td>—</td>
+<td>lattice quotient of a nilpotent group; left-invariant metric</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The model spaces are the three of constant curvature together with the complex and quaternionic projective spaces; the space forms are their quotients, and the space-form theorem makes the constant-curvature cases exhaustive. The compact flat manifolds are the quotients by the torsion-free crystallographic groups, of which there are two in dimension two and ten in dimension three.</p>
+<h2 id="surfaces">Surfaces</h2>
+<p>A surface is a manifold of dimension two, classified by its genus, its orientability and its number of boundary components, and carrying a complete constant-curvature metric by uniformisation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Euler characteristic</th>
+<th>Curvature</th>
+<th>Invariants</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sphere $S^2$</td>
+<td>$2$</td>
+<td>$+1$</td>
+<td>$\pi_1$ trivial; the unique simply connected closed surface</td>
+<td><em>Spherical Geometry</em>; <em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the torus $T^2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\pi_1 = \mathbb{Z}^2$; abelian</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the real projective plane $\mathbb{RP}^2$</td>
+<td>$1$</td>
+<td>$+1$</td>
+<td>non-orientable; the quotient of $S^2$</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the closed orientable surface of genus $g \geq 2$</td>
+<td>$2 - 2g$</td>
+<td>$-1$</td>
+<td>hyperbolic; mapping class group of virtual cohomological dimension $4g-5$</td>
+<td><em>Low-Dimensional Topology</em>; <em>Mapping Class Groups</em></td>
+</tr>
+<tr>
+<td>the connected sum $M\# N$</td>
+<td>$\chi(M) + \chi(N) - 2$</td>
+<td>—</td>
+<td>the connected-sum operation of the classification</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a compact surface with boundary</td>
+<td>$\chi$ and $\pi_1$ free</td>
+<td>—</td>
+<td>classified by $\chi$, orientability and boundary count</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a Riemann surface</td>
+<td>$2 - 2g$</td>
+<td>$-1$ for $g \geq 2$</td>
+<td>complex structure; moduli space of dimension $3g-3$</td>
+<td><em>Algebraic Curves</em>; <em>Moduli Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Every closed surface admits exactly one of the three geometries according to the sign of $\chi$: the sphere the spherical, the torus and the Klein bottle the Euclidean, and the surfaces of genus at least two the hyperbolic. The Euler characteristic and the orientability are the complete invariants of the closed case, and the uniformisation theorem realises the geometric structure.</p>
+<h2 id="manifolds-in-dimension-three-and-four">Manifolds in Dimension Three and Four</h2>
+<p>In dimension three the classification is by decomposition into geometric pieces, and in dimension four the topological and smooth classifications diverge.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Manifold</th>
+<th>Dimension</th>
+<th>Curvature</th>
+<th>Invariants</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a closed three-manifold</td>
+<td>$3$</td>
+<td>piecewise geometric</td>
+<td>prime and torus decomposition; the eight geometries</td>
+<td><em>Low-Dimensional Topology</em>, §Geometrisation and the Eight Model Geometries</td>
+</tr>
+<tr>
+<td>a Seifert fibred manifold</td>
+<td>$3$</td>
+<td>one of six geometries</td>
+<td>circle fibration with exceptional fibres</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the figure-eight knot complement</td>
+<td>$3$</td>
+<td>$-1$</td>
+<td>hyperbolic volume $2.0298832\ldots$</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the Weeks manifold</td>
+<td>$3$</td>
+<td>$-1$</td>
+<td>minimal volume $0.94270736\ldots$</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a simply connected four-manifold</td>
+<td>$4$</td>
+<td>—</td>
+<td>intersection form; classification by Freedman</td>
+<td><em>Low-Dimensional Topology</em>, §Four-Manifolds and the Intersection Form</td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^2$ and $\overline{\mathbb{CP}^2}$</td>
+<td>$4$</td>
+<td>—</td>
+<td>intersection forms of rank $1$</td>
+<td><em>Low-Dimensional Topology</em>; <em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>a $K3$ surface</td>
+<td>$4$</td>
+<td>Ricci-flat</td>
+<td>$b_2 = 22$, $h^{1,1} = 20$, $\chi = 24$</td>
+<td><em>Calabi–Yau Manifolds</em></td>
+</tr>
+<tr>
+<td>a Calabi–Yau threefold</td>
+<td>$6$</td>
+<td>Ricci-flat</td>
+<td>Hodge numbers $h^{1,1}, h^{2,1}$; $c_1 = 0$</td>
+<td><em>Calabi–Yau Manifolds</em></td>
+</tr>
+<tr>
+<td>a homotopy sphere $\Sigma \in \Theta_n$</td>
+<td>$n$</td>
+<td>—</td>
+<td>$\Theta_n$ class; bounding obstruction $bP_{n+1}$</td>
+<td><em>Cobordism and Surgery Theory</em></td>
+</tr>
+<tr>
+<td>a spin manifold</td>
+<td>$n$</td>
+<td>—</td>
+<td>spin structure; $\hat A$-genus; Dirac operator</td>
+<td><em>Spin Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The three-dimensional case is governed by Thurston's geometrisation theorem, proved by Perelman's Ricci flow, so that every closed three-manifold decomposes into pieces each of which is the quotient of one of the eight model geometries. The four-dimensional case is exceptional: the topological classification of the simply connected case is Freedman's, by the intersection form, while the smooth classification is obstructed by the gauge-theoretic invariants of Donaldson and Seiberg–Witten, and the two do not agree.</p>
+<h2 id="complex-kahler-and-of-special-holonomy">Complex, Kähler and of Special Holonomy</h2>
+<p>The manifolds with a reduced holonomy carry the richest invariants of the list, and their classification is the classification of the holonomy groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Manifold</th>
+<th>Dimension</th>
+<th>Holonomy</th>
+<th>Invariants</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a complex manifold</td>
+<td>$2n$</td>
+<td>$GL(n,\mathbb{C})$</td>
+<td>complex structure $J$; Dolbeault cohomology</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>a Kähler manifold</td>
+<td>$2n$</td>
+<td>$U(n)$</td>
+<td>Hodge numbers $h^{p,q}$; Kähler form $\Omega$</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>a Calabi–Yau manifold</td>
+<td>$2n$</td>
+<td>$SU(n)$</td>
+<td>$c_1 = 0$; holomorphic volume form</td>
+<td><em>Calabi–Yau Manifolds</em></td>
+</tr>
+<tr>
+<td>a hyperkähler manifold</td>
+<td>$4n$</td>
+<td>$Sp(n)$</td>
+<td>three Kähler forms; Ricci-flat</td>
+<td><em>Hyperkähler Geometry</em></td>
+</tr>
+<tr>
+<td>a quaternionic Kähler manifold</td>
+<td>$4n$</td>
+<td>$Sp(n)\cdot Sp(1)$</td>
+<td>Einstein; twistor space</td>
+<td><em>Quaternionic Geometry</em></td>
+</tr>
+<tr>
+<td>a $G_2$-manifold</td>
+<td>$7$</td>
+<td>$G_2$</td>
+<td>associative $3$-form; $\chi = 0$ for full holonomy</td>
+<td><em>G2 and Spin(7) Manifolds</em></td>
+</tr>
+<tr>
+<td>a $\mathrm{Spin}(7)$-manifold</td>
+<td>$8$</td>
+<td>$\mathrm{Spin}(7)$</td>
+<td>Cayley $4$-form; $\hat A$-genus</td>
+<td><em>G2 and Spin(7) Manifolds</em></td>
+</tr>
+<tr>
+<td>a symmetric space $G/H$</td>
+<td>varies</td>
+<td>$H$</td>
+<td>$\nabla R = 0$; rank and restricted roots</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>a Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n)$</td>
+<td>$k(n-k)$</td>
+<td>—</td>
+<td>compact symmetric space of rank $\min(k,n-k)$</td>
+<td><em>Grassmannians and Stiefel Manifolds</em></td>
+</tr>
+<tr>
+<td>a flag manifold $F\ell_n(\mathbb{C})$</td>
+<td>$2\binom{n}{2}$</td>
+<td>—</td>
+<td>Euler characteristic $n!$; Schubert cells</td>
+<td><em>Flag Manifolds</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The holonomy reduction is the organising principle: the Berger list of holonomy groups gives the possible parallel structures, and each row of the table is the manifold of one holonomy group. The Calabi–Yau, hyperkähler, quaternionic Kähler, $G_2$ and $\mathrm{Spin}(7)$ manifolds are the Ricci-flat or Einstein cases, and they are the manifolds of the exceptional and special-holonomy families of the corpus.</p>
+<h2 id="smooth-structures-and-exotic-phenomena">Smooth Structures and Exotic Phenomena</h2>
+<p>A topological manifold may carry several smooth structures, and the corpus records the cases in which the smooth classification differs from the topological one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a smooth structure on a topological manifold</td>
+<td>a maximal compatible atlas, classifying the smooth manifolds</td>
+<td><em>Smooth Manifolds and Differential Geometry</em></td>
+</tr>
+<tr>
+<td>an exotic sphere</td>
+<td>a homotopy sphere homeomorphic but not diffeomorphic to $S^n$</td>
+<td><em>Cobordism and Surgery Theory</em></td>
+</tr>
+<tr>
+<td>the group $\Theta_n$ of homotopy spheres</td>
+<td>the oriented homotopy $n$-spheres under connected sum, finite for $n \neq 4$</td>
+<td><em>Cobordism and Surgery Theory</em></td>
+</tr>
+<tr>
+<td>an exotic $\mathbb{R}^4$</td>
+<td>a smooth structure on $\mathbb{R}^4$ not diffeomorphic to the standard one</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>the failure of the $h$-cobordism theorem in dimension four</td>
+<td>the obstruction that makes dimension four exceptional</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a wild manifold</td>
+<td>a space that is not a manifold but shares some of its properties</td>
+<td><em>Wild and Exotic Manifolds</em> (planned)</td>
+</tr>
+<tr>
+<td>the Alexander horned sphere</td>
+<td>a sphere embedded in $\mathbb{R}^3$ whose complement is not simply connected</td>
+<td><em>Wild and Exotic Manifolds</em> (planned)</td>
+</tr>
+<tr>
+<td>the Whitehead manifold</td>
+<td>contractible but not homeomorphic to $\mathbb{R}^3$</td>
+<td><em>Wild and Exotic Manifolds</em> (planned)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The exotic spheres are detected by the surgery obstruction and the $bP_{n+1}$ computation, and the exotic smooth structures on $\mathbb{R}^4$ are the phenomenon that makes dimension four alone among the Euclidean spaces exceptional. The wild objects are the non-manifolds and the non-standard embeddings that share some property of the manifolds; they are treated in the planned article, to which the last rows point.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the geometric manifolds, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a geometric manifold</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the topologist's sine curve</td>
+<td>not a manifold at any point of the limiting segment</td>
+<td><em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the Warsaw circle</td>
+<td>a compact connected space that is not a manifold</td>
+<td><em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the pseudo-arc</td>
+<td>a hereditarily indecomposable continuum, not a manifold</td>
+<td><em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the long line</td>
+<td>locally Euclidean but not second countable, so outside the definition used here</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>the comb space</td>
+<td>not locally connected and not a manifold</td>
+<td><em>Continuum Theory</em>, §Peano Continua</td>
+</tr>
+<tr>
+<td>the solenoid</td>
+<td>an indecomposable continuum, not a manifold</td>
+<td><em>Continuum Theory</em>, §The Standard Indecomposable Continua</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the manifolds and smooth structures of the corpus, with their dimension, curvature and invariants. The model manifolds and the space forms open the list, from $\mathbb{R}^n$, $S^n$ and $\mathbf{H}^n$ to the projective spaces, the tori, the flat manifolds and the lens spaces; the surfaces follow, classified by genus and Euler characteristic and uniformised by the three geometries; the three- and four-dimensional cases are recorded with geometrisation, the eight model geometries and the intersection form; the complex, Kähler, Calabi–Yau, hyperkähler, quaternionic and exceptional-holonomy manifolds are gathered by their holonomy; and the smooth structures close the list with the exotic spheres, the exotic $\mathbb{R}^4$ and the wild objects. Beside the examples stand the non-examples: the topologist's sine curve, the Warsaw circle, the pseudo-arc, the long line, the comb space and the solenoid each fail a defining property of a manifold, with the failure named.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}^n$, $S^n$, $\mathbf{H}^n$, $T^n$, $\mathbb{RP}^n$, $\mathbb{CP}^n$, $\mathbb{HP}^n$</td>
+<td>Euclidean space, sphere, hyperbolic space, torus, projective spaces</td>
+</tr>
+<tr>
+<td>$S^n/\Gamma$, $\mathbf{H}^n/\Gamma$, $N/\Gamma$</td>
+<td>Spherical, hyperbolic and nilmanifold quotients</td>
+</tr>
+<tr>
+<td>$L(p,q)$</td>
+<td>Lens space</td>
+</tr>
+<tr>
+<td>$\chi$, $b_i$, $h^{p,q}$</td>
+<td>Euler characteristic, Betti numbers, Hodge numbers</td>
+</tr>
+<tr>
+<td>$\Theta_n$, $bP_{n+1}$</td>
+<td>Group of homotopy spheres; boundary of the parallelizable case</td>
+</tr>
+<tr>
+<td>$U(n)$, $SU(n)$, $Sp(n)$, $Sp(n)\cdot Sp(1)$, $G_2$, $\mathrm{Spin}(7)$</td>
+<td>Holonomy groups</td>
+</tr>
+<tr>
+<td>$\mathrm{Gr}_k(\mathbb{R}^n)$, $F\ell_n(\mathbb{C})$</td>
+<td>Grassmannian and flag manifold</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John M. Lee, <em>Introduction to Smooth Manifolds</em> (Springer, 2nd ed. 2013), for the definition of a manifold, the tangent bundle and the standard examples.</li>
+<li>Michael Spivak, <em>A Comprehensive Introduction to Differential Geometry</em>, Volume I (Publish or Perish, 3rd ed. 1999), for the model manifolds, the space forms and the classical examples.</li>
+<li>Michael Freedman and Frank Quinn, <em>Topology of 4-Manifolds</em> (Princeton University Press, 1990), for the topological classification of four-manifolds and the intersection form.</li>
+<li>Dominic Joyce, <em>Compact Manifolds with Special Holonomy</em> (Oxford University Press, 2000), for the Calabi–Yau, hyperkähler, $G_2$ and $\mathrm{Spin}(7)$ manifolds by their holonomy.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

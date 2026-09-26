@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Higher Special Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-higher-special-functions"><strong>Split-Quaternion Higher Special Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article treats the higher special functions of a split-quaternion variable. It states the general principle by which a classical special function extends to the algebra, defines the Gamma function, the Bessel functions, the hypergeometric function and the orthogonal polynomials in that framework, describes the special functions coming from the matrix model and those coming from the analysis, and records the conventions used.</p>
+<p>The split-quaternion algebra, its involution, its idempotents and its null basis are assumed from <em>Split-Quaternion Algebra</em>; the units and the three-way classification from <em>Split-Quaternion Norm and Invertibility</em>; the nilpotents from <em>Split-Quaternion Zero Divisors</em>; the matrix model from <em>Split-Quaternion Matrix Representations</em>; the exponential and the elementary functions from <em>Split-Quaternion Elementary Functions</em>; and the convergence of power series from <em>Split-Quaternion Analysis</em>, §<em>Power Series and Analytic Functions</em>. The functions of matrices are those of <em>Holomorphic Functional Calculus</em>, the special functions of the division-algebra case those of <em>Quaternion Special Functions</em>, and of the two-dimensional hyperbolic case those of <em>Split-Complex Special Functions</em>. Nothing physical is invoked.</p>
+<h2 id="the-general-principle">The General Principle</h2>
+<p><strong>Theorem (Extension by Substitution).</strong> Let $F$ be a classical special function given by a power series</p>
+<p>$$
+F(z) = \sum_{n\geq 0} a_n z^n
+$$</p>
+<p>with real coefficients $a_n$ and radius of convergence $R$. Then the same series</p>
+<p>$$
+F(x) = \sum_{n\geq 0} a_n x^n
+$$</p>
+<p>converges absolutely for $|x| < R/\sqrt{2}$ in the Euclidean norm of the algebra, defines a function of the split-quaternion variable, and agrees with $F$ on every commutative subalgebra. If $F$ is entire, so is the extension.</p>
+<p><strong>Proof.</strong> The bound $|a_nx^n| \leq (\sqrt{2})^n |a_n|\,|x|^n$ of <em>Split-Quaternion Analysis</em>, §<em>The Metric Structure</em>, reduces the convergence to the real majorant series. $\square$</p>
+<p><strong>Theorem (The Reduction on a Plane).</strong> If $x$ lies in a commutative subalgebra $\operatorname{span}\{1,\xi\}$ with $\xi^2 = \pm1$, then</p>
+<p>$$
+F(x) = F(s + t\xi) = \tfrac12\big(F(s+t) + F(s-t)\big) + \tfrac12\big(F(s+t) - F(s-t)\big)\,\xi \quad (\xi^2=1),
+$$</p>
+<p>$$
+F(x) = \tfrac12\big(F(s+it) + F(s-it)\big) + \tfrac1{2i}\big(F(s+it) - F(s-it)\big)\,\xi \quad (\xi^2=-1),
+$$</p>
+<p>with the second formula understood through its real series. In particular, in the null coordinates $x = p\,n_+ + q\,n_-$ of the split-complex plane the value is</p>
+<p>$$
+F(x) = F(p)\, n_+ + F(q)\, n_- .
+$$</p>
+<p><strong>Proof.</strong> In the split case the subalgebra is $\mathbb{R}\times\mathbb{R}$ through the null basis, and $F$ acts on each factor; in the definite case the subalgebra is $\mathbb{C}$ and the displayed formula is the even–odd decomposition. $\square$</p>
+<p><strong>Theorem (Extension by the Matrix Model).</strong> For every function $F$ of a real $2\times2$ matrix in the sense of <em>Holomorphic Functional Calculus</em>, the function $x \mapsto \Phi^{-1}\big(F(\Phi(x))\big)$ is an extension of $F$ to the algebra, defined on the open set where the matrix function is defined; on the elements $x$ whose matrix model has two distinct real eigenvalues $\lambda_1, \lambda_2$ it is given by the interpolation formula</p>
+<p>$$
+F(\Phi(x)) = \frac{F(\lambda_1) - F(\lambda_2)}{\lambda_1 - \lambda_2}\,\Phi(x) + \frac{\lambda_1F(\lambda_2) - \lambda_2F(\lambda_1)}{\lambda_1-\lambda_2}\,\mathrm{id}.
+$$</p>
+<p><strong>Proof.</strong> The matrix functional calculus is that of <em>Holomorphic Functional Calculus</em>, and the interpolation formula is the Sylvester formula for a matrix with distinct eigenvalues. $\square$</p>
+<p><strong>Remark (The Sibling Functions).</strong> The error function and the Airy functions of <em>Quaternion Special Functions</em> and <em>Split-Complex Special Functions</em> have real power series, so they too extend by substitution; the Lambert $W$ is defined by the equation $W(x)e^{W(x)} = x$ rather than by a series and is extended through the matrix model. The reduction on a commutative subalgebra used throughout is the idempotent principle of <em>Split-Complex Special Functions</em>, §<em>The Idempotent Principle</em>, transported to the split-quaternion variable.</p>
+<p><strong>Remark (The Convention Used Here).</strong> Where a special function is given by a real power series the extension is by substitution, as in the first theorem, and no convention is needed. Where it is not, the extension used is the one of the matrix model, as in the last theorem; this is stated explicitly at each use, and it is not claimed to be the only possible extension. In particular the "hypergeometric function of a matrix argument" of random matrix theory, defined through zonal polynomials, is a different convention and is not used here.</p>
+<h2 id="the-gamma-function">The Gamma Function</h2>
+<p><strong>Definition.</strong> On the commutative subalgebras generated by $e_1$ and by $e_2$ the <strong>Gamma function</strong> is defined by the integral</p>
+<p>$$
+\Gamma(x) = \int_0^\infty t^{x-1} e^{-t}\,\mathrm{d}t ,
+$$</p>
+<p>the integral being taken in the subalgebra, and on a general element it is defined by the matrix model of the preceding section.</p>
+<p><strong>Theorem (Values and Identities).</strong> In the null basis of the split-complex plane, for $p, q > 0$,</p>
+<p>$$
+\Gamma(p\,n_+ + q\,n_-) = \Gamma(p)\,n_+ + \Gamma(q)\,n_- .
+$$</p>
+<p>For every positive real $t$ the element $t$ is central, so the scalar identities hold in the algebra:</p>
+<p>$$
+\Gamma(1) = 1, \qquad \Gamma(n+1) = n!, \qquad \Gamma(x+1) = x\,\Gamma(x) \ \text{for central } x .
+$$</p>
+<p>On the norm-one group the Gamma function of the matrix model is defined off the elements whose matrix model has a non-positive eigenvalue, and it agrees with the substitution extension on the elements of scalar square.</p>
+<p><strong>Proof.</strong> The null-basis formula follows from $t^x = t^p n_+ + t^q n_-$ and the fact that $e^{-t}$ is central; the scalar identities are the classical ones for real arguments, and the last statement is the agreement of the two extensions, which is the theorem on the reduction on a plane. $\square$</p>
+<p><strong>Remark (No Integral in the General Case).</strong> The integral definition does not extend to a general element, because $e^{-t}$ is central but $t^{x}$ is not defined for a general $x$ without a branch and a commutative subalgebra; this is the reason for the convention of the matrix model. Recorded here once and used below.</p>
+<h2 id="the-beta-function">The Beta Function</h2>
+<p><strong>Definition.</strong> On the same commutative subalgebras the <strong>Beta function</strong> is</p>
+<p>$$
+B(p,q) = \int_0^1 t^{p-1}(1-t)^{q-1}\,\mathrm{d}t ,
+$$</p>
+<p>the integral being taken in the subalgebra, and it is related to the Gamma function there by the classical identity.</p>
+<p><strong>Theorem (Reduction and the Identity).</strong> In the null basis of the split-complex plane, for positive real $p,q$,</p>
+<p>$$
+B(pn_+ + qn_-, r n_+ + s n_-) = B(p,r)\,n_+ + B(q,s)\,n_- ,
+$$</p>
+<p>and $B(x,y) = \Gamma(x)\Gamma(y)/\Gamma(x+y)$ for $x,y$ in a commutative subalgebra on which both sides are defined; for central arguments the identity holds in the algebra.</p>
+<p><strong>Proof.</strong> The binary expansion of $t^{x}$ and $(1-t)^{y}$ in the null basis is termwise, and $t$ is central, so the integral splits into the two scalar integrals; the classical identity is then applied in each component. $\square$</p>
+<h2 id="bessel-functions">Bessel Functions</h2>
+<p><strong>Definition.</strong> For integer $\nu$ the <strong>Bessel function</strong> is the entire series</p>
+<p>$$
+J_\nu(x) = \sum_{m\geq 0} \frac{(-1)^m}{m!\,\Gamma(m+\nu+1)} \Big(\frac{x}{2}\Big)^{2m+\nu},
+$$</p>
+<p>with real coefficients, extended to the algebra by substitution; for non-integer $\nu$ the same series is used on each commutative subalgebra with the corresponding branch of the power.</p>
+<p><strong>Theorem (The Reduction).</strong> On the split-complex plane, for integer $\nu$,</p>
+<p>$$
+J_\nu(p\,n_+ + q\,n_-) = J_\nu(p)\,n_+ + J_\nu(q)\,n_- .
+$$</p>
+<p>On an element $v \in V$ with $v^2 = \sigma u^2$, where $u = \sqrt{|v^2|} \geq 0$ and $\sigma = \pm1$ is the sign of the square, put $\xi = v/u$, so that $\xi^2 = \sigma$; then</p>
+<p>$$
+J_\nu(v) = \begin{cases} \xi^\nu\, I_\nu(u), & \sigma = -1 \ (\text{that is } N(v) > 0),\\ \xi^\nu\, J_\nu(u), & \sigma = +1 \ (\text{that is } N(v) < 0),\end{cases}
+$$</p>
+<p>where $I_\nu$ is the modified Bessel function, the series without the alternating sign. The ordinary and modified Bessel functions are therefore interchanged by a change of the sign of the norm, exactly as the trigonometric and hyperbolic functions are: in the elliptic direction the alternating series produces the monotone function and conversely.</p>
+<p><strong>Proof.</strong> The series has real coefficients, so the substitution theorem applies. On the split-complex plane the reduction is the null-basis theorem. On $v = u\xi$ one has $v^{2m+\nu} = u^{2m+\nu}\xi^\nu\sigma^m$, so</p>
+<p>$$
+J_\nu(u\xi) = \xi^\nu \sum_{m\geq0}\frac{(-1)^m\sigma^m}{m!\,\Gamma(m+\nu+1)}\Big(\frac{u}{2}\Big)^{2m+\nu},
+$$</p>
+<p>and the factor $(-1)^m\sigma^m$ is $1$ when $\sigma = -1$ and $(-1)^m$ when $\sigma = +1$, giving the modified and the ordinary series respectively. $\square$</p>
+<h2 id="the-hypergeometric-function">The Hypergeometric Function</h2>
+<p><strong>Definition.</strong> The <strong>hypergeometric function</strong> is the series</p>
+<p>$$
+{}_2F_1(a,b;c;x) = \sum_{n\geq 0}\frac{(a)_n(b)_n}{(c)_n}\frac{x^n}{n!},
+$$</p>
+<p>with the rising factorial $(a)_n = a(a+1)\cdots(a+n-1)$, extended to the algebra by substitution whenever $a,b,c$ are real and $c$ is not a non-positive integer, with the radius of convergence of the series.</p>
+<p><strong>Theorem (Properties).</strong> The extension satisfies the same differential equation with the algebra coefficients,</p>
+<p>$$
+x(1-x)\,{}_2F_1'' + \big(c - (a+b+1)x\big)\,{}_2F_1' - ab\,{}_2F_1 = 0,
+$$</p>
+<p>where the derivatives are taken in a commutative subalgebra, and the classical transformation and special-value formulas hold for commuting arguments. On the split-complex plane the reduction is $${}_2F_1(a,b;c;pn_+ + qn_-) = {}_2F_1(a,b;c;p)n_+ + {}_2F_1(a,b;c;q)n_-$$ whenever the two series converge.</p>
+<p><strong>Proof.</strong> The coefficients are the classical ones and commute with central elements, so the differential equation is verified series by series; the reduction is the null-basis theorem. $\square$</p>
+<p><strong>Remark (The Convention).</strong> The "hypergeometric function of a matrix argument" of random matrix theory is defined by an expansion in zonal polynomials and is not the function of this section; the two agree only on scalar arguments. This is stated so that no reader identifies the two conventions.</p>
+<h2 id="orthogonal-polynomials">Orthogonal Polynomials</h2>
+<p><strong>Theorem (Polynomials Extend by Substitution).</strong> Let $(P_n)$ be a family of polynomials with real coefficients, such as the Hermite, Legendre or Chebyshev polynomials, defined by a generating function with real coefficients or by a three-term recurrence with real coefficients. Then each $P_n$ extends to the algebra by substitution and satisfies the same recurrence there; the family is determined by the first two terms and the recurrence, and on the split-complex plane the reduction is termwise, $P_n(pn_+ + qn_-) = P_n(p)n_+ + P_n(q)n_-$.</p>
+<p><strong>Proof.</strong> A real polynomial is a finite real combination of powers, so substitution applies; the three-term recurrence has real coefficients and therefore holds after substitution; the reduction is the null-basis theorem. $\square$</p>
+<p><strong>Corollary (No Orthogonality Without a Definite Form).</strong> The orthogonality relations of the classical polynomials are statements about a positive measure on the line; they do not extend to the algebra, because the algebra has no definite quadratic form and no positive measure supported on the algebra itself. The orthogonality that survives is the one on the definite subalgebras, that is on the plane $\operatorname{span}\{1,e_1\}$ with the definite form, and in the analysis the orthogonality with respect to the invariant measure on the hyperboloids of <em>Split-Quaternion Geometry</em>.</p>
+<p><strong>Proof.</strong> Orthogonality requires a positive-definite inner product and a measure; the algebra has neither in the general case, and the definite plane and the hyperboloid measures are the two cases where both are available. $\square$</p>
+<h2 id="the-special-functions-from-the-matrix-model">The Special Functions from the Matrix Model</h2>
+<p><strong>Theorem (Functions of the Matrix Model).</strong> Every function of a real $2\times2$ matrix that is defined by the matrix functional calculus gives a function of the split-quaternion variable; the value depends only on the eigenvalues and, in the non-derogatory case, on the interpolation formula of the first section. In particular the square root, the logarithm, the power and the matrix Gamma function are defined on the open sets where the corresponding matrix function is defined, and they agree with the extensions by substitution where both are defined.</p>
+<p><strong>Proof.</strong> The matrix functional calculus and its uniqueness are those of <em>Holomorphic Functional Calculus</em>; the interpolation formula was displayed in the first section. $\square$</p>
+<p><strong>Corollary (The Determinant of a Function).</strong> For a function $F$ of the matrix model, $\det F(\Phi(x)) = F(\lambda_1)F(\lambda_2)$, where $\lambda_1,\lambda_2$ are the eigenvalues of $\Phi(x)$; hence the determinant of a function can vanish even where the function is defined, and the norm of an algebra-valued function is generally not a function of the norm of its argument. The functions of the algebra for which this happens are exactly the ones whose values at the two eigenvalues have a product that vanishes.</p>
+<p><strong>Proof.</strong> The determinant is multiplicative on the eigenvalues; the vanishing statement is then immediate. $\square$</p>
+<h2 id="the-special-functions-from-the-analysis">The Special Functions from the Analysis</h2>
+<p><strong>Theorem (Functions Arising from the Analysis).</strong> The analysis of the system produces special functions that are not obtained by substitution from a real series:</p>
+<ol>
+<li>the kernel $E_D$ of <em>Split-Quaternion Integration</em>, the fundamental solution of the vector operator, a distribution supported on the light cone and homogeneous of degree $-2$;</li>
+<li>the Poisson kernel of the hyperbolic plane, $P(w,\zeta) = \frac{1-|w|^2}{|w-\zeta|^2}$, a function of the two variables of the disc model of <em>Split-Quaternions and Hyperbolic Geometry</em>;</li>
+<li>the Legendre functions of the hyperboloid, which are the spherical functions of the pair $\big(\mathrm{SO}^{+}(2,1), SO(2)\big)$ and arise as the eigenfunctions of the invariant Laplacian on the sheets;</li>
+<li>the characters of the norm-one group, which are the building blocks of the harmonic analysis of <em>Split-Quaternion Harmonic Analysis</em>.</li>
+</ol>
+<p><strong>Proof.</strong> The first is the theorem on the fundamental solution of the vector operator in <em>Split-Quaternion Integration</em>; the second is the standard Poisson kernel of the disc, whose invariance is the equivariance of <em>Split-Quaternions and Hyperbolic Geometry</em>; the third and fourth are the standard harmonic analysis of the symmetric space $\mathrm{SO}^{+}(2,1)/SO(2)$ and of its group, treated in <em>Harmonic Analysis on Groups</em>. $\square$</p>
+<p><strong>Remark (The General Principle).</strong> The special functions that extend to the whole algebra by substitution are those given by real power series; the functions that live only on a subalgebra are those defined by an integral or a branch; and the functions that arise from the analysis live on the homogeneous spaces of the isometry group. These three classes are different, and the article has kept them apart.</p>
+<h2 id="summary">Summary</h2>
+<p>A special function given by a real power series extends to the split-quaternion algebra by substitution, converges on the ball of the rescaled radius, and on a commutative subalgebra reduces to its values at the two components of the element in the null basis; on an element with scalar square the reduction is by the even and odd parts. The Gamma function is defined by its integral on the commutative subalgebras, where it reduces to the scalar Gamma function in each null component, and by the matrix model elsewhere; the Bessel functions and the hypergeometric function are defined by their real series and reduce on the subalgebras; the orthogonal polynomials extend by substitution, but their orthogonality does not, because the algebra has no definite form and no positive measure.</p>
+<p>The matrix model gives a second, general extension, valid for every function of a matrix, computed from the eigenvalues and the interpolation formula, and it agrees with the substitution extension where both are defined. The special functions that arise from the analysis are of a third kind: the fundamental-solution kernel supported on the light cone, the Poisson kernel of the hyperbolic plane, the Legendre functions of the hyperboloid and the characters of the norm-one group. Every convention used in this article is stated at the point of use, and the "matrix-argument" hypergeometric function of random matrix theory is explicitly not the one used here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>substitution extension</td>
+<td>$F(x) = \sum a_nx^n$ for real $a_n$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>null-basis reduction</td>
+<td>$F(pn_+ + qn_-) = F(p)n_+ + F(q)n_-$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>the Gamma function, by integral on the subalgebras and by the matrix model generally</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$J_\nu$</td>
+<td>the Bessel function, an entire series for integer $\nu$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>${}_2F_1(a,b;c;x)$</td>
+<td>the hypergeometric function, by its series</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>Sylvester interpolation</td>
+<td>the value of a function of a $2\times2$ matrix with distinct eigenvalues</td>
+<td><em>Holomorphic Functional Calculus</em></td>
+</tr>
+<tr>
+<td>$E_D$</td>
+<td>the fundamental solution, a function of the analysis</td>
+<td><em>Split-Quaternion Integration</em></td>
+</tr>
+<tr>
+<td>Poisson kernel</td>
+<td>$\frac{1-|w|^2}{|w-\zeta|^2}$ on the disc</td>
+<td><em>Split-Quaternions and Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>Legendre functions</td>
+<td>the spherical functions of the hyperboloid</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>characters</td>
+<td>the building blocks of the harmonic analysis</td>
+<td><em>Split-Quaternion Harmonic Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicholas J. Higham, <em>Functions of Matrices: Theory and Computation</em> (SIAM, 2008), for the matrix exponential, logarithm, power and Gamma functions and the interpolation formula.</li>
+<li>NIST Digital Library of Mathematical Functions, for the classical definitions, continuations and transformations of the Gamma, Bessel and hypergeometric functions.</li>
+<li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em> (Springer, 1983), for the invariant Laplacian on the hyperbolic plane, its eigenfunctions and the Poisson kernel.</li>
+<li>Sigurdur Helgason, <em>Groups and Geometric Analysis</em> (American Mathematical Society, 2000), for the spherical functions of the symmetric spaces of the Lorentz groups and the harmonic analysis of the associated groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

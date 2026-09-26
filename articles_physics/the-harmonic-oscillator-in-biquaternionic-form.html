@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Harmonic Oscillator in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-harmonic-oscillator-in-biquaternionic-form"><strong>The Harmonic Oscillator in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The harmonic oscillator is the simplest quantum system with an infinite spectrum, and its algebra is completely explicit. A single mode is one complex degree of freedom, created and destroyed by operators $\hat a,\hat a^\dagger$ with $[\hat a,\hat a^\dagger]=1$; the Hamiltonian is $\hat H=\hbar\omega(\hat a^\dagger\hat a+\tfrac12)$, and the spectrum is $(n+\tfrac12)\hbar\omega$. The single complex degree of freedom is two real degrees of freedom, the two quadratures; the phase is a $U(1)$, and the quadratic symmetries are the squeezing transformations forming the symplectic group $Sp(2,\mathbb{R})$.</p>
+<p>The biquaternion framework is built by complexifying the quaternions, $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and the complexification splits the algebra into the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$. Because the oscillator's single complex degree of freedom is two real degrees of freedom, and because the framework's central structural device is a complexification with two sectors, there is a natural claim to test rather than assume:</p>
+<blockquote>
+<p><strong>Claim (two-sector oscillator).</strong> The complexification that defines $\mathbb{B}$ should make $\mathbb{M}_-$ and $\mathbb{M}_+$ behave as two oscillators, with the raising and lowering structure and any squeeze-like mixing living between them.</p>
+</blockquote>
+<p>This article tests the claim on cases chosen after the claim was formulated, and reports the outcome. The outcome is largely negative, and the negative part is the finding. Three statements summarise it.</p>
+<ol>
+<li><strong>The two real degrees of freedom are not in the two sectors.</strong> They are the two quadratures of the mode, both of which are observables, and observables are elements of $\mathbb{M}_+$. They do not occupy the two sectors separately.</li>
+<li><strong>The commutation relation cannot be realised in $\mathbb{M}_+$.</strong> The relation $[\tilde X,\tilde P]=i\hbar\,e_0$ has no solution with $\tilde X,\tilde P\in\mathbb{M}_+$: the commutator of two Hermitian biquaternions is a pure real quaternion and has no scalar part, while $i\hbar e_0$ is purely scalar. Equivalently, the trace of the left side vanishes while the trace of the right side is $2i\hbar$. There is therefore no oscillator "in" $\mathbb{M}_+$, and consequently no second oscillator in $\mathbb{M}_-$ that the complexification would pair with it.</li>
+<li><strong>What the algebra carries is the two-level truncation.</strong> The only oscillator-like structure that fits in the finite-dimensional algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the truncation of the mode to its two lowest levels. That truncation is exactly the two-state system of the parent articles, and in it the oscillator's characteristic quadratic operation, squeezing, vanishes identically.</li>
+</ol>
+<p>What survives is a precise account of where the sectors do enter, and it is not nothing. The raising and lowering operators are exactly the elements that straddle $\mathbb{M}_+$ and $\mathbb{M}_-$; the oscillator's phase is generated by the sector-exchanging element $ie_0$; and the oscillator's squeezing is a Lorentz boost. These are the places where the algebra adds structure. Everywhere else the oscillator is the familiar one, and the article says so explicitly.</p>
+<p>The conventions are those of the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ consists of $iq_0e_0+\mathbf q$ with $q_0\in\mathbb{R}$ and $\mathbf q$ real, and the Hermitian subspace $\mathbb{M}_+$ of $h_0e_0+i\mathbf h$ with $h_0\in\mathbb{R}$ and $\mathbf h$ real. They are complementary, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, and are exchanged by the scalar imaginary: $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace satisfies $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, and the isomorphism used below is $e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$, so that $ie_k\mapsto\sigma_k$.</p>
+<h2 id="the-oscillator-algebra">The Oscillator Algebra</h2>
+<p>Fix the standard oscillator objects once; the structural question is where they can live.</p>
+<p>In units with $\hbar=1$, the two quadratures</p>
+<p>$$
+\tilde X=\frac{\tilde a+\tilde a^\dagger}{\sqrt2},\qquad
+\tilde P=\frac{\tilde a-\tilde a^\dagger}{i\sqrt2},
+$$</p>
+<p>are Hermitian, and $[\tilde X,\tilde P]=i e_0$. The energy is $\tilde H=\omega(\tilde a^\dagger\tilde a+\tfrac12)$; the (shifted) number operator $\tilde N+\tfrac12$ counts the excitations. The quadratic combinations</p>
+<p>$$
+\tilde K_1=\tfrac12(\tilde X^2-\tilde P^2),\qquad
+\tilde K_2=\tfrac12(\tilde X\tilde P+\tilde P\tilde X),\qquad
+\tilde K_3=\tilde N+\tfrac12
+$$</p>
+<p>are the generators of the oscillator's dynamical algebra: $\tilde K_3$ generates the phase $U(1)$, and $\tilde K_1,\tilde K_2$ generate the two squeezes. They close into an $su(1,1)$ algebra; the representative relation, which we use below, is</p>
+<p>$$
+[\tilde K_1,\tilde K_2]=2i\,\tilde K_3 .
+$$</p>
+<p>Each $\tilde K_j$ is Hermitian; the bracket is $i$ times a Hermitian element, hence anti-Hermitian. This is the algebra whose placement in $\mathbb{B}$ we now examine.</p>
+<h2 id="the-two-sectors-are-not-the-two-quadratures">The Two Sectors Are Not the Two Quadratures</h2>
+<p>The claim to test begins from the observation that one complex degree of freedom is two real degrees of freedom. In $\mathbb{B}$ there is indeed a canonical decomposition of every element into two parts, and it is worth stating exactly what the two parts are.</p>
+<p>Every $\tilde A\in\mathbb{B}$ decomposes uniquely as</p>
+<p>$$
+\tilde A=\tilde A_{H}+\tilde A_{X},\qquad
+\tilde A_{H}=\tfrac12(\tilde A+\tilde A^\dagger)\in\mathbb{M}_+,\qquad
+\tilde A_{X}=\tfrac12(\tilde A-\tilde A^\dagger)\in\mathbb{M}_- .
+$$</p>
+<p>This is the Hermitian/anti-Hermitian decomposition, and it is the matrix decomposition of an operator into its self-adjoint and skew-adjoint parts. It is also the operation performed by the complex structure: since $i\mathbb{M}_\pm=\mathbb{M}_\mp$, multiplication by $i$ is exactly the map that exchanges the two sectors. The complexification that defines $\mathbb{B}$ and the two-sector decomposition are therefore the same structure.</p>
+<p>Now consider the complex amplitude of the mode. Writing $\tilde a=\tilde X+i\tilde P$ with $\tilde X,\tilde P$ Hermitian,</p>
+<p>$$
+\tilde a_{H}=\tilde X\in\mathbb{M}_+,\qquad
+\tilde a_{X}=i\tilde P\in\mathbb{M}_- .
+$$</p>
+<p>So the Hermitian part of the amplitude is one quadrature and the anti-Hermitian part is $i$ times the other. This is a genuine two-sector statement, and it is the correct form of the intuition: the two pieces of the complex amplitude sit one in each sector.</p>
+<p>But it is not the statement that the two <em>quadratures</em> sit one in each sector. In any representation inside $\mathbb{B}$, each quadrature would be an observable and observables are Hermitian by definition, so both would lie in $\mathbb{M}_+$. The two sectors separate the observable content of the amplitude from its generator content, not its two real degrees of freedom. A single complex degree of freedom is two real degrees of freedom, and both of those real degrees of freedom are on the $\mathbb{M}_+$ side of the ledger; what is on the $\mathbb{M}_-$ side is the same two degrees of freedom multiplied by $i$.</p>
+<p>So the naive two-sector reading already fails at the first step, in a way that is easy to state and easy to miss. It is not that the algebra lacks a two-piece decomposition; it is that the two pieces are not the two oscillators.</p>
+<h2 id="the-commutation-relation-is-not-in-math74">The Commutation Relation Is Not in $\mathbb{M}_+$</h2>
+<p>The decisive test is the canonical commutation relation, because it is the relation that makes a pair of operators an oscillator pair.</p>
+<p>Let $\tilde X=x_0e_0+i\mathbf x$ and $\tilde P=p_0e_0+i\mathbf p$ be two elements of $\mathbb{M}_+$, with $\mathbf x,\mathbf p$ real pure quaternions. The scalar parts $x_0e_0$ and $p_0e_0$ are central and commute, so they contribute nothing to the commutator. A direct computation gives</p>
+<p>$$
+\tilde X\tilde P=(x_0p_0+\mathbf x\cdot\mathbf p)e_0+i(x_0\mathbf p+p_0\mathbf x)-\mathbf x\times\mathbf p,
+$$</p>
+<p>$$
+\tilde P\tilde X=(x_0p_0+\mathbf x\cdot\mathbf p)e_0+i(x_0\mathbf p+p_0\mathbf x)+\mathbf x\times\mathbf p,
+$$</p>
+<p>and hence</p>
+<p>$$
+[\tilde X,\tilde P]=-2\,\mathbf x\times\mathbf p .
+$$</p>
+<p>This is the commutator formula of the parent article, and its content here is the important part: <strong>the scalar part of the commutator of two Hermitian biquaternions vanishes identically</strong>,</p>
+<p>$$
+\mathrm{Sc}\,[\tilde X,\tilde P]=0 .
+$$</p>
+<p>The commutator of two observables is a real pure quaternion; it lies in the real vector part $\mathbb{H}_\mathbb{B}\cap\mathbb{M}_-=\mathrm{span}(e_1,e_2,e_3)$, the space-like part of the material sector. It never reaches the scalar direction $ie_0$ of $\mathbb{M}_-$.</p>
+<p>The canonical relation requires precisely that direction:</p>
+<p>$$
+[\tilde X,\tilde P]=i\hbar\,e_0,\qquad \mathrm{Sc}(i\hbar e_0)=i\hbar\neq0 .
+$$</p>
+<p>The two sides lie in complementary summands of $\mathbb{M}_-=\mathrm{span}(ie_0)\oplus\mathrm{span}(e_1,e_2,e_3)$: the right side is purely scalar, the left side purely vector. The relation can hold only if $\hbar=0$. There is no Heisenberg pair in $\mathbb{M}_+$.</p>
+<p>The same conclusion follows without computing the bracket, from the trace alone. The trace of a commutator vanishes, $\mathrm{Tr}([\tilde X,\tilde P])=0$, while $\mathrm{Tr}(i\hbar e_0)=2i\hbar$. So $\hbar=0$. This is the familiar statement that the Heisenberg algebra has no finite-dimensional representation, in the notation of the framework; it does not depend on $\mathbb{M}_+$ at all.</p>
+<p>We checked the general formula on cases chosen independently of the argument that suggested it. For the transparent pair $\tilde X=ie_1$, $\tilde P=ie_2$ the commutator is $-2e_3$. For a pair with nonzero scalar parts, $\tilde X=2e_0+3ie_1-ie_2$ and $\tilde P=-e_0+2ie_2+4ie_3$, the central parts drop out and the commutator is $8e_1+24e_2-12e_3$: again a pure real vector, scalar part zero. In every case the scalar part vanishes, as the general formula says.</p>
+<p>The failure is structural, not accidental: the bracket of two observables is space-like in $\mathbb{M}_-$, and the observables generate the space-like directions of the material sector, never its time-like direction. The oscillator's canonical pair would require the time-like direction.</p>
+<h2 id="what-the-algebra-does-carry-the-two-level-truncation">What the Algebra Does Carry: The Two-Level Truncation</h2>
+<p>A single mode has an infinite-dimensional state space, and $\mathbb{B}\cong M_2(\mathbb{C})$ is finite-dimensional. So no full oscillator is represented in the algebra, and the question becomes which part of the oscillator is.</p>
+<p>The part that is, is the two-level truncation. Restrict the mode to the span of its two lowest levels, and replace the ladder operators by their finite-dimensional images</p>
+<p>$$
+\tilde a_{\mathrm{tr}}=|0\rangle\langle1|=\tfrac12(ie_1-e_2),\qquad
+\tilde a_{\mathrm{tr}}^\dagger=|1\rangle\langle0|=\tfrac12(ie_1+e_2),\qquad
+\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=|1\rangle\langle1|=\tfrac12(e_0-ie_3).
+$$</p>
+<p>These are the ladder operators and the lower-state projector of the parent articles: the truncation is exactly the two-state system, as expected from $\mathbb{B}\cong M_2(\mathbb{C})$.</p>
+<p>The truncation is not faithful to the oscillator, and the failures are diagnostic. The commutator is</p>
+<p>$$
+[\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger]=\sigma_3=ie_3\neq e_0,
+$$</p>
+<p>so the canonical relation fails by the boundary terms of the truncation. The number operator is an idempotent, not an operator with an integer spectrum. And the squeeze generator,</p>
+<p>$$
+\tilde a_{\mathrm{tr}}^{\dagger 2}-\tilde a_{\mathrm{tr}}^2=0,
+$$</p>
+<p>vanishes identically, because a two-level truncation cannot represent a two-photon process. So the one operation that most clearly distinguishes an oscillator from a two-state system, squeezing, is invisible in the biquaternion truncation. Whatever "the biquaternion form of the harmonic oscillator" means, it cannot mean two oscillators in the two sectors; at two levels, it cannot mean even one squeezed oscillator.</p>
+<h2 id="raising-and-lowering-between-the-sectors">Raising and Lowering Between the Sectors</h2>
+<p>If the sectors do not carry two oscillators, they do carry the oscillator's raising and lowering structure in a precise sense. Consider the truncation ladder operators above. Their Hermitian and anti-Hermitian parts are</p>
+<p>$$
+\tilde a_{\mathrm{tr}}=\underbrace{\tfrac12 ie_1}_{\in\,\mathbb{M}_+}\;\underbrace{-\tfrac12 e_2}_{\in\,\mathbb{M}_-},\qquad
+\tilde a_{\mathrm{tr}}^\dagger=\underbrace{\tfrac12 ie_1}_{\in\,\mathbb{M}_+}\;\underbrace{+\tfrac12 e_2}_{\in\,\mathbb{M}_-}.
+$$</p>
+<p>Each of these ladder operators is the sum of one $\mathbb{M}_+$ element and one $\mathbb{M}_-$ element of equal magnitude, and conjugation flips the sign of the $\mathbb{M}_-$ part while leaving the $\mathbb{M}_+$ part fixed. The general complex amplitude has the same shape, though not necessarily the same weights: $\tilde a=\tilde X+i\tilde P$ has $\mathbb{M}_+$ part $\tilde X$ and $\mathbb{M}_-$ part $i\tilde P$, and $\tilde a^\dagger=\tilde X-i\tilde P$ differs from $\tilde a$ only in the sign of the $\mathbb{M}_-$ part. Raising and lowering operators are therefore, exactly, the elements with both sector components nonzero: they sit off the sector axis, and the ladder sits at equal distance from both sectors. This is the precise version of the claim that the raising and lowering structure "lives between" the sectors, and it is correct.</p>
+<p>Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\tilde a_{\mathrm{tr}}^2=0$ and $N(\tilde a_{\mathrm{tr}})=\tilde a_{\mathrm{tr}}\bar{\tilde a}_{\mathrm{tr}}=0$, so they lie on the norm-form cone; this is the same zero-divisor cone that is the light cone of $\mathbb{M}_-$ and the boundary of the state space in $\mathbb{M}_+$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{M}_-$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde P$, and the factor of $i$ that turns $\tilde P$ into a generator is the same factor that exchanges the sectors.</p>
+<h2 id="the-phase-is-the-sector-exchange">The Phase Is the Sector Exchange</h2>
+<p>The oscillator's phase, the $U(1)$ that multiplies the amplitude by $e^{-i\theta}$, is generated by the number operator. In the truncation, $[\tilde N_{\mathrm{tr}},\tilde a_{\mathrm{tr}}]=-\tilde a_{\mathrm{tr}}$, so the phase acts as $\tilde a_{\mathrm{tr}}\mapsto e^{-i\theta}\tilde a_{\mathrm{tr}}$. The generator of the phase is $i\tilde N_{\mathrm{tr}}$, which is $i$ times an $\mathbb{M}_+$ element and hence lies in $\mathbb{M}_-$; the global phase is generated by $ie_0$, also in $\mathbb{M}_-$.</p>
+<p>The phase acts on the two-sector decomposition in a simple way. For $\tilde a=\tilde X+i\tilde P$,</p>
+<p>$$
+e^{-i\theta}\tilde a
+=(\cos\theta\,\tilde X+\sin\theta\,\tilde P)+i(-\sin\theta\,\tilde X+\cos\theta\,\tilde P),
+$$</p>
+<p>so the phase rotates the $\mathbb{M}_+$ quadrature $\tilde X$ into the $\mathbb{M}_-$ content of the amplitude and back. The oscillator's phase is literally the rotation that mixes the two sectors. This is a genuine addition of the framework: the "complex structure" that gives the oscillator its complex amplitude is identified with the operation that exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and the oscillator's phase is the one-parameter group it generates.</p>
+<p>The connection to the dynamics is direct. The parent article's evolution $\tilde U(t)=e^{-ih_0t/\hbar}(\cos(|\mathbf h|t/\hbar)e_0+\sin(|\mathbf h|t/\hbar)\hat{\mathbf h})$ carries the trace part $h_0$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\hbar\omega$, twice the zero-point energy $\tfrac12\hbar\omega$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.</p>
+<h2 id="squeezing-is-a-boost">Squeezing Is a Boost</h2>
+<p>The oscillator's squeezes are where the algebra adds the most. In the standard theory the quadratic generators $\tilde K_1,\tilde K_2,\tilde K_3$ close into $su(1,1)$ with a structure constant equal to $i$:</p>
+<p>$$
+[\tilde K_1,\tilde K_2]=2i\,\tilde K_3 .
+$$</p>
+<p>Both $\tilde K_1$ and $\tilde K_2$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.</p>
+<p>The generator content is sharper still. A squeeze, $\tilde X\mapsto\tilde X\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde X\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde X\pm\tilde P$ by $e^{\mp r}$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde\Lambda=\cosh(\psi/2)\,e_0+i\sinh(\psi/2)e_1$ lies in $\mathbb{M}_+$ and acts on $\tilde X_{4}=ict\,e_0+x\,e_1\in\mathbb{M}_-$ by rotor conjugation $\tilde X_4\mapsto\tilde\Lambda\tilde X_4\tilde\Lambda^\dagger$; computing the result gives</p>
+<p>$$
+ct'=\cosh\psi\,ct-\sinh\psi\,x,\qquad x'=\cosh\psi\,x-\sinh\psi\,ct,
+$$</p>
+<p>so the null combinations scale as $ct\pm x\mapsto e^{\mp\psi}(ct\pm x)$. Identifying the oscillator's phase plane with the $(ct,x)$ plane of $\mathbb{M}_-$ by $X\pm P\leftrightarrow ct\pm x$ makes the squeeze a boost, term for term.</p>
+<p>At the group level the identification is the standard one: the oscillator's dynamical group $Sp(2,\mathbb{R})$ is isomorphic to $SU(1,1)$, which is the subgroup of $SL(2,\mathbb{C})$ fixing a space-like direction, equivalently the double cover of the $SO(1,2)$ subgroup of the Lorentz group. Its compact $U(1)$ is the phase; its two non-compact directions are the squeezes, realized as boosts. So the framework supplies a Lorentzian reading of squeezing: the phase is the compact rotation and the squeezes are the non-compact boosts in the same $su(1,1)$.</p>
+<p>Two cautions belong with this result. First, the boost acts on $\mathbb{M}_-$, the space of kinematic four-vectors, whereas the oscillator's quadratures are observables in $\mathbb{M}_+$; identifying the oscillator phase plane with a plane of $\mathbb{M}_-$ is an additional step, a statement about the classical phase space and its symmetries rather than about a second quantum oscillator. Second, we verified the boost generator explicitly and take the remaining generators from the standard isomorphism; the explicit computation is the one that could have failed, and it did not.</p>
+<h2 id="what-is-structural-and-what-is-familiar">What Is Structural and What Is Familiar</h2>
+<p>The exercise settles the two-sector claim and separates what the algebra adds from what it merely restates.</p>
+<p><strong>Familiar, rewritten.</strong> The oscillator's ladder, quadratures, number operator, and energy are the standard ones. The finite-dimensional part that lives in $\mathbb{B}$ is the two-level truncation, which is the two-state system of the parent articles; its dynamics is the standard unitary precession, its Born rule is the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, and its canonical commutator fails by boundary terms as it does in any finite truncation. None of this is new.</p>
+<p><strong>Structurally new or newly visible.</strong></p>
+<ol>
+<li><strong>The two sectors are not the two oscillators.</strong> They are the Hermitian and anti-Hermitian parts of one complex operator. Both quadratures are observables in $\mathbb{M}_+$; the $\mathbb{M}_-$ partner of a quadrature is $i$ times it, a generator rather than a second degree of freedom.</li>
+<li><strong>The oscillator cannot be placed in $\mathbb{M}_+$.</strong> The commutator of two observables is a real vector and has no scalar part, so the canonical relation $[\tilde X,\tilde P]=i\hbar e_0$ has no solution in $\mathbb{M}_+$ — as the vanishing trace of a commutator already shows. There is no second oscillator to place in $\mathbb{M}_-$.</li>
+<li><strong>Raising and lowering straddle the sectors.</strong> A ladder operator has one nonzero $\mathbb{M}_+$ component and one nonzero $\mathbb{M}_-$ component, and conjugation flips the sign of the $\mathbb{M}_-$ part. This is the correct surviving form of "the raising structure lives between the sectors".</li>
+<li><strong>The phase is the sector exchange.</strong> The complex structure $i$ swaps $\mathbb{M}_+$ and $\mathbb{M}_-$; the oscillator's phase is the one-parameter group it generates, and it rotates the amplitude's $\mathbb{M}_+$ part into its $\mathbb{M}_-$ part.</li>
+<li><strong>Squeezing is a boost.</strong> The oscillator's $su(1,1)$ has generators in $\mathbb{M}_+$ and brackets in $\mathbb{M}_-$, and its non-compact directions are the boosts of the space-like stabilizer of $SL(2,\mathbb{C})$. The one operation that the finite-dimensional algebra cannot exhibit, squeezing, is the operation the algebra gives its cleanest relativistic reading to.</li>
+</ol>
+<p>The title of the article promises a biquaternion form of the oscillator. What the algebra contains is a biquaternion form of the two-level truncation, together with a structural account of the two sectors that a full oscillator would have to respect; a genuine mode, with its infinite ladder and its squeezing, would require an infinite-dimensional module, and $\mathbb{B}$ does not supply one.</p>
+<h2 id="summary">Summary</h2>
+<p>The claim that the complexification defining $\mathbb{B}$ makes the material and informational sectors behave as two oscillators is not realised. A single mode's two real degrees of freedom are its two quadratures, both observables in $\mathbb{M}_+$, not one per sector. The canonical relation $[\tilde X,\tilde P]=i\hbar e_0$ has no solution in $\mathbb{M}_+$, since the commutator of two Hermitian biquaternions is a real pure quaternion with vanishing scalar part (equivalently, its trace vanishes, while $\mathrm{Tr}(i\hbar e_0)=2i\hbar$). What the finite-dimensional algebra carries is the two-level truncation of the oscillator, which is the two-state system of the parent articles and in which the canonical commutator fails by boundary terms and the squeeze generator vanishes.</p>
+<p>The sectors do enter the oscillator, in four specific and verifiable ways. The complex structure $i$ exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, so the decomposition of a complex amplitude into Hermitian and anti-Hermitian parts is a two-sector decomposition, and it is the same thing as the complexification. Raising and lowering operators are the elements with both sector components nonzero, and conjugation flips the sign of the $\mathbb{M}_-$ part. The oscillator's phase is generated by $ie_0$ and rotates the amplitude's $\mathbb{M}_+$ content into its $\mathbb{M}_-$ content. And the oscillator's squeezing is a Lorentz boost: the $su(1,1)$ of the phase and the squeezes has its generators in $\mathbb{M}_+$ and its brackets in $\mathbb{M}_-$, and its non-compact part is the space-like stabilizer of $SL(2,\mathbb{C})$, with a boost scaling the null combinations $ct\pm x$ exactly as a squeeze scales $X\pm P$.</p>
+<p>The two-sector reading of the oscillator is therefore formal, not a pair of oscillators: observables and generators are complementary subspaces, and the complex structure that pairs them is the oscillator's phase, not a second ladder.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0=1,e_1,e_2,e_3$</td>
+<td>Quaternion basis, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace (material): $iq_0e_0+\mathbf q$, $\mathbf q$ real</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (informational): $h_0e_0+i\mathbf h$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_\mathbb{B}$</td>
+<td>Real quaternion subspace</td>
+</tr>
+<tr>
+<td>$\tilde X,\tilde P$</td>
+<td>Quadratures, Hermitian elements of $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\tilde a,\tilde a^\dagger$</td>
+<td>Ladder operators, elements straddling $\mathbb{M}_+\oplus\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$\tilde N=\tilde a^\dagger\tilde a$</td>
+<td>Number operator</td>
+</tr>
+<tr>
+<td>$\tilde K_1,\tilde K_2,\tilde K_3$</td>
+<td>Quadratic generators (squeezes and phase), $[\tilde K_1,\tilde K_2]=2i\tilde K_3$</td>
+</tr>
+<tr>
+<td>$\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$</td>
+<td>Truncated lowering operator</td>
+</tr>
+<tr>
+<td>$\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$</td>
+<td>Truncated number operator (idempotent)</td>
+</tr>
+<tr>
+<td>$\tilde\Lambda=\cosh\frac\psi2+i\sinh\frac\psi2\,\hat{\mathbf u}$</td>
+<td>Boost rotor in $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\tilde P_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$</td>
+<td>Idempotent (pure state)</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
+<td>Trace formula (Born rule)</td>
+</tr>
+<tr>
+<td>$i\mathbb{M}_\pm=\mathbb{M}_\mp$</td>
+<td>Sector exchange by the scalar imaginary</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford, 1930), for the ladder-operator treatment of the oscillator.</li>
+<li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the oscillator algebra, the quadratures, and the two-level truncation.</li>
+<li>Claude Cohen-Tannoudji, Bernard Diu, and Frank Laloë, <em>Quantum Mechanics</em> (Wiley, 1977), for the oscillator and its coherent and squeezed states.</li>
+<li>D. F. Walls and G. J. Milburn, <em>Quantum Optics</em> (Springer, 2008), for squeezing, the metaplectic group, and the $su(1,1)$ algebra.</li>
+<li>Asher Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for the oscillator as a two-state limit and the limits of that limit.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra treatment of boosts and rotors.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ and the fixed-point subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

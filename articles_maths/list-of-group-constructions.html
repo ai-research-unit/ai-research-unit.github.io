@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Group Constructions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-group-constructions"><strong>List of Group Constructions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the constructions by which the corpus builds a group from smaller groups: the direct products and direct sums, the semidirect and wreath products, the extensions, the free products, the free products with amalgamation, the HNN extensions and the quotients by normal subgroups. For each construction the list records what it preserves — whether the factors remain as subgroups, whether the result is finite when the factors are, whether the factors commute — and the article that introduces it.</p>
+<p>Every entry points to the article that introduces the construction. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being a construction that fails to have a property its neighbour has, with the failure named and the article that records it.</p>
+<h2 id="direct-products-and-direct-sums">Direct Products and Direct Sums</h2>
+<p>The <strong>direct product</strong> of a family of groups is the group of functions into the family with pointwise multiplication; the <strong>direct sum</strong> is the subgroup of finitely supported functions, and for finitely many factors the two agree. The product is the categorical product with its projections, the sum the coproduct with its injections, and a group is the <strong>internal direct product</strong> of two subgroups when they commute and generate it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it preserves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct product $\prod_i G_i$</td>
+<td>the projections; the factors embed and commute elementwise</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Direct sum $\bigoplus_i G_i$</td>
+<td>the injections; the finitely supported subgroup of the product</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Direct power $G^I$</td>
+<td>the product of $|I|$ copies of one group</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Internal direct product</td>
+<td>two commuting subgroups generating the group</td>
+<td><em>Groups</em></td>
+</tr>
+<tr>
+<td>Direct product of finitely many factors</td>
+<td>finite when the factors are finite, of order the product of the orders</td>
+<td><em>Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: $S_3 \times \mathbb{Z}/2\mathbb{Z}$</td>
+<td>the direct product is not the semidirect product: the factors commute, and $S_3 \times \mathbb{Z}/2\mathbb{Z}$ has no normal $S_3$ complement</td>
+<td><em>Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="semidirect-and-wreath-products">Semidirect and Wreath Products</h2>
+<p>The <strong>semidirect product</strong> $N \rtimes_\varphi H$ is built from a homomorphism $\varphi : H \to \operatorname{Aut}(N)$, so that $H$ acts on $N$ and the product law is twisted by $\varphi$; it is the split extension of $H$ by $N$. The <strong>wreath product</strong> $A \wr H$ is the semidirect product of a direct sum of copies of $A$ indexed by $H$ with $H$ acting by permutation of the summands.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it preserves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Semidirect product $N \rtimes_\varphi H$</td>
+<td>both factors as subgroups; $N$ normal, $H$ a complement</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Split extension $1 \to N \to G \to H \to 1$ with section $s$</td>
+<td>the short exact sequence splits; $G$ is a semidirect product</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Dihedral group as $C_n \rtimes C_2$</td>
+<td>the reflection action on the rotation group</td>
+<td><em>Finite Groups and Symmetry</em></td>
+</tr>
+<tr>
+<td>Affine group $\operatorname{Aff}(V) = V \rtimes GL(V)$</td>
+<td>the translations normal, the linear group a complement</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>Wreath product $A \wr H = A^{(H)} \rtimes H$</td>
+<td>the base group $A^{(H)}$ normal, $H$ permuting coordinates</td>
+<td><em>Infinite Groups</em></td>
+</tr>
+<tr>
+<td>Lamplighter group $(\mathbb{Z}/2\mathbb{Z}) \wr \mathbb{Z}$</td>
+<td>a finitely generated metabelian group that is not Noetherian</td>
+<td><em>Infinite Groups</em></td>
+</tr>
+<tr>
+<td>Hyperoctahedral group $W(B_n) = S_n \ltimes (\mathbb{Z}/2\mathbb{Z})^n$</td>
+<td>a wreath product realised as a reflection group</td>
+<td><em>Symplectic Reflection Algebras</em> (Part II)</td>
+</tr>
+<tr>
+<td>Non-example: $N \rtimes_\varphi H$ with $\varphi$ nontrivial</td>
+<td>fails to be the direct product: the factors do not commute</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Non-example: $A \wr H$ for infinite $H$</td>
+<td>fails to be finitely generated in general: the base group is an infinite direct sum</td>
+<td><em>Infinite Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="extensions-and-cohomological-constructions">Extensions and Cohomological Constructions</h2>
+<p>An <strong>extension</strong> of $H$ by $N$ is a short exact sequence $1 \to N \to E \to H \to 1$; it is <strong>split</strong> when a section exists, so that $E$ is a semidirect product, and <strong>central</strong> when $N$ lies in the centre. The extensions inducing a fixed action of $H$ on $N$ are classified by the second cohomology $H^2(H,N)$, with the split extension as the zero class and the Baer sum as the addition; the third cohomology classifies the crossed modules and $2$-fold extensions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it preserves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extension $1 \to N \to E \to H \to 1$</td>
+<td>$N$ normal in $E$; the quotient isomorphic to $H$</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Classification by $H^2(H,N)$</td>
+<td>the action of $H$ on $N$ and the equivalence classes of extensions</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Split extension</td>
+<td>the extension has a section; equivalently the class is zero</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Central extension</td>
+<td>$N$ central in $E$; classified by $H^2(H,N)$ with trivial action</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Universal central extension</td>
+<td>through which every central extension of a perfect group factors uniquely</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Schur multiplier $M(G) = H_2(G,\mathbb{Z})$</td>
+<td>the kernel of the universal central extension</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Schur–Zassenhaus splitting</td>
+<td>the extension splits when $\gcd(|M|,|G|)=1$</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Non-example: a nonsplit extension of coprime order</td>
+<td>does not exist: Schur–Zassenhaus forces a splitting</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Non-example: an extension of $H$ by $N$ with a nonabelian kernel</td>
+<td>fails the $H^2$ classification: the kernel must be abelian for the cohomological classification</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="free-amalgamated-and-hnn-constructions">Free, Amalgamated and HNN Constructions</h2>
+<p>The <strong>free product</strong> $G_1 * G_2$ is the coproduct of groups, the universal group receiving both factors with no relation between them; it is infinite whenever one factor is nontrivial and has more than one element. The <strong>free product with amalgamation</strong> $G_1 *_H G_2$ identifies a common subgroup, and the <strong>HNN extension</strong> adjoins a stable letter conjugating one subgroup onto another; both are the group-theoretic pushout and its relative.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it preserves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free product $G_1 * G_2$</td>
+<td>both factors as subgroups; no relation between them</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Infinite dihedral group $D_\infty = C_2 * C_2$</td>
+<td>a free product that is virtually cyclic</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Free product with amalgamation $G_1 *_H G_2$</td>
+<td>the common subgroup $H$; the pushout over it</td>
+<td><em>Combinatorial Group Theory</em></td>
+</tr>
+<tr>
+<td>HNN extension</td>
+<td>a subgroup identified with its image under an isomorphism via a stable letter</td>
+<td><em>Combinatorial Group Theory</em></td>
+</tr>
+<tr>
+<td>Kurosh subgroup theorem</td>
+<td>the subgroups of a free product are free products of copies of subgroups of the factors and a free group</td>
+<td><em>Combinatorial Group Theory</em></td>
+</tr>
+<tr>
+<td>Nielsen–Schreier theorem</td>
+<td>every subgroup of a free group is free</td>
+<td><em>Combinatorial Group Theory</em></td>
+</tr>
+<tr>
+<td>Presentation $\langle X \mid R\rangle$</td>
+<td>the quotient of the free group by the normal closure of $R$</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Non-example: $G_1 * G_2$ for nontrivial $G_1, G_2$</td>
+<td>fails to be finite unless both factors have order $2$: the free product is infinite</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Non-example: $G_1 *_H G_2$ with $H$ not normal in either factor</td>
+<td>fails the pushout description when the maps do not identify $H$</td>
+<td><em>Combinatorial Group Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="quotients-series-and-presentations">Quotients, Series and Presentations</h2>
+<p>A <strong>quotient</strong> $G/N$ is formed by a normal subgroup, and the quotient of a group by the normal closure of a set of relations is a <strong>presentation</strong>. The derived and lower central series are iterated quotients, and their termination defines the solvable and the nilpotent groups; the abelianisation is the universal abelian quotient.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it preserves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quotient $G/N$</td>
+<td>the group law on the cosets; exists exactly for normal $N$</td>
+<td><em>Groups</em></td>
+</tr>
+<tr>
+<td>Normal closure $\langle\langle R\rangle\rangle$</td>
+<td>the smallest normal subgroup containing a set of relations</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+<tr>
+<td>Abelianisation $G^{\mathrm{ab}} = G/[G,G]$</td>
+<td>the largest abelian quotient of $G$</td>
+<td><em>Groups</em></td>
+</tr>
+<tr>
+<td>Derived series</td>
+<td>the iterated commutator subgroups; terminates for solvable groups</td>
+<td><em>Solvable and Nilpotent Groups</em></td>
+</tr>
+<tr>
+<td>Lower central series</td>
+<td>the iterated commutators with $G$; terminates for nilpotent groups</td>
+<td><em>Solvable and Nilpotent Groups</em></td>
+</tr>
+<tr>
+<td>Subgroup generated by $S$</td>
+<td>the smallest subgroup containing $S$</td>
+<td><em>Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: $G/N$ for a non-normal $N$</td>
+<td>fails to be a group: the coset multiplication is not well defined</td>
+<td><em>Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-each-construction-preserves">What Each Construction Preserves</h2>
+<p>The constructions differ in the properties they preserve; the table collects the comparison that the scope line asks for.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>Preserves finiteness</th>
+<th>Preserves freeness</th>
+<th>Keeps factors as subgroups</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct product</td>
+<td>yes, for finitely many factors</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Direct sum</td>
+<td>yes, for finitely many factors</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Semidirect product</td>
+<td>yes, for finite factors</td>
+<td>only when the action is trivial</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Wreath product</td>
+<td>yes, for finite factors</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>yes, for finite kernel and quotient</td>
+<td>no</td>
+<td>the kernel only</td>
+</tr>
+<tr>
+<td>Free product</td>
+<td>no, unless both factors have order $2$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Free product with amalgamation</td>
+<td>no, in general</td>
+<td>no</td>
+<td>the factors, modulo $H$</td>
+</tr>
+<tr>
+<td>HNN extension</td>
+<td>no, in general</td>
+<td>no</td>
+<td>the base group</td>
+</tr>
+<tr>
+<td>Quotient</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the group constructions of the corpus. The products are the direct product, the direct sum, the direct power and the internal direct product; the twisted products are the semidirect product, the wreath product, the lamplighter group, the dihedral group and the affine group; the extensions are the general extension, its classification by the second cohomology, the split and central extensions, the universal central extension with the Schur multiplier as kernel, and the Schur–Zassenhaus splitting; the free constructions are the free product, the free product with amalgamation, the HNN extension and the presentations, with the Kurosh and Nielsen–Schreier theorems; the quotients are the quotient by a normal subgroup, the abelianisation, the normal closure and the derived and lower central series. The final table compares what each construction preserves, and the non-examples — the direct product that is not a semidirect product, the semidirect product with a nontrivial action, the infinite wreath product, the coprimal-order nonsplit extension, the extension with a nonabelian kernel, the infinite free product, the free product with a non-identified subgroup and the quotient by a non-normal subgroup — name the property that fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its constructions by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\prod_i G_i$, $\bigoplus_i G_i$, $G^I$</td>
+<td>direct product, direct sum, direct power</td>
+</tr>
+<tr>
+<td>$N \rtimes_\varphi H$</td>
+<td>semidirect product with action $\varphi$</td>
+</tr>
+<tr>
+<td>$A \wr H$</td>
+<td>wreath product</td>
+</tr>
+<tr>
+<td>$1 \to N \to E \to H \to 1$</td>
+<td>short exact sequence, an extension</td>
+</tr>
+<tr>
+<td>$H^n(G,M)$, $H_2(G,\mathbb{Z})$</td>
+<td>group cohomology; Schur multiplier</td>
+</tr>
+<tr>
+<td>$G_1 * G_2$</td>
+<td>free product</td>
+</tr>
+<tr>
+<td>$G_1 *_H G_2$</td>
+<td>free product with amalgamation</td>
+</tr>
+<tr>
+<td>$\langle X \mid R\rangle$, $\langle\langle R\rangle\rangle$</td>
+<td>presentation and normal closure</td>
+</tr>
+<tr>
+<td>$G^{\mathrm{ab}} = G/[G,G]$</td>
+<td>abelianisation</td>
+</tr>
+<tr>
+<td>$[G,G]$</td>
+<td>commutator subgroup</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, 4th ed. 1995), for direct and semidirect products and the extension theory.</li>
+<li>Roger Lyndon and Paul Schupp, <em>Combinatorial Group Theory</em> (Springer, 1977), for free products, amalgamated products, HNN extensions and the Kurosh and Nielsen–Schreier theorems.</li>
+<li>Kenneth Brown, <em>Cohomology of Groups</em> (Springer, 1982), for the classification of extensions by $H^2$, the Schur multiplier and the universal central extension.</li>
+<li>John Conway, Robert Curtis, Simon Norton, Richard Parker and Robert Wilson, <em>Atlas of Finite Groups</em> (Oxford University Press, 1985), for the explicit extensions and wreath-product constructions among the finite groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Homological Algebra Constructions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-homological-algebra-constructions"><strong>List of Homological Algebra Constructions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the constructions of homological algebra the corpus meets: the complexes and exact sequences, the projective, injective and free resolutions, the derived functors with their long exact sequences, the functors $\operatorname{Ext}$ and $\operatorname{Tor}$, the spectral sequences and the derived and triangulated categories. For each construction the list records what it measures — the failure of exactness, the torsion, the extension classes, the filtration of a graded group, the resolution-independence of a derived functor — and the exact sequences it produces.</p>
+<p>Every entry points to the article that introduces the construction. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being a construction that fails to have the invariance or the exactness its neighbour has, with the failure named and the article that records it.</p>
+<h2 id="complexes-and-exact-sequences">Complexes and Exact Sequences</h2>
+<p>A <strong>chain complex</strong> is a graded module with a square-zero endomorphism, and its <strong>homology</strong> measures the failure of the complex to be exact; a <strong>chain map</strong> commutes with the differentials, a <strong>chain homotopy</strong> is the algebraic form of a homotopy, and the <strong>mapping cone</strong> is the complex that carries the induced map on homology. A <strong>short exact sequence</strong> produces the <strong>long exact sequence</strong> in homology through the connecting homomorphism, and the <strong>snake lemma</strong> is its first instance.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it measures and produces</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chain and cochain complex $(C_\bullet,d_\bullet)$</td>
+<td>the data $d^2=0$; the complex that computes homology</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Cycles, boundaries and homology $H_n(C)$</td>
+<td>how far the complex is from exact</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Morphism of complexes</td>
+<td>a map commuting with the differentials; it induces a map on homology</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Chain homotopy $\varphi \simeq \psi$</td>
+<td>a map that induces the same map on homology</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Mapping cone $\operatorname{Cone}(f)$</td>
+<td>the complex carrying the long exact sequence of a map</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Short exact sequence</td>
+<td>a sequence exact at three terms; the basic input of the theory</td>
+<td><em>Exact Sequences</em></td>
+</tr>
+<tr>
+<td>Snake lemma and the connecting homomorphism</td>
+<td>the map producing the long exact sequence</td>
+<td><em>Exact Sequences</em></td>
+</tr>
+<tr>
+<td>Long exact sequence in homology</td>
+<td>the exact sequence extending a short exact sequence of complexes</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Splitting lemma</td>
+<td>the criterion for a short exact sequence to split</td>
+<td><em>Exact Sequences</em></td>
+</tr>
+<tr>
+<td>Non-example: an additive functor that is not exact</td>
+<td>fails to preserve exactness: the failure is what the derived functors measure</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Non-example: a non-additive functor</td>
+<td>fails to have derived functors in the classical sense: additivity is required</td>
+<td><em>Derived Functors</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="resolutions">Resolutions</h2>
+<p>A <strong>resolution</strong> of a module is a complex exact except in degree zero, whose zeroth homology is the module; a <strong>projective resolution</strong> uses projectives, an <strong>injective resolution</strong> injectives, and a <strong>free resolution</strong> free modules. The <strong>comparison theorem</strong> states that any two resolutions are linked by a chain map unique up to homotopy, so that a functor evaluated on a resolution gives a resolution-independent answer; the <strong>horseshoe lemma</strong> builds a resolution of a middle term from resolutions of the ends.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it measures and produces</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Projective resolution $P_\bullet \to M$</td>
+<td>the module as the cokernel of the last map; the input to the left derived functors</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>Injective resolution $M \to I^\bullet$</td>
+<td>the module as the kernel of the first map; the input to the right derived functors</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>Free resolution</td>
+<td>a projective resolution by free modules; exists over every ring</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Augmentation $\varepsilon$, $\eta$</td>
+<td>the map to or from the module, making the complex a resolution</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Comparison theorem</td>
+<td>maps of resolutions exist and are unique up to homotopy</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Horseshoe lemma</td>
+<td>resolutions of the ends of a short exact sequence give one of the middle</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Filtration of a complex $F_pC$</td>
+<td>the data on which a spectral sequence is built</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Non-example: a resolution by non-projective modules</td>
+<td>fails the comparison theorem: the answer depends on the resolution</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: a module without a projective resolution</td>
+<td>does not occur over a ring: enough projectives always exist in $R\text{-}\mathbf{Mod}$</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="derived-functors">Derived Functors</h2>
+<p>The <strong>right derived functors</strong> of a left exact functor and the <strong>left derived functors</strong> of a right exact one are computed by evaluating the functor on a resolution and taking homology; they are independent of the resolution by the comparison theorem, the connecting homomorphism extends a short exact sequence to a long exact sequence, and the family is characterised as a universal delta-functor. The vanishing on <strong>acyclic</strong> objects, the technique of <strong>dimension shifting</strong> and the composition of functors are the computational tools.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it measures and produces</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Right derived functor $R^nF$</td>
+<td>the failure of a left exact functor to be exact</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Left derived functor $L_nG$</td>
+<td>the failure of a right exact functor to be exact</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Connecting homomorphism $\delta^n$</td>
+<td>the map turning a short exact sequence into a long exact one</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Long exact sequence of derived functors</td>
+<td>the exact sequence continuing the four terms of a half-exact functor</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Delta-functor</td>
+<td>the abstract family of which the derived functors are the universal example</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Acyclic objects and dimension shifting</td>
+<td>the objects on which the higher functors vanish; the device reducing a computation in degree $n$ to degree $1$</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Grothendieck spectral sequence</td>
+<td>the derived functors of a composite $G \circ F$ from those of $F$ and $G$</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Non-example: a functor that is not left or right exact</td>
+<td>fails to have the classical derived functors with the long exact sequence</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Non-example: a resolution by objects that are not $F$-acyclic</td>
+<td>fails to compute the derived functor: only an $F$-acyclic resolution gives $H^n(F(Q^\bullet)) \cong R^nF(A)$</td>
+<td><em>Derived Functors</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="ext-and-tor">Ext and Tor</h2>
+<p>The <strong>Ext groups</strong> $\operatorname{Ext}_R^n(M,N)$ are the right derived functors of $\operatorname{Hom}_R(M,-)$, with $\operatorname{Ext}^1$ classifying the extensions of $M$ by $N$; the <strong>Tor groups</strong> $\operatorname{Tor}_n^R(M,N)$ are the left derived functors of $-\otimes_R N$, with $\operatorname{Tor}_1$ detecting the torsion. Both are balanced — Ext computable from either variable, Tor from either — and both produce the long exact sequences, the Künneth and universal-coefficient theorems and the group cohomology as the case $R = \mathbb{Z}[G]$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it measures and produces</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Ext}_R^n(M,N)$</td>
+<td>the right derived functors of $\operatorname{Hom}_R(M,-)$; the extension classes in degree $1$</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Tor}_n^R(M,N)$</td>
+<td>the left derived functors of $-\otimes_R N$; the torsion in degree $1$</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Ext}^1(M,N)$</td>
+<td>the extensions $0 \to N \to E \to M \to 0$ up to equivalence</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Tor}_1(M,N)$</td>
+<td>the torsion pairing; $\operatorname{Tor}_1(M,\mathbb{Z}/n\mathbb{Z}) = M/nM$</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>Balance of Ext and Tor</td>
+<td>Ext computable from either variable, Tor from either</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>Long exact sequences in Ext and Tor</td>
+<td>the exact sequences produced by a short exact sequence in either variable</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>Künneth theorem</td>
+<td>the homology of a tensor product of complexes from the homologies</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>Universal coefficient theorem</td>
+<td>the relation of homology with arbitrary coefficients to homology with $\mathbb{Z}$ coefficients</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>Group cohomology $H^n(G,M)$</td>
+<td>the case $R = \mathbb{Z}[G]$; the cohomology of a group</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Schur multiplier $H_2(G,\mathbb{Z})$</td>
+<td>the second homology, the kernel of the universal central extension</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Non-example: $\operatorname{Ext}^1(M,N)$ for a free $M$</td>
+<td>vanishes over a field or a free module: the sequence always splits</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>Non-example: $\operatorname{Tor}_1(M,N)$ for a flat $N$</td>
+<td>vanishes: flatness is exactly the vanishing of $\operatorname{Tor}_1$</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="spectral-sequences">Spectral Sequences</h2>
+<p>A <strong>spectral sequence</strong> is a sequence of pages $E^r$ with differentials, converging to the graded pieces of the homology of a filtered object; it replaces one unknown group by successive approximations. The <strong>spectral sequence of a double complex</strong>, the <strong>Grothendieck spectral sequence</strong> of a composite of functors and the <strong>five-term exact sequence</strong> are the algebraic cases; the <strong>Lyndon–Hochschild–Serre spectral sequence</strong> of a group extension and the <strong>Künneth and base-change spectral sequences</strong> are the computed examples.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it measures and produces</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Filtered complex and associated graded</td>
+<td>the data producing the spectral sequence; $\operatorname{gr}_pC = F_pC/F_{p+1}C$</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Pages $E^r_{p,q}$ and differentials $d^r$</td>
+<td>the successive approximations of the answer</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Convergence $E^2_{p,q} \Rightarrow H_{p+q}$</td>
+<td>the stabilisation of the pages to the graded pieces of the homology</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Spectral sequence of a double complex</td>
+<td>the two filtrations of the total complex; the horizontal and vertical homology</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Grothendieck spectral sequence</td>
+<td>the derived functors $R^pG(R^qF(A))$ as the $E_2$-page</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Five-term exact sequence</td>
+<td>the low-degree terms of a converging spectral sequence</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Edge homomorphisms</td>
+<td>the maps from the corner terms to the target</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Lyndon–Hochschild–Serre spectral sequence</td>
+<td>the spectral sequence of a group extension</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Künneth and base-change spectral sequences</td>
+<td>the algebraic applications of the machinery</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Non-example: a spectral sequence that does not converge</td>
+<td>fails to give the graded pieces: convergence requires a bounded filtration or a first-quadrant page</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+<tr>
+<td>Non-example: reading $E^2$ as the answer</td>
+<td>fails to account for the differentials: only $E^\infty$ gives the graded pieces</td>
+<td><em>Spectral Sequences</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="derived-and-triangulated-categories">Derived and Triangulated Categories</h2>
+<p>The <strong>derived category</strong> $D(\mathcal{A})$ is the localisation of the category of complexes at the quasi-isomorphisms, and it makes the derived functors into ordinary functors: $\operatorname{Hom}$ becomes $\mathbb{R}\operatorname{Hom}$, the tensor product becomes $\otimes^{\mathbb{L}}$, and a short exact sequence becomes a <strong>distinguished triangle</strong> in the <strong>triangulated</strong> structure. The homotopy category $K(\mathcal{A})$ is the place where the computations are made, and the bounded variants $D^\pm$, $D^b$ are the ones used by the later articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>What it measures and produces</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homotopy category $K(\mathcal{A})$</td>
+<td>complexes modulo chain homotopy; the intermediate step of the construction</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Localisation at the quasi-isomorphisms</td>
+<td>the formal inversion producing the derived category</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Derived category $D(\mathcal{A})$, $D^\pm$, $D^b$</td>
+<td>the category in which the derived functors are exact</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Shift $C[n]$ and translation functor $T$</td>
+<td>the structure making the triangles stable under shift</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Distinguished triangle $X \to Y \to Z \to TX$</td>
+<td>the replacement of the exact sequence; it produces the long exact sequence in homology</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Triangulated category</td>
+<td>the additive category with the shift and the triangles, satisfying the axioms</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}\operatorname{Hom}_R(M,N)$ and $M \otimes_R^{\mathbb{L}} N$</td>
+<td>the derived hom and tensor; the exact functors on the derived category</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{D(\mathcal{A})}(M,N[n]) = \operatorname{Ext}^n_{\mathcal{A}}(M,N)$</td>
+<td>the identification of the derived-category hom groups with Ext</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Perfect complexes</td>
+<td>the complexes quasi-isomorphic to bounded complexes of finitely generated projectives; a full triangulated subcategory</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Equivalence for a ring of finite global dimension</td>
+<td>$D^b(R\text{-}\mathbf{Mod}) \cong K^b(R\text{-}\mathbf{Proj})$, so the derived category adds nothing in that case</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Derived equivalence and tilting</td>
+<td>the equivalence induced by a tilting module; two derived equivalent algebras</td>
+<td><em>Tilting Theory</em></td>
+</tr>
+<tr>
+<td>Non-example: the naive category of complexes</td>
+<td>fails to be derived: quasi-isomorphisms are not yet invertible</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Non-example: the derived category as an abelian category</td>
+<td>fails to be abelian in general, which is why the triangle replaces the exact sequence</td>
+<td><em>Derived Categories</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the homological constructions of the corpus. The complex and the exact sequence supply the homology, the chain maps and homotopies, the mapping cone and the long exact sequence; the resolutions supply the projective, injective and free inputs, with the comparison theorem making the answer independent of the choice; the derived functors continue a half-exact functor into a long exact sequence and are characterised as universal delta-functors; $\operatorname{Ext}$ and $\operatorname{Tor}$ are the derived functors of $\operatorname{Hom}$ and of the tensor product, balanced in their two variables, with $\operatorname{Ext}^1$ classifying extensions, $\operatorname{Tor}_1$ detecting torsion and group cohomology as the case of a group ring; the spectral sequences organise the homology of a filtered or doubly graded object into pages that converge to the answer, with the Grothendieck, Lyndon–Hochschild–Serre and Künneth cases as the computed examples; and the derived and triangulated categories repackage the whole theory into a single additive category in which the triangle replaces the exact sequence and the derived functors are exact. The non-examples — a non-exact functor, a non-additive functor, a resolution by non-projective objects, a resolution by objects that are not acyclic for the functor, a vanishing Ext or Tor with the reason, a non-convergent spectral sequence, the misreading of $E^2$ as the answer, the naive category of complexes and the derived category mistaken for an abelian category — each name the failure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(C_\bullet,d_\bullet)$, $H_n(C)$</td>
+<td>chain complex, homology</td>
+</tr>
+<tr>
+<td>$Z_n$, $B_n$</td>
+<td>cycles and boundaries</td>
+</tr>
+<tr>
+<td>$\operatorname{Cone}(f)$</td>
+<td>mapping cone</td>
+</tr>
+<tr>
+<td>$P_\bullet \to M$, $M \to I^\bullet$</td>
+<td>projective and injective resolutions</td>
+</tr>
+<tr>
+<td>$R^nF$, $L_nG$</td>
+<td>right and left derived functors</td>
+</tr>
+<tr>
+<td>$\operatorname{Ext}_R^n(M,N)$, $\operatorname{Tor}_n^R(M,N)$</td>
+<td>Ext and Tor</td>
+</tr>
+<tr>
+<td>$E^r_{p,q}$, $d^r$, $E^\infty_{p,q}$</td>
+<td>pages, differentials, stable terms of a spectral sequence</td>
+</tr>
+<tr>
+<td>$K(\mathcal{A})$, $D(\mathcal{A})$, $D^b$</td>
+<td>homotopy and derived categories</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\operatorname{Hom}$, $\otimes^{\mathbb{L}}$</td>
+<td>derived hom and tensor</td>
+</tr>
+<tr>
+<td>$X \to Y \to Z \to TX$</td>
+<td>distinguished triangle</td>
+</tr>
+<tr>
+<td>$H^n(G,M)$</td>
+<td>group cohomology</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Z}[G]$</td>
+<td>the integers, and the group ring over them</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sergei Gelfand and Yuri Manin, <em>Methods of Homological Algebra</em> (Springer, 2nd ed. 2003), for complexes, resolutions, derived functors and spectral sequences.</li>
+<li>Charles Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for Ext and Tor, the spectral sequences and the derived categories.</li>
+<li>Saunders Mac Lane, <em>Homology</em> (Springer, 1995), for the classical treatment of the functors $\operatorname{Ext}$ and $\operatorname{Tor}$ and the Künneth and universal-coefficient theorems.</li>
+<li>Amnon Neeman, <em>Triangulated Categories</em> (Princeton University Press, 2001), for the triangulated structure, the distinguished triangles and the derived categories.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

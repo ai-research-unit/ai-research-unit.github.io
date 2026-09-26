@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semiprime Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="semiprime-rings"><strong>Semiprime Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article begins the second chain of <em>Rings and Fields</em>, the one in which commutativity is dropped. The default base changes with it: throughout, $A$ is a ring with $1 \neq 0$ <strong>not assumed commutative</strong>, ideals are two-sided unless the contrary is said, and every statement that needs commutativity says so. The commutative theory of the nilpotent structure is above this article, in <em>Reduced Rings and the Nilradical</em>, and the two articles are read together: a <strong>reduced</strong> ring is one without nonzero nilpotent <em>elements</em>, a <strong>semiprime</strong> ring is one without nonzero nilpotent <em>ideals</em>, and the two conditions agree exactly in the commutative case, which is proved at the end of the article.</p>
+<p>The article develops the nilpotent ideals of a ring, the <strong>lower nilradical</strong> as the intersection of the prime ideals, and the two equivalent descriptions of a semiprime ring: the vanishing of that intersection, and the representation of the ring as a subdirect product of prime rings. The class of prime rings is the subject of <em>Prime Rings</em>, directly below this article in this category, and the commutative specialisation is <em>Reduced Rings and the Nilradical</em>, above. The Jacobson radical and the structure theory of simple rings are not treated here: they belong to the module theory of <em>Simple and Semisimple Modules</em>, in a later category of this Part.</p>
+<hr />
+<h2 id="nilpotent-ideals">Nilpotent Ideals</h2>
+<p><strong>Definition.</strong> A two-sided ideal $I \trianglelefteq A$ is <strong>nilpotent</strong> if $I^n = 0$ for some integer $n \geq 1$, where $I^n$ denotes the product of $n$ copies of $I$ in the sense of <em>Rings</em>, above. The ideal is <strong>of square zero</strong> if $I^2 = 0$, and it is <strong>nil</strong> if every element of it is nilpotent.</p>
+<p>An element is nilpotent when some power of the element vanishes, an ideal is nilpotent when some power of the ideal vanishes, and an ideal is nil when every element of it is nilpotent. The last two conditions are genuinely different.</p>
+<p><strong>Proposition.</strong> <strong>(a)</strong> Every element of a nilpotent ideal is nilpotent, so a nilpotent ideal is nil. <strong>(b)</strong> A ring with no nonzero nilpotent element has no nonzero nilpotent ideal. <strong>(c)</strong> A nil ideal need not be nilpotent, not even in a commutative ring.</p>
+<p><strong>Proof.</strong> (a) If $a \in I$ and $I^n = 0$ then $a^n \in I^n = 0$. (b) is (a) contraposed. (c) is the example below. $\square$</p>
+<p><strong>Example (a nilpotent element generating a non-nilpotent ideal).</strong> Let $A = M_2(F)$ and let $E_{12}$ be the matrix unit. Then $E_{12}^2 = 0$, so $E_{12}$ is nilpotent, but the two-sided ideal it generates is the whole ring: $E_{12}E_{21} = E_{11}$ and $E_{21}E_{12} = E_{22}$, so $(E_{12}) = M_2(F)$, which is not nilpotent. The ideal generated by a nilpotent element is therefore not in general nilpotent, and the nilpotent elements do not form an ideal.</p>
+<p><strong>Example (nilpotent elements whose sum is not nilpotent).</strong> In $M_2(F)$ the elements $E_{12}$ and $E_{21}$ are nilpotent while</p>
+<p>$$
+(E_{12} + E_{21})^2 = E_{11} + E_{22} = 1 ,
+$$</p>
+<p>so $E_{12} + E_{21}$ is not nilpotent. The set of nilpotent elements is closed under addition only under a commutativity hypothesis, as noted in <em>Rings</em> for commuting nilpotents.</p>
+<p><strong>Proposition.</strong> An ideal $I$ is nilpotent if and only if the descending chain $I \supseteq I^2 \supseteq I^3 \supseteq \cdots$ reaches $0$; if $I^n = 0$ for a minimal $n \geq 2$, then $I^{n-1}$ is a nonzero ideal of square zero.</p>
+<p><strong>Proof.</strong> The chain reaches $0$ exactly when $I^n = 0$ for some $n$, which is the definition of nilpotence. If $n \geq 2$ is minimal with $I^n = 0$, then $I^{n-1} \neq 0$, and $(I^{n-1})^2 = I^{2n-2} \subseteq I^n = 0$ because $2n - 2 \geq n$. $\square$</p>
+<p><strong>Example (a nil ideal that is not nilpotent).</strong> Let $k$ be a field and let</p>
+<p>$$
+R = k[x_1, x_2, x_3, \ldots]/(x_1^2, x_2^3, x_3^4, \ldots)
+$$</p>
+<p>be the polynomial ring in countably many variables with the relation $x_i^{i+1} = 0$ imposed for every $i$. The ideal $I = (x_1, x_2, x_3, \ldots)$ consists of the classes of the polynomials with zero constant term. A monomial of positive degree, say $\prod_i x_i^{a_i}$ with some $a_i \geq 1$, has vanishing $N$-th power as soon as $N a_i \geq i+1$ for such an $i$, so each monomial is nilpotent; and $R$ is commutative, so a finite sum of nilpotent elements is nilpotent, the binomial theorem of <em>Commutative Rings</em>, above, applying. Hence every element of $I$ is nilpotent and $I$ is nil. But $I^n \neq 0$ for every $n \geq 2$, since the monomial $x_n x_{n+1} \cdots x_{2n-1}$ lies in $I^n$ and is not divisible by any $x_i^{i+1}$ with $i \geq 2$, hence is nonzero in $R$; and $I \neq 0$ since the class of $x_2$ is nonzero. So $I$ is nil and not nilpotent. The same ring shows that the intersection of the prime ideals of a commutative ring can be a nil ideal that is not nilpotent, since $I$ is that intersection, by Krull's theorem of <em>Commutative Rings</em>, above.</p>
+<hr />
+<h2 id="semiprime-rings_1">Semiprime Rings</h2>
+<p><strong>Definition.</strong> A ring $A$ is <strong>semiprime</strong> if it has no nonzero nilpotent two-sided ideal.</p>
+<p>By the proposition above, in checking semiprimeness it is enough to exclude ideals of square zero.</p>
+<p><strong>Theorem.</strong> $A$ is semiprime if and only if $aAa \neq 0$ for every nonzero $a \in A$.</p>
+<p><strong>Proof.</strong> Suppose first that $A$ is semiprime and that $a \neq 0$ satisfies $aAa = 0$. Then $AaA$ is a nonzero two-sided ideal, and</p>
+<p>$$
+(AaA)^2 = AaA \cdot AaA \subseteq A(aAa)A = 0 ,
+$$</p>
+<p>so $AaA$ is a nonzero ideal of square zero, a contradiction. Conversely, suppose $aAa \neq 0$ for every nonzero $a$, and let $I$ be a two-sided ideal with $I^2 = 0$. If $a \in I$ then $aAa \subseteq IAI \subseteq I^2 = 0$, so $a = 0$; hence $I = 0$ and $A$ is semiprime. $\square$</p>
+<p><strong>Corollary.</strong> A direct product $\prod_{\lambda} A_{\lambda}$ is semiprime if and only if every factor is semiprime. The property is inherited by neither subrings nor quotients in general.</p>
+<p><strong>Proof.</strong> An ideal of the product has square zero exactly when each of its projections does, which gives the first statement. For the failures, the quotient $k[x]/(x^2)$ of the semiprime ring $k[x]$ is not semiprime, as the example below records; and the ring of upper triangular $2 \times 2$ matrices over a field is a subring of the semiprime ring $M_2(F)$ containing $1$, while its ideal of strictly upper triangular matrices is nonzero with square zero. $\square$</p>
+<p><strong>Example.</strong> The matrix ring $M_n(F)$ over a field is <strong>semiprime</strong> for every $n \geq 1$: its only two-sided ideals are $(0)$ and the whole ring, by <em>Rings</em>, above, so there is no nonzero nilpotent ideal. For $n \geq 2$ it has the nonzero nilpotent element $E_{12}$, so it is not reduced. This is the asymmetry that separates the two conditions in the non-commutative case.</p>
+<p><strong>Example.</strong> The ring $k[x]/(x^2)$ has the nonzero ideal $(x)$ with square zero, so it is not semiprime. The ring $k[x,y]/(xy)$ is reduced, having no nilpotent element, and is therefore semiprime, since a nonzero nilpotent ideal would contain a nonzero nilpotent element, by the proposition of the first section.</p>
+<p><strong>Example.</strong> A ring in which every two-sided ideal is idempotent, $I^2 = I$, is semiprime: the powers of a nonzero ideal are then all equal to it, so no nonzero ideal is nilpotent. The rings whose principal left ideals are idempotent-generated are <em>Von Neumann Regular Rings</em>, below this article in this category.</p>
+<p><strong>Proposition.</strong> $A$ is semiprime if and only if it has no nonzero left ideal of square zero.</p>
+<p><strong>Proof.</strong> If $L$ is a nonzero left ideal with $L^2 = 0$, then $AL = \{\sum_i a_i l_i\}$ is a two-sided ideal: it is closed under left multiplication by $A$ by definition, and $(AL)A \subseteq AL$ because $l_i a \in L$; and it is nonzero, since $1 \cdot l = l$ for $l \in L$. Moreover $(AL)^2 \subseteq A\,L\,A\,L \subseteq A(L^2) = 0$, so $A$ is not semiprime. The converse is immediate, since a two-sided ideal is a left ideal. $\square$</p>
+<p><strong>Corollary.</strong> A semiprime ring has no nonzero left or right ideal of square zero, and a minimal nonzero left ideal of a semiprime ring is not nilpotent.</p>
+<hr />
+<h2 id="the-lower-nilradical">The Lower Nilradical</h2>
+<p><strong>Definition.</strong> The <strong>lower nilradical</strong> of $A$, written $\operatorname{Nil}_*(A)$ and also called the <strong>prime radical</strong>, is the intersection of all prime ideals of $A$.</p>
+<p>The intersection is taken over a non-empty family, because a ring with $1 \neq 0$ has a maximal two-sided ideal: the union of a chain of proper ideals is proper, since it contains no unit, so Zorn's lemma produces a maximal two-sided ideal, and a maximal two-sided ideal is prime by <em>Rings</em>, above. The lower nilradical is therefore defined for every ring of this corpus, and it is a two-sided ideal, being an intersection of two-sided ideals.</p>
+<p><strong>Theorem.</strong> If $A$ is commutative then $\operatorname{Nil}_*(A) = \operatorname{nil}(A)$ is the set of nilpotent elements, and it is the radical of the zero ideal.</p>
+<p><strong>Proof.</strong> In the commutative case every ideal is two-sided, so the prime ideals here are the prime ideals of the commutative theory and the maximal ideals are the maximal ideals of <em>Commutative Rings</em>, above; by Krull's theorem there, the intersection of the prime ideals is the nilradical $\operatorname{nil}(A) = \sqrt{(0)}$, the set of nilpotent elements. The elementwise step used in that article is that an element lies in a prime ideal exactly when some power of it does, by induction on the exponent from the defining condition $ab \in P \Rightarrow a \in P$ or $b \in P$. $\square$</p>
+<p>In the non-commutative case the radical is described by an elementwise condition of a different kind, that of strong nilpotence, and the following three properties are what the rest of the article uses.</p>
+<p><strong>Theorem.</strong> <strong>(a)</strong> Every nilpotent ideal of $A$ is contained in $\operatorname{Nil}_*(A)$. <strong>(b)</strong> $A/\operatorname{Nil}_*(A)$ is semiprime. <strong>(c)</strong> $\operatorname{Nil}_*(A)$ is the smallest two-sided ideal $N$ with $A/N$ semiprime.</p>
+<p><strong>Proof.</strong> (a) Let $I^n = 0$ and let $P$ be a prime ideal. Then $I^n \subseteq P$, and primality gives $I \subseteq P$ after $n$ applications, since all the factors of $I^n$ are $I$. Hence $I \subseteq \operatorname{Nil}_*(A)$.</p>
+<p>(b) Let $\pi : A \to A/\operatorname{Nil}_*(A)$ be the quotient map and let $J$ be a two-sided ideal of the quotient with $J^2 = 0$. By the correspondence theorem of <em>Rings</em>, above, $J = \pi(I)$ for a two-sided ideal $I$ containing $\operatorname{Nil}_*(A)$, and $\pi(I^2) = J^2 = 0$, so $I^2 \subseteq \operatorname{Nil}_*(A)$. If $P$ is a prime ideal of $A$ then $I^2 \subseteq P$ gives $I \subseteq P$, so $I \subseteq \operatorname{Nil}_*(A)$ and $J = 0$. Hence the quotient has no nonzero ideal of square zero.</p>
+<p>(c) By (b) the radical has the property, and if $A/N$ is semiprime and $I$ is a nilpotent ideal then the image of $I$ in $A/N$ is nilpotent, hence zero, by (a) applied in the quotient; so $I \subseteq N$. $\square$</p>
+<p><strong>Theorem.</strong> $A$ is semiprime if and only if $\operatorname{Nil}_*(A) = 0$.</p>
+<p><strong>Proof.</strong> If $\operatorname{Nil}_*(A) = 0$ and $I^2 = 0$, then $I$ is nilpotent and (a) gives $I \subseteq \operatorname{Nil}_*(A) = 0$; so $A$ is semiprime. Conversely, let $A$ be semiprime, let $a \in \operatorname{Nil}_*(A)$ and suppose $a \neq 0$. Then $aAa \neq 0$ by the criterion of the previous section, and one produces a sequence $a = a_0, a_1, a_2, \ldots$ with $a_{n+1} = a_n x_n a_n \neq 0$, all terms lying in $\operatorname{Nil}_*(A)$ since it is an ideal. Such a sequence is a <strong>strongly nilpotent</strong> element in the sense of the literature, and the standard theorem of the prime radical states that the elements of $\operatorname{Nil}_*(A)$ are exactly the strongly nilpotent ones, so that every such sequence must terminate at $0$. This contradicts $a_n \neq 0$ for all $n$, and therefore $a = 0$. $\square$</p>
+<p><strong>Remark.</strong> The implication just used is the standard theorem that the prime radical is the set of strongly nilpotent elements, and that it is a nil ideal. Its proof uses the avoidance lemma for $m$-systems — if $S \subseteq A$ is a set such that for all $s, t \in S$ there is $x \in A$ with $sxt \in S$, and $0 \notin S$, then there is a prime ideal disjoint from $S$ — and it is cited here from the literature rather than re-derived. The commutative instance of the avoidance argument is carried out in <em>Reduced Rings and the Nilradical</em>, above. In particular the lower nilradical of a semiprime ring vanishes, and the lower nilradical of general rings is a nil ideal that need not be nilpotent, as the polynomial example of the first section shows in the commutative case.</p>
+<p><strong>Corollary.</strong> $\operatorname{Nil}_*(A)$ is contained in every two-sided ideal $N$ whose quotient is semiprime, and it is the unique smallest such ideal.</p>
+<p><strong>Proof.</strong> This is (c) of the theorem above. $\square$</p>
+<p><strong>Proposition.</strong> Let $N \trianglelefteq A$ with $N \subseteq \operatorname{Nil}_*(A)$. Then $\operatorname{Nil}_*(A/N) = \operatorname{Nil}_*(A)/N$.</p>
+<p><strong>Proof.</strong> By the correspondence theorem of <em>Rings</em>, above, the prime ideals of $A/N$ are the ideals $P/N$ with $P$ a prime ideal of $A$ containing $N$. Since $N \subseteq \operatorname{Nil}_*(A)$ is contained in every prime ideal, every prime ideal of $A$ contains $N$, so the prime ideals of $A/N$ are exactly the $P/N$. Therefore</p>
+<p>$$
+\operatorname{Nil}_*(A/N) = \bigcap_{P} P/N = \Big(\bigcap_{P} P\Big)/N = \operatorname{Nil}_*(A)/N .
+$$</p>
+<p>The identity $\bigcap_P (P/N) = (\bigcap_P P)/N$ is the correspondence theorem applied to the inclusions between the ideals above $N$. $\square$</p>
+<hr />
+<h2 id="semiprime-rings-as-subdirect-products-of-prime-rings">Semiprime Rings as Subdirect Products of Prime Rings</h2>
+<p><strong>Definition.</strong> A ring $A$ is <strong>prime</strong> if the product of two nonzero two-sided ideals is nonzero: $IJ \neq 0$ whenever $I \neq 0$ and $J \neq 0$. The class is the subject of <em>Prime Rings</em>, below this article in this category, where it is shown that every prime ring is semiprime and that the converse fails.</p>
+<p><strong>Definition.</strong> A ring $A$ is a <strong>subdirect product</strong> of the rings $A_{\lambda}$, $\lambda \in \Lambda$, if there is an injective homomorphism $\iota : A \to \prod_{\lambda \in \Lambda} A_{\lambda}$ such that the composite of $\iota$ with each projection is surjective.</p>
+<p><strong>Theorem.</strong> A ring is semiprime if and only if it is a subdirect product of prime rings.</p>
+<p><strong>Proof.</strong> Let $A$ be a subdirect product of the rings $A_{\lambda}$, and let $I \neq 0$ be a two-sided ideal with $I^2 = 0$. Since $\iota$ is injective, some element of $\iota(I)$ has a nonzero coordinate, so some projection $\pi_{\lambda}$ has $\pi_{\lambda}(I) \neq 0$; and $\pi_{\lambda}(I)^2 = 0$. Hence $A_{\lambda}$ is not semiprime. So a subdirect product of semiprime rings is semiprime, and a prime ring is semiprime, since $I^2 = 0$ with $I \neq 0$ would be a product of nonzero ideals equal to zero.</p>
+<p>Conversely, let $A$ be semiprime, so that $\operatorname{Nil}_*(A) = 0$ by the theorem above. For each nonzero $a \in A$ there is then a prime ideal $P_a$ with $a \notin P_a$, since the intersection of all the prime ideals is zero. The homomorphism</p>
+<p>$$
+A \longrightarrow \prod_{a \neq 0} A/P_a, \qquad x \mapsto (x + P_a)_{a \neq 0},
+$$</p>
+<p>has zero kernel, because a nonzero $a$ is not in $P_a$, and each component map is surjective by construction. Hence $A$ is a subdirect product of the prime rings $A/P_a$. $\square$</p>
+<p><strong>Corollary.</strong> Every semiprime ring is a subring of a product of prime rings, and the intersection of the kernels of the projections is zero.</p>
+<hr />
+<h2 id="the-commutative-case">The Commutative Case</h2>
+<p>In a commutative ring the two conditions of this pair of articles coincide.</p>
+<p><strong>Theorem.</strong> Let $R$ be a commutative ring. Then $R$ is semiprime if and only if $R$ is reduced.</p>
+<p><strong>Proof.</strong> If $R$ is reduced, let $I \neq 0$ be an ideal and take $0 \neq a \in I$; then $a^2 \neq 0$ and $a^2 \in I^2$, so $I^2 \neq 0$ and $R$ is semiprime. Conversely, if $R$ is not reduced, let $a \neq 0$ with $a^n = 0$; then $(a)^n = (a^n) = 0$, so $(a)$ is a nonzero nilpotent ideal and $R$ is not semiprime. $\square$</p>
+<p><strong>Remark.</strong> The conditions separate as soon as commutativity is dropped: $M_n(F)$ is semiprime for every $n \geq 1$ and is reduced only for $n = 1$. The difference is exactly the passage from elements to ideals — a nilpotent element generates an ideal that is nilpotent only when the ring is commutative, as the two examples of $M_2(F)$ in the first section show.</p>
+<p><strong>Example ($\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z} \times \mathbb{Z}$).</strong> The ring $\mathbb{Z}/4\mathbb{Z}$ has the nonzero nilpotent element $2$, and $(2)$ is an ideal of square zero, so it is neither reduced nor semiprime. Its counterpart $\mathbb{Z} \times \mathbb{Z}$ is reduced, hence semiprime, and its nilradical is the intersection of the prime ideals, which is zero.</p>
+<p><strong>Example (a quotient of a semiprime ring that is not semiprime).</strong> The polynomial ring $k[x]$ is reduced, hence semiprime, while its quotient $k[x]/(x^2)$ is not, the image of $(x)$ being a nonzero ideal of square zero. The class of semiprime rings is therefore not closed under quotients. The class of prime rings is not closed under quotients either: $k[x]$ is prime, being a domain, and $k[x]/(x^2)$ is not, the image of the nonzero ideal $(x)$ squaring to zero. What the correspondence theorem of <em>Rings</em>, above, does give, the product of ideals being preserved by the quotient map, is that a quotient $A/I$ is prime exactly when the two-sided ideal $I$ is prime.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A nilpotent ideal is an ideal some power of which vanishes, and it is nil in the sense that all of its elements are nilpotent; a nil ideal need not be nilpotent, and in a non-commutative ring the nilpotent elements neither form an ideal nor generate nilpotent ideals. A ring is semiprime when it has no nonzero nilpotent ideal, equivalently when $aAa \neq 0$ for every nonzero $a$. The lower nilradical $\operatorname{Nil}_*(A)$ is the intersection of the prime ideals; it contains every nilpotent ideal, its quotient ring is semiprime, it is the smallest ideal with that property, and it vanishes exactly when the ring is semiprime. A ring is semiprime if and only if it is a subdirect product of prime rings. In the commutative case, semiprime, reduced and the vanishing of the nilradical of <em>Reduced Rings and the Nilradical</em> are the same condition; in the non-commutative case, $M_n(F)$ separates semiprime from reduced for $n \geq 2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>A ring with $1 \neq 0$, not assumed commutative; the base of this article</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>The corpus default, a commutative ring with $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$I \trianglelefteq A$</td>
+<td>A two-sided ideal</td>
+</tr>
+<tr>
+<td>$I^n$</td>
+<td>The product of $n$ copies of the ideal $I$</td>
+</tr>
+<tr>
+<td>$I^2 = 0$</td>
+<td>An ideal of square zero</td>
+</tr>
+<tr>
+<td>nil ideal</td>
+<td>An ideal all of whose elements are nilpotent</td>
+</tr>
+<tr>
+<td>semiprime</td>
+<td>Having no nonzero nilpotent two-sided ideal</td>
+</tr>
+<tr>
+<td>prime</td>
+<td>Having $IJ \neq 0$ for all nonzero ideals $I, J$</td>
+</tr>
+<tr>
+<td>reduced</td>
+<td>Having no nonzero nilpotent element, of <em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Nil}_*(A)$</td>
+<td>The lower nilradical, or prime radical: the intersection of the prime ideals</td>
+</tr>
+<tr>
+<td>$\operatorname{nil}(R)$</td>
+<td>The nilradical of a commutative ring, of <em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$aAa$</td>
+<td>The square-zero test of the semiprime criterion</td>
+</tr>
+<tr>
+<td>strongly nilpotent</td>
+<td>An element whose iterated products $a_{n+1} = a_n x_n a_n$ all vanish</td>
+</tr>
+<tr>
+<td>$m$-system</td>
+<td>A set $S$ with $sxt \in S$ for all $s, t \in S$ and some $x$; the tool of the avoidance lemma</td>
+</tr>
+<tr>
+<td>$A \to \prod_{\lambda} A_{\lambda}$</td>
+<td>A subdirect product: injective, with every component map surjective</td>
+</tr>
+<tr>
+<td>$M_n(F)$, $E_{ij}$</td>
+<td>The matrix ring and its matrix units, the standard non-commutative examples</td>
+</tr>
+<tr>
+<td>$k[x]$, $k[x]/(x^2)$, $k[x,y]/(xy)$</td>
+<td>The polynomial examples that separate reduced from semiprime</td>
+</tr>
+<tr>
+<td>$k[x_1, x_2, \ldots]/(x_i^{i+1})$</td>
+<td>The commutative ring whose nil ideal of nilpotent elements is not nilpotent</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the prime radical, prime rings and the minimal primes.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the radical theory of rings and the lower nilradical.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for nilpotent and nil ideals, semiprime rings, the prime radical, the avoidance lemma and the subdirect product theorem.</li>
+<li>T. Y. Lam, <em>Exercises in Classical Ring Theory</em> (Springer, 2nd ed. 2003), for the standard examples separating the nil, the nilpotent and the semiprime conditions.</li>
+<li>Louis H. Rowen, <em>Ring Theory, Volume 1</em> (Academic Press, 1988), for the prime radical and its relation to the prime ideals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

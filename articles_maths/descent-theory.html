@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descent Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="descent-theory"><strong>Descent Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Descent theory asks when an object of a category can be reconstructed from its pullbacks along the members of a covering, together with the compatibilities between those pullbacks. The compatibilities are the <strong>descent data</strong>: for a covering $\{f_i:c_i\to c\}$ and an object $X$ over $c$, the data are the objects $X_i$ over $c_i$ obtained by pullback, together with isomorphisms between the two pullbacks of $X_i$ and $X_j$ to the fibre product $c_i\times_cc_j$, satisfying the cocycle condition on the triple products. A <strong>descent datum</strong> is exactly such a family, and the question is whether every descent datum arises from an object of the base category. When it does, the covering is <strong>effective for descent</strong>, and the comparison functor from the objects over $c$ to the descent data is an equivalence; when it does not, the obstruction is measured by cohomology. The theory originated in Grothendieck's work on the flat topology of schemes, where the theorem that the descent data for modules are always effective under a faithfully flat cover became a fundamental tool, and it is the categorical form of the gluing condition of the previous article: a sheaf is a presheaf whose sections satisfy descent, and a stack is a fibred category whose objects satisfy descent.</p>
+<p>This article develops fibred and indexed categories, descent data and the descent category for a covering, the comparison functor and effective descent, faithfully flat descent for modules with the Amitsur complex, the monadic form of the theorem through the Barr–Beck theorem, the descent spectral sequence for a covering computed with the machinery of <em>Spectral Sequences</em>, the stack condition and the stackification, the example of Galois descent, and the cohomological obstructions to descent. It follows <em>Sheaves on Sites</em>, <em>Topoi</em>, <em>Spectral Sequences</em>, <em>Ext and Tor</em>, <em>Homological Algebra</em>, <em>K-Theory of Rings</em> and <em>Modules</em>, and it closes the site-theoretic arc of the category.</p>
+<p>Throughout, $(\mathcal{C},J)$ is a site with a terminal object, $f:S'\to S$ is a morphism, and $\{f_i:c_i\to c\}$ is a covering family; the fibre products are assumed to exist in $\mathcal{C}$. The categories fibred over $\mathcal{C}$ are treated concretely, that is, as indexed families of categories with base-change functors, without the 2-categorical machinery; the passage to the homotopy-coherent theory of $\infty$-categories, to higher stacks and to the derived version of descent belongs to Part II, whereandtreat it, and this article cites it without using it. The topological descent, that is, the descent for sheaves on a space and the continuous maps, belongs to Part II as well.</p>
+<h2 id="fibred-and-indexed-categories">Fibred and Indexed Categories</h2>
+<p><strong>Definition.</strong> An <strong>indexed category</strong> over $\mathcal{C}$ is a pseudofunctor $\mathbb{X}:\mathcal{C}^{\mathrm{op}}\to\mathbf{Cat}$: to each object $S$ a category $\mathbb{X}_S$, to each morphism $f:S'\to S$ a base-change functor $f^*:\mathbb{X}_S\to\mathbb{X}_{S'}$, to each composition a coherent isomorphism $(fg)^*\cong g^*f^*$, and to each identity a coherent isomorphism $\mathrm{id}^*\cong\mathrm{id}$, subject to the usual associativity and unit conditions. The <strong>total category</strong> $\int\mathbb{X}$ has as objects the pairs $(S,X)$ with $X$ an object of $\mathbb{X}_S$ and as morphisms the pairs $(f,\phi)$ with $f:S'\to S$ and $\phi:f^*X\to X'$, and it is fibred over $\mathcal{C}$ by the projection $(S,X)\mapsto S$. A fibred category is a <strong>stack</strong> when it satisfies the descent condition below.</p>
+<p><strong>Proposition.</strong> An indexed category is equivalent to a fibration over $\mathcal{C}$ with a cleavage, and the base-change functors are unique up to a canonical isomorphism; the fibre $\mathbb{X}_S$ over $S$ is the subcategory of the total category of the objects lying over $S$ and the morphisms lying over $\mathrm{id}_S$. The formation of the total category is inverse to the passage from a fibration to its indexed category, up to equivalence.</p>
+<p><em>Proof.</em> The cleavage chooses a cartesian morphism over each base-change, and the coherence isomorphisms of the pseudofunctor are the unique comparison isomorphisms between the chosen cartesian morphisms; the two constructions are inverse by the universal property of the cartesian morphisms. $\square$</p>
+<p><strong>Example.</strong> The fundamental example is the indexed category of modules: for a ring homomorphism $f:R\to R'$ the base change is the extension of scalars $-\otimes_RR'$ of <em>Extension of Scalars</em>, the fibre over $R$ is the category of $R$-modules, and the total category is the category of modules over all the rings, fibred over the category of rings. Another example is the indexed category of quasi-coherent sheaves over a site of schemes, the geometric case treated in Part II.</p>
+<h2 id="descent-data-for-a-covering">Descent Data for a Covering</h2>
+<p><strong>Definition.</strong> Let $\mathbb{X}$ be an indexed category over $\mathcal{C}$ and let $\mathcal{U}=\{f_i:c_i\to c\}$ be a covering family. A <strong>descent datum</strong> for $\mathcal{U}$ with values in $\mathbb{X}$ is a family $(X_i,\phi_{ij})$ with $X_i\in\mathbb{X}_{c_i}$ and isomorphisms
+$$
+\phi_{ij}:f_{ij,2}^*X_j\xrightarrow{\ \sim\ }f_{ij,1}^*X_i
+$$
+over the fibre product $c_{ij}=c_i\times_cc_j$, where $f_{ij,1},f_{ij,2}$ are the two projections, subject to the <strong>cocycle condition</strong> on the triple fibre products $c_{ijk}$: the two ways of comparing $f^*X$ on $c_{ijk}$ coincide. The <strong>descent category</strong> $\mathrm{Desc}(\mathcal{U},\mathbb{X})$ has the descent data as objects and, as morphisms, the families of morphisms over the $c_i$ commuting with the isomorphisms $\phi_{ij}$.</p>
+<p><strong>Definition.</strong> The <strong>comparison functor</strong> is
+$$
+\mathbb{X}_c\longrightarrow\mathrm{Desc}(\mathcal{U},\mathbb{X}),\qquad X\mapsto (f_i^*X,\ \text{the canonical isomorphisms}),
+$$
+and the covering $\mathcal{U}$ is <strong>effective for descent</strong> in $\mathbb{X}$ if the comparison functor is an equivalence of categories. The fibred category $\mathbb{X}$ is a <strong>stack</strong> over the site $(\mathcal{C},J)$ if for every object $c$ and every covering family $\mathcal{U}$ of $c$ the comparison functor is an equivalence; it is a <strong>prestack</strong> if the comparison functor is fully faithful, that is, if the descent data have no nontrivial automorphisms beyond those coming from the base.</p>
+<p><strong>Proposition.</strong> The comparison functor is fully faithful for every covering if and only if the base-change functors are compatible with the localisation, which holds for the indexed categories of modules and of sheaves. For the indexed category of sets valued functors on a category, the stack condition is exactly the sheaf condition of <em>Sheaves on Sites</em>, and for the indexed category of categories the stack condition is the effective descent of the objects together with the compatible descent of the morphisms.</p>
+<p><em>Proof.</em> The full faithfulness of the comparison functor is the statement that a morphism of the base is determined by its pullbacks along a covering, which is the separatedness of the corresponding presheaf of morphisms. The identification with the sheaf condition is the description of a sheaf as a functor whose values satisfy the gluing axiom, applied to the constant indexed category with fibres the category of sets. $\square$</p>
+<p><strong>Example.</strong> For the covering of a set $c$ by the single map $\{c_i\}\to c$ of the members of an open cover in a topological space, a descent datum is precisely a compatible family of sections, and the descent condition is the sheaf condition; this is the sense in which descent generalises gluing, and the topological case is treated in Part II.</p>
+<h2 id="faithfully-flat-descent">Faithfully Flat Descent</h2>
+<p><strong>Theorem (Grothendieck, faithfully flat descent).</strong> Let $R\to R'$ be a faithfully flat ring homomorphism. Then the comparison functor
+$$
+{}_{R}\mathbf{Mod}\longrightarrow\mathrm{Desc}(R'/R),\qquad M\mapsto (M\otimes_RR',\ \text{canonical}),
+$$
+from the category of $R$-modules to the category of $R'$-modules with descent data is an equivalence of categories. Equivalently, the category of $R$-modules is equivalent to the category of modules over the cosimplicial ring
+$$
+R\rightrightarrows R'\rightrightarrows R'\otimes_RR'\cdots
+$$
+built from the tensor powers, with the coface and codegeneracy maps given by the algebra structure and the unit.</p>
+<p><em>Proof (in outline).</em> The functor is fully faithful by the exactness of $-\otimes_RR'$ and the faithful flatness, which lets one descend the equalities of morphisms from the tensor powers. For the essential surjectivity, a descent datum $(M',\phi)$ is turned into an $R$-module by taking the equalizer of the pair of maps $M'\rightrightarrows M'\otimes_RR'$ whose first member is the descent isomorphism $\phi$ and whose second is the canonical map $m'\mapsto1\otimes m'$,
+$$
+0\to M\to M'\rightrightarrows M'\otimes_RR',
+$$
+and the flatness of $R'$ over $R$ shows that $M\otimes_RR'\cong M'$ compatibly with $\phi$; the cocycle condition is what makes the equalizer compute the correct module and makes the two constructions inverse. $\square$</p>
+<p><strong>Definition.</strong> The <strong>Amitsur complex</strong> of a faithfully flat cover $R\to R'$ is the cosimplicial object with terms $R'\otimes_RR'\otimes_R\cdots\otimes_RR'$ and the coface maps inserting $1$ in the consecutive positions; for an $R$-module $M$ the complex
+$$
+0\to M\to M\otimes_RR'\to M\otimes_RR'\otimes_RR'\to\cdots
+$$
+is the <strong>Amitsur cochain complex</strong>, and its cohomology computes the descent obstruction: $H^0$ is the module $M$ itself and the higher cohomology vanishes whenever the descent is effective.</p>
+<p><strong>Proposition.</strong> For a faithfully flat cover the Amitsur complex of $M$ is exact in positive degrees — it is a resolution of $M$ by the tensor powers of $R'$ — so $H^0=M$ and $H^n=0$ for $n\ge1$, and every descent datum of $R'$-modules is effective. Comparing the cohomology of the base with the cohomology of the cover in the derived setting is the Grothendieck spectral sequence of the composite of the two global-section functors, developed in <em>Spectral Sequences</em> and applied to the cosimplicial object of the cover; the obstruction to descending a more general structure is the usual Čech-style obstruction of <em>Sheaves on Sites</em>. The complex is the algebraic form of the cosimplicial object attached to a covering of a site.</p>
+<p><em>Proof (in outline).</em> The exactness of the Amitsur complex in positive degrees is faithfully flat descent applied to the modules of the complex: a cycle in degree $n$ is a tensor that becomes a coboundary after the faithfully flat extension, and faithful flatness lets the coboundary descend. The comparison with a spectral sequence is the standard one for a cosimplicial object, filtered by the cosimplicial degree, and belongs to the Grothendieck theory of <em>Spectral Sequences</em>. $\square$</p>
+<p><strong>Example.</strong> Let $k\to K$ be a finite Galois extension of fields with group $\Gamma$. Then the descent data for the cover are the $K$-vector spaces with a semilinear action of $\Gamma$, and the faithfully flat descent theorem specialises to <strong>Galois descent</strong>: the $k$-vector spaces are equivalent to the $K$-vector spaces with a semilinear $\Gamma$-action. The identification of the automorphism group with $\Gamma$ and the semilinearity belong to the theory of <em>Fields</em>, and the cohomological obstructions to the descent of more general structures are the Galois cohomology groups $H^1(\Gamma,-)$.</p>
+<h2 id="monadic-descent">Monadic Descent</h2>
+<p><strong>Definition.</strong> A <strong>monad</strong> on a category $\mathcal{A}$ is an endofunctor $\mathbb{T}:\mathcal{A}\to\mathcal{A}$ with natural transformations $\eta:\mathrm{id}\to\mathbb{T}$ and $\mu:\mathbb{T}^2\to\mathbb{T}$ satisfying the associativity and unit laws. The <strong>Eilenberg–Moore category</strong> $\mathcal{A}^{\mathbb{T}}$ has as objects the pairs $(A,a)$ with $a:\mathbb{T}A\to A$ satisfying $a\eta_A=\mathrm{id}$ and $a\mu_A=a\mathbb{T}a$, and as morphisms the morphisms of $\mathcal{A}$ commuting with the structure maps.</p>
+<p><strong>Theorem (Barr–Beck, monadicity).</strong> Let $F:\mathcal{A}\to\mathcal{B}$ be a functor with a left adjoint $L:\mathcal{B}\to\mathcal{A}$, with the induced monad $\mathbb{T}=F\circ L$ on $\mathcal{B}$. Then the comparison functor $\mathcal{A}\to\mathcal{B}^{\mathbb{T}}$ is an equivalence if and only if $F$ creates coequalizers of the pairs of the form $(LFLx\rightrightarrows Lx)$ for every object $x$ of $\mathcal{B}$: the functor must reflect isomorphisms and preserve the coequalizers of the $F$-split pairs. When these conditions hold, the descent data over $\mathcal{A}$ are exactly the algebras over the monad, and the comparison functor is an equivalence.</p>
+<p><strong>Corollary.</strong> Faithfully flat descent for modules is the case of the monadicity theorem in which $\mathcal{B}=\mathbf{Mod}_R$, $\mathcal{A}=\mathbf{Mod}_{R'}$, and $F=-\otimes_RR'$: the monad is $M\mapsto M\otimes_RR'$ with the multiplication induced by the multiplication of $R'$, the Eilenberg–Moore algebras are the $R'$-modules with descent data, and the flatness and the faithfulness of the cover are exactly the conditions under which the coequalizers are created. The same pattern gives the descent for the modules over a sheaf of rings on a site and for the quasi-coherent sheaves of the geometric case of Part II.</p>
+<p><em>Proof.</em> The monadicity theorem is quoted; the identification of the algebras with the descent data is the computation of the monad in the module case, where the structure map $M\otimes_RR'\otimes_RR'\to M\otimes_RR'$ is the multiplication of the tensor factors and the coherence is the cocycle condition. The creation of the coequalizers is the flatness of $R'$ together with the faithfulness of the cover. $\square$</p>
+<p><strong>Example.</strong> For a cover by a single faithfully flat morphism that is also finite and locally free, the monad is the one attached to a finite projective algebra and the descent data are the modules over the algebra with the compatible action of the dual; this is the algebraic form of the descent of vector bundles, and the geometric case belongs to Part II.</p>
+<h2 id="stacks-and-stackification">Stacks and Stackification</h2>
+<p><strong>Definition.</strong> A <strong>stack</strong> over a site $(\mathcal{C},J)$ is an indexed category $\mathbb{X}$ over $\mathcal{C}$ such that for every object and every covering the comparison functor of descent data is an equivalence; equivalently, a fibred category over $\mathcal{C}$ in which the descent data for every covering are effective. A <strong>stack in groupoids</strong> is a stack whose fibres are groupoids, and the <strong>stackification</strong> of a prestack is the universal stack mapping to it, computed by the associated-sheaf construction on the descent categories, applied to the objects in each fibre and to the morphisms.</p>
+<p><strong>Theorem (stackification).</strong> Every prestack over a site has a stackification, unique up to equivalence, and the stackification is left exact in the sense that it preserves the finite limits of the prestacks; the stackification of the prestack of the sets is the associated sheaf, and the stackification of the prestack of the categories is the stack of the categories with the effective descent data. For a site with a subcanonical topology the representable prestacks are already stacks.</p>
+<p><em>Proof.</em> The stackification is constructed by composing the descent comparison with the associated sheaf functor on the fibres, and the universal property follows from the adjunction between the prestacks and the stacks; the identification with the associated sheaf is the case of the discrete fibres, and the left exactness is the exactness of the sheafification. $\square$</p>
+<p><strong>Example.</strong> For the site of a group $G$ with the trivial topology the stacks are the categories with an action of $G$, that is, the $G$-objects in the 2-category of categories; for the étale site of a scheme the stacks are the étale stacks, whose geometric theory belongs to Part II; the stack of the torsors under a sheaf of groups is the classifying stack, and its sections over a cover are the cohomology classes of $H^1$ of the cover.</p>
+<p><strong>Remark.</strong> The homotopy-coherent refinement of the descent, in which the cocycle condition holds only up to higher coherence and the stacks are replaced by the $\infty$-stacks, and the derived refinement, in which the modules are replaced by the complexes and the descent is the descent for the derived categories, belong to Part II, whereandtreat them. The present article uses only the strict, one-categorical form, which is the one needed for the algebraic descent of modules and sheaves.</p>
+<h2 id="summary">Summary</h2>
+<p>An indexed category over a site assigns a category to every object and a base-change functor to every morphism; a descent datum for a covering is a family of objects over the members of the cover with compatible isomorphisms over the fibre products satisfying the cocycle condition, and the covering is effective for descent when the comparison functor from the objects of the base to the descent data is an equivalence. The fundamental theorem is the faithfully flat descent of Grothendieck: for a faithfully flat ring homomorphism the category of modules over the base is equivalent to the category of modules over the cover equipped with descent data, and the equivalence is computed by the Amitsur complex, whose positive cohomology vanishes exactly when the descent is effective. The same statement is the module case of the monadicity theorem of Barr–Beck, where the descent data are the algebras over the monad induced by the extension of scalars, and the flatness and the faithfulness of the cover are the hypotheses under which the required coequalizers are created. A stack is an indexed category whose descent data are effective, every prestack has a stackification, and the stack condition on the discrete fibres is exactly the sheaf condition of <em>Sheaves on Sites</em>.</p>
+<p>In this way descent theory unifies the gluing of the sheaves with the reconstruction of the algebraic objects from a cover, the cohomology of a site measures the obstruction to the effectivity of the descent, and the spectral sequence of the Amitsur complex relates the cohomology of the base to that of the cover. The strict theory is complete as an algebraic tool; the homotopy-coherent and the derived refinements, and the geometric descent of the quasi-coherent sheaves, belong to Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{X}$</td>
+<td>indexed category over $\mathcal{C}$</td>
+</tr>
+<tr>
+<td>$\mathbb{X}_S$</td>
+<td>fibre over the object $S$</td>
+</tr>
+<tr>
+<td>$f^*$</td>
+<td>base-change functor</td>
+</tr>
+<tr>
+<td>$\int\mathbb{X}$</td>
+<td>total category of the indexed category</td>
+</tr>
+<tr>
+<td>$\mathcal{U}=\{f_i:c_i\to c\}$</td>
+<td>covering family</td>
+</tr>
+<tr>
+<td>$\mathrm{Desc}(\mathcal{U},\mathbb{X})$</td>
+<td>descent category</td>
+</tr>
+<tr>
+<td>$\phi_{ij}$</td>
+<td>descent isomorphism over $c_i\times_cc_j$</td>
+</tr>
+<tr>
+<td>$R\to R'$</td>
+<td>faithfully flat cover</td>
+</tr>
+<tr>
+<td>Amitsur complex</td>
+<td>$R\rightrightarrows R'\rightrightarrows R'\otimes_RR'\cdots$</td>
+</tr>
+<tr>
+<td>$\mathbb{T}$</td>
+<td>monad, $\mathbb{T}=F\circ L$</td>
+</tr>
+<tr>
+<td>$\mathcal{A}^{\mathbb{T}}$</td>
+<td>Eilenberg–Moore category of a monad</td>
+</tr>
+<tr>
+<td>$H^p(G,M)$</td>
+<td>group cohomology of the descent</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, Alexander Grothendieck and Jean-Louis Verdier, <em>Théorie des topos et cohomologie étale des schémas (SGA 4)</em> (Springer Lecture Notes in Mathematics 269, 270, 305, 1972–1973), for the descent theory of sites and the stacks.</li>
+<li>Michael Barr and Jon Beck, "Homology and standard constructions", in <em>Seminar on Triples and Categorical Homology Theory</em> (Springer Lecture Notes in Mathematics 80, 1969), for the monadicity theorem.</li>
+<li>Alexander Grothendieck, <em>Technique de descente et théorèmes d'existence en géométrie algébrique (FGA)</em> (Séminaire Bourbaki, 1959–1962), for the faithfully flat descent and the Amitsur complex.</li>
+<li>Alexander Grothendieck, "Sur quelques points d'algèbre homologique", <em>Tohoku Mathematical Journal</em> 9 (1957), 119–221, for the spectral sequences and the abelian-category methods used in the descent.</li>
+<li>Peter T. Johnstone, <em>Sketches of an Elephant: A Topos Theory Compendium</em> (Oxford University Press, 2002), for the descent, the stacks and the internal theory.</li>
+<li>Saunders Mac Lane and Ieke Moerdijk, <em>Sheaves in Geometry and Logic: A First Introduction to Topos Theory</em> (Springer, 1992), for the descent theory in the topos-theoretic form.</li>
+<li>Angelo Vistoli, "Grothendieck topologies, fibered categories and descent theory", in <em>Fundamental Algebraic Geometry</em> (American Mathematical Society, 2005), for the systematic treatment of the fibred categories, the descent and the stacks.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

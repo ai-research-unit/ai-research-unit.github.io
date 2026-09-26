@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Witt Group and the Grothendieck–Witt Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-witt-group-and-the-grothendieckwitt-ring"><strong>The Witt Group and the Grothendieck–Witt Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The isometry classes of non-degenerate quadratic forms over a field carry two operations: the orthogonal sum, which adds dimensions, and the tensor product, which multiplies them. Witt cancellation makes the first operation invertible, and the second distributes over it, so the isometry classes form a ring. Quotienting by the forms that are sums of hyperbolic planes removes the part of a form that carries no anisotropic information and produces the <strong>Witt ring</strong> $W(F)$, the home of the classical invariants of a quadratic form. This article constructs the ring, the <strong>Grothendieck–Witt ring</strong> $GW(F)$ from which it descends, the invariants — dimension, discriminant, signature, Hasse invariant — and the ideal filtration whose successive quotients are the Milnor K-theory groups.</p>
+<p>The base is a field $F$ of characteristic not $2$ throughout, since every construction uses the cancellation theorem of <em>Witt's Theorems</em>. The isometry class, the discriminant and the signed discriminant are from <em>Bilinear Forms</em> and <em>The Rotation Group and Orientation</em>; the Witt index and the decomposition $V \cong V_0 \perp m\,H$ are from <em>Witt's Theorems</em>; the tensor product of quadratic forms uses the tensor product of vector spaces from category 04. The characteristic classes are stated as standard results and the final identification with Milnor K-theory is cited.</p>
+<h2 id="the-grothendieckwitt-ring">The Grothendieck–Witt Ring</h2>
+<h3 id="the-monoid-of-isometry-classes">The Monoid of Isometry Classes</h3>
+<p>Let $\mathcal{M}(F)$ be the set of isometry classes of non-degenerate quadratic forms over $F$. The orthogonal sum induces a well-defined operation</p>
+<p>$$
+[q] + [q'] = [q \perp q'],
+$$</p>
+<p>which is associative and commutative with identity the class of the zero form on the zero-dimensional space, the empty sum of squares; this makes $\mathcal{M}(F)$ a commutative monoid. By the cancellation theorem of <em>Witt's Theorems</em>, the operation is cancellative: $q \perp q_1 \cong q \perp q_2$ implies $q_1 \cong q_2$. Hence the natural map from $\mathcal{M}(F)$ to its Grothendieck group is injective.</p>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>Grothendieck–Witt group</strong> $GW(F)$ is the Grothendieck group of the monoid $\mathcal{M}(F)$ under orthogonal sum; its elements are formal differences $[q] - [q']$ of isometry classes. The <strong>dimension</strong> gives a homomorphism</p>
+<p>$$
+\dim : GW(F) \longrightarrow \mathbb{Z}, \qquad \dim([q] - [q']) = \dim q - \dim q'.
+$$</p>
+<p>It is surjective, because the classes $[\langle 1\rangle]$ and $[\langle -1\rangle]$ have dimension $1$, and its kernel is the <strong>augmentation ideal</strong> $\widetilde{GW}(F)$, generated by the differences of forms of equal dimension.</p>
+<p><strong>Proposition.</strong> As an abelian group, $GW(F) \cong \mathbb{Z} \oplus \widetilde{GW}(F)$, and the injective map $\mathcal{M}(F) \to GW(F)$, $[q] \mapsto [q]$, identifies the monoid with the set of classes of non-negative dimension.</p>
+<p><strong>Proof.</strong> The dimension homomorphism splits via $\mathbb{Z} \to GW(F)$, $1 \mapsto [\langle 1\rangle]$, giving the direct sum decomposition; cancellation is what makes the map from the monoid injective. $\square$</p>
+<h3 id="the-discriminant">The Discriminant</h3>
+<p>The <strong>discriminant</strong> of a non-degenerate form is $\Delta(q) = \det G \in F^\times/(F^\times)^2$, an element of the group of square classes, as in <em>Bilinear Forms</em>. It satisfies $\Delta(q \perp q') = \Delta(q)\Delta(q')$ and, for a form of dimension $n$ and $c \in F^\times$, $\Delta(cq) = c^n\Delta(q)$. Hence $\Delta$ is a homomorphism on the monoid, and it descends to $GW(F)$:</p>
+<p>$$
+\Delta : GW(F) \longrightarrow F^\times/(F^\times)^2, \qquad \Delta([q] - [q']) = \Delta(q)\Delta(q')^{-1}.
+$$</p>
+<p>The <strong>signed discriminant</strong>, introduced in <em>The Rotation Group and Orientation</em>, is</p>
+<p>$$
+d(q) = (-1)^{n(n-1)/2}\,\Delta(q), \qquad n = \dim q.
+$$</p>
+<p>It differs from $\Delta$ by the sign $(-1)^{n(n-1)/2}$, which is the sign of the reversal of the $n$ factors in the product $e_1 \cdots e_n$ of a basis; for the hyperbolic plane $d(H) = (-1)^{1}(-1) = 1$, so the signed discriminant, unlike the unsigned one, is trivial on $H$ and therefore descends further to the Witt ring.</p>
+<h3 id="the-ring-structure">The Ring Structure</h3>
+<p><strong>Definition.</strong> The <strong>tensor product</strong> of two quadratic forms $(V, q)$ and $(W, q')$ is the quadratic form $q \otimes q'$ on $V \otimes W$ with the two properties</p>
+<p>$$
+(q \otimes q')(v \otimes w) = q(v)q'(w), \qquad B_{q \otimes q'} = B \otimes B',
+$$</p>
+<p>where $B \otimes B'$ is the tensor product of the polar forms. Such a form exists and is unique: the tensor product $B \otimes B'$ is a symmetric bilinear form on $V \otimes W$, and the quadratic form $Q(x) = (B \otimes B')(x, x)$ attached to it satisfies $Q(v \otimes w) = q(v)q'(w)$ on decomposable tensors, which span $V \otimes W$; conversely any form with the two properties has polar form $B \otimes B'$ and is therefore determined, since over a field of characteristic not $2$ a quadratic form is determined by its polar form.</p>
+<p><strong>Proposition.</strong> In a diagonal basis the tensor product is diagonal:</p>
+<p>$$
+\langle a_1, \ldots, a_m\rangle \otimes \langle b_1, \ldots, b_n\rangle \cong \bigl\langle a_i b_j : 1 \leq i \leq m,\ 1 \leq j \leq n\bigr\rangle.
+$$</p>
+<p>The tensor product is commutative and associative up to isometry, distributive over the orthogonal sum, and $q \otimes \langle 1\rangle \cong q$.</p>
+<p><strong>Proof.</strong> Take bases with $q(e_i) = a_i$, $B(e_i, e_j) = 0$ and $q'(f_k) = b_k$, $B'(f_k, f_l) = 0$. The products $e_i \otimes f_k$ form an orthogonal basis of $V \otimes W$ with $(q \otimes q')(e_i \otimes f_k) = a_ib_k$. Bilinearity gives distributivity and the unit property; commutativity and associativity follow from the corresponding properties of the tensor product of spaces. $\square$</p>
+<p><strong>Theorem.</strong> The operations $+$ and $\otimes$ make $GW(F)$ a commutative ring with identity $[\langle 1\rangle]$. The subgroup $\mathbb{Z}\cdot[H]$ generated by the class of the hyperbolic plane is an ideal, and the quotient</p>
+<p>$$
+W(F) = GW(F) / \mathbb{Z}\cdot[H]
+$$</p>
+<p>is the <strong>Witt ring</strong> of $F$, a commutative ring with identity.</p>
+<p><strong>Proof.</strong> Distributivity is the distributivity of the tensor product over the orthogonal sum; the identity is $[\langle 1\rangle]$ because $\langle 1\rangle \otimes q \cong q$. For the ideal property, compute</p>
+<p>$$
+[H] \otimes [q] = [\langle 1, -1\rangle \otimes q] = [q \perp (-q)],
+$$</p>
+<p>which is hyperbolic of dimension $2\dim q$, hence a sum of $\dim q$ hyperbolic planes; so the subgroup generated by $[H]$ is closed under multiplication and is an ideal. $\square$</p>
+<h2 id="the-witt-ring">The Witt Ring</h2>
+<h3 id="isometry-classes-of-anisotropic-forms">Isometry Classes of Anisotropic Forms</h3>
+<p><strong>Theorem.</strong> Every class in $W(F)$ has a unique representative that is anisotropic, and $[q] = 0$ in $W(F)$ if and only if $q$ is hyperbolic, that is $q \cong m\,H$ for some $m$.</p>
+<p><strong>Proof.</strong> By the decomposition theorem of <em>Witt's Theorems</em>, $q \cong q_0 \perp m\,H$ with $q_0$ anisotropic. In $W(F)$ the hyperbolic part is zero, so $[q] = [q_0]$; conversely if $[q]=0$ then $q$ differs from a hyperbolic form by a hyperbolic summand, and cancellation of hyperbolic planes removes it. Uniqueness of $q_0$ up to isometry is the uniqueness statement of the decomposition theorem. $\square$</p>
+<p>So $W(F)$ is generated, as an additive group, by the isometry classes of anisotropic forms; two orthogonal sums of anisotropic forms are equal exactly when their anisotropic parts are isometric, and a relation appears whenever an anisotropic form splits as an orthogonal sum of two smaller forms, so the group is a quotient of the free abelian group on those classes and is not free in general.</p>
+<h3 id="the-dimension-and-the-sign">The Dimension and the Sign</h3>
+<p><strong>Proposition.</strong> The dimension taken modulo $2$ gives a surjective ring homomorphism</p>
+<p>$$
+\dim : W(F) \longrightarrow \mathbb{Z}/2\mathbb{Z},
+$$</p>
+<p>the <strong>augmentation</strong>, and $\mathbb{Z}/2\mathbb{Z}$ acquires the ring structure of the prime field $\mathbb{F}_2$. The <strong>fundamental ideal</strong> is</p>
+<p>$$
+I = \ker(\dim) = \{[q] \in W(F) : \dim q \text{ is even}\}.
+$$</p>
+<p><strong>Proof.</strong> The dimension is additive on orthogonal sums and multiplicative on tensor products, $\dim(q \otimes q') = \dim q \cdot \dim q'$, and the hyperbolic plane has even dimension, so the map descends to $W(F)$ and is a ring homomorphism. It is surjective because $[\langle 1\rangle]$ has dimension one. $\square$</p>
+<h3 id="the-discriminant-descends">The Discriminant Descends</h3>
+<p><strong>Theorem.</strong> The signed discriminant descends to a well-defined function</p>
+<p>$$
+d : W(F) \longrightarrow F^\times/(F^\times)^2,
+$$</p>
+<p>which is a group homomorphism on the fundamental ideal $I$ and vanishes there exactly on $I^2$, the square of the fundamental ideal. Consequently $d$ induces an isomorphism</p>
+<p>$$
+I / I^2 \cong F^\times/(F^\times)^2.
+$$</p>
+<p><strong>Proof.</strong> The signed discriminant is unchanged by the addition of a hyperbolic plane, because $d(q \perp H) = d(q)$, and it is multiplicative on forms of even dimension; it therefore descends to a well-defined function on $W(F)$ that is a group homomorphism on $I$. For $[q], [q'] \in I$ the forms have even dimension, say $2m$ and $2n$, so $N = \dim(q \otimes q') = 4mn$; the discriminant of the tensor product is $(\Delta q)^{2n}(\Delta q')^{2m}$, a square because both exponents are even, and the sign factor is $(-1)^{N(N-1)/2} = (-1)^{(N/2)(N-1)} = 1$ because $N/2 = 2mn$ is even. Hence $d(q \otimes q') = 1$ and $d$ kills $I^2$. It is surjective because $d(\langle a\rangle \perp \langle -1\rangle) = a$ runs over all square classes as $a$ runs over $F^\times$, and $\langle a\rangle\perp\langle -1\rangle \in I$; injectivity on $I/I^2$ is the standard companion statement. $\square$</p>
+<h3 id="pfister-forms">Pfister Forms</h3>
+<p>The powers of the fundamental ideal are generated by a single family of forms, the tensor powers of the binary forms $\langle 1, -a\rangle$.</p>
+<p><strong>Definition.</strong> For $a_1, \ldots, a_n \in F^\times$ the <strong>$n$-fold Pfister form</strong> is the $n$-fold tensor product</p>
+<p>$$
+\langle\!\langle a_1, \ldots, a_n \rangle\!\rangle = \bigotimes_{i=1}^{n} \langle 1, -a_i \rangle,
+$$</p>
+<p>a form of dimension $2^n$. Thus $\langle\!\langle a \rangle\!\rangle = \langle 1, -a\rangle$, and $\langle\!\langle a, b \rangle\!\rangle = \langle 1, -a, -b, ab\rangle$.</p>
+<p><strong>Proposition.</strong> Let $\pi = \langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$.</p>
+<ol>
+<li>$\dim \pi = 2^n$, and the tensor product of an $m$-fold and an $n$-fold Pfister form is an $(m+n)$-fold Pfister form.</li>
+<li>For $n \geq 2$ the discriminant $\Delta(\pi)$ is a square, indeed $\Delta(\pi) = (a_1 \cdots a_n)^{2^{n-1}}$.</li>
+<li>$\pi \in I^n$.</li>
+</ol>
+<p><strong>Proof.</strong> The dimension statement is multiplicativity of the dimension. For the discriminant, the diagonal entries of the tensor product are the products $\prod_{i \in S}(-a_i)$ for $S \subseteq \{1, \ldots, n\}$, and the exponent of $a_i$ in the product of all of them is $\sum_{S \ni i} 1 = 2^{n-1}$, with the signs contributing $(-1)^{n2^{n-1}} = 1$ for $n \geq 2$. Finally $\langle 1, -a_i\rangle = [\langle 1\rangle] - [\langle a_i\rangle]$ has even dimension, so it lies in $I$, and $I^n$ is spanned by products of $n$ elements of $I$; the tensor product is such a product. $\square$</p>
+<p><strong>Proposition.</strong> The additive group $I^n$ is generated by the $n$-fold Pfister forms.</p>
+<p><strong>Proof.</strong> The classes $[\langle a\rangle]$ of the one-dimensional forms generate $W(F)$ as an abelian group, because a diagonal form satisfies $[\langle a_1, \ldots, a_m\rangle] = \sum_i[\langle a_i\rangle]$, the orthogonal sum being the sum in $W(F)$, and because $[\langle -1\rangle] = -[\langle 1\rangle]$, the relation $[\langle 1\rangle] + [\langle -1\rangle] = [H] = 0$ holding since $\langle 1\rangle \perp \langle -1\rangle = H$. The augmentation is onto with kernel $I$, so $I$ is generated by the classes $[\langle 1\rangle] - [\langle a\rangle] = [\langle 1, -a\rangle] = \langle\!\langle a\rangle\!\rangle$. An element of $I^n$ is a sum of products of $n$ elements of $I$, each an integral combination of one-fold Pfister forms; expanding a product of such combinations gives an integral combination of products of $n$ one-fold Pfister forms, and a product of Pfister forms is the Pfister form of the concatenated list by the first part of the proposition. $\square$</p>
+<p><strong>Theorem (Pfister).</strong> An $n$-fold Pfister form is either anisotropic, or hyperbolic; in the second case it is the orthogonal sum of $2^{n-1}$ hyperbolic planes.</p>
+<p><strong>Proof for $n = 1$.</strong> The form $\langle 1, -a\rangle$ represents zero exactly when $a = x^2$ for some $x \in F^\times$, that is exactly when $a$ is a square; then $\langle 1, -a\rangle \cong \langle 1, -1\rangle = H$, and otherwise the equation $x^2 = ay^2$ has only the trivial solution, so the form is anisotropic. $\square$</p>
+<p><strong>Proof for $n = 2$.</strong> The form $\langle\!\langle a, b\rangle\!\rangle = \langle 1, -a, -b, ab\rangle$ is the norm form of the quaternion algebra $(a, b)_F$ with basis $1, i, j, ij$ satisfying $i^2 = a$, $j^2 = b$ and $ij = -ji$; by the norm-form theory of <em>Quadratic Forms over Algebras and Norm Forms</em>, the norm form is isotropic exactly when the algebra is not a division algebra. In that case the algebra is $M_2(F)$, and the norm form becomes the determinant, which is isometric to $2H$ by the identity</p>
+<p>$$
+xw - yz = \Bigl(\frac{x + w}{2}\Bigr)^2 - \Bigl(\frac{x - w}{2}\Bigr)^2 - \Bigl(\frac{y + z}{2}\Bigr)^2 + \Bigl(\frac{y - z}{2}\Bigr)^2
+$$</p>
+<p>for the four matrix entries, the change of variables being invertible when $2 \neq 0$. Hence an isotropic $2$-fold Pfister form is hyperbolic. $\square$</p>
+<p>The general case is the classical theorem of Pfister and is cited as standard; it is proved by induction on $n$, the inductive step using the two structural properties of Pfister forms recorded next.</p>
+<p><strong>Remark.</strong> Let $\pi$ be an $n$-fold Pfister form. Then $\pi \otimes \pi \cong 2^n \pi$, and $\pi$ is <strong>round</strong>: if $\pi$ represents $x \in F^\times$, then $\pi \otimes \langle 1, -x\rangle \cong \pi$. The first identity says that $\pi$ is a group form, and the second is what makes an isotropic Pfister form collapse to a sum of hyperbolic planes. Both are standard consequences of the multiplicativity of the Pfister construction.</p>
+<p><strong>Corollary.</strong> The two-fold Pfister form $\langle\!\langle a, b\rangle\!\rangle$ is the norm form of the quaternion algebra $(a, b)_F$; Pfister's theorem in that case states that the norm form of a quaternion algebra is anisotropic exactly when the algebra is a division algebra, and hyperbolic exactly when the algebra splits.</p>
+<h3 id="the-higher-ideal-quotients">The Higher Ideal Quotients</h3>
+<p><strong>Theorem (standard).</strong> There is an injective homomorphism, the <strong>Hasse invariant</strong>,</p>
+<p>$$
+e_2 : I^2/I^3 \hookrightarrow \operatorname{Br}_2(F),
+$$</p>
+<p>into the two-torsion of the Brauer group of $F$, which is an isomorphism when $F$ is a local or global field and, by Merkurjev's theorem, an isomorphism for every field.</p>
+<p><strong>Theorem (Milnor's conjecture, Voevodsky).</strong> For every $n \geq 0$ there is an isomorphism</p>
+<p>$$
+I^n/I^{n+1} \cong k_n^M(F)/2,
+$$</p>
+<p>where $k_n^M(F)$ is the $n$-th Milnor K-theory group of $F$ and the quotient is by multiplication by $2$. For $n = 0$ this recovers $I^0/I^1 \cong \mathbb{Z}/2\mathbb{Z}$, for $n = 1$ it recovers $I/I^2 \cong F^\times/(F^\times)^2$ since $k_1^M(F) = F^\times$, and for $n = 2$ it identifies $I^2/I^3$ with the two-torsion of the Brauer group modulo symbols. The theorem is deep and is cited as standard; it is the precise sense in which the Witt ring encodes the arithmetic of the field.</p>
+<h2 id="orderings-and-the-signature">Orderings and the Signature</h2>
+<h3 id="the-signature-homomorphism">The Signature Homomorphism</h3>
+<p>Let $F$ be formally real and let $P$ be an ordering of $F$, with real closure $F_P$. Over the real closed field $F_P$ every form is classified by its signature, so $W(F_P) \cong \mathbb{Z}$; the real closure is unique up to $F$-isomorphism, and the composite</p>
+<p>$$
+\operatorname{sign}_P : W(F) \longrightarrow W(F_P) \xrightarrow{\ \cong\ } \mathbb{Z}, \qquad \operatorname{sign}_P([q]) = p - r,
+$$</p>
+<p>where $(p, r)$ is the signature of the extended form $q \otimes_F F_P$, is therefore well defined.</p>
+<p><strong>Proposition.</strong> For each ordering $P$ the map $\operatorname{sign}_P$ is a ring homomorphism, and it kills the hyperbolic plane.</p>
+<p><strong>Proof.</strong> Extension of scalars commutes with orthogonal sums and with tensor products, so it induces a ring homomorphism $W(F) \to W(F_P)$; the isomorphism $W(F_P) \to \mathbb{Z}$ given by the signature is a ring homomorphism because signatures add on orthogonal sums and multiply on tensor products, $\operatorname{sign}(q \otimes q') = \operatorname{sign}(q)\operatorname{sign}(q')$. The hyperbolic plane has signature $0$, so it is in the kernel. $\square$</p>
+<p><strong>Theorem.</strong> Let $F$ be formally real. Then the <strong>total signature</strong></p>
+<p>$$
+\operatorname{sign} : W(F) \longrightarrow \prod_{P} \mathbb{Z},
+$$</p>
+<p>the product over all orderings of $F$, is a ring homomorphism, and its image is a subring of a product of copies of $\mathbb{Z}$, hence reduced. The kernel contains the nilradical of $W(F)$, so the total signature is injective on $W(F)$ modulo nilpotents.</p>
+<p><strong>Proof.</strong> The image of a nilpotent element is nilpotent, and a product of copies of $\mathbb{Z}$ has no nonzero nilpotents, so the nilradical is in the kernel and the image, being a subring of a reduced ring, is reduced. $\square$</p>
+<p><strong>Remark.</strong> The refined statement, due to Pfister and the reduced theory of the Witt ring, is that for a formally real field the kernel of the total signature is exactly the nilradical, and $W(F)$ modulo nilpotents is the ring of functions on the space of orderings that arise as signatures; the theory is cited as standard. What is used here is only the direction proved: signatures are ring homomorphisms into $\mathbb{Z}$, and they detect at least the nilpotent part of the obstruction to being hyperbolic.</p>
+<h3 id="examples-over-ordered-fields">Examples over Ordered Fields</h3>
+<p><strong>Example (real closed field).</strong> If $F$ is real closed it has a unique ordering and is its own real closure, so $W(F) \cong \mathbb{Z}$, generated by $[\langle 1\rangle]$, and the fundamental ideal is $I = 2\mathbb{Z}$, with $I^n = 2^n\mathbb{Z}$. The quotient $I^n/I^{n+1} \cong \mathbb{Z}/2\mathbb{Z}$ is generated by the class of the $n$-fold Pfister form, in agreement with the Milnor–Voevodsky statement.</p>
+<p><strong>Example ($\mathbb{R}$ and $\mathbb{Q}$).</strong> For $\mathbb{R}$ there is a single ordering and the signature is the difference of the numbers of positive and negative squares in a diagonal form, so $W(\mathbb{R}) \cong \mathbb{Z}$ and a form is hyperbolic exactly when its signature vanishes. The field $\mathbb{Q}$ also has a single ordering, but the signature $W(\mathbb{Q}) \to \mathbb{Z}$ is far from injective: the form $\langle 1, -2\rangle$ has signature $1 - 1 = 0$ and is not hyperbolic, because $2$ is not a square in $\mathbb{Q}$ and the form is anisotropic of dimension $2$. The same form exhibits $2$-torsion in $W(\mathbb{Q})$, since</p>
+<p>$$
+2\langle 1, -2\rangle \cong \langle 1, 1, -2, -2\rangle \cong \langle\!\langle 2, 2\rangle\!\rangle
+$$</p>
+<p>is isotropic — in the middle form the vector $(2, 0, 1, 1)$ satisfies $q = 4 + 0 - 2 - 2 = 0$, because $4 = 2 + 2$ — and an isotropic twofold Pfister form is hyperbolic; hence $2[\langle 1, -2\rangle] = 0$ while $[\langle 1, -2\rangle] \neq 0$. So the total signature sees only part of $W(F)$, and over $\mathbb{Q}$ the arithmetic of the anisotropic forms is not visible to the single ordering.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-complex-numbers">The Complex Numbers</h3>
+<p>Over $\mathbb{C}$ every non-degenerate form of dimension $n$ is isometric to $\langle 1, \ldots, 1\rangle$ of length $n$, because every element of $\mathbb{C}^\times$ is a square and the diagonal entries can be normalised to $1$. The hyperbolic plane is $\langle 1, -1\rangle \cong \langle 1, 1\rangle$, so $2[\langle 1\rangle] = 0$, and</p>
+<p>$$
+W(\mathbb{C}) \cong \mathbb{Z}/2\mathbb{Z}, \qquad GW(\mathbb{C}) \cong \mathbb{Z}.
+$$</p>
+<p>Indeed the monoid of isometry classes is $\mathbb{N}$, generated by $[\langle 1\rangle]$, whose Grothendieck group is $\mathbb{Z}$; the hyperbolic plane is $\langle 1, -1\rangle \cong \langle 1, 1\rangle = 2[\langle 1\rangle]$, so the quotient is $\mathbb{Z}/2\mathbb{Z}$.</p>
+<p>The fundamental ideal is $I = 0$, since $[\langle 1, 1\rangle] = 2[\langle 1\rangle] = 0$ in a group of exponent two; hence $I^2 = 0$ and the filtration collapses: over a field in which every element is a square the Witt ring has order two and all the higher invariants vanish.</p>
+<h3 id="the-real-numbers">The Real Numbers</h3>
+<p>Over $\mathbb{R}$ the invariants are the rank and the signature $\sigma(q) = p - r$ of Sylvester's law, as in <em>Quadratic Forms and Polarisation</em>. The signature is additive under orthogonal sums and multiplicative under tensor products, so it defines a surjective ring homomorphism</p>
+<p>$$
+\sigma : W(\mathbb{R}) \longrightarrow \mathbb{Z}, \qquad [q] \longmapsto \sigma(q).
+$$</p>
+<p><strong>Theorem.</strong> The signature is an isomorphism $W(\mathbb{R}) \cong \mathbb{Z}$.</p>
+<p><strong>Proof.</strong> Every non-degenerate form over $\mathbb{R}$ decomposes as $p\langle 1\rangle \perp r\langle -1\rangle$ by Sylvester's law, so its class in $W(\mathbb{R})$ is $p[\langle 1\rangle] + r[\langle -1\rangle]$. The hyperbolic plane has signature $0$ and lies in the kernel. Since $\langle -1\rangle = -[\langle 1\rangle]$ in $W(\mathbb{R})$ (because $\langle 1\rangle \perp \langle -1\rangle = H$), the class of $q$ is $\sigma(q)[\langle 1\rangle]$, so the group is generated by $[\langle 1\rangle]$ with relations coming from $\sigma$; the map $\sigma$ is thus an isomorphism of abelian groups. It is a ring homomorphism because the signature is multiplicative under tensor products, as the diagonalisation $\langle a\rangle\otimes\langle b\rangle \cong \langle ab\rangle$ shows on generators. $\square$</p>
+<p>Since $W(\mathbb{R}) = \mathbb{Z}$, the fundamental ideal is the kernel of reduction mod $2$, namely $2\mathbb{Z}$, and every power $I^n = 2^n\mathbb{Z}$; the quotients $I^n/I^{n+1} \cong \mathbb{Z}/2$ match $k_n^M(\mathbb{R})/2 \cong \mathbb{Z}/2$.</p>
+<h3 id="a-finite-field">A Finite Field</h3>
+<p><strong>Theorem (standard).</strong> Let $\mathbb{F}_q$ be a finite field of odd order. Then</p>
+<p>$$
+W(\mathbb{F}_q) \cong \begin{cases} \mathbb{Z}/4\mathbb{Z}, & q \equiv 3 \pmod 4, \\ \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}, & q \equiv 1 \pmod 4. \end{cases}
+$$</p>
+<p>The generator in the first case is the class of $\langle 1\rangle$, of order four, with $2[\langle 1\rangle] = [\langle 1, 1\rangle]$ the nonzero class of the anisotropic plane; in the second case $-1$ is a square, the form $\langle 1, 1\rangle$ is hyperbolic so $2[\langle 1\rangle] = 0$, and the second generator is the class of the anisotropic plane $\langle 1, a\rangle$ for any nonsquare $a$.</p>
+<p><strong>Example.</strong> For $\mathbb{F}_3$ the square classes are $\{1, -1\}$ with $-1$ a nonsquare; the form $x^2 + y^2$ is anisotropic, so $[\langle 1, 1\rangle] \neq 0$ and $[\langle 1\rangle]$ has order four, giving $W(\mathbb{F}_3) \cong \mathbb{Z}/4\mathbb{Z}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The isometry classes of non-degenerate quadratic forms over a field $F$ of characteristic not $2$ form a cancellative commutative monoid under the orthogonal sum. Its Grothendieck group is the <strong>Grothendieck–Witt group</strong> $GW(F)$, which as an abelian group is $\mathbb{Z} \oplus \widetilde{GW}(F)$ with $\mathbb{Z}$ the dimension and $\widetilde{GW}(F)$ the kernel of $\dim$; the dimension and the discriminant descend to homomorphisms on $GW(F)$.</p>
+<p>The <strong>tensor product</strong> of quadratic forms is characterised by $(q\otimes q')(v \otimes w) = q(v)q'(w)$ and $B_{q\otimes q'} = B\otimes B'$, and in diagonal bases it multiplies entries: $\langle a_i\rangle \otimes \langle b_j\rangle = \langle a_ib_j\rangle$. Addition and tensor product make $GW(F)$ a commutative ring; the subgroup generated by the hyperbolic plane is the ideal $\mathbb{Z}[H]$ (because $H\otimes q \cong q\perp(-q)$ is hyperbolic), and the quotient is the <strong>Witt ring</strong> $W(F)$.</p>
+<p>Every class in $W(F)$ has a unique anisotropic representative, and a form is zero in $W(F)$ exactly when it is hyperbolic. The dimension modulo $2$ is the augmentation $W(F) \to \mathbb{Z}/2$, whose kernel is the <strong>fundamental ideal</strong> $I$. The <strong>signed discriminant</strong> $d(q) = (-1)^{n(n-1)/2}\Delta(q)$ descends to $W(F)$ and induces an isomorphism $I/I^2 \cong F^\times/(F^\times)^2$, vanishing on $I^2$. The <strong>Hasse invariant</strong> $e_2$ embeds $I^2/I^3$ into the two-torsion of the Brauer group, and <strong>Milnor's conjecture</strong>, proved by Voevodsky, identifies $I^n/I^{n+1} \cong k_n^M(F)/2$ with Milnor K-theory modulo $2$. The basic computations are $W(\mathbb{C}) \cong \mathbb{Z}/2$, $W(\mathbb{R}) \cong \mathbb{Z}$ via the signature, and $W(\mathbb{F}_q) \cong \mathbb{Z}/4$ for $q \equiv 3 \pmod 4$ and $\mathbb{Z}/2 \times \mathbb{Z}/2$ for $q \equiv 1 \pmod 4$.</p>
+<p>The <strong>Pfister forms</strong> $\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle = \bigotimes_i \langle 1, -a_i\rangle$ have dimension $2^n$, have discriminant $1$ for $n \geq 2$, and lie in $I^n$; the group $I^n$ is generated by the $n$-fold Pfister forms, and <strong>Pfister's theorem</strong> states that an $n$-fold Pfister form is either anisotropic or hyperbolic, in the second case being the sum of $2^{n-1}$ hyperbolic planes. The twofold case is the norm form of the quaternion algebra $(a, b)_F$, so the theorem there says that the norm form is anisotropic exactly when the algebra is a division algebra. A Pfister form satisfies $\pi \otimes \pi \cong 2^n\pi$ and is round: it satisfies $\pi \otimes \langle 1, -x\rangle \cong \pi$ for every nonzero value $x$ that it represents.</p>
+<p>For a formally real field and an ordering $P$, extension to the real closure gives the <strong>signature</strong> ring homomorphism $\operatorname{sign}_P : W(F) \to \mathbb{Z}$, and the total signature is a ring homomorphism of $W(F)$ into a product of copies of $\mathbb{Z}$, so its kernel contains the nilradical of $W(F)$. Over $\mathbb{R}$ the signature is an isomorphism onto $\mathbb{Z}$ and detects hyperbolicity; over $\mathbb{Q}$ it does not, since $\langle 1, -2\rangle$ has signature $0$ and is anisotropic, and $W(\mathbb{Q})$ even has $2$-torsion, $2[\langle 1, -2\rangle] = 0$, because the isotropic twofold Pfister form $\langle 1, 1, -2, -2\rangle$ is hyperbolic.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>Field of characteristic not $2$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(F)$</td>
+<td>Monoid of isometry classes of non-degenerate forms under $\perp$</td>
+</tr>
+<tr>
+<td>$[q]$</td>
+<td>Isometry class of a quadratic form</td>
+</tr>
+<tr>
+<td>$q \perp q'$</td>
+<td>Orthogonal sum</td>
+</tr>
+<tr>
+<td>$q \otimes q'$</td>
+<td>Tensor product of quadratic forms</td>
+</tr>
+<tr>
+<td>$GW(F)$</td>
+<td>Grothendieck–Witt ring</td>
+</tr>
+<tr>
+<td>$\widetilde{GW}(F)$</td>
+<td>Augmentation ideal, kernel of $\dim$</td>
+</tr>
+<tr>
+<td>$\dim$</td>
+<td>Dimension homomorphism, $GW(F) \to \mathbb{Z}$ and $W(F) \to \mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\Delta(q)$</td>
+<td>Discriminant in $F^\times/(F^\times)^2$</td>
+</tr>
+<tr>
+<td>$d(q)$</td>
+<td>Signed discriminant $(-1)^{n(n-1)/2}\Delta(q)$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>Hyperbolic plane, $\langle 1, -1\rangle$</td>
+</tr>
+<tr>
+<td>$W(F)$</td>
+<td>Witt ring, $GW(F)/\mathbb{Z}[H]$</td>
+</tr>
+<tr>
+<td>$I$</td>
+<td>Fundamental ideal, kernel of $\dim : W(F) \to \mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$I^n$</td>
+<td>Powers of the fundamental ideal</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>Hasse invariant, $I^2/I^3 \hookrightarrow \operatorname{Br}_2(F)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Br}_2(F)$</td>
+<td>Two-torsion of the Brauer group</td>
+</tr>
+<tr>
+<td>$k_n^M(F)$</td>
+<td>Milnor K-theory groups</td>
+</tr>
+<tr>
+<td>$\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$</td>
+<td>$n$-fold Pfister form $\bigotimes_i \langle 1, -a_i\rangle$</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>A Pfister form</td>
+</tr>
+<tr>
+<td>$P$, $\operatorname{sign}_P$</td>
+<td>Ordering of a formally real field; the signature at $P$</td>
+</tr>
+<tr>
+<td>$F_P$</td>
+<td>Real closure of $F$ at the ordering $P$</td>
+</tr>
+<tr>
+<td>$\operatorname{sign}$</td>
+<td>Total signature, $W(F) \to \prod_P \mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$(a, b)_F$</td>
+<td>Quaternion algebra with $i^2 = a$, $j^2 = b$</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Signature, $W(\mathbb{R}) \to \mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q$</td>
+<td>Finite field with $q$ elements</td>
+</tr>
+<tr>
+<td>$\mathbb{R}, \mathbb{C}$</td>
+<td>Real and complex numbers</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em>, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for the Witt ring, its invariants and the filtration by the fundamental ideal.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the Grothendieck–Witt ring, cancellation and the classical invariants.</li>
+<li>Manfred Knebusch, <em>Grothendieck- und Wittringe von nichtausgearteten symmetrischen Bilinearformen</em> (Springer, 1970), for the foundational construction of the Grothendieck–Witt ring.</li>
+<li>John Milnor, "Algebraic $K$-theory and quadratic forms", <em>Inventiones Mathematicae</em> 9 (1970), 318–344, for the conjecture relating the fundamental ideal filtration to Milnor K-theory.</li>
+<li>Vladimir Voevodsky, "Motivic cohomology with $\mathbb{Z}/2$-coefficients", <em>Publications Mathématiques de l'IHÉS</em> 98 (2003), 59–104, for the proof of Milnor's conjecture.</li>
+<li>Tsit-Yuen Lam, <em>Orderings, Valuations and Quadratic Forms</em>, CBMS Regional Conference Series 52 (American Mathematical Society, 1983), for the signature and the Witt ring of ordered fields.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

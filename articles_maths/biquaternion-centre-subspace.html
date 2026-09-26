@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Centre Subspace — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-centre-subspace"><strong>Biquaternion Centre Subspace</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}$ carries four linear involutions, and each of them splits $\mathbb{B}$ into a fixed space and an anti-fixed space. Six of the eight spaces so obtained are four- or six-dimensional and are called the <strong>six distinguished subspaces</strong> of $\mathbb{B}$. This article treats the smallest of them, the <strong>centre subspace</strong> $\mathbb{C}_{\mathbb{B}}$, on its own: its definition, its basis, its algebra and module structure, the restriction of the norm form to it, its matrix image, and the action of the four involutions upon it. The other five are treated in the companion articles <em>Biquaternion Vector Subspace</em>, <em>Biquaternion Quaternion Subspace</em>, <em>Biquaternion Anti-Quaternion Subspace</em>, <em>Biquaternion Hermitian Subspace</em> and <em>Biquaternion Anti-Hermitian Subspace</em>; their relations with one another are collected in <em>Biquaternion Relations Between Subspaces</em>, and the involutions themselves in <em>Biquaternion Involution Lattice</em>.</p>
+<p>Nothing below is a physical statement. The elements are written $\tilde{Q}, \tilde{R}, \tilde{P}, \dots$, their complex coefficients $Q_0, Q_1, Q_2, Q_3$, and the real and imaginary parts of a coefficient $Q_\mu = q_\mu + i q'_\mu$; no other coordinates are used.</p>
+<h2 id="definition-and-basis">Definition and Basis</h2>
+<h3 id="the-defining-involution">The Defining Involution</h3>
+<p><strong>Definition.</strong> The <strong>centre subspace</strong> is the fixed space of quaternion conjugation,</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = \tilde{Q} \right\} ,
+$$</p>
+<p>where quaternion conjugation is $\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.</p>
+<p>Since $\bar{\cdot}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{B}$ is the direct sum of its fixed space and its anti-fixed space; the anti-fixed space is the vector subspace $\mathrm{Vect}(\mathbb{B})$, treated in the companion article.</p>
+<h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
+<p>Writing $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ and comparing the two sides of $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient:</p>
+<ul>
+<li>the coefficient of $e_0$ gives $Q_0 = Q_0$, which is no condition;</li>
+<li>the coefficient of $e_k$ gives $-Q_k = Q_k$, that is $Q_k = 0$, for each $k = 1, 2, 3$.</li>
+</ul>
+<p>The centre subspace is therefore the set of elements with <strong>vanishing vector part</strong>,</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 , \qquad Q_0 \in \mathbb{C} .
+$$</p>
+<h3 id="basis-and-dimension">Basis and Dimension</h3>
+<p><strong>Proposition.</strong> The centre subspace is a real vector space of dimension $2$, with basis $e_0, ie_0$. In terms of the real coordinates of $\mathbb{B}$ it is the coordinate plane</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}} = \left\{ \tilde{Q} : q_1 = q_2 = q_3 = q'_1 = q'_2 = q'_3 = 0 \right\} ,
+$$</p>
+<p>in which the two free parameters are $q_0$ and $q'_0$.</p>
+<p><strong>Proof.</strong> The four complex coefficients of $\tilde{Q}$ reduce to $Q_0$ alone, and a complex number is a real pair, $Q_0 = q_0 + i q'_0$; the two elements $e_0$ and $ie_0$ are linearly independent over $\mathbb{R}$ and span the set. $\square$</p>
+<p>The dimension count is recorded once and used throughout: of the six distinguished subspaces, $\mathbb{C}_{\mathbb{B}}$ is the only one of dimension $2$, the vector subspace $\mathrm{Vect}(\mathbb{B})$ is the only one of dimension $6$, and the remaining four are of dimension $4$.</p>
+<h2 id="algebra-and-module-structure">Algebra and Module Structure</h2>
+<h3 id="it-is-the-centre-of-the-algebra">It Is the Centre of the Algebra</h3>
+<p><strong>Theorem.</strong> $\mathbb{C}_{\mathbb{B}}$ is the centre of $\mathbb{B}$,</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}} = \left\{ \tilde{X} \in \mathbb{B} : \tilde{X}\tilde{Q} = \tilde{Q}\tilde{X} \ \text{for every} \ \tilde{Q} \in \mathbb{B} \right\} .
+$$</p>
+<p><strong>Proof.</strong> An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$; the central elements are then the $\mathbb{C}$-multiples of $e_0$, which is the fixed space of $\bar{\cdot}$ computed above. $\square$</p>
+<p>The two names of the subspace are therefore the same object described in two ways: it is the fixed space of one involution, and it is the centre of the algebra. Its elements are the <strong>central elements</strong>, and in the corpus's notation a central element is written $z e_0$ with $z \in \mathbb{C}$, or $\rho e_0$ when a modulus is in play.</p>
+<h3 id="subalgebra-commutativity-field-structure">Subalgebra, Commutativity, Field Structure</h3>
+<p><strong>Proposition.</strong> $\mathbb{C}_{\mathbb{B}}$ is a subalgebra of $\mathbb{B}$, it is commutative, and as a real algebra it is isomorphic to $\mathbb{C}$ by $Q_0 e_0 \mapsto Q_0$.</p>
+<p><strong>Proof.</strong> For two central elements, $Q_0 e_0 \cdot R_0 e_0 = (Q_0 R_0) e_0$, which lies in the subspace; commutativity is the commutativity of $\mathbb{C}$; and the displayed map is a bijective ring homomorphism because $e_0$ is the unit. $\square$</p>
+<p>It is one of exactly two of the six distinguished subspaces that are subalgebras, the other being the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. Both are division algebras: $\mathbb{C}_{\mathbb{B}}$ is a field and $\mathbb{H}_{\mathbb{B}}$ is a division algebra. The centre subspace is also the only commutative one of the six.</p>
+<h3 id="ideals-and-modules">Ideals and Modules</h3>
+<p>Being the centre and a field, $\mathbb{C}_{\mathbb{B}}$ supports the simplest possible module and ideal structure: $\mathbb{B}$ is a free module of rank four over $\mathbb{C}_{\mathbb{B}}$, with basis $e_0, e_1, e_2, e_3$; and $\mathbb{C}_{\mathbb{B}}$ is not a proper two-sided ideal of $\mathbb{B}$, since $\mathbb{B}$ is simple and its only two-sided ideals are $0$ and $\mathbb{B}$ itself. The one-sided ideal theory of $\mathbb{B}$ is developed in <em>Biquaternion Ideals and Peirce Decomposition</em> and involves the idempotents, not the centre.</p>
+<h3 id="multiplication-tables">Multiplication Tables</h3>
+<p>The products within the subspace and the products with the vector units that generate the whole algebra are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>value</th>
+<th>product</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0 \cdot e_0$</td>
+<td>$e_0$</td>
+<td>$e_0 \cdot e_k$</td>
+<td>$e_k$</td>
+</tr>
+<tr>
+<td>$(ie_0) \cdot e_0$</td>
+<td>$ie_0$</td>
+<td>$(ie_0) \cdot e_k$</td>
+<td>$ie_k$</td>
+</tr>
+<tr>
+<td>$e_0 \cdot (ie_0)$</td>
+<td>$ie_0$</td>
+<td>$e_k \cdot e_0$</td>
+<td>$e_k$</td>
+</tr>
+</tbody>
+</table></div>
+<p>for $k = 1, 2, 3$. The table is the statement that $\mathbb{C}_{\mathbb{B}}$ multiplies into every subspace and is multiplied into by every subspace, with no sign change: multiplication by a central element is a scalar extension, and the four subspaces $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ and the two sectors are all modules over $\mathbb{C}_{\mathbb{B}}$.</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<h3 id="restriction">Restriction</h3>
+<p><strong>Proposition.</strong> On the centre subspace the norm form is the square of the coefficient,</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = Q_0^2 , \qquad \tilde{Q} = Q_0 e_0 .
+$$</p>
+<p><strong>Proof.</strong> $\bar{\tilde{Q}} = \tilde{Q}$ on the subspace, so $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \tilde{Q}^2 = Q_0^2 e_0$, read as the scalar $Q_0^2$. $\square$</p>
+<p>Two features are worth isolating, because they differ from the other five subspaces. First, $N$ takes <strong>complex</strong> values on $\mathbb{C}_{\mathbb{B}}$: it is real on $\mathbb{R}e_0$ and on $i\mathbb{R}e_0$ separately, but $Q_0^2$ is not real for a general complex $Q_0$. Second, its real restriction to the real two-plane is the form $\operatorname{diag}(1, -1)$ in the basis $e_0, ie_0$, since $N(e_0) = 1$ and $N(ie_0) = -1$. The centre subspace is thus one of the two subspaces on which the norm form is not real-valued, the other being the vector subspace.</p>
+<h3 id="units-and-zero-divisors">Units and Zero Divisors</h3>
+<p><strong>Theorem.</strong> For $\tilde{Q} = Q_0 e_0$, the following are equivalent:</p>
+<ol>
+<li>$\tilde{Q}$ is a unit;</li>
+<li>$N(\tilde{Q}) \neq 0$;</li>
+<li>$Q_0 \neq 0$.</li>
+</ol>
+<p>The inverse is $\tilde{Q}^{-1} = Q_0^{-1} e_0 = \dfrac{Q_0^{*}}{|Q_0|^2} e_0$.</p>
+<p><strong>Proof.</strong> $N(Q_0e_0) = Q_0^2$ vanishes exactly when $Q_0 = 0$; the inverse formula is verified directly, $Q_0 e_0 \cdot (Q_0^{-1} e_0) = e_0$, and $Q_0^{-1} = Q_0^{*}/|Q_0|^2$ is the standard expression of the complex inverse. $\square$</p>
+<p><strong>Corollary.</strong> The only zero divisor in $\mathbb{C}_{\mathbb{B}}$ is $0$, and the only non-unit is $0$.</p>
+<p><strong>Proof.</strong> A zero divisor is a non-zero element of zero norm form; on the subspace $N(\tilde{Q}) = Q_0^2$, which vanishes only at $Q_0 = 0$. $\square$</p>
+<p>The corollary is the statement that $\mathbb{C}_{\mathbb{B}}$ is a field, and it is the reason the centre subspace carries none of the degeneracy phenomena — null elements, idempotents of zero norm form, unbounded families — that the vector subspace and the polar representation exhibit. The <strong>idempotents</strong> of the subspace are the solutions of $Q_0^2 = Q_0$, namely $Q_0 \in \{0, 1\}$: the zero element and the unit. In particular $\mathbb{C}_{\mathbb{B}}$ contains no non-trivial idempotent, while $\mathbb{B}$ contains many, all of them away from the centre.</p>
+<h2 id="the-matrix-image">The Matrix Image</h2>
+<p>Under the matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ of <em>Biquaternion 2×2 Matrix Representation</em>, an element of the centre subspace has image</p>
+<p>$$
+\Phi(Q_0 e_0) = \begin{pmatrix} Q_0 & 0 \\ 0 & Q_0 \end{pmatrix} = Q_0 I .
+$$</p>
+<p><strong>Proposition.</strong> The image of $\mathbb{C}_{\mathbb{B}}$ is the set of scalar matrices, and the invariants of the image are</p>
+<p>$$
+\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0 , \qquad \det\Phi(\tilde{Q}) = Q_0^2 = N(\tilde{Q}) .
+$$</p>
+<p><strong>Proof.</strong> Substituting $Q_1 = Q_2 = Q_3 = 0$ in the general matrix of the isomorphism leaves a diagonal matrix with equal entries; the trace and determinant are then immediate, and the determinant agrees with the norm form as it must, since $\det\Phi = N$ on the whole algebra. $\square$</p>
+<p>The trace statement is the matrix form of the definition of the vector subspace as well: $\mathbb{C}_{\mathbb{B}}$ is not characterized by the trace, but its complement $\mathrm{Vect}(\mathbb{B})$ is, being exactly the traceless elements. The image of the centre is the subalgebra of scalar matrices, that is, the centre of $M_2(\mathbb{C})$, which is what the algebra isomorphism must do with the centre of $\mathbb{B}$.</p>
+<h2 id="the-four-involutions-on-it">The Four Involutions on It</h2>
+<p>The four involutions of the algebra are quaternion conjugation $\bar{\cdot}$, complex conjugation ${}^{*}$, Hermitian conjugation ${}^{\dagger} = {}^{*} \circ \bar{\cdot} = \bar{\cdot} \circ {}^{*}$, and reversal $\flat = -\dagger$. Their action on $\mathbb{C}_{\mathbb{B}}$, in the basis $e_0, ie_0$, is diagonal:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>$\tilde{Q} = Q_0e_0$</th>
+<th>matrix on $e_0, ie_0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$Q_0 e_0$</td>
+<td>$\operatorname{diag}(1, 1)$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$Q_0^{*} e_0$</td>
+<td>$\operatorname{diag}(1, -1)$</td>
+</tr>
+<tr>
+<td>${}^{\dagger}$</td>
+<td>$Q_0^{*} e_0$</td>
+<td>$\operatorname{diag}(1, -1)$</td>
+</tr>
+<tr>
+<td>$\flat$</td>
+<td>$-Q_0^{*} e_0$</td>
+<td>$\operatorname{diag}(-1, 1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The subspace is invariant under all four, since each of them preserves the conditions $Q_1 = Q_2 = Q_3 = 0$; and the table has a content that is worth stating separately: <strong>complex conjugation acts on the centre subspace as the non-trivial involution of $\mathbb{C}$</strong>, exchanging the two real directions $e_0$ and $ie_0$. That is the only one of the four involutions that acts non-trivially on the centre, and it is the reason ${}^{*}$ is not an inner automorphism of $\mathbb{B}$: an inner automorphism fixes the centre pointwise, while ${}^{*}$ acts on it by the Galois involution $i \mapsto -i$. The point is developed in <em>Biquaternion Involution Lattice</em> and in <em>Biquaternion Automorphisms and Derivations</em>.</p>
+<h2 id="relations-to-the-other-five-subspaces">Relations to the Other Five Subspaces</h2>
+<p>The intersections of $\mathbb{C}_{\mathbb{B}}$ with the other five distinguished subspaces are, with dimensions,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>intersection</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B})$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{R} e_0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$i\mathbb{R} e_0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+$</td>
+<td>$\mathbb{R} e_0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_-$</td>
+<td>$i\mathbb{R} e_0$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two lines $\mathbb{R}e_0$ and $i\mathbb{R}e_0$ that appear are the <strong>coordinate blocks</strong> of the algebra; the centre subspace is their direct sum,</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}} = \mathbb{R}e_0 \oplus i\mathbb{R}e_0 ,
+$$</p>
+<p>the first line being its intersection with the quaternion and Hermitian subspaces at once, the second its intersection with the anti-quaternion and anti-Hermitian subspaces at once. This is the pattern that <em>Biquaternion Relations Between Subspaces</em> records for all six subspaces. The centre subspace is complementary to the vector subspace, $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, which is the scalar–vector decomposition of the algebra; with each of the other four subspaces it has intersection of dimension one, so none of those pairs spans $\mathbb{B}$.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="a-central-element-and-its-invariants">A Central Element and Its Invariants</h3>
+<p>Take $\tilde{Q} = (3 + 4i)e_0$. Its norm form is</p>
+<p>$$
+N(\tilde{Q}) = (3+4i)^2 = -7 + 24i , \qquad |N(\tilde{Q})| = 25 = |3+4i|^2 ,
+$$</p>
+<p>so $\tilde{Q}$ is a unit, with inverse $\tilde{Q}^{-1} = \frac{3-4i}{25} e_0$. Its matrix image is $(3+4i)I$, of trace $6 + 8i$ and determinant $-7 + 24i$, in agreement with $\operatorname{Tr}\Phi = 2Q_0$ and $\det\Phi = N$. Complex conjugation acts on it by $\tilde{Q}^{*} = (3-4i)e_0$, which is a different element of the subspace; quaternion and Hermitian conjugations leave it unchanged, since $Q_1 = Q_2 = Q_3 = 0$ makes $\bar{\tilde{Q}} = \tilde{Q}^{\dagger} = \tilde{Q}$.</p>
+<h3 id="the-unit-and-the-idempotents">The Unit and the Idempotents</h3>
+<p>The element $e_0$ has norm form $1$ and is the unit of the algebra; $ie_0$ has norm form $-1$ and satisfies $(ie_0)^2 = -e_0$, so the subspace contains the copy of the imaginary unit. The idempotents of $\mathbb{C}_{\mathbb{B}}$ are $0$ and $e_0$ only: the equation $Q_0^2 = Q_0$ has no other complex solution. No non-trivial idempotent of $\mathbb{B}$ is therefore central. The standard pair of non-trivial idempotents is</p>
+<p>$$
+\frac{e_0 + ie_1}{2} , \qquad \frac{e_0 - ie_1}{2} ,
+$$</p>
+<p>of scalar part $\tfrac12$, of zero norm form, and lying in the Hermitian subspace — so the idempotents that generate the minimal left ideals of $\mathbb{B}$ are constructed in the sector rather than in the centre, and the centre supplies only the two trivial ones.</p>
+<h3 id="a-central-element-is-blind-to-the-left-multiplication">A Central Element Is Blind to the Left Multiplication</h3>
+<p>For the central element $\tilde{Q} = (1+i)e_0$, left and right multiplication by $\tilde{Q}$ coincide, and the operators are</p>
+<p>$$
+L_{\tilde{Q}}(x) = \tilde{Q}x = (1+i)x = R_{\tilde{Q}}(x) .
+$$</p>
+<p>The regular representations therefore agree on the centre, and $L_{ze_0}$ is the single operator $(1+i)\operatorname{id}$ on the eight-dimensional real space $\mathbb{B}$: a rotation by $\pi/4$ composed with a dilation by $\sqrt{2}$ on each of the four complex coordinate planes. The example is the arithmetic behind the statement that the centre acts by scalar extension, and it is the reason the central factor drops out of the operator representations of the algebra, as recorded in <em>Biquaternion Operator Representation</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_0 e_0$ with vanishing vector part, a real vector space of dimension $2$ with basis $e_0, ie_0$. It coincides with the centre of the algebra; it is a commutative subalgebra, isomorphic to $\mathbb{C}$; it is one of the two subalgebras among the six distinguished subspaces and the only commutative one. Multiplication by its elements acts as scalar extension on every other subspace. The norm form restricts to $N = Q_0^2$, complex-valued on the subspace, of real signature $(1, 1)$; the units are exactly the elements with $Q_0 \neq 0$, they are all invertible, and there are no zero divisors except $0$. Its matrix image is the set of scalar matrices, with $2Q_0$ the trace and $Q_0^2$ the determinant. Of the four involutions, quaternion conjugation and Hermitian conjugation fix it pointwise, reversal negates it up to complex conjugation, and complex conjugation acts as the non-trivial involution $i \mapsto -i$ — the one action that no inner automorphism can reproduce. Its intersection with the vector subspace is the origin, and its intersections with each of the remaining four subspaces are the two coordinate lines $\mathbb{R}e_0$ and $i\mathbb{R}e_0$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, of real dimension $8$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$</td>
+<td>a general element, $Q_\mu \in \mathbb{C}$</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + iq'_\mu$</td>
+<td>the real and imaginary parts of a coefficient</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>the centre subspace, the fixed space of quaternion conjugation</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the vector subspace, the anti-fixed space of quaternion conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the quaternion and anti-quaternion subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$</td>
+<td>quaternion, complex, Hermitian conjugation and reversal</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>the norm form</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>the isomorphism $\mathbb{B} \to M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}e_0$, $i\mathbb{R}e_0$</td>
+<td>the two coordinate lines of the centre subspace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion Algebra</em> (<code>articles_maths/biquaternion-algebra.md</code>), for the multiplication of $\mathbb{B}$, the three decompositions and the definitions of the six subspaces</li>
+<li><em>Biquaternion Vector Subspace</em> (<code>articles_maths/biquaternion-vector-subspace.md</code>), the anti-fixed companion of the present subspace</li>
+<li><em>Biquaternion Relations Between Subspaces</em> (<code>articles_maths/biquaternion-relations-between-subspaces.md</code>), for the intersections, the sums and the coordinate blocks of the six together</li>
+<li><em>Biquaternion Involution Lattice</em> (<code>articles_maths/biquaternion-involution-lattice.md</code>), for the four involutions, their composition law and the two spaces each of them defines</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the norm form on the whole algebra and the invertibility criterion</li>
+<li><em>Biquaternion 2×2 Matrix Representation</em> (<code>articles_maths/biquaternion-2x2-matrix-representation.md</code>), for the isomorphism $\Phi$ and the matrix picture of the subspaces</li>
+<li><em>Jordan Algebras</em> (<code>articles_maths/jordan-algebras.md</code>), for the symmetrized product that gives the Hermitian subspace its algebraic structure</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

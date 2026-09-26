@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Algebraic Structures — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-algebraic-structures"><strong>List of Algebraic Structures</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the algebraic structures the corpus builds, one rung at a time, and the axiom each rung adds. The ladder begins with a set carrying a single binary operation and climbs by adding associativity, an identity, inverses and commutativity; a second operation then makes a ring and, once every nonzero element becomes invertible, a field; scalars acting on an abelian group make a module, a vector space and finally an algebra. Some rungs are non-associative rather than associative — the Lie algebras and the Jordan algebras — and they are gathered apart from the associative ladder.</p>
+<p>Every entry points to the article that introduces the structure and states the property that fixes the rung. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being an object that differs from its rung by exactly one axiom, with the failure named and the article that records it.</p>
+<h2 id="the-one-operation-rungs">The One-Operation Rungs</h2>
+<p>A <strong>monoid</strong> is the lowest rung the corpus writes down: one associative operation and an identity, with no assumption of inverses or commutativity. A <strong>group</strong> adds inverses, and an <strong>abelian group</strong> adds commutativity on top of the group axioms. The scope of the list names a closure-only rung and a semigroup rung below the monoid; neither is introduced anywhere in Parts I to III, and no entry is written for them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monoid</td>
+<td>one associative binary operation with an identity</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Group</td>
+<td>a monoid in which every element is invertible</td>
+<td><em>Groups</em>, §1</td>
+</tr>
+<tr>
+<td>Abelian group</td>
+<td>a group whose operation is commutative</td>
+<td><em>Groups</em>, §1</td>
+</tr>
+<tr>
+<td>Non-example: $(\mathbb{Z} \setminus \{0\}, \cdot)$</td>
+<td>a monoid that fails inverses; only $\pm 1$ are invertible</td>
+<td><em>Groups</em>, §1</td>
+</tr>
+<tr>
+<td>Non-example: the symmetric group $S_n$, $n \geq 3$</td>
+<td>a group that fails commutativity</td>
+<td><em>Groups</em>, §1</td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{N}$ under addition</td>
+<td>a commutative monoid that fails additive inverses</td>
+<td><em>The Natural Numbers</em> (Part V)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-operation-rungs">The Two-Operation Rungs</h2>
+<p>A <strong>ring</strong> is an abelian group carrying a second operation, a multiplication that is associative and distributive over the addition; the corpus fixes $1 \neq 0$. The <strong>commutative ring</strong> adds $ab = ba$, the <strong>integral domain</strong> adds the absence of zero divisors, and the <strong>field</strong> requires every nonzero element to be invertible. The <strong>division ring</strong> keeps associativity and inverses but drops commutativity; it is the rung at which the commutative and the non-commutative ladders part.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ring</td>
+<td>an abelian group with an associative multiplication distributive over the addition</td>
+<td><em>Rings</em>, §1</td>
+</tr>
+<tr>
+<td>Commutative ring</td>
+<td>a ring whose multiplication is commutative</td>
+<td><em>Commutative Rings</em>; stated in <em>Rings</em>, §5</td>
+</tr>
+<tr>
+<td>Reduced ring</td>
+<td>a commutative ring with no nonzero nilpotent</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>Integral domain</td>
+<td>a commutative ring with $1 \neq 0$ and no zero divisors</td>
+<td><em>Integral Domains</em>; stated in <em>Rings</em>, §12</td>
+</tr>
+<tr>
+<td>GCD domain</td>
+<td>a domain in which any two elements have a greatest common divisor</td>
+<td><em>GCD Domains</em></td>
+</tr>
+<tr>
+<td>Bézout domain</td>
+<td>a domain in which every finitely generated ideal is principal</td>
+<td><em>Bézout Domains</em></td>
+</tr>
+<tr>
+<td>Unique factorisation domain</td>
+<td>a domain in which every nonzero nonunit factors uniquely into irreducibles</td>
+<td><em>Unique Factorisation Domains</em></td>
+</tr>
+<tr>
+<td>Principal ideal domain</td>
+<td>a domain in which every ideal is principal</td>
+<td><em>Principal Ideal Domains</em></td>
+</tr>
+<tr>
+<td>Euclidean domain</td>
+<td>a domain carrying a Euclidean degree function and division with remainder</td>
+<td><em>Euclidean Domains</em></td>
+</tr>
+<tr>
+<td>Division ring</td>
+<td>a ring with $1 \neq 0$ in which every nonzero element is invertible</td>
+<td><em>Division Rings</em></td>
+</tr>
+<tr>
+<td>Ore domain</td>
+<td>a domain in which every two nonzero elements have a common left and a common right multiple</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>Field</td>
+<td>a commutative ring with $1 \neq 0$ in which every nonzero element is invertible</td>
+<td><em>Fields</em>, §1</td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}$</td>
+<td>an integral domain that fails the field axiom: $2$ has no inverse</td>
+<td><em>The Integers</em> (Part V); <em>Rings</em></td>
+</tr>
+<tr>
+<td>Non-example: the split-complex numbers $\mathbb{D}$</td>
+<td>a commutative ring that fails the domain axiom: $(1+j)(1-j) = 0$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>Non-example: the dual numbers $\mathbb{D}'$</td>
+<td>a commutative ring that fails the domain axiom: $\varepsilon^2 = 0$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>Non-example: the matrix ring $M_2(\mathbb{R})$</td>
+<td>a ring that fails commutativity and fails inverses for nonzero elements</td>
+<td><em>Examples of Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: the quaternions $\mathbb{H}$</td>
+<td>a division ring that fails commutativity, hence is not a field</td>
+<td><em>Division Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-scalar-action-rungs">The Scalar-Action Rungs</h2>
+<p>A <strong>module</strong> is an abelian group on which a ring acts by scalars, and a <strong>vector space</strong> is the case of a field of scalars, where every module is free and every space has a basis. An <strong>algebra</strong> adds a bilinear product of the space with itself. The corpus's broad sense of <em>algebra</em> assumes neither associativity, nor commutativity, nor a unit; the qualifiers are earned separately.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Module over a ring $R$</td>
+<td>an abelian group with a scalar action of $R$</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Vector space over a field</td>
+<td>a module over a field, hence free with a basis</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>Algebra over a commutative ring</td>
+<td>a module with a bilinear product</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Associative algebra</td>
+<td>an algebra with $(xy)z = x(yz)$</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Unital algebra</td>
+<td>an algebra with an identity for its product</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Commutative algebra</td>
+<td>an associative algebra with $xy = yx$</td>
+<td><em>Commutative Algebras</em></td>
+</tr>
+<tr>
+<td>Ideals and quotients of an algebra</td>
+<td>the two-sided ideals of an algebra and the quotient algebras they define</td>
+<td><em>Ideals and Quotients of Algebras</em></td>
+</tr>
+<tr>
+<td>Centre, units and zero divisors</td>
+<td>the centre $Z(A)$, the group of units $A^\times$ and the zero divisors of an algebra</td>
+<td><em>Centre, Units, Zero Divisors and Division Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-non-associative-rungs">The Non-Associative Rungs</h2>
+<p>Two rungs replace associativity by an identity of their own: the <strong>Lie algebra</strong>, whose product is antisymmetric and satisfies the Jacobi identity, and the <strong>Jordan algebra</strong>, whose product is commutative and satisfies the Jordan identity. The non-associative algebras in general, and the identities that lie between associativity and its failure, are the subject of <em>Non-Associative Algebras and the Property Ladder</em>. The octonions are the standard non-example: a division algebra whose multiplication is not associative.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lie algebra</td>
+<td>an antisymmetric product satisfying the Jacobi identity</td>
+<td><em>Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Jordan algebra</td>
+<td>a commutative product satisfying the Jordan identity</td>
+<td><em>Jordan Algebras</em></td>
+</tr>
+<tr>
+<td>Non-associative algebra</td>
+<td>an algebra carrying no associativity axiom</td>
+<td><em>Non-Associative Algebras and the Property Ladder</em></td>
+</tr>
+<tr>
+<td>Non-example: the octonions $\mathbb{O}$</td>
+<td>a division algebra that fails associativity, hence is not a ring</td>
+<td><em>Division Algebras</em>; <em>Octonion Algebra</em> (Part V)</td>
+</tr>
+<tr>
+<td>Non-example: the cross product on $\mathbb{R}^3$</td>
+<td>an algebra that fails associativity and has no identity</td>
+<td><em>Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="structures-defined-by-an-order">Structures Defined by an Order</h2>
+<p>The corpus also meets two rungs whose operation is not written as a multiplication: the <strong>lattice</strong>, with its two order-theoretic operations of join and meet, and the <strong>Boolean algebra</strong> of the algebra of subsets and of propositional logic. The lattice is introduced in the foundational layer; the Boolean algebra is developed as a subject in the synthetic study of the Booleans.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lattice</td>
+<td>a partial order in which every two elements have a join and a meet</td>
+<td><em>Order Theory and Lattices</em></td>
+</tr>
+<tr>
+<td>Complete lattice</td>
+<td>a lattice in which every subset has a supremum and an infimum</td>
+<td><em>Order Theory and Lattices</em></td>
+</tr>
+<tr>
+<td>Boolean algebra</td>
+<td>a complemented distributive lattice, the algebra of subsets</td>
+<td><em>Boolean Algebras and Lattices</em> (Part V)</td>
+</tr>
+<tr>
+<td>Non-example: the lattice $N_5$</td>
+<td>a modular lattice that fails distributivity</td>
+<td><em>Order Theory and Lattices</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-axiom-added-at-each-rung">The Axiom Added at Each Rung</h2>
+<p>The ladder is a list of one added axiom per rung, and the table reads it in that direction: each row names the axiom the rung adds to the one above it, with an object at the rung.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rung</th>
+<th>The axiom it adds to the rung above</th>
+<th>A structure at the rung</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monoid</td>
+<td>associativity and an identity, from a bare operation</td>
+<td>$(\mathbb{N}, +)$</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Group</td>
+<td>inverses</td>
+<td>$(\mathbb{Z}, +)$</td>
+<td><em>Groups</em>, §1</td>
+</tr>
+<tr>
+<td>Abelian group</td>
+<td>commutativity</td>
+<td>$(\mathbb{Z}, +)$</td>
+<td><em>Groups</em>, §1</td>
+</tr>
+<tr>
+<td>Ring</td>
+<td>a second operation, distributing over the first</td>
+<td>$\mathbb{Z}$</td>
+<td><em>Rings</em>, §1</td>
+</tr>
+<tr>
+<td>Commutative ring</td>
+<td>commutativity of the second operation</td>
+<td>$\mathbb{Z}$</td>
+<td><em>Rings</em>, §5</td>
+</tr>
+<tr>
+<td>Integral domain</td>
+<td>no zero divisors</td>
+<td>$\mathbb{Z}$</td>
+<td><em>Rings</em>, §12</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>inverses for the nonzero elements</td>
+<td>$\mathbb{Q}$</td>
+<td><em>Fields</em>, §1</td>
+</tr>
+<tr>
+<td>Module</td>
+<td>an action of a ring on an abelian group</td>
+<td>$\mathbb{Z}^n$</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Vector space</td>
+<td>the scalars form a field</td>
+<td>$\mathbb{R}^n$</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>Algebra</td>
+<td>the abelian group carries a bilinear product</td>
+<td>$M_2(\mathbb{R})$</td>
+<td><em>Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The non-associative rungs branch off at the algebra: the Lie algebras and the Jordan algebras keep the module structure and change the identity the product satisfies, which is why they are listed apart from the associative ladder.</p>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the rungs of the algebraic ladder the corpus builds. The one-operation rungs are the monoid, the group and the abelian group; the two-operation rungs are the ring, the commutative ring, the reduced ring, the integral domain, the GCD, Bézout, unique factorisation, principal ideal and Euclidean domains, the division ring, the Ore domain and the field; the scalar-action rungs are the module, the vector space and the algebra with its associative, unital and commutative refinements; and the non-associative rungs are the Lie algebra, the Jordan algebra and the general non-associative algebra, with the lattice and the Boolean algebra met through an order rather than a product. Each row points to the article that introduces the structure, and the non-examples — $(\mathbb{Z} \setminus \{0\}, \cdot)$, $S_n$, $\mathbb{N}$, $\mathbb{Z}$, the split-complex numbers and the dual numbers, $M_2(\mathbb{R})$, $\mathbb{H}$, $\mathbb{O}$, the cross product on $\mathbb{R}^3$ and the lattice $N_5$ — name the single axiom each one fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols that appear in the tables are the standard number systems and the two two-dimensional algebras.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$</td>
+<td>the naturals, the integers, the rationals, the reals</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the split-complex numbers, unit $j$, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>the dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the real quaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>the octonions</td>
+</tr>
+<tr>
+<td>$S_n$</td>
+<td>the symmetric group on $n$ letters</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>the ring of $2 \times 2$ real matrices</td>
+</tr>
+<tr>
+<td>$N_5$</td>
+<td>the pentagon lattice, the non-distributive modular lattice</td>
+</tr>
+<tr>
+<td>$Z(A)$, $A^\times$</td>
+<td>the centre and the group of units of an algebra $A$</td>
+</tr>
+<tr>
+<td>$1 \neq 0$</td>
+<td>the nontriviality convention fixed for every ring and algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the axiom-by-axiom construction of the structures of the ladder and the names fixed for each rung.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for groups, rings, modules and algebras in one ordered development.</li>
+<li>Saunders Mac Lane and Garrett Birkhoff, <em>Algebra</em> (Chelsea, 3rd ed. 1999), for the tabulation of structures by the axioms they satisfy.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the passage from the associative to the non-associative rungs.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

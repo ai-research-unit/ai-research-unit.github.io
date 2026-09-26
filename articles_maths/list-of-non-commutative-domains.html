@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Non-Commutative Domains — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-non-commutative-domains"><strong>List of Non-Commutative Domains</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the non-commutative domains of the corpus: the rings with $1 \neq 0$ and no zero divisors in which commutativity is not assumed. Every entry points to the article that introduces the object.</p>
+<p>The list gathers $\mathbb{H}$, the free algebra, the Weyl algebra and the group ring of a torsion-free group, as the scope names, together with the division rings of the corpus, which are domains for the trivial reason that every nonzero element is invertible. The intersection of this ladder with the commutative one is exactly the integral domains; the commutative domains are listed in <em>List of Integral Domains</em>.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="what-a-non-commutative-domain-adds">What a Non-Commutative Domain Adds</h2>
+<p>A non-commutative domain is a ring with $1 \neq 0$ and no zero divisors: $ab = 0$ forces $a = 0$ or $b = 0$. Cancellation holds on both sides, but the left ideals and the right ideals need not match, and a domain need not have a division ring of fractions. The definition is in <em>Non-Commutative Domains</em>, and the consequences for the ideal structure are developed there.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>The commutative case</th>
+<th>The non-commutative case</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no zero divisors</td>
+<td>the definition of an integral domain</td>
+<td>the definition of a domain</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+<tr>
+<td>cancellation</td>
+<td>on both sides, by commutativity</td>
+<td>on both sides, directly from no zero divisors</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+<tr>
+<td>fraction object</td>
+<td>the field of fractions always exists</td>
+<td>a division ring of fractions exists only under the Ore condition</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>ideals</td>
+<td>left and right ideals coincide</td>
+<td>left and right ideals may differ</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The last two rows are the whole difference between the two ladders. A commutative domain always embeds in a field; a non-commutative domain embeds in a division ring exactly when it is an Ore domain, and the free algebra is the standard domain for which this fails.</p>
+<h2 id="the-domains-of-the-corpus">The Domains of the Corpus</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Ground ring or centre</th>
+<th>What makes it a domain</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{R}$</td>
+<td>every nonzero element is invertible</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>a division ring, for instance the division ring of fractions of $A_1(k)$</td>
+<td>its centre, a field</td>
+<td>every nonzero element is invertible</td>
+<td><em>Division Rings</em></td>
+</tr>
+<tr>
+<td>$R\langle x_1, \dots, x_n\rangle$</td>
+<td>$R$</td>
+<td>the leading terms of a product do not cancel</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$A_1(k) = k\langle x, y\rangle/(yx - xy - 1)$</td>
+<td>$k$</td>
+<td>the leading term in $x$ and $y$ does not cancel</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>$k[G]$, $G$ torsion-free</td>
+<td>$k$</td>
+<td>the theorem of Malcev and B. H. Neumann</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+<tr>
+<td>$k[F_n]$, the group ring of a free group</td>
+<td>$k$</td>
+<td>$F_n$ is torsion-free</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>$k[G]$ for $G$ an ordered group</td>
+<td>$k$</td>
+<td>the Malcev–Neumann embedding of $k[G]$ in a division ring</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>an integral domain</td>
+<td>its own centre, the ring itself</td>
+<td>commutativity is the special case</td>
+<td><em>Integral Domains</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The commutative domains are included in the last row so that the intersection of the two chains is visible: $\mathbb{Z}$, $\mathbb{Z}[i]$, $k[x]$ and every field are domains in the non-commutative sense as well, but they are listed with the commutative ladder in <em>List of Integral Domains</em>. The group ring of a free group is the concrete case of the torsion-free hypothesis that the scope names; the free algebra is the monoid algebra of the free monoid, the case in which the indeterminates do not commute.</p>
+<h2 id="the-group-ring-and-the-torsion-free-hypothesis">The Group Ring and the Torsion-Free Hypothesis</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group ring</th>
+<th>The hypothesis on $G$</th>
+<th>Domain?</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k[G]$</td>
+<td>$G$ torsion-free</td>
+<td>yes, provided $k$ is a domain</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+<tr>
+<td>$k[F_n]$</td>
+<td>$F_n$ free</td>
+<td>yes</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>$k[\mathbb{Z}] \cong k[x, x^{-1}]$</td>
+<td>$\mathbb{Z}$ torsion-free</td>
+<td>yes; commutative</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$k[C_2]$, $k$ of characteristic $\neq 2$</td>
+<td>$C_2$ has torsion</td>
+<td>no: $k[C_2] \cong k \times k$ has zero divisors</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2[C_2]$</td>
+<td>$C_2$ has torsion</td>
+<td>no: $\mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x+1)^2$ is local with a nilpotent</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$k[C_p]$, with $\zeta_p \in k$ and $\operatorname{char} k \nmid p$</td>
+<td>$C_p$ has torsion</td>
+<td>no: $k[C_p] \cong k^p$, a product of fields</td>
+<td><em>Group Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The torsion-free hypothesis is necessary and the two counterexamples in characteristic zero and characteristic two show it. The group ring of a torsion-free group need not be Ore, however: the torsion-free hypothesis gives the absence of zero divisors and not the existence of a division ring of fractions, which is the subject of <em>Ore Domains and Division Rings of Fractions</em>.</p>
+<h2 id="two-domains-with-and-without-a-division-ring-of-fractions">Two Domains With and Without a Division Ring of Fractions</h2>
+<p>The Ore condition is what makes the division ring of fractions of a domain exist; the free algebra and the Weyl algebra are the two sides of the boundary.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Ore?</th>
+<th>Division ring of fractions</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R\langle x_1, \dots, x_n\rangle$, $n \geq 2$</td>
+<td>no</td>
+<td>none</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>$A_1(k)$</td>
+<td>yes</td>
+<td>the division ring of fractions of $A_1(k)$, infinite-dimensional over $k$</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>$k[G]$, $G$ orderable</td>
+<td>yes, by the Malcev–Neumann construction</td>
+<td>the Malcev–Neumann division ring of series</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>trivially</td>
+<td>itself, being already a division ring</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The free algebra is the standard non-Ore domain, and it is a domain all the same; the two properties, no zero divisors and the Ore condition, are independent, and this table is the reason the ladder of <em>List of Structures from Rings to Division Rings</em> has a rung between a domain and a division ring.</p>
+<h2 id="domains-that-are-division-rings">Domains That Are Division Rings</h2>
+<p>A division ring is a domain in which every nonzero element is a unit; the class is listed in full in <em>List of Division Rings and Skew Fields</em>. The relation to the present list is that a division ring is the strongest domain, and it is the only case in which the left and right ideal structure is trivial.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Division ring</th>
+<th>Why it is a domain of this list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>every nonzero element is invertible; the domain hypothesis is automatic</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>the division ring of fractions of $A_1(k)$</td>
+<td>it is the Ore division ring of the Weyl algebra</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>the free field</td>
+<td>generated by a free algebra</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>a commutative division ring</td>
+<td>a field, hence a commutative domain</td>
+<td><em>Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-rings-that-fail-cancellation">Non-Examples: Rings That Fail Cancellation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The zero divisor that excludes it</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(\mathbb{R})$, $n \geq 2$</td>
+<td>the matrix units $E_{11}E_{22} = 0$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, the biquaternions</td>
+<td>nilpotent elements; not a division ring</td>
+<td><em>Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, the split-biquaternions</td>
+<td>the idempotents $e_{\pm}$ satisfy $e_+e_- = 0$</td>
+<td><em>Split-Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$k[C_2]$ over a field of characteristic $\neq 2$</td>
+<td>$k[C_2] \cong k \times k$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, the split-complex numbers</td>
+<td>$e_+ e_- = 0$; commutative, so an integral-domain failure</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$, the dual numbers</td>
+<td>$\varepsilon$ is a nonzero nilpotent</td>
+<td><em>Dual-Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$2 \cdot 3 = 0$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The matrix ring $M_2(\mathbb{R})$ is the standard non-commutative ring with zero divisors, and the biquaternions and split-biquaternions are the standard eight-dimensional ones. None of them is a domain, and none of them is an integral domain either.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not on this list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>a division algebra whose multiplication is not associative, so not a ring</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{S}$</td>
+<td>the sedenions, non-associative and with zero divisors</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>the commutative domains $\mathbb{Z}$, $\mathbb{Z}[i]$, $k[x]$</td>
+<td>domains, but listed on the commutative ladder in <em>List of Integral Domains</em></td>
+<td><em>The Integers</em>, <em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>the ring of upper triangular matrices</td>
+<td>not a domain: the strictly upper triangular matrices square to zero</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the non-commutative domains of the corpus: $\mathbb{H}$ and the division rings, for which the domain property is automatic; the free algebra and the Weyl algebra, which are domains by their leading-term behaviour; and the group rings of torsion-free groups, which are domains by the torsion-free hypothesis. It has recorded the two features that distinguish this ladder from the commutative one, the asymmetry of the one-sided ideals and the conditional existence of a division ring of fractions, and it has named the matrix rings, the biquaternions, the split-biquaternions and the group rings of groups with torsion as the objects that fail the definition.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The real quaternions, a division ring</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$</td>
+<td>The split-biquaternions, the biquaternions; not domains</td>
+</tr>
+<tr>
+<td>$\mathbb{O}$, $\mathbb{S}$</td>
+<td>The octonions and sedenions; not rings</td>
+</tr>
+<tr>
+<td>$A_1(k)$</td>
+<td>The Weyl algebra $k\langle x,y\rangle/(yx - xy - 1)$</td>
+</tr>
+<tr>
+<td>$R\langle x_1,\dots,x_n\rangle$</td>
+<td>The free algebra</td>
+</tr>
+<tr>
+<td>$k[G]$, $k[F_n]$, $k[C_2]$</td>
+<td>Group rings; $F_n$ free, $C_2$ of order two</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>The $2 \times 2$ real matrix ring; not a domain</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Z}[i]$, $k[x]$</td>
+<td>Commutative domains, on the ladder of <em>List of Integral Domains</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>Split-complex numbers, dual numbers; not domains</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for non-commutative domains, their one-sided ideals and their division rings of fractions.</li>
+<li>Paul M. Cohn, <em>Free Rings and Their Relations</em> (Academic Press, 2nd ed. 1985), for the free algebra, the free ideal theory and the embeddings of domains in division rings.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the group ring of a torsion-free group and the zero-divisor problem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

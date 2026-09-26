@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Categories — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-categories"><strong>List of Categories</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the categories the corpus meets, together with their objects, their morphisms and the functors between them. The categories are the ones attached to the algebraic layers — sets, posets, monoids, groups, abelian groups, rings and modules — and then the abstract categories the corpus builds on top of them: the additive and abelian categories, the Grothendieck categories, the derived and triangulated categories, the differential graded categories, the model categories and the higher categories, and the toposes that carry the sheaf-theoretic algebra.</p>
+<p>Every entry points to the article that introduces the category and names its objects and morphisms. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being a category that fails one of the structural properties its neighbours have, with the failure named and the article that records it.</p>
+<h2 id="categories-of-the-algebraic-layers">Categories of the Algebraic Layers</h2>
+<p>Each layer of the object ladder carries its own category, whose objects are the structures of that layer and whose morphisms are the structure-preserving maps. The foundational article fixes the categories below the algebraic layers and names the algebraic ones; the module-theoretic articles develop the category of modules in detail.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Objects and morphisms</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf{Set}$</td>
+<td>sets and functions</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>$\mathbf{Pos}$</td>
+<td>partially ordered sets and order-preserving maps</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>$\mathbf{Mon}$</td>
+<td>monoids and monoid homomorphisms</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>$\mathbf{Grp}$</td>
+<td>groups and group homomorphisms</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>$\mathbf{Ring}$</td>
+<td>rings with unit and unital ring homomorphisms</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>$R\text{-}\mathbf{Mod}$</td>
+<td>left $R$-modules and $R$-linear maps</td>
+<td><em>Module Categories</em></td>
+</tr>
+<tr>
+<td>$\mathbf{Mod}\text{-}R$, $R\text{-}\mathbf{mod}$</td>
+<td>right modules; finitely generated left modules</td>
+<td><em>Module Categories</em></td>
+</tr>
+<tr>
+<td>$\mathbf{Vect}_F$</td>
+<td>vector spaces over a field and linear maps</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>$R\text{-}\mathbf{Alg}$</td>
+<td>$R$-algebras and algebra homomorphisms</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathsf{CAlg}_R$</td>
+<td>commutative unital $R$-algebras</td>
+<td><em>The Symmetric Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="functors-and-natural-transformations">Functors and Natural Transformations</h2>
+<p>The maps between categories are the <strong>functors</strong>, the comparison between two functors is a <strong>natural transformation</strong>, and the equivalences of categories are the fully faithful and essentially surjective functors. The corpus meets the forgetful functors, whose left adjoints are the free constructions, the representable functors of the Yoneda embedding, the $\operatorname{Hom}$ and tensor functors that form the tensor–hom adjunction, and the derived functors of the homological articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Functor or construction</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Functor $F : \mathcal{C} \to \mathcal{D}$</td>
+<td>preserves composition and identities; faithful, full, essentially surjective</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Natural transformation $\eta : F \Rightarrow G$</td>
+<td>a family of morphisms commuting with both functors</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Equivalence of categories</td>
+<td>fully faithful and essentially surjective, hence invertible up to natural isomorphism</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Forgetful functor</td>
+<td>discards structure; the typical right adjoint</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Free functor</td>
+<td>left adjoint of a forgetful functor; the free monoid is the model case</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Representable functor</td>
+<td>a functor naturally isomorphic to $\mathcal{C}(-,A)$; the Yoneda embedding</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Functor category $[\mathcal{C},\mathcal{D}]$, presheaf category $\widehat{\mathcal{C}}$</td>
+<td>functors as objects, natural transformations as morphisms</td>
+<td><em>Universal Properties and Categories</em></td>
+</tr>
+<tr>
+<td>Hom functor $\operatorname{Hom}_R(M,-)$</td>
+<td>left exact; right adjoint of $-\otimes_R M$</td>
+<td><em>Module Categories</em></td>
+</tr>
+<tr>
+<td>Tensor functor $-\otimes_R M$</td>
+<td>right exact; left adjoint of $\operatorname{Hom}_R(M,-)$</td>
+<td><em>The Balanced Product</em></td>
+</tr>
+<tr>
+<td>Derived functor $\mathbb{R}F$, $\mathbb{L}F$</td>
+<td>total right and left derived functors on the derived category</td>
+<td><em>Derived Functors</em></td>
+</tr>
+<tr>
+<td>Quillen functor</td>
+<td>left or right adjoint between model categories with a derived adjunction</td>
+<td><em>Model Categories and Homotopy Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="additive-abelian-and-grothendieck-categories">Additive, Abelian and Grothendieck Categories</h2>
+<p>An <strong>additive category</strong> has a zero object, finite biproducts and abelian groups of morphisms; an <strong>abelian category</strong> adds kernels and cokernels with the coimage isomorphic to the image, which is exactly the structure in which the homological constructions of the corpus run. A <strong>Grothendieck category</strong> is an abelian category with a generator, small coproducts and exact filtered colimits. The motif is the category of modules, and the Freyd–Mitchell and Gabriel–Popescu theorems say how general the notion is.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>The structure it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Additive category</td>
+<td>a zero object, biproducts and abelian hom groups</td>
+<td><em>Abelian and Grothendieck Categories</em></td>
+</tr>
+<tr>
+<td>Abelian category</td>
+<td>additive with kernels, cokernels and $\operatorname{coim} \cong \operatorname{im}$</td>
+<td><em>Abelian and Grothendieck Categories</em></td>
+</tr>
+<tr>
+<td>Grothendieck category</td>
+<td>abelian with a generator, coproducts and exact filtered colimits</td>
+<td><em>Abelian and Grothendieck Categories</em></td>
+</tr>
+<tr>
+<td>Serre or localising quotient $\mathcal{A}/\mathcal{S}$</td>
+<td>the quotient of an abelian category by a localising subcategory</td>
+<td><em>Abelian and Grothendieck Categories</em></td>
+</tr>
+<tr>
+<td>$R\text{-}\mathbf{Mod}$</td>
+<td>the prototype abelian category; the input of the Freyd–Mitchell theorem</td>
+<td><em>Module Categories</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbf{Grp}$</td>
+<td>has a zero object, the trivial group, but fails to be additive: the coproduct is the free product, not the direct product</td>
+<td><em>Abelian and Grothendieck Categories</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbf{Set}$</td>
+<td>a cartesian closed category that fails to be abelian: it has no zero object</td>
+<td><em>Abelian and Grothendieck Categories</em></td>
+</tr>
+<tr>
+<td>Non-example: the category of fields</td>
+<td>fails to have a coproduct, hence is not abelian</td>
+<td><em>Tensor Products of Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="derived-and-triangulated-categories">Derived and Triangulated Categories</h2>
+<p>A <strong>derived category</strong> is obtained from the homotopy category of complexes by formally inverting the quasi-isomorphisms; it carries a <strong>triangulated</strong> structure, in which the distinguished triangle replaces the exact sequence, and the derived functors become exact. A <strong>differential graded category</strong> is the many-object form of a differential graded algebra, and its derived category is again triangulated on the zeroth cohomology.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>The structure it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category of complexes $\mathbf{Ch}(\mathcal{A})$</td>
+<td>chain complexes and chain maps over an abelian category</td>
+<td><em>Homological Algebra</em></td>
+</tr>
+<tr>
+<td>Homotopy category $K(\mathcal{A})$</td>
+<td>complexes and chain maps up to chain homotopy</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Derived category $D(\mathcal{A}) = K(\mathcal{A})[\Sigma^{-1}]$</td>
+<td>the localisation at the quasi-isomorphisms</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Triangulated category</td>
+<td>an additive category with a translation and distinguished triangles</td>
+<td><em>Derived Categories</em></td>
+</tr>
+<tr>
+<td>Differential graded category</td>
+<td>a category whose hom sets are complexes and whose composition is a chain map</td>
+<td><em>Differential Graded Categories</em></td>
+</tr>
+<tr>
+<td>Pretriangulated DG category</td>
+<td>a DG category whose $H^0$ is triangulated</td>
+<td><em>Differential Graded Categories</em></td>
+</tr>
+<tr>
+<td>Perfect or compact objects $\mathrm{perf}(\mathcal{A})$</td>
+<td>the compact DG modules; the derived Morita invariant</td>
+<td><em>Differential Graded Categories</em></td>
+</tr>
+<tr>
+<td>Non-example: $K(\mathcal{A})$</td>
+<td>fails to be triangulated in the naive sense: the triangle is only canonical in $D(\mathcal{A})$</td>
+<td><em>Derived Categories</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="homotopical-and-higher-categories">Homotopical and Higher Categories</h2>
+<p>A <strong>model category</strong> is a bicomplete category with classes of weak equivalences, cofibrations and fibrations from which a homotopy category is computed by formally inverting the weak equivalences. A <strong>higher category</strong> keeps the higher morphisms and the coherence between them, and its stable case is the home of the triangulated categories. These two frames belong to Part II, where the homotopy-theoretic notions are available.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>The structure it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model category</td>
+<td>weak equivalences, cofibrations and fibrations with the lifting and factorisation axioms</td>
+<td><em>Model Categories and Homotopy Theory</em></td>
+</tr>
+<tr>
+<td>Homotopy category $\operatorname{Ho}(\mathcal{C})$</td>
+<td>the localisation of a model category at its weak equivalences</td>
+<td><em>Model Categories and Homotopy Theory</em></td>
+</tr>
+<tr>
+<td>Simplicial category</td>
+<td>a category enriched in simplicial sets, presenting an $\infty$-category</td>
+<td><em>Higher Algebra and Higher Categories</em></td>
+</tr>
+<tr>
+<td>Quasi-category</td>
+<td>a simplicial set in which every inner horn has a filler</td>
+<td><em>Higher Algebra and Higher Categories</em></td>
+</tr>
+<tr>
+<td>Stable $\infty$-category</td>
+<td>suspension and loops are inverse equivalences; the homotopy category is triangulated</td>
+<td><em>Higher Algebra and Higher Categories</em></td>
+</tr>
+<tr>
+<td>Non-example: the naive homotopy category of spaces</td>
+<td>fails to be the localisation: its morphisms are homotopy classes, not the derived mapping spaces</td>
+<td><em>Model Categories and Homotopy Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="categories-with-extra-structure">Categories with Extra Structure</h2>
+<p>Beyond the linear categories the corpus meets the <strong>toposes</strong>, which behave like the category of sets and carry a subobject classifier; the <strong>sites</strong> and their categories of <strong>sheaves</strong>; and the <strong>monoidal categories</strong>, in which the objects carry a product with a unit, whose monoids and their modules are the operads and their algebras.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>The structure it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monoidal category</td>
+<td>a category with a product functor, a unit and coherence axioms</td>
+<td><em>Operads</em></td>
+</tr>
+<tr>
+<td>Presheaf category $\widehat{\mathcal{C}}$</td>
+<td>functors $\mathcal{C}^{\mathrm{op}} \to \mathbf{Set}$</td>
+<td><em>Presheaves and Sheaves</em></td>
+</tr>
+<tr>
+<td>Category of sheaves $\mathbf{Sh}(\mathcal{C},J)$</td>
+<td>presheaves satisfying the sheaf condition for a topology $J$</td>
+<td><em>Sheaves on Sites</em></td>
+</tr>
+<tr>
+<td>Grothendieck topos</td>
+<td>a category equivalent to the sheaves on a site</td>
+<td><em>Topoi</em></td>
+</tr>
+<tr>
+<td>Elementary topos</td>
+<td>a cartesian closed category with a subobject classifier and effective equivalence relations</td>
+<td><em>Topoi</em></td>
+</tr>
+<tr>
+<td>Opposite category $\mathcal{C}^{\mathrm{op}}$</td>
+<td>the category with the arrows reversed</td>
+<td><em>Module Categories</em></td>
+</tr>
+<tr>
+<td>Slice category $\mathcal{C}/X$</td>
+<td>objects over $X$ and the commuting triangles between them</td>
+<td><em>Topoi</em></td>
+</tr>
+<tr>
+<td>Non-example: the category of groups as a topos</td>
+<td>fails to have a subobject classifier</td>
+<td><em>Topoi</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the categories of the corpus. The categories of the algebraic layers are $\mathbf{Set}$, $\mathbf{Pos}$, $\mathbf{Mon}$, $\mathbf{Grp}$, $\mathbf{Ring}$, $R\text{-}\mathbf{Mod}$, $\mathbf{Vect}_F$, $R\text{-}\mathbf{Alg}$ and $\mathsf{CAlg}_R$, with the functors, natural transformations and adjunctions between them. The abstract categories are the additive, abelian and Grothendieck categories, with the Serre quotients; the category of complexes, its homotopy category and the derived and triangulated categories, together with the differential graded and pretriangulated categories; the model categories, their homotopy categories, and the simplicial, quasi- and stable $\infty$-categories; and the monoidal categories, presheaf categories, sheaf categories and toposes. The non-examples — $\mathbf{Grp}$, $\mathbf{Set}$, the category of fields, the naive homotopy category of complexes, the naive homotopy category of spaces and the category of groups as a topos — each name the structural axiom that fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are the standard ones of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{C}$, $\mathcal{D}$, $\mathcal{A}$, $\mathcal{B}$</td>
+<td>categories; $\mathcal{C}^{\mathrm{op}}$ the opposite category</td>
+</tr>
+<tr>
+<td>$\mathcal{C}(A,B)$, $\operatorname{Hom}_{\mathcal{C}}(A,B)$</td>
+<td>morphisms from $A$ to $B$</td>
+</tr>
+<tr>
+<td>$\mathbf{Set}, \mathbf{Pos}, \mathbf{Mon}, \mathbf{Grp}, \mathbf{Ring}$</td>
+<td>categories of sets, posets, monoids, groups, rings</td>
+</tr>
+<tr>
+<td>$R\text{-}\mathbf{Mod}$, $\mathbf{Mod}\text{-}R$, $R\text{-}\mathbf{mod}$</td>
+<td>modules over $R$, right and finitely generated</td>
+</tr>
+<tr>
+<td>$\mathbf{Vect}_F$, $R\text{-}\mathbf{Alg}$, $\mathsf{CAlg}_R$</td>
+<td>vector spaces, algebras, commutative algebras</td>
+</tr>
+<tr>
+<td>$F \dashv G$</td>
+<td>adjunction, $F$ left adjoint to $G$</td>
+</tr>
+<tr>
+<td>$\widehat{\mathcal{C}}$</td>
+<td>presheaf category</td>
+</tr>
+<tr>
+<td>$\mathbf{Sh}(\mathcal{C},J)$</td>
+<td>category of sheaves on a site</td>
+</tr>
+<tr>
+<td>$\mathbf{Ch}(\mathcal{A})$, $K(\mathcal{A})$, $D(\mathcal{A})$</td>
+<td>complexes, homotopy category, derived category</td>
+</tr>
+<tr>
+<td>$\operatorname{Ho}(\mathcal{C})$</td>
+<td>homotopy category of a model category</td>
+</tr>
+<tr>
+<td>$\mathcal{A}/\mathcal{S}$</td>
+<td>quotient by a localising subcategory</td>
+</tr>
+<tr>
+<td>$\mathbb{R}F$, $\mathbb{L}F$</td>
+<td>total right and left derived functors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em> (Springer, 2nd ed. 1998), for the categories of the algebraic layers, functors, natural transformations and adjunctions.</li>
+<li>Peter Freyd, <em>Abelian Categories</em> (Harper and Row, 1964), for additive and abelian categories and the embedding theorem.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for the homotopy and derived categories and the triangulated formalism.</li>
+<li>Mark Hovey, <em>Model Categories</em> (American Mathematical Society, 1999), for the model-category axioms and the associated homotopy categories.</li>
+<li>Saunders Mac Lane and Ieke Moerdijk, <em>Sheaves in Geometry and Logic</em> (Springer, 1992), for presheaves, sheaves, sites and toposes.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

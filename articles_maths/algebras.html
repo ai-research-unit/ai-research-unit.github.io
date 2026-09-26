@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algebras: A General Introduction — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="algebras-a-general-introduction"><strong>Algebras: A General Introduction</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces algebras as mathematical structures. The treatment is introductory and purely mathematical. The goal is to explain what an algebra is, how it relates to the more familiar notion of a module, and what additional properties an algebra may or may not have.</p>
+<p>This article treats the general theory over a <strong>commutative ring</strong>. A separate article, <em>Algebras: Categorization</em>, gives a classification organized by ring.</p>
+<p>A note on terminology. The word "algebra" is used in this article in the <strong>broad sense</strong>: a module over a commutative ring $R$ equipped with a bilinear product, with no further assumptions. In this sense, an algebra need not be associative, need not be commutative, and need not have a unit. When we want to insist on associativity, we say <strong>associative algebra</strong>. The word "algebra" without qualification always means the broad sense.</p>
+<p>Some authors use the word "algebra" in the <strong>narrow sense</strong>, meaning an associative algebra. This is a common convention, but it is not the one we adopt here. The reason is that some of the most important algebras in mathematics — Lie algebras, Jordan algebras, and the cross product algebra on $\mathbb{R}^3$ — are not associative, and it would be awkward to have to say "non-associative algebra" every time we want to mention them.</p>
+<p>A word on the base structure. The classical theory of algebras assumes that the scalars form a field. But many of the constructions and theorems carry over to the more general setting where the scalars form a <strong>commutative ring</strong>. This is the setting we adopt here. The main differences from the field case are:</p>
+<ul>
+<li>Modules over a commutative ring need not be free, whereas vector spaces over a field always are.</li>
+<li>Invertibility of a linear transformation requires the determinant to be a <strong>unit</strong> of the ring, not merely nonzero.</li>
+<li>Zero divisors may exist in the ring, and consequently in the algebra.</li>
+</ul>
+<p>We indicate where these differences matter.</p>
+<hr />
+<h2 id="part-i-modules-over-a-commutative-ring">Part I: Modules over a Commutative Ring</h2>
+<h3 id="the-idea">The Idea</h3>
+<p>Before we can say what an algebra is, we need to say what a module is. A <strong>module</strong> over a commutative ring $R$ is a set of objects — called <strong>vectors</strong> — that can be added together and multiplied by scalars from $R$, subject to certain rules.</p>
+<p>When $R$ is a field, a module over $R$ is exactly a <strong>vector space</strong> over $R$. So modules generalize vector spaces to arbitrary commutative rings.</p>
+<h3 id="the-definition">The Definition</h3>
+<p>Let $R$ be a commutative ring with identity. An <strong>$R$-module</strong> is a set $M$ equipped with two operations:</p>
+<ol>
+<li><strong>Addition:</strong> a rule that assigns to any two vectors $u, v \in M$ a vector $u + v \in M$.</li>
+<li><strong>Scalar multiplication:</strong> a rule that assigns to any scalar $r \in R$ and any vector $v \in M$ a vector $r v \in M$.</li>
+</ol>
+<p>These operations must satisfy the following axioms:</p>
+<p><strong>Axioms for addition:</strong></p>
+<ul>
+<li><strong>Associativity:</strong> $(u + v) + w = u + (v + w)$ for all $u, v, w \in M$.</li>
+<li><strong>Commutativity:</strong> $u + v = v + u$ for all $u, v \in M$.</li>
+<li><strong>Identity element:</strong> there exists a vector $0 \in M$ such that $0 + v = v$ for all $v \in M$.</li>
+<li><strong>Inverse elements:</strong> for every $v \in M$ there exists a vector $-v \in M$ such that $v + (-v) = 0$.</li>
+</ul>
+<p><strong>Axioms for scalar multiplication:</strong></p>
+<ul>
+<li><strong>Compatibility with ring multiplication:</strong> $r(s v) = (r s) v$ for all $r, s \in R$ and $v \in M$.</li>
+<li><strong>Identity element:</strong> $1 v = v$ for all $v \in M$, where $1$ is the multiplicative identity of $R$.</li>
+</ul>
+<p><strong>Distributivity axioms:</strong></p>
+<ul>
+<li><strong>Distributivity over vector addition:</strong> $r(u + v) = r u + r v$ for all $r \in R$ and $u, v \in M$.</li>
+<li><strong>Distributivity over scalar addition:</strong> $(r + s)v = r v + s v$ for all $r, s \in R$ and $v \in M$.</li>
+</ul>
+<p>These are the axioms. Everything else follows from them.</p>
+<h3 id="free-modules-and-bases">Free Modules and Bases</h3>
+<p>A <strong>basis</strong> of an $R$-module $M$ is a set of vectors $\{e_1, e_2, \ldots\}$ such that:</p>
+<ol>
+<li><strong>Spanning:</strong> every vector in $M$ can be written as a linear combination of the basis vectors with coefficients in $R$.</li>
+<li><strong>Linear independence:</strong> a finite linear combination $r_1 e_1 + \cdots + r_n e_n$ equals $0$ only when $r_1 = \cdots = r_n = 0$.</li>
+</ol>
+<p>An $R$-module is <strong>free</strong> if it has a basis. If $M$ has a finite basis $\{e_1, \ldots, e_n\}$ over $R$, then every vector $v \in M$ can be written uniquely as</p>
+<p>$$
+v = r_1 e_1 + r_2 e_2 + \cdots + r_n e_n
+$$</p>
+<p>where $r_1, \ldots, r_n \in R$ are the <strong>coordinates</strong> of $v$ with respect to the basis. In this case, $M \cong R^n$, and we say that $M$ has <strong>rank</strong> $n$.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, every module is free. Over a general commutative ring, this is false. For example, $\mathbb{Z}/n\mathbb{Z}$ is a $\mathbb{Z}$-module that is not free for $n \geq 2$. So the notion of a basis is not as universal as it is over a field.</p>
+<p>The rank depends on the ring. The same underlying set can have different ranks over different rings. For example, $\mathbb{C}$ has rank 2 over $\mathbb{R}$ and rank 1 over $\mathbb{C}$.</p>
+<hr />
+<h2 id="part-ii-what-is-an-algebra">Part II: What Is an Algebra?</h2>
+<h3 id="the-idea_1">The Idea</h3>
+<p>A module allows us to add vectors and multiply them by scalars. But it does not allow us to multiply two vectors together. An <strong>algebra</strong> is a module equipped with a product — a rule for multiplying two vectors to get a third vector.</p>
+<p>The product is required to be <strong>bilinear</strong>, meaning it is linear in each argument separately. This is the minimum requirement. Beyond bilinearity, an algebra may or may not satisfy further properties.</p>
+<h3 id="the-definition_1">The Definition</h3>
+<p>Let $R$ be a commutative ring. An <strong>algebra over $R$</strong> is an $R$-module $A$ equipped with a <strong>product</strong> — a rule that assigns to any two vectors $u, v \in A$ a vector $uv \in A$ — satisfying the following axioms:</p>
+<p><strong>Bilinearity:</strong></p>
+<ul>
+<li><strong>Left distributivity:</strong> $(u + v)w = uw + vw$ for all $u, v, w \in A$.</li>
+<li><strong>Right distributivity:</strong> $u(v + w) = uv + uw$ for all $u, v, w \in A$.</li>
+<li><strong>Left compatibility with scalars:</strong> $(r u)v = r(uv)$ for all $r \in R$ and $u, v \in A$.</li>
+<li><strong>Right compatibility with scalars:</strong> $u(r v) = r(uv)$ for all $r \in R$ and $u, v \in A$.</li>
+</ul>
+<p>These four axioms are equivalent to the single statement that the product is <strong>bilinear</strong>: linear in each argument separately.</p>
+<p>This is the minimum requirement. An algebra need not be associative, need not be commutative, need not have a unit, and need not have inverses. Those are additional properties that an algebra may or may not have.</p>
+<h3 id="additional-properties">Additional Properties</h3>
+<p>Beyond bilinearity, an algebra may satisfy any of the following properties:</p>
+<p><strong>Associativity.</strong> The product is associative if</p>
+<p>$$
+(uv)w = u(vw)
+$$</p>
+<p>for all $u, v, w \in A$.</p>
+<p><strong>Commutativity.</strong> The product is commutative if</p>
+<p>$$
+uv = vu
+$$</p>
+<p>for all $u, v \in A$.</p>
+<p><strong>Existence of a unit.</strong> The algebra has a unit if there exists an element $1 \in A$ such that</p>
+<p>$$
+1v = v1 = v
+$$</p>
+<p>for all $v \in A$.</p>
+<p><strong>Existence of inverses.</strong> An element $v \in A$ has an inverse if there exists an element $v^{-1} \in A$ such that</p>
+<p>$$
+vv^{-1} = v^{-1}v = 1
+$$</p>
+<p>where $1$ is the unit of the algebra. A unital associative algebra in which every nonzero element has an inverse is called a <strong>division algebra</strong>.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, a division algebra requires every nonzero element to be invertible. Over a commutative ring with zero divisors, this is impossible for any algebra of rank greater than 1, because the zero divisors of $R$ become zero divisors in the algebra. So the notion of a division algebra is most useful when $R$ is at least an integral domain, and the classical theorems (Frobenius, Wedderburn) require $R$ to be a field.</p>
+<h3 id="replacing-associativity">Replacing Associativity</h3>
+<p>Associativity is not the only possible identity that a bilinear product can satisfy. There are other identities, and algebras satisfying them are studied in their own right. The most important is the <strong>Jacobi identity</strong>.</p>
+<p>A bilinear product $[\cdot, \cdot]$ is <strong>antisymmetric</strong> if</p>
+<p>$$
+[u, v] = -[v, u]
+$$</p>
+<p>for all $u, v \in A$. It satisfies the <strong>Jacobi identity</strong> if</p>
+<p>$$
+[u, [v, w]] + [v, [w, u]] + [w, [u, v]] = 0
+$$</p>
+<p>for all $u, v, w \in A$. An algebra over a commutative ring $R$ equipped with an antisymmetric product satisfying the Jacobi identity is called a <strong>Lie algebra</strong>. The product is called the <strong>Lie bracket</strong>.</p>
+<p>The Jacobi identity is the replacement for associativity. It says that the failure of the bracket to be associative is controlled: the three nested brackets sum to zero. This is the precise sense in which the identity substitutes for associativity.</p>
+<p>Lie algebras are not associative in general. The cross product on $\mathbb{R}^3$ is the simplest example: it is antisymmetric and satisfies the Jacobi identity, but it is not associative.</p>
+<p>Another important identity is the <strong>Jordan identity</strong>:</p>
+<p>$$
+u(v(uu)) = (uv)(uu).
+$$</p>
+<p>An algebra over a commutative ring $R$ equipped with a commutative product satisfying the Jordan identity is called a <strong>Jordan algebra</strong>. They are not associative in general.</p>
+<h3 id="the-hierarchy-of-algebraic-structures">The Hierarchy of Algebraic Structures</h3>
+<p>The hierarchy of algebraic structures over a fixed commutative ring $R$, from weakest to strongest, is as follows:</p>
+<ol>
+<li><strong>Module over $R$.</strong> A set with addition and scalar multiplication, satisfying the module axioms. No product of vectors.</li>
+<li><strong>Algebra over $R$.</strong> A module over $R$ with a bilinear product. No further requirements.</li>
+<li><strong>Associative algebra over $R$.</strong> An algebra with associative product.</li>
+<li><strong>Unital algebra over $R$.</strong> An associative algebra with a unit element $1$.</li>
+<li><strong>Division algebra over $R$.</strong> A unital associative algebra in which every nonzero element has a multiplicative inverse. May or may not be commutative. Requires $R$ to be at least an integral domain.</li>
+<li><strong>Field extension of $F$.</strong> When $R = F$ is a field, a commutative division algebra over $F$. Equivalently, a commutative unital associative algebra over $F$ in which every nonzero element is invertible.</li>
+</ol>
+<p>So, over a field $F$:</p>
+<p>$$
+\text{field} \subset \text{division algebra} \subset \text{unital associative algebra} \subset \text{associative algebra} \subset \text{algebra} \subset \text{vector space}.
+$$</p>
+<p>The inclusions are strict. For example:</p>
+<ul>
+<li>The algebra $\mathbb{R}^3$ with the cross product is an algebra over $\mathbb{R}$ that is not associative.</li>
+<li>The algebra $M_2(\mathbb{R})$ of $2 \times 2$ real matrices is a unital associative algebra over $\mathbb{R}$ that is not a division algebra.</li>
+<li>The quaternions $\mathbb{H}$ over $\mathbb{R}$ form a division algebra over $\mathbb{R}$ that is not a field.</li>
+<li>The real numbers $\mathbb{R}$ are a field that is infinite-dimensional over its prime field $\mathbb{Q}$.</li>
+</ul>
+<p>Over a commutative ring $R$, the hierarchy is:</p>
+<p>$$
+\text{algebra over } R \supset \text{associative algebra over } R \supset \text{unital algebra over } R.
+$$</p>
+<p>The notion of a division algebra over $R$ is only meaningful when $R$ is an integral domain, and the classical theory requires $R$ to be a field.</p>
+<hr />
+<h2 id="part-iii-properties-of-algebras">Part III: Properties of Algebras</h2>
+<h3 id="associativity">Associativity</h3>
+<p>An algebra over a commutative ring $R$ is <strong>associative</strong> if</p>
+<p>$$
+(uv)w = u(vw)
+$$</p>
+<p>for all $u, v, w \in A$. Associativity allows us to write products of three or more elements without parentheses.</p>
+<p>Most algebras of interest are associative. The cross product algebra $\mathbb{R}^3$ is a notable exception.</p>
+<h3 id="commutativity">Commutativity</h3>
+<p>An algebra over a commutative ring $R$ is <strong>commutative</strong> if</p>
+<p>$$
+uv = vu
+$$</p>
+<p>for all $u, v \in A$. Commutativity is a strong condition.</p>
+<h3 id="the-center">The Center</h3>
+<p>The <strong>center</strong> of an algebra $A$ over a commutative ring $R$ is the set of elements that commute with every element of $A$:</p>
+<p>$$
+Z(A) = \{z \in A : zv = vz \text{ for all } v \in A\}.
+$$</p>
+<p>For an associative algebra $A$, the center is a commutative subalgebra of $A$ over $R$.</p>
+<h3 id="units-and-zero-divisors">Units and Zero Divisors</h3>
+<p>A <strong>unit</strong> in an algebra $A$ over a commutative ring $R$ is an element $u$ that has a multiplicative inverse: there exists $u^{-1} \in A$ such that $uu^{-1} = u^{-1}u = 1$. If $A$ is associative and unital, the set of all units in $A$ forms a group under multiplication, called the <strong>group of units</strong> of $A$.</p>
+<p>A <strong>zero divisor</strong> in an algebra $A$ over a commutative ring $R$ is a nonzero element $z$ such that there exists a nonzero element $w$ with $zw = 0$ or $wz = 0$. An algebra with no zero divisors is called a <strong>domain</strong>.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, an algebra may or may not have zero divisors. Over a commutative ring with zero divisors, the zero divisors of the ring automatically become zero divisors in the algebra, provided they remain nonzero there. For example, over $\mathbb{D}$, the element $(1 + e) \cdot 1$ is a zero divisor in any $\mathbb{D}$-algebra in which it is nonzero.</p>
+<h3 id="ideals">Ideals</h3>
+<p>An <strong>ideal</strong> in an algebra $A$ over a commutative ring $R$ is a submodule $I \subseteq A$ such that for all $a \in A$ and $x \in I$, both $ax \in I$ and $xa \in I$. Ideals are precisely the submodules by which one can quotient.</p>
+<h3 id="homomorphisms">Homomorphisms</h3>
+<p>An <strong>algebra homomorphism</strong> from an algebra $A$ over a commutative ring $R$ to an algebra $B$ over the same ring $R$ is an $R$-linear map $\varphi: A \to B$ that preserves the product:</p>
+<p>$$
+\varphi(uv) = \varphi(u)\varphi(v)
+$$</p>
+<p>for all $u, v \in A$. An <strong>isomorphism</strong> is a bijective homomorphism.</p>
+<hr />
+<h2 id="part-iv-constructions-on-algebras">Part IV: Constructions on Algebras</h2>
+<h3 id="direct-sums">Direct Sums</h3>
+<p>Let $A$ and $B$ be algebras over the same commutative ring $R$. The <strong>direct sum</strong> $A \oplus B$ is the algebra over $R$ whose underlying module is the direct sum of the modules $A$ and $B$, with product defined componentwise:</p>
+<p>$$
+(a_1, b_1)(a_2, b_2) = (a_1 a_2, b_1 b_2).
+$$</p>
+<p>If $A$ and $B$ are free of ranks $m$ and $n$, then $A \oplus B$ is free of rank $m + n$.</p>
+<h3 id="tensor-products">Tensor Products</h3>
+<p>Let $A$ and $B$ be algebras over the same commutative ring $R$. The <strong>tensor product</strong> $A \otimes_R B$ is the algebra over $R$ whose underlying module is the tensor product of the modules $A$ and $B$, with product defined on elementary tensors by</p>
+<p>$$
+(a_1 \otimes b_1)(a_2 \otimes b_2) = (a_1 a_2) \otimes (b_1 b_2)
+$$</p>
+<p>and extended bilinearly.</p>
+<p>If $A$ and $B$ are free of ranks $m$ and $n$, then $A \otimes_R B$ is free of rank $mn$.</p>
+<h3 id="quotients">Quotients</h3>
+<p>Let $A$ be an algebra over a commutative ring $R$ and let $I$ be a two-sided ideal of $A$. The <strong>quotient algebra</strong> $A/I$ is the set of cosets $\{a + I : a \in A\}$ with addition, scalar multiplication, and product defined by</p>
+<p>$$
+(a + I) + (b + I) = (a + b) + I,
+$$</p>
+<p>$$
+r(a + I) = (r a) + I,
+$$</p>
+<p>$$
+(a + I)(b + I) = (ab) + I.
+$$</p>
+<p>These operations are well-defined precisely because $I$ is an ideal.</p>
+<h3 id="base-change">Base Change</h3>
+<p>Let $R \to S$ be a ring homomorphism, and let $A$ be an $R$-algebra. The <strong>base change</strong> of $A$ to $S$ is the $S$-algebra</p>
+<p>$$
+A \otimes_R S,
+$$</p>
+<p>with the natural $S$-module structure. This is a common construction: for example, complexifying a real algebra is base change along $\mathbb{R} \to \mathbb{C}$.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p><strong>A module over a commutative ring $R$</strong> is a set of vectors that can be added and multiplied by scalars in $R$. When $R$ is a field, this is exactly a vector space.</p>
+<p><strong>An algebra over a commutative ring $R$</strong> is a module over $R$ equipped with a bilinear product. The product need not be associative, commutative, or unital.</p>
+<p><strong>The ring matters.</strong> The same underlying set can be a module or an algebra over different rings, and the structure depends on the choice of ring.</p>
+<p><strong>Additional properties</strong> that an algebra may have include associativity, commutativity, existence of a unit, and existence of inverses.</p>
+<p><strong>The hierarchy of algebraic structures</strong> over a field $F$ is:</p>
+<p>$$
+\text{field} \subset \text{division algebra} \subset \text{unital associative algebra} \subset \text{associative algebra} \subset \text{algebra} \subset \text{vector space}.
+$$</p>
+<p>Over a general commutative ring $R$, the hierarchy is shorter:</p>
+<p>$$
+\text{algebra over } R \supset \text{associative algebra over } R \supset \text{unital algebra over } R.
+$$</p>
+<p>The notion of a division algebra requires $R$ to be at least an integral domain, and the classical theory requires $R$ to be a field.</p>
+<p><strong>Key differences from the field case.</strong></p>
+<ul>
+<li>Not every module is free, so not every algebra has a well-defined rank.</li>
+<li>Invertibility requires the determinant to be a unit of $R$, not merely nonzero.</li>
+<li>Zero divisors in $R$ become zero divisors in any $R$-algebra in which they remain nonzero.</li>
+<li>Division algebras are only meaningful when $R$ is an integral domain.</li>
+</ul>
+<p><strong>Constructions on algebras</strong> include direct sums, tensor products, quotients, and base change.</p>
+<p>The classification of these algebras is organized by ring.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991).</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002).</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975).</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003).</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> and <em>II</em> (Dover, 2nd ed. 2009).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+<li>Thomas W. Hungerford, <em>Algebra</em> (Springer, 1974).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

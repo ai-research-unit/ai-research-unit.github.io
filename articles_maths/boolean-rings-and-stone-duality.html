@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean Rings and Stone Duality — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="boolean-rings-and-stone-duality"><strong>Boolean Rings and Stone Duality</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the sixth and last article of the Boolean system in Part V, and it occupies the <strong>topology slot</strong> of that system. The first five articles developed the Boolean and neighbouring algebras; here the same classes are re-read as <em>rings</em>, and the ring is then represented by a topological space. The central results are the equivalence between Boolean algebras and <strong>Boolean rings</strong> and <strong>Stone duality</strong>, the contravariant equivalence between Boolean algebras and the compact Hausdorff totally disconnected spaces. This is the one topological article of the category, and it is the article in which the Boolean system meets topology.</p>
+<p>The boundary against the general theory is deliberate. Topological spaces, bases, compactness, Hausdorffness and continuity are the subject of <em>Topological Spaces</em>, and are used here rather than constructed. The general theory of commutative rings, ideals, prime ideals and the spectrum is the subject of <em>Rings</em>; the Zariski topology is used as the standard comparison. The pointfree theory of frames and locales was the subject of <em>Quantales and Frames</em>, and Stone spaces are the spatial Boolean case of it. The connection with propositional logic is drawn in one section and cited to <em>Logic and Proof</em>.</p>
+<p>The corpus's default base is the commutative ring, and this is the article where that base is literally the object of study: a Boolean ring is a commutative ring with identity in which every element is idempotent, and the dictionary with the Boolean algebras of <em>Boolean Algebras and Lattices</em> is exact. Throughout, a Boolean ring is written $R$ and a Boolean algebra $B$; the two-element field is $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$; the set of prime, equivalently maximal, ideals of $R$ is $\operatorname{Spec}(R)$ with the hull-kernel topology, also called the <strong>Stone space</strong> $S(B)$ when $B$ is the associated Boolean algebra; and $\operatorname{Clop}(X)$ is the Boolean algebra of clopen subsets of a space $X$.</p>
+<h2 id="boolean-rings">Boolean Rings</h2>
+<h3 id="idempotent-rings">Idempotent Rings</h3>
+<p><strong>Definition.</strong> A <strong>Boolean ring</strong> is a ring $R$ with identity $1 \neq 0$ in which $x^2 = x$ for every $x \in R$. A <strong>Boolean ring homomorphism</strong> is a unital ring homomorphism.</p>
+<p><strong>Theorem.</strong> Every Boolean ring is commutative and has characteristic $2$; that is, $xy = yx$ and $x + x = 0$ for all $x, y \in R$.</p>
+<p><strong>Proof.</strong> From $(x+y)^2 = x+y$ one obtains $xy + yx = 0$. Taking $y = x$ gives $x^2 + x^2 = 0$, that is, $2x = 0$, so every element is its own additive inverse and $xy = -yx = yx$. $\square$</p>
+<p><strong>Theorem.</strong> In a Boolean ring every prime ideal is maximal, and the quotient by a prime ideal is $\mathbb{F}_2$.</p>
+<p><strong>Proof.</strong> Let $\mathfrak{p}$ be prime and let $x \notin \mathfrak{p}$ in $R/\mathfrak{p}$. Since $x(1-x) = x - x^2 = 0$ in $R/\mathfrak{p}$ and the quotient is a domain with $x \neq 0$, one has $1 - x = 0$, so $x = 1$ and $R/\mathfrak{p}$ is the field $\mathbb{F}_2$. Hence $\mathfrak{p}$ is maximal. $\square$</p>
+<p><strong>Proposition.</strong> A Boolean ring is reduced, von Neumann regular and of Krull dimension zero; every finitely generated ideal is principal, generated by the join of its generators, and the principal ideals form a lattice isomorphic to $R$ under $a \mapsto (a)$.</p>
+<p><strong>Proof.</strong> Reducedness is $x^2 = x$ with no nilpotents; regularity is $x = x^2 x = x \cdot x \cdot 1$, exhibiting $x$ as its own quasi-inverse. Dimension zero is the preceding theorem. For the last statement, in a Boolean ring $(a) + (b) = (a \vee b)$ and $(a) \cap (b) = (ab)$, where $a \vee b = a + b + ab$; so the finitely generated ideals are principal, generated by the join of their generators, and the map $a \mapsto (a)$ is a lattice isomorphism onto the principal ideals. $\square$</p>
+<h3 id="the-dictionary-with-boolean-algebras">The Dictionary with Boolean Algebras</h3>
+<p><strong>Definition.</strong> Let $B$ be a Boolean algebra with operations $\wedge, \vee, \neg$ and bounds $0,1$. Define on $B$ the <strong>symmetric difference</strong> and the <strong>meet product</strong></p>
+<p>$$
+a + b = (a \wedge \neg b) \vee (\neg a \wedge b), \qquad a \cdot b = a \wedge b .
+$$</p>
+<p>Conversely, let $R$ be a Boolean ring and define</p>
+<p>$$
+a \wedge b = a \cdot b, \qquad a \vee b = a + b + a \cdot b, \qquad \neg a = 1 + a .
+$$</p>
+<p><strong>Theorem.</strong> The two constructions are mutually inverse and give an equivalence of categories between Boolean algebras and Boolean rings. Under it, the order of $B$ is recovered from $R$ by $a \leq b \iff a \cdot b = a$, and the ideals of $R$ correspond to the lattice ideals of the lattice part of $B$.</p>
+<p><strong>Proof.</strong> Both constructions are the standard ones. For instance, in the Boolean ring derived from $B$, the displayed $+$ is associative because it is the symmetric difference of sets in the representation $B \subseteq \mathcal{P}(X)$, and $a\cdot b = a\wedge b$ is idempotent and commutative; the identity $a + a = 0$ holds because $(a\wedge\neg a)\vee(\neg a\wedge a) = 0$. The verifications of the ring axioms and of the inverse construction are direct and are in the standard references. $\square$</p>
+<p>The dictionary is summarised by the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Boolean algebra $B$</th>
+<th>Boolean ring $R$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a \wedge b$</td>
+<td>$a \cdot b$</td>
+</tr>
+<tr>
+<td>$a \vee b$</td>
+<td>$a + b + ab$</td>
+</tr>
+<tr>
+<td>$\neg a$</td>
+<td>$1 + a$</td>
+</tr>
+<tr>
+<td>$0, 1$</td>
+<td>$0, 1$</td>
+</tr>
+<tr>
+<td>$a \leq b$</td>
+<td>$ab = a$</td>
+</tr>
+<tr>
+<td>symmetric difference</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>atom of $B$</td>
+<td>minimal ideal $(a)$</td>
+</tr>
+<tr>
+<td>filter</td>
+<td>complement of an ideal</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Example (power sets).</strong> For a set $X$, the power set $\mathcal{P}(X)$ with symmetric difference and intersection is the Boolean ring of subsets of $X$; the corresponding Boolean algebra is the power-set algebra of <em>Boolean Algebras and Lattices</em>. Its principal ideals correspond to the subsets of $X$, so $\mathcal{P}(X)$ is its own lattice of principal ideals.</p>
+<p><strong>Example (finite fields).</strong> The field $\mathbb{F}_2$ is the Boolean ring of the two-element Boolean algebra $\mathbf{2}$. A finite Boolean ring is a product $\mathbb{F}_2^n$, and the corresponding Boolean algebra is the power set of an $n$-element set.</p>
+<h2 id="the-stone-space">The Stone Space</h2>
+<h3 id="prime-ideals-and-the-hull-kernel-topology">Prime Ideals and the Hull-Kernel Topology</h3>
+<p><strong>Definition.</strong> Let $R$ be a Boolean ring and let $\operatorname{Spec}(R)$ be the set of its prime ideals, equivalently of its maximal ideals. The <strong>Stone topology</strong> (the hull-kernel topology) has as a basis of open sets</p>
+<p>$$
+U_a = \{\mathfrak{m} \in \operatorname{Spec}(R) : a \notin \mathfrak{m}\}, \qquad a \in R .
+$$</p>
+<p>The space $\operatorname{Spec}(R)$ with this topology is the <strong>Stone space</strong> of $R$; when $R$ is the Boolean ring of a Boolean algebra $B$ it is written $S(B)$.</p>
+<p><strong>Theorem.</strong> For every $a \in R$ the set $U_a$ is clopen, $\operatorname{Spec}(R)$ is compact and Hausdorff, and the clopen sets form a basis. Hence $\operatorname{Spec}(R)$ is a <strong>Stone space</strong>: compact, Hausdorff and totally disconnected.</p>
+<p><strong>Proof.</strong> The complement of $U_a$ is $U_{1+a}$, because a maximal ideal contains exactly one of $a$ and $1+a$; hence $U_a$ is clopen. Hausdorffness follows because distinct maximal ideals are separated by some $a$ with $a \in \mathfrak{m}$ and $a \notin \mathfrak{n}$, and then $U_a$ separates them. For compactness, let $\{U_{a_i}\}$ be a cover. If no finite subfamily covered, then for every finite subset $\{a_{i_1},\dots,a_{i_k}\}$ the ideal generated by those elements would be proper, since a finite subcover is equivalent to the join $a_{i_1}\vee\cdots\vee a_{i_k}$ being $1$; the union of those finitely generated ideals is a proper ideal, contained in a maximal ideal $\mathfrak{m}$, which lies in no $U_{a_i}$, a contradiction. The clopen sets form a basis by definition, so the space is totally disconnected. $\square$</p>
+<p><strong>Theorem (Stone representation).</strong> For every Boolean ring $R$ the map</p>
+<p>$$
+a \longmapsto U_a
+$$</p>
+<p>is an isomorphism of Boolean rings from $R$ onto the ring of clopen subsets of $\operatorname{Spec}(R)$. Equivalently, every Boolean algebra is isomorphic to the algebra of clopen sets of its Stone space.</p>
+<p><strong>Proof.</strong> The map preserves the ring operations: $U_{ab} = U_a \cap U_b$ and $U_{a+b} = U_a \triangle U_b$, the latter because exactly one of $a, b$ lies outside a maximal ideal when $a+b \neq 0$. It is injective because the ideals $(a)$ and $(b)$ can be separated by maximal ideals when $a \neq b$, and it is surjective because every clopen set is a finite union of basic clopens $U_{a_i}$, and hence equals $U_{c}$ for $c = a_{i_1}\vee\cdots\vee a_{i_k}$, using that $\operatorname{Spec}(R)$ is compact. $\square$</p>
+<p><strong>Corollary.</strong> Every Boolean ring is a subdirect product of copies of $\mathbb{F}_2$.</p>
+<p><strong>Proof.</strong> Evaluation at each maximal ideal is a ring homomorphism $R \to \mathbb{F}_2$, and the products of these evaluations separate the elements of $R$ by the representation theorem. $\square$</p>
+<h3 id="the-category-of-stone-spaces">The Category of Stone Spaces</h3>
+<p><strong>Definition.</strong> The category <strong>Stone</strong> has as objects the compact Hausdorff totally disconnected spaces, equivalently the compact Hausdorff spaces with a basis of clopens, and as morphisms the continuous maps. The <strong>clopen-set functor</strong> is $\operatorname{Clop} : \mathbf{Stone}^{\mathrm{op}} \to \mathbf{Bool}$, assigning to $X$ the Boolean algebra $\operatorname{Clop}(X)$ and to a continuous map $f : X \to Y$ the inverse image $f^{-1} : \operatorname{Clop}(Y) \to \operatorname{Clop}(X)$, which preserves unions, intersections and complements.</p>
+<p><strong>Theorem (Stone duality).</strong> The functors</p>
+<p>$$
+\mathbf{Bool}^{\mathrm{op}} \longrightarrow \mathbf{Stone}, \qquad B \mapsto S(B), \qquad \mathbf{Stone}^{\mathrm{op}} \longrightarrow \mathbf{Bool}, \qquad X \mapsto \operatorname{Clop}(X)
+$$</p>
+<p>are inverse equivalences of categories. In particular, for Boolean algebras $B, C$ the continuous maps $S(B) \to S(C)$ correspond bijectively to the homomorphisms $C \to B$.</p>
+<p><strong>Proof.</strong> The representation theorem gives $B \cong \operatorname{Clop}(S(B))$, and for a Stone space $X$ the map $x \mapsto \{\text{clopens containing } x\}$ is a homeomorphism $X \to S(\operatorname{Clop}(X))$, because a Stone space is determined by its clopen sets and every maximal ideal of $\operatorname{Clop}(X)$ is the family of clopens containing a point. The two isomorphisms are natural in the morphisms, giving the equivalence. $\square$</p>
+<p><strong>Example (Cantor space).</strong> The Stone space of the free Boolean algebra on a set $I$ is the space $2^I = \{0,1\}^I$ with the product topology, and for $I$ countable this is the Cantor space. The clopen sets of $2^I$ are the finite Boolean combinations of coordinate conditions, which is the free Boolean algebra on the coordinate functions. This is the standard concrete model of Stone duality: free Boolean algebras are algebras of clopens of Cantor cubes, exactly as free MV-algebras were algebras of McNaughton functions of the same cubes.</p>
+<p><strong>Example (ultrafilters and the Stone–Čech compactification).</strong> Let $X$ be a set and let $R = \mathcal{P}(X)$ be its power-set Boolean ring. The maximal ideals of $R$ are the complements of the ultrafilters on $X$, so the Stone space of $R$ is the space of ultrafilters on $X$ with the Stone topology, which is the Stone–Čech compactification $\beta X$ of the discrete space $X$. The points of $X$ correspond to the principal ultrafilters, a dense discrete subspace, and the compactness of $\beta X$ is the compactness of the Stone space.</p>
+<p><strong>Example (finite Boolean algebras).</strong> If $B$ is finite then $S(B)$ is finite, and the correspondence is the classical one: a finite Boolean algebra is the power set of its set of atoms, and $S(B)$ is that set. In the other direction a Stone space with $n$ points has exactly $2^n$ clopens. Stone duality is therefore the extension to the infinite case of the dictionary between finite Boolean algebras and finite sets.</p>
+<h2 id="stone-duality-topology-and-logic">Stone Duality, Topology and Logic</h2>
+<h3 id="the-propositional-calculus">The Propositional Calculus</h3>
+<p><strong>Definition.</strong> Let $T$ be a theory in the propositional calculus and let $L_T$ be its <strong>Lindenbaum algebra</strong>, the Boolean algebra of formulas modulo provable equivalence. A <strong>maximal consistent extension</strong> of $T$ is a consistent theory $\Sigma \supseteq T$ maximal under inclusion, and a <strong>valuation</strong> is a Boolean homomorphism $L_T \to \mathbf{2}$.</p>
+<p><strong>Theorem.</strong> Maximal consistent extensions of $T$ correspond bijectively to the maximal ideals of $L_T$ and to the valuations of $L_T$; hence the Stone space $S(L_T)$ is the space of models of $T$. The compactness theorem follows: $T$ is consistent if and only if every finite subset of $T$ is consistent, because the Stone space of a nontrivial Boolean algebra is nonempty by the existence of maximal ideals, and the finite intersection property for clopens reduces to finite consistency.</p>
+<p><strong>Proof.</strong> The preimage of $0$ under a valuation is a maximal ideal, and the complement of a maximal ideal is the set of formulas true at the corresponding maximal consistent extension; the two constructions are inverse. Nonemptiness of $S(L_T)$ for $L_T \neq 0$ is the existence of a maximal ideal, which is Zorn's lemma as in <em>Cardinality and the Axiom of Choice</em>. The finite intersection property for a family of clopens of a compact space gives a point, and a finite subfamily of a theory corresponds to finitely many clopens, giving finite consistency. $\square$</p>
+<p>The theorem is the topological form of the completeness of propositional logic, stated in <em>Logic and Proof</em>; the space of models is the Stone space of the Lindenbaum algebra, and compactness of the space is the compactness of the logic.</p>
+<h3 id="stone-spaces-and-the-frames-of-the-previous-article">Stone Spaces and the Frames of the Previous Article</h3>
+<p><strong>Theorem.</strong> A Boolean algebra $B$ is a frame if and only if it is complete as a lattice; a complete Boolean algebra is spatial as a locale exactly when it is atomic, and its space of points is then the discrete space of its atoms. For a general Boolean algebra $B$ the associated locale is the frame $\operatorname{Id}(B)$ of ideals of $B$, whose points are the prime ideals; its space of points is again the Stone space $S(B)$.</p>
+<p><strong>Proof.</strong> A complete lattice is a frame exactly when finite meets distribute over arbitrary joins, which holds in a Boolean algebra by distributivity. A frame homomorphism $B \to \mathbf{2}$ from a complete Boolean algebra is determined by the ultrafilter of elements sent to $1$, and preservation of arbitrary joins makes this a completely prime ultrafilter; the completely prime ultrafilters of a complete Boolean algebra are the principal ultrafilters of atoms, so the point space is the discrete set of atoms, and it is empty for a non-atomic complete Boolean algebra. The frame of ideals of an arbitrary Boolean algebra is the down-set frame of the poset $B$; its points are the completely prime filters, equivalently the prime ideals, and the induced topology is the Stone topology. $\square$</p>
+<p><strong>Remark.</strong> Stone duality is the Boolean case of the duality between spatial locales and sober spaces of <em>Quantales and Frames</em>: a Stone space is sober, being Hausdorff, and its locale is spatial. The general duality for distributive lattices, in which the Stone space is replaced by a Priestley space with a total order, and the duality for arbitrary bounded lattices, are the natural extensions; only the Boolean case is used here.</p>
+<h2 id="the-stone-space-as-an-ultrafilter-space">The Stone Space as an Ultrafilter Space</h2>
+<h3 id="ultrafilters">Ultrafilters</h3>
+<p><strong>Definition.</strong> A <strong>filter</strong> on a Boolean algebra $B$ is a proper subset $F \subseteq B$ that is upward closed and closed under meets: $a \in F$ and $a \leq b$ imply $b \in F$, and $a, b \in F$ imply $a \wedge b \in F$. A filter is an <strong>ultrafilter</strong> if it is maximal among proper filters, equivalently if for every $a \in B$ exactly one of $a$ and $\neg a$ lies in $F$.</p>
+<p><strong>Theorem.</strong> The points of the Stone space $X = \operatorname{Spec} B$ are in natural bijection with the ultrafilters on $B$: to a prime ideal $P$ corresponds the ultrafilter $F = \{\neg a : a \in P\} = B \setminus P$, and the map is a bijection. The clopen sets of $X$ are the sets $\widehat a = \{F : a \in F\}$, and they form a base of the topology.</p>
+<p><strong>Proof.</strong> A prime ideal is the complement of an ultrafilter in a Boolean ring, since for every $a$ the idempotents satisfy $a \wedge \neg a = 0$ and $a \vee \neg a = 1$, so exactly one of the two lies outside $P$. The identification of the basic open sets with the clopen sets is the definition of the hull-kernel topology. $\square$</p>
+<h3 id="the-compactness-and-disconnectedness">The Compactness and Disconnectedness</h3>
+<p><strong>Theorem (Stone).</strong> The Stone space $X = \operatorname{Spec} B$ is compact, Hausdorff, totally disconnected, and extremally disconnected, that is, the closure of every open set is open. The algebra $B$ is recovered from $X$ as the algebra of clopen subsets, and the correspondence is bijective.</p>
+<p><strong>Proof.</strong> Compactness is the prime ideal theorem for Boolean algebras, which is a consequence of the compactness theorem of propositional logic; Hausdorffness and total disconnectedness follow because distinct ultrafilters are separated by some $a$ and its negation, and the clopen sets separate points. Extreme disconnectedness is proved by showing that the closure of an open set is again a union of basic clopens. The recovery of $B$ is the Stone representation theorem of the previous section. $\square$</p>
+<p><strong>Example.</strong> The Stone space of the power set $\mathcal{P}(S)$ is the Čech–Stone compactification $\beta S$ of the discrete space $S$; the principal ultrafilters are the isolated points, corresponding to the elements of $S$, and $\beta S$ is the largest compact Hausdorff space in which $S$ is dense. The Stone space of the countable atomless Boolean algebra is the Cantor space $2^{\mathbb{N}}$, and the Stone space of the finite–cofinite algebra on $\mathbb{N}$ is the one-point compactification of $\mathbb{N}$. The Čech–Stone compactification and its universal property are treated in <em>Topological Spaces</em>.</p>
+<p><strong>Theorem.</strong> The map $S \to \beta S$ is the unit of the adjunction between the discrete-space functor and the Stone–Čech functor; every bounded continuous real function on $S$ extends uniquely to $\beta S$, and no point of $\beta \mathbb{N} \setminus \mathbb{N}$ is isolated.</p>
+<p><strong>Proof.</strong> The universal property of the compactification is proved by Tychonoff's theorem and the density of $S$; the non-isolation of the remainder follows because a clopen set containing a nonprincipal ultrafilter contains infinitely many principal ultrafilters, since the ultrafilter is nonprincipal and the algebra is the power set. $\square$</p>
+<p><strong>Remark.</strong> The ultrafilter description of the Stone space is the reason the three descriptions of the theory agree: a prime ideal of the Boolean ring, an ultrafilter of the Boolean algebra, and a homomorphism into the two-element algebra are three presentations of the same object, and the model-theoretic reading of the point as a complete and consistent assignment of truth values to the propositional letters is the fourth. The propositional calculus, its completeness theorem and its reading as the algebra of truth values are the subject of <em>Logic and Proof</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A Boolean ring is a commutative ring with identity in which $x^2 = x$; every such ring has characteristic $2$, every prime ideal is maximal with quotient $\mathbb{F}_2$, and the principal ideals form a lattice isomorphic to the ring. The dictionary $a \cdot b = a \wedge b$, $a + b$ the symmetric difference and $\neg a = 1 + a$ is an equivalence of categories between Boolean algebras and Boolean rings.</p>
+<p>The Stone space of a Boolean ring is the set of its maximal ideals with the hull-kernel topology, whose basic clopens are the sets $U_a = \{\mathfrak{m} : a \notin \mathfrak{m}\}$. It is compact, Hausdorff and totally disconnected; every clopen is some $U_a$; and the map $a \mapsto U_a$ is an isomorphism from the ring onto the ring of clopens of its Stone space. This is Stone's representation theorem, and it implies that every Boolean ring is a subdirect product of copies of $\mathbb{F}_2$.</p>
+<p>The Stone construction and the clopen-set construction are inverse equivalences between the opposite of the category of Boolean algebras and the category of Stone spaces; continuous maps of Stone spaces correspond to homomorphisms of Boolean algebras in the reverse direction. The Stone space of a free Boolean algebra is a Cantor cube, the Stone space of a power set is the Stone–Čech compactification of the underlying discrete set, and finite Boolean algebras correspond to finite sets. In logic the Stone space of the Lindenbaum algebra is the space of maximal consistent extensions, so completeness and compactness of the propositional calculus are the nonemptiness and compactness of a Stone space. The Boolean locale of a Boolean algebra has this Stone space as its space of points, which places Stone duality inside the frame theory of <em>Quantales and Frames</em>; the Boolean system is thereby complete, its six articles having carried the domain from its algebra to its topology.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>A Boolean ring</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>A Boolean algebra</td>
+</tr>
+<tr>
+<td>$x^2 = x$</td>
+<td>Idempotence, the defining identity of a Boolean ring</td>
+</tr>
+<tr>
+<td>$a + b$</td>
+<td>Symmetric difference in $B$, addition in $R$</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2$</td>
+<td>The two-element field $\mathbb{Z}/2\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Spec}(R)$</td>
+<td>Stone space of maximal ideals of $R$</td>
+</tr>
+<tr>
+<td>$S(B)$</td>
+<td>Stone space of the Boolean algebra $B$</td>
+</tr>
+<tr>
+<td>$U_a$</td>
+<td>Basic clopen $\{\mathfrak{m} : a \notin \mathfrak{m}\}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Clop}(X)$</td>
+<td>Boolean algebra of clopen subsets of $X$</td>
+</tr>
+<tr>
+<td>$\mathbf{Bool}$, $\mathbf{Stone}$</td>
+<td>Categories of Boolean algebras and of Stone spaces</td>
+</tr>
+<tr>
+<td>$2^I$</td>
+<td>Cantor cube, the Stone space of the free Boolean algebra on $I$</td>
+</tr>
+<tr>
+<td>$\beta X$</td>
+<td>Stone–Čech compactification of the discrete space $X$</td>
+</tr>
+<tr>
+<td>$L_T$</td>
+<td>Lindenbaum algebra of a propositional theory $T$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Marshall H. Stone, "The theory of representations for Boolean algebras", <em>Transactions of the American Mathematical Society</em> 40 (1936), for the representation theorem and the Stone space.</li>
+<li>Marshall H. Stone, "Applications of the theory of Boolean rings to general topology", <em>Transactions of the American Mathematical Society</em> 41 (1937), for the duality with compact Hausdorff totally disconnected spaces.</li>
+<li>Roman Sikorski, <em>Boolean Algebras</em> (Springer, 3rd ed. 1969), for the algebraic theory, ideals and the representation theorem.</li>
+<li>Steven Givant and Paul Halmos, <em>Introduction to Boolean Algebras</em> (Springer, 2009), for a modern account of Boolean rings and Stone duality.</li>
+<li>Peter T. Johnstone, <em>Stone Spaces</em> (Cambridge University Press, 1982), for the place of Stone duality within locale theory and the general dualities for distributive lattices.</li>
+<li>Paul R. Halmos, <em>Lectures on Boolean Algebras</em> (Van Nostrand, 1963), for the topological and measure-theoretic applications of the representation.</li>
+<li>Richard S. Pierce, <em>Introduction to the Theory of Boolean Algebras</em> (Macmillan, 1963), for the ring-theoretic development and the connections with the propositional calculus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Geometric Schemes and Varieties — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-geometric-schemes-and-varieties"><strong>List of Geometric Schemes and Varieties</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the schemes, the varieties and the moduli spaces of the corpus, with the invariants attached to each. Every entry points to the article that introduces the object, and the article introduces nothing and proves nothing.</p>
+<p>The list follows the construction of the theory. A scheme is a locally ringed space that is locally the spectrum of a ring, and it carries the functor of points, the fibre products and the local conditions — finite type, flat, smooth, étale, separated and proper — by which the geometric properties are stated. A variety is the classical case of a reduced scheme of finite type over a field, with the Zariski topology, the function field, the rational maps and the blow-up. The coherent sheaves are the coefficients of the theory, their cohomology gives the invariants — the Hilbert polynomial, the Euler characteristic, the canonical sheaf and the genus — and the moduli spaces are the schemes and stacks that parametrise the varieties, the sheaves and the curves.</p>
+<p>The article records examples and non-examples side by side. Beside the schemes and the varieties it lists the non-reduced schemes that are not varieties, the schemes that are not of finite type, the coefficients that fail to compare the algebraic theory with the analytic one, the moduli functors that have no fine moduli space, and the algebraic spaces and stacks that are not schemes, each with the failure named and the article that records it.</p>
+<h2 id="schemes-and-the-functor-of-points">Schemes and the Functor of Points</h2>
+<p>A scheme is a locally ringed space locally isomorphic to the spectrum of a ring, and the morphisms are the morphisms of locally ringed spaces.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the spectrum $\operatorname{Spec} A$</td>
+<td>the prime ideals of $A$ with the Zariski topology and the structure sheaf</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>a scheme $(X,\mathcal{O}_X)$</td>
+<td>a locally ringed space locally affine, with stalks the local rings</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>the structure sheaf $\mathcal{O}_X$</td>
+<td>the sheaf of the functions, with $\mathcal{O}_{X,\mathfrak{p}} = A_{\mathfrak{p}}$</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>a morphism of schemes</td>
+<td>a morphism of locally ringed spaces, $f^{\#} : \mathcal{O}_Y \to f_*\mathcal{O}_X$</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>an $S$-scheme $X \to S$ and the functor of points $X(T)$</td>
+<td>the relative viewpoint and the functor represented by the scheme</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>the fibre product $X\times_SY$ and the fibre $X_s$</td>
+<td>the base change and the geometric fibres</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>finite type, finite, flat, smooth, étale</td>
+<td>the local conditions defining the geometric classes of morphisms</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>a closed or open immersion</td>
+<td>a locally closed subscheme, with the quotient or the localisation of the structure sheaf</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>separated and proper morphisms</td>
+<td>the closed diagonal, and properness by the valuative criterion</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>the dimension $\dim X$</td>
+<td>the Krull dimension, equal to the transcendence degree of the function field</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>reduced, normal, regular schemes</td>
+<td>the local rings reduced, integrally closed, regular</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>the cotangent sheaf $\Omega^1_{X/k}$</td>
+<td>the sheaf of Kähler differentials, the cotangent space $\mathfrak{m}_x/\mathfrak{m}_x^2$</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>a projective scheme $\operatorname{Proj} S$</td>
+<td>the projective spectrum of a graded ring, with the twisting sheaf</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The scheme is the object that carries the nilpotents, the arithmetic fibres and the geometrically meaningful base change, and the functor of points converts the scheme into a representable functor, so that the constructions on schemes are the constructions on their functors. The fibre product and the fibres are the operations that make a scheme over a base a family, and the local conditions on the morphisms classify the families.</p>
+<h2 id="varieties-and-the-classical-theory">Varieties and the Classical Theory</h2>
+<p>A variety is the classical geometric object: a reduced scheme of finite type over a field, described by polynomial equations and studied through its coordinate ring and its function field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the affine variety $V(S)$</td>
+<td>the zero set of a set of polynomials, with the Zariski topology</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the coordinate ring $k[X]$</td>
+<td>the quotient $k[x_1,\ldots,x_n]/I(X)$, its Krull dimension the dimension of the variety</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the projective variety and its homogeneous coordinate ring</td>
+<td>the zero set in $\mathbb{P}^n_k$ of homogeneous polynomials</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the Zariski topology</td>
+<td>the closed sets $V(\mathfrak{a})$: quasicompact, Noetherian, not Hausdorff</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>an irreducible variety</td>
+<td>not the union of two proper closed subsets; the components are the maximal ones</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>a morphism of varieties and its pullback</td>
+<td>a polynomial map and the ring map $\varphi^* : k[Y] \to k[X]$</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the function field $k(X)$</td>
+<td>the fraction field of $k[X]$, of transcendence degree $\dim X$</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>a rational map and a birational map</td>
+<td>a morphism on a dense open set; a rational map with a rational inverse</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the blow-up $\tilde X \to X$</td>
+<td>the birational map that replaces a subvariety by a divisor</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>a smooth point and the singular locus</td>
+<td>$\dim_kT_PX = \dim X$; the singular locus is closed and proper</td>
+<td><em>Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the theorem of Bézout and the intersection multiplicity</td>
+<td>the number of intersections of two plane curves, counted with multiplicity</td>
+<td><em>Algebraic Curves</em>, §Plane Curves</td>
+</tr>
+<tr>
+<td>an arithmetic scheme</td>
+<td>a scheme over $\mathbb{Z}$, with $\operatorname{Spec}\mathbb{Z}$ the base</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The variety is the case of the scheme in which the structure sheaf has no nilpotents and the base is a field, and it is recovered from its coordinate ring, its function field or its points. The rational maps and the blow-ups are the birational operations, and the blow-up is the elementary move by which a rational map is made into a morphism; the singular locus and the tangent space at a point are the local invariants of the variety.</p>
+<h2 id="coherent-sheaves-and-the-invariants-of-a-scheme">Coherent Sheaves and the Invariants of a Scheme</h2>
+<p>The coherent sheaves are the coefficients of the cohomology of a scheme, and their cohomology gives the numerical invariants of the object.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a quasi-coherent sheaf $\mathcal{F}$</td>
+<td>a sheaf of $\mathcal{O}_X$-modules locally associated with a module</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>a coherent sheaf</td>
+<td>a quasi-coherent sheaf of finite type with finitely generated kernels on an affine cover</td>
+<td><em>Coherent Sheaves</em></td>
+</tr>
+<tr>
+<td>the equivalence $M \mapsto \widetilde M$</td>
+<td>the equivalence of the modules over $A$ and the quasi-coherent sheaves on $\operatorname{Spec} A$</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the twisting sheaf $\mathcal{O}_X(d)$</td>
+<td>the invertible sheaf of the projective space, with $\mathcal{O}(d)\otimes\mathcal{O}(e) \cong \mathcal{O}(d+e)$</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the canonical sheaf $\omega_X = \Lambda^n\Omega^1_{X/k}$</td>
+<td>the top exterior power of the cotangent sheaf</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>Serre duality</td>
+<td>the pairing $\mathcal{F}\leftrightarrow\mathcal{F}^{\vee}\otimes\omega_X$</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the cohomology $H^i(X,\mathcal{F})$</td>
+<td>the derived functors of the global sections</td>
+<td><em>Coherent Sheaves</em></td>
+</tr>
+<tr>
+<td>the Euler characteristic $\chi(\mathcal{F})$</td>
+<td>the alternating sum of the dimensions of the cohomology</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the Hilbert polynomial</td>
+<td>the polynomial in $d$ giving $\chi(\mathcal{F}(d))$ for large $d$</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the algebraic de Rham complex $\Omega^\bullet_{X/k}$</td>
+<td>the complex of the differential forms, with its hypercohomology</td>
+<td><em>Sheaves in Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the Picard group and the Jacobian</td>
+<td>the group of the line bundles and its moduli, of dimension $g$ on a curve</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The coherent sheaves are the natural coefficients for the cohomology of a scheme, and the two invariants of the theory — the Hilbert polynomial and the Euler characteristic — are computed from them. The canonical sheaf is the sheaf of the top differentials and enters the Serre duality and the Riemann–Roch theorem, and the Picard group is the group of the invertible sheaves, whose degree-zero part on a curve is the Jacobian.</p>
+<h2 id="moduli-spaces">Moduli Spaces</h2>
+<p>A moduli space is the scheme or stack that parametrises a family of objects up to isomorphism, and the moduli functor is the functor it represents.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the moduli functor $\mathcal{M}$</td>
+<td>the functor of the families of objects up to isomorphism</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>a fine moduli space</td>
+<td>a scheme representing the functor, with a universal family</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>a coarse moduli space</td>
+<td>a space with a natural map from the functor, bijective on geometric points but without a universal family</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>the GIT quotient $X/\!/G$</td>
+<td>the quotient of the semistable locus by the group, the projective construction</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>the Hilbert scheme $\mathcal{H}ilb_S^\Phi$</td>
+<td>the scheme parametrising the subschemes with a fixed Hilbert polynomial</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>the Quot scheme</td>
+<td>the scheme parametrising the quotients of a fixed sheaf with a fixed Hilbert polynomial</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>the moduli space $M_g$ of curves</td>
+<td>the coarse moduli space of the curves of genus $g$, of dimension $3g-3$</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>the stable-curve compactification $\overline M_g$</td>
+<td>the projective compactification by the stable curves</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>the moduli space $M(r,d)$ of stable bundles</td>
+<td>the coarse moduli of the stable vector bundles on a curve, of dimension $r^2(g-1)+1$</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>the Jacobian as $M(1,d)$</td>
+<td>the moduli of the line bundles of degree $d$, of dimension $g$</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>a Deligne–Mumford stack and a coarse space</td>
+<td>the stack with finite automorphism groups, with its coarse moduli space</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>an algebraic space, and Artin's theorem on algebraic stacks</td>
+<td>the quotient of a scheme by an étale equivalence relation, of which a stack with finite stabilisers is the generalisation</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The moduli space is constructed as a quotient of a Hilbert or Quot scheme by a reductive group, and the distinction between the fine and the coarse moduli space is the presence or the absence of a universal family. The spaces $M_g$, $M(r,d)$ and the Jacobian are the three instances of the corpus, and the stacks and algebraic spaces are the objects that resolve the automorphism-group obstruction that prevents the existence of a fine moduli space.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the schemes and varieties, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a scheme or a variety of the list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the non-reduced scheme $\operatorname{Spec} k[x]/(x^2)$</td>
+<td>a scheme with nilpotents, not a variety</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>a scheme that is not of finite type</td>
+<td>not a variety, and not the local model of one</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>a non-separated scheme</td>
+<td>the Zariski topology is not Hausdorff; separatedness is the substitute, and without it the intersection theory fails</td>
+<td><em>Schemes</em></td>
+</tr>
+<tr>
+<td>the constant sheaf on a variety over $\mathbb{C}$</td>
+<td>its Zariski cohomology differs from the singular cohomology; the comparison needs the étale or the analytic topology</td>
+<td><em>Sheaves in Algebraic Geometry</em>, §The Comparison with the Topological Theory</td>
+</tr>
+<tr>
+<td>a moduli functor without a fine moduli space</td>
+<td>the objects have non-trivial automorphisms, so only a coarse space or a stack exists</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+<tr>
+<td>an algebraic stack that is not a scheme</td>
+<td>a quotient groupoid with infinite stabilisers, not representable by a scheme</td>
+<td><em>Moduli Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the schemes, varieties and moduli spaces of the corpus with their invariants. The schemes open the list, with the spectrum, the structure sheaf, the morphisms, the functor of points, the fibre products and the local conditions, and with the projective spectrum; the varieties follow, with the coordinate ring, the Zariski topology, the function field, the rational maps, the blow-up and the smooth and singular loci; the coherent sheaves are recorded with the twisting and canonical sheaves, the Serre duality, the cohomology, the Hilbert polynomial and the de Rham complex; and the moduli spaces close the list, with the moduli functor, the fine and coarse spaces, the GIT quotient, the Hilbert and Quot schemes, $M_g$, $M(r,d)$, the Jacobian, the Deligne–Mumford stacks and the algebraic spaces. Beside the examples stand the non-examples: a non-reduced scheme is not a variety, a non-separated scheme is not the setting for the intersection theory, the constant sheaf is the wrong coefficient system for the Zariski topology, and a moduli functor need not have a fine moduli space.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Spec} A$, $\operatorname{Proj} S$, $D(f)$, $V(\mathfrak{a})$</td>
+<td>Spectrum, projective spectrum, distinguished open, closed set</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_X$, $\mathcal{O}_X(d)$, $\omega_X$</td>
+<td>Structure sheaf, twisting sheaf, canonical sheaf</td>
+</tr>
+<tr>
+<td>$X\times_SY$, $X(T)$, $X_s$</td>
+<td>Fibre product, functor of points, fibre</td>
+</tr>
+<tr>
+<td>$k[X]$, $k(X)$, $I(X)$, $V(S)$</td>
+<td>Coordinate ring, function field, vanishing ideal, zero set</td>
+</tr>
+<tr>
+<td>$\Omega^1_{X/k}$, $H^i(X,\mathcal{F})$, $\chi(\mathcal{F})$</td>
+<td>Cotangent sheaf, cohomology, Euler characteristic</td>
+</tr>
+<tr>
+<td>$M_g$, $\overline M_g$, $M(r,d)$, $\mathcal{H}ilb_S^\Phi$</td>
+<td>Moduli spaces and Hilbert scheme</td>
+</tr>
+<tr>
+<td>$X/\!/G$</td>
+<td>GIT quotient</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{C}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^n_k$</td>
+<td>Projective space over $k$, the ambient of a projective variety</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}$, $\mathfrak{m}_x$, $\mathcal{M}$</td>
+<td>Prime ideal; maximal ideal of a point; moduli functor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, 1977), for the schemes, the varieties, the coherent sheaves and the cohomology.</li>
+<li>Alexander Grothendieck and Jean Dieudonné, <em>Éléments de Géométrie Algébrique</em> (Publications Mathématiques de l'IHÉS, 1960–1967), for the foundations of the scheme theory and the functor of points.</li>
+<li>David Mumford, John Fogarty and Frances Kirwan, <em>Geometric Invariant Theory</em> (Springer, 3rd ed. 1994), for the GIT quotients and the construction of the moduli spaces.</li>
+<li>Joseph Harris and Ian Morrison, <em>Moduli of Curves</em> (Springer, 1998), for the moduli space $M_g$, its compactification and the construction of the coarse spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

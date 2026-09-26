@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Octonion Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="octonion-geometry"><strong>Octonion Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the geometry slot of the octonion system. It sets out the geometry that the octonion algebra carries on $\mathbb{R}^8$ and on its imaginary part, the almost complex and nearly Kähler structures on the imaginary unit sphere, the octonionic projective plane, and the calibrated forms that the algebra defines. The article is the octonion member of the geometry slots that this Part traverses one number system at a time; it is not the general theory of the geometry of Part II, which is that of the companions <em>Riemannian Geometry</em>, <em>Symmetric Spaces</em> and <em>Homogeneous Spaces</em>, all written in parallel. The projective geometries of the associative systems are the companions <em>Projective Geometry</em> and <em>Quaternion Geometry</em>, and the geometry of the split systems is <em>Split-Biquaternion Geometry</em> and <em>Split-Biquaternions and Hyperbolic Geometry</em>.</p>
+<p>The article takes the multiplication and the associator from <em>Octonion Algebra</em>, the norm, the inner product and the unit sphere from <em>Octonion Norm and Invertibility</em>, the operator theory from <em>Octonion Representations</em>, and the groups $G_2$, $F_4$ and the Cayley plane from <em>Octonions and the Exceptional Lie Groups</em>. The differential forms and their integrals are those of <em>Differential Forms and Stokes' Theorem</em>, the fibrations those of <em>Fibre Bundles, Connections and Curvature</em>, and the projective geometry of Part II is the companion <em>Projective Geometry</em>. The exceptional holonomy of Part II is the subject of <em>G2 and Spin(7) Manifolds</em> ; the geometry of the other number systems is <em>Quaternion Geometry</em> , for the split systems, <em>Split-Biquaternion Geometry</em> and <em>Split-Biquaternions and Hyperbolic Geometry</em>, written in this batch. The present article supplies the octonionic geometry that these articles use.</p>
+<p><strong>Conventions.</strong> The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $\bar x$, norm $\lvert x\rvert^2 = x\bar x = \langle x,x\rangle$ and inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the <strong>cross product</strong> is</p>
+<p>$$
+u\times v = \operatorname{Vect}(uv) = \tfrac{1}{2}(uv - vu),
+$$</p>
+<p>which is again imaginary. The identification $\mathbb{O}\cong\mathbb{R}^8$ is always by the basis $e_0,\dots,e_7$ and always carries the Euclidean metric $\langle\cdot,\cdot\rangle$.</p>
+<h2 id="the-imaginary-space-and-the-cross-product">The Imaginary Space and the Cross Product</h2>
+<h3 id="the-cross-product">The Cross Product</h3>
+<p><strong>Theorem.</strong> The cross product is bilinear and alternating on $\operatorname{Im}\mathbb{O}$ and satisfies</p>
+<p>$$
+\lvert u\times v\rvert^2 = \lvert u\rvert^2\lvert v\rvert^2 - \langle u,v\rangle^2, \qquad
+u\times(u\times w) = \langle u,w\rangle u - \lvert u\rvert^2w
+$$</p>
+<p>for all imaginary $u,v,w$. Consequently $\operatorname{Im}\mathbb{O}$ with the cross product is the seven-dimensional vector product.</p>
+<p><em>Proof.</em> Both identities are the real-part identities of <em>Octonion Algebra</em> together with the alternation of the associator: expanding $\operatorname{Vect}(uv) = \tfrac12(uv-vu)$ and using $\langle uv,w\rangle = \operatorname{Sc}(uv\bar w)$ reduces each identity to the Fano multiplication table, checked on the basis; the first is the Lagrange identity of the norm form and the second is its polarised companion. $\square$</p>
+<p>The first identity says that the cross product has the length of the area of the parallelogram spanned by $u$ and $v$; the second says that for orthonormal $u,w$ the map $v\mapsto u\times v$ is a complex structure on the orthogonal complement of $u$ and a rotation by a right angle in the plane spanned by $u,w$.</p>
+<h3 id="the-associative-three-form">The Associative Three-Form</h3>
+<p><strong>Definition.</strong> The <strong>associative three-form</strong> on $\operatorname{Im}\mathbb{O}$ is</p>
+<p>$$
+\varphi(u,v,w) = \langle u\times v,w\rangle, \qquad u,v,w\in\operatorname{Im}\mathbb{O}.
+$$</p>
+<p><strong>Theorem.</strong> $\varphi$ is an alternating three-form on $\mathbb{R}^7$, nonzero and of norm one in the sense that its stabiliser in $GL_7(\mathbb{R})$ is the group $G_2$; equivalently</p>
+<p>$$
+G_2 = \left\{g\in GL_7(\mathbb{R}) : g^*\varphi = \varphi\right\} = \left\{g\in SO(7) : g^*\varphi = \varphi\right\} .
+$$</p>
+<p>The value of $\varphi$ on an ordered orthonormal triple of imaginary basis elements is $\pm1$ precisely when the triple is a Fano line, so that the seven associative three-planes of the form $\operatorname{span}(e_i,e_j,e_k)$ are the seven lines of the Fano plane, and it is zero otherwise.</p>
+<p><em>Proof.</em> Alternation is the computation of the multiplication table: the structure constants of the cross product in the basis $e_1,\dots,e_7$ are totally antisymmetric, and they are nonzero exactly on the Fano lines, with the orientations carried by the table; the identification of the stabiliser with $G_2$ is the standard theorem quoted in <em>Octonions and the Exceptional Lie Groups</em>. $\square$</p>
+<p><strong>Corollary.</strong> The three-form $\varphi$ and the metric determine the cross product by $u\times v = $ the vector dual to $\varphi(u,v,\cdot)$, and hence determine the octonion multiplication. The group $G_2$ is therefore the full symmetry group of the geometry of the imaginary space, and its orbit on the Grassmannian of oriented three-planes separates the associative planes from the rest.</p>
+<p><em>Proof.</em> Non-degeneracy of the metric gives the duality, and the stabiliser statement is the theorem. $\square$</p>
+<h2 id="the-unit-spheres">The Unit Spheres</h2>
+<h3 id="the-sphere-math47">The Sphere $S^7$</h3>
+<p><strong>Proposition.</strong> The unit sphere $S^7\subset\mathbb{O}$ is a compact Riemannian manifold of dimension seven with the round metric inherited from $\mathbb{R}^8$; it is parallelizable, and it is homogeneous under the action of left multiplication, so that $S^7 = \operatorname{Spin}(7)/G_2$ with the isotropy $G_2$ acting irreducibly on the tangent space $\operatorname{Im}\mathbb{O}$.</p>
+<p><em>Proof.</em> The round metric is the restriction of the Euclidean metric by definition of a submanifold, the parallelizability is the existence of the seven global fields $x\mapsto xe_k$, and the homogeneous description is the orbit theorem of <em>Octonion Representations</em>. $\square$</p>
+<h3 id="the-sphere-math55-and-the-nearly-kahler-structure">The Sphere $S^6$ and the Nearly Kähler Structure</h3>
+<p><strong>Theorem.</strong> For a unit imaginary $u$ the map</p>
+<p>$$
+J_u : u^{\perp}\longrightarrow u^{\perp}, \qquad J_uv = u\times v,
+$$</p>
+<p>is a linear isometry with $J_u^2 = -\mathrm{id}$, so that it defines an almost complex structure on the imaginary unit sphere $S^6$; the associated Hermitian metric $g$ and two-form $\omega$ satisfy</p>
+<p>$$
+\nabla_X(JY) + J\nabla_Y(JX) = 0
+$$</p>
+<p>for the Levi-Civita connection of $S^6$, that is, $(S^6,g,J)$ is a <strong>nearly Kähler</strong> manifold. The almost complex structure is not integrable: the Nijenhuis tensor $N_J$ does not vanish, so $S^6$ is not a complex manifold with this structure.</p>
+<p><em>Proof.</em> The identities $J_u^2 = -\mathrm{id}$ and orthogonality are the two displayed identities of the previous section restricted to $u^\perp$; the nearly Kähler equation is the classical theorem of the (nearly Kähler) structure induced by the cross product, and the non-integrability is the classical theorem that the Nijenhuis tensor of this structure is nonzero. The statements are standard and are quoted with the sources cited. $\square$</p>
+<p>The almost complex structure on $S^6$ is the reason why the exceptional geometry of $G_2$ has a nearly Kähler rather than a Kähler flavour: the natural candidate for a complex structure defined by the algebra is present but is not integrable, and it degenerates along the imaginary units themselves. The question whether $S^6$ carries some complex structure is a separate and open problem, and the present article does not use it.</p>
+<h3 id="the-fibrations">The Fibrations</h3>
+<p><strong>Proposition.</strong> The unit sphere carries the following fibre bundles with the indicated fibres and bases.</p>
+<ol>
+<li>The quaternionic Hopf fibration $S^3\to S^7\to S^4$, whose fibres are the quaternion unit spheres under right multiplication by the unit quaternions of a fixed quaternion subalgebra.</li>
+<li>The octonionic Hopf fibration $S^7\to S^{15}\to S^8$, with fibres $S^7$ and base $S^8$, in the analogous sense.</li>
+</ol>
+<p>Both bundles are non-trivial and their total spaces are the spheres of the quaternionic and octonionic lines; the octonionic bundle is the last of the four Hopf fibrations, whose existence is equivalent to the parallelizability of the spheres $S^1,S^3,S^7$.</p>
+<p><em>Proof.</em> The fibres are the orbits of $S^3$ and of $S^7$ acting by right multiplication on the corresponding unit spheres, which are free and proper; the base is the quotient, identified with the projective spaces $\mathbb{HP}^1 = S^4$ and $\mathbb{OP}^1 = S^8$ of lines in $\mathbb{H}^2$ and $\mathbb{O}^2$. Non-triviality and the classification of the Hopf fibrations are standard; the sources are cited. $\square$</p>
+<h2 id="the-octonionic-projective-plane">The Octonionic Projective Plane</h2>
+<h3 id="the-plane-of-lines">The Plane of Lines</h3>
+<p><strong>Definition.</strong> Let $\mathbb{O}^3$ be the free right $\mathbb{O}$-module of triples, with the equivalence relation on nonzero triples</p>
+<p>$$
+(x_0,x_1,x_2)\sim(x_0u,x_1u,x_2u), \qquad u\in\mathbb{O}^{\times},
+$$</p>
+<p>of right multiplication by a unit octonion. The set of classes is the <strong>octonionic projective plane</strong> $\mathbb{OP}^2$; the class of $(x_0,x_1,x_2)$ is written $[x_0:x_1:x_2]$ and is a <strong>point</strong> of the plane. A <strong>line</strong> is the set of points satisfying a right-linear equation $x_0a_0 + x_1a_1 + x_2a_2 = 0$ with a triple of octonions not all zero.</p>
+<p><strong>Proposition.</strong> The relation $\sim$ is an equivalence relation; the map assigning to a unit octonion the line through a fixed point is well defined; and $\mathbb{OP}^2$ is a compact topological space of real dimension $16$. Two distinct points determine a unique line, and two lines in general position meet in a unique point, so that $\mathbb{OP}^2$ satisfies the incidence axioms of a projective plane; the duality between points and lines is the map sending the point $[x]$ to the line $\{y : \langle x,y\rangle = 0\}$ up to the appropriate side.</p>
+<p><em>Proof.</em> The equivalence relation is the action of the group $\mathbb{O}^{\times}$ on $\mathbb{O}^3\setminus\{0\}$ by right multiplication, which is free; the quotient is compact because the sphere $S^{23}$ is compact and the action restricts to it. Incidence is proved by solving the right-linear systems, which are solvable because $\mathbb{O}$ is a division algebra; the uniqueness statements use the cancellation property of <em>Octonion Norm and Invertibility</em>. The detailed verification of the incidence axioms is standard and is cited. $\square$</p>
+<h3 id="the-jordan-model-and-the-cayley-plane">The Jordan Model and the Cayley Plane</h3>
+<p><strong>Theorem.</strong> The octonionic projective plane is isomorphic to the space of rank-one idempotents of trace one in the exceptional Jordan algebra $\mathfrak{h}_3(\mathbb{O})$,</p>
+<p>$$
+\mathbb{OP}^2\cong\left\{A\in\mathfrak{h}_3(\mathbb{O}) : A\circ A = A,\ \operatorname{tr}A = 1\right\},
+$$</p>
+<p>and as a homogeneous space it is</p>
+<p>$$
+\mathbb{OP}^2 = F_4/\operatorname{Spin}(9), \qquad \dim_{\mathbb{R}}\mathbb{OP}^2 = 52 - 36 = 16 ,
+$$</p>
+<p>the <strong>Cayley plane</strong>. It is a compact connected simply connected rank-one symmetric space with a metric of sectional curvature between $\tfrac14$ and $1$ when normalised so that the maximum is $1$; with this metric it has diameter $\pi/2$, and its cohomology is $\mathbb{Z}[x]/(x^3)$ with $\deg x = 8$, so that it has the rational cohomology of a projective plane with the degrees $1$, $8$, $16$.</p>
+<p><em>Proof.</em> The identification with the rank-one idempotents is the standard Veronese model of the plane; the homogeneous description and the cell decomposition are those of <em>Octonions and the Exceptional Lie Groups</em>; the curvature, diameter and cohomology statements are the standard properties of the rank-one symmetric space $F_4/\operatorname{Spin}(9)$ and are quoted with the sources cited. $\square$</p>
+<p><strong>Theorem.</strong> The projective plane $\mathbb{OP}^2$ is a <strong>Moufang plane</strong>, that is, its collineation group is transitive on incident point–line pairs and the little projective group is transitive on the flags and satisfies the Moufang condition; but it is not <strong>Desarguesian</strong>. Consequently the plane has no coordinate field, and the failure of the Desargues axiom is an incidence-theoretic form of the non-associativity of $\mathbb{O}$: a quaternion subalgebra of $\mathbb{O}$ coordinatises the subplanes whose lines lie in a common $\mathbb{H}^3\subset\mathbb{O}^3$, and no single such subalgebra coordinatises the whole plane.</p>
+<p><em>Proof.</em> The Moufang condition is the transitivity statement for $F_4$ refined to the little projective group; the failure of Desargues is the classical theorem that a projective plane coordinatised by a division ring satisfies Desargues, whereas $\mathbb{OP}^2$ admits no division ring of coordinates because the multiplication is not associative. Both statements are standard, with the sources cited. $\square$</p>
+<p>The plane $\mathbb{OP}^2$ is thus the exact geometric analogue of the real, complex and quaternionic projective planes $\mathbb{RP}^2,\mathbb{CP}^2,\mathbb{HP}^2$, and it is the largest of them; the sequence stops with the octonions for the same reason as the Hopf fibrations and the normed division algebras stop.</p>
+<h2 id="calibrated-geometry">Calibrated Geometry</h2>
+<h3 id="the-calibrations">The Calibrations</h3>
+<p><strong>Definition.</strong> Let $\varphi$ be the associative three-form on $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ and let $\psi = *\varphi$ be its Hodge dual, a four-form on $\mathbb{R}^7$; on $\mathbb{R}^8\cong\mathbb{O}$ the <strong>Cayley four-form</strong> is</p>
+<p>$$
+\Phi = e^0\wedge\varphi + \psi ,
+$$</p>
+<p>where $e^0$ is the covector dual to $e_0$.</p>
+<p><strong>Theorem.</strong> A differential form $\alpha$ of degree $k$ on a Riemannian manifold is a <strong>calibration</strong> if $\alpha|_\xi\leq\operatorname{vol}_\xi$ for every oriented $k$-plane $\xi$, with the orientation and the volume form of the metric. With this definition:</p>
+<ol>
+<li>$\varphi$ is a calibration on $\mathbb{R}^7$, and an oriented three-plane on which $\varphi|_\xi = \operatorname{vol}_\xi$ is exactly an <strong>associative</strong> three-plane, that is, an oriented subspace spanned by an orthonormal triple whose span is closed under the cross product;</li>
+<li>$\psi$ is a calibration on $\mathbb{R}^7$, and the corresponding equality planes are the <strong>coassociative</strong> four-planes, the orthogonal complements of the associative three-planes;</li>
+<li>$\Phi$ is a calibration on $\mathbb{R}^8$, and the corresponding equality planes are the <strong>Cayley</strong> four-planes.</li>
+</ol>
+<p><em>Proof.</em> The calibration inequality for $\varphi$ follows from $\lvert u\times v\rvert^2 = \lvert u\rvert^2\lvert v\rvert^2 - \langle u,v\rangle^2$: for an orthonormal pair the cross product is a unit vector, and the value $\varphi(u,v,w) = \langle u\times v,w\rangle$ is at most one in absolute value, with equality exactly when the triple is closed. The dual statements follow from the duality and the corresponding computations for $\Phi$, and are the standard theory of the exceptional calibrations, quoted with the sources cited. $\square$</p>
+<p><strong>Corollary.</strong> An oriented submanifold of $\mathbb{R}^7$ all of whose tangent planes are associative is a calibrated submanifold which minimises volume in its homology class, and the same holds for coassociative four-folds in $\mathbb{R}^7$ and Cayley four-folds in $\mathbb{R}^8$. The exceptional calibrations are therefore the variational face of the octonion algebra, and they pass to the manifolds of holonomy $G_2$ and $\operatorname{Spin}(7)$, whose tangent spaces are modelled on $\operatorname{Im}\mathbb{O}$ with the form $\varphi$ and on $\mathbb{O}$ with the form $\Phi$; the global theory is that of <em>G2 and Spin(7) Manifolds</em> .</p>
+<p><em>Proof.</em> The calibration inequality gives the volume bound for a submanifold tangent to the equality planes, and the bound is attained by the submanifold itself, proving minimality in its homology class; the passage to the holonomy manifolds is the definition of the exceptional holonomy groups. $\square$</p>
+<h3 id="the-rational-forms-and-the-lattices">The Rational Forms and the Lattices</h3>
+<p><strong>Proposition.</strong> The forms $\varphi$, $\psi$ and $\Phi$ have integral coefficients in the orthonormal basis $e_0,\dots,e_7$, and so do the structure constants of the cross product and of the octonion multiplication. Consequently the groups $G_2$ and $\operatorname{Spin}(7)$ have integral forms defined over $\mathbb{Z}$, and the lattice</p>
+<p>$$
+\mathbb{O}_{\mathbb{Z}} = \mathbb{Z}e_0\oplus\cdots\oplus\mathbb{Z}e_7
+$$</p>
+<p>is closed under multiplication and of rank eight over $\mathbb{Z}$. It is not associative, so it is a non-associative order rather than a ring; it is the integral structure underlying the arithmetic of the Cayley numbers.</p>
+<p><em>Proof.</em> The coefficients are the structure constants of the multiplication table of <em>Octonion Algebra</em>, which are $0$ or $\pm1$, and the calibration forms are their alternating combinations. The integrality of the groups follows by stabilisation of the integral forms. $\square$</p>
+<h2 id="summary">Summary</h2>
+<p>The octonion algebra defines geometry on the imaginary space $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ and on $\mathbb{O}\cong\mathbb{R}^8$. On the imaginary space the cross product $u\times v = \operatorname{Vect}(uv)$ satisfies $\lvert u\times v\rvert^2 = \lvert u\rvert^2\lvert v\rvert^2 - \langle u,v\rangle^2$ and $u\times(u\times w) = \langle u,w\rangle u - \lvert u\rvert^2w$; it gives the alternating three-form $\varphi(u,v,w) = \langle u\times v,w\rangle$, whose stabiliser in $GL_7(\mathbb{R})$ is $G_2$ and whose nonzero values on basis triples are exactly the seven Fano lines.</p>
+<p>The spheres carry structure from the algebra: $S^7$ is parallelizable and homogeneous, $S^7 = \operatorname{Spin}(7)/G_2$, and it is the total space of the Hopf fibrations $S^3\to S^7\to S^4$ and $S^7\to S^{15}\to S^8$; $S^6$ carries the almost complex structure $J_uv = u\times v$, which is nearly Kähler but not integrable. The octonionic projective plane, equivalently the Cayley plane $\mathbb{OP}^2 = F_4/\operatorname{Spin}(9)$ of real dimension $16$, is a Moufang plane that is not Desarguesian, with sectional curvature in $[\tfrac14,1]$ and cohomology $\mathbb{Z}[x]/(x^3)$ in degree $8$; its lack of coordinates is the incidence-theoretic form of the non-associativity of $\mathbb{O}$.</p>
+<p>Finally the forms $\varphi$, its dual $\psi$ and the Cayley form $\Phi = e^0\wedge\varphi + \psi$ are calibrations on $\mathbb{R}^7$ and $\mathbb{R}^8$ whose equality planes are the associative, coassociative and Cayley planes; they are the variational face of the algebra and the point of contact with the manifolds of exceptional holonomy.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$, $e_0,\dots,e_7$</td>
+<td>Octonion algebra, basis with $e_k^2 = -e_0$ for $k\geq1$</td>
+</tr>
+<tr>
+<td>$\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$</td>
+<td>Imaginary subspace, orthonormal basis $e_1,\dots,e_7$</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle = \operatorname{Sc}(x\bar y)$</td>
+<td>Inner product, Euclidean metric</td>
+</tr>
+<tr>
+<td>$u\times v = \operatorname{Vect}(uv)$</td>
+<td>Cross product on $\operatorname{Im}\mathbb{O}$</td>
+</tr>
+<tr>
+<td>$\varphi(u,v,w) = \langle u\times v,w\rangle$</td>
+<td>Associative three-form, $G_2 = \operatorname{Stab}\varphi$</td>
+</tr>
+<tr>
+<td>$\psi = *\varphi$, $\Phi = e^0\wedge\varphi+\psi$</td>
+<td>Coassociative four-form, Cayley four-form on $\mathbb{O}$</td>
+</tr>
+<tr>
+<td>$S^6$, $S^7$</td>
+<td>Unit spheres of $\operatorname{Im}\mathbb{O}$ and of $\mathbb{O}$</td>
+</tr>
+<tr>
+<td>$J_uv = u\times v$</td>
+<td>Nearly Kähler almost complex structure on $S^6$</td>
+</tr>
+<tr>
+<td>$\mathbb{OP}^2 = F_4/\operatorname{Spin}(9)$</td>
+<td>Cayley plane, $\dim_{\mathbb{R}} = 16$, Moufang, not Desarguesian</td>
+</tr>
+<tr>
+<td>$[x_0:x_1:x_2]$</td>
+<td>Octonionic homogeneous coordinates on $\mathbb{OP}^2$</td>
+</tr>
+<tr>
+<td>$\mathfrak{h}_3(\mathbb{O})$</td>
+<td>Exceptional Jordan algebra of Hermitian $3\times3$ matrices</td>
+</tr>
+<tr>
+<td>$F_4$, $G_2$, $\operatorname{Spin}(7)$</td>
+<td>Structure groups of the plane, the imaginary space and the sphere</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John C. Baez, "The octonions", <em>Bulletin of the American Mathematical Society</em> <strong>39</strong> (2002), 145–205, for the cross product, the projective plane and the Hopf fibrations.</li>
+<li>F. Reese Harvey and H. Blaine Lawson, "Calibrated geometries", <em>Acta Mathematica</em> <strong>148</strong> (1982), 47–157, for the calibration inequality and the associative, coassociative and Cayley calibrations.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the octonionic forms, the cross product and the exceptional calibrations.</li>
+<li>Tonny A. Springer and Ferdinand D. Veldkamp, <em>Octonions, Jordan Algebras and Exceptional Groups</em> (Springer, 2000), for the Cayley plane, its incidence structure and the Jordan model.</li>
+<li>Ruth Moufang, "Alternativkörper und der Satz vom vollständigen Vierseit", <em>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</em> <strong>9</strong> (1933), 207–222, for the Moufang planes and the failure of Desargues.</li>
+<li>Alfred Gray, "Nearly Kähler manifolds", <em>Journal of Differential Geometry</em> <strong>4</strong> (1970), 283–309, for the nearly Kähler structure on $S^6$ and the non-integrability of its almost complex structure.</li>
+<li>Arthur L. Besse, <em>Manifolds all of whose Geodesics are Closed</em> (Springer, 1978), for the rank-one symmetric spaces, their curvatures and their cohomology.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Unital Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-unital-algebras"><strong>List of Unital Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the algebras and the rings that carry an identity, together with the objects that do not. A unital algebra has an element $1_A$ with $1_Ax = x1_A = x$ for every $x$, with the convention $1 \neq 0$ excluding the zero ring, and the identity makes the algebra a ring and gives it a group of units; a non-unital algebra has no such element, and the unitisation adjoins one. Every entry points to the article that introduces the object.</p>
+<p>The list is a proper subclass of <em>List of Algebras</em>: that article carries the algebras over a field of the corpus, unital or not, with their dimension, their centre and their ideals, and this one carries the unital algebras, over a field or over a commutative ring, the identity that fixes them and the unit group they acquire, and beside them the non-unital objects that fail to have an identity.</p>
+<p>This article introduces nothing and proves nothing. It records examples and non-examples side by side, a non-example being an algebra or a ring with no identity, with the failure named and the article that records it.</p>
+<h2 id="the-identity-the-canonical-map-and-the-unit-group">The Identity, the Canonical Map and the Unit Group</h2>
+<p>An identity for the product is an element $1_A$ with $1_Ax = x1_A = x$ for every $x$, and it is unique when it exists. The identity is what converts an algebra into a ring and makes the multiplicative structure a monoid, so the unit group and the centre are available and the homomorphisms between unital algebras can be required to preserve it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unital algebra</td>
+<td>an algebra with a two-sided identity $1_A$, and $1_A \neq 0$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>The canonical map $\eta : R \to A$, $\eta(r) = r1_A$</td>
+<td>a unital ring homomorphism with image in the centre $Z(A)$; a unital $R$-algebra is a ring with a unital homomorphism $R \to Z(A)$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>The unit group $A^\times$</td>
+<td>the invertible elements, a group under multiplication, with identity $1_A$</td>
+<td><em>Centre, Units, Zero Divisors and Division Algebras</em></td>
+</tr>
+<tr>
+<td>A unit is not a zero divisor</td>
+<td>if $u$ is invertible and $uz = 0$ then $z = 0$, and likewise on the left</td>
+<td><em>Centre, Units, Zero Divisors and Division Algebras</em></td>
+</tr>
+<tr>
+<td>Unital subalgebra</td>
+<td>a subalgebra containing $1_A$; its own identity is necessarily $1_A$</td>
+<td><em>Ideals and Quotients of Algebras</em></td>
+</tr>
+<tr>
+<td>The convention $1 \neq 0$</td>
+<td>excludes the zero ring, the one algebra in which $1 = 0$; the corpus assumes it of every ring</td>
+<td><em>Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The identity is inherited by quotients and not by ideals: the quotient of a unital algebra by a two-sided ideal is unital with identity $1 + I$, while every proper ideal of a unital algebra contains no unit, so it is non-unital as a subalgebra; it may nevertheless carry an identity of its own, an idempotent of the ambient algebra, and then it is a unital algebra.</p>
+<h2 id="the-unital-algebras-of-the-corpus">The Unital Algebras of the Corpus</h2>
+<p>The examples are the algebras whose identity is part of the construction, and in each case the unit group is computed in the introducing article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Its identity and units</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(R)$, the matrix algebra</td>
+<td>the identity matrix $I_n$; $M_n(R)^\times = \mathrm{GL}_n(R)$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$k[G]$, the group algebra</td>
+<td>the identity $1_G$ of the group, extended to the algebra</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$U(\mathfrak{g})$, the universal enveloping algebra</td>
+<td>the identity of the tensor algebra $T(\mathfrak{g})$ is preserved by the quotient; the universal property lands in associative algebras</td>
+<td><em>Universal Enveloping Algebras</em></td>
+</tr>
+<tr>
+<td>$T(V)$, the tensor algebra</td>
+<td>the unit $1 \in V^{\otimes 0} = R$</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$R[x_1,\dots,x_n]$, the polynomial algebra</td>
+<td>the constant polynomial $1$; commutative</td>
+<td><em>Polynomial Algebras</em></td>
+</tr>
+<tr>
+<td>$kQ$, the path algebra of a finite quiver</td>
+<td>the sum $1 = \sum_{v \in Q_0} e_v$ of the length-zero paths is the identity, so the algebra is unital exactly when the vertex set is finite</td>
+<td><em>Quiver Representations and Representation Type</em></td>
+</tr>
+<tr>
+<td>A division algebra $D$</td>
+<td>$D^\times = D\setminus\{0\}$: every nonzero element is a unit</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>$B(H)$, the bounded operators</td>
+<td>the identity operator $1$, so $B(H)$ is a unital $\mathrm{C}^*$-algebra</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>$C(X)$, continuous functions on a compact space $X$</td>
+<td>the constant function $1$; the commutative Gelfand–Naimark theorem identifies the unital commutative $\mathrm{C}^*$-algebras as the $C(X)$ with $X$ compact</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, the quaternions</td>
+<td>$\mathbb{H}^\times = \mathbb{H}\setminus\{0\}$; a unital division ring</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternions</td>
+<td>the identity of $M_2(\mathbb{C})$; $\mathbb{B}^\times = \mathrm{GL}_2(\mathbb{C})$</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>The augmentation ideal $I(G) \subseteq R[G]$ for $G = \mathbb{Z}/2$</td>
+<td>carries the identity $(1-g)/2$ when the characteristic is not $2$, an idempotent of $R[G]$ different from $1$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The matrix algebra and the group algebra are unital by construction, and their unit groups are the general linear group and the group of units of the group ring; the enveloping algebra inherits its identity from the tensor algebra, of which it is a quotient. The division algebras are the unital algebras in which the unit group is as large as possible, and their unit group is the punctured algebra.</p>
+<h2 id="the-rings-with-identity-read-as-algebras">The Rings with Identity Read as Algebras</h2>
+<p>The corpus fixes the identity as an axiom of every ring, so the rings it meets are unital algebras over $\mathbb{Z}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The identity it carries</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A ring with identity $A$</td>
+<td>the corpus's rings are associative and unital by axiom (A4), with $1 \neq 0$</td>
+<td><em>Rings</em></td>
+</tr>
+<tr>
+<td>$A$ as a $\mathbb{Z}$-algebra</td>
+<td>the canonical map $n \mapsto n1_A$; every associative ring with identity is a unital $\mathbb{Z}$-algebra in exactly one way</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>$Z(A)$, the centre</td>
+<td>a commutative subring containing $1_A$</td>
+<td><em>Centre, Units, Zero Divisors and Division Algebras</em></td>
+</tr>
+<tr>
+<td>$M_n(D)$ over a division ring $D$</td>
+<td>the identity matrix; unit group $\mathrm{GL}_n(D)$</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$, the residue ring</td>
+<td>the identity $1 + n\mathbb{Z}$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, the integers</td>
+<td>the multiplicative identity $1$; $\mathbb{Z}^\times = \{\pm1\}$</td>
+<td><em>The Integers</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The passage from a ring to an algebra is not a change of axioms but a change of what may be asserted, and the identity is common to both: every unital $R$-algebra is a ring with a homomorphism $R \to Z(A)$, and conversely a ring homomorphism from $R$ into the centre of a ring makes that ring a unital $R$-algebra.</p>
+<h2 id="the-unitisation-of-a-non-unital-algebra">The Unitisation of a Non-Unital Algebra</h2>
+<p>The unitisation is the construction that adjoins an identity to an algebra that has none, and it is the reason a non-unital algebra can be studied through the unital theory.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The unitisation $A^+ = A \oplus R$</td>
+<td>product $(a,r)(b,s) = (ab + rb + sa,\,rs)$; unital with identity $(0,1)$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>$A$ as an ideal of $A^+$</td>
+<td>a two-sided ideal, with $A^+/A \cong R$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>The universal property of $A^+$</td>
+<td>every algebra homomorphism from $A$ into a unital algebra factors uniquely through the inclusion $A \to A^+$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>The unitisation of an already unital algebra</td>
+<td>$A \oplus R$ with the product that makes $A$ an ideal; unital, and it contains $A$ as a proper ideal</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The unitisation of a unital algebra is unital for a degenerate reason, and the construction is used throughout the analysis articles: the GNS construction for a $\mathrm{C}^*$-algebra without identity is applied to its unitisation, and in <em>K-Theory of Operator Algebras</em> the unitisation map extends the definitions from the unital to the general case.</p>
+<h2 id="homomorphisms-and-the-identity">Homomorphisms and the Identity</h2>
+<p>A homomorphism between unital algebras may or may not preserve the identity, and the distinction is visible in the corpus in the maps attached to the unitisation and to the augmentation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Map</th>
+<th>Its relation to the identity</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A unital (identity-preserving) homomorphism</td>
+<td>$\varphi(1_A) = 1_B$, the corpus's default for rings and for algebra homomorphisms</td>
+<td><em>Rings</em></td>
+</tr>
+<tr>
+<td>The augmentation $\pi : k[G] \to k$</td>
+<td>unital, $\pi(1_G) = 1$; its kernel is the augmentation ideal</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>The inclusion $A \to A^+$</td>
+<td>not identity-preserving when $A$ has no identity, since $A$ has none to preserve</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>The quotient $A^+ \to A^+/A \cong R$</td>
+<td>unital, with kernel $A$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>The quotient map $A \to A/I$</td>
+<td>unital, with identity $1 + I$</td>
+<td><em>Rings</em>, §Quotient Rings</td>
+</tr>
+<tr>
+<td>The idempotent $\varphi(1_A)$</td>
+<td>for an arbitrary homomorphism, $\varphi(1_A)$ is an idempotent of $B$, and $\varphi$ is unital exactly when $\varphi(1_A) = 1_B$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>The unital extension $\varphi^+$</td>
+<td>the unique unital homomorphism $A^+ \to B$ extending $\varphi : A \to B$, $\varphi^+(a,r) = \varphi(a) + r1_B$</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A unital homomorphism carries units to units, so it restricts to a group homomorphism $A^\times \to B^\times$; a homomorphism that does not preserve the identity carries no such group map in general, which is the reason the corpus fixes the unital convention for rings and for algebra homomorphisms.</p>
+<h2 id="the-non-unital-algebras">The Non-Unital Algebras</h2>
+<p>The objects below are the algebras of the corpus with no identity, and each row names the article that shows the identity is absent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Why it has no identity</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L^1(G)$ for a locally compact group $G$ that is not discrete</td>
+<td>no identity when $G$ is not discrete; it has an identity only in the discrete case, where it is $\delta_e$</td>
+<td><em>The Convolution Algebra $L^1(G)$</em></td>
+</tr>
+<tr>
+<td>$K(H)$, the compact operators on an infinite-dimensional Hilbert space $H$</td>
+<td>the identity operator is not compact; $K(H)$ is unital only when $H$ is finite-dimensional</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>$C_0(X)$ for a locally compact non-compact space $X$</td>
+<td>a continuous function vanishing at infinity has no constant $1$ to contain; $C_0(X)$ is unital exactly when $X$ is compact</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>$L^1(H)$ and $L^2(H)$, the trace-class and Hilbert–Schmidt operators</td>
+<td>two-sided $*$-ideals of $B(H)$; the identity is not trace class or Hilbert–Schmidt in infinite dimension</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>A proper two-sided ideal $I \subsetneq A$ of a unital algebra</td>
+<td>contains no unit of $A$, so $1_A \notin I$ and $I$ is non-unital as a subalgebra; it may carry an identity of its own, an idempotent of $A$ different from $1_A$</td>
+<td><em>Ideals and Quotients of Algebras</em>; <em>Unital Algebras</em></td>
+</tr>
+<tr>
+<td>The ideal $(x) \subseteq R[x]$, the polynomials of positive degree</td>
+<td>a proper ideal of the unital algebra $R[x]$, containing no unit, hence non-unital as a subalgebra</td>
+<td><em>Unital Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>These are the algebras of the corpus whose lack of an identity is the point of the article that introduces them, and they are the reason the unitisation is needed. The convolution algebra is the standard example: the identity it lacks for non-discrete $G$ is replaced by an approximate identity, and the whole representation theory of the group is developed from that.</p>
+<h2 id="approximate-identities-in-place-of-a-unit">Approximate Identities in Place of a Unit</h2>
+<p>A Banach algebra without identity often has a net that behaves like an identity in the limit, and the corpus uses it wherever the unit would be used.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A two-sided approximate identity $(u_\alpha)$</td>
+<td>$\lVert u_\alpha f - f\rVert \to 0$ and $\lVert f u_\alpha - f\rVert \to 0$ for every $f$</td>
+<td><em>The Convolution Algebra $L^1(G)$</em></td>
+</tr>
+<tr>
+<td>The normalised approximate identity of $L^1(G)$</td>
+<td>$u_\alpha \geq 0$, $\int_G u_\alpha = 1$ and $\lVert u_\alpha\rVert_1 = 1$, for every locally compact $G$</td>
+<td><em>The Convolution Algebra $L^1(G)$</em></td>
+</tr>
+<tr>
+<td>Reiter's property $P_1$</td>
+<td>an approximately invariant normalised approximate identity; equivalent to the amenability of $G$</td>
+<td><em>The Convolution Algebra $L^1(G)$</em></td>
+</tr>
+<tr>
+<td>States on a $\mathrm{C}^*$-algebra without identity</td>
+<td>the normalisation is replaced by $\lVert\omega\rVert = 1$ in the GNS construction</td>
+<td><em>Operator Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The approximate identity is the substitute for the identity in norm estimates and in the definition of nondegenerate representations, and Reiter's property shows that the existence of an approximately invariant one is exactly the amenability of the group.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the unital algebras and rings of the corpus, together with the objects that fail to be unital. The identity $1_A$ is unique, it makes the algebra a ring with a unit group $A^\times$, and the canonical map $\eta : R \to A$, $\eta(r) = r1_A$, identifies a unital $R$-algebra with a ring carrying a homomorphism from $R$ into its centre. The unital examples are the matrix algebra $M_n(R)$, the group algebra $k[G]$, the universal enveloping algebra $U(\mathfrak{g})$, the tensor algebra $T(V)$, the polynomial algebra, the path algebra of a finite quiver, the division algebras, the augmentation ideal of $\mathbb{Z}/2$, and, on the operator side, $B(H)$ and $C(X)$ for compact $X$. The rings with identity are read as unital algebras over $\mathbb{Z}$ and over themselves, with the centre $Z(A)$ and the matrix ring $M_n(D)$ among them. The unitisation $A^+$ adjoins an identity, with $A$ a two-sided ideal of $A^+$ and $A^+/A \cong R$. The non-examples — $L^1(G)$ for non-discrete $G$, the compact operators on an infinite-dimensional space, $C_0(X)$ for non-compact $X$, the trace-class and Hilbert–Schmidt ideals, and a proper ideal of a unital algebra — each name the failure of the identity axiom, and the analytic ones among them carry an approximate identity in place of the unit.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1_A$, $1$</td>
+<td>The identity of an algebra or a ring, with $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$A^\times$</td>
+<td>The group of units of $A$</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>The centre of $A$, a commutative subring containing $1_A$</td>
+</tr>
+<tr>
+<td>$\eta : R \to A$, $\eta(r) = r1_A$</td>
+<td>The canonical map making a unital $R$-algebra a ring over $R$</td>
+</tr>
+<tr>
+<td>$\varphi^+$</td>
+<td>The unique unital extension $A^+ \to B$ of $\varphi : A \to B$, $\varphi^+(a,r) = \varphi(a) + r1_B$</td>
+</tr>
+<tr>
+<td>$\varphi(1_A)$</td>
+<td>An idempotent in $B$; $\varphi$ is unital exactly when it equals $1_B$</td>
+</tr>
+<tr>
+<td>$A^+ = A \oplus R$</td>
+<td>The unitisation, with $(a,r)(b,s) = (ab+rb+sa, rs)$ and identity $(0,1)$</td>
+</tr>
+<tr>
+<td>$I_n$, $\mathrm{GL}_n(R)$</td>
+<td>The identity matrix and the unit group of $M_n(R)$</td>
+</tr>
+<tr>
+<td>$M_n(D)$, $\mathrm{GL}_n(D)$</td>
+<td>A matrix ring over a division ring and its units</td>
+</tr>
+<tr>
+<td>$k[G]$, $\pi$, $I(G)$</td>
+<td>Group algebra, augmentation map, augmentation ideal</td>
+</tr>
+<tr>
+<td>$U(\mathfrak{g})$, $T(V)$</td>
+<td>Universal enveloping algebra and tensor algebra</td>
+</tr>
+<tr>
+<td>$kQ$, $e_v$</td>
+<td>The path algebra of a quiver, and its length-zero paths</td>
+</tr>
+<tr>
+<td>$L^1(G)$, $\delta_e$, $(u_\alpha)$, $P_1$</td>
+<td>The convolution algebra, unital exactly for discrete $G$ with identity $\delta_e$; point mass at $e$, an approximate identity, Reiter's property</td>
+</tr>
+<tr>
+<td>$K(H)$, $C_0(X)$, $B(H)$</td>
+<td>The compact operators, non-unital for infinite-dimensional $H$ and simple; functions vanishing at infinity; the bounded operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the definition of a unital algebra, the unitalisation and the convention on identity-preserving homomorphisms.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for approximate identities in Banach algebras and the unitisation of an algebra without identity.</li>
+<li>Gerard J. Murphy, <em>$C^*$-Algebras and Operator Theory</em> (Academic Press, 1990), for the non-unital $\mathrm{C}^*$-algebras, their approximate identities and the unitisation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derived Functors and Sheaf Cohomology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="derived-functors-and-sheaf-cohomology"><strong>Derived Functors and Sheaf Cohomology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The cohomology of a sheaf, as defined in <em>Sheaf Cohomology</em>, is the right derived functor of the global sections functor: one resolves $\mathcal{F}$ by injective sheaves and applies $\Gamma(X,-)$. That definition presupposes three things, all of them the common property of a class of categories rather than of spaces: that the category of sheaves of abelian groups on a space is abelian, that it has enough injectives, and that the derived functors may be characterised abstractly so that <em>any</em> cohomological construction — the Čech complex of <em>Čech Cohomology</em>, the de Rham complex, the singular cochain complex — can be certified to compute them. This article supplies those three things for the category of sheaves, as an instance of the general theory of Part I. The general theory itself — additive and abelian categories, the Freyd–Mitchell embedding theorem, the definition and properties of left and right derived functors, $\delta$-functors, the Grothendieck spectral sequence, the derived category — is <em>Abelian and Grothendieck Categories</em>, <em>Homological Algebra</em>, <em>Derived Functors</em> and <em>Derived Categories</em> of Part I, and it is cited here rather than repeated; the topological instance is what is developed.</p>
+<p>The organising notion is <strong>effaceability</strong>. A cohomological $\delta$-functor on the category of sheaves is effaceable if every one of its groups can be killed by embedding the coefficient sheaf in a suitable sheaf — for sheaf cohomology, by embedding in a flabby or injective sheaf. Grothendieck's theorem is that an effaceable $\delta$-functor is <em>universal</em>, and that a universal $\delta$-functor agreeing with a given left exact functor in degree zero is the derived functor of that functor. The theorem has two consequences that this article is built around. The first is the <strong>abstract de Rham theorem</strong>: if $0\to\mathcal{F}\to\mathcal{A}^0\to\mathcal{A}^1\to\cdots$ is a resolution of $\mathcal{F}$ by sheaves that are acyclic for the functor of sections, or more generally a resolution whose sections form a cohomological functor effaceable in the required sense, then</p>
+<p>$$
+H^i(X,\mathcal{F}) \cong H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr),
+$$</p>
+<p>so that any acyclic resolution computes the cohomology; the flabby resolution of Godement, the Čech complex, the singular cochain complex and the de Rham complex are all instances, and the last of them is the identification of de Rham cohomology with singular cohomology. The second is the <strong>Grothendieck spectral sequence</strong> of a composite of functors, whose instances on a space include the Leray spectral sequence of a continuous map and the Čech-to-derived spectral sequence. A final section records the derived-functor properties of the direct image functor $f_*$, which are the sheaf-theoretic content of the six operations, and states that the natural home of the theory is the derived category of sheaves of Part I.</p>
+<p>The article is the last of the abstract trilogy <em>Sheaf Cohomology</em>, <em>Čech Cohomology</em>, <em>Derived Functors and Sheaf Cohomology</em>; the de Rham and geometric instances of the abstract de Rham theorem are worked out, written in this same batch, and the sheaf theory of algebraic geometry. Sheaves on a general Grothendieck site, for which the same theory is available with a site in place of a space, are Part I's <em>Sheaves on Sites</em>, and the descent-theoretic questions are Part I's <em>Descent Theory</em>.</p>
+<h2 id="the-category-of-sheaves">The Category of Sheaves</h2>
+<p><strong>Theorem (the category of sheaves).</strong> Let $X$ be a topological space.</p>
+<ol>
+<li>The category $\mathrm{Sh}(X,\mathbf{Ab})$ of sheaves of abelian groups on $X$ is an abelian category: it has kernels, cokernels and finite products and coproducts, the image of a morphism is the kernel of its cokernel, and the functor to the category of presheaves is left exact and preserves kernels.</li>
+<li>Filtered colimits in $\mathrm{Sh}(X,\mathbf{Ab})$ are exact — the category is AB5 — and the sheaves $\underline{\mathbb{Z}}$ and the representable sheaves $\underline{\mathbb{Z}}_U$ form a family of generators: a nonzero morphism $\mathcal{F}\to\mathcal{G}$ is detected by a morphism from some $\underline{\mathbb{Z}}_U$.</li>
+<li>The category has enough injectives, and the class of injective sheaves is contained in the class of flabby sheaves, which is contained in the class of acyclic sheaves.</li>
+<li>For a ringed space $(X,\mathcal{O}_X)$, the category of sheaves of $\mathcal{O}_X$-modules is abelian with enough injectives and satisfies AB5.</li>
+</ol>
+<p><em>Proof.</em> (1) and (2) are <em>Abelian and Grothendieck Categories</em> of Part I, applied to the category of functors from the poset of open sets to abelian groups with the sheaf condition; the generation statement uses that the sections of a sheaf over an open set are the homomorphisms from the sheaf $\underline{\mathbb{Z}}_U$ represented by $U$, so a nonzero morphism is nonzero on some sections. (3) is the construction of the previous article: a sheaf embeds in a product of skyscraper sheaves over injective stalks, which is flabby and injective; injective objects are flabby, and flabby sheaves are acyclic. (4) is the same argument over a sheaf of rings. $\square$</p>
+<p><strong>Corollary (derived functors exist).</strong> Every left exact functor $F : \mathrm{Sh}(X,\mathbf{Ab}) \to \mathbf{Ab}$, and every left exact functor to another abelian category, has right derived functors $R^iF$, defined by injective resolutions and forming a cohomological $\delta$-functor with $R^0F = F$; the categories of sheaves of modules likewise have enough injectives, so the functors $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},-)$, $f_*$ and $\Gamma(X,-)$ all have right derived functors. This is <em>Derived Functors</em> of Part I, applied to the categories of the theorem; the topological content of the article is the identification of these derived functors with the cohomological constructions available on a space.</p>
+<h2 id="math30-functors-effaceability-and-universality">$\delta$-Functors, Effaceability and Universality</h2>
+<p>The abstract machinery of this and the following section is <em>Homological Algebra</em> and <em>Derived Functors</em> of Part I; it is restated in the form in which it is used on a space, and the proofs are those of the general theory.</p>
+<p><strong>Definition.</strong> A <strong>cohomological $\delta$-functor</strong> from an abelian category $\mathcal{A}$ to an abelian category $\mathcal{B}$ is a sequence of additive functors $T^i : \mathcal{A}\to\mathcal{B}$, $i \geq 0$, together with, for every short exact sequence $0\to A'\to A\to A''\to 0$ in $\mathcal{A}$, morphisms $\delta^i : T^i(A'') \to T^{i+1}(A')$ natural in the sequence and such that the long sequence</p>
+<p>$$
+\cdots \to T^i(A') \to T^i(A) \to T^i(A'') \xrightarrow{\ \delta^i\ } T^{i+1}(A') \to \cdots
+$$</p>
+<p>is exact. A <strong>morphism of $\delta$-functors</strong> $T^\bullet\to S^\bullet$ is a sequence of natural transformations $T^i\to S^i$ commuting with the $\delta$'s. A $\delta$-functor is <strong>effaceable</strong> if for every object $A \in \mathcal{A}$ and every $i > 0$ there is a monomorphism $u : A \hookrightarrow B$ such that $T^i(u) = 0$; it is <strong>universal</strong> if every morphism of $\delta$-functors from $T^\bullet$ to any $\delta$-functor $S^\bullet$ is determined by its degree-zero component.</p>
+<p><strong>Theorem (Grothendieck's universality theorem).</strong> Let $T^\bullet$ be a cohomological $\delta$-functor.</p>
+<ol>
+<li>If $T^\bullet$ is effaceable then it is universal.</li>
+<li>If $T^0$ is left exact and $T^\bullet$ is effaceable, then $T^\bullet$ is canonically isomorphic to the right derived functor $\delta$-functor $R^\bullet T^0$.</li>
+<li>The right derived functors $R^\bullet F$ of a left exact functor on a category with enough injectives are effaceable, hence universal; in particular the derived functor $\delta$-functor is determined up to canonical isomorphism by $F$ and by the existence of enough injectives.</li>
+</ol>
+<p><em>Proof.</em> (1) Given a morphism $\varphi : T^\bullet\to S^\bullet$ and an object $A$, choose an embedding $u : A\hookrightarrow B$ with $T^i(u) = 0$ for $i>0$ and consider the commutative diagram with exact rows coming from $0\to A\xrightarrow{u}B\to C\to 0$; induction on $i$ shows that $\varphi^i_A$ is determined by $\varphi^0$, from the exactness of the rows and the vanishing of $T^i(u)$. (2) Embedding $A$ in an injective object $I$ and comparing the resulting long exact sequences, one shows $T^i(I) = 0$ for $i>0$ and builds the degree-zero-compatible morphism $T^\bullet\to R^\bullet T^0$ by induction, which is an isomorphism by (1) applied to both functors. (3) The definition of $R^iF$ from injective resolutions makes $R^iF(u) = 0$ for $u$ a monomorphism into an injective object and $i>0$; universality is then (1). $\square$</p>
+<p><strong>Corollary (uniqueness of cohomology theories on a space).</strong> Let $T^\bullet$ be a cohomological $\delta$-functor from sheaves of abelian groups on $X$ to abelian groups with $T^0 = \Gamma(X,-)$ and $T^i$ effaceable for $i > 0$. Then $T^\bullet$ is canonically isomorphic to the sheaf cohomology $H^\bullet(X,-) = R^\bullet\Gamma(X,-)$. In particular, any two such theories — sheaf cohomology, Čech cohomology in the limit, hypercohomology of a resolution — are canonically isomorphic.</p>
+<p><em>Proof.</em> By the theorem, both $T^\bullet$ and $H^\bullet(X,-)$ are universal $\delta$-functors with the same degree-zero functor $\Gamma(X,-)$; the identity of degree zero extends to an isomorphism of universal $\delta$-functors, and by universality the extension is unique. $\square$</p>
+<h2 id="effaceability-on-a-space">Effaceability on a Space</h2>
+<p><strong>Theorem ($\Gamma$ is effaceable).</strong> For every sheaf $\mathcal{F}$ on $X$ and every $i>0$ there is a monomorphism $\mathcal{F}\hookrightarrow\mathcal{G}$ into a sheaf $\mathcal{G}$ with $H^i(X,\mathcal{G}) = 0$; in particular $H^\bullet(X,-)$ is an effaceable $\delta$-functor and the corollary of the previous section applies to it.</p>
+<p><em>Proof.</em> Take $\mathcal{G} = \prod_{x\in X}(i_x)_*I_x$ with $\mathcal{F}_x\hookrightarrow I_x$ an embedding of $\mathcal{F}_x$ into an injective abelian group, as in the construction of enough injectives: $\mathcal{G}$ is flabby and injective, and injective objects have vanishing higher cohomology. $\square$</p>
+<p><strong>Theorem (the abstract de Rham theorem).</strong> Let</p>
+<p>$$
+0 \to \mathcal{F} \to \mathcal{A}^0 \xrightarrow{\ d^0\ } \mathcal{A}^1 \xrightarrow{\ d^1\ } \mathcal{A}^2 \to \cdots
+$$</p>
+<p>be a resolution of $\mathcal{F}$ — a complex of sheaves, exact at every stage including $\mathcal{A}^0$, with only $\mathcal{F}$ in degree $-1$ — such that the cohomological $\delta$-functor $T^i = H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr)$ is effaceable; for instance, such that each $\mathcal{A}^i$ is acyclic, $H^j(X,\mathcal{A}^i) = 0$ for $j>0$. Then the natural map</p>
+<p>$$
+H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr) \to H^i(X,\mathcal{F})
+$$</p>
+<p>induced by lifting $\mathcal{F}\to\mathcal{A}^\bullet$ to injective resolutions is an isomorphism for every $i$.</p>
+<p><em>Proof.</em> The functor $T^i = H^i(\Gamma(X,\mathcal{A}^\bullet))$ is a cohomological $\delta$-functor in $\mathcal{F}$ with $T^0 = \ker(d^0) = \Gamma(X,\mathcal{F})$ by the exactness of the resolution at $\mathcal{A}^0$, and the six-term exact sequence of a short exact sequence of complexes gives the connecting morphisms. If each $\mathcal{A}^i$ is acyclic, $T^i$ is effaceable, since embedding $\mathcal{F}$ in an acyclic $\mathcal{G}$ makes the comparison map $T^i(\mathcal{F})\to T^i(\mathcal{G})$ factor through $H^i(X,\mathcal{G}) = 0$; the complex case is the same argument with the defining property of effaceability. The corollary above then identifies $T^\bullet$ with $H^\bullet(X,-)$. $\square$</p>
+<p><strong>Corollary (the cohomology theories of a space agree).</strong> On a space $X$ the following constructions all compute $H^i(X,\mathcal{F})$:</p>
+<ol>
+<li>the flabby resolution of Godement of <em>Sheaf Cohomology</em>;</li>
+<li>the Čech complex of a cover in the limit, when $X$ is paracompact, by <em>Čech Cohomology</em>;</li>
+<li>the de Rham complex of a smooth manifold, when $\mathcal{F}$ is the constant sheaf and the de Rham complex is a resolution by fine sheaves: $H^i_{dR}(M)\cong H^i(M;\underline{\mathbb{R}})$, the de Rham theorem, developed;</li>
+<li>the singular cochain complex, on a locally contractible paracompact space, when $\mathcal{F} = \underline{A}$ is constant: $H^i(X;\underline{A})\cong H^i(X;A)$, the comparison theorem of <em>Sheaf Cohomology</em>;</li>
+<li>the hypercohomology of a bounded below complex of sheaves, whose two spectral sequences are the subject of the next section.</li>
+</ol>
+<p><em>Proof.</em> Each item exhibits a resolution or a complex whose sections give a cohomological $\delta$-functor in the coefficient sheaf, with degree zero the global sections, and which is effaceable either because the terms are acyclic or by the comparison argument; the abstract de Rham theorem applies. For (4) one uses the resolution of $\underline{A}$ by the sheaves of singular cochains, whose acyclicity is the local contractibility of $X$. $\square$</p>
+<p><strong>Remark (the role of effaceability).</strong> Effaceability is the abstract form of the statement that a cohomology theory on a space is determined by its behaviour on the small open sets: the ability to kill a class by embedding the coefficient sheaf in a larger sheaf is exactly the ability to push a class off any open set on which it is supported, and it is this that makes the theory computable from local data and that forces different local constructions to agree.</p>
+<h2 id="hypercohomology-and-the-grothendieck-spectral-sequence">Hypercohomology and the Grothendieck Spectral Sequence</h2>
+<p><strong>Definition.</strong> Let $\mathcal{A}^\bullet$ be a bounded below complex of sheaves on $X$, with the convention that the differentials increase the degree. The <strong>hypercohomology</strong> of $\mathcal{A}^\bullet$ is the sequence of groups</p>
+<p>$$
+\mathbb{H}^i(X,\mathcal{A}^\bullet) = R^i\Gamma(X,\mathcal{A}^\bullet),
+$$</p>
+<p>the right derived functors of the global sections functor applied to the complex, computed by replacing $\mathcal{A}^\bullet$ by a bounded below complex of injective sheaves quasi-isomorphic to it and taking the cohomology of the total complex of the resulting double complex. The two spectral sequences of the filtration of the total complex by the first and second degree have</p>
+<p>$$
+{}'E_2^{p,q} = H^p(X,\mathcal{H}^q(\mathcal{A}^\bullet)) \Longrightarrow \mathbb{H}^{p+q}(X,\mathcal{A}^\bullet), \qquad {}''E_1^{p,q} = H^q(X,\mathcal{A}^p) \Longrightarrow \mathbb{H}^{p+q}(X,\mathcal{A}^\bullet),
+$$</p>
+<p>and when $\mathcal{A}^\bullet$ is a resolution of a single sheaf $\mathcal{F}$, the hypercohomology is $H^i(X,\mathcal{F})$, so that the two spectral sequences compute the cohomology of $\mathcal{F}$ from a resolution whose terms need not be acyclic.</p>
+<p><strong>Theorem (the Grothendieck spectral sequence).</strong> Let $F : \mathcal{A}\to\mathcal{B}$ and $G : \mathcal{B}\to\mathcal{C}$ be left exact functors between abelian categories, and suppose that $F$ sends injective objects of $\mathcal{A}$ to $G$-acyclic objects of $\mathcal{B}$ (that is, $R^jG(F(I)) = 0$ for $j>0$ and $I$ injective). Then for every object $A$ of $\mathcal{A}$ there is a spectral sequence of cohomological type</p>
+<p>$$
+E_2^{p,q} = \bigl(R^pG\bigr)\bigl(R^qF(A)\bigr) \Longrightarrow R^{p+q}(G\circ F)(A),
+$$</p>
+<p>natural in $A$. When $\mathcal{A}$ is a category of sheaves, $\mathcal{B} = \mathcal{C} = \mathbf{Ab}$, $F = f_*$ for a continuous map $f : X\to Y$ and $G = \Gamma(Y,-)$, the hypothesis holds and the sequence becomes the <strong>Leray spectral sequence</strong></p>
+<p>$$
+E_2^{p,q} = H^p\bigl(Y, R^qf_*\mathcal{F}\bigr) \Longrightarrow H^{p+q}(X,\mathcal{F})
+$$</p>
+<p>of <em>Sheaf Cohomology</em>; when $F$ is the functor of sections of a complex of sheaves and $G$ the global sections, one obtains the Čech-to-derived and the hypercohomology sequences. The statement and proof of the general theorem, and the construction of the spectral sequence of a filtered complex, are <em>Spectral Sequences</em> of Part I; the fibration case $E_2^{p,q} = H^p(B;\underline{H}^q(F;A))\Rightarrow H^{p+q}(E;A)$ is the Leray–Serre sequence of <em>The Leray–Serre Spectral Sequence</em>.</p>
+<p><em>Proof sketch.</em> Take an injective resolution $A\to I^\bullet$; the hypothesis makes $F(I^\bullet)$ a complex of $G$-acyclic objects, and the double complex obtained by resolving each $F(I^q)$ by injectives has two filtrations whose spectral sequences are the ones displayed; the $E_2$ of the first filtration computes the cohomology of $F(I^\bullet)$ in the $q$-direction and then applies $R^pG$, and the abutment is the cohomology of the total complex, which computes $R^{p+q}(G\circ F)(A)$ by the standard comparison argument. $\square$</p>
+<p><strong>Corollary (the five-term exact sequence).</strong> In the situation of the theorem there is an exact sequence</p>
+<p>$$
+0 \to E_2^{1,0}\to R^1(G\circ F)(A) \to E_2^{0,1}\xrightarrow{\ d_2\ } E_2^{2,0}\to R^2(G\circ F)(A),
+$$</p>
+<p>the <strong>five-term exact sequence</strong> of the spectral sequence, obtained from the edge homomorphisms and the differential $d_2 : E_2^{0,1}\to E_2^{2,0}$. For the Leray spectral sequence it reads</p>
+<p>$$
+0 \to H^1(Y,f_*\mathcal{F})\to H^1(X,\mathcal{F})\to H^0(Y,R^1f_*\mathcal{F})\xrightarrow{\ d_2\ } H^2(Y,f_*\mathcal{F})\to H^2(X,\mathcal{F}),
+$$</p>
+<p>which is the exact sequence used to compute the cohomology of a fibration and of a covering map.</p>
+<h2 id="derived-functors-of-the-direct-image">Derived Functors of the Direct Image</h2>
+<p><strong>Definition.</strong> For a continuous map $f : X\to Y$ the functors $f^{-1} : \mathrm{Sh}(Y)\to\mathrm{Sh}(X)$ and $f_* : \mathrm{Sh}(X)\to\mathrm{Sh}(Y)$ form an adjoint pair $f^{-1}\dashv f_*$: $\operatorname{Hom}(f^{-1}\mathcal{G},\mathcal{F})\cong\operatorname{Hom}(\mathcal{G},f_*\mathcal{F})$. Since $f^{-1}$ is left adjoint to a left exact functor it is right exact, and it is in fact exact; since $f_*$ is left adjoint to an exact functor, or directly from the definition, it preserves limits and is left exact. The higher direct images $R^qf_*$ are the right derived functors of $f_*$, the sheaves on $Y$ whose stalk at $y$ is the cohomology of the fibre: $(R^qf_*\mathcal{F})_y = \varinjlim_{V\ni y}H^q(f^{-1}(V),\mathcal{F})$.</p>
+<p><strong>Theorem (properties).</strong> Let $f : X\to Y$ and $g : Y\to Z$ be continuous.</p>
+<ol>
+<li>$R^qf_* = 0$ for $q<0$ and $R^0f_* = f_*$; for a closed immersion $f$, $R^qf_* = 0$ for $q>0$.</li>
+<li>There is a natural spectral sequence $E_2^{p,q} = R^pg_*(R^qf_*\mathcal{F})\Rightarrow R^{p+q}(g\circ f)_*\mathcal{F}$, the Grothendieck spectral sequence of the composite of the two left exact functors.</li>
+<li>The <strong>base change map</strong> $g^{-1}R^qf_*\mathcal{F}\to R^qf'_*(g'^{-1}\mathcal{F})$ for a cartesian square with maps $f, g, f', g'$ is an isomorphism when $f$ is proper and of finite cohomological dimension, or when $g$ is flat; more generally there is a base change spectral sequence.</li>
+<li>The <strong>projection formula</strong> $R^qf_*\mathcal{F}\otimes_{\mathcal{O}_Y}\mathcal{G}\cong R^qf_*(\mathcal{F}\otimes_{\mathcal{O}_X}f^*\mathcal{G})$ holds when the tensor and direct image are taken over compatible structure sheaves.</li>
+</ol>
+<p><em>Proof.</em> (1) is immediate from the definition; for a closed immersion the direct image is exact because the induced map on stalks is an isomorphism or zero. (2) is the Grothendieck spectral sequence applied to $F = f_*$, $G = g_*$; the hypothesis is verified by resolving on $X$, since an injective sheaf on $X$ is flabby and $R^pf_*$ of a flabby sheaf vanishes for $p>0$. (3) and (4) are the standard constructions of the subject, proved by reducing to the affine or the locally free case and using the exactness of $g^{-1}$ and the projection formula for modules. $\square$</p>
+<p><strong>Remark (the derived category and the six operations).</strong> The statements above look asymmetric because the derived functors are taken in one direction only. The symmetric formulation is the derived category $D^+(\mathrm{Sh}(X))$ of <em>Derived Categories</em> of Part I: a morphism of spaces $f$ induces $f^* = f^{-1}$ (exact, so no derived functor is needed), the right derived functor $Rf_*$, the proper direct image $Rf_!$ for maps of finite cohomological dimension between locally compact spaces, its right adjoint $f^!$, and the derived tensor product and sheaf hom; the six operations $f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om$ satisfy the base change, projection and duality formulae. <strong>Verdier duality</strong> is the adjunction $\mathbb{R}f_! \dashv f^!$, the assertion that the proper direct image has a right adjoint $f^!$ on the derived categories whenever $f$ is of finite cohomological dimension between locally compact spaces; it has a purely topological content, and it specialises for $f$ the map to a point to the Poincaré duality of <em>Poincaré Duality</em>: for a closed oriented $n$-manifold with constant coefficients it reads $H^k(M)\cong H_{n-k}(M)^{\vee}$, and its sheaf-theoretic form is the twisted duality of <em>Sheaf Cohomology</em>. The derived category is Part I's and is not developed here; the constructions of this section are its degreewise shadow, and the applications to algebraic geometry are.</p>
+<h2 id="summary">Summary</h2>
+<p>The category of sheaves of abelian groups on a space is an abelian AB5 category with a family of generators and enough injectives, so that every left exact functor on it has right derived functors; the general theory of abelian categories, of derived functors and of spectral sequences is Part I's, and the article applies it to the two functors that occur on a space, the global sections $\Gamma(X,-)$ and the direct image $f_*$. The abstract notion that makes the application work is effaceability: a cohomological $\delta$-functor is effaceable if every class in positive degree can be killed by embedding the coefficient in a suitable object, and Grothendieck's theorem states that an effaceable $\delta$-functor is universal and that an effaceable $\delta$-functor with a left exact degree-zero part is that part's derived functor. Consequently the sheaf cohomology $H^\bullet(X,-)$ is the only cohomological theory with $H^0 = \Gamma$ whose positive-degree functors are effaceable, and the <strong>abstract de Rham theorem</strong> follows: any resolution of a sheaf by acyclic sheaves, or any resolution whose sections give an effaceable functor, computes the cohomology. The flabby resolution of Godement, the Čech complex in the limit, the de Rham complex of a manifold and the singular cochain complex of a locally contractible space are all instances, which is why the different cohomology theories of a space agree.</p>
+<p>The <strong>Grothendieck spectral sequence</strong> $E_2^{p,q} = R^pG(R^qF(A)) \Rightarrow R^{p+q}(G\circ F)(A)$ for a composite of left exact functors, its five-term exact sequence and its instances — the Leray spectral sequence of a continuous map, the hypercohomology of a complex of sheaves and the spectral sequence of a double complex — organise the computation of sheaf cohomology from a filtration, and the derived functors $R^qf_*$ of the direct image, with their base change and projection formulae and the duality of Verdier, are the degreewise shadow of the six operations of the derived category of Part I.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Sh}(X,\mathbf{Ab})$, $\mathrm{Sh}(X,\mathcal{O}_X)$</td>
+<td>abelian category of sheaves of groups or of $\mathcal{O}_X$-modules</td>
+</tr>
+<tr>
+<td>AB5</td>
+<td>filtered colimits are exact</td>
+</tr>
+<tr>
+<td>$R^iF$, $R^i\Gamma(X,-)$</td>
+<td>right derived functors; sheaf cohomology $H^i(X,\mathcal{F})$</td>
+</tr>
+<tr>
+<td>$\delta^i$</td>
+<td>connecting morphism of a cohomological $\delta$-functor</td>
+</tr>
+<tr>
+<td>effaceable</td>
+<td>$T^i(A)$ killed by some monomorphism $A\hookrightarrow B$ for $i>0$</td>
+</tr>
+<tr>
+<td>universal</td>
+<td>morphisms out of the $\delta$-functor determined by degree zero</td>
+</tr>
+<tr>
+<td>$\mathcal{A}^\bullet$, $\mathbb{H}^i(X,\mathcal{A}^\bullet)$</td>
+<td>complex of sheaves; hypercohomology $R^i\Gamma(X,\mathcal{A}^\bullet)$</td>
+</tr>
+<tr>
+<td>$E_2^{p,q} = R^pG(R^qF(A))$</td>
+<td>Grothendieck spectral sequence of a composite of functors</td>
+</tr>
+<tr>
+<td>$E_2^{p,q} = H^p(Y,R^qf_*\mathcal{F})$</td>
+<td>Leray spectral sequence of a continuous map</td>
+</tr>
+<tr>
+<td>$f^{-1}\dashv f_*$, $R^qf_*$</td>
+<td>inverse and direct image adjunction; higher direct images</td>
+</tr>
+<tr>
+<td>$f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om$</td>
+<td>the six operations of the derived category</td>
+</tr>
+<tr>
+<td>Verdier duality</td>
+<td>the adjunction $\mathbb{R}f_!\dashv f^!$; for $f$ to a point, $H^k(M)\cong H_{n-k}(M)^{\vee}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexander Grothendieck, <em>Sur quelques points d'algèbre homologique</em> (Tohoku Mathematical Journal 9, 1957), for effaceable $\delta$-functors, universality and the spectral sequence of a composite of functors.</li>
+<li>Roger Godement, <em>Topologie algébrique et théorie des faisceaux</em> (Hermann, 1958), for the flabby resolution and the effacement of sheaf cohomology.</li>
+<li>Jean-Louis Verdier, <em>Des catégories dérivées des catégories abéliennes</em> (Astérisque 239, 1996), for the derived category, the six operations and duality.</li>
+<li>Glen E. Bredon, <em>Sheaf Theory</em> (Springer, second edition, 1997), for the derived-functor theory on a space and the properties of $f_*$ and $f^{-1}$.</li>
+<li>Birger Iversen, <em>Cohomology of Sheaves</em> (Springer, 1986), for the six operations and Verdier duality in the topological setting.</li>
+<li>Masaki Kashiwara and Pierre Schapira, <em>Sheaves on Manifolds</em> (Springer, 1990), for the cohomological theory of sheaves on a space and its applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

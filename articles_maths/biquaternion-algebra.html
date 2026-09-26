@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-algebra"><strong>Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the biquaternion algebra as an algebraic structure, without yet discussing its representations. The goal is to define the algebra precisely, establish its basic properties, and describe the <strong>six</strong> distinguished real subspaces that arise from the natural conjugations: four of dimension four, together with the two-dimensional center and the six-dimensional vector subspace.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically.</p>
+<p>The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, together with its basis, its multiplication, its conjugation, and its norm. No facts about $\mathbb{H}$ are restated here.</p>
+<h2 id="biquaternions">Biquaternions</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>biquaternion algebra</strong> is the complexification of the quaternion algebra:</p>
+<p>$$
+\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}.
+$$</p>
+<h3 id="two-views-over-math3-and-over-math4">Two Views: Over $\mathbb{C}$ and Over $\mathbb{R}$</h3>
+<p>The biquaternion algebra can be viewed in two equivalent ways, depending on which scalars we allow.</p>
+<p><strong>As a $\mathbb{C}$-algebra.</strong> The tensor product $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is naturally a module over $\mathbb{C}$, with the complex scalars acting on the first factor. In this view, $\mathbb{B}$ is a <strong>four-dimensional algebra over $\mathbb{C}$</strong>: its complex basis is $\{e_0, e_1, e_2, e_3\}$, and every element is a $\mathbb{C}$-linear combination of these four basis elements. The multiplication is $\mathbb{C}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The center of this $\mathbb{C}$-algebra is $\mathbb{C}$.</p>
+<p><strong>As an $\mathbb{R}$-algebra.</strong> Forgetting the $\mathbb{C}$-module structure, the same set $\mathbb{B}$ is also naturally a <strong>real vector space of dimension $8$</strong>, with real basis $\{e_0, e_1, e_2, e_3, i e_0, i e_1, i e_2, i e_3\}$. In this view, $\mathbb{B}$ is an <strong>eight-dimensional algebra over $\mathbb{R}$</strong>. The multiplication is $\mathbb{R}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The scalar imaginary $i$ is now an element of the algebra itself, not a scalar, and it lies in the center.</p>
+<p>The two views are related by a change of base ring: passing from the quaternion algebra $\mathbb{H}$ to the $\mathbb{C}$-algebra is the operation of <strong>extension of scalars</strong> from $\mathbb{R}$ to $\mathbb{C}$, and passing back is the operation of <strong>restriction of scalars</strong>. The dimension changes as follows:</p>
+<p>$$
+\dim_{\mathbb{R}} \mathbb{B} = 2 \cdot \dim_{\mathbb{C}} \mathbb{B},
+$$</p>
+<p>because each complex dimension contributes two real dimensions (the real and imaginary parts of each complex coefficient).</p>
+<p><strong>Which view to use.</strong> The two views are complementary, and both are used in the literature.</p>
+<ul>
+<li>
+<p>The <strong>$\mathbb{C}$-algebra view</strong> is the natural one when the biquaternions are studied as a complex algebra, for instance in the context of complex representations, complex Lie algebras, or the algebra $M_2(\mathbb{C})$ of $2 \times 2$ complex matrices. In this view, the algebra is four-dimensional and its structure is relatively simple: it is isomorphic to $M_2(\mathbb{C})$.</p>
+</li>
+<li>
+<p>The <strong>$\mathbb{R}$-algebra view</strong> is the natural one when the biquaternions are studied as a real algebra, for instance in the context of real representations or real Clifford algebras. In this view, the algebra is eight-dimensional, and the six real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ that we describe below are all real vector subspaces of this eight-dimensional real algebra.</p>
+</li>
+</ul>
+<p>In this article we use both views, and we indicate which one is in force whenever it matters. When we say "$\mathbb{B}$ is four-dimensional," we mean over $\mathbb{C}$. When we say "$\mathbb{B}$ is eight-dimensional," we mean over $\mathbb{R}$. The context will make the field clear.</p>
+<h3 id="developed-form">Developed Form</h3>
+<p>A general biquaternion is written in developed form as</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C}.
+$$</p>
+<p>We write</p>
+<p>$$
+\tilde{Q} = Q_0 + \mathbf{Q}, \qquad \mathbf{Q} = \sum_{k=1}^{3} Q_k e_k,
+$$</p>
+<p>where $Q_0$ is the <strong>complex scalar part</strong> and $\mathbf{Q}$ is the <strong>complex vector part</strong>. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{B}$, not a four-vector.</p>
+<p>Each complex coefficient is written in terms of its real and imaginary parts:</p>
+<p>$$
+Q_0 = q_0 + i q'_0, \qquad Q_k = q_k + i q'_k, \qquad q_\mu, q'_\mu \in \mathbb{R}.
+$$</p>
+<p>The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with all quaternion units: $i e_k = e_k i$.</p>
+<p>When $\mathbb{B}$ is viewed as a real vector space of dimension 8, the eight real coordinates of $\tilde{Q}$ are $(q_0, q_1, q_2, q_3, q'_0, q'_1, q'_2, q'_3)$. When $\mathbb{B}$ is viewed as a complex vector space of dimension 4, the four complex coordinates are $(Q_0, Q_1, Q_2, Q_3)$.</p>
+<h3 id="the-algebra-structure">The Algebra Structure</h3>
+<p>The algebra $\mathbb{B}$ is a four-dimensional algebra over $\mathbb{C}$, and simultaneously an eight-dimensional algebra over $\mathbb{R}$. In both views it is non-commutative and associative. It is not a division algebra: it has zero divisors, and the study of these is the subject of the divisibility article.</p>
+<p>The <strong>center</strong> of $\mathbb{B}$ is $\mathbb{C}$ in both views, but with a subtlety. As a $\mathbb{C}$-algebra, the center is the scalar copy of $\mathbb{C}$ spanned by $e_0$: an element $\tilde{Q}$ is central iff it commutes with every quaternion unit, and the only such elements are the complex scalars $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. As an $\mathbb{R}$-algebra, the same center $\mathbb{C}$ is a real vector space of dimension 2, spanned by $e_0$ and $i e_0$.</p>
+<h3 id="multiplication">Multiplication</h3>
+<p>The product of two biquaternions is defined by extending the quaternion product complex-linearly. In developed form,</p>
+<p>$$
+\tilde{Q} \circ \tilde{R} = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} Q_\mu R_\nu \, e_\mu e_\nu,
+$$</p>
+<p>where the products $e_\mu e_\nu$ are those of the quaternion algebra, extended complex-linearly. In scalar-vector notation, this becomes</p>
+<p>$$
+\tilde{Q} \circ \tilde{R} = Q_0 R_0 - (\mathbf{Q}, \mathbf{R}) + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}],
+$$</p>
+<p>where</p>
+<p>$$
+(\mathbf{Q}, \mathbf{R}) = \sum_{k=1}^{3} Q_k R_k, \qquad [\mathbf{Q}, \mathbf{R}] = \sum_{j,k,l=1}^{3} \epsilon_{jkl} Q_j R_k e_l.
+$$</p>
+<p>The symbols $(\mathbf{Q}, \mathbf{R})$ and $[\mathbf{Q}, \mathbf{R}]$ denote the <strong>complex bilinear dot product</strong> and the <strong>complex bilinear cross product</strong>. They reduce to the ordinary dot product and cross product when the coefficients are real.</p>
+<p>This formula has the same structure as the quaternion product: scalar part, vector part, dot product, cross product. The only difference is that the coefficients are now complex.</p>
+<h3 id="conjugations">Conjugations</h3>
+<p>There are <strong>four</strong> natural conjugations on $\mathbb{B}$. The first three are obtained from the quaternion conjugation $\bar{\cdot}$ and the complex conjugation ${}^*$; the fourth is defined as the negative of Hermitian conjugation:</p>
+<p><strong>Quaternion conjugation</strong> $\bar{\tilde{Q}}$:</p>
+<p>$$
+\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3.
+$$</p>
+<p><strong>Complex conjugation</strong> $\tilde{Q}^*$:</p>
+<p>$$
+\tilde{Q}^* = Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3.
+$$</p>
+<p><strong>Hermitian conjugation</strong> $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$:</p>
+<p>$$
+\tilde{Q}^\dagger = Q_0^* e_0 - Q_1^* e_1 - Q_2^* e_2 - Q_3^* e_3.
+$$</p>
+<p><strong>Anti-Hermitian conjugation</strong> $\tilde{Q}^\flat = -\tilde{Q}^\dagger$:</p>
+<p>$$
+\tilde{Q}^\flat = -Q_0^* e_0 + Q_1^* e_1 + Q_2^* e_2 + Q_3^* e_3.
+$$</p>
+<p>Each conjugation is an involution: applying it twice returns the original biquaternion. Each therefore splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and each of the two is a real vector subspace of $\mathbb{B}$.</p>
+<h3 id="the-group-of-conjugations">The Group of Conjugations</h3>
+<p>The quaternion conjugation $\bar{\cdot}$ and the complex conjugation ${}^*$ are commuting involutions. They generate the Klein four-group</p>
+<p>$$
+\{\mathrm{id},\bar{\cdot},{}^{*},{}^{\dagger}\}\cong \mathbb{Z}/2\times \mathbb{Z}/2,
+$$</p>
+<p>where</p>
+<p>$$
+\tilde{Q}^\dagger=\bar{\tilde{Q}}^*=\tilde{Q}^{*\bar{}}.
+$$</p>
+<p>Thus Hermitian conjugation is the composition of the two commuting generators.</p>
+<p>The anti-Hermitian conjugation is defined by</p>
+<p>$$
+\tilde{Q}^\flat=-\tilde{Q}^\dagger=-\bar{\tilde{Q}}^*.
+$$</p>
+<p>It is an involution, since $(\tilde{Q}^\flat)^\flat=\tilde{Q}$, but it is not an algebra anti-automorphism and it is not a member of the Klein four-group above. Composing it with $\dagger$ gives</p>
+<p>$$
+(\tilde{Q}^\dagger)^\flat=-\tilde{Q},\qquad
+(\tilde{Q}^\flat)^\dagger=-\tilde{Q}.
+$$</p>
+<p>So $\flat$ is determined by $\dagger$ together with the central sign $-1$. The four natural conjugations are $\bar{\cdot},{}^{*},{}^{\dagger},{}^{\flat}$, but only $\{\mathrm{id},\bar{\cdot},{}^{*},{}^{\dagger}\}$ forms a group under composition.</p>
+<h2 id="the-six-subspaces">The Six Subspaces</h2>
+<p>The three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}$ (with $\dagger = \bar{\cdot}\circ{}^{*}$) each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The <strong>six</strong> subspaces so obtained are the distinguished real subspaces of $\mathbb{B}$. Four of them are four-dimensional; the remaining two are the two-dimensional <strong>center</strong> and the six-dimensional <strong>vector subspace</strong>. The fourth conjugation $\flat = -\dagger$ is not independent: it has the same two eigenspaces as $\dagger$, with the signs exchanged, so it produces no further subspace.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>defining condition</th>
+<th>real basis</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$ (complex, the center)</td>
+<td>$\bar{\tilde{Q}} = \tilde{Q}$</td>
+<td>$e_0,\ ie_0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$ (vector)</td>
+<td>$\bar{\tilde{Q}} = -\tilde{Q}$</td>
+<td>$e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$ (quaternion)</td>
+<td>$\tilde{Q}^{*} = \tilde{Q}$</td>
+<td>$e_0,\ e_1,\ e_2,\ e_3$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion)</td>
+<td>$\tilde{Q}^{*} = -\tilde{Q}$</td>
+<td>$ie_0,\ ie_1,\ ie_2,\ ie_3$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$ (Hermitian)</td>
+<td>$\tilde{Q}^{\dagger} = \tilde{Q}$</td>
+<td>$e_0,\ ie_1,\ ie_2,\ ie_3$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$ (anti-Hermitian)</td>
+<td>$\tilde{Q}^{\flat} = \tilde{Q}$</td>
+<td>$ie_0,\ e_1,\ e_2,\ e_3$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each of the six has its own article in the <strong>Subspaces</strong> group of the series, where its basis and dimension, its algebra and module structure, its norm form, its matrix image, its behaviour under the four conjugations and its intersections with the other five are worked out in full:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, the centre</td>
+<td><em>Biquaternion Centre Subspace</em></td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$, the vector subspace</td>
+<td><em>Biquaternion Vector Subspace</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, the quaternion subspace</td>
+<td><em>Biquaternion Quaternion Subspace</em></td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace</td>
+<td><em>Biquaternion Anti-Quaternion Subspace</em></td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, the Hermitian subspace</td>
+<td><em>Biquaternion Hermitian Subspace</em></td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$, the anti-Hermitian subspace</td>
+<td><em>Biquaternion Anti-Hermitian Subspace</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The relations between them are collected in <em>Biquaternion Relations Between Subspaces</em>, and the four conjugations themselves in <em>Biquaternion Involution Lattice</em>. What the present article uses of the six, again and again, is the following:</p>
+<ul>
+<li>$\mathbb{C}_{\mathbb{B}}$ is the set of central elements, a copy of $\mathbb{C}$ embedded as the scalar part, $\{\lambda e_0 : \lambda \in \mathbb{C}\}$;</li>
+<li>$\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar-part functional, equivalently the derived subspace $[\mathbb{B},\mathbb{B}]$, equivalently the set of traceless elements under $\Phi$, and it is neither a subalgebra nor a module over $\mathbb{H}_{\mathbb{B}}$;</li>
+<li>$\mathbb{H}_{\mathbb{B}}$ is the set of elements with real coefficients, a copy of the real quaternion algebra, and the only non-commutative one of the six;</li>
+<li>$i\mathbb{H}_{\mathbb{B}}$ is the set of products $i\tilde{P}$ with $\tilde{P} \in \mathbb{H}_{\mathbb{B}}$, a two-sided module over $\mathbb{H}_{\mathbb{B}}$ but not a subalgebra;</li>
+<li>$\mathbb{M}_+$ is the set of elements with real scalar part and purely imaginary vector part;</li>
+<li>$\mathbb{M}_-$ is the set of elements with purely imaginary scalar part and real vector part.</li>
+</ul>
+<h3 id="the-six-together">The Six Together</h3>
+<p>Of the six subspaces, exactly two are subalgebras: the center $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$. Both are division algebras. The vector subspace is closed under neither multiplication nor left multiplication by $\mathbb{H}_{\mathbb{B}}$; the anti-quaternion subspace is an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra; and the two sectors $\mathbb{M}_\pm$ are neither. The six are pairwise distinct as sets, and no two of them are equal; their dimensions $2, 6, 4, 4, 4, 4$ sum to more than $8$, so they necessarily overlap, and how they do so is the subject of <em>Biquaternion Relations Between Subspaces</em>.</p>
+<h2 id="the-quaternion-decomposition">The Quaternion Decomposition</h2>
+<p>The complex conjugation ${}^{*}$ is an involution, and the two subspaces just defined are its eigenspaces: $\mathbb{H}_{\mathbb{B}}$ is the eigenspace of eigenvalue $+1$ and $i\mathbb{H}_{\mathbb{B}}$ the eigenspace of eigenvalue $-1$. Both have real dimension 4, and they are independent, so $\mathbb{B}$ splits as a direct sum of the two.</p>
+<p>Every biquaternion can be written uniquely as</p>
+<p>$$
+\tilde{Q} = \tilde{Q}_r + i \tilde{Q}_i,
+$$</p>
+<p>where $\tilde{Q}_r$ and $\tilde{Q}_i$ are <strong>ordinary quaternions</strong> (elements of $\mathbb{H}$ embedded in $\mathbb{B}$), with real coefficients. The two components are</p>
+<p>$$
+\tilde{Q}_r = \frac{1}{2}(\tilde{Q} + \tilde{Q}^*), \qquad \tilde{Q}_i = \frac{1}{2i}(\tilde{Q} - \tilde{Q}^*).
+$$</p>
+<p>Indeed, $\tilde{Q}_r$ is fixed by complex conjugation, so it lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and $\tilde{Q}_i$ is also fixed by complex conjugation. To see the latter, compute</p>
+<p>$$
+\tilde{Q}_i^* = \left(\frac{1}{2i}(\tilde{Q} - \tilde{Q}^*)\right)^* = \frac{-1}{2i}\left(\tilde{Q}^* - \tilde{Q}\right) = \frac{1}{2i}\left(\tilde{Q} - \tilde{Q}^*\right) = \tilde{Q}_i,
+$$</p>
+<p>so $\tilde{Q}_i$ lies in $\mathbb{H}_{\mathbb{B}}$ as well. The sum is $\tilde{Q}_r + i \tilde{Q}_i = \tilde{Q}$.</p>
+<p>This gives the direct sum decomposition</p>
+<p>$$
+\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}},
+$$</p>
+<p>where $i\mathbb{H}_{\mathbb{B}}$ is the set of biquaternions of the form $i \tilde{Q}$ with $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}$ of real dimension 8.</p>
+<p>This is the <strong>quaternion decomposition</strong> of a biquaternion. It expresses $\tilde{Q}$ as a quaternion plus the scalar imaginary times another quaternion. It is the natural decomposition when we think of $\mathbb{B}$ as the complexification of $\mathbb{H}$: the first summand is the "real part" and the second is the "imaginary part" of the complexification.</p>
+<h2 id="the-hermitian-decomposition">The Hermitian Decomposition</h2>
+<p>The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation $\dagger$. Every biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:</p>
+<p>$$
+\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-, \qquad \tilde{Q}_+ \in \mathbb{M}_+, \quad \tilde{Q}_- \in \mathbb{M}_-.
+$$</p>
+<p>The two components are obtained from the Hermitian conjugation:</p>
+<p>$$
+\tilde{Q}_+ = \frac{1}{2}(\tilde{Q} + \tilde{Q}^\dagger), \qquad \tilde{Q}_- = \frac{1}{2}(\tilde{Q} - \tilde{Q}^\dagger).
+$$</p>
+<p>Indeed, $\tilde{Q}_+$ is fixed by Hermitian conjugation, so it lies in $\mathbb{M}_+$, and $\tilde{Q}_-$ satisfies $\tilde{Q}_-^\dagger = -\tilde{Q}_-$, so it lies in $\mathbb{M}_-$. The sum is $\tilde{Q}_+ + \tilde{Q}_- = \tilde{Q}$.</p>
+<p>This gives the direct sum decomposition</p>
+<p>$$
+\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
+$$</p>
+<p>where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-Hermitian subspace. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}$ of real dimension 8.</p>
+<p>The decomposition is the algebraic analogue of writing a complex number as the sum of its real and imaginary parts. Here, however, both components are biquaternions, and the two subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ are not subalgebras of $\mathbb{B}$; the decomposition is a vector-space decomposition, not an algebra decomposition.</p>
+<h2 id="the-center-and-vector-decomposition">The Center and Vector Decomposition</h2>
+<p>The quaternion conjugation $\bar{\cdot}$ is the third commuting involution. Its eigenspaces are the center $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as a scalar plus a pure vector part:</p>
+<p>$$
+\tilde{Q} = \tilde{Q}_{\mathrm{c}} + \tilde{Q}_{\mathrm{v}}, \qquad \tilde{Q}_{\mathrm{c}} = Q_0 e_0 \in \mathbb{C}_{\mathbb{B}}, \quad \tilde{Q}_{\mathrm{v}} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3 \in \mathrm{Vect}(\mathbb{B}),
+$$</p>
+<p>with</p>
+<p>$$
+\tilde{Q}_{\mathrm{c}} = \frac{1}{2}(\tilde{Q} + \bar{\tilde{Q}}), \qquad \tilde{Q}_{\mathrm{v}} = \frac{1}{2}(\tilde{Q} - \bar{\tilde{Q}}).
+$$</p>
+<p>This gives the direct sum decomposition</p>
+<p>$$
+\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}),
+$$</p>
+<p>the two summands being of real dimensions 2 and 6. It is the decomposition into center and derived subspace, and it is the one with summands of unequal dimension: the other two decompositions split $\mathbb{B}$ into two halves of dimension 4.</p>
+<h2 id="relation-between-the-three-decompositions">Relation Between the Three Decompositions</h2>
+<p>The three decompositions</p>
+<p>$$
+\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}}, \qquad \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-, \qquad \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})
+$$</p>
+<p>are the eigenspace decompositions of the three pairwise commuting involutions ${}^{*}$, $\dagger$ and $\bar{\cdot}$. They are the only decompositions of this kind: each is determined by one of the three, and $\flat = -\dagger$ reproduces the eigenspaces of $\dagger$ with the signs exchanged and so gives nothing new. That is why there are six subspaces rather than four or eight.</p>
+<p><strong>The four coordinate blocks.</strong> Because the involutions commute, the four-dimensional subspaces are built from four common pieces. Write</p>
+<p>$$
+A_1 = \mathbb{R} e_0, \qquad A_2 = \mathbb{R}(ie_0), \qquad B_1 = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\}, \qquad B_2 = \operatorname{span}_{\mathbb{R}}\{ie_1, ie_2, ie_3\}.
+$$</p>
+<p>These are the two <strong>scalar blocks</strong> $A_1, A_2$ of dimension 1 and the two <strong>vector blocks</strong> $B_1, B_2$ of dimension 3. The two involutions ${}^{*}$ and $\bar{\cdot}$ are diagonal on them, and every one of the six subspaces is a sum of blocks:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>blocks</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$A_1 \oplus A_2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$B_1 \oplus B_2$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$A_1 \oplus B_1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$A_2 \oplus B_2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$A_1 \oplus B_2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$A_2 \oplus B_1$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pattern is that each of the four four-dimensional subspaces takes one scalar block and one vector block — the four ways of choosing one from each column — while the center takes both scalar blocks and the vector subspace both vector blocks.</p>
+<p><strong>The three pairings.</strong> The three decompositions are exactly the three ways of splitting the four blocks into two complementary pairs: $\{A_1, B_1\}$ against $\{A_2, B_2\}$ gives $\mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$; $\{A_1, B_2\}$ against $\{A_2, B_1\}$ gives $\mathbb{M}_+ \oplus \mathbb{M}_-$; and $\{A_1, A_2\}$ against $\{B_1, B_2\}$ gives $\mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$. There are exactly three such pairings of a four-element set into two pairs, so there are exactly three decompositions, and no fourth.</p>
+<p><strong>Intersections.</strong> Two distinct subspaces meet in the blocks they share, so their intersection has dimension $0$, $1$ or $3$, and never $2$ or $4$:</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}}\cap \mathbb{M}_+=A_1,\qquad
+\mathbb{H}_{\mathbb{B}}\cap \mathbb{M}_-=B_1,\qquad
+i\mathbb{H}_{\mathbb{B}}\cap \mathbb{M}_+=B_2,\qquad
+i\mathbb{H}_{\mathbb{B}}\cap \mathbb{M}_-=A_2,
+$$</p>
+<p>and, in the same way,</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}}\cap \mathbb{H}_{\mathbb{B}}=A_1,\qquad
+\mathbb{C}_{\mathbb{B}}\cap i\mathbb{H}_{\mathbb{B}}=A_2,\qquad
+\mathrm{Vect}(\mathbb{B})\cap \mathbb{H}_{\mathbb{B}}=B_1,\qquad
+\mathrm{Vect}(\mathbb{B})\cap i\mathbb{H}_{\mathbb{B}}=B_2,
+$$</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}}\cap \mathbb{M}_+=A_1,\qquad
+\mathbb{C}_{\mathbb{B}}\cap \mathbb{M}_-=A_2,\qquad
+\mathrm{Vect}(\mathbb{B})\cap \mathbb{M}_+=B_2,\qquad
+\mathrm{Vect}(\mathbb{B})\cap \mathbb{M}_-=B_1.
+$$</p>
+<p>The only pairs of distinct subspaces that meet in $\{0\}$ are the three complementary pairs of the three decompositions:</p>
+<p>$$
+\mathbb{M}_+ \cap \mathbb{M}_- = 0, \qquad \mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0, \qquad \mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0.
+$$</p>
+<p>Every pair that is not one of these three shares blocks, hence meets in dimension 1 or 3. Equivalently, in the decomposition $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ the intersections with $\mathbb{M}_+$ and $\mathbb{M}_-$ are</p>
+<p>$$
+\mathbb{M}_+=A_1\oplus B_2, \qquad \mathbb{M}_-=A_2\oplus B_1,
+$$</p>
+<p>which recovers the two displayed factorizations $\mathbb{M}_+ = \mathbb{R} e_0 \oplus \operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ and $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$.</p>
+<p><strong>Action of the conjugations.</strong> The quaternion conjugation $\bar{\cdot}$ commutes with both ${}^*$ and $\dagger$, so it preserves each of the six subspaces, and it acts as $+1$ on the scalar blocks and $-1$ on the vector blocks. Multiplication by the central scalar $i$ interchanges the two summands in every decomposition:</p>
+<p>$$
+i\,\mathbb{H}_{\mathbb{B}}=i\mathbb{H}_{\mathbb{B}},\qquad
+i\,(i\mathbb{H}_{\mathbb{B}})=\mathbb{H}_{\mathbb{B}},
+$$</p>
+<p>and</p>
+<p>$$
+i\,\mathbb{M}_+=\mathbb{M}_-,\qquad
+i\,\mathbb{M}_-=\mathbb{M}_+,
+$$</p>
+<p>and</p>
+<p>$$
+i\,\mathbb{C}_{\mathbb{B}}=\mathbb{C}_{\mathbb{B}},\qquad
+i\,\mathrm{Vect}(\mathbb{B})=\mathrm{Vect}(\mathbb{B}).
+$$</p>
+<p>The complex conjugation ${}^*$ fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, while Hermitian conjugation $\dagger$ fixes $\mathbb{M}_+$ and negates $\mathbb{M}_-$. In particular, it is multiplication by $i$, not quaternion conjugation, that swaps $\mathbb{M}_+$ and $\mathbb{M}_-$; the center and the vector subspace are each stable under it.</p>
+<h2 id="quadratic-forms-and-inner-product">Quadratic Forms and Inner Product</h2>
+<h3 id="the-norm-form">The Norm Form</h3>
+<p>The <strong>norm form</strong> of a biquaternion $\tilde{Q}$ is</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2,
+$$</p>
+<p>where $\bar{\tilde{Q}}$ is the quaternion conjugate. It is a complex number in general. It is not positive-definite, and it can vanish for a nonzero biquaternion. The vanishing of the norm form and the structure of the elements on which it vanishes are the subject of the divisibility article.</p>
+<p>The norm form is <strong>multiplicative</strong>:</p>
+<p>$$
+N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
+$$</p>
+<h3 id="the-hermitian-form">The Hermitian Form</h3>
+<p>The <strong>Hermitian form</strong> of a biquaternion $\tilde{Q}$ is the biquaternion</p>
+<p>$$
+\tilde{Q} \tilde{Q}^\dagger = \sum_{\mu=0}^{3} |Q_\mu|^2 + \text{(vector terms)},
+$$</p>
+<p>where $\tilde{Q}^\dagger$ is the Hermitian conjugate. This is generally a <strong>biquaternion</strong>, not a real scalar: its scalar part is $\sum_\mu |Q_\mu|^2$, but its vector part need not vanish. For example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^\dagger = e_0 + ie_1$ and</p>
+<p>$$
+\tilde{Q}\tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
+$$</p>
+<p>which has a nonzero vector part. The scalar part of the Hermitian form is the quantity that is non-negative:</p>
+<p>$$
+\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu).
+$$</p>
+<p>The scalar part is non-negative, and it vanishes if and only if $\tilde{Q} = 0$. It is the natural "length squared" of $\tilde{Q}$ in the underlying real vector space of dimension 8.</p>
+<p>The corresponding <strong>Euclidean norm</strong> is</p>
+<p>$$
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
+$$</p>
+<p>It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It is <strong>not</strong> multiplicative with respect to the biquaternion product.</p>
+<h3 id="the-inner-product">The Inner Product</h3>
+<p>The <strong>inner product</strong> of two biquaternions $\tilde{P}$ and $\tilde{Q}$ is the complex scalar</p>
+<p>$$
+\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu = \sum_{\mu=0}^{3} (p_\mu q_\mu + p'_\mu q'_\mu) + i \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu).
+$$</p>
+<p>In general this is a <strong>complex number</strong>, not a real one. This is a genuinely biquaternionic feature: the inner product of two biquaternions is complex, and its imaginary part measures the "phase" between them.</p>
+<p>The inner product is linear in the second argument and anti-linear in the first:</p>
+<p>$$
+\langle \lambda \tilde{P}, \tilde{Q} \rangle = \lambda^* \langle \tilde{P}, \tilde{Q} \rangle, \qquad \langle \tilde{P}, \lambda \tilde{Q} \rangle = \lambda \langle \tilde{P}, \tilde{Q} \rangle, \qquad \lambda \in \mathbb{C}.
+$$</p>
+<p>It is <strong>Hermitian</strong> in the sense that</p>
+<p>$$
+\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle,
+$$</p>
+<p>which follows from the definition.</p>
+<p>The inner product of a biquaternion with itself is</p>
+<p>$$
+\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2,
+$$</p>
+<p>which is real and non-negative, and vanishes if and only if $\tilde{Q} = 0$. This is the scalar part of the Hermitian form:</p>
+<p>$$
+\langle \tilde{Q}, \tilde{Q} \rangle = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right).
+$$</p>
+<h3 id="relation-between-the-three-forms">Relation Between the Three Forms</h3>
+<p>The three quadratic objects are related as follows:</p>
+<ul>
+<li><strong>Norm form:</strong> $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Complex-valued in general, can vanish for nonzero $\tilde{Q}$, multiplicative.</li>
+<li><strong>Hermitian form:</strong> $\tilde{Q} \tilde{Q}^\dagger$, a biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ and whose vector part does not in general vanish. Not multiplicative.</li>
+<li><strong>Inner product:</strong> $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$, a complex scalar in general, Hermitian, linear in the second argument. Its diagonal value $\langle \tilde{Q}, \tilde{Q} \rangle = \sum_\mu |Q_\mu|^2$ equals the scalar part of the Hermitian form.</li>
+</ul>
+<p>The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure. The scalar part of the Hermitian form (equivalently, the diagonal value of the inner product) controls the topological structure: continuity, completeness, the Euclidean topology. The full inner product combines the Hermitian pairing on the complex coefficient space with a phase.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative, and not a division algebra.</p>
+<p>It carries four natural conjugations, $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and $\flat = -\dagger$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The <strong>six</strong> distinguished real subspaces are the eigenspaces of those three involutions:</p>
+<ul>
+<li>the <strong>center</strong> $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by $\bar{\cdot}$, a subalgebra isomorphic to $\mathbb{C}$;</li>
+<li>the <strong>vector subspace</strong> $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of $\bar{\cdot}$, the kernel of $\mathrm{Sc}$, and the derived subspace $[\mathbb{B}, \mathbb{B}]$;</li>
+<li>the <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$, of dimension 4, fixed by ${}^{*}$, the subalgebra isomorphic to $\mathbb{H}$;</li>
+<li>the <strong>anti-quaternion subspace</strong> $i\mathbb{H}_{\mathbb{B}}$, of dimension 4, the anti-fixed space of ${}^{*}$, an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra;</li>
+<li>the <strong>Hermitian subspace</strong> $\mathbb{M}_+$, of dimension 4, fixed by $\dagger$;</li>
+<li>the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$, of dimension 4, fixed by $\flat$.</li>
+</ul>
+<p>The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$. They are the three pairings of the four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$, so there is no fourth. Each of the four four-dimensional subspaces is one scalar block plus one vector block; two distinct subspaces meet in dimension $0$, $1$ or $3$, the dimension $0$ occurring exactly for the three complementary pairs.</p>
+<p>On the algebra sit three quadratic objects, kept apart throughout: the <strong>norm form</strong> $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$; the <strong>Hermitian form</strong> $\tilde{Q}\tilde{Q}^\dagger$, a biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex <strong>inner product</strong> $\langle \tilde{P}, \tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value equals that scalar part and which defines the Euclidean norm on $\mathbb{B} \cong \mathbb{R}^8$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Quaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_0 = 1$</td>
+<td>Identity</td>
+</tr>
+<tr>
+<td>$e_1, e_2, e_3$</td>
+<td>Quaternion units, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$, commutes with $e_k$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_\mu Q_\mu e_\mu$</td>
+<td>General biquaternion</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + i q'_\mu$</td>
+<td>Complex coefficient, with $q_\mu, q'_\mu \in \mathbb{R}$</td>
+</tr>
+<tr>
+<td>$Q_0$</td>
+<td>Complex scalar part</td>
+</tr>
+<tr>
+<td>$\mathbf{Q}$</td>
+<td>Complex vector part</td>
+</tr>
+<tr>
+<td>$\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$</td>
+<td>Quaternion conjugate</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$</td>
+<td>Complex conjugate</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^\dagger = Q_0^* e_0 - \mathbf{Q}^*$</td>
+<td>Hermitian conjugate</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^\flat = -\bar{\tilde{Q}}^* = -\tilde{Q}^\dagger$</td>
+<td>Anti-Hermitian conjugate</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu |Q_\mu|^2$</td>
+<td>Scalar part of the Hermitian form</td>
+</tr>
+<tr>
+<td>$\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$</td>
+<td>Inner product</td>
+</tr>
+<tr>
+<td>$\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$</td>
+<td>Euclidean norm</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>Center (complex subspace), fixed-point set of $\bar{\cdot}$; basis $e_0, ie_0$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>Vector subspace, anti-fixed-point set of $\bar{\cdot}$; $\{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\} = [\mathbb{B}, \mathbb{B}]$; basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Quaternion subspace, fixed-point set of ${}^{*}$; basis $e_0, e_1, e_2, e_3$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>Anti-quaternion subspace, anti-fixed-point set of ${}^{*}$; basis $ie_0, ie_1, ie_2, ie_3$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace, fixed-point set of $\dagger$; basis $e_0, ie_1, ie_2, ie_3$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace, fixed-point set of $\flat$; basis $ie_0, e_1, e_2, e_3$</td>
+</tr>
+<tr>
+<td>$A_1, A_2, B_1, B_2$</td>
+<td>The four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original formulation.</li>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

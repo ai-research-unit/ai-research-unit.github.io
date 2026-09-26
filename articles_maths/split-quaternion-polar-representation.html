@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Polar Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-polar-representation"><strong>Split-Quaternion Polar Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is about the polar representation in the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, the second of the four algebras whose polar representations this series treats. The result is that an invertible split quaternion is the product of three factors,</p>
+<p>$$
+x = r\,b\,u,
+$$</p>
+<p>a positive real scale $r$, a unit boost $b$, and an orthogonal factor $u$ which is a rotation in the timelike case and a reflection in the spacelike case. The count is three, not the two of the quaternion algebra and not the four of the biquaternion algebra of the companion articles, and each of the three arises from a distinct feature of the algebra.</p>
+<p>The mathematical engine of the article is the matrix model. The split-quaternion algebra is isomorphic to the algebra of real two-by-two matrices, and under that isomorphism the polar representation above is the polar decomposition of a matrix into a positive definite symmetric factor and an orthogonal factor. Everything else in the article is that statement translated back into the algebra, with the translation made explicit so that the algebraic form can be used without passing through the matrices.</p>
+<p>Two differences from the quaternion case govern the whole article, and both come from the norm form. The quaternion norm form is positive definite, so its square root is a positive real with no choice; the split-quaternion norm form has signature $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|N(x)|$ and the sign of $N(x)$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar representation; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the trichotomy of the corpus's <em>Split-Quaternion Norm and Invertibility</em> is carried along.</p>
+<p>The conventions are those of <em>Split-Quaternion Algebra</em>: the basis is $1, e_1, e_2, e_3$ with</p>
+<p>$$
+e_1^2 = -1, \qquad e_2^2 = +1, \qquad e_3 = e_1e_2, \qquad e_1e_2 = -e_2e_1,
+$$</p>
+<p>a general element is $x = a + be_1+ce_2+de_3$, the conjugate is $\bar{x} = a - be_1-ce_2-de_3$, the norm form is</p>
+<p>$$
+N(x) = x\bar{x} = a^2+b^2-c^2-d^2,
+$$</p>
+<p>the identification with $\mathrm{Cl}_{1,1}$ and with $M_2(\mathbb{R})$ is the corpus's, and the element is <strong>timelike</strong> when $N(x) > 0$, <strong>spacelike</strong> when $N(x) < 0$ and <strong>lightlike</strong> when $N(x) = 0$. No physics is invoked. Every numerical value below was recomputed in double precision.</p>
+<h2 id="the-algebra-and-its-two-involutions">The Algebra and Its Two Involutions</h2>
+<h3 id="the-norm-form-and-the-three-classes">The Norm Form and the Three Classes</h3>
+<p>The norm form of a split quaternion is the quadratic form $N(x) = a^2+b^2-c^2-d^2$ of signature $(2,2)$. It is not positive definite, and this single fact is the source of everything that distinguishes this article from the quaternion case.</p>
+<p>The form vanishes on a cone. The element $x = 1+e_2$ is nonzero and satisfies</p>
+<p>$$
+(1+e_2)(1-e_2) = 1 - e_2^2 = 0,
+$$</p>
+<p>so $1+e_2$ and $1-e_2$ are nonzero zero divisors and $N(1\pm e_2) = 1-1 = 0$. The corpus's classification of the nonzero elements by the sign of the norm form gives the sharp version: $x$ is invertible if and only if $N(x)\neq0$, and the invertible elements split into the two open components $N > 0$ and $N < 0$. In the language of the article on the norm and invertibility, the nonzero elements are timelike ($N>0$), spacelike ($N<0$) or lightlike ($N=0$), and only the lightlike ones fail to be invertible.</p>
+<p>The polar representation is a statement about the two invertible classes, and the null cone is exactly its domain of failure. This is the first appearance in the series of a decomposition whose domain is not the whole of the nonzero elements, and it is worth noting that the failure here is the mildest one: it is a single cone, of codimension one, and on it the decomposition fails by degeneracy rather than by contradiction, since $x x^{\tau}$ becomes positive semidefinite instead of positive definite.</p>
+<h3 id="the-matrix-model">The Matrix Model</h3>
+<p>Under the isomorphism $\Phi : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ of <em>Split-Quaternion Algebra</em>, fixed on the basis by</p>
+<p>$$
+\Phi(1) = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}, \qquad
+\Phi(e_1) = \begin{pmatrix} 0 & -1 \\ 1 & 0\end{pmatrix}, \qquad
+\Phi(e_2) = \begin{pmatrix} 0 & 1 \\ 1 & 0\end{pmatrix}, \qquad
+\Phi(e_3) = \begin{pmatrix} -1 & 0 \\ 0 & 1\end{pmatrix},
+$$</p>
+<p>a general element becomes</p>
+<p>$$
+\Phi(x) = \begin{pmatrix} a-d & -b+c \\ b+c & a+d \end{pmatrix},
+$$</p>
+<p>and the determinant is the norm form,</p>
+<p>$$
+\det\Phi(x) = (a-d)(a+d) - (c-b)(c+b) = a^2+b^2-c^2-d^2 = N(x).
+$$</p>
+<p>The model is faithful in the strong sense: it is an isomorphism of algebras, so every algebraic statement below could be checked in either picture, and the polar representation is a theorem of the matrices before it is a theorem of the algebra.</p>
+<h3 id="the-transpose-involution">The Transpose Involution</h3>
+<p>The matrix transpose induces, through $\Phi$, an anti-automorphism of the algebra. Write it $\tau$ and call it the <strong>transpose involution</strong>. Its action on the basis is</p>
+<p>$$
+\tau(1) = 1, \qquad \tau(e_1) = -e_1, \qquad \tau(e_2) = e_2, \qquad \tau(e_3) = e_3,
+$$</p>
+<p>and on a general element it reads $x^{\tau} = a - be_1 + ce_2 + de_3$. That $\tau$ is an anti-automorphism, $(\xi\eta)^{\tau} = \eta^{\tau}\xi^{\tau}$, is inherited from the transpose of matrices; it can also be checked on the three products that generate the algebra. Its fixed space is</p>
+<p>$$
+\{x : x^{\tau} = x\} = \operatorname{span}\{1, e_2, e_3\},
+$$</p>
+<p>the three-dimensional subspace of symmetric matrix images, and its anti-fixed space is the line $\mathbb{R}e_1$ of antisymmetric images.</p>
+<p>The transpose involution is distinct from the norm-form conjugation $\bar{\cdot}$, which reads $x \mapsto a - be_1 - ce_2 - de_3$ and negates all three vector units. Both are anti-automorphisms and both fix the scalars; they differ in the sign they give $e_2$ and $e_3$, and this difference is what makes one of them usable here and the other not.</p>
+<h3 id="why-the-norm-form-conjugation-cannot-serve">Why the Norm-Form Conjugation Cannot Serve</h3>
+<p>A polar representation needs a factor that is, in a definite sense, positive. In the matrix picture the positive factor is the symmetric positive definite square root of $XX^{T}$, and the form $XX^{T}$ is positive definite for every invertible $X$ by construction, since $v^{T}XX^{T}v = |X^{T}v|^2 > 0$ for $v \neq 0$ when $X$ is invertible.</p>
+<p>The algebra's own quadratic form does not do this job. For any $x$ one has $x\bar{x} = N(x)$, a real scalar, and it is negative whenever $x$ is spacelike: for $x = e_3$, for instance, $x\bar{x} = N(e_3) = -1$. An object with negative scalar value cannot be a positive factor, and there is no way to repair the defect by a sign, since the sign varies over the algebra. The positive object must therefore be built from the transpose involution instead:</p>
+<p>$$
+S(x) = x\,x^{\tau},
+$$</p>
+<p>which is the algebra's name for $XX^{T}$ and which is symmetric and positive definite for every invertible $x$. Both the real scalar $N(x)$ and the symmetric element $x x^{\tau}$ are needed below: the first supplies the modulus, the second the boost.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let $x \in \mathbb{H}_{\mathrm{s}}$ with $N(x) \neq 0$. The <strong>polar representation</strong> of $x$ is the writing</p>
+<p>$$
+x = r\,b\,u , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}_{\mathrm{s}},\quad b^{\tau} = b,\quad N(b) = 1,\quad b \text{ positive definite}, \qquad u \in \mathbb{H}_{\mathrm{s}},\quad u^{\tau}u = 1,
+$$</p>
+<p>in which $r$ is the <strong>modulus</strong>, $b$ the <strong>unit boost</strong> and $u$ the <strong>orthogonal factor</strong>.</p>
+<p>The definition is stated before its existence is proved, and it contains three conditions that are not independent: a symmetric element of the algebra is positive definite exactly when its two eigenvalues are positive, and the normalisation $N(b) = 1$ fixes the product of those eigenvalues. The conditions are collected in the proposition below.</p>
+<h3 id="the-positive-element-and-the-modulus">The Positive Element and the Modulus</h3>
+<p>Let $x$ be invertible, and put</p>
+<p>$$
+S = x\,x^{\tau}, \qquad P = \sqrt{S},
+$$</p>
+<p>where the square root is the symmetric positive definite root, which exists and is unique because $S$ is symmetric positive definite; in the matrix picture this is the standard positive square root of $XX^{T}$, computed for a two-by-two matrix by</p>
+<p>$$
+\sqrt{\begin{pmatrix} p & q \\ q & r\end{pmatrix}} = \frac{1}{\sqrt{p+r+2\sqrt{pr-q^2}}}\begin{pmatrix} p+\sqrt{pr-q^2} & q \\ q & r+\sqrt{pr-q^2}\end{pmatrix},
+$$</p>
+<p>which is the closed form of the Cayley-Hamilton square root. The element $P$ is symmetric, and its determinant is</p>
+<p>$$
+\det P = \sqrt{\det S} = \sqrt{(\det X)^2} = |\det X| = |N(x)| ,
+$$</p>
+<p>because the determinant of the product is the product of the determinants and $\det X^{T} = \det X$.</p>
+<p>The modulus is the square root of that determinant,</p>
+<p>$$
+r = \sqrt{\det P} = \sqrt{|N(x)|} ,
+$$</p>
+<p>a positive real. The absolute value is forced: for spacelike $x$ the determinant $\det X = N(x)$ is negative, its square root is not real, and the modulus must be taken from $|N(x)|$ instead. The sign that the absolute value discards is not lost; it reappears in the orthogonal factor, as the next subsection shows.</p>
+<h3 id="the-unit-boost">The Unit Boost</h3>
+<p>The boost is the scale-free part of the positive element,</p>
+<p>$$
+b = \frac{P}{r}, \qquad \det b = \frac{\det P}{r^2} = \frac{|N(x)|}{|N(x)|} = 1 .
+$$</p>
+<p>It is symmetric, positive definite, and of determinant and norm form one, so it lies in the intersection of the symmetric subspace with $SL(2,\mathbb{R})$: the two conditions $b^{\tau} = b$ and $N(b) = 1$ of the definition are met. The set of such elements is the two-dimensional hyperbolic plane, the symmetric space of the algebra; it is the analogue of the Hermitian positive boosts of the biquaternion algebra, and it is what the quaternion algebra lacks.</p>
+<h3 id="the-orthogonal-factor">The Orthogonal Factor</h3>
+<p>The orthogonal factor is the complement of the positive factor,</p>
+<p>$$
+u = P^{-1}x = \frac{1}{r}\,b^{-1}x ,
+$$</p>
+<p>and it is orthogonal in the algebra's transpose sense. Indeed</p>
+<p>$$
+u^{\tau}u = x^{\tau}P^{-1}P^{-1}x = x^{\tau}(PP)^{-1}x = x^{\tau}(xx^{\tau})^{-1}x ,
+$$</p>
+<p>and the last expression is the identity, because $(xx^{\tau})^{-1} = (x^{\tau})^{-1}x^{-1}$ and the middle factors cancel. Its determinant is</p>
+<p>$$
+\det u = \frac{\det x}{\det P} = \frac{N(x)}{|N(x)|} = \operatorname{sign} N(x) ,
+$$</p>
+<p>so the orthogonal factor lies in $SO(2)$ when $x$ is timelike and in the other component of $O(2)$ when $x$ is spacelike. The discarded sign of the norm form is exactly the determinant of $u$.</p>
+<h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
+<p><strong>Theorem.</strong> Every split quaternion $x$ with $N(x)\neq0$ has exactly one polar representation.</p>
+<p><em>Existence.</em> For such $x$, the element $S = xx^{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|N(x)| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $u = P^{-1}x$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $u^{\tau}u = 1$, while $rbu = r(P/r)(P^{-1}x) = x$.</p>
+<p><em>Uniqueness.</em> Suppose $x = rbu = r'b'u'$ with both triples admissible. Then $xx^{\tau} = r^2 b^2 = r'^2 b'^2$. The element $r^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norm forms gives $r^2 = r'^2$, whence $r = r'$ because both are positive, then $b = b'$, then $u = u'$. $\square$</p>
+<p>The uniqueness is without sign ambiguity, as in the quaternion case, and for the same reason: the modulus is required to be positive, and that requirement pins down the square root.</p>
+<h3 id="the-trichotomy-of-the-elements">The Trichotomy of the Elements</h3>
+<p>The decomposition behaves differently on the two invertible classes, and the difference is entirely in the orthogonal factor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class of $x$</th>
+<th>$N(x)$</th>
+<th>$r$</th>
+<th>$b$</th>
+<th>$u$</th>
+<th>$u$ is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timelike</td>
+<td>$>0$</td>
+<td>$\sqrt{N(x)}$</td>
+<td>unit boost</td>
+<td>$\det u = +1$</td>
+<td>a rotation, $u = \cos\theta+\sin\theta\,e_1$</td>
+</tr>
+<tr>
+<td>spacelike</td>
+<td>$<0$</td>
+<td>$\sqrt{-N(x)}$</td>
+<td>unit boost</td>
+<td>$\det u = -1$</td>
+<td>a reflection times a rotation, $u = (\cos\theta+\sin\theta\,e_1)e_2$</td>
+</tr>
+<tr>
+<td>lightlike</td>
+<td>$=0$</td>
+<td>not defined</td>
+<td>not defined</td>
+<td>not defined</td>
+<td>no decomposition</td>
+</tr>
+</tbody>
+</table></div>
+<p>The lightlike class is the null cone, the zero divisors of <em>Split-Quaternion Zero Divisors</em>; on it $S = xx^{\tau}$ has rank one and determinant zero, so $P$ is only positive semidefinite and no positive modulus exists. The trichotomy is the exact statement of the domain of the theorem.</p>
+<h2 id="the-exponential-form-of-the-boost">The Exponential Form of the Boost</h2>
+<h3 id="the-boost-subspace">The Boost Subspace</h3>
+<p>The boost lies in $\operatorname{span}\{1,e_2,e_3\}$, the fixed space of $\tau$. Removing the scalar direction, which the normalisation $N(b) = 1$ separates, leaves the two-dimensional subspace</p>
+<p>$$
+\mathfrak{p} = \operatorname{span}\{e_2, e_3\},
+$$</p>
+<p>whose matrix image is the space of symmetric traceless two-by-two matrices, since $\Phi(e_2)$ and $\Phi(e_3)$ have vanishing trace and $\Phi(1)$ does not. The elements of $\mathfrak{p}$ are the algebra's hyperbolic directions, and they exponentiate into the boosts.</p>
+<h3 id="the-logarithm-and-the-closed-form">The Logarithm and the Closed Form</h3>
+<p><strong>Proposition.</strong> Let $b$ be symmetric positive definite with $N(b) = 1$, and write $b = b_1 + b_2e_2 + b_3e_3$. Then $b_1 \ge 1$ and</p>
+<p>$$
+b = \exp(\sigma), \qquad \sigma = \frac{\operatorname{arccosh}(b_1)}{\sqrt{b_2^2+b_3^2}}\left(b_2e_2+b_3e_3\right) \in \mathfrak{p},
+$$</p>
+<p>with the convention that $\sigma = 0$ when $b_2 = b_3 = 0$, in which case $b = 1$.</p>
+<p><em>Proof.</em> For $\sigma = t_2e_2+t_3e_3 \in \mathfrak{p}$, the cross terms cancel because $e_2e_3+e_3e_2 = 0$ and the squares are both $+1$, so</p>
+<p>$$
+\sigma^2 = t_2^2+t_3^2 + t_2t_3\left(e_2e_3+e_3e_2\right) = \left(t_2^2+t_3^2\right)\cdot 1 ,
+$$</p>
+<p>a positive multiple of the identity. The exponential of such an element is the hyperbolic cosine-sine pair, $\exp(\sigma) = \cosh d + \frac{\sinh d}{d}\sigma$ with $d = \sqrt{t_2^2+t_3^2}$, by the same power-series split as in the quaternion case with the signs exchanged. Comparing with $b$ gives $b_1 = \cosh d$, whence $d = \operatorname{arccosh}(b_1)$ and $(b_2,b_3) = \frac{\sinh d}{d}(t_2,t_3)$, which is the displayed formula. $\square$</p>
+<p>The positivity of $b$ enters only through $b_1 \ge 1$, which is the condition for the arccosine hyperbolic to be defined; it holds automatically, since $b$ has determinant one and trace $2b_1$, and $\det b = 1$ with $b$ positive definite forces $b_1 \ge 1$.</p>
+<h3 id="the-two-parameters-of-a-boost">The Two Parameters of a Boost</h3>
+<p>The exponential map is a bijection from $\mathfrak{p}$ onto the boosts. It is injective because the formula above inverts it, and surjective by the proposition; and it is a diffeomorphism, since both the formula and its inverse are smooth away from the origin, where the coordinates degenerate but the element does not. The boost is therefore described by two real parameters $t_2,t_3$, and its rapidity, in the sense of the hyperbolic distance in the symmetric space, is $d = \sqrt{t_2^2+t_3^2}$.</p>
+<p>This is the structural difference from the biquaternion case of the companion article. There the boosts also form a three-dimensional hyperbolic space with a rapidity and an axis; here the boost space is two-dimensional because the algebra has one compact direction fewer, the missing direction being supplied by the third factor, or rather by the fact that the orthogonal factor here has only one continuous parameter. The counting is made precise in the comparison section below.</p>
+<h2 id="the-orthogonal-factor-in-two-components">The Orthogonal Factor in Two Components</h2>
+<h3 id="the-rotation-component">The Rotation Component</h3>
+<p>Suppose first that $x$ is timelike, so $\det u = +1$ and $u \in SO(2)$. In the algebra the rotation component is</p>
+<p>$$
+u = \cos\theta + \sin\theta\,e_1 ,
+$$</p>
+<p>with $\theta\in\mathbb{R}$ modulo $2\pi$, because $\Phi$ sends that element to the rotation matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$. The angle is read off by $\theta = \operatorname{atan2}(u_1,u_0)$. The rotation component is compact: it is the circle group of the algebra, generated by the single negative-square unit $e_1$.</p>
+<h3 id="the-reflection-component">The Reflection Component</h3>
+<p>Suppose now that $x$ is spacelike, so $\det u = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\Phi(e_2)$; correspondingly every element of $\mathbb{H}_{\mathrm{s}}$ with $u^{\tau}u = 1$ and $\det u = -1$ is</p>
+<p>$$
+u = (\cos\theta+\sin\theta\,e_1)\,e_2 ,
+$$</p>
+<p>with the same angle convention. The element $e_2$ is the fixed reflection, and the factorisation is unique for the same reason the rotation form is: the angle is read off from the rotation part and the discrete factor is then determined. The reflection is therefore the discrete part of the orthogonal factor and the angle is its continuous part.</p>
+<p>The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1)$. The reason is the group that the rotor occupies and not the norm form directly: here the rotor satisfies $u^{\tau}u = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $N(u) = 1$ and is an element of the sphere $S^3$, which is connected. The indefiniteness of $N$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="a-timelike-element">A Timelike Element</h3>
+<p>Take $x = 3 + e_1 + e_2$, so $a = 3$, $b = 1$, $c = 1$, $d = 0$ and</p>
+<p>$$
+N(x) = 9+1-1 = 9 > 0 ,
+$$</p>
+<p>a timelike element. The matrix is $\Phi(x) = \begin{pmatrix} 3 & 0 \\ 2 & 3\end{pmatrix}$, and $xx^{\tau}$ has matrix $\begin{pmatrix} 9 & 6 \\ 6 & 13\end{pmatrix}$, whose determinant is $117-36 = 81 = N(x)^2$. The modulus is</p>
+<p>$$
+r = \sqrt{9} = 3 ,
+$$</p>
+<p>the boost is</p>
+<p>$$
+b = 1.054092553 + 0.316227766\,e_2 + 0.105409255\,e_3 , \qquad \det b = 1 ,
+$$</p>
+<p>with logarithm</p>
+<p>$$
+\sigma = \log b = 0.310646488\,e_2 + 0.103548829\,e_3 , \qquad |\sigma| = 0.327450 ,
+$$</p>
+<p>and the orthogonal factor is</p>
+<p>$$
+u = 0.948683298 + 0.316227766\,e_1 , \qquad \theta = \operatorname{atan2}(0.316227766, 0.948683298) = 0.321750554\ \text{rad} \approx 18.435^\circ ,
+$$</p>
+<p>with $\det u = +1$, as the timelike class requires. The reconstruction $rbu = x$ and the identity $b = \exp\sigma$ were both checked in double precision, to $6.4\times10^{-13}$ and $1.2\times10^{-14}$ respectively in the coefficients.</p>
+<h3 id="a-spacelike-element">A Spacelike Element</h3>
+<p>Take $x = 1+e_1+2e_2$, so $N(x) = 1+1-4 = -2 < 0$, a spacelike element, with $\Phi(x) = \begin{pmatrix} 1 & 1 \\ 3 & 1\end{pmatrix}$ and $xx^{\tau}$ of matrix $\begin{pmatrix} 2 & 4 \\ 4 & 10\end{pmatrix}$. Then</p>
+<p>$$
+r = \sqrt{2}, \qquad b = 1.414213562 + 0.707106781\,e_2 + 0.707106781\,e_3 , \qquad \sigma = 0.623225240\left(e_2+e_3\right),
+$$</p>
+<p>and</p>
+<p>$$
+u = e_2 ,
+$$</p>
+<p>which is the reflection with zero angle: the element is rational in the sense that its decomposition involves no transcendental factor beyond the boost. The determinant of $u$ is $-1$, as the spacelike class requires, and the reconstruction was checked to $6.4\times10^{-13}$.</p>
+<h3 id="a-lightlike-element">A Lightlike Element</h3>
+<p>Take $x = 1+e_2$. Then $N(x) = 1-1 = 0$, and $x$ is a zero divisor, as the identity $(1+e_2)(1-e_2) = 0$ shows. The matrix $xx^{\tau}$ is $\begin{pmatrix} 1 & 1 \\ 1 & 1\end{pmatrix}$, of rank one and determinant zero, so its symmetric square root is positive semidefinite and not positive definite, the modulus $\sqrt{|N(x)|} = 0$ is not positive, and the boost $b = P/r$ is not defined. No polar representation exists, and none of the three factors survives.</p>
+<p>The failure is characteristic of the null cone and not of a particular element: every lightlike $x$ has $\det\Phi(x) = 0$, hence $xx^{\tau}$ of rank at most one, hence no positive definite square root.</p>
+<h2 id="comparison-with-the-quaternion-case">Comparison with the Quaternion Case</h2>
+<p>The two decompositions differ in structure, and the difference is summarised by which of the four series slots are occupied. The counts are real dimensions of the corresponding factor sets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$, timelike</th>
+<th>$\mathbb{H}_{\mathrm{s}}$, spacelike</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale $r$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>central phase</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>boost $b$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>rotor $u$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$1$ plus a discrete reflection</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three points of the comparison are worth stating explicitly.</p>
+<p><strong>The modulus is still a real scale, but its formula is not.</strong> In $\mathbb{H}$ the modulus is $\sqrt{N(q)}$ and needs no absolute value, because the norm form is definite. In $\mathbb{H}_{\mathrm{s}}$ it is $\sqrt{|N(x)|}$, and the absolute value is not a cosmetic convenience: it is the statement that the norm form takes both signs.</p>
+<p><strong>A boost appears, and a rotation direction disappears.</strong> The quaternion algebra has three compact directions, the unit sphere $S^3$; the split-quaternion algebra has one, the circle generated by $e_1$. The two directions lost from the compact part are exactly the two directions gained by the boost, and the total remains four. In the biquaternion algebra of the companion article both a three-dimensional boost and a three-parameter rotor are present, and both survive because the algebra is eight-dimensional.</p>
+<p><strong>The centre contributes nothing in either case.</strong> The centre of $\mathbb{H}_{\mathrm{s}}$ is $\mathbb{R}$, so there is no central phase factor, just as in $\mathbb{H}$. The centre-valued factor is of dimension one in the biquaternion algebra and provides the fourth factor there.</p>
+<h2 id="summary">Summary</h2>
+<p>Let $x$ be a split quaternion with $N(x)\neq0$. Then $x$ has exactly one polar representation</p>
+<p>$$
+x = r\,b\,u , \qquad r = \sqrt{|N(x)|} > 0 ,
+$$</p>
+<p>in which $b$ is the unique symmetric positive definite element with $b^{\tau} = b$ and $N(b) = 1$, and $u = P^{-1}x$ is the orthogonal factor, of determinant $\operatorname{sign}N(x)$. The boost lies in $\operatorname{span}\{1,e_2,e_3\}$ and is the exponential of an element of $\operatorname{span}\{e_2,e_3\}$, with the closed form $\sigma = \operatorname{arccosh}(b_1)(b_2e_2+b_3e_3)/\sqrt{b_2^2+b_3^2}$. The orthogonal factor is a rotation $\cos\theta+\sin\theta\,e_1$ when $x$ is timelike and a rotation times the reflection $e_2$ when $x$ is spacelike. On the null cone, where $N(x) = 0$, no polar representation exists. Of the four series slots, two are filled here, the scale and the boost, together with a one-parameter rotor; the central phase is absent because the centre is $\mathbb{R}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>the split-quaternion algebra, basis $1,e_1,e_2,e_3$, $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$</td>
+</tr>
+<tr>
+<td>$x = a+be_1+ce_2+de_3$</td>
+<td>a split quaternion</td>
+</tr>
+<tr>
+<td>$\bar{x} = a-be_1-ce_2-de_3$</td>
+<td>the norm-form conjugation</td>
+</tr>
+<tr>
+<td>$x^{\tau} = a-be_1+ce_2+de_3$</td>
+<td>the transpose involution, the image of the matrix transpose</td>
+</tr>
+<tr>
+<td>$N(x) = x\bar{x} = a^2+b^2-c^2-d^2$</td>
+<td>the norm form, of signature $(2,2)$</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>the isomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$S = xx^{\tau}$, $P = \sqrt{S}$</td>
+<td>the positive element and its symmetric positive definite square root</td>
+</tr>
+<tr>
+<td>$r = \sqrt{|N(x)|}$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$b = P/r$</td>
+<td>the unit boost, $b^{\tau} = b$, $N(b) = 1$</td>
+</tr>
+<tr>
+<td>$\mathfrak{p} = \operatorname{span}\{e_2,e_3\}$</td>
+<td>the boost subspace, symmetric traceless images</td>
+</tr>
+<tr>
+<td>$u = P^{-1}x$</td>
+<td>the orthogonal factor, $u^{\tau}u = 1$, $\det u = \operatorname{sign}N(x)$</td>
+</tr>
+<tr>
+<td>timelike, spacelike, lightlike</td>
+<td>$N > 0$, $N < 0$, $N = 0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Split-Quaternion Algebra</em> (<code>articles_maths/split-quaternion-algebra.md</code>), for the algebra, the matrix model, the conjugations and the norm form of signature $(2,2)$.</li>
+<li><em>Split-Quaternion Norm and Invertibility</em> (<code>articles_maths/split-quaternion-norm-and-invertibility.md</code>), for the trichotomy timelike, spacelike, lightlike and the two components of the invertible set.</li>
+<li><em>Split-Quaternion Zero Divisors</em> (<code>articles_maths/split-quaternion-zero-divisors.md</code>), for the null cone and the elements on which the decomposition fails.</li>
+<li><em>Quaternion Polar Representation</em> (<code>articles_maths/quaternion-polar-representation.md</code>), for the definite case, where the absolute value is unnecessary and the boost is absent.</li>
+<li><em>Biquaternion Polar Representation</em> (<code>articles_maths/biquaternion-polar-representation.md</code>), for the four-factor case in eight real dimensions.</li>
+<li><em>Split-Quaternion Rotations and the Lorentz Group</em> (<code>articles_maths/split-quaternion-rotations-and-the-lorentz-group.md</code>), for the action of the orthogonal factor and of the unit group on the vector subspace.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

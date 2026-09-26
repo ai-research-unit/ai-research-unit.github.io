@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Special Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-special-functions"><strong>List of Special Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the special functions the corpus introduces. A special function is a named solution of a differential equation or of a functional equation that the elementary functions do not solve, and a row below names one, records the equation it satisfies and the family it belongs to, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The functions are grouped by the layer that introduces them: the elementary transcendentals, which are the degenerate cases against which the others are measured; the gamma and beta family and the error functions; the zeta and number-theoretic functions; the orthogonal polynomials and spherical functions; the Bessel, Airy and hypergeometric functions; and the elliptic integrals and elliptic functions. The rows that record a boundary — the Lambert $W$, which satisfies no linear equation; the gamma function, which has no zeros; the elliptic functions, which are not single-valued without their lattice — stand beside them as non-examples.</p>
+<h2 id="the-elementary-transcendental-functions">The Elementary Transcendental Functions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The equation it solves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the exponential $e^x$</td>
+<td>$y' = y$, $y(0) = 1$; the sum $\sum x^n/n!$</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the logarithm $\ln x$</td>
+<td>$y' = 1/x$, $y(1) = 0$; the inverse of the exponential</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the trigonometric functions $\sin$, $\cos$</td>
+<td>$y'' + y = 0$; defined by their power series and the differential system</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the hyperbolic functions $\sinh$, $\cosh$, $\tanh$</td>
+<td>$y'' - y = 0$; the exponential in its even and odd parts</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the inverse trigonometric and inverse hyperbolic functions</td>
+<td>the equations $y' = 1/\sqrt{1-x^2}$, $y' = 1/\sqrt{1+x^2}$</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>general powers $a^x$</td>
+<td>$y' = (\ln a) y$; the composition of the exponential and the logarithm</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the complex exponential, logarithm and trigonometric functions</td>
+<td>the same equations, with the multi-valuedness of the logarithm on $\mathbb C^\times$</td>
+<td><em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the Lambert $W$</td>
+<td>$W e^W = x$; a functional equation, not a linear differential equation</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-gamma-and-beta-family">The Gamma and Beta Family</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The equation or the functional equation it satisfies</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the gamma function $\Gamma$</td>
+<td>$\Gamma(z+1) = z\Gamma(z)$, $\Gamma(1) = 1$; the integral $\int_0^\infty t^{z-1}e^{-t}dt$</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the beta function $B$</td>
+<td>$B(x,y) = \Gamma(x)\Gamma(y)/\Gamma(x+y)$; the integral over the simplex</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the digamma function $\psi$</td>
+<td>$\psi = \Gamma'/\Gamma$, the logarithmic derivative of the gamma function</td>
+<td><em>Dual-Numbers Special Functions</em></td>
+</tr>
+<tr>
+<td>the error function $\operatorname{erf}$</td>
+<td>$\operatorname{erf}' = 2e^{-x^2}/\sqrt\pi$; the incomplete gamma of order $1/2$</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the complementary and imaginary error functions</td>
+<td>the complements and the analytic continuation of $\operatorname{erf}$</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Dawson function</td>
+<td>$F' + 2xF = 1$; the imaginary error function</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Fresnel integrals</td>
+<td>$C' = \cos(\pi x^2/2)$, $S' = \sin(\pi x^2/2)$</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the incomplete gamma and beta functions</td>
+<td>the integral representations $\gamma(s,x)$, $B(x;a,b)$, and their functional equations</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the regularised incomplete gamma and beta functions</td>
+<td>the ratios $P$, $Q$ and $I_x(a,b)$, with values in $[0,1]$</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-zeta-and-number-theoretic-functions">The Zeta and Number-Theoretic Functions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The equation or the product it satisfies</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Riemann zeta function $\zeta$</td>
+<td>the functional equation relating $\zeta(s)$ and $\zeta(1-s)$; the Euler product over the primes</td>
+<td><em>Zeta Functions</em>; <em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Dirichlet eta function $\eta$</td>
+<td>$\eta(s) = (1-2^{1-s})\zeta(s)$; the alternating series</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>a Dirichlet $L$-function</td>
+<td>the functional equation of the character, and the Euler product</td>
+<td><em>Zeta Functions</em>; <em>Analytic Number Theory</em></td>
+</tr>
+<tr>
+<td>the Bernoulli numbers $B_n$</td>
+<td>the generating function $t/(e^t-1) = \sum B_n t^n/n!$</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Bernoulli polynomials</td>
+<td>$B_n(x+1) - B_n(x) = nx^{n-1}$; the generating function</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Euler numbers $E_n$</td>
+<td>$\operatorname{sech} t = \sum E_n t^n/n!$; the tangent numbers</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Möbius and Euler totient functions</td>
+<td>the Dirichlet convolution $\mu * 1 = \varepsilon$, and the Dirichlet series</td>
+<td><em>Combinatorial Functions and Generating Functions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="orthogonal-polynomials-and-spherical-functions">Orthogonal Polynomials and Spherical Functions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The differential equation it solves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Legendre polynomials $P_n$</td>
+<td>$(1-x^2)y'' - 2xy' + n(n+1)y = 0$; the Legendre equation</td>
+<td><em>Real Special Functions</em>; <em>Ordinary Differential Equations</em></td>
+</tr>
+<tr>
+<td>the Chebyshev polynomials $T_n$</td>
+<td>$(1-x^2)y'' - xy' + n^2y = 0$; the Chebyshev equation</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the Hermite polynomials $H_n$</td>
+<td>$y'' - 2xy' + 2ny = 0$; the Hermite equation, and the Fourier transform's eigenfunctions</td>
+<td><em>Real Special Functions</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>the Laguerre polynomials $L_n$</td>
+<td>$xy'' + (1-x)y' + ny = 0$; the Laguerre equation</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the Gegenbauer polynomials $C_n^{(\lambda)}$</td>
+<td>the Gegenbauer equation; the Chebyshev and Legendre cases at $\lambda = 1$ and $\lambda = 1/2$</td>
+<td><em>Symmetric Tensors and Spherical Harmonics</em></td>
+</tr>
+<tr>
+<td>the associated Legendre functions $P_n^m$</td>
+<td>the associated Legendre equation, with the $(1-x^2)^{-m/2}$ factor</td>
+<td><em>Symmetric Tensors and Spherical Harmonics</em></td>
+</tr>
+<tr>
+<td>the spherical harmonics $Y_l^m$</td>
+<td>the Laplace equation on the sphere; the eigenfunctions of the spherical Laplacian</td>
+<td><em>Symmetric Tensors and Spherical Harmonics</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="bessel-airy-and-hypergeometric-functions">Bessel, Airy and Hypergeometric Functions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The equation it solves</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Bessel function $J_\nu$</td>
+<td>$x^2y'' + xy' + (x^2-\nu^2)y = 0$; Bessel's equation</td>
+<td><em>Real Special Functions</em>; <em>Ordinary Differential Equations</em></td>
+</tr>
+<tr>
+<td>the Bessel function of the second kind $Y_\nu$</td>
+<td>the same equation, the second solution at an integer order</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the modified Bessel functions $I_\nu$, $K_\nu$</td>
+<td>$x^2y'' + xy' - (x^2+\nu^2)y = 0$</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Airy function $\operatorname{Ai}$</td>
+<td>$y'' - xy = 0$; the Airy equation, solved by the Fourier integral</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the hypergeometric function ${}_2F_1$</td>
+<td>the hypergeometric equation $x(1-x)y'' + (c-(a+b+1)x)y' - aby = 0$</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the confluent hypergeometric and Whittaker functions</td>
+<td>the confluent equation obtained as $c \to \infty$</td>
+<td><em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the generalised hypergeometric function ${}_pF_q$</td>
+<td>the generalised equation of order $p$, $q$</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the complete elliptic integrals $K$, $E$</td>
+<td>the hypergeometric cases ${}_2F_1(1/2,1/2;1;m)$ and ${}_2F_1(-1/2,1/2;1;m)$</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="elliptic-integrals-and-elliptic-functions">Elliptic Integrals and Elliptic Functions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The equation or the property it satisfies</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the incomplete elliptic integrals $F$, $E$, $\Pi$</td>
+<td>the integral forms, and the addition theorems of the elliptic theory</td>
+<td><em>Real Special Functions</em>; <em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the Jacobi elliptic functions $\operatorname{sn}$, $\operatorname{cn}$, $\operatorname{dn}$</td>
+<td>the addition theorems and the double periodicity in the lattice</td>
+<td><em>Elliptic Functions and Integrals</em> (planned)</td>
+</tr>
+<tr>
+<td>the Weierstrass function $\wp$</td>
+<td>$\wp'^2 = 4\wp^3 - g_2\wp - g_3$; the associated elliptic curve</td>
+<td><em>Elliptic Functions and Integrals</em> (planned)</td>
+</tr>
+<tr>
+<td>the elliptic modular function $j$</td>
+<td>the modular invariance $j(\gamma\tau) = j(\tau)$ and the $j$-invariant of the curve</td>
+<td><em>Elliptic Functions and Integrals</em> (planned)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="boundary-cases">Boundary Cases</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The boundary it records</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the gamma function at its poles</td>
+<td>has simple poles at $0,-1,-2,\dots$ and no zeros; the reciprocal $1/\Gamma$ is entire</td>
+<td><em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>the elementary functions as hypergeometric cases</td>
+<td>the exponential, the logarithm and the trigonometric functions are degenerate ${}_2F_1$ cases, which is why they carry no independent equation</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Lambert $W$</td>
+<td>satisfies a functional equation, not a linear differential equation, and is multiply valued</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the Bessel functions at an integer order</td>
+<td>the second solution $Y_n$ requires the limit of $Y_\nu$, the logarithmic case</td>
+<td><em>Real Special Functions</em></td>
+</tr>
+<tr>
+<td>the elliptic functions</td>
+<td>not single-valued on $\mathbb C$; defined on the torus $\mathbb C/\Lambda$ by their lattice</td>
+<td><em>Elliptic Functions and Integrals</em> (planned)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the special functions of the corpus: the elementary transcendentals and the Lambert $W$; the gamma, beta, error, incomplete and Fresnel functions; the zeta function with its Dirichlet relatives and the Bernoulli and Euler numbers; the Legendre, Chebyshev, Hermite, Laguerre, Gegenbauer and spherical functions; the Bessel, Airy and hypergeometric functions; and the elliptic integrals, with the elliptic functions that the planned article introduces. Each row records the equation the function solves, and the closing table records the boundaries of the class.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects are named by their standard letters; the few symbols used in the tables are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Gamma$, $B$</td>
+<td>the gamma and beta functions</td>
+</tr>
+<tr>
+<td>$\zeta$, $\eta$, $L(s,\chi)$</td>
+<td>the Riemann zeta, Dirichlet eta and Dirichlet $L$-functions</td>
+</tr>
+<tr>
+<td>$P_n, T_n, H_n, L_n$</td>
+<td>Legendre, Chebyshev, Hermite, Laguerre polynomials</td>
+</tr>
+<tr>
+<td>$J_\nu$, $I_\nu$, $\operatorname{Ai}$</td>
+<td>Bessel, modified Bessel and Airy functions</td>
+</tr>
+<tr>
+<td>${}_2F_1$, ${}_pF_q$</td>
+<td>hypergeometric and generalised hypergeometric functions</td>
+</tr>
+<tr>
+<td>$K$, $E$, $\Pi$</td>
+<td>complete and incomplete elliptic integrals</td>
+</tr>
+<tr>
+<td>$W$</td>
+<td>the Lambert $W$ function</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Milton Abramowitz and Irene A. Stegun, <em>Handbook of Mathematical Functions</em> (National Bureau of Standards, 1964; reprinted Dover, 1965), for the catalogue of the elementary and higher special functions with their equations.</li>
+<li>Edmund T. Whittaker and George N. Watson, <em>A Course of Modern Analysis</em>, 4th ed. (Cambridge University Press, 1927), for the gamma, hypergeometric, Bessel and elliptic functions treated from their differential equations.</li>
+<li>NIST Digital Library of Mathematical Functions, released at <a href="https://dlmf.nist.gov/">https://dlmf.nist.gov/</a>, for the modern reference tables of the special functions and their recurrences.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

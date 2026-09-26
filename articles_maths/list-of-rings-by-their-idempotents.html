@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Rings by Their Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-rings-by-their-idempotents"><strong>List of Rings by Their Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the rings of the corpus by their idempotents — the elements $e$ with $e^2 = e$ — the direct sum decompositions those idempotents induce, the Peirce decomposition of a module or an algebra relative to an orthogonal family of them, and the two extreme cases: the von Neumann regular rings, in which every ideal is idempotent-generated, and the domains and local rings, in which the only idempotents are $0$ and $1$. Every entry points to the article that introduces the object.</p>
+<p>The idempotents of a ring are indifferent to its additive and ideal structure and sensitive to its decomposition: a nontrivial idempotent $e$ with $e \neq 0, 1$ splits the ring as $R = Re \oplus R(1-e)$ and its module as $M = eM \oplus (1-e)M$, while a ring with no nontrivial idempotent is indecomposable and is called connected. The list records each ring with its idempotents, with the decomposition they give, and with the corner algebra $eRe$ that the Peirce decomposition isolates.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="the-idempotents-of-each-ring">The Idempotents of Each Ring</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The idempotents</th>
+<th>Their number</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a field $k$</td>
+<td>$0, 1$</td>
+<td>$2$</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>a domain $R$</td>
+<td>$0, 1$</td>
+<td>$2$</td>
+<td><em>Integral Domains</em></td>
+</tr>
+<tr>
+<td>a local ring</td>
+<td>$0, 1$</td>
+<td>$2$</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, a division ring</td>
+<td>$0, 1$</td>
+<td>$2$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>$0, 1$</td>
+<td>$2$</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p^n\mathbb{Z}$</td>
+<td>$0, 1$</td>
+<td>$2$</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>$0, 1$</td>
+<td>$2$</td>
+<td><em>Dual-Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x+1)^2$</td>
+<td>$0, 1$</td>
+<td>$2$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$0, 1, 3, 4$</td>
+<td>$4$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/12\mathbb{Z}$</td>
+<td>$0, 1, 4, 9$</td>
+<td>$4$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>one for each factorisation into coprime parts</td>
+<td>$2^{\omega(n)}$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D} = \mathbb{R}[j]/(j^2-1)$</td>
+<td>$0, 1, e_+, e_-$</td>
+<td>$4$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}[x]/(x^2-1)$</td>
+<td>$0, 1$, the two class idempotents</td>
+<td>$4$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, the split-biquaternions</td>
+<td>$0, e_+, e_-, e_0$</td>
+<td>$4$</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}[C_3]$</td>
+<td>$0, 1$ and the two minimal ones</td>
+<td>$4$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>the projections</td>
+<td>infinitely many</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, the biquaternions</td>
+<td>the complex multiples of the idempotents</td>
+<td>infinitely many</td>
+<td><em>Biquaternion Ideals and Peirce Decomposition</em></td>
+</tr>
+<tr>
+<td>a Boolean ring $B$</td>
+<td>every element</td>
+<td>$\lvert B \rvert$</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The dichotomy the table records is between the rings that are connected, with $0$ and $1$ as their only idempotents, and the rings that split. The domains, the fields, the division rings and the local rings are connected; $\mathbb{Z}/n\mathbb{Z}$ has $2^{\omega(n)}$ idempotents, where $\omega(n)$ counts the distinct primes dividing $n$, so $\mathbb{Z}/6\mathbb{Z}$ and $\mathbb{Z}/12\mathbb{Z}$ have four; and the Boolean rings have an idempotent for every element. The split-biquaternions and the split-complex numbers have exactly four idempotents each, and $\mathbb{H}$ has two, which is the sharpest contrast between the quaternion family and its split relatives.</p>
+<h2 id="the-direct-sum-decompositions">The Direct Sum Decompositions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The idempotent $e$</th>
+<th>The decomposition</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>any ring</td>
+<td>$e$</td>
+<td>$R = Re \oplus R(1-e)$</td>
+<td><em>Rings</em>, §§8–9</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$3$</td>
+<td>$\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$e_+$</td>
+<td>$\mathbb{D} \cong \mathbb{R} e_+ \oplus \mathbb{R} e_- \cong \mathbb{R} \times \mathbb{R}$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>$e_+$</td>
+<td>$\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}e_+ \oplus \mathbb{H}e_-$</td>
+<td><em>Split-Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$R \times S$</td>
+<td>$(1,0)$</td>
+<td>the product by construction</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}[C_3]$</td>
+<td>the minimal idempotents</td>
+<td>$\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}[x]/(x^2-1)$</td>
+<td>$e_{\pm}$</td>
+<td>$\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>a Boolean ring $B$</td>
+<td>every idempotent $e$</td>
+<td>$B = Be \oplus B(1-e)$ for every $e$, every element being idempotent</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>a commutative Artinian ring</td>
+<td>the primitive idempotents</td>
+<td>the product of the local rings $R e_i$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A nontrivial idempotent $e$ satisfies $e(1-e) = 0$, so $R = Re \oplus R(1-e)$ is a direct sum of the two-sided ideals $Re$ and $R(1-e)$, and the two ideals are rings in their own right with identities $e$ and $1-e$. A family of idempotents that are orthogonal, $e_i e_j = 0$ for $i \neq j$, and complete, $\sum e_i = 1$, gives the decomposition $R = \bigoplus_i R e_i$; the primitive idempotents are those that cannot be split further, and for a commutative Artinian ring the primitive decomposition is the product of its localisations, as recorded in <em>Noetherian and Artinian Rings</em> and in <em>List of Reduced, Local and Product Rings</em>.</p>
+<h2 id="the-peirce-decomposition">The Peirce Decomposition</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The orthogonal family</th>
+<th>The decomposition</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a module $M$ over $R$</td>
+<td>a single idempotent $e$</td>
+<td>$M = eM \oplus (1-e)M$</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>an algebra $A$</td>
+<td>a single idempotent $e$</td>
+<td>$A = eAe \oplus eA(1-e) \oplus (1-e)Ae \oplus (1-e)A(1-e)$</td>
+<td><em>Biquaternion Ideals and Peirce Decomposition</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B} \cong M_2(\mathbb{C})$</td>
+<td>$p = E_{11}$, $q = E_{22}$</td>
+<td>the four one-dimensional corners</td>
+<td><em>Biquaternion Ideals and Peirce Decomposition</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>$E_{11}, E_{22}$</td>
+<td>the column decomposition of $\mathbb{R}^2$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$R \times S$</td>
+<td>$(1,0)$, $(0,1)$</td>
+<td>the two components</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>a group algebra $k[G]$</td>
+<td>the idempotents of the group</td>
+<td>$k[G] = \bigoplus e_i k[G] e_i \oplus \text{off-diagonal}$</td>
+<td><em>Group Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Peirce decomposition relative to a complete orthogonal family of idempotents $e_1 + \cdots + e_n = 1$ writes a module as $M = \bigoplus_i e_i M$ and an algebra as the direct sum of the corner algebras $e_i A e_j$. The biquaternion case is the corpus's worked example: with $p = E_{11}$ and $q = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $x$ and $y$, as recorded in <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<h2 id="the-von-neumann-regular-rings">The von Neumann Regular Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Why every ideal is idempotent-generated</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a Boolean ring</td>
+<td>every element is idempotent, so every ideal is generated by idempotents</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>a product of fields</td>
+<td>the primitive idempotents generate the principal ideals</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\prod_i k_i$ over a family of fields</td>
+<td>the idempotents of the product generate the ideals</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>a commutative von Neumann regular ring</td>
+<td>each localisation at a maximal ideal is a field, and every principal ideal is generated by an idempotent</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>a reduced ring of Krull dimension zero</td>
+<td>equivalently von Neumann regular</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $k[x]$, $\mathbb{Z}[\sqrt{-5}]$</td>
+<td>not von Neumann regular: the ideal $(2)$ is not generated by an idempotent</td>
+<td><em>Integral Domains</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>not von Neumann regular: $2 \cdot 2 = 0$, and the maximal ideal is not idempotent-generated</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A ring is von Neumann regular when every principal left ideal is generated by an idempotent, equivalently when every finitely generated left ideal is idempotent-generated. The commutative von Neumann regular rings are exactly the reduced rings of Krull dimension zero, equivalently those whose localisation at every maximal ideal is a field; the Boolean rings are the characteristic-two examples. The domains and the local rings are the non-examples: in a domain the principal ideal $(a)$ for $a$ neither zero nor a unit is not generated by an idempotent, since the only idempotents are $0$ and $1$, and $\mathbb{Z}/4\mathbb{Z}$ fails because $2 \cdot 2 = 0$. The class is the subject of <em>Von Neumann Regular Rings</em>.</p>
+<h2 id="the-rings-with-few-idempotents">The Rings with Few Idempotents</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The idempotents</th>
+<th>Why</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a domain</td>
+<td>$0, 1$</td>
+<td>$e(1-e) = 0$ forces $e = 0$ or $1$</td>
+<td><em>Integral Domains</em></td>
+</tr>
+<tr>
+<td>a local ring</td>
+<td>$0, 1$</td>
+<td>the nonunits form the maximal ideal, and a nontrivial idempotent is a nonunit with a nonunit complement</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>a division ring</td>
+<td>$0, 1$</td>
+<td>a nonzero idempotent is a unit, and the only unit idempotent is $1$</td>
+<td><em>Division Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p^n\mathbb{Z}$</td>
+<td>$0, 1$</td>
+<td>a local ring</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>$0, 1$</td>
+<td>a local ring</td>
+<td><em>Dual-Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2[C_2]$</td>
+<td>$0, 1$</td>
+<td>isomorphic to $\mathbb{F}_2[x]/(x+1)^2$, a local ring</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>a connected ring</td>
+<td>$0, 1$</td>
+<td>the definition of connected</td>
+<td><em>Rings</em>, §§8–9</td>
+</tr>
+</tbody>
+</table></div>
+<p>A ring with $0$ and $1$ as its only idempotents is connected, equivalently indecomposable: it is not the product of two nonzero rings. Every domain, every local ring and every division ring is connected, and a nontrivial idempotent is exactly what a product fails to exclude. The scarcity of idempotents is therefore not a defect but the obstruction that makes the ideal theory of a domain a divisibility theory rather than a decomposition theory.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not in the list of rings with idempotents to compare</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$, the octonions</td>
+<td>not a ring: the multiplication is not associative, so $e^2 = e$ is not defined in the ring sense</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>the zero ring $\{0\}$</td>
+<td>$0 = 1$, and the single element is an idempotent, excluded by the convention $1 \neq 0$</td>
+<td><em>Rings</em>, §2</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$ as a "split" ring</td>
+<td>it is simple, so it has no nontrivial two-sided idempotent splitting, although it has many one-sided idempotents</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ as a "split" ring</td>
+<td>simple, like $M_2(\mathbb{C})$; its idempotents give the Peirce corners and not a product decomposition</td>
+<td><em>Biquaternion Ideals and Peirce Decomposition</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The third and fourth rows record the distinction the list rests on: an idempotent gives a product decomposition only when it is central, and the idempotents of a matrix algebra are not. The split-biquaternions and the split-complex numbers are products because their idempotents are central, while the matrix ring and the biquaternions are simple and their idempotents are not.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the rings of the corpus by their idempotents. The connected rings — the fields, the domains, the local rings, the division rings, $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/p^n\mathbb{Z}$, the dual numbers and $\mathbb{F}_2[C_2]$ — have $0$ and $1$ alone; the split rings — $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/12\mathbb{Z}$, the split-complex numbers, the split-biquaternions, $\mathbb{R}[x]/(x^2-1)$ and $\mathbb{Q}[C_3]$ — have four; the matrix ring and the biquaternions have infinitely many one-sided idempotents without a product decomposition, since they are simple; and the Boolean rings have one for every element. The article has recorded the direct sum decomposition $R = Re \oplus R(1-e)$ and the product decompositions it gives, the Peirce decomposition $A = \bigoplus_{i,j} e_i A e_j$ relative to a complete orthogonal family with the biquaternion corners as the worked case, and the separation of the von Neumann regular rings, in which every ideal is idempotent-generated, from the domains and local rings, in which the idempotents are scarce.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e$</td>
+<td>An idempotent, $e^2 = e$</td>
+</tr>
+<tr>
+<td>$e_{\pm} = \tfrac{1}{2}(1 \pm j)$</td>
+<td>The idempotents of the split-complex numbers and the split-biquaternions</td>
+</tr>
+<tr>
+<td>$e_0 = 1$</td>
+<td>The identity, the trivial idempotent</td>
+</tr>
+<tr>
+<td>$p = E_{11}$, $q = E_{22}$</td>
+<td>Orthogonal matrix-unit idempotents, $p + q = 1$</td>
+</tr>
+<tr>
+<td>$x, y$</td>
+<td>The nilpotent off-diagonal elements of the Peirce corners</td>
+</tr>
+<tr>
+<td>$e_i A e_j$</td>
+<td>A Peirce corner of the algebra $A$</td>
+</tr>
+<tr>
+<td>$\omega(n)$</td>
+<td>The number of distinct primes dividing $n$</td>
+</tr>
+<tr>
+<td>$eM$, $(1-e)M$</td>
+<td>The two summands of the Peirce decomposition of a module</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the idempotents, the Peirce decomposition and the corner algebras.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition treated systematically.</li>
+<li>Irving Kaplansky, <em>Commutative Rings</em> (University of Chicago Press, revised ed. 1974), for the von Neumann regular rings, the reduced rings of Krull dimension zero and the idempotents of a Noetherian ring.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

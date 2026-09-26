@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudodifferential Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="pseudodifferential-operators"><strong>Pseudodifferential Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A linear differential operator of order $m$ has a symbol $\sum_{|\alpha|\le m}a_\alpha(x)\xi^\alpha$, a polynomial in the frequency variable whose highest-order part, the principal symbol, decides whether the operator is elliptic and whether it can be inverted to leading order. The single idea of pseudodifferential theory is to allow the symbol to be any smooth function of $x$ and $\xi$ of the appropriate growth, and to define the operator by the Fourier inversion formula</p>
+<p>$$
+a(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}e^{i(x-y)\cdot\xi}\,a(x,\xi)\,u(y)\,dy\,d\xi .
+$$</p>
+<p>The class of operators so obtained is closed under composition, under transposition and under the construction of parametrices, and it contains the differential operators, the inverses of elliptic operators and the smoothing operators, together with a calculus of symbols in which composition corresponds to an asymptotic expansion to all orders. The calculus is the natural home of the elliptic regularity of <em>Distributions and Fundamental Solutions</em>, and it is the technical foundation of the microlocal analysis: the principal symbol lives on the cotangent bundle, and its vanishing set is where the operator fails to be invertible.</p>
+<p>The article begins with the <strong>symbol classes</strong> $S^m$ and the asymptotic summation that makes them an algebra; it defines the <strong>quantisation</strong> $a\mapsto a(x,D)$; it proves that the class is closed under composition and adjoint, with the Leibniz-type expansions</p>
+<p>$$
+c(x,\xi)\sim\sum_\alpha\frac{1}{\alpha!}\,\partial_\xi^\alpha a(x,\xi)\,D_x^\alpha b(x,\xi), \qquad [a(x,D),b(x,D)] \sim \frac1i\{a,b\}(x,D),
+$$</p>
+<p>where $\{a,b\}$ is the Poisson bracket; it characterises <strong>ellipticity</strong> and constructs the <strong>parametrix</strong> by solving the composition equation order by order; it records the continuity on $L^2$ and on the Sobolev spaces, and Gårding's inequality; and it treats the <strong>Weyl quantisation</strong> and the invariance of the principal symbol under changes of coordinates, which is what allows the calculus to be carried to a manifold.</p>
+<p>Throughout, $\mathbb{K}=\mathbb{C}$ for symbols and operators, $x \in \mathbb{R}^n$ is the space variable and $\xi \in \mathbb{R}^n$ the frequency variable, $\alpha,\beta$ are multi-indices, and $D^\alpha=(-i)^{|\alpha|}\partial^\alpha$ is the derivative convention fixed in <em>Distributions and Fundamental Solutions</em>, so that the symbol of the differential operator $\sum_{|\alpha|\le m}a_\alpha(x)D^\alpha$ is $\sum a_\alpha(x)\xi^\alpha$. The Fourier transform and its normalisation, the distributions $\mathcal D'$, $\mathcal S'$ and their pairings, and the kernel $K(x,y)$ of an operator are those of <em>Distributions and Fundamental Solutions</em> and <em>The Schwartz Kernel Theorem</em>. The Bessel-potential spaces $H^s_p$ and their interpolation are those of <em>Interpolation Theory</em>. Ellipticity, the parametrix and elliptic regularity were stated for differential operators in <em>Distributions and Fundamental Solutions</em>; here they are proved in the symbol calculus. The Fredholm property of an elliptic operator, the index and its invariance are those of <em>Fredholm Theory</em>. The wavefront set, the propagation of singularities and the microlocal elliptic regularity are not covered here; the $\hbar$-dependent form of the calculus, the semiclassical defect measures and Egorov's theorem are not covered here; and the elliptic boundary-value problems and the classical classification of second-order equations are those andin the extension of this Part. The principal symbols of the classical operators, and the Cauchy–Riemann operator $e_\mu\partial_\mu$, are treated in the algebra-valued analysis of this Part .</p>
+<p>No physics is invoked.</p>
+<h2 id="symbol-classes">Symbol Classes</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p><strong>Definition.</strong> For $m \in \mathbb{R}$ the <strong>symbol class</strong> $S^m=S^m(\mathbb{R}^n\times\mathbb{R}^n)$ is the set of $a \in C^\infty(\mathbb{R}^n\times\mathbb{R}^n)$ such that for all multi-indices $\alpha,\beta$ there is $C_{\alpha,\beta}$ with</p>
+<p>$$
+|\partial_\xi^\alpha\partial_x^\beta a(x,\xi)| \le C_{\alpha,\beta}\,(1+|\xi|)^{m-|\alpha|}
+$$</p>
+<p>for all $x,\xi$; the class $S^m_{1,0}$ of Hörmander is the one used here and is written $S^m$. Set $S^\infty=\bigcup_mS^m$ and $S^{-\infty}=\bigcap_mS^m$. The <strong>order</strong> of $a$ is the infimum of the $m$ with $a \in S^m$; a symbol in $S^{-\infty}$ is called <strong>smoothing</strong>.</p>
+<p>The derivatives in $x$ are unrestricted, the derivatives in $\xi$ gain a power of $(1+|\xi|)^{-1}$ each time, and the definition is an estimate on $a$ and all of its derivatives; this is the exact regularity needed for the composition formula and for the parametrix.</p>
+<p><strong>Proposition.</strong> (i) $S^m \subseteq S^{m'}$ for $m \le m'$, and $S^{-\infty}=\bigcap_mS^m$. (ii) If $a \in S^m$ and $b \in S^{m'}$ then the pointwise product $ab \in S^{m+m'}$. (iii) $\partial_x^\beta a \in S^m$, $\partial_\xi^\alpha a \in S^{m-|\alpha|}$, and $S^m$ is a Fréchet space in the seminorms of the definition. (iv) If $a \in S^m$ and $a$ is a polynomial of degree $m$ in $\xi$ with coefficients in $C^\infty(\mathbb{R}^n)$ of at most polynomial growth, then $a$ is the symbol of a differential operator of order $m$.</p>
+<p><em>Proof.</em> (i)–(iii) are immediate from the product rule and the definition; (iv) because a polynomial of degree $m$ in $\xi$ satisfies the estimates with $|\alpha|\le m$ and has zero $\xi$-derivatives of higher order. $\square$</p>
+<p><strong>Example.</strong> (i) The monomial $\xi^\alpha$ lies in $S^{|\alpha|}$; the symbol of a differential operator $\sum_{|\alpha|\le m}a_\alpha\xi^\alpha$ with $a_\alpha \in C^\infty$ of polynomial growth lies in $S^m$.</p>
+<p>(ii) The <strong>Bessel symbol</strong> $(1+|\xi|^2)^{s/2}$ lies in $S^s$, and the operator it defines is the Bessel potential $\langle D\rangle^s$ of <em>Interpolation Theory</em> up to the convention of the constant.</p>
+<p>(iii) The function $a(\xi)=\chi(|\xi|)|\xi|^m$ with $\chi$ a smooth cutoff vanishing near $0$ lies in $S^m$ and is elliptic; the function $a(\xi)=\sin|\xi|^2$ is in $S^0$ but in no lower class, since its derivatives do not decay.</p>
+<p>(iv) If $a \in S^m$ and $A$ is a constant-coefficient differential operator in the $x$ variables, then $a$, $Aa$ and $\partial_\xi^\alpha a$ remain in the corresponding classes, while $\frac{1}{a}$ is in $S^{-m}$ only under the ellipticity hypothesis below.</p>
+<h3 id="asymptotic-expansion">Asymptotic Expansion</h3>
+<p><strong>Definition.</strong> Let $a_j \in S^{m_j}$ with $m_j \to -\infty$. One writes</p>
+<p>$$
+a \sim \sum_{j=0}^{\infty}a_j
+$$</p>
+<p>if $a-\sum_{j<N}a_j \in S^{m_N}$ for every $N$; the relation determines the class of $a$ modulo $S^{-\infty}$.</p>
+<p><strong>Theorem (asymptotic summation).</strong> Given $a_j \in S^{m_j}$ with $m_j \downarrow -\infty$, there exists $a \in S^{m_0}$ with $a \sim\sum_ja_j$; any two such $a$ differ by an element of $S^{-\infty}$.</p>
+<p><em>Proof (sketch).</em> Choose a cutoff $\chi \in C^\infty(\mathbb{R}^n)$, vanishing for $|\xi|\le1$ and equal to $1$ for $|\xi|\ge2$, and a sequence $t_j \downarrow0$ tending to $0$ fast enough that the series</p>
+<p>$$
+a(x,\xi)=\sum_{j=0}^{\infty}\chi(t_j\xi)\,a_j(x,\xi)
+$$</p>
+<p>converges in $C^\infty$ on compact sets and satisfies the estimates of $S^{m_0}$; the rapid decrease of the tails (by the choice of $t_j$) gives $a-\sum_{j<N}a_j \in S^{m_N}$. The difference of two such sums is in $S^{m_N}$ for every $N$ and hence in $S^{-\infty}$. $\square$</p>
+<p>The theorem is what makes the calculus possible: every computation below produces a formal series of symbols, and the series is summed by this device, with the resulting ambiguity confined to the smoothing class, which is harmless for all statements of a local or asymptotic nature.</p>
+<h2 id="quantisation">Quantisation</h2>
+<h3 id="the-fourier-definition">The Fourier Definition</h3>
+<p><strong>Definition.</strong> For $a \in S^m$ the <strong>operator with symbol</strong> $a$, in <strong>left quantisation</strong>, is</p>
+<p>$$
+a(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}e^{i(x-y)\cdot\xi}a(x,\xi)\,u(y)\,dy\,d\xi, \qquad u \in \mathcal S(\mathbb{R}^n),
+$$</p>
+<p>the integral being understood as the iterated integral, which converges absolutely after regularisation and defines the oscillatory integral; equivalently, in terms of the Fourier transform,</p>
+<p>$$
+\widehat{a(x,D)u}(\xi)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\hat a(\xi-\eta,\eta)\,\hat u(\eta)\,d\eta,
+$$</p>
+<p>where $\hat a(\cdot,\eta)$ is the Fourier transform of $a(\cdot,\eta)$ in the first variable. The operator extends to a continuous map $\mathcal S(\mathbb{R}^n)\to C^\infty(\mathbb{R}^n)$ and to a continuous map $\mathcal E'(\mathbb{R}^n)\to\mathcal D'(\mathbb{R}^n)$.</p>
+<p><strong>Theorem (kernel).</strong> The operator $a(x,D)$ has kernel</p>
+<p>$$
+K_a(x,y)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}e^{i(x-y)\cdot\xi}a(x,\xi)\,d\xi,
+$$</p>
+<p>a distribution on $\mathbb{R}^n\times\mathbb{R}^n$, in the sense of <em>The Schwartz Kernel Theorem</em>:</p>
+<p>$$
+\langle a(x,D)u,v\rangle=\langle K_a,v\otimes u\rangle ,
+$$</p>
+<p>The kernel is smooth off the diagonal $x=y$; the singularities of $a(x,D)$ are carried by the diagonal, and the symbol is the fibre transform of the kernel along the diagonal, which is the reason the symbol is the right object for the calculus.</p>
+<p><strong>Example.</strong> (i) $a(x,\xi)=\xi^\alpha$ gives $a(x,D)=D^\alpha$, since $\xi^\alpha e^{i(x-y)\xi}=(-i)^{|\alpha|}\partial_x^\alpha e^{i(x-y)\xi}$ and the integral reproduces $D^\alpha u$. Hence every differential operator $P=\sum_{|\alpha|\le m}a_\alpha(x)D^\alpha$ is the operator with symbol $\sum a_\alpha(x)\xi^\alpha$, and the class of pseudodifferential operators contains the differential operators.</p>
+<p>(ii) $a(x,\xi)=a(x)$ independent of $\xi$ gives the operator of multiplication by $a$; its kernel is $a(x)\delta(x-y)$.</p>
+<p>(iii) $a(x,\xi)=\chi(\xi)$ with $\chi$ smooth, supported where $|\xi|$ is large and $\chi=0$ near $0$, gives a smoothing-type operator whose kernel is the inverse Fourier transform of $\chi$; if $\chi\in C_c^\infty$ the operator is smoothing with a Schwartz kernel.</p>
+<p>(iv) The inverse of an elliptic operator, when it exists, has a symbol in $S^{-m}$; this is the content of the parametrix construction below.</p>
+<h3 id="weyl-and-other-quantisations">Weyl and Other Quantisations</h3>
+<p><strong>Definition.</strong> The <strong>Weyl quantisation</strong> of $a \in S^m$ is</p>
+<p>$$
+a^w(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}e^{i(x-y)\cdot\xi}\,a\!\left(\frac{x+y}{2},\xi\right)u(y)\,dy\,d\xi ,
+$$</p>
+<p>and the Weyl symbol of an operator is the function $a$ producing it. The two quantisations differ by a series of lower-order terms: expanding $a((x+y)/2,\xi)$ about $x$ and integrating by parts in $\xi$ gives</p>
+<p>$$
+a^w(x,D)=a(x,D)+\frac{1}{2i}\sum_{j=1}^{n}\partial_{x_j}\partial_{\xi_j}a(x,D)+\cdots,
+$$</p>
+<p>the next correction being of order $m-2$, so that the principal symbols agree. The Weyl quantisation has the formal advantage that the adjoint has symbol $\overline a$: $(a^w)^*=\overline a^{\,w}$ for $a \in S^m$ on $\mathcal S$, so that real symbols give symmetric operators.</p>
+<p><strong>Example (verification).</strong> For $n=1$ and $a(x,\xi)=x\xi$ one computes directly that $a(x,D)=xD$ and that $a^w=xD-\frac{i}{2}I$; the displayed correction term is $\frac{1}{2i}\partial_x\partial_\xi(x\xi)=\frac{1}{2i}$, giving $a^w=xD+\frac{1}{2i}I=xD-\frac{i}{2}I$, in agreement. This is the simplest instance of the subprincipal correction.</p>
+<h2 id="composition-and-adjoint">Composition and Adjoint</h2>
+<h3 id="the-composition-theorem">The Composition Theorem</h3>
+<p><strong>Theorem (composition).</strong> Let $a \in S^m$ and $b \in S^{m'}$. Then $a(x,D)b(x,D)=c(x,D)$ for a symbol $c \in S^{m+m'}$, unique modulo $S^{-\infty}$, with</p>
+<p>$$
+c(x,\xi)\sim\sum_{\alpha}\frac{1}{\alpha!}\,\partial_\xi^\alpha a(x,\xi)\,D_x^\alpha b(x,\xi),
+$$</p>
+<p>the sum over all multi-indices $\alpha$, where $D_x^\alpha=(-i)^{|\alpha|}\partial_x^\alpha$ acts on the $x$-variable of $b$. In particular the leading term is $c \equiv ab \bmod S^{m+m'-1}$.</p>
+<p><em>Proof (sketch).</em> Use the representation $a(x,D)v(x)=\frac{1}{(2\pi)^n}\int e^{ix\cdot\eta}a(x,\eta)\hat v(\eta)\,d\eta$, valid after regularisation. Then $\widehat{b(x,D)u}(\eta)=\frac{1}{(2\pi)^n}\int\hat b(\eta-\zeta,\zeta)\hat u(\zeta)\,d\zeta$, and substituting $\eta=\zeta+\theta$ gives</p>
+<p>$$
+a(x,D)b(x,D)u(x)=\frac{1}{(2\pi)^{2n}}\int\int e^{ix\cdot\zeta}\,e^{ix\cdot\theta}\,a(x,\zeta+\theta)\,\hat b(\theta,\zeta)\,\hat u(\zeta)\,d\zeta\,d\theta .
+$$</p>
+<p>Taylor expansion of $a(x,\zeta+\theta)$ in $\theta$ about $\zeta$ contributes the terms $\frac{1}{\alpha!}\partial_\xi^\alpha a(x,\zeta)\theta^\alpha$, and the inverse Fourier transform in $\theta$ of $\theta^\alpha\hat b(\theta,\zeta)$ is $D_x^\alpha b(x,\zeta)$; the remainder after $N$ terms is in $S^{m+m'-N}$. $\square$</p>
+<p><strong>Example.</strong> For $a=\xi_j$ and $b=x_k$, the composition is $D_jM_{x_k}$, and</p>
+<p>$$
+D_j(x_ku)=-i\partial_j(x_ku)=-i\delta_{jk}u+x_kD_ju=M_{x_k}D_ju-i\delta_{jk}u .
+$$</p>
+<p>The formula gives $c=\xi_jx_k+\frac{1}{1!}\partial_{\xi_j}\xi_j\,D_{x_j}x_k=x_k\xi_j+(-i)\delta_{jk}$, in agreement with the direct computation. The subprincipal term is what makes the calculus noncommutative.</p>
+<p><strong>Corollary (leading order).</strong> The principal symbol of a product is the product of the principal symbols, $\sigma_{m+m'}(a(x,D)b(x,D))=\sigma_m(a)\sigma_{m'}(b)$; the map $a\mapsto\sigma_m(a)$ is a homomorphism from the operators of order $m$ modulo smoothing to the functions on $T^*\mathbb{R}^n$ that are positively homogeneous of degree $m$ in $\xi$ modulo lower order.</p>
+<p><strong>Corollary (commutator).</strong> The commutator has leading order $m+m'-1$ and</p>
+<p>$$
+[a(x,D),b(x,D)] \;\sim\; \frac1i\{a,b\}(x,D) \pmod{S^{m+m'-2}}, \qquad \{a,b\}=\sum_{j=1}^{n}\bigl(\partial_{\xi_j}a\,\partial_{x_j}b-\partial_{x_j}a\,\partial_{\xi_j}b\bigr),
+$$</p>
+<p>the <strong>Poisson bracket</strong> of $a$ and $b$. For $a=\xi_j$, $b=x_k$ the bracket is $\delta_{jk}$ and the commutator is $-i\delta_{jk}I$, as computed above.</p>
+<h3 id="the-adjoint">The Adjoint</h3>
+<p><strong>Theorem (adjoint).</strong> For $a \in S^m$ the formal adjoint of $a(x,D)$ with respect to the $L^2$ inner product is $a(x,D)^*=a^*(x,D)$ with</p>
+<p>$$
+a^*(x,\xi)\sim\sum_{\alpha}\frac{1}{\alpha!}\,\partial_\xi^\alpha D_x^\alpha\,\overline{a(x,\xi)} ,
+$$</p>
+<p>so that $a^* \in S^m$ and $a^* \equiv\overline a \bmod S^{m-1}$. In particular $a(x,D)$ is symmetric on $\mathcal S$ to leading order exactly when $a$ is real modulo $S^{m-1}$.</p>
+<p><em>Proof (sketch).</em> The identity $\langle a(x,D)u,v\rangle=\langle u,a(x,D)^*v\rangle$ is integrated by parts in $x$ and $\xi$; the boundary terms vanish for Schwartz functions, and the resulting symbol is the displayed transpose, which is computed by the same Taylor expansion as the composition theorem applied to the kernel $\overline{K_a(y,x)}$. $\square$</p>
+<p><strong>Corollary (the calculus is an algebra).</strong> The operators of the form $a(x,D)$ with $a \in S^\infty$, modulo the smoothing operators $S^{-\infty}(x,D)$, form an algebra with involution under composition and adjoint, filtered by the order, with associated graded algebra the symbols modulo lower order; the principal-symbol map is an isomorphism of the graded pieces onto the homogeneous functions on $T^*\mathbb{R}^n$ of the appropriate degree.</p>
+<h2 id="ellipticity-and-parametrices">Ellipticity and Parametrices</h2>
+<h3 id="elliptic-symbols">Elliptic Symbols</h3>
+<p><strong>Definition.</strong> A symbol $a \in S^m$ is <strong>elliptic</strong> if there is $c>0$ with</p>
+<p>$$
+|a(x,\xi)| \ge c\,(1+|\xi|)^m \qquad \text{for } |\xi| \text{ large},
+$$</p>
+<p>uniformly in $x$; if the estimate is required only on a subset of $\mathbb{R}^n_x$ one says that $a$ is elliptic there. The <strong>principal symbol</strong> $\sigma_m(a)$ is the class of $a$ in $S^m/S^{m-1}$, represented by the positively homogeneous function $a_m(x,\xi)=\lim_{t\to\infty}t^{-m}a(x,t\xi)$ for $\xi \neq0$; the ellipticity of $a$ is the nonvanishing of $a_m(x,\xi)$ for every $\xi \neq0$.</p>
+<p><strong>Theorem (parametrix).</strong> Let $a \in S^m$ be elliptic. Then there is $b \in S^{-m}$ with</p>
+<p>$$
+a(x,D)b(x,D)=I-R_1, \qquad b(x,D)a(x,D)=I-R_2, \qquad R_1,R_2 \in S^{-\infty}(x,D).
+$$</p>
+<p><em>Proof (sketch).</em> Set $b_0$ equal to $a^{-1}$ for large $|\xi|$ and to $0$ for small $|\xi|$, cut off smoothly; then $b_0 \in S^{-m}$ and $ab_0-1=:r_0 \in S^{-1}$. If $b_N \in S^{-m}$ has been chosen with $ab_N=1+r_N$ and $r_N \in S^{-N}$, set $b_{N+1}=b_N-r_Na^{-1}$ with $a^{-1}$ again cut off for large $|\xi|$; then $b_{N+1} \in S^{-m}$ and</p>
+<p>$$
+ab_{N+1}=1+r_N-r_N(aa^{-1})=1+r_N-r_N(1+r_0)=1-r_Nr_0 \in 1+S^{-N-1},
+$$</p>
+<p>so the remainder improves by one order at each step. The recursion produces symbols $b_N$ with remainders in $S^{-N}$ for every $N$, and asymptotic summation gives $b \sim\sum_j(b_j-b_{j-1}) \in S^{-m}$ with $ab-1 \in S^{-\infty}$, which is the first identity. The second follows by the same argument on the other side, and the resulting left and right parametrices differ by a smoothing operator by associativity of composition. $\square$</p>
+<h3 id="elliptic-regularity">Elliptic Regularity</h3>
+<p><strong>Theorem (elliptic regularity, pseudodifferential form).</strong> Let $a \in S^m$ be elliptic, properly supported, with bounded derivatives $|\partial_\xi^\alpha\partial_x^\beta a|\le C_{\alpha\beta}$, and let $R$ be smoothing. Then for every $s \in \mathbb{R}$ and $1<p<\infty$ the operator $a(x,D)$ maps $H^{s}_p$ continuously into $H^{s-m}_p$, and for $p=2$ no boundedness of the derivatives is required; consequently</p>
+<p>$$
+a(x,D)u \in H^{s-m}_p \implies u \in H^{s}_p, \qquad a(x,D)u \in C^\infty \implies u \in C^\infty ,
+$$</p>
+<p>the implications holding locally and, with proper support, globally.</p>
+<p><em>Proof.</em> The parametrix $b \in S^{-m}$ gives $u=b(au)+R_2u$; the first term is in $H^s_p$ because an operator of order at most $0$ whose symbol has bounded derivatives is bounded on $L^p$ for $1<p<\infty$ by the Calderón–Zygmund theory, and the $H^s_p$ norms are the $L^p$ norms of the Bessel potentials, so $b$ gains the $m$ orders of regularity; the second term is smoothing and lies in every $H^s_p$. $\square$</p>
+<p><strong>Corollary (Fredholm property).</strong> An elliptic operator $a(x,D)$ of order $m$ on a closed manifold, acting between $H^s$ and $H^{s-m}$, is Fredholm, with a parametrix in the sense of <em>Fredholm Theory</em>; its index is invariant under perturbations in the smoothing class.</p>
+<h2 id="continuity-and-gardings-inequality">Continuity and Gårding's Inequality</h2>
+<h3 id="boundedness-on-math291-and-sobolev-spaces">Boundedness on $L^2$ and Sobolev Spaces</h3>
+<p><strong>Theorem (Calderón–Vaillancourt).</strong> Let $a \in S^0$. Then $a(x,D)$ extends to a bounded operator on $L^2(\mathbb{R}^n)$, with</p>
+<p>$$
+\|a(x,D)\|_{L^2\to L^2} \le C\sup_{|\alpha|+|\beta|\le N}\sup_{x,\xi}(1+|\xi|)^{|\alpha|}|\partial_\xi^\alpha\partial_x^\beta a(x,\xi)|
+$$</p>
+<p>for a constant $C$ and an integer $N$ depending only on the dimension.</p>
+<p><em>Proof (sketch).</em> Refine the symbol by a partition of the frequency space into dyadic annuli, write $a=\sum_ka_k$ with $a_k$ supported in $2^k\le|\xi|\le2^{k+1}$, and use the almost-orthogonality of the resulting frequency-localised pieces together with the Cotlar–Stein lemma; the estimates of the symbol class control the norms of the localised pieces and the overlaps. The detailed argument is the Calderón–Vaillancourt theorem quoted below. $\square$</p>
+<p><strong>Theorem (continuity on Sobolev spaces).</strong> Let $a \in S^m$. Then $a(x,D)$ maps $H^s_2$ continuously into $H^{s-m}_2$ for every $s \in \mathbb{R}$, and this follows from the $S^0$ boundedness applied to $a(x,D)\langle D\rangle^{-m}$ and the commutation of $\langle D\rangle^s$ with the calculus up to lower order. If in addition the derivatives of $a$ are bounded, $|\partial_\xi^\alpha\partial_x^\beta a|\le C_{\alpha\beta}$ for $|\alpha|+|\beta|\le N$, then the same continuity holds on $H^s_p$ for every $1<p<\infty$ and every $s$; the $L^2$ case is common to both hypotheses, and it is the case guaranteed by the preceding theorem for the full class $S^0$.</p>
+<h3 id="gardings-inequality">Gårding's Inequality</h3>
+<p><strong>Theorem (Gårding).</strong> Let $a \in S^1$ with $\operatorname{Re}a(x,\xi)\ge0$ for large $|\xi|$, and suppose $a(x,D)$ is properly supported. Then there is $C$ with</p>
+<p>$$
+\operatorname{Re}\langle a(x,D)u,u\rangle \ge -C\|u\|_{L^2}^2 \qquad \text{for all } u \in \mathcal S .
+$$</p>
+<p>More generally, if $a \in S^m$ is elliptic with $\operatorname{Re}a\ge c(1+|\xi|)^m>0$, then for all $u$,</p>
+<p>$$
+\operatorname{Re}\langle a(x,D)u,u\rangle \ge c'\|u\|_{H^{m/2}}^2-C\|u\|_{L^2}^2 .
+$$</p>
+<p><em>Proof (sketch).</em> The sharp Gårding inequality is proved by writing $\operatorname{Re}a$ as a sum of squares modulo a symbol of order $0$, using a partition of the frequency space and a square-root argument for the positive homogeneous part; the elliptic case follows by applying the first to the order-one symbol $a(x,\xi)(1+|\xi|^2)^{-m/2}\langle\xi\rangle^{m}$ composed with a Bessel potential. The inequality is the analytic form of the positivity of an elliptic operator and it is the starting point of the existence theory for the Dirichlet problem, which belongs. $\square$</p>
+<h2 id="invariance-and-operators-on-manifolds">Invariance and Operators on Manifolds</h2>
+<h3 id="changes-of-variables">Changes of Variables</h3>
+<p>The principal symbol is invariant in a precise sense, and this is what makes the calculus geometric.</p>
+<p><strong>Theorem (invariance of the principal symbol).</strong> Let $\kappa:\Omega\to\tilde\Omega$ be a diffeomorphism of open sets and let $T=a(x,D)$ be a pseudodifferential operator on $\tilde\Omega$; define the transported operator $\kappa^*T$ on $\Omega$ by $\kappa^*Tu=(T(u\circ\kappa^{-1}))\circ\kappa$. Then $\kappa^*T$ is pseudodifferential of order $m$, and its principal symbol is</p>
+<p>$$
+\sigma_m(\kappa^*T)(x,\xi)=\sigma_m(T)\bigl(\kappa(x),\,(d\kappa(x))^{-T}\xi\bigr),
+$$</p>
+<p>the action of the cotangent lift of $\kappa$; that is, the principal symbol is a function on the cotangent bundle $T^*M$, and a pseudodifferential operator of order $m$ on a manifold is defined by requiring that in every coordinate chart it be given by a symbol in $S^m$ and that the principal symbols so obtained agree as a function on $T^*M$.</p>
+<p><em>Proof (sketch).</em> The chain rule changes the differentiation operators by the Jacobian, and the frequency variable transforms by the inverse transpose of the differential; the lower-order terms depend on the second derivatives of $\kappa$ and illustrate why only the principal symbol is invariant. $\square$</p>
+<h3 id="pseudodifferential-operators-on-a-manifold">Pseudodifferential Operators on a Manifold</h3>
+<p><strong>Definition.</strong> A <strong>pseudodifferential operator</strong> of order $m$ on a smooth manifold $M$ is a continuous linear map $T:\mathcal D(M)\to\mathcal D'(M)$ whose kernel is smooth off the diagonal and which in each coordinate chart is given by a symbol in $S^m$; the <strong>principal symbol</strong> is the well-defined function $\sigma_m(T) \in C^\infty(T^*M\setminus0)$, homogeneous of degree $m$ in the fibre variable, obtained from the local symbols by the invariance theorem. The operator is <strong>elliptic</strong> if $\sigma_m(T)$ does not vanish on the complement of the zero section.</p>
+<p><strong>Theorem.</strong> The pseudodifferential operators of finite order on $M$ form a filtered algebra under composition and adjoint, containing the differential operators, with principal-symbol map a homomorphism onto the homogeneous functions, and with a parametrix for every elliptic operator. Every elliptic operator on a closed manifold is Fredholm between the Sobolev spaces $H^s(M)$ and $H^{s-m}(M)$, and its kernel consists of smooth functions.</p>
+<p>The index of such an operator depends only on its principal symbol and is computed by the Atiyah–Singer theorem in <em>The Atiyah–Singer Index Theorem and K-Theory</em>; the wavefront set and the propagation of singularities refine the local statement to one on the cotangent bundle and are developed; and the $\hbar$-dependent calculus, in which the symbols are functions on phase space and the composition is governed by the Poisson bracket to leading order, is developed.</p>
+<h2 id="summary">Summary</h2>
+<p>A symbol of order $m$ is a smooth function $a(x,\xi)$ satisfying $|\partial_\xi^\alpha\partial_x^\beta a|\le C(1+|\xi|)^{m-|\alpha|}$; the classes $S^m$ are nested, closed under products and differentiation, form a Fréchet space, and admit asymptotic summation, so that any formal series with decreasing orders is represented by a symbol unique modulo the smoothing class $S^{-\infty}$. The quantisation $a\mapsto a(x,D)$ is defined by the Fourier inversion integral, its kernel is $K_a(x,y)=\frac{1}{(2\pi)^n}\int e^{i(x-y)\xi}a(x,\xi)d\xi$ and is smooth off the diagonal, and it contains the differential operators as the polynomial symbols. The Weyl quantisation differs from the left quantisation by $\frac{1}{2i}\sum_j\partial_{x_j}\partial_{\xi_j}a$ plus lower order and has the advantage that the adjoint is the conjugate symbol.</p>
+<p>The calculus is closed: $a(x,D)b(x,D)=c(x,D)$ with $c\sim\sum_\alpha\frac{1}{\alpha!}\partial_\xi^\alpha a\,D_x^\alpha b$, the leading term is the product of the principal symbols, and the commutator has leading order $m+m'-1$ with symbol $\frac1i\{a,b\}$, the Poisson bracket. The adjoint is $a^*(x,\xi)\sim\sum_\alpha\frac{1}{\alpha!}\partial_\xi^\alpha D_x^\alpha\overline{a}$. An elliptic symbol, one bounded below by $c(1+|\xi|)^m$ for large $|\xi|$, has a parametrix $b \in S^{-m}$ with $ab-1$ and $ba-1$ smoothing; hence an elliptic operator is invertible modulo smoothing, is Fredholm between Sobolev spaces, and obeys the elliptic regularity $au \in H^{s-m}_p\Rightarrow u \in H^s_p$, with the smooth case included.</p>
+<p>On $L^2$ the operators of order $0$ are bounded, by Calderón–Vaillancourt, and operators of order $m$ map $H^s_2$ to $H^{s-m}_2$, the $L^p$ version holding for the symbols whose derivatives are bounded, as for the elliptic operators; Gårding's inequality turns the ellipticity and a positivity hypothesis on the symbol into a lower bound for the quadratic form, $\operatorname{Re}\langle au,u\rangle\ge c'\|u\|^2_{H^{m/2}}-C\|u\|^2_{L^2}$. The principal symbol is invariant under diffeomorphisms and transforms by the cotangent lift, so the calculus is defined on any smooth manifold, where the operators form a filtered algebra with elliptic parametrices and Fredholm operators of finite index. The wavefront set and the propagation of singularities, the semiclassical calculus and the index theorem are not covered here' subjects.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x$, $\xi$</td>
+<td>space and frequency variables in $\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$\alpha,\beta$</td>
+<td>multi-indices</td>
+</tr>
+<tr>
+<td>$D^\alpha=(-i)^{|\alpha|}\partial^\alpha$</td>
+<td>derivative convention</td>
+</tr>
+<tr>
+<td>$S^m$, $S^\infty$, $S^{-\infty}$</td>
+<td>symbol classes, smoothing class</td>
+</tr>
+<tr>
+<td>$a\sim\sum_ja_j$</td>
+<td>asymptotic expansion</td>
+</tr>
+<tr>
+<td>$a(x,D)=\mathrm{Op}(a)$</td>
+<td>operator with symbol $a$ (left quantisation)</td>
+</tr>
+<tr>
+<td>$a^w(x,D)$</td>
+<td>Weyl quantisation</td>
+</tr>
+<tr>
+<td>$K_a(x,y)$</td>
+<td>kernel of $a(x,D)$, image variable first</td>
+</tr>
+<tr>
+<td>$c(x,\xi)$</td>
+<td>composition symbol</td>
+</tr>
+<tr>
+<td>$\{a,b\}$</td>
+<td>Poisson bracket</td>
+</tr>
+<tr>
+<td>$a^*$</td>
+<td>symbol of the formal adjoint</td>
+</tr>
+<tr>
+<td>$\sigma_m(a)$, $a_m$</td>
+<td>principal symbol</td>
+</tr>
+<tr>
+<td>$H^s_p$, $\langle D\rangle^s$</td>
+<td>Bessel-potential spaces and Bessel potentials</td>
+</tr>
+<tr>
+<td>$T^*M$, $\sigma_m(T)$</td>
+<td>cotangent bundle and principal symbol on a manifold</td>
+</tr>
+<tr>
+<td>$R_1,R_2$</td>
+<td>smoothing remainders</td>
+</tr>
+<tr>
+<td>$M_{x_k}$</td>
+<td>operator of multiplication by $x_k$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lars Hörmander, <em>The Analysis of Linear Partial Differential Operators III</em> (Springer, 1985), for the calculus of pseudodifferential operators, composition, parametrices and Gårding's inequality.</li>
+<li>Lars Hörmander, "Pseudo-differential operators", <em>Communications on Pure and Applied Mathematics</em> 18 (1965), 501–517, for the original systematic calculus and the symbol classes.</li>
+<li>Joseph J. Kohn and Louis Nirenberg, "An algebra of pseudo-differential operators", <em>Communications on Pure and Applied Mathematics</em> 18 (1965), 269–305, for the algebra of operators and the parametrix construction.</li>
+<li>Alberto P. Calderón and Rémi Vaillancourt, "A class of bounded pseudo-differential operators", <em>Proceedings of the National Academy of Sciences</em> 69 (1972), 1185–1187, for the $L^2$ boundedness of operators with symbols in $S^0$.</li>
+<li>Louis Boutet de Monvel, "Boundary problems for pseudo-differential operators", <em>Acta Mathematica</em> 126 (1971), 11–51, for the calculus with boundary and the algebra of boundary problems.</li>
+<li>François Trèves, <em>Introduction to Pseudodifferential and Fourier Integral Operators</em>, vol. 1 (Plenum, 1980), for a detailed treatment of the calculus and its applications.</li>
+<li>Michael E. Taylor, <em>Pseudodifferential Operators</em> (Princeton University Press, 1981), for the calculus on manifolds, the principal symbol and elliptic regularity.</li>
+<li>Lars Hörmander, "The Weyl calculus of pseudo-differential operators", <em>Communications on Pure and Applied Mathematics</em> 32 (1979), 359–443, for the Weyl quantisation and its invariance and positivity properties.</li>
+<li>Lars Gårding, "Dirichlet's problem for linear elliptic partial differential equations", <em>Mathematica Scandinavica</em> 1 (1953), 55–72, for the inequality bearing his name.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Classical Geometric Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-classical-geometric-groups"><strong>List of Classical Geometric Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the classical geometric groups of the corpus — the orthogonal, unitary and symplectic groups — each with the form it preserves and the article that defines it. A classical group is the isometry group of a non-degenerate form: a symmetric bilinear form gives the orthogonal group $\operatorname{O}(V,q)$ and its determinant-one subgroup $\operatorname{SO}(V,q)$, a Hermitian form gives the unitary group $\operatorname{U}(V,h)$ and $\operatorname{SU}(V,h)$, and an alternating form gives the symplectic group $\operatorname{Sp}(V,\omega)$. With the general and special linear groups of the preceding catalogue, these are the groups that the corpus uses to generate the four infinite families $A$, $B$, $C$, $D$ of the classification of simple Lie algebras.</p>
+<p>Every entry points to the article that introduces the group. The article introduces nothing and proves nothing: it records the form each group preserves, the determinant constraint, the centre, the compactness and the family, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the groups it lists the cases in which an expected parallel fails or a symbol carries two meanings: the orthogonal group is not connected, so it fails the connectedness that the other compact classical groups have; $\operatorname{SO}(n)$ has centre $\{\pm I\}$ for even $n$ and trivial centre for odd $n$, so the centre is not uniform in the family; the symbol $\operatorname{Sp}$ denotes both the compact quaternionic unitary group $Sp(n)$ and the split symplectic group $Sp(2n,F)$; the quaternionic determinant cannot be defined as an ordinary determinant and requires the Dieudonné construction; a degenerate form has an isometry group that is not a classical group; and $\operatorname{O}(V,q)$ is defined by a form, so it is not a group-layer object, each with the failure named and the article that records it.</p>
+<h2 id="the-construction-from-a-form">The Construction from a Form</h2>
+<p>The three classical families are the isometry groups of the three types of non-degenerate form, and the definition is uniform: an isometry is a linear isomorphism preserving the form.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the isometry group $\operatorname{Isom}(V,\beta)$</td>
+<td>$\{g \in GL(V) : \beta(gx,gy) = \beta(x,y)\}$; the definition of a classical group from a form</td>
+<td><em>Matrix Groups and Classical Groups</em>; <em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>the orthogonal group $\operatorname{O}(V,q)$</td>
+<td>the isometries of a quadratic form $q$, equivalently of its polar form $B$</td>
+<td><em>Isometries and Orthogonal Transformations</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the special orthogonal group $\operatorname{SO}(V,q)$</td>
+<td>the isometries of determinant $+1$; the kernel of $\det$ on $\operatorname{O}(V,q)$</td>
+<td><em>Isometries and Orthogonal Transformations</em>; <em>The Rotation Group and Orientation</em></td>
+</tr>
+<tr>
+<td>the similarity group $GO(V,q)$</td>
+<td>the maps with $q(Tv) = c\,q(v)$ for a multiplier $c$; its multiplier group</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the unitary group $\operatorname{U}(V,h)$</td>
+<td>the isometries of a Hermitian form; a sesquilinear form with an involution</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>Hermitian Forms and Involutions</em></td>
+</tr>
+<tr>
+<td>the special unitary group $\operatorname{SU}(V,h)$</td>
+<td>the isometries of determinant one; $\operatorname{SU}(V,h) = \operatorname{U}(V,h) \cap SL(V)$</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the symplectic group $\operatorname{Sp}(V,\omega)$</td>
+<td>the isometries of a non-degenerate alternating form; contained in $SL(V)$ by the Pfaffian</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the family of a classical group</td>
+<td>the orthogonal, unitary and symplectic groups generate the families $B_n$, $D_n$, $A_n$ and $C_n$</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>Root Systems and Classification</em></td>
+</tr>
+<tr>
+<td>the compact and split real forms</td>
+<td>each complex classical group has a compact real form and split real forms; the forms are the $O(p,r)$ and $U(p,r)$</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>The Orthogonal Lie Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-orthogonal-groups">The Orthogonal Groups</h2>
+<p>The orthogonal group is generated by the reflections, and the Cartan–Dieudonné theorem controls the parity of the number of reflections; the determinant separates the two components of the real group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or statement</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the reflection $\tau_v$</td>
+<td>the isometry fixing the hyperplane $v^\perp$; $\tau_v(x) = x - 2B(x,v)v/q(v)$</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the Cartan–Dieudonné theorem</td>
+<td>every isometry of a non-degenerate quadratic space is a product of reflections, at most $n$ of them, and at most $n+1$ in the affine case</td>
+<td><em>Isometries and Orthogonal Transformations</em>; <em>List of Affine and Euclidean Groups</em></td>
+</tr>
+<tr>
+<td>the parity of the reflection length</td>
+<td>the parity is an invariant; $\operatorname{SO}(V,q)$ is the even part</td>
+<td><em>The Rotation Group and Orientation</em></td>
+</tr>
+<tr>
+<td>the range of the determinant</td>
+<td>$\det A = \pm 1$ for $A \in O(n)$; $\operatorname{O}(V,q)$ has at most two components over a field</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the orthogonal group $O(p,r)$</td>
+<td>the isometry group of a real form of signature $(p,r)$; $\operatorname{O}(n) = O(n,0)$ compact, $\operatorname{O}(n,1)$ the Lorentz-type group</td>
+<td><em>The Rotation Group and Orientation</em>; <em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>the centres</td>
+<td>$Z(SO(n)) = \{\pm I\}$ for even $n \geq 4$ and trivial for odd $n \geq 3$; $Z(O(n)) = \{\pm I\}$</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the fundamental group of $SO(n)$</td>
+<td>$\pi_1(SO(n)) = \mathbb{Z}/2$ for $n \geq 3$; the double cover is $\operatorname{Spin}(n)$</td>
+<td><em>Matrix Groups and Classical Groups</em>; <em>List of Clifford Algebras and Spin Groups</em></td>
+</tr>
+<tr>
+<td>the rotations of the plane and of space</td>
+<td>$\operatorname{SO}(2) \cong S^1$; a rotation of $\mathbb{R}^3$ has an axis and an angle; $\operatorname{SO}(3) \cong \mathbb{RP}^3$</td>
+<td><em>The Rotation Group and Orientation</em>; <em>Quaternion Rotations and Reflections</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-unitary-groups">The Unitary Groups</h2>
+<p>A Hermitian form has a signature by the inertia theorem, and its isometry group is the unitary group of that signature; the definite case gives the compact group $U(n)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or statement</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Hermitian Gram matrix $H$</td>
+<td>$H^\dagger = H$; the form is $h(u,v) = u^\dagger Hv$</td>
+<td><em>Hermitian Forms and Involutions</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the inertia theorem for Hermitian forms</td>
+<td>a unique signature $(p,r,z)$ with normal form $\operatorname{diag}(I_p,-I_r,0_z)$; non-degenerate when $z = 0$</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the group $U(p,r)$</td>
+<td>the isometry group of a Hermitian form of signature $(p,r)$, of real dimension $n^2$</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the group $SU(p,r)$</td>
+<td>the determinant-one subgroup, of real dimension $n^2 - 1$</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the standard compact groups $U(n)$, $SU(n)$</td>
+<td>$A^*A = I$ and $\det A = 1$; dimensions $n^2$ and $n^2 - 1$; $U(n)$ compact connected with centre $U(1)$</td>
+<td><em>Matrix Groups and Classical Groups</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the sequence $1 \to SU(n) \to U(n) \to U(1) \to 1$</td>
+<td>the determinant on $U(n)$ surjects onto the circle</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the intersection formula</td>
+<td>$h = s + ia$ gives $\operatorname{U}(V,h) = \operatorname{O}(V_{\mathbb{R}},s) \cap \operatorname{Sp}(V_{\mathbb{R}},a)$</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the case $U(1,1)$</td>
+<td>non-compact, containing a hyperbolic and a compact one-parameter subgroup; $SU(1,1) \cong SL(2,\mathbb{R}) \cong Sp(2,\mathbb{R})$</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the compact form inside the split form</td>
+<td>$Sp(2m,\mathbb{R}) \cap O(2m) = U(m)$, a maximal compact subgroup</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-symplectic-groups">The Symplectic Groups</h2>
+<p>An alternating form has even dimension over a field of characteristic not $2$, and its isometry group has determinant $1$ by the Pfaffian; the compact quaternionic unitary group is the compact real form of the family.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or statement</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the symplectic group $Sp(2m,F)$</td>
+<td>$M^T\Omega M = \Omega$; dimension $2m^2 + m$; contained in $SL(2m,F)$</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the determinant constraint</td>
+<td>every symplectic matrix has determinant $1$, by the Pfaffian</td>
+<td><em>Symplectic Forms and Poisson Brackets</em>; <em>The Determinant and Alternating Forms</em></td>
+</tr>
+<tr>
+<td>the case $Sp(2,F) = SL(2,F)$</td>
+<td>the two-dimensional coincidence of the symplectic and special linear groups</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the compact quaternionic group $Sp(n)$</td>
+<td>$A^*A = I$ over $\mathbb{H}$; compact connected; dimension $n(2n+1)$; the compact real form of $Sp(2n,\mathbb{C})$</td>
+<td><em>Matrix Groups and Classical Groups</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the two uses of the symbol $\operatorname{Sp}$</td>
+<td>$Sp(n)$ the compact quaternionic unitary group, $Sp(2n,F)$ the split symplectic group; separated only by context</td>
+<td><em>Matrix Groups and Classical Groups</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the symplectic group of a form $\operatorname{Sp}(V,\omega)$</td>
+<td>the isometries of a non-degenerate alternating form; the Lagrangians are its maximal isotropic subspaces</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the quasi-split forms</td>
+<td>$\operatorname{Sp}(V,\omega)$ has no non-trivial compact form other than $Sp(n)$; the split form is $Sp(2n,\mathbb{R})$</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-four-families-and-the-small-coincidences">The Four Families and the Small Coincidences</h2>
+<p>Over $\mathbb{C}$ the Lie algebras of the classical groups are the four infinite families, and the low-dimensional coincidences among the small groups are recorded with them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>The group over $\mathbb{C}$</th>
+<th>Rank and dimension</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_n$</td>
+<td>$SL(n+1,\mathbb{C})$, with compact form $SU(n+1)$</td>
+<td>rank $n$, dimension $n(n+2)$</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>Root Systems and Classification</em></td>
+</tr>
+<tr>
+<td>$B_n$</td>
+<td>$SO(2n+1,\mathbb{C})$, with compact form $SO(2n+1)$</td>
+<td>rank $n$, dimension $n(2n+1)$</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>The Orthogonal Lie Algebra</em></td>
+</tr>
+<tr>
+<td>$C_n$</td>
+<td>$Sp(2n,\mathbb{C})$, with compact form $Sp(n)$</td>
+<td>rank $n$, dimension $n(2n+1)$</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>Root Systems and Classification</em></td>
+</tr>
+<tr>
+<td>$D_n$</td>
+<td>$SO(2n,\mathbb{C})$, with compact form $SO(2n)$</td>
+<td>rank $n$, dimension $n(2n-1)$</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>The Orthogonal Lie Algebra</em></td>
+</tr>
+<tr>
+<td>the duality of $B$ and $C$</td>
+<td>equal dimension and rank, with dual root systems, long and short roots interchanged</td>
+<td>—</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the exception $D_2$</td>
+<td>$\mathfrak{so}(4) \cong \mathfrak{sl}(2) \oplus \mathfrak{sl}(2)$; $D_2$ is not simple, $D_n$ is simple for $n \geq 3$</td>
+<td>—</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the coincidence $A_1 = B_1 = C_1$</td>
+<td>$SL(2)$, $SO(3)$ and $Sp(2)$ share the Lie algebra $\mathfrak{sl}(2)$</td>
+<td>—</td>
+<td><em>The Unitary and Symplectic Groups</em>; <em>The Orthogonal Lie Algebra</em></td>
+</tr>
+<tr>
+<td>$SU(2)$ and the unit quaternions</td>
+<td>$SU(2) \cong \mathbb{H}^1 = S^3 = Sp(1)$</td>
+<td>—</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the double covers</td>
+<td>$SU(2) \to SO(3)$ and $SU(2) \times SU(2) \to SO(4)$, with kernels $\{\pm1\}$ and $\{\pm(1,1)\}$</td>
+<td>—</td>
+<td><em>Matrix Groups and Classical Groups</em>; <em>Quaternion Rotations and Reflections</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-and-warnings">Non-examples and Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why the expected statement fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the orthogonal group $O(n)$</td>
+<td>it is not connected; it has two components, and $\operatorname{SO}(n)$ is only one of them</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the centre of $\operatorname{SO}(n)$</td>
+<td>it is $\{\pm I\}$ for even $n \geq 4$ and trivial for odd $n \geq 3$; the centre is not uniform in the family</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the quaternionic determinant</td>
+<td>it cannot be an ordinary determinant and requires the Dieudonné construction, valued in $\mathbb{H}^\times/[\mathbb{H}^\times,\mathbb{H}^\times]$</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the isometry group of a degenerate form</td>
+<td>it is not a classical group; non-degeneracy is part of the definition of $O$, $U$ and $Sp$</td>
+<td><em>Bilinear Forms</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the compact unitary group $U(n)$</td>
+<td>it is the quotient $(\operatorname{SU}(n) \times U(1))/\mu_n$ and not the direct product $\operatorname{SU}(n) \times U(1)$; the determinant sequence $1 \to \operatorname{SU}(n) \to U(n) \to U(1) \to 1$ has kernel $\mu_n$</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the group $Sp(n)$ of the quaternionic form</td>
+<td>it is not the split group $Sp(2n,F)$, despite the shared symbol; the context separates them and the two have different real and complex dimensions</td>
+<td><em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the group $O(V,q)$ as a group-layer object</td>
+<td>it is <em>defined</em> by a form; the group-layer transformation group is $\operatorname{GL}(V)$, and $O(V,q)$ belongs to the form-preserving layer</td>
+<td><em>Transformation Groups</em>; <em>Matrix Groups and Classical Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Objects that a reader may expect in a list of classical geometric groups, and does not find here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the general and special linear groups</td>
+<td>they preserve the linear structure and no form; they are the linear geometric groups</td>
+<td><em>List of Linear Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the projective quotients $PO$, $PSO$, $PU$, $PSU$, $PSp$</td>
+<td>they are the quotients by the centre and are catalogued with the projective groups</td>
+<td><em>List of Projective Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the spin and pin groups</td>
+<td>they are constructed from the Clifford algebra and are listed with it</td>
+<td><em>List of Clifford Algebras and Spin Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{GL}_n(\mathbb{H})$ and the quaternionic classical groups</td>
+<td>the quaternionic linear group is recorded with the automorphism and matrix groups</td>
+<td><em>Matrix Groups and Classical Groups</em></td>
+</tr>
+<tr>
+<td>the finite classical groups $PSL_n(q)$, $PSp_{2n}(q)$, $PSU_n(q)$, $P\Omega^\pm_{2n}(q)$</td>
+<td>the finite versions over $\mathbb{F}_q$ are recorded with the linear groups and the finite groups of Lie type</td>
+<td><em>Finite Simple Groups of Lie Type</em>; <em>List of Linear Geometric Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the classical geometric groups of the corpus: the orthogonal groups $\operatorname{O}(V,q)$ and $\operatorname{SO}(V,q)$, generated by reflections with the Cartan–Dieudonné theorem and the parity of the reflection length, together with the real forms $O(p,r)$; the unitary groups $\operatorname{U}(V,h)$ and $\operatorname{SU}(V,h)$, with the inertia theorem, the signature $(p,r,z)$, the groups $U(p,r)$ and the intersection formula with the orthogonal and symplectic groups; the symplectic groups $\operatorname{Sp}(V,\omega)$ and $Sp(2m,F)$, with the Pfaffian determinant constraint and the compact quaternionic group $Sp(n)$; and the four families $A$, $B$, $C$, $D$ with their ranks, dimensions and small coincidences. Beside the examples stand the non-examples: the disconnectedness of $O(n)$, the centre of $SO(n)$ that changes with the parity of $n$, the Dieudonné determinant, the degenerate forms and the two meanings of $\operatorname{Sp}$. The list introduces and proves nothing; it is the index of the classical groups of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are those of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V$, $q$, $B$</td>
+<td>a finite-dimensional space, a quadratic form, its polar form with $q(v) = B(v,v)$</td>
+</tr>
+<tr>
+<td>$h$, $s$, $a$, $\sigma$</td>
+<td>a Hermitian form, its symmetric and alternating parts, the involution</td>
+</tr>
+<tr>
+<td>$\omega$, $\Omega$</td>
+<td>an alternating form, the standard alternating matrix</td>
+</tr>
+<tr>
+<td>$\operatorname{O}(V,q)$, $\operatorname{SO}(V,q)$, $O(p,r)$</td>
+<td>the orthogonal group, its determinant-one subgroup, the real form of signature $(p,r)$</td>
+</tr>
+<tr>
+<td>$\operatorname{U}(V,h)$, $\operatorname{SU}(V,h)$, $U(p,r)$</td>
+<td>the unitary group, its determinant-one subgroup, the real form of signature $(p,r)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sp}(V,\omega)$, $Sp(2m,F)$</td>
+<td>the symplectic group of a form, the standard split group</td>
+</tr>
+<tr>
+<td>$Sp(n)$</td>
+<td>the compact quaternionic unitary group, the compact real form of $Sp(2n,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$GL(V)$, $SL(V)$</td>
+<td>the general and special linear groups</td>
+</tr>
+<tr>
+<td>$GO(V,q)$, $c$</td>
+<td>the similarity group, its multiplier</td>
+</tr>
+<tr>
+<td>$\tau_v$, $v^\perp$</td>
+<td>the reflection in $v$, the hyperplane orthogonal to $v$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(I_p,-I_r,0_z)$</td>
+<td>the normal form of a Hermitian form of signature $(p,r,z)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}$</td>
+<td>the Pfaffian</td>
+</tr>
+<tr>
+<td>$A_n$, $B_n$, $C_n$, $D_n$</td>
+<td>the four infinite families of simple Lie algebras</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Larry C. Grove, <em>Classical Groups and Geometric Algebra</em> (American Mathematical Society, 2002), for the orthogonal, unitary and symplectic groups, their forms and their small isomorphisms.</li>
+<li>Jean A. Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 3rd ed. 1971), for the classical groups over a general field, including the degenerate and non-commutative cases.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the Hermitian and sesquilinear forms and the classical groups they define.</li>
+<li>Roger Howe, <em>Topics in Classical Invariant Theory</em> (Yale University Press, 1989), for the structure and representations of the classical groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CW Complexes and Cellular Approximation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cw-complexes-and-cellular-approximation"><strong>CW Complexes and Cellular Approximation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A CW complex is a topological space assembled from discs, one dimension at a time: one starts with a discrete set of points, glues on copies of the interval, then copies of the disc, and so on, taking the union with the topology in which a set is open exactly when its intersection with every closed disc is closed. The definition is combinatorial — it is a recipe in terms of attaching maps — and the resulting spaces carry two structures at once. They are general enough to include every space a geometer meets in this corpus, namely the spheres, the projective spaces, the Grassmannians, the classical groups, the surfaces and the simplicial complexes; and they are rigid enough that their algebraic invariants can be computed from the combinatorial data alone.</p>
+<p>The companion article <em>The Fundamental Group and Covering Spaces</em> supplies homotopy, the fundamental group and the covering theory. The present article adds the assembling procedure, the <strong>homotopy extension property</strong> that makes the gluing homotopically well behaved, the <strong>cellular approximation theorem</strong> that lets a map be deformed until it respects the cell structure, and the <strong>cellular chain complex</strong> that computes the homology of a CW complex from its cells. The homology theory itself, simplicial and singular, is not covered here; it is used here only in the form of the standard facts that $H_n(S^n) \cong \mathbb{Z}$ and that a map of spheres has an integral degree, both of which are standard mathematics quoted with a citation and are developed in their own place there.</p>
+<p>Throughout, $D^n = \{x \in \mathbb{R}^n : |x| \leq 1\}$ is the closed unit disc, $S^{n-1} = \partial D^n$ its boundary, and $D^n \setminus S^{n-1}$ its interior, written $\mathring D^n$. A map means a continuous map. No measure, integral or derivative is used; the theory is combinatorial and topological, and where a smooth statement would be natural it is deferred.</p>
+<h2 id="cw-complexes">CW Complexes</h2>
+<h3 id="the-construction">The Construction</h3>
+<p><strong>Definition.</strong> A <strong>CW complex</strong> is a pair $(X, \mathcal{E})$ where $X$ is a topological space and $\mathcal{E} = \coprod_{n \geq 0} \mathcal{E}_n$ is a family of maps, the <strong>attaching maps</strong>,</p>
+<p>$$
+\varphi_\alpha : D^n \longrightarrow X, \qquad \alpha \in \mathcal{E}_n,
+$$</p>
+<p>such that, writing $e^n_\alpha = \varphi_\alpha(\mathring D^n)$ for the associated <strong>open $n$-cell</strong>:</p>
+<ol>
+<li>the restriction $\varphi_\alpha|_{\mathring D^n}$ is a homeomorphism onto $e^n_\alpha$, and $X$ is the disjoint union of the cells $e^n_\alpha$;</li>
+<li>the <strong>closure finiteness</strong> condition: for each $n$ and $\alpha$ the closure $\overline{e^n_\alpha}$ meets only finitely many cells;</li>
+<li>the <strong>weak topology</strong> condition: a subset $A \subseteq X$ is closed if and only if $A \cap \overline{e^n_\alpha}$ is closed for every cell, equivalently $\varphi_\alpha^{-1}(A)$ is closed in $D^n$ for every attaching map.</li>
+</ol>
+<p>The <strong>$n$-skeleton</strong> is $X^n = \bigcup_{k \leq n} \bigcup_{\alpha \in \mathcal{E}_k} e^k_\alpha$, a closed subspace; the space is <strong>finite-dimensional</strong> of dimension $n$ if $\mathcal{E}_k = \varnothing$ for $k > n$ and $\mathcal{E}_n \neq \varnothing$, and <strong>finite</strong> if $\mathcal{E}$ is finite. The <strong>dimension</strong> of $X$ is the supremum of the dimensions of its cells.</p>
+<p>Condition (3) is the substantive one. It says that the topology of $X$ is determined by the closed discs and their attaching maps, and it is the reason a function out of $X$ is continuous exactly when its restrictions to the closed cells are. Conditions (1) and (2) say that the cell decomposition is discrete in the sense that each cell's closure meets only finitely many cells; they do not bound the total number of cells, which may be uncountable, and a CW complex with countably many cells may be enumerated cell by cell in order of dimension.</p>
+<p><strong>Proposition (the pushout square).</strong> The square</p>
+<p>$$
+\coprod_{\alpha \in \mathcal{E}_n} S^{n-1} \longrightarrow X^{n-1}, \qquad \coprod_{\alpha \in \mathcal{E}_n} D^n \longrightarrow X^n,
+$$</p>
+<p>in which the left vertical map is the inclusion of the boundary and the upper horizontal map is the restriction of the attaching maps, is a pushout in the category of topological spaces: $X^n$ is the quotient of the disjoint union $X^{n-1} \sqcup \coprod_\alpha D^n$ by the identification $x \sim \varphi_\alpha(x)$ for $x \in S^{n-1}$, and the topology is the quotient topology.</p>
+<p><em>Proof.</em> The quotient description is a restatement of the construction; the quotient topology is the weak topology because a set is closed in the quotient exactly when its preimage in each $D^n$ and in $X^{n-1}$ is closed. $\square$</p>
+<p><strong>Definition.</strong> A CW complex is a <strong>subcomplex</strong> of $(X,\mathcal{E})$ if it is a union of cells whose closures are contained in it; a subcomplex is a closed subspace and is itself a CW complex with the induced cells. The <strong>$k$-skeleton</strong> $X^k$ is the basic example.</p>
+<p><strong>Definition.</strong> A <strong>CW pair</strong> is a pair $(X, A)$ with $A$ a subcomplex of the CW complex $X$; the <strong>quotient</strong> $X/A$ is then a CW complex whose cells are the cells of $X$ not in $A$, together with one new basepoint cell.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (spheres).</strong> $S^n$ has a CW structure with one $0$-cell $e^0 = \{N\}$ and one $n$-cell, attached by the constant map $S^{n-1} \to \{N\}$; the $S^{n-1}$ maps to the point, so the $n$-disc closes up into the sphere. Equivalently $S^n$ is the one-point compactification of $\mathbb{R}^n$, and the complement of the point is the open cell.</p>
+<p><strong>Example (projective spaces).</strong> $\mathbb{RP}^n$ has one cell in each dimension $0, 1, \ldots, n$, the cell $e^k$ being the set of lines whose last nonzero coordinate is in position $k+1$; the attaching map of $e^k$ is the quotient $S^{k-1} \to \mathbb{RP}^{k-1}$, of degree $0$ for odd $k$ and degree $2$ for even $k$ in the sense of the cellular boundary formula below. Similarly $\mathbb{CP}^n$ has one cell in each even dimension $0, 2, \ldots, 2n$, and $\mathbb{HP}^n$ one cell in each dimension divisible by $4$, up to $4n$.</p>
+<p><strong>Example (Grassmannians).</strong> The Grassmannian $G_k(\mathbb{R}^n)$ of $k$-planes in $\mathbb{R}^n$ carries the <strong>Schubert cell decomposition</strong>: for a fixed complete flag $0 = V_0 \subset V_1 \subset \cdots \subset V_n = \mathbb{R}^n$, the cells are the sets of $k$-planes with prescribed intersection dimensions $\dim(W \cap V_i)$, indexed by partitions $\lambda$ with at most $k$ parts each at most $n-k$. This is the cell structure behind <strong>Schubert calculus</strong> and the article <em>Grassmannians and Stiefel Manifolds</em>; it is recorded here as the source of the CW structures on the classical groups.</p>
+<p><strong>Example (surfaces).</strong> Every closed surface has a CW structure: the torus has one $0$-cell, two $1$-cells and one $2$-cell, the $2$-cell attached along the commutator $aba^{-1}b^{-1}$; the real projective plane has one cell in each dimension, the $2$-cell attached along $a^2$.</p>
+<p><strong>Example (graphs).</strong> A connected graph is a CW complex of dimension $1$; a finite connected graph with $V$ vertices and $E$ edges has $\pi_1$ free of rank $E - V + 1$, by van Kampen applied to the wedge decomposition.</p>
+<h2 id="homotopy-theoretic-properties">Homotopy-Theoretic Properties</h2>
+<h3 id="the-homotopy-extension-property">The Homotopy Extension Property</h3>
+<p><strong>Definition.</strong> A pair $(X,A)$ has the <strong>homotopy extension property (HEP)</strong> if, for every space $Y$, every homotopy $H : A \times I \to Y$ and every map $f : X \to Y$ with $f|_A = H(\cdot, 0)$, there exists a homotopy $\tilde H : X \times I \to Y$ with $\tilde H|_{A \times I} = H$ and $\tilde H(\cdot, 0) = f$. Equivalently, every pair of maps $X \times \{0\} \cup A \times I \to Y$ extends to $X \times I$.</p>
+<p><strong>Theorem.</strong> A CW pair $(X,A)$ has the homotopy extension property.</p>
+<p><em>Proof sketch.</em> It suffices to construct a retraction of $X \times I$ onto $X \times \{0\} \cup A \times I$; the extension is then obtained by composition. For a single cell, $D^n \times I$ retracts onto $D^n \times \{0\} \cup S^{n-1} \times I$ by radial projection from a point outside, and the retractions for the cells assemble, using the weak topology, into a retraction for the pair. $\square$</p>
+<p><strong>Definition.</strong> A pair with the HEP is a <strong>cofibration</strong>; a map $A \hookrightarrow X$ is a cofibration exactly when it has the HEP. Cofibrations are, up to homotopy, the inclusions one may quotient by and attach along without changing the homotopy type.</p>
+<p><strong>Corollary.</strong> If $(X,A)$ has the HEP then the quotient map $X \to X/A$ induces an isomorphism on homology and cohomology of the pair in the sense of the excision statement recorded: the pair $(X,A)$ and the pair $(X/A, \ast)$ have isomorphic relative invariants. Consequently $H_n(X,A) \cong \tilde H_n(X/A)$.</p>
+<p><em>Proof.</em> By the HEP the inclusion $A \subseteq X$ is a cofibration and the collapse $X \to X/A$ is a homotopy equivalence of pairs. $\square$</p>
+<h3 id="cellular-approximation">Cellular Approximation</h3>
+<p><strong>Definition.</strong> A map $f : X \to Y$ of CW complexes is <strong>cellular</strong> if $f(X^n) \subseteq Y^n$ for every $n$: it sends the $n$-skeleton into the $n$-skeleton.</p>
+<p><strong>Theorem (cellular approximation).</strong> Every map $f : X \to Y$ of CW complexes is homotopic to a cellular map; if $f$ is already cellular on a subcomplex $A \subseteq X$, the homotopy may be taken relative to $A$.</p>
+<p><em>Proof sketch.</em> Induct on the skeleta. Suppose $f(X^{n-1}) \subseteq Y^{n-1}$ after a homotopy relative to $A$; the obstruction to pushing $f(X^n)$ into $Y^n$ lies in the cells of $Y$ of dimension $> n$. For a single $n$-cell, the image $f(D^n)$ meets the interior of a $Y$-cell of dimension $k > n$, and by a general position argument in the interior of a disc of dimension $k$ the image can be pushed off the interior by a homotopy relative to the boundary, because a map $D^n \to D^k$ with $k > n$ is homotopic rel boundary to a map into the boundary $S^{k-1}$ — the complement of the image of a disc in a higher-dimensional disc is path-connected and the tube around the image can be pushed out. Since cells are attached by the weak topology, the local homotopies assemble. $\square$</p>
+<p><strong>Corollary (connectivity of skeleta).</strong> If a connected CW complex $X$ has no cells of dimension $1, \ldots, n$, then $X^n$ is a single point and the pair $(X, X^n)$ has $\pi_k(X, X^n) = 0$ for $k \leq n$; more generally the pair $(X^n, X^{n-1})$ has vanishing homotopy groups in degrees below $n$ and $\pi_n$ free on the $n$-cells.</p>
+<p><strong>Corollary (low-dimensional homotopy of spheres).</strong> Cellular approximation applied to maps $S^k \to S^n$ shows that every such map is null-homotopic when $k < n$. Equivalently, $\pi_k(S^n) = 0$ for $k < n$, and the inclusion $S^n \hookrightarrow S^{n+1}$ induces an isomorphism $\pi_k(S^n) \to \pi_k(S^{n+1})$ for $k \leq n - 1$, both groups being trivial there. This is a first instance of a stability phenomenon, whose sharp form is the <strong>Freudenthal suspension theorem</strong> , written in this batch: the suspension $\sigma: \pi_k(S^n) \to \pi_{k+1}(S^{n+1})$ is an isomorphism for $k < 2n-1$ and a surjection for $k = 2n-1$, which extends the isomorphism far beyond the trivial range obtained here.</p>
+<p><strong>Remark.</strong> Cellular approximation is the reason a CW complex is a homotopically economical model: its homotopy type is determined by the attaching data of its cells up to homotopy, and maps may always be assumed to respect that data. The same argument, in the smooth category, produces the statement that a map of manifolds is homotopic to a smooth one; the smooth version needs the approximation theory of Part III and is deferred there.</p>
+<h2 id="cellular-homology">Cellular Homology</h2>
+<h3 id="the-cellular-chain-complex">The Cellular Chain Complex</h3>
+<p>Let $X$ be a CW complex. The cellular chain group in degree $n$ is the free abelian group on the $n$-cells,</p>
+<p>$$
+C_n^{\mathrm{CW}}(X) = \mathbb{Z}\bigl[\mathcal{E}_n\bigr] = \bigoplus_{\alpha \in \mathcal{E}_n} \mathbb{Z}\, e^n_\alpha,
+$$</p>
+<p>zero when there are no $n$-cells. The boundary is defined from the attaching maps.</p>
+<p><strong>Definition (degree).</strong> Let $f: S^n \to S^n$ be a map. The induced homomorphism $f_*: H_n(S^n) \to H_n(S^n)$ on the top homology is multiplication by an integer, written $\deg f$, because $H_n(S^n) \cong \mathbb{Z}$; the integer is the <strong>degree</strong> of $f$. It depends only on the homotopy class of $f$, and $\deg(f \circ g) = \deg f \cdot \deg g$, $\deg \mathrm{id} = 1$. This is standard mathematics, quoted here; the systematic treatment of the degree, including its integral representation and the Lefschetz and Brouwer theorems, is the subject , written in this batch.</p>
+<p><strong>Definition (cellular boundary).</strong> For an $n$-cell $e^n_\alpha$ let $q_\beta : X^{n-1} \to X^{n-1}/(X^{n-2} \cup \text{other } (n-1)\text{-cells}) \cong S^{n-1}$ be the collapse onto the closed $(n-1)$-cell $e^{n-1}_\beta$, a sphere because the cell is a disc modulo its boundary. The <strong>cellular boundary</strong> of $e^n_\alpha$ is</p>
+<p>$$
+\partial_n(e^n_\alpha) = \sum_{\beta \in \mathcal{E}_{n-1}} \deg\bigl(q_\beta \circ \varphi_\alpha|_{S^{n-1}}\bigr)\, e^{n-1}_\beta,
+$$</p>
+<p>the sum being finite by closure finiteness. For $n = 0$ the boundary is zero, and for $n = 1$ the sum counts signed endpoints, the degree of a map $S^0 \to S^0$ being $+1$ or $-1$ according as the map preserves or interchanges the two points.</p>
+<p><strong>Theorem.</strong> $\partial_{n-1} \circ \partial_n = 0$, so $(C_*^{\mathrm{CW}}(X), \partial_*)$ is a chain complex; and its homology is the singular homology,</p>
+<p>$$
+H_n^{\mathrm{CW}}(X) = \ker \partial_n / \operatorname{im} \partial_{n+1} \cong H_n(X).
+$$</p>
+<p><em>Proof sketch.</em> The composite vanishes because it computes the degree of a map $S^{n-1} \to S^{n-1}$ factoring through the contractible space $D^{n-1}$ after accounting for the two collapses, and a map factoring through a contractible space has degree $0$ when $n-1 \geq 1$. The identification with singular homology is by comparing both with the homology of the pair $(X^n, X^{n-1})$; the boundary above is by construction the connecting map of that pair, and the comparison uses the five lemma on the diagram of skeleta. $\square$</p>
+<h3 id="the-boundary-formula">The Boundary Formula</h3>
+<p><strong>Theorem (cellular boundary formula).</strong> For an $n$-cell $e^n_\alpha$ with attaching map $\varphi_\alpha$ and an $(n-1)$-cell $e^{n-1}_\beta$, the coefficient of $e^{n-1}_\beta$ in $\partial_n e^n_\alpha$ is the degree of the composite</p>
+<p>$$
+S^{n-1} \xrightarrow{\ \varphi_\alpha|_{S^{n-1}}\ } X^{n-1} \xrightarrow{\ q_\beta\ } S^{n-1},
+$$</p>
+<p>where $q_\beta$ collapses $X^{n-1} \setminus e^{n-1}_\beta$ to a point.</p>
+<p>This is the single formula that makes the homology of every CW complex in the corpus computable. It is stated here in the generality in which it is used; its proof is the proof of the preceding theorem.</p>
+<p><strong>Corollary.</strong> If $X$ has no two cells of consecutive dimensions, all cellular boundaries vanish and $H_n(X) \cong C_n^{\mathrm{CW}}(X)$ is free on the $n$-cells. This applies to the spheres, the complex projective spaces and the quaternionic projective spaces.</p>
+<p><strong>Example (real projective space).</strong> For $\mathbb{RP}^n$ with one cell in each dimension, the degree of the attaching map of $e^k$ is $1 + (-1)^k$: it is the degree of the quotient $S^{k-1} \to \mathbb{RP}^{k-1}$ composed with the collapse of the unique $(k-1)$-cell, and the antipodal identification contributes $(-1)^k$. Hence $C_k^{\mathrm{CW}} \cong \mathbb{Z}$ for $0 \leq k \leq n$ and the boundary $\partial_k$ is multiplication by $1+(-1)^k$, that is, $0$ for odd $k$ and $2$ for even $k$. The homology is therefore</p>
+<p>$$
+H_k(\mathbb{RP}^n) \cong \begin{cases} \mathbb{Z}, & k = 0 \text{ or } k = n \text{ with } n \text{ odd},\\ \mathbb{Z}/2\mathbb{Z}, & k \text{ odd}, \ 0 < k < n,\\ 0, & \text{otherwise}.\end{cases}
+$$</p>
+<p><strong>Example (complex projective space).</strong> For $\mathbb{CP}^n$ with one cell in each even dimension, all boundaries vanish, so $H_{2k}(\mathbb{CP}^n) \cong \mathbb{Z}$ for $0 \leq k \leq n$ and the odd-dimensional homology vanishes.</p>
+<h3 id="the-euler-characteristic">The Euler Characteristic</h3>
+<p><strong>Definition.</strong> A CW complex $X$ is <strong>of finite type</strong> if it has finitely many cells in each dimension. For such an $X$ the <strong>Euler characteristic</strong> is</p>
+<p>$$
+\chi(X) = \sum_{n \geq 0} (-1)^n \#\mathcal{E}_n,
+$$</p>
+<p>the alternating sum of the numbers of cells.</p>
+<p><strong>Theorem.</strong> If $X$ has finite type and finitely many nonzero homology groups of finite rank, then</p>
+<p>$$
+\chi(X) = \sum_{n \geq 0} (-1)^n \operatorname{rk} H_n(X),
+$$</p>
+<p>and the number is independent of the CW structure.</p>
+<p><em>Proof.</em> The alternating sum of the ranks of the terms of a finite chain complex of free abelian groups equals the alternating sum of the ranks of its homology, by the rank–nullity theorem applied to each $\partial_n$. Independence of the structure follows because the right-hand side depends only on $X$. $\square$</p>
+<p><strong>Example.</strong> For the torus the cell count gives $\chi = 1 - 2 + 1 = 0$; from homology, $\operatorname{rk}H_0 - \operatorname{rk}H_1 + \operatorname{rk}H_2 = 1 - 2 + 1 = 0$. For the sphere $S^n$, $\chi = 1 + (-1)^n$. For $\mathbb{RP}^2$, $\chi = 1 - 1 + 1 = 1$, matching $1 - 0 + 0$ from the ranks of $H_*(\mathbb{RP}^2) = (\mathbb{Z}, \mathbb{Z}/2, 0)$: a $\mathbb{Z}/2$ contributes rank $0$.</p>
+<p><strong>Remark.</strong> The Euler characteristic of a finite CW complex may be computed without knowing the homology, and this is how it is used in practice; the identity with the alternating sum of Betti numbers is a theorem, and it is the reason the two definitions agree.</p>
+<h2 id="operations-on-cw-complexes">Operations on CW Complexes</h2>
+<p><strong>Proposition (quotients and products).</strong> Let $X$ be a CW complex.</p>
+<ol>
+<li>If $A\subseteq X$ is a subcomplex, then $X/A$ is a CW complex whose cells are the cells of $X$ not in $A$ together with the collapsed image of $A$ as a single $0$-cell, and the quotient map $X\to X/A$ is cellular.</li>
+<li>The product $X\times Y$ of two CW complexes, topologised by the <strong>weak topology</strong> on the product's cells — the topology whose closed subsets are those meeting each closed cell in a closed set, in general finer than the product topology — is a CW complex whose $n$-cells are the products of a $p$-cell with a $q$-cell, $p+q = n$. The two topologies agree when $X$ or $Y$ is locally compact, and the identity map between them is a homotopy equivalence in general.</li>
+<li>The smash product $X\wedge Y = (X\times Y)/(X\vee Y)$, the mapping cylinder of a cellular map, the mapping cone and the reduced suspension $\Sigma X = S^1\wedge X$ are CW complexes, and the reduced suspension is the based suspension restricted to complexes.</li>
+<li>If $p : Y\to X$ is a covering map of a path-connected CW complex, then $Y$ carries a CW structure whose cells are the cells of $X$ lifted along the covering, and the cellular chain complex of $Y$ is the chain complex of $X$ tensored with the free module on the fibre, with the local system of <em>The Fundamental Group and Covering Spaces</em> twisting the differentials; in particular $Y$ has the same dimension as $X$.</li>
+</ol>
+<p><em>Proof.</em> (1) The characteristic maps of the cells not in $A$ compose with the quotient, and the boundary of the collapsed image inherits a cell structure from the filtration. (2) The weak topology on the product is the standard one making the product of CW complexes a CW complex; that it agrees with the product topology when one factor is locally compact is the usual theorem, and the difference in general is repaired by the homotopy equivalence of the two topologies. (3) Each construction is given its cells by the description of the maps involved, and the reduced suspension is the case $Y = S^1$. (4) The cells of $X$ lift to cells of $Y$ after a subdivision or a cellular approximation of the attaching maps, and the identification of the chain complexes is the standard computation of the cellular chains of a covering space. $\square$</p>
+<p><strong>Example.</strong> The quotient $D^n/S^{n-1}\cong S^n$ exhibits the sphere as the quotient of a disc by a subcomplex whose image is one point; the product $S^p\times S^q$ has four cells by (2), which gives the homology of a product directly in the cellular picture; and the universal cover of a graph is the tree whose $0$-cells are the vertices of a chosen lifting, which is the cellular form of the correspondence between free groups and trees used in <em>The Fundamental Group and Covering Spaces</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A CW complex is a space built from discs by attaching maps, with the closure finiteness and weak topology conditions; its $n$-skeleton is obtained from the previous one by a pushout along the boundaries of the $n$-discs, and every sphere, projective space, Grassmannian, surface and simplicial complex carries such a structure. The weak topology makes continuity checkable cell by cell, and closure finiteness makes each cell meet only finitely many others.</p>
+<p>CW pairs have the homotopy extension property, equivalently the inclusion of a subcomplex is a cofibration; consequently collapsing a subcomplex is a homotopy equivalence of pairs and computes relative invariants. Cellular approximation says every map of CW complexes is homotopic to a cellular one, relative to a subcomplex on which it is already cellular, so maps may be assumed to respect skeleta and the low-dimensional homotopy of a CW complex is read from its cells.</p>
+<p>The cellular chain complex is free on the cells in each degree, with boundary given by the degrees of the composites of the attaching maps with the collapses onto the cells of one dimension less; its homology is the singular homology, and when no two cells have consecutive dimensions the boundaries vanish and the homology is free on the cells. The Euler characteristic is the alternating sum of the numbers of cells, equal to the alternating sum of the ranks of the homology groups, and independent of the cell structure. Quotients by subcomplexes, products with the weak topology, smash products, mapping cylinders and covering spaces of CW complexes are again CW complexes, and the cellular chain complex of a covering space is the chain complex of the base with coefficients in the local system of the covering.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D^n$, $S^{n-1} = \partial D^n$, $\mathring D^n$</td>
+<td>Closed disc, its boundary sphere, its interior</td>
+</tr>
+<tr>
+<td>$\varphi_\alpha : D^n \to X$</td>
+<td>Attaching map of a cell</td>
+</tr>
+<tr>
+<td>$e^n_\alpha = \varphi_\alpha(\mathring D^n)$</td>
+<td>Open $n$-cell</td>
+</tr>
+<tr>
+<td>$X^n$</td>
+<td>$n$-skeleton; $\bigcup_{k \leq n} X^k$</td>
+</tr>
+<tr>
+<td>$X/A$</td>
+<td>Quotient by a subcomplex; collapsible when $(X,A)$ has the HEP</td>
+</tr>
+<tr>
+<td>$(X,A)$ has the HEP</td>
+<td>Homotopy extension property; equivalently the inclusion is a cofibration</td>
+</tr>
+<tr>
+<td>$\deg f$, $f : S^n \to S^n$</td>
+<td>Degree; the integer with $f_* = \deg f \cdot \mathrm{id}$ on $H_n(S^n)$</td>
+</tr>
+<tr>
+<td>$C_n^{\mathrm{CW}}(X) = \mathbb{Z}[\mathcal{E}_n]$</td>
+<td>Cellular chains, free on the $n$-cells</td>
+</tr>
+<tr>
+<td>$\partial_n$</td>
+<td>Cellular boundary; $\partial_n e^n_\alpha = \sum_\beta \deg(q_\beta \varphi_\alpha) e^{n-1}_\beta$</td>
+</tr>
+<tr>
+<td>$q_\beta$</td>
+<td>Collapse of $X^{n-1}$ onto the cell $e^{n-1}_\beta$</td>
+</tr>
+<tr>
+<td>$H_n^{\mathrm{CW}}(X)$</td>
+<td>Homology of the cellular complex, $\cong H_n(X)$</td>
+</tr>
+<tr>
+<td>$\chi(X) = \sum_n (-1)^n \#\mathcal{E}_n$</td>
+<td>Euler characteristic; equals $\sum_n(-1)^n\operatorname{rk}H_n(X)$</td>
+</tr>
+<tr>
+<td>$X/A$</td>
+<td>Quotient by a subcomplex; cells of $X$ not in $A$ plus one $0$-cell</td>
+</tr>
+<tr>
+<td>$X\wedge Y = (X\times Y)/(X\vee Y)$</td>
+<td>Smash product of based complexes</td>
+</tr>
+<tr>
+<td>$\Sigma X = S^1\wedge X$</td>
+<td>Reduced suspension</td>
+</tr>
+<tr>
+<td>$G_k(\mathbb{R}^n)$, $\mathbb{RP}^n$, $\mathbb{CP}^n$, $\mathbb{HP}^n$</td>
+<td>Grassmannian and projective spaces with their cell structures</td>
+</tr>
+<tr>
+<td>$\operatorname{rk}$</td>
+<td>Rank of a finitely generated abelian group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for CW complexes, the homotopy extension property, cellular approximation and cellular homology.</li>
+<li>Glen E. Bredon, <em>Topology and Geometry</em> (Springer, 1993), for the cell structures of the classical groups and homogeneous spaces.</li>
+<li>Albrecht Dold, <em>Lectures on Algebraic Topology</em> (Springer, 2nd ed. 1980), for cofibrations and the homotopy extension property in the general categorical setting.</li>
+<li>Allen Hatcher, <em>Vector Bundles and K-Theory</em> (self-published, 2009), for the Schubert cell decomposition of the Grassmannians.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the cell-count computation of the Euler characteristic and its differential-geometric counterpart.</li>
+<li>William S. Massey, <em>A Basic Course in Algebraic Topology</em> (Springer, 1991), for the cellular boundary formula and its use in computations.</li>
+<li>Edwin H. Spanier, <em>Algebraic Topology</em> (McGraw–Hill, 1966), for CW complexes as cofibrant objects and the general homotopy theory of cell attachments.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

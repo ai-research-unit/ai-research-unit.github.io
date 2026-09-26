@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Commutative Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-commutative-rings"><strong>List of Commutative Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the commutative rings that the corpus meets, with the dimension, the units and the zero divisors of each. Every entry points to the article that introduces the object.</p>
+<p>The list gathers the number systems and their quotients, the quadratic and cyclotomic integer rings, the polynomial, power series and localisation rings, the two-dimensional real algebras of the split-complex and dual numbers, and the product rings. The non-commutative rings are the subject of <em>List of Non-Commutative Rings</em>; a ring that a reader may expect in a list of commutative rings and that is not commutative is named in the warnings.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="the-convention-on-dimension">The Convention on Dimension</h2>
+<p>Dimension means the Krull dimension for the rings of this list, and the vector-space dimension over the ground field for the finite-dimensional real algebras $\mathbb{D}$ and $\mathbb{D}'$; where both readings are available they are written together. Thus a field has dimension $0$, a principal ideal domain that is not a field has dimension $1$, the ring $\mathbb{Z}/n\mathbb{Z}$ has dimension $0$, the polynomial ring in $n$ variables has dimension $n$, and the split-complex and dual numbers have vector-space dimension $2$ over $\mathbb{R}$ and Krull dimension $0$. The Krull dimension is introduced in <em>Integral Extensions and Krull Dimension</em> and the polynomial case in <em>Polynomial Rings and Rational Functions</em>.</p>
+<h2 id="the-number-systems-and-their-quotients">The Number Systems and Their Quotients</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Dimension</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>$1$</td>
+<td>$\pm 1$</td>
+<td>none</td>
+<td><em>The Integers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>$0$</td>
+<td>all nonzero</td>
+<td>none</td>
+<td><em>The Rational Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$0$</td>
+<td>all nonzero</td>
+<td>none</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$0$</td>
+<td>all nonzero</td>
+<td>none</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>$0$</td>
+<td>the classes coprime to $n$, of order $\varphi(n)$</td>
+<td>every nonunit when $n$ is composite</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$</td>
+<td>$0$</td>
+<td>cyclic of order $p-1$</td>
+<td>none</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q$, $q = p^n$</td>
+<td>$0$</td>
+<td>cyclic of order $q-1$</td>
+<td>none</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>$0$</td>
+<td>$\{1, 3\}$</td>
+<td>$2$ is nilpotent</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$0$</td>
+<td>$\{1, 5\}$</td>
+<td>$2 \cdot 3 = 0$; reduced, the product $\mathbb{F}_2 \times \mathbb{F}_3$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The non-example that fixes this section is $\mathbb{Z}/6\mathbb{Z}$, a commutative reduced ring that is not an integral domain.</p>
+<h2 id="quadratic-and-cyclotomic-integer-rings">Quadratic and Cyclotomic Integer Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Dimension</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}[i]$</td>
+<td>$1$</td>
+<td>$\pm 1, \pm i$, the elements of norm $1$</td>
+<td>none</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{2}]$</td>
+<td>$1$</td>
+<td>$\pm(1+\sqrt{2})^m$, $m \in \mathbb{Z}$</td>
+<td>none</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-2}]$</td>
+<td>$1$</td>
+<td>$\pm 1$</td>
+<td>none</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+<td>$1$</td>
+<td>$\pm 1$</td>
+<td>none</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\zeta_n]$</td>
+<td>$1$</td>
+<td>finite rank, by Dirichlet's unit theorem</td>
+<td>none</td>
+<td><em>Cyclotomic Fields</em></td>
+</tr>
+<tr>
+<td>$\mathcal{O}_K$</td>
+<td>$1$</td>
+<td>finite rank, by Dirichlet's unit theorem</td>
+<td>none</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Z}}$</td>
+<td>$1$</td>
+<td>the roots of unity it contains</td>
+<td>none</td>
+<td><em>Bézout Domains</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>These rings are all integral domains, so none has a zero divisor; they separate on the units. The Z-rank of the unit group of $\mathcal{O}_K$ is finite by Dirichlet's unit theorem, recorded in <em>Algebraic Number Theory</em>; for $\mathbb{Z}[\sqrt{-5}]$ and $\mathbb{Z}[\sqrt{-2}]$ the only units are $\pm 1$, while $\mathbb{Z}[i]$ has four and $\mathbb{Z}[\sqrt{2}]$ has infinitely many. The failure of unique factorisation in $\mathbb{Z}[\sqrt{-5}]$ is not visible in the units or the zero divisors; it is recorded in <em>Unique Factorisation Domains</em>.</p>
+<h2 id="polynomial-power-series-and-localisation-rings">Polynomial, Power Series and Localisation Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Dimension</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R[x]$</td>
+<td>$\dim R + 1$</td>
+<td>the units of $R$</td>
+<td>none when $R$ is a domain</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$R[x_1, \dots, x_n]$</td>
+<td>$\dim R + n$</td>
+<td>the units of $R$</td>
+<td>none when $R$ is a domain</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$k[x]$</td>
+<td>$1$</td>
+<td>$k^{\times}$</td>
+<td>none</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$k[x_1, \dots, x_n]$</td>
+<td>$n$</td>
+<td>$k^{\times}$</td>
+<td>none</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$R[[x]]$</td>
+<td>$1$ when $R$ is a field</td>
+<td>the series with unit constant term</td>
+<td>none when $R$ is a domain</td>
+<td><em>Formal Power Series and Completion</em></td>
+</tr>
+<tr>
+<td>$k[[x]]$</td>
+<td>$1$</td>
+<td>the series with nonzero constant term</td>
+<td>none</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$k(x)$</td>
+<td>$0$</td>
+<td>all nonzero</td>
+<td>none</td>
+<td><em>Fields</em>, §19</td>
+</tr>
+<tr>
+<td>$k((t))$</td>
+<td>$0$</td>
+<td>all nonzero</td>
+<td>none</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>$1$</td>
+<td>the fractions with numerator prime to $p$</td>
+<td>none</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[x]$</td>
+<td>$2$</td>
+<td>$\pm 1$</td>
+<td>none</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$</td>
+<td>$1$</td>
+<td>the elements with $\lvert x \rvert_p = 1$</td>
+<td>none</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The ring $\mathbb{Z}[x]$, with dimension $2$ and units $\pm 1$, is the standard unique factorisation domain that is not a principal ideal domain; the failure is recorded in <em>Principal Ideal Domains</em>.</p>
+<h2 id="the-two-dimensional-real-algebras">The Two-Dimensional Real Algebras</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Dimension</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$2$ over $\mathbb{R}$; Krull $0$</td>
+<td>$N(u) \neq 0$</td>
+<td>the null cone $\{N = 0\}$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>$2$ over $\mathbb{R}$; Krull $0$</td>
+<td>$x \neq 0$</td>
+<td>the maximal ideal $\mathfrak{m} = (\varepsilon)$</td>
+<td><em>Dual-Numbers Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The two algebras are not isomorphic. The split-complex numbers are a product of two copies of $\mathbb{R}$ and are reduced; the dual numbers are local and not reduced. Their zero divisors are correspondingly different: the null cone of $\mathbb{D}$ consists of the elements with $N(u) = 0$, while the zero divisors of $\mathbb{D}'$ are exactly the elements of the maximal ideal, and $\varepsilon$ is nilpotent rather than idempotent.</p>
+<h2 id="product-rings">Product Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Dimension</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_2^n$</td>
+<td>$0$</td>
+<td>the single element $(1, \dots, 1)$</td>
+<td>yes for $n \geq 2$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$R \times S$</td>
+<td>$\max(\dim R, \dim S)$</td>
+<td>the pairs $(u, v)$ with $u, v$ units</td>
+<td>$(1,0)(0,1) = 0$; every complementary pair of idempotents gives one</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z} \times \mathbb{Z}$</td>
+<td>$1$</td>
+<td>the pairs $(\pm1, \pm1)$</td>
+<td>$(1,0)(0,1) = 0$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C} \times \mathbb{C}$</td>
+<td>$0$</td>
+<td>the pairs of nonzero elements</td>
+<td>$(1,0)(0,1) = 0$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p \times \mathbb{F}_p$</td>
+<td>$0$</td>
+<td>the pairs of nonzero elements</td>
+<td>$(1,0)(0,1) = 0$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A product of two nonzero rings is never an integral domain, never local and never reduced as soon as one of the factors is not reduced. The idempotents of a product and the direct sum decompositions they generate are listed in <em>List of Rings by Their Idempotents</em>.</p>
+<h2 id="warnings-commutative-expectation-absent">Warnings: Commutative Expectation, Absent</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a commutative ring</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>a division ring, but not commutative</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternions, not commutative and with zero divisors</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>the split-biquaternions, not commutative and with zero divisors</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$M_n(R)$, $n \geq 2$</td>
+<td>the matrix ring, not commutative</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$M_n(D)$ over a division ring $D$</td>
+<td>not commutative in general</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$R\langle x_1, \dots, x_n\rangle$</td>
+<td>the free algebra, not commutative for $n \geq 2$</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$A_1(k)$</td>
+<td>the Weyl algebra, not commutative</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>the octonions, not a ring</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the commutative rings of the corpus with their dimension, their units and their zero divisors. The number systems and the residue rings begin the list; the quadratic and cyclotomic integer rings follow, all of them domains and distinguished by their units; the polynomial, power series and localisation rings carry the dimension $\dim R + n$ and the units of the base; the split-complex and dual numbers are the two two-dimensional real algebras, reduced and non-reduced respectively; and the product rings close it with their idempotent zero divisors. Beside the examples stand the non-examples $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z}$ and the two-dimensional algebra $\mathbb{D}'$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>The number systems</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$, $\mathbb{F}_q$</td>
+<td>Residue ring, prime field, finite field</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>Split-complex numbers and dual numbers</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-2}]$, $\mathbb{Z}[\sqrt{-5}]$</td>
+<td>Quadratic integer rings</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\zeta_n]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$</td>
+<td>Cyclotomic integers, ring of integers, all algebraic integers</td>
+</tr>
+<tr>
+<td>$R[x]$, $R[x_1,\dots,x_n]$, $R[[x]]$, $k[[x]]$</td>
+<td>Polynomial and power series rings</td>
+</tr>
+<tr>
+<td>$k(x)$, $k((t))$</td>
+<td>Rational function field, Laurent series field</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$, $\mathbb{Z}_p$</td>
+<td>Localisation at $p$, $p$-adic integers</td>
+</tr>
+<tr>
+<td>$R \times S$</td>
+<td>Product ring</td>
+</tr>
+<tr>
+<td>$\varphi(n)$</td>
+<td>Euler totient, the order of $(\mathbb{Z}/n\mathbb{Z})^{\times}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{O}$</td>
+<td>Quaternions, biquaternions, split-biquaternions, octonions; not commutative</td>
+</tr>
+<tr>
+<td>$M_n(R)$, $R\langle x_1,\dots,x_n\rangle$, $A_1(k)$</td>
+<td>Matrix ring, free algebra, Weyl algebra; not commutative</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Irving Kaplansky, <em>Commutative Rings</em> (University of Chicago Press, revised ed. 1974), for the commutative rings of the list and their units and zero divisors.</li>
+<li>Paulo Ribenboim, <em>Classical Theory of Algebraic Numbers</em> (Springer, 2001), for the quadratic and cyclotomic integer rings and the structure of their units.</li>
+<li>Tsit-Yuen Lam, <em>Exercises in Classical Ring Theory</em> (Springer, 2nd ed. 2003), for the counterexamples $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z}$ and the two-dimensional algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

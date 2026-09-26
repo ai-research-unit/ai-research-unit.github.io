@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-algebras"><strong>List of Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the algebras over a field the corpus meets, with the axioms each satisfies, its dimension, its centre and its ideals. An algebra over a field is a vector space with a bilinear product, and the list separates the associative from the non-associative, the commutative from the non-commutative, and the division, simple, semisimple and central simple algebras from the general case.</p>
+<p>Every entry points to the article that introduces the algebra and states its invariants. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being an algebra that fails associativity, or a division algebra that has zero divisors, or an algebra that is simple but not a division algebra, with the failure named and the article that records it.</p>
+<h2 id="the-axioms-of-a-linear-algebra">The Axioms of a Linear Algebra</h2>
+<p>An <strong>algebra over a field</strong> $F$ is an $F$-module with a bilinear product; it is <strong>associative</strong> if the product is, <strong>unital</strong> if it has an identity, <strong>commutative</strong> if the product is, and a <strong>division algebra</strong> if every nonzero element is invertible. A <strong>Lie algebra</strong> has an anticommutative product satisfying the Jacobi identity, and a <strong>Jordan algebra</strong> has a commutative product satisfying the Jordan identity; neither is associative in general.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Axiom or class</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra over a field $F$</td>
+<td>an $F$-module with a bilinear product</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Associative algebra</td>
+<td>the product is associative</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Unital algebra</td>
+<td>the product has an identity $1$</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Commutative algebra</td>
+<td>the product is commutative</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Division algebra</td>
+<td>every nonzero element is a unit, so the algebra has no zero divisors</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>Ideal of an algebra</td>
+<td>a subspace closed under multiplication by the algebra; the kernel of a homomorphism</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Centre $Z(A)$</td>
+<td>the elements commuting with every element; a commutative subalgebra</td>
+<td><em>Algebras</em></td>
+</tr>
+<tr>
+<td>Lie algebra</td>
+<td>an anticommutative product satisfying the Jacobi identity; not associative</td>
+<td><em>Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Jordan algebra</td>
+<td>a commutative product satisfying the Jordan identity; not associative</td>
+<td><em>Jordan Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: a non-associative algebra</td>
+<td>fails associativity: the octonions and the Lie algebras are the examples</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: a non-unital algebra</td>
+<td>fails to have an identity: the even part of a Clifford algebra with a nontrivial radical</td>
+<td><em>The Clifford Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="associative-algebras-and-their-invariants">Associative Algebras and Their Invariants</h2>
+<p>The associative algebras of the corpus are the field itself, the matrix algebras, the polynomial and group algebras, the number systems and their quotients. The dimension, the centre and the ideals distinguish them: a division algebra has no nontrivial ideals, a matrix algebra $M_n(k)$ has centre $k$ and no nontrivial two-sided ideals, and a group algebra has a centre spanned by the conjugacy-class sums.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Dimension, centre, ideals</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field $F$</td>
+<td>dimension $1$; centre $F$; only the ideals $0$ and $F$</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>$F[x]$</td>
+<td>infinite-dimensional; centre $F[x]$; every ideal principal</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>Matrix algebra $M_n(k)$</td>
+<td>dimension $n^2$; centre $k$; two-sided ideals only $0$ and $M_n(k)$; simple</td>
+<td><em>Examples of Algebras</em></td>
+</tr>
+<tr>
+<td>Group algebra $k[G]$</td>
+<td>dimension $|G|$; centre spanned by the conjugacy-class sums; the augmentation ideal is nontrivial</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>Quaternions $\mathbb{H}$</td>
+<td>dimension $4$ over $\mathbb{R}$; centre $\mathbb{R}$; no nontrivial ideals; division algebra</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Split-complex numbers $\mathbb{D}$</td>
+<td>dimension $2$; centre the whole algebra; the ideals $(1 \pm t)$; not a field</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>Dual numbers $\mathbb{D}'$</td>
+<td>dimension $2$; centre the whole algebra; the nilpotent ideal $(\varepsilon)$; local</td>
+<td><em>Dual Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>dimension $4$ over $\mathbb{C}$; centre $\mathbb{C}$; isomorphic to $M_2(\mathbb{C})$; simple</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Central simple algebra</td>
+<td>finite-dimensional, centre the field, no nontrivial two-sided ideals</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{D}$ as a field</td>
+<td>fails: it has zero divisors $(1-t)(1+t)=0$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{H}$ as a field</td>
+<td>fails: it is a division ring but not commutative</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="simple-semisimple-and-central-simple-algebras">Simple, Semisimple and Central Simple Algebras</h2>
+<p>An algebra is <strong>simple</strong> when it has no nontrivial two-sided ideals, <strong>semisimple</strong> when it is a product of matrix algebras over division rings, and <strong>central simple</strong> over $F$ when it is simple with centre exactly $F$. The <strong>Wedderburn–Artin theorem</strong> describes the semisimple algebras, and the central simple algebras over $F$ form the <strong>Brauer group</strong> under the tensor product over $F$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Dimension, centre, ideals</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Semisimple algebra</td>
+<td>a product $\prod_i M_{n_i}(D_i)$ of matrix algebras over division rings</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Wedderburn–Artin decomposition</td>
+<td>the factors are determined up to permutation; the centre is the product of the centres</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Simple algebra</td>
+<td>exactly two two-sided ideals, $0$ and the algebra; a matrix algebra over a division ring</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Central simple algebra over $F$</td>
+<td>simple, finite-dimensional, centre $F$; becomes a matrix algebra over a splitting field</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Brauer group $\operatorname{Br}(F)$</td>
+<td>the central simple algebras modulo matrix algebras, under $\otimes_F$</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>Division algebra</td>
+<td>a simple algebra whose only nonzero elements are units</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: a simple algebra that is not a division algebra</td>
+<td>$M_2(\mathbb{R})$ is simple but has zero divisors</td>
+<td><em>Examples of Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: the biquaternions over $\mathbb{R}$</td>
+<td>fail to be central simple over $\mathbb{R}$: their centre is $\mathbb{C}$, and $\mathbb{B}$ is split</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="algebras-defined-by-generators-and-relations">Algebras Defined by Generators and Relations</h2>
+<p>The tensor algebra $T(V)$ is the free associative algebra on a vector space, and the symmetric, exterior and Clifford algebras are its quotients by relations of low degree; the universal enveloping algebra is the quotient by the relations of a Lie bracket. The non-homogeneous relations give the Weyl algebra, which carries a filtration rather than a grading, and the path algebra of a quiver is the tensor algebra of its arrow space modulo the relations of the quiver.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Dimension, centre, ideals</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tensor algebra $T(V)$</td>
+<td>infinite-dimensional; the free associative algebra on $V$</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>Free algebra</td>
+<td>infinite-dimensional for $\dim V \geq 1$; the non-commutative polynomial algebra</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>Symmetric algebra $\operatorname{Sym}(V)$</td>
+<td>the polynomial algebra on $\dim V$ generators; centre the whole algebra</td>
+<td><em>The Symmetric Algebra</em></td>
+</tr>
+<tr>
+<td>Exterior algebra $\Lambda(V)$</td>
+<td>dimension $2^{\dim V}$; graded-commutative; not commutative for $\dim V \geq 2$</td>
+<td><em>The Exterior Algebra</em></td>
+</tr>
+<tr>
+<td>Clifford algebra $\mathrm{Cl}(V,q)$</td>
+<td>dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading</td>
+<td><em>The Clifford Algebra</em></td>
+</tr>
+<tr>
+<td>Universal enveloping algebra $U(\mathfrak{g})$</td>
+<td>infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathfrak{g})$</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Weyl algebra $A_1$</td>
+<td>infinite-dimensional; centre $k$; the algebra of polynomial differential operators, with $yx - xy = 1$</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>Quotients giving the number systems</td>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{H}$ as quotients of $T(V)$</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>Clifford algebras in finite dimensions</td>
+<td>the real Clifford algebras of dimension $2^n$, with their centre and periodicity</td>
+<td><em>Clifford Algebras in Finite Dimensions</em></td>
+</tr>
+<tr>
+<td>Path algebra $kQ$ of a quiver</td>
+<td>the algebra with the paths as a basis; finite-dimensional exactly when $Q$ has no oriented cycle</td>
+<td><em>Quiver Representations and Representation Type</em></td>
+</tr>
+<tr>
+<td>Non-example: the free algebra as a commutative algebra</td>
+<td>fails commutativity: $xy \neq yx$ for the generators</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathrm{Cl}(V,q)$ for a degenerate form</td>
+<td>fails semisimplicity: the radical is a nontrivial nilpotent ideal</td>
+<td><em>Degenerate Clifford Algebras and the Radical</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-associative-algebras-and-the-number-systems">Non-Associative Algebras and the Number Systems</h2>
+<p>The number systems give the corpus its chain of non-associative algebras: $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ are associative division algebras, the octonions are a non-associative division algebra, and the split-complex, split-biquaternion, dual and biquaternion algebras are associative but have zero divisors. The <strong>Cayley–Dickson construction</strong> produces the chain and the <strong>Hurwitz theorem</strong> fixes the four normed division algebras.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Dimension, centre, ideals</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$</td>
+<td>dimensions $1$, $2$, $4$; centres $\mathbb{R}$, $\mathbb{C}$, $\mathbb{R}$; associative division algebras</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>Octonions $\mathbb{O}$</td>
+<td>dimension $8$; centre $\mathbb{R}$; a non-associative division algebra</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>dimension $8$; centre $\mathbb{D}$; associative with zero divisors, isomorphic to $\mathbb{H}\oplus\mathbb{H}$; not a division algebra</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Lie algebra $\mathfrak{gl}_n(k)$</td>
+<td>dimension $n^2$; centre the scalar matrices; non-associative, with the bracket</td>
+<td><em>Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Jordan algebra</td>
+<td>commutative and non-associative, with the Jordan identity; the spin factors as examples</td>
+<td><em>Jordan Algebras</em></td>
+</tr>
+<tr>
+<td>The number systems as Clifford algebras</td>
+<td>the realisation of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ inside Clifford algebras of a form</td>
+<td><em>The Number Systems as Clifford Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: the octonions as associative</td>
+<td>fails associativity: the associator is nonzero</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: the split biquaternions as a division algebra</td>
+<td>fail to be a division algebra: they have zero divisors, though they have no nonzero nilpotents</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the algebras over a field of the corpus. The axioms are associativity, a unit, commutativity and the division property, with the Lie and Jordan algebras as the non-associative classes. The associative algebras are the field, the polynomial algebra, the matrix algebra $M_n(k)$, the group algebra, the quaternions, the split biquaternions, the split-complex numbers, the dual numbers and the biquaternions, each with its dimension, centre and ideals; the simple, semisimple and central simple algebras are the matrix algebras over division rings, with the Wedderburn–Artin decomposition and the Brauer group. The algebras defined by generators and relations are the tensor and free algebras, the symmetric, exterior and Clifford algebras, the universal enveloping algebra, the Weyl algebra and the path algebra. The non-associative algebras are the Lie and Jordan algebras, and the number systems run from the associative division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ to the non-associative division algebra $\mathbb{O}$ and the zero-divisor algebras. The non-examples — a non-associative algebra, a non-unital algebra, the split-complex numbers as a non-field, the quaternions as a non-field, a simple algebra that is not a division algebra, the biquaternions as non-central, the free algebra as non-commutative, a degenerate Clifford algebra and the octonions as non-associative — each name the failure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$</td>
+<td>tensor, symmetric and exterior algebras</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}(V,q)$</td>
+<td>Clifford algebra of a quadratic form</td>
+</tr>
+<tr>
+<td>$U(\mathfrak{g})$</td>
+<td>universal enveloping algebra of a Lie algebra</td>
+</tr>
+<tr>
+<td>$A_1$</td>
+<td>the Weyl algebra, $yx - xy = 1$</td>
+</tr>
+<tr>
+<td>$M_n(k)$</td>
+<td>matrix algebra</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>centre of an algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>the integers, as in the $\mathbb{Z}/2$-grading of a Clifford algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{Br}(F)$</td>
+<td>Brauer group</td>
+</tr>
+<tr>
+<td>$k[G]$</td>
+<td>group algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}$, $\mathbb{O}$, $\mathbb{B}$</td>
+<td>real, complex, split-complex, dual, quaternion, octonion and biquaternion algebras</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>split biquaternions, of real dimension $8$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the structure theory of associative algebras, the Wedderburn–Artin theorem and the Brauer group.</li>
+<li>Frank Anderson and Kent Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for simple, semisimple and central simple algebras.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the Lie algebras, their universal enveloping algebras and the PBW theorem.</li>
+<li>Richard Schafer, <em>An Introduction to Nonassociative Algebras</em> (Dover, 1995), for the Jordan algebras, the octonions and the Cayley–Dickson construction.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

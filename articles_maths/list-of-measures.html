@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Measures — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-measures"><strong>List of Measures</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the measures the corpus constructs and uses. A measure is a countably additive function on a $\sigma$-algebra of sets, and a row below names one measure, records the family of sets it measures and the property that distinguishes it — invariance, dimension, finiteness, atomicity — and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The measures are grouped by the layer that introduces them: the abstract measures and their constructions, the measures of Euclidean space and of its subsets, the invariant measures on groups, and the measures that arise in potential theory, probability and spectral theory. The non-examples — the set that carries no measure, the outer measure that is not a measure, the finitely additive function that is not countably additive — are recorded beside the measures as rows whose property cell names the failure.</p>
+<h2 id="abstract-measures-and-their-constructions">Abstract Measures and Their Constructions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The sets it measures, and the property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a measure $\mu$</td>
+<td>the sets of a $\sigma$-algebra $\mathcal A$ on $X$; countably additive, $\mu(\emptyset) = 0$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a probability measure</td>
+<td>every measurable set, with $\mu(X) = 1$</td>
+<td><em>Measure Theory and Integration</em>; <em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>a finite measure, a $\sigma$-finite measure</td>
+<td>the measurable sets; $\mu(X) < \infty$, or $X$ a countable union of finite-measure sets</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a complete measure</td>
+<td>the measurable sets and the subsets of null sets; every subset of a null set is measurable and null</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>an outer measure $\mu^*$</td>
+<td>every subset of $X$; monotone and countably subadditive, but not additive in general</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a premeasure on an algebra</td>
+<td>the sets of an algebra $\mathcal A_0$; extends to a measure on $\sigma(\mathcal A_0)$ by Carathéodory</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the counting measure</td>
+<td>every subset of a discrete set $X$, by cardinality; its atoms are the singletons</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the Dirac measure $\delta_x$</td>
+<td>every measurable set, by $\delta_x(A) = 1$ if $x \in A$; the only atom is $\{x\}$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a sum $\mu + \nu$ and a normalisation $\mu/\mu(X)$</td>
+<td>the measurable sets; the normalisation is a probability measure</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>an atom, and a diffuse measure</td>
+<td>the measurable subsets of a set of positive measure; a diffuse measure has no atoms</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="measures-on-euclidean-space">Measures on Euclidean Space</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The sets it measures, and the property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lebesgue measure $\lambda^n$</td>
+<td>the Borel and Lebesgue measurable sets of $\mathbb R^n$; translation-invariant, $\lambda^n([0,1]^n) = 1$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the product measure $\mu \otimes \nu$</td>
+<td>the sets of $\mathcal A \otimes \mathcal B$ on $X \times Y$; $(\mu \otimes \nu)(A \times B) = \mu(A)\nu(B)$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the Hausdorff measure $\mathcal H^s$</td>
+<td>every subset of a metric space, by covers of diameter at most $\delta$; it sees dimension</td>
+<td><em>Geometric Measure Theory</em></td>
+</tr>
+<tr>
+<td>Hausdorff dimension $\dim_{\mathcal H}$</td>
+<td>every bounded set; the exponent at which $\mathcal H^s$ jumps from $+\infty$ to $0$</td>
+<td><em>Geometric Measure Theory</em>; <em>Fractal Geometry</em></td>
+</tr>
+<tr>
+<td>the Radon measure on a locally compact space</td>
+<td>the Borel sets, finite on compact sets; produced by the Riesz representation theorem</td>
+<td><em>Locally Compact Groups and Haar Measure</em>; <em>Distributions and Fundamental Solutions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="invariant-measures-on-groups">Invariant Measures on Groups</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The sets it measures, and the property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Haar measure $\mu_L$</td>
+<td>the Borel sets of a locally compact group, finite on compacta; left-invariant, unique up to scale</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>the right Haar measure $\mu_R$</td>
+<td>the Borel sets; $d\mu_R = \Delta^{-1}d\mu_L$</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>the modular function $\Delta$</td>
+<td>the group, measuring the failure of bi-invariance; a continuous homomorphism to $\mathbb R_{>0}$</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>a unimodular group</td>
+<td>the Borel sets; abelian, compact, discrete, nilpotent and semisimple groups have a bi-invariant measure</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>the normalised counting measure $\lvert G\rvert^{-1}\sum_g\delta_g$</td>
+<td>every subset of a finite group; a bi-invariant probability measure</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the additive Haar measure on $\mathbb Q_p$</td>
+<td>the balls $a + p^n\mathbb Z_p$, with $\mu(a+p^n\mathbb Z_p) = p^{-n}$ after $\mu(\mathbb Z_p) = 1$</td>
+<td><em>p-adic Integration</em></td>
+</tr>
+<tr>
+<td>the multiplicative Haar measure $d^\times x$</td>
+<td>the Borel sets of $\mathbb Q_p^\times$; $\mu^\times(\mathbb Z_p^\times) = 1$</td>
+<td><em>p-adic Integration</em></td>
+</tr>
+<tr>
+<td>a quasi-invariant measure on $G/H$</td>
+<td>the Borel sets of a homogeneous space, with Radon–Nikodym cocycle $\rho$</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>the Tamagawa measure</td>
+<td>the adelic quotient, assembled as the product of the local Haar measures</td>
+<td><em>Adeles and Ideles</em>; <em>Adelic Analysis</em></td>
+</tr>
+<tr>
+<td>an invariant measure of a dynamical system</td>
+<td>the measurable sets of the phase space; preserved by the transformation</td>
+<td><em>Ergodic Theory</em>; <em>Topological Dynamics</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="measures-in-potential-theory-probability-and-spectral-theory">Measures in Potential Theory, Probability and Spectral Theory</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The sets it measures, and the property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the equilibrium measure</td>
+<td>the compact subsets of $\mathbb R^n$; the measure of minimal energy, with capacity as its total mass</td>
+<td><em>Potential Theory</em></td>
+</tr>
+<tr>
+<td>the harmonic measure</td>
+<td>the boundary of a domain; the distribution of the exit point of a Brownian path</td>
+<td><em>Potential Theory</em>; <em>Brownian Motion and Stochastic Calculus</em></td>
+</tr>
+<tr>
+<td>the Wiener measure</td>
+<td>the Borel sets of the space of continuous paths; the law of Brownian motion</td>
+<td><em>Brownian Motion and Stochastic Calculus</em></td>
+</tr>
+<tr>
+<td>a Gaussian measure</td>
+<td>the Borel sets of a Banach or Hilbert space; a centred Gaussian cylinder measure</td>
+<td><em>Stochastic Partial Differential Equations</em></td>
+</tr>
+<tr>
+<td>the law $\mu_X = \mathbb P \circ X^{-1}$ of a random variable</td>
+<td>the Borel sets of the range; a probability measure</td>
+<td><em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>a spectral measure $E(\lambda)$, $E$ projection-valued</td>
+<td>the Borel sets of the spectrum; values are orthogonal projections</td>
+<td><em>Banach and Hilbert Spaces</em>; <em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>a signed measure $\nu$</td>
+<td>the measurable sets, with values in $\mathbb R$; $\sigma$-additive and taking at most one infinite value</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a complex measure</td>
+<td>the measurable sets, with values in $\mathbb C$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the total variation $\lvert\nu\rvert$</td>
+<td>the measurable sets; the least measure dominating $\nu$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the Radon–Nikodym derivative $d\nu/d\mu$</td>
+<td>the measurable sets; a density realising the absolutely continuous part of $\nu$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="sets-and-functions-that-are-not-measures">Sets and Functions That Are Not Measures</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Vitali set $V \subseteq [0,1)$</td>
+<td>not Lebesgue measurable: no length can be assigned consistently with translation invariance and countable additivity</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>an outer measure on all subsets</td>
+<td>restricts to a measure only on the Carathéodory-measurable sets, and is not a measure on the whole power set</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the counting measure on an uncountable set</td>
+<td>measures every set, but is not $\sigma$-finite</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a finitely additive set function</td>
+<td>satisfies additivity over finite unions only, and need not be a measure</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a decreasing sequence without the finiteness hypothesis</td>
+<td>continuity from above fails, as on $\mathbb N$ with counting measure and the sets $\{n, n+1,\dots\}$</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the measures of the corpus: the abstract measures and their construction by Carathéodory, the counting and Dirac measures, Lebesgue and the Hausdorff measures of Euclidean space, the Haar measures of locally compact groups with the modular function and the adelic Tamagawa measure, and the measures of potential theory, probability and spectral theory. Each row records the family of sets the measure acts on and the property that separates it, and the final table records the constructions that carry the name of a measure and are not one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects are named rather than denoted; the symbols occurring in the tables are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu$, $\nu$, $\lambda$</td>
+<td>measures; $\lambda^n$ Lebesgue measure on $\mathbb R^n$</td>
+</tr>
+<tr>
+<td>$\mathcal A$, $\mathcal B$, $\mathcal B(X)$</td>
+<td>a $\sigma$-algebra, the Borel $\sigma$-algebra</td>
+</tr>
+<tr>
+<td>$\delta_x$</td>
+<td>the Dirac measure at $x$</td>
+</tr>
+<tr>
+<td>$\mathcal H^s$</td>
+<td>Hausdorff $s$-measure</td>
+</tr>
+<tr>
+<td>$\mu_L$, $\mu_R$, $\Delta$</td>
+<td>left and right Haar measure, modular function</td>
+</tr>
+<tr>
+<td>$d^\times x$</td>
+<td>multiplicative Haar measure on $\mathbb Q_p^\times$</td>
+</tr>
+<tr>
+<td>$\mu_X$, $\mu \otimes \nu$</td>
+<td>law of $X$, product measure</td>
+</tr>
+<tr>
+<td>$E(\lambda)$</td>
+<td>spectral measure</td>
+</tr>
+<tr>
+<td>$d\nu/d\mu$</td>
+<td>Radon–Nikodym derivative</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul R. Halmos, <em>Measure Theory</em> (Van Nostrand, 1950; reprinted Springer, 1974), for the construction of measures by outer measures and the classical examples.</li>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953; reprinted Dover, 2011), for Haar measure and invariant integration on groups.</li>
+<li>Pertti Mattila, <em>Geometry of Sets and Measures in Euclidean Spaces</em> (Cambridge University Press, 1995), for the Hausdorff measures and the measures of geometric measure theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

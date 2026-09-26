@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unitary and Symplectic Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-unitary-and-symplectic-groups"><strong>The Unitary and Symplectic Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The isometry group of a form depends on the type of the form. A symmetric bilinear form gives the orthogonal group, a Hermitian form gives the unitary group, and an alternating form gives the symplectic group. These three constructions, together with the general linear group and its determinant-one subgroup, produce the <strong>classical groups</strong>, and over the complex numbers their Lie algebras exhaust the four infinite families $A$, $B$, $C$, $D$ of the classification of simple Lie algebras.</p>
+<p>This article develops the three constructions side by side, the standard matrix realisations $U(n)$, $SU(n)$ and $Sp(2n)$, the quaternionic analogue of the unitary group, and the four families with their dimensions and ranks. The base is a field $F$ or the field $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ when the analysis requires it. Symmetric and alternating forms, their radicals and non-degeneracy are from <em>Bilinear Forms</em>; the orthogonal group and its determinant are from <em>Isometries and Orthogonal Transformations</em> and <em>The Rotation Group and Orientation</em>. Hermitian forms are used here and developed; the trace and the reduced norm are cited from the same place. The exterior algebra and the Pfaffian are from <em>The Determinant and Alternating Forms</em>. The Lie algebras of these groups are related to <em>The Orthogonal Lie Algebra</em>.</p>
+<h2 id="the-classical-groups-from-a-form">The Classical Groups from a Form</h2>
+<h3 id="the-common-pattern">The Common Pattern</h3>
+<p>The three families are instances of one construction. Let $V$ be a vector space over a field, let $\sigma$ be an involution of the field — the identity for the orthogonal and symplectic cases, complex conjugation for the unitary case — and let $h: V \times V \to F$ be a form that is $\sigma$-sesquilinear and Hermitian in the sense. The <strong>isometry group</strong> of $h$ is</p>
+<p>$$
+\operatorname{Isom}(V, h) = \{T \in GL(V) : h(Tu, Tv) = h(u, v) \text{ for all } u, v \in V\}.
+$$</p>
+<p>As in <em>Bilinear Forms</em>, these maps form a group, and the group depends only on the isometry class of $h$. Specialising the involution and the symmetry of $h$ recovers the three classical cases:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Involution $\sigma$</th>
+<th>Symmetry</th>
+<th>Isometry group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>symmetric bilinear $h$</td>
+<td>identity</td>
+<td>$h(v, u) = h(u, v)$</td>
+<td>orthogonal $\operatorname{O}(V, h)$</td>
+</tr>
+<tr>
+<td>alternating bilinear $\omega$</td>
+<td>identity</td>
+<td>$\omega(v, v) = 0$</td>
+<td>symplectic $\operatorname{Sp}(V, \omega)$</td>
+</tr>
+<tr>
+<td>Hermitian sesquilinear $h$</td>
+<td>conjugation</td>
+<td>$h(v, u) = \sigma(h(u, v))$</td>
+<td>unitary $\operatorname{U}(V, h)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The alternating case is written $\omega$ throughout, to keep it apart from the symmetric and the Hermitian forms $h$; its involution is the identity and its symmetry is the vanishing of $\omega(v, v)$ for every vector.</p>
+<p>The general definition of a sesquilinear form relative to an involution, and the proof that the diagonal of a Hermitian form is a quadratic form over the fixed ring, lie outside this article; here we take the forms as given.</p>
+<h3 id="non-degeneracy-and-the-special-groups">Non-Degeneracy and the Special Groups</h3>
+<p>In each case the form is <strong>non-degenerate</strong> when the map $V \to V^*$, $v \mapsto h(v, -)$, is an isomorphism — a conjugate-linear one in the Hermitian case — and the isometry group is a subgroup of $GL(V)$. When the form is non-degenerate, taking determinants of the defining identity gives a constraint on $\det T$:</p>
+<p>$$
+\det(T)^2 = 1 \text{ for the orthogonal case}, \qquad |\det T| = 1 \text{ for the complex unitary case}, \qquad \det(T) = 1 \text{ for the symplectic case}.
+$$</p>
+<p>The <strong>special</strong> subgroups are the kernels of the determinant where the determinant is not already forced:</p>
+<p>$$
+\operatorname{SO}(V, h) = \operatorname{O}(V, h) \cap SL(V), \qquad \operatorname{SU}(V, h) = \operatorname{U}(V, h) \cap SL(V), \qquad \operatorname{Sp}(V, \omega) \subseteq SL(V).
+$$</p>
+<p>Thus the orthogonal and unitary groups meet the special linear group in their special subgroups, while the symplectic group is already contained in $SL(V)$. The last inclusion is proved below; it is the reason the symplectic family is labelled by a single symbol.</p>
+<h2 id="the-unitary-group">The Unitary Group</h2>
+<h3 id="hermitian-forms-and-the-definition">Hermitian Forms and the Definition</h3>
+<p>Let $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, and let $V$ be a finite-dimensional $\mathbb{K}$-space. A <strong>Hermitian form</strong> on $V$ is a function $h : V \times V \to \mathbb{K}$ that is additive in each argument, satisfies</p>
+<p>$$
+h(\lambda u, \mu v) = \overline{\lambda}\, \mu\, h(u, v) \qquad (\lambda, \mu \in \mathbb{K}),
+$$</p>
+<p>and is Hermitian, $h(v, u) = \overline{h(u, v)}$. Over $\mathbb{R}$, where conjugation is the identity, this is a symmetric bilinear form; the interest is over $\mathbb{C}$. The <strong>unitary group</strong> of $h$ is</p>
+<p>$$
+\operatorname{U}(V, h) = \{T \in GL(V) : h(Tu, Tv) = h(u, v) \text{ for all } u, v\}.
+$$</p>
+<p><strong>Proposition.</strong> If $h$ is non-degenerate, then $|\det T| = 1$ for every $T \in \operatorname{U}(V, h)$, and the determinant map $\operatorname{U}(V, h) \to \{z \in \mathbb{C} : |z| = 1\}$ has kernel $\operatorname{SU}(V, h)$.</p>
+<p><strong>Proof.</strong> Choose a basis and let $H$ be the matrix of $h$, so that $h(u, v) = u^{\dagger} H v$ with $u^{\dagger}$ the conjugate transpose. The isometry condition is $T^{\dagger} H T = H$. Taking determinants gives $\overline{\det T}\det T \det H = \det H$, so $|\det T|^2 = 1$ because $H$ is invertible. The kernel of the determinant is exactly $\operatorname{SU}(V, h)$. $\square$</p>
+<h3 id="the-standard-unitary-groups">The Standard Unitary Groups</h3>
+<p>For $V = \mathbb{C}^n$ with the standard positive definite Hermitian form</p>
+<p>$$
+h(z, w) = \sum_{i=1}^{n} \overline{z_i}\, w_i,
+$$</p>
+<p>the matrix of $h$ is the identity, and the isometry condition becomes</p>
+<p>$$
+U^{\dagger} U = I, \qquad \text{equivalently} \qquad U^{-1} = U^{\dagger}.
+$$</p>
+<p>The group of such matrices is the <strong>unitary group</strong> $U(n)$, and its determinant-one subgroup is $SU(n)$. The columns of a unitary matrix form an orthonormal basis of $\mathbb{C}^n$, and the rows do too.</p>
+<p><strong>Proposition.</strong> $U(n)$ is a compact group of real dimension $n^2$, and $SU(n)$ is a compact connected group of real dimension $n^2 - 1$. The determinant map is surjective onto the circle, so</p>
+<p>$$
+U(n)/SU(n) \cong U(1) \cong S^1.
+$$</p>
+<p><strong>Proof.</strong> The defining equation $U^{\dagger}U = I$ is a closed condition in $M_n(\mathbb{C})$, so $U(n)$ is closed; its columns are unit vectors, so it is bounded, hence compact. Near the identity it is a submanifold of the real vector space of $n \times n$ complex matrices, whose real dimension is $2n^2$. The condition $U^{\dagger}U = I$ is Hermitian, hence imposes $n^2$ real equations, and the derivative at $I$ is $A + A^{\dagger} = 0$, the anti-Hermitian condition, a real vector space of dimension $n^2$; the dimension of $U(n)$ near $I$ is therefore $2n^2 - n^2 = n^2$. The determinant has derivative the trace, which is nonzero on the anti-Hermitian matrices, so $SU(n)$ has dimension $n^2 - 1$. The determinant of a diagonal matrix $\operatorname{diag}(z, 1, \ldots, 1)$ with $|z| = 1$ realises every unit complex number, so the determinant is surjective onto $U(1)$. $\square$</p>
+<p><strong>Example.</strong> $U(1)$ is the circle group and $SU(1)$ is trivial. $SU(2)$ consists of the matrices $\begin{pmatrix} a & b \\ -\bar b & \bar a \end{pmatrix}$ with $|a|^2 + |b|^2 = 1$, a three-dimensional sphere; it is the unit quaternions, and it double covers $\operatorname{SO}(3)$, as described in the applications of the Clifford layer of this category, written in parallel.</p>
+<h3 id="relation-to-the-orthogonal-group">Relation to the Orthogonal Group</h3>
+<p>A Hermitian form on a complex space can be viewed as a real bilinear form on the underlying real space, and the unitary group is cut out by the real and imaginary parts.</p>
+<p><strong>Proposition.</strong> Let $h = s + i\,a$ with $s, a$ real-valued, $s$ symmetric bilinear and $a$ alternating bilinear. Then</p>
+<p>$$
+\operatorname{U}(V, h) = \operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a).
+$$</p>
+<p><strong>Proof.</strong> The identity $h(Tu, Tv) = h(u, v)$ is equivalent to the pair of real identities $s(Tu, Tv) = s(u, v)$ and $a(Tu, Tv) = a(u, v)$, because the real and imaginary parts of a complex number vanish together. The first is the orthogonal condition for $s$ and the second the symplectic condition for $a$. $\square$</p>
+<p>This is the precise sense in which the unitary group lies between the orthogonal and symplectic groups: it is the intersection of one of each on the realification of the space.</p>
+<h2 id="hermitian-forms-and-inertia">Hermitian Forms and Inertia</h2>
+<h3 id="the-gram-matrix-of-a-hermitian-form">The Gram Matrix of a Hermitian Form</h3>
+<p>Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space $V$, in the sense. In a basis $e_1, \ldots, e_n$ the Gram matrix $H$ with $H_{ij} = h(e_i, e_j)$ satisfies $H^{\dagger} = H$, and</p>
+<p>$$
+h(u, v) = u^{\dagger} H v .
+$$</p>
+<p>For $u = v$ the number $u^{\dagger}Hu$ is real, because its conjugate is $u^{\dagger}H^{\dagger}u = u^{\dagger}Hu$; so the diagonal $v \mapsto h(v, v)$ is a real-valued function even though $h$ is not symmetric. A change of basis with matrix $P$ replaces $H$ by the Hermitian-congruent matrix $P^{\dagger}HP$.</p>
+<p><strong>Theorem (inertia for Hermitian forms).</strong> Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space of dimension $n$. Then there are unique integers $p, r, z \geq 0$ with $p + r + z = n$ and a basis in which the Gram matrix is $\operatorname{diag}(I_p, -I_r, 0_z)$.</p>
+<p><strong>Proof.</strong> The argument is that of Sylvester's law of inertia for real quadratic forms: the diagonalisation by completing the square applies, because the diagonal entries $h(e_i, e_i)$ are real and the substitution $v \mapsto v - \frac{h(e, v)}{h(e,e)}e$ kills the entries $h(v, e)$ for a vector with $h(e,e) \neq 0$; the uniqueness follows by counting the maximal dimension $p$ of a subspace on which $h$ is positive definite and the maximal dimension $r$ on which it is negative definite, both of which are invariants of $h$. $\square$</p>
+<p>The triple $(p, r, z)$ is the <strong>signature</strong> of $h$, and $h$ is non-degenerate exactly when $z = 0$. The isometry group of the form $\operatorname{diag}(I_p, -I_r)$ is written</p>
+<p>$$
+U(p, r) = \{M \in GL(n, \mathbb{C}) : M^{\dagger} \begin{pmatrix} I_p & 0 \\ 0 & -I_r\end{pmatrix} M = \begin{pmatrix} I_p & 0 \\ 0 & -I_r\end{pmatrix}\},
+$$</p>
+<p>with special subgroup $SU(p, r)$ the kernel of the determinant; both have real dimension $n^2$ and $n^2 - 1$ respectively, since the counting of the compact case uses only the Hermitian condition on $M^{\dagger}HM = H$ and the dimension of $H$ as a real vector space. For $p = n$ the group is the compact $U(n)$ of the previous section, and for $p, r > 0$ it is non-compact.</p>
+<h3 id="the-group-math158">The Group $U(1, 1)$</h3>
+<p>The smallest non-compact case is $h(z, w) = \bar z_1 w_1 - \bar z_2 w_2$ on $\mathbb{C}^2$. Writing a matrix as $T = \begin{pmatrix} a & b \\ c & d\end{pmatrix}$, the condition $T^{\dagger}\operatorname{diag}(1,-1)T = \operatorname{diag}(1,-1)$ is the three equations</p>
+<p>$$
+|a|^2 - |c|^2 = 1, \qquad |d|^2 - |b|^2 = 1, \qquad \bar a b - \bar c d = 0 .
+$$</p>
+<p><strong>Example.</strong> The matrices $\begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t\end{pmatrix}$ for $t \in \mathbb{R}$ and $\begin{pmatrix} e^{i\theta} & 0 \\ 0 & e^{-i\theta}\end{pmatrix}$ for $\theta \in \mathbb{R}$ both lie in $SU(1,1)$: for the first the three equations reduce to $\cosh^2 t - \sinh^2 t = 1$, and for the second $|e^{i\theta}|^2 = 1$. The first family is a hyperbolic one-parameter subgroup, the second a compact circle, and the two generate a subgroup of $SU(1,1)$ through which the two types of one-parameter subgroup of a non-compact real form are visible.</p>
+<p><strong>Remark.</strong> The group $SU(1,1)$ is isomorphic to $SL(2, \mathbb{R})$ and to $Sp(2, \mathbb{R})$, the three real forms of $\mathfrak{sl}(2, \mathbb{C})$ of rank one; the compact form $SU(2)$ is not isomorphic to them. The isomorphism $SU(1,1) \cong Sp(2, \mathbb{R})$ is the first case of the general statement that the quaternionic and the symplectic descriptions agree over $\mathbb{C}$.</p>
+<h2 id="the-symplectic-group">The Symplectic Group</h2>
+<h3 id="alternating-forms">Alternating Forms</h3>
+<p>Let $V$ be a finite-dimensional space over a field $F$ of characteristic not $2$, with a non-degenerate alternating form $\omega$. By <em>Bilinear Forms</em>, $\dim V = 2m$ is even and there is a symplectic basis $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $\omega(e_i, f_j) = \delta_{ij}$. The <strong>symplectic group</strong> of $\omega$ is</p>
+<p>$$
+\operatorname{Sp}(V, \omega) = \{T \in GL(V) : \omega(Tu, Tv) = \omega(u, v) \text{ for all } u, v\}.
+$$</p>
+<h3 id="the-standard-symplectic-group">The Standard Symplectic Group</h3>
+<p>For $V = F^{2m}$ with the standard alternating form given by the block matrix</p>
+<p>$$
+\Omega = \begin{pmatrix} 0 & I_m \\ -I_m & 0 \end{pmatrix}, \qquad \omega(x, y) = x^T \Omega\, y,
+$$</p>
+<p>the isometry condition is $M^T \Omega M = \Omega$, and the group of such matrices is written $Sp(2m, F)$ or $Sp(2m)$ over a field understood. The entries of a symplectic matrix satisfy the quadratic relations encoded in $M^T \Omega M = \Omega$.</p>
+<p><strong>Theorem.</strong> Every symplectic matrix has determinant $1$. Hence</p>
+<p>$$
+\operatorname{Sp}(2m, F) \subseteq SL(2m, F).
+$$</p>
+<p><strong>Proof.</strong> Let $\operatorname{Pf}$ be the Pfaffian, which satisfies $\operatorname{Pf}(M^T \Omega M) = \det(M)\operatorname{Pf}(\Omega)$ for every $2m \times 2m$ matrix $M$, and $\operatorname{Pf}(\Omega) = (-1)^{m(m-1)/2} \neq 0$ for the matrix above. If $M^T \Omega M = \Omega$, applying $\operatorname{Pf}$ gives $\det(M)\operatorname{Pf}(\Omega) = \operatorname{Pf}(\Omega)$, that is $\det M = 1$. $\square$</p>
+<p><strong>Proposition.</strong> $Sp(2m, F)$ has dimension $2m^2 + m$ over $F$; over $\mathbb{R}$ or $\mathbb{C}$ it is connected, and it is non-compact.</p>
+<p><strong>Proof.</strong> The equations $M^T \Omega M = \Omega$ are $\binom{2m}{2}$ scalar conditions on the $4m^2$ entries of $M$ (the antisymmetric part of $M^T\Omega M$, since the symmetric part is automatic). Hence the dimension is at most $4m^2 - m(2m-1) = 2m^2 + m$; equality holds because the derivative at the identity imposes the same count. The connectedness and non-compactness are standard. $\square$</p>
+<p>The plane case is the base of the family and can be settled directly.</p>
+<p><strong>Proposition.</strong> $\operatorname{Sp}(2, F) = SL(2, F)$.</p>
+<p><strong>Proof.</strong> Let $M = \begin{pmatrix} a & b \\ c & d\end{pmatrix}$ and let $\Omega = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$. Then</p>
+<p>$$
+M^{T}\Omega M = \begin{pmatrix} 0 & ad - bc \\ bc - ad & 0\end{pmatrix} = (\det M)\,\Omega,
+$$</p>
+<p>so $M^{T}\Omega M = \Omega$ if and only if $\det M = 1$, since $\Omega \neq 0$. $\square$</p>
+<p>So the symplectic family begins with the special linear group in dimension two, and $Sp(2, F) \cong SL(2, F)$: the alternating form on a plane is unique up to scale, and every determinant-one $2 \times 2$ matrix preserves it.</p>
+<h3 id="the-compact-form-inside-the-split-form">The Compact Form inside the Split Form</h3>
+<p>The intersection of the symplectic and orthogonal groups on a real space of even dimension is the unitary group, and this identifies the compact real form inside the split one.</p>
+<p><strong>Theorem.</strong> With the standard alternating form and the standard positive definite form on $\mathbb{R}^{2m}$,</p>
+<p>$$
+Sp(2m, \mathbb{R}) \cap O(2m) = U(m).
+$$</p>
+<p><strong>Proof.</strong> Let $A \in GL(2m, \mathbb{R})$ satisfy $A^{T}\Omega A = \Omega$ and $A^{T}A = I$. From the first relation, $\Omega A = (A^{T})^{-1}\Omega = A\Omega$, because $A^{T} = A^{-1}$ by the second; so $A$ commutes with $\Omega$. Identifying $\mathbb{R}^{2m}$ with $\mathbb{C}^m$ by taking $\Omega$ as the matrix of multiplication by $i$, commutativity with $\Omega$ says exactly that $A$ is complex-linear, and the orthogonal condition $A^{T}A = I$ says that $A$ preserves the Euclidean form, which is the real part of the standard Hermitian form. Hence $A$ is complex-linear and unitary, that is $A \in U(m)$. Conversely, let $U \in U(m)$ and write it as the real matrix $A = \begin{pmatrix} X & -Y \\ Y & X\end{pmatrix}$; the conditions $X^{T}X + Y^{T}Y = I$ and $X^{T}Y - Y^{T}X = 0$, which are $U^{\dagger}U = I$, give $A^{T}A = I$ directly, and $A$ commutes with $\Omega$ because it is complex-linear, so $A^{T}\Omega A = A^{-1}\Omega A = \Omega$. $\square$</p>
+<p>Both groups in the statement are compact, and the theorem exhibits $U(m)$ as a maximal compact subgroup of the non-compact group $Sp(2m, \mathbb{R})$. The dimension count reflects the splitting: $\dim Sp(2m, \mathbb{R}) = 2m^2 + m$ and $\dim U(m) = m^2$, the difference $m^2 + m$ being the dimension of the symmetric space $Sp(2m, \mathbb{R})/U(m)$.</p>
+<h2 id="the-quaternionic-case">The Quaternionic Case</h2>
+<h3 id="quaternionic-hermitian-forms">Quaternionic Hermitian Forms</h3>
+<p>Let $D$ be a division ring with an involution $\sigma$, for instance the quaternions $\mathbb{H}$ with conjugation. A <strong>$\sigma$-Hermitian form</strong> on a right $D$-module $V$ is additive in each argument with</p>
+<p>$$
+h(xa, yb) = \sigma(a)\,h(x, y)\,b, \qquad h(y, x) = \sigma(h(x, y)),
+$$</p>
+<p>. Its isometry group is the <strong>unitary group</strong> $\operatorname{U}(V, h)$ of the Hermitian form. For $D = \mathbb{H}$ and the standard form $h(x, y) = \sum_i \bar{x}_i y_i$ on $\mathbb{H}^n$, the resulting group is the <strong>compact symplectic group</strong> $Sp(n)$, also written $U(n, \mathbb{H})$.</p>
+<p><strong>Warning on notation.</strong> The symbol $Sp$ carries two meanings: $Sp(2m, F)$ is the isometry group of an alternating form over a field, a non-compact group, while $Sp(n)$ is the isometry group of a quaternionic Hermitian form, a compact group. The two agree only through the identification of $Sp(n)$ with the compact real form of $Sp(2n, \mathbb{C})$: the complexification of the quaternionic unitary group is the symplectic group $Sp(2n, \mathbb{C})$.</p>
+<p><strong>Proposition.</strong> $Sp(n)$ is a compact connected group of real dimension $n(2n + 1)$. It is the intersection $Sp(2n, \mathbb{C}) \cap U(2n)$ inside $GL(2n, \mathbb{C})$.</p>
+<p><strong>Proof.</strong> A quaternionic $n \times n$ matrix has $4n^2$ real parameters; the condition $A^{\dagger}A = I$ imposes $n(2n-1)$ independent real equations, leaving dimension $4n^2 - n(2n-1) = n(2n+1)$. Compactness is the closedness and boundedness of the defining condition, as in the complex case. The identification of $Sp(n)$ with $Sp(2n, \mathbb{C}) \cap U(2n)$ is the standard realisation of the quaternions as $2 \times 2$ complex matrices. $\square$</p>
+<h3 id="relation-to-math295-and-math296">Relation to $GL$ and $SL$</h3>
+<p>The classical groups fit into the chain</p>
+<p>$$
+SU(n) \subset U(n) \subset GL(n, \mathbb{C}), \qquad Sp(2m, F) \subset SL(2m, F) \subset GL(2m, F),
+$$</p>
+<p>and $SO(n) \subset O(n) \subset GL(n, \mathbb{R})$. The special linear group is the kernel of the determinant in each ambient general linear group, and the special orthogonal and special unitary groups are the intersections of their groups with $SL$, while the symplectic group is contained in $SL$ by the Pfaffian theorem above.</p>
+<h2 id="the-four-families">The Four Families</h2>
+<h3 id="the-classification">The Classification</h3>
+<p>Over an algebraically closed field the simple Lie algebras fall into the four infinite families $A$, $B$, $C$, $D$ and the five exceptional algebras; the classical groups produce exactly the four families.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Group over $\mathbb{C}$</th>
+<th>Rank</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_n$</td>
+<td>$SL(n+1, \mathbb{C})$</td>
+<td>$n$</td>
+<td>$n(n+2)$</td>
+</tr>
+<tr>
+<td>$B_n$</td>
+<td>$SO(2n+1, \mathbb{C})$</td>
+<td>$n$</td>
+<td>$n(2n+1)$</td>
+</tr>
+<tr>
+<td>$C_n$</td>
+<td>$Sp(2n, \mathbb{C})$</td>
+<td>$n$</td>
+<td>$n(2n+1)$</td>
+</tr>
+<tr>
+<td>$D_n$</td>
+<td>$SO(2n, \mathbb{C})$</td>
+<td>$n$</td>
+<td>$n(2n-1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The families $B_n$ and $C_n$ have the same dimension and rank and are dual to one another; the Lie algebras $\mathfrak{so}(2n+1)$ and $\mathfrak{sp}(2n)$ are not isomorphic, but their root systems are dual, with the long and short roots interchanged. The orthogonal family splits into $B$ and $D$ because $\operatorname{SO}(2n+1)$ and $\operatorname{SO}(2n)$ have different root systems: $B_n$ has roots of two lengths, while $D_n$ is simply laced for $n \geq 3$.</p>
+<p><strong>Example.</strong> $A_1 = B_1 = C_1$ is the case of rank one: $SL(2)$, $SO(3)$, and $Sp(2)$ all have the same Lie algebra $\mathfrak{sl}(2)$, and the three descriptions are related by the low-dimensional coincidences of <em>The Orthogonal Lie Algebra</em>. $D_2 = A_1 \times A_1$ is the rank-two exception $\mathfrak{so}(4) \cong \mathfrak{sl}(2) \oplus \mathfrak{sl}(2)$, which is not simple; the family $D_n$ is simple for $n \geq 3$.</p>
+<h3 id="real-forms-and-compact-groups">Real Forms and Compact Groups</h3>
+<p>Each complex family has several real forms. The <strong>compact</strong> real forms are $SU(n)$ for $A_n$, $SO(2n+1)$ for $B_n$, $Sp(n)$ for $C_n$, and $SO(2n)$ for $D_n$. The <strong>split</strong> real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, and $SO(n, n)$. The isometry groups of the real forms of a quadratic form are the groups $\operatorname{O}(p, r)$ of <em>The Rotation Group and Orientation</em>, and the isometry groups of the real forms of a Hermitian form are the groups $U(p, r)$; the corresponding Lie algebras are the real forms of <em>The Orthogonal Lie Algebra</em>.</p>
+<p><strong>Remark.</strong> The unitary and symplectic matrix groups belong to the classical groups as studied in category 04; the role of this article is to exhibit them as the isometry groups of the three types of form, so that the form, not the matrix, is the primary datum.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>classical groups</strong> are the isometry groups of the three types of form. A non-degenerate <strong>symmetric bilinear</strong> form gives the <strong>orthogonal group</strong> $\operatorname{O}(V, h)$ with special subgroup $\operatorname{SO}(V, h) = \operatorname{O}(V, h) \cap SL(V)$; a non-degenerate <strong>alternating</strong> form gives the <strong>symplectic group</strong> $\operatorname{Sp}(V, \omega)$; and a non-degenerate <strong>Hermitian</strong> form gives the <strong>unitary group</strong> $\operatorname{U}(V, h)$ with special subgroup $\operatorname{SU}(V, h) = \operatorname{U}(V, h) \cap SL(V)$.</p>
+<p>Over $\mathbb{C}$ the standard unitary groups are $U(n) = \{U : U^{\dagger}U = I\}$ and $SU(n)$, of real dimensions $n^2$ and $n^2 - 1$; $U(n)$ is compact and $U(n)/SU(n) \cong S^1$. A Hermitian form $h = s + ia$ has unitary group $\operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a)$, the intersection of an orthogonal and a symplectic group on the realification.</p>
+<p>The standard symplectic group $Sp(2m, F) = \{M : M^T\Omega M = \Omega\}$ has dimension $2m^2 + m$, is contained in $SL(2m, F)$ (every symplectic matrix has determinant $1$, by the Pfaffian), is connected and non-compact, and in dimension two coincides with $SL(2, F)$. The <strong>quaternionic unitary group</strong> $Sp(n)$, of dimension $n(2n+1)$, is compact and is the compact real form of $Sp(2n, \mathbb{C})$; the notation $Sp$ therefore carries two distinct meanings, which the context separates.</p>
+<p>Over an algebraically closed field the simple Lie algebras coming from these groups are the four families $A_n = \mathfrak{sl}(n+1)$, $B_n = \mathfrak{so}(2n+1)$, $C_n = \mathfrak{sp}(2n)$ and $D_n = \mathfrak{so}(2n)$, of ranks $n$ and dimensions $n(n+2)$, $n(2n+1)$, $n(2n+1)$ and $n(2n-1)$. $B$ and $C$ are dual families of equal dimension; $D_2$ is not simple, splitting as $A_1 \times A_1$. The compact real forms are $SU(n)$, $SO(2n+1)$, $Sp(n)$, $SO(2n)$, and the split real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, $SO(n, n)$.</p>
+<p>A <strong>Hermitian form</strong> has a Hermitian Gram matrix $H = H^{\dagger}$ and a real-valued diagonal $v \mapsto h(v, v)$. By the <strong>inertia theorem for Hermitian forms</strong> it has a unique signature $(p, r, z)$ with normal form $\operatorname{diag}(I_p, -I_r, 0_z)$, and its isometry group is $U(p, r)$, of real dimension $n^2$, with special subgroup $SU(p, r)$ of dimension $n^2 - 1$. The case $U(1, 1)$ is non-compact and contains both a hyperbolic and a compact one-parameter subgroup; $SU(1, 1) \cong SL(2, \mathbb{R}) \cong Sp(2, \mathbb{R})$.</p>
+<p>The compact and split forms of the symplectic family meet in the unitary group: on $\mathbb{R}^{2m}$ with the standard alternating and Euclidean forms, $Sp(2m, \mathbb{R}) \cap O(2m) = U(m)$, because a real matrix that is both symplectic and orthogonal commutes with $\Omega$ and is therefore complex-linear. Hence $U(m)$ is a maximal compact subgroup of $Sp(2m, \mathbb{R})$, of dimension $m^2$ inside the ambient dimension $2m^2 + m$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>$\mathbb{K}$</td>
+<td>Either $\mathbb{R}$ or $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>Finite-dimensional space over $F$ or $\mathbb{K}$</td>
+</tr>
+<tr>
+<td>$h$, $s$, $a$</td>
+<td>Form; its symmetric part; its alternating part</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Involution of the base ring used in sesquilinearity</td>
+</tr>
+<tr>
+<td>$\overline{\cdot}$, ${}^{\dagger}$</td>
+<td>Complex conjugation of coefficients; conjugate transpose (Hermitian conjugation)</td>
+</tr>
+<tr>
+<td>$\operatorname{U}(V, h)$</td>
+<td>Unitary group of a Hermitian form</td>
+</tr>
+<tr>
+<td>$\operatorname{SU}(V, h)$, $SU(n)$</td>
+<td>Special unitary group, determinant one</td>
+</tr>
+<tr>
+<td>$U(n)$</td>
+<td>Standard unitary group, $U^{\dagger}U = I$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>Hermitian Gram matrix, $H^{\dagger} = H$, $h(u,v) = u^{\dagger}Hv$</td>
+</tr>
+<tr>
+<td>$U(p, r)$, $SU(p, r)$</td>
+<td>Unitary group of a Hermitian form of signature $(p, r)$, and its determinant-one subgroup</td>
+</tr>
+<tr>
+<td>$p, r, z$</td>
+<td>Signature of a Hermitian form, $p + r + z = n$</td>
+</tr>
+<tr>
+<td>$I_p$</td>
+<td>Identity matrix of size $p$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}$</td>
+<td>Diagonal matrix with the displayed entries</td>
+</tr>
+<tr>
+<td>$\operatorname{Sp}(V, \omega)$</td>
+<td>Symplectic group of an alternating form</td>
+</tr>
+<tr>
+<td>$Sp(2m, F)$</td>
+<td>Standard symplectic group, $M^T\Omega M = \Omega$</td>
+</tr>
+<tr>
+<td>$Sp(n)$</td>
+<td>Compact quaternionic unitary group (a clash of notation with the previous line, separated by context)</td>
+</tr>
+<tr>
+<td>$\Omega$</td>
+<td>Standard alternating matrix $\begin{pmatrix} 0 & I \\ -I & 0\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>Alternating form, $\omega(x, y) = x^T\Omega y$</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}$</td>
+<td>Pfaffian</td>
+</tr>
+<tr>
+<td>$\delta_{ij}$</td>
+<td>Kronecker delta</td>
+</tr>
+<tr>
+<td>$GL(V)$, $SL(V)$</td>
+<td>General and special linear groups</td>
+</tr>
+<tr>
+<td>$A_n, B_n, C_n, D_n$</td>
+<td>The four classical families of simple Lie algebras</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}, \mathfrak{so}, \mathfrak{sp}$</td>
+<td>The corresponding Lie algebras</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Quaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{C}, \mathbb{R}$</td>
+<td>Complex and real numbers</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for the classical groups over general rings and their isometry-theoretic definition.</li>
+<li>Larry C. Grove, <em>Classical Groups and Geometric Algebra</em>, Graduate Studies in Mathematics 39 (American Mathematical Society, 2002), for the unitary, symplectic and orthogonal groups and their interrelations.</li>
+<li>Roger Howe, "Remarks on classical invariant theory", <em>Transactions of the American Mathematical Society</em> 313 (1989), 539–570, for the form-first viewpoint on the classical groups.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras, Chapters 4–6</em> (Springer, 2002), for the root systems and the classification of the classical families.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em>, Graduate Texts in Mathematics 9 (Springer, 1972), for the four families and their real forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

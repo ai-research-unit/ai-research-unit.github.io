@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnetic Resonance and Rabi Oscillations in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="magnetic-resonance-and-rabi-oscillations-in-biquaternionic-form"><strong>Magnetic Resonance and Rabi Oscillations in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A spin-1/2 placed in a static magnetic field $B_0\hat{z}$ precesses at the Larmor frequency $\omega_0 = \gamma B_0$. If a weak transverse field oscillating at the same frequency is added, the precession is interrupted and the spin is driven coherently between its two energy eigenstates. The transition probability oscillates — the <strong>Rabi oscillation</strong> — with a frequency proportional to the transverse amplitude, and it reaches unity at exact resonance after a time $\pi/\omega_1$. This is the elementary mechanism of magnetic resonance, nuclear and electron spin resonance, and the qubit gate.</p>
+<p>This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles. The physical content is standard and is reproduced here exactly. What the article establishes is <strong>where</strong> the driven problem lives in the algebra and which of the framework's structures the resonance condition and the Rabi formula expose:</p>
+<ol>
+<li><strong>The drive is a pair of Hermitian elements with time-dependent real coefficients.</strong> The transverse coupling is built from $\tilde{S}_1 = \tfrac{\hbar}{2}ie_1$ and $\tilde{S}_2 = \tfrac{\hbar}{2}ie_2$, both in $\mathbb{M}_+$; the total Hamiltonian remains in $\mathbb{M}_+$ for all times. No element of the material sector enters the spin dynamics.</li>
+<li><strong>The rotating frame is a rotor.</strong> The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}e_3)\in\mathbb{H}_{\mathbb{B}}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.</li>
+<li><strong>The effective Hamiltonian is static and traceless</strong>,
+   $$
+   \tilde{H}_R = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,ie_3 + \omega_1\,ie_1\Big] \in \mathbb{M}_+,
+   $$
+   and the generalized Rabi frequency is its spectral gap, $\tilde\Omega = \sqrt{(\omega_0-\omega)^2+\omega_1^2}$.</li>
+<li><strong>Resonance is the vanishing of the longitudinal component.</strong> At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto ie_1$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.</li>
+<li><strong>The transition probability is a trace pairing</strong>, $P_\downarrow(t) = \mathrm{Tr}(\tilde{P}_-(\hat{z})\tilde{\rho}(t))$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the trace formula.</li>
+</ol>
+<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ sends $e_0\mapsto I_2$, $ie_k\mapsto\sigma_k$.</p>
+<p>The companion articles supply the pieces:
+- Companion article <em>Spin-1/2 Quantum Mechanics in Biquaternionic Form</em>, for the spin operators and the two-level Hamiltonian.
+- Companion article <em>Exercise: Spin Precession in a Magnetic Field</em>, for the Larmor precession and the evolution biquaternion.
+- Companion article <em>Quantum Mechanics in Biquaternionic Form</em>, for the Schrödinger evolution in the algebra and the trace pairing.
+- Companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, for the phase accumulated under a driven field.</p>
+<h2 id="the-driven-two-level-system">The Driven Two-Level System</h2>
+<h3 id="the-hamiltonian">The Hamiltonian</h3>
+<p>A spin-1/2 of gyromagnetic ratio $\gamma$ in the field</p>
+<p>$$
+\mathbf{B}(t) = B_0\,\hat{z} + B_1\left(\cos\omega t\,\hat{x} - \sin\omega t\,\hat{y}\right)
+$$</p>
+<p>has the Hamiltonian $H(t) = -\boldsymbol{\mu}\cdot\mathbf{B}(t)$ with $\boldsymbol{\mu} = \gamma\mathbf{S}$. In the biquaternion algebra the spin operator is $\tilde{\mathbf{S}} = \tfrac{\hbar}{2}i e_k$ along $e_k$, and the Hamiltonian is the Hermitian element</p>
+<p>$$
+\tilde{H}(t) = -\frac{\hbar\omega_0}{2}\,ie_3
+-\frac{\hbar\omega_1}{2}\left(ie_1\cos\omega t - ie_2\sin\omega t\right),
+\qquad
+\omega_0 = \gamma B_0, \quad \omega_1 = \gamma B_1 .
+$$</p>
+<p>Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the <strong>Rabi frequency</strong>, the rate set by the transverse amplitude. Each of the three terms lies in $\mathbb{M}_+$: the longitudinal term is a multiple of $ie_3$ and the transverse terms are multiples of $ie_1$ and $ie_2$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the norm form and the trace, as the Schrödinger article requires.</p>
+<p>The choice of the $-\hat{y}$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise <em>Exercise: Spin Precession in a Magnetic Field</em>, where the Bloch vector of a spin in a static field precesses as $\mathbf{r}(t) = (\cos\omega_0 t, -\sin\omega_0 t, 0)$ for a state initially along $+\hat{x}$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.</p>
+<h3 id="the-larmor-precession-as-a-rotor">The Larmor Precession as a Rotor</h3>
+<p>With $B_1 = 0$ the propagator is $\tilde{U}_0(t) = \exp(-i\tilde{H}_0t/\hbar)$ with $\tilde{H}_0 = -\tfrac{\hbar\omega_0}{2}ie_3$. Since $-i\tilde{H}_0/\hbar = \tfrac{\omega_0}{2}(i\cdot ie_3) = -\tfrac{\omega_0}{2}e_3$ and $e_3^2 = -e_0$,</p>
+<p>$$
+\tilde{U}_0(t) = \exp\!\left(-\frac{\omega_0 t}{2}e_3\right)
+= \cos\frac{\omega_0 t}{2}\,e_0 - \sin\frac{\omega_0 t}{2}\,e_3
+\;\in \mathbb{H}_{\mathbb{B}} .
+$$</p>
+<p>This is a unit real quaternion, a rotor; it acts on states and observables by conjugation and generates the Larmor precession. The key algebraic point is the one the Schrödinger article makes: the generator of the <em>physical</em> rotation is a real quaternion $e_3$, obtained from the Hermitian observable $ie_3$ by multiplication by the central $i$. The imaginary unit that makes the observable Hermitian is the same one that converts its exponential into a rotation rather than a boost.</p>
+<h3 id="the-formal-solution">The Formal Solution</h3>
+<p>Because $\tilde{H}(t)$ at different times need not commute, the propagator is the time-ordered exponential</p>
+<p>$$
+\tilde{U}(t) = \mathcal{T}\exp\!\left(-\frac{i}{\hbar}\int_0^t \tilde{H}(t')\,dt'\right),
+$$</p>
+<p>which in the algebra is a product of unitaries in the limit of infinitesimal steps, $\tilde{U}(t) = \lim_{N\to\infty}\prod_{k=0}^{N-1}\exp(-\tfrac{i}{\hbar}\tilde{H}(t_k)\Delta t)$. Each factor is a unitary element of $\mathbb{B}$; the product is unitary too, and lies in the group generated by $\mathbb{M}_+$ together with the central $i$, which is the $U(2)$ of the informational sector. The rotating frame below turns this time-ordered product into a single exponential.</p>
+<h2 id="the-rotating-frame">The Rotating Frame</h2>
+<h3 id="the-rotor-transformation">The Rotor Transformation</h3>
+<p>Define the rotating-frame state and observable by</p>
+<p>$$
+\psi_R(t) = \tilde{U}_R(t)^\dagger\,\psi(t),
+\qquad
+\tilde{U}_R(t) = \exp\!\left(-\frac{\omega t}{2}e_3\right)
+= \cos\frac{\omega t}{2}\,e_0 - \sin\frac{\omega t}{2}\,e_3 .
+$$</p>
+<p>The rotor $\tilde{U}_R$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $i\hbar\dot\psi = \tilde{H}\psi$ becomes $i\hbar\dot\psi_R = \tilde{H}_R\psi_R$ with</p>
+<p>$$
+\tilde{H}_R = \tilde{U}_R^\dagger\,\tilde{H}\,\tilde{U}_R - i\hbar\,\tilde{U}_R^\dagger\,\partial_t\tilde{U}_R .
+$$</p>
+<p>The second term is the "fictitious" term produced by the time dependence of the frame; it is what makes the transformation a change of description rather than a mere relabelling.</p>
+<h3 id="the-effective-hamiltonian">The Effective Hamiltonian</h3>
+<p>The three terms of $\tilde{H}$ transform as follows. The longitudinal term is proportional to $ie_3$, which commutes with the rotor, so it is unchanged. The transverse combination is rotated into a fixed direction: using the conjugation rule for a rotor about $e_3$, one finds</p>
+<p>$$
+\tilde{U}_R^\dagger\left(ie_1\cos\omega t - ie_2\sin\omega t\right)\tilde{U}_R = ie_1 ,
+$$</p>
+<p>so the drive becomes a static transverse field. The fictitious term computes to $-i\hbar\tilde{U}_R^\dagger\partial_t\tilde{U}_R = +\tfrac{\hbar\omega}{2}ie_3$. Adding the three contributions,</p>
+<p>$$
+\boxed{\;\tilde{H}_R = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,ie_3 + \omega_1\,ie_1\Big] \in \mathbb{M}_+ \;}
+$$</p>
+<p>which is time independent. Writing $\Delta = \omega_0-\omega$ for the <strong>detuning</strong>, the effective Hamiltonian is a fixed Hermitian element of the informational sector,</p>
+<p>$$
+\tilde{H}_R = -\frac{\hbar}{2}\,i\left(\omega_1 e_1 + \Delta e_3\right)
+= -\frac{\hbar\tilde\Omega}{2}\,i\,\hat{n}_R,
+\qquad
+\hat{n}_R = \frac{\omega_1 e_1 + \Delta e_3}{\tilde\Omega},
+$$</p>
+<p>with</p>
+<p>$$
+\tilde\Omega = \sqrt{\omega_1^2 + \Delta^2}
+$$</p>
+<p>the <strong>generalized Rabi frequency</strong>. Every quantity in the driven problem has now been reduced to a single real vector $\hat{n}_R$ on the unit sphere and a single frequency $\tilde\Omega$: the effective Hamiltonian is a spin observable along $\hat{n}_R$ with coupling $\hbar\tilde\Omega/2$, exactly the structure of a static spin in a field.</p>
+<h3 id="resonance">Resonance</h3>
+<p>Resonance is the condition $\omega = \omega_0$, i.e. $\Delta = 0$. Then</p>
+<p>$$
+\tilde{H}_R\big|_{\Delta=0} = -\frac{\hbar\omega_1}{2}\,ie_1,
+$$</p>
+<p>a purely transverse effective Hamiltonian: the longitudinal component of the effective field vanishes, $\hat{n}_R = e_1$, and the effective Larmor precession is about the $x$-axis at the Rabi frequency $\omega_1$. This is the algebraic statement of resonance: the rotating frame corotates with the drive exactly, so the longitudinal part of the field, $B_0-\omega/\gamma$, is cancelled. Off resonance the residual longitudinal field tilts $\hat{n}_R$ away from the equator, the effective precession cone opens, and the maximum transition probability is reduced.</p>
+<h2 id="rabi-oscillations">Rabi Oscillations</h2>
+<h3 id="the-transition-probability">The Transition Probability</h3>
+<p>Prepare the spin in the upper eigenstate of the static field, $\tilde{\rho}(0) = \tilde{P}_+(\hat{z})$, and ask for the probability of finding it in the lower eigenstate $\tilde{P}_-(\hat{z})$ at time $t$. In the rotating frame the state evolves by the static Hamiltonian, so</p>
+<p>$$
+\tilde{\rho}_R(t) = \tilde{R}(t)\,\tilde{\rho}(0)\,\tilde{R}(t)^\dagger,
+\qquad
+\tilde{R}(t) = \exp\!\left(-\frac{i\tilde{H}_R t}{\hbar}\right).
+$$</p>
+<p>Since $-i\tilde{H}_R/\hbar = -\tfrac12(\omega_1 e_1 + \Delta e_3)$ and the square of the generator is $-\tfrac14(\omega_1^2+\Delta^2)e_0 = -\tfrac14\tilde\Omega^2 e_0$, the exponential is a rotation about $\hat{n}_R$:</p>
+<p>$$
+\tilde{R}(t) = \exp\!\left(-\frac{\tilde\Omega t}{2}\,\hat{n}_R\right)
+= \cos\frac{\tilde\Omega t}{2}\,e_0 - \sin\frac{\tilde\Omega t}{2}\;\frac{\omega_1 e_1 + \Delta e_3}{\tilde\Omega} .
+$$</p>
+<p>The exponent is a real quaternion, so $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\hat{n}_R$ at the rate $\tilde\Omega$. The state in the laboratory frame is $\tilde{\rho}(t) = \tilde{U}_R(t)\tilde{\rho}_R(t)\tilde{U}_R(t)^\dagger$, and the transition probability is the trace pairing with the fixed idempotent $\tilde{P}_-(\hat{z})$. Restoring the frame rotor and evaluating the trace gives the standard result</p>
+<p>$$
+P_{\downarrow}(t) = \mathrm{Tr}\!\left(\tilde{P}_-(\hat{z})\,\tilde{\rho}(t)\right)
+= \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\sqrt{\omega_1^2+\Delta^2}}{2}\,t\right).
+$$</p>
+<p>This is the <strong>Rabi formula</strong>. On resonance it simplifies to</p>
+<p>$$
+P_\downarrow(t)\big|_{\omega=\omega_0} = \sin^2\!\left(\frac{\omega_1 t}{2}\right),
+$$</p>
+<p>the elementary sinusoidal oscillation between the two levels at the Rabi frequency.</p>
+<p>The derivation contains one geometric fact worth isolating. In the rotating frame the evolution is a rotation of the Bloch vector about the fixed axis $\hat{n}_R$; the laboratory measurement axis $\hat{z}$ is itself carried by the rotor $\tilde{U}_R(t)$ in the laboratory frame, and the overlap of the two rotations is what produces the factor $\omega_1^2/\tilde\Omega^2$ and the argument $\tilde\Omega t/2$. Both factors are the standard ones; the biquaternion setting writes each rotation as a rotor and the probability as a trace.</p>
+<h3 id="the-rotating-wave-approximation">The Rotating-Wave Approximation</h3>
+<p>The circularly polarised drive used above is a single rotating component. A practical magnetic-resonance experiment uses a <strong>linearly</strong> polarised field,</p>
+<p>$$
+\mathbf{B}_1(t) = 2B_1\cos\omega t\;\hat{x},
+$$</p>
+<p>which is the sum of the corotating component $B_1(\cos\omega t\,\hat{x}-\sin\omega t\,\hat{y})$ considered above and the counter-rotating component $B_1(\cos\omega t\,\hat{x}+\sin\omega t\,\hat{y})$. The corotating component is static in the rotating frame; the counter-rotating component rotates at $2\omega$ and contributes rapidly oscillating terms. The <strong>rotating-wave approximation</strong> (RWA) drops the counter-rotating terms, and it is accurate when $\omega_1\ll\omega_0$; the neglected terms produce the Bloch–Siegert shift, of order $\omega_1^2/\omega_0$. In the biquaternion algebra the split is the decomposition of the linear drive into the two circular components $ie_1\cos\omega t\mp ie_2\sin\omega t$, each a Hermitian combination; the RWA keeps the component that corotates with the Larmor rotor $\tilde{U}_0$ and discards its conjugate. The approximation is thus a statement about which rotor the drive is in phase with, and it has no special algebraic status.</p>
+<h3 id="math110-and-math111-pulses">$\pi$ and $\pi/2$ Pulses</h3>
+<p>Two pulse durations have a distinguished role. At resonance, $\tilde\Omega = \omega_1$, and</p>
+<p>$$
+t = \frac{\pi}{\omega_1}:\quad P_\downarrow = \sin^2\frac{\pi}{2} = 1,
+\qquad
+t = \frac{\pi}{2\omega_1}:\quad P_\downarrow = \sin^2\frac{\pi}{4} = \frac12 .
+$$</p>
+<p>The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde{P}_+(\hat{z})$ to $\tilde{P}_-(\hat{z})$ with unit probability. The second is a $\pi/2$-pulse: it prepares the equal coherent superposition. In the algebra these are the statements that the rotor $\tilde{R}(\pi/\omega_1) = -e_1$, a $\pi$-rotation about the effective axis $e_1$, exchanges the two idempotents, and that $\tilde{R}(\pi/2\omega_1)$ carries the pole of the Bloch sphere to its equator. A $\pi/2$-pulse followed by a free Larmor evolution and a second $\pi/2$-pulse is the standard Ramsey interferometer; its fringes are governed by the phase accumulated in the interval, in which a dynamical part and a geometric part can be separated.</p>
+<h2 id="the-bloch-picture">The Bloch Picture</h2>
+<p>The state at any time can be written $\tilde{\rho}(t) = \tfrac12(e_0 + i\mathbf{r}(t))$, with $\mathbf{r}(t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H},\tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ of the companion article <em>Quantum Mechanics in Biquaternionic Form</em>, the Bloch vector obeys</p>
+<p>$$
+\dot{\mathbf{r}} = \boldsymbol{\omega}_{\mathrm{eff}}\times\mathbf{r},
+\qquad
+\boldsymbol{\omega}_{\mathrm{eff}} = (-\omega_1, 0, -\Delta),
+$$</p>
+<p>for the effective Hamiltonian $\tilde{H}_R = -\tfrac{\hbar}{2}i(\omega_1 e_1+\Delta e_3)$. This is a rigid rotation of $\mathbf{r}$ about the fixed axis $-\hat{n}_R$ at the rate $\tilde\Omega$. Three cases are worth separating.</p>
+<ul>
+<li><strong>Resonance</strong> ($\Delta = 0$): the rotation axis is the $x$-axis, the Bloch vector rotates in the $yz$-plane, and a spin initially along $+z$ passes through the equator and reaches $-z$ after a half-period — the $\pi$-pulse.</li>
+<li><strong>Large detuning</strong> ($|\Delta|\gg\omega_1$): the axis is close to $-z$, the rotation cone is narrow, and the spin remains near its initial pole, executing small oscillations of amplitude $\sim\omega_1/|\Delta|$ — the dispersive regime.</li>
+<li><strong>Exact antiresonance</strong> is not a special point for a circular drive; it is special only for a linear drive, where the counter-rotating component becomes corotating. This is the algebraic content of the distinction between the two polarisations.</li>
+</ul>
+<p>The Bloch picture is the material of the companion article <em>Quantum Mechanics in Biquaternionic Form</em>; here it is used only to display the effective rotation, and the reader is referred to that article for the derivation of the Bloch equation from the trace pairing.</p>
+<h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
+<p><strong>Standard physics, transcribed.</strong> The Larmor precession, the rotating-frame transformation, the effective Hamiltonian, the generalized Rabi frequency, the Rabi formula, the RWA and the $\pi$ and $\pi/2$ pulses are all standard. The article claims no deviation from the standard predictions.</p>
+<p><strong>What the algebra organises.</strong></p>
+<ul>
+<li><strong>A single sector.</strong> The drive, the static field and the effective field are all Hermitian elements of $\mathbb{M}_+$, and the whole problem is the conjugation of a state in that sector by a product of unitaries. The material sector does not appear, except in the frame rotor $\tilde{U}_R$, which is a real quaternion in $\mathbb{H}_{\mathbb{B}}$.</li>
+<li><strong>The rotor as the natural variable.</strong> The rotating frame is not an ad hoc complex exponential; it is conjugation by the unit real quaternion $\exp(-\tfrac{\omega t}{2}e_3)$, the same rotor that carries the Larmor precession. The effective Hamiltonian is the transformed observable, and the resonance condition is the vanishing of its longitudinal component.</li>
+<li><strong>The spectral gap as the Rabi frequency.</strong> The generalized Rabi frequency is the difference of the two eigenvalues of the effective Hamiltonian, $\pm\hbar\tilde\Omega/2$, so it is a spectral quantity of a Hermitian element of $\mathbb{M}_+$. The maximum transition amplitude $\omega_1^2/(\omega_1^2+\Delta^2)$ is the square of the transverse fraction of the effective field, i.e. the geometric tilt of $\hat{n}_R$ from the equator.</li>
+<li><strong>No privileged counter-rotating terms.</strong> Because the drive is written as a Hermitian element with an explicit time dependence, the RWA is exposed as a physical approximation about which rotor the drive tracks, not as an algebraic necessity.</li>
+</ul>
+<p><strong>What the algebra does not supply.</strong> The Rabi frequency $\omega_1 = \gamma B_1$ and the Larmor frequency $\omega_0 = \gamma B_0$ contain the gyromagnetic ratio $\gamma$ and the field amplitudes; these are external data, like the mass and the action in the other articles of the series. The algebra also does not supply the time $t$ or the drive frequency $\omega$; the rotating frame is defined by inserting them. Finally, dissipation and relaxation — the Bloch $T_1$ and $T_2$ times — lie outside the Hamiltonian evolution entirely and are not addressed by the framework, which is unitary.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Bloch–Siegert and the counter-rotating sector.</strong> The counter-rotating component has the opposite helicity, which in the algebra is the opposite sign of the generator $ie_2$. Is there a natural way to separate the two helicities in the algebra, in the way the chirality projectors separate the two Weyl components of a Dirac spinor? If so, the RWA might acquire an algebraic character it does not have here.</p>
+</li>
+<li>
+<p><strong>Dissipation.</strong> The framework is unitary, and the Rabi problem is closed. The open-system version — the Bloch equations with relaxation — requires a density operator that is not merely conjugated by a rotor. Whether the informational sector admits a completely positive map with a natural algebraic form is left open by the companion article <em>The Measurement Problem in Algebraic Form</em>.</p>
+</li>
+<li>
+<p><strong>The rotating frame and the local complex structure.</strong> The rotor $\exp(-\tfrac{\omega t}{2}e_3)$ uses the real unit $e_3$, not the central imaginary. The central imaginary of the Schrödinger equation is fixed, but the series makes the complex structure local, set by the medium. Whether the frame rotor should be regarded as a local object, and how it would then differ from a global one, is unresolved.</p>
+</li>
+<li>
+<p><strong>Dressed states.</strong> The eigenstates of $\tilde{H}_R$ are the dressed states of the driven two-level system, and the Mollow triplet in resonance fluorescence is their spectrum. Is there an algebraic statement of the dressed-state structure — for instance a spectral decomposition of $\tilde{H}_R$ that makes the Autler–Townes splitting immediate?</p>
+</li>
+<li>
+<p><strong>Empirical content.</strong> As elsewhere, the reformulation reproduces the standard predictions; whether its additional structure implies a measurable deviation is open.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>A spin-1/2 driven by $\mathbf{B}(t) = B_0\hat{z} + B_1(\cos\omega t\,\hat{x}-\sin\omega t\,\hat{y})$ has the biquaternion Hamiltonian</p>
+<p>$$
+\tilde{H}(t) = -\frac{\hbar\omega_0}{2}ie_3 - \frac{\hbar\omega_1}{2}\left(ie_1\cos\omega t - ie_2\sin\omega t\right) \in \mathbb{M}_+,
+$$</p>
+<p>with $\omega_0 = \gamma B_0$ and $\omega_1 = \gamma B_1$. The transformation to the frame rotating with the drive is conjugation by the unit real quaternion $\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}e_3)$, and it produces the static effective Hamiltonian</p>
+<p>$$
+\tilde{H}_R = \tilde{U}_R^\dagger\tilde{H}\tilde{U}_R - i\hbar\tilde{U}_R^\dagger\partial_t\tilde{U}_R
+= -\frac{\hbar}{2}\Big[(\omega_0-\omega)ie_3 + \omega_1 ie_1\Big].
+$$</p>
+<p>The effective Hamiltonian is a spin observable along the unit vector $\hat{n}_R = (\omega_1 e_1 + \Delta e_3)/\tilde\Omega$, with $\Delta = \omega_0-\omega$ the detuning and $\tilde\Omega = \sqrt{\omega_1^2+\Delta^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_R = -\tfrac{\hbar\omega_1}{2}ie_1$ purely transverse, and then the spin precesses about the equator.</p>
+<p>The transition probability is the trace pairing $P_\downarrow(t) = \mathrm{Tr}(\tilde{P}_-(\hat{z})\tilde{\rho}(t))$, and it equals the Rabi formula</p>
+<p>$$
+P_\downarrow(t) = \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\tilde\Omega t}{2}\right),
+$$</p>
+<p>which reduces to $\sin^2(\omega_1t/2)$ on resonance. The $\pi$-pulse $t = \pi/\omega_1$ inverts the spin and the $\pi/2$-pulse $t = \pi/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $\dot{\mathbf{r}} = \boldsymbol{\omega}_{\mathrm{eff}}\times\mathbf{r}$ with $\boldsymbol{\omega}_{\mathrm{eff}} = (-\omega_1,0,-\Delta)$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian (informational) subspace; home of all Hamiltonians here</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real-quaternion subspace; home of the frame rotor</td>
+</tr>
+<tr>
+<td>$\tilde{S}_k = \tfrac{\hbar}{2}ie_k$</td>
+<td>Spin observable along $\hat{k}$</td>
+</tr>
+<tr>
+<td>$\mathbf{B}(t) = B_0\hat{z}+B_1(\cos\omega t\,\hat{x}-\sin\omega t\,\hat{y})$</td>
+<td>Static field plus corotating drive</td>
+</tr>
+<tr>
+<td>$\omega_0 = \gamma B_0$</td>
+<td>Larmor frequency</td>
+</tr>
+<tr>
+<td>$\omega_1 = \gamma B_1$</td>
+<td>Rabi frequency</td>
+</tr>
+<tr>
+<td>$\Delta = \omega_0-\omega$</td>
+<td>Detuning</td>
+</tr>
+<tr>
+<td>$\tilde{H}(t) = -\tfrac{\hbar\omega_0}{2}ie_3-\tfrac{\hbar\omega_1}{2}(ie_1\cos\omega t-ie_2\sin\omega t)$</td>
+<td>Laboratory Hamiltonian</td>
+</tr>
+<tr>
+<td>$\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}e_3)$</td>
+<td>Rotating-frame rotor</td>
+</tr>
+<tr>
+<td>$\tilde{H}_R = -\tfrac{\hbar}{2}[(\omega_0-\omega)ie_3+\omega_1ie_1]$</td>
+<td>Effective Hamiltonian in the rotating frame</td>
+</tr>
+<tr>
+<td>$\tilde\Omega = \sqrt{\omega_1^2+\Delta^2}$</td>
+<td>Generalized Rabi frequency (spectral gap)</td>
+</tr>
+<tr>
+<td>$\hat{n}_R = (\omega_1e_1+\Delta e_3)/\tilde\Omega$</td>
+<td>Effective rotation axis</td>
+</tr>
+<tr>
+<td>$P_\downarrow(t) = \tfrac{\omega_1^2}{\omega_1^2+\Delta^2}\sin^2(\tilde\Omega t/2)$</td>
+<td>Rabi transition probability</td>
+</tr>
+<tr>
+<td>$\pi/\omega_1$, $\pi/(2\omega_1)$</td>
+<td>$\pi$-pulse, $\pi/2$-pulse durations</td>
+</tr>
+<tr>
+<td>$\dot{\mathbf{r}} = \boldsymbol{\omega}_{\mathrm{eff}}\times\mathbf{r}$</td>
+<td>Bloch equation in the rotating frame</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. I. Rabi, "On the Process of Space Quantization," <em>Physical Review</em> <strong>49</strong> (1936) 324–328, for the original resonance method.</li>
+<li>I. I. Rabi, S. Millman, P. Kusch, and J. R. Zacharias, "The Molecular Beam Resonance Method for Measuring Nuclear Magnetic Moments," <em>Physical Review</em> <strong>55</strong> (1939) 526–535, for the molecular-beam resonance experiment.</li>
+<li>F. Bloch, "Nuclear Induction," <em>Physical Review</em> <strong>70</strong> (1946) 460–474, for the Bloch equations and relaxation.</li>
+<li>E. M. Purcell, H. C. Torrey, and R. V. Pound, "Resonance Absorption by Nuclear Magnetic Moments in a Solid," <em>Physical Review</em> <strong>69</strong> (1946) 37–38, for nuclear magnetic resonance in condensed matter.</li>
+<li>L. Allen and J. H. Eberly, <em>Optical Resonance and Two-Level Atoms</em> (Wiley, 1975), for the dressed states, the Rabi formula, and the rotating-wave approximation.</li>
+<li>Claude Cohen-Tannoudji, Jacques Dupont-Roc, and Gilbert Grynberg, <em>Atom–Photon Interactions</em> (Wiley, 1992), for the dressed-state and resonance-fluorescence treatment.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>Quantum Mechanics: Non-Relativistic Theory</em> (Pergamon, 1977), for the two-level system in a resonant field.</li>
+<li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the spin-1/2 treatment of magnetic resonance and the rotating frame.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

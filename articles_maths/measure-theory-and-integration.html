@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Measure Theory and Integration — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="measure-theory-and-integration"><strong>Measure Theory and Integration</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Integration begins with a question of size: how much of a set is there? On $\mathbb{R}^n$ the answer for an interval or a box is its volume, and the whole of measure theory is the attempt to extend that answer to as many sets as possible while keeping the rules of length — additivity over disjoint pieces and compatibility with translation — and to define an integral for as wide a class of functions as possible. The extension is not free: there are subsets of $\mathbb{R}$ to which no length can be assigned consistently with the axioms, and their existence is a theorem, not a pathology of the construction. This article develops the machinery the rest of the corpus presupposes: $\sigma$-algebras and their generators, measures and their construction by Carathéodory's method, measurable functions, the integral and its convergence theorems, product measures and the theorems of Fubini and Tonelli, and the Radon–Nikodym theorem with its decomposition theorems. It is the third and last of the preparation articles for <em>Topological Groups</em>, written in parallel, and it supplies the integration on which the companion articles of the algebra, operator-theory and analysis categories rely.</p>
+<p>Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $F$, $K$ denote fields; in this article the scalar field is almost always $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, since integration is a real or complex construction, and functions take values in $\mathbb{K}$ or in $[0, +\infty]$. A <strong>measurable space</strong> is a pair $(X, \mathcal{A})$ with $X$ a set and $\mathcal{A}$ a $\sigma$-algebra on it; a <strong>measure space</strong> is a triple $(X, \mathcal{A}, \mu)$. The topological background — Borel sets, openness, local compactness — is that of <em>Topological Spaces</em> and <em>Metric, Uniform and Complete Spaces</em>, both written in parallel. No physics is invoked.</p>
+<h2 id="set-systems-and-generated-algebras">Set Systems and Generated Algebras</h2>
+<h3 id="algebras-math16-algebras-and-rings-of-sets">Algebras, $\sigma$-Algebras and Rings of Sets</h3>
+<p><strong>Definition.</strong> Let $X$ be a set. A family $\mathcal{A} \subseteq \mathcal{P}(X)$ is an <strong>algebra</strong> of sets if it contains $X$, is closed under complements and under finite unions; it is a <strong>$\sigma$-algebra</strong> if it is closed under complements and under <em>countable</em> unions. A <strong>ring of sets</strong> is closed under finite unions and set differences, without the requirement that the whole space belong to it; a $d$-system (or <strong>Dynkin system</strong>) is closed under complements and countable <em>disjoint</em> unions; a <strong>monotone class</strong> is closed under increasing unions and decreasing intersections.</p>
+<p>From the closure axioms everything else follows: an algebra is closed under finite intersections and differences, a $\sigma$-algebra is closed under countable intersections and contains $\emptyset$, and the <strong>intersection of any family of $\sigma$-algebras is a $\sigma$-algebra</strong>. Hence for any $\mathcal{E} \subseteq \mathcal{P}(X)$ there is a smallest $\sigma$-algebra containing $\mathcal{E}$, its <strong>$\sigma$-algebra generated by</strong> $\mathcal{E}$, written $\sigma(\mathcal{E})$, obtained as the intersection of all the $\sigma$-algebras containing $\mathcal{E}$.</p>
+<p><strong>Definition.</strong> The <strong>Borel $\sigma$-algebra</strong> of a topological space $X$ is $\mathcal{B}(X) = \sigma(\tau)$, the $\sigma$-algebra generated by the open sets. Its elements are the <strong>Borel sets</strong>. On $\mathbb{R}$ it is generated by any of: the open sets, the closed sets, the open intervals, the intervals $(-\infty, a]$, or the compact sets.</p>
+<p><strong>Theorem (monotone class theorem).</strong> If $\mathcal{A}_0$ is an algebra of subsets of $X$, then the smallest $\sigma$-algebra containing $\mathcal{A}_0$ equals the smallest monotone class containing $\mathcal{A}_0$. Equivalently, the smallest Dynkin system containing a $\pi$-system coincides with the $\sigma$-algebra it generates.</p>
+<p><strong>Proof sketch.</strong> A monotone class that is an algebra is a $\sigma$-algebra, because a countable union can be written as an increasing union of finite unions. The smallest monotone class $\mathcal{M}$ containing the algebra $\mathcal{A}_0$ is therefore shown to be an algebra by the standard $\mathcal{A}_0$-first, then $X$-first, argument: fix $A$, show $\{B \in \mathcal{M} : A \cap B \in \mathcal{M}\}$ is a monotone class containing $\mathcal{A}_0$ when $A \in \mathcal{A}_0$, then repeat for general $A \in \mathcal{M}$. The Dynkin version is the same argument with disjoint unions in place of unions. $\square$</p>
+<p><strong>Corollary (uniqueness device).</strong> If two measures agree on a $\pi$-system that generates $\mathcal{A}$ and are $\sigma$-finite on it, then they agree on $\mathcal{A}$.</p>
+<p>The theorem is the standard tool for proving that a property of sets propagates from a generating family — rectangles, cylinder sets, intervals — to the whole $\sigma$-algebra. It is the reason one never verifies an identity of measures on all measurable sets directly.</p>
+<h2 id="measures">Measures</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p><strong>Definition.</strong> A <strong>measure</strong> on a measurable space $(X, \mathcal{A})$ is a function $\mu : \mathcal{A} \to [0, +\infty]$ with $\mu(\emptyset) = 0$ and, for every countable family $(A_n)$ of pairwise disjoint measurable sets,</p>
+<p>$$
+\mu\left(\bigsqcup_{n=1}^{\infty} A_n\right) = \sum_{n=1}^{\infty} \mu(A_n).
+$$</p>
+<p>This property is <strong>$\sigma$-additivity</strong>. A measure is <strong>finite</strong> if $\mu(X) < \infty$, a <strong>probability measure</strong> if $\mu(X) = 1$, and <strong>$\sigma$-finite</strong> if $X$ is a countable union of measurable sets of finite measure. It is <strong>complete</strong> if every subset of a null set (a measurable set of measure $0$) is measurable, in which case that subset is measurable and null as well.</p>
+<p><strong>Theorem (basic properties).</strong> For measurable sets:</p>
+<p><strong>(a)</strong> monotonicity: $A \subseteq B \Rightarrow \mu(A) \leq \mu(B)$;</p>
+<p><strong>(b)</strong> subadditivity: $\mu(\bigcup_n A_n) \leq \sum_n \mu(A_n)$ for any countable family;</p>
+<p><strong>(c)</strong> continuity from below: if $A_1 \subseteq A_2 \subseteq \cdots$ then $\mu(\bigcup_n A_n) = \lim_n \mu(A_n)$;</p>
+<p><strong>(d)</strong> continuity from above: if $A_1 \supseteq A_2 \supseteq \cdots$ and $\mu(A_1) < \infty$ then $\mu(\bigcap_n A_n) = \lim_n \mu(A_n)$.</p>
+<p><strong>Proof.</strong> (a) $B = A \sqcup (B \setminus A)$. (b) Disjointify: $B_n = A_n \setminus \bigcup_{k<n} A_k$. (c) Write $\bigcup_n A_n = A_1 \sqcup \bigsqcup_{n \geq 1} (A_{n+1} \setminus A_n)$ and apply $\sigma$-additivity. (d) Apply (c) to $A_1 \setminus A_n$, using $\mu(A_1) < \infty$ to subtract. $\square$</p>
+<p>The finiteness hypothesis in (d) is necessary: on $\mathbb{N}$ with counting measure the sets $A_n = \{n, n+1, \ldots\}$ decrease to $\emptyset$ but have infinite measure throughout.</p>
+<p><strong>Definition.</strong> Let $\mu, \nu$ be measures on $(X, \mathcal{A})$. Their <strong>sum</strong> is $(\mu + \nu)(A) = \mu(A) + \nu(A)$, and if $\mu(X) > 0$ the <strong>normalisation</strong> is the probability measure $\mu/\mu(X)$. A measurable set $A$ is an <strong>atom</strong> of $\mu$ if $\mu(A) > 0$ and every measurable $B \subseteq A$ satisfies $\mu(B) = 0$ or $\mu(B) = \mu(A)$; a measure with no atoms is <strong>diffuse</strong> (or non-atomic).</p>
+<p><strong>Example (counting and Dirac).</strong> On a set $X$ with $\mathcal{A} = \mathcal{P}(X)$, <strong>counting measure</strong> is $\mu(A) = |A|$ for finite $A$ and $+\infty$ otherwise; it is $\sigma$-finite exactly when $X$ is countable, and its atoms are the singletons. The <strong>Dirac measure</strong> at $x \in X$ is $\delta_x(A) = 1$ if $x \in A$ and $0$ otherwise; its only atom is $\{x\}$.</p>
+<h3 id="construction-of-measures">Construction of Measures</h3>
+<p><strong>Definition.</strong> An <strong>outer measure</strong> on a set $X$ is a function $\mu^* : \mathcal{P}(X) \to [0, +\infty]$ with $\mu^*(\emptyset) = 0$, monotone and countably subadditive. A set $A$ is <strong>$\mu^*$-measurable</strong> (in the sense of Carathéodory) if</p>
+<p>$$
+\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \setminus A) \qquad \text{for every } E \subseteq X.
+$$</p>
+<p><strong>Theorem (Carathéodory).</strong> If $\mu^*$ is an outer measure on $X$, then the family $\mathcal{A}$ of $\mu^*$-measurable sets is a $\sigma$-algebra, and $\mu^*$ restricted to $\mathcal{A}$ is a complete measure.</p>
+<p><strong>Proof.</strong> $\emptyset$ and $X$ are measurable, and the definition is symmetric in $A$ and $X \setminus A$, so $\mathcal{A}$ is closed under complements. If $A, B \in \mathcal{A}$ and $E \subseteq X$, then splitting $E$ along $B$ and then along $A$ gives</p>
+<p>$$
+\mu^*(E) \geq \mu^*(E \cap A \cap B) + \mu^*(E \cap A \setminus B) + \mu^*(E \setminus A) \geq \mu^*(E \cap (A \cup B)) + \mu^*(E \setminus (A \cup B)),
+$$</p>
+<p>so $A \cup B \in \mathcal{A}$, and by induction $\mathcal{A}$ is closed under finite unions. For a disjoint sequence $(A_n) \subseteq \mathcal{A}$ and $E \subseteq X$, iterating the defining identity gives $\sum_{n \leq N} \mu^*(E \cap A_n) \leq \mu^*(E)$, and letting $N \to \infty$ and using subadditivity gives the countable case; completeness follows because a null set $A$ satisfies the Carathéodory condition trivially. $\square$</p>
+<p><strong>Definition.</strong> A <strong>premeasure</strong> on an algebra $\mathcal{A}_0$ is a function $\mu_0 : \mathcal{A}_0 \to [0,\infty]$ that is $\sigma$-additive on $\mathcal{A}_0$ and satisfies $\mu_0(\emptyset) = 0$. It induces an outer measure by</p>
+<p>$$
+\mu^*(E) = \inf \left\{ \sum_{n=1}^{\infty} \mu_0(A_n) : A_n \in \mathcal{A}_0, \ E \subseteq \bigcup_{n=1}^{\infty} A_n \right\}.
+$$</p>
+<p><strong>Theorem (Carathéodory extension).</strong> If $\mu_0$ is a premeasure on an algebra $\mathcal{A}_0$, then $\mu_0$ extends to a measure on $\sigma(\mathcal{A}_0)$, and the extension is unique when $\mu_0$ is $\sigma$-finite.</p>
+<p><strong>Proof sketch.</strong> The induced $\mu^*$ is an outer measure agreeing with $\mu_0$ on $\mathcal{A}_0$. By the previous theorem, $\mu^*$ restricts to a measure on a $\sigma$-algebra containing $\mathcal{A}_0$; the uniqueness follows from the corollary to the monotone class theorem, since the family on which two $\sigma$-finite extensions agree is a Dynkin system containing the $\pi$-system $\mathcal{A}_0$. $\square$</p>
+<p><strong>Example (Lebesgue measure).</strong> On $\mathbb{R}^n$ let $\mathcal{A}_0$ be the algebra of finite disjoint unions of boxes $\prod_{i=1}^n (a_i, b_i]$, and let $\mu_0$ be the volume $\prod_i (b_i - a_i)$. This is a premeasure, so it extends to a measure $\lambda^n$ on the Borel $\sigma$-algebra, and its completion is <strong>Lebesgue measure</strong>. It is translation-invariant, $\lambda^n(Q) = \prod_i (b_i - a_i)$ for a box, and $\sigma$-finite; on $\mathbb{R}$ it is, up to a positive scalar, the unique translation-invariant Borel measure, the scalar being fixed by the normalisation $\lambda([0,1]) = 1$.</p>
+<p><strong>Theorem (non-measurability).</strong> There exists a subset of $\mathbb{R}$ that is not Lebesgue measurable.</p>
+<p><strong>Proof.</strong> On $[0,1)$ consider the equivalence relation $x \sim y \iff x - y \in \mathbb{Q}$; by the axiom of choice choose one representative from each class and let $V$ be the resulting set. Enumerate the rationals in $[-1,1)$ as $q_1, q_2, \ldots$; the translates $V + q_n$ are pairwise disjoint, since a common point of $V + q_m$ and $V + q_n$ would give $v - v' = q_n - q_m \in \mathbb{Q}$ with $v, v' \in V$, forcing $v = v'$ and hence $q_m = q_n$. Their union contains $[0,1)$, because each $x \in [0,1)$ differs from the representative $v$ of its class by a rational in $[-1,1)$, and their union is contained in $[-1,2)$ because $V \subseteq [0,1)$ and $|q_n| < 1$. If $V$ were measurable of measure $a$, translation invariance would give $\lambda(\bigcup_n (V + q_n)) = \sum_n a$, a series that is $0$ if $a = 0$ and $+\infty$ otherwise and therefore never lies in $[1, 3]$, contradicting the containment. Hence no such $a$ exists and $V$ is not Lebesgue measurable. $\square$</p>
+<p>The example shows that a $\sigma$-algebra of measurable sets cannot be all of $\mathcal{P}(\mathbb{R})$ if translation invariance and the interval volume are demanded. It also shows why measurability is a hypothesis in the theorems below and cannot be dropped.</p>
+<h2 id="measurable-functions">Measurable Functions</h2>
+<h3 id="definition-and-operations">Definition and Operations</h3>
+<p><strong>Definition.</strong> Let $(X, \mathcal{A})$ and $(Y, \mathcal{B})$ be measurable spaces. A function $f : X \to Y$ is <strong>$(\mathcal{A}, \mathcal{B})$-measurable</strong> if $f^{-1}(B) \in \mathcal{A}$ for every $B \in \mathcal{B}$. When $Y = \overline{\mathbb{R}} = [-\infty, +\infty]$ with the Borel $\sigma$-algebra generated by the open intervals, the measurable functions are the <strong>real measurable functions</strong>; when $Y = \mathbb{K}$ with the Borel $\sigma$-algebra, they are the <strong>$\mathbb{K}$-valued measurable functions</strong>. A function $f : X \to \mathbb{K}$ is measurable as soon as $f^{-1}(U)$ is measurable for the open sets $U$, since the open sets generate $\mathcal{B}(\mathbb{K})$.</p>
+<p><strong>Theorem.</strong> Measurable functions are closed under sums, products, scalar multiples, and limits:</p>
+<p><strong>(a)</strong> if $f, g$ are measurable and $\alpha, \beta \in \mathbb{K}$, then $\alpha f + \beta g$ and $f g$ are measurable;</p>
+<p><strong>(b)</strong> if $(f_n)$ is measurable, then $\sup_n f_n$, $\inf_n f_n$, $\limsup_n f_n$, $\liminf_n f_n$ are measurable, and if $f_n \to f$ pointwise then $f$ is measurable;</p>
+<p><strong>(c)</strong> if $f$ is measurable and $\Phi : \mathbb{K} \to \mathbb{K}$ is continuous, then $\Phi \circ f$ is measurable.</p>
+<p><strong>Proof.</strong> For (a) it suffices to show that $(f,g) : X \to \mathbb{K}^2$ is measurable: the preimage of a basic rectangle is the intersection of the preimages of the factors, and the open sets of $\mathbb{K}^2$ are countable unions of rectangles. Then use the continuity of $(x,y)\mapsto x+y$ and $(x,y)\mapsto xy$ and part (c). For (b), $\{\sup_n f_n \leq a\} = \bigcap_n \{f_n \leq a\}$ and $\{\limsup f_n \leq a\} = \bigcap_m \bigcup_n \bigcap_{k \geq n}\{f_k < a + 1/m\}$. For (c), $(\Phi \circ f)^{-1}(U) = f^{-1}(\Phi^{-1}(U))$ with $\Phi^{-1}(U)$ open. $\square$</p>
+<p><strong>Definition.</strong> A <strong>simple function</strong> is a finite linear combination $s = \sum_{i=1}^n c_i \mathbf{1}_{A_i}$ with $c_i \in \mathbb{K}$ and $A_i$ measurable; the canonical representation uses disjoint $A_i$ with distinct nonzero $c_i$. A property holds <strong>almost everywhere</strong> with respect to $\mu$ (abbreviated $\mu$-a.e.) if it fails only on a set of $\mu$-measure $0$. Two functions are <strong>equal a.e.</strong> if their difference is $0$ a.e.</p>
+<p><strong>Theorem (approximation by simple functions).</strong> Let $f : X \to [0, +\infty]$ be measurable. Then there is an increasing sequence of nonnegative simple functions $s_n$ with $s_n \uparrow f$ pointwise and $0 \leq s_n \leq f$. If moreover $f$ is bounded, the convergence is uniform: the standard construction has $\|f - s_n\|_\infty \leq 2^{-n}$ once $n$ exceeds the bound.</p>
+<p><strong>Proof.</strong> For $n \in \mathbb{N}$ and $1 \leq k \leq n2^n$ put $E_{n,k} = \{x : (k-1)/2^n \leq f(x) < k/2^n\}$ and define</p>
+<p>$$
+s_n = \sum_{k=1}^{n2^n} \frac{k-1}{2^n} \, \mathbf{1}_{E_{n,k}} + n \, \mathbf{1}_{\{f \geq n\}}.
+$$</p>
+<p>Each $s_n$ is simple, $s_n \leq f$, and $s_n \uparrow f$ pointwise. If $f$ is bounded with $f \leq M$ and $n > M$, the last term vanishes and $f - s_n < 2^{-n}$ on every $E_{n,k}$, so $\|f - s_n\|_\infty \leq 2^{-n}$. $\square$</p>
+<h3 id="modes-of-convergence">Modes of Convergence</h3>
+<p><strong>Definition.</strong> Let $f_n, f$ be measurable and finite a.e. Then $f_n \to f$ <strong>almost everywhere</strong> if $f_n \to f$ pointwise off a null set; <strong>in measure</strong> if for every $\epsilon > 0$, $\mu(\{|f_n - f| > \epsilon\}) \to 0$; and <strong>almost uniformly</strong> if for every $\epsilon > 0$ there is a measurable set $E$ with $\mu(E) < \epsilon$ such that $f_n \to f$ uniformly on $X \setminus E$.</p>
+<p><strong>Theorem (Egorov).</strong> If $\mu(X) < \infty$ and $f_n \to f$ a.e., then $f_n \to f$ almost uniformly, and hence in measure.</p>
+<p><strong>Proof.</strong> For $\epsilon > 0$ and $k \in \mathbb{N}$ put $E_{n,k} = \bigcup_{m \geq n}\{|f_m - f| > 1/k\}$; by a.e. convergence the decreasing family decreases to a null set, so $\mu(E_{n,k}) \to 0$ as $n \to \infty$. Choose $n_k$ with $\mu(E_{n_k, k}) < \epsilon/2^k$ and set $E = \bigcup_k E_{n_k,k}$, of measure $< \epsilon$; on the complement, $|f_m - f| \leq 1/k$ for $m \geq n_k$, so the convergence is uniform. $\square$</p>
+<p><strong>Theorem (Lusin).</strong> Let $X$ be a locally compact Hausdorff space with a regular Borel measure $\mu$, finite on compacts, and let $f$ be measurable with $\mu(X) < \infty$. Then for every $\epsilon > 0$ there is a compact set $K$ with $\mu(X \setminus K) < \epsilon$ such that $f|_K$ is continuous.</p>
+<p>The theorems of Egorov and Lusin are the two standard statements that measure-theoretic convergence and measurability are close to their topological counterparts on large sets; they are proved by the regularity approximation of measurable sets by compact sets.</p>
+<p><strong>Theorem (convergence in measure, partial converses).</strong> Convergence in measure implies a.e. convergence of a subsequence. If $\mu(X) < \infty$, a.e. convergence implies convergence in measure but not conversely: the indicator functions of the dyadic intervals $[k/2^m, (k+1)/2^m) \subseteq [0,1]$, enumerated with $m$ increasing and, for fixed $m$, $k$ running from $0$ to $2^m - 1$, converge to $0$ in measure on $[0,1]$, since the length of the $n$-th interval tends to $0$, but at every point of $[0,1)$ the values are $1$ for infinitely many $n$ and $0$ for infinitely many $n$, so there is no pointwise limit.</p>
+<p><strong>Proof.</strong> If $f_n \to f$ in measure, choose $n_k$ with $\mu(\{|f_{n_k} - f| > 2^{-k}\}) < 2^{-k}$; the Borel–Cantelli lemma makes the limsup of these sets null, so $f_{n_k} \to f$ a.e. With $\mu(X) < \infty$, a.e. convergence gives convergence in measure by Egorov's theorem, and the sliding dyadic intervals show that the converse fails even in a probability space. $\square$</p>
+<h2 id="integration">Integration</h2>
+<h3 id="the-integral">The Integral</h3>
+<p><strong>Definition.</strong> Let $(X, \mathcal{A}, \mu)$ be a measure space. For a nonnegative simple function $s = \sum_{i=1}^n c_i \mathbf{1}_{A_i}$ in canonical form, the <strong>integral</strong> is</p>
+<p>$$
+\int_X s \, d\mu = \sum_{i=1}^n c_i \, \mu(A_i) \in [0, +\infty].
+$$</p>
+<p>For $f : X \to [0, +\infty]$ measurable, the integral is</p>
+<p>$$
+\int_X f \, d\mu = \sup\left\{ \int_X s \, d\mu : s \text{ simple}, \ 0 \leq s \leq f \right\}.
+$$</p>
+<p>For general measurable $f : X \to \overline{\mathbb{R}}$ one writes $f = f^+ - f^-$ and defines the integral when at least one is finite; $f$ is <strong>integrable</strong> if both are finite, that is, $\int |f| \, d\mu < \infty$. For $f : X \to \mathbb{C}$, integrability means $\int |f| \, d\mu < \infty$ and the integral is the pair of real integrals of the real and imaginary parts. A measurability hypothesis on $f$ is part of the definition: the integral is not defined for non-measurable functions.</p>
+<p><strong>Theorem (elementary properties).</strong> The integral is positive, homogeneous by nonnegative constants, additive on the nonnegative measurable functions, monotone, and vanishes on null sets:</p>
+<p>$$
+f \leq g \Rightarrow \int f \leq \int g, \qquad \int (\alpha f + g) = \alpha \int f + \int g \quad (\alpha \geq 0), \qquad \int f \, d\mu = 0 \text{ if } f = 0 \text{ a.e.}
+$$</p>
+<p><strong>Proof.</strong> Each statement is first checked on simple functions, where it is the additivity and monotonicity of the finite sum, and then passed to the supremum over $s \leq f$; the last uses that $\{f > 0\} = \bigcup_n \{f > 1/n\}$ is a countable union of null sets when $f = 0$ a.e. $\square$</p>
+<h3 id="the-convergence-theorems">The Convergence Theorems</h3>
+<p><strong>Theorem (monotone convergence).</strong> Let $0 \leq f_1 \leq f_2 \leq \cdots$ be measurable and $f = \sup_n f_n$. Then</p>
+<p>$$
+\int_X f \, d\mu = \lim_{n \to \infty} \int_X f_n \, d\mu,
+$$</p>
+<p>the common value being finite or $+\infty$.</p>
+<p><strong>Proof sketch.</strong> The inequality $\geq$ is monotonicity. For $\leq$, let $s$ be simple with $0 \leq s \leq f$ and fix $c \in (0,1)$; the measurable sets $E_n = \{f_n \geq c\,s\}$ increase to $X$, so by continuity from below $\int c s \mathbf{1}_{E_n} \to \int c s$, and $\int f_n \geq \int c s \mathbf{1}_{E_n}$; let $c \uparrow 1$. $\square$</p>
+<p><strong>Theorem (Fatou's lemma).</strong> For nonnegative measurable $f_n$,</p>
+<p>$$
+\int_X \liminf_{n \to \infty} f_n \, d\mu \leq \liminf_{n \to \infty} \int_X f_n \, d\mu.
+$$</p>
+<p><strong>Proof.</strong> Apply monotone convergence to the increasing sequence $g_n = \inf_{k \geq n} f_k$, whose integral is at most $\int f_k$ for every $k \geq n$, hence at most the liminf. $\square$</p>
+<p><strong>Theorem (dominated convergence).</strong> Let $f_n, f$ be measurable with $f_n \to f$ a.e. Suppose there is an integrable $g$ with $|f_n| \leq g$ a.e. for all $n$. Then $f$ is integrable and</p>
+<p>$$
+\lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu, \qquad \lim_{n \to \infty} \int_X |f_n - f| \, d\mu = 0.
+$$</p>
+<p><strong>Proof.</strong> Apply Fatou to $g + f_n$ and to $g - f_n$ to get $\int f \leq \liminf \int f_n$ and $\int f \geq \limsup \int f_n$; hence $\int f_n \to \int f$. Applying the same conclusion to $|f_n - f|$, bounded by $2g$, gives the second statement. $\square$</p>
+<p><strong>Theorem (linearity).</strong> If $f, g$ are integrable and $\alpha, \beta \in \mathbb{R}$ (or $\mathbb{C}$), then $\alpha f + \beta g$ is integrable and $\int (\alpha f + \beta g) = \alpha \int f + \beta \int g$.</p>
+<p><strong>Proof.</strong> Reduce to nonnegative functions and use monotone convergence on approximations by simple functions; the complex case is by real and imaginary parts. $\square$</p>
+<h3 id="comparison-with-the-riemann-integral-and-math394-spaces">Comparison with the Riemann Integral and $L^p$ Spaces</h3>
+<p><strong>Theorem.</strong> Let $f : [a, b] \to \mathbb{R}$ be Riemann integrable. Then $f$ is Lebesgue measurable and the two integrals agree. A bounded function on a compact interval is Riemann integrable if and only if its set of discontinuities has Lebesgue measure zero.</p>
+<p><strong>Example (an integrable function with no Riemann integral).</strong> On $[0,1]$ the function equal to $1$ on the rationals and $0$ on the irrationals is Lebesgue integrable with integral $0$, since the rationals are null; it is not Riemann integrable. Thus the Lebesgue integral is strictly more general. <strong>Volterra's function</strong> is the standard differentiable function whose derivative is bounded and not Riemann integrable, the derivative being discontinuous on a fat Cantor set of positive measure, so that the fundamental theorem of calculus fails for the Riemann integral without the continuity of the derivative.</p>
+<p><strong>Definition.</strong> For $1 \leq p < \infty$ and a measure space $(X, \mathcal{A}, \mu)$, the space $L^p(\mu)$ consists of the measurable $f$ with $\int |f|^p \, d\mu < \infty$, modulo equality a.e., with norm $\|f\|_p = \left(\int |f|^p\right)^{1/p}$. The space $L^\infty(\mu)$ consists of the measurable $f$ bounded outside a null set, with $\|f\|_\infty = \inf\{c : |f| \leq c \text{ a.e.}\}$; the infimum is attained a.e.</p>
+<p><strong>Theorem (Hölder and Minkowski).</strong> For $1 < p < \infty$ with $1/p + 1/q = 1$ and $f \in L^p$, $g \in L^q$,</p>
+<p>$$
+\int |fg| \, d\mu \leq \|f\|_p \|g\|_q, \qquad \|f + g\|_p \leq \|f\|_p + \|g\|_p.
+$$</p>
+<p><strong>Theorem (Riesz–Fischer).</strong> For $1 \leq p \leq \infty$ the space $L^p(\mu)$ is complete; hence it is a Banach space, and $L^2(\mu)$ is a Hilbert space with inner product $\langle f, g\rangle = \int f \overline{g} \, d\mu$.</p>
+<p>The completeness of $L^p$ is the fundamental fact about these spaces; it is proved by extracting an a.e. convergent subsequence from a Cauchy sequence and applying Fatou. The $L^p$ spaces are treated among the normed spaces of <em>Normed and Banach Spaces</em>, written in parallel.</p>
+<h2 id="product-measures-and-fubinitonelli">Product Measures and Fubini–Tonelli</h2>
+<h3 id="product-measures">Product Measures</h3>
+<p><strong>Definition.</strong> Let $(X, \mathcal{A}, \mu)$ and $(Y, \mathcal{B}, \nu)$ be $\sigma$-finite measure spaces. The <strong>product $\sigma$-algebra</strong> is $\mathcal{A} \otimes \mathcal{B} = \sigma(\{A \times B : A \in \mathcal{A}, B \in \mathcal{B}\})$, generated by the <strong>measurable rectangles</strong>. There is a unique measure $\mu \otimes \nu$ on $\mathcal{A} \otimes \mathcal{B}$ with</p>
+<p>$$
+(\mu \otimes \nu)(A \times B) = \mu(A)\, \nu(B) \qquad (A \in \mathcal{A}, \ B \in \mathcal{B}),
+$$</p>
+<p>the <strong>product measure</strong>; on $\mathbb{R}^{m+n}$ it gives $\lambda^{m+n} = \lambda^m \otimes \lambda^n$, and the finiteness of the rectangle measure under $\sigma$-finiteness is what makes the extension unique.</p>
+<p><strong>Theorem (sections).</strong> Let $E \in \mathcal{A} \otimes \mathcal{B}$. Then the section $E_x = \{y : (x, y) \in E\}$ is in $\mathcal{B}$ for every $x$, the section $E^y = \{x : (x,y) \in E\}$ is in $\mathcal{A}$ for every $y$, and $x \mapsto \nu(E_x)$, $y \mapsto \mu(E^y)$ are measurable.</p>
+<p><strong>Proof sketch.</strong> The family of $E$ for which the conclusion holds is a Dynkin system containing the rectangles, so it is all of $\mathcal{A} \otimes \mathcal{B}$; the measurability of the section function is proved by the monotone class argument applied to the simple functions approximating $\mathbf{1}_E$. $\square$</p>
+<h3 id="the-theorems-of-fubini-and-tonelli">The Theorems of Fubini and Tonelli</h3>
+<p><strong>Theorem (Tonelli).</strong> Let $f : X \times Y \to [0, +\infty]$ be $\mathcal{A} \otimes \mathcal{B}$-measurable. Then</p>
+<p>$$
+\int_{X \times Y} f \, d(\mu \otimes \nu) = \int_X \left( \int_Y f(x, y) \, d\nu(y) \right) d\mu(x) = \int_Y \left( \int_X f(x, y) \, d\mu(x) \right) d\nu(y),
+$$</p>
+<p>all three quantities being finite or infinite together.</p>
+<p><strong>Theorem (Fubini).</strong> Let $f \in L^1(\mu \otimes \nu)$. Then $f(x, \cdot) \in L^1(\nu)$ for a.e. $x$, $f(\cdot, y) \in L^1(\mu)$ for a.e. $y$, the iterated integrals are finite, and the same equality as in Tonelli holds.</p>
+<p><strong>Proof sketch.</strong> Tonelli is proved for indicator functions by the section theorem, extended to simple functions by linearity, to nonnegative functions by monotone convergence, and to $L^1$ functions by applying Tonelli to $f^+$ and $f^-$. Fubini reduces to Tonelli applied to $|f|$, which shows the iterated integrability and justifies the subtraction; the conditional qualifications are null-set exceptions. $\square$</p>
+<p>For a nonnegative function Tonelli needs no integrability hypothesis and is the practical tool; Fubini needs $\int |f| < \infty$, and without it the iterated integrals may differ, as the standard example on $(0,1)^2$ of a function whose integrals have opposite signs shows. The pair is the basis of the convolution of measures and functions:</p>
+<p>$$
+(\mu * \nu)(E) = \int_X \int_Y \mathbf{1}_E(x + y) \, d\nu(y) \, d\mu(x),
+$$</p>
+<p>defined for measures on a locally compact abelian group, and, at the level of densities, $(f * g)(x) = \int f(x - y) g(y) \, dy$. Convolution on a group is treated in <em>Topological Groups</em>, written in parallel.</p>
+<h2 id="decomposition-and-differentiation">Decomposition and Differentiation</h2>
+<h3 id="signed-measures-and-the-hahnjordan-decomposition">Signed Measures and the Hahn–Jordan Decomposition</h3>
+<p><strong>Definition.</strong> A <strong>signed measure</strong> on $(X, \mathcal{A})$ is a function $\nu : \mathcal{A} \to \mathbb{R}$ (or $(-\infty, +\infty]$) with $\nu(\emptyset) = 0$, taking at most one infinite value, and $\sigma$-additive. A <strong>complex measure</strong> takes values in $\mathbb{C}$ and is $\sigma$-additive. A set $P$ is <strong>positive</strong> for $\nu$ if $\nu(A) \geq 0$ for every measurable $A \subseteq P$, and <strong>negative</strong> if $\nu(A) \leq 0$ for every such $A$.</p>
+<p><strong>Theorem (Hahn decomposition).</strong> Let $\nu$ be a signed measure. Then there exist a positive set $P$ and a negative set $N$, disjoint with $P \cup N = X$; the decomposition is unique up to null sets.</p>
+<p><strong>Proof sketch.</strong> Replacing $\nu$ by $-\nu$ if necessary, assume $\nu$ omits $+\infty$, so that $c = \sup\{\nu(A) : A \in \mathcal{A}\}$ is finite; choose $A_n$ with $\nu(A_n) \to c$. Discarding from $A_n$ a negative subset of as large a magnitude as possible before passing to the next index, as in the standard construction, produces a set $P$ with $\nu(P) = c$: a measurable subset of $P$ of negative measure could be removed from it to increase $\nu$ beyond $c$, and a measurable subset of $X \setminus P$ of positive measure could be added to it, so $P$ is positive and $N = X \setminus P$ is negative. Uniqueness is immediate from the definition of a null set. $\square$</p>
+<p><strong>Theorem (Jordan decomposition).</strong> Every signed measure $\nu$ has a unique expression $\nu = \nu^+ - \nu^-$ with $\nu^+, \nu^-$ mutually singular measures, $|\nu| = \nu^+ + \nu^-$ the total variation.</p>
+<p>Together the two theorems say that the signed measures are generated by the ordinary ones, and that the total variation is a measure.</p>
+<h3 id="absolute-continuity-and-radonnikodym">Absolute Continuity and Radon–Nikodym</h3>
+<p><strong>Definition.</strong> Let $\mu, \nu$ be measures (or a measure and a signed measure) on $(X, \mathcal{A})$. Then $\nu$ is <strong>absolutely continuous</strong> with respect to $\mu$, written $\nu \ll \mu$, if $\mu(A) = 0 \Rightarrow \nu(A) = 0$; and $\nu$ and $\mu$ are <strong>mutually singular</strong>, written $\nu \perp \mu$, if there is a measurable $S$ with $\mu(S) = 0$ and $\nu(X \setminus S) = 0$.</p>
+<p><strong>Theorem (Radon–Nikodym).</strong> Let $\mu$ be $\sigma$-finite and $\nu$ a $\sigma$-finite signed measure with $\nu \ll \mu$. Then there is a measurable $h$, unique up to equality $\mu$-a.e., with</p>
+<p>$$
+\nu(A) = \int_A h \, d\mu \qquad (A \in \mathcal{A}).
+$$</p>
+<p>The function $h$ is the <strong>Radon–Nikodym derivative</strong>, written $h = d\nu/d\mu$; it is integrable exactly when $\nu$ is finite.</p>
+<p><strong>Proof sketch.</strong> Assume $\mu, \nu$ finite and $\nu$ nonnegative, and put $\lambda = \mu + \nu$. Since $\nu \leq \lambda$, the functional $f \mapsto \int f \, d\nu$ is bounded on $L^2(\lambda)$ with norm at most $\lambda(X)^{1/2}$, so by the Riesz representation theorem there is $g \in L^2(\lambda)$ with $\int f \, d\nu = \int f g \, d\lambda$ for every $f \in L^2(\lambda)$. Testing on indicators, which lie in $L^2(\lambda)$ because $\lambda$ is finite, gives $\nu = g \lambda$ and hence $\mu = \lambda - \nu = (1 - g)\lambda$; since $\nu \geq 0$ and $\nu \leq \lambda$ one has $0 \leq g \leq 1$ $\lambda$-a.e., and $\mu(\{g = 1\}) = \int_{\{g=1\}} (1 - g) \, d\lambda = 0$. On $\{g < 1\}$ the two identities combine into $\nu(A) = \int_A \frac{g}{1-g} \, d\mu$, and the hypothesis $\nu \ll \mu$ makes the exceptional set $\{g = 1\}$, being $\mu$-null, also $\nu$-null; so $h = g/(1-g)$ on $\{g < 1\}$ and $h$ arbitrary on $\{g = 1\}$ has $\nu(A) = \int_A h \, d\mu$. Uniqueness is immediate, and the $\sigma$-finite case follows by exhausting $X$ by sets of finite measure. $\square$</p>
+<p><strong>Theorem (Lebesgue decomposition).</strong> Let $\mu, \nu$ be $\sigma$-finite measures. Then there are unique measures $\nu_{\mathrm{ac}} \ll \mu$ and $\nu_{\mathrm{s}}$ with $\nu_{\mathrm{s}} \perp \mu$ such that $\nu = \nu_{\mathrm{ac}} + \nu_{\mathrm{s}}$.</p>
+<p><strong>Proof sketch.</strong> In the finite case use the function $g \in L^2(\mu + \nu)$ of the preceding proof: put $\nu_{\mathrm{ac}}(A) = \nu(A \cap \{g < 1\})$ and $\nu_{\mathrm{s}}(A) = \nu(A \cap \{g = 1\})$. Then $\nu = \nu_{\mathrm{ac}} + \nu_{\mathrm{s}}$, and $\nu_{\mathrm{ac}} \ll \mu$ because on $\{g < 1\}$ the measure $\nu$ has the density $g/(1-g)$ with respect to $\mu$, while $\nu_{\mathrm{s}} \perp \mu$ because $\mu(\{g = 1\}) = 0$. The $\sigma$-finite case follows by exhausting $X$ by sets of finite measure. $\square$</p>
+<p><strong>Theorem (fundamental theorem of calculus for the Lebesgue integral).</strong> If $f \in L^1([a,b])$ then $F(x) = \int_a^x f$ is differentiable a.e. with $F' = f$ a.e.; conversely if $F$ is absolutely continuous on $[a,b]$ then $F' \in L^1$ and $F(x) - F(a) = \int_a^x F'$. A function is absolutely continuous exactly when it is the integral of its derivative, and the three conditions — absolutely continuous, an indefinite integral of an $L^1$ function, and continuous of bounded variation with the Lusin property — are equivalent.</p>
+<p>The Radon–Nikodym theorem is the reason conditional expectation can be defined: for a sub-$\sigma$-algebra $\mathcal{G} \subseteq \mathcal{A}$ and $f \in L^1(\mu)$, the restriction $f\mu$ is absolutely continuous on $(X, \mathcal{G})$ with respect to $\mu|_{\mathcal{G}}$, and $E[f \mid \mathcal{G}]$ is its Radon–Nikodym derivative. This is the technical heart of the theory of conditional expectation.</p>
+<h2 id="measures-and-groups">Measures and Groups</h2>
+<p><strong>Definition.</strong> Let $G$ be a group and $\mathcal{A}$ a $\sigma$-algebra on $G$ making the group operations measurable, so that $(g, h) \mapsto gh^{-1}$ is measurable. A measure $\mu$ on $(G, \mathcal{A})$ is <strong>left-invariant</strong> if $\mu(gA) = \mu(A)$ for all $g \in G$ and measurable $A$, <strong>right-invariant</strong> if $\mu(Ag) = \mu(A)$, and <strong>bi-invariant</strong> if both. It is finite on compact sets if $\mu(K) < \infty$ for every compact $K$.</p>
+<p><strong>Example.</strong> On $G = \mathbb{R}^n$ Lebesgue measure $\lambda^n$ is bi-invariant, and translation invariance characterises it up to a positive scalar. On a discrete group, counting measure is bi-invariant, and on a finite group the normalised counting measure $|G|^{-1}\sum_{g} \delta_g$ is a bi-invariant probability measure, the measure used in the orthogonality relations of representation theory.</p>
+<p><strong>Theorem (existence of a Haar measure).</strong> Every locally compact Hausdorff topological group $G$ carries a nonzero regular Borel measure $\mu$ that is left-invariant and finite on compact sets; it is unique up to a positive scalar. If $\mu$ is a left Haar measure, then for each $g \in G$ the measure $\mu_g(A) = \mu(Ag)$ is again a left Haar measure, so there is $\Delta(g) > 0$ with $\mu_g = \Delta(g)\mu$; the function $\Delta : G \to (0,\infty)$ is the <strong>modular function</strong>, it is a continuous homomorphism, and $G$ is <strong>unimodular</strong> when $\Delta \equiv 1$, that is, when a bi-invariant Haar measure exists.</p>
+<p>The existence and uniqueness theorem is the Haar theorem; it is stated here as the measure-theoretic background and is proved in <em>Topological Groups</em>, written in parallel, where the modular function and unimodularity are treated in detail. Finite groups, compact groups, discrete groups and all abelian locally compact groups are unimodular. The convolution of $L^1$ functions on a locally compact group, $(f * g)(x) = \int_G f(y) g(y^{-1}x) \, d\mu(y)$, makes $L^1(G)$ an algebra, the measurable completion of the group algebra of the companion algebra articles; it is commutative exactly when $G$ is abelian, and it carries an involution generalising $f^*(x) = \overline{f(x^{-1})}$.</p>
+<h2 id="summary">Summary</h2>
+<p>A $\sigma$-algebra is a family of sets closed under complements and countable unions, generated by any given family through intersection of all $\sigma$-algebras containing it; the Borel sets of a topological space are the $\sigma$-algebra generated by its open sets. A measure is a countably additive map on a $\sigma$-algebra; measures are monotone, subadditive and continuous along monotone sequences, the last requiring finiteness in the case of decreasing sequences. Every premeasure on an algebra extends to a measure on the generated $\sigma$-algebra by Carathéodory's outer-measure construction, and the extension is unique when $\sigma$-finite; Lebesgue measure is the extension of volume on boxes, and not every subset of $\mathbb{R}$ is Lebesgue measurable, by the Vitali construction.</p>
+<p>Measurable functions are closed under algebraic operations and pointwise limits, every nonnegative measurable function is the increasing limit of simple functions, and the integral is defined by approximation from below. The three convergence theorems — monotone convergence, Fatou's lemma and dominated convergence — are the working tools, giving interchange of limit and integral under the appropriate hypotheses and, with Tonelli and Fubini, interchange of the order of integration on product spaces. The Lebesgue integral extends the Riemann integral strictly and agrees with it where both are defined; the spaces $L^p$ are complete by Riesz–Fischer and satisfy Hölder and Minkowski.</p>
+<p>A signed measure decomposes into its positive and negative parts on a Hahn decomposition, and a $\sigma$-finite measure decomposes uniquely into an absolutely continuous and a singular part with respect to another, the absolutely continuous part having a Radon–Nikodym derivative. On a locally compact group the left-invariant measure with the same properties is the Haar measure, unique up to scale, and the modular function measures the failure of bi-invariance; convolution of integrable functions turns $L^1(G)$ into an algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(X, \mathcal{A})$</td>
+<td>Measurable space; $\mathcal{A}$ a $\sigma$-algebra</td>
+</tr>
+<tr>
+<td>$\sigma(\mathcal{E})$</td>
+<td>$\sigma$-algebra generated by a family $\mathcal{E}$</td>
+</tr>
+<tr>
+<td>$\mathcal{B}(X)$</td>
+<td>Borel $\sigma$-algebra of a topological space</td>
+</tr>
+<tr>
+<td>$\mu$, $\nu$, $\lambda$</td>
+<td>Measures; $\lambda^n$ Lebesgue measure on $\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$\mu^*$</td>
+<td>Outer measure</td>
+</tr>
+<tr>
+<td>$\nu \ll \mu$</td>
+<td>Absolute continuity of $\nu$ with respect to $\mu$</td>
+</tr>
+<tr>
+<td>$\mu \perp \nu$</td>
+<td>Mutual singularity</td>
+</tr>
+<tr>
+<td>$\mu \otimes \nu$, $\mathcal{A} \otimes \mathcal{B}$</td>
+<td>Product measure and product $\sigma$-algebra</td>
+</tr>
+<tr>
+<td>$\int_X f \, d\mu$</td>
+<td>Integral of $f$ with respect to $\mu$</td>
+</tr>
+<tr>
+<td>$\mathbf{1}_A$</td>
+<td>Indicator function of $A$</td>
+</tr>
+<tr>
+<td>a.e.</td>
+<td>Almost everywhere</td>
+</tr>
+<tr>
+<td>$L^p(\mu)$, $\|f\|_p$</td>
+<td>Lebesgue space and its norm</td>
+</tr>
+<tr>
+<td>$d\nu/d\mu$</td>
+<td>Radon–Nikodym derivative</td>
+</tr>
+<tr>
+<td>$\nu^+$, $\nu^-$, $\lvert \nu \rvert$</td>
+<td>Jordan decomposition and total variation</td>
+</tr>
+<tr>
+<td>$\delta_x$</td>
+<td>Dirac measure at $x$</td>
+</tr>
+<tr>
+<td>$(\mu * \nu)$, $(f * g)$</td>
+<td>Convolution of measures and functions</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>Modular function of a locally compact group</td>
+</tr>
+<tr>
+<td>unimodular</td>
+<td>$\Delta \equiv 1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Real and Complex Analysis</em> (McGraw-Hill, 3rd ed. 1987), for the standard development of measure, integration and Radon–Nikodym.</li>
+<li>Paul R. Halmos, <em>Measure Theory</em> (Van Nostrand, 1950; reprinted Springer, 1974), for the classical construction by outer measures and the monotone class theorem.</li>
+<li>Donald L. Cohn, <em>Measure Theory</em> (Birkhäuser, 2nd ed. 2013), for a careful treatment of product measures, decompositions and differentiation.</li>
+<li>Richard M. Dudley, <em>Real Analysis and Probability</em> (Cambridge University Press, 2nd ed. 2002), for measure theory oriented towards probability and conditional expectation.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part I</em> (Interscience, 1958), for the general theory of integration on abstract spaces.</li>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953; reprinted Dover, 2011), for Haar measure and convolution on locally compact groups.</li>
+<li>Elias M. Stein and Rami Shakarchi, <em>Real Analysis: Measure Theory, Integration, and Hilbert Spaces</em> (Princeton University Press, 2005), for a modern treatment with the differentiation theorems.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

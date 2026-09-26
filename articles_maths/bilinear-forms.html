@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilinear Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bilinear-forms"><strong>Bilinear Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>bilinear form</strong> on a module is a rule that assigns to two vectors a scalar, linearly in each vector separately. This article develops the theory of such forms over a commutative ring: the basic definition, the matrix that represents a form in a basis, the radical and non-degeneracy, orthogonal direct sums, and the alternating case. It fixes the vocabulary used by the rest of the category.</p>
+<p>The treatment is purely mathematical, and the default base is a <strong>commutative ring</strong> $R$ with identity $1 \neq 0$. Modules over a ring need not be free, so a form need not have a matrix; when it does, invertibility of the matrix has to be read in the ring-theoretic sense. Two hypotheses recur and are flagged wherever they are used: the ring may be required to be a field, and the element $2$ may be required to be invertible. We assume familiarity with modules and linear maps as in <em>Modules</em>, and with the tensor and exterior constructions as in <em>Algebras: A General Introduction</em>. Quadratic forms, and the passage between a quadratic form and the symmetric bilinear form that polarises it, are not covered here; a bilinear form here is the datum, not yet a quadratic form.</p>
+<h2 id="bilinear-forms_1">Bilinear Forms</h2>
+<h3 id="definition">Definition</h3>
+<p>Let $M$ be an $R$-module. A <strong>bilinear form</strong> on $M$ is a function</p>
+<p>$$
+B : M \times M \longrightarrow R
+$$</p>
+<p>that is additive and $R$-linear in each argument separately:</p>
+<p>$$
+B(u + v, w) = B(u, w) + B(v, w), \qquad B(ru, v) = r\,B(u, v),
+$$</p>
+<p>$$
+B(u, v + w) = B(u, v) + B(u, w), \qquad B(u, rv) = r\,B(u, v),
+$$</p>
+<p>for all $u, v, w \in M$ and $r \in R$. Equivalently, $B$ is an $R$-linear map $M \otimes_R M \to R$, and the two descriptions are related by $B(u \otimes v) = B(u, v)$; when $M$ is free this is the same as a bilinear function in the elementary sense.</p>
+<p>The set of all bilinear forms on $M$ is an $R$-module under pointwise addition and scalar multiplication, written $\operatorname{Bil}_R(M)$.</p>
+<p><strong>Example.</strong> On $M = R^n$ the <strong>standard dot product</strong></p>
+<p>$$
+B(x, y) = \sum_{i=1}^{n} x_i y_i
+$$</p>
+<p>is bilinear. On $M = R^2$ the function $B((x_1, y_1), (x_2, y_2)) = x_1 y_2 + y_1 x_2$ is bilinear, and it satisfies $B(v, v) = 2 x_1 y_1$, which vanishes on the vector $(1, 0)$ but not on $(1, 1)$.</p>
+<p><strong>Example.</strong> For the $\mathbb{Z}$-module $\mathbb{Z}^2$ the determinant</p>
+<p>$$
+B\bigl((x_1, y_1), (x_2, y_2)\bigr) = x_1 y_2 - y_1 x_2
+$$</p>
+<p>is bilinear, and it is skew-symmetric; it is alternating, since $B(v, v) = 0$ for every $v$.</p>
+<h3 id="symmetric-alternating-and-skew-symmetric-forms">Symmetric, Alternating and Skew-Symmetric Forms</h3>
+<p>Three symmetry conditions single out the forms that matter.</p>
+<p><strong>Definition.</strong> A bilinear form $B$ on $M$ is</p>
+<ul>
+<li><strong>symmetric</strong> if $B(u, v) = B(v, u)$ for all $u, v \in M$;</li>
+<li><strong>skew-symmetric</strong> if $B(u, v) = -B(v, u)$ for all $u, v \in M$;</li>
+<li><strong>alternating</strong> if $B(v, v) = 0$ for all $v \in M$.</li>
+</ul>
+<p><strong>Proposition.</strong> Every alternating form is skew-symmetric. If $2$ is invertible in $R$, the converse holds, and a form that is both symmetric and skew-symmetric is zero.</p>
+<p><strong>Proof.</strong> If $B$ is alternating, expanding $B(u + v, u + v) = 0$ by bilinearity gives</p>
+<p>$$
+0 = B(u, u) + B(u, v) + B(v, u) + B(v, v) = B(u, v) + B(v, u),
+$$</p>
+<p>so $B(u, v) = -B(v, u)$ and $B$ is skew-symmetric. Conversely, if $B$ is skew-symmetric then $B(v, v) = -B(v, v)$, that is $2 B(v, v) = 0$, and invertibility of $2$ gives $B(v, v) = 0$. If $B$ is both symmetric and skew-symmetric then $B(u, v) = B(v, u) = -B(u, v)$, so $2B(u, v) = 0$ and again $B = 0$ when $2$ is invertible. $\square$</p>
+<p><strong>Remark.</strong> Over a ring in which $2$ is not invertible the three notions genuinely differ. Over $\mathbb{F}_2$ the form $B(x, y) = xy$ on $\mathbb{F}_2$ is symmetric because $-1 = 1$, but it is not alternating, since $B(1, 1) = 1$. Symmetric and alternating forms are therefore not interchangeable in characteristic $2$.</p>
+<p>We work with symmetric and alternating forms throughout. The skew-symmetric forms are recovered from the alternating ones when $2$ is invertible, and in that case the classification of skew-symmetric forms is the classification of alternating forms.</p>
+<h3 id="the-matrix-of-a-form">The Matrix of a Form</h3>
+<p>Let $M$ be <strong>free</strong> of finite rank $n$ with basis $e_1, \ldots, e_n$. A bilinear form is determined by its values on pairs of basis vectors, so define</p>
+<p>$$
+G_{ij} = B(e_i, e_j), \qquad G = (G_{ij}) \in M_n(R).
+$$</p>
+<p>For $u = \sum_i u_i e_i$ and $v = \sum_j v_j e_j$, bilinearity gives</p>
+<p>$$
+B(u, v) = \sum_{i=1}^{n} \sum_{j=1}^{n} u_i v_j\, B(e_i, e_j) = [u]^T G\, [v],
+$$</p>
+<p>where $[u]$ and $[v]$ are the coordinate columns. The matrix $G$ is the <strong>Gram matrix</strong> of $B$ in the basis, and the assignment $B \mapsto G$ is an isomorphism of $R$-modules $\operatorname{Bil}_R(M) \to M_n(R)$.</p>
+<p><strong>Proposition.</strong> The form $B$ is symmetric if and only if $G = G^T$, and skew-symmetric if and only if $G = -G^T$. It is alternating if and only if $G = -G^T$ and every diagonal entry of $G$ is zero.</p>
+<p><strong>Proof.</strong> The first two statements are immediate from $B(e_i, e_j) = G_{ij}$ and the symmetry conditions. For the third, $G = -G^T$ is equivalent to skew-symmetry, and the diagonal entries are $G_{ii} = B(e_i, e_i)$; these vanish for all $i$ if and only if $B(v, v) = 0$ for every $v$, since $B(v, v) = \sum_i v_i^2 G_{ii}$ when $B$ is skew-symmetric. $\square$</p>
+<p>Two bases give two Gram matrices, related by a change of basis.</p>
+<p><strong>Proposition.</strong> Let $\mathcal{B}$ and $\mathcal{B}'$ be bases of $M$, and let $P$ be the change-of-basis matrix defined by $[v]_{\mathcal{B}} = P\,[v]_{\mathcal{B}'}$. If $G$ and $G'$ are the Gram matrices in the two bases, then</p>
+<p>$$
+G' = P^T G\, P.
+$$</p>
+<p><strong>Proof.</strong> Substituting $[u]_{\mathcal{B}} = P[u]_{\mathcal{B}'}$ and $[v]_{\mathcal{B}} = P[v]_{\mathcal{B}'}$ into $B(u, v) = [u]_{\mathcal{B}}^T G [v]_{\mathcal{B}}$ gives</p>
+<p>$$
+B(u, v) = [u]_{\mathcal{B}'}^T \bigl(P^T G P\bigr) [v]_{\mathcal{B}'},
+$$</p>
+<p>and the Gram matrix in $\mathcal{B}'$ is the matrix appearing in the middle. $\square$</p>
+<p><strong>Definition.</strong> Two matrices $G, G' \in M_n(R)$ are <strong>congruent</strong> if $G' = P^T G P$ for some invertible $P$; two bilinear forms on a free module are congruent when their Gram matrices are related in this way in some pair of bases. Congruence is an equivalence relation, and classifying bilinear forms on a free module of rank $n$ up to congruence is the same as classifying forms up to change of basis.</p>
+<h2 id="rank-and-the-radical">Rank and the Radical</h2>
+<h3 id="rank">Rank</h3>
+<p>Let $B$ be a bilinear form on a free module $M$ of finite rank, with Gram matrix $G$ in some basis. The <strong>rank</strong> of $B$ is</p>
+<p>$$
+\operatorname{rank}(B) = \operatorname{rank}(G),
+$$</p>
+<p>the rank of the matrix $G$, that is the largest size of an invertible minor. The rank is independent of the basis: a change of basis replaces $G$ by $P^T G P$ with $P$ invertible, and multiplication by invertible matrices preserves rank. Over a field we also have the rank–nullity reading of the next subsection.</p>
+<h3 id="orthogonality">Orthogonality</h3>
+<p>Two vectors $u, v \in M$ are <strong>orthogonal</strong> with respect to $B$, written $u \perp v$, if $B(u, v) = 0$. For a subset $S \subseteq M$, its <strong>orthogonal complement</strong> is</p>
+<p>$$
+S^\perp = \{u \in M : B(u, s) = 0 \text{ for all } s \in S\}.
+$$</p>
+<p>The complement $S^\perp$ is a submodule of $M$. For a symmetric or skew-symmetric form the relation of orthogonality is symmetric in $u$ and $v$, and then $S \subseteq (S^\perp)^\perp$. In general the two-sided orthogonal complement may be larger than $S$; the radical defined below measures the failure.</p>
+<h3 id="the-radical">The Radical</h3>
+<p>For a bilinear form $B$ on $M$, the <strong>radical</strong> is</p>
+<p>$$
+\operatorname{rad}(B) = \{u \in M : B(u, v) = 0 \text{ for all } v \in M\} = M^\perp.
+$$</p>
+<p>It is the kernel of the induced linear map</p>
+<p>$$
+M \longrightarrow M^*, \qquad u \longmapsto B(u, -),
+$$</p>
+<p>where $M^* = \operatorname{Hom}_R(M, R)$ is the dual module. For a symmetric or skew-symmetric form the left radical $\{u : B(v, u) = 0\ \forall v\}$ coincides with the right radical $\operatorname{rad}(B)$.</p>
+<p><strong>Proposition.</strong> Let $M$ be free of rank $n$, with Gram matrix $G$. Then $\operatorname{rad}(B)$ is the kernel of the map $R^n \to R^n$ given by $x \mapsto G^{T}x$ in coordinates, and the following are equivalent:</p>
+<ol>
+<li>$\operatorname{rad}(B) = 0$;</li>
+<li>the map $M \to M^*$, $u \mapsto B(u, -)$, is injective;</li>
+<li>$\det G$ is not a zero divisor of $R$.</li>
+</ol>
+<p><strong>Proof.</strong> In coordinates the map $u \mapsto B(u, -)$ sends $x$ to the functional $y \mapsto x^T G y$, that is to the row vector $x^T G$, whose transpose is $G^T x$. Its kernel is $\operatorname{rad}(B)$, and for a symmetric or skew-symmetric form it is also the kernel of $x \mapsto Gx$, since $G^T$ then differs from $\pm G$. Statement 3 is the condition that the square matrix $G$ have no nonzero kernel vector, a condition equivalent to $\det G$ being a non-zero-divisor; this equivalence is a standard corollary of McCoy's theorem for matrices over a commutative ring. $\square$</p>
+<h3 id="non-degenerate-forms">Non-Degenerate Forms</h3>
+<p><strong>Definition.</strong> A bilinear form $B$ on $M$ is <strong>non-degenerate</strong> if the map $M \to M^*$, $u \mapsto B(u, -)$, is an isomorphism. It is <strong>degenerate</strong> otherwise.</p>
+<p>Over a general commutative ring non-degeneracy is strictly stronger than the vanishing of the radical: it requires the map to be surjective as well as injective.</p>
+<p><strong>Proposition.</strong> Let $M$ be free of finite rank with Gram matrix $G$. Then $B$ is non-degenerate if and only if $\det G$ is a <strong>unit</strong> of $R$.</p>
+<p><strong>Proof.</strong> The map $M \to M^*$ is represented by $G$, and an endomorphism of a free module of finite rank is an isomorphism if and only if its determinant is a unit. $\square$</p>
+<p><strong>Example.</strong> Let $R = \mathbb{R}$ and $G = \operatorname{diag}(1, 1, 0)$ on $\mathbb{R}^3$. Then $G$ has rank $2$ and radical spanned by $e_3$, so the form is degenerate. Let $R = \mathbb{Z}$ and $G = (2)$ on $\mathbb{Z}$. Then $\det G = 2$ is not a unit, the radical is zero, and the map $\mathbb{Z} \to \mathbb{Z}^*$ is multiplication by $2$, which is injective but not surjective: the form is degenerate although its radical vanishes.</p>
+<p><strong>Remark (the field case).</strong> Over a field, and for a finite-dimensional space, the dual has the same dimension, so injectivity of $M \to M^*$ is equivalent to bijectivity, and the following are equivalent:</p>
+<ol>
+<li>$B$ is non-degenerate;</li>
+<li>$\operatorname{rad}(B) = 0$;</li>
+<li>the Gram matrix $G$ in any basis is invertible;</li>
+<li>$\dim M = \operatorname{rank}(B)$.</li>
+</ol>
+<p>The equivalence of 2 and 4 gives $\dim \operatorname{rad}(B) = \dim M - \operatorname{rank}(B)$ over a field.</p>
+<p><strong>Remark (the infinite-dimensional case).</strong> Over an infinite-dimensional vector space, injectivity is again not equivalent to bijectivity. If $M = \bigoplus_{\mathbb{N}} R$ with $B(e_i, e_j) = \delta_{ij}$, the radical is zero, since $B(v, e_i) = 0$ for all $i$ forces every coordinate of $v$ to vanish; but the functional taking the value $1$ on every basis vector is not of the form $B(v, -)$, because such a $v$ would need infinitely many nonzero coordinates and $M$ consists of finite sums. So the radical vanishes while the form is degenerate.</p>
+<h3 id="restriction-and-orthogonal-direct-sums">Restriction and Orthogonal Direct Sums</h3>
+<p><strong>Definition.</strong> Let $M_1, M_2$ be $R$-modules carrying bilinear forms $B_1, B_2$. The <strong>orthogonal direct sum</strong> $B_1 \perp B_2$ is the form on $M_1 \oplus M_2$ defined by</p>
+<p>$$
+(B_1 \perp B_2)\bigl((u_1, u_2), (v_1, v_2)\bigr) = B_1(u_1, v_1) + B_2(u_2, v_2).
+$$</p>
+<p><strong>Proposition.</strong> The orthogonal direct sum $B_1 \perp B_2$ is symmetric, skew-symmetric or alternating if and only if both summands are. It is non-degenerate if and only if both summands are, and its Gram matrix in the concatenated basis is the block sum $\operatorname{diag}(G_1, G_2)$.</p>
+<p><strong>Proof.</strong> The symmetry statements are immediate. The subspace $M_1$ is orthogonal to $M_2$, so the radical of $B_1 \perp B_2$ is $\operatorname{rad}(B_1) \oplus \operatorname{rad}(B_2)$, and the map to the dual is the direct sum of the two maps. Hence it is an isomorphism exactly when both factors are. The Gram matrix is block diagonal by construction. $\square$</p>
+<p>The restriction of a non-degenerate form to a general submodule need not be non-degenerate. Over a field, however, the situation is controlled.</p>
+<p><strong>Proposition.</strong> Let $B$ be non-degenerate on a finite-dimensional space $V$ over a field, and let $W \subseteq V$ be a subspace. Then</p>
+<p>$$
+\dim W + \dim W^\perp = \dim V, \qquad W \subseteq (W^\perp)^\perp,
+$$</p>
+<p>and the following are equivalent: (i) $V = W \perp W^\perp$; (ii) $W \cap W^\perp = 0$; (iii) the restriction of $B$ to $W$ is non-degenerate.</p>
+<p><strong>Proof.</strong> The map $V \to W^*$, $v \mapsto B(v, -)|_W$, has kernel $W^\perp$, and it is surjective: a functional on $W$ extends to a functional on $V$, and non-degeneracy of $B$ realises that extension as $B(v, -)$. Hence $\dim W^\perp = \dim V - \dim W$. The same formula applied to $W^\perp$ gives $\dim (W^\perp)^\perp = \dim W$, and since $W \subseteq (W^\perp)^\perp$ always, the inclusion is an equality. A vector of $W \cap W^\perp$ is orthogonal to all of $W$ and to all of $W^\perp$, hence to all of $V$, so $W \cap W^\perp = 0$ because $B$ is non-degenerate; consequently $W + W^\perp = V$ by the dimension formula. The three conditions are now equivalent: the radical of the restriction of $B$ to $W$ is $W \cap W^\perp$, so (ii) and (iii) hold or fail together, and they hold exactly when $W + W^\perp = V$, which is (i). $\square$</p>
+<p><strong>Remark.</strong> Over a ring, the proof fails at the step that extends a functional from $W$ to $V$: the extension need not be of the form $B(v, -)$, and the dimension formula can fail. This is the source of the additional hypotheses in the ring version of the extension theorem and in the discussion of forms with values in an algebra.</p>
+<h2 id="alternating-forms">Alternating Forms</h2>
+<h3 id="alternating-forms-have-even-rank">Alternating Forms Have Even Rank</h3>
+<p>Alternating forms behave more rigidly than symmetric ones.</p>
+<p><strong>Proposition.</strong> Let $B$ be an alternating form on a free module of finite rank over a ring in which $2$ is invertible. If $B$ is non-degenerate, the rank of the module is even.</p>
+<p><strong>Proof.</strong> The Gram matrix satisfies $G = -G^T$. Taking determinants, $\det G = \det(-G^T) = (-1)^n \det G$, where $n$ is the rank. Hence $2 \det G = 0$ when $n$ is odd. Since $2$ is invertible this gives $\det G = 0$, contradicting non-degeneracy. $\square$</p>
+<p>Over a field the same argument shows that the rank of any alternating form is even: the radical is orthogonal to all of $V$, so $V = W \perp \operatorname{rad}(B)$ with $W$ carrying a non-degenerate alternating form of dimension $\operatorname{rank}(B)$, to which the proposition applies.</p>
+<h3 id="the-symplectic-basis">The Symplectic Basis</h3>
+<p><strong>Theorem (standard normal form).</strong> Let $B$ be a non-degenerate alternating form on a finite-dimensional vector space $V$ over a field. Then $\dim V = 2m$ for some $m$, and there is a basis</p>
+<p>$$
+e_1, \ldots, e_m, f_1, \ldots, f_m
+$$</p>
+<p>such that</p>
+<p>$$
+B(e_i, e_j) = 0, \qquad B(f_i, f_j) = 0, \qquad B(e_i, f_j) = \delta_{ij}.
+$$</p>
+<p>In the ordering $e_1, f_1, \ldots, e_m, f_m$ the Gram matrix is the block sum of $m$ copies of $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$; in the ordering $e_1, \ldots, e_m, f_1, \ldots, f_m$, which is the one used, it is the block matrix $\begin{pmatrix} 0 & I_m \\ -I_m & 0 \end{pmatrix}$ with $I_m$ the identity matrix of size $m$.</p>
+<p><strong>Proof sketch.</strong> If $B \neq 0$ there are $u, v$ with $c = B(u, v) \neq 0$, and $u, v$ are independent because $B$ is alternating; replacing $v$ by $v/c$, which is legal over a field, gives $B(e_1, f_1) = 1$ for $e_1 = u$ and $f_1 = v/c$. The plane $H_1 = \operatorname{span}\{e_1, f_1\}$ is non-degenerate, so $V = H_1 \perp H_1^\perp$ by the restriction proposition, and $H_1^\perp$ carries a non-degenerate alternating form of dimension $\dim V - 2$; induction on $\dim V$ finishes. $\square$</p>
+<p><strong>Definition.</strong> A basis with the property above is a <strong>symplectic basis</strong>, and the form is <strong>hyperbolic</strong> when it has such a basis. Two non-degenerate alternating forms of the same dimension over a field are isometric, because each can be put in symplectic form; the alternation case therefore has a single invariant, the dimension, once non-degeneracy is assumed.</p>
+<p><strong>Example (the symplectic plane).</strong> On $R^2$ the form</p>
+<p>$$
+B\bigl((x_1, y_1), (x_2, y_2)\bigr) = x_1 y_2 - y_1 x_2, \qquad G = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
+$$</p>
+<p>is alternating and non-degenerate, and the vectors $u = (1, 0)$ and $v = (0, 1)$ satisfy $B(u, v) = 1$. It is the two-dimensional case of the normal form and the elementary block of the symplectic theory. The name <strong>hyperbolic plane</strong> is used in this category for the quadratic space, whose polar form in a basis $e, f$ with $q(e) = q(f) = 0$ and $B(e, f) = 1$ is the symmetric matrix $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$; the two-dimensional alternating space above is a different object, and the symbol $H$ denotes the quadratic one. The same symmetric matrix, with $2$ invertible, is the symmetric form $\langle 1, -1\rangle$ in a suitable basis, and it is not alternating, by the proposition above relating alternating and skew-symmetric forms.</p>
+<h2 id="isometries">Isometries</h2>
+<h3 id="definition_1">Definition</h3>
+<p>Let $B$ be a bilinear form on $M$ and $B'$ a bilinear form on $M'$. An <strong>isometry</strong> from $B$ to $B'$ is an $R$-linear isomorphism $T : M \to M'$ with</p>
+<p>$$
+B'(Tu, Tv) = B(u, v) \qquad (u, v \in M).
+$$</p>
+<p>An isometry of $B$ with itself is an <strong>isometry of $B$</strong>, and the isometries of $B$ form a group under composition, the <strong>isometry group</strong> $\operatorname{Isom}(M, B)$.</p>
+<p>In a basis an isometry is a matrix $P$ with $P^T G' P = G$. Since $G' = Q^T G Q$ and $G = (Q^{-1})^T G' Q^{-1}$ are the same relation, two forms on free modules of the same rank are isometric exactly when their Gram matrices are congruent, so the two classifications coincide.</p>
+<p><strong>Proposition.</strong> The isometry group is carried to the isometry group by an isometry: if $T : (M, B) \to (M', B')$ is an isometry, then $S \mapsto TST^{-1}$ is an isomorphism of groups $\operatorname{Isom}(M, B) \to \operatorname{Isom}(M', B')$.</p>
+<p><strong>Proof.</strong> From $B(Tu, Tv) = B(u, v)$ one gets $B(u, v) = B(T^{-1}u, T^{-1}v)$. For an isometry $S$ of $B$,</p>
+<p>$$
+B'(TST^{-1}u, TST^{-1}v) = B(ST^{-1}u, ST^{-1}v) = B(T^{-1}u, T^{-1}v) = B'(u, v),
+$$</p>
+<p>so $TST^{-1}$ is an isometry of $B'$; the assignment is a homomorphism with inverse $R \mapsto T^{-1}RT$. $\square$</p>
+<p>The group is written $\operatorname{O}(M, B)$ when $B$ is symmetric, and $\operatorname{Sp}(M, B)$ when $B$ is alternating; the notation and the structure theory of these groups are developed .</p>
+<h3 id="congruence-and-the-discriminant">Congruence and the Discriminant</h3>
+<p>For a non-degenerate symmetric form on a free module, the determinant of the Gram matrix gives a congruence invariant modulo squares.</p>
+<p><strong>Definition.</strong> Let $B$ be a non-degenerate symmetric form on a free module of finite rank over a field $F$ of characteristic not $2$, with Gram matrix $G$. The <strong>discriminant</strong> of $B$ is the class</p>
+<p>$$
+\Delta(B) = \det G \in F^\times / (F^\times)^2,
+$$</p>
+<p>the image of $\det G$ in the group of square classes.</p>
+<p><strong>Proposition.</strong> The discriminant is well defined: a change of basis replaces $G$ by $P^T G P$ and multiplies the determinant by $(\det P)^2$, which is a square. If $B$ is replaced by $c\,B$ for $c \in F^\times$, then $\Delta(cB) = c^{n}\,\Delta(B)$, where $n$ is the rank.</p>
+<p><strong>Proof.</strong> Immediate from $\det(P^T G P) = (\det P)^2 \det G$ and from scaling $G$ by $c$. $\square$</p>
+<p>The discriminant is the first congruence invariant of a non-degenerate symmetric form. It is not a complete invariant: over $\mathbb{R}$ the matrices $\operatorname{diag}(1, 1)$ and $\operatorname{diag}(-1, -1)$ have the same discriminant $1$ but represent forms of opposite signature, treated.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>bilinear form</strong> on an $R$-module $M$ is a function $B : M \times M \to R$ linear in each argument. It is <strong>symmetric</strong> if $B(u, v) = B(v, u)$, <strong>skew-symmetric</strong> if $B(u, v) = -B(v, u)$, and <strong>alternating</strong> if $B(v, v) = 0$ for all $v$. Every alternating form is skew-symmetric, and when $2$ is invertible the two notions coincide and a symmetric alternating form is zero.</p>
+<p>On a free module of finite rank a form is represented by its <strong>Gram matrix</strong> $G_{ij} = B(e_i, e_j)$, with $B(u, v) = [u]^T G [v]$. Symmetry is $G = G^T$, skew-symmetry is $G = -G^T$, and a change of basis replaces $G$ by $P^T G P$; forms related in this way are <strong>congruent</strong>. The <strong>rank</strong> of $B$ is the rank of $G$.</p>
+<p>The <strong>radical</strong> $\operatorname{rad}(B) = \{u : B(u, v) = 0 \ \forall v\}$ is the kernel of the map $M \to M^*$, $u \mapsto B(u, -)$. The form is <strong>non-degenerate</strong> when this map is an isomorphism; over a free module of finite rank this means $\det G$ is a unit of $R$. Over a field in finite dimension the conditions collapse: non-degeneracy, vanishing of the radical, invertibility of the Gram matrix, and $\operatorname{rank}(B) = \dim M$ are equivalent, and $\dim \operatorname{rad}(B) = \dim M - \operatorname{rank}(B)$. Over a general ring and in infinite dimension they do not: a form can have zero radical and still be degenerate.</p>
+<p>The <strong>orthogonal direct sum</strong> $B_1 \perp B_2$ on $M_1 \oplus M_2$ is non-degenerate exactly when both summands are, and its Gram matrix is block diagonal. A non-degenerate alternating form has even rank, and over a field it has a <strong>symplectic basis</strong> $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $B(e_i, f_j) = \delta_{ij}$; the case of rank two is the <strong>symplectic plane</strong>, which is not the quadratic hyperbolic plane. Isometries are the linear isomorphisms preserving $B$; they form the group $\operatorname{O}(M, B)$ for symmetric $B$ and $\operatorname{Sp}(M, B)$ for alternating $B$. The <strong>discriminant</strong> $\Delta(B) = \det G \in F^\times/(F^\times)^2$ is a congruence invariant of a non-degenerate symmetric form over a field.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$F$, $K$</td>
+<td>Fields</td>
+</tr>
+<tr>
+<td>$M$, $N$</td>
+<td>$R$-modules, left unless stated</td>
+</tr>
+<tr>
+<td>$M^*$</td>
+<td>Dual module $\operatorname{Hom}_R(M, R)$</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>Bilinear form $B : M \times M \to R$</td>
+</tr>
+<tr>
+<td>$\operatorname{Bil}_R(M)$</td>
+<td>$R$-module of bilinear forms on $M$</td>
+</tr>
+<tr>
+<td>$G = (G_{ij})$</td>
+<td>Gram matrix, $G_{ij} = B(e_i, e_j)$</td>
+</tr>
+<tr>
+<td>$[v]$</td>
+<td>Coordinate column of $v$ in a basis</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>Change-of-basis matrix</td>
+</tr>
+<tr>
+<td>$u \perp v$</td>
+<td>$B(u, v) = 0$</td>
+</tr>
+<tr>
+<td>$S^\perp$</td>
+<td>Orthogonal complement of $S$</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}(B)$</td>
+<td>Radical $\{u : B(u, v) = 0\ \forall v\}$</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}(B)$</td>
+<td>Rank of the Gram matrix</td>
+</tr>
+<tr>
+<td>$B_1 \perp B_2$</td>
+<td>Orthogonal direct sum of forms</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(M, B)$</td>
+<td>Isometry group of $B$</td>
+</tr>
+<tr>
+<td>$\operatorname{O}(M, B)$</td>
+<td>Orthogonal group of a symmetric form</td>
+</tr>
+<tr>
+<td>$\operatorname{Sp}(M, B)$</td>
+<td>Symplectic group of an alternating form</td>
+</tr>
+<tr>
+<td>$\delta_{ij}$</td>
+<td>Kronecker delta</td>
+</tr>
+<tr>
+<td>$\Delta(B)$</td>
+<td>Discriminant $\det G \in F^\times/(F^\times)^2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991), for the elementary theory of bilinear forms and their matrices.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for bilinear forms over rings and the dual-module formulation of non-degeneracy.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the congruence classification of symmetric and alternating forms.</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009), for the radical and the structure of isometry groups.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for the alternating and symplectic cases over general rings.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991), for bilinear forms on modules over a commutative ring.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

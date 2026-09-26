@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Topological Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-topological-spaces"><strong>List of Topological Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the topological spaces that Parts I to III of the corpus introduce, each with the article that owns it and with the three properties that classify it: its separation, its compactness and its connectedness. The spaces are grouped by the way the corpus meets them — the number systems and the valued and arithmetic spaces of the algebra and number-theory articles, the spheres, balls and projective spaces of the geometry articles, the matrix groups and homogeneous spaces of the group articles, the spaces produced by the standard constructions, the totally disconnected spaces of the profinite, Cantor and Stone theory, the manifolds, and the pathological spaces that serve as counterexamples.</p>
+<p>Every entry points to the article that introduces the space, and every space listed appears somewhere in Parts I to III. The article introduces nothing and proves nothing: it records the separation, compactness and connectedness that the introducing articles establish, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the spaces that are compact, metrisable or connected it lists the spaces that fail each property — the Sorgenfrey line, which is perfectly normal and separable and not metrisable; the long line, which is locally Euclidean and not paracompact; the topologist's sine curve, which is connected and not path connected; $\beta\mathbb{N}$, which is compact Hausdorff and not first countable — each with the failure named and the article that records it.</p>
+<h2 id="the-number-systems-and-the-valued-spaces">The Number Systems and the Valued Spaces</h2>
+<p>The spaces of the algebra and number-theory articles are the ones whose topology is induced by an order, by an absolute value, or by a valuation. They are the models on which every other topology of the corpus is tested, and the article that introduces each one also fixes its topology.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Its separation, compactness and connectedness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>metrisable and second countable; locally compact and $\sigma$-compact, not compact; connected and path connected; complete for the usual metric</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{R}^2$ as a topological space; second countable, locally compact, connected, path connected, complete</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>countable and metrisable; totally disconnected, hence not connected; not locally compact and not complete; meagre in itself</td>
+<td><em>The Rational Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{N}$</td>
+<td>discrete, hence metrisable and totally disconnected; locally compact, not compact</td>
+<td><em>The Integers</em></td>
+</tr>
+<tr>
+<td>$[0,1]$</td>
+<td>compact, connected, path connected, metrisable and complete</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$(0,1)$</td>
+<td>metrisable and connected, hence not totally disconnected; not compact; not complete for the usual metric, which is why completeness is not a topological property</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n$</td>
+<td>second countable, locally compact, $\sigma$-compact, connected and path connected; complete</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q$</td>
+<td>the discrete topology on a finite set; compact, totally disconnected, metrisable</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$</td>
+<td>ultrametric, hence totally disconnected and zero-dimensional; locally compact, complete, not compact</td>
+<td><em>The $p$-adic Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$</td>
+<td>compact, totally disconnected and perfect, hence homeomorphic to the Cantor set; metrisable</td>
+<td><em>The $p$-adic Numbers</em></td>
+</tr>
+<tr>
+<td>$k[[t]]$, $k((t))$</td>
+<td>the $(t)$-adic topology, not discrete; totally disconnected; locally compact when $k$ is finite, $k[[t]]$ then compact</td>
+<td><em>Topological Rings and Fields</em>; <em>Formal Power Series and Completion</em></td>
+</tr>
+<tr>
+<td>$\mathbb{A}_{\mathbb{Q}}$, $\mathbb{A}_{\mathbb{Q}}^\times$</td>
+<td>the restricted-product topology; locally compact Hausdorff, not compact; totally disconnected at the non-archimedean places and connected at the archimedean one</td>
+<td><em>Adeles and Ideles</em></td>
+</tr>
+<tr>
+<td>$\mathcal{M}(A)$</td>
+<td>the Berkovich spectrum of a $K$-affinoid algebra; compact Hausdorff, and an $\mathbb{R}$-tree, hence path connected and contractible in the line case</td>
+<td><em>Berkovich Spaces</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Spa}(A,A^+)$</td>
+<td>the adic spectrum with the spectral topology; quasi-compact and sober, Hausdorff for the analytic topology in the strongly noetherian case</td>
+<td><em>Adic Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The order topology of $\mathbb{R}$ and the subspace topology of $\mathbb{Q}$ are those of <em>Topological Spaces</em>; the $p$-adic and archimedean completions of $\mathbb{Q}$ are compared in <em>Absolute Values, Valuations and Completions</em>. The adeles are the restricted product of the completions, so the two rows above and the two rows of the $p$-adic table sit in one family.</p>
+<h2 id="the-spheres-balls-and-projective-spaces">The Spheres, Balls and Projective Spaces</h2>
+<p>The spaces of the geometry articles are the model spaces of constant curvature and the projective spaces built from a vector space. Their topology is the quotient or subspace topology of the Euclidean one, and their separation and compactness are therefore those of $\mathbb{R}^n$ and its quotients.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Its separation, compactness and connectedness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S^n$, $n \geq 1$</td>
+<td>compact, connected, path connected for $n \geq 1$, Hausdorff and metrisable; a closed submanifold of $\mathbb{R}^{n+1}$</td>
+<td><em>Spherical Geometry</em>; <em>Smooth Manifolds and Differential Geometry</em></td>
+</tr>
+<tr>
+<td>$S^0 = \{\pm1\}$</td>
+<td>the two-point discrete space; compact, totally disconnected</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>$D^n$</td>
+<td>the closed unit ball; compact, connected, path connected, contractible</td>
+<td><em>Smooth Manifolds and Differential Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbf{H}^n$</td>
+<td>the hyperbolic space; connected, path connected, contractible and complete for the hyperbolic metric; not compact</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>$S^1$</td>
+<td>compact, connected, path connected; simultaneously the circle and the unitary group $U(1)$</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>$T^n = \mathbb{R}^n/\mathbb{Z}^n$</td>
+<td>compact, connected, path connected; a Lie group and a symmetric space</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^n = S^n/\{\pm1\}$</td>
+<td>compact, connected for $n \geq 1$; a manifold, connected even though $S^n$ is a double cover</td>
+<td><em>Projective Geometry</em>; <em>Smooth Manifolds and Differential Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^n$</td>
+<td>compact, connected, path connected; a complex manifold of dimension $n$</td>
+<td><em>Topological Spaces</em>; <em>Several Complex Variables</em></td>
+</tr>
+<tr>
+<td>$\mathbb{HP}^n$</td>
+<td>compact, connected; a quaternionic manifold and the quotient of $S^{4n+3}$ by the unit quaternions</td>
+<td><em>CW Complexes and Cellular Approximation</em>; <em>Quaternion Geometry</em></td>
+</tr>
+<tr>
+<td>the lens space $L(p;q)$</td>
+<td>compact, connected, a closed $3$-manifold; homotopy equivalent to another lens space exactly when the parameters agree</td>
+<td><em>Lens Spaces</em></td>
+</tr>
+<tr>
+<td>the Grassmannian $G_k(\mathbb{R}^n)$</td>
+<td>compact and connected for $0 < k < n$; a manifold of dimension $k(n-k)$</td>
+<td><em>Grassmannians and Stiefel Manifolds</em></td>
+</tr>
+<tr>
+<td>the Stiefel manifold $V_k(\mathbb{R}^n)$</td>
+<td>compact; connected for $k < n$, and $O(n)$ with two components for $k = n$</td>
+<td><em>Grassmannians and Stiefel Manifolds</em></td>
+</tr>
+<tr>
+<td>the flag manifold</td>
+<td>compact, connected, and the homogeneous space of a parabolic subgroup</td>
+<td><em>Flag Manifolds</em></td>
+</tr>
+<tr>
+<td>a space form $M^n$</td>
+<td>complete and connected with constant sectional curvature; by the space-form theorem a quotient of $S^n$, of $\mathbb{R}^n$ or of $\mathbf{H}^n$ by a group acting freely</td>
+<td><em>Curvature and Geodesics</em>; <em>Spherical Geometry</em>; <em>Hyperbolic Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-matrix-groups-and-homogeneous-spaces">The Matrix Groups and Homogeneous Spaces</h2>
+<p>A Lie group is a topological space as well as a group, and the corpus uses its topology throughout; the groups appear again as groups in <em>List of Topological Groups</em> and <em>List of Lie Groups</em>, and are recorded here only as spaces.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Its separation, compactness and connectedness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_n(\mathbb{R})$</td>
+<td>locally compact Hausdorff, second countable, not compact; two components, separated by the sign of the determinant</td>
+<td><em>The General Linear Group</em>; <em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{C})$</td>
+<td>locally compact Hausdorff, second countable, not compact; connected</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>$SL_n(\mathbb{R})$, $SL_n(\mathbb{C})$</td>
+<td>locally compact Hausdorff, not compact; connected, and simply connected for the complex case</td>
+<td><em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>$O(n)$, $U(n)$, $Sp(n)$</td>
+<td>compact, Hausdorff, metrisable; $O(n)$ has two components, $U(n)$ and $Sp(n)$ are connected</td>
+<td><em>Isometries and Orthogonal Transformations</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>$SO(n)$, $SU(n)$</td>
+<td>compact and connected; $SU(n)$ is simply connected, and $SO(n)$ has fundamental group $\mathbb{Z}/2$ for $n \geq 3$</td>
+<td><em>The Rotation Group and Orientation</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>$G/H$</td>
+<td>the homogeneous space of a closed subgroup; locally compact Hausdorff, and compact when $H$ is cocompact</td>
+<td><em>Homogeneous Spaces</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(k,n) = GL_n/H$</td>
+<td>the Grassmannian as a homogeneous space; compact, connected, and a projective variety when the field is algebraically closed</td>
+<td><em>Homogeneous Spaces</em>; <em>Grassmannians and Stiefel Manifolds</em></td>
+</tr>
+<tr>
+<td>a symmetric space $G/K$</td>
+<td>complete, connected, and a Riemannian manifold with the invariant metric when $K$ is a maximal compact subgroup</td>
+<td><em>Symmetric Spaces</em></td>
+</tr>
+<tr>
+<td>$LG = C^\infty(S^1,G)$</td>
+<td>the loop group; a Fréchet manifold, not locally compact; connected when $G$ is</td>
+<td><em>Loop Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The passage from the group to the homogeneous space is the construction of <em>Homogeneous Spaces</em>; the compact groups among these are the groups of <em>Analysis on Compact Groups</em>, whose Haar measure is normalised to a probability measure.</p>
+<h2 id="spaces-built-by-a-construction">Spaces Built by a Construction</h2>
+<p>The corpus constructs spaces as well as naming them, and the constructions are entries of the list in their own right, since each turns a space or a family of spaces into a new one with a definite separation, compactness and connectedness.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction and its result</th>
+<th>Its separation, compactness and connectedness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the subspace $A \subseteq X$</td>
+<td>hereditary for $T_0$ to complete regularity and for metrisability; compactness need not pass to a subspace</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>the product $\prod_i X_i$</td>
+<td>arbitrary products preserve $T_0$ to complete regularity and compactness (Tychonoff); normality and metrisability do not survive</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>the quotient $X/{\sim}$</td>
+<td>the finest topology making the quotient map continuous; Hausdorffness and first countability are not automatic</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>the one-point compactification $X^+$</td>
+<td>compact and Hausdorff when $X$ is locally compact Hausdorff; not metrisable for an uncountable discrete $X$</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>the cone, suspension and mapping cylinder</td>
+<td>built by a quotient of a product with an interval; compact when the source is compact</td>
+<td><em>CW Complexes and Cellular Approximation</em></td>
+</tr>
+<tr>
+<td>the adjunction space $X \cup_f Y$</td>
+<td>a quotient of the disjoint union; Hausdorffness requires $f$ to be closed or the pair to be a relative CW pair</td>
+<td><em>CW Complexes and Cellular Approximation</em></td>
+</tr>
+<tr>
+<td>the CW complex</td>
+<td>Hausdorff and paracompact; compact exactly when the cell complex is finite</td>
+<td><em>CW Complexes and Cellular Approximation</em></td>
+</tr>
+<tr>
+<td>the simplicial complex</td>
+<td>metrisable and compact when finite, and Hausdorff for the weak topology in general</td>
+<td><em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>the covering space $\tilde X \to X$</td>
+<td>locally homeomorphic to $X$, hence carries the same local separation and compactness; $\tilde X$ is compact exactly when the covering is finite over a compact base</td>
+<td><em>The Fundamental Group and Covering Spaces</em></td>
+</tr>
+<tr>
+<td>the inverse limit $\varprojlim X_i$</td>
+<td>a closed subspace of the product; compact when the $X_i$ are compact Hausdorff</td>
+<td><em>Nets, Filters and Convergence</em>; <em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>the nerve $\lvert N(\mathcal{U})\rvert$ of a cover</td>
+<td>a simplicial complex, hence metrisable; homotopy equivalent to the space when the cover is good</td>
+<td><em>Čech Cohomology</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-totally-disconnected-cantor-and-stone-spaces">The Totally Disconnected, Cantor and Stone Spaces</h2>
+<p>One family of spaces is separated out because it is totally disconnected, and the corpus meets it in the profinite, Galois and Boolean-algebra articles as well as in the topological ones. Its members are the compact totally disconnected Hausdorff spaces, equivalently the Stone spaces of Boolean algebras.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Its separation, compactness and connectedness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Cantor set $\{0,1\}^{\mathbb{N}}$, $2^{\mathbb{N}}$</td>
+<td>compact, metrisable, perfect, totally disconnected; uncountable, and homeomorphic to $\mathbb{Z}_p$</td>
+<td><em>Descriptive Set Theory</em>; <em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the Baire space $\mathbb{N}^{\mathbb{N}}$</td>
+<td>completely metrisable and zero-dimensional, hence totally disconnected; not compact; homeomorphic to the irrational numbers</td>
+<td><em>Baire Spaces and Category</em>; <em>Descriptive Set Theory</em></td>
+</tr>
+<tr>
+<td>a profinite group $\varprojlim G_i$</td>
+<td>compact Hausdorff and totally disconnected; metrisable exactly when the inverse system has a countable cofinal subsystem</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>the Galois group $G_K = \operatorname{Gal}(\overline K/K)$</td>
+<td>compact totally disconnected for the Krull topology; metrisable for a countable field</td>
+<td><em>Galois Theory</em>; <em>Galois Cohomology</em></td>
+</tr>
+<tr>
+<td>the Stone space of a Boolean algebra</td>
+<td>compact, totally disconnected, Hausdorff; the spectral space of the algebra</td>
+<td><em>Boolean Rings and Stone Duality</em></td>
+</tr>
+<tr>
+<td>$\beta\mathbb{N}$</td>
+<td>compact Hausdorff and extremally disconnected; not first countable at a free ultrafilter, hence not metrisable</td>
+<td><em>Nets, Filters and Convergence</em>; <em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>the solenoid $\varprojlim S^1$</td>
+<td>compact and connected, dense image of $\mathbb{R}$; not path connected and not locally connected</td>
+<td><em>Abelian Topological Groups</em>; <em>Pontryagin Duality</em></td>
+</tr>
+<tr>
+<td>the Bohr compactification $bG$</td>
+<td>compact Hausdorff, with a dense image of $G$; totally disconnected when $G$ is discrete abelian</td>
+<td><em>Pontryagin Duality</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Spec} R$ with the Zariski topology</td>
+<td>$T_0$ and quasi-compact, and not $T_1$ whenever a nonzero prime is contained in another; totally disconnected in the constructible sense</td>
+<td><em>Schemes</em>; <em>Commutative Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Stone duality turns the first five rows into one statement, and the profinite groups are exactly the compact totally disconnected groups, by the theorem of <em>Profinite Groups and the Krull Topology</em>. The solenoid is the standard compact connected space that fails to be path connected, and the Cantor set is the standard compact totally disconnected space with no isolated points.</p>
+<h2 id="the-manifolds-of-the-corpus">The Manifolds of the Corpus</h2>
+<p>A manifold is a space that is locally Euclidean; the corpus uses smooth, complex, Riemannian and symplectic manifolds, and each carries the topology of its local models together with the extra structure.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Its separation, compactness and connectedness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a topological manifold $M$</td>
+<td>locally Euclidean Hausdorff and second countable, hence paracompact and metrisable</td>
+<td><em>Smooth Manifolds and Differential Geometry</em></td>
+</tr>
+<tr>
+<td>a smooth manifold</td>
+<td>a manifold with a maximal smooth atlas; the same separation as the underlying manifold</td>
+<td><em>Smooth Manifolds and Differential Geometry</em></td>
+</tr>
+<tr>
+<td>a Riemannian manifold $(M,g)$</td>
+<td>a manifold with the metric-induced topology, which agrees with the given one</td>
+<td><em>Riemannian Geometry</em></td>
+</tr>
+<tr>
+<td>a Lorentzian manifold</td>
+<td>a pseudo-Riemannian manifold of index one; Hausdorff and second countable, not necessarily compact, and the metric topology agrees with the manifold topology</td>
+<td><em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>a Riemann surface</td>
+<td>a connected complex one-dimensional manifold; Hausdorff, second countable, not compact unless closed</td>
+<td><em>Algebraic Curves</em></td>
+</tr>
+<tr>
+<td>a Kähler manifold</td>
+<td>a complex manifold with a compatible symplectic form; compact and connected when it is a closed Kähler manifold</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>a Calabi–Yau manifold</td>
+<td>a compact connected Kähler manifold with trivial canonical bundle</td>
+<td><em>Calabi–Yau Manifolds</em></td>
+</tr>
+<tr>
+<td>a symplectic manifold $(M,\omega)$</td>
+<td>a manifold with a closed non-degenerate two-form; Hausdorff and second countable, even-dimensional</td>
+<td><em>Symplectic Geometry</em></td>
+</tr>
+<tr>
+<td>a closed surface</td>
+<td>compact, connected, metrisable; classified by the genus and the orientability</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+<tr>
+<td>a knot complement $S^3 \setminus K$</td>
+<td>connected, Hausdorff, second countable and not compact; an open $3$-manifold</td>
+<td><em>Knot Theory</em></td>
+</tr>
+<tr>
+<td>a closed hyperbolic $3$-manifold</td>
+<td>compact, connected, and complete for the hyperbolic metric</td>
+<td><em>Low-Dimensional Topology</em>; <em>Hyperbolic Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-non-metrisable-and-pathological-spaces">The Non-metrisable and Pathological Spaces</h2>
+<p>The remaining spaces of the corpus are the counterexamples. They are recorded with the property they fail, since their role is to show that the implications among separation, metrisability, compactness and paracompactness do not reverse.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it has, and the one it fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Sorgenfrey line $\mathbb{R}_S$</td>
+<td>perfectly normal, separable, Lindelöf, paracompact and Baire; not second countable, not metrisable, not locally compact and not locally metrisable, and its square is not normal</td>
+<td><em>Metrisation and Separation Axioms</em>; <em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>the Sorgenfrey plane $\mathbb{R}_S^2$</td>
+<td>separable and first countable; not normal, hence not paracompact; a product of paracompact spaces that is not paracompact</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>the Niemytzki plane</td>
+<td>separable, first countable, Tychonoff and locally metrisable; not normal and not paracompact</td>
+<td><em>Metrisation and Separation Axioms</em>; <em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>the long line $L$</td>
+<td>connected, locally Euclidean, normal and locally metrisable; not paracompact, not second countable and not metrisable</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>the ordinal spaces $[0,\omega_1)$, $[0,\omega_1]$</td>
+<td>ordered, normal, locally metrisable; first countable and countably compact but not compact, and not compact respectively; neither metrisable nor paracompact</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>the topologist's sine curve</td>
+<td>compact and connected; not path connected and not locally connected</td>
+<td><em>Topological Spaces</em>; <em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the Warsaw circle</td>
+<td>compact connected metric, with the Čech cohomology of a circle; not locally connected, and not homotopy equivalent to $S^1$</td>
+<td><em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the comb space</td>
+<td>compact, connected and contractible; not locally connected at the points of the limiting segment</td>
+<td><em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the pseudo-arc</td>
+<td>compact, connected, metrisable and hereditarily indecomposable; not path connected and not locally connected</td>
+<td><em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the Hilbert cube $[0,1]^{\mathbb{N}}$</td>
+<td>compact, connected, metrisable, contractible; universal among separable metrisable spaces</td>
+<td><em>Metrisation and Separation Axioms</em>; <em>Continuum Theory</em></td>
+</tr>
+<tr>
+<td>the indiscrete space on two points</td>
+<td>compact, connected, and regular, completely regular and normal; not $T_0$</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>the cofinite topology on an infinite set</td>
+<td>compact, connected and $T_1$; not Hausdorff</td>
+<td><em>Topological Spaces</em></td>
+</tr>
+<tr>
+<td>$\{0,1\}^{I}$ for uncountable $I$</td>
+<td>compact Hausdorff; not first countable and not metrisable</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="warnings">Warnings</h2>
+<p>Objects that a reader may expect to find among the topological spaces, and does not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a topological space</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the octonions $\mathbb{O}$</td>
+<td>a non-associative algebra, named in the corpus as a division algebra and not equipped with a topology of its own</td>
+<td><em>Octonion Algebra</em>; <em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>a group such as the free group $F_2$</td>
+<td>an object of Part I, with no topology attached until it is made a topological group</td>
+<td><em>Combinatorial Group Theory</em></td>
+</tr>
+<tr>
+<td>the orthogonal group $O(n)$</td>
+<td>a Lie group and a compact space, but it is defined by a form, so it is a geometric group and not a space of this list</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the Zariski topology on $\mathbb{R}^n$</td>
+<td>a topology introduced with the algebraic structure of a real variety; recorded here through $\operatorname{Spec} R$ and not as a separate space</td>
+<td><em>Real Algebraic Geometry</em></td>
+</tr>
+<tr>
+<td>the Alexander horned sphere</td>
+<td>a subset of $\mathbb{R}^3$ that is homeomorphic to $S^2$ and whose complement is not simply connected; a counterexample in the list of non-examples in topology</td>
+<td><em>Low-Dimensional Topology</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the topological spaces of Parts I to III with their separation, their compactness and their connectedness, grouped into the valued and arithmetic spaces of the number theory articles, the spheres and projective spaces of the geometry articles, the matrix groups and homogeneous spaces, the constructions that build new spaces, the totally disconnected and Stone spaces, the manifolds, and the pathological counterexamples. The entries range from $\mathbb{R}$ and the $p$-adic fields through the spheres, projective spaces, Grassmannians and flag manifolds to the profinite groups, the Cantor set, the solenoid and $\beta\mathbb{N}$, and each is recorded with the properties that the introducing article establishes. Beside the examples stand the non-examples — the Sorgenfrey line and plane, the long line, the ordinal spaces, the topologist's sine curve, the Warsaw circle and the pseudo-arc — each with the property it fails. The list introduces and proves nothing; it is the index of the spaces of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol, and the names are those of the articles that introduce them. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $Y$, $M$</td>
+<td>a topological space, a topological space, a manifold</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$, $\mathbb{Z}$, $\mathbb{N}$</td>
+<td>the real, complex, rational, integer and natural numbers with their standard topologies</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q$, $\mathbb{Q}_p$, $\mathbb{Z}_p$</td>
+<td>the finite field of $q$ elements and the $p$-adic field and integers</td>
+</tr>
+<tr>
+<td>$\mathbb{A}_{\mathbb{Q}}$</td>
+<td>the adeles of $\mathbb{Q}$</td>
+</tr>
+<tr>
+<td>$S^n$, $D^n$, $T^n$</td>
+<td>the $n$-sphere, the closed $n$-ball, the $n$-torus</td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^n$, $\mathbb{CP}^n$, $\mathbb{HP}^n$</td>
+<td>the real, complex and quaternionic projective spaces</td>
+</tr>
+<tr>
+<td>$\mathbf{H}^n$</td>
+<td>hyperbolic $n$-space</td>
+</tr>
+<tr>
+<td>$G_k(\mathbb{R}^n)$, $V_k(\mathbb{R}^n)$</td>
+<td>the Grassmannian and the Stiefel manifold of $k$-planes in $\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$G/H$</td>
+<td>a homogeneous space</td>
+</tr>
+<tr>
+<td>$X^+$, $X/{\sim}$, $\prod_i X_i$</td>
+<td>one-point compactification, quotient, product</td>
+</tr>
+<tr>
+<td>$\beta\mathbb{N}$, $bG$</td>
+<td>the Stone–Čech compactification of $\mathbb{N}$; the Bohr compactification</td>
+</tr>
+<tr>
+<td>$\operatorname{Spec} R$</td>
+<td>the prime spectrum with the Zariski topology</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(A)$, $\operatorname{Spa}(A,A^+)$</td>
+<td>the Berkovich spectrum and the adic spectrum</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_S$, $L$, $[0,\omega_1)$</td>
+<td>the Sorgenfrey line, the long line, the first uncountable ordinal space</td>
+</tr>
+<tr>
+<td>$\{0,1\}^{\mathbb{N}}$, $\mathbb{N}^{\mathbb{N}}$</td>
+<td>the Cantor set and the Baire space of sequences</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ryszard Engelking, <em>General Topology</em> (Heldermann, rev. ed. 1989), for the separation axioms, compactness, paracompactness and metrisation theorems in their standard order.</li>
+<li>James R. Munkres, <em>Topology</em> (Pearson, 2nd ed. 2000), for the constructions of subspaces, products, quotients and compactifications and the classical examples.</li>
+<li>Lynn A. Steen and J. Arthur Seebach, <em>Counterexamples in Topology</em> (Springer, 2nd ed. 1978), for the Sorgenfrey line and plane, the Niemytzki plane, the long line, the ordinal spaces, $\beta\mathbb{N}$ and the other counterexamples tabulated above.</li>
+<li>Stephen Willard, <em>General Topology</em> (Addison-Wesley, 1970), for the spaces of the real line, the Cantor set and the Baire space and their homeomorphism types.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Artinian and Noetherian Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-artinian-and-noetherian-rings"><strong>List of Artinian and Noetherian Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the rings the corpus meets that satisfy the ascending chain condition or the descending chain condition on ideals. A ring is <strong>Noetherian</strong> when every ascending chain of ideals stabilises, equivalently when every ideal is finitely generated; it is <strong>Artinian</strong> when every descending chain stabilises, equivalently when it has finite length. Artinian is the stronger condition, by the Akizuki–Hopkins–Levitzki theorem, and the semisimple Artinian rings are described by Wedderburn–Artin.</p>
+<p>Every entry points to the article that introduces the ring or the condition, together with the chain condition it satisfies. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being a ring that has one chain condition but fails the other, with the failure named and the article that records it.</p>
+<h2 id="the-two-chain-conditions">The Two Chain Conditions</h2>
+<p>The <strong>ascending chain condition</strong> (ACC) on ideals says that every ascending chain $I_0 \subseteq I_1 \subseteq \cdots$ stabilises, equivalently that every ideal is finitely generated; the <strong>descending chain condition</strong> (DCC) is the mirror statement. The conditions are inherited by quotients and localisations, and the Hilbert basis theorem gives the polynomial rings. A ring of finite length has a composition series, and the length is additive in short exact sequences.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ascending chain condition (ACC)</td>
+<td>every ascending chain of ideals stabilises; equivalently every ideal is finitely generated</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Descending chain condition (DCC)</td>
+<td>every descending chain of ideals stabilises</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Noetherian ring</td>
+<td>a ring with the ACC</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Artinian ring</td>
+<td>a ring with the DCC</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Akizuki–Hopkins–Levitzki theorem</td>
+<td>every Artinian ring is Noetherian</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Closure under quotients</td>
+<td>a quotient of a Noetherian or Artinian ring is again Noetherian or Artinian</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Closure under localisation</td>
+<td>a localisation of a Noetherian ring is Noetherian</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>Composition series and length</td>
+<td>a ring of finite length has a composition series with a well-defined length $\ell(R)$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Krull dimension $0$</td>
+<td>every prime ideal is maximal; the Artinian rings are exactly those that are Noetherian of dimension $0$</td>
+<td><em>Integral Extensions and Krull Dimension</em></td>
+</tr>
+<tr>
+<td>Non-example: a ring with neither chain condition</td>
+<td>fails both conditions: an infinite-dimensional algebra with a non-finitely generated ideal</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="noetherian-rings">Noetherian Rings</h2>
+<p>The Noetherian condition is the stable one: it is preserved by quotients, localisations, finite products and polynomial extension, and it holds for the rings the corpus computes with. The <strong>Hilbert basis theorem</strong> states that $R[x]$ is Noetherian when $R$ is, so the polynomial ring in finitely many variables over a field is Noetherian; the ring is nevertheless not Artinian, since the chain $(x) \supsetneq (x^2) \supsetneq \cdots$ does not stabilise.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field $F$</td>
+<td>Noetherian and Artinian: its only ideals are $0$ and $F$</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>Noetherian, not Artinian; a principal ideal domain</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>Noetherian and Artinian: a finite ring</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$R[x_1,\dots,x_n]$</td>
+<td>Noetherian, by the Hilbert basis theorem applied $n$ times</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Principal ideal domain</td>
+<td>Noetherian: every ideal is generated by one element</td>
+<td><em>Principal Ideal Domains</em></td>
+</tr>
+<tr>
+<td>Dedekind domain</td>
+<td>Noetherian of Krull dimension $1$; every nonzero ideal a product of primes</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>$S^{-1}R$</td>
+<td>Noetherian when $R$ is; the localisation at a multiplicative set</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>$R/I$</td>
+<td>Noetherian when $R$ is; the quotient by an ideal</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Finitely generated module over a Noetherian ring</td>
+<td>Noetherian as a module: submodules are finitely generated</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}$</td>
+<td>fails the DCC: the chain $(2) \supsetneq (4) \supsetneq (8) \supsetneq \cdots$ does not stabilise</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Non-example: $k[x]$</td>
+<td>fails the DCC: the chain $(x) \supsetneq (x^2) \supsetneq \cdots$ does not stabilise</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="artinian-rings">Artinian Rings</h2>
+<p>An Artinian ring is a finite product of Artinian local rings, and every Artinian ring is Noetherian by Akizuki–Hopkins–Levitzki and of Krull dimension $0$. The standard Artinian rings are the fields, the finite rings and the local rings $k[x]/(x^n)$; the dual numbers $\mathbb{D}'_F = F[x]/(x^2)$ are the smallest non-reduced example.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field $F$</td>
+<td>Artinian of length $1$, of Krull dimension $0$</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>Artinian and Noetherian; a product of local rings $\mathbb{Z}/p_i^{e_i}\mathbb{Z}$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$k[x]/(x^n)$</td>
+<td>local Artinian of length $n$, with nilpotent maximal ideal</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Dual numbers $\mathbb{D}'_F = F[x]/(x^2)$</td>
+<td>local Artinian, non-reduced, of length $2$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Artinian local ring</td>
+<td>a local ring of finite length; the factors in the product decomposition</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Finite product of Artinian local rings</td>
+<td>the general Artinian ring, by the structure theorem</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Reduced Artinian ring</td>
+<td>a finite product of fields; the reduced rings of Krull dimension $0$</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}$</td>
+<td>fails the DCC, so fails to be Artinian</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Non-example: $k[x]$</td>
+<td>fails the DCC, and has Krull dimension $1$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>Non-example: $k[x_1,\dots,x_n]$ for $n \geq 1$</td>
+<td>fails the DCC, and has Krull dimension $n$</td>
+<td><em>Integral Extensions and Krull Dimension</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="semisimple-and-simple-artinian-rings">Semisimple and Simple Artinian Rings</h2>
+<p>A ring is <strong>semisimple</strong> when its regular module is a direct sum of simples, equivalently when every module over it is semisimple; the <strong>Wedderburn–Artin theorem</strong> writes such a ring as a product $\prod_i M_{n_i}(D_i)$ of matrix rings over division rings. Semisimple rings are Artinian and Noetherian of Krull dimension $0$, and a simple Artinian ring is a single matrix ring over a division ring. This is where the non-commutative examples of the corpus sit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wedderburn–Artin decomposition</td>
+<td>a semisimple ring is $\prod_i M_{n_i}(D_i)$, the factors determined up to permutation</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>a division ring; simple Artinian and Noetherian, of Krull dimension $0$, semisimple</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>simple Artinian and Noetherian; the matrix ring $M_2(\mathbb{R})$, of length $2$ over $\mathbb{R}$</td>
+<td><em>Examples of Algebras</em></td>
+</tr>
+<tr>
+<td>Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>isomorphic to $M_2(\mathbb{C})$ over $\mathbb{C}$; simple Artinian and Noetherian</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Split-complex numbers $\mathbb{D} = \mathbb{R}[t]/(t^2-1)$</td>
+<td>isomorphic to $\mathbb{R}\times\mathbb{R}$; reduced Artinian of dimension $0$, not a field</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>Dual numbers $\mathbb{D}'$</td>
+<td>local Artinian, non-reduced; the smallest non-semisimple Artinian ring</td>
+<td><em>Dual Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{B}$ treated as a field</td>
+<td>fails: it has zero divisors, so it is not a division ring, though it is Artinian</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: $M_2(\mathbb{R})$ treated as a division ring</td>
+<td>fails: a nonzero nilpotent matrix has no inverse</td>
+<td><em>Examples of Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-conditions-compared">The Two Conditions Compared</h2>
+<p>The two conditions are not symmetric: DCC implies ACC by Akizuki–Hopkins–Levitzki, but not conversely, and the examples separate the cells. The table records where each standard ring sits.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>ACC (Noetherian)</th>
+<th>DCC (Artinian)</th>
+<th>The invariant that shows it</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field $F$</td>
+<td>yes</td>
+<td>yes</td>
+<td>length $1$, dimension $0$</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>finite, length $\Omega(n)$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$M_n(D)$ over a division ring</td>
+<td>yes</td>
+<td>yes</td>
+<td>simple Artinian, length $n$</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>yes</td>
+<td>no</td>
+<td>the chain $(2) \supsetneq (4) \supsetneq \cdots$, dimension $1$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$k[x]$</td>
+<td>yes</td>
+<td>no</td>
+<td>the chain $(x) \supsetneq (x^2) \supsetneq \cdots$, dimension $1$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$k[x_1,\dots,x_n]$, $n \geq 1$</td>
+<td>yes</td>
+<td>no</td>
+<td>dimension $n$ by Krull's theorem</td>
+<td><em>Integral Extensions and Krull Dimension</em></td>
+</tr>
+<tr>
+<td>Dedekind domain</td>
+<td>yes</td>
+<td>no</td>
+<td>dimension $1$; the nonzero primes are maximal</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>A Noetherian ring of dimension $0$</td>
+<td>yes</td>
+<td>yes</td>
+<td>Artinian by the structure theorem</td>
+<td><em>Integral Extensions and Krull Dimension</em></td>
+</tr>
+<tr>
+<td>A ring of finite length</td>
+<td>yes</td>
+<td>yes</td>
+<td>the length is additive in short exact sequences</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$k[x]/(x^n)$</td>
+<td>yes</td>
+<td>yes</td>
+<td>local Artinian of length $n$, non-reduced for $n \geq 2$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>reduced Artinian of dimension $0$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The one-way implication is the content of Akizuki–Hopkins–Levitzki, and the table shows its sharpness: every Artinian row has both conditions, while $\mathbb{Z}$, $k[x]$ and the Dedekind domains have the ACC alone. The Artinian rows are exactly the Noetherian rows of Krull dimension $0$, so the two conditions differ precisely by the dimension.</p>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the Artinian and Noetherian rings. The Noetherian examples are the fields, $\mathbb{Z}$, the finite rings $\mathbb{Z}/n\mathbb{Z}$, the polynomial rings $R[x_1,\dots,x_n]$, the principal ideal domains, the Dedekind domains, the localisations and the quotients, together with the finitely generated modules over a Noetherian ring; the Artinian examples are the fields, the finite rings, the local rings $k[x]/(x^n)$, the dual numbers and the finite products of Artinian local rings. The passage between the two is Akizuki–Hopkins–Levitzki, the length and Krull dimension $0$ are the measuring invariants, and the semisimple rings are the products $\prod_i M_{n_i}(D_i)$ of matrix rings over division rings. The non-commutative examples sit here: $\mathbb{H}$ is a division ring, $M_2(\mathbb{R})$ and the biquaternions $\mathbb{B}$ are simple Artinian matrix rings, the split-complex numbers are the reduced Artinian ring $\mathbb{R}\times\mathbb{R}$ and the dual numbers are local Artinian and non-reduced. The non-examples — $\mathbb{Z}$ and $k[x]$ and $k[x_1,\dots,x_n]$ as Noetherian but not Artinian, $\mathbb{B}$ mistaken for a field and $M_2(\mathbb{R})$ mistaken for a division ring — name the property that fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ACC, DCC</td>
+<td>ascending and descending chain condition on ideals</td>
+</tr>
+<tr>
+<td>$\ell(R)$, $\dim R$</td>
+<td>length and Krull dimension of a ring</td>
+</tr>
+<tr>
+<td>$R[x_1,\dots,x_n]$</td>
+<td>polynomial ring; Noetherian by the Hilbert basis theorem</td>
+</tr>
+<tr>
+<td>$S^{-1}R$</td>
+<td>localisation of a ring</td>
+</tr>
+<tr>
+<td>$M_n(D)$</td>
+<td>matrix ring over a division ring</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{B}$</td>
+<td>quaternions and biquaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>split-complex numbers and dual numbers</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$</td>
+<td>integers and their quotients</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$</td>
+<td>the reals and the complex numbers</td>
+</tr>
+<tr>
+<td>$\prod_i M_{n_i}(D_i)$</td>
+<td>Wedderburn–Artin decomposition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Oscar Zariski and Pierre Samuel, <em>Commutative Algebra</em>, Vol. I (Van Nostrand, 1958), for the chain conditions, the Hilbert basis theorem and the structure of Artinian rings.</li>
+<li>Michael Atiyah and Ian Macdonald, <em>Introduction to Commutative Algebra</em> (Addison–Wesley, 1969), for the chain conditions, Krull dimension and the Akizuki–Hopkins–Levitzki theorem.</li>
+<li>Frank Anderson and Kent Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for the Wedderburn–Artin theorem and the simple and semisimple Artinian rings.</li>
+<li>Irving Kaplansky, <em>Rings of Operators</em> (Benjamin, 1968), for the finite-dimensional and von Neumann algebraic contrasts with the Artinian structure theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

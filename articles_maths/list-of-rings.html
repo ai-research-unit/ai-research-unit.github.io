@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-rings"><strong>List of Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the rings that the corpus meets, commutative and non-commutative, with the data that separate them: their units, their zero divisors, their ideals and their chain conditions. Every entry points to the article that introduces the object.</p>
+<p>The convention is that of <em>Rings</em>: a ring is associative and unital and satisfies $1 \neq 0$, so the zero ring is the single exception and is named where it occurs. The classes into which these rings fall — commutative ring, reduced ring, integral domain, unique factorisation domain, principal ideal domain, Euclidean domain, field and division ring — are gathered in <em>List of Structures from Rings to Fields</em> and <em>List of Structures from Rings to Division Rings</em>. This article gathers the objects, not the rungs.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side, and it records the objects that a reader might expect to find here and will not.</p>
+<h2 id="the-number-systems">The Number Systems</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Ideals and chain conditions</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>$\pm 1$</td>
+<td>none</td>
+<td>every ideal principal; Noetherian, not Artinian</td>
+<td><em>The Integers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>$\mathbb{Q}\setminus\{0\}$</td>
+<td>none</td>
+<td>$0,\ \mathbb{Q}$; Noetherian and Artinian</td>
+<td><em>The Rational Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}\setminus\{0\}$</td>
+<td>none</td>
+<td>$0,\ \mathbb{R}$; Noetherian and Artinian</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{C}\setminus\{0\}$</td>
+<td>none</td>
+<td>$0,\ \mathbb{C}$; Noetherian and Artinian</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$N(u) \neq 0$</td>
+<td>the null cone $\{N = 0\}$</td>
+<td>$0,\ \mathbb{D}e_{\pm},\ \mathbb{D}$; Artinian</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>$x \neq 0$</td>
+<td>the maximal ideal $\mathfrak{m} = (\varepsilon)$</td>
+<td>the powers $(\varepsilon^m)$; local, Artinian</td>
+<td><em>Dual-Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{H}\setminus\{0\}$</td>
+<td>none</td>
+<td>only $0$ and $\mathbb{H}$; simple</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>$N(u) \in \mathbb{D}^{\times}$</td>
+<td>yes</td>
+<td>two maximal ideals</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$N(\tilde{Q}) \neq 0$</td>
+<td>yes</td>
+<td>only $0$ and $\mathbb{B}$; simple, not division</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero element is a unit; the biquaternions $\mathbb{B}$ and the split-biquaternions $\mathbb{H}_{\mathbb{D}}$ are the two eight-dimensional relatives that acquire zero divisors, and the split-complex numbers $\mathbb{D}$ and the dual numbers $\mathbb{D}'$ are the two-dimensional commutative rings with a degenerate or indefinite norm form.</p>
+<h2 id="residue-rings-finite-rings-and-products">Residue Rings, Finite Rings and Products</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Ideals and chain conditions</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>the classes coprime to $n$, of order $\varphi(n)$</td>
+<td>the nonunits of a composite modulus</td>
+<td>ideals correspond to the divisors of $n$; finite, Artinian</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$</td>
+<td>$\mathbb{F}_p^{\times}$, cyclic of order $p-1$</td>
+<td>none</td>
+<td>only $0$ and $\mathbb{F}_p$; field</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q$, $q = p^n$</td>
+<td>cyclic of order $q-1$</td>
+<td>none</td>
+<td>only $0$ and $\mathbb{F}_q$; field</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2^n$</td>
+<td>the elements with all coordinates $1$</td>
+<td>yes for $n \geq 2$</td>
+<td>a product of copies of $\mathbb{F}_2$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$R \times S$</td>
+<td>the pairs $(u, v)$ of units</td>
+<td>$(1, 0)(0, 1) = 0$</td>
+<td>a product of the ideals of the factors</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>$\{1, 3\}$</td>
+<td>$2$ is nilpotent, $2^2 = 0$, so the ring is not reduced</td>
+<td>local with maximal ideal $(2)$; Artinian</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$\{1, 5\}$</td>
+<td>$2 \cdot 3 = 0$, neither factor zero</td>
+<td>the product $\mathbb{F}_2 \times \mathbb{F}_3$; finite, Artinian</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>the zero ring $\{0\}$</td>
+<td>$1 = 0$</td>
+<td>—</td>
+<td>excluded by the convention $1 \neq 0$</td>
+<td><em>Rings</em>, §2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The non-example that fixes this section is $\mathbb{Z}/6\mathbb{Z}$: it is reduced, being the product $\mathbb{F}_2 \times \mathbb{F}_3$, and it is not an integral domain, since $2 \cdot 3 = 0$ with both factors nonzero.</p>
+<h2 id="characteristic">Characteristic</h2>
+<p>The characteristic is that of <em>Rings</em>, §1: the least $n \geq 1$ with $n \cdot 1 = 0$, or $0$ if there is none. The table records where each value occurs among the rings above.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Rings</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$</td>
+<td><em>Rings</em>, §1; <em>The Integers</em>, <em>The Rational Numbers</em>, <em>The Real Numbers</em>, <em>The Complex Numbers</em>, <em>Split-Complex Algebra</em>, <em>Dual-Numbers Algebra</em>, <em>Quaternion Algebra</em>, <em>Split-Biquaternion Algebra</em>, <em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$R[x]$, $R[[x]]$, $k(x)$, $k((t))$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-5}]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$</td>
+<td><em>Polynomial Rings and Rational Functions</em>, <em>Formal Power Series and Completion</em>, <em>Fields</em>, §19, <em>Absolute Values, Valuations and Completions</em>, <em>Examples of Rings and Fields</em>, <em>Algebraic Number Theory</em>, <em>Bézout Domains</em></td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>$\mathbb{F}_p$, $\mathbb{F}_{p^n}$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>$\mathbb{F}_p[[t]]$</td>
+<td><em>Local Fields</em></td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\mathbb{F}_2^n$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A finite ring has nonzero characteristic, and a ring of characteristic $0$ contains a copy of $\mathbb{Z}$; a ring of characteristic $n$ contains a copy of $\mathbb{Z}/n\mathbb{Z}$. The zero ring is the only ring in which the characteristic would be $1$, and it is excluded by the convention $1 \neq 0$.</p>
+<h2 id="polynomial-power-series-and-function-rings">Polynomial, Power Series and Function Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Ideals and chain conditions</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R[x]$</td>
+<td>the units of $R$</td>
+<td>none when $R$ is a domain</td>
+<td>principal when $R$ is a field; Noetherian when $R$ is</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$R[x_1, \dots, x_n]$</td>
+<td>the units of $R$</td>
+<td>none when $R$ is a domain</td>
+<td>finitely generated ideals, Noetherian when $R$ is</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$R[[x]]$</td>
+<td>the series with unit constant term</td>
+<td>none when $R$ is a domain</td>
+<td>local when $R$ is a field</td>
+<td><em>Formal Power Series and Completion</em></td>
+</tr>
+<tr>
+<td>$k(x)$</td>
+<td>every nonzero rational function</td>
+<td>none</td>
+<td>only $0$ and $k(x)$; field</td>
+<td><em>Fields</em>, §19</td>
+</tr>
+<tr>
+<td>$k((t))$</td>
+<td>the Laurent series with nonzero leading term</td>
+<td>none</td>
+<td>the valuation ring $k[[t]]$; field</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$k[[x]]$</td>
+<td>the series with nonzero constant term</td>
+<td>none when $k$ is a field</td>
+<td>local with maximal ideal $(x)$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$k[x, x^{-1}]$</td>
+<td>the monomials $c x^m$, $c \neq 0$</td>
+<td>none</td>
+<td>principal; the group ring $k[\mathbb{Z}]$</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$</td>
+<td>the units of $\mathbb{Z}_p$, $\lvert x \rvert_p = 1$</td>
+<td>none</td>
+<td>local with maximal ideal $(p)$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>the fractions with numerator prime to $p$</td>
+<td>none</td>
+<td>local with maximal ideal $p\mathbb{Z}_{(p)}$</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[i]$</td>
+<td>$\pm 1, \pm i$</td>
+<td>none</td>
+<td>Euclidean, hence every ideal principal</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{2}]$</td>
+<td>$\pm(1+\sqrt{2})^m$</td>
+<td>none</td>
+<td>Euclidean, hence every ideal principal</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-2}]$</td>
+<td>$\pm 1$</td>
+<td>none</td>
+<td>Euclidean</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+<td>$\pm 1$</td>
+<td>none</td>
+<td>Noetherian, not principal</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\zeta_n]$</td>
+<td>finite rank, by Dirichlet's unit theorem</td>
+<td>none</td>
+<td>Dedekind, not principal in general</td>
+<td><em>Cyclotomic Fields</em></td>
+</tr>
+<tr>
+<td>$\mathcal{O}_K$</td>
+<td>by Dirichlet's unit theorem</td>
+<td>none</td>
+<td>Dedekind, so nonzero ideals factor uniquely</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Z}}$</td>
+<td>the roots of unity it contains</td>
+<td>none</td>
+<td>not Noetherian, but Bézout</td>
+<td><em>Bézout Domains</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The list separates the rings in which factorisation is governed by a Euclidean algorithm ($\mathbb{Z}[i]$) from those in which it is governed only by ideals ($\mathbb{Z}[\sqrt{-5}]$ and $\mathcal{O}_K$) and from those that are not Noetherian at all ($\overline{\mathbb{Z}}$, the ring of all algebraic integers). The failure of unique factorisation in $\mathbb{Z}[\sqrt{-5}]$ is recorded in <em>Unique Factorisation Domains</em> and in <em>Examples of Rings and Fields</em>.</p>
+<h2 id="matrix-group-and-non-commutative-rings">Matrix, Group and Non-Commutative Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Units</th>
+<th>Zero divisors</th>
+<th>Ideals and chain conditions</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(R)$, $n \geq 2$</td>
+<td>the matrices whose determinant is a unit of $R$</td>
+<td>yes, already for $n = 2$</td>
+<td>only $0$ and $M_n(k)$ when $k$ is a field; simple</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$M_n(D)$, $D$ a division ring</td>
+<td>the invertible matrices $\mathrm{GL}_n(D)$</td>
+<td>yes</td>
+<td>only $0$ and $M_n(D)$; simple</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$k[G]$, $G$ finite</td>
+<td>contains $k^\times G$</td>
+<td>yes as soon as $\lvert G \rvert \geq 2$</td>
+<td>governed by the representations of $G$</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$k[G]$, $G$ infinite</td>
+<td>contains $k^\times G$</td>
+<td>yes unless $k[G]$ is a domain</td>
+<td>not Artinian, Noetherian only for special $G$</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$k[G]$ for $G$ torsion-free and $k$ a domain</td>
+<td>contains $k^\times G$</td>
+<td>none</td>
+<td>—</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+<tr>
+<td>$A_1(k) = k\langle x, y\rangle/(yx - xy - 1)$</td>
+<td>the nonzero constants $k^{\times}$</td>
+<td>none</td>
+<td>a domain; the ideal structure is one-sided</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>$R\langle x_1, \dots, x_n\rangle$</td>
+<td>the units of $R$</td>
+<td>none</td>
+<td>a domain when $R$ is; the one-sided ideals differ</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$T(V)$, the tensor algebra</td>
+<td>the units of $R$ when $V$ is free of rank $\geq 1$</td>
+<td>none when $R$ is a domain and $V$ is free</td>
+<td>$\mathbb{Z}$-graded, with the universal property of the free algebra</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$\Lambda(M)$, the exterior algebra</td>
+<td>—</td>
+<td>—</td>
+<td>associative and unital, graded-commutative, generated by $M$</td>
+<td><em>The Exterior Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}\ell(V, q)$, the Clifford algebra</td>
+<td>—</td>
+<td>—</td>
+<td>associative and unital, parity-graded, with $v^2 = q(v)$</td>
+<td><em>The Clifford Algebra</em></td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(M)$, the endomorphism ring</td>
+<td>the automorphisms $\operatorname{Aut}_A(M)$</td>
+<td>—</td>
+<td>generally non-commutative; $M_n(R) = \operatorname{End}_R(R^n)$</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The matrix ring $M_n(\mathbb{R})$, $n \geq 2$, is the standard ring that is neither commutative nor free of zero divisors; it appears again in <em>List of Non-Commutative Rings</em> and <em>List of Zero Divisors and Nilpotents</em>. The Weyl algebra $A_1(k)$ is the standard non-commutative domain whose ideal theory is asymmetric, and the free algebra $R\langle x_1, \dots, x_n\rangle$ is the free object from which the others are obtained by imposing relations.</p>
+<h2 id="rings-introduced-in-other-parts-of-the-corpus">Rings Introduced in Other Parts of the Corpus</h2>
+<p>The corpus meets rings outside its algebra articles as well; the property the corpus records for each, and the article that introduces it, are given here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>What the corpus records</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Boolean ring $B$</td>
+<td>every element satisfies $x^2 = x$; commutative of characteristic $2$, reduced and regular</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>the power set ring of a set</td>
+<td>symmetric difference and intersection; the standard Boolean ring</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>the cohomology ring $H^*(X; R)$</td>
+<td>associative and unital, and graded-commutative: $uv = (-1)^{\lvert u \rvert \lvert v \rvert} vu$</td>
+<td><em>Cup and Cap Products</em></td>
+</tr>
+<tr>
+<td>the representation ring $R_k(G)$</td>
+<td>the free abelian group on the isomorphism classes of finite-dimensional $k[G]$-modules, with $[V][W] = [V \otimes_k W]$ and unit the trivial module</td>
+<td><em>Character Theory</em></td>
+</tr>
+<tr>
+<td>the Grothendieck–Witt ring $GW(F)$</td>
+<td>the Grothendieck group of the isometry classes of non-degenerate quadratic forms under $\perp$, made a ring by the tensor product of forms</td>
+<td><em>The Witt Group and the Grothendieck–Witt Ring</em></td>
+</tr>
+<tr>
+<td>the Witt ring $W(F)$</td>
+<td>the quotient $GW(F)/\mathbb{Z}[H]$ by the hyperbolic plane, with the fundamental ideal $I = \ker \dim$</td>
+<td><em>The Witt Group and the Grothendieck–Witt Ring</em></td>
+</tr>
+<tr>
+<td>the ring of symmetric functions $\Lambda$</td>
+<td>the polynomial ring $K[e_1, e_2, \dots]$ in countably many variables</td>
+<td><em>Symmetric Functions and Schur Functions</em></td>
+</tr>
+<tr>
+<td>the graded ring of modular forms $M_*(\Gamma(1))$</td>
+<td>$\mathbb{C}[E_4, E_6]$, the two generators algebraically independent of weights $4$ and $6$</td>
+<td><em>Modular Forms</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the rings, and does not find, is recorded here with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a ring</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the octonions $\mathbb{O}$</td>
+<td>a division algebra, but multiplication is not associative, so $\mathbb{O}$ is not a ring</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>the sedenions $\mathbb{S}$</td>
+<td>a sixteen-dimensional real algebra with zero divisors, whose multiplication is not associative; neither a ring nor a division algebra</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>the zero ring $\{0\}$</td>
+<td>a ring, but excluded from every list by the corpus convention $1 \neq 0$</td>
+<td><em>Rings</em>, §2</td>
+</tr>
+<tr>
+<td>a Lie algebra $\mathfrak{g}$</td>
+<td>not a ring: the bracket is bilinear and antisymmetric but not associative</td>
+<td><em>Lie Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the rings of the corpus with their units, their zero divisors, their ideals and their chain conditions. The number systems $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, the split-complex numbers, the dual numbers, the quaternions, the split-biquaternions and the biquaternions open the list; the residue rings, the finite fields and the products follow; the polynomial, power series, localisation, quadratic-integer and Dedekind rings occupy the commutative middle; and the matrix, group, Weyl, free, tensor, exterior, Clifford and endomorphism rings close it. A final section gathers the rings the corpus meets outside its algebra articles: the Boolean rings, the cohomology and representation rings, the Grothendieck–Witt and Witt rings, the symmetric functions and the graded ring of modular forms. Beside the examples stand the non-examples — $\mathbb{Z}/6\mathbb{Z}$ and $\mathbb{Z}/4\mathbb{Z}$ among the finite rings, $\mathbb{Z}[\sqrt{-5}]$ and $\overline{\mathbb{Z}}$ among the commutative ones, $M_n(\mathbb{R})$ among the non-commutative ones — each with the failure named.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>The number systems</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$, $\mathbb{F}_q$</td>
+<td>Residue ring, prime field, finite field</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>Split-complex numbers and dual numbers</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$, $\mathbb{O}$</td>
+<td>Quaternions, split-biquaternions, biquaternions, octonions</td>
+</tr>
+<tr>
+<td>$R[x]$, $R[x_1,\dots,x_n]$, $R[[x]]$</td>
+<td>Polynomial and power series rings</td>
+</tr>
+<tr>
+<td>$k(x)$, $k((t))$</td>
+<td>Rational function field, Laurent series field</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>Localisation of $\mathbb{Z}$ at the prime $p$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-5}]$</td>
+<td>Quadratic integer rings</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_K$, $\overline{\mathbb{Z}}$</td>
+<td>Ring of integers of a number field, all algebraic integers</td>
+</tr>
+<tr>
+<td>$M_n(R)$</td>
+<td>Matrix ring</td>
+</tr>
+<tr>
+<td>$k[G]$</td>
+<td>Group algebra</td>
+</tr>
+<tr>
+<td>$A_1(k)$, $D_1(k)$</td>
+<td>The Weyl algebra $k\langle x,y\rangle/(yx-xy-1)$ and its division ring of fractions</td>
+</tr>
+<tr>
+<td>$R\langle x_1,\dots,x_n\rangle$, $T(V)$</td>
+<td>Free algebra and tensor algebra</td>
+</tr>
+<tr>
+<td>$\Lambda(M)$, $\mathbb{C}\ell(V,q)$</td>
+<td>Exterior algebra and Clifford algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(M)$</td>
+<td>Endomorphism ring of a module</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>A Boolean ring</td>
+</tr>
+<tr>
+<td>$H^*(X;R)$, $R_k(G)$, $GW(F)$, $W(F)$</td>
+<td>Cohomology ring, representation ring, Grothendieck–Witt ring, Witt ring</td>
+</tr>
+<tr>
+<td>$\Lambda$, $M_*(\Gamma(1))$</td>
+<td>Ring of symmetric functions, graded ring of modular forms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit-Yuen Lam, <em>Exercises in Classical Ring Theory</em> (Springer, 2nd ed. 2003), for a catalogue of the standard rings with their units, zero divisors and chain conditions.</li>
+<li>Louis H. Rowen, <em>Ring Theory</em>, Volume I (Academic Press, 1988), for the survey of commutative and non-commutative rings that the list follows.</li>
+<li>Irving Kaplansky, <em>Commutative Rings</em> (University of Chicago Press, revised ed. 1974), for the commutative rings of the list and their ideal theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

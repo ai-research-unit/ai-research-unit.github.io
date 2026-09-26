@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise: Spin Precession in a Magnetic Field — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="exercise-spin-precession-in-a-magnetic-field"><strong>Exercise: Spin Precession in a Magnetic Field</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
+<p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
+<p>The first exercise treated the Born rule and the measurement of spin along an arbitrary direction. This second exercise treats <strong>dynamics</strong>: the time evolution of a spin state under a time-independent Hamiltonian.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.</p>
+<h2 id="the-exercise">The Exercise</h2>
+<p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $x$-axis</strong>, and is then placed in a uniform magnetic field</p>
+<p>$$
+\mathbf{B} = B_0\,\hat{z}
+$$</p>
+<p>pointing along the $z$-axis. The magnetic moment of the particle is $\boldsymbol{\mu} = \gamma\mathbf{S}$, where $\gamma$ is the gyromagnetic ratio and $\mathbf{S}$ is the spin operator. What is the <strong>expectation value of the spin along the $x$-axis</strong> as a function of time?</p>
+<p>This is the classic <strong>Larmor precession</strong> exercise. It exercises the Hamiltonian, the evolution operator, and the time-dependent expectation value, in a setting where the answer is a simple harmonic function of time.</p>
+<h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
+<h3 id="step-1-the-state">Step 1: The state</h3>
+<p>The spin-up state along the $x$-axis is the eigenvalue-$+1$ eigenvector of the Pauli matrix $\sigma_1$:</p>
+<p>$$
+|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix}.
+$$</p>
+<h3 id="step-2-the-hamiltonian">Step 2: The Hamiltonian</h3>
+<p>The Hamiltonian of a magnetic moment $\boldsymbol{\mu} = \gamma\mathbf{S}$ in a magnetic field $\mathbf{B} = B_0\hat{z}$ is</p>
+<p>$$
+H = -\boldsymbol{\mu}\cdot\mathbf{B} = -\gamma B_0 S_z = -\frac{\hbar\omega_L}{2}\sigma_3,
+$$</p>
+<p>where</p>
+<p>$$
+\omega_L = \gamma B_0
+$$</p>
+<p>is the <strong>Larmor frequency</strong> and $S_z = \frac{\hbar}{2}\sigma_3$.</p>
+<h3 id="step-3-the-evolution">Step 3: The evolution</h3>
+<p>The evolution operator is</p>
+<p>$$
+U(t) = e^{-iHt/\hbar} = e^{\,i\omega_L t\,\sigma_3/2} = \begin{pmatrix} e^{\,i\omega_L t/2} & 0 \\ 0 & e^{-i\omega_L t/2} \end{pmatrix}.
+$$</p>
+<p>The evolved state is</p>
+<p>$$
+|\psi(t)\rangle = U(t)\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} e^{\,i\omega_L t/2} \\ e^{-i\omega_L t/2} \end{pmatrix}.
+$$</p>
+<h3 id="step-4-the-expectation-value">Step 4: The expectation value</h3>
+<p>The expectation value of $S_x = \frac{\hbar}{2}\sigma_1$ in the state $|\psi(t)\rangle$ is</p>
+<p>$$
+\langle S_x\rangle(t) = \langle\psi(t)|S_x|\psi(t)\rangle.
+$$</p>
+<p>Computing the matrix element,</p>
+<p>$$
+\langle\psi(t)|\sigma_1|\psi(t)\rangle = \frac{1}{2}\left(e^{-i\omega_L t/2} \cdot e^{-i\omega_L t/2} + e^{\,i\omega_L t/2} \cdot e^{\,i\omega_L t/2}\right) = \frac{1}{2}\left(e^{-i\omega_L t} + e^{\,i\omega_L t}\right) = \cos(\omega_L t).
+$$</p>
+<p>Therefore</p>
+<p>$$
+\langle S_x\rangle(t) = \frac{\hbar}{2}\cos(\omega_L t).
+$$</p>
+<h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
+<h3 id="step-1-the-state_1">Step 1: The state</h3>
+<p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
+<p>$$
+P(\hat{m}) = \tfrac{1}{2}\left(e_0 + i\hat{m}\right),
+$$</p>
+<p>where $\hat{m}$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\hat{m} = e_1$, giving</p>
+<p>$$
+P_x = \tfrac{1}{2}\left(e_0 + i e_1\right).
+$$</p>
+<h3 id="step-2-the-hamiltonian_1">Step 2: The Hamiltonian</h3>
+<p>The spin observable along $z$ is $\tilde{S}_z = \frac{\hbar}{2}\,i e_3$. The Hamiltonian is therefore the Hermitian element of $\mathbb{M}_+$</p>
+<p>$$
+\tilde{H} = -\gamma B_0 \tilde{S}_z = -\frac{\hbar\omega_L}{2}\,i e_3,
+$$</p>
+<p>with $\omega_L = \gamma B_0$.</p>
+<h3 id="step-3-the-evolution_1">Step 3: The evolution</h3>
+<p>The evolution operator is the unit-norm biquaternion</p>
+<p>$$
+\tilde{U}(t) = \exp\!\left(-i\tilde{H}t/\hbar\right) = \exp\!\left(-\frac{\omega_L t}{2}\,e_3\right) = \cos\!\left(\frac{\omega_L t}{2}\right)e_0 - \sin\!\left(\frac{\omega_L t}{2}\right)e_3,
+$$</p>
+<p>where we have used the identity $\exp(\theta\,e_3) = \cos\theta\,e_0 + \sin\theta\,e_3$, which follows from $e_3^2 = -e_0$, and set $\theta = -\omega_L t/2$.</p>
+<p>The evolved state is</p>
+<p>$$
+\tilde{\rho}(t) = \tilde{U}(t)\,P_x\,\tilde{U}(t)^\dagger.
+$$</p>
+<p>Computing the product, using $\tilde{U}(t)^\dagger = \bar{\tilde{U}}(t) = \cos(\omega_L t/2)\,e_0 + \sin(\omega_L t/2)\,e_3$ (since $\tilde{U}$ is a real quaternion), gives</p>
+<p>$$
+\tilde{\rho}(t) = \tfrac{1}{2}\left(e_0 + i\cos(\omega_L t)\,e_1 - i\sin(\omega_L t)\,e_2\right).
+$$</p>
+<h3 id="step-4-the-expectation-value_1">Step 4: The expectation value</h3>
+<p>The expectation value of the spin along $x$ is given by the trace formula</p>
+<p>$$
+\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right),
+$$</p>
+<p>with $\tilde{S}_x = \frac{\hbar}{2}\,i e_1$. Computing the product</p>
+<p>$$
+\tilde{\rho}(t)\,\tilde{S}_x = \frac{\hbar}{4}\left(i e_1 + \cos(\omega_L t)\,e_0 - \sin(\omega_L t)\,e_3\right),
+$$</p>
+<p>the scalar part is $\frac{\hbar}{4}\cos(\omega_L t)$. Applying the trace formula,</p>
+<p>$$
+\langle\tilde{S}_x\rangle(t) = \frac{\hbar}{2}\cos(\omega_L t).
+$$</p>
+<h2 id="limiting-cases">Limiting Cases</h2>
+<p>Both formulations give the same result, and both give the same limits:</p>
+<ul>
+<li><strong>$t = 0$</strong> (initial time): $\langle S_x\rangle = \hbar/2$, as expected since the state is spin-up along $x$.</li>
+<li><strong>$\omega_L t = \pi/2$</strong> (quarter period): $\langle S_x\rangle = 0$.</li>
+<li><strong>$\omega_L t = \pi$</strong> (half period): $\langle S_x\rangle = -\hbar/2$, the state has precessed to spin-down along $x$.</li>
+<li><strong>$\omega_L t = 2\pi$</strong> (full period): $\langle S_x\rangle = \hbar/2$, the state has returned to its initial orientation.</li>
+</ul>
+<p>The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expected for Larmor precession.</p>
+<h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
+<p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{M}_+$.</strong> The observable $\tilde{S}_z = \frac{\hbar}{2}i e_3$ is an element of $\mathbb{M}_+$, and the Hamiltonian $\tilde{H} = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
+<p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde{H}$ is proportional to $i e_3$, and the exponential of $e_3$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
+<p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^\dagger$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^\dagger = e_0$ is preserved by the exponential form.</p>
+<p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_0 + i\mathbf{r}(t))$ with</p>
+<p>$$
+\mathbf{r}(t) = \cos(\omega_L t)\,e_1 - \sin(\omega_L t)\,e_2.
+$$</p>
+<p>This is a <strong>unit vector rotating</strong> in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.</p>
+<p><strong>5. The expectation value is a trace formula.</strong> As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is</p>
+<p>$$
+\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right),
+$$</p>
+<p>the same trace formula that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same trace pairing on $\mathbb{M}_+$.</p>
+<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ corresponds exactly to the standard matrix evolution $U(t) = e^{-iHt/\hbar}$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
+<h2 id="comparison-with-exercise-measuring-spin-along-an-arbitrary-direction">Comparison with Exercise: Measuring Spin Along an Arbitrary Direction</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Measuring Spin Along an Arbitrary Direction</th>
+<th>Spin Precession in a Magnetic Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical process</td>
+<td>Measurement</td>
+<td>Time evolution</td>
+</tr>
+<tr>
+<td>Structural object</td>
+<td>Idempotent (state) + idempotent (projector)</td>
+<td>Idempotent (state) + unitary (evolution)</td>
+</tr>
+<tr>
+<td>Rule used</td>
+<td>Trace formula (Born rule)</td>
+<td>Trace formula (expectation value)</td>
+</tr>
+<tr>
+<td>Result</td>
+<td>$\cos^2(\theta/2)$</td>
+<td>$(\hbar/2)\cos(\omega_L t)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>These two exercises illustrate the two fundamental operations of the quantum formalism: <strong>measurement</strong> (Exercise: Measuring Spin Along an Arbitrary Direction) and <strong>evolution</strong> (Exercise: Spin Precession in a Magnetic Field). In both cases, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$.</p>
+<h2 id="summary">Summary</h2>
+<p>We have solved a second exercise in quantum mechanics — the Larmor precession of a spin in a magnetic field — in two parallel presentations.</p>
+<p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle S_x\rangle(t) = \frac{\hbar}{2}\cos(\omega_L t)$.</p>
+<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotent $P_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t)$, the evolved state $\tilde{\rho}(t)$, and the trace formula, giving the same result.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the trace pairing.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (states, observables, Hamiltonians)</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_\mathbb{B}$</td>
+<td>Quaternion subspace (home of the real rotation rotors)</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$</td>
+<td>Pauli matrices</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>Gyromagnetic ratio</td>
+</tr>
+<tr>
+<td>$\omega_L = \gamma B_0$</td>
+<td>Larmor frequency</td>
+</tr>
+<tr>
+<td>$P_x = \tfrac{1}{2}(e_0 + ie_1)$</td>
+<td>Spin-up state along $x$</td>
+</tr>
+<tr>
+<td>$\tilde{S}_x = \tfrac{\hbar}{2} ie_1$</td>
+<td>Spin observable along $x$</td>
+</tr>
+<tr>
+<td>$\tilde{H} = -\tfrac{\hbar\omega_L}{2} ie_3$</td>
+<td>Hamiltonian</td>
+</tr>
+<tr>
+<td>$\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$</td>
+<td>Evolution biquaternion</td>
+</tr>
+<tr>
+<td>$\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^\dagger$</td>
+<td>Evolved state</td>
+</tr>
+<tr>
+<td>$\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}(\tilde{\rho}(t)\tilde{S}_x)$</td>
+<td>Expectation value</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford, 1930), for the standard formulation of spin dynamics.</li>
+<li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the standard textbook treatment of Larmor precession.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the Bloch sphere and the evolution of qubits.</li>
+<li>The companion articles of this series: <em>Quantum Mechanics in Biquaternionic Form</em>, <em>Spin-1/2 Quantum Mechanics in Biquaternionic Form</em>, and <em>Exercise: Measuring Spin Along an Arbitrary Direction</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

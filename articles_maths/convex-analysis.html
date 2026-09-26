@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convex Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="convex-analysis"><strong>Convex Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Convex analysis is the analysis of convex functions as objects in their own right: the calculus of their directional derivatives, their minimisation, their conjugates, and the dual descriptions of convex sets by the half-spaces that contain them. It exists because a convex function is differentiable almost everywhere but not everywhere — the absolute value at the origin, the distance to a closed convex set at the points of the set, the maximum of a family of affine functions — and because at the points where it fails to be differentiable the useful object is not a derivative but a set of them, the <strong>subdifferential</strong>. This one substitution, derivative by set of supporting slopes, is what makes the theory work: a minimum of a convex function is exactly a point where the subdifferential contains the origin, the Fenchel conjugate is the function whose epigraph is the set of affine functions below $f$, and the duality theory of convex programmes is the statement that the subdifferential of a sum is the sum of the subdifferentials.</p>
+<p>The article is written in $\mathbb{R}^n$. That is the setting in which the theory is used by the neighbouring articles of this Part — the direct method of the variational analysis, the capacity theory of the potential theory, the perimeter and the currents of the geometric measure theory — and it is also the setting in which the results hold without qualification, because every finite-dimensional normed space is complete and locally compact. The infinite-dimensional theory of convex functions on a locally convex space, in which the separation theorems become Hahn–Banach statements and the qualification conditions become genuinely necessary, is developed,and and belonging to later categories of this Part; where a result here has a general form, the general form is cited as standard and the finite-dimensional case is the one used.</p>
+<p>The sections run as follows. Convex sets, their hulls, their relative interiors, their extreme points and the projection onto them; the separation theorems, in the form of the supporting hyperplane theorem, the strict separation theorem and the lemma of Farkas, which are the analytic content of the duality of convex sets. Convex functions, their epigraphs, their continuity, the Lipschitz behaviour in the interior of the domain, and the two derivative objects: the directional derivative, which always exists as a limit in $[-\infty,+\infty]$, and the subdifferential, which is the set of slopes of the affine functions touching the graph at the point. The Fenchel conjugate is then introduced and the biconjugacy theorem proved, the calculus of the conjugate — infimal convolution, the sum, the composition with an affine map — is recorded, and the Moreau envelope is introduced as the regularisation that makes every closed convex function smooth. Finally the duality theory: Fenchel's duality theorem, the Lagrangian and the Karush–Kuhn–Tucker conditions, the minimax theorem, and the existence and uniqueness of minimisers by the direct method. The examples throughout are the elementary ones — the absolute value, the maximum of linear functions, the exponential, the indicator of a convex set, the entropy — because these are the functions to which the theory is applied.</p>
+<h2 id="convex-sets">Convex Sets</h2>
+<h3 id="hulls-cones-and-extremal-structure">Hulls, Cones and Extremal Structure</h3>
+<p><strong>Definition.</strong> A set $C\subseteq\mathbb{R}^n$ is <strong>convex</strong> if $(1-t)x+ty\in C$ for all $x,y\in C$ and $t\in[0,1]$. The <strong>convex hull</strong> $\operatorname{conv}(A)$ is the smallest convex set containing $A$, equivalently the set of finite convex combinations of points of $A$; the <strong>conical hull</strong> is the set of finite nonnegative combinations; and the <strong>affine hull</strong> $\operatorname{aff}(A)$ is the set of finite combinations whose coefficients sum to $1$. The <strong>convex cone</strong> generated by $A$ is the conical hull of $\operatorname{conv}(A)$, which is the smallest convex cone containing $A$.</p>
+<p><strong>Theorem (Carathéodory).</strong> Every point of the convex hull of a set $A\subseteq\mathbb{R}^n$ is a convex combination of at most $n+1$ points of $A$; consequently $\operatorname{conv}(A)$ is compact when $A$ is compact, and $\operatorname{conv}(A)$ is closed when $A$ is closed and bounded.</p>
+<p><strong>Proof.</strong> A point of the hull is a convex combination of finitely many points, say of $k$; if $k>n+1$ the differences of the points from one of them are linearly dependent, and the dependence is used to express the combination with one coefficient reduced to zero, decreasing $k$; repeating gives $k\leq n+1$. For compact $A$, the map from the compact set of convex weights on $(n+1)$-tuples of points of $A$ onto the hull is continuous, so the hull is compact, and closedness in the bounded case follows by the same argument applied to a convergent sequence. $\square$</p>
+<p><strong>Definition.</strong> For a convex set $C$ the <strong>recession cone</strong> is $\operatorname{rec}(C) = \{d : x+td\in C\ \text{for all } x\in C, t\geq0\}$, the <strong>polar</strong> of a cone $K$ is $K^\circ = \{y : \langle x,y\rangle\leq0\ \text{for all } x\in K\}$, a point $x\in C$ is <strong>extreme</strong> if it is not the midpoint of two distinct points of $C$, and the <strong>relative interior</strong> $\operatorname{ri}(C)$ is the interior of $C$ in $\operatorname{aff}(C)$.</p>
+<p><strong>Theorem.</strong> Let $C_1,C_2\subseteq\mathbb{R}^n$ be convex. Then $\operatorname{ri}(C_1)+\operatorname{ri}(C_2) = \operatorname{ri}(C_1+C_2)$, the relative interior is nonempty exactly for nonempty convex sets, $C_1$ is a cone if and only if it is convex and closed under multiplication by nonnegative scalars, and a nonempty compact convex set is the convex hull of its extreme points.</p>
+<p><strong>Proof sketch.</strong> The algebra of the relative interior is proved by moving a small piece of one set onto the other, using the fact that a point of $\operatorname{ri}(C)$ may be replaced by a small perturbation with a coefficient tending to $0$; the nonemptiness of $\operatorname{ri}(C)$ for nonempty convex $C$ is the observation that a maximal affinely independent subset of $C$ spans $\operatorname{aff}(C)$, so that $C$ has nonempty interior in that affine hull; and the last statement is Minkowski's theorem, proved by maximising a linear functional over $C$ to obtain a supporting point and iterating in the affine hull, or by induction on the dimension. $\square$</p>
+<p><strong>Theorem (Minkowski–Weyl, in outline).</strong> A set is a polyhedron, the intersection of finitely many closed half-spaces, if and only if it is the sum of a finitely generated cone and a polytope, the convex hull of finitely many points; and every nonempty polyhedron has finitely many extreme points and finitely many extreme rays, so a linear functional on a polyhedron is either unbounded above or attains its maximum at an extreme point.</p>
+<p><strong>Proof sketch.</strong> The nontrivial direction is that a polyhedron is finitely generated; it is proved by induction on the number of inequalities, with the extreme rays of the removal of one half-space providing the generators. The finiteness statements follow from the description by generators and the linear-programming theory of the faces. $\square$</p>
+<h3 id="the-projection-and-the-separation-theorems">The Projection and the Separation Theorems</h3>
+<p><strong>Theorem (projection).</strong> Let $C\subseteq\mathbb{R}^n$ be nonempty, closed and convex. Every $x\in\mathbb{R}^n$ has a unique nearest point $P_Cx\in C$, characterised by $\langle x-P_Cx, z-P_Cx\rangle\leq0$ for all $z\in C$; and $P_C$ is nonexpansive, $\lvert P_Cx-P_Cy\rvert\leq\lvert x-y\rvert$.</p>
+<p><strong>Proof.</strong> Minimise the strictly convex function $z\mapsto\lvert x-z\rvert^2$ over the nonempty closed set $C$: a minimising sequence is bounded, hence has a convergent subsequence by closedness and local compactness, so a minimiser exists, and strict convexity gives uniqueness; the characterisation is the one-sided condition of the minimiser. The nonexpansiveness follows by applying the characterisation at two points and adding the two inequalities. $\square$</p>
+<p><strong>Theorem (supporting hyperplane).</strong> Let $C\subseteq\mathbb{R}^n$ be convex and nonempty, and let $x_0\in C$ be a relative boundary point of $C$, that is $x_0\notin\operatorname{ri}(C)$; then there is a nonzero $y$ with $\langle y,x\rangle\leq\langle y,x_0\rangle$ for all $x\in C$. Equivalently, every nonempty convex set is the intersection of the closed half-spaces containing it.</p>
+<p><strong>Proof.</strong> If $x_0\notin\operatorname{ri}(C)$, work in $\operatorname{aff}(C)$ and reduce to the case in which $C$ has nonempty interior in $\mathbb{R}^n$ and $x_0$ lies on its boundary. Then $x_0 + t(x_0-z)\notin C$ for every $z\in\operatorname{int}C$ and every $t>0$, since otherwise the convex combination expressing $x_0$ from that point and $z$ would put $x_0$ in the interior; so $x_0$ is the limit of points outside $\overline{C}$, and the projection of those points onto $\overline{C}$ gives a sequence of separating vectors by the projection theorem, whose limit is the required supporting vector. The equivalence follows because a point not in the closure of a convex set is strictly separated from it by a hyperplane. $\square$</p>
+<p><strong>Theorem (strict separation).</strong> If $C_1,C_2\subseteq\mathbb{R}^n$ are disjoint nonempty convex sets with $C_1$ closed and $C_2$ compact, there is $y\neq0$ and $\gamma\in\mathbb{R}$ with $\langle y,x\rangle<\gamma<\langle y,z\rangle$ for all $x\in C_1$, $z\in C_2$. If both are merely convex and disjoint with one relatively open, the separation is non-strict; and if both are closed and convex the strict separation may fail: the epigraph $\{u_2\geq e^{u_1}\}$ and the half-plane $\{u_2\leq0\}$ are disjoint closed convex sets at distance $0$, and no hyperplane separates them strictly.</p>
+<p><strong>Proof sketch.</strong> Translate so that one set contains the origin and take the difference $C_2-C_1$, a compact convex set not containing the origin because the sets are disjoint; the nearest point of this difference set to the origin is nonzero, and the perpendicular bisector through it separates the two sets by a computation with the inner product. In the absence of compactness the distance may be $0$ and the projection gives only a non-strict inequality, as the example shows. $\square$</p>
+<p><strong>Lemma (Farkas).</strong> Let $A$ be a real $m\times n$ matrix and $b\in\mathbb{R}^m$. Exactly one of the following holds: there is $x\geq0$ with $Ax = b$; or there is $y$ with $A^{\mathsf T}y\leq0$ and $\langle b,y\rangle>0$. Equivalently, the cone generated by the columns of $A$ is the polar of the cone $\{y : A^{\mathsf T}y\leq0\}$.</p>
+<p><strong>Proof sketch.</strong> The two alternatives are mutually exclusive by a direct computation. For the dichotomy, take the closed convex cone generated by the columns of $A$ and separate it from $b$ by a supporting hyperplane if $b$ is not in it; the separating functional is the $y$ of the second alternative. $\square$</p>
+<p><strong>Remark (the alternatives).</strong> Farkas' lemma is the first of a family: Gordan's theorem, that either $Ax>0$ is solvable or there is a nonzero $y\geq0$ with $A^{\mathsf T}y = 0$; the theorem of the alternative for linear inequalities; and, on the optimisation side, the duality theorem of linear programming. Each is a separation theorem in disguise, and each is the reason that a convex feasibility problem has a certificate of infeasibility.</p>
+<h2 id="convex-functions">Convex Functions</h2>
+<h3 id="epigraphs-continuity-and-the-directional-derivative">Epigraphs, Continuity and the Directional Derivative</h3>
+<p><strong>Definition.</strong> A function $f:\mathbb{R}^n\to(-\infty,+\infty]$ is <strong>convex</strong> if $f((1-t)x+ty)\leq(1-t)f(x)+tf(y)$ for all $x,y$ and $t\in[0,1]$; its <strong>domain</strong> $\operatorname{dom}f = \{f<+\infty\}$ is then convex, $f$ is <strong>proper</strong> if the domain is nonempty, and the <strong>epigraph</strong> $\operatorname{epi}f = \{(x,\alpha) : f(x)\leq\alpha\}\subseteq\mathbb{R}^{n+1}$ is convex exactly when $f$ is convex. A convex function is <strong>closed</strong> if its epigraph is closed, equivalently if $f$ is lower semicontinuous.</p>
+<p><strong>Theorem.</strong> A proper convex function is continuous on the interior of its domain, is locally Lipschitz there, and satisfies for every $x$ in the interior of the domain and every direction $d$
+$$
+f'(x;d) = \lim_{t\downarrow0}\frac{f(x+td)-f(x)}{t} = \inf_{t>0}\frac{f(x+td)-f(x)}{t},
+$$
+the directional derivative exists and is finite for every $d$, is positively homogeneous and convex in $d$, and the one-sided difference quotients are monotone in $t$; when $f$ is differentiable at $x$ one has $f'(x;d) = \langle\nabla f(x),d\rangle$.</p>
+<p><strong>Proof sketch.</strong> The monotonicity of the difference quotients is the three-point inequality of convexity; boundedness above on a simplex in the interior gives, by convexity, a local Lipschitz bound on a smaller simplex, whence continuity; the limit of the monotone quotients is the infimum, and its convexity and homogeneity in $d$ follow from those of $f$. The differentiability statement is the definition of the gradient. $\square$</p>
+<p><strong>Theorem (maximum principle).</strong> A convex function on a compact convex set attains its maximum on the boundary, and in the case of a polytope at a vertex; more generally, an upper semicontinuous convex function on a compact convex set attains its maximum at an extreme point. A convex function that attains its minimum on a closed convex set does so on a convex subset of the domain, and its set of minimisers is convex, being a sublevel set intersected with the domain.</p>
+<p><strong>Proof sketch.</strong> If $x$ is a non-extreme point, $x = (1-t)y+tz$ with $y\neq z$ and $f(x)\leq(1-t)f(y)+tf(z)$, so that one of $f(y),f(z)$ is at least $f(x)$; iterating and using compactness one reaches an extreme point without decreasing the value. The minimiser set is convex because the sublevel sets are. $\square$</p>
+<p><strong>Remark (convexity criteria).</strong> A $C^2$ function is convex exactly when its Hessian is positive semidefinite at every point; a function is convex exactly when its restriction to every line is convex; a locally bounded above function on an open convex set satisfying $f((x+y)/2)\leq(f(x)+f(y))/2$ is convex and hence continuous, which is the classical theorem of Jensen's inequality and the reason that mere midpoint convexity suffices in the presence of any regularity. The operations that preserve convexity are the ones used constantly below: the sum, the maximum of finitely many convex functions, the supremum of an arbitrary family, the composition with an affine map, the partial minimisation over a convex set of variables, the infimal convolution, and the composition with an increasing convex function of one variable.</p>
+<h3 id="the-subdifferential">The Subdifferential</h3>
+<p><strong>Definition.</strong> For a proper convex $f$ and a point $x$ with $f(x)$ finite, the <strong>subdifferential</strong> is
+$$
+\partial f(x) = \{\,y\in\mathbb{R}^n : f(z)\geq f(x)+\langle y,z-x\rangle\ \text{for all } z\,\},
+$$
+a closed convex set, possibly empty and possibly unbounded; a $y\in\partial f(x)$ is a <strong>subgradient</strong>. The <strong>normal cone</strong> to a convex set $C$ at $x\in C$ is $N_C(x) = \{y : \langle y,z-x\rangle\leq0\ \text{for all } z\in C\}$.</p>
+<p><strong>Theorem.</strong> $\partial f(x)$ is nonempty for every $x$ in the relative interior of $\operatorname{dom}f$, and may be empty at the boundary points; $\partial f(x)$ is nonempty exactly when $f$ has an affine minorant that touches the graph at $x$. Moreover $\partial f(x) = \{\nabla f(x)\}$ exactly when $f$ is differentiable at $x$; the directional derivative satisfies $f'(x;d) = \sup\{\langle y,d\rangle : y\in\partial f(x)\}$ for every $d$; and $x$ minimises $f$ if and only if $0\in\partial f(x)$. The map $x\mapsto\partial f(x)$ is monotone: $\langle y_1-y_2,x_1-x_2\rangle\geq0$ for $y_i\in\partial f(x_i)$, and maximal monotone when $f$ is closed and proper, by the theorem of Minty and Rockafellar.</p>
+<p><strong>Proof sketch.</strong> The existence in the relative interior is the supporting hyperplane theorem applied to the epigraph at the point $(x,f(x))$, which lies on the boundary of the epigraph and is not in its relative interior; the characterisation of differentiability uses that the subdifferential is a singleton exactly when the differences $f(x+td)-f(x)$ are linear to first order in $t$ for every $d$; the formula for the directional derivative is the duality of the support function of $\partial f(x)$ with the convex function $f'(x;\cdot)$; the minimisation criterion is the definition; and monotonicity is the addition of the two defining inequalities. Maximality is the theorem that the subdifferential of a closed proper convex function is not properly contained in any other monotone operator, proved by the resolvent construction $x\mapsto(I+\partial f)^{-1}(x)$ and its single-valuedness and full domain. $\square$</p>
+<p><strong>Example.</strong> For $f(x) = \lvert x\rvert$ on $\mathbb{R}$ one has $\partial f(x) = \{\operatorname{sgn}x\}$ for $x\neq0$ and $\partial f(0) = [-1,1]$, so that $0\in\partial f(0)$ and the origin is the unique minimiser. For the indicator $\delta_C$ of a closed convex set, $\partial\delta_C(x) = N_C(x)$, the normal cone; at a point of the boundary of a smooth convex body this is the ray spanned by the outward normal. For $f(x) = \max_i\langle a_i,x\rangle+b_i$ the subdifferential at $x$ is the convex hull of the active gradients: $\operatorname{conv}\{a_i : \langle a_i,x\rangle+b_i = f(x)\}$; and for the Euclidean norm $\lvert x\rvert$ on $\mathbb{R}^n$ the subdifferential at the origin is the closed unit ball, so that the origin minimises $\lvert x\rvert$ — as it should, and as the formula $\partial f(0) = \{y : \lvert y\rvert\leq1\}\ni0$ shows.</p>
+<h3 id="the-fenchel-conjugate">The Fenchel Conjugate</h3>
+<p><strong>Definition.</strong> The <strong>Fenchel conjugate</strong> of $f:\mathbb{R}^n\to(-\infty,+\infty]$ is $f^*(y) = \sup_x\{\langle x,y\rangle-f(x)\}$, a closed convex function with values in $(-\infty,+\infty]$.</p>
+<p><strong>Theorem (Fenchel–Young; biconjugacy).</strong> For all $x,y$ one has $\langle x,y\rangle\leq f(x)+f^*(y)$, with equality exactly when $y\in\partial f(x)$; the conjugate is order-reversing and involutive in the sense that $f^{**} = \operatorname{cl}f$, the closed convex hull of $f$, whenever $f$ is convex and proper, so that $f = f^{**}$ exactly when $f$ is closed, convex and proper. The conjugate of the indicator of a nonempty closed convex set is its support function, $\delta_C^* = \sigma_C$, and the conjugate of the support function is the indicator.</p>
+<p><strong>Proof sketch.</strong> The inequality is the definition; equality means that $x$ maximises $\langle\cdot,y\rangle-f$, which is the subgradient condition. For biconjugacy, $f^{**}\leq f$ is the inequality, and the converse is the separation theorem applied to the epigraph of $\operatorname{cl}f$ and a point outside it: a nonvertical supporting hyperplane at such a point gives an affine minorant of $f$ falsifying the inequality $f^{**}(x_0)>f(x_0)$. $\square$</p>
+<p><strong>Theorem (calculus).</strong> Let $f$ and $g$ be closed proper convex. Then the conjugate of the sum is the infimal convolution of the conjugates, $(f+g)^* = f^*\,\square\,g^*$ in the sense that $(f+g)^*(y) = \inf\{f^*(y_1)+g^*(y_2) : y_1+y_2 = y\}$, and the conjugate of the infimal convolution is the sum, under the qualification that the domains have a common point of relative interiors; the conjugate of $f(Ax)$ for a surjective linear map $A$ is $(f\circ A)^*(y) = f^*(\eta)$ for any $\eta$ with $A^{\mathsf T}\eta = y$, a value independent of the choice of $\eta$ because $A^{\mathsf T}$ has trivial kernel; and the conjugate of the sum of independent functions, $f\oplus g(x,z) = f(x)+g(z)$, is $f^*\oplus g^*$. When $f$ is $C^1$ with $\nabla f$ one-to-one, $f^*$ is $C^1$ and $\nabla f^* = (\nabla f)^{-1}$ on the range.</p>
+<p><strong>Proof sketch.</strong> The infimal convolution formula is the interchange of the two suprema in $\sup_{x}\{\langle x,y\rangle-f(x)-g(x)\} = \sup_x\inf_{y_1+y_2 = y}\{\langle x,y_1\rangle-f(x)+\langle x,y_2\rangle-g(x)\}$ together with the minimax interchange justified by the qualification; the affine case is the change of variable $u = Ax$; and the differentiability statement is the equality case of Fenchel–Young. $\square$</p>
+<p><strong>Example.</strong> For $f(x) = \frac12\lvert x\rvert^2$ one has $f^* = f$; for $f(x) = \lvert x\rvert$ the conjugate is the indicator of $[-1,1]$; for $f(x) = e^x$ on $\mathbb{R}$ the conjugate is $y\log y-y$ on $y>0$ and $+\infty$ otherwise; and for $f(x) = -\log x$ on $x>0$ the conjugate on $y<0$ is $-1-\log(-y)$. These have been checked by direct maximisation, and each illustrates the rule that steep growth of $f$ means a small domain of $f^*$.</p>
+<p><strong>Definition.</strong> For $\lambda>0$ the <strong>Moreau envelope</strong> of $f$ is $e_\lambda f(x) = \inf_z\{f(z)+\frac{1}{2\lambda}\lvert x-z\rvert^2\}$ and the <strong>proximal map</strong> is the (single-valued, by strict convexity) minimiser $\operatorname{prox}_{\lambda f}(x)$.</p>
+<p><strong>Theorem.</strong> $e_\lambda f$ is convex and finite everywhere when $f$ is closed proper convex; it is differentiable everywhere with $\nabla e_\lambda f(x) = \frac1\lambda(x-\operatorname{prox}_{\lambda f}(x))$; it is a minorant of $f$ with $e_\lambda f\uparrow f$ as $\lambda\downarrow0$; and its conjugate is $f^*+\frac{\lambda}{2}\lvert\cdot\rvert^2$.</p>
+<p><strong>Proof sketch.</strong> The minimiser is unique by strict convexity and finite because $f$ is bounded below by an affine function; the optimality condition for the inner minimisation is $0\in\partial f(z)+\frac1\lambda(z-x)$, which identifies the gradient of the envelope; the convergence as $\lambda\downarrow0$ is by the direct computation of the infimum against a minimiser of $f$; and the conjugate identity follows from the composition rule applied to the infimal convolution. $\square$</p>
+<p><strong>Example (the Huber function).</strong> For $f = \lvert\cdot\rvert$ on $\mathbb{R}$ the envelope with parameter $\lambda$ is
+$$
+e_\lambda\lvert\cdot\rvert(x) = \begin{cases}\dfrac{x^2}{2\lambda},&\lvert x\rvert\leq\lambda,\\[2mm] \lvert x\rvert-\dfrac{\lambda}{2},&\lvert x\rvert\geq\lambda,\end{cases}
+$$
+the <strong>Huber function</strong>, and the proximal map is the soft thresholding $\operatorname{prox}_{\lambda\lvert\cdot\rvert}(x) = \operatorname{sgn}(x)\max(\lvert x\rvert-\lambda,0)$. The values at $x = 0.4$, $1$, $2$, $3.5$ with $\lambda = 1$ are $0.08$, $0.5$, $1.5$, $3.0$, in agreement with the displayed formula and with the direct minimisation of the envelope.</p>
+<h2 id="duality-and-variational-methods">Duality and Variational Methods</h2>
+<h3 id="fenchel-duality-and-the-lagrangian">Fenchel Duality and the Lagrangian</h3>
+<p><strong>Theorem (Fenchel duality).</strong> Let $f,g$ be closed proper convex functions on $\mathbb{R}^n$ and let $A$ be a linear map. If the qualification $0\in\operatorname{ri}(\operatorname{dom}g-A\operatorname{dom}f)$ holds, then
+$$
+\inf_x\{f(x)+g(Ax)\} = \sup_y\{-f^*(-A^{\mathsf T}y)-g^*(y)\},
+$$
+and the supremum is attained.</p>
+<p><strong>Proof sketch.</strong> The left side is the value at $0$ of the infimal convolution of $f$ with the function $x\mapsto g(Ax)$; the conjugate of that function is computed from the rule for a linear substitution, and the biconjugacy theorem applied to the closed convex function so obtained gives the right side, the qualification being exactly the condition under which the infimal convolution is closed and the conjugate of the sum is the infimal convolution of the conjugates. $\square$</p>
+<p><strong>Definition.</strong> For the convex programme
+$$
+\text{minimise } f_0(x) \quad\text{subject to}\quad f_i(x)\leq0\ (i = 1,\dots,m),\quad Ax = b,
+$$
+with $f_i$ closed proper convex, the <strong>Lagrangian</strong> is $L(x,\lambda,\mu) = f_0(x)+\sum_i\lambda_if_i(x)+\langle\mu,Ax-b\rangle$ for $\lambda\geq0$, and the <strong>dual problem</strong> is to maximise $q(\lambda,\mu) = \inf_xL(x,\lambda,\mu)$ over $\lambda\geq0$.</p>
+<p><strong>Theorem (Karush–Kuhn–Tucker; Slater).</strong> If the programme is feasible and Slater's condition holds — there is a feasible $x$ with $f_i(x)<0$ for all $i$ — then there is no duality gap, the dual optimum is attained, and $x^*$ is optimal exactly when there are $(\lambda^*,\mu^*)$ with $\lambda^*\geq0$, complementary slackness $\lambda_i^*f_i(x^*) = 0$, and the stationarity condition
+$$
+0\in\partial f_0(x^*)+\sum_i\lambda_i^*\partial f_i(x^*)+A^{\mathsf T}\mu^* .
+$$
+Conversely, if $x^*$ is feasible and such multipliers exist, then $x^*$ is optimal.</p>
+<p><strong>Proof sketch.</strong> The programme is rewritten as $\min\lvert f_0+\delta_{\{f_i\leq0\}}+\delta_{\{Ax = b\}}\rvert$ and the Fenchel duality theorem is applied with the qualification provided by Slater's condition, which supplies the relative interior point required; the stationarity condition is the subdifferential sum rule, valid under the same qualification; the converse is the direct computation of the Lagrangian inequality. $\square$</p>
+<p><strong>Theorem (minimax).</strong> Let $K\subseteq\mathbb{R}^n$ and $L\subseteq\mathbb{R}^m$ be nonempty compact convex sets, and let $\phi:K\times L\to\mathbb{R}$ be continuous, convex in its first variable and concave in its second. Then
+$$
+\min_{x\in K}\max_{y\in L}\phi(x,y) = \max_{y\in L}\min_{x\in K}\phi(x,y).
+$$
+<strong>Proof sketch.</strong> That the left side is at least the right is the weak duality; for equality one uses the convexity and concavity to reduce to the minimisation of a convex function on $K$ and applies the supporting hyperplane theorem in the product $K\times L$, or invokes the general minimax theorem of Sion, of which this is the compact case, proved by the same separation. $\square$</p>
+<h3 id="the-direct-method-and-the-existence-of-minimisers">The Direct Method and the Existence of Minimisers</h3>
+<p><strong>Theorem (the direct method).</strong> Let $f:\mathbb{R}^n\to(-\infty,+\infty]$ be proper, closed and convex, and let $C\subseteq\mathbb{R}^n$ be nonempty and closed. If $f$ is <strong>coercive</strong>, $f(x)\to+\infty$ as $\lvert x\rvert\to\infty$, then $f$ attains its minimum on $C$, and the set of minimisers is a nonempty closed convex set; if in addition $f$ is strictly convex the minimiser is unique.</p>
+<p><strong>Proof.</strong> A minimising sequence is bounded by coercivity and lies in the closed set $C$; a subsequence converges by local compactness of $\mathbb{R}^n$, and lower semicontinuity passes the inequality to the limit; the minimiser set is the sublevel set at the minimal value intersected with $C$, hence closed and convex, and strict convexity makes it a point. $\square$</p>
+<p><strong>Theorem (the variational characterisation).</strong> For closed proper convex $f$ and any $\lambda>0$, the minimisers of $f$, the fixed points of $\operatorname{prox}_{\lambda f}$, and the zeros of $\partial f$ all coincide; and the <strong>proximal point iteration</strong> $x_{k+1} = \operatorname{prox}_{\lambda f}(x_k)$ converges to a minimiser whenever one exists. The iteration is the discrete analogue of the gradient flow of $f$ and is the basic algorithm of convex optimisation.</p>
+<p><strong>Proof sketch.</strong> The optimality condition $0\in\partial f(x)$ for the inner minimisation gives the equality of the three sets; the convergence of the iteration is proved by a monotonicity computation with the subdifferential inequality, which shows that the distance to the minimiser set decreases and that the iterates are asymptotically stationary, whereupon the closedness of the subdifferential gives the limit is a minimiser. $\square$</p>
+<p><strong>Remark (the relation to the variational methods of this Part).</strong> The direct method stated here for a coercive convex function on $\mathbb{R}^n$ is the finite-dimensional case of the method used throughout analysis to prove existence: a functional that is coercive and lower semicontinuous on a closed bounded set attains its minimum. The infinite-dimensional case, in which the boundedness is replaced by weak compactness and the lower semicontinuity by weak lower semicontinuity, belongs andand the variational problems of the calculus of variations — the existence of minimisers of integral functionals, the relaxation of non-convex problems, the relaxation by convex envelopes — are the subject, in this category. The notions introduced here — subdifferential, conjugate, normal cone, qualification condition — are exactly the vocabulary of those articles, and the separation theorems of this one are their existence theorems.</p>
+<h2 id="summary">Summary</h2>
+<p>A convex subset of $\mathbb{R}^n$ has a convex hull every point of which is a convex combination of at most $n+1$ points, by Carathéodory's theorem, has a nonempty relative interior, and is the intersection of the closed half-spaces containing it, by the supporting hyperplane theorem; two disjoint convex sets, the one closed and the other compact, are strictly separated by a hyperplane, and Farkas' lemma states the corresponding alternative for the cone generated by a matrix, from which the other theorems of the alternative follow. The nearest point map onto a closed convex set is well defined, unique and nonexpansive. A proper convex function is continuous and locally Lipschitz on the interior of its domain, has a finite directional derivative $f'(x;d)$ in every direction, and attains its maximum over a compact convex set at an extreme point. Its subdifferential $\partial f(x)$, the set of slopes of the affine functions below the graph, is nonempty on the relative interior of the domain, is a singleton exactly at the points of differentiability, satisfies $f'(x;d) = \sup_{y\in\partial f(x)}\langle y,d\rangle$, and contains $0$ exactly at the minimisers; the subdifferential is a maximal monotone operator when $f$ is closed and proper. The Fenchel conjugate $f^*(y) = \sup_x\{\langle x,y\rangle-f(x)\}$ satisfies the Fenchel–Young inequality with equality exactly at subgradients and the biconjugacy theorem $f^{**} = \operatorname{cl}f$; the conjugate turns sums into infimal convolutions and conversely, turns the indicator of a convex set into its support function, and turns the quadratic Moreau envelope into the conjugate plus a quadratic, so that the envelope is a differentiable minorant of every closed convex function and the proximal map is the soft-thresholding regularisation of optimisation. Fenchel's duality theorem, valid under the qualification that the domains have a common relative interior point, gives the duality of the convex programme; the Karush–Kuhn–Tucker conditions with Slater's condition characterise the optimal solutions by stationarity, primal feasibility, dual feasibility and complementary slackness; the minimax theorem gives the equality of the min–max and the max–min for a convex–concave bifunction on compact convex sets; and the direct method — coercivity plus lower semicontinuity plus closedness — gives the existence, uniqueness and convexity of the minimisers, with the proximal point iteration converging to them.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{conv}A$, $\operatorname{aff}A$</td>
+<td>Convex hull, affine hull</td>
+</tr>
+<tr>
+<td>$\operatorname{ri}C$</td>
+<td>Relative interior of the convex set $C$</td>
+</tr>
+<tr>
+<td>$\operatorname{rec}C$</td>
+<td>Recession cone of $C$</td>
+</tr>
+<tr>
+<td>$K^\circ$, $N_C(x)$</td>
+<td>Polar cone, normal cone at $x$</td>
+</tr>
+<tr>
+<td>$P_Cx$</td>
+<td>Nearest point of the closed convex $C$ to $x$</td>
+</tr>
+<tr>
+<td>$f'(x;d)$</td>
+<td>Directional derivative of the convex function $f$ at $x$ in the direction $d$</td>
+</tr>
+<tr>
+<td>$\partial f(x)$</td>
+<td>Subdifferential, the set of subgradients</td>
+</tr>
+<tr>
+<td>$f^*$</td>
+<td>Fenchel conjugate</td>
+</tr>
+<tr>
+<td>$\delta_C$, $\sigma_C$</td>
+<td>Indicator and support function of $C$</td>
+</tr>
+<tr>
+<td>$\square$</td>
+<td>Infimal convolution</td>
+</tr>
+<tr>
+<td>$e_\lambda f$, $\operatorname{prox}_{\lambda f}$</td>
+<td>Moreau envelope and proximal map</td>
+</tr>
+<tr>
+<td>$L(x,\lambda,\mu)$, $q(\lambda,\mu)$</td>
+<td>Lagrangian and dual function</td>
+</tr>
+<tr>
+<td>$A$, $b$</td>
+<td>Matrix and vector of the affine constraint</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$, $\lvert\cdot\rvert$</td>
+<td>Euclidean inner product and norm on $\mathbb{R}^n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>R. Tyrrell Rockafellar, <em>Convex Analysis</em> (Princeton University Press, 1970), for the standard source of the whole article: hulls, separation, continuity, subdifferentials, conjugates and duality.</li>
+<li>Jean-Baptiste Hiriart-Urruty and Claude Lemaréchal, <em>Convex Analysis and Minimization Algorithms</em> (Springer, 1993), for the algorithmic side, the proximal methods and the worked examples.</li>
+<li>Ralph Tyrell Rockafellar and Roger J.-B. Wets, <em>Variational Analysis</em> (3rd ed., Springer, 2009), for the extension to set-valued maps, the Moreau envelope and the qualification conditions in their modern form.</li>
+<li>Ivar Ekeland and Roger Temam, <em>Convex Analysis and Variational Problems</em> (North-Holland, 1976), for the direct method, duality and the applications to the calculus of variations.</li>
+<li>R. Tyrrell Rockafellar, <em>Monotone operators and the proximal point algorithm</em> (SIAM Journal on Control and Optimization 14, 1976), for the convergence of the proximal point iteration.</li>
+<li>Dmitri P. Bertsekas, <em>Convex Optimization Theory</em> (Athena Scientific, 2009), for the duality theory, Slater's condition and the Karush–Kuhn–Tucker theorem as used here.</li>
+<li>Jean-Pierre Aubin and Ivar Ekeland, <em>Applied Nonlinear Analysis</em> (Wiley, 1984), for the minimax theorems and the variational principles bordering the next articles.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

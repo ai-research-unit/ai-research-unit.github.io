@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Topological Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-topological-groups"><strong>List of Topological Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the topological groups of Parts I to III, grouped by the topology they carry and by the class the corpus attaches to them: the general topological groups, whose topology is determined at the identity; the locally compact groups, on which the Haar measure exists; the profinite groups, which are compact and totally disconnected; and the $p$-adic and adelic groups, which carry the topology of a valued field or of a restricted product. A Lie group is a topological group as well, and the Lie groups are indexed separately in <em>List of Lie Groups</em>; the entry here records the topological structure that the group theory uses.</p>
+<p>Every entry points to the article that introduces the group. The article introduces nothing and proves nothing: it records the topology that the introducing article gives each group, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the groups that are locally compact it lists the topological groups that are not — the additive group of an infinite-dimensional Banach space, the loop group, the diffeomorphism group; beside the groups that are Hausdorff it lists the quotients by a non-closed subgroup; beside the groups that are unimodular it lists the affine group, whose left and right Haar measures differ — each with the failure named and the article that records it.</p>
+<h2 id="the-general-topological-groups">The General Topological Groups</h2>
+<p>A topological group is a group $G$ with a topology for which the multiplication and the inversion are continuous. The topology is then determined by a neighbourhood base at the identity, the group is homogeneous, and there are two natural uniformities, the left and the right.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The topology it carries</th>
+<th>Completion and uniformity</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a topological group $G$</td>
+<td>the topology determined by a neighbourhood base at $e$; $L_g$ and $R_g$ are homeomorphisms</td>
+<td>the left $\mathcal{U}_L$ and right $\mathcal{U}_R$ uniformities; completion $\hat G$ in the two-sided (Raĭkov) uniformity</td>
+<td><em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>a discrete group</td>
+<td>the discrete topology; every map is continuous</td>
+<td>complete; a subgroup is open if and only if it is closed</td>
+<td><em>Groups</em>; <em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n$, $\mathbb{C}^n$</td>
+<td>the Euclidean topology under addition; locally compact, connected</td>
+<td>complete; the uniformity is the additive one</td>
+<td><em>Topological Groups</em>; <em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>$S^1 = \mathbb{R}/\mathbb{Z}$, $T^n$</td>
+<td>the quotient topology of $\mathbb{R}$ and $\mathbb{R}^n$; compact, connected</td>
+<td>complete; the unique compact-group uniformity</td>
+<td><em>Topological Groups</em>; <em>Pontryagin Duality</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}^\times$, $\mathbb{C}^\times$</td>
+<td>the subspace topology of the field; not connected ($\mathbb{R}^\times$ has two components)</td>
+<td>complete for the multiplicative metric; Haar measure $dx/\lvert x\rvert$</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>the subspace topology of $\mathbb{R}$; the $p$-adic topology is a different refinement</td>
+<td>neither topology is complete; completions $\mathbb{R}$ and $\mathbb{Q}_p$</td>
+<td><em>Topological Groups</em>; <em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{R})$, $GL_n(\mathbb{C})$</td>
+<td>the subspace topology of matrices; locally compact</td>
+<td>complete metrisable; two components for $\mathbb{R}$, connected for $\mathbb{C}$</td>
+<td><em>The General Linear Group</em>; <em>Lie Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(X)$</td>
+<td>the pointwise-convergence topology on $X^X$; a topological group, not locally compact for infinite $X$</td>
+<td>not complete for infinite $X$; the completion is strictly larger than $\operatorname{Sym}(X)$</td>
+<td><em>Group Actions and Structure</em>; <em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Homeo}(X)$</td>
+<td>the compact-open topology; a topological group when $X$ is compact</td>
+<td>not locally compact for a manifold of positive dimension</td>
+<td><em>Group Actions and Structure</em></td>
+</tr>
+<tr>
+<td>a quotient $G/H$</td>
+<td>the quotient topology; a topological group when $H$ is normal</td>
+<td>Hausdorff exactly when $H$ is closed</td>
+<td><em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>the identity component $G_0$</td>
+<td>the connected component of $e$, closed and normal, and the intersection of the open subgroups</td>
+<td>$G/G_0$ is totally disconnected</td>
+<td><em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{GL}_n(\mathbb{Q}_p)$</td>
+<td>the $p$-adic manifold topology; locally compact, totally disconnected</td>
+<td>complete; the congruence subgroups form a neighbourhood base</td>
+<td><em>$p$-adic Lie Groups</em>; <em>Adeles and Ideles</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-locally-compact-groups">The Locally Compact Groups</h2>
+<p>A locally compact group is a Hausdorff topological group in which every point has a compact neighbourhood. It is exactly the class on which the Haar measure exists, and it contains the discrete groups, the compact groups, the Lie groups and the additive groups of the local fields.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The topology and the invariant measure</th>
+<th>Unimodular?</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a locally compact group $G$</td>
+<td>Hausdorff, locally compact; a left Haar measure $\mu$, unique up to a positive scalar</td>
+<td>$\Delta \equiv 1$ for the abelian, compact, discrete, nilpotent and semisimple groups, classes that overlap and none of which contains the others</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>a discrete group</td>
+<td>the discrete topology; counting measure</td>
+<td>yes, trivially</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>a compact group $K$</td>
+<td>compact Hausdorff; the Haar measure normalised to a probability</td>
+<td>yes</td>
+<td><em>Analysis on Compact Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n$</td>
+<td>the Euclidean topology; Lebesgue measure</td>
+<td>yes</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p^n$, $\mathbb{Z}_p^n$</td>
+<td>the $p$-adic topology; Haar measure normalised by $\mu(\mathbb{Z}_p) = 1$</td>
+<td>yes, the group is abelian</td>
+<td><em>The $p$-adic Numbers</em></td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{R})$, $SL_n(\mathbb{R})$, $O(n)$, $U(n)$</td>
+<td>the matrix topology; $GL_n$ with the measure $\lvert\det A\rvert^{-n}dA$</td>
+<td>yes for all of them</td>
+<td><em>Locally Compact Groups and Haar Measure</em>; <em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>the affine group $\mathbb{R} \rtimes \mathbb{R}_{>0}$</td>
+<td>the topology of $\mathbb{R}^2$; left Haar measure $a^{-2}da\,db$ and right Haar measure $a^{-1}da\,db$</td>
+<td><strong>no</strong>; $\Delta(a,b) = a^{-1}$</td>
+<td><em>Locally Compact Groups and Haar Measure</em>; <em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the Heisenberg group</td>
+<td>the topology of $\mathbb{R}^3$; Lebesgue measure</td>
+<td>yes</td>
+<td><em>Lie Groups</em>; <em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>the adeles $\mathbb{A}_K$, the ideles $\mathbb{I}_K$</td>
+<td>the restricted-product topology; locally compact and totally disconnected away from the archimedean places</td>
+<td>yes, the groups are abelian</td>
+<td><em>Adeles and Ideles</em></td>
+</tr>
+<tr>
+<td>a lattice $\Gamma \subseteq G$</td>
+<td>the discrete topology, with $G/\Gamma$ of finite invariant volume</td>
+<td>inherits unimodularity from $G$ when $G$ is unimodular</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The structure theory of the locally compact abelian groups belongs here: an open subgroup is of the form $\mathbb{R}^n \times K$ with $K$ compact, and a compactly generated locally compact abelian group is $\mathbb{R}^n \times \mathbb{Z}^m \times K$ with $K$ compact. This is the input to Pontryagin duality, which exchanges compactness with discreteness and identifies the category with its own opposite.</p>
+<h2 id="the-profinite-and-pro-math76-groups">The Profinite and Pro-$p$ Groups</h2>
+<p>A profinite group is the inverse limit of an inverse system of finite groups with the discrete topology; equivalently it is a compact Hausdorff totally disconnected topological group. The topology is generated by the open normal subgroups, which are exactly the finite-index subgroups that are open.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The topology it carries</th>
+<th>Its role</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varprojlim_i G_i$</td>
+<td>the inverse-limit topology, with the subgroups $\ker(G \to G_i)$ as a base at $e$; compact totally disconnected</td>
+<td>the definition of a profinite group</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p = \varprojlim_n \mathbb{Z}/p^n$</td>
+<td>the $p$-adic topology; compact, totally disconnected, metrisable</td>
+<td>the additive group of the $p$-adic integers</td>
+<td><em>The $p$-adic Numbers</em>; <em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>$\hat{\mathbb{Z}} = \varprojlim_n \mathbb{Z}/n\mathbb{Z}$</td>
+<td>the inverse-limit topology; $\hat{\mathbb{Z}} \cong \prod_p \mathbb{Z}_p$</td>
+<td>the profinite completion of $\mathbb{Z}$</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(L/K)$</td>
+<td>the Krull topology, with the subgroups $\operatorname{Gal}(L/M)$ for $M/K$ finite Galois as a base</td>
+<td>the Galois correspondence holds for the closed subgroups</td>
+<td><em>Galois Theory</em>; <em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(\overline{\mathbb{F}}_p/\mathbb{F}_p)$</td>
+<td>the Krull topology; $\hat{\mathbb{Z}}$, with the Frobenius as topological generator</td>
+<td>the absolute Galois group of a finite field</td>
+<td><em>Galois Theory</em>; <em>Galois Cohomology</em></td>
+</tr>
+<tr>
+<td>the profinite completion $\hat G^{\mathrm{pf}}$</td>
+<td>the inverse limit over the finite-index normal subgroups; $G$ embeds exactly when $G$ is residually finite</td>
+<td>the profinite completion of an abstract group</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>a pro-$p$ group</td>
+<td>the inverse limit of finite $p$-groups; compact, totally disconnected</td>
+<td>the Sylow $p$-subgroups of a profinite group</td>
+<td><em>Profinite Groups and the Krull Topology</em>; <em>Combinatorial Group Theory</em></td>
+</tr>
+<tr>
+<td>a compact $p$-adic analytic group</td>
+<td>the $p$-adic manifold topology; contains a uniformly powerful open pro-$p$ subgroup</td>
+<td>the $p$-adic Lie groups of the next table</td>
+<td><em>$p$-adic Lie Groups</em></td>
+</tr>
+<tr>
+<td>the Galois group of a local field</td>
+<td>the Krull topology; a Demushkin pro-$p$ group of finite rank, hence $p$-adic analytic</td>
+<td>the input to local class field theory</td>
+<td><em>Galois Cohomology</em>; <em>$p$-adic Lie Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A profinite group is metrisable exactly when its inverse system has a countable cofinal subsystem, equivalently when there are countably many open normal subgroups; the Krull topology of a Galois group is metrisable exactly when the field has countably many finite Galois subextensions, and it is not induced by any distance otherwise. The abelian profinite groups are the Pontryagin duals of the discrete torsion groups, by <em>Pontryagin Duality</em>, and this is how their structure is read off.</p>
+<h2 id="the-math106-adic-and-adelic-groups">The $p$-adic and Adelic Groups</h2>
+<p>The $p$-adic Lie groups carry the manifold topology of a non-archimedean field, and the adelic groups carry the restricted-product topology; both are totally disconnected away from finitely many places, and both are the topological home of the arithmetic of a global field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The topology it carries</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}_p$, $\mathbb{Q}_p^n$</td>
+<td>the $p$-adic topology; locally compact, complete, totally disconnected</td>
+<td><em>The $p$-adic Numbers</em></td>
+</tr>
+<tr>
+<td>a $p$-adic Lie group $G$</td>
+<td>an analytic manifold over $\mathbb{Q}_p$; the connected components are points and the compact open subgroups form a base</td>
+<td><em>$p$-adic Lie Groups</em></td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{Z}_p)$, $SL_n(\mathbb{Z}_p)$</td>
+<td>the subspace topology of $M_n(\mathbb{Z}_p)$; compact and totally disconnected</td>
+<td><em>$p$-adic Lie Groups</em>; <em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>the congruence subgroups $\Gamma_k = 1 + p^kM_n(\mathbb{Z}_p)$</td>
+<td>a basis of open neighbourhoods of the identity; each is a normal pro-$p$ subgroup</td>
+<td><em>$p$-adic Lie Groups</em></td>
+</tr>
+<tr>
+<td>the adeles $\mathbb{A}_K$</td>
+<td>the restricted product of the completions $K_v$ with respect to the valuation rings $\mathcal{O}_v$; locally compact, with the adelic topology</td>
+<td><em>Adeles and Ideles</em></td>
+</tr>
+<tr>
+<td>the ideles $\mathbb{I}_K = \mathbb{A}_K^\times$</td>
+<td>the topology of the adele ring restricted to the units, which is <strong>not</strong> the subspace topology</td>
+<td><em>Adeles and Ideles</em></td>
+</tr>
+<tr>
+<td>the adelic group $G(\mathbb{A}_K)$</td>
+<td>the restricted product of the groups $G(K_v)$ over the places, locally compact</td>
+<td><em>Adeles and Ideles</em></td>
+</tr>
+<tr>
+<td>$K \subseteq \mathbb{A}_K$, discrete</td>
+<td>the image of $K$ is discrete and cocompact in the trace-zero part</td>
+<td><em>Adeles and Ideles</em></td>
+</tr>
+<tr>
+<td>the loop group $LG = C^\infty(S^1,G)$</td>
+<td>the Fréchet manifold topology; not locally compact</td>
+<td><em>Loop Groups</em></td>
+</tr>
+<tr>
+<td>a maximal Kac–Moody group</td>
+<td>the topology of Tits, Moody and Teo, in which the root groups are topological groups; in the affine case the locally compact group of the loop or $p$-adic description</td>
+<td><em>Kac–Moody Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-compact-and-connected-groups-and-the-failure-of-both">The Compact and Connected Groups, and the Failure of Both</h2>
+<p>The compactness and the connectedness of a topological group are properties of the group, and the corpus records the groups that have them and those that do not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has, and the one it fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Sorgenfrey line as an additive group</td>
+<td>the half-open interval topology makes $\mathbb{R}$ a group with a topology, and addition is <strong>not</strong> continuous; hence it is not a topological group</td>
+<td><em>Metrisation and Separation Axioms</em>; <em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>a group with the indiscrete topology</td>
+<td>a topological group that is not $T_0$ and not Hausdorff; the quotient $G/H$ is Hausdorff exactly when $H$ is closed</td>
+<td><em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n$</td>
+<td>connected, locally compact, $\sigma$-compact; not compact</td>
+<td><em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{R})$</td>
+<td>locally compact, two components; not compact and not connected</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{Q}_p)$</td>
+<td>locally compact, totally disconnected; not compact, not connected in the archimedean sense</td>
+<td><em>$p$-adic Lie Groups</em></td>
+</tr>
+<tr>
+<td>the loop group $LG$</td>
+<td>a topological group and a Fréchet manifold; not locally compact</td>
+<td><em>Loop Groups</em></td>
+</tr>
+<tr>
+<td>the diffeomorphism group $\operatorname{Diff}(M)$</td>
+<td>a topological group and a Fréchet manifold; not locally compact</td>
+<td><em>Diffeomorphism Groups</em></td>
+</tr>
+<tr>
+<td>the affine group</td>
+<td>locally compact; <strong>not</strong> unimodular, so the left and right Haar measures differ</td>
+<td><em>Locally Compact Groups and Haar Measure</em></td>
+</tr>
+<tr>
+<td>an uncountable product $\prod_{i \in I} \mathbb{Z}/2$</td>
+<td>compact totally disconnected, hence profinite; not metrisable and not second countable</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>a locally compact quantum group</td>
+<td>an operator-algebraic object with a comultiplication and a Haar weight; not a topological group with a point set</td>
+<td><em>Locally Compact Quantum Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="warnings">Warnings</h2>
+<p>Objects that a reader may expect to find in a list of topological groups, and does not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a topological group of this article</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the orthogonal group $O(n)$ and the other classical groups</td>
+<td>compact Lie groups, hence topological groups, indexed with their Lie structure in <em>List of Lie Groups</em> and with their forms in <em>List of Classical Geometric Groups</em></td>
+<td><em>Lie Groups</em>; <em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the affine group $\operatorname{Aff}(n)$</td>
+<td>a locally compact non-unimodular group, indexed with the affine geometry in <em>List of Affine and Euclidean Groups</em></td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the quantum groups of Part I</td>
+<td>Hopf algebras and their deformations, without a topology on a point set</td>
+<td><em>Quantum Groups</em>; <em>Hopf Algebras</em></td>
+</tr>
+<tr>
+<td>the Weil group $W_K$</td>
+<td>a topological group that is not profinite, treated with the Galois cohomology of the local fields</td>
+<td><em>Galois Cohomology</em></td>
+</tr>
+<tr>
+<td>the group of adelic points of a non-abelian group</td>
+<td>a restricted product of locally compact groups, recorded with the arithmetic and not in the structure table</td>
+<td><em>Adeles and Ideles</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the topological groups of the corpus: the general topological groups, whose topology is determined at the identity and which carry the left and right uniformities; the locally compact groups, with the Haar measure, the modular function and the structure theorem for the abelian case; the profinite and pro-$p$ groups, with the inverse-limit topology and the Krull topology of the Galois groups; and the $p$-adic and adelic groups, with the manifold topology of a non-archimedean field and the restricted-product topology of the places. The non-examples stand beside them: the Sorgenfrey line, whose half-open topology does not make addition continuous; the quotients by a non-closed subgroup, which fail to be Hausdorff; the affine group, which is not unimodular; the loop group and the diffeomorphism group, which are not locally compact; and the uncountable products, which are profinite and not metrisable. The list introduces and proves nothing; it is the index of the topological groups of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$, $H$, $e$</td>
+<td>a topological group, a subgroup, the identity</td>
+</tr>
+<tr>
+<td>$L_g$, $R_g$, $\operatorname{Ad}_g$</td>
+<td>left and right translations and the inner automorphism</td>
+</tr>
+<tr>
+<td>$\mathcal{N}$, $\mathcal{U}_L$, $\mathcal{U}_R$</td>
+<td>a neighbourhood base at $e$; the left and right uniformities</td>
+</tr>
+<tr>
+<td>$\hat G$, $\hat G^{\mathrm{pf}}$</td>
+<td>the completion in the two-sided uniformity; the profinite completion</td>
+</tr>
+<tr>
+<td>$G_0$, $G/H$</td>
+<td>the identity component; a coset space with the quotient topology</td>
+</tr>
+<tr>
+<td>$\mu$, $\Delta$, $\mu_R$</td>
+<td>a left Haar measure; the modular function; the right Haar measure $\Delta^{-1}\mu$</td>
+</tr>
+<tr>
+<td>unimodular</td>
+<td>$\Delta \equiv 1$</td>
+</tr>
+<tr>
+<td>$S^1 = \mathbb{R}/\mathbb{Z}$, $T^n$</td>
+<td>the circle group and the $n$-torus</td>
+</tr>
+<tr>
+<td>$G^\vee$</td>
+<td>the Pontryagin dual, not to be confused with the completion $\hat G$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$, $\hat{\mathbb{Z}}$, $\mathbb{Q}_p$</td>
+<td>the $p$-adic integers, the profinite completion of $\mathbb{Z}$, the $p$-adic field</td>
+</tr>
+<tr>
+<td>$\mathbb{A}_K$, $\mathbb{I}_K$, $G(\mathbb{A}_K)$</td>
+<td>the adeles, the ideles and the adelic points of $G$</td>
+</tr>
+<tr>
+<td>$LG$, $\operatorname{Homeo}(X)$, $\operatorname{Diff}(M)$</td>
+<td>the loop group, the homeomorphism group, the diffeomorphism group</td>
+</tr>
+<tr>
+<td>$\Gamma_k = 1 + p^kM_n(\mathbb{Z}_p)$</td>
+<td>the congruence subgroups</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters III–IV (Springer, 1989), for the topological groups, the uniformities and the completion.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis</em>, Vol. I (Springer, 2nd ed. 1979), for the structure of locally compact abelian groups, the Haar measure and the duality.</li>
+<li>Lynn A. Steen and J. Arthur Seebach, <em>Counterexamples in Topology</em> (Springer, 2nd ed. 1978), for the Sorgenfrey line and the other counterexamples.</li>
+<li>John S. Wilson, <em>Profinite Groups</em> (Oxford University Press, 1998), for the inverse-limit topology, the pro-$p$ groups and the Frattini theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Determinant and Alternating Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-determinant-and-alternating-forms"><strong>The Determinant and Alternating Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The exterior powers of the companion article <em>Exterior Powers</em> carry, in their top degree, a one-dimensional module attached to a free module of finite rank, and an endomorphism acts on it by a scalar. That scalar is the <strong>determinant</strong>. The determinant is therefore not an ad hoc formula in the entries of a matrix but the unique scalar invariant of a linear transformation, obtained by transport along the top exterior power. The same construction in every intermediate degree produces the <strong>minors</strong>, and the multiplicativity of the determinant is a special case of the functoriality of $\Lambda^n$, while the formula relating the minors of a composite to those of its factors, known as the <strong>Cauchy–Binet formula</strong>, is the degreewise statement that $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$.</p>
+<p>The linear functionals on the exterior powers are the <strong>alternating forms</strong>, and the exterior algebra of the dual module is the algebraic prototype of the algebra of differential forms. A differential $k$-form on a smooth manifold is a smoothly varying alternating form on the tangent space, and the operations of the calculus — the wedge product, the pullback, and the exterior derivative — are visible already at the level of a single free module over a commutative ring, with no smooth structure required.</p>
+<p>Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $M$, $N$, $P$ are $R$-modules; over a commutative ring left and right modules coincide, so no side is specified. The field is written $K$, and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The determinant is defined over an arbitrary commutative ring, and the place where a field, a characteristic assumption, or the invertibility of $2$ is needed is flagged; in particular the sign-based expansions below require no division, while the Pfaffian and the identification of alternating with skew-symmetric forms require care in characteristic $2$. No physics is invoked.</p>
+<p>The companion articlesandcontinue from here; the latter is with this one.</p>
+<h2 id="induced-maps-and-minors">Induced Maps and Minors</h2>
+<h3 id="the-induced-map-on-exterior-powers">The Induced Map on Exterior Powers</h3>
+<p>Let $f : M \to N$ be an $R$-linear map and let $\Lambda^n f : \Lambda^n M \to \Lambda^n N$ be the induced map of <em>Exterior Powers</em>, characterised on elementary wedges by</p>
+<p>$$
+\Lambda^n f(x_1 \wedge \cdots \wedge x_n) = f(x_1) \wedge \cdots \wedge f(x_n).
+$$</p>
+<p>Functoriality gives $\Lambda^n(\mathrm{id}_M) = \mathrm{id}_{\Lambda^n M}$ and $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$, and these two identities are the source of the multiplicativity properties recorded below. In degree $1$ the induced map is $f$ itself, and in degree $0$ it is the identity of $R$.</p>
+<h3 id="minors-and-the-matrix-of-math25">Minors and the Matrix of $\Lambda^n f$</h3>
+<p>Suppose now that $M$ and $N$ are free with bases $e_1, \ldots, e_m$ and $f_1, \ldots, f_r$, and let $A = (a_{ij})$ be the matrix of $f$ in these bases, so that $f(e_j) = \sum_i a_{ij} f_i$. The induced bases of $\Lambda^n M$ and $\Lambda^n N$ consist of the increasing wedges, and the matrix of $\Lambda^n f$ in them is described by the minors of $A$.</p>
+<p><strong>Definition.</strong> Let $I \subseteq \{1, \ldots, r\}$ and $J \subseteq \{1, \ldots, m\}$ have the same cardinality $n$, say $I = (i_1 < \cdots < i_n)$ and $J = (j_1 < \cdots < j_n)$. The <strong>minor</strong> of $A$ with row set $I$ and column set $J$ is</p>
+<p>$$
+A_{I,J} = \det\bigl(a_{i_p, j_q}\bigr)_{p,q=1}^{n},
+$$</p>
+<p>the determinant of the $n \times n$ submatrix formed by those rows and columns. A minor is therefore an alternating function of the rows and of the columns separately.</p>
+<p><strong>Proposition.</strong> In the induced bases, the matrix entry of $\Lambda^n f$ from the basis wedge $e_J = e_{j_1} \wedge \cdots \wedge e_{j_n}$ to the basis wedge $f_I = f_{i_1} \wedge \cdots \wedge f_{i_n}$ is the minor $A_{I,J}$:</p>
+<p>$$
+\Lambda^n f(e_J) = \sum_{|I| = n} A_{I,J}\, f_I.
+$$</p>
+<p><strong>Proof.</strong> Expand each $f(e_{j_q}) = \sum_i a_{i,j_q} f_i$ and use multilinearity of the wedge: the coefficient of $f_{i_1} \wedge \cdots \wedge f_{i_n}$ is the alternating sum $\sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_q a_{i_q, j_{\sigma(q)}}$, which is the Leibniz expansion of the minor. $\square$</p>
+<h2 id="the-determinant">The Determinant</h2>
+<h3 id="definition-for-endomorphisms">Definition for Endomorphisms</h3>
+<p>Let $M$ be free of rank $m$ with basis $(e_1, \ldots, e_m)$. The top exterior power $\Lambda^m M$ is free of rank $1$, with the single basis element $e_1 \wedge \cdots \wedge e_m$, so every endomorphism of it is multiplication by an element of $R$. For $f \in \operatorname{End}_R(M)$, the induced map $\Lambda^m f$ is such an endomorphism, and one names its scalar.</p>
+<p><strong>Definition.</strong> Let $M$ be a free $R$-module of rank $m$ and let $f : M \to M$ be $R$-linear. The <strong>determinant</strong> of $f$ is the unique scalar $\det(f) \in R$ with</p>
+<p>$$
+\Lambda^m f(e_1 \wedge \cdots \wedge e_m) = \det(f)\, e_1 \wedge \cdots \wedge e_m
+$$</p>
+<p>for a basis $(e_1, \ldots, e_m)$. By the proposition above it is independent of the choice of basis, and it is the alternating $m$-multilinear form</p>
+<p>$$
+\det(f) = \sum_{\sigma \in S_m} \operatorname{sgn}(\sigma) \prod_{q=1}^{m} a_{q, \sigma(q)},
+$$</p>
+<p>where $(a_{ij})$ is the matrix of $f$ in the basis.</p>
+<h3 id="the-determinant-of-a-matrix">The Determinant of a Matrix</h3>
+<p>Writing $\det(A)$ for the right-hand side, the determinant of a square matrix is</p>
+<p>$$
+\det(A) = \sum_{\sigma \in S_m} \operatorname{sgn}(\sigma)\, a_{1,\sigma(1)} a_{2,\sigma(2)} \cdots a_{m,\sigma(m)}.
+$$</p>
+<p>This is the <strong>Leibniz formula</strong>. It is a polynomial with integer coefficients in the entries, hence defined over every commutative ring, and it is alternating in the columns and in the rows.</p>
+<p><strong>Proposition (basic expansions).</strong> For an $m \times m$ matrix $A$ over a commutative ring:</p>
+<p><strong>(a)</strong> $\det(A)$ is $R$-multilinear and alternating in the columns of $A$;</p>
+<p><strong>(b)</strong> $\det(I) = 1$ and $\det(A) = 0$ if two columns of $A$ are equal;</p>
+<p><strong>(c)</strong> $\det(A^{\mathsf{T}}) = \det(A)$.</p>
+<p><strong>Proof.</strong> (a) Each term of the Leibniz formula contains exactly one entry from each column, so the formula is linear in each column; exchanging two columns permutes the summation index $\sigma$ by a transposition and multiplies each term by $-1$. (b) is immediate from the formula. (c) The transpose relabels $\sigma$ by $\sigma^{-1}$, and $\operatorname{sgn}(\sigma^{-1}) = \operatorname{sgn}(\sigma)$. $\square$</p>
+<h3 id="multiplicativity-and-invertibility">Multiplicativity and Invertibility</h3>
+<p><strong>Theorem.</strong> Let $M$ be free of rank $m$ and let $f, g \in \operatorname{End}_R(M)$. Then</p>
+<p>$$
+\det(g \circ f) = \det(g)\, \det(f).
+$$</p>
+<p>Moreover $f$ is invertible if and only if $\det(f)$ is a unit of $R$, and then $\det(f^{-1}) = \det(f)^{-1}$.</p>
+<p><strong>Proof.</strong> Functoriality of the top exterior power gives $\Lambda^m(g \circ f) = \Lambda^m g \circ \Lambda^m f$, and on the rank-one module $\Lambda^m M$ these are multiplications by $\det(g \circ f)$, $\det(g)$, and $\det(f)$ respectively, so the scalars multiply. If $f$ is invertible, applying the first part to $g = f^{-1}$ and $g \circ f = \mathrm{id}$ gives $\det(f)\det(f^{-1}) = \det(\mathrm{id}) = 1$. Conversely, if $\det(f)$ is a unit, then the adjugate identity $f \circ \operatorname{adj}(f) = \det(f)\,\mathrm{id}_M$ exhibits an inverse: $\operatorname{adj}(f)$ is the endomorphism whose matrix entries are the $(m-1)$-minors of the matrix of $f$, with alternating signs, and it is defined over any commutative ring. $\square$</p>
+<p><strong>Remark.</strong> Over a general commutative ring one cannot conclude that a non-invertible endomorphism has $\det(f) = 0$: only that $\det(f)$ is a non-unit. For example, over $R = \mathbb{Z}$ the map of $\mathbb{Z}$ given by multiplication by $2$ has determinant $2$, which is neither a unit nor zero. This is the point at which the determinant over a ring differs from the determinant over a field.</p>
+<h3 id="the-characteristic-polynomial">The Characteristic Polynomial</h3>
+<p><strong>Proposition.</strong> Let $M$ be free of rank $m$ and let $f \in \operatorname{End}_R(M)$. Then</p>
+<p>$$
+\det(\mathrm{id}_M + t f) = \sum_{k=0}^{m} \operatorname{tr}(\Lambda^k f)\, t^k,
+$$</p>
+<p>where $\operatorname{tr}(\Lambda^k f)$ denotes the trace of the induced endomorphism of $\Lambda^k M$ and $\operatorname{tr}(\Lambda^0 f) = 1$.</p>
+<p><strong>Proof.</strong> Both sides are polynomials with integer coefficients in the matrix entries of $f$. It therefore suffices to prove the identity after base change to a field over which the matrix has a full set of eigenvalues, for instance over the algebraic closure of the fraction field of the polynomial ring in the entries. There $f$ is triangularisable, with eigenvalues $\lambda_1, \ldots, \lambda_m$; the eigenvalues of $\Lambda^k f$ are the products $\lambda_{i_1} \cdots \lambda_{i_k}$ over increasing $k$-tuples, so $\operatorname{tr}(\Lambda^k f)$ is the elementary symmetric function $e_k(\lambda)$ of the eigenvalues and $\det(\mathrm{id} + tf) = \prod_{i=1}^{m}(1 + t\lambda_i) = \sum_{k=0}^{m} e_k(\lambda) t^k$. $\square$</p>
+<p>Setting $t = -1/s$ and clearing denominators recovers the characteristic polynomial $\det(s\,\mathrm{id} - f) = s^m \sum_k \operatorname{tr}(\Lambda^k f)(-1/s)^k$; the coefficients are the traces of the induced maps on the exterior powers.</p>
+<h2 id="alternating-forms">Alternating Forms</h2>
+<h3 id="forms-and-the-exterior-algebra-of-the-dual">Forms and the Exterior Algebra of the Dual</h3>
+<p><strong>Definition.</strong> An <strong>alternating form of degree $n$</strong> on $M$ with values in $R$ is an alternating $n$-multilinear map $M^n \to R$. The $R$-module of such forms is</p>
+<p>$$
+\operatorname{Alt}^n(M; R) \cong (\Lambda^n M)^*,
+$$</p>
+<p>the last identification being the universal property of the exterior power. Assembling the degrees,</p>
+<p>$$
+\operatorname{Alt}^\bullet(M; R) = \bigoplus_{n \geq 0} \operatorname{Alt}^n(M; R)
+$$</p>
+<p>is the <strong>algebra of alternating forms</strong> on $M$.</p>
+<p><strong>Proposition.</strong> Let $M$ be free of finite rank. Then for each $n$ there is a natural isomorphism $\operatorname{Alt}^n(M; R) \cong \Lambda^n(M^*)$, and these assemble into an isomorphism of graded algebras</p>
+<p>$$
+\operatorname{Alt}^\bullet(M; R) \cong \Lambda(M^*)
+$$</p>
+<p>between the algebra of alternating forms under the wedge product and the exterior algebra of the dual module.</p>
+<p><strong>Proof.</strong> A form of degree $n$ corresponds to a linear functional on $\Lambda^n M$, hence to an element of $(\Lambda^n M)^*$; over a free module of finite rank the natural map $\Lambda^n(M^*) \to (\Lambda^n M)^*$ sending $\varphi_1 \wedge \cdots \wedge \varphi_n$ to the form $(x_1, \ldots, x_n) \mapsto \det(\varphi_p(x_q))$ is an isomorphism, by the basis theorem of <em>Exterior Powers</em> applied to the dual basis. Multiplicativity of the correspondence is the definition of the wedge product of forms. $\square$</p>
+<p><strong>Definition.</strong> The <strong>wedge product of forms</strong> $\alpha \wedge \beta \in \operatorname{Alt}^{p+q}(M; R)$ of forms $\alpha$ of degree $p$ and $\beta$ of degree $q$ is the form</p>
+<p>$$
+(\alpha \wedge \beta)(x_1, \ldots, x_{p+q}) = \sum_{\sigma} \operatorname{sgn}(\sigma)\, \alpha(x_{\sigma(1)}, \ldots, x_{\sigma(p)})\, \beta(x_{\sigma(p+1)}, \ldots, x_{\sigma(p+q)}),
+$$</p>
+<p>the sum over the $(p, q)$-shuffles of $\{1, \ldots, p+q\}$. It is graded-commutative, $\alpha \wedge \beta = (-1)^{pq}\beta \wedge \alpha$, and associative.</p>
+<h3 id="pullback">Pullback</h3>
+<p><strong>Definition.</strong> Let $f : M \to N$ be $R$-linear. The <strong>pullback</strong> along $f$ is the algebra homomorphism</p>
+<p>$$
+f^* : \operatorname{Alt}^\bullet(N; R) \to \operatorname{Alt}^\bullet(M; R), \qquad (f^*\omega)(x_1, \ldots, x_n) = \omega(f(x_1), \ldots, f(x_n)).
+$$</p>
+<p><strong>Proposition.</strong> The pullback is contravariantly functorial: $\mathrm{id}^* = \mathrm{id}$ and $(g \circ f)^* = f^* \circ g^*$.</p>
+<p><strong>Proof.</strong> Both are immediate from the definition; the reversal of order is the usual contravariance of a hom functor. $\square$</p>
+<h3 id="the-prototype-of-differential-forms">The Prototype of Differential Forms</h3>
+<p>The algebraic data above are the pointwise model of the differential calculus. On a smooth manifold $M$ one forms the cotangent bundle $T^*M$ , for each $k$, the bundle $\Lambda^k T^*M$; a <strong>differential $k$-form</strong> is a smooth section of that bundle, and the space of sections $\Omega^k(M) = \Gamma(\Lambda^k T^*M)$ is the module of $k$-forms. The wedge product of forms and the pullback of forms along a smooth map are obtained by applying the constructions of this section fibrewise. The exterior derivative, a degree-one derivation $d: \Omega^k(M) \to \Omega^{k+1}(M)$ with $d^2 = 0$, is the further structure that the smooth setting supplies; it is the subject of with this one. The determinant reappears there as the change-of-variables factor in the integration of a top-degree form.</p>
+<h2 id="the-cauchybinet-formula">The Cauchy–Binet Formula</h2>
+<p>The multiplicativity of the determinant in the square case is the $n = m$ case of a formula valid in every degree.</p>
+<p><strong>Theorem (Cauchy–Binet).</strong> Let $A$ be an $r \times m$ matrix and $B$ an $m \times s$ matrix over a commutative ring $R$. For increasing index sets $I \subseteq \{1, \ldots, r\}$ and $J \subseteq \{1, \ldots, s\}$ of size $n$,</p>
+<p>$$
+\det\bigl((AB)_{I,J}\bigr) = \sum_{K} \det(A_{I,K})\, \det(B_{K,J}),
+$$</p>
+<p>the sum over the increasing $n$-element subsets $K \subseteq \{1, \ldots, m\}$.</p>
+<p><strong>Proof.</strong> Let $f : R^s \to R^m$ and $g : R^m \to R^r$ be the linear maps with matrices $B$ and $A$, so that $AB$ is the matrix of $g \circ f$. By the minor proposition, the matrix entries of $\Lambda^n(g \circ f)$ are the minors of $AB$, and by functoriality $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$, whose matrix entries are sums of products of the minors of $A$ and of $B$ indexed by the intermediate basis wedges. Equating the two expressions gives the formula. $\square$</p>
+<p><strong>Corollary.</strong> If $m = r = s = n$, Cauchy–Binet reduces to $\det(AB) = \det(A)\det(B)$.</p>
+<p><strong>Corollary (Jacobi's complementary minor identity).</strong> Let $A$ be an invertible $m \times m$ matrix over a commutative ring, with inverse $A^{-1}$. For increasing index sets $I, J \subseteq \{1, \ldots, m\}$ of size $n$, written $I^c$ and $J^c$ for their complements,</p>
+<p>$$
+\det\bigl((A^{-1})_{I,J}\bigr) = (-1)^{\textstyle\sum I + \sum J}\, \det(A_{J^c, I^c}) \cdot \det(A)^{-1},
+$$</p>
+<p>where $\sum I$ denotes the sum of the entries of $I$. Thus the $n \times n$ minors of the inverse are the complementary $(m-n) \times (m-n)$ minors of $A$, up to a sign and the scalar $\det(A)^{-1}$.</p>
+<p>This is the classical complementary-minor theorem of Jacobi; it is the statement that the compound matrix of $A^{-1}$ is the inverse of the compound matrix of $A$, combined with the description of the inverse of a compound matrix through complementary minors. When $n = m$ it reduces to $\det(A^{-1}) = \det(A)^{-1}$.</p>
+<h2 id="the-top-power-volume-and-the-pfaffian">The Top Power, Volume and the Pfaffian</h2>
+<p><strong>Definition.</strong> Let $V$ be a free $K$-module of finite rank $m$. A <strong>volume form</strong> on $V$ is a nonzero element of the one-dimensional space $\Lambda^m V$; a choice of volume form is a choice of basis of the determinant line $\Lambda^m V$, of which it records the direction but not the scale, and the determinant of an automorphism is the factor by which it scales the volume form.</p>
+<p><strong>Proposition (the determinant as the volume form).</strong> Let $\omega$ be a nonzero alternating $m$-form on $V$ and let $(e_1, \ldots, e_m)$ be a basis with $\omega(e_1, \ldots, e_m) = 1$. Then for every endomorphism $f$ of $V$,</p>
+<p>$$
+\omega(f(e_1), \ldots, f(e_m)) = \det(f).
+$$</p>
+<p><strong>Proof.</strong> The form $\omega$ is a basis of the one-dimensional space of alternating $m$-forms; the pullback $f^*\omega = \det(f)\omega$ by definition of the determinant, and evaluating at the basis gives the claim. $\square$</p>
+<p><strong>Example (alternating forms of degree $2$).</strong> An alternating $2$-form on a free module with basis $(e_1, \ldots, e_m)$ is determined by its values $\omega_{ij} = \omega(e_i, e_j)$ on pairs, and these satisfy $\omega_{ij} = -\omega_{ji}$ and $\omega_{ii} = 0$. In matrix form $\Omega = (\omega_{ij})$ is <strong>alternating</strong>, $\Omega^{\mathsf{T}} = -\Omega$, and the form is</p>
+<p>$$
+\omega(x, y) = x^{\mathsf{T}} \Omega\, y.
+$$</p>
+<p>Such a form is the matrix object studied. When $m = 2n$ is even and $\Omega$ is alternating and invertible, its determinant is a square, $\det(\Omega) = \operatorname{Pf}(\Omega)^2$, where the <strong>Pfaffian</strong> $\operatorname{Pf}(\Omega)$ is the polynomial</p>
+<p>$$
+\operatorname{Pf}(\Omega) = \frac{1}{2^n n!} \sum_{\sigma \in S_{2n}} \operatorname{sgn}(\sigma) \prod_{i=1}^{n} \Omega_{\sigma(2i-1), \sigma(2i)}.
+$$</p>
+<p>The Pfaffian and its relation to the symplectic form are treated. Over a ring in which $2^n n!$ is invertible, for instance a $\mathbb{Q}$-algebra or a field of characteristic zero, the displayed formula is directly available; the summand is in fact divisible by $2^n n!$ in $\mathbb{Z}[\Omega_{ij}]$, so the Pfaffian is an integral polynomial and is defined over every commutative ring. The identity $\det(\Omega) = \operatorname{Pf}(\Omega)^2$ holds over every commutative ring because both sides are integral polynomials and the identity holds over $\mathbb{Q}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The determinant of an endomorphism of a free module of rank $m$ is the scalar by which it acts on the top exterior power $\Lambda^m M$; in a basis it is the Leibniz sum $\sum_\sigma \operatorname{sgn}(\sigma)\prod_q a_{q,\sigma(q)}$. It is multiplicative, $\det(g \circ f) = \det(g)\det(f)$, it satisfies $\det(f^{\mathsf{T}}) = \det(f)$, and an endomorphism is invertible exactly when its determinant is a unit of the base ring. The characteristic polynomial is governed by the traces of the induced maps on the exterior powers, $\det(\mathrm{id} + tf) = \sum_k \operatorname{tr}(\Lambda^k f)t^k$.</p>
+<p>In every degree the induced map $\Lambda^n f$ has matrix the $n \times n$ minors of the matrix of $f$, and the identity $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$ reads, in entries, as the Cauchy–Binet formula</p>
+<p>$$
+\det\bigl((AB)_{I,J}\bigr) = \sum_K \det(A_{I,K})\det(B_{K,J}).
+$$</p>
+<p>The alternating forms of degree $n$ are the linear functionals on $\Lambda^n M$, equivalently, for free $M$ of finite rank, the elements of $\Lambda^n(M^*)$; they form the graded-commutative algebra $\Lambda(M^*)$, with wedge product and contravariant pullback. This algebra, with the extra structure of a smooth manifold supplying the exterior derivative, is the algebra of differential forms, and the determinant is the factor by which a linear map scales a volume form. For an alternating matrix of even size the determinant is the square of the Pfaffian.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$; the default base</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>$M$, $N$, $P$</td>
+<td>$R$-modules, free of finite rank where a determinant is taken</td>
+</tr>
+<tr>
+<td>$\Lambda^n M$</td>
+<td>$n$-th exterior power</td>
+</tr>
+<tr>
+<td>$\Lambda^n f$</td>
+<td>Induced map on exterior powers</td>
+</tr>
+<tr>
+<td>$e_1, \ldots, e_m$; $f_1, \ldots, f_r$</td>
+<td>Bases of $M$ and of $N$ in which matrices and minors are written</td>
+</tr>
+<tr>
+<td>$A_{I,J}$</td>
+<td>Minor of a matrix on row set $I$ and column set $J$</td>
+</tr>
+<tr>
+<td>$\det(f)$, $\det(A)$</td>
+<td>Determinant: scalar action on $\Lambda^m M$, Leibniz sum in a basis</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_R(M)$</td>
+<td>$R$-linear endomorphisms of $M$; the home of $\det$, $\operatorname{tr}$ and $\operatorname{adj}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$</td>
+<td>Trace; $\operatorname{tr}(\Lambda^k f)$ is the trace on $\Lambda^k M$</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}(f)$</td>
+<td>Adjugate; $f \circ \operatorname{adj}(f) = \det(f)\,\mathrm{id}_M$</td>
+</tr>
+<tr>
+<td>$\det(\mathrm{id} + tf) = \sum_k \operatorname{tr}(\Lambda^k f)t^k$</td>
+<td>Characteristic-polynomial identity</td>
+</tr>
+<tr>
+<td>$\operatorname{Alt}^n(M; R) \cong (\Lambda^n M)^*$</td>
+<td>Alternating $n$-forms on $M$</td>
+</tr>
+<tr>
+<td>$\operatorname{Alt}^\bullet(M; R) \cong \Lambda(M^*)$</td>
+<td>Algebra of alternating forms, for free $M$ of finite rank</td>
+</tr>
+<tr>
+<td>$\alpha \wedge \beta$</td>
+<td>Wedge product of forms; graded-commutative</td>
+</tr>
+<tr>
+<td>$f^*$</td>
+<td>Pullback of forms, contravariant: $(g \circ f)^* = f^* \circ g^*$</td>
+</tr>
+<tr>
+<td>$\Omega = (\omega_{ij})$</td>
+<td>Matrix of an alternating $2$-form, $\Omega^{\mathsf{T}} = -\Omega$</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}(\Omega)$</td>
+<td>Pfaffian of an alternating matrix of even size; $\det(\Omega) = \operatorname{Pf}(\Omega)^2$</td>
+</tr>
+<tr>
+<td>$\Omega^k(M) = \Gamma(\Lambda^k T^*M)$</td>
+<td>Module of differential $k$-forms on a smooth manifold</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the determinant as the action on the top exterior power and the Cauchy–Binet formula.</li>
+<li>Werner Greub, <em>Multilinear Algebra</em> (Springer, 2nd ed. 1978), for minors, alternating forms, and the determinant defined by multilinear algebra.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for the determinant over a commutative ring and the adjugate identity.</li>
+<li>Gilbert Strang, <em>Linear Algebra and Its Applications</em> (Cengage, 4th ed. 2005), for the Leibniz formula, the classical expansions, and the volume interpretation.</li>
+<li>Israel M. Gelfand and Mikhail M. Kapranov and Andrei V. Zelevinsky, <em>Discriminants, Resultants, and Multidimensional Determinants</em> (Birkhäuser, 1994), for determinants, minors, and their geometric role.</li>
+<li>Frank W. Warner, <em>Foundations of Differentiable Manifolds and Lie Groups</em> (Springer, 1983), for alternating forms on the tangent space and the prototype of differential forms.</li>
+<li>D. G. Northcott, <em>Multilinear Algebra</em> (Cambridge University Press, 1984), for the exterior algebra of the dual and the algebra of alternating forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Two-Dimensional Algebras and the Three Kinds of Rotation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-three-two-dimensional-algebras-and-the-three-kinds-of-rotation"><strong>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The vector space $\mathbb{R}^2$ carries exactly three commutative unital algebra structures up to isomorphism, and the three have an interpretation in terms of rotations. Multiplication by an element of unit norm is a linear transformation of the plane; when the norm form is positive definite the transformation is an ordinary rotation, when it is indefinite it is a hyperbolic rotation, and when it is degenerate it is a parabolic rotation, a shear. The three cases are the complex numbers, the split complex numbers and the dual numbers, and the sign of the square of the generator — $-1$, $+1$ or $0$ — is what selects the geometry.</p>
+<p>This article develops the three cases side by side: the algebra, its units, its norm form, the parametrisation of the group of norm-one units, the matrix of multiplication, the orbit of a point and the fixed lines. It then explains the two structural facts that make the picture what it is: multiplicative rotation belongs to dimension two because a multiplicative norm form on the plane has only the three possible signatures, and the same construction in dimension three forces one to give up commutativity, the smallest algebra that serves being the four-dimensional quaternions.</p>
+<p>Throughout, the generator of the algebra is written $\omega$ with $\omega^2 = \sigma$, where $\sigma = -1$ for $\mathbb{C}$, $\sigma = +1$ for $\mathbb{D}$ and $\sigma = 0$ for $\mathbb{D}'$. A general element is $z = x + \omega y$ with $x, y \in \mathbb{R}$, and the three algebras are the quotient algebras</p>
+<p>$$
+\mathbb{C} = \frac{\mathbb{R}[\omega]}{(\omega^2+1)}, \qquad \mathbb{D} = \frac{\mathbb{R}[\omega]}{(\omega^2-1)}, \qquad \mathbb{D}' = \frac{\mathbb{R}[\omega]}{(\omega^2)} .
+$$</p>
+<p>The symbol $\mathbb{D}$ denotes the split complex numbers and $\mathbb{D}'$ the dual numbers, as fixed in the corpus.</p>
+<h2 id="multiplication-by-a-unit">Multiplication by a Unit</h2>
+<p>Let $A$ be one of the three algebras and let $u = a + \omega b$ be a unit. Left multiplication by $u$,</p>
+<p>$$
+L_u(x + \omega y) = (a + \omega b)(x + \omega y) = (ax + \sigma by) + \omega\,(ay + bx),
+$$</p>
+<p>is an $\mathbb{R}$-linear map of $\mathbb{R}^2$. In the basis $(1, \omega)$ its matrix is</p>
+<p>$$
+M(u) = \begin{pmatrix} a & \sigma b \\ b & a \end{pmatrix},
+\qquad
+\det M(u) = a^2 - \sigma b^2 .
+$$</p>
+<p>The assignment $u \mapsto M(u)$ is an injective algebra homomorphism $A \to M_2(\mathbb{R})$, so multiplication by units realises the unit group $A^\times$ as a subgroup of $\mathrm{GL}_2(\mathbb{R})$.</p>
+<p><strong>Definition.</strong> The <strong>norm form</strong> of $A$ is</p>
+<p>$$
+N(x + \omega y) = x^2 - \sigma y^2 =
+\begin{cases}
+x^2 + y^2, & \sigma = -1, \\
+x^2 - y^2, & \sigma = +1, \\
+x^2, & \sigma = 0 .
+\end{cases}
+$$</p>
+<p>It satisfies $N(uv) = N(u)N(v)$ and $\det M(u) = N(u)$, and the <strong>rotation group</strong> of $A$ is the group of norm-one elements</p>
+<p>$$
+G_A = \{u \in A : N(u) = 1\}.
+$$</p>
+<p>Multiplicativity makes $G_A$ a group, and for each $u \in G_A$ the map $L_u$ preserves the quadratic form $N$ on $\mathbb{R}^2$:</p>
+<p>$$
+N(u \cdot z) = N(u)N(z) = N(z), \qquad z \in A .
+$$</p>
+<p>So the three cases are the three signatures of a quadratic form in two variables: definite, indefinite and degenerate. That exhausts the possibilities, and it is why there are exactly three kinds of rotation of this kind.</p>
+<h2 id="the-elliptic-case-the-complex-numbers">The Elliptic Case: The Complex Numbers</h2>
+<p>For $\sigma = -1$ the norm form is positive definite, $N = x^2 + y^2$, and it vanishes only at the origin; hence every nonzero complex number is a unit. The norm-one group is parametrised by the angle,</p>
+<p>$$
+u(\theta) = \cos\theta + i \sin\theta, \qquad N(u(\theta)) = \cos^2\theta + \sin^2\theta = 1,
+$$</p>
+<p>and $u(\theta)u(\phi) = u(\theta + \phi)$ by the addition formulas, so $G_{\mathbb{C}} = U(1) \cong \mathbb{R}/2\pi\mathbb{Z}$. The matrix of multiplication is</p>
+<p>$$
+M(u(\theta)) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in SO(2),
+$$</p>
+<p>since $a = \cos\theta$, $b = \sin\theta$ and $\det M = 1$. The map $\theta \mapsto M(u(\theta))$ is an isomorphism $U(1) \cong SO(2)$: every determinant-one orthogonal transformation of the plane arises, and the parametrisation is the usual one.</p>
+<p><strong>Orbits and fixed lines.</strong> Multiplication by $u(\theta)$ preserves $N$, so it maps each circle $x^2 + y^2 = r^2$ to itself; the orbit of a point $z \neq 0$ is the circle of radius $|z|$. For $\theta$ not a multiple of $\pi$ the transformation has no real fixed line, because a real eigenvector would require $\sin\theta = 0$; the only fixed point is the origin. The group is compact, and the parametrisation is by an angle in a bounded interval.</p>
+<h2 id="the-hyperbolic-case-the-split-complex-numbers">The Hyperbolic Case: The Split Complex Numbers</h2>
+<p>For $\sigma = +1$ the norm form is indefinite, $N = x^2 - y^2$, and it vanishes exactly on the two null lines $x = \pm y$; the elements on those lines, other than $0$, are the zero divisors of $\mathbb{D}$. The norm-one group is the hyperbola $x^2 - y^2 = 1$, which has two branches. On the branch $x > 0$ it is parametrised by the rapidity,</p>
+<p>$$
+u(t) = \cosh t + j \sinh t, \qquad N(u(t)) = \cosh^2 t - \sinh^2 t = 1,
+$$</p>
+<p>and $u(t)u(s) = u(t+s)$ by the addition formulas for the hyperbolic functions, so that branch is a copy of $\mathbb{R}$ and is the identity component of $G_{\mathbb{D}}$; the other branch is the negative of the first, and $G_{\mathbb{D}} \cong \mathbb{R} \times \mathbb{Z}/2\mathbb{Z}$. The matrix of multiplication is</p>
+<p>$$
+M(u(t)) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}
+\in SO(1,1),
+$$</p>
+<p>since $\det M = \cosh^2 t - \sinh^2 t = 1$ and the matrix preserves the form $x^2 - y^2$ of signature $(1,1)$. The one-parameter group $\{M(u(t))\}$ is the connected component of $SO(1,1)$, the hyperbolic rotation group, and $t$ is the rapidity: it is additive, but the parameter range is unbounded, and the group is non-compact.</p>
+<p><strong>Orbits and fixed lines.</strong> Multiplication by $u(t)$ preserves $x^2 - y^2$, so the orbit of a point with $x^2 - y^2 = r^2 \neq 0$ is the hyperbola $x^2 - y^2 = r^2$ within one of the four connected regions; the four null lines are the asymptotes. The two null lines are fixed: the idempotents</p>
+<p>$$
+e_+ = \tfrac{1}{2}(1 + j), \qquad e_- = \tfrac{1}{2}(1 - j)
+$$</p>
+<p>satisfy $u(t)e_+ = e^{t}e_+$ and $u(t)e_- = e^{-t}e_-$, so the lines $\mathbb{R}e_+$ and $\mathbb{R}e_-$ are fixed pointwise up to scaling. These are exactly the lines on which $N$ vanishes, and they are the null directions of the indefinite form.</p>
+<h2 id="the-parabolic-case-the-dual-numbers">The Parabolic Case: The Dual Numbers</h2>
+<p>For $\sigma = 0$ the norm form is degenerate, $N = x^2$, and it vanishes on the whole line $x = 0$, which is the maximal ideal $(\varepsilon)$. The norm-one group consists of the elements with $x = \pm 1$, so it too has two branches, each a line. On the branch $x = 1$,</p>
+<p>$$
+u(t) = 1 + \varepsilon t, \qquad N(u(t)) = 1,
+$$</p>
+<p>and $u(t)u(s) = u(t+s)$ because $\varepsilon^2 = 0$; thus the identity component of $G_{\mathbb{D}'}$ is a copy of $\mathbb{R}$, and the second branch is $-(1 + \varepsilon t)$. The matrix of multiplication is</p>
+<p>$$
+M(u(t)) = \begin{pmatrix} 1 & 0 \\ t & 1 \end{pmatrix},
+$$</p>
+<p>a transvection, with $\det M = 1$. The one-parameter group of transvections is the parabolic rotation group, a copy of $(\mathbb{R},+)$; it is the degenerate limit of both the elliptic and the hyperbolic families as the quadratic form degenerates, and it is a unipotent group preserving the flag $0 \subset \mathbb{R}\varepsilon \subset \mathbb{D}'$.</p>
+<p>The same one-parameter group is the shear group of the degenerate plane: the transvection $(x,y) \mapsto (x, tx+y)$ shears the second coordinate by an amount proportional to the first while fixing the first, exactly as the elliptic rotation mixes the two coordinates through a bounded periodic angle and the hyperbolic rotation mixes them through an unbounded parameter. The composition law is the distinguishing feature: the parameter is additive in all three cases, $u(t_1)u(t_2) = u(t_1 + t_2)$, and what separates the cases is the range over which the parameter runs — a circle of length $2\pi$ in the elliptic case, a line in the hyperbolic case, and a line of unipotent transformations in the parabolic case. It is that additive law, with the parameter range left unrestricted, that makes the shear the parabolic member of the trichotomy of angle-addition laws.</p>
+<p><strong>Orbits and fixed lines.</strong> Multiplication by $u(t)$ sends $(x,y)$ to $(x, tx + y)$; the orbit of a point with $x \neq 0$ is the horizontal line through it, and the orbit of a point of the axis $x = 0$ is the point itself. The line $\mathbb{R}\varepsilon$ is fixed pointwise, and it is precisely the degenerate direction of the form, namely the set where $N$ vanishes. There is no second fixed line, and the parameter is unbounded.</p>
+<h2 id="the-three-together">The Three Together</h2>
+<p>The three cases differ in every feature that the quadratic form controls.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generator square $\sigma$</td>
+<td>$-1$</td>
+<td>$+1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>norm form $N$</td>
+<td>$x^2+y^2$</td>
+<td>$x^2-y^2$</td>
+<td>$x^2$</td>
+</tr>
+<tr>
+<td>signature</td>
+<td>$(2,0)$ definite</td>
+<td>$(1,1)$ indefinite</td>
+<td>$(1,0)$ degenerate</td>
+</tr>
+<tr>
+<td>zero divisors</td>
+<td>none</td>
+<td>on $x=\pm y$</td>
+<td>on $x=0$</td>
+</tr>
+<tr>
+<td>$G_A = \{u : N(u)=1\}$</td>
+<td>$U(1)\cong SO(2)$, connected</td>
+<td>two branches; identity component $\cong SO(1,1)_0$</td>
+<td>two branches; identity component the transvections</td>
+</tr>
+<tr>
+<td>matrix</td>
+<td>$\begin{pmatrix} a & -b \\ b & a\end{pmatrix}$</td>
+<td>$\begin{pmatrix} a & b \\ b & a\end{pmatrix}$</td>
+<td>$\begin{pmatrix} a & 0 \\ b & a\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>orbit of a generic point</td>
+<td>circle</td>
+<td>hyperbola</td>
+<td>horizontal line</td>
+</tr>
+<tr>
+<td>fixed lines</td>
+<td>none</td>
+<td>two null lines</td>
+<td>one null line</td>
+</tr>
+<tr>
+<td>group</td>
+<td>compact</td>
+<td>non-compact</td>
+<td>non-compact, unipotent</td>
+</tr>
+</tbody>
+</table></div>
+<p>The definite case gives a compact rotation group with no fixed direction and closed orbits; the indefinite case gives a non-compact group with two fixed null directions and open orbits; the degenerate case gives a unipotent group with one fixed null direction and orbits that are lines. In every case the fixed directions are the directions on which the norm form vanishes, and the rotation is norm-preserving by multiplicativity.</p>
+<h2 id="the-classification-of-the-two-dimensional-algebras">The Classification of the Two-Dimensional Algebras</h2>
+<p>The three cases are not merely three examples; they are all the examples.</p>
+<p><strong>Theorem (classification in dimension two).</strong> Let $A$ be a two-dimensional commutative unital associative algebra over $\mathbb{R}$. Then $A$ is isomorphic to exactly one of $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$.</p>
+<p><em>Proof.</em> Write $A = \mathbb{R}\cdot 1 \oplus V$ with $V$ one-dimensional, and choose a generator $\omega$ spanning $V$. Then $\omega^2 = p\cdot 1 + c\,\omega$ for some $p, c \in \mathbb{R}$, so $A \cong \mathbb{R}[\omega]/(\omega^2 - p\omega - c)$ and $A$ is determined up to isomorphism by the polynomial $\omega^2 - p\omega - c$, hence by the sign of its discriminant $p^2 + 4c$. If $p^2 + 4c < 0$ the polynomial is irreducible over $\mathbb{R}$ and</p>
+<p>$$
+A \cong \mathbb{R}[\omega]/(\omega^2+1) = \mathbb{C};
+$$</p>
+<p>if $p^2+4c > 0$ the polynomial has two distinct real roots and $A \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{D}$; if $p^2 + 4c = 0$ the polynomial is a square, $(\omega - p/2)^2 = 0$ after completing the square, so $A \cong \mathbb{R}[\omega]/(\omega^2) = \mathbb{D}'$. $\square$</p>
+<p>The three kinds of rotation therefore exhaust the rotations implemented by multiplication in the plane, and the type of the rotation is the sign of the discriminant of the quadratic form: positive definite gives elliptic, indefinite gives hyperbolic, degenerate gives parabolic.</p>
+<h2 id="why-three-dimensions-force-non-commutativity">Why Three Dimensions Force Non-Commutativity</h2>
+<p>The plane admits three multiplicative rotation theories; the next dimension does not admit any commutative one.</p>
+<p><strong>Theorem (no commutative rotation theory in dimension three).</strong> There is no three-dimensional commutative unital real division algebra. More generally, if $A$ is a finite-dimensional real algebra with a multiplicative norm form that is positive definite, then $\dim_\mathbb{R} A \in \{1, 2, 4, 8\}$, with the cases $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$ (Hurwitz).</p>
+<p><em>Proof.</em> A commutative unital real algebra that is a division algebra is a field extension of $\mathbb{R}$ of finite degree equal to its dimension. Every finite field extension of $\mathbb{R}$ has degree at most $2$, because every real polynomial of odd degree has a real root, so every element of the extension has minimal polynomial of degree $1$ or $2$ and the only irreducible polynomials are the linear ones and the quadratics with negative discriminant; hence the degree is at most $2$. The Hurwitz statement is the classical theorem on composition algebras, valid without commutativity; the only positive-dimensional real composition algebras are $\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{O}$. $\square$</p>
+<p>So a commutative algebra cannot implement rotations in $\mathbb{R}^3$; the smallest algebra that can is the four-dimensional, non-commutative quaternion algebra $\mathbb{H}$. The rotations of $\mathbb{R}^3$ are obtained by letting the unit quaternions act on the imaginary subspace $\operatorname{Im}\mathbb{H} = \mathbb{R}^3$ by conjugation.</p>
+<p><strong>Theorem (the quaternion rotation group).</strong> For a unit quaternion $q$ the map</p>
+<p>$$
+\rho_q(p) = q\,p\,q^{-1}, \qquad p \in \operatorname{Im}\mathbb{H},
+$$</p>
+<p>is a rotation of $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$, and $q \mapsto \rho_q$ is a surjective group homomorphism $S^3 \to SO(3)$ with kernel $\{\pm 1\}$; hence $SO(3) \cong S^3/\{\pm 1\}$.</p>
+<p><em>Proof.</em> Multiplication by a unit preserves the norm $N(p) = p\bar p$, so $\rho_q$ is norm-preserving; it fixes the real part, since it fixes the scalars, so it preserves $\operatorname{Im}\mathbb{H}$; and it is an isometry of a three-dimensional space, hence an orthogonal transformation. Its determinant is $+1$ because $q \mapsto \rho_q$ is continuous and $S^3$ is connected, the value at $q = 1$ being the identity. Surjectivity and the kernel are the standard facts of the quaternion representation of rotations. $\square$</p>
+<p>The three two-dimensional theories thus sit at the bottom of a hierarchy: the commutative cases are exactly the two-dimensional composition algebras, and passing to three dimensions forces one to give up commutativity and to use the quaternion algebra, whose unit group double-covers the rotation group.</p>
+<h2 id="summary">Summary</h2>
+<p>The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{D} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{D}' = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $N(u) = a^2 - \sigma b^2$, and the <strong>norm form</strong> is multiplicative; the <strong>rotation group</strong> $G_A = \{u : N(u)=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong U(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{D}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{D}'$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.</p>
+<p>Passing to dimension three is impossible in the commutative setting: there is no three-dimensional commutative real division algebra, and the Hurwitz theorem restricts positive-definite multiplicative norms to dimensions $1, 2, 4, 8$. The rotations of $\mathbb{R}^3$ are instead obtained from the non-commutative quaternions, acting by conjugation $\rho_q(p) = qpq^{-1}$ on the imaginary subspace, with $SO(3) \cong S^3/\{\pm 1\}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\omega$</td>
+<td>Generator of a two-dimensional algebra, $\omega^2 = \sigma$</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>$-1$ for $\mathbb{C}$, $+1$ for $\mathbb{D}$, $0$ for $\mathbb{D}'$</td>
+</tr>
+<tr>
+<td>$i, j, \varepsilon$</td>
+<td>Generators of $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$</td>
+</tr>
+<tr>
+<td>$z = x+\omega y$</td>
+<td>General element</td>
+</tr>
+<tr>
+<td>$L_u$</td>
+<td>Left multiplication by $u$</td>
+</tr>
+<tr>
+<td>$M(u) = \begin{pmatrix} a & \sigma b\\ b & a\end{pmatrix}$</td>
+<td>Matrix of $L_u$ in the basis $(1,\omega)$</td>
+</tr>
+<tr>
+<td>$N(x+\omega y) = x^2 - \sigma y^2$</td>
+<td>Norm form, multiplicative</td>
+</tr>
+<tr>
+<td>$G_A = \{u : N(u)=1\}$</td>
+<td>Rotation group</td>
+</tr>
+<tr>
+<td>$u(\theta), u(t)$</td>
+<td>Parametrisations by angle and by rapidity</td>
+</tr>
+<tr>
+<td>$e_\pm = \tfrac{1}{2}(1\pm j)$</td>
+<td>Idempotents of $\mathbb{D}$, spanning the null lines</td>
+</tr>
+<tr>
+<td>$SO(2), SO(1,1)$</td>
+<td>Elliptic and hyperbolic rotation groups</td>
+</tr>
+<tr>
+<td>$(\mathbb{R},+)$</td>
+<td>Parabolic rotation group, the transvections and shears</td>
+</tr>
+<tr>
+<td>$S^3 = \{q\in\mathbb{H} : N(q)=1\}$</td>
+<td>Unit quaternions</td>
+</tr>
+<tr>
+<td>$\rho_q(p) = qpq^{-1}$</td>
+<td>Rotation of $\operatorname{Im}\mathbb{H}$ by a unit quaternion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge, 1995), for the orthogonal and unitary groups attached to quadratic forms and the split cases.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the composition-algebra classification and the quaternion rotation group.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2nd ed. 2001), for the split and degenerate geometries and their rotation groups.</li>
+<li>Israel M. Gelfand, Mikhail M. Kapranov and Andrei V. Zelevinsky, <em>Discriminants, Resultants and Multidimensional Determinants</em> (Birkhäuser, 1994), for the discriminant classification of low-dimensional algebras.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the classification of the two-dimensional algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homotopy Groups and Fibrations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="homotopy-groups-and-fibrations"><strong>Homotopy Groups and Fibrations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The fundamental group of <em>The Fundamental Group and Covering Spaces</em> records the loops of a space; the <strong>higher homotopy groups</strong> record the maps of spheres of every dimension, and they are the most sensitive invariants of homotopy theory, in the sense that a map of simply connected CW complexes inducing isomorphisms on all of them is a homotopy equivalence. Unlike homology, they are not computable from a chain complex: they carry no excision, they are almost never finitely generated in an obvious way, and even the groups $\pi_k(S^n)$ for $k > n$ are not known in closed form. What replaces computability is a long exact sequence: for a <strong>fibration</strong> $F \to E \to B$ the homotopy groups of the three spaces are related by an exact sequence running downwards in degree, and this sequence, together with the standard fibrations — the path–loop fibration, the Hopf fibrations, the fibrations of classical groups — computes almost everything that is computed.</p>
+<p>The article presents the homotopy groups, their basic properties — abelian in degree at least two, functorial, homotopy invariant, compatible with products — and the two theorems that connect them with the homology of <em>Simplicial and Singular Homology</em>: the <strong>Hurewicz theorem</strong>, which identifies the first nonvanishing homotopy and homology groups in the simply connected case, and the <strong>Whitehead theorem</strong>, which converts a homology equivalence into a homotopy equivalence for simply connected CW complexes. It then presents fibrations, the long exact sequence, and the Hopf fibrations with their consequences. The <strong>Leray–Serre spectral sequence</strong>, which computes the homology of a fibration and is the companion of the long exact sequence, is not covered here. The <strong>bundles</strong> that give the geometrically natural examples are those of the written <em>Fibre Bundles, Connections and Curvature</em>; a fibration is the homotopy-theoretic weakening of a bundle, in which the local triviality is replaced by a lifting property, and the two agree for the fibre bundles over paracompact bases.</p>
+<p>Throughout, spaces are based and maps are basepoint-preserving unless stated; $\pi_n(X,x_0)$ is the set of homotopy classes of based maps $S^n \to X$, and $S^n$ carries the basepoint $* = (1,0,\ldots,0)$. The interval and sphere notation is that of <em>The Fundamental Group and Covering Spaces</em>.</p>
+<h2 id="homotopy-groups">Homotopy Groups</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $X$ be a topological space with basepoint $x_0$ and let $n \geq 0$. The <strong>$n$-th homotopy group</strong> is the set of homotopy classes relative to the basepoint of based maps,</p>
+<p>$$
+\pi_n(X,x_0) = \bigl[(S^n, *), (X, x_0)\bigr],
+$$</p>
+<p>with the group structure defined for $n \geq 1$ by the suspension coordinate: a based map $S^n \to X$ is viewed as a map $I^n \to X$ with the boundary of the cube collapsed to $x_0$, and two such maps are added by using the first on $[0,\tfrac12]\times I^{n-1}$ and the second on $[\tfrac12,1]\times I^{n-1}$. For $n = 0$, $\pi_0(X,x_0)$ is the set of path components of $X$.</p>
+<p><strong>Theorem.</strong> For $n \geq 1$, $\pi_n(X,x_0)$ is a group under the operation above; for $n \geq 2$ it is abelian. The operation is independent of the order of the coordinates, and for $n \geq 2$ the two additions along two different coordinates coincide and give the same abelian group.</p>
+<p><em>Proof.</em> The concatenation in the first coordinate gives a group by the same reparametrisation argument as for $\pi_1$: the constant map is the identity and the reversed coordinate gives the inverse. For $n \geq 2$ there is a second, independent concatenation, in the second coordinate, and the standard <strong>Eckmann–Hilton argument</strong> shows that two operations on a set which are compatible in the sense of sharing a unit and satisfying the interchange law coincide and are abelian: writing $+_1$ and $+_2$ for the two additions, the interchange identity $(a+_1 b) +_2 (c +_1 d) = (a+_2 c) +_1 (b +_2 d)$ holds because the four blocks of the cube may be taken in either order, and setting $a = d = e$ (the identity) and $b$, $c$ arbitrary gives $b +_1 c = b +_2 c$, while setting $b = c = e$ gives $a +_1 d = d +_1 a$. $\square$</p>
+<p><strong>Proposition.</strong> A based continuous map $f : (X,x_0) \to (Y,y_0)$ induces $f_* : \pi_n(X,x_0) \to \pi_n(Y,y_0)$ by composition, $(gf)_* = g_*f_*$ and $(\mathrm{id})_* = \mathrm{id}$; homotopic based maps induce equal maps; a homotopy equivalence induces isomorphisms; and for $X \times Y$ the projections give $\pi_n(X\times Y) \cong \pi_n(X)\times\pi_n(Y)$.</p>
+<p><em>Proof.</em> The first three statements are immediate from the description of $\pi_n$ as a set of homotopy classes. For the product, a based map $S^n \to X\times Y$ is a pair of based maps, and homotopies decompose in the same way. $\square$</p>
+<p><strong>Remark.</strong> There is no analogue of the covering-space classification for higher homotopy: the groups $\pi_n$ are not detectable by a covering space, and there is no excision theorem. What structure there is comes from fibrations, below, and from the suspension.</p>
+<p><strong>Theorem (suspension).</strong> There is a natural isomorphism</p>
+<p>$$
+\pi_n(X, x_0) \cong \bigl[(\Sigma S^{n-1}, *), (X,x_0)\bigr] \cong \bigl[(S^{n-1},*), (\Omega X, c)\bigr] \cong \pi_{n-1}(\Omega X),
+$$</p>
+<p>where $\Sigma$ is the reduced suspension and $\Omega X$ the based loop space of <em>The Fundamental Group and Covering Spaces</em>.</p>
+<p><em>Proof.</em> A based map $S^n \to X$ is adjoint to a based map $S^{n-1} \to \Omega X$ by the exponential law for compactly generated spaces, which holds for the closed interval and the sphere and is a formality of the product topology of <em>Topological Spaces</em>. $\square$</p>
+<h2 id="connecting-homotopy-to-homology">Connecting Homotopy to Homology</h2>
+<h3 id="the-hurewicz-homomorphism">The Hurewicz Homomorphism</h3>
+<p><strong>Definition.</strong> For $n \geq 1$ the <strong>Hurewicz homomorphism</strong> is</p>
+<p>$$
+h_n : \pi_n(X,x_0) \longrightarrow H_n(X;\mathbb{Z}), \qquad h_n[f] = f_*[S^n],
+$$</p>
+<p>the image of the fundamental class of the sphere under the induced map on homology. It is a natural transformation of functors, additive, and $h_1$ is the abelianisation of the fundamental group.</p>
+<p><strong>Theorem (Hurewicz).</strong> Let $X$ be a path-connected space and $n \geq 1$.</p>
+<ol>
+<li>If $\pi_k(X) = 0$ for $k < n$ and $n \geq 2$, then $H_k(X;\mathbb{Z}) = 0$ for $0 < k < n$ and $h_n$ is an isomorphism.</li>
+<li>If in addition $\pi_n(X)$ is free, then $H_{n+1}$ has no torsion part contributed by $\pi_n$, and $h_{n+1}$ is surjective when $H_{n+1}$ is generated by classes represented by spheres.</li>
+</ol>
+<p>In the simply connected case with $n = 2$: if $X$ is simply connected then $h_2 : \pi_2(X) \to H_2(X;\mathbb{Z})$ is an isomorphism.</p>
+<p><em>Proof sketch.</em> The argument proceeds by induction over a CW structure: attach cells of dimension $n+1$ and higher to $X$ to form a space in the relevant range, and compare $\pi_n$ and $H_n$ on the resulting skeleta, using that the first group and homology of a simply connected space with no cells below dimension $n$ are both generated by the $n$-cells modulo the relations imposed by the $(n+1)$-cells. The cellular boundary formula of <em>CW Complexes and Cellular Approximation</em> supplies the comparison. $\square$</p>
+<p><strong>Corollary (Hurewicz, $n = 1$).</strong> If $X$ is path-connected then $h_1$ induces an isomorphism $H_1(X;\mathbb{Z}) \cong \pi_1(X,x_0)^{\mathrm{ab}}$, the abelianisation of the fundamental group.</p>
+<p><em>Proof.</em> The first homology is the quotient of the cycles by the boundaries, and the identification of the singular complex with the cellular complex of a one-dimensional approximation reduces to the definition of the abelianisation. $\square$</p>
+<p><strong>Example.</strong> For $S^n$ with $n \geq 2$, $X$ is simply connected and $H_k(S^n) = 0$ for $0 < k < n$, so $h_n$ is an isomorphism and $\pi_n(S^n) \cong \mathbb{Z}$. For a wedge of $m$ circles, $\pi_1$ is free of rank $m$ and $H_1 \cong \mathbb{Z}^m$, the abelianisation.</p>
+<h3 id="the-whitehead-theorem">The Whitehead Theorem</h3>
+<p><strong>Definition.</strong> A map $f : X \to Y$ is a <strong>weak homotopy equivalence</strong> if it induces isomorphisms on $\pi_n$ for all $n$ and all basepoints. A CW approximation of $Y$ is a weak homotopy equivalence $\Gamma Y \to Y$ with $\Gamma Y$ a CW complex.</p>
+<p><strong>Theorem (Whitehead).</strong> Let $f : X \to Y$ be a map of path-connected CW complexes and suppose $f$ is a weak homotopy equivalence. Then $f$ is a homotopy equivalence. More generally, if $f_* : \pi_k(X) \to \pi_k(Y)$ is an isomorphism for $k < n$ and a surjection for $k = n$, then $f$ is an <strong>$n$-equivalence</strong>: it induces isomorphisms on $H_k$ for $k < n$ and a surjection on $H_n$, and it is homotopic to a cellular map whose restriction to skeleta realises the same connectivity dimension by dimension.</p>
+<p><em>Proof sketch.</em> By cellular approximation, $f$ may be assumed cellular, and after replacing $Y$ by the mapping cylinder of $f$ one reduces to showing that a CW pair $(Y,X)$ with $\pi_k(Y,X) = 0$ for all $k$ is such that $X$ is a deformation retract of $Y$. The vanishing of the relative homotopy groups allows one to push the cells of $Y \setminus X$ off themselves one at a time, starting in the lowest dimension, and the weak topology makes the process converge. $\square$</p>
+<p><strong>Corollary.</strong> Every space has a CW approximation, and two spaces are weakly homotopy equivalent exactly when their CW approximations are homotopy equivalent. Consequently homology and homotopy invariants may always be computed on CW models.</p>
+<p><strong>Example.</strong> The <strong>Hopf map</strong> $\eta : S^3 \to S^2$ induces an isomorphism on $H_0$ and on $H_1$, where the groups are $\mathbb{Z}$ and $0$, and it induces the zero map in every degree $k \geq 2$: the group $H_2(S^3;\mathbb{Z})$ vanishes and the target has no homology above degree two. It is nevertheless not nullhomotopic, because it detects a nonzero class in $\pi_3(S^2) \cong \mathbb{Z}$, as computed below. The example shows that homology does not determine homotopy: $S^2$ is simply connected but $\pi_2(S^2) \cong \mathbb{Z} \neq 0$, so $S^2$ is not $2$-connected, the connectivity hypothesis of the Hurewicz theorem is unavailable in degree three, and this is exactly why $H_3(S^2;\mathbb{Z}) = 0$ carries no information about $\pi_3(S^2) \cong \mathbb{Z}$.</p>
+<p><strong>Remark (the hypotheses of the Whitehead theorem).</strong> The homology form of the theorem — a map of simply connected CW complexes inducing isomorphisms on all homology groups is a homotopy equivalence — needs the simple connectivity, and it cannot be weakened to a criterion on homology in general. Let $X$ be a closed oriented $3$-manifold with the homology of $S^3$ but $\pi_1(X) \neq 1$, for instance the <strong>Poincaré homology sphere</strong>, whose fundamental group is the binary icosahedral group of order $120$, a perfect group, so that $H_1(X;\mathbb{Z}) = 0$ as the homology of a sphere requires. By Hopf's theorem, which identifies $[X,S^3]$ with $H^3(X;\mathbb{Z})$ for a $3$-dimensional complex, there is a map $f : X \to S^3$ whose degree is $1$. Then $f_*$ is an isomorphism on $H_0$ and $H_3$, where both spaces have $\mathbb{Z}$, and on $H_1$ and $H_2$, where both have $0$; so $f$ is a homology equivalence. It is not a homotopy equivalence, since $\pi_1(X) \neq 1 = \pi_1(S^3)$ and a homotopy equivalence induces an isomorphism on the fundamental group. This is why the theorem is stated above in its homotopy form.</p>
+<h2 id="fibrations">Fibrations</h2>
+<h3 id="definitions">Definitions</h3>
+<p><strong>Definition.</strong> A map $p : E \to B$ has the <strong>homotopy lifting property (HLP)</strong> with respect to a space $X$ if, for every commutative square</p>
+<p>$$
+X \times \{0\} \xrightarrow{\ \tilde h_0\ } E, \qquad X \times I \xrightarrow{\ h\ } B, \qquad h(\cdot,0) = p \circ \tilde h_0,
+$$</p>
+<p>there is a lift $\tilde h : X \times I \to E$ with $p \circ \tilde h = h$ and $\tilde h(\cdot,0) = \tilde h_0$. A <strong>Serre fibration</strong> is a map with the HLP for all CW complexes $X$; a <strong>Hurewicz fibration</strong> is a map with the HLP for all spaces $X$. The <strong>fibre</strong> over $b \in B$ is $F_b = p^{-1}(b)$. A fibration is a <strong>fibre bundle</strong> when in addition it is locally trivial, in the sense of <em>Fibre Bundles, Connections and Curvature</em>.</p>
+<p><strong>Proposition.</strong> A covering map is a Hurewicz fibration with discrete fibres; every fibre bundle over a paracompact base is a Hurewicz fibration.</p>
+<p><em>Proof.</em> The first statement is the homotopy lifting theorem of <em>The Fundamental Group and Covering Spaces</em>. For the second, lift the homotopy locally using a trivialisation and glue with a partition of unity, the partition's existence being that of <em>Paracompactness and Partitions of Unity</em> and the gluing being the standard construction. $\square$</p>
+<p><strong>Theorem (path lifting and the fibre).</strong> Let $p : E \to B$ be a Serre fibration with $B$ path-connected and $E$ nonempty. Then for every $b, b' \in B$ the fibres $F_b$ and $F_{b'}$ are homotopy equivalent (weakly, and genuinely when $E$ and $B$ are CW complexes), and the fibre is well defined up to homotopy equivalence; the map $p$ is surjective and every path in $B$ lifts to a path in $E$ once a starting point over its initial point is chosen.</p>
+<p><em>Proof.</em> Choose a path from $b$ to $b'$ and lift the homotopy $F_b \times I \to B$ defining it, by the HLP applied to $X = F_b$; the endpoint is a map $F_b \to F_{b'}$, and the reverse path gives a homotopy inverse up to homotopy. $\square$</p>
+<h3 id="the-long-exact-sequence">The Long Exact Sequence</h3>
+<p><strong>Definition.</strong> For a fibration $p : (E, e_0) \to (B, b_0)$ with fibre $F = p^{-1}(b_0)$ containing $e_0$, the <strong>connecting homomorphism</strong> $\partial : \pi_n(B,b_0) \to \pi_{n-1}(F,e_0)$ is defined by lifting: represent a class in $\pi_n(B,b_0)$ by a based map $f : (D^n, S^{n-1}) \to (B,b_0)$, lift $f$ over the $n$-disc using the HLP applied to a decomposition of $D^n$ into $D^{n-1}\times I$ with the HLP, and restrict the lift to the boundary $S^{n-1}$ to obtain a based map $S^{n-1} \to F$; its class is $\partial[f]$.</p>
+<p><strong>Theorem (the long exact sequence of a fibration).</strong> Let $p : E \to B$ be a Serre fibration with fibre $F$, all spaces path-connected and based compatibly. Then there is a long exact sequence of groups, abelian from $\pi_1$ onwards,</p>
+<p>$$
+\cdots \to \pi_n(F) \xrightarrow{\ i_*\ } \pi_n(E) \xrightarrow{\ p_*\ } \pi_n(B) \xrightarrow{\ \partial\ } \pi_{n-1}(F) \xrightarrow{\ i_*\ } \cdots \to \pi_0(F) \to \pi_0(E) \to \pi_0(B),
+$$</p>
+<p>natural in maps of fibrations; the sequence ends with the exact sequence of the sets $\pi_0$ of components.</p>
+<p><em>Proof sketch.</em> Exactness at $\pi_n(E)$: $p_* i_* = 0$ because $p \circ i$ is constant; conversely a class in $\ker p_*$ is represented by a based map $S^n \to E$ whose composite with $p$ is nullhomotopic, and the nullhomotopy lifts by the HLP to a homotopy of the original map into the fibre, exhibiting the class as in the image of $i_*$. Exactness at $\pi_n(B)$: $\partial p_* = 0$ by construction; conversely a class killed by $\partial$ has a lift of the disc which restricts to a nullhomotopic map on the boundary, and pasting gives a map $S^n \to E$. Exactness at $\pi_n(F)$: $i_* \partial = 0$ because the restriction of the lifted disc is nullhomotopic through the lift; conversely, a class in $\ker i_*$ bounds a map of a disc in $E$ whose composite with $p$ is a map of the disc constant on the boundary, and the HLP applied to the collapse of that disc to $B$ recovers the class from a map of $B$. $\square$</p>
+<p><strong>Corollary.</strong> If $F$ is contractible then $p_* : \pi_n(E) \to \pi_n(B)$ is an isomorphism for all $n$; if $E$ is contractible then $\pi_{n}(B) \cong \pi_{n-1}(F)$.</p>
+<p><strong>Corollary (path–loop fibration).</strong> Let $PX = \{\text{paths } I \to X \text{ from } x_0\}$ with the compact–open topology and let $p : PX \to X$ evaluate at $1$. Then $p$ is a Hurewicz fibration with fibre $\Omega X$, and $PX$ is contractible, so the long exact sequence gives</p>
+<p>$$
+\pi_n(X, x_0) \cong \pi_{n-1}(\Omega X, c_{x_0})
+$$</p>
+<p>for $n \geq 1$, recovering the suspension adjunction.</p>
+<h2 id="the-hopf-fibrations">The Hopf Fibrations</h2>
+<h3 id="the-classical-hopf-maps">The Classical Hopf Maps</h3>
+<p><strong>Theorem.</strong> There are fibre bundles</p>
+<p>$$
+S^0 \to S^1 \to \mathbb{RP}^1, \qquad S^1 \to S^3 \to S^2, \qquad S^3 \to S^7 \to S^4, \qquad S^7 \to S^{15} \to S^8,
+$$</p>
+<p>the <strong>Hopf fibrations</strong>, obtained by restricting the maps $\mathbb{K}^2 \setminus\{0\} \to \mathbb{KP}^1$ to the unit sphere for $\mathbb{K} = \mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$ respectively; the fibre is the unit sphere of $\mathbb{K}$ and the base is the projective line over $\mathbb{K}$. The structure group is the group of unit scalars, and the bundles are locally trivial in the sense of <em>Fibre Bundles, Connections and Curvature</em>.</p>
+<p><em>Proof.</em> The map $\mathbb{K}^2\setminus\{0\} \to \mathbb{KP}^1 \cong S^{\dim_\mathbb{R}\mathbb{K}}$ sending a pair to its class is smooth and satisfies the local triviality condition over the standard affine charts; restricting to unit spheres gives the bundle. $\square$</p>
+<p><strong>Corollary.</strong> For the fibration $S^1 \to S^3 \to S^2$ the long exact sequence contains the segments</p>
+<p>$$
+\pi_3(S^1) \to \pi_3(S^3) \to \pi_3(S^2) \to \pi_2(S^1), \qquad \pi_2(S^3) \to \pi_2(S^2) \to \pi_1(S^1) \to \pi_1(S^3).
+$$</p>
+<p>Since $\pi_k(S^1) = 0$ for $k \geq 2$ and $\pi_k(S^3) = 0$ for $k \leq 2$, the first segment reads $0 \to \mathbb{Z} \to \pi_3(S^2) \to 0$ and the second $0 \to \pi_2(S^2) \to \mathbb{Z} \to 0$. Hence</p>
+<p>$$
+\pi_3(S^2) \cong \mathbb{Z}, \qquad \pi_2(S^2) \cong \mathbb{Z},
+$$</p>
+<p>the first generated by the Hopf map $\eta$. Both groups are nonzero, which is why $\eta$ is not nullhomotopic.</p>
+<p><strong>Remark.</strong> The two computations above are the reason the Hopf map is the fundamental example of a map detected by homotopy and not by homology: it induces the zero map on homology in every positive degree and is nonetheless essential. The generators of the higher homotopy of spheres, and the stable range in which they stabilise, are not covered here.</p>
+<h3 id="applications">Applications</h3>
+<p><strong>Example (the infinite dimensional sphere).</strong> Since $\pi_k(S^n) \cong \pi_k(S^{n+1})$ is surjective and eventually an isomorphism by Freudenthal, the colimit $S^\infty = \bigcup_n S^n$ is contractible, and the fibration $S^1 \to S^\infty \to \mathbb{CP}^\infty$ gives $\pi_k(\mathbb{CP}^\infty) \cong \pi_{k-1}(S^1)$, which is $\mathbb{Z}$ for $k = 2$ and zero otherwise.</p>
+<p><strong>Example (the classical groups).</strong> The fibrations $O(n) \to O(n+1) \to S^n$ and $U(n) \to U(n+1) \to S^{2n+1}$ are obtained by letting $O(n+1)$ (respectively $U(n+1)$) act on the unit sphere of $\mathbb{R}^{n+1}$ (respectively $\mathbb{C}^{n+1}$); the long exact sequence computes the homotopy groups of the classical groups by induction from those of spheres. The group theory is that of <em>Lie Groups</em>, and the detailed computations are not covered here.</p>
+<p><strong>Example (the Freudenthal suspension theorem).</strong> The suspension homomorphism</p>
+<p>$$
+\Sigma : \pi_k(S^n) \to \pi_{k+1}(S^{n+1})
+$$</p>
+<p>is an isomorphism for $k < 2n - 1$ and a surjection for $k = 2n - 1$. The proof uses homotopy excision (the <strong>Blakers–Massey theorem</strong>): the map $S^n \to \Omega S^{n+1}$ has connectivity $n-1$, achieved by comparing the two halves of $S^{n+1}$ with their intersection containing the suspension coordinate. The consequence is that the groups $\pi_{n+k}(S^n)$ for $k$ fixed are independent of $n$ once $n > k+1$; their common value is the <strong>stable stem</strong> $\pi_k^s$, computed.</p>
+<h2 id="summary">Summary</h2>
+<p>The homotopy groups $\pi_n(X,x_0)$ are the homotopy classes of based maps of spheres; they form groups for $n \geq 1$, are abelian for $n \geq 2$ by the Eckmann–Hilton argument, are functorial and homotopy invariant, and are additive over products. They are adjoint to the loop space, $\pi_n(X) \cong \pi_{n-1}(\Omega X)$, and hence in principle iterative, but they are not computable from a chain complex. The Hurewicz homomorphism relates the first nonvanishing homotopy group of a simply connected space to its first nonvanishing homology group by an isomorphism, and it identifies $H_1$ with the abelianisation of $\pi_1$ in general; the Whitehead theorem converts weak homotopy equivalence into homotopy equivalence for CW complexes, and gives an $n$-equivalence from hypotheses on $\pi_k$ for $k \leq n$.</p>
+<p>A fibration is a map with the homotopy lifting property; coverings and bundles over paracompact bases are examples, and the fibres over different points of a path-connected base are homotopy equivalent. The homotopy groups of a fibration fit in a long exact sequence running downward in degree from the base through the total space to the fibre, natural in maps of fibrations, and the path–loop fibration recovers the loop-space suspension. The Hopf fibrations $S^1 \to S^3 \to S^2$ and its companions are the standard examples, and from the long exact sequence they give $\pi_2(S^2) \cong \mathbb{Z}$ and $\pi_3(S^2) \cong \mathbb{Z}$ generated by the Hopf map, which is therefore detected by homotopy and not by homology. The Freudenthal suspension theorem, proved by homotopy excision, makes the groups $\pi_{n+k}(S^n)$ stabilise for $n$ large, and the common stable values are not covered here after the spectral-sequence theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pi_n(X,x_0)$</td>
+<td>$n$-th homotopy group: based homotopy classes $S^n \to X$</td>
+</tr>
+<tr>
+<td>$\pi_0(X)$</td>
+<td>Set of path components</td>
+</tr>
+<tr>
+<td>$f_* : \pi_n(X) \to \pi_n(Y)$</td>
+<td>Induced homomorphism; functorial</td>
+</tr>
+<tr>
+<td>$\Omega X$</td>
+<td>Based loop space; $\pi_n(X) \cong \pi_{n-1}(\Omega X)$</td>
+</tr>
+<tr>
+<td>$\Sigma X$</td>
+<td>Reduced suspension</td>
+</tr>
+<tr>
+<td>$PX$</td>
+<td>Path space; $PX \to X$ is the path–loop fibration with fibre $\Omega X$</td>
+</tr>
+<tr>
+<td>$h_n : \pi_n(X) \to H_n(X;\mathbb{Z})$</td>
+<td>Hurewicz homomorphism, $h_n[f] = f_*[S^n]$</td>
+</tr>
+<tr>
+<td>$\pi_1^{\mathrm{ab}}$</td>
+<td>Abelianisation; $h_1$ induces $H_1 \cong \pi_1^{\mathrm{ab}}$</td>
+</tr>
+<tr>
+<td>Weak homotopy equivalence</td>
+<td>Isomorphism on all $\pi_n$, all basepoints</td>
+</tr>
+<tr>
+<td>$n$-equivalence</td>
+<td>Isomorphism on $\pi_k$, $k<n$; surjection on $\pi_n$</td>
+</tr>
+<tr>
+<td>HLP</td>
+<td>Homotopy lifting property defining a (Serre/Hurewicz) fibration</td>
+</tr>
+<tr>
+<td>$p : E \to B$, $F = p^{-1}(b_0)$</td>
+<td>Fibration, total space, base, fibre</td>
+</tr>
+<tr>
+<td>$\partial : \pi_n(B) \to \pi_{n-1}(F)$</td>
+<td>Connecting homomorphism of a fibration</td>
+</tr>
+<tr>
+<td>$S^1 \to S^3 \to S^2$, $S^3 \to S^7 \to S^4$</td>
+<td>Hopf fibrations over $\mathbb{C}$ and $\mathbb{H}$; also $\mathbb{R}$ and $\mathbb{O}$</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>Hopf map $S^3 \to S^2$, generator of $\pi_3(S^2)$</td>
+</tr>
+<tr>
+<td>$\pi_k^s$</td>
+<td>Stable stem: $\pi_{n+k}(S^n)$ for $n > k+1$</td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^\infty$, $S^\infty$</td>
+<td>Colimits of projective spaces and spheres</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for homotopy groups, the Hurewicz and Whitehead theorems, fibrations and the long exact sequence.</li>
+<li>George W. Whitehead, <em>Elements of Homotopy Theory</em> (Springer, 1978), for homotopy excision, the Blakers–Massey theorem and the Freudenthal suspension.</li>
+<li>J. Peter May, <em>A Concise Course in Algebraic Topology</em> (University of Chicago Press, 1999), for fibrations and cofibrations as the two halves of the homotopy theory of a model category.</li>
+<li>Dale Husemoller, <em>Fibre Bundles</em> (Springer, 3rd ed. 1994), for the Hopf fibrations, the classical groups and their bundles.</li>
+<li>Norman Steenrod, <em>The Topology of Fibre Bundles</em> (Princeton University Press, 1951), for the homotopy theory of fibrations and the classification of bundles.</li>
+<li>Mimura Mamoru and Hirosi Toda, <em>Topology of Lie Groups</em> (American Mathematical Society, 1991), for the homotopy groups of the classical groups by induction.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the fibrations of differential geometry and the route to the Leray–Serre spectral sequence.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfectoid Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="perfectoid-spaces"><strong>Perfectoid Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A perfectoid field is a complete non-Archimedean field of residue characteristic $p$ in which the $p$-power map can be undone: every element of the valuation ring has a $p$-th root modulo $p$, and the value group is dense enough that the field admits $p$-power roots of its uniformiser. The definition looks like a technical condition on residues, and it is; what makes it remarkable is that it forces an equivalence of categories between the geometry over the perfectoid field $K$ and the geometry over a second field $K^\flat$, the <strong>tilt</strong>, of characteristic $p$. The tilt is constructed as an inverse limit of Frobenius maps, so it is a perfect field of characteristic $p$; and the <strong>tilting equivalence</strong> says that the analytic geometry over $K$ and over $K^\flat$ are the same, connected by a functor that preserves the étale site, the cohomology of coherent sheaves, and much else. For a problem in $p$-adic arithmetic, this is an exact mechanism for replacing a field of mixed characteristic by one of characteristic $p$, where Frobenius is available.</p>
+<p>The theory belongs to this Part because it is, on the one hand, a theory of adic spaces: a perfectoid space is an adic space that is locally the adic spectrum of a perfectoid ring, and the tilting equivalence is a statement about the analytic topology and the sheaf theory of those spaces. It belongs to the end of the geometry arc because it uses all of the constructions that precede it: the adic spaces and Huber pairs of <em>Adic Spaces</em>, the rigid analytic and Berkovich pictures of <em>Rigid Analytic Geometry</em> and <em>Berkovich Spaces</em>, and the valuation theory of <em>Absolute Values, Valuations and Completions</em> and <em>Local Fields</em>. The arithmetic consequences — the $p$-adic Hodge theory and the construction of Galois representations, the application to Shimura varieties, and the proof of the weight-monodromy conjecture in the relevant cases — belong to the algebraic number theory of Part I, and the analytic constructions that use the measure, the integral and the limit belong to Part III; both are cited rather than developed.</p>
+<p>Throughout, $p$ is a prime, $K$ is a complete non-Archimedean field of residue characteristic $p$ with absolute value $\lvert \cdot \rvert$, valuation ring $\mathcal{O} = K^\circ$, maximal ideal $\mathfrak{m} = K^{\circ\circ}$ and residue field $k$, in the notation of <em>Adic Spaces</em> and <em>Local Fields</em>. The <strong>tilt</strong> is written $K^\flat$ and its elements are written with a flat symbol when the context needs it. A perfectoid algebra over $K$ is written $A$ and its tilt $A^\flat$; the Frobenius is written $\varphi$. The notation $\widehat{\otimes}$ denotes a completed tensor product of Huber rings.</p>
+<hr />
+<h2 id="perfectoid-fields">Perfectoid Fields</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let $K$ be a complete non-Archimedean field of residue characteristic $p > 0$, with valuation ring $K^\circ$ and maximal ideal $K^{\circ\circ}$. Then $K$ is <strong>perfectoid</strong> if</p>
+<p><strong>(PF1)</strong> the value group $\lvert K^\times \rvert$ is not discrete, and</p>
+<p><strong>(PF2)</strong> the Frobenius map $\varphi : K^\circ/(p) \to K^\circ/(p)$, $x \mapsto x^p$, is surjective.</p>
+<p>Condition (PF1) says that the valuation is "deeply ramified" at $p$: since $p$ is a nonzero element of $K^\circ$ with positive valuation, the group $\lvert K^\times \rvert$ contains the subgroup generated by $\lvert p \rvert$, and the non-discreteness forces $p$-power roots of elements to exist in a strong sense. Condition (PF2), the <strong>perfectness</strong> condition, says that every element of $K^\circ/(p)$ has a $p$-th root modulo $p$.</p>
+<p><strong>Remark.</strong> The two conditions are equivalent to the apparently stronger requirement that the Frobenius $\varphi : K^\circ/p^n K^\circ \to K^\circ/p^n K^\circ$ be surjective for every $n \geq 1$; the equivalence is by an induction on $n$ using the exact sequences $0 \to p^nK^\circ/p^{n+1}K^\circ \to K^\circ/p^{n+1}K^\circ \to K^\circ/p^nK^\circ \to 0$ and the fact that $p$-multiplication is injective on the graded pieces. A perfectoid field is thus as close to being perfect as a field of mixed characteristic can be.</p>
+<p><strong>Example ($\mathbb{Q}_p(p^{1/p^\infty})$).</strong> Let $K$ be the completion of $\mathbb{Q}_p(p^{1/p^\infty})$, adjoining a $p^n$-th root of $p$ for every $n$. Then $\lvert K^\times \rvert = \lvert p \rvert^{\mathbb{Z}[1/p]}$ is nondiscrete and $p$-divisible, the residue field is the perfect field $\mathbb{F}_p$, and the Frobenius on $K^\circ/(p)$ is surjective: the class of the pseudo-uniformiser $\varpi = p^{1/p}$ has the $p$-th root $p^{1/p^2}$, and the same lifting applied to the generators $\mathbb{F}_p$ and $p^{1/p^n}$ produces every class. Hence $K$ is perfectoid; it is the standard first example of the theory. It is not discretely valued, so it is not a local field.</p>
+<p><strong>Example (a discretely valued field is not perfectoid).</strong> $\mathbb{Q}_p$ is complete of residue characteristic $p$, but $\lvert \mathbb{Q}_p^\times \rvert = p^{\mathbb{Z}}$ is discrete, so (PF1) fails. No local field is perfectoid: this is the reason the theory needs the passage to deeply ramified extensions.</p>
+<p><strong>Example (nondiscrete value group is not enough).</strong> Let $p$ be odd and let $K$ be the completion of $\mathbb{Q}_p(p^{1/2^\infty})$, adjoining all $2$-power roots of $p$. Then $\lvert K^\times \rvert = \lvert p \rvert^{\mathbb{Z}[1/2]}$ is dense in $\mathbb{R}_{>0}$, so (PF1) holds, but the value group is not $p$-divisible and the Frobenius on $K^\circ/(p)$ is not surjective. For $x = p^{1/2} \in K^\circ$ there is no $y \in K^\circ$ with $y^p \equiv x$ modulo $p$: such a $y$ would satisfy $\lvert y^p - x \rvert \leq \lvert p \rvert < \lvert x \rvert$, hence $\lvert y \rvert^p = \lvert x \rvert = \lvert p \rvert^{1/2}$ and $\lvert y \rvert = \lvert p \rvert^{1/(2p)}$, while $\lvert K^\times \rvert = \lvert p \rvert^{\mathbb{Z}[1/2]}$ consists of the powers $\lvert p \rvert^{a/2^n}$ with $a \in \mathbb{Z}$, and $1/(2p) = a/2^n$ would force $2^n = 2pa$, impossible for odd $p$. So $K$ is not perfectoid, and the example shows that (PF1) and (PF2) are independent conditions.</p>
+<p><strong>Example (the $t$-adic case).</strong> Let $k$ be a perfect field of characteristic $p$ and let $L = k((t^{1/p^\infty}))$ be the completion of $k(t^{1/p^\infty})$. Then $L$ is a perfectoid field of characteristic $p$: its value group is $\lvert t \rvert^{\mathbb{Z}[1/p]}$, dense in $\mathbb{R}_{>0}$, and every element has a $p$-th root, so the Frobenius on $L^\circ/(p) = L^\circ$ is an isomorphism. Every perfect field of characteristic $p$ is trivially perfectoid in this sense.</p>
+<h3 id="the-tilt">The Tilt</h3>
+<p><strong>Definition.</strong> Let $K$ be a perfectoid field. The <strong>tilt</strong> of $K$ is</p>
+<p>$$
+K^\flat = \Bigl(\varprojlim_{x \mapsto x^p} K^\circ/(p)\Bigr)\Bigl[\tfrac{1}{\varpi^\flat}\Bigr] ,
+$$</p>
+<p>where $\varpi^\flat$ is any element of the inverse limit whose first coordinate is the image of a pseudo-uniformiser $\varpi \in K^\circ$ (that is, a compatible system of $p$-power roots of $\varpi$ modulo $p$, which exists because the Frobenius is surjective), and the inverse limit is taken over the Frobenius maps; the inverse limit is a perfect ring of characteristic $p$, carrying the inverse limit topology of the discrete rings $K^\circ/(p)$, and $K^\flat$ is its localisation, a field complete for the corresponding valuation.</p>
+<p><strong>Theorem.</strong> Let $K$ be a perfectoid field. Then:</p>
+<p><strong>(a)</strong> $K^\flat$ is a perfectoid field of characteristic $p$, and $K^{\flat\circ} = \varprojlim_{x\mapsto x^p} K^\circ/(p)$ is its valuation ring, a complete and perfect ring of characteristic $p$;</p>
+<p><strong>(b)</strong> the residue fields of $K$ and $K^\flat$ are canonically isomorphic, and the value groups of $K$ and $K^\flat$ are canonically isomorphic;</p>
+<p><strong>(c)</strong> the assignment is functorial in the sense that a continuous field homomorphism of perfectoid fields induces one of their tilts, and the construction is compatible with the formation of the valuation rings;</p>
+<p><strong>(d)</strong> if $K$ is perfectoid then so is $K^\flat$; the tilt of a perfectoid field of characteristic $p$ is canonically isomorphic to the field itself, so that $K^{\flat\flat} \cong K^\flat$, and the passage from a perfectoid field of characteristic $p$ to a perfectoid field of mixed characteristic that tilts to it — an <strong>untilt</strong> — is additional data and not unique.</p>
+<p><strong>Proof.</strong> (a) The inverse limit of rings along the Frobenius is perfect: the Frobenius is an automorphism of the limit by construction, so every element has a unique $p$-th root. The ring is of characteristic $p$ because $p = 0$ in each factor. Its fraction field with respect to the multiplicative set generated by $\varpi^\flat$ is a field, complete for the valuation whose value group is the inverse limit of the value groups, which is canonically the value group of $K$. (b) The residue field of the limit is the inverse limit of the residue fields along the Frobenius, which is the same as the residue field of $K$ because the Frobenius on $K^\circ/(p)$ is surjective and the residue field of a quotient is unchanged in the limit; the value group statement is similar, using the logarithm of the valuation and the fact that the $p$-power divisibility in $\mathbb{Q}$ survives the limit. (c) and (d) are formal compatibilities of the construction. $\square$</p>
+<p><strong>Remark (the tilt in coordinates).</strong> An element of $K^{\flat\circ}$ is a sequence $(x_0, x_1, x_2, \dots)$ with $x_{n+1}^p = x_n$ in $K^\circ/(p)$, so it is a compatible system of $p^n$-th roots modulo $p$. Thus an element of $K^\flat$ is a "coherent system of $p$-power roots", and the tilt construction is the precise sense in which $K^\flat$ forgets the additive structure of mixed characteristic and retains only the Frobenius and the valuation. If one adjoins all $p$-power roots of $p$ freely, the tilt is the field $k((t^{1/p^\infty}))$ with $t$ the system of $p$-power roots of $p$, and the residue fields agree.</p>
+<p><strong>Example (the tilt of the extension of $\mathbb{Q}_p$).</strong> For $K = \widehat{\mathbb{Q}_p(p^{1/p^\infty})}$ the tilt is $K^\flat \cong \mathbb{F}_p((t^{1/p^\infty}))^{\mathrm{perf}}$, where $t$ corresponds to the compatible system $(p, p^{1/p}, p^{1/p^2}, \dots)$ and the field is perfect. The isomorphism of value groups is $\lvert K^\times \rvert \cong \lvert (K^\flat)^\times \rvert$ via the map identifying $p^{1/p^n}$ with $t^{1/p^n}$, and the residue fields are both the residue field of $K$.</p>
+<hr />
+<h2 id="perfectoid-algebras">Perfectoid Algebras</h2>
+<h3 id="the-definition_1">The Definition</h3>
+<p><strong>Definition.</strong> Let $K$ be a perfectoid field. A <strong>perfectoid $K$-algebra</strong> is a complete Tate Huber $K$-algebra $A$ for which the set of power-bounded elements $A^\circ \subseteq A$ is bounded and the Frobenius $\varphi : A^\circ/(p) \to A^\circ/(p)$ is surjective. An <strong>affinoid perfectoid space</strong> is the adic spectrum $\operatorname{Spa}(A, A^+)$ of a perfectoid $K$-algebra $A$ with a choice of $A^+$; a <strong>perfectoid space</strong> is an adic space locally isomorphic to affinoid perfectoid spaces.</p>
+<p><strong>Theorem (the algebra is reduced and uniform).</strong> Let $A$ be a perfectoid $K$-algebra. Then:</p>
+<p><strong>(a)</strong> $A$ is reduced and uniform: the set $A^\circ$ of power-bounded elements is an open and integrally closed subring, and the topology of $A$ is the $p$-adic topology on $A^\circ$;</p>
+<p><strong>(b)</strong> $A^\circ$ is <strong>perfect</strong> in the sense that the Frobenius is surjective on $A^\circ/(p)$ and the map $\varprojlim_{x\mapsto x^p} A^\circ/(p)$ is its <strong>tilt</strong> $A^{\flat\circ}$;</p>
+<p><strong>(c)</strong> the tilt $A^\flat = A^{\flat\circ}[1/\varpi^\flat]$ is a perfectoid $K^\flat$-algebra, and the assignment $A \mapsto A^\flat$ is functorial.</p>
+<p><strong>Proof.</strong> The boundedness of $A^\circ$ and the Tate condition give an open ideal of definition generated by a pseudo-uniformiser; surjectivity of the Frobenius on $A^\circ/(p)$ gives the perfectness of the reduction, and the inverse limit is perfect by construction. Reduction and uniformity are proved from the surjectivity of the Frobenius and the Tate condition; the details are the standard theory. $\square$</p>
+<p><strong>Example (the perfectoid disc).</strong> Let $K$ be perfectoid and let</p>
+<p>$$
+K\langle T^{1/p^\infty}\rangle = \Bigl(\bigcup_{n} K\langle T^{1/p^n}\rangle\Bigr)^\wedge
+$$</p>
+<p>be the completed union of the discs of the $p^n$-th roots of a variable. Then $A = K\langle T^{1/p^\infty}\rangle$ is a perfectoid $K$-algebra: the Frobenius sends $T^{1/p^n}$ to $T^{1/p^{n-1}}$, so on $A^\circ/(p)$ it is surjective, and the algebra is a Tate algebra. Its tilt is $A^\flat = K^\flat\langle T^{\flat\,1/p^\infty}\rangle$, the perfectoid disc over $K^\flat$. The adic space $\operatorname{Spa}(A, A^\circ)$ is the <strong>perfectoid unit disc</strong>, and the tilting equivalence identifies it with the perfectoid disc over the tilt; this is the basic example of the theory.</p>
+<p><strong>Example (a non-example).</strong> The algebra $K\langle T\rangle$ of the ordinary unit disc is not perfectoid: the Frobenius on $K\langle T\rangle^\circ/(p)$ is not surjective, because $T$ has no $p$-th root in the algebra. The perfectoid disc above is the smallest extension of the unit disc that is perfectoid, and it shows that the perfectoid condition is a genuine restriction rather than a formal one.</p>
+<p><strong>Example (perfectoid fields as algebras).</strong> A perfectoid field $K$ is a perfectoid algebra over itself, with $K^\circ$ its ring of definition, and the tilt construction of the previous section is the special case of the algebra construction for $A = K$.</p>
+<h3 id="almost-mathematics">Almost Mathematics</h3>
+<p><strong>Definition.</strong> Let $A$ be a perfectoid $K$-algebra with tilt $A^\flat$ and let $\varpi \in K$ be a pseudo-uniformiser. The <strong>ideal of almost elements</strong> is the maximal ideal $\mathfrak{m}^\flat \subseteq A^{\flat\circ}$ generated by the topologically nilpotent elements, and an $A^{\flat\circ}$-module $M$ is <strong>almost zero</strong> if $\mathfrak{m}^\flat M = 0$; a map of such modules is an <strong>almost isomorphism</strong> if its kernel and cokernel are almost zero. The <strong>almost mathematics</strong> of $(A^\flat, \mathfrak{m}^\flat)$ is the localisation of the category of $A^{\flat\circ}$-modules at the almost isomorphisms.</p>
+<p><strong>Theorem (almost purity).</strong> Let $K$ be a perfectoid field and let $A$ be a perfectoid $K$-algebra. Then for every finite étale $A$-algebra $B$, the algebra $B$ is perfectoid, the trace pairing on $B$ is almost perfect in the almost sense, and the category of finite étale $A$-algebras is equivalent to the category of finite étale $A^\flat$-algebras:</p>
+<p>$$
+\{\text{finite étale } A\text{-algebras}\} \xrightarrow{\ \sim\ } \{\text{finite étale } A^\flat\text{-algebras}\}.
+$$</p>
+<p><strong>Proof.</strong> The theorem of almost purity is Faltings's almost purity theorem, in the form given by Scholze. The proof reduces to the corresponding statement for the tilted algebra, where the Frobenius makes the extension theory accessible, and shows that the finite étale algebras correspond almost isomorphically. It is quoted as the central technical theorem of the theory. $\square$</p>
+<p><strong>Remark.</strong> Almost purity is the engine of the tilting equivalence: it says that the finite étale covers of a perfectoid algebra and of its tilt are the same, so the étale site is preserved under tilting. Everything else in the theory follows from this and from the comparison of the analytic topologies.</p>
+<hr />
+<h2 id="the-tilting-equivalence">The Tilting Equivalence</h2>
+<h3 id="the-equivalence-of-categories">The Equivalence of Categories</h3>
+<p><strong>Theorem (tilting equivalence; Scholze).</strong> Let $K$ be a perfectoid field with tilt $K^\flat$. Then the functor</p>
+<p>$$
+X \longmapsto X^\flat
+$$</p>
+<p>from perfectoid spaces over $K$ to perfectoid spaces over $K^\flat$, defined on affinoids by $\operatorname{Spa}(A, A^+) \mapsto \operatorname{Spa}(A^\flat, A^{\flat+})$, is an equivalence of categories. The functor preserves fibre products, and for a perfectoid space $X$ the underlying topological space of $X^\flat$ is canonically homeomorphic to that of $X$, the map being a homeomorphism that identifies the structure sheaves up to tilting.</p>
+<p><strong>Proof.</strong> The functor is constructed affine-locally from the tilting of perfectoid algebras, which is functorial, and the compatibility with gluing follows from the fact that the tilting of a rational localisation is the rational localisation of the tilt. Faithfulness and fullness are checked on affinoids, using the equivalence of categories of perfectoid algebras and their tilts, which is proved by showing that the functor $A \mapsto A^\flat$ has an inverse given by adjoining $p$-power roots and completing, and by almost purity. The preservation of fibre products is the compatibility of tilting with completed tensor products. $\square$</p>
+<p><strong>Theorem (preservation of the site).</strong> Let $K$ be a perfectoid field and let $X$ be a perfectoid space over $K$ with tilt $X^\flat$. Then the tilting homeomorphism induces an equivalence of the étale sites</p>
+<p>$$
+X_{\mathrm{\acute{e}t}} \xrightarrow{\ \sim\ } X^\flat_{\mathrm{\acute{e}t}} ,
+$$</p>
+<p>and consequently an isomorphism of étale cohomology groups $H^i_{\mathrm{\acute{e}t}}(X, \mathcal{F}) \cong H^i_{\mathrm{\acute{e}t}}(X^\flat, \mathcal{F}^\flat)$ for corresponding sheaves $\mathcal{F}$ and $\mathcal{F}^\flat$.</p>
+<p><strong>Proof.</strong> The equivalence of étale sites is a consequence of almost purity: the finite étale covers coincide on both sides, and the compatibility with the analytic topology gives the equivalence of sites. The cohomology statement is the induced isomorphism on the derived functors. $\square$</p>
+<h3 id="the-perfectoid-correspondence-for-fields">The Perfectoid Correspondence for Fields</h3>
+<p><strong>Theorem (Fontaine–Wintenberger).</strong> Let $K$ be a perfectoid field. Then tilting induces an equivalence of categories between the finite extensions of $K$ and the finite extensions of $K^\flat$, and an isomorphism of absolute Galois groups</p>
+<p>$$
+\operatorname{Gal}(\overline{K}/K) \cong \operatorname{Gal}(\overline{K^\flat}/K^\flat).
+$$</p>
+<p><strong>Proof.</strong> A finite extension of a perfectoid field is again perfectoid, by the preservation of the two defining conditions under finite extension, and tilting is compatible with the extension; the equivalence on fields is the affine case of the tilting equivalence, and the Galois statement follows from the equivalence of finite étale algebras together with the description of the Galois group as the automorphism group of the separable closure. This is the theorem of Fontaine and Wintenberger on the field of norms, predating the general theory. $\square$</p>
+<p><strong>Remark.</strong> The isomorphism of Galois groups is the sharpest form of the statement that tilting loses the mixed characteristic of $K$ but not its arithmetic: the absolute Galois group is unchanged. This is the reason that a problem about the Galois representations of a $p$-adic field can sometimes be transferred to a problem in characteristic $p$, where the Frobenius is available, and it is the basis of the applications of perfectoid spaces to $p$-adic Hodge theory, which belongs to Part I.</p>
+<hr />
+<h2 id="the-geometry-of-perfectoid-spaces">The Geometry of Perfectoid Spaces</h2>
+<h3 id="pro-etale-cohomology">Pro-étale Cohomology</h3>
+<p><strong>Definition.</strong> Let $X$ be a perfectoid space. The <strong>pro-étale site</strong> $X_{\mathrm{pro\acute{e}t}}$ is the site whose covering families are the pro-étale covers, that is, the limits of pro-objects in the étale site; a sheaf on $X_{\mathrm{pro\acute{e}t}}$ is a <strong>pro-étale sheaf</strong>. The <strong>pro-étale cohomology</strong> is the derived-functor cohomology of this site, and for a prime $\ell$ the sheaves $\mathbb{Z}/\ell^n\mathbb{Z}$ are pro-étale sheaves.</p>
+<p><strong>Theorem (the primitive comparison).</strong> Let $X$ be a smooth rigid analytic variety over a perfectoid field and let $\widehat{X}$ be the associated perfectoid space. Then there is a comparison</p>
+<p>$$
+H^i_{\mathrm{\acute{e}t}}(X, \mathbb{Z}/\ell^n\mathbb{Z}) \cong H^i_{\mathrm{pro\acute{e}t}}(\widehat{X}, \mathbb{Z}/\ell^n\mathbb{Z})
+$$</p>
+<p>for all $i$ and $n$, and the pro-étale cohomology groups of $\widehat{X}$ are related to the de Rham cohomology of $X$ by the $p$-adic comparison theorems.</p>
+<p><strong>Proof.</strong> The pro-étale comparison is Scholze's theorem, proved by descent from the perfectoid case and by the almost purity theorem; the relation to de Rham cohomology is the subject of $p$-adic Hodge theory, which belongs to Part I and is cited rather than proved here. $\square$</p>
+<p><strong>Remark.</strong> The pro-étale site and its cohomology are analytic constructions in the sense that they use limits and the limit of the site; the definitions are topological and algebraic, but the cohomological operations that act on them are the analytic ones of Part III. This article states the comparison and defers the analytic development.</p>
+<h3 id="diamonds-and-the-quotient-construction">Diamonds and the Quotient Construction</h3>
+<p><strong>Definition.</strong> A <strong>diamond</strong> is a sheaf on the category of perfectoid spaces for the pro-étale topology which is the quotient of a perfectoid space by a pro-étale equivalence relation of a certain kind; a <strong>spatial diamond</strong> is such a quotient that is representable by a perfectoid space after passing to a covering. The <strong>perfectoid space associated to an adic space</strong> is obtained by adjoining all $p$-power roots of the local parameters and completing, when this is possible; the resulting functor from a class of analytic adic spaces to perfectoid spaces is the <strong>perfectoidification</strong>.</p>
+<p><strong>Theorem.</strong> Let $X$ be a perfectoid space and let $G$ be a group acting on $X$ by pro-étale automorphisms such that the quotient is a spatial diamond. Then the quotient $X/G$ exists in the category of diamonds, its pro-étale cohomology is computed by the equivariant cohomology of $X$, and when the action is sufficiently well behaved the quotient is representable by a perfectoid space.</p>
+<p><strong>Proof.</strong> The quotient is constructed as the sheafification of the presheaf of $G$-invariants on the pro-étale site; the representability statement is Scholze's theorem on quotients of perfectoid spaces by pro-étale group actions, requiring the action to be "pro-étale locally principal". It is quoted as standard; the theory of diamonds is developed by Scholze and by Kedlaya–Liu in the reference sources. $\square$</p>
+<p><strong>Example (the Fontaine–Fargues curve).</strong> The <strong>Fontaine–Fargues curve</strong> is the quotient of the perfectoid projective line by the action of the Frobenius, taken over the tilt, and it is a diamond whose étale cohomology computes the representations of $\operatorname{Gal}(\overline{\mathbb{Q}_p}/\mathbb{Q}_p)$; it is the standard example of a diamond that is not a perfectoid space. The construction relates the geometry of the perfectoid spaces of this article to the local Langlands correspondence, which belongs to Part I.</p>
+<h3 id="the-faltingsscholze-theory">The Faltings–Scholze Theory</h3>
+<p><strong>Theorem (Faltings–Scholze).</strong> Let $K$ be a perfectoid field with tilt $K^\flat$ and let $X$ be a smooth rigid analytic variety over $K$ with associated perfectoid space $\widehat{X}$. Then tilting induces an equivalence between the categories of vector bundles on $X_{\mathrm{\acute{e}t}}$ and on $\widehat{X}^\flat_{\mathrm{\acute{e}t}}$, and the cohomology of the Riemann–Hilbert correspondence commutes with tilting.</p>
+<p><strong>Proof.</strong> This is the Faltings–Scholze comparison, proved by the almost purity theorem together with the theory of the pro-étale site; it is the technical core of the applications to $p$-adic Hodge theory. It is quoted as standard. $\square$</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A <strong>perfectoid field</strong> is a complete non-Archimedean field $K$ of residue characteristic $p$ whose value group is not discrete and whose Frobenius on $K^\circ/(p)$ is surjective, the two conditions expressing that $p$-power roots exist deeply enough. The <strong>tilt</strong> $K^\flat = \bigl(\varprojlim_{x \mapsto x^p} K^\circ/(p)\bigr)[1/\varpi^\flat]$ is a perfectoid field of characteristic $p$ with the same residue field and the same value group as $K$, and the assignment is functorial. A <strong>perfectoid algebra</strong> is a complete Tate $K$-algebra whose power-bounded elements are bounded and whose Frobenius on $A^\circ/(p)$ is surjective; its tilt $A^\flat$ is a perfectoid $K^\flat$-algebra, and the perfectoid unit disc $K\langle T^{1/p^\infty}\rangle$ is the basic example, the ordinary unit disc being the basic non-example.</p>
+<p>The <strong>tilting equivalence</strong> says that the functor $X \mapsto X^\flat$ is an equivalence between the categories of perfectoid spaces over $K$ and over $K^\flat$, preserving fibre products and inducing a homeomorphism of the underlying topological spaces; it induces equivalences of étale sites and isomorphisms of étale cohomology, and on fields it recovers the Fontaine–Wintenberger isomorphism $\operatorname{Gal}(\overline{K}/K) \cong \operatorname{Gal}(\overline{K^\flat}/K^\flat)$. The engine of the proof is <strong>almost purity</strong>, the equivalence between finite étale algebras over a perfectoid algebra and over its tilt. The <strong>pro-étale site</strong> and its cohomology refine the étale theory and connect it to the de Rham cohomology of the smooth analytic variety in the $p$-adic comparison theorems; <strong>diamonds</strong>, the pro-étale quotients of perfectoid spaces, include the Fontaine–Fargues curve and provide the geometric setting for the representations of a $p$-adic Galois group.</p>
+<p>The constructions of this article are those of adic geometry over a perfectoid field, and they use the topology, the valuations and the sheaf theory of the preceding articles of this Part; the analytic and measure-theoretic developments belong to Part III, and the arithmetic applications to $p$-adic Hodge theory, Galois representations and local Langlands belong to the algebraic number theory of Part I.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p$</td>
+<td>The residue characteristic prime</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>A perfectoid field</td>
+</tr>
+<tr>
+<td>$K^\circ$, $K^{\circ\circ}$, $k$</td>
+<td>Valuation ring, maximal ideal and residue field</td>
+</tr>
+<tr>
+<td>$\lvert \cdot \rvert$</td>
+<td>The absolute value</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>The Frobenius, $\varphi(x) = x^p$</td>
+</tr>
+<tr>
+<td>$K^\flat$</td>
+<td>The tilt of $K$, a perfectoid field of characteristic $p$</td>
+</tr>
+<tr>
+<td>$\varpi$</td>
+<td>A pseudo-uniformiser, $\lvert p \rvert \leq \lvert \varpi \rvert < 1$</td>
+</tr>
+<tr>
+<td>$\varpi^\flat$</td>
+<td>The tilt of a pseudo-uniformiser</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>A perfectoid $K$-algebra</td>
+</tr>
+<tr>
+<td>$A^\circ$, $A^{\circ\circ}$</td>
+<td>Power-bounded elements and their ideal of topologically nilpotent elements</td>
+</tr>
+<tr>
+<td>$A^\flat$</td>
+<td>The tilt of $A$, a perfectoid $K^\flat$-algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{Spa}(A, A^+)$</td>
+<td>The affinoid perfectoid space</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}^\flat$</td>
+<td>The ideal of almost elements</td>
+</tr>
+<tr>
+<td>$X^\flat$</td>
+<td>The tilt of a perfectoid space</td>
+</tr>
+<tr>
+<td>$X_{\mathrm{\acute{e}t}}$, $X_{\mathrm{pro\acute{e}t}}$</td>
+<td>Étale and pro-étale sites</td>
+</tr>
+<tr>
+<td>$K\langle T^{1/p^\infty}\rangle$</td>
+<td>The perfectoid unit disc</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Peter Scholze, "Perfectoid spaces", <em>Publications Mathématiques de l'IHÉS</em> <strong>116</strong> (2012), 245–313, for the definition, the tilting equivalence and the main theorems.</li>
+<li>Peter Scholze, "Étale cohomology of adic spaces and perfectoid spaces", <em>Publications Mathématiques de l'IHÉS</em> <strong>116</strong> (2012), 315–399, for the pro-étale site and the comparison theorems.</li>
+<li>Bhargav Bhatt, "What is a perfectoid space?", <em>Notices of the American Mathematical Society</em> <strong>61</strong> (2014), 1082–1084, for an expository account of the definition and the tilt.</li>
+<li>Kiran S. Kedlaya, "Why perfectoid spaces in characteristic $p$ are just algebras", <em>Algebra and Number Theory</em> <strong>13</strong> (2019), for a concrete account of the characteristic $p$ case.</li>
+<li>Kiran S. Kedlaya and Ruochuan Liu, "Relative $p$-adic Hodge theory", <em>Inventiones Mathematicae</em> <strong>210</strong> (2017), for the relative theory and the diamonds used in the applications.</li>
+<li>Laurent Fargues and Jean-Marc Fontaine, "Courbes et fibrés vectoriels en théorie de Hodge $p$-adique" (Astérisque <strong>406</strong>, 2018), for the Fontaine–Fargues curve and the geometric approach to local Langlands.</li>
+<li>Gerd Faltings, "$p$-adic Hodge theory", <em>Journal of the American Mathematical Society</em> <strong>1</strong> (1988), 255–299, for the almost purity theorem and the origins of the tilting method.</li>
+<li>Jean-Marc Fontaine and Jean-Pierre Wintenberger, "Le corps des périodes $p$-adiques" (Astérisque <strong>223</strong>, 1994), for the field-of-norms isomorphism between the Galois groups of $K$ and $K^\flat$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

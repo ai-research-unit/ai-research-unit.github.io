@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fourier Analysis on Euclidean Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fourier-analysis-on-euclidean-spaces"><strong>Fourier Analysis on Euclidean Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Fourier transform of an integrable function on $\mathbb{R}^n$ is the function
+$$
+\hat f(\xi) = \int_{\mathbb{R}^n}f(x)\,e^{-2\pi i\,x\cdot\xi}\,dx,
+$$
+the continuous version of the Fourier series coefficient in which the integers are replaced by a continuous frequency variable. Its importance for analysis is that it turns differentiation into multiplication: the transform of $\partial_jf$ is $2\pi i\xi_j\hat f$, so a linear differential equation with constant coefficients becomes an algebraic equation for the transform, and the regularity of a function is read off from the decay of its transform. Its importance for the theory of this Part is that it is the model of every transform that follows: the inversion theorem, the Plancherel theorem, the convolution theorem and the Parseval identity are stated here in their Euclidean form and reappear, in the articles of the neighbouring categories, for the circle, for the finite abelian groups, for the adeles and for the non-Archimedean fields, where the details of the measure and of the character group change but the shape of the theorems does not.</p>
+<p>This article develops the theory on $\mathbb{R}^n$ with the normalisation above. The transform is first defined on $L^1$, where it is a bounded linear map into the space of bounded continuous functions vanishing at infinity, and the elementary properties are proved: the transform of a translate is a modulated transform, the transform of a dilation is a dilated transform, and the transform of a convolution is a product. The <strong>multiplication formula</strong> relates the integral of $f$ against $\hat g$ to the integral of $\hat f$ against $g$; it is the source of both the inversion theorem and Plancherel's theorem. The inversion theorem is then proved in the case in which $f$ and $\hat f$ are both integrable, by inserting the Gaussian as an approximate identity and letting its width tend to $0$ — a limit interchange controlled by the dominated convergence theorem of <em>Measure Theory and Integration</em> and by the convergence vocabulary of <em>Modes of Convergence</em>. The <strong>Schwartz class</strong> of rapidly decreasing smooth functions is introduced as the natural invariant domain of the transform, and on it the Fourier transform is a homeomorphism of order four; the Gaussian is the fixed point, and the Hermite functions are the eigenfunctions with the eigenvalues $(-i)^k$. Plancherel's theorem extends the transform to an isometry of $L^2$ onto itself, and the Hausdorff–Young inequality interpolates between the $L^1$ and $L^2$ statements. The last part of the article collects the three qualitative theorems that govern the joint localisation of a function and its transform — the uncertainty principle, Hardy's theorem and the theorem that a function and its transform cannot both be compactly supported — and the real-variable theory of maximal functions, singular integrals and Fourier multipliers, which is the framework in which the transform is applied to the differentiation theory and to the partial differential equations of the following categories.</p>
+<p>The prerequisites are <em>Measure Theory and Integration</em> for the Lebesgue integral on $\mathbb{R}^n$, the $L^p$ spaces, the Fubini–Tonelli theorem, the density of the continuous functions in $L^p$, and the dominated convergence theorem; and <em>Modes of Convergence</em> for convergence almost everywhere and in $L^p$ and for the interchanges of limits. The Schwartz functions and the tempered distributions are used here only in outline, the systematic theory of distributions being the subject and belonging to a later category of this Part; the same is true of the Sobolev spaces, which are named but not constructed. The Fourier transform on a general locally compact abelian group, and the choice of the measure that makes the inversion and Plancherel theorems hold there, are the subject, in the neighbouring category of this Part; this article is the case $G = \mathbb{R}^n$. Nothing here depends on the parallel articles, and the complex-analytic facts quoted in passing are standard mathematics of the standard sources.</p>
+<h2 id="the-fourier-transform-on-math22">The Fourier Transform on $L^1$</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p><strong>Definition.</strong> For $f\in L^1(\mathbb{R}^n)$ the <strong>Fourier transform</strong> is $\hat f(\xi) = \int f(x)e^{-2\pi ix\cdot\xi}dx$, and the <strong>reflection</strong> is $\tilde f(x) = f(-x)$.</p>
+<p><strong>Theorem.</strong> The transform is a linear map $L^1\to C_0(\mathbb{R}^n)$, of operator norm at most $1$, where $C_0$ is the Banach space of continuous functions vanishing at infinity with the sup norm; and the following identities hold, for $f\in L^1$, $y\in\mathbb{R}^n$, $\lambda>0$:</p>
+<p><strong>(a)</strong> $\widehat{(f(\cdot-y))}(\xi) = e^{-2\pi iy\cdot\xi}\hat f(\xi)$;</p>
+<p><strong>(b)</strong> $\widehat{(f(\lambda\cdot))}(\xi) = \lambda^{-n}\hat f(\xi/\lambda)$;</p>
+<p><strong>(c)</strong> $\widehat{(e^{2\pi iy\cdot x}f(x))}(\xi) = \hat f(\xi-y)$;</p>
+<p><strong>(d)</strong> if $x_jf\in L^1$ then $\hat f$ is differentiable in $\xi_j$ and $\partial_j\hat f = \widehat{(-2\pi ix_jf)}$;</p>
+<p><strong>(e)</strong> if $f$ is $C^1$ with $\partial_jf\in L^1$ then $\widehat{(\partial_jf)}(\xi) = 2\pi i\xi_j\hat f(\xi)$.</p>
+<p><strong>Proof.</strong> The bound $\lvert\hat f(\xi)\rvert\leq\lVert f\rVert_1$ is immediate, continuity is the dominated convergence theorem, and vanishing at infinity follows by approximating $f$ in $L^1$ by a compactly supported step function; (a)–(c) are changes of variable, and (d) and (e) are differentiation under the integral sign and integration by parts. $\square$</p>
+<p><strong>Theorem (Riemann–Lebesgue).</strong> $\hat f(\xi)\to0$ as $\lvert\xi\rvert\to\infty$, for every $f\in L^1$; more precisely, the transform maps the space of compactly supported step functions onto a dense subspace of $C_0$ and is injective on $L^1$.</p>
+<p><strong>Proof sketch.</strong> For the indicator of a box the transform is an explicit product of sinc functions, which tends to $0$; the step functions are dense in $L^1$ and the map is bounded, so the limit holds for all $f\in L^1$. Injectivity is the consequence of the inversion theorem below: if $\hat f = 0$ then $\int f\bar\phi = 0$ for every Schwartz function $\phi$, by the multiplication formula, and the Schwartz functions are dense. $\square$</p>
+<h3 id="convolution-approximate-identities-and-the-multiplication-formula">Convolution, Approximate Identities and the Multiplication Formula</h3>
+<p><strong>Definition.</strong> The <strong>convolution</strong> of $f,g\in L^1(\mathbb{R}^n)$ is $(f*g)(x) = \int f(x-y)g(y)\,dy$.</p>
+<p><strong>Theorem.</strong> $L^1(\mathbb{R}^n)$ is a commutative algebra under convolution with $\lVert f*g\rVert_1\leq\lVert f\rVert_1\lVert g\rVert_1$, it has no identity, and $\widehat{(f*g)} = \hat f\hat g$. An <strong>approximate identity</strong> is a sequence $\{\phi_k\}\subseteq L^1$ with $\int\phi_k = 1$, $\lVert\phi_k\rVert_1$ bounded and $\int_{\lvert x\rvert>\delta}\lvert\phi_k\rvert\to0$ for every $\delta>0$; for such a sequence $f*\phi_k\to f$ in $L^p$ for $1\leq p<\infty$, and pointwise almost everywhere at every Lebesgue point of $f$.</p>
+<p><strong>Proof sketch.</strong> The algebra statement is Fubini; the product formula is the definition of the convolution together with the addition formula for the exponential; the approximation statement is the standard estimate $\lVert f*\phi_k-f\rVert_p\leq\int\lvert\phi_k(y)\rvert\lVert f(\cdot-y)-f\rVert_p\,dy$ together with the continuity of translation in $L^p$ and the concentration of $\phi_k$ near $0$. $\square$</p>
+<p><strong>Theorem (multiplication formula).</strong> For $f,g\in L^1(\mathbb{R}^n)$,
+$$
+\int_{\mathbb{R}^n}\hat f(\xi)g(\xi)\,d\xi = \int_{\mathbb{R}^n}f(x)\hat g(x)\,dx .
+$$
+<strong>Proof.</strong> Both sides are the double integral $\iint f(x)g(\xi)e^{-2\pi ix\cdot\xi}dx\,d\xi$, which is absolutely convergent and may be evaluated in either order by Fubini–Tonelli. $\square$</p>
+<p><strong>Theorem (inversion).</strong> If $f\in L^1$ and $\hat f\in L^1$, then $f$ agrees almost everywhere with the continuous function $\check f(x) = \int\hat f(\xi)e^{2\pi ix\cdot\xi}d\xi$; in particular $f$ has a continuous representative, and $\lVert \hat f\rVert_\infty\leq\lVert f\rVert_1$.</p>
+<p><strong>Proof sketch.</strong> Apply the multiplication formula with $g(\xi) = e^{2\pi ix\cdot\xi}e^{-\pi\epsilon^2\lvert\xi\rvert^2}$, whose transform is computed below as $\epsilon^{-n}e^{-\pi\lvert x-y\rvert^2/\epsilon^2}$ up to normalisation; the result is
+$$
+\int_{\mathbb{R}^n}f(y)\,\epsilon^{-n}e^{-\pi\lvert x-y\rvert^2/\epsilon^2}dy = \int_{\mathbb{R}^n}\hat f(\xi)\,e^{2\pi ix\cdot\xi}e^{-\pi\epsilon^2\lvert\xi\rvert^2}d\xi ,
+$$
+the right side tends to $\check f(x)$ by dominated convergence as $\epsilon\downarrow0$, and the left side is the convolution of $f$ with the Gaussian approximate identity, which tends to $f$ in $L^1$ and hence almost everywhere along a subsequence and at every Lebesgue point. $\square$</p>
+<h2 id="the-schwartz-class-and-the-gaussian">The Schwartz Class and the Gaussian</h2>
+<h3 id="test-functions-and-the-automorphism">Test Functions and the Automorphism</h3>
+<p><strong>Definition.</strong> The <strong>Schwartz class</strong> $\mathcal{S}(\mathbb{R}^n)$ consists of the $C^\infty$ functions $f$ with $\sup_x\lvert x^\alpha\partial^\beta f(x)\rvert<\infty$ for all multi-indices $\alpha,\beta$; it is a topological vector space under the seminorms $\lVert f\rVert_{\alpha,\beta} = \sup_x\lvert x^\alpha\partial^\beta f(x)\rvert$, and $\mathcal{S}\subseteq L^p$ for every $p$, with $\mathcal{S}$ dense in $L^p$ for $p<\infty$.</p>
+<p><strong>Theorem.</strong> The Fourier transform is a linear homeomorphism of $\mathcal{S}$ onto itself, with inverse the transform composed with the reflection: $\check g = \hat{\tilde g}$; and $\hat{\hat f} = \tilde f$, so that the transform has order four, $\hat{\hat{\hat{\hat f}}} = f$.</p>
+<p><strong>Proof sketch.</strong> The identities (d) and (e) above show that the transform interchanges the operations of multiplication by $x^\alpha$ and differentiation $\partial^\beta$, which is precisely the statement that the seminorms of $\mathcal{S}$ are permuted; hence the transform is continuous $\mathcal{S}\to\mathcal{S}$ and the inverse is continuous. The inversion formula is proved on $\mathcal{S}$ by the argument of the previous section, and the reflection identity follows from it. $\square$</p>
+<p><strong>Remark (tempered distributions in outline).</strong> The <strong>tempered distributions</strong> are the continuous linear functionals on $\mathcal{S}$, and the transform is defined on them by duality, $\langle\hat u,\phi\rangle = \langle u,\hat\phi\rangle$; the operations of differentiation, multiplication by polynomials and convolution with a Schwartz function extend, and the classical identities hold without any integrability hypothesis. This is the framework in which the delta distribution $\delta$, the Heaviside function and the fundamental solutions of the constant-coefficient operators live, and it is developed; here only the two facts used below are recorded, that the transform of $\delta$ is the constant $1$ and that the transform of a smooth function of at most polynomial growth is defined as a tempered distribution.</p>
+<h3 id="the-gaussian">The Gaussian</h3>
+<p><strong>Theorem.</strong> For $a>0$,
+$$
+\widehat{\bigl(e^{-\pi a\lvert x\rvert^2}\bigr)}(\xi) = a^{-n/2}e^{-\pi\lvert\xi\rvert^2/a} .
+$$
+In particular the function $e^{-\pi\lvert x\rvert^2}$ is a fixed point of the Fourier transform, and $e^{-\pi a\lvert x\rvert^2}$ is an eigenfunction of the operator $\hat{\ }$ only for $a = 1$.</p>
+<p><strong>Proof sketch.</strong> In one variable the function $G(x) = e^{-\pi x^2}$ satisfies the differential equation $G'(x)+2\pi xG(x) = 0$, and the identities (d) and (e) above transform that equation into the same equation for $\hat G$, with the same value $G(0) = 1 = \hat G(0)$; uniqueness of the solution of the ordinary differential equation gives $\hat G = G$. For general $a$ one rescales using (b), and the $n$-dimensional case is the tensor product of the one-dimensional one: $e^{-\pi a\lvert x\rvert^2} = \prod_je^{-\pi ax_j^2}$. $\square$</p>
+<p><strong>Corollary (the heat kernel).</strong> For $t>0$ the function $K_t(x) = (4\pi t)^{-n/2}e^{-\lvert x\rvert^2/4t}$ has transform $\hat K_t(\xi) = e^{-4\pi^2t\lvert\xi\rvert^2}$, and the solution of the initial value problem $\partial_tu = \Delta u$, $u(0,\cdot) = f$, for $f\in\mathcal{S}$, is
+$$
+u(x,t) = (K_t*f)(x) = \int_{\mathbb{R}^n}(4\pi t)^{-n/2}e^{-\lvert x-y\rvert^2/4t}f(y)\,dy ,
+$$
+so that the transform diagonalises the Laplacian: $\hat u(\xi,t) = \hat f(\xi)e^{-4\pi^2t\lvert\xi\rvert^2}$.</p>
+<p><strong>Proof.</strong> The transform of $K_t$ is computed from the theorem with $a = 1/(4\pi t)$; the identities (e) applied twice give $\widehat{\Delta u} = -4\pi^2\lvert\xi\rvert^2\hat u$, so the transformed equation is the ordinary differential equation $\partial_t\hat u = -4\pi^2\lvert\xi\rvert^2\hat u$, whose solution is displayed; the inversion theorem recovers $u$. $\square$</p>
+<h3 id="poisson-summation">Poisson Summation</h3>
+<p><strong>Theorem (Poisson summation).</strong> Let $f\in\mathcal{S}(\mathbb{R}^n)$ and let $L$ be a lattice in $\mathbb{R}^n$ with dual lattice $L^* = \{y : y\cdot x\in\mathbb{Z}\ \text{for all } x\in L\}$. Then
+$$
+\sum_{\ell\in L}f(x+\ell) = \frac{1}{\operatorname{vol}(L)}\sum_{\ell^*\in L^*}\hat f(\ell^*)e^{2\pi ix\cdot\ell^*} , \qquad\text{and in particular}\quad \sum_{\ell\in L}f(\ell) = \frac{1}{\operatorname{vol}(L)}\sum_{\ell^*\in L^*}\hat f(\ell^*) .
+$$
+<strong>Proof sketch.</strong> The function $F(x) = \sum_\ell f(x+\ell)$ is $L$-periodic and smooth; its Fourier coefficients on the torus $\mathbb{R}^n/L$ are computed by unfolding the integral over a fundamental domain, giving $\operatorname{vol}(L)^{-1}\hat f(\ell^*)$, and the Fourier inversion theorem on the torus reconstructs $F$ from its coefficients. $\square$</p>
+<p><strong>Remark (the theta transformation).</strong> For $n=1$ and $f(x) = e^{-\pi tx^2}$ with $t>0$ and $L = \mathbb{Z}$, the identity becomes $\sum_{m\in\mathbb{Z}}e^{-\pi tm^2} = t^{-1/2}\sum_{n\in\mathbb{Z}}e^{-\pi n^2/t}$, the transformation law of the theta function; this is the analytic input of the functional equations of the zeta and theta series, treated and of this Part. It is recorded here because the identity is exactly the Poisson summation formula applied to the Gaussian, and no further analytic theory is needed for it.</p>
+<h2 id="the-fourier-transform-on-math168">The Fourier Transform on $L^2$</h2>
+<h3 id="plancherels-theorem">Plancherel's Theorem</h3>
+<p><strong>Theorem (Plancherel).</strong> The Fourier transform on $\mathcal{S}$ is an isometry of $L^2$,
+$$
+\lVert \hat f\rVert_2 = \lVert f\rVert_2 \qquad (f\in\mathcal{S}),
+$$
+and it extends uniquely to a unitary operator $\mathcal{F}:L^2\to L^2$, with $\mathcal{F}^4 = 1$ and $\mathcal{F}^2 = $ reflection; the inverse on $L^2$ is the conjugate transform, $f(x) = \int\hat f(\xi)e^{2\pi ix\cdot\xi}d\xi$ understood as an $L^2$ limit. For $f,g\in L^2$ the <strong>Parseval identity</strong> holds:
+$$
+\langle f,g\rangle = \langle \hat f,\hat g\rangle .
+$$
+<strong>Proof sketch.</strong> The multiplication formula with $g = \overline{\hat f}$ gives the isometry on $\mathcal{S}$, using that the transform of $\overline{\hat f}$ is $\overline f$ — from $\widehat{\bar h}(\xi) = \overline{\hat h(-\xi)}$ and $\hat{\hat f} = \tilde f$ — and that the inversion theorem applies; the extension to $L^2$ is by density of $\mathcal{S}$ in $L^2$ and by completeness of $L^2$ — the transform is uniformly continuous for the $L^2$ norm on a dense set, so it extends uniquely, and the extension is surjective because $\mathcal{F}^4 = 1$ on the dense set. $\square$</p>
+<h3 id="eigenfunctions-and-the-order-four">Eigenfunctions and the Order Four</h3>
+<p><strong>Theorem.</strong> The <strong>Hermite functions</strong>
+$$
+h_k(x) = e^{-\pi x^2}H_k(2\sqrt\pi\,x), \qquad k = 0,1,2,\dots,
+$$
+where $H_k$ is the Hermite polynomial $H_0 = 1$, $H_1(t) = 2t$, $H_2(t) = 4t^2-2$, are eigenfunctions of the Fourier transform with eigenvalues $(-i)^k$; the first two are $h_0(x) = e^{-\pi x^2}$ with $\hat h_0 = h_0$ and $h_1(x) = 4\sqrt\pi\,xe^{-\pi x^2}$, proportional to $xe^{-\pi x^2}$, with $\hat h_1 = -ih_1$. The eigenfunctions are complete in $L^2(\mathbb{R})$, and the four eigenspaces of the transform are the closed spans of the Hermite functions with $k\equiv0,1,2,3\pmod4$.</p>
+<p><strong>Proof sketch.</strong> The eigenrelation is verified for $h_0$ from the differential equation of the Gaussian; for $h_1$ it follows from the identity (d) above, which gives $\hat h_1 = \frac{i}{2\pi}\frac{d}{d\xi}\hat h_0 = -i\xi e^{-\pi\xi^2}$; and the general case follows from the three-term recurrence that generates the Hermite functions from these two, the recurrence being preserved by the transform because the identities (d) and (e) interchange multiplication by $x$ with differentiation. The completeness follows from the completeness of the Hermite polynomials in $L^2$ of the Gaussian weight. $\square$</p>
+<p><strong>Remark (a check of the eigenvalues).</strong> With $h_1(x) = xe^{-\pi x^2}$ one computes directly that
+$$
+\int_{\mathbb{R}}xe^{-\pi x^2}e^{-2\pi ix\xi}\,dx = \frac{i}{2\pi}\frac{d}{d\xi}e^{-\pi\xi^2} = -i\xi e^{-\pi\xi^2} = -i\,h_1(\xi),
+$$
+so that $h_1$ is an eigenfunction with eigenvalue $-i = (-i)^1$, in agreement with the general formula; and applying the identity twice gives $\mathcal{F}^2h_1 = -h_1$, so that the square of the transform is the reflection, again in agreement. The numerical evaluation of the transform of $e^{-\pi x^2}$ and of $xe^{-\pi x^2}$ at several frequencies reproduces $e^{-\pi\xi^2}$ and $-i\xi e^{-\pi\xi^2}$ to the accuracy of the quadrature.</p>
+<h3 id="the-hausdorffyoung-inequality">The Hausdorff–Young Inequality</h3>
+<p><strong>Theorem (Hausdorff–Young).</strong> For $1\leq p\leq2$ and $1/p+1/q = 1$,
+$$
+\lVert \hat f\rVert_q\leq\lVert f\rVert_p \qquad (f\in L^p\cap L^1),
+$$
+and the transform extends to a bounded linear map $L^p\to L^q$ of norm $1$; for $p=2$ this is Plancherel, for $p=1$ the trivial bound, and the intermediate cases fail for $p>2$.</p>
+<p><strong>Proof sketch.</strong> The inequality is the interpolation of the two endpoint bounds, the $L^1\to L^\infty$ bound and the $L^2\to L^2$ isometry, by the Riesz–Thorin convexity theorem applied to the analytic family of operators obtained by complexifying the dilation; the failure for $p>2$ is the scaling computation with the rescaled Gaussian, whose transform concentrates: a function in $L^p$ for $p>2$ may have a transform outside every $L^q$ with $q<2$. $\square$</p>
+<h2 id="the-uncertainty-principle-and-the-multipliers">The Uncertainty Principle and the Multipliers</h2>
+<h3 id="the-joint-localisation-theorems">The Joint Localisation Theorems</h3>
+<p><strong>Theorem (Heisenberg's inequality).</strong> For $f\in L^2(\mathbb{R})$ with $xf\in L^2$ and $\hat f\in L^2$,
+$$
+\lVert xf\rVert_2\,\lVert \xi\hat f(\xi)\rVert_2\geq\frac{1}{4\pi}\lVert f\rVert_2^2 ,
+$$
+with equality exactly for the modulated Gaussians $f(x) = ce^{-ax^2+ibx}$; the rescaled Gaussians $e^{-\pi ax^2}$ attain the constant for every $a>0$, which is the statement that no function is better localised in both variables than the Gaussian.</p>
+<p><strong>Proof.</strong> Integrating the identity $\int_{\mathbb{R}}(x\lvert f\rvert^2)' = 0$, which holds because $x\lvert f\rvert^2$ vanishes at both ends, gives
+$$
+\lVert f\rVert_2^2 = -2\operatorname{Re}\int xf(x)\overline{f'(x)}\,dx \leq 2\lVert xf\rVert_2\lVert f'\rVert_2 ,
+$$
+and $\lVert f'\rVert_2 = 2\pi\lVert\xi\hat f\rVert_2$ by Plancherel and the differentiation identity; the equality case is the equality case of Cauchy–Schwarz. For the Gaussian the two norms are computed directly and the product is $\lVert f\rVert_2^2/(4\pi)$ for every $a>0$, which has been checked by numerical quadrature for several values of $a$. $\square$</p>
+<p><strong>Theorem (Hardy; Benedicks).</strong> If $\lvert f(x)\rvert\leq Ce^{-\pi ax^2}$ and $\lvert\hat f(\xi)\rvert\leq Ce^{-\pi b\xi^2}$ with $ab\geq1$, then $f = 0$ unless $ab = 1$, in which case $f$ is a constant multiple of $e^{-\pi ax^2}$. If $f\in L^2(\mathbb{R})$ is supported on a set of finite measure and $\hat f$ is supported on a set of finite measure, then $f = 0$ almost everywhere.</p>
+<p><strong>Proof sketch.</strong> The first statement is the classical theorem of Hardy, proved by analytic continuation: the decay hypotheses force the transform of the continuation of $f$ to be an entire function of order $2$ with two-sided bounds, and the entire function must vanish. The second is the Amrein–Berthier–Benedicks theorem; its standard proof reduces to the first by a covering argument with the Cauchy–Schwarz inequality on the two sets, and it implies in particular that a function and its transform cannot both be compactly supported unless the function is zero — the <strong>uncertainty principle in its qualitative form</strong>.</p>
+<h3 id="maximal-functions-the-differentiation-theorem-and-singular-integrals">Maximal Functions, the Differentiation Theorem and Singular Integrals</h3>
+<p><strong>Definition.</strong> For $f\in L^1_{\mathrm{loc}}(\mathbb{R}^n)$ the <strong>Hardy–Littlewood maximal function</strong> is
+$$
+Mf(x) = \sup_{r>0}\frac{1}{\lvert B(x,r)\rvert}\int_{B(x,r)}\lvert f(y)\rvert\,dy .
+$$
+<strong>Theorem (Hardy–Littlewood).</strong> $M$ is of weak type $(1,1)$, $\lvert\{Mf>\lambda\}\rvert\leq\frac{C}{\lambda}\lVert f\rVert_1$, and bounded on $L^p$ for $1<p\leq\infty$; consequently
+$$
+\lim_{r\downarrow0}\frac{1}{\lvert B(x,r)\rvert}\int_{B(x,r)}f(y)\,dy = f(x)
+$$
+for almost every $x$ — the <strong>Lebesgue differentiation theorem</strong> — and the Lebesgue points of $f$ form a set of full measure, in the sense of <em>Measure Theory and Integration</em>.</p>
+<p><strong>Proof sketch.</strong> The weak $(1,1)$ inequality is the Vitali covering theorem applied to a family of balls on which the average of $\lvert f\rvert$ exceeds $\lambda$; the $L^p$ bound is the Marcinkiewicz interpolation between the weak $(1,1)$ and the trivial $L^\infty$ bounds; and the almost everywhere statement follows by comparing $f$ with a continuous function on a dense set and using the weak type inequality to control the set where the maximal oscillation is large. $\square$</p>
+<p><strong>Theorem (Calderón–Zygmund; the Hilbert and Riesz transforms).</strong> Let $K$ satisfy the size and Hölder conditions of the Calderón–Zygmund theory, let $Tf(x) = \mathrm{p.v.}\int K(x-y)f(y)dy$ and suppose $\hat K$ is a bounded function. Then $T$ is bounded on $L^p$ for $1<p<\infty$ and of weak type $(1,1)$. The model cases are the <strong>Hilbert transform</strong> on $\mathbb{R}$, with $K(x) = 1/(\pi x)$ and $\widehat{(Hf)}(\xi) = -i\operatorname{sgn}(\xi)\hat f(\xi)$, and the <strong>Riesz transforms</strong> $R_j$ on $\mathbb{R}^n$, with $\widehat{(R_jf)}(\xi) = -i\xi_j/\lvert\xi\rvert\hat f(\xi)$, whose symbols are bounded.</p>
+<p><strong>Proof sketch.</strong> The kernel is decomposed into a good part, controlled by the $L^2$ boundedness of the multiplier, and a bad part handled by the Calderón–Zygmund decomposition of $f$ at level $\lambda$; the cancellation of the kernel is what makes the bad part contribute at the level of the weak $(1,1)$ inequality. The symbols of the Hilbert and Riesz transforms are computed from the transform of the principal value kernels. $\square$</p>
+<p><strong>Theorem (Mihlin–Hörmander multipliers and Littlewood–Paley).</strong> If $m\in C^k(\mathbb{R}^n\setminus\{0\})$ with $\lvert\partial^\alpha m\rvert\leq C_\alpha\lvert\xi\rvert^{-\lvert\alpha\rvert}$ for $\lvert\alpha\rvert\leq k>n/2$, then the operator $T_mf = \widehat{(m\hat f)}$ is bounded on $L^p$ for $1<p<\infty$. Moreover, for a smooth dyadic partition of unity $\{\psi_j\}$ and $S_jf = \psi_j(D)f$ one has the <strong>Littlewood–Paley</strong> equivalence
+$$
+\lVert f\rVert_p\asymp\Bigl\lVert\Bigl(\sum_j\lvert S_jf\rvert^2\Bigr)^{1/2}\Bigr\rVert_p \qquad (1<p<\infty),
+$$
+and, for $s>0$, a function lies in the Sobolev space $H^s$ — that is, $\int(1+\lvert\xi\rvert^2)^s\lvert\hat f\rvert^2<\infty$ — if and only if its fractional derivatives of order $s$, the functions $\widehat{(-\Delta)^{s/2}f} = (2\pi\lvert\xi\rvert)^s\hat f$, are in $L^2$, so that the Fourier characterisation of regularity is exactly the statement that the transform converts differentiation into multiplication.</p>
+<p><strong>Proof sketch.</strong> The multiplier theorem is proved by decomposing $m$ into a sum of smooth pieces supported on dyadic annuli, each of which is realised as a convolution with an $L^1$ function of controlled norm by the standard estimate on the inverse transform of a compactly supported symbol; the Littlewood–Paley equivalence follows from the almost orthogonality of the pieces and the vector-valued maximal inequality. The Sobolev characterisation is the statement that the symbol of the fractional Laplacian $(-\Delta)^{s/2}$ is $(2\pi\lvert\xi\rvert)^s$. $\square$</p>
+<p><strong>Remark (what is deferred).</strong> The Sobolev spaces, the interpolation methods used in the proofs of the multiplier theorems, the distributional calculus. What belongs here is the transform itself, its two fundamental theorems and the real-variable machinery that uses nothing but the integral. The applications of the transform in the theory of numbers — the theta functional equation, the zeta integrals of Tate's thesis, the Poisson summation on the adeles — are not covered here; the applications to the potential theory of the Laplacian are the subject of the article below.</p>
+<h2 id="summary">Summary</h2>
+<p>The Fourier transform $\hat f(\xi) = \int_{\mathbb{R}^n}f(x)e^{-2\pi ix\cdot\xi}dx$ maps $L^1(\mathbb{R}^n)$ into the continuous functions vanishing at infinity, with operator norm $1$, and satisfies $\widehat{(f(\cdot-y))}(\xi) = e^{-2\pi iy\cdot\xi}\hat f(\xi)$, $\widehat{(f(\lambda\cdot))}(\xi) = \lambda^{-n}\hat f(\xi/\lambda)$, $\widehat{(f*g)} = \hat f\hat g$, and the two differentiation identities $\widehat{(\partial_jf)} = 2\pi i\xi_j\hat f$ and $\partial_j\hat f = \widehat{(-2\pi ix_jf)}$; it is injective, by the multiplication formula $\int\hat fg = \int f\hat g$, and if $f$ and $\hat f$ are both integrable then $f$ is almost everywhere the continuous function $\check f(x) = \int\hat f(\xi)e^{2\pi ix\cdot\xi}d\xi$. The Schwartz class $\mathcal{S}$ of rapidly decreasing smooth functions is invariant, the transform is a homeomorphism of $\mathcal{S}$ of order four, the Gaussian $e^{-\pi a\lvert x\rvert^2}$ has transform $a^{-n/2}e^{-\pi\lvert\xi\rvert^2/a}$ so that $e^{-\pi\lvert x\rvert^2}$ is a fixed point, the heat semigroup is diagonalised by the transform as $\hat u(\xi,t) = \hat f(\xi)e^{-4\pi^2t\lvert\xi\rvert^2}$, and Poisson summation expresses the periodisation of $f$ through the transform at the dual lattice, the theta transformation law being the case of the Gaussian on $\mathbb{Z}$. The transform extends to a unitary operator on $L^2$ with $\mathcal{F}^4 = 1$, whose eigenfunctions are the Hermite functions with eigenvalues $(-i)^k$; the Hausdorff–Young inequality interpolates between $\lVert\hat f\rVert_\infty\leq\lVert f\rVert_1$ and Plancherel. The joint localisation of a function and its transform is governed by Heisenberg's inequality $\lVert xf\rVert_2\lVert\xi\hat f\rVert_2\geq\frac{1}{4\pi}\lVert f\rVert_2^2$, whose equality case is the Gaussian and whose qualitative form is Hardy's theorem and the theorem of Amrein, Berthier and Benedicks that a function and its transform cannot both be supported on sets of finite measure. Finally, the Hardy–Littlewood maximal function is of weak type $(1,1)$ and bounded on $L^p$ for $p>1$, which gives the Lebesgue differentiation theorem; the Hilbert and Riesz transforms are the model singular integrals, with the symbols $-i\operatorname{sgn}\xi$ and $-i\xi_j/\lvert\xi\rvert$; the Mihlin–Hörmander multipliers are the general $L^p$-bounded operators defined by a homogeneous symbol; and the Littlewood–Paley decomposition with the Fourier characterisation of the Sobolev spaces is the machinery by which the transform is applied to regularity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\hat f$, $\check f$</td>
+<td>Fourier transform and its inverse on $\mathbb{R}^n$; $\hat f(\xi) = \int f(x)e^{-2\pi ix\cdot\xi}dx$</td>
+</tr>
+<tr>
+<td>$\tilde f$</td>
+<td>Reflection $x\mapsto f(-x)$</td>
+</tr>
+<tr>
+<td>$C_0(\mathbb{R}^n)$</td>
+<td>Continuous functions vanishing at infinity, with the sup norm</td>
+</tr>
+<tr>
+<td>$f*g$</td>
+<td>Convolution</td>
+</tr>
+<tr>
+<td>$\mathcal{S}(\mathbb{R}^n)$</td>
+<td>Schwartz class of rapidly decreasing smooth functions</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>The transform as an operator, $\mathcal{F}^4 = 1$</td>
+</tr>
+<tr>
+<td>$h_k$</td>
+<td>Hermite functions, eigenfunctions of $\mathcal{F}$ with eigenvalue $(-i)^k$</td>
+</tr>
+<tr>
+<td>$K_t$</td>
+<td>Heat kernel $(4\pi t)^{-n/2}e^{-\lvert x\rvert^2/4t}$</td>
+</tr>
+<tr>
+<td>$L$, $L^*$, $\operatorname{vol}(L)$</td>
+<td>Lattice, dual lattice, covolume</td>
+</tr>
+<tr>
+<td>$Mf$</td>
+<td>Hardy–Littlewood maximal function</td>
+</tr>
+<tr>
+<td>$H$, $R_j$</td>
+<td>Hilbert transform, Riesz transforms</td>
+</tr>
+<tr>
+<td>$T_m$, $m$</td>
+<td>Fourier multiplier operator and its symbol</td>
+</tr>
+<tr>
+<td>$S_j$, $\psi_j$</td>
+<td>Littlewood–Paley dyadic pieces</td>
+</tr>
+<tr>
+<td>$H^s$</td>
+<td>Sobolev space, $\int(1+\lvert\xi\rvert^2)^s\lvert\hat f\rvert^2<\infty$</td>
+</tr>
+<tr>
+<td>$p$, $q$</td>
+<td>Conjugate exponents $1/p+1/q=1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Norbert Wiener, <em>The Fourier Integral and Certain of its Applications</em> (Cambridge University Press, 1933), for the classical transform and the tauberian theory built on it.</li>
+<li>Salomon Bochner and K. Chandrasekharan, <em>Fourier Transforms</em> (Princeton University Press, 1949), for the inversion, Plancherel and Bochner theorems in the Euclidean setting.</li>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton University Press, 1971), for the transform, the maximal function, the multipliers and the Littlewood–Paley theory.</li>
+<li>Elias M. Stein, <em>Singular Integrals and Differentiability Properties of Functions</em> (Princeton University Press, 1970), for the Calderón–Zygmund theory, the Hilbert and Riesz transforms and the Sobolev characterisation.</li>
+<li>Antonio Zygmund, <em>Trigonometric Series</em> (2nd ed., Cambridge University Press, 1959), for the interpolation theorems and the classical multiplier results.</li>
+<li>Gerald B. Folland, <em>Real Analysis: Modern Techniques and Their Applications</em> (2nd ed., Wiley, 1999), for the concise account of the transform, Plancherel and the Hausdorff–Young inequality used here.</li>
+<li>Gerald B. Folland, <em>Harmonic Analysis in Phase Space</em> (Princeton University Press, 1989), for the uncertainty principle, the Hermite functions and the joint localisation theorems.</li>
+<li>Victor Havin and Burglind Jöricke, <em>The Uncertainty Principle in Harmonic Analysis</em> (Springer, 1994), for Hardy's theorem, the Amrein–Berthier–Benedicks theorem and their sharpenings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

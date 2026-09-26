@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Clifford Invariant and the Spinor Genus — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-clifford-invariant-and-the-spinor-genus"><strong>The Clifford Invariant and the Spinor Genus</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A non-degenerate quadratic form over a field determines a Clifford algebra, and the class of that algebra in the Brauer group of the field is an invariant of the form: it is unchanged when the form is replaced by an isometric one, and it can distinguish forms that have the same dimension and the same discriminant. That class, with the normalisation that ties it to the parity of the dimension, is the <strong>Clifford invariant</strong>. It is the second of the arithmetic invariants of a quadratic form, after the discriminant, and the theorem that it is well defined modulo the square of the fundamental ideal of the Witt ring is the beginning of the arithmetic filtration of that ring.</p>
+<p>The same circle of ideas has an integral counterpart. Over a global field a quadratic form extends to a lattice, lattices are classified up to local equivalence by their genus, and the finer classification obtained by allowing the action of the spinorial part of the orthogonal group is the <strong>spinor genus</strong>. The difference between the two is measured by the spinor norm and by the class group, and it is through that measurement that the Clifford algebra of a form enters the arithmetic of lattices.</p>
+<p>The Clifford algebra, its universal property and its dependence only on the isometry class of the form are from <em>The Clifford Algebra</em> and <em>Clifford Algebras in Finite Dimensions</em>; the discriminant, the Witt ring, the fundamental ideal, the hyperbolic plane and the Pfister forms are from <em>Witt's Theorems</em> and <em>The Witt Group and the Grothendieck–Witt Ring</em>; the Brauer group, central simplicity and the tensor product of central simple algebras are from <em>Central Simple Algebras and the Brauer Group</em>; the low-dimensional table and the tensor product decomposition of Clifford algebras are from <em>The Low-Dimensional Classification</em> and <em>Bott Periodicity and the Classification</em>; the spinor norm, the group $O'$ and its relation to the spin group are from <em>The Spinor Norm and the Structure of the Orthogonal Group</em>; the integral lattices of the norm form of the quaternions are from <em>Lattices and the Quaternion Lattice</em>. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, and $q$ is a non-degenerate quadratic form on a finite-dimensional space $V$ of dimension $n$.</p>
+<h2 id="the-brauer-class-of-a-clifford-algebra">The Brauer Class of a Clifford Algebra</h2>
+<h3 id="central-simplicity">Central Simplicity</h3>
+<p><strong>Theorem.</strong> Let $q$ be non-degenerate of dimension $n$.</p>
+<ol>
+<li>If $n$ is even then $\mathrm{Cl}(V,q)$ is a central simple algebra over $F$, of dimension $2^n$.</li>
+<li>If $n$ is odd then $\mathrm{Cl}^0(V,q)$ is a central simple algebra over $F$, of dimension $2^{n-1}$, and the centre of $\mathrm{Cl}(V,q)$ is $F$ or the quadratic extension of $F$ by the square root of the discriminant of $q$.</li>
+</ol>
+<p><strong>Proof.</strong> These are the classical facts underlying the classification, recorded in <em>Bott Periodicity and the Classification</em> and <em>The Low-Dimensional Classification</em>: the type of the algebra is determined by the dimension and by the class of the discriminant, and in the cases named the algebra or its even part is central simple of the stated dimension. $\square$</p>
+<p><strong>Definition.</strong> The <strong>Clifford class</strong> of $q$ is the class in the Brauer group</p>
+<p>$$
+[\,\mathrm{Cl}\,](q)=[\mathrm{Cl}(V,q)]\ (n\ \text{even}), \qquad [\,\mathrm{Cl}^0](q)=[\mathrm{Cl}^0(V,q)]\ (n\ \text{odd}).
+$$</p>
+<p><strong>Proposition.</strong> Each of the two classes depends only on the isometry class of $q$.</p>
+<p><strong>Proof.</strong> An isometry carrying $q$ to $q'$ extends to an isomorphism of Clifford algebras by the universal property, and it restricts to an isomorphism of the even parts; isomorphic central simple algebras have the same Brauer class. $\square$</p>
+<p><strong>Proposition.</strong> The Clifford class of a hyperbolic plane is trivial: $\mathrm{Cl}(V,q)\cong M_2(F)$ for $q\cong\langle1,-1\rangle$.</p>
+<p><strong>Proof.</strong> The Clifford algebra of a hyperbolic plane is split, as recorded in <em>Bott Periodicity and the Classification</em>; a split central simple algebra of dimension four is $M_2(F)$. $\square$</p>
+<h3 id="the-binary-computation">The Binary Computation</h3>
+<p><strong>Theorem.</strong> For $a,b\in F^\times$ the Clifford algebra of the form $q=\langle a,b\rangle$ is the quaternion algebra $(a,b)_F$, and</p>
+<p>$$
+[\,\mathrm{Cl}\,](\langle a,b\rangle)=(a,b)_F .
+$$</p>
+<p><strong>Proof.</strong> Let $e_1,e_2$ be an orthogonal basis with $q(e_1)=a$, $q(e_2)=b$, so that $B(e_1,e_2)=0$. In $\mathrm{Cl}(V,q)$ one has $e_1^2=a$, $e_2^2=b$ and $e_1e_2=-e_2e_1$; the four elements $1,e_1,e_2,e_1e_2$ are linearly independent, by the basis theorem, so the algebra is generated by two anticommuting elements of the prescribed squares and is the quaternion algebra $(a,b)_F$ by its definition. $\square$</p>
+<p><strong>Corollary.</strong> $[\,\mathrm{Cl}\,](\langle a,-a\rangle)=(a,-a)_F$, which is split, since the element $a^{-1}e_1e_2$ has square $1$ and $\tfrac12(1+a^{-1}e_1e_2)$ is a nontrivial idempotent, consistently with the proposition on the hyperbolic plane. The form $\langle a,a\rangle$ behaves differently: $(a,a)_F$ is not split in general, being isomorphic to $(a,-1)_F$, and over $\mathbb{R}$ with $a=-1$ it is the quaternion algebra of Hamilton, of order two in $\mathrm{Br}(\mathbb{R})$; the same algebra over $\mathbb{Q}$ is ramified at the real place.</p>
+<p><strong>Proof.</strong> For the idempotent: in $(a,-a)_F$ the element $e_1e_2$ has square $-ab=a^2$, so $a^{-1}e_1e_2$ has square $1$ and $\tfrac12(1+a^{-1}e_1e_2)$ is a nontrivial idempotent, and a central simple algebra containing one is a matrix algebra. In $(a,a)_F$ instead $e_1e_2$ has square $-a^2$ and produces no idempotent of that form; the identification with $(a,-1)_F$ holds because $a/(-1)=-a$ is the norm of $\sqrt a$ in $F(\sqrt a)$, and the quaternion algebra $(a,a)_F$ is split exactly when $(a,-1)_F$ is. The remaining cases are the binary computation together with the proposition on the hyperbolic plane. $\square$</p>
+<h3 id="the-even-part-and-the-carrier-of-the-invariant">The Even Part and the Carrier of the Invariant</h3>
+<p><strong>Example (the sum of four squares).</strong> Let $F=\mathbb{R}$ and $q=\langle1,1,1,1\rangle$. The low-dimensional table gives</p>
+<p>$$
+\mathrm{Cl}(V,q)\cong M_2(\mathbb{H}), \qquad \mathrm{Cl}^0(V,q)\cong \mathrm{Cl}_{3,0}\cong\mathbb{H}\oplus\mathbb{H},
+$$</p>
+<p>so the class read off the full algebra is the nontrivial class $[\mathbb{H}]$, and the even part is the product of two copies of the same central simple algebra, whose class is the same $[\mathbb{H}]$. The two readings agree, and the invariant is the nontrivial element of $\mathrm{Br}(\mathbb{R})=\mathbb{Z}/2$.</p>
+<p><strong>Remark (which algebra carries the class).</strong> Let $n=2m$ be even and let $\omega=e_1\cdots e_{2m}$ be the volume element, with $\omega^2=(-1)^m\det(q)$ and $\omega$ central in the even part.</p>
+<ol>
+<li>If $n\equiv2$ modulo $4$ then $\omega^2=-\det(q)$. When the discriminant is a square the centre of the even part is the field $F$ up to at most a quadratic twist by $\omega$, and the carrier of the class is $\mathrm{Cl}^0(V,q)$.</li>
+<li>If $n\equiv0$ modulo $4$ then $\omega^2=\det(q)$. When the discriminant is a square the centre of the even part is $F\oplus F$, so that $\mathrm{Cl}^0(V,q)\cong A\oplus A'$ with $A$ and $A'$ central simple of the same Brauer class, and the invariant is the class of either component.</li>
+</ol>
+<p>In both cases the carrier is the <strong>even</strong> Clifford algebra, read componentwise when its centre is split, and the class is that of the even part. The classical normalisation is this one, and it is the reason that a form of even dimension and trivial discriminant is the natural domain of the invariant: the element $e_2(q)$ is defined for $q$ in the fundamental ideal $I^2$ below. The example above is the case $m=2$: the even part $\mathbb{H}\oplus\mathbb{H}$ has split centre, both components have class $[\mathbb{H}]$, and the class of the full algebra $M_2(\mathbb{H})$ agrees with it.</p>
+<p><strong>Remark (the tensor product is graded).</strong> The Brauer class of the Clifford algebra is <strong>not</strong> multiplicative under orthogonal sums as it stands. One has</p>
+<p>$$
+\mathrm{Cl}(V_1\perp V_2)\cong\mathrm{Cl}(V_1)\hat\otimes\mathrm{Cl}(V_2)
+$$</p>
+<p>for the <strong>graded</strong> tensor product, and the Brauer class of a graded tensor product is not the product of the Brauer classes: the graded tensor product of two split Clifford algebras of dimension four is $M_2(\mathbb{H})$, as the example shows, which is not split, while the product of the two classes is the identity. The decomposition is recorded in <em>Bott Periodicity and the Classification</em>. Multiplicativity is restored on the fundamental ideal, where the correction terms are pinned down by the discriminant; it is not a statement about the Clifford classes of the binary components of a decomposition, since those components need not lie in that ideal.</p>
+<h3 id="the-invariant-on-the-fundamental-ideal">The Invariant on the Fundamental Ideal</h3>
+<p>Let $W(F)$ be the Witt ring of non-degenerate quadratic forms, $I^1$ the ideal of the classes of even dimension and $I^2=I^1\cdot I^1$ its square, generated by the Pfister forms of the type $\langle\langle a,b\rangle\rangle=\langle1,a,b,ab\rangle$; the forms in $I^2$ are those of dimension divisible by four and trivial discriminant $e_1(q)=(-1)^{n(n-1)/2}\det(q)$.</p>
+<p><strong>Theorem.</strong> With the carrier the even Clifford algebra as above, the Clifford class induces a well-defined group homomorphism</p>
+<p>$$
+e_2:I^2\longrightarrow {}_2\mathrm{Br}(F),
+$$</p>
+<p>into the subgroup of elements of order dividing two of the Brauer group; it is trivial on the hyperbolic forms, and it sends the Pfister form $\langle\langle a,b\rangle\rangle$ to the class of $(a,b)_F$. Together with $e_1$ it forms the first two of the invariants of the arithmetic filtration of $W(F)$.</p>
+<p><strong>Proof.</strong> The statement is the classical theorem of the arithmetic theory of quadratic forms, the invariant $e_2$ being Pfister's, and the computation on the Pfister generators follows from the binary computation above applied to the odd complement $\langle a,b,ab\rangle$ of $\langle\langle a,b\rangle\rangle$; the proof of well-definedness and of multiplicativity is in the literature cited below. Consistency is visible on the generators: over $\mathbb{R}$ the form $4\langle1\rangle=\langle1,1,1,1\rangle$ has invariant $[\mathbb{H}]$, the form $8\langle1\rangle=4\langle1\rangle\perp4\langle1\rangle$ has invariant $[\mathbb{H}]^2=1$, and indeed $\mathrm{Cl}_{8,0}\cong M_{16}(\mathbb{R})$ is split. $\square$</p>
+<p><strong>Remark.</strong> The discriminant of the binary form $\langle a,b\rangle$ is $-ab$, so a binary form lies in $I^2$ only when $-ab$ is a square, and in that case it is hyperbolic and its invariant is the identity. The invariant is therefore not the quaternion class of a binary form: the binary computation above is a computation of the class of the Clifford algebra, valid for every binary form, and not a computation of $e_2$.</p>
+<h2 id="the-spinor-norm">The Spinor Norm</h2>
+<p>The spinor norm is defined and studied in <em>The Spinor Norm and the Structure of the Orthogonal Group</em>; the present article uses two of its properties.</p>
+<p><strong>Theorem.</strong> Let $q$ be non-degenerate on $V$. There is a homomorphism</p>
+<p>$$
+\theta:O(V,q)\longrightarrow F^\times/F^{\times2}, \qquad \theta(\rho_u)=q(u)\,(F^\times)^2
+$$</p>
+<p>for the reflection $\rho_u$ in a non-isotropic vector $u$, and the image of the spin group under the twisted adjoint action lies in the kernel $O'(V,q)=\ker\theta$.</p>
+<p><strong>Proof.</strong> This is the theorem of the cited entry: the homomorphism is defined on versors by $\theta(\widetilde{\mathrm{Ad}}_x)=(-1)^kN(x)(F^\times)^2$ for a versor of length $k$, which is well defined because a change of versor multiplies $N(x)$ by a square while the parity of the length is determined by the determinant; on a reflection, $k=1$ and $N(u)=-q(u)$, so the value is $q(u)$ modulo squares. A rotor has $N(R)=1$ and even length, so the image of the spin group lies in the kernel. $\square$</p>
+<p><strong>Remark (definite forms).</strong> If $F=\mathbb{R}$ and $q$ is positive definite then $q(u)>0$ for every nonzero $u$, so every value of $\theta$ is a square and $\theta$ is trivial, with $O'(V,q)=O(V,q)$; for a negative definite form the reflections have spinor norm the class of $-1$, while the rotations still have trivial spinor norm, since a rotation is an even product of reflections. The spinor norm is therefore informative only over fields in which a positive quantity need not be a square, such as $\mathbb{Q}$; over $\mathbb{R}$ it refines nothing on the rotations.</p>
+<p><strong>Example.</strong> Over $\mathbb{Q}$ with $q=\langle1,1,1\rangle$ the vector $u=(1,1,0)$ has $q(u)=2$, so the reflection $\rho_u$ has spinor norm the class of $2$, which is not a square; hence $O'(V,q)$ is a proper subgroup of $O(V,q)$. Over $\mathbb{R}$ with the same form the same reflection has spinor norm the class of $2$, which is a square in $\mathbb{R}$, so $\rho_u\in O'(V,q)$.</p>
+<h2 id="the-genus-and-the-spinor-genus">The Genus and the Spinor Genus</h2>
+<h3 id="the-three-equivalences">The Three Equivalences</h3>
+<p>Let $F$ be a global field, $o$ its ring of integers, $\mathbb{A}$ its ring of adèles, $V$ a non-degenerate quadratic space over $F$ of dimension $n\ge3$ and $L\subseteq V$ a lattice, that is a finitely generated $o$-module spanning $V$ on which the form takes integral values.</p>
+<p><strong>Definition.</strong> Two lattices $L$ and $L'$ in $V$ are in the same <strong>class</strong> if $L'=\sigma L$ for some $\sigma\in O(V,q)$; in the same <strong>genus</strong> if for every place $v$ of $F$ there is $\sigma_v\in O(V_v,q_v)$ with $L'_v=\sigma_vL_v$; and in the same <strong>spinor genus</strong> if the local elements can be chosen so that the product of those at the places where they are needed lies in $O'(V,q)$.</p>
+<p>The three relations are successively coarser:</p>
+<p>$$
+\text{class}\ \Longrightarrow\ \text{spinor genus}\ \Longrightarrow\ \text{genus}.
+$$</p>
+<p><strong>Theorem (finiteness).</strong> A genus contains finitely many classes and finitely many spinor genera.</p>
+<p><strong>Proof.</strong> This is the finiteness of the class number of the orthogonal group, recorded in the arithmetic literature cited below: the arithmetic group $O(L)$ is of finite covolume in $O(V\otimes\mathbb{A})$ and the genus is a finite union of its double cosets. $\square$</p>
+<h3 id="the-count-of-spinor-genera">The Count of Spinor Genera</h3>
+<p><strong>Theorem.</strong> The number of spinor genera in the genus of $L$ is a power of two. It is computed from the spinor norm of the orthogonal group of the space and from the class group of $F$: the spinorial kernel $O'(V,q)$ refines the genus, the quotient $O(V,q)/O'(V,q)$ embeds in $F^\times/F^{\times2}$ by the spinor norm, and the double coset computation that follows uses the class map $F^\times\backslash\mathbb{A}^\times/\widehat{o}^{\times}$.</p>
+<p><strong>Proof.</strong> This is the theorem of Eichler and Kneser on the spinor genus; the statement, the power-of-two count and the computation from the spinor norm and the class group are in the arithmetic literature cited below. $\square$</p>
+<p><strong>Theorem (indefinite forms).</strong> If $q$ is indefinite and $n\ge3$ then the class, the spinor genus and the genus of $L$ coincide: every lattice in the genus of $L$ lies in its spinor genus and in its class.</p>
+<p><strong>Proof.</strong> This is strong approximation for the spin group in the indefinite case, a theorem of Eichler and Kneser; it is the reason the spinor genus refines the genus only in the definite case. $\square$</p>
+<p><strong>Remark (the definite case).</strong> For definite forms of dimension at least three the spinor genus can properly refine the genus, and the discrepancy is measured by the spinor norm of the isometries realising the local equivalences together with the class group. The phenomenon is called a spinor exception, and it is a phenomenon of the definite case by the theorem above.</p>
+<h3 id="the-quaternionic-case">The Quaternionic Case</h3>
+<p>Let $F=\mathbb{Q}$, let $\mathbb{H}=(-1,-1)_{\mathbb{Q}}$ be the rational quaternion algebra and let $q$ be its norm form, of dimension four and signature $(4,0)$; the Clifford algebra $\mathrm{Cl}(V,q)$ is $M_2(\mathbb{H})$, by the low-dimensional table, and its Brauer class is the nontrivial class of $\mathbb{H}$ in $\mathrm{Br}(\mathbb{Q})$.</p>
+<p><strong>Theorem.</strong> Up to conjugacy there is exactly one maximal order in $\mathbb{H}$, the Hurwitz order; the two lattices of the norm form that appear in <em>Lattices and the Quaternion Lattice</em>, of covolume $1$ and $\tfrac12$, with the second of index two in the first, are the Lipschitz lattice and that order.</p>
+<p><strong>Proof.</strong> The uniqueness of the maximal order is the classical arithmetic of the rational quaternions, and the two lattices, their covolumes and their index relation are computed in the cited entry. $\square$</p>
+<p><strong>Remark.</strong> The Hurwitz order is maximal, so its genus contains a single class and therefore a single spinor genus: for the definite norm form of the rational quaternions the three equivalences coincide, for a reason of maximality rather than of strong approximation. A nontrivial Clifford invariant does not by itself produce spinor exceptions, as this case shows.</p>
+<h2 id="summary">Summary</h2>
+<p>A non-degenerate quadratic form $q$ of dimension $n$ has a Clifford class, the Brauer class of $\mathrm{Cl}(V,q)$ for even $n$ and of $\mathrm{Cl}^0(V,q)$ for odd $n$; it depends only on the isometry class of $q$, and for a binary form it is the quaternion algebra of the pair,</p>
+<p>$$
+[\,\mathrm{Cl}\,](\langle a,b\rangle)=(a,b)_F,
+$$</p>
+<p>because the Clifford algebra of a binary form is exactly that quaternion algebra, generated by two anticommuting elements of the prescribed squares. The class of a hyperbolic plane is trivial, the Clifford algebra of a hyperbolic plane being a matrix algebra. For a form of even dimension the invariant of the arithmetic theory is carried by the <strong>even</strong> Clifford algebra, read componentwise when its centre is split, as it is for $\langle1,1,1,1\rangle$ over $\mathbb{R}$: there $\mathrm{Cl}(V,q)\cong M_2(\mathbb{H})$ and $\mathrm{Cl}^0(V,q)\cong\mathbb{H}\oplus\mathbb{H}$, the two components of the even part have class $[\mathbb{H}]$, and the class of the full algebra agrees with them, so the invariant is the nontrivial element of $\mathrm{Br}(\mathbb{R})$. The classical invariant $e_2$ is this class restricted to the forms of dimension divisible by four with trivial discriminant, equal to $(a,b)_F$ on the Pfister form $\langle\langle a,b\rangle\rangle$ and trivial on the hyperbolic forms; on that domain it is a well-defined group homomorphism $I^2\to{}_2\mathrm{Br}(F)$ from the square of the fundamental ideal of the Witt ring into the two-torsion of the Brauer group. The tensor product decomposition of Clifford algebras is a graded tensor product, so its Brauer class is not in general the product of the classes of the factors, and the invariant is not multiplicative as it stands: the graded tensor product of two split Clifford algebras of dimension four is $M_2(\mathbb{H})$, which is not split. Multiplicativity is restored on $I^2$, and a binary form lies there only when it is hyperbolic, so the quaternion class of a binary form is not the value of $e_2$.</p>
+<p>The spinor norm $\theta:O(V,q)\to F^\times/F^{\times2}$ sends a reflection in $u$ to the square class of $q(u)$, and the image of the spin group lies in its kernel $O'(V,q)$. Over $\mathbb{R}$ with a positive definite form every value of $\theta$ is a square and the invariant is trivial, while with a negative definite form the reflections take the value $-1$ and the rotations still take $1$; over $\mathbb{Q}$ the reflection in a vector of length $2$ already lies outside $O'$. For a lattice over a global field there are three equivalences, class implying spinor genus implying genus; a genus contains finitely many of each; the number of spinor genera in a genus is a power of two, computed from the spinor norm and the class map; and for indefinite forms of dimension at least three all three coincidences hold by strong approximation, so that the spinor genus is a refinement only in the definite case, where the discrepancy is a spinor exception. The Hurwitz order in the rational quaternions, whose genus has a single class, is the case in which the refinement is absent for a reason of maximality.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[\,\mathrm{Cl}\,](q)$, $[\,\mathrm{Cl}^0](q)$</td>
+<td>Brauer classes of the Clifford algebra and its even part</td>
+</tr>
+<tr>
+<td>$(a,b)_F$</td>
+<td>Quaternion algebra of the pair $a,b$</td>
+</tr>
+<tr>
+<td>$[\,\mathrm{Cl}\,](\langle a,b\rangle)=(a,b)_F$</td>
+<td>Binary computation</td>
+</tr>
+<tr>
+<td>$I^1,I^2$</td>
+<td>Fundamental ideal of the Witt ring and its square</td>
+</tr>
+<tr>
+<td>$\langle\langle a,b\rangle\rangle$</td>
+<td>Pfister form $\langle1,a,b,ab\rangle$</td>
+</tr>
+<tr>
+<td>$e_1,e_2$</td>
+<td>Discriminant and Clifford invariant</td>
+</tr>
+<tr>
+<td>$e_2:I^2\to{}_2\mathrm{Br}(F)$</td>
+<td>The normalised invariant</td>
+</tr>
+<tr>
+<td>$q_1\perp q_2$</td>
+<td>Orthogonal sum of forms</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>Spinor norm, $O(V,q)\to F^\times/F^{\times2}$</td>
+</tr>
+<tr>
+<td>$O'(V,q)=\ker\theta$</td>
+<td>Spinorial kernel, contains the image of the spin group</td>
+</tr>
+<tr>
+<td>class, genus, spinor genus</td>
+<td>The three equivalences of lattices</td>
+</tr>
+<tr>
+<td>$o$, $\mathbb{A}$, $F_v$</td>
+<td>Integers, adèles and completions of a global field</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit-Yuen Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the Clifford invariant, the fundamental ideal and the invariants $e_1,e_2,\ldots$ of a quadratic form.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the Clifford algebra as a central simple algebra, the normalisation of its Brauer class and the arithmetic filtration.</li>
+<li>Martin Kneser, <em>Quadratische Formen</em> (Springer, 2002), for the spinor genus, the spinor norm and the strong approximation theorem.</li>
+<li>Martin Eichler, <em>Quadratische Formen und orthogonale Gruppen</em> (Springer, 1952), for the genus and spinor genus of quadratic lattices and the theorems bearing his name.</li>
+<li>O. Timothy O'Meara, <em>Introduction to Quadratic Forms</em> (Springer, 1963), for the arithmetic of quadratic forms, the spinor norm and the classification of lattices.</li>
+<li>John Conway and Derek Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the rational quaternions, the Hurwitz order and its uniqueness as a maximal order.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finite Simple Groups of Lie Type — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="finite-simple-groups-of-lie-type"><strong>Finite Simple Groups of Lie Type</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The groups of Lie type are the finite simple groups that arise from the combinatorial data of a root system over a finite field. They form sixteen infinite families, they contain almost all of the finite simple groups — the alternating groups and the twenty-six sporadic groups are the exceptions — and they are the only infinite families of finite simple groups other than the cyclic and the alternating. Their construction is uniform: a root system with a Dynkin diagram, a choice of finite field $\mathbb{F}_q$ and a choice of lattice determine a finite group, whose order is a polynomial in $q$ read off from the number of roots and the degrees of the associated Weyl group.</p>
+<p>This article is the eighteenth and last of the group articles of Part I, below the foundational layer and the group articles <em>Infinite Abelian Groups</em> through <em>The Classification of Finite Simple Groups</em>. It uses the Coxeter systems and the degrees of the finite Weyl groups from <em>Coxeter Groups</em>, the finite groups and permutation groups, the simplicity statements and the classification context of <em>The Classification of Finite Simple Groups</em>, and the extension and cohomology language of <em>Group Cohomology</em>. The treatment is of the groups of Lie type as <strong>abstract finite groups</strong>: their definition by a root-theoretic recipe, their presentations, their orders, their simplicity, and the isomorphisms and dualities among them. The algebraic-group structure, the Zariski topology, the building-theoretic construction and the classification of the underlying algebraic groups belong to Part II, and the theory of the root systems and Lie algebras belongs to the Linear Algebras slot; both are named and their results cited as standard, and neither is developed here.</p>
+<h2 id="the-groups-of-lie-type">The Groups of Lie Type</h2>
+<h3 id="the-combinatorial-data">The Combinatorial Data</h3>
+<p><strong>Definition.</strong> Let $\Phi$ be a finite <strong>root system</strong> in a real vector space, with simple roots $\alpha_1,\ldots,\alpha_n$, Cartan matrix $A = (2(\alpha_i,\alpha_j)/(\alpha_j,\alpha_j))$ and Dynkin diagram the graph whose edges record the angles between the simple roots. The root system is <strong>reduced</strong> and <strong>crystallographic</strong>, and its Weyl group $W$ is the finite Coxeter group of the diagram; the classification of the connected diagrams is the one recorded in <em>Coxeter Groups</em>.</p>
+<p>The theory of root systems, of Cartan matrices and of the associated semisimple Lie algebras is developed in the Linear Algebras slot, and the reader is referred to those articles for the linear-algebraic foundations; the combinatorial facts used below are only the Dynkin diagram, the number $N$ of positive roots, the determinant of the Cartan matrix, and the degrees $d_1,\ldots,d_n$ of the Weyl group.</p>
+<p><strong>Proposition.</strong> For an irreducible root system with $N$ positive roots and Weyl group degrees $d_1,\ldots,d_n$,</p>
+<p>$$
+N = \sum_{i=1}^n (d_i - 1), \qquad \det A = (P : Q),
+$$</p>
+<p>where $Q$ is the root lattice and $P$ the weight lattice, so that the determinant of the Cartan matrix is the connection index. The degrees are the integers tabulated in <em>Coxeter Groups</em>: $2,3,\ldots,n+1$ for $A_n$, $2,4,\ldots,2n$ for $B_n$, $2,4,\ldots,2n-2,n$ for $D_n$, and the exceptional lists; the Coxeter number $h = d_n$ is the largest degree.</p>
+<p><strong>Proof sketch.</strong> The number of positive roots equals the number of reflections of $W$, which is $\sum(d_i-1)$; this is a standard identity of Coxeter group theory, verified in the discussion of the degrees in <em>Coxeter Groups</em>. The identity $\det A = (P:Q)$ is the standard determinant formula for a symmetrised Cartan matrix, and it is the value used to compute the order of the centre of the simply connected group. $\square$</p>
+<h3 id="the-chevalley-groups">The Chevalley Groups</h3>
+<p><strong>Theorem (Chevalley).</strong> Let $\Phi$ be a root system as above, let $q$ be a prime power, and let $\mathbb{F}_q$ be the field with $q$ elements. There is a finite group $G(\Phi,q)$, the <strong>Chevalley group</strong> (more precisely the <strong>adjoint</strong> Chevalley group), generated by elements $x_\alpha(t)$ for $\alpha \in \Phi$, $t \in \mathbb{F}_q$, subject to the relations</p>
+<p>$$
+x_\alpha(t)\, x_\alpha(u) = x_\alpha(t+u), \qquad [x_\alpha(t), x_\beta(u)] = \prod_{\substack{i,j \geq 1 \\ i\alpha + j\beta \in \Phi}} x_{i\alpha+j\beta}\big(c_{ij}^{\alpha\beta} t^i u^j\big),
+$$</p>
+<p>with the constants $c \in \{\pm 1, \pm 2, \pm 3\}$ determined by the root system, together with the Coxeter relations of the Weyl group. The <strong>simply connected</strong> group $G_{\mathrm{sc}}(\Phi,q)$ has the same presentation with the torus adjusted, and there is a central isogeny $G_{\mathrm{sc}} \to G_{\mathrm{ad}}$ whose kernel is the centre of $G_{\mathrm{sc}}$.</p>
+<p>The second family of relations is the <strong>Chevalley commutator formula</strong>; the structure constants come from a choice of signs in the root system, and different choices give isomorphic groups. The presentation above is the <strong>Steinberg presentation</strong>, which exhibits the group of Lie type as a finite group with a finite presentation in the root-subgroup generators.</p>
+<p><strong>Theorem (order formula).</strong> For the simply connected Chevalley group of an irreducible root system with $N$ positive roots and Weyl group degrees $d_1,\ldots,d_n$,</p>
+<p>$$
+|G_{\mathrm{sc}}(\Phi,q)| = q^{N} \prod_{i=1}^{n} (q^{d_i} - 1),
+$$</p>
+<p>and the adjoint group is the quotient by the centre, of order $|G_{\mathrm{sc}}|/|Z|$ with $Z$ the centre. The order is the value at $q$ of a polynomial with integer coefficients.</p>
+<p><strong>Proof sketch.</strong> The group has a triangular decomposition $G = U^- T U$ in which $U$ is a Sylow $p$-subgroup of order $q^N$, the torus $T$ is isomorphic to $(\mathbb{F}_q^\times)^n$, and the Bruhat decomposition $G = \bigsqcup_{w\in W} U^- w U$ partitions the group into $|W|$ double cosets; the order is computed by counting each cell, and the product of the degrees arises from the description of the torus and the root subgroups. The verification accompanying this article checks the formula against the classical orders for the families $A_n$, $B_n$, $C_n$, $D_n$ and the exceptional types. $\square$</p>
+<h3 id="the-classical-families">The Classical Families</h3>
+<p><strong>Definition.</strong> The <strong>classical groups</strong> are the groups of Lie type of types $A_n$, $B_n$, $C_n$ and $D_n$, together with the twisted types $^2A_n$ and $^2D_n$. As abstract groups they are the Chevalley groups of the corresponding root systems and the twisted groups of the corresponding diagram automorphisms, and their orders are the values of the order formula. The names used for the families are the standard labels $\mathrm{PSL}$, $\mathrm{PSp}$, $\mathrm{PSU}$ and $\mathrm{P}\Omega$: the construction of each family from a vector space — the special linear group as the kernel of the determinant, the symplectic, unitary and orthogonal groups as the isometry groups of a form — needs the theory of vector spaces and of linear maps, which belongs,andin the Linear Spaces slot of this Part, and the theory of bilinear, Hermitian and quadratic forms, which belongs to Part II, where a form and its geometry are available; the matrix descriptions are therefore deferred to those places, and only the orders and the simplicity of the abstract groups are used here.</p>
+<p><strong>Theorem.</strong> For $q$ a prime power, $n \geq 1$,</p>
+<p>$$
+|\mathrm{GL}_n(q)| = q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1), \qquad |\mathrm{SL}_n(q)| = |\mathrm{GL}_n(q)|/(q-1),
+$$</p>
+<p>and the projective special linear group has order</p>
+<p>$$
+|\mathrm{PSL}_n(q)| = |\mathrm{SL}_n(q)|/\gcd(n, q-1);
+$$</p>
+<p>the symplectic group has order</p>
+<p>$$
+|\mathrm{Sp}_{2n}(q)| = q^{n^2}\prod_{i=1}^{n}(q^{2i}-1), \qquad |\mathrm{PSp}_{2n}(q)| = |\mathrm{Sp}_{2n}(q)|/\gcd(2,q-1),
+$$</p>
+<p>and the unitary group of type $^2A_{n-1}$ has order</p>
+<p>$$
+|\mathrm{SU}_n(q)| = q^{n(n-1)/2}\prod_{i=2}^{n}\big(q^i - (-1)^i\big), \qquad |\mathrm{PSU}_n(q)| = |\mathrm{SU}_n(q)|/\gcd(n,q+1).
+$$</p>
+<p><strong>Proof sketch.</strong> The order of $\mathrm{GL}_n(q)$ is the number of ordered bases of $\mathbb{F}_q^n$: the first basis vector has $q^n - 1$ choices, the $k$-th has $q^n - q^{k-1}$ choices, and multiplying gives $q^{n(n-1)/2}\prod(q^i-1)$. The orders of the other classical families are the specialisations of the general order formula: the tuples of degrees are $(2,3,\ldots,n+1)$ for $A_n$, $(2,4,\ldots,2n)$ for $B_n$ and for $C_n$, and $(2,4,\ldots,2n-2,n)$ for $D_n$, and substituting a tuple into $q^N\prod(q^{d_i}-1)$ gives the corresponding displayed product. The unitary family $^2A_{n-1}$ is the twisted case of $A_{n-1}$, and its product is the same one with the factors $q^i - (-1)^i$ in place of $q^i - 1$, the sign coming from the twist by the diagram automorphism. The projective orders divide by the centre, whose order is the displayed gcd. The verification accompanying this article recomputes the formulas for small $n$ and $q$. $\square$</p>
+<p><strong>Example.</strong> $|\mathrm{PSL}_2(q)| = q(q^2-1)/\gcd(2,q-1)$ is $60$ for $q = 4$ and $q = 5$ (so $\mathrm{PSL}_2(4)\cong\mathrm{PSL}_2(5)$), $168$ for $q = 7$, $360$ for $q = 9$, and $6$ and $12$ for $q = 2,3$; the last two are the non-simple cases $\mathrm{PSL}_2(2)\cong S_3$ and $\mathrm{PSL}_2(3) \cong A_4$.</p>
+<p><strong>Example.</strong> $|\mathrm{Sp}_4(2)| = 2^4(2^2-1)(2^4-1) = 16\cdot 3\cdot 15 = 720 = 6!$, and indeed $\mathrm{Sp}_4(2) \cong S_6$ with derived subgroup $\mathrm{Sp}_4(2)' \cong A_6$; $|\mathrm{Sp}_4(3)| = 3^4(3^2-1)(3^4-1) = 81\cdot 8\cdot 80 = 51840$ and $|\mathrm{PSp}_4(3)| = 25920 = |\mathrm{PSU}_4(2)|$.</p>
+<h3 id="the-exceptional-families">The Exceptional Families</h3>
+<p>For the exceptional root systems the order formula specialises to</p>
+<p>$$
+|G_2(q)| = q^6(q^2-1)(q^6-1), \qquad |F_4(q)| = q^{24}(q^2-1)(q^6-1)(q^8-1)(q^{12}-1),
+$$</p>
+<p>$$
+|E_6(q)| = q^{36}(q^2-1)(q^5-1)(q^6-1)(q^8-1)(q^9-1)(q^{12}-1),
+$$</p>
+<p>$$
+|E_7(q)| = q^{63}(q^2-1)(q^6-1)(q^8-1)(q^{10}-1)(q^{12}-1)(q^{14}-1)(q^{18}-1),
+$$</p>
+<p>$$
+|E_8(q)| = q^{120}(q^2-1)(q^8-1)(q^{12}-1)(q^{14}-1)(q^{18}-1)(q^{20}-1)(q^{24}-1)(q^{30}-1),
+$$</p>
+<p>and the twisted form of $E_6$ has order</p>
+<p>$$
+\lvert {}^2E_6(q)\rvert = q^{36}(q^2-1)(q^5+1)(q^6-1)(q^8-1)(q^9+1)(q^{12}-1).
+$$</p>
+<p><strong>Proposition.</strong> For an irreducible root system of rank $n$ with $N$ positive roots, the order of the simply connected group is a polynomial in $q$ of degree $2N+n$, equal to the number of roots plus the rank, that is, the dimension of the associated semisimple Lie algebra; the Coxeter number $h$ is the largest degree and appears as the largest factor $q^h - 1$.</p>
+<p><strong>Proof.</strong> The degree is $N + \sum_i d_i$; since $\sum_i(d_i-1) = N$ by the proposition above, $\sum_i d_i = N + n$, and the degree is $N + N + n = 2N + n$. The number of roots is $2N$, and the Lie algebra has dimension $2N + n$; the identification of that dimension with the sum is standard. For $E_8$ the degree is $240 + 8 = 248$, matching the dimension of the exceptional Lie algebra of type $E_8$; for $G_2$ it is $12 + 2 = 14$, and for $F_4$ it is $48 + 4 = 52$. $\square$</p>
+<h3 id="the-sixteen-families">The Sixteen Families</h3>
+<p>Collecting the classical, exceptional and twisted cases gives the sixteen families of finite simple groups of Lie type. The table records each family with its standard name and the parameter range in which the group is simple; the small excluded values are the ones of the simplicity theorem below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Group</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_n$</td>
+<td>$\mathrm{PSL}_{n+1}(q)$</td>
+<td>$n \geq 1$, $q \geq 4$ for $n = 1$</td>
+</tr>
+<tr>
+<td>$B_n$</td>
+<td>$\mathrm{P}\Omega_{2n+1}(q)$</td>
+<td>$n \geq 2$</td>
+</tr>
+<tr>
+<td>$C_n$</td>
+<td>$\mathrm{PSp}_{2n}(q)$</td>
+<td>$n \geq 2$</td>
+</tr>
+<tr>
+<td>$D_n$</td>
+<td>$\mathrm{P}\Omega^{+}_{2n}(q)$</td>
+<td>$n \geq 4$</td>
+</tr>
+<tr>
+<td>${}^2A_n$</td>
+<td>$\mathrm{PSU}_{n+1}(q)$</td>
+<td>$n \geq 2$, $(n,q)$ not $(2,2)$</td>
+</tr>
+<tr>
+<td>${}^2D_n$</td>
+<td>$\mathrm{P}\Omega^{-}_{2n}(q)$</td>
+<td>$n \geq 4$</td>
+</tr>
+<tr>
+<td>${}^3D_4$</td>
+<td>${}^3D_4(q)$</td>
+<td>all $q$</td>
+</tr>
+<tr>
+<td>$G_2$</td>
+<td>$G_2(q)$</td>
+<td>$q \geq 3$</td>
+</tr>
+<tr>
+<td>$F_4$</td>
+<td>$F_4(q)$</td>
+<td>all $q$</td>
+</tr>
+<tr>
+<td>$E_6$</td>
+<td>$E_6(q)$</td>
+<td>all $q$</td>
+</tr>
+<tr>
+<td>${}^2E_6$</td>
+<td>${}^2E_6(q)$</td>
+<td>all $q$</td>
+</tr>
+<tr>
+<td>$E_7$</td>
+<td>$E_7(q)$</td>
+<td>all $q$</td>
+</tr>
+<tr>
+<td>$E_8$</td>
+<td>$E_8(q)$</td>
+<td>all $q$</td>
+</tr>
+<tr>
+<td>${}^2B_2$</td>
+<td>$\mathrm{Sz}(q)$</td>
+<td>$q = 2^{2n+1} \geq 8$</td>
+</tr>
+<tr>
+<td>${}^2G_2$</td>
+<td>$\mathrm{Ree}(q)$</td>
+<td>$q = 3^{2n+1} \geq 27$</td>
+</tr>
+<tr>
+<td>${}^2F_4$</td>
+<td>${}^2F_4(q)$</td>
+<td>$q = 2^{2n+1} \geq 8$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark.</strong> The four classical families $A_n$, $B_n$, $C_n$, $D_n$ and the two Steinberg families ${}^2A_n$, ${}^2D_n$ contain the linear, orthogonal, symplectic and unitary groups; the family ${}^3D_4$ and the exceptional families $G_2, F_4, E_6, E_7, E_8$ and ${}^2E_6$ are the exceptional types; and the families ${}^2B_2, {}^2G_2, {}^2F_4$ are the Suzuki and Ree families, defined only for the indicated prime powers. The Dynkin diagrams of the underlying root systems, together with their graph symmetries that produce the twisted types, are classified in <em>Coxeter Groups</em>; the table above is that classification read through the order formula and the simplicity theorem.</p>
+<h2 id="twisted-groups">Twisted Groups</h2>
+<h3 id="steinberg-and-suzukiree-groups">Steinberg and Suzuki–Ree Groups</h3>
+<p><strong>Definition.</strong> Let $\Phi$ be an irreducible root system and let $q$ be a prime power. A <strong>twisted group of Lie type</strong> is the fixed-point group of a nontrivial graph automorphism of the root system composed with a field automorphism:</p>
+<ul>
+<li><strong>Steinberg groups</strong> arise from the graph symmetries of the diagrams $A_n$ ($n \geq 2$, yielding $^2A_n$), $D_n$ ($n \geq 4$, yielding $^2D_n$), $D_4$ (yielding $^3D_4$) and $E_6$ (yielding $^2E_6$);</li>
+<li><strong>Suzuki groups</strong> $^2B_2(q)$ arise from the diagram $B_2$ in characteristic $2$, with $q = 2^{2n+1}$ and $n \geq 1$;</li>
+<li><strong>Ree groups</strong> $^2G_2(q)$ arise from $G_2$ in characteristic $3$, with $q = 3^{2n+1}$, and $^2F_4(q)$ from $F_4$ in characteristic $2$, with $q = 2^{2n+1}$.</li>
+</ul>
+<p>The twisted groups of type $^2A_n$ are the <strong>unitary groups</strong> $\mathrm{PSU}_{n+1}(q)$; the groups $^2D_n$ are written $\mathrm{P}\Omega^-_{2n}(q)$ and the untwisted groups $D_n$ as $\mathrm{P}\Omega^+_{2n}(q)$, the sign distinguishing the twisted from the untwisted family over the same Dynkin diagram. The groups $^3D_4(q)$ are the <strong>Tits groups</strong> (not to be confused with the sporadic Tits group $^2F_4(2)'$).</p>
+<p><strong>Theorem (orders of the twisted groups).</strong> For the parameters above,</p>
+<p>$$
+\lvert {}^2A_{n}(q)\rvert = |\mathrm{SU}_{n+1}(q)|, \qquad \lvert {}^2D_n(q)\rvert = q^{n(n-1)}(q^n+1)\prod_{i=1}^{n-1}(q^{2i}-1),
+$$</p>
+<p>$$
+\lvert {}^3D_4(q)\rvert = q^{12}(q^8+q^4+1)(q^6-1)(q^2-1), \qquad \lvert {}^2B_2(q)\rvert = q^2(q-1)(q^2+1) \ (q = 2^{2n+1}),
+$$</p>
+<p>$$
+\lvert {}^2G_2(q)\rvert = q^3(q-1)(q^3+1) \ (q = 3^{2n+1}), \qquad \lvert {}^2F_4(q)\rvert = q^{12}(q^6+1)(q^4-1)(q^3+1)(q-1) \ (q = 2^{2n+1}).
+$$</p>
+<p><strong>Example.</strong> For the smallest Suzuki group, $q = 8$: $\lvert {}^2B_2(8)\rvert = 64\cdot 7\cdot 65 = 29120$, the Suzuki group $\mathrm{Sz}(8)$; for $q = 2$ the group ${}^2B_2(2)$ has order $20$ and is not simple. For the Ree groups, $q = 3$ gives $\lvert {}^2G_2(3)\rvert = 27\cdot 2\cdot 28 = 1512$ and the derived subgroup ${}^2G_2(3)' = \mathrm{PSL}_2(8)$ has order $504$. For the Tits group, $q = 2$ gives $\lvert {}^2F_4(2)\rvert = 4096\cdot 65\cdot 15\cdot 9\cdot 1 = 35942400$ and $\lvert {}^2F_4(2)'\rvert = 17971200$. The verification accompanying this article recomputes each of these orders.</p>
+<h3 id="simplicity">Simplicity</h3>
+<p><strong>Theorem (simplicity of the groups of Lie type).</strong> Let $G$ be a group of Lie type, simple in the sense that the underlying root system is simple and the group is the adjoint or simply connected group modulo its centre. Then $G$ is simple, with the following exceptions: $\mathrm{PSL}_2(2) \cong S_3$ and $\mathrm{PSL}_2(3) \cong A_4$ are not simple; $\mathrm{PSU}_3(2)$ is solvable of order $72$; $\mathrm{Sp}_4(2) \cong S_6$ has a simple derived subgroup $\mathrm{Sp}_4(2)' \cong A_6$; $G_2(2)$ has a simple derived subgroup $G_2(2)' \cong \mathrm{PSU}_3(3)$; ${}^2G_2(3)$ has a simple derived subgroup ${}^2G_2(3)' \cong \mathrm{PSL}_2(8)$; and ${}^2F_4(2)$ has a simple derived subgroup of index $2$, the Tits group ${}^2F_4(2)'$.</p>
+<p><strong>Proof sketch.</strong> The centre of the simply connected group is computed from the lattice of the root system: it is $\operatorname{Hom}(P/Q, \mathbb{F}_q^\times)$, where $Q \subseteq P$ are the root and weight lattices, so its order is the connection index $\det A$. Simplicity is then proved by showing that a normal subgroup containing a root subgroup is everything, and that a nontrivial normal subgroup must contain a root subgroup; the exceptional small cases are checked directly. $\square$</p>
+<p><strong>Theorem (classification of the finite simple groups of Lie type).</strong> The finite simple groups of Lie type are exactly the adjoint groups $G(\Phi,q)$ for $\Phi$ simple, together with the twisted groups listed above, with the small exceptions in the simplicity theorem replaced by their simple derived subgroups. The complete list of isomorphisms and coincidences among them is finite and known:</p>
+<p>$$
+\mathrm{PSL}_2(4)\cong\mathrm{PSL}_2(5), \quad \mathrm{PSL}_2(7)\cong\mathrm{PSL}_3(2), \quad \mathrm{PSL}_4(2)\cong A_8, \quad \mathrm{PSp}_4(3)\cong \mathrm{PSU}_4(2),
+$$</p>
+<p>together with $B_n(q)\cong C_n(q)$ for $q$ even, $\Omega_{2n+1}(q)\cong\mathrm{Sp}_{2n}(q)$ for $q$ odd, and the coincidences of the exceptional small members $G_2(2)'\cong\mathrm{PSU}_3(3)$ and $^2G_2(3)'\cong\mathrm{PSL}_2(8)$.</p>
+<p><strong>Remark.</strong> The classification of the finite simple groups of Lie type therefore consists of three finite data: the list of the sixteen families with their parameter ranges, the list of the small exceptions where the recipe gives a solvable group or a group with a nontrivial centre, and the finite list of isomorphisms among the members. Once these are fixed, every finite simple group of Lie type has a unique name, which is the normal form used in the classification of the finite simple groups.</p>
+<h2 id="small-cases-and-examples">Small Cases and Examples</h2>
+<h3 id="the-family-math278-the-groups-math279">The Family $A_1$: the Groups $\mathrm{PSL}_2(q)$</h3>
+<p><strong>Proposition.</strong> The groups of type $A_1$ are $\mathrm{PSL}_2(q)$, of order $q(q^2-1)/\gcd(2,q-1)$; they are simple for $q \geq 4$, with the exceptions $q = 2,3$ giving $S_3$ and $A_4$.</p>
+<p><strong>Proof sketch.</strong> The root system $A_1$ has $N = 1$ and Weyl group $W = S_2$ of degrees $2$; the order formula gives $q^1(q^2-1) = q(q^2-1)$ for the simply connected group, which is $\mathrm{SL}_2(q)$, and the centre has order $\gcd(2,q-1)$, giving the projective order. Simplicity for $q \geq 4$ is the classical simplicity of $\mathrm{PSL}_2(q)$, proved by its doubly transitive action on the projective line; the linear-algebraic construction of that action belongs, and the argument itself is standard: the conjugates of a nonidentity unipotent element generate the group when $q \geq 4$, while the small cases $q = 2,3$ have no such element. $\square$</p>
+<p><strong>Example (the smallest simple group).</strong> $\mathrm{PSL}_2(4) \cong \mathrm{PSL}_2(5)\cong A_5$ has order $60$; $\mathrm{PSL}_2(7)$ has order $168$ and is the second smallest nonabelian simple group; $\mathrm{PSL}_2(9) \cong A_6$ has order $360$; and $\mathrm{PSL}_2(11)$ has order $660$. The orders $60, 168, 360, 504, 660$ are the beginning of the list of orders of nonabelian simple groups.</p>
+<h3 id="duality-and-small-coincidences">Duality and Small Coincidences</h3>
+<p><strong>Theorem.</strong> The following coincidences hold among the small groups of Lie type:</p>
+<p>$$
+\mathrm{Sp}_4(2)\cong S_6, \quad \mathrm{PSp}_4(3)\cong\mathrm{PSU}_4(2), \quad \mathrm{PSU}_3(3)\cong G_2(2)', \quad \mathrm{PSL}_2(9)\cong A_6\cong \mathrm{Sp}_4(2)'.
+$$</p>
+<p>More generally $B_n(q) \cong C_n(q)$ for every $n$ when $q$ is even, and $\Omega_{2n+1}(q) \cong \mathrm{Sp}_{2n}(q)$ for every $n$ when $q$ is odd; these <strong>dualities</strong> are the reason the classical families are counted as four rather than five.</p>
+<p><strong>Proof sketch.</strong> The isomorphisms among the small groups are proved by exhibiting explicit actions: $\mathrm{Sp}_4(2)$ has a doubly transitive action on six points with image all of $S_6$, and the other coincidences are checked by comparing orders and generating sets. The duality $B_n(q)\cong C_n(q)$ for even $q$ holds because the symplectic form and the orthogonal form in odd dimension coincide in characteristic $2$. $\square$</p>
+<p><strong>Example.</strong> The group $\mathrm{Sp}_4(2) \cong S_6$ of order $720$ is the largest of the small coincidences: the smallest symplectic group that is not alternating is $\mathrm{PSp}_4(3) \cong \mathrm{PSU}_4(2)$ of order $25920$, and the smallest Suzuki group $\mathrm{Sz}(8)$ has order $29120$, just larger.</p>
+<p><strong>Remark.</strong> The concrete descriptions of the groups of Lie type as matrix groups, their actions on the buildings and the geometric meaning of the dualities are developed in Part II, where the bilinear and Hermitian forms, the distances and the topological constructions are available. The abstract group-theoretic data recorded here — the families, the orders, the simplicity and the coincidences — are the input the classification of the finite simple groups takes from the theory of Lie type.</p>
+<h2 id="summary">Summary</h2>
+<p>A group of Lie type is determined by a root system with a Dynkin diagram, a finite field $\mathbb{F}_q$ and a lattice choice. The Chevalley group of an irreducible root system with $N$ positive roots and Weyl group degrees $d_1,\ldots,d_n$ has simply connected order $q^N\prod_{i=1}^n(q^{d_i}-1)$, where $N = \sum(d_i-1)$ and the degrees are those of the corresponding finite Coxeter group; the adjoint group is the quotient by the centre. The classical families are $A_n = \mathrm{PSL}_{n+1}$, $B_n$ and $D_n$ (orthogonal), $C_n$ (symplectic), with orders $|\mathrm{GL}_n(q)| = q^{n(n-1)/2}\prod(q^i-1)$, $|\mathrm{PSL}_n(q)| = |\mathrm{SL}_n(q)|/\gcd(n,q-1)$, $|\mathrm{Sp}_{2n}(q)| = q^{n^2}\prod(q^{2i}-1)$ and $|\mathrm{SU}_n(q)| = q^{n(n-1)/2}\prod_{i=2}^n(q^i-(-1)^i)$, and the exceptional families are $G_2, F_4, E_6, E_7, E_8$.</p>
+<p>The twisted groups arise from graph-field automorphisms: the Steinberg groups $^2A_n$ (unitary), $^2D_n$, $^3D_4$ (Tits) and $^2E_6$, and the Suzuki and Ree groups $^2B_2(2^{2n+1})$, $^2G_2(3^{2n+1})$ and $^2F_4(2^{2n+1})$, with the orders $q^2(q-1)(q^2+1)$, $q^3(q-1)(q^3+1)$ and $q^{12}(q^6+1)(q^4-1)(q^3+1)(q-1)$. The groups of Lie type are simple apart from the finite list $\mathrm{PSL}_2(2)$, $\mathrm{PSL}_2(3)$, $\mathrm{PSU}_3(2)$, $\mathrm{Sp}_4(2)$, $G_2(2)$, $^2G_2(3)$ and $^2F_4(2)$, whose derived subgroups are simple except in the first three cases. The classification of the finite simple groups of Lie type is the list of the sixteen families, the finite list of small exceptions, and the finite list of isomorphisms and dualities — among them $\mathrm{PSL}_2(4)\cong\mathrm{PSL}_2(5)$, $\mathrm{PSL}_2(7)\cong\mathrm{PSL}_3(2)$, $\mathrm{PSp}_4(3)\cong\mathrm{PSU}_4(2)$ and $B_n(q)\cong C_n(q)$ for even $q$. The geometric and linear-algebraic constructions of these groups belong to Part II and to the Linear Algebras and Linear Spaces slots.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi$, $\alpha_i$</td>
+<td>root system and simple roots</td>
+</tr>
+<tr>
+<td>$A = (a_{ij})$</td>
+<td>Cartan matrix</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>number of positive roots, $\sum(d_i-1)$</td>
+</tr>
+<tr>
+<td>$d_1,\ldots,d_n$</td>
+<td>Weyl group degrees</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>Coxeter number, the largest degree</td>
+</tr>
+<tr>
+<td>$G(\Phi,q)$, $G_{\mathrm{sc}}$, $G_{\mathrm{ad}}$</td>
+<td>Chevalley group, simply connected and adjoint forms</td>
+</tr>
+<tr>
+<td>$x_\alpha(t)$</td>
+<td>root subgroup element</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_n(q)$, $\mathrm{SL}_n(q)$, $\mathrm{PSL}_n(q)$</td>
+<td>general, special, projective special linear groups</td>
+</tr>
+<tr>
+<td>$\mathrm{Sp}_{2n}(q)$, $\mathrm{PSp}_{2n}(q)$</td>
+<td>symplectic and projective symplectic groups</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}_n(q)$, $\mathrm{PSU}_n(q)$</td>
+<td>unitary and projective unitary groups</td>
+</tr>
+<tr>
+<td>$\Omega_{2n+1}(q)$, $\mathrm{P}\Omega^{\pm}_{2n}(q)$</td>
+<td>orthogonal groups</td>
+</tr>
+<tr>
+<td>$A_n, B_n, C_n, D_n$</td>
+<td>classical types</td>
+</tr>
+<tr>
+<td>$G_2, F_4, E_6, E_7, E_8$</td>
+<td>exceptional types</td>
+</tr>
+<tr>
+<td>$^2A_n, ^2D_n, ^3D_4, ^2E_6$</td>
+<td>Steinberg (twisted) types</td>
+</tr>
+<tr>
+<td>$^2B_2(q), ^2G_2(q), ^2F_4(q)$</td>
+<td>Suzuki and Ree groups</td>
+</tr>
+<tr>
+<td>$^2F_4(2)'$</td>
+<td>Tits group (sporadic)</td>
+</tr>
+<tr>
+<td>$q$</td>
+<td>prime power, $|\mathbb{F}_q| = q$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger W. Carter, <em>Simple Groups of Lie Type</em> (Wiley, 1972), for the Chevalley construction, the Steinberg presentation and the orders of the groups.</li>
+<li>Robert Steinberg, <em>Lectures on Chevalley Groups</em> (Yale University, 1968), for the commutator formula and the structure of the groups of Lie type.</li>
+<li>Daniel Gorenstein, Richard Lyons and Ronald Solomon, <em>The Classification of the Finite Simple Groups</em>, Number 3 (American Mathematical Society, 1998), for the classification of the groups of Lie type as part of the classification theorem.</li>
+<li>Michio Suzuki, "On a class of doubly transitive groups", <em>Annals of Mathematics</em> <strong>75</strong> (1962), 105–145, for the Suzuki groups, and Rimhak Ree, "A family of simple groups associated with the simple Lie algebra of type $(G_2)$", <em>American Journal of Mathematics</em> <strong>83</strong> (1961), 432–462, for the Ree groups.</li>
+<li>Jacques Tits, "Les groupes simples de Suzuki et de Ree", <em>Séminaire Bourbaki</em> <strong>210</strong> (1960/61), for the uniform construction of the twisted groups.</li>
+<li>John H. Conway, Robert T. Curtis, Simon P. Norton, Richard A. Parker and Robert A. Wilson, <em>Atlas of Finite Groups</em> (Oxford University Press, 1985), for the orders, character tables and local structure of the groups of Lie type.</li>
+<li>Robert A. Wilson, <em>The Finite Simple Groups</em> (Springer, 2009), for a modern account of the orders, the isomorphisms and the coincidences among the small groups of Lie type.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

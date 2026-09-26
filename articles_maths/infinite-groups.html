@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="infinite-groups"><strong>Infinite Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Infinite groups are the default in group theory: a random presentation presents an infinite group, and the finite groups are the exception that the classification of finite simple groups describes. Yet the theory of infinite groups is qualitatively different from the finite theory. The Sylow theorems, the class equation and the counting arguments that carry the finite theory have no direct analogue, and the phenomena that replace them — the existence of finitely generated torsion groups of unbounded exponent, of infinite simple groups all of whose proper subgroups are cyclic of prime order, and of groups with an unsolvable word problem — have no finite counterpart at all. The organising questions of the subject are finiteness conditions: which properties of finite groups survive in a weakened form, and what can be said about a group all of whose subgroups or quotients satisfy them.</p>
+<p>This article is the thirteenth of the corpus and the fourth of the group articles, below the foundational layer, <em>Infinite Abelian Groups</em>, <em>Solvable and Nilpotent Groups</em> and <em>Combinatorial Group Theory</em>. It uses the presentation theory and the word problem of <em>Combinatorial Group Theory</em>, the structure theory of <em>Solvable and Nilpotent Groups</em>, and the abelian theory of <em>Infinite Abelian Groups</em>. It is algebraic throughout: the geometric theory of the Cayley graph, the growth of a group and the action of a group on a tree belongs to Part II, where a distance and a topology are available, and the linear-group context of the Tits alternative is stated here only as a theorem about groups given by generators, with its matrix foundations deferred.</p>
+<p>The article treats three themes: the finiteness conditions under which an infinite group can still be described by finite data, the Burnside problem on torsion groups of bounded exponent, and the Tits alternative contrasting groups that contain a free subgroup with groups that do not. It closes with the pathological simple groups that show how far infinite groups are from their finite shadows.</p>
+<h2 id="finiteness-conditions">Finiteness Conditions</h2>
+<h3 id="finitely-generated-and-finitely-presented">Finitely Generated and Finitely Presented</h3>
+<p><strong>Definition.</strong> A group $G$ is <strong>finitely generated</strong> if it has a finite generating set, <strong>finitely presented</strong> if it has a presentation $\langle X \mid R\rangle$ with $X$ and $R$ finite, and <strong>locally finite</strong> if every finitely generated subgroup is finite.</p>
+<p><strong>Proposition.</strong> A finitely generated group has at most countably many elements, and at most countably many finitely generated subgroups. A locally finite group is a union of its finite subgroups, and every finitely generated subgroup of a locally finite group is finite by definition.</p>
+<p><strong>Proposition.</strong> A group is finitely generated if and only if it is the quotient of a free group of finite rank, and then every finite generating set arises as the image of a basis. If $N \trianglelefteq G$ and $N$ and $G/N$ are finitely generated, then $G$ is finitely generated: the images of generators of $G/N$ together with the images of generators of $N$ generate $G$.</p>
+<p><strong>Proof sketch.</strong> The first statement is the universal property of the free group. For the second, let $x_1,\ldots,x_m$ map onto generators of $G/N$ and let $y_1,\ldots,y_n$ generate $N$; then $G$ is generated by the $x_i$ and $y_j$, since every element differs from a product of the $x_i$ by an element of $N$. $\square$</p>
+<p>The finitely presented groups are exactly the finitely generated groups for which the kernel of the map from a free group is finitely generated as a normal subgroup, and by the Nielsen–Schreier theorem a subgroup of finite index in a finitely presented group is finitely presented, while a finitely generated subgroup of infinite index need not be. The word problem of a finitely presented group can be undecidable, as <em>Combinatorial Group Theory</em> records; a finitely generated group with a decidable word problem is called <strong>recursively presented</strong>.</p>
+<h3 id="chain-conditions-and-maximal-conditions">Chain Conditions and Maximal Conditions</h3>
+<p><strong>Definition.</strong> A group is <strong>Noetherian</strong> (or satisfies the <strong>maximal condition</strong> on subgroups) if every ascending chain of subgroups is eventually constant, equivalently if every nonempty family of subgroups has a maximal element; it satisfies the <strong>minimal condition</strong> if every descending chain is eventually constant.</p>
+<p><strong>Proposition.</strong> A group is Noetherian if and only if every subgroup is finitely generated. A group satisfies the maximal condition on normal subgroups if and only if every normal subgroup is finitely generated; a finitely generated abelian group is Noetherian.</p>
+<p><strong>Proof sketch.</strong> If every subgroup is finitely generated, an ascending chain $H_1 \leq H_2 \leq \cdots$ must terminate, because the union $H = \bigcup_i H_i$ is a subgroup, hence finitely generated, say by elements lying in $H_N$ for some $N$, after which the chain is constant. Conversely, if $H$ is not finitely generated, one constructs a strictly ascending chain by adjoining one new generator at each stage. The abelian statement is the structure theorem of <em>Infinite Abelian Groups</em>. $\square$</p>
+<p>For an infinite group the maximal and minimal conditions are usually too strong, and the weakened conditions that remain useful are local finiteness, finite presentability, and the maximal condition on normal subgroups. A group finitely generated over its centre, or a polycyclic group, is Noetherian, and the theory of such groups is treated with the nilpotent and solvable groups of the previous articles.</p>
+<h2 id="constructions-producing-infinite-groups">Constructions Producing Infinite Groups</h2>
+<h3 id="free-groups-free-products-and-their-relatives">Free Groups, Free Products and Their Relatives</h3>
+<p>A free group $F_n$ of rank $n \geq 1$ is infinite and finitely generated, and $F_2$ contains free subgroups of every countable rank by <em>Combinatorial Group Theory</em>. A free product $A * B$ is infinite whenever either factor is infinite, and it is finitely generated when both factors are finitely generated. Free products of finite groups are residually finite and have a solvable word problem, so they are infinite finitely generated groups that are algorithmically well behaved: the group $\mathbb{Z}/2 * \mathbb{Z}/3$ is an infinite group generated by two elements of orders $2$ and $3$ with a decidable word problem, and it is the free product of the two smallest nontrivial finite groups.</p>
+<h3 id="direct-sums-wreath-products-and-the-lamplighter">Direct Sums, Wreath Products and the Lamplighter</h3>
+<p><strong>Definition.</strong> Let $A$ and $H$ be groups. The <strong>wreath product</strong> $A \wr H$ is the semidirect product $A^{(H)} \rtimes H$, where $A^{(H)} = \bigoplus_{h \in H} A$ is the direct sum of one copy of $A$ for each element of $H$, and $H$ acts by permuting the summands: the element $h$ sends the coordinate at $h'$ to the coordinate at $hh'$.</p>
+<p><strong>Definition.</strong> The <strong>lamplighter group</strong> on $\mathbb{Z}$ is $L = (\mathbb{Z}/2\mathbb{Z}) \wr \mathbb{Z} = \bigoplus_{\mathbb{Z}} \mathbb{Z}/2\mathbb{Z} \rtimes \mathbb{Z}$; an element is a finitely supported set of lamps (positions carrying $1 \in \mathbb{Z}/2$) together with a shift.</p>
+<p><strong>Proposition.</strong> The lamplighter group $L$ is generated by the lamp at position $0$ together with the shift, so it is a finitely generated infinite group. It is metabelian — the derived subgroup is the elementary abelian group of the lamps — and it is torsion-free exactly in its shift part, in the sense that the torsion elements are precisely the lamp configurations.</p>
+<p><strong>Proof sketch.</strong> Write $a$ for the lamp at $0$ and $t$ for the generator of the shift. The conjugate $t^n a t^{-n}$ is the lamp at position $n$, because the shift moves the lamp configuration. Since the finite lamp sets of $L$ are exactly the finite subsets of $\mathbb{Z}$, and $\{a,t\}$ generates every lamp position by conjugation and the shift, $\{a,t\}$ generates $L$. The derived subgroup is the lamp group $\bigoplus_{\mathbb{Z}}\mathbb{Z}/2$, which is abelian, so the derived series reaches $1$ in two steps. The verification for this article checks $t^n a t^{-n} = $ the lamp at $n$ in a truncated model. $\square$</p>
+<p>The lamplighter is the standard example of a finitely generated infinite group that is solvable but not nilpotent: its derived subgroup is abelian but not finitely generated, and the group is not Noetherian.</p>
+<h3 id="the-infinite-dihedral-group">The Infinite Dihedral Group</h3>
+<p><strong>Definition.</strong> The <strong>infinite dihedral group</strong> is $D_\infty = \langle r, s \mid s^2 = 1,\ srs = r^{-1}\rangle$; equivalently it is the semidirect product $\mathbb{Z} \rtimes \mathbb{Z}/2$ in which the nontrivial element of $\mathbb{Z}/2$ acts by inversion, and it is the group of permutations of $\mathbb{Z}$ generated by $r : n \mapsto n+1$ and $s : n \mapsto -n$, which satisfy $s^2 = 1$ and $s r s = r^{-1}$.</p>
+<p><strong>Proposition.</strong> $D_\infty$ is infinite, finitely generated, virtually cyclic (it has a cyclic subgroup $\langle r\rangle$ of index $2$), and solvable of derived length $2$. Its elements are the $r^k$ and the $r^k s$, each $r^k s$ being an involution.</p>
+<p><strong>Proof.</strong> The permutation model of $\mathbb{Z}$ realises the relations: $s r s$ sends $n$ to $-(-(n)+1)$... more precisely $srs$ maps $n \mapsto s(r(s(n))) = s(r(-n)) = s(-n+1) = n-1 = r^{-1}(n)$, so $srs = r^{-1}$; the model is faithful on the generators, and the group acts on $\mathbb{Z}$ with the orbit of $0$ equal to all of $\mathbb{Z}$, so it is infinite. The subgroup $\langle r\rangle$ is cyclic of index $2$, which is virtual cyclicity; the derived subgroup is $\langle r^2\rangle \leq \langle r\rangle$, abelian, by the computation for $D_{2n}$ in <em>Solvable and Nilpotent Groups</em>. The list of elements follows from the normal form $r^k$ and $r^k s$ for $k \in \mathbb{Z}$, and $(r^k s)^2 = r^k s r^k s = r^k r^{-k} = 1$. $\square$</p>
+<p>The infinite dihedral group is the simplest infinite group that is neither free nor abelian, and the simplest infinite virtually cyclic group; its finite quotients are the finite dihedral groups and cyclic groups, and it is residually finite.</p>
+<h2 id="torsion-groups-and-the-burnside-problem">Torsion Groups and the Burnside Problem</h2>
+<h3 id="elementary-theory-of-exponent-and-torsion">Elementary Theory of Exponent and Torsion</h3>
+<p><strong>Definition.</strong> A group is a <strong>torsion group</strong> if every element has finite order, an <strong>exponent $n$ group</strong> if $x^n = 1$ for all $x$, and the <strong>free Burnside group</strong> of rank $m$ and exponent $n$ is</p>
+<p>$$
+B(m,n) = \langle x_1, \ldots, x_m \mid w^n = 1 \text{ for every word } w \text{ in the } x_i \rangle = F_m / \langle\!\langle x^n : x \in F_m\rangle\!\rangle,
+$$</p>
+<p>where $\langle\!\langle \cdot \rangle\!\rangle$ denotes the normal closure.</p>
+<p><strong>Proposition.</strong> A group of exponent $2$ is abelian, so $B(m,2) \cong (\mathbb{Z}/2\mathbb{Z})^m$ has order $2^m$.</p>
+<p><strong>Proof.</strong> For $x$ of order $2$ the equation $(xy)^2 = 1$ gives $xyxy = 1$; multiplying on the left by $x$ and on the right by $y$ and using $x^2 = y^2 = 1$ gives $yx = xy$. Hence every pair commutes. $\square$</p>
+<p><strong>Example.</strong> The infinite dihedral group is not a torsion group, since $r$ has infinite order; for a prime $p$ the Prüfer group $\mathbb{Z}[p^\infty]$ of <em>Infinite Abelian Groups</em> is a torsion group of infinite order and unbounded exponent, and it is locally cyclic, hence locally finite. A torsion group need not be locally finite: this is one form of the Burnside problem.</p>
+<h3 id="the-burnside-problem">The Burnside Problem</h3>
+<p><strong>Definition.</strong> The <strong>Burnside problem</strong> asks whether the free Burnside group $B(m,n)$ is finite for all $m, n \geq 1$, that is, whether there is, for each rank and exponent, a largest finite group generated by $m$ elements and of exponent $n$.</p>
+<p><strong>Theorem (positive results).</strong> $B(m,n)$ is finite for the following exponents:</p>
+<ol>
+<li>$n = 2$: $B(m,2)$ is elementary abelian of order $2^m$.</li>
+<li>$n = 3$: $B(m,3)$ is nilpotent of class at most $3$ and has order $3^{\,m + \binom{m}{2} + \binom{m}{3}}$.</li>
+<li>$n = 4$: $B(m,4)$ is finite; for $m = 2$ it has order $2^{12}$.</li>
+<li>$n = 6$: $B(m,6)$ is finite, of order $2^{a}3^{b}$, by the reduction to the exponent $3$ case.</li>
+<li>$n = 5$: $B(2,5)$ has order $5^{34}$ and $B(3,5)$ has order $5^{228}$, computed by machine from confluent rewriting systems; whether $B(m,5)$ is finite for every $m$ is open.</li>
+</ol>
+<p>The exponents $2,3,4,6$ were settled by Burnside, Sanov and Marshall Hall, and are the exponents for which the identities of the free group of exponent $n$ have a manageable algebraic description.</p>
+<p><strong>Theorem (negative results).</strong> There are pairs $(m,n)$ with $B(m,n)$ infinite:</p>
+<ol>
+<li>Golod and Shafarevich constructed, for each prime $p$ and each sufficiently large number $d$ of generators, an infinite $d$-generated group of exponent $p$; so $B(d,p)$ is infinite for $d$ large relative to $p$.</li>
+<li>Novikov and Adian proved that $B(m,n)$ is infinite for odd $n \geq 4381$ and $m \geq 2$; Adian later lowered the bound to $n \geq 665$.</li>
+<li>Ol'shanskii gave a simpler proof for all sufficiently large $n$ and, in the same circle of ideas, constructed <strong>Ol'shanskii's monsters</strong>: infinite finitely generated torsion groups all of whose proper subgroups are cyclic of prime order, and infinite finitely generated groups in which every proper subgroup is finite.</li>
+</ol>
+<p><strong>Theorem (restricted Burnside problem; Zelmanov).</strong> For fixed $m$ and $n$, there is a largest finite quotient of $B(m,n)$, and hence the class of finite groups generated by $m$ elements and of exponent $n$ has a maximum under quotients. This is Zelmanov's theorem; its proof reduces the problem to a statement about finite simple groups, and hence uses the classification of finite simple groups.</p>
+<p><strong>Remark.</strong> The unrestricted Burnside problem is answered negatively by the Novikov–Adian theorem while the restricted problem is answered positively by Zelmanov's theorem; the two are not in conflict, because the infinite group $B(m,n)$ of the unrestricted problem has the same finite quotients as its largest finite quotient. The exact set of exponents for which $B(2,n)$ is finite is not known; the smallest exponent for which the free Burnside group is known to be infinite is not determined by the general methods, and deciding finiteness for a given pair $(m,n)$ is algorithmically delicate.</p>
+<h3 id="the-golodshafarevich-construction">The Golod–Shafarevich Construction</h3>
+<p><strong>Theorem (Golod–Shafarevich).</strong> There exist infinite finitely generated torsion groups; more precisely, for every prime $p$ there is an infinite finitely generated group all of whose elements have finite order and which is residually a finite $p$-group.</p>
+<p><strong>Proof sketch.</strong> One considers a free group $F$ on $d$ generators, a prime $p$, and a set of $r$ relators of length at least $L$, and forms the quotient by the normal closure of the relators together with the $p$-powers of the elements of $F$; the objects counted are the graded quotients of the lower $p$-central series, which are vector spaces over $\mathbb{F}_p$ with one dimension for each generator and one relation removing one dimension for each relator. The argument is the origin of the <strong>Golod–Shafarevich inequality</strong></p>
+<p>$$
+r > \frac{d^2}{4},
+$$</p>
+<p>which is the condition under which the dimension series has bounded degrees and the quotient is infinite: the relators are numerous enough to eliminate the classes that the $p$-power relations would otherwise leave, while the counting still exhibits at least one nontrivial class in every degree. Choosing the relators generically of length at least $L$ among the words of $F$ then yields an infinite $d$-generated group all of whose elements have order a power of $p$, and, with the relators placed inside the higher terms of the series, one that is residually a finite $p$-group. It is the first proof that infinite finitely generated torsion groups exist without exhibiting a uniform exponent. $\square$</p>
+<p>The Golod–Shafarevich construction is the ancestor of the modern theory of <strong>profinite groups</strong>, in which one studies inverse limits of finite quotients; the profinite theory belongs to Part II, where the inverse limit is taken as a topological limit.</p>
+<h2 id="the-tits-alternative">The Tits Alternative</h2>
+<h3 id="statement">Statement</h3>
+<p><strong>Theorem (Tits alternative).</strong> Let $F$ be a field and let $n \geq 1$. Every finitely generated subgroup of the general linear group $\mathrm{GL}_n(F)$ is either virtually solvable — it has a solvable subgroup of finite index — or contains a nonabelian free subgroup.</p>
+<p>The statement refers to the group of invertible $n \times n$ matrices over $F$; the linear algebra of matrices and vector spaces is developed, and the theorem is recorded here as a dichotomy for finitely generated groups that happen to be embedded in such a matrix group. The proof is by induction on $n$, using the structure of solvable and nilpotent subgroups and a theorem on the linearity of the subgroups generated by a pair of matrices; it is due to Tits and holds in every characteristic.</p>
+<p><strong>Corollary.</strong> A finitely generated linear group is either virtually solvable or contains a nonabelian free subgroup, with no intermediate possibility. In particular a finitely generated linear group that is not virtually solvable contains a free subgroup of rank $2$, and the free group $F_2$ embeds in $\mathrm{GL}_2(\mathbb{Z})$ and hence in $\mathrm{GL}_2(F)$ for every field $F$ of characteristic $0$.</p>
+<p><strong>Example.</strong> The group $\mathrm{GL}_2(\mathbb{Z})$ contains the free subgroup of rank $2$ generated by the matrices $\begin{pmatrix} 1 & 2 \\ 0 & 1\end{pmatrix}$ and $\begin{pmatrix} 1 & 0 \\ 2 & 1\end{pmatrix}$. Their freeness is Sanov's theorem, and the subgroup they generate has index $12$ in $\mathrm{SL}_2(\mathbb{Z})$ and index $24$ in $\mathrm{GL}_2(\mathbb{Z})$; its image in $\mathrm{PSL}_2(\mathbb{Z})$, the principal congruence subgroup of level $2$, is free of rank $2$ and of index $6$. Since this subgroup is free of rank $2$ it is not virtually solvable, so the Tits alternative already has content for $n = 2$ and the smallest matrix groups. The matrices and their products are elements of the linear group; the computation showing the freeness is the ping-pong argument on the two parabolic fixed points, which uses the geometry of Part II, and the algebraic statement recorded here is the resulting freeness.</p>
+<h3 id="failure-for-general-groups">Failure for General Groups</h3>
+<p>The Tits alternative is a theorem about linear groups, and it fails badly for arbitrary finitely generated groups. Ol'shanskii's monsters are infinite finitely generated torsion groups with no nonabelian free subgroup, and they are not virtually solvable, by the proposition below: a finitely generated virtually solvable torsion group is finite. Thus the dichotomy of the Tits alternative does not extend to all finitely generated groups.</p>
+<p><strong>Proposition.</strong> A finitely generated virtually solvable torsion group is finite; hence an infinite finitely generated torsion group is not virtually solvable, and if it contains no nonabelian free subgroup it is a counterexample to any unrestricted form of the Tits alternative.</p>
+<p><strong>Proof sketch.</strong> Let $G$ be finitely generated, torsion and virtually solvable, and let $H \leq G$ be solvable of finite index. Since $G$ is finitely generated and $H$ has finite index, $H$ is finitely generated. A finitely generated solvable torsion group is finite: the statement descends from the nilpotent case, where a finitely generated nilpotent group that is torsion is finite because its upper central series has finitely generated abelian factors and a finitely generated torsion abelian group is finite. Hence $H$ is finite, and $G$ is a finite union of cosets of $H$, so $G$ is finite. $\square$</p>
+<p><strong>Remark.</strong> For groups acting on trees — the setting of Bass–Serre theory in Part II — the Tits alternative takes a geometric form: an automorphism group of a tree either contains a free subgroup or preserves a line or fixes a vertex, and this is the mechanism behind the alternative for $\mathrm{GL}_2$ over a local field. The algebraic statement above is the case relevant to the corpus.</p>
+<h2 id="simple-and-monstrous-infinite-groups">Simple and Monstrous Infinite Groups</h2>
+<h3 id="infinite-simple-groups">Infinite Simple Groups</h3>
+<p><strong>Definition.</strong> A group is <strong>simple</strong> if it has no nontrivial proper normal subgroups; a <strong>Tarski monster</strong> is an infinite group in which every proper subgroup is cyclic of prime order $p$, for a fixed prime $p$.</p>
+<p><strong>Theorem (Ol'shanskii).</strong> For every sufficiently large prime $p$ there is a Tarski monster group $M_p$: an infinite, finitely generated, simple group of exponent $p$ in which every proper subgroup has order $p$. In particular $M_p$ is an infinite finitely generated torsion group that is simple and not virtually solvable.</p>
+<p><strong>Proof sketch.</strong> The construction is a <strong>small cancellation</strong> argument in the sense of <em>Combinatorial Group Theory</em>: one builds the group by a transfinite sequence of HNN extensions and amalgamated products, adding relations that make every element of a prescribed countable list of words trivial, and adding generators that force every proper subgroup to be cyclic of prime order, while a small cancellation hypothesis ensures that the group never collapses to the trivial group and that the prescribed subgroups remain proper. The two requirements are met simultaneously by an inductive construction over a countable ordinal. $\square$</p>
+<p><strong>Theorem (Higman).</strong> There is a finitely presented infinite simple group. More generally, Higman's embedding theorem states that every finitely generated group with a recursive presentation embeds in a finitely presented group.</p>
+<p>The existence of finitely presented infinite simple groups is striking, and it comes with a sharp contrast to the general finitely presented case: a finitely presented simple group has a solvable word problem. Indeed, if $G = \langle X \mid R\rangle$ is finitely presented, non-trivial and simple, then a word $w$ represents the identity if and only if the relation $w = 1$ can be derived from $R$ (one semi-decision procedure), while $w$ does not represent the identity if and only if adding $w = 1$ to $R$ trivialises the group, that is, if and only if every generator becomes derivable as the identity (the other semi-decision procedure); running the two in parallel decides the word problem. It is the <strong>unsolvable</strong> word problem of general finitely presented groups, quoted in <em>Formal Logic and Computability</em>, that makes Higman's theorem noteworthy: the simple groups are one class of finitely presented groups on which the difficulty disappears.</p>
+<h3 id="the-landscape">The Landscape</h3>
+<p>The groups constructed in this section show that the classes of finitely generated groups, of torsion groups, of simple groups and of groups with a decidable word problem cut across one another without any of the inclusions that hold in the finite case:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Finite</th>
+<th>Infinite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abelian</td>
+<td>all</td>
+<td>$\mathbb{Z}$, $\mathbb{Z}[p^\infty]$, $\bigoplus_{n \ge 1}\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>solvable, torsion, finitely generated</td>
+<td>all</td>
+<td>none (a finitely generated solvable torsion group is finite)</td>
+</tr>
+<tr>
+<td>torsion, finitely generated</td>
+<td>all finite groups</td>
+<td>exist (Golod–Shafarevich, Ol'shanskii)</td>
+</tr>
+<tr>
+<td>simple, finitely generated</td>
+<td>finite simple groups</td>
+<td>Tarski monsters, Higman's groups</td>
+</tr>
+<tr>
+<td>free subgroup of rank $2$</td>
+<td>none</td>
+<td>$F_2$, $BS(2,3)$, $\mathrm{GL}_2(\mathbb{Z})$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the summary of the subject: every finiteness property that holds for the finite groups fails somewhere among the infinite ones, and the failures are not pathologies of presentation but genuine features of the category of groups.</p>
+<h2 id="summary">Summary</h2>
+<p>Finitely generated groups are quotients of free groups of finite rank, finitely presented groups have finite presentations, and a group satisfies the maximal condition exactly when all its subgroups are finitely generated. The wreath product and the lamplighter group $L = (\mathbb{Z}/2)\wr\mathbb{Z}$ give finitely generated infinite metabelian groups that are not Noetherian; the infinite dihedral group $D_\infty = \mathbb{Z}\rtimes\mathbb{Z}/2$ is the simplest infinite virtually cyclic group, generated by $r : n \mapsto n+1$ and $s : n \mapsto -n$.</p>
+<p>Torsion groups have all elements of finite order, and the free Burnside group $B(m,n)$ is the largest quotient of $F_m$ of exponent $n$. Groups of exponent $2$ are abelian and $B(m,2)$ has order $2^m$; $B(m,3)$ is nilpotent of class at most $3$ and has order $3^{m + \binom{m}{2} + \binom{m}{3}}$; $B(m,n)$ is finite for $n = 4,6$, and $B(2,5)$ and $B(3,5)$ have been computed as $5^{34}$ and $5^{228}$ respectively. Golod–Shafarevich constructed infinite finitely generated torsion groups, Novikov and Adian proved $B(m,n)$ infinite for large odd $n$, and Ol'shanskii constructed infinite finitely generated torsion groups all of whose proper subgroups are cyclic of prime order. The restricted Burnside problem was solved by Zelmanov: for fixed $m$ and $n$ there is a largest finite $m$-generator group of exponent $n$.</p>
+<p>The Tits alternative states that a finitely generated subgroup of $\mathrm{GL}_n(F)$ is either virtually solvable or contains a nonabelian free subgroup; it holds for all fields and all $n$, and it fails for arbitrary finitely generated groups, since Ol'shanskii's monsters are infinite finitely generated torsion groups that are neither virtually solvable nor contain a free subgroup. Infinite finitely generated simple groups exist, among them the Tarski monsters and Higman's finitely presented simple group. The geometric and profinite theories of the subject belong to Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F_m$, $F(X)$</td>
+<td>Free group of rank $m$</td>
+</tr>
+<tr>
+<td>$B(m,n)$</td>
+<td>Free Burnside group: largest $m$-generator quotient of exponent $n$</td>
+</tr>
+<tr>
+<td>$\langle\!\langle S\rangle\!\rangle$</td>
+<td>Normal closure of a set $S$</td>
+</tr>
+<tr>
+<td>$\operatorname{GL}_n(F)$</td>
+<td>General linear group of invertible matrices (defined in the Linear Spaces slot)</td>
+</tr>
+<tr>
+<td>$A \wr H$</td>
+<td>Wreath product $A^{(H)} \rtimes H$</td>
+</tr>
+<tr>
+<td>$A^{(H)}$</td>
+<td>Direct sum of copies of $A$ indexed by $H$</td>
+</tr>
+<tr>
+<td>$L = (\mathbb{Z}/2)\wr\mathbb{Z}$</td>
+<td>Lamplighter group</td>
+</tr>
+<tr>
+<td>$D_\infty$</td>
+<td>Infinite dihedral group $\mathbb{Z}\rtimes\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[p^\infty]$</td>
+<td>Prüfer $p$-group: infinite torsion divisible group (from <em>Infinite Abelian Groups</em>)</td>
+</tr>
+<tr>
+<td>$M_p$</td>
+<td>Tarski monster, every proper subgroup cyclic of order $p$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em>, 2nd ed. (Springer, 1996), for finiteness conditions, the maximal condition and the structure of infinite groups.</li>
+<li>Sergei I. Adian, <em>The Burnside Problem and Identities in Groups</em> (Springer, 1979), for the Novikov–Adian solution and the exponents for which $B(m,n)$ is infinite.</li>
+<li>Alexander Yu. Ol'shanskii, <em>Geometry of Defining Relations in Groups</em> (Kluwer, 1991), for the small-cancellation construction of the monsters and the Tarski monsters.</li>
+<li>Efim Zelmanov, "Solution of the restricted Burnside problem for groups of odd exponent", <em>Mathematics of the USSR-Izvestiya</em> <strong>36</strong> (1991), 41–60, and the even exponent case, <em>Mathematics of the USSR-Izvestiya</em> <strong>40</strong> (1993), 569–575, for the restricted Burnside problem.</li>
+<li>Evgeny S. Golod and Igor R. Shafarevich, "On towers of class fields", <em>Izvestiya Akademii Nauk SSSR</em> <strong>28</strong> (1964), 261–272, for the construction of infinite finitely generated torsion groups.</li>
+<li>Jacques Tits, "Free subgroups in linear groups", <em>Journal of Algebra</em> <strong>20</strong> (1972), 250–270, for the Tits alternative.</li>
+<li>Graham Higman, "A finitely generated infinite simple group", <em>Journal of the London Mathematical Society</em> <strong>26</strong> (1951), 61–64, for the finitely presented infinite simple group.</li>
+<li>George Havas, M. F. Newman and Michael Vaughan-Lee, "A computer aided analysis of the Burnside group $B(2,5)$", in <em>Computational Group Theory</em> (Academic Press, 1984), for the order $5^{34}$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

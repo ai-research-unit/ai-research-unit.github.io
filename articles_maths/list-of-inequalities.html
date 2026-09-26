@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Inequalities — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-inequalities"><strong>List of Inequalities</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the inequalities the corpus states and uses. An inequality is a relation of order or of size between quantities, and a row below names one inequality, records what it bounds — an inner product by a product of norms, an integral by a product of integrals, a function by its derivative, a solution by its data — and points to the article that proves it. Every row points to an article; this article introduces nothing and proves nothing. The inequalities are grouped by the layer that introduces them: the pointwise inequalities of convexity and order, the integral inequalities of the $L^p$ theory, the inequalities of the Sobolev scale, and the inequalities of geometry and of differential equations. The rows that record a failure — the converse that is false, the exponent that is sharp, the equality case that is the boundary of the inequality — stand beside the inequalities as non-examples.</p>
+<h2 id="the-pointwise-inequalities-of-convexity-and-order">The Pointwise Inequalities of Convexity and Order</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it bounds, and its relation to the others</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cauchy–Schwarz</td>
+<td>$\lvert\langle x,y\rangle\rvert \leq \lVert x\rVert\lVert y\rVert$; the basic inequality of an inner product space, with equality exactly on proportional vectors</td>
+<td><em>Banach and Hilbert Spaces</em></td>
+</tr>
+<tr>
+<td>Jensen's inequality</td>
+<td>$\varphi(\int f\,d\mu) \leq \int \varphi\circ f\,d\mu$ for convex $\varphi$; the definition of convexity in its integral form</td>
+<td><em>Convex Analysis</em>; <em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>the Fenchel–Young inequality</td>
+<td>$\langle x,y\rangle \leq f(x) + f^*(y)$; the general form of Young's inequality, with equality exactly when $y \in \partial f(x)$</td>
+<td><em>Convex Analysis</em></td>
+</tr>
+<tr>
+<td>the arithmetic–geometric mean inequality</td>
+<td>$\sqrt{ab} \leq (a+b)/2$; the case $p = q = 2$ of Young</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>the convexity of the sublevel sets, and the supporting hyperplane inequality</td>
+<td>$f(x) \geq f(x_0) + \langle v, x - x_0\rangle$ for $v$ in the subdifferential</td>
+<td><em>Convex Analysis</em></td>
+</tr>
+<tr>
+<td>Kantorovich's inequality</td>
+<td>the ratio $\langle Ax,x\rangle\langle A^{-1}x,x\rangle \leq (M+m)^2/(4Mm)$ for positive spectra in $[m,M]$</td>
+<td><em>Nonlinear Functional Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-integral-inequalities-of-the-math12-theory">The Integral Inequalities of the $L^p$ Theory</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it bounds</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hölder's inequality</td>
+<td>$\int \lvert fg\rvert \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/p+1/q=1$; the fundamental inequality of the $L^p$ spaces</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>Minkowski's inequality</td>
+<td>$\lVert f+g\rVert_p \leq \lVert f\rVert_p + \lVert g\rVert_p$; the triangle inequality that makes $L^p$ a normed space</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>Young's convolution inequality</td>
+<td>$\lVert f*g\rVert_r \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/p+1/q = 1/r + 1$</td>
+<td><em>Real Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>Hausdorff–Young</td>
+<td>$\lVert\hat f\rVert_q \leq \lVert f\rVert_p$ for $1 \leq p \leq 2$, $1/p + 1/q = 1$</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>the Riesz–Thorin interpolation inequality</td>
+<td>$\lVert T\rVert_{L^p\to L^q} \leq \lVert T\rVert_{L^{p_0}\to L^{q_0}}^{1-\theta}\lVert T\rVert_{L^{p_1}\to L^{q_1}}^{\theta}$</td>
+<td><em>Interpolation Theory</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>Chebyshev's inequality</td>
+<td>$\mu(\lvert f\rvert \geq \lambda) \leq \lambda^{-p}\lVert f\rVert_p^p$; the bridge from $L^p$ convergence to convergence in measure</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the Hardy–Littlewood maximal inequality</td>
+<td>$\lVert Mf\rVert_p \leq C_p\lVert f\rVert_p$ for $1<p\leq\infty$, with the weak-type bound at $p=1$</td>
+<td><em>Real Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Hardy–Littlewood–Sobolev inequality</td>
+<td>the fractional integral $I_\alpha f$ is bounded from $L^p$ to $L^q$ with $1/q = 1/p - \alpha/n$</td>
+<td><em>Real Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the maximal inequality for martingales</td>
+<td>the maximal-function bound $\lambda\mathbb P(\sup_n \lvert M_n\rvert \geq \lambda) \leq \mathbb E\lvert M_N\rvert$</td>
+<td><em>Martingales</em></td>
+</tr>
+<tr>
+<td>the Cauchy–Schwarz inequality for integrals</td>
+<td>$\left(\int fg\right)^2 \leq \int f^2\int g^2$; the special case $p = q = 2$ of Hölder</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A warning belongs here. The classical <strong>Hardy inequality</strong>, which bounds the mean of a function by the mean of its primitive, is not introduced anywhere in Parts I to III, and it is therefore absent from this list. The Hardy inequalities the corpus does carry are the maximal inequality and the fractional-integral inequality of the table above, both of them harmonic-analytic rather than the elementary averaging inequality, and they are the entries a reader who looks for "Hardy" should find.</p>
+<h2 id="the-inequalities-of-the-sobolev-scale">The Inequalities of the Sobolev Scale</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it bounds</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Sobolev embedding inequality</td>
+<td>$\lVert f\rVert_{L^{p^*}} \leq C\lVert\nabla f\rVert_{L^p}$ for $p^* = np/(n-p)$, $p < n$</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>the Sobolev inequality of geometric measure theory</td>
+<td>the same bound as an isoperimetric inequality for the gradient measure</td>
+<td><em>Geometric Measure Theory</em></td>
+</tr>
+<tr>
+<td>the Gagliardo–Nirenberg inequality</td>
+<td>$\lVert D^j f\rVert \leq C\lVert D^k f\rVert^\theta\lVert f\rVert^{1-\theta}$; the interpolation between derivatives</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>the Poincaré inequality</td>
+<td>$\int_\Omega \lvert f - f_\Omega\rvert^p \leq C\int_\Omega \lvert\nabla f\rvert^p$; the control of a function by its gradient</td>
+<td><em>Sobolev Spaces and Weak Solutions</em>; <em>Markov Chains and Processes</em></td>
+</tr>
+<tr>
+<td>the Ladyzhenskaya inequality</td>
+<td>$\lVert f\rVert_{L^4}^2 \leq C\lVert f\rVert_{L^2}\lVert\nabla f\rVert_{L^2}$ in two and three dimensions</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>the Morrey inequality</td>
+<td>the Hölder continuity of a Sobolev function with $p>n$</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>the Nash inequality</td>
+<td>$\lVert f\rVert_2^{2+4/n} \leq C\lVert\nabla f\rVert_2^2\lVert f\rVert_1^{4/n}$; the embedding that underlies the heat-kernel bounds</td>
+<td><em>Random Walks on Groups</em></td>
+</tr>
+<tr>
+<td>the Besov embedding</td>
+<td>$B^s_{p,q} \hookrightarrow B^{s'}_{p',q'}$ when $s - n/p = s' - n/p'$ and $q \leq q'$</td>
+<td><em>Besov and Triebel–Lizorkin Spaces</em></td>
+</tr>
+<tr>
+<td>the Gagliardo–Nirenberg–Sobolev comparison</td>
+<td>the Sobolev, Hölder, Morrey and Besov embeddings as the cases of one family</td>
+<td><em>Interpolation Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-inequalities-of-geometry-and-of-differential-equations">The Inequalities of Geometry and of Differential Equations</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it bounds</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the isoperimetric inequality</td>
+<td>$\lvert\partial E\rvert \geq n\omega_n^{1/n}\lvert E\rvert^{(n-1)/n}$; the perimeter of a set by its volume</td>
+<td><em>Geometric Measure Theory</em></td>
+</tr>
+<tr>
+<td>the Brunn–Minkowski inequality</td>
+<td>$\lvert E + F\rvert^{1/n} \geq \lvert E\rvert^{1/n} + \lvert F\rvert^{1/n}$</td>
+<td><em>Geometric Measure Theory</em></td>
+</tr>
+<tr>
+<td>the Bellman–Grönwall inequality</td>
+<td>a function bounded by an integral of itself is bounded by the exponential of the integral</td>
+<td><em>Ordinary Differential Equations</em></td>
+</tr>
+<tr>
+<td>the continuous-dependence estimate</td>
+<td>the distance between two solutions bounded by the Grönwall factor times the perturbation</td>
+<td><em>Ordinary Differential Equations</em></td>
+</tr>
+<tr>
+<td>the Bellman–Grönwall inequality for delay equations</td>
+<td>the same bound in the presence of a memory term</td>
+<td><em>Delay and Functional Differential Equations</em></td>
+</tr>
+<tr>
+<td>the comparison inequality for the delay equation</td>
+<td>a solution bounded above by the solution of the associated comparison equation</td>
+<td><em>Delay and Functional Differential Equations</em></td>
+</tr>
+<tr>
+<td>the energy-decay inequality for the heat semigroup</td>
+<td>$\lVert T(t)x\rVert \leq e^{\omega t}\lVert x\rVert$, the semigroup growth bound</td>
+<td><em>Semigroups and Evolution Equations</em></td>
+</tr>
+<tr>
+<td>the Ekeland variational inequality</td>
+<td>the perturbed minimisation inequality $f(v) \leq \inf f + \epsilon$ at a near-minimiser</td>
+<td><em>Nonlinear Functional Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="failures-sharpness-and-equality-cases">Failures, Sharpness and Equality Cases</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The failure or the sharpness it records</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hölder's inequality outside the conjugate exponents</td>
+<td>fails if $1/p + 1/q \neq 1$; equality holds exactly when $\lvert f\rvert^p$ and $\lvert g\rvert^q$ are proportional</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>Young's convolution inequality at the endpoint $p = q = 1$</td>
+<td>is an equality, $\lVert f*g\rVert_1 = \lVert f\rVert_1\lVert g\rVert_1$, the boundary of the interpolated family</td>
+<td><em>Real Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the sharp constant of the Sobolev inequality</td>
+<td>attained exactly by the translates and dilates of a fixed extremal, so the inequality is strict off that orbit</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>the maximal inequality at $p = 1$</td>
+<td>the strong-type bound fails; only the weak-type $(1,1)$ bound holds</td>
+<td><em>Real Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the isoperimetric inequality</td>
+<td>equality holds exactly for balls; no other set attains it</td>
+<td><em>Geometric Measure Theory</em></td>
+</tr>
+<tr>
+<td>the Poincaré inequality without a normalisation</td>
+<td>fails on functions with a constant part; the mean must be removed for the inequality to hold</td>
+<td><em>Sobolev Spaces and Weak Solutions</em></td>
+</tr>
+<tr>
+<td>Jensen's inequality for a non-convex $\varphi$</td>
+<td>fails; convexity is sharp for the inequality</td>
+<td><em>Convex Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the inequalities of the corpus: the pointwise inequalities of convexity — Cauchy–Schwarz, Jensen, Young and the arithmetic–geometric mean — the integral inequalities of the $L^p$ theory, among them Hölder, Minkowski, Hausdorff–Young and the maximal and fractional-integral bounds, the inequalities of the Sobolev scale with the Poincaré, Gagliardo–Nirenberg, Ladyzhenskaya and Nash bounds, and the isoperimetric, Brunn–Minkowski and Bellman–Grönwall inequalities of geometry and of differential equations. The closing table records the sharpness of each and the cases where it fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects are named rather than denoted; the symbols in the tables are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p$, $q$</td>
+<td>conjugate exponents, $1/p + 1/q = 1$</td>
+</tr>
+<tr>
+<td>$\lVert f\rVert_p$</td>
+<td>the $L^p$ norm</td>
+</tr>
+<tr>
+<td>$\nabla f$, $D^j f$</td>
+<td>gradient and $j$-th derivative</td>
+</tr>
+<tr>
+<td>$Mf$</td>
+<td>the Hardy–Littlewood maximal function</td>
+</tr>
+<tr>
+<td>$I_\alpha f$</td>
+<td>the Riesz fractional integral of order $\alpha$</td>
+</tr>
+<tr>
+<td>$p^*$</td>
+<td>the Sobolev conjugate $np/(n-p)$</td>
+</tr>
+<tr>
+<td>$E$, $F$</td>
+<td>measurable sets; $\lvert E\rvert$ their volume</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Godfrey H. Hardy, John E. Littlewood and George Pólya, <em>Inequalities</em> (Cambridge University Press, 2nd ed. 1952), for the classical inequalities and their equality cases.</li>
+<li>Elliott H. Lieb and Michael Loss, <em>Analysis</em>, 2nd ed. (American Mathematical Society, 2001), for the sharp constants of the Sobolev, Hardy–Littlewood–Sobolev and Young inequalities.</li>
+<li>Robert A. Adams and John J. F. Fournier, <em>Sobolev Spaces</em>, 2nd ed. (Academic Press, 2003), for the embedding inequalities of the Sobolev and Besov scales.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

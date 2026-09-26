@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bell Inequality for Continuous Variables in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-bell-inequality-for-continuous-variables-in-biquaternionic-form"><strong>The Bell Inequality for Continuous Variables in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The companion exercise <em>Exercise: The CHSH Inequality and Tsirelson's Bound</em> treats Bell's theorem for two qubits. Its observables have two outcomes each, labelled $\pm1$; its classical bound is $|S|\le2$; and its quantum bound is Tsirelson's $|S|\le2\sqrt{2}$, which is a theorem about the spectrum of a four-dimensional Hermitian operator and holds for every state of the two-qubit algebra. The menu lists "the continuous-variable Bell inequality" as a separate article. This is that article.</p>
+<p>The subject is the analogue of CHSH for observables with <strong>continuous spectrum</strong>. The benchmark is not the discrete Tsirelson bound but the Clauser–Horne–Shimony–Holt form as it was adapted to continuous variables by Braunstein and Caves. The physical arena is quantum optics: two field modes, quadratures $(\hat x,\hat p)$ with $[\hat x,\hat p]=i$, displacements in phase space, and the ideal test state, the <strong>two-mode squeezed vacuum</strong>.</p>
+<p>The purpose of the article is threefold, and the three purposes are inseparable.</p>
+<p><strong>First, to state the trap.</strong> It is natural to carry over the discrete-variable bound, to write "$2\sqrt{2}$" as <em>the</em> continuous-variable Bell bound, and to treat the two-mode squeezed state as a device that "approaches Tsirelson's bound". That is wrong in a specific and reportable way. There is <strong>no single Tsirelson bound for continuous variables.</strong> The boundary of the CHSH combination depends on which observables are measured and on how many outcomes they are resolved into, and it depends on the state in a way the two-qubit bound does not. The number $2\sqrt{2}$ is still meaningful, but only as an upper bound on the sub-family of <em>dichotomic</em> continuous-variable observables — that is, on a question that has already been reduced to the discrete case. A number quoted without saying what it is a bound on is not a result.</p>
+<p><strong>Second, to verify the violation on an explicit state, with the quadrature signs checked.</strong> The natural state is the two-mode squeezed vacuum $|r\rangle$. With the <strong>displaced-parity</strong> observables — the standard continuous-variable pseudo-spin, with eigenvalues $\pm1$ — the CHSH combination built from $|r\rangle$ is computed below in closed form. The correlation function is
+$$
+E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2r)\,\mathrm{Re}(\alpha\beta)\Bigr),
+$$
+and the sign of the cross term is the point at which the quadrature convention must be checked rather than remembered. The article reports the check: the exponent is $\mathrm{Re}(\alpha\beta)$, <strong>not</strong> $\mathrm{Re}(\alpha\bar\beta)$. The two agree whenever both displacements are real (and again at $r=0$, where the cross term vanishes altogether) — which is exactly the case that cannot distinguish them — and the first version of the computation was wrong for that reason. The correlator is verified twice, once from the Wigner function and once by an independent truncated-Fock-space evaluation of the displaced-parity operators.</p>
+<p><strong>Third, to say honestly what the biquaternion framework does here.</strong> The framework supplies the trace pairing $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ and the idempotent algebra of the informational sector $\mathbb{M}_+$, and a dichotomic observable is a fair translation target for those tools. But the states and observables of the continuous-variable problem are <strong>not elements of $\mathbb{B}$</strong>. A quadrature has continuous spectrum, and no element of $\mathbb{B}\cong M_2(\mathbb{C})$ or of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ has one; a bosonic mode requires $[\hat a,\hat a^\dagger]=e_0$ on an infinite-dimensional module, and the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> already proves that no such pair exists in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$. The framework can restate the <em>bound</em> — which is a fact about $\pm1$ spectra — but it cannot represent the <em>state</em>, and it therefore has no natural handle on the continuous-spectrum case. This is recorded below as a gap, not smoothed into an analogy.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$, the anti-Hermitian subspace $\mathbb{M}_-$, the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the complex scalars, the center of $\mathbb{B}$), and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$. The quaternion units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and the cyclic products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; $i$ is the scalar imaginary, $i^2=-1$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The isomorphism is the one fixed by <em>Quantum Mechanics in Biquaternionic Form</em>, $e_0\mapsto I_2$ and $e_k\mapsto-i\sigma_k$, whose image of $ie_k$ is $\sigma_k$. The two-qubit arena of the discrete exercise is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. The field-theoretic companion's result on the bosonic obstruction is inherited and used, not rederived.</p>
+<h2 id="two-inequalities-not-one">Two Inequalities, Not One</h2>
+<p>Bell's theorem comes in forms, and the continuous-variable literature inherits more than one of them. The confusion the trap exploits is that the discrete forms have state-independent bounds and the continuous forms do not.</p>
+<h3 id="the-discrete-form-for-contrast">The discrete form, for contrast</h3>
+<p>For two parties, two settings each, and observables $A,A',B,B'$ with spectrum contained in $\{\pm1\}$, the CHSH combination
+$$
+S=E(\hat a,\hat b)-E(\hat a,\hat b')+E(\hat a',\hat b)+E(\hat a',\hat b')
+$$
+satisfies $|S|\le2$ in every local hidden-variable model, because for each value of the shared variable one of $B-B'$, $B+B'$ vanishes. The quantum maximum over <em>all</em> states and all $\pm1$ observables is $2\sqrt{2}$, Tsirelson's bound; the algebraic maximum compatible with no-signaling is $4$. All three numbers are state-independent, observable-independent within the $\pm1$ class, and sharp. This is the structure the companion exercise establishes in the biquaternion algebra.</p>
+<h3 id="the-continuous-form-and-why-the-bound-moves">The continuous form, and why the bound moves</h3>
+<p>A continuous-variable observable — a quadrature $\hat x_\theta$, the photon-number parity, a binned homodyne count — has a spectrum that need not be $\{\pm1\}$. Two things change at once.</p>
+<p><strong>The observables are no longer pinned to $\{\pm1\}$.</strong> If the outcomes are unbounded, the CHSH combination is not defined without a normalisation, and the inequality that replaces it is a different inequality: Braunstein and Caves adapted the Bell argument to observables of continuous spectrum by bounding the outcomes (or by working with the Wigner function directly), and the bound they obtain is a bound <strong>on the normalised correlations of those bounded observables</strong>. Quoting "$2\sqrt{2}$" for it is a category error unless the observables are first made dichotomic.</p>
+<p><strong>The number of outcomes matters.</strong> If a continuous outcome is binned into $d$ values, the relevant inequality is the $d$-outcome generalisation, and its classical and quantum bounds depend on $d$. The bound is a function of the outcome alphabet. There is no single number.</p>
+<p><strong>The achievable maximum depends on the state and on the observable family.</strong> Even after fixing the form and the number of outcomes, the largest $S$ a given state can reach depends on which observables are available. For the two-mode squeezed vacuum with displaced-parity observables, the maximum computed below is approximately $2.3245$ in the limit of infinite squeezing — not $2\sqrt{2}\approx2.8284$, and not a number any discrete formula would predict. Different continuous-variable observables give different boundaries, and the sharp ones are state-dependent.</p>
+<p>The honest summary, and the sentence the rest of the article is written to support, is this: <strong>for continuous variables there is no single Tsirelson bound; the boundary depends on the measured observables, on the number of outcomes, and on the state, and a bound may be quoted only together with the class of observables it bounds.</strong> The one place a familiar number survives is the dichotomic class, where the discrete argument applies verbatim and gives $2$ classically and $2\sqrt{2}$ quantum — but that class has already given up the continuous spectrum.</p>
+<h2 id="the-continuous-variable-arena">The Continuous-Variable Arena</h2>
+<h3 id="quadratures-and-the-sign-convention">Quadratures and the sign convention</h3>
+<p>For a single mode with annihilation and creation operators $\hat a,\hat a^\dagger$ satisfying $[\hat a,\hat a^\dagger]=1$, the <strong>quadratures</strong> are
+$$
+\hat x=\frac{\hat a+\hat a^\dagger}{\sqrt2},\qquad
+\hat p=\frac{\hat a-\hat a^\dagger}{i\sqrt2}=-i\,\frac{\hat a-\hat a^\dagger}{\sqrt2},
+\qquad [\hat x,\hat p]=i .
+$$
+With this normalisation the vacuum has $\langle\hat x^2\rangle=\langle\hat p^2\rangle=\tfrac12$. The phase-space coordinate conjugate to these operators is the <strong>complex displacement</strong>
+$$
+\alpha=\frac{x+ip}{\sqrt2},\qquad |\alpha|^2=\frac{x^2+p^2}{2},
+$$
+so that a coherent state $|\alpha\rangle$ has $\langle\hat x\rangle=\sqrt2\,\mathrm{Re}\,\alpha$ and $\langle\hat p\rangle=\sqrt2\,\mathrm{Im}\,\alpha$. The factor of $\sqrt2$ and the sign of $i$ in $\hat p$ are conventions, and the correlation function below is stated in this one; a different normalisation of $\alpha$ rescales the optimum but not the physics.</p>
+<p>The <strong>displacement operator</strong> is $D(\alpha)=\exp(\alpha\hat a^\dagger-\bar\alpha\hat a)$, and the <strong>displaced parity</strong>
+$$
+\Pi(\alpha)=D(\alpha)\,(-1)^{\hat n}\,D(\alpha)^\dagger,\qquad \hat n=\hat a^\dagger\hat a,
+$$
+is Hermitian, unitary, and has eigenvalues $\pm1$ exactly, because $(-1)^{\hat n}$ does and $D(\alpha)$ is unitary. It is the standard continuous-variable pseudo-spin: a genuinely continuous-family observable with a discrete, dichotomic, $\pm1$ spectrum. This is the observable family used throughout the article, because it is the family for which the CHSH combination is defined without further normalisation and for which the discrete bound $2$ applies verbatim as the classical bound.</p>
+<p>Two facts about $\Pi(\alpha)$ are used below. First, its expectation is a fixed multiple of the Wigner function evaluated at the corresponding phase-space point,
+$$
+\langle\Pi(\alpha)\rangle=\pi\,W(\alpha),
+$$
+where $W$ is the Wigner function in the standard $x$–$p$ normalisation, so that a single mode has $\int W\,d^2\alpha=\tfrac12$. (The factor is $\pi$ and not $\pi/2$; the elementary vacuum value settles it, since $\langle\Pi(\alpha)\rangle_{\mathrm{vac}}=\langle\alpha|(-1)^{\hat n}|\alpha\rangle=e^{-2|\alpha|^2}$ and the vacuum Wigner in this convention is $\pi^{-1}e^{-2|\alpha|^2}$.) Second, $\Pi(\alpha)^2=e_0$: the eigenvalues are $\pm1$, so the classical CHSH proof applies to any two settings per party on each mode.</p>
+<p>For a two-mode state the correlation of two displacements is
+$$
+E(\alpha,\beta)=\bigl\langle \Pi(\alpha)\otimes\Pi(\beta)\bigr\rangle .
+$$</p>
+<h3 id="the-two-mode-squeezed-vacuum">The two-mode squeezed vacuum</h3>
+<p>The <strong>two-mode squeezed vacuum</strong> (TMSV) with squeezing parameter $r\ge0$ is, in the two-mode Fock basis,
+$$
+|r\rangle=\mathrm{sech}\,r\sum_{n=0}^{\infty}(\tanh r)^n\,|n\rangle_1|n\rangle_2 .
+$$
+Its reduced state on one mode is thermal with mean occupation $\bar n=\sinh^2 r$:
+$$
+\rho_1=\mathrm{Tr}_2|r\rangle\langle r|=\sum_n p_n|n\rangle\langle n|,\qquad
+p_n=\frac{1}{\cosh^2 r}\,(\tanh^2 r)^n .
+$$
+The quadrature variances fix the correlation structure and the sign: with $\hat x_{1}-\hat x_{2}$ and $\hat p_{1}+\hat p_{2}$ as the squeezed combinations,
+$$
+\mathrm{Var}(\hat x_1-\hat x_2)=e^{-2r},\qquad
+\mathrm{Var}(\hat p_1+\hat p_2)=e^{-2r},\qquad
+\mathrm{Var}(\hat x_1+\hat x_2)=\mathrm{Var}(\hat p_1-\hat p_2)=e^{2r}.
+$$
+The sign in the second relation is the EPR structure: the two modes' positions agree and their momenta oppose, so the difference of positions and the <strong>sum</strong> of momenta are the quiet combinations. A correlator written in terms of $\hat p_1-\hat p_2$ would be correlating the loud combination and would be wrong. That distinction is what the cross-term sign check below detects.</p>
+<h3 id="the-wigner-function">The Wigner function</h3>
+<p>The two-mode Wigner function of the TMSV is the Gaussian
+$$
+W(\alpha,\beta)=\frac{1}{\pi^2}\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2r)\,\mathrm{Re}(\alpha\beta)\Bigr),
+$$
+in the same $x$–$p$ normalisation as above. The cross term is $\mathrm{Re}(\alpha\beta)$; the marginal Wigner function of one mode is
+$$
+W_1(\alpha)=\frac{1}{\pi\cosh(2r)}\exp\!\Bigl(-\frac{2|\alpha|^2}{\cosh(2r)}\Bigr),
+$$
+the thermal Gaussian of the reduced state, which reproduces $\bar n=\sinh^2r$. These are standard; the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> records that the bosonic mode they describe has no native realisation in $\mathbb{B}$.</p>
+<h2 id="the-correlation-function-and-the-sign-check">The Correlation Function, and the Sign Check</h2>
+<h3 id="the-correlator">The correlator</h3>
+<p>The correlation of two displaced parities in the TMSV follows from the Wigner functions. Using
+$$
+\langle\Pi(\alpha)\rangle=\pi W_1(\alpha),
+\qquad
+\bigl\langle\Pi(\alpha)\otimes\Pi(\beta)\bigr\rangle=\pi^2 W(\alpha,\beta),
+$$
+the factor $\pi$ arising on each mode because each parity is a single-mode operator, one obtains
+$$
+\boxed{\;E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2r)\,\mathrm{Re}(\alpha\beta)\Bigr).\;}
+$$
+At $r=0$ this is $\exp(-2|\alpha|^2-2|\beta|^2)=E(\alpha)E(\beta)$: a product of one-mode factors, as it must be for the vacuum, which is a product state, and $E(\alpha,\beta)=0$ whenever either displacement is far from the origin. For $r>0$ the cross term $\mathrm{Re}(\alpha\beta)$ correlates the two modes along the EPR ridge.</p>
+<h3 id="the-sign-check-reported-rather-than-assumed">The sign check, reported rather than assumed</h3>
+<p>The exponent must be $\mathrm{Re}(\alpha\beta)$. The alternative that a reader who remembers "EPR correlations" will write is $\mathrm{Re}(\alpha\bar\beta)$, and the two are <em>equal when $\alpha$ and $\beta$ are both real, and equal again at $r=0$</em>, which is to say they agree on exactly the configurations a first check is likely to try. This is the case the claim came from, and checking it proves nothing. The check that distinguishes them used complex displacements, where $\mathrm{Re}(\alpha\beta)$ and $\mathrm{Re}(\alpha\bar\beta)$ differ.</p>
+<p>Two independent evaluations were made.</p>
+<p><strong>From the Wigner function.</strong> With $E=\exp(-2\cosh2r(|\alpha|^2+|\beta|^2)+4\sinh2r\,\mathrm{Re}(\alpha\beta))$, the one-mode marginals reproduce the thermal distribution $p_n=\mathrm{sech}^2r\,\tanh^{2n}r$ and the two-mode function is a normalised Gaussian whose covariance matrix has $\mathrm{Var}(\hat x_1-\hat x_2)=\mathrm{Var}(\hat p_1+\hat p_2)=e^{-2r}$ and $\mathrm{Var}(\hat x_1+\hat x_2)=\mathrm{Var}(\hat p_1-\hat p_2)=e^{2r}$, matching the EPR structure named in the previous section.</p>
+<p><strong>From an explicit Fock computation.</strong> The displaced-parity operators $\Pi(\alpha)$, $\Pi(\beta)$ were built in a truncated Fock space from the matrix elements $\langle m|D(\alpha)|n\rangle$ of the displacement operator, and
+$$
+E_{\mathrm{Fock}}=\sum_{m,n}(\mathrm{sech}\,r)(\tanh r)^m\,(\mathrm{sech}\,r)(\tanh r)^n\,\langle m|\Pi(\alpha)|n\rangle\langle m|\Pi(\beta)|n\rangle
+$$
+was evaluated for complex displacements at several $r$. The agreement with the closed form above is exact to machine precision (residuals at the level of $10^{-16}$ for moderate truncation, growing only to $10^{-6}$ where the truncation is stressed). The same computation with $\mathrm{Re}(\alpha\bar\beta)$ in place of $\mathrm{Re}(\alpha\beta)$ disagrees by amounts up to order unity at the same points — the discrepancy is not marginal, it is qualitative. The sign is therefore settled by an independent route, not by the argument that produced the formula.</p>
+<h2 id="the-violation-and-the-value-of-its-maximum">The Violation, and the Value of Its Maximum</h2>
+<h3 id="the-chsh-combination-and-its-classical-bound">The CHSH combination and its classical bound</h3>
+<p>With the four displacements $\alpha_1,\alpha_2$ for party $1$ and $\beta_1,\beta_2$ for party $2$, define
+$$
+S=E(\alpha_1,\beta_1)-E(\alpha_1,\beta_2)+E(\alpha_2,\beta_1)+E(\alpha_2,\beta_2).
+$$
+Because $\Pi(\alpha)$ and $\Pi(\beta)$ have spectrum $\{\pm1\}$, the classical proof of the discrete case applies unchanged: for a local hidden-variable model the outcomes are $\pm1$ functions of the setting and the shared variable, one of $\Pi(\beta_1)\mp\Pi(\beta_2)$ vanishes at each value of the shared variable, and
+$$
+|S|\le2 .
+$$
+This bound is genuine and tight for the parity family, and it is the classical bound for this problem. It is not the bound that moves; the <em>quantum</em> boundary is.</p>
+<h3 id="the-maximum">The maximum</h3>
+<p>For fixed $r$ the four complex displacements were optimised numerically (a broad multi-start search followed by local refinement), and the resulting maxima are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$r$</th>
+<th>$S_{\max}$</th>
+<th>excess over $2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$2.0000$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$0.02$</td>
+<td>$2.0015$</td>
+<td>$0.0015$</td>
+</tr>
+<tr>
+<td>$0.05$</td>
+<td>$2.0082$</td>
+<td>$0.0082$</td>
+</tr>
+<tr>
+<td>$0.10$</td>
+<td>$2.0276$</td>
+<td>$0.0276$</td>
+</tr>
+<tr>
+<td>$0.20$</td>
+<td>$2.0796$</td>
+<td>$0.0796$</td>
+</tr>
+<tr>
+<td>$0.30$</td>
+<td>$2.1335$</td>
+<td>$0.1335$</td>
+</tr>
+<tr>
+<td>$0.50$</td>
+<td>$2.2199$</td>
+<td>$0.2199$</td>
+</tr>
+<tr>
+<td>$1.00$</td>
+<td>$2.3075$</td>
+<td>$0.3075$</td>
+</tr>
+<tr>
+<td>$2.00$</td>
+<td>$2.3242$</td>
+<td>$0.3242$</td>
+</tr>
+<tr>
+<td>$r\to\infty$</td>
+<td>$2.3245$</td>
+<td>$0.3245$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three features are reportable.</p>
+<p><strong>The violation is real and its threshold is zero.</strong> At $r=0$ the state is the vacuum, a product state, and $S_{\max}=2$ exactly: no violation. For every $r>0$ tested — down to $r=0.01$, where the excess is $3.8\times10^{-4}$ — the maximum exceeds $2$. The two-mode squeezed vacuum violates the parity CHSH inequality at arbitrarily small squeezing. This is unlike the two-qubit Werner state, whose violation requires the visibility $p>1/\sqrt2$; the difference is that the parity observables are matched to the state's Gaussian structure, so the entanglement is detected without a visibility penalty. The excess leaves zero approximately as $r^2$ at the smallest values and grows more slowly than that thereafter, the limit being finite.</p>
+<p><strong>The maximum is not $2\sqrt{2}$, and it is not the discrete bound.</strong> As $r\to\infty$ the maximum rises toward $2.3245$, which is well below Tsirelson's $2\sqrt{2}\approx2.8284$. Carrying the discrete bound over would both overstate what the state achieves and misdescribe what the bound is.</p>
+<p><strong>In the ideal EPR limit the maximum has a closed form.</strong> As $r\to\infty$ the two-mode squeezed state tends to the ideal EPR state, and the correlator becomes $E\to\exp(-|\mathbf{w}-\mathbf{z}|^2)$ in rescaled real two-vectors $\mathbf w,\mathbf z$ carrying the squeezed quadrature combinations. The maximum of $S$ for this kernel is attained on the collinear configuration
+$$
+\alpha_1=d,\qquad \alpha_2=-d,\qquad \beta_1=0,\qquad \beta_2=-2d,\qquad d^2=\frac{\ln 3}{8},
+$$
+for which $S=3e^{-d^2}-e^{-9d^2}$ and hence
+$$
+S_{\max}^{\mathrm{EPR}}=8\cdot 3^{-9/8}=2.3244947809\ldots
+$$
+The optimisation is one-dimensional along that line and is elementary; the numerical search over all four complex displacements agrees with it and does not exceed it. The value is exact for the ideal EPR state with displaced-parity observables, and it is the number that replaces the discrete Tsirelson bound for this state and this observable family. It is <em>not</em> a universal continuous-variable bound, and the article does not offer it as one: it is the boundary of one combination of state and observables.</p>
+<h3 id="the-three-tiers-for-continuous-variables">The three tiers, for continuous variables</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Bound</th>
+<th>Value for the parity CHSH on the TMSV</th>
+<th>Assumption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Classical (CHSH)</td>
+<td>$2$</td>
+<td>local outcomes, shared variable; $\pm1$ parity outcomes</td>
+</tr>
+<tr>
+<td>Quantum, this state and family</td>
+<td>rises from $2$, tends to $8\cdot3^{-9/8}\approx2.3245$</td>
+<td>TMSV, displaced parity</td>
+</tr>
+<tr>
+<td>Tsirelson (same state, any $\pm1$ observables)</td>
+<td>$2\sqrt2\approx2.8284$</td>
+<td>any state, dichotomic observables</td>
+</tr>
+<tr>
+<td>No-signaling (algebraic)</td>
+<td>$4$</td>
+<td>each $E\in[-1,1]$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the article's answer to the trap in one place. The value $2\sqrt2$ appears, but as the ceiling of the dichotomic class, not as the boundary of the continuous-variable problem; the row that describes the actual state is the state-dependent one; and no single number is the continuous-variable Bell bound.</p>
+<h2 id="what-the-biquaternion-framework-supplies-and-what-it-does-not">What the Biquaternion Framework Supplies, and What It Does Not</h2>
+<h3 id="the-part-that-transfers">The part that transfers</h3>
+<p>The framework's discrete result is available, and it is worth stating exactly what it covers. In the companion exercise the CHSH combination for a two-qubit system is the Born pairing of the state with a single Hermitian element of $\mathbb{M}_+\otimes\mathbb{M}_+$,
+$$
+\tilde{\mathcal S}
+=(i\hat a)\otimes(i\hat b)-(i\hat a)\otimes(i\hat b')+(i\hat a')\otimes(i\hat b)+(i\hat a')\otimes(i\hat b'),
+$$
+whose square is $\tilde{\mathcal S}^2=4\bigl(e_0\otimes e_0+(\hat a\times\hat a')\otimes(\hat b\times\hat b')\bigr)$, giving the bound $2\sqrt2$ through the spectrum of its image in $M_4(\mathbb{C})$. That derivation needs only two things: a two-outcome observable whose square is the identity, and an idempotent state paired with it by the trace. The first is present for the displaced parity, since $\Pi(\alpha)^2=1$; the second is <em>not</em>, for the reason in the next subsection. So the transcribable content is the algebra of the <strong>bound</strong>, restricted to the dichotomic class: if one is handed a state that is an element of $\mathbb{M}_+\otimes\mathbb{M}_+$ and a pair of settings per party, the exercise's argument gives $|S|\le2\sqrt2$ for those settings. The framework states the ceiling correctly.</p>
+<p>But the ceiling is the least informative row of the table above. For the two-mode squeezed vacuum the actual boundary is $8\cdot3^{-9/8}$, and the framework contributes nothing to it, because the state is not in the algebra.</p>
+<h3 id="the-gap-no-continuous-spectrum-in-math222">The gap: no continuous spectrum in $\mathbb{B}$</h3>
+<p>The obstruction is structural and is already proved in the corpus. It has two independent faces.</p>
+<p><strong>The algebra cannot hold the mode.</strong> A quadrature $\hat x$ has continuous spectrum, and every element of $\mathbb{B}\cong M_2(\mathbb{C})$ has a finite spectrum of at most two values. The parity $\Pi(\alpha)$, for all that its eigenvalues are $\pm1$, is built from $(-1)^{\hat n}$ and a displacement $D(\alpha)$; both are functions of the bosonic pair $(\hat a,\hat a^\dagger)$, and one bosonic mode requires $[\hat a,\hat a^\dagger]=e_0$ on an infinite-dimensional module. The companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> shows that no such pair exists in $\mathbb{B}$: a commutator has vanishing trace, while $\mathrm{Tr}(e_0)=2$, so the only central scalar a commutator can produce is $0$. The framework carries the <strong>fermionic</strong> canonical relation exactly for one mode — the truncated ladder $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$ satisfies $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$ — and the bosonic relation not at all. There is therefore no $\Pi(\alpha)$ in $\mathbb{B}$, no $\hat xe_0$, no quadrature, and no phase-space displacement as an element of the algebra.</p>
+<p><strong>The algebra cannot hold the state or the arena.</strong> The two-mode squeezed vacuum is a vector in the symmetric algebra of a two-mode one-particle space, a state on $\ell^2(\mathbb{N})^{\otimes2}$; it is infinite-dimensional and is not an element of $\mathbb{B}\otimes\mathbb{B}$, which has complex dimension sixteen. Writing "$|r\rangle$" as an idempotent of the tensor-product algebra would reproduce neither its spectrum nor its marginal, and the reduced thermal state $\sum_n p_n|n\rangle\langle n|$ has no image in $\mathbb{M}_+$, whose positive trace-one elements are exactly the Bloch ball.</p>
+<p>The consequence is worth stating as plainly as the corpus states its other gaps. <strong>The biquaternion framework supplies no natural handle on the continuous-spectrum case.</strong> It can name the bound for dichotomic observables; it cannot represent the observables, the state, or the arena in which the bound is attained, and so it cannot supply the state-dependent boundary that is the actual content of the continuous-variable inequality. The gap is not one of effort or of missing notation. It is the finite dimension of $\mathbb{B}$ acting against the infinite dimension of a bosonic mode, and it does not close by refining an analogy. The honest thing to do with it is to leave it visible and labelled, and to decline to present the discrete result as if it covered the continuous case.</p>
+<h3 id="what-a-genuinely-biquaternionic-continuous-variable-question-would-require">What a genuinely biquaternionic continuous-variable question would require</h3>
+<p>The gap can be located precisely by saying what would have to exist for the framework to have a native continuous-variable Bell problem.</p>
+<p>An infinite-dimensional module over $\mathbb{B}$ carrying a pair with $[\hat a,\hat a^\dagger]=e_0$, together with an element of the framework's own algebraic structure — not merely a matrix representation of it — whose analogue of $\tilde{\mathcal S}^2$ has a continuous spectrum with an explicit boundary; and a state in the algebra whose Born pairing with that element gives the two-mode squeezed correlator. None of the three is available, and the third is impossible in a four-dimensional $\mathbb{C}$-algebra. Whether some larger biquaternionic structure (a field of biquaternions, a $\mathbb{B}$-valued Weyl algebra) could carry them is a question this article does not answer; it records that the finite algebra does not, and that the standard construction of the bosonic Fock space is imported into the framework rather than derived from it.</p>
+<h2 id="summary">Summary</h2>
+<p>The Bell inequality for continuous variables is the CHSH inequality applied to observables of continuous spectrum, and its benchmark is the Clauser–Horne–Shimony–Holt form as adapted by Braunstein and Caves. This article's findings are four.</p>
+<p><strong>There is no single Tsirelson bound for continuous variables.</strong> The boundary of the CHSH combination depends on the measured observables, on the number of outcomes, and on the state. The value $2\sqrt{2}$ survives as the upper bound for the <em>dichotomic</em> class — observables with spectrum $\{\pm1\}$ — which is a reduction to the discrete problem, not a continuous-variable result. The number must be quoted together with the class of observables it bounds, and this article states, for every number it quotes, what that class is.</p>
+<p><strong>On the two-mode squeezed vacuum the violation is explicit and was verified.</strong> With displaced-parity observables the correlator is
+$$
+E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2r)\,\mathrm{Re}(\alpha\beta)\Bigr),
+$$
+checked twice: from the Wigner function, and independently in a truncated Fock space from the matrix elements of the displacement operator, with the marginals reproducing the thermal distribution of the reduced state. The classical bound $|S|\le2$ is violated for every $r>0$, with no visibility threshold, and the maximum grows to a limit in the ideal EPR case of
+$$
+S_{\max}=8\cdot 3^{-9/8}=2.3244947809\ldots,
+$$
+well below $2\sqrt{2}$. Different observable families give different boundaries; this value is the boundary of one such family, not a universal constant.</p>
+<p><strong>The quadrature sign was the trap within the trap.</strong> The exponent is $\mathrm{Re}(\alpha\beta)$, not $\mathrm{Re}(\alpha\bar\beta)$. The two coincide when the displacements are real and at $r=0$, so the case that first suggests the formula cannot distinguish them; the check that does was made on complex displacements. The first form of the computation was wrong for exactly this reason and is not carried into the article.</p>
+<p><strong>The biquaternion framework has no natural handle on the continuous-spectrum case, and this is a gap.</strong> The finite-dimensional algebra $\mathbb{B}\cong M_2(\mathbb{C})$ contains no bosonic mode, because a commutator is traceless while $\mathrm{Tr}(e_0)=2$; and $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ contains neither the two-mode squeezed state nor its infinite-dimensional arena. The framework correctly states the dichotomic ceiling $2\sqrt2$ — the companion exercise's algebra of the bound transfers — but it cannot represent the observables, the state, or the state-dependent boundary of the actual problem. Forcing a discrete analogy here would be the failure this article was written to avoid, and the gap is therefore left visible rather than closed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>Hermitian (informational) and anti-Hermitian (material) subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$</td>
+<td>Complex subspace (complex scalars, center); real-quaternion subspace</td>
+</tr>
+<tr>
+<td>$e_0=1,e_1,e_2,e_3$</td>
+<td>Quaternion basis, $e_k^2=-e_0$, cyclic products</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
+<td>Trace formula (Born rule)</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$</td>
+<td>Two-qubit tensor-product arena of the discrete exercise</td>
+</tr>
+<tr>
+<td>$\hat a,\hat a^\dagger$</td>
+<td>Bosonic annihilation and creation operators, $[\hat a,\hat a^\dagger]=1$</td>
+</tr>
+<tr>
+<td>$\hat x,\hat p$</td>
+<td>Quadratures, $\hat x=(\hat a+\hat a^\dagger)/\sqrt2$, $\hat p=-i(\hat a-\hat a^\dagger)/\sqrt2$, $[\hat x,\hat p]=i$</td>
+</tr>
+<tr>
+<td>$\alpha=(x+ip)/\sqrt2$</td>
+<td>Complex phase-space displacement, $|\alpha|^2=(x^2+p^2)/2$</td>
+</tr>
+<tr>
+<td>$D(\alpha)=\exp(\alpha\hat a^\dagger-\bar\alpha\hat a)$</td>
+<td>Displacement operator</td>
+</tr>
+<tr>
+<td>$\Pi(\alpha)=D(\alpha)(-1)^{\hat n}D(\alpha)^\dagger$</td>
+<td>Displaced parity, spectrum $\{\pm1\}$, $\Pi(\alpha)^2=1$</td>
+</tr>
+<tr>
+<td>$\langle\Pi(\alpha)\rangle=\pi W_1(\alpha)$</td>
+<td>Parity expectation from the Wigner function ($x$–$p$ normalisation, $\int W_1 d^2\alpha=\tfrac12$)</td>
+</tr>
+<tr>
+<td>$|r\rangle=\mathrm{sech}\,r\sum_n(\tanh r)^n|n\rangle_1|n\rangle_2$</td>
+<td>Two-mode squeezed vacuum</td>
+</tr>
+<tr>
+<td>$\bar n=\sinh^2 r$, $p_n=\mathrm{sech}^2r\,\tanh^{2n}r$</td>
+<td>Mean occupation and thermal marginal</td>
+</tr>
+<tr>
+<td>$\mathrm{Var}(\hat x_1-\hat x_2)=\mathrm{Var}(\hat p_1+\hat p_2)=e^{-2r}$</td>
+<td>Squeezed (quiet) EPR combinations</td>
+</tr>
+<tr>
+<td>$E(\alpha,\beta)=\exp(-2\cosh2r(|\alpha|^2+|\beta|^2)+4\sinh2r\,\mathrm{Re}(\alpha\beta))$</td>
+<td>Parity correlator of the TMSV</td>
+</tr>
+<tr>
+<td>$S=E(\alpha_1,\beta_1)-E(\alpha_1,\beta_2)+E(\alpha_2,\beta_1)+E(\alpha_2,\beta_2)$</td>
+<td>CHSH combination</td>
+</tr>
+<tr>
+<td>$\lvert S\rvert\le2$</td>
+<td>Classical (CHSH) bound, dichotomic observables</td>
+</tr>
+<tr>
+<td>$8\cdot3^{-9/8}=2.3244947809\ldots$</td>
+<td>TMSV parity-CHSH maximum in the ideal EPR limit</td>
+</tr>
+<tr>
+<td>$\lvert S\rvert\le2\sqrt2$</td>
+<td>Tsirelson bound, dichotomic observables only</td>
+</tr>
+<tr>
+<td>$\lvert S\rvert\le4$</td>
+<td>No-signaling (algebraic) bound</td>
+</tr>
+<tr>
+<td>$\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$</td>
+<td>Single-mode ladder in $\mathbb{B}$; fermionic, not bosonic</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. S. Bell, "On the Einstein–Podolsky–Rosen paradox," <em>Physics</em> <strong>1</strong> (1964) 195–200, for Bell's theorem.</li>
+<li>J. F. Clauser, M. A. Horne, A. Shimony, and R. A. Holt, "Proposed experiment to test local hidden-variable theories," <em>Physical Review Letters</em> <strong>23</strong> (1969) 880–884, for the CHSH inequality.</li>
+<li>S. L. Braunstein and C. M. Caves, "Wringing out better Bell inequalities," <em>Annals of Physics</em> <strong>202</strong> (1990) 22–56, for the adaptation of the Bell inequality to observables of continuous spectrum.</li>
+<li>B. S. Cirel'son (Tsirelson), "Quantum generalizations of Bell's inequality," <em>Letters in Mathematical Physics</em> <strong>4</strong> (1980) 93–100, for the bound $2\sqrt{2}$ in the dichotomic case.</li>
+<li>A. Einstein, B. Podolsky, N. Rosen, "Can quantum-mechanical description of physical reality be considered complete?" <em>Physical Review</em> <strong>47</strong> (1935) 777–780, for the EPR state that the infinite-squeezing limit approaches.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the CHSH inequality and Tsirelson's bound in the standard formalism.</li>
+<li>The companion articles of this series: <em>Introduction to the Biquaternion Universe</em>, <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, <em>Quantum Mechanics in Biquaternionic Form</em>, <em>Entangled Subsystems in the Biquaternion Framework</em>, <em>Exercise: The CHSH Inequality and Tsirelson's Bound</em>, <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, and <em>The Quantum–Classical Divide in the Biquaternion Framework</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

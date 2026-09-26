@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Linear Geometric Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-linear-geometric-groups"><strong>List of Linear Geometric Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the linear groups of the corpus — the general and special linear groups of a vector space over a field, and their projective quotients — together with the determinant sequence that relates them, their centres, their finite versions over $\mathbb{F}_q$ and the coincidences among the small members. The property the list gathers is that of a group of invertible linear maps of a vector space over a general field $F$, with no further structure preserved; the moment a form is imposed the group becomes one of the classical geometric groups of the following catalogues, and the passage from the general linear group to those groups is through the stabilisers of forms recorded here as a boundary.</p>
+<p>Every entry points to the article that introduces the group and states its structure or its order. The article introduces nothing and proves nothing: it records the order, the centre, the quotient and the simplicity statement as the introducing article gives them, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the groups of the determinant sequence it lists the cases in which the sequence degenerates or a simplicity statement fails: $\operatorname{PSL}_2(2) \cong S_3$ and $\operatorname{PSL}_2(3) \cong A_4$ are not simple; the identity $\operatorname{SL}_n(F) = [\operatorname{GL}_n(F),\operatorname{GL}_n(F)]$ fails for $n = 2$ over $\mathbb{F}_2$ and $\mathbb{F}_3$; the determinant has no scalar analogue over a non-commutative ring, where the Dieudonné determinant with values in the abelianisation of the unit group takes its place; and the projective quotient $\operatorname{PGL}_n$ differs from $\operatorname{PSL}_n$ when $F^\times$ has non-trivial $n$-th power classes, each with the failure named and the article that records it.</p>
+<h2 id="the-general-and-special-linear-groups">The General and Special Linear Groups</h2>
+<p>The determinant is the unique normalised multiplicative scalar invariant of a linear operator, and its kernel is the measure-preserving part of the general linear group. Over a field the two groups fit into a split exact sequence.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group or morphism</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{GL}(V) = \operatorname{Aut}_F(V)$</td>
+<td>the invertible $F$-linear maps of a finite-dimensional space, under composition; $\operatorname{GL}_n(F)$ after a basis is chosen</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>the centre $Z(\operatorname{GL}(V)) \cong F^\times$</td>
+<td>the scalar maps $\lambda\,\mathrm{id}_V$; the centre of $\operatorname{GL}_n(F)$ is the scalar matrices</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>the determinant $\det : \operatorname{GL}(V) \to F^\times$</td>
+<td>the unique normalised alternating multilinear invariant; a surjective group homomorphism over a field</td>
+<td><em>The General Linear Group</em>; <em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>$\operatorname{SL}(V) = \ker\det$</td>
+<td>the special linear group; the operators of determinant $1$, preserving oriented volume</td>
+<td><em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>the determinant sequence $1 \to \operatorname{SL}(V) \to \operatorname{GL}(V) \xrightarrow{\det} F^\times \to 1$</td>
+<td>exact and split for a field; the section $\lambda \mapsto \operatorname{diag}(\lambda,1,\ldots,1)$</td>
+<td><em>The General Linear Group</em>; <em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>generation by elementary matrices</td>
+<td>$\operatorname{SL}_n(F)$ is generated by the transvections $E_{ij}(\lambda)$ for $n \geq 2$</td>
+<td><em>The Special Linear Group and the Determinant</em>; <em>Transvections and Elementary Transformations</em></td>
+</tr>
+<tr>
+<td>the commutator subgroup</td>
+<td>$\operatorname{SL}_n(F) = [\operatorname{GL}_n(F),\operatorname{GL}_n(F)]$, with the two exceptions $n = 2$, $F = \mathbb{F}_2$ and $n = 2$, $F = \mathbb{F}_3$</td>
+<td><em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>the centre of $\operatorname{SL}_n(F)$</td>
+<td>the scalars $\mu_n = \{\lambda : \lambda^n = 1\} = \operatorname{SL}_n(F) \cap F^\times\mathrm{id}$</td>
+<td><em>The General Linear Group</em>; <em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>$\operatorname{GL}_n(\mathbb{Z})$</td>
+<td>the unimodular integral matrices, of determinant $\pm1$; the determinant still surjects onto $\{\pm1\}$, and $\operatorname{SL}_n(\mathbb{Z})$ is generated by the elementary matrices $E_{ij}(1)$</td>
+<td><em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>the Grassmannian action</td>
+<td>$\operatorname{GL}(V)$ acts transitively on the $k$-subspaces $\operatorname{Gr}_k(V)$; the stabiliser is a parabolic subgroup</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>the classical groups as stabilisers</td>
+<td>the subgroups preserving a bilinear or sesquilinear form; the orthogonal, symplectic and unitary groups</td>
+<td><em>The General Linear Group</em>; <em>List of Classical Geometric Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-projective-quotients">The Projective Quotients</h2>
+<p>The projective general and projective special linear groups are the quotients of the linear groups by their centres, and they act faithfully on the projective space; the central question is when the two coincide.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{PGL}(V) = \operatorname{GL}(V)/F^\times$</td>
+<td>the group of linear collineations of $\mathbb{P}(V)$; acts faithfully on the lines of $V$</td>
+<td><em>The General Linear Group</em>; <em>Projective Geometry</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}(V) = \operatorname{SL}(V)/\mu_n$</td>
+<td>the determinant-one collineations; the commutator quotient of $\operatorname{PGL}$</td>
+<td><em>The Special Linear Group and the Determinant</em>; <em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>the action on $\mathbb{P}(V)$</td>
+<td>$\operatorname{GL}(V) \to \operatorname{PGL}(V)$ has kernel $F^\times$; the action of $\operatorname{GL}(V)$ on lines is not faithful</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>the fundamental theorem of projective geometry</td>
+<td>every collineation of $\mathbb{P}(V)$, $\dim V \geq 3$, comes from a semilinear map; over a field a collineation is in $\operatorname{PGL}(V)$</td>
+<td><em>Projective Geometry</em></td>
+</tr>
+<tr>
+<td>the coincidence $\operatorname{PGL}_n = \operatorname{PSL}_n$</td>
+<td>they coincide over an algebraically closed field, and generally exactly when every element of $F^\times$ is an $n$-th power, $(F^\times)^n = F^\times$</td>
+<td><em>The General Linear Group</em>; <em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_2(\mathbb{R})$, $\operatorname{PSL}_2(\mathbb{C})$</td>
+<td>the orientation-preserving isometries of the hyperbolic plane and the Möbius group of the sphere</td>
+<td><em>Möbius and Lie Sphere Geometry</em>; <em>List of Möbius and Conformal Groups</em></td>
+</tr>
+<tr>
+<td>the projective space as a homogeneous space</td>
+<td>$\mathbb{P}(V) = \operatorname{GL}(V)/P$ with $P$ the stabiliser of a line</td>
+<td><em>The General Linear Group</em>; <em>Homogeneous Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-finite-linear-groups">The Finite Linear Groups</h2>
+<p>Over the finite field $\mathbb{F}_q$ the linear groups are finite and their orders are the polynomial values recorded below; the order of $\operatorname{GL}_n(q)$ is the number of ordered bases of $\mathbb{F}_q^n$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Order</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{GL}_n(q)$</td>
+<td>$q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1)$</td>
+<td><em>Finite Simple Groups of Lie Type</em>; <em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>$\operatorname{SL}_n(q)$</td>
+<td>$\lvert\operatorname{GL}_n(q)\rvert/(q-1)$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PGL}_n(q)$</td>
+<td>$\lvert\operatorname{GL}_n(q)\rvert/(q-1)$; the quotient by the scalars</td>
+<td><em>The General Linear Group</em>; <em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_n(q)$</td>
+<td>$\lvert\operatorname{SL}_n(q)\rvert/\gcd(n,q-1)$; the quotient by the centre of order $\gcd(n,q-1)$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_2(q)$</td>
+<td>$q(q^2-1)/\gcd(2,q-1)$; simple for $q \geq 4$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>the family $A_1$</td>
+<td>the groups $\operatorname{PSL}_2(q)$, the groups of Lie type of type $A_1$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>the classical families $A_n$, $B_n$, $C_n$, $D_n$</td>
+<td>the abstract finite groups $\mathrm{PSL}$, $\mathrm{PSp}$, $\mathrm{PSU}$, $\mathrm{P}\Omega$ and their twisted forms $^2A_n$, $^2D_n$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>the simplicity statement</td>
+<td>the adjoint or simply connected group modulo its centre is simple, with a finite list of small exceptions</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="simplicity-and-the-exceptional-isomorphisms">Simplicity and the Exceptional Isomorphisms</h2>
+<p>The projective special linear groups are simple for $n \geq 2$ except at the smallest parameters, and the coincidences among the small groups of Lie type give the classical identifications with the alternating groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>The content</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the simplicity of $\operatorname{PSL}_n(q)$</td>
+<td>simple for $n \geq 2$ except $\operatorname{PSL}_2(2) \cong S_3$ and $\operatorname{PSL}_2(3) \cong A_4$; proved by the doubly transitive action on the projective line for $n = 2$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_2(4) \cong \operatorname{PSL}_2(5) \cong A_5$</td>
+<td>order $60$; the smallest nonabelian simple group</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_2(7) \cong \operatorname{GL}_3(2) = \operatorname{PSL}_3(2)$</td>
+<td>order $168$; note $\operatorname{GL}_3(2) = \operatorname{SL}_3(2)$; the second smallest nonabelian simple group</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_2(9) \cong A_6$</td>
+<td>order $360$; also $\cong \operatorname{Sp}_4(2)'$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_4(2) \cong A_8$</td>
+<td>the isomorphism of the family $A_3$ over $\mathbb{F}_2$ with the alternating group</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Sp}_4(2) \cong S_6$, $\operatorname{Sp}_4(2)' \cong A_6$</td>
+<td>a symplectic coincidence of the same family, with $\lvert\operatorname{Sp}_4(2)\rvert = 720 = 6!$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_2(8) \cong {}^2G_2(3)'$</td>
+<td>a twisted coincidence, with $\lvert\operatorname{PSL}_2(8)\rvert = 504$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSp}_4(3) \cong \operatorname{PSU}_4(2)$</td>
+<td>the classical coincidence of order $25920$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-and-warnings">Non-examples and Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why the expected statement fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{PSL}_2(2) \cong S_3$</td>
+<td>not simple; the smallest parameter of the family is an exception to the simplicity theorem</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}_2(3) \cong A_4$</td>
+<td>not simple; solvable of order $12$</td>
+<td><em>Finite Simple Groups of Lie Type</em></td>
+</tr>
+<tr>
+<td>the identity $\operatorname{SL}_n(F) = [\operatorname{GL}_n(F),\operatorname{GL}_n(F)]$</td>
+<td>it fails for $n = 2$ over $\mathbb{F}_2$ and $\mathbb{F}_3$; there $\operatorname{SL} = \operatorname{GL}$ is abelian or has abelianization</td>
+<td><em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>the determinant over a non-commutative ring</td>
+<td>no single scalar plays the role it plays over a field; the correct generalisation is the Dieudonné determinant, with values in the abelianisation of the unit group</td>
+<td><em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PGL}_n(F)$ when $(F^\times)^n \neq F^\times$</td>
+<td>the two projective groups differ; the quotient $\operatorname{PGL}_n/\operatorname{PSL}_n \cong F^\times/(F^\times)^n$ is nontrivial</td>
+<td><em>The General Linear Group</em>; <em>The Special Linear Group and the Determinant</em></td>
+</tr>
+<tr>
+<td>the action of $\operatorname{GL}(V)$ on lines</td>
+<td>it is not faithful; the kernel of the action on $\mathbb{P}(V)$ is the scalars $F^\times\mathrm{id}$</td>
+<td><em>The General Linear Group</em></td>
+</tr>
+<tr>
+<td>$\operatorname{GL}_n(D)$ over a division ring $D$</td>
+<td>the elementary matrices alone do not generate it; every invertible matrix is a product of elementary matrices and a monomial matrix, so the quotient survives as $D^\times/[D^\times,D^\times]$</td>
+<td><em>The Special Linear Group and the Determinant</em>; <em>K-Theory of Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Objects that a reader may expect in a list of linear groups, and does not find here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$O(V,Q)$, $U(V,h)$, $Sp(V,\omega)$</td>
+<td>they are defined by a form and are listed among the classical geometric groups</td>
+<td><em>List of Classical Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the alternating and symmetric groups $A_n$, $S_n$</td>
+<td>they are permutation groups, a different family; the coincidences with the linear groups are recorded above</td>
+<td><em>The Classification of Finite Simple Groups</em>; <em>Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{GL}_n(D)$ over a division ring</td>
+<td>the linear group over a non-commutative division ring, recorded with the automorphism groups</td>
+<td><em>List of Automorphism Groups</em></td>
+</tr>
+<tr>
+<td>the affine and Euclidean groups</td>
+<td>they are the semidirect products of the linear groups with the translations</td>
+<td><em>List of Affine and Euclidean Groups</em></td>
+</tr>
+<tr>
+<td>the algebraic groups $\operatorname{GL}_n$ as group schemes</td>
+<td>the scheme-theoretic construction is over a general base and is a different object</td>
+<td><em>Linear Algebraic Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the linear geometric groups of the corpus: the general and special linear groups with the determinant, the split exact sequence $1 \to \operatorname{SL} \to \operatorname{GL} \to F^\times \to 1$, the generation by elementary matrices and the commutator identity, the centres and the projective quotients $\operatorname{PGL}$ and $\operatorname{PSL}$ with the condition for their coincidence, the finite groups $\operatorname{GL}_n(q)$, $\operatorname{SL}_n(q)$, $\operatorname{PGL}_n(q)$, $\operatorname{PSL}_n(q)$ with their orders, and the simplicity and the exceptional isomorphisms — $\operatorname{PSL}_2(4) \cong \operatorname{PSL}_2(5) \cong A_5$, $\operatorname{PSL}_2(7) \cong \operatorname{PSL}_3(2)$, $\operatorname{PSL}_2(9) \cong A_6$, $\operatorname{PSL}_4(2) \cong A_8$. Beside the examples stand the non-examples: the small non-simple cases, the two exceptional failures of the commutator identity, and the Dieudonné determinant over a non-commutative ring. The list introduces and proves nothing; it is the index of the linear groups of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $\mathbb{F}_q$</td>
+<td>a field, the finite field with $q$ elements</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>a finite-dimensional $F$-space of dimension $n$</td>
+</tr>
+<tr>
+<td>$\operatorname{GL}(V)$, $\operatorname{GL}_n(F)$</td>
+<td>the general linear group of a space, of matrices</td>
+</tr>
+<tr>
+<td>$\operatorname{SL}(V) = \ker\det$, $\operatorname{SL}_n(F)$</td>
+<td>the special linear group</td>
+</tr>
+<tr>
+<td>$\det : \operatorname{GL}(V) \to F^\times$</td>
+<td>the determinant homomorphism</td>
+</tr>
+<tr>
+<td>$\mu_n$</td>
+<td>the $n$-th roots of unity in $F^\times$, the centre of $\operatorname{SL}_n(F)$</td>
+</tr>
+<tr>
+<td>$\operatorname{PGL}(V) = \operatorname{GL}(V)/F^\times$</td>
+<td>the projective general linear group</td>
+</tr>
+<tr>
+<td>$\operatorname{PSL}(V) = \operatorname{SL}(V)/\mu_n$</td>
+<td>the projective special linear group</td>
+</tr>
+<tr>
+<td>$\mathbb{P}(V)$, $\operatorname{Gr}_k(V)$</td>
+<td>the projective space of lines, the Grassmannian of $k$-subspaces</td>
+</tr>
+<tr>
+<td>$E_{ij}(\lambda) = I + \lambda e_{ij}$</td>
+<td>an elementary matrix, a transvection</td>
+</tr>
+<tr>
+<td>$[G,G]$</td>
+<td>the commutator subgroup</td>
+</tr>
+<tr>
+<td>$n$, $q$</td>
+<td>the dimension, the size of the finite field</td>
+</tr>
+<tr>
+<td>$\gcd(n,q-1)$</td>
+<td>the order of the centre of $\operatorname{SL}_n(q)$</td>
+</tr>
+<tr>
+<td>$\mathrm{PSL}$, $\mathrm{PSp}$, $\mathrm{PSU}$, $\mathrm{P}\Omega$</td>
+<td>the classical projective families of the finite groups of Lie type</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em>, 4th ed. (Springer, 1995), for the general and special linear groups, the determinant sequence and the projective quotients.</li>
+<li>Larry C. Grove, <em>Classical Groups and Geometric Algebra</em> (American Mathematical Society, 2002), for the linear and projective linear groups and their finite versions.</li>
+<li>Jean E. Humphreys, <em>Linear Algebraic Groups</em> (Springer, 1975), for the linear groups over a general field and the projective quotients.</li>
+<li>John D. Dixon and Brian Mortimer, <em>Permutation Groups</em> (Springer, 1996), for the simplicity of $\operatorname{PSL}_n(q)$ and the exceptional isomorphisms with the alternating groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

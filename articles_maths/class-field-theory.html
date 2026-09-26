@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Field Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="class-field-theory"><strong>Class Field Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Class field theory describes the abelian extensions of a number field or of a local field in terms of the arithmetic of the base field itself. The description is a reciprocity law: to each prime ideal of the base, unramified in the abelian extension, there is attached a canonical element of the Galois group, the Frobenius or Artin symbol, and the resulting map from ideals to the Galois group is surjective, with a kernel that can be described by congruences and norms. The main theorem is that this map is an isomorphism from a quotient of a <strong>ray class group</strong> — a group of ideals defined by congruence conditions — onto $\operatorname{Gal}(L/K)$; and its converse, the <strong>existence theorem</strong>, asserts that every subgroup of a ray class group defined by congruences arises from an abelian extension. Taken together, the two statements say that the abelian extensions of $K$ are parameterised by congruence subgroups of $K$, and that the parameterisation is given by the Frobenius.</p>
+<p>The oldest and most familiar instance is the quadratic reciprocity law, which is the reciprocity law for the exponent-$2$ abelian extensions of $\mathbb{Q}$; the cyclotomic fields supply the exponent-$n$ instances over $\mathbb{Q}$, and the theorem of Kronecker and Weber that every abelian extension of $\mathbb{Q}$ lies in a cyclotomic field is the statement that the congruence subgroups of $\mathbb{Q}$ exhaust the abelian extensions. In the same way the class group of $K$ governs the maximal unramified abelian extension of $K$, the Hilbert class field, whose degree over $K$ is the class number: this is the reciprocity law in its simplest form, without congruence conditions on the ideals.</p>
+<p>This article develops the Artin symbol and its properties, the moduli and ray class groups, the reciprocity law and the existence theorem in their ideal-theoretic form, the Hilbert class field and the principal ideal theorem, and the consequences for quadratic reciprocity, Kronecker–Weber and the theorem of Chebotarev. The formulation by ideles and the local reciprocity law are not given here: the ideles are built from the completions of $K$, and completions, valuations and local fields are the subject and of Part II. The reciprocity law in its cohomological form, by way of the fundamental class of an abelian extension in $H^2$, is stated in <em>Galois Cohomology</em> and used here. Throughout, $K$ is a number field, $\mathcal{O}_K$ its ring of integers — a Dedekind domain by <em>Dedekind Domains and Ideal Class Groups</em> — $L/K$ a finite abelian extension, $\mathfrak{p}$ and $\mathfrak{m}$ nonzero prime and general ideals of $\mathcal{O}_K$, and $I_K$ the group of nonzero fractional ideals of $K$. The splitting of primes, with residue degrees and ramification indices, the ideal class group $\operatorname{Cl}(\mathcal{O}_K)$ and its finiteness, and the norm of an ideal are from <em>Dedekind Domains and Ideal Class Groups</em>; Frobenius elements and the Galois correspondence are from <em>Galois Theory</em>; the Frobenius automorphism of a finite field is from <em>Finite Fields</em>; a real place is an embedding $K \hookrightarrow \mathbb{R}$ up to conjugation and a complex place a pair of conjugate embeddings, so that the archimedean places are introduced here directly as embeddings and no ordered-field theory is presupposed; the ordered-field theory of $\mathbb{R}$ itself is.</p>
+<hr />
+<h2 id="the-artin-symbol">The Artin Symbol</h2>
+<h3 id="frobenius-elements">Frobenius Elements</h3>
+<p><strong>Definition.</strong> Let $L/K$ be a finite Galois extension of number fields, $\mathfrak{P}$ a nonzero prime of $\mathcal{O}_L$ above the nonzero prime $\mathfrak{p}$ of $\mathcal{O}_K$, and $\kappa(\mathfrak{P}) = \mathcal{O}_L/\mathfrak{P}$, $\kappa(\mathfrak{p}) = \mathcal{O}_K/\mathfrak{p}$ the residue fields, with $\kappa(\mathfrak{P})/\kappa(\mathfrak{p})$ of degree $f = f(\mathfrak{P}/\mathfrak{p})$. The <strong>decomposition group</strong> and <strong>inertia group</strong> of $\mathfrak{P}$ over $K$ are</p>
+<p>$$
+D_{\mathfrak{P}} = \{\sigma \in \operatorname{Gal}(L/K) : \sigma(\mathfrak{P}) = \mathfrak{P}\}, \qquad
+I_{\mathfrak{P}} = \{\sigma \in D_{\mathfrak{P}} : \sigma(x) \equiv x \bmod \mathfrak{P} \text{ for all } x \in \mathcal{O}_L\}.
+$$</p>
+<p><strong>Proposition.</strong> Let $G = \operatorname{Gal}(L/K)$ with $[L:K] = n$ and let $\mathfrak{P} \mid \mathfrak{p}$ with ramification index $e$ and residue degree $f$, so that $n = efg$ with $g$ the number of primes of $\mathcal{O}_L$ above $\mathfrak{p}$.</p>
+<p><strong>(a)</strong> $I_{\mathfrak{P}} \trianglelefteq D_{\mathfrak{P}} \leq G$, and $\lvert D_{\mathfrak{P}}\rvert = ef$, $\lvert I_{\mathfrak{P}}\rvert = e$, and $\lvert G : D_{\mathfrak{P}}\rvert = g$.</p>
+<p><strong>(b)</strong> The reduction map $D_{\mathfrak{P}} \to \operatorname{Gal}(\kappa(\mathfrak{P})/\kappa(\mathfrak{p}))$, $\sigma \mapsto \bar\sigma$, is a surjective homomorphism with kernel $I_{\mathfrak{P}}$.</p>
+<p><strong>(c)</strong> The group $\operatorname{Gal}(\kappa(\mathfrak{P})/\kappa(\mathfrak{p}))$ is cyclic, generated by the Frobenius automorphism $x \mapsto x^{q}$ with $q = \lvert\kappa(\mathfrak{p})\rvert = \operatorname{N}\mathfrak{p}$.</p>
+<p><strong>Proof.</strong> (a) and (b) are the standard orbit–stabiliser computation: $G$ acts transitively on the primes above $\mathfrak{p}$, so the stabiliser $D_{\mathfrak{P}}$ has index $g$; the residue extension has degree $f$ and the kernel of the reduction map is by definition $I_{\mathfrak{P}}$, whose order is the ramification index $e$ — this is the theorem that $e$ equals the order of the inertia group, proved with the factorisation of $\mathfrak{p}\mathcal{O}_L$ in <em>Dedekind Domains and Ideal Class Groups</em>. (c) The Galois group of an extension of finite fields is cyclic, generated by the Frobenius, as in <em>Finite Fields</em>. $\square$</p>
+<p><strong>Definition.</strong> With the notation above and $\mathfrak{p}$ <strong>unramified</strong>, so that $e = 1$ and $I_{\mathfrak{P}} = 1$, there is a unique element $\operatorname{Frob}_{\mathfrak{P}} \in D_{\mathfrak{P}}$, the <strong>Frobenius element</strong> of $\mathfrak{P}$, characterised by</p>
+<p>$$
+\operatorname{Frob}_{\mathfrak{P}}(x) \equiv x^{\operatorname{N}\mathfrak{p}} \pmod{\mathfrak{P}} \quad \text{for all } x \in \mathcal{O}_L .
+$$</p>
+<p><strong>Proposition.</strong> If $\mathfrak{P}' = \sigma(\mathfrak{P})$ is another prime above $\mathfrak{p}$ then $\operatorname{Frob}_{\mathfrak{P}'} = \sigma \operatorname{Frob}_{\mathfrak{P}} \sigma^{-1}$. If $L/K$ is <strong>abelian</strong>, the Frobenius element depends only on $\mathfrak{p}$ and not on the choice of $\mathfrak{P}$ above it; it is then written</p>
+<p>$$
+\left(\frac{L/K}{\mathfrak{p}}\right) \in \operatorname{Gal}(L/K)
+$$</p>
+<p>and called the <strong>Artin symbol</strong> of $\mathfrak{p}$ in $L/K$.</p>
+<p><strong>Proof.</strong> For the first statement, $\sigma \operatorname{Frob}_{\mathfrak{P}}\sigma^{-1}$ lies in $D_{\sigma\mathfrak{P}}$ and satisfies the defining congruence at $\sigma\mathfrak{P}$; uniqueness gives the claim. For the second, all primes above $\mathfrak{p}$ are conjugate under $G$ by transitivity of the action, and conjugates of an element of an abelian group are equal. $\square$</p>
+<p><strong>Theorem (properties of the Artin symbol).</strong> Let $L/K$ be abelian and let $\mathfrak{p}$ be a nonzero prime of $\mathcal{O}_K$ unramified in $L$.</p>
+<p><strong>(a)</strong> $\left(\frac{L/K}{\mathfrak{p}}\right) = 1$ if and only if $\mathfrak{p}$ splits completely in $L$, that is, $\mathfrak{p}\mathcal{O}_L = \mathfrak{P}_1 \cdots \mathfrak{P}_n$ with $n = [L:K]$ and each $\mathfrak{P}_i$ of residue degree $1$.</p>
+<p><strong>(b)</strong> The order of $\left(\frac{L/K}{\mathfrak{p}}\right)$ is the residue degree $f(\mathfrak{P}/\mathfrak{p})$, and the fixed field of the subgroup it generates is the decomposition field of $\mathfrak{p}$.</p>
+<p><strong>(c)</strong> If $K \subseteq M \subseteq L$ with $M/K$ abelian, then $\left(\frac{L/K}{\mathfrak{p}}\right)\big|_M = \left(\frac{M/K}{\mathfrak{p}}\right)$ under the restriction $\operatorname{Gal}(L/K) \to \operatorname{Gal}(M/K)$.</p>
+<p><strong>(d)</strong> If $\mathfrak{p}$ is unramified in $L$, the symbol depends only on the class of $\mathfrak{p}$ in $I_K^{\mathfrak{m}}$ for any modulus $\mathfrak{m}$ divisible by the ramified primes, in the sense made precise by the reciprocity law below.</p>
+<p><strong>Proof.</strong> (a) $\mathfrak{p}$ splits completely exactly when $e = f = 1$ and $g = n$, which by the proposition above is exactly the vanishing of the Frobenius. (b) The order of $\operatorname{Frob}_{\mathfrak{P}}$ equals the degree of the residue extension, namely $f$, and the fixed field is the decomposition field of $\mathfrak{P}$. (c) The restriction of a Frobenius at $\mathfrak{p}$ in $L$ to the subfield $M$ satisfies the defining congruence for the residue extension $\kappa(\mathfrak{P}) \cap M / \kappa(\mathfrak{p})$, which is the residue extension of $\mathfrak{p}$ in $M$. (d) This is the statement that the Frobenius of a prime depends on the prime only through arithmetic data, and it is proved together with the reciprocity law. $\square$</p>
+<hr />
+<h2 id="moduli-and-ray-class-groups">Moduli and Ray Class Groups</h2>
+<h3 id="congruence-conditions">Congruence Conditions</h3>
+<p><strong>Definition.</strong> A <strong>modulus</strong> of $K$ is a formal product</p>
+<p>$$
+\mathfrak{m} = \mathfrak{m}_0 \, \mathfrak{m}_\infty
+$$</p>
+<p>in which $\mathfrak{m}_0 = \prod_{\mathfrak{p}} \mathfrak{p}^{n_\mathfrak{p}}$ is a nonzero ideal of $\mathcal{O}_K$ with $n_\mathfrak{p} \geq 0$, almost all zero, and $\mathfrak{m}_\infty$ is a set of <strong>real places</strong> of $K$, that is, of orderings of $K$ — equivalently, of embeddings $K \hookrightarrow \mathbb{R}$ — each occurring to exponent $1$.</p>
+<p><strong>Definition.</strong> Let $\mathfrak{m}$ be a modulus. Write $I_K^{\mathfrak{m}}$ for the subgroup of $I_K$ generated by the nonzero prime ideals $\mathfrak{p}$ with $\mathfrak{p} \nmid \mathfrak{m}_0$. An element $\alpha \in K^\times$ is <strong>congruent to $1$ modulo $\mathfrak{m}$</strong>, written $\alpha \equiv 1 \bmod \mathfrak{m}$, if</p>
+<p>$$
+v_\mathfrak{p}(\alpha - 1) \geq n_\mathfrak{p} \ \text{ for every } \mathfrak{p} \mid \mathfrak{m}_0,
+\qquad \alpha \text{ is positive at every real place in } \mathfrak{m}_\infty ,
+$$</p>
+<p>where positive at a real place means positive with respect to the corresponding ordering. The subgroup of <strong>principal ideals congruent to $1$ modulo $\mathfrak{m}$</strong> is</p>
+<p>$$
+P_\mathfrak{m} = \{(\alpha) : \alpha \in K^\times,\ \alpha \equiv 1 \bmod \mathfrak{m}\} \subseteq I_K^{\mathfrak{m}} .
+$$</p>
+<p><strong>Definition.</strong> The <strong>ray class group</strong> of $\mathfrak{m}$ is the quotient</p>
+<p>$$
+\operatorname{Cl}_\mathfrak{m}(K) = I_K^{\mathfrak{m}} / P_\mathfrak{m} ,
+$$</p>
+<p>and a <strong>congruence subgroup</strong> for $\mathfrak{m}$ is a subgroup $H$ with $P_\mathfrak{m} \subseteq H \subseteq I_K^{\mathfrak{m}}$ of finite index. Two moduli are compared by divisibility: $\mathfrak{m}' \mid \mathfrak{m}$ when $\mathfrak{m}_0' \mid \mathfrak{m}_0$ and $\mathfrak{m}'_\infty \subseteq \mathfrak{m}_\infty$, and then $I_K^{\mathfrak{m}} \subseteq I_K^{\mathfrak{m}'}$, $P_\mathfrak{m} \subseteq P_{\mathfrak{m}'}$, and the inclusion induces $I_K^{\mathfrak{m}} \to I_K^{\mathfrak{m}'}$.</p>
+<p><strong>Proposition.</strong> Let $\mathfrak{m}$ be a modulus.</p>
+<p><strong>(a)</strong> $\operatorname{Cl}_{\mathfrak m}(K)$ is finite, and $\operatorname{Cl}_{\mathfrak m}(K)$ is a quotient of the ordinary class group $\operatorname{Cl}(\mathcal{O}_K)$ when $\mathfrak{m}_\infty$ is empty and $\mathfrak{m}_0 = (1)$.</p>
+<p><strong>(b)</strong> For $K = \mathbb{Q}$ and the finite modulus $\mathfrak{m} = (m)$ with $m \geq 1$, the map sending the class of a prime $\ell \nmid m$ to $\ell \bmod m$ induces</p>
+<p>$$
+\operatorname{Cl}_{(m)}(\mathbb{Q}) \cong (\mathbb{Z}/m\mathbb{Z})^\times \big/ \overline{\{\pm 1\}} ,
+$$</p>
+<p>where $\overline{\{\pm1\}}$ is the image of $\{\pm 1\}$ in $(\mathbb{Z}/m\mathbb{Z})^\times$; the order is $\varphi(m)/2$ for $m \geq 3$.</p>
+<p><strong>(c)</strong> With the real place included, $\operatorname{Cl}_{(m)\infty}(\mathbb{Q}) \cong (\mathbb{Z}/m\mathbb{Z})^\times$, of order $\varphi(m)$; the inclusion $P_{(m)\infty} \subseteq P_{(m)}$ of congruence subgroups induces the quotient map of the two computations.</p>
+<p><strong>Proof sketch.</strong> (a) The ray class group lies in an exact sequence $1 \to P_{\mathfrak{m}_0}/P_\mathfrak{m} \to \operatorname{Cl}_{\mathfrak m}(K) \to \operatorname{Cl}(\mathcal{O}_K) \to 1$ with a finite kernel, since $(\mathcal{O}_K/\mathfrak{m}_0)^\times$ is finite; finiteness of $\operatorname{Cl}(\mathcal{O}_K)$ is Dedekind's theorem from <em>Dedekind Domains and Ideal Class Groups</em>. (b) Every fractional ideal of $\mathbb{Q}$ is generated by a rational number, so $I_{(m)}/P_{(m)} \cong \mathbb{Q}^\times/\{\alpha : \alpha \equiv 1 \bmod m\}$ up to the finite congruence conditions, and the residue map $I_{(m)} \to (\mathbb{Z}/m\mathbb{Z})^\times$ has image $(\mathbb{Z}/m\mathbb{Z})^\times$; an ideal $(n)$ with $n$ coprime to $m$ lies in the kernel of the residue map exactly when $n \equiv 1 \bmod m$, while it lies in $P_{(m)}$ when $n \equiv 1$ or $n \equiv -1 \bmod m$, since $(n) = (-n)$; hence the kernel of the residue map modulo $P_{(m)}$ is generated by the class of $-1$ and $\operatorname{Cl}_{(m)}(\mathbb{Q}) \cong (\mathbb{Z}/m\mathbb{Z})^\times/\overline{\{\pm1\}}$. (c) With the real place in the modulus, a generator must be positive as well as congruent to $1$, so the ideals $(n)$ with $n \equiv -1 \bmod m$ no longer contribute, the class of $-1$ is no longer in the kernel, and the same computation gives $\operatorname{Cl}_{(m)\infty}(\mathbb{Q}) \cong (\mathbb{Z}/m\mathbb{Z})^\times$. $\square$</p>
+<p><strong>Example.</strong> For $K = \mathbb{Q}$ and $m = 5$: $\operatorname{Cl}_{(5)}(\mathbb{Q}) \cong (\mathbb{Z}/5\mathbb{Z})^\times/\{\pm1\} \cong \mathbb{Z}/2\mathbb{Z}$, whereas $\operatorname{Cl}_{(5)\infty}(\mathbb{Q}) \cong (\mathbb{Z}/5\mathbb{Z})^\times \cong \mathbb{Z}/4\mathbb{Z}$. The first is the Galois group of the maximal abelian extension of $\mathbb{Q}$ unramified at the real place and of finite conductor dividing $(5)$, namely $\mathbb{Q}(\sqrt5)$; the second is the Galois group of $\mathbb{Q}(\zeta_5)$. The two differ by the class of $-1$: the ideal $(4) = (2)^2$ lies in $P_{(5)}$ because $-4 \equiv 1 \bmod 5$, but not in $P_{(5)\infty}$ because $-4$ is negative, so $2[(2)] = 0$ in $\operatorname{Cl}_{(5)}(\mathbb{Q})$ while $[(2)]$ has order $4$ in $\operatorname{Cl}_{(5)\infty}(\mathbb{Q})$.</p>
+<p><strong>Example.</strong> For $K = \mathbb{Q}(i)$ and $\mathfrak{m} = (1)$, that is, for the trivial modulus, the ray class group is the ordinary class group, $\operatorname{Cl}_{(1)}(K) = \operatorname{Cl}(\mathcal{O}_K) = 0$, since $\mathbb{Z}[i]$ is a principal ideal domain.</p>
+<hr />
+<h2 id="the-reciprocity-law">The Reciprocity Law</h2>
+<h3 id="statement">Statement</h3>
+<p><strong>Definition.</strong> Let $L/K$ be a finite abelian extension. A modulus $\mathfrak{m}$ is <strong>admissible</strong> for $L/K$ if $\mathfrak{m}_0$ is divisible by every prime of $K$ that ramifies in $L$, and $\mathfrak{m}_\infty$ contains every real place of $K$ that ramifies in $L$, that is, every real place having an extension to $L$ that is complex. For an admissible $\mathfrak{m}$, the <strong>Artin map</strong> is the homomorphism</p>
+<p>$$
+\left(\frac{L/K}{\cdot}\right) : I_K^{\mathfrak{m}} \longrightarrow \operatorname{Gal}(L/K), \qquad
+\mathfrak{a} = \prod \mathfrak{p}^{v_\mathfrak{p}} \longmapsto \prod \left(\frac{L/K}{\mathfrak{p}}\right)^{v_\mathfrak{p}},
+$$</p>
+<p>defined on ideals coprime to $\mathfrak{m}_0$ and extended multiplicatively.</p>
+<p><strong>Theorem (Artin reciprocity law).</strong> Let $L/K$ be a finite abelian extension and let $\mathfrak{m}$ be admissible for $L/K$. Then the Artin map is surjective, its kernel is</p>
+<p>$$
+\ker\left(\frac{L/K}{\cdot}\right) = P_\mathfrak{m} \cdot \operatorname{N}_{L/K}\bigl(I_L^{\mathfrak{m}}\bigr),
+$$</p>
+<p>where $\operatorname{N}_{L/K}$ is the ideal norm map and $I_L^{\mathfrak{m}}$ is the group of fractional ideals of $L$ coprime to $\mathfrak{m}\mathcal{O}_L$, and therefore</p>
+<p>$$
+\operatorname{Gal}(L/K) \;\cong\; I_K^{\mathfrak{m}} \big/ \bigl(P_\mathfrak{m} \operatorname{N}_{L/K}(I_L^{\mathfrak{m}})\bigr), \qquad
+\left[ I_K^{\mathfrak{m}} : P_\mathfrak{m} \operatorname{N}_{L/K}(I_L^{\mathfrak{m}}) \right] = [L:K] .
+$$</p>
+<p>The reciprocity law is due to Artin, after the existence theorem of Takagi; both rest on the earlier work of Hilbert and Weber. The proof is not reproduced here.</p>
+<p><strong>Corollary (the norm group is a congruence subgroup).</strong> With notation as above, $\operatorname{N}_{L/K}(I_L^{\mathfrak{m}})$ is a congruence subgroup for $\mathfrak{m}$, and it is the smallest one whose associated field is $L$; a prime $\mathfrak{p} \nmid \mathfrak{m}_0$ splits completely in $L$ exactly when $\mathfrak{p} \in P_\mathfrak{m}\operatorname{N}_{L/K}(I_L^{\mathfrak{m}})$.</p>
+<p><strong>Corollary (norm index).</strong> For a finite abelian extension $L/K$ and an admissible $\mathfrak m$, the index of the norm group in $I_K^{\mathfrak{m}}$ modulo $P_\mathfrak m$ is $[L:K]$; equivalently, the quotient $I_K^{\mathfrak{m}}/P_\mathfrak{m}\operatorname{N}(I_L^\mathfrak{m})$ is the Galois group.</p>
+<h3 id="first-consequences">First Consequences</h3>
+<p><strong>Corollary (the Artin map determines the field).</strong> Let $L_1, L_2$ be finite abelian extensions of $K$ and let $\mathfrak m$ be admissible for both. Then $L_1 \subseteq L_2$ if and only if</p>
+<p>$$
+P_\mathfrak{m} \operatorname{N}_{L_2/K}(I_{L_2}^{\mathfrak m}) \subseteq P_\mathfrak{m}\operatorname{N}_{L_1/K}(I_{L_1}^{\mathfrak m}).
+$$</p>
+<p><strong>Corollary (compatibility with restriction and norm).</strong> If $K \subseteq M \subseteq L$ with $L/K$ abelian and $\mathfrak m$ admissible for $L/K$, then $L/M$ is abelian and the Artin maps are compatible with restriction and with the norm: for $\mathfrak a \in I_K^{\mathfrak m}$ and for an ideal $\mathfrak b$ of $M$ coprime to $\mathfrak m$,</p>
+<p>$$
+\left(\frac{L/K}{\mathfrak a}\right)\Big|_M = \left(\frac{M/K}{\mathfrak a}\right), \qquad
+\left(\frac{L/K}{\operatorname{N}_{M/K}\mathfrak b}\right) = \left(\frac{L/M}{\mathfrak b}\right),
+$$</p>
+<p>the second because the Frobenius of a prime above $\operatorname{N}_{M/K}\mathfrak b$ restricts to the Frobenius of a prime above $\mathfrak b$.</p>
+<p><strong>Example (quadratic reciprocity).</strong> Let $K = \mathbb{Q}$ and $L = \mathbb{Q}(\sqrt{d})$ with $d$ a squarefree integer. The quadratic character $p \mapsto \left(\frac{d}{p}\right)$ is the Artin symbol $\left(\frac{L/\mathbb{Q}}{(p)}\right) \in \operatorname{Gal}(L/\mathbb{Q}) = \{\pm1\}$ for every odd prime $p \nmid d$. The reciprocity law for this extension says that this symbol depends on $p$ only through its class modulo the discriminant, which is exactly the law of quadratic reciprocity together with its two supplements. For example with $L = \mathbb{Q}(i)$, the admissible modulus is $(2)\infty$ and the Artin map gives $\left(\frac{\mathbb{Q}(i)/\mathbb{Q}}{(p)}\right) = (-1)^{(p-1)/2}$; with $L = \mathbb{Q}(\sqrt{-23})$, since $-23 \equiv 1 \pmod 4$, the Artin symbol is $\left(\frac{p}{23}\right)$ and the reciprocity law is the statement that the Frobenius at $p$ is determined by $p \bmod 23$.</p>
+<p><strong>Example (cyclotomic fields).</strong> Let $K = \mathbb{Q}$ and $L = \mathbb{Q}(\zeta_m)$ for $m \geq 1$. The primes that ramify are exactly the divisors of $m$, and since $\mathbb{Q}(\zeta_m)$ is totally imaginary for $m \geq 3$ the real place ramifies as well; so the modulus $(m)\infty$ is admissible for $m \geq 3$, while $(m)$ is admissible exactly when $L$ is real, that is, when $L = \mathbb{Q}(\zeta_m)^+$. Both moduli contain the ramified primes. Since $\operatorname{Gal}(\mathbb{Q}(\zeta_m)/\mathbb{Q}) \cong (\mathbb{Z}/m\mathbb{Z})^\times$ by <em>Cyclotomic Fields</em>, Artin reciprocity identifies the Artin map with the reduction map</p>
+<p>$$
+I_{\mathbb{Q}}^{(m)} \longrightarrow (\mathbb{Z}/m\mathbb{Z})^\times, \qquad (p) \longmapsto p \bmod m ,
+$$</p>
+<p>whose kernel is $P_{(m)}$; comparing with the computation of $\operatorname{Cl}_{(m)}(\mathbb{Q})$ above, the identification is an isomorphism $\operatorname{Cl}_{(m)}(\mathbb{Q}) \cong \operatorname{Gal}(\mathbb{Q}(\zeta_m)/\mathbb{Q})$. The Galois element corresponding to the prime $p$ is $\sigma_p(\zeta_m) = \zeta_m^{p}$, which is precisely the Frobenius congruence $\sigma_p(x) \equiv x^{p} \bmod \mathfrak P$ for a prime $\mathfrak P$ of $\mathbb{Q}(\zeta_m)$ above $p$.</p>
+<hr />
+<h2 id="the-existence-theorem">The Existence Theorem</h2>
+<h3 id="ray-class-fields">Ray Class Fields</h3>
+<p><strong>Theorem (Takagi's existence theorem).</strong> Let $\mathfrak m$ be a modulus of $K$.</p>
+<p><strong>(a)</strong> The map $H \mapsto I_K^{\mathfrak m}/H$ is a bijection between the congruence subgroups $H$ of $\mathfrak m$ — the subgroups $P_\mathfrak m \subseteq H \subseteq I_K^{\mathfrak m}$ of finite index — and the set of finite abelian extensions $L/K$ for which $\mathfrak m$ is admissible, where the extension attached to $H$ is characterised by</p>
+<p>$$
+H = P_\mathfrak m \operatorname{N}_{L/K}\bigl(I_L^{\mathfrak m}\bigr), \qquad \operatorname{Gal}(L/K) \cong I_K^{\mathfrak m}/H .
+$$</p>
+<p><strong>(b)</strong> For each $\mathfrak m$ there is a largest such extension, the <strong>ray class field</strong> $K_{\mathfrak m}$, characterised by $H = P_\mathfrak m$, so that</p>
+<p>$$
+\operatorname{Gal}(K_{\mathfrak m}/K) \cong \operatorname{Cl}_{\mathfrak m}(K) = I_K^{\mathfrak m}/P_\mathfrak m .
+$$</p>
+<p><strong>(c)</strong> Every abelian extension of $K$ is contained in the ray class field of some modulus; equivalently, the union of the fields $K_{\mathfrak m}$ over all moduli $\mathfrak m$ is the maximal abelian extension $K^{\mathrm{ab}}$ of $K$.</p>
+<p><strong>(d)</strong> The correspondence reverses inclusion: $H_1 \supseteq H_2$ if and only if the field attached to $H_1$ is contained in the field attached to $H_2$, and $\left[I_K^{\mathfrak m} : H\right] = [L:K]$ for the field $L$ attached to $H$.</p>
+<p><strong>Proof sketch.</strong> The proof is Takagi's, by induction on the degree, and it is not reproduced here; it establishes (a) for finite abelian extensions by reducing to the cyclic case, where the group is generated by the Frobenius of a prime in each class and the index of the norm group is computed from the factorisation of $\mathfrak m$ in $L$, and it deduces (b), (c) and (d) formally from (a) together with the reciprocity law. The key analytic input of the classical proof is the theorem of Chebotarev below, in the weak form that every class of $I_K^{\mathfrak m}/P_\mathfrak m$ contains primes; the full density statement requires the analytic machinery of a later Part. $\square$</p>
+<p><strong>Definition.</strong> For an abelian extension $L/K$, the <strong>conductor</strong> $\mathfrak{f}(L/K)$ is the greatest common divisor of the admissible moduli for $L/K$, computed in the sense that a prime appears in $\mathfrak{f}(L/K)_0$ to the smallest exponent occurring among the admissible moduli and a real place is in $\mathfrak{f}(L/K)_\infty$ exactly when it is in every admissible modulus; the conductor is the modulus of smallest divisibility for which the reciprocity holds, and the ray class field of the conductor contains $L$.</p>
+<p><strong>Definition.</strong> The <strong>conductor of a character</strong> $\chi : \operatorname{Gal}(L/K) \to \overline{\mathbb{Q}}^\times$ is the smallest modulus $\mathfrak f(\chi)$ such that $\chi$ factors through the Artin map of that modulus. The <strong>conductor–discriminant formula</strong> states that</p>
+<p>$$
+\mathfrak d_{L/K} = \prod_{\chi} \mathfrak f(\chi),
+$$</p>
+<p>the product over the irreducible characters of the abelian group $\operatorname{Gal}(L/K)$; it is the arithmetic form of the factorisation of the discriminant of $L/K$.</p>
+<p><strong>Example.</strong> For $K = \mathbb{Q}$ and $L = \mathbb{Q}(\zeta_m)$, the conductor is $(m)\infty$ for $m \geq 3$, that is, $\mathfrak f(\mathbb{Q}(\zeta_m)/\mathbb{Q}) = (m)\infty$; for the maximal real subfield $L = \mathbb{Q}(\zeta_m)^+ = \mathbb{Q}(\zeta_m + \zeta_m^{-1})$, the conductor is the finite modulus $(m)$, since a totally real extension does not ramify at the real place. The ray class field of $\mathbb{Q}$ with modulus $(m)\infty$ is therefore $\mathbb{Q}(\zeta_m)$, and the ray class field with modulus $(m)$ is $\mathbb{Q}(\zeta_m)^+$; consistently with the ray class group computations above, the Galois group of the first is $(\mathbb{Z}/m\mathbb{Z})^\times$ and that of the second is $(\mathbb{Z}/m\mathbb{Z})^\times/\overline{\{\pm1\}}$.</p>
+<p><strong>Theorem (Kronecker–Weber).</strong> Every finite abelian extension of $\mathbb{Q}$ is contained in a cyclotomic field $\mathbb{Q}(\zeta_m)$; equivalently, the maximal abelian extension of $\mathbb{Q}$ is the field generated by all roots of unity.</p>
+<p><strong>Proof.</strong> By the existence theorem every abelian extension of $\mathbb{Q}$ is contained in a ray class field $\mathbb{Q}_{\mathfrak m}$. Every modulus of $\mathbb{Q}$ is $\mathfrak m = (m)$ or $(m)\infty$ for some $m$, and both ray class fields are computed above to be $\mathbb{Q}(\zeta_m)$ or its maximal real subfield, each of which is a subfield of $\mathbb{Q}(\zeta_m)$. $\square$</p>
+<hr />
+<h2 id="the-hilbert-class-field">The Hilbert Class Field</h2>
+<h3 id="definition-and-the-principal-ideal-theorem">Definition and the Principal Ideal Theorem</h3>
+<p><strong>Definition.</strong> The ray class field of $K$ with modulus $\mathfrak m = (1)$ is the <strong>Hilbert class field</strong> $H_K$ of $K$. By the existence theorem, $\operatorname{Gal}(H_K/K) \cong \operatorname{Cl}(\mathcal{O}_K)$, so $[H_K : K] = h_K$ is the class number of $K$.</p>
+<p><strong>Theorem (properties of the Hilbert class field).</strong> Let $H = H_K$.</p>
+<p><strong>(a)</strong> $H/K$ is abelian with $\operatorname{Gal}(H/K) \cong \operatorname{Cl}(\mathcal{O}_K)$, and the Artin map sends the class $[\mathfrak p]$ of a prime to the Frobenius of $\mathfrak p$ in $H$.</p>
+<p><strong>(b)</strong> A prime ideal $\mathfrak p$ of $K$ splits completely in $H$ if and only if $\mathfrak p$ is principal.</p>
+<p><strong>(c)</strong> $H/K$ is unramified at every finite prime; that is, $\mathfrak d_{H/K} = (1)$.</p>
+<p><strong>(d)</strong> $H$ is the maximal abelian extension of $K$ that is unramified at every finite prime.</p>
+<p><strong>Proof.</strong> (a) is the case $\mathfrak m = (1)$ of the existence theorem, since then $I_K^{(1)} = I_K$, $P_{(1)} = \{$principal ideals$\}$, and $\operatorname{Cl}_{(1)}(K) = \operatorname{Cl}(\mathcal{O}_K)$. (b) By property (a) of the Artin symbol, $\mathfrak p$ splits completely if and only if its Frobenius is trivial, that is, if and only if $[\mathfrak p] = 1$ in the class group. (c) By construction the only ramified primes of a ray class field of modulus $(1)$ are those dividing $(1)$, of which there are none. (d) If $M/K$ is abelian and unramified at every finite prime then $(1)$ is admissible for $M/K$, so $M$ is a subfield of the ray class field $K_{(1)} = H$ by the existence theorem. $\square$</p>
+<p><strong>Theorem (principal ideal theorem, Furtwängler).</strong> Every nonzero ideal of $\mathcal{O}_K$ becomes principal in $\mathcal{O}_{H_K}$; that is, the natural map $\operatorname{Cl}(\mathcal{O}_K) \to \operatorname{Cl}(\mathcal{O}_{H_K})$ is the zero map, and equivalently $H_K$ is contained in the Hilbert class field of itself.</p>
+<p><strong>Remark.</strong> The principal ideal theorem was conjectured by Hilbert as a consequence of his reciprocity programme and proved by Furtwängler; it is the first of the "principal ideal" and "principal genus" theorems of class field theory, and it is a statement about the transfer map in the class group that follows from the reciprocity law, not from the existence theorem alone.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example ($K = \mathbb{Q}(\sqrt{-5})$).</strong> The class number is $2$, by <em>Dedekind Domains and Ideal Class Groups</em>, so $H_K$ is a quadratic extension of $K$ unramified at every finite prime. The field $H = \mathbb{Q}(i, \sqrt5)$ has degree $2$ over $K = \mathbb{Q}(\sqrt{-5})$, since $i \notin K$ and $\sqrt{-5} = i\sqrt5$, so $H = K(i)$. Its discriminant over $\mathbb{Q}$ is the product of the discriminants of its three quadratic subfields,</p>
+<p>$$
+\operatorname{disc}(\mathbb{Q}(i,\sqrt5)) = (-4)\cdot(5)\cdot(-20) = 400 ,
+$$</p>
+<p>the sign being $(-1)^{r_2} = +1$ because $H$ has no real embedding; the relative discriminant is trivial, $\mathfrak d_{H/K} = (1)$, as it must be for an unramified extension. Hence $H_K = \mathbb{Q}(i,\sqrt5)$, confirming $\lvert \operatorname{Cl}(\mathcal{O}_K)\rvert = 2$ a second time.</p>
+<p><strong>Example ($K = \mathbb{Q}(\sqrt{-23})$).</strong> The class number is $3$, and the three classes are the powers of the class of a prime $P_2$ of norm $2$ above $2$: the class $[P_2]$ is not principal: the ring of integers is $\mathbb{Z}[(1+\sqrt{-23})/2]$, whose elements have norm $(x^2+23y^2)/4$ with $x \equiv y \pmod 2$, so an element of norm $2$ would satisfy $x^2 + 23y^2 = 8$, which has no integral solution, while $[P_2]^3 = 1$ because the cube of any ideal class is principal when the class number is $3$; so $\operatorname{Cl}(\mathcal{O}_K) \cong \mathbb{Z}/3\mathbb{Z}$, generated by $[P_2]$. The Hilbert class field $H_K$ is then a cyclic cubic extension of $K$, unramified at all finite primes, and it is the splitting field of</p>
+<p>$$
+x^3 - x - 1,
+$$</p>
+<p>whose discriminant is $-4(-1)^3 - 27(1)^2 = -23$, exhibiting the field as a degree $6$ extension of $\mathbb{Q}$ with group $S_3$ and quadratic subfield $\mathbb{Q}(\sqrt{-23})$. The Hilbert class field is the compositum $H_K = K(\rho)$ with $\rho^3 = \rho + 1$; it is cyclic cubic over $K$ and unramified at the finite primes, and by degree it is the whole of $H_K$.</p>
+<p><strong>Example ($h_K = 1$).</strong> If $K$ has class number $1$ then $H_K = K$: the maximal abelian extension unramified at all finite primes is trivial. Thus $H_{\mathbb{Q}(i)} = \mathbb{Q}(i)$ and $H_{\mathbb{Q}(\zeta_5)} = \mathbb{Q}(\zeta_5)$, both fields having class number $1$.</p>
+<hr />
+<h2 id="further-consequences">Further Consequences</h2>
+<h3 id="chebotarev">Chebotarev</h3>
+<p><strong>Theorem (Chebotarev, weak form).</strong> Let $L/K$ be a finite Galois extension of number fields with group $G$, let $C \subseteq G$ be a conjugacy class, and let $\mathfrak m$ be a modulus divisible by the ramified primes and containing the ramified real places. Then there are infinitely many unramified primes $\mathfrak p$ of $K$ with $\mathfrak p \nmid \mathfrak m$ and</p>
+<p>$$
+\operatorname{Frob}_\mathfrak p \in C ,
+$$</p>
+<p>where the condition is that the Frobenius elements of the primes of $L$ above $\mathfrak p$ form the conjugacy class $C$. For $L/K$ abelian, this is the statement that every class of $I_K^{\mathfrak m}/P_\mathfrak m$ contains infinitely many primes.</p>
+<p><strong>Remark.</strong> The full form of Chebotarev's theorem asserts that the set of such primes has Dirichlet density $1/[L:K]$; the density is an analytic statement about the counting of primes, requiring a limit, and it belongs to the Part where the limit is available, and to the analytic theory. Only the infinitude, which suffices for the proof of the existence theorem, is used here.</p>
+<p><strong>Corollary.</strong> A finite Galois extension $L/K$ is determined by the set of primes of $K$ that split completely in it: if $L_1, L_2$ are finite Galois extensions of $K$ with the same set of completely split primes, then $L_1 = L_2$. Indeed a prime splits completely in a Galois extension exactly when its Frobenius is trivial, and by Chebotarev every conjugacy class of the group occurs as a Frobenius class, so the trivial class is detected by the completely split primes and the group is generated by the Frobenius elements of those primes.</p>
+<h3 id="the-reciprocity-law-and-the-class-group">The Reciprocity Law and the Class Group</h3>
+<p><strong>Corollary.</strong> The Artin map of the Hilbert class field identifies the class group with the Galois group: $\operatorname{Gal}(H_K/K) \cong \operatorname{Cl}(\mathcal{O}_K)$, and under this identification the Frobenius of a prime is its ideal class. Since the class group is finite by Dedekind's theorem, the Hilbert class field is a finite abelian extension of $K$ unramified at every finite prime, of degree $h_K$; the construction is the arithmetic form of the finiteness of the class group, and it is one of the achievements of the reciprocity law that such an extension exists for every $K$ and is canonical.</p>
+<p><strong>Corollary (genus theory for imaginary quadratic fields).</strong> Let $K = \mathbb{Q}(\sqrt{d})$ with $d < 0$ squarefree, and let $D$ be its discriminant, written as a product $D = d_1 \cdots d_t$ of prime discriminants. Then the quotient $\operatorname{Cl}(\mathcal{O}_K)/\operatorname{Cl}(\mathcal{O}_K)^2$ has order $2^{t-1}$; equivalently the subgroup $\operatorname{Cl}(\mathcal{O}_K)[2]$ of classes of order dividing $2$ has order $2^{t-1}$, so the maximal unramified abelian extension of $K$ of exponent $2$ — the <strong>genus field</strong> — has degree $2^{t-1}$ over $K$. For $K = \mathbb{Q}(\sqrt{-5})$ the discriminant is $-20 = (-4)(5)$, so $t = 2$, $\operatorname{Cl}[2]$ has order $2$, the genus field has degree $2$, and it coincides with the Hilbert class field because $h_K = 2$. For $K = \mathbb{Q}(\sqrt{-23})$ the discriminant is the prime discriminant $-23$, so $t = 1$, the genus field is trivial and the class group has odd order, namely $3$ as computed above.</p>
+<h3 id="the-cohomological-form">The Cohomological Form</h3>
+<p><strong>Remark.</strong> The reciprocity law has a cohomological form: for a finite Galois extension $L/K$ there is a canonical <strong>fundamental class</strong></p>
+<p>$$
+\alpha_{L/K} \in H^2(\operatorname{Gal}(L/K), L^\times)
+$$</p>
+<p>whose class depends only on $L/K$, and for $L/K$ abelian the cup product with $\alpha_{L/K}$ induces the isomorphism $H^{-2}(\operatorname{Gal}(L/K),\mathbb{Z}) \to H^0(\operatorname{Gal}(L/K),L^\times) = K^\times/\operatorname{N}(L^\times)$ which is the reciprocity law in the form of an index computation; the group $H^{-2}(G,\mathbb{Z})$ is the Schur multiplier, isomorphic to the abelianisation of $G$, so the cup product with the fundamental class recovers the Artin map. This is the formulation of <em>Galois Cohomology</em>, to which the proof is referred.</p>
+<p><strong>Remark (the ideles and the local theory).</strong> The modern formulation replaces the ray class group by the <strong>idele class group</strong> of $K$, and the reciprocity law by an isomorphism between the maximal abelian quotient of $G_K$ — described as an inverse limit of finite abelian groups — and the idele class group; the local reciprocity law is the analogous statement for a field complete with respect to a discrete valuation. The ideles are built from the completions of $K$ at its places, and the completions, the valuations and the local fields are the subject and of Part II. That formulation is therefore not developed here; the reader is referred forward to it, , where the ideal-theoretic and the idele-theoretic statements are reconciled.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>The Artin symbol is defined for a prime $\mathfrak p$ unramified in an abelian extension $L/K$ as the Frobenius element $\left(\frac{L/K}{\mathfrak p}\right) \in \operatorname{Gal}(L/K)$ characterised by $\sigma(x) \equiv x^{\operatorname{N}\mathfrak p} \bmod \mathfrak P$; it is independent of the prime above $\mathfrak p$, it satisfies $\left(\frac{L/K}{\mathfrak p}\right) = 1$ exactly when $\mathfrak p$ splits completely, its order is the residue degree, and it is compatible with restriction to intermediate fields. A modulus is a formal product of an ideal and a set of real places; the ray class group $\operatorname{Cl}_\mathfrak m(K) = I_K^\mathfrak m/P_\mathfrak m$ is the group of ideals coprime to $\mathfrak m_0$ modulo the principal ideals generated by elements congruent to $1$ at the places of $\mathfrak m$, and for $K = \mathbb{Q}$ it is $(\mathbb{Z}/m\mathbb{Z})^\times$ when the real place is included in the modulus, and $(\mathbb{Z}/m\mathbb{Z})^\times/\overline{\{\pm1\}}$ when only the finite modulus $(m)$ is used.</p>
+<p>Artin reciprocity states that the Artin map $I_K^\mathfrak m \to \operatorname{Gal}(L/K)$ is onto, with kernel $P_\mathfrak m \operatorname{N}_{L/K}(I_L^\mathfrak m)$, so the Galois group of an abelian extension is a quotient of a ray class group and the index of the norm group is the degree. Takagi's existence theorem is the converse: every congruence subgroup $H$ with $P_\mathfrak m \subseteq H \subseteq I_K^\mathfrak m$ of finite index is the norm group of a unique abelian extension with Galois group $I_K^\mathfrak m/H$, and the largest of these is the ray class field $K_\mathfrak m$ with $\operatorname{Gal}(K_\mathfrak m/K) \cong \operatorname{Cl}_\mathfrak m(K)$. Every abelian extension has a conductor, the least modulus through which its reciprocity law factors, and the conductor–discriminant formula computes the relative discriminant as the product of the conductors of the characters.</p>
+<p>The case $\mathfrak m = (1)$ gives the Hilbert class field $H_K$, the maximal abelian extension of $K$ unramified at every finite prime, with $\operatorname{Gal}(H_K/K) \cong \operatorname{Cl}(\mathcal{O}_K)$ and $[H_K:K] = h_K$, and with the property that a prime splits completely in $H_K$ exactly when it is principal; the principal ideal theorem of Furtwängler states that every ideal of $K$ becomes principal in $H_K$. The examples are $\mathbb{Q}(i,\sqrt5)$ for $K = \mathbb{Q}(\sqrt{-5})$, of degree $2$ over $K$, and the splitting field of $x^3-x-1$ for $K = \mathbb{Q}(\sqrt{-23})$, of degree $3$ over $K$. Over $\mathbb{Q}$ the ray class fields are the cyclotomic fields, which is the Kronecker–Weber theorem that every abelian extension of $\mathbb{Q}$ is cyclotomic; quadratic reciprocity is the reciprocity law for the quadratic fields, and Chebotarev's theorem, proved from the reciprocity law, guarantees that every conjugacy class of a Galois group contains infinitely many Frobenius elements, the density refinement being analytic. The cohomological form of the reciprocity law uses a fundamental class in $H^2$, and the idele-theoretic and local forms belong to Part II, where the completions are available.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$, $L$, $M$</td>
+<td>Number fields, with $L/K$ finite abelian in the reciprocity statements</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_K$, $\mathcal{O}_L$</td>
+<td>Rings of integers</td>
+</tr>
+<tr>
+<td>$\mathfrak p$, $\mathfrak P$</td>
+<td>Nonzero prime ideals of $\mathcal{O}_K$, of $\mathcal{O}_L$ with $\mathfrak P \mid \mathfrak p$</td>
+</tr>
+<tr>
+<td>$\mathfrak m = \mathfrak m_0 \mathfrak m_\infty$</td>
+<td>Modulus: nonzero ideal times a set of real places</td>
+</tr>
+<tr>
+<td>$\kappa(\mathfrak p)$, $\kappa(\mathfrak P)$</td>
+<td>Residue fields; $\kappa(\mathfrak P)/\kappa(\mathfrak p)$ of degree $f$</td>
+</tr>
+<tr>
+<td>$e, f, g$</td>
+<td>Ramification index, residue degree, number of primes above</td>
+</tr>
+<tr>
+<td>$D_{\mathfrak P}$, $I_{\mathfrak P}$</td>
+<td>Decomposition group, inertia group</td>
+</tr>
+<tr>
+<td>$\operatorname{Frob}_{\mathfrak P}$</td>
+<td>Frobenius element of $\mathfrak P$</td>
+</tr>
+<tr>
+<td>$\left(\frac{L/K}{\mathfrak p}\right)$</td>
+<td>Artin symbol for $L/K$ abelian</td>
+</tr>
+<tr>
+<td>$I_K$, $I_K^{\mathfrak m}$, $I_L^{\mathfrak m}$</td>
+<td>Fractional ideals; ideals coprime to $\mathfrak m_0$, of $K$ and of $L$</td>
+</tr>
+<tr>
+<td>$P_\mathfrak m$</td>
+<td>Principal ideals $(\alpha)$ with $\alpha \equiv 1 \bmod \mathfrak m$</td>
+</tr>
+<tr>
+<td>$\operatorname{N}_{L/K}$</td>
+<td>Ideal norm from $L$ to $K$</td>
+</tr>
+<tr>
+<td>$\operatorname{Cl}_\mathfrak m(K)$</td>
+<td>Ray class group $I_K^\mathfrak m/P_\mathfrak m$</td>
+</tr>
+<tr>
+<td>$\operatorname{Cl}(\mathcal{O}_K)$, $h_K$</td>
+<td>Ideal class group and class number</td>
+</tr>
+<tr>
+<td>$K_\mathfrak m$</td>
+<td>Ray class field of the modulus $\mathfrak m$</td>
+</tr>
+<tr>
+<td>$H_K$</td>
+<td>Hilbert class field, the ray class field of $(1)$</td>
+</tr>
+<tr>
+<td>$K^{\mathrm{ab}}$</td>
+<td>Maximal abelian extension of $K$</td>
+</tr>
+<tr>
+<td>$\mathfrak f(L/K)$, $\mathfrak f(\chi)$</td>
+<td>Conductor of an extension, of a character</td>
+</tr>
+<tr>
+<td>$\mathfrak d_{L/K}$</td>
+<td>Relative discriminant</td>
+</tr>
+<tr>
+<td>$\alpha_{L/K}$</td>
+<td>Fundamental class in $H^2(\operatorname{Gal}(L/K),L^\times)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>David Hilbert, "Über die Theorie der algebraischen Zahlkörper", <em>Jahresbericht der Deutschen Mathematiker-Vereinigung</em> 4 (1897), 175–546, for the reciprocity programme in the form of the Hilbert class field and the conjectures on which the subject was built.</li>
+<li>Teiji Takagi, "Über eine Theorie des relativ-abelschen Zahlkörpers", <em>Journal of the College of Science, Imperial University of Tokyo</em> 41 (1920), 1–133, for the existence theorem and the classification of abelian extensions by norm groups.</li>
+<li>Emil Artin, "Beweis des allgemeinen Reziprozitätsgesetzes", <em>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</em> 5 (1927), 353–363, for the proof of the general reciprocity law by the Frobenius substitution.</li>
+<li>Philipp Furtwängler, "Beweis des Hauptidealsatzes für Klassenkörper algebraischer Zahlkörper", <em>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</em> 7 (1929), 14–36, for the principal ideal theorem.</li>
+<li>Nikolai Chebotarev, "Die Bestimmung der Dichtigkeit einer Menge von Primzahlen, welche zu einer gegebenen Substitutionsklasse gehören", <em>Mathematische Annalen</em> 95 (1926), 191–228, for the density theorem and its use in the existence proof.</li>
+<li>Jürgen Neukirch, <em>Class Field Theory</em> (Springer, 1986), for the ideal-theoretic and cohomological development of the reciprocity law and the existence theorem.</li>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for the local reciprocity law and its relation to the global theory.</li>
+<li>Jürgen Neukirch, <em>Algebraic Number Theory</em> (Springer, 1999), for the idele-class-group formulation and the unification of the local and global statements.</li>
+<li>Henri Cohen, <em>A Course in Computational Algebraic Number Theory</em> (Springer, 1993), for the explicit computation of ray class fields, conductors and class fields of small degree.</li>
+<li>Norbert Schappacher, "On the history of Hilbert's twelfth problem", in <em>Matériaux pour l'histoire des mathématiques au XXe siècle</em> (Société Mathématique de France, 1998), for the history of the reciprocity laws and the twelfth problem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

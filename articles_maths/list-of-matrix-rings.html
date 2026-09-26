@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Matrix Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-matrix-rings"><strong>List of Matrix Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the matrix rings $M_n(R)$ over the commutative rings and the matrix algebras over the fields, together with the rings and the algebras that are not of that form. The matrix ring is the model object of the subject: it is the algebra by which the associative theory is tested, it carries a basis — the matrix units — whose multiplication table is the clearest display of a non-commutative structure, and over a field it is simple, central and finite-dimensional. Every entry points to the article that introduces the object.</p>
+<p>The list is a proper subclass of <em>List of Algebras</em>: that article carries the algebras over a field of the corpus with their dimension, their centre and their ideals; the matrix rings over a commutative ring and over a division ring lie beyond that scope, and this one carries them together with the matrix algebras, with the matrix units, the centre, the units and the ideals of each, and beside them the rings and algebras that are not a matrix ring.</p>
+<p>A ring-theoretic point governs the naming throughout. The object is a <strong>matrix ring</strong> when the row reads $M_n(R)$ over a commutative ring or $M_n(D)$ over a division ring, and a <strong>matrix algebra</strong> when the row reads it over a field and the algebra structure is what matters; the article that introduces the object is <em>Matrix Algebras</em>, and the rows for $M_n(R)$ and its structure point there whatever name the row uses.</p>
+<p>This article introduces nothing and proves nothing. It records examples and non-examples side by side, a non-example being a ring that is not a matrix ring in the sense of the list, with the failure named and the article that records it.</p>
+<h2 id="the-matrix-ring-and-its-matrix-units">The Matrix Ring and Its Matrix Units</h2>
+<p>For a commutative ring $R$ and $n \geq 1$, the matrix ring $M_n(R)$ is the ring of $n \times n$ matrices with the usual addition and multiplication. Its additive basis is the set of matrix units, and the multiplication table of the units is the source of every structural fact below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(R)$, the matrix ring</td>
+<td>the $n \times n$ matrices over a commutative ring $R$; associative with unit $I_n$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The matrix units $E_{ij}$</td>
+<td>an $R$-basis, with $E_{ij}E_{kl} = \delta_{jk}E_{il}$; $\dim_R M_n(R) = n^2$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\operatorname{End}_R(R^n)$</td>
+<td>the endomorphism ring of the free module $R^n$, isomorphic to $M_n(R)$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The case $n = 1$</td>
+<td>$M_1(R) = R$: the ring itself</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The case $n = 2$</td>
+<td>four-dimensional, with $E_{12}$ and $E_{21}$ nilpotent and $E_{11}E_{22} = 0$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The units satisfy $E_{ij} = E_{ik}E_{kj}$ for every $k$, which is the identity that makes the ideal theory of the matrix ring trivial over a field, and the products $E_{ij}E_{kl}$ with $j \neq k$ vanish, which is why the matrix ring is never a domain for $n \geq 2$.</p>
+<h2 id="the-matrix-algebras-over-a-field">The Matrix Algebras over a Field</h2>
+<p>Over a field the matrix ring is simple, its left ideals are the sets of matrices whose columns lie in a subspace, and its regular module is a direct sum of copies of the unique simple module.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(k)$, the matrix algebra over a field</td>
+<td>simple: the only two-sided ideals are $0$ and $M_n(k)$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>A left ideal $I_V$</td>
+<td>the matrices whose columns lie in a subspace $V \subseteq k^n$; the left ideals are in bijection with the subspaces</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The regular module</td>
+<td>a direct sum of $n$ copies of the simple module $k^n$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The simple module $k^n$</td>
+<td>the unique simple left $M_n(k)$-module up to isomorphism</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Over a field the two-sided ideal structure is trivial, so a proper nonzero two-sided ideal is the one thing a matrix algebra does not have; the left ideals are not trivial, and they are classified by the subspaces of the column space.</p>
+<h2 id="the-centre-the-units-and-the-ideals">The Centre, the Units and the Ideals</h2>
+<p>The data that distinguish $M_n(R)$ from a general ring are the scalar centre, the determinant criterion for a unit, and the trace; all three are computed from the matrix units.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The centre $Z(M_n(R)) = R I_n$</td>
+<td>the scalar matrices; $M_n(R)$ is a central $R$-algebra</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The unit criterion</td>
+<td>$A$ is a unit if and only if $\det A \in R^\times$, with $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_n(k)$, the units over a field</td>
+<td>the matrices with $\det A \neq 0$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The trace $\operatorname{Tr} A$</td>
+<td>$R$-linear, with $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ and invariance under cyclic permutation</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The determinant $\det A$</td>
+<td>multiplicative, $\det(AB) = \det A \cdot \det B$ and $\det I_n = 1$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The characteristic polynomial $\chi_A(t) = \det(tI_n - A)$</td>
+<td>constant term $(-1)^n \det A$ and coefficient of $t^{n-1}$ equal to $-\operatorname{Tr} A$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The trace form $\langle A,B\rangle = \operatorname{Tr}(AB)$</td>
+<td>symmetric, associative and non-degenerate; $M_n(k)$ is a symmetric Frobenius algebra</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>Skolem–Noether</td>
+<td>every $k$-automorphism of $M_n(k)$ is inner, and $\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k)$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>Derivations of $M_n(k)$</td>
+<td>every $k$-derivation is inner, $\delta(A) = [H,A]$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The determinant criterion is the reason the units of a matrix ring are computable: over a field they are the invertible matrices, and over a general commutative ring the determinant may be a nonzero nonunit, as for $\operatorname{diag}(2,1) \in M_2(\mathbb{Z})$.</p>
+<h2 id="tensor-products-and-products-of-matrix-rings">Tensor Products and Products of Matrix Rings</h2>
+<p>Matrix rings are closed under the tensor product, and they are the factors of the Wedderburn–Artin decomposition of a semisimple ring; a product of two or more of them is again a ring but not again a single matrix ring.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The tensor product formula</td>
+<td>$M_m(k) \otimes_k M_n(k) \cong M_{mn}(k)$: the tensor product of two matrix algebras is again a matrix algebra, of the product size</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>The tensor product of algebras</td>
+<td>the general construction, of which the matrix formula is the worked case</td>
+<td><em>Tensor Products of Algebras</em></td>
+</tr>
+<tr>
+<td>The Wedderburn–Artin decomposition</td>
+<td>a semisimple ring is $\prod_i M_{n_i}(D_i)$, a product of matrix rings over division rings, the factors determined up to permutation</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Non-example: a product $\prod_{i=1}^{r} M_{n_i}(D_i)$ with $r \geq 2$</td>
+<td>semisimple but not simple: each factor is a proper nonzero two-sided ideal, so it is not a matrix ring over a division ring</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The tensor product formula is the algebraic statement that the tensor product of two matrix algebras over a field is again a matrix algebra over that field, of size the product.</p>
+<h2 id="matrix-rings-over-division-rings">Matrix Rings over Division Rings</h2>
+<p>A matrix ring over a division ring is the general simple finite-dimensional algebra, and the theorem that identifies the rings of this form is Wedderburn–Artin.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(D)$ over a division ring $D$</td>
+<td>simple and Artinian; $\dim_D M_n(D) = n^2$, and its simple module is $D^n$</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>The simple module $D^n$</td>
+<td>the unique simple left $M_n(D)$-module, of endomorphism ring $D^{\mathrm{op}}$</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Wedderburn–Artin, the simple case</td>
+<td>a ring is a matrix ring over a division ring exactly when it is simple Artinian; this is a theorem, not a definition</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>The division rings as the boundary case</td>
+<td>the case $r = n_1 = 1$ of Wedderburn–Artin: a ring is a division ring exactly when it is semisimple with one factor, of size one</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$ as a matrix ring</td>
+<td>a division ring, so the case of a single factor of size one; a matrix ring over a division ring</td>
+<td><em>Quaternion Algebra</em>; <em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>The biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$</td>
+<td>an eight-dimensional real algebra that is a matrix ring over the division ring $\mathbb{C}$</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>the four-dimensional real matrix algebra, simple Artinian</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The phrase "a matrix ring over a division ring" names the conclusion of Wedderburn–Artin rather than a definition, and by the theorem the class is exactly the simple Artinian rings; the division rings themselves are the case of a single factor of size one, which is the boundary the list records.</p>
+<h2 id="rings-and-algebras-that-are-not-of-that-form">Rings and Algebras That Are Not of That Form</h2>
+<p>The objects below are the ones a reader might expect among the matrix rings and will not find, and each row names the property that puts it outside the class.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a matrix ring of the list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The split-complex numbers $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$</td>
+<td>not simple: it is $\mathbb{R} \times \mathbb{R}$, with the proper ideals generated by the idempotents $\tfrac{1}{2}(1 \pm j)$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>The dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>not simple: the maximal ideal $(\varepsilon)$ is a proper nonzero two-sided ideal; local</td>
+<td><em>Dual Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>The upper triangular matrix ring</td>
+<td>a subring of $M_n(R)$ and not a full matrix ring; it is not simple, having the nilpotent ideal of strictly upper triangular matrices</td>
+<td><em>Examples of Rings and Fields</em>; <em>Semiprime Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, the integers</td>
+<td>Noetherian but not Artinian, since $(2) \supsetneq (4) \supsetneq (8) \supsetneq \cdots$ never stabilises; hence not simple Artinian, and so not $M_n(D)$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$k[x]$ and $k[x_1,\dots,x_n]$</td>
+<td>not Artinian: $k[x]$ is infinite-dimensional over $k$, and the chain $(x) \supsetneq (x^2) \supsetneq \cdots$ does not stabilise</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>The group algebra $\mathbb{C}[G]$ for a nontrivial finite group $G$</td>
+<td>semisimple but a product of two or more matrix algebras, not a single matrix ring</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$, the octonions</td>
+<td>not a ring at all: the multiplication is not associative</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The upper triangular matrices, the split-complex numbers and the dual numbers are the sharp cases: each is a ring of matrices or of a matrix-like shape, and each fails simplicity, so none is a matrix ring over a division ring. The distinction between "a subring of a matrix ring" and "a matrix ring" is exactly the distinction between an arbitrary subalgebra and the full endomorphism algebra of a free module.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is absent from the list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A commutative matrix ring $M_n(R)$ with $n \geq 2$</td>
+<td>does not exist: $E_{12}E_{21} \neq E_{21}E_{12}$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>A matrix ring $M_n(R)$ with $n \geq 2$ that is a domain</td>
+<td>does not exist: $E_{11}E_{22} = 0$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>A matrix ring $M_n(R)$ with $n \geq 2$ that is a division ring</td>
+<td>does not exist: a division ring has no zero divisors</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>A simple Artinian ring that is not a matrix ring over a division ring</td>
+<td>does not exist, by Wedderburn–Artin</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>A finite-dimensional central division algebra over $\mathbb{C}$ other than $\mathbb{C}$</td>
+<td>does not exist, so $M_n(\mathbb{C})$ is the only central simple $\mathbb{C}$-algebra of each degree</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The warnings state the two directions in which the class is rigid: the full matrix ring of size at least two is never commutative, never a domain and never a division ring, and the simple Artinian rings are exactly the matrix rings over division rings.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the matrix rings and matrix algebras of the corpus, and the rings that are not of that form. The matrix ring $M_n(R)$ has $R$-basis the matrix units $E_{ij}$ with $E_{ij}E_{kl} = \delta_{jk}E_{il}$ and dimension $n^2$, it is isomorphic to $\operatorname{End}_R(R^n)$, it is associative with unit $I_n$, and it is non-commutative with zero divisors as soon as $n \geq 2$. Over a field it is simple, its left ideals are the sets of matrices with columns in a subspace, its regular module is a direct sum of $n$ copies of the simple module $k^n$, and its centre is $kI_n$; its units are the matrices of nonzero determinant, its trace form $\langle A,B\rangle = \operatorname{Tr}(AB)$ is symmetric, associative and non-degenerate, and by Skolem–Noether every automorphism is inner and every derivation is inner. The tensor product of two matrix algebras is a matrix algebra of the product size, and the factors of the Wedderburn–Artin decomposition of a semisimple ring are matrix rings over division rings. A ring is a matrix ring over a division ring exactly when it is simple Artinian, by Wedderburn–Artin; the division rings themselves are the boundary case of a single factor of size one. The non-examples — the split-complex numbers, the dual numbers, the upper triangular matrix ring, the integers, the polynomial algebra, the group algebra of a nontrivial finite group and the octonions — each name the failure of simplicity, of the Artinian condition or of associativity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(R)$, $M_n(k)$, $M_n(D)$</td>
+<td>matrix ring over a commutative ring, a field, a division ring</td>
+</tr>
+<tr>
+<td>$n$, $I_n$</td>
+<td>the size and the identity matrix</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix units, $E_{ij}E_{kl} = \delta_{jk}E_{il}$</td>
+</tr>
+<tr>
+<td>$A_{ij}$</td>
+<td>the entries of a matrix $A$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr} A$, $\det A$, $\operatorname{adj}(A)$</td>
+<td>trace, determinant and adjugate</td>
+</tr>
+<tr>
+<td>$\chi_A(t) = \det(tI_n - A)$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\langle A,B\rangle = \operatorname{Tr}(AB)$</td>
+<td>the trace form</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_n(k)$, $\mathrm{PGL}_n(k)$</td>
+<td>the units and the projective general linear group</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_R(R^n)$</td>
+<td>the endomorphism ring, isomorphic to $M_n(R)$</td>
+</tr>
+<tr>
+<td>$I_V$</td>
+<td>the left ideal of matrices whose columns lie in the subspace $V$</td>
+</tr>
+<tr>
+<td>$D$, $D^n$</td>
+<td>a division ring and its $n$-fold direct sum, the simple module</td>
+</tr>
+<tr>
+<td>$\prod_i M_{n_i}(D_i)$</td>
+<td>the Wedderburn–Artin decomposition of a semisimple ring</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{B}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{O}$</td>
+<td>quaternions, biquaternions, split-complex numbers, dual numbers, octonions</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>the four-dimensional real matrix algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the matrix rings, their ideals, the Wedderburn–Artin structure theory and the division rings they are built from.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for the matrix ring as an endomorphism ring and the simple Artinian case.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the matrix units, the simplicity of $M_n(D)$ and the Wedderburn–Artin theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

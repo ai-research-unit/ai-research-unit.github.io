@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ratner's Theorems — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ratners-theorems"><strong>Ratner's Theorems</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Ratner's theorems describe the behaviour of the orbits of a unipotent flow on a homogeneous space $G/\Gamma$. They answer three questions that are, in retrospect, the same question. Which probability measures are invariant under the flow? What is the closure of a single orbit? How does an orbit distribute itself? The answers are that every invariant probability measure is the invariant measure of a homogeneous subspace, that every orbit closure is a homogeneous subspace, and that every orbit is equidistributed in its closure. The three statements are often called the measure classification theorem, the topological theorem and the equidistribution theorem, and they are the deepest general results of homogeneous dynamics.</p>
+<p>Their importance is that they are <em>rigid</em>: the unipotent flow cannot produce the fractal invariant sets and the wild invariant measures that a general measure-preserving flow admits, because the unipotent directions are algebraically tied to the whole group. The proofs extend the group from the unipotent subgroup to larger and larger subgroups until a maximality condition is reached, and the structure theory of Lie groups then identifies the limit. Consequences include Raghunathan's conjecture, the Oppenheim conjecture of Margulis on values of quadratic forms, the equidistribution of Hecke points, and the mixing of unipotent flows, and the theorems are the technical heart of the arithmetic applications of homogeneous dynamics.</p>
+<p>This article states the three theorems, derives the second and third from the first, records the principal consequences, and describes the strategy of the proof. Three boundaries are held.</p>
+<ul>
+<li>The <strong>homogeneous space</strong>, the <strong>lattice</strong> and the <strong>unipotent flow</strong> are set up in the preceding article, <em>Homogeneous Dynamics</em>, and the notions of ergodicity and mixing are those of <em>Ergodic Theory of Group Actions</em>; this article takes them as established.</li>
+<li>The <strong>quantitative</strong> side — rates of convergence, discrepancy, effective versions for arithmetic applications, and the special case of polynomial sequences on nilmanifolds — is the subject of another article and is only headlined here.</li>
+<li>The <strong>lattices</strong>, <strong>arithmetic groups</strong> and the <strong>structure theory of Lie groups</strong> are Part II's, in <em>Lattices in Lie Groups</em>, <em>Arithmetic Groups</em> and <em>The Lie Correspondence and the Adjoint Representation</em>, and are used as established. No physics is invoked.</li>
+</ul>
+<p>Throughout, $G$ is a connected Lie group, $\Gamma \le G$ a lattice, $X = G/\Gamma$, and $H \le G$ a connected closed subgroup <strong>generated by unipotent elements</strong>; a one-parameter subgroup $\{u_t\}$ is unipotent in the sense of <em>Homogeneous Dynamics</em>. The measure $\mu_{Lx}$ is the normalised $L$-invariant measure on the closed orbit $Lx$ of a closed subgroup $L$, and a subgroup $L$ is <strong>discrete in the appropriate sense</strong> when $L \cap x\Gamma x^{-1}$ is a lattice in $L$. The notation $g \to \infty$ means that $g$ leaves every compact subset of $G$.</p>
+<h2 id="the-three-theorems">The Three Theorems</h2>
+<h3 id="standing-hypotheses">Standing Hypotheses</h3>
+<p>Ratner's theorems hold under hypotheses that are mild enough to cover every classical application. The clean version is due to Ratner and, in the general semisimple form, to Ratner with simplifications by Margulis, Tomanov and others.</p>
+<p><strong>Hypotheses.</strong> $G$ is a connected Lie group, $\mathfrak{g}$ its Lie algebra, $\Gamma \le G$ a lattice, and $H \le G$ a closed connected subgroup whose Lie algebra is generated by nilpotent elements; equivalently, $H$ is generated by unipotent one-parameter subgroups. In the most-used case $H = \{u_t\}$ is a single unipotent one-parameter subgroup, and $\Gamma$ is a lattice in a semisimple $G$ with finite centre.</p>
+<p>The one-parameter case is the primitive one; the general case follows by applying the one-parameter statement to each generator and combining, which is possible because the set of invariant measures for a product of flows is the intersection of the sets for the factors.</p>
+<h3 id="the-measure-classification-theorem">The Measure Classification Theorem</h3>
+<p><strong>Theorem (Ratner's measure classification).</strong> Let $H$ be generated by unipotent one-parameter subgroups. Then every $H$-invariant ergodic Borel probability measure $\mu$ on $X = G/\Gamma$ is of the form</p>
+<p>$$
+\mu = \mu_{Lx}
+$$</p>
+<p>for some $x \in X$ and some closed connected subgroup $L$ with $H \subseteq L \subseteq G$ and $L \cap x\Gamma x^{-1}$ a lattice in $L$; that is, $\mu$ is the normalised $L$-invariant measure on the closed orbit $Lx$.</p>
+<p>The statement says that the ergodic invariant measures are exactly the homogeneous ones. Haar measure on $X$ itself corresponds to $L = G$ (when $\Gamma$ is a lattice in $G$), and the periodic orbits correspond to $L$ whose intersection with a conjugate of $\Gamma$ is a lattice. There are no other ergodic invariant measures, which is the rigidity.</p>
+<p><strong>Example (horocycle flow).</strong> For $G = SL_2(\mathbb{R})$, $\Gamma$ a lattice and $H = U$ the horocycle subgroup, the theorem says that the ergodic $U$-invariant probability measures on $G/\Gamma$ are the Haar measure (from $L = G$, when $G/\Gamma$ is compact or the measure is finite) and the measures on closed horocycles. The latter are the $U$-orbits through points whose stabiliser is a lattice, and they exist exactly for the non-uniform case, where the cusps supply closed horocycles.</p>
+<p><strong>Example (abelian case).</strong> For $G = \mathbb{R}^n$, $\Gamma = \mathbb{Z}^n$ and $H$ a one-parameter subgroup, the statement is the classical classification of invariant measures of a translation flow: an ergodic invariant probability measure is the uniform measure on a closed subtorus, that is, on the closure of a coset of a rational subspace. This is the prototype, and for nilpotent $G$ the theorem is the Green–Parry–Auslander classification of <em>Homogeneous Dynamics</em>.</p>
+<p><strong>Corollary (Raghunathan's conjecture).</strong> Under the hypotheses, if $\mu$ is an $H$-invariant ergodic probability measure, then the orbit $Hx$ is dense in the support of $\mu$ for $\mu$-a.e. $x$; in particular the orbit closure of a point is the homogeneous subspace $Lx$ of the topological theorem below. Raghunathan's conjecture was the topological statement that this corollary asserts.</p>
+<h3 id="the-topological-theorem">The Topological Theorem</h3>
+<p><strong>Theorem (Ratner's topological theorem).</strong> Let $H$ be generated by unipotent one-parameter subgroups and let $x \in X$. Then there is a closed connected subgroup $L$ with $H \subseteq L \subseteq G$ and $L \cap x\Gamma x^{-1}$ a lattice in $L$ such that</p>
+<p>$$
+\overline{Hx} = Lx.
+$$</p>
+<p>In particular the closure of a unipotent orbit is a closed submanifold of $X$, homogeneous under $L$, and the orbit is dense in a component of the orbit of $L$.</p>
+<p><em>Proof (from the measure classification).</em> Let $T_n \to \infty$ and let $\nu$ be a weak limit point of the orbital averages $\nu_n = \frac{1}{T_n}\int_0^{T_n}\delta_{u_tx}\,dt$, which exists by the compactness of the space of probability measures. The measure $\nu$ is $H$-invariant, since the boundary term in $\nu_n - \nu_n \circ u_s^{-1}$ is bounded by $2s/T_n\|f\|_\infty$ and tends to $0$. Each $\nu_n$ is carried by the orbit, so $\operatorname{supp}\nu \subseteq \overline{Hx}$; and the orbit closure is the smallest closed $H$-invariant set containing $x$, while $\nu$ is an invariant probability measure with $x$ in its support (the orbit returns arbitrarily near $x$), so $\operatorname{supp}\nu = \overline{Hx}$. Taking an ergodic component of $\nu$ and applying the measure classification writes it as $\mu_{Lx'}$, whose support is the closed orbit $Lx'$; hence $\overline{Hx} = Lx'$, and the subgroup $L$ satisfies the stated conditions. $\square$</p>
+<p>The theorem is the precise statement that unipotent orbits do not spiral: their closures are the orbits of algebraic groups, and no fractal limit sets occur. This is in sharp contrast with the geodesic flow, whose orbit closures on a compact hyperbolic surface are either closed geodesics or the whole surface, and with the general ergodic theory, where the orbit closure can be an arbitrary closed invariant set.</p>
+<h3 id="the-equidistribution-theorem">The Equidistribution Theorem</h3>
+<p><strong>Theorem (Ratner's equidistribution theorem).</strong> Let $H$ be generated by unipotent one-parameter subgroups and let $x \in X$. Then the orbit $Hx$ is equidistributed in its closure $\overline{Hx} = Lx$ with respect to the normalised invariant measure $\mu_{Lx}$:</p>
+<p>$$
+\frac{1}{T}\int_0^T f(u_t x)\, dt \longrightarrow \int_{Lx} f \, d\mu_{Lx} \qquad \text{as } T \to \infty
+$$</p>
+<p>for every $f \in C_c(X)$, in the one-parameter case $H = \{u_t\}$; for a general $H$ the average is over a suitable family of compact subsets of $H$. Moreover the convergence is <strong>uniform</strong> as $x$ ranges over a compact subset of $X$ and over the points whose orbit is close to a given closed orbit.</p>
+<p>The uniformity is the technically important part. It was proved by Ratner for the horocycle case and by Ratner in general, and it is the form in which the theorem is applied: the uniformity in $x$ is what converts an equidistribution statement into a statement uniform in the arithmetic parameter.</p>
+<p><strong>Corollary (mixing of the ambient flow).</strong> Let $G$ be semisimple with finite centre and $\Gamma$ a lattice. Then every unipotent flow on $G/\Gamma$ is ergodic and, when the flow is not confined to a proper homogeneous subspace, mixing; the mixing is a consequence of the equidistribution applied to translates of a fixed function.</p>
+<h2 id="the-homogeneous-subspaces-in-the-classical-cases">The Homogeneous Subspaces in the Classical Cases</h2>
+<p>The measure classification becomes a computable statement as soon as the list of closed connected subgroups $L$ with $H \subseteq L \subseteq G$ and $L \cap x\Gamma x^{-1}$ a lattice in $L$ can be written down. In the abelian and rank-one cases the list is short and the theorem is exhausted by it.</p>
+<h3 id="the-horocycle-flow-on-math114">The Horocycle Flow on $SL_2(\mathbb{R})/\Gamma$</h3>
+<p><strong>Proposition (the subgroups above the horocycle subgroup).</strong> Let $G = SL_2(\mathbb{R})$ with Lie algebra $\mathfrak{g} = \mathfrak{sl}_2(\mathbb{R}) = \mathfrak{u} \oplus \mathfrak{a} \oplus \bar{\mathfrak{n}}$, where $\mathfrak{u} = \mathbb{R}e$, $\mathfrak{a} = \mathbb{R}h$, $\bar{\mathfrak{n}} = \mathbb{R}f$ and</p>
+<p>$$
+[h,e] = 2e, \qquad [h,f] = -2f, \qquad [e,f] = h,
+$$</p>
+<p>and let $U = \exp(\mathfrak{u})$ be the horocycle subgroup. The closed connected subgroups of $G$ containing $U$ are exactly</p>
+<p>$$
+U, \qquad B = \exp(\mathfrak{u} \oplus \mathfrak{a}), \qquad G,
+$$</p>
+<p>where $B$ is the group of upper triangular matrices of determinant one.</p>
+<p><em>Proof.</em> A closed connected subgroup is determined by its Lie algebra $\mathfrak{l}$, so the question is the list of subalgebras $\mathfrak{l} \subseteq \mathfrak{g}$ containing $e$. For $c, d \in \mathbb{R}$ one has $[e, ch + df] = -2ce + dh$, which lies in $\mathfrak{u}$ if and only if $d = 0$. Hence if $\mathfrak{l}$ contains an element $ch + df$ with $d \neq 0$ then $\mathfrak{l}$ contains $[e, ch+df] = -2ce + dh$ together with $ch + df$, so it contains $h$ and then $f$, and $\mathfrak{l} = \mathfrak{g}$. If $\mathfrak{l} \neq \mathfrak{u}$ then it contains a nonzero element of $\mathfrak{a} \oplus \bar{\mathfrak{n}}$; by the preceding alternative either $\mathfrak{l} = \mathfrak{g}$ or $\mathfrak{l}$ contains $h$, in which case $\mathfrak{l} \supseteq \mathfrak{u} \oplus \mathfrak{a}$ and $\mathfrak{l} = \mathfrak{u} \oplus \mathfrak{a}$ unless it also contains $f$. This gives exactly the three subalgebras, hence the three groups. $\square$</p>
+<p><strong>Theorem (the invariant measures of the horocycle flow).</strong> Let $\Gamma \le SL_2(\mathbb{R})$ be a lattice and let $U$ be the horocycle subgroup. Then the ergodic $U$-invariant probability measures on $X = G/\Gamma$ are exactly the measures $\mu_{Lx}$ with $L \in \{U, B, G\}$ and $L \cap x\Gamma x^{-1}$ a lattice in $L$. In particular:</p>
+<ul>
+<li>$\mu_{Gx}$ is the Haar measure of $X$ and is present for every lattice $\Gamma$;</li>
+<li>$\mu_{Bx}$ is present exactly at the points $x$ for which $B \cap x\Gamma x^{-1}$ is a lattice in $B$;</li>
+<li>$\mu_{Ux}$ is present exactly at the points $x$ that lie on a <strong>closed horocycle</strong>, that is, for which $U \cap x\Gamma x^{-1}$ is a lattice in $U$; equivalently $x\Gamma x^{-1}$ contains a nontrivial unipotent element.</li>
+</ul>
+<p>If $\Gamma$ is cocompact then it contains no nontrivial unipotent element, so no proper subgroup of $G$ above $U$ meets a conjugate of $\Gamma$ in a lattice, the measure list collapses to the Haar measure alone, and the horocycle flow is uniquely ergodic. This is Furstenberg's theorem, recovered here as the rank-one case of the classification. If $\Gamma$ is not cocompact then the closed horocycles at the cusps supply the measures of the third family, and they are the only ones besides the Haar measure.</p>
+<p>The closed-orbit criterion used in the statement — the orbit $Hx$ of a closed subgroup $H$ is closed in $G/\Gamma$ exactly when $H \cap x\Gamma x^{-1}$ is a lattice in $H$ — is the criterion established in <em>Homogeneous Dynamics</em>, and it is what makes the three families enumerable in a concrete group.</p>
+<h3 id="the-linear-flow-on-the-torus">The Linear Flow on the Torus</h3>
+<p><strong>Theorem (linear flow on $\mathbb{T}^n$).</strong> Let $G = \mathbb{R}^n$, $\Gamma = \mathbb{Z}^n$, so that $X = \mathbb{T}^n$, and let $H = \mathbb{R}v$ for a nonzero $v \in \mathbb{R}^n$. Then a closed connected subgroup $L \subseteq \mathbb{R}^n$ satisfies the lattice condition $L \cap \mathbb{Z}^n$ a lattice in $L$ exactly when $L$ is a <strong>rational subspace</strong>, that is, $L = \mathbb{R}(L \cap \mathbb{Z}^n)$; and the ergodic $H$-invariant probability measures on $\mathbb{T}^n$ are the normalised Haar measures of the cosets $x + L$ as $L$ ranges over the rational subspaces containing $v$. For a fixed starting point $x$ the orbit closure is</p>
+<p>$$
+\overline{\{x + tv : t \in \mathbb{R}\}} = x + L(v),
+$$</p>
+<p>where $L(v)$ is the smallest rational subspace containing $v$, and the orbit is equidistributed in the coset $x + L(v)$.</p>
+<p>The subspace $L(v)$ is the closed subgroup of $\mathbb{T}^n$ generated by the class of $v$, and it is the support of the unique ergodic invariant measure of the closure of the orbit. The orbit is dense in $\mathbb{T}^n$ exactly when $L(v) = \mathbb{R}^n$, that is, exactly when $1$ and the coordinates of $v$ are linearly independent over $\mathbb{Q}$ — the classical Kronecker criterion. The example shows that the classification list for $H$ is in general strictly larger than the set of orbit closures actually occurring: for a single $v$ the measures on all rational subspaces containing $v$ are invariant, while the orbit of $x$ is equidistributed only in the smallest one.</p>
+<h3 id="the-three-regimes">The Three Regimes</h3>
+<p>The following table collects the theorem in the three regimes in which the list of homogeneous subspaces is known explicitly; the entries are the statements of the corresponding theorems, not independent results.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Orbit closure $\overline{Hx}$</th>
+<th>Ergodic invariant measures</th>
+<th>Mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$ abelian, $X = \mathbb{T}^n$</td>
+<td>coset $x + L(v)$ of a rational subspace</td>
+<td>Haar on the rational cosets containing $v$</td>
+<td>rational independence of the coordinates</td>
+</tr>
+<tr>
+<td>$G$ nilpotent, $X = G/\Gamma$</td>
+<td>closed orbit $Lx$, $L$ the closure of the group generated by $v$ and $\Gamma$</td>
+<td>Green–Parry–Auslander classification</td>
+<td>lower central series, the abelian case at each step</td>
+</tr>
+<tr>
+<td>$G$ semisimple, $\Gamma$ a lattice</td>
+<td>closed orbit $Lx$ of a closed subgroup $L$</td>
+<td>Ratner's measure classification</td>
+<td>the Ratner property and maximality of $L$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The abelian and nilpotent rows are classical: the first is the rational-independence classification of the invariant measures of a linear flow, the second is the Green–Parry–Auslander theorem of <em>Homogeneous Dynamics</em>, and both are unconditional, with no hypothesis on $\Gamma$ beyond discreteness in the abelian case. The semisimple row is Ratner's theorem, and the difference in the mechanism is the whole content of the subject: in the abelian and nilpotent cases the shearing produced by the flow is absent, and the classification follows from the algebra of the group directly, while in the semisimple case the horospherical directions must be used to force the invariance.</p>
+<h2 id="consequences">Consequences</h2>
+<h3 id="the-oppenheim-conjecture">The Oppenheim Conjecture</h3>
+<p><strong>Theorem (Margulis).</strong> Let $Q$ be an indefinite real quadratic form in $n \geq 3$ variables that is not proportional to a rational form. Then for every $\varepsilon > 0$ there is a nonzero integer vector $m \in \mathbb{Z}^n$ with $|Q(m)| < \varepsilon$.</p>
+<p>The theorem was proved by Margulis in 1989, and Ratner's classification supplies a second proof. The idea of the dynamical proof is to consider the homogeneous space $SL_n(\mathbb{R})/SL_n(\mathbb{Z})$ and the orbit of the form $Q$ under the subgroup $SO(Q)^0 \cong SO(2, n-2)$; the orbit closes off exactly when $Q$ is proportional to a rational form, so the irrationality hypothesis makes the orbit non-closed, and Ratner's topological theorem identifies its closure with the whole space; the values $Q(m)$ are then the distances from the orbit to the integer lattice, and the density of the orbit gives the conclusion. The Oppenheim conjecture is the sharpest classical arithmetic consequence of the classification.</p>
+<h3 id="equidistribution-of-hecke-points-and-arithmetic-applications">Equidistribution of Hecke Points and Arithmetic Applications</h3>
+<p><strong>Theorem (Clozel–Ullmo, Eskin–Oh).</strong> Let $G$ be a semisimple group defined over $\mathbb{Q}$, let $\Gamma$ be an arithmetic lattice, and let $x \in G/\Gamma$. Then the Hecke orbit $\{T_n x\}$ of the $n$-th Hecke correspondence equidistributes in $G/\Gamma$ as $n \to \infty$, with a rate governed by the growth of the Hecke operators.</p>
+<p>The theorem is a consequence of Ratner's equidistribution applied to a cleverly chosen unipotent flow after a reduction to a maximal compact subgroup: the Hecke points are the images of a single point under a family of almost unipotent elements, and the uniformity in Ratner's theorem converts the geometric statement into the arithmetic one. Applications include the equidistribution of Galois conjugates of special points, the Andre–Oort-type results, and the counting of rational points on homogeneous varieties.</p>
+<h3 id="further-consequences">Further Consequences</h3>
+<p><strong>Theorem (mixing and rigidity).</strong> Ratner's theorems imply that a unipotent flow on $G/\Gamma$ is mixing, that the geodesic flow in higher rank is mixing along its chamber, and that the invariant measures of the geodesic flow are the homogeneous ones when the rank is at least two and the measure has positive entropy, by the work of Einsiedler, Katok, Lindenstrauss and Spatzier. Ratner's earlier "rigidity of horocycle flows" shows that a measure-preserving conjugacy between horocycle flows is algebraic, which is the dynamical form of the Mostow rigidity of the higher-rank case.</p>
+<p><strong>Remark.</strong> The classification of measures for a single unipotent flow does not by itself classify the measures invariant under a diagonal (semisimple) subgroup; the extra rigidity in higher rank is a genuinely different theorem, established by Einsiedler–Katok–Lindenstrauss for positive entropy and, for the measure-classification problems of arithmetic origin, by Lindenstrauss and by Einsiedler–Lindenstrauss–Katok. The common feature is that the unipotent directions supply the algebraic constraints.</p>
+<h2 id="the-strategy-of-the-proof">The Strategy of the Proof</h2>
+<h3 id="shearing-and-the-ratner-property">Shearing and the Ratner Property</h3>
+<p>The proof is an induction on the dimension of the group, and its engine is a quantitative separation phenomenon for unipotent orbits. A unipotent flow is said to have the <strong>Ratner property</strong> ($R$-property) when nearby orbits are polynomially sheared: for a pair of points $x,y$ that are close and whose orbits remain close for a long interval of times, the flow must eventually carry them apart at a rate bounded below by a fixed power of the time, unless the two points lie on the same orbit. The shearing is produced by the horospherical subgroup opposite to $H$, which expands the displacement of two nearby orbits, and it is the property that a general measure-preserving flow lacks.</p>
+<h3 id="polynomial-divergence-and-the-maximal-subgroup">Polynomial Divergence and the Maximal Subgroup</h3>
+<p>The proof of the measure classification proceeds as follows.</p>
+<ol>
+<li><strong>Reduce to the one-parameter case.</strong> It suffices to classify the ergodic invariant measures of a single unipotent one-parameter flow, since a measure invariant under each generator of $H$ is invariant under $H$.</li>
+<li><strong>Choose a maximal subgroup.</strong> Given an ergodic $H$-invariant measure $\mu$, consider the family of closed connected subgroups $L \supseteq H$ whose orbit through a $\mu$-typical point supports an $L$-invariant measure that dominates $\mu$ in the sense of the orbit; take $L$ maximal with this property.</li>
+<li><strong>Show $\mu$ is $L$-invariant.</strong> The Ratner property is used to show that if two points are $\mu$-typical and their orbits are close, then the local translation maps the orbit of one to the orbit of the other along the shearing direction; integrating gives invariance of $\mu$ under a one-parameter subgroup not contained in $H$.</li>
+<li><strong>Maximality forces $L = $ the stabiliser.</strong> Any larger group would contradict the maximality, so $L$ is the full stabiliser of $\mu$, and $\mu$ is the $L$-invariant measure on $Lx$; the condition that $L\cap x\Gamma x^{-1}$ be a lattice follows from the finiteness of $\mu$.</li>
+<li><strong>Structure theory.</strong> The algebraic step identifies the possible $L$: the quantifier is over the closed subgroups of $G$ containing $H$ that meet a conjugate of $\Gamma$ in a lattice, and this is a list supplied by the Lie theory of Part II.</li>
+</ol>
+<p>The topological and equidistribution theorems are then obtained from the measure classification by the weak-limit argument given above and by a second application to the orbital averages.</p>
+<h3 id="the-nilpotent-and-linear-cases">The Nilpotent and Linear Cases</h3>
+<p>For nilpotent $G$ the proof reduces to the abelian case through the lower central series and the Green–Parry–Auslander theorem; there is no shearing obstruction, and the classification is unconditional and classical. For $G = \mathbb{R}^n$ the theorem is the rational-independence classification of invariant measures of a linear flow. These two cases are the base of the induction and the model for the general proof, and they also show that the semisimple hypothesis is where the genuine difficulty lies: the unipotent elements of a semisimple group generate a rich algebra of horospherical subgroups, and the maximality argument uses the full structure theory.</p>
+<h3 id="sharpness-of-the-hypotheses">Sharpness of the Hypotheses</h3>
+<p>Three hypotheses carry the theorem, and the role of each is visible in the proof.</p>
+<p><strong>Unipotence.</strong> The engine of the proof is the polynomial shearing of nearby orbits, and it is a property of unipotent flows alone. For a diagonal one-parameter subgroup the Ratner property fails, and the maximality argument has no substitute: the ergodic invariant measures of a higher-rank diagonal flow are classified only for the measures of positive entropy, by the work of Einsiedler, Katok and Lindenstrauss, where the mechanism is entropy and the geometry of the Weyl chamber rather than shearing, and the general case is open. The contrast is the reason the unipotent case is the accessible one despite the greater complexity of the group: the shearing converts a dynamical statement into an algebraic one.</p>
+<p><strong>Finiteness of the invariant measure.</strong> The lattice hypothesis on $\Gamma$ is used at the last step and only there, to force $L \cap x\Gamma x^{-1}$ to be a lattice in $L$ from the finiteness of $\mu$. Without a finite invariant measure the conclusion has no content, and the behaviour of unipotent orbits on infinite-volume quotients is genuinely different; the classification is a statement about finite measures on a finite-volume quotient.</p>
+<p><strong>Lie structure.</strong> The statements are for connected Lie groups, and their proofs use the Lie algebra, the exponential map and the structure theory of Part II. The $p$-adic and $S$-arithmetic analogues hold by the same arguments applied to the $p$-adic Lie groups of <em>The $p$-adic Numbers</em> and <em>Local Fields</em>, but they require the $p$-adic structure theory and there is no version for a general locally compact group.</p>
+<h3 id="the-math290-arithmetic-and-math291-adic-versions">The $S$-Arithmetic and $p$-adic Versions</h3>
+<p><strong>Theorem (Ratner, $p$-adic and $S$-arithmetic).</strong> The measure classification, the topological theorem and the equidistribution theorem hold with $G$ a product of real and $p$-adic Lie groups and $\Gamma$ an $S$-arithmetic lattice; the unipotent subgroups are generated by unipotent elements of the $p$-adic factors in the sense of the $p$-adic structure theory, and the homogeneous subspaces are the closed subgroups of the product meeting a conjugate of $\Gamma$ in a lattice.</p>
+<p>The $p$-adic case is what the arithmetic applications need. The equidistribution of the Hecke points is a statement about an $S$-arithmetic group, the Raghunathan conjecture is stated over a number field with the places in $S$, and the Oppenheim conjecture has an $S$-arithmetic form for a form in several variables over a number field. The real case alone does not reach them, because the Hecke correspondences are the orbits of almost unipotent elements in the $p$-adic factors, and it is the $S$-arithmetic form of the equidistribution theorem that supplies the uniformity in the arithmetic parameter.</p>
+<h3 id="the-development-of-the-problem">The Development of the Problem</h3>
+<p>The statements now called Ratner's theorems were conjectured by Raghunathan in the late 1970s as the measure-theoretic and topological conjectures on the closures of unipotent orbits, and the measure classification was known as Raghunathan's conjecture. Partial results established the equidistribution of horocycle orbits and the absence of non-homogeneous invariant measures under additional hypotheses — in particular by Dani, whose work on the orbits of unipotent flows in the 1980s settled cases of the topological statement and supplied the quantitative estimates that the later proofs use. Margulis proved the Oppenheim conjecture in 1989 by a dynamical argument that established enough of the topological conjecture for the application, and Ratner proved the measure classification, the topological theorem and the equidistribution theorem in 1990–91. The subsequent development is quantitative and higher-rank: the effective equidistribution of Dani and Margulis, the measure rigidity of diagonal actions of Einsiedler, Katok, Lindenstrauss and Spatzier, and the arithmetic applications to the Littlewood conjecture and to the arithmetic quantum unique ergodicity theorem. The quantitative side is not covered here.</p>
+<h2 id="summary">Summary</h2>
+<p>Ratner's theorems govern the orbits of a subgroup $H$ generated by unipotent one-parameter subgroups acting on a homogeneous space $X = G/\Gamma$ with $\Gamma$ a lattice. The measure classification theorem states that every $H$-invariant ergodic probability measure is the normalised invariant measure $\mu_{Lx}$ of a closed orbit of a closed subgroup $L \supseteq H$ meeting a conjugate of $\Gamma$ in a lattice; the topological theorem states that every orbit closure $\overline{Hx}$ is such a homogeneous subspace $Lx$; and the equidistribution theorem states that the orbit is equidistributed in its closure, uniformly over compact sets of starting points. The measure classification implies the other two by taking weak limits of orbital averages, and the three together assert that no fractal invariant sets and no non-homogeneous invariant measures exist for unipotent flows.</p>
+<p>Consequences include Raghunathan's conjecture, the Oppenheim conjecture of Margulis on the values of an indefinite irrational quadratic form in at least three variables, the equidistribution of Hecke points and the arithmetic counting results that follow from it, the mixing of unipotent and higher-rank diagonal flows, and the rigidity of horocycle flows. The proof is an induction on dimension: the Ratner property — the polynomial shearing of nearby orbits by the horospherical directions — shows that a maximal subgroup supporting the measure is forced to be the full stabiliser, whence the measure is homogeneous; the abelian and nilpotent cases are the base of the induction and the model for the general argument. The quantitative refinements, the effective equidistribution theorems and the corresponding results for diagonal flows and polynomial sequences are the subject and of the later literature.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$, $\Gamma$, $X = G/\Gamma$</td>
+<td>Lie group, lattice, homogeneous space</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>Closed connected subgroup generated by unipotent elements</td>
+</tr>
+<tr>
+<td>$u_t$, $U$</td>
+<td>Unipotent one-parameter subgroup and its group</td>
+</tr>
+<tr>
+<td>$\mathfrak{g} = \mathfrak{u}\oplus\mathfrak{a}\oplus\bar{\mathfrak{n}}$</td>
+<td>$\mathfrak{sl}_2(\mathbb{R}) = \mathbb{R}e\oplus\mathbb{R}h\oplus\mathbb{R}f$, $[h,e]=2e$, $[h,f]=-2f$, $[e,f]=h$</td>
+</tr>
+<tr>
+<td>$B = \exp(\mathfrak{u}\oplus\mathfrak{a})$</td>
+<td>Upper triangular subgroup of $SL_2(\mathbb{R})$; the only group strictly between $U$ and $G$</td>
+</tr>
+<tr>
+<td>$L \supseteq H$</td>
+<td>Closed subgroup occurring as orbit closure or stabiliser of a measure</td>
+</tr>
+<tr>
+<td>$Lx$, $\mu_{Lx}$</td>
+<td>Closed orbit of $L$ and its normalised invariant measure</td>
+</tr>
+<tr>
+<td>rational subspace</td>
+<td>$L\subseteq\mathbb{R}^n$ with $L=\mathbb{R}(L\cap\mathbb{Z}^n)$; the lattice condition in the abelian case</td>
+</tr>
+<tr>
+<td>$L(v)$</td>
+<td>Smallest rational subspace containing $v$; $\overline{\{x+tv\}}=x+L(v)$</td>
+</tr>
+<tr>
+<td>$\overline{Hx}$</td>
+<td>Orbit closure; equals $Lx$ by the topological theorem</td>
+</tr>
+<tr>
+<td>Raghunathan</td>
+<td>the orbit closure of a unipotent flow is homogeneous</td>
+</tr>
+<tr>
+<td>$R$-property</td>
+<td>Ratner property: polynomial shearing of nearby unipotent orbits</td>
+</tr>
+<tr>
+<td>$\frac{1}{T}\int_0^T\delta_{u_tx}\,dt$</td>
+<td>Orbital averages; their weak limits are invariant measures</td>
+</tr>
+<tr>
+<td>Oppenheim</td>
+<td>an indefinite irrational quadratic form in $n\ge3$ variables takes values arbitrarily close to $0$</td>
+</tr>
+<tr>
+<td>Hecke points, $T_n$</td>
+<td>Hecke correspondence and its orbit; equidistributed by Clozel–Ullmo and Eskin–Oh</td>
+</tr>
+<tr>
+<td>$SO(Q)$</td>
+<td>Orthogonal group of a quadratic form; its orbit carries the Oppenheim argument</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Marina Ratner, "On Raghunathan's measure conjecture", <em>Annals of Mathematics</em> 134 (1991), 545–607, for the measure classification theorem.</li>
+<li>Marina Ratner, "Raghunathan's topological conjecture and distributions of unipotent flows", <em>Duke Mathematical Journal</em> 63 (1991), 235–280, for the topological and equidistribution theorems.</li>
+<li>Marina Ratner, "On the $p$-adic and real versions of Raghunathan's conjecture", <em>Journal of the American Mathematical Society</em> 6 (1993), 85–113, for the arithmetic version and the Hecke application.</li>
+<li>G. A. Margulis, "Orbit finiteness, construction of compact quotients and the structure of the fundamental group of a manifold of negative curvature", and "The Oppenheim conjecture", in <em>Discrete Subgroups of Semisimple Lie Groups</em> (Springer, 1991), for the dynamical proof of Oppenheim.</li>
+<li>S. G. Dani and G. A. Margulis, "Limit distributions of orbits of unipotent flows and values of quadratic forms", <em>Advances in Soviet Mathematics</em> 16 (1993), 91–137, for the quantitative version underlying the Oppenheim conjecture.</li>
+<li>Dmitry Kleinbock and Barak Weiss, "Friendly measures, homogeneous flows and singular vectors", in <em>Contemporary Mathematics</em> 469 (2008), for a modern proof of Ratner's theorems.</li>
+<li>Manfred Einsiedler, Anatole Katok and Elon Lindenstrauss, "Invariant measures and the set of exceptions to Littlewood's conjecture", <em>Annals of Mathematics</em> 164 (2006), 513–560, for measure rigidity for diagonal actions.</li>
+<li>Anatole Katok and Ralf Spatzier, "Invariant measures for higher-rank hyperbolic abelian actions", <em>Ergodic Theory and Dynamical Systems</em> 16 (1996), 751–778, for the measure rigidity of diagonal actions that replaces shearing in higher rank.</li>
+<li>Elon Lindenstrauss, "Invariant measures and arithmetic quantum unique ergodicity", <em>Annals of Mathematics</em> 163 (2006), 165–219, for the arithmetic application of the classification.</li>
+<li>Jean-Pierre Serre, <em>A Course in Arithmetic</em> (Springer, 1973), and J. W. S. Cassels, <em>Rational Quadratic Forms</em> (Academic Press, 1978), for the arithmetic of quadratic forms that the Oppenheim conjecture concerns.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

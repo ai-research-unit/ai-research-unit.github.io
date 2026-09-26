@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Operators on an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-operators-on-an-algebra"><strong>The Operators on an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An algebra is a vector space carrying a product. Its symmetries are the algebra automorphisms, and their infinitesimal counterparts are the derivations. The two are usually introduced separately, and the several other classes of maps that an algebra carries — the multiplications by its own elements, the maps that commute with those multiplications, the maps that preserve a norm form — are usually introduced in yet other places.</p>
+<p>This article takes the entry point that makes the relations between all of these visible at once: fix the ambient space of <strong>every</strong> linear operator on the algebra, and then ask of each candidate class what it is required to preserve. Every operator on $A$ is then a point of one space, $\operatorname{End}_k(A) \cong M_n(k)$ with $n = \dim_k A$, and the classification of the classes follows from a single observation about the conditions:</p>
+<ul>
+<li>a condition that is <strong>linear</strong> in the operator defines a <strong>subspace</strong> of $\operatorname{End}_k(A)$, and those subspaces are comparable by inclusion;</li>
+<li>a condition that is <strong>nonlinear</strong> in the operator defines a set that is not a subspace. It is a <strong>group</strong> when the condition is multiplicativity or form-preservation together with invertibility — the endomorphisms form only a monoid, and the automorphisms are its units;</li>
+<li>the exponential passes from one of the subspaces to one of the groups, so that the subspace is the Lie algebra of the group.</li>
+</ul>
+<p>Two consequences are worth stating at the outset, because they are the reason the entry point is useful. First, the natural classes of operators are not a miscellaneous list: the conditions linear in the operator give subspaces of one ambient space, comparable with one another by inclusion, and the nonlinear conditions give groups acting on that same space. Second, the entry point separates cleanly the questions that a metric can answer from the questions that only the algebra can answer: an automorphism preserves the product and no metric data beyond what the product forces, while the operators preserving a norm form are a strictly larger class that the algebra alone does not determine, since a norm form is extra data.</p>
+<p>The classes themselves are treated in <em>Automorphisms and Derivations of Algebras</em> and in <em>Automorphisms of Modules over an Algebra</em>; the biquaternion case is worked out in <em>Biquaternion Automorphisms and Derivations</em>. What is assembled here is the ambient space they share, the ladder of subspaces and groups inside it, and the worked examples that exhibit the ladder in the smallest dimensions.</p>
+<p>Throughout, $k$ is a field, $A$ is a finite-dimensional unital associative $k$-algebra, and $n = \dim_k A$. The ground field is named at every step, because the ambient space depends on it.</p>
+<h2 id="the-ambient-operator-space">The Ambient Operator Space</h2>
+<p><strong>Definition.</strong> An <strong>operator</strong> on $A$ is a $k$-linear map $M : A \to A$. The operators form the $k$-algebra $\operatorname{End}_k(A)$ under composition and addition, of dimension</p>
+<p>$$
+\dim_k \operatorname{End}_k(A) = n^2 .
+$$</p>
+<p>Choosing a $k$-basis of $A$ identifies $\operatorname{End}_k(A)$ with the matrix algebra $M_n(k)$. The identification depends on the basis, but the classes below do not: a derivation, an $A$-linear operator and an automorphism are each defined by an equation that never mentions a basis, and the groups preserving a form are defined by the form itself, the Gram matrix being only its coordinate record.</p>
+<p><strong>The ground field is part of the data.</strong> Two operators that look alike may inhabit ambient spaces of different size, because the field over which linearity is demanded changes both $n$ and the size of the matrices. The same set $A$ may therefore be read as an algebra over two fields and give two ambient spaces.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$A$</th>
+<th>$k$</th>
+<th>$n = \dim_k A$</th>
+<th>$\operatorname{End}_k(A)$</th>
+<th>$\dim_k$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}$</td>
+<td>1</td>
+<td>$M_1(\mathbb{R}) = \mathbb{R}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{R}$</td>
+<td>2</td>
+<td>$M_2(\mathbb{R})$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{C}$</td>
+<td>1</td>
+<td>$M_1(\mathbb{C}) = \mathbb{C}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\mathbb{R}[\varepsilon]/\varepsilon^2$</td>
+<td>$\mathbb{R}$</td>
+<td>2</td>
+<td>$M_2(\mathbb{R})$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{R}$</td>
+<td>4</td>
+<td>$M_4(\mathbb{R})$</td>
+<td>16</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{C}$</td>
+<td>4</td>
+<td>$M_4(\mathbb{C})$</td>
+<td>16</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{R}$</td>
+<td>8</td>
+<td>$M_8(\mathbb{R})$</td>
+<td>64</td>
+</tr>
+</tbody>
+</table></div>
+<p>The entry $\mathbb{C}$ over $\mathbb{C}$ is the extreme case: a one-dimensional algebra over $\mathbb{C}$ has a one-dimensional operator space, while the same set over $\mathbb{R}$ has a four-dimensional one.</p>
+<p><strong>A size that must not be confused.</strong> The biquaternion algebra satisfies $\mathbb{B} \cong M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra. The ambient space of operators is nevertheless $M_4(\mathbb{C})$, not $M_2(\mathbb{C})$. The two matrix sizes are different and measure different things: $M_2(\mathbb{C})$ records the algebra structure of $\mathbb{B}$, whose dimension is $4$, while $M_4(\mathbb{C})$ records the operators on the vector space $\mathbb{B}$, whose dimension is $4$ as well and whose operator space therefore has dimension $16$. A $2 \times 2$ matrix representing an element of $\mathbb{B}$ is an element; a $4 \times 4$ matrix representing an operator on $\mathbb{B}$ is an operator.</p>
+<h2 id="the-two-kinds-of-condition">The Two Kinds of Condition</h2>
+<p>Each class of operators is cut out by a condition, and the shape of the class is decided by the degree of the condition in the operator.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>condition on the operator $M$</th>
+<th>kind</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>derivations</td>
+<td>$M(xy) = M(x)y + xM(y)$</td>
+<td>linear in $M$</td>
+<td>subspace</td>
+</tr>
+<tr>
+<td>$A$-linear operators</td>
+<td>$M L(a) = L(a) M$ for all $a$</td>
+<td>linear in $M$</td>
+<td>subspace</td>
+</tr>
+<tr>
+<td>infinitesimal form-preservers</td>
+<td>$X^{\mathsf T} G + G X = 0$</td>
+<td>linear in $X$</td>
+<td>subspace</td>
+</tr>
+<tr>
+<td>algebra endomorphisms</td>
+<td>$M(xy) = M(x)M(y)$, $M(1) = 1$</td>
+<td>nonlinear in $M$</td>
+<td>not a subspace</td>
+</tr>
+<tr>
+<td>algebra automorphisms</td>
+<td>the above, with $M$ bijective</td>
+<td>nonlinear</td>
+<td>group</td>
+</tr>
+<tr>
+<td>form-preservers</td>
+<td>$M^{\mathsf T} G M = G$</td>
+<td>nonlinear</td>
+<td>group</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Leibniz rule is linear in $M$ because both occurrences of $M$ appear once and neither is composed with the other. The intertwining condition defining $A$-linearity is linear in $M$ for the same reason. The multiplicativity condition is quadratic, since the product $M(x)M(y)$ contains $M$ twice, and it does not close under addition: the sum of two multiplicative maps is generally not multiplicative. That is the whole difference between the two columns, and it is why one column is a vector space and the other is a group.</p>
+<p><strong>Endomorphisms are not automorphisms.</strong> Multiplicativity together with $M(1) = 1$ gives the unital algebra endomorphisms, and these need not be invertible. For the dual numbers the map $a + b\varepsilon \mapsto a$ is a unital endomorphism and is not invertible; it has determinant $0$ inside $M_2(\mathbb{R})$ and is therefore not a point of the automorphism group. A class defined by multiplicativity must be intersected with the invertible operators before it is called a group, and the automorphism group is that intersection.</p>
+<p><strong>The exponential bridge.</strong> For a nilpotent derivation $\delta$ and a field containing $\mathbb{Q}$, the series</p>
+<p>$$
+\exp(\delta) = \sum_{j \geq 0} \frac{\delta^j}{j!}
+$$</p>
+<p>terminates and is an algebra automorphism, by the binomial identity $\delta^m(xy) = \sum_j \binom{m}{j} \delta^j(x)\delta^{m-j}(y)$. This is the mechanism that makes the derivations the infinitesimal automorphisms, and it is the reason the two rows of the table are studied together.</p>
+<p><strong>The dimension check.</strong> The derivations are moreover the tangent space to the automorphism group at the identity, one curve of automorphisms for each $\delta$ and each direction in $\operatorname{Der}_k(A)$, so for a finite-dimensional algebra over $\mathbb{R}$ or $\mathbb{C}$</p>
+<p>$$
+\dim \operatorname{Aut}_k(A) = \dim_k \operatorname{Der}_k(A) .
+$$</p>
+<p>This gives a numerical check that is applied to every algebra below: the derivation subspace and the automorphism group must have the same dimension, and a computation that reports otherwise has lost something. The check is genuinely informative, because it relates two quantities computed in completely different ways — a nullspace of a linear system on the one hand, and an enumeration of maps preserving the product on the other.</p>
+<h2 id="the-subspaces">The Subspaces</h2>
+<h3 id="multiplication-operators">Multiplication Operators</h3>
+<p><strong>Definition.</strong> For $a \in A$, the <strong>left multiplication</strong> by $a$ is the operator $L(a) : A \to A$ with $L(a)(x) = ax$, and the <strong>right multiplication</strong> is $R(a)(x) = xa$.</p>
+<p>Both are $k$-linear, and both assignments are injective when $A$ is unital: from $L(a) = 0$ one gets $a = L(a)(1) = 0$, and from $R(a) = 0$ one gets $a = R(a)(1) = 0$. Hence $L$ and $R$ are injective linear maps</p>
+<p>$$
+L : A \longrightarrow \operatorname{End}_k(A), \qquad R : A \longrightarrow \operatorname{End}_k(A),
+$$</p>
+<p>and their images are subspaces of dimension $n$. The map $L$ is an algebra homomorphism, $L(a)L(b) = L(ab)$, while $R$ reverses the order, $R(a)R(b) = R(ba)$; the image of $L$ is the <strong>regular representation</strong> of $A$, and the image of $R$ is a copy of the opposite algebra $A^{\mathrm{op}}$.</p>
+<p>The asymmetry between $L$ and $R$ is the whole difficulty of the noncommutative case. As a transformation of $A$, a left multiplication by a noncentral element is not $A$-linear; it is the action itself rather than a map commuting with the action.</p>
+<p><strong>Example.</strong> For $\mathbb{B}$ on the basis $(e_0,e_1,e_2,e_3)$,</p>
+<p>$$
+L(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}, \qquad
+R(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}.
+$$</p>
+<p>The two agree on their first two rows and differ in the sign of the last two, and both are skew, $L(e_1)^{\mathsf T} = -L(e_1)$ and likewise for $R(e_1)$.</p>
+<h3 id="the-math131-linear-operators">The $A$-Linear Operators</h3>
+<p><strong>Definition.</strong> An operator $M$ is <strong>$A$-linear</strong>, or $A$-module endomorphism of the regular module, when $M L(a) = L(a) M$ for every $a \in A$.</p>
+<p>This is an intertwining condition, hence linear in $M$, and the $A$-linear operators are exactly the <strong>centralizer</strong> of $L(A)$ in $\operatorname{End}_k(A)$.</p>
+<p><strong>Theorem.</strong> $\operatorname{End}_A(A) = R(A) \cong A^{\mathrm{op}}$, of dimension $n$.</p>
+<p>The theorem is proved in <em>Automorphisms of Modules over an Algebra</em>, where it is the base case of the theory of endomorphism rings. It says that requiring an operator to commute with all left multiplications forces it to be a right multiplication, and no more: the centralizer is exactly $R(A)$ and not merely of the same dimension.</p>
+<p>The contrast with the previous subsection is worth recording, since the two spaces live in the same ambient space and have very different sizes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>condition</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>all $k$-linear operators</td>
+<td>none</td>
+<td>$n^2$</td>
+</tr>
+<tr>
+<td>$A$-linear operators</td>
+<td>$M L(a) = L(a)M$ for all $a$</td>
+<td>$n$</td>
+</tr>
+</tbody>
+</table></div>
+<p>An operator is $A$-linear only in the restrictive sense; the merely $k$-linear maps are $n^2$ in number, and $A$-linearity cuts that down by a factor of $n$. For $A = \mathbb{B}$ over $\mathbb{C}$, $n = 4$ and the reduction is from $16$ to $4$.</p>
+<h3 id="the-derivations">The Derivations</h3>
+<p><strong>Definition.</strong> A <strong>$k$-derivation</strong> of $A$ is a $k$-linear map $\delta : A \to A$ with</p>
+<p>$$
+\delta(xy) = \delta(x)y + x\delta(y)
+$$</p>
+<p>for all $x, y \in A$. The derivations form the subspace $\operatorname{Der}_k(A)$.</p>
+<p>The condition is linear in $\delta$, and the derivations form a Lie algebra under the commutator, with $[\delta,\varepsilon] = \delta\varepsilon - \varepsilon\delta$. The <strong>inner derivations</strong> are those of the form $\mathrm{ad}_a(x) = [a,x]$ for $a \in A$, and the assignment $a \mapsto \mathrm{ad}_a$ has kernel $Z(A)$, so the inner derivations form a subspace of dimension $n - \dim_k Z(A)$, in fact the quotient $A/Z(A)$.</p>
+<p>For a separable algebra over a field every derivation is inner, so that</p>
+<p>$$
+\dim_k \operatorname{Der}_k(A) = n - \dim_k Z(A) .
+$$</p>
+<p>This is the case for the matrix algebras, the quaternion algebra and the biquaternion algebra, and it is recorded in <em>Automorphisms and Derivations of Algebras</em>. It is a conditional statement, not a general one, and the dual numbers of the next sections are the counterexample. The obstruction is specific: over a perfect field a <strong>commutative</strong> finite-dimensional algebra is separable exactly when it is reduced, that is, when it has no nonzero nilpotent, and $\mathbb{R}[\varepsilon]/\varepsilon^2$ is not reduced. The hypothesis cannot be weakened to the absence of nilpotents, since a matrix algebra has plenty of them and is separable all the same. When the hypothesis fails a derivation may be outer, and then the formula is false because it computes only the inner derivations, so the true derivation space is <em>larger</em> than the formula predicts. The formula is therefore used below as a check where its hypothesis holds and as a diagnostic where it does not.</p>
+<h2 id="the-groups">The Groups</h2>
+<h3 id="algebra-automorphisms">Algebra Automorphisms</h3>
+<p><strong>Definition.</strong> A <strong>$k$-algebra automorphism</strong> of $A$ is a bijective $k$-linear operator with $M(xy) = M(x)M(y)$.</p>
+<p>The automorphisms form the group $\operatorname{Aut}_k(A)$. The condition is nonlinear, so this is a group and not a subspace, and it is a closed subgroup of the units of $\operatorname{End}_k(A)$; when $k$ is $\mathbb{R}$ or $\mathbb{C}$ it is a Lie group, and its Lie algebra is $\operatorname{Der}_k(A)$, as the dimension check of the previous section records. An automorphism preserves the centre, the idempotents, the units, the zero divisors and the lattice of two-sided ideals. It preserves no metric data beyond what the product already forces: a general form on $A$ is extra structure that an automorphism has no reason to respect, but a form determined by the product, such as the norm form, is carried along automatically.</p>
+<h3 id="the-operators-preserving-a-form">The Operators Preserving a Form</h3>
+<p><strong>Definition.</strong> Let $G$ be the Gram matrix of a nondegenerate bilinear form on $A$ in a fixed basis. The operators preserving the form are those with $M^{\mathsf T} G M = G$, and they form the group $O(G)$.</p>
+<p>This condition is nonlinear in $M$, so $O(G)$ is a group, and its Lie algebra is the linear condition $X^{\mathsf T}G + GX = 0$ obtained by differentiating at the identity. The form is extra data: the algebra alone does not provide it, and different choices of $G$ on the same $A$ give different groups.</p>
+<p>When the form is the norm form of the algebra and the algebra is unital, the automorphism group is contained in the orthogonal group, since an automorphism preserves the product and therefore the norm. For $\mathbb{B}$ with the norm $N(\tilde Q) = \sum_\mu Q_\mu^2$, whose Gram matrix is the identity in the basis $(e_0,e_1,e_2,e_3)$, this gives</p>
+<p>$$
+\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) \subset O(4,\mathbb{C}),
+$$</p>
+<p>so that the automorphisms are a subgroup of the norm-preserving group. The containment is in general <strong>strict</strong>, and not merely because of operators that move the identity, even after the identity is fixed. For $\mathbb{B}$ represented as $M_2(\mathbb{C})$, the norm is the determinant and the transpose</p>
+<p>$$
+T(Q) = Q^{\mathsf T}
+$$</p>
+<p>fixes $I$ and preserves $\det$, hence is a unital norm-preserving operator; but $T(Q Q') = T(Q')T(Q)$ reverses the order, so $T$ is an anti-automorphism rather than an automorphism, and $T(ij) = k$ while $T(i)T(j) = -k$. The unital norm-preserving operators therefore contain the automorphisms properly, and the extra elements are the anti-automorphisms and their relatives. An automorphism preserves the product and no metric data beyond what the product forces; a norm-preserving operator preserves the metric and no product data beyond what the metric forces, and the two requirements are independent.</p>
+<h2 id="the-ladder">The Ladder</h2>
+<p>Collecting the classes, and reading the containments off the dimensions, gives one ambient space with a ladder inside it. The entries in the table are subspaces except where marked as groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>dimension over $\mathbb{C}$</th>
+<th>defined by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>all $\mathbb{C}$-linear operators</td>
+<td>16</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4,\mathbb{C})$</td>
+<td>6</td>
+<td>$X^{\mathsf T} + X = 0$</td>
+</tr>
+<tr>
+<td>$L(\mathbb{B})$, the left multiplications</td>
+<td>4</td>
+<td>$M = L(a)$</td>
+</tr>
+<tr>
+<td>$R(\mathbb{B})$, the $A$-linear maps</td>
+<td>4</td>
+<td>centralizer of $L(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>3</td>
+<td>Leibniz</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\cdot I$, the scalar operators</td>
+<td>1</td>
+<td>$M = \lambda I$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>dimension over $\mathbb{C}$</th>
+<th>defined by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_4(\mathbb{C})$</td>
+<td>16</td>
+<td>invertibility</td>
+</tr>
+<tr>
+<td>$O(4,\mathbb{C})$</td>
+<td>6</td>
+<td>$M^{\mathsf T}GM = G$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) = PSL_2(\mathbb{C})$</td>
+<td>3</td>
+<td>multiplicativity</td>
+</tr>
+</tbody>
+</table></div>
+<p>The containments that hold, all of them dimension checks that have been verified by recomputation, are</p>
+<p>$$
+\mathbb{C}\cdot I \subset L(\mathbb{B}) \subset M_4(\mathbb{C}), \qquad
+\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \subset \mathfrak{so}(4,\mathbb{C}) \subset M_4(\mathbb{C}).
+$$</p>
+<p>Both inclusions on the right have been checked on explicit bases: the three derivation matrices are skew, as are $L(e_1)$, $L(e_2)$ and $L(e_3)$, while $L(e_0) = I$ is not.</p>
+<p>Two finer statements sharpen the picture. First, the element $L(e_0) = I$ is the identity operator and is not skew, while $L(e_1)$, $L(e_2)$, $L(e_3)$ are skew, so that</p>
+<p>$$
+L(\mathbb{B}) = \mathbb{C}\cdot I \ \oplus\ L(\text{pure}),
+$$</p>
+<p>with $L(\text{pure})$ of dimension $3$. Second, the two three-dimensional pieces add up to the whole orthogonal Lie algebra:</p>
+<p>$$
+\mathfrak{so}(4,\mathbb{C}) = L(\text{pure}) \ \oplus\ \operatorname{Der}_{\mathbb{C}}(\mathbb{B}), \qquad 3 + 3 = 6 .
+$$</p>
+<p>The identity has been verified by exhibiting both spaces as subspaces of the sixteen-dimensional operator space and computing their intersection and their sum. It says that an infinitesimal norm-preserving operator splits uniquely into the part that is a left multiplication by a vector of $\mathbb{B}$ and the part that is a derivation, and that the two parts have nothing else in common.</p>
+<h2 id="worked-example-the-complex-numbers-as-a-real-algebra">Worked Example: The Complex Numbers as a Real Algebra</h2>
+<p>The smallest case with a nontrivial automorphism is $A = \mathbb{C}$ over $k = \mathbb{R}$. Here $n = 2$ and the ambient space is</p>
+<p>$$
+\operatorname{End}_{\mathbb{R}}(\mathbb{C}) = M_2(\mathbb{R}), \qquad \dim_{\mathbb{R}} = 4 ,
+$$</p>
+<p>in the basis $(1, i)$.</p>
+<p><strong>The multiplication operators.</strong> Left multiplication by $z = a + bi$ sends $x + yi$ to $(ax - by) + (ay + bx)i$, so</p>
+<p>$$
+L(a+bi) = \begin{pmatrix} a & -b \\ b & a \end{pmatrix}, \qquad \det L(a+bi) = a^2 + b^2 = N(z).
+$$</p>
+<p>The image is the two-dimensional subspace $L(\mathbb{C}) \subset M_2(\mathbb{R})$, the regular representation, and $L$ is an algebra isomorphism $\mathbb{C} \to L(\mathbb{C})$, so that the complex numbers are realised as the operators of the form above. In particular</p>
+<p>$$
+L(1) = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad L(i) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}.
+$$</p>
+<p><strong>The conjugate-linear operators.</strong> The remainder of $M_2(\mathbb{R})$ is not of this form. An operator $\varphi$ is <strong>conjugate-linear</strong> when it is additive and $\varphi(\lambda z) = \bar\lambda\,\varphi(z)$ for every $\lambda \in \mathbb{C}$; such an operator is $\mathbb{R}$-linear, is not $\mathbb{C}$-linear unless it is zero, and is determined by the single value $u = \varphi(1)$, since</p>
+<p>$$
+\varphi(z) = \varphi(z \cdot 1) = \bar z\,\varphi(1) = \bar z u .
+$$</p>
+<p>Writing $u = p + qi$ and using $\bar i = -i$, the operator is</p>
+<p>$$
+\varphi(p + qi): \quad 1 \mapsto p + qi, \qquad i \mapsto -i(p+qi) = q - pi,
+$$</p>
+<p>so in the basis $(1,i)$ its matrix and its action are</p>
+<p>$$
+\varphi = \begin{pmatrix} p & q \\ q & -p \end{pmatrix}, \qquad \varphi(x + yi) = (px + qy) + (qx - py)i .
+$$</p>
+<p>These operators form a subspace of dimension $2$. The composite of two of them is $\mathbb{C}$-linear rather than conjugate-linear, since</p>
+<p>$$
+\varphi_u(\varphi_v(z)) = \overline{\varphi_v(z)}\,u = \overline{\bar z v}\,u = \overline{v}\,u\,z = L(\overline{v}u)(z),
+$$</p>
+<p>so the conjugate-linear operators are not closed under composition; the composite lands back in $L(\mathbb{C})$, as it must, since the product of two conjugations is a linear map. The two subspaces together exhaust the ambient space:</p>
+<p>$$
+M_2(\mathbb{R}) = L(\mathbb{C}) \ \oplus\ \text{(conjugate-linear operators)}, \qquad 4 = 2 + 2 .
+$$</p>
+<p>The decomposition is direct, since a matrix of the form $\begin{pmatrix} a & -b \\ b & a\end{pmatrix}$ can equal one of the form $\begin{pmatrix} p & q \\ q & -p\end{pmatrix}$ only when all four entries vanish. So every $\mathbb{R}$-linear operator on $\mathbb{C}$ is uniquely the sum of a $\mathbb{C}$-linear one and a conjugate-linear one.</p>
+<p><strong>The derivations.</strong> There are none beyond zero. If $\delta$ is an $\mathbb{R}$-derivation then</p>
+<p>$$
+0 = \delta(1) = \delta(i \cdot i) = \delta(i)i + i\delta(i) = 2i\,\delta(i),
+$$</p>
+<p>so $\delta(i) = 0$, and since $\delta$ kills $\mathbb{R}$ and $\mathbb{C}$ is generated over $\mathbb{R}$ by $1$ and $i$, the derivation is zero:</p>
+<p>$$
+\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0 .
+$$</p>
+<p>The vanishing says that the automorphism group of $\mathbb{C}$ over $\mathbb{R}$ is discrete: a one-parameter family of automorphisms would differentiate to a nonzero derivation, and there is none. The field has no infinitesimal symmetry, only the single reflection $\kappa$, and it is rigid over its prime field in this sense.</p>
+<p><strong>The automorphisms.</strong> A unital $\mathbb{R}$-algebra automorphism fixes $\mathbb{R}$ and sends $i$ to an element with square $-1$, so $i \mapsto \pm i$:</p>
+<p>$$
+\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id},\ \kappa\} \cong \mathbb{Z}/2, \qquad \kappa(z) = \bar z .
+$$</p>
+<p>As operators the two are</p>
+<p>$$
+\mathrm{id} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad \kappa = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+$$</p>
+<p>so the nontrivial automorphism is a <strong>reflection</strong> of the plane, of determinant $-1$. It is not inner, since it is not of the form $L(z)(\cdot)L(z)^{-1}$ with $z$ invertible: conjugation by a complex number fixes $i$, whereas $\kappa$ negates it.</p>
+<p><strong>The consistency check.</strong> The two structures agree in dimension, as the tangent-space argument requires:</p>
+<p>$$
+\dim \operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = 0 = \dim \operatorname{Der}_{\mathbb{R}}(\mathbb{C}).
+$$</p>
+<p>The automorphism group is finite, so it is a zero-dimensional Lie group, and its Lie algebra is zero. The check is not vacuous, and it is what would fail if a derivation or an automorphism had been missed.</p>
+<p><strong>The norm-preserving operators.</strong> With the norm $N(x+yi) = x^2+y^2$ of Gram matrix $I$, the infinitesimal form-preservers are the skew matrices, and the condition $X^{\mathsf T} + X = 0$ cuts out</p>
+<p>$$
+\mathfrak{so}(2) = \operatorname{span}_{\mathbb{R}} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \operatorname{span}_{\mathbb{R}} L(i),
+$$</p>
+<p>a one-dimensional subspace of the four-dimensional ambient space. This is the sharpest of the statements for this example: the generator of the norm-preserving rotation flow is exactly multiplication by $i$. Exponentiating gives</p>
+<p>$$
+\exp(t L(i)) = \begin{pmatrix} \cos t & -\sin t \\ \sin t & \cos t \end{pmatrix} = L(\cos t + i\sin t),
+$$</p>
+<p>so the one-parameter group of rotations is the image under $L$ of the norm-one elements of $\mathbb{C}$, and the isomorphism $U(1) \to SO(2)$ of the companion article on the two-dimensional algebras is the restriction of $L$ to the norm-one group. The rotation is algebraic in origin, and the metric is what makes it visible.</p>
+<h2 id="the-three-two-dimensional-algebras">The Three Two-Dimensional Algebras</h2>
+<p>The pattern that decides the derivation space is visible by running the same computation over the three commutative unital two-dimensional algebras $\mathbb{C}$, $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ and $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$. All three have the same ambient space $M_2(\mathbb{R})$, and the classes separate as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$A$</th>
+<th>$Z(A)$, dimension</th>
+<th>$n - \dim Z$</th>
+<th>inner derivations</th>
+<th>$\operatorname{Der}_{\mathbb{R}}(A)$</th>
+<th>$\operatorname{Aut}_{\mathbb{R}}(A)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{C}$, 2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>$\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$\mathbb{D}$, 2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>$\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>$\mathbb{D}'$, 2</td>
+<td>0</td>
+<td>0</td>
+<td><strong>1</strong></td>
+<td>$\mathbb{R}^{\times}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>All three algebras are commutative, so each equals its own centre and $\dim Z(A) = 2$ in every row; equivalently, every inner derivation vanishes in all three rows, since $\mathrm{ad}_a = 0$ when the algebra is commutative.</p>
+<p>The formula $\dim \operatorname{Der} = n - \dim Z(A)$ therefore holds in the first two rows but <strong>fails in the third</strong>: it predicts $0$ for $\mathbb{D}'$, where the derivation space is one-dimensional. The failure is exactly the statement that the single derivation of $\mathbb{D}'$ is <strong>outer</strong>. So the formula is not a consequence of dimension counting alone; it holds precisely when every derivation is inner, which is a property of the algebra and not of its dimension. The automorphism group is finite in the first two rows and one-dimensional in the third, matching the dimension of the derivation space in every row, so the exponential link between the two rungs is unaffected by the failure of the formula.</p>
+<p>This also separates the two quantities that the notation invites one to confuse. The centre $Z(A)$ is a subspace of $A$, of dimension $2$ for each of these commutative algebras. The centralizer of $L(A)$ inside $\operatorname{End}_{\mathbb{R}}(A)$ is the <em>right multiplications</em> $R(A)$, also of dimension $2$, and the two are different objects that happen to share a dimension here. Only the centre enters the derivation dimension.</p>
+<p><strong>What the derivations detect.</strong> The distinction between the rows is the presence of a nilpotent. For $\mathbb{D}$ the generator satisfies $j^2 = 1$, and $0 = \delta(j^2) = 2j\,\delta(j)$ with $j$ invertible forces $\delta(j) = 0$, so $\delta$ vanishes. For $\mathbb{D}'$ the generator satisfies $\varepsilon^2 = 0$, and the Leibniz rule imposes no such obstruction; the space is one-dimensional, spanned by the derivation with</p>
+<p>$$
+\delta(\varepsilon) = \varepsilon, \qquad \delta(a + b\varepsilon) = b\varepsilon .
+$$</p>
+<p>This derivation rescales the infinitesimal direction. It is worth noting that the naive derivative is not the derivation here: the map sending $\varepsilon$ to $1$ fails the Leibniz rule at $\varepsilon^2$, since it would send $0$ to $\varepsilon \cdot 1 + 1 \cdot \varepsilon = 2\varepsilon$. The derivation space is one-dimensional and is spanned by $\delta$ above, not by the difference quotient.</p>
+<p>The two-dimensional algebras therefore show the ladder in two dimensions with the derivation rung and the automorphism rung changing height together, and they show the nilpotent as the source of the change. The rotations implemented by these three algebras, and the norm forms that make them rotations, are treated in <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>.</p>
+<h2 id="the-four-dimensional-cases">The Four-Dimensional Cases</h2>
+<p>The quaternions and the biquaternions show the ladder at $n = 4$ over two different ground fields.</p>
+<p><strong>The quaternions over $\mathbb{R}$.</strong> Here $n = 4$ and the ambient space is $M_4(\mathbb{R})$, of dimension $16$. The centre is $\mathbb{R}$, so $\dim \operatorname{Der}_{\mathbb{R}}(\mathbb{H}) = 4 - 1 = 3$, and the derivations are the inner ones $\mathrm{ad}_p$ with $p$ pure imaginary. On the three-dimensional space of pure imaginary quaternions the bracket is twice the cross product, so</p>
+<p>$$
+\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3 \cong \mathfrak{so}(3), \qquad \operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong SO(3),
+$$</p>
+<p>and the automorphism group is realised by the inner automorphisms, giving the double cover $S^3 \to SO(3)$. The two dimensions agree, 3 and 3.</p>
+<p><strong>The biquaternions over $\mathbb{C}$.</strong> Here $n = 4$ and the ambient space is $M_4(\mathbb{C})$, again of dimension $16$, but the scalars are $\mathbb{C}$ rather than $\mathbb{R}$. The centre is $\mathbb{C}$, so $\dim_{\mathbb{C}} \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) = 4 - 1 = 3$, and every derivation is inner:</p>
+<p>$$
+\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}_2(\mathbb{C}), \qquad \operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) \cong PSL_2(\mathbb{C}),
+$$</p>
+<p>the automorphism group being the inner automorphisms modulo the scalars by Skolem–Noether.</p>
+<p><strong>The biquaternions over $\mathbb{R}$.</strong> Reading the same set over $\mathbb{R}$ changes the ambient space to $M_8(\mathbb{R})$, of dimension $64$, while the centre becomes the two-dimensional $\mathbb{C}_{\mathbb{B}}$, so the formula gives $8 - 2 = 6$ and</p>
+<p>$$
+\operatorname{Der}_{\mathbb{R}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}_2(\mathbb{C})_{\mathbb{R}} \cong \mathfrak{so}(3,1),
+$$</p>
+<p>of real dimension $6$. The automorphism group acquires a second coset from complex conjugation, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PSL_2(\mathbb{C}) \rtimes \mathbb{Z}/2$, again of dimension $6$.</p>
+<p><strong>The rotations and the boosts.</strong> The six real derivations of $\mathbb{B}$ split into two three-dimensional pieces. Writing $r_k = \mathrm{ad}_{e_k}$ and $b_k = \mathrm{ad}_{i e_k}$ for $k = 1,2,3$, the brackets are</p>
+<p>$$
+[r_i, r_j] = 2\varepsilon_{ijk} r_k, \qquad [r_i, b_j] = 2\varepsilon_{ijk} b_k, \qquad [b_i, b_j] = -2\varepsilon_{ijk} r_k .
+$$</p>
+<p>The $r_k$ span a three-dimensional subalgebra isomorphic to $\mathfrak{su}(2) \cong \mathfrak{so}(3)$, the compact rotations. The $b_k$ span a complementary three-dimensional subspace, the non-compact boosts, which is not a subalgebra: the third relation returns a rotation rather than a boost. The minus sign there is what makes the algebra $\mathfrak{so}(3,1)$ rather than $\mathfrak{so}(4)$; for $\mathfrak{so}(4)$ the two pieces would be two copies of $\mathfrak{su}(2)$ closing separately with the same sign. Scaling by $J_k = \tfrac{1}{2}r_k$ and $K_k = \tfrac{1}{2}b_k$ exhibits the standard Lorentz relations. The full details, with the automorphism and derivation computations for both ground fields, are in <em>Biquaternion Automorphisms and Derivations</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>Fixing a $k$-algebra $A$ with $n = \dim_k A$ places every linear operator on $A$ in the one ambient space $\operatorname{End}_k(A) \cong M_n(k)$, of dimension $n^2$, and the classes of operators worth naming are subspaces and groups inside it. A condition linear in the operator defines a subspace: the derivations by the Leibniz rule, the $A$-linear operators as the centralizer of the left multiplications, and the infinitesimal form-preservers. A condition nonlinear in the operator defines a set that is not a subspace, and a group once invertibility is added: the algebra automorphisms, which are the units of the endomorphism monoid, and the groups preserving a form. The derivations are the tangent space of the automorphism group at the identity, so the dimension of the one equals the dimension of the other.</p>
+<p>The ladder for the biquaternion algebra inside $M_4(\mathbb{C})$ has the all-operators rung of dimension $16$, the orthogonal rung $\mathfrak{so}(4,\mathbb{C})$ of dimension $6$, the derivations and the pure left multiplications of dimension $3$ each, the left and right multiplication spaces of dimension $4$ each, and the scalars of dimension $1$. The two three-dimensional pieces satisfy $\mathfrak{so}(4,\mathbb{C}) = L(\text{pure}) \oplus \operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the left multiplication space is $\mathbb{C}\cdot I$ plus the pure part. The automorphism group $PSL_2(\mathbb{C})$ and the orthogonal group $O(4,\mathbb{C})$ sit inside the ambient space as groups, with the first contained in the second because an automorphism preserves the norm.</p>
+<p>The worked case of $\mathbb{C}$ over $\mathbb{R}$ exhibits the whole scheme in the smallest nontrivial dimension. The ambient space $M_2(\mathbb{R})$ has dimension $4$ and splits as $L(\mathbb{C}) \oplus \{\text{conjugate-linear maps}\}$, of dimensions $2 + 2$; the derivations are zero, because $0 = \delta(i^2) = 2i\,\delta(i)$ kills the generator; the automorphisms are $\mathbb{Z}/2$, generated by a reflection; and the Lie algebra $\mathfrak{so}(2)$ of the norm-preserving rotations is spanned by $L(i)$ itself, so that the rotation is generated by multiplication by the imaginary unit and the metric only makes it visible.</p>
+<p>Running the same computation over the three two-dimensional algebras shows the derivation dimension to be the invariant that separates them: it is $0$ for $\mathbb{C}$ and $\mathbb{D}$ and $1$ for $\mathbb{D}'$, and the asymmetry is caused by the nilpotent generator of $\mathbb{D}'$, which the Leibniz rule does not obstruct. These three algebras are commutative, so all their inner derivations vanish and $\dim Z(A) = n$ for each; the one-dimensional derivation space of $\mathbb{D}'$ is therefore entirely outer, and it is the case in which the formula $\dim \operatorname{Der} = n - \dim Z(A)$ fails, since it predicts $0$. The formula holds for $\mathbb{H}$ over $\mathbb{R}$ and for $\mathbb{B}$ over $\mathbb{C}$, where it gives $\dim \operatorname{Der} = 3$ with automorphism groups $SO(3)$ and $PSL_2(\mathbb{C})$ respectively, and over $\mathbb{R}$ the biquaternion derivation space is the six-dimensional $\mathfrak{so}(3,1)$, whose split into rotations and boosts is the origin of the Lorentz algebra in this setting.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>Ground field</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>Finite-dimensional unital associative $k$-algebra</td>
+</tr>
+<tr>
+<td>$n = \dim_k A$</td>
+<td>Dimension of $A$ over $k$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_k(A) \cong M_n(k)$</td>
+<td>Ambient space of all $k$-linear operators on $A$</td>
+</tr>
+<tr>
+<td>$L(a)$, $L(a)(x) = ax$</td>
+<td>Left multiplication by $a$</td>
+</tr>
+<tr>
+<td>$R(a)$, $R(a)(x) = xa$</td>
+<td>Right multiplication by $a$</td>
+</tr>
+<tr>
+<td>$L(A)$, $R(A)$</td>
+<td>Subspaces of left and right multiplications, dimension $n$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}_k(A)$</td>
+<td>Lie algebra of $k$-derivations of $A$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_a(x) = [a,x]$</td>
+<td>Inner derivation by $a$</td>
+</tr>
+<tr>
+<td>$\operatorname{InnDer}_k(A) \cong A/Z(A)$</td>
+<td>Inner derivations; all derivations when $A$ is separable</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_k(A)$</td>
+<td>Group of $k$-algebra automorphisms of $A$</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>Centre of $A$, a subspace of $A$</td>
+</tr>
+<tr>
+<td>$\exp(\delta)$</td>
+<td>Exponential of a nilpotent derivation, an automorphism</td>
+</tr>
+<tr>
+<td>$O(G)$</td>
+<td>Operators preserving the form with Gram matrix $G$</td>
+</tr>
+<tr>
+<td>$T(Q) = Q^{\mathsf T}$</td>
+<td>Transpose, a unital norm-preserving anti-automorphism of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(n,\mathbb{C})$, $\mathfrak{so}(n)$</td>
+<td>Lie algebras of skew operators</td>
+</tr>
+<tr>
+<td>$r_k = \mathrm{ad}_{e_k}$, $b_k = \mathrm{ad}_{ie_k}$</td>
+<td>Rotations and boosts in $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$</td>
+<td>Real, complex, quaternion and biquaternion algebras</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>Split complex numbers and dual numbers</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>Norm form of the algebra and determinant of the multiplication matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for derivations, their Lie algebra structure and the exponential.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for automorphisms, derivations and the centralizer of the regular representation.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for endomorphism rings, the centralizer description and the regular module.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the centralizer and the double centralizer theorems.</li>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Carus Mathematical Monographs 15, MAA, 1968), for the Skolem–Noether theorem and central simple algebras.</li>
+<li>Gerhard Hochschild, <em>On the cohomology groups of an associative algebra</em> (Annals of Mathematics 46, 1945), for the identification of the first cohomology with the derivations and the vanishing for separable algebras.</li>
+<li>Murray Gerstenhaber, <em>On the deformation of rings and algebras</em> (Annals of Mathematics 79, 1964), for the reading of the higher cohomology as deformations.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991), for the groups preserving a form on an algebra.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the quaternion and biquaternion computations used in the examples.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the relation of the biquaternion derivations to the Lorentz algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

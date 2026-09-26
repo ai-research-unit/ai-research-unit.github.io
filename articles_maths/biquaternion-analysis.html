@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-analysis"><strong>Biquaternion Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the analysis of biquaternion-valued functions. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces, and it follows the article on biquaternion norm and invertibility, which defined the norm form, the Hermitian form, and the Euclidean norm. The goal here is to define limits, continuity, and differentiation for biquaternion-valued functions, and to establish the differential operators that will be used in later applications.</p>
+<p>The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of a four-dimensional real subspace of $\mathbb{B}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.</p>
+<p>Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.</p>
+<p>The integral theory of biquaternion-valued functions is the subject of the companion article on biquaternion integration.</p>
+<h2 id="the-metric-structure-of-math2">The Metric Structure of $\mathbb{B}$</h2>
+<h3 id="the-euclidean-norm">The Euclidean Norm</h3>
+<p>The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension $8$. A biquaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
+$$</p>
+<p>Writing each complex coefficient as $Q_\mu = q_\mu + i q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$, the <strong>Euclidean norm</strong> is</p>
+<p>$$
+\|\tilde{Q}\|_E = \sqrt{q_0^2 + q'^2_0 + q_1^2 + q'^2_1 + q_2^2 + q'^2_2 + q_3^2 + q'^2_3} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
+$$</p>
+<p>Equivalently, this is the square root of the scalar part of the Hermitian form, $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$, as defined in the article on biquaternion norm and invertibility.</p>
+<p>The Euclidean norm is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It satisfies</p>
+<p>$$
+\|\tilde{Q} + \tilde{R}\|_E \leq \|\tilde{Q}\|_E + \|\tilde{R}\|_E, \qquad \|\lambda \tilde{Q}\|_E = |\lambda| \|\tilde{Q}\|_E, \qquad \lambda \in \mathbb{R}.
+$$</p>
+<p>The norm is <strong>not</strong> multiplicative with respect to the biquaternion product. The reason is structural: the product $\tilde{Q}\tilde{R}$ is not obtained by multiplying the moduli $\|\tilde{Q}\|_E$ and $\|\tilde{R}\|_E$, and the equality $\|\tilde{Q}\tilde{R}\|_E = \|\tilde{Q}\|_E\|\tilde{R}\|_E$ fails in general. (This is in contrast to the multiplicative but complex-valued norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, which satisfies $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ but vanishes on the zero divisors, so it cannot serve as a norm.)</p>
+<p>As a concrete example, take $\tilde{Q} = \tilde{R} = e_1 + ie_2$. Then $\|\tilde{Q}\|_E = \|\tilde{R}\|_E = \sqrt{2}$, but</p>
+<p>$$
+\tilde{Q}\tilde{R} = (e_1 + ie_2)^2 = e_1^2 + e_1(ie_2) + (ie_2)e_1 + (ie_2)^2 = -1 + ie_3 - ie_3 + 1 = 0,
+$$</p>
+<p>so $\|\tilde{Q}\tilde{R}\|_E = 0 \neq \|\tilde{Q}\|_E \|\tilde{R}\|_E = 2$. The Euclidean norm is the ordinary norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$, and it does not respect the algebra structure.</p>
+<h3 id="the-distance">The Distance</h3>
+<p>The <strong>distance</strong> between two biquaternions is</p>
+<p>$$
+d(\tilde{Q}, \tilde{R}) = \|\tilde{Q} - \tilde{R}\|_E.
+$$</p>
+<p>It is a genuine metric on $\mathbb{B}$: positive-definite, symmetric, and satisfying the triangle inequality. The pair $(\mathbb{B}, d)$ is a metric space isometric to $\mathbb{R}^8$.</p>
+<h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
+<p>The <strong>open ball</strong> of radius $r > 0$ centered at $\tilde{Q}_0$ is</p>
+<p>$$
+B(\tilde{Q}_0, r) = \{\tilde{Q} \in \mathbb{B} : \|\tilde{Q} - \tilde{Q}_0\|_E < r\}.
+$$</p>
+<p>A <strong>neighborhood</strong> of $\tilde{Q}_0$ is any set containing some $B(\tilde{Q}_0, r)$. The topology generated by the open balls is the ordinary Euclidean topology of $\mathbb{R}^8$.</p>
+<h2 id="limits-and-continuity">Limits and Continuity</h2>
+<h3 id="limits-of-functions">Limits of Functions</h3>
+<p><strong>Definition (limit).</strong> Let $\tilde{F} : \mathbb{B} \to \mathbb{B}$ be a function, $\tilde{Q}_0 \in \mathbb{B}$ a point, and $\tilde{L} \in \mathbb{B}$ a biquaternion. We say that $\tilde{F}(\tilde{Q})$ <strong>tends to</strong> $\tilde{L}$ as $\tilde{Q}$ tends to $\tilde{Q}_0$, and write</p>
+<p>$$
+\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{L},
+$$</p>
+<p>if for every $\varepsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon.
+$$</p>
+<p>The punctured condition $0 < \|\tilde{Q} - \tilde{Q}_0\|_E$ ensures that the value of $\tilde{F}$ at $\tilde{Q}_0$ itself does not affect the limit.</p>
+<p><strong>Theorem (uniqueness).</strong> If the limit exists, it is unique.</p>
+<p><strong>Proof.</strong> Suppose $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{F}(\tilde{Q}) \to \tilde{L}'$ as $\tilde{Q} \to \tilde{Q}_0$, with $\tilde{L} \neq \tilde{L}'$. Let $\varepsilon = \|\tilde{L} - \tilde{L}'\|_E/2 > 0$. By the definition, there exist $\delta_1, \delta_2 > 0$ such that $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_1$, and $\|\tilde{F}(\tilde{Q}) - \tilde{L}'\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_2$. Choose $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \min(\delta_1, \delta_2)$. Then</p>
+<p>$$
+\|\tilde{L} - \tilde{L}'\|_E \leq \|\tilde{L} - \tilde{F}(\tilde{Q})\|_E + \|\tilde{F}(\tilde{Q}) - \tilde{L}'\|_E < 2\varepsilon = \|\tilde{L} - \tilde{L}'\|_E,
+$$</p>
+<p>a contradiction. $\square$</p>
+<p><strong>Theorem (sequential criterion).</strong> $\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{L}$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{B} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $\tilde{F}(\tilde{Q}_n) \to \tilde{L}$.</p>
+<p><strong>Proof.</strong> The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $\tilde{F}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis. $\square$</p>
+<p><strong>Theorem (algebra of limits).</strong> If $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{G}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then</p>
+<p>$$
+\tilde{F}(\tilde{Q}) + \tilde{G}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad \tilde{F}(\tilde{Q}) \circ \tilde{G}(\tilde{Q}) \to \tilde{L} \circ \tilde{M}.
+$$</p>
+<p><strong>Proof.</strong> For the sum, use the triangle inequality:</p>
+<p>$$
+\|(\tilde{F} + \tilde{G}) - (\tilde{L} + \tilde{M})\|_E \leq \|\tilde{F} - \tilde{L}\|_E + \|\tilde{G} - \tilde{M}\|_E.
+$$</p>
+<p>For the product, use the identity</p>
+<p>$$
+\tilde{F} \tilde{G} - \tilde{L} \tilde{M} = (\tilde{F} - \tilde{L}) \tilde{G} + \tilde{L} (\tilde{G} - \tilde{M}),
+$$</p>
+<p>and the fact that $\tilde{G}$ is bounded near $\tilde{Q}_0$ (because it has a limit). $\square$</p>
+<h3 id="continuity">Continuity</h3>
+<p><strong>Definition (continuity).</strong> A function $\tilde{F} : \mathbb{B} \to \mathbb{B}$ is <strong>continuous at a point</strong> $\tilde{Q}_0 \in \mathbb{B}$ if the limit exists and equals the value of the function at that point:</p>
+<p>$$
+\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{F}(\tilde{Q}_0).
+$$</p>
+<p>Equivalently, for every $\varepsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+\|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \varepsilon.
+$$</p>
+<p>The function is <strong>continuous on an open set</strong> if it is continuous at every point of the set.</p>
+<p><strong>Theorem (basic properties).</strong> If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and $\tilde{F} \circ \tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then $\tilde{G} \circ \tilde{F}$ is continuous at $\tilde{Q}_0$.</p>
+<p><strong>Proof.</strong> The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$. $\square$</p>
+<p><strong>Theorem (component-wise continuity).</strong> A function $\tilde{F} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$.</p>
+<p><strong>Proof.</strong> The Euclidean norm is equivalent to the maximum of the moduli of the coefficients: $\max_\mu |F_\mu| \leq \|\tilde{F}\|_E \leq 2 \max_\mu |F_\mu|$. So convergence in $\mathbb{B}$ is equivalent to convergence of each coefficient. $\square$</p>
+<p><strong>Theorem (uniform continuity).</strong> A continuous function on a compact subset of $\mathbb{B}$ is uniformly continuous.</p>
+<p><strong>Proof.</strong> This is the standard argument: if $\tilde{F}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|\tilde{F}(\tilde{Q}_n) - \tilde{F}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $\tilde{F}(\tilde{Q}_n) \to \tilde{F}(\tilde{Q})$ and $\tilde{F}(\tilde{R}_n) \to \tilde{F}(\tilde{Q})$, contradicting the inequality. $\square$</p>
+<h2 id="the-problem-of-differentiability">The Problem of Differentiability</h2>
+<h3 id="the-naive-definition">The Naive Definition</h3>
+<p>The derivative of a function $\tilde{F} : \mathbb{B} \to \mathbb{B}$ at a point $\tilde{Q}_0$ would be defined, in analogy with ordinary calculus, as the limit</p>
+<p>$$
+\tilde{F}'(\tilde{Q}_0) = \lim_{\tilde{H} \to 0} \frac{\tilde{F}(\tilde{Q}_0 + \tilde{H}) - \tilde{F}(\tilde{Q}_0)}{\tilde{H}},
+$$</p>
+<p>where $\tilde{H}$ is a biquaternion and the quotient is a biquaternion quotient. This definition runs into two difficulties, both specific to the non-commutative and non-division structure of $\mathbb{B}$.</p>
+<h3 id="the-first-obstruction-left-and-right-division">The First Obstruction: Left and Right Division</h3>
+<p>In a non-commutative algebra, the quotient $\tilde{A} / \tilde{H}$ is ambiguous. There are two natural definitions:</p>
+<ul>
+<li><strong>Left division:</strong> $\tilde{A} / \tilde{H}$ means $\tilde{H}^{-1} \tilde{A}$, multiplying by $\tilde{H}^{-1}$ on the left.</li>
+<li><strong>Right division:</strong> $\tilde{A} / \tilde{H}$ means $\tilde{A} \tilde{H}^{-1}$, multiplying by $\tilde{H}^{-1}$ on the right.</li>
+</ul>
+<p>These two conventions give different results in general. So the derivative would depend on the convention, and there would be two distinct notions: the <strong>left derivative</strong> and the <strong>right derivative</strong>. Neither is privileged over the other.</p>
+<h3 id="the-second-obstruction-zero-divisors">The Second Obstruction: Zero Divisors</h3>
+<p>The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm form, $\tilde{H} \bar{\tilde{H}} = 0$, for which no inverse exists. These are the <strong>zero divisors</strong> of the algebra, discussed in detail in the article on biquaternion zero divisors. For such $\tilde{H}$, the quotient $\tilde{A} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor.</p>
+<h3 id="the-standard-approach">The Standard Approach</h3>
+<p>Together, these two difficulties make a direct definition of differentiability with respect to the biquaternion variable problematic. The standard approach in quaternionic analysis (Fueter and his descendants) avoids the problem by working with <strong>four real parameters</strong> rather than with a biquaternion variable. The function is defined on a four-dimensional real subspace of $\mathbb{B}$, and the biquaternion structure is used to define a special class of "regular" functions, the analogue of holomorphic functions.</p>
+<p>We adopt this approach. The function is defined on a four-dimensional real subspace of $\mathbb{B}$, the independent variables are four real parameters, and the biquaternion structure is used to define the differential operators.</p>
+<h2 id="functions-on-a-four-dimensional-subspace">Functions on a Four-Dimensional Subspace</h2>
+<h3 id="the-four-named-subspaces">The Four Named Subspaces</h3>
+<p>In each of the four subspaces treated in this section, the complex coefficients $Q_0, Q_1, Q_2, Q_3$ of a general element take specific forms.</p>
+<p><strong>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</strong> An element is written</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R},
+$$</p>
+<p>so the complex coefficients are $Q_0 = q_0$, $Q_1 = q_1$, $Q_2 = q_2$, $Q_3 = q_3$. All four coefficients are <strong>real</strong>.</p>
+<p><strong>The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$.</strong> An element is written</p>
+<p>$$
+\tilde{Q} = i q'_0\, e_0 + i q'_1\, e_1 + i q'_2\, e_2 + i q'_3\, e_3, \qquad q'_0, q'_1, q'_2, q'_3 \in \mathbb{R},
+$$</p>
+<p>so the complex coefficients are $Q_0 = i q'_0$, $Q_1 = i q'_1$, $Q_2 = i q'_2$, $Q_3 = i q'_3$. All four coefficients are <strong>purely imaginary</strong>. Every partial derivative on this subspace therefore carries a factor of $-i$, and the d'Alembertian is the negative of the Euclidean Laplacian — the mirror of the situation on $\mathbb{H}_{\mathbb{B}}$.</p>
+<p><strong>The anti-Hermitian subspace $\mathbb{M}_-$.</strong> An element is written</p>
+<p>$$
+\tilde{Q} = i q'_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R},
+$$</p>
+<p>so the complex coefficients are $Q_0 = i q'_0$, $Q_1 = q_1$, $Q_2 = q_2$, $Q_3 = q_3$. The <strong>first coefficient is purely imaginary</strong>, and the three spatial coefficients are <strong>real</strong>.</p>
+<p><strong>The Hermitian subspace $\mathbb{M}_+$.</strong> An element is written</p>
+<p>$$
+\tilde{Q} = q_0\, e_0 + i q'_1\, e_1 + i q'_2\, e_2 + i q'_3\, e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R},
+$$</p>
+<p>so the complex coefficients are $Q_0 = q_0$, $Q_1 = i q'_1$, $Q_2 = i q'_2$, $Q_3 = i q'_3$. The <strong>first coefficient is real</strong>, and the three spatial coefficients are <strong>purely imaginary</strong>.</p>
+<p>In each case, the four real parameters ($q_0, q_1, q_2, q_3$ for $\mathbb{H}_{\mathbb{B}}$; $q'_0, q'_1, q'_2, q'_3$ for $i\mathbb{H}_{\mathbb{B}}$; $q'_0, q_1, q_2, q_3$ for $\mathbb{M}_-$; $q_0, q'_1, q'_2, q'_3$ for $\mathbb{M}_+$) are the independent variables.</p>
+<h3 id="functions-on-a-subspace">Functions on a Subspace</h3>
+<p>A <strong>biquaternion-valued function on a four-dimensional subspace</strong> is a map</p>
+<p>$$
+\tilde{F} : V \to \mathbb{B}, \qquad \tilde{Q} \mapsto \tilde{F}(\tilde{Q}),
+$$</p>
+<p>where $V$ is one of the four subspaces above. Because $V$ is four-dimensional, the function $\tilde{F}$ is determined by four complex-valued functions of the four real parameters that parametrize $V$. For example, on $\mathbb{M}_-$,</p>
+<p>$$
+\tilde{F}(\tilde{Q}) = F_0(q'_0, q_1, q_2, q_3) e_0 + F_1(q'_0, q_1, q_2, q_3) e_1 + F_2(q'_0, q_1, q_2, q_3) e_2 + F_3(q'_0, q_1, q_2, q_3) e_3.
+$$</p>
+<p>The restriction to $V$ reduces the number of independent real variables from eight (the full algebra) to four.</p>
+<h3 id="partial-derivatives">Partial Derivatives</h3>
+<p>The partial derivatives are taken with respect to the <strong>complex coefficients</strong> $Q_\mu$ of the standard basis. When $Q_\mu$ is real, the partial derivative is the ordinary real partial derivative with respect to $Q_\mu$. When $Q_\mu$ is purely imaginary, $Q_\mu = i q'_\mu$ with $q'_\mu \in \mathbb{R}$, and the partial derivative with respect to $Q_\mu$ is defined by the chain rule:</p>
+<p>$$
+\frac{\partial}{\partial Q_\mu} = \frac{\partial}{\partial (i q'_\mu)} = \frac{1}{i} \frac{\partial}{\partial q'_\mu} = -i \frac{\partial}{\partial q'_\mu}.
+$$</p>
+<p>So, on each subspace, the partial derivatives take the following forms.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>$\partial/\partial Q_0$</th>
+<th>$\partial/\partial Q_k$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\partial/\partial q_0$</td>
+<td>$\partial/\partial q_k$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$-i\,\partial/\partial q'_0$</td>
+<td>$-i\,\partial/\partial q'_k$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$-i\,\partial/\partial q'_0$</td>
+<td>$\partial/\partial q_k$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$\partial/\partial q_0$</td>
+<td>$-i\,\partial/\partial q'_k$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The partial derivatives act component-wise on the coefficients:</p>
+<p>$$
+\frac{\partial \tilde{F}}{\partial Q_\mu} = \sum_{\nu=0}^{3} \frac{\partial F_\nu}{\partial Q_\mu} e_\nu.
+$$</p>
+<p>Since the quaternion units $e_\nu$ are constants, the rules of ordinary differential calculus apply to each coefficient separately. The partial derivatives commute: $\partial_\mu \partial_\nu \tilde{F} = \partial_\nu \partial_\mu \tilde{F}$ for all $\mu, \nu$.</p>
+<h2 id="the-differential-operators">The Differential Operators</h2>
+<h3 id="the-biquaternionic-gradient">The Biquaternionic Gradient</h3>
+<p>The <strong>biquaternionic gradient</strong> is the operator</p>
+<p>$$
+\tilde{\nabla} = e_0 \frac{\partial}{\partial Q_0} + e_1 \frac{\partial}{\partial Q_1} + e_2 \frac{\partial}{\partial Q_2} + e_3 \frac{\partial}{\partial Q_3} = \sum_{\mu=0}^{3} e_\mu \frac{\partial}{\partial Q_\mu}.
+$$</p>
+<p>This is the <strong>Cauchy–Riemann operator</strong> of the biquaternion theory (classically the Dirac operator). The tilde on $\tilde{\nabla}$ signals that it is a biquaternion-valued operator: its coefficients are $e_\mu$, which are quaternion units, and its scalar parts are the partial derivatives $\partial/\partial Q_\mu$.</p>
+<p>It acts on a biquaternion-valued function $\tilde{F}$ on $V$ by the rule</p>
+<p>$$
+\tilde{\nabla} \tilde{F} = \left(\sum_{\mu=0}^{3} e_\mu \frac{\partial}{\partial Q_\mu}\right)\left(\sum_{\nu=0}^{3} F_\nu e_\nu\right) = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} \left(\frac{\partial F_\nu}{\partial Q_\mu}\right) e_\mu e_\nu.
+$$</p>
+<p>Writing $\tilde{F} = F_0 + \mathbf{F}$ with $\mathbf{F} = F_1 e_1 + F_2 e_2 + F_3 e_3$, we can compute $\tilde{\nabla}\tilde{F}$ in scalar-vector form. Separating the cases in the double sum, we obtain</p>
+<p>$$
+\tilde{\nabla}\tilde{F} = \left(\frac{\partial F_0}{\partial Q_0} - \mathrm{div}\,\mathbf{F}\right) + \left(\frac{\partial \mathbf{F}}{\partial Q_0} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F}\right),
+$$</p>
+<p>where</p>
+<p>$$
+\mathrm{div}\,\mathbf{F} = \sum_{k=1}^{3} \frac{\partial F_k}{\partial Q_k}, \qquad \mathrm{grad}\,F_0 = \sum_{k=1}^{3} \left(\frac{\partial F_0}{\partial Q_k}\right) e_k, \qquad \mathrm{rot}\,\mathbf{F} = \sum_{j,k,l=1}^{3} \epsilon_{jkl} \left(\frac{\partial F_k}{\partial Q_j}\right) e_l.
+$$</p>
+<h3 id="the-quaternion-conjugate-of-the-gradient">The Quaternion Conjugate of the Gradient</h3>
+<p>The <strong>quaternion conjugate</strong> of $\tilde{\nabla}$ is obtained by negating the vector part:</p>
+<p>$$
+\bar{\tilde{\nabla}} = e_0 \frac{\partial}{\partial Q_0} - e_1 \frac{\partial}{\partial Q_1} - e_2 \frac{\partial}{\partial Q_2} - e_3 \frac{\partial}{\partial Q_3}.
+$$</p>
+<p>The product $\bar{\tilde{\nabla}}\tilde{F}$ is computed in the same way:</p>
+<p>$$
+\bar{\tilde{\nabla}}\tilde{F} = \left(\frac{\partial F_0}{\partial Q_0} + \mathrm{div}\,\mathbf{F}\right) + \left(\frac{\partial \mathbf{F}}{\partial Q_0} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\mathbf{F}\right).
+$$</p>
+<h3 id="the-dalembertian">The d'Alembertian</h3>
+<p>The <strong>d'Alembertian</strong> is the second-order operator obtained by composing the gradient with its quaternion conjugate:</p>
+<p>$$
+\Box = \tilde{\nabla} \bar{\tilde{\nabla}} = \bar{\tilde{\nabla}} \tilde{\nabla}.
+$$</p>
+<p>We compute both products and show that they are equal.</p>
+<p><strong>Computation of $\tilde{\nabla}\bar{\tilde{\nabla}}$.</strong> We compute $\tilde{\nabla}\bar{\tilde{\nabla}}$ as a product of operators, using the fact that the $e_\mu$ are constants:</p>
+<p>$$
+\tilde{\nabla}\bar{\tilde{\nabla}} = \left(\sum_{\mu=0}^{3} e_\mu \frac{\partial}{\partial Q_\mu}\right)\left(\sum_{\nu=0}^{3} \bar{e}_\nu \frac{\partial}{\partial Q_\nu}\right),
+$$</p>
+<p>where $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$ for $k = 1, 2, 3$. Expanding and separating the cases, the cross terms cancel, and we obtain</p>
+<p>$$
+\tilde{\nabla}\bar{\tilde{\nabla}} = e_0 \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right),
+$$</p>
+<p>where $\Delta_Q = \partial^2/\partial Q_1^2 + \partial^2/\partial Q_2^2 + \partial^2/\partial Q_3^2$ is the three-dimensional Laplacian in the remaining coordinates.</p>
+<p><strong>Computation of $\bar{\tilde{\nabla}}\tilde{\nabla}$.</strong> By the same computation,</p>
+<p>$$
+\bar{\tilde{\nabla}}\tilde{\nabla} = e_0 \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right).
+$$</p>
+<p><strong>Equality.</strong> We have shown</p>
+<p>$$
+\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right) e_0.
+$$</p>
+<p>The operator $\partial^2/\partial Q_0^2 + \Delta_Q$ is the <strong>four-dimensional Laplacian in the formal coordinates</strong> $Q_0, Q_1, Q_2, Q_3$, and we write</p>
+<p>$$
+\Box = \frac{\partial^2}{\partial Q_0^2} + \Delta_Q.
+$$</p>
+<p>The operator $\Box$ is a scalar operator: it multiplies a biquaternion by the identity $e_0$. It acts component-wise on the coefficients of $\tilde{F}$.</p>
+<p><strong>Remark on the signature.</strong> The formal expression $\partial^2/\partial Q_0^2 + \Delta_Q$ has the interpretation of a Laplacian in the coordinates $Q_\mu$, but when the subspace is such that some of the $Q_\mu$ are purely imaginary, the operator takes a Lorentzian form in the underlying real coordinates. For example, on $\mathbb{M}_-$, where $Q_0 = iq'_0$ and $Q_k = q_k$, the derivative $\partial^2/\partial Q_0^2 = -\partial^2/\partial (q'_0)^2$, so</p>
+<p>$$
+\Box\big|_{\mathbb{M}_-} = -\frac{\partial^2}{\partial (q'_0)^2} + \frac{\partial^2}{\partial q_1^2} + \frac{\partial^2}{\partial q_2^2} + \frac{\partial^2}{\partial q_3^2},
+$$</p>
+<p>which is the Lorentzian wave operator (the d'Alembertian) on $\mathbb{R}^{1,3}$, up to an overall sign convention. Similarly, on $\mathbb{M}_+$, where $Q_0 = q_0$ and $Q_k = iq'_k$, we have</p>
+<p>$$
+\Box\big|_{\mathbb{M}_+} = \frac{\partial^2}{\partial q_0^2} - \frac{\partial^2}{\partial (q'_1)^2} - \frac{\partial^2}{\partial (q'_2)^2} - \frac{\partial^2}{\partial (q'_3)^2},
+$$</p>
+<p>which is also Lorentzian, with the opposite sign convention. On $\mathbb{H}_{\mathbb{B}}$, where all $Q_\mu$ are real, $\Box$ is the ordinary Euclidean four-dimensional Laplacian.</p>
+<p>The d'Alembertian is the <strong>natural second-order operator</strong> in the biquaternion framework: it is symmetric under the exchange of $\tilde{\nabla}$ and $\bar{\tilde{\nabla}}$, it is scalar-valued, and it is the operator that appears in the second-order equations, in the Cauchy integral formula, and in the factorization of the Cauchy–Riemann operator.</p>
+<h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
+<p>The <strong>square of the gradient</strong> is the second-order operator</p>
+<p>$$
+\tilde{\nabla}^2 = \tilde{\nabla}\tilde{\nabla} = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} e_\mu e_\nu \frac{\partial^2}{\partial Q_\mu \partial Q_\nu},
+$$</p>
+<p>which uses the gradient twice, without the quaternion conjugate. Separating the cases, we obtain</p>
+<p>$$
+\tilde{\nabla}^2 = \left(\frac{\partial^2}{\partial Q_0^2} - \Delta_Q\right) + 2\sum_{k=1}^{3} e_k \frac{\partial^2}{\partial Q_0 \partial Q_k}.
+$$</p>
+<p>The scalar part is $\partial^2/\partial Q_0^2 - \Delta_Q$, and the vector part is $2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$.</p>
+<p>The square is related to the d'Alembertian by the identity</p>
+<p>$$
+\boxed{\;\tilde{\nabla}^2 = 2\,\frac{\partial}{\partial Q_0}\,\tilde{\nabla} - \Box.\;}
+$$</p>
+<p>The conjugate square satisfies the analogous identity</p>
+<p>$$
+\bar{\tilde{\nabla}}^2 = 2\,\frac{\partial}{\partial Q_0}\,\bar{\tilde{\nabla}} - \Box.
+$$</p>
+<p>The two squares are related to each other and to $\Box$ by</p>
+<p>$$
+\tilde{\nabla}^2 + \bar{\tilde{\nabla}}^2 = 2\left(\frac{\partial^2}{\partial Q_0^2} - \Delta_Q\right) e_0, \qquad \tilde{\nabla}^2 - \bar{\tilde{\nabla}}^2 = 4\sum_{k=1}^{3} e_k \frac{\partial^2}{\partial Q_0 \partial Q_k}.
+$$</p>
+<p><strong>Verification.</strong> We compute directly:</p>
+<p>$$
+2\,\frac{\partial}{\partial Q_0}\,\tilde{\nabla} - \Box = 2\,\frac{\partial}{\partial Q_0}\left(e_0 \frac{\partial}{\partial Q_0} + \sum_k e_k \frac{\partial}{\partial Q_k}\right) - \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right) e_0
+$$</p>
+<p>$$
+= 2\,\frac{\partial^2}{\partial Q_0^2}\, e_0 + 2\sum_k e_k \frac{\partial^2}{\partial Q_0 \partial Q_k} - \frac{\partial^2}{\partial Q_0^2}\, e_0 - \Delta_Q\, e_0
+$$</p>
+<p>$$
+= \left(\frac{\partial^2}{\partial Q_0^2} - \Delta_Q\right) e_0 + 2\sum_k e_k \frac{\partial^2}{\partial Q_0 \partial Q_k} = \tilde{\nabla}^2.
+$$</p>
+<p>So the identity holds. The other identities follow by conjugation and by combining.</p>
+<p><strong>Status of the two operators.</strong> The d'Alembertian $\Box$ is the natural second-order operator: it is scalar-valued, symmetric under conjugation, and it is the operator that appears in the standard second-order equations. The square $\tilde{\nabla}^2$ arises when the gradient is applied twice without conjugation. It is a valid second-order operator, and the identity above expresses it in terms of $\Box$ and the first derivative in the first coordinate. The same expression can be used to rewrite any equation involving $\tilde{\nabla}^2$ as an equation involving $\Box$ and $\tilde{\nabla}$.</p>
+<h3 id="the-convective-derivative">The Convective Derivative</h3>
+<p>Let</p>
+<p>$$
+\tilde{U} = \sum_{\mu=0}^{3} u_\mu e_\mu, \qquad u_\mu \in \mathbb{R},
+$$</p>
+<p>be a biquaternion. The <strong>biquaternionic convective derivative</strong> is the operator</p>
+<p>$$
+\tilde{D} = \bar{\tilde{U}} \tilde{\nabla},
+$$</p>
+<p>where $\bar{\tilde{U}} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.</p>
+<p>We compute it explicitly:</p>
+<p>$$
+\tilde{D} = \left(\sum_{\mu=0}^{3} \bar{u}_\mu e_\mu\right)\left(\sum_{\nu=0}^{3} e_\nu \frac{\partial}{\partial Q_\nu}\right) = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} \bar{u}_\mu e_\mu e_\nu \frac{\partial}{\partial Q_\nu},
+$$</p>
+<p>where $\bar{u}_0 = u_0$ and $\bar{u}_k = -u_k$.</p>
+<p>Separating the cases and collecting terms, we obtain</p>
+<p>$$
+\tilde{D} = \left(u_0 \frac{\partial}{\partial Q_0} + \mathbf{u}\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{Curl}(\mathbf{u}),
+$$</p>
+<p>where the scalar operator $\mathbf{u}\cdot\mathrm{grad} = \sum_k u_k \partial/\partial Q_k$ acts by multiplication by the components of $\mathbf{u}$ followed by the partial derivatives, and</p>
+<p>$$
+\mathrm{Curl}(\mathbf{u}) = \sum_{j,k,l=1}^{3} \epsilon_{jkl} \, u_j \, \frac{\partial}{\partial Q_k} \, e_l.
+$$</p>
+<p>Note that the operator $\mathrm{Curl}(\mathbf{u})$ is <strong>not</strong> the same as the "rot" of a biquaternion-valued function defined earlier: $\mathrm{rot}\,\mathbf{F} = \sum_{j,k,l}\epsilon_{jkl}(\partial F_k/\partial Q_j) e_l$ acts on the coefficient functions of $\mathbf{F}$, whereas $\mathrm{Curl}(\mathbf{u})$ acts on a fixed real quaternion $\mathbf{u}$ and the derivative operators fall on the function to its right. In particular, $\mathrm{Curl}(\mathbf{u})$ does <strong>not</strong> vanish when $\mathbf{u}$ is constant, unlike the classical curl of a constant vector field, because the partial derivatives are still there to act on the function.</p>
+<p>The <strong>scalar part</strong> of $\tilde{D}$ is</p>
+<p>$$
+\mathrm{Sc}(\tilde{D}) = u_0 \frac{\partial}{\partial Q_0} + \mathbf{u}\cdot\mathrm{grad}.
+$$</p>
+<p>This is the convective derivative in four variables. When $u_0 = 1$, it reduces to the ordinary convective derivative $\partial/\partial Q_0 + \mathbf{u}\cdot\mathrm{grad}$ for a function advected by a flow with velocity $\mathbf{u}$.</p>
+<p>The <strong>vector part</strong> of $\tilde{D}$ is</p>
+<p>$$
+\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{Curl}(\mathbf{u}).
+$$</p>
+<p>This contains terms that couple the four components of $\tilde{U}$ to the partial derivatives.</p>
+<h2 id="the-relation-to-fueter-and-clifford-analysis">The Relation to Fueter and Clifford Analysis</h2>
+<p>The approach in this article is the quaternionic analysis of Fueter, generalized to the biquaternion algebra. The key features are:</p>
+<ul>
+<li>The function is defined on a four-dimensional real subspace of $\mathbb{B}$, with four real parameters.</li>
+<li>The differential operators are biquaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\bar{\tilde{\nabla}}$.</li>
+<li>The "regular" functions are those satisfying $\tilde{\nabla}\tilde{F} = 0$, the biquaternion analogue of the Cauchy–Riemann equations.</li>
+</ul>
+<p>This approach is closely related to <strong>Clifford analysis</strong>, which generalizes the theory to Clifford algebras over arbitrary base rings (including the real and complex numbers). The biquaternion algebra is isomorphic to the even subalgebra of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion analysis developed here is the four-dimensional case of the general Clifford analysis.</p>
+<p>The main difference from the classical Fueter theory is that the functions are biquaternion-valued rather than quaternion-valued, and the coefficients are complex. This allows for a richer structure, including the two polar forms and the four conjugations, which do not appear in the quaternion case.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p>The following questions are not answered in this article and are left for later work:</p>
+<ol>
+<li>
+<p><strong>Invariance.</strong> Under what transformations of the four-dimensional subspace do the operators $\tilde{\nabla}$, $\Box$, and $\tilde{\nabla}^2$ transform in a simple way?</p>
+</li>
+<li>
+<p><strong>Solutions of $\tilde{\nabla}\tilde{F} = 0$.</strong> What is the structure of biquaternion-valued functions on the subspace that satisfy $\tilde{\nabla}\tilde{F} = 0$? This is the biquaternion analogue of the Cauchy–Riemann equations.</p>
+</li>
+<li>
+<p><strong>Solutions of $\Box\tilde{F} = 0$.</strong> What is the structure of solutions of the four-dimensional Laplace equation?</p>
+</li>
+<li>
+<p><strong>The convective operator.</strong> What is the complete structure of $\tilde{D}\tilde{\nabla}$, and what does it represent mathematically?</p>
+</li>
+<li>
+<p><strong>The general case.</strong> Can the analysis be extended from a four-dimensional subspace to the full biquaternion algebra $\mathbb{B}$, with a precise definition of the partial derivatives with respect to genuinely complex coefficients?</p>
+</li>
+<li>
+<p><strong>Differentiability on other subspaces.</strong> How does the analysis extend to the other fixed-point subspaces, and in particular to the relation between $\mathbb{M}_-$ and $\mathbb{M}_+$?</p>
+</li>
+<li>
+<p><strong>The relation to the polar representations.</strong> How do the polar representations of the biquaternion algebra interact with the analysis on the four-dimensional subspaces?</p>
+</li>
+<li>
+<p><strong>The square of the gradient.</strong> The square $\tilde{\nabla}^2$ appears when the gradient is applied twice without conjugation. The identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$ expresses it in terms of $\Box$ and the first derivative. What is the natural setting in which the square $\tilde{\nabla}^2$ (as opposed to $\Box$) is the operator that appears?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension 8, with a Euclidean norm and the associated metric topology. Limits and continuity are defined in the usual way, and the basic properties hold: uniqueness of limits, the sequential criterion, the algebra of limits, continuity of sums, products, and compositions, component-wise continuity, and uniform continuity on compact sets.</p>
+<p>A direct definition of differentiability with respect to the biquaternion variable is problematic, because of the ambiguity of left and right division and the presence of zero divisors. The standard approach is to restrict to a four-dimensional real subspace of $\mathbb{B}$, with four real parameters as independent variables, and to define the differential operators on this subspace.</p>
+<p>The four subspaces used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with all complex coefficients real; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, with all complex coefficients purely imaginary; the anti-Hermitian subspace $\mathbb{M}_-$, with the first complex coefficient purely imaginary and the three spatial complex coefficients real; and the Hermitian subspace $\mathbb{M}_+$, with the first complex coefficient real and the three spatial complex coefficients purely imaginary. In each case, the partial derivatives are taken with respect to the complex coefficients, with a factor of $-i$ when the coefficient is purely imaginary.</p>
+<p>The <strong>biquaternionic gradient</strong> $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\bar{\tilde{\nabla}}$ is obtained by negating the vector part. The <strong>d'Alembertian</strong> $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$ is the <strong>natural second-order operator</strong>: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ it is the negative of that Laplacian; and on the anti-Hermitian subspace $\mathbb{M}_-$ and the Hermitian subspace $\mathbb{M}_+$ it takes a Lorentzian form in the underlying real coordinates. The <strong>square of the gradient</strong> $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The <strong>convective derivative</strong> $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.</p>
+<p>The approach is closely related to Fueter's quaternionic analysis and to Clifford analysis. The generalization to the biquaternion algebra includes the complex coefficients and the four conjugations, which enrich the structure.</p>
+<p>The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-Hermitian subspace $\mathbb{M}_-$, and the Hermitian subspace $\mathbb{M}_+$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Quaternion subspace: all coefficients real</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>Anti-quaternion subspace: all coefficients purely imaginary</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace: $Q_0$ imaginary, $Q_k$ real</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace: $Q_0$ real, $Q_k$ imaginary</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_\mu Q_\mu e_\mu$</td>
+<td>Point in a subspace</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + i q'_\mu$</td>
+<td>Complex coefficient</td>
+</tr>
+<tr>
+<td>$\partial/\partial Q_\mu$</td>
+<td>Partial derivative with respect to $Q_\mu$</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$</td>
+<td>Biquaternionic gradient</td>
+</tr>
+<tr>
+<td>$\bar{\tilde{\nabla}}$</td>
+<td>Quaternion conjugate of the gradient</td>
+</tr>
+<tr>
+<td>$\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$</td>
+<td>d'Alembertian (natural second-order operator)</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$</td>
+<td>Square of the gradient</td>
+</tr>
+<tr>
+<td>$\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$</td>
+<td>Convective derivative</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original formulation.</li>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.</li>
+<li>R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", <em>Commentarii Mathematici Helvetici</em> <strong>7</strong> (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford analysis.</li>
+<li>John Ryan, <em>Clifford Algebras in Analysis and Related Topics</em> (CRC Press, 1996), for the analytic theory of Clifford algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

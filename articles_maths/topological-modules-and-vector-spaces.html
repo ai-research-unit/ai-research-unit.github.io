@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topological Modules and Vector Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="topological-modules-and-vector-spaces"><strong>Topological Modules and Vector Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A topological module is a module carrying a topology for which addition and scalar multiplication are continuous; the topology is determined by the neighbourhoods of zero, and when a fundamental system of these consists of submodules the topology is called linear. This is the general setting in which limits, Cauchy sequences and completions make sense for modules, and it contains the $p$-adic integers, the formal power series rings and the profinite groups as inverse limits of discrete quotients. A topological vector space is the same notion over a topological field, and the seminorms of functional analysis are the standard way of producing locally convex topologies on it.</p>
+<p>Throughout, $R$ is a topological ring, commutative with $1 \neq 0$ unless stated, and $M$ is a topological $R$-module; the module topology is additive and translation-invariant. This article is the general topological theory. The normed theory, where the topology comes from a single norm and the Baire-based cornerstones are proved, is the companion article of this category on normed and Banach spaces, and the inner-product and Hilbert-space theory is the companion article on Banach and Hilbert spaces; a normed space is a special case of a topological vector space, not the general case.</p>
+<h2 id="topological-modules">Topological Modules</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>topological $R$-module</strong> is an $R$-module $M$ equipped with a topology such that the addition $M \times M \to M$ and the scalar multiplication $R \times M \to M$ are continuous. Here $R$ is a topological ring and $R \times M$ and $M \times M$ carry the product topologies.</p>
+<p><strong>Proposition.</strong> (i) The topology of a topological module is translation-invariant: the maps $x \mapsto x+a$ are homeomorphisms, so the topology is determined by the neighbourhoods of $0$. (ii) The negation $x \mapsto -x$ is a homeomorphism. (iii) If $U$ is a neighbourhood of $0$ then there is a neighbourhood $V$ of $0$ with $V+V \subseteq U$, and there is a neighbourhood of $0$ contained in $U$ that is closed.</p>
+<p><em>Proof.</em> (i) and (ii) hold because the group operations are continuous bijections with continuous inverses. (iii) Continuity of addition at $(0,0)$ gives $V+V\subseteq U$; the existence of a closed neighbourhood inside a given one uses the regularity of the additive topological group, obtained by iterating the neighbourhood condition. $\square$</p>
+<p><strong>Definition.</strong> A <strong>fundamental system of neighbourhoods of $0$</strong> is a family $\mathcal{B}$ of neighbourhoods of $0$ such that every neighbourhood of $0$ contains a member of $\mathcal{B}$. A topological module is <strong>Hausdorff</strong> (or <strong>separated</strong>) if and only if</p>
+<p>$$
+\bigcap_{U \in \mathcal{B}} U=\{0\} ,
+$$</p>
+<p>and it is <strong>discrete</strong> if $\{0\}$ is a neighbourhood of $0$.</p>
+<p><strong>Example.</strong> Every module with the discrete topology is a topological module. The field $\mathbb{R}$ with its usual topology makes $\mathbb{R}^n$ a topological $\mathbb{R}$-module. A topological ring $R$ is a topological module over itself. Any submodule of a topological module with the subspace topology, and any quotient with the quotient topology, is again a topological module.</p>
+<h3 id="linear-topologies">Linear Topologies</h3>
+<p><strong>Definition.</strong> A topology on $M$ is <strong>linear</strong> if $M$ has a fundamental system of neighbourhoods of $0$ consisting of submodules. A topology on $R$ or on $M$ given by a descending chain of submodules</p>
+<p>$$
+M=U_0 \supseteq U_1 \supseteq U_2 \supseteq \cdots
+$$</p>
+<p>is the topology in which a set is open if it is a union of cosets of the $U_n$; equivalently, the $U_n$ form a fundamental system of neighbourhoods of $0$.</p>
+<p><strong>Proposition.</strong> A descending chain of submodules $M=U_0 \supseteq U_1 \supseteq \cdots$ defines a topology in which a set is open exactly when it is a union of cosets of the $U_n$, and the $U_n$ are then a fundamental system of neighbourhoods of $0$. Addition and negation are continuous, so the topology is translation-invariant, and it is Hausdorff if and only if $\bigcap_nU_n=0$. The closure of a submodule $N$ is $\overline N=\bigcap_n(N+U_n)$, and the quotient topology on $M/N$ is linear, with neighbourhoods of zero the images of the $U_n$. Scalar multiplication is continuous when the topology on $R$ is discrete, and more generally when $U_n=I^nM$ for an ideal $I$ and $R$ carries the $I$-adic topology; for an arbitrary topological ring it can fail, as the discrete topology on $M=\mathbb{R}$ over $R=\mathbb{R}$ shows: at the point $(0,1)$ the product is $0$, while the elements $\lambda \cdot 1$ for arbitrarily small nonzero $\lambda$ are nonzero, so no neighbourhood of $(0,1)$ maps into the open set $\{0\}$.</p>
+<p><em>Proof.</em> The cosets of the $U_n$ form a basis for a topology, and $U_{n+1}+U_{n+1}\subseteq U_n$ makes addition continuous at $0$, hence everywhere by translation-invariance. Since each $U_n$ is a submodule, $rU_n \subseteq U_n$ for every $r \in R$; taking the first factor of $R \times M$ to be the open singleton $\{r_0\}$ when $R$ is discrete, or the coset $r_0+I^m$ when $R$ is $I$-adic, and the second to be $x_0+U_m$, the terms $r_0u$, $wx_0$ and $wu$ of the product all land in $U_m$, which is the stated continuity. Hausdorffness is the intersection condition, and for the closure, $x \in \overline N$ iff every neighbourhood $x+U_n$ meets $N$, that is, $x \in N+U_n$ for every $n$. $\square$</p>
+<p><strong>Example (the $I$-adic topology).</strong> For an ideal $I \subseteq R$ the chain $M \supseteq IM \supseteq I^2M \supseteq \cdots$ defines the <strong>$I$-adic topology</strong> on $M$; it is linear, and it is Hausdorff exactly when $\bigcap_n I^nM=0$. The completion of this topology is the algebraic $I$-adic completion treated in the companion article of this category on localisation and completion of modules; here it is the topology that is the object of study.</p>
+<h2 id="quotients-and-completions">Quotients and Completions</h2>
+<h3 id="quotient-modules">Quotient Modules</h3>
+<p><strong>Theorem.</strong> Let $N \subseteq M$ be a submodule. The quotient topology on $M/N$, with the quotient map $q:M \to M/N$ open, makes $M/N$ a topological module, and $q$ is continuous and open. If $M$ is Hausdorff and $N$ is closed, then $M/N$ is Hausdorff. The quotient topology is the finest topology on $M/N$ making $q$ continuous.</p>
+<p><em>Proof.</em> Addition and scalar multiplication on $M/N$ are the composites of the continuous maps on $M$ with $q$, hence continuous; openness of $q$ is the definition of the quotient topology, and the remaining statements are general topology of quotient maps. $\square$</p>
+<h3 id="completion">Completion</h3>
+<p><strong>Definition.</strong> A <strong>Cauchy net</strong> in $M$ is a net $(x_\lambda)$ such that for every neighbourhood $U$ of $0$ there is $\lambda_0$ with $x_\lambda-x_\mu \in U$ for $\lambda,\mu \ge \lambda_0$. $M$ is <strong>complete</strong> if every Cauchy net converges, and <strong>separated</strong> if Hausdorff.</p>
+<p><strong>Theorem (completion).</strong> Let $\mathcal{B}=\{U\}$ be a fundamental system of neighbourhoods of $0$ of a Hausdorff topological module $M$, consisting of submodules and directed downwards. Then the <strong>completion</strong> of $M$ is</p>
+<p>$$
+\widehat M=\varprojlim_{U \in \mathcal{B}} M/U ,
+$$</p>
+<p>the inverse limit of the discrete quotients; there is a continuous homomorphism $\iota:M \to \widehat M$ with dense image, $\widehat M$ is Hausdorff and complete, and for every complete Hausdorff topological module $N$ and every uniformly continuous homomorphism $f:M \to N$ there is a unique continuous $\widehat f:\widehat M \to N$ with $f=\widehat f \circ \iota$.</p>
+<p><em>Proof.</em> The quotients $M/U$ are discrete and the transition maps are the natural projections; the inverse limit is a closed subspace of the product $\prod_{U \in \mathcal{B}}M/U$ of the discrete, hence Hausdorff, quotients, so it is Hausdorff. A Cauchy net in $M$ has a compatible system of images in the $M/U$, and every compatible system lifts: this is the standard construction of the completion of a uniform space, adapted to the additive uniformity. The universal property is verified on the dense image and extended by continuity and uniqueness. $\square$</p>
+<p><strong>Proposition.</strong> The completion functor commutes with finite products, and the natural map $\iota$ is an isomorphism exactly when $M$ is complete and Hausdorff. If $i:M' \to M$ is a uniformly continuous injection which is a uniform embedding, then $\widehat{M'} \to \widehat M$ is injective, so completion is left exact on such sequences. For a uniformly continuous injection that is not a uniform embedding, $\widehat{M'} \to \widehat M$ need not be injective, and completion is not exact in general; on finitely generated modules over a Noetherian ring with the $I$-adic topology it is exact, by the Artin–Rees lemma, as the companion article on localisation and completion of modules records.</p>
+<p><em>Proof.</em> Finite products of inverse limits are inverse limits of products, and a complete Hausdorff module is its own completion. If $i$ is a uniform embedding, the pullbacks $i^{-1}U$ are a cofinal system of neighbourhoods of $0$ in $M'$, so $\widehat{M'}=\varprojlim_U M'/i^{-1}U$ and, the inverse limit being left exact, the kernel of $\widehat{M'} \to \widehat M$ is $\varprojlim_U\ker(M'/i^{-1}U \to M/U)$; these kernels vanish because $i$ is injective, so the map on completions is injective. The exactness theorem of the companion article on localisation and completion of modules supplies the Noetherian statement. $\square$</p>
+<h2 id="the-math153-adic-integers">The $p$-adic Integers</h2>
+<h3 id="construction">Construction</h3>
+<p><strong>Example ($\mathbb{Z}_p$).</strong> Let $p$ be a prime. The ring of <strong>$p$-adic integers</strong> is</p>
+<p>$$
+\mathbb{Z}_p=\varprojlim_n \mathbb{Z}/p^n\mathbb{Z} ,
+$$</p>
+<p>the inverse limit of the rings $\mathbb{Z}/p^n\mathbb{Z}$ with the reduction maps. It is the completion of $\mathbb{Z}$ for the $(p)$-adic topology, and the natural map $\mathbb{Z} \to \mathbb{Z}_p$ is injective with dense image.</p>
+<p><strong>Proposition.</strong> (i) Every element of $\mathbb{Z}_p$ is uniquely a series $\sum_{k \ge 0}a_kp^k$ with $a_k \in \{0,1,\dots,p-1\}$.</p>
+<p>(ii) $\mathbb{Z}_p$ is an integral domain, its group of units is $\mathbb{Z}_p^{\times}=\mathbb{Z}_p \setminus p\mathbb{Z}_p$, and its maximal ideal is $p\mathbb{Z}_p$, with residue field $\mathbb{F}_p$; it is a local ring.</p>
+<p>(iii) The field of fractions of $\mathbb{Z}_p$ is $\mathbb{Q}_p$, whose elements are the Laurent series $\sum_{k \ge -N}a_kp^k$.</p>
+<p>(iv) $\mathbb{Z}_p$ is compact, Hausdorff, totally disconnected and complete, and it is a profinite ring.</p>
+<p><em>Proof.</em> (i) A compatible system of residues modulo $p^n$ is precisely the data of digits $a_k$ with the partial sums convergent, since the $p^n\mathbb{Z}_p$ form a neighbourhood basis. (ii) An element $x$ with constant digit $a_0 \neq 0$ is a unit: $a_0$ is prime to $p$, hence a unit of $\mathbb{Z}_p$, and $x=a_0\bigl(1+a_0^{-1}(x-a_0)\bigr)$ with $a_0^{-1}(x-a_0) \in p\mathbb{Z}_p$, so $x^{-1}=a_0^{-1}\sum_{k \ge 0}\bigl(-a_0^{-1}(x-a_0)\bigr)^k$ converges in $\mathbb{Z}_p$, which is complete for this topology by (iv). Hence the non-units are exactly the elements with zero constant digit, that is, $p\mathbb{Z}_p$, so $p\mathbb{Z}_p$ is the unique maximal ideal and $\mathbb{Z}_p/p\mathbb{Z}_p \cong \mathbb{F}_p$. Moreover $\mathbb{Z}_p$ is a domain: for $x \neq 0$ the integer $v_p(x)=\max\{k:x \in p^k\mathbb{Z}_p\}$ is finite because $\bigcap_kp^k\mathbb{Z}_p=0$, so $x=p^{v_p(x)}u$ with $u$ a unit, and for $x,y \neq 0$ this gives $xy=p^{v_p(x)+v_p(y)}uv$ with $uv$ a unit, whence $xy \neq 0$. (iii) Inverting $p$ gives the Laurent expansions, and the result is a field. (iv) The inverse limit of the finite discrete rings $\mathbb{Z}/p^n$ is a closed subspace of the product $\prod_n \mathbb{Z}/p^n$, which is compact by Tychonoff; total disconnectedness and completeness follow from the description of the topology by the clopen subgroups $p^n\mathbb{Z}_p$. $\square$</p>
+<p><strong>Definition.</strong> The <strong>$p$-adic absolute value</strong> is $|x|_p=p^{-v_p(x)}$ for $x \neq 0$, where $v_p(x)$ is the largest $k$ with $p^k \mid x$, and $|0|_p=0$. It satisfies the strong triangle inequality $|x+y|_p \le \max(|x|_p,|y|_p)$, so the metric $d(x,y)=|x-y|_p$ is ultrametric, and $\mathbb{Z}_p$ is the closed unit ball.</p>
+<p><strong>Proposition.</strong> $\mathbb{Z}_p$ is the metric completion of $\mathbb{Z}$ with respect to $|\cdot|_p$, and $\mathbb{Q}_p$ is the metric completion of $\mathbb{Q}$ with respect to the same absolute value; the two descriptions of the completion, metric and $I$-adic, agree.</p>
+<p><em>Proof.</em> A sequence is $p$-adically Cauchy exactly when it is Cauchy for the $(p)$-adic topology's uniformity, since the basic neighbourhoods $p^n\mathbb{Z}_p$ agree; the metric completion is therefore the inverse limit of the quotients. $\square$</p>
+<h2 id="profinite-and-complete-modules">Profinite and Complete Modules</h2>
+<p><strong>Definition.</strong> A topological module is <strong>profinite</strong> if it is an inverse limit of finite discrete modules, equivalently if it is compact, Hausdorff, totally disconnected and complete. A topological module is <strong>complete</strong> if $\iota:M \to \widehat M$ is an isomorphism.</p>
+<p><strong>Proposition.</strong> (i) Inverse limits of profinite modules are profinite; products of profinite modules are profinite; a closed submodule and a Hausdorff quotient of a profinite module are profinite. (ii) $\mathbb{Z}_p$ is profinite, and the <strong>profinite completion</strong> of $\mathbb{Z}$,</p>
+<p>$$
+\widehat{\mathbb{Z}}=\varprojlim_n \mathbb{Z}/n\mathbb{Z} \cong \prod_p \mathbb{Z}_p ,
+$$</p>
+<p>is profinite, with $\mathbb{Z}$ dense in it.</p>
+<p><em>Proof.</em> (i) Inverse limits and products of compact Hausdorff totally disconnected spaces have the same property, and the module structure is compatible; a closed subspace of a compact space is compact, and a Hausdorff quotient of a compact space is compact. (ii) The Chinese remainder theorem identifies $\mathbb{Z}/n \cong \prod_{p \mid n}\mathbb{Z}/p^{v_p(n)}$, and passing to the limit gives the displayed product. $\square$</p>
+<p><strong>Theorem.</strong> Let $R$ be Noetherian and $I \subseteq R$ an ideal, and let $M$ be a finitely generated $R$-module. Then the $I$-adic completion $\widehat M$ is a complete Hausdorff topological $\widehat R$-module, and if $R$ is local with maximal ideal $\mathfrak m$ and $I=\mathfrak m$, then $\widehat M$ is separated, so $M \hookrightarrow \widehat M$.</p>
+<p><em>Proof.</em> This is Krull's intersection theorem and the exactness and flatness of completion for finitely generated modules over a Noetherian ring, quoted from the companion article on localisation and completion of modules and standard commutative algebra. $\square$</p>
+<h2 id="topological-vector-spaces">Topological Vector Spaces</h2>
+<h3 id="definition_1">Definition</h3>
+<p><strong>Definition.</strong> Let $K$ be a topological field. A <strong>topological vector space</strong> over $K$ is a $K$-vector space $V$ with a topology such that addition $V \times V \to V$ and scalar multiplication $K \times V \to V$ are continuous. A subset $B \subseteq V$ is <strong>bounded</strong> if for every neighbourhood $U$ of $0$ there is $\lambda \in K^{\times}$ with $B \subseteq \lambda U$.</p>
+<p><strong>Example.</strong> $\mathbb{R}^n$ and $\mathbb{C}^n$ with the Euclidean topology are topological vector spaces; every normed space is a topological vector space, with neighbourhoods of $0$ the balls $\{x:\|x\|<\varepsilon\}$; the field $K$ with the discrete topology gives the discrete vector spaces, and for $K$ infinite the product $K^{\mathbb{N}}$ with the product topology is a non-discrete topological $K$-vector space, so a discrete field does not force its spaces to be discrete.</p>
+<h3 id="seminorms-and-locally-convex-spaces">Seminorms and Locally Convex Spaces</h3>
+<p><strong>Definition.</strong> A <strong>seminorm</strong> on a $K$-vector space $V$, where $K$ is $\mathbb{R}$ or $\mathbb{C}$, is a function $p:V \to \mathbb{R}_{\ge0}$ with $p(x+y) \le p(x)+p(y)$ and $p(\lambda x)=|\lambda|p(x)$; it is a norm exactly when $p(x)=0$ implies $x=0$. A family $\mathcal{P}$ of seminorms gives the <strong>locally convex topology</strong> with a fundamental system of neighbourhoods of $0$ given by the finite intersections of the sets $\{x:p(x)<\varepsilon\}$, $p \in \mathcal{P}$, $\varepsilon>0$.</p>
+<p><strong>Proposition.</strong> The locally convex topology is the coarsest topology making $V$ a topological vector space and every $p \in \mathcal{P}$ continuous. It is Hausdorff if and only if for every $x \neq 0$ there is $p \in \mathcal{P}$ with $p(x) \neq 0$. A topological vector space is <strong>locally convex</strong>, meaning that every point has a neighbourhood basis of convex sets, exactly when its topology arises from a family of seminorms.</p>
+<p><em>Proof.</em> The sets described form a neighbourhood basis for a group topology with the stated continuity; Hausdorffness is the separation statement, and the converse direction is a standard reconstruction of seminorms from a locally convex topology by gauge functions. $\square$</p>
+<h3 id="frechet-spaces">Fréchet Spaces</h3>
+<p><strong>Definition.</strong> A <strong>Fréchet space</strong> is a complete Hausdorff locally convex topological vector space whose topology is metrizable, equivalently whose topology is given by a countable family of seminorms. A Banach space is a Fréchet space whose topology comes from a single norm.</p>
+<p><strong>Example.</strong> (i) $C^\infty(U)$ for an open $U \subseteq \mathbb{R}^n$, with the seminorms $p_{K,\alpha}(f)=\sup_{x \in K}|\partial^\alpha f(x)|$ over compact $K$ and multi-indices $\alpha$, is a Fréchet space; the topology of uniform convergence of all derivatives on compact sets. (ii) The Schwartz space $\mathcal{S}(\mathbb{R}^n)$ of rapidly decreasing smooth functions, with seminorms $\sup_x |x^\beta\partial^\alpha f(x)|$, is a Fréchet space. (iii) The space $C(K)$ of continuous functions on a compact space $K$ with the supremum norm is a Banach space, hence Fréchet. (iv) A countable product of Banach spaces is Fréchet and in general not Banach; an uncountable product of nontrivial Banach spaces is not metrizable.</p>
+<p><strong>Proposition.</strong> A finite-dimensional Hausdorff topological vector space over a complete valued field is isomorphic as a topological vector space to $K^n$ with the product topology, and every linear map between finite-dimensional Hausdorff topological vector spaces is continuous. In particular every norm on a finite-dimensional space induces the same topology.</p>
+<p><em>Proof.</em> Choose a basis and compare the given topology with the product topology: the coordinate functionals are continuous, the unit sphere is compact, and the standard argument of the equivalence of norms applies; the details belong to the companion article on normed and Banach spaces. $\square$</p>
+<h2 id="summary">Summary</h2>
+<p>A topological $R$-module is an $R$-module with a topology making addition and scalar multiplication continuous; the topology is translation-invariant and determined by the neighbourhoods of zero, and it is linear when a fundamental system of these consists of submodules. The linear topology associated to a descending chain of submodules, and in particular the $I$-adic topology with neighbourhoods $I^nM$, is the general framework; a linear topology is Hausdorff exactly when the intersection of the neighbourhoods is zero.</p>
+<p>Quotients of topological modules carry the quotient topology and remain topological modules; the completion is the inverse limit $\widehat M=\varprojlim M/U$ over a fundamental system of neighbourhoods, and it is characterised by the universal property for uniformly continuous maps into complete Hausdorff modules, being complete and containing $M$ densely. The completion functor preserves finite products and is left exact on uniform embeddings of topological modules, and it is not exact in general; on finitely generated modules over a Noetherian ring with the $I$-adic topology it is exact, by the Artin–Rees lemma.</p>
+<p>The $p$-adic integers $\mathbb{Z}_p=\varprojlim_n\mathbb{Z}/p^n\mathbb{Z}$ are the completion of $\mathbb{Z}$ in the $(p)$-adic topology and also in the metric of $|\cdot|_p$, with the strong triangle inequality; $\mathbb{Z}_p$ is a compact Hausdorff totally disconnected complete local domain with maximal ideal $p\mathbb{Z}_p$ and residue field $\mathbb{F}_p$, its field of fractions is $\mathbb{Q}_p$, and $\widehat{\mathbb{Z}}=\prod_p\mathbb{Z}_p$. Profinite modules are inverse limits of finite discrete modules and are exactly the compact Hausdorff totally disconnected complete modules, and over a Noetherian ring the $I$-adic completion of a finitely generated module is complete, Hausdorff and separated.</p>
+<p>A topological vector space over a topological field is the vector-space case of the same definition; over $\mathbb{R}$ or $\mathbb{C}$ a family of seminorms produces a locally convex topology, which is Hausdorff when the seminorms separate points, and a Fréchet space is a complete metrizable locally convex space, equivalently one defined by countably many seminorms. Normed spaces are the special case of a family consisting of a single norm, and their theory, with the equivalence of norms in finite dimension and the Baire-based cornerstones, is the companion article on normed and Banach spaces.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>a topological ring</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>a topological $R$-module</td>
+</tr>
+<tr>
+<td>$\mathcal{B}$, $U$</td>
+<td>fundamental system of neighbourhoods of $0$</td>
+</tr>
+<tr>
+<td>$I^nM$</td>
+<td>$I$-adic neighbourhoods of zero</td>
+</tr>
+<tr>
+<td>$\widehat M = \varprojlim M/U$</td>
+<td>completion</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$, $\mathbb{Q}_p$</td>
+<td>$p$-adic integers and numbers</td>
+</tr>
+<tr>
+<td>$\widehat{\mathbb{Z}} = \prod_p\mathbb{Z}_p$</td>
+<td>profinite completion of $\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$|\cdot|_p$, $v_p$</td>
+<td>$p$-adic absolute value and valuation</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>a topological field</td>
+</tr>
+<tr>
+<td>$p$, $\mathcal{P}$</td>
+<td>seminorm and family of seminorms</td>
+</tr>
+<tr>
+<td>$C^\infty(U)$, $\mathcal{S}(\mathbb{R}^n)$</td>
+<td>Fréchet spaces of functions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>General Topology: Chapters 1–4</em> (Springer, 1995), for uniform spaces and completions.</li>
+<li>Nicolas Bourbaki, <em>Commutative Algebra: Chapters 1–7</em> (Springer, 1989), for the $I$-adic topology and completions.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for Fréchet spaces and locally convex theory.</li>
+<li>Jean Dieudonné, <em>Treatise on Analysis, Vol. II</em> (Academic Press, 1970), for topological vector spaces.</li>
+<li>Israel M. Gelfand, Dmitri A. Raikov and Georgi E. Shilov, <em>Commutative Normed Rings</em> (Chelsea, 1964), for topological rings and their completions.</li>
+<li>Alexander Grothendieck, <em>Topological Vector Spaces</em> (Gordon and Breach, 1973), for general locally convex theory.</li>
+<li>Jürgen Neukirch, <em>Algebraic Number Theory</em> (Springer, 1999), for $\mathbb{Z}_p$, $\mathbb{Q}_p$ and profinite completions.</li>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for the $p$-adic absolute value and its completions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

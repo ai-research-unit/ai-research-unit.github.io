@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equidistribution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equidistribution"><strong>Equidistribution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A sequence of points in a compact space is equidistributed when every region receives its fair share of the sequence, in the limit and in the mean. The notion is the quantitative and sequential companion of the ergodic theorem: where the ergodic theorem averages a function along the orbit of a measure-preserving transformation, equidistribution averages the point masses along a sequence, and where the ergodic theorem needs an invariant measure, equidistribution needs a prescribed one. The two are linked by the <em>unique ergodicity</em> of a topological dynamical system — a system with exactly one invariant measure is equidistributed along every orbit — and by the mean ergodic theorem, which for a uniquely ergodic system converts the spatial average into the temporal one.</p>
+<p>The subject has two sources. The first is the arithmetic of fractional parts: Weyl's theorem that a polynomial sequence with an irrational coefficient is equidistributed modulo one, and the quantitative discrepancy estimates that measure how fast. The second is homogeneous dynamics: the horocycle orbits of <em>Homogeneous Dynamics</em> and the unipotent orbits of <em>Ratner's Theorems</em> are equidistributed in their closures, and the theorems there are exactly the statements that make the orbits of a flow equidistribute. The two sources meet in the harmonic-analytic criterion for equidistribution: a sequence on a compact abelian group is equidistributed if and only if its averages against every character tend to the integral of the character, and this criterion is the harmonic analysis of the first articles of the category applied to a sequence.</p>
+<p>This article develops the notion and its principal theorems: the definition, Weyl's criterion via characters and matrix coefficients, Weyl's theorem for polynomial sequences, the discrepancy and the Erdős–Turán inequality, the equidistribution of horocycle and unipotent orbits with the quantitative versions, the relation to unique ergodicity, and the almost periodic theory that supplies the mean. Three boundaries are held.</p>
+<ul>
+<li>The <strong>homogeneous flows</strong> — the geodesic and horocycle flows, the nilmanifolds, the ergodic and mixing theorems — are <em>Homogeneous Dynamics</em>, and the <strong>classification</strong> of unipotent orbit closures and invariant measures is <em>Ratner's Theorems</em>; this article uses both and concentrates on the <em>distributions</em> of sequences and orbits and on the quantitative estimates.</li>
+<li>The <strong>harmonic analysis</strong> used in the criteria is the first articles of the category: the dual group $G^\vee$ and the characters of <em>Harmonic Analysis on Groups</em>, the matrix coefficients and the orthogonality of <em>Analysis on Compact Groups</em>. The <strong>ergodic theory</strong> is <em>Ergodic Theory of Group Actions</em>.</li>
+<li>The <strong>specific systems</strong> — the distribution of the fractional parts of a particular algebraic number, the equidistribution of the primes, and the equidistribution on a number system — belong to Part V, where the arithmetic functions are developed; this article states the general theorems and defers the applications. No physics is invoked.</li>
+</ul>
+<p>Throughout, $X$ is a compact metric space with a Borel probability measure $\mu$, and a sequence $(x_n)_{n\geq1}$ in $X$ is <strong>equidistributed</strong> (or <strong>uniformly distributed</strong>) with respect to $\mu$ if</p>
+<p>$$
+\frac{1}{N}\sum_{n=1}^{N} f(x_n) \longrightarrow \int_X f \, d\mu \qquad \text{for every } f \in C(X),
+$$</p>
+<p>the limit being as $N\to\infty$. For $X = [0,1)$ the measure is Lebesgue measure and the notation $\{x\}$ is the fractional part; for a compact group $K$ the reference measure is the normalised Haar measure $dk$ of <em>Analysis on Compact Groups</em>. The notation $\chi$, $K^\vee$ or $G^\vee$, $\operatorname{Irr}(K)$, and the Fourier transform are those of the first articles of the category.</p>
+<h2 id="equidistribution-of-sequences">Equidistribution of Sequences</h2>
+<h3 id="the-definition-and-its-first-form">The Definition and Its First Form</h3>
+<p><strong>Definition.</strong> Let $X$ be a compact metric space with a Borel probability measure $\mu$. A sequence $(x_n)$ in $X$ is <strong>equidistributed</strong> with respect to $\mu$ if the empirical measures</p>
+<p>$$
+\mu_N = \frac{1}{N}\sum_{n=1}^{N}\delta_{x_n}
+$$</p>
+<p>converge weakly to $\mu$: $\int f\,d\mu_N \to \int f\,d\mu$ for every $f \in C(X)$.</p>
+<p>Weak convergence against all continuous functions is equivalently tested against a convergence-determining class, and the character criterion below reduces it to the harmonic analysis of $X$ when $X$ is a group. On the circle $[0,1) = \mathbb{R}/\mathbb{Z}$ the condition says that the asymptotic proportion of the first $N$ points lying in an interval $[a,b)$ tends to $b-a$ for every interval; equidistribution is a statement about the limit of the empirical distribution, and the speed of the convergence is measured by the discrepancy.</p>
+<p><strong>Example (rational rotation).</strong> The sequence $x_n = n\alpha$ with $\alpha = p/q$ rational is periodic of period $q$, and its empirical measures converge to the uniform measure on the finite set $\{0, 1/q, \dots, (q-1)/q\}$, not to Lebesgue measure; the sequence is not equidistributed. The failure is the arithmetic content of the notion: equidistribution of $n\alpha$ will require $\alpha$ irrational.</p>
+<h3 id="weyls-criterion">Weyl's Criterion</h3>
+<p><strong>Theorem (Weyl's criterion).</strong> A sequence $(x_n)$ in $[0,1)$ is equidistributed if and only if for every nonzero integer $k$,</p>
+<p>$$
+\frac{1}{N}\sum_{n=1}^{N} e^{2\pi i k x_n} \longrightarrow 0 \qquad \text{as } N \to \infty.
+$$</p>
+<p><em>Proof.</em> If the sequence is equidistributed, the average of the continuous function $x\mapsto e^{2\pi ikx}$ tends to its integral, which is $0$ for $k \neq 0$. Conversely, the exponentials with $k \in \mathbb{Z}$ span a self-adjoint algebra of functions separating points, so by the Stone–Weierstrass theorem they are dense in $C([0,1))$, and the hypothesis tested against them extends to every continuous function. $\square$</p>
+<p>The criterion is the $\mathbb{R}/\mathbb{Z}$ case of the general statement on a compact group, and it is the reason equidistribution is a chapter of harmonic analysis.</p>
+<p><strong>Theorem (Weyl's criterion on a compact group).</strong> Let $K$ be a compact group with normalised Haar measure $dk$ and let $(x_n)$ be a sequence in $K$. Then $(x_n)$ is equidistributed if and only if</p>
+<p>$$
+\frac{1}{N}\sum_{n=1}^{N} \pi_{ij}(x_n) \longrightarrow \int_K \pi_{ij}(k)\, dk = 0 \qquad \text{for every } \pi \in \operatorname{Irr}(K),\ i,j,
+$$</p>
+<p>where $\pi_{ij}$ are the matrix coefficients of $\pi$; equivalently, if and only if $\frac{1}{N}\sum_n \pi(x_n) \to 0$ in each irreducible representation $\pi$ other than the trivial one, and the trivial representation contributes $\frac{1}{N}\sum_n 1 = 1$.</p>
+<p><em>Proof.</em> The matrix coefficients span the representative-function algebra $A(K)$, which is dense in $C(K)$ by the Peter–Weyl theorem of <em>The Peter–Weyl Theorem</em>; testing against a dense subalgebra suffices. The integral of a nontrivial matrix coefficient is $0$ by the orthogonality relations of <em>Analysis on Compact Groups</em>. $\square$</p>
+<p><strong>Corollary (abelian case).</strong> For a compact abelian group $K$ the criterion reduces to testing against the characters: $(x_n)$ is equidistributed if and only if $\frac{1}{N}\sum_n \chi(x_n) \to 0$ for every nontrivial character $\chi \in K^\vee$. This is the Pontryagin-dual form of Weyl's criterion, and on $K = \mathbb{R}/\mathbb{Z}$ it is the statement above.</p>
+<h3 id="the-circle-and-the-torus">The Circle and the Torus</h3>
+<p><strong>Example ($\{n\alpha\}$).</strong> For irrational $\alpha$ the sequence $x_n = n\alpha$ is equidistributed on $[0,1)$. By Weyl's criterion it suffices to show $\frac{1}{N}\sum_{n=1}^N e^{2\pi i kn\alpha} \to 0$ for $k \neq 0$; the sum is the geometric series</p>
+<p>$$
+\frac{1}{N}\sum_{n=1}^{N} \zeta^n = \frac{\zeta(1-\zeta^N)}{N(1-\zeta)}, \qquad \zeta = e^{2\pi i k\alpha} \neq 1,
+$$</p>
+<p>whose modulus is at most $\frac{1}{N}\cdot\frac{2}{|1-\zeta|}$, which tends to $0$ as $N\to\infty$. The irrationality of $\alpha$ is exactly what makes $\zeta \neq 1$ for every $k \neq 0$.</p>
+<p><strong>Example (the torus).</strong> Let $\alpha = (\alpha_1, \dots, \alpha_d) \in \mathbb{R}^d$ and let $x_n = n\alpha$ modulo $\mathbb{Z}^d$. The sequence is equidistributed in $T^d$ if and only if $1, \alpha_1, \dots, \alpha_d$ are rationally independent. The criterion is the same: the characters of $T^d$ are $\chi_m(x) = e^{2\pi i \langle m, x\rangle}$, and the average is a geometric series that vanishes unless $\langle m, \alpha\rangle \in \mathbb{Z}$; the rational-independence condition excludes the latter for every nonzero $m$. This is the sequential form of the ergodicity of the translation of a torus in <em>Ergodic Theory of Group Actions</em>, and the two statements are the same harmonic computation.</p>
+<h2 id="weyls-theorem-for-polynomial-sequences">Weyl's Theorem for Polynomial Sequences</h2>
+<h3 id="polynomials-with-an-irrational-coefficient">Polynomials with an Irrational Coefficient</h3>
+<p><strong>Theorem (Weyl).</strong> Let $p(n) = \alpha_k n^k + \alpha_{k-1} n^{k-1} + \cdots + \alpha_1 n + \alpha_0$ be a real polynomial of degree $k \geq 1$. If at least one of the coefficients $\alpha_1, \dots, \alpha_k$ is irrational, then the sequence $\{p(n)\}$ is equidistributed modulo $1$.</p>
+<p>The theorem contains the linear case and is proved by an induction on the degree that reduces the degree by differencing. The essential step is the estimate of van der Corput, which converts the exponential sum of degree $k$ into an average of sums of degree $k-1$.</p>
+<p><strong>Lemma (van der Corput).</strong> For complex numbers $z_1, \dots, z_N$ with $|z_n| \leq 1$ and any $H$ with $1 \le H \le N$,</p>
+<p>$$
+\left|\frac{1}{N}\sum_{n=1}^{N} z_n\right|^2 \le \frac{1}{N}\sum_{h=0}^{H-1}\Bigl(1 - \frac{h}{H}\Bigr)\left|\frac{1}{N}\sum_{n=1}^{N-h} z_{n+h}\overline{z_n}\right| + \frac{2H}{N} + \frac{1}{H}.
+$$</p>
+<p>Applied with $z_n = e^{2\pi i p(n)}$ the product $z_{n+h}\overline{z_n}$ is the exponential of a polynomial of degree $k-1$ in $n$, so the estimate reduces the degree by one and the induction can proceed; the final step is the geometric series of the linear case. The reader will recognise the inequality as an averaging form of the Cauchy–Schwarz inequality, and it is the standard tool of the subject.</p>
+<p><strong>Corollary.</strong> For irrational $\alpha$ and any $k \geq 1$ the sequence $\{\alpha n^k\}$ is equidistributed; in particular $\{n^2\alpha\}$ is equidistributed, a statement that has no elementary proof of the same simplicity as the linear case. The corollary is the classical equidistribution of the fractional parts of a quadratic polynomial, and it is the base of the applications to the distribution of lattice points on circles and to the Waring problem.</p>
+<h3 id="sequences-on-nilmanifolds">Sequences on Nilmanifolds</h3>
+<p><strong>Theorem (Green–Tao).</strong> Let $N$ be a connected simply connected nilpotent Lie group with a lattice $\Gamma$, and let $g : \mathbb{Z} \to N$ be a polynomial sequence — that is, a sequence whose finite differences of some fixed order are eventually constant. Then the orbit $g(n)\Gamma$ is equidistributed in a closed subset of $N/\Gamma$ that is a finite union of orbits of closed subgroups, unless the sequence is periodic modulo a proper closed subgroup; the precise carrier of the equidistribution is determined by the group generated by the values of $g$ modulo $\Gamma$.</p>
+<p>The theorem is the polynomial equidistribution that generalises Weyl's theorem to the nilpotent case: a polynomial sequence on a nilmanifold is equidistributed in its algebraic closure, and the only obstruction is a finite union of proper orbits. It is the model of the distribution theory of the arithmetically interesting sequences — the prime values of polynomials, the values of the Möbius function — and it is the reason the nilpotent case is developed in full before the semisimple one. The abelian case of the statement is Weyl's theorem; the difference is the appearance of the commutators of $N$, which allow a larger closed subgroup to be the carrier of the equidistribution.</p>
+<h2 id="discrepancy">Discrepancy</h2>
+<h3 id="the-definition-and-the-erdosturan-inequality">The Definition and the Erdős–Turán Inequality</h3>
+<p><strong>Definition.</strong> For a sequence $(x_n)$ in $[0,1)$ and an integer $N \geq 1$, the <strong>discrepancy</strong> is</p>
+<p>$$
+D_N(x_1, \dots, x_N) = \sup_{0 \le a < b \le 1} \left|\frac{\#\{1 \le n \le N : x_n \in [a,b)\}}{N} - (b-a)\right|,
+$$</p>
+<p>the largest deviation of the empirical measure from the uniform measure over intervals.</p>
+<p>The discrepancy measures the rate of equidistribution, and the quantitative theorems give upper and lower bounds for it. The main analytic inequality is due to Erdős and Turán.</p>
+<p><strong>Theorem (Erdős–Turán).</strong> There is an absolute constant $C$ such that for every sequence $(x_n)$ in $[0,1)$ and every $H \geq 1$,</p>
+<p>$$
+D_N(x_1, \dots, x_N) \le C\left(\frac{1}{H} + \sum_{k=1}^{H}\frac{1}{k}\left|\frac{1}{N}\sum_{n=1}^{N} e^{2\pi i k x_n}\right|\right).
+$$</p>
+<p>The inequality converts an estimate of the exponential sums — the Fourier coefficients of the empirical measure — into an estimate of the discrepancy, and it is the quantitative form of Weyl's criterion: the criterion says that the sums vanish in the limit, and the inequality says how quickly they must vanish for the discrepancy to be small. Its proof uses a trigonometric approximation of the indicator function of an interval by a Fejér kernel; the constant is absolute and the optimal version has been improved by later authors.</p>
+<p><strong>Corollary.</strong> If the exponential sums satisfy $\left|\frac{1}{N}\sum_{n\le N} e^{2\pi i kx_n}\right| \le K/N$ uniformly in $k$, then $D_N = O((\log N)/N)$; this is the rate attained by the sequence $\{n\alpha\}$ for an irrational $\alpha$ with bounded partial quotients, and it is, up to the logarithm, the best possible, since $D_N \geq c\log N/N$ along a subsequence for every sequence.</p>
+<h3 id="the-circle-and-continued-fractions">The Circle and Continued Fractions</h3>
+<p><strong>Theorem (the three-distance theorem).</strong> For irrational $\alpha$ the points $\{n\alpha\}$, $n = 1, \dots, N$, cut the circle into $N+1$ intervals whose lengths take at most three distinct values, and the pattern is determined by the continued fraction expansion of $\alpha$. Consequently the discrepancy is controlled by the continued fraction data: if $[0;a_1,a_2,\dots]$ is the expansion of $\alpha$ and $q_m \le N < q_{m+1}$ are its denominators, then</p>
+<p>$$
+N D_N(\alpha) \ll 1 + \sum_{i=1}^{m} a_i,
+$$</p>
+<p>by a theorem of Ostrowski, so the discrepancy is small exactly when the partial quotients are small on average. It is $O((\log N)/N)$ for bounded partial quotients, the golden ratio, whose partial quotients are all $1$, attains this order up to a constant, and $N D_N(\alpha)$ is unbounded as $N \to \infty$ for every irrational $\alpha$.</p>
+<p>The theorem is the quantitative theory of the linear sequence, and it is the reason the continued fraction expansion appears throughout equidistribution: the Diophantine properties of $\alpha$ determine the rate, and the theory of continued fractions is the subject, where the expansion is developed.</p>
+<h2 id="equidistribution-of-orbits">Equidistribution of Orbits</h2>
+<h3 id="horocycles-and-the-furstenberg-theorem">Horocycles and the Furstenberg Theorem</h3>
+<p><strong>Theorem (Furstenberg).</strong> Let $\Gamma \le SL_2(\mathbb{R})$ be a lattice, $G = SL_2(\mathbb{R})$, and let $U$ be the horocycle subgroup. Then for every $x \in G/\Gamma$ the orbit $\{u_t x\}$ is equidistributed with respect to the invariant measure:</p>
+<p>$$
+\frac{1}{T}\int_0^T f(u_t x)\, dt \longrightarrow \int_{G/\Gamma} f\, d\mu \qquad \text{for every } f \in C_c(G/\Gamma).
+$$</p>
+<p>The theorem is stated here for the homogeneous case because it is the continuous-parameter analogue of Weyl's criterion: the time average against every continuous function converges, and the convergence holds for every starting point, not merely almost every one. The proof uses the commutation relation $a_su_ta_s^{-1} = u_{e^st}$ to rescale the horocycle and the ergodicity of the geodesic flow; the two flows are two aspects of one equidistribution theorem, and the details are in <em>Homogeneous Dynamics</em>.</p>
+<h3 id="unipotent-orbits-and-ratners-theorem">Unipotent Orbits and Ratner's Theorem</h3>
+<p><strong>Theorem (Ratner's equidistribution; stated in <em>Ratner's Theorems</em>).</strong> Let $H$ be a subgroup generated by unipotent one-parameter subgroups and let $x \in G/\Gamma$. Then the orbit $Hx$ is equidistributed in its closure $\overline{Hx} = Lx$ with respect to the normalised invariant measure $\mu_{Lx}$, and the convergence is uniform as $x$ ranges over a compact subset of $X$.</p>
+<p>The statement is the general equidistribution theorem of the subject; the horocycle theorem is the case $G = SL_2(\mathbb{R})$, $H = U$. Its uniformity is what makes it applicable to arithmetic: the equidistribution is not merely a statement about a fixed orbit but about a family of orbits varying continuously.</p>
+<h3 id="effective-equidistribution">Effective Equidistribution</h3>
+<p><strong>Theorem (effective Ratner; Green–Tao, Strömbergsson, Lindenstrauss–Mohammadi–Wang).</strong> Under suitable hypotheses on $G$, $\Gamma$ and the unipotent flow, the equidistribution in Ratner's theorem holds with an explicit rate: for every $f$ in a suitable Sobolev space and every $x$ in a compact set,</p>
+<p>$$
+\frac{1}{T}\int_0^T f(u_tx)\,dt - \int f\,d\mu = O_f\left(T^{-\eta}\right)
+$$</p>
+<p>for an exponent $\eta > 0$ depending on $G$ and on the flow, with the constant depending on finitely many Sobolev norms of $f$.</p>
+<p>The effective theorems are the quantitative form of Ratner's equidistribution, and they are needed whenever the equidistribution is to be applied with an error term: the counting of rational points, the quantitative Oppenheim conjecture, and the distribution of the values of a quadratic form at integer points. The exponent $\eta$ is not explicit in Ratner's original theorem and comes from the shearing estimates of the proof; the modern effective versions use the spectral gap of the action and the decay of matrix coefficients, which is the Howe–Moore theorem of <em>Ergodic Theory of Group Actions</em>.</p>
+<h2 id="unique-ergodicity">Unique Ergodicity</h2>
+<h3 id="the-equivalence-with-uniform-convergence">The Equivalence with Uniform Convergence</h3>
+<p><strong>Definition.</strong> A continuous map $T : X \to X$ of a compact metric space is <strong>uniquely ergodic</strong> if it has exactly one invariant Borel probability measure $\mu$; the map is <strong>minimal</strong> if every orbit is dense.</p>
+<p><strong>Theorem.</strong> Let $T$ be a continuous map of a compact metric space $X$ with a unique invariant probability measure $\mu$. Then for every $x \in X$ and every $f \in C(X)$,</p>
+<p>$$
+\frac{1}{N}\sum_{n=0}^{N-1} f(T^n x) \longrightarrow \int_X f\, d\mu,
+$$</p>
+<p>and the convergence is uniform in $x \in X$. Conversely, if the averages converge for every $f \in C(X)$ and every $x$, and the limit is independent of $x$, then $T$ is uniquely ergodic and the limit is the integral against the unique invariant measure.</p>
+<p><em>Proof.</em> The set of invariant probability measures is convex and compact, and an extreme point is ergodic; uniqueness of the measure therefore gives the ergodicity of $\mu$. For each $x$, let $\nu$ be a weak limit point of the empirical measures; it is $T$-invariant, so $\nu = \mu$, and every limit point is $\mu$, hence the averages converge. The uniformity follows from the compactness of $C(X)$ and the fact that a pointwise-convergent sequence of continuous functions on a compact space whose limit is continuous is uniformly convergent. The converse is the standard argument: an invariant measure is recovered as a limit of empirical measures, and the assumed independence of $x$ makes it unique. $\square$</p>
+<p><strong>Corollary.</strong> If $T$ is uniquely ergodic, then every orbit is equidistributed with respect to the invariant measure. If in addition $T$ is minimal, the union of the orbits is a single minimal set and the equidistribution is uniform over the space; unique ergodicity alone allows the presence of a wandering set of measure zero.</p>
+<p><strong>Example (translations and horocycles).</strong> The translation $x \mapsto x + \alpha$ of the circle is uniquely ergodic exactly when $\alpha$ is irrational; the horocycle flow of <em>Homogeneous Dynamics</em> is uniquely ergodic; and a unipotent flow on a nilmanifold is uniquely ergodic exactly when it is minimal, by the Green–Parry–Auslander theorem. In each case the ergodic theorem supplies the equidistribution, and the unique ergodicity supplies it for every point rather than almost every one.</p>
+<h3 id="the-topological-reading">The Topological Reading</h3>
+<p>The relevance of unique ergodicity to equidistribution is that it removes the null set from the ergodic theorem. For a measure-preserving transformation the pointwise ergodic theorem holds only almost surely; for a uniquely ergodic continuous map it holds for every point. The mechanism is the continuity of the map, which makes the invariant measures a compact convex set and forces the empirical measures to converge to the only extreme point. The topological dynamics of continuous maps — minimality, recurrence, the structure of the invariant measures — is not covered here, and this article uses only the equidistribution consequence.</p>
+<h2 id="almost-periodic-functions-and-the-mean">Almost Periodic Functions and the Mean</h2>
+<h3 id="the-mean-and-the-bohr-compactification">The Mean and the Bohr Compactification</h3>
+<p><strong>Definition.</strong> A bounded continuous function $f : \mathbb{R} \to \mathbb{C}$ is <strong>almost periodic</strong> (in the sense of Bohr) if its translates $\{f(\cdot + t) : t \in \mathbb{R}\}$ form a relatively compact subset of the space of bounded continuous functions with the supremum norm. Equivalently, $f$ is a uniform limit of finite trigonometric sums $\sum_j c_j e^{i\lambda_j t}$.</p>
+<p>The mean of an almost periodic function does not require an equidistribution theorem for its existence.</p>
+<p><strong>Theorem (Bohr).</strong> Every almost periodic function has a mean,</p>
+<p>$$
+M(f) = \lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T} f(t)\, dt,
+$$</p>
+<p>and the mean is multiplicative and positive; the almost periodic functions form a commutative $\mathrm{C}^*$-algebra isometrically isomorphic to $C(b\mathbb{R})$, where $b\mathbb{R}$ is the Bohr compactification of the discrete group $\mathbb{R}$, and the mean corresponds to integration against the normalised Haar measure of $b\mathbb{R}$.</p>
+<p>The Bohr compactification is the dual, in the sense of Pontryagin, of the group $\mathbb{R}$ with the discrete topology; the identification is the one of <em>Pontryagin Duality</em>, and the mean is the Haar integral of the compact group. The theorem is the reason the equidistribution of a sequence against characters and the mean of an almost periodic function are the same phenomenon: both are the statement that a translation-invariant averaging procedure recovers the Haar integral.</p>
+<h3 id="besicovitch-theory-and-the-discrete-mean">Besicovitch Theory and the Discrete Mean</h3>
+<p><strong>Definition.</strong> A bounded measurable function $f : \mathbb{R} \to \mathbb{C}$ is <strong>Besicovitch almost periodic</strong> if it is the limit, in the mean-square seminorm</p>
+<p>$$
+\|f\|_B = \left(\overline{\lim}_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}|f(t)|^2\,dt\right)^{1/2},
+$$</p>
+<p>of finite trigonometric sums $\sum_j c_j e^{i\lambda_j t}$; the space is the quotient by the functions of seminorm zero. A bounded sequence on $\mathbb{Z}$ is Besicovitch almost periodic when the same holds with the discrete mean $\lim_N \frac{1}{N}\sum_{n\le N}$ in place of the integral.</p>
+<p>The Besicovitch theory relaxes the <em>uniform</em> approximation of Bohr to mean-square approximation and admits a mean for a wider class of functions, which is what makes it the natural tool for equidistribution: the empirical measures of a sequence test a function by its discrete averages, and a mean-square control is exactly what a Weyl-type criterion delivers.</p>
+<p><strong>Theorem (Bohr compactification of $\mathbb{Z}$).</strong> The Bohr compactification of the discrete group $\mathbb{Z}$ is the circle group $\mathbb{R}/\mathbb{Z}$, and the algebra of Bohr almost periodic sequences on $\mathbb{Z}$ is isometrically $C(\mathbb{R}/\mathbb{Z})$; the mean $M(f) = \lim_N\frac{1}{N}\sum_{n \le N} f(n)$ of such a sequence is the integral of the corresponding continuous function over the circle with its normalised Haar measure.</p>
+<p>Consequently a sequence $(x_n)$ in a compact abelian group $K$ is equidistributed if and only if the discrete means $\frac{1}{N}\sum_{n\le N}\varphi(x_n)$ converge to the group integral $\int_K \varphi \, dk$ for every almost periodic $\varphi$ on $K$; the Weyl criterion is the case in which $\varphi$ runs over the characters, and the passage from the characters to all almost periodic functions is the density of the trigonometric polynomials in $\| \cdot \|_B$. This is the conceptual statement that unifies the two halves of the article: equidistribution is the coincidence of the discrete mean along the sequence with the Haar integral on the group, and the almost periodic theory is the arena in which the coincidence is expressed.</p>
+<h2 id="summary">Summary</h2>
+<p>A sequence in a compact space with a prescribed probability measure is equidistributed when its empirical measures converge weakly to the measure, and on a compact group Weyl's criterion reduces the test to the matrix coefficients: the sequence is equidistributed if and only if its averages against every nontrivial irreducible representation vanish, equivalently against every nontrivial character in the abelian case. On the circle this criterion proves the equidistribution of $\{n\alpha\}$ for irrational $\alpha$ by a geometric-series estimate, and on the torus it proves the equidistribution of a translation exactly when the coordinates are rationally independent. Weyl's theorem extends the circle criterion to polynomial sequences whose coefficients are not all rational, and the van der Corput inequality, which lowers the degree of an exponential sum by one, is the engine of the induction; the nilmanifold generalisation carries the same statement to the polynomial orbits of a nilpotent group.</p>
+<p>The discrepancy measures the rate, and the Erdős–Turán inequality bounds it by the exponential sums; the resulting rate for $\{n\alpha\}$ is governed by the partial quotients of $\alpha$ through the three-distance theorem, with $O((\log N)/N)$ for bounded quotients and a matching lower bound along a subsequence. In homogeneous dynamics the horocycle orbits are equidistributed for every point (Furstenberg) and the unipotent orbits are equidistributed in their closures uniformly (Ratner), with effective versions carrying explicit rates that come from the shearing estimates and the spectral gap. Unique ergodicity is the topological condition that upgrades equidistribution from almost everywhere to everywhere, and the almost periodic theory of Bohr identifies the mean of a function with a Haar integral on the Bohr compactification, so that equidistribution is the coincidence of a discrete mean with a group integral.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $\mu$, $C(X)$</td>
+<td>Compact metric space, Borel probability measure, continuous functions</td>
+</tr>
+<tr>
+<td>$\mu_N = \frac{1}{N}\sum_{n\le N}\delta_{x_n}$</td>
+<td>Empirical measure of the first $N$ points</td>
+</tr>
+<tr>
+<td>equidistributed</td>
+<td>$\mu_N \to \mu$ weakly</td>
+</tr>
+<tr>
+<td>$\{x\}$</td>
+<td>Fractional part of a real number; $[0,1)=\mathbb{R}/\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$K$, $dk$</td>
+<td>Compact group, normalised Haar measure</td>
+</tr>
+<tr>
+<td>$\chi$, $G^\vee$</td>
+<td>Character and abelian dual group</td>
+</tr>
+<tr>
+<td>$\pi_{ij}$, $\operatorname{Irr}(K)$</td>
+<td>Matrix coefficients and irreducible representations of a compact group</td>
+</tr>
+<tr>
+<td>$D_N$</td>
+<td>Discrepancy: maximal deviation over intervals</td>
+</tr>
+<tr>
+<td>Erdős–Turán</td>
+<td>bound of $D_N$ by exponential sums; quantitative Weyl criterion</td>
+</tr>
+<tr>
+<td>van der Corput</td>
+<td>inequality lowering the degree of an exponential sum by one</td>
+</tr>
+<tr>
+<td>three-distance theorem</td>
+<td>the gaps of $\{n\alpha\}$, $n\le N$, take at most three lengths</td>
+</tr>
+<tr>
+<td>$u_t$, $U$</td>
+<td>Horocycle subgroup and its flow on $G/\Gamma$</td>
+</tr>
+<tr>
+<td>uniquely ergodic</td>
+<td>exactly one invariant probability measure</td>
+</tr>
+<tr>
+<td>minimal</td>
+<td>every orbit is dense</td>
+</tr>
+<tr>
+<td>almost periodic, $M(f)$</td>
+<td>Bohr almost periodicity and the mean</td>
+</tr>
+<tr>
+<td>$b\mathbb{R}$</td>
+<td>Bohr compactification of the discrete group $\mathbb{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Hermann Weyl, "Über die Gleichverteilung von Zahlen mod. Eins", <em>Mathematische Annalen</em> 77 (1916), 313–352, for the criterion and the polynomial equidistribution theorem.</li>
+<li>L. Kuipers and H. Niederreiter, <em>Uniform Distribution of Sequences</em> (Wiley, 1974; reprinted Dover, 2006), for the systematic theory of discrepancy and the Erdős–Turán inequality.</li>
+<li>Paul Erdős and Pál Turán, "On the distribution of roots of polynomials", <em>Annals of Mathematics</em> 51 (1950), 105–119, for the discrepancy inequality.</li>
+<li>Hugh L. Montgomery, <em>Ten Lectures on the Interface between Analytic Number Theory and Harmonic Analysis</em> (AMS, 1994), for the interaction of exponential sums, discrepancy and harmonic analysis.</li>
+<li>Norbert Wiener, <em>The Fourier Integral and Certain of Its Applications</em> (Cambridge University Press, 1933), for the almost periodic theory and the mean.</li>
+<li>Harald Bohr, <em>Almost Periodic Functions</em> (Chelsea, 1947), for the Bohr compactification and the mean.</li>
+<li>Ben Green and Terence Tao, "The quantitative behaviour of polynomial orbits on nilmanifolds", <em>Annals of Mathematics</em> 175 (2012), 465–540, and Ben Green, Terence Tao and Tamar Ziegler, "An inverse theorem for the Gowers $U^{s+1}$-norm", <em>Annals of Mathematics</em> 176 (2012), 1231–1372, for the nilpotent equidistribution theory.</li>
+<li>Alexander Gorodnik and Amos Nevo, <em>The Ergodic Theory of Lattice Subgroups</em> (Princeton University Press, 2010), for the quantitative equidistribution of homogeneous orbits.</li>
+<li>Manfred Einsiedler and Thomas Ward, <em>Ergodic Theory with a View towards Number Theory</em> (Springer, 2011), for the equidistribution of homogeneous orbits and its arithmetic applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

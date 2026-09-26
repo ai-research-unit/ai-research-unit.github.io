@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fractional Differential Equations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fractional-differential-equations"><strong>Fractional Differential Equations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The theory of differential equations becomes richer when the order of differentiation is allowed to be a real number. Fractional calculus defines an operator $D^\alpha$ for every $\alpha>0$ that coincides with the ordinary derivative of order $n$ when $\alpha=n$ and interpolates between the orders for non-integer $\alpha$, and the equations $D^\alpha y = f(t,y)$ — <strong>fractional differential equations</strong> — have a well-posed theory whose solutions exhibit behaviour with no counterpart in the integer-order theory. The interpolation is not merely formal: the operator $D^\alpha$ is nonlocal, its action on a function depending on the whole past of the function rather than on an arbitrarily small neighbourhood, and it is this nonlocality that changes the character of the equations.</p>
+<p>The building blocks are three. First, the <strong>fractional integral</strong> $I^\alpha$ of order $\alpha>0$, a convolution of the function with the power kernel $t^{\alpha-1}/\Gamma(\alpha)$, which is defined whenever the function is locally integrable and which satisfies the semigroup law $I^\alpha I^\beta = I^{\alpha+\beta}$. Second, the <strong>fractional derivatives</strong>, of which two are in use: the Riemann–Liouville derivative $D^\alpha$, defined by differentiating the fractional integral, and the Caputo derivative ${}^C D^\alpha$, defined by fractionally integrating the ordinary derivative. The two differ by the contribution of the initial values and are suited to different problems; the Caputo derivative is the one for which the initial conditions of a fractional differential equation are the ordinary ones. Third, the <strong>Mittag-Leffler function</strong> $E_\alpha$, which is to the fractional equations what the exponential is to the ordinary ones: $y(t) = y_0E_\alpha(\lambda t^\alpha)$ solves $D^\alpha y = \lambda y$.</p>
+<p>The article proceeds from the fractional integral and the two derivatives, through their composition laws and their Laplace transforms, to the Mittag-Leffler function and its asymptotic behaviour, and then to the three levels of the theory. For the fractional ordinary equation $D^\alpha y = f(t,y)$ the Cauchy problem is equivalent to a weakly singular Volterra integral equation, and the Picard iteration of <em>Ordinary Differential Equations</em> applies with the contraction factor $LT^\alpha/\Gamma(\alpha+1)$ on a short interval, giving existence and uniqueness; the linear equation is solved by the Mittag-Leffler function, whose algebraic large-time decay is the characteristic feature of the sub-exponential regime $0<\alpha<1$. For the fractional partial equation ${}^C D_t^\alpha u = \Delta u$ the solution is a fractional diffusion, given in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, whose mean square displacement grows as $t^\alpha$ rather than as $t$ and whose transition density is not Gaussian. For the operator theory, the fractional powers of an operator are defined by a Bochner integral against the resolution of the identity or against a semigroup, and this connects the subject to the semigroups and evolution equations of this Part, where the generation theory of the operators $e^{-tA}$ is developed. The whole theory is developed over $\mathbb{R}$ or $\mathbb{R}^n$; the target space is a Banach space $X$ over $\mathbb{K}$, and the integrals are those of <em>Measure Theory and Integration</em>.</p>
+<h2 id="fractional-integrals-and-derivatives">Fractional Integrals and Derivatives</h2>
+<h3 id="the-fractional-integral">The Fractional Integral</h3>
+<p><strong>Definition.</strong> Let $\alpha>0$ and let $f$ be locally integrable on $[a,\infty)$. The <strong>Riemann–Liouville fractional integral</strong> of order $\alpha$ is</p>
+<p>$$
+I_a^\alpha f(t) = \frac{1}{\Gamma(\alpha)}\int_a^t(t-s)^{\alpha-1}f(s)\,ds , \qquad t>a ,
+$$</p>
+<p>and for $\alpha=0$ one sets $I_a^0f=f$. When $a=0$ or when the base point is clear the subscript and the base are omitted.</p>
+<p><strong>Theorem (semigroup law).</strong> For $\alpha,\beta>0$ and $f$ locally integrable, $I_a^\alpha I_a^\beta f = I_a^{\alpha+\beta}f = I_a^\beta I_a^\alpha f$; the family $(I_a^\alpha)_{\alpha>0}$ is thus a commutative one-parameter family of operators.</p>
+<p><em>Proof.</em> Interchanging the order of integration in the iterated integral and evaluating the inner integral by the beta function gives</p>
+<p>$$
+\int_a^t(t-s)^{\alpha-1}\int_a^s(s-\tau)^{\beta-1}f(\tau)\,d\tau\,ds = B(\alpha,\beta)\int_a^t(t-\tau)^{\alpha+\beta-1}f(\tau)\,d\tau ,
+$$</p>
+<p>with $B(\alpha,\beta) = \Gamma(\alpha)\Gamma(\beta)/\Gamma(\alpha+\beta)$; dividing by $\Gamma(\alpha)\Gamma(\beta)$ gives the law, and the symmetry in $\alpha,\beta$ the commutativity. $\square$</p>
+<p><strong>Example.</strong> $I_a^\alpha(t-a)^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta+\alpha+1)}(t-a)^{\beta+\alpha}$ for $\beta>-1$, which is the fundamental computation from which most others follow; in particular $I_a^\alpha 1 = (t-a)^\alpha/\Gamma(\alpha+1)$, which vanishes at $t=a$ precisely when $\alpha>0$.</p>
+<h3 id="the-riemannliouville-and-caputo-derivatives">The Riemann–Liouville and Caputo Derivatives</h3>
+<p><strong>Definition.</strong> Let $\alpha>0$ and let $n = \lceil\alpha\rceil$ be the least integer with $n\ge\alpha$, so that $n-1 < \alpha \le n$. The <strong>Riemann–Liouville derivative</strong> of order $\alpha$ is</p>
+<p>$$
+D_a^\alpha f(t) = \frac{d^n}{dt^n}I_a^{n-\alpha}f(t) = \frac{1}{\Gamma(n-\alpha)}\frac{d^n}{dt^n}\int_a^t(t-s)^{n-\alpha-1}f(s)\,ds ,
+$$</p>
+<p>and the <strong>Caputo derivative</strong> of order $\alpha$ is</p>
+<p>$$
+{}^C D_a^\alpha f(t) = I_a^{n-\alpha}\frac{d^n}{dt^n}f(t) = \frac{1}{\Gamma(n-\alpha)}\int_a^t(t-s)^{n-\alpha-1}f^{(n)}(s)\,ds .
+$$</p>
+<p>The two agree when the first $n$ derivatives of $f$ vanish at $a$; in general they differ by a polynomial in $(t-a)$.</p>
+<p><strong>Theorem (consistency and difference).</strong> If $\alpha = n$ is an integer, then $D_a^n f = {}^C D_a^n f = f^{(n)}$. For non-integer $\alpha$ with $n = \lceil\alpha\rceil$,</p>
+<p>$$
+D_a^\alpha f(t) = {}^C D_a^\alpha f(t) + \sum_{k=0}^{n-1}\frac{(t-a)^{k-\alpha}}{\Gamma(k-\alpha+1)}\,f^{(k)}(a) .
+$$</p>
+<p>In particular $D_a^\alpha$ of a constant is $\frac{(t-a)^{-\alpha}}{\Gamma(1-\alpha)}$ for $0<\alpha<1$, whereas the Caputo derivative of a constant is zero.</p>
+<p><em>Proof.</em> For integer $\alpha$ the operator $I^{0}$ is the identity and the definitions reduce to $f^{(n)}$. For the difference, write $f$ as its Taylor polynomial of order $n-1$ at $a$ plus a remainder whose first $n$ derivatives vanish at $a$; the Caputo derivative kills the polynomial and acts on the remainder, while the Riemann–Liouville derivative picks up the contribution of the polynomial, computed term by term from $D_a^\alpha(t-a)^k = \frac{\Gamma(k+1)}{\Gamma(k+1-\alpha)}(t-a)^{k-\alpha}$. $\square$</p>
+<p>The difference is not a technicality. The Caputo derivative is the one for which the initial conditions of a fractional differential equation are the ordinary values $f^{(k)}(a)$, $k<n$, and for which the derivative of a constant vanishes; the Riemann–Liouville derivative is the one that composes cleanly with the fractional integral. The two operators are the two natural completions of the integer-order derivative to non-integer order, and the theory uses both.</p>
+<p><strong>Theorem (composition laws).</strong> For $\alpha>0$ and $n=\lceil\alpha\rceil$:</p>
+<p>$$
+D_a^\alpha I_a^\alpha f = f, \qquad I_a^\alpha D_a^\alpha f(t) = f(t) - \sum_{k=0}^{n-1}\frac{(t-a)^{k-\alpha}}{\Gamma(k-\alpha+1)}\,\Bigl[I_a^{n-\alpha}f\Bigr]^{(k)}(a^+),
+$$</p>
+<p>(the latter for $f$ with the required regularity), and for the Caputo derivative</p>
+<p>$$
+I_a^\alpha\,{}^C D_a^\alpha f(t) = f(t) - \sum_{k=0}^{n-1}\frac{(t-a)^k}{k!}f^{(k)}(a).
+$$</p>
+<p><em>Proof.</em> The first identity is the fundamental theorem of calculus applied to $I^{n-\alpha}f$. For the second, apply the operator identity $I^\alpha D^n I^{n-\alpha}$ and peel off the boundary terms of the repeated integration; the Caputo identity follows from $I^\alpha I^{n-\alpha}f^{(n)} = I^nf^{(n)}$ and the $n$-fold integration formula. $\square$</p>
+<p><strong>Definition.</strong> The <strong>Grünwald–Letnikov derivative</strong> of order $\alpha$ is the limit of the finite-difference quotient</p>
+<p>$$
+D_{\mathrm{GL}}^\alpha f(t) = \lim_{h\to0^+}h^{-\alpha}\sum_{k=0}^{\lfloor t/h\rfloor}(-1)^k\binom{\alpha}{k}f(t-kh),
+$$</p>
+<p>with $\binom{\alpha}{k} = \frac{\Gamma(\alpha+1)}{\Gamma(k+1)\Gamma(\alpha-k+1)}$.</p>
+<p><strong>Proposition.</strong> For $f$ of class $C^n$ with $n=\lceil\alpha\rceil$ the Grünwald–Letnikov derivative agrees with the Riemann–Liouville derivative; for $\alpha = n$ the generating function $(1-z)^n$ has finitely many nonzero coefficients and the definition reduces to the $n$-th finite difference.</p>
+<p><em>Proof.</em> The coefficients of $(1-z)^\alpha$ are $(-1)^k\binom{\alpha}{k}$, so the sum is the $\alpha$-th finite difference of $f$; expanding $f(t-kh)$ in a Taylor polynomial and summing against the binomial coefficients, whose partial sums have the known asymptotics, gives the Riemann–Liouville derivative in the limit. For $\alpha=n$ the generating function is a polynomial of degree $n$, so only $k\le n$ contribute and the quotient is the $n$-th difference quotient. $\square$</p>
+<p>The Grünwald–Letnikov form is the definition best suited to computation, and it is the definition that shows the nonlocality most plainly: the value of $D^\alpha f$ at $t$ depends on the values of $f$ at all earlier points $t-kh$ down to $0$, with weights decaying like $k^{-\alpha-1}$.</p>
+<h2 id="the-mittag-leffler-function">The Mittag-Leffler Function</h2>
+<p><strong>Definition.</strong> For $\alpha>0$ and $\beta \in \mathbb{C}$ the <strong>Mittag-Leffler function</strong> is the entire function</p>
+<p>$$
+E_{\alpha,\beta}(z) = \sum_{k=0}^{\infty}\frac{z^k}{\Gamma(\alpha k+\beta)} ,
+$$</p>
+<p>and $E_\alpha = E_{\alpha,1}$. Thus $E_1(z) = e^z$, $E_2(z) = \cosh\sqrt z$ for the even variable, and $E_{1,2}(z) = (e^z-1)/z$.</p>
+<p><strong>Theorem (Laplace transform).</strong> For $\alpha>0$, $\beta>0$, $\lambda \in \mathbb{C}$ and $t>0$,</p>
+<p>$$
+\int_0^\infty e^{-st}\,t^{\beta-1}E_{\alpha,\beta}(\lambda t^\alpha)\,dt = \frac{s^{-\beta}}{1-\lambda s^{-\alpha}}, \qquad \operatorname{Re}s > |\lambda|^{1/\alpha} .
+$$</p>
+<p><em>Proof.</em> Integrating term by term and using $\int_0^\infty e^{-st}t^{\gamma-1}dt = \Gamma(\gamma)s^{-\gamma}$,</p>
+<p>$$
+\int_0^\infty e^{-st}t^{\beta-1}E_{\alpha,\beta}(\lambda t^\alpha)dt = \sum_{k\ge0}\frac{\lambda^k}{\Gamma(\alpha k+\beta)}\cdot\frac{\Gamma(\alpha k+\beta)}{s^{\alpha k+\beta}} = \sum_{k\ge0}\lambda^ks^{-\alpha k-\beta} ,
+$$</p>
+<p>which is the displayed geometric series, absolutely convergent for $|s|>|\lambda|^{1/\alpha}$. $\square$</p>
+<p><strong>Theorem (asymptotics).</strong> For $0<\alpha<1$ and $\lambda>0$,</p>
+<p>$$
+E_\alpha(-\lambda t^\alpha) = \frac{1}{\lambda\,\Gamma(1-\alpha)}\,t^{-\alpha} + O(t^{-2\alpha}) \qquad (t\to\infty),
+$$</p>
+<p>so the function decays algebraically and not exponentially; for $1<\alpha<2$ the decay is algebraic with an oscillation. Near $t=0$, $E_\alpha(-\lambda t^\alpha) = 1 - \frac{\lambda t^\alpha}{\Gamma(\alpha+1)} + O(t^{2\alpha})$.</p>
+<p><em>Proof.</em> Quoted as standard. The expansion follows from the integral representation $E_\alpha(-z) = \int_\gamma \frac{e^{\zeta}\zeta^{\alpha-1}}{\zeta^\alpha+z}d\zeta$ and the residue at the pole $\zeta$ with $\zeta^\alpha = -z$; the pole contributes $t^{-\alpha}$. $\square$</p>
+<p>The algebraic decay is the quantitative content of anomalous relaxation: a fractional relaxation equation relaxes to equilibrium as a power of the time rather than exponentially, and the fractional order $\alpha$ is the exponent.</p>
+<h2 id="fractional-ordinary-differential-equations">Fractional Ordinary Differential Equations</h2>
+<h3 id="the-cauchy-problem">The Cauchy Problem</h3>
+<p><strong>Definition.</strong> Let $\alpha>0$, let $X$ be a Banach space, and let $f : [0,T]\times X \to X$. The <strong>fractional differential equation</strong> of order $\alpha$ is</p>
+<p>$$
+{}^C D_0^\alpha y(t) = f\bigl(t, y(t)\bigr), \qquad y^{(k)}(0) = y_k, \quad k = 0,\dots,n-1,
+$$</p>
+<p>the derivative being the Caputo derivative, so that the initial data are the ordinary values of $y$ and its derivatives at $0$. With $n=1$ and $\alpha \in (0,1)$ there is one initial condition, $y(0)=y_0$, and the equation is the <strong>fractional relaxation equation</strong> when $f$ does not depend on $t$.</p>
+<p><strong>Theorem (equivalence to a Volterra equation).</strong> For $\alpha \in (0,1)$ and $y$ continuous, the Cauchy problem ${}^C D_0^\alpha y = f(t,y)$, $y(0)=y_0$, is equivalent to the integral equation</p>
+<p>$$
+y(t) = y_0 + \frac{1}{\Gamma(\alpha)}\int_0^t(t-s)^{\alpha-1}f\bigl(s,y(s)\bigr)\,ds = y_0 + I_0^\alpha f(\cdot,y)(t).
+$$</p>
+<p>For general $\alpha$ with $n=\lceil\alpha\rceil$, the equivalent equation is $y(t) = \sum_{k<n}\frac{t^k}{k!}y_k + I_0^\alpha f(\cdot,y)(t)$.</p>
+<p><em>Proof.</em> Apply $I_0^\alpha$ to both sides of the equation and use the composition identity $I_0^\alpha\,{}^C D_0^\alpha y = y - \sum_{k<n}\frac{t^k}{k!}y^{(k)}(0)$; conversely, applying ${}^C D_0^\alpha$ to the integral equation returns the equation, by the same identity read backwards. $\square$</p>
+<p><strong>Theorem (existence and uniqueness).</strong> Let $\alpha\in(0,1)$, let $f:[0,T]\times X\to X$ be continuous and Lipschitz in the second variable with constant $L$, and let $y_0 \in X$. Then on the interval $[0,T_*]$ with</p>
+<p>$$
+T_* = \min\Bigl(T,\ \bigl(\Gamma(\alpha+1)/L\bigr)^{1/\alpha}\Bigr)
+$$</p>
+<p>there is a unique continuous solution of the Cauchy problem; on a shorter interval it is the limit of the Picard iterates $y_{m+1} = y_0 + I_0^\alpha f(\cdot,y_m)$.</p>
+<p><em>Proof.</em> Let $T' \le T_*$ and consider the map $\Lambda y = y_0 + I_0^\alpha f(\cdot,y)$ on $C([0,T'],X)$ with the supremum norm. Then</p>
+<p>$$
+\|\Lambda y - \Lambda z\|_\infty \le L\,\|I_0^\alpha\| \cdot \|y-z\|_\infty, \qquad \|I_0^\alpha\|\le \frac{(T')^\alpha}{\Gamma(\alpha+1)},
+$$</p>
+<p>as follows from $I_0^\alpha 1 = t^\alpha/\Gamma(\alpha+1)$ and the positivity of the kernel; choosing $T'$ with $L(T')^\alpha/\Gamma(\alpha+1)<1$ makes $\Lambda$ a contraction, the contraction mapping principle gives a unique fixed point, and the fixed point is exactly the solution by the equivalence theorem. Iterating over successive intervals gives the maximal interval. $\square$</p>
+<p>The proof is the Picard argument verbatim, with the single change that the kernel is weakly singular: the factor $T^\alpha/\Gamma(\alpha+1)$ replaces the factor $T$ of the ordinary theory, and the singularity is integrable, so no separate treatment is needed.</p>
+<p><strong>Theorem (the linear equation).</strong> The solution of ${}^C D_0^\alpha y = \lambda y$ with $y(0)=y_0$, $\alpha\in(0,1)$, is</p>
+<p>$$
+y(t) = y_0\,E_\alpha(\lambda t^\alpha),
+$$</p>
+<p>and more generally the solution with $y(0)=y_0$ of ${}^C D_0^\alpha y - \lambda y = t^{\beta-1}g(t)$ is given by the convolution of the Mittag-Leffler kernel with the forcing term.</p>
+<p><em>Proof.</em> The Laplace transform of the equation, using $\mathcal L\{{}^C D_0^\alpha y\}(s) = s^\alpha\hat y(s) - s^{\alpha-1}y_0$, gives $\hat y(s) = \frac{s^{\alpha-1}y_0}{s^\alpha-\lambda} = \frac{y_0s^{-1}}{1-\lambda s^{-\alpha}}$; the inverse transform by the previous theorem with $\beta=1$ is $y_0E_\alpha(\lambda t^\alpha)$. $\square$</p>
+<p><strong>Example (stretched and algebraic relaxation).</strong> For $0<\alpha<1$ and $\lambda>0$ the solution of ${}^C D_0^\alpha y = -\lambda y$ is $y = y_0E_\alpha(-\lambda t^\alpha)$, which begins at $1$, decays initially like $1 - \lambda t^\alpha/\Gamma(\alpha+1)$, and at large time decays like $y_0/(\lambda\Gamma(1-\alpha))\,t^{-\alpha}$; for $\alpha=1$ it is the exponential $e^{-\lambda t}$. The limiting cases are exact: as $\alpha\to1$ the Mittag-Leffler function tends to the exponential, and the algebraic tail disappears.</p>
+<h2 id="fractional-partial-differential-equations">Fractional Partial Differential Equations</h2>
+<p><strong>Definition.</strong> Let $\alpha\in(0,1]$. The <strong>time-fractional diffusion equation</strong> is</p>
+<p>$$
+{}^C D_{0}^\alpha u(x,t) = \Delta u(x,t), \qquad u(x,0)=f(x),
+$$</p>
+<p>on $\mathbb{R}^n\times(0,\infty)$; for $\alpha=1$ it is the heat equation of the classical theory, and for $\alpha<1$ it is a <strong>subdiffusion</strong>.</p>
+<p><strong>Theorem (solution by the Fourier transform).</strong> For $f$ bounded and continuous, the solution is</p>
+<p>$$
+\hat u(\xi,t) = E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)\hat f(\xi),
+$$</p>
+<p>so that $u(\cdot,t) = f * K_t^{(\alpha)}$ with the <strong>fractional heat kernel</strong></p>
+<p>$$
+K_t^{(\alpha)}(x) = \frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}e^{ix\cdot\xi}E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)d\xi .
+$$</p>
+<p><em>Proof.</em> Taking the Fourier transform in $x$ turns the equation into the fractional ordinary equation ${}^C D_0^\alpha\hat u = -|\xi|^2\hat u$ with $\hat u(\xi,0)=\hat f(\xi)$, whose solution is the Mittag-Leffler function by the preceding theorem. $\square$</p>
+<p><strong>Theorem (subdiffusive scaling).</strong> The kernel $K_t^{(\alpha)}$ is a probability density for each $t>0$, it is self-similar,</p>
+<p>$$
+K_t^{(\alpha)}(x) = t^{-\alpha n/2}K_1^{(\alpha)}\bigl(x\,t^{-\alpha/2}\bigr),
+$$</p>
+<p>and for $0<\alpha<1$ it has the heavy tail</p>
+<p>$$
+K_t^{(\alpha)}(x) \sim c\,t^{\alpha}\,|x|^{-n-2} \qquad (|x|\to\infty),
+$$</p>
+<p>with a constant $c$ depending on $\alpha$ and $n$. Consequently the second moment $\int|x|^2K_t^{(\alpha)}$ is infinite for $0<\alpha<1$, while the truncated second moment over the ball $|x|\le R$ with $R$ large compared with $t^{\alpha/2}$ grows as $C\,t^{\alpha}$. For $\alpha=1$ the kernel is the Gaussian heat kernel of the classical theory and the second moment is $2nt$.</p>
+<p><em>Proof.</em> The scaling is the substitution $\xi\mapsto t^{-\alpha/2}\xi$ in the Fourier integral. The tail follows from the behaviour of $E_\alpha(-|\xi|^2t^\alpha)$ near $\xi=0$, namely $1 - c_1|\xi|^2t^\alpha + o(|\xi|^2)$; a density whose Fourier transform has this expansion has the tail $|x|^{-n-2}$ with coefficient proportional to $t^\alpha$, and its second moment diverges because $\int R^2\cdot R^{-n-2}R^{n-1}dR = \int R^{-1}dR$ diverges at infinity. Truncating at $R$ recovers the growth $t^\alpha$. $\square$</p>
+<p><strong>Remark (anomalous diffusion as mathematics).</strong> The exponent of the mean square displacement, $\alpha$ instead of $1$, is the defining feature of subdiffusion, and it is a statement about the scaling of the kernel. The equation is mathematically distinct from the heat equation not only in its solutions but in its operator theory: the operator ${}^C D_t^\alpha$ does not generate a semigroup in the ordinary sense, and the solution operator is not a one-parameter group but a family obeying an integro-differential evolution equation. The general theory of such evolution families belongs with the semigroups and evolution equations of this Part, where the generation theorem for the classical case is proved; the fractional case is the boundary of that theory, and the Mittag-Leffler function replaces the exponential throughout.</p>
+<h2 id="fractional-powers-of-operators">Fractional Powers of Operators</h2>
+<p><strong>Definition.</strong> Let $A$ be a closed linear operator on a Banach space $X$ whose resolvent contains a sector $|\arg\lambda|<\phi$ and satisfies $\|(\lambda I - A)^{-1}\|\le M|\lambda|^{-1}$ there, and suppose $0$ lies in the resolvent set. For $0<\alpha<1$ the <strong>negative fractional power</strong> $A^{-\alpha}$ is</p>
+<p>$$
+A^{-\alpha} = \frac{\sin(\pi\alpha)}{\pi}\int_0^\infty \lambda^{-\alpha}(\lambda I + A)^{-1}\,d\lambda ,
+$$</p>
+<p>the integral converging in the operator norm, and the positive fractional power $A^\alpha$ is the inverse of $A^{-\alpha}$ on its domain.</p>
+<p><strong>Theorem (properties).</strong> The family $A^{-\alpha}$ is a strongly continuous semigroup-like family, $A^{-\alpha}A^{-\beta} = A^{-(\alpha+\beta)}$ for $\alpha,\beta>0$, and $A^{-\alpha}$ is injective with dense range; if $A$ generates a bounded strongly continuous semigroup $e^{-tA}$, then</p>
+<p>$$
+A^{-\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}e^{-tA}\,dt ,
+$$</p>
+<p>the Bochner integral converging in the operator norm.</p>
+<p><em>Proof.</em> The semigroup law for the first formula follows from the resolvent identity and the fact that the Laplace transform of the product of two power kernels is the power kernel of the sum, evaluated at the resolvent; the second formula follows from the first by the standard representation of the resolvent as the Laplace transform of the semigroup, $\int_0^\infty e^{-\lambda t}e^{-tA}dt = (\lambda I+A)^{-1}$, and the beta integral. $\square$</p>
+<p>The two formulas coincide on their common domain and give the fractional power in terms of a semigroup that is assumed to exist; the generation theory that decides when it does — the Hille–Yosida and Lumer–Phillips theorems, and the analytic semigroup setting in which $A^\alpha$ is defined for complex $\alpha$ — is the content of the article of this Part on semigroups and evolution equations. What belongs to this article is the scalar theory of the fractional integral and derivative and the way it is used to write the fractional equations as Volterra equations; the operator-valued theory is the functional-analytic continuation of the same formulas.</p>
+<p><strong>Remark (the fractional calculus of variations).</strong> A variational problem with a fractional derivative in the Lagrangian, $\int_a^bL(t,y,{}^C D_a^\alpha y)\,dt$, has stationarity equations obtained by a fractional integration by parts, in which the adjoint of ${}^C D_a^\alpha$ on the appropriate space is a Riemann–Liouville derivative acting on the test function. The resulting Euler–Lagrange equation is a fractional boundary-value problem with boundary terms at both ends; the full development belongs to the calculus of variations and its fractional extension, and is noted here only to fix the seam.</p>
+<h2 id="summary">Summary</h2>
+<p>The fractional integral $I_a^\alpha f(t) = \frac{1}{\Gamma(\alpha)}\int_a^t(t-s)^{\alpha-1}f(s)ds$ is defined for every $\alpha>0$ and obeys the semigroup law $I^\alpha I^\beta = I^{\alpha+\beta}$. Differentiating it gives the Riemann–Liouville derivative $D_a^\alpha = D^nI^{n-\alpha}$, and fractionally integrating the ordinary derivative gives the Caputo derivative ${}^C D_a^\alpha = I^{n-\alpha}D^n$ with $n=\lceil\alpha\rceil$; the two agree on functions whose first $n$ derivatives vanish at $a$ and differ in general by a polynomial, and both reduce to $f^{(n)}$ when $\alpha=n$ is an integer. The Caputo derivative is the one whose initial conditions are ordinary values, and $D_a^\alpha$ annihilates constants while the Riemann–Liouville derivative does not. The Grünwald–Letnikov finite-difference formula gives an equivalent, manifestly nonlocal definition.</p>
+<p>The Mittag-Leffler function $E_{\alpha,\beta}(z) = \sum_kz^k/\Gamma(\alpha k+\beta)$ is the special function of the subject; its Laplace transform is $s^{-\beta}/(1-\lambda s^{-\alpha})$, and for $0<\alpha<1$ it decays algebraically, $E_\alpha(-\lambda t^\alpha)\sim t^{-\alpha}/(\lambda\Gamma(1-\alpha))$, rather than exponentially. The Cauchy problem ${}^C D_0^\alpha y = f(t,y)$ with $n$ initial values is equivalent to a weakly singular Volterra integral equation, and Picard iteration gives existence and uniqueness on an interval whose length is governed by the factor $LT^\alpha/\Gamma(\alpha+1)$; the linear equation ${}^C D_0^\alpha y = \lambda y$ has the solution $y_0E_\alpha(\lambda t^\alpha)$. The time-fractional diffusion equation ${}^C D_t^\alpha u = \Delta u$ is solved in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, its kernel is self-similar with the scaling $t^{\alpha/2}$ and heavy tails, and its mean square displacement grows as $t^\alpha$, which is subdiffusion. Fractional powers of a closed sectorial operator are defined by a Bochner integral against the resolvent, or equivalently against a bounded semigroup, $A^{-\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}e^{-tA}dt$; the generation theory behind that formula belongs to the semigroups and evolution equations of this Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$, $\beta$</td>
+<td>Orders and parameters; $\alpha>0$, $\beta\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>Gamma function</td>
+</tr>
+<tr>
+<td>$I_a^\alpha$</td>
+<td>Riemann–Liouville fractional integral of order $\alpha$ from $a$</td>
+</tr>
+<tr>
+<td>$D_a^\alpha$</td>
+<td>Riemann–Liouville fractional derivative</td>
+</tr>
+<tr>
+<td>${}^C D_a^\alpha$</td>
+<td>Caputo fractional derivative</td>
+</tr>
+<tr>
+<td>$D_{\mathrm{GL}}^\alpha$</td>
+<td>Grünwald–Letnikov derivative</td>
+</tr>
+<tr>
+<td>$n = \lceil\alpha\rceil$</td>
+<td>Least integer $\ge\alpha$</td>
+</tr>
+<tr>
+<td>$E_{\alpha,\beta}$</td>
+<td>Mittag-Leffler function, $E_\alpha = E_{\alpha,1}$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>Coefficient of the linear fractional equation</td>
+</tr>
+<tr>
+<td>$K_t^{(\alpha)}$</td>
+<td>Fractional heat kernel of order $\alpha$</td>
+</tr>
+<tr>
+<td>${}^C D_t^\alpha u = \Delta u$</td>
+<td>Time-fractional diffusion equation</td>
+</tr>
+<tr>
+<td>$A^{-\alpha}$, $A^\alpha$</td>
+<td>Fractional powers of a sectorial operator $A$</td>
+</tr>
+<tr>
+<td>$X$</td>
+<td>Banach target space</td>
+</tr>
+<tr>
+<td>subdiffusion</td>
+<td>Mean square displacement growing as $t^\alpha$, $\alpha<1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Kai Diethelm, <em>The Analysis of Fractional Differential Equations</em> (Springer, 2010), for the Riemann–Liouville and Caputo theory and the Mittag-Leffler function.</li>
+<li>Anatoly A. Kilbas, Hari M. Srivastava and Juan J. Trujillo, <em>Theory and Applications of Fractional Differential Equations</em> (Elsevier, 2006), for the systematic theory and the composition laws.</li>
+<li>Igor Podlubny, <em>Fractional Differential Equations</em> (Academic Press, 1999), for the Grünwald–Letnikov definition and the Mittag-Leffler asymptotics.</li>
+<li>Rudolf Gorenflo, Anatoly A. Kilbas, Francesco Mainardi and Sergei V. Rogosin, <em>Mittag-Leffler Functions, Related Topics and Applications</em> (Springer, 2nd ed. 2020), for the special function and its asymptotics.</li>
+<li>Francesco Mainardi, <em>Fractional Calculus and Waves in Linear Viscoelasticity</em> (Imperial College Press, 2010), for the relaxation and diffusion models.</li>
+<li>Mark M. Meerschaert and Alla Sikorskii, <em>Stochastic Models for Fractional Calculus</em> (De Gruyter, 2012), for subdiffusion and the scaling of the transition kernels.</li>
+<li>Boris Baeumer and Mark M. Meerschaert, "Stochastic Solutions for Fractional Cauchy Problems", <em>Journal of Applied Probability</em> 38 (2001), for the probabilistic representation.</li>
+<li>Alessandra N. Kochubei, "Fractional Order Diffusion", <em>Differential Equations</em> 26 (1990), for the fundamental solution of the time-fractional diffusion equation.</li>
+<li>Ravi P. Agarwal, Dumitru Baleanu, Vangipuram Lakshmikantham and others, "Fractional Calculus of Variations", in <em>Advances in Fractional Calculus</em> (Springer, 2007), for the variational extension noted at the end.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Harmonic Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="complex-harmonic-analysis"><strong>Complex Harmonic Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces harmonic analysis on the complex plane as the study of the Fourier transform, convolution, and the function spaces on which they act, with the complex structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The complex plane is used both as the domain of the functions and as the coefficient field. The interaction between the additive structure of $\mathbb{C} \cong \mathbb{R}^2$ and the multiplicative structure of $\mathbb{C}$ as a field is the source of the phenomena that distinguish complex harmonic analysis from real harmonic analysis in $\mathbb{R}^2$.</p>
+<h2 id="the-complex-plane-as-a-locally-compact-abelian-group">The Complex Plane as a Locally Compact Abelian Group</h2>
+<h3 id="additive-structure">Additive Structure</h3>
+<p>The complex plane $\mathbb{C}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its <strong>characters</strong> are the continuous homomorphisms</p>
+<p>$$
+\chi_\xi(z) = e^{2\pi i \operatorname{Re}(\bar{\xi} z)}, \qquad \xi \in \mathbb{C}.
+$$</p>
+<p>Equivalently, writing $\xi = u + iv$ and $z = x + iy$,</p>
+<p>$$
+\chi_\xi(z) = e^{2\pi i (ux + vy)}.
+$$</p>
+<p>The dual group $\hat{\mathbb{C}}$ is isomorphic to $\mathbb{C}$ itself, and the pairing is</p>
+<p>$$
+\langle \xi, z \rangle = \operatorname{Re}(\bar{\xi} z) = ux + vy.
+$$</p>
+<p>So complex harmonic analysis is, at the level of the additive group, the same as Fourier analysis on $\mathbb{R}^2$. The complex structure enters through the identification of $\mathbb{C}$ with itself as a dual object, and through the interaction with multiplication.</p>
+<h3 id="multiplicative-structure">Multiplicative Structure</h3>
+<p>The multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ is also a locally compact abelian group, isomorphic to $\mathbb{R}_{>0} \times \mathbb{S}^1$ via the polar decomposition</p>
+<p>$$
+z = r e^{i\theta}, \qquad r > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
+$$</p>
+<p>Its characters are</p>
+<p>$$
+\chi_{\tau, n}(z) = r^{i \tau} e^{i n \theta}, \qquad \tau \in \mathbb{R}, \; n \in \mathbb{Z}.
+$$</p>
+<p>This is the starting point of <strong>multiplicative harmonic analysis</strong> on $\mathbb{C}$, which is the Mellin transform in disguise.</p>
+<h2 id="the-fourier-transform-on-math19">The Fourier Transform on $\mathbb{C}$</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>Fourier transform</strong> of $f \in L^1(\mathbb{C})$ is</p>
+<p>$$
+\hat{f}(\xi) = \int_{\mathbb{C}} f(z) e^{-2\pi i \operatorname{Re}(\bar{\xi} z)} \, dz,
+$$</p>
+<p>where $dz$ is Lebesgue measure on $\mathbb{C} \cong \mathbb{R}^2$. Writing $z = x + iy$ and $\xi = u + iv$,</p>
+<p>$$
+\hat{f}(u, v) = \int_{\mathbb{R}^2} f(x, y) e^{-2\pi i (ux + vy)} \, dx \, dy.
+$$</p>
+<p>This is the ordinary two-dimensional Fourier transform. The complex notation is a convenience; the content is the same.</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Linearity.</strong> $\widehat{af + bg} = a \hat{f} + b \hat{g}$.</p>
+<p><strong>Translation.</strong> If $f_w(z) = f(z - w)$, then $\hat{f}_w(\xi) = e^{-2\pi i \operatorname{Re}(\bar{\xi} w)} \hat{f}(\xi)$.</p>
+<p><strong>Modulation.</strong> If $f_\xi(z) = e^{2\pi i \operatorname{Re}(\bar{\xi} z)} f(z)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.</p>
+<p><strong>Scaling.</strong> If $f_\lambda(z) = f(\lambda z)$ for $\lambda \in \mathbb{C}^\times$, then</p>
+<p>$$
+\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^2} \hat{f}\left(\frac{\xi}{\bar{\lambda}}\right),
+$$</p>
+<p>where $\xi/\bar{\lambda}$ is complex division.</p>
+<p><strong>Rotation.</strong> If $f_\theta(z) = f(e^{i\theta} z)$, then $\hat{f}_\theta(\xi) = \hat{f}(e^{i\theta} \xi)$. The Fourier transform commutes with rotations.</p>
+<p><strong>Conjugation.</strong> $\widehat{\bar{f}}(\xi) = \overline{\hat{f}(-\xi)}$.</p>
+<h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
+<p><strong>Theorem.</strong> The Fourier transform extends uniquely to a unitary operator</p>
+<p>$$
+\mathcal{F} : L^2(\mathbb{C}) \to L^2(\mathbb{C}),
+$$</p>
+<p>with</p>
+<p>$$
+\|\hat{f}\|_2 = \|f\|_2, \qquad \langle \hat{f}, \hat{g} \rangle = \langle f, g \rangle.
+$$</p>
+<p>This is the Plancherel theorem for $\mathbb{R}^2$, written in complex notation.</p>
+<h3 id="the-inversion-theorem">The Inversion Theorem</h3>
+<p><strong>Theorem.</strong> If $f \in L^1(\mathbb{C})$ and $\hat{f} \in L^1(\mathbb{C})$, then</p>
+<p>$$
+f(z) = \int_{\mathbb{C}} \hat{f}(\xi) e^{2\pi i \operatorname{Re}(\bar{\xi} z)} \, d\xi
+$$</p>
+<p>for almost every $z$.</p>
+<h2 id="convolution">Convolution</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>convolution</strong> of $f, g : \mathbb{C} \to \mathbb{C}$ is</p>
+<p>$$
+(f * g)(z) = \int_{\mathbb{C}} f(z - w) g(w) \, dw,
+$$</p>
+<p>whenever the integral converges. This is the convolution on the additive group $\mathbb{C} \cong \mathbb{R}^2$.</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Commutativity.</strong> $f * g = g * f$.</p>
+<p><strong>Associativity.</strong> $(f * g) * h = f * (g * h)$.</p>
+<p><strong>Young's inequality.</strong> If $1/p + 1/q = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then</p>
+<p>$$
+\|f * g\|_r \leq \|f\|_p \|g\|_q.
+$$</p>
+<p><strong>Convolution theorem.</strong> If $f, g \in L^1(\mathbb{C})$, then</p>
+<p>$$
+\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
+$$</p>
+<p>The convolution is the additive convolution. There is also a <strong>multiplicative convolution</strong> on $\mathbb{C}^\times$, defined by</p>
+<p>$$
+(f \star g)(z) = \int_{\mathbb{C}^\times} f(z/w) g(w) \frac{dw}{|w|^2},
+$$</p>
+<p>whose Fourier transform is the Mellin transform.</p>
+<h2 id="the-paleywiener-theorem">The Paley–Wiener Theorem</h2>
+<h3 id="functions-of-exponential-type">Functions of Exponential Type</h3>
+<p>A holomorphic function $F : \mathbb{C} \to \mathbb{C}$ is of <strong>exponential type</strong> if there exist constants $A, B > 0$ such that</p>
+<p>$$
+|F(z)| \leq A e^{B |z|}, \qquad z \in \mathbb{C}.
+$$</p>
+<p>The <strong>indicator function</strong> of $F$ is</p>
+<p>$$
+h_F(\theta) = \limsup_{r \to \infty} \frac{\log |F(r e^{i\theta})|}{r}.
+$$</p>
+<h3 id="the-paleywiener-theorem_1">The Paley–Wiener Theorem</h3>
+<p><strong>Theorem (Paley–Wiener).</strong> The Fourier transform is a bijection between</p>
+<ul>
+<li>compactly supported $L^2$ functions on $\mathbb{R}$, and</li>
+<li>entire functions of exponential type whose restriction to $\mathbb{R}$ is in $L^2$.</li>
+</ul>
+<p>More precisely, if $f \in L^2(\mathbb{R})$ is supported in $[-B, B]$, then $\hat{f}$ extends to an entire function of exponential type at most $2\pi B$, and conversely.</p>
+<p><strong>Complex version.</strong> The same theorem holds with $\mathbb{R}$ replaced by $\mathbb{C}$ and compact support replaced by support in a compact subset of $\mathbb{C}$. The Fourier transform of a compactly supported function on $\mathbb{C}$ is an entire function of exponential type on $\mathbb{C}$.</p>
+<h3 id="the-paleywienerschwartz-theorem">The Paley–Wiener–Schwartz Theorem</h3>
+<p><strong>Theorem (Paley–Wiener–Schwartz).</strong> The Fourier transform is a bijection between</p>
+<ul>
+<li>compactly supported distributions on $\mathbb{C}$, and</li>
+<li>entire functions of exponential type on $\mathbb{C}$ satisfying a growth condition.</li>
+</ul>
+<p>This theorem is the foundation of the theory of <strong>hyperfunctions</strong>, which are the analytic functionals of Sato.</p>
+<h2 id="the-cauchyriemann-operator-and-harmonic-analysis">The Cauchy–Riemann Operator and Harmonic Analysis</h2>
+<h3 id="the-cauchyriemann-operator">The Cauchy–Riemann Operator</h3>
+<p>The <strong>Cauchy–Riemann operator</strong> is</p>
+<p>$$
+\bar{\partial} = \frac{\partial}{\partial \bar{z}} = \frac{1}{2}\left( \frac{\partial}{\partial x} + i \frac{\partial}{\partial y} \right).
+$$</p>
+<p>A function $f$ is holomorphic iff $\bar{\partial} f = 0$. The <strong>Laplacian</strong> on $\mathbb{C}$ is</p>
+<p>$$
+\Delta = 4 \partial \bar{\partial} = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2},
+$$</p>
+<p>where $\partial = \partial/\partial z$.</p>
+<h3 id="the-fourier-transform-and-the-laplacian">The Fourier Transform and the Laplacian</h3>
+<p>The Fourier transform diagonalizes the Laplacian:</p>
+<p>$$
+\widehat{\Delta f}(\xi) = -4 \pi^2 |\xi|^2 \hat{f}(\xi).
+$$</p>
+<p>This is the algebraic content of the Fourier transform on $\mathbb{C}$: it turns differentiation into multiplication by the symbol $-4\pi^2 |\xi|^2$.</p>
+<p>The Cauchy–Riemann operator has symbol</p>
+<p>$$
+\widehat{\bar{\partial} f}(\xi) = \pi i \xi \hat{f}(\xi),
+$$</p>
+<p>where $\bar{\xi}$ is the complex conjugate of $\xi$. The symbol vanishes on the set $\bar{\xi} = 0$, which is the origin. This is the reason the Cauchy–Riemann operator is elliptic: its symbol vanishes only at the origin.</p>
+<h3 id="the-fundamental-solution-of-the-laplacian">The Fundamental Solution of the Laplacian</h3>
+<p>The <strong>fundamental solution</strong> of the Laplacian on $\mathbb{C}$ is</p>
+<p>$$
+\Phi(z) = \frac{1}{2\pi} \log |z|.
+$$</p>
+<p>It satisfies</p>
+<p>$$
+\Delta \Phi = \delta_0
+$$</p>
+<p>in the sense of distributions. The Fourier transform of $\Phi$ is the tempered distribution</p>
+<p>$$
+\hat{\Phi}(\xi) = -\frac{1}{4\pi^2 |\xi|^2},
+$$</p>
+<p>which is defined by principal value.</p>
+<h3 id="the-fundamental-solution-of-the-cauchyriemann-operator">The Fundamental Solution of the Cauchy–Riemann Operator</h3>
+<p>The <strong>fundamental solution</strong> of the Cauchy–Riemann operator is</p>
+<p>$$
+\frac{1}{\pi z},
+$$</p>
+<p>which satisfies</p>
+<p>$$
+\bar{\partial}\left( \frac{1}{\pi z} \right) = \delta_0
+$$</p>
+<p>in the sense of distributions. This is the starting point of the theory of the <strong>Bochner–Martinelli integral</strong> and of the solution of the $\bar{\partial}$-equation.</p>
+<h2 id="holomorphic-functions-and-harmonic-analysis">Holomorphic Functions and Harmonic Analysis</h2>
+<h3 id="the-hardy-spaces">The Hardy Spaces</h3>
+<p>The <strong>Hardy space</strong> $H^p(\mathbb{D})$ on the unit disk $\mathbb{D} = \{z : |z| < 1\}$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with</p>
+<p>$$
+\|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r e^{i\theta})|^p \, d\theta \right)^{1/p} < \infty
+$$</p>
+<p>for $1 \leq p < \infty$, and</p>
+<p>$$
+\|f\|_{H^\infty} = \sup_{z \in \mathbb{D}} |f(z)| < \infty
+$$</p>
+<p>for $p = \infty$.</p>
+<p><strong>Theorem (Fatou).</strong> Every $f \in H^p$ has a boundary value $f(e^{i\theta})$ for almost every $\theta$, and the boundary function is in $L^p(\mathbb{T})$.</p>
+<p><strong>Theorem (F. and M. Riesz).</strong> If $f \in H^1$ and its boundary function is real-valued, then $f$ is constant.</p>
+<p>The Hardy spaces are the natural setting for the study of holomorphic functions with controlled growth, and they are connected to the Fourier series on the circle by the boundary value theorem.</p>
+<h3 id="the-paleywiener-space">The Paley–Wiener Space</h3>
+<p>The <strong>Paley–Wiener space</strong> $PW_B$ is the set of entire functions of exponential type at most $2\pi B$ whose restriction to $\mathbb{R}$ is in $L^2$. By the Paley–Wiener theorem, it is the image of the compactly supported $L^2$ functions on $[-B, B]$ under the Fourier transform.</p>
+<p>The Paley–Wiener space is a reproducing kernel Hilbert space, with reproducing kernel</p>
+<p>$$
+K_B(z, w) = \frac{\sin(2\pi B (z - \bar{w}))}{\pi (z - \bar{w})}.
+$$</p>
+<p>It is the natural setting for the sampling theorem of Shannon, which states that a function in $PW_B$ is determined by its values on the lattice $\mathbb{Z}/(2B)$.</p>
+<h3 id="the-bergman-space">The Bergman Space</h3>
+<p>The <strong>Bergman space</strong> $A^p(\mathbb{D})$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with</p>
+<p>$$
+\|f\|_{A^p} = \left( \int_{\mathbb{D}} |f(z)|^p \, dx \, dy \right)^{1/p} < \infty.
+$$</p>
+<p>For $p = 2$, the Bergman space is a reproducing kernel Hilbert space, with reproducing kernel</p>
+<p>$$
+K(z, w) = \frac{1}{\pi (1 - z \bar{w})^2}.
+$$</p>
+<p>It is the natural setting for the study of holomorphic functions with controlled $L^p$ growth on the disk.</p>
+<h3 id="the-bloch-space">The Bloch Space</h3>
+<p>The <strong>Bloch space</strong> $\mathcal{B}$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with</p>
+<p>$$
+\|f\|_{\mathcal{B}} = |f(0)| + \sup_{z \in \mathbb{D}} (1 - |z|^2) |f'(z)| < \infty.
+$$</p>
+<p>It is a Banach space, and it is the natural setting for the study of holomorphic functions with bounded mean oscillation of the derivative.</p>
+<h2 id="the-mellin-transform">The Mellin Transform</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>Mellin transform</strong> of a function $f : (0, \infty) \to \mathbb{C}$ is</p>
+<p>$$
+\mathcal{M} f(s) = \int_0^\infty x^{s-1} f(x) \, dx,
+$$</p>
+<p>whenever the integral converges. For $f \in L^1((0, \infty), x^{\sigma-1} dx)$, the transform converges for $\operatorname{Re} s = \sigma$ and defines a holomorphic function on a vertical strip.</p>
+<h3 id="relation-to-the-fourier-transform">Relation to the Fourier Transform</h3>
+<p>Under the change of variables $x = e^t$, the Mellin transform becomes the Fourier transform:</p>
+<p>$$
+\mathcal{M} f(\sigma + i\tau) = \int_{-\infty}^\infty e^{(\sigma + i\tau) t} f(e^t) \, dt = \hat{g}(-\tau/2\pi),
+$$</p>
+<p>where $g(t) = e^{\sigma t} f(e^t)$. So the Mellin transform is the Fourier transform in logarithmic coordinates.</p>
+<h3 id="the-mellin-convolution">The Mellin Convolution</h3>
+<p>The <strong>Mellin convolution</strong> is</p>
+<p>$$
+(f \star g)(x) = \int_0^\infty f(x/y) g(y) \frac{dy}{y}.
+$$</p>
+<p>It satisfies</p>
+<p>$$
+\mathcal{M}(f \star g)(s) = \mathcal{M} f(s) \, \mathcal{M} g(s),
+$$</p>
+<p>which is the multiplicative analogue of the convolution theorem.</p>
+<h3 id="the-mellin-inversion">The Mellin Inversion</h3>
+<p><strong>Theorem.</strong> If $f$ is continuous and $\mathcal{M} f$ is integrable on the line $\operatorname{Re} s = \sigma$, then</p>
+<p>$$
+f(x) = \frac{1}{2\pi i} \int_{\sigma - i\infty}^{\sigma + i\infty} \mathcal{M} f(s) x^{-s} \, ds.
+$$</p>
+<p>This is a contour integral along a vertical line in the complex plane, and it is evaluated by residues when $\mathcal{M} f$ is meromorphic.</p>
+<h2 id="the-radon-transform">The Radon Transform</h2>
+<h3 id="definition_3">Definition</h3>
+<p>The <strong>Radon transform</strong> of a function $f : \mathbb{R}^2 \to \mathbb{C}$ is</p>
+<p>$$
+Rf(\theta, t) = \int_{x \cos\theta + y \sin\theta = t} f(x, y) \, ds,
+$$</p>
+<p>where the integral is over the line with normal direction $(\cos\theta, \sin\theta)$ and signed distance $t$ from the origin.</p>
+<h3 id="the-fourier-slice-theorem">The Fourier Slice Theorem</h3>
+<p><strong>Theorem (Fourier Slice).</strong> The one-dimensional Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional Fourier transform of $f$ to the line through the origin in direction $(\cos\theta, \sin\theta)$:</p>
+<p>$$
+\widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \cos\theta, \sigma \sin\theta).
+$$</p>
+<p><strong>Proof.</strong> Write the definition of the Radon transform, take the Fourier transform in $t$, and change variables. $\square$</p>
+<p>The Fourier slice theorem is the mathematical basis of computed tomography: it says that the Radon transform can be inverted by taking Fourier transforms along lines, and this is what the filtered back-projection algorithm does.</p>
+<h3 id="the-inversion-formula">The Inversion Formula</h3>
+<p><strong>Theorem.</strong> For suitable $f$,</p>
+<p>$$
+f(x, y) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{2\pi i \sigma (x \cos\theta + y \sin\theta)} \, d\sigma \, d\theta.
+$$</p>
+<p>The factor $|\sigma|$ is the <strong>ramp filter</strong>, and it is the source of the high-frequency amplification in tomography.</p>
+<h2 id="the-wavelet-transform">The Wavelet Transform</h2>
+<h3 id="definition_4">Definition</h3>
+<p>The <strong>continuous wavelet transform</strong> of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\psi \in L^2(\mathbb{R})$ is</p>
+<p>$$
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\psi\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
+$$</p>
+<p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\psi$ is assumed to satisfy the <strong>admissibility condition</strong></p>
+<p>$$
+C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\xi)|^2}{|\xi|} \, d\xi < \infty.
+$$</p>
+<h3 id="the-inversion-formula_1">The Inversion Formula</h3>
+<p><strong>Theorem.</strong> If $\psi$ is admissible and $f \in L^2(\mathbb{R})$, then</p>
+<p>$$
+f(t) = \frac{1}{C_\psi} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\psi f(a, b) \frac{1}{\sqrt{|a|}} \psi\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
+$$</p>
+<p>The inversion formula reconstructs $f$ from its wavelet transform.</p>
+<h3 id="relation-to-the-fourier-transform_1">Relation to the Fourier Transform</h3>
+<p>The wavelet transform localizes in both frequency and position, unlike the Fourier transform, which localizes only in frequency. This is the source of its usefulness in signal processing and image analysis. The <strong>uncertainty principle</strong> states that no transform can localize perfectly in both, and the wavelet transform achieves the optimal trade-off.</p>
+<h3 id="the-complex-wavelet-transform">The Complex Wavelet Transform</h3>
+<p>In the complex setting, the wavelet $\psi$ is allowed to be complex-valued, and the transform becomes</p>
+<p>$$
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}} f(z) \overline{\psi\left( \frac{z - b}{a} \right)} \, dz, \qquad a \in \mathbb{C}^\times, \; b \in \mathbb{C}.
+$$</p>
+<p>The complex wavelet transform is used in image processing, where it provides both magnitude and phase information, and in the analysis of oriented textures.</p>
+<h2 id="summary">Summary</h2>
+<p>Harmonic analysis on $\mathbb{C}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the complex structure playing an essential part. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters $\chi_\xi(z) = e^{2\pi i \operatorname{Re}(\bar{\xi}z)}$ are the exponentials from which the transform is built.</p>
+<p>The Fourier transform on $\mathbb{C}$ is the transform on that group, written in the complex variable, and convolution is the group convolution on $\mathbb{R}^2$. The Paley–Wiener theorem relates the decay of the transform to the holomorphic extension of the function. The article then takes up the interaction of the transform with holomorphy: the Cauchy–Riemann operator and the Laplacian, the Hardy spaces of holomorphic functions on the disc, and the theorems describing how harmonic analysis restricts to the holomorphic category.</p>
+<p>The last three sections extend the transform beyond the group setting: the Mellin transform on the multiplicative half-line, the Radon transform of a function on $\mathbb{R}^2$ along lines, and the continuous wavelet transform. In each case the definition, the basic properties and the relation to the Fourier transform are recorded.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>Complex plane</td>
+</tr>
+<tr>
+<td>$\chi_\xi(z) = e^{2\pi i \operatorname{Re}(\bar{\xi} z)}$</td>
+<td>Character of $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\hat{f}$</td>
+<td>Fourier transform</td>
+</tr>
+<tr>
+<td>$f * g$</td>
+<td>Additive convolution</td>
+</tr>
+<tr>
+<td>$f \star g$</td>
+<td>Multiplicative (Mellin) convolution</td>
+</tr>
+<tr>
+<td>$\bar{\partial} = \partial/\partial \bar{z}$</td>
+<td>Cauchy–Riemann operator</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>Laplacian</td>
+</tr>
+<tr>
+<td>$H^p(\mathbb{D})$</td>
+<td>Hardy space</td>
+</tr>
+<tr>
+<td>$PW_B$</td>
+<td>Paley–Wiener space</td>
+</tr>
+<tr>
+<td>$A^p(\mathbb{D})$</td>
+<td>Bergman space</td>
+</tr>
+<tr>
+<td>$\mathcal{B}$</td>
+<td>Bloch space</td>
+</tr>
+<tr>
+<td>$\mathcal{M} f$</td>
+<td>Mellin transform</td>
+</tr>
+<tr>
+<td>$Rf$</td>
+<td>Radon transform</td>
+</tr>
+<tr>
+<td>$W_\psi f$</td>
+<td>Wavelet transform</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton, 1971), for the classical treatment.</li>
+<li>Elias M. Stein, <em>Singular Integrals and Differentiability Properties of Functions</em> (Princeton, 1970), for the Calderón–Zygmund theory.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em> (McGraw-Hill, 1987), for the interaction between real and complex methods.</li>
+<li>John B. Garnett, <em>Bounded Analytic Functions</em> (Academic Press, 1981), for the Hardy spaces and the Paley–Wiener theorem.</li>
+<li>Sigurdur Helgason, <em>The Radon Transform</em> (Birkhäuser, 1980), for the Radon transform and its applications.</li>
+<li>Ingrid Daubechies, <em>Ten Lectures on Wavelets</em> (SIAM, 1992), for the wavelet transform.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

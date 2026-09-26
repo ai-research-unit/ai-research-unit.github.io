@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formal Power Series and Completion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="formal-power-series-and-completion"><strong>Formal Power Series and Completion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article completes the polynomial algebra at its augmentation ideal and identifies the result with the algebra of formal power series. The base structure is a <strong>commutative ring</strong> $R$ with identity $1 \neq 0$, and the algebra conventions are those of <em>Commutative Algebras</em>: the category $\mathsf{CAlg}_R$, free objects, tensor products and spectra. The symmetric algebra of <em>The Symmetric Algebra</em> and its graded pieces, the symmetric powers of <em>Symmetric Powers</em>, supply the associated graded object that the completion forgets.</p>
+<p>The construction is the $I$-adic completion</p>
+<p>$$
+\hat A = \varprojlim_k A/I^k,
+$$</p>
+<p>for an ideal $I \subseteq A$. Applied to the polynomial algebra $R[x_1, \ldots, x_n]$ at the ideal $\mathfrak{m} = (x_1, \ldots, x_n)$ of polynomials with zero constant term, it produces the algebra $R[[x_1, \ldots, x_n]]$ of formal power series. The two algebras carry the same generators and the same linear terms but differ in what they allow: a polynomial must be finite, a formal power series may be infinite, and the completion is exactly the device that admits the infinite sums while keeping every individual computation finite.</p>
+<p>The article develops the basic algebra of formal power series, the order and the $\mathfrak{m}$-adic topology, the completion functor and the completion of the polynomial algebra, the formal inverse function theorem with its contraction proof, and the relation between completion, the symmetric algebra and Taylor expansion. The formal inverse function theorem is derived here, not cited, because its proof is the clean illustration of why $\mathfrak{m}$-adic completeness is the right hypothesis.</p>
+<h2 id="formal-power-series">Formal Power Series</h2>
+<h3 id="definition-and-order">Definition and Order</h3>
+<p>Let $R$ be a commutative ring and let $x_1, \ldots, x_n$ be indeterminates. A <strong>formal power series</strong> in the $x_i$ with coefficients in $R$ is a formal expression</p>
+<p>$$
+f = \sum_{(a_1,\ldots,a_n) \in \mathbb{N}^n} c_{a_1\ldots a_n} x_1^{a_1}\cdots x_n^{a_n}, \qquad c_{a_1\ldots a_n} \in R,
+$$</p>
+<p>with no restriction on the number of nonzero coefficients. The set of all such series is written $R[[x_1, \ldots, x_n]]$, and the sum and product are the formal ones,</p>
+<p>$$
+\Bigl(\sum_a c_a x^a\Bigr) + \Bigl(\sum_a d_a x^a\Bigr) = \sum_a (c_a + d_a)x^a, \qquad \Bigl(\sum_a c_a x^a\Bigr)\Bigl(\sum_b d_b x^b\Bigr) = \sum_{a, b} c_a d_b x^{a+b},
+$$</p>
+<p>the second being finite in each degree because there are only finitely many pairs $(a,b)$ with $a + b$ fixed. With these operations $R[[x_1,\ldots,x_n]]$ is a commutative $R$-algebra, the <strong>formal power series algebra</strong>, and it contains the polynomial algebra $R[x_1,\ldots,x_n]$ as the subalgebra of series with finitely many nonzero coefficients.</p>
+<p>The <strong>order</strong> of a nonzero series $f$ is</p>
+<p>$$
+\operatorname{ord}(f) = \min\{a_1 + \cdots + a_n : c_{a_1\ldots a_n} \neq 0\},
+$$</p>
+<p>with $\operatorname{ord}(0) = +\infty$. The order satisfies $\operatorname{ord}(f+h) \geq \min(\operatorname{ord} f, \operatorname{ord} h)$ and $\operatorname{ord}(fh) \geq \operatorname{ord} f + \operatorname{ord} h$; over a domain the second is an equality.</p>
+<h3 id="the-augmentation-ideal-and-the-math28-adic-filtration">The Augmentation Ideal and the $\mathfrak{m}$-adic Filtration</h3>
+<p>Let</p>
+<p>$$
+\mathfrak{m} = (x_1, \ldots, x_n) = \{f : \operatorname{ord}(f) \geq 1\}
+$$</p>
+<p>be the ideal of series vanishing at the origin, the <strong>augmentation ideal</strong>. Its powers are the sets of series of order at least $k$,</p>
+<p>$$
+\mathfrak{m}^k = \{f : \operatorname{ord}(f) \geq k\},
+$$</p>
+<p>so the $\mathfrak{m}$-adic filtration of $R[[x_1,\ldots,x_n]]$ is the order filtration. The quotients are</p>
+<p>$$
+R[[x_1,\ldots,x_n]]/\mathfrak{m}^k \cong R[x_1,\ldots,x_n]/(x_1,\ldots,x_n)^k,
+$$</p>
+<p>the polynomials of degree less than $k$; both sides consist of the truncations of order at most $k - 1$. The algebra is $\mathfrak{m}$-adically complete, meaning that the canonical map</p>
+<p>$$
+R[[x_1, \ldots, x_n]] \longrightarrow \varprojlim_k R[[x_1,\ldots,x_n]]/\mathfrak{m}^k
+$$</p>
+<p>is a bijection: a series is the same thing as a coherent sequence of its truncations. This is the structure that the next sections exploit.</p>
+<h3 id="units">Units</h3>
+<p><strong>Proposition.</strong> A formal power series $f \in R[[x_1,\ldots,x_n]]$ is a unit if and only if its constant term $f(0)$ is a unit of $R$.</p>
+<p><em>Proof.</em> If $f(0) = u \in R^{\times}$, write $f = u(1 - h)$ with $h \in \mathfrak{m}$. Since $h^k \in \mathfrak{m}^k$ and every series is a limit of its truncations, the geometric series</p>
+<p>$$
+f^{-1} = u^{-1}\bigl(1 + h + h^2 + h^3 + \cdots\bigr)
+$$</p>
+<p>converges $\mathfrak{m}$-adically, and multiplying the series by $1 - h$ gives $1$; so $f$ is a unit. Conversely, if $f$ is a unit then $fh = 1$ for some $h$, and evaluating the constant terms gives $f(0)h(0) = 1$, so $f(0)$ is a unit. $\square$</p>
+<p><strong>Example.</strong> $1 + x$ is a unit in $R[[x]]$ with inverse $1 - x + x^2 - x^3 + \cdots$, the coefficients being $(-1)^k$. The series $x$ is not a unit; over a domain it is a non-zerodivisor, so not every non-unit of $R[[x]]$ is a zerodivisor.</p>
+<h3 id="substitution-and-composition">Substitution and Composition</h3>
+<p>Let $h_1, \ldots, h_n$ be series with $h_i \in \mathfrak{m}$, that is $\operatorname{ord}(h_i) \geq 1$. For any $f \in R[[x_1,\ldots,x_n]]$, the substituted series $f(h_1,\ldots,h_n)$ is defined: the contribution of the monomial $x^a$ of degree $d$ lies in $\mathfrak{m}^d$, so each coefficient of the result is a finite sum of contributions from the finitely many monomials of bounded degree. The substitution depends only on the truncations of $f$, and it is a continuous $R$-algebra homomorphism</p>
+<p>$$
+R[[x_1,\ldots,x_n]] \longrightarrow R[[x_1,\ldots,x_n]], \qquad f \longmapsto f(h_1,\ldots,h_n),
+$$</p>
+<p>precisely when the $h_i$ have no constant terms. Without that condition the substitution of a series with infinitely many terms need not make sense, and the requirement $h_i \in \mathfrak{m}$ is the standard hypothesis under which composition is defined.</p>
+<h2 id="the-math76-adic-completion">The $\mathfrak{m}$-adic Completion</h2>
+<h3 id="the-completion-functor">The Completion Functor</h3>
+<p>Let $A$ be a commutative $R$-algebra and let $I \subseteq A$ be an ideal. The <strong>$I$-adic completion</strong> of $A$ is</p>
+<p>$$
+\hat A = \varprojlim_k A/I^k,
+$$</p>
+<p>the module of coherent sequences $(a_k)_{k\geq0}$ with $a_k \in A/I^k$ and $a_{k+1} \equiv a_k \bmod I^k$. It is a commutative $R$-algebra under componentwise operations, the natural map $A \to \hat A$, $a \mapsto (a + I^k)_k$ is a homomorphism with kernel $\bigcap_k I^k$, and $\hat A$ is complete for the filtration by the kernels of $\hat A \to A/I^k$. The construction is functorial: a homomorphism $A \to B$ carrying $I$ into an ideal $J$ induces $\hat A \to \hat B$, so $I$-adic completion is a functor on the appropriate category of filtered algebras.</p>
+<p><strong>Proposition.</strong> The completion of the polynomial algebra at the augmentation ideal is the formal power series algebra:</p>
+<p>$$
+R[x_1,\ldots,x_n]^{\wedge}_{\mathfrak{m}} \cong R[[x_1,\ldots,x_n]], \qquad \mathfrak{m} = (x_1,\ldots,x_n),
+$$</p>
+<p>where $\widehat{\phantom{A}}$ denotes $\mathfrak{m}$-adic completion.</p>
+<p><em>Proof.</em> For each $k$ the truncation map $R[[x_1,\ldots,x_n]]\to R[x_1,\ldots,x_n]/\mathfrak{m}^k$ is surjective with kernel $\mathfrak{m}^k$, giving isomorphisms</p>
+<p>$$
+R[x_1,\ldots,x_n]/\mathfrak{m}^k \cong R[[x_1,\ldots,x_n]]/\mathfrak{m}^k
+$$</p>
+<p>because every class modulo $\mathfrak{m}^k$ has a polynomial representative, namely its truncation. Passing to the inverse limit and using that the power series algebra is $\mathfrak{m}$-adically complete gives the stated isomorphism. $\square$</p>
+<p>The proposition is the precise sense in which the polynomial algebra and the power series algebra are the same thing: they have the same finite truncations, and the second is obtained from the first by completing the filtration.</p>
+<h3 id="exactness-and-finite-generation">Exactness and Finite Generation</h3>
+<p>Completion is not exact on arbitrary modules, but it is well behaved on finitely generated modules over Noetherian rings. If $R$ is Noetherian, $A$ is a finitely generated $R$-algebra and $M$ a finitely generated $A$-module, then the natural map $M\otimes_A\hat A\to\hat M$ is an isomorphism and the completion functor is exact on finitely generated modules; this follows from the <strong>Artin–Rees lemma</strong>, quoted here as standard. Over a Noetherian base the completion of a finitely generated module is therefore computed by base change. Without the finiteness hypotheses the completion can behave badly. Let $A = \bigoplus_{n\geq0} R$ with componentwise multiplication and let $I = \bigoplus_{n\geq1} R$; writing $e_n$ for the idempotent supported at $n$, one has $e_n^2 = e_n$, so $I^2 = I$ and hence $A/I^k \cong A/I \cong R$ for every $k \geq 1$, giving $\hat A \cong R$. The natural map $A \to \hat A$ is the projection onto the degree-zero component, and its kernel is $I \neq 0$: the completion of this non-Noetherian algebra loses information, and the filtration by the powers of $I$ does not separate its elements. The Noetherian hypotheses are what rule out such behaviour.</p>
+<h2 id="the-formal-inverse-function-theorem">The Formal Inverse Function Theorem</h2>
+<h3 id="statement">Statement</h3>
+<p>Let $R$ be a commutative ring and let $F = (F_1, \ldots, F_n)$ be an $n$-tuple of formal power series in $x_1, \ldots, x_n$ with no constant terms. Write the <strong>Jacobian matrix</strong> at the origin</p>
+<p>$$
+J = \Bigl(\frac{\partial F_i}{\partial x_j}(0)\Bigr)_{i,j} .
+$$</p>
+<p><strong>Theorem (formal inverse function theorem).</strong> If $J$ is invertible over $R$, then there is a unique $n$-tuple $G = (G_1,\ldots,G_n)$ of formal power series with no constant terms such that</p>
+<p>$$
+F \circ G = \mathrm{id} = G \circ F,
+$$</p>
+<p>that is $F_i(G_1,\ldots,G_n) = x_i$ and $G_i(F_1,\ldots,F_n) = x_i$ for all $i$.</p>
+<h3 id="proof-by-math138-adic-contraction">Proof by $\mathfrak{m}$-adic Contraction</h3>
+<p>Write $F(x) = Jx + N(x)$, where $N = (N_1,\ldots,N_n)$ has no terms of degree $0$ or $1$, and put $L = J^{-1}$. The equation $F(G) = x$ is equivalent to the fixed-point equation</p>
+<p>$$
+G = \Phi(G), \qquad \Phi(G) = L\bigl(x - N(G)\bigr).
+$$</p>
+<p><strong>Lemma (contraction on the filtration).</strong> $\Phi$ gains one order on the $\mathfrak{m}$-adic filtration: if $G \equiv G' \bmod \mathfrak{m}^k$ then $\Phi(G) \equiv \Phi(G') \bmod \mathfrak{m}^{k+1}$.</p>
+<p><em>Proof.</em> Since $N$ has no terms of degree at most $1$, every monomial of $N$ has degree at least $2$ and therefore contains at least one factor from the tuple's variables; hence</p>
+<p>$$
+N(G) - N(G') \in \mathfrak{m}\cdot(G_1 - G'_1, \ldots, G_n - G'_n) \subseteq \mathfrak{m}^{k+1}
+$$</p>
+<p>whenever $G_i - G'_i \in \mathfrak{m}^k$ for all $i$, which is the gain of one order. Applying the linear map $-L$ preserves membership in $\mathfrak{m}^{k+1}$. $\square$</p>
+<p><em>Proof of the theorem.</em> Choose $G^{(0)} = Lx$, which has zero constant term and satisfies $F(G^{(0)}) \equiv x \bmod \mathfrak{m}^2$ because $F(Lx) = JLx + N(Lx) = x + N(Lx)$ and $N(Lx) \in \mathfrak{m}^2$. Set $G^{(r+1)} = \Phi(G^{(r)})$. By the lemma, $G^{(r+1)} - G^{(r)} \in \mathfrak{m}^{r+1}$, so the sequence converges $\mathfrak{m}$-adically to a limit $G$, and $G$ satisfies $F(G) = x$ by continuity. For uniqueness, suppose $F(G) = F(G') = x$. Then $J(G - G') + (N(G) - N(G')) = 0$, and $N(G) - N(G') \in \mathfrak{m}\cdot(G-G')$, so $(J + M)(G - G') = 0$ with $M$ having entries in $\mathfrak{m}$; since $J$ is invertible and $M$ is topologically nilpotent, $J + M$ is invertible, whence $G = G'$. Finally, $G$ has Jacobian $L$ at the origin, also invertible, so the same argument applied to $G$ produces $H$ with $G\circ H = \mathrm{id}$; then</p>
+<p>$$
+G \circ F = (G\circ F)\circ (G\circ H) = G \circ (F \circ G)\circ H = G\circ H = \mathrm{id},
+$$</p>
+<p>so $G$ is a two-sided inverse. $\square$</p>
+<h3 id="consequence-the-implicit-function-theorem">Consequence: the Implicit Function Theorem</h3>
+<p>The implicit form follows by the usual device of adding variables. If $F(x, y)$ is a series with $F(0,0) = 0$ and $\partial F/\partial y(0,0)$ invertible, then the map $(x,y)\mapsto(x, F(x,y))$ has invertible Jacobian at the origin, so it has a formal inverse $(x, y(x))$, giving the unique series $y = y(x)$ with $F(x, y(x)) = 0$. The formal and the analytic inverse function theorems have the same statement and the same Newton iteration; the formal one is the algebraisation of the analytic one, valid over any commutative ring in which the Jacobian is invertible.</p>
+<p><strong>Example.</strong> For $n = 1$ and $F(x) = x + x^2$ the Jacobian is $1$, and the inverse is</p>
+<p>$$
+G(x) = x - x^2 + 2x^3 - 5x^4 + 14x^5 - \cdots,
+$$</p>
+<p>the coefficient of $x^m$ being $(-1)^{m-1}C_{m-1}$, where $C_m = \frac{1}{m+1}\binom{2m}{m}$ is the $m$-th Catalan number. This is the formal version of the Lagrange inversion formula. For $n = 2$ and $F(x,y) = (x + y^2,\ y + x^2)$, the Jacobian is the identity and the inverse begins</p>
+<p>$$
+G(x, y) = \bigl(x - y^2 + 2x^2 y + \cdots,\ y - x^2 + 2x y^2 + \cdots\bigr),
+$$</p>
+<p>the further terms determined recursively by the contraction. In both examples $G$ satisfies $F\circ G = G\circ F = \mathrm{id}$ in the sense of the formal power series, by the uniqueness part of the theorem applied to the two compositions.</p>
+<h2 id="hensels-lemma">Hensel's Lemma</h2>
+<p>The same Newton iteration that inverts a series lifts a root of a polynomial modulo a complete ideal to a root modulo the ideal.</p>
+<p><strong>Theorem (Hensel's lemma).</strong> Let $A$ be a commutative $R$-algebra that is complete for the $I$-adic filtration, let $f(t) \in A[t]$ be a polynomial, and let $a_0 \in A$ satisfy</p>
+<p>$$
+f(a_0) \in I, \qquad f'(a_0) \in A^{\times} .
+$$</p>
+<p>Then there is a unique $a \in A$ with $f(a) = 0$ and $a \equiv a_0 \bmod I$.</p>
+<p><em>Proof.</em> Set $a_{n+1} = a_n - f(a_n) f'(a_n)^{-1}$, the Newton step. We show by induction that $f(a_n) \in I^{2^n}$ and $a_{n+1} \equiv a_n \bmod I^{2^n}$, so that $(a_n)$ is Cauchy and converges to some $a$ with $f(a) = 0$ by continuity. For the induction, write $a_n = a_{n-1} + h$ with $h \in I^{2^{n-1}}$; Taylor expansion of the polynomial $f$ at $a_{n-1}$ gives</p>
+<p>$$
+f(a_n) = f(a_{n-1}) + h f'(a_{n-1}) + h^2 r
+$$</p>
+<p>for some $r \in A$; now $f'(a_{n-1}) \equiv f'(a_0) \bmod I$ because $a_{n-1}\equiv a_0 \bmod I$, so $f'(a_{n-1})$ is a unit, and the choice of $h = -f(a_{n-1})f'(a_{n-1})^{-1}$ makes $f(a_n) = h^2 r \in I^{2^n}$. Uniqueness: if $f(a) = f(a') = 0$ with $a \equiv a' \equiv a_0 \bmod I$, then $0 = f(a) - f(a') = (a - a')(f'(a_0) + m)$ with $m \in I$, and $f'(a_0) + m$ is a unit, so $a = a'$. $\square$</p>
+<p><strong>Example.</strong> In $R[[x]]$ the series $y = \sqrt{1 + x}$ is produced by Hensel's lemma applied to $f(t) = t^2 - (1+x)$ at $a_0 = 1$: the derivative $2t$ is a unit at $t = 1$ when $2$ is invertible, and the root is the binomial series $y = \sum_{k\geq0}\binom{1/2}{k}x^k = 1 + \tfrac12 x - \tfrac18 x^2 + \tfrac{1}{16}x^3 - \cdots$. Over the $p$-adic integers $\mathbb{Z}_p$ with $p$ odd, applied to $f(t) = t^2 - u$ at a unit $a_0$ with $a_0^2 \equiv u \pmod{p}$, the derivative $2a_0$ is a unit and the lemma lifts the square root modulo $p$ to a square root in $\mathbb{Z}_p$; this is the classical instance of Hensel's lemma.</p>
+<h2 id="completion-the-symmetric-algebra-and-taylor-expansion">Completion, the Symmetric Algebra and Taylor Expansion</h2>
+<h3 id="the-associated-graded-algebra">The Associated Graded Algebra</h3>
+<p>The completion assembles the graded pieces of the symmetric algebra into a power series algebra whose associated graded algebra is the symmetric algebra again.</p>
+<p><strong>Theorem.</strong> Let $M$ be a free $R$-module of rank $n$ and let $S = \operatorname{Sym}(M) = \bigoplus_{k\geq0}\operatorname{Sym}^k(M)$, graded, with augmentation ideal $\mathfrak{m} = \bigoplus_{k\geq1}\operatorname{Sym}^k(M)$. Then</p>
+<p>$$
+\operatorname{gr}_{\mathfrak{m}} S = \bigoplus_{k\geq0}\mathfrak{m}^k/\mathfrak{m}^{k+1} \cong \operatorname{Sym}(M),
+$$</p>
+<p>and the $\mathfrak{m}$-adic completion of $S$ is</p>
+<p>$$
+\hat S \cong \prod_{k\geq0}\operatorname{Sym}^k(M).
+$$</p>
+<p><em>Proof.</em> The associated graded of a polynomial algebra in $n$ variables is the polynomial algebra again, since $\mathfrak{m}^k/\mathfrak{m}^{k+1}$ is the module of homogeneous polynomials of degree $k$, isomorphic to $\operatorname{Sym}^k(M)$; this is the general fact that $\operatorname{gr}$ of the symmetric algebra of a free module is the symmetric algebra. The completion consists of the coherent sequences of truncations, and a coherent sequence is exactly a formal sum $\sum_{k\geq0} s_k$ with $s_k \in \operatorname{Sym}^k(M)$, that is, an element of the product $\prod_k\operatorname{Sym}^k(M)$. $\square$</p>
+<p>Thus the passage from the symmetric algebra to its completion replaces the direct sum by the product, allowing arbitrary infinite homogeneous components. The algebra $R[[x_1,\ldots,x_n]]$ is the completion $\hat S$ in the case $M = R^n$, and its associated graded algebra is $R[x_1,\ldots,x_n]$ again: the completion does not change the graded pieces, only the way they are assembled.</p>
+<h3 id="taylor-expansion">Taylor Expansion</h3>
+<p>Assume $R$ contains the rational numbers. Every formal power series has the <strong>Taylor expansion</strong></p>
+<p>$$
+f = \sum_{a \in \mathbb{N}^n} \frac{1}{a!}\,\partial^a f(0)\, x^a, \qquad a! = a_1!\cdots a_n!,
+$$</p>
+<p>where $\partial^a f(0)$ denotes the iterated formal derivative evaluated at the origin; the formula is the definition of the derivatives read backwards: the iterated derivative $\partial^a f(0)$ is $a_1!\cdots a_n!$ times the coefficient of $x^a$. The linear part of $f$ is the element of $\operatorname{Hom}_R(\mathfrak{m}/\mathfrak{m}^2, R)$ with components $\partial_1 f(0), \ldots, \partial_n f(0)$; the cotangent space is $\mathfrak{m}/\mathfrak{m}^2 \cong \operatorname{Sym}^1(M) \cong R^n$, and its dual $(\mathfrak{m}/\mathfrak{m}^2)^*$, the tangent space, is the module of $R$-derivations of $R[[x_1,\ldots,x_n]]$ at the origin. The formal inverse function theorem is the statement that an invertible linear part lifts to an invertible series.</p>
+<p><strong>Remark.</strong> In characteristic zero the Taylor formula identifies $R[[x_1,\ldots,x_n]]$ with the completed divided-power algebra, and the natural divided powers $\gamma_k(x) = x^k/k!$ are the coefficients of the exponential; the divided-power algebra of <em>Divided Powers</em> is the correct substitute in small characteristic, where the factorials are not invertible. The completion, the symmetric algebra and the divided-power algebra therefore agree in characteristic zero and diverge in small characteristic, exactly as in the uncompleted case.</p>
+<h2 id="summary">Summary</h2>
+<p>The formal power series algebra $R[[x_1,\ldots,x_n]]$ is the completed polynomial algebra: it is the $I$-adic completion</p>
+<p>$$
+R[x_1,\ldots,x_n]^{\wedge}_{\mathfrak{m}} = \varprojlim_k R[x_1,\ldots,x_n]/\mathfrak{m}^k \cong R[[x_1,\ldots,x_n]], \qquad \mathfrak{m} = (x_1,\ldots,x_n),
+$$</p>
+<p>where completion takes the inverse limit of the quotient algebras $A/I^k$. The filtration is the order filtration, $\mathfrak{m}^k$ is the set of series of order at least $k$, and the algebra is $\mathfrak{m}$-adically complete. A series is a unit exactly when its constant term is a unit, by the geometric series; substitution is defined for series with zero constant term. The formal inverse function theorem states that an $n$-tuple $F$ with $F(0) = 0$ and invertible Jacobian $J = (\partial F_i/\partial x_j)(0)$ has a unique two-sided compositional inverse, and it is proved by the contraction $G \mapsto L(x - N(G))$ on the $\mathfrak{m}$-adic filtration, a formal Newton iteration. Completion converts the direct-sum symmetric algebra $\operatorname{Sym}(M)$ into the product $\prod_k \operatorname{Sym}^k(M)$, leaves the associated graded algebra unchanged, and in characteristic zero agrees with the Taylor expansion and with the completed divided-power algebra. In small characteristic the divided powers provide the correct substitute.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$R[[x_1,\ldots,x_n]]$</td>
+<td>Formal power series algebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{m} = (x_1,\ldots,x_n)$</td>
+<td>Augmentation ideal, series of positive order</td>
+</tr>
+<tr>
+<td>$\operatorname{ord}(f)$</td>
+<td>Order of a series; least total degree of a term</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}^k$</td>
+<td>Series of order at least $k$</td>
+</tr>
+<tr>
+<td>$\hat A = \varprojlim A/I^k$</td>
+<td>$I$-adic completion of $A$</td>
+</tr>
+<tr>
+<td>$\operatorname{gr}_{\mathfrak{m}} A$</td>
+<td>Associated graded algebra</td>
+</tr>
+<tr>
+<td>$J = (\partial F_i/\partial x_j(0))$</td>
+<td>Jacobian matrix at the origin</td>
+</tr>
+<tr>
+<td>$\Phi(G) = L(x - N(G))$</td>
+<td>Contraction operator, $L = J^{-1}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}/\mathfrak{m}^2$</td>
+<td>Cotangent space at the origin</td>
+</tr>
+<tr>
+<td>$C_m = \frac{1}{m+1}\binom{2m}{m}$</td>
+<td>Catalan number, coefficients of the inverse of $x + x^2$</td>
+</tr>
+<tr>
+<td>$a_{n+1} = a_n - f(a_n)f'(a_n)^{-1}$</td>
+<td>Newton step in Hensel's lemma</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra II: Chapters 4–7</em> (Springer, 1990), for formal power series, substitution and the formal inverse function theorem.</li>
+<li>Nicolas Bourbaki, <em>Commutative Algebra: Chapters 1–7</em> (Springer, 1989), for $I$-adic completion, the Artin–Rees lemma and the associated graded algebra.</li>
+<li>Michael F. Atiyah and Ian G. Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, 1969), for completions, filtrations and the completion of local rings.</li>
+<li>Hideyuki Matsumura, <em>Commutative Ring Theory</em> (Cambridge University Press, 1986), for completions of finitely generated modules and the Krull intersection theorem.</li>
+<li>Richard P. Stanley, <em>Enumerative Combinatorics</em>, Volume 2 (Cambridge University Press, 1999), for the Lagrange inversion formula and the Catalan numbers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

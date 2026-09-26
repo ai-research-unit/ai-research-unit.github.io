@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Zero Divisors and Nilpotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-zero-divisors-and-nilpotents"><strong>List of Zero Divisors and Nilpotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the rings of the corpus that carry zero divisors and those that carry nilpotents — the dual numbers, $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z}$, $M_2(\mathbb{R})$, the product rings and the biquaternions — and it separates the three reasons a zero divisor can occur: a nonzero nilpotent, a nontrivial idempotent, and torsion in a finite ring. Every entry points to the article that introduces the object.</p>
+<p>The nilpotents are the elements with some power zero, and they form the nilradical when the nilradical is defined; the idempotent zero divisors are the nontrivial idempotents $e$ with $e(1-e) = 0$, and they decompose the ring; and the torsion case is the finite ring $\mathbb{Z}/n\mathbb{Z}$ whose zero divisors come from the factors of $n$ and need not be nilpotent. The three cases are independent, and each ring of the list is placed in exactly one of them where possible.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="the-three-kinds-of-zero-divisor">The Three Kinds of Zero Divisor</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>The defining relation</th>
+<th>A nilpotent?</th>
+<th>An idempotent?</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nilpotent</td>
+<td>$a^n = 0$ for some $n \geq 1$</td>
+<td>yes</td>
+<td>not in general</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>idempotent zero divisor</td>
+<td>$e^2 = e$ with $e \neq 0, 1$</td>
+<td>no</td>
+<td>yes</td>
+<td><em>Rings</em>, §§8–9</td>
+</tr>
+<tr>
+<td>torsion zero divisor</td>
+<td>$n \cdot a = 0$ for some $n \neq 0$</td>
+<td>only when $n$ is not squarefree</td>
+<td>in general no</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Every nonzero nilpotent is a zero divisor, since $a \cdot a^{n-1} = 0$ with $a^{n-1} \neq 0$ when $n \geq 2$ is the first exponent with $a^n = 0$; a nilpotent is never a nonzero idempotent, because $e^2 = e$ forces $e^n = e$ for all $n$. The reverse implications fail, and the failures are the content of the sections below: $\mathbb{Z}/6\mathbb{Z}$ has zero divisors that are neither nilpotent nor idempotent, and the split-biquaternions have idempotent zero divisors and no nonzero nilpotents.</p>
+<h2 id="the-nilpotents">The Nilpotents</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The nilpotent</th>
+<th>Its index</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}'$, the dual numbers</td>
+<td>$\varepsilon$, with $\varepsilon^2 = 0$</td>
+<td>$2$</td>
+<td><em>Dual-Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>$2$, with $2^2 = 0$</td>
+<td>$2$</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/8\mathbb{Z}$</td>
+<td>$2$, with $2^3 = 0$</td>
+<td>$3$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p^n\mathbb{Z}$</td>
+<td>$p$, with $p^n = 0$</td>
+<td>$n$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$k[x]/(x^n)$</td>
+<td>$x$, with $x^n = 0$</td>
+<td>$n$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2[C_2]$</td>
+<td>$x + 1$, with $(x+1)^2 = 0$</td>
+<td>$2$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>the strictly upper triangular $N = E_{12}$</td>
+<td>$2$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, the biquaternions</td>
+<td>the pure zero divisors satisfying $\tilde{Q}^2 = 0$</td>
+<td>$2$</td>
+<td><em>Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/12\mathbb{Z}$</td>
+<td>$6$, with $6^2 = 0$</td>
+<td>$2$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The nilpotents of a commutative ring form an ideal, the nilradical, which is the intersection of the prime ideals; this is developed in <em>Reduced Rings and the Nilradical</em> and <em>Rings</em>, §§6–7. In $\mathbb{B}$ the nilpotents are exactly the pure zero divisors, the elements with vanishing scalar part and $\tilde{Q}^2 = 0$, and they form the nilpotent cone of real dimension $4$ described in <em>Biquaternion Zero Divisors</em>.</p>
+<h2 id="the-idempotent-zero-divisors">The Idempotent Zero Divisors</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The nontrivial idempotents</th>
+<th>The decomposition they induce</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$, the split-complex numbers</td>
+<td>$e_{\pm} = \tfrac{1}{2}(1 \pm j)$</td>
+<td>$\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>the images of $(1,0)$ and $(0,1)$</td>
+<td>$\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$R \times S$</td>
+<td>$(1,0)$ and $(0,1)$</td>
+<td>the ring is the product by construction</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, the split-biquaternions</td>
+<td>$e_+$, $e_-$</td>
+<td>$\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$</td>
+<td><em>Split-Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>$E_{11}$, $E_{22}$</td>
+<td>the column decomposition $\mathbb{R}^2 = \mathbb{R}e_1 \oplus \mathbb{R}e_2$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>a Boolean ring $B$</td>
+<td>every element</td>
+<td>$B$ is a product of copies of $\mathbb{F}_2$</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}[C_3]$</td>
+<td>the orbit sums of the components</td>
+<td>$\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}[x]/(x^2 - 1)$</td>
+<td>the images of the factors</td>
+<td>$\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A nontrivial idempotent $e$ satisfies $e(1-e) = 0$ with $e \neq 0$ and $1 - e \neq 0$, so it is a zero divisor, and it induces the direct sum decomposition $R = Re \oplus R(1-e)$ with the two-sided ideals $Re$ and $R(1-e)$. The decomposition of a ring into a product of two rings is the same thing as a pair of complementary idempotents, and this is the sense in which the idempotents of a commutative Artinian ring give its splitting into local rings, as recorded in <em>List of Reduced, Local and Product Rings</em>.</p>
+<h2 id="the-torsion-case">The Torsion Case</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The zero divisors</th>
+<th>Nilpotents?</th>
+<th>Idempotents?</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$, $n$ squarefree</td>
+<td>the nonzero nonunits, all from the factors</td>
+<td>none</td>
+<td>$2^{\omega(n)}$ of them, one for each factor</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$2, 3, 4$</td>
+<td>none</td>
+<td>the images of $(1,0)$, $(0,1)$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/12\mathbb{Z}$</td>
+<td>the nonzero nonunits</td>
+<td>$6$</td>
+<td>from the factors of $12$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p^2\mathbb{Z}$</td>
+<td>the multiples of $p$</td>
+<td>$p$</td>
+<td>none: the ring is local</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p^n\mathbb{Z}$</td>
+<td>the multiples of $p$</td>
+<td>$p$</td>
+<td>none: the ring is local</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The torsion case is where the three kinds of zero divisor separate most cleanly: $\mathbb{Z}/6\mathbb{Z}$ has zero divisors and no nilpotents, so it is reduced; $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/p^n\mathbb{Z}$ have nilpotents and no nontrivial idempotents, so they are local and not reduced; and $\mathbb{Z}/12\mathbb{Z}$ has both, since $12$ is neither squarefree nor a prime power. The Chinese remainder theorem records the decomposition, and it is stated in <em>Modular Arithmetic and the Ring of Residues</em>.</p>
+<h2 id="the-non-commutative-cases">The Non-Commutative Cases</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Nilpotents</th>
+<th>Idempotent zero divisors</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>yes: the nilpotent matrices with $N^2 = 0$</td>
+<td>yes: $E_{11}$, $E_{22}$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, the biquaternions</td>
+<td>yes: the pure zero divisors</td>
+<td>yes: the complex multiples of the idempotents</td>
+<td><em>Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, the split-biquaternions</td>
+<td>no nonzero nilpotents</td>
+<td>yes: $e_+$, $e_-$</td>
+<td><em>Split-Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>none</td>
+<td>none</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>the upper triangular matrices</td>
+<td>yes: the strictly upper triangular matrices</td>
+<td>yes: the diagonal idempotents</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$k[G]$ for $G$ with torsion</td>
+<td>when the characteristic divides the order</td>
+<td>from the idempotents of the group algebra</td>
+<td><em>Group Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The two eight-dimensional cases are the contrast the corpus records: $\mathbb{B}$ has both kinds, since the vanishing of its norm form produces nilpotents as well as idempotents, while $\mathbb{H}_{\mathbb{D}}$ has only the idempotents, since it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two division rings and a product of division rings has no nonzero nilpotents. The matrix ring $M_2(\mathbb{R})$ is semisimple and has no nonzero nilpotent ideal, yet it has nilpotent elements: semisimplicity forbids a nilpotent ideal and not a nilpotent element.</p>
+<h2 id="the-reduced-rings">The Reduced Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>Why it has no nonzero nilpotent</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>every domain, for instance $\mathbb{Z}$, $k[x]$, $\mathbb{Z}[i]$</td>
+<td>a nilpotent would be a zero divisor</td>
+<td><em>Integral Domains</em></td>
+</tr>
+<tr>
+<td>every field</td>
+<td>every nonzero element is a unit</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>the modulus is squarefree, so no nonzero element has a zero power</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>a product of reduced rings</td>
+<td>the nilpotents of a product are the tuples of nilpotents</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>a Boolean ring</td>
+<td>every element is idempotent, so $a^n = a \neq 0$ for $a \neq 0$</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, the split-biquaternions</td>
+<td>isomorphic to $\mathbb{H} \oplus \mathbb{H}$, a product of division rings</td>
+<td><em>Split-Biquaternion Zero Divisors</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A ring is reduced when it has no nonzero nilpotent, equivalently when its nilradical is zero. The reduced rings may still have zero divisors, and $\mathbb{Z}/6\mathbb{Z}$ and $\mathbb{H}_{\mathbb{D}}$ are the two standard cases of that phenomenon in the corpus: the first by torsion and the second by idempotents.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it has no zero divisors and no nilpotents</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>integral domains and fields</td>
+<td><em>The Integers</em>, <em>Fields</em></td>
+</tr>
+<tr>
+<td>$k[x]$, $\mathbb{Z}[x]$, $k[x_1, \dots, x_n]$</td>
+<td>polynomial rings over a domain</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{-5}]$</td>
+<td>quadratic integer rings, hence domains</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>a division ring: every nonzero element is a unit</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$k[F_n]$, the group ring of a free group</td>
+<td>torsion-free group, domain</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>the zero ring $\{0\}$</td>
+<td>$0 = 1$, excluded by the convention $1 \neq 0$</td>
+<td><em>Rings</em>, §2</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the rings of the corpus with zero divisors and with nilpotents, separating the three kinds. The nilpotents are $\varepsilon$ in the dual numbers, $2$ in $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/8\mathbb{Z}$, $p$ in $\mathbb{Z}/p^n\mathbb{Z}$, $x$ in $K[x]/(x^n)$, $x+1$ in $\mathbb{F}_2[C_2]$, the nilpotent and strictly upper triangular matrices in $M_2(\mathbb{R})$, and the pure zero divisors of the biquaternions; the idempotent zero divisors are $e_{\pm}$ in the split-complex numbers and the split-biquaternions, the images of $(1,0)$ and $(0,1)$ in $\mathbb{Z}/6\mathbb{Z}$ and in every product ring, the matrix units in $M_2(\mathbb{R})$, the elements of a Boolean ring, and the idempotents of $\mathbb{Q}[C_3]$; and the torsion case separates $\mathbb{Z}/6\mathbb{Z}$, which is reduced, from $\mathbb{Z}/4\mathbb{Z}$, which is not. The reduced rings, the domains and the fields close the list as the objects with no nilpotent and, in the last two cases, no zero divisor at all.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>The residue ring; $\mathbb{Z}/6\mathbb{Z}$ reduced, $\mathbb{Z}/4\mathbb{Z}$ not</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>The nilpotent generator of the dual numbers, $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$e_{\pm} = \tfrac{1}{2}(1 \pm j)$</td>
+<td>The idempotents of the split-complex numbers and the split-biquaternions</td>
+</tr>
+<tr>
+<td>$E_{11}$, $E_{22}$, $E_{12}$</td>
+<td>Matrix units; $E_{12}$ is nilpotent</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>Split-complex numbers, dual numbers</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$</td>
+<td>Biquaternions with nilpotents, split-biquaternions without</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The quaternions, with neither</td>
+</tr>
+<tr>
+<td>$\tilde{Q}$</td>
+<td>A biquaternion</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>A Boolean ring</td>
+</tr>
+<tr>
+<td>$[a]$</td>
+<td>The class of $a$ in a residue ring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Irving Kaplansky, <em>Commutative Rings</em> (University of Chicago Press, revised ed. 1974), for the nilradical, the reduced rings and the separation of nilpotents from zero divisors.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for idempotents, the Peirce decomposition and the zero divisors of matrix rings.</li>
+<li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> 20 (2010) 401–416, for the classification in the biquaternions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

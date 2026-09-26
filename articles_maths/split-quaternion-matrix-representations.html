@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Matrix Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-matrix-representations"><strong>Split-Quaternion Matrix Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article treats the split-quaternion algebra as a matrix algebra. It exhibits the faithful representation by $2 \times 2$ real matrices, proves that it exists and is unique up to conjugacy, identifies the determinant with the norm form and the trace with twice the scalar part, describes the image as a linear subspace of $M_2(\mathbb{R})$, and compares the situation with the quaternion algebra and with the eight-dimensional algebra, which admits no representation of this size.</p>
+<p>The split-quaternion algebra, its matrix model $\Phi$ and the proof that $\Phi$ is an algebra isomorphism are assumed from <em>Split-Quaternion Algebra</em>, §<em>The Matrix Model</em>; the explicit map and its multiplicativity are not reproved here. The matrix algebra $M_n(\mathbb{R})$, its matrix units, its centre and the Skolem–Noether theorem that every automorphism of $M_n(k)$ over a field is inner are assumed from <em>Matrix Algebras</em>. The norm form and its invertibility theory are assumed from <em>Split-Quaternion Norm and Invertibility</em>; the classification of the modules of the algebra belongs to <em>Split-Quaternion Representations</em>, which cites this article for the module of the model. Nothing physical is invoked.</p>
+<h2 id="the-representation">The Representation</h2>
+<p><strong>Definition.</strong> A <strong>matrix representation</strong> of $\mathbb{H}_{\mathrm{s}}$ of degree $n$ is an injective unital algebra homomorphism</p>
+<p>$$
+\Psi : \mathbb{H}_{\mathrm{s}} \longrightarrow M_n(\mathbb{R}).
+$$</p>
+<p>The representation is <strong>faithful</strong> by definition, since injectivity is required; its <strong>image</strong> is the subalgebra $\Psi(\mathbb{H}_{\mathrm{s}})$.</p>
+<p><strong>Definition.</strong> The <strong>defining representation</strong> of $\mathbb{H}_{\mathrm{s}}$ is the isomorphism</p>
+<p>$$
+\Phi(a + b e_1 + c e_2 + d e_3) = \begin{pmatrix} a - d & c - b \\ b + c & a + d \end{pmatrix}
+$$</p>
+<p>of (<em>Split-Quaternion Algebra</em>, §<em>The Matrix Model</em>), whose values on the generators are</p>
+<p>$$
+\Phi(1) = I, \quad \Phi(e_1) = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
+\Phi(e_2) = K = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
+\Phi(e_3) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}.
+$$</p>
+<p>The defining representation is the model in which every statement of this article is computed.</p>
+<h2 id="existence">Existence</h2>
+<p><strong>Theorem (Existence).</strong> The split-quaternion algebra has a faithful real matrix representation of degree $2$, namely $\Phi$, and therefore</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})
+$$</p>
+<p>as real algebras.</p>
+<p><strong>Proof.</strong> By (<em>Split-Quaternion Algebra</em>, §<em>The Matrix Model</em>), the linear map $\Phi$ is an algebra homomorphism, it is injective because the four generators have linearly independent images, and it is surjective because the domain and the target both have real dimension $4$. An isomorphism is in particular an injective unital homomorphism of degree $2$. $\square$</p>
+<p><strong>Corollary (Dimension).</strong> The least degree of a faithful real matrix representation of $\mathbb{H}_{\mathrm{s}}$ is $2$. Indeed a faithful representation of degree $n$ embeds a four-dimensional algebra into $M_n(\mathbb{R})$, whose dimension is $n^2$, so $n^2 \geq 4$, and $n = 1$ is impossible because $M_1(\mathbb{R})$ is commutative while $\mathbb{H}_{\mathrm{s}}$ is not; degree $2$ is attained.</p>
+<p><strong>Proof.</strong> The inequality is the dimension count, and the non-commutativity of $\mathbb{H}_{\mathrm{s}}$ excludes $n = 1$; the defining representation attains $n = 2$. $\square$</p>
+<p>The existence theorem is the Clifford identification of the anchor article read as a representation statement: $\mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ by (<em>The Number Systems as Clifford Algebras</em>).</p>
+<h2 id="uniqueness-up-to-conjugacy">Uniqueness up to Conjugacy</h2>
+<p><strong>Theorem (Uniqueness).</strong> Let $\Psi : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ be a unital algebra homomorphism. Then $\Psi$ is an isomorphism, and there is an invertible matrix $P$ with</p>
+<p>$$
+\Psi(x) = P \, \Phi(x) \, P^{-1} \qquad (x \in \mathbb{H}_{\mathrm{s}}).
+$$</p>
+<p>Thus the faithful representation of degree $2$ is unique up to conjugacy: any two such representations are equivalent.</p>
+<p><strong>Proof.</strong> The kernel of $\Psi$ is a two-sided ideal of $\mathbb{H}_{\mathrm{s}}$. The algebra is simple by (<em>Split-Quaternion Algebra</em>, §<em>The Centre and Simplicity</em>), so the kernel is either $0$ or the whole algebra; it is not the whole algebra because $\Psi(1) = I \neq 0$, so it is $0$ and $\Psi$ is injective. Both sides have dimension $4$, so $\Psi$ is bijective. Now $\Psi \circ \Phi^{-1}$ is an algebra automorphism of $M_2(\mathbb{R})$, and by the Skolem–Noether theorem of <em>Matrix Algebras</em> every automorphism of $M_2(\mathbb{R})$ is inner: there is $P \in GL_2(\mathbb{R})$ with $\Psi\Phi^{-1} = \operatorname{Int}_P$. Composing with $\Phi$ gives the displayed identity. $\square$</p>
+<p><strong>Corollary (The Automorphisms of the Algebra).</strong> Every automorphism of $\mathbb{H}_{\mathrm{s}}$ is obtained by conjugating by an invertible element:</p>
+<p>$$
+\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R}), \qquad \alpha(x) = g x g^{-1} \quad (g \in \mathbb{H}_{\mathrm{s}}^{\times}).
+$$</p>
+<p><strong>Proof.</strong> An automorphism $\alpha$ of $\mathbb{H}_{\mathrm{s}}$ corresponds to the inner automorphism $\Phi\alpha\Phi^{-1}$ of $M_2(\mathbb{R})$, which is inner by Skolem–Noether; transport back. Conversely every inner automorphism of the algebra is an automorphism, and two units $g, g'$ give the same automorphism exactly when $g' g^{-1}$ is central, which by (<em>Split-Quaternion Algebra</em>, §<em>The Centre and Simplicity</em>) means $g' = \lambda g$ with $\lambda \in \mathbb{R}^{\times}$. $\square$</p>
+<h2 id="the-determinant-and-the-trace">The Determinant and the Trace</h2>
+<p><strong>Theorem (Determinant and Trace).</strong> For every split-quaternion $x$,</p>
+<p>$$
+\det \Phi(x) = N(x), \qquad \operatorname{tr} \Phi(x) = 2 \operatorname{Sc}(x).
+$$</p>
+<p>The determinant of the matrix model is the norm form, a quadratic form of signature $(2,2)$, and the trace is twice the scalar part; the restriction of the trace to the vector subspace vanishes, so $\Phi(V)$ is the space of traceless matrices.</p>
+<p><strong>Proof.</strong> The determinant computation is (<em>Split-Quaternion Algebra</em>, §<em>The Matrix Model</em>) and (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Norm Form and the Determinant Form</em>). For the trace,</p>
+<p>$$
+\operatorname{tr}\Phi(a + be_1 + ce_2 + de_3) = (a - d) + (a + d) = 2a = 2\operatorname{Sc}(x).
+$$</p>
+<p>The vanishing of the trace on $V$ is the case $a = 0$. $\square$</p>
+<p><strong>Corollary (Formulas in the Model).</strong> For every $x$,</p>
+<p>$$
+\det \Phi(\bar{x}) = \det \Phi(x), \qquad \Phi(\bar{x}) = \operatorname{adj}\Phi(x),
+$$</p>
+<p>and $x$ is a unit if and only if $\Phi(x)$ is invertible, in which case $\Phi(x^{-1}) = \Phi(x)^{-1} = \operatorname{adj}\Phi(x)/\det\Phi(x)$.</p>
+<p><strong>Proof.</strong> The conjugation is an involution of the algebra, so it preserves the norm: $N(\bar{x}) = \bar{x}x = N(x)$, and the first identity follows from $\det = N$. The second is the adjugate identity of (<em>Split-Quaternion Algebra</em>, §<em>The Conjugation</em>). The invertibility statement is the equality $\det\Phi = N$ together with <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>. $\square$</p>
+<h2 id="the-image-as-a-linear-subspace">The Image as a Linear Subspace</h2>
+<p><strong>Theorem (The Image Is Everything).</strong> The image of the defining representation is the whole matrix algebra:</p>
+<p>$$
+\Phi(\mathbb{H}_{\mathrm{s}}) = M_2(\mathbb{R}).
+$$</p>
+<p>There is no proper subalgebra of $M_2(\mathbb{R})$ of dimension $4$ other than $M_2(\mathbb{R})$ itself, so the image is not a proper linear subspace.</p>
+<p><strong>Proof.</strong> The image is a linear subspace of dimension $4$ inside the four-dimensional space $M_2(\mathbb{R})$. $\square$</p>
+<p>The distinguished subspaces of the algebra correspond to the following subspaces of matrices.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace of $\mathbb{H}_{\mathrm{s}}$</th>
+<th>Image in $M_2(\mathbb{R})$</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S = \mathbb{R}\cdot 1$</td>
+<td>$\mathbb{R} I$</td>
+<td>the scalar matrices</td>
+</tr>
+<tr>
+<td>$V = \operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$\mathfrak{sl}_2(\mathbb{R})$</td>
+<td>the traceless matrices</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$</td>
+<td>$\left\{\begin{pmatrix}p & q \\ q & p\end{pmatrix}\right\}$</td>
+<td>the symmetric matrices with equal diagonal</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$</td>
+<td>$\left\{\begin{pmatrix}p & 0 \\ 0 & q\end{pmatrix}\right\}$</td>
+<td>the diagonal matrices</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}} u_+$, $u_+ \mathbb{H}_{\mathrm{s}}$</td>
+<td>$K_{\ell_w}$, $R_{\ell_v}$</td>
+<td>maximal isotropic subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}} u_-$, $u_- \mathbb{H}_{\mathrm{s}}$</td>
+<td>$K_{\ell_v}$, $R_{\ell_w}$</td>
+<td>maximal isotropic subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the dictionary of (<em>Split-Quaternion Zero Divisors</em>, §<em>The Two Families in the Algebra</em>), where $\ell_v$ and $\ell_w$ are the lines spanned by $(1,1)$ and $(1,-1)$ and the subspaces $R_\ell$, $K_\ell$ are the two families of maximal isotropic subspaces. The table shows that the algebra and the matrix algebra carry the same structure: the scalar part is the trace part, the vector part is the traceless part, the split-complex subalgebra $\mathbb{D}_3$ is the diagonal subalgebra, and the minimal ideals are the isotropic subspaces.</p>
+<p><strong>Corollary (The Idempotents in the Model).</strong> The idempotents of the algebra correspond to the idempotent matrices of rank one together with $0$ and $I$. In particular</p>
+<p>$$
+\Phi(u_+) = \tfrac12 \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \qquad
+\Phi(u_-) = \tfrac12 \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix},
+$$</p>
+<p>two rank-one projections, and $\Phi(u_+) + \Phi(u_-) = I$ with $\Phi(u_+) \Phi(u_-) = 0$.</p>
+<p><strong>Proof.</strong> The images are computed from the formula for $\Phi$, and the identities are the images of the identities of (<em>Split-Quaternion Algebra</em>, §<em>The Idempotents</em>). The classification of idempotents is that of <em>Split-Quaternion Roots of Minus One</em>, §<em>The Relation to the Idempotents and to the Zero Divisors</em>. $\square$</p>
+<h2 id="the-defining-module">The Defining Module</h2>
+<p>The matrix algebra $M_2(\mathbb{R})$ acts on the column space $\mathbb{R}^2$, and through $\Phi$ this becomes an action of $\mathbb{H}_{\mathrm{s}}$.</p>
+<p><strong>Definition.</strong> The <strong>defining module</strong> of $\mathbb{H}_{\mathrm{s}}$ is the real vector space $\mathbb{R}^2$ with the action</p>
+<p>$$
+x \cdot v = \Phi(x) v, \qquad x \in \mathbb{H}_{\mathrm{s}}, \quad v \in \mathbb{R}^2 .
+$$</p>
+<p><strong>Theorem (Irreducibility).</strong> The defining module is simple: it has no nonzero proper submodule. Consequently the defining representation is irreducible, and it is the unique irreducible representation of the algebra up to equivalence.</p>
+<p><strong>Proof.</strong> The submodules of the defining module are the $\Phi(\mathbb{H}_{\mathrm{s}})$-invariant subspaces of $\mathbb{R}^2$, and since $\Phi$ is surjective these are exactly the $M_2(\mathbb{R})$-invariant subspaces, that is, the subspaces stable under every $2 \times 2$ matrix. Let $W \neq 0$ be such a subspace and let $v = (v_1,v_2) \in W$ be nonzero. If $v_1 \neq 0$ then $E_{11}v = v_1 e_1$ lies in $W$, so $e_1 \in W$, and then $E_{12}e_1 = e_2 \in W$; if $v_1 = 0$ then $v_2 \neq 0$ and the same argument with the roles exchanged gives $e_2 \in W$ and then $e_1 \in W$. Hence $W$ contains both standard basis vectors and is the whole space. The uniqueness is the classification of the modules of a simple algebra, treated in <em>Split-Quaternion Representations</em>. $\square$</p>
+<p>The defining module is the concrete reason the matrix model is the right one: an eight-dimensional algebra cannot be a matrix algebra of this size, but a four-dimensional simple algebra is exactly a full matrix algebra over $\mathbb{R}$, and the module of the model is the module that the algebra realises.</p>
+<h2 id="comparison-with-the-quaternion-case-and-with-math148">Comparison with the Quaternion Case and with $\mathbb{H}_{\mathbb{D}}$</h2>
+<h3 id="the-quaternion-case">The Quaternion Case</h3>
+<p>The quaternion algebra has no faithful real matrix representation of degree $2$.</p>
+<p><strong>Proposition.</strong> There is no injective unital algebra homomorphism $\mathbb{H} \to M_2(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> Such a homomorphism would embed the four-dimensional algebra $\mathbb{H}$ into the four-dimensional algebra $M_2(\mathbb{R})$, hence would be an isomorphism, so $\mathbb{H} \cong M_2(\mathbb{R})$; but $\mathbb{H}$ is a division algebra by <em>Quaternion Algebra</em> and $M_2(\mathbb{R})$ has zero divisors. $\square$</p>
+<p>The quaternions do have a faithful representation by $2 \times 2$ <strong>complex</strong> matrices, obtained from the same Pauli-type assignment with $i$ in place of the real rotation matrix: the scalar extension $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} = \mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, as recorded in <em>The Number Systems as Clifford Algebras</em>, and so the quaternions act on $\mathbb{C}^2$. Over $\mathbb{R}$ the least faithful representation is of degree $4$: no representation of degree $2$ or $3$ exists, and the regular representation of the algebra on itself, of real dimension $4$, is faithful. The difference from the split case is the difference between the two real forms of the same complex algebra: the definite form gives a division algebra with no real degree-two model, the indefinite form gives the matrix algebra, which is the degree-two model itself.</p>
+<p><strong>Proposition (The Least Degree over $\mathbb{R}$).</strong> The quaternion algebra has no faithful real matrix representation of degree $2$ or $3$.</p>
+<p><strong>Proof.</strong> Degree $2$ is excluded by the preceding proposition. For degree $3$, suppose $\mathbb{H}$ acts faithfully on $\mathbb{R}^3$. Choose $v \neq 0$. The map $\mathbb{H} \to \mathbb{R}^3$, $h \mapsto hv$, is injective: if $hv = 0$ with $h \neq 0$, then multiplying by the inverse of $h$ gives $v = 0$. Hence $\mathbb{R}^3$ contains a subspace isomorphic to $\mathbb{H}$, of real dimension $4$, which is impossible. $\square$</p>
+<h3 id="the-absence-of-a-two-dimensional-real-model-for-math185">The Absence of a Two-Dimensional Real Model for $\mathbb{H}_{\mathbb{D}}$</h3>
+<p>The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table has no faithful $2 \times 2$ real matrix representation, and the obstruction is dimension alone.</p>
+<p><strong>Proposition.</strong> There is no injective unital algebra homomorphism $\mathbb{H}_{\mathbb{D}} \to M_2(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> Such a homomorphism would embed a real vector space of dimension $8$ into one of dimension $4$, which is impossible for an injective linear map. $\square$</p>
+<p>The algebra is treated later in Part V, under Split-Biquaternions; nothing of it is used here beyond its dimension, which is fixed by the notation table. Its faithful linear representations have degree at least $3$, since $3^2 = 9 \geq 8$, and the description of them belongs to the later category.</p>
+<h2 id="summary">Summary</h2>
+<p>The split-quaternion algebra has a faithful real matrix representation of degree $2$, the defining representation $\Phi(a + be_1 + ce_2 + de_3) = \begin{pmatrix} a-d & c-b \\ b+c & a+d\end{pmatrix}$, and no faithful representation of lower degree. The representation is unique up to conjugacy: every unital algebra homomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ is an isomorphism, and any two differ by conjugation by an invertible matrix. The automorphism group of the algebra is $\mathrm{PGL}_2(\mathbb{R})$, acting by inner automorphisms.</p>
+<p>The determinant of the model is the norm form $N$, of signature $(2,2)$, and the trace is twice the scalar part; the vector subspace is the traceless part, and conjugation is the adjugate. The image of the algebra is the whole of $M_2(\mathbb{R})$, and the distinguished subspaces of the algebra correspond to the scalar matrices, the traceless matrices, the diagonal subalgebra, the symmetric subalgebra, the minimal ideals and the two families of maximal isotropic subspaces. The defining module $\mathbb{R}^2$ is simple, and it is the unique irreducible module of the algebra.</p>
+<p>The quaternion algebra has no faithful real degree-two representation, because an isomorphism with $M_2(\mathbb{R})$ would contradict its being a division algebra, although its complexification is $M_2(\mathbb{C})$; the eight-dimensional algebra has none either, by the dimension count alone, and its representations belong to the later category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Psi$</td>
+<td>a matrix representation of $\mathbb{H}_{\mathrm{s}}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>the defining representation, $x \mapsto \begin{pmatrix} a-d & c-b \\ b+c & a+d\end{pmatrix}$</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$I, J, K, D$</td>
+<td>the images of $1, e_1, e_2, e_3$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\operatorname{Int}_P$</td>
+<td>conjugation by $P$, $M \mapsto PMP^{-1}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$</td>
+<td>the automorphism group</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\det\Phi(x) = N(x)$</td>
+<td>the determinant as norm form</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\Phi(x) = 2\operatorname{Sc}(x)$</td>
+<td>the trace as twice the scalar part</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\Phi(\bar{x}) = \operatorname{adj}\Phi(x)$</td>
+<td>conjugation as the adjugate</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2(\mathbb{R})$</td>
+<td>the traceless matrices, the image of $V$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>defining module, $\mathbb{R}^2$</td>
+<td>the simple module of the algebra</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$R_\ell, K_\ell$</td>
+<td>the two families of maximal isotropic subspaces</td>
+<td><em>Split-Quaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$M_n(k)$</td>
+<td>matrix algebra, matrix units, Skolem–Noether</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for matrix representations, matrix units and the inner automorphisms of a matrix algebra.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the Skolem–Noether theorem in its general form.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the identification $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ among the low-dimensional Clifford algebras.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for explicit matrix models of the low-dimensional Clifford algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

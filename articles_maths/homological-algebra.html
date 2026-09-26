@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homological Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="homological-algebra"><strong>Homological Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Exact sequences measure the failure of a sequence to split and the failure of a functor to be exact, but they compute nothing by themselves. The instrument that computes is the chain complex: a graded module with a square-zero endomorphism, whose homology measures by how much the graded module fails to be exact. A resolution of a module by projective or injective modules is a chain complex that is exact except in one degree, and it is the object on which a functor is evaluated when its failure of exactness is to be measured. Homological algebra is the theory of these complexes, of the maps between them, and of the two facts that make the theory invariant — that maps of resolutions exist and are unique up to chain homotopy, and that a short exact sequence of complexes produces a long exact sequence in homology.</p>
+<p>This article develops chain and cochain complexes, their morphisms, chain homotopies and mapping cones, the homology functor and the long exact sequence, projective and injective resolutions, the comparison theorem and the horseshoe lemma, and the tensor product and hom complexes that are used later. It is the foundation on which the homological articles of this category rest, and it supplies the categorical machinery that they apply to algebras.</p>
+<p>Throughout, $\mathcal{A}$ is an abelian category, most often $R\text{-}\mathbf{Mod}$ for a commutative ring $R$ with $1 \neq 0$; chain complexes are written with lower indices and cochain complexes with upper indices, and the translation between them is the rule $C^n=C_{-n}$. The article uses the exactness language of <em>Exact Sequences</em>, the splitting lemma and the snake lemma, and the abelian-category framework of <em>Abelian and Grothendieck Categories</em>. It contains no topology: the words <em>complex</em>, <em>resolution</em>, <em>boundary</em> and <em>cycle</em> are algebraic throughout. The applications of the theory to sheaf cohomology and to algebraic topology need a space, and they are therefore deferred to Part II; the article states the results in their algebraic form and says explicitly where the geometric form is treated.</p>
+<h2 id="chain-complexes">Chain Complexes</h2>
+<h3 id="complexes-and-their-morphisms">Complexes and Their Morphisms</h3>
+<p><strong>Definition.</strong> A <strong>chain complex</strong> $(C_\bullet,d_\bullet)$ in an abelian category $\mathcal{A}$ consists of objects $C_n$ for $n \in \mathbb{Z}$ and morphisms $d_n:C_n\to C_{n-1}$ with $d_{n-1}d_n=0$ for every $n$. The maps $d_n$ are the <strong>differentials</strong> or <strong>boundary maps</strong>. A <strong>cochain complex</strong> $(C^\bullet,d^\bullet)$ consists of objects $C^n$ and maps $d^n:C^n\to C^{n+1}$ with $d^{n+1}d^n=0$; the two notions are the same under $C^n=C_{-n}$ and $d^n=d_{-n}$.</p>
+<p><strong>Definition.</strong> A <strong>morphism of chain complexes</strong> $f:(C_\bullet,d)\to(D_\bullet,e)$ is a family of morphisms $f_n:C_n\to D_n$ with $f_{n-1}d_n=e_n f_n$ for every $n$. The complexes and their morphisms form an abelian category $\mathbf{Ch}(\mathcal{A})$, with kernels, cokernels and exactness computed degreewise.</p>
+<p><strong>Example.</strong> The <strong>Koszul complex</strong> of a sequence $x_1,\dots,x_r$ in a commutative ring $R$ on a free module of rank $r$ has $K_p$ the $p$-th exterior power of $R^r$, and $d_p$ the contraction with $(x_1,\dots,x_r)$; the square-zero identity follows from the alternation of the wedge product. Its homology measures the failure of the sequence to be regular, and the exterior powers it uses are those of <em>Multilinear Spaces</em>.</p>
+<p><strong>Example.</strong> The <strong>bar complex</strong> of an algebra $A$ has $C_n=A^{\otimes n}$ with a differential built from the multiplication; its homology is the Hochschild homology , where the convention for the differential is fixed.</p>
+<h3 id="cycles-boundaries-and-homology">Cycles, Boundaries and Homology</h3>
+<p><strong>Definition.</strong> For a chain complex $C_\bullet$ the <strong>cycles</strong> are $Z_n=\ker d_n \subseteq C_n$, the <strong>boundaries</strong> are $B_n=\operatorname{im}d_{n+1}\subseteq C_n$, and the <strong>homology</strong> is</p>
+<p>$$
+H_n(C_\bullet)=\frac{Z_n}{B_n}=\frac{\ker(d_n:C_n\to C_{n-1})}{\operatorname{im}(d_{n+1}:C_{n+1}\to C_n)} .
+$$</p>
+<p>The complex is <strong>exact</strong> at $C_n$ if $H_n=0$, and <strong>acyclic</strong> if $H_n=0$ for every $n$. For a cochain complex the same definitions are written $Z^n$, $B^n$ and $H^n$.</p>
+<p>Because $d_{n-1}d_n=0$, the inclusion $B_n\subseteq Z_n$ holds, so the quotient is defined; homology is precisely the obstruction to exactness.</p>
+<p><strong>Proposition.</strong> Homology is a functor: a morphism $f:C_\bullet\to D_\bullet$ of complexes induces $H_n(f):H_n(C)\to H_n(D)$ for every $n$, with $H_n(\operatorname{id})=\operatorname{id}$ and $H_n(gf)=H_n(g)H_n(f)$. The functor $H_n:\mathbf{Ch}(\mathcal{A})\to\mathcal{A}$ is additive.</p>
+<p><em>Proof.</em> A chain map carries $d_n$-cycles to $e_n$-cycles, because $d_n x=0$ implies $e_nf_n(x)=f_{n-1}d_nx=0$, and carries boundaries to boundaries, because $f_n d_{n+1}=e_{n+1}f_{n+1}$; hence it induces a map on the quotients. Functoriality is immediate from the definition. $\square$</p>
+<p><strong>Proposition.</strong> $H_n(C_\bullet)=0$ for all $n$ if and only if the complex is exact; the complex is exact at $C_n$ if and only if $\ker d_n=\operatorname{im}d_{n+1}$.</p>
+<p><strong>Example (homology of a short exact sequence).</strong> For a short exact sequence of modules $0\to A\xrightarrow{f}B\xrightarrow{g}C\to0$, regarded as a three-term complex concentrated in degrees $2,1,0$, the homology is $H_2=0$, $H_1=\ker g/\operatorname{im}f=0$, $H_0=C/\operatorname{im}g=0$, so the complex is acyclic: exactness is the vanishing of homology.</p>
+<h3 id="the-euler-characteristic">The Euler Characteristic</h3>
+<p>Over a ring in which the relevant ranks are defined, the alternating sum of the ranks of the terms of a bounded complex computes the alternating sum of the homology.</p>
+<p><strong>Proposition.</strong> Let $C_\bullet$ be a complex of finitely generated free modules over a field $F$, nonzero in only finitely many degrees, and suppose $H_n(C_\bullet)$ is finite-dimensional for every $n$. Then</p>
+<p>$$
+\sum_n(-1)^n\dim_F C_n=\sum_n(-1)^n\dim_F H_n(C_\bullet).
+$$</p>
+<p><em>Proof.</em> The short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$ give $\dim C_n=\dim Z_n+\dim B_{n-1}$ and $\dim Z_n=\dim B_n+\dim H_n$. Substituting and summing with alternating signs telescopes, because the boundary contributions enter with opposite signs. $\square$</p>
+<p>The number $\sum_n(-1)^n\dim_FC_n$ is the <strong>Euler characteristic</strong> and the identity is its invariance under homology. The corresponding statement for modules over a ring uses the rank of a finitely generated module and holds over a domain when the homology is free of finite rank.</p>
+<h2 id="exact-sequences-of-complexes">Exact Sequences of Complexes</h2>
+<h3 id="short-exact-sequences-of-complexes">Short Exact Sequences of Complexes</h3>
+<p><strong>Definition.</strong> A sequence of complexes $0\to A_\bullet\xrightarrow{f}B_\bullet\xrightarrow{g}C_\bullet\to0$ is <strong>short exact</strong> if for each $n$ the sequence $0\to A_n\to B_n\to C_n\to0$ is short exact in $\mathcal{A}$.</p>
+<p>The snake lemma applied degreewise does not by itself produce a long exact sequence in homology, because the diagram of the lemma is only the first two rows of a larger diagram; the connecting map is constructed from the differentials of the three complexes together.</p>
+<p><strong>Theorem.</strong> For a short exact sequence of complexes $0\to A_\bullet\to B_\bullet\to C_\bullet\to0$ there is a long exact sequence in homology</p>
+<p>$$
+\cdots \longrightarrow H_n(A) \longrightarrow H_n(B) \longrightarrow H_n(C) \xrightarrow{\ \partial_n\ } H_{n-1}(A) \longrightarrow H_{n-1}(B) \longrightarrow \cdots,
+$$</p>
+<p>natural in the short exact sequence, with $\partial_n$ the connecting morphism.</p>
+<p><em>Proof.</em> The degreewise snake lemma applied to the map of complexes, in which the rows are the short exact sequences and the vertical maps are the differentials, gives the diagram</p>
+<p>$$
+H_n(A)\to H_n(B)\to H_n(C)\xrightarrow{\partial_n}H_{n-1}(A)\to H_{n-1}(B)\to H_{n-1}(C),
+$$</p>
+<p>and the construction of $\partial_n$ is the snake-lemma construction on the square with vertices $B_n$, $C_n$, $B_{n-1}$, $C_{n-1}$. Concretely, for a class $[c]\in H_n(C)$ choose $b \in B_n$ with $g_nb=c$; then $g_{n-1}(d_nb)=d_n^C g_n b=0$, so $d_nb=f_{n-1}(a)$ for a unique $a \in A_{n-1}$, and $\partial_n[c]=[a]$ in $H_{n-1}(A)$. The class is independent of the lift $b$ and of the representative $c$, and exactness at each term is the snake lemma. Naturality is immediate from the construction. $\square$</p>
+<p><strong>Corollary.</strong> If two of the three complexes are acyclic then so is the third; if $H_n(A)=H_n(B)=0$ then $H_n(C)=0$, and similarly in the other positions.</p>
+<h3 id="the-mapping-cone">The Mapping Cone</h3>
+<p>The connecting morphism can be packaged as the homology of a single complex.</p>
+<p><strong>Definition.</strong> For a morphism of complexes $f:A_\bullet\to B_\bullet$ the <strong>mapping cone</strong> $\operatorname{Cone}(f)$ is the complex with $(\operatorname{Cone}f)_n=B_n\oplus A_{n-1}$ and differential</p>
+<p>$$
+d(b,a)=(d_B b+f(a),-d_A a).
+$$</p>
+<p>It satisfies $d^2=0$ because $f$ is a chain map.</p>
+<p><strong>Proposition.</strong> There is a long exact sequence</p>
+<p>$$
+\cdots\to H_n(A)\xrightarrow{H_n(f)}H_n(B)\to H_n(\operatorname{Cone}f)\xrightarrow{}H_{n-1}(A)\to\cdots,
+$$</p>
+<p>so the homology of the cone is the obstruction to $f$ being a quasi-isomorphism, where a <strong>quasi-isomorphism</strong> is a chain map inducing isomorphisms on all homology groups.</p>
+<p><em>Proof.</em> The cone fits into a short exact sequence of complexes $0\to B_\bullet\to\operatorname{Cone}(f)\to A_{\bullet-1}\to0$ by the inclusions $b\mapsto(b,0)$ and the projections $(b,a)\mapsto a$, where $A_{\bullet-1}$ denotes $A$ with degrees shifted by one. The long exact sequence of the theorem, with the identification $H_n(A_{\bullet-1})=H_{n-1}(A)$, is the displayed sequence. $\square$</p>
+<h2 id="chain-homotopy">Chain Homotopy</h2>
+<h3 id="definition-and-first-properties">Definition and First Properties</h3>
+<p><strong>Definition.</strong> Let $f,g:C_\bullet\to D_\bullet$ be morphisms of complexes. A <strong>chain homotopy</strong> $s:f\simeq g$ is a family of morphisms $s_n:C_n\to D_{n+1}$ with</p>
+<p>$$
+g_n-f_n = e_{n+1}s_n + s_{n-1}d_n
+$$</p>
+<p>for every $n$. Two maps are <strong>homotopic</strong> if such an $s$ exists, and a map is a <strong>homotopy equivalence</strong> if it has an inverse up to homotopy.</p>
+<p><strong>Proposition.</strong> Homotopic chain maps induce the same map on homology.</p>
+<p><em>Proof.</em> Let $z \in Z_n(C)$, so $d_nz=0$. Then $g_n(z)-f_n(z)=e_{n+1}s_n(z)$, which lies in $B_n(D)=\operatorname{im}e_{n+1}$. Hence $g_n$ and $f_n$ agree on cycles modulo boundaries, that is, $H_n(f)=H_n(g)$. $\square$</p>
+<p><strong>Corollary.</strong> A homotopy equivalence is a quasi-isomorphism. The converse fails: the acyclic complex</p>
+<p>$$
+0\longrightarrow \mathbb{Z} \xrightarrow{\ \cdot 2\ } \mathbb{Z} \xrightarrow{\ \pi\ } \mathbb{Z}/2\mathbb{Z} \longrightarrow 0,
+$$</p>
+<p>concentrated in degrees $2,1,0$, has all homology zero, so its map to the zero complex is a quasi-isomorphism; but a contraction of the complex would provide a section of the surjection $\mathbb{Z}\to\mathbb{Z}/2\mathbb{Z}$, and none exists. Over a field every acyclic complex is contractible, so the distinction is a phenomenon of the general ring.</p>
+<h3 id="split-exact-sequences">Split Exact Sequences</h3>
+<p><strong>Definition.</strong> A short exact sequence $0\to A\xrightarrow{f}B\xrightarrow{g}C\to0$ of complexes <strong>splits</strong> if it splits degreewise, that is, if there are morphisms $B_n\to A_n$ with composite the identity on $A_n$.</p>
+<p><strong>Proposition.</strong> If a short exact sequence of complexes splits degreewise then the connecting morphism $\partial_n$ vanishes and the long exact sequence breaks into short exact sequences $0\to H_n(A)\to H_n(B)\to H_n(C)\to0$.</p>
+<p><em>Proof.</em> With a degreewise retraction $r$, the element $a$ constructed in the snake argument can be taken to be a boundary, since $d_nb=f_{n-1}(a)$ and $r_n d_n b=d_{n-1}r nb$ lies in $B_{n-1}(A)$; hence $\partial_n=0$. Exactness of the remaining pieces is then the statement that the long exact sequence splits into short exact sequences at the points where $\partial$ is zero. $\square$</p>
+<h2 id="resolutions">Resolutions</h2>
+<h3 id="projective-and-injective-resolutions">Projective and Injective Resolutions</h3>
+<p><strong>Definition.</strong> A <strong>left resolution</strong> of an object $M$ of $\mathcal{A}$ is an exact sequence</p>
+<p>$$
+\cdots \longrightarrow P_2 \xrightarrow{d_2} P_1 \xrightarrow{d_1} P_0 \xrightarrow{\varepsilon} M \longrightarrow 0,
+$$</p>
+<p>written $P_\bullet\to M$, where $\varepsilon$ is the <strong>augmentation</strong>. It is a <strong>projective resolution</strong> if every $P_n$ is projective, a <strong>free resolution</strong> if every $P_n$ is free, and of <strong>finite length</strong> if $P_n=0$ for all large $n$. A <strong>right resolution</strong> is a cochain complex</p>
+<p>$$
+0\longrightarrow M\xrightarrow{\eta} I^0\xrightarrow{d^0} I^1\xrightarrow{d^1}\cdots,
+$$</p>
+<p>an <strong>injective resolution</strong> if every $I^n$ is injective.</p>
+<p><strong>Examples.</strong> Over a principal ideal domain every module has a free resolution of length one, $0\to K\to F\to M\to0$ with $F$ free, because submodules of free modules are free. Over $R=k[x_1,\dots,x_n]$ the module $k=R/(x_1,\dots,x_n)$ has the Koszul resolution of length $n$. Every module over every ring has a free, hence projective, resolution, by the article <em>Projective and Injective Modules</em>, and every module over every ring embeds in an injective module, so injective resolutions exist; in a Grothendieck category the latter holds by the theorem of <em>Abelian and Grothendieck Categories</em>.</p>
+<h3 id="the-comparison-theorem">The Comparison Theorem</h3>
+<p>The reason resolutions are computable is that they are unique up to homotopy, so any two choices give the same answer.</p>
+<p><strong>Theorem (comparison).</strong> Let $P_\bullet\xrightarrow{\varepsilon}M$ be a projective resolution and $Q_\bullet\xrightarrow{\eta}N$ an exact sequence with $Q_n$ projective. Every morphism $u:M\to N$ lifts to a morphism of complexes $\varphi:P_\bullet\to Q_\bullet$ with $\eta\varphi_0=u\varepsilon$, and any two such lifts are chain homotopic.</p>
+<p><em>Proof.</em> Since $Q_0\to N$ is surjective and $P_0$ is projective, the map $u\varepsilon:P_0\to N$ lifts to $\varphi_0:P_0\to Q_0$. Suppose $\varphi_{n-1}$ has been constructed. The composite $d^Q_{n-1}\varphi_{n-1}:P_n\to Q_{n-1}$ has image in $\ker(Q_{n-1}\to Q_{n-2})=\operatorname{im}(Q_n\to Q_{n-1})$ by exactness and the commuting relation already established; since $P_n$ is projective, it lifts along the surjection $Q_n\to\operatorname{im}(Q_n\to Q_{n-1})$ to $\varphi_n$. This produces the chain map. For the uniqueness up to homotopy, given two lifts $\varphi,\psi$, the differences $\varphi_n-\psi_n$ satisfy $(\varphi_0-\psi_0)\varepsilon=0$, so $\varphi_0-\psi_0$ lands in $\operatorname{im}(Q_1\to Q_0)$; the projectivity of $P_0$ gives $s_0:P_0\to Q_1$ with $d^Q_1s_0=\varphi_0-\psi_0$. Then $\varphi_1-\psi_1-s_0d^P_1$ has image killed by $d^Q_1$, hence lands in $\operatorname{im}(Q_2\to Q_1)$, and projectivity of $P_1$ gives $s_1$; the induction produces the homotopy. $\square$</p>
+<p><strong>Corollary.</strong> Any two projective resolutions of $M$ are homotopy equivalent, and hence their homologies are isomorphic; the same holds for injective resolutions by the dual argument.</p>
+<p><strong>Corollary.</strong> The identity of $M$ lifts to a chain map between any two projective resolutions, unique up to homotopy. Therefore any construction applied to a projective resolution and invariant under chain homotopy is an invariant of $M$. This is the invariance that the derived functors use.</p>
+<h3 id="the-horseshoe-lemma">The Horseshoe Lemma</h3>
+<p>When a module is an extension of two others, resolutions of the two ends assemble into a resolution of the middle.</p>
+<p><strong>Lemma (horseshoe).</strong> Let $0\to A\to B\to C\to0$ be a short exact sequence and let $P_\bullet\to A$, $R_\bullet\to C$ be projective resolutions. Then there is a projective resolution $Q_\bullet\to B$ with $Q_n=P_n\oplus R_n$, and a short exact sequence of complexes $0\to P_\bullet\to Q_\bullet\to R_\bullet\to0$ whose degreewise splittings are the direct-sum projections.</p>
+<p><em>Proof.</em> Put $Q_0=P_0\oplus R_0$, mapped to $B$ by the sum of the augmentation of $P_0$ and a lift of the augmentation of $R_0$ along $B\to C$; the lift exists by projectivity of $R_0$. The map is surjective because $P_0\to A\to B$ and $R_0\to C$ jointly cover $B$, and its kernel is an extension of $\ker(R_0\to C)$ by $\ker(P_0\to A)$, on which the induction repeats. The resulting complex is exact by construction, and each $Q_n$ is projective as a direct sum of projectives. $\square$</p>
+<p><strong>Corollary.</strong> Every short exact sequence $0\to A\to B\to C\to0$ with $A$ and $C$ admitting finite projective resolutions of lengths at most $m$ and $n$ has $B$ admitting a finite projective resolution of length at most $\max(m,n)$.</p>
+<h2 id="the-tensor-product-and-hom-complexes">The Tensor Product and Hom Complexes</h2>
+<h3 id="the-tensor-product-of-complexes">The Tensor Product of Complexes</h3>
+<p><strong>Definition.</strong> For complexes $C_\bullet,D_\bullet$ of modules over a commutative ring the <strong>tensor product complex</strong> has</p>
+<p>$$
+(C\otimes_RD)_n=\bigoplus_{p+q=n}C_p\otimes_RD_q, \qquad d(x\otimes y)=d_Cx\otimes y+(-1)^px\otimes d_Dy \ \text{ for } x \in C_p .
+$$</p>
+<p><strong>Proposition.</strong> The differential is square-zero and the construction is associative and commutative up to the usual natural isomorphisms of the tensor product, with the Koszul sign $(-1)^p$ inserted to make the differential commute with the symmetry.</p>
+<p><em>Proof.</em> Apply the differential twice: the terms $d_C^2\otimes\operatorname{id}$ and $\operatorname{id}\otimes d_D^2$ vanish, and the two mixed terms $d_C\otimes d_D$ occur with signs $(-1)^p$ and $(-1)^{p-1}$ from the two orderings, so they cancel. $\square$</p>
+<p>The tensor product complex is the input to the definition of $\operatorname{Tor}$ , and to the Künneth formula, and its homology is computed by the spectral sequences .</p>
+<h3 id="the-hom-complex">The Hom Complex</h3>
+<p><strong>Definition.</strong> For complexes $C_\bullet,D_\bullet$ the <strong>hom complex</strong> has</p>
+<p>$$
+\operatorname{Hom}^n(C,D)=\prod_{p \in \mathbb{Z}}\operatorname{Hom}(C_p,D_{p+n}),
+$$</p>
+<p>an element of which is a family $f=(f_p)_p$ of morphisms $f_p:C_p\to D_{p+n}$, with differential</p>
+<p>$$
+(df)_p = d^D_{p+n} f_p - (-1)^n f_{p-1} d^C_p .
+$$</p>
+<p>The differential is square-zero because $f_p$ is compared with $f_{p-1}$ through the differentials of $C$ and $D$, and the sign $(-1)^n$ makes the two orderings cancel.</p>
+<p><strong>Proposition.</strong> The <strong>cycles</strong> of the hom complex in degree $0$ are exactly the chain maps $C\to D$, and the <strong>homology</strong> $H^0(\operatorname{Hom}(C,D))$ is the group of chain maps modulo chain homotopy. More generally $H^n(\operatorname{Hom}(C,D))$ is the group of maps of degree $n$ modulo homotopy.</p>
+<p><em>Proof.</em> For $n=0$ the differential is $(df)_p=d^D_p f_p - f_{p-1}d^C_p$, and $df=0$ is exactly the chain-map condition. An element $f$ of degree $0$ with $df=0$ is a boundary precisely when there is a family $s=(s_p)$ with $s_p:C_p\to D_{p+1}$ and $f_p=d^D_{p+1}s_p+s_{p-1}d^C_p$, which is the definition of a chain homotopy from $0$ to $f$. The general degree is the same computation with the shift. $\square$</p>
+<p><strong>Proposition.</strong> If $C$ is a bounded-below complex of projective objects and $D$ is exact, then $\operatorname{Hom}^\bullet(C,D)$ is exact; in particular the homology in every degree vanishes. Dually, if $D$ is bounded-above and consists of injectives and $C$ is exact then $\operatorname{Hom}^\bullet(C,D)$ is exact.</p>
+<p><em>Proof.</em> The argument is the comparison theorem in degree one at a time: given a family $g$ with $dg=0$ and a partial lift $s$ defined in degrees below $p$, exactness of $D$ exhibits each $g_p - s_{p-1}d^C_p$ as factoring through the surjection $D_{p+n+1}\to\ker(d^D_{p+n})$, and projectivity of $C_p$ lifts it to $s_p$. The induction over the bounded-below degrees produces the required homotopy. $\square$</p>
+<p>These statements are the homological form of the comparison theorem, and they are the reason the derived category, can be described by localising the homotopy category at the quasi-isomorphisms.</p>
+<h2 id="bicomplexes-and-total-complexes">Bicomplexes and Total Complexes</h2>
+<h3 id="double-complexes">Double Complexes</h3>
+<p><strong>Definition.</strong> A <strong>bicomplex</strong> or <strong>double complex</strong> $C_{\bullet\bullet}$ is a family of objects $C_{p,q}$ with two commuting families of differentials $d^h_{p,q}:C_{p,q}\to C_{p-1,q}$ and $d^v_{p,q}:C_{p,q}\to C_{p,q-1}$ satisfying $(d^h)^2=0$, $(d^v)^2=0$ and $d^hd^v+d^vd^h=0$. The <strong>total complex</strong> $\operatorname{Tot}(C)_n=\bigoplus_{p+q=n}C_{p,q}$ carries the differential $d=d^h+d^v$, and $d^2=0$ is the anticommutation.</p>
+<p><strong>Example.</strong> For complexes $C_\bullet,D_\bullet$ the tensor product bicomplex with $C_{p,q}=C_p\otimes_RD_q$, horizontal differential $d_C\otimes\operatorname{id}$ and vertical $\operatorname{id}\otimes d_D$, has total complex the tensor product complex $(C\otimes_RD)_n$ above, with the Koszul sign carried into the vertical differential so that the anticommutation holds.</p>
+<h3 id="filtration-and-computation">Filtration and Computation</h3>
+<p><strong>Definition.</strong> A <strong>filtration</strong> of a complex $C_\bullet$ is an increasing family of subcomplexes $\cdots\subseteq F_{p-1}C\subseteq F_pC\subseteq\cdots$ with union $C$ and intersection $0$ in each degree. A filtration is <strong>bounded</strong> if for each $n$ only finitely many $F_pC_n$ are nonzero.</p>
+<p>The homology of a filtered complex is computed from the homologies of the successive quotients by the spectral sequences of: a filtration of a complex produces a spectral sequence converging to the homology of the complex with $E^1$-page the homology of the quotients. That article develops the construction; here only the definitions of bicomplex, total complex and filtration are recorded, since they are the input to the spectral-sequence machinery and to the derived-category constructions.</p>
+<h2 id="where-the-applications-belong">Where the Applications Belong</h2>
+<p>The theory above is algebraic: it concerns an abelian category, complexes in it, and the homology functor. Two of its most important applications lie outside this Part by the ordering rules of the corpus.</p>
+<p>The first is <strong>sheaf cohomology</strong>. For a sheaf of abelian groups on a site, or on a topological space, the global-section functor is left exact, and its derived functors — the cohomology of the sheaf — are computed from an injective resolution in the Grothendieck category of sheaves. The algebraic input is exactly the abelian-category theory of this article and the derived-functor theory of the next; the geometric input, which is a space or a site with a topology, belongs to Part II, where it is treated in <em>Sheaves and Cohomology</em>.</p>
+<p>The second is <strong>algebraic topology</strong>. For a topological space, or a simplicial set, the singular chain complex computes the homology of the space, and the long exact sequence of a pair or a fibration is the long exact sequence of a short exact sequence of complexes; the algebraic machinery is the present article, while the space, its topology and the homotopy invariants built from it belong to Part II, where they are treated in <em>Algebraic Topology</em>. The same holds for the Hochschild and cyclic complexes: they are algebraic complexes, and they are developed later in this category.</p>
+<h2 id="summary">Summary</h2>
+<p>A chain complex is a graded object with a square-zero differential; its cycles, boundaries and homology $H_n=\ker d_n/\operatorname{im}d_{n+1}$ measure its failure to be exact, and homology is an additive functor. A short exact sequence of complexes yields, through the snake lemma applied to the differential squares, a long exact sequence in homology with a natural connecting morphism; the mapping cone packages the connecting morphism as the homology of a single complex and detects quasi-isomorphisms. Chain homotopic maps induce the same map on homology, and homotopy equivalence implies quasi-isomorphism, though not conversely.</p>
+<p>A projective resolution of $M$ is an exact complex of projective modules with augmentation onto $M$, and an injective resolution is the dual. Every module has both. The comparison theorem produces a lift of any morphism of the resolved objects to a morphism of resolutions, unique up to chain homotopy; consequently any two projective resolutions of $M$ are homotopy equivalent, and constructions invariant under homotopy are invariants of $M$. The horseshoe lemma assembles resolutions of the ends of a short exact sequence into a resolution of the middle. The tensor product of complexes, with the Koszul sign, and the hom complex, whose $H^0$ is chain maps modulo homotopy, are the two constructions on complexes that the derived functors and the derived category use; double complexes, their total complexes and filtrations are the input to spectral sequences.</p>
+<p>Every result is algebraic. The applications to sheaf cohomology and to algebraic topology require a space or a site and belong to Part II, where they are developed in <em>Sheaves and Cohomology</em> and <em>Algebraic Topology</em>; the algebraic complexes of Hochschild and cyclic homology lie outside this article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{A}$, $\mathbf{Ch}(\mathcal{A})$</td>
+<td>an abelian category, its category of chain complexes</td>
+</tr>
+<tr>
+<td>$(C_\bullet,d_\bullet)$, $d_n:C_n\to C_{n-1}$</td>
+<td>chain complex and differentials, $d^2=0$</td>
+</tr>
+<tr>
+<td>$(C^\bullet,d^\bullet)$, $d^n:C^n\to C^{n+1}$</td>
+<td>cochain complex and differentials</td>
+</tr>
+<tr>
+<td>$Z_n=\ker d_n$, $B_n=\operatorname{im}d_{n+1}$</td>
+<td>cycles and boundaries</td>
+</tr>
+<tr>
+<td>$H_n(C)=Z_n/B_n$</td>
+<td>homology; $H^n$ for cohomology</td>
+</tr>
+<tr>
+<td>$f_\bullet:C_\bullet\to D_\bullet$</td>
+<td>morphism of complexes</td>
+</tr>
+<tr>
+<td>$\varphi\simeq\psi$, $s$</td>
+<td>chain homotopy and the homotopy $s_n:C_n\to D_{n+1}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Cone}(f)$</td>
+<td>mapping cone of a chain map</td>
+</tr>
+<tr>
+<td>$P_\bullet\to M$, $M\to I^\bullet$</td>
+<td>projective and injective resolutions</td>
+</tr>
+<tr>
+<td>$\varepsilon$, $\eta$</td>
+<td>augmentation of a resolution</td>
+</tr>
+<tr>
+<td>$(C\otimes_RD)_\bullet$, $\operatorname{Hom}^\bullet(C,D)$</td>
+<td>tensor product and hom complexes</td>
+</tr>
+<tr>
+<td>$\operatorname{Tot}(C)$</td>
+<td>total complex of a bicomplex</td>
+</tr>
+<tr>
+<td>$F_pC$</td>
+<td>filtration of a complex</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity $1\neq0$ unless stated</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Henri Cartan and Samuel Eilenberg, <em>Homological Algebra</em> (Princeton University Press, 1956), for chain complexes, resolutions and the comparison theorem.</li>
+<li>Pierre Gabriel, "Des catégories abéliennes", <em>Bulletin de la Société Mathématique de France</em> 90 (1962), 323–448, for complexes and resolutions in an abelian category.</li>
+<li>Alexander Grothendieck, "Sur quelques points d'algèbre homologique", <em>Tohoku Mathematical Journal</em> 9 (1957), 119–221, for the homological algebra of abelian categories and the long exact sequence.</li>
+<li>Thomas W. Hungerford, <em>Algebra</em> (Springer, 1974), for the elementary theory of complexes and resolutions.</li>
+<li>Saunders Mac Lane, <em>Homology</em> (Springer, 1995), for chain complexes, homotopy and the comparison theorem.</li>
+<li>Barry Mitchell, "The full imbedding theorem", <em>American Journal of Mathematics</em> 86 (1964), 619–637, for the categorical formulation of the diagram lemmas.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for resolutions, the horseshoe lemma and the derived functors.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for complexes, the comparison theorem and the tensor and hom complexes.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

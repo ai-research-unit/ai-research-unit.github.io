@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Empirical Status of the Biquaternion Framework — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-empirical-status-of-the-biquaternion-framework"><strong>The Empirical Status of the Biquaternion Framework</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article asks what would count as an <strong>empirical signature</strong> of the biquaternion framework: a measurement whose outcome the framework predicts to differ from the prediction of standard physics. It is a research agenda, and its subject is the criteria a candidate must meet, not a catalogue of confident predictions.</p>
+<p>The standing position of the series is stated here plainly. On every domain the companion articles have developed, the framework <strong>agrees</strong> with standard physics: the single-qubit formalism reproduces the Bloch ball, the Born rule, and the projective update exactly; relativistic mechanics reproduces the interval, the mass shell, and the four-force constraints exactly; Maxwell and Dirac are transcriptions; and the hydrogen spectrum, the Casimir force, the Unruh temperature, and the Bell/CHSH bounds are reproduced and not modified, while the CPT theorem is transcribed rather than established. The framework is a reformulation, and on each domain it reformulates it is currently <strong>empirically equivalent</strong> to what it reformulates. That is the starting point of this article, not a disappointment, and the main result below is that it is also, so far, the end point: no distinguishing prediction is made.</p>
+<p>The temptation this article exists to resist is the opposite of that conclusion: to take a structure the framework contains — the two-sector decomposition, the local complex structure, the imaginary directions — call it a prediction, and name the experiment that would test it. The method adopted instead is to take each candidate in turn and ask:</p>
+<ol>
+<li>Which framework-specific quantity does it depend on?</li>
+<li>Is that quantity derived anywhere in this series, or merely posited?</li>
+<li>What existing experimental bound already constrains it?</li>
+</ol>
+<p>A candidate that traces to an undetermined parameter or an unverified claim is <strong>not a signature</strong>, and is labelled as such below; so is a candidate whose "prediction" is the standard result rewritten. The next section fixes what a signature would have to be and identifies the structural reason none is yet available; the sections after record the standing agreement, explain why it is not evidence for the framework's distinctive content, and examine the candidates individually.</p>
+<p>Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
+<h2 id="what-would-count-as-a-signature">What Would Count as a Signature</h2>
+<p>A measurement $M$ is a <strong>signature</strong> of the framework relative to a standard theory $S$ if the framework predicts for $M$ a value that differs from the value $S$ predicts, by an amount the framework itself fixes, and if the measurement can resolve the difference. Four conditions must hold simultaneously:</p>
+<p><strong>(S1) A framework-specific quantity.</strong> There is a quantity $Q$ that the framework determines and $S$ does not. The two-sector reading, the local complex structure, and the imaginary directions are candidates for such quantities; whether any of them <em>determines</em> a number is a separate matter.</p>
+<p><strong>(S2) A fixed value or scale.</strong> The framework fixes the value of $Q$, or at least a scale in terms of which the deviation is expressed. A symbol left free is not a prediction. A dimensionless algebra that imports all its dimensional constants from outside fixes no scale.</p>
+<p><strong>(S3) An observable.</strong> There is a measurable quantity $O$ whose value is $O_S+\delta(Q)$, with $\delta$ computed from the framework. If $O=O_S$ identically, the framework is consistent but indistinguishable on this measurement.</p>
+<p><strong>(S4) Resolution.</strong> An existing or feasible experimental bound on $O-O_S$ is tighter than the predicted $\delta$. A deviation smaller than the best bound is not a test; it is an aspiration.</p>
+<p>The four conditions fail together for a structural reason. The framework's established content is the algebra $\mathbb{B}$ with its standard representations: $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem of the corpus and not a modelling choice; $\mathbb{M}_-\cong\mathbb{R}^{3,1}$ with the Minkowski form; and $\mathbb{M}_+$, the Hermitian part of $M_2(\mathbb{C})$, the standard operator space of a two-state system. All are shared with the standard formalism, and the algebra is <strong>dimensionless</strong>: $N$, the product, and the conjugations carry no scale, while $c$, $\hbar$, $m$, and $e$ are inserted from outside.</p>
+<p>The consequence is a barrier that this article will meet repeatedly. Any quantity the framework fixes <strong>by its algebra alone</strong> is a quantity that the standard theory, using the same algebra, fixes identically. A signature therefore requires an input that is not algebra — a dynamics, a coupling, a scale, or a selection principle. The series has supplied such inputs in the places where a transcription needed them (the Dirac mass term, the gauge fixing of the Maxwell field, the frame field of the curved-spacetime construction), but in no case has it supplied one whose value the algebra forces. That is the central structural reason the framework currently makes no distinguishing prediction.</p>
+<p>Two precisions. First, "empirically equivalent" is asserted <strong>case by case</strong>, for the domains actually developed, not as a theorem about a completed theory: the framework does not reformulate the Standard Model, the dynamics of general relativity, or quantum field theory in general. Second, equivalence is a property of a <em>transcription</em> — a faithful reformulation makes the same predictions by construction — so agreement with experiment cannot by itself be evidence for whatever the reformulation adds.</p>
+<h2 id="the-standing-agreement-domain-by-domain">The Standing Agreement, Domain by Domain</h2>
+<p>The following table collects the quantitative results the series has obtained and the standard results they reproduce. In every row the deviation is zero.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Framework result</th>
+<th>Standard result reproduced</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single qubit</td>
+<td>Bloch sphere and Bloch ball; $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}$; sandwich update</td>
+<td>States, observables, Born rule, projective measurement</td>
+</tr>
+<tr>
+<td>Relativistic point mechanics</td>
+<td>$N(d\tilde{X})=-c^2dt^2+d\mathbf{x}^2$; $\tilde{P}\bar{\tilde{P}}=-m^2c^2$; $\tilde{F}\bar{\tilde{P}}+\tilde{P}\bar{\tilde{F}}=0$</td>
+<td>Interval, mass shell, four-force orthogonality</td>
+</tr>
+<tr>
+<td>Maxwell field</td>
+<td>$\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$; Riemann–Silberstein field; invariants</td>
+<td>Maxwell's equations in a medium</td>
+</tr>
+<tr>
+<td>Dirac field</td>
+<td>$\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R$; massless case $\tilde{\nabla}\tilde{\Psi}=0$</td>
+<td>Dirac equation, mass term</td>
+</tr>
+<tr>
+<td>Electron gyromagnetic ratio</td>
+<td>$g=2$ at tree level; anomaly <strong>absent</strong></td>
+<td>Dirac's tree-level value; the anomaly is outside the framework</td>
+</tr>
+<tr>
+<td>Hydrogen, relativistic</td>
+<td>Exact Dirac–Coulomb spectrum; fine structure</td>
+<td>Standard spectrum, quoted not derived</td>
+</tr>
+<tr>
+<td>Casimir effect</td>
+<td>$-\pi^2\hbar c/(240a^4)$, attractive</td>
+<td>Standard Casimir force, reproduced</td>
+</tr>
+<tr>
+<td>Unruh effect</td>
+<td>$T=\hbar a/(2\pi c\,k_B)$</td>
+<td>Standard Unruh temperature, reproduced</td>
+</tr>
+<tr>
+<td>CPT, Born rule, Bell/CHSH, decoherence</td>
+<td>Standard statements</td>
+<td>Standard results, reproduced; CPT transcribed, not established</td>
+</tr>
+<tr>
+<td>Linearized gravity and gravitational waves</td>
+<td>Standard wave equation <strong>assumed</strong>; no deviation predicted</td>
+<td>No derivation of the field equation</td>
+</tr>
+</tbody>
+</table></div>
+<p>Not one entry in the table is a difference. The agreement is exact where the algebra is used exactly (the qubit, the four-vector kinematics), and it is a faithful reproduction where the framework transcribes a standard equation (Maxwell, Dirac, hydrogen, Casimir, Unruh). The gravitational-wave row is the weakest: there the framework does not derive the field equation it uses, so even the agreement is carried by standard general relativity rather than produced by the algebra.</p>
+<p>It is worth naming what these results are checks <em>of</em>. They are checks that the transcription is faithful — that the biquaternion dictionary has been applied consistently, that signs and factors of two and the trace convention are right. That is a real and nontrivial achievement: a reformulation that got these wrong would be wrong. But a faithful transcription is guaranteed to agree, so the agreement tests the transcription, not the framework's distinctive content.</p>
+<h2 id="why-agreement-is-not-confirmation">Why Agreement Is Not Confirmation</h2>
+<p>A reformulation and its target are not two theories that happen to agree; they are one theory written twice. When the dictionary is exact, agreement is a consistency condition on the dictionary, and it cannot discriminate between the framework and the standard formalism, because on the shared structure the two are the same.</p>
+<p>The framework's distinctive content is not what the reproducing calculations use. They use the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; the identification of $\mathbb{M}_-$ with $\mathbb{R}^{3,1}$; and the standard wave operators built from the biquaternionic gradient. All three are shared with the standard formalism. The framework-specific additions — the naming of $\mathbb{M}_-$ as <em>material</em> and $\mathbb{M}_+$ as <em>informational</em>, the claim that the complex structure is local and physically determined, the proposal that the algebra is nature's rather than notation's — enter no formula that produces a number. They are therefore untested by every experiment the series cites, including the ones that agree. A reader who treats the agreement as support for the material/informational reading has read the evidence backwards.</p>
+<p>Two examples show how narrowly the agreement should be read.</p>
+<p><strong>The electron.</strong> The framework forces the tree-level $g=2$, which is Dirac's result; the measured anomalous part $a=(g-2)/2\approx1.1597\times10^{-3}$ is outside the classical equation and is not contained. The framework therefore cannot claim the measured moment at the precision the measurement achieves; its agreement is with tree-level Dirac theory, one part in $10^3$ away from the measured value.</p>
+<p><strong>Hydrogen.</strong> The exact relativistic spectrum is the standard Dirac–Coulomb result, quoted and reproduced; the corpus states that the bound-state solution is not derived anywhere in the series. The framework supplies the spin algebra and the level bookkeeping, but not the radial dynamics or the coupling constant, and the agreement is with an imported result.</p>
+<p>The lesson generalizes. When a reformulation reproduces a number, the question to ask is <strong>which of its structures produced the number</strong>. If the answer is the standard ones — the complex algebra, the Minkowski form, an inserted constant — then the number is not evidence for the framework's addition. This is the criterion applied to every candidate below.</p>
+<h2 id="candidate-signatures">Candidate Signatures</h2>
+<p>Each candidate below is examined under the three questions of the Introduction and the four conditions of the second section. The order runs from the candidate with no home in the framework to the one that is, in the writer's judgement, the most promising, and it closes with a second warning rather than a candidate.</p>
+<h3 id="a-fundamental-scale-and-modified-dispersion">A Fundamental Scale, and Modified Dispersion</h3>
+<p><strong>The candidate.</strong> High-energy quantum-gravity models typically propose a modification of the dispersion relation — an energy-dependent speed of light, or a minimum length — appearing at a fundamental scale, often the Planck scale.</p>
+<p><strong>The framework-specific quantity.</strong> There is none. The algebra $\mathbb{B}$ and its coefficient field are dimensionless; the norm form, the product, and the conjugations carry no scale. Every dimensional quantity in the series is imported: the corpus records that the electron mass, charge, and $\hbar$ are inserted, and that the framework supplies neither the value of the fine-structure constant nor the magnitude of the Coulomb coupling. No article derives a fundamental length or energy. The companion article on the renormalization group puts the point sharply: the scale, the field content, the gauge group, and the values of the couplings are all inputs, and the algebra fixes none of them.</p>
+<p><strong>Derived or posited.</strong> Neither. This is stronger than "unverified": the candidate has no home in the framework as developed. There is no parameter whose absence could be repaired by more work on the same algebra — a scale must be inserted, and any inserted scale is an addition to the framework rather than a consequence of it.</p>
+<p><strong>The existing bound.</strong> The relevant bounds bound proposals that <em>do</em> supply a scale. The Fermi-LAT analysis of GRB 090510 already requires any linear energy dependence of the speed of light to set in above the Planck scale, $E_\mathrm{Pl}\approx1.22\times10^{19}$ GeV; and the gravitational-wave event GW170817 constrains $v_\mathrm{GW}-v_\mathrm{EM}$ to between $-3\times10^{-15}$ and $+7\times10^{-16}$ times $c$. These do not constrain the biquaternion framework, because the framework supplies no scale for them to act on. If a scale were inserted by hand, the bounds are tight enough to exclude most natural choices.</p>
+<p><strong>Verdict.</strong> Not a signature. A dispersion claim here would be the invention the Introduction warns against.</p>
+<h3 id="the-local-complex-structure">The Local Complex Structure</h3>
+<p><strong>The candidate.</strong> The framework's most distinctive physical claim after the two-sector reading is that the complex structure of $\mathbb{B}$ is <strong>local</strong>, its scale set by the local speed of light $c=1/\sqrt{\epsilon\mu}$. One might hope that an observable depends on the complex structure as such, and not merely on the standard electromagnetic properties of the medium.</p>
+<p><strong>The framework-specific quantity.</strong> The local speed $c(\mathbf{x})=1/\sqrt{\epsilon(\mathbf{x})\mu(\mathbf{x})}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial_{ict}=-(i/c)\,\partial_t$.</p>
+<p><strong>Derived or posited.</strong> The relation $c=1/\sqrt{\epsilon\mu}$ is <strong>standard</strong>, a consequence of the constitutive relations $\mathbf{D}=\epsilon\mathbf{E}$ and $\mathbf{B}=\mu\mathbf{H}$; the framework does not derive it. What is posited is the <em>identification</em> of this standard speed with the scale of the complex structure. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.</p>
+<p><strong>The existing bound.</strong> None specific to the framework. Bounds on $\epsilon(\omega)$ and $\mu(\omega)$ are bounds on the standard medium response, which the framework takes as input; they do not test the complex-structure reading, because that reading makes no claim about their values.</p>
+<p><strong>Verdict.</strong> Not a signature. The <em>locality</em> of the complex structure is inherited entirely from the standard locality of $c(\mathbf{x})$, so any observable sensitive to it is already an observable of standard medium electromagnetism.</p>
+<h3 id="a-second-light-cone-or-vacuum-birefringence">A Second Light Cone, or Vacuum Birefringence</h3>
+<p><strong>The candidate.</strong> The framework has two sectors, and the two sectors carry quadratic forms of opposite signature. Perhaps there are two null structures, hence a polarization-dependent propagation speed — birefringence — or a second, "informational" light cone.</p>
+<p><strong>The framework-specific quantity.</strong> The norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$. It is a <strong>single</strong> quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\mathbf{q}^2$ and $q_0^2-\mathbf{q}^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.</p>
+<p><strong>Derived or posited.</strong> The single cone is <strong>derived</strong>: it is the zero-divisor set of the algebra, a theorem of the corpus. The absence of birefringence is therefore a consequence of the algebra, not an unverified claim.</p>
+<p><strong>The existing bound.</strong> Had the framework predicted birefringence, astrophysical polarimetry and gravitational-wave timing would constrain it. Since it predicts none, there is nothing to bound — and, once again, its consistency with the null-cone tests is not evidence for the framework, because the null cone it uses is the standard one.</p>
+<p><strong>Verdict.</strong> Not a signature. The algebra here forecloses the candidate rather than realizing it.</p>
+<h3 id="the-imaginary-directions-as-extra-space">The Imaginary Directions as Extra Space</h3>
+<p><strong>The candidate.</strong> The framework complexifies spacetime, so each point carries four real and four imaginary coordinates. A reader might expect the imaginary directions to be observable extra dimensions, with Kaluza–Klein-like consequences.</p>
+<p><strong>The framework-specific quantity.</strong> None. The companion article on $\mathbb{M}_+$ states explicitly that the imaginary directions are <strong>not</strong> claimed to be extra space; the informational sector reinterprets the same four-dimensional arena, and no field is taken to propagate in the imaginary directions. No compactification radius is defined.</p>
+<p><strong>Derived or posited.</strong> The complexification is a property of the algebra; the <em>observability</em> of the extra directions is not claimed at all, not even as a hypothesis.</p>
+<p><strong>The existing bound.</strong> If the imaginary directions were compactified at a radius $R$, collider and short-range-gravity tests would bound $R$; with no radius defined, there is nothing to bound.</p>
+<p><strong>Verdict.</strong> Not a signature. This candidate is often imputed to complexified-spacetime proposals from the outside, and the corpus is explicit in disclaiming it.</p>
+<h3 id="a-new-materialinformational-coupling">A New Material–Informational Coupling</h3>
+<p><strong>The candidate.</strong> The framework's central interpretive claim is that $\mathbb{M}_+$ is a physical sector. A coupling between the sectors beyond the standard Lorentz action would be new physics: a fifth force, a new field, a mass mixing.</p>
+<p><strong>The framework-specific quantity.</strong> Unspecified. The only operations involving both sectors are multiplication by $i$, which exchanges them, and the rotor conjugation $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, the standard Lorentz action. The companion article on $\mathbb{M}_+$ states that no dynamics for $\mathbb{M}_+$-valued fields is specified and that there is no coupling beyond the Lorentz one; the introduction lists a coupling between the sectors as an open question.</p>
+<p><strong>Derived or posited.</strong> Posited as a question. There is no field equation, no action, and no coupling constant.</p>
+<p><strong>The existing bound.</strong> If a specific coupling were written down — a Yukawa interaction of range $\lambda$ and strength $\alpha$, say — then torsion-balance, equivalence-principle, and atom-interferometry bounds would apply to it. With no parameter, nothing is constrained. And a coupling that is inserted rather than derived would make any resulting signature a test of the insertion, not of the framework.</p>
+<p><strong>Verdict.</strong> Not a signature, but the framework's largest gap and its best hope. This is the item on the agenda whose completion would most plausibly produce a genuine signature.</p>
+<h3 id="deviations-in-quantum-statistics">Deviations in Quantum Statistics</h3>
+<p><strong>The candidate.</strong> <em>Quaternionic</em> quantum mechanics is a real alternative to the complex theory with distinctive predictions — most notably a modification of two-particle interference. A reader meeting the word "biquaternion" might expect the framework to inherit them.</p>
+<p><strong>The framework-specific quantity.</strong> None, and this is a structural no-go rather than a gap. $\mathbb{B}$ is an <strong>associative</strong> algebra and is isomorphic to $M_2(\mathbb{C})$; it is a complex algebra, not a quaternionic Hilbert space. Its two-state sector is exactly the standard complex two-state theory. The framework therefore sits on the same side as standard quantum mechanics in every interference test, and it does not inherit the quaternionic programme's deviations.</p>
+<p><strong>Derived or posited.</strong> The exact complex structure is derived. The deviations are absent by algebra, not merely unverified.</p>
+<p><strong>The existing bound.</strong> Precision interference and two-particle tests are consistent with complex quantum mechanics; the framework shares that agreement exactly. There is no framework-specific number to compare.</p>
+<p><strong>Verdict.</strong> Not a signature, and a warning. This is the candidate on which a careless writer is most likely to claim a signature — or, worse, to claim the quaternionic predictions under a biquaternionic name. The framework is not a quaternionic Hilbert-space theory, and the predictions of that programme are not available to it.</p>
+<h3 id="derived-dimensionless-relations">Derived Dimensionless Relations</h3>
+<p><strong>The candidate.</strong> The class of signatures that does not require a new scale: a relation among <strong>standard</strong> parameters — a ratio, a mixing angle, a sum rule — that the algebra forces and the standard theory leaves free. This is the one form a scale-free algebra can take.</p>
+<p><strong>The framework-specific quantity.</strong> None exists in the corpus. No article derives a value for a coupling, a mass ratio, or a mixing angle. The series says so where it matters: the hydrogen article records that the framework does not supply the dimensionless coupling; the electron article records that the mass and charge are inserted; the chiral-fermion article records that the abelian sector is vector-like and offers no charge assignment.</p>
+<p><strong>Derived or posited.</strong> Nothing is derived; this is the empty cell of the framework.</p>
+<p><strong>The existing bound.</strong> Whichever relation were proposed, the standard constants are known to many digits, so a derived relation would be immediately and sharply testable. The absence here is a limit of the framework's derivation, not of experimental precision.</p>
+<p><strong>Verdict.</strong> The most promising candidate class, and currently empty. What would settle it is stated in the next section.</p>
+<h3 id="unverified-framework-claims-the-entropy-functional">Unverified Framework Claims: the Entropy Functional</h3>
+<p><strong>The candidate.</strong> The corpus floats a small number of framework-specific proposals that are not yet verified. The clearest is an entropy functional on the states of $\mathbb{M}_+$, written $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ and recorded in the companion article as <em>needing verification</em>.</p>
+<p><strong>The framework-specific quantity.</strong> The functional $S(\tilde{\rho})$, if it were well defined.</p>
+<p><strong>Derived or posited.</strong> Posited, and not yet verified: the biquaternion logarithm is multivalued, and no article shows that the expression is real, concave, or additive on the states of $\mathbb{M}_+$. Even if all of that were established, it is a transcription of the standard von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)$ and would agree with the standard theory rather than deviate from it.</p>
+<p><strong>The existing bound.</strong> None applies, because a transcribed entropy functional makes no new prediction.</p>
+<p><strong>Verdict.</strong> Not a signature, and a second warning: an item whose "signature" traces to an unverified claim is not a signature until the claim is verified, and here verification would still leave the standard result in place.</p>
+<h3 id="reproductions-that-are-not-signatures">Reproductions That Are Not Signatures</h3>
+<p>Several results are sometimes presented as if they were successes of the framework, and they are worth separating from signatures explicitly, because each is a reproduction of a standard result.</p>
+<ul>
+<li><strong>The tree-level gyromagnetic ratio $g=2$.</strong> This is Dirac's tree-level value; the anomaly is outside the framework. The framework can claim agreement with tree-level Dirac theory, not with the measured moment.</li>
+<li><strong>The relativistic hydrogen spectrum.</strong> It is the standard Dirac–Coulomb spectrum, quoted and reproduced; the exact bound-state solution is not derived in the series.</li>
+<li><strong>The Casimir force $-\pi^2\hbar c/(240a^4)$.</strong> Reproduced, not modified; the corpus states that the framework supplies no modification.</li>
+<li><strong>The Unruh temperature $T=\hbar a/(2\pi c\,k_B)$.</strong> Reproduced by a reformulation; the corpus states that it yields no discriminating prediction.</li>
+<li><strong>The Born rule, the CPT theorem, and the Bell/CHSH bounds.</strong> Standard statements; the Born rule and the Bell/CHSH bounds are reproduced, and the CPT theorem is transcribed rather than established.</li>
+</ul>
+<p>Each of these is a check that a transcription is faithful. None is evidence for the material/informational reading, because none of those computations uses it.</p>
+<h2 id="what-would-settle-it">What Would Settle It</h2>
+<p>The question would be settled affirmatively by a single candidate meeting all four conditions of the second section. The discussion above shows what such a candidate would look like and where the framework would have to acquire it.</p>
+<p><strong>The barrier restated.</strong> To break empirical equivalence the framework must deploy a structure not already contained in the pair $(M_2(\mathbb{C}),\ \text{Minkowski space})$. Three routes are available, and the series has touched all three without deriving any of them:</p>
+<ol>
+<li><strong>A scale.</strong> A fundamental length or energy, whether by deforming the algebra (a quantum group, a non-commutative spacetime) or by adding a dimensionful parameter. This would make the modified-dispersion candidate real, but the bound it must beat is severe: a linear dispersion scale must already lie above the Planck scale, and $v_\mathrm{GW}-v_\mathrm{EM}$ is constrained to a few parts in $10^{15}$ of $c$.</li>
+<li><strong>A dynamics.</strong> An action coupling $\mathbb{M}_+$ and $\mathbb{M}_-$ beyond the Lorentz rotor. This is the most natural completion of the framework's own hypothesis, and it would make the material–informational candidate real. The task is to write the coupling, quantize it, and compute the leading observable.</li>
+<li><strong>A selection principle.</strong> A boundary or quantization condition, or a symmetry, that singles out one structure among the many the algebra permits. The curved-spacetime construction illustrates the need: the frame field is inserted by hand and every Lorentzian metric is representable, so the algebra excludes nothing and predicts nothing there.</li>
+</ol>
+<p>In each route the decisive question is whether the new input is <strong>forced</strong> by the algebra or <strong>inserted</strong>. If forced, the signature tests the framework; if inserted, it tests the insertion, and the framework's contribution is the language in which the insertion is written — a real contribution, but not an empirical signature of the algebra.</p>
+<p><strong>Two lower-risk projects.</strong> First, a systematic search for dimensionless consistency relations: any relation among standard parameters that the algebra implies and the standard formalism does not. This needs no new scale and would be immediately testable against constants known to many digits. Second, examine whether the local-complex-structure reading can differ from the standard reading where the standard dielectric response is itself non-local or strongly dispersive; the burden there is to exhibit a difference, not to reinterpret a standard result.</p>
+<p><strong>A standing obligation and the honest outcome.</strong> Because the framework is a reformulation, its equivalence should be re-examined domain by domain as new domains are developed: an article that <em>derives</em> rather than transcribes a standard result, or that finds the algebra forcing a number, would change the status of its domain. At present, however, the framework makes no prediction that distinguishes it from standard physics. Every candidate signature examined here traces to a quantity that is absent, undetermined, or posited; the agreements are agreements with the standard structures the framework shares; and the distinctive content enters no computation. The agenda is to derive a framework-specific quantity — most plausibly from a specified sector coupling or a forced dimensionless relation — or to establish that the algebra cannot produce one, a result about the framework as valuable as a signature.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion framework is a reformulation of standard physics, and on every domain the companion articles have developed it is currently empirically equivalent to what it reformulates: the single-qubit formalism, relativistic kinematics, Maxwell and Dirac theory, the hydrogen spectrum, the Casimir force, and the Unruh effect are all reproduced, not modified. This equivalence is structural. The framework's established content — the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, the material sector $\mathbb{M}_-\cong\mathbb{R}^{3,1}$, the Hermitian sector $\mathbb{M}_+$ — is shared with the standard formalism, while its distinctive additions are interpretive labels that enter no formula producing a number. Any quantity fixed by the algebra alone is fixed identically by the standard theory, so a signature requires a non-algebraic input: a scale, a coupling, or a selection principle.</p>
+<p>The candidates examined here supply none. Modified dispersion has no scale in the framework to act on, and the bounds that would test it (a linear Lorentz-violation scale above the Planck scale; $v_\mathrm{GW}-v_\mathrm{EM}$ within a few parts in $10^{15}$ of $c$) constrain only proposals that supply a scale. The local complex structure is a re-reading of the standard medium speed $c=1/\sqrt{\epsilon\mu}$. Birefringence and a second light cone are foreclosed by the single norm form. A material–informational coupling is unspecified — no field, no action, no constant — and is the framework's largest gap. Quaternionic quantum-statistical deviations are unavailable, because the algebra is complex and associative. Derived dimensionless relations, the one class that needs no new scale, are absent. And the celebrated reproductions — $g=2$, the hydrogen spectrum, the Casimir force, the Unruh temperature — are reproductions of standard results.</p>
+<p>The main result is therefore negative, and meant to be: the framework currently makes no distinguishing prediction. The agenda is to specify and quantize the sector coupling and compute its leading observable, to search for a dimensionless relation the algebra forces, and to test whether the local complex structure can differ from the standard dielectric response in a regime the standard theory does not cover. In each case the decisive question is whether the input is forced by the algebra or inserted; only the first yields a signature of the framework, and only such a signature could settle the hypothesis.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0=1,e_1,e_2,e_3$</td>
+<td>Quaternion basis, $e_k^2=-e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace (material sector)</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (informational sector)</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
+<td>Norm form (single quadratic form on $\mathbb{B}$)</td>
+</tr>
+<tr>
+<td>$c=1/\sqrt{\epsilon\mu}$</td>
+<td>Local speed of light in the medium</td>
+</tr>
+<tr>
+<td>$c_0=1/\sqrt{\epsilon_0\mu_0}$</td>
+<td>Vacuum speed of light</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}$, $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$</td>
+<td>Biquaternionic gradient, d'Alembertian</td>
+</tr>
+<tr>
+<td>$\tilde{P}_\pm=\tfrac12(e_0\pm i\hat{\mu})$</td>
+<td>Idempotent (pure state)</td>
+</tr>
+<tr>
+<td>$\tilde{H}=h_0e_0+i\mathbf{h}$</td>
+<td>Hermitian element (observable)</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>Trace formula (Born rule)</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\cong M_2(\mathbb{C})$</td>
+<td>The algebra is the standard complex $2\times2$ algebra</td>
+</tr>
+<tr>
+<td>$SL(2,\mathbb{C})$</td>
+<td>Unit-norm-form biquaternions (Lorentz double cover)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Biquaternion Universe</em>, for the framework hypothesis and its list of open questions.</li>
+<li><em>Why Complexify Spacetime?</em>, for the motivation of the complex structure and its explicit disclaimer of empirical predictions.</li>
+<li><em>The Anti-Hermitian Subspace M- as the Material Sector</em>, for the identification of the four-vector sector and its signature.</li>
+<li><em>The Hermitian Subspace M+ as the Informational Sector</em>, for the informational hypothesis, the disclaimer that the imaginary directions are not extra space, and the admission that it makes no distinguishing prediction.</li>
+<li><em>Quantum Mechanics in Biquaternionic Form</em>, for the exact reproduction of the single-qubit formalism.</li>
+<li><em>Relativistic Mechanics in Biquaternionic Form</em>, for the transcription of the ten mechanical formulas.</li>
+<li><em>The Electron in Biquaternionic Form</em>, for the tree-level $g=2$ and the absence of the anomaly.</li>
+<li><em>The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</em>, for the quoted spectrum and the missing derivation.</li>
+<li><em>The Vacuum State and the Casimir Effect in Biquaternionic Form</em>, for a standard result reproduced and explicitly not modified.</li>
+<li><em>The Unruh Effect in Biquaternionic Form</em>, for a reformulation with no discriminator.</li>
+<li><em>Gravitational Waves in Biquaternionic Form</em>, for the explicit statement that no deviation is predicted.</li>
+<li><em>Canonical Quantization of the Biquaternion Maxwell Field</em>, for what the algebra does and does not supply in quantization.</li>
+<li><em>Chiral Fermions in the Biquaternion Framework</em>, for the framework's vector-like abelian sector and its absent prediction.</li>
+<li><em>Electromagnetism in Media — The Local Complex Structure at Work</em>, for the local complex structure as a reading of the standard medium parameter $c$.</li>
+<li><em>The Renormalization Group in Biquaternionic Form</em>, for the explicit statement that the scale and the couplings are inputs the algebra does not fix.</li>
+<li><em>The CPT Theorem in Biquaternionic Form</em>, for a standard theorem transcribed rather than established.</li>
+<li><em>Entangled Subsystems in the Biquaternion Framework</em>, for the reproduced correlation function and the standard Tsirelson bound.</li>
+<li><em>A Brief History of Biquaternions in Physics</em>, for the distinction between an algebra containing a structure and a physics using it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

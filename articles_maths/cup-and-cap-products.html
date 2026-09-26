@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cup and Cap Products — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cup-and-cap-products"><strong>Cup and Cap Products</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Cohomology with a ring of coefficients is not merely a graded module: it carries a multiplication, the <strong>cup product</strong>, which is defined on cochains by restricting a singular simplex to its front and back faces and multiplying the two values. The product is graded-commutative, natural, and unital, so the direct sum $H^*(X;R)$ is a graded ring — the <strong>cohomology ring</strong> — and this ring is a strictly finer invariant than the graded module of cohomology groups: the two are the same for $S^2 \vee S^4$ and $\mathbb{CP}^2$ in the module sense and different as rings. The companion article <em>Cohomology and the Universal Coefficient Theorem</em> supplies the cohomology groups; the present article supplies the product on them, the <strong>cap product</strong> that pairs cohomology with homology, and the two computational theorems that follow — the <strong>Künneth formula</strong> for a product of spaces, and the resulting computations for the spheres, the projective spaces and the tori.</p>
+<p>The construction is entirely formal. The only input beyond the singular chain complex of <em>Simplicial and Singular Homology</em> is the <strong>Eilenberg–Zilber</strong> comparison of the chains of a product with the tensor product of the chains of the factors, which is what makes the cross product well defined; and the only algebraic input is the $\operatorname{Tor}$ functor of the planned <em>Ext and Tor</em> of Part I, written in parallel, in the Künneth formula for coefficients in a general ring.</p>
+<p>The article does not yet use Poincaré duality: the cap product with a fundamental class, the intersection form and the duality theorem itself lie outside this article. The cap product is defined here because its formal properties — associativity with the cup product, naturality, and the projection formula — are needed wherever cohomology acts on homology, and because it is the operation through which duality is later stated.</p>
+<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$, and all coefficients are in $R$ unless a module $G$ is named. Cohomology is contravariant, $f^*$ is the pullback, and the cohomology of a pair is as in <em>Cohomology and the Universal Coefficient Theorem</em>. The degree of a cohomology class $\varphi$ is written $|\varphi|$.</p>
+<h2 id="the-cup-product">The Cup Product</h2>
+<h3 id="definition-on-cochains">Definition on Cochains</h3>
+<p><strong>Definition.</strong> Let $\varphi \in C^k(X;R)$ and $\psi \in C^l(X;R)$ be singular cochains, and let $\sigma : \Delta_{k+l} \to X$ be a singular $(k+l)$-simplex with vertices $v_0, \ldots, v_{k+l}$. The <strong>front $k$-face</strong> of $\sigma$ is the restriction $\sigma|_{[v_0,\ldots,v_k]}$ and the <strong>back $l$-face</strong> is $\sigma|_{[v_k,\ldots,v_{k+l}]}$, both read as maps of the standard simplex by the canonical affine identification. The <strong>cup product</strong> is the cochain</p>
+<p>$$
+(\varphi \smile \psi)(\sigma) = \varphi\bigl(\sigma|_{[v_0,\ldots,v_k]}\bigr)\cdot\psi\bigl(\sigma|_{[v_k,\ldots,v_{k+l}]}\bigr),
+$$</p>
+<p>extended $R$-linearly, so that $\varphi \smile \psi \in C^{k+l}(X;R)$ and $\smile$ is a bilinear pairing $C^k \times C^l \to C^{k+l}$.</p>
+<p>Note that the two faces share the vertex $v_k$; this overlap is what makes the product associative on the nose at the cochain level and forces the sign in the graded-commutativity relation below.</p>
+<p><strong>Theorem (Leibniz rule).</strong> The coboundary is a graded derivation for the cup product:</p>
+<p>$$
+\delta(\varphi \smile \psi) = (\delta\varphi) \smile \psi + (-1)^{|\varphi|}\, \varphi \smile (\delta\psi).
+$$</p>
+<p>Consequently the cup product of two cocycles is a cocycle, and the product of a cocycle with a coboundary is a coboundary, so $\smile$ descends to a well-defined product</p>
+<p>$$
+\smile : H^k(X;R) \times H^l(X;R) \longrightarrow H^{k+l}(X;R).
+$$</p>
+<p><em>Proof.</em> Evaluate both sides on a singular $(k+l+1)$-simplex $\sigma$. The left side is a signed sum over the facets of $\sigma$ of products of the front and back evaluations; the right side expands by the boundary formula, and the terms with the omitted vertex in the interior of $[v_0,\ldots,v_k]$ regroup into the first summand, those with the omitted vertex in the interior of $[v_k,\ldots,v_{k+l}]$ into the second with the sign $(-1)^k$ emerging from the index shift, and the two terms at the shared vertex $v_k$ cancel between the two summands. $\square$</p>
+<h3 id="properties">Properties</h3>
+<p><strong>Theorem.</strong> The cup product is associative, unital and graded-commutative, and it is natural. Precisely:</p>
+<ol>
+<li>$(\varphi \smile \psi) \smile \theta = \varphi \smile (\psi \smile \theta)$;</li>
+<li>there is a unit $1 \in H^0(X;R)$, the class of the cocycle sending every singular $0$-simplex to $1 \in R$, with $1 \smile \varphi = \varphi \smile 1 = \varphi$;</li>
+<li>$\varphi \smile \psi = (-1)^{|\varphi||\psi|}\, \psi \smile \varphi$;</li>
+<li>for a continuous map $f : X \to Y$, $f^*(\varphi \smile \psi) = f^*\varphi \smile f^*\psi$.</li>
+</ol>
+<p><em>Proof.</em> Associativity is the identity of the front and back face decompositions of a simplex into three consecutive blocks: both sides evaluate a triple $(\varphi,\psi,\theta)$ at the three blocks $[v_0..v_k]$, $[v_k..v_{k+l}]$, $[v_{k+l}..v_{k+l+m}]$ of a simplex, the only difference being the order in which the restrictions are taken, and the face maps commute. Unitality is the observation that the front $0$-face of any simplex is its initial vertex. Graded commutativity is proved by a chain homotopy: the <strong>shuffle map</strong> $\rho : C_{k+l}(X) \to C_{k+l}(X)$ sending a simplex to the alternating sum of the $(k,l)$-shuffles satisfies $\rho \simeq (-1)^{kl}\mathrm{id}$, and comparing $\varphi \smile \psi$ with $\psi \smile \varphi$ precomposed with $\rho$ gives the sign. Naturality is immediate from $f_\#(\sigma) = f \circ \sigma$ and the definition. $\square$</p>
+<p><strong>Corollary.</strong> $H^*(X;R)$ is an associative graded ring with unit, and the cup product makes it a graded-commutative algebra: for classes $x$ of even degree, $x \smile y = y \smile x$, and for $x$ of odd degree, $x \smile x = -x \smile x$, so $2(x \smile x) = 0$ and $x \smile x = 0$ when $R$ has no $2$-torsion.</p>
+<p><strong>Remark.</strong> Graded commutativity with the sign $(-1)^{kl}$ is the Koszul sign rule of the graded algebra of Part I; the cohomology ring is thus a graded-commutative $R$-algebra, and the structure theory of such algebras — free algebras, divided powers, Koszul duality — applies to it. The exterior algebra $\Lambda(V)$ of <em>The Exterior Algebra</em> is the model: the cohomology of a torus is an exterior algebra on odd classes, as computed below.</p>
+<h3 id="relative-version-and-the-pairing-with-coefficients">Relative Version and the Pairing with Coefficients</h3>
+<p><strong>Definition.</strong> For a pair $(X,A)$ the cup product is defined on relative cochains by the same formula, and gives</p>
+<p>$$
+\smile : H^k(X,A;R) \times H^l(X;R) \to H^{k+l}(X,A;R), \qquad \smile : H^k(X;R) \times H^l(X,A;R) \to H^{k+l}(X,A;R),
+$$</p>
+<p>the relative class being the one that must be supported away from $A$. Combining the two gives $H^k(X,A;R) \times H^l(X,A;R) \to H^{k+l}(X,A;R)$ only when the two classes have disjoint supports in the sense of the diagonal approximation; the general statement uses the <strong>cross product</strong> below.</p>
+<h2 id="the-cap-product">The Cap Product</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $\varphi \in C^k(X;R)$ be a cochain and $\sigma : \Delta_n \to X$ a singular $n$-simplex with $n \geq k$ and vertices $v_0,\ldots,v_n$. The <strong>cap product</strong> is the chain</p>
+<p>$$
+\sigma \frown \varphi = \varphi\bigl(\sigma|_{[v_0,\ldots,v_k]}\bigr)\cdot \sigma|_{[v_k,\ldots,v_n]},
+$$</p>
+<p>extended $R$-linearly to $\frown : C_n(X;R) \times C^k(X;R) \to C_{n-k}(X;R)$. The back face is the singular $(n-k)$-simplex $\Delta_{n-k} \to X$ obtained by the canonical identification with $[v_k,\ldots,v_n]$.</p>
+<p><strong>Theorem (the boundary rule).</strong> For $\varphi \in C^k(X;R)$ and $c \in C_n(X;R)$,</p>
+<p>$$
+\partial(c \frown \varphi) = (-1)^k\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr).
+$$</p>
+<p>Hence $\frown$ descends to a pairing</p>
+<p>$$
+\frown : H_n(X;R) \times H^k(X;R) \longrightarrow H_{n-k}(X;R), \qquad (\text{class of } c) \frown (\text{class of } \varphi) = \text{class of } c \frown \varphi,
+$$</p>
+<p>which is well defined because a cycle capped with a cocycle is a cycle and a boundary capped with a cocycle, or a cycle capped with a coboundary, is a boundary.</p>
+<p><em>Proof.</em> Evaluate the boundary of the chain $c \frown \varphi$ on the facets of a simplex. The facets not containing the block $[v_0..v_k]$ reassemble into $(\partial c) \frown \varphi$, and those meeting the block into $c \frown \delta\varphi$; the signs collected from the boundary formula give $(-1)^k$ and the stated difference. $\square$</p>
+<h3 id="properties_1">Properties</h3>
+<p><strong>Theorem.</strong> The cap product satisfies:</p>
+<ol>
+<li><strong>Associativity with the cup product:</strong> for $c \in H_n(X;R)$, $\varphi \in H^k(X;R)$ and $\psi \in H^l(X;R)$,
+   $$c \frown (\varphi \smile \psi) = (c \frown \varphi) \frown \psi;$$</li>
+<li><strong>Naturality:</strong> for a continuous map $f : X \to Y$, $f_\#(c \frown f^*\varphi) = f_\#(c) \frown \varphi$;</li>
+<li><strong>Projection formula:</strong> $f_*(f^*(c') \frown \varphi) = c' \frown f_*\varphi$ for $c' \in H_*(Y;R)$;</li>
+<li>the unit acts trivially: $c \frown 1 = c$.</li>
+</ol>
+<p><em>Proof.</em> All four are verified at the cochain level by the same face-decomposition computation as the Leibniz rule; the second and third are the statements that $f_\#$ is a module map over the cochain pullback $f^\#$ for the cap pairing, which follows from $f_\#(\sigma \frown f^\#\psi) = f_\#(\sigma) \frown \psi$ applied simplex by simplex. $\square$</p>
+<p><strong>Corollary.</strong> For each $k$, the cap product makes $H_*(X;R)$ a graded module over the graded ring $H^*(X;R)$: the assignment $(c,\varphi) \mapsto c \frown \varphi$ is a graded bilinear pairing with $c \frown (\varphi \smile \psi) = (c \frown \varphi) \frown \psi$. This module structure is the algebraic object whose properties Poincaré duality describes.</p>
+<h2 id="the-kunneth-formula">The Künneth Formula</h2>
+<h3 id="the-cross-product">The Cross Product</h3>
+<p><strong>Definition.</strong> Let $X$ and $Y$ be spaces, with projections $\mathrm{pr}_1 : X\times Y \to X$ and $\mathrm{pr}_2 : X \times Y \to Y$. The <strong>Eilenberg–Zilber chain map</strong> is the natural chain map</p>
+<p>$$
+\Xi : C_*(X;R) \otimes_R C_*(Y;R) \longrightarrow C_*(X \times Y;R)
+$$</p>
+<p>sending $\sigma \otimes \tau$ to the chain obtained by composing $x \mapsto (\sigma(x),\tau(y))$ with a fixed subdivision of the product of standard simplices $\Delta_i \times \Delta_j$ into $(i+j)$-simplices, the <strong>shuffle</strong> subdivision. The <strong>homology cross product</strong> is the induced map</p>
+<p>$$
+\times : H_i(X;R) \otimes_R H_j(Y;R) \longrightarrow H_{i+j}(X\times Y;R), \qquad c \times d = \Xi_*(c \otimes d),
+$$</p>
+<p>and the <strong>cohomology cross product</strong> is</p>
+<p>$$
+\times : H^i(X;R) \times H^j(Y;R) \longrightarrow H^{i+j}(X\times Y;R), \qquad \varphi \times \psi = \mathrm{pr}_1^*\varphi \smile \mathrm{pr}_2^*\psi.
+$$</p>
+<p><strong>Theorem.</strong> The Eilenberg–Zilber map is a chain map and a chain homotopy equivalence, natural in both variables, so the cross products are well defined and associative; and the two are related by the cap product.</p>
+<p><strong>Remark.</strong> The subdivision of $\Delta_i \times \Delta_j$ into $(i+j)!/(i!j!)$ simplices is the combinatorial input; the theorem of Eilenberg and Zilber is that the resulting chain map is natural and a homotopy equivalence, which is the statement that the graded module $H_*(X\times Y)$ is computed from $H_*(X)$ and $H_*(Y)$ up to the correction of the next theorem.</p>
+<h3 id="the-kunneth-formula_1">The Künneth Formula</h3>
+<p><strong>Theorem (Künneth).</strong> Let $X$ and $Y$ be topological spaces and let $R$ be a principal ideal domain. For each $n$ there is a short exact sequence of $R$-modules</p>
+<p>$$
+0 \to \bigoplus_{i+j=n} H_i(X;R) \otimes_R H_j(Y;R) \xrightarrow{\ \times\ } H_n(X\times Y;R) \to \bigoplus_{i+j=n-1} \operatorname{Tor}_1^R\bigl(H_i(X;R), H_j(Y;R)\bigr) \to 0,
+$$</p>
+<p>which splits, though not naturally. Its middle term is the cokernel of the multiplication by the Tor term, and the isomorphism</p>
+<p>$$
+H_n(X\times Y;R) \cong \Bigl(\bigoplus_{i+j=n} H_i(X;R)\otimes_R H_j(Y;R)\Bigr) \oplus \Bigl(\bigoplus_{i+j=n-1}\operatorname{Tor}_1^R(H_i(X),H_j(Y))\Bigr)
+$$</p>
+<p>is non-natural. The functor $\operatorname{Tor}_1^R$ is the one of Part I's <em>Ext and Tor</em>, written in parallel.</p>
+<p><em>Proof sketch.</em> For each $n$ the Eilenberg–Zilber map gives a natural map $\bigoplus_{i+j=n}H_i(X)\otimes H_j(Y) \to H_n(X\times Y)$, and the cokernel is the Tor term; the argument is the algebraic Künneth theorem for chain complexes of free modules over a principal ideal domain, applied to $C_*(X;R)\otimes_R C_*(Y;R) \to C_*(X\times Y;R)$. $\square$</p>
+<p><strong>Corollary (field coefficients).</strong> If $R = F$ is a field then $\operatorname{Tor}_1^F = 0$, so the cross product is an isomorphism</p>
+<p>$$
+\bigoplus_{i+j=n} H_i(X;F)\otimes_F H_j(Y;F) \xrightarrow{\ \cong\ } H_n(X\times Y;F),
+$$</p>
+<p>and dually, for cohomology, $H^*(X\times Y;F) \cong H^*(X;F)\otimes_F H^*(Y;F)$ as graded rings. For a principal ideal domain with one factor of finite type, the Tor term vanishes if either factor's homology is free.</p>
+<p><strong>Corollary (tori).</strong> For the $n$-torus $T^n = (S^1)^n$, over a field $F$ the Künneth formula iterates to give</p>
+<p>$$
+\dim_F H_k(T^n;F) = \binom{n}{k},
+$$</p>
+<p>so $\chi(T^n) = 0$ for $n \geq 1$; over $\mathbb{Z}$ the homology is free of rank $\binom{n}{k}$, and the cohomology ring is the exterior algebra $H^*(T^n;\mathbb{Z}) \cong \Lambda_{\mathbb{Z}}(\alpha_1,\ldots,\alpha_n)$ on classes $\alpha_i$ of degree one, a graded-commutative ring in which $\alpha_i \smile \alpha_j = -\alpha_j \smile \alpha_i$ and $\alpha_i^2 = 0$.</p>
+<h2 id="computations">Computations</h2>
+<h3 id="the-projective-spaces">The Projective Spaces</h3>
+<p><strong>Theorem.</strong> For the complex projective space,</p>
+<p>$$
+H^*(\mathbb{CP}^n;\mathbb{Z}) \cong \mathbb{Z}[x]/(x^{n+1}), \qquad |x| = 2,
+$$</p>
+<p>with $x$ the class dual to a hyperplane, and the ring is a truncated polynomial algebra on a single even generator. For the real projective space,</p>
+<p>$$
+H^*(\mathbb{RP}^n;\mathbb{Z}/2) \cong (\mathbb{Z}/2)[x]/(x^{n+1}), \qquad |x| = 1,
+$$</p>
+<p>a truncated polynomial algebra on an odd generator over $\mathbb{Z}/2$; integrally the cohomology is $\mathbb{Z}$ in degrees $0$ and $n$ (the latter for $n$ odd) and $\mathbb{Z}/2$ in the odd degrees below $n$.</p>
+<p><em>Proof.</em> The cell structure of <em>CW Complexes and Cellular Approximation</em> has one cell in each even degree up to $2n$ for $\mathbb{CP}^n$ and one in each degree up to $n$ for $\mathbb{RP}^n$, with all cellular coboundaries zero for $\mathbb{CP}^n$ and the duals of multiplication by $1+(-1)^k$ for $\mathbb{RP}^n$; hence the additive groups are as stated. The ring structure is determined by the fact that the generator $x$ in degree $2$ (respectively degree $1$) has nonzero $k$-th power in degree $2k \leq 2n$ (respectively $k \leq n$), because the top class is the dual of the top cell and is a product of lower classes; the nonvanishing is computed by evaluating $x^k$ on the fundamental class of the appropriate $\mathbb{CP}^k \subseteq \mathbb{CP}^n$. $\square$</p>
+<p><strong>Remark.</strong> The cup product therefore distinguishes $\mathbb{CP}^2$ from $S^2 \vee S^4$: both have $\mathbb{Z}$ in degrees $0,2,4$ and zero elsewhere, but in the cohomology ring of $\mathbb{CP}^2$ the degree-two generator squares to the degree-four generator while in the wedge the product of the two generators is zero. The ring is a strictly finer invariant than the graded group.</p>
+<h3 id="products-of-spheres-and-the-hopf-map">Products of Spheres and the Hopf Map</h3>
+<p><strong>Example.</strong> For $S^m \times S^n$ with $m,n \geq 1$ and field coefficients, the Künneth formula gives $H^k \cong F$ for $k \in \{0,m,n,m+n\}$ with the multiplicity of $m=n$ accounted for, and zero otherwise. For $m \neq n$ the cohomology ring is the graded tensor product $\bigwedge(\alpha_m)\otimes\bigwedge(\beta_n)$ on generators of degrees $m$ and $n$, and both generators square to zero: the only class of degree $m$ is $\alpha_m = x\otimes 1$ with $x^2 = 0$ in $H^*(S^m)$, and likewise for $\beta_n$. For $m = n$ the ring is $\bigwedge(\alpha)\otimes\bigwedge(\beta)$ on two generators of the same degree $m$, still with $\alpha^2 = \beta^2 = 0$ and with $\alpha\beta$ generating the one-dimensional $H^{2m}$; a class $a\alpha + b\beta$ then has square $(a\alpha+b\beta)^2 = ab(\alpha\beta+\beta\alpha) = ab(1+(-1)^m)\alpha\beta$, which vanishes for $m$ odd and equals $2ab\,\alpha\beta$ for $m$ even, so that squares of degree-$m$ classes are nonzero in characteristic not $2$ although the generators are not.</p>
+<p><strong>Example (the Hopf map and $\mathbb{CP}^2$).</strong> The quotient $S^3 \to S^2$ has fibre $S^1$; the associated disc bundle, glued with a $4$-disc, produces $\mathbb{CP}^2$ as the mapping cone of the Hopf map, and this gives a second computation of its cohomology ring from the cell structure with cells in degrees $0,2,4$ and the relation $x^2 = y$. The construction of the Hopf fibration and the general theory of fibrations belong .</p>
+<h3 id="ring-structures-and-the-classification-of-surfaces">Ring Structures and the Classification of Surfaces</h3>
+<p><strong>Example (the torus and the spheres).</strong> The cohomology ring of the $n$-torus is the exterior algebra on $n$ generators of degree one,</p>
+<p>$$
+H^*(T^n;\mathbb{Z})\cong\bigwedge\nolimits_{\mathbb{Z}}(\alpha_1,\dots,\alpha_n),\qquad \alpha_i\alpha_j = -\alpha_j\alpha_i,
+$$</p>
+<p>which is the Künneth computation of the circle $H^*(S^1) = \mathbb{Z}\oplus\mathbb{Z}[1]$; for $n = 2$ the ring is generated by $\alpha,\beta$ with $\alpha^2 = \beta^2 = 0$ and $\alpha\beta = -\beta\alpha$ the generator of $H^2(T^2;\mathbb{Z})$. For the sphere, $H^*(S^n;\mathbb{Z})$ has $x^2 = 0$ for the degree-$n$ generator, since $x^2$ would lie in $H^{2n}(S^n) = 0$; and for the projective spaces the rings are $\mathbb{Z}[x]/(x^{n+1})$ with $\deg x = 2$ and $\mathbb{F}_2[x]/(x^{n+1})$ with $\deg x = 1$, whose truncated polynomial form makes the cohomology ring a genuinely finer invariant than the Betti numbers.</p>
+<p><strong>Example (three spaces with the same Betti numbers).</strong> The spaces $S^2\vee S^2\vee S^4$, $S^2\times S^2$ and $\mathbb{CP}^2\vee S^2$ all have Betti numbers $b_0 = b_4 = 1$, $b_2 = 2$ and $b_1 = b_3 = 0$, and their cohomology rings are pairwise non-isomorphic. For the wedge, the cohomology is the direct sum of the reduced cohomologies of the summands with all products of classes from different summands zero, and $a^2 = 0$ for $a$ of degree two, because $a^2$ would lie in $H^4(S^2) = 0$; hence every product of two degree-two classes vanishes. For the product, the Künneth formula gives $H^*(S^2\times S^2) = \bigwedge(\alpha,\beta)$ with $\alpha^2 = \beta^2 = 0$ and $\alpha\beta$ a generator of $H^4$, so some products vanish and one does not. For $\mathbb{CP}^2\vee S^2$ the class $x$ coming from $\mathbb{CP}^2$ satisfies $x^2\neq0$ while the class $y$ from the sphere satisfies $y^2 = xy = 0$. The three rings are therefore pairwise distinct and the cup product separates the three spaces, although the Betti numbers, and hence the additive cohomology, do not.</p>
+<p><strong>Example (non-orientable surfaces and $\mathbb{Z}/2$ coefficients).</strong> With $\mathbb{Z}/2$ coefficients the graded-commutativity loses its sign and the rings simplify: $H^*(\mathbb{RP}^n;\mathbb{Z}/2) = \mathbb{F}_2[x]/(x^{n+1})$ with $\deg x = 1$, so the ring detects the projective dimension. For a closed connected non-orientable surface $N_g$ — the connected sum of $g$ projective planes, so that $H_1(N_g;\mathbb{Z}) = \mathbb{Z}^{g-1}\oplus\mathbb{Z}/2$ — the classes $u_1,\dots,u_g$ of degree one dual to the $g$ circles $\mathbb{RP}^1$ of the summands satisfy</p>
+<p>$$
+u_iu_j = 0\ (i\neq j),\qquad u_i^2 = \gamma\neq 0,
+$$</p>
+<p>where $\gamma$ generates $H^2(N_g;\mathbb{Z}/2)\cong\mathbb{Z}/2$; all the squares are equal because $H^2$ is one-dimensional. The relations are the mod-2 intersection numbers of the dual curves: the $g$ circles lie in different summands and can be made disjoint, so the off-diagonal products vanish, while a projective line in a projective plane has mod-2 self-intersection one, so the squares do not. The pairing is nondegenerate, as Poincaré duality requires. Over $\mathbb{Z}$ the same surface has $H^1(N_g;\mathbb{Z})\cong\mathbb{Z}^{g-1}\oplus\mathbb{Z}/2$ and, by the universal coefficient theorem, $H^2(N_g;\mathbb{Z})\cong\mathbb{Z}/2$; the integral invariants are therefore determined by $g$ additively, and the mod-2 ring exhibits the product structure explicitly.</p>
+<h3 id="the-cap-product-in-low-degrees">The Cap Product in Low Degrees</h3>
+<p><strong>Example.</strong> For a path-connected space $X$ and a class $\varphi \in H^1(X;R)$ represented by a cocha, the cap product with $\varphi$ is a derivation-like operation $H_n(X;R) \to H_{n-1}(X;R)$; when $\varphi$ is the class dual to a map $X \to S^1$, the cap product with $\varphi$ is the homology operation induced by the corresponding infinite cyclic cover, and it computes the twisted homology that appears in the Leray–Serre theory. The systematic statement uses the fundamental class and Poincaré duality and is given.</p>
+<p><strong>Remark.</strong> The cap product is the operation through which a cohomology class acts on homology, and it is therefore the algebraic form of the statement that a cohomology class is a family of subvarieties or of level sets. In the geometric articles of this corpus — the homology of the classical groups, the characteristic classes of <em>Fibre Bundles, Connections and Curvature</em>, and the intersection form of Poincaré duality — it is used exactly in this sense.</p>
+<h2 id="summary">Summary</h2>
+<p>The cup product is defined on singular cochains by multiplying the evaluations on the front and back faces of a simplex; the coboundary is a graded derivation for it, so it descends to cohomology. The resulting product is associative, unital, graded-commutative with the Koszul sign $(-1)^{|\varphi||\psi|}$, and natural under pullback, so $H^*(X;R)$ is a graded-commutative $R$-algebra, a strictly finer invariant than the graded module of cohomology groups. The cap product pairs a cohomology class of degree $k$ with a homology class of degree $n$ to give one of degree $n-k$; it satisfies the boundary rule with the sign $(-1)^k$, is associative with the cup product, is natural, and obeys the projection formula, so $H_*(X;R)$ is a graded module over the ring $H^*(X;R)$.</p>
+<p>The Eilenberg–Zilber chain equivalence relates the chains of a product to the tensor product of the chains of the factors, and the Künneth formula states the resulting split short exact sequence with a tensor term and a $\operatorname{Tor}$ term; over a field the Tor term vanishes and the cross product is an isomorphism of graded rings. The computations that follow are the cohomology rings of the spheres, of the tori — an exterior algebra on odd generators — and of the projective spaces — a truncated polynomial algebra on one even generator over $\mathbb{Z}$ for $\mathbb{CP}^n$, and on one odd generator over $\mathbb{Z}/2$ for $\mathbb{RP}^n$ — and these distinguish spaces whose cohomology groups agree.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity $1 \neq 0$; also the coefficient ring</td>
+</tr>
+<tr>
+<td>$\varphi, \psi, \theta$</td>
+<td>Cochains or cohomology classes; $|\varphi|$ the degree</td>
+</tr>
+<tr>
+<td>$\smile$</td>
+<td>Cup product; $C^k \times C^l \to C^{k+l}$, $H^k \times H^l \to H^{k+l}$</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>Coboundary; a graded derivation for $\smile$</td>
+</tr>
+<tr>
+<td>$\frown$</td>
+<td>Cap product; $C_n \times C^k \to C_{n-k}$, $H_n \times H^k \to H_{n-k}$</td>
+</tr>
+<tr>
+<td>$H^*(X;R)$</td>
+<td>Graded cohomology ring; associative, unital, graded-commutative</td>
+</tr>
+<tr>
+<td>$(-1)^{kl}$</td>
+<td>Koszul sign; $\varphi \smile \psi = (-1)^{|\varphi||\psi|}\psi \smile \varphi$</td>
+</tr>
+<tr>
+<td>$\times$</td>
+<td>Cross product in homology and in cohomology</td>
+</tr>
+<tr>
+<td>Eilenberg–Zilber</td>
+<td>Chain equivalence $C_*(X)\otimes C_*(Y) \to C_*(X\times Y)$</td>
+</tr>
+<tr>
+<td>Künneth sequence</td>
+<td>$0 \to \bigoplus_{i+j=n}H_i\otimes H_j \to H_n(X\times Y) \to \bigoplus_{i+j=n-1}\operatorname{Tor}_1(H_i,H_j) \to 0$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tor}_1^R$</td>
+<td>Torsion functor of Part I, written in parallel; the Künneth correction</td>
+</tr>
+<tr>
+<td>$x \in H^2(\mathbb{CP}^n;\mathbb{Z})$</td>
+<td>Generator; $H^*(\mathbb{CP}^n;\mathbb{Z}) \cong \mathbb{Z}[x]/(x^{n+1})$</td>
+</tr>
+<tr>
+<td>$x \in H^1(\mathbb{RP}^n;\mathbb{Z}/2)$</td>
+<td>Generator; $H^*(\mathbb{RP}^n;\mathbb{Z}/2) \cong (\mathbb{Z}/2)[x]/(x^{n+1})$</td>
+</tr>
+<tr>
+<td>$\Lambda_R(\alpha_1,\ldots,\alpha_n)$</td>
+<td>Exterior algebra; $H^*(T^n;R)$ for $R$ a field or $\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$T^n = (S^1)^n$</td>
+<td>The $n$-torus</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the cup and cap products, the Künneth formula and the cohomology rings of the classical examples.</li>
+<li>Samuel Eilenberg and Norman Steenrod, <em>Foundations of Algebraic Topology</em> (Princeton University Press, 1952), for the original construction of the products and the axioms they satisfy.</li>
+<li>James R. Munkres, <em>Elements of Algebraic Topology</em> (Addison-Wesley, 1984), for the shuffle argument giving graded commutativity.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the de Rham counterpart, in which the cup product is the wedge of forms.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for the algebraic Künneth theorem and the role of $\operatorname{Tor}$.</li>
+<li>Edwin H. Spanier, <em>Algebraic Topology</em> (McGraw–Hill, 1966), for the relative products and the cap product with local coefficients.</li>
+<li>Glen E. Bredon, <em>Topology and Geometry</em> (Springer, 1993), for the comparison of the ring structures and the applications to manifolds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

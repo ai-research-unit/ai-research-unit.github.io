@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Differential-Algebraic Equations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="differential-algebraic-equations"><strong>Differential-Algebraic Equations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A differential-algebraic equation is a system of relations among the unknown and its derivatives in which some relations are differential and some are purely algebraic. The unknown is therefore split, implicitly or explicitly, into a part that is governed by a differential equation and a part that at every instant is determined by the others through a constraint. The equations are the general implicit form of an ordinary differential equation, written $F(t,y,y')=0$ rather than $y' = f(t,y)$, and the difficulty is exactly that in general $F$ cannot be solved for $y'$: the derivative occurs in some equations only in combination with an algebraic relation, and the constraint may have to be differentiated before the system becomes an equation for the derivatives of all components.</p>
+<p>The subject is the theory of that solvability. Its central invariant is the <strong>index</strong>, a nonnegative integer measuring how many differentiations of the constraints are needed before the system determines every derivative, equivalently how far the system is from being an ordinary equation, and equivalently how many derivatives of the inhomogeneity enter the solution. The index governs everything: whether an initial value is admissible, whether the solution depends continuously on the data, whether the problem is well posed for a numerical method, and how the solution responds to a perturbation of the constraint. A system of index one behaves like an ordinary equation with a parameter determined by an implicit equation; a system of index two or more is genuinely different, its solution containing derivatives of the data and its initial conditions overdetermined.</p>
+<p>The setting is the finite-dimensional one, a state space $\mathbb{K}^n$ with $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, because the index theory is a theory of matrices and of the implicit function theorem, and the Jordan and Kronecker forms of Part I are the algebraic input. Where a result extends to a Banach space it is said so. The ordinary theory of <em>Ordinary Differential Equations</em> and the implicit function theorem of the differential calculus on normed spaces are assumed, and the constrained mechanical system that is the standard source of the subject is treated as an example of the general theory. The Lagrangian and Hamiltonian formulation of that example, and the variational reading of the constraints, belong to the article of this Part on Lagrangian and Hamiltonian systems, which is written in parallel and continues the example there.</p>
+<h2 id="implicit-equations-and-the-notion-of-index">Implicit Equations and the Notion of Index</h2>
+<h3 id="the-implicit-and-semi-explicit-forms">The Implicit and Semi-Explicit Forms</h3>
+<p><strong>Definition.</strong> Let $F : \mathbb{R}\times\mathbb{K}^n\times\mathbb{K}^n \to \mathbb{K}^n$ be a function. The <strong>implicit differential equation</strong> determined by $F$ is</p>
+<p>$$
+F(t, y, y') = 0 .
+$$</p>
+<p>It is a <strong>differential-algebraic equation</strong> if the partial derivative $F_{y'}$ is everywhere singular on the solution set, so that the equation cannot be solved for $y'$ by the implicit function theorem. The system is <strong>semi-explicit</strong> if it can be written</p>
+<p>$$
+y_1'(t) = f\bigl(t, y_1(t), y_2(t)\bigr), \qquad 0 = g\bigl(t, y_1(t), y_2(t)\bigr),
+$$</p>
+<p>with $y_1 \in \mathbb{K}^{n_1}$ the <strong>differential variables</strong> and $y_2 \in \mathbb{K}^{n_2}$ the <strong>algebraic variables</strong>; it is <strong>linear with constant coefficients</strong> if it has the form</p>
+<p>$$
+E\,y'(t) + A\,y(t) = q(t),
+$$</p>
+<p>with $E, A \in M_n(\mathbb{K})$ and $E$ singular.</p>
+<p>The semi-explicit form is the general local form of a differential-algebraic equation, by the implicit function theorem applied to the equations in which $y'$ does occur: those equations are solved for the derivatives of $n_1$ components, and the remaining equations are the constraints.</p>
+<p><strong>Example (the constrained motion of a particle).</strong> A particle of unit mass constrained to a smooth surface $\{q : g(q)=0\}$ subject to a force $f(q,v)$ obeys</p>
+<p>$$
+q' = v, \qquad v' = f(q,v) - G(q)^{\mathrm{T}}\lambda, \qquad 0 = g(q),
+$$</p>
+<p>where $G = \partial g/\partial q$ and $\lambda$ is the vector of multipliers. The first two equations are differential, the third is the constraint; the unknown $(\lambda, q)$ is determined only through the constraint, and the system is the standard example of a differential-algebraic equation in mechanics, written here purely as a system of equations. The general Lagrangian and Hamiltonian account of constrained systems is the subject of the article of this Part on Lagrangian and Hamiltonian systems.</p>
+<h3 id="differentiation-index">Differentiation Index</h3>
+<p><strong>Definition.</strong> The <strong>differentiation index</strong> of a semi-explicit system at a point is the least number $\nu$ of times the constraint $0 = g(t,y_1,y_2)$ must be differentiated with respect to $t$, using the differential equations to eliminate $y_1'$, until the resulting equations determine $y_2'$ as a continuous function of $(t,y_1,y_2)$. For a linear constant-coefficient system $Ey' + Ay = q$ with regular pencil the differentiation index is the size of the largest nilpotent block in the Kronecker form, and it is written $\nu(E,A)$.</p>
+<p>The definition is local and can vary from point to point; a system has <strong>index $\nu$</strong> on a set if the index is $\nu$ at every point of it. Index zero is the case of an ordinary equation in implicit form. The index is the invariant of the theory, and the sections below compute it in the two cases that matter most.</p>
+<p><strong>Definition.</strong> Two further indices are used when the differentiation index is unsuitable. The <strong>perturbation index</strong> is the least $\nu$ such that, for every sufficiently small perturbation $\delta(t)$ of the equation, the solution satisfies an estimate</p>
+<p>$$
+\|y(t) - y_\delta(t)\| \le C\Bigl(\|\delta\|_\infty + \|\delta'\|_\infty + \cdots + \|\delta^{(\nu-1)}\|_\infty + \int_{t_0}^{t}\|\delta(s)\|\,ds\Bigr),
+$$</p>
+<p>uniformly on compact intervals, and the <strong>tractability index</strong> is a variant computed by a finite sequence of matrix operations on the coefficients. For the linear systems considered here the three generally agree, and the difference between the differentiation index and the perturbation index measures the amplification of a perturbation of the constraint.</p>
+<p><strong>Theorem (the differentiation index counts derivatives of the data).</strong> For a linear system $Ey' + Ay = q(t)$ with regular pencil and index $\nu$, every solution is of the form</p>
+<p>$$
+y = \sum_{k=0}^{\nu-1} c_k\,q^{(k)} + y_{\mathrm{hom}},
+$$</p>
+<p>where the $c_k$ are matrices and $y_{\mathrm{hom}}$ solves the homogeneous system; consequently the solution depends on the first $\nu-1$ derivatives of $q$, and the initial value $y(t_0)$ must satisfy $\nu-1$ consistency conditions for a solution to exist.</p>
+<p><em>Proof.</em> Quoted as standard, and proved in the next section by the Kronecker form. The statement follows from the explicit representation $v = \sum_{k=0}^{\nu-1}(-N)^kq_2^{(k)}$ for the algebraic part; each differentiation of $q_2$ raises the order of the derivative appearing, and there are exactly $\nu-1$ terms because $N^\nu = 0$. $\square$</p>
+<h2 id="the-linear-theory-and-the-kronecker-form">The Linear Theory and the Kronecker Form</h2>
+<h3 id="the-weierstrasskronecker-canonical-form">The Weierstrass–Kronecker Canonical Form</h3>
+<p><strong>Definition.</strong> The <strong>matrix pencil</strong> determined by $E, A$ is the family $\lambda E + A$, and it is <strong>regular</strong> if $\det(\lambda E + A)$ is not identically zero as a polynomial in $\lambda$. For a regular pencil there are invertible matrices $P, Q \in GL_n(\mathbb{K})$ and a decomposition $n = r + s$ with</p>
+<p>$$
+PEQ = \begin{pmatrix} I_r & 0\\ 0 & N\end{pmatrix}, \qquad PAQ = \begin{pmatrix} J & 0\\ 0 & I_s\end{pmatrix},
+$$</p>
+<p>where $J$ is in Jordan form and $N$ is nilpotent with index $\nu$. This is the <strong>Weierstrass–Kronecker form</strong> of the pencil, and $\nu$ is the <strong>index</strong> of the pencil.</p>
+<p><em>Proof.</em> Quoted as standard (the Weierstrass canonical form for regular matrix pencils). The proof is the classification of the modules over $\mathbb{K}[\lambda]$ given by the pencil, using the structure theorem of finitely generated modules over a principal ideal domain, in the form developed for the Jordan form in Part I; the nilpotent part $N$ is the obstruction to solving for $y'$. $\square$</p>
+<p><strong>Theorem (solution of the linear system).</strong> In the coordinates of the Weierstrass–Kronecker form, write $y = Q(u, v)$ and $q = P^{-1}(q_1, q_2)$. Then the system $Ey' + Ay = q$ is equivalent to the uncoupled system</p>
+<p>$$
+u' + Ju = q_1, \qquad N v' + v = q_2 .
+$$</p>
+<p>The first is an ordinary linear system with the solution of <em>Ordinary Differential Equations</em>. The second is solved by</p>
+<p>$$
+v = \sum_{k=0}^{\nu-1}(-N)^k q_2^{(k)},
+$$</p>
+<p>a finite sum because $N$ is nilpotent of index $\nu$; it involves no free constant, so the value of $v$ is completely determined by $q_2$ and its derivatives, and in particular the initial value $v(t_0)$ must equal $\sum_{k}(-N)^kq_2^{(k)}(t_0)$.</p>
+<p><em>Proof.</em> Multiply the equation $Ey' + Ay = q$ by $P$ and change variable $y = Qw$ to obtain $PEQ w' + PAQ w = Pq$; with $w = (u,v)$ this is the displayed uncoupled system. For the second equation, the identity $v + Nv' = q_2$ gives $v = q_2 - Nv'$ and, differentiating and iterating, the induction</p>
+<p>$$
+v = \sum_{j=0}^{k-1}(-N)^jq_2^{(j)} + (-1)^kN^kv^{(k)} ,
+$$</p>
+<p>which is verified by substituting the case $k$ into $v = q_2 - Nv'$ to obtain the case $k+1$. At $k=\nu$ the last term vanishes because $N^\nu = 0$, giving the stated finite sum. $\square$</p>
+<p><strong>Corollary (index of the constrained particle).</strong> For the constrained particle with constraint $g(q)=0$ of rank $m$ and $G$ of full row rank, the differentiation index is $3$.</p>
+<p><em>Proof.</em> Differentiating $g(q)=0$ once gives $Gv = 0$; differentiating again gives $Gv' + \dot Gv = 0$, and substituting $v' = f - G^{\mathrm{T}}\lambda$ gives $Gf - GG^{\mathrm{T}}\lambda + \dot Gv = 0$, which determines $\lambda$ because $GG^{\mathrm{T}}$ is invertible when $G$ has full row rank; differentiating a third time and eliminating $v''$ and $\dot v$ determines $\lambda'$ as a continuous function of $(q,v)$. Hence the constraint must be differentiated three times before the multiplier derivative is obtained, and the index is $3$. $\square$</p>
+<h3 id="consistency-and-the-hidden-constraints">Consistency and the Hidden Constraints</h3>
+<p><strong>Definition.</strong> The <strong>constraints</strong> of a semi-explicit system are the equations $0 = g(t,y_1,y_2)$; the <strong>hidden constraints</strong> are the equations obtained by differentiating the constraints along solutions and eliminating the derivatives by the differential equations. An initial value is <strong>consistent</strong> if it satisfies the constraints and all the hidden constraints.</p>
+<p><strong>Theorem (index one).</strong> For the semi-explicit system $y_1' = f(t,y_1,y_2)$, $0=g(t,y_1,y_2)$ with $g_{y_2}$ invertible in a neighbourhood of a point $(t_0,y_1^0,y_2^0)$ satisfying $g(t_0,y_1^0,y_2^0)=0$, the constraint can be solved locally for $y_2 = G(t,y_1)$, $y_2^0 = G(t_0,y_1^0)$, and the system becomes the ordinary equation</p>
+<p>$$
+y_1' = f\bigl(t, y_1, G(t,y_1)\bigr) .
+$$</p>
+<p>Hence through every consistent point with $y_2^0 = G(t_0,y_1^0)$ there passes a unique solution; the only consistency condition is the constraint itself.</p>
+<p><em>Proof.</em> The implicit function theorem applied to $g$ in $y_2$ gives $G$ of class $C^1$ with $g(t,y_1,G(t,y_1))=0$; substituting into the differential equation gives an ordinary equation with a locally Lipschitz right-hand side, to which Picard–Lindelöf applies. Every solution of the original system satisfies this equation, and conversely a solution of the reduced equation with $y_2 = G(t,y_1)$ satisfies both the differential equation and the constraint. $\square$</p>
+<p><strong>Example (index one with a hidden constraint of a different kind).</strong> The system $y_1' = y_2$, $0 = y_1 - t^2$ has the constraint $y_1 = t^2$ and the differential equation gives $y_2 = y_1' = 2t$, so the constraint itself already determines $y_2$ and there is no hidden constraint; the index is one. The initial value must satisfy $y_1(t_0) = t_0^2$ and $y_2(t_0) = 2t_0$, and then the solution $(y_1,y_2) = (t^2, 2t)$ is unique.</p>
+<h2 id="higher-index-and-its-consequences">Higher Index and Its Consequences</h2>
+<p>The cases of index two and three are the ones in which the differential-algebraic theory differs from the ordinary theory in kind, and the difference is visible in three places: the number of consistency conditions, the dependence of the solution on derivatives of the data, and the response to perturbations.</p>
+<p><strong>Example (an index-two linear system).</strong> The system</p>
+<p>$$
+y_1' = y_1 + y_2 + q_1(t), \qquad 0 = y_1 + q_2(t)
+$$</p>
+<p>has $n_1 = n_2 = 1$ and constraint $g = y_1 + q_2 = 0$. Differentiating once, $y_1' + q_2' = 0$, and substituting the differential equation gives $y_1 + y_2 + q_1 + q_2' = 0$, which determines $y_2 = -y_1 - q_1 - q_2'$; the second differentiation is needed to get $y_2'$, so the index is two. The solution involves $q_2'$, and the initial value must satisfy the two conditions $y_1(t_0) = -q_2(t_0)$ and $y_2(t_0) = q_2(t_0) - q_1(t_0) - q_2'(t_0)$ rather than one. The matrix form has $E = \begin{pmatrix}1&0\\0&0\end{pmatrix}$, $A = \begin{pmatrix}-1&-1\\1&0\end{pmatrix}$; the determinant of the pencil is the constant $1$, so the pencil is regular with no finite eigenvalue, its Kronecker form consists entirely of a nilpotent block of size two, and the index is two.</p>
+<p><strong>Proposition (sensitivity of an index-two system).</strong> Perturb the index-two system above in the constraint to $0 = y_1 + q_2(t) + \delta(t)$. Then the solution of the perturbed system has $y_{1,\delta} = -q_2 - \delta$, and, when $\delta$ is differentiable,</p>
+<p>$$
+y_{2,\delta} = -q_1 - q_2' - \delta' - y_{1,\delta},
+$$</p>
+<p>so that</p>
+<p>$$
+\|y_2 - y_{2,\delta}\| \le \|\delta\|_\infty + \|\delta'\|_\infty .
+$$</p>
+<p>Thus a bound on the perturbation in the supremum norm alone does not bound the solution: the estimate requires control of the derivative of the perturbation.</p>
+<p><em>Proof.</em> Substituting the perturbed constraint into the differentiated constraint $y_1' = -q_2' - \delta'$ and integrating gives $y_1$, and substituting into the original differential equation gives $y_2 = -y_1 - q_1 - q_2' - \delta'$. The estimate is the triangle inequality. $\square$</p>
+<p><strong>Remark (why higher index is different from the ordinary theory).</strong> For an ordinary equation a continuous right-hand side that is Lipschitz gives a solution as smooth as the equation permits, and a perturbation of size $\varepsilon$ in the equation gives an error of order $\varepsilon$ in the solution. For a differential-algebraic equation of index $\nu$, a solution requires the inhomogeneity to be $\nu-1$ times differentiable, and a perturbation of the constraint of size $\varepsilon$ can produce an error of order $\varepsilon$ in the solution only if the differentiated perturbations are also controlled. This is the sense in which the index measures the distance from the ordinary theory, and it is the reason the index rather than the dimension is the invariant that governs the qualitative behaviour.</p>
+<h3 id="index-reduction-and-the-drift-phenomenon">Index Reduction and the Drift Phenomenon</h3>
+<p><strong>Definition.</strong> <strong>Index reduction</strong> is the replacement of a differential-algebraic equation of index $\nu$ by an equivalent lower-index equation, classically by differentiating the constraints. The differentiated constraints are <strong>invariants</strong> of the original system: every solution of it satisfies them. Replacing a constraint by its derivative enlarges the solution set, because the differentiated equation is a consequence of the original but does not imply it; the original constraint must therefore be retained as well, and the reduced system consists of the original equations together with the differentiated constraints.</p>
+<p><strong>Theorem (index reduction via constraint differentiation).</strong> For the constrained particle the differentiated system</p>
+<p>$$
+q' = v, \qquad v' = f(q,v) - G(q)^{\mathrm{T}}\lambda, \qquad 0 = g(q), \qquad 0 = G(q)v
+$$</p>
+<p>has index two instead of three, and its solutions with $g(q(t_0))=0$ are exactly the solutions of the original system. Differentiating once more gives an index-one system.</p>
+<p><em>Proof.</em> The differentiated constraint $Gv=0$ determines one relation among the variables; substituting it into the constraint $g=0$ and differentiating once more produces the multiplier equation, which determines $\lambda$; the index drops by one at each differentiation by definition. Solutions of the original system satisfy the differentiated constraints, and conversely a solution of the reduced system that begins on $g=0$ keeps $g=0$ because $\frac{d}{dt}g(q) = Gv = 0$. $\square$</p>
+<p><strong>Remark (the drift phenomenon).</strong> A numerical method applied to the reduced system solves the differentiated constraint but not the original one, and the discrepancy, the <strong>drift</strong>, generally grows with time: the integration controls the equation that was imposed and leaves the discarded one to wander. This is why a differential-algebraic equation is not solved by a naive integration of a reduced ordinary system, and why the theory keeps the index as a property of the equation rather than of a reformulation.</p>
+<h2 id="constrained-systems-and-the-variational-seam">Constrained Systems and the Variational Seam</h2>
+<p>The constrained particle has a variational description that is the source of the index-three structure, and it is useful to record the seam without developing it.</p>
+<p><strong>Proposition (the constrained variational problem).</strong> The equations</p>
+<p>$$
+q' = v, \qquad v' = -V'(q) - G(q)^{\mathrm{T}}\lambda, \qquad 0 = g(q)
+$$</p>
+<p>are the stationarity equations of the action $\int \bigl(\tfrac12\|v\|^2 - V(q)\bigr)dt$ over the curves satisfying $g(q)=0$, the multiplier $\lambda$ being the Lagrange multiplier of the constraint. The stationarity conditions are a differential-algebraic system of index three.</p>
+<p><em>Proof.</em> The Lagrange multiplier rule for the constrained variational problem gives $q'' = -V'(q) - G^{\mathrm{T}}\lambda$ together with $g(q)=0$; writing $v = q'$ gives the first-order form, and the computation of the index is the corollary above. $\square$</p>
+<p>The full variational account — the Euler–Lagrange equations, the Legendre transform, the Hamiltonian form and the role of the multiplier — belongs to the articles of this Part on the calculus of variations and on Lagrangian and Hamiltonian systems, written in parallel. What matters here is that the differential-algebraic structure is not an artefact of a bad formulation: it is intrinsic to a variational problem with a holonomic constraint, and the index is the number of differentiations of the constraint needed to express the multiplier.</p>
+<p>To close the article, the ordinary differential equation $y'=f(t,y)$ is the index-zero case, the semi-explicit system with $g_{y_2}$ invertible is the index-one case, the constrained particle is the index-three case, and between them lies a hierarchy indexed by the differentiation index. Each level is a genuine extension of the one above: an index-one system is an ordinary equation on a manifold determined by the constraint, an index-two system has a hidden constraint and a solution containing one derivative of the data, and an index-three system is the stationary condition of a variational problem with a constraint.</p>
+<h2 id="summary">Summary</h2>
+<p>A differential-algebraic equation is an implicit equation $F(t,y,y')=0$ whose derivative $\partial F/\partial y'$ is singular on the solution set; the semi-explicit form $y_1' = f(t,y_1,y_2)$, $0=g(t,y_1,y_2)$ separates the differential from the algebraic variables, and the linear constant-coefficient case $Ey'+Ay=q$ with singular $E$ is the model problem. The invariant of the theory is the differentiation index, the number of differentiations of the constraint needed to determine the algebraic variables, and for a regular pencil it is the size of the largest nilpotent block of the Weierstrass–Kronecker form. In that form the system uncouples into an ordinary linear system and the nilpotent equation $Nv' + v = q_2$, whose solution $v = \sum_{k=0}^{\nu-1}(-N)^kq_2^{(k)}$ is a finite sum and shows that the solution depends on derivatives of the data up to order $\nu-1$.</p>
+<p>Consequently an initial value must satisfy the constraints and the hidden constraints obtained by differentiation, so a higher-index problem has a positive number of consistency conditions rather than none. Index-one systems with invertible $g_{y_2}$ reduce to ordinary equations on a manifold and have unique solutions through consistent points; index-two and higher systems require differentiability of the data, have solutions containing derivatives of the data, and respond to perturbations of the constraint through the derivatives of the perturbation rather than through its size. Index reduction differentiates the constraints to lower the index, at the price of solving the differentiated constraint and drifting off the original one; the constrained mechanical system is the standard index-three example and is the stationary condition of a constrained variational problem. The index is thus the measure of how far an implicit equation is from an ordinary equation, and the theory is the ordinary theory plus the consistency, smoothness and sensitivity conditions that the index prescribes.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F(t,y,y')=0$</td>
+<td>Implicit differential equation</td>
+</tr>
+<tr>
+<td>$y_1 \in \mathbb{K}^{n_1}$, $y_2 \in \mathbb{K}^{n_2}$</td>
+<td>Differential and algebraic variables</td>
+</tr>
+<tr>
+<td>$g(t,y_1,y_2)=0$</td>
+<td>Constraint of a semi-explicit system</td>
+</tr>
+<tr>
+<td>$E$, $A$</td>
+<td>Coefficient matrices, $E$ singular, of $Ey'+Ay=q$</td>
+</tr>
+<tr>
+<td>$\lambda E + A$</td>
+<td>Matrix pencil; regular if $\det(\lambda E+A)\not\equiv0$</td>
+</tr>
+<tr>
+<td>$P$, $Q$, $r$, $s$</td>
+<td>Equivalences to Kronecker form and the sizes of its two blocks</td>
+</tr>
+<tr>
+<td>$J$, $N$</td>
+<td>Jordan block and nilpotent block, $N^\nu=0$</td>
+</tr>
+<tr>
+<td>$\nu$</td>
+<td>Index: differentiation index, Kronecker index, perturbation index</td>
+</tr>
+<tr>
+<td>hidden constraints</td>
+<td>Differentiated constraints, $Gv=0$ etc.</td>
+</tr>
+<tr>
+<td>$q$, $v$, $\lambda$, $G=g_q$</td>
+<td>Position, velocity, Lagrange multiplier and constraint gradient</td>
+</tr>
+<tr>
+<td>$V(q)$</td>
+<td>Potential in the constrained variational problem</td>
+</tr>
+<tr>
+<td>consistent initial value</td>
+<td>One satisfying the constraints and the hidden constraints</td>
+</tr>
+<tr>
+<td>drift</td>
+<td>Violation of the original constraint by a reduced system</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Kathryn E. Brenan, Stephen L. Campbell and Linda R. Petzold, <em>Numerical Solution of Initial-Value Problems in Differential-Algebraic Equations</em> (SIAM, 1996), for the index, consistency and the numerical theory.</li>
+<li>Stephen L. Campbell and Carl D. Meyer, <em>Generalized Inverses of Linear Transformations</em> (Pitman, 1979; reprinted SIAM, 2009), for the Kronecker form and linear descriptor systems.</li>
+<li>Ernst Hairer and Gerhard Wanner, <em>Solving Ordinary Differential Equations II: Stiff and Differential-Algebraic Problems</em> (Springer, 2nd ed. 1996), for the index and its numerical consequences.</li>
+<li>Peter Kunkel and Volker Mehrmann, <em>Differential-Algebraic Equations: Analysis and Numerical Solution</em> (EMS, 2006), for the tractability index and a unified treatment.</li>
+<li>Ernst Hairer, Christian Lubich and Michel Roche, <em>The Numerical Solution of Differential-Algebraic Systems by Runge–Kutta Methods</em> (Springer, 1989), for index reduction and the drift phenomenon.</li>
+<li>Peter C. Müller, <em>Theory of Holonomic and Non-Holonomic Systems</em> (Bibliographisches Institut, 1977), for the mechanical origin of the constrained equations.</li>
+<li>Ronald A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2nd ed. 2013), for the linear algebra of pencils and nilpotent blocks.</li>
+<li>Linda R. Petzold, "Differential/Algebraic Equations are not ODEs", <em>SIAM Journal on Scientific and Statistical Computing</em> 3 (1982), for the distinction between the two theories.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

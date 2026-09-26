@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-representations"><strong>List of Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the representations the corpus meets. A representation is a module with an action: of a finite group, over its group algebra; of a Lie group, on a topological vector space; of a Lie algebra, on a vector space with a bracket action; of an associative algebra, as a module over it; of a quiver, as a diagram of vector spaces; and of an algebra over one of the number systems, over the real, complex, split-complex, quaternion or biquaternion scalars. Beside each family the list records its characters, its weights and the theorem — Maschke's, Schur's or Weyl's — that governs it.</p>
+<p>Every entry points to the article that introduces the representation and names the invariant recorded there. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being a representation that fails complete reducibility or a module that fails to be simple, with the failure named and the article that records it.</p>
+<h2 id="representations-of-finite-groups">Representations of Finite Groups</h2>
+<p>A representation of a finite group $G$ over a field $F$ is a module over the group algebra $F[G]$. <strong>Maschke's theorem</strong> states that the category of representations is semisimple when the characteristic of $F$ does not divide $|G|$, so every representation is a direct sum of irreducibles; the <strong>character</strong> $\chi_V(g) = \operatorname{Tr}\rho(g)$ is a class function, the irreducible characters satisfy the orthogonality relations, and the number of irreducible complex characters equals the number of conjugacy classes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Representation</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F[G]$-module, equivalently $\rho : G \to GL_F(V)$</td>
+<td>the definition of a representation of a finite group</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Irreducible representation</td>
+<td>a simple $F[G]$-module; the atoms of the semisimple case</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Maschke's theorem</td>
+<td>complete reducibility when $\operatorname{char} F \nmid |G|$</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Regular representation</td>
+<td>the action of $G$ on $F[G]$ by left multiplication; its character is $|G|$ at the identity</td>
+<td><em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>Permutation representation</td>
+<td>the linearisation of a $G$-set; the character counts fixed points</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Character $\chi_V$</td>
+<td>the trace of the representation; a class function constant on conjugacy classes</td>
+<td><em>Character Theory</em></td>
+</tr>
+<tr>
+<td>Orthogonality relations</td>
+<td>the inner product of irreducible characters is $\delta_{ij}$</td>
+<td><em>Character Theory</em></td>
+</tr>
+<tr>
+<td>Character table</td>
+<td>the table of irreducible characters against conjugacy classes</td>
+<td><em>Character Theory</em></td>
+</tr>
+<tr>
+<td>Clebsch–Gordan decomposition</td>
+<td>the tensor product of representations decomposed into irreducibles</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Induction and restriction $\operatorname{Ind}_H^G$, $\operatorname{Res}_H^G$</td>
+<td>the representations built from a subgroup and restricted to it</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Representation ring $R(G)$</td>
+<td>the Grothendieck ring of representations, with tensor product multiplication</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Representations of the symmetric group</td>
+<td>the irreducibles indexed by Young diagrams, with the Specht modules and the hook length formula</td>
+<td><em>Representation Theory of Symmetric Groups</em></td>
+</tr>
+<tr>
+<td>Schur–Weyl decomposition of $V^{\otimes n}$</td>
+<td>the decomposition under $S_n \times GL(V)$ into Schur functors</td>
+<td><em>Schur–Weyl Duality</em></td>
+</tr>
+<tr>
+<td>Hecke algebra representation</td>
+<td>the deformation of the symmetric group's representation theory</td>
+<td><em>Hecke Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: a modular representation with $\operatorname{char} F \mid |G|$</td>
+<td>fails complete reducibility: Maschke's hypothesis is defeated, and the Jacobson radical of $F[G]$ is nonzero</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: a non-split extension of two irreducibles</td>
+<td>fails semisimplicity: the representation is reducible but not decomposable</td>
+<td><em>Representations of Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="representations-of-lie-groups-and-lie-algebras">Representations of Lie Groups and Lie Algebras</h2>
+<p>A representation of a Lie algebra $\mathfrak{g}$ is a vector space with a linear map $\mathfrak{g} \to \mathfrak{gl}(V)$ preserving the bracket; a representation of a Lie group is a smooth or continuous action on a vector space, whose differential is a representation of the Lie algebra. <strong>Weyl's theorem</strong> states that every finite-dimensional representation of a semisimple Lie algebra is completely reducible; the irreducible ones are classified by their highest weight, computed from the weights and the roots of a Cartan subalgebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Representation</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Representation of a Lie algebra</td>
+<td>a module over $\mathfrak{g}$, with the bracket action</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Universal enveloping algebra $U(\mathfrak{g})$</td>
+<td>the associative algebra whose modules are the representations, by the PBW theorem</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Weight and weight space</td>
+<td>the generalised eigenspaces of a Cartan subalgebra</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Highest weight representation</td>
+<td>the irreducible representation determined by a dominant weight</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Weyl's theorem</td>
+<td>complete reducibility for a semisimple Lie algebra</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Weyl character formula</td>
+<td>the character of the highest weight representation</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Adjoint representation</td>
+<td>the action of $\mathfrak{g}$ on itself by the bracket</td>
+<td><em>Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Root system and Cartan matrix</td>
+<td>the discrete data classifying the semisimple Lie algebras and their representations</td>
+<td><em>Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Peter–Weyl decomposition</td>
+<td>the decomposition of $L^2(G)$ for a compact group into irreducibles</td>
+<td><em>The Peter–Weyl Theorem</em> (Part III)</td>
+</tr>
+<tr>
+<td>Unitary representation of a locally compact group</td>
+<td>a continuous action on a Hilbert space, with the imprimitivity theorem</td>
+<td><em>Representation Theory of Locally Compact Groups</em> (Part II)</td>
+</tr>
+<tr>
+<td>Non-example: a representation of a non-semisimple Lie algebra</td>
+<td>fails Weyl's theorem: the solvable algebra $\mathfrak{b}$ has non-split extensions</td>
+<td><em>Representations of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: an infinite-dimensional representation of a compact Lie group</td>
+<td>fails the finite-dimensional weight classification: the highest weight theory needs finite dimension</td>
+<td><em>The Peter–Weyl Theorem</em> (Part III)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="representations-of-associative-algebras">Representations of Associative Algebras</h2>
+<p>A representation of an associative algebra $A$ is a left $A$-module, and the structure theory of modules applies directly: the simple modules, the semisimple modules, the radical and the density theorem. <strong>Schur's lemma</strong> states that $\operatorname{End}_A(S)$ is a division ring for a simple module $S$; for a finite-dimensional semisimple algebra over an algebraically closed field, the Wedderburn–Artin structure theorem makes every representation a direct sum of matrix-algebra modules.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Representation</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$-module</td>
+<td>the definition of a representation of an associative algebra</td>
+<td><em>Modules over an Algebra</em></td>
+</tr>
+<tr>
+<td>Simple and semisimple module</td>
+<td>a module with no proper nonzero submodule; a direct sum of simples</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Schur's lemma</td>
+<td>$\operatorname{End}_A(S)$ is a division ring for a simple $S$</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+<tr>
+<td>Density theorem</td>
+<td>the image of $A$ in $\operatorname{End}_F(M)$ is dense for a semisimple module</td>
+<td><em>Automorphisms of Modules over an Algebra</em></td>
+</tr>
+<tr>
+<td>Wedderburn–Artin theorem</td>
+<td>a semisimple algebra is a product $\prod_i M_{n_i}(D_i)$ of matrix algebras over division rings</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Representations of a matrix algebra</td>
+<td>the modules over $M_n(k)$, all of the form $k^n \otimes W$</td>
+<td><em>Representations of Algebras</em></td>
+</tr>
+<tr>
+<td>Semisimple algebra</td>
+<td>an algebra whose every module is semisimple; a product of matrix algebras</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Group algebra representation</td>
+<td>the case $A = F[G]$, reducing to group representations</td>
+<td><em>Representations of Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: a representation of the dual numbers $\mathbb{D}'$</td>
+<td>fails semisimplicity: the module $k[x]/x^2$ is not a direct sum of simples</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Non-example: a module over a non-semisimple algebra</td>
+<td>fails to be a direct sum of simples: the radical is nonzero</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="representations-over-the-number-systems">Representations over the Number Systems</h2>
+<p>The corpus also develops the representation theory of the real, complex, split-complex, quaternion and biquaternion scalars, where the scalars themselves are not a field and the division-ring and zero-divisor cases must be separated. These are the representations of Part V, and they show how the extra structure of the scalar algebra changes the module theory.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Representation</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Real representation</td>
+<td>a representation over $\mathbb{R}$, with the real character theory</td>
+<td><em>Real Representations</em></td>
+</tr>
+<tr>
+<td>Complex representation</td>
+<td>a representation over $\mathbb{C}$, the algebraically closed case</td>
+<td><em>Complex Representations</em></td>
+</tr>
+<tr>
+<td>Split-complex representation</td>
+<td>a module over the ring with zero divisors $\mathbb{D}$</td>
+<td><em>Split-Complex Representations</em></td>
+</tr>
+<tr>
+<td>Quaternion representation</td>
+<td>a module over the division ring $\mathbb{H}$</td>
+<td><em>Quaternion Representations</em></td>
+</tr>
+<tr>
+<td>Biquaternion representation</td>
+<td>a module over $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with the complex-linear and biquaternion-linear cases separated</td>
+<td><em>Biquaternion Representation Theory</em></td>
+</tr>
+<tr>
+<td>Non-example: a biquaternion module treated as a vector space</td>
+<td>fails to have a basis: $\mathbb{B}$ has zero divisors, so a $\mathbb{B}$-module need not be free</td>
+<td><em>Biquaternion Representation Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="representations-of-quivers">Representations of Quivers</h2>
+<p>A <strong>quiver</strong> is a directed graph, and a representation assigns a vector space to each vertex and a linear map to each arrow; equivalently it is a module over the path algebra. <strong>Gabriel's theorem</strong> classifies the quivers of finite representation type by the simply-laced Dynkin diagrams, and the tame and wild dichotomy of Drozd separates the remaining cases.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Representation</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Representation of a quiver</td>
+<td>a diagram of vector spaces and linear maps, equivalently a module over the path algebra</td>
+<td><em>Quiver Representations and Representation Type</em></td>
+</tr>
+<tr>
+<td>Path algebra</td>
+<td>the algebra whose modules are the quiver representations</td>
+<td><em>Quiver Representations and Representation Type</em></td>
+</tr>
+<tr>
+<td>Gabriel's theorem</td>
+<td>a quiver is of finite representation type exactly when its underlying graph is a simply-laced Dynkin diagram</td>
+<td><em>Quiver Representations and Representation Type</em></td>
+</tr>
+<tr>
+<td>Tame and wild representation type</td>
+<td>the dichotomy of Drozd; the tame cases classified by one-parameter families</td>
+<td><em>Quiver Representations and Representation Type</em></td>
+</tr>
+<tr>
+<td>Auslander–Reiten quiver</td>
+<td>the quiver of almost split sequences, encoding the representation type</td>
+<td><em>Auslander–Reiten Theory</em></td>
+</tr>
+<tr>
+<td>Almost split sequence</td>
+<td>the short exact sequence, ending in a given indecomposable, that is universal</td>
+<td><em>Auslander–Reiten Theory</em></td>
+</tr>
+<tr>
+<td>Non-example: a quiver containing the double source</td>
+<td>fails finite representation type: it is of wild type</td>
+<td><em>Quiver Representations and Representation Type</em></td>
+</tr>
+<tr>
+<td>Non-example: an indecomposable of infinite length</td>
+<td>fails Gabriel's finiteness: the module is not finite-dimensional</td>
+<td><em>Quiver Representations and Representation Type</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the representations of the corpus. The representations of a finite group are the $F[G]$-modules, the irreducibles, the regular and permutation representations, the characters with their orthogonality relations and character table, the Clebsch–Gordan decomposition, induction and restriction, the representation ring, the Specht modules of the symmetric group and the Schur–Weyl decomposition, with Maschke's theorem the governing result. The representations of a Lie group and a Lie algebra are the $\mathfrak{g}$-modules, the universal enveloping algebra, the weights and the highest weight classification, the adjoint representation, the root system, Weyl's theorem and character formula, and the Peter–Weyl and unitary representation theories. The representations of an associative algebra are the modules, the simple and semisimple modules, Schur's lemma and the density theorem, the matrix-algebra and group-algebra cases; over the number systems they are the real, complex, split-complex, quaternion and biquaternion representations. The representations of a quiver are the diagrams of vector spaces, the path-algebra modules, Gabriel's classification, the tame–wild dichotomy and the Auslander–Reiten theory. The non-examples — a modular representation, a non-split extension, a representation of a non-semisimple Lie algebra, an infinite-dimensional compact-group representation, a module over the dual numbers or a non-semisimple algebra, a biquaternion module treated as a vector space, a wild quiver and an infinite-length indecomposable — each name the property that fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its representations by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F[G]$, $k[G]$</td>
+<td>group algebra</td>
+</tr>
+<tr>
+<td>$\rho : G \to GL_F(V)$</td>
+<td>representation of a group</td>
+</tr>
+<tr>
+<td>$\chi_V$, $\operatorname{Res}$, $\operatorname{Ind}$, $R(G)$</td>
+<td>character, restriction, induction, representation ring</td>
+</tr>
+<tr>
+<td>$\mathfrak{g}$, $\mathfrak{gl}(V)$, $U(\mathfrak{g})$</td>
+<td>Lie algebra, endomorphism algebra, universal enveloping algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}$</td>
+<td>adjoint representation</td>
+</tr>
+<tr>
+<td>$M_n(k)$</td>
+<td>matrix algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(S)$, $\operatorname{End}_A(M)$</td>
+<td>endomorphism ring of a simple module, of a module</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}$, $\mathbb{B}$</td>
+<td>real, complex, split-complex, dual, quaternion and biquaternion scalars</td>
+</tr>
+<tr>
+<td>$\operatorname{Rep}_F(G)$, $\operatorname{Mod}(A)$</td>
+<td>categories of representations and modules</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Linear Representations of Finite Groups</em> (Springer, 1977), for Maschke's theorem, the character orthogonality relations and the finite group case.</li>
+<li>James Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for weights, highest weight theory, Weyl's theorem and the character formula.</li>
+<li>Charles Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Wiley, 1962), for the module-theoretic treatment of representations of associative algebras and Schur's lemma.</li>
+<li>Ibrahim Assem, Daniel Simson and Andrzej Skowroński, <em>Elements of the Representation Theory of Associative Algebras</em>, Vol. 1 (Cambridge University Press, 2006), for quiver representations, Gabriel's theorem and the Auslander–Reiten theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

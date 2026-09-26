@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Geometric Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-geometric-forms"><strong>List of Geometric Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the forms of the corpus — the bilinear, quadratic, sesquilinear, Hermitian, alternating and symplectic forms — each with the space it is defined on, the invariants that classify it and the article that introduces it. A form is a scalar-valued rule on two vectors, or on one vector, that is linear or conjugate-linear in its arguments; the structure it defines on the space is what the geometric groups of the following catalogues are required to preserve. The list records the invariants — the rank, the radical, the discriminant, the signature, the Witt index — and the classification each classical field affords.</p>
+<p>Every entry points to the article that introduces the form or the invariant. The article introduces nothing and proves nothing: it records the classifying data the introducing article establishes, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the forms that the classification separates it lists the cases in which the classification collapses or the correspondence fails: the quadratic forms and the symmetric bilinear forms, which are in bijection only when $2$ is invertible in the base ring; the alternating forms, which are not the skew-symmetric forms in characteristic $2$; the split octonions, whose norm form is isotropic although the octonion norm of the division algebra is not; and the forms over $\mathbb{Q}$ and over a number field, whose classification needs the local invariants and is not read from the signature alone, each with the failure named and the article that records it.</p>
+<h2 id="the-bilinear-and-sesquilinear-forms">The Bilinear and Sesquilinear Forms</h2>
+<p>The bilinear form is the basic datum: a rule linear in each argument, represented by a Gram matrix once a basis is chosen, with the radical measuring its degeneracy. The sesquilinear and Hermitian forms are the case of a non-commutative ring with an involution.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form or invariant</th>
+<th>Its classifying data</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a bilinear form $B : M \times M \to R$</td>
+<td>bilinearity; the Gram matrix $G_{ij} = B(e_i,e_j)$ in a basis, with $G \mapsto P^TGP$ under a change of basis</td>
+<td><em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>the radical $\operatorname{rad}(B)$</td>
+<td>$\{u : B(u,v) = 0 \ \forall v\}$; the form is non-degenerate when the radical is zero</td>
+<td><em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>the rank $\operatorname{rank}(B)$</td>
+<td>the rank of the Gram matrix; the discriminant $\Delta(B) = \det G \in F^\times/(F^\times)^2$</td>
+<td><em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>the orthogonal direct sum $B_1 \perp B_2$</td>
+<td>the form on $M_1 \oplus M_2$ with $B(M_1,M_2) = 0$; the operation of the classification</td>
+<td><em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>the isometry group $\operatorname{Isom}(M,B)$</td>
+<td>the linear maps preserving $B$; $\operatorname{O}(M,B)$ in the symmetric case, $\operatorname{Sp}(M,B)$ in the alternating case</td>
+<td><em>Bilinear Forms</em>; <em>List of Classical Geometric Groups</em></td>
+</tr>
+<tr>
+<td>a $\sigma$-sesquilinear form</td>
+<td>linear in one argument and $\sigma$-linear in the other for an involution $\sigma$ of the ring</td>
+<td><em>Hermitian Forms and Involutions</em></td>
+</tr>
+<tr>
+<td>a Hermitian form $s(x,y)$</td>
+<td>$s(x,y) = \sigma(s(y,x))$; the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring</td>
+<td><em>Hermitian Forms and Involutions</em></td>
+</tr>
+<tr>
+<td>the Hermitian Gram matrix $H$</td>
+<td>$H^\dagger = \sigma(H)^T = H$; the unitary group is its isometry group</td>
+<td><em>Hermitian Forms and Involutions</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the trace form $T(x,y) = \operatorname{Tr}(m_{xy})$</td>
+<td>the regular trace of a finite-dimensional algebra; the reduced trace form in the central simple case</td>
+<td><em>Hermitian Forms and Involutions</em></td>
+</tr>
+<tr>
+<td>the reduced norm form $\operatorname{Nrd}$</td>
+<td>the norm of a central simple algebra of degree $d$; a form of dimension $d^2$</td>
+<td><em>Hermitian Forms and Involutions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-quadratic-forms">The Quadratic Forms</h2>
+<p>A quadratic form is homogeneous of degree two, and it is recovered from its polar form when $2$ is invertible; its classification over the classical fields is the content of Sylvester's law and of the rank.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form or invariant</th>
+<th>Its classifying data</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a quadratic form $q : M \to R$</td>
+<td>$q(av) = a^2q(v)$ and the polar identity; the polar form $B$ with $q(v) = B(v,v)$</td>
+<td><em>Quadratic Forms and Polarisation</em></td>
+</tr>
+<tr>
+<td>the passage to the polar form</td>
+<td>a bijection between quadratic and symmetric bilinear forms when $2$ is invertible; a genuine obstruction otherwise</td>
+<td><em>Quadratic Forms and Polarisation</em></td>
+</tr>
+<tr>
+<td>the diagonal form $\langle a_1,\ldots,a_n\rangle$</td>
+<td>$\sum_i a_ix_i^2$; the diagonalisation of a form over a field of characteristic not $2$</td>
+<td><em>Quadratic Forms and Polarisation</em></td>
+</tr>
+<tr>
+<td>Sylvester's law of inertia</td>
+<td>over $\mathbb{R}$ a form is classified by its signature $(p,r)$; the indices are invariant</td>
+<td><em>Quadratic Forms and Polarisation</em></td>
+</tr>
+<tr>
+<td>the signature $\sigma(q) = p - r$ and the rank $p + r$</td>
+<td>the real classification; the complex classification is the rank alone</td>
+<td><em>Quadratic Forms and Polarisation</em>; <em>Pseudo-Riemannian and Lorentzian Geometry</em></td>
+</tr>
+<tr>
+<td>the discriminant $\Delta(q)$</td>
+<td>$a_1\cdots a_n \in F^\times/(F^\times)^2$; an invariant of the isometry class</td>
+<td><em>Quadratic Forms and Polarisation</em>; <em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>the hyperbolicity and the isotropic vectors</td>
+<td>a form is isotropic when $q(v) = 0$ for some $v \neq 0$; the hyperbolic plane is the model</td>
+<td><em>Witt's Theorems</em></td>
+</tr>
+<tr>
+<td>the norm forms of the algebras</td>
+<td>$N(x) = x\bar x$ on $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{O}$; a composition law $N(xy) = N(x)N(y)$ only in dimensions $1$, $2$, $4$, $8$</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em></td>
+</tr>
+<tr>
+<td>a Pfister form $\langle\!\langle a_1,\ldots,a_n\rangle\!\rangle$</td>
+<td>the norm form of a composition algebra of dimension $2^n$; the tensor product $\bigotimes_i\langle 1,-a_i\rangle$</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em>; <em>The Witt Group and the Grothendieck–Witt Ring</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-alternating-and-symplectic-forms">The Alternating and Symplectic Forms</h2>
+<p>An alternating form satisfies $\omega(u,u) = 0$, which over a field of characteristic not $2$ is the skew-symmetry of its matrix; the non-degenerate alternating forms are the symplectic forms, and their normal form is the linear Darboux theorem.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form or invariant</th>
+<th>Its classifying data</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>an alternating form $\omega$</td>
+<td>$\omega(u,u) = 0$ for all $u$; equivalently $\omega(u,v) = -\omega(v,u)$ when $2$ is invertible</td>
+<td><em>Symplectic Forms and Poisson Brackets</em>; <em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>an alternating $2$-form as a wedge</td>
+<td>an element of $\Lambda^2(V^*)$; the algebra of alternating forms is $\Lambda(V^*)$</td>
+<td><em>The Determinant and Alternating Forms</em></td>
+</tr>
+<tr>
+<td>the Pfaffian</td>
+<td>$\operatorname{Pf}(\Omega)$ for an alternating matrix of even size; $\det\Omega = \operatorname{Pf}(\Omega)^2$, so a symplectic map has determinant $1$</td>
+<td><em>The Determinant and Alternating Forms</em>; <em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>a symplectic form</td>
+<td>a non-degenerate alternating form on a finite-dimensional space; the dimension is even</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the linear Darboux normal form</td>
+<td>the symplectic basis $e_1,\ldots,e_n,f_1,\ldots,f_n$ with $\omega(e_i,f_j) = \delta_{ij}$; $\omega_0$ has matrix $J$</td>
+<td><em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the symplectic group $Sp(V,\omega)$</td>
+<td>the isometries of $\omega$; $A^TJA = J$; contained in $SL(V)$ by the Pfaffian</td>
+<td><em>Symplectic Forms and Poisson Brackets</em>; <em>The Unitary and Symplectic Groups</em></td>
+</tr>
+<tr>
+<td>the Lagrangians</td>
+<td>the maximal totally isotropic subspaces; the Lagrangian Grassmannian</td>
+<td><em>Symplectic Forms and Poisson Brackets</em>; <em>Symplectic Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-classification-theorems-and-their-invariants">The Classification Theorems and Their Invariants</h2>
+<p>The classification of quadratic forms over a field is governed by Witt's theorems; over $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_q$ and $\mathbb{Q}$ it takes the forms recorded below, and the Witt ring is the algebraic home of the invariants.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theorem or invariant</th>
+<th>Its statement or classifying data</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Witt extension theorem</td>
+<td>every isometry between subspaces of a non-degenerate quadratic space extends to the whole space; complements exist</td>
+<td><em>Witt's Theorems</em></td>
+</tr>
+<tr>
+<td>the Witt index $m$</td>
+<td>the common dimension of the maximal totally isotropic subspaces; $V \cong V_0 \perp mH$ with $V_0$ anisotropic</td>
+<td><em>Witt's Theorems</em></td>
+</tr>
+<tr>
+<td>the Witt cancellation theorem</td>
+<td>$q \perp q_1 \cong q \perp q_2 \Rightarrow q_1 \cong q_2$ for non-degenerate forms; the basis of the Witt ring</td>
+<td><em>Witt's Theorems</em></td>
+</tr>
+<tr>
+<td>the classification over $\mathbb{R}$</td>
+<td>the signature $(p,r)$ by Sylvester's law; rank and signature</td>
+<td><em>Quadratic Forms and Polarisation</em></td>
+</tr>
+<tr>
+<td>the classification over $\mathbb{C}$</td>
+<td>the rank alone; every non-degenerate complex form is $\langle 1,\ldots,1\rangle$</td>
+<td><em>Quadratic Forms and Polarisation</em>; <em>Witt's Theorems</em></td>
+</tr>
+<tr>
+<td>the classification over $\mathbb{F}_q$, $q$ odd</td>
+<td>the dimension and the discriminant; the number of maximal totally isotropic subspaces of $mH$ is $\prod_{i=0}^{m-1}(q^i+1)$</td>
+<td><em>Witt's Theorems</em></td>
+</tr>
+<tr>
+<td>the Hasse–Minkowski principle</td>
+<td>the classification over a number field by the completions; the local invariants determine the global form</td>
+<td><em>Witt's Theorems</em></td>
+</tr>
+<tr>
+<td>the Witt ring $W(F)$</td>
+<td>the isometry classes modulo the hyperbolic forms, under $\perp$ and $\otimes$; the Grothendieck–Witt ring $GW(F)$ above it</td>
+<td><em>The Witt Group and the Grothendieck–Witt Ring</em></td>
+</tr>
+<tr>
+<td>the invariants $\dim$, $\Delta$, $\operatorname{sign}$</td>
+<td>the dimension, the discriminant and the total signature $W(F) \to \prod_P\mathbb{Z}$</td>
+<td><em>The Witt Group and the Grothendieck–Witt Ring</em></td>
+</tr>
+<tr>
+<td>the Hasse invariant $e_2$</td>
+<td>the invariant $I^2/I^3 \hookrightarrow \operatorname{Br}_2(F)$; the Milnor K-theory quotients $I^n/I^{n+1}$</td>
+<td><em>The Witt Group and the Grothendieck–Witt Ring</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-forms-on-the-number-systems">The Forms on the Number Systems</h2>
+<p>The norm forms of the number systems are the examples through which the general theory is read, and the Cayley–Dickson doubling produces them in dimensions one, two, four and eight.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space and form</th>
+<th>The form and its properties</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$ with $N(z) = z\bar z$</td>
+<td>the positive definite norm form of dimension $2$; a composition law</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em>; <em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$ with $N(q) = q\bar q$</td>
+<td>the positive definite quaternion norm of dimension $4$; a composition law; anisotropic</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em>; <em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ with $N(q) = q\bar q$</td>
+<td>the complex-valued biquaternion norm; the real part and imaginary part are forms of signature $(4,4)$</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em>; <em>The Biquaternion Algebra as a Clifford Algebra</em></td>
+</tr>
+<tr>
+<td>the split biquaternions $\mathbb{H}_{\mathbb{D}}$</td>
+<td>a norm form that is isotropic; the split form of the quaternion norm</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em>; <em>Split-Biquaternions and Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$ with $N(x) = x\bar x$</td>
+<td>the octonion norm of dimension $8$; a composition law; anisotropic</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em>; <em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>the split octonions</td>
+<td>the isotropic norm form of dimension $8$; the $\mu = +1$ double of $\mathbb{H}_{\mathbb{D}}$</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em></td>
+</tr>
+<tr>
+<td>the quadric $\mathcal{Q}(Q)$</td>
+<td>the projective quadric $\{[x] : Q(x) = 0\}$ of an $A$-valued form</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em>; <em>Projective Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-and-warnings">Non-examples and Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why the expected statement fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a quadratic form over $\mathbb{F}_2$</td>
+<td>the polar form does not determine the quadratic form when $2$ is not invertible; the correspondence is an obstruction, not a bijection</td>
+<td><em>Quadratic Forms and Polarisation</em></td>
+</tr>
+<tr>
+<td>an alternating form in characteristic $2$</td>
+<td>it is not the same as a skew-symmetric form; skew-symmetry with $\omega(u,u) = 0$ is the condition available over every ring</td>
+<td><em>The Determinant and Alternating Forms</em>; <em>Symplectic Forms and Poisson Brackets</em></td>
+</tr>
+<tr>
+<td>the split octonions</td>
+<td>their norm form is isotropic, unlike the norm of the division algebra $\mathbb{O}$; the two are different forms of the same dimension</td>
+<td><em>Quadratic Forms over Algebras and Norm Forms</em></td>
+</tr>
+<tr>
+<td>the classification over $\mathbb{Q}$</td>
+<td>it is not read from the signature alone; the Hasse–Minkowski principle needs the local invariants at the completions</td>
+<td><em>Witt's Theorems</em></td>
+</tr>
+<tr>
+<td>the Hermitian form over a non-commutative ring</td>
+<td>the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring and not over the base; the transfer is part of the theory</td>
+<td><em>Hermitian Forms and Involutions</em></td>
+</tr>
+<tr>
+<td>a degenerate form, $\langle 0\rangle$</td>
+<td>its matrix is not invertible and there is no discriminant in $F^\times/(F^\times)^2$; the radical is the whole space</td>
+<td><em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>a form of odd dimension over a finite field</td>
+<td>the discriminant alone does not classify it in characteristic $2$; the classification stated above needs $q$ odd</td>
+<td><em>Witt's Theorems</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Objects that a reader may expect in a list of geometric forms, and does not find here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>differential forms</td>
+<td>they are forms on the tangent bundle of a manifold, a Part III construction, and are catalogued with the manifolds</td>
+<td><em>Differential Forms and Stokes' Theorem</em></td>
+</tr>
+<tr>
+<td>the integral forms of a lattice</td>
+<td>they are recorded with the geometric lattices and the integral quadratic forms</td>
+<td><em>List of Geometric Lattices and Integral Forms</em></td>
+</tr>
+<tr>
+<td>the symplectic form of a symplectic manifold</td>
+<td>it is a closed non-degenerate $2$-form on a manifold; the algebraic form is listed here and the manifold there</td>
+<td><em>Symplectic Geometry</em>; <em>Symplectic and Contact Topology</em></td>
+</tr>
+<tr>
+<td>the Killing form of a Lie algebra</td>
+<td>an invariant symmetric bilinear form on a Lie algebra, recorded with the structure theory</td>
+<td><em>Structure of Lie Algebras</em></td>
+</tr>
+<tr>
+<td>the Petersson inner product and the automorphic forms</td>
+<td>the Hermitian forms of the analytic theory belong to a different catalogue</td>
+<td><em>Automorphic Forms</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the forms of the corpus: the bilinear forms with their Gram matrices, radicals and discriminants; the sesquilinear and Hermitian forms with an involution, their trace forms and reduced norms; the quadratic forms with their polar forms, diagonalisations, signatures and discriminants, and the norm forms of $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, the split biquaternions and $\mathbb{O}$; the alternating and symplectic forms with the Pfaffian, the Darboux normal form and the Lagrangians; and the classification theorems — Witt's extension, index and cancellation, Sylvester's law, the classifications over $\mathbb{C}$ and $\mathbb{F}_q$, the Hasse–Minkowski principle, and the Witt and Grothendieck–Witt rings with their invariants. Beside the examples stand the non-examples: the characteristic-$2$ failures of the polar correspondence and of alternation, the isotropic split octonion norm, the forms over $\mathbb{Q}$ that need their local invariants, and the degenerate forms without a discriminant. The list introduces and proves nothing; it is the index of the forms of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B$</td>
+<td>a bilinear form, symmetric unless stated</td>
+</tr>
+<tr>
+<td>$G = (G_{ij})$</td>
+<td>the Gram matrix of a bilinear form in a basis</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}(B)$, $\operatorname{rank}(B)$</td>
+<td>the radical and the rank of a form</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the discriminant, in $F^\times/(F^\times)^2$</td>
+</tr>
+<tr>
+<td>$\perp$</td>
+<td>the orthogonal direct sum</td>
+</tr>
+<tr>
+<td>$q$</td>
+<td>a quadratic form; $B$ its polar form, $q(v) = B(v,v)$</td>
+</tr>
+<tr>
+<td>$\langle a_1,\ldots,a_n\rangle$</td>
+<td>the diagonal form $\sum_i a_ix_i^2$</td>
+</tr>
+<tr>
+<td>$\sigma(q) = p - r$</td>
+<td>the signature of a real quadratic form, of positive index $p$ and negative index $r$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>the hyperbolic plane</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>the Witt index</td>
+</tr>
+<tr>
+<td>$\omega$, $\omega_0$, $J$</td>
+<td>an alternating $2$-form, the standard symplectic form, its matrix</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}$</td>
+<td>the Pfaffian</td>
+</tr>
+<tr>
+<td>$Sp(V,\omega)$</td>
+<td>the symplectic group</td>
+</tr>
+<tr>
+<td>$W(F)$, $GW(F)$, $I$</td>
+<td>the Witt ring, the Grothendieck–Witt ring, the fundamental ideal</td>
+</tr>
+<tr>
+<td>$\langle\!\langle a_1,\ldots,a_n\rangle\!\rangle$</td>
+<td>a Pfister form</td>
+</tr>
+<tr>
+<td>$N$, $\operatorname{Nrd}$, $\operatorname{Tr}$, $\operatorname{Trd}$</td>
+<td>a norm form, the reduced norm, the trace and reduced trace</td>
+</tr>
+<tr>
+<td>$s(x,y)$, $\sigma$, $A^\sigma$</td>
+<td>a sesquilinear form, an involution, its fixed ring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the classification of quadratic forms, Witt's theorems, the Witt ring and the Hasse–Minkowski principle.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for bilinear, quadratic, Hermitian and alternating forms in one account.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for involutions, Hermitian forms and the reduced norm of a central simple algebra.</li>
+<li>Michael Artin, <em>Geometric Algebra</em> (Interscience, 1957), for the classical treatment of the forms and of the orthogonal and symplectic groups they define.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

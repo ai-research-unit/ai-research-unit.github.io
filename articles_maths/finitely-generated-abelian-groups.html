@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finitely Generated Abelian Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="finitely-generated-abelian-groups"><strong>Finitely Generated Abelian Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The structure theorem for finitely generated modules over a principal ideal domain, applied to the ring $\mathbb{Z}$, classifies the finitely generated abelian groups: each is a direct sum of a free abelian group and a finite abelian group, and the finite part is a direct sum of cyclic groups of prime-power or of divisibility-ordered type. This article carries out the classification, sets out the two normal forms — invariant factors and elementary divisors — proves that they agree, and computes the answer for explicit presentations by the Smith normal form of the relations matrix.</p>
+<p>Throughout, groups are written additively and abelian; the companion articles of this category on modules over a principal ideal domain and on direct sums, free modules and rank supply the structure theorem and the rank invariants used here. The theorem is a classification, so the emphasis is on the two uniqueness statements and on the algorithm that computes the answer from a presentation, not on the existence statement alone.</p>
+<h2 id="the-structure-theorem-over-math1">The Structure Theorem over $\mathbb{Z}$</h2>
+<h3 id="statement">Statement</h3>
+<p><strong>Theorem (structure theorem for finitely generated abelian groups).</strong> Let $G$ be a finitely generated abelian group. Then</p>
+<p>$$
+G \;\cong\; \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z}
+$$</p>
+<p>for integers $r \ge 0$ and $d_1,\dots,d_k \ge 2$ with the divisibility chain</p>
+<p>$$
+d_1 \mid d_2 \mid \cdots \mid d_k .
+$$</p>
+<p>The integer $r$ and the sequence $d_1,\dots,d_k$ are uniquely determined by $G$; $r$ is the <strong>rank</strong> of $G$ and $d_1,\dots,d_k$ are its <strong>invariant factors</strong>. The group is finite if and only if $r=0$.</p>
+<p><em>Proof.</em> A finitely generated abelian group is a finitely generated module over the principal ideal domain $\mathbb{Z}$, so the structure theorem for finitely generated modules over a principal ideal domain applies; that theorem gives the decomposition into a free part and a torsion part and the divisibility chain, with uniqueness. Both the existence and the uniqueness are proved in the companion article on modules over a principal ideal domain. $\square$</p>
+<h3 id="the-torsion-and-free-parts">The Torsion and Free Parts</h3>
+<p><strong>Definition.</strong> The <strong>torsion subgroup</strong> of $G$ is $G_{\mathrm{tor}}=\{x \in G: nx=0 \text{ for some } n \ge 1\}$, and the <strong>free part</strong> of $G$ is the quotient $G/G_{\mathrm{tor}}$.</p>
+<p><strong>Proposition.</strong> For a finitely generated abelian group $G$: (i) $G_{\mathrm{tor}}$ is a finite subgroup; (ii) $G/G_{\mathrm{tor}}$ is a free abelian group of rank $r$; (iii) there is a (non-canonical) splitting $G \cong G_{\mathrm{tor}} \oplus \mathbb{Z}^r$.</p>
+<p><em>Proof.</em> (i) In the decomposition of the theorem, the torsion subgroup is the sum of the cyclic summands $\mathbb{Z}/d_i$, which is finite. (ii) The quotient by the torsion is generated by the images of the free summands and is torsion-free, hence free; its rank is $r$, and the rank is invariant by the invariant basis number property. (iii) The decomposition displays $G$ as the direct sum of its torsion subgroup and a free complement. $\square$</p>
+<p>The splitting is not natural, since the free complement is not unique; only the torsion subgroup is canonical.</p>
+<h2 id="the-relations-matrix-and-smith-normal-form">The Relations Matrix and Smith Normal Form</h2>
+<h3 id="presentations">Presentations</h3>
+<p><strong>Definition.</strong> A <strong>presentation</strong> of a finitely generated abelian group is an isomorphism</p>
+<p>$$
+G \;\cong\; \mathbb{Z}^m / \operatorname{col}(\mathcal{A}) ,
+$$</p>
+<p>where $\mathcal{A}$ is an $m \times n$ integer matrix and $\operatorname{col}(\mathcal{A}) \subseteq \mathbb{Z}^m$ is the subgroup generated by its columns, the <strong>relations</strong>. The presentation is <strong>finite</strong> if $\mathcal{A}$ has finitely many entries, which is the case here.</p>
+<p><strong>Theorem (Smith normal form).</strong> For every integer matrix $\mathcal{A}$ there are invertible integer matrices $P \in \operatorname{GL}_m(\mathbb{Z})$ and $Q \in \operatorname{GL}_n(\mathbb{Z})$ (unimodular, $\det=\pm1$) with</p>
+<p>$$
+P\mathcal{A}Q=\operatorname{diag}(d_1,\dots,d_s,0,\dots,0),
+$$</p>
+<p>where $s=\operatorname{rank}\mathcal{A}$, the $d_i$ are positive integers with $d_1 \mid d_2 \mid \cdots \mid d_s$, and the $d_i$ are uniquely determined by $\mathcal{A}$. They are the invariant factors of the torsion part, and</p>
+<p>$$
+\mathbb{Z}^m/\operatorname{col}(\mathcal{A}) \;\cong\; \mathbb{Z}^{m-s} \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_s\mathbb{Z} .
+$$</p>
+<p><em>Proof.</em> The normal form is obtained by elementary row and column operations over $\mathbb{Z}$ (the Euclidean algorithm clears entries successively); the operations are multiplications by unimodular matrices, so they do not change the quotient up to isomorphism, and the displayed quotient is $\mathbb{Z}^{m-s} \oplus \bigoplus_i\mathbb{Z}/d_i$ with the divisibility chain. Uniqueness is the statement that the $d_i$ are the invariant factors of the module. $\square$</p>
+<h3 id="worked-computations">Worked Computations</h3>
+<p><strong>Example.</strong> Let $G=\mathbb{Z}^2/\operatorname{col}\begin{pmatrix}2&1\\1&3\end{pmatrix}$. The determinant is $2\cdot3-1\cdot1=5$, so the quotient is finite of order $5$ and the invariant factors multiply to $5$; since $5$ is prime and the only possibility is a single factor, the Smith normal form is $\operatorname{diag}(1,5)$ and</p>
+<p>$$
+G \cong \mathbb{Z}/5\mathbb{Z} .
+$$</p>
+<p>This can be checked by hand: in the quotient, $2a+b=0$ and $a+3b=0$, and eliminating gives $5a=0=5b$ with $a,b$ of the same order, so the group is cyclic of order $5$.</p>
+<p><strong>Example.</strong> Let $G=\mathbb{Z}^3/\operatorname{col}\begin{pmatrix}2\\4\\6\end{pmatrix}$. The column is twice $(1,2,3)$, whose entries have greatest common divisor $1$, so the Smith normal form of the $3 \times 1$ matrix is $\operatorname{diag}(2,0,0)$ with $s=1$, and</p>
+<p>$$
+G \cong \mathbb{Z}^2 \oplus \mathbb{Z}/2\mathbb{Z} .
+$$</p>
+<p>The rank is $m-s=2$ and the single torsion factor is $\mathbb{Z}/2$, in agreement with the presentation $\mathbb{Z} \xrightarrow{\ (2,4,6)^{\mathsf{T}}\ } \mathbb{Z}^3 \to G \to 0$ given by the single relation.</p>
+<p><strong>Example.</strong> For $G=\mathbb{Z}^2/\operatorname{col}\begin{pmatrix}2&0\\0&6\end{pmatrix}$ the matrix is already diagonal with entries $2,6$, whose Smith normal form is $\operatorname{diag}(2,6)$ with $2 \mid 6$, so</p>
+<p>$$
+G \cong \mathbb{Z}/2\mathbb{Z} \oplus \mathbb{Z}/6\mathbb{Z} ,
+$$</p>
+<p>of order $12$; this is the invariant-factor form of $\mathbb{Z}/2 \oplus \mathbb{Z}/6$, and its elementary-divisor form is $\mathbb{Z}/2 \oplus \mathbb{Z}/2 \oplus \mathbb{Z}/3$.</p>
+<h3 id="invariant-factors-from-the-minors">Invariant Factors from the Minors</h3>
+<p>The Smith normal form is reached by reduction, but the invariant factors can also be read off directly from the minors of the relations matrix, which is the form in which they are computed in practice.</p>
+<p><strong>Proposition.</strong> Let $\mathcal{A}$ be an $m \times n$ integer matrix of rank $s$ with Smith normal form $\operatorname{diag}(d_1,\dots,d_s,0,\dots,0)$, and for $1 \le k \le s$ let $\Delta_k$ be the greatest common divisor of all $k \times k$ minors of $\mathcal{A}$, with $\Delta_0=1$. Then</p>
+<p>$$
+d_1d_2\cdots d_k=\Delta_k, \qquad \text{hence} \qquad d_k=\frac{\Delta_k}{\Delta_{k-1}} .
+$$</p>
+<p>In particular $\Delta_1$ is the greatest common divisor of the entries of $\mathcal{A}$ and $\Delta_s$ is the greatest common divisor of the maximal minors; when $m=n$ and $\mathcal{A}$ is invertible this gives $\Delta_n=|\det\mathcal{A}|$, the order of the quotient.</p>
+<p><em>Proof.</em> A unimodular row or column operation replaces $\mathcal{A}$ by $P\mathcal{A}$ or $\mathcal{A}Q$ with $\det P, \det Q=\pm1$; by Cauchy–Binet each $k \times k$ minor of $P\mathcal{A}Q$ is an integer combination of the $k \times k$ minors of $\mathcal{A}$, and the operation is invertible, so $\Delta_k$ is unchanged. For the diagonal matrix $\operatorname{diag}(d_1,\dots,d_s,0,\dots,0)$ with $d_1 \mid \cdots \mid d_s$ the $k \times k$ minors are the products of $k$ distinct diagonal entries; every such product is divisible by $d_1d_2\cdots d_k$, and the product $d_1\cdots d_k$ of the first $k$ entries is itself a minor, so the greatest common divisor is $d_1d_2\cdots d_k$. $\square$</p>
+<p><strong>Example.</strong> For $\mathcal{A}=\begin{pmatrix}2&4\\6&8\end{pmatrix}$ one has $\Delta_1=\gcd(2,4,6,8)=2$ and $\det\mathcal{A}=16-24=-8$, so $\Delta_2=8$, $d_1=2$ and $d_2=\Delta_2/\Delta_1=4$. The normal form is $\operatorname{diag}(2,4)$ and
+$$
+\mathbb{Z}^2/\operatorname{col}\mathcal{A} \;\cong\; \mathbb{Z}/2\mathbb{Z} \oplus \mathbb{Z}/4\mathbb{Z},
+$$
+of order $8=|\det\mathcal{A}|$. For the first example above, $\Delta_1=\gcd(2,1,1,3)=1$ and $\Delta_2=|\det|=5$, so $d_1=1$ and $d_2=5$, confirming the normal form $\operatorname{diag}(1,5)$.</p>
+<h2 id="invariant-factors-and-elementary-divisors">Invariant Factors and Elementary Divisors</h2>
+<h3 id="prime-power-decomposition">Prime-Power Decomposition</h3>
+<p><strong>Theorem (elementary divisors).</strong> Every finite abelian group is a direct sum of cyclic groups of prime-power order:</p>
+<p>$$
+G \;\cong\; \bigoplus_{i}\mathbb{Z}/p_i^{e_i}\mathbb{Z},
+$$</p>
+<p>and the multiset of prime powers $p_i^{e_i}$ is uniquely determined by $G$.</p>
+<p><em>Proof.</em> Apply the structure theorem and then the Chinese remainder theorem $\mathbb{Z}/d \cong \prod_{p^e \| d}\mathbb{Z}/p^e\mathbb{Z}$ to each invariant factor; conversely group the prime powers belonging to each prime. Uniqueness of the invariant factors gives uniqueness of the prime-power multiset and conversely. $\square$</p>
+<p><strong>Proposition (conversion).</strong> The invariant factors are recovered from the elementary divisors by arranging, for each prime $p$, the $p$-powers $p^{e_{p,1}} \le \cdots \le p^{e_{p,t}}$ in nondecreasing order, padding the shorter lists <strong>on the left</strong> with $1$ so that every list has the same length, and taking the invariant factors to be the products of the $j$-th entries; padding on the left is what makes the resulting sequence satisfy $d_j \mid d_{j+1}$. Conversely the elementary divisors are the prime-power factors of the invariant factors.</p>
+<p><em>Proof.</em> For each prime, the invariant factors $d_1 \mid \cdots \mid d_k$ have $p$-adic valuations $v_p(d_1) \le \cdots \le v_p(d_k)$, and the elementary divisors of $p$-power type are the $p^{v_p(d_j)}$ with $v_p(d_j)>0$. The padding makes the $j$-th entries align, and the product formula follows. $\square$</p>
+<p><strong>Example.</strong> The group $\mathbb{Z}/2 \oplus \mathbb{Z}/4 \oplus \mathbb{Z}/3 \oplus \mathbb{Z}/9$ has elementary divisors $2,4,3,9$. Arranging by prime gives $2$-powers $(2,4)$ and $3$-powers $(3,9)$; multiplying aligned entries gives invariant factors $6,36$, so</p>
+<p>$$
+\mathbb{Z}/2 \oplus \mathbb{Z}/4 \oplus \mathbb{Z}/3 \oplus \mathbb{Z}/9 \cong \mathbb{Z}/6\mathbb{Z} \oplus \mathbb{Z}/36\mathbb{Z} ,
+$$</p>
+<p>which agrees with the Chinese remainder theorem: $\mathbb{Z}/4 \oplus \mathbb{Z}/9 \cong \mathbb{Z}/36$ and $\mathbb{Z}/2 \oplus \mathbb{Z}/3 \cong \mathbb{Z}/6$.</p>
+<h3 id="counting-groups-of-a-given-order">Counting Groups of a Given Order</h3>
+<p><strong>Corollary.</strong> Let $n=\prod_{i=1}^{t}p_i^{a_i}$ be the prime factorisation of $n$. The number of abelian groups of order $n$ up to isomorphism equals $\prod_{i=1}^{t}p(a_i)$, where $p(a)$ is the number of partitions of $a$; the abelian groups of order $p^a$ correspond bijectively to the partitions of $a$.</p>
+<p><em>Proof.</em> By the elementary-divisor form an abelian group of order $p^a$ is a direct sum of cyclic $p$-groups whose orders multiply to $p^a$, that is, a partition $a=e_1+\cdots+e_r$ with $e_j \ge 1$; distinct partitions give distinct groups by uniqueness, and the prime-to-$p$ parts multiply independently. $\square$</p>
+<p><strong>Example.</strong> For $n=12=2^2\cdot3$, the count is $p(2)p(1)=2\cdot1=2$: the abelian groups of order $12$ are $\mathbb{Z}/12$ and $\mathbb{Z}/2 \oplus \mathbb{Z}/6$. For $n=8=2^3$, the count is $p(3)=3$: $\mathbb{Z}/8$, $\mathbb{Z}/4 \oplus \mathbb{Z}/2$ and $\mathbb{Z}/2 \oplus \mathbb{Z}/2 \oplus \mathbb{Z}/2$. For $n=72=2^3\cdot3^2$, the count is $p(3)p(2)=3\cdot2=6$.</p>
+<h2 id="summary">Summary</h2>
+<p>A finitely generated abelian group is isomorphic to $\mathbb{Z}^r \oplus \mathbb{Z}/d_1 \oplus \cdots \oplus \mathbb{Z}/d_k$ with $d_1 \mid \cdots \mid d_k$, and the rank $r$ and the invariant factors $d_i$ are uniquely determined; the torsion subgroup is finite and canonical, the quotient by it is free of rank $r$, and the splitting into torsion and free parts exists but is not canonical. Equivalently, by the Chinese remainder theorem, the finite part is a direct sum of cyclic groups of prime-power order, the elementary divisors, uniquely determined as a multiset.</p>
+<p>The classification is computed from a presentation $G \cong \mathbb{Z}^m/\operatorname{col}(\mathcal{A})$ by the Smith normal form of the integer matrix $\mathcal{A}$, which is the diagonal form $\operatorname{diag}(d_1,\dots,d_s,0,\dots,0)$ with $d_1 \mid \cdots \mid d_s$ reached by unimodular row and column operations; then $G \cong \mathbb{Z}^{m-s} \oplus \bigoplus_i\mathbb{Z}/d_i$. The worked computations give $\mathbb{Z}^2/\operatorname{col}\begin{pmatrix}2&1\\1&3\end{pmatrix} \cong \mathbb{Z}/5$, $\mathbb{Z}^3/\operatorname{col}(2,4,6)^{\mathsf{T}} \cong \mathbb{Z}^2 \oplus \mathbb{Z}/2$, and $\mathbb{Z}^2/\operatorname{col}\operatorname{diag}(2,6) \cong \mathbb{Z}/2 \oplus \mathbb{Z}/6$.</p>
+<p>The invariant factors and the elementary divisors determine each other: the $p$-power elementary divisors are the prime-power parts of the invariant factors, and the invariant factors are recovered by aligning the $p$-power lists and multiplying. The number of abelian groups of order $n=\prod p_i^{a_i}$ is $\prod_i p(a_i)$, where $p(a)$ is the partition number, so there are two abelian groups of order $12$, three of order $8$ and six of order $72$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$</td>
+<td>a finitely generated abelian group</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}^r$</td>
+<td>free part of rank $r$</td>
+</tr>
+<tr>
+<td>$G_{\mathrm{tor}}$</td>
+<td>torsion subgroup</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>rank of $G$</td>
+</tr>
+<tr>
+<td>$d_1 \mid \cdots \mid d_k$</td>
+<td>invariant factors</td>
+</tr>
+<tr>
+<td>$p_i^{e_i}$</td>
+<td>elementary divisors</td>
+</tr>
+<tr>
+<td>$\mathcal{A}$, $\operatorname{col}(\mathcal{A})$</td>
+<td>relations matrix and its column space</td>
+</tr>
+<tr>
+<td>$P,Q$, $\operatorname{GL}_m(\mathbb{Z})$</td>
+<td>unimodular matrices, $\det=\pm1$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(d_1,\dots,d_s,0,\dots,0)$</td>
+<td>Smith normal form</td>
+</tr>
+<tr>
+<td>$p(a)$</td>
+<td>number of partitions of $a$</td>
+</tr>
+<tr>
+<td>$v_p(d)$</td>
+<td>$p$-adic valuation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael F. Atiyah and Ian G. Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, 1969), for the structure theorem as a special case of the theory over a principal ideal domain.</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004), for the classification and its elementary proofs.</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Freeman, 2nd ed. 1985), for the theorem over a principal ideal domain.</li>
+<li>Irving Kaplansky, <em>Infinite Abelian Groups</em> (University of Michigan Press, 1954), for the finiteness conditions and their refinements.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for modules over principal ideal domains and applications.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for the Smith normal form in the module-theoretic setting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

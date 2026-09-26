@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rigid-Body Dynamics and the Biquaternion Rotor — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rigid-body-dynamics-and-the-biquaternion-rotor"><strong>Rigid-Body Dynamics and the Biquaternion Rotor</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The rotation group of three-dimensional space is the group $SO(3)$ of orientation matrices, and the motion of a rigid body is a path in that group. Describing the path by a matrix, or by Euler angles, obscures two things: the composition law is matrix multiplication, and the group is not simply connected. Both are transparent in the quaternion description. Unit quaternions form the group $SU(2)$, which is the <strong>double cover</strong> of $SO(3)$; the orientation is a unit quaternion, the composition of rotations is quaternion multiplication, and the double cover exhibits the spinor sign — a rotation by $2\pi$ returns the orientation but sends the rotor to its negative.</p>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains the real quaternions as a subalgebra, so the rotor description of rotations is available inside the framework, and the algebra's additional structure — the two sectors and the complex structure — supplies the language for the angular velocity and the angular momentum. This article develops the rigid-body dynamics in that language. The main results are these.</p>
+<ol>
+<li><strong>Orientation is a rotor.</strong> A rotation is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=e_0$, acting on a vector by $\tilde X\mapsto\tilde R\tilde X\tilde R^\dagger$; the body axes are $\tilde R e_k\tilde R^\dagger$.</li>
+<li><strong>Angular velocity is the logarithmic derivative of the rotor.</strong> The body-frame angular velocity is $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$ and the space-frame angular velocity is $\tilde\omega_s=+2\dot{\tilde R}\bar{\tilde R}$; both are real pure quaternions, and $\tilde\omega_s=\tilde R\tilde\omega_b\bar{\tilde R}$.</li>
+<li><strong>The kinetic energy is the inertia form of the angular velocity, and the free isotropic top's is the norm form.</strong> For a spherical top, $T=\frac{\lambda}{2}N(\tilde\omega_b)$; for a general top, $T=\frac12\boldsymbol\omega_b\cdot I\boldsymbol\omega_b$, with the inertia tensor a symmetric positive-definite operator on the real vector part.</li>
+<li><strong>Euler's equations are one quaternion equation.</strong> In the body frame, $\dot{\tilde L}=\frac12[\tilde L,\tilde\omega_b]+\tilde\tau$; the commutator is the cross product.</li>
+<li><strong>The free symmetric top is integrable in closed form</strong>, and its rotor is a product of two one-parameter subgroups; the general free top is Euler's classical problem.</li>
+</ol>
+<p>The article is classical and non-relativistic. The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; $\bar{\cdot}$ is quaternion conjugation and ${}^\dagger$ the Hermitian conjugation. The rotation convention is the corpus convention: a rotation by angle $\alpha$ about the unit vector $\hat{\mathbf n}$ is generated by $g=+\frac12\hat{\mathbf n}$ and is the rotor</p>
+<p>$$
+\tilde R=\exp\!\left(+\tfrac{\alpha}{2}\hat{\mathbf n}\right)=\cos\tfrac{\alpha}{2}\,e_0+\sin\tfrac{\alpha}{2}\,\hat{\mathbf n},
+$$</p>
+<p>acting by conjugation. The norm form is $N(\tilde Q)=\tilde Q\bar{\tilde Q}$. Inertia tensors are written in the principal (body) frame with principal moments $I_1,I_2,I_3$, and $\mathbf L=I\boldsymbol\omega$ is the angular momentum.</p>
+<p>The companion articles used are:
+- Companion article <em>Angular Momentum and Spin in Biquaternionic Form</em>, for the generators of rotations and the rotor algebra.
+- Companion article <em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em>, for the flow generated by a rotor and the coadjoint orbit.
+- Companion article <em>The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form</em>, for the rotor action and its geodesic extremals.
+- Companion article <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the real vector part and the norm form.</p>
+<h2 id="the-rigid-body-in-standard-form">The Rigid Body in Standard Form</h2>
+<p>A rigid body is described by an orientation and a set of principal moments of inertia. Let $\mathbf e_1,\mathbf e_2,\mathbf e_3$ be the body axes, fixed in the body, and let $\boldsymbol\omega$ be the <strong>angular velocity</strong>, defined by</p>
+<p>$$
+\frac{d\mathbf e_k}{dt}=\boldsymbol\omega\times\mathbf e_k .
+$$</p>
+<p>The <strong>angular momentum</strong> is $\mathbf L=I\boldsymbol\omega$, where $I$ is the symmetric positive-definite inertia tensor; in the principal frame $I=\mathrm{diag}(I_1,I_2,I_3)$. The <strong>kinetic energy</strong> of rotation is</p>
+<p>$$
+T=\tfrac12\boldsymbol\omega\cdot I\boldsymbol\omega=\tfrac12\mathbf L\cdot\boldsymbol\omega .
+$$</p>
+<p>For an isolated body the angular momentum is conserved in the space frame, and in the body frame its rate of change is the torque:</p>
+<p>$$
+\dot{\mathbf L}_{\text{space}}=\boldsymbol\tau_{\text{space}},\qquad
+\dot{\mathbf L}+\boldsymbol\omega\times\mathbf L=\boldsymbol\tau .
+$$</p>
+<p>The body-frame equation, with $\mathbf L=I\boldsymbol\omega$, is <strong>Euler's equation</strong></p>
+<p>$$
+I\dot{\boldsymbol\omega}+\boldsymbol\omega\times I\boldsymbol\omega=\boldsymbol\tau ,
+$$</p>
+<p>whose principal-frame components are</p>
+<p>$$
+I_1\dot\omega_1=(I_2-I_3)\omega_2\omega_3+\tau_1,\quad
+I_2\dot\omega_2=(I_3-I_1)\omega_3\omega_1+\tau_2,\quad
+I_3\dot\omega_3=(I_1-I_2)\omega_1\omega_2+\tau_3 .
+$$</p>
+<p>Two integrals are immediate for a torque-free body: the energy $T$ and the squared angular momentum $\mathbf L^2$. Their level sets are an ellipsoid and a sphere; the body-frame angular momentum moves on their intersection, the <strong>polhode</strong>, and the point of contact of the rolling ellipsoid traces the <strong>herpolhode</strong> on the fixed invariable plane. This geometric picture is due to Poinsot.</p>
+<h2 id="the-orientation-rotor">The Orientation Rotor</h2>
+<h3 id="the-double-cover">The Double Cover</h3>
+<p>A unit real quaternion $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=\tilde R\bar{\tilde R}=e_0$, defines a rotation by conjugation,</p>
+<p>$$
+\tilde X\longmapsto\tilde R\,\tilde X\,\tilde R^\dagger=\tilde R\,\tilde X\,\bar{\tilde R},
+\qquad \tilde X\in\mathbb{H}_{\mathbb{B}} .
+$$</p>
+<p>For a pure vector $\mathbf x$ the image is again a pure vector, and the map preserves the norm form and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde R\mapsto(\tilde X\mapsto\tilde R\tilde X\bar{\tilde R})$ is two-to-one, since $\tilde R$ and $-\tilde R$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are</p>
+<p>$$
+\mathbf e_k^{b}=\tilde R\,e_k\,\bar{\tilde R},
+$$</p>
+<p>obtained by rotating the space axes by the rotor. The rotor for a rotation by angle $\alpha$ about $\hat{\mathbf n}$ is $\tilde R=\cos\frac\alpha2+\sin\frac\alpha2\hat{\mathbf n}$, and at $\alpha=2\pi$ it is $\tilde R=-e_0$: the orientation has returned but the rotor has not. This sign is the spinor sign, and it is a genuine feature of the description, not an artefact; it is what distinguishes a rotor from an orientation matrix. The body axes rotate by $+\alpha$, in the sense of the standard definition $d\mathbf e_k/dt=\boldsymbol\omega\times\mathbf e_k$; the logarithmic derivatives of the following section use that sign.</p>
+<h3 id="composition-and-inverses">Composition and Inverses</h3>
+<p>The composition of rotations is quaternion multiplication: if $\tilde R_1$ and $\tilde R_2$ are rotors, the rotation $\tilde R_1$ followed by $\tilde R_2$ is the rotor $\tilde R_2\tilde R_1$. The inverse of $\tilde R$ is its quaternion conjugate, $\tilde R^{-1}=\bar{\tilde R}$, because $N(\tilde R)=e_0$. The group is noncommutative: the product of rotations about different axes depends on their order, and the mismatch is the quaternion commutator, which is twice the cross product of the generators.</p>
+<h2 id="angular-velocity-from-the-rotor">Angular Velocity from the Rotor</h2>
+<h3 id="body-and-space-angular-velocities">Body and Space Angular Velocities</h3>
+<p>Differentiate the rotor and form the two logarithmic derivatives</p>
+<p>$$
+\tilde\omega_b=+2\,\bar{\tilde R}\,\dot{\tilde R},\qquad
+\tilde\omega_s=+2\,\dot{\tilde R}\,\bar{\tilde R}.
+$$</p>
+<p>Both are <strong>real pure quaternions</strong>. The claim is immediate from the constraint: $\bar{\tilde R}\dot{\tilde R}$ is real because both factors are real, and its scalar part is</p>
+<p>$$
+\mathrm{Sc}\!\left(\bar{\tilde R}\dot{\tilde R}\right)=\tfrac12\frac{d}{dt}\,\mathrm{Sc}\!\left(\bar{\tilde R}\tilde R\right)=\tfrac12\frac{d}{dt}N(\tilde R)=0 ,
+$$</p>
+<p>so $\bar{\tilde R}\dot{\tilde R}$ has no scalar part; the same argument applies to $\dot{\tilde R}\bar{\tilde R}$. Hence</p>
+<p>$$
+\tilde\omega_b,\tilde\omega_s\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_- ,
+$$</p>
+<p>the real vector part, exactly the space in which ordinary three-vectors live in this algebra.</p>
+<p>The two velocities are related by the rotor itself. From $\tilde\omega_s=+2\dot{\tilde R}\bar{\tilde R}$ and $\dot{\tilde R}=\tilde R\left(\bar{\tilde R}\dot{\tilde R}\right)$,</p>
+<p>$$
+\tilde\omega_s=+2\,\tilde R\left(\bar{\tilde R}\dot{\tilde R}\right)\bar{\tilde R}=\tilde R\,\tilde\omega_b\,\bar{\tilde R},
+$$</p>
+<p>so the space-frame angular velocity is the body-frame angular velocity carried to the space frame by the rotor. This is the biquaternion form of the statement that the two angular velocities differ by a rotation.</p>
+<h3 id="check-on-a-fixed-axis">Check on a Fixed Axis</h3>
+<p>For a rotation about a fixed axis $\hat{\mathbf n}$ at rate $\omega$, the rotor is $\tilde R(t)=\exp(+\tfrac12\omega t\,\hat{\mathbf n})$. Then $\dot{\tilde R}=+\tfrac12\omega\hat{\mathbf n}\tilde R$, and since $\hat{\mathbf n}$ is constant and commutes with $\tilde R$,</p>
+<p>$$
+\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}
+=+2\bar{\tilde R}\!\left(+\tfrac12\omega\hat{\mathbf n}\tilde R\right)
+=\omega\hat{\mathbf n},\qquad
+\tilde\omega_s=\omega\hat{\mathbf n} .
+$$</p>
+<p>Both angular velocities equal the physical angular velocity vector, as they must for rotation about a fixed axis: the body axes $\tilde Re_k\bar{\tilde R}$ turn about $\hat{\mathbf n}$ at the rate $\omega$ in the sense of $d\mathbf e_k/dt=\boldsymbol\omega\times\mathbf e_k$.</p>
+<h3 id="the-rotor-equation">The Rotor Equation</h3>
+<p>Inverting the definition of $\tilde\omega_b$ gives the <strong>rotor equation</strong></p>
+<p>$$
+\dot{\tilde R}=+\tfrac12\,\tilde R\,\tilde\omega_b=+\tfrac12\,\tilde\omega_s\,\tilde R .
+$$</p>
+<p>For a given angular-velocity history this is a linear equation for $\tilde R$, and once the body-frame angular velocity is known from Euler's equation, the rotor is obtained by integrating it. The rotor equation is the bridge between the dynamics in the body frame and the orientation in the space frame.</p>
+<h2 id="kinetic-energy-angular-momentum-and-inertia">Kinetic Energy, Angular Momentum, and Inertia</h2>
+<h3 id="the-inertia-form">The Inertia Form</h3>
+<p>The inertia tensor is a symmetric positive-definite operator on the real vector part. In the principal body frame it acts as</p>
+<p>$$
+I(\tilde\omega_b)=\sum_{k=1}^{3}I_k\,\omega_k\,e_k ,
+$$</p>
+<p>and the kinetic energy and angular momentum are</p>
+<p>$$
+T=-\tfrac12\,\mathrm{Sc}\!\left(\tilde\omega_b\,\tilde L_b\right)
+=\tfrac12\sum_k I_k\omega_k^2 ,
+\qquad
+\tilde L_b=I(\tilde\omega_b)=\sum_k I_k\omega_k e_k ,
+$$</p>
+<p>using $\mathrm{Sc}(\tilde a\tilde b)=-\mathbf a\cdot\mathbf b$ for pure real quaternions. The scalar part here is negative-definite because the quaternion product of two pure vectors has the sign of the negative dot product; the two minus signs give a positive energy.</p>
+<p><strong>Spherical top.</strong> If the three principal moments are equal, $I_1=I_2=I_3=\lambda$, the inertia operator is $\lambda$ times the identity on the real vector part and</p>
+<p>$$
+T=\tfrac{\lambda}{2}\,\mathbf\omega^2=\tfrac{\lambda}{2}\,N(\tilde\omega_b) ,
+\qquad
+\tilde L_b=\lambda\tilde\omega_b .
+$$</p>
+<p>The kinetic energy of a spherical top is the <strong>norm form</strong> of the body angular velocity. This is the rigid-body appearance of the same structural fact that the preceding articles established for the free particle and the rotor action: the algebra's norm form is the free kinetic energy. The general inertia tensor is a positive-definite symmetric deformation of the norm form, and its principal axes are the directions in which the deformation is diagonal.</p>
+<h3 id="the-two-integrals">The Two Integrals</h3>
+<p>For a torque-free body the space-frame angular momentum is constant and the energy is constant. In the biquaternion language,</p>
+<p>$$
+N(\tilde L)=\mathbf L^2 ,\qquad
+T=-\tfrac12\,\mathrm{Sc}\!\left(\tilde\omega_b\tilde L_b\right),
+$$</p>
+<p>and both are conserved. The level set of $N(\tilde L)$ is a sphere in the angular-momentum space, and the level set of $T$ is an ellipsoid; the body-frame motion is their intersection. The <strong>norm-form cone</strong> $N(\tilde L)=0$ is the degenerate case of zero angular momentum, where the sphere shrinks to a point; the polhode lives on the nonzero level sets, and the cone is the singular boundary of the family. This is the rigid-body instance of the cone's role as the degeneracy locus of a family of coadjoint orbits.</p>
+<h2 id="eulers-equations-in-biquaternion-form">Euler's Equations in Biquaternion Form</h2>
+<p>The body-frame Euler equation $\dot{\mathbf L}+\boldsymbol\omega\times\mathbf L=\boldsymbol\tau$ becomes a single quaternion equation. For pure real quaternions the vector part of the product is the cross product,</p>
+<p>$$
+\mathrm{Ve}\!\left(\tilde\omega_b\tilde L_b\right)=\boldsymbol\omega\times\mathbf L ,
+\qquad
+\mathrm{Ve}\!\left(\tilde\omega_b\tilde L_b\right)=\tfrac12\left[\tilde\omega_b,\tilde L_b\right],
+$$</p>
+<p>so the equation is</p>
+<p>$$
+\boxed{\;\dot{\tilde L}_b=\tfrac12\left[\tilde L_b,\tilde\omega_b\right]+\tilde\tau\;}
+\qquad\text{(body frame).}
+$$</p>
+<p>A torque-free body has $\dot{\tilde L}_b=\frac12[\tilde L_b,\tilde\omega_b]$: the bracket is $\mathbf L_b\times\boldsymbol\omega_b$, perpendicular to both, so in the body frame the angular momentum precesses about the instantaneous angular velocity while the space-frame angular momentum stays fixed. For the spherical top, $\tilde L_b=\lambda\tilde\omega_b$ commutes with $\tilde\omega_b$ and the bracket vanishes: the body angular velocity is constant, and the rotor is a one-parameter subgroup. For the general top the bracket is nonzero and drives the precession.</p>
+<p>The same equation can be written with the inertia operator. Since $\tilde L_b=I(\tilde\omega_b)$ and $I$ is constant in the body frame,</p>
+<p>$$
+I\!\left(\dot{\tilde\omega}_b\right)+\tfrac12\left[\tilde\omega_b,I(\tilde\omega_b)\right]=\tilde\tau ,
+$$</p>
+<p>which is Euler's equation in the principal frame. In the space frame the torque-free statement is simply $\dot{\tilde L}_s=0$, with $\tilde L_s=\tilde R\tilde L_b\bar{\tilde R}$.</p>
+<h2 id="the-free-symmetric-top">The Free Symmetric Top</h2>
+<p>For a symmetric top, $I_1=I_2=I_\perp$ and $I_3$ is the moment about the symmetry axis. The principal-frame equations without torque are</p>
+<p>$$
+I_\perp\dot\omega_1=(I_\perp-I_3)\omega_2\omega_3,\qquad
+I_\perp\dot\omega_2=(I_3-I_\perp)\omega_3\omega_1,\qquad
+I_3\dot\omega_3=(I_1-I_2)\omega_1\omega_2=0 .
+$$</p>
+<p>Hence $\omega_3$ is constant, and with</p>
+<p>$$
+\Omega=\frac{I_3-I_\perp}{I_\perp}\,\omega_3
+$$</p>
+<p>the transverse components satisfy $\dot\omega_1=-\Omega\omega_2$, $\dot\omega_2=\Omega\omega_1$; equivalently</p>
+<p>$$
+\omega_1+i\omega_2=\left(\omega_1(0)+i\omega_2(0)\right)e^{\,i\Omega t}.
+$$</p>
+<p>The body-frame angular velocity has constant component along the symmetry axis and rotates in the transverse plane at rate $\Omega$; the body-frame angular momentum does the same with the same rate, and the polhode is a circle about the symmetry axis.</p>
+<p>The rotor is a product of one-parameter subgroups. Writing the motion in terms of the spin $\psi$ about the symmetry axis and the precession $\phi$ of that axis, and taking the space axis $e_3$ along the conserved angular momentum, as the standard treatment does, the torque-free symmetric top has the <strong>regular precession</strong></p>
+<p>$$
+\theta=\text{const},\qquad \dot\psi=-\Omega,\qquad \dot\phi=\frac{\omega_3+\Omega}{\cos\theta},
+$$</p>
+<p>so that the rotor is</p>
+<p>$$
+\tilde R(t)=\exp\!\left(+\tfrac{\phi(t)}{2}e_3\right)\exp\!\left(+\tfrac{\theta}{2}e_2\right)\exp\!\left(+\tfrac{\psi(t)}{2}e_3\right),
+$$</p>
+<p>a product of three rotations, of which two are time-dependent one-parameter subgroups and one is constant. The general free top ($I_1,I_2,I_3$ all distinct) is not a one-parameter subgroup; its solution is Euler's problem, and the body-frame angular velocity is given by Jacobi elliptic functions. The biquaternion form changes nothing about that classical integrability and its elliptic character; it expresses the orientation as a rotor and the equation as a commutator.</p>
+<h2 id="euler-angles-and-the-rotor">Euler Angles and the Rotor</h2>
+<p>The rotor can be parametrised by Euler angles. With the sequence $z$–$y$–$z$ and the corpus rotation convention,</p>
+<p>$$
+\tilde R(\phi,\theta,\psi)
+=\exp\!\left(+\tfrac{\phi}{2}e_3\right)
+ \exp\!\left(+\tfrac{\theta}{2}e_2\right)
+ \exp\!\left(+\tfrac{\psi}{2}e_3\right).
+$$</p>
+<p>Computing $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$ gives the body-frame components</p>
+<p>$$
+\omega_1=\dot\theta\sin\psi-\dot\phi\sin\theta\cos\psi,\qquad
+\omega_2=\dot\phi\sin\theta\sin\psi+\dot\theta\cos\psi,\qquad
+\omega_3=\dot\phi\cos\theta+\dot\psi ,
+$$</p>
+<p>where the labels $(1,2,3)$ refer to the body axes and the assignment of the angles $(\phi,\theta,\psi)$ to precession, nutation, and spin is the stated convention. The verification is a direct differentiation of the rotor; the components above are what it yields. The kinetic energy in terms of the Euler angles is then $T=\frac12\sum_k I_k\omega_k^2$ with these $\omega_k$, which is the standard Euler-angle Lagrangian of the rigid body.</p>
+<h2 id="the-heavy-symmetric-top">The Heavy Symmetric Top</h2>
+<p>Adding gravity to a symmetric top whose centre of mass is displaced along the symmetry axis gives the <strong>Lagrange top</strong>. With the symmetry axis at polar angle $\theta$ and the potential $Mgl\cos\theta$, the Lagrangian in Euler angles is</p>
+<p>$$
+L=\tfrac12 I_\perp\!\left(\dot\theta^2+\dot\phi^2\sin^2\theta\right)
++\tfrac12 I_3\!\left(\dot\psi+\dot\phi\cos\theta\right)^2
+-Mgl\cos\theta .
+$$</p>
+<p>The coordinates $\phi$ and $\psi$ are cyclic, so their conjugate momenta</p>
+<p>$$
+p_\psi=I_3\left(\dot\psi+\dot\phi\cos\theta\right),\qquad
+p_\phi=I_\perp\dot\phi\sin^2\theta+p_\psi\cos\theta
+$$</p>
+<p>are conserved, and the problem reduces to one-dimensional motion in an effective potential</p>
+<p>$$
+V_{\mathrm{eff}}(\theta)=\frac{(p_\phi-p_\psi\cos\theta)^2}{2I_\perp\sin^2\theta}+Mgl\cos\theta ,
+$$</p>
+<p>with the energy $\frac12I_\perp\dot\theta^2+V_{\mathrm{eff}}(\theta)=E$. The resulting motion is nutation in $\theta$ with simultaneous precession and spin; the rotor is again a product of three rotations, now with $\theta$ time-dependent. In the biquaternion description the Lagrangian is a function of the angular velocity $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$ and of the rotor itself through the gravitational potential, so it is a Lagrangian on the group with a potential; the Euler–Lagrange equation is the rotor equation with the gravitational torque.</p>
+<h2 id="the-norm-form-and-the-inertia-ellipsoid">The Norm Form and the Inertia Ellipsoid</h2>
+<p>The Poinsot picture is a norm-form picture. The angular momentum sphere is</p>
+<p>$$
+N(\tilde L)=\mathbf L^2 ,
+$$</p>
+<p>a level set of the norm form on the real vector part; the energy ellipsoid is</p>
+<p>$$
+T=\tfrac12\,\mathbf L\cdot I^{-1}\mathbf L=E ,
+$$</p>
+<p>a level set of the inertia form. The body-frame motion is the intersection of the two, and the instantaneous angular velocity is normal to the energy ellipsoid at the point of contact, since the normal to $\frac12\mathbf L\cdot I^{-1}\mathbf L=E$ at $\mathbf L$ is $I^{-1}\mathbf L=\boldsymbol\omega$. The <strong>inertia ellipsoid</strong> itself is the level set $\frac12\boldsymbol\omega\cdot I\boldsymbol\omega=1$ of the inertia form, whose normal at $\boldsymbol\omega$ is the fixed vector $\mathbf L$; that is the ellipsoid that rolls on the invariable plane in Poinsot's construction. The <strong>norm-form sphere</strong> $N(\tilde L)=\text{const}$ is the momentum sphere. For the spherical top the norm-form sphere and the energy ellipsoid coincide up to scale, the polhode degenerates to a single point, and the motion is a one-parameter subgroup; for the symmetric top the polhode is a circle about the symmetry axis; for the general top the two surfaces are distinct and their intersection is the polhode.</p>
+<p>The construction shows the two canonical quadratic forms of the algebra at work in the same problem: the norm form supplies the conservation of $\mathbf L^2$, and the inertia form supplies the conservation of the energy. The norm-form cone $N(\tilde L)=0$ is the degenerate momentum sphere, and on it the polhode collapses to a point; the nonzero level sets are the orbits on which the body-frame motion lives.</p>
+<h2 id="what-is-structural-and-what-is-familiar">What Is Structural and What Is Familiar</h2>
+<p><strong>Familiar, rewritten.</strong> Euler's equations, the symmetric-top solution, the Lagrange top, Poinsot's construction, and the elliptic solution of the general free top are classical rigid-body mechanics, cited as such. Euler angles and their angular velocities are standard.</p>
+<p><strong>Structurally the algebra's.</strong></p>
+<ol>
+<li>The orientation is a rotor $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=e_0$, and the composition of rotations is quaternion multiplication; the double cover is visible as the spinor sign $\tilde R\to-\tilde R$ at $2\pi$.</li>
+<li>The angular velocity is the logarithmic derivative of the rotor, $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$ and $\tilde\omega_s=+2\dot{\tilde R}\bar{\tilde R}$, and both lie in the real vector part, which is exactly where three-vectors live in the algebra.</li>
+<li>The spherical top's kinetic energy is the <strong>norm form</strong> $\frac{\lambda}{2}N(\tilde\omega_b)$; a general inertia tensor is a positive-definite symmetric deformation of the norm form on the real vector part.</li>
+<li>Euler's equations are one quaternion equation with a commutator, $\dot{\tilde L}_b=\frac12[\tilde L_b,\tilde\omega_b]+\tilde\tau$, the commutator being twice the cross product.</li>
+<li>The conservation of $\mathbf L^2$ is the conservation of the norm form $N(\tilde L)$; the Poinsot construction is the intersection of a norm-form sphere with the energy ellipsoid, and the norm-form cone is the degenerate sphere.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The rigid body is described in the biquaternion algebra as follows.</p>
+<ul>
+<li>The orientation is a unit real quaternion (rotor) $\tilde R$, $N(\tilde R)=e_0$, acting by $\tilde X\mapsto\tilde R\tilde X\bar{\tilde R}$; the body axes are $\tilde Re_k\bar{\tilde R}$. Unit quaternions form $SU(2)$, the double cover of $SO(3)$.</li>
+<li>The body- and space-frame angular velocities are $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$ and $\tilde\omega_s=+2\dot{\tilde R}\bar{\tilde R}$, both real pure quaternions, related by $\tilde\omega_s=\tilde R\tilde\omega_b\bar{\tilde R}$. The rotor equation is $\dot{\tilde R}=+\frac12\tilde R\tilde\omega_b$.</li>
+<li>The kinetic energy and angular momentum are $T=-\frac12\mathrm{Sc}(\tilde\omega_b\tilde L_b)=\frac12\boldsymbol\omega_b\cdot I\boldsymbol\omega_b$ and $\tilde L_b=I(\tilde\omega_b)$; for a spherical top $T=\frac{\lambda}{2}N(\tilde\omega_b)$.</li>
+<li>The body-frame Euler equation is $\dot{\tilde L}_b=\frac12[\tilde L_b,\tilde\omega_b]+\tilde\tau$, equivalently $I(\dot{\tilde\omega}_b)+\frac12[\tilde\omega_b,I(\tilde\omega_b)]=\tilde\tau$.</li>
+<li>The free symmetric top has $\omega_3$ constant, transverse angular velocity rotating at $\Omega=(I_3-I_\perp)\omega_3/I_\perp$, and regular precession in Euler angles; the general free top is Euler's elliptic problem.</li>
+<li>The Euler-angle rotor is $\tilde R=\exp(+\frac\phi2e_3)\exp(+\frac\theta2e_2)\exp(+\frac\psi2e_3)$, with body components $\omega_1=\dot\theta\sin\psi-\dot\phi\sin\theta\cos\psi$, $\omega_2=\dot\phi\sin\theta\sin\psi+\dot\theta\cos\psi$, $\omega_3=\dot\phi\cos\theta+\dot\psi$.</li>
+<li>The heavy symmetric top has the standard Euler-angle Lagrangian with cyclic $\phi,\psi$ and one-dimensional effective motion in $\theta$.</li>
+<li>The Poinsot construction is the intersection of the norm-form sphere $N(\tilde L)=\text{const}$ and the energy ellipsoid $\frac12\mathbf L\cdot I^{-1}\mathbf L=E$; the norm-form cone is the degenerate momentum sphere.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$</td>
+<td>Orientation rotor (unit real quaternion)</td>
+</tr>
+<tr>
+<td>$\tilde X\mapsto\tilde R\tilde X\bar{\tilde R}$</td>
+<td>Rotation by rotor conjugation</td>
+</tr>
+<tr>
+<td>$e_k^{b}=\tilde Re_k\bar{\tilde R}$</td>
+<td>Body axes</td>
+</tr>
+<tr>
+<td>$\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$</td>
+<td>Body-frame angular velocity</td>
+</tr>
+<tr>
+<td>$\tilde\omega_s=+2\dot{\tilde R}\bar{\tilde R}=\tilde R\tilde\omega_b\bar{\tilde R}$</td>
+<td>Space-frame angular velocity</td>
+</tr>
+<tr>
+<td>$I(\tilde\omega_b)=\sum_kI_k\omega_ke_k$</td>
+<td>Inertia operator (principal frame)</td>
+</tr>
+<tr>
+<td>$\tilde L_b=I(\tilde\omega_b)$</td>
+<td>Body-frame angular momentum</td>
+</tr>
+<tr>
+<td>$T=-\frac12\mathrm{Sc}(\tilde\omega_b\tilde L_b)$</td>
+<td>Rotational kinetic energy</td>
+</tr>
+<tr>
+<td>$\dot{\tilde L}_b=\frac12[\tilde L_b,\tilde\omega_b]+\tilde\tau$</td>
+<td>Euler's equation (body frame)</td>
+</tr>
+<tr>
+<td>$N(\tilde L)=\mathbf L^2$</td>
+<td>Squared angular momentum (norm form)</td>
+</tr>
+<tr>
+<td>$\Omega=(I_3-I_\perp)\omega_3/I_\perp$</td>
+<td>Body-frame precession rate of the symmetric top</td>
+</tr>
+<tr>
+<td>$(\phi,\theta,\psi)$</td>
+<td>Euler angles ($z$–$y$–$z$ sequence)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>L. D. Landau and E. M. Lifshitz, <em>Mechanics</em> (Pergamon, 1976), for the rigid body, Euler's equations, and the symmetric top.</li>
+<li>H. Goldstein, C. P. Poole, and J. L. Safko, <em>Classical Mechanics</em> (Addison-Wesley, 2002), for Euler angles, the heavy symmetric top, and the elliptic solution of the free top.</li>
+<li>V. I. Arnold, <em>Mathematical Methods of Classical Mechanics</em> (Springer, 1989), for the rigid body as a geodesic flow on $SO(3)$ and the Euler–Poinsot picture.</li>
+<li>L. Euler, "Du mouvement de rotation des corps solides autour d'un axe variable," <em>Mémoires de l'Académie des Sciences de Berlin</em> (1758), for the original equations of rigid-body motion.</li>
+<li>L. Poinsot, <em>Théorie nouvelle de la rotation des corps</em> (Bachelier, 1851), for the inertia ellipsoid and the polhode.</li>
+<li>W. R. Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, 1853), for the quaternion composition of rotations.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the rotor description of rigid-body motion.</li>
+<li>Jerrold E. Marsden and Tudor S. Ratiu, <em>Introduction to Mechanics and Symmetry</em> (Springer, 1999), for the rigid body as an Euler–Poincaré system on the rotation group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

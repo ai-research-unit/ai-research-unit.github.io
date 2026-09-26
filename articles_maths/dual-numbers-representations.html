@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual Numbers Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dual-numbers-representations"><strong>Dual Numbers Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the representation theory of the dual number algebra. The goal is to define representations precisely, classify them, and describe the structure of the representation ring.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The article is stated for an arbitrary commutative ring $R$ in which $2$ is invertible, and no finiteness assumption is made unless stated.</p>
+<p>Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and the split complex algebra is denoted $\mathbb{D}$. The notation is chosen so that the two do not collide. The unit of $\mathbb{D}'$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
+<h2 id="representations-of-math7">Representations of $\mathbb{D}'$</h2>
+<h3 id="definition">Definition</h3>
+<p>A <strong>representation</strong> of $\mathbb{D}'$ is an $R$-module $V$ together with a bilinear map</p>
+<p>$$
+\rho : \mathbb{D}' \times V \to V, \qquad \rho(z, v) = z \cdot v,
+$$</p>
+<p>satisfying</p>
+<p>$$
+z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
+$$</p>
+<p>Equivalently, a representation is an algebra homomorphism</p>
+<p>$$
+\rho : \mathbb{D}' \to \operatorname{End}_R(V).
+$$</p>
+<p>Since $\mathbb{D}'$ is commutative, the image of $\rho$ is a commutative subalgebra of $\operatorname{End}_R(V)$.</p>
+<h3 id="the-action-of-the-nilpotent">The Action of the Nilpotent</h3>
+<p>The unit $\varepsilon$ acts as an $R$-linear endomorphism</p>
+<p>$$
+E = \rho(\varepsilon) \in \operatorname{End}_R(V),
+$$</p>
+<p>and the defining relation $\varepsilon^2 = 0$ forces</p>
+<p>$$
+E^2 = 0.
+$$</p>
+<p>So a representation of $\mathbb{D}'$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $a + b\varepsilon$ is</p>
+<p>$$
+(a + b\varepsilon) \cdot v = a v + b E(v).
+$$</p>
+<p>This is the fundamental structural fact about representations of $\mathbb{D}'$: they are determined by a single square-zero endomorphism.</p>
+<h3 id="the-regular-representation">The Regular Representation</h3>
+<p>The <strong>regular representation</strong> of $\mathbb{D}'$ is $\mathbb{D}'$ acting on itself by left multiplication:</p>
+<p>$$
+\rho_{\mathrm{reg}}(z) w = z w, \qquad z, w \in \mathbb{D}'.
+$$</p>
+<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(z) = z$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $a + b\varepsilon$ to $a \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.</p>
+<h3 id="the-trivial-representation">The Trivial Representation</h3>
+<p>The <strong>trivial representation</strong> (or <strong>augmentation representation</strong>) is the one-dimensional representation on $R$ defined by</p>
+<p>$$
+\rho_{\mathrm{triv}}(a + b\varepsilon) = a.
+$$</p>
+<p>This is the representation that sends $\varepsilon$ to zero. It is the quotient of the regular representation by the maximal ideal.</p>
+<h3 id="the-standard-representation">The Standard Representation</h3>
+<p>The <strong>standard representation</strong> is the one-dimensional representation on $R$ defined by</p>
+<p>$$
+\rho_{\mathrm{std}}(a + b\varepsilon) = a.
+$$</p>
+<p>This coincides with the trivial representation. In the dual case, there is no non-trivial one-dimensional representation, because every algebra homomorphism $\mathbb{D}' \to R$ must send $\varepsilon$ to an element $c \in R$ with $c^2 = 0$, and the only such element in a reduced ring is $c = 0$. So the trivial representation is the only one-dimensional representation.</p>
+<h2 id="classification">Classification</h2>
+<h3 id="the-classification-theorem">The Classification Theorem</h3>
+<p><strong>Theorem.</strong> Let $V$ be an $R$-module. The representations of $\mathbb{D}'$ on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, via the correspondence</p>
+<p>$$
+E \longleftrightarrow \rho_E(a + b\varepsilon) = a \cdot \mathrm{id}_V + b E.
+$$</p>
+<p><strong>Proof.</strong> Given a representation $\rho$, the endomorphism $E = \rho(\varepsilon)$ satisfies $E^2 = \rho(\varepsilon^2) = 0$. Conversely, given a square-zero endomorphism $E$, the formula $\rho_E(a + b\varepsilon) = a \cdot \mathrm{id}_V + b E$ defines an algebra homomorphism, because</p>
+<p>$$
+\rho_E((a + b\varepsilon)(c + d\varepsilon)) = \rho_E(ac + (ad + bc)\varepsilon) = ac \cdot \mathrm{id}_V + (ad + bc) E,
+$$</p>
+<p>and</p>
+<p>$$
+\rho_E(a + b\varepsilon) \rho_E(c + d\varepsilon) = (a \cdot \mathrm{id}_V + b E)(c \cdot \mathrm{id}_V + d E) = ac \cdot \mathrm{id}_V + (ad + bc) E + bd E^2 = ac \cdot \mathrm{id}_V + (ad + bc) E,
+$$</p>
+<p>since $E^2 = 0$. The two agree. $\square$</p>
+<p>So the representation theory of $\mathbb{D}'$ is equivalent to the theory of square-zero endomorphisms. This is the reason the representation theory is both simple and rich: simple because the endomorphism is square-zero, rich because there are many such endomorphisms.</p>
+<h3 id="direct-sums">Direct Sums</h3>
+<p>The <strong>direct sum</strong> of two representations $(V, E)$ and $(W, F)$ is the representation on $V \oplus W$ with endomorphism</p>
+<p>$$
+E \oplus F : (v, w) \mapsto (E v, F w).
+$$</p>
+<p>It satisfies $(E \oplus F)^2 = E^2 \oplus F^2 = 0$, so it is again a representation.</p>
+<h3 id="irreducible-representations">Irreducible Representations</h3>
+<p><strong>Theorem.</strong> The only irreducible representation of $\mathbb{D}'$ is the trivial representation on $R$.</p>
+<p><strong>Proof.</strong> Let $(V, E)$ be irreducible. If $E \neq 0$, then $\ker E$ is a non-zero proper subrepresentation, because $E^2 = 0$ implies $\ker E \neq 0$ and $\operatorname{im} E \subseteq \ker E$ implies $\ker E \neq V$ when $E \neq 0$. This contradicts irreducibility. So $E = 0$, and the representation is the trivial representation on $V$. For it to be irreducible, $V$ must be one-dimensional over $R$ when $R$ is a field. $\square$</p>
+<p>So the irreducible representations are exactly the trivial ones, indexed by the simple $R$-modules. When $R$ is a field, there is exactly one irreducible representation up to isomorphism, namely the one-dimensional trivial representation.</p>
+<h3 id="indecomposable-representations">Indecomposable Representations</h3>
+<p>A representation $(V, E)$ is <strong>indecomposable</strong> if it cannot be written as a direct sum of two non-zero subrepresentations.</p>
+<p><strong>Theorem.</strong> Let $R$ be a field. The indecomposable representations of $\mathbb{D}'$ are, up to isomorphism:</p>
+<ul>
+<li>The trivial representation on $R$ (with $E = 0$).</li>
+<li>The regular representation on $R^2$ (with $E$ the nilpotent Jordan block of size two).</li>
+</ul>
+<p><strong>Proof.</strong> Let $(V, E)$ be indecomposable with $E \neq 0$. Then $E^2 = 0$ implies $\operatorname{im} E \subseteq \ker E$. Choose a non-zero $v \in \operatorname{im} E$, and choose $w \in V$ with $E w = v$. Then $E v = E^2 w = 0$, so $v \in \ker E$. The subspace spanned by $v$ and $w$ is a subrepresentation isomorphic to the regular representation. If $V$ is larger, it decomposes as the direct sum of this subrepresentation and a complement, contradicting indecomposability. So $V$ is the regular representation. $\square$</p>
+<p>So over a field, there are exactly two indecomposable representations, and the classification is finite. This is the simplest possible representation theory of a non-semisimple algebra.</p>
+<h3 id="the-jordan-form">The Jordan Form</h3>
+<p>Over a field, a square-zero endomorphism $E$ has a Jordan form consisting of blocks of size one (corresponding to the trivial representation) and blocks of size two (corresponding to the regular representation). So an arbitrary representation of $\mathbb{D}'$ decomposes as</p>
+<p>$$
+V \cong R^{\oplus p} \oplus (R^2)^{\oplus q},
+$$</p>
+<p>with $E$ acting as zero on the first summand and as the nilpotent Jordan block on each copy of $R^2$.</p>
+<p>This is the complete classification over a field: the representation is determined by the multiplicities $p$ and $q$.</p>
+<h2 id="schurs-lemma">Schur's Lemma</h2>
+<p><strong>Theorem (Schur).</strong> Every $\mathbb{D}'$-linear endomorphism of an irreducible representation of $\mathbb{D}'$ is a scalar multiple of the identity.</p>
+<p><strong>Proof.</strong> Let $(V, E)$ be irreducible and let $T : V \to V$ be $\mathbb{D}'$-linear, i.e. $T E = E T$. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible and $E = 0$ on $V$, the only subrepresentations are $0$ and $V$. So $T$ is either zero or an isomorphism. In the second case, $T$ is an isomorphism of one-dimensional $R$-modules when $R$ is a field, hence multiplication by a non-zero scalar. $\square$</p>
+<p><strong>Corollary.</strong> The endomorphism ring of the trivial representation is $R$ itself.</p>
+<p><strong>The non-semisimple case.</strong> Schur's lemma fails for non-irreducible representations. For the regular representation, the endomorphism ring is larger than $R$: it consists of all $R$-linear maps commuting with $E$, which is the set of $2 \times 2$ matrices of the form</p>
+<p>$$
+\begin{pmatrix} a & 0 \\ b & a \end{pmatrix}, \qquad a, b \in R.
+$$</p>
+<p>This is a two-dimensional $R$-algebra, isomorphic to $\mathbb{D}'$ itself. So the endomorphism ring of the regular representation is $\mathbb{D}'$.</p>
+<h2 id="the-representation-ring">The Representation Ring</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>representation ring</strong> $R(\mathbb{D}')$ is the Grothendieck ring of finite-dimensional representations of $\mathbb{D}'$ over a field. As an abelian group, it is generated by the isomorphism classes of the indecomposable representations:</p>
+<p>$$
+R(\mathbb{D}') \cong \mathbb{Z} \oplus \mathbb{Z},
+$$</p>
+<p>with generators $[\rho_{\mathrm{triv}}]$ and $[\rho_{\mathrm{reg}}]$, corresponding to the trivial representation and the regular representation.</p>
+<h3 id="ring-structure">Ring Structure</h3>
+<p>The product in $R(\mathbb{D}')$ is given by the tensor product of representations:</p>
+<p>$$
+[V] \cdot [W] = [V \otimes W].
+$$</p>
+<p>The tensor product of two representations $(V, E)$ and $(W, F)$ is the representation on $V \otimes W$ with endomorphism</p>
+<p>$$
+E \otimes \mathrm{id}_W + \mathrm{id}_V \otimes F.
+$$</p>
+<p>This satisfies</p>
+<p>$$
+(E \otimes \mathrm{id}_W + \mathrm{id}_V \otimes F)^2 = E^2 \otimes \mathrm{id}_W + 2 E \otimes F + \mathrm{id}_V \otimes F^2 = 2 E \otimes F,
+$$</p>
+<p>which is zero only when $2 = 0$ or $E \otimes F = 0$. So the tensor product of two representations of $\mathbb{D}'$ is not automatically a representation of $\mathbb{D}'$, unless one of the factors is trivial.</p>
+<p><strong>This is a key difference from the semisimple case.</strong> For a semisimple algebra, the tensor product of two representations is again a representation, because the coproduct is an algebra homomorphism. For $\mathbb{D}'$, the coproduct is not an algebra homomorphism, because $\varepsilon$ is not primitive: the diagonal map $\Delta(\varepsilon) = \varepsilon \otimes 1 + 1 \otimes \varepsilon$ satisfies</p>
+<p>$$
+\Delta(\varepsilon)^2 = 2 \varepsilon \otimes \varepsilon \neq 0.
+$$</p>
+<p>So $\mathbb{D}'$ is not a Hopf algebra, and its representation category is not monoidal in the naive way. The tensor product is defined, but it is not a representation of $\mathbb{D}'$ in general.</p>
+<p><strong>The modified tensor product.</strong> To obtain a monoidal structure, one uses a <strong>deformation</strong> of the coproduct, or one restricts to a subcategory of representations on which the tensor product is well-behaved. This is the starting point of the theory of <strong>Hopf algebroids</strong> and <strong>quantum groups</strong>, where the dual numbers appear as the simplest non-trivial example of a non-cocommutative or non-primitive structure.</p>
+<h2 id="the-dual-representation">The Dual Representation</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>dual</strong> (or contragredient) representation of a representation $(V, E)$ is the representation on the dual module $V^* = \operatorname{Hom}_R(V, R)$ with endomorphism</p>
+<p>$$
+E^* : V^* \to V^*, \qquad (E^* f)(v) = -f(E v).
+$$</p>
+<p>The sign is a convention — $(E^*)^2 = 0$ holds for either choice — and it makes the contragredient action the one induced by dual conjugation, $(z \cdot f)(v) = f(\bar{z} v)$. Indeed,</p>
+<p>$$
+(E^*)^2 f = E^*(E^* f) = - (E^* f) \circ E = f \circ E \circ E = f \circ E^2 = 0.
+$$</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$.</p>
+<p><strong>Duality is exact.</strong> It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.</p>
+<p><strong>The dual of the trivial representation is the trivial representation.</strong> $\rho_{\mathrm{triv}}^* \cong \rho_{\mathrm{triv}}$.</p>
+<p><strong>The dual of the regular representation is the regular representation.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
+<p>So duality acts trivially on the set of indecomposable representations.</p>
+<h2 id="homomorphisms">Homomorphisms</h2>
+<h3 id="definition_3">Definition</h3>
+<p>A <strong>homomorphism</strong> of representations $(V, E)$ and $(W, F)$ is an $R$-linear map $T : V \to W$ such that</p>
+<p>$$
+T \circ E = F \circ T.
+$$</p>
+<p>The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{D}'}(V, W)$.</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Composition.</strong> If $T \in \operatorname{Hom}_{\mathbb{D}'}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{D}'}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{D}'}(V, U)$.</p>
+<p><strong>Schur's lemma.</strong> If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{D}'}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{D}'}(V, V) \cong R$.</p>
+<p><strong>Dimension count over a field.</strong> For $V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}$ and $W \cong R^{\oplus r} \oplus (R^2)^{\oplus s}$,</p>
+<p>$$
+\dim_R \operatorname{Hom}_{\mathbb{D}'}(V, W) = pr + ps + qr + 2qs.
+$$</p>
+<p>The factor of $2$ comes from the endomorphisms of the regular representation, which form a two-dimensional algebra. The cross terms $ps$ and $qr$ come from the one-dimensional spaces $\operatorname{Hom}_{\mathbb{D}'}(R, R^2)$ and $\operatorname{Hom}_{\mathbb{D}'}(R^2, R)$, which are non-zero even though the two indecomposables are non-isomorphic: Schur's lemma constrains only homomorphisms between <strong>irreducible</strong> modules, and the regular representation is not irreducible.</p>
+<p><strong>Proof.</strong> A homomorphism is a block matrix with four types of blocks. The blocks $R^{\oplus p} \to R^{\oplus r}$ give $M_p(R)$, of dimension $pr$; the blocks $(R^2)^{\oplus q} \to (R^2)^{\oplus s}$ give matrices over $\operatorname{End}_{\mathbb{D}'}(R^2) \cong \mathbb{D}'$, of dimension $2qs$. For the cross blocks, $\operatorname{Hom}_{\mathbb{D}'}(R, R^2) \cong \ker E \cong R$ (the image of the generator must lie in the kernel of $E$) and $\operatorname{Hom}_{\mathbb{D}'}(R^2, R) \cong R$ (the map must vanish on the image of $E$), so those contribute $ps$ and $qr$. $\square$</p>
+<h3 id="the-endomorphism-ring">The Endomorphism Ring</h3>
+<p>The <strong>endomorphism ring</strong> of a representation $(V, E)$ is $\operatorname{End}_{\mathbb{D}'}(V) = \operatorname{Hom}_{\mathbb{D}'}(V, V)$. For $V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}$ over a field it has dimension</p>
+<p>$$
+\dim_R \operatorname{End}_{\mathbb{D}'}(V) = p^2 + 2pq + 2q^2.
+$$</p>
+<p>It contains $M_p(R)$ (acting on the trivial summands) and $M_q(\mathbb{D}')$ (acting on the regular summands) as subalgebras, but it is <strong>not</strong> their direct sum when $p, q > 0$: the cross-homomorphisms contribute the extra $2pq$ dimensions. This is not semisimple when $q > 0$, because $\mathbb{D}'$ is not semisimple.</p>
+<h2 id="the-category-of-representations">The Category of Representations</h2>
+<h3 id="the-abelian-category">The Abelian Category</h3>
+<p>The representations of $\mathbb{D}'$ form an abelian category $\mathrm{Rep}(\mathbb{D}')$. The category is not semisimple when $\mathbb{D}'$ is not semisimple, i.e. when $\varepsilon \neq 0$. So there are non-split short exact sequences.</p>
+<h3 id="the-standard-non-split-extension">The Standard Non-Split Extension</h3>
+<p>The fundamental non-split extension is</p>
+<p>$$
+0 \to \rho_{\mathrm{triv}} \to \rho_{\mathrm{reg}} \to \rho_{\mathrm{triv}} \to 0,
+$$</p>
+<p>where the first map is the inclusion of $\ker E$ and the second is the quotient by $\operatorname{im} E$. This sequence does not split, because the regular representation is not the direct sum of two copies of the trivial representation.</p>
+<p>The extension class of this sequence is the generator of $\operatorname{Ext}^1_{\mathbb{D}'}(\rho_{\mathrm{triv}}, \rho_{\mathrm{triv}}) \cong R$. This is the algebraic content of the nilpotence of $\varepsilon$: the extension is non-trivial precisely because $\varepsilon^2 = 0$ but $\varepsilon \neq 0$.</p>
+<h3 id="the-ext-algebra">The Ext Algebra</h3>
+<p>The <strong>Ext algebra</strong> of $\mathbb{D}'$ is</p>
+<p>$$
+\operatorname{Ext}^\bullet_{\mathbb{D}'}(R, R) \cong R[x],
+$$</p>
+<p>the polynomial algebra on one generator of degree one. So $\operatorname{Ext}^i_{\mathbb{D}'}(R, R) \cong R$ in every degree $i \geq 0$: the minimal free resolution $\cdots \to \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \to R \to 0$ has one free module in each degree, and after applying $\operatorname{Hom}_{\mathbb{D}'}(-, R)$ all the differentials vanish because $\varepsilon$ acts as zero on $R$. This is a general phenomenon: for a local ring with maximal ideal $\mathfrak{m}$ satisfying $\mathfrak{m}^2 = 0$, the Ext algebra of the residue field is the Koszul dual, which is the symmetric algebra on the dual of $\mathfrak{m}$ (untruncated).</p>
+<p>So the representation theory of $\mathbb{D}'$ is controlled by the Ext algebra, and the nilpotence of $\varepsilon$ is the source of the non-semisimplicity.</p>
+<h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
+<p>The representation theory of $\mathbb{D}'$ differs from that of the split complex algebra $\mathbb{D}$ in several ways.</p>
+<p><strong>Idempotents versus nilpotents.</strong> The split complex algebra has two non-trivial idempotents $e_+$ and $e_-$, which give two one-dimensional representations. The dual algebra has no non-trivial idempotents, and the only irreducible representation is the trivial one.</p>
+<p><strong>Semisimplicity.</strong> The split complex algebra over a field is isomorphic to $F \oplus F$, which is semisimple. Its representations are direct sums of copies of the two irreducible representations. The dual algebra is local, with nilpotent maximal ideal, and its representations are not semisimple in general.</p>
+<p><strong>Number of indecomposables.</strong> The split complex algebra has two indecomposable representations (the two one-dimensional ones). The dual algebra has two indecomposable representations (the trivial one and the regular one). So both have two, but the structure is different: for $\mathbb{D}$, the two are irreducible; for $\mathbb{D}'$, only one is irreducible, and the other is a non-split extension.</p>
+<p><strong>Tensor products.</strong> The split complex algebra is a Hopf algebra with the componentwise coproduct, and the tensor product of two representations is again a representation. The dual algebra is not a Hopf algebra with the primitive coproduct, because $\varepsilon$ is not primitive. So the tensor product is not a representation in general.</p>
+<p><strong>The representation ring.</strong> For $\mathbb{D}$, the representation ring is $\mathbb{Z} \oplus \mathbb{Z}$, with the two irreducibles as generators, and the multiplication is componentwise. For $\mathbb{D}'$, the representation ring is also $\mathbb{Z} \oplus \mathbb{Z}$, but the multiplication is not defined in the same way, because the tensor product of two non-trivial representations is not a representation.</p>
+<h2 id="summary">Summary</h2>
+<p>A representation of $\mathbb{D}'$ is an $R$-module $V$ together with a bilinear action of the algebra on it, equivalently a unital algebra homomorphism $\mathbb{D}' \to \operatorname{End}_R(V)$. The classification reduces the theory to linear algebra: the representations on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, the representation being recovered from $E$ as the action of $\varepsilon$.</p>
+<p>The theory is not semisimple. Because $\mathbb{D}'$ is a local ring with nilpotent maximal ideal rather than a field, the category of representations is abelian but not semisimple, and the indecomposable representations are not the irreducible ones. Schur's lemma still holds, so an endomorphism of an irreducible representation is a scalar multiple of the identity, while the classification of the indecomposables is governed by the Jordan structure of the nilpotent $E$.</p>
+<p>The article also records the representation ring $R(\mathbb{D}')$, the dual or contragredient representation on $V^*$, and the homomorphisms, the $R$-linear maps $T$ with $T \circ E = F \circ T$. The final section compares the theory with that of the split complex algebra, where the two nontrivial idempotents take the place of the nilpotent and the algebra is correspondingly decomposable.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>Dual number algebra</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>Dual unit, $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>Representation space</td>
+</tr>
+<tr>
+<td>$E = \rho(\varepsilon)$</td>
+<td>Square-zero endomorphism</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{reg}}$</td>
+<td>Regular representation</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{triv}}$</td>
+<td>Trivial representation</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{D}'}(V)$</td>
+<td>Endomorphism ring</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{\mathbb{D}'}(V, W)$</td>
+<td>Space of homomorphisms</td>
+</tr>
+<tr>
+<td>$\operatorname{Ext}^\bullet_{\mathbb{D}'}(R, R)$</td>
+<td>Ext algebra</td>
+</tr>
+<tr>
+<td>$R(\mathbb{D}')$</td>
+<td>Representation ring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Charles C. Pinter, <em>A Book of Abstract Algebra</em> (Dover, 2010), for the representation theory of algebras.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the general theory of modules over rings.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 2002), for the structure theory of local rings.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991), for the theory of algebras over commutative rings.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (AMS, 2005), for the general theory of quadratic forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

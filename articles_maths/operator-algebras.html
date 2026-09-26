@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="operator-algebras"><strong>Operator Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><em>Topological Algebras and Banach Algebras</em> developed algebras carrying a complete norm, and showed that the analytic structure of a Banach algebra already controls its algebra: the unit group is open, the spectrum is nonempty, and a complex Banach division algebra must be $\mathbb{C}$. Operator algebras are the algebras that arise when the Banach algebra is an algebra of bounded operators on a Hilbert space and the norm is supplemented by an involution, the adjoint. The extra structure is rigid enough to make the algebra almost determine itself: a $\mathrm{C}^*$-algebra carries a canonical norm, it has a faithful representation on Hilbert space, and, in the commutative case, it is nothing but an algebra of continuous functions.</p>
+<p>This article develops that theory. It is the analytic counterpart of the structural articles <em>Ideals and Quotients of Algebras</em>, <em>Centre, Units, Zero Divisors and Division Algebras</em> and <em>Automorphisms and Derivations of Algebras</em>, and it uses the Banach-algebra theory throughout. The representation theory of Hilbert-space representations is intrinsic to the subject and is treated here; the module-theoretic representation theory of algebras belongs to category 08. No physics is invoked, and no particular operator algebra of physical origin is developed. Throughout, $A$ denotes a $\mathrm{C}^*$-algebra, $\mathcal{M}$ a von Neumann algebra and $H$ a Hilbert space; the von Neumann algebra is written $\mathcal{M}$ so that the plain letter $M$ keeps its meaning of a module in the structural articles. The modular operators $\Delta_\omega$ and $\varsigma_t^\omega$ are introduced where they are used.</p>
+<h2 id="algebras-of-bounded-operators">Algebras of Bounded Operators</h2>
+<p><strong>Definition.</strong> Let $H$ be a complex Hilbert space with inner product $\langle \cdot, \cdot\rangle$ linear in the first variable. The set $B(H)$ of bounded linear operators on $H$ is a complex algebra under addition, composition and scalar multiplication, with the <strong>operator norm</strong></p>
+<p>$$
+\|T\| = \sup_{\|x\| \leq 1}\|Tx\|,
+$$</p>
+<p>under which it is complete, and with the <strong>adjoint</strong> $T^*$ characterised by</p>
+<p>$$
+\langle Tx, y\rangle = \langle x, T^*y\rangle, \qquad x, y \in H .
+$$</p>
+<p>The map $T \mapsto T^*$ is conjugate-linear, involutive and an anti-automorphism: $(ST)^* = T^*S^*$.</p>
+<p><strong>Proposition (the $\mathrm{C}^*$-identity).</strong> For every $T \in B(H)$,</p>
+<p>$$
+\|T^*T\| = \|T\|^2 .
+$$</p>
+<p><em>Proof.</em> One inequality is $\|T^*T\| \leq \|T^*\|\|T\| = \|T\|^2$ since $\|T^*\| = \|T\|$, which follows from the definition of the adjoint. For the other, $\|Tx\|^2 = \langle Tx, Tx\rangle = \langle x, T^*Tx\rangle \leq \|x\|^2\|T^*T\|$, so $\|T\|^2 \leq \|T^*T\|$. $\square$</p>
+<p><strong>Definition.</strong> A <strong>$\mathrm{C}^*$-algebra</strong> is a complex Banach algebra $A$ with an involution $a \mapsto a^*$ satisfying</p>
+<p>$$
+(ab)^* = b^*a^*, \qquad (a^*)^* = a, \qquad \|a^*a\| = \|a\|^2
+$$</p>
+<p>for all $a, b \in A$. A <strong>$\mathrm{C}^*$-subalgebra</strong> of $B(H)$ is a subalgebra closed in the norm and closed under the adjoint; it is a $\mathrm{C}^*$-algebra in its own right.</p>
+<p><strong>Example.</strong> $B(H)$ itself; the algebra $K(H)$ of compact operators on $H$, which is a $\mathrm{C}^*$-subalgebra without identity unless $H$ is finite-dimensional; $C_0(X)$ for a locally compact Hausdorff space $X$, with pointwise multiplication and complex conjugation, which is a commutative $\mathrm{C}^*$-algebra; and $\mathbb{M}_n(\mathbb{C})$ (<em>Matrix Algebras</em>), the finite-dimensional case.</p>
+<p><strong>Definition.</strong> An element $a$ of a $\mathrm{C}^*$-algebra is <strong>self-adjoint</strong> if $a^* = a$, <strong>normal</strong> if $a^*a = aa^*$, <strong>unitary</strong> if $a^*a = aa^* = 1$, and a <strong>projection</strong> if $a^* = a = a^2$. Every element has a unique decomposition $a = u + iv$ with $u, v$ self-adjoint,</p>
+<p>$$
+u = \tfrac{1}{2}(a + a^*), \qquad v = \tfrac{1}{2i}(a - a^*),
+$$</p>
+<p>so the self-adjoint elements span the algebra over $\mathbb{R}$; the involution is a real-linear anti-automorphism of order two.</p>
+<p><strong>Theorem (spectral theorem for normal operators, standard).</strong> A normal operator $T \in B(H)$ is unitarily equivalent to multiplication by a bounded measurable function on a direct sum of spaces $L^2(\mu)$, and a self-adjoint operator has a <strong>projection-valued measure</strong> $E$ on its spectrum with</p>
+<p>$$
+T = \int_{\sigma(T)} \lambda \, dE(\lambda).
+$$</p>
+<p><strong>Remark.</strong> The spectral theorem is stated for reference; it is standard and is the source of the commutative examples below.</p>
+<h2 id="the-gelfandnaimark-theorems">The Gelfand–Naimark Theorems</h2>
+<p>The rigidity of $\mathrm{C}^*$-algebras begins with the fact that the abstract axioms already force a Hilbert-space representation.</p>
+<p><strong>Theorem (Gelfand–Naimark).</strong> Every $\mathrm{C}^*$-algebra $A$ is isometrically $*$-isomorphic to a $\mathrm{C}^*$-subalgebra of $B(H)$ for some Hilbert space $H$.</p>
+<p><em>Proof (sketch).</em> For each state $\omega$ on $A$ the GNS construction below produces a representation $\pi_\omega$ on a Hilbert space $H_\omega$; when $A$ has no identity the construction is applied to the unitisation of $A$, with states normalised by $\|\omega\| = 1$. Then</p>
+<p>$$
+\|a\| = \sup_{\omega \text{ a state}} \|\pi_\omega(a)\|
+$$</p>
+<p>for every $a \in A$; the direct sum of the representations $\pi_\omega$ over all states is therefore faithful and isometric. $\square$</p>
+<p><strong>Theorem (commutative Gelfand–Naimark).</strong> Every commutative $\mathrm{C}^*$-algebra $A$ is isometrically $*$-isomorphic to $C_0(X)$ for a locally compact Hausdorff space $X$, namely the space of characters of $A$ with the weak-$*$ topology; if $A$ has an identity, $X$ is compact and $A \cong C(X)$.</p>
+<p><em>Proof (sketch).</em> The characters form a locally compact space $X$ in the weak-$*$ topology, and the Gelfand transform $\hat a(\chi) = \chi(a)$ is a $*$-homomorphism $A \to C_0(X)$; for a $\mathrm{C}^*$-algebra the Gelfand transform is isometric, because $\|\hat a\|_\infty^2 = \|\widehat{a^*a}\|_\infty = \|a^*a\| = \|a\|^2$ by the $\mathrm{C}^*$-identity, and it is surjective by the Stone–Weierstrass theorem. $\square$</p>
+<p><strong>Corollary (the norm is determined algebraically).</strong> A $\mathrm{C}^*$-algebra carries at most one norm making it a $\mathrm{C}^*$-algebra, and every $*$-homomorphism from a $\mathrm{C}^*$-algebra to a $\mathrm{C}^*$-algebra is norm-decreasing, hence continuous.</p>
+<p><em>Proof.</em> If $\|\cdot\|_1, \|\cdot\|_2$ both satisfy the $\mathrm{C}^*$-identity, then the completion in one norm has the same spectral values for each self-adjoint element, and for self-adjoint $a$ the norm is the spectral radius, $\|a\| = \sup\{|\lambda| : \lambda \in \sigma(a)\}$; hence the two norms agree on self-adjoint elements and therefore on all elements, by the $\mathrm{C}^*$-identity applied to $a^*a$. For the second statement, a $*$-homomorphism $\pi$ sends self-adjoint elements to self-adjoint elements and $\sigma(\pi(a)) \subseteq \sigma(a)$, so $\|\pi(a)\|^2 = \|\pi(a^*a)\| = r(\pi(a^*a)) \leq r(a^*a) = \|a\|^2$. $\square$</p>
+<p>This corollary is the sharpest contrast with the general Banach-algebra setting: a $\mathrm{C}^*$-algebra's analytic structure is entirely determined by its algebra and involution.</p>
+<h2 id="the-gelfandnaimarksegal-construction">The Gelfand–Naimark–Segal Construction</h2>
+<p><strong>Definition.</strong> A <strong>state</strong> on a $\mathrm{C}^*$-algebra $A$ with identity is a linear functional $\omega : A \to \mathbb{C}$ that is <strong>positive</strong> ($\omega(a^*a) \geq 0$ for all $a$) and <strong>normalised</strong> ($\omega(1) = 1$); for a $\mathrm{C}^*$-algebra without identity the normalisation is replaced by $\|\omega\| = 1$, positivity being unchanged. A <strong>representation</strong> of $A$ on a Hilbert space $H$ is a $*$-homomorphism $\pi : A \to B(H)$; it is <strong>cyclic</strong> if some $x \in H$ satisfies $\overline{\pi(A)x} = H$.</p>
+<p><strong>Theorem (GNS construction).</strong> Let $\omega$ be a state on $A$. Then there exist a Hilbert space $H_\omega$, a representation $\pi_\omega : A \to B(H_\omega)$ and a cyclic unit vector $x_\omega \in H_\omega$ with</p>
+<p>$$
+\omega(a) = \langle \pi_\omega(a)x_\omega, x_\omega\rangle, \qquad a \in A .
+$$</p>
+<p><em>Proof.</em> Consider the sesquilinear form on $A$ defined by $[a,b]_\omega = \omega(b^*a)$. From positivity, $\omega(a^*a) \geq 0$, and the Cauchy–Schwarz inequality $|\omega(b^*a)|^2 \leq \omega(a^*a)\,\omega(b^*b)$ for positive functionals gives that the form is positive semidefinite and vanishes exactly on the left ideal $N_\omega = \{a : \omega(a^*a) = 0\}$. The quotient $A/N_\omega$ is a pre-Hilbert space with inner product $[\,\cdot\, , \cdot\,]_\omega$; let $H_\omega$ be its completion. Define $\pi_\omega(a)$ on the image of $b$ by</p>
+<p>$$
+\pi_\omega(a)(b + N_\omega) = ab + N_\omega .
+$$</p>
+<p>This is well defined because $N_\omega$ is a left ideal, and it is bounded: for self-adjoint $a$, the estimate $[ab,ab]_\omega = \omega(b^*a^*ab) \leq \|a\|^2\,\omega(b^*b) = \|a\|^2[b,b]_\omega$ follows from the positivity of the functional $b \mapsto \omega(b^*(\|a\|^2 - a^*a)b)$ on the algebra with $\|a\|^2 - a^*a \geq 0$ in the self-adjoint part; the general case follows by applying this to $a^*a$. Hence $\pi_\omega(a)$ extends to a bounded operator on $H_\omega$, and it is a $*$-homomorphism because the involution and multiplication of $A$ act on the quotient as expected. The class $x_\omega = 1 + N_\omega$ is cyclic, and</p>
+<p>$$
+\langle\pi_\omega(a)x_\omega, x_\omega\rangle = [a, 1]_\omega = \omega(1^*a) = \omega(a) . \qquad \square
+$$</p>
+<p><strong>Corollary (states exist).</strong> Every $\mathrm{C}^*$-algebra with identity has at least one state, hence a nontrivial representation, and the Gelfand–Naimark theorem follows.</p>
+<h2 id="functional-calculus-and-the-spectral-theory">Functional Calculus and the Spectral Theory</h2>
+<p><strong>Theorem (continuous functional calculus).</strong> Let $a$ be a normal element of a $\mathrm{C}^*$-algebra $A$ with identity. Then there is a unique isometric $*$-isomorphism</p>
+<p>$$
+C(\sigma(a)) \longrightarrow C^*(a, 1) \subseteq A, \qquad f \longmapsto f(a),
+$$</p>
+<p>from the continuous functions on the compact spectrum of $a$ onto the $\mathrm{C}^*$-subalgebra generated by $a$ and $1$.</p>
+<p><em>Proof.</em> The subalgebra $C^*(a,1)$ is generated by $a$ and $a^*$, which commute with one another because $a$ is normal, so it is commutative; by commutative Gelfand–Naimark it is $C(X)$ for its character space $X$, and $X$ is homeomorphic to $\sigma(a)$ by the identification of characters with spectral points. The inverse of the Gelfand transform is the required map. $\square$</p>
+<p><strong>Corollary (the square root and the modulus).</strong> Every positive element $a$ (that is, $a = b^*b$ for some $b$) has a unique positive square root; every element has a polar decomposition $a = u|a|$ with $|a| = (a^*a)^{1/2}$ and a partial isometry $u$.</p>
+<p><strong>Theorem (order structure).</strong> The relation $a \leq b$ defined by $b - a = c^*c$ for some $c$ is a partial order on the self-adjoint elements, compatible with addition and with multiplication by positive scalars; the self-adjoint part is a partially ordered real vector space, and $1$ is an order unit when $A$ has an identity.</p>
+<h2 id="ideals-and-quotients">Ideals and Quotients</h2>
+<p>The ideal theory of $\mathrm{C}^*$-algebras is where the structural theory of <em>Ideals and Quotients of Algebras</em> meets the involution: quotients behave especially well.</p>
+<p><strong>Theorem (closed ideals are self-adjoint).</strong> Every closed two-sided ideal $I$ of a $\mathrm{C}^*$-algebra $A$ satisfies $I^* = I$. Consequently, the quotient $A/I$ is a $\mathrm{C}^*$-algebra with the quotient norm and the involution induced by that of $A$, and the quotient map is a $*$-homomorphism.</p>
+<p><em>Proof (sketch).</em> If $I$ is a closed two-sided ideal and $a \in I$, then $a^*a \in I$. Let $(u_\lambda)$ be an approximate identity for $I$, with $0 \leq u_\lambda \leq 1$ and $u_\lambda \in I$; then</p>
+<p>$$
+\|a(1-u_\lambda)\|^2 = \|(1-u_\lambda)a^*a(1-u_\lambda)\| \longrightarrow 0 ,
+$$</p>
+<p>so $au_\lambda \to a$ and hence $\|u_\lambda a^* - a^*\| = \|au_\lambda - a\| \to 0$. Since $u_\lambda a^* \in I$ and $I$ is closed, $a^* \in I$. The quotient is a Banach algebra with an involution; the $\mathrm{C}^*$-identity for the quotient norm is checked using the approximate units of $I$. $\square$</p>
+<p><strong>Definition.</strong> A $\mathrm{C}^*$-algebra is <strong>simple</strong> if it has no nontrivial closed two-sided ideals. The <strong>Calkin algebra</strong> is the quotient $B(H)/K(H)$.</p>
+<p><strong>Example.</strong> $K(H)$ is simple, and $B(H)/K(H)$ is a $\mathrm{C}^*$-algebra; this is the simplest construction of a $\mathrm{C}^*$-algebra that is presented as a quotient of one operator algebra by another. The finite-dimensional analogue is the quotient of $\mathbb{M}_n(\mathbb{C})$ by an ideal, and by the theory of <em>Ideals and Quotients of Algebras</em> the ideals of $\mathbb{M}_n(\mathbb{C})$ are trivial, so $\mathbb{M}_n(\mathbb{C})$ is simple.</p>
+<p><strong>Proposition (the quotient is the algebra of the orthogonal complement).</strong> Let $\mathcal{M} \subseteq B(H)$ be a $\mathrm{C}^*$-subalgebra and let $K \subseteq H$ be a closed subspace invariant under $\mathcal{M}$. Then the restriction map $T \mapsto T|_K$ is a $*$-homomorphism $\mathcal{M} \to B(K)$; if $K^\perp$ is invariant as well, so that $K$ is reducing, the restriction is the quotient of $\mathcal{M}$ by the ideal of operators of $\mathcal{M}$ that vanish on $K$.</p>
+<p><em>Proof.</em> Invariance of $K$ under each $T \in \mathcal{M}$ implies invariance under $T^*$ when $\mathcal{M}$ is self-adjoint and $K$ is reducing; then $T|_K$ is bounded with $\|T|_K\| \leq \|T\|$, and $(T|_K)^* = T^*|_K$. The kernel is a closed two-sided ideal, and the induced map on the quotient is injective with dense image, hence an isomorphism onto its image. $\square$</p>
+<h2 id="von-neumann-algebras">Von Neumann Algebras</h2>
+<p>The norm topology is not the only relevant one; operators act pointwise, and the topology of pointwise convergence produces algebras closed under stronger operations.</p>
+<p><strong>Definition.</strong> The <strong>strong operator topology</strong> on $B(H)$ is the topology of pointwise convergence on vectors, $T \mapsto Tx$; the <strong>weak operator topology</strong> is the topology of pointwise convergence of the matrix entries $T \mapsto \langle Tx, y\rangle$. A <strong>von Neumann algebra</strong> is a $*$-subalgebra $\mathcal{M} \subseteq B(H)$ containing $1$ and closed in the weak operator topology. The <strong>commutant</strong> of a set $S \subseteq B(H)$ is</p>
+<p>$$
+S' = \{T \in B(H) : TS = ST \text{ for all } S \in S\}.
+$$</p>
+<p><strong>Theorem (von Neumann bicommutant theorem).</strong> A $*$-subalgebra $\mathcal{M} \subseteq B(H)$ containing $1$ is a von Neumann algebra if and only if $\mathcal{M} = \mathcal{M}''$.</p>
+<p><em>Proof (sketch).</em> The inclusion $\mathcal{M} \subseteq \mathcal{M}''$ is immediate. For the converse one shows that the weak operator closure of $\mathcal{M}$ equals $\mathcal{M}''$: a vector $\xi \in H$ and an operator $T \in \mathcal{M}''$ are compared by applying the double commutant to the closure of $\mathcal{M}\xi$, which is $\mathcal{M}''\xi$; the strong closure of $\mathcal{M}$ contains every operator in $\mathcal{M}''$ by a Kaplansky density argument together with the fact that the unit ball is compact in the weak operator topology. $\square$</p>
+<p><strong>Proposition (the centre and the decomposition).</strong> The centre of a von Neumann algebra $\mathcal{M}$ is $Z(\mathcal{M}) = \mathcal{M} \cap \mathcal{M}'$, and it is a commutative von Neumann algebra; hence $Z(\mathcal{M}) \cong C(X)$ for a compact hyperstonean space $X$, and $\mathcal{M}$ decomposes as a direct integral of <strong>factors</strong>, von Neumann algebras with trivial centre.</p>
+<p><em>Proof.</em> $\mathcal{M} \cap \mathcal{M}'$ is commutative because each element commutes with the other by definition; it is a von Neumann algebra and is commutative, so the commutative Gelfand–Naimark theorem applies, and the spectral decomposition of the centre gives the direct-integral decomposition. $\square$</p>
+<h2 id="traces-the-trace-class-and-the-hilbertschmidt-class">Traces, the Trace Class and the Hilbert–Schmidt Class</h2>
+<p>On $B(H)$ the algebra has a distinguished functional, and the ideals it defines are the finite-rank ideals of the operator theory.</p>
+<p><strong>Definition.</strong> For $T \in B(H)$ the <strong>absolute value</strong> is $|T| = (T^*T)^{1/2}$, and the <strong>singular values</strong> $s_1 \geq s_2 \geq \dots \geq 0$ are the eigenvalues of $|T|$ counted with multiplicity. Then</p>
+<p>$$
+L^1(H) = \{T : \mathrm{Tr}|T| = \textstyle\sum_n s_n < \infty\}, \qquad L^2(H) = \{T : \mathrm{Tr}(T^*T) = \textstyle\sum_n s_n^2 < \infty\}
+$$</p>
+<p>are the <strong>trace class</strong> and the <strong>Hilbert–Schmidt class</strong>, and on the trace class the <strong>trace</strong> is</p>
+<p>$$
+\mathrm{Tr}\,T = \sum_n \langle T e_n, e_n\rangle,
+$$</p>
+<p>the sum being absolutely convergent and independent of the orthonormal basis $(e_n)$.</p>
+<p><strong>Proposition (the chain of ideals).</strong> One has the inclusions</p>
+<p>$$
+L^1(H) \subseteq L^2(H) \subseteq K(H) \subseteq B(H),
+$$</p>
+<p>$L^1(H)$ and $L^2(H)$ are two-sided $*$-ideals, $L^2(H)$ is dense in $K(H)$ in the norm of $B(H)$, and</p>
+<ol>
+<li>$\langle S, T\rangle_2 = \mathrm{Tr}(T^*S)$ is an inner product making $L^2(H)$ a Hilbert space, the <strong>Hilbert–Schmidt space</strong>, with $\|T\| \leq \|T\|_2 = (\mathrm{Tr}\,T^*T)^{1/2}$;</li>
+<li>$\mathrm{Tr}(ST) = \mathrm{Tr}(TS)$ whenever $S \in L^1(H)$ and $T \in B(H)$, and $\mathrm{Tr}$ is the unique normal tracial weight on $B(H)$ up to scaling;</li>
+<li>the pairing $(S,T) \mapsto \mathrm{Tr}(ST)$ identifies $L^1(H)$ with the dual of $K(H)$, and $B(H)$ with the dual of $L^1(H)$.</li>
+</ol>
+<p><em>Proof.</em> The first two statements are the standard theory of the Schatten classes: $|ST| \leq \|S\|\,|T|$ gives the ideal property, the Schmidt decomposition of a Hilbert–Schmidt operator gives the inner product and the norm inequality, and the trace identity follows from the absolute convergence of the series by a rearrangement. The duality statements are the standard duality of the Schatten classes; the second identification is the one that exhibits the weak operator topology as the $\sigma(B(H), L^1(H))$-topology on bounded sets. $\square$</p>
+<p><strong>Example (the finite-dimensional case).</strong> For $H = \mathbb{C}^n$ all classes coincide with $B(H) = M_n(\mathbb{C})$, the trace is the matrix trace and $\tau = \mathrm{Tr}/n$ is the unique <strong>tracial state</strong>, $\tau(1) = 1$. For a general von Neumann algebra $\mathcal{M}$ a <strong>trace</strong> is a map $\tau : \mathcal{M}_+ \to [0,\infty]$ that is additive, positively homogeneous and unitarily invariant; it is <strong>faithful</strong> if $\tau(x^*x) = 0$ forces $x = 0$, <strong>finite</strong> if $\tau(1) < \infty$, <strong>semifinite</strong> if every nonzero positive element dominates a positive element of finite trace, and a <strong>tracial state</strong> if $\tau(1) = 1$. The existence of a faithful normal tracial weight is the dividing line between the types of the next section, and the trace class is the model: $\mathrm{Tr}$ on $B(H)$ is faithful, normal and semifinite, but not finite when $H$ is infinite-dimensional.</p>
+<h2 id="factors-and-the-classification-into-types">Factors and the Classification into Types</h2>
+<p><strong>Definition.</strong> A <strong>factor</strong> is a von Neumann algebra with centre $Z(\mathcal{M}) = \mathcal{M} \cap \mathcal{M}' = \mathbb{C}1$. The centre of a general von Neumann algebra is commutative and hence of the form $L^\infty(X)$ for a measure space $X$, and the spectral decomposition of the centre presents $\mathcal{M}$ as a direct integral of factors, $\int_X^\oplus \mathcal{M}(x)\,dx$.</p>
+<p><strong>Definition (equivalence of projections).</strong> For projections $p, q \in \mathcal{M}$ write $p \sim q$ if there is a partial isometry $v \in \mathcal{M}$ with $v^*v = p$ and $vv^* = q$ (<strong>Murray–von Neumann equivalence</strong>), and $p \preceq q$ if $p \sim p'$ for some projection $p' \leq q$. The relation $\preceq$ is a partial order on equivalence classes and $\sim$ is an equivalence relation.</p>
+<p><strong>Theorem (classification of factors).</strong> Every factor is of exactly one of the following types.</p>
+<ul>
+<li><strong>Type I.</strong> $\mathcal{M}$ contains a minimal projection; a factor of type I is isomorphic to $B(H)$ for some Hilbert space $H$, it is of type $\mathrm{I}_n$ when $H$ has dimension $n$ and of type $\mathrm{I}_\infty$ otherwise. The finite-dimensional examples are $M_n(\mathbb{C})$; the model of type $\mathrm{I}_\infty$ is $B(\ell^2)$.</li>
+<li><strong>Type II.</strong> $\mathcal{M}$ has no minimal projection but carries a faithful normal tracial weight, unique up to scaling. It is of type $\mathrm{II}_1$ when the weight is finite — then $\mathcal{M}$ has a unique tracial state $\tau$ — and of type $\mathrm{II}_\infty$ when it is properly infinite.</li>
+<li><strong>Type III.</strong> $\mathcal{M}$ has no faithful normal semifinite trace. Every nonzero projection is then properly infinite, and the type is refined into $\mathrm{III}_\lambda$, $\lambda \in [0,1]$, by the flow of weights.</li>
+</ul>
+<p><strong>Example (types $\mathrm{I}$ and $\mathrm{II}_1$).</strong> $B(H)$ is a factor of type I, the finite-dimensional $M_n(\mathbb{C})$ being of type $\mathrm{I}_n$; the group von Neumann algebra $L(G)$ of a discrete group $G$ in which every nontrivial conjugacy class is infinite (an <strong>icc</strong> group) is a factor of type $\mathrm{II}_1$, with unique tracial state $\tau(a) = \langle a\delta_e,\delta_e\rangle$ and no minimal projections. The tensor product $B(H)\bar\otimes R$ of $B(H)$ with a type $\mathrm{II}_1$ factor $R$ is a factor of type $\mathrm{II}_\infty$, and crossed products of a type $\mathrm{II}_\infty$ factor by ergodic non-measure-preserving actions give the Powers factors of type $\mathrm{III}_\lambda$.</p>
+<p><em>Proof (outline).</em> Murray–von Neumann's comparison theorem shows that the projections of a factor are totally ordered by $\preceq$, so a factor is finite exactly when no proper projection is equivalent to $1$; finiteness is equivalent to the existence of a faithful normal tracial weight. If a minimal projection exists, $\mathcal{M}$ is isomorphic to the algebra of all bounded operators on its range, which gives type I. If there is no minimal projection and a finite trace exists, the trace is a faithful normal tracial state and the factor is of type $\mathrm{II}_1$; if the trace is only semifinite, the type is $\mathrm{II}_\infty$. If no faithful normal semifinite trace exists, the factor is of type III; the refinement of the type into $\mathrm{III}_\lambda$ uses the modular theory of the next section, $\lambda$ being the invariant read off the crossed product of $\mathcal{M}$ by its modular group. This is the classification of Murray and von Neumann with the refinement of Connes; the details are a substantial theory and are cited rather than reproduced. $\square$</p>
+<h2 id="the-modular-theory-of-tomitatakesaki">The Modular Theory of Tomita–Takesaki</h2>
+<p>A type III factor has no trace, so the theory above has no invariant to offer; the replacement is a canonical one-parameter group of automorphisms attached to each faithful normal state, and the replacement is exact enough to classify.</p>
+<p><strong>Setting.</strong> Let $\mathcal{M} \subseteq B(H)$ be a von Neumann algebra and let $\omega$ be a <strong>faithful normal state</strong> on $\mathcal{M}$, realised by a vector: $\omega(a) = \langle a\Omega, \Omega\rangle$ for a vector $\Omega \in H$ that is <strong>cyclic</strong> ($\overline{\mathcal{M}\Omega} = H$) and <strong>separating</strong> ($a\Omega = 0$ implies $a = 0$) for $\mathcal{M}$. The GNS construction provides such a realisation: take $H_\omega$ and $\Omega = x_\omega$, which is cyclic by construction and separating by faithfulness, and the pair $(\mathcal{M}, \Omega)$ is the <strong>standard form</strong> of $\omega$.</p>
+<p><strong>Definition (the Tomita operator).</strong> Define an unbounded operator on the dense subspace $\mathcal{M}\Omega$ by</p>
+<p>$$
+S_0(a\Omega) = a^*\Omega, \qquad a \in \mathcal{M}.
+$$</p>
+<p>Then $S_0$ is closable; let $S$ be its closure and $S = J\Delta_\omega^{1/2}$ its polar decomposition. Then $\Delta_\omega = S^*S$ is positive, self-adjoint and injective, the <strong>modular operator</strong> of $\omega$, and $J$ is a conjugate-linear isometry with $J^2 = 1$, the <strong>modular conjugation</strong>.</p>
+<p><strong>Theorem (Tomita–Takesaki).</strong> With the notation above,</p>
+<p>$$
+\Delta_\omega^{it}\mathcal{M}\Delta_\omega^{-it} = \mathcal{M} \quad (t \in \mathbb{R}), \qquad J\mathcal{M}J = \mathcal{M}' .
+$$</p>
+<p>Hence $\varsigma_t^\omega(a) = \Delta_\omega^{it}a\Delta_\omega^{-it}$ is a one-parameter group of $*$-automorphisms of $\mathcal{M}$, the <strong>modular automorphism group</strong> (or <strong>modular flow</strong>) of $\omega$, and $j(a) = JaJ$ is a $*$-anti-isomorphism of $\mathcal{M}$ onto the commutant $\mathcal{M}'$.</p>
+<p><em>Proof (sketch).</em> Cyclicity makes $S_0$ densely defined and faithfulness makes it well defined, and $S_0$ is closable. From the definitions one checks the fundamental relation</p>
+<p>$$
+Sx = x^*S \qquad (x \in \mathcal{M}'),
+$$</p>
+<p>which after taking adjoints gives $S^*x = x^*S^*$ and hence</p>
+<p>$$
+\Delta_\omega x = x\Delta_\omega \qquad (x \in \mathcal{M}') :
+$$</p>
+<p>the modular operator commutes with the commutant. The polar decomposition $S = J\Delta_\omega^{1/2}$ and the standard identity $J\Delta_\omega^{1/2}J = \Delta_\omega^{-1/2}$, equivalently $S = \Delta_\omega^{-1/2}J$, then give $J\mathcal{M}J \subseteq \mathcal{M}'$ by a computation on the dense set $\mathcal{M}\Omega$; the same argument with $\mathcal{M}$ and $\mathcal{M}'$ interchanged gives $J\mathcal{M}'J \subseteq \mathcal{M}$, and since $J^2 = 1$ both inclusions are equalities, which is the second assertion. For the first, take $a \in \mathcal{M}$ and use $J\Delta_\omega^{it}J = \Delta_\omega^{-it}$, the $it$-power of $J\Delta_\omega^{1/2}J = \Delta_\omega^{-1/2}$:</p>
+<p>$$
+J\bigl(\Delta_\omega^{it}a\Delta_\omega^{-it}\bigr)J = \Delta_\omega^{-it}(JaJ)\Delta_\omega^{it} = JaJ,
+$$</p>
+<p>the second equality because $JaJ \in \mathcal{M}'$ commutes with $\Delta_\omega^{it}$ by the relation above. Hence $JaJ \in \mathcal{M}'$ implies $\Delta_\omega^{it}a\Delta_\omega^{-it} \in J\mathcal{M}'J = \mathcal{M}$, and applying the same argument with $-t$ gives the reverse inclusion. $\square$</p>
+<p><strong>Remark (notation).</strong> The modular group is written $\varsigma_t^\omega$ and not $\sigma_t^\omega$: the letter $\sigma$ denotes the spectrum $\sigma(a)$ of an element in this article and the symbol $\sigma(\xi)$ of the Cauchy–Riemann operator, and the three uses are kept apart deliberately. Likewise $\Delta_\omega$ here is the modular operator of Tomita–Takesaki theory, not the Laplacian and its companions; the two are unrelated operators and appear in different articles.</p>
+<p><strong>Theorem (the KMS condition).</strong> The modular group of $\omega$ is determined by the following property: for all $a, b \in \mathcal{M}$ there is a function $F_{a,b}$ bounded and continuous on the closed strip $0 \leq \mathrm{Im}\,z \leq 1$ and holomorphic on its interior such that</p>
+<p>$$
+F_{a,b}(t) = \omega\bigl(\varsigma_t^\omega(a)\,b\bigr), \qquad F_{a,b}(t+i) = \omega\bigl(b\,\varsigma_t^\omega(a)\bigr), \qquad t \in \mathbb{R} .
+$$</p>
+<p>A state with this property is called a <strong>KMS state</strong> (at $\beta = 1$); for a parameter $\beta > 0$ the <strong>$\beta$-KMS condition</strong> replaces $i$ by $i\beta$, and the two conditions are interchanged by rescaling the group. The modular group is the unique one for which $\omega$ is KMS.</p>
+<p><strong>Corollary (the modular generator).</strong> The logarithm $\log\Delta_\omega$ is an unbounded self-adjoint operator, and the modular flow is the conjugation by the unitary group it generates:</p>
+<p>$$
+\varsigma_t^\omega(a) = e^{it\log\Delta_\omega}\,a\,e^{-it\log\Delta_\omega}.
+$$</p>
+<p>The operator $\log\Delta_\omega$ is the <strong>modular generator</strong> of $\omega$, and the pair $(\mathcal{M}, \varsigma^\omega)$ is the <strong>non-commutative flow of weights</strong> of $\mathcal{M}$.</p>
+<p><strong>Theorem (Connes cocycle, standard).</strong> For two faithful normal states $\omega, \omega'$ on $\mathcal{M}$ there is a strongly continuous family of unitaries $(D\omega' : D\omega)_t \in \mathcal{M}$, the <strong>Connes cocycle</strong>, with</p>
+<p>$$
+\varsigma_t^{\omega'}(a) = (D\omega' : D\omega)_t\,\varsigma_t^\omega(a)\,(D\omega' : D\omega)_t^{*}, \qquad a \in \mathcal{M} .
+$$</p>
+<p>Consequently the modular group depends on the state only up to an inner perturbation, only its image in $\operatorname{Out}(\mathcal{M}) = \operatorname{Aut}(\mathcal{M})/\operatorname{Inn}(\mathcal{M})$ being independent of the state, and</p>
+<p>$$
+T(\mathcal{M}) = \{t \in \mathbb{R} : \varsigma_t^\omega \in \operatorname{Inn}(\mathcal{M})\}
+$$</p>
+<p>is a subgroup of $\mathbb{R}$ independent of $\omega$; it is the <strong>Connes invariant</strong> $T(\mathcal{M})$ of $\mathcal{M}$.</p>
+<p><strong>Theorem (the finite-dimensional case).</strong> Let $\mathcal{M} = M_n(\mathbb{C}) \subseteq B(L^2(\mathcal{M}))$ act on the Hilbert–Schmidt space $L^2(\mathcal{M}) = M_n(\mathbb{C})$ with $\langle A, B\rangle = \mathrm{Tr}(B^*A)$, let $\rho$ be a positive definite density matrix with $\mathrm{Tr}\,\rho = 1$, and let $\omega(a) = \mathrm{Tr}(\rho a)$ with $\Omega = \rho^{1/2}$. Then $\Omega$ is cyclic and separating, and</p>
+<p>$$
+\Delta_\omega = L_\rho R_\rho^{-1}, \qquad \Delta_\omega^{it}a = \rho^{it}a\rho^{-it}, \qquad J(a) = a^*, \qquad \log\Delta_\omega = \log\rho \otimes 1 - 1\otimes \log\rho,
+$$</p>
+<p>where $L_\rho, R_\rho$ are left and right multiplication; the modular group is $\varsigma_t(a) = \rho^{it}a\rho^{-it}$.</p>
+<p><em>Proof.</em> Since $\rho^{1/2}$ is invertible, $a\rho^{1/2} = 0$ forces $a = 0$ (separating) and $M_n(\mathbb{C})\rho^{1/2} = M_n(\mathbb{C})$ is dense (cyclic). On $\mathcal{M}\Omega = \mathcal{M}\rho^{1/2}$ the Tomita operator acts as $S(a\rho^{1/2}) = a^*\rho^{1/2}$, and</p>
+<p>$$
+J\Delta_\omega^{1/2}\bigl(a\rho^{1/2}\bigr) = J\bigl(\rho^{1/2}a\rho^{-1/2}\rho^{1/2}\bigr) = J\bigl(\rho^{1/2}a\bigr) = \bigl(\rho^{1/2}a\bigr)^* = a^*\rho^{1/2},
+$$</p>
+<p>so $S = J\Delta_\omega^{1/2}$ with $\Delta_\omega^{1/2}(a\rho^{1/2}) = \rho^{1/2}a$, that is $\Delta_\omega^{1/2}(a\Omega) = \rho^{1/2}a\Omega$, and hence $\Delta_\omega^{it}a\Omega = \rho^{it}a\rho^{-it}\Omega$: the modular operator is conjugation by $\rho^{it}$ on the left and by $\rho^{-it}$ on the right, $\Delta_\omega = L_\rho R_\rho^{-1}$. Taking logarithms, $\log\Delta_\omega = L_{\log\rho} - R_{\log\rho}$. $\square$</p>
+<p><strong>Verification of the KMS condition.</strong> Define, for $a, b \in M_n(\mathbb{C})$ and $z \in \mathbb{C}$,</p>
+<p>$$
+F(z) = \mathrm{Tr}\bigl(\rho^{1+iz}\,a\,\rho^{-iz}\,b\bigr) = \mathrm{Tr}\bigl(\rho\,\varsigma_z(a)\,b\bigr), \qquad \varsigma_z(a) = \rho^{iz}a\rho^{-iz},
+$$</p>
+<p>an entire function of $z$ because $z \mapsto \rho^{iz}$ is entire and matrix multiplication and the trace are polynomial. At $z = t$ real, $F(t) = \omega(\varsigma_t(a)b)$. At $z = t+i$ one has $\rho^{1+i(t+i)} = \rho^{it}\rho^{-1}\rho = \rho^{it}$ and $\rho^{-i(t+i)} = \rho^{1-it} = \rho\rho^{-it}$, so</p>
+<p>$$
+F(t+i) = \mathrm{Tr}\bigl(\rho^{it}a\rho^{-it}\rho b\bigr) = \mathrm{Tr}\bigl(\rho b\rho^{it}a\rho^{-it}\bigr) = \omega\bigl(b\,\varsigma_t(a)\bigr),
+$$</p>
+<p>the middle equality being the cyclicity of the trace. This is the KMS condition at $\beta = 1$.</p>
+<p><strong>Corollary (traces and the trivial modular flow).</strong> If $\rho = 1/n$, so that $\omega$ is the tracial state, then $\Delta_\omega = 1$, $H = 0$ and the modular flow is trivial; and the computation above with $\rho = 1/n$ gives $F(t+i\beta) = \omega(ba)$ for every $\beta$, so a tracial state is $\beta$-KMS for every $\beta$. At the other extreme, a factor $\mathcal{M}$ is semifinite (type I or II) if and only if its modular group is inner for every $t$, that is $T(\mathcal{M}) = \mathbb{R}$, and it is of type III exactly when $T(\mathcal{M}) \neq \mathbb{R}$: for a type $\mathrm{III}_1$ factor the modular group is outer at every $t \neq 0$, while a type $\mathrm{III}_\lambda$ factor with $0 < \lambda < 1$ has inner modular automorphisms at the nonzero times in $(2\pi/\lvert\log\lambda\rvert)\mathbb{Z}$. It is in this sense that the modular flow replaces the trace for a type III factor. The finite-dimensional computation is the whole theory in miniature: on $M_n(\mathbb{C})$ the modular operator is explicit, the modular flow is conjugation by $\rho^{it}$, and every question reduces to linear algebra on $n \times n$ matrices.</p>
+<h2 id="derivations-of-operator-algebras">Derivations of Operator Algebras</h2>
+<p><strong>Definition.</strong> A <strong>derivation</strong> of an algebra $A$ is a linear map $\delta : A \to A$ with</p>
+<p>$$
+\delta(ab) = \delta(a)\,b + a\,\delta(b), \qquad a, b \in A,
+$$</p>
+<p>as in <em>Automorphisms and Derivations of Algebras</em>. The derivations of $A$ form a Lie algebra under the commutator, and the inner derivations $\operatorname{ad}_h(a) = ha - ah$ form a Lie ideal.</p>
+<p><strong>Theorem (automatic continuity, standard).</strong> Every derivation of a $\mathrm{C}^*$-algebra is bounded, and hence continuous.</p>
+<p><em>Proof.</em> This is the Kadison–Sakai theorem; the argument first shows the continuity of derivations on the self-adjoint part, using the order structure and the functional calculus, and then extends to the whole algebra by linearity over $\mathbb{C}$. $\square$</p>
+<p><strong>Theorem (innerness, standard).</strong> Every derivation of a von Neumann algebra $\mathcal{M}$ is inner: for each $\delta$ there is $h \in \mathcal{M}$ with $\delta(a) = [h, a]$ for all $a \in \mathcal{M}$. Consequently every derivation of $\mathbb{M}_n(\mathbb{C})$ and of $B(H)$ is inner.</p>
+<p><em>Proof (sketch).</em> For the weakly closed case, take a family of mutually orthogonal projections summing to $1$ and define $h$ by the off-diagonal blocks $\delta(p)\,q$ for projections $p, q$; the commutation relations force $h$ to commute with every element of the commutant, so $h \in \mathcal{M}'' = \mathcal{M}$, and the identity $\delta(a) = [h,a]$ is then checked on a generating set. $\square$</p>
+<p><strong>Corollary (vanishing of the outer derivations).</strong> For a von Neumann algebra the outer derivation space $\operatorname{Der}(\mathcal{M})/\operatorname{Inn}(\mathcal{M})$ vanishes; for a general Banach or associative algebra it need not, as the examples of <em>Automorphisms and Derivations of Algebras</em> show.</p>
+<p>The rigidity of the operator-algebra setting is thus twofold: the derivations are automatically bounded, and on a weakly closed algebra they are automatically inner.</p>
+<h2 id="examples-from-matrix-and-group-algebras">Examples from Matrix and Group Algebras</h2>
+<p><strong>Example (matrix algebras).</strong> $\mathbb{M}_n(\mathbb{C})$ is a finite-dimensional $\mathrm{C}^*$-algebra, hence a von Neumann algebra on $\mathbb{C}^n$; it is simple, it is a factor of type I, and its unique trace is the normalised matrix trace. It is the model for the finite-dimensional theory in <em>Matrix Algebras</em>.</p>
+<p><strong>Example (group algebras).</strong> Let $G$ be a discrete group and $\ell^2(G)$ its Hilbert space of square-summable functions. The <strong>left regular representation</strong> $\lambda : G \to B(\ell^2(G))$ extends to an isometric representation of the group algebra $\mathbb{C}[G]$; its norm closure is the <strong>reduced group $\mathrm{C}^*$-algebra</strong> $C^*_r(G)$, and its weak closure is the <strong>group von Neumann algebra</strong> $L(G)$. The group von Neumann algebra is finite, with faithful trace $\tau(a) = \langle a\delta_e, \delta_e\rangle$, and it is a factor exactly when every nontrivial conjugacy class of $G$ is infinite. These objects are the operator-algebraic completions of the algebraic group algebras of <em>Group Algebras</em>.</p>
+<p><strong>Example (commutative algebras).</strong> $C(X)$ for a compact Hausdorff space $X$, with the sup norm and complex conjugation, is the commutative case, and its self-adjoint elements are the real-valued functions. The functional calculus of this algebra is the ordinary functional calculus of operators.</p>
+<p><strong>Example (the Toeplitz algebra).</strong> The $\mathrm{C}^*$-algebra generated by the unilateral shift on $\ell^2(\mathbb{N})$ and its adjoint is the <strong>Toeplitz algebra</strong>; it contains $K(\ell^2(\mathbb{N}))$ as its unique nontrivial closed ideal, and its quotient is $C(\mathbb{T})$. It is the standard example in which the extension theory of operator algebras is visible in a single algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>$\mathrm{C}^*$-algebra</strong> is a complex Banach algebra with an involution satisfying $(ab)^*=b^*a^*$, $(a^*)^*=a$ and the <strong>$\mathrm{C}^*$-identity</strong> $\|a^*a\|=\|a\|^2$; the model is $B(H)$ with the operator norm and the adjoint, where the identity holds and where the spectral theorem governs the normal elements. The <strong>Gelfand–Naimark theorem</strong> realises every abstract $\mathrm{C}^*$-algebra isometrically as a $\mathrm{C}^*$-subalgebra of some $B(H)$, through the <strong>GNS construction</strong> that builds a representation $\pi_\omega$ and a cyclic vector $x_\omega$ from a <strong>state</strong> $\omega$ by completing $A/N_\omega$; the <strong>commutative Gelfand–Naimark theorem</strong> identifies the commutative ones with $C_0(X)$. A $\mathrm{C}^*$-algebra has at most one $\mathrm{C}^*$-norm, and every $*$-homomorphism of $\mathrm{C}^*$-algebras is contractive. The <strong>continuous functional calculus</strong> turns a normal element $a$ into an isometric $*$-isomorphism $C(\sigma(a)) \to C^*(a,1)$, supplying square roots, moduli and polar decomposition.</p>
+<p>Closed two-sided ideals of a $\mathrm{C}^*$-algebra are self-adjoint, quotients are again $\mathrm{C}^*$-algebras, and the finite-dimensional algebra $\mathbb{M}_n(\mathbb{C})$ is simple, while $K(H)$ is simple with <strong>Calkin algebra</strong> $B(H)/K(H)$ as quotient. <strong>Von Neumann algebras</strong> are the weakly closed $*$-subalgebras containing $1$; the <strong>bicommutant theorem</strong> characterises them by $\mathcal{M} = \mathcal{M}''$, the centre is $Z(\mathcal{M}) = \mathcal{M} \cap \mathcal{M}'$ and decomposes $\mathcal{M}$ as a direct integral of <strong>factors</strong>, classified into types I, II and III. <strong>Derivations</strong> of a $\mathrm{C}^*$-algebra are automatically bounded, and every derivation of a von Neumann algebra is inner, $\delta = \operatorname{ad}_h$ for some $h$; the outer derivation space $\operatorname{Der}(\mathcal{M})/\operatorname{Inn}(\mathcal{M})$ of a von Neumann algebra therefore vanishes. Matrix algebras, the reduced group $\mathrm{C}^*$-algebra $C^*_r(G)$ and group von Neumann algebra $L(G)$, the commutative algebras $C(X)$ and the Toeplitz algebra illustrate the theory.</p>
+<p>The finite-rank ideals of $B(H)$ are the <strong>trace class</strong> $L^1(H)$ and the <strong>Hilbert–Schmidt class</strong> $L^2(H)$, with $L^1(H) \subseteq L^2(H) \subseteq K(H)$, the trace $\mathrm{Tr}\,T = \sum_n\langle Te_n,e_n\rangle$ independent of the basis, $\mathrm{Tr}(ST) = \mathrm{Tr}(TS)$, and the dualities $K(H)^* \cong L^1(H)$, $L^1(H)^* \cong B(H)$. A <strong>factor</strong> is a von Neumann algebra with centre $\mathbb{C}1$, and the classification runs by the structure of its projections: type I, isomorphic to $B(H)$, with the minimal projection present; type II, no minimal projection but a faithful normal tracial weight, unique up to scaling, of type $\mathrm{II}_1$ when the trace is finite and $\mathrm{II}_\infty$ otherwise; type III, admitting no faithful normal semifinite trace, refined into $\mathrm{III}_\lambda$. In place of the missing trace, a <strong>faithful normal state</strong> $\omega$ realised by a cyclic and separating vector $\Omega$ has a <strong>modular operator</strong> $\Delta_\omega$ and <strong>modular conjugation</strong> $J$ through the polar decomposition $S = J\Delta_\omega^{1/2}$ of the Tomita operator $S(a\Omega) = a^*\Omega$, and the <strong>Tomita–Takesaki theorem</strong> gives $\Delta_\omega^{it}\mathcal{M}\Delta_\omega^{-it} = \mathcal{M}$ and $J\mathcal{M}J = \mathcal{M}'$. The resulting <strong>modular automorphism group</strong> $\varsigma_t^\omega = \operatorname{Ad}\Delta_\omega^{it}$ is characterised by the <strong>KMS condition</strong> at $\beta = 1$, different states give groups differing by the <strong>Connes cocycle</strong>, and on $M_n(\mathbb{C})$ the theory is explicit: for $\omega(a) = \mathrm{Tr}(\rho a)$ one has $\Delta_\omega = L_\rho R_\rho^{-1}$, $J(a) = a^*$ and $\varsigma_t(a) = \rho^{it}a\rho^{-it}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$</td>
+<td>Complex Hilbert space</td>
+</tr>
+<tr>
+<td>$B(H)$</td>
+<td>Bounded operators on $H$, with operator norm and adjoint</td>
+</tr>
+<tr>
+<td>$K(H)$</td>
+<td>Compact operators on $H$</td>
+</tr>
+<tr>
+<td>$T^*$</td>
+<td>Adjoint of $T$</td>
+</tr>
+<tr>
+<td>$\|T\| = \sup_{\|x\|\leq1}\|Tx\|$</td>
+<td>Operator norm</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>A $\mathrm{C}^*$-algebra</td>
+</tr>
+<tr>
+<td>$a^*$</td>
+<td>Involution, with $\|a^*a\| = \|a\|^2$</td>
+</tr>
+<tr>
+<td>$\sigma(a)$</td>
+<td>Spectrum of $a$</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>State, positive and normalised linear functional</td>
+</tr>
+<tr>
+<td>$(\pi_\omega, H_\omega, x_\omega)$</td>
+<td>GNS triple of a state</td>
+</tr>
+<tr>
+<td>$C^*(a,1)$</td>
+<td>$\mathrm{C}^*$-subalgebra generated by $a$ and $1$</td>
+</tr>
+<tr>
+<td>$a \leq b$</td>
+<td>Order on self-adjoint elements, $b-a = c^*c$</td>
+</tr>
+<tr>
+<td>$I \trianglelefteq A$</td>
+<td>Closed two-sided ideal, automatically self-adjoint</td>
+</tr>
+<tr>
+<td>$B(H)/K(H)$</td>
+<td>Calkin algebra</td>
+</tr>
+<tr>
+<td>$\mathcal{M}$</td>
+<td>Von Neumann algebra, a weakly closed $*$-subalgebra of $B(H)$ containing $1$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}'$</td>
+<td>Commutant of $\mathcal{M}$</td>
+</tr>
+<tr>
+<td>$Z(\mathcal{M}) = \mathcal{M}\cap \mathcal{M}'$</td>
+<td>Centre of a von Neumann algebra</td>
+</tr>
+<tr>
+<td>$C^*_r(G)$, $L(G)$</td>
+<td>Reduced group $\mathrm{C}^*$-algebra and group von Neumann algebra</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>Derivation, $\delta(ab) = \delta(a)b + a\delta(b)$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_h(a) = [h,a]$</td>
+<td>Inner derivation</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(\mathcal{M})$, $\operatorname{Inn}(\mathcal{M})$</td>
+<td>Derivations and inner derivations of $\mathcal{M}$</td>
+</tr>
+<tr>
+<td>$L^1(H)$, $L^2(H)$</td>
+<td>Trace class and Hilbert–Schmidt class</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}$</td>
+<td>Trace, $\mathrm{Tr}\,T = \sum_n\langle Te_n,e_n\rangle$</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>Tracial weight, or tracial state when $\tau(1) = 1$</td>
+</tr>
+<tr>
+<td>$p \sim q$, $p \preceq q$</td>
+<td>Murray–von Neumann equivalence and subordination of projections</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>Tomita operator, $S(a\Omega) = a^*\Omega$</td>
+</tr>
+<tr>
+<td>$\Delta_\omega = S^*S$, $J$</td>
+<td>Modular operator and modular conjugation, $S = J\Delta_\omega^{1/2}$</td>
+</tr>
+<tr>
+<td>$\varsigma_t^\omega = \operatorname{Ad}\Delta_\omega^{it}$</td>
+<td>Modular automorphism group of $\omega$</td>
+</tr>
+<tr>
+<td>$\log\Delta_\omega$</td>
+<td>Modular generator</td>
+</tr>
+<tr>
+<td>$(D\omega' : D\omega)_t$</td>
+<td>Connes cocycle</td>
+</tr>
+<tr>
+<td>$\rho$, $\Omega = \rho^{1/2}$</td>
+<td>Density matrix and standard vector in the finite-dimensional case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em> (Academic Press, 1983), for the general theory of $\mathrm{C}^*$- and von Neumann algebras.</li>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for Gelfand–Naimark, states and the GNS construction.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the bicommutant theorem, factors and the classification.</li>
+<li>Gerard J. Murphy, <em>$\mathrm{C}^*$-Algebras and Operator Theory</em> (Academic Press, 1990), for a concise treatment of ideals, quotients and the functional calculus.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the direct-integral decomposition and the general theory of von Neumann algebras.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras II</em> (Springer, 2003), for the Tomita–Takesaki modular theory, the KMS condition and the structure of factors.</li>
+<li>Alain Connes, <em>Noncommutative Geometry</em> (Academic Press, 1994), for the Connes cocycle, the invariant $T(\mathcal{M})$ and the classification of type III factors.</li>
+<li>Barry Simon, <em>Trace Ideals and Their Applications</em> (AMS, 2nd ed. 2005), for the trace class, the Hilbert–Schmidt class and the Schatten norms.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for the spectral theorem and the elementary Hilbert-space background.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

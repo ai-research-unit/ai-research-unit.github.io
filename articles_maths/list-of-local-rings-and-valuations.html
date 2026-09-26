@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Local Rings and Valuations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-local-rings-and-valuations"><strong>List of Local Rings and Valuations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the local rings, the valuation rings and the completions of the corpus, with the maximal ideal and the value group of each. Every entry points to the article that introduces the object.</p>
+<p>The list separates the local rings that are not valuation rings, such as the dual numbers and the truncated polynomial rings, from the valuation rings, which are exactly the local domains whose ideals are totally ordered; among the valuation rings it separates the discrete ones, with value group $\mathbb{Z}$, from the non-discrete and higher-rank ones; and it records the completions, which preserve the value group and the residue field in the non-Archimedean case.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="local-rings">Local Rings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Local ring</th>
+<th>Maximal ideal</th>
+<th>Residue field</th>
+<th>Valuation ring?</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>$(\varepsilon)$</td>
+<td>$\mathbb{R}$</td>
+<td>no</td>
+<td><em>Dual-Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>$(2)$</td>
+<td>$\mathbb{F}_2$</td>
+<td>no</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$k[x]/(x^n)$</td>
+<td>$(x)$</td>
+<td>$k$</td>
+<td>no for $n \geq 2$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2[C_2]$</td>
+<td>the augmentation ideal</td>
+<td>$\mathbb{F}_2$</td>
+<td>no</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>$(p)$</td>
+<td>$\mathbb{F}_p$</td>
+<td>yes, discrete</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>$k[t]_{(t)}$</td>
+<td>$(t)$</td>
+<td>$k$</td>
+<td>yes, discrete</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$k[[x]]$</td>
+<td>$(x)$</td>
+<td>$k$</td>
+<td>yes, discrete</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$</td>
+<td>$(p)$</td>
+<td>$\mathbb{F}_p$</td>
+<td>yes, discrete</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$, $\mathbb{Q}_p$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>$(0)$</td>
+<td>the field itself</td>
+<td>yes, the trivial valuation</td>
+<td><em>Finite Fields</em>, <em>The Real Numbers</em>, <em>The Complex Numbers</em>, <em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathcal{O}_v$, a general valuation ring</td>
+<td>$\mathfrak{m}_v = \{x : v(x) > 0\}$</td>
+<td>$k(v) = \mathcal{O}_v/\mathfrak{m}_v$</td>
+<td>yes, by definition</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Z}_p}$</td>
+<td>the extension of $p\mathbb{Z}_p$</td>
+<td>$\overline{\mathbb{F}_p}$</td>
+<td>yes, value group $\mathbb{Q}$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$R^h$, the henselization of a local ring</td>
+<td>the maximal ideal of $R$ extended</td>
+<td>the residue field of $R$</td>
+<td>when $R$ is a valuation ring</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A field is local with maximal ideal $(0)$, so the fields appear in the list for completeness and are not counted as proper local rings. Among the local rings of this list those that are not valuation rings are exactly those that are not integral domains: the dual numbers, $\mathbb{Z}/4\mathbb{Z}$, the truncated polynomial rings and the local group ring all have zero divisors, and a valuation ring is an integral domain. The matrix ring $M_2(\mathbb{R})$ is the standard local-ring failure on the non-commutative side and is recorded in the warnings. The rings that are expected here and are not local are $\mathbb{Z}$, $\mathbb{Z}[x]$ and $k[x]$, each with infinitely many maximal ideals.</p>
+<h2 id="discrete-valuation-rings">Discrete Valuation Rings</h2>
+<p>A discrete valuation ring is a valuation ring whose value group is $\mathbb{Z}$; equivalently, as recorded in <em>Dedekind Domains and Ideal Class Groups</em>, it is a local principal ideal domain that is not a field, and it is exactly the valuation ring of a discrete valuation of its fraction field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Discrete valuation ring</th>
+<th>Maximal ideal</th>
+<th>Value group</th>
+<th>Residue field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>$p\mathbb{Z}_{(p)}$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{F}_p$</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+<tr>
+<td>$k[t]_{(t)}$</td>
+<td>$(t)$</td>
+<td>$\mathbb{Z}$</td>
+<td>$k$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$k[[x]]$</td>
+<td>$(x)$</td>
+<td>$\mathbb{Z}$</td>
+<td>$k$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$</td>
+<td>$p\mathbb{Z}_p$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{F}_p$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathcal{O}_{K,\mathfrak{p}}$, the localisation of $\mathcal{O}_K$ at a prime</td>
+<td>$\mathfrak{p}$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathcal{O}_K/\mathfrak{p}$</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The valuation is the exponent of the maximal ideal: $v_p(a/b)$ is the exponent of $p$ in $a$ minus the exponent in $b$, and the same rule with an irreducible element replaces $p$ in the other rows. Every DVR has the ideal chain $\mathcal{O} \supsetneq \mathfrak{m} \supsetneq \mathfrak{m}^2 \supsetneq \cdots$, and the localisation of a Dedekind domain at each of its nonzero prime ideals is a discrete valuation ring, as recorded in <em>Dedekind Domains and Ideal Class Groups</em>.</p>
+<h2 id="non-discrete-and-higher-rank-valuations">Non-Discrete and Higher-Rank Valuations</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Valuation</th>
+<th>Field</th>
+<th>Value group</th>
+<th>Rank</th>
+<th>Valuation ring</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the $p$-adic valuation $v_p$</td>
+<td>$\mathbb{Q}$</td>
+<td>$\mathbb{Z}$</td>
+<td>$1$</td>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>the $t$-adic valuation</td>
+<td>$k(t)$</td>
+<td>$\mathbb{Z}$</td>
+<td>$1$</td>
+<td>$k[t]_{(t)}$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>a non-discrete order valuation at a transcendental $\alpha$</td>
+<td>$k(x)$</td>
+<td>a dense subgroup of $\mathbb{R}$</td>
+<td>$1$</td>
+<td>not Noetherian</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+<tr>
+<td>the lexicographic rank-two valuation</td>
+<td>$k(x,y)$</td>
+<td>$\mathbb{Z} \oplus \mathbb{Z}$, lexicographic</td>
+<td>$2$</td>
+<td>dominates $k[x,y]_{(x,y)}$</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+<tr>
+<td>the extended valuation on the algebraic closure</td>
+<td>$\overline{\mathbb{Q}_p}$</td>
+<td>$\mathbb{Q}$</td>
+<td>$1$</td>
+<td>$\overline{\mathbb{Z}_p}$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>the trivial valuation</td>
+<td>any field</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>the field</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The rank of a valuation is the order rank of its value group, and the prime ideals of the valuation ring correspond to the convex subgroups of the value group; consequently the Krull dimension of the valuation ring equals the rank of the valuation. The rank-two example is the one the corpus records in detail: its value group is $\mathbb{Z} \oplus \mathbb{Z}$ with the lexicographic order, its convex subgroups are $0$, $\{0\} \oplus \mathbb{Z}$ and the whole group, and its valuation ring has dimension $2$. The non-discrete rank-one example is the reason a rank-one valuation ring need not be Noetherian; the Noetherian case is exactly the discrete one.</p>
+<h2 id="completions">Completions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Valuation or absolute value</th>
+<th>Completion</th>
+<th>Value group</th>
+<th>Residue field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>$\lvert \cdot \rvert_p$</td>
+<td>$\mathbb{Q}_p$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{F}_p$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>$\lvert \cdot \rvert_\infty$</td>
+<td>$\mathbb{R}$</td>
+<td>—</td>
+<td>—</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$k(t)$</td>
+<td>the $t$-adic valuation</td>
+<td>$k((t))$</td>
+<td>$\mathbb{Z}$</td>
+<td>$k$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}_p}$</td>
+<td>the extended $p$-adic valuation</td>
+<td>$\mathbb{C}_p$</td>
+<td>$\mathbb{Q}$</td>
+<td>$\overline{\mathbb{F}_p}$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$</td>
+<td>the $p$-adic filtration</td>
+<td>$\mathbb{Z}_p$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{F}_p$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>In the non-Archimedean case the completion preserves both invariants: the value group of $\widehat{F}$ equals that of $F$, and the residue field is unchanged, so the completion of a DVR is again a DVR with the same value group and residue field. The completion of $\mathbb{Q}$ at the Archimedean place is $\mathbb{R}$, where the value set can grow and the value group is no longer the right invariant. The henselization sits inside the completion, $R^h \subseteq \widehat{R}$, with equality exactly when the valuation ring is already Henselian, as recorded in <em>Valuation Theory and Henselian Rings</em>.</p>
+<h2 id="the-value-group-as-an-invariant">The Value Group as an Invariant</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Value group</th>
+<th>The rings and fields that carry it</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>every field, with the trivial valuation</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>every discrete valuation ring: $\mathbb{Z}_{(p)}$, $k[t]_{(t)}$, $k[[x]]$, $\mathbb{Z}_p$, $\mathcal{O}_{K,\mathfrak{p}}$, and the fields $\mathbb{Q}_p$, $k((t))$</td>
+<td><em>Absolute Values, Valuations and Completions</em>, <em>Examples of Rings and Fields</em>, <em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>a dense subgroup of $\mathbb{R}$</td>
+<td>the non-discrete rank-one valuation ring of $k(x)$</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>the valuation ring of $\overline{\mathbb{Q}_p}$ and of $\mathbb{C}_p$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z} \oplus \mathbb{Z}$, lexicographic</td>
+<td>the rank-two valuation ring of $k(x,y)$</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+<tr>
+<td>$\Gamma$, arbitrary</td>
+<td>the general valuation ring $\mathcal{O}_v$</td>
+<td><em>Valuation Theory and Henselian Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a local ring of this list</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>not local: every prime is a maximal ideal</td>
+<td><em>The Integers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[x]$, $k[x]$</td>
+<td>not local, and not valuation rings</td>
+<td><em>Polynomial Rings and Rational Functions</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>not commutative, so outside the commutative local theory</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>a division ring; its only maximal ideal is $(0)$, but the local theory here is commutative</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>not a ring</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>not local: it has the two maximal ideals $(2)$ and $(3)$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>a Boolean ring</td>
+<td>not local unless it is $\mathbb{F}_2$: its prime ideals are maximal, and there is one for every ultrafilter</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the local rings, the valuation rings and the completions of the corpus with their maximal ideals and their value groups. The local rings that are not valuation rings are the dual numbers, the truncated polynomial rings and the local group ring; the discrete valuation rings are the localisations of $\mathbb{Z}$ and $k[t]$, the power series ring $k[[x]]$, the $p$-adic integers $\mathbb{Z}_p$ and the localisations of a Dedekind domain; the non-discrete and rank-two examples are the dense-rank-one valuation on $k(x)$ and the lexicographic valuation on $k(x,y)$ with value group $\mathbb{Z} \oplus \mathbb{Z}$; and the completions are $\mathbb{Q}_p$, $\mathbb{R}$, $k((t))$, $\mathbb{C}_p$ and $\mathbb{Z}_p$, with the value group and the residue field preserved in the non-Archimedean case.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{O}$, $\mathcal{O}_v$</td>
+<td>Valuation ring of the valuation $v$</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}$, $\mathfrak{m}_v$</td>
+<td>Maximal ideal of a local ring or valuation ring</td>
+</tr>
+<tr>
+<td>$k(v)$</td>
+<td>Residue field $\mathcal{O}_v/\mathfrak{m}_v$</td>
+</tr>
+<tr>
+<td>$\Gamma$, $\Gamma_v$</td>
+<td>Value group, written additively</td>
+</tr>
+<tr>
+<td>$v_p$</td>
+<td>The $p$-adic valuation</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_{(p)}$, $\mathbb{Z}_p$</td>
+<td>Localisation at $p$, $p$-adic integers</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$, $\mathbb{C}_p$</td>
+<td>$p$-adic numbers, completed algebraic closure</td>
+</tr>
+<tr>
+<td>$k((t))$, $k[[x]]$</td>
+<td>Laurent series field, power series ring</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_{K,\mathfrak{p}}$, $\mathcal{O}_K$</td>
+<td>Localisation of the ring of integers, ring of integers</td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}_p}$, $\overline{\mathbb{Z}_p}$, $\overline{\mathbb{F}_p}$</td>
+<td>Algebraic closures and their valuation ring</td>
+</tr>
+<tr>
+<td>$\widehat{F}$, $R^h$</td>
+<td>Completion, henselization</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>The dual numbers, a local ring that is not a valuation ring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for discrete valuation rings, their completions and the ramification invariants.</li>
+<li>Oscar Zariski and Pierre Samuel, <em>Commutative Algebra</em>, Volume II (Van Nostrand, 1960), for valuation rings of arbitrary rank, their value groups and their ideals.</li>
+<li>Neal Koblitz, <em>p-adic Numbers, p-adic Analysis, and Zeta-Functions</em> (Springer, 2nd ed. 1984), for the completions $\mathbb{Q}_p$ and $\mathbb{Z}_p$ and their residue fields.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise: The Correlation Function of the Bell States — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="exercise-the-correlation-function-of-the-bell-states"><strong>Exercise: The Correlation Function of the Bell States</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
+<p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
+<p>The earlier exercises treated a single qubit (Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field and Successive Measurements of Spin), an entangled pair of qubits in the singlet state (Exercise: Two Spins in the Singlet State), and the reduced state of one subsystem (Exercise: The Reduced State of an Entangled Subsystem). This exercise treats <strong>all four Bell states</strong> — the four maximally entangled two-qubit states — and the <strong>spin correlation function</strong>, the quantity that encodes the full dependence of joint measurement outcomes on the two measurement directions.</p>
+<p>The correlation function is the object measured in Bell-inequality experiments. It is also the natural bilinear pairing on the tensor-product algebra, and it reveals a clean structural fact: the four Bell states correspond to the four sign patterns $\epsilon_j = \pm 1$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$, and their correlation functions are $E(\hat a, \hat b) = -\sum_j \epsilon_j\,a_j b_j$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.</p>
+<h2 id="the-exercise">The Exercise</h2>
+<p>Consider the four <strong>Bell states</strong> of two spin-$\tfrac{1}{2}$ particles:</p>
+<p>$$
+|\Phi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\uparrow\rangle \pm |\downarrow\downarrow\rangle\right), \qquad
+|\Psi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle \pm |\downarrow\uparrow\rangle\right).
+$$</p>
+<p>For two measurement directions $\hat{a}$ and $\hat{b}$, define the <strong>spin correlation function</strong></p>
+<p>$$
+E(\hat{a}, \hat{b}) = \langle \left(\hat{a}\cdot\boldsymbol{\sigma}_1\right)\left(\hat{b}\cdot\boldsymbol{\sigma}_2\right)\rangle,
+$$</p>
+<p>where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1, and $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ acts on particle 2.</p>
+<p>Compute $E(\hat{a}, \hat{b})$ for each of the four Bell states. Express the result in the form</p>
+<p>$$
+E(\hat{a}, \hat{b}) = \sum_{j,k=1}^{3} a_j\,T_{jk}\,b_k = \hat{a}^T T\, \hat{b},
+$$</p>
+<p>and identify the $3\times 3$ matrix $T$ for each Bell state.</p>
+<h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
+<h3 id="step-1-the-four-bell-states">Step 1: The four Bell states</h3>
+<p>The four Bell states are the maximally entangled two-qubit states</p>
+<p>$$
+|\Phi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\uparrow\rangle \pm |\downarrow\downarrow\rangle\right), \qquad
+|\Psi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle \pm |\downarrow\uparrow\rangle\right).
+$$</p>
+<p>They form an orthonormal basis of the two-qubit Hilbert space $\mathbb{C}^2\otimes\mathbb{C}^2$. The singlet $|\Psi^-\rangle$ was treated in Exercise: Two Spins in the Singlet State; the other three are its companions.</p>
+<p>Each Bell state is a rank-one projector. Using the identity</p>
+<p>$$
+|\Phi^\pm\rangle\langle\Phi^\pm| = \tfrac{1}{4}\left(I\otimes I \pm \sigma_x\otimes\sigma_x \mp \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right),
+$$</p>
+<p>$$
+|\Psi^\pm\rangle\langle\Psi^\pm| = \tfrac{1}{4}\left(I\otimes I \pm \sigma_x\otimes\sigma_x \pm \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right),
+$$</p>
+<p>we may expand each Bell projector in the <strong>Pauli-string basis</strong> $\{I\otimes I, \sigma_j\otimes\sigma_k\}$. The Pauli strings are trace-orthogonal:</p>
+<p>$$
+\mathrm{Tr}\!\left[(\sigma_j\otimes\sigma_k)(\sigma_l\otimes\sigma_m)\right] = 4\,\delta_{jl}\,\delta_{km}.
+$$</p>
+<h3 id="step-2-the-correlation-matrix">Step 2: The correlation matrix</h3>
+<p>The correlation function is the expectation of the tensor-product observable $\hat{a}\cdot\boldsymbol{\sigma}_1\otimes\hat{b}\cdot\boldsymbol{\sigma}_2$:</p>
+<p>$$
+E(\hat{a}, \hat{b}) = \langle\Psi|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_k b_k I\otimes\sigma_k\right)|\Psi\rangle = \sum_{j,k} a_j b_k\,\langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle.
+$$</p>
+<p>So the correlation function is determined by the $3\times 3$ matrix</p>
+<p>$$
+T_{jk} = \langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle = \mathrm{Tr}\!\left(|\Psi\rangle\langle\Psi|\cdot\sigma_j\otimes\sigma_k\right).
+$$</p>
+<p>Because the Pauli strings are trace-orthogonal, the projector admits the expansion</p>
+<p>$$
+|\Psi\rangle\langle\Psi| = \tfrac{1}{4}\sum_{j,k} T_{jk}\,\sigma_j\otimes\sigma_k,
+$$</p>
+<p>and $T_{jk}$ can be read off directly as the coefficient of $\sigma_j\otimes\sigma_k$ inside the bracket. The off-diagonal entries vanish because the Bell projectors contain only the diagonal Pauli strings $\sigma_x\otimes\sigma_x$, $\sigma_y\otimes\sigma_y$, $\sigma_z\otimes\sigma_z$.</p>
+<h3 id="step-3-computing-math42-for-each-bell-state">Step 3: Computing $T$ for each Bell state</h3>
+<p><strong>Singlet $|\Psi^-\rangle$.</strong> The projector is</p>
+<p>$$
+|\Psi^-\rangle\langle\Psi^-| = \tfrac{1}{4}\left(I\otimes I - \sigma_x\otimes\sigma_x - \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right).
+$$</p>
+<p>Reading off the coefficients:</p>
+<p>$$
+T_{11} = T_{22} = T_{33} = -1, \qquad T_{jk} = 0 \text{ for } j \neq k.
+$$</p>
+<p>So $T_{\Psi^-} = -\mathrm{diag}(1,1,1)$, and $E = -\hat{a}\cdot\hat{b}$. This reproduces the result of Exercise: Two Spins in the Singlet State.</p>
+<p><strong>State $|\Phi^+\rangle$.</strong> The projector is</p>
+<p>$$
+|\Phi^+\rangle\langle\Phi^+| = \tfrac{1}{4}\left(I\otimes I + \sigma_x\otimes\sigma_x - \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right).
+$$</p>
+<p>Reading off the coefficients:</p>
+<p>$$
+T_{11} = +1, \quad T_{22} = -1, \quad T_{33} = +1, \qquad T_{jk} = 0 \text{ for } j \neq k.
+$$</p>
+<p>So $T_{\Phi^+} = \mathrm{diag}(1,-1,1)$, and $E = a_1 b_1 - a_2 b_2 + a_3 b_3$.</p>
+<p><strong>State $|\Phi^-\rangle$.</strong> The projector is</p>
+<p>$$
+|\Phi^-\rangle\langle\Phi^-| = \tfrac{1}{4}\left(I\otimes I - \sigma_x\otimes\sigma_x + \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right).
+$$</p>
+<p>Reading off the coefficients:</p>
+<p>$$
+T_{11} = -1, \quad T_{22} = +1, \quad T_{33} = +1.
+$$</p>
+<p>So $T_{\Phi^-} = \mathrm{diag}(-1,1,1)$, and $E = -a_1 b_1 + a_2 b_2 + a_3 b_3$.</p>
+<p><strong>State $|\Psi^+\rangle$.</strong> The projector is</p>
+<p>$$
+|\Psi^+\rangle\langle\Psi^+| = \tfrac{1}{4}\left(I\otimes I + \sigma_x\otimes\sigma_x + \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right).
+$$</p>
+<p>Reading off the coefficients:</p>
+<p>$$
+T_{11} = +1, \quad T_{22} = +1, \quad T_{33} = -1.
+$$</p>
+<p>So $T_{\Psi^+} = \mathrm{diag}(1,1,-1)$, and $E = a_1 b_1 + a_2 b_2 - a_3 b_3$.</p>
+<h3 id="step-4-the-result">Step 4: The result</h3>
+<p>The four Bell states give the four diagonal correlation matrices:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Bell state</th>
+<th>$T = \mathrm{diag}(T_{11}, T_{22}, T_{33})$</th>
+<th>$E(\hat{a}, \hat{b})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$|\Psi^-\rangle$</td>
+<td>$\mathrm{diag}(-1,-1,-1)$</td>
+<td>$-\hat{a}\cdot\hat{b}$</td>
+</tr>
+<tr>
+<td>$|\Phi^+\rangle$</td>
+<td>$\mathrm{diag}(+1,-1,+1)$</td>
+<td>$a_1 b_1 - a_2 b_2 + a_3 b_3$</td>
+</tr>
+<tr>
+<td>$|\Phi^-\rangle$</td>
+<td>$\mathrm{diag}(-1,+1,+1)$</td>
+<td>$-a_1 b_1 + a_2 b_2 + a_3 b_3$</td>
+</tr>
+<tr>
+<td>$|\Psi^+\rangle$</td>
+<td>$\mathrm{diag}(+1,+1,-1)$</td>
+<td>$a_1 b_1 + a_2 b_2 - a_3 b_3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each diagonal entry is $\pm 1$, and the product $T_{11}T_{22}T_{33}$ equals $-1$ in every case. Equivalently, writing $T_{jj} = -\epsilon_j$, the signs satisfy $\epsilon_1\epsilon_2\epsilon_3 = +1$. Only the singlet has $T = -I$, and hence the rotationally invariant correlation $E = -\hat{a}\cdot\hat{b}$.</p>
+<h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
+<h3 id="step-1-the-four-bell-idempotents">Step 1: The four Bell idempotents</h3>
+<p>In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\hat{m}) = \tfrac{1}{2}(e_0 + i\hat{m})$. A two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+ \subset \mathbb{B}\otimes\mathbb{B}$.</p>
+<p>The four Bell states correspond to the four <strong>Bell idempotents</strong></p>
+<p>$$
+P_{\epsilon} = \frac{1}{4}\left(e_0\otimes e_0 + \epsilon_1\,e_1\otimes e_1 + \epsilon_2\,e_2\otimes e_2 + \epsilon_3\,e_3\otimes e_3\right),
+$$</p>
+<p>where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign patterns with $\epsilon_1\epsilon_2\epsilon_3 = +1$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>State</th>
+<th>$\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$</th>
+<th>Biquaternion idempotent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$|\Psi^-\rangle$</td>
+<td>$(+1,+1,+1)$</td>
+<td>$\tfrac{1}{4}(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3)$</td>
+</tr>
+<tr>
+<td>$|\Phi^+\rangle$</td>
+<td>$(-1,+1,-1)$</td>
+<td>$\tfrac{1}{4}(e_0\otimes e_0 - e_1\otimes e_1 + e_2\otimes e_2 - e_3\otimes e_3)$</td>
+</tr>
+<tr>
+<td>$|\Phi^-\rangle$</td>
+<td>$(+1,-1,-1)$</td>
+<td>$\tfrac{1}{4}(e_0\otimes e_0 + e_1\otimes e_1 - e_2\otimes e_2 - e_3\otimes e_3)$</td>
+</tr>
+<tr>
+<td>$|\Psi^+\rangle$</td>
+<td>$(-1,-1,+1)$</td>
+<td>$\tfrac{1}{4}(e_0\otimes e_0 - e_1\otimes e_1 - e_2\otimes e_2 + e_3\otimes e_3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Verification of the general form.</strong> For any sign pattern with $\epsilon_1\epsilon_2\epsilon_3 = +1$, the element $P_\epsilon$ is idempotent and of trace one.</p>
+<p><em>Idempotency.</em> The square of $P_\epsilon$ is</p>
+<p>$$
+P_\epsilon^2 = \frac{1}{16}\sum_{m,m'=0}^{3}\epsilon_m\epsilon_{m'}\,(e_m e_{m'})\otimes(e_m e_{m'}),
+$$</p>
+<p>with $\epsilon_0 \equiv 1$. We group the sixteen pairs $(m,m')$ into three classes.</p>
+<p><strong>Diagonal pairs $m = m'$.</strong> For $m = 0$, $e_0 e_0 = e_0$; for $m = 1, 2, 3$, $e_m e_m = -e_0$. In all four cases the tensor product $(e_m e_m)\otimes(e_m e_m)$ equals $e_0\otimes e_0$, with coefficient $\epsilon_m^2 = 1$. Contribution: $4\,e_0\otimes e_0$.</p>
+<p><strong>Off-diagonal pairs involving $e_0$.</strong> The pairs $(0,j)$ and $(j,0)$ with $j \in \{1,2,3\}$ both give $e_j\otimes e_j$, with coefficient $\epsilon_j$. Contribution: $2\epsilon_j\,e_j\otimes e_j$ for each $j$.</p>
+<p><strong>Off-diagonal pairs among $\{1,2,3\}$.</strong> For $j \neq k$ in $\{1,2,3\}$, let $l$ be the remaining index. Then $e_j e_k = \epsilon_{jkl}e_l$ and $e_k e_j = -\epsilon_{jkl}e_l$, and the two tensor products are both $e_l\otimes e_l$. The coefficients $\epsilon_j\epsilon_k$ and $\epsilon_k\epsilon_j$ are equal. Contribution: $2\epsilon_j\epsilon_k\,e_l\otimes e_l$.</p>
+<p>Collecting, the coefficient of $e_l\otimes e_l$ in $16\,P_\epsilon^2$ is $2\epsilon_l + 2\epsilon_j\epsilon_k$, where $\{j,k,l\} = \{1,2,3\}$. Since</p>
+<p>$$
+16\,P_\epsilon = 4\,e_0\otimes e_0 + 4\sum_{l=1}^{3}\epsilon_l\,e_l\otimes e_l,
+$$</p>
+<p>the requirement $P_\epsilon^2 = P_\epsilon$ reduces to</p>
+<p>$$
+\epsilon_j\epsilon_k = \epsilon_l \qquad \text{for each cyclic triple } (j,k,l).
+$$</p>
+<p>Multiplying the three equations and using $\epsilon_j^2 = 1$ gives $\epsilon_1\epsilon_2\epsilon_3 = +1$. Conversely, if $\epsilon_1\epsilon_2\epsilon_3 = +1$, multiplying by $\epsilon_1$ gives $\epsilon_2\epsilon_3 = \epsilon_1$, and similarly for the other two cyclic triples. So idempotency holds if and only if $\epsilon_1\epsilon_2\epsilon_3 = +1$.</p>
+<p><em>Trace.</em> The trace is</p>
+<p>$$
+\mathrm{Tr}(P_\epsilon) = \frac{1}{4}\sum_{j=0}^{3}\mathrm{Tr}_\mathbb{B}(e_j)^2 = \frac{1}{4}\cdot 4 = 1,
+$$</p>
+<p>because $\mathrm{Tr}_\mathbb{B}(e_0) = 2$ and $\mathrm{Tr}_\mathbb{B}(e_j) = 0$ for $j = 1,2,3$.</p>
+<h3 id="step-2-the-correlation-observable">Step 2: The correlation observable</h3>
+<p>The correlation function is the expectation of the tensor-product Hermitian element</p>
+<p>$$
+\tilde{H}_{ab} = (i\hat{a})\otimes(i\hat{b}),
+$$</p>
+<p>where $\hat{a} = \sum_j a_j e_j$ and $\hat{b} = \sum_k b_k e_k$ are pure real quaternions. The expectation is given by the tensor-product trace formula:</p>
+<p>$$
+E(\hat{a}, \hat{b}) = \mathrm{Tr}\!\left(P_\epsilon \circ \tilde{H}_{ab}\right).
+$$</p>
+<h3 id="step-3-computing-the-trace-for-each-bell-state">Step 3: Computing the trace for each Bell state</h3>
+<p>We compute the trace term by term. Multiplying $P_\epsilon$ by $\tilde{H}_{ab}$,</p>
+<p>$$
+P_\epsilon \circ \tilde{H}_{ab} = \frac{1}{4}\sum_{m=0}^{3}\epsilon_m\,(e_m \cdot i\hat{a})\otimes(e_m \cdot i\hat{b}),
+$$</p>
+<p>with $\epsilon_0 \equiv 1$.</p>
+<p><strong>Term $m = 0$.</strong> The trace is $\mathrm{Tr}_\mathbb{B}(i\hat{a})\cdot\mathrm{Tr}_\mathbb{B}(i\hat{b}) = 0$, because the scalar part of $i\hat{a}$ vanishes.</p>
+<p><strong>Terms $m = 1, 2, 3$.</strong> We have</p>
+<p>$$
+e_m\cdot i\hat{a} = i\,e_m \hat{a} = i\left(-a_m e_0 + \text{vector}\right),
+$$</p>
+<p>using $e_m e_k = -a_m e_0 + \sum_{k \neq m} a_k e_m e_k$. The scalar part is $-i a_m$, so</p>
+<p>$$
+\mathrm{Tr}_\mathbb{B}(e_m \cdot i\hat{a}) = -2 i a_m,
+$$</p>
+<p>and similarly $\mathrm{Tr}_\mathbb{B}(e_m\cdot i\hat{b}) = -2 i b_m$. The product of the two traces is</p>
+<p>$$
+(-2 i a_m)(-2 i b_m) = 4 i^2\, a_m b_m = -4\,a_m b_m.
+$$</p>
+<p><strong>Assembly.</strong> Substituting,</p>
+<p>$$
+E(\hat{a}, \hat{b}) = \frac{1}{4}\sum_{m=1}^{3}\epsilon_m\,(-4\,a_m b_m) = -\sum_{m=1}^{3}\epsilon_m\,a_m b_m.
+$$</p>
+<p>So the correlation function is</p>
+<p>$$
+\boxed{\;E(\hat{a}, \hat{b}) = -\epsilon_1\,a_1 b_1 - \epsilon_2\,a_2 b_2 - \epsilon_3\,a_3 b_3.\;}
+$$</p>
+<h3 id="step-4-the-result_1">Step 4: The result</h3>
+<p>Applying this formula to the four sign patterns:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Bell state</th>
+<th>$\epsilon = (\epsilon_1,\epsilon_2,\epsilon_3)$</th>
+<th>$E(\hat{a}, \hat{b})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$|\Psi^-\rangle$</td>
+<td>$(+1,+1,+1)$</td>
+<td>$-a_1 b_1 - a_2 b_2 - a_3 b_3 = -\hat{a}\cdot\hat{b}$</td>
+</tr>
+<tr>
+<td>$|\Phi^+\rangle$</td>
+<td>$(-1,+1,-1)$</td>
+<td>$+a_1 b_1 - a_2 b_2 + a_3 b_3$</td>
+</tr>
+<tr>
+<td>$|\Phi^-\rangle$</td>
+<td>$(+1,-1,-1)$</td>
+<td>$-a_1 b_1 + a_2 b_2 + a_3 b_3$</td>
+</tr>
+<tr>
+<td>$|\Psi^+\rangle$</td>
+<td>$(-1,-1,+1)$</td>
+<td>$+a_1 b_1 + a_2 b_2 - a_3 b_3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>These match the standard results exactly.</p>
+<h2 id="limiting-cases">Limiting Cases</h2>
+<p>Both formulations give the same results, and both give the same limits. The cleanest way to read the table is by the direction of the measurements.</p>
+<p><strong>Parallel measurements $\hat{a} = \hat{b} = \hat{n}$.</strong> The correlation is the diagonal entry of $T$ in the direction $\hat{n}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Direction</th>
+<th>$\Psi^-$</th>
+<th>$\Phi^+$</th>
+<th>$\Phi^-$</th>
+<th>$\Psi^+$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\hat{n} = \hat{x}$</td>
+<td>$-1$</td>
+<td>$+1$</td>
+<td>$-1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$\hat{n} = \hat{y}$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$+1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$\hat{n} = \hat{z}$</td>
+<td>$-1$</td>
+<td>$+1$</td>
+<td>$+1$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The singlet is the unique Bell state for which the parallel correlation is $-1$ along <strong>every</strong> direction: the singlet is perfectly anti-correlated along any common axis, and its correlation matrix is $-I$. The other three Bell states are perfectly correlated (or anti-correlated) only along the three coordinate axes, with sign patterns that depend on the direction.</p>
+<p><strong>Joint probabilities.</strong> For any Bell state, the four joint probabilities of the measurement outcomes are</p>
+<p>$$
+p(+,+) = p(-,-) = \tfrac{1}{4}\left(1 + E\right), \qquad p(+,-) = p(-,+) = \tfrac{1}{4}\left(1 - E\right).
+$$</p>
+<p>This follows from $\langle \sigma_j \otimes I\rangle = \langle I \otimes \sigma_k\rangle = 0$ in every Bell state: the single-particle expectations vanish, and the Born probabilities reduce to $\tfrac{1}{4}(1 \pm E)$. Exercise: Two Spins in the Singlet State's probability $p(+,+) = \tfrac{1}{4}(1 - \hat{a}\cdot\hat{b})$ is the special case $E = -\hat{a}\cdot\hat{b}$ for the singlet.</p>
+<p><strong>Consistency with Exercise: Two Spins in the Singlet State.</strong> For the singlet, $E(\hat{a}, \hat{b}) = -\hat{a}\cdot\hat{b}$, so $p(+,+) = \tfrac{1}{4}(1 - \hat{a}\cdot\hat{b})$, recovering Exercise: Two Spins in the Singlet State.</p>
+<h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
+<p><strong>1. The four Bell states have a uniform algebraic form.</strong> Each is an idempotent</p>
+<p>$$
+P_\epsilon = \frac{1}{4}\left(e_0\otimes e_0 + \epsilon_1\,e_1\otimes e_1 + \epsilon_2\,e_2\otimes e_2 + \epsilon_3\,e_3\otimes e_3\right),
+$$</p>
+<p>with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is the algebraic characterization of the Bell basis: four idempotents, differing only by the sign pattern of the three vector-vector terms.</p>
+<p><strong>2. The correlation function is a bilinear pairing.</strong> The correlation function $E(\hat{a}, \hat{b}) = \mathrm{Tr}(P_\epsilon\circ\tilde{H}_{ab})$ is the tensor-product trace pairing between the state idempotent and the observable $\tilde{H}_{ab} = (i\hat{a})\otimes(i\hat{b})$. The trace pairing is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).</p>
+<p><strong>3. The sign pattern encodes the correlation matrix.</strong> In the standard formulation, the correlation matrix $T$ is computed by expanding the Bell projector in the Pauli-string basis and reading off the coefficients. In the biquaternion formulation, the same coefficients appear directly as the signs $\epsilon_j$ in the idempotent. The matrix $T$ is $-\mathrm{diag}(\epsilon_1,\epsilon_2,\epsilon_3)$.</p>
+<p><strong>4. The singlet is the isotropic case.</strong> Among the four Bell states, only the singlet has all signs equal, giving $T = -I$ and the rotationally invariant correlation $E = -\hat{a}\cdot\hat{b}$. The other three break rotational symmetry; their correlation matrices have one sign pattern of the form $(+,-,+)$ up to permutation, and their correlations depend on the direction of the measurements. The four sign patterns with $\epsilon_1\epsilon_2\epsilon_3 = +1$ correspond exactly to the four Bell states, and no other patterns are possible because the idempotency condition enforces the product to be $+1$.</p>
+<p><strong>5. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the Bell idempotent $P_\epsilon$ corresponds exactly to the rank-one projector $|\Psi_\epsilon\rangle\langle\Psi_\epsilon|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check, and it illustrates the structural claim of the companion articles: <strong>the kinematics of two-qubit entanglement is contained in the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$, with the Born rule given by the tensor-product trace, and the four Bell states are the four idempotents with sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$.</strong></p>
+<h2 id="comparison-with-exercises-measuring-spin-along-an-arbitrary-direction-spin-precession-in-a-magnetic-field-reduced-state-of-an-entangled-subsystem-successive-measurements-of-spin-and-two-spins-in-the-singlet-state">Comparison with Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field, Reduced State of an Entangled Subsystem, Successive Measurements of Spin and Two Spins in the Singlet State</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Measuring Spin Along an Arbitrary Direction</th>
+<th>Spin Precession in a Magnetic Field</th>
+<th>Successive Measurements of Spin</th>
+<th>Two Spins in the Singlet State</th>
+<th>Reduced State of an Entangled Subsystem</th>
+<th>Correlation Function of the Bell States</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>System</td>
+<td>One qubit</td>
+<td>One qubit</td>
+<td>One qubit</td>
+<td>Two qubits</td>
+<td>Two qubits</td>
+<td>Two qubits</td>
+</tr>
+<tr>
+<td>Physical process</td>
+<td>Single measurement</td>
+<td>Evolution</td>
+<td>Successive measurements</td>
+<td>Singlet measurement</td>
+<td>Reduced state</td>
+<td>Correlation function</td>
+</tr>
+<tr>
+<td>Structural object</td>
+<td>Idempotent + idempotent</td>
+<td>Idempotent + unitary</td>
+<td>Sequence of idempotents</td>
+<td>Idempotent in $\mathbb{B}\otimes\mathbb{B}$</td>
+<td>Partial trace</td>
+<td>Bell idempotents</td>
+</tr>
+<tr>
+<td>Rule used</td>
+<td>Trace formula</td>
+<td>Trace formula + rotor conjugation</td>
+<td>Product of trace formulas</td>
+<td>Tensor-product trace formula</td>
+<td>Partial trace + trace formula</td>
+<td>Tensor-product trace pairing</td>
+</tr>
+<tr>
+<td>Result</td>
+<td>$\cos^2(\theta/2)$</td>
+<td>$(\hbar/2)\cos(\omega_L t)$</td>
+<td>$\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$</td>
+<td>$(1/4)(1 - \hat{a}\cdot\hat{b})$</td>
+<td>$\rho_1 = \tfrac{1}{2}e_0$</td>
+<td>$E = -\sum_j \epsilon_j a_j b_j$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>We have solved a sixth exercise in quantum mechanics — the spin correlation function of the four Bell states — in two parallel presentations.</p>
+<p>In the <strong>standard formulation</strong>, the solution proceeds through the four Bell projectors, their expansions in the Pauli-string basis, and the trace-orthogonality of the Pauli strings, giving the four diagonal correlation matrices $T = \mathrm{diag}(\pm 1, \pm 1, \pm 1)$ and the correlation functions $E = \hat{a}^T T\hat{b}$.</p>
+<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the four Bell idempotents $P_\epsilon$ in $\mathbb{B}\otimes\mathbb{B}$, the correlation observable $(i\hat{a})\otimes(i\hat{b})$, and the tensor-product trace pairing, giving the general formula $E = -\sum_j \epsilon_j a_j b_j$ for the sign pattern $\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the Bell basis: the four Bell states are the four idempotents with the sign pattern $\epsilon_1\epsilon_2\epsilon_3 = +1$; the correlation function is the tensor-product trace pairing between the state idempotent and the correlation observable; and the singlet is the unique Bell state with the rotationally invariant correlation $E = -\hat{a}\cdot\hat{b}$.</p>
+<p>The correlation function is the object measured in Bell-inequality experiments, and the four correlation matrices exhibited here are the full content of the two-qubit spin correlations in the Bell basis.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (states, observables)</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes\mathbb{B}$</td>
+<td>Tensor product, isomorphic to $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$</td>
+<td>Pauli matrices</td>
+</tr>
+<tr>
+<td>$\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$</td>
+<td>Spin operator on particle 1</td>
+</tr>
+<tr>
+<td>$\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$</td>
+<td>Spin operator on particle 2</td>
+</tr>
+<tr>
+<td>$|\Phi^\pm\rangle, |\Psi^\pm\rangle$</td>
+<td>The four Bell states</td>
+</tr>
+<tr>
+<td>$P_\epsilon = \tfrac{1}{4}(e_0\otimes e_0 + \sum_j \epsilon_j\,e_j\otimes e_j)$</td>
+<td>Bell idempotent, with $\epsilon_1\epsilon_2\epsilon_3 = +1$</td>
+</tr>
+<tr>
+<td>$\tilde{H}_{ab} = (i\hat{a})\otimes(i\hat{b})$</td>
+<td>Correlation observable</td>
+</tr>
+<tr>
+<td>$E(\hat{a}, \hat{b}) = \mathrm{Tr}(P_\epsilon\circ\tilde{H}_{ab})$</td>
+<td>Correlation function</td>
+</tr>
+<tr>
+<td>$T_{jk} = \langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle$</td>
+<td>Correlation matrix</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$</td>
+<td>Trace on the tensor product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>A. Einstein, B. Podolsky, N. Rosen, "Can quantum-mechanical description of physical reality be considered complete?" <em>Physical Review</em> <strong>47</strong> (1935) 777–780, for the original EPR argument.</li>
+<li>J. S. Bell, "On the Einstein–Podolsky–Rosen paradox," <em>Physics</em> <strong>1</strong> (1964) 195–200, for the Bell inequalities and the singlet correlations.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the standard treatment of the Bell basis and the correlation function.</li>
+<li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the standard textbook treatment of two-spin correlations.</li>
+<li>The companion articles of this series: <em>Quantum Mechanics in Biquaternionic Form</em>, <em>Spin-1/2 Quantum Mechanics in Biquaternionic Form</em>, <em>Exercise: Measuring Spin Along an Arbitrary Direction</em>, <em>Exercise: Spin Precession in a Magnetic Field</em>, <em>Exercise: Successive Measurements of Spin</em>, <em>Exercise: Two Spins in the Singlet State</em>, and <em>Exercise: The Reduced State of an Entangled Subsystem</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

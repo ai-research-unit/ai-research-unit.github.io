@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symmetric Tensors and Spherical Harmonics — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="symmetric-tensors-and-spherical-harmonics"><strong>Symmetric Tensors and Spherical Harmonics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the second application of the category, and it identifies the symmetric powers of <em>Symmetric Powers</em> with the harmonic layers of the polynomial algebra. The symmetric-tensor statements hold over a field $F$ of characteristic $0$, so that all factorials are invertible and the symmetric power is the module of invariants; the polynomial algebra is that of <em>The Symmetric Algebra</em>, and the symmetric powers are its graded pieces $\operatorname{Sym}^k$.</p>
+<p>Let $V = \mathbb{R}^n$ with its standard inner product and let $P_k$ be the space of homogeneous polynomials of degree $k$ in $x_1, \ldots, x_n$. The <strong>Laplacian</strong> $\Delta = \sum_i \partial_i^2$ maps $P_k$ to $P_{k-2}$, and the <strong>harmonic polynomials</strong> of degree $k$ are</p>
+<p>$$
+\mathcal{H}_k = \{f \in P_k : \Delta f = 0\}.
+$$</p>
+<p>The two structures are the same up to a trace: symmetric powers of the dual are polynomials, and the harmonic polynomials are the symmetric tensors that are trace-free. The restriction of $\mathcal{H}_k$ to the unit sphere $S^{n-1}$ consists of eigenfunctions of the spherical Laplacian, and the resulting <strong>spherical harmonics</strong> decompose the functions on the sphere into orthogonal layers.</p>
+<p>The article defines symmetric tensors and their contraction with the metric, develops the decomposition $P_k = \mathcal{H}_k \oplus r^2 P_{k-2}$, proves the orthogonality and eigenvalue properties of the spherical harmonics, and computes the dimension of each layer together with the trace-free interpretation. All mathematics is real; no physical interpretation of the harmonics is used.</p>
+<h2 id="symmetric-tensors">Symmetric Tensors</h2>
+<h3 id="symmetric-powers-and-symmetric-tensors">Symmetric Powers and Symmetric Tensors</h3>
+<p>Let $V$ be a finite-dimensional vector space over a field $F$ of characteristic $0$ and let $V^*$ be its dual. By <em>Symmetric Powers</em>, the $k$-fold symmetric power $\operatorname{Sym}^k(V^*)$ is the quotient of the $k$-fold tensor power $(V^*)^{\otimes k}$ by the subspace spanned by the tensors $\varphi_1 \otimes \cdots \otimes \varphi_k - \varphi_{\sigma(1)}\otimes\cdots\otimes\varphi_{\sigma(k)}$ for $\sigma$ in the symmetric group $S_k$. An element of $\operatorname{Sym}^k(V^*)$ is a <strong>symmetric tensor</strong> of rank $k$, that is, a $k$-linear form $\varphi : V^k \to F$ invariant under permutation of its arguments. In characteristic $0$ the symmetric power is canonically the module of $S_k$-invariant elements of $(V^*)^{\otimes k}$, so this use of the term agrees with the invariants that <em>Symmetric Powers</em> calls symmetric tensors in the strict sense.</p>
+<p><strong>Proposition.</strong> If $V$ has basis $e_1, \ldots, e_n$ with dual basis $e^1, \ldots, e^n$ defined by $e^i(e_j) = \delta^i_j$, then the products $e^{i_1}\cdots e^{i_k}$ with $i_1 \leq \cdots \leq i_k$ are a basis of $\operatorname{Sym}^k(V^*)$. Hence</p>
+<p>$$
+\dim \operatorname{Sym}^k(V^*) = \binom{n+k-1}{k}.
+$$</p>
+<p><em>Proof.</em> The monomials in the $e^i$ of degree $k$ span the symmetric power under the multiplication $\operatorname{Sym}^i\times\operatorname{Sym}^j\to\operatorname{Sym}^{i+j}$, and the commutative law identifies all orderings of the factors; the nondecreasing multi-indices parametrise the distinct monomials. Independence follows by evaluating on the symmetric tensors $e_{i_1}\cdots e_{i_k}$, whose coordinates are $\delta$-symbols. $\square$</p>
+<p><strong>Example.</strong> $\operatorname{Sym}^2(V^*)$ has dimension $\binom{n+1}{2}$ and is the space of quadratic forms; its basis is $e^ie^j$ for $i\leq j$. The space $\operatorname{Sym}^k(V^*)$ is canonically the space $P_k$ of homogeneous polynomials of degree $k$ in the coordinate functions, and this identification is used throughout.</p>
+<h3 id="symmetric-tensors-under-the-orthogonal-group">Symmetric Tensors under the Orthogonal Group</h3>
+<p>Assume $F = \mathbb{R}$ and let $V = \mathbb{R}^n$ carry the standard positive definite inner product $g$, with $g_{ij} = \delta_{ij}$. The <strong>orthogonal group</strong> $O(n)$ acts on $\operatorname{Sym}^k(V^*)$ by $(g\varphi)(v_1,\ldots,v_k) = \varphi(g^{-1}v_1,\ldots,g^{-1}v_k)$, and this action determines the structure of the layer. Inside $\operatorname{Sym}^k(V^*)$ sits the image of the <strong>contraction</strong> with the metric,</p>
+<p>$$
+\operatorname{Sym}^{k-2}(V^*) \longrightarrow \operatorname{Sym}^k(V^*), \qquad \varphi \longmapsto g\,\varphi,
+$$</p>
+<p>which lowers the rank by two by summing over a pair of indices with the metric and its inverse. The <strong>trace-free</strong> or <strong>harmonic</strong> symmetric tensors are the kernel of a dual contraction; when the metric is the identity the contraction is the Laplacian and the trace-free tensors are exactly the harmonic polynomials defined below.</p>
+<p><strong>Proposition.</strong> The trace-free symmetric tensors of rank $k$ on $\mathbb{R}^n$ form a subspace of dimension $\binom{n+k-1}{k} - \binom{n+k-3}{k-2}$ for $k \geq 2$, and this is the dimension of $\mathcal{H}_k$.</p>
+<p>The equality of dimensions is established in the last section together with the decomposition; it is the tensor form of the isomorphism between harmonic polynomials and trace-free symmetric tensors.</p>
+<h2 id="harmonic-polynomials">Harmonic Polynomials</h2>
+<h3 id="the-laplacian">The Laplacian</h3>
+<p>Let $P_k$ be the space of homogeneous polynomials of degree $k$ in $x_1, \ldots, x_n$ over $\mathbb{R}$, and let</p>
+<p>$$
+\Delta = \sum_{i=1}^{n}\frac{\partial^2}{\partial x_i^2} : P_k \longrightarrow P_{k-2}
+$$</p>
+<p>be the Laplacian; it is a linear map decreasing the degree by two. A polynomial is <strong>harmonic</strong> if $\Delta f = 0$, and</p>
+<p>$$
+\mathcal{H}_k = \ker\bigl(\Delta : P_k \to P_{k-2}\bigr) .
+$$</p>
+<p><strong>Example.</strong> Every element of $P_0$ and of $P_1$ is harmonic, so $\mathcal{H}_0 = P_0$ and $\mathcal{H}_1 = P_1$. In $P_2$ the harmonic polynomials are the traceless quadratic forms; for $n = 3$ a basis is $xy$, $yz$, $zx$, $x^2 - y^2$, $x^2 - z^2$, so $\dim\mathcal{H}_2 = 5$.</p>
+<h3 id="the-fundamental-decomposition">The Fundamental Decomposition</h3>
+<p>Write $r^2 = x_1^2 + \cdots + x_n^2$ for the squared distance from the origin.</p>
+<p><strong>Lemma.</strong> For any polynomial $h$, the Laplacian of $r^2 h$ is</p>
+<p>$$
+\Delta(r^2 h) = 4\,x\cdot\nabla h + 2n\,h + r^2\,\Delta h .
+$$</p>
+<p><em>Proof.</em> The product rule gives $\Delta(r^2 h) = (\Delta r^2)h + 2\nabla r^2 \cdot \nabla h + r^2 \Delta h$, and $\nabla r^2 = 2x$, $\Delta r^2 = 2n$, so $2\nabla r^2\cdot\nabla h = 4\,x\cdot\nabla h$. $\square$</p>
+<p>If $h$ is homogeneous of degree $k - 2$, then $x \cdot \nabla h = (k-2)h$ by Euler's relation, and the lemma reads</p>
+<p>$$
+\Delta(r^2 h) = \bigl(2n + 4(k-2)\bigr) h + r^2 \Delta h , \qquad h \in P_{k-2} .
+$$</p>
+<p><strong>Theorem (harmonic decomposition).</strong> For each $k \geq 0$,</p>
+<p>$$
+P_k = \mathcal{H}_k \oplus r^2 P_{k-2},
+$$</p>
+<p>and iterating,</p>
+<p>$$
+P_k = \bigoplus_{j=0}^{\lfloor k/2\rfloor} r^{2j}\,\mathcal{H}_{k-2j} .
+$$</p>
+<p><em>Proof.</em> Put $m = k - 2$ and filter $P_m$ by the submodules $F_j = r^{2j}P_{m-2j}$, $j \geq 0$, a descending chain with $F_0 = P_m$ and $F_j = 0$ for $2j > m$. The operator</p>
+<p>$$
+T = \Delta \circ (r^2\,\cdot) : P_{m} \longrightarrow P_{m}, \qquad T(h) = c_k h + r^2\,\Delta h, \qquad c_k = 2n + 4(k-2),
+$$</p>
+<p>preserves the filtration. Indeed, for $g \in P_{m-2j}$ and $u = r^{2j}g$, the product rule applied to $r^{2(j+1)}g$ gives</p>
+<p>$$
+\Delta\bigl(r^{2j+2}g\bigr) = \beta_j\, r^{2j} g + r^{2j+2}\Delta g, \qquad \beta_j = 2(j+1)\bigl(n + 2k - 4 - 2j\bigr),
+$$</p>
+<p>using $x\cdot\nabla g = (m-2j)g$; the second summand lies in $F_{j+1}$, so $T$ induces the scalar $\beta_j$ on each graded piece $F_j/F_{j+1}$. For $0 \leq j \leq m/2$ one has $n + 2k - 4 - 2j \geq n + k - 2 \geq 1$, so every $\beta_j$ is nonzero over $\mathbb{R}$, and a triangular operator with nonzero diagonal is invertible. Hence $T$ is invertible, so</p>
+<p>$$
+\Delta\bigl(r^2 P_{k-2}\bigr) = P_{k-2}
+$$</p>
+<p>and $\Delta : P_k \to P_{k-2}$ is surjective; therefore $\dim\mathcal{H}_k = \dim P_k - \dim P_{k-2}$. The intersection $r^2P_{k-2}\cap\mathcal{H}_k$ is zero, because $r^2h\in\mathcal{H}_k$ means $T(h) = \Delta(r^2h) = 0$, and $T$ is invertible. Hence the sum $\mathcal{H}_k + r^2P_{k-2}$ is direct of dimension $\dim P_k$, so it equals $P_k$. Iterating the identity gives the second formula. $\square$</p>
+<p><strong>Remark.</strong> The first graded diagonal is $\beta_0 = c_k$, recovering the lemma; the later ones differ from it, since $\Delta$ does not respect the decomposition by harmonic degree but only the filtration by powers of $r^2$.</p>
+<p><strong>Corollary.</strong> $\dim\mathcal{H}_k = \dim P_k - \dim P_{k-2}$ for $k \geq 2$, and $\mathcal{H}_0 = P_0$, $\mathcal{H}_1 = P_1$.</p>
+<h2 id="spherical-harmonics">Spherical Harmonics</h2>
+<h3 id="restriction-to-the-sphere">Restriction to the Sphere</h3>
+<p>Let $S^{n-1} = \{x \in \mathbb{R}^n : r^2 = 1\}$ be the unit sphere with surface measure $d\sigma$. The restriction of a polynomial to the sphere is not injective on $P_k$ if $k \geq 2$, because $r^2 - 1$ vanishes there; the following theorem shows that it is injective on each harmonic layer and identifies the images.</p>
+<p><strong>Theorem.</strong> The restriction map $\mathcal{H}_k \to C^{\infty}(S^{n-1})$, $f \mapsto f|_{S^{n-1}}$, is injective.</p>
+<p><em>Proof.</em> Suppose $f \in \mathcal{H}_k$ vanishes on the sphere. Since $f$ is homogeneous of degree $k$, the identity $f(x) = r^k f(x/r)$ holds for $x \neq 0$, and the right hand side vanishes whenever $r = 1$; by homogeneity $f$ vanishes on every sphere $r = \rho$, hence on all of $\mathbb{R}^n$ except possibly the origin, and by continuity everywhere. $\square$</p>
+<p>The images of the layers are the <strong>spherical harmonics</strong>. The elements of $\mathcal{H}_k|_{S^{n-1}}$ are eigenfunctions of the spherical Laplacian.</p>
+<p><strong>Theorem.</strong> Let $\Delta_{S}$ be the Laplace–Beltrami operator of $S^{n-1}$. For $f \in \mathcal{H}_k$,</p>
+<p>$$
+\Delta_S f = -k(k + n - 2)\, f .
+$$</p>
+<p><em>Proof.</em> In polar coordinates the Euclidean Laplacian is $\Delta = \partial_r^2 + \frac{n-1}{r}\partial_r + \frac{1}{r^2}\Delta_S$. For a homogeneous harmonic $f$ of degree $k$ one has $\partial_r^2 f = k(k-1)r^{k-2}\tilde f$ and $\frac{n-1}{r}\partial_r f = (n-1)k r^{k-2}\tilde f$, where $\tilde f = f|_{S^{n-1}}$. Hence</p>
+<p>$$
+0 = \Delta f = r^{k-2}\Bigl(k(k-1) + (n-1)k\Bigr)\tilde f + r^{k-2}\Delta_S \tilde f ,
+$$</p>
+<p>and $\Delta_S\tilde f = -k(k-1) - (n-1)k\,\tilde f = -k(k+n-2)\tilde f$. $\square$</p>
+<p><strong>Example.</strong> For $n = 3$ the eigenvalue is $-k(k+1)$, so the spherical harmonics of degrees $0, 1, 2$ have eigenvalues $0, -2, -6$. The polynomial $f = x^2 - y^2$ restricts to the sphere as $\sin^2\theta\cos2\varphi$, and a direct computation of $\Delta_{S^2}$ gives $\Delta_{S^2} f = -6f$, in agreement with the theorem.</p>
+<h3 id="orthogonality">Orthogonality</h3>
+<p><strong>Theorem.</strong> For $j \neq k$, the layers $\mathcal{H}_j$ and $\mathcal{H}_k$ are orthogonal in $L^2(S^{n-1}, d\sigma)$.</p>
+<p><em>Proof.</em> Let $f \in \mathcal{H}_j$, $h \in \mathcal{H}_k$ and consider the vector field $F = h\,\nabla f - f\,\nabla h$. Its divergence is</p>
+<p>$$
+\nabla\cdot F = h\,\Delta f - f\,\Delta h = 0 .
+$$</p>
+<p>Integrating over the unit ball $B$ and applying the divergence theorem,</p>
+<p>$$
+0 = \int_B \nabla\cdot F\,dV = \int_{S^{n-1}} \langle F, x\rangle\,d\sigma = \int_{S^{n-1}}\bigl(h\,\partial_r f - f\,\partial_r h\bigr)d\sigma ,
+$$</p>
+<p>because the outward normal to the ball on the sphere is $x$. Since $f$ and $h$ are homogeneous, Euler's relation gives $\partial_r f = j f$ and $\partial_r h = k h$, so</p>
+<p>$$
+0 = (j - k)\int_{S^{n-1}} f h\,d\sigma ,
+$$</p>
+<p>and $j \neq k$ gives the orthogonality. $\square$</p>
+<p><strong>Corollary.</strong> The restrictions of distinct harmonic layers are orthogonal on the sphere, and within each layer the $O(n)$-action is irreducible; the spaces $\mathcal{H}_k$ are the irreducible components of the natural action of $O(n)$ on the polynomial algebra.</p>
+<p>The completeness of the spherical harmonics is the statement of Peter–Weyl for the compact group $O(n)$, or equivalently of the density of the polynomial algebra in $C(S^{n-1})$: every continuous function on the sphere can be uniformly approximated by polynomials, and the harmonic decomposition of the polynomials gives the orthogonal expansion. This is standard and is quoted.</p>
+<h3 id="zonal-harmonics-and-the-addition-theorem">Zonal Harmonics and the Addition Theorem</h3>
+<p>Fix a unit vector $y \in S^{n-1}$. By the irreducibility of the $O(n)$-action on $\mathcal{H}_k$, the subspace fixed by the stabiliser $\mathrm{Stab}(y) \cong O(n-1)$ is one-dimensional; its generator is the <strong>zonal harmonic</strong> $Z_k(\cdot, y)$, characterised by the reproducing property</p>
+<p>$$
+f(y) = \int_{S^{n-1}} f(x)\, Z_k(x, y)\, d\sigma(x), \qquad f \in \mathcal{H}_k .
+$$</p>
+<p>The zonal harmonic depends only on the inner product $\langle x, y\rangle$, so it is a function $Z_k(t)$ of one variable $t = \cos\gamma$, where $\gamma$ is the geodesic distance between $x$ and $y$; up to normalisation it is the <strong>Gegenbauer</strong> or <strong>ultraspherical polynomial</strong> $C_k^{(n/2 - 1)}(t)$. For $n = 3$ this is the Legendre polynomial, and the reproducing kernel is $(2k+1)P_k(t)/(4\pi)$.</p>
+<p>The reproducing property for an orthonormal basis $Y_{k1}, \ldots, Y_{kd}$ of $\mathcal{H}_k$ reads $Z_k(x,y) = \sum_{j} Y_{kj}(x)\overline{Y_{kj}(y)}$, and taking $n = 3$, where $d = 2k+1$, gives the classical <strong>addition theorem</strong></p>
+<p>$$
+P_k(\cos\gamma) = \frac{4\pi}{2k+1}\sum_{m=-k}^{k} Y_{km}(\theta, \phi)\,\overline{Y_{km}(\theta', \phi')} ,
+$$</p>
+<p>with $\cos\gamma = \cos\theta\cos\theta' + \sin\theta\sin\theta'\cos(\phi - \phi')$. The rewriting of the kernel in the single variable $t$ is the general addition theorem for the harmonic layers; it expresses the reproducing kernel of each irreducible summand of the polynomial algebra in terms of a single classical special function.</p>
+<h2 id="dimensions-of-the-layers">Dimensions of the Layers</h2>
+<h3 id="the-dimension-formula">The Dimension Formula</h3>
+<p><strong>Theorem.</strong> For $k \geq 2$,</p>
+<p>$$
+\dim\mathcal{H}_k = \binom{n+k-1}{k} - \binom{n+k-3}{k-2} = \frac{(2k+n-2)\,(k+n-3)!}{k!\,(n-2)!} ,
+$$</p>
+<p>while $\dim\mathcal{H}_0 = 1$ and $\dim\mathcal{H}_1 = n$.</p>
+<p><em>Proof.</em> The first equality is the corollary of the decomposition theorem, and the second is the algebraic simplification of the difference of the two binomial coefficients, using $\binom{n+k-3}{k-2} = \frac{(n+k-3)!}{(k-2)!\,(n-1)!}$. $\square$</p>
+<p><strong>Example.</strong> For $n = 3$, $\dim\mathcal{H}_k = 2k+1$, the classical dimension of the degree-$k$ spherical harmonics on the two-sphere. For $n = 4$, $\dim\mathcal{H}_k = (k+1)^2$. For $n = 2$, $\dim\mathcal{H}_k = 2$ for every $k \geq 1$: the harmonic homogeneous polynomials of degree $k$ in two variables are spanned by the real and imaginary parts of $z^k$. The dimensions for small $n$ and $k$ are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k$</th>
+<th>$n = 2$</th>
+<th>$n = 3$</th>
+<th>$n = 4$</th>
+<th>$n = 5$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>9</td>
+<td>14</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td>7</td>
+<td>16</td>
+<td>30</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2</td>
+<td>9</td>
+<td>25</td>
+<td>55</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary.</strong> The restrictions to the sphere of the polynomials of degree at most $K$ span $\bigoplus_{k \leq K}\mathcal{H}_k|_{S^{n-1}}$, of dimension</p>
+<p>$$
+\sum_{k=0}^{K}\dim\mathcal{H}_k = \dim P_K + \dim P_{K-1} = \binom{n+K-1}{K} + \binom{n+K-2}{K-1},
+$$</p>
+<p>by telescoping, with the second term omitted for $K = 0$. For $n = 3$ this dimension is $(K+1)^2$, the classical count of the spherical harmonics of degree at most $K$ on the two-sphere.</p>
+<h3 id="trace-free-tensors">Trace-Free Tensors</h3>
+<p>The harmonic layers and the trace-free symmetric tensors are the same object, read through the metric.</p>
+<p><strong>Theorem.</strong> Under the identification of $P_k$ with $\operatorname{Sym}^k(V^*)$, the harmonic polynomials of degree $k$ correspond exactly to the symmetric tensors of rank $k$ that are trace-free with respect to $g$, and the trace-free symmetric tensors of rank $k$ form a subspace of dimension $\dim\mathcal{H}_k$.</p>
+<p><em>Proof.</em> The Laplacian on polynomials corresponds to the metric contraction on symmetric tensors: with the standard form, $\Delta$ is the contraction of two indices by $\delta^{ij}$, so $\Delta f = 0$ is exactly the trace-free condition. The dimensions agree by the formula above. $\square$</p>
+<p><strong>Corollary.</strong> The dimension of the space of quadratic forms on $\mathbb{R}^n$ is $\binom{n+1}{2} = \tfrac{n(n+1)}{2}$, and the trace-free part has dimension $\binom{n+1}{2} - 1 = \tfrac{n(n+1)}{2} - 1$, which for $n = 3$ is $5$, the number of independent harmonic quadratics. The decomposition $P_2 = \mathcal{H}_2 \oplus r^2 P_0$ separates the quadratic form into its trace part $\tfrac{\operatorname{tr} Q}{n}r^2$ and its trace-free part, and this is the spectral decomposition of a quadratic form into its mean and its traceless component.</p>
+<h2 id="summary">Summary</h2>
+<p>Let $V = \mathbb{R}^n$ with its standard inner product. The symmetric tensors of rank $k$ on $V^*$ are the symmetric powers $\operatorname{Sym}^k(V^*)$, of dimension $\binom{n+k-1}{k}$, and they are the homogeneous polynomials of degree $k$. The Laplacian $\Delta : P_k \to P_{k-2}$ defines the harmonic polynomials $\mathcal{H}_k = \ker\Delta$, and the fundamental decomposition is</p>
+<p>$$
+P_k = \mathcal{H}_k \oplus r^2 P_{k-2}, \qquad P_k = \bigoplus_{j=0}^{\lfloor k/2\rfloor} r^{2j}\mathcal{H}_{k-2j},
+$$</p>
+<p>proved from the identity $\Delta(r^2 h) = (2n+4(k-2))h + r^2\Delta h$ on $P_{k-2}$ and the downward induction on the degree. The restriction of $\mathcal{H}_k$ to the unit sphere is injective, its image consists of eigenfunctions of the spherical Laplacian with eigenvalue $-k(k+n-2)$, and distinct layers are orthogonal in $L^2(S^{n-1})$, proved by the divergence theorem applied to $h\nabla f - f\nabla h$ and Euler's relation. The dimension of the layer is</p>
+<p>$$
+\dim\mathcal{H}_k = \binom{n+k-1}{k} - \binom{n+k-3}{k-2} = \frac{(2k+n-2)(k+n-3)!}{k!(n-2)!},
+$$</p>
+<p>equal to $2k+1$ for $n=3$ and to $(k+1)^2$ for $n=4$, and the harmonic layers are exactly the trace-free symmetric tensors. The spherical harmonics are the images of the layers, and their orthogonality and completeness are the Fourier expansion on the sphere.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>Base field of characteristic $0$</td>
+</tr>
+<tr>
+<td>$V = \mathbb{R}^n$, $V^*$</td>
+<td>Euclidean space and its dual</td>
+</tr>
+<tr>
+<td>$e_1, \ldots, e_n$; $e^1, \ldots, e^n$</td>
+<td>Basis of $V$ and its dual basis, $e^i(e_j) = \delta^i_j$</td>
+</tr>
+<tr>
+<td>$g$, $g_{ij} = \delta_{ij}$</td>
+<td>Standard positive definite inner product</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}^k(V^*)$</td>
+<td>Symmetric tensors of rank $k$, dimension $\binom{n+k-1}{k}$</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>Homogeneous polynomials of degree $k$</td>
+</tr>
+<tr>
+<td>$\Delta = \sum_i\partial_i^2$</td>
+<td>Laplacian, $P_k \to P_{k-2}$</td>
+</tr>
+<tr>
+<td>$\mathcal{H}_k = \ker\Delta \cap P_k$</td>
+<td>Harmonic polynomials of degree $k$</td>
+</tr>
+<tr>
+<td>$r^2 = x_1^2 + \cdots + x_n^2$</td>
+<td>Squared norm</td>
+</tr>
+<tr>
+<td>$S^{n-1}$, $d\sigma$</td>
+<td>Unit sphere and surface measure</td>
+</tr>
+<tr>
+<td>$\Delta_S$</td>
+<td>Laplace–Beltrami operator; eigenvalue $-k(k+n-2)$</td>
+</tr>
+<tr>
+<td>$O(n)$</td>
+<td>Orthogonal group acting on each layer</td>
+</tr>
+<tr>
+<td>$\binom{n+k-1}{k} - \binom{n+k-3}{k-2}$</td>
+<td>Dimension of $\mathcal{H}_k$</td>
+</tr>
+<tr>
+<td>Trace-free</td>
+<td>Symmetric tensors in the kernel of metric contraction</td>
+</tr>
+<tr>
+<td>$Z_k(x,y)$</td>
+<td>Zonal harmonic, reproducing kernel of $\mathcal{H}_k$</td>
+</tr>
+<tr>
+<td>$Y_{km}$</td>
+<td>Orthonormal basis of $\mathcal{H}_k$ on $S^2$</td>
+</tr>
+<tr>
+<td>$C_k^{(n/2-1)}(t)$</td>
+<td>Gegenbauer polynomial of the zonal harmonic</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton University Press, 1971), for harmonic polynomials, spherical harmonics and the decomposition of $L^2(S^{n-1})$.</li>
+<li>Naum Ya. Vilenkin, <em>Special Functions and the Theory of Group Representations</em> (American Mathematical Society, 1968), for spherical harmonics and the orthogonal-group decomposition.</li>
+<li>Claus Müller, <em>Analysis of Spherical Symmetries in Euclidean Spaces</em> (Springer, 1998), for the addition theorem and the eigenvalue properties.</li>
+<li>Sheldon Axler, Paul Bourdon and Wade Ramey, <em>Harmonic Function Theory</em> (Springer, 2nd ed. 2001), for harmonic polynomials and the Kelvin transform.</li>
+<li>Sigurdur Helgason, <em>Groups and Geometric Analysis</em> (American Mathematical Society, 1984), for the representation-theoretic treatment of spherical harmonics.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

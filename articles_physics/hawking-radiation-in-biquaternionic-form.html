@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawking Radiation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hawking-radiation-in-biquaternionic-form"><strong>Hawking Radiation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A black hole formed by collapse is not black. A quantum field on the collapsing background is not in a vacuum at late times: an observer far from the horizon finds quanta whose distribution is thermal, at the <strong>Hawking temperature</strong></p>
+<p>$$
+T = \frac{\hbar\,\kappa}{2\pi c\,k_B},
+$$</p>
+<p>where $\kappa$ is the <strong>surface gravity</strong> of the horizon and $\hbar$, $c$, $k_B$ are the reduced Planck constant, the speed of light, and the Boltzmann constant. For the Schwarzschild horizon $\kappa=c^4/(4GM)$, so</p>
+<p>$$
+T_{\mathrm H} = \frac{\hbar c^3}{8\pi G M k_B},
+$$</p>
+<p>inversely proportional to the mass. This article develops that statement in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the companion articles, and states precisely its relation to the Unruh effect.</p>
+<p><strong>The relation is an identity, not an analogy.</strong> The Unruh effect and Hawking radiation are the <em>same</em> KMS statement seen in different coordinates. <em>The Unruh Effect in Biquaternionic Form</em> established that the Minkowski vacuum restricted to a Rindler wedge is a KMS state at inverse temperature $\beta=2\pi c/a$ with respect to the boost flow, where $a$ is the proper acceleration of the redshift-normalized boost; the temperature is $T=\hbar a/(2\pi c k_B)$. Hawking radiation is that same statement for the vacuum of a collapsing background restricted to the exterior of a black-hole horizon, with respect to the horizon-generating Killing flow, at inverse temperature $\beta=2\pi c/\kappa$, where $\kappa$ is the horizon's surface gravity. The two differ in which coordinates the horizon is drawn in, not in the structure of the statement. The near-horizon region of any non-extremal horizon <em>is</em> a Rindler wedge to leading order, with Rindler acceleration equal to the surface gravity; that is the sense in which the Unruh effect and Hawking radiation are one result.</p>
+<p><strong>The trap that hides the identity.</strong> The quantity $a$ in the Unruh formula is a proper acceleration, and the temptation is to carry it over to the black-hole horizon by computing the proper acceleration of a static observer there. That quantity <strong>diverges</strong> at the horizon and is not the Hawking temperature's argument. What enters is the surface gravity $\kappa$, which is the <em>redshifted</em> acceleration, finite at the horizon. Section "The Schwarzschild Horizon and Its Surface Gravity" computes both, shows that $a(r)\,\sqrt{f}\to\kappa$ while $a(r)\to\infty$, and states the identification in a form that uses the divergent quantity nowhere. The Hawking temperature is the Unruh temperature of the near-horizon static observer, redshifted from the horizon to infinity; the divergence of the local Unruh temperature is exactly cancelled by the redshift.</p>
+<p><strong>The trap that hides the derivation.</strong> Writing down a Planck spectrum and reading off a temperature is not a derivation of thermality. The thermal form comes from the <strong>mode mixing</strong> between the vacuum in the far past (the <em>in</em> vacuum) and the quanta detected in the far future (the <em>out</em> modes): the two sets of modes are related by a Bogoliubov transformation, and the coefficients of that transformation carry the exponential factor that produces the Planck distribution. The article exhibits the Bogoliubov transformation, derives the particle number as the squared negative-frequency coefficient, shows where the exponential $e^{-2\pi\omega/\kappa}$ comes from (the logarithmic phase of the mode at the horizon), and obtains both the Bose–Einstein and Fermi–Dirac forms from the same exponential. Thermality is shown; it is not asserted.</p>
+<p>Three structures carry the effect, and their homes in the framework differ.</p>
+<ol>
+<li><strong>The horizon and its Killing flow.</strong> The horizon is a null surface generated by a Killing field $\xi=\partial_t$; the surface gravity is a property of that flow. In the biquaternion framework the metric is not native — <em>Curved Spacetime and the Biquaternion Framework</em> establishes that the framework's own local-scale route produces no black-hole exteriors — so the Schwarzschild geometry is <strong>imported</strong>, and the algebra carries only the local tangent structure: the light cone at each point is the zero-divisor cone of that point's copy of $\mathbb{M}_-$.</li>
+<li><strong>The KMS/modular structure.</strong> The thermal character is the KMS condition of <em>The KMS Condition and the Biquaternion Framework</em>, whose modular Hamiltonian is a Hermitian element of the informational sector $\mathbb{M}_+$. The imaginary time of the material sector is intrinsic, and the Euclidean period that fixes the temperature is a period along that imaginary time.</li>
+<li><strong>The mode mixing.</strong> The in and out modes live in the material sector $\mathbb{M}_-$ as four-vectors and wave functions; their Bogoliubov coefficients are ordinary complex numbers, not biquaternions, and the algebra's role is to house the four-vector kinematics, not to produce the coefficients.</li>
+</ol>
+<p><strong>Relation to the sibling and the parent.</strong> <em>The Unruh Effect in Biquaternionic Form</em> is the nearest sibling, and this article does not rederive its result. It takes the sibling's KMS strip, its Planck factor, and its identification of the modular flow with the boost, and asks what changes when the boost's horizon is the horizon of a black hole rather than the edge of a Rindler wedge. What changes is the surface gravity and the global redshift; what does not change is the KMS statement. <em>The KMS Condition and the Biquaternion Framework</em> is the parent, and it leaves the same gap the sibling records: its modular Hamiltonian is finite-dimensional and does not extend to a field algebra; the identification of the modular flow with the horizon flow is imported. The gap is stated here rather than filled.</p>
+<ul>
+<li><strong>Established, and recomputed below.</strong> For Schwarzschild, the surface gravity is $\kappa=c^2 f'(r_s)/2=c^4/(4GM)$ with $f=1-r_s/r$, $r_s=2GM/c^2$; the static observer's proper acceleration is $a(r)=c^2 f'/(2\sqrt f)=GM/(r^2\sqrt f)$, which diverges at $r_s$ and equals $\kappa/\sqrt f$ only at $r=r_s$, while its redshifted product $a(r)\sqrt f=c^2f'/2=GM/r^2$ tends to $\kappa$ as $r\to r_s$. The Euclidean Schwarzschild section is regular at the horizon only if the imaginary time has period $8\pi GM/c^3=2\pi c/\kappa=2\pi/\kappa_\omega$, which is the inverse Hawking temperature. Tractable pieces of the Bogoliubov formalism are recomputed: the coefficients' consistency relations, the particle number $\sum_i|\mathcal B_{ji}|^2$, the branch-point factor $e^{-\pi\omega/\kappa}$, the two-mode squeeze identity $\sinh^2 r=1/(e^{2\pi\omega/\kappa}-1)$ with $\tanh r=e^{-\pi\omega/\kappa}$, the Bose and Fermi geometric sums, and the $M^{-1}$ scaling of $T_{\mathrm H}$.</li>
+<li><strong>Standard, and imported.</strong> Hawking's calculation; the metric and its surface gravity; the Kruskal extension and the in/out mode decomposition; the identification of the horizon mode's analytic continuation with the Bogoliubov coefficient ratio; the Hartle–Hawking and Unruh vacua; the KMS characterization of thermal equilibrium; the Bisognano–Wichmann theorem.</li>
+<li><strong>Interpretation.</strong> Reading the KMS imaginary time as the intrinsic imaginary time of $\mathbb{M}_-$; reading the local light cone as the zero-divisor cone; reading the modular Hamiltonian as the Hermitian generator in $\mathbb{M}_+$. These are structural readings of the imported construction; the algebra is consistent with them and does not force them.</li>
+<li><strong>Gaps, left visible.</strong> The framework contains no black-hole geometry and generates no dynamics; the Schwarzschild metric is imported as a frame field that nothing selects. The framework does not derive the mode mixing, the exponential factor, or the KMS property; it houses them. Hawking radiation has never been observed, and no claim of observation is made here. The thermodynamics of the horizon — its entropy, its laws, its evaporation — is the subject of a separate planned article and is not developed here.</li>
+</ul>
+<p>The article is organized as follows. The next section fixes the Schwarzschild horizon, computes the proper acceleration and the surface gravity, and separates them. The section after that reduces the near-horizon geometry to Rindler and states the identification with the Unruh effect precisely. A short section records what the biquaternion framework carries and what it imports. Two sections construct the Bogoliubov transformation and derive the Planck spectrum from it. A section computes the temperature, checks it against the Euclidean period and against the mass scaling, and records the observational status. The article closes with the established/interpretation split, open questions, and the summary.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde X=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with norm form $N(\tilde X)=\tilde X\bar{\tilde X}=-c^2t^2+x^2+y^2+z^2$; the biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $G$ is Newton's constant, $M$ the black-hole mass, $f=1-r_s/r$, $r_s=2GM/c^2$; $\kappa$ is the surface gravity in the <strong>acceleration normalization</strong>, in which the temperature is $T=\hbar\kappa/(2\pi c k_B)$, and $\kappa_\omega=\kappa/c$ is the same quantity in the <strong>frequency normalization</strong>, in which $T=\hbar\kappa_\omega/(2\pi k_B)$. Bogoliubov coefficients carry mode indices and are written $\alpha_{ji}$ and $\mathcal B_{ji}$; the index-free scalar $\beta=\hbar/(k_BT)$ is the inverse temperature. Natural units $\hbar=c=k_B=1$ are used in the mode analysis and restored in every physical result.</p>
+<h2 id="the-schwarzschild-horizon-and-its-surface-gravity">The Schwarzschild Horizon and Its Surface Gravity</h2>
+<h3 id="the-metric-and-the-horizon">The Metric and the Horizon</h3>
+<p>The exterior Schwarzschild line element, in the coordinates $(t,r,\theta,\varphi)$, is</p>
+<p>$$
+ds^2 = -f c^2\,dt^2 + f^{-1}dr^2 + r^2\,d\Omega^2,
+\qquad
+f(r) = 1-\frac{r_s}{r},
+\qquad
+r_s = \frac{2GM}{c^2}.
+$$</p>
+<p>The metric is <strong>imported</strong>: nothing in the biquaternion algebra produces it. <em>Curved Spacetime and the Biquaternion Framework</em> records that the framework's own local-scale route is too rigid to contain black-hole exteriors (within its metric class Ricci-flatness forces flatness), and that a general metric can be carried only by a frame field $\tilde E_\mu(x)\in\mathbb{M}_-$, with $g_{\mu\nu}=\langle\tilde E_\mu,\tilde E_\nu\rangle$, which the algebra accepts but does not determine. What the algebra carries at each point is the local tangent structure — the light cone of $\mathbb{M}_-$ in that point's frame, the zero-divisor cone — and the four-vector kinematics of the field. It does not carry the global horizon.</p>
+<p>The horizon is the surface</p>
+<p>$$
+f(r_s)=0 \quad\Longleftrightarrow\quad r=r_s,
+$$</p>
+<p>a null hypersurface. It is generated by the Killing field</p>
+<p>$$
+\xi = \partial_t ,
+$$</p>
+<p>which is tangent to the horizon, null on it, time-translation outside it, and normalized so that $\xi\cdot\xi=-c^2$ at spatial infinity (the normalization that fixes $\kappa$ below). In the local frame at a point of the horizon, $\xi$ lies on the zero-divisor cone of that frame — the local light cone — but the horizon as a whole is a global object the pointwise algebra does not see.</p>
+<h3 id="the-static-observers-proper-acceleration">The Static Observer's Proper Acceleration</h3>
+<p>A static observer outside the horizon has four-velocity proportional to $\xi$,</p>
+<p>$$
+u^\mu \propto \delta^\mu_t, \qquad u^\mu u_\mu = -c^2,
+$$</p>
+<p>with proper time $d\tau = \sqrt f\,dt$. Its proper acceleration is</p>
+<p>$$
+a(r) = \frac{c^2 f'(r)}{2\sqrt{f(r)}} = \frac{GM}{r^2\sqrt{1-r_s/r}} .
+$$</p>
+<p>This <strong>diverges</strong> as $r\to r_s$: the observer must accelerate without bound to remain static at the horizon. It is the natural quantity locally — it is what an accelerometer on the static observer reads — and it is exactly the wrong quantity for the Hawking temperature. The reason is that the temperature the far observer sees is not the local proper acceleration but its <strong>redshifted</strong> value. The redshift factor from $r$ to infinity for a static observer is $\sqrt{-g_{00}}/c=\sqrt f$, and</p>
+<p>$$
+a(r)\,\sqrt{f(r)} = \frac{c^2 f'(r)}{2} \;\xrightarrow[r\to r_s]{}\; \frac{c^2 f'(r_s)}{2} = \frac{c^2}{2r_s},
+$$</p>
+<p>which is finite. This product is the surface gravity in the acceleration normalization; it is computed next and used throughout. The divergence of $a(r)$ and the finiteness of $a(r)\sqrt f$ are the algebraic content of the statement that the Hawking temperature is the near-horizon Unruh temperature <em>redshifted to infinity</em>: the local Unruh temperature $\hbar a(r)/(2\pi c k_B)$ grows without bound as the horizon is approached, the redshift factor $\sqrt f$ shrinks without bound, and their product is the finite Hawking temperature.</p>
+<h3 id="the-surface-gravity">The Surface Gravity</h3>
+<p>The <strong>surface gravity</strong> $\kappa$ of a Killing horizon generated by $\chi$ is defined on the horizon by</p>
+<p>$$
+\kappa^2 = -\tfrac12\left(\nabla^\mu\chi^\nu\right)\left(\nabla_\mu\chi_\nu\right)\Big|_{\mathcal H},
+$$</p>
+<p>with $\chi$ normalized at infinity and the sign fixed so that $\kappa\ge0$. For Schwarzschild, evaluating the definition with $\chi=\xi$ gives</p>
+<p>$$
+\kappa_\omega = \frac{c\,f'(r_s)}{2} = \frac{c}{2r_s} = \frac{c^3}{4GM},
+$$</p>
+<p>which has the dimensions of a frequency ($1/\text{time}$). The <strong>acceleration-normalized</strong> surface gravity is</p>
+<p>$$
+\kappa = c\,\kappa_\omega = \frac{c^2 f'(r_s)}{2} = \frac{c^2}{2r_s} = \frac{c^4}{4GM},
+$$</p>
+<p>which is the finite limit of $a(r)\sqrt f$ found above, and has the dimensions of an acceleration. The temperature formula of the Introduction uses this normalization,</p>
+<p>$$
+T = \frac{\hbar\kappa}{2\pi c\,k_B} = \frac{\hbar c^3}{8\pi G M k_B},
+$$</p>
+<p>while in the frequency normalization the same temperature reads $T=\hbar\kappa_\omega/(2\pi k_B)$. The two normalizations are the only place a factor of $c$ can go wrong, and the article states which one is in use whenever $\kappa$ appears.</p>
+<p>$\kappa$ is constant over the horizon — the zeroth law of black-hole mechanics — which is why a single temperature characterizes the whole surface despite the observer-dependent divergence of $a(r)$ along it.</p>
+<h3 id="a-remark-on-the-unruh-value-math106">A Remark on the Unruh Value $\kappa_\omega=a/c$</h3>
+<p>The sibling article's Unruh temperature is $T=\hbar a/(2\pi c k_B)$ with $a$ the proper acceleration of the uniformly accelerated observer, and its surface gravity in the acceleration normalization is $\kappa=a$. In the frequency normalization the same Unruh value is $\kappa_\omega=a/c$. This is the sense in which the Unruh surface gravity may be quoted as $a/c$: it is the frequency-normalized value. With that understood, the Unruh statement and the Hawking statement have the <em>same</em> form,</p>
+<p>$$
+T = \frac{\hbar\kappa_\omega}{2\pi k_B}\quad(\text{frequency normalization}),
+\qquad
+T = \frac{\hbar\kappa}{2\pi c k_B}\quad(\text{acceleration normalization}),
+$$</p>
+<p>with $\kappa_\omega=a/c$ for the accelerated observer and $\kappa_\omega=c^3/(4GM)$ for the Schwarzschild horizon. The identification is therefore not a similarity of formulas; it is the same formula applied to the same kind of object, the surface gravity of a horizon.</p>
+<h2 id="the-near-horizon-region-and-the-unruh-identification">The Near-Horizon Region and the Unruh Identification</h2>
+<h3 id="the-near-horizon-limit-is-rindler">The Near-Horizon Limit Is Rindler</h3>
+<p>Let $r=r_s+x$ and expand the metric function near the horizon,</p>
+<p>$$
+f(r_s+x) = \frac{x}{r_s}+O(x^2) .
+$$</p>
+<p>Introduce the proper distance $\rho$ from the horizon, defined by $d\rho=dr/\sqrt f$, so that to leading order</p>
+<p>$$
+\rho = 2\sqrt{r_s\,x},
+\qquad
+x = \frac{\rho^2}{4r_s},
+\qquad
+f = \frac{\rho^2}{4r_s^2}.
+$$</p>
+<p>The $(t,r)$ part of the line element becomes</p>
+<p>$$
+ds^2_{(t,r)} = -f c^2 dt^2 + f^{-1}dr^2
+= -\rho^2\left(\frac{c\,dt}{2r_s}\right)^2 + d\rho^2
+= -\rho^2\,d(\kappa_\omega t)^2 + d\rho^2,
+$$</p>
+<p>with $\kappa_\omega=c/(2r_s)$ the surface gravity in the frequency normalization. This is the Rindler metric of a uniformly accelerated frame, with Rindler time $\kappa_\omega t$ and proper acceleration parameter equal to the surface gravity. The near-horizon region of the Schwarzschild horizon is therefore a Rindler wedge, and its horizon is the Rindler horizon; the angular part is a sphere of radius $r_s$ at leading order and does not affect the argument. This is the local statement that makes the identification of Hawking radiation with the Unruh effect exact rather than approximate.</p>
+<h3 id="the-same-kms-statement-in-different-coordinates">The Same KMS Statement in Different Coordinates</h3>
+<p>The sibling article's result, in the notation of this series, is this. The Minkowski vacuum restricted to the right Rindler wedge $R=\{x>|ct|\}$ satisfies the KMS condition with respect to the boost flow at inverse temperature $\beta=2\pi c/a$ in the acceleration normalization, equivalently $\beta=2\pi/a_\omega$ with $a_\omega=a/c$ the frequency-normalized acceleration; the temperature is $T=\hbar a/(2\pi c k_B)$. The KMS condition is the parent's boundary relation $F_{\tilde A\tilde B}(t+i\beta)=F_{\tilde B\tilde A}(-t)$ with the strip $0<\mathrm{Im}\,t<\beta$.</p>
+<p>The Hawking statement is the same condition, stated on the same kind of flow. For the vacuum of a collapsing background — the <strong>Unruh vacuum</strong>, empty on past null infinity, or the <strong>Hartle–Hawking vacuum</strong>, regular on the horizon and thermal on both sides — restricted to the exterior region, the KMS condition holds with respect to the horizon-generating Killing flow $\partial_t$ at</p>
+<p>$$
+\beta = \frac{2\pi c}{\kappa} = \frac{2\pi}{\kappa_\omega},
+\qquad
+T = \frac{1}{\beta} = \frac{\kappa_\omega}{2\pi} = \frac{\kappa}{2\pi c}
+\quad(\hbar=k_B=1),
+\qquad\text{i.e.}\qquad
+T = \frac{\hbar\kappa}{2\pi c\,k_B}.
+$$</p>
+<p>The flow is the boost near the horizon by the preceding subsection; the state is the vacuum of the imported quantization; the only differences from the Rindler case are the global metric and the value of the surface gravity. This is the precise sense in which <strong>the Unruh effect and Hawking radiation are the same KMS statement seen in different coordinates</strong>: Rindler coordinates cover the wedge and make the boost flow manifest; Schwarzschild coordinates cover the exterior and make $\partial_t$ manifest; in both, the state is KMS at inverse temperature $2\pi$ times the inverse surface gravity (in units with $c=1$ and the frequency normalization).</p>
+<p>The identification can also be read locally, and this is the form that uses the divergence of $a(r)$ correctly. A static observer at radius $r$ has proper acceleration $a(r)=c^2f'/(2\sqrt f)$, which equals $\kappa/\sqrt{f(r)}$ at $r=r_s$ and is smaller elsewhere by the factor $(r_s/r)^2$. By the Unruh effect <em>as applied in the observer's local inertial frame</em>, the local temperature it registers is</p>
+<p>$$
+T_{\mathrm{loc}}(r) = \frac{\hbar\,a(r)}{2\pi c\,k_B} \;\xrightarrow[r\to r_s]{}\; \frac{\hbar\kappa}{2\pi c\,k_B\sqrt{f(r)}},
+$$</p>
+<p>which grows without bound as $r\to r_s$; the Tolman temperature $T_{\mathrm H}/\sqrt{f(r)}$ agrees with it at the horizon and is the expression that is exact for the Hartle–Hawking state at every $r$. The temperature seen at infinity is the local temperature <strong>redshifted</strong> by the factor $\sqrt{f(r)}$ (the Tolman relation), and</p>
+<p>$$
+T_\infty = T_{\mathrm{loc}}(r)\sqrt{f(r)} = \frac{\hbar\kappa}{2\pi c\,k_B} = T_{\mathrm H},
+$$</p>
+<p>independent of $r$ for the Tolman reading, and the near-horizon limit of the Unruh reading. The divergence of the local acceleration and the vanishing of the redshift factor cancel; the surface gravity, not the proper acceleration, is the quantity that survives, and this is why the Hawking temperature is finite and universal while the local Unruh temperature at the horizon is not.</p>
+<h3 id="the-kms-statement-in-the-frameworks-notation">The KMS Statement in the Framework's Notation</h3>
+<p>The parent, <em>The KMS Condition and the Biquaternion Framework</em>, states the condition as</p>
+<p>$$
+F_{\tilde A\tilde B}(t+i\beta) = F_{\tilde B\tilde A}(-t),
+\qquad
+0<\mathrm{Im}\,t<\beta,
+\qquad
+\beta=\frac{\hbar}{k_BT},
+$$</p>
+<p>and records two algebraic facts that this article uses unchanged: the imaginary time of the material sector is intrinsic ($\mathbb{M}_-$'s time coordinate is $ict$, not an analytic continuation), and the modular Hamiltonian $K=-\log\Delta$ is Hermitian, hence lies in the informational sector $\mathbb{M}_+$. The temperature above is exactly $\beta=\hbar/(k_BT)$, so the Hawking condition is the parent's condition with the width of the strip fixed by the surface gravity. The complexified direction in which the strip extends is the complexification of the Killing time along $\mathbb{M}_-$; the modular generator is the Hermitian horizon-flow generator in $\mathbb{M}_+$. This is the algebraic home the framework supplies: the <em>imaginary-time</em> structure of the thermal continuation is the material sector's own, and the <em>generator</em> of the flow is an informational-sector element. The framework does not supply the metric, the vacuum, or the KMS property itself.</p>
+<h2 id="what-the-framework-carries-and-what-it-imports">What the Framework Carries and What It Imports</h2>
+<p><strong>What it carries.</strong></p>
+<ul>
+<li><em>The field lives in $\mathbb{M}_-$.</em> The quantized scalar field and its four-vector kinematics are material-sector objects: a mode is a function on spacetime valued in the framework of <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, and its wave equation is that sector's Klein–Gordon equation. The in and out modes are material-sector modes; the Bogoliubov coefficients that mix them are ordinary complex numbers, not elements of $\mathbb{B}$.</li>
+<li><em>The modular generator is in $\mathbb{M}_+$.</em> The horizon flow's Hamiltonian is represented, as in the sibling article, by a Hermitian element of the informational sector. For a boost in the $e_1$ direction the generator is $G_1=ie_1\in\mathbb{M}_+$, and its action on $\mathbb{M}_-$ is the <strong>two-sided</strong> rotor conjugation $G_1\tilde X+\tilde XG_1$, not the commutator $[G_1,\tilde X]$, which for a Hermitian generator is a rotation and not a boost. This is <em>Curved Spacetime and the Biquaternion Framework</em>'s caution, and it is load-bearing at the horizon: the boost is the flow that the thermal statement refers to.</li>
+<li><em>The local light cone is the zero-divisor cone.</em> At each point of the horizon, the local null directions are the zero divisors of that point's copy of $\mathbb{M}_-$; the horizon's tangent null surface is the zero-divisor cone of the tangent space. This is a local, pointwise statement. The horizon as a global surface is not an object of the pointwise algebra; the sibling article's identification of the <em>Rindler</em> horizon with the zero-divisor cone is available here only in the near-horizon approximation, where the geometry is Rindler.</li>
+<li><em>The imaginary time is intrinsic.</em> The Euclidean continuation $t\to-it$ that makes the thermal period manifest is a continuation along the $ict$ direction of $\mathbb{M}_-$, the same direction in which the parent's KMS strip extends. The framework does not perform the continuation; it is the sector in which the continuation is natural.</li>
+</ul>
+<p><strong>What it imports.</strong></p>
+<ul>
+<li><em>The metric.</em> The Schwarzschild solution is not derived. The framework can carry it as a frame field, and nothing in the algebra selects it; the local-scale route of <em>Curved Spacetime and the Biquaternion Framework</em> cannot contain it (its Ricci-flat class is flat). The horizon, the surface gravity, and the collapse are imported from general relativity.</li>
+<li><em>The in/out mode decomposition and the Bogoliubov coefficients.</em> The splitting of the field into modes on past and future null infinity, and the transformation between them, are standard quantum field theory in curved spacetime. The framework supplies the notation in which the modes are written.</li>
+<li><em>The exponential factor and the KMS property.</em> That the horizon-mode Bogoliubov coefficients carry the factor $e^{-\pi\omega/\kappa}$, and that the relevant vacuum is KMS, are results of the standard derivation. The sections below show where thermality comes from in terms of these inputs; they do not derive the inputs from the algebra.</li>
+<li><em>The dynamics.</em> There is no action and no field equation for the frame or the connection in the framework, hence no equation that would produce the collapse or fix the vacuum. The same limitation the curved-spacetime article records applies here unchanged.</li>
+</ul>
+<p>The honest summary, in the sibling's form: the framework supplies the <em>algebraic home</em> — the material sector for the field and its imaginary time, the informational sector for the modular generator, the zero-divisor cone for the local horizon — and it <em>transcribes</em> the Hawking calculation. It does not derive it.</p>
+<h2 id="bogoliubov-coefficients-and-the-in-and-out-vacua">Bogoliubov Coefficients and the In and Out Vacua</h2>
+<h3 id="two-sets-of-modes-two-vacua">Two Sets of Modes, Two Vacua</h3>
+<p>On a time-dependent background such as a collapsing star, the field has two natural mode decompositions. At early times, before the collapse, the spacetime is approximately static and one has a complete orthonormal set $\{u_i\}$ of <strong>in</strong> modes, positive-frequency with respect to the early Killing time; at late times one has a complete orthonormal set $\{v_j\}$ of <strong>out</strong> modes, positive-frequency with respect to the late Killing time. Each set is orthonormal under the Klein–Gordon inner product,</p>
+<p>$$
+(u_i,u_k)=\delta_{ik},\qquad (u_i^*,u_k^*)=-\delta_{ik},\qquad (u_i,u_k^*)=0,
+$$</p>
+<p>and similarly for the $v_j$. The field expands equally well in either set,</p>
+<p>$$
+\phi=\sum_i\left(u_i\,a_i+u_i^*\,a_i^\dagger\right)
+=\sum_j\left(v_j\,b_j+v_j^*\,b_j^\dagger\right),
+$$</p>
+<p>with $\{a_i,a_i^\dagger\}$ the in operators and $\{b_j,b_j^\dagger\}$ the out operators. The two sets are related by a <strong>Bogoliubov transformation</strong>,</p>
+<p>$$
+v_j=\sum_i\left(\alpha_{ji}\,u_i+\mathcal B_{ji}\,u_i^*\right),
+$$</p>
+<p>where $\alpha_{ji}$ and $\mathcal B_{ji}$ are the <strong>Bogoliubov coefficients</strong> — complex numbers, not biquaternions. Taking the inner product of the second expansion with $v_j$ and using the orthonormality relations gives the operator relation</p>
+<p>$$
+b_j=\sum_i\left(\alpha_{ji}\,a_i-\mathcal B_{ji}\,a_i^\dagger\right).
+$$</p>
+<p>The in-vacuum $|0_{\mathrm{in}}\rangle$ is defined by $a_i|0_{\mathrm{in}}\rangle=0$ for all $i$, and the out-vacuum $|0_{\mathrm{out}}\rangle$ by $b_j|0_{\mathrm{out}}\rangle=0$ for all $j$.</p>
+<h3 id="consistency-relations">Consistency Relations</h3>
+<p>The Bogoliubov transformation is a canonical transformation, and the requirement that the out operators satisfy the canonical brackets fixes the coefficients. Two relations follow, and they are the only algebraic input of this section:</p>
+<p>$$
+[b_j,b_k^\dagger]=\sum_i\left(\alpha_{ji}\alpha^*_{ki}-\mathcal B_{ji}\mathcal B^*_{ki}\right)=\delta_{jk},
+\qquad
+[b_j,b_k]=\sum_i\left(\mathcal B_{ji}\alpha_{ki}-\alpha_{ji}\mathcal B_{ki}\right)=0 .
+$$</p>
+<p>In matrix form, with $\alpha=(\alpha_{ji})$ and $\mathcal B=(\mathcal B_{ji})$,</p>
+<p>$$
+\alpha\,\alpha^\dagger-\mathcal B\,\mathcal B^\dagger=I,
+\qquad
+\mathcal B\,\alpha^{\mathsf T}-\alpha\,\mathcal B^{\mathsf T}=0 .
+$$</p>
+<p>Both were checked on an exact finite model with two in modes and two out modes and Gaussian-rational coefficients. They are the statement that the transformation preserves the canonical algebra; they do not by themselves contain any thermality.</p>
+<h3 id="the-in-vacuum-is-not-the-out-vacuum">The In Vacuum Is Not the Out Vacuum</h3>
+<p>The physical content of the coefficients is the particle number. Using $b_j=\sum_i(\alpha_{ji}a_i-\mathcal B_{ji}a_i^\dagger)$ in the in-vacuum,</p>
+<p>$$
+\langle 0_{\mathrm{in}}|\,b_j^\dagger b_j\,|0_{\mathrm{in}}\rangle
+=\sum_i\left|\mathcal B_{ji}\right|^2,
+$$</p>
+<p>because only the $a_i a_k^\dagger$ contraction survives. The total number of out quanta produced in the in-vacuum is $\sum_j\sum_i|\mathcal B_{ji}|^2$. This was verified on the same finite model. Two consequences are worth separating.</p>
+<ul>
+<li><strong>The vacua coincide if and only if $\mathcal B=0$.</strong> A nonzero negative-frequency coefficient is exactly the obstruction to the in and out mode systems defining the same vacuum. Particle creation is the failure of the two vacua to agree, not a property of either one.</li>
+<li><strong>Thermality is a property of the distribution of the $\mathcal B_{ji}$, not of their existence.</strong> A general $\mathcal B$ produces some spectrum; only a specific exponential distribution produces a Planckian one. The next subsection isolates it.</li>
+</ul>
+<h3 id="where-the-exponential-comes-from">Where the Exponential Comes From</h3>
+<p>The horizon is what forces the specific distribution. Consider the outgoing radial null coordinate $u$ (retarded time), and the Kruskal coordinate $U$ that is regular across the horizon. Near the horizon they are related by</p>
+<p>$$
+U=-e^{-\kappa u}\quad\Longleftrightarrow\quad u=-\frac{1}{\kappa}\ln(-U),
+\qquad (\hbar=c=1,\ \kappa=\kappa_\omega),
+$$</p>
+<p>where $\kappa$ is the surface gravity in natural units. A positive-frequency out mode of frequency $\omega$ is proportional to</p>
+<p>$$
+e^{-i\omega u}=\left(-U\right)^{i\omega/\kappa},
+$$</p>
+<p>which has a <strong>logarithmic phase</strong> at the horizon: the phase diverges as $U\to0$. Now continue $U$ around the branch point at the horizon, $U\to e^{\pm i\pi}U$ (so that $(-U)\to e^{\pm i\pi}(-U)$); the logarithm shifts by $\pm i\pi$, so</p>
+<p>$$
+e^{-i\omega u}\;\longmapsto\;e^{\mp\pi\omega/\kappa}\,e^{-i\omega u}.
+$$</p>
+<p>The two branches of the continuation differ by the factor $e^{2\pi\omega/\kappa}$, and the combination that is positive-frequency with respect to Kruskal time — the one that defines the vacuum — has its negative-frequency component suppressed relative to its positive-frequency component by</p>
+<p>$$
+\frac{|\mathcal B|}{|\alpha|}=e^{-\pi\omega/\kappa}.
+$$</p>
+<p>This is the exponential that makes the spectrum thermal, and its origin is the branch point where the horizon is. In the mode-mixing language it is a statement about the analyticity of the modes across the horizon; in the two-point-function language it is exactly the sibling article's statement that the two-point function is periodic under a shift of $2\pi/\kappa$ in imaginary time, equivalently the detailed-balance factor $e^{-2\pi\omega/\kappa}$. The two are the same analytic fact written in the mode basis and in the correlator basis. The branch-point factor was checked directly: with $\kappa=1.3$, $\omega=0.7$, the continuation multiplies the mode by $e^{\pm\pi\omega/\kappa}=5.428$ in one half-plane and $e^{-\pi\omega/\kappa}=0.1842$ in the other, and the two differ by $e^{2\pi\omega/\kappa}$, as stated.</p>
+<p>The identification of $|\mathcal B/\alpha|$ with that branch-point factor, and the mode decomposition that makes it a Bogoliubov coefficient, are the standard Hawking calculation. What the article recomputes is the exponential and the route from it to the Planck distribution; what it does not do is derive the coefficient ratio from the biquaternion algebra, which the algebra does not produce.</p>
+<h2 id="from-mode-mixing-to-the-planck-spectrum">From Mode Mixing to the Planck Spectrum</h2>
+<h3 id="the-vacuum-is-a-squeezed-state">The Vacuum Is a Squeezed State</h3>
+<p>The exponential ratio $\tanh r_\omega=|\mathcal B/\alpha|=e^{-\pi\omega/\kappa}$ says that the in-vacuum is a <strong>two-mode squeezed state</strong> over the out modes: the out quantum of frequency $\omega$ on the exterior side is entangled with a partner mode of the same frequency on the other side of the horizon. Writing $|n\rangle_R|n\rangle_L$ for the occupation of the pair,</p>
+<p>$$
+|0_{\mathrm{in}}\rangle
+=\frac{1}{\cosh r_\omega}\sum_{n=0}^{\infty}\left(\tanh r_\omega\right)^n|n\rangle_R|n\rangle_L
+\quad(\text{bosons}),
+$$</p>
+<p>with the fermionic partner</p>
+<p>$$
+|0_{\mathrm{in}}\rangle
+=\frac{1}{\sqrt{1+\tanh^2 r_\omega}}\sum_{n=0}^{1}\left(\tanh r_\omega\right)^n|n\rangle_R|n\rangle_L
+\quad(\text{fermions}),
+$$</p>
+<p>where the sum is restricted to $n\in\{0,1\}$ by Pauli exclusion, which the single-mode algebra of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> realizes. Tracing out the partner mode (which is inaccessible to the exterior observer) leaves a mixed state on the exterior modes, and its occupation number is the mean of $N_R$ in the squeezed state.</p>
+<p><strong>Bosons.</strong> With $\tanh r_\omega=e^{-\pi\omega/\kappa}$,</p>
+<p>$$
+\langle N_R\rangle
+=\frac{\tanh^2 r_\omega}{1-\tanh^2 r_\omega}
+=\frac{e^{-2\pi\omega/\kappa}}{1-e^{-2\pi\omega/\kappa}}
+=\frac{1}{e^{2\pi\omega/\kappa}-1}
+=n_{\mathrm B}(\omega).
+$$</p>
+<p><strong>Fermions.</strong> With the same squeeze parameter,</p>
+<p>$$
+\langle N_R\rangle
+=\frac{\tanh^2 r_\omega}{1+\tanh^2 r_\omega}
+=\frac{e^{-2\pi\omega/\kappa}}{1+e^{-2\pi\omega/\kappa}}
+=\frac{1}{e^{2\pi\omega/\kappa}+1}
+=n_{\mathrm F}(\omega).
+$$</p>
+<p>Both identities were checked symbolically and numerically for several values of $\omega/\kappa$: the squeeze parameter is $\tanh r_\omega=e^{-\pi\omega/\kappa}$, and its hyperbolic-square reproduces the Bose–Einstein and Fermi–Dirac forms exactly. The statistics enters only in the normalization of the geometric sum; <strong>the temperature, which is fixed by the exponential, is the same for both.</strong> This is the mode-space content of the parent's observation that the KMS boundary relation is the same for bosons and fermions while the statistics enters the time-ordered correlators.</p>
+<h3 id="restoring-the-constants-and-reading-off-the-temperature">Restoring the Constants and Reading Off the Temperature</h3>
+<p>The dimensionless exponent is</p>
+<p>$$
+\frac{2\pi\omega}{\kappa}\Big|_{\hbar=c=k_B=1}
+\quad\longleftrightarrow\quad
+\frac{\hbar\omega}{k_B T},
+$$</p>
+<p>with $T=\hbar\kappa/(2\pi c k_B)$; equivalently, in the frequency normalization $T=\hbar\kappa_\omega/(2\pi k_B)$ and the exponent is $2\pi\omega/\kappa_\omega$. Thus the distribution</p>
+<p>$$
+n(\omega)=\frac{1}{e^{\hbar\omega/(k_BT)}\mp1}
+$$</p>
+<p>is Planckian at the temperature determined by the surface gravity, and the two normalizations of $\kappa$ reproduce it. The temperature is not put in at this stage: it was fixed earlier by the exponential $e^{-\pi\omega/\kappa}$ from the horizon, and the geometric sums merely exhibit the distribution that exponential implies.</p>
+<h3 id="the-same-statement-as-the-kms-condition">The Same Statement as the KMS Condition</h3>
+<p>The ratio of the emission and absorption coefficients, equivalently the ratio of the negative- and positive-frequency parts, is</p>
+<p>$$
+e^{-2\pi\omega/\kappa}=e^{-\hbar\omega/(k_BT)},
+$$</p>
+<p>which is the <strong>detailed-balance</strong> relation of a thermal state and is the Fourier-space form of the KMS boundary relation $F(t+i\beta)=F(-t)$ at $\beta=\hbar/(k_BT)$. So the chain is: the horizon's branch point gives the exponential; the exponential gives the squeezed state; the squeezed state gives the geometric distribution; the distribution is the KMS/Planck one. Every link after the first is recomputed above; the first is the standard horizon-mode computation, and its result is the same analytic fact the sibling article derived in the correlator language. Thermality has been shown at each step, not asserted at the end.</p>
+<h2 id="the-hawking-temperature">The Hawking Temperature</h2>
+<h3 id="the-formula">The Formula</h3>
+<p>Collecting the results, the temperature of the radiation from a non-extremal horizon is</p>
+<p>$$
+T_{\mathrm H}=\frac{\hbar\kappa}{2\pi c\,k_B}
+=\frac{\hbar\kappa_\omega}{2\pi k_B},
+\qquad
+\kappa=\frac{c^2 f'(r_s)}{2}=\frac{c^4}{4GM},
+\qquad
+\kappa_\omega=\frac{\kappa}{c}=\frac{c\,f'(r_s)}{2}=\frac{c^3}{4GM},
+$$</p>
+<p>and for Schwarzschild</p>
+<p>$$
+T_{\mathrm H}=\frac{\hbar c^3}{8\pi G M k_B}.
+$$</p>
+<h3 id="independent-check-the-euclidean-period">Independent Check: the Euclidean Period</h3>
+<p>The temperature can be obtained a second time without computing the surface gravity from the proper acceleration, by asking when the Euclidean continuation of the metric is regular at the horizon. Continue $t\to-it$, so that $d\tau=dt$ is real and the line element becomes</p>
+<p>$$
+ds^2_{\mathrm E}=f c^2\,d\tau^2+f^{-1}dr^2+r^2 d\Omega^2 .
+$$</p>
+<p>Near the horizon, with $\rho$ the proper distance and $f=\rho^2/(4r_s^2)$ from the near-horizon expansion,</p>
+<p>$$
+ds^2_{\mathrm E}\to d\rho^2+\rho^2\,d\!\left(\frac{c\,\tau}{2r_s}\right)^2+\ldots
+$$</p>
+<p>The $(\rho,\tau)$ part is the metric of a plane in polar coordinates — free of a conical singularity — precisely when the angular variable $c\tau/(2r_s)$ has period $2\pi$, that is when</p>
+<p>$$
+\tau\sim\tau+\frac{4\pi r_s}{c}=\frac{8\pi GM}{c^3}=\frac{2\pi}{\kappa_\omega}=\frac{2\pi c}{\kappa},
+$$</p>
+<p>and then the Euclidean section is a smooth manifold with a compact imaginary-time direction of circumference $\beta=8\pi GM/c^3$. The corresponding temperature is</p>
+<p>$$
+T=\frac{\hbar}{k_B\,\beta}=\frac{\hbar c^3}{8\pi G M k_B},
+$$</p>
+<p>in agreement with the surface-gravity route. The two computations are independent: one differentiates the metric function on the horizon, the other asks for the periodicity of the Euclidean section; that they agree is a check on the whole construction and not a restatement.</p>
+<p>This is also the point where the framework's intrinsic imaginary time does real work. The circumference $\beta$ is a period along the <strong>imaginary time direction of $\mathbb{M}_-$</strong>, the direction of the $ict$ coefficient; the parent's KMS strip has width $\beta=\hbar/(k_BT)$, and the Euclidean regularity condition fixes that width from the metric alone. The framework does not produce the periodicity, but it is the sector in which the periodicity is expressed as a geometric property of the material coordinate rather than as an analytic continuation introduced by hand. This was checked on the explicit near-horizon expansion: $f=\rho^2/(4r_s^2)$ and the coefficient $c\tau/(2r_s)$ reproduce $\beta=8\pi GM/c^3=2\pi c/\kappa$ exactly.</p>
+<h3 id="independent-check-the-mass-scaling">Independent Check: the Mass Scaling</h3>
+<p>The Schwarzschild temperature is inversely proportional to the mass, $T_{\mathrm H}\propto 1/M$. The scaling was checked by evaluating the formula at masses chosen after the claim rather than at the mass that suggested it:</p>
+<p>$$
+T_{\mathrm H}(M_\odot)\approx 6.17\times10^{-8}\,\mathrm{K},
+\qquad
+T_{\mathrm H}(2M_\odot)\approx 3.09\times10^{-8}\,\mathrm{K},
+\qquad
+\frac{T_{\mathrm H}(M_\odot)}{T_{\mathrm H}(2M_\odot)}=2.000,
+$$</p>
+<p>and for a primordial hole of mass $10^{12}\,\mathrm{kg}$, $T_{\mathrm H}\approx 1.23\times10^{11}\,\mathrm{K}$. The $M^{-1}$ scaling is a consistency check on the surface gravity: it uses only $r_s\propto M$ and $\kappa=c^2 f'(r_s)/2\propto 1/r_s\propto 1/M$. The same scaling has a physical reading that is worth stating but is <strong>not</strong> used as evidence here: the lighter the hole, the hotter it is, and the temperature of an astrophysical hole is far below the cosmic microwave background temperature, which is why the effect is invisible for stellar-mass and heavier black holes.</p>
+<h3 id="observational-status">Observational Status</h3>
+<p><strong>Hawking radiation has never been observed.</strong> No black hole has been observed to radiate thermally. For a solar-mass hole the temperature computed above is more than seven orders of magnitude below the temperature of the cosmic microwave background, so any emitted radiation is buried in the radiation falling in. The evidence for the effect is theoretical: it follows from the mode-mixing calculation, from the Euclidean regularity condition, and from several independent reformulations, all of which agree. Analogue-gravity experiments — sonic horizons in Bose–Einstein condensates, optical analogues — have reported thermal emission from their horizons, and those are genuine laboratory confirmations of the <em>kinematic</em> mechanism of mode mixing at a horizon, but they are not observations of gravitational Hawking radiation and are not treated as such here. The status is that of a robust theoretical prediction awaiting astronomical or gravitational-wave confirmation, not an established observation.</p>
+<h3 id="what-the-framework-does-not-add-here">What the Framework Does Not Add Here</h3>
+<p>The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There is no biquaternionic modification of the surface gravity, the exponential, or the spectrum; the algebra's role has been that of a consistent home for the material field, its imaginary time, and the modular generator. This is the same verdict the vacuum-state and Casimir article reaches for its own effect: where the framework supplies a cleaner structural reading rather than a modification, it also supplies no empirical discriminator. The thermodynamics of the horizon — the entropy, the first law, the area law, the lifetime — is left to the planned companion article on black-hole thermodynamics and is not developed here.</p>
+<h2 id="what-is-established-what-is-interpretation-and-the-gaps">What Is Established, What Is Interpretation, and the Gaps</h2>
+<p><strong>Established (physics).</strong></p>
+<ul>
+<li>The Hawking temperature $T=\hbar\kappa/(2\pi c k_B)$, with $\kappa$ the surface gravity of the horizon; for Schwarzschild $\kappa=c^4/(4GM)$ and $T=\hbar c^3/(8\pi G M k_B)$.</li>
+<li>The near-horizon geometry of a non-extremal horizon is Rindler with acceleration equal to the surface gravity, and the Hawking temperature is the near-horizon Unruh temperature redshifted to infinity.</li>
+<li>The Bogoliubov transformation between in and out modes, its consistency relations, and the particle number $\sum_i|\mathcal B_{ji}|^2$ in the in-vacuum.</li>
+<li>The exponential ratio $|\mathcal B/\alpha|=e^{-\pi\omega/\kappa}$ from the analyticity of the horizon modes, and the resulting Planck distribution; the Bose–Einstein and Fermi–Dirac forms at the same temperature.</li>
+<li>The Euclidean regularity condition, period $\beta=8\pi GM/c^3=2\pi c/\kappa$, independent of the surface-gravity computation.</li>
+<li>The $M^{-1}$ scaling of $T_{\mathrm H}$.</li>
+<li>The observational status: unobserved for gravitational black holes; analogue systems test the kinematic mechanism only.</li>
+</ul>
+<p><strong>Established (algebra).</strong></p>
+<ul>
+<li>The material sector $\mathbb{M}_-$ with intrinsic imaginary time $ict$, and its zero-divisor cone as the local light cone.</li>
+<li>The modular Hamiltonian $K=-\log\Delta$ as a Hermitian element of $\mathbb{M}_+$, and the two-sided action of the boost generator $ie_1$ on $\mathbb{M}_-$.</li>
+<li>The single fermionic mode and its parity grading in $\mathbb{B}$, which supplies the two-valued occupation underlying the fermionic geometric sum.</li>
+</ul>
+<p><strong>Standard, and inherited.</strong> The Schwarzschild metric and its surface gravity; the Kruskal extension and the in/out mode decomposition; the identification of the mode's analytic continuation with the Bogoliubov coefficient ratio; the Unruh and Hartle–Hawking vacua; the KMS characterization of thermal equilibrium and the Bisognano–Wichmann theorem; the Euclidean-section derivation.</p>
+<p><strong>Interpretation.</strong> That the KMS imaginary time is the intrinsic imaginary time of $\mathbb{M}_-$; that the modular generator is an $\mathbb{M}_+$ object; that the local horizon is the zero-divisor cone. These are structural readings. The algebra is consistent with them and does not force them, and none of them changes a number in this article.</p>
+<p><strong>Gaps, left visible.</strong></p>
+<ul>
+<li><em>No metric, no dynamics.</em> The framework does not produce the Schwarzschild geometry, the collapse, or the vacuum; its own local-scale route to gravity is too rigid to contain a black-hole exterior, and its frame-field route imports the metric without selecting it.</li>
+<li><em>No algebra-native derivation of the exponential.</em> The branch-point factor is computed in the standard mode analysis; the algebra does not produce it.</li>
+<li><em>A scalar field only.</em> The treatment is for a free scalar; spin, greybody factors, and the full frequency-dependent emission rate are not developed.</li>
+<li><em>Schwarzschild only.</em> Rotating and charged horizons, their surface gravities, and the extremal limit $\kappa\to0$ are not treated.</li>
+<li><em>No backreaction.</em> The evaporation of the hole, its lifetime, its entropy, and the information question are left to the planned companion article on black-hole thermodynamics.</li>
+<li><em>No empirical discriminator.</em> The framework reproduces the standard result and supplies no correction to it.</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Can the framework carry the Schwarzschild frame field in a distinguished way?</strong> The metric is imported. Is there a biquaternion condition on the frame or the connection — beyond the flatness of the local-scale class — that singles out a non-flat solution with a horizon? This is the gap of <em>Curved Spacetime and the Biquaternion Framework</em> seen from the side of the horizon.</p>
+</li>
+<li>
+<p><strong>Is there an algebra-native origin of the exponential?</strong> The factor $e^{-\pi\omega/\kappa}$ is a property of the horizon's analytic structure. Can the material sector's zero-divisor cone or its complex structure produce it without importing the mode analysis? If it can, the framework would be deriving rather than transcribing.</p>
+</li>
+<li>
+<p><strong>Is there a global algebraic object for the horizon?</strong> The zero-divisor cone is pointwise. The horizon is a global null surface. Does the framework admit a global analogue — a family of cones with a conformal structure — that is not merely the imported manifold restated?</p>
+</li>
+<li>
+<p><strong>Spin and the fermionic twist.</strong> The statistics enters the geometric sum through the occupation restriction, which the single-mode algebra of $\mathbb{B}$ realizes. Does the spin dependence of the emission — the greybody factor and the fermionic spectrum — have a biquaternionic formulation, and does the $\mathbb{Z}/2$ grading play a role beyond the two-valued occupation?</p>
+</li>
+<li>
+<p><strong>Rotating and charged horizons.</strong> The surface gravity of Kerr–Newman, and the extremal limit in which it vanishes, are standard. Does the framework have anything to say about the extremal case, where the near-horizon geometry is not Rindler and the temperature is zero?</p>
+</li>
+<li>
+<p><strong>Backreaction and the information question.</strong> These belong to the thermodynamics article; the question for this article is only whether the mode-mixing formulation the framework houses is the right one for a first-principles account of the entropy.</p>
+</li>
+<li>
+<p><strong>Empirical contact.</strong> Every result here agrees with the standard theory. Is there any regime in which the framework's extra algebraic structure changes the emission — for instance through the imaginary time or the two-sector split — or is the effect purely descriptive, as the Casimir article also found?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>A black hole formed by collapse radiates thermally at the Hawking temperature $T=\hbar\kappa/(2\pi c k_B)$, where $\kappa$ is the surface gravity of the horizon; for Schwarzschild, $\kappa=c^2 f'(r_s)/2=c^4/(4GM)$ and $T=\hbar c^3/(8\pi G M k_B)$, inversely proportional to the mass.</p>
+<p>The Unruh effect and Hawking radiation are the <strong>same KMS statement seen in different coordinates</strong>, not analogous phenomena. The Minkowski vacuum restricted to a Rindler wedge is KMS with respect to the boost flow at inverse temperature $2\pi c/a$; the vacuum of a collapsing background restricted to the exterior of a horizon is KMS with respect to the horizon-generating Killing flow at inverse temperature $2\pi c/\kappa$. The near-horizon region of a non-extremal horizon is a Rindler wedge with acceleration equal to the surface gravity, so Hawking radiation is the Unruh effect at the horizon's surface gravity, redshifted to infinity.</p>
+<p>The trap of confusing the proper acceleration with the surface gravity is stated and avoided: the static observer's proper acceleration $a(r)=c^2f'/(2\sqrt f)$ diverges at the horizon, while the redshifted product $a(r)\sqrt f=c^2f'/2=GM/r^2$ is finite and equals $\kappa$ at the horizon. The local Unruh temperature diverges; the redshift cancels it; the surface gravity is what remains.</p>
+<p>The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\mathcal B_{ji}$ gives the particle number $\sum_i|\mathcal B_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $e^{-i\omega u}=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\mathcal B/\alpha|=e^{-\pi\omega/\kappa}$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\hbar\kappa/(2\pi c k_B)$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.</p>
+<p>The biquaternion framework supplies the algebraic home for the effect — the material sector $\mathbb{M}_-$ for the field and its intrinsic imaginary time, the informational sector $\mathbb{M}_+$ for the Hermitian modular generator, the zero-divisor cone for the local light cone — and it transcribes the Hawking calculation rather than deriving it. It contains no black-hole geometry and no dynamics, and it gives no correction to the standard temperature. Hawking radiation has never been observed; no claim of observation is made.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Material sector: imaginary time, real space</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Informational sector: real time, imaginary space</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Quaternion subspace</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>Quaternion basis, $e_k^2=-e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$\tilde X=ict\,e_0+x\,e_1+y\,e_2+z\,e_3$</td>
+<td>Material coordinate</td>
+</tr>
+<tr>
+<td>$N(\tilde X)=\tilde X\bar{\tilde X}$</td>
+<td>Norm form, $-c^2t^2+x^2+y^2+z^2$</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
+<td>Trace formula</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>Black-hole mass</td>
+</tr>
+<tr>
+<td>$r_s=2GM/c^2$</td>
+<td>Schwarzschild radius</td>
+</tr>
+<tr>
+<td>$f=1-r_s/r$</td>
+<td>Metric function</td>
+</tr>
+<tr>
+<td>$\xi=\partial_t$</td>
+<td>Horizon-generating Killing field</td>
+</tr>
+<tr>
+<td>$a(r)=c^2f'/(2\sqrt f)$ ($=\kappa/\sqrt f$ at $r=r_s$)</td>
+<td>Static observer's proper acceleration (diverges at $r_s$)</td>
+</tr>
+<tr>
+<td>$\kappa=c^2f'(r_s)/2=c^4/(4GM)$</td>
+<td>Surface gravity, acceleration normalization</td>
+</tr>
+<tr>
+<td>$\kappa_\omega=\kappa/c=c^3/(4GM)$</td>
+<td>Surface gravity, frequency normalization</td>
+</tr>
+<tr>
+<td>$T_{\mathrm H}=\hbar\kappa/(2\pi c k_B)$</td>
+<td>Hawking temperature</td>
+</tr>
+<tr>
+<td>$\beta=\hbar/(k_BT)$</td>
+<td>Inverse temperature</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>Proper distance from the horizon</td>
+</tr>
+<tr>
+<td>$u$, $U$</td>
+<td>Retarded and Kruskal null coordinates</td>
+</tr>
+<tr>
+<td>$a_i,a_i^\dagger$</td>
+<td>In-mode operators</td>
+</tr>
+<tr>
+<td>$b_j,b_j^\dagger$</td>
+<td>Out-mode operators</td>
+</tr>
+<tr>
+<td>$\alpha_{ji},\mathcal B_{ji}$</td>
+<td>Bogoliubov coefficients</td>
+</tr>
+<tr>
+<td>$r_\omega$</td>
+<td>Squeeze parameter, $\tanh r_\omega=e^{-\pi\omega/\kappa}$</td>
+</tr>
+<tr>
+<td>$n_{\mathrm B},n_{\mathrm F}$</td>
+<td>Bose–Einstein, Fermi–Dirac occupation</td>
+</tr>
+<tr>
+<td>$K=-\log\Delta$</td>
+<td>Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>Companion articles (this series).</strong></p>
+<ul>
+<li><em>The Unruh Effect in Biquaternionic Form</em>, the sibling article: the Rindler wedge, the boost, the KMS strip, and the temperature from the surface gravity.</li>
+<li><em>The KMS Condition and the Biquaternion Framework</em>, the parent: the KMS condition, its imaginary-time strip, and the modular Hamiltonian in $\mathbb{M}_+$.</li>
+<li><em>Curved Spacetime and the Biquaternion Framework</em>, for the frame-field route to the metric and the obstruction to black-hole exteriors in the local-scale class.</li>
+<li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> and <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, for the sectors and their imaginary-time interpretation.</li>
+<li><em>Introduction to the Biquaternion Universe</em>, for the algebra and the notation.</li>
+<li><em>The Klein–Gordon Equation in Biquaternionic Form</em>, for the material-sector wave equation whose modes are mixed.</li>
+<li><em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, for the single-mode occupation and its parity grading.</li>
+<li><em>The Vacuum State and the Casimir Effect in Biquaternionic Form</em>, for the framework's treatment of another quantum-vacuum effect and its observational status.</li>
+<li><em>The Lorentz Transformation as a Biquaternionic Rotation</em>, for the boost structure used at the horizon.</li>
+<li><em>The Partition Function in Biquaternionic Form</em>, for the thermal trace and its imaginary-time formulation.</li>
+</ul>
+<p><strong>Standard references.</strong></p>
+<ul>
+<li>S. W. Hawking, "Black hole explosions?", <em>Nature</em> <strong>248</strong> (1974) 30–31, and "Particle creation by black holes," <em>Communications in Mathematical Physics</em> <strong>43</strong> (1975) 199–220, for the original result and the mode-mixing calculation.</li>
+<li>J. M. Bardeen, B. Carter, and S. W. Hawking, "The four laws of black hole mechanics," <em>Communications in Mathematical Physics</em> <strong>31</strong> (1973) 161–170, for the surface gravity and the zeroth law.</li>
+<li>J. B. Hartle and S. W. Hawking, "Path-integral derivation of black-hole radiance," <em>Physical Review D</em> <strong>13</strong> (1976) 2188–2195, and G. W. Gibbons and S. W. Hawking, "Action integrals and partition functions in quantum gravity," <em>Physical Review D</em> <strong>15</strong> (1977) 2752–2756, for the Euclidean period.</li>
+<li>W. G. Unruh, "Notes on black-hole evaporation," <em>Physical Review D</em> <strong>14</strong> (1976) 870–892, for the accelerated-observer vacuum and the mode mixing.</li>
+<li>P. C. W. Davies, "Scalar production in Schwarzschild and Rindler metrics," <em>Journal of Physics A</em> <strong>8</strong> (1975) 609–616, for the stress tensor of the emitted radiation.</li>
+<li>S. A. Fulling, "Nonunitary Bogoliubov transformations and extension of Wick's theorem," <em>Nuovo Cimento A</em> <strong>26</strong> (1973) 375–397, for the inequivalent vacua.</li>
+<li>N. N. Bogoliubov, "On the theory of superfluidity," <em>Journal of Physics (USSR)</em> <strong>11</strong> (1947) 23–32, for the transformation that bears his name.</li>
+<li>N. D. Birrell and P. C. W. Davies, <em>Quantum Fields in Curved Space</em> (Cambridge University Press, 1982), and R. M. Wald, <em>Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics</em> (University of Chicago Press, 1994), for the standard derivations of the temperature from the two-point function, from surface gravity, and from the Euclidean section.</li>
+<li>L. Parker and D. Toms, <em>Quantum Field Theory in Curved Spacetime</em> (Cambridge University Press, 2009), for a modern textbook treatment.</li>
+<li>W. G. Unruh, "Experimental black-hole evaporation?", <em>Physical Review Letters</em> <strong>46</strong> (1981) 1351–1353, and J. Steinhauer, "Observation of quantum Hawking radiation and its entanglement in an analogue black hole," <em>Nature Physics</em> <strong>12</strong> (2016) 959–965, for analogue horizons and the laboratory test of the kinematic mechanism.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational Waves in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-waves-in-biquaternionic-form"><strong>Gravitational Waves in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Gravitational radiation is the propagating content of the linearized theory of general relativity. The parent article, <em>Linearized Gravity in Biquaternionic Form</em>, established the kinematics of that theory inside the biquaternion framework: the metric perturbation is carried by a frame perturbation $\delta\tilde{E}_\mu \in \mathbb{M}_-$ through $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_\nu\rangle + \langle\delta\tilde{E}_\mu,\varepsilon_\nu\rangle$, with every symmetric perturbation realized; the sixteen frame components split as $16 = 10 + 6$, the six-dimensional kernel being the infinitesimal local Lorentz transformations; the linearized diffeomorphism is written $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial_\mu\tilde{\Xi}$ with $\tilde{\Xi} \in \mathbb{M}_-$, reproducing $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial_\mu\xi_\nu - \partial_\nu\xi_\mu$; the trace-reversal is the frame shift $\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14 h\,\varepsilon_\mu$ with $h = 2\langle\varepsilon^\nu,\delta\tilde{E}_\nu\rangle$; and, in harmonic gauge, the vacuum equation is $\Box\bar{h}_{\mu\nu} = 0$, hence $\Box\bar{\delta\tilde{E}}_\mu = 0$ once the local Lorentz freedom is fixed. The parent displayed a transverse-traceless plane wave with vanishing Ricci tensor and nonvanishing Riemann tensor, and then stopped, deferring explicitly "the detailed phenomenology of these waves — their generation, their interaction with matter, and the observational constraints on their polarizations".</p>
+<p>This article takes up that deferral, and only as far as the linearized approximation reaches. Its subject is the standard radiation theory: the trace-reversed perturbation and its wave equation, the harmonic (Lorenz) gauge and the residual gauge freedom that survives it, the counting of physical degrees of freedom from ten to two, the two transverse-traceless polarizations, and the quadrupole formula for the radiated power. Each of these is first written in its standard form, then asked what the biquaternion framework has to say about it.</p>
+<p>The findings are worth separating at the outset, because one of them is negative and is easy to mistake for a defect of the exposition.</p>
+<ul>
+<li><strong>Established, and recomputed below.</strong> The harmonic condition $\partial^\lambda\bar{h}_{\lambda\nu} = 0$ does not exhaust the gauge freedom: it is preserved by exactly those residual transformations with $\Box\xi_\nu = 0$. Counting the physical content therefore requires the residual freedom, and with it the count $10 \to 6 \to 2$ is justified rather than asserted: the ten components of $h_{\mu\nu}$ reduce to six under the four harmonic conditions, and the six-dimensional space is the direct sum of the two-dimensional transverse-traceless space and the four-dimensional image of the residual gauge freedom. The two polarizations are transverse-traceless, and both the transversality and the tracelessness are verified on an explicit plane-wave ansatz, together with $R_{\mu\nu} = 0$ and $R_{\mu\nu\rho\sigma} \ne 0$ for each of the plus and cross amplitudes. The quadrupole formula $P = \frac{G}{5c^5}\langle \dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$ is verified by matching it, on the equal-mass circular binary, to the standard result $\frac{32}{5}\frac{G^4}{c^5}\frac{(m_1m_2)^2(m_1+m_2)}{d^5}$; the radiation is quadrupole because the monopole and dipole moments are conserved, and the mass dipole's second derivative vanishes by momentum conservation.</li>
+<li><strong>The framework's contribution, and its limit.</strong> The algebra supplies the wave operator $\Box$ and the shape of the gauge transformation, both inherited from the parent, and it supplies the residual gauge freedom as the condition $\Box\tilde{\Xi} = 0$ on a material four-vector. It supplies <strong>no natural handle on the polarization count</strong>: the step $6 \to 2$ is a dynamical statement about which of the harmonic-gauge components propagate, and the algebra does not generate it. The physical polarization amplitudes are carried by a symmetric traceless rank-two object, and the algebra's natural single-biquaternion packaging of that object collapses to its trace, which vanishes — so the two polarizations are precisely what a single biquaternion cannot hold. The quadrupole moment is the same kind of object, and the same collapse applies to it; the source $T_{\mu\nu}$ belongs to the same class. Consequently the quadrupole formula is transcribed into the framework's notation, not derived from it, and the prefactor $G/5c^5$ is not fixed by the algebra.</li>
+<li><strong>What is not claimed.</strong> Linearized general relativity is not derived from the biquaternion algebra. No action, no field equation, and no representation of diffeomorphism invariance is supplied here; these are the parent's gaps, and nothing in the radiation theory closes them. The framework predicts no deviation from standard gravitational-wave physics.</li>
+</ul>
+<p><strong>Conventions.</strong> The conventions of the read-list articles are inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The material basis is $\varepsilon_0 = ie_0$, $\varepsilon_k = e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle = \mathrm{diag}(-1,1,1,1)$ and $\langle\tilde{Q},\tilde{P}\rangle = \mathrm{Sc}(\tilde{Q}\bar{\tilde{P}})$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. As in the parent, the coordinates in which tensor components are written are the real components $x^\mu = (ct,x,y,z)$, so $\tilde{X} = X^\mu\varepsilon_\mu$ and $\partial_{ict} = -i\partial_0$ with $\partial_0 = \partial/\partial(ct)$; consequently $\Box = \eta^{\mu\nu}\partial_\mu\partial_\nu$. A plane wave of wave vector $k^\mu = (\omega/c)(1,0,0,1)$ then has phase $\omega(z/c - t)$, and $k^\mu k_\mu = 0$.</p>
+<h2 id="the-trace-reversed-perturbation-and-the-wave-equation">The Trace-Reversed Perturbation and the Wave Equation</h2>
+<p>This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here is recomputed in the companion file.</p>
+<p>The metric is $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$ with $|h_{\mu\nu}| \ll 1$, and the <strong>trace-reversed</strong> perturbation is</p>
+<p>$$
+\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}h, \qquad h = \eta^{\mu\nu}h_{\mu\nu}, \qquad \bar{h} = \eta^{\mu\nu}\bar{h}_{\mu\nu} = -h,
+$$</p>
+<p>so that the operation is an involution up to sign, $h_{\mu\nu} = \bar{h}_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}\bar{h}$. In these variables the linearized Einstein tensor is</p>
+<p>$$
+G_{\mu\nu} = \tfrac{1}{2}\left(\partial_\mu\partial^\lambda\bar{h}_{\lambda\nu} + \partial_\nu\partial^\lambda\bar{h}_{\lambda\mu} - \Box\bar{h}_{\mu\nu} - \eta_{\mu\nu}\partial^\rho\partial^\sigma\bar{h}_{\rho\sigma}\right),
+$$</p>
+<p>and the <strong>harmonic gauge</strong> condition is</p>
+<p>$$
+\partial^\lambda\bar{h}_{\lambda\nu} = 0 .
+$$</p>
+<p>It is four conditions on the ten components of $\bar{h}_{\mu\nu}$ and it can always be imposed. In it $G_{\mu\nu} = -\tfrac{1}{2}\Box\bar{h}_{\mu\nu}$, so the linearized Einstein equation $G_{\mu\nu} = \tfrac{8\pi G}{c^4}T_{\mu\nu}$ becomes</p>
+<p>$$
+\Box\bar{h}_{\mu\nu} = -\frac{16\pi G}{c^4}\,T_{\mu\nu},
+\qquad\text{and in vacuum}\qquad
+\Box\bar{h}_{\mu\nu} = 0 .
+$$</p>
+<p>The parent article's frame route carries all of this. The trace-reversed frame perturbation is</p>
+<p>$$
+\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac{1}{4}h\,\varepsilon_\mu,
+\qquad
+h = 2\langle\varepsilon^\nu,\delta\tilde{E}_\nu\rangle,
+$$</p>
+<p>and it carries $\bar{h}_{\mu\nu}$ exactly; the biquaternionic d'Alembertian acts componentwise, so $\Box\bar{h}_{\mu\nu} = \langle\varepsilon_\mu,\Box\bar{\delta\tilde{E}}_\nu\rangle + \langle\Box\bar{\delta\tilde{E}}_\mu,\varepsilon_\nu\rangle$, and with the local Lorentz freedom fixed the vacuum equation becomes</p>
+<p>$$
+\Box\,\bar{\delta\tilde{E}}_\mu = 0 .
+$$</p>
+<p>The operator is inherited, not derived: the framework supplies no action whose variation would produce $\Box\bar{h}_{\mu\nu} = 0$. That is the parent's conclusion, and it is unchanged by anything in this article.</p>
+<h2 id="the-harmonic-gauge-and-its-residual-freedom">The Harmonic Gauge and Its Residual Freedom</h2>
+<p>The harmonic condition is the gravitational analogue of the Lorenz condition of electromagnetism — it is also called the de Donder gauge, and, by the analogy, the Lorenz gauge of linearized gravity. The analogy is worth stating because the residual freedom is the same in both cases, and this is the first place where a naive count goes wrong.</p>
+<p>Under a coordinate transformation $x^\mu \mapsto x^\mu + \xi^\mu$ the metric perturbation changes by</p>
+<p>$$
+h_{\mu\nu} \;\longmapsto\; h_{\mu\nu} - \partial_\mu\xi_\nu - \partial_\nu\xi_\mu,
+$$</p>
+<p>and the trace-reversed perturbation changes by</p>
+<p>$$
+\bar{h}_{\mu\nu} \;\longmapsto\; \bar{h}_{\mu\nu} - \partial_\mu\xi_\nu - \partial_\nu\xi_\mu + \eta_{\mu\nu}\,\partial^\rho\xi_\rho .
+$$</p>
+<p>A direct computation, carried out in the companion on a general smooth $\xi^\mu$ and not merely on a plane wave, gives</p>
+<p>$$
+\partial^\lambda\Big(\bar{h}_{\lambda\nu} - \partial_\lambda\xi_\nu - \partial_\nu\xi_\lambda + \eta_{\lambda\nu}\partial^\rho\xi_\rho\Big)
+- \partial^\lambda\bar{h}_{\lambda\nu}
+= -\,\Box\xi_\nu .
+$$</p>
+<p>The harmonic condition is therefore preserved by precisely those gauge transformations with</p>
+<p>$$
+\boxed{\;\Box\xi_\nu = 0\,.\;}
+$$</p>
+<p>Four functions satisfy this, one for each coordinate direction, so the gauge freedom is <strong>not</strong> exhausted by the harmonic condition. It is a residual gauge freedom of the same kind that the Lorenz condition leaves in electromagnetism, where the condition is preserved by $\Box\Gamma = 0$. A count that imposes harmonic gauge and then declares the remaining six components physical has used the gauge freedom twice in the wrong order: the six components include the four that the residual freedom still moves.</p>
+<p>For a plane wave there is an instructive simplification. Writing $\xi_\nu = \varepsilon_\nu e^{ik_\lambda x^\lambda}$, the preservation condition is $k^2\varepsilon_\nu = 0$, and for a lightlike wave vector $k^2 = 0$ it holds for every $\varepsilon_\nu$; every residual gauge function is available for a plane wave. This is the case on which the count below is computed.</p>
+<h2 id="counting-the-physical-degrees-of-freedom">Counting the Physical Degrees of Freedom</h2>
+<p>The count is $10 \to 6 \to 2$, and it must be justified at each arrow. The first arrow is a gauge choice; the second is the division by the residual gauge freedom just exhibited.</p>
+<p><strong>Ten.</strong> The symmetric tensor $h_{\mu\nu}$ has $\tfrac{1}{2}\cdot4\cdot5 = 10$ independent components.</p>
+<p><strong>Six.</strong> The four gauge functions $\xi^\mu$ are used to impose the four harmonic conditions $\partial^\lambda\bar{h}_{\lambda\nu} = 0$. The space of perturbations satisfying them is six-dimensional. This is a gauge fixing, not yet a reduction to physical content.</p>
+<p><strong>Two.</strong> The residual gauge freedom acts inside that six-dimensional space. Restricting the residual transformations with $\Box\xi_\nu = 0$ to the harmonic-gauge plane wave, the map from the four gauge parameters $\varepsilon_\nu$ to the change it induces in the six harmonic components has rank four, and its image is complementary to the transverse-traceless amplitudes. The companion verifies exactly this: on the six-dimensional space, the transverse-traceless subspace has dimension two, the residual-gauge image has dimension four, their direct sum has dimension six, and their intersection is trivial. The count is therefore</p>
+<p>$$
+10 \;\xrightarrow[\text{4 harmonic conditions}]{}\; 6 \;\xrightarrow[\text{4 residual gauge functions}]{}\; 2 ,
+$$</p>
+<p>with the last quotient exactly the transverse-traceless amplitudes.</p>
+<p>Two independent checks confirm the final number.</p>
+<p><em>Transverse-traceless tensor count.</em> A symmetric spatial amplitude $A_{ij}$ ($i,j = 1,2,3$) has six independent components; transversality $k^iA_{ij} = 0$ imposes three conditions; tracelessness $\eta^{ij}A_{ij} = 0$ imposes one. Six minus three minus one is two.</p>
+<p><em>Little-group count.</em> A massless field of spin $s$ in four dimensions carries two helicities, $\pm s$. For the graviton $s = 2$, so the helicities are $\pm 2$, again two. This is the representation-theoretic reason the number is independent of the details of the gauge fixing, and it is the count the algebra does not reproduce; that is the subject of the section <em>The Wave Operator, the Gauge Freedom, and the Counting in the Framework</em>.</p>
+<p>Two cautions belong with the count. First, the intermediate values $10$ and $6$ are properties of the potential and of a gauge slice, not of the physics; only the final two, and the gauge-invariant curvature that carries them, are invariant. Second, the quotient by the residual gauge freedom is a local statement about the field at a point; it counts local degrees of freedom and says nothing about global or boundary data. Both cautions are standard, and both matter for the framework comparison below, where the gauge slice is available but the dynamics that selects the two propagating components is not.</p>
+<h2 id="the-two-polarizations">The Two Polarizations</h2>
+<p>A vacuum plane wave is</p>
+<p>$$
+h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x^\lambda), \qquad k^\mu k_\mu = 0,
+$$</p>
+<p>with a constant symmetric amplitude $A_{\mu\nu}$. The residual gauge freedom of the previous section can be used to put it in <strong>transverse-traceless</strong> form, in which</p>
+<p>$$
+k^\mu A_{\mu\nu} = 0 \qquad\text{and}\qquad \eta^{\mu\nu}A_{\mu\nu} = 0 ,
+$$</p>
+<p>and in which, in addition, the components with a timelike index vanish, $A_{0\mu} = 0$. For propagation in the $+z$ direction, $k^\mu = (\omega/c)(1,0,0,1)$, so that the phase is $\omega(z/c - t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.</p>
+<p><strong>The transversality and tracelessness are checked, not assumed.</strong> For the two amplitudes</p>
+<p>$$
+\text{plus:}\quad A_{11} = -A_{22} \ne 0, \qquad
+\text{cross:}\quad A_{12} = A_{21} \ne 0,
+$$</p>
+<p>with all other components zero, the companion verifies $k^\mu k_\mu = 0$, $k^\mu A_{\mu\nu} = 0$, and $\eta^{\mu\nu}A_{\mu\nu} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{0\mu} = 0$, $k^\mu A_{\mu\nu} = 0$, $\eta^{\mu\nu}A_{\mu\nu} = 0$ on a general symmetric $A_{\mu\nu}$ leaves</p>
+<p>$$
+A_{11} = -A_{22}, \qquad A_{12} = A_{21}, \qquad \text{all other components zero},
+$$</p>
+<p>a two-parameter family: the plus amplitude and the cross amplitude, and nothing else. The two are related by a rotation through $45^\circ$ in the transverse plane, and together they span the two-dimensional space of physical polarizations, whose helicity eigenstates are the two circular combinations $A_{11}\pm iA_{12}$.</p>
+<p><strong>The curvature is nonzero, so the wave is not pure gauge.</strong> A direct computation of the linearized Riemann tensor of the displayed ansatz, using</p>
+<p>$$
+R_{\mu\nu\rho\sigma} = \tfrac{1}{2}\left(\partial_\nu\partial_\rho h_{\mu\sigma} + \partial_\mu\partial_\sigma h_{\nu\rho} - \partial_\mu\partial_\rho h_{\nu\sigma} - \partial_\nu\partial_\sigma h_{\mu\rho}\right),
+$$</p>
+<p>gives, for the plus amplitude,</p>
+<p>$$
+R_{0101} = -R_{0202} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - ct)\right),
+\qquad R_{0303} = 0,
+$$</p>
+<p>and, for the cross amplitude,</p>
+<p>$$
+R_{0102} = R_{0123} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - ct)\right),
+\qquad R_{0101} = R_{0202} = R_{0303} = 0 .
+$$</p>
+<p>In both cases the Ricci tensor vanishes,</p>
+<p>$$
+R_{\mu\nu} = 0, \qquad R_{\mu\nu\rho\sigma} \ne 0 ,
+$$</p>
+<p>so each amplitude solves the vacuum equation and carries nonzero curvature. The nonvanishing components with two timelike indices are the components a local observer measures as tidal stretching; in the plus case the stretching is along $x$ and the compression along $y$, in the cross case along the two diagonals. The two polarizations were verified separately, so the result is not an artefact of the symmetric combination.</p>
+<p>Because the vacuum equations force the Ricci part of the curvature to vanish at linear order, the physical, gauge-invariant content of a wave is its <strong>Weyl</strong> part, the ten-component tensor obtained from $R_{\mu\nu\rho\sigma}$ by removing the Ricci and scalar traces. In vacuum the two coincide. The two polarizations are the two independent components of the Weyl tensor that a lightlike wave can carry, and they are the two helicities of the previous count. Encoding the Weyl tensor in the biquaternion framework — through self-dual and anti-self-dual bivectors, or through the five Newman–Penrose scalars — is a separate problem, and it is recorded among the open questions rather than attempted here.</p>
+<h2 id="the-quadrupole-formula">The Quadrupole Formula</h2>
+<p>The wave equation of the first section, $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$, is inhomogeneous: matter radiates. The standard slowly-varying, weak-field solution is the quadrupole formula, and it is the point at which two numerical errors are commonly made — the prefactor, and the choice of moment. Both are checked below against an independent result.</p>
+<p><strong>The amplitude.</strong> For an isolated, slowly moving source, the far-field transverse-traceless perturbation is</p>
+<p>$$
+h_{ij}^{\mathrm{TT}}(t,\mathbf{x}) = \frac{2G}{c^4 r}\,\ddot{Q}_{ij}^{\mathrm{TT}}(t - r/c), \qquad
+Q_{ij} = \int \rho(\mathbf{x}')\left(x'_ix'_j - \tfrac{1}{3}r'^2\delta_{ij}\right)d^3x',
+$$</p>
+<p>where $r = |\mathbf{x}|$, $Q_{ij}$ is the <strong>traceless (reduced) quadrupole moment</strong>, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the <strong>second</strong> time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.</p>
+<p><strong>No monopole, no dipole.</strong> The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $\dot{M} = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $\dot{d}_i = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $\ddot{d}_i = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.</p>
+<p><strong>The power.</strong> The radiated power, averaged over a period, is</p>
+<p>$$
+\boxed{\;P = \frac{G}{5c^5}\left\langle \dddot{Q}_{ij}\,\dddot{Q}_{ij} \right\rangle, \;}
+$$</p>
+<p>with the same traceless quadrupole moment. The power is quadratic in the <strong>third</strong> derivative; the field is linear in the second. An equivalent form uses the un-reduced moment $I_{ij} = \int\rho\,x_ix_j\,d^3x$,</p>
+<p>$$
+P = \frac{G}{5c^5}\left\langle \dddot{I}_{ij}\dddot{I}_{ij} - \tfrac{1}{3}\left(\dddot{I}_{kk}\right)^2 \right\rangle,
+$$</p>
+<p>which reduces to the traceless form because $I_{ij} = Q_{ij} + \tfrac13\delta_{ij}I_{kk}$.</p>
+<p><strong>The prefactor, verified on the binary.</strong> The equal-mass circular binary is the standard check. Two masses $m$ in a circular orbit of radius $R$ (separation $d = 2R$) at angular frequency $\omega$ have the traceless quadrupole</p>
+<p>$$
+Q_{xx} = \frac{mR^2}{3} + mR^2\cos 2\omega t, \qquad
+Q_{yy} = \frac{mR^2}{3} - mR^2\cos 2\omega t, \qquad
+Q_{xy} = mR^2\sin 2\omega t,
+$$</p>
+<p>whose third derivatives give $\dddot{Q}_{ij}\dddot{Q}_{ij} = 128\,m^2R^4\omega^6$, a constant. Then</p>
+<p>$$
+P = \frac{G}{5c^5}\cdot128\,m^2R^4\omega^6
+= \frac{64}{5}\frac{G^4}{c^5}\frac{m^5}{d^5},
+$$</p>
+<p>on using Kepler's law $\omega^2 = 2Gm/d^3$ and $R = d/2$. The standard equal-mass form of the binary power is</p>
+<p>$$
+P = \frac{32}{5}\frac{G^4}{c^5}\frac{(m_1m_2)^2(m_1+m_2)}{d^5}
+= \frac{64}{5}\frac{G^4}{c^5}\frac{m^5}{d^5} \quad (m_1 = m_2 = m),
+$$</p>
+<p>and the two agree. The companion checks both the traceless and the unreduced forms of the power, obtains the same result from each, and also verifies the angular projection identity by which the flux integral over the sphere reduces to the traceless form, so the factor $\tfrac15$ is confirmed twice over rather than read off from one case.</p>
+<p><strong>What the formula is and is not.</strong> It is a weak-field, slow-motion, far-zone result; it is the leading term of a multipole expansion, not an exact statement. Its prefactor is fixed by the coupling constant $8\pi G/c^4$ in the field equation and by the angular structure of the transverse-traceless projection. Nothing in this article derives either from the biquaternion algebra.</p>
+<h2 id="the-wave-operator-the-gauge-freedom-and-the-counting-in-the-framework">The Wave Operator, the Gauge Freedom, and the Counting in the Framework</h2>
+<p>The radiation theory is built from four objects, and it is worth asking of each whether the framework contains it or merely names it.</p>
+<p><strong>The wave operator.</strong> $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \eta^{\mu\nu}\partial_\mu\partial_\nu$ is an element of the framework, inherited from the Maxwell article and the parent. It is the operator whose null cone is the zero-divisor cone of $\mathbb{M}_-$ and whose retarded solution carries the outgoing wave. Nothing here is transcribed: $\Box$ is the algebra's own differential operator, and the statement $\Box\bar{\delta\tilde{E}}_\mu = 0$ is written in the framework's notation exactly.</p>
+<p><strong>The gauge freedom and its residual part.</strong> The linearized diffeomorphism is $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial_\mu\tilde{\Xi}$ with $\tilde{\Xi} \in \mathbb{M}_-$, inherited from the parent. The residual freedom of the previous sections has a clean image: the harmonic condition is preserved by exactly those material four-vectors with</p>
+<p>$$
+\Box\tilde{\Xi} = 0 .
+$$</p>
+<p>The residual gauge freedom is therefore the kernel of the framework's own d'Alembertian acting on $\mathbb{M}_-$, and the count of the previous section can be stated in the framework's variables as: four gauge directions in $\mathbb{M}_-$ remove four of the six harmonic-gauge frame components, leaving the two transverse-traceless directions. This is a genuine, if modest, piece of framework content: the residual freedom is not an extra structure imposed from outside, and its condition uses only $\Box$ and the material sector.</p>
+<p><strong>The counting.</strong> Here the framework reaches its limit, and it is better to say so than to force an analogy. The parent supplies the decomposition $16 = 10 + 6$, the six being the infinitesimal local Lorentz kernel of the map $\delta\tilde{E}_\mu \mapsto h_{\mu\nu}$. The four-component gauge parameter $\tilde{\Xi}$ then removes four of the ten, leaving six. That is as far as the algebra's counting goes. The step $6 \to 2$ requires knowing which of the six harmonic-gauge components propagate; it is the residual gauge freedom, not the algebra, that makes four of them non-dynamical, and it is the transverse-traceless projection — governed by the wave vector and the metric, both expressible in the material basis but neither of them a <em>selection principle</em> — that identifies the remaining two. The algebra has no analogue of the little group of a null vector and no representation of helicity, so it has <strong>no natural handle on the polarization count</strong>. The number two is inherited from the transcribed theory. A reader who expects the biquaternion structure to produce $\pm2$ the way it produces the Lorentz group will not find it here, and the absence is recorded as an open question rather than papered over with a resemblance.</p>
+<p><strong>The polarization amplitudes.</strong> There is a sharp negative statement to be made about the physical content itself. The two amplitudes are the traceless transverse components $A_{ij}$, and the algebra's natural single-biquaternion packaging of a symmetric rank-two object is</p>
+<p>$$
+\tilde{A} = \sum_{i,j=1}^{3} A_{ij}\,\varepsilon_i\bar{\varepsilon}_j .
+$$</p>
+<p>For a traceless $A_{ij}$ this vanishes identically, $\tilde{A} = (\eta^{ij}A_{ij})e_0 = 0$, by the same computation that makes the packaging of $h_{\mu\nu}$ collapse to its trace in the parent article. The two polarizations are therefore <strong>exactly the components that the algebra's natural packaging annihilates</strong>. The same holds for a plus amplitude and a cross amplitude separately: each is traceless, each packages to zero. The framework carries the wave in the frame perturbation $\delta\tilde{E}_\mu$, an $\mathbb{M}_-$-valued one-form; every attempt to compress it into a single biquaternion retains only the trace, and in transverse-traceless gauge the trace is zero. This is sharper than the parent's statement that the graviton is not a material biquaternion: the polarization content is invisible not only to $\mathbb{M}_-$ but to the natural packaging into <em>any</em> single algebra element.</p>
+<p><strong>The field strength, and a trap.</strong> The gauge-invariant field strength is the linearized Riemann tensor, packaged index by index as a bivector-valued two-form</p>
+<p>$$
+\tilde{R}_{\mu\nu} = \tfrac{1}{2}\sum_{\rho,\sigma} R_{\mu\nu\rho\sigma}\,\bar{\varepsilon}^\rho\varepsilon^\sigma .
+$$</p>
+<p>Because the antisymmetric part of $\bar{\varepsilon}^\rho\varepsilon^\sigma$ has no scalar component, each $\tilde{R}_{\mu\nu}$ is a <strong>complex pure vector</strong> — an element of the six-dimensional subspace $\mathrm{span}_{\mathbb{R}}\{e_k, ie_k\}$ that the parent identifies with the Lorentz Lie algebra $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ — and so lies in neither $\mathbb{M}_-$ nor $\mathbb{M}_+$. This invites an analogy with the electromagnetic field strength $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, which is also a complex pure vector with vanishing scalar part and is likewise not in $\mathbb{M}_-$. The analogy is real but narrow, and it must not be pushed past the field strength. What the two cases share is that a <strong>field strength</strong> built from derivatives of a potential can leave the material sector; the electromagnetic potential $\tilde{A}$ itself is a single material four-vector, whereas the gravitational potential is an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, one material four-vector per coordinate direction. And the graviton is not the field strength: it is the symmetric rank-two perturbation $h_{\mu\nu}$, or its frame carrier, or the two traceless amplitudes — an object of dimension ten that is not a bivector, not a four-vector, and not a single element of $\mathbb{B}$. Placing the graviton "in a sector" because $\tilde{F}$ is not in $\mathbb{M}_-$ would be an inference the notation does not license; the honest statement is that the <em>field strength</em> sits in the bivector subspace, the <em>potential</em> sits in $\mathbb{M}_-$, and the <em>graviton itself</em> sits in no sector of the algebra at all.</p>
+<p><strong>The source and the quadrupole moment.</strong> The radiating source is the symmetric energy–momentum tensor $T_{\mu\nu}$, and the radiating moment is the symmetric traceless $Q_{ij}$. Both are symmetric rank-two objects, the class the material-space article records as not lying in $\mathbb{M}_-$ and that the energy–momentum exercise shows no single biquaternion can faithfully carry. For the quadrupole moment the collapse is exact and total: $\sum_{ij}Q_{ij}\varepsilon_i\bar{\varepsilon}_j = (\eta^{ij}Q_{ij})e_0 = 0$ for traceless $Q$. The algebra therefore cannot hold the quantity that the quadrupole formula differentiates; the formula is transcribed into the framework's notation, not derived from it. In particular the coupling constant $8\pi G/c^4$, and with it the prefactor $G/5c^5$, is not fixed by the algebra.</p>
+<h2 id="what-the-algebra-supplies-and-what-it-does-not">What the Algebra Supplies and What It Does Not</h2>
+<p>The boundary can be drawn as a list, in the manner of the parent article.</p>
+<p><strong>Supplied by the algebra, and recomputed here.</strong> The wave operator $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \eta^{\mu\nu}\partial_\mu\partial_\nu$ and the null cone it defines; the carrier of the wave as an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, with the trace-reversed shift $\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14h\varepsilon_\mu$ and the vacuum equation $\Box\bar{\delta\tilde{E}}_\mu = 0$ once the local Lorentz freedom is fixed; the gauge transformation $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial_\mu\tilde{\Xi}$, whose residual part is the kernel of $\Box$ on $\mathbb{M}_-$; the decomposition $16 = 10 + 6$ and the removal of four further directions by $\tilde{\Xi}$, giving the six harmonic-gauge components in the framework's own counting; and the bivector-valued packaging $\tilde{R}_{\mu\nu}$ of the gauge-invariant curvature, whose values lie in the complex pure-vector subspace.</p>
+<p><strong>Interpretation, not derivation.</strong> Reading the transverse-traceless amplitudes as the physical polarizations, and the two helicities $\pm2$ as the content of those amplitudes, is a reading of the transcribed theory. The framework is consistent with the reading — the amplitudes can be written in the material basis, and their tracelessness is the statement that the packaging vanishes — but the algebra does not force the reading, and the little-group counting that makes $\pm2$ inevitable has no algebraic counterpart.</p>
+<p><strong>Not supplied, and left as gaps.</strong> An action and a field equation for the frame, and hence any derivation of the linearized Einstein equation and of the wave equation $\Box\bar{h}_{\mu\nu} = 0$. A representation of diffeomorphism invariance, which is the origin of the gauge freedom whose residual part the framework can describe. A principle selecting the two propagating components from the six harmonic-gauge ones — that is, any handle on the polarization count or on helicity. A faithful single-biquaternion carrier of the transverse-traceless amplitudes, of the quadrupole moment, or of the energy–momentum source; the natural packaging annihilates the first two and collapses the third to its trace. A derivation of the coupling constant, and with it of the quadrupole prefactor. And empirical content: nothing here predicts a deviation from standard gravitational-wave physics.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>A biquaternionic handle on the polarization count.</strong> The main text states plainly that the algebra supplies no natural handle on the reduction $6 \to 2$. The framework does, however, contain the Lorentz group and its representations, and a lightlike wave vector has a nonzero stabiliser in it. Is the little group of the null direction — together with the representations the framework's Lorentz-group structure already carries — enough to produce the helicity $\pm2$ algebraically, without importing the little-group argument from the standard theory? If it is, the count would be a framework result rather than a transcription; if it is not, the reason would be worth stating as sharply as the absence.</p>
+</li>
+<li>
+<p><strong>A faithful biquaternion carrier of the quadrupole moment.</strong> No single biquaternion carries the symmetric traceless $Q_{ij}$: the natural packaging collapses it to its vanishing trace, exactly as it collapses $h_{\mu\nu}$ to the trace that does not propagate. The electromagnetic energy–momentum tensor is carried not by a single biquaternion but by a bilinear, and the exercise on that object shows how. Is the same true of $Q_{ij}$ — is there a bilinear of two $\mathbb{M}_-$ elements, or of a matter field, whose symmetric traceless part is the quadrupole moment and whose transformation under the Lorentz group is correct? A positive answer would give the framework a place to stand in the generation problem; a negative answer would explain why the quadrupole formula resists transcription into a single algebra element.</p>
+</li>
+<li>
+<p><strong>The retarded solution and the null cone.</strong> The Maxwell article writes the retarded potential with a kernel supported on the past light cone. Does the same construction, applied to the $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$ with a rank-two source, produce the retarded $\bar{h}_{\mu\nu}$ and the far-field amplitude $h_{ij}^{\mathrm{TT}} \propto \ddot{Q}_{ij}^{\mathrm{TT}}$? The transverse-traceless projection of the far field is the step most likely to require structure the algebra does not have, but the retarded kernel itself may go through unchanged.</p>
+</li>
+<li>
+<p><strong>The Weyl tensor, helicity, and the two sectors.</strong> The gauge-invariant content of the wave is the Weyl tensor, naturally packaged through self-dual and anti-self-dual bivectors. Does the decomposition into $\mathbb{M}_+$ and $\mathbb{M}_-$ organise the Weyl bivectors, and do the five Newman–Penrose scalars appear as components of biquaternion objects? The two helicities of the graviton are the two circular polarizations of the radiation; whether the algebra distinguishes them, or sees only their sum, is open. The twistor formulation of the biquaternions is the natural place to look.</p>
+</li>
+<li>
+<p><strong>The coupling constant and the prefactor.</strong> The linearized Einstein equation carries $8\pi G/c^4$, and the quadrupole power carries $G/5c^5$. Both are transcribed. Is there any normalisation intrinsic to the algebra — a trace identity, a preferred bilinear, a choice of inner product on $\mathbb{M}_-$ — that fixes either? The parent left the constant as a gap; the radiation theory does not close it. It is worth asking whether the question is even well posed without an action.</p>
+</li>
+<li>
+<p><strong>Back-reaction and the energy of the wave.</strong> The radiated power is quadratic in the wave amplitude, and its standard derivation uses the Isaacson stress–energy tensor, itself a bilinear in the transverse-traceless field. The algebra's bilinear structure supplies the electromagnetic energy–momentum tensor; does it supply the Isaacson tensor with the same naturalness, or does the transverse-traceless projection again obstruct the packaging? This is the framework's analogue of the quadrupole formula's quadratic side.</p>
+</li>
+<li>
+<p><strong>Empirical content.</strong> As everywhere in the framework, the open question is whether any of this yields a prediction distinguishing it from standard linearized gravity. The transcription developed here does not.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Gravitational radiation in the linearized theory has been written in the biquaternion framework, and each step has been identified as either framework content or transcribed standard theory.</p>
+<p>The standard theory was recomputed. The trace-reversed perturbation $\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12\eta_{\mu\nu}h$ satisfies $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ in harmonic gauge, the framework's image of the condition being $\Box\bar{\delta\tilde{E}}_\mu = 0$. The harmonic gauge is preserved by the residual transformations with $\Box\xi_\nu = 0$ — a condition verified on a general gauge parameter, not only on a plane wave — so the gauge freedom is not exhausted by the gauge condition. The physical count is $10 \to 6 \to 2$: ten components of the symmetric perturbation, four harmonic conditions leaving six, and a four-dimensional residual gauge image inside those six whose complement is the two-dimensional transverse-traceless subspace. The split was verified by rank computation, and the final two were confirmed independently by the transverse-traceless tensor count and by the helicity count. On an explicit plane-wave ansatz, both the plus and the cross amplitudes were verified to be transverse and traceless, to have vanishing Ricci tensor, and to have nonvanishing Riemann tensor, so both carry physical curvature and neither is pure gauge. The quadrupole formula $P = \tfrac{G}{5c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$ was verified by matching it, on the equal-mass circular binary, to $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$, and the absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.</p>
+<p>The framework's reach was drawn. It supplies the wave operator and its null cone; the carrier of the wave as an $\mathbb{M}_-$-valued one-form; the gauge transformation whose residual part is the kernel of $\Box$ on $\mathbb{M}_-$; the count $16 = 10 + 6$ and the removal of the four gauge directions from the ten; and the bivector packaging of the curvature, whose values lie in the complex pure-vector subspace and so in neither sector. It does not supply the dynamics that selects two of the six harmonic-gauge components: the framework has no natural handle on the polarization count, and the number two is inherited. The physical polarization amplitudes are exactly the components the algebra's natural single-biquaternion packaging annihilates, as is the traceless quadrupole moment, and the energy–momentum source is the rank-two object no single biquaternion carries. The quadrupole formula, and the coupling constant within it, are therefore transcribed rather than derived. The distinction between the electromagnetic field strength, which is a bivector outside $\mathbb{M}_-$ despite the material potential it comes from, and the graviton, which is a symmetric rank-two object belonging to no sector at all, has been kept explicit; the two are not to be identified by the accident that both field strengths leave the material sector.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
+</tr>
+<tr>
+<td>$\varepsilon_\mu = (ie_0, e_1, e_2, e_3)$</td>
+<td>Material basis of $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle = \mathrm{diag}(-1,1,1,1)$</td>
+<td>Flat metric of the material sector</td>
+</tr>
+<tr>
+<td>$\langle\tilde{Q},\tilde{P}\rangle = \mathrm{Sc}(\tilde{Q}\bar{\tilde{P}})$</td>
+<td>Bilinear form on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$x^\mu = (ct,x,y,z)$, $\partial_\mu = \partial/\partial x^\mu$</td>
+<td>Real coordinates and their derivatives; $\partial_{ict} = -i\partial_0$</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}, \bar{\tilde{\nabla}}, \Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \eta^{\mu\nu}\partial_\mu\partial_\nu$</td>
+<td>Biquaternionic gradient, conjugate, d'Alembertian</td>
+</tr>
+<tr>
+<td>$h_{\mu\nu}$, $h = \eta^{\mu\nu}h_{\mu\nu}$</td>
+<td>Metric perturbation and its trace</td>
+</tr>
+<tr>
+<td>$\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12\eta_{\mu\nu}h$, $\bar{h} = -h$</td>
+<td>Trace-reversed perturbation</td>
+</tr>
+<tr>
+<td>$\delta\tilde{E}_\mu \in \mathbb{M}_-$</td>
+<td>Frame perturbation carrying $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_\nu\rangle + \langle\delta\tilde{E}_\mu,\varepsilon_\nu\rangle$</td>
+</tr>
+<tr>
+<td>$\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14 h\,\varepsilon_\mu$</td>
+<td>Trace-reversed frame perturbation</td>
+</tr>
+<tr>
+<td>$\tilde{\Xi} \in \mathbb{M}_-$</td>
+<td>Gauge four-vector, $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial_\mu\tilde{\Xi}$</td>
+</tr>
+<tr>
+<td>$\partial^\lambda\bar{h}_{\lambda\nu} = 0$, $\Box\xi_\nu = 0$</td>
+<td>Harmonic (Lorenz, de Donder) gauge and its residual gauge freedom</td>
+</tr>
+<tr>
+<td>$\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$</td>
+<td>Linearized Einstein equation</td>
+</tr>
+<tr>
+<td>$A_{\mu\nu}$; $A_{11} = -A_{22}$, $A_{12} = A_{21}$</td>
+<td>Plane-wave amplitude; the plus and cross polarizations</td>
+</tr>
+<tr>
+<td>$k^\mu = (\omega/c)(1,0,0,1)$, $k^\mu k_\mu = 0$</td>
+<td>Wave vector along $+z$ and its null condition</td>
+</tr>
+<tr>
+<td>$R_{\mu\nu\rho\sigma}$, $R_{\mu\nu}$, $G_{\mu\nu}$</td>
+<td>Linearized Riemann, Ricci, and Einstein tensors</td>
+</tr>
+<tr>
+<td>$\tilde{R}_{\mu\nu} = \tfrac12\sum_{\rho\sigma}R_{\mu\nu\rho\sigma}\bar{\varepsilon}^\rho\varepsilon^\sigma$</td>
+<td>Curvature as a bivector-valued two-form</td>
+</tr>
+<tr>
+<td>$Q_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3x$</td>
+<td>Traceless (reduced) quadrupole moment</td>
+</tr>
+<tr>
+<td>$h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}\ddot{Q}_{ij}^{\mathrm{TT}}$, $P = \tfrac{G}{5c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$</td>
+<td>Quadrupole amplitude and power</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>Trace formula of the informational sector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Companion articles: <em>Linearized Gravity in Biquaternionic Form</em>; <em>Curved Spacetime and the Biquaternion Framework</em>; <em>Maxwell's Equations in the Biquaternionic Formulation</em>; <em>The Field-Strength Biquaternion and Its Invariants</em>; <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em>; <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>; <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>; <em>The Gauge Principle in Biquaternionic Form</em>; <em>The Relativistic Two-Body Problem in Biquaternionic Form</em>; <em>Radiation from Accelerated Charges in Biquaternionic Form</em>; <em>Twistor Theory and Biquaternions</em>; <em>Biquaternion Representation Theory</em>.</li>
+<li>Charles W. Misner, Kip S. Thorne, and John A. Wheeler, <em>Gravitation</em> (Freeman, 1973), for the linearized theory, the transverse-traceless gauge, the two polarizations, and the quadrupole formula with its energy-loss interpretation.</li>
+<li>Robert M. Wald, <em>General Relativity</em> (Chicago, 1984), for the linearized Einstein equation, the trace-reversal, the harmonic gauge, and the counting of the physical degrees of freedom.</li>
+<li>Sean M. Carroll, <em>Spacetime and Geometry: An Introduction to General Relativity</em> (Cambridge, 2019), for a compact treatment of gravitational waves and the residual gauge freedom.</li>
+<li>Michele Maggiore, <em>Gravitational Waves</em>, Vol. 1 (Oxford, 2008), for the quadrupole formula, the binary inspiral power, and the derivation from the transverse-traceless amplitude.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, Vol. 1 (Cambridge, 1984), for the spin-coefficient and bivector formulation of the curvature on which the Weyl-tensor encoding rests.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the gauge-theoretic treatment of gravity in the same rotor language used here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

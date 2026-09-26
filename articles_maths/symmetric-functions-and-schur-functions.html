@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symmetric Functions and Schur Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="symmetric-functions-and-schur-functions"><strong>Symmetric Functions and Schur Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A symmetric polynomial in $n$ variables is one unchanged by every permutation of the variables; by the theorem of <em>Invariant Theory</em> these form the ring of invariants $K[x_1,\ldots,x_n]^{S_n}$, which is a polynomial ring on the elementary symmetric polynomials $e_1,\ldots,e_n$. The subject of this article is the refinement of that statement: the ring has several distinguished bases — the monomial, elementary, complete homogeneous, power sum and Schur bases — each adapted to a different problem, related by explicit triangular transition matrices, and the last of them, the Schur functions, indexes the irreducible characters of the symmetric groups and the polynomial representations of the general linear groups. All of the objects here are symmetric polynomials or symmetric formal series; it is the basis theory, not merely the structure of the ring, that carries the information.</p>
+<p>The simplest way to see what is at stake is the multiplication table. The product of two elementary symmetric polynomials is not elementary, and to expand it one needs a rule; the Schur functions are the basis in which the rules of multiplication — the Pieri rule and the Littlewood–Richardson rule — take their cleanest form, and the Cauchy identity expresses the whole table as a product. The combinatorial objects that index matter are partitions and semistandard tableaux, so the article is combinatorial throughout; the applications to the symmetric group and to the general linear group are stated as the Frobenius characteristic and the polynomial character, with the representation theory itself andbeing. The reader should be aware of the boundary: the symmetric-group side of the theory is treated here and in those two articles, whereas the deformations of it — Hecke algebras of type $A$, Macdonald polynomials and their specialisations — are the subject of <em>Symmetric Linear Algebras</em>, owned by another agent of this Part, and are not developed here.</p>
+<p>Throughout, a <strong>partition</strong> is a weakly decreasing sequence $\lambda = (\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_k > 0)$ of positive integers, $|\lambda|$ is its <strong>size</strong>, $\ell(\lambda)$ its <strong>length</strong>, $\lambda'$ its <strong>conjugate</strong>, and the <strong>Young diagram</strong> of $\lambda$ is the set of cells $(i,j)$ with $1 \leq j \leq \lambda_i$. The number of variables is denoted $n$ or $m$ and fixed where needed; $\Lambda_n$ is the ring of symmetric polynomials in $n$ variables over $K$, and $\Lambda$ is the ring of symmetric functions in infinitely many variables, that is, the algebraic inverse limit of the rings $\Lambda_n$ with respect to the maps setting the last variable to $0$. Elements of $\Lambda$ are therefore sums of monomials with coefficients stabilising as the number of variables grows, and all identities below are identities in $\Lambda$ unless a fixed $n$ is named. Every symmetric function is a sum of its homogeneous pieces, and a symmetric function of degree $d$ involves only the finitely many partitions of $d$, so every manipulation is finite.</p>
+<hr />
+<h2 id="partitions-and-the-ring-of-symmetric-functions">Partitions and the Ring of Symmetric Functions</h2>
+<h3 id="partitions-diagrams-and-the-dominance-order">Partitions, Diagrams and the Dominance Order</h3>
+<p><strong>Definition.</strong> For a partition $\lambda$, the <strong>Young diagram</strong> is the set of cells $\{(i,j) : 1 \leq i \leq \ell(\lambda),\ 1 \leq j \leq \lambda_i\}$, drawn with rows of decreasing length; the <strong>conjugate</strong> partition $\lambda'$ is defined by $\lambda'_j = \#\{i : \lambda_i \geq j\}$, so that the diagram of $\lambda'$ is the transpose of that of $\lambda$. A cell $u = (i,j)$ has <strong>content</strong> $c(u) = j-i$ and <strong>hook length</strong> $h(u) = \lambda_i - j + \lambda'_j - i + 1$, the number of cells weakly right of and weakly below $u$, counting $u$ once.</p>
+<p><strong>Definition.</strong> The <strong>dominance order</strong> on partitions of fixed size is defined by $\lambda \unrhd \mu$ if $\sum_{i \leq k}\lambda_i \geq \sum_{i\leq k}\mu_i$ for every $k$; it is a partial order, refined by the lexicographic order, and it is the order in which the transition matrices between the classical bases are triangular.</p>
+<p><strong>Example.</strong> For $|\lambda| = 3$ the partitions are $(3) \rhd (2,1) \rhd (1,1,1)$: dominance is a total order here. For $|\lambda| = 4$ one has $(4) \rhd (3,1) \rhd (2,2)$, and $(3,1) \rhd (2,1,1)$, while $(2,2)$ and $(2,1,1)$ are incomparable: $\sum_{i\leq2}$ is $4$ for $(2,2)$ and $3$ for $(2,1,1)$, but for $k = 1$ both have first part $2$. Hook lengths of $\lambda = (2,1)$: the cells $(1,1)$, $(1,2)$, $(2,1)$ have hooks $3, 1, 1$.</p>
+<h3 id="the-bases">The Bases</h3>
+<p><strong>Definition.</strong> Let $x_1,x_2,\ldots$ be indeterminates and let $\lambda$ be a partition.</p>
+<ul>
+<li>The <strong>monomial symmetric function</strong> $m_\lambda$ is the sum of the distinct monomials obtained from $x^\lambda = x_1^{\lambda_1}x_2^{\lambda_2}\cdots$ by permuting the variables.</li>
+<li>The <strong>elementary symmetric function</strong> is $e_k = m_{(1^k)}$, the sum of all products of $k$ distinct variables; and $e_\lambda = e_{\lambda_1}e_{\lambda_2}\cdots$.</li>
+<li>The <strong>complete homogeneous symmetric function</strong> $h_k$ is the sum of all monomials of total degree $k$, so that $h_k = \sum_{\lambda \vdash k}m_\lambda$; and $h_\lambda = h_{\lambda_1}h_{\lambda_2}\cdots$.</li>
+<li>The <strong>power sum</strong> is $p_k = m_{(k)} = \sum_i x_i^k$; and $p_\lambda = p_{\lambda_1}p_{\lambda_2}\cdots$.</li>
+</ul>
+<p>By convention $e_0 = h_0 = p_0 = 1$ and $e_k = h_k = 0$ for $k < 0$.</p>
+<p><strong>Proposition.</strong> The sets $\{m_\lambda\}$, $\{e_\lambda\}$, $\{h_\lambda\}$ and $\{p_\lambda\}$, indexed by partitions of the degree, are each a $\mathbb{Z}$-basis of the symmetric functions of that degree; over $\mathbb{Q}$, so is $\{p_\lambda\}$.</p>
+<p><strong>Proof.</strong> A symmetric function of degree $d$ is determined by its coefficients on the monomial symmetric functions $m_\lambda$ with $\lambda \vdash d$, and $m_\lambda$ has coefficient $1$ on the monomial $x^\lambda$ and $0$ on $x^\mu$ for partitions $\mu$ dominating $\lambda$ with $\mu \neq \lambda$; hence the $m_\lambda$ are independent and span. That $\{e_\lambda\}$ and $\{h_\lambda\}$ are bases follows from the triangular relations below, and that $\{p_\lambda\}$ is a basis over $\mathbb{Q}$ from Newton's identities, which express the $e_k$ rationally in the $p_i$. $\square$</p>
+<p><strong>Theorem (fundamental theorem of symmetric polynomials).</strong> The symmetric polynomials in $n$ variables form a polynomial ring,</p>
+<p>$$
+K[x_1,\ldots,x_n]^{S_n} = K[e_1,\ldots,e_n],
+$$</p>
+<p>with $e_1,\ldots,e_n$ algebraically independent; more generally the symmetric functions of bounded length form $\Lambda = K[e_1,e_2,\ldots]$, a polynomial ring in countably many variables. Hence the Hilbert series of the graded ring of symmetric polynomials in $n$ variables is</p>
+<p>$$
+\sum_{d \geq 0}\dim_K\Lambda_{n,d}\,t^d = \prod_{i=1}^{n}\frac{1}{1-t^i},
+$$</p>
+<p>the coefficient of $t^d$ being the number of partitions of $d$ into at most $n$ parts.</p>
+<p><strong>Proof.</strong> For the first statement, order monomials lexicographically and let $f$ be symmetric of degree $d$ with leading monomial $x_1^{a_1}\cdots x_n^{a_n}$; subtracting a suitable multiple of $e_1^{a_1-a_2}e_2^{a_2-a_3}\cdots e_n^{a_n}$ cancels the leading monomial while leaving the polynomial symmetric, and induction on the lexicographic order terminates. This is the initial-monomial argument of the Gröbner basis theory of <em>Gröbner Bases and Elimination Theory</em>, and it also shows that the monomials $e_1^{b_1}\cdots e_n^{b_n}$ span the symmetric polynomials; algebraic independence follows because the $e_i$ are algebraically independent in the limit ring, which is the polynomial ring on the generators $e_i$ by construction. The Hilbert series is then a consequence of the degrees $\deg e_i = i$. $\square$</p>
+<p><strong>Example.</strong> In two variables $e_1 = x+y$, $e_2 = xy$, and $\Lambda_2 = K[e_1,e_2]$, with Hilbert series $1/((1-t)(1-t^2))$: the coefficient of $t^d$ is $\lfloor d/2\rfloor+1$, the number of partitions of $d$ into parts at most $2$. This is the Molien series computed in <em>Invariant Theory</em> for the swap action.</p>
+<h3 id="newtons-identities">Newton's Identities</h3>
+<p><strong>Theorem (Newton).</strong> For $k \geq 1$,</p>
+<p>$$
+k\,e_k = \sum_{i=1}^{k}(-1)^{i-1}e_{k-i}\,p_i, \qquad k\,h_k = \sum_{i=1}^{k}h_{k-i}\,p_i ,
+$$</p>
+<p>and consequently $\Lambda \otimes_{\mathbb{Z}}\mathbb{Q} = \mathbb{Q}[p_1,p_2,\ldots]$ with the $p_i$ algebraically independent.</p>
+<p><strong>Proof sketch.</strong> Differentiate the generating function $\sum_{k\geq0}e_kt^k = \prod_i(1+x_it)$ logarithmically with respect to $t$: the derivative of the logarithm is $\sum_i\frac{x_i}{1+x_it} = \sum_{i\geq1}(-1)^{i-1}p_it^{i-1}$, and comparing coefficients gives the first identity; the same computation with $\prod_i(1-x_it)^{-1}$ in place of $\prod_i(1+x_it)$ gives the second. $\square$</p>
+<p><strong>Example.</strong> $k = 1$: $e_1 = p_1$ and $h_1 = p_1$. $k = 2$: $2e_2 = e_1p_1 - p_2 = p_1^2-p_2$, so $e_2 = (p_1^2-p_2)/2$, and $2h_2 = h_1p_1+p_2$, so $h_2 = (p_1^2+p_2)/2$. In two variables: $p_1 = x+y$, $p_2 = x^2+y^2$, and $(p_1^2-p_2)/2 = ((x+y)^2-x^2-y^2)/2 = xy = e_2$; $(p_1^2+p_2)/2 = (x^2+2xy+y^2+x^2+y^2)/2 = x^2+xy+y^2 = h_2$.</p>
+<hr />
+<h2 id="schur-functions">Schur Functions</h2>
+<h3 id="semistandard-tableaux">Semistandard Tableaux</h3>
+<p><strong>Definition.</strong> A <strong>semistandard Young tableau</strong> (SSYT) of shape $\lambda$ is a filling of the cells of the Young diagram of $\lambda$ with positive integers, weakly increasing along rows and strictly increasing down columns. The <strong>weight</strong> of a tableau $T$ is the vector of multiplicities $\mu = (\mu_1,\mu_2,\ldots)$ with $\mu_i$ the number of entries equal to $i$; a tableau of weight $(1,1,\ldots,1)$ is a <strong>standard</strong> Young tableau.</p>
+<p><strong>Definition.</strong> The <strong>Schur function</strong> $s_\lambda$ is</p>
+<p>$$
+s_\lambda(x_1,x_2,\ldots) = \sum_{T}x^T, \qquad x^T = \prod_{u \in \lambda}x_{T(u)} ,
+$$</p>
+<p>the sum over all semistandard tableaux of shape $\lambda$. In $n$ variables the sum is over tableaux with entries in $\{1,\ldots,n\}$, and the resulting polynomial is the <strong>Schur polynomial</strong> $s_\lambda(x_1,\ldots,x_n)$.</p>
+<p><strong>Definition.</strong> The <strong>Kostka number</strong> $K_{\lambda\mu}$ is the number of semistandard tableaux of shape $\lambda$ and weight $\mu$, so that $s_\lambda = \sum_\mu K_{\lambda\mu}m_\mu$; the coefficient $K_{\lambda\mu}$ is nonzero only if $\lambda \unrhd \mu$ and $\lambda \vdash |\mu|$.</p>
+<p><strong>Example.</strong> For $\lambda = (2,1)$ in three variables, the semistandard tableaux and their monomials are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tableau of shape $(2,1)$</th>
+<th>Monomial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1\,1\,/\,2$</td>
+<td>$x_1^2x_2$</td>
+</tr>
+<tr>
+<td>$1\,1\,/\,3$</td>
+<td>$x_1^2x_3$</td>
+</tr>
+<tr>
+<td>$1\,2\,/\,2$</td>
+<td>$x_1x_2^2$</td>
+</tr>
+<tr>
+<td>$1\,2\,/\,3$</td>
+<td>$x_1x_2x_3$</td>
+</tr>
+<tr>
+<td>$1\,3\,/\,2$</td>
+<td>$x_1x_2x_3$</td>
+</tr>
+<tr>
+<td>$1\,3\,/\,3$</td>
+<td>$x_1x_3^2$</td>
+</tr>
+<tr>
+<td>$2\,2\,/\,3$</td>
+<td>$x_2^2x_3$</td>
+</tr>
+<tr>
+<td>$2\,3\,/\,3$</td>
+<td>$x_2x_3^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>There are eight of them, so $s_{(2,1)} = m_{(2,1)} + 2m_{(1,1,1)}$, that is, $s_{(2,1)} = x_1^2x_2+x_1^2x_3+x_1x_2^2+2x_1x_2x_3+x_1x_3^2+x_2^2x_3+x_2x_3^2$; the eight tableaux were enumerated by explicit computation, and the count agrees with the two formulas of the next section. Also $s_{(n)} = h_n$ and $s_{(1^n)} = e_n$, since a one-row tableau is a weakly increasing sequence and a one-column tableau a strictly increasing one.</p>
+<h3 id="the-jacobitrudi-identity-and-the-bialternant-formula">The Jacobi–Trudi Identity and the Bialternant Formula</h3>
+<p><strong>Theorem (Jacobi–Trudi).</strong> For every partition $\lambda$,</p>
+<p>$$
+s_\lambda = \det\bigl(h_{\lambda_i-i+j}\bigr)_{1\leq i,j\leq \ell(\lambda)} ,
+$$</p>
+<p>and dually $s_\lambda = \det(e_{\lambda'_i-i+j})$.</p>
+<p><strong>Proof sketch.</strong> The Lindström–Gessel–Viennot involution shows that the determinant counts the families of nonintersecting lattice paths that correspond to semistandard tableaux of shape $\lambda$, the sign of a permuted family being exactly the determinant's sign. $\square$</p>
+<p><strong>Example.</strong> For $\lambda = (2,1)$: $s_{(2,1)} = \det\begin{pmatrix}h_2 & h_3\\ h_0 & h_1\end{pmatrix} = h_2h_1-h_3$. In two variables $h_2h_1 = (x^2+xy+y^2)(x+y) = x^3+2x^2y+2xy^2+y^3$ and $h_3 = x^3+x^2y+xy^2+y^3$, so the difference is $x^2y+xy^2$, the sum of the two semistandard tableaux of shape $(2,1)$ in two variables.</p>
+<p><strong>Theorem (bialternant formula).</strong> For a partition $\lambda$ with $\ell(\lambda) \leq n$,</p>
+<p>$$
+s_\lambda(x_1,\ldots,x_n) = \frac{\det\bigl(x_i^{\lambda_j+n-j}\bigr)_{1\leq i,j\leq n}}{\det\bigl(x_i^{n-j}\bigr)_{1\leq i,j\leq n}} = \frac{\det\bigl(x_i^{\lambda_j+n-j}\bigr)}{\prod_{i<j}(x_i-x_j)} ,
+$$</p>
+<p>the quotient of two alternating polynomials; the denominator is the Vandermonde determinant $\prod_{i<j}(x_i-x_j)$, and the numerator is divisible by it because it is alternating.</p>
+<p><strong>Proof sketch.</strong> Both sides are symmetric, and both are alternating up to a sign when the $x_i$ are permuted; expanding the numerator as an alternating sum and dividing by the Vandermonde determinant expresses $s_\lambda$ as a sum over permutations of monomials, in which the nonzero terms are exactly the monomials of the semistandard tableaux. $\square$</p>
+<p><strong>Example.</strong> For $\lambda = (2,1)$ and $n = 2$: the numerator is $\det\begin{pmatrix}x_1^3 & x_1\\ x_2^3 & x_2\end{pmatrix} = x_1^3x_2-x_1x_2^3 = x_1x_2(x_1^2-x_2^2)$ and the denominator is $x_1-x_2$, so the quotient is $x_1x_2(x_1+x_2) = x_1^2x_2+x_1x_2^2$, agreeing with the tableau count.</p>
+<hr />
+<h2 id="the-hall-inner-product-and-the-cauchy-identity">The Hall Inner Product and the Cauchy Identity</h2>
+<h3 id="the-hall-inner-product">The Hall Inner Product</h3>
+<p><strong>Definition.</strong> The <strong>Hall inner product</strong> on the symmetric functions of each degree is the symmetric pairing $\langle\cdot,\cdot\rangle$ determined by $\langle h_\lambda, m_\mu\rangle = \delta_{\lambda\mu}$ and extended additively in each variable; equivalently, it is the pairing for which the Schur functions form an orthonormal basis, $\langle s_\lambda, s_\mu\rangle = \delta_{\lambda\mu}$, and it is non-degenerate, so that it identifies the symmetric functions of degree $n$ with their dual. Its reformulation as a form on a real vector space, with a signature and the orthogonal group attached to it, requires the structure added in Part II and is not used here. The <strong>involution</strong> $\omega : \Lambda \to \Lambda$ is the ring homomorphism with $\omega(h_k) = e_k$ for every $k$; it is an involution, preserves the pairing, and satisfies $\omega(s_\lambda) = s_{\lambda'}$.</p>
+<p><strong>Proposition.</strong> The transition matrices between the classical bases are triangular with respect to dominance: $h_\mu = \sum_\lambda K_{\lambda\mu}s_\lambda$, $s_\lambda = \sum_\mu K_{\lambda\mu}m_\mu$, and $p_\mu$ is diagonal in the monomial basis with coefficients given by the standardisation constants. Over $\mathbb{Q}$ the power sums are orthogonal for the Hall inner product:</p>
+<p>$$
+\langle p_\lambda, p_\mu\rangle = \delta_{\lambda\mu}\, z_\lambda, \qquad z_\lambda = \prod_{i \geq 1} i^{m_i(\lambda)}m_i(\lambda)! ,
+$$</p>
+<p>$m_i(\lambda)$ being the number of parts of $\lambda$ equal to $i$.</p>
+<p><strong>Proof sketch.</strong> The orthogonality of the power sums is a computation of the pairing of two power sums in the monomial basis, where the only contribution comes from $\lambda = \mu$ and equals the order of the centraliser of a permutation of cycle type $\lambda$, which is $z_\lambda$. $\square$</p>
+<p><strong>Example.</strong> In degree $2$: the bases are $s_{(2)} = h_2 = m_{(2)}+m_{(1,1)}$, $s_{(1,1)} = e_2 = m_{(1,1)}$, $p_1^2 = m_{(2)}+2m_{(1,1)}$, $p_2 = m_{(2)}$; and $\langle p_2,p_2\rangle = z_{(2)} = 2$, $\langle p_1^2,p_1^2\rangle = z_{(1,1)} = 2$, as one checks from $\langle h_{(2)},m_{(2)}\rangle = 1$ and direct expansion.</p>
+<h3 id="cauchys-identity-and-specialisations">Cauchy's Identity and Specialisations</h3>
+<p><strong>Theorem (Cauchy identity).</strong> In the completion of $\Lambda\otimes\Lambda$, or equivalently as an identity of formal power series in two families of variables,</p>
+<p>$$
+\sum_{\lambda}s_\lambda(x)\,s_\lambda(y) = \prod_{i,j}\frac{1}{1-x_iy_j},
+$$</p>
+<p>the sum over all partitions $\lambda$, and the <strong>dual Cauchy identity</strong> reads</p>
+<p>$$
+\sum_{\lambda}s_\lambda(x)\,s_{\lambda'}(y) = \prod_{i,j}(1+x_iy_j).
+$$</p>
+<p><strong>Proof sketch.</strong> Expand</p>
+<p>$$
+\prod_{i,j}\frac{1}{1-x_iy_j} = \sum_{\alpha}\prod_{i,j}x_i^{\alpha_{ij}}y_j^{\alpha_{ij}},
+$$</p>
+<p>the sum over all matrices $\alpha$ of nonnegative integers; writing $x^\alpha = \prod_{i,j}x_i^{\alpha_{ij}}$ and $y^\alpha = \prod_{i,j}y_j^{\alpha_{ij}}$, each matrix contributes a monomial in $x$ and a monomial in $y$. The RSK correspondence puts the matrices with nonnegative integer entries in bijection with the pairs $(P,Q)$ of semistandard tableaux of a common shape $\lambda$, in such a way that the column sums of $\alpha$ give the weight of $P$ and the row sums the weight of $Q$; summing the contributions of all matrices with a fixed shape therefore gives $s_\lambda(x)s_\lambda(y)$, and summing over shapes gives the identity. The dual identity is obtained by replacing the second family by its negation within the geometric expansion, or by applying the involution $\omega$ to the factors. $\square$</p>
+<p><strong>Example.</strong> For one variable each, $s_\lambda(x) = x^{|\lambda|}$ and the left side is $\sum_{d\geq0}x^dy^d = (1-xy)^{-1}$, the right side. For $x$ two variables and $y$ one variable, the right side is $\prod_{i=1}^2(1-x_iy)^{-1} = \sum_{d\geq0}h_d(x_1,x_2)y^d$, and the left side is $\sum_{\lambda:\ \ell(\lambda)\leq2}s_\lambda(x_1,x_2)y^{|\lambda|}$; the identity is therefore the statement that the two-row Schur polynomials generate the $h_d$, which follows from Jacobi–Trudi in the form $s_{(a,b)}(x_1,x_2) = h_ah_b - h_{a+1}h_{b-1}$ for $a \geq b \geq 0$, applied term by term and telescoping.</p>
+<p><strong>Theorem (specialisations).</strong> For a partition $\lambda$ with $\ell(\lambda) \leq n$,</p>
+<p><strong>(a)</strong> $s_\lambda(1^n) = \prod_{1\leq i<j\leq n}\frac{\lambda_i-\lambda_j+j-i}{j-i}$, where $\lambda$ is padded with zeros to length $n$;</p>
+<p><strong>(b)</strong> (hook content formula) $s_\lambda(1^n) = \prod_{u \in \lambda}\frac{n + c(u)}{h(u)}$, with $c(u)$ the content and $h(u)$ the hook length;</p>
+<p><strong>(c)</strong> $s_\lambda(x_1,\ldots,x_n)$ is, for $\lambda$ with at most $n$ rows, the character of the irreducible polynomial representation of $GL_n$ of highest weight $\lambda$, evaluated on the diagonal matrix with entries $x_i$ — the Weyl character formula.</p>
+<p><strong>Proof sketch.</strong> (a) is the bialternant formula evaluated at $1^n$ together with the evaluation of the Vandermonde determinant $\prod_{i<j}(j-i)$, and the padding by zeros is what makes $\lambda_j = 0$ for $j > \ell(\lambda)$; (b) is the rewritten form of (a) obtained by grouping the numerator factors by cell, since $\prod_{i<j}(\lambda_i-\lambda_j+j-i)$ is a product over cells of $n+c(u)$ divided by the hooks; (c) is Weyl's formula, whose statement here is a forward reference. $\square$</p>
+<p><strong>Example.</strong> For $\lambda = (2,1)$ and $n = 3$: (a) with the padding $(2,1,0)$ gives $\frac{2-1+1}{1}\cdot\frac{2-0+2}{2}\cdot\frac{1-0+1}{1} = 2\cdot2\cdot2 = 8$; (b) the cells have $(c,h)$ equal to $(0,3)$, $(1,1)$, $(-1,1)$, so the product is $\frac33\cdot\frac41\cdot\frac21 = 8$. Both agree with the eight tableaux listed above. The values of $s_\lambda(1^n)$ for small partitions, computed by all three methods and found to agree, are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\lambda \backslash n$</th>
+<th>$3$</th>
+<th>$4$</th>
+<th>$5$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(2,1)$</td>
+<td>$8$</td>
+<td>$20$</td>
+<td>$40$</td>
+</tr>
+<tr>
+<td>$(3,1)$</td>
+<td>$15$</td>
+<td>$45$</td>
+<td>$105$</td>
+</tr>
+<tr>
+<td>$(2,2)$</td>
+<td>$6$</td>
+<td>$20$</td>
+<td>$50$</td>
+</tr>
+<tr>
+<td>$(3,2)$</td>
+<td>$15$</td>
+<td>$60$</td>
+<td>$175$</td>
+</tr>
+<tr>
+<td>$(2,1,1)$</td>
+<td>$3$</td>
+<td>$15$</td>
+<td>$45$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (principal specialisation).</strong> In the completion of $\Lambda$ with respect to the degree,</p>
+<p>$$
+\sum_{\lambda}s_\lambda(x) = \prod_{i}\frac{1}{1-x_i}\prod_{i<j}\frac{1}{1-x_ix_j},
+$$</p>
+<p>the sum over all partitions; the specialised generating function of the number of partitions is $\sum_{\lambda}t^{|\lambda|} = \prod_{i\geq1}(1-t^i)^{-1}$.</p>
+<p><strong>Proof sketch.</strong> Set all the $y_j$ equal to $1$ in the Cauchy identity and use that the constant term of $\prod_{i,j}(1-x_iy_j)^{-1}$ in $y$, after specialising $y_j = 1$ for $j \leq m$ and letting $m$ grow, contributes $\prod_i(1-x_i)^{-1}\prod_{i<j}(1-x_ix_j)^{-1}$; the limit over $m$ is the algebraic inverse limit defining $\Lambda$, so the identity holds in the completion. The second statement is the same computation in one variable and is the classical Euler identity for partitions. $\square$</p>
+<hr />
+<h2 id="applications">Applications</h2>
+<h3 id="symmetric-polynomials-as-invariants-and-characters">Symmetric Polynomials as Invariants, and Characters</h3>
+<p><strong>Theorem (Frobenius characteristic).</strong> Let $R^n$ be the free $\mathbb{Z}$-module on the conjugacy classes of $S_n$, that is, on partitions of $n$, and let $\Lambda_n$ be the symmetric functions of degree $n$. The map</p>
+<p>$$
+\operatorname{ch} : \chi \mapsto \frac{1}{n!}\sum_{\sigma \in S_n}\chi(\sigma)p_{\operatorname{cyc}(\sigma)}
+$$</p>
+<p>is an isometric isomorphism of $\mathbb{Z}$-modules from the character ring of $S_n$ to $\Lambda_n$, sending the irreducible character $\chi^\lambda$ to the Schur function $s_\lambda$; consequently the irreducible characters of $S_n$ are indexed by the partitions of $n$, and the dimension of the irreducible representation with character $\chi^\lambda$ is $\chi^\lambda(1) = n!/\prod_{u\in\lambda}h(u)$, the number of standard Young tableaux of shape $\lambda$.</p>
+<p><strong>Proof sketch.</strong> That $\operatorname{ch}$ is an isometry onto the symmetric functions follows from the orthogonality of characters on one side and the orthogonality of the power sums $\langle p_\lambda,p_\mu\rangle = z_\lambda\delta_{\lambda\mu}$ together with $\sum_{\sigma\in C_\lambda}\lvert C_\lambda\rvert = n!$ on the other; the identification of the image of $\chi^\lambda$ with $s_\lambda$ is the computation of the character of the permutation module on the Young diagram and its decomposition, which is the content. The hook length formula for $\chi^\lambda(1)$ is the specialisation of the hook content formula at $n$ variables in the limit, or equivalently the count of standard tableaux. $\square$</p>
+<p><strong>Example.</strong> For $n = 3$: the hook length formula gives $\chi^{(3)}(1) = 6/(3\cdot2\cdot1) = 1$, $\chi^{(2,1)}(1) = 6/(3\cdot1\cdot1) = 2$, $\chi^{(1,1,1)}(1) = 6/(3\cdot2\cdot1) = 1$, and $1^2+2^2+1^2 = 6 = \lvert S_3\rvert$, so the three irreducible representations exhaust the group. The Frobenius characteristic sends $\chi^{(2,1)}$ to $s_{(2,1)}$, and the involution $\omega$ corresponds to tensoring with the sign character, $\chi^{\lambda'}\otimes\varepsilon$ having characteristic $\omega(s_\lambda) = s_{\lambda'}$.</p>
+<p><strong>Corollary (invariants and coinvariants).</strong> For the natural action of $S_n$ on $K[x_1,\ldots,x_n]$, the ring of invariants is $K[e_1,\ldots,e_n]$ by the fundamental theorem, and the quotient by the ideal generated by the positive-degree invariants, the <strong>coinvariant algebra</strong>, has dimension $n!$ and Hilbert series</p>
+<p>$$
+\frac{\prod_{i=1}^{n}(1-t^i)}{(1-t)^n} = \prod_{i=1}^{n}(1+t+\cdots+t^{i-1}),
+$$</p>
+<p>the quotient of the Hilbert series of the polynomial ring by that of the invariant ring; the coinvariant algebra carries the regular representation of $S_n$, as recorded. This is the point of contact of the basis theory with <em>Invariant Theory</em>.</p>
+<p><strong>Example (specialising the second family).</strong> Setting $y_1 = \cdots = y_m = 1$ in the Cauchy identity, and using that $s_\lambda(1^m) = 0$ whenever $\ell(\lambda) > m$ while the right side becomes $\prod_i(1-x_i)^{-m}\prod_{i<j}(1-x_ix_j)^{-1}$, gives</p>
+<p>$$
+\sum_{\lambda:\ \ell(\lambda)\leq m}s_\lambda(x)\,s_\lambda(1^m) = \prod_{i}\frac{1}{(1-x_i)^m}\prod_{i<j}\frac{1}{1-x_ix_j};
+$$</p>
+<p>for $m = 1$, where $s_\lambda(x_1) = x_1^{|\lambda|}$ and $\sum_\lambda x_1^{|\lambda|} = \prod_{i}(1-x_i)^{-1}$ as a sum over partitions with at most one row, this is the classical generating function $\sum_{d\geq0}h_d(x) = \prod_i(1-x_i)^{-1}$, and the dual Cauchy identity specialised in the same way gives $\sum_{d\geq0}e_d(x) = \prod_i(1+x_i)$.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A partition $\lambda$ is a weakly decreasing sequence, its Young diagram a set of cells, and the five bases $m_\lambda$, $e_\lambda$, $h_\lambda$, $p_\lambda$, $s_\lambda$ of the symmetric functions of degree $|\lambda|$ are related by triangular transition matrices with respect to the dominance order. The fundamental theorem of symmetric polynomials states $K[x_1,\ldots,x_n]^{S_n} = K[e_1,\ldots,e_n]$ with the $e_i$ algebraically independent and $\deg e_i = i$, so the Hilbert series is $\prod_{i=1}^n(1-t^i)^{-1}$; Newton's identities, $ke_k = \sum_{i=1}^k(-1)^{i-1}e_{k-i}p_i$ and $kh_k = \sum_{i=1}^kh_{k-i}p_i$, convert between the elementary and power-sum bases over $\mathbb{Q}$.</p>
+<p>The Schur function $s_\lambda$ is the generating function of semistandard Young tableaux of shape $\lambda$, so $s_\lambda = \sum_\mu K_{\lambda\mu}m_\mu$ with the Kostka numbers counting tableaux; it is given by the Jacobi–Trudi determinant $\det(h_{\lambda_i-i+j})$ and by the bialternant formula $s_\lambda = \det(x_i^{\lambda_j+n-j})/\prod_{i<j}(x_i-x_j)$, and $s_{(n)} = h_n$, $s_{(1^n)} = e_n$. The Hall inner product makes the Schur functions orthonormal and the power sums orthogonal with $\langle p_\lambda,p_\lambda\rangle = z_\lambda$; the involution $\omega$ exchanges $h_k$ and $e_k$ and sends $s_\lambda$ to $s_{\lambda'}$; the Cauchy identity $\sum_\lambda s_\lambda(x)s_\lambda(y) = \prod_{i,j}(1-x_iy_j)^{-1}$ and its dual $\sum_\lambda s_\lambda(x)s_{\lambda'}(y) = \prod_{i,j}(1+x_iy_j)$ encode the whole multiplication table, and its specialisations give the dimensions $s_\lambda(1^n) = \prod_{i<j}(\lambda_i-\lambda_j+j-i)/(j-i)$, the hook content formula $\prod_u(n+c(u))/h(u)$ — checked against the explicit tableau counts $s_{(2,1)}(1^3) = 8$, $s_{(3,1)}(1^3) = 15$, $s_{(2,1,1)}(1^3) = 3$ — and the principal specialisation $\sum_\lambda s_\lambda(x) = \prod_i(1-x_i)^{-1}\prod_{i<j}(1-x_ix_j)^{-1}$. The Frobenius characteristic identifies the character ring of $S_n$ with $\Lambda_n$, sending $\chi^\lambda$ to $s_\lambda$, so the hook length formula $\chi^\lambda(1) = n!/\prod_u h(u)$ follows; the representation theory itself, the Littlewood–Richardson coefficients and the Schur–Weyl duality are the subject andbeing, and the deformed theories — Hecke algebras and Macdonald polynomials — belong to <em>Symmetric Linear Algebras</em> and are not treated here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lambda$, $\mu$</td>
+<td>Partitions</td>
+</tr>
+<tr>
+<td>$|\lambda|$, $\ell(\lambda)$, $\lambda'$</td>
+<td>Size, length, conjugate</td>
+</tr>
+<tr>
+<td>$(i,j)$, $c(u)$, $h(u)$</td>
+<td>Cell, content, hook length</td>
+</tr>
+<tr>
+<td>$\unrhd$</td>
+<td>Dominance order</td>
+</tr>
+<tr>
+<td>$m_\lambda$</td>
+<td>Monomial symmetric function</td>
+</tr>
+<tr>
+<td>$e_k$, $h_k$, $p_k$</td>
+<td>Elementary, complete homogeneous, power sum</td>
+</tr>
+<tr>
+<td>$s_\lambda$</td>
+<td>Schur function</td>
+</tr>
+<tr>
+<td>$K_{\lambda\mu}$</td>
+<td>Kostka number</td>
+</tr>
+<tr>
+<td>$\Lambda$, $\Lambda_n$</td>
+<td>Ring of symmetric functions, in $n$ variables</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>Involution $h_k \leftrightarrow e_k$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>Hall inner product on the symmetric functions of each degree</td>
+</tr>
+<tr>
+<td>$z_\lambda$</td>
+<td>$\prod_i i^{m_i(\lambda)}m_i(\lambda)!$</td>
+</tr>
+<tr>
+<td>$x^T$</td>
+<td>Monomial of a tableau $T$</td>
+</tr>
+<tr>
+<td>$m_i(\lambda)$</td>
+<td>Number of parts of $\lambda$ equal to $i$</td>
+</tr>
+<tr>
+<td>$\operatorname{ch}$, $\chi^\lambda$</td>
+<td>Frobenius characteristic, irreducible character of $S_n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian G. Macdonald, <em>Symmetric Functions and Hall Polynomials</em> (Oxford University Press, 2nd ed. 1995), for the standard development of all the bases, the Cauchy identity and the specialisations.</li>
+<li>Richard P. Stanley, <em>Enumerative Combinatorics</em>, Volume 2 (Cambridge University Press, 1999), for the combinatorial treatment, RSK and the hook length formula.</li>
+<li>Donald E. Littlewood and A. R. Richardson, "Group characters and algebra", <em>Philosophical Transactions of the Royal Society A</em> 233 (1934), 99–141, for the Littlewood–Richardson rule.</li>
+<li>Percy A. MacMahon, <em>Combinatory Analysis</em> (Cambridge University Press, 1915–1916), for the generating functions of partitions and the symmetric function identities.</li>
+<li>Alfred Young, "On quantitative substitutional analysis", <em>Proceedings of the London Mathematical Society</em> 33 (1901), 97–146, for the tableaux and the representation theory of the symmetric group.</li>
+<li>Georg Frobenius, "Über die Primfaktoren der Gruppendeterminante", <em>Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften</em> (1896), 1343–1382, for the characteristic map and the characters of $S_n$.</li>
+<li>G. de B. Robinson, "On the representations of the symmetric group", <em>American Journal of Mathematics</em> 60 (1938), 745–760, for the standardisation and the tableaux calculus.</li>
+<li>J. S. Frame, G. de B. Robinson and R. M. Thrall, "The hook graphs of the symmetric group", <em>Canadian Journal of Mathematics</em> 6 (1954), 316–324, for the hook length formula.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

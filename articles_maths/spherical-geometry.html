@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spherical Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spherical-geometry"><strong>Spherical Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Spherical geometry is the geometry of the unit sphere with the distance measured along the surface. It is the model geometry of constant positive curvature: the round sphere of radius $R$ has sectional curvature $K = 1/R^2$ on every plane, its geodesics are the great circles, and its triangles have angle sum greater than $\pi$, with the excess equal to the area. It is one of the three model geometries of <em>Curvature and Geodesics</em> — the elliptic member of the trichotomy — and its two-dimensional geometry is the geometry of the algebra $\mathbb{C}$ with the elliptic rotation group $SO(2)$, the case $\omega^2 = -1$ of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>.</p>
+<p>Spherical geometry differs from Euclidean geometry in a way that changes its logical character: any two great circles meet, so there are no parallel lines at all, and the parallel postulate fails in the direction of "no parallels" rather than of "too many". This makes spherical geometry a geometry of <strong>antipodal pairs</strong>: every point has a unique antipode at the maximum distance $\pi R$, and each pair of antipodal points is joined by infinitely many minimising geodesics. The quotient of the sphere by the antipodal map repairs this defect and gives <strong>elliptic geometry</strong>, the geometry of the real projective plane, which is the genuinely two-dimensional positive-curvature model. This article treats both.</p>
+<p>The article first defines the round sphere as a Riemannian manifold and computes its metric, its distance and its geodesics. It then develops spherical trigonometry — the spherical law of cosines, the law of sines, the polar triangle, Girard's theorem on the area of a spherical triangle, and the right-triangle formulae — and relates them to the Euclidean theorems they generalise, with the Euclidean ones recovered as the limit of small triangles. It treats the isometry group $O(n+1)$ and the classification of its finite subgroups, which is the classification of the finite groups of rotations of the sphere and the source of the exceptional groups $A_4$, $S_4$, $A_5$. It develops the elliptic quotient, the three-dimensional sphere and the Hopf fibration, and the spherical space forms, which are the complete constant-curvature manifolds of positive curvature.</p>
+<p>The article assumes <em>Smooth Manifolds and Differential Geometry</em> for the sphere as a submanifold and the induced metric; <em>Curvature and Geodesics</em> and <em>Riemannian Geometry</em> for geodesics, curvature and the classification of the space forms; <em>Euclidean Geometry</em> for the comparison and the crystallographic restriction; <em>Groups</em> and <em>Group Actions and Structure</em> for the finite group theory; <em>Matrix Groups and Classical Groups</em> for $O(n)$ and $SU(2)$; <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em> for the elliptic case; andfor the Hopf fibration. The classification of the three-dimensional spherical space forms, the lens spaces, is the subject, and is not developed here. No physics is invoked.</p>
+<h2 id="the-sphere-and-its-metric">The Sphere and Its Metric</h2>
+<h3 id="the-round-sphere">The Round Sphere</h3>
+<p><strong>Definition.</strong> The <strong>sphere</strong> of radius $R > 0$ in $\mathbb{R}^{n+1}$ is</p>
+<p>$$
+S^n_R = \{x \in \mathbb{R}^{n+1} : \langle x, x\rangle = R^2\},
+$$</p>
+<p>and the <strong>round metric</strong> $g_R$ is the restriction of the standard inner product of $\mathbb{R}^{n+1}$ to the tangent spaces of $S^n_R$: for $x \in S^n_R$ and $v, w \in T_xS^n_R$,</p>
+<p>$$
+g_R(v, w) = \langle v, w\rangle .
+$$</p>
+<p>The pair $(S^n_R, g_R)$ is a compact Riemannian manifold of dimension $n$; for $R = 1$ it is the unit sphere $S^n$.</p>
+<p><strong>Proposition.</strong> The round metric is well defined (the tangent space at $x$ is the orthogonal complement of $x$), it is positive definite, and the inclusion $S^n_R \hookrightarrow \mathbb{R}^{n+1}$ is an isometric embedding with second fundamental form $\mathrm{II}(X, Y) = -\frac{1}{R}g_R(X, Y)N$ for the outward unit normal $N(x) = x/R$.</p>
+<p><strong>Proof.</strong> Differentiate $\langle x, x\rangle = R^2$ along a curve in the sphere to get $\langle x, x'\rangle = 0$, so $T_xS^n_R = x^\perp$; the restriction of the positive definite form is positive definite. The second fundamental form is computed from $\nabla_XN = X/R$ in the flat connection. $\square$</p>
+<p><strong>Theorem.</strong> The round sphere has constant sectional curvature $K = 1/R^2$; its geodesics are the <strong>great circles</strong>, the intersections $S^n_R \cap P$ with two-dimensional linear subspaces $P$ through the origin, parametrised proportionally to arclength; and its distance is</p>
+<p>$$
+d_R(x, y) = R\arccos\!\left(\frac{\langle x, y\rangle}{R^2}\right) = R\,\theta(x, y),
+$$</p>
+<p>where $\theta(x, y) \in [0, \pi]$ is the <strong>central angle</strong> between the two position vectors.</p>
+<p><strong>Proof sketch.</strong> The Gauss equation with the second fundamental form above gives $K = R^{-2}$, since for orthonormal $X, Y$ in the tangent plane, $K = g(\mathrm{II}(X, X), \mathrm{II}(Y, Y)) - |\mathrm{II}(X, Y)|^2 = R^{-2}$. A great circle has constant speed and its acceleration is normal to the sphere, hence tangential acceleration zero, so it is a geodesic; conversely the geodesic equation on the sphere has as its solutions the intersections with the two-planes, by isometry and homogeneity. The distance formula is the polar-coordinate computation: the minimising curve is the shorter arc of the great circle through $x$ and $y$, subtending the central angle $\theta$. $\square$</p>
+<p><strong>Corollary.</strong> The diameter of $S^n_R$ is $\pi R$, attained exactly by antipodal pairs $y = -x$, and two distinct non-antipodal points are joined by exactly one minimising geodesic; antipodal points are joined by infinitely many, each of length $\pi R$. Every geodesic is periodic of length $2\pi R$.</p>
+<p><strong>Corollary (area and volume).</strong> The $n$-volume of $S^n_R$ is</p>
+<p>$$
+\operatorname{vol}(S^n_R) = \frac{2\pi^{(n+1)/2}}{\Gamma((n+1)/2)}\,R^n ,
+$$</p>
+<p>in particular $2\pi R$ for the circle $S^1_R$, $4\pi R^2$ for the two-sphere, and $2\pi^2R^3$ for the three-sphere.</p>
+<p>The volume formula uses the Gamma function, which is a closed form of an integral; the integral is the elementary one of the elementary functions, and the recurrence is the standard reduction for the surface area of a sphere. The analytic theory of the integral is not developed here.</p>
+<h3 id="the-spherical-isometry-group">The Spherical Isometry Group</h3>
+<p><strong>Theorem.</strong> The isometry group of the round sphere is the orthogonal group $O(n+1)$, acting on $S^n_R$ by restriction, and the group of orientation-preserving isometries is $SO(n+1)$. The action is transitive on points and, after a point is fixed, transitive on the orthonormal frames of the tangent space.</p>
+<p><strong>Proof.</strong> Every $A \in O(n+1)$ preserves the ambient inner product and the sphere, so its restriction is an isometry. Conversely an isometry of the sphere extends to a linear map of $\mathbb{R}^{n+1}$ preserving the inner product: an isometry $F$ with $F(x) = y$ composes with an element of $O(n+1)$ to fix $x$; the composition of the differential with the identity shows the extension is linear, and the Myers–Steenrod theorem of <em>Riemannian Geometry</em> gives the smoothness. $\square$</p>
+<p><strong>Corollary.</strong> Two points are related by an isometry if and only if they have the same distance from a fixed base point, and the round sphere is a homogeneous space $O(n+1)/O(n)$.</p>
+<p><strong>Definition.</strong> The <strong>isometry group</strong> acts with stabiliser $O(n)$ at a point, and the <strong>round sphere is a symmetric space</strong> in the sense, with the geodesic symmetry at $x$ given by the restriction of the reflection $v \mapsto v - 2\langle v, x\rangle x/R^2$.</p>
+<h2 id="spherical-trigonometry">Spherical Trigonometry</h2>
+<h3 id="spherical-triangles-and-the-angle-sum">Spherical Triangles and the Angle Sum</h3>
+<p><strong>Definition.</strong> A <strong>spherical triangle</strong> is a region of the sphere bounded by three arcs of great circles, each of length less than $\pi R$, together with its three vertices. Its <strong>sides</strong> are the lengths of the arcs, written $a, b, c$ measured as angles at the centre when $R = 1$, and its <strong>angles</strong> $A, B, C$ are the dihedral angles between the planes of the sides.</p>
+<p><strong>Theorem (angle sum and Girard's formula).</strong> For a spherical triangle on the sphere of radius $R$ with angles $A, B, C$ and area $\Delta$,</p>
+<p>$$
+A + B + C = \pi + \frac{\Delta}{R^2}, \qquad \text{so} \qquad \Delta = R^2(A + B + C - \pi).
+$$</p>
+<p><strong>Proof sketch.</strong> The lune bounded by the two great circles through a vertex of angle $A$ has area $2AR^2$, and the three such lunes, together with their antipodal lunes, have total area $4R^2(A+B+C)$. These six lunes cover the sphere with multiplicity one at every point except on the triangle and on its antipodal triangle, where the multiplicity is three; counting the eight triangles cut out by the three great circles therefore gives $4R^2(A+B+C) = 4\pi R^2 + 4\Delta$, which rearranges to the statement. $\square$</p>
+<p><strong>Corollary.</strong> The angle sum of a spherical triangle exceeds $\pi$, by the <strong>spherical excess</strong> $\Delta/R^2$; as $R \to \infty$ with the side lengths held fixed the excess tends to zero and the Euclidean angle sum $\pi$ is recovered.</p>
+<h3 id="the-spherical-laws">The Spherical Laws</h3>
+<p><strong>Theorem (spherical law of cosines).</strong> For a spherical triangle on the unit sphere with sides $a, b, c$ and opposite angles $A, B, C$,</p>
+<p>$$
+\cos c = \cos a\cos b + \sin a\sin b\cos C,
+$$</p>
+<p>and cyclically in the other five pairings.</p>
+<p><strong>Proof sketch.</strong> Place the vertices as unit vectors $u, v, w$ with angles $a = \arccos\langle v, w\rangle$, $b = \arccos\langle w, u\rangle$, $c = \arccos\langle u, v\rangle$, and let $A, B, C$ be the angles between the tangent vectors along the sides. The decomposition of $w$ in the basis $u$ and an orthonormal vector in the plane $\mathrm{span}(u, w)$ gives $\cos a = \cos b\cos c + \sin b\sin c\cos A$; rearranging the labels gives the law. $\square$</p>
+<p><strong>Theorem (spherical law of sines).</strong> With the same notation,</p>
+<p>$$
+\frac{\sin a}{\sin A} = \frac{\sin b}{\sin B} = \frac{\sin c}{\sin C}.
+$$</p>
+<p><strong>Proof sketch.</strong> Compute the volume of the parallelepiped spanned by $u, v, w$ in two ways, using the spherical law of cosines in one relation and the antisymmetry of the determinant in the other. $\square$</p>
+<p><strong>Theorem (Pythagoras for right spherical triangles).</strong> If $C = \pi/2$ then</p>
+<p>$$
+\cos c = \cos a\cos b, \qquad \cos A = \frac{\tan b}{\tan c}, \qquad \sin A = \frac{\sin a}{\sin c}.
+$$</p>
+<p><strong>Proof.</strong> Put $C = \pi/2$ in the law of cosines for the first formula; the remaining two are the law of sines and the law of cosines applied to the polar triangle. $\square$</p>
+<p><strong>Corollary (the Euclidean limit).</strong> For small sides $a, b, c \ll 1$ the expansions $\cos x = 1 - x^2/2 + O(x^4)$ and $\sin x = x + O(x^3)$ recover the Euclidean law of cosines $c^2 = a^2 + b^2 - 2ab\cos C$ and the Euclidean Pythagorean theorem $c^2 = a^2 + b^2$. Spherical trigonometry therefore contains Euclidean trigonometry as its flat limit, which is the statement that the sphere of large radius approaches the plane.</p>
+<h3 id="polar-triangles">Polar Triangles</h3>
+<p><strong>Definition.</strong> For a spherical triangle $ABC$ not containing a pair of antipodal vertices, the <strong>polar triangle</strong> $A'B'C'$ has as vertices the poles of the great circles through the opposite sides: $A'$ is the pole of $BC$ on the same side as $A$, and so on.</p>
+<p><strong>Theorem.</strong> The polar triangle has sides $a' = \pi - A$, $b' = \pi - B$, $c' = \pi - C$ and angles $A' = \pi - a$, $B' = \pi - b$, $C' = \pi - c$.</p>
+<p><strong>Proof.</strong> The side $B'C'$ lies on the great circle through the poles of $AC$ and $AB$, which is the polar of $A$; the angle between the planes through the origin associated with the sides is the supplement of the corresponding side of the original triangle. $\square$</p>
+<p><strong>Corollary.</strong> Every theorem about sides has a dual statement about angles, and conversely; this is the <strong>duality</strong> of spherical trigonometry, and it is the reason the laws of cosines and sines come in the two interchanged forms.</p>
+<h2 id="elliptic-geometry">Elliptic Geometry</h2>
+<h3 id="the-antipodal-quotient">The Antipodal Quotient</h3>
+<p><strong>Definition.</strong> <strong>Elliptic $n$-space</strong> is the quotient</p>
+<p>$$
+\mathbb{E}^n = S^n / \{\pm 1\},
+$$</p>
+<p>where the antipodal map $x \mapsto -x$ acts freely and properly discontinuously; for $n = 2$ it is the real projective plane $\mathbb{RP}^2$, and for general $n$ it is $\mathbb{RP}^n$. The round metric descends to the quotient, because the antipodal map is an isometry, giving the <strong>elliptic metric</strong> on $\mathbb{E}^n$.</p>
+<p><strong>Theorem.</strong> Elliptic $n$-space is a compact Riemannian manifold of constant sectional curvature $+1$, and its distance is</p>
+<p>$$
+d(\{x, -x\}, \{y, -y\}) = \min\bigl(d_{S^n}(x, y),\, \pi - d_{S^n}(x, y)\bigr),
+$$</p>
+<p>so that the diameter of elliptic space is $\pi/2$, half that of the sphere.</p>
+<p><strong>Proof.</strong> The quotient metric is well defined by equivariance, and the curvature is unchanged by the local isometry of the covering $S^n \to \mathbb{E}^n$. The distance in the quotient is the minimum over the lifts, and the two lifts of a point are antipodal, so the two candidates are $\theta$ and $\pi - \theta$. $\square$</p>
+<p><strong>Theorem (no parallels).</strong> In elliptic geometry any two lines meet in exactly one point, so the parallel postulate fails with no parallels at all.</p>
+<p><strong>Proof.</strong> A line is the image of a great circle; two great circles meet in an antipodal pair, which is a single point in the quotient. $\square$</p>
+<p><strong>Remark (the two conventions of the elliptic plane).</strong> The sphere itself is sometimes called the <strong>double elliptic plane</strong>, because each pair of antipodal points is a single point of the elliptic plane doubled; this is why the sphere is simply connected while the elliptic plane has fundamental group $\mathbb{Z}/2\mathbb{Z}$. Both are models of positive curvature: the sphere is the simply connected one, and the elliptic plane is the quotient by the antipodal involution, the simplest spherical space form.</p>
+<h3 id="the-finite-rotation-groups">The Finite Rotation Groups</h3>
+<p><strong>Definition.</strong> A <strong>finite rotation group</strong> of the sphere $S^2$ is a finite subgroup $\Gamma \leq SO(3)$; its <strong>orbit</strong> of a point $x$ is $\Gamma x$, and the quotient $S^2/\Gamma$ is a spherical orbifold.</p>
+<p><strong>Theorem.</strong> Every finite subgroup of $SO(3)$ is one of: the cyclic group $C_m$ of rotations about a fixed axis; the dihedral group $D_m$ of order $2m$ preserving a regular $m$-gon; or one of the three groups of the Platonic solids, the tetrahedral group $A_4$ of order $12$, the octahedral group $S_4$ of order $24$ and the icosahedral group $A_5$ of order $60$.</p>
+<p><strong>Proof sketch.</strong> The group acts on the sphere; the orbits of the vertices of the convex hull of a generic orbit give a spherical tiling whose faces are congruent spherical polygons. Let $v, e, f$ be the numbers of vertices, edges and faces of the tiling and let $q$ be the number of faces at a vertex. Counting incidences gives $qf = 2e$ and $pf = 2e$ for the number $p$ of sides of a face, and the spherical Euler formula $v - e + f = 2$ together with the angle-sum formula gives $1/p + 1/q > 1/2$. The integer solutions with $p, q \geq 2$ are $(p, q) = (2, q)$ — the cyclic and dihedral families — and $(3,3), (3,4), (3,5), (4,3), (5,3)$ — the five Platonic cases, the last three up to interchange being $A_4$, $S_4$ and $A_5$. $\square$</p>
+<p><strong>Corollary.</strong> The finite subgroups of $O(3)$ that act freely on $S^2$ — those containing no rotation with a fixed point — are the trivial group and the cyclic groups of order $2$ acting by the antipodal map: the sphere and the elliptic space are the only two-dimensional spherical space forms up to isometry. In particular a finite free action of $SO(3)$ on $S^2$ is trivial, because every nontrivial rotation has an axis.</p>
+<h2 id="the-three-sphere-and-the-hopf-fibration">The Three-Sphere and the Hopf Fibration</h2>
+<h3 id="the-unit-quaternions">The Unit Quaternions</h3>
+<p><strong>Theorem.</strong> The unit sphere $S^3$, identified with the group of unit quaternions of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>, is a Lie group of dimension $3$ under quaternion multiplication, and the map</p>
+<p>$$
+\Phi : S^3 \longrightarrow SO(3), \qquad \Phi(q)(p) = qpq^{-1}, \quad p \in \operatorname{Im}\mathbb{H},
+$$</p>
+<p>is a surjective two-to-one Lie group homomorphism with kernel $\{\pm 1\}$. It identifies $S^3$ with $SU(2)$ and exhibits $S^3$ as the double cover of $SO(3)$.</p>
+<p><strong>Proof sketch.</strong> Unit quaternions are closed under multiplication and the norm is multiplicative, so $S^3$ is a group; conjugation by a unit quaternion preserves the imaginary subspace and the norm, so $\Phi(q) \in SO(3)$; the kernel consists of the unit quaternions commuting with every imaginary quaternion, namely $\{\pm 1\}$; both sides have dimension three, so the differential is an isomorphism and the map is a covering. $\square$</p>
+<p><strong>Corollary.</strong> The fundamental group of $SO(3)$ is $\mathbb{Z}/2\mathbb{Z}$, and $S^3$ is simply connected; the two are the two-dimensional rotation groups that the quaternion algebra distinguishes.</p>
+<h3 id="the-hopf-fibration">The Hopf Fibration</h3>
+<p><strong>Definition.</strong> The <strong>Hopf map</strong> is</p>
+<p>$$
+h : S^3 \longrightarrow S^2, \qquad h(q) = q\,e_1\,q^{-1} \in \operatorname{Im}\mathbb{H},
+$$</p>
+<p>using the identification of the imaginary subspace with $\mathbb{R}^3$ and restricting to unit vectors; equivalently, viewing $S^3 \subset \mathbb{C}^2$ as pairs $(z_1, z_2)$ with $|z_1|^2 + |z_2|^2 = 1$, the map is $h(z_1, z_2) = (2z_1\bar z_2, |z_1|^2 - |z_2|^2)$.</p>
+<p><strong>Theorem.</strong> The Hopf map is a smooth submersion, its fibre over every point is a great circle of $S^3$, and it is a fibre bundle with structure group $U(1) = S^1$; the sphere $S^3$ is the total space of a principal $S^1$-bundle over $S^2$.</p>
+<p><strong>Proof sketch.</strong> The map $\Phi$ has image $SO(3)$ and the stabiliser of a point of $S^2$ is a circle $SO(2)$, so the preimage of a point under the quotient $S^3 \to SO(3) \to S^2$ is a coset of the circle $\{e^{i\theta}\}$, a great circle. The local trivialisations come from local sections of the fibration, and the transition functions are circle-valued. The bundle theory is . $\square$</p>
+<p><strong>Corollary.</strong> The Hopf fibration is the standard nontrivial principal circle bundle and the first example of the relation between the homotopy groups of spheres; it realises $S^3$ as the total space of a bundle whose base is $S^2$ and whose fibre is $S^1$, and it is the geometric form of the double cover $SU(2) \to SO(3)$.</p>
+<h2 id="spherical-space-forms">Spherical Space Forms</h2>
+<p><strong>Definition.</strong> A <strong>spherical space form</strong> is a complete connected Riemannian manifold of constant sectional curvature $+1$.</p>
+<p><strong>Theorem.</strong> Every spherical space form is isometric to a quotient $S^n/\Gamma$, where $\Gamma$ is a finite subgroup of $O(n+1)$ acting freely on $S^n$. In particular, a spherical space form is covered by the round sphere, its fundamental group is $\Gamma$, and its curvature is $+1$.</p>
+<p><strong>Proof sketch.</strong> The universal cover is complete, simply connected and of constant curvature $+1$, hence is isometric to the round sphere by Cartan's classification, and the covering group is a finite group of isometries acting freely, so it lies in $O(n+1)$. $\square$</p>
+<p><strong>Corollary.</strong> The fundamental group of a spherical space form is finite, the first Betti number is zero when the dimension is positive, and all such manifolds are compact with diameter at most $\pi$.</p>
+<p><strong>Corollary (low dimensions).</strong> In dimension two the only spherical space forms are the round sphere and the elliptic plane, by the classification of the finite subgroups of $O(3)$ above. In dimension three the free actions of finite subgroups of $O(4)$ are the cyclic ones giving the <strong>lens spaces</strong> and the other groups giving the remaining three-dimensional spherical space forms; their classification is the content, and it uses the same space-form theorem proved here. In dimension four and above the classification is not known in general, and it is equivalent to a question about free finite group actions on spheres.</p>
+<p><strong>Remark (the trichotomy).</strong> The spherical space forms complete the positive-curvature end of the trichotomy of <em>Curvature and Geodesics</em>: complete connected constant-curvature manifolds are either spherical (finite fundamental group, finite diameter), Euclidean (a finite cover of a flat torus by the Bieberbach theorems) or hyperbolic (infinite fundamental group, exponential volume growth). The Euclidean end is the subject of <em>Euclidean Geometry</em> and the hyperbolic end; the three together are the content.</p>
+<h2 id="summary">Summary</h2>
+<p>The round sphere $S^n_R$ is the compact Riemannian manifold of constant sectional curvature $1/R^2$; its geodesics are the great circles, its distance is $R$ times the central angle, its diameter is $\pi R$, and its isometry group is $O(n+1)$. Two points are joined by a unique minimising geodesic unless they are antipodal, in which case there are infinitely many of equal length.</p>
+<p>Spherical trigonometry governs triangles bounded by great circles: the angle sum exceeds $\pi$ by the spherical excess $\Delta/R^2$, the spherical law of cosines reads $\cos c = \cos a\cos b + \sin a\sin b\cos C$, the law of sines is the constancy of $\sin a/\sin A$, and for a right triangle $\cos c = \cos a\cos b$. In the limit of small triangles the Euclidean law of cosines and the Pythagorean theorem are recovered, so the sphere of large radius approximates the plane. The polar triangle exchanges sides and supplements of angles, giving the duality of the trigonometric laws.</p>
+<p>Elliptic space is the quotient of the sphere by the antipodal map; it has constant curvature $+1$, diameter $\pi/2$, fundamental group $\mathbb{Z}/2\mathbb{Z}$, and in it any two lines meet in exactly one point, so there are no parallels. The finite subgroups of $SO(3)$ are the cyclic, the dihedral and the three exceptional groups $A_4$, $S_4$, $A_5$ of the Platonic solids; the only finite free actions on $S^2$ are the trivial one and the antipodal one, so the sphere and the elliptic plane are the only two-dimensional spherical space forms.</p>
+<p>The unit three-sphere is the group of unit quaternions, identified with $SU(2)$ and double-covering $SO(3)$; the Hopf map $S^3 \to S^2$ is a principal circle bundle whose fibres are great circles, and it is the geometric form of that double cover. Every spherical space form is a quotient of the round sphere by a finite group of isometries acting freely, so its fundamental group is finite and its curvature is $+1$; in dimension three the classification is that of the lens spaces and the remaining space forms, written in parallel, and it completes the positive-curvature end of the trichotomy of the model geometries.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S^n_R$</td>
+<td>Round sphere of radius $R$ in $\mathbb{R}^{n+1}$; $S^n = S^n_1$</td>
+</tr>
+<tr>
+<td>$g_R$, $\langle\cdot,\cdot\rangle$</td>
+<td>Round metric, the restriction of the standard inner product</td>
+</tr>
+<tr>
+<td>$d_R(x,y) = R\arccos(\langle x,y\rangle/R^2)$</td>
+<td>Spherical distance, $R$ times the central angle</td>
+</tr>
+<tr>
+<td>Great circle</td>
+<td>Geodesic of the sphere; $S^n_R \cap P$ for a two-plane $P$</td>
+</tr>
+<tr>
+<td>$O(n+1)$, $SO(n+1)$</td>
+<td>Isometry group of $S^n_R$ and its orientation-preserving subgroup</td>
+</tr>
+<tr>
+<td>$a, b, c$; $A, B, C$</td>
+<td>Sides and angles of a spherical triangle</td>
+</tr>
+<tr>
+<td>$\Delta = R^2(A+B+C-\pi)$</td>
+<td>Girard's formula for the area via the spherical excess</td>
+</tr>
+<tr>
+<td>$\cos c = \cos a\cos b + \sin a\sin b\cos C$</td>
+<td>Spherical law of cosines</td>
+</tr>
+<tr>
+<td>$\sin a/\sin A = \sin b/\sin B = \sin c/\sin C$</td>
+<td>Spherical law of sines</td>
+</tr>
+<tr>
+<td>Polar triangle</td>
+<td>Triangle with sides $\pi - A$, etc.; realises the side–angle duality</td>
+</tr>
+<tr>
+<td>$\mathbb{E}^n = S^n/\{\pm 1\}$</td>
+<td>Elliptic space; $\mathbb{E}^2 = \mathbb{RP}^2$; curvature $+1$, diameter $\pi/2$</td>
+</tr>
+<tr>
+<td>$C_m$, $D_m$, $A_4$, $S_4$, $A_5$</td>
+<td>Finite rotation groups of $S^2$</td>
+</tr>
+<tr>
+<td>$\Phi : S^3 \to SO(3)$</td>
+<td>Two-to-one cover by the unit quaternions; $S^3 \cong SU(2)$</td>
+</tr>
+<tr>
+<td>$h : S^3 \to S^2$</td>
+<td>Hopf map; principal $S^1$-bundle with great-circle fibres</td>
+</tr>
+<tr>
+<td>Spherical space form</td>
+<td>Complete constant-curvature $+1$ manifold $S^n/\Gamma$, $\Gamma$ finite acting freely</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em>, 2nd ed. (Springer, 2006), for spherical and hyperbolic geometry developed uniformly from the models.</li>
+<li>Harold S. M. Coxeter, <em>Introduction to Geometry</em>, 2nd ed. (Wiley, 1969), for spherical trigonometry and the Platonic solids.</li>
+<li>Marcel Berger, <em>Geometry I</em> (Springer, 1987), for the isometry groups of the sphere and the classification of the finite rotation groups.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for free finite group actions on spheres and the spherical space form problem.</li>
+<li>Joseph A. Wolf, <em>Spaces of Constant Curvature</em>, 6th ed. (AMS Chelsea, 2011), for the space forms in all signatures and dimensions.</li>
+<li>Michael Atiyah and Friedrich Hirzebruch, "Quelques théorèmes de non-plongement pour les variétés différentiables", <em>Bulletin de la Société Mathématique de France</em> 87 (1959), 383–396, for applications of the spherical space forms.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the fundamental group of $SO(3)$ and the Hopf fibration.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

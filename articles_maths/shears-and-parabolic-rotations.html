@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shears and Parabolic Rotations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="shears-and-parabolic-rotations"><strong>Shears and Parabolic Rotations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article develops the one-parameter group theory of the infinitesimal extension of the real line, that is, the group theory of the dual numbers. It follows <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathfrak{m} = (\varepsilon)$ and the group of units $(\mathbb{D}')^\times$, and it follows <em>Dual-Numbers Representations</em> for the regular representation and the nilpotent endomorphism $E = \rho_{\mathrm{reg}}(\varepsilon)$. The subject is the geometry of multiplication by a unit, treated, as in <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>, as a one-parameter transformation group and as a Lie group, not as a motion in any physical sense.</p>
+<p>The three two-dimensional commutative unital real algebras give three kinds of rotation. For the complex numbers $\mathbb{C}$ the norm-one group is the circle $U(1)$, compact, and its one-parameter group is the elliptic rotation. For the split complex numbers $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the norm-one group is the hyperbola and its identity component is the hyperbolic rotation group, with the rapidity as additive parameter. For the dual numbers $\mathbb{D}'$ the norm form is degenerate and the norm-one group degenerates to a pair of parallel lines; its identity component is the <strong>shear group</strong>, a one-parameter group whose elements are unipotent linear maps of the dual plane. The purpose of this article is to describe that group, its generator, its Lie algebra, its action, and its relation to the elliptic and hyperbolic cases as the common degenerate limit.</p>
+<p>The central objects are these. Multiplication by the unit $u = 1 + s\varepsilon$ is the linear map</p>
+<p>$$
+S(s) : x + y\varepsilon \longmapsto x + (sx + y)\varepsilon,
+$$</p>
+<p>the elementary shear matrix $\begin{pmatrix}1&0\\s&1\end{pmatrix}$. The family $\{S(s) : s \in \mathbb{R}\}$ is a one-parameter group, isomorphic to the additive group of the real line, whose infinitesimal generator is the nilpotent endomorphism $E = \rho_{\mathrm{reg}}(\varepsilon)$ with $E^2 = 0$. Because the generator is nilpotent rather than semisimple, the exponential map is polynomial, the group is unipotent, and no orbit other than a fixed point is periodic. The parameter $s$ is the <strong>parabolic angle</strong>; it is additive, and its addition law is the parabolic case of the trichotomy of angle-addition laws.</p>
+<p>No physics is invoked anywhere. The word "rotation" is used throughout in the algebraic sense of a one-parameter subgroup of the group of units acting linearly on the algebra, exactly as in <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>.</p>
+<p>Notation: $z = x + y\varepsilon$ with $x, y \in \mathbb{R}$; $\operatorname{Re} z = x$, $\operatorname{Inf} z = y$; $\bar z = x - y\varepsilon$; $N(z) = z\bar z = x^2$; $x^2 + y^2$ the Euclidean form; $\mathfrak{m} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(x + y\varepsilon) = x$ the augmentation.</p>
+<h2 id="the-group-of-units">The Group of Units</h2>
+<h3 id="units-and-the-maximal-ideal">Units and the Maximal Ideal</h3>
+<p><strong>Proposition.</strong> The element $a + b\varepsilon \in \mathbb{D}'$ is a unit if and only if $a \neq 0$, and then</p>
+<p>$$
+(a + b\varepsilon)^{-1} = \frac{1}{a} - \frac{b}{a^2}\,\varepsilon.
+$$</p>
+<p><strong>Proof.</strong> The product $(a+b\varepsilon)(c+d\varepsilon) = ac + (ad+bc)\varepsilon$ equals $1$ exactly when $ac = 1$ and $ad + bc = 0$; the first equation is solvable in $\mathbb{R}$ exactly when $a \neq 0$, and then $c = a^{-1}$ and $d = -a^{-2}b$. $\square$</p>
+<p>So the non-units are the elements of the maximal ideal $\mathfrak{m}$, and $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathfrak{m}$. The subgroup</p>
+<p>$$
+1 + \mathfrak{m} = \{1 + s\varepsilon : s \in \mathbb{R}\}
+$$</p>
+<p>consists of the units of real part one; it is the fibre of the augmentation over $1$ inside the unit group, and it will turn out to be exactly the shear group.</p>
+<h3 id="the-unit-group-as-a-direct-product">The Unit Group as a Direct Product</h3>
+<p><strong>Theorem.</strong> Let $R$ be a commutative ring. The map</p>
+<p>$$
+\Phi : R^\times \times (R, +) \longrightarrow (\mathbb{D}'_R)^\times, \qquad \Phi(a, s) = a + as\varepsilon = a(1 + s\varepsilon),
+$$</p>
+<p>is an isomorphism of groups.</p>
+<p><strong>Proof.</strong> $\Phi$ is bijective: given $a + b\varepsilon$ with $a \in R^\times$, the unique preimage is $(a, a^{-1}b)$. It is a homomorphism, because</p>
+<p>$$
+\Phi(a,s)\Phi(c,t) = a(1+s\varepsilon)\,c(1+t\varepsilon) = ac\bigl(1 + (s+t)\varepsilon\bigr) = \Phi\bigl(ac,\, s+t\bigr),
+$$</p>
+<p>using $\varepsilon^2 = 0$. $\square$</p>
+<p><strong>Corollary.</strong> For $R = \mathbb{R}$, the group of units is</p>
+<p>$$
+(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R},
+$$</p>
+<p>with the two factors the nonzero scalars and the shear group. The unit group is abelian, has exactly two connected components, distinguished by the sign of the real part, and each is contractible.</p>
+<p><strong>Proof.</strong> The isomorphism is the theorem. The sign of the real part is a continuous homomorphism $(\mathbb{D}')^\times \to \{\pm1\}$ and $\mathbb{R}^\times$ has two components, so the two groups have the same component count; the component of the identity is $\{a > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}$, which is contractible. $\square$</p>
+<p>The algebra article records that the unit group is an extension of $R^\times$ by the additive group $R$; for commutative $R$ the extension splits and, the group being abelian, the extension is in fact a direct product, which is the content of the theorem above.</p>
+<h3 id="the-norm-one-group">The Norm-One Group</h3>
+<p>The norm form $N(z) = z\bar z = x^2$ is multiplicative, $N(uv) = N(u)N(v)$, and its radical is $\mathfrak{m}$: it vanishes on $\mathfrak{m}$ and is nonzero off it. The <strong>norm-one group</strong> is</p>
+<p>$$
+H = \{z \in \mathbb{D}' : N(z) = 1\}.
+$$</p>
+<p><strong>Proposition.</strong> $H = \{x + y\varepsilon : x = \pm 1\}$ is the union of the two parallel lines of real part $\pm1$; its identity component is $H_0 = 1 + \mathfrak{m}$, the shear group.</p>
+<p><strong>Proof.</strong> $N(x + y\varepsilon) = x^2 = 1$ gives $x = \pm1$ and leaves $y$ free; the two lines meet the real axis at $1$ and $-1$, and the component through $1$ is the line $x = 1$, which is $1 + \mathfrak{m}$. $\square$</p>
+<p>The three norm-one sets of the three two-dimensional algebras are therefore a circle, a hyperbola and a pair of parallel lines. The degeneration is the visible form of $\varepsilon^2 = 0$: the quadratic form has lost its non-degenerate directions, and its level set is no longer a curve of curvature but a flat pair of lines.</p>
+<h2 id="multiplication-by-a-unit-as-a-shear">Multiplication by a Unit as a Shear</h2>
+<h3 id="the-regular-representation">The Regular Representation</h3>
+<p>By <em>Dual-Numbers Representations</em>, the regular representation of $\mathbb{D}'$ is left multiplication on itself,</p>
+<p>$$
+\rho_{\mathrm{reg}}(u) : \mathbb{D}' \to \mathbb{D}', \qquad \rho_{\mathrm{reg}}(u)(z) = uz,
+$$</p>
+<p>and it is the case $V = \mathbb{D}'$, $E = \rho_{\mathrm{reg}}(\varepsilon)$ of the general correspondence of that article, in which a representation of $\mathbb{D}'$ on an $R$-module $V$ is a square-zero endomorphism $E \in \operatorname{End}_R(V)$ acting by $a + b\varepsilon \mapsto a\,\mathrm{id}_V + bE$. In particular the $\mathbb{D}'$-linear endomorphisms of the module $\mathbb{D}'$ are exactly the maps $\rho_{\mathrm{reg}}(u)$, and they form an algebra isomorphic to $\mathbb{D}'$. In the basis $(1, \varepsilon)$ the regular representation of the unit $u = a + b\varepsilon$ has the matrix</p>
+<p>$$
+[u] = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> $\rho_{\mathrm{reg}}(a + b\varepsilon)(1) = a + b\varepsilon$ and $\rho_{\mathrm{reg}}(a+b\varepsilon)(\varepsilon) = a\varepsilon$, which are the columns of $[u]$. $\square$</p>
+<p>The matrix is a general element of the commutative subalgebra of $\mathbb{R}^{2\times2}$ generated by the identity and the nilpotent Jordan block $\begin{pmatrix}0&0\\1&0\end{pmatrix}$, which is the endomorphism ring of the regular representation computed in <em>Dual-Numbers Representations</em>.</p>
+<h3 id="shear-matrices">Shear Matrices</h3>
+<p>Write a unit as $u = a(1 + s\varepsilon)$ with $a \in \mathbb{R}^\times$ and $s = b/a$. Then</p>
+<p>$$
+[u] = a\Bigl(I + sE\Bigr), \qquad E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix},
+$$</p>
+<p>and $E$ is the matrix of $\rho_{\mathrm{reg}}(\varepsilon)$, the endomorphism sending $x + y\varepsilon$ to $x\varepsilon$.</p>
+<p><strong>Definition.</strong> The <strong>shear</strong> of parameter $s$ is the $\mathbb{D}'$-linear map</p>
+<p>$$
+S(s) = I + sE = \begin{pmatrix} 1 & 0 \\ s & 1 \end{pmatrix}, \qquad S(s)(x + y\varepsilon) = x + (y + sx)\varepsilon.
+$$</p>
+<p>It is an elementary shear matrix, or transvection: it fixes the line $\mathfrak{m}$ pointwise, acts as the identity on the quotient $\mathbb{D}'/\mathfrak{m} \cong \mathbb{R}$, and displaces every point by a vector parallel to $\mathfrak{m}$.</p>
+<p>Thus multiplication by the unit $u = a(1+s\varepsilon)$ is the composition of the scalar dilation $a$ with the shear $S(s)$: the group of units acts on the dual plane by dilations and shears, and the shear parameter is the coordinate of the quotient $(\mathbb{D}')^\times/\mathbb{R}^\times$.</p>
+<p><strong>Remark (the degenerate perpendicular).</strong> In terms of the Euclidean inner product, the displacement produced by $S(s)$ is</p>
+<p>$$
+S(s)(v) - v = s\,\langle v, 1\rangle\,\varepsilon, \qquad v = x + y\varepsilon,
+$$</p>
+<p>since $\langle v, 1\rangle = x$. The displacement is proportional to the component of $v$ along the real axis and points along the nilpotent axis, which is the Euclidean orthogonal complement of the real axis; so $S(s)$ is the elementary shear, or transvection, that displaces each point of the plane along the nilpotent direction by an amount proportional to its real part. In the notation of the other articles on the two-dimensional algebras this is the description of multiplication by a unit as the map $v \mapsto v + s\,v_\perp$, with $v_\perp = \langle v, 1\rangle\,\varepsilon = \operatorname{Re}(v)\,\varepsilon$: the "perpendicular" component is read off by the augmentation and displaced into the maximal ideal. The norm form registers none of this displacement. Its bilinear form is $B(z,w) = \operatorname{Re}(z)\operatorname{Re}(w)$, for which the nilpotent axis is the radical, $B$-orthogonal to the whole plane; the shear leaves $N$ invariant for that reason, and not because the displacement is small.</p>
+<h3 id="orbits-and-the-fixed-fibre">Orbits and the Fixed Fibre</h3>
+<p><strong>Theorem.</strong> The shear group acts on $\mathbb{D}'$ with the following orbits.</p>
+<ol>
+<li>The maximal ideal $\mathfrak{m} = \pi^{-1}(0)$ is fixed pointwise.</li>
+<li>Every fibre $\pi^{-1}(x)$ with $x \neq 0$ is a single orbit, and the action on it is free: the map $s \mapsto S(s)(x + y\varepsilon)$ is a bijection of $\mathbb{R}$ onto the fibre.</li>
+</ol>
+<p><strong>Proof.</strong> $S(s)(x + y\varepsilon) = x + (y + sx)\varepsilon$, so the real part $x$ is invariant and the infinitesimal part is translated by $sx$. If $x = 0$ the point is fixed for every $s$. If $x \neq 0$, the map $y \mapsto y + sx$ is a bijection of $\mathbb{R}$, so the orbit is the whole fibre and the stabiliser is trivial. $\square$</p>
+<p>The orbits of the shear group are therefore the fibres of the augmentation, and the fixed set is the fibre over the orig. This is the group-theoretic statement of the fact that the shear moves along the nilpotent direction: the invariant lines of the action are exactly the lines along which the integration theory, integrates.</p>
+<h2 id="the-one-parameter-group-of-shears">The One-Parameter Group of Shears</h2>
+<h3 id="the-shear-group-and-its-generator">The Shear Group and Its Generator</h3>
+<p><strong>Theorem.</strong> The set $G = \{S(s) : s \in \mathbb{R}\}$ is a one-parameter subgroup of $GL_2(\mathbb{R})$, and the map $s \mapsto S(s)$ is an isomorphism of groups</p>
+<p>$$
+(\mathbb{R}, +) \longrightarrow G, \qquad S(s)S(t) = S(s+t), \qquad S(0) = I, \qquad S(s)^{-1} = S(-s).
+$$</p>
+<p><strong>Proof.</strong> $S(s) = I + sE$ and $E^2 = 0$, so $(I+sE)(I+tE) = I + (s+t)E + stE^2 = I + (s+t)E$. $\square$</p>
+<p>The subgroup $G$ is exactly the image of $1 + \mathfrak{m}$ under the regular representation, and it is a subgroup of the group of $\mathbb{D}'$-linear automorphisms of the module $\mathbb{D}'$. It is <strong>not</strong> a subgroup of the algebra automorphism group: left multiplication by a unit is an algebra homomorphism only when the unit is the identity, since $(uz)(uw) = u^2 zw$ equals $u(zw)$ only when $u^2 = u$, which for a unit forces $u = 1$. The shears are module symmetries, not algebra symmetries.</p>
+<h3 id="the-exponential-map">The Exponential Map</h3>
+<p>The generator of the one-parameter group is</p>
+<p>$$
+E = \frac{d}{ds}\Big|_{s=0} S(s) = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} = \rho_{\mathrm{reg}}(\varepsilon).
+$$</p>
+<p><strong>Theorem (exponential).</strong> The exponential map of the shear group is the polynomial map</p>
+<p>$$
+\exp : \mathbb{R}\varepsilon = \mathfrak{m} \longrightarrow G, \qquad \exp(s\varepsilon) = 1 + s\varepsilon,
+$$</p>
+<p>which is a group isomorphism and a homeomorphism onto $G$; its inverse is the dual logarithm $\log(1 + s\varepsilon) = s\varepsilon$.</p>
+<p><strong>Proof.</strong> The exponential series $\sum_k (sE)^k/k!$ terminates at $k = 1$ because $E^2 = 0$, so $\exp(sE) = I + sE$. Under the identification of the module with the algebra this is $\exp(s\varepsilon) = 1 + s\varepsilon$. The logarithm is its inverse, and the identities $\exp(s\varepsilon)\exp(t\varepsilon) = \exp((s+t)\varepsilon)$ and $\log(uv) = \log u + \log v$ are the group law. $\square$</p>
+<p>So the exponential of the shear generator is algebraic, its image is the whole shear group, and it is injective. This is the sharpest formal contrast with the elliptic case: there the exponential of the rotation generator is periodic, its kernel is $2\pi\mathbb{Z}$, and the group is compact; here the exponential is a homeomorphism from the line onto the group, and the group is a non-compact line.</p>
+<h3 id="the-projective-action-and-the-translation-coordinate">The Projective Action and the Translation Coordinate</h3>
+<p>On the open chart $\{x \neq 0\}$ of the dual plane, use the affine coordinate</p>
+<p>$$
+t = \frac{y}{x}, \qquad x \neq 0,
+$$</p>
+<p>which is the coordinate of the line through the origin of slope $t$, i.e. the coordinate of the projective line at points where the first homogeneous coordinate is nonzero. Then</p>
+<p>$$
+S(s)(x + y\varepsilon) = x + (y+sx)\varepsilon \quad\Longrightarrow\quad t \longmapsto \frac{y + sx}{x} = t + s.
+$$</p>
+<p>So on the projective line the shear acts by a <strong>translation</strong> of the affine coordinate. A transformation of the projective line with a single fixed point of multiplicity two is called parabolic; the fixed point here is the class of $\varepsilon$, i.e. the fibre over the origin, and the shear group is exactly the one-parameter unipotent subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes that point — the subgroup conjugate to the translations. This is the Lie-theoretic content of the word "parabolic" in the title.</p>
+<h2 id="the-parabolic-angle">The Parabolic Angle</h2>
+<h3 id="additivity-of-the-parameter">Additivity of the Parameter</h3>
+<p>The group law $S(s)S(t) = S(s+t)$ says that the parameter $s$ is additive: the composition of two shears is the shear whose parameter is the sum. The parameter is called the <strong>parabolic angle</strong>, and the dual logarithm identifies it with the additive line,</p>
+<p>$$
+\log : 1 + \mathfrak{m} \longrightarrow (\mathfrak{m}, +), \qquad \log(1 + s\varepsilon) = s\varepsilon.
+$$</p>
+<p>Two facts about the parabolic angle distinguish it from the elliptic angle, and both are shared with the hyperbolic rapidity. First, it is defined on the whole line and is unbounded, with no period: the shear group is isomorphic to $\mathbb{R}$. Second, the dual logarithm is a homeomorphism onto the whole shear group, because the exponential is injective; the angle is a globally defined coordinate, not a coordinate modulo a period and not restricted to a branch. What separates the parabolic case from the hyperbolic one is therefore not the angle but the group: the generator of the shears is nilpotent and the shear group is unipotent, whereas the generator $j$ of the hyperbolic rotations is semisimple, $j^2 = +1$, and the group of hyperbolic rotations has two components.</p>
+<h3 id="the-group-of-units-modulo-scaling">The Group of Units Modulo Scaling</h3>
+<p><strong>Theorem.</strong> The quotient of the unit group by the subgroup of nonzero scalars is the shear group, and it is identified with the additive line by the logarithm:</p>
+<p>$$
+(\mathbb{D}')^\times / \mathbb{R}^\times \cong 1 + \mathfrak{m} \cong (\mathbb{R}, +), \qquad u = a(1+s\varepsilon) \longmapsto 1 + s\varepsilon \longmapsto s.
+$$</p>
+<p><strong>Proof.</strong> The subgroup of scalars is $\mathbb{R}^\times = \{a + 0\varepsilon : a \neq 0\}$, and $a(1+s\varepsilon) \equiv 1 + s\varepsilon \pmod{\mathbb{R}^\times}$. The map $u \mapsto a^{-1}u$ is a homomorphism onto $1+\mathfrak{m}$ with kernel $\mathbb{R}^\times$, and $1+\mathfrak{m} \cong (\mathbb{R},+)$ by the group law of the shear group. $\square$</p>
+<p>So every unit is a scalar multiple of a unique shear, and the two factors of the direct product $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$ are the scaling part and the parabolic angle. The quotient by scaling is the additive line of angles.</p>
+<h3 id="the-three-angles">The Three Angles</h3>
+<p>The three two-dimensional algebras have three angle parameters; in each case the angle is the coordinate on the connected component of the unit group modulo scaling, and in each case the composition is addition of the coordinate.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Norm-one group</th>
+<th>Angle</th>
+<th>Addition law</th>
+<th>Group topology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$, $i^2 = -1$</td>
+<td>circle $U(1)$</td>
+<td>elliptic angle $\theta$</td>
+<td>addition mod $2\pi$</td>
+<td>compact</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $j^2 = +1$</td>
+<td>hyperbola $x^2-y^2=1$</td>
+<td>hyperbolic angle (rapidity) $t$</td>
+<td>additive on $\mathbb{R}$</td>
+<td>non-compact</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$, $\varepsilon^2 = 0$</td>
+<td>lines $x = \pm1$</td>
+<td>parabolic angle $s$</td>
+<td>additive on $\mathbb{R}$</td>
+<td>non-compact, unipotent</td>
+</tr>
+</tbody>
+</table></div>
+<p>In the elliptic and hyperbolic cases the tangent of the angle obeys</p>
+<p>$$
+\tan(\alpha+\beta) = \frac{\tan\alpha + \tan\beta}{1 - \tan\alpha\tan\beta}, \qquad \tanh(t+u) = \frac{\tanh t + \tanh u}{1 + \tanh t\tanh u},
+$$</p>
+<p>and it is the product term in the denominator that the degeneracy removes: the parabolic coordinate is the parabolic angle $s$ itself, whose law is bare addition. The composition of two parabolic rotations is the parabolic rotation whose angle is the sum,</p>
+<p>$$
+s_1 \oplus s_2 = s_1 + s_2,
+$$</p>
+<p>the parabolic case of the angle-addition laws of the elliptic and hyperbolic cases; this additive composition law for the coordinate is sometimes called Galilean velocity addition. The name records the degenerate character of the law — a translation of the coordinate rather than a Möbius combination of it — and the group-theoretic content is the statement that the shear group is isomorphic to the additive line.</p>
+<h2 id="the-lie-algebra-of-the-shear-group">The Lie Algebra of the Shear Group</h2>
+<h3 id="the-generator-as-the-regular-representation-of-math210">The Generator as the Regular Representation of $\varepsilon$</h3>
+<p>The Lie algebra of the shear group is the one-dimensional real Lie algebra</p>
+<p>$$
+\mathfrak{g} = \mathbb{R}E \subset \mathfrak{gl}_2(\mathbb{R}), \qquad E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} = \rho_{\mathrm{reg}}(\varepsilon).
+$$</p>
+<p>It is abelian, $[E,E] = 0$, and the generator is nilpotent of index two: $E \neq 0$ and $E^2 = 0$. So $\mathfrak{g}$ is a nilpotent Lie algebra of index two and $G = \exp(\mathfrak{g})$ is a <strong>unipotent</strong> group: every element is unipotent, of the form identity plus a nilpotent endomorphism, and the only eigenvalue of every element is $1$.</p>
+<p>Under the identification of the regular representation with the algebra, the Lie algebra of the shear group is the line $\mathbb{R}\varepsilon = \mathfrak{m}$ inside $\mathbb{D}'$, with the trivial bracket; the generator is $\varepsilon$ itself. This is the same square-zero endomorphism that generates the fibre direction, and its nilpotence is the same $\varepsilon^2 = 0$.</p>
+<h3 id="derivations-and-automorphisms">Derivations and Automorphisms</h3>
+<p>The shear generator must be distinguished from the derivations of the algebra, which generate a different one-parameter group.</p>
+<p><strong>Proposition.</strong> The derivations of $\mathbb{D}'$ are the multiples of the single derivation</p>
+<p>$$
+\partial_\varepsilon(1) = 0, \qquad \partial_\varepsilon(\varepsilon) = \varepsilon, \qquad \partial_\varepsilon(a + b\varepsilon) = b\varepsilon,
+$$</p>
+<p>so $\operatorname{Der}(\mathbb{D}')$ is one-dimensional over $\mathbb{R}$, spanned by $\partial_\varepsilon$. This derivation is idempotent, $\partial_\varepsilon^2 = \partial_\varepsilon$, and it is not nilpotent.</p>
+<p><strong>Proof.</strong> Let $\delta$ be a derivation. Then $\delta(1) = \delta(1\cdot 1) = 2\delta(1)$, so $\delta(1) = 0$, and $\delta$ is determined by $\delta(\varepsilon) = a + b\varepsilon$. From $\varepsilon^2 = 0$ and the Leibniz rule, $0 = \delta(\varepsilon^2) = 2\varepsilon\,\delta(\varepsilon) = 2a\varepsilon$, so $a = 0$ and $\delta(\varepsilon) \in \mathbb{R}\varepsilon$. Hence $\delta = c\,\partial_\varepsilon$ with $c$ the coefficient of $\varepsilon$ in $\delta(\varepsilon)$, and $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$ is one-dimensional. This is the derivation statement of <em>Dual-Numbers Algebra</em>, and it settles the general form; finally $\partial_\varepsilon(b\varepsilon) = b\varepsilon$, so $\partial_\varepsilon^2 = \partial_\varepsilon$. $\square$</p>
+<p><strong>Proposition.</strong> Every unital algebra endomorphism of $\mathbb{D}'$ is $\varphi_c(\varepsilon) = c\varepsilon$ for some $c \in \mathbb{R}^\times$, and $\varphi_c$ is an automorphism. Hence $\operatorname{Aut}(\mathbb{D}') \cong \mathbb{R}^\times$, with identity component $\{c > 0\} \cong \mathbb{R}_{>0}$ and Lie algebra $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$. The exponential of the derivation is $\exp(t\partial_\varepsilon)(\varepsilon) = e^t\varepsilon$.</p>
+<p><strong>Proof.</strong> A unital endomorphism is determined by $\varphi(\varepsilon) = a + b\varepsilon$ and must satisfy $\varphi(\varepsilon)^2 = a^2 + 2ab\varepsilon = 0$, so $a = 0$; then $\varphi(x + y\varepsilon) = x + yb\varepsilon$, which is bijective exactly when $b \neq 0$. Writing $b = c$ gives the stated form. For the last statement, $\partial_\varepsilon^k(\varepsilon) = \varepsilon$ for every $k \geq 1$, so the exponential series of the derivation gives $\exp(t\partial_\varepsilon)(\varepsilon) = \sum_{k \geq 0} t^k \varepsilon/k! = e^t\varepsilon$; the exponential of a derivation of a finite-dimensional real algebra is an automorphism. $\square$</p>
+<p>The sharp contrast is now visible. The derivations fix the real axis pointwise and scale the maximal ideal by $\varepsilon \mapsto e^t\varepsilon$, generating the automorphism group $\mathbb{R}^\times$; the shears act on $\mathfrak{m}$ by the identity, fix it pointwise, and are module maps that are not algebra maps. Their generators are the idempotent $\partial_\varepsilon$ and the nilpotent $E$ respectively. The shear group is therefore <strong>not</strong> the exponential of the derivation algebra; it is the exponential of the square-zero direction of the algebra itself.</p>
+<h3 id="the-lie-algebra-of-the-unit-group">The Lie Algebra of the Unit Group</h3>
+<p>The unit group $(\mathbb{D}')^\times$ is a two-dimensional abelian Lie group, and its Lie algebra at the identity is $\mathbb{D}'$ itself, with the zero bracket, by <em>Dual-Numbers Algebra</em>: the commutator on $\mathbb{D}'$ vanishes identically. In the direct-product decomposition $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$ the Lie algebra decomposes as $\mathbb{R} \oplus \mathbb{R}$, with the first factor the infinitesimal dilations and the second factor the infinitesimal shears. The shear group is the one-parameter subgroup generated by the element $\varepsilon \in \mathfrak{m}$, and its Lie algebra is the line $\mathfrak{g} = \mathbb{R}\varepsilon \subset \mathbb{D}'$.</p>
+<h2 id="the-degeneration-at-math275">The Degeneration at $\varepsilon^2 = 0$</h2>
+<h3 id="the-degenerate-norm-form-and-its-orthogonal-group">The Degenerate Norm Form and Its Orthogonal Group</h3>
+<p>The shear is an "orthogonal" transformation of the degenerate norm form, in the following sense.</p>
+<p><strong>Proposition.</strong> A linear map $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $N(Az) = N(z)$ for all $z$ if and only if $a = \pm 1$ and $b = 0$; the coefficients $c$ and $d$ are then free. Such an $A$ is invertible, and hence an isometry of the form, exactly when $d \neq 0$.</p>
+<p><strong>Proof.</strong> $N(A(x+y\varepsilon)) = (ax + by)^2$ must equal $x^2$ for all $x, y$; comparing coefficients of $x^2$, $xy$ and $y^2$ gives $a^2 = 1$, $ab = 0$, $b^2 = 0$, hence $a = \pm1$ and $b = 0$. The determinant is then $\det A = ad = \pm d$, so $A$ is invertible exactly when $d \neq 0$. $\square$</p>
+<p>The group of isometries of the form is therefore $A = \begin{pmatrix} \pm 1 & 0 \\ c & d \end{pmatrix}$ with $d \neq 0$, and its identity component is $\left\{\begin{pmatrix} 1 & 0 \\ c & d \end{pmatrix} : c \in \mathbb{R},\ d > 0\right\}$, of dimension two; the shear group $S(s) = \begin{pmatrix}1&0\\ s&1\end{pmatrix}$ is its unipotent subgroup with $d = 1$.</p>
+<p>So the stabiliser of the form is larger than in the non-degenerate cases, because the radical $\mathfrak{m}$ may be rescaled and sheared without changing $N$: its identity component is two-dimensional, whereas the identity components of the isometry groups in the non-degenerate cases are one-dimensional. The Euclidean orthogonal group $O(2)$ is compact; the group $O(1,1)$ of the split complex form is non-compact with a one-dimensional identity component; the stabiliser here is non-compact and two-dimensional, and the shear group is the distinguished unipotent one-parameter subgroup that preserves the flag $0 \subset \mathfrak{m} \subset \mathbb{D}'$ and acts trivially on both the submodule $\mathfrak{m}$ and the quotient.</p>
+<h3 id="the-norm-one-set">The Norm-One Set</h3>
+<p>The norm-one set $N(z) = 1$ is the pair of parallel lines $x = \pm1$. The identity component of the group of units, $\{a > 0\}$, meets this set in the single line $x = 1$, which is the shear group $1 + \mathfrak{m}$. So the shear group is exactly the connected "rotation group" of the degenerate form, and the passage from the circle to the hyperbola to the pair of parallel lines is the passage from $U(1)$ to $SO(1,1)_0$ to $G$.</p>
+<h3 id="the-contraction-from-the-elliptic-and-hyperbolic-cases">The Contraction from the Elliptic and Hyperbolic Cases</h3>
+<p>The degeneracy can be seen as a limit. Consider the family of quadratic forms $N_\sigma(x + y\varepsilon) = x^2 + \sigma y^2$ on the plane, and the generator</p>
+<p>$$
+J_\sigma = \begin{pmatrix} 0 & -\sigma \\ 1 & 0 \end{pmatrix}, \qquad J_\sigma^2 = -\sigma I.
+$$</p>
+<p>For $\sigma > 0$ the form is positive definite and $\exp(tJ_\sigma)$ is the elliptic rotation of angle $t\sqrt\sigma$ in the coordinates adapted to the form; for $\sigma < 0$ the form is indefinite and $\exp(tJ_\sigma)$ is the hyperbolic rotation of rapidity $t\sqrt{-\sigma}$ in those coordinates; for $\sigma = 0$ one has $J_0 = E$ and $\exp(tJ_0) = I + tE = S(t)$.</p>
+<p><strong>Theorem (contraction).</strong> For every fixed $t$, $\exp(tJ_\sigma) \to S(t)$ as $\sigma \to 0$.</p>
+<p><strong>Proof.</strong> For $\sigma > 0$,</p>
+<p>$$
+\exp(tJ_\sigma) = \cos(t\sqrt\sigma)\,I + \frac{\sin(t\sqrt\sigma)}{\sqrt\sigma}\,J_\sigma = \begin{pmatrix} \cos(t\sqrt\sigma) & -\sqrt\sigma\,\sin(t\sqrt\sigma) \\ \dfrac{\sin(t\sqrt\sigma)}{\sqrt\sigma} & \cos(t\sqrt\sigma) \end{pmatrix},
+$$</p>
+<p>and as $\sigma \to 0$ the entries tend to $1, 0, t, 1$; the case $\sigma < 0$ is the same computation with $\cosh$ and $\sinh$. $\square$</p>
+<p>So the shear group is the common contraction of the elliptic and hyperbolic rotation groups, and the mechanism of the contraction is exactly the vanishing of the square of the generator: $J_\sigma^2 = -\sigma I \to 0$, so in the limit the generator becomes nilpotent and the exponential becomes a polynomial. This is a group contraction in the sense of Inönü and Wigner: the one-parameter groups degenerate, and the limit group is the additive line acting by unipotent shears.</p>
+<h3 id="no-compact-rotation-group-and-no-periodic-orbits">No Compact Rotation Group and No Periodic Orbits</h3>
+<p>Two consequences make the parabolic case the degenerate end of the trichotomy.</p>
+<ul>
+<li><strong>No compact rotation group.</strong> The shear group $G \cong \mathbb{R}$ is non-compact and has no nontrivial compact subgroup; the only compact subgroup of the full unit group $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$ is the central $\{\pm 1\}$. There is no analogue of the circle group $U(1)$.</li>
+<li><strong>No periodic orbits.</strong> The orbit of a point in a fibre $\pi^{-1}(x)$ with $x \neq 0$ is the whole fibre, a non-compact line on which the shear acts by translation, so no orbit other than a fixed point is periodic; in the elliptic case every orbit is a circle and the action is periodic. The shear also does not preserve the Euclidean metric: writing $v = x + y\varepsilon$ one has $S(s)v = x + (y+sx)\varepsilon$, and $x^2+y^2$ is preserved for every $v$ only when $s = 0$. So $S(s)$ is an isometry of the degenerate form $N$ but not of the Euclidean metric of the plane. A compact subgroup of $GL_2(\mathbb{R})$ preserves some positive-definite form, obtained by averaging any form over the group; $G$ is non-compact, so it preserves none, and the computation above is the instance of that failure for the Euclidean form itself.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The <strong>group of units</strong> of $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathfrak{m}$, with $(a+b\varepsilon)^{-1} = a^{-1} - a^{-2}b\,\varepsilon$. For commutative $R$ it is the direct product $(\mathbb{D}'_R)^\times \cong R^\times \times (R,+)$ via $a + as\varepsilon \leftrightarrow (a,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm form $N(z) = x^2$ is degenerate with radical $\mathfrak{m}$, and its norm-one set is the pair of parallel lines $x = \pm1$, whose identity component is the shear group $1 + \mathfrak{m}$.</p>
+<p>Multiplication by a unit is a <strong>dilation composed with a shear</strong>: in the basis $(1, \varepsilon)$ the regular representation is $[a + b\varepsilon] = a(I + (b/a)E)$ with $E = \rho_{\mathrm{reg}}(\varepsilon) = \begin{pmatrix}0&0\\1&0\end{pmatrix}$ and $E^2 = 0$. The <strong>shear</strong> $S(s) = I + sE$ acts by $x + y\varepsilon \mapsto x + (y+sx)\varepsilon$; it fixes $\mathfrak{m}$ pointwise, acts as the identity on the quotient, and its orbits are the fibres of the augmentation, with the fibre over the origin fixed.</p>
+<p>The shears form a <strong>one-parameter group</strong> $G = \{S(s)\} \cong (\mathbb{R},+)$ with $S(s)S(t) = S(s+t)$ and generator $E$. The <strong>exponential</strong> is the polynomial map $\exp(s\varepsilon) = 1 + s\varepsilon$, a group isomorphism and homeomorphism onto $G$, inverse to the dual logarithm; on the projective chart $\{x \neq 0\}$ with coordinate $t = y/x$ the shear is the translation $t \mapsto t+s$, so $G$ is the unipotent one-parameter subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes the class of $\varepsilon$, a transformation with a double fixed point. The parameter is the <strong>parabolic angle</strong>; it is additive, globally defined and without period, and $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1+\mathfrak{m} \cong (\mathbb{R},+)$.</p>
+<p>The <strong>Lie algebra</strong> of the shear group is the line $\mathfrak{g} = \mathbb{R}E = \mathbb{R}\varepsilon$ inside $\mathbb{D}'$, abelian, with nilpotent generator $E^2 = 0$; the group is unipotent and every element has the single eigenvalue $1$. The <strong>derivations</strong> $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$ are spanned by the idempotent $\partial_\varepsilon(\varepsilon) = \varepsilon$, which generates the automorphism group $\operatorname{Aut}(\mathbb{D}') \cong \mathbb{R}^\times$ by $\varepsilon \mapsto e^t\varepsilon$; the shear group is not the exponential of the derivations but of the square-zero direction of the algebra. Finally, the <strong>degeneration</strong> at $\varepsilon^2 = 0$ is visible in the contraction $J_\sigma^2 = -\sigma I \to 0$, whose limit sends the elliptic and hyperbolic rotation groups to the shear group, in the collapse of the norm-one set from a circle and a hyperbola to a pair of parallel lines, and in the absence of any compact rotation group or periodic orbit.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>Dual number algebra, $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra, unit $j$, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$z = x + y\varepsilon$</td>
+<td>General dual number, $x = \operatorname{Re} z$, $y = \operatorname{Inf} z$</td>
+</tr>
+<tr>
+<td>$N(z) = z\bar z = x^2$</td>
+<td>Degenerate norm form, radical $\mathfrak{m}$</td>
+</tr>
+<tr>
+<td>$H = \{z : N(z) = 1\}$</td>
+<td>Norm-one group, lines $x = \pm1$; $H_0 = 1+\mathfrak{m}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{m} = \varepsilon\mathbb{R}$</td>
+<td>Maximal ideal, $\mathfrak{m}^2 = 0$</td>
+</tr>
+<tr>
+<td>$\pi(x+y\varepsilon) = x$</td>
+<td>Augmentation, kernel $\mathfrak{m}$</td>
+</tr>
+<tr>
+<td>$(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathfrak{m}$</td>
+<td>Group of units</td>
+</tr>
+<tr>
+<td>$1 + \mathfrak{m}$</td>
+<td>Shear group, units of real part $1$</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{reg}}(u)(z) = uz$</td>
+<td>Regular representation</td>
+</tr>
+<tr>
+<td>$[u] = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix}$</td>
+<td>Matrix of $\rho_{\mathrm{reg}}(a + b\varepsilon)$</td>
+</tr>
+<tr>
+<td>$E = \rho_{\mathrm{reg}}(\varepsilon) = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$</td>
+<td>Nilpotent generator, $E^2 = 0$</td>
+</tr>
+<tr>
+<td>$S(s) = I + sE = \begin{pmatrix} 1 & 0 \\ s & 1 \end{pmatrix}$</td>
+<td>Shear of parameter $s$</td>
+</tr>
+<tr>
+<td>$G = \{S(s)\} \cong (\mathbb{R},+)$</td>
+<td>One-parameter shear group</td>
+</tr>
+<tr>
+<td>$\exp(s\varepsilon) = 1 + s\varepsilon$</td>
+<td>Exponential of the shear generator</td>
+</tr>
+<tr>
+<td>$t = y/x$</td>
+<td>Translation coordinate on $\{x \neq 0\}$</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>Parabolic angle</td>
+</tr>
+<tr>
+<td>$\partial_\varepsilon(a + b\varepsilon) = b\varepsilon$, matrix $\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$</td>
+<td>Generator of $\operatorname{Der}(\mathbb{D}')$, idempotent $\partial_\varepsilon^2 = \partial_\varepsilon$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathbb{D}') \cong \mathbb{R}^\times$</td>
+<td>Unital automorphisms, $\varepsilon \mapsto c\varepsilon$</td>
+</tr>
+<tr>
+<td>$J_\sigma = \begin{pmatrix} 0 & -\sigma \\ 1 & 0 \end{pmatrix}$, $J_\sigma^2 = -\sigma I$</td>
+<td>Contraction family, $J_0 = E$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Eduard Study, <em>Geometrie der Dynamen</em> (Teubner, 1903), for the dual numbers as an infinitesimal extension and for their linear geometry.</li>
+<li>Wilhelm Blaschke, <em>Vorlesungen über Differentialgeometrie I</em> (Springer, 1930), for the classical use of dual numbers in the geometry of ruled surfaces.</li>
+<li>Sophus Lie and Friedrich Engel, <em>Theorie der Transformationsgruppen</em> (Teubner, 1888–1893), for one-parameter transformation groups and their infinitesimal generators.</li>
+<li>Erdal Inönü and Eugene P. Wigner, "On the contraction of groups and their representations", <em>Proceedings of the National Academy of Sciences of the USA</em> 39 (1953), for the contraction of a one-parameter group to a unipotent limit.</li>
+<li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$</em> (Imperial College Press, 2012), for the elliptic–parabolic–hyperbolic trichotomy of one-parameter subgroups.</li>
+<li>Richard W. Sharpe, <em>Differential Geometry: Cartan's Generalization of Klein's Erlangen Program</em> (Springer, 1997), for parabolic subgroups, flags and the stabiliser of a degenerate form.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Grundlehren der mathematischen Wissenschaften 294, Springer, 1991), for degenerate and non-degenerate quadratic forms and their isometry groups.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the classification of forms by their radicals.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Graduate Texts in Mathematics 222, Springer, 2nd ed. 2015), for unipotent groups, the exponential map and the Lie algebra of a matrix group.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of the two-dimensional real algebras and their groups of units.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

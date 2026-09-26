@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fields — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fields"><strong>Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>field</strong> is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. Fields appear in <em>Rings: A General Introduction</em> as the strongest of the classes of rings treated there; this article develops the subject in its own right, from the axioms through field extensions, splitting fields, algebraic closures, and finite fields, to the classical straightedge-and-compass impossibility theorems.</p>
+<p>We assume familiarity with rings, ideals, quotient rings, and vector spaces. Two facts are used constantly: every field is an integral domain, so cancellation holds; and $F[x]$ over a field $F$ is a Euclidean domain, hence a principal ideal domain, which makes the quotient construction $F[x]/(f)$ and the testing of irreducibility effective. Fields are the natural base for linear algebra, because every module over a field is free, so every vector space has a basis and every algebra has a well-defined dimension.</p>
+<hr />
+<h1 id="part-i-fields-and-their-basic-theory">Part I: Fields and Their Basic Theory</h1>
+<h2 id="1-definition-of-a-field">1. Definition of a Field</h2>
+<p>A <strong>field</strong> is a commutative ring $F$ with $1 \neq 0$ in which every nonzero element is a unit. Equivalently, $F$ is a set with two operations such that $(F,+)$ is an abelian group, $(F \setminus \{0\}, \cdot)$ is an abelian group, and multiplication distributes over addition:
+$$
+a(b+c) = ab + ac
+$$
+for all $a, b, c \in F$. The multiplicative group $F \setminus \{0\}$ is written $F^\times$. The condition $1 \neq 0$ excludes the zero ring, in which "every nonzero element is a unit" holds vacuously.</p>
+<p><strong>Criterion in terms of ideals.</strong> A commutative ring $R$ with $1 \neq 0$ is a field if and only if its only ideals are $0$ and $R$: if $a \neq 0$ and $(a) = R$ then $ab = 1$, while a non-unit generates a proper nonzero ideal. Since $I$ is maximal in $R$ exactly when $R/I$ is a field (<em>Rings</em>, §6), this gives the standard construction of fields as quotients. For $R = F$ a field, $F[x]$ is a principal ideal domain, so
+$$
+F[x]/(f) \text{ is a field} \iff f \text{ is irreducible over } F.
+$$
+This one mechanism produces every concrete extension in Part II and every explicit finite field in Part III.</p>
+<h2 id="2-elementary-properties">2. Elementary Properties</h2>
+<p>Let $F$ be a field.</p>
+<p><strong>(a)</strong> No zero divisors: if $ab = 0$ and $a \neq 0$ then $b = a^{-1}ab = 0$. Hence $F$ is an integral domain.</p>
+<p><strong>(b)</strong> Cancellation: if $ab = ac$ and $a \neq 0$, then $b = c$.</p>
+<p><strong>(c)</strong> $F^\times = F \setminus \{0\}$ is an abelian group.</p>
+<p><strong>(d)</strong> The only ideals of $F$ are $0$ and $F$; hence every unital ring homomorphism from $F$ to a nonzero ring is injective, its kernel being an ideal and not all of $F$.</p>
+<p><strong>(e)</strong> Every finite integral domain is a field: for $a \neq 0$ the map $x \mapsto ax$ is injective, hence surjective, so $ax = 1$ for some $x$.</p>
+<p><strong>(f)</strong> Every module over $F$ is free, so every vector space has a basis and dimension is well defined.</p>
+<h2 id="3-characteristic-and-the-prime-subfield">3. Characteristic and the Prime Subfield</h2>
+<p>The <strong>characteristic</strong> of a unital ring $R$ is the least $n \geq 1$ with $n \cdot 1 = 0$, or $0$ if none exists (<em>Rings</em>, §1); for a field it is the kernel $n\mathbb{Z}$ of the unique unital homomorphism $\chi : \mathbb{Z} \to F$.</p>
+<p><strong>Theorem.</strong> The characteristic of a field is $0$ or a prime $p$.</p>
+<p><strong>Proof.</strong> If $n = ab$ with $a, b > 1$ then $(a \cdot 1)(b \cdot 1) = n \cdot 1 = 0$, so one factor is $0$, contradicting the minimality of $n$. $\square$</p>
+<p>In characteristic $p$, each binomial coefficient $\binom{p}{k}$ with $0 < k < p$ is divisible by $p$, so the <strong>freshman's dream</strong> holds: $(x+y)^p = x^p + y^p$ and $(xy)^p = x^p y^p$, and likewise for $p^n$. Hence the <strong>Frobenius map</strong> $\varphi(x) = x^p$ is an injective field endomorphism, surjective exactly when every element of $F$ is a $p$-th power; a field with this property is <strong>perfect</strong> in characteristic $p$.</p>
+<p><strong>Theorem.</strong> The <strong>prime subfield</strong> of $F$, the smallest subfield of $F$ (equivalently the subfield generated by $1$), is $\mathbb{Q}$ in characteristic $0$ and $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ in characteristic $p$.</p>
+<p>Thus every field is an extension of a prime field and a vector space over it, and a field homomorphism preserves the characteristic and carries the prime subfield isomorphically onto the prime subfield.</p>
+<h2 id="4-examples-of-fields">4. Examples of Fields</h2>
+<p><strong>(a)</strong> $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, of characteristic $0$; here $[\mathbb{C}:\mathbb{R}] = 2$, $\mathbb{C} = \mathbb{R}(i) \cong \mathbb{R}[x]/(x^2+1)$, and $\mathbb{C}$ is algebraically closed.</p>
+<p><strong>(b)</strong> $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ for prime $p$, with $p$ elements and characteristic $p$.</p>
+<p><strong>(c)</strong> $\mathbb{F}_q$ for every prime power $q = p^n$, unique up to isomorphism (Part III).</p>
+<p><strong>(d)</strong> Quadratic fields $\mathbb{Q}(\sqrt{d}) = \{a + b\sqrt{d}\}$ for squarefree $d \neq 1$, of degree $2$ over $\mathbb{Q}$; for $d = -1$, the Gaussian rationals $\mathbb{Q}(i)$. Finite extensions of $\mathbb{Q}$ are <strong>number fields</strong>.</p>
+<p><strong>(e)</strong> The cyclotomic fields $\mathbb{Q}(\zeta_n)$ (§17), the rational function field $F(x) = \operatorname{Frac}(F[x])$ (§19), the formal Laurent series field $F((t)) = \operatorname{Frac}(F[[t]])$, and the $p$-adic field $\mathbb{Q}_p$ (§19).</p>
+<p><strong>(f)</strong> For any integral domain $R$, its <strong>field of fractions</strong> $\operatorname{Frac}(R)$ is the smallest field containing $R$; thus $\operatorname{Frac}(\mathbb{Z}) = \mathbb{Q}$ and $\operatorname{Frac}(\mathbb{F}_p[x]) = \mathbb{F}_p(x)$.</p>
+<p><strong>(g)</strong> The algebraic numbers $\overline{\mathbb{Q}}$, the real algebraic numbers, and the constructible numbers; the first is algebraically closed, the second is real closed (§18), and the third is not algebraically closed.</p>
+<h2 id="5-non-examples">5. Non-Examples</h2>
+<p><strong>(a)</strong> $\mathbb{Z}$ is an integral domain but not a field: $2$ is not a unit.</p>
+<p><strong>(b)</strong> For composite $n$, $\mathbb{Z}/n\mathbb{Z}$ has zero divisors, for instance $2 \cdot 3 = 0$ in $\mathbb{Z}/6\mathbb{Z}$; it is a field exactly when $n$ is prime.</p>
+<p><strong>(c)</strong> $F[x]$ is never a field, since $\deg(xg) \neq 0$ for every nonzero $g \in F[x]$; likewise $\mathbb{Z}[x]$ is not a field.</p>
+<p><strong>(d)</strong> For $n \geq 2$, the matrix ring $M_n(F)$ is neither commutative nor free of zero divisors.</p>
+<p><strong>(e)</strong> A division ring that is not commutative is not a field. By Wedderburn's little theorem every finite division ring is a field, so every <strong>skew field</strong> is infinite (<em>Rings</em>, §13).</p>
+<p><strong>(f)</strong> The split-complex numbers $\mathbb{D}$ are commutative but have zero divisors.</p>
+<p><strong>(g)</strong> If $f$ is reducible, then $F[x]/(f)$ is not a field: $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$, and $\mathbb{F}_2[x]/(x^2+1)$ fails since $x^2+1 = (x+1)^2$ over $\mathbb{F}_2$.</p>
+<p><strong>(h)</strong> The ring of integers $\mathcal{O}_K$ of a number field $K$ has field of fractions $K$ but is not a field unless $K = \mathbb{Q}$; for example $\mathbb{Z}[\sqrt2]$, in which $2$ is not a unit.</p>
+<hr />
+<h1 id="part-ii-field-extensions">Part II: Field Extensions</h1>
+<h2 id="6-extensions-and-degree">6. Extensions and Degree</h2>
+<p>If $F \subseteq K$ are fields, then $K/F$ is a <strong>field extension</strong>. The field $K$ is a vector space over $F$, and the <strong>degree</strong> is $[K:F] = \dim_F K$; the extension is <strong>finite</strong> if this degree is finite. Examples: $[\mathbb{C}:\mathbb{R}] = 2$ with basis $\{1,i\}$; $[\mathbb{Q}(\sqrt2):\mathbb{Q}] = 2$; $[\mathbb{F}_q:\mathbb{F}_p] = n$ when $q = p^n$; and $[\mathbb{R}:\mathbb{Q}]$ is infinite, since $\mathbb{R}$ is uncountable while a finite-dimensional $\mathbb{Q}$-vector space is countable.</p>
+<p>For $\alpha \in K$, the <strong>simple extension</strong> $F(\alpha)$ is the smallest subfield containing $F$ and $\alpha$, and $F[\alpha] = \{p(\alpha) : p \in F[x]\}$ is the smallest such subring; $F(\alpha_1, \ldots, \alpha_n)$ is defined similarly, and an extension is <strong>simple</strong> if it equals $F(\alpha)$ for one $\alpha$.</p>
+<h2 id="7-algebraic-and-transcendental-elements">7. Algebraic and Transcendental Elements</h2>
+<p>Let $K/F$ be an extension and $\alpha \in K$. Then $\alpha$ is <strong>algebraic over $F$</strong> if $p(\alpha) = 0$ for some nonzero $p \in F[x]$, and <strong>transcendental</strong> otherwise. The extension is <strong>algebraic</strong> if every element of $K$ is algebraic over $F$.</p>
+<p><strong>Theorem.</strong> For $\alpha \in K$ the following are equivalent: (a) $\alpha$ is algebraic over $F$; (b) $F[\alpha] = F(\alpha)$; (c) $[F(\alpha):F] < \infty$.</p>
+<p><strong>Proof.</strong> Evaluation $\varepsilon : F[x] \to K$, $p \mapsto p(\alpha)$, has image $F[\alpha]$ and kernel $(m)$. If $\alpha$ is algebraic then $m \neq 0$; as $F[\alpha]$ is an integral domain inside the field $K$, $(m)$ is a nonzero prime ideal of the PID $F[x]$, hence maximal, so $F[\alpha] = F(\alpha)$ is a field, finite-dimensional over $F$. If $[F(\alpha):F] = n < \infty$, the $n+1$ powers $1, \alpha, \ldots, \alpha^n$ are dependent. If $\alpha$ is transcendental, $\varepsilon$ is injective, so $F[\alpha] \cong F[x]$ is not a field and $F(\alpha) \cong F(x)$ is infinite-dimensional. $\square$</p>
+<p>Examples: $\sqrt2$, $\sqrt[3]{2}$, $i$, and every algebraic number are algebraic over $\mathbb{Q}$, as is every element of a finite extension. The numbers $e$ (Hermite, 1873) and $\pi$ (Lindemann, 1882) are transcendental over $\mathbb{Q}$, hence so is $\sqrt{\pi}$; since $\overline{\mathbb{Q}}$ is countable and $\mathbb{R}$ is not, there are uncountably many transcendental reals.</p>
+<h2 id="8-minimal-polynomials">8. Minimal Polynomials</h2>
+<p>Let $\alpha$ be algebraic over $F$. Its <strong>minimal polynomial</strong> $m_\alpha \in F[x]$ is the monic polynomial of least degree with $m_\alpha(\alpha) = 0$.</p>
+<p><strong>Theorem.</strong> Let $m = m_\alpha$ have degree $n$. Then $m$ is unique, irreducible over $F$, and divides every polynomial in $F[x]$ vanishing at $\alpha$; moreover
+$$
+F(\alpha) \cong F[x]/(m), \qquad [F(\alpha):F] = n,
+$$
+and $\{1, \alpha, \ldots, \alpha^{n-1}\}$ is a basis of $F(\alpha)$ over $F$, so each element is uniquely $c_0 + c_1\alpha + \cdots + c_{n-1}\alpha^{n-1}$ with $c_i \in F$. If $m$ has $n$ distinct roots in a splitting field, they are the <strong>conjugates</strong> of $\alpha$.</p>
+<p><strong>Proof sketch.</strong> The kernel of evaluation is $(m)$. If $m = gh$ with both factors of smaller degree, then $0 = m(\alpha) = g(\alpha)h(\alpha)$ forces one factor to vanish, contradicting the minimality of $\deg m$; so $m$ is irreducible. Divisibility follows from the kernel description, and the isomorphism and basis from the division algorithm in $F[x]$. $\square$</p>
+<p>Examples over $\mathbb{Q}$: $m_{\sqrt2} = x^2 - 2$; $m_{\sqrt[3]{2}} = x^3 - 2$, irreducible by Eisenstein's criterion at $2$; for $\alpha = \sqrt2 + \sqrt3$ one has $\alpha^4 - 10\alpha^2 + 1 = 0$ and $\mathbb{Q}(\alpha) = \mathbb{Q}(\sqrt2, \sqrt3)$, of degree $4$, so that quartic is minimal. The minimal polynomial of a primitive $p$-th root of unity is $x^{p-1} + \cdots + x + 1$.</p>
+<h2 id="9-the-tower-law-and-algebraic-extensions">9. The Tower Law and Algebraic Extensions</h2>
+<p><strong>Theorem (Tower Law).</strong> For fields $F \subseteq E \subseteq K$,
+$$
+[K:F] = [K:E]\,[E:F],
+$$
+with an infinite factor making $[K:F]$ infinite.</p>
+<p><strong>Proof sketch.</strong> If $\{e_i\}$ is a basis of $E$ over $F$ and $\{k_j\}$ a basis of $K$ over $E$, the products $e_i k_j$ form a basis of $K$ over $F$. $\square$</p>
+<p>If $K/F$ is finite and $E$ is intermediate, both $[K:E]$ and $[E:F]$ divide $[K:F]$. Sums, differences, products, and quotients of algebraic elements are algebraic, since they lie in a finite extension $F(\alpha,\beta)$ with $[F(\alpha,\beta):F]\leq[F(\alpha):F][F(\beta):F]$; hence the elements of $K$ algebraic over $F$ form a subfield, the <strong>algebraic closure of $F$ in $K$</strong>. A finite extension is algebraic, since $1,\alpha,\ldots,\alpha^n$ are dependent. The converse fails: $\overline{\mathbb{Q}}/\mathbb{Q}$ and $\overline{\mathbb{F}_p}/\mathbb{F}_p$ are algebraic and infinite. A finitely generated algebraic extension is finite, and the tower law gives transitivity.</p>
+<h2 id="10-splitting-fields">10. Splitting Fields</h2>
+<p>For nonconstant $f \in F[x]$, a <strong>splitting field</strong> over $F$ is a field $K \supseteq F$ in which $f$ factors as $c(x-\alpha_1)\cdots(x-\alpha_n)$ and $K = F(\alpha_1, \ldots, \alpha_n)$ is generated by the roots.</p>
+<p><strong>Theorem.</strong> Every nonconstant $f \in F[x]$ has a splitting field, and any two are isomorphic by an isomorphism fixing $F$. If $\deg f = n$ then $[K:F] \leq n!$, and $[K:F]$ divides $n!$ whenever $f$ has no repeated roots.</p>
+<p><strong>Proof sketch.</strong> Adjoin roots of irreducible factors one at a time. Each root has degree at most that of the remaining polynomial, giving $[K:F] \leq n!$ by induction; if the roots are distinct, $K/F$ is Galois and its group acts faithfully on the $n$ roots, so $[K:F]$ divides $n!$. $\square$</p>
+<p>Examples: the splitting field of $x^2 - 2$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt2)$; of $x^2 + 1$ over $\mathbb{R}$ is $\mathbb{C}$; of $x^3 - 2$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt[3]{2}, \zeta_3)$ of degree $6$; of $x^q - x$ over $\mathbb{F}_p$ is $\mathbb{F}_q$; of $x^n - 1$ over $\mathbb{Q}$ is $\mathbb{Q}(\zeta_n)$. An extension is <strong>normal</strong> if it is the splitting field of a family of polynomials; normal separable extensions are the Galois extensions of §16.</p>
+<h2 id="11-algebraic-closure">11. Algebraic Closure</h2>
+<p>A field is <strong>algebraically closed</strong> if every nonconstant polynomial over it has a root; equivalently, its only irreducible polynomials are linear, or it has no nontrivial algebraic extension.</p>
+<p><strong>Theorem (Steinitz).</strong> Every field $F$ has an <strong>algebraic closure</strong> $\overline{F}$, an algebraic extension that is algebraically closed, unique up to an isomorphism fixing $F$.</p>
+<p>By the fundamental theorem of algebra, $\mathbb{C}$ is algebraically closed, and since $[\mathbb{C}:\mathbb{R}] = 2$ it is an algebraic closure of $\mathbb{R}$. The countable field $\overline{\mathbb{Q}}$ is an algebraic closure of $\mathbb{Q}$; note that $\mathbb{C}$ is <em>not</em>, since the extension $\mathbb{C}/\mathbb{Q}$ is transcendental. Likewise $\overline{\mathbb{F}_p}$ is a countable algebraic closure of $\mathbb{F}_p$, the union of the fields $\mathbb{F}_{p^n}$. Every algebraically closed field is infinite (§14).</p>
+<h2 id="12-separability-perfect-fields-and-primitive-elements">12. Separability, Perfect Fields, and Primitive Elements</h2>
+<p>A nonconstant $f \in F[x]$ is <strong>separable</strong> if it has no repeated roots in a splitting field, equivalently if $\gcd(f, f') = 1$. An irreducible $f$ is inseparable exactly when $f' = 0$, which in characteristic $p$ means that $f(x) = g(x^p)$. A field is <strong>perfect</strong> if every irreducible polynomial over it is separable.</p>
+<p><strong>Theorem.</strong> A field is perfect if and only if it has characteristic $0$, or characteristic $p$ with the Frobenius map $x \mapsto x^p$ surjective.</p>
+<p>So every field of characteristic $0$, every finite field, and every algebraically closed field is perfect. The field $\mathbb{F}_p(t)$ is not: $x^p - t$ is irreducible but equals $(x - \alpha)^p$ in a splitting field, where $\alpha^p = t$.</p>
+<p><strong>Theorem (Primitive Element Theorem).</strong> Every finite separable extension $K/F$ is simple: $K = F(\alpha)$ for some $\alpha$.</p>
+<p>Thus every finite extension of a field of characteristic $0$, and every finite extension of a finite field, is simple; for example $\mathbb{Q}(\sqrt2, \sqrt3) = \mathbb{Q}(\sqrt2 + \sqrt3)$. Separability is needed: $\mathbb{F}_p(x,y)$ is not simple over $\mathbb{F}_p(x^p, y^p)$, since that extension has degree $p^2$ while every element outside the base field has degree at most $p$.</p>
+<hr />
+<h1 id="part-iii-finite-fields">Part III: Finite Fields</h1>
+<h2 id="13-the-structure-of-finite-fields">13. The Structure of Finite Fields</h2>
+<p><strong>Theorem.</strong> Let $F$ be a finite field with $q$ elements and characteristic $p$. Then $p$ is prime, $q = p^n$ for some $n \geq 1$, the prime subfield is $\mathbb{F}_p$, and $F$ is $n$-dimensional over $\mathbb{F}_p$. Moreover:</p>
+<p><strong>(a)</strong> $F^\times$ is cyclic of order $q - 1$.</p>
+<p><strong>(b)</strong> Every $a \in F$ satisfies $a^q = a$, and $x^q - x = \prod_{a \in F}(x-a)$.</p>
+<p><strong>(c)</strong> $F$ is the splitting field of $x^q - x$ over $\mathbb{F}_p$.</p>
+<p><strong>Proof sketch.</strong> $F$ is an $n$-dimensional $\mathbb{F}_p$-vector space, so $|F| = p^n$. A finite subgroup of the multiplicative group of a field is cyclic, since two subgroups of order $d$ would give $x^d - 1$ more than $d$ roots. By Lagrange, $a^{q-1} = 1$ for $a \neq 0$, giving (b) and (c). $\square$</p>
+<p>The possible orders of finite fields are exactly the prime powers; there is no field with $6$ elements.</p>
+<h2 id="14-existence-uniqueness-and-subfields">14. Existence, Uniqueness, and Subfields</h2>
+<p><strong>Theorem.</strong> For every prime power $q = p^n$ there is a field $\mathbb{F}_q$ with $q$ elements, and any two are isomorphic.</p>
+<p><strong>Proof sketch.</strong> The roots of $x^q - x$ in a splitting field form a subfield with $q$ elements, since in characteristic $p$ the root set is closed under addition, multiplication, and inversion. Any field of order $q$ is a splitting field of $x^q - x$, giving uniqueness. $\square$</p>
+<p><strong>Construction.</strong> For any monic irreducible $f \in \mathbb{F}_p[x]$ of degree $n$, the quotient $\mathbb{F}_p[x]/(f)$ is a field with $p^n$ elements; such an $f$ exists since $\mathbb{F}_{p^n}$ is simple over $\mathbb{F}_p$, generated by an element of degree $n$. The number of monic irreducible polynomials of degree $n$ over $\mathbb{F}_q$ is
+$$
+\frac{1}{n}\sum_{d \mid n} \mu(d)\, q^{n/d},
+$$
+where $\mu$ is the Möbius function.</p>
+<p><strong>Frobenius and subfields.</strong> For $q = p^n$, the Frobenius $\varphi(x) = x^p$ is an automorphism of $\mathbb{F}_q$ fixing $\mathbb{F}_p$, of order $n$, and
+$$
+\operatorname{Gal}(\mathbb{F}_q/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n\mathbb{Z}.
+$$
+Since the fixed field of $\varphi^m$ is $\mathbb{F}_{p^{\gcd(m,n)}}$, the subfields of $\mathbb{F}_{p^n}$ are exactly the fields $\mathbb{F}_{p^m}$ with $m \mid n$.</p>
+<h2 id="15-explicit-finite-fields">15. Explicit Finite Fields</h2>
+<p><strong>(a)</strong> $\mathbb{F}_2 = \{0, 1\}$ with $1 + 1 = 0$.</p>
+<p><strong>(b)</strong> $\mathbb{F}_3 = \{0, 1, 2\}$ with $2 = -1$.</p>
+<p><strong>(c)</strong> $\mathbb{F}_4 \cong \mathbb{F}_2[x]/(x^2 + x + 1) = \{0, 1, \alpha, \alpha+1\}$ with $\alpha^2 = \alpha + 1$; then $\alpha^3 = 1$, so $\mathbb{F}_4^\times$ is cyclic of order $3$. Note that $\mathbb{F}_2[x]/(x^2+1)$ is not a field, since $x^2 + 1 = (x+1)^2$ over $\mathbb{F}_2$.</p>
+<p><strong>(d)</strong> $\mathbb{F}_8 \cong \mathbb{F}_2[x]/(x^3 + x + 1)$.</p>
+<p><strong>(e)</strong> $\mathbb{F}_9 \cong \mathbb{F}_3[x]/(x^2 + 1) = \mathbb{F}_3(i)$.</p>
+<p><strong>(f)</strong> $\mathbb{F}_{16} \cong \mathbb{F}_2[x]/(x^4 + x + 1)$, with subfields $\mathbb{F}_2$, $\mathbb{F}_4$, $\mathbb{F}_{16}$.</p>
+<p>No finite field is algebraically closed, and none admits an ordering, since an ordered field has characteristic $0$.</p>
+<hr />
+<h1 id="part-iv-galois-theory-and-classical-applications">Part IV: Galois Theory and Classical Applications</h1>
+<h2 id="16-galois-groups-and-the-fundamental-theorem">16. Galois Groups and the Fundamental Theorem</h2>
+<p>An <strong>$F$-automorphism</strong> of $K \supseteq F$ is a field automorphism fixing $F$ pointwise; these form the <strong>Galois group</strong> $\operatorname{Gal}(K/F) = \{\sigma \in \operatorname{Aut}(K) : \sigma|_F = \operatorname{id}_F\}$. A finite extension is <strong>Galois</strong> if it is normal and separable, equivalently if $|\operatorname{Gal}(K/F)| = [K:F]$, equivalently if $F$ is the fixed field of the group.</p>
+<p><strong>Theorem (Fundamental Theorem of Galois Theory).</strong> Let $K/F$ be finite Galois with group $G$. There is an inclusion-reversing bijection between intermediate fields $F \subseteq E \subseteq K$ and subgroups $H \leq G$, given by $E \mapsto \operatorname{Gal}(K/E)$ and $H \mapsto K^H = \{x \in K : \sigma(x) = x \text{ for all } \sigma \in H\}$. Under it, $[K:E] = |H|$ and $[E:F] = [G:H]$; and $E/F$ is normal, hence Galois, if and only if $H$ is normal in $G$, in which case $\operatorname{Gal}(E/F) \cong G/H$.</p>
+<p>Examples: $\mathbb{C}/\mathbb{R}$ and $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ have group of order $2$; $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ is not Galois, since $x^3 - 2$ has a root there but does not split; $\mathbb{F}_{p^n}/\mathbb{F}_p$ is cyclic of order $n$ generated by Frobenius; $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ has group $(\mathbb{Z}/n\mathbb{Z})^\times$ (§17).</p>
+<h2 id="17-cyclotomic-fields">17. Cyclotomic Fields</h2>
+<p>The <strong>$n$-th roots of unity</strong> in $F$ are the roots of $x^n - 1$; they form a finite subgroup of $F^\times$, hence a cyclic group. Over $\mathbb{C}$ this group has order $n$, and a generator is a <strong>primitive</strong> $n$-th root $\zeta_n$. The polynomial $x^n - 1$ is separable over $F$ exactly when $\operatorname{char} F \nmid n$.</p>
+<p>The <strong>cyclotomic polynomial</strong> $\Phi_n(x) = \prod_{\gcd(k,n)=1}(x - \zeta_n^k)$ lies in $\mathbb{Z}[x]$, is irreducible over $\mathbb{Q}$, and has degree $\varphi(n)$.</p>
+<p><strong>Theorem.</strong> For $n \geq 1$, the field $\mathbb{Q}(\zeta_n)$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$, and
+$$
+[\mathbb{Q}(\zeta_n):\mathbb{Q}] = \varphi(n), \qquad \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
+$$
+where $a$ corresponds to the automorphism $\zeta_n \mapsto \zeta_n^a$. For $n \geq 3$ the real subfield $\mathbb{Q}(\cos(2\pi/n))$ has degree $\varphi(n)/2$ over $\mathbb{Q}$.</p>
+<p>Examples: $\mathbb{Q}(\zeta_3)=\mathbb{Q}(\sqrt{-3})$ and $\mathbb{Q}(\zeta_4)=\mathbb{Q}(i)$ have degree $2$; $\mathbb{Q}(\zeta_5)$ has degree $4$ and $\mathbb{Q}(\zeta_7)$ degree $6$. For prime $p$, $\Phi_p(x)=x^{p-1}+\cdots+x+1$ and $[\mathbb{Q}(\zeta_p):\mathbb{Q}]=p-1$.</p>
+<h2 id="18-ordered-and-real-closed-fields">18. Ordered and Real-Closed Fields</h2>
+<p>An <strong>ordered field</strong> has a total order with $a < b \Rightarrow a + c < b + c$ and $a < b$, $c > 0 \Rightarrow ac < bc$. Every square is then nonnegative and $1 > 0$, so the characteristic is $0$; hence no finite or prime-characteristic field is ordered. The field $\mathbb{R}$ is ordered, while $\mathbb{C}$ admits none, since $-1 = i^2$ would be a nonnegative square although $-1 < 0$. A field is <strong>formally real</strong> if it admits an ordering, equivalently if $-1$ is not a sum of squares.</p>
+<p>A field $F$ is <strong>real closed</strong> if it is not algebraically closed but $F(\sqrt{-1})$ is; equivalently, it admits an ordering in which every positive element is a square and every odd-degree polynomial has a root. The fields $\mathbb{R}$ and the real algebraic numbers are real closed, and by the Artin–Schreier theorem these conditions characterize real-closed fields; $\mathbb{R}$ is the unique complete ordered field up to isomorphism.</p>
+<h2 id="19-function-fields-and-math490-adic-fields">19. Function Fields and $p$-adic Fields</h2>
+<p><strong>Function fields.</strong> The <strong>field of rational functions</strong> over $F$ is $F(x) = \operatorname{Frac}(F[x])$, with elements $p(x)/q(x)$ for $p, q \in F[x]$, $q \neq 0$. It is transcendental and infinite-dimensional over $F$, and $F(x_1, \ldots, x_n)$ has transcendence degree $n$; a finitely generated extension of transcendence degree $1$ is an <strong>algebraic function field</strong>. The field $F(x)$ is never algebraically closed: if $x = (p/q)^2$ with coprime $p, q$, then $xq^2 = p^2$, impossible by comparing degrees.</p>
+<p><strong>$p$-adic fields.</strong> For prime $p$, the <strong>$p$-adic absolute value</strong> is $|a/b|_p = p^{-v_p(a/b)}$, where $v_p$ is the exponent of $p$; it is non-Archimedean, and its completion is the field $\mathbb{Q}_p$ of <strong>$p$-adic numbers</strong>.</p>
+<p><strong>Theorem.</strong> The field $\mathbb{Q}_p$ has characteristic $0$ and contains $\mathbb{Q}$ densely; it is complete, non-Archimedean, and locally compact. The set $\mathbb{Z}_p = \{x \in \mathbb{Q}_p : |x|_p \leq 1\}$ is a subring, the ring of <strong>$p$-adic integers</strong>, with unique maximal ideal $p\mathbb{Z}_p$, and $\mathbb{Z}_p/p\mathbb{Z}_p \cong \mathbb{F}_p$, $\mathbb{Q}_p = \operatorname{Frac}(\mathbb{Z}_p)$. It is not algebraically closed: $x^2 - p$ has no root, since such a root would have $p$-adic valuation $1/2$.</p>
+<p>The finite extensions of $\mathbb{Q}_p$ are the <strong>$p$-adic fields</strong>, and those of $\mathbb{F}_p((t))$ are the local fields of characteristic $p$. By Ostrowski's theorem the completions of $\mathbb{Q}$ are exactly $\mathbb{R}$ and the fields $\mathbb{Q}_p$.</p>
+<h2 id="20-straightedge-and-compass-constructions">20. Straightedge and Compass Constructions</h2>
+<p>A real number is <strong>constructible</strong> if it can be obtained from the rationals by finitely many straightedge-and-compass operations. The constructible numbers form a subfield of $\mathbb{R}$, and each is algebraic over $\mathbb{Q}$.</p>
+<p><strong>Theorem (Wantzel's criterion).</strong> A real number $\alpha$ is constructible if and only if there is a tower of fields $\mathbb{Q} = K_0 \subset K_1 \subset \cdots \subset K_m$ with $\alpha \in K_m$ and $[K_i : K_{i-1}] = 2$ for all $i$. In particular $[\mathbb{Q}(\alpha):\mathbb{Q}]$ is then a power of $2$; the condition is necessary but not sufficient in general.</p>
+<p><strong>Theorem.</strong> The three classical problems are impossible.</p>
+<p><strong>(a) Doubling the cube.</strong> The side would be $\sqrt[3]{2}$, whose minimal polynomial $x^3 - 2$ has degree $3$, not a power of $2$.</p>
+<p><strong>(b) Trisecting the angle.</strong> It suffices to consider $60^\circ$: from $\cos 3\theta = 4\cos^3\theta - 3\cos\theta$, the number $\cos 20^\circ$ satisfies $8x^3 - 6x - 1 = 0$, a cubic with no rational root, hence irreducible of degree $3$.</p>
+<p><strong>(c) Squaring the circle.</strong> The side would be $\sqrt{\pi}$; by Lindemann's theorem $\pi$ is transcendental, hence so is $\sqrt{\pi}$, and no transcendental number is constructible.</p>
+<p><strong>Theorem (Gauss–Wantzel).</strong> The regular $n$-gon is constructible if and only if $\varphi(n)$ is a power of $2$, that is, $n = 2^a p_1 \cdots p_r$ with the $p_i$ distinct odd Fermat primes. Thus the regular $5$-, $17$-, and $257$-gons are constructible, but the $7$- and $9$-gons are not.</p>
+<hr />
+<h1 id="part-v-summary">Part V: Summary</h1>
+<h2 id="summary">Summary</h2>
+<p>A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. Every field is an integral domain, has characteristic $0$ or a prime, and has prime subfield $\mathbb{Q}$ or $\mathbb{F}_p$; for a field $F$, the ring $F[x]$ is a principal ideal domain and $F[x]/(f)$ is a field exactly when $f$ is irreducible.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Characteristic</th>
+<th>Cardinality</th>
+<th>Algebraically closed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>0</td>
+<td>countable</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>0</td>
+<td>continuum</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>0</td>
+<td>continuum</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$</td>
+<td>0</td>
+<td>continuum</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$</td>
+<td>$p$</td>
+<td>$p$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{p^n}$</td>
+<td>$p$</td>
+<td>$p^n$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$F(x)$</td>
+<td>char $F$</td>
+<td>$\max(\aleph_0, \lvert F \rvert)$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}}$</td>
+<td>0</td>
+<td>countable</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{F}_p}$</td>
+<td>$p$</td>
+<td>countable</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The degree $[K:F] = \dim_F K$ obeys the tower law; an element is algebraic exactly when it generates a finite extension, and its minimal polynomial is then unique, irreducible, divides every polynomial vanishing at it, and satisfies $\deg m_\alpha = [F(\alpha):F]$ and $F(\alpha) \cong F[x]/(m_\alpha)$.</p>
+<p>Every polynomial has a splitting field of degree at most $n!$ in degree $n$ (dividing $n!$ in the separable case), and every field has an algebraic closure, both unique up to isomorphism. Finite fields exist exactly for prime power orders, with cyclic multiplicative groups, cyclic Galois groups generated by Frobenius, and subfields corresponding to the divisors of the degree; Galois theory identifies intermediate fields with subgroups of the Galois group.</p>
+<p>The construction $F[x]/(f)$ and the fields $\mathbb{F}_q$ supply examples for the later study of algebras and representations, and the characteristic distinction underlies the qualitative differences in quadratic form and Clifford algebra theory noted in <em>Rings</em>, §11.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991).</li>
+<li>Emil Artin, <em>Galois Theory</em> (Dover, 2nd ed. 1998).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975).</li>
+<li>Thomas W. Hungerford, <em>Algebra</em> (Springer, 1974).</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002).</li>
+<li>Rudolf Lidl and Harald Niederreiter, <em>Finite Fields</em> (Cambridge University Press, 2nd ed. 1997).</li>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979).</li>
+<li>Ian Stewart, <em>Galois Theory</em> (Chapman &amp; Hall/CRC, 4th ed. 2015).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Number Systems by Property — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-number-systems-by-property"><strong>List of Number Systems by Property</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the number systems of the corpus as a table of properties: for each system it records whether the multiplication is commutative, associative, alternative and power-associative, whether there are zero divisors, whether the system is a division algebra, and whether it is a field. The list is organised along the doubling chain, and at each step it names the property that is lost.</p>
+<p>Every entry points to the article that introduces the number system and states its properties. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being a number system that fails a property the previous one had — the loss of order at $\mathbb{C}$, of commutativity at $\mathbb{H}$, of associativity at $\mathbb{O}$, of the multiplicative norm at the sedenions — with the failure named and the article that records it.</p>
+<h2 id="the-ordered-number-systems">The Ordered Number Systems</h2>
+<p>The chain begins with the systems that are ordered: $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$ and $\mathbb{R}$. Each is commutative, associative, alternative and power-associative; $\mathbb{N}$ is not a group under addition, $\mathbb{Z}$ is an integral domain but not a field, $\mathbb{Q}$ and $\mathbb{R}$ are fields, and only $\mathbb{R}$ is complete. None has zero divisors.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Number system</th>
+<th>Commutative, associative, alternative, power-associative; zero divisors; division algebra; field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{N}$</td>
+<td>commutative, associative, power-associative; no zero divisors; not a division algebra and not a field; ordered</td>
+<td><em>The Natural Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>commutative, associative; an integral domain, no zero divisors; not a division algebra and not a field; ordered</td>
+<td><em>The Integers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>commutative, associative; a field, so a division algebra; no zero divisors; ordered</td>
+<td><em>The Rational Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>commutative, associative; a field and a division algebra; no zero divisors; ordered and complete</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$ as a prime field</td>
+<td>the smallest field of characteristic $0$; the prime field embedding</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{N}$ as a field</td>
+<td>fails: it has no additive inverses and no multiplicative inverses beyond $1$</td>
+<td><em>The Natural Numbers</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}$ as a division algebra</td>
+<td>fails: only $\pm 1$ are units</td>
+<td><em>The Integers</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-complex-numbers-the-loss-of-order">The Complex Numbers: the Loss of Order</h2>
+<p>The doubling of $\mathbb{R}$ gives $\mathbb{C}$, which retains commutativity, associativity, alternativity and power-associativity, remains a field and a division algebra, and has no zero divisors. What it loses is the <strong>order</strong>: $\mathbb{C}$ is not orderable, and its only field automorphisms fixing $\mathbb{R}$ are the identity and complex conjugation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Number system</th>
+<th>Commutative, associative, alternative, power-associative; zero divisors; division algebra; field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>commutative, associative; a field and a division algebra; no zero divisors; not orderable</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$ as $\mathbb{R}[t]/(t^2+1)$</td>
+<td>the algebraic closure of $\mathbb{R}$; every polynomial splits</td>
+<td><em>Splitting Fields and Algebraic Closure</em></td>
+</tr>
+<tr>
+<td>Complex conjugation</td>
+<td>the nontrivial $\mathbb{R}$-automorphism; the only non-identity one</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{C}$ as an ordered field</td>
+<td>fails: no ordering is compatible with the field operations</td>
+<td><em>Algebraically Closed Fields</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{C}$ as a real algebra of dimension $1$</td>
+<td>fails: its real dimension is $2$</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-quaternions-the-loss-of-commutativity">The Quaternions: the Loss of Commutativity</h2>
+<p>The doubling of $\mathbb{C}$ gives the quaternions $\mathbb{H}$, which retain associativity, alternativity and power-associativity, remain a division algebra and have no zero divisors, but lose <strong>commutativity</strong>: $ij = k$ while $ji = -k$. The quaternions are a division ring but not a field, and their centre is $\mathbb{R}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Number system</th>
+<th>Commutative, associative, alternative, power-associative; zero divisors; division algebra; field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>associative, alternative, power-associative; a division algebra, no zero divisors; <strong>not commutative</strong>, not a field; centre $\mathbb{R}$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Quaternion units</td>
+<td>$i^2 = j^2 = k^2 = ijk = -1$; $ij = k = -ji$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$ as a division ring</td>
+<td>every nonzero element invertible, with $x^{-1} = \bar x/N(x)$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$ as an algebra over its centre</td>
+<td>dimension $4$ over $\mathbb{R}$, the centre</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{H}$ as a field</td>
+<td>fails: multiplication is not commutative</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{H}$ as an ordered field</td>
+<td>fails: an ordered field is commutative, and $\mathbb{H}$ is not even a field</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-octonions-the-loss-of-associativity">The Octonions: the Loss of Associativity</h2>
+<p>The doubling of $\mathbb{H}$ gives the octonions $\mathbb{O}$, which retain alternativity and power-associativity, remain a division algebra and have no zero divisors, but lose <strong>associativity</strong>: the associator $(xy)z - x(yz)$ is nonzero. The octonions are the last normed division algebra, and they are neither commutative nor associative.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Number system</th>
+<th>Commutative, associative, alternative, power-associative; zero divisors; division algebra; field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>alternative and power-associative; a division algebra, no zero divisors; <strong>not associative</strong>, not commutative, not a field</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Octonion basis $e_0,\dots,e_7$</td>
+<td>$e_0 = 1$, $e_i^2 = -1$ for $i \geq 1$; the Fano-plane multiplication</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>The associator</td>
+<td>$(e_1e_2)e_4 = e_7$ but $e_1(e_2e_4) = -e_7$; the failure of associativity made explicit</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>Artin's theorem</td>
+<td>the subalgebra generated by two elements is associative, so $\mathbb{O}$ is alternative</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{O}$ as an associative algebra</td>
+<td>fails: the associator is nonzero</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{O}$ as a field</td>
+<td>fails: it is not commutative and not associative</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-sedenions-the-loss-of-division">The Sedenions: the Loss of Division</h2>
+<p>The doubling of $\mathbb{O}$ gives the sedenions $\mathbb{S}$, of dimension sixteen; the norm is no longer multiplicative, the system has <strong>zero divisors</strong>, and it is therefore not a division algebra. The sedenions are still power-associative, and the doubling continues indefinitely as a sequence of algebras.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Number system</th>
+<th>Commutative, associative, alternative, power-associative; zero divisors; division algebra; field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{S}$</td>
+<td>power-associative; <strong>has zero divisors</strong>; not a division algebra, not alternative, not a field</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>The failure of the norm</td>
+<td>$N(xy) \neq N(x)N(y)$ in dimension $16$; the multiplicative norm stops at $\mathbb{O}$</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{S}$ as a division algebra</td>
+<td>fails: it has zero divisors</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: a normed division algebra of dimension $16$</td>
+<td>does not exist: Hurwitz' theorem stops the normed division algebras at $8$</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-split-and-degenerate-number-systems">The Split and Degenerate Number Systems</h2>
+<p>Beside the division chain the corpus develops the split and degenerate systems, which are commutative or associative but have zero divisors and are not division algebras: the split-complex numbers, the dual numbers, the split-biquaternions, the split-octonions and the biquaternions. These systems show that the properties are independent, and that losing order, commutativity or associativity is not the only way to fail to be a field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Number system</th>
+<th>Commutative, associative, alternative, power-associative; zero divisors; division algebra; field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$ split-complex</td>
+<td>commutative, associative; <strong>has zero divisors</strong>, $\cong \mathbb{R}\times\mathbb{R}$; not a division algebra, not a field</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$ dual numbers</td>
+<td>commutative, associative; <strong>has nilpotents</strong>, local; not a division algebra, not a field</td>
+<td><em>Dual Numbers Algebra</em></td>
+</tr>
+<tr>
+<td>Split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>associative; <strong>has zero divisors</strong>, $\cong \mathbb{H}\oplus\mathbb{H}$, and no nonzero nilpotents; not a division algebra, not a field</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Split-octonions</td>
+<td>alternative; <strong>has zero divisors</strong>; not a division algebra, not associative</td>
+<td><em>Normed Division Algebras and the Hurwitz Theorem</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ biquaternions</td>
+<td>associative; <strong>has zero divisors</strong>, $\cong M_2(\mathbb{C})$; not a division algebra, not a field</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{D}$ as a field</td>
+<td>fails: $(1-t)(1+t) = 0$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: the split biquaternions as a division algebra</td>
+<td>fail: they have zero divisors, though they have no nonzero nilpotents</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-property-table">The Property Table</h2>
+<p>The properties are independent, and the table records which system has which; each entry reads yes or no.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>System</th>
+<th>Commutative</th>
+<th>Associative</th>
+<th>Alternative</th>
+<th>Power-associative</th>
+<th>No zero divisors</th>
+<th>Division algebra</th>
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{N}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{S}$</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>split-octonions</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the number systems of the corpus by their properties. The ordered systems are $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$ and $\mathbb{R}$, which are commutative and associative and have no zero divisors. The doubling chain then loses one property at each step: $\mathbb{C}$ loses order, $\mathbb{H}$ loses commutativity, $\mathbb{O}$ loses associativity and the sedenions lose the multiplicative norm and acquire zero divisors. $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ are the four normed division algebras, and only $\mathbb{Q}$, $\mathbb{R}$ and $\mathbb{C}$ are fields. The split and degenerate systems — the split-complex numbers, the dual numbers, the split-biquaternions, the split-octonions and the biquaternions — are commutative or associative but have zero divisors and are not division algebras. The final table records the seven properties for all thirteen systems. The non-examples — $\mathbb{N}$ and $\mathbb{Z}$ as non-fields, $\mathbb{Z}$ as a non-division algebra, $\mathbb{C}$ as non-orderable, $\mathbb{H}$ as non-commutative, $\mathbb{O}$ as non-associative, $\mathbb{S}$ as having zero divisors, the split-complex numbers as a non-field and the split-biquaternions as non-division-algebras — each name the failure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$</td>
+<td>naturals, integers, rationals, reals</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$</td>
+<td>complex, split-complex, dual numbers</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{O}$, $\mathbb{S}$</td>
+<td>quaternions, octonions, sedenions</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>split biquaternions, of real dimension $8$</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>biquaternions</td>
+</tr>
+<tr>
+<td>$i,j,k$</td>
+<td>quaternion units</td>
+</tr>
+<tr>
+<td>$e_0,\dots,e_7$</td>
+<td>octonion basis; $e_0,\dots,e_{15}$ the sedenion basis</td>
+</tr>
+<tr>
+<td>$N(x)$</td>
+<td>norm form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Schafer, <em>An Introduction to Nonassociative Algebras</em> (Dover, 1995), for power-associativity, alternativity, the Cayley–Dickson construction and the sedenions.</li>
+<li>John Conway and Derek Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the property table of the number systems and the geometry of the division algebras.</li>
+<li>Ian Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the realisation of the number systems as Clifford algebras and the properties they inherit.</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009), for the ordered systems, the field properties and the orderability criterion.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

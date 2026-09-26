@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projective and Injective Modules — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="projective-and-injective-modules"><strong>Projective and Injective Modules</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Among the modules over a ring, two classes are singled out by how well they behave under the two functors attached to a module. A projective module is one for which the functor $\operatorname{Hom}_R(P,-)$ is exact, equivalently one for which every surjection onto any module lifts along a map from $P$; an injective module is one for which $\operatorname{Hom}_R(-,I)$ is exact, equivalently one for which every injection into any module extends along a map into $I$. The two notions are dual, and both are weakenings of freeness: every free module is projective, and the injective modules are in a precise sense the divisible ones.</p>
+<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and modules are left $R$-modules, so that $\operatorname{Hom}_R(M,N)$ carries an $R$-module structure. Where a statement needs an integral domain, a principal ideal domain or a local ring, that hypothesis is named. The exact-sequence conventions and the splitting lemma used here were fixed in the article of this category on exact sequences.</p>
+<p>The article is organised around the two lifting problems and their equivalences, the construct that shows both classes are large enough — every module is a quotient of a projective and a submodule of an injective — and the two computations that identify them in the rings this category uses: over a principal ideal domain the projectives are the free modules and the injectives are the divisible modules, while over a local ring every finitely generated projective module is free. A finitely generated projective module over a general commutative ring need not be free, and the smallest example is recorded.</p>
+<h2 id="projective-modules">Projective Modules</h2>
+<h3 id="the-lifting-property">The Lifting Property</h3>
+<p><strong>Definition.</strong> An $R$-module $P$ is <strong>projective</strong> if for every surjective homomorphism $q:B \to C$ and every homomorphism $f:P \to C$ there exists a homomorphism $g:P \to B$ with $q \circ g=f$. The map $g$ is a <strong>lift</strong> of $f$ along $q$.</p>
+<p>In the language of diagrams, the triangle with vertices $P$, $B$ and $C$, carrying the map $f:P \to C$ and the surjection $q:B \to C$, can be completed to a commutative triangle by an arrow $g:P \to B$. The condition is a lifting condition for surjections, and freeness is exactly the case in which the lift may be chosen on a basis.</p>
+<p><strong>Proposition.</strong> Every free module is projective.</p>
+<p><em>Proof.</em> Let $L$ have a basis $B$ and let $q:B' \to C$ be surjective with $f:L \to C$. For each $b \in B$ choose $g(b) \in B'$ with $q(g(b))=f(b)$, which is possible by surjectivity, and extend $g$ on $B$ to a homomorphism $g:L \to B'$ by the universal property of a free module. Then $q \circ g$ and $f$ agree on a basis, hence everywhere. $\square$</p>
+<h3 id="equivalent-characterisations">Equivalent Characterisations</h3>
+<p><strong>Theorem.</strong> For an $R$-module $P$ the following are equivalent: (i) $P$ is projective; (ii) every short exact sequence $0 \to A \to B \xrightarrow{q} P \to 0$ splits; (iii) $P$ is a direct summand of a free module; (iv) the functor $\operatorname{Hom}_R(P,-)$ is exact.</p>
+<p><em>Proof.</em> (i) $\Rightarrow$ (ii): apply the lifting property to $q:B \to P$ and $\operatorname{id}_P:P \to P$; the resulting $s:P \to B$ satisfies $qs=\operatorname{id}_P$, so the sequence splits by the splitting lemma of the exact-sequences article.</p>
+<p>(ii) $\Rightarrow$ (iii): choose a surjection $\varphi:L \to P$ with $L$ free, which exists because every module is a quotient of a free module. The sequence $0 \to \ker\varphi \to L \to P \to 0$ splits, so $L \cong P \oplus \ker\varphi$.</p>
+<p>(iii) $\Rightarrow$ (i): write $L=P\oplus K$ with $L$ free, and let $q:B \to C$ be surjective with $f:P \to C$. The map $f \oplus 0:P\oplus K \to C$ lifts to $h:L \to B$ because $L$ is free, and the restriction of $h$ to $P$ is the required lift.</p>
+<p>(i) $\Leftrightarrow$ (iv): $\operatorname{Hom}_R(P,-)$ is always left exact. It is exact precisely when it preserves surjectivity, that is, precisely when every $f:P \to C$ lifts along every surjection $B \to C$. $\square$</p>
+<p>The equivalences make projectivity testable without quantifying over all surjections: it is a statement about one presentation of $P$. They also show that projectivity is inherited by direct summands and by finite direct sums, since both properties are.</p>
+<h3 id="the-dual-basis-lemma">The Dual Basis Lemma</h3>
+<p>Finitely generated projective modules admit a coordinate description that does not mention a complement.</p>
+<p><strong>Lemma (dual basis).</strong> $P$ is finitely generated and projective if and only if there exist $p_1,\dots,p_n \in P$ and $f_1,\dots,f_n \in P^*=\operatorname{Hom}_R(P,R)$ such that</p>
+<p>$$
+x=\sum_{i=1}^{n} f_i(x)\,p_i \qquad \text{for every } x \in P .
+$$</p>
+<p><em>Proof.</em> If such data exist and $q:B \to C$ is surjective with $f:P \to C$, choose $b_i \in B$ with $q(b_i)=f(p_i)$ and define $g(x)=\sum_i f_i(x)b_i$. Then $g$ is a homomorphism and $q(g(x))=\sum_i f_i(x)q(b_i)=\sum_i f_i(x)f(p_i)=f\bigl(\sum_i f_i(x)p_i\bigr)=f(x)$, so $g$ is a lift and $P$ is projective; it is generated by $p_1,\dots,p_n$. Conversely, if $P$ is a direct summand of a free module $L$ of finite rank with basis $e_1,\dots,e_n$ and projection $\pi:L \to P$, put $p_i=\pi(e_i)$ and let $f_i$ be the composite $P \hookrightarrow L \to R$ of the inclusion with the $i$-th coordinate functional; then $\sum_i f_i(x)p_i=\pi\bigl(\sum_i f_i(x)e_i\bigr)=\pi(x)=x$. $\square$</p>
+<p>The elements $f_i$ are a <strong>dual basis</strong>: they express the identity of $P$ as a finite sum of rank-one maps $x \mapsto f_i(x)p_i$. The lemma is the algebraic form of "projective of finite type is locally free of finite rank" and is used to define the trace and determinant of an endomorphism of a projective module.</p>
+<h3 id="traces-of-endomorphisms-of-projective-modules">Traces of Endomorphisms of Projective Modules</h3>
+<p>The dual basis gives a coordinate-free trace. Let $P$ be finitely generated projective with dual basis $p_1,\dots,p_n$ and $f_1,\dots,f_n$, and let $\varphi \in \operatorname{End}_R(P)$. Define</p>
+<p>$$
+\operatorname{tr}(\varphi)=\sum_{i=1}^{n} f_i\bigl(\varphi(p_i)\bigr) \in R .
+$$</p>
+<p><strong>Proposition.</strong> The element $\operatorname{tr}(\varphi)$ does not depend on the dual basis; $\operatorname{tr}$ is $R$-linear in $\varphi$; $\operatorname{tr}(\varphi\psi)=\operatorname{tr}(\psi\varphi)$; and $\operatorname{tr}(\operatorname{id}_P)$ localises at each prime $\mathfrak{p}$ to the rank of $P_{\mathfrak p}$ over $R_{\mathfrak p}$.</p>
+<p><em>Proof.</em> Write $P$ as a direct summand of a free module $L$ of rank $n$ and extend $\varphi$ to $\varphi\oplus 0$ on $L$. Choosing the dual basis of $L$ to be the coordinate functionals of a basis $e_1,\dots,e_n$, the formula computes the ordinary matrix trace of $\varphi\oplus 0$, which is independent of the basis of $L$. Since the two dual bases of $P$ obtained from two complements both arise from bases of ambient free modules connected by an invertible matrix, independence follows. Linearity and the trace identity are inherited from the matrix case, and the value on $\operatorname{id}_P$ is $n$, the rank of $P$ at primes over which $P$ is free of rank $n$. $\square$</p>
+<p>The trace of an endomorphism of a projective module is used to define the characteristic polynomial when $P$ is projective of constant rank, and it is the invariant in terms of which the determinant of an automorphism is computed in the article of this category on the special linear group.</p>
+<h3 id="stability-properties">Stability Properties</h3>
+<p><strong>Proposition.</strong> (i) A direct summand of a projective module is projective. (ii) An arbitrary direct sum $\bigoplus_i P_i$ is projective if and only if every $P_i$ is projective. (iii) Dually, an arbitrary direct product of injective modules is injective, and a direct summand of an injective module is injective.</p>
+<p><em>Proof.</em> (i) If $P \oplus K=L$ with $L$ free, then $P$ is a direct summand of a free module, so projective by the characterisation theorem. (ii) If every $P_i$ is projective, choose for each $i$ a free module $L_i$ with $P_i\oplus K_i=L_i$; then $\bigoplus_i P_i$ is a direct summand of the free module $\bigoplus_i L_i$, hence projective. The converse is (i). (iii) Let $I=\prod_i I_i$ with every $I_i$ injective. A homomorphism into a product is a family of homomorphisms, one into each factor; by the extension property applied factor by factor, a map from a submodule extends, so $I$ is injective. If $J$ is a direct summand of an injective module $I$, then every extension problem for $J$ is an extension problem for $I$ followed by projection, so $J$ is injective. $\square$</p>
+<p>Neither class is closed under submodules or quotients in general. The free, hence projective, $\mathbb{Z}$-module has the non-projective quotient $\mathbb{Z}/2\mathbb{Z}$, since over a principal ideal domain projective means free and $\mathbb{Z}/2\mathbb{Z}$ is not free; and the injective $\mathbb{Q}$ has the non-injective submodule $\mathbb{Z}$.</p>
+<h3 id="examples-and-non-examples">Examples and Non-Examples</h3>
+<p><strong>Examples.</strong> Every free module is projective. A direct summand of a projective module is projective. Over a field every module is projective, since every module is free. The zero module is projective, being free on the empty basis.</p>
+<p><strong>Example (projective but not free).</strong> Let $R=\mathbb{Z}/6\mathbb{Z}$ and let $e=3$, an idempotent because $3^2=9\equiv 3$. The principal ideal $Re=\{0,3\}$ is a direct summand of the regular module,</p>
+<p>$$
+R=Re \oplus R(1-e) \cong \mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/3\mathbb{Z},
+$$</p>
+<p>so $Re$ is projective. It is not free: a nonzero free $R$-module has at least $|R|=6$ elements, while $Re$ has $2$. So projectivity is strictly weaker than freeness over a commutative ring. The example is the general mechanism: for any idempotent $e$ in any ring, $Re$ is a projective left module and $R=Re\oplus R(1-e)$.</p>
+<p><strong>Theorem (local rings).</strong> If $(R,\mathfrak{m})$ is a local ring, then every finitely generated projective $R$-module is free.</p>
+<p><em>Proof.</em> Let $P$ be finitely generated projective and choose a minimal surjection $\varphi:R^n \to P$, possible by Nakayama's lemma with $n=\dim_k(P/\mathfrak{m}P)$, $k=R/\mathfrak{m}$. Since $P$ is projective, $\varphi$ splits, so $R^n \cong P \oplus K$ with $K=\ker\varphi$. Tensoring the isomorphism $R^n \cong P \oplus K$ with $k=R/\mathfrak{m}$, which carries $R^n$ to $k^n$, gives $k^n \cong P/\mathfrak{m}P \oplus K/\mathfrak{m}K$; the first summand has dimension $n$ by the choice of $n$, so $K/\mathfrak{m}K=0$, and Nakayama's lemma gives $K=0$. Hence $P \cong R^n$. $\square$</p>
+<p><strong>Theorem (principal ideal domains).</strong> Over a principal ideal domain every projective module is free.</p>
+<p><em>Proof.</em> A projective module is a direct summand of a free module, hence a submodule of a free module, and over a principal ideal domain every submodule of a free module is free. $\square$</p>
+<p>Over a polynomial ring in several variables the situation is different but still rigid in the finitely generated case: by the Quillen–Suslin theorem, every finitely generated projective module over $k[x_1,\dots,x_n]$ is free, so the non-free examples require a ring with idempotents or a non-trivial Picard group, such as a Dedekind domain with class number greater than $1$.</p>
+<h3 id="projectives-over-a-product-of-rings">Projectives over a Product of Rings</h3>
+<p>Let $R=R_1\times R_2$ and let $e_1=(1,0)$, $e_2=(0,1)$ be the two central idempotents. Then $R=R e_1\oplus R e_2$, and an $R$-module $M$ decomposes as</p>
+<p>$$
+M=e_1M \oplus e_2M,
+$$</p>
+<p>where $e_iM$ is an $R_i$-module under the action $r_i\cdot(e_i m)=e_i(r_i m)$. The decomposition is natural in $M$, so the category of $R$-modules is the product of the categories of $R_1$- and $R_2$-modules. A finitely generated projective $R$-module is therefore a pair $(P_1,P_2)$ with $P_i$ finitely generated projective over $R_i$, and its <strong>rank</strong> is a pair $(\operatorname{rk}_{R_1}P_1,\operatorname{rk}_{R_2}P_2)$ when both factors are free. Since $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{F}_2\times\mathbb{F}_3$ is a product of fields, every module over it is projective and every finitely generated module is a pair of finite-dimensional vector spaces; the module $R e_1 \cong \mathbb{F}_2$ in the first coordinate and $0$ in the second has rank $(1,0)$ and is not free. This is the structural explanation of the example above.</p>
+<h3 id="rank-local-freeness-and-the-picard-group">Rank, Local Freeness and the Picard Group</h3>
+<p>A finitely generated projective module is <strong>locally free of finite rank</strong>: for every prime ideal $\mathfrak{p}$ the localisation $P_{\mathfrak{p}}$ is a free $R_{\mathfrak{p}}$-module, because a dual basis over $R$ remains a dual basis after localising, and over a local ring finitely generated projective is free. The <strong>rank function</strong> $\mathfrak{p} \mapsto \operatorname{rk}_{R_{\mathfrak{p}}}P_{\mathfrak{p}}$ is therefore a locally constant function on $\operatorname{Spec}R$. On a connected spectrum it is a single integer, and it may be $0$, so that $P=0$.</p>
+<p>When the rank is constant and equal to $1$, a finitely generated projective module of rank $1$ is also called <strong>invertible</strong>, and isomorphism classes of invertible modules form a group under $\otimes_R$ with identity $R$ and inverse $P^*=\operatorname{Hom}_R(P,R)$; this group is the <strong>Picard group</strong> $\operatorname{Pic}(R)$. Over a Dedekind domain every finitely generated torsion-free module is projective, the invertible modules are exactly the fractional ideals, and $\operatorname{Pic}(R)$ is the ideal class group. Hence the classification of rank-one projectives over a Dedekind domain is the class group of the ring, and a Dedekind domain is a principal ideal domain exactly when its class group is trivial. This is the sense in which non-free projective modules are an arithmetic phenomenon: they exist precisely when the class group is non-trivial, the simplest case being the ideal class of a non-principal ideal in a ring of integers.</p>
+<h2 id="injective-modules">Injective Modules</h2>
+<h3 id="the-extension-property">The Extension Property</h3>
+<p><strong>Definition.</strong> An $R$-module $I$ is <strong>injective</strong> if for every injective homomorphism $i:A \to B$ and every homomorphism $f:A \to I$ there exists a homomorphism $g:B \to I$ with $g \circ i=f$.</p>
+<p>Dually to the projective case, the condition is that the square with the injective $i:A \to B$, the map $f:A \to I$ and the unknown arrow $g:B \to I$ can be completed so that $gi=f$. Injectivity is a property of the second argument of $\operatorname{Hom}_R(-,-)$; projectivity is a property of the first.</p>
+<p><strong>Theorem.</strong> For an $R$-module $I$ the following are equivalent: (i) $I$ is injective; (ii) every short exact sequence $0 \to I \to B \to C \to 0$ splits; (iii) the functor $\operatorname{Hom}_R(-,I)$ is exact.</p>
+<p><em>Proof.</em> (i) $\Rightarrow$ (ii): apply the extension property to the inclusion $I \to B$ and $\operatorname{id}_I$, obtaining a retraction, which splits the sequence. (ii) $\Rightarrow$ (iii): $\operatorname{Hom}_R(-,I)$ is always left exact in the first variable, so it is exact precisely when every $f:A \to I$ with $A \subseteq B$ extends to $B$. Given such an $f$, let $E$ be the pushout of the inclusion $A \subseteq B$ and $f$; the sequence $0 \to I \to E \to B/A \to 0$ is exact, so by hypothesis it splits, and composing the splitting $E \to I$ with $B \to E$ extends $f$. (iii) $\Rightarrow$ (i) is the same equivalence read backwards. $\square$</p>
+<h3 id="baers-criterion">Baer's Criterion</h3>
+<p>Testing injectivity against all inclusions of all modules is impractical; Baer's criterion reduces it to inclusions of ideals of $R$.</p>
+<p><strong>Theorem (Baer).</strong> An $R$-module $I$ is injective if and only if every homomorphism $J \to I$ from an ideal $J \subseteq R$ extends to a homomorphism $R \to I$.</p>
+<p><em>Proof.</em> Necessity is the definition applied to the inclusion $J \hookrightarrow R$. For sufficiency, let $i:A \to B$ be injective and $f:A \to I$. Consider the set of pairs $(A_0,f_0)$ with $A \subseteq A_0 \subseteq B$ and $f_0:A_0 \to I$ extending $f$, ordered by extension. It is non-empty and every chain has an upper bound given by the union, so Zorn's lemma supplies a maximal $(A_0,f_0)$. If $A_0 \neq B$, choose $b \in B \setminus A_0$ and put</p>
+<p>$$
+J=\{r \in R : rb \in A_0\},
+$$</p>
+<p>an ideal. The map $h:J \to I$, $h(r)=f_0(rb)$, is a well-defined homomorphism, so by hypothesis it extends to $g:R \to I$. Define $f_1$ on $A_0+Rb$ by $f_1(a+rb)=f_0(a)+g(r)$; if $a+rb=0$ then $r \in J$ and $f_0(a)=-g(r)$, so $f_1$ is well defined and $R$-linear, and it extends $f_0$. This contradicts maximality, so $A_0=B$ and $I$ is injective. $\square$</p>
+<p>The criterion also shows that a product of injective modules is injective, since a homomorphism into a product is a family of homomorphisms, each of which extends separately.</p>
+<h3 id="divisible-modules-over-a-principal-ideal-domain">Divisible Modules over a Principal Ideal Domain</h3>
+<p><strong>Definition.</strong> An $R$-module $M$ over an integral domain is <strong>divisible</strong> if for every $m \in M$ and every $0 \neq r \in R$ there exists $m' \in M$ with $rm'=m$; equivalently, multiplication by $r$ is surjective for every nonzero $r$.</p>
+<p><strong>Theorem.</strong> Over a principal ideal domain, a module is injective if and only if it is divisible.</p>
+<p><em>Proof.</em> Suppose $I$ divisible, and let $J=(a)$ be a nonzero ideal with a homomorphism $f:J \to I$. Put $x=f(a)$; by divisibility there is $y \in I$ with $ay=x$. Define $g:R \to I$ by $g(r)=ry$. If $r \in J$, say $r=ta$, then $g(r)=tay=tx=tf(a)=f(ta)=f(r)$, so $g$ extends $f$; the zero ideal is handled trivially. Baer's criterion gives injectivity.</p>
+<p>Conversely, suppose $I$ injective, let $0 \neq a \in R$ and $x \in I$. The map $J=(a) \to I$, $a \mapsto x$, is a homomorphism from an ideal, so it extends to $g:R \to I$. Put $y=g(1)$; then $ay=g(a)=x$, and $I$ is divisible. $\square$</p>
+<p><strong>Corollary.</strong> Over $\mathbb{Z}$ the injective modules are the divisible abelian groups. The groups $\mathbb{Q}$ and $\mathbb{Q}/\mathbb{Z}$ are divisible, hence injective; $\mathbb{Z}$ is not divisible, hence not injective. Over a field every module is both injective and projective, since every module is free.</p>
+<p><strong>Theorem.</strong> Every divisible abelian group is a direct sum of copies of $\mathbb{Q}$ and of Prüfer groups $\mathbb{Z}[1/p]/\mathbb{Z}$, one Prüfer group for each prime.</p>
+<p>This is the structure theory of divisible groups; it is quoted here because it describes the injective objects of the category of abelian groups completely, and it shows how far they are from being finitely generated. The finitely generated divisible abelian groups are only $0$, since a nonzero divisible group is infinite; divisibility forces infinite generation, which is why the injective objects are invisible in the finitely generated classification and make no appearance in the structure theorem for finitely generated abelian groups. Over a general domain the divisible modules are not classified by a finite list of invariants: already over $\mathbb{Z}$ the theorem above is a statement of infinite content. Over a principal ideal domain the divisible modules are the direct sums of copies of the fraction field $K$ and of the Prüfer modules $R[1/p]/R$, one for each prime $p$, which is the Matlis classification of the injective objects; the torsion-free divisible ones are exactly the $K$-vector spaces, that is, the sums in which only copies of the fraction field occur.</p>
+<h3 id="injective-envelopes">Injective Envelopes</h3>
+<p><strong>Definition.</strong> An <strong>injective envelope</strong> of a module $M$ is an injective module $E$ together with an injection $M \hookrightarrow E$ such that no proper submodule of $E$ containing the image of $M$ is injective.</p>
+<p><strong>Theorem.</strong> Every module $M$ has an injective envelope, and it is unique up to an isomorphism fixing $M$ pointwise.</p>
+<p>The construction in outline: regard $M$ as an abelian group and embed it into a divisible abelian group $D$, which is possible because every abelian group embeds in a product of copies of $\mathbb{Q}$ and $\mathbb{Q}/\mathbb{Z}$; then embed $M$ into the $R$-module $\operatorname{Hom}_{\mathbb{Z}}(R,D)$ by $m \mapsto (r \mapsto rm)$, which is an $R$-linear injection. The module $\operatorname{Hom}_{\mathbb{Z}}(R,D)$ is injective as an $R$-module: a homomorphism $J \to \operatorname{Hom}_{\mathbb{Z}}(R,D)$ from an ideal corresponds by adjunction to a $\mathbb{Z}$-linear map $J \to D$, which extends to $R \to D$ because $D$ is injective over $\mathbb{Z}$, and adjunction back gives the required extension to $R$. Minimality is obtained by Zorn's lemma: the union of a chain of essential extensions of $M$ is again essential, so a maximal essential extension $\hat M$ of $M$ inside $E$ exists, and an essential extension of $\hat M$ maps into $E$ by injectivity of $E$, which exhibits an essential extension of $M$ no larger than $\hat M$; hence $\hat M$ has no proper essential extension and is therefore injective, by the standard criterion. The envelope is the categorical dual of the free cover $L \twoheadrightarrow M$.</p>
+<p><strong>Example.</strong> The injective envelope of $\mathbb{Z}$ as a $\mathbb{Z}$-module is $\mathbb{Q}$; the injection $\mathbb{Z} \hookrightarrow \mathbb{Q}$ has no proper divisible submodule between them. The injective envelope of $\mathbb{Z}/n\mathbb{Z}$ is the direct sum of the Prüfer groups $\mathbb{Z}[1/p]/\mathbb{Z}$ over the primes $p$ dividing $n$; for $n=p$ it is the Prüfer group $\mathbb{Z}[1/p]/\mathbb{Z}$, the $p$-primary component of $\mathbb{Q}/\mathbb{Z}$.</p>
+<h2 id="enough-projectives-and-injectives">Enough Projectives and Injectives</h2>
+<h3 id="enough-projectives">Enough Projectives</h3>
+<p>Every free module is projective, and every module is a quotient of a free module, so the projective modules are <strong>abundant</strong>: for every $M$ there is a surjection $P \twoheadrightarrow M$ with $P$ projective. The construction is the one of the first article of this category: choose generators, take the free module on them, and extend by the universal property.</p>
+<p>Consequently every module has a <strong>projective resolution</strong></p>
+<p>$$
+\cdots \to P_2 \to P_1 \to P_0 \to M \to 0
+$$</p>
+<p>with each $P_i$ projective. Taking $P_0$ and $P_1$ free and finitely generated when $M$ is finitely generated over a Noetherian ring makes the presentation a finite matrix, which is the input to the Smith normal form; the higher terms are what the derived functors of $\operatorname{Hom}$ and $\otimes$ are computed from.</p>
+<h3 id="enough-injectives">Enough Injectives</h3>
+<p>Dually, every module embeds into an injective module, so the injective modules are also abundant. Let $M$ be an $R$-module and regard it as an abelian group. Choose a divisible abelian group $D$ containing $M$, for instance an injective envelope of $M$ over $\mathbb{Z}$. The natural map</p>
+<p>$$
+M \longrightarrow \operatorname{Hom}_{\mathbb{Z}}(R,M), \qquad m \longmapsto (r \mapsto rm),
+$$</p>
+<p>is an $R$-linear injection, and post-composition with the inclusion $M \hookrightarrow D$ embeds $\operatorname{Hom}_{\mathbb{Z}}(R,M)$ into $\operatorname{Hom}_{\mathbb{Z}}(R,D)$. The latter is an injective $R$-module by the adjunction argument above, applied with this $D$. Hence $M$ embeds in an injective $R$-module. This is the <strong>cofree</strong> construction, dual to the free construction above, and passing to a minimal injective submodule containing the image of $M$ gives the injective envelope.</p>
+<h3 id="derived-functors-and-dimension">Derived Functors and Dimension</h3>
+<p>With enough projectives and injectives available, the derived functors are defined. For a module $M$ and a projective resolution $P_\bullet \to M$, one sets $\operatorname{Ext}^n_R(M,N)=H^n(\operatorname{Hom}_R(P_\bullet,N))$; for a flat resolution and the tensor product one obtains $\operatorname{Tor}_n^R(M,N)$. The relevance here is the characterisation of the two classes:</p>
+<p>$$
+P \text{ projective} \iff \operatorname{Ext}^1_R(P,N)=0 \text{ for all } N, \qquad I \text{ injective} \iff \operatorname{Ext}^1_R(M,I)=0 \text{ for all } M.
+$$</p>
+<p><strong>Definition.</strong> The <strong>projective dimension</strong> $\operatorname{pd}_R M$ is the least length of a projective resolution of $M$, and the <strong>injective dimension</strong> $\operatorname{id}_R M$ is the least length of an injective resolution. A ring has <strong>global dimension</strong> at most $n$ if every module has projective dimension at most $n$.</p>
+<p><strong>Proposition.</strong> A ring has global dimension $0$ if and only if it is semisimple, that is, every module is projective. Among commutative rings these are exactly the finite products of fields, so every field is an example and so is $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{F}_2\times\mathbb{F}_3$. A principal ideal domain that is not a field has global dimension $1$.</p>
+<p><em>Proof.</em> Global dimension $0$ means every module is projective, so the ring is semisimple by definition; by the Wedderburn–Artin theorem it is a finite product of matrix rings over division rings, and such a product is commutative exactly when each matrix ring is $1 \times 1$ over a field, so a commutative ring of global dimension $0$ is a finite product of fields. Conversely a finite product of fields is semisimple, each factor being simple artinian. For a principal ideal domain, submodules of free modules are free, so every module has a free resolution of length at most $1$, and a non-free module such as $R/(a)$ for a nonzero non-unit $a$ has projective dimension exactly $1$ because it is not projective. $\square$</p>
+<p>Dimension is the numerical shadow of the two classes, and the finiteness statements — that finite products of fields have dimension $0$, that Dedekind domains and principal ideal domains have dimension $1$, that polynomial rings over a field add one dimension, by Hilbert's syzygy theorem — are read off in this language.</p>
+<h3 id="syzygies-and-schanuels-lemma">Syzygies and Schanuel's Lemma</h3>
+<p><strong>Definition.</strong> Let $M$ be a module and choose a projective presentation $P_1 \xrightarrow{d_1} P_0 \xrightarrow{\ \epsilon\ } M \to 0$. The submodule $\Omega M=\ker \epsilon \subseteq P_0$ is the <strong>first syzygy</strong> of $M$, and the higher syzygies are obtained by iterating the construction.</p>
+<p>The syzygy depends on the chosen $P_0$, but only up to a projective direct summand.</p>
+<p><strong>Lemma (Schanuel).</strong> If $P_0 \xrightarrow{\epsilon} M \to 0$ and $Q_0 \xrightarrow{\eta} M \to 0$ are surjections with $P_0,Q_0$ projective, then</p>
+<p>$$
+\ker \epsilon \oplus Q_0 \cong \ker \eta \oplus P_0 .
+$$</p>
+<p><em>Proof.</em> Let $X$ be the fibre product $X=\{(p,q) \in P_0\times Q_0 : \epsilon(p)=\eta(q)\}$, which is a submodule of the projective module $P_0\oplus Q_0$ sitting in the two short exact sequences $0 \to \ker\eta \to X \to P_0 \to 0$ and $0 \to \ker\epsilon \to X \to Q_0 \to 0$; both sequences split because $P_0$ and $Q_0$ are projective. Hence $\ker\epsilon\oplus Q_0 \cong X \cong \ker\eta\oplus P_0$. $\square$</p>
+<p><strong>Corollary.</strong> The first syzygy is well defined up to projective direct summands: two projective presentations of $M$ give syzygies whose direct sums with the other presentation's projective term are isomorphic. Consequently $\operatorname{pd}_R M$ is the least $n$ for which the $n$-th syzygy is projective, and this number does not depend on the chosen resolution.</p>
+<p>The corollary is the reason projective dimension is computable from any resolution: the ambiguity at each stage is a projective summ, and projective summands do not change the length at which the syzygies become projective.</p>
+<p><strong>Example (self-injective rings).</strong> Over a field every module is injective and projective. Over $\mathbb{Z}/4\mathbb{Z}$, which is not a principal ideal domain, the regular module is injective — the ring is self-injective, or quasi-Frobenius — and also projective; but the module $\mathbb{Z}/2\mathbb{Z}$ is neither. It is not injective because Baer's criterion fails on the ideal $(2)=\{0,2\}$: a homomorphism on that ideal sending $2$ to a generator of $\mathbb{Z}/2\mathbb{Z}$ cannot extend to $\mathbb{Z}/4\mathbb{Z}$, since $2g(1)=0$ for every $g$. It is not projective because $\mathbb{Z}/4\mathbb{Z}$ is local, so its finitely generated projective modules are free, and $\mathbb{Z}/2\mathbb{Z}$ is not free. The injective envelope of $\mathbb{Z}/2\mathbb{Z}$ is the whole regular module $\mathbb{Z}/4\mathbb{Z}$, which is the smallest injective containing it.</p>
+<h2 id="summary">Summary</h2>
+<p>A module $P$ is projective when maps from $P$ lift along surjections, equivalently when every short exact sequence ending in $P$ splits, equivalently when $P$ is a direct summand of a free module, equivalently when $\operatorname{Hom}_R(P,-)$ is exact. Free modules are projective, direct summands and finite direct sums of projectives are projective, and a finitely generated projective module is described by a dual basis: elements $p_i$ and functionals $f_i$ with $x=\sum_i f_i(x)p_i$. Over a local ring every finitely generated projective module is free, and over a principal ideal domain every projective module is free; over $\mathbb{Z}/6\mathbb{Z}$ the ideal $(3)$ is projective and not free.</p>
+<p>A module $I$ is injective when maps into $I$ extend along injections, equivalently when every short exact sequence starting at $I$ splits, equivalently when $\operatorname{Hom}_R(-,I)$ is exact. Baer's criterion reduces the test to ideals of $R$, and over a principal ideal domain the injective modules are exactly the divisible ones; over $\mathbb{Z}$ these are $\mathbb{Q}$, $\mathbb{Q}/\mathbb{Z}$ and their sums, while $\mathbb{Z}$ is not injective. Every module is a quotient of a projective module and a submodule of an injective module, with a unique injective envelope in the second case, so both classes are available for building resolutions.</p>
+<p>The two classes measure the failure of exactness of $\operatorname{Hom}$ in its two variables, and their numerical refinement is projective and injective dimension. Global dimension $0$ characterises the finite products of fields among commutative rings, global dimension $1$ characterises the hereditary rings and includes every principal ideal domain that is not a field, and the vanishing of $\operatorname{Ext}^1$ in the appropriate variable characterises the classes themselves.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity $1 \neq 0$ unless stated otherwise</td>
+</tr>
+<tr>
+<td>$P$, $Q$</td>
+<td>projective modules</td>
+</tr>
+<tr>
+<td>$I$</td>
+<td>injective module</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_R(M,N)$</td>
+<td>module of homomorphisms</td>
+</tr>
+<tr>
+<td>$M^*=\operatorname{Hom}_R(M,R)$</td>
+<td>dual module of $M$</td>
+</tr>
+<tr>
+<td>$p_i$, $f_i$</td>
+<td>dual basis: $x=\sum_i f_i(x)p_i$</td>
+</tr>
+<tr>
+<td>$q:B \to C$</td>
+<td>a surjection along which a projective map lifts</td>
+</tr>
+<tr>
+<td>$i:A \to B$</td>
+<td>an injection along which a map into an injective extends</td>
+</tr>
+<tr>
+<td>$J \subseteq R$</td>
+<td>an ideal, the test object in Baer's criterion</td>
+</tr>
+<tr>
+<td>$R/(a)$</td>
+<td>cyclic module; projective dimension $1$ over a PID</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}$, $k=R/\mathfrak{m}$</td>
+<td>maximal ideal and residue field of a local ring</td>
+</tr>
+<tr>
+<td>$J(R)$</td>
+<td>Jacobson radical, used in Nakayama's lemma</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$, $\mathbb{Q}/\mathbb{Z}$</td>
+<td>divisible injective abelian groups</td>
+</tr>
+<tr>
+<td>$\operatorname{Ext}^n_R(M,N)$</td>
+<td>derived functors of $\operatorname{Hom}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tor}_n^R(M,N)$</td>
+<td>derived functors of the tensor product</td>
+</tr>
+<tr>
+<td>$\operatorname{pd}_R M$, $\operatorname{id}_R M$</td>
+<td>projective and injective dimension</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[1/p]$</td>
+<td>localisation of $\mathbb{Z}$ at the prime $p$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>M. F. Atiyah and I. G. Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, 1969), for projective modules over local rings and the theory of flatness.</li>
+<li>Nicolas Bourbaki, <em>Algebra II: Chapters 4–7</em> (Springer, 2003), for injective envelopes and Baer's criterion.</li>
+<li>Henri Cartan and Samuel Eilenberg, <em>Homological Algebra</em> (Princeton University Press, 1956), for projective and injective resolutions and $\operatorname{Ext}$.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the module-theoretic basics.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for projective modules, dual bases, and non-free examples.</li>
+<li>Saunders Mac Lane, <em>Homology</em> (Springer, 1995), for the dimension theory and the derived functors.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for Baer's criterion and enough injectives.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for global dimension and the syzygy theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

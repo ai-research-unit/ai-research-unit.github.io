@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fredholm Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fredholm-theory"><strong>Fredholm Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A bounded operator between Banach spaces can fail to be invertible in two ways: it can have a kernel, and it can have a cokernel. For a large and useful class of operators both failures are finite, and the two numbers that measure them can be subtracted. That difference, the <strong>index</strong>, is an integer that survives every compact perturbation, is additive under composition and is constant on each connected component of the set of such operators; it is the first example of a topological invariant attached to an operator, and the ancestor of the index theorems of elliptic theory. The operators are the <strong>Fredholm operators</strong>, and their theory is the systematic form of the classical alternative for integral equations of the second kind: for $T=I-K$ with $K$ compact, either $Tx=y$ has a unique solution for every $y$, or the homogeneous equation has nontrivial solutions, and in the second case the number of independent solutions equals the number of independent obstructions.</p>
+<p>The article proceeds from the compact theory to the index theory. The Riesz–Schauder theory identifies the operators of the form identity minus compact with the Fredholm operators of index zero on a fixed space and gives the alternative in its classical form; the definition of a Fredholm operator then isolates the two finite-dimensionality properties, and the index is defined and shown to be stable. The central structural theorem is Atkinson's: an operator is Fredholm exactly when it is invertible modulo the compact operators, and the index measures the failure of that invertibility to be liftable. From Atkinson follow the invariance of the index under compact perturbations, its additivity under composition and the skew-symmetry $\operatorname{ind}(T^*)=-\operatorname{ind}(T)$. The article closes with the Hilbert-space form of the theory, with the Toeplitz operators as a worked class whose index is computed by a winding number, and with the elliptic operators, where the index is the object of the Atiyah–Singer theorem.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $X,Y,Z$ are Banach spaces over $\mathbb{K}$, and $T \in B(X,Y)$ means a bounded linear operator, with the operator norm and the dual as in <em>Banach and Hilbert Spaces</em>. The compact operators are those of that article, and the Riesz–Schauder and Fredholm-alternative statements recorded there are used as the starting point and extended here. The spectrum and the resolvent are those of <em>Banach and Hilbert Spaces</em>; their unbounded version, and the spectral measures of self-adjoint operators, are not covered here. The Schwartz kernel representation of an integral operator is that of <em>The Schwartz Kernel Theorem</em>; the algebra of compact operators and the Calkin algebra are developed further in <em>Operator Algebras</em>. The index theorems for elliptic operators on manifolds, of which the Toeplitz index is the model case, belong to <em>The Atiyah–Singer Index Theorem and K-Theory</em>, and the Toeplitz operators themselves are harmonic analysis, treated; both are cited rather than developed. The Hardy space $H^2$ used in the Toeplitz example is the standard one.</p>
+<p>No physics is invoked.</p>
+<h2 id="compact-operators-and-the-rieszschauder-theory">Compact Operators and the Riesz–Schauder Theory</h2>
+<h3 id="compactness">Compactness</h3>
+<p><strong>Definition.</strong> An operator $T \in B(X,Y)$ is <strong>compact</strong> if the image of the closed unit ball of $X$ is relatively compact in $Y$; equivalently, if every bounded sequence $(x_n)$ has a subsequence $(x_{n_k})$ for which $T x_{n_k}$ converges. The set of compact operators is written $\mathcal K(X,Y)$, and $\mathcal K(X)=\mathcal K(X,X)$.</p>
+<p>The compact operators form a closed two-sided ideal of $B(X)$, hence of each $B(X,Y)$; they are the closure of the finite-rank operators when $X$ or $Y$ has a Schauder basis with the approximation property, and in particular on Hilbert spaces. A compact operator is never invertible on an infinite-dimensional space, and the identity on an infinite-dimensional space is not compact: this is the Riesz lemma.</p>
+<p><strong>Theorem (Schauder).</strong> $T \in B(X,Y)$ is compact if and only if its transpose $T^* \in B(Y^*,X^*)$ is compact.</p>
+<h3 id="the-fredholm-alternative">The Fredholm Alternative</h3>
+<p><strong>Definition.</strong> For $K \in \mathcal K(X)$ the operator $T=I-K$ is a <strong>Riesz–Schauder operator</strong>. The <strong>null space</strong> of $T$ is $N(T)=\ker T$ and the <strong>range</strong> is $R(T)=T(X)$.</p>
+<p><strong>Theorem (Riesz–Schauder).</strong> Let $K \in \mathcal K(X)$ and $T=I-K$. Then:</p>
+<p>(i) $N(T)$ is finite-dimensional and $R(T)$ is closed in $X$;</p>
+<p>(ii) $X/R(T)$ is finite-dimensional and $\dim(X/R(T))=\dim N(T)$;</p>
+<p>(iii) $R(T)=R(T^m)$ and $N(T)=N(T^m)$ for every $m \ge 1$;</p>
+<p>(iv) the operator $T$ is injective if and only if it is surjective, and then it is invertible with a bounded inverse;</p>
+<p>(v) $\dim N(T)=\dim N(T^*)$, where $T^*=I-K^*$ on $X^*$ and $K^*$ is compact.</p>
+<p><strong>Theorem (Fredholm alternative).</strong> Let $K$ be compact on $X$. For the equation $Tx=y$ with $T=I-K$ exactly one of the following holds: either for every $y \in X$ there is a unique solution, or the homogeneous equation $Tx=0$ has a finite number $d\ge1$ of independent solutions, in which case $Tx=y$ is solvable exactly for those $y$ orthogonal to the $d$-dimensional solution space of the transposed homogeneous equation $T^*\varphi=0$.</p>
+<p><em>Proof.</em> The two theorems are standard; the compactness of $K$ makes the unit ball of $N(T)$ compact, so $N(T)$ is finite-dimensional; the closedness of $R(T)$ and the equality of the dimensions follow from the Riesz theory of compact operators on Banach spaces, and (iv) is the principle of the alternative. A complete proof is given in the works cited below. $\square$</p>
+<p><strong>Theorem (spectrum of a compact operator).</strong> Let $K \in \mathcal K(X)$ with $X$ infinite-dimensional. Then $\sigma(K)$ consists of $0$ together with at most countably many nonzero eigenvalues of finite algebraic multiplicity, and if there are infinitely many nonzero eigenvalues they accumulate only at $0$; the eigenspaces $N(K-\lambda)$ for $\lambda \neq0$ are finite-dimensional, and $K-\lambda$ is Fredholm of index $0$ for every $\lambda \neq0$.</p>
+<h2 id="fredholm-operators-and-the-index">Fredholm Operators and the Index</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p><strong>Definition.</strong> An operator $T \in B(X,Y)$ is <strong>Fredholm</strong> if</p>
+<p>$$
+\dim\ker T<\infty, \qquad \operatorname{codim}T(X)=\dim(Y/T(X))<\infty,
+$$</p>
+<p>the range is required to be closed so that the codimension is defined; conversely the finite-dimensionality of $Y/T(X)$ forces the range to be closed, since for a finite-dimensional complement $M$ of $T(X)$ the map $X\times M\to Y$, $(x,m)\mapsto Tx+m$, is a bounded bijection onto the Banach space $Y$ and therefore, by the open mapping theorem, a homeomorphism, which carries the closed subspace $X\times\{0\}$ onto $T(X)$. So $T$ is Fredholm exactly when $\dim\ker T<\infty$ and $\operatorname{codim}T(X)<\infty$. The <strong>index</strong> of a Fredholm operator is the integer</p>
+<p>$$
+\operatorname{ind}T=\dim\ker T-\dim\operatorname{coker}T, \qquad \operatorname{coker}T=Y/T(X).
+$$</p>
+<p>The set of Fredholm operators from $X$ to $Y$ is written $\Phi(X,Y)$, and $\Phi(X)=\Phi(X,X)$.</p>
+<p><strong>Proposition.</strong> (i) Every invertible operator is Fredholm of index $0$. (ii) If $K$ is compact then $I-K$ is Fredholm of index $0$. (iii) A finite-rank perturbation $T+F$ of a Fredholm operator is Fredholm, and its index equals that of $T$ by the stability theorem proved below.</p>
+<p><em>Proof.</em> (i) $\dim\ker T=0$ and $\operatorname{coker}T=0$. (ii) is the Riesz–Schauder theorem, part (ii). (iii) The perturbation is by a compact operator, so Fredholmness follows from the parametrix argument of Atkinson's theorem and the index equality from the invariance under compact perturbation. $\square$</p>
+<p><strong>Example (the unilateral shift).</strong> On $\ell^2$ with the standard orthonormal basis $(e_1,e_2,\dots)$, the <strong>forward shift</strong> is $S(x_1,x_2,\dots)=(0,x_1,x_2,\dots)$, and its Hilbert adjoint, the <strong>backward shift</strong>, is $S^*(x_1,x_2,\dots)=(x_2,x_3,\dots)$. Then</p>
+<p>$$
+\ker S=0, \qquad \operatorname{coker}S=\ell^2/S(\ell^2)\cong\mathbb{K}, \qquad \operatorname{ind}S=-1,
+$$</p>
+<p>because $S(\ell^2)=\{x:x_1=0\}$ is a closed hyperplane, while</p>
+<p>$$
+\ker S^*=\mathbb{K}e_1, \qquad \operatorname{coker}S^*=0, \qquad \operatorname{ind}S^*=+1 .
+$$</p>
+<p>The shift is the simplest Fredholm operator of nonzero index; it is an isometry, so it is not compact, and its index is the obstruction to its being invertible. The product $S^*S=I$ has index $0=(-1)+(+1)$, in agreement with additivity, while $SS^*$ is the orthogonal projection onto $\{x:x_1=0\}$, of index $0$ as well.</p>
+<p><strong>Example (integral operators).</strong> Let $K \in L^2(X\times Y)$ and let $T$ be the Hilbert–Schmidt operator with kernel $K$, as in <em>The Schwartz Kernel Theorem</em>. Then $T$ is compact, so $I-T$ is Fredholm of index $0$ on $L^2$, and the Fredholm alternative applies to the integral equation $u-Tu=f$: the equation is solvable for exactly those $f$ orthogonal to the solutions of the transposed homogeneous equation.</p>
+<h3 id="the-parametrix-characterisation">The Parametrix Characterisation</h3>
+<p><strong>Definition.</strong> A <strong>parametrix</strong>, or <strong>Fredholm inverse</strong>, of $T \in B(X,Y)$ is an operator $S \in B(Y,X)$ with</p>
+<p>$$
+ST=I-K_1, \qquad TS=I-K_2, \qquad K_1 \in \mathcal K(X),\ K_2 \in \mathcal K(Y).
+$$</p>
+<p><strong>Theorem (Atkinson).</strong> $T \in \Phi(X,Y)$ if and only if $T$ has a parametrix.</p>
+<p><em>Proof.</em> Let $T$ be Fredholm. Since $\ker T$ is finite-dimensional and $T(X)$ is closed with finite-dimensional complement, there are closed subspaces $X_0 \subseteq X$ and $Y_0 \subseteq Y$ with $X=\ker T\oplus X_0$, $Y=T(X)\oplus Y_0$, and $T$ maps $X_0$ bijectively onto $T(X)$; by the open mapping theorem of <em>Normed and Banach Spaces</em>, the inverse $T|_{X_0}^{-1}:T(X)\to X_0$ is bounded, and it extends to a bounded $S:Y \to X$ by setting $S=0$ on $Y_0$. Then $ST$ is the projection of $X$ onto $X_0$ along $\ker T$, so $ST=I-K_1$ with $K_1$ of finite rank, and $TS$ is the projection onto $T(X)$ along $Y_0$, so $TS=I-K_2$ with $K_2$ of finite rank; both are compact. Conversely, if $ST=I-K_1$, then $\ker T \subseteq \ker(ST)=\ker(I-K_1)$, which is finite-dimensional by Riesz–Schauder. Also $T(X)\supseteq TS(Y)=(I-K_2)(Y)$, a closed subspace of finite codimension in $Y$; a subspace containing a closed subspace of finite codimension is itself closed, since its image in the finite-dimensional quotient is a subspace and hence closed, so the range is closed, and $Y/T(X)$ is a quotient of $Y/(I-K_2)(Y)$, of dimension at most $\dim\ker(I-K_2)<\infty$, the kernel and the cokernel of the Riesz–Schauder operator $I-K_2$ having the same finite dimension. $\square$</p>
+<p><strong>Corollary (Calkin algebra).</strong> Let $\mathcal K(X)$ be the closed two-sided ideal of compact operators on $X$. Then $T$ is Fredholm if and only if its class $[T]$ in the <strong>Calkin algebra</strong> $B(X)/\mathcal K(X)$ is invertible, and the index is a homomorphism from the group of invertible elements of the Calkin algebra to $\mathbb{Z}$,</p>
+<p>$$
+\operatorname{ind}:\Phi(X)/\!\sim\;\longrightarrow\mathbb{Z}, \qquad [T]\longmapsto\operatorname{ind}T,
+$$</p>
+<p>which does not depend on the choice of representative. The Calkin algebra is a $C^*$-algebra when $X$ is a Hilbert space; its structure and the theory of its invertible elements are those of <em>Operator Algebras</em>.</p>
+<p><strong>Theorem (Atkinson's theorem, compact-perturbation form).</strong> If $T$ is Fredholm and $K$ is compact, then $T+K$ is Fredholm and</p>
+<p>$$
+\operatorname{ind}(T+K)=\operatorname{ind}T .
+$$</p>
+<p><em>Proof.</em> Let $S$ be a parametrix of $T$: $ST=I-K_1$, $TS=I-K_2$ with $K_i$ compact. Then $S(T+K)=I-K_1+SK$, and $SK$ is compact because the compact operators are an ideal; hence $I-K_1+SK=I-(K_1-SK)$ is Fredholm of index $0$ by Riesz–Schauder, so $S(T+K)$ is Fredholm; since $S$ has a parametrix $T$, the product $S(T+K)$ is Fredholm exactly when $T+K$ is, and the index of the product is additive. The same argument on the other side gives the two-sided statement. The additivity used here is proved next. $\square$</p>
+<h3 id="additivity-and-functoriality-of-the-index">Additivity and Functoriality of the Index</h3>
+<p><strong>Theorem.</strong> Let $T \in \Phi(X,Y)$ and $S \in \Phi(Y,Z)$. Then $ST \in \Phi(X,Z)$ and</p>
+<p>$$
+\operatorname{ind}(ST)=\operatorname{ind}S+\operatorname{ind}T .
+$$</p>
+<p><em>Proof.</em> That $ST$ is Fredholm follows from the parametrix characterisation: the product of parametrices is a parametrix. For the index, consider the exact sequence</p>
+<p>$$
+0 \longrightarrow \ker T \longrightarrow \ker(ST) \xrightarrow{\,T\,} \ker S \xrightarrow{\,\delta\,} \operatorname{coker}T \xrightarrow{\,S\,} \operatorname{coker}(ST) \longrightarrow \operatorname{coker}S \longrightarrow 0,
+$$</p>
+<p>where the map $\delta$ sends $y \in \ker S$ to its class in $Y/T(X)$ and the maps between cokernels are induced by $S$. Exactness is checked at each term: the image of $T|_{\ker(ST)}$ is $T(X)\cap\ker S$, which is the kernel of $\delta$; the kernel of the map $\operatorname{coker}T\to\operatorname{coker}(ST)$ is $(\ker S+T(X))/T(X)$, which is the image of $\delta$; and the last map is surjective because it is the quotient map $Z/ST(X)\to Z/S(Y)$. Taking alternating dimensions along the sequence gives</p>
+<p>$$
+0=\dim\ker T-\dim\ker(ST)+\dim\ker S-\dim\operatorname{coker}T+\dim\operatorname{coker}(ST)-\dim\operatorname{coker}S,
+$$</p>
+<p>which rearranges to $\operatorname{ind}(ST)=\operatorname{ind}S+\operatorname{ind}T$. $\square$</p>
+<p><strong>Theorem.</strong> For $T \in \Phi(X,Y)$, the transpose $T^*$ is Fredholm from $Y^*$ to $X^*$ and</p>
+<p>$$
+\operatorname{ind}T^*=-\operatorname{ind}T, \qquad \dim\operatorname{coker}T=\dim\ker T^* .
+$$</p>
+<p><em>Proof.</em> The annihilator of $T(X)$ in $Y^*$ is $\ker T^*$, and the annihilator of $\ker T$ in $X^*$ is the image $T^*(Y^*)$ when the range is closed; these are the standard duality identities of <em>Duality Theory</em>. Hence $\operatorname{coker}T=Y/T(X)$ has dual $\ker T^*$, so the two spaces have the same finite dimension, and $\dim\operatorname{coker}T^*=\dim\ker T$. Therefore</p>
+<p>$$
+\operatorname{ind}T^*=\dim\ker T^*-\dim\operatorname{coker}T^*=\dim\operatorname{coker}T-\dim\ker T=-\operatorname{ind}T . \qquad\square
+$$</p>
+<p><strong>Corollary.</strong> $\operatorname{ind}T=0$ for every $T \in \Phi(X)$ of the form $T=I-K$ with $K$ compact, in agreement with Riesz–Schauder; more generally, an operator is Fredholm if and only if it is a compact perturbation of an invertible operator of the same index.</p>
+<h3 id="stability-and-continuity-of-the-index">Stability and Continuity of the Index</h3>
+<p><strong>Theorem (openness).</strong> $\Phi(X,Y)$ is open in $B(X,Y)$ and the index is constant on each connected component of $\Phi(X,Y)$; consequently the index is a homotopy invariant: if $t \mapsto T_t$ is a continuous path in $\Phi(X,Y)$ then $\operatorname{ind}T_t$ is independent of $t$.</p>
+<p><em>Proof.</em> Let $T$ be Fredholm with parametrix $S$, so $ST=I-K_1$ and $TS=I-K_2$ with $K_1,K_2$ compact. Let $\|A\|<\|S\|^{-1}$, so $\|SA\|<1$ and $I+SA$ is invertible with inverse given by the Neumann series. Then</p>
+<p>$$
+S(T+A)=ST+SA=I+SA-K_1=(I+SA)\bigl(I-(I+SA)^{-1}K_1\bigr),
+$$</p>
+<p>and $(I+SA)^{-1}K_1$ is compact because the compact operators are an ideal; by Riesz–Schauder the factor $I-(I+SA)^{-1}K_1$ is Fredholm of index $0$, so $S(T+A)$ is Fredholm, and since $S$ is Fredholm with parametrix $T$, the class $[T+A]=[S]^{-1}[S(T+A)]$ is invertible in the Calkin algebra; hence $T+A$ is Fredholm. For the index, additivity applied to $S(T+A)$ gives $\operatorname{ind}(S(T+A))=0=\operatorname{ind}S+\operatorname{ind}(T+A)$, while additivity applied to $ST$ gives $\operatorname{ind}S+\operatorname{ind}T=0$; subtracting, $\operatorname{ind}(T+A)=\operatorname{ind}T$. The estimate is uniform on the ball of radius $\|S\|^{-1}$ about $T$, so the index is locally constant on $\Phi(X,Y)$ and hence constant on each connected component; a continuous path lies in one component. $\square$</p>
+<p><strong>Corollary (invariance).</strong> The index is invariant under compact perturbation, under finite-rank perturbation, under composition with invertible operators, $\operatorname{ind}(UTV)=\operatorname{ind}T$ for invertible $U,V$ of the appropriate spaces, and under transposition up to sign.</p>
+<p><strong>Corollary (essential spectrum).</strong> For $T \in B(X)$ the <strong>essential spectrum</strong> is</p>
+<p>$$
+\sigma_{\mathrm{ess}}(T)=\{\lambda \in \mathbb{K}:T-\lambda \notin \Phi(X)\},
+$$</p>
+<p>a closed subset of $\sigma(T)$. Every compact perturbation of $T$ has the same essential spectrum, because compact perturbations preserve Fredholmness and the index; this is Weyl's theorem. The index function $\lambda \mapsto \operatorname{ind}(T-\lambda)$ is constant on each component of the complement of $\sigma_{\mathrm{ess}}(T)$, and the study of this function is the starting point of the index theory of families of operators.</p>
+<h2 id="fredholm-operators-on-hilbert-space">Fredholm Operators on Hilbert Space</h2>
+<h3 id="adjoints-and-orthogonal-splittings">Adjoints and Orthogonal Splittings</h3>
+<p><strong>Definition.</strong> Let $H$ be a Hilbert space and $T \in B(H)$. The <strong>Hilbert adjoint</strong> $T^{\dagger}$ is defined by $\langle Tx,y\rangle=\langle x,T^{\dagger}y\rangle$.</p>
+<p><strong>Theorem.</strong> Let $T \in B(H)$ be Fredholm. Then</p>
+<p>$$
+H=\ker T \oplus (\ker T)^\perp=\overline{T(H)}\oplus\ker T^{\dagger}, \qquad T(H)=\ker(T^{\dagger})^\perp ,
+$$</p>
+<p>the map $T|_{(\ker T)^\perp}:(\ker T)^\perp \to T(H)$ is a topological isomorphism, and</p>
+<p>$$
+\operatorname{ind}T=\dim\ker T-\dim\ker T^{\dagger} .
+$$</p>
+<p>Moreover $T$ is Fredholm if and only if $T^{\dagger}$ is, and $\operatorname{ind}T^{\dagger}=-\operatorname{ind}T$.</p>
+<p><em>Proof.</em> The orthogonal decomposition $H=\overline{T(H)}\oplus T(H)^\perp$ and the identity $T(H)^\perp=\ker T^{\dagger}$ are the standard orthogonal-projection facts of <em>Banach and Hilbert Spaces</em>; the range $T(H)$ is closed and equals $\ker(T^{\dagger})^\perp$. The restriction is injective by the definition of $(\ker T)^\perp$ and surjective onto $T(H)$, and it is bounded below, hence a topological isomorphism. The formula for the index is $\dim\ker T-\dim\operatorname{coker}T=\dim\ker T-\dim\ker T^{\dagger}$. $\square$</p>
+<p><strong>Corollary (Fredholm operators and the polar decomposition).</strong> If $T \in B(H)$ is Fredholm, then $T^{\dagger}T$ and $TT^{\dagger}$ are Fredholm of index $0$, and $T=U|T|$ with $|T|=(T^{\dagger}T)^{1/2}$ and $U$ the partial isometry that is unitary from $(\ker T)^\perp$ onto $T(H)$, the pair $(U,|T|)$ being determined uniquely by these properties; the positive operator $T^{\dagger}T$ is invertible on $(\ker T)^\perp$, its kernel is exactly $\ker T$, and that kernel is finite-dimensional because $T$ is Fredholm.</p>
+<h3 id="toeplitz-operators-and-the-winding-number">Toeplitz Operators and the Winding Number</h3>
+<p>Let $S^1 \subseteq \mathbb{C}$ be the unit circle and let $H^2(S^1) \subseteq L^2(S^1)$ be the Hardy space of functions whose negative Fourier coefficients vanish, with the orthogonal projection $P$. For $\varphi \in C(S^1)$ the <strong>Toeplitz operator</strong> with symbol $\varphi$ is</p>
+<p>$$
+T_\varphi:H^2 \to H^2, \qquad T_\varphi f=P(\varphi f).
+$$</p>
+<p><strong>Theorem (Toeplitz index theorem).</strong> Let $\varphi \in C(S^1)$ be nowhere vanishing and let $\operatorname{wind}(\varphi)$ be the winding number of $\varphi$ about $0$. Then $T_\varphi$ is Fredholm and</p>
+<p>$$
+\operatorname{ind}T_\varphi=-\operatorname{wind}(\varphi).
+$$</p>
+<p><em>Proof (sketch).</em> The symbol map is a homomorphism modulo compacts: $T_\varphi T_\psi-T_{\varphi\psi}$ is compact, so $T_\varphi$ is invertible in the Calkin algebra exactly when $\varphi$ is invertible in $C(S^1)$, that is, nowhere vanishing. The index is then computed on the generator: for $\varphi(z)=z$ the operator $T_z$ is the forward shift on $H^2$, whose index is $-1$ by the computation above, and $\operatorname{wind}(z)=1$; since the winding number is additive under multiplication and the index is additive under composition, the identity holds on the dense subalgebra generated by the monomials and extends by continuity and the homotopy invariance of both sides. $\square$</p>
+<p>The theorem is the model of an index theorem: an analytic integer, the index, equals a topological integer, the winding number, and the equality is proved by checking one generator. The Toeplitz operators, their symbols and their Fredholm theory are developed; the Hardy space and its projection are the standard ones. The generalisation to an elliptic operator on a closed manifold replaces the winding number by a topological invariant of the symbol, and the result is the Atiyah–Singer index theorem, treated in <em>The Atiyah–Singer Index Theorem and K-Theory</em>.</p>
+<h3 id="elliptic-operators">Elliptic Operators</h3>
+<p><strong>Theorem (Fredholm property of elliptic operators).</strong> Let $P$ be an elliptic linear differential operator of order $m$ on a closed manifold $M$, acting between the Sobolev spaces $H^s(M)$ and $H^{s-m}(M)$. Then $P$ extends to a Fredholm operator for every $s$, its kernel consists of smooth functions and is finite-dimensional, and $\operatorname{ind}P$ is independent of $s$.</p>
+<p><em>Proof (sketch).</em> The parametrix of <em>Distributions and Fundamental Solutions</em> is a pseudodifferential operator $E$ with $PE=I-R$ and $EP=I-R'$ with smoothing remainders; smoothing operators are compact by the Sobolev embedding $H^s\hookrightarrow H^{s-m}$, so $E$ is a parametrix in the sense above and Atkinson's theorem applies. The regularity of the kernel and the independence of $s$ are the elliptic regularity and the smoothing property. $\square$</p>
+<p><strong>Example (the Cauchy–Riemann operator).</strong> On the Riemann sphere the Cauchy–Riemann operator $\bar\partial$ acting from functions to $(0,1)$-forms is Fredholm: its kernel is the constants, of dimension $1$, and its cokernel vanishes, so its index is $1$, the arithmetic genus of the sphere. It is the prototype of the Atiyah–Singer computation, in which the index of an elliptic operator is evaluated by topological data of its symbol; the examples, including the de Rham and Dolbeault complexes and their indices in terms of characteristic classes, belong to <em>The Atiyah–Singer Index Theorem and K-Theory</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A compact operator $K$ makes $I-K$ a Riesz–Schauder operator: its kernel and cokernel are finite-dimensional of equal dimension, its range is closed and it is invertible as soon as it is injective, and the spectrum of a compact operator consists of $0$ and countably many nonzero eigenvalues of finite multiplicity accumulating only at $0$; this is the Fredholm alternative for integral equations of the second kind. A bounded operator $T:X\to Y$ is <strong>Fredholm</strong> when its kernel and its cokernel are finite-dimensional, and its <strong>index</strong> is $\operatorname{ind}T=\dim\ker T-\dim\operatorname{coker}T$, an integer; invertible operators have index $0$, and so do the operators $I-K$ with $K$ compact.</p>
+<p>The structural theorem is <strong>Atkinson's</strong>: $T$ is Fredholm if and only if it has a parametrix $S$ with $ST-I$ and $TS-I$ compact, equivalently if and only if its class in the Calkin algebra $B(X)/\mathcal K(X)$ is invertible. From this follow the invariance of the index under compact perturbations, its additivity $\operatorname{ind}(ST)=\operatorname{ind}S+\operatorname{ind}T$ under composition, its skew-symmetry $\operatorname{ind}T^*=-\operatorname{ind}T$ together with $\dim\operatorname{coker}T=\dim\ker T^*$, and the openness of the set of Fredholm operators with an index that is locally constant and therefore homotopy invariant. On a Hilbert space the orthogonal splittings $H=\ker T\oplus(\ker T)^\perp=T(H)\oplus\ker T^{\dagger}$ identify the cokernel with $\ker T^{\dagger}$ and give $\operatorname{ind}T=\dim\ker T-\dim\ker T^{\dagger}$. The unilateral shift on $\ell^2$ is the standard Fredholm operator of nonzero index, $\operatorname{ind}S=-1$, and it generates the Toeplitz example: for a nowhere-vanishing continuous symbol $\varphi$ on the circle, $\operatorname{ind}T_\varphi=-\operatorname{wind}(\varphi)$. Elliptic operators on closed manifolds are Fredholm between Sobolev spaces, with a parametrix supplied by the pseudodifferential calculus, and their index is the object of the Atiyah–Singer theorem.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X,Y,Z$</td>
+<td>Banach spaces; $H$ a Hilbert space</td>
+</tr>
+<tr>
+<td>$B(X,Y)$, $B(X)$</td>
+<td>bounded operators</td>
+</tr>
+<tr>
+<td>$\mathcal K(X,Y)$, $\mathcal K(X)$</td>
+<td>compact operators</td>
+</tr>
+<tr>
+<td>$T^*$, $T^{\dagger}$</td>
+<td>Banach transpose and Hilbert adjoint</td>
+</tr>
+<tr>
+<td>$N(T)=\ker T$, $R(T)=T(X)$</td>
+<td>kernel and range</td>
+</tr>
+<tr>
+<td>$\operatorname{coker}T=Y/T(X)$</td>
+<td>cokernel</td>
+</tr>
+<tr>
+<td>$\Phi(X,Y)$, $\Phi(X)$</td>
+<td>Fredholm operators</td>
+</tr>
+<tr>
+<td>$\operatorname{ind}T$</td>
+<td>Fredholm index $\dim\ker T-\dim\operatorname{coker}T$</td>
+</tr>
+<tr>
+<td>$S$, $K_1$, $K_2$</td>
+<td>parametrix and compact remainders</td>
+</tr>
+<tr>
+<td>$B(X)/\mathcal K(X)$</td>
+<td>Calkin algebra</td>
+</tr>
+<tr>
+<td>$\sigma(T)$, $\sigma_{\mathrm{ess}}(T)$</td>
+<td>spectrum and essential spectrum</td>
+</tr>
+<tr>
+<td>$S$, $S^*$</td>
+<td>forward and backward shift on $\ell^2$</td>
+</tr>
+<tr>
+<td>$H^2(S^1)$, $P$, $T_\varphi$</td>
+<td>Hardy space, Szegő projection, Toeplitz operator</td>
+</tr>
+<tr>
+<td>$\operatorname{wind}(\varphi)$</td>
+<td>winding number of a symbol</td>
+</tr>
+<tr>
+<td>$H^s(M)$</td>
+<td>Sobolev space on a manifold</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>smoothing remainder of a parametrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ivar Fredholm, "Sur une classe d'équations fonctionnelles", <em>Acta Mathematica</em> 27 (1903), 365–390, for the original integral-equation theory and the alternative.</li>
+<li>Friedrich Riesz, "Über lineare Funktionalgleichungen", <em>Acta Mathematica</em> 41 (1918), 71–98, for the Riesz–Schauder theory of compact operators.</li>
+<li>Stefan Banach, <em>Théorie des opérations linéaires</em> (Warsaw, 1932), for the Fredholm theory in Banach spaces and the open mapping background.</li>
+<li>Frederick V. Atkinson, "The normal solvability of linear equations in normed spaces", <em>Matematicheskii Sbornik</em> 28 (1951), 3–14, for the theorem characterising Fredholm operators by invertibility modulo compacts.</li>
+<li>Israel Gohberg, Seymour Goldberg and Marinus A. Kaashoek, <em>Classes of Linear Operators</em>, vol. 1 (Birkhäuser, 1990), for the operator-theoretic Fredholm theory, the index and its stability.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for Fredholm operators, the essential spectrum and the invariance of the index.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The index of elliptic operators I", <em>Annals of Mathematics</em> 87 (1968), 484–530, for the index theorem of which the Toeplitz theorem is the model case.</li>
+<li>Ronald G. Douglas, <em>Banach Algebra Techniques in Operator Theory</em> (Springer, 2nd ed. 1998), for the Calkin algebra, Toeplitz operators and their index.</li>
+<li>Albrecht Böttcher and Bernd Silbermann, <em>Analysis of Toeplitz Operators</em> (Springer, 2nd ed. 2006), for the Toeplitz index theorem in its general form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

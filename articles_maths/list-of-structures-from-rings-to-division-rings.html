@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Structures from Rings to Division Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-structures-from-rings-to-division-rings"><strong>List of Structures from Rings to Division Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the non-commutative ladder of the corpus: ring, non-commutative domain, Ore domain, division ring, field. Every entry points to the article that introduces the structure.</p>
+<p>Each rung is recorded with the property it gains over the rung below and with the object that shows the gain is strict, together with the place of the standard objects $\mathbb{H}$, the biquaternions, the split-biquaternions, the free algebra and the Weyl algebra. Commutativity is not a rung of this ladder: it is a separate hypothesis, and the ladder meets the commutative one only at the fields.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side, and it records the objects that are expected on the ladder and are not on it.</p>
+<h2 id="the-ladder">The Ladder</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>The property it adds</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ring</td>
+<td>associative multiplication with a unit $1 \neq 0$</td>
+<td><em>Rings</em></td>
+</tr>
+<tr>
+<td>non-commutative domain</td>
+<td>no zero divisors, and cancellation on both sides</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+<tr>
+<td>Ore domain</td>
+<td>the Ore condition, so that a division ring of fractions exists</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>division ring</td>
+<td>every nonzero element is a unit</td>
+<td><em>Division Rings</em></td>
+</tr>
+<tr>
+<td>field</td>
+<td>commutativity, in addition</td>
+<td><em>Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The first step, from a ring to a non-commutative domain, is not the commutative step from a commutative ring to an integral domain: the definition is the same absence of zero divisors, but a non-commutative domain need not be commutative, and its left ideals and right ideals need not match. The intersection of the two ladders is exactly the integral domains, and the top rungs meet exactly at the fields.</p>
+<h2 id="the-strictness-of-each-step">The Strictness of Each Step</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Implication</th>
+<th>The property whose loss the witness shows</th>
+<th>Witness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a non-commutative domain is a ring</td>
+<td>no zero divisors</td>
+<td>$M_2(\mathbb{R})$</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>an Ore domain is a non-commutative domain</td>
+<td>the Ore condition</td>
+<td>the free algebra $R\langle x_1, \dots, x_n\rangle$</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>a division ring is an Ore domain</td>
+<td>every nonzero element a unit</td>
+<td>the Weyl algebra $A_1(k)$</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>a field is a division ring</td>
+<td>commutativity</td>
+<td>$\mathbb{H}$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The witness for the first step is recorded also in <em>List of Non-Commutative Rings</em> and in <em>List of Zero Divisors and Nilpotents</em>; $M_2(\mathbb{R})$ is the standard matrix ring with zero divisors. The free algebra is a domain, and it is the standard non-Ore domain: it has no division ring of fractions, and its failure is recorded in <em>Ore Domains and Division Rings of Fractions</em>. The Weyl algebra $A_1(k)$ is a domain that does satisfy the Ore condition, so it embeds in a division ring of fractions that is not a field; the ring $A_1(k)$ itself is not a division ring.</p>
+<h2 id="the-objects-of-the-ladder">The Objects of the Ladder</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Rung it reaches</th>
+<th>Comment</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>division ring</td>
+<td>every nonzero element is a unit; the centre is $\mathbb{R}$, over which it is a four-dimensional algebra; not a field</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>division ring of fractions of $A_1(k)$</td>
+<td>division ring</td>
+<td>infinite-dimensional over its centre</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>the free field</td>
+<td>division ring</td>
+<td>the universal division ring generated by a free algebra</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>central simple algebras over a field</td>
+<td>division ring when they are division algebras</td>
+<td>finite-dimensional over their centre</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>$A_1(k)$</td>
+<td>Ore domain</td>
+<td>a domain that is not a division ring</td>
+<td><em>Quotients of the Tensor Algebra</em></td>
+</tr>
+<tr>
+<td>$R\langle x_1, \dots, x_n\rangle$</td>
+<td>non-commutative domain</td>
+<td>not Ore</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$k[G]$, $G$ torsion-free</td>
+<td>non-commutative domain</td>
+<td>no zero divisors</td>
+<td><em>Non-Commutative Domains</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>ring</td>
+<td>zero divisors, so not a domain</td>
+<td><em>Split-Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>ring</td>
+<td>zero divisors, so not a domain; simple</td>
+<td><em>Biquaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>ring</td>
+<td>zero divisors</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>field</td>
+<td>the top rung, reached from the commutative side</td>
+<td><em>The Rational Numbers</em>, <em>The Real Numbers</em>, <em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>a number field $K$</td>
+<td>field</td>
+<td>the top rung; $\mathcal{O}_K$ is its domain of integers</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$, $\mathbb{F}_q$</td>
+<td>field</td>
+<td>finite, hence commutative by Wedderburn's little theorem</td>
+<td><em>Finite Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The biquaternions $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ and the split-biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ are the two eight-dimensional relatives of $\mathbb{H}$ that lie at the bottom rung: both acquire zero divisors, and neither is a domain. The biquaternions are simple, so they have no nontrivial two-sided ideals, but they are not division rings; this is the first point at which the loss of the norm form's definiteness is visible in the ladder.</p>
+<h2 id="why-commutativity-is-a-separate-branch">Why Commutativity Is a Separate Branch</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>a division ring, but not commutative</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>the division ring of fractions of $A_1(k)$</td>
+<td>a division ring, but not commutative</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>the free field</td>
+<td>a division ring, generated by a free algebra, but not commutative</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>not a domain, and not commutative</td>
+<td><em>Biquaternion Zero Divisors</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Commutativity is not implied by the absence of zero divisors, and it is not implied by the division-ring property: $\mathbb{H}$ is a division ring in which $e_1 e_2 = -e_2 e_1$, so it reaches the top of the non-commutative ladder without reaching the field. A commutative division ring is a field, by definition, so the two ladders share their top rung and no other. By Wedderburn's little theorem every finite division ring is a field; consequently every skew field is infinite, and the finite fields of <em>Finite Fields</em> lie on the commutative ladder only.</p>
+<h2 id="the-centre-of-each-division-ring">The Centre of Each Division Ring</h2>
+<p>Every division ring is an algebra over its centre, and the centre is a field. The dimension over the centre is the invariant that separates the finite-dimensional examples from the infinite-dimensional ones.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Division ring</th>
+<th>Centre</th>
+<th>Dimension over the centre</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{R}$</td>
+<td>$4$, finite</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>a central simple division algebra over a field $k$</td>
+<td>$k$</td>
+<td>finite, equal to the square of its degree</td>
+<td><em>Central Simple Algebras and the Brauer Group</em></td>
+</tr>
+<tr>
+<td>the division ring of fractions of $A_1(k)$</td>
+<td>the ground field $k$</td>
+<td>infinite</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>the free field</td>
+<td>the ground field $k$</td>
+<td>infinite</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A division ring of finite dimension over its centre is a division algebra in the sense of <em>Division Algebras</em>; the theorem of Frobenius classifies those over $\mathbb{R}$ as $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and <em>Division Algebras</em> records that classification. The infinite-dimensional examples are the reason the ladder is stated for rings rather than only for finite-dimensional algebras.</p>
+<h2 id="the-place-of-the-finite-division-rings">The Place of the Finite Division Rings</h2>
+<p>By Wedderburn's little theorem, stated and proved in <em>Division Rings</em>, every finite division ring is a field. The consequence for this ladder is that a skew field is never finite: every division ring that is not a field is an infinite object. The finite fields $\mathbb{F}_p$ and $\mathbb{F}_q$ of <em>Finite Fields</em> therefore lie on the commutative ladder of <em>List of Structures from Rings to Fields</em> and are not non-commutative examples; the theorem is the reason, and a catalogue records the reason.</p>
+<h2 id="two-chains-one-top">Two Chains, One Top</h2>
+<p>The two ladders of this pair of articles run in parallel and meet at the top. The commutative ladder, with its GCD/Bézout refinement, is <em>List of Structures from Rings to Fields</em>. The non-commutative ladder is this article, and it replaces the divisibility rungs by the Ore condition and the division-ring property. The only common rung above the ring is the field: an integral domain that is a division ring is a field, while a non-commutative domain that is a division ring is a skew field, which is not a field. That asymmetry, and not a difference of size, is why the corpus keeps the two chains apart.</p>
+<h2 id="warnings-objects-expected-and-absent">Warnings: Objects Expected and Absent</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not on this ladder</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>a division algebra whose multiplication is not associative, so not a ring and not a domain</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{S}$</td>
+<td>the sedenions, with zero divisors and non-associative multiplication</td>
+<td><em>Division Algebras</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>commutative domains; they lie on the ladder of <em>List of Structures from Rings to Fields</em></td>
+<td><em>The Integers</em>, <em>The Rational Numbers</em>, <em>The Real Numbers</em>, <em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>the zero ring $\{0\}$</td>
+<td>excluded by the convention $1 \neq 0$</td>
+<td><em>Rings</em>, §2</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the five rungs from a ring to a field through the non-commutative domain, the Ore domain and the division ring, with the witness at each strict step. It has placed $\mathbb{H}$ at the division-ring rung, the biquaternions and the split-biquaternions at the ring rung, the Weyl algebra at the Ore-domain rung and the free algebra at the non-commutative-domain rung, and it has recorded that commutativity is a hypothesis separate from the existence of inverses. Wedderburn's little theorem, stated in <em>Division Rings</em>, is the reason the finite fields do not appear on the non-commutative ladder.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its structures and objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The real quaternions; the standard non-commutative division ring</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>The split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>The biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{O}$, $\mathbb{S}$</td>
+<td>The octonions and the sedenions; not rings</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$, $M_n(R)$</td>
+<td>Matrix rings</td>
+</tr>
+<tr>
+<td>$A_1(k)$</td>
+<td>The Weyl algebra $k\langle x,y\rangle/(yx - xy - 1)$</td>
+</tr>
+<tr>
+<td>$R\langle x_1, \dots, x_n\rangle$</td>
+<td>The free algebra</td>
+</tr>
+<tr>
+<td>$k[G]$</td>
+<td>The group algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>The commutative number systems</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the ladder of non-commutative rings and their division rings of fractions.</li>
+<li>Paul M. Cohn, <em>Skew Fields: Theory of General Division Rings</em> (Cambridge University Press, 1995), for the Ore condition and the construction of division rings of fractions.</li>
+<li>Nathan Jacobson, <em>Finite-Dimensional Division Algebras over Fields</em> (Springer, 1996), for the central simple division algebras and the place of the quaternions among them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

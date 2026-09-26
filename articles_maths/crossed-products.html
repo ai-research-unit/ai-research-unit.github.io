@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crossed Products — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="crossed-products"><strong>Crossed Products</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>crossed product</strong> is the algebra obtained by adjoining to an algebra $A$ a group $G$ that acts on it, with the elements of $G$ multiplying one another only up to factors taken from $A$. It is the general construction of which the group algebra is the simplest case — the one in which $A$ is the ground field, the action is trivial and the factors are all $1$ — and it is the construction that realises the central simple algebras of the preceding article, because every central simple algebra split by a finite Galois extension is a crossed product of that extension by its Galois group.</p>
+<p>The article begins with group actions on an algebra, the skew group ring and the passage from a grading to a crossed product. It then defines the crossed product $A \rtimes_c G$ through a factor set $c$, proves the cocycle condition that makes the multiplication associative, and develops the twisted group algebra $F^\alpha G$ as the case of trivial action. The classification of factor sets up to equivalence is a second cohomology group, and that group is identified with the relative Brauer group of the preceding article. The crossed-product construction itself is due to the theory of central simple algebras, and it is the algebraic ancestor of the operator-algebraic construction of the same name, which belongs to a later Part.</p>
+<p>Throughout, $F$ is a field, $G$ a group written multiplicatively with identity $1$, and $A$ a finite-dimensional unital associative $F$-algebra. An <strong>action</strong> of $G$ on $A$ is a homomorphism $\alpha : G \to \operatorname{Aut}_F(A)$ of groups; we write $\alpha_\sigma$ for the automorphism attached to $\sigma$ and often $\sigma \cdot a$ for $\alpha_\sigma(a)$.</p>
+<h2 id="group-actions-and-graded-algebras">Group Actions and Graded Algebras</h2>
+<h3 id="actions-of-a-group-on-an-algebra">Actions of a group on an algebra</h3>
+<p>An action of $G$ on $A$ is the same data as an algebra homomorphism $F[G] \to \operatorname{End}_F(A)$ whose image lies in the automorphism group; equivalently, it makes $A$ a module over the group algebra $F[G]$ on which every group element acts as an algebra automorphism. The <strong>fixed subalgebra</strong> is</p>
+<p>$$
+A^G = \{a \in A : \alpha_\sigma(a) = a \ \text{for all } \sigma \in G\},
+$$</p>
+<p>a unital subalgebra of $A$. If $A = \prod_i A_i$ is a product of algebras, an automorphism permutes the factors; the action is <strong>faithful</strong> if $\alpha_\sigma \neq \mathrm{id}$ for $\sigma \neq 1$, and it is <strong>inner</strong> if each $\alpha_\sigma$ is the inner automorphism $a \mapsto u_\sigma a u_\sigma^{-1}$ for some unit $u_\sigma \in A^\times$. Inner actions are the ones that already live inside $A$, and they lead to the identification $A \rtimes_c G \cong A \otimes_F F^\alpha G$ in the cases where the units can be chosen consistently; the general theory of automorphisms is .</p>
+<h3 id="the-skew-group-ring">The skew group ring</h3>
+<p><strong>Definition.</strong> Let $G$ act on $A$. The <strong>skew group ring</strong> $A * G$ is the free left $A$-module with basis the symbols $\{u_\sigma\}_{\sigma \in G}$, with the multiplication determined by</p>
+<p>$$
+u_\sigma a = \alpha_\sigma(a) u_\sigma, \qquad u_\sigma u_\tau = u_{\sigma\tau}, \qquad (\sigma, \tau \in G,\ a \in A).
+$$</p>
+<p>The relations force $u_1 = 1$ and make $A * G$ a unital associative $F$-algebra, free as a left $A$-module of rank $\lvert G\rvert$ when $G$ is finite. The subalgebra $A u_1 \cong A$ is the <strong>coefficient algebra</strong>, and the decomposition into the $A$-submodules $A u_\sigma$ is a $G$-grading in the sense of the next paragraph. The skew group ring is the crossed product for the trivial factor set $c \equiv 1$, and it is a special case of the general construction below.</p>
+<p><strong>Example (a semidirect product).</strong> Let $H$ and $G$ be groups, let $G$ act on $H$ by automorphisms, and let $H \rtimes G$ be the semidirect product. Then the action of $G$ on $H$ extends to an action on the group algebra $F[H]$ by algebra automorphisms, and there is an isomorphism</p>
+<p>$$
+F[H] * G \;\cong\; F[H \rtimes G], \qquad h u_\sigma \longmapsto (h, \sigma),
+$$</p>
+<p>because both sides have the same multiplication on the generators. For $H$ cyclic generated by $x$ and $G$ of order $2$ acting by $x \mapsto x^{-1}$, this exhibits the group algebra of the dihedral group $F[D_{2n}] \cong F[C_n] * C_2$ as a skew group ring.</p>
+<h3 id="graded-algebras">Graded algebras</h3>
+<p><strong>Definition.</strong> A <strong>$G$-graded algebra</strong> is an algebra $B$ together with a direct-sum decomposition $B = \bigoplus_{\sigma \in G} B_\sigma$ into linear subspaces, indexed by the group $G$, such that $B_\sigma B_\tau \subseteq B_{\sigma\tau}$. A <strong>graded homomorphism</strong> is an algebra homomorphism $\varphi : B \to B'$ with $\varphi(B_\sigma) \subseteq B'_\sigma$.</p>
+<p>For a crossed product the graded pieces are the $A$-submodules $B_\sigma = A u_\sigma$, each an $(A, A)$-bimodule because $u_\sigma A u_\sigma^{-1} = \alpha_\sigma(A) = A$. The <strong>degree-zero part</strong> $B_1$ is always a subalgebra; in a crossed product $B_1 = A$, and each $B_\sigma$ is an invertible $(A,A)$-bimodule with inverse $B_{\sigma^{-1}}$, because $u_\sigma u_{\sigma^{-1}} = c(\sigma,\sigma^{-1})u_1$ is a unit of $A$. This is the structural reason a crossed product is determined by its degree-zero part together with the grading: the homogeneous components are the "twists" of $A$ by the automorphisms of the action.</p>
+<h2 id="crossed-products_1">Crossed Products</h2>
+<h3 id="factor-sets-and-the-definition">Factor sets and the definition</h3>
+<p><strong>Definition.</strong> Let $G$ act on $A$ and let $c : G \times G \to A^\times$ be a function. The <strong>crossed product</strong> $A \rtimes_c G$ is the free left $A$-module with basis $\{u_\sigma\}_{\sigma\in G}$, with multiplication</p>
+<p>$$
+u_\sigma a = \alpha_\sigma(a)\, u_\sigma, \qquad u_\sigma u_\tau = c(\sigma,\tau)\, u_{\sigma\tau}, \qquad (\sigma,\tau \in G,\ a \in A).
+$$</p>
+<p>The function $c$ is the <strong>factor set</strong>, and the requirement that this multiplication be associative is a condition on $c$ that the next proposition makes explicit.</p>
+<p><strong>Proposition (the cocycle condition).</strong> The multiplication of $A \rtimes_c G$ is associative if and only if</p>
+<p>$$
+c(\sigma,\tau)\, c(\sigma\tau,\rho) = \alpha_\sigma\bigl(c(\tau,\rho)\bigr)\, c(\sigma,\tau\rho) \qquad \text{for all } \sigma,\tau,\rho \in G ,
+$$</p>
+<p>and then $A \rtimes_c G$ is a unital $G$-graded algebra with $1$-component $A$ if and only if $c$ is <strong>normalised</strong>, $c(1,\sigma) = 1 = c(\sigma,1)$ for all $\sigma$.</p>
+<p><em>Proof.</em> Compute $(u_\sigma u_\tau)u_\rho$ and $u_\sigma(u_\tau u_\rho)$ using the relations. The first is</p>
+<p>$$
+(u_\sigma u_\tau)u_\rho = c(\sigma,\tau) u_{\sigma\tau} u_\rho = c(\sigma,\tau)c(\sigma\tau,\rho) u_{\sigma\tau\rho},
+$$</p>
+<p>and the second is</p>
+<p>$$
+u_\sigma(u_\tau u_\rho) = u_\sigma c(\tau,\rho) u_{\tau\rho} = \alpha_\sigma\bigl(c(\tau,\rho)\bigr) u_\sigma u_{\tau\rho} = \alpha_\sigma\bigl(c(\tau,\rho)\bigr)c(\sigma,\tau\rho) u_{\sigma\tau\rho},
+$$</p>
+<p>so the two agree for all basis elements exactly when the displayed identity holds. A function satisfying it is a <strong>$2$-cocycle</strong> for the action, and the set of such functions is written $Z^2(G, A^\times)$; it is a group under pointwise multiplication, because $\alpha_\sigma$ is multiplicative and $A^\times$ is a group. A general cocycle is replaced by the normalised one $\tilde c(\sigma,\tau) = c(1,1)^{-1}c(\sigma,\tau)$, which yields the same algebra up to isomorphism, so we assume normalisation from now on. $\square$</p>
+<h3 id="basic-properties">Basic properties</h3>
+<p><strong>Proposition.</strong> Let $B = A \rtimes_c G$ with $G$ finite.</p>
+<ol>
+<li>$B$ is a free left $A$-module and a free right $A$-module of rank $\lvert G\rvert$; if $\dim_F A < \infty$ then $\dim_F B = \lvert G\rvert \dim_F A$.</li>
+<li>$B$ is a $G$-graded algebra with $B_\sigma = A u_\sigma$.</li>
+<li>$A$ is a subalgebra of $B$, and $A$ is an ideal of $B$ if and only if the action of $G$ on $A$ is trivial.</li>
+<li>The centre of $B$ is
+$$
+Z(B) = \{a \in A : \alpha_\sigma(a) = a \ \forall \sigma\} \cap \{a : a\, c(\sigma,\tau) = c(\sigma,\tau)\,\alpha_\sigma(a) \ \forall \sigma,\tau\} .
+$$</li>
+</ol>
+<p><em>Proof.</em> 1 and 2 are immediate from the definition. For 3, $u_\sigma A = A u_\sigma$ always, so $A$ is an ideal exactly when $u_\sigma A \subseteq A$ for all $\sigma$, that is, when $\alpha_\sigma(A) \subseteq A$ with equality, which holds automatically; what fails is $A u_\sigma \subseteq A$ for $\sigma \neq 1$, impossible because the $A u_\sigma$ are independent direct summands. For 4, an element $x = \sum_\sigma a_\sigma u_\sigma$ is central exactly when $xu_\tau = u_\tau x$ for all $\tau$, which after expanding and using linear independence of the $u_{\sigma\tau}$ gives $\alpha_\tau(a_\sigma) c(\tau,\sigma) = a_\sigma c(\sigma,\tau)$ for all $\sigma,\tau$; for $\sigma = 1$ this forces $a_1$ to be fixed, and for $\sigma \neq 1$ it forces $a_\sigma = 0$ in the cases of interest. $\square$</p>
+<p>The last computation is the one used in the central simple case below: when $A = L$ is a finite Galois extension of $F$ with group $G$ acting faithfully, the only central elements have $\sigma = 1$ and then $a \in L^G = F$, so $Z(L \rtimes_c G) = F$.</p>
+<h3 id="the-group-algebra-as-a-crossed-product">The group algebra as a crossed product</h3>
+<p>Take $A = F$ with the trivial action and $c \equiv 1$. Then $A \rtimes_c G$ has basis the $u_\sigma$ with $u_\sigma u_\tau = u_{\sigma\tau}$, so it is the group algebra $F[G]$. More generally, a twisted group algebra is the case of trivial action with a nontrivial factor set, and a skew group ring is the case of trivial factor set with a nontrivial action. The two generalisations are independent and may be combined: the crossed product is exactly what is needed when the group elements fail to multiply correctly up to scalars, and it reduces to the group algebra in the two trivial cases.</p>
+<h2 id="twisted-group-algebras">Twisted Group Algebras</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $A = F$ with trivial action. A <strong>twisted group algebra</strong> is</p>
+<p>$$
+F^\alpha G := F \rtimes_\alpha G, \qquad \alpha \in Z^2(G, F^\times),
+$$</p>
+<p>the $F$-algebra with basis $\{u_\sigma\}$, multiplication $u_\sigma u_\tau = \alpha(\sigma,\tau)u_{\sigma\tau}$ and unit $u_1$. Its dimension is $\lvert G\rvert$, it is $G$-graded with $F^\alpha G_\sigma = F u_\sigma$, and $F^\alpha G$ is commutative if and only if the cocycle $\alpha$ is symmetric, $\alpha(\sigma,\tau) = \alpha(\tau,\sigma)$ for all $\sigma,\tau$.</p>
+<h3 id="semisimplicity-and-simplicity">Semisimplicity and simplicity</h3>
+<p><strong>Theorem (standard).</strong> Let $G$ be finite and let $F$ have characteristic not dividing $\lvert G\rvert$.</p>
+<ol>
+<li>$F^\alpha G$ is semisimple for every cocycle $\alpha$.</li>
+<li>If $F$ is algebraically closed, then $F^\alpha G$ is isomorphic to a product of matrix algebras, one summand $M_{d_\chi}(F)$ for each irreducible projective representation of $G$ of degree $d_\chi$ with cocycle $\alpha$, and
+$$
+\lvert G\rvert = \sum_\chi d_\chi^2 .
+$$</li>
+</ol>
+<p><em>Proof (sketch).</em> The averaging argument of Maschke applies to the regular representation of $G$ on $F^\alpha G$ because the group elements act by semilinear maps with respect to the twisted multiplication, and the average of an invariant projection exists since $\lvert G\rvert$ is invertible. Statement 2 is the Artin–Wedderburn theorem applied to the semisimple algebra $F^\alpha G$, whose simple modules are the irreducible $\alpha$-projective representations; the dimension count is the sum of the squares of their degrees, since the regular module is a direct sum of $d_\chi$ copies of each simple module of dimension $d_\chi$. $\square$</p>
+<p>The irreducible $F^\alpha G$-modules are exactly the <strong>$\alpha$-projective representations</strong> of $G$; the twisted group algebra is the device that turns a projective representation of $G$ into an ordinary representation of an algebra.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (cyclic of order two).</strong> $G = \{1, \sigma\} \cong \mathbb{Z}/2$. The only nontrivial class in $H^2(G,F^\times)$ is represented by $\alpha(\sigma,\sigma) = a$ with $a \in F^\times$. Then $F^\alpha G$ has basis $1, u$ with $u^2 = a$, so</p>
+<p>$$
+F^\alpha G \;\cong\; F[x]/(x^2 - a),
+$$</p>
+<p>which is $F \oplus F$ if $a$ is a square in $F$ and the field $F(\sqrt a)$ otherwise. This is the smallest case of the classification: the twisted group algebra of a cyclic group is the cyclic algebra of the previous article.</p>
+<p><strong>Example (the four-group and the quaternions).</strong> Let $G = \mathbb{Z}/2 \times \mathbb{Z}/2$ with generators $\sigma, \tau$, and let $F$ be a field of characteristic not $2$. Define $\alpha$ by</p>
+<p>$$
+\alpha(\sigma,\sigma) = \alpha(\tau,\tau) = -1, \qquad \alpha(\sigma,\tau) = \alpha(\tau,\sigma) = 1 .
+$$</p>
+<p>Then $u_\sigma^2 = u_\tau^2 = -1$ and $u_\sigma u_\tau = u_\tau u_\sigma$, so the algebra is the four-dimensional commutative algebra generated by two square roots of $-1$; over $F = \mathbb{R}$ it is $\mathbb{C} \times \mathbb{C}$, and it is not simple. Changing the cocycle to $\alpha(\sigma,\tau) = -\alpha(\tau,\sigma) = -1$ makes the group generated by $u_\sigma, u_\tau$ the quaternion group of order $8$, with $u_\sigma u_\tau = -u_\tau u_\sigma$, and the twisted group algebra becomes $\mathbb{H}$ over $\mathbb{R}$; over a general field of characteristic not $2$ it is the quaternion algebra $(-1,-1)_F$. The two cocycles differ by a coboundary exactly when $-1$ is a sum of two squares in $F$, which is the arithmetic statement that the corresponding class in the Brauer group is trivial.</p>
+<p><strong>Example (the algebra of a finite abelian group).</strong> If $G$ is finite abelian and $F$ contains the $\lvert G\rvert$-th roots of unity, then every $F^\alpha G$ is a product of matrix algebras over $F$. The algebra $F^\alpha G$ is simple exactly when $\alpha$ is nondegenerate, meaning that the only $\sigma \in G$ with $\alpha(\sigma,\tau) = \alpha(\tau,\sigma)$ for every $\tau \in G$ is $\sigma = 1$. This is the finite abelian case of the general simplicity criterion for twisted group algebras.</p>
+<h2 id="factor-sets-and-cohomology">Factor Sets and Cohomology</h2>
+<h3 id="equivalent-factor-sets">Equivalent factor sets</h3>
+<p><strong>Definition.</strong> Two factor sets $c, c' \in Z^2(G,A^\times)$ are <strong>equivalent</strong>, or <strong>cohomologous</strong>, if there is a function $t : G \to A^\times$ with</p>
+<p>$$
+c'(\sigma,\tau) = t(\sigma)\, \alpha_\sigma\bigl(t(\tau)\bigr)\, t(\sigma\tau)^{-1}\, c(\sigma,\tau) \qquad \text{for all } \sigma, \tau \in G .
+$$</p>
+<p>A factor set equivalent to the trivial one is a <strong>coboundary</strong>, and the set of coboundaries is the subgroup $B^2(G,A^\times) \subseteq Z^2(G,A^\times)$. When $A$ is commutative so that $A^\times$ is abelian, the quotient</p>
+<p>$$
+H^2(G, A^\times) := Z^2(G,A^\times)/B^2(G,A^\times)
+$$</p>
+<p>is the <strong>second cohomology group</strong> of $G$ with coefficients in the $G$-module $A^\times$, as in <em>Group Cohomology</em>; the general noncommutative case is a pointed set and is not needed here.</p>
+<p><strong>Proposition.</strong> If $c$ and $c'$ are equivalent with respect to $t$, then</p>
+<p>$$
+A \rtimes_c G \;\cong\; A \rtimes_{c'} G, \qquad a u_\sigma \longmapsto a\, t(\sigma)^{-1} u'_\sigma ,
+$$</p>
+<p>an isomorphism of $G$-graded algebras.</p>
+<p><em>Proof.</em> The map is $A$-linear and sends the basis $u_\sigma$ to $t(\sigma)^{-1}u'_\sigma$. It respects the action because $t(\sigma)^{-1} u'_\sigma a = t(\sigma)^{-1}\alpha_\sigma(a)u'_\sigma$. For the product,</p>
+<p>$$
+u'_\sigma u'_\tau = c'(\sigma,\tau)u'_{\sigma\tau}, \qquad \text{while} \qquad t(\sigma)^{-1}u'_\sigma \cdot t(\tau)^{-1}u'_\tau = t(\sigma)^{-1}\alpha_\sigma(t(\tau))^{-1} c'(\sigma,\tau) u'_{\sigma\tau},
+$$</p>
+<p>and the two agree after the substitution $c'(\sigma,\tau) = t(\sigma)\alpha_\sigma(t(\tau))t(\sigma\tau)^{-1}c(\sigma,\tau)$. $\square$</p>
+<h3 id="the-product-of-classes-and-the-brauer-group">The product of classes and the Brauer group</h3>
+<p>Let $L/F$ be a finite Galois extension with group $G$. For a factor set $c$ the algebra $L \rtimes_c G$ is central simple over $F$ of degree $\lvert G\rvert$, and it is split by $L$, because base change to $L$ gives $L \rtimes_c G \otimes_F L \cong M_{\lvert G\rvert}(L)$: over $L$ the grading becomes a decomposition into $\lvert G\rvert$ copies of $L$, which may be reorganised into a matrix algebra. Hence there is a well-defined map</p>
+<p>$$
+\Phi : H^2(G, L^\times) \longrightarrow \operatorname{Br}(L/F), \qquad [c] \longmapsto [L \rtimes_c G] .
+$$</p>
+<p><strong>Proposition.</strong> The map $\Phi$ is a group homomorphism, where the group law on $H^2$ is addition of cocycles and the group law on $\operatorname{Br}(L/F)$ is the tensor product.</p>
+<p><em>Proof.</em> Let $A = L \rtimes_c G$ and $B = L \rtimes_{c'} G$. After base change to $L$ both become graded by $G$, with homogeneous components $L u_\sigma$ and $L v_\sigma$, and</p>
+<p>$$
+(A \otimes_F B) \otimes_F L \;\cong\; (A \otimes_F L) \otimes_L (B \otimes_F L)
+$$</p>
+<p>is graded with homogeneous component $L(u_\sigma \otimes v_\sigma)$, whose product is governed by the factor set $\sigma,\tau \mapsto c(\sigma,\tau)c'(\sigma,\tau)$. Hence $A \otimes_F B$ is split by $L$ and its class is $\Phi([c][c'])$. $\square$</p>
+<h3 id="the-noetherdeuring-theorem">The Noether–Deuring theorem</h3>
+<p><strong>Theorem (Noether–Deuring, standard).</strong> Let $L/F$ be a finite Galois extension with group $G$. The map $\Phi$ is an isomorphism</p>
+<p>$$
+\operatorname{Br}(L/F) \;\cong\; H^2(G, L^\times) .
+$$</p>
+<p><em>Proof (outline).</em> The construction $[c] \mapsto [L \rtimes_c G]$ is injective because a crossed product with factor set $c$ determines the cocycle up to equivalence: the $L$-basis $\{u_\sigma\}$ is unique up to the substitutions $u_\sigma \mapsto t(\sigma)^{-1}u_\sigma$ that change $c$ by a coboundary. It is surjective by the crossed-product theorem for central simple algebras: if $A$ is central simple over $F$ and split by $L$, then $A \otimes_F L \cong M_n(L)$, and choosing an identification of the simple $A \otimes_F L$-module with $L^n$ exhibits $A$ as the algebra of $G$-fixed points in $M_n(L)$ with respect to the action twisted by the factor set; explicitly $A \cong L \rtimes_c G$ for a suitable $c$. The cohomological form of this statement is that every class in the relative Brauer group is represented by a crossed product, and it is the content of the classical theorem. $\square$</p>
+<p>It follows that the relative Brauer group is the second cohomology of the Galois group, and, taking the union over all finite Galois extensions, that the Brauer group is a union of such cohomology groups. The theorem also shows that an algebra whose class is a coboundary is split: if $c(\sigma,\tau) = t(\sigma)\alpha_\sigma(t(\tau))t(\sigma\tau)^{-1}$ then the substitution of the proposition makes the factor set trivial, and $L \rtimes_c G \cong L \rtimes_1 G \cong M_{\lvert G\rvert}(F)$ when the action is trivial; this is the algebraic form of Hilbert's theorem 90 in the background.</p>
+<h2 id="the-crossed-product-of-a-central-simple-algebra">The Crossed Product of a Central Simple Algebra</h2>
+<h3 id="cyclic-algebras-revisited">Cyclic algebras revisited</h3>
+<p>Let $L/F$ be cyclic of degree $n$ with group generated by $\sigma$, and let $a \in F^\times$. The cyclic algebra of the preceding article is the crossed product of $L$ by $G = \mathbb{Z}/n$ with the factor set</p>
+<p>$$
+c(\sigma^i, \sigma^j) = \begin{cases} 1, & i + j < n,\\ a, & i+j \geq n,\end{cases}
+$$</p>
+<p>which is a cocycle because $\sigma^n = 1$ acts trivially; the element $z = u_\sigma$ satisfies $z^n = a$ and $z\ell = \sigma(\ell)z$, recovering the presentation. The class of the cyclic algebra in $H^2(\mathbb{Z}/n, L^\times)$ depends only on $a$ modulo norms from $L^\times$: an element $b = \operatorname{N}_{L/F}(\ell)$ produces an equivalent cocycle with $a$ replaced by $ab$, so the cyclic algebra is split exactly when $a$ is a norm, and the group $F^\times/\operatorname{N}_{L/F}(L^\times)$ parametrises the cyclic crossed products. This is the classical "cyclic algebra" picture of the relative Brauer group, and the smallest case is the quaternion algebra.</p>
+<h3 id="quaternion-algebras">Quaternion algebras</h3>
+<p>Let $F$ have characteristic not $2$, let $a \in F^\times$ be a non-square, put $L = F(\sqrt a)$, and let $G = \{1,\sigma\}$ act by the nontrivial automorphism. A factor set is determined by the single value $c(\sigma,\sigma) = b \in F^\times$, and the condition $c(\sigma,\sigma)c(1,1) = \alpha_\sigma(c(\sigma,\sigma))c(\sigma,\sigma)$ is vacuous because $\alpha_\sigma$ fixes $F$; the crossed product $L \rtimes_c G$ has $F$-basis</p>
+<p>$$
+1, \quad u \ (=\sqrt a), \quad v \ (=u_\sigma), \quad uv,
+$$</p>
+<p>with $u^2 = a$, $v^2 = b$ and $vu = -uv$. This is exactly the quaternion algebra $(a,b)_F$ of the preceding article, so</p>
+<p>$$
+F(\sqrt a) \rtimes_c \mathbb{Z}/2 \;\cong\; (a,b)_F, \qquad [c] \longleftrightarrow b \bmod \operatorname{N}_{L/F}(L^\times),
+$$</p>
+<p>and $H^2(\mathbb{Z}/2, L^\times) \cong F^\times/\operatorname{N}_{L/F}(L^\times)$ is the group parametrising the four-dimensional crossed products of this kind; over $F = \mathbb{R}$ with $L = \mathbb{C}$ it is $\mathbb{R}^\times/\mathbb{R}_{>0} \cong \mathbb{Z}/2$, generated by the class of $\mathbb{C} \rtimes \mathbb{Z}/2 \cong \mathbb{H}$.</p>
+<h3 id="the-general-structure-theorem-in-crossed-product-form">The general structure theorem in crossed-product form</h3>
+<p><strong>Theorem (standard).</strong> Let $A$ be a central simple $F$-algebra and let $L$ be a maximal subfield of the division algebra representative $D$ of $A$ that is Galois over $F$ with group $G$. Then $A$ is similar to a crossed product $L \rtimes_c G$; and if $L/F$ is Galois of degree equal to $\deg(A)$ with $A$ split by $L$, then $A \cong L \rtimes_c G$ for some cocycle $c$. In particular every central simple algebra over a field that has a Galois splitting field of degree equal to its degree is a crossed product.</p>
+<p>The theorem is the structural statement behind the isomorphism $\operatorname{Br}(L/F) \cong H^2(G,L^\times)$: the elements of the relative Brauer group are exactly the crossed products, so the classification of the central simple algebras split by $L$ is the classification of the $2$-cocycles of the Galois group up to coboundaries. A central simple algebra need not be a crossed product with respect to every splitting field, and the crossed products are not the whole Brauer group when no Galois splitting field of the right kind is available; the systematic treatment of which algebras are crossed products belongs to the Galois cohomology of <em>Galois Cohomology</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A group $G$ <strong>acts</strong> on an algebra $A$ when there is a homomorphism $\alpha : G \to \operatorname{Aut}_F(A)$; the fixed subalgebra is $A^G$ and the skew group ring $A * G$ adjoins symbols $u_\sigma$ with $u_\sigma a = \alpha_\sigma(a)u_\sigma$ and $u_\sigma u_\tau = u_{\sigma\tau}$. Replacing the last relation by $u_\sigma u_\tau = c(\sigma,\tau)u_{\sigma\tau}$ with $c : G\times G \to A^\times$ gives the <strong>crossed product</strong> $A \rtimes_c G$, and associativity is exactly the <strong>cocycle condition</strong> $c(\sigma,\tau)c(\sigma\tau,\rho) = \alpha_\sigma(c(\tau,\rho))c(\sigma,\tau\rho)$. A crossed product is a $G$-graded algebra with degree-zero part $A$ and invertible homogeneous components; it is a free $A$-module of rank $\lvert G\rvert$, and its centre is computed from the fixed points of the action and the equivariance of the factor set. The special cases are the group algebra $F[G]$ (trivial action, trivial factor set), the skew group ring (trivial factor set) and the <strong>twisted group algebra</strong> $F^\alpha G$ (trivial action), whose modules are the $\alpha$-projective representations of $G$.</p>
+<p>Two factor sets differing by a function $t : G \to A^\times$ as in the definition of equivalence give isomorphic crossed products, and when $A$ is commutative the equivalence classes form the cohomology group $H^2(G,A^\times)$. For a finite Galois extension $L/F$ with group $G$, every crossed product $L \rtimes_c G$ is central simple of degree $\lvert G\rvert$ and split by $L$, and the <strong>Noether–Deuring theorem</strong> identifies</p>
+<p>$$
+\operatorname{Br}(L/F) \;\cong\; H^2(G, L^\times),
+$$</p>
+<p>so the relative Brauer group is the second cohomology of the Galois group. The cyclic algebras and the quaternion algebras $(a,b)_F \cong F(\sqrt a) \rtimes_c \mathbb{Z}/2$ are the explicit cases, and the crossed-product construction is the structural reason the elements of the Brauer group are classified by factor sets.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>field</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>group, usually finite, with identity $1$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>unital associative $F$-algebra with a $G$-action</td>
+</tr>
+<tr>
+<td>$\alpha : G \to \operatorname{Aut}_F(A)$</td>
+<td>action, $\alpha_\sigma(a) = \sigma \cdot a$</td>
+</tr>
+<tr>
+<td>$A^G$</td>
+<td>fixed subalgebra</td>
+</tr>
+<tr>
+<td>$A * G$</td>
+<td>skew group ring, $u_\sigma u_\tau = u_{\sigma\tau}$</td>
+</tr>
+<tr>
+<td>$c : G \times G \to A^\times$</td>
+<td>factor set, or $2$-cocycle</td>
+</tr>
+<tr>
+<td>$A \rtimes_c G$</td>
+<td>crossed product, $u_\sigma u_\tau = c(\sigma,\tau)u_{\sigma\tau}$</td>
+</tr>
+<tr>
+<td>$u_\sigma$</td>
+<td>homogeneous basis element of degree $\sigma$</td>
+</tr>
+<tr>
+<td>$B_\sigma = A u_\sigma$</td>
+<td>degree-$\sigma$ homogeneous component</td>
+</tr>
+<tr>
+<td>$Z^2(G,A^\times)$, $B^2(G,A^\times)$</td>
+<td>cocycles and coboundaries</td>
+</tr>
+<tr>
+<td>$H^2(G,A^\times)$</td>
+<td>second cohomology, for $A$ commutative</td>
+</tr>
+<tr>
+<td>$F^\alpha G = F \rtimes_\alpha G$</td>
+<td>twisted group algebra</td>
+</tr>
+<tr>
+<td>$t \mapsto t(\sigma)$</td>
+<td>equivalence (cohomology) between factor sets</td>
+</tr>
+<tr>
+<td>$F[G]$</td>
+<td>group algebra, the case $A=F$, $c\equiv1$</td>
+</tr>
+<tr>
+<td>$F[H] * G \cong F[H \rtimes G]$</td>
+<td>group algebra of a semidirect product</td>
+</tr>
+<tr>
+<td>$L \rtimes_c G$</td>
+<td>crossed product of a Galois extension</td>
+</tr>
+<tr>
+<td>$(a,b)_F \cong F(\sqrt a)\rtimes_c \mathbb{Z}/2$</td>
+<td>quaternion algebra as a crossed product</td>
+</tr>
+<tr>
+<td>$\operatorname{Br}(L/F) \cong H^2(G,L^\times)$</td>
+<td>Noether–Deuring theorem</td>
+</tr>
+<tr>
+<td>$\operatorname{N}_{L/F}$</td>
+<td>norm of a field extension</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for crossed products, factor sets and the Noether–Deuring theorem.</li>
+<li>Philippe Gille and Tamás Szamuely, <em>Central Simple Algebras and Galois Cohomology</em> (Cambridge, 2006), for the isomorphism $\operatorname{Br}(L/F) \cong H^2(G,L^\times)$ and its consequences.</li>
+<li>Gregory Karpilovsky, <em>Projective Representations of Finite Groups</em> (Marcel Dekker, 1985), for twisted group algebras, their simplicity criteria and their representations.</li>
+<li>I. Martin Isaacs, <em>Character Theory of Finite Groups</em> (Academic Press, 1976), for the relation between twisted group algebras, projective representations and the Schur multiplier.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for crossed products, skew group rings and their ideal theory.</li>
+<li>Susan Montgomery, <em>Fixed Rings of Finite Automorphism Groups of Associative Rings</em> (Springer, 1980), for group actions on rings and the structure of crossed products.</li>
+<li>J. C. Jantzen, <em>Representations of Algebraic Groups</em> (American Mathematical Society, 2nd ed. 2003), for the systematic use of crossed products and twisted group algebras in the representation theory of groups of Lie type.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

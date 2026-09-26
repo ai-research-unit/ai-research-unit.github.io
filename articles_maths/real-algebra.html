@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-algebra"><strong>Real Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the real algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished substructures that arise from its order and completeness.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No topology beyond the order is invoked. The real numbers are treated as an algebraic object, and the consequences of their algebraic properties are developed systematically.</p>
+<h2 id="the-real-numbers">The Real Numbers</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>real number field</strong> $\mathbb{R}$ is a set equipped with two binary operations $+$ and $\cdot$, two distinguished elements $0$ and $1$, and a total order $<$, satisfying the following axioms.</p>
+<p><strong>Field axioms.</strong> The structure $(\mathbb{R}, +, \cdot)$ is a field:</p>
+<p>$$
+a + b = b + a, \qquad a \cdot b = b \cdot a,
+$$</p>
+<p>$$
+(a + b) + c = a + (b + c), \qquad (a \cdot b) \cdot c = a \cdot (b \cdot c),
+$$</p>
+<p>$$
+a \cdot (b + c) = a \cdot b + a \cdot c,
+$$</p>
+<p>$$
+a + 0 = a, \qquad a \cdot 1 = a,
+$$</p>
+<p>and for every $a \in \mathbb{R}$ there exists $-a$ with $a + (-a) = 0$, and for every $a \neq 0$ there exists $a^{-1}$ with $a \cdot a^{-1} = 1$.</p>
+<p><strong>Order axioms.</strong> The order $<$ is total and compatible with the field operations:</p>
+<p>$$
+\text{for any } a, b \in \mathbb{R}, \text{ exactly one of } a < b, \; a = b, \; a > b \text{ holds},
+$$</p>
+<p>$$
+a < b \implies a + c < b + c,
+$$</p>
+<p>$$
+a < b \text{ and } c > 0 \implies a \cdot c < b \cdot c.
+$$</p>
+<p><strong>Completeness axiom.</strong> Every non-empty subset of $\mathbb{R}$ that is bounded above has a least upper bound in $\mathbb{R}$:</p>
+<p>$$
+S \subseteq \mathbb{R}, \; S \neq \emptyset, \; S \text{ bounded above} \implies \sup S \in \mathbb{R}.
+$$</p>
+<p>A general real number is written in developed form as</p>
+<p>$$
+a = a \cdot 1, \qquad a \in \mathbb{R},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+a \in \mathbb{R}.
+$$</p>
+<p>We write</p>
+<p>$$
+a = a,
+$$</p>
+<p>where $a$ is the <strong>scalar part</strong> and there is no vector part. The absence of a tilde signals that $a$ is an element of the algebra $\mathbb{R}$, not a vector in some larger space.</p>
+<p>There is no complexification and no distinguished imaginary unit. The only imaginary unit in the algebra is the one we do not introduce. The real numbers are real.</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Commutative.</strong> Real addition and multiplication are commutative: $a + b = b + a$ and $a \cdot b = b \cdot a$.</p>
+<p><strong>Associative.</strong> Real addition and multiplication are associative: $(a + b) + c = a + (b + c)$ and $(a \cdot b) \cdot c = a \cdot (b \cdot c)$.</p>
+<p><strong>Distributive.</strong> $a \cdot (b + c) = a \cdot b + a \cdot c$.</p>
+<p><strong>Ordered field.</strong> The real numbers form a totally ordered field. The order is Archimedean: for any $a, b \in \mathbb{R}$ with $a > 0$, there exists a natural number $n$ with $n a > b$. This excludes ordered fields containing infinitesimals.</p>
+<p><strong>Complete ordered field.</strong> The real numbers are the unique complete ordered field up to isomorphism. Every other complete ordered field is order-isomorphic to $\mathbb{R}$.</p>
+<p><strong>Frobenius theorem.</strong> The real numbers are one of only three finite-dimensional associative real division algebras. In fact, $\mathbb{R}$ is the only one that is commutative and ordered.</p>
+<h3 id="the-absolute-value-and-the-positive-cone">The Absolute Value and the Positive Cone</h3>
+<p>The <strong>absolute value</strong> of a real number $a$ is</p>
+<p>$$
+|a| = \begin{cases} a & a \geq 0, \\ -a & a < 0. \end{cases}
+$$</p>
+<p>It satisfies $|a| \geq 0$, $|a| = 0 \iff a = 0$, $|ab| = |a||b|$, and $|a + b| \leq |a| + |b|$. The last is the triangle inequality, and it is the only one that uses the order in an essential way.</p>
+<p>The set of non-negative reals</p>
+<p>$$
+\mathbb{R}_{\geq 0} = \{a \in \mathbb{R} : a \geq 0\}
+$$</p>
+<p>is a multiplicative submonoid of $\mathbb{R}$ and is closed under addition. It is the <strong>positive cone</strong> of the ordered field, and it determines the order by</p>
+<p>$$
+a < b \iff b - a \in \mathbb{R}_{>0}.
+$$</p>
+<p>The absolute value is not a separate operation from the field structure; it is defined in terms of the order, and the order is defined in terms of the field structure together with the completeness axiom.</p>
+<h3 id="the-vector-part-and-math50">The Vector Part and $\mathbb{R}^1$</h3>
+<p>There is no vector part. The real numbers are one-dimensional over themselves, and the scalar part exhausts the element. The product of two real numbers is</p>
+<p>$$
+a \cdot b = ab,
+$$</p>
+<p>which has no dot product and no cross product, because there is no vector part. The field multiplication is the only operation, and it is commutative.</p>
+<h2 id="real-algebra_1">Real Algebra</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>real algebra</strong> is the field $\mathbb{R}$ considered as a one-dimensional real vector space equipped with its field multiplication. As a real vector space, $\mathbb{R}$ has dimension $1$. As a ring, it is a field. A general element is written in developed form as</p>
+<p>$$
+a = a \cdot 1, \qquad a \in \mathbb{R},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+a \in \mathbb{R}.
+$$</p>
+<p>We write</p>
+<p>$$
+a = a,
+$$</p>
+<p>where $a$ is the <strong>scalar part</strong> and there is no vector part.</p>
+<h3 id="multiplication">Multiplication</h3>
+<p>The product of two real numbers is defined by the field multiplication:</p>
+<p>$$
+a \cdot b = ab, \qquad a, b \in \mathbb{R}.
+$$</p>
+<p>In developed form,</p>
+<p>$$
+a \cdot b = (a)(b),
+$$</p>
+<p>where the product $ab$ is that of the real field.</p>
+<h3 id="conjugations">Conjugations</h3>
+<p>There is <strong>one</strong> natural conjugation on $\mathbb{R}$, and it is trivial: the identity map.</p>
+<p><strong>Identity conjugation</strong> $\operatorname{id}$:</p>
+<p>$$
+\operatorname{id}(a) = a.
+$$</p>
+<p>There is no quaternion conjugation, no complex conjugation, no Hermitian conjugation, and no anti-Hermitian conjugation. The real numbers are totally ordered and totally real; there is no room for a nontrivial involution that preserves the field structure.</p>
+<p>The identity is an involution: applying it twice returns the original real number. Its fixed-point set is all of $\mathbb{R}$, which is a real vector subspace of $\mathbb{R}$ of dimension $1$.</p>
+<h2 id="the-one-fixed-point-subspace">The One Fixed-Point Subspace</h2>
+<p>The identity conjugation has a fixed-point set, namely all of $\mathbb{R}$. This fixed-point set is a real vector subspace of $\mathbb{R}$. It is described below.</p>
+<h3 id="the-real-subspace">The Real Subspace</h3>
+<p>The fixed points of the <strong>identity conjugation</strong> are the real numbers satisfying $\operatorname{id}(a) = a$. In developed form,</p>
+<p>$$
+a = a.
+$$</p>
+<p>Comparing the coefficients of $1$:</p>
+<ul>
+<li>Coefficient of $1$: $a = a$, always satisfied.</li>
+</ul>
+<p>The fixed points are all real numbers:</p>
+<p>$$
+a = a \cdot 1, \qquad a \in \mathbb{R}.
+$$</p>
+<p>This is the <strong>real subspace</strong> $\mathbb{R}_{\mathbb{R}}$, a copy of the real number line embedded in $\mathbb{R}$ as the whole thing. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{R}$ (isomorphic to $\mathbb{R}$), and it is commutative.</p>
+<p>It is the only one of the fixed-point sets that is a division algebra, because it is the only fixed-point set.</p>
+<h2 id="real-decomposition">Real Decomposition</h2>
+<p>There is no nontrivial decomposition of $\mathbb{R}$ associated with a conjugation, because the only conjugation is the identity. Every real number can be written uniquely as</p>
+<p>$$
+a = a_r,
+$$</p>
+<p>where $a_r$ is an <strong>ordinary real number</strong>, with real coefficient. The component is</p>
+<p>$$
+a_r = \frac{1}{2}(a + a) = a.
+$$</p>
+<p>Indeed, $a_r$ is fixed by the identity conjugation, so it lies in the real subspace $\mathbb{R}_{\mathbb{R}}$. The sum is $a_r = a$.</p>
+<p>This gives the direct sum decomposition</p>
+<p>$$
+\mathbb{R} = \mathbb{R}_{\mathbb{R}},
+$$</p>
+<p>where $\mathbb{R}_{\mathbb{R}}$ is the real subspace. It is a real vector space of dimension $1$, and its direct sum is the full algebra $\mathbb{R}$ of real dimension $1$.</p>
+<p>This is the <strong>real decomposition</strong> of a real number. It expresses $a$ as a real number. It is the natural decomposition when we think of $\mathbb{R}$ as the realification of $\mathbb{R}$.</p>
+<h2 id="hermitian-decomposition">Hermitian Decomposition</h2>
+<p>There is no Hermitian subspace and no anti-Hermitian subspace, because there is no Hermitian conjugation. The decomposition</p>
+<p>$$
+\mathbb{R} = \mathbb{M}_+ \oplus \mathbb{M}_-
+$$</p>
+<p>does not exist, because $\mathbb{M}_+$ and $\mathbb{M}_-$ are not defined. There is only one subspace, and it is the whole algebra.</p>
+<h2 id="quadratic-forms-and-inner-product">Quadratic Forms and Inner Product</h2>
+<h3 id="the-norm-form">The Norm Form</h3>
+<p>The <strong>norm form</strong> of a real number $a$ is</p>
+<p>$$
+N(a) = a \cdot a = a^2,
+$$</p>
+<p>where the product is the field multiplication. It is a real number in general. It is positive-definite, since $a^2 \geq 0$ for every $a$, and it vanishes only at $a = 0$, because $\mathbb{R}$ is a field.</p>
+<p>The norm form is <strong>multiplicative</strong>:</p>
+<p>$$
+N(a \cdot b) = N(a) \, N(b).
+$$</p>
+<p>This is the statement that $a^2 b^2 = (ab)^2$, which is true in any commutative ring.</p>
+<h3 id="the-hermitian-form">The Hermitian Form</h3>
+<p>The <strong>Hermitian form</strong> of a real number $a$ is</p>
+<p>$$
+a \cdot a = a^2,
+$$</p>
+<p>where the product is the field multiplication. It is a <strong>non-negative real number</strong>, and it vanishes if and only if $a = 0$. It is a genuine positive-definite quadratic form, and it is the natural "length squared" of $a$ in the underlying real vector space of dimension $1$.</p>
+<p>The corresponding <strong>Euclidean norm</strong> is</p>
+<p>$$
+\|a\|_E = \sqrt{a \cdot a} = |a|.
+$$</p>
+<p>It is a genuine norm on the real vector space $\mathbb{R} \cong \mathbb{R}^1$: positive-definite, subadditive, and homogeneous of degree one. It <strong>is</strong> multiplicative with respect to the real product, because $|ab| = |a||b|$.</p>
+<h3 id="the-inner-product">The Inner Product</h3>
+<p>The <strong>inner product</strong> of two real numbers $a$ and $b$ is</p>
+<p>$$
+\langle a, b \rangle = a \cdot b = ab.
+$$</p>
+<p>In general this is a <strong>real number</strong>, not a complex one. This is a genuinely real feature: the inner product of two real numbers is real, and its imaginary part is zero.</p>
+<p>The inner product is linear in both arguments:</p>
+<p>$$
+\langle \lambda a, b \rangle = \lambda \langle a, b \rangle, \qquad \langle a, \lambda b \rangle = \lambda \langle a, b \rangle, \qquad \lambda \in \mathbb{R}.
+$$</p>
+<p>It is <strong>symmetric</strong> in the sense that</p>
+<p>$$
+\langle a, b \rangle = \langle b, a \rangle,
+$$</p>
+<p>which follows from the commutativity of multiplication.</p>
+<p>The inner product of a real number with itself is</p>
+<p>$$
+\langle a, a \rangle = a \cdot a = a^2,
+$$</p>
+<p>which is the Hermitian form. So the Hermitian form is the restriction of the inner product to the diagonal.</p>
+<h3 id="relation-between-the-three-forms">Relation Between the Three Forms</h3>
+<p>The three quadratic objects are related as follows:</p>
+<ul>
+<li><strong>Norm form:</strong> $N(a) = a^2$. Real-valued, vanishes only at $a = 0$, multiplicative.</li>
+<li><strong>Hermitian form:</strong> $a^2$. Non-negative real, vanishes only at $a = 0$, multiplicative.</li>
+<li><strong>Inner product:</strong> $\langle a, b \rangle = ab$. Real-valued, symmetric, bilinear.</li>
+</ul>
+<p>The norm form and the Hermitian form are the same function here, and the inner product is the bilinear form from which they are recovered by polarization. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a real vector space.</p>
+<p>In the real case, the norm form and the Hermitian form coincide, because the conjugation is trivial and there is no imaginary part. This is a degeneracy of the one-dimensional case, and it is the reason the real numbers are often treated as a trivial example rather than as a case study.</p>
+<h2 id="order-theoretic-structure">Order-Theoretic Structure</h2>
+<p>The order on $\mathbb{R}$ is not merely a binary relation. It interacts with the field operations and with completeness in ways that have no analogue in an unordered field.</p>
+<h3 id="intervals">Intervals</h3>
+<p>For $a, b \in \mathbb{R}$ with $a \leq b$:</p>
+<p>$$
+[a, b] = \{x \in \mathbb{R} : a \leq x \leq b\}, \qquad (a, b) = \{x \in \mathbb{R} : a < x < b\},
+$$</p>
+<p>$$
+[a, b) = \{x \in \mathbb{R} : a \leq x < b\}, \qquad (a, b] = \{x \in \mathbb{R} : a < x \leq b\}.
+$$</p>
+<p>Intervals are the convex subsets of $\mathbb{R}$: a set $S \subseteq \mathbb{R}$ is an interval iff for all $a, b \in S$ with $a < b$, every $x$ with $a < x < b$ lies in $S$.</p>
+<h3 id="bounds">Bounds</h3>
+<p>A set $S \subseteq \mathbb{R}$ is <strong>bounded above</strong> if there exists $M \in \mathbb{R}$ with $x \leq M$ for all $x \in S$. Such an $M$ is an <strong>upper bound</strong>. The <strong>supremum</strong> $\sup S$ is the least upper bound, and it exists by completeness whenever $S$ is non-empty and bounded above.</p>
+<p>Dually, $S$ is <strong>bounded below</strong> if there exists $m \in \mathbb{R}$ with $m \leq x$ for all $x \in S$, and the <strong>infimum</strong> $\inf S$ is the greatest lower bound.</p>
+<h3 id="the-completeness-consequences">The Completeness Consequences</h3>
+<p>Completeness is the axiom that distinguishes $\mathbb{R}$ from $\mathbb{Q}$. Its consequences are:</p>
+<p><strong>Archimedean property.</strong> For any $a \in \mathbb{R}$, there exists $n \in \mathbb{N}$ with $n > a$. Proof: if not, $\mathbb{N}$ is bounded above, so $\sup \mathbb{N}$ exists; then $\sup \mathbb{N} - 1$ is not an upper bound, so some $n > \sup \mathbb{N} - 1$, hence $n + 1 > \sup \mathbb{N}$, contradiction.</p>
+<p><strong>Density of $\mathbb{Q}$.</strong> For any $a, b \in \mathbb{R}$ with $a < b$, there exists $q \in \mathbb{Q}$ with $a < q < b$. Proof: by Archimedes, choose $n$ with $n(b - a) > 1$; then choose $m$ with $m > na$ minimal; then $m/n \in (a, b)$.</p>
+<p><strong>Existence of $n$-th roots.</strong> For any $a \geq 0$ and any $n \geq 1$, there exists a unique $b \geq 0$ with $b^n = a$. Proof: let $S = \{x \geq 0 : x^n \leq a\}$; $S$ is non-empty and bounded above, so $b = \sup S$ exists; one shows $b^n = a$ by excluding $b^n < a$ and $b^n > a$.</p>
+<p><strong>Nested interval property.</strong> If $(I_n)$ is a decreasing sequence of non-empty closed intervals, then $\bigcap_n I_n \neq \emptyset$. Proof: the left endpoints form a set bounded above, whose supremum lies in every $I_n$.</p>
+<h3 id="the-nested-interval-property-and-uniqueness">The Nested Interval Property and Uniqueness</h3>
+<p>The completeness axiom, which is the least upper bound property stated as an axiom above, is equivalent to the nested interval property and to the convergence of Cauchy sequences. These equivalences are not trivial; they are the content of the standard constructions of $\mathbb{R}$ from $\mathbb{Q}$.</p>
+<p>The <strong>uniqueness</strong> of $\mathbb{R}$ as a complete ordered field is a theorem: if $F$ is any complete ordered field, there is a unique order-isomorphism $F \to \mathbb{R}$. This is why we speak of <em>the</em> real numbers.</p>
+<h2 id="summary">Summary</h2>
+<p>The real algebra is the field $\mathbb{R}$ of real numbers considered as a one-dimensional real vector space equipped with its field multiplication. It is the base case of the ladder: commutative, associative and unital, and a field, so that every nonzero element is invertible. It is the only system of Part V that also carries a total order compatible with its operations.</p>
+<p>The only conjugation is the identity. Its fixed-point set is all of $\mathbb{R}$, so the single fixed-point subspace is $\mathbb{R}$ itself. There is no nontrivial conjugate decomposition, because the eigenspace for the eigenvalue $-1$ is zero, and there is no Hermitian or anti-Hermitian subspace, because there is no Hermitian conjugation: the decomposition of the general case collapses to a single summand.</p>
+<p>The quadratic objects collapse with it. The norm form is $N(a) = a \cdot a = a^2$, positive definite and multiplicative, and in this one-dimensional case the Hermitian form and the inner product coincide with it. The article closes with the order-theoretic structure, recording how the order interacts with the field operations and with completeness in ways that have no analogue in an unordered field.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>Real number field</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>Identity</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>General real number</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>Real coefficient</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>Scalar part</td>
+</tr>
+<tr>
+<td>$\operatorname{id}(a) = a$</td>
+<td>Identity conjugation</td>
+</tr>
+<tr>
+<td>$N(a) = a \cdot a$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$a \cdot a$</td>
+<td>Hermitian form</td>
+</tr>
+<tr>
+<td>$\langle a, b \rangle = a \cdot b$</td>
+<td>Inner product</td>
+</tr>
+<tr>
+<td>$\|a\|_E = \sqrt{a \cdot a}$</td>
+<td>Euclidean norm</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{R}}$</td>
+<td>Real subspace, fixed-point set of $\operatorname{id}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\geq 0}$</td>
+<td>Positive cone (the non-negative reals)</td>
+</tr>
+<tr>
+<td>$[a, b], (a, b)$</td>
+<td>Closed and open intervals</td>
+</tr>
+<tr>
+<td>$\sup S, \inf S$</td>
+<td>Supremum and infimum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Dedekind, <em>Stetigkeit und irrationale Zahlen</em> (1872), for the construction of $\mathbb{R}$ by cuts.</li>
+<li>Georg Cantor, "Über die Ausdehnung eines Satzes aus der Theorie der trigonometrischen Reihen" (1872), for the construction by Cauchy sequences.</li>
+<li>Edmund Landau, <em>Grundlagen der Analysis</em> (1930), for the axiomatic treatment.</li>
+<li>Walter Rudin, <em>Principles of Mathematical Analysis</em> (McGraw-Hill, 1976), for the standard modern treatment.</li>
+<li>John H. Conway, <em>On Numbers and Games</em> (Academic Press, 1976), for the construction by surreal numbers.</li>
+<li>Charles C. Pinter, <em>A Book of Abstract Algebra</em> (Dover, 2010), for the representation theory of fields.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

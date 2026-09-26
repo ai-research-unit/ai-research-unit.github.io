@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type I Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="type-i-groups"><strong>Type I Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The unitary dual $\operatorname{Irr}(G)$ of a locally compact group is a set on which one can attempt to place a Borel structure, and the decomposition of an arbitrary unitary representation into irreducibles can be attempted in the form of a direct integral over the dual. Both constructions need the dual to be <em>smooth</em>: the equivalence relation of unitary equivalence must be countably separated, and the multiplicity theory of a representation must be a decent measurable function on the dual. A group for which this holds is of <strong>type I</strong>, and the type I groups are exactly those for which the representation theory behaves like a measure theory rather than a bundle of pathological examples: the direct integral decomposition of a unitary representation is unique, the decomposition of the regular representation produces a <strong>Plancherel measure</strong> on the dual, and the group $C^*$-algebra is postliminal.</p>
+<p>The class is large. It contains the abelian groups, the compact groups, the connected nilpotent Lie groups, the connected semisimple Lie groups, and the groups obtained from these by the standard constructions; it fails for the discrete groups that are not virtually abelian, and the fundamental example of failure is the free group on two generators, whose regular representation generates a factor of type II$_1$. The article develops the definition, the equivalences in terms of the commutant and the Borel structure of the dual, the principal positive and negative examples, the closure properties, and the role of type I as the hypothesis that makes the direct-integral decomposition unique. It closes with the boundary to Part III, where the Plancherel theorem and the harmonic analysis of a unimodular type I group are treated.</p>
+<p>The frame is that of the representation theory of the earlier articles: the unitary dual and the commutant are those of <em>Representation Theory of Locally Compact Groups</em>, the induced representations and the Mackey machine are those of <em>Induced Representations of Locally Compact Groups</em> and <em>Mackey Theory</em>, and the Haar measure is that of <em>Locally Compact Groups and Haar Measure</em>. Two objects of the operator-algebra theory of this Part are introduced in line, because the definition needs them: a <strong>von Neumann algebra</strong> — a strongly closed self-adjoint algebra of bounded operators containing the identity — and a <strong>factor</strong> — a von Neumann algebra whose centre is the scalars — with the type classification of factors quoted as standard from the literature and developed systematically in <em>Operator Algebras</em>, earlier in this Part. The boundary with Part III is the one fixed in the representation theory: the <em>classification</em> of the irreducible unitary representations and the structure of the dual are here, while the <strong>harmonic analysis</strong> — the Plancherel theorem, the direct-integral completion, the Fourier transform on a type I group — belongs to <em>Analysis on Groups</em> in Part III, where the measure and the limit are available. No physics is invoked.</p>
+<h2 id="the-definition-of-a-type-i-group">The Definition of a Type I Group</h2>
+<h3 id="factor-representations-and-the-commutant">Factor Representations and the Commutant</h3>
+<p><strong>Definition.</strong> Let $\pi$ be a unitary representation of a locally compact group $G$ on a Hilbert space $\mathcal{H}$, and let</p>
+<p>$$
+\pi(G)' = \{T \in B(\mathcal{H}) : T\pi(g) = \pi(g)T \text{ for all } g \in G\}
+$$</p>
+<p>be its <strong>commutant</strong>, a von Neumann algebra. The representation $\pi$ is a <strong>factor representation</strong> if $\pi(G)'$ is a factor, that is, its centre is $\mathbb{C}\cdot 1$.</p>
+<p><strong>Definition.</strong> A locally compact group $G$ is of <strong>type I</strong>, or <strong>postliminal</strong>, if for every unitary representation $\pi$ of $G$ the von Neumann algebra generated by $\pi(G)$ is of type I: it is a direct sum (equivalently, a direct integral) of factors of type I$_n$ for $n \geq 1$. Equivalently, every factor representation of $G$ is a multiple of an irreducible unitary representation, and its commutant is a full matrix algebra $M_n(\mathbb{C})$ or $\ell^\infty$-sum of such.</p>
+<p><strong>Proposition (elementary reformulations).</strong> For a locally compact group $G$ the following are equivalent:</p>
+<p><strong>(a)</strong> $G$ is of type I;</p>
+<p><strong>(b)</strong> every factor representation of $G$ is a multiple of an irreducible unitary representation;</p>
+<p><strong>(c)</strong> the multiplicity theory of a general unitary representation is governed by measurable multiplicities, so that the commutant of a factor representation is a full matrix algebra $M_n(\mathbb{C})$ or the algebra $B(\mathcal{H})$ of all bounded operators;</p>
+<p><strong>(d)</strong> the group $C^*$-algebra $C^*(G)$ is postliminal, equivalently the von Neumann algebra generated by the image of any unitary representation is of type I.</p>
+<p><strong>Proof.</strong> The equivalence of (a) and (b) is the structure theory of type I von Neumann algebras: a type I algebra is a direct integral of factors of type I, and a type I factor of infinite dimension is a full algebra $B(\mathcal{H})$ of bounded operators, which is the commutant of a multiple of an irreducible representation. Statement (d) is the standard translation: for a separable locally compact group, $G$ is type I if and only if $C^*(G)$ is postliminal, and the von Neumann algebra of any representation is then of type I. It should be said that the commutant of an <em>irreducible</em> representation is $\mathbb{C}\cdot 1$ by Schur's lemma for <em>every</em> group, type I or not; what distinguishes the type I groups is that the multiplicity of an irreducible in a general representation is a measurable function of the class, so that a factor representation cannot be a continuously varying mixture. The full equivalence is standard and is quoted from the literature. $\square$</p>
+<h3 id="type-i-and-the-regular-representation">Type I and the Regular Representation</h3>
+<p><strong>Example (abelian groups).</strong> If $G$ is locally compact abelian, then every irreducible unitary representation is a character by <em>Representation Theory of Locally Compact Groups</em>, its commutant is $\mathbb{C}$, and the von Neumann algebra generated by the image of any representation is commutative, hence of type I (a commutative von Neumann algebra is a direct integral of one-dimensional factors). Hence every locally compact abelian group is of type I, and its dual is the Pontryagin dual $G^\vee$ of <em>Pontryagin Duality</em>.</p>
+<p><strong>Example (compact groups).</strong> If $K$ is compact, every irreducible unitary representation is finite-dimensional and the regular representation decomposes as the direct sum $\bigoplus_{\pi \in \operatorname{Irr}(K)}\pi^{\oplus \dim\pi}$ by the Peter–Weyl theorem; the group von Neumann algebra is a direct sum of full matrix algebras $M_{\dim\pi}(\mathbb{C})$, a type I algebra. Hence every compact group is of type I and its dual is discrete.</p>
+<p><strong>Example (finite groups).</strong> A finite group is compact and discrete; its dual $\operatorname{Irr}(G)$ is finite, the group algebra is a direct sum of full matrix algebras by the Wedderburn–Artin theorem, and $G$ is of type I. The theory of <em>Representations of Groups</em> is therefore the type I theory of a finite group in miniature.</p>
+<p><strong>Theorem (the regular representation).</strong> Let $G$ be unimodular and of type I. Then the left regular representation decomposes as a direct integral</p>
+<p>$$
+\lambda \;\cong\; \int_{\operatorname{Irr}(G)}^{\oplus} m(\pi)\, \pi\, d\mu(\pi) ,
+$$</p>
+<p>where $\mu$ is a Radon measure on the dual, unique up to equivalence, the <strong>Plancherel measure</strong> of $G$, and $m(\pi)$ is the multiplicity function, a measurable function determined by the representation up to $\mu$-null sets. The measure and the multiplicity are unique: any two such decompositions agree on a common refinement.</p>
+<p><strong>Proof sketch.</strong> The decomposition of a unitary representation into a direct integral of factor representations is the general multiplicity theory of von Neumann algebras: a separable representation of a separable $C^*$-algebra is a direct integral of factor representations over the spectrum with a standard measure class, and the multiplicity function is measurable. When the group is type I, every factor representation is a multiple of an irreducible, so the decomposition is indexed by $\operatorname{Irr}(G)$ itself and the multiplicity is a measurable integer-valued function. Uniqueness is the uniqueness of the central decomposition in the type I case; the measure class is determined by the regular representation's trace. The analytic content — the construction of the direct integral, the completion, and the identification of the Plancherel measure for a specific group — is that of <em>Analysis on Groups</em> in Part III. $\square$</p>
+<h2 id="the-borel-structure-of-the-dual">The Borel Structure of the Dual</h2>
+<h3 id="mackeys-borel-structure">Mackey's Borel Structure</h3>
+<p><strong>Definition.</strong> Let $G$ be a locally compact second countable group. The <strong>Mackey Borel structure</strong> on $\operatorname{Irr}(G)$ is the smallest $\sigma$-algebra making the matrix coefficients measurable: a subset $E \subseteq \operatorname{Irr}(G)$ is Borel when the set of pairs $(\pi, g)$ with $\pi \in E$, $g \in G$ is measurable with respect to the product of the Borel structure on the dual and the Haar measure class of $G$. The Borel structure is <strong>countably separated</strong> when there is a countable family of Borel sets separating points.</p>
+<p><strong>Theorem (Mackey's analysis of the type I condition).</strong> Let $G$ be a locally compact second countable group. The following are equivalent:</p>
+<p><strong>(a)</strong> $G$ is of type I;</p>
+<p><strong>(b)</strong> the Mackey Borel structure on $\operatorname{Irr}(G)$ is countably separated;</p>
+<p><strong>(c)</strong> the Borel structure on $\operatorname{Irr}(G)$ is standard, that is, the dual is isomorphic as a Borel space to a Borel subset of a Polish space;</p>
+<p><strong>(d)</strong> unitary equivalence of irreducible unitary representations of $G$ is a smooth (countably separated) equivalence relation on the space of irreducible unitary representations.</p>
+<p>When these hold, the dual is a standard Borel space and the "smooth" decomposition of the previous section applies.</p>
+<p><strong>Proof sketch.</strong> The implication (a) $\Rightarrow$ (b) is the measurable selection of factor representations: in a type I algebra the central decomposition has a measurable multiplicity function and the spectrum is countably separated. Conversely (b) $\Rightarrow$ (a) is the theorem of Glimm stated below: a non-type-I algebra produces a Borel set of continuum many pairwise inequivalent irreducibles that is not countably separated. The equivalence of (b) and (c) is the standard result that a countably separated Borel space admitting a complete metric compatible with a suitable analytic structure is standard. The equivalence with (d) is the formulation of countable separation as smoothness of the equivalence relation. The proofs use the descriptive set theory and the Borel-space theory of Part III and are quoted from the literature. $\square$</p>
+<h3 id="glimms-theorem">Glimm's Theorem</h3>
+<p><strong>Theorem (Glimm).</strong> Let $\mathcal{A}$ be a separable $C^*$-algebra, and let $\operatorname{Irr}(\mathcal{A})$ be its space of irreducible representations up to unitary equivalence with the Mackey Borel structure, the space that for $\mathcal{A} = C^*(G)$ is $\operatorname{Irr}(G)$. Then $\mathcal{A}$ is of type I (postliminal) if and only if $\operatorname{Irr}(\mathcal{A})$ is countably separated. Moreover, if $\mathcal{A}$ is not of type I, then $\operatorname{Irr}(\mathcal{A})$ contains a Borel subset of cardinality continuum whose elements are pairwise inequivalent and which is not countably separated; equivalently, the equivalence relation of unitary equivalence on $\operatorname{Irr}(\mathcal{A})$ is not smooth.</p>
+<p><strong>Proof sketch.</strong> The forward direction constructs the countable separating family from the postliminal structure: a postliminal algebra is a successive extension by algebras whose spectrum is a locally compact space with a countable base, and the union of the separating families of the layers separates the total dual. The converse uses the construction of a continuum of pairwise inequivalent factor representations from a single non-type-I factor representation: a non-type-I representation has a commutant containing a non-type-I factor, and the standard construction (via the Murray–von Neumann comparison theory of projections and a measurable family of states) produces the required Borel set. The theorem is quoted as standard from the literature. $\square$</p>
+<p><strong>Corollary.</strong> For a separable locally compact group $G$, $G$ is of type I if and only if $C^*(G)$ is postliminal, and this holds if and only if the dual $\operatorname{Irr}(G)$ is a standard Borel space under the Mackey Borel structure.</p>
+<p><strong>Proof.</strong> Combine the previous theorem with the equivalence of the type I condition for $G$ and for $C^*(G)$. $\square$</p>
+<h2 id="examples-and-non-examples">Examples and Non-Examples</h2>
+<h3 id="the-classical-positive-cases">The Classical Positive Cases</h3>
+<p><strong>Theorem (nilpotent groups).</strong> Every connected nilpotent Lie group is of type I.</p>
+<p><strong>Proof.</strong> By Kirillov's orbit method, stated and proved as standard in <em>Mackey Theory</em>, §The Mackey Machine, the irreducible unitary representations of a connected simply connected nilpotent Lie group correspond bijectively to the coadjoint orbits of the Lie algebra, and the map is a homeomorphism for the quotient topology on the orbit space and the Fell topology on the dual. The coadjoint orbits form a locally compact second countable space when the group is second countable, and the bijection makes the dual standard. Alternatively, the group $C^*$-algebra of a nilpotent Lie group is postliminal, being obtained by successive extensions by algebras with $\mathbb{R}^n$ as spectrum. A connected nilpotent Lie group with discrete centre is a quotient of a simply connected one and the type I property passes to quotients by closed normal subgroups. $\square$</p>
+<p><strong>Theorem (semisimple groups).</strong> Every connected semisimple Lie group is of type I.</p>
+<p><strong>Proof.</strong> This is the theorem of Harish-Chandra: the irreducible unitary representations of a connected semisimple Lie group are the irreducible admissible representations with an invariant Hermitian form, their equivalence is a smooth relation, and the dual carries a natural standard Borel structure as a countable union of closed subsets; the group $C^*$-algebra is postliminal. The proof uses the theory of $(\mathfrak{g}, K)$-modules of <em>Representation Theory of Locally Compact Groups</em>, §The General Case and the Unitary Dual, the classification of the discrete series and the Plancherel theory; it is quoted as the standard reference result, and the analytic part is Part III. $\square$</p>
+<p><strong>Theorem (extensions and quotients).</strong> Let</p>
+<p>$$
+1 \to N \to G \to Q \to 1
+$$</p>
+<p>be a short exact sequence of locally compact second countable groups. If $N$ and $Q$ are of type I then $G$ is of type I; if $G$ is of type I then $Q$ is of type I. The class of type I groups is closed under quotients by closed normal subgroups, under finite direct products and under extensions, but it is <strong>not</strong> closed under passing to an arbitrary closed subgroup: the free group $F_2$ is a discrete, hence closed, subgroup of the type I group $PSL_2(\mathbb{R})$, and $F_2$ is not of type I.</p>
+<p><strong>Proof sketch.</strong> For an extension, the Mackey machine expresses the dual of $G$ in terms of the dual of $N$, its orbits under $G$, and the duals of the little groups, all of which are standard Borel when $N$ and $Q$ are type I; the Borel structure of $\operatorname{Irr}(G)$ is then countably separated and Glimm's theorem applies. The quotient statement is its dual: a representation of $Q$ is a representation of $G$ trivial on $N$, so $\operatorname{Irr}(Q)$ sits in $\operatorname{Irr}(G)$ with the induced Borel structure and inherits countable separation. The failure for an arbitrary closed subgroup is exhibited by $F_2 \leq PSL_2(\mathbb{R})$, where the ambient group is type I and the subgroup is not. The details are standard. $\square$</p>
+<p><strong>Example (solvable Lie groups).</strong> A connected solvable Lie group is of type I if and only if it satisfies the Auslander–Kostant condition: the closure of the image of $G$ in the automorphism group of the Lie algebra of the nilradical is compact in a suitable sense. This is the theorem of Auslander and Kostant, and it shows that the class of type I groups, while closed under extension, is not closed under passing to dense subgroups or under arbitrary solvable constructions; the condition is stated here as a characterisation quoted from the literature.</p>
+<h3 id="discrete-groups-thomas-theorem">Discrete Groups: Thoma's Theorem</h3>
+<p><strong>Theorem (Thoma).</strong> A countable discrete group $D$ is of type I if and only if it is <strong>virtually abelian</strong>: it contains an abelian subgroup of finite index.</p>
+<p><strong>Proof sketch.</strong> A virtually abelian group has an abelian normal subgroup $A$ of finite index, so it is an extension of $A$ by the finite group $D/A$, and the extension theorem above applies because abelian and finite groups are type I. Conversely, if $D$ is type I then all of its factor representations are multiples of irreducibles; a direct argument on the group von Neumann algebra shows that $D$ has an abelian subgroup of finite index — the plan of the proof being to exhibit a finite-index subgroup whose commutator subgroup is finite and then to pass to an abelian subgroup, using that the regular representation's commutant is a type I algebra and applying the character theory of finite quotients. The theorem is due to Thoma and is quoted as standard. $\square$</p>
+<p><strong>Corollary.</strong> The free group $F_2$ on two generators is not of type I, and neither is $F_2\times\mathbb{Z}$ nor a free product of two nontrivial finite groups other than the infinite dihedral group, since none of these is virtually abelian. The corollary also shows that the type I property is not inherited by closed subgroups: $F_2$ is a closed subgroup of the type I group $PSL_2(\mathbb{R})$.</p>
+<p><strong>Remark.</strong> The corollary gives a large supply of non-type-I groups, and it isolates the reason: a virtually abelian group has an abelian subgroup of finite index, so its representation theory is assembled from that of an abelian group and a finite group, both of which are type I. The converse implication fails: the type I group $PSL_2(\mathbb{R})$ contains non-abelian free subgroups, so the presence of a free subgroup does not by itself force a non-type-I factor representation of the ambient group.</p>
+<h3 id="the-free-group-and-type-iimath123-factors">The Free Group and Type II$_1$ Factors</h3>
+<p><strong>Example (the free group on two generators).</strong> Let $F_2 = \langle a, b\rangle$ be the free group on two generators, a countable discrete group. It is not virtually abelian, so by Thoma's theorem it is not type I. Its group von Neumann algebra $W^*(F_2)$, the strong closure of the image of the left regular representation $\lambda$ on $\ell^2(F_2)$, is a <strong>factor of type II$_1$</strong>: the commutant $W^*(F_2)'$ is generated by the right regular representation, the algebra has a faithful finite trace $\tau(T) = \langle T\delta_e, \delta_e\rangle$, it is infinite-dimensional over $\mathbb{C}$, and its projection lattice is not the lattice of a type I algebra. The trace has the property $\tau(UV) = \tau(VU)$, and the algebra has no minimal projections; this is the standard example and the reason the von Neumann algebra of a group is so often a type II$_1$ factor rather than a type I algebra.</p>
+<p><strong>Example (the regular representation of $F_2$).</strong> Correspondingly, the regular representation of $F_2$ is not a direct integral of irreducible unitary representations: the group is not type I, the Mackey Borel structure on $\operatorname{Irr}(F_2)$ is not countably separated, and the decomposition of $\lambda$ into a direct integral of factor representations is a decomposition into factors of type II$_1$ rather than into irreducibles. By Glimm's theorem the failure is exhibited by a continuum of pairwise inequivalent irreducibles that is not countably separated; the dual itself is a wild object, and its description is a problem in descriptive set theory rather than in representation theory.</p>
+<h3 id="other-examples">Other Examples</h3>
+<p><strong>Example (the failure for closed subgroups).</strong> The type I property is <em>not</em> inherited by an arbitrary closed subgroup. The free group $F_2$ is a subgroup of index $6$ in the modular group $PSL_2(\mathbb{Z}) = \mathbb{Z}/2 * \mathbb{Z}/3$, hence a discrete and therefore closed subgroup of $PSL_2(\mathbb{R})$, which is a connected semisimple Lie group and so of type I; and $F_2$ is not of type I by Thoma's theorem. Dually a non-type-I group can contain closed subgroups that are type I — $F_2\times\mathbb{Z}$ contains $\mathbb{Z}$ and $\mathbb{Z}^2$ — so the property passes neither from a group to its closed subgroups nor from the subgroups to the group.</p>
+<p><strong>Example (the Heisenberg group again).</strong> The Heisenberg group is a connected nilpotent Lie group, hence of type I; its dual consists of the characters of the abelianisation $\mathbb{R}^2$ together with exactly one infinite-dimensional class $\pi_\lambda$ for each $\lambda \in \mathbb{R}\smallsetminus\{0\}$, so that it is a standard Borel space with the obvious structure. The Plancherel measure of the Heisenberg group is supported on the infinite-dimensional representations $\pi_\lambda$ and is absolutely continuous with density proportional to $|\lambda|$; the verification of the density belongs to the harmonic analysis of Part III.</p>
+<p><strong>Example (solvable but not type I).</strong> There are connected solvable Lie groups that are not of type I, by the Auslander–Kostant condition: the failure occurs when the action of the group on the nilradical is not compact in the relevant sense. Such a group has an irreducible representation whose commutant is a non-type-I factor, and its dual fails countable separation. The example is quoted from the literature and shows that solvability alone does not give type I, in contrast with nilpotency.</p>
+<h2 id="type-i-as-a-hypothesis">Type I as a Hypothesis</h2>
+<h3 id="uniqueness-of-decomposition">Uniqueness of Decomposition</h3>
+<p><strong>Theorem (uniqueness).</strong> Let $G$ be a separable locally compact group of type I and let $\pi$ be a unitary representation of $G$ on a separable Hilbert space. Then $\pi$ decomposes as a direct integral over $\operatorname{Irr}(G)$ with respect to a measure class and a measurable multiplicity function, and the decomposition is unique: any two such decompositions agree after a change of variable by a Borel isomorphism of a conull subset of the dual, and the multiplicity function is determined up to a null set.</p>
+<p><strong>Proof sketch.</strong> The general decomposition theorem for a representation of a separable $C^*$-algebra produces a direct integral over the spectrum with respect to a standard measure class. In the type I case the spectrum is the dual $\operatorname{Irr}(G)$ by Glimm's theorem, and the multiplicity function is measurable because the trace of the representation against a measurable field of states is measurable. Uniqueness follows from the uniqueness of the central decomposition in a type I von Neumann algebra: two decompositions refine to a common one, and the multiplicity function is invariant along the equivalence relation of unitary equivalence, which is smooth in the type I case. The measure-theoretic details are Part III. $\square$</p>
+<p><strong>Remark.</strong> Without type I the uniqueness fails: for a representation whose decomposition involves a continuous family of non-type-I factors, there can be two decompositions that are not related by a Borel isomorphism; this is exactly the failure of countable separation of the dual. The point of the type I hypothesis is therefore not that every representation decomposes — the general decomposition exists for all separable groups in the form of a direct integral over the space of factor representations — but that the decomposition is canonical and indexed by the irreducibles.</p>
+<h3 id="the-plancherel-measure">The Plancherel Measure</h3>
+<p><strong>Theorem (statement).</strong> Let $G$ be a unimodular separable locally compact group of type I. Then there is a unique (up to a positive scalar) Radon measure $\mu_{\mathrm{Pl}}$ on $\operatorname{Irr}(G)$, the <strong>Plancherel measure</strong>, such that for $f \in C_c(G)$ with $\lambda(f)$ the operator with kernel $f$, the operator $\lambda(f)$ is a direct integral of multiples of the identity on the fibers and</p>
+<p>$$
+\lambda(f) \;\longleftrightarrow\; \int_{\operatorname{Irr}(G)} \mathcal{F}f(\pi)\, d\mu_{\mathrm{Pl}}(\pi) ,
+$$</p>
+<p>with $\mathcal{F}f(\pi) = \pi(f) = \int_G f(g)\pi(g)\,dg$ the operator-valued Fourier transform; the Fourier transform extends to an isometry of $L^2(G)$ onto the direct integral $\int^\oplus \mathcal{H}_\pi \otimes \overline{\mathcal{H}_\pi}\,d\mu_{\mathrm{Pl}}(\pi)$, the <strong>Plancherel theorem</strong>.</p>
+<p><strong>Proof sketch.</strong> In the type I unimodular case, the trace $\tau$ on the group von Neumann algebra restricts to a faithful semifinite trace on each fiber and gives a measure on the dual; the operator $\lambda(f)$ is a positive trace-class operator only when convolutions of $f * f^*$ are used, and its trace computes the integral of $\mathcal{F}f$ against the measure. The isometry statement is the generalised Plancherel theorem for a unimodular type I group. The analytic content is Part III. $\square$</p>
+<p><strong>Example.</strong> For $G = \mathbb{R}^n$ the Plancherel measure is Lebesgue measure on the dual $\mathbb{R}^n$ and the theorem is the classical Plancherel theorem; for $G = S^1$ it is the counting measure on $\mathbb{Z}$ and the theorem is the Parseval identity for Fourier series; for a compact group it is the measure assigning the mass $\dim\pi$ to each $\pi$, and the theorem is the Peter–Weyl theorem; for $SL_2(\mathbb{R})$ it is supported on the principal series with an explicit density and on the discrete series as atoms.</p>
+<h2 id="the-boundary-with-analysis">The Boundary with Analysis</h2>
+<ul>
+<li>The <strong>Plancherel theorem</strong> and the <strong>Fourier transform</strong> in their analytic form, the direct-integral completion of $L^2(G)$ and the explicit densities of the Plancherel measure are <em>Analysis on Groups</em> in Part III.</li>
+<li>The <strong>operator-algebraic framework</strong> — the group von Neumann algebra $W^*(G)$, the group $C^*$-algebra $C^*(G)$, the Murray–von Neumann type classification of factors and the comparison theory of projections — is developed in <em>Operator Algebras</em>, earlier in this Part; the article uses only the definitions and the standard classification, quoted from the literature.</li>
+<li>The <strong>Borel structure of the dual</strong> and the descriptive-set-theoretic statement of Glimm's theorem belong to the general theory of Borel spaces; the version used here is the standard Mackey–Glimm form.</li>
+<li>What is <em>not</em> deferred: the definition of type I, the equivalences of the type I condition, the description of the dual as a standard Borel space, the examples and non-examples, the closure properties, and the statement of uniqueness of the decomposition.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>A locally compact group $G$ is of type I when every unitary representation generates a type I von Neumann algebra, equivalently when every factor representation is a multiple of an irreducible, equivalently when $C^*(G)$ is postliminal. The type I condition is exactly the condition that the unitary dual $\operatorname{Irr}(G)$ be a standard Borel space under the Mackey Borel structure; by Glimm's theorem a non-type-I group has a Borel set of continuum many pairwise inequivalent irreducibles that is not countably separated, and unitary equivalence on the dual is not a smooth equivalence relation.</p>
+<p>The principal positive cases are the abelian groups, whose dual is the Pontryagin dual; the compact groups, whose dual is discrete and whose group von Neumann algebra is a direct sum of full matrix algebras; the connected nilpotent Lie groups, whose dual is the space of coadjoint orbits by the orbit method; and the connected semisimple Lie groups, by the theorem of Harish-Chandra. Type I is closed under quotients, finite products and extensions, but not under passing to an arbitrary closed subgroup — the free group $F_2$ is a closed subgroup of the type I group $PSL_2(\mathbb{R})$. A connected solvable Lie group is type I exactly when it satisfies the Auslander–Kostant condition. For discrete groups, Thoma's theorem characterises the type I ones as exactly the virtually abelian groups, so the free group $F_2$ and $F_2\times\mathbb{Z}$ are not type I; the group von Neumann algebra of $F_2$ is a factor of type II$_1$, and its regular representation is not a direct integral of irreducibles.</p>
+<p>For a unimodular type I group the regular representation decomposes as a direct integral over the dual with multiplicity function, the decomposition of an arbitrary representation is unique, and there is a Plancherel measure on the dual with respect to which the Fourier transform is an isometry. The analytic theory of the Plancherel measure and the operator-algebraic framework of the group von Neumann algebra belong to Part III and to <em>Operator Algebras</em> in this Part respectively.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Irr}(G)$</td>
+<td>Unitary dual: irreducible unitary representations up to equivalence</td>
+</tr>
+<tr>
+<td>$\pi(G)'$</td>
+<td>Commutant of a representation; a von Neumann algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_G(\pi) = \pi(G)'$</td>
+<td>Intertwiners of $\pi$ with itself</td>
+</tr>
+<tr>
+<td>factor</td>
+<td>Von Neumann algebra with centre $\mathbb{C}\cdot 1$</td>
+</tr>
+<tr>
+<td>type I (postliminal)</td>
+<td>Every representation generates a type I von Neumann algebra</td>
+</tr>
+<tr>
+<td>$W^*(G)$</td>
+<td>Group von Neumann algebra: strong closure of the image of the regular representation</td>
+</tr>
+<tr>
+<td>$C^*(G)$</td>
+<td>Group $C^*$-algebra; $G$ type I iff $C^*(G)$ postliminal</td>
+</tr>
+<tr>
+<td>$M_n(\mathbb{C})$</td>
+<td>Full matrix algebra; the commutant of a multiple of an irreducible</td>
+</tr>
+<tr>
+<td>Mackey Borel structure</td>
+<td>Smallest Borel structure making matrix coefficients measurable</td>
+</tr>
+<tr>
+<td>countably separated</td>
+<td>Existence of a countable family of Borel sets separating points</td>
+</tr>
+<tr>
+<td>standard Borel space</td>
+<td>Borel isomorphic to a Borel subset of a Polish space</td>
+</tr>
+<tr>
+<td>Glimm's theorem</td>
+<td>Type I $\Leftrightarrow$ the dual is countably separated</td>
+</tr>
+<tr>
+<td>Thoma's theorem</td>
+<td>A discrete group is type I iff it is virtually abelian</td>
+</tr>
+<tr>
+<td>virtually abelian</td>
+<td>Contains an abelian subgroup of finite index</td>
+</tr>
+<tr>
+<td>type II$_1$ factor</td>
+<td>Infinite-dimensional factor with a faithful finite trace, no minimal projections</td>
+</tr>
+<tr>
+<td>$\tau(T) = \langle T\delta_e, \delta_e\rangle$</td>
+<td>The canonical trace on $W^*(F_2)$</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{Pl}}$</td>
+<td>Plancherel measure on the dual of a unimodular type I group</td>
+</tr>
+<tr>
+<td>$\mathcal{F}f(\pi) = \pi(f)$</td>
+<td>Operator-valued Fourier transform; the Plancherel theorem is Part III</td>
+</tr>
+<tr>
+<td>$1 \to N \to G \to Q \to 1$</td>
+<td>Extension, with type I inherited and reflected</td>
+</tr>
+<tr>
+<td>Auslander–Kostant condition</td>
+<td>Criterion for a connected solvable Lie group to be type I</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Les $C^*$-algèbres et leurs représentations</em> (Gauthier-Villars, 1964; English translation North-Holland, 1977), for postliminal algebras, the Mackey Borel structure and the type I condition.</li>
+<li>Jacques Dixmier, <em>Les algèbres d'opérateurs dans l'espace hilbertien</em> (Gauthier-Villars, 2nd ed. 1969; English translation North-Holland, 1981), for von Neumann algebras, factors and the type classification.</li>
+<li>James Glimm, <em>Type I $C^*$-algebras</em>, Annals of Mathematics 73 (1961), 572–612, for the theorem on countable separation and non-type-I algebras.</li>
+<li>George W. Mackey, <em>The Theory of Unitary Group Representations</em> (University of Chicago Press, 1976), for the Borel structure of the dual and the decomposition theory.</li>
+<li>Elmar Thoma, <em>Über unitäre Darstellungen abzählbarer, diskreter Gruppen</em>, Mathematische Annalen 153 (1964), 111–138, for the characterisation of type I discrete groups.</li>
+<li>Harish-Chandra, <em>Collected Papers</em> (Springer, 1984), for the type I property and the Plancherel theory of semisimple Lie groups.</li>
+<li>Louis Auslander and Bertram Kostant, <em>Polarization and unitary representations of solvable Lie groups</em>, Inventiones Mathematicae 14 (1971), 255–354, for the type I criterion for solvable groups.</li>
+<li>Alexandre A. Kirillov, <em>Lectures on the Orbit Method</em> (American Mathematical Society, 2004), for the nilpotent case and the coadjoint-orbit structure of the dual.</li>
+<li>Robert J. Zimmer, <em>Ergodic Theory and Semisimple Groups</em> (Birkhäuser, 1984), for the type I property in the ergodic-theoretic applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

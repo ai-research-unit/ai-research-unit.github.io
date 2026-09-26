@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Metric and Uniform Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-metric-and-uniform-spaces"><strong>List of Metric and Uniform Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the distances and the uniformities of Parts I to III, with the completion that each admits and with the metrisation theorem that decides which topological spaces receive a distance. The metric side is the geometric side: a distance gives balls, diameter, Lipschitz maps, geodesics and the Hausdorff and Gromov–Hausdorff distances between spaces. The uniform side is the topological side: a uniformity is the family of entourages "closer than $\epsilon$", and it is the structure that survives a homeomorphism, the structure carried by every topological group, and the structure whose completion exists in full generality. The entry bridges the two, since every metric space carries a uniformity and the passage from the uniformity to the topology loses exactly the uniform data that the completion uses.</p>
+<p>Every entry points to the article that introduces the distance, the uniformity or the theorem. The article introduces nothing and proves nothing: it records the completion and the metrisation statement that the introducing article establishes, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the distances that are complete it lists the metrics that are not — the usual metric on $(0,1)$ and on $\mathbb{Q}$, whose completions are $[0,1]$ and $\mathbb{R}$; beside the spaces that are metrisable it lists the Sorgenfrey line, which is perfectly normal, separable, Lindelöf and paracompact and admits no distance; and beside the uniformities with a countable base it lists the unique uniformity of $\beta\mathbb{N}$, which has none — each with the failure named and the article that records it.</p>
+<h2 id="the-distances-of-the-corpus">The Distances of the Corpus</h2>
+<p>The distances are grouped by the structure that supplies them: the order or absolute value of a field, the inner product or metric of a linear space, the metric of a manifold, and the graph or distance structure of a discrete object.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Metric space</th>
+<th>The distance it carries</th>
+<th>Completion</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$, $\mathbb{C}$, $\mathbb{R}^n$</td>
+<td>$d(x,y) = \lvert x - y\rvert$, the Euclidean distance</td>
+<td>already complete</td>
+<td><em>Metric, Uniform and Complete Spaces</em>; <em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>the restriction of the usual distance</td>
+<td>$\mathbb{R}$, and no other for the usual absolute value</td>
+<td><em>Metric, Uniform and Complete Spaces</em>; <em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$[0,1]$, $(0,1)$</td>
+<td>the restriction of the usual distance</td>
+<td>$[0,1]$ for both; $(0,1)$ is not complete</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$</td>
+<td>the ultrametric $d(x,y) = \lvert x - y\rvert_p$</td>
+<td>already complete; the completion of $\mathbb{Q}$ for the $p$-adic absolute value</td>
+<td><em>The $p$-adic Numbers</em>; <em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$</td>
+<td>the restriction of the $p$-adic distance</td>
+<td>compact, hence complete; its completion is itself</td>
+<td><em>The $p$-adic Numbers</em></td>
+</tr>
+<tr>
+<td>$S^n$</td>
+<td>the chordal and the geodesic (round) distances, which induce the same topology</td>
+<td>compact, hence complete</td>
+<td><em>Spherical Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathbf{H}^n$</td>
+<td>the hyperbolic distance $d_{\mathbf{H}}$</td>
+<td>complete, and the completion adds no point</td>
+<td><em>Hyperbolic Geometry</em></td>
+</tr>
+<tr>
+<td>a Riemannian manifold $(M,g)$</td>
+<td>the Riemannian distance, the infimum of the lengths of the curves</td>
+<td>complete if and only if $(M,g)$ is geodesically complete (Hopf–Rinow)</td>
+<td><em>Riemannian Geometry</em>; <em>Curvature and Geodesics</em></td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^n$</td>
+<td>the Fubini–Study metric</td>
+<td>compact, hence complete</td>
+<td><em>Kähler Geometry</em></td>
+</tr>
+<tr>
+<td>$C([0,1])$, $B(X,Y)$</td>
+<td>the sup metric $d_\infty(f,g) = \sup_x d(f(x),g(x))$</td>
+<td>complete when the target is complete</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>a normed space, a Banach space</td>
+<td>$d(x,y) = \lVert x - y\rVert$</td>
+<td>the completion is the Banach space completion, built as classes of Cauchy sequences</td>
+<td><em>Banach and Hilbert Spaces</em>; <em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>a Hilbert space</td>
+<td>the distance of the inner product</td>
+<td>complete by definition, and every inner product space embeds in its completion</td>
+<td><em>Banach and Hilbert Spaces</em></td>
+</tr>
+<tr>
+<td>a finitely generated group $G$</td>
+<td>the word metric $d_S(g,h) = \lvert g^{-1}h\rvert_S$ of a Cayley graph</td>
+<td>the completion is the group; the metric depends on $S$ only up to quasi-isometry</td>
+<td><em>Geometric Group Theory</em></td>
+</tr>
+<tr>
+<td>a real tree, a $0$-hyperbolic length space</td>
+<td>the intrinsic distance, with the four-point condition</td>
+<td>complete when the tree is</td>
+<td><em>Metric Geometry</em></td>
+</tr>
+<tr>
+<td>$\mathcal{K}(Z)$, the compact subsets of a metric space</td>
+<td>the Hausdorff distance $d_H$</td>
+<td>complete when $Z$ is complete</td>
+<td><em>Gromov–Hausdorff Convergence</em>; <em>Metric Geometry</em></td>
+</tr>
+<tr>
+<td>the isometry classes of compact metric spaces</td>
+<td>the Gromov–Hausdorff distance $d_{GH}$</td>
+<td>the class is not complete; the limits include singular spaces</td>
+<td><em>Gromov–Hausdorff Convergence</em></td>
+</tr>
+<tr>
+<td>a metric space with the discrete metric</td>
+<td>$d(x,y) = 1$ for $x \neq y$</td>
+<td>complete; it induces the discrete topology</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>a compact Hausdorff space</td>
+<td>any metric inducing its topology, and the unique uniformity</td>
+<td>complete for that unique uniformity, and complete in every metric</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The order of the rows is the order in which the corpus builds the distances: the order and absolute value distances of the real and $p$-adic lines, then the distances of normed and inner-product spaces, then the geometric distances of manifolds, then the coarse distances of graphs and the distances between spaces themselves. The <strong>intrinsic metric</strong> of a length space is the supremum of the lengths of the curves, and a length space is one in which the intrinsic metric recovers $d$; the metric geometry of these distinctions is <em>Metric Geometry</em>.</p>
+<h2 id="the-completion-of-a-metric-space">The Completion of a Metric Space</h2>
+<p>Every metric space $(X,d)$ embeds isometrically as a dense subspace of a complete metric space $(\hat X,\hat d)$, unique up to isometry fixing $X$; the construction is by equivalence classes of Cauchy sequences, and it is the same construction that produces $\mathbb{R}$ from $\mathbb{Q}$ and $\mathbb{Q}_p$ from $\mathbb{Q}$ with the $p$-adic distance.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Completion</th>
+<th>The space completed, and the result</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>the completion of $\mathbb{Q}$ for the usual absolute value</td>
+<td><em>The Real Numbers</em>; <em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$, $\mathbb{Z}_p$</td>
+<td>the completions of $\mathbb{Q}$ and $\mathbb{Z}$ for the $p$-adic absolute value; $\mathbb{Z}_p = \varprojlim \mathbb{Z}/p^n$</td>
+<td><em>The $p$-adic Numbers</em>; <em>Topological Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}_p$</td>
+<td>the completion of the algebraic closure of $\mathbb{Q}_p$; it is not complete, and its own completion is needed for the analytic theory</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$k[[t]]$, $k((t))$</td>
+<td>the $(t)$-adic completions of $k[t]$ and $k(t)$, the second being the fraction field of the first</td>
+<td><em>Topological Rings and Fields</em>; <em>Formal Power Series and Completion</em></td>
+</tr>
+<tr>
+<td>$\hat X$</td>
+<td>the completion of a metric space, unique up to an isometry fixing $X$</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the Banach space completion</td>
+<td>the completion of a normed space, a Banach space</td>
+<td><em>Normed and Banach Spaces</em></td>
+</tr>
+<tr>
+<td>the Hilbert space completion</td>
+<td>the completion of an inner product space, a Hilbert space</td>
+<td><em>Banach and Hilbert Spaces</em></td>
+</tr>
+<tr>
+<td>the $I$-adic completion $\hat R$</td>
+<td>the completion of a ring for the $I$-adic topology, an inverse limit of quotients</td>
+<td><em>Topological Rings and Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Completeness is not a topological property, and the standard witness is the interval: $(0,1)$ and $\mathbb{R}$ are homeomorphic, the first is not complete for its usual metric and the second is. A metrisable space admits a complete metric exactly when it is completely metrisable, that is, a $G_\delta$ in its completion, and this is the topological form of the property that the completion detects. The completion is idempotent, and it is an isometry-invariant functor on the category of metric spaces with uniformly continuous maps.</p>
+<h2 id="the-uniform-structures-of-the-corpus">The Uniform Structures of the Corpus</h2>
+<p>A uniform structure on a set is a filter of entourages on $X \times X$ containing the diagonal, closed under inversion and under composition; it generates a topology, and it remembers exactly the data that the Cauchy condition and uniform continuity need.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Uniform space</th>
+<th>The uniformity it carries</th>
+<th>Its completion</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a metric space</td>
+<td>the metric uniformity, with entourages $\{(x,y) : d(x,y) < \epsilon\}$</td>
+<td>the metric completion $\hat X$</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>a topological group $G$</td>
+<td>the left, the right and the two-sided uniformities, generated by the neighbourhoods of the identity</td>
+<td>the completion of the group, a topological group when $G$ is Hausdorff</td>
+<td><em>Topological Groups</em>; <em>Abelian Topological Groups</em></td>
+</tr>
+<tr>
+<td>a compact Hausdorff space</td>
+<td>a unique uniformity, compatible with the topology</td>
+<td>already complete; the completion adds no point</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>a metrisable uniform space</td>
+<td>a uniformity with a countable base, equivalently generated by countably many pseudometrics</td>
+<td>the metric completion for any metric of a countable base</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>a topological vector space</td>
+<td>the uniformity generated by the neighbourhoods of $0$, additive and linear</td>
+<td>the completion, a topological vector space</td>
+<td><em>Topological Modules and Vector Spaces</em>; <em>Locally Convex Spaces</em></td>
+</tr>
+<tr>
+<td>a proximity space $(X,\delta)$</td>
+<td>the proximal uniformity, whose entourages are the sets far from the diagonal</td>
+<td>the Samuel compactification, whose points are the minimal Cauchy filters</td>
+<td><em>Proximity Spaces</em></td>
+</tr>
+<tr>
+<td>a uniform space in general</td>
+<td>a filter of entourages, with no metric assumed</td>
+<td>the separated completion, built from minimal Cauchy filters</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>an inverse system of groups</td>
+<td>the inverse-limit uniformity, with the subgroups of the system as a base at the identity</td>
+<td>the profinite completion $\hat G^{\mathrm{pf}}$, compact and totally disconnected</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The completion of a uniform space always exists, is unique up to a uniform isomorphism fixing $X$, and is the separated completion when the original space is not Hausdorff; the passage to the completion is a functor on the category of uniform spaces and uniformly continuous maps. The uniformity is finer information than the topology and coarser than the metric: a topological space that carries a uniformity at all is completely regular, and the proximities of <em>Proximity Spaces</em> sit between the two, since every uniformity induces a proximity and every proximity induces a topology.</p>
+<h2 id="the-metrisation-theorems">The Metrisation Theorems</h2>
+<p>The metrisation theorems decide which topological and which uniform spaces receive a distance. They are stated here together because they are the reason the two sides of this list meet.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theorem</th>
+<th>The statement</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Urysohn's metrisation theorem</td>
+<td>a regular second-countable $T_1$ space is metrisable; the proof embeds it in the Hilbert cube</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>Nagata–Smirnov theorem</td>
+<td>a regular space with a $\sigma$-locally finite base is metrisable, and the condition is necessary as well as sufficient</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>Bing's metrisation theorem</td>
+<td>a regular space with a $\sigma$-discrete base is metrisable</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>Smirnov's metrisation theorem</td>
+<td>a paracompact and locally metrisable space is metrisable</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>Stone's theorem</td>
+<td>every metrisable space is paracompact</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>the uniform metrisation theorem</td>
+<td>a uniform space is metrisable exactly when its uniformity has a countable base, equivalently is generated by countably many pseudometrics</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the group metrisation theorem</td>
+<td>a Hausdorff topological group is metrisable exactly when it is first countable, and then a left-invariant metric may be chosen</td>
+<td><em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>the metric characterisation of compactness</td>
+<td>a metrisable space is compact exactly when it is complete and totally bounded, equivalently sequentially compact</td>
+<td><em>Metric, Uniform and Complete Spaces</em>; <em>Topological Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-spaces-that-fail-metrisability-or-completeness">The Spaces That Fail Metrisability or Completeness</h2>
+<p>The non-examples are recorded with the property that fails, since their role is to show that neither a separation axiom nor a covering property supplies a distance, and that completeness is not a topological invariant.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>The property it has, and the one it fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(0,1)$</td>
+<td>metrisable and connected, homeomorphic to $\mathbb{R}$; not complete for its usual metric, so completeness is not topological</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>countable, metrisable and $\sigma$-compact; not complete, and not completely metrisable, since it is meagre in itself</td>
+<td><em>Metric, Uniform and Complete Spaces</em>; <em>Baire Spaces and Category</em></td>
+</tr>
+<tr>
+<td>the map $x \mapsto 1/x$ on $(0,1)$</td>
+<td>a homeomorphism onto $(1,\infty)$ that is not uniformly continuous; the uniformity is not a topological invariant</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the Sorgenfrey line $\mathbb{R}_S$</td>
+<td>perfectly normal, separable, Lindelöf and paracompact; not metrisable, and not locally metrisable</td>
+<td><em>Metrisation and Separation Axioms</em>; <em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>the long line $L$</td>
+<td>locally metrisable, connected, normal; not metrisable and not paracompact</td>
+<td><em>Paracompactness and Partitions of Unity</em></td>
+</tr>
+<tr>
+<td>$\beta\mathbb{N}$</td>
+<td>compact Hausdorff, with its unique uniformity; not metrisable, so its uniformity has no countable base</td>
+<td><em>Metrisation and Separation Axioms</em></td>
+</tr>
+<tr>
+<td>an uncountable discrete space</td>
+<td>carries the fine uniformity; not metrisable, and the discrete metric is not equivalent to it with respect to the topology alone</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$ with the $p$-adic distance</td>
+<td>a metric space that is not complete and whose completion is $\mathbb{Q}_p$; unlike the usual completion, it is totally disconnected</td>
+<td><em>The $p$-adic Numbers</em>; <em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="warnings">Warnings</h2>
+<p>Objects that a reader may expect to find among the metric and uniform spaces, and does not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the fine uniformity on an uncountable set</td>
+<td>a uniformity with no countable base, hence not metrisable; it is a uniformity and not a distance, and it is recorded only through the discrete space</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the asymptotic cone of a metric space</td>
+<td>a construction that requires the limits of Part III, and not a metric space of this Part</td>
+<td><em>Geometric Group Theory</em></td>
+</tr>
+<tr>
+<td>the measured Gromov–Hausdorff distance</td>
+<td>a construction that remembers a measure on each space and belongs to Part III</td>
+<td><em>Gromov–Hausdorff Convergence</em></td>
+</tr>
+<tr>
+<td>the Lipschitz distance</td>
+<td>a distance between metric spaces coarser than the Gromov–Hausdorff distance and recorded with the Lipschitz maps, not as a metric structure of the corpus</td>
+<td><em>Gromov–Hausdorff Convergence</em></td>
+</tr>
+<tr>
+<td>a norm on a vector space over a non-Archimedean field</td>
+<td>the non-Archimedean norms and their unit balls, which belong to the non-Archimedean analysis and are not distances of this list</td>
+<td><em>Non-Archimedean Functional Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the distances of the corpus with their completions — the Euclidean, $p$-adic, hyperbolic, Riemannian, word and Gromov–Hausdorff distances among them — and the uniformities of the corpus with their completions — the metric uniformity, the uniformities of a topological group, the unique uniformity of a compact Hausdorff space, the proximal uniformity and the inverse-limit uniformity. The completion of a metric space and of a uniform space is unique up to an isomorphism fixing the space, and it produces $\mathbb{R}$ from $\mathbb{Q}$, $\mathbb{Q}_p$ from $\mathbb{Q}$ and the profinite completion from a group. The metrisation theorems — Urysohn, Nagata–Smirnov, Bing, Smirnov, the countable-base theorem for uniformities and the first-countability theorem for groups — decide which spaces receive a distance. Beside the examples stand the non-examples: the incomplete interval, the rationals, the Sorgenfrey line and the long line, each with the failure named. The list introduces and proves nothing; it is the index of the distance structures of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$d(x,y)$, $d_\infty$</td>
+<td>a distance; the sup metric on bounded functions</td>
+</tr>
+<tr>
+<td>$B(x,r)$, $\overline B(x,r)$</td>
+<td>open and closed balls</td>
+</tr>
+<tr>
+<td>$\lvert x\rvert_p$, $\lvert x\rvert$</td>
+<td>the $p$-adic and the usual absolute values</td>
+</tr>
+<tr>
+<td>$d_H$, $d_{GH}$</td>
+<td>the Hausdorff and Gromov–Hausdorff distances</td>
+</tr>
+<tr>
+<td>$\hat X$, $\hat d$, $\iota$</td>
+<td>the completion of a metric space and its isometric embedding</td>
+</tr>
+<tr>
+<td>$\mathcal{U}$, $E$, $E[x]$</td>
+<td>a uniform structure, an entourage, and the points $E$-close to $x$</td>
+</tr>
+<tr>
+<td>$\Delta_X$</td>
+<td>the diagonal of $X \times X$</td>
+</tr>
+<tr>
+<td>$G/H$</td>
+<td>a homogeneous space, with the uniformity induced from $G$</td>
+</tr>
+<tr>
+<td>$\hat G^{\mathrm{pf}}$</td>
+<td>the profinite completion</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_S$</td>
+<td>the Sorgenfrey line</td>
+</tr>
+<tr>
+<td>$\mathcal{K}(Z)$</td>
+<td>the hyperspace of nonempty compact subsets with the Hausdorff metric</td>
+</tr>
+<tr>
+<td>$\lvert g\rvert_S$, $d_S$</td>
+<td>word length and word metric of a finitely generated group</td>
+</tr>
+<tr>
+<td>$M^2_k$, CAT($k$)</td>
+<td>the model surface and the triangle comparison condition of metric geometry</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters I–IV (Springer, 1989), for the uniform structures, the entourages and the completion of a uniform space in their standard form.</li>
+<li>John R. Isbell, <em>Uniform Spaces</em> (American Mathematical Society, 1964), for the uniform spaces, the proximities and the Samuel compactification.</li>
+<li>Dmitri Burago, Yuri Burago and Sergei Ivanov, <em>A Course in Metric Geometry</em> (American Mathematical Society, 2001), for the distances, the length spaces and the Gromov–Hausdorff convergence.</li>
+<li>Ryszard Engelking, <em>General Topology</em> (Heldermann, rev. ed. 1989), for the metrisation theorems and the uniform spaces, including the uniform metrisation theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

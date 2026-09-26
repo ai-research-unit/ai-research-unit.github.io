@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Mechanics: Foundations and Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-mechanics-foundations-and-structure"><strong>Quantum Mechanics: Foundations and Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article presents the foundations of standard quantum mechanics. Its purpose is twofold: to serve as an introduction for readers who are new to the subject, and to prepare the ground for a subsequent article on quantum mechanics in the biquaternion framework. The presentation here is entirely conventional: no biquaternions are used, and the formalism is the standard one found in textbooks.</p>
+<p>The article is organized as follows. First the four foundational postulates of quantum mechanics are stated: the state space, the observables, the dynamics, and the measurement rule. Then the two descriptions of states — pure states and density matrices — are developed. Then observables and the Born rule are explained. Then the two-state system (the qubit) and the Bloch sphere are introduced, because they are the simplest illustration of the whole formalism and the ones that will reappear in the biquaternion framework. Then the dynamics of states is recalled, in the Schrödinger, Heisenberg, and von Neumann pictures. Then projective and generalized measurements are described. Then composite systems and entanglement are introduced. The article closes with a checklist of what a comprehensive quantum theory must contain, since this checklist will be the reference for assessing the biquaternion reformulation.</p>
+<p>The presentation is written for a reader who is not assumed to be a quantum-mechanics specialist. Formulas are stated precisely but not derived in full. The reader who wants derivations is referred to the standard texts listed in the Further Reading.</p>
+<h2 id="the-postulates-of-quantum-mechanics">The Postulates of Quantum Mechanics</h2>
+<p>Quantum mechanics is built on four foundational postulates. They are stated here in the operator formulation, which is the most common in modern practice.</p>
+<p><strong>Postulate 1 (States).</strong> A physical system is described by a complex Hilbert space $\mathcal{H}$. The state of the system is a positive, trace-class operator $\rho$ on $\mathcal{H}$ with trace one:</p>
+<p>$$
+\rho \geq 0, \qquad \mathrm{Tr}(\rho) = 1.
+$$</p>
+<p>The operator $\rho$ is called the <strong>density matrix</strong> (or density operator). States that are rank-one projectors are called <strong>pure</strong>; all other states are called <strong>mixed</strong>.</p>
+<p><strong>Postulate 2 (Observables).</strong> Every physical quantity is represented by a self-adjoint (Hermitian) operator $A$ on $\mathcal{H}$:</p>
+<p>$$
+A = A^\dagger.
+$$</p>
+<p>The possible results of a measurement of $A$ are the eigenvalues of $A$.</p>
+<p><strong>Postulate 3 (Dynamics).</strong> The evolution of a closed quantum system in time is unitary. If the state at time $t_0$ is $\rho(t_0)$, the state at time $t$ is</p>
+<p>$$
+\rho(t) = U(t, t_0)\, \rho(t_0)\, U(t, t_0)^\dagger,
+$$</p>
+<p>where $U(t, t_0)$ is the unitary evolution operator satisfying</p>
+<p>$$
+i\hbar\, \frac{d}{dt} U(t, t_0) = H\, U(t, t_0), \qquad U(t_0, t_0) = I,
+$$</p>
+<p>with $H$ the Hamiltonian of the system.</p>
+<p><strong>Postulate 4 (Measurement).</strong> A projective measurement of an observable $A$ has outcomes labeled by its eigenvalues. If $A$ has spectral decomposition</p>
+<p>$$
+A = \sum_a a\, P_a,
+$$</p>
+<p>where $P_a$ are orthogonal projectors summing to the identity, then the probability of outcome $a$ in state $\rho$ is</p>
+<p>$$
+p(a) = \mathrm{Tr}(P_a \rho),
+$$</p>
+<p>and the post-measurement state, conditioned on outcome $a$, is</p>
+<p>$$
+\rho' = \frac{P_a \rho P_a}{\mathrm{Tr}(P_a \rho)}.
+$$</p>
+<p>These four postulates are the foundation of the theory. Everything else — the uncertainty principle, the no-cloning theorem, entanglement, decoherence — is a consequence of them or an application of them.</p>
+<h2 id="states">States</h2>
+<h3 id="pure-states">Pure States</h3>
+<p>A <strong>pure state</strong> is a state that cannot be written as a nontrivial convex combination of two other states. In the density matrix formalism, pure states are rank-one projectors:</p>
+<p>$$
+\rho_\psi = |\psi\rangle\langle\psi|,
+$$</p>
+<p>where $|\psi\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).</p>
+<p>Pure states satisfy</p>
+<p>$$
+\rho_\psi^2 = \rho_\psi,
+$$</p>
+<p>i.e., they are <strong>idempotent</strong>. This is the algebraic characterization of purity: a state is pure if and only if it is idempotent.</p>
+<h3 id="mixed-states">Mixed States</h3>
+<p>A <strong>mixed state</strong> is a state that can be written as a convex combination of pure states:</p>
+<p>$$
+\rho = \sum_i p_i\, \rho_{\psi_i}, \qquad p_i \geq 0, \quad \sum_i p_i = 1.
+$$</p>
+<p>The mixed state describes a statistical ensemble: with probability $p_i$, the system is in the pure state $\rho_{\psi_i}$. The mixture reflects our ignorance of the preparation, not a fundamental indeterminacy.</p>
+<p>Mixed states are not idempotent: $\rho^2 \neq \rho$. The <strong>purity</strong> of a state is the quantity</p>
+<p>$$
+\mathrm{Tr}(\rho^2) \leq 1,
+$$</p>
+<p>with equality if and only if the state is pure.</p>
+<h3 id="the-spectral-decomposition">The Spectral Decomposition</h3>
+<p>Every density matrix has a spectral decomposition:</p>
+<p>$$
+\rho = \sum_i \lambda_i\, |i\rangle\langle i|,
+$$</p>
+<p>where $\lambda_i \geq 0$, $\sum_i \lambda_i = 1$, and $\{|i\rangle\}$ is an orthonormal basis of eigenvectors. The eigenvalues $\lambda_i$ are the <strong>probabilities</strong> of finding the system in the corresponding eigenstate $|i\rangle$ when a measurement in that basis is performed.</p>
+<h2 id="observables">Observables</h2>
+<p>An <strong>observable</strong> is a Hermitian operator $A$ on $\mathcal{H}$. Its spectral decomposition is</p>
+<p>$$
+A = \sum_a a\, P_a,
+$$</p>
+<p>where the sum runs over the distinct eigenvalues of $A$, and $P_a$ is the orthogonal projector onto the eigenspace associated with eigenvalue $a$. The projectors satisfy</p>
+<p>$$
+P_a P_b = \delta_{ab} P_a, \qquad \sum_a P_a = I.
+$$</p>
+<p><strong>Interpretation.</strong> The eigenvalues of $A$ are the possible outcomes of a measurement of $A$. If the state of the system is $\rho$, the probability of outcome $a$ is $p(a) = \mathrm{Tr}(P_a \rho)$.</p>
+<p><strong>Traceless observables.</strong> The <strong>trace</strong> of an observable is $\mathrm{Tr}(A) = \sum_a a \dim(P_a)$. The traceless part of $A$ is what determines its measurement properties, up to a shift of all eigenvalues by a constant. In many applications (qubit physics, spin systems) one focuses on traceless observables.</p>
+<p><strong>Compatibility.</strong> Two observables $A$ and $B$ are <strong>compatible</strong> (simultaneously measurable) if and only if they commute: $[A, B] = AB - BA = 0$. If they do not commute, they cannot be measured simultaneously with arbitrary precision. This is the origin of the uncertainty principle.</p>
+<h2 id="the-born-rule">The Born Rule</h2>
+<p>The <strong>Born rule</strong> gives the probability of an outcome of a measurement. For an observable $A$ with spectral decomposition $A = \sum_a a P_a$ and a state $\rho$, the probability of measuring outcome $a$ is</p>
+<p>$$
+p(a) = \mathrm{Tr}(P_a \rho).
+$$</p>
+<p>The <strong>expectation value</strong> of $A$ in the state $\rho$ is</p>
+<p>$$
+\langle A \rangle_\rho = \sum_a a\, p(a) = \sum_a a\, \mathrm{Tr}(P_a \rho) = \mathrm{Tr}(A \rho).
+$$</p>
+<p>The expectation value is a real number, since both $A$ and $\rho$ are Hermitian.</p>
+<p><strong>Interpretation.</strong> The Born rule is the bridge between the mathematical formalism (Hermitian operators, density matrices) and the empirical content of the theory (probabilities of measurement outcomes). It is the rule that gives quantum mechanics its probabilistic character.</p>
+<p><strong>Axiomatic status.</strong> The Born rule is a postulate, not a theorem, of standard quantum mechanics. It can be motivated in several ways (via Gleason's theorem, via decision-theoretic arguments, via envariance), but it is not derived from the other postulates. This axiomatic status is a feature of the standard framework that will be revisited in the biquaternion reformulation.</p>
+<h2 id="two-state-systems-and-qubits">Two-State Systems and Qubits</h2>
+<h3 id="definition">Definition</h3>
+<p>A <strong>two-state system</strong> is a quantum system whose Hilbert space is two-dimensional:</p>
+<p>$$
+\mathcal{H} \cong \mathbb{C}^2.
+$$</p>
+<p>Its most famous realization is the <strong>spin-1/2</strong> of an electron, whose spin along any axis can take two values (up and down). In quantum information, the two-state system is called a <strong>qubit</strong> (quantum bit).</p>
+<h3 id="states-of-a-qubit">States of a Qubit</h3>
+<p>A <strong>pure state</strong> of a qubit is a unit vector</p>
+<p>$$
+|\psi\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
+$$</p>
+<p>where $\{|0\rangle, |1\rangle\}$ is an orthonormal basis. The coefficients $\alpha, \beta$ are complex numbers, determined up to a global phase.</p>
+<p>A <strong>mixed state</strong> of a qubit is a density matrix</p>
+<p>$$
+\rho = \frac{1}{2}\left(I + \mathbf{r}\cdot\boldsymbol{\sigma}\right),
+$$</p>
+<p>where $\mathbf{r} = (r_1, r_2, r_3) \in \mathbb{R}^3$ is the <strong>Bloch vector</strong>, and $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices:</p>
+<p>$$
+\sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
+\sigma_2 = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
+\sigma_3 = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
+$$</p>
+<p>The <strong>positivity</strong> of $\rho$ is equivalent to the condition</p>
+<p>$$
+|\mathbf{r}| \leq 1.
+$$</p>
+<p>The state is <strong>pure</strong> if and only if $|\mathbf{r}| = 1$, and <strong>mixed</strong> otherwise. The <strong>maximally mixed state</strong> has $\mathbf{r} = 0$, i.e., $\rho = I/2$.</p>
+<h3 id="the-bloch-sphere">The Bloch Sphere</h3>
+<p>The set of pure states of a qubit is in one-to-one correspondence with the unit sphere</p>
+<p>$$
+S^2 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| = 1\}.
+$$</p>
+<p>This is the <strong>Bloch sphere</strong>. Each point on the sphere corresponds to a unique pure state, and the vector $\mathbf{r}$ is the direction along which the spin is definite (spin-up in the direction $\mathbf{r}$).</p>
+<p>The set of all states (pure and mixed) is the <strong>Bloch ball</strong> of radius one:</p>
+<p>$$
+B^3 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| \leq 1\}.
+$$</p>
+<p>The center $\mathbf{r} = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.</p>
+<p>The Bloch sphere provides a geometric representation of a qubit that is both intuitive and useful. Rotations of the sphere correspond to unitary operations on the qubit (up to a sign), and the distance between two points corresponds to the distinguishability of the corresponding states.</p>
+<h3 id="pauli-matrices-and-observables">Pauli Matrices and Observables</h3>
+<p>The <strong>Pauli matrices</strong> form a basis for the traceless Hermitian operators on $\mathbb{C}^2$. Any Hermitian operator $A$ on $\mathbb{C}^2$ can be written as</p>
+<p>$$
+A = a_0\, I + \mathbf{a}\cdot\boldsymbol{\sigma},
+$$</p>
+<p>where $a_0 \in \mathbb{R}$ is the trace part and $\mathbf{a} \in \mathbb{R}^3$ is the traceless part. The eigenvalues of $A$ are $a_0 \pm |\mathbf{a}|$.</p>
+<p>The <strong>expectation value</strong> of $A$ in a state $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$ is</p>
+<p>$$
+\langle A \rangle_\rho = \mathrm{Tr}(A\rho) = a_0 + \mathbf{a}\cdot\mathbf{r}.
+$$</p>
+<p>This is the standard formula for the expectation value of a qubit observable.</p>
+<h3 id="the-born-rule-for-a-qubit">The Born Rule for a Qubit</h3>
+<p>For a projective measurement of an observable $A = a_0 I + \mathbf{a}\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\mathbf{a}|$, with probabilities</p>
+<p>$$
+p_\pm = \frac{1}{2}\left(1 \pm \hat{\mathbf{a}}\cdot\mathbf{r}\right),
+$$</p>
+<p>where $\hat{\mathbf{a}} = \mathbf{a}/|\mathbf{a}|$. So the probability of each outcome depends only on the angle between the measurement direction $\hat{\mathbf{a}}$ and the Bloch vector $\mathbf{r}$.</p>
+<p>After the measurement with outcome $+$, the state collapses to the pure state</p>
+<p>$$
+\rho' = \frac{1}{2}\left(I + \hat{\mathbf{a}}\cdot\boldsymbol{\sigma}\right),
+$$</p>
+<p>i.e., the Bloch vector becomes $\hat{\mathbf{a}}$.</p>
+<h2 id="dynamics">Dynamics</h2>
+<h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
+<p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\psi(t)\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
+<p>$$
+i\hbar\, \frac{\partial}{\partial t}|\psi(t)\rangle = H\, |\psi(t)\rangle,
+$$</p>
+<p>where $H$ is the Hamiltonian. The solution is</p>
+<p>$$
+|\psi(t)\rangle = U(t, t_0)\, |\psi(t_0)\rangle,
+$$</p>
+<p>with $U(t, t_0) = \exp\left(-\tfrac{i}{\hbar}H(t - t_0)\right)$ for a time-independent Hamiltonian.</p>
+<p>For a density matrix $\rho(t)$, the evolution is given by the <strong>von Neumann equation</strong>:</p>
+<p>$$
+i\hbar\, \frac{\partial}{\partial t}\rho(t) = [H, \rho(t)],
+$$</p>
+<p>whose solution is $\rho(t) = U(t, t_0)\rho(t_0)U(t, t_0)^\dagger$.</p>
+<h3 id="the-heisenberg-picture">The Heisenberg Picture</h3>
+<p>In the <strong>Heisenberg picture</strong>, the state is fixed, and the observables evolve in time:</p>
+<p>$$
+A_H(t) = U(t, t_0)^\dagger\, A\, U(t, t_0).
+$$</p>
+<p>The evolution equation is the <strong>Heisenberg equation</strong>:</p>
+<p>$$
+i\hbar\, \frac{d}{dt} A_H(t) = [A_H(t), H].
+$$</p>
+<p>The two pictures are related by a unitary transformation and give the same predictions for physical quantities.</p>
+<h3 id="unitarity-and-reversibility">Unitarity and Reversibility</h3>
+<p>The evolution generated by a Hermitian Hamiltonian is <strong>unitary</strong>: $U^\dagger U = U U^\dagger = I$. This means the evolution is <strong>reversible</strong>: the state at any time can be recovered from the state at any later time by applying $U^\dagger$.</p>
+<p>Reversibility is one of the structural features of quantum mechanics that distinguishes unitary evolution from measurement. The measurement process, described by the projection $P_a$, is not reversible (the information about the parts of the state that are projected out is lost). This distinction between reversible evolution and irreversible measurement is one of the deepest features of the theory.</p>
+<h2 id="measurement">Measurement</h2>
+<h3 id="projective-measurements">Projective Measurements</h3>
+<p>A <strong>projective measurement</strong> of an observable $A = \sum_a a P_a$ is the ideal measurement described in Postulate 4. The outcomes are the eigenvalues of $A$, with probabilities $p(a) = \mathrm{Tr}(P_a \rho)$, and the post-measurement state is the projection $\rho' = P_a \rho P_a / p(a)$.</p>
+<p>Projective measurements are the ideal limit of realistic measurements. In practice, measurements are often weaker or incomplete, and their description requires the more general framework of <strong>positive operator-valued measures (POVMs)</strong>.</p>
+<h3 id="povms">POVMs</h3>
+<p>A <strong>positive operator-valued measure (POVM)</strong> is a set of positive operators $\{E_i\}$ on $\mathcal{H}$ that sum to the identity:</p>
+<p>$$
+E_i \geq 0, \qquad \sum_i E_i = I.
+$$</p>
+<p>The probability of outcome $i$ in state $\rho$ is</p>
+<p>$$
+p(i) = \mathrm{Tr}(E_i \rho).
+$$</p>
+<p>POVMs generalize projective measurements: a projective measurement corresponds to the special case where the operators $E_i$ are orthogonal projectors.</p>
+<p>POVMs are the most general way to describe the statistics of a measurement. They do not, by themselves, determine the post-measurement state; for that, one needs a <strong>Kraus operator</strong> representation.</p>
+<h3 id="kraus-operators-and-quantum-channels">Kraus Operators and Quantum Channels</h3>
+<p>A <strong>quantum channel</strong> is a completely positive, trace-preserving linear map $\Phi$ on density matrices. Every such map has a <strong>Kraus representation</strong>:</p>
+<p>$$
+\Phi(\rho) = \sum_i K_i \rho K_i^\dagger, \qquad \sum_i K_i^\dagger K_i = I.
+$$</p>
+<p>The Kraus operators $\{K_i\}$ generalize both unitary evolution (single Kraus operator $K = U$) and projective measurement (Kraus operators $K_i = P_i$). They describe the most general quantum operation, including noise, decoherence, and feedback.</p>
+<p>Quantum channels are the modern framework for quantum information processing, and they are the natural language for describing the interaction of a quantum system with its environment.</p>
+<h2 id="composite-systems-and-entanglement">Composite Systems and Entanglement</h2>
+<h3 id="tensor-products">Tensor Products</h3>
+<p>The state space of a composite system with two subsystems is the <strong>tensor product</strong>:</p>
+<p>$$
+\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B.
+$$</p>
+<p>For two qubits, $\mathcal{H} = \mathbb{C}^2 \otimes \mathbb{C}^2 \cong \mathbb{C}^4$. The dimension of the composite space is the product of the dimensions of the subsystems.</p>
+<p>An observable on the composite system has the form</p>
+<p>$$
+A = \sum_{ij} a_{ij}\, A_i \otimes B_j,
+$$</p>
+<p>where $A_i$ and $B_j$ are observables on the two subsystems.</p>
+<h3 id="product-states-and-entanglement">Product States and Entanglement</h3>
+<p>A <strong>product state</strong> of a bipartite system is a state of the form</p>
+<p>$$
+\rho = \rho_A \otimes \rho_B,
+$$</p>
+<p>where $\rho_A$ and $\rho_B$ are states of the two subsystems. Product states describe systems that are prepared independently and have no correlations between them.</p>
+<p>A <strong>pure</strong> state that is <strong>not</strong> a product state is called <strong>entangled</strong>. For mixed states the criterion is different: a state is <strong>separable</strong> if it can be written as a convex combination of product states, and <strong>entangled</strong> otherwise. Entanglement is the quantum correlation between the two subsystems that cannot be explained by any classical correlation.</p>
+<p>The canonical examples of entangled states are the <strong>Bell states</strong> of two qubits:</p>
+<p>$$
+|\Phi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\Psi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
+$$</p>
+<p>These are maximally entangled states. They violate Bell inequalities, and they cannot be written as a convex combination of product states.</p>
+<h3 id="reduced-states-and-the-partial-trace">Reduced States and the Partial Trace</h3>
+<p>For a composite state $\rho$ on $\mathcal{H}_A \otimes \mathcal{H}_B$, the <strong>reduced state</strong> of subsystem $A$ is obtained by tracing out subsystem $B$:</p>
+<p>$$
+\rho_A = \mathrm{Tr}_B(\rho),
+$$</p>
+<p>where $\mathrm{Tr}_B$ is the partial trace over $\mathcal{H}_B$. The reduced state captures all the information about subsystem $A$ that is accessible by measurements on $A$ alone.</p>
+<p>For a product state $\rho_A \otimes \rho_B$, the reduced states are $\rho_A$ and $\rho_B$. For an entangled state, the reduced states are mixed, even if the composite state is pure. The mixedness of the reduced states is what makes entanglement a property of the pair rather than of either subsystem: for a pure composite state it measures exactly the entanglement between the two subsystems.</p>
+<h2 id="what-a-comprehensive-quantum-theory-must-contain">What a Comprehensive Quantum Theory Must Contain</h2>
+<p>The discussion above can be summarized as a checklist of what a complete quantum theory must contain. This checklist will be the reference for the biquaternion reformulation.</p>
+<p><strong>1. A state space.</strong> A mathematical object that encodes the possible states of the system, and a rule for updating the state in time and after measurement.</p>
+<p><strong>2. A description of observables.</strong> A mathematical object that encodes the measurable quantities, and a rule for computing the possible outcomes.</p>
+<p><strong>3. A Born rule.</strong> A rule for computing probabilities of measurement outcomes from the state and the observables.</p>
+<p><strong>4. A dynamics.</strong> A rule for the time evolution of the state (and, if applicable, of the observables), consistent with the other rules.</p>
+<p><strong>5. A measurement rule.</strong> A rule for the state update after a measurement, consistent with the Born rule.</p>
+<p><strong>6. A composition rule.</strong> A rule for describing composite systems, including a tensor-product structure and a partial trace.</p>
+<p><strong>7. A symmetry group.</strong> A group of transformations that acts on the states and observables, with a representation that is compatible with the other rules.</p>
+<p><strong>8. A relativistic extension.</strong> A formulation that is compatible with special relativity, including the Lorentz group as the symmetry group of spacetime.</p>
+<p><strong>9. A classical limit.</strong> A regime in which the quantum formalism reduces to classical mechanics, with the appropriate correspondence between quantum and classical observables.</p>
+<p><strong>10. An interpretation.</strong> A statement of what the formalism means physically: what are states, what are observables, what is measurement, what is the role of the observer.</p>
+<p>The first six items are the mathematical skeleton of quantum mechanics. Items 7–9 are structural constraints that any physically viable quantum theory must satisfy. Item 10 is interpretive, and the history of quantum mechanics shows that different interpretations can be attached to the same formalism.</p>
+<p>Any reformulation of quantum mechanics must reproduce all ten items, or must explain why one of them is not needed, or must replace it with something structurally better.</p>
+<h2 id="open-issues">Open Issues</h2>
+<p>The standard formalism of quantum mechanics has been extraordinarily successful, but it has several well-known open issues.</p>
+<p><strong>The measurement problem.</strong> The theory has two kinds of time evolution (unitary and projection), and it does not say when one or the other applies. This is the measurement problem. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum mechanics), but there is no consensus.</p>
+<p><strong>The Born rule.</strong> The Born rule is a postulate, not a theorem. Attempts to derive it (Gleason, decision theory, envariance) are suggestive but not universally accepted as deriving the rule from first principles.</p>
+<p><strong>Quantization.</strong> The passage from classical mechanics to quantum mechanics is not unique: canonical quantization, path-integral quantization, and deformation quantization can give different results, and the "right" one is not always clear.</p>
+<p><strong>Quantum gravity.</strong> Quantum mechanics and general relativity are difficult to reconcile. The problem of time, the non-renormalizability of gravity, and the role of the observer all appear in quantum gravity, and none is fully resolved.</p>
+<p><strong>Interpretation.</strong> The meaning of the quantum state (ontic, epistemic, relational), the role of measurement, and the status of probabilities are all subject to ongoing debate.</p>
+<p>These open issues are the reason quantum mechanics remains a fertile field for reformulation, and they will be the guiding questions for the biquaternion framework.</p>
+<h2 id="summary">Summary</h2>
+<p>Quantum mechanics rests on four postulates: states are density matrices, observables are Hermitian operators, dynamics is unitary, and measurement is projective. From these postulates, the whole theory follows: the Born rule, the Bloch sphere for qubits, the Schrödinger and von Neumann equations, the POVM and Kraus frameworks for generalized measurements, and the tensor-product structure for composite systems.</p>
+<p>The two-state system (the qubit) is the simplest and most instructive illustration. Its pure states form the Bloch sphere, its mixed states form the Bloch ball, and its observables are Hermitian operators on $\mathbb{C}^2$. The Born rule for a qubit depends only on the angle between the Bloch vector and the measurement direction.</p>
+<p>The standard formalism has ten structural requirements: a state space, a description of observables, a Born rule, a dynamics, a measurement rule, a composition rule, a symmetry group, a relativistic extension, a classical limit, and an interpretation. Any reformulation of quantum mechanics must address these ten requirements.</p>
+<p>The standard formalism has several open issues: the measurement problem, the axiomatic status of the Born rule, the non-uniqueness of quantization, the difficulty of quantum gravity, and the interpretation of the quantum state. These are the questions that motivate alternative frameworks, including the biquaternion reformulation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{H}$</td>
+<td>Complex Hilbert space of the system</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>Density matrix (state): $\rho \geq 0$, $\mathrm{Tr}(\rho) = 1$</td>
+</tr>
+<tr>
+<td>$\rho_\psi = \lvert\psi\rangle\langle\psi\rvert$</td>
+<td>Pure state; a rank-one projector, idempotent ($\rho_\psi^2 = \rho_\psi$)</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}$, $\mathrm{Tr}_B$</td>
+<td>Trace, and partial trace over subsystem $B$</td>
+</tr>
+<tr>
+<td>$A$, $A^\dagger$</td>
+<td>Observable (self-adjoint operator) and its adjoint</td>
+</tr>
+<tr>
+<td>$[A,B] = AB - BA$</td>
+<td>Commutator; $A$ and $B$ are compatible if and only if $[A,B] = 0$</td>
+</tr>
+<tr>
+<td>$a$, $P_a$</td>
+<td>Eigenvalue (measurement outcome) and its orthogonal projector</td>
+</tr>
+<tr>
+<td>$p(a) = \mathrm{Tr}(P_a \rho)$</td>
+<td>Born probability of outcome $a$</td>
+</tr>
+<tr>
+<td>$\langle A\rangle_\rho = \mathrm{Tr}(A\rho)$</td>
+<td>Expectation value of $A$ in state $\rho$</td>
+</tr>
+<tr>
+<td>$U(t,t_0)$</td>
+<td>Unitary evolution operator, $U(t_0,t_0) = I$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>Hamiltonian</td>
+</tr>
+<tr>
+<td>$\hbar$</td>
+<td>Reduced Planck constant</td>
+</tr>
+<tr>
+<td>$\lvert\psi\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$</td>
+<td>Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$</td>
+</tr>
+<tr>
+<td>$\boldsymbol{\sigma} = (\sigma_1,\sigma_2,\sigma_3)$</td>
+<td>Pauli matrices</td>
+</tr>
+<tr>
+<td>$\mathbf{r}$</td>
+<td>Bloch vector, $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$</td>
+</tr>
+<tr>
+<td>$S^2$, $B^3$</td>
+<td>Bloch sphere (pure states) and Bloch ball (all states)</td>
+</tr>
+<tr>
+<td>$\{E_i\}$</td>
+<td>POVM elements: $E_i \geq 0$, $\sum_i E_i = I$</td>
+</tr>
+<tr>
+<td>$K_i$, $\Phi$</td>
+<td>Kraus operators and the channel $\Phi(\rho) = \sum_i K_i \rho K_i^\dagger$</td>
+</tr>
+<tr>
+<td>$\mathcal{H}_A \otimes \mathcal{H}_B$</td>
+<td>Tensor-product space of a bipartite system</td>
+</tr>
+<tr>
+<td>$\rho_A = \mathrm{Tr}_B(\rho)$</td>
+<td>Reduced state of subsystem $A$</td>
+</tr>
+<tr>
+<td>$\lvert\Phi^\pm\rangle$, $\lvert\Psi^\pm\rangle$</td>
+<td>Bell states of two qubits</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford, 1930), for the foundational treatment.</li>
+<li>John von Neumann, <em>Mathematical Foundations of Quantum Mechanics</em> (Princeton, 1932), for the density matrix and Hilbert space formalism.</li>
+<li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the standard textbook treatment.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for qubits, entanglement, and quantum channels.</li>
+<li>Asher Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for the conceptual foundations.</li>
+<li>K. Kraus, <em>States, Effects, and Operations</em> (Springer, 1983), for the POVM and Kraus formalism.</li>
+<li>Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," <em>Reviews of Modern Physics</em> <strong>75</strong> (2003) 715–775, for the modern understanding of decoherence.</li>
+<li>Wojciech Hubert Zurek, "Environment-induced superselection rules," <em>Physical Review D</em> <strong>26</strong> (1982) 1862–1880, for the origin of the classical limit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

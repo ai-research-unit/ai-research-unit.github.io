@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lie Algebra and the Exponential Map — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lie-algebra-and-the-exponential-map"><strong>The Lie Algebra and the Exponential Map</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Lie algebra of a Lie group is the tangent space at the identity, equipped with the bracket obtained by identifying that tangent space with the left-invariant vector fields. This construction loses nothing locally: the exponential map, which integrates a tangent vector to the one-parameter subgroup it generates, is a local diffeomorphism at the identity, so a neighbourhood of the identity in the group is an image of a neighbourhood of zero in the algebra. The group law is recovered from the algebra by the Campbell–Baker–Hausdorff formula, and in this precise local sense a Lie group is determined by its Lie algebra. The global passage from the algebra back to the group, which is not unique, is not covered here.</p>
+<p>This article builds the three objects of the title. It identifies the tangent space at the identity with the left-invariant vector fields, defines the bracket, and constructs the exponential map as the flow of a left-invariant field; it computes the exponential for matrix groups, where it is the ordinary exponential series; it shows that the exponential is a local diffeomorphism and computes its differential, with the singularities that the differential formula exposes; and it states the Campbell–Baker–Hausdorff formula, which exhibits the group law in exponential coordinates as a Lie polynomial.</p>
+<p>The manifold conventions are those of the companion article <em>Lie Groups</em>: $G$ is a smooth manifold with a group structure for which multiplication and inversion are smooth, the tangent space at the identity is $\mathfrak{g} = T_eG$, and a vector field is a section of the tangent bundle. Lie algebras are written in lowercase fraktur, so $\mathfrak{g}, \mathfrak{h}, \mathfrak{n}$ are Lie algebras; the Lie bracket is $[\cdot, \cdot]$, the adjoint map is $\operatorname{ad}_x(y) = [x, y]$, and the exponential map is $\exp$. The base field is $\mathbb{R}$ or $\mathbb{C}$, written $\mathbb{K}$ when both are possible; where a statement requires $\mathbb{K} = \mathbb{R}$ this is said. No physics is invoked.</p>
+<h2 id="the-tangent-space-at-the-identity">The Tangent Space at the Identity</h2>
+<h3 id="left-invariant-vector-fields">Left-Invariant Vector Fields</h3>
+<p><strong>Definition.</strong> Let $G$ be a Lie group. For $g \in G$ let $L_g : G \to G$, $L_g(h) = gh$, be the <strong>left translation</strong> by $g$. A vector field $X$ on $G$ is <strong>left-invariant</strong> if</p>
+<p>$$
+(dL_g)_h\, X_h = X_{gh}
+$$</p>
+<p>for all $g, h \in G$; equivalently, if $X$ is $L_g$-related to itself for every $g$.</p>
+<p><strong>Proposition.</strong> Evaluation at the identity is a linear isomorphism</p>
+<p>$$
+\{\text{left-invariant vector fields}\} \longrightarrow \mathfrak{g} = T_eG, \qquad X \mapsto X_e.
+$$</p>
+<p>Consequently the left-invariant vector fields form a vector space of dimension $\dim G$, and every $v \in \mathfrak{g}$ extends to a unique left-invariant field $X^v$ by $X^v_g = (dL_g)_e v$.</p>
+<p><strong>Proof.</strong> A left-invariant field is determined by its value at $e$, since $X_g = (dL_g)_e X_e$; the assignment $v \mapsto X^v$ is linear, and it is inverse to evaluation, so the map is a linear isomorphism. $\square$</p>
+<h3 id="the-lie-bracket">The Lie Bracket</h3>
+<p><strong>Definition.</strong> The <strong>Lie algebra of $G$</strong> is the tangent space $\mathfrak{g} = T_eG$ with the bracket</p>
+<p>$$
+[v, w] = [X^v, X^w]_e,
+$$</p>
+<p>the value at the identity of the bracket of the corresponding left-invariant vector fields, where the bracket of vector fields is $[X, Y] = X \circ Y - Y \circ X$ acting on smooth functions.</p>
+<p><strong>Theorem.</strong> With this bracket, $\mathfrak{g}$ is a Lie algebra over $\mathbb{K}$: the bracket is bilinear, alternating, and satisfies the Jacobi identity. Moreover $\mathfrak{g}$ is closed under the bracket, and the bracket of left-invariant fields is left-invariant.</p>
+<p><strong>Proof.</strong> The bracket of vector fields is bilinear and alternating, so the induced bracket on $\mathfrak{g}$ is too. If $X, Y$ are left-invariant, then for every $g$ the fields $X, Y$ are $L_g$-related to themselves, and the bracket of related fields is related, so $[X, Y]$ is left-invariant; this is the closure statement. The Jacobi identity for the bracket of vector fields is a computation in the algebra of derivations of the smooth functions, and it descends to $\mathfrak{g}$. $\square$</p>
+<p><strong>Example.</strong> For $G = GL_n(\mathbb{K})$, an open subset of $\mathbb{K}^{n \times n}$, the tangent space at the identity is the full matrix algebra $\mathfrak{gl}(n, \mathbb{K}) = \mathbb{K}^{n\times n}$, and the bracket induced from left-invariant fields is the commutator $[A, B] = AB - BA$. The identification is made explicit by the computation in the next section, where the exponential of a matrix is the exponential of the tangent vector, and the commutator of the exponentials recovers the bracket through the Campbell–Baker–Hausdorff formula.</p>
+<p><strong>Definition.</strong> A map $\varphi : G \to H$ of Lie groups is a <strong>homomorphism of Lie groups</strong> if it is smooth and a group homomorphism. Its <strong>differential</strong> at the identity is the linear map $d\varphi_e : \mathfrak{g} \to \mathfrak{h}$.</p>
+<p><strong>Theorem.</strong> The differential of a Lie group homomorphism is a homomorphism of Lie algebras:</p>
+<p>$$
+d\varphi_e([v, w]) = [d\varphi_e(v), d\varphi_e(w)].
+$$</p>
+<p><strong>Proof.</strong> A homomorphism intertwines the left translations, $\varphi \circ L_g = L_{\varphi(g)} \circ \varphi$, so it carries left-invariant fields to left-invariant fields; the induced map on vector fields preserves the bracket because it is a diffeomorphism on its image, and evaluating at the identity gives the claim. $\square$</p>
+<p><strong>Corollary.</strong> The assignment $G \mapsto \operatorname{Lie}(G) = \mathfrak{g}$ and $\varphi \mapsto d\varphi_e$ is a functor from Lie groups to Lie algebras over $\mathbb{K}$.</p>
+<h3 id="vector-fields-as-derivations">Vector Fields as Derivations</h3>
+<p><strong>Remark.</strong> The bracket $[X, Y] = X \circ Y - Y \circ X$ has the two characteristic properties of the bracket of derivations: it is alternating, and the Jacobi identity for it is the statement that the commutator of two derivations is again a derivation. The left-invariant field $X^v$ acts on a smooth function $f$ by</p>
+<p>$$
+X^v f(g) = \frac{d}{dt}\Big|_{t=0} f(g \exp(tv)),
+$$</p>
+<p>as follows from $X^v_g = (dL_g)_e v$ and the flow computation of the next section; this is the form in which the infinitesimal action is usually written.</p>
+<h2 id="one-parameter-subgroups">One-Parameter Subgroups</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>one-parameter subgroup</strong> of $G$ is a smooth homomorphism $\gamma : \mathbb{R} \to G$, so that $\gamma(s + t) = \gamma(s)\gamma(t)$ and $\gamma(0) = e$. Its <strong>velocity</strong> is $\gamma'(0) \in \mathfrak{g}$.</p>
+<p><strong>Proposition.</strong> A one-parameter subgroup is determined by its velocity: if $\gamma'(0) = 0$ then $\gamma$ is constant. Every one-parameter subgroup is the flow of a left-invariant vector field.</p>
+<p><strong>Proof.</strong> For fixed $s$, the curve $t \mapsto \gamma(s + t) = \gamma(s)\gamma(t)$ is the left translate by $\gamma(s)$ of the curve $t \mapsto \gamma(t)$; differentiating at $t = 0$ gives $\gamma'(s) = (dL_{\gamma(s)})_e \gamma'(0)$, which is exactly the statement that the velocity field $s \mapsto \gamma'(s)$ is the left-invariant field extending $\gamma'(0)$. If $\gamma'(0) = 0$ the curve has zero velocity field everywhere and is constant. $\square$</p>
+<h3 id="the-correspondence-with-left-invariant-fields">The Correspondence with Left-Invariant Fields</h3>
+<p><strong>Theorem.</strong> For every $v \in \mathfrak{g}$ there is exactly one one-parameter subgroup $\gamma_v$ with $\gamma_v'(0) = v$, and it is the flow through $e$ of the left-invariant field $X^v$:</p>
+<p>$$
+\gamma_v(t) = \Phi^v_t(e),
+$$</p>
+<p>where $\Phi^v$ is the flow of $X^v$.</p>
+<p><strong>Proof.</strong> The flow of a vector field is locally defined and unique; the left-invariant field is complete because its flow at time $s$ composed with the flow at time $t$ is the flow at time $s+t$ by the group property of left translations, so the local flow extends to all of $\mathbb{R}$. This gives a one-parameter group of diffeomorphisms, and $\gamma_v(t) = \Phi^v_t(e)$ satisfies $\gamma_v(s + t) = \gamma_v(s)\gamma_v(t)$ and $\gamma_v'(0) = X^v_e = v$. Uniqueness is the uniqueness of solutions of the ordinary differential equation $\gamma' = X^v \circ \gamma$ with $\gamma(0) = e$. $\square$</p>
+<p><strong>Corollary.</strong> One-parameter subgroups of $G$ are in bijection with the vectors of $\mathfrak{g}$.</p>
+<p><strong>Example.</strong> For $G = GL_n(\mathbb{K})$ and a matrix $A$, the one-parameter subgroup with velocity $A$ is $\gamma_A(t) = e^{tA}$, where $e^{tA}$ is the matrix exponential. This is verified in the next section.</p>
+<h2 id="the-exponential-map">The Exponential Map</h2>
+<h3 id="definition-via-the-flow">Definition via the Flow</h3>
+<p><strong>Definition.</strong> The <strong>exponential map</strong> of $G$ is</p>
+<p>$$
+\exp : \mathfrak{g} \to G, \qquad \exp(v) = \gamma_v(1),
+$$</p>
+<p>the time-one value of the one-parameter subgroup with velocity $v$. Equivalently $\exp(v) = \Phi^v_1(e)$.</p>
+<p><strong>Theorem.</strong> The exponential map is smooth, and for all $s, t \in \mathbb{R}$ and $v \in \mathfrak{g}$:</p>
+<p><strong>(a)</strong> $\exp(0) = e$ and $\exp((s+t)v) = \exp(sv)\exp(tv)$;</p>
+<p><strong>(b)</strong> $\exp(tv) = \gamma_v(t)$ and $\exp(-v) = \exp(v)^{-1}$;</p>
+<p><strong>(c)</strong> $\exp$ is natural: for a Lie group homomorphism $\varphi : G \to H$ and $v \in \mathfrak{g}$,</p>
+<p>$$
+\varphi(\exp_G v) = \exp_H(d\varphi_e v).
+$$</p>
+<p><strong>Proof.</strong> (a) and (b) are the one-parameter group property of $\gamma_v$, and the smoothness of $\exp$ follows from the smooth dependence of the flow on its initial condition. For (c), the curve $t \mapsto \varphi(\gamma_v(t))$ is a one-parameter subgroup of $H$ with velocity $d\varphi_e v$, so by uniqueness it is $\gamma_{d\varphi_e v}$; evaluating at $t = 1$ gives the claim. $\square$</p>
+<p><strong>Corollary.</strong> The differential of $\exp$ at $0$, under the canonical identification $T_0\mathfrak{g} \cong \mathfrak{g}$, is the identity:</p>
+<p>$$
+d(\exp)_0 = \mathrm{id}_{\mathfrak{g}}.
+$$</p>
+<p><strong>Proof.</strong> The derivative of $t \mapsto \exp(tv)$ at $t = 0$ is $v$, so the linear map $d(\exp)_0$ fixes every $v$. $\square$</p>
+<h3 id="the-matrix-exponential">The Matrix Exponential</h3>
+<p><strong>Theorem.</strong> Let $G \subseteq GL_n(\mathbb{K})$ be a Lie subgroup with Lie algebra $\mathfrak{g} \subseteq \mathfrak{gl}(n, \mathbb{K})$. Then the exponential map of $G$ agrees with the ordinary matrix exponential on $\mathfrak{g}$:</p>
+<p>$$
+\exp(A) = \sum_{k=0}^{\infty} \frac{A^k}{k!} = I + A + \frac{A^2}{2!} + \frac{A^3}{3!} + \cdots,
+$$</p>
+<p>and the series converges absolutely for every $A$.</p>
+<p><strong>Proof.</strong> The series converges because its norm is bounded by $e^{\|A\|}$; differentiating it term by term gives $\frac{d}{dt}e^{tA} = A e^{tA}$, so $t \mapsto e^{tA}$ is a one-parameter subgroup of $GL_n$ with velocity $A$; by uniqueness it is $\gamma_A(t)$, and evaluating at $t = 1$ gives the claim. For $G$ a subgroup, the curve $e^{tA}$ lies in $G$ for $A \in \mathfrak{g}$ because $G$ is a Lie subgroup with that Lie algebra, so the exponential of $G$ agrees with the matrix exponential. $\square$</p>
+<p><strong>Proposition (properties of the matrix exponential).</strong> For matrices $A, B$:</p>
+<p><strong>(a)</strong> $e^{A+B} = e^A e^B$ if $AB = BA$;</p>
+<p><strong>(b)</strong> $e^{A}$ is invertible, $(e^A)^{-1} = e^{-A}$, and $\det(e^A) = e^{\operatorname{tr}(A)}$;</p>
+<p><strong>(c)</strong> $A e^{A} = e^{A} A$;</p>
+<p><strong>(d)</strong> $e^{BAB^{-1}} = B e^A B^{-1}$ for invertible $B$.</p>
+<p><strong>Proof.</strong> (a) The binomial theorem applies to commuting $A, B$ and gives the product series. (b) The inverse is $e^{-A}$ from (a) with $B = -A$. For the determinant, reduce to the triangular case: over $\mathbb{C}$ every matrix is conjugate to an upper triangular matrix; for upper triangular $T$ with diagonal entries $t_i$ the matrix $e^T$ is upper triangular with diagonal $e^{t_i}$, so $\det e^T = \prod_i e^{t_i} = e^{\sum_i t_i} = e^{\operatorname{tr}T}$; conjugating by (d) and extending from $\mathbb{C}$ to $\mathbb{K}$ gives the general case. (c) is immediate from the series. (d) is $(BAB^{-1})^k = B A^k B^{-1}$. $\square$</p>
+<p><strong>Example.</strong> For $A = \begin{pmatrix} 0 & -t \\ t & 0 \end{pmatrix}$ one has $e^A = \begin{pmatrix} \cos t & -\sin t \\ \sin t & \cos t\end{pmatrix}$, the rotation by angle $t$. This exhibits the exponential as the map from the line of skew matrices to the circle group $SO(2)$, and it shows that $\exp$ is not injective: $\exp(A) = I$ for $t = 2\pi$.</p>
+<h3 id="local-diffeomorphism">Local Diffeomorphism</h3>
+<p><strong>Theorem (inverse function theorem for the exponential).</strong> The exponential map is a local diffeomorphism at the origin of $\mathfrak{g}$: there is an open neighbourhood $U$ of $0$ in $\mathfrak{g}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp|_U : U \to V$ is a diffeomorphism.</p>
+<p><strong>Proof.</strong> The differential $d(\exp)_0$ is the identity by the corollary above, hence invertible; the inverse function theorem for smooth manifolds gives a neighbourhood on which $\exp$ is a diffeomorphism onto its image. $\square$</p>
+<p><strong>Corollary.</strong> The pair $(G, \mathfrak{g})$ is locally determined by $\mathfrak{g}$: exponential coordinates on $V$ identify a neighbourhood of the identity with a neighbourhood of $0$ in the vector space $\mathfrak{g}$.</p>
+<p><strong>Remark (global failure of injectivity and surjectivity).</strong> The exponential is only a local diffeomorphism in general. It is not injective: for the circle group $U(1)$ the kernel consists of the multiples of $2\pi i$. It is not surjective onto a connected group in general: for $G = SL_2(\mathbb{R})$ there are matrices with no real logarithm, so they lie outside the image of $\exp$. It is surjective when $G$ is connected and nilpotent, and when $G$ is compact and connected; the failure of surjectivity is a global phenomenon with no counterpart in the algebra.</p>
+<h3 id="naturality-and-conjugation">Naturality and Conjugation</h3>
+<p><strong>Definition.</strong> For $g \in G$ the <strong>conjugation</strong> by $g$ is the automorphism $c_g : G \to G$, $c_g(h) = ghg^{-1}$.</p>
+<p><strong>Definition.</strong> The <strong>adjoint representation</strong> of $G$ is $\operatorname{Ad} : G \to GL(\mathfrak{g})$, $\operatorname{Ad}(g) = d(c_g)_e$.</p>
+<p><strong>Proposition.</strong> For all $g \in G$ and $v \in \mathfrak{g}$,</p>
+<p>$$
+\exp(\operatorname{Ad}(g)\, v) = g \exp(v) g^{-1}.
+$$</p>
+<p><strong>Proof.</strong> Apply the naturality of $\exp$ to the homomorphism $c_g$, whose differential is $\operatorname{Ad}(g)$ by definition. $\square$</p>
+<p><strong>Corollary.</strong> $\operatorname{Ad}(g)$ is a Lie algebra automorphism of $\mathfrak{g}$ for every $g$, and its Lie algebra differential at the identity is $\operatorname{ad}$: $\operatorname{ad}_v = d(\operatorname{Ad})_e(v)$. This is developed.</p>
+<h2 id="the-differential-of-the-exponential">The Differential of the Exponential</h2>
+<h3 id="the-formula-for-math227">The Formula for $d\exp$</h3>
+<p><strong>Theorem.</strong> Identify $T_v\mathfrak{g}$ with $\mathfrak{g}$ for every $v$, and $T_{\exp(v)}G$ with $\mathfrak{g}$ by left translation. Then the differential of the exponential is the operator</p>
+<p>$$
+d(\exp)_v = \sum_{k=0}^{\infty} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_v)^k = \frac{1 - e^{-\operatorname{ad}_v}}{\operatorname{ad}_v},
+$$</p>
+<p>the series being the entire function $\frac{1-e^{-z}}{z}$ applied to the endomorphism $\operatorname{ad}_v$.</p>
+<p><strong>Proof sketch.</strong> Differentiate the identity $\exp(v + s w) = \exp(v)\exp(sW(s))$ for a curve $W$ in $\mathfrak{g}$ with $W(0) = 0$; the derivative at $s = 0$ is $d(\exp)_v(w) = \sum_{k \geq 0}\frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k(w)$, obtained by expanding the Campbell–Baker–Hausdorff series. The expansion is the standard computation, and its coefficients are the Bernoulli-like numbers $\frac{(-1)^k}{(k+1)!}$. $\square$</p>
+<h3 id="the-cases-of-injectivity-and-singularity">The Cases of Injectivity and Singularity</h3>
+<p><strong>Corollary.</strong> $d(\exp)_v$ is invertible exactly when $\operatorname{ad}_v$ has no eigenvalue in $2\pi i\mathbb{Z} \setminus \{0\}$. In particular $d(\exp)_0 = \mathrm{id}$, $d(\exp)_v$ is invertible for small $\|v\|$, and by the inverse function theorem the exponential map is a local diffeomorphism at $v$ exactly when $d(\exp)_v$ is invertible.</p>
+<p><strong>Proof.</strong> The operator is $f(\operatorname{ad}_v)$ with $f(z) = (1-e^{-z})/z$, whose zeros are the nonzero multiples of $2\pi i$; a polynomial-like function of a diagonalisable endomorphism is invertible exactly when it is nonzero on the spectrum. $\square$</p>
+<p><strong>Example.</strong> For a matrix $A$ with eigenvalues $a_j$, the eigenvalues of $\operatorname{ad}_A$ on $\mathfrak{gl}(n)$ are the differences $a_i - a_j$, and $d(\exp)_A$ is singular exactly when some $a_i - a_j$ is a nonzero multiple of $2\pi i$. This is the reason the exponential fails to be a local diffeomorphism at matrices whose eigenvalues differ by $2\pi i\,\mathbb{Z}$.</p>
+<h3 id="the-relation-to-the-invariant-volume">The Relation to the Invariant Volume</h3>
+<p><strong>Remark.</strong> The determinant of $d(\exp)_v$ can be written in terms of the roots of $\mathfrak{g}$: if $\mathfrak{g} = \bigoplus_\alpha \mathfrak{g}_\alpha$ with respect to a Cartan subalgebra and $v$ is regular in a Cartan subalgebra $\mathfrak{h}$, then</p>
+<p>$$
+\det\bigl(d(\exp)_v\bigr) = \prod_{\alpha \in \Phi} \frac{1 - e^{-\alpha(v)}}{\alpha(v)},
+$$</p>
+<p>the product over the roots, and this is the Jacobian of the exponential in exponential coordinates. It vanishes precisely where some $\alpha(v) \in 2\pi i\mathbb{Z}\setminus\{0\}$, in agreement with the corollary above. The description of the exponential in terms of a maximal torus and the roots is the starting point of the Weyl integration formula, and the local structure is not covered here.</p>
+<h2 id="the-campbellbakerhausdorff-formula">The Campbell–Baker–Hausdorff Formula</h2>
+<h3 id="statement">Statement</h3>
+<p><strong>Theorem (Campbell–Baker–Hausdorff).</strong> There is a neighbourhood of $0$ in $\mathfrak{g} \times \mathfrak{g}$ on which the equation</p>
+<p>$$
+\exp(X)\exp(Y) = \exp(Z(X, Y))
+$$</p>
+<p>has a unique solution $Z(X, Y)$, and this solution is a <strong>Lie polynomial</strong>: it is a convergent series in $X, Y$ whose every term is obtained from $X, Y$ by iterated brackets. Its first terms are</p>
+<p>$$
+Z(X, Y) = X + Y + \tfrac{1}{2}[X, Y] + \tfrac{1}{12}[X, [X, Y]] - \tfrac{1}{12}[Y, [X, Y]] - \tfrac{1}{24}[Y, [X, [X, Y]]] + \cdots.
+$$</p>
+<p><strong>Proof sketch.</strong> The derivative formula for the exponential gives the differential equation satisfied by $Z$ along the path $\exp(X)\exp(tY)$, and the solution is obtained by successive approximation; each step introduces one more bracket, and the convergence for small $X, Y$ follows from the analytic dependence on the two variables, by the analytic implicit function theorem. $\square$</p>
+<h3 id="consequences">Consequences</h3>
+<p><strong>Corollary.</strong> The binary operation</p>
+<p>$$
+X \cdot Y = Z(X, Y) = X + Y + \tfrac{1}{2}[X, Y] + \cdots
+$$</p>
+<p>defined near the origin of $\mathfrak{g}$ is a local Lie group law with the property that $\exp$ is a local isomorphism from $(\mathfrak{g}, \cdot)$ to $G$. In particular the germ of the group law of $G$ at the identity is recovered from the Lie bracket.</p>
+<p><strong>Corollary.</strong> If $[X, Y] = 0$ then $Z(X, Y) = X + Y$, so $\exp(X + Y) = \exp(X)\exp(Y)$; this recovers the abelian case and the matrix identity $e^{A+B} = e^A e^B$ for commuting matrices.</p>
+<p><strong>Corollary.</strong> For a simply connected Lie group the group law is determined by the Lie algebra, and two simply connected Lie groups with isomorphic Lie algebras are isomorphic. This is one direction of the Lie correspondence; the general statement is.</p>
+<h3 id="exponential-coordinates">Exponential Coordinates</h3>
+<p><strong>Definition.</strong> <strong>Exponential coordinates</strong> on a neighbourhood of the identity are the coordinates obtained by composing $\exp^{-1}$ with a linear identification $\mathfrak{g} \cong \mathbb{K}^n$.</p>
+<p><strong>Remark.</strong> In exponential coordinates the group law is the Campbell–Baker–Hausdorff product, the inversion is $X \mapsto -X$, and the differential of the multiplication at the origin is $(X, Y) \mapsto X + Y$; in this sense the group is, to first order at the identity, its Lie algebra. The higher-order terms measure the failure of the group to be abelian, and their leading term is the bracket.</p>
+<h2 id="example-the-unit-quaternions">Example: The Unit Quaternions</h2>
+<p>Let $G = S^3 = \{q \in \mathbb{H} : |q| = 1\}$, the group of unit quaternions under multiplication; it is the spin group $\operatorname{Spin}(3)$, and it is a Lie group of dimension $3$. The tangent space at $1$ is the space of purely imaginary quaternions,</p>
+<p>$$
+\mathfrak{g} = \operatorname{Im}\mathbb{H} = \{u = u_1 e_1 + u_2 e_2 + u_3 e_3\},
+$$</p>
+<p>which is a three-dimensional real vector space. With the commutator bracket inherited from the associative algebra $\mathbb{H}$, the bracket of two imaginary quaternions is</p>
+<p>$$
+[u, v] = uv - vu = 2\, (u \times v),
+$$</p>
+<p>twice the cross product. The one-parameter subgroup generated by $u \neq 0$ is</p>
+<p>$$
+\exp(tu) = \cos(t|u|) + \frac{u}{|u|}\sin(t|u|),
+$$</p>
+<p>a curve of unit quaternions, and the exponential map is</p>
+<p>$$
+\exp(u) = \cos|u| + \frac{u}{|u|}\sin|u|, \qquad \exp(0) = 1.
+$$</p>
+<p>The exponential is surjective onto $S^3$, since every unit quaternion has the form $\cos\theta + n\sin\theta$ with $n$ a unit imaginary quaternion; it is not injective, since $\exp(u) = 1$ exactly when $u = 2\pi k\, n$ for some integer $k$ and some unit imaginary $n$ with $|u| = 2\pi|k|$. The differential $d(\exp)_u$ is singular exactly when $\operatorname{ad}_u$ has a nonzero eigenvalue in $2\pi i\mathbb{Z}$: the eigenvalues of $\operatorname{ad}_u$ on $\operatorname{Im}\mathbb{H}$ are $\pm 2i|u|$ (with the zero eigenvalue on the line $\mathbb{R}u$), so $d(\exp)_u$ is singular for $|u| \in \pi\mathbb{Z}\setminus\{0\}$, that is, at the multiples of $\pi$ other than zero. This is the quaternionic form of the failure of the exponential to be a local diffeomorphism at the antipode.</p>
+<p><strong>Remark.</strong> The group $S^3$ is the simplest nonabelian compact example in which the exponential is surjective but not injective, and it exhibits the two global failures side by side. The Lie algebra is $\operatorname{Im}\mathbb{H}$ with the bracket $[u, w] = uw - wu$, which is the compact real form of the algebra of type $A_1$ of <em>Root Systems and Classification</em>; the quaternionic exponential is the restriction of the matrix exponential under the identification of $S^3$ with $SU(2)$.</p>
+<h2 id="summary">Summary</h2>
+<p>For a Lie group $G$ the tangent space at the identity, identified with the space of left-invariant vector fields by evaluation at $e$, carries the bracket of vector fields and becomes the Lie algebra $\mathfrak{g} = \operatorname{Lie}(G)$; the construction is functorial, and the differential at the identity of a Lie group homomorphism is a homomorphism of Lie algebras. One-parameter subgroups are in bijection with the vectors of $\mathfrak{g}$: the subgroup with velocity $v$ is the flow of the left-invariant field extending $v$.</p>
+<p>The exponential map $\exp : \mathfrak{g} \to G$ sends $v$ to the time-one value of that flow; it is smooth, satisfies $\exp((s+t)v) = \exp(sv)\exp(tv)$, is natural with respect to homomorphisms, and has $d(\exp)_0 = \mathrm{id}_{\mathfrak{g}}$, so it is a local diffeomorphism at $0$ by the inverse function theorem. For a matrix group it is the ordinary exponential series, with $\det(e^A) = e^{\operatorname{tr}A}$ and $e^{A+B} = e^A e^B$ for commuting $A, B$. The differential in general is $d(\exp)_v = \sum_k \frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k$, invertible exactly when $\operatorname{ad}_v$ has no nonzero eigenvalue in $2\pi i\mathbb{Z}$. The exponential is neither injective nor surjective in general, but for connected nilpotent or connected compact groups it is surjective. The Campbell–Baker–Hausdorff formula writes $\exp(X)\exp(Y) = \exp(Z(X,Y))$ with $Z$ a Lie polynomial whose first terms are $X + Y + \frac12[X,Y] + \cdots$, so the germ of the group law is determined by the bracket.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G, H$</td>
+<td>Lie groups over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{g} = T_eG$</td>
+<td>Lie algebra of $G$; tangent space at the identity</td>
+</tr>
+<tr>
+<td>$\mathfrak{h} = T_eH$</td>
+<td>Lie algebra of $H$; the codomain of $d\varphi_e$</td>
+</tr>
+<tr>
+<td>$L_g$, $dL_g$</td>
+<td>Left translation and its differential</td>
+</tr>
+<tr>
+<td>$X^v$</td>
+<td>Left-invariant vector field extending $v \in \mathfrak{g}$</td>
+</tr>
+<tr>
+<td>$[X, Y] = X \circ Y - Y \circ X$</td>
+<td>Bracket of vector fields; $[v,w] = [X^v, X^w]_e$</td>
+</tr>
+<tr>
+<td>$d\varphi_e$</td>
+<td>Differential at the identity of a Lie group homomorphism; a Lie algebra homomorphism</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(n, \mathbb{K})$</td>
+<td>Matrix Lie algebra $\mathbb{K}^{n\times n}$; the ambient algebra of a matrix group</td>
+</tr>
+<tr>
+<td>$\gamma_v(t)$</td>
+<td>One-parameter subgroup with velocity $v$</td>
+</tr>
+<tr>
+<td>$\exp : \mathfrak{g} \to G$</td>
+<td>Exponential map, $\exp(v) = \gamma_v(1) = \Phi^v_1(e)$</td>
+</tr>
+<tr>
+<td>$\exp((s+t)v) = \exp(sv)\exp(tv)$, $\varphi(\exp_G v) = \exp_H(d\varphi_e v)$</td>
+<td>Functional properties of $\exp$</td>
+</tr>
+<tr>
+<td>$e^A = \sum_k A^k/k!$</td>
+<td>Matrix exponential; agrees with $\exp$ for matrix groups</td>
+</tr>
+<tr>
+<td>$\det(e^A) = e^{\operatorname{tr}A}$</td>
+<td>Determinant of a matrix exponential</td>
+</tr>
+<tr>
+<td>$d(\exp)_0 = \mathrm{id}_{\mathfrak{g}}$</td>
+<td>$\exp$ is a local diffeomorphism at $0$</td>
+</tr>
+<tr>
+<td>$d(\exp)_v = \sum_k \frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k = \frac{1-e^{-\operatorname{ad}_v}}{\operatorname{ad}_v}$</td>
+<td>Differential of $\exp$</td>
+</tr>
+<tr>
+<td>$c_g$, $\operatorname{Ad}(g) = d(c_g)_e$</td>
+<td>Conjugation and the adjoint representation of $G$; $\exp(\operatorname{Ad}(g)v) = g\exp(v)g^{-1}$</td>
+</tr>
+<tr>
+<td>$Z(X, Y) = X + Y + \frac12[X,Y] + \frac1{12}[X,[X,Y]] - \frac1{12}[Y,[X,Y]] + \cdots$</td>
+<td>Campbell–Baker–Hausdorff Lie polynomial</td>
+</tr>
+<tr>
+<td>$\exp(X)\exp(Y) = \exp(Z(X,Y))$</td>
+<td>Group law in exponential coordinates</td>
+</tr>
+<tr>
+<td>$\operatorname{Im}\mathbb{H}$</td>
+<td>Lie algebra of $S^3$, bracket $[u,v] = 2(u\times v)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John M. Lee, <em>Introduction to Smooth Manifolds</em> (Springer, 2nd ed. 2013), for flows, left-invariant vector fields, and the differential of the exponential.</li>
+<li>John F. Adams, <em>Lectures on Lie Groups</em> (University of Chicago Press, 1969), for the exponential map and its differential in the classical setting.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the exponential map, the Jacobian, and the differential formula.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the exponential map, one-parameter subgroups, and the local group law.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2nd ed. 2015), for matrix Lie groups, the matrix exponential, and the Campbell–Baker–Hausdorff formula.</li>
+<li>Jean-Pierre Serre, <em>Lie Algebras and Lie Groups</em> (Springer, 1992), for exponential coordinates and the Lie correspondence.</li>
+<li>Wilhelm Magnus, Abraham Karrass, and Donald Solitar, <em>Combinatorial Group Theory</em> (Dover, 2nd ed. 1976), for the Campbell–Baker–Hausdorff series and its convergence.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

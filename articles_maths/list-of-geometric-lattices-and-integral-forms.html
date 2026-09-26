@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Geometric Lattices and Integral Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-geometric-lattices-and-integral-forms"><strong>List of Geometric Lattices and Integral Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the lattices of the corpus, their covolumes, their duals and the integral forms they carry, from the elementary lattice $\mathbb{Z}^n$ to the Lipschitz and Hurwitz lattices of the quaternion algebra. Every entry points to the article that introduces the lattice or the form, and the article introduces nothing and proves nothing.</p>
+<p>A lattice is a free abelian group of finite rank with an embedding in a real vector space, and the data that classify it geometrically are its Gram matrix, its covolume and its dual with respect to a form. The list gathers the abstract lattices as free $\mathbb{Z}$-modules, the Euclidean lattices and their covolumes, the dual lattices and the discriminants, the integral quadratic and bilinear forms that a lattice carries, the lattices of the ring of integers of a number field, and the two quaternion orders of the corpus, the Lipschitz and the Hurwitz lattice. The lattice in the sense of a discrete subgroup of finite covolume in a Lie group is a different object, and it is recorded in the warnings with the article that treats it.</p>
+<p>The article records examples and non-examples side by side. Beside the lattices it lists the dense subgroups that fail discreteness, the sets that are not finitely generated, the lattices that are not free, and the second sense in which the corpus uses the word lattice, each with the failure named and the article that records it.</p>
+<h2 id="lattices-as-free-math2-modules">Lattices as Free $\mathbb{Z}$-Modules</h2>
+<p>A lattice is a free abelian group of finite rank, and its rank, its sublattices and its indices are the algebraic data on which the geometry is built.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a lattice $\Lambda$</td>
+<td>a free $\mathbb{Z}$-module of finite rank $n$</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the rank $n$</td>
+<td>the number of generators, the dimension of the ambient space</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the change-of-basis matrix $A$</td>
+<td>the matrix relating two bases, of determinant equal to the index</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>a sublattice $\Lambda' \leq \Lambda$</td>
+<td>a free submodule of the same rank, of finite index in the geometric case</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the index $[\Lambda:\Lambda']$</td>
+<td>the determinant of the change of basis, the ratio of the covolumes</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the free $\mathbb{Z}$-module of rank $n$</td>
+<td>the abstract lattice, without an embedding</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>the elementary lattice $\mathbb{Z}^n \leq \mathbb{R}^n$</td>
+<td>the standard lattice, a rank-$n$ subgroup with covolume $1$</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>the period lattice $\Lambda = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2$</td>
+<td>the rank-two lattice of the periods of the elliptic functions, on which $\mathbb{C}/\Lambda$ is an elliptic curve</td>
+<td><em>Elliptic Functions and Integrals</em> (planned)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The lattice is a free module, so it has a basis, and a sublattice of finite index has a basis whose change-of-basis matrix has determinant equal to the index. The elementary lattice and its images by invertible linear maps are the Euclidean lattices, and the abstract free module is the algebraic object from which they are obtained by a choice of embedding.</p>
+<h2 id="the-euclidean-lattice-and-its-covolume">The Euclidean Lattice and its Covolume</h2>
+<p>An embedded lattice has a Gram matrix, and the square root of its determinant is the covolume, the volume of a fundamental domain.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Gram matrix $G = (v_i\cdot v_j)$</td>
+<td>the matrix of the inner products of a basis, encoding the metric of the lattice</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the covolume $\operatorname{covol}(\Lambda) = \sqrt{\det G}$</td>
+<td>the volume of a fundamental domain, the density of the embedding</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the scaling law $\operatorname{covol}(\Lambda') = [\Lambda:\Lambda']\operatorname{covol}(\Lambda)$</td>
+<td>the index times the covolume is the covolume</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the lattice $A\mathbb{Z}^n$ in $\mathbb{R}^n$</td>
+<td>a lattice of covolume $\lvert\det A\rvert$</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>the integral lattice</td>
+<td>a lattice with a positive-definite integral Gram matrix</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the covolume of the arithmetic quotient</td>
+<td>the volume $\mu(G/\Gamma)$ of a lattice in a Lie group, defined up to normalisation</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Gram matrix is the complete metric data of the lattice, and the covolume is its geometric size: it is the volume of the parallelotope spanned by a basis, and it multiplies by the index under the passage to a sublattice. The covolume of a lattice in a Lie group is the volume of the quotient, and it is the invariant by which the arithmetic lattices are compared; the two covolumes share the name and the scaling property, though the objects are different.</p>
+<h2 id="the-dual-lattice-and-the-discriminant-of-the-form">The Dual Lattice and the Discriminant of the Form</h2>
+<p>The dual lattice is the set of vectors whose inner products with the lattice are integral, and the discriminant of the form together with the order of the quotient $\Lambda^*/\Lambda$ measures the embedding of the lattice in its dual.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dual lattice $\Lambda^*$</td>
+<td>the vectors $y$ with $x\cdot y \in \mathbb{Z}$ for all $x \in \Lambda$</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the discriminant of the form</td>
+<td>the determinant of the Gram matrix up to squares, an invariant of the isometry class</td>
+<td><em>Bilinear Forms</em>, §Congruence and the Discriminant</td>
+</tr>
+<tr>
+<td>the integrality of the norm form</td>
+<td>the norm $N(x) = x\bar x$ is integer-valued on the Lipschitz and the Hurwitz lattice</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the discriminant $d_K$ of a number field</td>
+<td>the determinant of an integral basis of $\mathcal{O}_K$</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+<tr>
+<td>the ring of integers $\mathcal{O}_K$</td>
+<td>a lattice of rank $n = [K:\mathbb{Q}]$, with an integral basis</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The dual lattice sits between the lattice and its real span, the quotient $\Lambda^*/\Lambda$ is the finite group that measures the failure of the lattice to be self-dual, of order four for the Hurwitz lattice, For the ring of integers the discriminant is the arithmetic invariant of the number field, and the ramified primes are exactly its prime divisors.</p>
+<h2 id="integral-forms">Integral Forms</h2>
+<p>An integral form is a bilinear or quadratic form taking integral values on a lattice, and the form is the datum that makes the lattice a geometric object.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>an integral quadratic form</td>
+<td>a quadratic form $q$ with $q(x) \in \mathbb{Z}$ for all lattice vectors</td>
+<td><em>Quadratic Forms and Polarisation</em></td>
+</tr>
+<tr>
+<td>the polar form $g(u,v) = \tfrac12(q(u+v)-q(u)-q(v))$</td>
+<td>the bilinear form associated with a quadratic form</td>
+<td><em>Quadratic Forms and Polarisation</em></td>
+</tr>
+<tr>
+<td>an integral bilinear form</td>
+<td>a symmetric bilinear form with integral values on the lattice</td>
+<td><em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>the Gram matrix of a form</td>
+<td>the matrix of an integral form, an integral matrix</td>
+<td><em>Bilinear Forms</em></td>
+</tr>
+<tr>
+<td>the norm form $N(x) = x\bar x$</td>
+<td>the quadratic form of the quaternion algebra, integral on the quaternion lattices</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the polar form $(x,y) = \operatorname{Sc}(x\bar y)$</td>
+<td>the Euclidean dot product, the polar form of the norm</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the radical of an integral form</td>
+<td>the vectors orthogonal to the whole space, the obstruction to nondegeneracy</td>
+<td><em>Bilinear Forms</em>, §Rank and the Radical</td>
+</tr>
+</tbody>
+</table></div>
+<p>The passage from an integral form to a lattice and back is the arithmetic content of the geometry: the Gram matrix of a basis is the matrix of the form, the covolume is its determinant, the dual lattice is the lattice of the inverse form, and the integrality of the form is the condition $\Lambda\subseteq\Lambda^*$. The norm form of the quaternion algebra is the classical example of an integral quaternary form, and its polar form is the Euclidean dot product.</p>
+<h2 id="the-quaternion-lattices">The Quaternion Lattices</h2>
+<p>The Lipschitz and Hurwitz lattices are the integral forms of the quaternion algebra, and the Hurwitz lattice is the maximal order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Lipschitz lattice $\mathbb{H}(\mathbb{Z})$</td>
+<td>the integer span of the quaternion basis, rank $4$, not maximal</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the Hurwitz lattice $\mathbb{H}'(\mathbb{Z})$</td>
+<td>the order with the half-integral generator $\omega = \tfrac12(1+e_1+e_2+e_3)$, rank $4$, maximal</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>the Hurwitz unit group</td>
+<td>the $24$ units of the Hurwitz order, the binary tetrahedral group $2T$</td>
+<td><em>Quaternion Geometry</em>, §The Units and Their Geometry</td>
+</tr>
+<tr>
+<td>the norm form on the lattice</td>
+<td>the sum of four squares, the integral quadratic form of the lattice</td>
+<td><em>Quaternion Geometry</em>, §The Arithmetic Geometry of the Quaternion Lattice</td>
+</tr>
+<tr>
+<td>the unit sphere lattice</td>
+<td>the unit sphere carries a discrete subgroup of finite covolume, up to scaling</td>
+<td><em>Quaternion Geometry</em>, §The Units and Their Geometry</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Hurwitz order contains the Lipschitz order with index two, and it is the maximal order of the rational quaternion algebra; the unit group is finite of order $24$ and is the binary tetrahedral group. The lattice is the arithmetic counterpart of the geometry of the quaternion sphere, and the norm form is the quaternary quadratic form that the lattice carries.</p>
+<h2 id="warnings">Warnings</h2>
+<p>An object that a reader may expect among the geometric lattices and integral forms, and does not find, is recorded with the reason.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed as a geometric lattice</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a lattice in a Lie group</td>
+<td>a discrete subgroup of finite covolume, a different sense of the word, treated with the discrete geometric groups</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>a non-uniform lattice</td>
+<td>finite covolume but noncompact quotient, with cusps; it is a lattice in the Lie-group sense</td>
+<td><em>Lattices in Lie Groups</em></td>
+</tr>
+<tr>
+<td>a dense subgroup of $\mathbb{R}^n$</td>
+<td>not discrete, so not a lattice in any sense</td>
+<td><em>Topological Groups</em></td>
+</tr>
+<tr>
+<td>the rational lattice $\mathbb{Q}^n$</td>
+<td>not discrete and not finitely generated over $\mathbb{Z}$</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>the dual of a lattice with no form fixed</td>
+<td>the dual depends on the form; without one the construction is undefined</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the geometric lattices and integral forms of the corpus. The lattices as free $\mathbb{Z}$-modules open the list, with their rank, their sublattices and their indices; the Euclidean lattices follow, with the Gram matrix and the covolume, together with the covolume of a lattice in a Lie group; the dual lattice, the discriminant and the ring of integers of a number field are recorded; the integral quadratic and bilinear forms are gathered with the polar form, the norm form and the radical; and the Lipschitz and Hurwitz lattices close the list with the norm form and the Hurwitz unit group. Beside the examples stand the non-examples: a dense subgroup is not discrete, the rational lattice is not finitely generated, the dual is undefined without a form, and a lattice in a Lie group is a lattice in the other sense of the word.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following, and they are the symbols of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda$, $\Lambda^*$, $n$, $[\Lambda:\Lambda']$</td>
+<td>Lattice, dual, rank, index</td>
+</tr>
+<tr>
+<td>$G = (v_i\cdot v_j)$, $\operatorname{covol}(\Lambda) = \sqrt{\det G}$</td>
+<td>Gram matrix and covolume</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}^n$, $A\mathbb{Z}^n$</td>
+<td>Elementary lattice and its linear images</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_K$, $d_K$</td>
+<td>Ring of integers and discriminant of a number field</td>
+</tr>
+<tr>
+<td>$q$, $g(u,v)$, $N(x) = x\bar x$</td>
+<td>Quadratic form, polar form, quaternion norm form</td>
+</tr>
+<tr>
+<td>$\mathbb{H}(\mathbb{Z})$, $\mathbb{H}'(\mathbb{Z})$</td>
+<td>Lipschitz lattice, Hurwitz lattice</td>
+</tr>
+<tr>
+<td>$\omega = \tfrac12(1+e_1+e_2+e_3)$</td>
+<td>Half-integral generator of the Hurwitz order</td>
+</tr>
+<tr>
+<td>$\mu(G/\Gamma)$, $\operatorname{covol}(\Gamma)$</td>
+<td>Haar measure and covolume of a lattice in a Lie group</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>The standard number systems of the corpus</td>
+</tr>
+<tr>
+<td>$\operatorname{Sc}(x)$</td>
+<td>The scalar part of a quaternion product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John Horton Conway and Neil J. A. Sloane, <em>Sphere Packings, Lattices and Groups</em> (Springer, 3rd ed. 1999), for the lattices, their covolumes, their duals and the integral forms.</li>
+<li>Jean-Pierre Serre, <em>A Course in Arithmetic</em> (Springer, 1973), for the integral quadratic forms and the four-square theorem.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the Lipschitz and Hurwitz orders and their arithmetic.</li>
+<li>J. W. S. Cassels, <em>An Introduction to the Geometry of Numbers</em> (Springer, 1959), for the covolume, the fundamental domain and the Minkowski theory of the Euclidean lattices.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Differential Forms and Stokes' Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="differential-forms-and-stokes-theorem"><strong>Differential Forms and Stokes' Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A differential form on a smooth manifold is a smoothly varying alternating form on the tangent spaces, and the companion article <em>The Determinant and Alternating Forms</em> shows that the algebra of alternating forms on a single vector space is the exterior algebra of its dual. The global theory assembles these algebras into a bundle, forms the module of smooth sections, and adds one new operation, the <strong>exterior derivative</strong> $d$, a degree-one derivation with $d^2 = 0$. The resulting complex of forms is the de Rham complex, whose cohomology is a topological invariant of the manifold; the exterior derivative is also the object that makes integration local, because it is the operator for which <strong>Stokes' theorem</strong> holds: the integral of $d\omega$ over an oriented manifold with boundary equals the integral of $\omega$ over the boundary.</p>
+<p>This article develops the calculus of differential forms. It defines the bundle of forms, the exterior derivative in coordinates and invariantly, the de Rham complex and its cohomology, the Poincaré lemma, the integration of top-degree forms on oriented manifolds with the change-of-variables formula, and Stokes' theorem with its classical specialisations — the fundamental theorem of calculus, Green's theorem, the divergence theorem and the classical Stokes theorem of vector calculus. It closes with the Hodge star and the Laplace–de Rham operator, and with the theorem of de Rham identifying the de Rham cohomology with singular cohomology with real coefficients.</p>
+<p>The treatment is differential-topological throughout. Manifolds are smooth, second countable and Hausdorff; they may have boundary, and the orientation conventions for the boundary are fixed below. The base field is $\mathbb{R}$. The exterior algebra is written $\Lambda^k$ with the notation of <em>Exterior Powers</em> and <em>The Exterior Algebra</em>, so the wedge product is $\wedge$, the degree of a form is its exterior degree, and the Koszul sign rule is $\alpha \wedge \beta = (-1)^{pq}\beta \wedge \alpha$ for forms of degrees $p$ and $q$. The determinant is that of <em>The Determinant and Alternating Forms</em>. No physics is invoked.</p>
+<h2 id="differential-forms-on-a-manifold">Differential Forms on a Manifold</h2>
+<h3 id="the-cotangent-bundle-and-the-bundle-of-forms">The Cotangent Bundle and the Bundle of Forms</h3>
+<p>Let $M$ be a smooth manifold of dimension $n$. The <strong>cotangent bundle</strong> $T^*M$ is the dual of the tangent bundle, and for each $x \in M$ the fibre $T^*_xM$ is the dual space of the tangent space $T_xM$.</p>
+<p><strong>Definition.</strong> The <strong>bundle of $k$-forms</strong> on $M$ is the exterior power bundle</p>
+<p>$$
+\Lambda^k T^*M = \bigsqcup_{x \in M} \Lambda^k(T^*_xM),
+$$</p>
+<p>with the vector space structure on each fibre inherited from the exterior power, endowed with the smooth structure induced from that of $T^*M$.</p>
+<p><strong>Definition.</strong> A <strong>differential $k$-form</strong> on $M$ is a smooth section of $\Lambda^k T^*M$. The space of such sections is written $\Omega^k(M) = \Gamma(\Lambda^k T^*M)$; elements of $\Omega^0(M)$ are the smooth functions, $\Omega^0(M) = C^\infty(M)$, and $\Omega^1(M)$ is the space of smooth $1$-forms, the smooth sections of the cotangent bundle. The <strong>degree</strong> of an element of $\Omega^k(M)$ is $k$, and</p>
+<p>$$
+\Omega^\bullet(M) = \bigoplus_{k=0}^{n} \Omega^k(M)
+$$</p>
+<p>is the <strong>algebra of differential forms</strong>, a graded-commutative algebra under the wedge product.</p>
+<p><strong>Proposition.</strong> In a chart $(U, x^1, \ldots, x^n)$, every $k$-form on $U$ has a unique expression</p>
+<p>$$
+\omega = \sum_{i_1 < i_2 < \cdots < i_k} \omega_{i_1\cdots i_k}\, dx^{i_1} \wedge \cdots \wedge dx^{i_k}
+$$</p>
+<p>with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(U)$, and the $dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $U$. Consequently $\Omega^k(M) = 0$ for $k > n$ and $\Omega^n(M)$ is the module of <strong>top forms</strong>.</p>
+<p><strong>Proof.</strong> The cotangent bundle is locally trivial with fibre $\mathbb{R}^n$, and the exterior power of a free module of rank $n$ has the stated basis; the sections are smooth precisely when the coefficients are. $\square$</p>
+<h3 id="smooth-sections-and-the-module-structure">Smooth Sections and the Module Structure</h3>
+<p><strong>Proposition.</strong> $\Omega^\bullet(M)$ is a module over $C^\infty(M)$ and a graded-commutative algebra over $\mathbb{R}$; the wedge product is associative, unital, and satisfies $\alpha \wedge \beta = (-1)^{pq}\beta\wedge\alpha$ for $\alpha$ of degree $p$ and $\beta$ of degree $q$.</p>
+<p><strong>Proof.</strong> Multiplication of a form by a function is defined pointwise and preserves smoothness, giving the module structure; the wedge product is defined fibrewise from the exterior algebra, so it inherits associativity, the unit, and the sign rule of <em>The Exterior Algebra</em>. $\square$</p>
+<h3 id="the-pullback">The Pullback</h3>
+<p><strong>Definition.</strong> Let $F : M \to N$ be a smooth map. The <strong>pullback</strong> of a form $\omega \in \Omega^k(N)$ is the form $F^*\omega \in \Omega^k(M)$ defined by</p>
+<p>$$
+(F^*\omega)_x(v_1, \ldots, v_k) = \omega_{F(x)}(dF_x v_1, \ldots, dF_x v_k), \qquad v_j \in T_xM.
+$$</p>
+<p><strong>Theorem.</strong> The pullback is an algebra homomorphism $F^* : \Omega^\bullet(N) \to \Omega^\bullet(M)$ that preserves the grading, and it is contravariantly functorial: $(G \circ F)^* = F^* \circ G^*$ and $\mathrm{id}^* = \mathrm{id}$. It commutes with the exterior derivative defined below, $F^* \circ d = d \circ F^*$.</p>
+<p><strong>Proof.</strong> At each point the pullback is the transpose of $dF_x$ applied to an alternating form, and pulling back an alternating form along a linear map preserves the wedge product, by the functoriality of the exterior algebra; the module structure is preserved because $F^*$ pulls functions back by composition. Contravariant functoriality is the chain rule. The commutation with $d$ is proved after the exterior derivative is defined. $\square$</p>
+<h2 id="the-exterior-derivative">The Exterior Derivative</h2>
+<h3 id="definition-in-coordinates">Definition in Coordinates</h3>
+<p><strong>Definition.</strong> The <strong>exterior derivative</strong> is the $\mathbb{R}$-linear map $d : \Omega^k(M) \to \Omega^{k+1}(M)$ defined in a chart $(U, x^1, \ldots, x^n)$ by</p>
+<p>$$
+d\Bigl(\sum_{I} \omega_I\, dx^I\Bigr) = \sum_{I}\sum_{j=1}^{n} \frac{\partial \omega_I}{\partial x^j}\, dx^j \wedge dx^I,
+$$</p>
+<p>where $dx^I = dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ for $I = (i_1 < \cdots < i_k)$.</p>
+<p><strong>Theorem.</strong> The operator $d$ is well defined, that is, the expression above is independent of the choice of chart, and it is characterised on $\Omega^k(M)$ by</p>
+<p><strong>(a)</strong> $d(\alpha + \beta) = d\alpha + d\beta$ and $d(c\alpha) = c\, d\alpha$ for $c \in \mathbb{R}$;</p>
+<p><strong>(b)</strong> $d(\alpha \wedge \beta) = d\alpha \wedge \beta + (-1)^{k}\, \alpha \wedge d\beta$ for $\alpha \in \Omega^k(M)$;</p>
+<p><strong>(c)</strong> for a function $f$, $df$ is the differential of $f$; and</p>
+<p><strong>(d)</strong> $d \circ d = 0$.</p>
+<p>It is the unique operator with properties (a), (b), (c) and (d).</p>
+<p><strong>Proof sketch.</strong> One checks the coordinate expression transforms correctly under a change of chart: the chain rule and the antisymmetry of the wedge product produce the two terms that cancel when the transformation is applied to $d\omega$. For the characterisation, property (b) with the $dx^{i}$ and property (c) with the coordinate functions reconstruct the displayed formula term by term, so any two operators with the listed properties agree; conversely the displayed operator has them, and $d^2 = 0$ follows from the equality of mixed partial derivatives, $\frac{\partial^2 f}{\partial x^i \partial x^j} = \frac{\partial^2 f}{\partial x^j \partial x^i}$, together with $dx^i\wedge dx^j = -dx^j\wedge dx^i$. $\square$</p>
+<p><strong>Remark.</strong> Property (b) is the graded Leibniz rule, and it says that $d$ is an odd derivation of the graded-commutative algebra of forms; the sign $(-1)^k$ is the Koszul sign of the exterior algebra. The exterior derivative is not a tensor: the value of $d\omega$ at a point depends on the first derivatives of the coefficients, which is why the differential structure is needed and why the purely algebraic theory of <em>The Determinant and Alternating Forms</em> does not contain $d$.</p>
+<h3 id="the-coordinate-free-characterisation">The Coordinate-Free Characterisation</h3>
+<p><strong>Definition.</strong> A <strong>derivation</strong> of $\Omega^\bullet(M)$ is an $\mathbb{R}$-linear map $D : \Omega^\bullet(M) \to \Omega^\bullet(M)$ of degree one satisfying $D(\alpha\wedge\beta) = D\alpha\wedge\beta + (-1)^{|\alpha|}\alpha\wedge D\beta$; a derivation is <strong>algebraic</strong> if it is $C^\infty(M)$-linear, that is, if $D(f\alpha) = f D(\alpha)$.</p>
+<p><strong>Proposition.</strong> An algebraic derivation of $\Omega^\bullet(M)$ of degree one is the same thing as a section of $\Lambda^2 T^*M$, and $d$ is not algebraic. The exterior derivative is characterised among degree-one derivations by the values it takes on functions.</p>
+<p><strong>Proof.</strong> An algebraic derivation is determined by its values on $\Omega^0(M) = C^\infty(M)$ and $\Omega^1(M)$, and sending a function to zero and a $1$-form to a $2$-form defines a tensor in $\Lambda^2T^*M$. The failure of $d$ to be algebraic is the Leibniz rule for a product by a function, $d(f\alpha) = df\wedge\alpha + f\,d\alpha$, which has a term involving $df$. $\square$</p>
+<h3 id="the-exterior-derivative-and-the-pullback">The Exterior Derivative and the Pullback</h3>
+<p><strong>Proposition.</strong> For every smooth map $F : M \to N$ and every form $\omega$ on $N$ one has $F^*(d\omega) = d(F^*\omega)$.</p>
+<p><strong>Proof.</strong> Both sides are derivations of the graded algebra to which $F^*$ applies, and it suffices to check the identity on functions and on exact $1$-forms. For a function $f$ on $N$, $F^*(df) = d(f\circ F) = d(F^*f)$. Additivity and the graded Leibniz rule extend the identity to all forms. $\square$</p>
+<h2 id="the-de-rham-complex">The de Rham Complex</h2>
+<h3 id="the-complex">The Complex</h3>
+<p><strong>Definition.</strong> The <strong>de Rham complex</strong> of $M$ is the sequence</p>
+<p>$$
+0 \longrightarrow \Omega^0(M) \xrightarrow{\ d\ } \Omega^1(M) \xrightarrow{\ d\ } \Omega^2(M) \xrightarrow{\ d\ } \cdots \xrightarrow{\ d\ } \Omega^n(M) \longrightarrow 0,
+$$</p>
+<p>with $d^2 = 0$. A form with $d\omega = 0$ is <strong>closed</strong>; a form with $\omega = d\eta$ is <strong>exact</strong>. Every exact form is closed.</p>
+<p><strong>Definition.</strong> The <strong>de Rham cohomology</strong> of $M$ is</p>
+<p>$$
+H^k_{dR}(M) = \frac{\ker\bigl(d : \Omega^k(M) \to \Omega^{k+1}(M)\bigr)}{\operatorname{im}\bigl(d : \Omega^{k-1}(M) \to \Omega^k(M)\bigr)},
+$$</p>
+<p>the space of closed $k$-forms modulo exact ones. It is a real vector space, and $H^0_{dR}(M)$ is the space of locally constant functions.</p>
+<h3 id="functoriality-and-the-mayervietoris-sequence">Functoriality and the Mayer–Vietoris Sequence</h3>
+<p><strong>Theorem.</strong> The pullback along a smooth map $F : M \to N$ induces a linear map $F^* : H^k_{dR}(N) \to H^k_{dR}(M)$ on cohomology, and this assignment is contravariantly functorial; homotopic maps induce the same map on cohomology.</p>
+<p><strong>Proof.</strong> The commutation $F^* d = d F^*$ shows that $F^*$ preserves closed and exact forms, so it descends. Functoriality is the functoriality of the pullback. The homotopy invariance follows from the construction of a chain homotopy between the pullbacks of homotopic maps, the <strong>prism operator</strong>, which is built from the integral of the pullback along the homotopy. $\square$</p>
+<p><strong>Theorem (Mayer–Vietoris).</strong> Let $M = U \cup V$ be an open cover. Then there is a long exact sequence</p>
+<p>$$
+\cdots \longrightarrow H^k_{dR}(M) \longrightarrow H^k_{dR}(U) \oplus H^k_{dR}(V) \longrightarrow H^k_{dR}(U \cap V) \xrightarrow{\ \delta\ } H^{k+1}_{dR}(M) \longrightarrow \cdots,
+$$</p>
+<p>where the connecting map $\delta$ is the boundary operator of the short exact sequence of complexes $0 \to \Omega^\bullet(M) \to \Omega^\bullet(U)\oplus\Omega^\bullet(V) \to \Omega^\bullet(U\cap V) \to 0$ built from a partition of unity.</p>
+<p><strong>Proof sketch.</strong> The restriction maps fit into a short exact sequence of complexes; the existence of a partition of unity subordinate to the cover shows that the third map is surjective, and the snake lemma produces the long exact sequence. $\square$</p>
+<h3 id="the-poincare-lemma">The Poincaré Lemma</h3>
+<p><strong>Definition.</strong> An open set $U \subseteq \mathbb{R}^n$ is <strong>star-shaped</strong> with respect to a point $p$ if for every $x \in U$ the segment from $p$ to $x$ lies in $U$; a manifold is <strong>contractible</strong> if it is homotopy equivalent to a point.</p>
+<p><strong>Theorem (Poincaré lemma).</strong> If $U \subseteq \mathbb{R}^n$ is star-shaped (in particular if $U$ is an open ball or all of $\mathbb{R}^n$), then every closed form of positive degree is exact:</p>
+<p>$$
+H^k_{dR}(U) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(U) = \mathbb{R}.
+$$</p>
+<p><strong>Proof.</strong> Let $U$ be star-shaped with respect to $0$. Define a <strong>homotopy operator</strong> $h : \Omega^k(U) \to \Omega^{k-1}(U)$ by</p>
+<p>$$
+h(\omega) = \int_0^1 t^{k-1}\, \iota_{x}\, \omega(tx)\, dt,
+$$</p>
+<p>where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x^j \partial_{x^j}$. One checks the homotopy identity $d\,h + h\,d = \mathrm{id}$ on $\Omega^k(U)$ for $k \geq 1$; a closed form of positive degree therefore satisfies $\omega = d(h\omega)$ and is exact. $\square$</p>
+<p><strong>Corollary.</strong> The de Rham cohomology of a contractible manifold is $\mathbb{R}$ in degree $0$ and zero in positive degrees. In particular the de Rham complex computes a homotopy invariant of the manifold, not merely a differential-geometric one.</p>
+<h2 id="integration-of-forms">Integration of Forms</h2>
+<h3 id="orientation-and-the-integral-of-a-top-form">Orientation and the Integral of a Top Form</h3>
+<p><strong>Definition.</strong> An <strong>orientation</strong> of an $n$-manifold $M$ is a nowhere vanishing top form $\mathrm{vol} \in \Omega^n(M)$, or an equivalence class of atlases whose transition functions have positive Jacobian determinant; an oriented manifold is a manifold with a chosen orientation. The orientation induces an orientation on each tangent space by declaring a basis $(v_1, \ldots, v_n)$ to be positively oriented when $\mathrm{vol}(v_1, \ldots, v_n) > 0$.</p>
+<p><strong>Definition.</strong> Let $M$ be an oriented $n$-manifold and $\omega \in \Omega^n(M)$ a top form with compact support. Write $\omega = f\, dx^1\wedge\cdots\wedge dx^n$ in a positively oriented chart $(U, x)$, and define the <strong>integral</strong> of $\omega$ over $U$ to be the ordinary integral $\int_{x(U)} f\, dx^1\cdots dx^n$ of the coefficient function. For a general compactly supported $\omega$ choose a finite cover by positively oriented charts subordinate to a partition of unity and sum the local integrals.</p>
+<p><strong>Theorem (change of variables).</strong> The integral is well defined, and if $F : N \to M$ is an orientation-preserving diffeomorphism between oriented $n$-manifolds, then</p>
+<p>$$
+\int_N F^*\omega = \int_M \omega
+$$</p>
+<p>for every compactly supported $\omega \in \Omega^n(M)$; if $F$ reverses orientation the two sides differ by a sign.</p>
+<p><strong>Proof.</strong> The local definition is independent of the chart because of the ordinary change-of-variables formula in $\mathbb{R}^n$: the Jacobian determinant of the transition function multiplies both the coefficient function and the coordinate volume form, and the two factors cancel, the sign being positive precisely for orientation-preserving transitions. The global statement follows by covering and summing. $\square$</p>
+<h3 id="stokes-theorem">Stokes' Theorem</h3>
+<p>To state the theorem one needs the induced orientation on the boundary. If $M$ is an oriented $n$-manifold with boundary and $\mathrm{vol}$ is the orientation, the <strong>boundary orientation</strong> on $\partial M$ is defined by the rule that a basis $(v_2, \ldots, v_n)$ of $T_x\partial M$ at a boundary point is positively oriented when $(\nu, v_2, \ldots, v_n)$ is positively oriented in $T_xM$, where $\nu$ is an outward-pointing normal vector; equivalently, the orientation form of the boundary is the contraction of $\mathrm{vol}$ with the outward normal.</p>
+<p><strong>Theorem (Stokes).</strong> Let $M$ be an oriented smooth $n$-manifold with boundary, and let $\omega \in \Omega^{n-1}(M)$ be a form with compact support. Then</p>
+<p>$$
+\int_M d\omega = \int_{\partial M} \omega,
+$$</p>
+<p>the boundary carrying the induced orientation.</p>
+<p><strong>Proof.</strong> By a partition of unity it suffices to prove the statement for a form supported in a single chart. In a chart mapping an open set of $M$ to an open set of the half-space $\mathbb{R}^n_+ = \{x^n \geq 0\}$ with the standard orientation, a compactly supported $(n-1)$-form can be written as</p>
+<p>$$
+\omega = \sum_{j=1}^{n} (-1)^{j-1} f_j\, dx^1\wedge\cdots\wedge\widehat{dx^j}\wedge\cdots\wedge dx^n,
+$$</p>
+<p>and</p>
+<p>$$
+d\omega = \sum_{j=1}^{n} \frac{\partial f_j}{\partial x^j}\, dx^1\wedge\cdots\wedge dx^n.
+$$</p>
+<p>Integrating the $j$-th term over $\mathbb{R}^n_+$ and applying the fundamental theorem of calculus in the $x^j$ variable, the integrals cancel except for the term $j = n$ on the boundary hyperplane $x^n = 0$, where the fundamental theorem gives</p>
+<p>$$
+\int_{\mathbb{R}^n_+} \frac{\partial f_n}{\partial x^n}\, dx^1\cdots dx^n = -\int_{\mathbb{R}^{n-1}} f_n(x^1, \ldots, x^{n-1}, 0)\, dx^1\cdots dx^{n-1}.
+$$</p>
+<p>The remaining boundary integral is exactly $\int_{\partial M}\omega$ with the induced orientation: the contraction with the outward normal picks out the $j = n$ term with the sign displayed. Summing over the charts gives the theorem. $\square$</p>
+<p><strong>Remark.</strong> The reason the boundary orientation is fixed to be the one making the fundamental theorem of calculus the source of the theorem is that the sign of $\int_{\partial M}\omega$ must agree with the sign that the calculation produces. With the opposite convention, Stokes' theorem acquires a minus sign.</p>
+<h3 id="the-classical-specialisations">The Classical Specialisations</h3>
+<p><strong>Theorem (fundamental theorem of calculus).</strong> For $M = [a, b]$ with the standard orientation and a function $f$,</p>
+<p>$$
+\int_a^b f'(x)\, dx = f(b) - f(a),
+$$</p>
+<p>which is Stokes' theorem for the $0$-form $f$ and the oriented boundary $\{b\} - \{a\}$.</p>
+<p><strong>Theorem (Green).</strong> Let $D \subseteq \mathbb{R}^2$ be a compact region with smooth positively oriented boundary and let $P, Q \in C^\infty(D)$. Then</p>
+<p>$$
+\oint_{\partial D} (P\, dx + Q\, dy) = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx\, dy,
+$$</p>
+<p>which is Stokes' theorem for the $1$-form $\omega = P\,dx + Q\,dy$.</p>
+<p><strong>Theorem (divergence).</strong> Let $D \subseteq \mathbb{R}^3$ be a compact region with smooth boundary and let $X$ be a smooth vector field. Then</p>
+<p>$$
+\iint_{\partial D} X \cdot \nu\, dS = \iiint_D \operatorname{div} X\, dV,
+$$</p>
+<p>where $\nu$ is the outward unit normal, which is Stokes' theorem for the $2$-form $\omega = \iota_X(dx\wedge dy\wedge dz)$.</p>
+<p><strong>Theorem (classical Stokes).</strong> Let $S \subseteq \mathbb{R}^3$ be an oriented surface with boundary and let $X$ be a smooth vector field. Then</p>
+<p>$$
+\oint_{\partial S} X \cdot dr = \iint_S \operatorname{curl} X \cdot \nu\, dS,
+$$</p>
+<p>which is Stokes' theorem for the $1$-form $\omega = X_1\,dx + X_2\,dy + X_3\,dz$.</p>
+<h2 id="the-hodge-star-and-the-laplacian">The Hodge Star and the Laplacian</h2>
+<h3 id="the-hodge-star">The Hodge Star</h3>
+<p><strong>Definition.</strong> Let $M$ be an oriented Riemannian $n$-manifold with metric $g$ and volume form $\mathrm{vol}_g$, the unique top form of unit length in the orientation. The <strong>Hodge star</strong> is the bundle map $\star : \Lambda^kT^*M \to \Lambda^{n-k}T^*M$ defined by</p>
+<p>$$
+\alpha \wedge \star\beta = \langle \alpha, \beta\rangle_g\, \mathrm{vol}_g,
+$$</p>
+<p>where $\langle\cdot,\cdot\rangle_g$ is the metric induced on exterior powers by $g$.</p>
+<p><strong>Proposition.</strong> The Hodge star is an isomorphism of vector bundles, and on $k$-forms</p>
+<p>$$
+\star\star \alpha = (-1)^{k(n-k)}\, \alpha.
+$$</p>
+<p><strong>Proof.</strong> The pairing $\Lambda^k \times \Lambda^{n-k} \to \Lambda^n \cong \mathbb{R}$ is perfect and the metric is positive definite, so the defining relation determines $\star$ uniquely and it is invertible. Evaluating both sides of the defining relation on an oriented orthonormal frame shows that $\star$ sends an orthonormal basis of $\Lambda^k$ to the corresponding orthonormal basis of $\Lambda^{n-k}$ up to the sign of the permutation that reverses the complementary index sets, and iterating gives $(-1)^{k(n-k)}$. $\square$</p>
+<h3 id="the-codifferential-and-the-laplacede-rham-operator">The Codifferential and the Laplace–de Rham Operator</h3>
+<p><strong>Definition.</strong> The <strong>codifferential</strong> is $\delta = (-1)^{n(k+1)+1}\, \star\, d\, \star$ on $\Omega^k(M)$ (with the sign convention fixed by the requirement that $\delta$ be the formal adjoint of $d$ with respect to the $L^2$ inner product on a compact manifold); the <strong>Laplace–de Rham operator</strong> is</p>
+<p>$$
+\Delta = d\,\delta + \delta\, d.
+$$</p>
+<p><strong>Proposition.</strong> $\delta$ lowers the degree by one, $\delta^2 = 0$, and $\delta$ is the formal adjoint of $d$ for the $L^2$ inner product</p>
+<p>$$
+\langle\alpha, \beta\rangle_{L^2} = \int_M \langle\alpha, \beta\rangle_g\, \mathrm{vol}_g
+$$</p>
+<p>on a compact oriented Riemannian manifold. The operator $\Delta$ preserves degree, is self-adjoint, and commutes with $d$ and $\delta$.</p>
+<p><strong>Proof.</strong> The adjoint property is reduced by the definition of $\star$ to the divergence theorem applied to a top form: $\int_M d(\alpha\wedge\star\beta) = \int_{\partial M}\alpha\wedge\star\beta = 0$ for a closed manifold, and the integrand is $\langle d\alpha,\beta\rangle_g - \langle\alpha,\delta\beta\rangle_g$ up to sign. The remaining statements follow by computation from $d^2 = 0$ and the adjointness. $\square$</p>
+<p><strong>Theorem (Hodge).</strong> On a compact oriented Riemannian manifold, every de Rham cohomology class has a unique representative that is harmonic, $\Delta\alpha = 0$, so that</p>
+<p>$$
+H^k_{dR}(M) \cong \mathcal{H}^k(M) = \{\alpha \in \Omega^k(M) : \Delta\alpha = 0\}.
+$$</p>
+<p><strong>Proof sketch.</strong> The Laplace–de Rham operator is elliptic, hence has finite-dimensional kernel on the compact manifold and closed range with an $L^2$-orthogonal decomposition of forms into the harmonic part and the image of $\Delta$; a form is harmonic exactly when it is closed and coclosed, so the harmonic forms represent the cohomology classes, and the ellipticity gives the uniqueness. $\square$</p>
+<h2 id="the-theorem-of-de-rham">The Theorem of de Rham</h2>
+<p><strong>Theorem (de Rham).</strong> Let $M$ be a smooth manifold. Then there is a natural isomorphism</p>
+<p>$$
+H^k_{dR}(M) \longrightarrow H^k(M; \mathbb{R})
+$$</p>
+<p>between the $k$-th de Rham cohomology and the $k$-th singular cohomology of $M$ with real coefficients, natural with respect to smooth maps. Consequently the de Rham cohomology is a homotopy invariant, its dimension is the $k$-th Betti number of $M$ when finite, and a closed form is exact if and only if all its periods over singular cycles vanish.</p>
+<p><strong>Proof sketch.</strong> Integration of a closed $k$-form over a smooth singular $k$-simplex, $\sigma \mapsto \int_\sigma \omega$, is unchanged by a boundary by Stokes' theorem, so it induces a pairing $H^k_{dR}(M) \times H_k(M;\mathbb{R}) \to \mathbb{R}$ and hence a map $H^k_{dR}(M) \to H^k(M;\mathbb{R})$ by the universal coefficient theorem. The map is an isomorphism; the proof uses the Poincaré lemma and the Mayer–Vietoris sequences on both sides, which are isomorphic as functors, and a comparison on contractible open sets. $\square$</p>
+<p><strong>Corollary.</strong> For a compact oriented $n$-manifold the integration pairing $H^k_{dR}(M) \times H^{n-k}_{dR}(M) \to \mathbb{R}$, $([\alpha], [\beta]) \mapsto \int_M \alpha\wedge\beta$, is nondegenerate (Poincaré duality).</p>
+<h2 id="summary">Summary</h2>
+<p>A differential form of degree $k$ is a smooth section of $\Lambda^k T^*M$; the forms form a graded-commutative algebra under the wedge product, and the pullback along a smooth map is a contravariant algebra homomorphism. The exterior derivative $d$ is the unique degree-one derivation of this algebra with $d^2 = 0$ that agrees with the differential on functions; in coordinates it differentiates the coefficients and wedges with $dx^j$.</p>
+<p>The de Rham complex $0 \to \Omega^0 \to \Omega^1 \to \cdots \to \Omega^n \to 0$ has cohomology $H^\bullet_{dR}(M)$, which is contravariantly functorial, homotopy invariant, and satisfies the Mayer–Vietoris sequence; the Poincaré lemma says that on a star-shaped open set the cohomology vanishes in positive degrees.</p>
+<p>The integral of a top form on an oriented manifold is defined locally by the ordinary integral of the coefficient function in a positively oriented chart, and it is well defined by the change-of-variables formula. Stokes' theorem, $\int_M d\omega = \int_{\partial M}\omega$, holds for the induced boundary orientation and contains the fundamental theorem of calculus, Green's theorem, the divergence theorem and the classical Stokes theorem as special cases. On an oriented Riemannian manifold the Hodge star, the codifferential $\delta$ and the Laplace–de Rham operator $\Delta = d\delta + \delta d$ give a harmonic representative for each cohomology class, and the theorem of de Rham identifies the de Rham cohomology with the singular cohomology with real coefficients.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M, N$</td>
+<td>Smooth manifolds, possibly with boundary; $n = \dim M$</td>
+</tr>
+<tr>
+<td>$T^*M$, $\Lambda^k T^*M$</td>
+<td>Cotangent bundle and its $k$-th exterior power bundle</td>
+</tr>
+<tr>
+<td>$\Omega^k(M) = \Gamma(\Lambda^kT^*M)$</td>
+<td>Differential $k$-forms; $\Omega^0(M) = C^\infty(M)$</td>
+</tr>
+<tr>
+<td>$\Omega^\bullet(M) = \bigoplus_k\Omega^k(M)$</td>
+<td>Graded-commutative algebra of forms; $\Omega^k = 0$ for $k > n$</td>
+</tr>
+<tr>
+<td>$\alpha \wedge \beta = (-1)^{pq}\beta\wedge\alpha$</td>
+<td>Wedge product of forms of degrees $p, q$</td>
+</tr>
+<tr>
+<td>$F : M \to N$, $F^*\omega$</td>
+<td>Smooth map and the pullback of a form along it; $F^*(d\omega) = d(F^*\omega)$</td>
+</tr>
+<tr>
+<td>$d$, $d^2 = 0$</td>
+<td>Exterior derivative; $d(\alpha\wedge\beta) = d\alpha\wedge\beta + (-1)^k\alpha\wedge d\beta$</td>
+</tr>
+<tr>
+<td>Closed, exact</td>
+<td>$d\omega = 0$; $\omega = d\eta$; exact implies closed</td>
+</tr>
+<tr>
+<td>$H^k_{dR}(M) = \ker d/\operatorname{im} d$</td>
+<td>de Rham cohomology</td>
+</tr>
+<tr>
+<td>Poincaré lemma</td>
+<td>$H^k_{dR}(U) = 0$ for $k \geq 1$ on a star-shaped open set</td>
+</tr>
+<tr>
+<td>$\mathrm{vol}$, orientation</td>
+<td>Nowhere vanishing top form defining an orientation</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n_+ = \{x^n \geq 0\}$</td>
+<td>Closed upper half-space; the local model for a manifold with boundary</td>
+</tr>
+<tr>
+<td>$\int_M\omega$</td>
+<td>Integral of a compactly supported top form on an oriented manifold</td>
+</tr>
+<tr>
+<td>$\int_M d\omega = \int_{\partial M}\omega$</td>
+<td>Stokes' theorem; boundary carries the induced orientation</td>
+</tr>
+<tr>
+<td>$\star$, $\langle\alpha,\beta\rangle_g\mathrm{vol}_g = \alpha\wedge\star\beta$</td>
+<td>Hodge star on an oriented Riemannian manifold</td>
+</tr>
+<tr>
+<td>$\delta = (-1)^{n(k+1)+1}\star d\star$</td>
+<td>Codifferential; formal adjoint of $d$</td>
+</tr>
+<tr>
+<td>$\Delta = d\delta + \delta d$</td>
+<td>Laplace–de Rham operator; harmonic forms represent cohomology</td>
+</tr>
+<tr>
+<td>$\operatorname{div}$, $\operatorname{curl}$</td>
+<td>Divergence and curl; the classical operators read off from $d$ and $\delta$</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^k(M) = \{\alpha : \Delta\alpha = 0\}$</td>
+<td>Harmonic $k$-forms; $\mathcal{H}^k(M) \cong H^k_{dR}(M)$</td>
+</tr>
+<tr>
+<td>$H^k_{dR}(M) \cong H^k(M;\mathbb{R})$</td>
+<td>Theorem of de Rham; natural isomorphism with singular cohomology</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Spivak, <em>Calculus on Manifolds</em> (Benjamin, 1965), for differential forms, the exterior derivative, and Stokes' theorem.</li>
+<li>Frank W. Warner, <em>Foundations of Differentiable Manifolds and Lie Groups</em> (Springer, 1983), for the de Rham complex, the Poincaré lemma, and the theorem of de Rham.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the de Rham cohomology, Mayer–Vietoris, and the relation to singular cohomology.</li>
+<li>Vladimir A. Zorich, <em>Mathematical Analysis II</em> (Springer, 2nd ed. 2016), for Green's theorem, the divergence theorem, and the classical Stokes theorem.</li>
+<li>Georges de Rham, <em>Differentiable Manifolds: Forms, Currents, Harmonic Forms</em> (Springer, 1984), for the original development of the de Rham theorems.</li>
+<li>John M. Lee, <em>Introduction to Smooth Manifolds</em> (Springer, 2nd ed. 2013), for the integration of forms, orientations, and Stokes' theorem with complete proofs.</li>
+<li>Steven Rosenberg, <em>The Laplacian on a Riemannian Manifold</em> (Cambridge University Press, 1997), for the Laplace–de Rham operator, the Hodge theorem, and harmonic forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

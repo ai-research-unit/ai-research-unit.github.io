@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Non-Examples in Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-non-examples-in-analysis"><strong>List of Non-Examples in Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the non-examples of analysis that the corpus records: the objects that are defined by the same words as a standard positive object and fail one of its properties. Each row names the non-example, records the positive object it fails to be and the failure itself, and points to the article that introduces the non-example. Every row points to an article; this article introduces nothing and proves nothing. The non-examples are grouped by the layer that introduces them: the five standard counterexamples of the real line and its measure theory, the further non-examples of measure and integration, the non-examples of the convergence of functions, the non-examples of differentiation and analyticity, and the non-examples of series and integrals. The positive object that each non-example fails to be is named beside it, so that the reader sees the example and the non-example side by side.</p>
+<h2 id="the-standard-counterexamples">The Standard Counterexamples</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Non-example</th>
+<th>The positive object it fails to be, and the failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the continuous nowhere differentiable function</td>
+<td>a differentiable function: the function is continuous everywhere and has no derivative at any point. The corpus records the existence of such functions by the Baire category theorem, in the meagre-set argument, rather than by the classical Weierstrass series, which is not introduced in Parts I to III</td>
+<td><em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the path of Brownian motion</td>
+<td>a differentiable function: the path is almost surely continuous and almost surely nowhere differentiable, with infinite variation</td>
+<td><em>Brownian Motion and Stochastic Calculus</em></td>
+</tr>
+<tr>
+<td>Volterra's function</td>
+<td>a function whose derivative is Riemann integrable: it is differentiable, its derivative is bounded, and the derivative is not Riemann integrable, being discontinuous on a fat Cantor set of positive measure, so the fundamental theorem of calculus fails without the continuity of the derivative</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the Dirichlet function $\mathbf 1_{\mathbb Q}$</td>
+<td>a Riemann integrable function: it is bounded and Lebesgue integrable with integral $0$, the rationals being null, and it is not Riemann integrable, being discontinuous everywhere</td>
+<td><em>Real Integration</em>; <em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a non-measurable set, the Vitali set</td>
+<td>a Lebesgue measurable set: it has no length consistent with translation invariance and countable additivity, so it lies outside the Lebesgue $\sigma$-algebra</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the smooth function $\exp(-1/x^2)$ extended by $0$ at the origin</td>
+<td>an analytic function: all its derivatives at $0$ vanish, so its Taylor series is the zero series, while the function is positive away from $0$</td>
+<td><em>Real Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-of-measure-and-integration">Non-Examples of Measure and Integration</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Non-example</th>
+<th>The positive object it fails to be, and the failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Cantor function</td>
+<td>an absolutely continuous function: it is continuous, nondecreasing and constant on each complement of the Cantor set, with derivative $0$ almost everywhere, yet it rises from $0$ to $1$</td>
+<td><em>Measure Theory and Integration</em>; <em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>the Cantor distribution</td>
+<td>an absolutely continuous law: it is singular continuous, with no density, and its distribution function is the Cantor function</td>
+<td><em>Measure-Theoretic Probability</em></td>
+</tr>
+<tr>
+<td>the indicator of a fat Cantor set</td>
+<td>a Riemann integrable function: it is Lebesgue integrable and discontinuous on a set of positive measure</td>
+<td><em>Real Integration</em></td>
+</tr>
+<tr>
+<td>the counting measure on an uncountable set</td>
+<td>a $\sigma$-finite measure: it is a measure, and no countable cover by finite-measure sets exists</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>a finitely additive set function</td>
+<td>a measure: it is additive over finite unions and not countably additive</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>an outer measure on the whole power set</td>
+<td>a measure: it is monotone and countably subadditive and additive only on the Carathéodory-measurable sets</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+<tr>
+<td>the set of rationals in $[0,1]$</td>
+<td>a set of positive measure: it is countable, hence null, and dense; a null set can be dense</td>
+<td><em>Measure Theory and Integration</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-of-convergence">Non-Examples of Convergence</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Non-example</th>
+<th>The positive object it fails to be, and the failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f_n = n\mathbf 1_{(0,1/n)}$</td>
+<td>an $L^1$-convergent sequence: it converges to $0$ almost everywhere and in measure, while $\int f_n = 1$ throughout</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>the sliding dyadic intervals on $[0,1]$</td>
+<td>an almost-everywhere convergent sequence: it converges to $0$ in measure and in every $L^p$, and at no point of $[0,1)$</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>$f_n = x^n$ on $[0,1)$</td>
+<td>a uniformly convergent sequence: it converges locally uniformly and not uniformly, the rate depending on the point</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>the unit vectors $e_n$ of $\ell^2$</td>
+<td>a norm-convergent sequence: it converges weakly to $0$ and stays at norm $1$</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+<tr>
+<td>a bounded pointwise convergent sequence of Riemann integrable functions with a non-integrable limit</td>
+<td>a sequence for which limit and Riemann integral interchange: the interchange fails without uniform convergence</td>
+<td><em>Real Integration</em></td>
+</tr>
+<tr>
+<td>a pointwise convergent sequence of continuous functions with a discontinuous limit</td>
+<td>a uniformly convergent sequence: pointwise convergence does not preserve continuity, uniform convergence does</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-of-differentiation-and-analyticity">Non-Examples of Differentiation and Analyticity</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Non-example</th>
+<th>The positive object it fails to be, and the failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a differentiable function with a discontinuous derivative</td>
+<td>a $C^1$ function: differentiability does not imply the continuity of the derivative</td>
+<td><em>Differential Calculus on Normed Spaces</em></td>
+</tr>
+<tr>
+<td>the function $\lvert x\rvert$</td>
+<td>a differentiable function at $0$: continuous everywhere and not differentiable at one point</td>
+<td><em>Real Analysis</em></td>
+</tr>
+<tr>
+<td>a continuous function with a divergent Fourier series</td>
+<td>a function whose Fourier series converges: continuity does not force pointwise convergence of the series</td>
+<td><em>Real Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>a real-analytic function at its radius of convergence</td>
+<td>an entire function: the radius of convergence is finite, so the power-series representation, and with it the region of analyticity, is confined to the disc</td>
+<td><em>Analytic Functions and Power Series</em></td>
+</tr>
+<tr>
+<td>the gamma function $\Gamma$</td>
+<td>a function with zeros: it has no zeros, only the poles at $0, -1, -2, \dots$, since $1/\Gamma$ is entire</td>
+<td><em>Complex Special Functions</em></td>
+</tr>
+<tr>
+<td>a domain of holomorphy</td>
+<td>a domain extended across its boundary: it is maximal, there is a holomorphic function on it that does not extend past the boundary, and the plurisubharmonic exhaustion measures that failure</td>
+<td><em>Several Complex Variables</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-of-series-and-integrals">Non-Examples of Series and Integrals</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Non-example</th>
+<th>The positive object it fails to be, and the failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the harmonic series $\sum 1/n$</td>
+<td>a convergent series: its terms tend to $0$ and its partial sums diverge</td>
+<td><em>Real Analysis</em></td>
+</tr>
+<tr>
+<td>the alternating harmonic series</td>
+<td>an absolutely convergent series: it converges conditionally, and the Archimedean rearrangement paradoxes apply to it</td>
+<td><em>Analytic Functions and Power Series</em></td>
+</tr>
+<tr>
+<td>the integral of $x \mapsto 1/x$ over $[1,\infty)$</td>
+<td>a convergent improper integral: the $p$-integral converges exactly for $p > 1$, so this one diverges</td>
+<td><em>Real Integration</em></td>
+</tr>
+<tr>
+<td>the integral of $x \mapsto \sin x/x$ over $(0,\infty)$</td>
+<td>an absolutely convergent integral: it converges conditionally and not absolutely</td>
+<td><em>Real Integration</em></td>
+</tr>
+<tr>
+<td>a Dirichlet series at its abscissa of convergence</td>
+<td>a series continued holomorphically past the abscissa: by Landau's theorem a series with nonnegative coefficients has a singularity at its abscissa and no continuation across it</td>
+<td><em>Zeta Functions</em></td>
+</tr>
+<tr>
+<td>an infinite sum differentiated term by term without uniform convergence</td>
+<td>a differentiable sum with the termwise derivative: the interchange fails without the uniform convergence of the derivatives</td>
+<td><em>Modes of Convergence</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the non-examples of analysis that the corpus records: the continuous nowhere differentiable function, the path of Brownian motion, Volterra's function, the Dirichlet function, a non-measurable set and the smooth function that is not analytic among the standard counterexamples; the Cantor function and the singular Cantor law, the fat Cantor set indicator and the non-$\sigma$-finite counting measure among those of measure theory; the sequences that separate the modes of convergence; the differentiable and continuous functions that fail to be smooth or to have convergent Fourier series; and the series and integrals that fail to converge absolutely or at all. Each row names the positive object the non-example fails to be, so that the failure is the content of the row.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The non-examples are named rather than denoted; the symbols in the tables are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf 1_{\mathbb Q}$, $\mathbf 1_A$</td>
+<td>the indicator of the rationals, of a set $A$</td>
+</tr>
+<tr>
+<td>$\exp(-1/x^2)$</td>
+<td>the smooth non-analytic function</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the Vitali non-measurable set</td>
+</tr>
+<tr>
+<td>$\ell^2$, $e_n$</td>
+<td>the sequence space and its unit vectors</td>
+</tr>
+<tr>
+<td>$L^p$, a.e.</td>
+<td>the Lebesgue space and the almost-everywhere mode</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Bernard R. Gelbaum and John M. H. Olmsted, <em>Counterexamples in Analysis</em> (Holden-Day, 1964; reprinted Dover, 2003), for the standard catalogue of the counterexamples of analysis.</li>
+<li>John C. Oxtoby, <em>Measure and Category</em> (Springer, 2nd ed. 1980), for the duality between the meagre and the null sets and the constructions behind the standard non-examples.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd ed. (McGraw-Hill, 1987), for the Dirichlet function, the Cantor function and the failure of the fundamental theorem of calculus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

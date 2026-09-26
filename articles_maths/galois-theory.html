@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galois Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="galois-theory"><strong>Galois Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Galois theory is the exact correspondence between the intermediate fields of a field extension and the subgroups of its automorphism group. For a finite extension $K/F$ the automorphisms of $K$ fixing $F$ form a group $\operatorname{Gal}(K/F)$, and when the extension is normal and separable this group detects the entire lattice of intermediate fields: subfields correspond to subgroups, degrees to indices, and Galois subextensions to normal subgroups. The correspondence converts questions about fields into questions about groups, and it is in this form that it settles the classical problem of solving a polynomial by radicals.</p>
+<p>This article defines Galois extensions, proves the fundamental theorem, computes Galois groups of splitting fields, and derives the theorem that a polynomial is solvable by radicals exactly when its Galois group is a solvable group, together with the Abel–Ruffini theorem that the general quintic is not. The prerequisites are <em>Field Extensions</em> and <em>Splitting Fields and Algebraic Closure</em> for degrees, normal and separable extensions, and the count of embeddings; the group theory of solvable groups is cited from <em>Groups</em>. The standing hypothesis is that $K/F$ is a field extension and, where finite, that $\overline{F}$ is an algebraic closure of $F$ containing $K$.</p>
+<hr />
+<h2 id="galois-extensions">Galois Extensions</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A field extension $K/F$ is <strong>Galois</strong> if it is algebraic, normal and separable. Equivalently, $K$ is the splitting field over $F$ of a family of separable polynomials.</p>
+<p>For finite extensions the first definition unwinds into a single counting condition:</p>
+<p><strong>Definition.</strong> Let $K/F$ be a field extension. The <strong>Galois group</strong> of the extension is</p>
+<p>$$
+\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K) = \{\sigma : K \to K \text{ a field automorphism with } \sigma\vert_F = \mathrm{id}\}.
+$$</p>
+<p>It is a group under composition, and it acts on $K$ by $\sigma \cdot x = \sigma(x)$.</p>
+<p><strong>Theorem.</strong> For a finite extension $K/F$ the following are equivalent:</p>
+<p><strong>(a)</strong> $K/F$ is Galois;</p>
+<p><strong>(b)</strong> $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$;</p>
+<p><strong>(c)</strong> $K$ is the splitting field over $F$ of a separable polynomial in $F[x]$;</p>
+<p><strong>(d)</strong> $F$ is the fixed field of $\operatorname{Gal}(K/F)$, that is, $K^{\operatorname{Gal}(K/F)} = F$.</p>
+<p><strong>Proof sketch.</strong> (a) $\Leftrightarrow$ (b): by the counting theorem of <em>Splitting Fields and Algebraic Closure</em>, the number of $F$-embeddings $K \to \overline{F}$ is at most $[K:F]$, with equality exactly when $K/F$ is separable; and if $K/F$ is normal every such embedding has image $K$, hence is an automorphism of $K$. So for normal separable $K/F$ one gets $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, and conversely equality forces every embedding to land in $K$, which is normality, and forces $K/F$ separable.</p>
+<p>(a) $\Leftrightarrow$ (c): a finite normal extension is the splitting field of a single polynomial by <em>Splitting Fields and Algebraic Closure</em>, and separability passes to that polynomial; conversely a splitting field of a separable polynomial is normal and separable.</p>
+<p>(c) $\Rightarrow$ (d): $K^{\operatorname{Gal}(K/F)}$ contains $F$; since $K$ splits a separable polynomial over $F$, the extension $K/K^{\operatorname{Gal}(K/F)}$ is separable and normal with Galois group $\operatorname{Gal}(K/F)$ by restriction, and the theorem below shows $[K:K^{\operatorname{Gal}(K/F)}] = \lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, hence $K^{\operatorname{Gal}(K/F)} = F$ by the tower law. (d) $\Rightarrow$ (b): put $H = \operatorname{Gal}(K/F)$, a finite group, since the elements of $H$ are distinct $F$-embeddings of $K$ into $\overline{F}$ and there are at most $[K:F]$ of them. Artin's lemma gives $[K:K^H] \leq \lvert H \rvert$, while the elements of $H$ are distinct $K^H$-embeddings of $K$ into $\overline{F}$, so the counting theorem gives $\lvert H \rvert \leq [K:K^H]$; hence $[K:K^H] = \lvert H \rvert$, and when $K^H = F$ this reads $[K:F] = \lvert \operatorname{Gal}(K/F) \rvert$, which is (b). (b) $\Rightarrow$ (a) is the first equivalence. $\square$</p>
+<h3 id="examples">Examples</h3>
+<p><strong>(a)</strong> $\mathbb{C}/\mathbb{R}$ is Galois of degree $2$, with group $\{\mathrm{id}, \sigma\}$ where $\sigma$ is complex conjugation.</p>
+<p><strong>(b)</strong> $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ is Galois of degree $2$, with group of order $2$ sending $\sqrt2 \mapsto -\sqrt2$.</p>
+<p><strong>(c)</strong> $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ is <strong>not</strong> Galois: it is separable but not normal, since the other roots of $x^3 - 2$ are nonreal and lie outside $\mathbb{Q}(\sqrt[3]{2})$. Its automorphism group is trivial, of order $1 < 3$.</p>
+<p><strong>(d)</strong> $\mathbb{F}_{p^n}/\mathbb{F}_p$ is Galois of degree $n$, with cyclic group of order $n$ generated by the Frobenius map.</p>
+<p><strong>(e)</strong> $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois, being the splitting field of $x^n - 1$ over $\mathbb{Q}$.</p>
+<p><strong>(f)</strong> $\mathbb{R}/\mathbb{Q}$ is <strong>not</strong> Galois, for two independent reasons: it is not algebraic, and it is not normal, since $x^3 - 2$ is irreducible over $\mathbb{Q}$ with the real root $\sqrt[3]{2} \in \mathbb{R}$ but does not split in $\mathbb{R}$.</p>
+<hr />
+<h2 id="the-galois-group">The Galois Group</h2>
+<h3 id="the-correspondence-between-subgroups-and-subfields">The Correspondence between Subgroups and Subfields</h3>
+<p>Let $K/F$ be a finite Galois extension with group $G = \operatorname{Gal}(K/F)$. For an intermediate field $E$, $F \subseteq E \subseteq K$, the extension $K/E$ is again Galois, and restriction gives an injective homomorphism of $\operatorname{Gal}(K/E)$ into $G$; its image is a subgroup, which we identify with it. For a subgroup $H \leq G$, the <strong>fixed field</strong> is</p>
+<p>$$
+K^H = \{x \in K : \sigma(x) = x \text{ for all } \sigma \in H\}.
+$$</p>
+<p><strong>Proposition.</strong> $K^H$ is an intermediate field for every subgroup $H \leq G$.</p>
+<p><strong>Proof.</strong> If $\sigma(x) = x$ and $\sigma(y) = y$ for all $\sigma \in H$, then $\sigma(x \pm y) = x \pm y$ and $\sigma(xy) = xy$, and if $x \neq 0$ then $\sigma(x^{-1}) = x^{-1}$. Also every $\sigma \in H$ fixes $F$ pointwise. $\square$</p>
+<p>We need two facts, one group-theoretic and one field-theoretic.</p>
+<p><strong>Lemma (Artin).</strong> Let $K$ be a field, $H$ a finite group of automorphisms of $K$, and $K^H$ its fixed field. Then</p>
+<p>$$
+[K : K^H] \leq \lvert H \rvert.
+$$</p>
+<p><strong>Proof sketch.</strong> Let $n = \lvert H \rvert$ and suppose $[K:K^H] > n$, so there are $n+1$ elements $x_1, \ldots, x_{n+1}$ of $K$ linearly independent over $K^H$. The linear system</p>
+<p>$$
+\sum_{j=1}^{n+1} \sigma_i(x_j)\, y_j = 0, \qquad \sigma_1, \ldots, \sigma_n \in H,
+$$</p>
+<p>has $n$ equations in $n+1$ unknowns, so it has a nonzero solution $(y_j)$ in $K$; choosing one with the fewest nonzero entries and normalizing so that one entry is $1$ gives a contradiction with the linear independence of the $x_j$ over $K^H$ after applying an automorphism. This is the standard determinant argument. $\square$</p>
+<p><strong>Lemma (fixed-field theorem).</strong> Let $K/F$ be a finite Galois extension with group $G$. Then $K^G = F$, and for every subgroup $H \leq G$ the extension $K/K^H$ is Galois with $\operatorname{Gal}(K/K^H) = H$. In particular $[K:K^H] = \lvert H \rvert$.</p>
+<p><strong>Proof.</strong> The extension $K/F$ is a splitting field of a separable polynomial $f \in F[x]$. By Artin's lemma, $[K:K^H] \leq \lvert H \rvert$. On the other hand $K/K^H$ is normal and separable (it is generated over $K^H$ by the roots of the same separable polynomial $f$), so by the counting theorem $\lvert \operatorname{Gal}(K/K^H) \rvert = [K:K^H]$. Since $H \leq \operatorname{Gal}(K/K^H)$ by definition of the fixed field, we get</p>
+<p>$$
+\lvert H \rvert \leq \lvert \operatorname{Gal}(K/K^H) \rvert = [K:K^H] \leq \lvert H \rvert,
+$$</p>
+<p>so equality holds throughout and $\operatorname{Gal}(K/K^H) = H$. Taking $H = G$ gives $[K:K^G] = \lvert G \rvert = [K:F]$, hence $K^G = F$ by the tower law. $\square$</p>
+<h3 id="the-fundamental-theorem">The Fundamental Theorem</h3>
+<p><strong>Theorem (fundamental theorem of Galois theory).</strong> Let $K/F$ be a finite Galois extension with group $G = \operatorname{Gal}(K/F)$. The maps</p>
+<p>$$
+E \longmapsto \operatorname{Gal}(K/E), \qquad H \longmapsto K^H
+$$</p>
+<p>are inverse bijections between the set of intermediate fields $F \subseteq E \subseteq K$ and the set of subgroups $H \leq G$. They reverse inclusions. For a subgroup $H$ with fixed field $E = K^H$:</p>
+<p><strong>(a)</strong> $[K:E] = \lvert H \rvert$ and $[E:F] = [G:H]$;</p>
+<p><strong>(b)</strong> $E/F$ is normal, hence Galois, if and only if $H \trianglelefteq G$, and then the restriction map gives an isomorphism</p>
+<p>$$
+\operatorname{Gal}(E/F) \cong G/H;
+$$</p>
+<p><strong>(c)</strong> the extension $E/F$ is always separable, and the subextensions of $K/E$ correspond to the subgroups of $H$.</p>
+<p><strong>Proof.</strong> The maps are mutually inverse: if $E$ is intermediate then $K/E$ is Galois and $K^{\operatorname{Gal}(K/E)} = E$ by the fixed-field theorem applied to $K/E$; if $H$ is a subgroup then $\operatorname{Gal}(K/K^H) = H$ by the same theorem. Both implications use that $K/K^H$ and $K/E$ are Galois whenever $K/F$ is. Since $E_1 \subseteq E_2$ implies $\operatorname{Gal}(K/E_2) \subseteq \operatorname{Gal}(K/E_1)$, and $H_1 \leq H_2$ implies $K^{H_2} \subseteq K^{H_1}$, the bijection reverses inclusions.</p>
+<p>(a) is the fixed-field theorem for $[K:E] = \lvert H \rvert$, and then the tower law gives $[E:F] = [K:F]/[K:E] = \lvert G \rvert/\lvert H \rvert = [G:H]$.</p>
+<p>(b) If $H \trianglelefteq G$, then for $\sigma \in G$ and $x \in E = K^H$ one has $h(\sigma x) = \sigma (\sigma^{-1} h \sigma) x = \sigma x$ for $h \in H$, using $\sigma^{-1} h\sigma \in H$; so $\sigma(E) = E$. Restriction therefore defines a homomorphism $G \to \operatorname{Gal}(E/F)$ with kernel $H$, and its image has order $[G:H] = [E:F]$; since $\lvert \operatorname{Gal}(E/F) \rvert \leq [E:F]$ with equality when $E/F$ is separable, and $E/F$ is separable, the image is all of $\operatorname{Gal}(E/F)$ and $G/H \cong \operatorname{Gal}(E/F)$. Conversely, if $E/F$ is normal, then for $\sigma \in G$ and $x \in E$ the element $\sigma x$ is the image of $x$ under an $F$-embedding and hence lies in $E$; so restriction is defined, $H$ is the kernel of a homomorphism, and $H \trianglelefteq G$.</p>
+<p>(c) Separability of $E/F$ follows from separability of $K/F$. The final statement is induced by the bijection applied to the Galois extension $K/E$ with group $H$. $\square$</p>
+<p><strong>Corollary (degree-index duality).</strong> Intermediate fields $F \subseteq E_1 \subseteq E_2 \subseteq K$ correspond to subgroups $\operatorname{Gal}(K/E_2) \leq \operatorname{Gal}(K/E_1) \leq G$, and</p>
+<p>$$
+[E_2:E_1] = [\operatorname{Gal}(K/E_1) : \operatorname{Gal}(K/E_2)].
+$$</p>
+<hr />
+<h2 id="galois-groups-of-polynomials">Galois Groups of Polynomials</h2>
+<h3 id="definition-and-the-permutation-representation">Definition and the Permutation Representation</h3>
+<p><strong>Definition.</strong> Let $f \in F[x]$ be a nonconstant separable polynomial with splitting field $K$ over $F$. The <strong>Galois group of $f$</strong> is</p>
+<p>$$
+G_f = \operatorname{Gal}(K/F),
+$$</p>
+<p>considered up to conjugacy in the symmetric group on the roots.</p>
+<p><strong>Theorem.</strong> Let $f$ be separable of degree $n$ with roots $\alpha_1, \ldots, \alpha_n$ in its splitting field $K$. Then $G_f$ acts faithfully on $\{\alpha_1, \ldots, \alpha_n\}$, so $G_f$ embeds in the symmetric group $S_n$; the embedding is determined once the roots are ordered.</p>
+<p><strong>Proof.</strong> An automorphism $\sigma \in G_f$ permutes the roots, since it fixes the coefficients of $f$. If $\sigma$ fixes every root, then it fixes the subfield generated by the roots, which is $K$; so $\sigma = \mathrm{id}$ and the action is faithful. $\square$</p>
+<p><strong>Theorem (discriminant).</strong> Let $F$ be a field with $\operatorname{char} F \neq 2$, and let $f \in F[x]$ be separable of degree $n$ with roots $\alpha_1, \ldots, \alpha_n$ and discriminant</p>
+<p>$$
+\Delta(f) = \prod_{i < j} (\alpha_i - \alpha_j)^2 \in F.
+$$</p>
+<p>Then $G_f \subseteq A_n$ if and only if $\Delta(f)$ is a square in $F$.</p>
+<p><strong>Proof.</strong> The product $\delta = \prod_{i<j}(\alpha_i - \alpha_j)$ lies in the splitting field and satisfies $\delta^2 = \Delta(f)$. An automorphism $\sigma$ acts on $\delta$ by multiplication by the sign of the permutation it induces on the roots, and the two signs in $\{\pm 1\}$ are distinct in $F$ because $\operatorname{char} F \neq 2$; so $\sigma(\delta) = \delta$ for all $\sigma$ exactly when every permutation is even. Hence $\delta \in F$ if and only if $G_f \subseteq A_n$, and $\delta \in F$ if and only if $\delta^2 = \Delta(f)$ is a square in $F$. $\square$</p>
+<h3 id="examples_1">Examples</h3>
+<p><strong>Example (quadratic).</strong> Let $\operatorname{char} F \neq 2$; the splitting field of $x^2 + bx + c$ is $F(\delta)$ with $\delta^2 = b^2 - 4c$; the Galois group is trivial if the discriminant is a square and of order $2$ otherwise. For $x^2 + 1$ over $\mathbb{R}$ the group has order $2$, generated by $i \mapsto -i$.</p>
+<p><strong>Example (cubic with non-square discriminant).</strong> Let $f = x^3 - 2$ over $\mathbb{Q}$, with discriminant $\Delta = -4 \cdot 0^3 - 27 \cdot (-2)^2 = -108$, not a square in $\mathbb{Q}$. The splitting field is $\mathbb{Q}(\sqrt[3]{2}, \zeta_3)$ of degree $6$, so $\lvert G_f \rvert = 6$, and $G_f \subseteq S_3$; hence $G_f = S_3$, and indeed $G_f \not\subseteq A_3$ because $\Delta$ is not a square.</p>
+<p><strong>Example (cyclic cubic).</strong> Let $f = x^3 - 3x + 1$ over $\mathbb{Q}$, with $\Delta = -4(-3)^3 - 27 = 108 - 27 = 81 = 9^2$, a square. The polynomial is irreducible, so $G_f$ is a transitive subgroup of $A_3 = \mathbb{Z}/3$; hence $G_f \cong \mathbb{Z}/3$ and the splitting field is the cyclic cubic field $\mathbb{Q}(\alpha)$ with $\alpha = 2\cos(2\pi/9)$.</p>
+<p><strong>Example (biquadratic quartic).</strong> Let $f = x^4 - 10x^2 + 1$ with roots $\pm\sqrt2 \pm \sqrt3$. Its splitting field is $\mathbb{Q}(\sqrt2, \sqrt3)$, of degree $4$, and every automorphism is given by independent sign changes of $\sqrt2$ and $\sqrt3$; hence $G_f \cong (\mathbb{Z}/2\mathbb{Z})^2$. This is the smallest non-cyclic Galois group.</p>
+<p><strong>Example (dihedral quartic).</strong> Let $f = x^4 - 2$ with roots $\pm\sqrt[4]{2}, \pm i\sqrt[4]{2}$. The splitting field is $\mathbb{Q}(\sqrt[4]{2}, i)$ of degree $8$, and $G_f$ is the dihedral group of order $8$, generated by $\sqrt[4]{2} \mapsto i\sqrt[4]{2}$ (order $4$) and $i \mapsto -i$ (order $2$, inverting the first generator).</p>
+<p><strong>Example (cyclotomic).</strong> Let $f = x^n - 1$ over $\mathbb{Q}$, with roots the $n$-th roots of unity and splitting field $\mathbb{Q}(\zeta_n)$. Every automorphism sends $\zeta_n \mapsto \zeta_n^k$ for a unique $k$ with $\gcd(k,n) = 1$, and every such $k$ occurs — this is the standard irreducibility of the cyclotomic polynomial, proved for $n = p$ prime by Eisenstein's criterion in <em>Unique Factorisation Domains</em> — so</p>
+<p>$$
+\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
+$$</p>
+<p>a group of order $\varphi(n)$, where $\varphi$ is the Euler totient. For $n = p$ a prime this group is cyclic of order $p - 1$.</p>
+<p><strong>Example (finite fields).</strong> For $f = x^{p^n} - x$ over $\mathbb{F}_p$, the splitting field is $\mathbb{F}_{p^n}$ and $G_f = \operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n\mathbb{Z}$ by <em>Finite Fields</em>.</p>
+<hr />
+<h2 id="solvability-by-radicals">Solvability by Radicals</h2>
+<h3 id="radical-extensions">Radical Extensions</h3>
+<p><strong>Definition.</strong> An extension $K/F$ is <strong>radical</strong> if there is a tower</p>
+<p>$$
+F = K_0 \subseteq K_1 \subseteq \cdots \subseteq K_m = K
+$$</p>
+<p>such that $K_i = K_{i-1}(\alpha_i)$ with $\alpha_i^{n_i} \in K_{i-1}$ for some integer $n_i \geq 1$. A polynomial $f \in F[x]$ is <strong>solvable by radicals</strong> if its splitting field is contained in a radical extension of $F$.</p>
+<p><strong>Theorem.</strong> Let $F$ have characteristic $0$ and let $K/F$ be a finite Galois extension. If $K/F$ is radical, then $G = \operatorname{Gal}(K/F)$ is a solvable group.</p>
+<p><strong>Proof sketch.</strong> Enlarge $F$ to a field containing enough roots of unity; this does not change the group-theoretic content of the argument. For a single step $K_{i-1} \subseteq K_i = K_{i-1}(\alpha_i)$ with $\alpha_i^{n} = a \in K_{i-1}$, the minimal polynomial of $\alpha_i$ divides $x^n - a$ whose roots are $\alpha_i \zeta$ for $\zeta^n = 1$; if the $n$-th roots of unity lie in $K_{i-1}$, this polynomial is separable and splits in $K_i$, so $K_i/K_{i-1}$ is Galois with a group embedding in $\mathbb{Z}/n\mathbb{Z}$ by $\alpha_i \mapsto \alpha_i \zeta$. Applying the tower and passing to the Galois closure of $K/F$ exhibits $G$ with a subnormal series whose factors are abelian, that is, $G$ is solvable. $\square$</p>
+<h3 id="the-solvability-theorem">The Solvability Theorem</h3>
+<p><strong>Definition.</strong> A group $G$ is <strong>solvable</strong> if it has a finite subnormal series</p>
+<p>$$
+1 = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_r = G
+$$</p>
+<p>whose factors $G_{i}/G_{i-1}$ are all abelian; equivalently, the derived series of $G$ reaches the trivial group.</p>
+<p><strong>Theorem (Galois).</strong> Let $F$ be a field of characteristic $0$, or more generally a field containing all roots of unity of the orders occurring below, and let $f \in F[x]$ be nonconstant. Then $f$ is solvable by radicals over $F$ if and only if its Galois group $G_f$ is solvable.</p>
+<p><strong>Proof sketch.</strong> If $G_f$ is solvable, let $K$ be the splitting field and $G = G_f$ with subnormal series $1 = G_0 \trianglelefteq \cdots \trianglelefteq G_r = G$ and abelian factors. Set $K_i = K^{G_{r-i}}$, so that $K_0 = K^G = F$ and $K_r = K^{G_0} = K$; the fundamental theorem applied to the pair $G_{r-i} \trianglelefteq G_{r-i+1}$ gives that $K_i/K_{i-1}$ is Galois with group $G_{r-i+1}/G_{r-i}$, abelian. To realize each abelian extension by radicals one adjoins roots of unity and uses the structure of finite abelian groups together with Kummer theory: an abelian Galois extension whose exponent divides $n$ is obtained by adjoining $n$-th roots, once the $n$-th roots of unity are present. Hence $K$ lies in a radical extension. The converse is the previous theorem. $\square$</p>
+<p><strong>Corollary (quadratic, cubic and quartic).</strong> Every polynomial of degree at most $4$ over a field of characteristic $0$ is solvable by radicals, because $S_n$ is solvable for $n \leq 4$ and $G_f \leq S_n$.</p>
+<h3 id="the-abelruffini-theorem">The Abel–Ruffini Theorem</h3>
+<p><strong>Theorem (Abel–Ruffini).</strong> For $n \geq 5$ the general polynomial of degree $n$ with indeterminate coefficients is not solvable by radicals. Equivalently, there is no formula in radicals, valid for all choices of the coefficients, giving the roots of a degree-$n$ polynomial for $n \geq 5$.</p>
+<p><strong>Proof.</strong> Let $F = \mathbb{C}(t_1, \ldots, t_n)$ and let</p>
+<p>$$
+f(x) = x^n - t_1 x^{n-1} + t_2 x^{n-2} - \cdots + (-1)^n t_n
+$$</p>
+<p>be the general polynomial, whose roots are algebraically independent over $\mathbb{C}$. The splitting field $K$ is obtained by adjoining all $n$ roots, and the symmetric group $S_n$ acts on $K$ by permuting the roots while fixing every coefficient, so that $F = K^{S_n}$; hence $G_f = S_n$. The group $S_n$ is not solvable for $n \geq 5$: its derived subgroup is $A_n$, and $A_n$ is simple nonabelian for $n \geq 5$, so the derived series is stationary at $A_n$ and never reaches the trivial group. By the solvability theorem, $f$ is not solvable by radicals. $\square$</p>
+<p><strong>Corollary (a specific quintic).</strong> The polynomial $x^5 - x - 1$ is irreducible over $\mathbb{Q}$ and has Galois group $S_5$; consequently it is not solvable by radicals over $\mathbb{Q}$. This is the standard explicit witness; the irreducibility and the group computation are classical and are carried out in the references. The same conclusion holds for $x^5 - 4x + 2$, and here the group argument is short: the polynomial is irreducible by Eisenstein at $2$, so its Galois group is a transitive subgroup of $S_5$; it has exactly three real roots, since $f(-2) < 0 < f(-1)$, $f(0) > 0 > f(1)$, $f(1) < 0 < f(2)$ and the derivative $f'(x) = 5x^4 - 4$ has exactly two real zeros, so the remaining two roots form a complex conjugate pair. Complex conjugation therefore induces a transposition of those two roots, and a transitive subgroup of $S_5$ containing a transposition is all of $S_5$: a transitive group of prime degree is primitive, and a primitive group of degree $5$ containing a transposition contains $A_5$ by Jordan's theorem, while it is not contained in $A_5$ because a transposition is odd. Since $S_5$ is not solvable, $x^5 - 4x + 2$ is not solvable by radicals.</p>
+<p><strong>Remark.</strong> The theorem forbids a solution <em>in radicals</em> only. Polynomial equations of degree $5$ are solvable by other means, and the symmetry obstruction disappears if one allows a larger class of functions; the classical theory of equations is the origin of both Galois theory and group theory, and solvable groups are named for this problem.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A Galois extension is an algebraic, normal, separable extension; for finite extensions this is equivalent to $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, to being the splitting field of a separable polynomial, and to $F$ being the fixed field of the Galois group. The fundamental theorem of Galois theory sets up an inclusion-reversing bijection between the intermediate fields of a finite Galois extension $K/F$ and the subgroups of $G = \operatorname{Gal}(K/F)$, with $E \mapsto \operatorname{Gal}(K/E)$ and $H \mapsto K^H$; under it $[K:E] = \lvert H \rvert$ and $[E:F] = [G:H]$, and the subextension $E/F$ is Galois exactly when $H \trianglelefteq G$, in which case $\operatorname{Gal}(E/F) \cong G/H$.</p>
+<p>The Galois group of a separable polynomial of degree $n$ embeds in $S_n$ by its action on the roots, and in characteristic $\neq 2$ its intersection with $A_n$ is detected by whether the discriminant is a square, and the standard computations are $G_{x^2+bx+c}$ of order $1$ or $2$, $G_{x^3-2} = S_3$, $G_{x^3-3x+1} = \mathbb{Z}/3$, $G_{x^4-10x^2+1} = (\mathbb{Z}/2)^2$, $G_{x^4-2}$ dihedral of order $8$, $G_{x^n-1} = (\mathbb{Z}/n)^\times$, and $G_{x^{p^n}-x} = \mathbb{Z}/n$.</p>
+<p>A polynomial is solvable by radicals over a field of characteristic $0$ exactly when its Galois group is solvable, since radical extensions have solvable groups with abelian factors among roots of unity, and conversely a solvable group yields a radical extension. Since $S_n$ is not solvable for $n \geq 5$, the general quintic and every polynomial with group $S_5$, such as $x^5 - x - 1$, is not solvable by radicals.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Extension $K/F$</th>
+<th>$[K:F]$</th>
+<th>$\operatorname{Gal}(K/F)$</th>
+<th>Galois</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}/\mathbb{R}$</td>
+<td>$2$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\sqrt2)/\mathbb{Q}$</td>
+<td>$2$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\sqrt[3]{2},\zeta_3)/\mathbb{Q}$</td>
+<td>$6$</td>
+<td>$S_3$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\sqrt2,\sqrt3)/\mathbb{Q}$</td>
+<td>$4$</td>
+<td>$(\mathbb{Z}/2)^2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\sqrt[4]{2},i)/\mathbb{Q}$</td>
+<td>$8$</td>
+<td>$D_4$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\zeta_n)/\mathbb{Q}$</td>
+<td>$\varphi(n)$</td>
+<td>$(\mathbb{Z}/n)^\times$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{p^n}/\mathbb{F}_p$</td>
+<td>$n$</td>
+<td>$\mathbb{Z}/n$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K/F$</td>
+<td>Field extension, $K$ over $F$</td>
+</tr>
+<tr>
+<td>$[K:F]$</td>
+<td>Degree, $\dim_F K$</td>
+</tr>
+<tr>
+<td>$\operatorname{char} F$</td>
+<td>Characteristic of the field $F$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K)$</td>
+<td>Galois group, $F$-automorphisms of $K$</td>
+</tr>
+<tr>
+<td>$K^H$</td>
+<td>Fixed field of a subgroup $H \leq \operatorname{Gal}(K/F)$</td>
+</tr>
+<tr>
+<td>$G_f$</td>
+<td>Galois group of a separable polynomial $f$</td>
+</tr>
+<tr>
+<td>$S_n$, $A_n$</td>
+<td>Symmetric and alternating groups</td>
+</tr>
+<tr>
+<td>$\Delta(f)$</td>
+<td>Discriminant $\prod_{i<j}(\alpha_i - \alpha_j)^2$</td>
+</tr>
+<tr>
+<td>$D_4$</td>
+<td>Dihedral group of order $8$</td>
+</tr>
+<tr>
+<td>$\zeta_n$</td>
+<td>Primitive $n$-th root of unity</td>
+</tr>
+<tr>
+<td>$\varphi(n)$</td>
+<td>Euler totient</td>
+</tr>
+<tr>
+<td>$\overline{F}$</td>
+<td>Algebraic closure of $F$</td>
+</tr>
+<tr>
+<td>$\varphi(x) = x^p$</td>
+<td>Frobenius map</td>
+</tr>
+<tr>
+<td>$H \trianglelefteq G$</td>
+<td>$H$ a normal subgroup of $G$</td>
+</tr>
+<tr>
+<td>$[G:H]$</td>
+<td>Index of a subgroup</td>
+</tr>
+<tr>
+<td>$n_i$, $\alpha_i$</td>
+<td>Radical data: $\alpha_i^{n_i} \in K_{i-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Emil Artin, <em>Galois Theory</em> (Dover, 2nd ed. 1998), for Artin's lemma, the fixed-field theorem and the fundamental theorem in the concise modern form.</li>
+<li>Harold M. Edwards, <em>Galois Theory</em> (Springer, 1984), for the historical development from the solvability of equations to the Galois correspondence.</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004), for the worked computation of Galois groups by degrees, discriminants and reduction modulo primes.</li>
+<li>Ian Stewart, <em>Galois Theory</em> (Chapman &amp; Hall/CRC, 4th ed. 2015), for $x^5 - x - 1$, the Abel–Ruffini theorem and the resolution of the classical problems.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for Kummer theory and the converse direction of the solvability theorem.</li>
+<li>Niels Henrik Abel, "Mémoire sur les équations algébriques", <em>Journal für die reine und angewandte Mathematik</em> 1 (1826), for the original proof that the general quintic is not solvable by radicals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

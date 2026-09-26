@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Cohomology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="group-cohomology"><strong>Group Cohomology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Group cohomology assigns to a group $G$ and a module $M$ on which $G$ acts a sequence of abelian groups $H^n(G,M)$, $n \geq 0$, whose first terms have concrete interpretations: $H^0(G,M)$ is the subgroup of invariant elements, $H^1(G,M)$ classifies the crossed homomorphisms up to principal ones and hence the complements to $M$ in the semidirect product, and $H^2(G,M)$ classifies the extensions of $G$ by $M$. The higher groups measure the failure of the invariants functor to be exact, and they are the algebraic input to the classification of finite simple groups, to the theory of the Schur multiplier and projective representations, and to the obstruction theory of extensions.</p>
+<p>This article is the sixteenth of the corpus and the seventh of the group articles, below the foundational layer and <em>Infinite Abelian Groups</em>, <em>Solvable and Nilpotent Groups</em>, <em>Combinatorial Group Theory</em>, <em>Infinite Groups</em>, <em>Coxeter Groups</em> and <em>Braid Groups</em>. It uses the categorical language of <em>Universal Properties and Categories</em>, the extension theory and the abelian invariants of the group articles, and the presentation theory of <em>Combinatorial Group Theory</em>. The object of the article is the cohomology of a group: the standard resolution, the exact sequences, the low-dimensional interpretations, homology and the Schur multiplier, and the cohomology of finite groups. The general homological algebra over a ring — the theory of resolutions of modules, the functors $\operatorname{Ext}$ and $\operatorname{Tor}$, and derived functors — belongs andin the Linear Spaces slot, and the group ring is treated among the rings; both are named here only where the translation is a definition, and the cochain-level theory is developed in line.</p>
+<h2 id="g-modules-and-the-standard-resolution">G-Modules and the Standard Resolution</h2>
+<h3 id="g-modules">G-Modules</h3>
+<p><strong>Definition.</strong> A <strong>$G$-module</strong> is an abelian group $M$ together with an action of $G$ by automorphisms, that is, a map $G \times M \to M$, $(g,m) \mapsto gm$, with $em = m$ and $g(hm) = (gh)m$ for all $g, h \in G$, and with $g(m + m') = gm + gm'$. The action is <strong>trivial</strong> if $gm = m$ for all $g,m$. A <strong>morphism</strong> of $G$-modules is a homomorphism of abelian groups $f : M \to N$ with $f(gm) = g f(m)$. The $G$-modules and their morphisms form an abelian category in the sense of <em>Universal Properties and Categories</em>, with kernels and cokernels computed on the underlying abelian groups.</p>
+<p><strong>Definition.</strong> The <strong>invariants</strong> of a $G$-module are $M^{G} = \{m \in M : gm = m \text{ for all } g \in G\}$, and the <strong>coinvariants</strong> are $M_{G} = M / \langle gm - m : g \in G, m \in M\rangle$, where the denominator is the subgroup generated by the elements $gm - m$.</p>
+<p><strong>Proposition.</strong> $M \mapsto M^G$ is a left exact functor from $G$-modules to abelian groups, and $M \mapsto M_G$ is a right exact functor; the inclusion $M^G \hookrightarrow M$ followed by the quotient $M \twoheadrightarrow M_G$ gives a natural map $M^G \to M_G$, which is neither injective nor surjective in general. Cohomology is the sequence of derived functors of the invariants, and homology the sequence of derived functors of the coinvariants; the derived-functor formulation belongs, and the cochain-level definition below is the one used here.</p>
+<p><strong>Example.</strong> The <strong>trivial module</strong> $\mathbb{Z}$ has the trivial action; $\mathbb{Z}^G = \mathbb{Z}$ and $\mathbb{Z}_G = \mathbb{Z}$. The $G$-module $\mathbb{Z}[G]$ of finitely supported integer functions on $G$, with $(g \cdot f)(h) = f(g^{-1}h)$, is the <strong>group ring</strong>, and $G$-modules are exactly the modules over the ring $\mathbb{Z}[G]$; the ring-theoretic properties of $\mathbb{Z}[G]$ are those , while the module theory belongs, and neither is used here beyond this translation.</p>
+<h3 id="the-standard-resolution">The Standard Resolution</h3>
+<p><strong>Definition.</strong> The <strong>homogeneous bar resolution</strong> of $\mathbb{Z}$ over $G$ is the complex of $G$-modules</p>
+<p>$$
+\cdots \longrightarrow \mathbb{Z}[G^{n+1}] \xrightarrow{\ \partial_n\ } \mathbb{Z}[G^n] \longrightarrow \cdots \longrightarrow \mathbb{Z}[G] \xrightarrow{\ \partial_0\ } \mathbb{Z} \longrightarrow 0,
+$$</p>
+<p>where $\mathbb{Z}[G^n]$ is free on the $n$-tuples with the diagonal $G$-action, the map $\partial_n$ is the alternating sum of the face maps that drop one coordinate,</p>
+<p>$$
+\partial_n(g_0,\ldots,g_n) = \sum_{i=0}^{n} (-1)^i (g_0,\ldots,\widehat{g_i},\ldots,g_n),
+$$</p>
+<p>and $\partial_0$ augments $\mathbb{Z}[G] \to \mathbb{Z}$ by $\sum a_g g \mapsto \sum a_g$. The identity $\partial_{n-1}\partial_n = 0$ holds.</p>
+<p><strong>Definition.</strong> An <strong>inhomogeneous $n$-cochain</strong> on $G$ with values in $M$ is a function $\alpha : G^n \to M$; the cochains form an abelian group $C^n(G,M) = \operatorname{Maps}(G^n, M)$ with $C^0(G,M) = M$, and the <strong>coboundary</strong> is</p>
+<p>$$
+(d\alpha)(g_1,\ldots,g_{n+1}) = g_1 \alpha(g_2,\ldots,g_{n+1}) + \sum_{i=1}^{n} (-1)^{i} \alpha(g_1,\ldots,g_i g_{i+1},\ldots,g_{n+1}) + (-1)^{n+1} \alpha(g_1,\ldots,g_n).
+$$</p>
+<p><strong>Definition.</strong> The <strong>cohomology of $G$ with coefficients in $M$</strong> is</p>
+<p>$$
+H^n(G,M) = Z^n(G,M)/B^n(G,M), \qquad Z^n = \ker(d : C^n \to C^{n+1}), \quad B^n = \operatorname{im}(d : C^{n-1} \to C^n),
+$$</p>
+<p>the <strong>cocycles</strong> and <strong>coboundaries</strong> respectively. Homology is defined from the same resolution by applying the coinvariants functor: $H_n(G,M)$ is the homology of the complex $C_n(G,M) = M \otimes_{\mathbb{Z}} \mathbb{Z}[G^n]$ with the induced boundary, and $H_n(G,M)$ is covariantly functorial in $M$.</p>
+<p><strong>Theorem.</strong> $d^2 = 0$, so $H^n(G,M)$ is defined, and $H^0(G,M) = M^G$.</p>
+<p><strong>Proof.</strong> For the first statement, each new face operation is the alternating sum of compositions of face maps, and the compositions cancel in pairs. For the second, $d\alpha$ for $\alpha \in C^0 = M$ is the function $(d\alpha)(g) = g\alpha - \alpha$, so $\ker d = M^G$. $\square$</p>
+<p><strong>Remark.</strong> The definition via the bar resolution is the classical one of Eilenberg and Mac Lane; the identification of $H^n(G,M)$ with the $n$-th right derived functor of the invariants functor, and with $\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z}, M)$, is the derived-functor theorem of homological algebra and belongs, where the resolutions and the Ext functor are developed. The cochain-level definition is sufficient for everything in this article.</p>
+<h2 id="functoriality-and-exact-sequences">Functoriality and Exact Sequences</h2>
+<h3 id="the-long-exact-sequence">The Long Exact Sequence</h3>
+<p><strong>Proposition.</strong> $H^n(G,M)$ is contravariant in $G$ and covariant in $M$: a homomorphism $\varphi : H \to G$ turns a $G$-module $M$ into an $H$-module and induces a map $H^n(G,M) \to H^n(H,M)$, while a morphism of $G$-modules $f : M \to N$ induces a map $H^n(G,M) \to H^n(G,N)$; the two constructions commute with composition and with each other.</p>
+<p><strong>Theorem (long exact sequence).</strong> A short exact sequence of $G$-modules $0 \to M' \to M \to M'' \to 0$ gives a long exact sequence of abelian groups</p>
+<p>$$
+0 \to H^0(G,M') \to H^0(G,M) \to H^0(G,M'') \xrightarrow{\ \delta\ } H^1(G,M') \to H^1(G,M) \to H^1(G,M'') \xrightarrow{\ \delta\ } H^2(G,M') \to \cdots,
+$$</p>
+<p>functorial in the exact sequence, with connecting maps $\delta$ natural; the sequence continues indefinitely to the right. Similarly there is a long exact homology sequence.</p>
+<p><strong>Proof sketch.</strong> The bar complex is a complex of free $\mathbb{Z}[G]$-modules, and applying the functor $\operatorname{Hom}_{\mathbb{Z}[G]}(\mathbb{Z}[G^{n+1}],-)$ to a short exact sequence of coefficients gives a short exact sequence of cochain complexes because the modules $\mathbb{Z}[G^{n+1}]$ are free; the snake lemma applied to the resulting commuting diagram of cochain complexes produces the connecting maps and the exactness. The homology statement is the same argument with the tensor product. $\square$</p>
+<h3 id="restriction-corestriction-and-shapiros-lemma">Restriction, Corestriction and Shapiro's Lemma</h3>
+<p><strong>Definition.</strong> For $H \leq G$ and a $G$-module $M$, the <strong>restriction</strong> $\operatorname{Res}^G_H : H^n(G,M) \to H^n(H,M)$ is induced by the inclusion $H \hookrightarrow G$; a cochain restriction is simply the restriction of the function $\alpha : G^n \to M$ to $H^n$.</p>
+<p><strong>Definition.</strong> The <strong>induced module</strong> of an $H$-module $N$ is $\operatorname{Ind}_H^G N = \mathbb{Z}[G] \otimes_{\mathbb{Z}[H]} N$, and the <strong>coinduced module</strong> is $\operatorname{Coind}_H^G N = \operatorname{Hom}_{\mathbb{Z}[H]}(\mathbb{Z}[G], N)$, with the $G$-actions by left translation. For finite-index $H$ there is a <strong>corestriction</strong> (or <strong>transfer</strong>) $\operatorname{Cor}^G_H : H^n(H,M) \to H^n(G,M)$; on $H^0$ it is the sum over coset representatives, and on the higher groups it is defined by a "sum over cosets" on the cochain level.</p>
+<p><strong>Theorem (Shapiro's lemma).</strong> For $H \leq G$, an $H$-module $N$ and every $n \geq 0$,</p>
+<p>$$
+H^n(G, \operatorname{Coind}_H^G N) \cong H^n(H,N).
+$$</p>
+<p><strong>Proof sketch.</strong> On the cochain level, a cochain $\alpha : G^n \to \operatorname{Coind}_H^G N$ is a function $G^n \times G \to N$ with an $H$-equivariance in the last variable, equivalently a function $G^{n+1} \to N$ with an equivariance; the standard resolution of $G$ restricts to a resolution of $H$, and the two cochain complexes are isomorphic. $\square$</p>
+<p><strong>Proposition (restriction–corestriction).</strong> If $H \leq G$ has finite index $[G:H] = m$, then $\operatorname{Cor}^G_H \circ \operatorname{Res}^G_H$ is multiplication by $m$ on $H^n(G,M)$. Hence, for a finite group $G$, every cohomology group $H^n(G,M)$ is annihilated by $|G|$: taking $H = 1$ gives $\operatorname{Res}$ the zero map and multiplication by $|G|$ the zero map.</p>
+<p><strong>Proof sketch.</strong> The composite is the transfer followed by restriction, which on cochain representatives is the sum over the $m$ coset representatives; the cocycle identity identifies the sum with $m$ times the original cocycle. $\square$</p>
+<p><strong>Theorem (inflation–restriction).</strong> Let $N \trianglelefteq G$ and let $M$ be a $G$-module. There is an exact sequence</p>
+<p>$$
+0 \to H^1(G/N, M^N) \xrightarrow{\ \operatorname{Inf}\ } H^1(G,M) \xrightarrow{\ \operatorname{Res}\ } H^1(N,M)^{G/N} \xrightarrow{\ \delta\ } H^2(G/N,M^N) \xrightarrow{\ \operatorname{Inf}\ } H^2(G,M),
+$$</p>
+<p>where $\operatorname{Inf}$ is induced by the quotient map $G \to G/N$ and $\delta$ is the connecting map of the long exact sequence of the extension.</p>
+<p><strong>Proof sketch.</strong> One computes on the cochain complexes of $G$, $N$ and $G/N$ and applies the snake lemma to the natural sequence of complexes $0 \to C^\bullet(G/N, M^N) \to C^\bullet(G,M) \to C^\bullet(N,M)^{G/N}$; the kernels and images of the resulting long exact sequence are the displayed inflation, restriction and connecting maps. $\square$</p>
+<h2 id="low-dimensional-cohomology">Low-Dimensional Cohomology</h2>
+<h3 id="math158-and-derivations">$H^1$ and Derivations</h3>
+<p><strong>Definition.</strong> A <strong>derivation</strong> (or <strong>crossed homomorphism</strong>) $G \to M$ is a map $d$ with</p>
+<p>$$
+d(gh) = d(g) + g\, d(h);
+$$</p>
+<p>the derivations form a group $\operatorname{Der}(G,M)$ under addition. A derivation is <strong>principal</strong> (or <strong>inner</strong>) if $d(g) = gm - m$ for some fixed $m \in M$; the principal derivations form a subgroup $\operatorname{PDer}(G,M)$.</p>
+<p><strong>Theorem.</strong> The $1$-cocycles are exactly the derivations, $Z^1(G,M) = \operatorname{Der}(G,M)$, the $1$-coboundaries are exactly the principal derivations, $B^1(G,M) = \operatorname{PDer}(G,M)$, and</p>
+<p>$$
+H^1(G,M) \cong \operatorname{Der}(G,M)/\operatorname{PDer}(G,M).
+$$</p>
+<p>In particular, if the action of $G$ on $M$ is trivial, then $H^1(G,M) = \operatorname{Hom}(G,M)$.</p>
+<p><strong>Proof.</strong> The cocycle identity for $n = 1$ is $g\alpha(h) - \alpha(gh) + \alpha(g) = 0$, which is $\alpha(gh) = \alpha(g) + g\alpha(h)$ after a sign, so the $1$-cocycles are the derivations. For $n = 0$ the coboundary of $m \in M$ is $(dm)(g) = gm - m$, giving the principal derivations. With a trivial action the derivations are the homomorphisms and the principal ones vanish. $\square$</p>
+<p><strong>Theorem (complements).</strong> Let $M$ be a $G$-module and let $E = M \rtimes G$ be the semidirect product with the given action. There is a bijection between $H^1(G,M)$ and the set of $G$-conjugacy classes of complements to $M$ in $E$.</p>
+<p><strong>Proof sketch.</strong> A complement is the graph of a function $\varphi : G \to M$, $\varphi(g) = (d(g), g)$; the condition that the graph be a subgroup is exactly the derivation identity for $d$, and two complements are conjugate under an element of $M$ exactly when the derivations differ by a principal one. $\square$</p>
+<h3 id="math194-and-extensions">$H^2$ and Extensions</h3>
+<p><strong>Definition.</strong> A <strong>$2$-cocycle</strong> (or <strong>factor set</strong>) is a function $\alpha : G \times G \to M$ satisfying</p>
+<p>$$
+g\, \alpha(h,k) - \alpha(gh,k) + \alpha(g,hk) - \alpha(g,h) = 0;
+$$</p>
+<p>a $2$-coboundary is $\alpha(g,h) = g\, \beta(h) - \beta(gh) + \beta(g)$ for some $\beta : G \to M$.</p>
+<p><strong>Theorem (extensions).</strong> Let $M$ be an abelian group with a $G$-action. The group $H^2(G,M)$ classifies the <strong>extensions</strong></p>
+<p>$$
+1 \longrightarrow M \longrightarrow E \longrightarrow G \longrightarrow 1
+$$</p>
+<p>in which the conjugation action of $E$ on the normal subgroup $M$ induces the given $G$-action: the equivalence classes of such extensions are in bijection with $H^2(G,M)$, the split extension corresponds to the zero element, and the Baer sum of extensions corresponds to addition in $H^2(G,M)$.</p>
+<p><strong>Proof sketch.</strong> Given an extension, choose a set-theoretic section $s : G \to E$; then $s(g)s(h) = \alpha(g,h) s(gh)$ defines a function $\alpha : G\times G \to M$, and associativity in $E$ gives the cocycle identity. Changing the section changes $\alpha$ by a coboundary, and an isomorphism of extensions over $G$ gives the same cohomology class. Conversely, a cocycle defines a multiplication on $M \times G$ by $(m,g)(n,h) = (m + gn + \alpha(g,h), gh)$, which is associative exactly when $\alpha$ is a cocycle. $\square$</p>
+<p><strong>Corollary.</strong> Let $M$ be a $G$-module with trivial action. The <strong>central extensions</strong> of $G$ by $M$ are classified by $H^2(G,M)$: when $G$ is finite and $M$ is finite, $H^2(G,M)$ is finite of exponent dividing $|G|$, and the number of central extensions is $|H^2(G,M)|$ up to equivalence.</p>
+<p><strong>Remark.</strong> The $3$-dimensional cohomology $H^3(G,M)$ classifies the <strong>crossed modules</strong> and the <strong>$2$-fold extensions</strong> whose kernel data involve the $H^2$; the higher groups measure the obstruction to splitting the successive layers of a resolution rather than any single extension. The stabilisation is the reason the subject quickly turns to the cohomological dimension, below.</p>
+<h2 id="homology-the-schur-multiplier-and-finite-groups">Homology, the Schur Multiplier and Finite Groups</h2>
+<h3 id="homology-and-the-abelianisation">Homology and the Abelianisation</h3>
+<p><strong>Theorem.</strong> $H_0(G,M) = M_G$ and $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}} = G/[G,G]$.</p>
+<p><strong>Proof sketch.</strong> In degree $0$ the complex is $M \otimes_{\mathbb{Z}[G]} \mathbb{Z}[G] = M_G$, giving $H_0(G,M) = M_G$. In degree $1$ the coinvariants of $\mathbb{Z}[G^2]$ are identified with $\mathbb{Z}[G]$ through the second coordinate, the boundary $\partial_1(g,h) = h - gh$ becomes $g\cdot 1 - 1$ on the coinvariants, and for $M = \mathbb{Z}$ the quotient of $\mathbb{Z}[G]$ by the subgroup generated by the elements $g \cdot 1 - 1$ is exactly $G^{\mathrm{ab}}$. $\square$</p>
+<p><strong>Definition.</strong> The <strong>Schur multiplier</strong> of $G$ is $M(G) = H_2(G,\mathbb{Z})$. For a presentation $G = F/R$ with $F$ free, <strong>Hopf's formula</strong> gives</p>
+<p>$$
+M(G) \cong \frac{R \cap [F,F]}{[F,R]}.
+$$</p>
+<p><strong>Theorem (Schur).</strong> If $G$ is finite then $H_n(G,\mathbb{Z})$ and $H^n(G,M)$ are finite for $n \geq 1$ and every finitely generated $G$-module $M$; the Schur multiplier $M(G)$ is finite.</p>
+<p><strong>Proof sketch.</strong> For a finite group, the bar complex has finitely generated terms and the standard resolution can be truncated: $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}}$ is finite, and the finiteness descends to the higher groups by induction on a normal series with cyclic factors, using the five-term exact sequence associated with the extension and the finiteness of the quotient and the kernel. $\square$</p>
+<p><strong>Theorem (universal central extension).</strong> A perfect group $G$ has a <strong>universal central extension</strong> $1 \to M(G) \to \hat G \to G \to 1$, through which every other central extension of $G$ factors uniquely; the kernel is $H_2(G,\mathbb{Z})$, and $\hat G$ is again perfect.</p>
+<p><strong>Example.</strong> For a finite cyclic group, $M(C_m) = 0$: a cyclic group has a presentation $F_1/R$ with one relator and Hopf's formula gives $0$. For the Klein four group, $M(C_2 \times C_2) = \mathbb{Z}/2$; the abelian case is computed from the Künneth formula and $H_1(C_2\times C_2) = \mathbb{Z}/2 \times \mathbb{Z}/2$, whose tensor square contributes the $\mathbb{Z}/2$.</p>
+<h3 id="cohomology-of-finite-groups">Cohomology of Finite Groups</h3>
+<p><strong>Definition.</strong> For a finite group $G$, the <strong>norm map</strong> on a $G$-module is $N : M \to M$, $N(m) = \sum_{g\in G} gm$, and the <strong>augmentation ideal</strong> $I_G$ is the kernel of $\mathbb{Z}[G] \to \mathbb{Z}$, generated by the elements $g - 1$. <strong>Tate cohomology</strong> $\hat H^n(G,M)$ is defined for all $n \in \mathbb{Z}$ by</p>
+<p>$$
+\hat H^n(G,M) = H^n(G,M) \ (n \geq 1), \qquad \hat H^0(G,M) = M^G/NM, \qquad \hat H^{-1}(G,M) = \ker(N)/I_G M,
+$$</p>
+<p>and for $n \leq -2$ by $\hat H^n(G,M) = H_{-n-1}(G,M)$, so that the long exact sequence of a short exact sequence of modules becomes bi-infinite and periodic in signs.</p>
+<p><strong>Theorem (Tate duality).</strong> Let $G$ be finite, let $M$ be a finite $G$-module, let $D = \bigoplus_p \mathbb{Z}[p^\infty]$ be the direct sum of the Prüfer groups of <em>Infinite Abelian Groups</em> over all primes, and let $M^{\vee} = \operatorname{Hom}(M, D)$ be the dual. For every $n \in \mathbb{Z}$ the cup product</p>
+<p>$$
+\hat H^n(G,M) \times \hat H^{-n-1}(G,M^{\vee}) \longrightarrow D
+$$</p>
+<p>is a perfect pairing, so that cohomology with coefficients in $M$ and cohomology with coefficients in $M^{\vee}$ determine one another. The group $D$ is the abstract group of all roots of unity, one Prüfer group for each prime; its standard concrete model is the quotient of the additive group of the fraction field of $\mathbb{Z}$ by $\mathbb{Z}$, introduced in <em>Localization and the Fraction Field</em> in the category <em>Rings and Fields</em>, and the identification is deferred to that article.</p>
+<p><strong>Theorem (periodic cohomology).</strong> If $G$ is finite and has periodic cohomology of period $d$, then the cup product with a generator of $\hat H^d(G,\mathbb{Z})$ gives isomorphisms $\hat H^n(G,M) \cong \hat H^{n+d}(G,M)$ for all $n \in \mathbb{Z}$ and every $G$-module $M$.</p>
+<p><strong>Theorem (Schur–Zassenhaus).</strong> If $G$ is finite and $M$ is a finite $G$-module whose order is coprime to $|G|$, then $H^n(G,M) = 0$ for all $n \geq 1$. Consequently every extension of $G$ by a normal subgroup $M$ of coprime order is split, and any two complements of $M$ are conjugate.</p>
+<p><strong>Proof sketch.</strong> The vanishing follows from restriction–corestriction: multiplication by $|G|$ is the zero map on $H^n(G,M)$, while on a group of order coprime to $|G|$ the composite $\operatorname{Cor}\circ\operatorname{Res}$ is multiplication by $|G|$, which is an automorphism; hence $H^n(G,M) = 0$. The splitting of the extension is the case $n = 2$ of the vanishing, together with the classification of extensions by $H^2$; the conjugacy of complements follows from the vanishing in degree $1$ applied to the normaliser. $\square$</p>
+<p><strong>Theorem (cohomology of cyclic groups).</strong> For $G = C_m$ cyclic of order $m$ generated by $g$, with the trivial action of $G$ on the coefficients,</p>
+<p>$$
+H^n(C_m,\mathbb{Z}) \cong \begin{cases} \mathbb{Z} & n = 0, \\ \mathbb{Z}/m\mathbb{Z} & n \geq 2 \text{ even}, \\ 0 & n \geq 1 \text{ odd},\end{cases} \qquad H^n(C_m,\mathbb{Z}/m\mathbb{Z}) \cong \mathbb{Z}/m\mathbb{Z} \ \ (n \geq 0).
+$$</p>
+<p><strong>Proof sketch.</strong> The group ring $\mathbb{Z}[C_m] = \mathbb{Z}[g]/(g^m-1)$ has a <strong>periodic resolution</strong> of period $2$,</p>
+<p>$$
+\cdots \xrightarrow{\ g-1\ } \mathbb{Z}[C_m] \xrightarrow{\ N\ } \mathbb{Z}[C_m] \xrightarrow{\ g-1\ } \mathbb{Z}[C_m] \xrightarrow{\ \varepsilon\ } \mathbb{Z} \to 0,
+$$</p>
+<p>where $N = 1 + g + \cdots + g^{m-1}$. Applying $\operatorname{Hom}_{\mathbb{Z}[G]}(-,\mathbb{Z})$ gives multiplication by $0$ and by $m$ alternately, and the cohomology groups follow; applying $\operatorname{Hom}(-,\mathbb{Z}/m)$ gives zero maps throughout, so every cohomology group is $\mathbb{Z}/m$. The verification accompanying this article recomputes both families. $\square$</p>
+<h2 id="cohomological-dimension">Cohomological Dimension</h2>
+<p><strong>Definition.</strong> The <strong>cohomological dimension</strong> $\operatorname{cd}(G)$ of a group $G$ is the smallest $n$ such that $H^k(G,M) = 0$ for all $k > n$ and all $G$-modules $M$; if no such $n$ exists, $\operatorname{cd}(G) = \infty$. Equivalently, $\operatorname{cd}(G) \leq n$ if and only if there is a resolution of $\mathbb{Z}$ by projective $G$-modules of length $n$, and the <strong>geometric dimension</strong> $\operatorname{gd}(G)$ is the smallest dimension of a space with fundamental group $G$.</p>
+<p><strong>Theorem (Stallings–Swan).</strong> A group has cohomological dimension at most $1$ if and only if it is free. Hence a torsion-free group of cohomological dimension $0$ is trivial, and the torsion-free groups of dimension $1$ are exactly the free groups.</p>
+<p><strong>Proof sketch.</strong> A free group has the Nielsen–Schreier presentation and admits a two-term free resolution of $\mathbb{Z}$, so $\operatorname{cd} \leq 1$; conversely, if $\operatorname{cd}(G) \leq 1$ then the presentation complex of any presentation of $G$ has its two-cells eliminated one at a time by the Freiheitssatz for the associated HNN structure — expressed purely group-theoretically, the relations can be eliminated using the Nielsen–Schreier theorem of <em>Combinatorial Group Theory</em> — so $G$ is free. $\square$</p>
+<p><strong>Proposition.</strong> A group has cohomological dimension $0$ if and only if it is trivial; a free abelian group $\mathbb{Z}^r$ has cohomological dimension $r$; a nontrivial finite group has infinite cohomological dimension, since $H^n(G,M)$ is nonzero for infinitely many $n$ for suitable $M$ when $G$ is finite.</p>
+<p><strong>Proposition.</strong> If $G$ has a subgroup $H$ of finite index then $\operatorname{cd}(G) = \operatorname{cd}(H)$, since induction and restriction are inverse up to finite index on the level of resolutions.</p>
+<p><strong>Example.</strong> A free group $F_r$ has $\operatorname{cd} = 1$ and $H^n(F_r, M) = 0$ for $n \geq 2$; a surface group of genus $g$ has $\operatorname{cd} = 2$; the braid group $B_n$ has $\operatorname{cd} = n-1$ for $n\geq 2$, a fact that is proved cohomologically from the structure of the classifying space and is recorded here as a computation, since the group-theoretic derivation belongs with the homology of <em>Braid Groups</em> and the classifying spaces of Part II.</p>
+<p><strong>Theorem (Künneth formula).</strong> For groups $G$ and $H$ with trivial coefficients, the homology of the product satisfies, in the relevant degrees,</p>
+<p>$$
+H_1(G\times H) \cong H_1(G) \oplus H_1(H), \qquad H_2(G \times H) \cong H_2(G) \oplus H_2(H) \oplus \big(H_1(G) \otimes H_1(H)\big).
+$$</p>
+<p><strong>Proof sketch.</strong> The bar resolution of $G \times H$ is the tensor product of the resolutions of $G$ and of $H$; the algebraic Künneth theorem for complexes computes the homology of the tensor product, and the low terms are the displayed ones, the torsion of the tensor product contributing to $H_2$. $\square$</p>
+<p><strong>Example.</strong> $H_2(C_2 \times C_2) = H_2(C_2) \oplus H_2(C_2) \oplus (H_1(C_2)\otimes H_1(C_2)) = 0 \oplus 0 \oplus \mathbb{Z}/2 = \mathbb{Z}/2$, which recovers the Schur multiplier of the Klein four group; more generally $H_2(C_m \times C_m) = \mathbb{Z}/m$.</p>
+<h2 id="summary">Summary</h2>
+<p>A $G$-module is an abelian group with a $G$-action, and the invariants $M^G$ and the coinvariants $M_G$ are its two fundamental functors. The standard bar resolution of $\mathbb{Z}$ produces the inhomogeneous cochain complex $C^n(G,M) = \operatorname{Maps}(G^n,M)$ with coboundary $(d\alpha)(g_1,\ldots,g_{n+1}) = g_1\alpha(g_2,\ldots) + \sum (-1)^i \alpha(\ldots, g_ig_{i+1},\ldots) + (-1)^{n+1}\alpha(g_1,\ldots,g_n)$ and $H^n(G,M) = \ker d/\operatorname{im} d$, with $H^0(G,M) = M^G$; homology is defined by the coinvariants, with $H_0 = M_G$ and $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}}$.</p>
+<p>$H^1(G,M)$ is the group of derivations modulo principal derivations, and equals $\operatorname{Hom}(G,M)$ for trivial coefficients; it classifies the complements to $M$ in $M\rtimes G$. $H^2(G,M)$ classifies the extensions $1\to M\to E\to G\to 1$ inducing the given action, with the split extension the zero class and the Baer sum the addition. The long exact sequence, restriction, corestriction, Shapiro's lemma and the inflation–restriction sequence are the computational tools. The Schur multiplier $M(G) = H_2(G,\mathbb{Z})$ is computed by Hopf's formula $(R\cap[F,F])/[F,R]$, is finite for finite $G$, and is the kernel of the universal central extension of a perfect group.</p>
+<p>For finite groups, Tate cohomology $\hat H^n$ is defined for all $n \in \mathbb{Z}$ and intertwines cohomology and homology; every cohomology group is annihilated by $|G|$, and Schur–Zassenhaus gives the vanishing of $H^n(G,M)$ for coprime coefficients. The cohomology of a cyclic group is periodic of period $2$: $H^{2k}(C_m,\mathbb{Z}) = \mathbb{Z}/m$, $H^{2k+1}(C_m,\mathbb{Z}) = 0$ for $k \geq 1$, and $H^n(C_m,\mathbb{Z}/m) = \mathbb{Z}/m$ for all $n$. Cohomological dimension is at most $1$ exactly for the free groups (Stallings–Swan), and the Künneth formula gives $H_2(G\times H)$, whence $H_2(C_m\times C_m) = \mathbb{Z}/m$. The general theory of resolutions, Ext and Tor over a ring belongs and is not used here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$-module $M$</td>
+<td>abelian group with a $G$-action</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[G]$</td>
+<td>group ring; $G$-modules are $\mathbb{Z}[G]$-modules</td>
+</tr>
+<tr>
+<td>$M^G$, $M_G$</td>
+<td>invariants and coinvariants</td>
+</tr>
+<tr>
+<td>$C^n(G,M)$</td>
+<td>inhomogeneous $n$-cochains, $\operatorname{Maps}(G^n,M)$</td>
+</tr>
+<tr>
+<td>$Z^n(G,M)$, $B^n(G,M)$</td>
+<td>cocycles and coboundaries</td>
+</tr>
+<tr>
+<td>$H^n(G,M)$</td>
+<td>group cohomology, $H^0(G,M) = M^G$</td>
+</tr>
+<tr>
+<td>$H_n(G,M)$</td>
+<td>group homology, $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(G,M)$, $\operatorname{PDer}(G,M)$</td>
+<td>derivations and principal derivations</td>
+</tr>
+<tr>
+<td>$H^1(G,M) \cong \operatorname{Der}/\operatorname{PDer}$</td>
+<td>first cohomology</td>
+</tr>
+<tr>
+<td>$H^2(G,M)$</td>
+<td>extension classes</td>
+</tr>
+<tr>
+<td>$M(G) = H_2(G,\mathbb{Z})$</td>
+<td>Schur multiplier</td>
+</tr>
+<tr>
+<td>$\hat H^n(G,M)$</td>
+<td>Tate cohomology, $n \in \mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>norm map $m \mapsto \sum_{g} gm$</td>
+</tr>
+<tr>
+<td>$I_G$</td>
+<td>augmentation ideal</td>
+</tr>
+<tr>
+<td>$\operatorname{Res}$, $\operatorname{Cor}$, $\operatorname{Inf}$</td>
+<td>restriction, corestriction, inflation</td>
+</tr>
+<tr>
+<td>$\operatorname{Ind}_H^G$, $\operatorname{Coind}_H^G$</td>
+<td>induced and coinduced modules</td>
+</tr>
+<tr>
+<td>$\operatorname{cd}(G)$</td>
+<td>cohomological dimension</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/m\mathbb{Z}$</td>
+<td>cyclic coefficient group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Kenneth S. Brown, <em>Cohomology of Groups</em> (Springer, 1982), for the standard resolution, the low-dimensional interpretations, Shapiro's lemma and the cohomology of finite groups.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for the derived-functor framework that underlies the definitions.</li>
+<li>Saunders Mac Lane, <em>Homology</em> (Springer, 1995), for the original Eilenberg–Mac Lane construction and the homology of groups.</li>
+<li>Samuel Eilenberg and Saunders Mac Lane, "Cohomology theory in abstract groups I", <em>Annals of Mathematics</em> <strong>48</strong> (1947), 51–78, for the foundational account.</li>
+<li>Issai Schur, "Über die Darstellung der endlichen Gruppen durch gebrochene lineare Substitutionen", <em>Journal für die reine und angewandte Mathematik</em> <strong>127</strong> (1904), 20–50, for the Schur multiplier and the projective representations.</li>
+<li>John Stallings, "On torsion-free groups with infinitely many ends", <em>Annals of Mathematics</em> <strong>88</strong> (1968), 312–334, and Richard G. Swan, "Groups of cohomological dimension one", <em>Journal of Algebra</em> <strong>12</strong> (1969), 585–610, for the Stallings–Swan theorem.</li>
+<li>John Tate, "The higher dimensional cohomology groups of class field theory", <em>Annals of Mathematics</em> <strong>56</strong> (1952), 294–297, for Tate cohomology.</li>
+<li>Heinz Hopf, "Fundamentalgruppe und zweite Bettische Gruppe", <em>Commentarii Mathematici Helvetici</em> <strong>14</strong> (1942), 257–309, for the formula for the Schur multiplier.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

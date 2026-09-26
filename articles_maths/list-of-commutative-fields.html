@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Commutative Fields — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-commutative-fields"><strong>List of Commutative Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists every field that the corpus introduces — $\mathbb{Q}$, $\mathbb{R}$ and $\mathbb{C}$, the finite fields, the $p$-adic fields, the rational function fields $k(x)$ and the Laurent series fields $k((t))$, the real algebraic numbers and the number fields — with the characteristic of each and the extensions of each. Every entry points to the article that introduces the object.</p>
+<p>The list separates the fields of characteristic $0$, which contain a copy of $\mathbb{Q}$, from those of characteristic $p$, which contain a copy of $\mathbb{F}_p$; it separates the fields that are algebraically closed, such as $\mathbb{C}$, $\overline{\mathbb{Q}}$, $\overline{\mathbb{F}_p}$ and $\mathbb{C}_p$, from those that are only real closed, such as $\mathbb{R}$ and the real algebraic numbers; and it records the extensions and completions that the corpus builds from a given field.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="the-prime-fields-and-the-number-systems">The Prime Fields and the Number Systems</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Characteristic</th>
+<th>The prime field it contains</th>
+<th>Extensions and closures</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>$0$</td>
+<td>itself</td>
+<td>the number fields; the completions $\mathbb{R}$ and $\mathbb{Q}_p$; the algebraic closure $\overline{\mathbb{Q}}$</td>
+<td><em>The Rational Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$0$</td>
+<td>$\mathbb{Q}$</td>
+<td>$\mathbb{C} = \mathbb{R}(i)$, its algebraic closure; the real algebraic numbers as a proper subfield</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$0$</td>
+<td>$\mathbb{Q}$</td>
+<td>algebraically closed; already its own algebraic closure</td>
+<td><em>The Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}}$, the algebraic numbers</td>
+<td>$0$</td>
+<td>$\mathbb{Q}$</td>
+<td>algebraically closed; the algebraic closure of $\mathbb{Q}$</td>
+<td><em>Algebraically Closed Fields</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}} \cap \mathbb{R}$, the real algebraic numbers</td>
+<td>$0$</td>
+<td>$\mathbb{Q}$</td>
+<td>the real closure of $\mathbb{Q}$; algebraic closure $\overline{\mathbb{Q}}$; countable and not order-complete</td>
+<td><em>Real-Closed and Complete Ordered Fields</em></td>
+</tr>
+<tr>
+<td>a number field $K$</td>
+<td>$0$</td>
+<td>$\mathbb{Q}$</td>
+<td>finite over $\mathbb{Q}$; completions at its primes</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\zeta_n)$, a cyclotomic field</td>
+<td>$0$</td>
+<td>$\mathbb{Q}$</td>
+<td>degree $\varphi(n)$ over $\mathbb{Q}$; the cyclotomic subfields</td>
+<td><em>Cyclotomic Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\sqrt{d})$, a quadratic field</td>
+<td>$0$</td>
+<td>$\mathbb{Q}$</td>
+<td>degree $2$ over $\mathbb{Q}$; imaginary for $d < 0$, real for $d > 0$</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A field of characteristic $0$ contains a copy of $\mathbb{Q}$, and the prime field is the intersection of all its subfields. The real algebraic numbers are the real closure of $\mathbb{Q}$ and are countable; the algebraic numbers $\overline{\mathbb{Q}}$ are its algebraic closure, so the algebraic closure of the real algebraic numbers is $\overline{\mathbb{Q}}$ rather than $\mathbb{C}$.</p>
+<h2 id="the-finite-fields-and-characteristic-math58">The Finite Fields and Characteristic $p$</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Characteristic</th>
+<th>The prime field it contains</th>
+<th>Extensions and subfields</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_p$</td>
+<td>$p$</td>
+<td>itself</td>
+<td>$\mathbb{F}_q$ is a vector space over it; the prime subfield of every characteristic-$p$ field</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q$, $q = p^n$</td>
+<td>$p$</td>
+<td>$\mathbb{F}_p$</td>
+<td>unique of order $q$; $\mathbb{F}_{p^m} \subseteq \mathbb{F}_{p^n}$ exactly when $m \mid n$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{F}_p}$</td>
+<td>$p$</td>
+<td>$\mathbb{F}_p$</td>
+<td>algebraically closed; the union of the $\mathbb{F}_{p^n}$; the residue field of $\mathbb{C}_p$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>any field of characteristic $p$</td>
+<td>$p$</td>
+<td>$\mathbb{F}_p$</td>
+<td>contains $\mathbb{F}_p$ as its prime field; the Frobenius is injective</td>
+<td><em>Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The finite fields are exhausted by this list, and for each prime power $q$ there is exactly one field of order $q$ up to isomorphism; the Frobenius map and the cyclic multiplicative group of order $q - 1$ are recorded in <em>Finite Fields</em>. The finite fields are fields of this list and not of the non-commutative list, by Wedderburn's little theorem.</p>
+<h2 id="the-math82-adic-and-complete-valued-fields">The $p$-adic and Complete Valued Fields</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Characteristic</th>
+<th>Valuation ring and residue field</th>
+<th>Extensions and closures</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}_p$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}_p$, maximal ideal $p\mathbb{Z}_p$, residue field $\mathbb{F}_p$, value group $\mathbb{Z}$</td>
+<td>finite extensions; the algebraic closure $\overline{\mathbb{Q}_p}$; the completion $\mathbb{C}_p$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}_p$</td>
+<td>$0$</td>
+<td>$\overline{\mathbb{Z}_p}$, residue field $\overline{\mathbb{F}_p}$, value group $\mathbb{Q}$</td>
+<td>algebraically closed and complete</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}_p}$</td>
+<td>$0$</td>
+<td>$\overline{\mathbb{Z}_p}$</td>
+<td>not complete; its completion is $\mathbb{C}_p$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$0$</td>
+<td>the Archimedean completion of $\mathbb{Q}$</td>
+<td>as in the first table</td>
+<td><em>The Real Numbers</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The two completions of $\mathbb{Q}$ at the Archimedean and the non-Archimedean places are $\mathbb{R}$ and $\mathbb{Q}_p$, by Ostrowski's theorem recorded in <em>Absolute Values, Valuations and Completions</em>. The completion preserves the value group and the residue field in the non-Archimedean case, which is why $\mathbb{Q}_p$ has value group $\mathbb{Z}$ and residue field $\mathbb{F}_p$.</p>
+<h2 id="rational-function-fields-and-laurent-series-fields">Rational Function Fields and Laurent Series Fields</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Characteristic</th>
+<th>Residue field and value group</th>
+<th>Extensions and closures</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k(x)$, $k(x_1, \dots, x_n)$</td>
+<td>$\operatorname{char} k$</td>
+<td>—</td>
+<td>the fraction field of $k[x]$; a purely transcendental extension</td>
+<td><em>Fields</em>, §19</td>
+</tr>
+<tr>
+<td>$k((t))$</td>
+<td>$\operatorname{char} k$</td>
+<td>$k$, value group $\mathbb{Z}$</td>
+<td>the completion of $k(t)$ at the $t$-adic valuation</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p((t))$</td>
+<td>$p$</td>
+<td>$\mathbb{F}_p$, value group $\mathbb{Z}$</td>
+<td>the completion of $\mathbb{F}_p(t)$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>the Puiseux series field</td>
+<td>$0$</td>
+<td>—</td>
+<td>the real closure of $\mathbb{R}(t)$ with $t$ infinite</td>
+<td><em>Real-Closed and Complete Ordered Fields</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Frac}(R)$ of a domain $R$</td>
+<td>$\operatorname{char} R$</td>
+<td>—</td>
+<td>the smallest field containing $R$</td>
+<td><em>Localization and the Fraction Field</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The rational function field $k(x)$ is the fraction field of the polynomial ring $k[x]$, and the Laurent series field $k((t))$ is its completion at the $t$-adic valuation. The two constructions differ by completion, and the residue field and the value group are the invariants that record the difference.</p>
+<h2 id="the-algebraic-closures-of-the-fields">The Algebraic Closures of the Fields</h2>
+<p>Every field has an algebraic closure, unique up to isomorphism, and for the fields of this list the closure is known by name.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Its algebraic closure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>$\overline{\mathbb{Q}}$, the algebraic numbers</td>
+<td><em>Algebraically Closed Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{C} = \mathbb{R}(i)$</td>
+<td><em>Galois Theory of ℂ/ℝ</em></td>
+</tr>
+<tr>
+<td>the real algebraic numbers $\overline{\mathbb{Q}} \cap \mathbb{R}$</td>
+<td>$\overline{\mathbb{Q}}$, not $\mathbb{C}$, since $\mathbb{C}$ is transcendental over $\mathbb{Q}$</td>
+<td><em>Real-Closed and Complete Ordered Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$, $\mathbb{F}_q$</td>
+<td>$\overline{\mathbb{F}_p}$, the union of the $\mathbb{F}_{p^n}$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$</td>
+<td>$\overline{\mathbb{Q}_p}$, whose completion is $\mathbb{C}_p$</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>a number field $K$</td>
+<td>$\overline{\mathbb{Q}}$</td>
+<td><em>Algebraic Number Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The case of $\mathbb{R}$ is the Galois theory of $\mathbb{C}$ over $\mathbb{R}$: the extension has degree $2$, generated by a root of $x^2 + 1$, and $\mathbb{C}$ is algebraically closed by the fundamental theorem of algebra. The case of $\mathbb{F}_p$ is the union of the finite extensions $\mathbb{F}_{p^n}$, one for each $n$ inside the closure. For the real algebraic numbers the closure is not $\mathbb{C}$, because $\mathbb{C}$ contains transcendental elements over $\mathbb{Q}$.</p>
+<h2 id="characteristic-and-extensions-at-a-glance">Characteristic and Extensions at a Glance</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>The prime field</th>
+<th>The fields of the corpus</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$\mathbb{Q}$</td>
+<td>$\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\overline{\mathbb{Q}}$, the real algebraic numbers, the number fields, $\mathbb{Q}_p$, $\mathbb{C}_p$, $k(x)$ and $k((t))$ for $k$ of characteristic $0$</td>
+<td><em>The Rational Numbers</em>, <em>Finite Fields</em>, <em>Absolute Values, Valuations and Completions</em>, <em>Fields</em></td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>$\mathbb{F}_p$</td>
+<td>$\mathbb{F}_p$, $\mathbb{F}_q$, $\overline{\mathbb{F}_p}$, $\mathbb{F}_p((t))$, and $k(x)$, $k((t))$ for $k$ of characteristic $p$</td>
+<td><em>Finite Fields</em>, <em>Absolute Values, Valuations and Completions</em>, <em>Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>a division ring, but not commutative; a skew field</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>the division ring of fractions of $A_1(k)$</td>
+<td>not commutative</td>
+<td><em>Ore Domains and Division Rings of Fractions</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Z}[x]$, $\mathbb{Z}[i]$</td>
+<td>commutative domains that are not fields: not every nonzero element is a unit</td>
+<td><em>The Integers</em>, <em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>a division algebra whose multiplication is not associative; not a ring</td>
+<td><em>Octonion Algebra</em></td>
+</tr>
+<tr>
+<td>the zero ring $\{0\}$</td>
+<td>excluded by the convention $1 \neq 0$; a field has $1 \neq 0$</td>
+<td><em>Rings</em>, §2</td>
+</tr>
+</tbody>
+</table></div>
+<p>A commutative division ring is a field, so $\mathbb{H}$ is excluded by commutativity alone and not by the absence of inverses. By Wedderburn's little theorem a finite division ring is a field, so there is no finite skew field and <em>List of Division Rings and Skew Fields</em> is left with the infinite ones.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the fields of the corpus with their characteristic and their extensions. The characteristic-$0$ fields are the number systems and their closures and completions; the characteristic-$p$ fields are the finite fields, their algebraic closure and the Laurent series fields over a field of characteristic $p$; the function fields $k(x)$ and the Laurent series fields $k((t))$ carry the characteristic of their ground field; and the real algebraic numbers, the real closure of $\mathbb{Q}$, are the field that is real closed without being order-complete. The extensions of each are recorded beside it: the algebraic closures $\overline{\mathbb{Q}}$, $\overline{\mathbb{F}_p}$ and $\mathbb{C}_p$, the completion $\mathbb{C}_p$ of $\overline{\mathbb{Q}_p}$, and the algebraic closure $\mathbb{C} = \mathbb{R}(i)$ of $\mathbb{R}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+<td>The rational, real and complex fields</td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}}$, $\overline{\mathbb{F}_p}$, $\overline{\mathbb{Q}_p}$</td>
+<td>Algebraic closures</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$, $\mathbb{F}_q$</td>
+<td>The finite fields of order $p$ and $q = p^n$</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$, $\mathbb{Z}_p$, $\mathbb{C}_p$</td>
+<td>$p$-adic numbers, $p$-adic integers, complete algebraic closure</td>
+</tr>
+<tr>
+<td>$k(x)$, $k((t))$, $\mathbb{F}_p((t))$</td>
+<td>Rational function field, Laurent series fields</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}(\zeta_n)$, $\mathbb{Q}(\sqrt{d})$, $K$</td>
+<td>Cyclotomic, quadratic and number fields</td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{Q}} \cap \mathbb{R}$</td>
+<td>The real algebraic numbers</td>
+</tr>
+<tr>
+<td>$\operatorname{Frac}(R)$</td>
+<td>Field of fractions</td>
+</tr>
+<tr>
+<td>$\varphi(n)$</td>
+<td>Euler totient, the degree $[\mathbb{Q}(\zeta_n):\mathbb{Q}]$</td>
+</tr>
+<tr>
+<td>$\operatorname{char} k$</td>
+<td>The characteristic of a field</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The quaternions; a division ring, not a field</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Serge Lang, <em>Algebra</em> (Springer, revised 3rd ed. 2002), for field extensions, algebraic closures and the classification of finite fields.</li>
+<li>Neal Koblitz, <em>p-adic Numbers, p-adic Analysis, and Zeta-Functions</em> (Springer, 2nd ed. 1984), for $\mathbb{Q}_p$ and $\mathbb{C}_p$ as fields with their valuations.</li>
+<li>John B. Fraleigh, <em>A First Course in Abstract Algebra</em> (Addison–Wesley, 7th ed. 2003), for a tabulation of the standard examples of fields and their characteristic.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

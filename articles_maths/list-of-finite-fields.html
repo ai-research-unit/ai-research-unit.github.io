@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Finite Fields — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-finite-fields"><strong>List of Finite Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the finite fields that the corpus introduces — the prime fields $\mathbb{F}_p$ and the fields $\mathbb{F}_{p^n}$ of prime power order — with their orders, their constructions, their subfields, their Frobenius automorphism and their multiplicative group. Every entry points to the article that introduces the object.</p>
+<p>The list is short because the theory is complete: for every prime power $q = p^n$ there is exactly one field of order $q$ up to isomorphism, and there are no others. The prime fields are the residue rings $\mathbb{Z}/p\mathbb{Z}$; the fields of composite prime power order are constructed as quotients $\mathbb{F}_p[x]/(f)$ by an irreducible polynomial of degree $n$; the subfields correspond to the divisors of $n$; the Frobenius generates the Galois group; and the multiplicative group is cyclic of order $q - 1$.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="the-prime-fields">The Prime Fields</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Order</th>
+<th>Construction</th>
+<th>Subfields</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_2$</td>
+<td>$2$</td>
+<td>$\mathbb{Z}/2\mathbb{Z}$</td>
+<td>none</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_3$</td>
+<td>$3$</td>
+<td>$\mathbb{Z}/3\mathbb{Z}$</td>
+<td>none</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_5$</td>
+<td>$5$</td>
+<td>$\mathbb{Z}/5\mathbb{Z}$</td>
+<td>none</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$</td>
+<td>$p$</td>
+<td>$\mathbb{Z}/p\mathbb{Z}$</td>
+<td>none: the prime field is minimal</td>
+<td><em>Finite Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>A prime field has no proper subfield, and every field of characteristic $p$ contains a copy of $\mathbb{F}_p$ as its prime subfield. The residue ring $\mathbb{Z}/n\mathbb{Z}$ is a field exactly when $n$ is prime, by the criterion of <em>Modular Arithmetic and the Ring of Residues</em>.</p>
+<h2 id="the-fields-of-prime-power-order">The Fields of Prime Power Order</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Order</th>
+<th>Construction</th>
+<th>Subfields</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_4$</td>
+<td>$4$</td>
+<td>$\mathbb{F}_2[x]/(x^2 + x + 1)$</td>
+<td>$\mathbb{F}_2$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_8$</td>
+<td>$8$</td>
+<td>$\mathbb{F}_2[x]/(x^3 + x + 1)$</td>
+<td>$\mathbb{F}_2$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_9$</td>
+<td>$9$</td>
+<td>$\mathbb{F}_3[x]/(x^2 + 1)$</td>
+<td>$\mathbb{F}_3$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{16}$</td>
+<td>$16$</td>
+<td>$\mathbb{F}_2[x]/(x^4 + x + 1)$</td>
+<td>$\mathbb{F}_2$, $\mathbb{F}_4$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{27}$</td>
+<td>$27$</td>
+<td>$\mathbb{F}_3[x]/(x^3 + 2x + 1)$</td>
+<td>$\mathbb{F}_3$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{p^n}$</td>
+<td>$q = p^n$</td>
+<td>$\mathbb{F}_p[x]/(f)$, $f$ irreducible of degree $n$</td>
+<td>the $\mathbb{F}_{p^m}$ for $m \mid n$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{p^m}$</td>
+<td>$p^m$</td>
+<td>the subfield fixed by the Frobenius of order $m$</td>
+<td>the divisors of $m$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The construction depends on an irreducible polynomial, and a different irreducible polynomial of the same degree gives an isomorphic field; this is the uniqueness half of the classification. The additive group of $\mathbb{F}_{p^n}$ is the vector space $\mathbb{F}_p^n$, so the order is $p^n$ and the degree over the prime field is $n$.</p>
+<h2 id="the-subfield-lattice">The Subfield Lattice</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Its subfields</th>
+<th>The rule</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_{p^n}$</td>
+<td>$\mathbb{F}_{p^m}$ for each $m \mid n$</td>
+<td>the subfields correspond to the divisors of the degree</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{p^n}$</td>
+<td>no proper subfield when $n$ is prime</td>
+<td>the only divisors are $1$ and $n$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{16}$</td>
+<td>$\mathbb{F}_2$ and $\mathbb{F}_4$</td>
+<td>$1 \mid 4$ and $2 \mid 4$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{p^n}$</td>
+<td>$\mathbb{F}_{p^m} \subseteq \mathbb{F}_{p^n}$ exactly when $m \mid n$</td>
+<td>the inclusion criterion</td>
+<td><em>Finite Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The lattice of subfields of $\mathbb{F}_{p^n}$ is the lattice of divisors of $n$ under divisibility, and this is the first example of the Galois correspondence. The extension $\mathbb{F}_{p^n}/\mathbb{F}_p$ is Galois and separable, with cyclic Galois group of order $n$.</p>
+<h2 id="the-frobenius-and-the-galois-group">The Frobenius and the Galois Group</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its action</th>
+<th>Its order</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Frobenius $\varphi$ of $\mathbb{F}_{p^n}$</td>
+<td>$\varphi(x) = x^p$</td>
+<td>$n$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>the Galois group $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)$</td>
+<td>cyclic, generated by $\varphi$</td>
+<td>$n$, isomorphic to $\mathbb{Z}/n\mathbb{Z}$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>the fixed field of $\varphi^m$</td>
+<td>$\mathbb{F}_{p^m}$</td>
+<td>the degree of the fixed field is $m$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>the Frobenius on $\overline{\mathbb{F}_p}$</td>
+<td>$x \mapsto x^p$, an automorphism of infinite order</td>
+<td>infinite</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>the Frobenius $x \mapsto x^p$ on any characteristic-$p$ field</td>
+<td>injective</td>
+<td>the identity exactly on $\mathbb{F}_p$</td>
+<td><em>Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The Frobenius is the identity on $\mathbb{F}_p$ and permutes the roots of an irreducible polynomial transitively; the fixed field of $\varphi^m$ is $\mathbb{F}_{p^m}$, which is the reason the subfield criterion is $m \mid n$. The same map on the algebraic closure $\overline{\mathbb{F}_p}$ has infinite order, and the finite fields generated by its orbits are the $\mathbb{F}_{p^n}$.</p>
+<h2 id="the-extensions-between-finite-fields">The Extensions Between Finite Fields</h2>
+<p>Every extension of finite fields is separable and Galois, which is why the subfield lattice is as simple as it is.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Degree</th>
+<th>Galois group</th>
+<th>The Frobenius that generates it</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_{p^n}/\mathbb{F}_p$</td>
+<td>$n$</td>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>$\varphi$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{p^n}/\mathbb{F}_{p^m}$, $m \mid n$</td>
+<td>$n/m$</td>
+<td>$\mathbb{Z}/(n/m)\mathbb{Z}$</td>
+<td>$\varphi^m$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{p^n}/\mathbb{F}_{p^n}$</td>
+<td>$1$</td>
+<td>trivial</td>
+<td>$\varphi^n = \operatorname{id}$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The trace and the norm of a finite extension are the two additive and multiplicative invariants of the extension, and for finite fields the trace is the sum of the Frobenius conjugates and the norm their product; both are recorded in <em>Field Extensions</em>. The extension is generated by a single element, since the multiplicative group is cyclic, so every finite field is a simple extension of every subfield.</p>
+<h2 id="the-multiplicative-group">The Multiplicative Group</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>The multiplicative group</th>
+<th>Order</th>
+<th>A generator</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_2$</td>
+<td>trivial</td>
+<td>$1$</td>
+<td>$1$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_3$</td>
+<td>$\{1, 2\}$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_4$</td>
+<td>cyclic</td>
+<td>$3$</td>
+<td>a root of $x^2 + x + 1$</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_8$</td>
+<td>cyclic</td>
+<td>$7$</td>
+<td>a primitive root</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q$</td>
+<td>cyclic of order $q - 1$</td>
+<td>$q - 1$</td>
+<td>a primitive root</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{F}_p}$</td>
+<td>torsion, the union of the cyclic groups of order $p^n - 1$</td>
+<td>infinite</td>
+<td>—</td>
+<td><em>Finite Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The multiplicative group of a finite field is cyclic, so a primitive root generates it, and the nonzero elements of $\mathbb{F}_q$ are exactly the roots of $x^{q-1} - 1$. The cyclotomic polynomial $\Phi_{q-1}$ therefore describes the primitive roots, and the situation parallels $\mathbb{Q}(\zeta_n)$ with $\zeta_n$ a primitive $n$-th root of unity in <em>Cyclotomic Fields</em>.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not a finite field</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_p((t))$</td>
+<td>infinite: a Laurent series field</td>
+<td><em>Absolute Values, Valuations and Completions</em></td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{F}_p}$</td>
+<td>infinite: the algebraic closure, the union of the finite fields</td>
+<td><em>Finite Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p^n\mathbb{Z}$, $n \geq 2$</td>
+<td>a finite ring of order $p^n$, but not a field: $p$ is a nilpotent</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>a finite ring, not a field: $2 \cdot 3 = 0$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>a finite division ring</td>
+<td>by Wedderburn's little theorem it is a field, so there are no finite skew fields</td>
+<td><em>Division Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the reason the finite fields are exhausted by this list: a finite ring with no zero divisors is commutative by Wedderburn's little theorem, so the finite division rings are exactly the finite fields. The finite fields of characteristic $p$ are also the perfect fields, since the Frobenius is bijective on them.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the finite fields of the corpus with their orders, constructions, subfields, Frobenius and multiplicative groups. The prime fields $\mathbb{F}_p$ are the residue rings $\mathbb{Z}/p\mathbb{Z}$ with no proper subfield; the fields $\mathbb{F}_{p^n}$ are the quotients by an irreducible polynomial of degree $n$, with subfields $\mathbb{F}_{p^m}$ exactly for $m \mid n$; the Frobenius $x \mapsto x^p$ generates the cyclic Galois group of order $n$ and has fixed field $\mathbb{F}_{p^m}$ for the power $m$; and the multiplicative group is cyclic of order $q - 1$. The infinite fields $\mathbb{F}_p((t))$ and $\overline{\mathbb{F}_p}$ and the finite non-fields $\mathbb{Z}/p^n\mathbb{Z}$ and $\mathbb{Z}/6\mathbb{Z}$ are recorded as the objects that fail the definition.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_p$, $\mathbb{F}_q$, $\mathbb{F}_{p^n}$</td>
+<td>The finite field of order $p$, $q$ or $p^n$</td>
+</tr>
+<tr>
+<td>$\overline{\mathbb{F}_p}$</td>
+<td>The algebraic closure of $\mathbb{F}_p$</td>
+</tr>
+<tr>
+<td>$p$, $q$, $n$</td>
+<td>Prime, prime power $q = p^n$, degree</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>The Frobenius automorphism $x \mapsto x^p$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)$</td>
+<td>The cyclic Galois group of order $n$</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q^\times$</td>
+<td>The multiplicative group, cyclic of order $q - 1$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>The residue ring, a field for $n$ prime</td>
+</tr>
+<tr>
+<td>$\Phi_{q-1}$</td>
+<td>The cyclotomic polynomial of the primitive roots</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rudolf Lidl and Harald Niederreiter, <em>Finite Fields</em> (Cambridge University Press, 2nd ed. 1997), for the classification, the subfield lattice and the multiplicative group.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, revised 3rd ed. 2002), for finite fields as Galois extensions with cyclic group generated by the Frobenius.</li>
+<li>Neal Koblitz, <em>A Course in Number Theory and Cryptography</em> (Springer, 2nd ed. 1994), for tables of the small finite fields and their primitive roots.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

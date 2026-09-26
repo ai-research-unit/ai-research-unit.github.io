@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Commutative Domains — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="non-commutative-domains"><strong>Non-Commutative Domains</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the third rung of the non-commutative chain of <em>Rings and Fields</em>, directly above <em>Prime Rings</em>, and it stands after the commutative half of the category, every rung of which is above it. Throughout, $A$ is a ring with $1 \neq 0$ <strong>not assumed commutative</strong>, and the default base of the corpus, the commutative ring, is not the base here; every result below is proved for the general ring, and the places where the commutative case enters are named.</p>
+<p>A <strong>domain</strong> is a ring with $1 \neq 0$ and no zero divisors. The definition is that of the commutative rung <em>Integral Domains</em>, above, with the commutativity hypothesis deleted, and the deletion is the whole content of the article: cancellation becomes one-sided, the left and the right ideal theory cease to mirror one another, and the classes of examples and non-examples change completely. The ring of quaternions, the free algebra, the Weyl algebra and the group ring of an ordered group are the standard non-commutative domains, and the group ring of an arbitrary torsion-free group is conjectured to be one; the matrix ring and the group ring of a finite group are the standard rings with no more than a zero divisor. The article is the rung of the chain at which the two chains meet: the domains that are commutative are exactly the integral domains, and the article states that identification as its last theorem. The Ore condition, which decides whether a domain has a division ring of fractions, and the division rings themselves are <em>Ore Domains and Division Rings of Fractions</em> and <em>Division Rings</em>, below this article in this category.</p>
+<hr />
+<h2 id="domains-and-cancellation">Domains and Cancellation</h2>
+<p><strong>Definition.</strong> A <strong>domain</strong> is a ring $A$ with $1 \neq 0$ in which $ab = 0$ implies $a = 0$ or $b = 0$. A <strong>left zero divisor</strong> is a nonzero $a$ for which there is a nonzero $b$ with $ab = 0$; a <strong>right zero divisor</strong> is a nonzero $a$ for which there is a nonzero $b$ with $ba = 0$. Thus a domain is a ring with $1 \neq 0$ in which there is no left and no right zero divisor.</p>
+<p><strong>Remark.</strong> In the commutative case the two notions of a zero divisor coincide, and this article's definition is that of <em>Integral Domains</em>, above. Without commutativity they differ, and the example of the ring $k\langle x, y\rangle/(yx)$ in the section of non-examples below exhibits an element that is a zero divisor on one side only.</p>
+<p><strong>Proposition (cancellation).</strong> $A$ is a domain if and only if every nonzero element can be cancelled on the left, and if and only if every nonzero element can be cancelled on the right.</p>
+<p><strong>Proof.</strong> If $A$ is a domain and $a \neq 0$, then $ab = ac$ gives $a(b - c) = 0$, hence $b = c$; and $ba = ca$ gives $(b - c)a = 0$, hence $b = c$. Conversely, if every nonzero element can be cancelled on the left and $ab = 0$ with $a \neq 0$, then $ab = a \cdot 0$ gives $b = 0$; the right-handed statement is symmetric. $\square$</p>
+<p><strong>Corollary.</strong> In a domain the only idempotents are $0$ and $1$, and the units $A^{\times}$ form a group.</p>
+<p><strong>Proof.</strong> If $e^2 = e$ then $e(e - 1) = 0$ and $e - 1 = -(1 - e)$, so $e = 0$ or $e = 1$. The units of a ring with identity form a group, as in <em>Rings</em>, above, regardless of the zero divisors. $\square$</p>
+<p><strong>Remark.</strong> A domain need not be a division ring: in $\mathbb{Z}$ the element $2$ is not a unit. The domains in which every nonzero element is invertible are the division rings of <em>Division Rings</em>, below this article in this category, and they form a proper subclass.</p>
+<p><strong>Proposition.</strong> Every domain is prime, and every prime ring is semiprime.</p>
+<p><strong>Proof.</strong> If $a, b \neq 0$ then $ab \neq 0$ and $a \cdot 1 \cdot b \neq 0$ in the criterion of <em>Prime Rings</em>, above; the second statement is the theorem of that article. $\square$</p>
+<p><strong>Corollary.</strong> A domain has no nonzero nilpotent ideal and no nonzero nilpotent element, and every domain is reduced in the sense of the commutative definition of <em>Reduced Rings and the Nilradical</em>, above; the converse of neither statement holds.</p>
+<p><strong>Proof.</strong> The absence of nilpotent ideals is semiprimeness, and a nilpotent element different from zero is a zero divisor. The converses fail: $M_2(F)$ has no nonzero nilpotent ideal and is not a domain, and $k[x,y]/(xy)$ is reduced and is not a domain. $\square$</p>
+<hr />
+<h2 id="the-asymmetry-of-the-one-sided-ideals">The Asymmetry of the One-Sided Ideals</h2>
+<p>In a commutative domain the ideal generated by a nonzero element is the same on the left, the right and the two sides. Without commutativity the three notions come apart, and they come apart even when the element generates the whole ring on both sides.</p>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>principal left ideal</strong> generated by $a$ is $Aa = \{xa : x \in A\}$, the <strong>principal right ideal</strong> is $aA = \{ax : x \in A\}$, and the <strong>principal two-sided ideal</strong> is $AaA = \{\sum_i x_i a y_i : x_i, y_i \in A\}$, as in <em>Rings</em>, above.</p>
+<p><strong>Example.</strong> Let $A = k\langle x_1, x_2\rangle$ be the free algebra of the next section and let $a = x_1$. Then $Ax_1$ consists of the elements whose terms end in $x_1$, $x_1A$ consists of those whose terms begin with $x_1$, and neither is contained in the other; the two-sided ideal $Ax_1A$ consists of the elements in which every word contains $x_1$, and it is not the whole ring. This is the smallest example of a domain in which the left and the right ideal theory differ, and in which the two-sided ideal generated by an element is larger than either one-sided one.</p>
+<p><strong>Example.</strong> Let $A = A_1(k)$ be the Weyl algebra of the next section, with $xy - yx = 1$. Then the two-sided ideal generated by $x$ is the whole ring, since $xy - yx = 1$ lies in it, while the principal left ideal $Ax$ and the principal right ideal $xA$ are proper. So a nonzero element of a domain can generate the whole ring as a two-sided ideal without being a unit, a phenomenon with no commutative analogue.</p>
+<p><strong>Proposition.</strong> In a domain, $Aa = Ab$ if and only if $a = ub$ for a unit $u$; similarly $aA = bA$ if and only if $a = bv$ for a unit $v$.</p>
+<p><strong>Proof.</strong> If $a = b = 0$ the statement is trivial, so let $Aa = Ab \neq 0$. Then $b = xa$ and $a = yb$ for some $x, y \in A$, so $a = yxa$ and $(1 - yx)a = 0$; as $a \neq 0$ and $A$ is a domain, $yx = 1$. Symmetrically $b = xyb$, so $xy = 1$ and $x$ is a unit with inverse $y$. Then $a = yb$ exhibits $a$ as a left multiple of $b$ by a unit, which is what was to be proved. The converse is immediate, and the right-handed statement is symmetric. $\square$</p>
+<p>So divisibility in a domain is governed by one-sided principal ideals, and the relation between $a$ and $b$ by which each is a left multiple of the other is an equivalence relation only when the multipliers are units on both sides. This is the point at which the divisibility theory of <em>Integral Domains</em>, above, stops transferring verbatim, and it is why the commutative chain continues from the domains with gcd in <em>GCD Domains</em>, above, while the non-commutative chain continues with the Ore condition of <em>Ore Domains and Division Rings of Fractions</em>, below this article in this category.</p>
+<hr />
+<h2 id="the-standard-examples">The Standard Examples</h2>
+<h3 id="the-free-algebra">The Free Algebra</h3>
+<p><strong>Definition.</strong> Let $k$ be a field. The <strong>free algebra</strong> $k\langle x_1, x_2\rangle$ is the $k$-vector space with basis the words in the letters $x_1, x_2$, including the empty word, with multiplication the concatenation of words extended bilinearly, and with identity the empty word.</p>
+<p>No menu article owns the free algebra: it is defined here, and the free algebra on any set of generators is defined in the same way. The algebra is the monoid algebra $k[W]$ of the free monoid $W$ on two letters.</p>
+<p><strong>Theorem.</strong> $k\langle x_1, x_2\rangle$ is a domain.</p>
+<p><strong>Proof.</strong> Assign to a word its length and to a nonzero element $f$ the largest length $d(f)$ of a word occurring in it with nonzero coefficient. If $f, g \neq 0$ then the words of length $d(f)$ in $f$ and of length $d(g)$ in $g$ concatenate to words of length $d(f) + d(g)$, and every other product of words has smaller length; since concatenation of words is cancellative, distinct length-maximal words give distinct products, so the coefficient of some word of length $d(f) + d(g)$ in $fg$ is nonzero. Hence $fg \neq 0$. $\square$</p>
+<p><strong>Corollary.</strong> The free algebra is a domain that is not commutative and not a division ring, and the same argument shows that $k[M]$ is a domain for every cancellative monoid $M$, in particular for the free monoid on any set.</p>
+<h3 id="the-weyl-algebra">The Weyl Algebra</h3>
+<p><strong>Definition.</strong> Let $k$ be a field of characteristic zero. The <strong>first Weyl algebra</strong> is</p>
+<p>$$
+A_1(k) = k\langle x, y\rangle/(xy - yx - 1) ,
+$$</p>
+<p>the free algebra on two generators divided by the two-sided ideal generated by $xy - yx - 1$. Its elements are written as polynomials in $x$ and $y$ with the relation $yx = xy - 1$.</p>
+<p><strong>Theorem.</strong> $A_1(k)$ has the basis $\{x^i y^j : i, j \geq 0\}$ over $k$, and is a domain.</p>
+<p><strong>Proof.</strong> The relation $yx = xy - 1$ moves every $y$ to the right of every $x$ at the cost of lower-order terms, so the monomials $x^i y^j$ span $A_1(k)$. To see that they are independent and that the ring is a domain, filter $A_1(k)$ by the power of $y$: the associated graded ring is the polynomial ring $k[x, \xi]$ in two commuting indeterminates, which is a domain, and a filtered ring whose associated graded ring is a domain is a domain. $\square$</p>
+<p><strong>Example.</strong> The Weyl algebra is the standard example of a domain that is not commutative and that satisfies the Ore condition of <em>Ore Domains and Division Rings of Fractions</em>, below this article in this category, where its division ring of fractions, the first Weyl field, is described in full. The same algebra shows the asymmetry above, since the two-sided ideal it generates by $x$ is the whole ring while its principal one-sided ideals are proper.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p><strong>Definition.</strong> The <strong>quaternions</strong> $\mathbb{H}$ form the four-dimensional real algebra with basis $1, i, j, k$ subject to</p>
+<p>$$
+i^2 = j^2 = k^2 = ijk = -1 .
+$$</p>
+<p>The definition is the classical one, and the corpus writes the elements in the form $a + bi + cj + dk$ with $a, b, c, d \in \mathbb{R}$.</p>
+<p><strong>Theorem.</strong> $\mathbb{H}$ is a non-commutative domain, and every nonzero element of $\mathbb{H}$ is a unit.</p>
+<p><strong>Proof.</strong> The conjugate of $q = a + bi + cj + dk$ is $\bar q = a - bi - cj - dk$, and $q \bar q = a^2 + b^2 + c^2 + d^2$ is a positive real number for $q \neq 0$; hence $q^{-1} = \bar q/(q\bar q)$ lies in $\mathbb{H}$ and every nonzero element is a unit. A ring in which every nonzero element is a unit has no zero divisors, since $ab = 0$ with $a \neq 0$ gives $b = a^{-1}ab = 0$. Finally $ij = k$ and $ji = -k$ show that $\mathbb{H}$ is not commutative. $\square$</p>
+<p><strong>Corollary.</strong> $\mathbb{H}$ is a division ring in the sense of <em>Division Rings</em>, below this article in this category, and it is a domain; the two classes are not the same, since $\mathbb{Z}$ is a domain and not a division ring.</p>
+<h3 id="group-rings-of-torsion-free-groups">Group Rings of Torsion-Free Groups</h3>
+<p><strong>Definition.</strong> The <strong>group ring</strong> $k[G]$ of a group $G$ over a field $k$ is the $k$-vector space with basis $G$ and multiplication the group multiplication extended bilinearly; it is the monoid algebra $k[G]$ of the underlying monoid.</p>
+<p><strong>Theorem.</strong> Let $G$ be an <strong>ordered group</strong>, that is a group carrying a total order invariant under multiplication on both sides, and let $k$ be a field. Then $k[G]$ is a domain.</p>
+<p><strong>Proof.</strong> The leading-term argument of the free algebra above applies verbatim. Write a nonzero $u \in k[G]$ in the form $\sum_g \lambda_g g$ with finitely many $\lambda_g \neq 0$, and let its leading term be $\lambda_{g_0} g_0$ with $g_0$ the largest element of the support. If $h_0$ is the leading index of a second nonzero element $v$, then $g h \leq g_0 h \leq g_0 h_0$ for every $g$ in the support of $u$ and every $h$ in the support of $v$, by the two invariances of the order, with equality only for $g = g_0$ and $h = h_0$; hence the leading term of $u v$ is $\lambda_{g_0}\mu_{h_0} g_0 h_0 \neq 0$ and $u v \neq 0$. $\square$</p>
+<p><strong>Remark (the torsion-free case).</strong> That $k[G]$ is a domain for <em>every</em> torsion-free group $G$ is Kaplansky's zero divisor conjecture, and it is open; it is known for orderable groups by the theorem above, for locally indicable groups by the Malcev–Neumann construction of <em>Ore Domains and Division Rings of Fractions</em>, below this article in this category, which exhibits a division ring containing $k[G]$, and more generally for elementary amenable groups. The easy direction is unconditional: torsion in $G$ produces zero divisors, by the example below, so $G$ torsion-free is necessary.</p>
+<p><strong>Example (a group ring that is not a domain).</strong> If $G$ is finite of order $n > 1$ and $g \neq 1$, then</p>
+<p>$$
+(1 - g)(1 + g + g^2 + \cdots + g^{n-1}) = 1 - g^n = 0 ,
+$$</p>
+<p>with both factors nonzero; so $k[G]$ is a domain only when $G$ is trivial in the finite case, and torsion in $G$ produces zero divisors in this way.</p>
+<hr />
+<h2 id="non-examples">Non-Examples</h2>
+<p><strong>Example ($M_2(F)$).</strong> The matrix ring has $E_{11}E_{22} = 0$ with both factors nonzero: it is not a domain, for every $n \geq 2$. It is prime and semiprime, by <em>Prime Rings</em>, above, so neither condition suffices for a domain.</p>
+<p><strong>Example ($\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z} \times \mathbb{Z}$).</strong> The ring $\mathbb{Z}/4\mathbb{Z}$ has $2 \cdot 2 = 0$ with $2 \neq 0$; the ring $\mathbb{Z} \times \mathbb{Z}$ has $(1,0)(0,1) = 0$. Both are commutative and neither is a domain.</p>
+<p><strong>Example (a domain that is not a principal ideal domain).</strong> The ring $\mathbb{Z}[x]$ is a commutative domain and is not principal, by <em>Unique Factorisation Domains</em> and <em>Principal Ideal Domains</em>, above; the example is recorded here because it shows that the domain condition alone imposes nothing on the ideals.</p>
+<p><strong>Example (a right zero divisor that is not a left zero divisor).</strong> Let $A = k\langle x, y\rangle/(yx)$, the free algebra on two generators divided by the two-sided ideal generated by $yx$. The words not containing $yx$ as a consecutive subword, namely the words $x^c y^a$ with $a, c \geq 0$, form a basis of $A$, since the ideal $(yx)$ is spanned by the words that do contain $yx$. If $b = \sum_{c,a} \lambda_{ca} x^c y^a \neq 0$ is written in this basis, then $xb = \sum_{c,a} \lambda_{ca} x^{c+1} y^a$ is a combination of distinct basis words with the coefficients $\lambda_{ca}$, so $xb \neq 0$: the element $x$ is not a left zero divisor. On the other hand $yx = 0$ with $y \neq 0$ exhibits $x$ as a right zero divisor. Symmetrically $y$ is a left zero divisor, since $yx = 0$, and it is not a right zero divisor, since $by = \sum_{c,a} \lambda_{ca} x^c y^{a+1}$ is again a combination of distinct basis words with the coefficients $\lambda_{ca}$, so $by \neq 0$ for $b \neq 0$. So the two one-sided notions of a zero divisor are different, and a domain is characterised by excluding both.</p>
+<p><strong>Proposition.</strong> Let $A$ be a finite-dimensional algebra over a field $k$, with $1 \neq 0$. If $A$ is a domain then $A$ is a division ring.</p>
+<p><strong>Proof.</strong> Let $a \neq 0$ and let $x \mapsto ax$ be the left multiplication map. If $ax = 0$ then $x = 0$, since $A$ is a domain, so the map is injective; a $k$-linear injective map of a finite-dimensional space to itself is surjective, so there is $x$ with $ax = 1$. Hence every nonzero element has a right inverse, and the symmetric argument gives a left inverse; a ring element with both is a unit. $\square$</p>
+<p><strong>Corollary.</strong> In a finite-dimensional algebra over a field the conditions of being a domain, of having no left zero divisor, of having no right zero divisor and of being a division ring coincide; the quaternions $\mathbb{H}$ are the standard example, and the general division rings, which need not be finite-dimensional over their centres, are <em>Division Rings</em>, below this article in this category.</p>
+<p><strong>Remark.</strong> The free algebra $k\langle x_1, x_2\rangle$ is the standard example of a domain that fails the Ore condition, so the construction of a division ring of fractions in the manner of the commutative fraction field is not available for it; the condition itself is the subject of <em>Ore Domains and Division Rings of Fractions</em>, below this article in this category, and is not anticipated here.</p>
+<hr />
+<h2 id="the-commutative-case">The Commutative Case</h2>
+<p><strong>Theorem.</strong> A domain $A$ is commutative if and only if it is an integral domain, and the commutative domains are exactly the integral domains of <em>Integral Domains</em>, above.</p>
+<p><strong>Proof.</strong> An integral domain is a commutative ring with $1 \neq 0$ and no zero divisors, which is exactly a commutative domain in the sense of this article. $\square$</p>
+<p><strong>Remark.</strong> The corpus uses the two words deliberately: <em>domain</em> is the ring of this article, in which commutativity is not assumed, and <em>integral domain</em> is the cell of the intersection with the commutative chain, the base of <em>GCD Domains</em> and of the four rungs above it. Every theorem of <em>Integral Domains</em>, <em>GCD Domains</em>, <em>Bézout Domains</em>, <em>Unique Factorisation Domains</em>, <em>Principal Ideal Domains</em> and <em>Euclidean Domains</em>, above, is a theorem about commutative domains, and none of them survives the deletion of commutativity without a new hypothesis; the chain of this half of the category supplies those hypotheses, one rung at a time.</p>
+<p><strong>Corollary.</strong> The centre $Z(A)$ of a domain is an integral domain.</p>
+<p><strong>Proof.</strong> A domain is prime, by the proposition above, so the centre has no zero divisors by the proposition on the centre in <em>Prime Rings</em>, above. $\square$</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A domain is a ring $A$ with $1 \neq 0$ and no zero divisors, equivalently one in which every nonzero element is cancellable on the left, equivalently on the right. A domain is prime and hence semiprime, has no nonzero nilpotent element or nilpotent ideal, and has only $0$ and $1$ as idempotents; it need not be a division ring, and it need not be commutative. Divisibility in a domain is governed by one-sided principal ideals, $Aa = Ab$ exactly when $a$ and $b$ differ by a unit, and the left, the right and the two-sided ideal generated by one element differ in general — the free algebra and the Weyl algebra show all of this, and the Weyl algebra even has a nonzero element generating the whole ring as a two-sided ideal. The standard examples are the quaternions, the free algebra $k\langle x_1, x_2\rangle$, the Weyl algebra $A_1(k)$ and the group ring of an ordered group, the last conjecturally for every torsion-free group; the standard non-examples are $M_n(F)$ for $n \geq 2$, the group ring of a finite group of order greater than one, $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z} \times \mathbb{Z}$. The domains that are commutative are exactly the integral domains.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>A ring with $1 \neq 0$, not assumed commutative; the base of this article</td>
+</tr>
+<tr>
+<td>domain</td>
+<td>A ring with $1 \neq 0$ and no zero divisors</td>
+</tr>
+<tr>
+<td>left/right zero divisor</td>
+<td>A nonzero $a$ with $ab = 0$ for some nonzero $b$; respectively with $ba = 0$</td>
+</tr>
+<tr>
+<td>$A^{\times}$</td>
+<td>The group of units of $A$</td>
+</tr>
+<tr>
+<td>$Aa$, $aA$, $AaA$</td>
+<td>The principal left, right and two-sided ideal generated by $a$</td>
+</tr>
+<tr>
+<td>$k\langle x_1, x_2\rangle$</td>
+<td>The free algebra on two generators: the monoid algebra of the free monoid</td>
+</tr>
+<tr>
+<td>$k[M]$</td>
+<td>The monoid algebra of a monoid $M$, a domain when $M$ is cancellative</td>
+</tr>
+<tr>
+<td>$A_1(k)$</td>
+<td>The first Weyl algebra $k\langle x, y\rangle/(xy - yx - 1)$, with basis $x^i y^j$, a domain</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The quaternions, $a + bi + cj + dk$ with $i^2 = j^2 = k^2 = ijk = -1$</td>
+</tr>
+<tr>
+<td>$k[G]$</td>
+<td>The group ring of a group $G$ over a field $k$, a domain when $G$ is ordered and conjecturally so when $G$ is torsion-free</td>
+</tr>
+<tr>
+<td>$M_n(F)$, $E_{ij}$</td>
+<td>The matrix ring, not a domain for $n \geq 2$</td>
+</tr>
+<tr>
+<td>$k\langle x,y\rangle/(yx)$</td>
+<td>A ring whose element $x$ is a right and not a left zero divisor</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>The centre of $A$, an integral domain when $A$ is a domain</td>
+</tr>
+<tr>
+<td>integral domain</td>
+<td>A commutative domain, of <em>Integral Domains</em>, above</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>P. M. Cohn, <em>Free Rings and Their Relations</em> (Academic Press, 2nd ed. 1985), for free algebras, free ideal rings and the one-sided ideal theory of domains.</li>
+<li>K. R. Goodearl and R. B. Warfield, <em>An Introduction to Noncommutative Noetherian Rings</em> (Cambridge University Press, 2nd ed. 2004), for domains, Ore conditions and the Weyl algebra.</li>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for domains, their centres and the chain of ring classes.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the elementary theory of domains and the standard examples.</li>
+<li>D. S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the zero divisor problem for group rings, the classes of torsion-free groups for which the group ring is known to be a domain, and the zero divisors produced by torsion.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

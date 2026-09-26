@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Integral Transforms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-integral-transforms"><strong>List of Integral Transforms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the integral transforms the corpus constructs and inverts. An integral transform is an operation that carries a function to a new function by integrating it against a kernel, and a row below names one transform, records the kernel that defines it and the inversion theorem that recovers the function, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The transforms are grouped by the family that introduces them: the Fourier transforms, on the line, on the circle, on a finite abelian group and on a locally compact abelian group; the Laplace and Mellin transforms of a half-line and of a multiplicative group; the singular and geometric transforms — the Hilbert and Riesz transforms, the Radon, Hankel and wavelet transforms; and the transforms attached to a group representation, among them the Gelfand and spherical transforms. The rows that record the boundary of the theory — a transform that does not converge absolutely, an inversion that needs a summability method, a kernel that fails the admissibility condition — stand beside the transforms as non-examples.</p>
+<h2 id="the-fourier-family">The Fourier Family</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its kernel and its inversion theorem</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Fourier transform on $\mathbb R^n$</td>
+<td>kernel $e^{-2\pi i\langle x,\xi\rangle}$; inversion $\hat f \mapsto f$ under $f \in L^1$ with $\hat f \in L^1$, and the $L^2$ form by Plancherel</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>the Fourier series on the circle</td>
+<td>kernel $e^{in\theta}$; inversion by the convergence of the partial sums, and by the Fejér and Cesàro means</td>
+<td><em>Real Harmonic Analysis</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
+</tr>
+<tr>
+<td>the Fourier transform on a finite abelian group</td>
+<td>the characters as kernel; discrete inversion by the orthogonality relations</td>
+<td><em>Harmonic Analysis on Groups</em></td>
+</tr>
+<tr>
+<td>the Fourier transform on a locally compact abelian group</td>
+<td>the characters of $\hat G$ as kernel; inversion and Plancherel for the Haar measure</td>
+<td><em>Harmonic Analysis on Groups</em></td>
+</tr>
+<tr>
+<td>the Fourier transform on a compact group</td>
+<td>the matrix coefficients of the irreducible representations as kernel; inversion by the Peter–Weyl theorem</td>
+<td><em>Analysis on Compact Groups</em></td>
+</tr>
+<tr>
+<td>the Fourier transform on the adeles</td>
+<td>the additive characters as kernel; inversion and the Poisson summation formula</td>
+<td><em>Adelic Analysis</em></td>
+</tr>
+<tr>
+<td>the Fourier transform on a hypercomplex system</td>
+<td>the Fourier kernel of the system; inversion for the complex, quaternion, split-complex and dual-number planes</td>
+<td><em>Harmonic Analysis over Hypercomplex Systems</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-laplace-and-mellin-family">The Laplace and Mellin Family</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its kernel and its inversion theorem</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Laplace transform</td>
+<td>kernel $e^{-st}$; inversion by the Bromwich integral, and the resolvent form $R(\lambda,A) = \int_0^\infty e^{-\lambda t}T(t)\,dt$</td>
+<td><em>Semigroups and Evolution Equations</em>; <em>Split-Complex Harmonic Analysis</em>; <em>Markov Chains and Processes</em></td>
+</tr>
+<tr>
+<td>the Fourier–Stieltjes transform $\hat\mu(\chi) = \int_G\overline{\chi(x)}\,d\mu(x)$</td>
+<td>the transform of a finite measure on a group, recovering the classical transform for $G = \mathbb R^n$; inversion by Bochner's theorem and the uniqueness of the transform</td>
+<td><em>Harmonic Analysis on Groups</em>; <em>Noncommutative Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Mellin transform</td>
+<td>kernel $x^{s-1}$; inversion on a vertical line, and its identification with the Fourier transform in logarithmic coordinates</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Mellin convolution and its inversion</td>
+<td>the multiplicative convolution and its transform rule $\mathcal M(f \star g) = \mathcal M f\,\mathcal M g$</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-singular-and-geometric-transforms">The Singular and Geometric Transforms</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its kernel and its inversion theorem</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Hilbert transform on the line</td>
+<td>kernel $1/(\pi(x-y))$; inversion by $H^2 = -I$ and the boundedness on $L^p$, $1<p<\infty$</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em>; <em>Real Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Riesz transforms $R_j$</td>
+<td>symbols $-i\xi_j/\lvert\xi\rvert$; the model singular integrals of the Calderón–Zygmund theory, of which the Hilbert transform is the case $n=1$</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em>; <em>Real Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Radon transform</td>
+<td>integration over hyperplanes; inversion by the Fourier slice theorem and filtered back-projection</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Hankel transform</td>
+<td>kernel $J_\nu(\rho r)r$; inversion by the Hankel inversion theorem, the radial part of the Fourier transform</td>
+<td><em>Octonion Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the wavelet transform</td>
+<td>kernel $\psi((t-b)/a)/a$; inversion by the admissibility condition $\int \lvert\hat\psi(\omega)\rvert^2/\lvert\omega\rvert\,d\omega < \infty$</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the wavelet transform on a hypercomplex system</td>
+<td>the same kernel with the system's scalings; inversion by the resolution of the identity</td>
+<td><em>Biquaternion Continuous Harmonic Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="transforms-attached-to-a-group-or-an-algebra">Transforms Attached to a Group or an Algebra</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its kernel and its inversion theorem</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Gelfand transform</td>
+<td>the characters of a commutative Banach algebra as kernel; inversion by the Gelfand representation, an isomorphism for a commutative C*-algebra</td>
+<td><em>Harmonic Analysis on Groups</em>; <em>Holomorphic Functional Calculus</em></td>
+</tr>
+<tr>
+<td>the spherical transform on a symmetric space</td>
+<td>the spherical functions as kernel; inversion by the Plancherel theorem for the spherical transform</td>
+<td><em>The Plancherel Theorem</em></td>
+</tr>
+<tr>
+<td>the Fourier transform of a representation</td>
+<td>the matrix coefficients as kernel; the Plancherel decomposition of a unitary representation</td>
+<td><em>Noncommutative Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the character of a representation</td>
+<td>the trace of the representation, the degenerate kernel that inverts the decomposition</td>
+<td><em>Analysis on Compact Groups</em></td>
+</tr>
+<tr>
+<td>the Wigner transform of a state</td>
+<td>the matrix-element kernel $W(x,\xi)$ on phase space; its semiclassical defect measure is positive, carried by the energy surface and invariant under the Hamiltonian flow; inversion is the Weyl quantisation $\operatorname{Op}^w_\hbar$</td>
+<td><em>Semiclassical Analysis</em>; <em>Pseudodifferential Operators</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="transforms-that-do-not-satisfy-their-inversion-theorem">Transforms That Do Not Satisfy Their Inversion Theorem</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Fourier transform of a function outside $L^1 \cup L^2$</td>
+<td>the integral does not converge; only the tempered-distribution definition applies</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em>; <em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the Fourier transform of a function with a singularity</td>
+<td>the integral converges only as an improper integral or a principal value; otherwise the transform is defined as a tempered distribution</td>
+<td><em>Fourier Analysis on Euclidean Spaces</em>; <em>Distributions and Fundamental Solutions</em></td>
+</tr>
+<tr>
+<td>the Laplace transform with a divergent defining integral</td>
+<td>the transform exists only in the half-plane $\operatorname{Re}\lambda > \omega_0$ of convergence of the defining integral, and the inversion is confined to it</td>
+<td><em>Semigroups and Evolution Equations</em></td>
+</tr>
+<tr>
+<td>a wavelet whose admissibility integral diverges</td>
+<td>the transform has no inversion; the admissibility condition is the necessary hypothesis</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Radon transform of a function that is not summable over the lines</td>
+<td>the transform is not defined without a decay hypothesis on the measured set</td>
+<td><em>Complex Harmonic Analysis</em></td>
+</tr>
+<tr>
+<td>the Hilbert transform on $L^1$</td>
+<td>the strong-type bound fails at $p = 1$; only the weak-type $(1,1)$ bound holds</td>
+<td><em>Real Harmonic Analysis</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This list gathers the integral transforms of the corpus: the Fourier transforms of the line, the circle, the finite, locally compact and compact groups and the adeles; the Laplace, Fourier–Stieltjes and Mellin transforms of the half-line and the multiplicative group; the singular and geometric transforms of Hilbert, Riesz, Radon, Hankel and wavelet type; and the Gelfand, spherical, representation-theoretic and Wigner transforms attached to a group or an algebra. Each row records the kernel and the inversion theorem, and the closing table records the cases in which the defining integral or the inversion fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The objects are named rather than denoted; the symbols in the tables are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\hat f$, $\mathcal F f$</td>
+<td>the Fourier transform of $f$</td>
+</tr>
+<tr>
+<td>$\hat\mu$</td>
+<td>the Fourier–Stieltjes transform of a measure</td>
+</tr>
+<tr>
+<td>$\varphi_X$, $\chi$</td>
+<td>a character, and a characteristic function in the probabilistic use</td>
+</tr>
+<tr>
+<td>$R(\lambda,A)$</td>
+<td>the resolvent, the Laplace transform of a semigroup</td>
+</tr>
+<tr>
+<td>$\mathcal M f$, $f \star g$</td>
+<td>the Mellin transform and the multiplicative convolution</td>
+</tr>
+<tr>
+<td>$Hf$, $R_j$</td>
+<td>the Hilbert transform and the Riesz transforms</td>
+</tr>
+<tr>
+<td>$Rf$</td>
+<td>the Radon transform</td>
+</tr>
+<tr>
+<td>$W_\psi f$</td>
+<td>the wavelet transform</td>
+</tr>
+<tr>
+<td>$J_\nu$</td>
+<td>the Bessel function of order $\nu$, the Hankel kernel</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton University Press, 1971), for the Fourier, Hilbert and Radon transforms with their inversion theorems.</li>
+<li>Sigurdur Helgason, <em>The Radon Transform</em> (Birkhäuser, 2nd ed. 1999), for the Radon transform and the spherical transform on symmetric spaces.</li>
+<li>Alexander D. Poularikas, ed., <em>The Transforms and Applications Handbook</em> (CRC Press, 3rd ed. 2010), for the catalogue of the classical integral transforms with their kernels and inversion formulas.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

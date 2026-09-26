@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyperbolic Dynamics and Anosov Systems — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hyperbolic-dynamics-and-anosov-systems"><strong>Hyperbolic Dynamics and Anosov Systems</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The qualitative theory of a smooth dynamical system becomes rigid where the derivative is never neutral: on a set where the tangent space splits into a direction along which the map contracts, a direction along which it expands, and — for a flow — the direction of the motion itself, and where the contraction and expansion are uniform in the orbit, the dynamics is a topological Markov chain encoded by a finite directed graph, the periodic points are dense and grow at a rate given by the topological entropy, and there is a unique invariant measure of maximal entropy whose conditional measures along the expanding directions are absolutely continuous. A compact invariant set carrying such a splitting is a <strong>hyperbolic set</strong>, and a system that is hyperbolic on the whole manifold is an <strong>Anosov system</strong>; the geodesic flow of a compact manifold of negative curvature is the classical Anosov flow, and it is the source of the theory. The uniform hyperbolicity is the exact condition under which the derivative, which is not invertible in the sense of a single estimate, nonetheless has an invertible action on the two sub-bundles, and the whole theory — the invariant manifolds, the shadowing, the spectral decomposition, the Markov partitions, the periodic orbit counting and the thermodynamic formalism — is built from that one estimate.</p>
+<p>The article begins with hyperbolic sets: the invariant splitting, the equivalent cone criterion, the stable and unstable manifolds of a hyperbolic set and the local product structure, the shadowing lemma of Anosov and Bowen and the specification property. It then treats the spectral decomposition of Axiom A systems, the density of the periodic points and the <strong>Markov partitions</strong>, whose symbolic model is a subshift of finite type with a finite-to-one semiconjugacy. The <strong>Anosov systems</strong> follow: the Anosov diffeomorphisms, with the linear automorphisms of the torus and the infranilmanifolds as the known examples and the classification conjecture, the structural stability of Anosov, the Anosov flows with the geodesic flow of a negatively curved manifold as the model, and the suspension construction. The ergodic theory of the hyperbolic systems is treated last: the <strong>Bowen–Ruelle</strong> (SRB) measure, the unique measure of maximal entropy, the pressure and the Gibbs property, Pesin's formula for the entropy as the sum of the positive Lyapunov exponents, the equidistribution of the periodic orbits, and the ergodicity and mixing of the Anosov systems, with the Hopf argument cited in the form in which it is used for the geodesic flow.</p>
+<p>The smooth manifolds, the vector fields, the flows, the linearisation and the Poincaré return map are those of <em>Smooth Manifolds and Differential Geometry</em> and <em>Smooth Dynamical Systems</em>; the topological dynamics, the recurrence, the minimality and the topological entropy are those of <em>Topological Dynamics</em>; the measure-preserving transformations, the ergodicity, the mixing, the entropy and the ergodic theorems are those of <em>Ergodic Theory</em>. The Oseledets multiplicative ergodic theorem and its random version are quoted as standard and are developed. The geodesic flow and the curvature are those of <em>Curvature and Geodesics</em>, <em>Riemannian Geometry</em>; the symbolic models, the bifurcations and the chaotic attractors lie outside this article.</p>
+<p>No physics is invoked.</p>
+<h2 id="hyperbolic-sets">Hyperbolic Sets</h2>
+<h3 id="the-splitting-and-the-cone-criterion">The Splitting and the Cone Criterion</h3>
+<p><strong>Definition.</strong> Let $M$ be a smooth Riemannian manifold, $f:M\to M$ a diffeomorphism and $\Lambda \subseteq M$ a compact $f$-invariant set. The set is <strong>hyperbolic</strong> for $f$ if there is a $Df$-invariant continuous splitting</p>
+<p>$$
+T_xM=E^s_x\oplus E^u_x \qquad (x \in\Lambda), \qquad Df(E^s_x)=E^s_{f(x)}, \qquad Df(E^u_x)=E^u_{f(x)},
+$$</p>
+<p>and constants $C \ge1$, $0<\lambda<1$, such that for all $n \ge0$ and $x \in\Lambda$,</p>
+<p>$$
+\|Df^n|_{E^s_x}\|\le C\lambda^n, \qquad \|Df^{-n}|_{E^u_x}\|\le C\lambda^n .
+$$</p>
+<p>The set $\Lambda$ is a <strong>hyperbolic set</strong> of the diffeomorphism; when $\Lambda=M$ and $M$ is compact, $f$ is an <strong>Anosov diffeomorphism</strong>. For a flow $\varphi_t$ generated by $X$, a compact invariant set $\Lambda$ is <strong>hyperbolic</strong> if there is a splitting $T_xM=E^s_x\oplus E^0_x\oplus E^u_x$ with $E^0_x$ spanned by $X(x)$ and with the contraction and expansion estimates for $D\varphi_t$ on $E^s$ and $E^u$ for $t \ge0$; a flow hyperbolic on the whole manifold is an <strong>Anosov flow</strong>.</p>
+<p><strong>Theorem (adapted metric).</strong> Let $\Lambda$ be a hyperbolic set for $f$. Then there is a Riemannian metric on a neighbourhood of $\Lambda$, equivalent to the given one, in which the constants are $C=1$: for all $x \in\Lambda$ and $n \ge0$,</p>
+<p>$$
+\|Df^n|_{E^s_x}\|\le\lambda^n, \qquad \|Df^{-n}|_{E^u_x}\|\le\lambda^n .
+$$</p>
+<p><em>Proof (sketch).</em> One averages the norm of $Df^n$ on $E^s$ and of $Df^{-n}$ on $E^u$ over $n$ with weights $\lambda^{-2n}$, using the uniform contraction and expansion and the compactness of $\Lambda$; the averaged metric is equivalent to the original one because the sums converge, and it has the stated property by construction. $\square$</p>
+<p><strong>Theorem (cone criterion).</strong> Let $\Lambda$ be a compact $f$-invariant set and suppose there are continuous families of cones $K^s_x,K^u_x \subseteq T_xM$ with $K^s_x\cap K^u_x=\{0\}$, $K^s_x\oplus K^u_x=T_xM$, carried into themselves by $Df$ respectively $Df^{-1}$, and uniformly contracted respectively expanded. Then $\Lambda$ is hyperbolic for $f$, with the splitting obtained as the intersection of the iterated cones or as the limits of the iterated subspaces; conversely a hyperbolic set admits such cone fields.</p>
+<p><em>Proof (sketch).</em> The invariance of the cones under $Df$ and $Df^{-1}$ and their uniform contraction give, by iteration, the limits $E^s_x=\bigcap_nDf^{-n}K^s_{f^nx}$ and $E^u_x=\bigcap_nDf^nK^u_{f^{-n}x}$, which are the required invariant subspaces; the estimates follow from the contraction of the cones. The converse is obtained from the estimates by taking cones of aperture depending on the constants. $\square$</p>
+<p><strong>Example.</strong> (i) A hyperbolic fixed point of a diffeomorphism is a hyperbolic set consisting of one point, with $E^s,E^u$ the stable and unstable subspaces of the linearisation; a hyperbolic periodic orbit is hyperbolic with the splitting transported along it.</p>
+<p>(ii) The <strong>Smale horseshoe</strong> is a diffeomorphism of the disc with a hyperbolic invariant Cantor set $\Lambda$; the splitting is the vertical and horizontal directions, the contraction and expansion are uniform, and the restriction to $\Lambda$ is conjugate to the full two-sided two-shift .</p>
+<p>(iii) The <strong>solenoid</strong> is the inverse limit of the expanding circle map $z\mapsto z^2$; it is a hyperbolic attractor of a diffeomorphism of the solid torus with a one-dimensional expanding direction, and it is not a manifold.</p>
+<h3 id="stable-and-unstable-manifolds-of-a-hyperbolic-set">Stable and Unstable Manifolds of a Hyperbolic Set</h3>
+<p><strong>Theorem (Hadamard–Perron, stable manifold theorem).</strong> Let $\Lambda$ be a hyperbolic set for a $C^r$ diffeomorphism $f$, $r \ge1$. Then for every $x \in\Lambda$ there are injectively immersed $C^r$ submanifolds $W^s(x)$ and $W^u(x)$, tangent at $x$ to $E^s_x$ and $E^u_x$, invariant under $f$ in the sense that $f(W^s(x))\subseteq W^s(f(x))$ and $f(W^u(x))\supseteq W^u(f(x))$, and such that</p>
+<p>$$
+W^s(x)=\{y \in M:\operatorname{dist}(f^n y,f^nx)\to0 \ (n\to+\infty)\}, \qquad
+W^u(x)=\{y:\operatorname{dist}(f^{-n}y,f^{-n}x)\to0 \ (n\to+\infty)\},
+$$</p>
+<p>for $y$ in a fixed neighbourhood of $\Lambda$; the local manifolds $W^s_\epsilon(x),W^u_\epsilon(x)$ depend continuously on $x$ in the $C^1$ topology and their tangent spaces are Hölder continuous in $x$. If $\Lambda$ is <strong>locally maximal</strong> — the maximal invariant set of a neighbourhood — then for small $\epsilon$ and for $x,y \in\Lambda$ close, the intersection $W^s_\epsilon(x)\cap W^u_\epsilon(y)$ consists of a single point of $\Lambda$, which is the <strong>local product structure</strong> of $\Lambda$.</p>
+<p><em>Proof (sketch).</em> The graph transform method: one represents the candidate manifold as the graph of a Lipschitz (then $C^1$, then $C^r$) section over $E^s_x$ and observes that $f$ acts on the space of such sections by a contraction in the $C^0$ and Hölder norms, with contraction constant $\lambda$; the fixed point of the transform is $W^s_\epsilon(x)$, and the unstable manifold is obtained by applying the same argument to $f^{-1}$. The local product structure is the implicit function theorem applied to the transversality of $W^s_\epsilon(x)$ and $W^u_\epsilon(y)$, which is uniform in $\Lambda$. The details are the standard construction of Hadamard, Perron, Anosov and Hirsch–Pugh–Shub. $\square$</p>
+<p><strong>Corollary (expansivity).</strong> A hyperbolic set is expansive: there is $\epsilon>0$ such that if $x,y \in\Lambda$ satisfy $\operatorname{dist}(f^nx,f^ny)<\epsilon$ for all $n \in\mathbb{Z}$, then $x=y$.</p>
+<h3 id="shadowing-and-specification">Shadowing and Specification</h3>
+<p><strong>Definition.</strong> Let $\delta>0$. A <strong>$\delta$-pseudo-orbit</strong> of $f$ is a sequence $(x_n)_{n \in\mathbb{Z}}$ with $\operatorname{dist}(f(x_n),x_{n+1})<\delta$ for all $n$; a point $x$ <strong>$\epsilon$-shadows</strong> the pseudo-orbit if $\operatorname{dist}(f^nx,x_n)<\epsilon$ for all $n$.</p>
+<p><strong>Theorem (shadowing lemma; Anosov–Bowen).</strong> Let $\Lambda$ be a hyperbolic set for a diffeomorphism $f$. For every $\epsilon>0$ there is $\delta>0$ such that every $\delta$-pseudo-orbit in $\Lambda$ is $\epsilon$-shadowed by a genuine orbit of $f$, that is, there is $x \in M$ with $\operatorname{dist}(f^nx,x_n)<\epsilon$ for all $n$; when $\Lambda$ is locally maximal the shadowing point may be taken in $\Lambda$.</p>
+<p><em>Proof (sketch).</em> One solves the equation $x_{n+1}=f(x_n)$ approximately by a fixed point argument: the map on the space of sequences $\{y_n\}$ with $\operatorname{dist}(y_n,x_n)<\epsilon$ given by the Newton step with the inverse of $Df$ on $E^s$ and of $Df^{-1}$ on $E^u$ is a contraction in the sup norm, because the derivative is invertible in the hyperbolic directions with uniform bounds; its fixed point is an orbit shadowing the pseudo-orbit. $\square$</p>
+<p><strong>Theorem (specification).</strong> Let $\Lambda$ be a locally maximal hyperbolic set for a topologically transitive diffeomorphism $f$. Then $f|_\Lambda$ has the <strong>specification property</strong>: for every $\epsilon>0$ there is $N(\epsilon)$ such that for any finite collection of orbit segments of length at least $N$ with prescribed initial times one can find a periodic orbit that $\epsilon$-shadows all of them in the prescribed order; among its consequences are the density of the periodic orbits of $f|_\Lambda$ in $\Lambda$ and the asymptotic growth $\#\operatorname{Fix}(f^n)\sim e^{nh}$ with $h=h_{\mathrm{top}}(f|_\Lambda)$. The specification property and its consequences — the equidistribution of the periodic orbits towards the unique measure of maximal entropy, and the growth rate — are the contents of the <strong>Bowen theorem</strong>, cited below.</p>
+<h2 id="axiom-a-spectral-decomposition-and-markov-partitions">Axiom A, Spectral Decomposition and Markov Partitions</h2>
+<h3 id="axiom-a-and-the-spectral-decomposition">Axiom A and the Spectral Decomposition</h3>
+<p><strong>Definition.</strong> A diffeomorphism $f:M\to M$ satisfies <strong>Axiom A</strong> if the non-wandering set $\Omega(f)$ is hyperbolic and the periodic points are dense in $\Omega(f)$; a basic set is a hyperbolic set on which $f$ is topologically transitive.</p>
+<p><strong>Theorem (spectral decomposition).</strong> Let $f$ be a diffeomorphism of a compact manifold satisfying Axiom A. Then the non-wandering set decomposes into finitely many disjoint closed invariant basic sets,</p>
+<p>$$
+\Omega(f)=\Lambda_1\cup\cdots\cup\Lambda_s, \qquad f(\Lambda_i)=\Lambda_i,
+$$</p>
+<p>each of which is closed, open in $\Omega(f)$ and invariant, with $f|_{\Lambda_i}$ topologically transitive; each $\Lambda_i$ decomposes further into finitely many pieces that are cyclically permuted by $f$, so that $f^{m_i}$ restricted to each piece is topologically mixing for the cycle length $m_i$. The decomposition is unique, and the ergodic invariant measures of $f$ are supported on the basic sets.</p>
+<p><em>Proof (sketch).</em> One defines an equivalence relation on the non-wandering points by the existence of a point whose orbit passes near both infinitely often in the appropriate order; the classes are open and closed in $\Omega(f)$ and invariant, finitely many by compactness, and the transitivity on each is the definition of the class. $\square$</p>
+<h3 id="markov-partitions-and-the-symbolic-model">Markov Partitions and the Symbolic Model</h3>
+<p><strong>Definition.</strong> Let $\Lambda$ be a hyperbolic set for $f$. A <strong>Markov partition</strong> of $\Lambda$ is a finite cover $\mathcal R=\{R_1,\dots,R_k\}$ by closed subsets with disjoint interiors, each the closure of the intersection of $\Lambda$ with the local product of a piece of stable manifold and a piece of unstable manifold, such that the image of each piece crosses the pieces in a <strong>Markov</strong> (directed) way: if $f(\operatorname{int}R_i)$ meets $\operatorname{int}R_j$ then it crosses it fully in the unstable direction.</p>
+<p><strong>Theorem (Sinai–Bowen).</strong> Let $\Lambda$ be a locally maximal hyperbolic set for a diffeomorphism $f$ with $f|_\Lambda$ topologically transitive. Then $\Lambda$ admits a Markov partition, and the corresponding transition matrix $A$ of order $k$ defines a two-sided subshift of finite type $(\Sigma_A,\sigma)$ with the following property: there is a continuous surjective map $\pi:\Sigma_A\to\Lambda$ with $\pi\circ\sigma=f\circ\pi$, the map $\pi$ is injective on a residual set and finite-to-one, and the periodic points of $\Lambda$ biject with the periodic points of $\Sigma_A$ through $\pi$ up to the finite multiplicity. Consequently</p>
+<p>$$
+h_{\mathrm{top}}(f|_\Lambda)=\log\rho(A),
+$$</p>
+<p>the logarithm of the spectral radius of the transition matrix, and the topological entropy of the hyperbolic set is computed from its symbolic model.</p>
+<p><em>Proof (sketch).</em> The Markov partition is constructed by taking a sufficiently fine cover by rectangles built from the local product structure, choosing the pieces so small that the image of each crosses the pieces in the required way; the itinerary of a point with respect to the partition is the sequence of pieces it visits, and the Markov property makes the set of itineraries exactly the subshift of finite type $A$. The semiconjugacy $\pi$ maps a sequence to the unique point whose orbit realises the itinerary, and the injectivity on a residual set follows from the countability of the exceptional set of points whose orbit hits the boundary of a partition element. The entropy identity is the standard computation for a subshift of finite type. $\square$</p>
+<p><strong>Corollary (periodic orbit counting and equidistribution).</strong> For a locally maximal hyperbolic set $\Lambda$ on which $f$ is topologically mixing, the number of periodic points satisfies $\#\{x:f^nx=x\}\sim e^{nh}$ with $h=h_{\mathrm{top}}(f|_\Lambda)$, and the periodic orbit measures equidistribute towards the unique measure of maximal entropy; the convergence of the averages follows from the specification property of the previous section. In the general transitive case the same statements hold for $f^{m}$ on each mixing piece of the spectral decomposition, and the periods occurring are the multiples of $m$.</p>
+<h2 id="anosov-systems">Anosov Systems</h2>
+<h3 id="anosov-diffeomorphisms">Anosov Diffeomorphisms</h3>
+<p><strong>Theorem (Anosov; structural stability).</strong> Let $f:M\to M$ be an Anosov diffeomorphism of a compact manifold. Then $f$ is structurally stable: every $C^1$-close diffeomorphism is topologically conjugate to $f$, and the conjugacy depends continuously on the perturbation.</p>
+<p><em>Proof (sketch).</em> One applies the shadowing lemma to the pseudo-orbits of the perturbation: for $g$ close to $f$ the orbits of $g$ are $\delta$-pseudo-orbits of $f$, hence are shadowed by orbits of $f$, which defines the conjugacy $h$ with $h\circ g=f\circ h$; the injectivity and surjectivity follow from the same argument applied to $f$ and $g$ in the opposite direction. $\square$</p>
+<p><strong>Example (linear Anosov diffeomorphisms of the torus).</strong> Let $A \in\mathrm{GL}(n,\mathbb{Z})$ be an integer matrix with $\det A=\pm1$ and no eigenvalue of modulus $1$. Then $A$ induces a diffeomorphism of the torus $\mathbb{T}^n=\mathbb{R}^n/\mathbb{Z}^n$ that is Anosov: the splitting is into the contracting and expanding generalised eigenspaces of $A$, and the estimates are exponential with the rates of the eigenvalues. For $n=2$ the matrix</p>
+<p>$$
+A=\begin{pmatrix}2&1\\1&1\end{pmatrix}, \qquad \det A=1, \qquad \operatorname{tr}A=3,
+$$</p>
+<p>has the eigenvalues $\frac{3\pm\sqrt5}{2}$, so one is larger than $1$ and one lies in $(0,1)$, and the induced map of $\mathbb{T}^2$ is the standard Anosov diffeomorphism; the points fixed by $A^n$ number $|\det(A^n-I)|$ and are the periodic points of period dividing $n$, and the topological entropy is $\log\frac{3+\sqrt5}{2}$, the logarithm of the expanding eigenvalue.</p>
+<p><strong>Remark (classification).</strong> A conjecture of Anosov states that every Anosov diffeomorphism is topologically conjugate to a hyperbolic automorphism of an infranilmanifold; the conjecture is known in many cases — in dimension two by the work of Franks and Manning, for codimension-one Anosov systems, and for Anosov diffeomorphisms of tori and nilmanifolds — and it is the classification problem of the theory. The Anosov flows have no analogous conjecture in the same form, because the suspension of an Anosov diffeomorphism and the geodesic flow of a negatively curved manifold are both Anosov and are not conjugate.</p>
+<h3 id="anosov-flows-and-the-geodesic-flow">Anosov Flows and the Geodesic Flow</h3>
+<p><strong>Theorem (Anosov flows; stability).</strong> Let $\varphi_t$ be an Anosov flow on a compact manifold. Then the splitting $T_xM=E^s_x\oplus E^0_x\oplus E^u_x$ is continuous and invariant, the flow is structurally stable among flows, and its time-one map is a partially hyperbolic diffeomorphism whose centre direction is the flow; the return map to a transverse section is hyperbolic, and the flow is the suspension of that return map when a global section exists.</p>
+<p><strong>Example (the geodesic flow of negative curvature).</strong> Let $(M,g)$ be a compact Riemannian manifold of negative sectional curvature; the geodesic flow on the unit tangent bundle $SM$ is an Anosov flow: the splitting consists of the flow direction and of the stable and unstable directions built from the Jacobi fields of the geodesic variation, and the uniform negative curvature gives the uniform contraction and expansion. The flow is ergodic with respect to the Liouville measure (the Hopf argument, using the absolute continuity of the stable and unstable foliations) and mixing; the entropy with respect to the Liouville measure is the sum of the positive Lyapunov exponents, by Pesin's formula specialised to the flow, and it equals the topological entropy of the flow exactly when the Bowen–Ruelle measure is the measure of maximal entropy, as in constant curvature; the variational principle expresses $h_{\mathrm{top}}$ as the supremum of $h_\mu$ over the invariant measures in all cases. The construction of the flow, the curvature hypotheses and the ergodicity belong to <em>Curvature and Geodesics</em>, <em>Riemannian Geometry</em> ; the present article uses the example only to locate the Anosov class.</p>
+<h2 id="the-ergodic-theory-of-hyperbolic-systems">The Ergodic Theory of Hyperbolic Systems</h2>
+<h3 id="lyapunov-exponents-and-pesins-formula">Lyapunov Exponents and Pesin's Formula</h3>
+<p><strong>Definition.</strong> Let $f$ be a $C^1$ diffeomorphism preserving a Borel probability measure $\mu$. The <strong>Lyapunov exponents</strong> of $f$ at a point $x$ are the numbers $\lambda_1(x)>\cdots>\lambda_r(x)$ such that there is a filtration $0=V_0\subset\cdots\subset V_r=T_xM$ with</p>
+<p>$$
+\lim_{n\to\pm\infty}\frac1n\log\|Df^n(v)\|=\lambda_i(x) \quad \text{for } v \in V_i\setminus V_{i-1},
+$$</p>
+<p>and the <strong>Oseledets theorem</strong> gives the existence of the exponents, of the filtration and of the corresponding subspaces for $\mu$-almost every $x$, under the hypothesis $\log^+\|Df^{\pm1}\| \in L^1(\mu)$; the functions $x\mapsto\lambda_i(x)$ are measurable, $f$-invariant, and the sum of the positive exponents is written $\lambda^+(x)=\sum_{\lambda_i>0}\lambda_i(x)$.</p>
+<p><strong>Theorem (Ruelle's inequality and Pesin's formula).</strong> Let $f$ be a $C^1$ diffeomorphism preserving a probability measure $\mu$. Then the measure-theoretic entropy satisfies</p>
+<p>$$
+h_\mu(f)\le\int\lambda^+\,d\mu ,
+$$</p>
+<p>with equality — <strong>Pesin's formula</strong> — when $\mu$ is absolutely continuous with respect to the volume in the unstable directions, that is, when $\mu$ is an SRB measure; for a $C^{1+\alpha}$ diffeomorphism the equality holds for every measure whose conditional measures on the unstable manifolds are absolutely continuous.</p>
+<h3 id="the-bowenruelle-measure">The Bowen–Ruelle Measure</h3>
+<p><strong>Theorem (Bowen–Ruelle; Sinai, Ruelle, Bowen).</strong> Let $f$ be a $C^{1+\alpha}$ topologically transitive Anosov diffeomorphism of a compact manifold, or the restriction to a basic set of an Axiom A diffeomorphism. Then $f$ has a unique <strong>SRB measure</strong> (the Bowen–Ruelle measure): an $f$-invariant probability measure $\mu$ whose conditional measures on the unstable manifolds are absolutely continuous with respect to the Riemannian volume. The measure $\mu$ is ergodic, and it is mixing when $f|_\Lambda$ is topologically mixing; it satisfies Pesin's formula $h_\mu(f)=\int\lambda^+\,d\mu$, it is the limit of the periodic orbit measures, and it is the measure of maximal entropy exactly when the potential $-\log|\det(Df|_{E^u})|$ is cohomologous to a constant, in which case $h_\mu(f)=h_{\mathrm{top}}(f)=\log\rho(A)$ for the transition matrix $A$ of a Markov partition; for a general Anosov system the measure of maximal entropy is a different equilibrium state. Moreover the measure is the equilibrium state of the potential $-\log|\det(Df|_{E^u})|$, that is, the unique Gibbs state of the topological pressure of that potential, which is the content of the <strong>thermodynamic formalism</strong> of Bowen and Ruelle.</p>
+<p><em>Proof (sketch).</em> The measure is constructed in the thermodynamic formalism from the Ruelle transfer operator $\mathcal L u(x)=\sum_{y \in f^{-1}(x)}e^{\varphi(y)}u(y)$ with the potential $\varphi=-\log|\det(Df|_{E^u})|$; the Gibbs property is the pair of equations $\mathcal L u^*=e^{P(\varphi)}u^*$ for a positive Hölder eigenfunction and $\mathcal L^*\mu=e^{P(\varphi)}\mu$ for the eigenmeasure, and the existence and uniqueness are obtained from the Perron–Frobenius theory of $\mathcal L$ on the space of Hölder functions, where $\mathcal L$ is quasi-compact because the inverse branches are uniform contractions. The ergodicity and mixing are those of the Gibbs measure for a Hölder potential on a hyperbolic set, and Pesin's formula is the identification of the entropy with the pressure. The details are the standard theory of Sinai, Ruelle and Bowen, cited below. $\square$</p>
+<p><strong>Corollary (equidistribution and periodic orbits).</strong> For a topologically mixing Anosov diffeomorphism, the measures equidistributed on the periodic orbits converge to the Bowen–Ruelle measure, and</p>
+<p>$$
+h_{\mathrm{top}}(f)=\lim_{n\to\infty}\frac1n\log\#\operatorname{Fix}(f^n)=\log\rho(A), \qquad h_\mu(f)=\int\lambda^+\,d\mu ,
+$$</p>
+<p>with $\rho(A)$ the spectral radius of the transition matrix of a Markov partition; the two displayed numbers agree exactly when the Bowen–Ruelle measure is the measure of maximal entropy, which is the case for the linear automorphisms of the torus but not for a general Anosov diffeomorphism. In the transitive case the same statements hold for the iterate on each mixing piece of the spectral decomposition. The corresponding statements for Anosov flows hold with the Liouville-type measure replaced by the Bowen–Ruelle measure of the flow, normalised so that the entropy of the time-one map is the sum of the positive exponents per unit time; the geodesic flow of a negatively curved manifold is the classical case, and its ergodicity, mixing and entropy are treated and <em>Ergodic Theory</em>.</p>
+<p><strong>Example (the linear Anosov diffeomorphism).</strong> For the torus automorphism induced by $A=\begin{pmatrix}2&1\\1&1\end{pmatrix}$ the Bowen–Ruelle measure, the measure of maximal entropy and the normalised area are the same measure — the Haar measure of the torus — because the map is an affine automorphism; the entropy is $\log\frac{3+\sqrt5}{2}$, the sum of the positive Lyapunov exponents is the logarithm of the larger eigenvalue, and Pesin's formula reduces to the identity between them. This is the exceptional case in which the three measures coincide; for a general Anosov diffeomorphism the Bowen–Ruelle measure is the smooth measure only in this homogeneous situation.</p>
+<h2 id="summary">Summary</h2>
+<p>A compact invariant set $\Lambda$ of a diffeomorphism $f$ is <strong>hyperbolic</strong> if there is a $Df$-invariant continuous splitting $T_xM=E^s_x\oplus E^u_x$ on which $Df$ contracts $E^s$ and $Df^{-1}$ contracts $E^u$, with uniform constants $C\lambda^n$; the estimates can be normalised to $C=1$ by an adapted metric, and the hyperbolicity is equivalent to the existence of a cone field carried into itself by $Df$ and $Df^{-1}$ and contracted. A <strong>hyperbolic set</strong> is expansive, and the <strong>Hadamard–Perron theorem</strong> attaches to each of its points $C^r$ stable and unstable manifolds $W^s(x)$, $W^u(x)$ tangent to $E^s_x,E^u_x$ and characterised as the sets of points whose orbits converge to that of $x$ in the two time directions; for a locally maximal hyperbolic set the local stable and unstable manifolds of nearby points meet in $\Lambda$, which is the <strong>local product structure</strong>. The <strong>shadowing lemma</strong> shadows every pseudo-orbit by a genuine orbit, and the <strong>specification property</strong> of a transitive hyperbolic set produces periodic orbits shadowing prescribed orbit segments, whence the density of the periodic points and the growth rate $\#\operatorname{Fix}(f^n)\sim e^{nh}$.</p>
+<p>A diffeomorphism satisfies <strong>Axiom A</strong> when its non-wandering set is hyperbolic with dense periodic points; the <strong>spectral decomposition</strong> splits it into finitely many invariant basic sets, each of which is further decomposed into finitely many pieces cyclically permuted by $f$, and each basic set admits a <strong>Markov partition</strong>, whose symbolic model is a subshift of finite type $(\Sigma_A,\sigma)$ with a finite-to-one semiconjugacy onto $\Lambda$ and topological entropy $\log\rho(A)$. An <strong>Anosov diffeomorphism</strong> is hyperbolic on the whole manifold; it is structurally stable, the linear automorphisms of the torus with no eigenvalue of modulus one are the standard examples, and the conjecture of Anosov asserts that every Anosov diffeomorphism is topologically conjugate to a hyperbolic automorphism of an infranilmanifold, known in dimension two and in codimension one. An <strong>Anosov flow</strong> has the splitting $E^s\oplus E^0\oplus E^u$ with $E^0$ the flow direction; the geodesic flow of a compact negatively curved manifold is the classical example, and its ergodicity and mixing are standard.</p>
+<p>The ergodic theory of the hyperbolic systems is governed by the <strong>Lyapunov exponents</strong>, which exist almost everywhere by the Oseledets theorem, by Ruelle's inequality $h_\mu\le\int\lambda^+d\mu$ and by <strong>Pesin's formula</strong>, which is an equality for measures with absolutely continuous conditionals on the unstable manifolds. The <strong>Bowen–Ruelle</strong> (SRB) measure of a $C^{1+\alpha}$ topologically transitive Anosov system is the unique such measure, it is ergodic and mixing, it satisfies Pesin's formula, it is the equilibrium state of the potential $-\log|\det(Df|_{E^u})|$ in the thermodynamic formalism, whence it is the measure of maximal entropy exactly when that potential is cohomologous to a constant; the periodic orbit measures equidistribute to it, and $h_{\mathrm{top}}(f)=\lim_n\frac1n\log\#\operatorname{Fix}(f^n)$. The random and non-uniform versions of the same theory are not covered here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda$</td>
+<td>hyperbolic set</td>
+</tr>
+<tr>
+<td>$E^s_x$, $E^u_x$, $E^0_x$</td>
+<td>contracting, expanding, flow-direction subspaces</td>
+</tr>
+<tr>
+<td>$C$, $\lambda$</td>
+<td>hyperbolicity constants</td>
+</tr>
+<tr>
+<td>$W^s(x)$, $W^u(x)$</td>
+<td>stable and unstable manifolds</td>
+</tr>
+<tr>
+<td>$\Omega(f)$</td>
+<td>non-wandering set</td>
+</tr>
+<tr>
+<td>$\Lambda_1,\dots,\Lambda_s$</td>
+<td>basic sets of the spectral decomposition</td>
+</tr>
+<tr>
+<td>$\mathcal R=\{R_i\}$, $A$</td>
+<td>Markov partition and transition matrix</td>
+</tr>
+<tr>
+<td>$(\Sigma_A,\sigma)$</td>
+<td>subshift of finite type, the symbolic model</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>semiconjugacy $\Sigma_A\to\Lambda$</td>
+</tr>
+<tr>
+<td>$\lambda_i(x)$, $\lambda^+(x)$</td>
+<td>Lyapunov exponents and their positive sum</td>
+</tr>
+<tr>
+<td>$h_\mu(f)$, $h_{\mathrm{top}}(f)$</td>
+<td>measure-theoretic and topological entropy</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>Bowen–Ruelle (SRB) measure</td>
+</tr>
+<tr>
+<td>$\mathcal L$, $P(\varphi)$</td>
+<td>Ruelle transfer operator, topological pressure</td>
+</tr>
+<tr>
+<td>$A=\begin{pmatrix}2&1\\1&1\end{pmatrix}$</td>
+<td>the standard Anosov matrix</td>
+</tr>
+<tr>
+<td>$\varphi_t$</td>
+<td>flow; Anosov flow when hyperbolic on $M$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Dmitri V. Anosov, "Geodesic flows on closed Riemannian manifolds of negative curvature", <em>Trudy Matematicheskogo Instituta imeni V. A. Steklova</em> 90 (1967), 3–210, for the Anosov systems and their structural stability.</li>
+<li>Stephen Smale, "Differentiable dynamical systems", <em>Bulletin of the American Mathematical Society</em> 73 (1967), 747–817, for Axiom A, the spectral decomposition and the horseshoe.</li>
+<li>Rufus Bowen, <em>Equilibrium States and the Ergodic Theory of Anosov Diffeomorphisms</em> (Springer, 1975), for the Markov partitions, the Bowen–Ruelle measure, the thermodynamic formalism and the periodic orbit counting.</li>
+<li>Yakov G. Sinai, "Markov partitions and $C$-diffeomorphisms", <em>Functional Analysis and Its Applications</em> 2 (1968), 61–82, and "Gibbs measures in ergodic theory", <em>Russian Mathematical Surveys</em> 27 (1972), 21–69, for the Markov partitions and the Gibbs states.</li>
+<li>David Ruelle, <em>Thermodynamic Formalism</em> (Addison-Wesley, 1978), for the transfer operator, the pressure and the equilibrium states.</li>
+<li>Morris W. Hirsch, Charles C. Pugh and Michael Shub, <em>Invariant Manifolds</em> (Springer, 1977), for the Hadamard–Perron stable manifold theory and the hyperbolicity estimates.</li>
+<li>Michael Shub, <em>Global Stability of Dynamical Systems</em> (Springer, 1987), for the shadowing lemma, the specification property and the structural stability.</li>
+<li>Anatole Katok and Boris Hasselblatt, <em>Introduction to the Modern Theory of Dynamical Systems</em> (Cambridge University Press, 1995), for a systematic account of hyperbolic dynamics and its examples.</li>
+<li>Yakov B. Pesin, <em>Dimension Theory in Dynamical Systems</em> (University of Chicago Press, 1997), for the Lyapunov exponents, Pesin's formula and the non-uniformly hyperbolic theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

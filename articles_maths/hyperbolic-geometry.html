@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyperbolic Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hyperbolic-geometry"><strong>Hyperbolic Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Hyperbolic geometry is the geometry of constant negative curvature. It is the third of the model geometries of <em>Curvature and Geodesics</em>, the one in which the parallel postulate fails in the direction of too many parallels: through a point outside a line there pass infinitely many lines not meeting it, the angles of a triangle sum to less than two right angles, and two geodesics may diverge from one another at an exponential rate. It is the geometry of the algebra $\mathbb{D}$ of split complex numbers with $\omega^2 = +1$, whose hyperbolic rotations are the Lorentz boosts, the $\omega^2 = +1$ case of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>.</p>
+<p>Hyperbolic geometry is the richest of the three model geometries and the one with the deepest connection to the rest of mathematics. Its isometry group in dimension two is the projective linear group $PSL(2, \mathbb{R})$, so its geometry is the geometry of Möbius transformations and of the Riemann sphere with a real boundary; its discrete subgroups are the Fuchsian and Kleinian groups, whose quotient surfaces carry the moduli spaces of complex structures. It is for this reason that the hyperbolic structure on a surface is the geometric realisation of its complex structure, and the deformation theory of the one is the deformation theory of the other.</p>
+<p>This article develops hyperbolic geometry from its models. It gives the upper half-plane, the Poincaré disk, the hyperboloid and the Beltrami–Klein models, with the isometries between them; computes the geodesics and the distance in each; proves the trigonometric laws, which differ from the spherical and Euclidean ones only in the signs and the hyperbolic functions; relates the angle sum to the area through the hyperbolic Gauss–Bonnet theorem; treats the angle of parallelism and the ideal points at infinity; identifies the isometry group with a projective linear group and classifies its elements; and introduces the discrete groups and the space forms, with the Mostow rigidity theorem and the boundary to the Teichmüller theory of the sibling articles.</p>
+<p>The article assumes <em>Smooth Manifolds and Differential Geometry</em> for manifolds and metrics; <em>Curvature and Geodesics</em> and <em>Riemannian Geometry</em> for geodesics, curvature, the exponential map, the Gauss–Bonnet theorem and the classification of the space forms; <em>Pseudo-Riemannian and Lorentzian Geometry</em> for the hyperboloid model, which is the quadric $H^{1,n}$ of the pseudo-Euclidean space; <em>Euclidean Geometry</em> for the comparison; <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em> for the split-complex case; and <em>Matrix Groups and Classical Groups</em> for $SL(2, \mathbb{R})$, $PSL(2, \mathbb{R})$ and the Möbius transformations. The analytic theory of the boundary, the limit set and the ergodic theory of the geodesic flow belongs to Part III, and it is cited rather than developed. No physics is invoked.</p>
+<h2 id="the-models-of-hyperbolic-space">The Models of Hyperbolic Space</h2>
+<h3 id="the-upper-half-plane-model">The Upper Half-Plane Model</h3>
+<p><strong>Definition.</strong> The <strong>upper half-plane</strong> is $\mathbb{H}^2 = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$ with the <strong>hyperbolic metric</strong></p>
+<p>$$
+g = \frac{dx^2 + dy^2}{y^2}, \qquad z = x + iy, \quad y > 0 .
+$$</p>
+<p>The pair $(\mathbb{H}^2, g)$ is the <strong>Poincaré upper half-plane model</strong> of the hyperbolic plane. In $n$ dimensions the <strong>upper half-space model</strong> is $\mathbb{H}^n = \{(x_1, \ldots, x_n) : x_n > 0\}$ with the metric</p>
+<p>$$
+g = \frac{dx_1^2 + \cdots + dx_n^2}{x_n^2} .
+$$</p>
+<p><strong>Proposition.</strong> The metric $g$ is positive definite and conformal to the Euclidean metric: it is $y^{-2}$ times the Euclidean metric at the point $z = x + iy$. Its coefficients are $g_{11} = g_{22} = y^{-2}$, $g_{12} = 0$, and its determinant is $y^{-4}$.</p>
+<p><strong>Theorem.</strong> The upper half-plane model has constant sectional curvature $-1$; its geodesics are the vertical lines $x = \mathrm{const}$ and the semicircles with centres on the real axis and radius $r > 0$, and its isometries are the <strong>Möbius transformations</strong></p>
+<p>$$
+z \longmapsto \frac{az + b}{cz + d}, \qquad a, b, c, d \in \mathbb{R}, \quad ad - bc > 0,
+$$</p>
+<p>together with the reflection $z \mapsto -\bar z$. The orientation-preserving isometries form the group $PSL(2, \mathbb{R}) = SL(2, \mathbb{R})/\{\pm I\}$.</p>
+<p><strong>Proof sketch.</strong> The Christoffel symbols of $g$ give $\Gamma^1_{11} = \Gamma^1_{22} = \Gamma^2_{12} = 0$, $\Gamma^1_{12} = -1/y$, $\Gamma^2_{11} = 1/y$, $\Gamma^2_{22} = -1/y$, and the geodesic equation reduces to the statement that the curves are the lines and semicircles orthogonal to the boundary; the curvature is computed from the second derivatives of the metric and is $-1$. A Möbius transformation with real coefficients preserves the upper half-plane, and a direct computation gives</p>
+<p>$$
+\frac{|f'(z)|}{\operatorname{Im} f(z)} = \frac{1}{\operatorname{Im} z},
+$$</p>
+<p>which is exactly the conformality factor of $g$, so $f^*g = g$; the real Möbius transformations and the reflection generate all the isometries, since an isometry is determined by the image of a frame. $\square$</p>
+<p><strong>Definition.</strong> The <strong>cross-ratio</strong> of four distinct real numbers or boundary points $z_1, z_2, z_3, z_4$ is</p>
+<p>$$
+[z_1, z_2; z_3, z_4] = \frac{(z_1 - z_3)(z_2 - z_4)}{(z_1 - z_4)(z_2 - z_3)},
+$$</p>
+<p>invariant under Möbius transformations.</p>
+<p><strong>Theorem (distance formula).</strong> For $z, w \in \mathbb{H}^2$,</p>
+<p>$$
+\cosh d(z, w) = 1 + \frac{|z - w|^2}{2\operatorname{Im} z\,\operatorname{Im} w},
+$$</p>
+<p>and for points on the imaginary axis $z = it$, $w = is$,</p>
+<p>$$
+d(it, is) = |\log(t/s)| .
+$$</p>
+<p><strong>Proof sketch.</strong> The distance along the imaginary axis is $\int_s^t dy/y = \log(t/s)$ for $t > s$; the group $PSL(2, \mathbb{R})$ acts transitively on pairs of points at a given distance, and any two points are carried to two points of a vertical geodesic, which gives the general formula; the displayed identity is checked directly. $\square$</p>
+<p><strong>Corollary.</strong> The hyperbolic metric is complete and the hyperbolic distance is unbounded, so $\mathbb{H}^2$ has infinite diameter. Its area element is $dA = dx\,dy/y^2$, and the area of the region $\{x_0 \leq x \leq x_1,\ y \geq y_0\}$ is $(x_1 - x_0)/y_0$, finite in the horizontal direction and infinite in the vertical.</p>
+<h3 id="the-poincare-disk-model">The Poincaré Disk Model</h3>
+<p><strong>Definition.</strong> The <strong>Poincaré disk</strong> is the unit disk $\mathbb{D}^2 = \{z \in \mathbb{C} : |z| < 1\}$ with the metric</p>
+<p>$$
+g_{\mathbb{D}} = \frac{4\,|dz|^2}{(1 - |z|^2)^2}.
+$$</p>
+<p><strong>Theorem.</strong> The <strong>Cayley transform</strong></p>
+<p>$$
+C(z) = \frac{z - i}{z + i}
+$$</p>
+<p>is a biholomorphic isometry from the upper half-plane model onto the Poincaré disk, with inverse $C^{-1}(w) = i(1 + w)/(1 - w)$.</p>
+<p><strong>Proof.</strong> The Cayley transform is a Möbius transformation carrying the real axis to the unit circle and the upper half-plane to the disk; the identity $|C'(z)|/(1 - |C(z)|^2) = 1/(2\operatorname{Im} z)$ gives $C^*(g_{\mathbb{D}}) = g$. $\square$</p>
+<p><strong>Proposition (disk distance).</strong> For $z, w$ in the disk,</p>
+<p>$$
+\cosh d(z, w) = 1 + \frac{2|z - w|^2}{(1 - |z|^2)(1 - |w|^2)} .
+$$</p>
+<p><strong>Corollary (geodesics in the disk).</strong> The geodesics of the Poincaré disk are the diameters and the arcs of circles orthogonal to the boundary circle $|z| = 1$.</p>
+<h3 id="the-hyperboloid-and-beltramiklein-models">The Hyperboloid and Beltrami–Klein Models</h3>
+<p><strong>Definition.</strong> The <strong>hyperboloid model</strong> of $\mathbb{H}^n$ is the quadric</p>
+<p>$$
+\mathcal{H}^n = \{x \in \mathbb{R}^{n+1} : \langle x, x\rangle_{1,n} = -1,\ x_0 > 0\}
+$$</p>
+<p>in the pseudo-Euclidean space $\mathbb{R}^{1,n}$ with $\langle x, x\rangle_{1,n} = x_0^2 - x_1^2 - \cdots - x_n^2$, carrying the induced pseudo-Riemannian metric; the restriction is Riemannian and of constant curvature $-1$. It is the Lorentzian hyperboloid $H^{1,n}$ of <em>Pseudo-Riemannian and Lorentzian Geometry</em>.</p>
+<p><strong>Proposition.</strong> The hyperboloid model is complete with constant curvature $-1$, its isometry group is the group $O(1, n)^+$ of pseudo-orthogonal transformations preserving the upper sheet, and the orthogonal projection to the plane $x_0 = 1$ along the origin gives the <strong>Beltrami–Klein model</strong>, in which geodesics are the chords of the unit ball.</p>
+<p><strong>Proof sketch.</strong> The tangent space at $x \in \mathcal{H}^n$ is $x^\perp$, on which the ambient form is positive definite because $x$ is timelike and the form has signature $(1, n)$; the Gauss equation for the quadric gives $K = -1$. The group $O(1,n)$ acts transitively by isometries and the stabiliser of a point is $O(n)$. $\square$</p>
+<p><strong>Theorem.</strong> The four models are isometric: the upper half-plane, the Poincaré disk, the hyperboloid and the Beltrami–Klein model describe the same connected, complete, simply connected Riemannian manifold of constant sectional curvature $-1$, denoted $\mathbb{H}^n$.</p>
+<p><strong>Proof.</strong> Each is complete, simply connected and of constant curvature $-1$, so each is isometric to the classification model of <em>Riemannian Geometry</em>; the explicit maps are the Cayley transform, the stereographic projection to the disk, and the projection from the hyperboloid. $\square$</p>
+<h2 id="geodesics-ideal-points-and-trigonometry">Geodesics, Ideal Points and Trigonometry</h2>
+<h3 id="the-boundary-at-infinity">The Boundary at Infinity</h3>
+<p><strong>Definition.</strong> The <strong>boundary at infinity</strong> of the upper half-plane model is $\partial\mathbb{H}^2 = \mathbb{R} \cup \{\infty\}$, and of the disk model the unit circle. A <strong>geodesic</strong> has two distinct endpoints on the boundary, and two geodesics are asymptotic if they have a common endpoint. The boundary is the set of equivalence classes of geodesic rays that remain at bounded distance, and it carries a natural circle topology; it is the <strong>conformal boundary</strong> of the model.</p>
+<p><strong>Definition.</strong> An <strong>ideal point</strong> is a point of the boundary, and an <strong>ideal triangle</strong> is a triangle all of whose vertices are ideal; an <strong>ideal polygon</strong> is defined similarly. All ideal triangles in $\mathbb{H}^2$ are congruent, because any three distinct boundary points can be carried to any other three by a Möbius transformation.</p>
+<p><strong>Proposition (area of an ideal triangle).</strong> Every ideal triangle has area $\pi$.</p>
+<p><strong>Proof.</strong> By the transitivity of $PSL(2, \mathbb{R})$ on triples of boundary points, it suffices to treat the ideal triangle with vertices $-1, 1, \infty$. Its sides are the semicircle $x^2 + y^2 = 1$ (the geodesic from $-1$ to $1$) and the vertical lines $x = \pm 1$, so it is the region</p>
+<p>$$
+D = \{(x, y) : -1 < x < 1,\ y > \sqrt{1 - x^2}\}.
+$$</p>
+<p>Its hyperbolic area is the integral of the area form $dA = y^{-2}dx\,dy$ over $D$:</p>
+<p>$$
+\int_D \frac{dx\,dy}{y^2} = \int_{-1}^{1}\left(\int_{\sqrt{1-x^2}}^{\infty}\frac{dy}{y^2}\right) dx = \int_{-1}^{1}\frac{dx}{\sqrt{1-x^2}} = \bigl[\arcsin x\bigr]_{-1}^{1} = \pi . \qquad \square
+$$</p>
+<p>The computation is the elementary integral of the $2$-form $y^{-2}dx\wedge dy$ over a region of $\mathbb{H}^2$, which is the top-form integral read on an oriented surface patch. The agreement with the angle-sum formula below, in which all three angles of an ideal triangle are zero, is the two-dimensional Gauss–Bonnet theorem.</p>
+<h3 id="hyperbolic-trigonometry">Hyperbolic Trigonometry</h3>
+<p><strong>Theorem (angle sum and area).</strong> For a hyperbolic triangle with angles $A, B, C$ and area $\Delta$,</p>
+<p>$$
+A + B + C = \pi - \Delta, \qquad \text{so} \qquad \Delta = \pi - (A + B + C).
+$$</p>
+<p><strong>Proof.</strong> This is the Gauss–Bonnet theorem of <em>Riemannian Geometry</em> for a geodesic triangle in a surface of curvature $-1$: the boundary term contributes the sum of the exterior angles and the angle sum appears with the sign appropriate to negative curvature. $\square$</p>
+<p><strong>Corollary.</strong> The angle sum of a hyperbolic triangle is less than $\pi$, and every hyperbolic triangle has area less than $\pi$; the area is the <strong>hyperbolic defect</strong> $\pi - (A+B+C)$.</p>
+<p><strong>Theorem (hyperbolic law of cosines).</strong> For a hyperbolic triangle with sides $a, b, c$ and opposite angles $A, B, C$,</p>
+<p>$$
+\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C,
+$$</p>
+<p>and cyclically.</p>
+<p><strong>Theorem (hyperbolic law of sines).</strong></p>
+<p>$$
+\frac{\sinh a}{\sin A} = \frac{\sinh b}{\sin B} = \frac{\sinh c}{\sin C}.
+$$</p>
+<p><strong>Theorem (right hyperbolic triangles).</strong> If $C = \pi/2$ then</p>
+<p>$$
+\cosh c = \cosh a\cosh b, \qquad \cos A = \frac{\cosh a\,\sin B}{\cosh b}, \qquad \sin A = \frac{\sinh a}{\sinh c}.
+$$</p>
+<p><strong>Proof sketch (of the laws).</strong> The laws are proved by the same two-vector computation as in the spherical case, with the positive definite inner product of the hyperboloid replaced by the indefinite form $\langle\cdot,\cdot\rangle_{1,2}$ of $\mathbb{R}^{1,2}$; the sign change in the form changes $\cos$ to $\cosh$ and $\sin$ to $\sinh$ throughout, which is the structural reason the two trigonometries differ only in the signs and the functions. $\square$</p>
+<p><strong>Corollary (the Euclidean limit).</strong> For small sides, $\cosh x \to 1 + x^2/2$ and $\sinh x \to x$, and the hyperbolic law of cosines becomes the Euclidean law $c^2 = a^2 + b^2 - 2ab\cos C$; the hyperbolic Pythagorean theorem becomes $c^2 = a^2 + b^2$. As in the spherical case, the Euclidean theory is the flat limit, and the deviation from it is measured by the area of the triangle.</p>
+<h3 id="the-angle-of-parallelism">The Angle of Parallelism</h3>
+<p><strong>Definition.</strong> Let $P$ be a point at hyperbolic distance $d$ from a geodesic line $\ell$, and let $Q$ be the foot of the perpendicular from $P$ to $\ell$. The <strong>angle of parallelism</strong> $\Pi(d)$ is the angle at $P$ between the perpendicular $PQ$ and either of the two geodesic rays from $P$ asymptotic to $\ell$.</p>
+<p><strong>Theorem (Lobachevsky).</strong> The angle of parallelism satisfies</p>
+<p>$$
+\tan\frac{\Pi(d)}{2} = e^{-d}, \qquad \text{equivalently} \qquad \cos\Pi(d) = \tanh d .
+$$</p>
+<p><strong>Proof sketch.</strong> In the upper half-plane place $\ell$ as the imaginary axis and $P = (t, u)$; the asymptotic rays from $P$ are the geodesics through $P$ with endpoint $0$ and $\infty$, and the angle between them is computed from the hyperbolic right triangle with vertices $0$, $P$ and the foot; the right-triangle formulae give the displayed relation. $\square$</p>
+<p><strong>Corollary.</strong> As $d \to 0$ the angle of parallelism tends to $\pi/2$, and as $d \to \infty$ it decays exponentially to $0$: at small distances hyperbolic geometry resembles the Euclidean, and at large distances the departure is exponential. For every angle in $(0, \pi/2)$ there is a unique distance realising it, and for every point and every line there are exactly two rays from the point asymptotic to the line; the lines through the point that meet the line are the finitely many directions between the two asymptotic rays, and the lines that do not meet it fill an open set of directions, so there are infinitely many parallels.</p>
+<h2 id="the-isometry-group-and-discrete-groups">The Isometry Group and Discrete Groups</h2>
+<h3 id="the-two-dimensional-case">The Two-Dimensional Case</h3>
+<p><strong>Theorem.</strong> The orientation-preserving isometry group of $\mathbb{H}^2$ is $PSL(2, \mathbb{R})$, acting by Möbius transformations; the full isometry group is $PSL(2, \mathbb{R}) \rtimes \mathbb{Z}/2$, where the $\mathbb{Z}/2$ acts by $z \mapsto -\bar z$. The action is transitive on points, and the stabiliser of a point is the compact group $SO(2)$, so $\mathbb{H}^2 \cong PSL(2, \mathbb{R})/SO(2)$ is a homogeneous space.</p>
+<p><strong>Proof sketch.</strong> The group $PSL(2, \mathbb{R})$ acts transitively on the boundary $\mathbb{R} \cup \{\infty\}$ and, given three boundary points, is determined; it acts transitively on pairs of boundary points and hence on geodesics; and the stabiliser of $i$ is the rotation group generated by $z \mapsto -1/z$ and the translations by the circle action, which is $SO(2)$. $\square$</p>
+<p><strong>Definition.</strong> A Möbius transformation $f \in PSL(2, \mathbb{R})$, other than the identity, is <strong>elliptic</strong> if it has a fixed point in $\mathbb{H}^2$, <strong>parabolic</strong> if it has exactly one fixed point on the boundary, and <strong>hyperbolic</strong> if it has two fixed points on the boundary and none in $\mathbb{H}^2$. The three cases are distinguished by the absolute value of the trace: $|\operatorname{tr}| < 2$ elliptic, $= 2$ parabolic, $> 2$ hyperbolic.</p>
+<p><strong>Proposition.</strong> A hyperbolic element acts as a translation along its axis, the geodesic joining its two boundary fixed points, with a well-defined <strong>translation length</strong>; a parabolic element acts as a limit rotation about its single boundary fixed point; an elliptic element acts as a rotation about its fixed point in $\mathbb{H}^2$.</p>
+<p><strong>Proof sketch.</strong> Normalise the element by conjugacy: a hyperbolic element with fixed points $0, \infty$ is $z \mapsto \lambda z$ with $\lambda > 1$, a parabolic element with fixed point $\infty$ is $z \mapsto z + t$, and an elliptic element with fixed point $i$ is a rotation. $\square$</p>
+<p><strong>Example (the hyperbolic rotation and the algebra $\mathbb{D}$).</strong> The hyperbolic element $z \mapsto \lambda z$ acts on the imaginary axis by $it \mapsto i\lambda t$, which is $d \mapsto d + \log\lambda$ in the distance; its infinitesimal generator is the <strong>hyperbolic rotation</strong> or <strong>Lorentz boost</strong> of the split-complex algebra $\mathbb{D}$ of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>, in which $\omega^2 = +1$. The trace classification $\operatorname{tr}^2 - 4 \gtrless 0$ is the same sign trichotomy as the quadratic form $x^2 - y^2$ on the algebra, and it is the two-dimensional case of the correspondence between the three model geometries and the three real two-dimensional algebras.</p>
+<h3 id="the-three-dimensional-case">The Three-Dimensional Case</h3>
+<p><strong>Theorem.</strong> The orientation-preserving isometry group of $\mathbb{H}^3$, in the upper half-space model with coordinates $(z, t) \in \mathbb{C} \times \mathbb{R}_{>0}$, is $PSL(2, \mathbb{C})$, acting on the boundary $\mathbb{C} \cup \{\infty\} = S^2$ by Möbius transformations and extended to the interior by the <strong>Poincaré extension</strong>. The full isometry group is $PSL(2, \mathbb{C}) \rtimes \mathbb{Z}/2$.</p>
+<p><strong>Proof sketch.</strong> An orientation-preserving isometry of $\mathbb{H}^3$ extends to a conformal map of the boundary sphere, and the conformal maps of $S^2$ are the Möbius transformations $PSL(2, \mathbb{C})$; conversely each Möbius transformation extends uniquely to an isometry of the hyperbolic three-space by the Poincaré extension. $\square$</p>
+<p><strong>Remark.</strong> In dimension two the boundary is the circle with its rotation group $PSL(2, \mathbb{R})$, and in dimension three the boundary is the Riemann sphere with its Möbius group $PSL(2, \mathbb{C})$; in both cases the isometry group of hyperbolic space is the Möbius group of the boundary. This is the geometric form of the fact that the hyperbolic isometries are exactly the conformal automorphisms of the boundary, and it is the reason hyperbolic geometry is the natural home of the theory of Kleinian groups.</p>
+<h3 id="fuchsian-and-kleinian-groups">Fuchsian and Kleinian Groups</h3>
+<p><strong>Definition.</strong> A <strong>Fuchsian group</strong> is a discrete subgroup $\Gamma \leq PSL(2, \mathbb{R})$, and a <strong>Kleinian group</strong> is a discrete subgroup of $PSL(2, \mathbb{C})$. A <strong>fundamental domain</strong> for a discrete group $\Gamma$ acting on $\mathbb{H}^n$ is an open set $D$ with $\gamma D \cap D = \emptyset$ for every $\gamma \neq 1$ and $\bigcup_{\gamma \in \Gamma} \overline{\gamma D} = \mathbb{H}^n$.</p>
+<p><strong>Theorem.</strong> A discrete subgroup $\Gamma \leq \operatorname{Isom}(\mathbb{H}^n)$ acting freely and properly discontinuously on $\mathbb{H}^n$ has a quotient $\mathbb{H}^n/\Gamma$ that is a complete hyperbolic manifold; conversely every complete hyperbolic manifold arises in this way, with $\Gamma$ isomorphic to the fundamental group. A Fuchsian group with a finite-area fundamental domain gives a hyperbolic surface, whose area is $2\pi|\chi(\Sigma)|$ by Gauss–Bonnet.</p>
+<p><strong>Proof sketch.</strong> The quotient of a simply connected complete manifold by a free properly discontinuous isometric action is complete and hyperbolic; conversely the universal cover of a complete hyperbolic manifold is complete, simply connected and of curvature $-1$, hence isometric to $\mathbb{H}^n$ by Cartan's theorem, and the deck transformations are isometries. The area statement is the Gauss–Bonnet theorem for a compact surface of curvature $-1$. $\square$</p>
+<p><strong>Theorem (Mostow rigidity).</strong> Let $M$ and $N$ be complete finite-volume hyperbolic manifolds of dimension $n \geq 3$. If $\pi_1(M) \cong \pi_1(N)$ then $M$ and $N$ are isometric. Consequently the hyperbolic structure of a finite-volume hyperbolic manifold of dimension at least three is unique, and the deformation space is a single point.</p>
+<p><strong>Proof sketch.</strong> The isomorphism of fundamental groups is realised by a boundary map of the universal covers, equivariant for the two actions by the Mostow extension; the boundary map is conformal, hence Möbius, and therefore extends to an isometry. $\square$</p>
+<p><strong>Remark.</strong> Mostow rigidity fails in dimension two, where the deformation space of a hyperbolic surface is the Teichmüller space of positive dimension. The two-dimensional theory — the Teichmüller space, the mapping class group and its action, the moduli of complex structures, and the Bers and Fenchel–Nielsen coordinates — is not developed here. What belongs to this article is the geometry and the isometry group; the deformation theory of the discrete subgroups and of the quotient surfaces is not.</p>
+<h2 id="hyperbolic-space-forms-and-the-trichotomy">Hyperbolic Space Forms and the Trichotomy</h2>
+<p><strong>Definition.</strong> A <strong>hyperbolic space form</strong> is a complete connected Riemannian manifold of constant sectional curvature $-1$; equivalently, by the space-form theorem, a quotient $\mathbb{H}^n/\Gamma$ of the model by a discrete group of isometries acting freely and properly discontinuously.</p>
+<p><strong>Theorem.</strong> Every complete hyperbolic manifold is $\mathbb{H}^n/\Gamma$ for a discrete group $\Gamma \leq \operatorname{Isom}(\mathbb{H}^n)$ acting freely and properly discontinuously; the manifold is compact or of finite volume when the fundamental domain is, and its fundamental group is $\Gamma$.</p>
+<p><strong>Corollary (surfaces).</strong> Every compact orientable surface of genus $g \geq 2$ admits a hyperbolic structure; the area is $-2\pi\chi(\Sigma) = 4\pi(g-1)$ and the structure is not unique — the Teichmüller space of a genus-$g$ surface has real dimension $6g - 6$.</p>
+<p><strong>Corollary (the trichotomy).</strong> The complete connected constant-curvature geometries are exactly the spherical case of quotients of $S^n$ (finite fundamental group), the Euclidean case of quotients of $\mathbb{R}^n$ (virtually abelian fundamental group, by the Bieberbach theorems), and the hyperbolic case of quotients of $\mathbb{H}^n$ (with fundamental group containing a free group of rank two whenever the quotient is non-compact of finite volume). The three differ by the sign of the curvature, by the parallel postulate, and by the growth of the fundamental group; the comparison is not covered here.</p>
+<h2 id="summary">Summary</h2>
+<p>Hyperbolic $n$-space is the complete simply connected Riemannian manifold of constant sectional curvature $-1$. It is realised by four isometric models: the upper half-plane or half-space with the metric $y^{-2}\sum dx_i^2$, the Poincaré disk with the metric $4|dz|^2/(1-|z|^2)^2$, the hyperboloid $\{x : \langle x,x\rangle_{1,n} = -1,\ x_0>0\}$ in pseudo-Euclidean space, and its Beltrami–Klein projective image. The geodesics are the lines and semicircles orthogonal to the boundary in the half-plane model, the diameters and orthogonal arcs in the disk, and the chords in the Beltrami–Klein model; the distance is given by the cross-ratio and by the formula $\cosh d(z,w) = 1 + |z-w|^2/(2\operatorname{Im}z\operatorname{Im}w)$.</p>
+<p>The angles of a hyperbolic triangle sum to $\pi$ minus its area, the area is the defect, and the trigonometric laws are the spherical laws with the circular functions replaced by the hyperbolic ones: $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$, and $\sinh a/\sin A$ is constant. Small triangles recover Euclidean trigonometry, the deviation being measured by the area. The angle of parallelism satisfies $\tan(\Pi(d)/2) = e^{-d}$, decaying exponentially, so through a point outside a line there are infinitely many parallels, two asymptotic rays and an open set of directions between them.</p>
+<p>The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension two and $PSL(2, \mathbb{C})$ in dimension three, acting on the half-space by Möbius transformations and their Poincaré extension; the elements are classified as elliptic, parabolic and hyperbolic by the trace, corresponding to the sign of the quadratic form of the algebra $\mathbb{D}$ and to the three kinds of two-dimensional rotation. The discrete subgroups — the Fuchsian and Kleinian groups — produce complete hyperbolic manifolds as quotients, and the hyperbolic area of a compact surface is $4\pi(g-1)$. Mostow rigidity makes the hyperbolic structure of a finite-volume manifold of dimension at least three unique, while in dimension two the structures deform, and that deformation is the Teichmüller theory of the sibling articles. Hyperbolic geometry completes the trichotomy of the model geometries and is the geometry in which the parallel postulate fails in the direction of infinitely many parallels.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}^n$</td>
+<td>Hyperbolic $n$-space; the complete simply connected model of curvature $-1$</td>
+</tr>
+<tr>
+<td>$g = y^{-2}\sum_i dx_i^2$</td>
+<td>Hyperbolic metric in the upper half-plane/half-space model</td>
+</tr>
+<tr>
+<td>$g_{\mathbb{D}} = 4|dz|^2/(1-|z|^2)^2$</td>
+<td>Hyperbolic metric in the Poincaré disk model</td>
+</tr>
+<tr>
+<td>$C(z) = (z-i)/(z+i)$</td>
+<td>Cayley transform, upper half-plane $\to$ disk</td>
+</tr>
+<tr>
+<td>$\cosh d(z,w) = 1 + |z-w|^2/(2\operatorname{Im}z\operatorname{Im}w)$</td>
+<td>Distance in the upper half-plane model</td>
+</tr>
+<tr>
+<td>$[z_1,z_2;z_3,z_4]$</td>
+<td>Cross-ratio; Möbius invariant, encodes distance and endpoints</td>
+</tr>
+<tr>
+<td>$\partial\mathbb{H}^n$</td>
+<td>Boundary at infinity; $\mathbb{R}\cup\{\infty\}$ for $n=2$, $\mathbb{C}\cup\{\infty\}$ for $n=3$</td>
+</tr>
+<tr>
+<td>Ideal point, ideal triangle</td>
+<td>Boundary point; triangle with ideal vertices, of area $\pi$</td>
+</tr>
+<tr>
+<td>$\Delta = \pi - (A+B+C)$</td>
+<td>Hyperbolic area via the defect</td>
+</tr>
+<tr>
+<td>$\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$</td>
+<td>Hyperbolic law of cosines</td>
+</tr>
+<tr>
+<td>$\sinh a/\sin A = \sinh b/\sin B = \sinh c/\sin C$</td>
+<td>Hyperbolic law of sines</td>
+</tr>
+<tr>
+<td>$\Pi(d)$, $\tan(\Pi(d)/2) = e^{-d}$</td>
+<td>Angle of parallelism</td>
+</tr>
+<tr>
+<td>$PSL(2,\mathbb{R})$, $PSL(2,\mathbb{C})$</td>
+<td>Orientation-preserving isometry groups of $\mathbb{H}^2$ and $\mathbb{H}^3$</td>
+</tr>
+<tr>
+<td>Elliptic, parabolic, hyperbolic element</td>
+<td>$|\operatorname{tr}| < 2$, $=2$, $>2$; rotation, limit rotation, translation</td>
+</tr>
+<tr>
+<td>Fuchsian, Kleinian group</td>
+<td>Discrete subgroup of $PSL(2,\mathbb{R})$, of $PSL(2,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^n/\Gamma$</td>
+<td>Complete hyperbolic manifold; $\Gamma \cong \pi_1$</td>
+</tr>
+<tr>
+<td>Mostow rigidity</td>
+<td>$\dim \geq 3$, finite volume: homotopy equivalent implies isometric</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^n = H^{1,n}$</td>
+<td>Hyperboloid model in $\mathbb{R}^{1,n}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em>, 2nd ed. (Springer, 2006), for the models, the isometry groups and the space forms.</li>
+<li>James W. Anderson, <em>Hyperbolic Geometry</em>, 2nd ed. (Springer, 2005), for an elementary development of the models and trigonometry.</li>
+<li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em> (Springer, 1983), for Möbius transformations, Fuchsian groups and their classification.</li>
+<li>D. B. A. Epstein and A. Marden, "Convex hulls in hyperbolic space, a theorem of Sullivan, and measured pleated surfaces", in <em>Analytical and Geometric Aspects of Hyperbolic Space</em> (Cambridge University Press, 1987), for the boundary theory.</li>
+<li>William P. Thurston, <em>Three-Dimensional Geometry and Topology, Volume I</em> (Princeton University Press, 1997), for hyperbolic three-manifolds and their geometry.</li>
+<li>G. D. Mostow, <em>Strong Rigidity of Locally Symmetric Spaces</em> (Princeton University Press, 1973), for the rigidity theorem.</li>
+<li>Peter Buser, <em>Geometry and Spectra of Compact Riemann Surfaces</em> (Birkhäuser, 1992), for the hyperbolic geometry of surfaces and its use in Teichmüller theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

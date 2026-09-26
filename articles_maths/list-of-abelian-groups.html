@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Abelian Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-abelian-groups"><strong>List of Abelian Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the abelian groups the corpus meets, grouped by the structure theorem that classifies each family: the finitely generated groups, classified by a free rank and a torsion part; the torsion and the torsion-free groups, split by the torsion subgroup and the rank; the divisible groups, classified by their rank; and the profinite abelian groups, which carry a topology as well as a group law. Beside each family the list names the theorem that classifies it.</p>
+<p>Every entry points to the article that introduces the group and names the invariant recorded there. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being an abelian group that fails one property of its family, with the failure named and the article that records it.</p>
+<h2 id="finitely-generated-abelian-groups">Finitely Generated Abelian Groups</h2>
+<p>A finitely generated abelian group is a direct sum of a free abelian group of finite rank and a finite abelian group, and the finite part is a direct sum of cyclic groups. The invariants are unique in two normal forms, the <strong>invariant factors</strong> $d_1 \mid \cdots \mid d_k$ and the <strong>elementary divisors</strong> $p_i^{e_i}$, and the theorem is the case $R = \mathbb{Z}$ of the structure theorem for finitely generated modules over a principal ideal domain.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}^r$</td>
+<td>free abelian of rank $r$; the free part of a finitely generated group</td>
+<td><em>Finitely Generated Abelian Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+<td>cyclic of order $n$, with $n$ decomposed into prime powers</td>
+<td><em>Finitely Generated Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Finite abelian group</td>
+<td>a direct sum of cyclic groups of prime-power order, uniquely</td>
+<td><em>Finitely Generated Abelian Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p^{e_1}\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/p^{e_k}\mathbb{Z}$</td>
+<td>the elementary-divisor form of the $p$-primary part</td>
+<td><em>Finitely Generated Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Group with invariant factors $d_1 \mid \cdots \mid d_k$</td>
+<td>the divisibility-ordered form of the torsion part</td>
+<td><em>Finitely Generated Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Relations matrix and Smith normal form</td>
+<td>the algorithm computing the invariants from a presentation</td>
+<td><em>Finitely Generated Abelian Groups</em></td>
+</tr>
+<tr>
+<td>$(\mathbb{Z},+)$</td>
+<td>free abelian of rank $1$; its torsion subgroup is trivial</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}^r$ with $r \geq 1$</td>
+<td>fails to be torsion: it has no nonzero element of finite order</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}/n\mathbb{Z}$ with $n \geq 2$</td>
+<td>fails to be torsion-free: every element has finite order</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: the free abelian group of rank $\geq 2$</td>
+<td>fails to be a free group: it satisfies $[a,b]=1$</td>
+<td><em>Generators, Presentations and Free Products</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="torsion-and-torsion-free-groups">Torsion and Torsion-Free Groups</h2>
+<p>The <strong>torsion subgroup</strong> $T(A)$ collects the elements of finite order, and $A$ is torsion, torsion-free or mixed according to what $T(A)$ is. The torsion groups decompose into their <strong>primary components</strong> $A_p$, and the countable primary groups are classified by the <strong>Ulm invariants</strong>; the torsion-free groups are classified by their rank only in the free case, the countable torsion-free groups admitting no comparably simple description.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Torsion subgroup $T(A)$</td>
+<td>the elements of finite order; a subgroup</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>$A[p]$</td>
+<td>the elements of order dividing $p$</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Primary component $A_p$</td>
+<td>the $p$-primary summand of a torsion group</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Torsion group</td>
+<td>a group with $T(A)=A$; a direct sum of its primary components</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Torsion-free group</td>
+<td>a group with $T(A)=0$; contains a free subgroup of the same rank</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Rank $\operatorname{rk}(A)$</td>
+<td>the cardinality of a maximal linearly independent set</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Prüfer $p$-group $\mathbb{Z}[p^\infty]$</td>
+<td>the $p$-primary torsion group of the $p^n$-th roots of unity</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Ulm invariants $U(k,G)$</td>
+<td>the complete invariants of a countable primary group</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: a countable torsion-free group of rank $\geq 2$</td>
+<td>fails to be classified by rank alone: the torsion-free classification is intractable</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Q}$</td>
+<td>fails to be free: it is torsion-free but has no basis over $\mathbb{Z}$</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="divisible-groups">Divisible Groups</h2>
+<p>A <strong>divisible</strong> group is one in which every element is divisible by every positive integer; the divisible groups are classified by their rank as direct sums of copies of $\mathbb{Q}$ and of the Prüfer groups $\mathbb{Z}[p^\infty]$. Every group embeds in a divisible group, its <strong>divisible hull</strong>, which is unique up to isomorphism.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Divisible group $D$</td>
+<td>every element is $n$-divisible for every $n$</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>the divisible torsion-free group of rank $1$; the divisible hull of $\mathbb{Z}$</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}/\mathbb{Z}$</td>
+<td>the torsion divisible group, the direct sum of the Prüfer groups</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[p^\infty]$</td>
+<td>the Prüfer $p$-group; divisible and torsion</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>$D^{(I)}$</td>
+<td>the direct sum of $|I|$ copies of the fixed rank-one divisible group $D$; the general divisible torsion-free group</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Divisible hull</td>
+<td>the smallest divisible group containing a given group; unique</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}$</td>
+<td>fails divisibility: $1$ is not divisible by $2$</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Non-example: a finite abelian group</td>
+<td>fails divisibility: no nonzero element is infinitely divisible</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="profinite-and-topological-abelian-groups">Profinite and Topological Abelian Groups</h2>
+<p>A <strong>profinite abelian group</strong> is an inverse limit of finite abelian groups, equivalently a compact totally disconnected abelian group; the group carries a topology as well as a group law, and the topological theory, including Pontryagin duality, belongs to Part II. The additive groups $\mathbb{Z}_p$ and the profinite completion $\hat{\mathbb{Z}}$ are the standard examples, and the Galois groups of the arithmetic articles are their non-abelian relatives.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}_p$</td>
+<td>the additive group of $p$-adic integers; profinite, torsion-free and not divisible</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>$\hat{\mathbb{Z}}$</td>
+<td>the profinite completion of $\mathbb{Z}$, isomorphic to $\prod_p \mathbb{Z}_p$</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>Profinite completion $\hat{A}$</td>
+<td>the inverse limit of the finite quotients of $A$</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>Inverse limit of finite abelian groups</td>
+<td>a compact totally disconnected abelian group</td>
+<td><em>Profinite Groups and the Krull Topology</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p$</td>
+<td>the additive group of $p$-adic numbers; locally compact, not compact</td>
+<td><em>The $p$-adic Numbers</em></td>
+</tr>
+<tr>
+<td>Pontryagin dual $\hat{A} = \operatorname{Hom}(A,\mathbb{R}/\mathbb{Z})$</td>
+<td>the dual of a locally compact abelian group; an exact contravariant equivalence</td>
+<td><em>Pontryagin Duality</em> (Part II)</td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Z}_p$</td>
+<td>fails divisibility: $p$ does not divide $1$ in $\mathbb{Z}_p$</td>
+<td><em>The $p$-adic Numbers</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Q}$ with the discrete topology</td>
+<td>fails compactness: its Pontryagin dual is not compact</td>
+<td><em>Pontryagin Duality</em> (Part II)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="abelian-groups-as-modules-and-as-coefficients">Abelian Groups as Modules and as Coefficients</h2>
+<p>Because an abelian group is exactly a module over $\mathbb{Z}$, the module theory of the corpus is the abelian theory in a general ring: the structure theorem over a principal ideal domain applies to $\mathbb{Z}$, the rank is the free rank, and the annihilator of an element is the ideal generated by its order. Abelian groups also serve as the coefficient objects of group cohomology and homology.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>The property it has</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abelian group as a $\mathbb{Z}$-module</td>
+<td>the scalar action $na$ is the integer multiple</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Structure theorem over a PID</td>
+<td>the classification of finitely generated modules, hence of finitely generated abelian groups</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>Torsion submodule $M_{\mathrm{tor}}$</td>
+<td>the module form of the torsion subgroup</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>Annihilator $\operatorname{Ann}(m)$</td>
+<td>the ideal of scalars killing $m$, generated by $\operatorname{ord}(m)$ over $\mathbb{Z}$</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>Coefficient group of group cohomology</td>
+<td>the abelian group $M$ in $H^n(G,M)$</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Schur multiplier $H_2(G,\mathbb{Z})$</td>
+<td>the second homology with abelian coefficients</td>
+<td><em>Group Cohomology</em></td>
+</tr>
+<tr>
+<td>Non-example: a non-free finitely generated torsion-free module over a general ring</td>
+<td>fails the PID structure theorem: over a general ring it need not be free</td>
+<td><em>Modules</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-classification-in-each-family">The Classification in Each Family</h2>
+<p>Each family is pinned by one invariant, and the table gathers the four statements so that the family and its classifying theorem stand together.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>The classifying invariant</th>
+<th>The theorem</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Finitely generated</td>
+<td>the rank and the invariant factors $d_1 \mid \cdots \mid d_k$</td>
+<td>the structure theorem for finitely generated modules over a PID</td>
+<td><em>Finitely Generated Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Torsion</td>
+<td>the primary components, and the Ulm invariants within a countable primary group</td>
+<td>Ulm's theorem</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Torsion-free</td>
+<td>the rank</td>
+<td>rank classifies the free and the divisible cases, and fails in general</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Divisible</td>
+<td>the rank, with one copy of $\mathbb{Q}$ or $\mathbb{Z}[p^\infty]$ per rank</td>
+<td>the structure theorem for divisible groups</td>
+<td><em>Infinite Abelian Groups</em></td>
+</tr>
+<tr>
+<td>Profinite</td>
+<td>the Pontryagin dual, a discrete torsion group</td>
+<td>Pontryagin duality</td>
+<td><em>Pontryagin Duality</em> (Part II)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the abelian groups of the corpus. The finitely generated groups are the free abelian groups and the finite abelian groups, classified by the invariant factors and the elementary divisors; the torsion and torsion-free groups are separated by the torsion subgroup, the torsion groups decomposing into primary components and the countable primary groups classified by the Ulm invariants; the divisible groups are the direct sums of copies of $\mathbb{Q}$ and of the Prüfer groups, classified by their rank, with the divisible hull as the universal embedding; and the profinite abelian groups are the inverse limits of finite abelian groups, with $\mathbb{Z}_p$ and $\hat{\mathbb{Z}}$ as the standard examples and Pontryagin duality as their topological theory. The abelian groups are also the modules over $\mathbb{Z}$ and the coefficients of group cohomology. The non-examples — $\mathbb{Z}^r$, $\mathbb{Z}/n\mathbb{Z}$, the free abelian group of rank at least two, the countable torsion-free group of rank at least two, $\mathbb{Q}$ as a non-free group, $\mathbb{Z}$ and a finite group as non-divisible groups, $\mathbb{Z}_p$, and $\mathbb{Q}$ with the discrete topology — name the property that each fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Z}^r$, $\mathbb{Z}/n\mathbb{Z}$</td>
+<td>integers, free abelian of rank $r$, cyclic group</td>
+</tr>
+<tr>
+<td>$T(A)$, $A_p$, $A[p]$</td>
+<td>torsion subgroup, primary component, $p$-torsion</td>
+</tr>
+<tr>
+<td>$\operatorname{rk}(A)$</td>
+<td>rank of an abelian group</td>
+</tr>
+<tr>
+<td>$U(k,G)$</td>
+<td>Ulm invariant of a countable primary group</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$, $\mathbb{Q}/\mathbb{Z}$</td>
+<td>rationals and the torsion divisible group</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[p^\infty]$</td>
+<td>Prüfer $p$-group</td>
+</tr>
+<tr>
+<td>$D$, $D^{(I)}$</td>
+<td>rank-one divisible group and its direct sum</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$, $\hat{\mathbb{Z}}$, $\mathbb{Q}_p$</td>
+<td>$p$-adic integers, profinite integers, $p$-adic numbers</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}(A,\mathbb{R}/\mathbb{Z})$</td>
+<td>Pontryagin dual</td>
+</tr>
+<tr>
+<td>$\bigoplus_i A_i$, $\prod_i A_i$</td>
+<td>direct sum and direct product</td>
+</tr>
+<tr>
+<td>$d_1 \mid \cdots \mid d_k$, $p_i^{e_i}$</td>
+<td>invariant factors and elementary divisors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>László Fuchs, <em>Infinite Abelian Groups</em>, Vols. I–II (Academic Press, 1970–1973), for the torsion, torsion-free, divisible and primary classifications and the Ulm invariants.</li>
+<li>Irving Kaplansky, <em>Infinite Abelian Groups</em> (University of Michigan Press, 1954), for the structure theory and the divisible and reduced decompositions.</li>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, 4th ed. 1995), for the finitely generated structure theorem and the invariant-factor and elementary-divisor forms.</li>
+<li>Sidney A. Morris, <em>Pontryagin Duality and the Structure of Locally Compact Abelian Groups</em> (Cambridge University Press, 1977), for the profinite and topological abelian groups and their duality.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

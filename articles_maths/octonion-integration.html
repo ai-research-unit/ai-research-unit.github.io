@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Octonion Integration — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="octonion-integration"><strong>Octonion Integration</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the integration slot of the octonion system. It treats the integration of octonion-valued functions: the boundary integrals of hypercomplex analysis, the Stokes and divergence theorems for the octonionic Cauchy–Riemann operator, the Cauchy integral theorem and its invariance under deformation of the contour, the jump formulas for the boundary values of the Cauchy integral, and the exact places where non-associativity changes the classical theory.</p>
+<p>The article is the octonion member of the integration slots of this Part and follows the model of the <em>Quaternion Integration</em> and <em>Split-Biquaternion Integration</em>, together with the Cauchy theory of <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em>. It takes the operator $D$, the kernel $E$, the monogenic class and the Cauchy–Pompeiu formula from <em>Octonion Analysis</em> and does not repeat them; the object here is the integral as an operation. The harmonic analysis on $\mathbb{O}$ is the subject, and the functions of the next slot.</p>
+<p><strong>Conventions.</strong> As in <em>Octonion Analysis</em>: $\mathbb{O}$ with basis $e_0,\dots,e_7$, variable $x = \sum_kx_ke_k$, partial derivatives $\partial_k$, conjugation $\bar\cdot$, inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$, norm $\lvert x\rvert^2 = x\bar x$; the Cauchy–Riemann operator is $D = \sum_{k=0}^{7}e_k\partial_k$ and its conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, with $D\bar D = \bar DD = \Delta_8$; the kernel is $E(x) = \bar x/(\omega_7\lvert x\rvert^8)$, $\omega_7 = \operatorname{vol}S^7 = \pi^4/3$; $\mathcal{M}_L$ and $\mathcal{M}_R$ are the left- and right-monogenic classes. Integrals are taken with respect to the Euclidean volume and surface measures $dV$ and $dS$, and a domain is a bounded connected open set with smooth boundary, oriented as the boundary of the domain, with outward unit normal $n$.</p>
+<h2 id="integrals-of-octonion-valued-functions">Integrals of Octonion-Valued Functions</h2>
+<h3 id="the-integral-and-its-elementary-properties">The Integral and its Elementary Properties</h3>
+<p><strong>Definition.</strong> Let $f : \Omega\to\mathbb{O}$ be continuous and integrable on a domain $\Omega$; the <strong>integral</strong> $\int_\Omega f\,dV$ is the octonion whose components are the eight real integrals of the components of $f$ in the basis $e_0,\dots,e_7$. For a surface $\Sigma$ with a chosen orientation and a continuous integrand, $\int_\Sigma f\,dS$ is defined similarly componentwise.</p>
+<p><strong>Proposition.</strong> The integral is $\mathbb{R}$-linear but not $\mathbb{O}$-linear: for a constant octonion $a$,</p>
+<p>$$
+\int_\Omega af\,dV = a\int_\Omega f\,dV, \qquad \int_\Omega fa\,dV = \left(\int_\Omega f\,dV\right)a ,
+$$</p>
+<p>so that multiplication by a constant commutes with integration exactly as it commutes with any finite sum, and there is no difficulty of associativity because no product of two variable octonions occurs. In particular the integral of a product is not computable from the integrals of the factors: $\int fg \neq \left(\int f\right)\left(\int g\right)$ in general, and not only because of the inequality of the moduli.</p>
+<p><em>Proof.</em> Both identities are the linearity of the componentwise integral with respect to scalar multiplication on the left and on the right, and the multiplication by a constant is a linear map of $\mathbb{O}$. $\square$</p>
+<p><strong>Remark.</strong> The distinction between the two displayed identities matters: because $\mathbb{O}$ is not commutative, the position of the constant relative to the integrand is part of the statement of the integral, and an integral is a sum of values of the function, so a change of the order of the factors inside the integrand changes the value of the integral. This is the first place where the non-commutativity of the octonions appears in integration, before any question of associativity.</p>
+<h3 id="the-divergence-theorem-and-the-operator-math35">The Divergence Theorem and the Operator $D$</h3>
+<p><strong>Theorem (divergence theorem).</strong> Let $\Omega$ be a domain with smooth boundary and $f$ a $C^1$ octonion-valued function on $\bar\Omega$. Then</p>
+<p>$$
+\int_{\partial\Omega}n(y)f(y)\,dS(y) = \int_\Omega \left(\bar D f\right)(y)\,dV(y), \qquad\text{where } \bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k ,
+$$</p>
+<p>and, with the operator acting from the right,</p>
+<p>$$
+\int_{\partial\Omega}f(y)n(y)\,dS(y) = \int_\Omega (fD)(y)\,dV(y) .
+$$</p>
+<p><em>Proof.</em> The first identity is the classical divergence theorem applied to the eight real components of $f$: the normal component $n_kf$ has divergence $\partial_kf$, and assembling the eight identities with the basis elements and the signs of $\bar D$ gives the display. The order of the factors is the order of the multiplication by the constant basis elements in the assembly. The second identity is the same statement with the roles of the basis elements reversed, that is, it is the first identity applied to the conjugate function and conjugated back, using the conjugacy $\overline{Df} = \bar fD$ of <em>Octonion Analysis</em>. $\square$</p>
+<p>The divergence theorem is the fundamental integration identity of the octonionic calculus, and it is the form in which the operator meets the integral. Its content is the same as in the real case: what is new is only the bookkeeping of the order of the factors, fixed by the position of $\bar D$ or of $D$ in the identity.</p>
+<p><strong>Corollary (Green's identity).</strong> Let $u$ be real-valued of class $C^1$ and $v$ octonion-valued of class $C^1$ on $\bar\Omega$. Then</p>
+<p>$$
+\int_{\partial\Omega}u(y)\,n(y)\,v(y)\,dS(y) = \int_\Omega\left[(\bar Du)(y)\,v(y) + u(y)\,(\bar Dv)(y)\right]dV(y) ,
+$$</p>
+<p>with the multiplication by the scalar $u$ on the left of $v$ in both terms.</p>
+<p><em>Proof.</em> Apply the divergence theorem to the product $uv$ and use $\bar D(uv) = (\bar Du)v + u(\bar Dv)$. The product rule in this form holds because $u$ and its partial derivatives are real scalars, hence central and associative with everything. $\square$</p>
+<p><strong>Remark.</strong> For octonion-valued $u$ the same computation acquires associator corrections: the difference between $\bar D(uv)$ and $(\bar Du)v + u(\bar Dv)$ is a sum of terms each of which is an associator with one factor $e_k$ or $\bar e_k$, exactly as in the product rule of <em>Octonion Analysis</em> for $D$ in place of $\bar D$, and it vanishes identically only in the associative case. The classical Green identity in its displayed form is therefore a statement about a scalar weight; for two octonion-valued functions it holds only up to those correction terms.</p>
+<h2 id="the-cauchy-integral-theorem">The Cauchy Integral Theorem</h2>
+<p><strong>Theorem (Cauchy integral theorem).</strong> Let $f$ be left-monogenic on a domain $\Omega$ containing a closed hypersurface $\Sigma$ bounding a domain $\Omega_\Sigma$, and let $x\notin\bar\Omega_\Sigma$. Then</p>
+<p>$$
+\int_\Sigma \frac{\overline{y - x}}{\lvert y - x\rvert^8}\,n(y)\,f(y)\,dS(y) = 0 ,
+$$</p>
+<p>and more generally the integral $\int_\Sigma K_x(y)\,n(y)f(y)dS(y)$ depends only on the homology class of $\Sigma$ in $\Omega\setminus\{x\}$, where $K_x(y) = \overline{y-x}/\lvert y-x\rvert^8$ and $n$ is the outer normal of the region bounded.</p>
+<p><em>Proof.</em> The integrand is $E(y-x)n(y)f(y)$, and its divergence with respect to $y$ is computed by the product rule; for $y\neq x$ the kernel is monogenic on both sides, and the terms combine to a divergence, so Stokes' theorem makes the integral depend only on the homology class. The argument is the standard one of the Cauchy theory of the octonionic operator, with the sources cited; the cancellations happen before any product of two monogenic functions is formed. $\square$</p>
+<p><strong>Corollary.</strong> The kernel is normalised by the sphere: for every $r>0$,</p>
+<p>$$
+\frac{1}{\omega_7}\int_{\lvert y\rvert = r}\frac{\bar y}{r^8}\,\frac{y}{r}\,dS(y) = e_0 ,
+$$</p>
+<p>so that the integral of the kernel against the outer normal over a sphere is the identity, independently of the radius.</p>
+<p><em>Proof.</em> Apply the Cauchy integral formula of <em>Octonion Analysis</em> to the constant function $f = e_0$ and $x = 0$; the left side is the displayed integral. Alternatively, compute it directly: $\bar yy = r^2$, so the integrand is $r^{-7}e_0dS$ and the integral is $\omega_7r^7\cdot r^{-7}e_0 = \omega_7e_0$. $\square$</p>
+<p>The corollary exhibits the sphere as the cycle that detects the singularity of the kernel, in exact analogy with the complex and quaternionic cases; it is the source of the Cauchy formula and of the "winding" of a general cycle relative to a point.</p>
+<p><strong>Theorem (homology form of the Cauchy formula).</strong> Let $f$ be left-monogenic on a domain $\Omega$, let $x\in\Omega$, and let $\Sigma\subset\Omega\setminus\{x\}$ be a closed oriented hypersurface homologous in $\Omega\setminus\{x\}$ to a small sphere around $x$ with the linking orientation. Then</p>
+<p>$$
+f(x) = \frac{1}{\omega_7}\int_\Sigma E(y-x)\,n(y)\,f(y)\,dS(y) .
+$$</p>
+<p><em>Proof.</em> The difference of the two cycles is a boundary in $\Omega\setminus\{x\}$, and the Cauchy integral over a boundary is zero by the Cauchy integral theorem; hence the integrals over $\Sigma$ and over the small sphere agree, and the latter equals $f(x)$ by the Cauchy formula on a ball. $\square$</p>
+<p>The homology form is the reason why the Cauchy integral is a topological object in the octonionic case as in the associative cases: the value at a point is determined by a cycle up to homology, and the entire dependence on the function is through its boundary values on that cycle.</p>
+<h2 id="boundary-values-and-jump-formulas">Boundary Values and Jump Formulas</h2>
+<p><strong>Definition.</strong> Let $\Sigma$ be a closed hypersurface bounding a domain $\Omega$ with outward normal $n$ and let $f$ be a Hölder-continuous $\mathbb{O}$-valued function on $\Sigma$. The <strong>Cauchy integral operator</strong> is</p>
+<p>$$
+(\mathcal{C}f)(x) = \frac{1}{\omega_7}\int_\Sigma E(y-x)\,n(y)\,f(y)\,dS(y), \qquad x\notin\Sigma .
+$$</p>
+<p><strong>Theorem (jump formulas).</strong> The function $\mathcal{C}f$ is left-monogenic on the complement of $\Sigma$, vanishes at infinity, and has boundary values from the two sides related by</p>
+<p>$$
+(\mathcal{C}f)^+(z) = \tfrac12 f(z) + (\mathcal{C}f)(z), \qquad (\mathcal{C}f)^-(z) = -\tfrac12 f(z) + (\mathcal{C}f)(z), \qquad z\in\Sigma ,
+$$</p>
+<p>where the integrals are principal values and $(\mathcal{C}f)^\pm$ denote the limits from outside and from inside; hence $(\mathcal{C}f)^+ - (\mathcal{C}f)^- = f$.</p>
+<p><em>Proof.</em> The standard Plemelj–Sokhotski argument: the singular integral with the kernel $E(y-x)$ has a principal value, and the difference of the two boundary values is the integral of the kernel over an infinitesimal sphere, which is the identity by the normalisation corollary. The monogenicity away from $\Sigma$ is the monogenicity of the kernel composed with the function. The argument uses the associativity of the triple products involved only in the order in which they are written. $\square$</p>
+<p>The jump formulas are the boundary-value theory of the octonionic Cauchy integral, and they are the exact analogues of the complex ones, because the singularity of the kernel is detected by the sphere and the sphere integral is a scalar multiple of the identity; what fails in the octonionic case, and fails also for the quaternions, is the possibility of iterating the operator to obtain a product formula for boundary values, since the composition of two Cauchy integrals would require the product of two monogenic functions, which need not be monogenic.</p>
+<h3 id="the-composition-and-its-failure">The Composition and its Failure</h3>
+<p><strong>Theorem.</strong> The composition of the Cauchy integral operator with itself does not have the classical form: for $f$ continuous on $\Sigma$, the iterated integral</p>
+<p>$$
+(\mathcal{C}\mathcal{C}f)(x) = \frac{1}{\omega_7^2}\int_\Sigma E(y-x)n(y)\left(\int_\Sigma E(z-y)n(z)f(z)dS(z)\right)dS(y)
+$$</p>
+<p>is not in general equal to $\mathcal{C}f$ or to a constant multiple of $f$, and there is no identity of the form $\mathcal{C}^2 = \mathcal{C}$.</p>
+<p><em>Proof.</em> The classical proof of the idempotence of the Cauchy transform uses the associativity of the product of the kernel with the function to interchange the order of the two integrations and identify a composition kernel; in the octonionic case the interchange produces associator terms $[E(y-x),n(y),E(z-y)]$, which do not vanish identically, and the composition kernel is not the single kernel. Hence no such identity holds; the failure is the same as the failure of the product of monogenic functions to be monogenic, transferred to the level of the integral. $\square$</p>
+<p>This is the integration-theoretic face of the failure of the Leibniz rule of <em>Octonion Analysis</em>: the Cauchy integral is a good operator, but it is not an idempotent projector, and the space of boundary values is not an algebra of holomorphic-type functions in the sense of the complex theory. The harmonic analysis takes the place of the missing function algebra in the spectral description.</p>
+<h2 id="integrals-on-the-sphere-and-orthogonality">Integrals on the Sphere and Orthogonality</h2>
+<p><strong>Definition.</strong> For $k\geq0$ let $\mathcal{P}_k$ be the space of octonion-valued homogeneous polynomials of degree $k$ that are left-monogenic, that is, the space of homogeneous solutions of $Df = 0$ of degree $k$.</p>
+<p><strong>Proposition.</strong> Every element of $\mathcal{P}_k$ is harmonic on $\mathbb{R}^8$, hence its restriction to the unit sphere is an eigenfunction of the spherical Laplacian with eigenvalue $-k(k+6)$; the spaces $\mathcal{P}_k$ and $\mathcal{P}_l$ are orthogonal with respect to the $L^2$ inner product on $S^7$ whenever $k\neq l$, and each $\mathcal{P}_k$ is a finite-dimensional real vector space.</p>
+<p><em>Proof.</em> Harmonicity is $D\bar D = \Delta_8$; the eigenvalue statement is the standard separation of variables for a homogeneous harmonic polynomial of degree $k$ in eight variables, where the radial equation is $r^{-k-6}(r^8(r^{-k}v)')' = 0$ and gives the shift $k+6$. Orthogonality of different degrees is the standard orthogonality of spherical harmonics; finite-dimensionality is the finite-dimensionality of the space of polynomials of bounded degree. $\square$</p>
+<p>The shift $k+6$ is the octonionic case of the general rule $k+n-2$ for spherical harmonics in $n$ variables with $n = 8$; the dimension of $\mathcal{P}_k$ is computed by the theory of the harmonic analysis of the octonions, and the orthogonal decomposition of $L^2(S^7)$ into the spaces $\mathcal{P}_k$ is not covered here.</p>
+<p><strong>Proposition.</strong> For a left-monogenic function $f$ on a ball of radius $r$ the surface integral of $f$ over the sphere is computable from the value at the centre,</p>
+<p>$$
+\int_{\lvert y\rvert = r}f(y)\,dS(y) = \omega_7r^7f(0),
+$$</p>
+<p>and more generally the mean value property of <em>Octonion Analysis</em> expresses every interior value as a surface integral over a sphere centred at the point.</p>
+<p><em>Proof.</em> The mean value property of <em>Octonion Analysis</em>, multiplied by the volume of the sphere. $\square$</p>
+<p>The expansion of the kernel in monogenic polynomials of increasing degree turns the Cauchy formula into a Taylor expansion of a monogenic function, with the coefficients given by the integrals of the function against the monogenic polynomials of dual degree; the details are those of the associative theory and carry over, since the argument involves only the kernel, the function and the sphere, and never a product of two variable octonions.</p>
+<h3 id="the-stokes-theorem-for-the-calibration-forms">The Stokes Theorem for the Calibration Forms</h3>
+<p>The constant-coefficient forms of the octonion geometry integrate by a Stokes theorem of the simplest kind, and the integration makes the calibration argument of <em>Octonion Geometry</em> quantitative.</p>
+<p><strong>Proposition.</strong> Let $\varphi$ be the associative three-form and $\psi = \ast\varphi$ its dual on $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$, and let $\Phi = e^0\wedge\varphi+\psi$ be the Cayley four-form on $\mathbb{R}^8$, all with constant coefficients. Then $d\varphi = 0$, $d\psi = 0$ and $d\Phi = 0$; consequently for a compact oriented submanifold $L$ with boundary,</p>
+<p>$$
+\int_L d\varphi = \int_{\partial L}\varphi = 0 , \qquad
+\int_L d\psi = \int_{\partial L}\psi = 0 , \qquad
+\int_L d\Phi = \int_{\partial L}\Phi = 0 ,
+$$</p>
+<p>so that the integrals of the calibration forms over closed submanifolds depend only on the homology class, and the Stokes theorem for these forms is the divergence theorem of the previous section applied to their coefficient functions.</p>
+<p><em>Proof.</em> The forms have constant coefficients, so their exterior derivatives vanish; Stokes' theorem then gives the vanishing of the boundary integrals, and the invariance under homology is the same statement for two homologous cycles. $\square$</p>
+<p><strong>Corollary (calibrated minimality, integral form).</strong> Let $L\subset\operatorname{Im}\mathbb{O}$ be a compact oriented three-dimensional submanifold with $\varphi$ of constant sign on each tangent plane, so that $L$ is calibrated by $\varphi$ in the sense of <em>Octonion Geometry</em>. Then for every compact oriented three-dimensional $L'$ homologous to $L$,</p>
+<p>$$
+\operatorname{vol}(L) = \int_L\varphi = \int_{L'}\varphi \leq \operatorname{vol}(L') ,
+$$</p>
+<p>with equality exactly when $L'$ is calibrated by $\varphi$ as well; the same argument with $\psi$ gives the coassociative four-folds, and with $\Phi$ the Cayley four-folds of $\mathbb{R}^8$.</p>
+<p><em>Proof.</em> The calibration inequality $\lvert\varphi(\xi_1,\xi_2,\xi_3)\rvert\leq1$ on orthonormal triples gives $\varphi\leq$ the volume form on each oriented tangent plane, with equality exactly on calibrated planes; integrating over $L$ gives $\int_L\varphi = \operatorname{vol}(L)$, and over $L'$ gives $\int_{L'}\varphi\leq\operatorname{vol}(L')$; the integrals agree by the homology invariance of the preceding proposition, and equality forces equality in the pointwise inequality almost everywhere. $\square$</p>
+<p>The corollary is the integral form of the calibration statement: the constancy of the forms reduces the minimality of the calibrated submanifolds to the Stokes theorem and a pointwise algebraic inequality, and no property of the octonion multiplication beyond the existence of the forms is used. This is the reason why the calibrated submanifolds of the exceptional geometries of <em>Octonions and Exceptional Geometry</em> can be studied by the closedness of the forms alone, the multiplication entering only through the identification of their stabilisers.</p>
+<h2 id="summary">Summary</h2>
+<p>Integration of octonion-valued functions is componentwise, hence $\mathbb{R}$-linear, and multiplication by a constant passes through the integral from either side; the position of a constant factor in the integrand is part of the meaning of the integral, because the algebra is not commutative. The divergence theorem reads</p>
+<p>$$
+\int_{\partial\Omega}n(y)f(y)dS(y) = \int_\Omega(\bar Df)(y)dV(y), \qquad \int_{\partial\Omega}f(y)n(y)dS(y) = \int_\Omega(fD)(y)dV(y),
+$$</p>
+<p>with the order of the factors fixed by the operator, and it produces the Green identity for the product of two functions, with the caveat that the identity in its displayed form holds when the associator terms of the product rule vanish.</p>
+<p>The Cauchy integral theorem makes the boundary integral of the kernel against a monogenic function depend only on the homology class of the contour; the sphere normalisation shows that the kernel has total mass one against the outer normal, and the homology form of the Cauchy formula recovers $f(x)$ from any cycle linking $x$. The Cauchy integral operator has principal values and satisfies the classical jump formulas on a smooth hypersurface, so that the difference of its boundary values is the density; but the operator is not idempotent, because the classical proof requires the interchange of two integrations through an associative product, and the interchanged terms carry associators. Monogenic homogeneous polynomials are harmonic spherical harmonics with the eigenvalue shift $k+6$ in the exponent, orthogonal across degrees, and their integrals against the kernel give the Taylor coefficients.</p>
+<p>The single structural difference from the associative cases is therefore the failure of the composition law: the Leibniz defect of the octonionic analysis destroys the product formula for monogenic functions and hence the idempotence of the Cauchy transform, while leaving the divergence theorem, the normalisation of the kernel, the homology invariance and the jump formulas intact.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$, $e_0,\dots,e_7$</td>
+<td>Octonion algebra and basis, $e_k^2 = -e_0$ for $k\geq1$</td>
+</tr>
+<tr>
+<td>$D = \sum_{k=0}^{7}e_k\partial_k$, $\bar D$</td>
+<td>Cauchy–Riemann operator and its conjugate</td>
+</tr>
+<tr>
+<td>$E(x) = \bar x/(\omega_7\lvert x\rvert^8)$</td>
+<td>Kernel, $DE = ED = \delta_0$</td>
+</tr>
+<tr>
+<td>$\omega_7 = \pi^4/3$</td>
+<td>Volume of $S^7$</td>
+</tr>
+<tr>
+<td>$n$, $dS$, $dV$</td>
+<td>Outward unit normal, surface and volume measures</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_L$, $\mathcal{M}_R$</td>
+<td>Left- and right-monogenic functions</td>
+</tr>
+<tr>
+<td>$\mathcal{C}f$</td>
+<td>Cauchy integral operator with density $f$</td>
+</tr>
+<tr>
+<td>$(\mathcal{C}f)^\pm$</td>
+<td>Boundary values from outside and inside</td>
+</tr>
+<tr>
+<td>$\mathcal{P}_k$</td>
+<td>Left-monogenic homogeneous polynomials of degree $k$</td>
+</tr>
+<tr>
+<td>$[x,y,z]$, $[x,y]$</td>
+<td>Associator and commutator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>F. Brackx, Richard Delanghe and Frank Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the divergence theorem, the Cauchy integral operator, the Plemelj–Sokhotski formulas and the idempotence of the Cauchy transform in the associative case.</li>
+<li>John Ryan, "Applications of Clifford analysis to inverse scattering", in <em>Clifford Algebras and their Applications in Mathematical Physics</em> (Kluwer, 1993), for the boundary-value theory of the hypercomplex Cauchy integral.</li>
+<li>Klaus Gürlebeck and Wolfgang Sprößig, <em>Quaternionic and Clifford Calculus for Physicists and Engineers</em> (Wiley, 1997), for the Green identities, the Taylor expansion with the kernel and the spherical harmonic decomposition.</li>
+<li>Rolf Sören Krausshar, <em>Generalized Analytic Automorphic Forms in Hypercomplex Spaces</em> (Birkhäuser, 2004), for the octonionic Cauchy integral and the composition defects.</li>
+<li>Guochang Li, <em>The Cauchy–Riemann Operator in Octonionic Analysis</em> (Harbin Institute of Technology Press, 2005), for the octonionic Stokes and Green theorems and their order conventions.</li>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton University Press, 1971), for the spherical harmonics, the eigenvalues of the spherical Laplacian and the orthogonal decompositions used above.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

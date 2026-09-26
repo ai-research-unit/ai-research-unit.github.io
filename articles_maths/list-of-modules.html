@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Modules — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-modules"><strong>List of Modules</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the modules and the vector spaces of the corpus, with the rank, the basis, the torsion and the freeness of each. A module over a ring generalises a vector space over a field, and the list records exactly which of the four notions survives the generalisation: every vector space is free and has a basis, a module need not be free, the rank is defined for free modules and for torsion-free modules over a domain, and torsion is a phenomenon a field does not have.</p>
+<p>Every entry points to the article that introduces the module or the vector space and states its invariant. This article is a list: it introduces no definition, states no theorem, gives no proof, and carries no display mathematics. It records examples and non-examples side by side, a non-example being a module that fails to have a basis or to be torsion-free where a vector space would not, with the failure named and the article that records it.</p>
+<h2 id="vector-spaces">Vector Spaces</h2>
+<p>A <strong>vector space</strong> over a field $F$ is a module over $F$; because $F$ is a field, every module is free, every linearly independent set extends to a <strong>basis</strong>, and any two bases have the same cardinality, the <strong>dimension</strong>. Subspaces, quotients, direct sums, the dual and the space of linear maps are all vector spaces, and the dimension is additive in short exact sequences.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Vector space</th>
+<th>Rank, basis, torsion, freeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F^n$</td>
+<td>dimension $n$, the standard basis $e_1,\dots,e_n$; free, torsion-free</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>Arbitrary vector space $V$</td>
+<td>a basis exists by Zorn's lemma; dimension $\dim_F V$; free</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>Subspace and quotient</td>
+<td>subspaces are direct summands; $\dim V = \dim W + \dim V/W$ for a subspace $W$</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>Direct sum $\bigoplus_i V_i$</td>
+<td>dimension the sum of the dimensions; free</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>Dual space $V^* = \operatorname{Hom}_F(V,F)$</td>
+<td>dimension $\dim_F V$ in finite dimension; free</td>
+<td><em>Multilinear Spaces</em></td>
+</tr>
+<tr>
+<td>Space of linear maps $\operatorname{Hom}_F(V,W)$</td>
+<td>dimension $\dim_F V \cdot \dim_F W$; free</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>The vector space $\mathbb{H}^n$ over the division ring $\mathbb{H}$</td>
+<td>a free module of rank $n$, of real dimension $4n$; every $\mathbb{H}$-module is free</td>
+<td><em>Quaternionic and Biquaternionic Modules</em></td>
+</tr>
+<tr>
+<td>Non-example: a torsion element in a vector space</td>
+<td>does not occur: a nonzero scalar multiple of a nonzero vector is nonzero, so $T(V) = 0$</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+<tr>
+<td>Non-example: a module over a field that is not free</td>
+<td>does not occur: over a field every module is free, by the existence of bases</td>
+<td><em>Vector Spaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="free-projective-and-injective-modules">Free, Projective and Injective Modules</h2>
+<p>A module is <strong>free</strong> when it has a basis, <strong>projective</strong> when it is a direct summand of a free module, and <strong>injective</strong> when it is a direct summand of every module containing it; free implies projective, and over a principal ideal domain projective, free and torsion-free coincide for finitely generated modules. The <strong>rank</strong> is the cardinality of a basis of a free module, well defined by the invariant basis number property.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Rank, basis, torsion, freeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free module $R^{(I)}$</td>
+<td>basis $\{e_i\}$; free by definition, rank $|I|$</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Finitely generated free module $R^n$</td>
+<td>rank $n$; free, torsion-free over a domain</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>Projective module $P$</td>
+<td>a direct summand of a free module; not necessarily free</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>Injective module $I$</td>
+<td>a direct summand of every containing module; Baer's criterion tests it</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$ and $\mathbb{Q}/\mathbb{Z}$</td>
+<td>divisible abelian groups; injective as $\mathbb{Z}$-modules</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>$R/(a)$ over a PID</td>
+<td>not free for $a \neq 0$; torsion, of projective dimension $1$</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[1/p]$</td>
+<td>a localisation of $\mathbb{Z}$; torsion-free, not finitely generated, not free</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>Free resolution $L_1 \to L_0 \to M \to 0$</td>
+<td>exhibits $M$ as a quotient of free modules; measures the failure of freeness</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+<tr>
+<td>Non-example: a projective module that is not free</td>
+<td>fails freeness over a general ring: projective is necessary but not sufficient</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>Non-example: the invariant basis number property</td>
+<td>fails over a general ring: the rank is well defined only when IBN holds</td>
+<td><em>Direct Sums, Free Modules and Rank</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="finitely-generated-modules-over-a-principal-ideal-domain">Finitely Generated Modules over a Principal Ideal Domain</h2>
+<p>Over a principal ideal domain every submodule of a free module is free, every finitely generated torsion-free module is free, and every finitely generated module is a direct sum of a free module and cyclic torsion modules with unique invariants. The <strong>torsion submodule</strong> $M_{\mathrm{tor}}$ collects the elements annihilated by a nonzero element of the ring, the <strong>rank</strong> is the free rank, and the theorem specialises to the classification of finitely generated abelian groups and to the rational and Jordan forms.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Rank, basis, torsion, freeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M \cong R^r \oplus R/(d_1) \oplus \cdots \oplus R/(d_k)$</td>
+<td>free rank $r$, invariant factors $d_1 \mid \cdots \mid d_k$; torsion the second summand</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>Torsion submodule $M_{\mathrm{tor}}$</td>
+<td>the elements of nonzero annihilator; a direct summand of a finitely generated module</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>$p$-primary component $M_p$</td>
+<td>the torsion part at the prime $p$; elementary divisors $p^{e_{p,j}}$</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>Cyclic module $R/(a)$</td>
+<td>rank $0$; torsion; free exactly when $a = 0$</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$-module of finite type</td>
+<td>the case $R = \mathbb{Z}$: free part $\mathbb{Z}^r$ plus torsion</td>
+<td><em>Finitely Generated Abelian Groups</em></td>
+</tr>
+<tr>
+<td>$k[x]$-module</td>
+<td>the case $R = k[x]$: the rational and Jordan forms of an operator</td>
+<td><em>Modules over $k[x]$ and the Jordan Form</em></td>
+</tr>
+<tr>
+<td>Torsion-free finitely generated module over a PID</td>
+<td>free, of rank equal to the free rank</td>
+<td><em>Modules over a PID</em></td>
+</tr>
+<tr>
+<td>Non-example: $\mathbb{Q}$ as a $\mathbb{Z}$-module</td>
+<td>torsion-free but not free: it is not finitely generated</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Non-example: a submodule of a free module over a general ring</td>
+<td>fails to be free: the statement needs a principal ideal domain</td>
+<td><em>Modules</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="torsion-simple-and-semisimple-modules">Torsion, Simple and Semisimple Modules</h2>
+<p>A module is <strong>simple</strong> when it has no proper nonzero submodule, <strong>semisimple</strong> when it is a direct sum of simples, and semisimple modules have no torsion in the module-theoretic sense over a division ring. The <strong>Jacobson radical</strong> $J(R)$ is the obstruction to semisimplicity, the <strong>density theorem</strong> describes the action on a semisimple module, and Schur's lemma makes the endomorphism ring of a simple module a division ring.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Rank, basis, torsion, freeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simple module $S$</td>
+<td>no proper nonzero submodule; $\operatorname{End}_A(S)$ a division ring</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Semisimple module</td>
+<td>a direct sum of simples; every submodule a direct summand</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Isotypic component</td>
+<td>the summands of one isomorphism class; endomorphism ring a matrix ring</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Jacobson radical $J(R)$</td>
+<td>the intersection of the maximal left ideals; zero exactly when $R$ is semisimple</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Modules over a semisimple algebra</td>
+<td>all semisimple; a direct sum of copies of the simple modules</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Non-example: the module $k[x]/(x^2)$ over $k[x]/(x^2)$</td>
+<td>fails semisimplicity: it has a nonzero radical</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+<tr>
+<td>Non-example: a module of infinite length</td>
+<td>fails the finite composition series: the length is not defined</td>
+<td><em>Simple and Semisimple Modules</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="modules-over-division-rings-and-the-number-systems">Modules over Division Rings and the Number Systems</h2>
+<p>Over a division ring every module is free, and the rank theory is that of vector spaces; the corpus develops this for $\mathbb{H}$ and for the biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$, where the zero divisors of $\mathbb{B}$ prevent a basis and the module theory is governed instead by Morita equivalence with complex vector spaces.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Rank, basis, torsion, freeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}^n$</td>
+<td>free of rank $n$ over the division ring $\mathbb{H}$; basis $e_1,\dots,e_n$; real dimension $4n$</td>
+<td><em>Quaternionic and Biquaternionic Modules</em></td>
+</tr>
+<tr>
+<td>Finitely generated $\mathbb{B}$-module</td>
+<td>isomorphic to $S^{\oplus k}$ for the unique simple $S = \mathbb{C}^2$; complex dimension $2k$</td>
+<td><em>Quaternionic and Biquaternionic Modules</em></td>
+</tr>
+<tr>
+<td>The defining module $S$ of $\mathbb{B}$</td>
+<td>the unique simple $\mathbb{B}$-module; not free over $\mathbb{B}$ in the vector-space sense</td>
+<td><em>The Defining Module of the Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$-module structure</td>
+<td>complex structure $I$ and quaternionic structure $\mathcal{J}$; $J(\mathbb{H}) = 0$</td>
+<td><em>Quaternionic and Biquaternionic Modules</em></td>
+</tr>
+<tr>
+<td>Lipschitz order $\mathbb{Z}\{e_0,e_1,e_2,e_3\}$</td>
+<td>a torsion-free $\mathbb{Z}$-module of rank $4$, not free over a non-commutative order</td>
+<td><em>Lattices and the Quaternion Lattice</em></td>
+</tr>
+<tr>
+<td>Non-example: a $\mathbb{B}$-module treated as a vector space</td>
+<td>fails to have a basis over $\mathbb{B}$: the ring has zero divisors</td>
+<td><em>Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>Non-example: a torsion element of an $\mathbb{H}$-module</td>
+<td>does not occur: $\mathbb{H}$ is a division ring, so every nonzero module is torsion-free</td>
+<td><em>Quaternionic and Biquaternionic Modules</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="homomorphisms-duals-and-tensor-products">Homomorphisms, Duals and Tensor Products</h2>
+<p>The module $\operatorname{Hom}_R(M,N)$ of homomorphisms and the dual $M^* = \operatorname{Hom}_R(M,R)$ are again modules; the tensor product $M \otimes_R N$ is a module with the universal property of bilinear maps. The list records these constructions because they are the ones that distinguish the free and projective modules from the general ones: $\operatorname{Hom}$ and the tensor product are not exact in both variables, and the derived functors $\operatorname{Ext}$ and $\operatorname{Tor}$ measure the failure.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Construction</th>
+<th>Rank, basis, torsion, freeness</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Hom}_R(M,N)$</td>
+<td>a module; left exact in $M$; a free module when $M$ is free of finite rank</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Dual module $M^* = \operatorname{Hom}_R(M,R)$</td>
+<td>the linear forms; for a finitely generated projective module, $(M^*)^* \cong M$</td>
+<td><em>Projective and Injective Modules</em></td>
+</tr>
+<tr>
+<td>Tensor product $M \otimes_R N$</td>
+<td>right exact; $R \otimes_R M \cong M$; $(R^{(I)})\otimes_R N \cong N^{(I)}$</td>
+<td><em>Modules</em></td>
+</tr>
+<tr>
+<td>Tensor product of vector spaces</td>
+<td>$\dim_F(V\otimes_F W) = \dim_F V \cdot \dim_F W$; free</td>
+<td><em>Multilinear Spaces</em></td>
+</tr>
+<tr>
+<td>Bilinear and multilinear maps</td>
+<td>the universal property identifying them with maps on the tensor product</td>
+<td><em>Multilinear Spaces</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Ext}_R^n(M,N)$ and $\operatorname{Tor}_n^R(M,N)$</td>
+<td>the derived functors measuring the failure of exactness</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>Non-example: exactness of $\operatorname{Hom}_R(M,-)$</td>
+<td>fails in general: it is left exact only, and $\operatorname{Ext}^1$ is the obstruction</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+<tr>
+<td>Non-example: exactness of $-\otimes_R N$</td>
+<td>fails in general: it is right exact only, and $\operatorname{Tor}_1$ is the obstruction</td>
+<td><em>Ext and Tor</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The list gathers the modules and vector spaces of the corpus. The vector spaces over a field are free, have bases and dimensions, have no torsion, and their subspaces and quotients are again vector spaces. The modules over a general ring are the free, projective and injective modules, with the rank defined by a basis under the invariant basis number property and the free resolutions measuring the failure of freeness. Over a principal ideal domain the finitely generated modules are classified by a free rank and the torsion invariants, with the cases $\mathbb{Z}$ and $k[x]$ giving the abelian groups and the Jordan form. The simple and semisimple modules, the Jacobson radical and the density theorem describe the semisimple side. Over a division ring every module is free; over the quaternions the rank theory is that of vector spaces, and over the biquaternions the module theory is the Morita equivalence with complex vector spaces. The non-examples — a torsion element of a vector space, a non-free module over a field, a projective module that is not free, a ring without the invariant basis number property, $\mathbb{Q}$ as a torsion-free non-free $\mathbb{Z}$-module, a submodule of a free module over a general ring, the module $k[x]/(x^2)$ and a module of infinite length, a $\mathbb{B}$-module treated as a vector space and a torsion element of an $\mathbb{H}$-module — each name the property that fails.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The article denotes its objects by name; the symbols appearing in the tables are those of the introducing articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V$, $W$, $\dim_F V$</td>
+<td>vector spaces and their dimension</td>
+</tr>
+<tr>
+<td>$V^*$</td>
+<td>dual space</td>
+</tr>
+<tr>
+<td>$R^{(I)}$, $R^n$</td>
+<td>free module, finitely generated free module</td>
+</tr>
+<tr>
+<td>$\operatorname{rk}_R L$</td>
+<td>rank of a free module</td>
+</tr>
+<tr>
+<td>$M_{\mathrm{tor}}$, $M_p$</td>
+<td>torsion submodule and primary component</td>
+</tr>
+<tr>
+<td>$R/(a)$</td>
+<td>cyclic module</td>
+</tr>
+<tr>
+<td>$J(R)$</td>
+<td>Jacobson radical</td>
+</tr>
+<tr>
+<td>$S$, $\operatorname{End}_A(S)$</td>
+<td>simple module and its endomorphism division ring</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^n$, $S^{\oplus k}$</td>
+<td>free $\mathbb{H}$-module, finitely generated $\mathbb{B}$-module</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>biquaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $\mathbb{Q}$</td>
+<td>the integers and the rationals</td>
+</tr>
+<tr>
+<td>$R^r \oplus R/(d_1)\oplus\cdots$</td>
+<td>structure theorem over a PID</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Basic Algebra II</em> (Dover, 2nd ed. 2009), for the module theory over a general ring and over a principal ideal domain.</li>
+<li>Thomas Hungerford, <em>Algebra</em> (Springer, 1974), for the structure theorem for finitely generated modules over a PID and its applications.</li>
+<li>Frank Anderson and Kent Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for projective, injective and semisimple modules and the density theorem.</li>
+<li>Paul Cohn, <em>Free Rings and Their Relations</em> (Academic Press, 2nd ed. 1985), for free, projective and torsion-free modules over general rings and the invariant basis number property.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

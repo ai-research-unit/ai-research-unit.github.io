@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Complex Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-complex-algebra"><strong>Split Complex Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the split complex algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugations.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The idempotent decomposition is defined algebraically, and its identification with the light cone is not covered here.</p>
+<h2 id="the-split-complex-numbers">The Split Complex Numbers</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>split complex algebra</strong> $\mathbb{D}$ is the two-dimensional real algebra with basis</p>
+<p>$$
+e_0 = 1, \qquad e_1 = j,
+$$</p>
+<p>and multiplication rules</p>
+<p>$$
+e_0 e_0 = e_0, \qquad e_0 e_1 = e_1 e_0 = e_1, \qquad e_1 e_1 = +e_0.
+$$</p>
+<p>A general split complex number is written in developed form as</p>
+<p>$$
+z = a e_0 + b e_1, \qquad a, b \in \mathbb{R},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+z = a + b j, \qquad a, b \in \mathbb{R}.
+$$</p>
+<p>The real number $a$ is the <strong>real part</strong>, and the real number $b$ is the <strong>imaginary part</strong>. We also write</p>
+<p>$$
+z = a + b j, \qquad a = \operatorname{Re} z, \quad b = \operatorname{Im} z.
+$$</p>
+<p>The notation $j$ is chosen deliberately. In the complex algebra, the imaginary unit satisfies $i^2 = -1$. In the split complex algebra, the unit satisfies $j^2 = +1$. Writing $j$ rather than $i$ makes the sign explicit and avoids confusion with the complex case. This is the notation we use throughout the blog.</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Commutative.</strong> Split complex multiplication is commutative: $z w = w z$.</p>
+<p><strong>Associative.</strong> Split complex multiplication is associative: $(z w) u = z (w u)$.</p>
+<p><strong>Not a division algebra.</strong> The split complex algebra has zero divisors. The elements $1 + j$ and $1 - j$ are non-zero, but</p>
+<p>$$
+(1 + j)(1 - j) = 1 - j^2 = 0.
+$$</p>
+<p>So $\mathbb{D}$ is not a field, and not a division algebra. This is the fundamental difference from $\mathbb{C}$, and it is the source of everything that distinguishes the two theories.</p>
+<p><strong>Frobenius theorem.</strong> The split complex algebra is not one of the three finite-dimensional associative real division algebras. Those are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The split complex algebra is a commutative associative real algebra of dimension two, but it is not a division algebra.</p>
+<h3 id="the-idempotent-basis">The Idempotent Basis</h3>
+<p>Define the <strong>idempotents</strong></p>
+<p>$$
+e_+ = \frac{1 + j}{2}, \qquad e_- = \frac{1 - j}{2}.
+$$</p>
+<p>They satisfy</p>
+<p>$$
+e_+^2 = e_+, \qquad e_-^2 = e_-, \qquad e_+ e_- = e_- e_+ = 0, \qquad e_+ + e_- = 1.
+$$</p>
+<p>A general split complex number is written uniquely in the idempotent basis as</p>
+<p>$$
+z = a + b j = (a + b) e_+ + (a - b) e_-.
+$$</p>
+<p>This is the <strong>idempotent decomposition</strong> of $z$. It is the single most important structural fact about the split complex algebra.</p>
+<h3 id="the-isomorphism-with-math27">The Isomorphism with $\mathbb{R} \oplus \mathbb{R}$</h3>
+<p>The map</p>
+<p>$$
+\varphi : \mathbb{D} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(a + b j) = (a + b, a - b),
+$$</p>
+<p>is an algebra isomorphism. It is bijective, and it satisfies</p>
+<p>$$
+\varphi(z + w) = \varphi(z) + \varphi(w), \qquad \varphi(z w) = \varphi(z) \varphi(w),
+$$</p>
+<p>where the multiplication on $\mathbb{R} \oplus \mathbb{R}$ is componentwise:</p>
+<p>$$
+(u_1, u_2)(v_1, v_2) = (u_1 v_1, u_2 v_2).
+$$</p>
+<p>So $\mathbb{D}$ is not a new algebra. It is $\mathbb{R} \oplus \mathbb{R}$ in disguise. Everything that can be said about $\mathbb{D}$ is a statement about pairs of real numbers, and everything that is surprising about $\mathbb{D}$ is a consequence of the fact that the disguise hides the zero divisors.</p>
+<h2 id="split-complex-algebra_1">Split Complex Algebra</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>split complex algebra</strong> is the algebra $\mathbb{D}$ considered as a two-dimensional real vector space equipped with its multiplication. As a real vector space, $\mathbb{D}$ has dimension $2$. As a ring, it is a commutative ring with zero divisors. A general element is written in developed form as</p>
+<p>$$
+z = a e_0 + b e_1, \qquad a, b \in \mathbb{R},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+z = a + b j, \qquad a, b \in \mathbb{R}.
+$$</p>
+<p>We write</p>
+<p>$$
+z = a + b j,
+$$</p>
+<p>where $a$ is the <strong>real part</strong> and $b$ is the <strong>imaginary part</strong>.</p>
+<h3 id="multiplication">Multiplication</h3>
+<p>The product of two split complex numbers is defined by extending the real multiplication bilinearly:</p>
+<p>$$
+z w = (a + bj)(c + dj) = (ac + bd) + (ad + bc) j.
+$$</p>
+<p>In developed form,</p>
+<p>$$
+z w = \sum_{\mu=0}^{1} \sum_{\nu=0}^{1} z_\mu w_\nu \, e_\mu e_\nu,
+$$</p>
+<p>where the products $e_\mu e_\nu$ are those of the split complex algebra.</p>
+<h3 id="conjugations">Conjugations</h3>
+<p>There are <strong>two</strong> natural conjugations on $\mathbb{D}$:</p>
+<p><strong>Split complex conjugation</strong> $\bar{z}$:</p>
+<p>$$
+\bar{z} = a - b j.
+$$</p>
+<p><strong>Idempotent conjugation</strong> (swap) $\tilde{z}$:</p>
+<p>$$
+\tilde{z} = (a - b) e_+ + (a + b) e_-.
+$$</p>
+<p>In the basis $1, j$, the idempotent conjugation is</p>
+<p>$$
+\tilde{z} = a - b j = \bar{z}.
+$$</p>
+<p>So in the split complex algebra, the split complex conjugation and the idempotent conjugation coincide. This is a special feature of the two-dimensional case, and it is the reason the split complex algebra has fewer distinct involutions than the quaternion algebra.</p>
+<p>Each conjugation is an involution: applying it twice returns the original split complex number. Each has a fixed-point set, which is a real vector subspace of $\mathbb{D}$. The two subspaces are described in the following sections.</p>
+<h2 id="the-two-fixed-point-subspaces">The Two Fixed-Point Subspaces</h2>
+<p>Each of the two conjugations has a fixed-point set. The two subspaces are described below.</p>
+<h3 id="the-real-subspace">The Real Subspace</h3>
+<p>The fixed points of <strong>split complex conjugation</strong> are the split complex numbers satisfying $\bar{z} = z$. In developed form,</p>
+<p>$$
+a - b j = a + b j.
+$$</p>
+<p>Comparing the coefficients of $1$ and $j$:</p>
+<ul>
+<li>Coefficient of $1$: $a = a$, always satisfied.</li>
+<li>Coefficient of $j$: $-b = b$, so $b = 0$.</li>
+</ul>
+<p>The fixed points are split complex numbers with vanishing imaginary part:</p>
+<p>$$
+z = a, \qquad a \in \mathbb{R}.
+$$</p>
+<p>This is the <strong>real subspace</strong> $\mathbb{R}_{\mathbb{D}}$, a copy of the real number line embedded in $\mathbb{D}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{D}$ (isomorphic to $\mathbb{R}$), and it is a field.</p>
+<h3 id="the-split-imaginary-subspace">The Split Imaginary Subspace</h3>
+<p>The fixed points of the <strong>idempotent conjugation</strong> are the split complex numbers satisfying $\tilde{z} = z$. Since $\tilde{z} = \bar{z}$ in this algebra, the fixed points are the same as above:</p>
+<p>$$
+z = a, \qquad a \in \mathbb{R}.
+$$</p>
+<p>So there is only one non-trivial fixed-point set. The <strong>split imaginary subspace</strong> $j \mathbb{R}_{\mathbb{D}}$ is not a fixed-point set of either conjugation; it is the $-1$ eigenspace of the split complex conjugation, consisting of elements $b j$ with $b \in \mathbb{R}$.</p>
+<h2 id="split-complex-decomposition">Split Complex Decomposition</h2>
+<p>The real subspace $\mathbb{R}_{\mathbb{D}}$ and its imaginary translate $j \mathbb{R}_{\mathbb{D}}$ are the two eigenspaces of split complex conjugation. Every split complex number decomposes uniquely as the sum of a real part and an imaginary part:</p>
+<p>$$
+z = z_r + j z_i, \qquad z_r \in \mathbb{R}, \quad z_i \in \mathbb{R}.
+$$</p>
+<p>The two components are obtained from the split complex conjugation:</p>
+<p>$$
+z_r = \frac{1}{2}(z + \bar{z}), \qquad z_i = \frac{1}{2j}(z - \bar{z}).
+$$</p>
+<p>Indeed, $z_r$ is fixed by split complex conjugation, so it lies in $\mathbb{R}_{\mathbb{D}}$, and $z_i$ is real, so $j z_i$ lies in $j \mathbb{R}_{\mathbb{D}}$.</p>
+<p>This gives the direct sum decomposition</p>
+<p>$$
+\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j \mathbb{R}_{\mathbb{D}},
+$$</p>
+<p>where $j \mathbb{R}_{\mathbb{D}}$ is the set of split complex numbers of the form $j b$ with $b \in \mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{D}$ of real dimension $2$.</p>
+<p>This is the <strong>split complex decomposition</strong> of a split complex number. It expresses $z$ as a real number plus $j$ times another real number.</p>
+<h2 id="idempotent-decomposition">Idempotent Decomposition</h2>
+<p>The idempotent decomposition is the second natural decomposition of $\mathbb{D}$:</p>
+<p>$$
+z = z_+ e_+ + z_- e_-, \qquad z_+ = a + b, \quad z_- = a - b.
+$$</p>
+<p>The two components are obtained from the idempotents:</p>
+<p>$$
+z_+ = z e_+, \qquad z_- = z e_-,
+$$</p>
+<p>which, since $\mathbb{D}$ is commutative, is unambiguous.</p>
+<p>This gives the direct sum decomposition</p>
+<p>$$
+\mathbb{D} = \mathbb{D} e_+ \oplus \mathbb{D} e_-,
+$$</p>
+<p>where $\mathbb{D} e_+$ and $\mathbb{D} e_-$ are the two ideals of $\mathbb{D}$, each isomorphic to $\mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{D}$ of real dimension $2$.</p>
+<p>The idempotent decomposition and the split complex decomposition are related by</p>
+<p>$$
+z_+ = z_r + z_i, \qquad z_- = z_r - z_i.
+$$</p>
+<p>So the idempotent components are the sum and difference of the real and imaginary parts.</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>norm form</strong> of a split complex number $z$ is</p>
+<p>$$
+N(z) = z \bar{z} = a^2 - b^2.
+$$</p>
+<p>It is a real number, but it is <strong>indefinite</strong>: it takes positive values on the region $|a| > |b|$, negative values on the region $|a| < |b|$, and vanishes on the light cone $a = \pm b$.</p>
+<p>The norm form is <strong>multiplicative</strong>:</p>
+<p>$$
+N(z w) = N(z) N(w).
+$$</p>
+<p>This is the statement that $(a^2 - b^2)(c^2 - d^2) = (ac + bd)^2 - (ad + bc)^2$, which is the Brahmagupta–Fibonacci identity in dimension two.</p>
+<h3 id="zero-divisors">Zero Divisors</h3>
+<p>The norm form vanishes on the light cone, so the non-zero elements of the light cone are <strong>zero divisors</strong>. The two primitive zero divisors are</p>
+<p>$$
+e_+ = \frac{1 + j}{2}, \qquad e_- = \frac{1 - j}{2}.
+$$</p>
+<p>Both satisfy $N(e_+) = N(e_-) = 0$, and $e_+ e_- = 0$. In the idempotent coordinates $z = z_+ e_+ + z_- e_-$ of §<em>Idempotent Decomposition</em> a nonzero element is a zero divisor exactly when $z_+ = 0$ or $z_- = 0$, that is, exactly when it is a real multiple of $e_+$ or of $e_-$; when both coordinates are nonzero, $z$ is a unit with inverse $z^{-1} = z_+^{-1} e_+ + z_-^{-1} e_-$, so the zero divisors are precisely the two lines $\mathbb{R}e_+$ and $\mathbb{R}e_-$ with the origin removed, and their union is the light cone.</p>
+<h2 id="the-hermitian-form">The Hermitian Form</h2>
+<p>There is no <strong>positive-definite Hermitian form</strong> on $\mathbb{D}$ analogous to the one on $\mathbb{C}$, because the norm form is indefinite. The closest analogue is the <strong>idempotent form</strong></p>
+<p>$$
+z \mapsto z_+^2 + z_-^2 = (a + b)^2 + (a - b)^2 = 2(a^2 + b^2),
+$$</p>
+<p>which is positive-definite but is not multiplicative. It is <strong>twice</strong> the Euclidean norm squared on the underlying real vector space $\mathbb{D} \cong \mathbb{R}^2$; half of it, $a^2+b^2$, is the natural "length squared" of $z$ as a point in the plane.</p>
+<p>The <strong>Euclidean norm</strong> is</p>
+<p>$$
+\|z\|_E = \sqrt{a^2 + b^2}.
+$$</p>
+<p>It is a genuine norm on the real vector space $\mathbb{D} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It is <strong>not</strong> multiplicative with respect to the split complex product, because the split complex product does not preserve the Euclidean norm.</p>
+<h2 id="the-inner-product">The Inner Product</h2>
+<p>The <strong>inner product</strong> of two split complex numbers $z = a + bj$ and $w = c + dj$ is</p>
+<p>$$
+\langle z, w \rangle = a c + b d.
+$$</p>
+<p>It is the ordinary Euclidean inner product on $\mathbb{R}^2$, written in split complex notation. It is real-valued, symmetric, and bilinear.</p>
+<p>The inner product of a split complex number with itself is</p>
+<p>$$
+\langle z, z \rangle = a^2 + b^2,
+$$</p>
+<p>which is the Euclidean norm squared. So the Euclidean norm is the restriction of the inner product to the diagonal.</p>
+<p>Note that this inner product is <strong>not</strong> the same as the real part of $z \bar{w}$. Indeed,</p>
+<p>$$
+z \bar{w} = (a + bj)(c - dj) = (ac - bd) + (bc - ad) j,
+$$</p>
+<p>so</p>
+<p>$$
+\operatorname{Re}(z \bar{w}) = ac - bd,
+$$</p>
+<p>which is the indefinite form, not the Euclidean one. The Euclidean inner product is $\operatorname{Re}(z w)$. So the distinction between the two forms is the distinction between the indefinite and the Euclidean structures on $\mathbb{R}^2$, and it is the source of the difference between split complex analysis and ordinary real analysis in the plane.</p>
+<h2 id="summary">Summary</h2>
+<p>The split complex algebra $\mathbb{D}$ is the two-dimensional real algebra with basis $e_0 = 1$, $e_1 = j$ and the relation $j^2 = +1$. It is commutative, associative and unital, and it is not a field: the norm form is indefinite and the algebra has zero divisors. A general element is written $z = a + bj$.</p>
+<p>Split complex conjugation sends $a + bj$ to $a - bj$. Its fixed points form the real subspace $\mathbb{R}_{\mathbb{D}}$ and its anti-fixed points the imaginary subspace $j\mathbb{R}_{\mathbb{D}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every split complex number decomposes uniquely as a real part plus an imaginary part. The algebra carries a second natural decomposition, which the complex case does not have: the idempotent decomposition $z = z_+e_+ + z_-e_-$, where $e_\pm = (1 \pm j)/2$ are the two nontrivial idempotents and $z_\pm = a \pm b$. The two components are independent ring homomorphisms, so $\mathbb{D}$ is the direct sum $\mathbb{R} \oplus \mathbb{R}$.</p>
+<p>The quadratic objects reflect the change of sign. The norm form $N(z) = z\bar{z} = a^2 - b^2$ is indefinite: it takes both signs and vanishes on the two lines $a = \pm b$, which are exactly the zero divisors. There is therefore no positive-definite Hermitian form on $\mathbb{D}$ analogous to the one on $\mathbb{C}$; the closest substitute is built from the idempotent components, and the inner product $\langle z, w\rangle = ac + bd$ is the ordinary Euclidean inner product on $\mathbb{R}^2$, independent of the multiplicative structure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1$</td>
+<td>Identity</td>
+</tr>
+<tr>
+<td>$e_1 = j$</td>
+<td>Split imaginary unit, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$z = a + b j$</td>
+<td>General split complex number</td>
+</tr>
+<tr>
+<td>$a = \operatorname{Re} z$</td>
+<td>Real part</td>
+</tr>
+<tr>
+<td>$b = \operatorname{Im} z$</td>
+<td>Imaginary part</td>
+</tr>
+<tr>
+<td>$e_+ = (1 + j)/2$</td>
+<td>Positive idempotent</td>
+</tr>
+<tr>
+<td>$e_- = (1 - j)/2$</td>
+<td>Negative idempotent</td>
+</tr>
+<tr>
+<td>$\bar{z} = a - b j$</td>
+<td>Split complex conjugate</td>
+</tr>
+<tr>
+<td>$\tilde{z} = \bar{z}$</td>
+<td>Idempotent conjugate</td>
+</tr>
+<tr>
+<td>$N(z) = z \bar{z} = a^2 - b^2$</td>
+<td>Norm form (indefinite)</td>
+</tr>
+<tr>
+<td>$a^2 + b^2$</td>
+<td>Euclidean norm squared</td>
+</tr>
+<tr>
+<td>$\langle z, w \rangle = ac + bd$</td>
+<td>Euclidean inner product</td>
+</tr>
+<tr>
+<td>$\|z\|_E = \sqrt{a^2 + b^2}$</td>
+<td>Euclidean norm</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{D}}$</td>
+<td>Real subspace, fixed-point set of $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$j \mathbb{R}_{\mathbb{D}}$</td>
+<td>Imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D} e_+, \mathbb{D} e_-$</td>
+<td>Idempotent ideals</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the origin of the split complex algebra in the biquaternion program.</li>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the geometric interpretation of split complex numbers.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of SL(2, ℝ)</em> (Imperial College Press, 2012), for the analytic applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

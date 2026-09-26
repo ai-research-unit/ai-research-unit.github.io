@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Matsubara Formalism in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-matsubara-formalism-in-biquaternionic-form"><strong>The Matsubara Formalism in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>Matsubara formalism</strong> is the Euclidean formulation of quantum field theory at finite temperature. The thermal partition function $Z=\mathrm{Tr}\,e^{-\beta H}$ is written as a functional integral over fields living on a Euclidean space whose time direction is compactified to a circle of circumference $\beta=\hbar/(k_BT)$; the Fourier modes on that circle are the <strong>Matsubara frequencies</strong>, and the propagator becomes a discrete sum over them rather than a continuous integral. It is the standard machinery of thermal field theory, and it is the analytic continuation of the real-time formalisms.</p>
+<p>This article asks what the biquaternion algebra $\mathbb{B}$ contributes. The answer is one structural identification and a set of transcriptions, stated at the outset.</p>
+<ul>
+<li><strong>Established (framework).</strong> The compactified direction is a <strong>material-sector direction</strong>. The imaginary time that Matsubara's circle winds around is not an auxiliary device introduced for convergence: it is the intrinsic imaginary direction of the material sector $\mathbb{M}_-$, the same direction that appears as $ict$ in the biquaternionic gradient and as the KMS analyticity strip in <em>The KMS Condition and the Biquaternion Framework</em>. The KMS strip has width $\beta$ and the Matsubara circle has circumference $\beta$, and these are the same $\beta$ because they are the same complexified material time. Concretely, the analytic strip $0<\mathrm{Im}\,t<\beta$ of the KMS boundary relation
+$$
+F_{\tilde A\tilde B}(t+i\beta) = F_{\tilde B\tilde A}(-t)
+$$
+is the strip swept when the material time is complexified, and the periodic identification $t\sim t+i\beta$ that makes it a cylinder is the compactification that defines the Matsubara sum.</li>
+<li><strong>Established (algebra).</strong> The Euclidean mass-shell operator is the same central norm-form object as in the Lorentzian theory,
+$$
+\mathcal{M}_E(\tilde k_E) = \tilde k_E\bar{\tilde k}_E + m^2 = \omega_n^2+\mathbf p^2+m^2 = k_E^2+m^2 ,
+\qquad
+k_E^2 = \omega_n^2+\mathbf p^2 \ge 0 ,
+$$
+with the Wick-rotated wave biquaternion $\tilde k_E=-\omega_n e_0+\mathbf p$. In Euclidean signature it is positive for all real momenta, so the Euclidean propagator $1/(k_E^2+m^2)$ has no real pole; the Lorentzian mass shell $\tilde k\bar{\tilde k}=-m^2$ maps to $k_E^2=-m^2$, which is reached only at complex Euclidean momentum. This is the framework's statement that the thermal propagator's analytic structure is a statement about the complexification of a material direction.</li>
+<li><strong>Established (algebra).</strong> The spin–statistics theorem of the companion article fixes the periodicity: bosonic fields are periodic and fermionic fields antiperiodic on the thermal circle, and the Matsubara frequencies are therefore
+$$
+\omega_n = \frac{2\pi n}{\beta}\ \ (\text{bosons}),
+\qquad
+\omega_n = \frac{(2n+1)\pi}{\beta}\ \ (\text{fermions}).
+$$
+In the framework the bosonic/fermionic distinction is the even/odd grading of the algebra, so the two frequency sets are the two gradings' Fourier sets.</li>
+<li><strong>Standard, and transcribed.</strong> The Matsubara sum and its thermal factors, the contour evaluation, the free energy of a mode, the finite-temperature Feynman rules, and the discrete loop sums. The algebra supplies the identification of the circle and the norm-form operator; it does not supply the temperature.</li>
+</ul>
+<p>The findings are recomputed: the bosonic sum rule $(1/\beta)\sum_n(\omega_n^2+E^2)^{-1}=\coth(\beta E/2)/(2E)$ and its fermionic counterpart with $\tanh$, the geometric sums for the Bose and Fermi occupation numbers, and the single-mode free energies.</p>
+<p>The article proceeds as follows. The next section fixes the imaginary time and the thermal circle. A section gives the Matsubara frequencies and the Euclidean propagator. A section derives the partition function and the free energy. A section isolates the framework's structural content. A section treats the Matsubara sums and the thermal factors, and a section the finite-temperature Feynman rules. A section separates what is established from what is interpretation.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles, in particular <em>The KMS Condition and the Biquaternion Framework</em>, <em>The Unruh Effect in Biquaternionic Form</em>, and <em>Hawking Radiation in Biquaternionic Form</em>, whose thermal state this article's formalism must reproduce. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$. The material sector is $\mathbb{M}_-$ (anti-Hermitian) and the informational sector is $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The material coordinate is $\tilde X=ict\,e_0+\mathbf x$, with norm form $N(\tilde X)=-c^2t^2+\mathbf x^2$. The gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The Lorentzian wave biquaternion is $\tilde k=iEe_0+\mathbf p$ with quaternion conjugate $\bar{\tilde k}=iEe_0-\mathbf p$ and $\tilde k\bar{\tilde k}=-p^2$. The inverse temperature is $\beta=\hbar/(k_BT)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. Natural units $\hbar=c=k_B=1$ are used in the computations, with $\beta$ and the temperature restored where a physical statement is made.</p>
+<h2 id="imaginary-time-and-the-thermal-circle">Imaginary Time and the Thermal Circle</h2>
+<p>The Matsubara formalism begins with a rotation of the time and an identification of the rotated direction.</p>
+<p><strong>Wick rotation.</strong> Write the real time $t$ and define the Euclidean time $\tau$ by
+$$
+\tau = i t ,
+\qquad
+t = -i\tau ,
+$$
+so that the material-time coefficient $ict$ becomes the real coefficient $c\tau$ — that is, $ct\mapsto-ic\tau$ — and the $ict$-direction of the biquaternionic gradient becomes the real Euclidean direction $c\tau$. The Minkowski metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ becomes the Euclidean metric $\delta=\mathrm{diag}(+1,+1,+1,+1)$ under this rotation, which is the framework's level-1 norm form on $\mathbb{C}$; the rotation therefore takes the level-2 metric to the level-1 metric, and it is the same statement the functional-integral article makes about the Euclidean section.</p>
+<!-- CONVENTION — Wick rotation, do not "invert": the series rotation is $t\mapsto-i\tau$ with $\tau=it$, so the material-time coefficient maps as $ict\mapsto ic(-i\tau)=c\tau$ (the authority is *The Wick Rotation in the Biquaternion Universe*, and *The Functional Integral in Biquaternionic Form* uses the same identification). The coefficient $ct$ therefore maps to $-ic\tau$, not to $+ic\tau$; the compactified Euclidean direction is the real $c\tau$. -->
+
+<p><strong>The thermal circle.</strong> In the Matsubara formalism the Euclidean time is compactified,
+$$
+\tau \sim \tau+\beta ,
+\qquad
+\beta=\hbar/(k_BT),
+$$
+so the Euclidean manifold is $S^1_\beta\times\mathbb{R}^3$ with the circle of circumference $\beta$. The compactification is the statement of thermal equilibrium: the partition function $Z=\mathrm{Tr}\,e^{-\beta H}$ is the Euclidean path integral on that manifold, with the circle's circumference playing the role of the inverse temperature. This is standard (Matsubara 1955; Fetter–Walecka; Kapusta–Gale) and is transcribed.</p>
+<p><strong>Periodicity and statistics.</strong> The fields on the circle must be single-valued up to the statistics sign. The KMS boundary relation for a thermal two-point function,
+$$
+F_{\tilde A\tilde B}(t+i\beta) = F_{\tilde B\tilde A}(-t),
+$$
+is the operator-exchange identity whose resolution is periodicity for the bosonic (commuting) grading and antiperiodicity for the fermionic (anticommuting) grading:
+$$
+\tilde\Phi_{\text{boson}}(\tau+\beta) = +\tilde\Phi_{\text{boson}}(\tau),
+\qquad
+\tilde\Psi_{\text{fermion}}(\tau+\beta) = -\tilde\Psi_{\text{fermion}}(\tau).
+$$
+The framework's grading is the even/odd decomposition of the algebra and of the spinor module, so the two periodicity classes are the two grading classes; this is the finite-temperature face of <em>The Spin–Statistics Theorem in Biquaternionic Form</em>, and no new input is needed beyond the grading and the KMS relation.</p>
+<h2 id="the-matsubara-frequencies-and-the-euclidean-propagator">The Matsubara Frequencies and the Euclidean Propagator</h2>
+<p>The periodicity fixes the spectrum of the Euclidean time derivative, and hence the propagator.</p>
+<p><strong>Frequencies.</strong> A function on the circle of circumference $\beta$ has Fourier modes $e^{i\omega_n\tau}$, and the boundary condition selects the frequencies
+$$
+e^{i\omega_n(\tau+\beta)}=+e^{i\omega_n\tau} \Rightarrow \omega_n=\frac{2\pi n}{\beta},
+\qquad
+e^{i\omega_n(\tau+\beta)}=-e^{i\omega_n\tau} \Rightarrow \omega_n=\frac{(2n+1)\pi}{\beta},
+\qquad n\in\mathbb{Z},
+$$
+which are the <strong>bosonic</strong> and <strong>fermionic Matsubara frequencies</strong>. The discrete spectrum replaces the continuous $p^0$ integral of the vacuum theory by a sum:
+$$
+\int\frac{dp^0}{2\pi}\,f(p^0) \;\longrightarrow\; \frac{1}{\beta}\sum_{n\in\mathbb{Z}} f(i\omega_n),
+$$
+and the corresponding four-momentum is $p_E=(\omega_n,\mathbf p)$ with $p_E^2=\omega_n^2+\mathbf p^2$.</p>
+<p><strong>The Euclidean propagator.</strong> In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2=-p^2+m^2$, so under the Matsubara substitution $p^0\to i\omega_n$ the Wick-rotated wave biquaternion is
+$$
+\tilde k_E = i(i\omega_n)e_0+\mathbf p = -\omega_n e_0+\mathbf p ,
+\qquad
+\bar{\tilde k}_E = -\omega_n e_0-\mathbf p ,
+\qquad
+\tilde k_E\bar{\tilde k}_E = \omega_n^2+\mathbf p^2 = k_E^2 ,
+$$
+and the Euclidean propagator is
+$$
+D_E(\tilde k_E) = \frac{1}{\mathcal{M}_E(\tilde k_E)} = \frac{1}{k_E^2+m^2} ,
+\qquad
+\mathcal{M}_E(\tilde k_E)=\tilde k_E\bar{\tilde k}_E+m^2 .
+$$
+The operator is central and positive for real Euclidean momenta, $k_E^2+m^2>0$; hence $D_E$ is a bounded, real-analytic function on the Matsubara grid, and it has no pole there. The Lorentzian mass shell $\tilde k\bar{\tilde k}=-m^2$ becomes $k_E^2=-m^2$, reached only at complex momentum. This is the framework's statement of the standard fact that the Euclidean propagator's singularities lie off the real Euclidean axis, and it shows that the analytic structure of the thermal propagator is a statement about the complexified material direction: the circle is a material direction, and the pole is at imaginary circle momentum.</p>
+<p><strong>Verification.</strong> With $\beta=2$, $E=1.3$, the bosonic sum rule
+$$
+\frac{1}{\beta}\sum_{n\in\mathbb{Z}}\frac{1}{\omega_n^2+E^2} = \frac{1}{2E}\coth\frac{\beta E}{2}
+$$
+was checked by direct summation over $\omega_n=2\pi n/\beta$ for $|n|\le2\times10^6$, giving $0.4463328$ against the closed form $0.4463329$, and the fermionic sum rule
+$$
+\frac{1}{\beta}\sum_{n\in\mathbb{Z}}\frac{1}{\bar\omega_n^2+E^2} = \frac{1}{2E}\tanh\frac{\beta E}{2}
+$$
+with $\bar\omega_n=(2n+1)\pi/\beta$ gave $0.3314319$ against $0.3314320$. The residual is the truncation of the sum; both rules are standard and the check confirms the frequency sets used here.</p>
+<h2 id="the-partition-function-and-the-free-energy">The Partition Function and the Free Energy</h2>
+<p>The partition function is the Gaussian integral of the Euclidean theory, and its logarithm is the free energy.</p>
+<p><strong>The functional integral.</strong> Under the rotation and the compactification, the thermal partition function is
+$$
+Z(\beta) = \mathrm{Tr}\,e^{-\beta H} = \int_{\text{periodic}}\mathcal{D}\tilde\Phi\;e^{-S_E[\tilde\Phi]},
+$$
+the integral taken over field configurations obeying the periodicity appropriate to the grading, on $S^1_\beta\times\mathbb{R}^3$. This is the Euclidean functional integral of the previous articles with the time direction compactified, and everything said there about the module, the central quadratic operator, and the Gaussian determinant applies verbatim; only the mode set changes from $\int dp^0$ to $(1/\beta)\sum_n$.</p>
+<p><strong>One-loop free energy.</strong> For the free biquaternion scalar the Euclidean action is quadratic with operator $\mathcal{M}_E$, and the Gaussian integral gives
+$$
+\log Z(\beta) = -\frac12\,\mathrm{Tr}\log\mathcal{M}_E
+= -\frac{1}{2}\sum_{n}\sum_{\mathbf p}\sum_{j}\log\big(\omega_n^2+\mathbf p^2+m^2\big)
+= -\beta\,F(\beta),
+$$
+the trace being over the module and the last equality defining the free energy $F=E-TS$. The index $j$ runs over the directions the module's traces contribute, this being a component count and not a sum over independent fields: the central eigenvalue is repeated as many times as the trace requires, the sectors being graded parts of one field related by the central $i$ rather than independent copies, as <em>The Functional Integral in Biquaternionic Form</em>, <em>The Partition Function in Biquaternionic Form</em>, and <em>The Harmonic Oscillator in Biquaternionic Form</em> record.</p>
+<p><strong>Single mode.</strong> For a single bosonic mode of energy $E$ the partition function is the geometric sum
+$$
+Z_{\text{boson}} = \sum_{n\ge0}e^{-\beta En}=\frac{1}{1-e^{-\beta E}},
+\qquad
+\log Z_{\text{boson}}=-\log\big(1-e^{-\beta E}\big),
+$$
+and for a single fermionic mode, which can be occupied at most once,
+$$
+Z_{\text{fermion}} = 1+e^{-\beta E},
+\qquad
+\log Z_{\text{fermion}}=\log\big(1+e^{-\beta E}\big).
+$$
+Both were checked numerically against the geometric sums; the occupation numbers
+$$
+n_{\mathrm B}(E)=\frac{1}{e^{\beta E}-1},
+\qquad
+n_{\mathrm F}(E)=\frac{1}{e^{\beta E}+1}
+$$
+follow. The two-state fermionic mode is the finite-temperature face of the one-mode algebra of the Fock and S-matrix articles.</p>
+<p><strong>The thermal state and the companions.</strong> The state whose correlation functions are the KMS functions at inverse temperature $\beta$ is the Gibbs state $\rho=e^{-\beta H}/Z$, with modular Hamiltonian $K=-\log\rho=\beta H+\log Z$, a Hermitian element of the informational sector $\mathbb{M}_+$ as <em>The KMS Condition and the Biquaternion Framework</em> records in its finite-dimensional setting. The Matsubara formalism is the Euclidean evaluation of that state's correlation functions, and it reproduces the Unruh and Hawking results when $\beta$ is the appropriate $2\pi c/\kappa$: the temperature is <em>not</em> produced by the formalism, it is the input $\beta$, exactly as those articles state. What the formalism supplies is the Euclidean machinery for computing with any $\beta$.</p>
+<h2 id="the-frameworks-structural-content">The Framework's Structural Content</h2>
+<p>Three statements are the framework's, and they are worth separating from the transcriptions.</p>
+<p><strong>The thermal circle is a material direction.</strong> The imaginary direction of the KMS strip is the imaginary direction of the material sector, $\mathbb{M}_-\oplus i\mathbb{M}_-=\mathbb{B}$ in the sense of the Unruh article's complexified Rindler time; the Matsubara circle is the compactification of that direction. Hence the thermal circle is not an artifact of a convergence trick: it is a circle drawn in a direction the algebra already distinguishes. The framework's statement is that the KMS strip and the thermal circle are the same object read analytically and topologically.</p>
+<p><strong>The Euclidean operator is the norm form.</strong> $\mathcal{M}_E=\tilde k_E\bar{\tilde k}_E+m^2$ is the norm form of the Wick-rotated wave biquaternion, central, positive in Euclidean signature, and identical in form to the Lorentzian operator. So the thermal propagator is the inverse of a norm form evaluated on a discrete momentum set. All the algebra's structure — centrality, the module's dimension — passes to the thermal theory unchanged; the temperature enters only through the spacing of the mode set.</p>
+<p><strong>Statistics is the grading.</strong> The periodic/antiperiodic split of the thermal circle is the even/odd split of the algebra and of the spinor module. This is a consistency, not a derivation: the framework houses the spin–statistics theorem, as the companion article argues, and the Matsubara frequency sets are its Fourier expression.</p>
+<p><strong>What the framework does not supply.</strong> The value of $\beta$. Temperature is a state parameter, fixed by the physical situation (a heat bath, a horizon, an acceleration); the algebra determines neither the existence of a thermal state nor its temperature. This is the same statement the Unruh and Hawking articles make when they insist that they house thermality rather than derive it.</p>
+<h2 id="matsubara-sums-and-thermal-factors">Matsubara Sums and Thermal Factors</h2>
+<p>The computational heart of the formalism is the conversion of a frequency sum into a thermal factor, and it is where the circle's winding number appears.</p>
+<p><strong>The contour method.</strong> A sum over Matsubara frequencies is evaluated by a contour integral enclosing the poles of a kernel:
+$$
+\frac{1}{\beta}\sum_{n}f(i\omega_n)
+= \frac{1}{2\pi i}\oint f(z)\,\frac{1}{2}\coth\frac{\beta z}{2}\,dz
+\qquad\text{(bosons)},
+\qquad
+\frac{1}{\beta}\sum_{n}f(i\bar\omega_n)
+= \frac{1}{2\pi i}\oint f(z)\,\frac{1}{2}\tanh\frac{\beta z}{2}\,dz
+\qquad\text{(fermions)},
+$$
+the kernels being $\coth$ and $\tanh$ because they have poles exactly at the bosonic and fermionic frequencies, with residue $1/\beta$ after the factor $\tfrac12$, which is the prefactor the sum requires. Evaluating the contour on the physical poles of $f$ gives the thermal factors. This is standard (Fetter–Walecka, Kapusta–Gale) and is cited.</p>
+<p><strong>Checks.</strong> On $f(z)=1/(z^2+E^2)$ the bosonic contour gives $f$'s poles at $z=\pm iE$ with the kernel $\tfrac12\coth(\beta z/2)$, yielding
+$$
+\frac{1}{\beta}\sum_n\frac{1}{\omega_n^2+E^2} = \frac{1}{2E}\Big(1+2n_{\mathrm B}(E)\Big)=\frac{1}{2E}\coth\frac{\beta E}{2},
+$$
+and the fermionic one yields $\frac{1}{2E}\tanh(\beta E/2)=\frac{1}{2E}(1-2n_{\mathrm F}(E))$; both were checked numerically in the previous section. The bracket $(1+2n_{\mathrm B})$ is the sum of the vacuum zero-point piece and the thermal excitation, which is the standard reading: the $\tfrac12$ is the vacuum energy and the $n$ is the thermal population.</p>
+<p><strong>Biquaternion content.</strong> The kernel is a central scalar, so it commutes with the module structure and multiplies each mode independently; the same thermal factor is therefore repeated once per complex dimension the trace runs over, a component count rather than a sum over independent sectors. Where the framework makes a difference is when the operator is not central — a spinor loop, whose Matsubara sum runs over the fermionic frequencies and whose numerator carries the matrix structure of the spinor module.</p>
+<h2 id="the-matsubara-greens-function-and-its-continuation">The Matsubara Green's Function and Its Continuation</h2>
+<p>The discrete sum is not the end of the calculation; the physical response functions are obtained by analytic continuation, and the framework's reading of the continuation is the material-direction one.</p>
+<p><strong>Spectral representation.</strong> The thermal Green's function has the spectral representation
+$$
+G(i\omega_n) = \int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{A(\omega)}{i\omega_n-\omega} ,
+\qquad
+A(\omega)\ \ge 0 ,
+$$
+in which $A$ is the spectral function and the discrete frequencies $\omega_n$ are the points at which the function is known. This is the finite-temperature form of the Källen–Lehmann representation of the LSZ article, and its positivity has the same origin, the positivity of the inner product of the state space. The analytic structure of $G$ in the complex frequency plane is therefore fixed by $A$: $G$ is analytic off the real axis and its discontinuity across the cut is $A$.</p>
+<p><strong>Continuation.</strong> The retarded and advanced functions are the boundary values
+$$
+G^{R/A}(\omega) = G(\omega\pm i\epsilon),
+$$
+and the passage from the discrete grid to the real axis is the <strong>analytic continuation</strong> $i\omega_n\to\omega+i\epsilon$. The KMS relation is what makes the continuation well posed: it is the statement that $G(z)$ is analytic in the strip $0<\mathrm{Im}\,z<\beta$ up to the physical cut, and the strip's width is the thermal-circle circumference. In the framework the strip is a strip in the complexified material time, as in <em>The Unruh Effect in Biquaternionic Form</em>, and the continuation from the grid to the real axis is a movement within the material-sector complexification; the algebra supplies the direction, the standard theory supplies the theorem that the boundary value is the response function.</p>
+<p><strong>A caution.</strong> The continuation is unique only given the spectral function's decay and the analyticity; the Matsubara formalism determines $G$ on the grid and the real-time response follows from the spectral representation, not from the grid alone. This is the same point that <em>The Feynman Propagator in Biquaternionic Form</em> makes about the $i\epsilon$ orientation not being algebraic data, here in the thermal setting.</p>
+<h2 id="finite-temperature-feynman-rules">Finite-Temperature Feynman Rules</h2>
+<p>The interaction theory is the vacuum perturbation theory with the discrete sums and the modified propagator, and the framework's conventions pass through unchanged.</p>
+<p><strong>The rules.</strong> Each internal line is the Euclidean propagator $D_E(\tilde k_E)=1/(k_E^2+m^2)$ with $k_E^0$ drawn from the appropriate frequency set; each internal frequency is summed as $(1/\beta)\sum_n$; each vertex is $-S_{\mathrm{int}}$ as in the vacuum theory, with the conservation of the discrete frequency imposed by the vertex; and the external legs are on the Matsubara grid, or continued to real frequency for a real-time response. The Euclidean theory is the analytic continuation of the real-time ones, and the retarded and advanced propagators are recovered by continuation from the discrete grid, as the propagator article notes for the thermal case.</p>
+<p><strong>The zero mode.</strong> The $n=0$ bosonic mode, $\omega_0=0$, is special: it is static, its Euclidean propagator is $1/(\mathbf p^2+m^2)$, and for a massless field it contributes a non-analytic zero mode that is the origin of the infrared problems of thermal field theory and of the dimensional reduction of the high-temperature limit. In the framework the zero mode is the mode whose phase is independent of the material time, i.e. constant along the thermal circle; it is the material-sector analogue of a topological sector, and it is where the thermal circle's compactification is most visible.</p>
+<p><strong>The high-temperature limit.</strong> As $\beta\to0$ the frequency spacing diverges and the discrete sum approaches the continuous integral; the leading thermal corrections are the standard $T^4$ (radiation) and $T^2$ (mass) terms of the high-temperature expansion. The framework adds the module's counting to these, through the multiplicity of the trace, and nothing else; the algebra is not a theory of the equation of state.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established (framework).</strong>
+- The Matsubara circle is a compactified material-sector direction; its circumference is the KMS width $\beta$, and the KMS strip and the circle are the same complexified material time.
+- The Euclidean mass-shell operator is the norm form $\mathcal{M}_E=\tilde k_E\bar{\tilde k}_E+m^2=k_E^2+m^2$, central and positive, with no real pole; the Lorentzian mass shell maps to complex Euclidean momentum.
+- The two frequency sets are the two grading classes' Fourier spectra; the periodic/antiperiodic split is the even/odd split.
+- The free energy carries the multiplicity of the module trace; the one-loop free energy is $\log Z=-\tfrac12\mathrm{Tr}\log\mathcal{M}_E$.</p>
+<p><strong>Standard, and transcribed.</strong>
+- The Wick rotation and the compactification; the Matsubara frequencies; the contour evaluation of the sums and the thermal factors; the occupation numbers; the finite-temperature Feynman rules; the zero mode and the high-temperature expansion; the Gibbs state and its modular Hamiltonian.</p>
+<p><strong>Interpretation.</strong>
+- Reading the thermal circle as drawn in the material sector, and the Euclidean pole structure as a statement about the complexified material direction, are the framework's structural readings. They are consistent with the KMS and Unruh articles and do not by themselves force a thermal interpretation.</p>
+<p><strong>Open.</strong>
+- The temperature is an input; the framework does not derive it. The Unruh and Hawking articles' gaps — that the modular flow is imported and that the algebra does not produce thermality — are inherited unchanged.
+- The finite-dimensional modular Hamiltonian of the KMS article is not extended here to the field algebra; the thermal state is used as the standard Gibbs state of the standard field theory.</p>
+<h2 id="summary">Summary</h2>
+<p>The Matsubara formalism in biquaternionic form is the Euclidean thermal field theory with the compactified direction identified as a material-sector direction. The thermal circle $\tau\sim\tau+\beta$ has circumference $\beta=\hbar/(k_BT)$, which is the KMS strip width, because both are the complexification of the material time $ict$; the Euclidean mass-shell operator is the central norm form
+$$
+\mathcal{M}_E(\tilde k_E)=\tilde k_E\bar{\tilde k}_E+m^2=\omega_n^2+\mathbf p^2+m^2=k_E^2+m^2\ge0 ,
+\qquad
+\tilde k_E=-\omega_ne_0+\mathbf p ,
+$$
+so the Euclidean propagator has no real pole, and the Lorentzian mass shell maps to complex Euclidean momentum. The frequencies are $\omega_n=2\pi n/\beta$ (bosonic) and $\omega_n=(2n+1)\pi/\beta$ (fermionic), the two grading classes' Fourier spectra. The sum rules
+$$
+\frac{1}{\beta}\sum_n\frac{1}{\omega_n^2+E^2}=\frac{\coth(\beta E/2)}{2E},
+\qquad
+\frac{1}{\beta}\sum_n\frac{1}{\bar\omega_n^2+E^2}=\frac{\tanh(\beta E/2)}{2E}
+$$
+were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0.3314320$ at $\beta=2$, $E=1.3$), and the single-mode free energies $\log Z_{\text{boson}}=-\log(1-e^{-\beta E})$ and $\log Z_{\text{fermion}}=\log(1+e^{-\beta E})$ follow from the geometric sums. The partition function is the Euclidean functional integral on $S^1_\beta\times\mathbb{R}^3$, its one-loop value carries the multiplicity of the module trace, and the finite-temperature rules are the vacuum rules with a discrete frequency sum. The temperature itself is an input, and the framework houses rather than derives thermality, consistently with <em>The KMS Condition and the Biquaternion Framework</em>, <em>The Unruh Effect in Biquaternionic Form</em>, and <em>Hawking Radiation in Biquaternionic Form</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-,\mathbb{M}_+$</td>
+<td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
+</tr>
+<tr>
+<td>$\tilde X=ict\,e_0+\mathbf x$</td>
+<td>Material coordinate</td>
+</tr>
+<tr>
+<td>$\tau=it$</td>
+<td>Euclidean (imaginary) time; compactified direction</td>
+</tr>
+<tr>
+<td>$\beta=\hbar/(k_BT)$</td>
+<td>Inverse temperature; circle circumference; KMS width</td>
+</tr>
+<tr>
+<td>$\tau\sim\tau+\beta$</td>
+<td>Thermal circle $S^1_\beta$</td>
+</tr>
+<tr>
+<td>$F_{\tilde A\tilde B}(t+i\beta)=F_{\tilde B\tilde A}(-t)$</td>
+<td>KMS boundary relation</td>
+</tr>
+<tr>
+<td>$\tilde\Phi(\tau+\beta)=\pm\tilde\Phi(\tau)$</td>
+<td>Periodic (boson) / antiperiodic (fermion)</td>
+</tr>
+<tr>
+<td>$\omega_n=2\pi n/\beta$</td>
+<td>Bosonic Matsubara frequencies</td>
+</tr>
+<tr>
+<td>$\bar\omega_n=(2n+1)\pi/\beta$</td>
+<td>Fermionic Matsubara frequencies</td>
+</tr>
+<tr>
+<td>$\tilde k_E=-\omega_ne_0+\mathbf p$, $k_E^2=\omega_n^2+\mathbf p^2$</td>
+<td>Wick-rotated wave biquaternion and Euclidean momentum</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_E=\tilde k_E\bar{\tilde k}_E+m^2=k_E^2+m^2$</td>
+<td>Euclidean mass-shell operator (norm form)</td>
+</tr>
+<tr>
+<td>$D_E=1/(k_E^2+m^2)$</td>
+<td>Euclidean (thermal) propagator</td>
+</tr>
+<tr>
+<td>$(1/\beta)\sum_n$</td>
+<td>Matsubara sum replacing $\int dp^0/2\pi$</td>
+</tr>
+<tr>
+<td>$Z=\mathrm{Tr}\,e^{-\beta H}=\int_{\text{per}}\mathcal{D}\tilde\Phi\,e^{-S_E}$</td>
+<td>Thermal partition function</td>
+</tr>
+<tr>
+<td>$\log Z=-\beta F=-\tfrac12\mathrm{Tr}\log\mathcal{M}_E$</td>
+<td>Free energy (one loop)</td>
+</tr>
+<tr>
+<td>$n_{\mathrm B}=1/(e^{\beta E}-1)$, $n_{\mathrm F}=1/(e^{\beta E}+1)$</td>
+<td>Bose / Fermi occupation numbers</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Matsubara, "A new approach to quantum-statistical mechanics," <em>Progress of Theoretical Physics</em> <strong>14</strong> (1955) 351–378, for the imaginary-time formulation and the frequency sums.</li>
+<li>A. L. Fetter and J. D. Walecka, <em>Quantum Theory of Many-Particle Systems</em> (McGraw-Hill, 1971), for the Matsubara Green's functions, the contour evaluation of the sums, and the thermal factors.</li>
+<li>J. I. Kapusta and C. Gale, <em>Finite-Temperature Field Theory: Principles and Applications</em> (Cambridge, 2006), for the finite-temperature Feynman rules, the zero mode, and the high-temperature expansion.</li>
+<li>M. Le Bellac, <em>Thermal Field Theory</em> (Cambridge, 1996), for the comparison of the imaginary-time and real-time formalisms and the analytic continuation.</li>
+<li>N. P. Landsman and C. G. van Weert, "Real- and imaginary-time field theory at finite temperature and density," <em>Physics Reports</em> <strong>145</strong> (1987) 141–249, for the relation between the Matsubara and Schwinger–Keldysh formalisms.</li>
+<li>R. Kubo, "Statistical-mechanical theory of irreversible processes. I," <em>Journal of the Physical Society of Japan</em> <strong>12</strong> (1957) 570–586, for the KMS condition and the analytic properties of thermal correlation functions.</li>
+<li>P. C. Martin and J. Schwinger, "Theory of many-particle systems. I," <em>Physical Review</em> <strong>115</strong> (1959) 1342–1373, for the original derivation of the thermal Green's-function formalism.</li>
+<li>G. W. Gibbons and S. W. Hawking, "Action integrals and partition functions in quantum gravity," <em>Physical Review D</em> <strong>15</strong> (1977) 2752–2756, for the Euclidean period that fixes a temperature from the geometry of a compactified direction.</li>
+<li>N. D. Birrell and P. C. W. Davies, <em>Quantum Fields in Curved Space</em> (Cambridge, 1982), for the Euclidean and thermal propagators and the periodicity in imaginary time.</li>
+<li>J. Zinn-Justin, <em>Quantum Field Theory and Critical Phenomena</em> (Oxford, 2002), for the Euclidean functional integral at finite temperature.</li>
+<li>Companion articles: <em>The KMS Condition and the Biquaternion Framework</em>, for the modular Hamiltonian and the analytic strip; <em>The Unruh Effect in Biquaternionic Form</em> and <em>Hawking Radiation in Biquaternionic Form</em>, for the thermal states and the temperatures this formalism reproduces; <em>The Spin–Statistics Theorem in Biquaternionic Form</em>, for the periodic/antiperiodic split; <em>The Functional Integral in Biquaternionic Form</em> and <em>The Generating Functional and the Effective Action in Biquaternionic Form</em>, for the Euclidean integral and its one-loop value; <em>The Feynman Propagator in Biquaternionic Form</em>, for the wave biquaternion and the analytic continuation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

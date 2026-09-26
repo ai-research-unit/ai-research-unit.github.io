@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auslander–Reiten Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="auslanderreiten-theory"><strong>Auslander–Reiten Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The representation theory of a finite-dimensional algebra is organised by a structure that records which indecomposable modules are close to one another and how they are glued: the <strong>Auslander–Reiten quiver</strong>, whose vertices are the isomorphism classes of indecomposable modules and whose arrows are the irreducible morphisms. The theory has two ingredients. First, the <strong>almost split sequences</strong>, or Auslander–Reiten sequences: for every indecomposable module that is not projective there is a nonsplit short exact sequence ending at it, which is minimal in the sense that every morphism into the end term that is not a split epimorphism factors through the middle term, and dually for every non-injective module. Second, the <strong>Auslander–Reiten translation</strong>, an equivalence between the stable categories of modules without projective summands and without injective summands, which shifts a module to the other end of its almost split sequence. Together they turn the module category into a combinatorially accessible translation quiver, and the translation is computed by the <strong>Nakayama functor</strong> on the one hand and by the <strong>Coxeter transformation</strong> of a hereditary algebra on the other.</p>
+<p>This article develops irreducible morphisms and the radical, almost split sequences and their existence, the Auslander–Reiten translation and the formula
+$$
+D\operatorname{Ext}^1_A(M,N)\cong\operatorname{Hom}_A(N,\tau M),
+$$
+the Auslander–Reiten quiver and its mesh relations, the stable module category and the Nakayama functor, the computation of the translation for a hereditary algebra by the Coxeter transformation, the preprojective, regular and preinjective components of the quiver of a tame algebra, and the examples of the Dynkin quivers and the Kronecker quiver. It follows <em>Quiver Representations and Representation Type</em>, <em>Ext and Tor</em>, <em>Projective and Injective Modules</em>, and it prepares.</p>
+<p>Throughout, $k$ is a field, $A$ is a finite-dimensional $k$-algebra with unit, and modules are finite-dimensional left $A$-modules; $D=\operatorname{Hom}_k(-,k)$ is the $k$-dual, and $\underline{\mathrm{mod}}\,A$ and $\overline{\mathrm{mod}}\,A$ are the stable categories modulo the projective and the injective modules. The ground ring is the field because the existence theorem and the finite-dimensional algebra techniques require it; the results are flagged where finite-dimensionality or the field assumption is used. The categorical and homological machinery of <em>Homological Algebra</em>, <em>Ext and Tor</em> and <em>Derived Categories</em> is used freely. No topology or form occurs.</p>
+<h2 id="irreducible-morphisms-and-the-radical">Irreducible Morphisms and the Radical</h2>
+<h3 id="the-radical-of-a-module-category">The Radical of a Module Category</h3>
+<p><strong>Definition.</strong> For finite-dimensional $A$-modules $M,N$ let $\operatorname{rad}_A(M,N)$ be the $k$-subspace of $\operatorname{Hom}_A(M,N)$ consisting of the morphisms $f$ such that for every indecomposable module $X$ and every pair of morphisms $X\xrightarrow{u}M$, $N\xrightarrow{v}X$, the composite $vfu$ is not an isomorphism. The <strong>radical</strong> of the module category is the two-sided ideal generated by these subspaces, and its powers define the powers $\operatorname{rad}^n$. For $M,N$ indecomposable the radical is exactly the set of morphisms that are not isomorphisms.</p>
+<p><strong>Definition.</strong> A morphism $f:M\to N$ between indecomposable modules is <strong>irreducible</strong> if it is neither a split monomorphism nor a split epimorphism and every factorisation $f=hg$ with $h,g$ not isomorphisms is impossible: if $f=hg$ then $h$ is a split monomorphism or $g$ is a split epimorphism. Equivalently, $f$ is irreducible when $f\in\operatorname{rad}(M,N)\setminus\operatorname{rad}^2(M,N)$ for indecomposable $M,N$.</p>
+<p><strong>Proposition.</strong> For indecomposable $M,N$ the space of irreducible morphisms $M\to N$ is the quotient $\operatorname{rad}(M,N)/\operatorname{rad}^2(M,N)$, and this quotient is the $k$-vector space with basis the arrows $M\to N$ of the Auslander–Reiten quiver. For $M=N$ with $\operatorname{End}(M)$ local the quotient is the radical of the local algebra divided by its square.</p>
+<p><em>Proof.</em> A morphism $f$ is irreducible exactly when it lies in the radical and its image in $\operatorname{rad}/\operatorname{rad}^2$ is nonzero: a factorisation $f=hg$ with $h$ not a split monomorphism and $g$ not a split epimorphism puts $f$ in $\operatorname{rad}^2$, and conversely a morphism in $\operatorname{rad}^2$ admits such a factorisation. Since $\operatorname{rad}^2$ is spanned by the composites of two radical morphisms, the quotient has a basis of irreducible morphisms modulo the relations coming from composites, which is precisely the definition of the arrows. $\square$</p>
+<p><strong>Example.</strong> For the path algebra of the quiver $1\to2$ the irreducible morphisms are the projection $P_1\to S_1$ and the inclusion $S_2\hookrightarrow P_1$, up to scalars; the composition $S_2\to P_1\to S_1$ is the zero morphism, since it factors through the radical.</p>
+<h3 id="almost-split-sequences">Almost Split Sequences</h3>
+<p><strong>Definition.</strong> A short exact sequence
+$$
+0\to L\xrightarrow{\ f\ }M\xrightarrow{\ g\ }N\to0
+$$
+is an <strong>almost split sequence</strong>, or <strong>Auslander–Reiten sequence</strong>, if it does not split, $L$ and $N$ are indecomposable, and every morphism $X\to N$ that is not a split epimorphism lifts to $M$, equivalently every morphism $L\to X$ that is not a split monomorphism extends to $M$. The module $L$ is then determined up to isomorphism by $N$ and is written $\tau N$, the <strong>Auslander–Reiten translation</strong> of $N$; dually $N=\tau^{-1}L$ for appropriate $L$.</p>
+<p><strong>Theorem (Auslander–Reiten).</strong> Let $A$ be a finite-dimensional $k$-algebra. For every indecomposable finite-dimensional module $N$ that is not projective there is an almost split sequence $0\to\tau N\to M\to N\to0$, and it is unique up to isomorphism of short exact sequences; dually for every indecomposable $L$ that is not injective there is an almost split sequence $0\to L\to M\to\tau^{-1}L\to0$. The middle term $M$ is a direct sum of copies of the indecomposable modules $X$ occurring in irreducible morphisms $\tau N\to X$ and $X\to N$, with multiplicities equal to the dimensions of the spaces of irreducible morphisms.</p>
+<p><em>Proof (in outline).</em> The existence is proved by constructing, for a non-projective $N$, a minimal <strong>right</strong> almost split map $M\to N$ out of the direct sum of the indecomposables $X$ for which there is an irreducible morphism $X\to N$; the map is obtained from a minimal projective presentation of $N$ by applying the transpose $\operatorname{Tr}$ and the duality $D=\operatorname{Hom}_k(-,k)$, its kernel is $\tau N=D\operatorname{Tr}N$, and the resulting class in $\operatorname{Ext}^1_A(N,\tau N)$ is the required sequence. Uniqueness follows because two such sequences have the same class up to the action of the automorphism group of $N$. The multiplicities are computed from the irreducibility quotient of the previous proposition. $\square$</p>
+<p><strong>Definition.</strong> The <strong>transpose</strong> of a module $M$ with minimal projective presentation $P_1\to P_0\to M\to0$ is $\operatorname{Tr}M=\operatorname{coker}(\operatorname{Hom}_A(P_0,A)\to\operatorname{Hom}_A(P_1,A))$, and the <strong>Auslander–Reiten translation</strong> of a module $N$ without projective summands is $\tau N=D\operatorname{Tr}N$.</p>
+<p><strong>Theorem (Auslander–Reiten formula).</strong> Let $A$ be a finite-dimensional $k$-algebra, and let $\underline{\operatorname{Hom}}$ denote $\operatorname{Hom}$ modulo the morphisms that factor through a projective module and $\overline{\operatorname{Hom}}$ the same modulo the morphisms that factor through an injective module. For every finite-dimensional module $M$ without projective summands and every finite-dimensional module $N$ there is a natural isomorphism
+$$
+D\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(N,\tau M),
+$$
+and, for every $N$ without injective summands and every $M$, a natural isomorphism
+$$
+D\operatorname{Ext}^1_A(M,N)\cong\overline{\operatorname{Hom}}_A(\tau^{-1}N,M).
+$$
+The stable Hom is necessary: a morphism $N\to\tau M$ that factors through a projective module contributes nothing to $\operatorname{Ext}^1_A(M,N)$, and likewise on the dual side. The isomorphisms are compatible with the module structures and are natural in both variables.</p>
+<p><em>Proof.</em> The functor $D\operatorname{Ext}^1_A(M,-)$, restricted to modules without projective summands, is representable on the stable category by $\tau M$: the representation is computed from a minimal projective presentation, using $\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(\Omega M,N)$ with $\Omega$ the syzygy, the transpose and the duality $D$, and the representing object is $\tau M$. Since the representing property is a statement in the stable category, the Hom that occurs is $\underline{\operatorname{Hom}}$, and the dual statement is obtained by applying the same argument to $A^{\mathrm{op}}$ with the injective stable category. The naturality is the naturality of the Yoneda pairing. $\square$</p>
+<p><strong>Corollary.</strong> An indecomposable module $N$ that is not projective is the right end of an almost split sequence $0\to\tau N\to M\to N\to0$ with the middle term $M$ as in the existence theorem, and the class of that sequence in $\operatorname{Ext}^1_A(N,\tau N)$ is nonzero. Moreover $\tau$ induces an equivalence $\underline{\mathrm{mod}}\,A\to\overline{\mathrm{mod}}\,A$ with inverse $\tau^{-1}$.</p>
+<h3 id="minimal-projective-presentations-and-the-transpose">Minimal Projective Presentations and the Transpose</h3>
+<p><strong>Definition.</strong> A <strong>minimal projective presentation</strong> of a finite-dimensional module $M$ is an exact sequence</p>
+<p>$$
+P_1\xrightarrow{\ f\ }P_0\to M\to0
+$$</p>
+<p>in which $P_0$ is a projective cover of $M$ and $P_1$ is a projective cover of the kernel of the cover. It is unique up to a non-canonical isomorphism, and the syzygy $\Omega M=\ker f$ is well defined up to projective summands; the <strong>transpose</strong> of $M$ is</p>
+<p>$$
+\operatorname{Tr}M=\operatorname{coker}\bigl(\operatorname{Hom}_A(f,A):\operatorname{Hom}_A(P_0,A)\to\operatorname{Hom}_A(P_1,A)\bigr),
+$$</p>
+<p>which has no projective summands when $M$ has none, and $\operatorname{Tr}$ is a contravariant functor on the stable category.</p>
+<p><strong>Proposition.</strong> The transpose satisfies $\operatorname{Tr}\operatorname{Tr}M\cong M$ for modules without projective summands, and it exchanges the projective and injective dimensions. The Auslander–Reiten translation is $\tau=D\operatorname{Tr}$ and the inverse translation is $\tau^{-1}=\operatorname{Tr}D$, so that $\tau$ and $\tau^{-1}$ are mutually inverse on the stable categories.</p>
+<p><em>Proof.</em> The double transpose is the identity on the stable category, computed from the same minimal presentation, because the two Hom-dualities compose to the identity up to the canonical identification of a module with its double dual over a field. The dimension statement is that the transpose of a projective resolution of $M$ is an injective coresolution of $\operatorname{Tr}M$ under the duality. The formula for $\tau$ is the definition, and the inverse is obtained by dualising the presentation. $\square$</p>
+<p><strong>Example.</strong> For $A=kQ$ the path algebra of an acyclic quiver and a vertex $i$, the minimal projective presentation of the simple module $S_i$ is $0\to\bigoplus_{s(a)=i}P_{t(a)}\to P_i\to S_i\to0$, minimal because the kernel has no projective summand in the acyclic case; the transpose and the dual give the dimension vector $\underline{\dim}\,\tau S_i$, the reflection of $\underline{\dim}S_i$ in the corresponding simple root.</p>
+<h2 id="the-mesh-category-and-the-knitting-of-the-quiver">The Mesh Category and the Knitting of the Quiver</h2>
+<p><strong>Definition.</strong> The <strong>mesh category</strong> of a translation quiver $(\Gamma,\tau)$ has as objects the vertices of $\Gamma$ and as morphisms the $k$-linear combinations of paths modulo the <strong>mesh relations</strong>: for each vertex $N$ that is not projective, the sum of the paths through the mesh of the almost split sequence $0\to\tau N\to\bigoplus_iM_i\to N\to0$ is zero. It is the $k$-linearisation of the quiver with relations and a quotient of the path category of $\Gamma$.</p>
+<p><strong>Theorem (Ringel, knitting).</strong> For a finite-dimensional algebra of finite representation type the Auslander–Reiten quiver can be constructed from any of its projective vertices by the knitting algorithm: start from a projective vertex, use the almost split sequences to determine the meshes, and continue until the quiver is closed under the translation. The resulting finite translation quiver is independent of the starting vertex, and its mesh category computes the morphism spaces between the indecomposables.</p>
+<p><em>Proof (in outline).</em> Each almost split sequence determines the module to its left from the surrounding meshes, so by the existence theorem the process adds exactly the indecomposables connected to the start by irreducible morphisms; for finite representation type it terminates because there are only finitely many indecomposables. The identification of the morphism spaces with the mesh category is Ringel's theorem; the mesh relations suffice because every morphism between indecomposables is a sum of composites of irreducible morphisms, and the relations hold by the structure of the almost split sequences. $\square$</p>
+<p><strong>Example.</strong> Knitting the quiver of type $A_3$ from the projective vertex $P_3$ produces the six-vertex translation quiver described below. Knitting the Kronecker algebra produces the preprojective component $\mathbb{Z}A_\infty$ and the regular tubes, and the process does not terminate because the algebra is tame and not of finite type.</p>
+<h2 id="the-auslanderreiten-quiver">The Auslander–Reiten Quiver</h2>
+<p><strong>Definition.</strong> The <strong>Auslander–Reiten quiver</strong> $\Gamma(A)$ of $A$ has as vertices the isomorphism classes of indecomposable finite-dimensional $A$-modules, and, for each pair of vertices $M,N$, exactly $d_{MN}=\dim_k\operatorname{rad}(M,N)/\operatorname{rad}^2(M,N)$ arrows from $M$ to $N$. It is a <strong>translation quiver</strong> with the translation $\tau$ defined on the vertices that are not projective and with $\tau^{-1}$ defined on the vertices that are not injective, and it satisfies the <strong>mesh relations</strong>: for a non-projective vertex $N$ the almost split sequence $0\to\tau N\to\bigoplus_iM_i^{d_i}\to N\to0$ gives the mesh, and the sum of the maps along the mesh is zero.</p>
+<p><strong>Proposition.</strong> The Auslander–Reiten quiver is locally finite, and the connected components are the equivalence classes of indecomposables under the equivalence relation generated by the arrows. For $A$ of finite representation type the quiver is finite and the translation is defined on all non-projective vertices and has $\tau^{-1}$ defined on all non-injective ones; for a Dynkin quiver it is finite with one vertex for each positive root of the diagram, by Gabriel's theorem, and the arrows are the irreducible morphisms occurring in the meshes.</p>
+<p><em>Proof.</em> Local finiteness is the finite-dimensionality of the Hom and Ext spaces and the fact that only finitely many indecomposables occur in a fixed almost split sequence. The rest is the mesh structure and the Auslander–Reiten theorem. $\square$</p>
+<p><strong>Theorem (Happel, for hereditary algebras).</strong> Let $A=kQ$ be the path algebra of an acyclic quiver and let $C$ be the Cartan matrix, $C_{ij}=\dim_k\operatorname{Hom}_A(P_i,P_j)$, the number of paths from $j$ to $i$, as in <em>Quiver Representations and Representation Type</em>, so that the $j$-th column of $C$ is the dimension vector of $P_j$. Then the Auslander–Reiten translation acts on the dimension vectors of the modules without projective summands by
+$$
+\underline{\dim}\,\tau M=-C^{\mathsf T}C^{-1}\,\underline{\dim}M=\Phi^{-\mathsf T}\,\underline{\dim}M,
+\qquad \Phi=-C^{-1}C^{\mathsf T}:\mathbb{Z}^{Q_0}\to\mathbb{Z}^{Q_0},
+$$
+so that the <strong>Coxeter transformation</strong> $\Phi$ and the matrix of the translation are inverse transposes of one another in this convention and therefore have the same order. For a Dynkin quiver $\Phi$ has finite order, equal to the Coxeter number of the diagram; for an affine quiver it has infinite order, and the periodic orbits of the translation are exactly the regular ones, whose dimension vectors are the positive multiples of the null root.</p>
+<p><em>Proof (in outline).</em> The dimension vector of $\tau M$ is computed from the minimal projective presentation and the Cartan matrix: the syzygy and the transpose shift the dimension vector by multiplication by the inverse of the Cartan matrix and the transpose, and the duality contributes the sign, which is the formula above. The order statements for the Dynkin and affine cases are the corresponding facts about the Weyl group and the affine Weyl group, and periodicity in the tubes is the statement that $\tau^{r}$ fixes the vertices of a tube of rank $r$. $\square$</p>
+<p><strong>Example ($A_2$).</strong> For the path algebra of $1\to2$ the three indecomposables are $S_2$, the two-dimensional $M=P_1$, and $S_1$, with arrows $S_2\to M\to S_1$ and the mesh relation that the composite $S_2\to M\to S_1$ is zero; the Coxeter transformation has order $3$, and the translation sends $S_1$ to $S_2$ and is undefined on $M$, which is both projective and injective.</p>
+<p><strong>Example ($A_3$).</strong> For $1\to2\to3$ the six indecomposables are the interval modules $[1,1]$, $[2,2]$, $[3,3]$, $[1,2]$, $[2,3]$, $[1,3]$, the dimension vector of $[i,j]$ having $1$ in the positions $i,\dots,j$ and $0$ elsewhere; the three meshes are the almost split sequences
+$$
+0\to[2,2]\to[1,2]\to[1,1]\to0,\qquad 0\to[3,3]\to[2,3]\to[2,2]\to0,
+$$
+$$
+0\to[2,3]\to[1,3]\oplus[2,2]\to[1,2]\to0,
+$$
+and the six irreducible morphisms occurring in them are the six arrows of the quiver. The translation is $\tau[i,j]=[i+1,j+1]$ where it is defined, so that it is undefined exactly on the projectives $[1,3]$, $[2,3]$, $[3,3]$ and $\tau^{-1}$ exactly on the injectives $[1,1]$, $[1,2]$, $[1,3]$; the Coxeter transformation has order $4$, the Coxeter number of $A_3$.</p>
+<p><strong>Example (Kronecker).</strong> For the Kronecker quiver with two arrows $1\rightrightarrows2$ the Auslander–Reiten quiver has three components: the preprojective component, a copy of the translation quiver $\mathbb{Z}A_\infty$; the preinjective component; and the regular component, a family of tubes indexed by the slopes; the regular tube of rank $n$ is periodic, each of its vertices fixed by a power of the translation. This is the combinatorial form of the classification of the matrix pencils of <em>Quiver Representations and Representation Type</em>.</p>
+<h2 id="the-preprojective-partition">The Preprojective Partition</h2>
+<p><strong>Definition.</strong> The <strong>preprojective partition</strong> of the indecomposable finite-dimensional modules is the sequence $\mathcal{P}_0,\mathcal{P}_1,\mathcal{P}_2,\dots$ defined by taking $\mathcal{P}_0$ to be a complete set of representatives of the indecomposable projective modules and, for $n\ge1$, $\mathcal{P}_n$ to be a minimal set of indecomposables such that every indecomposable not in $\mathcal{P}_0\cup\cdots\cup\mathcal{P}_{n-1}$ is a quotient of a direct sum of modules in $\mathcal{P}_n$; the process stops at an ordinal. The <strong>preprojective component</strong> of the Auslander–Reiten quiver is the full subquiver on the union of the $\mathcal{P}_n$.</p>
+<p><strong>Theorem (Auslander–Smalø).</strong> Every finite-dimensional algebra $A$ has a preprojective partition. If $A$ is of finite representation type the partition is finite and every indecomposable lies in some $\mathcal{P}_n$; if $A$ is of infinite representation type the partition is infinite and the modules in the union of the $\mathcal{P}_n$ are exactly those of the preprojective component, which is a component of the Auslander–Reiten quiver of the form $\mathbb{Z}\Delta$ for a finite quiver $\Delta$ with no oriented cycles, or for a tame hereditary algebra the quiver $\mathbb{Z}A_\infty$ for the Kronecker type.</p>
+<p><em>Proof (in outline).</em> The existence uses the finite-dimensionality of the Hom spaces and the fact that each indecomposable has finitely many quotients of bounded dimension; minimality is achieved by an induction on the dimension. For a hereditary algebra the preprojective modules are the $\tau^{-m}P_i$ for $m\ge0$, and their almost split sequences knit the component $\mathbb{Z}\Delta$; the statement about tame type is the component structure of the Kronecker and the affine quivers. $\square$</p>
+<p><strong>Example.</strong> For the Kronecker quiver the preprojective component contains the modules of dimension vectors $(n,n+1)$ for $n\ge0$, the preinjective component contains $(n+1,n)$, and the regular component consists of the tubes indexed by the slopes, in agreement with the classification of the representations of that quiver.</p>
+<h2 id="the-stable-category-and-the-nakayama-functor">The Stable Category and the Nakayama Functor</h2>
+<p><strong>Definition.</strong> The <strong>stable module category</strong> $\underline{\mathrm{mod}}\,A$ has the same objects as the finite-dimensional modules, and its morphism spaces are $\underline{\operatorname{Hom}}_A(M,N)=\operatorname{Hom}_A(M,N)/\mathcal{P}(M,N)$, where $\mathcal{P}(M,N)$ consists of the morphisms factoring through a projective module. Dually the category $\overline{\mathrm{mod}}\,A$ is the quotient by the morphisms factoring through an injective module.</p>
+<p><strong>Definition.</strong> The <strong>Nakayama functor</strong> is $\nu=D\operatorname{Hom}_A(-,A):\mathrm{mod}\,A\to\mathrm{mod}\,A$, and the <strong>inverse Nakayama functor</strong> is $\nu^{-1}=\operatorname{Hom}_A(D(A),-)$. The functor $\nu$ is right exact and sends the projective $P_i$ to the injective $I_i$; it is an equivalence if and only if $A$ is self-injective.</p>
+<p><strong>Proposition.</strong> The composition $\nu^{-1}\circ\nu$ is isomorphic to the identity on the full subcategory of modules without projective summands, and $\nu$ induces an equivalence between the projectives and the injectives. Moreover on the stable category the translation is $\tau=D\operatorname{Tr}=\nu^{-1}\circ\Omega$ in the sense that there is a natural isomorphism $\underline{\operatorname{Hom}}_A(\tau M,N)\cong D\operatorname{Ext}^1_A(N,M)$ for modules without projective summands.</p>
+<p><em>Proof.</em> The Nakayama functor is the functor represented by $D(A)$ composed with the duality, and the identification $\nu P_i\cong I_i$ is the definition of the injective hull of the simple module at $i$. The syzygy $\Omega M$ is the kernel of a projective cover, and the transpose of $M$ is the dual of the syzygy under the Nakayama identification, from which the two formulas follow. $\square$</p>
+<p><strong>Example.</strong> For a self-injective algebra the stable category is a triangulated category, and the translation becomes a suspension; for the group algebra of a finite group this is the stable module category of modular representation theory, where the Auslander–Reiten sequences are the sources of the almost split structure. The present article uses only the finite-dimensional algebra case and does not enter the modular or the group-theoretic setting.</p>
+<h2 id="summary">Summary</h2>
+<p>An irreducible morphism between indecomposable finite-dimensional modules is a morphism in the radical but not in its square, and the quotient of the radical by its square measures the arrows of the Auslander–Reiten quiver. For every indecomposable non-projective module $N$ there is a unique almost split sequence $0\to\tau N\to M\to N\to0$, whose left term defines the Auslander–Reiten translation and whose middle term is the direct sum of the indecomposables occurring in the irreducible morphisms into $N$; dually for the injective end. The Auslander–Reiten formula $D\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(N,\tau M)$ converts the extension theory into the representation theory, and the translation is computed by the transpose and the Nakayama functor, or on dimension vectors, for a hereditary algebra, by the Coxeter transformation $\Phi=-C^{-1}C^{\mathsf T}$.</p>
+<p>The Auslander–Reiten quiver assembles this data into a translation quiver with the mesh relations, locally finite and possibly of several components; for a Dynkin quiver it is finite, for the Kronecker quiver it has a preprojective, a preinjective and a regular component, and for a self-injective algebra the stable category carrying the translation becomes triangulated. The stable categories $\underline{\mathrm{mod}}\,A$ and $\overline{\mathrm{mod}}\,A$ are exchanged by $\tau$, and the theory is the combinatorial backbone of the representation type developed in <em>Quiver Representations and Representation Type</em>; it feeds the tilting and cluster theories.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>finite-dimensional $k$-algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}(M,N)$</td>
+<td>morphisms factoring through no indecomposable</td>
+</tr>
+<tr>
+<td>$\underline{\operatorname{Hom}}_A$, $\overline{\operatorname{Hom}}_A$</td>
+<td>Hom modulo morphisms factoring through projectives, injectives</td>
+</tr>
+<tr>
+<td>$\Gamma(A)$</td>
+<td>Auslander–Reiten quiver</td>
+</tr>
+<tr>
+<td>$\tau$, $\tau^{-1}$</td>
+<td>Auslander–Reiten translation and its inverse</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}M$</td>
+<td>transpose of $M$</td>
+</tr>
+<tr>
+<td>$\nu=D\operatorname{Hom}_A(-,A)$</td>
+<td>Nakayama functor</td>
+</tr>
+<tr>
+<td>$D=\operatorname{Hom}_k(-,k)$</td>
+<td>duality</td>
+</tr>
+<tr>
+<td>$\underline{\mathrm{mod}}\,A$, $\overline{\mathrm{mod}}\,A$</td>
+<td>stable categories modulo projectives, injectives</td>
+</tr>
+<tr>
+<td>$\Omega M$</td>
+<td>first syzygy of $M$</td>
+</tr>
+<tr>
+<td>$\Phi=-C^{-1}C^{\mathsf T}$</td>
+<td>Coxeter transformation</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>Cartan matrix</td>
+</tr>
+<tr>
+<td>$S_i$, $P_i$, $I_i$</td>
+<td>simple, indecomposable projective, injective</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Maurice Auslander, "Representation theory of Artin algebras II", <em>Communications in Algebra</em> 1 (1974), 269–310, for the almost split sequences and the translation.</li>
+<li>Maurice Auslander, Idun Reiten and Sverre O. Smalø, <em>Representation Theory of Artin Algebras</em> (Cambridge University Press, 1995), for the systematic development of the Auslander–Reiten quiver.</li>
+<li>Maurice Auslander and Sverre O. Smalø, "Almost split sequences in subcategories", <em>Journal of Algebra</em> 69 (1981), 426–454, for the existence theorem in the general form.</li>
+<li>Klaus Bongartz, "Algebras and quadratic forms", <em>Journal of the London Mathematical Society</em> 28 (1983), 461–469, for the Coxeter transformation and the hereditary case.</li>
+<li>Dieter Happel, <em>Triangulated Categories in the Representation Theory of Finite-Dimensional Algebras</em> (Cambridge University Press, 1988), for the stable category, the Coxeter transformation and the derived viewpoint.</li>
+<li>Idun Reiten, "Almost split sequences", in <em>Representation Theory of Algebras</em> (Springer Lecture Notes in Mathematics 831, 1980), for the survey of the existence and the translation.</li>
+<li>Claus M. Ringel, <em>Tame Algebras and Integral Quadratic Forms</em> (Springer Lecture Notes in Mathematics 1099, 1984), for the component structure of the tame quivers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

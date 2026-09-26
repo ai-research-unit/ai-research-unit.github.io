@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean Algebras and Lattices — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="boolean-algebras-and-lattices"><strong>Boolean Algebras and Lattices</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the first article of the Boolean system in Part V, and it occupies the <strong>algebra slot</strong> of that system. The system is the two-element Boolean domain $\mathbf{2} = \{0,1\}$ together with the propositional connectives, and the article develops the equational algebra that the domain generates: the <strong>Boolean algebras</strong>. It is the synthetic counterpart of the general order theory of Part I, and it states for this one system what <em>Order Theory and Lattices</em> states for orders in general.</p>
+<p>The boundary against the general theory is deliberate. Lattices, distributivity, modularity, Galois connections and the fixed-point theorems belong to <em>Order Theory and Lattices</em> and are used here, not re-derived. The topological slot of the Boolean system is a separate article,which supplies the Stone space, the compactness and the total disconnectedness; nothing topological is developed below. Because the Boolean system is finite in a strong sense — every finitely generated Boolean algebra is finite, and the two-element algebra generates the whole variety — the system supports an algebra and no analysis, and the closing section records why.</p>
+<p>Throughout, a lattice is written $(L, \wedge, \vee)$ with meet $\wedge$ and join $\vee$, and its order is $\leq$. The two-element algebra is $\mathbf{2} = \{0,1\}$ with $0 < 1$, and the power set of a set $X$ is $\mathcal{P}(X)$. The complement of an element $a$ of a Boolean algebra is written $\neg a$. The elementary connectives and the satisfaction relation are those of <em>Logic and Proof</em>, and the natural numbers that index the generators are those of <em>The Natural Numbers</em>, written in parallel in this Part.</p>
+<h2 id="lattices-and-their-operations">Lattices and Their Operations</h2>
+<h3 id="the-two-operations-of-an-order">The Two Operations of an Order</h3>
+<p><strong>Definition.</strong> A <strong>lattice</strong> is a partially ordered set $(L, \leq)$ in which every pair of elements has a least upper bound and a greatest lower bound. The least upper bound of $\{a,b\}$ is the <strong>join</strong> $a \vee b$, and the greatest lower bound is the <strong>meet</strong> $a \wedge b$. A lattice is <strong>bounded</strong> if it has a least element $0$ and a greatest element $1$.</p>
+<p>The two operations are related to the order by the equivalences</p>
+<p>$$
+a \wedge b = a \iff a \leq b \iff a \vee b = b,
+$$</p>
+<p>which is the form in which inequalities are verified in a lattice. Written as equations, the operations satisfy the <strong>lattice laws</strong></p>
+<p>$$
+a \wedge a = a, \qquad a \vee a = a, \qquad a \wedge b = b \wedge a, \qquad a \vee b = b \vee a,
+$$</p>
+<p>$$
+(a \wedge b) \wedge c = a \wedge (b \wedge c), \qquad (a \vee b) \vee c = a \vee (b \vee c),
+$$</p>
+<p>together with the two <strong>absorption laws</strong></p>
+<p>$$
+a \wedge (a \vee b) = a, \qquad a \vee (a \wedge b) = a,
+$$</p>
+<p>and a bounded lattice satisfies $a \wedge 1 = a$ and $a \vee 0 = a$. Conversely, any set with two binary operations satisfying the lattice laws and the absorption laws is a lattice for the order defined by $a \leq b \iff a \wedge b = a$, so the order-theoretic and the equational presentations are equivalent. This is the content of <em>Order Theory and Lattices</em>, where the argument is given.</p>
+<p><strong>Example.</strong> Every total order is a lattice, with $a \wedge b = \min(a,b)$ and $a \vee b = \max(a,b)$. The real line with its usual order is a lattice of this kind; it is not bounded, and its completion $\mathbb{R} \cup \{-\infty, +\infty\}$ is a complete lattice, the standard order-theoretic completion of <em>Order Theory and Lattices</em>.</p>
+<p><strong>Example.</strong> The subgroups of a group, ordered by inclusion, form a lattice with $H \wedge K = H \cap K$ and $H \vee K$ the subgroup generated by $H \cup K$. This lattice is bounded by the trivial subgroup and the whole group; it is modular but not distributive whenever the group contains a nonabelian composition factor, which is the standard reason modularity rather than distributivity is the natural hypothesis in group theory.</p>
+<p><strong>Example.</strong> The set of equivalence relations on a set $X$, ordered by refinement, is a bounded lattice: the meet is the intersection of the two relations and the join is the equivalence relation they generate. This is the lattice in which the congruence lattices of universal algebra live, and it is the setting of the quotient construction below.</p>
+<h3 id="distributivity-and-modularity">Distributivity and Modularity</h3>
+<p><strong>Definition.</strong> A lattice is <strong>distributive</strong> if either of the two equivalent identities</p>
+<p>$$
+a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c), \qquad a \vee (b \wedge c) = (a \vee b) \wedge (a \vee c)
+$$</p>
+<p>holds for all $a,b,c$; that the two are equivalent is a theorem of <em>Order Theory and Lattices</em>, and either may be taken as the axiom. A lattice is <strong>modular</strong> if</p>
+<p>$$
+a \leq c \implies a \vee (b \wedge c) = (a \vee b) \wedge c .
+$$</p>
+<p><strong>Theorem.</strong> Every distributive lattice is modular, and a lattice is distributive if and only if it contains neither of the two lattices $M_3$ nor $N_5$ as a sublattice.</p>
+<p><strong>Proof.</strong> Distributive implies modular is an immediate substitution. The forbidden-sublattice criterion is the theorem of Dedekind and Birkhoff: $N_5$ is modular but not distributive and $M_3$ is not modular, and every non-distributive lattice contains one of them as a sublattice. The proof is in <em>Order Theory and Lattices</em> and is not repeated. $\square$</p>
+<p>The theorem is the reason the Boolean system is so rigid: a Boolean algebra is a distributive lattice, so it contains neither $M_3$ nor $N_5$, and the congruence lattice of a distributive lattice is itself distributive. Non-distributive logic, which is the subject, begins exactly where this criterion fails.</p>
+<h2 id="boolean-algebras">Boolean Algebras</h2>
+<h3 id="definition-and-the-complement">Definition and the Complement</h3>
+<p><strong>Definition.</strong> A <strong>Boolean algebra</strong> is a bounded distributive lattice $(B, \wedge, \vee, 0, 1)$ in which every element $a$ has a <strong>complement</strong>, an element $\neg a$ with</p>
+<p>$$
+a \wedge \neg a = 0, \qquad a \vee \neg a = 1 .
+$$</p>
+<p>A <strong>homomorphism</strong> of Boolean algebras is a map $\varphi : B \to B'$ preserving $\wedge$, $\vee$, $\neg$, $0$ and $1$. A <strong>subalgebra</strong> is a subset closed under the three operations; an <strong>ideal</strong> is a nonempty subset $I$ closed under finite joins and downward closed, $a \in I$ and $b \leq a$ implying $b \in I$; a <strong>filter</strong> is the order-dual notion. The algebra $B$ is <strong>trivial</strong> if $0 = 1$.</p>
+<p><strong>Theorem.</strong> In a bounded distributive lattice, a complement, when it exists, is unique.</p>
+<p><strong>Proof.</strong> Let $c$ and $d$ both complement $a$. Then</p>
+<p>$$
+c = c \wedge 1 = c \wedge (a \vee d) = (c \wedge a) \vee (c \wedge d) = 0 \vee (c \wedge d) = c \wedge d,
+$$</p>
+<p>so $c \leq d$; the same computation with $c$ and $d$ interchanged gives $d \leq c$, whence $c = d$ by antisymmetry. $\square$</p>
+<p>Uniqueness is what makes $\neg$ an operation and not merely a relation, and it is what fails in the non-distributive ortholattices. The following identities are then forced, and they are the reason Boolean algebra is an equational theory.</p>
+<p><strong>Theorem.</strong> Let $B$ be a Boolean algebra and $a, b \in B$. Then</p>
+<p>$$
+\neg \neg a = a, \qquad \neg 0 = 1, \qquad \neg 1 = 0, \qquad \neg(a \wedge b) = \neg a \vee \neg b, \qquad \neg(a \vee b) = \neg a \wedge \neg b,
+$$</p>
+<p>and</p>
+<p>$$
+a \leq b \iff a \wedge \neg b = 0 \iff \neg a \vee b = 1 .
+$$</p>
+<p><strong>Proof.</strong> That $a$ is a complement of $\neg a$ follows from the symmetry of the two defining equations, so $\neg\neg a = a$ by uniqueness. The identities $\neg 0 = 1$ and $\neg 1 = 0$ are the defining equations at $a = 0$ and $a = 1$. For De Morgan, put $d = \neg a \vee \neg b$; then</p>
+<p>$$
+(a \wedge b) \wedge d = (a \wedge b \wedge \neg a) \vee (a \wedge b \wedge \neg b) = 0 \vee 0 = 0
+$$</p>
+<p>and</p>
+<p>$$
+(a \wedge b) \vee d = (a \vee \neg a \vee \neg b) \wedge (b \vee \neg a \vee \neg b) = 1 \wedge 1 = 1,
+$$</p>
+<p>so $d$ complements $a \wedge b$ and equals $\neg(a \wedge b)$ by uniqueness; the other De Morgan law is dual. For the last display, if $a \leq b$ then $a \wedge \neg b \leq b \wedge \neg b = 0$; conversely $a \wedge \neg b = 0$ gives $a = a \wedge 1 = a \wedge (b \vee \neg b) = (a \wedge b) \vee (a \wedge \neg b) = a \wedge b \leq b$, and the equivalence with $\neg a \vee b = 1$ is the De Morgan law applied to $a \wedge \neg b = 0$. $\square$</p>
+<h3 id="the-duality-principle">The Duality Principle</h3>
+<p>The axioms of a Boolean algebra are self-dual under the interchange</p>
+<p>$$
+\wedge \longleftrightarrow \vee, \qquad 0 \longleftrightarrow 1,
+$$</p>
+<p>the complement being unchanged. Consequently every theorem of Boolean algebra has a <strong>dual</strong>, obtained by this interchange, and the dual is a theorem; the order is reversed by the passage to the dual, since $a \leq b$ is $a \wedge b = a$ in one reading and $a \vee b = b$ in the other.</p>
+<p><strong>Example.</strong> The statement that the join of two elements is their least upper bound dualises to the statement that the meet is their greatest lower bound; the identity $a \vee (b \wedge c) = (a \vee b) \wedge (a \vee c)$ dualises to $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$. The duality is a symmetry of the equational theory rather than a map of an individual algebra into itself; it corresponds to the order-reversing bijection $a \mapsto \neg a$ of the algebra onto its opposite.</p>
+<h3 id="the-two-element-algebra-and-the-algebra-of-subsets">The Two-Element Algebra and the Algebra of Subsets</h3>
+<p><strong>Example (the two-element algebra).</strong> Let $\mathbf{2} = \{0,1\}$ with the order $0 < 1$. The meet is the conjunction, the join is the disjunction, and $\neg 0 = 1$, $\neg 1 = 0$. This is a Boolean algebra, and it is the smallest nontrivial one.</p>
+<p><strong>Example (the power set).</strong> For any set $X$, the power set $\mathcal{P}(X)$ ordered by inclusion is a Boolean algebra with</p>
+<p>$$
+A \wedge B = A \cap B, \qquad A \vee B = A \cup B, \qquad \neg A = X \setminus A, \qquad 0 = \emptyset, \qquad 1 = X .
+$$</p>
+<p>The distributive law is the identity $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$, and the complement identities are the defining properties of a complement in a set. The finite power sets $\mathcal{P}(\{1,\dots,n\})$ are the finite Boolean algebras up to isomorphism, by the theorem below.</p>
+<p><strong>Example (the free algebra).</strong> The Boolean algebra generated by $n$ free generators is the algebra of Boolean functions on $n$ variables; it is described in the section on normal form and has $2^{2^n}$ elements.</p>
+<p>The power-set example is the source of the intuition, and the representation theorem of the topological slot of this system makes it exhaustive: every Boolean algebra is a subalgebra of a power set, and in the finite case it <em>is</em> a power set.</p>
+<h2 id="boolean-functions-and-algebraic-normal-form">Boolean Functions and Algebraic Normal Form</h2>
+<h3 id="boolean-polynomials-over-math111">Boolean Polynomials over $\mathbb{F}_2$</h3>
+<p>Let $n \geq 0$. A <strong>Boolean function</strong> of $n$ variables is a map $f : \mathbf{2}^n \to \mathbf{2}$. The set of all such maps carries the Boolean operations <strong>pointwise</strong>: $(f \wedge g)(x) = f(x) \wedge g(x)$, and similarly for $\vee$ and $\neg$. With the constant functions $0$ and $1$ this is a Boolean algebra.</p>
+<p>Over the field $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$, a polynomial is an element of $\mathbb{F}_2[x_1,\dots,x_n]$. Because every element of $\mathbb{F}_2$ satisfies $u^2 = u$, the polynomial $x_i^2 - x_i$ vanishes on all of $\mathbf{2}^n$, and every Boolean function is represented by the <strong>reduced polynomial</strong> obtained by imposing $x_i^2 = x_i$. The reduced monomials are</p>
+<p>$$
+x^{e} = x_1^{e_1} x_2^{e_2} \cdots x_n^{e_n}, \qquad e = (e_1, \dots, e_n) \in \mathbf{2}^n,
+$$</p>
+<p>there being one for each exponent vector $e$, hence exactly $2^n$ of them.</p>
+<p><strong>Theorem (algebraic normal form).</strong> Every Boolean function $f$ of $n$ variables has a unique expression</p>
+<p>$$
+f(x) = \bigoplus_{e \in \mathbf{2}^n} c_e \, x^{e}, \qquad c_e \in \mathbb{F}_2,
+$$</p>
+<p>where $\oplus$ is addition in $\mathbb{F}_2$ and the product is taken in $\mathbb{F}_2$.</p>
+<p><strong>Proof.</strong> The $2^n$ reduced monomials are linearly independent over $\mathbb{F}_2$ as functions. Suppose a combination vanishes and let $e$ be an exponent vector with $c_e \neq 0$ minimal for coordinatewise comparison: if $e' < e$ coordinatewise then $c_{e'} = 0$, and evaluating the combination at the point $e$ (read as an element of $\mathbf{2}^n$) kills every monomial $x^{e'}$ with $e'$ not above $e$, while $x^{e}(e) = 1$; hence $c_e = 0$, a contradiction. So the span of the reduced monomials has dimension $2^n$. There are exactly $2^{2^n}$ functions $\mathbf{2}^n \to \mathbf{2}$ and exactly $2^{2^n}$ coefficient vectors $(c_e)$, so the span is everything and the expression is unique. $\square$</p>
+<p>The expansion is the <strong>Reed–Muller</strong> expansion. It says that the Boolean functions on $n$ variables form the free $\mathbb{F}_2$-vector space on the $2^n$ reduced monomials, equivalently the free Boolean ring on $n$ generators, discussed.</p>
+<p><strong>Corollary.</strong> There are exactly $2^{2^n}$ Boolean functions of $n$ variables. For $n = 0$ there are two, the two constants $0$ and $1$; for $n = 1$ there are four; for $n = 2$ there are sixteen; for $n = 3$ there are two hundred and fifty-six.</p>
+<p><strong>Example.</strong> For $n = 2$ the reduced monomials are $1, x, y, xy$, and the $16$ functions are the $\mathbb{F}_2$-combinations of them. The <strong>conjunction</strong> is $x \wedge y = xy$, the <strong>disjunction</strong> is $x \vee y = x \oplus y \oplus xy$, and the <strong>NAND</strong> is $x \uparrow y = 1 \oplus xy$. The expansion of the disjunction is verified from the table</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$x$</th>
+<th>$y$</th>
+<th>$xy$</th>
+<th>$x \oplus y$</th>
+<th>$x \oplus y \oplus xy$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>so the expression is correct at all four inputs.</p>
+<h3 id="disjunctive-and-conjunctive-normal-form">Disjunctive and Conjunctive Normal Form</h3>
+<p>The <strong>disjunctive normal form</strong> of $f$ is the join of the <strong>minterms</strong> on which $f$ takes the value $1$:</p>
+<p>$$
+f = \bigvee_{x \in \mathbf{2}^n,\ f(x)=1} m_x, \qquad m_x = \bigwedge_{i=1}^{n} \begin{cases} y_i & x_i = 1 \\ \neg y_i & x_i = 0,\end{cases}
+$$</p>
+<p>where the algebra variables are written $y_1,\dots,y_n$ to distinguish them from the points $x$. Dually, the <strong>conjunctive normal form</strong> is the meet of the <strong>maxterms</strong> on which $f$ vanishes. Every minterm is an atom of the free algebra, the $2^n$ minterms are pairwise disjoint and their join is $1$, and the disjunctive normal form is the expansion of $f$ in the basis of atoms. The algebraic normal form is the corresponding expansion in the basis of reduced monomials; the two bases are related by the identity $x \vee y = x \oplus y \oplus xy$, which converts one normal form into the other.</p>
+<h3 id="the-free-boolean-algebra">The Free Boolean Algebra</h3>
+<p><strong>Theorem (free Boolean algebra).</strong> The free Boolean algebra on $n$ generators is isomorphic to the algebra of Boolean functions on $n$ variables and to the power set $\mathcal{P}(\mathbf{2}^n)$. It has $2^{2^n}$ elements, and its atoms are the minterms.</p>
+<p><strong>Proof.</strong> A homomorphism from the free algebra on $y_1,\dots,y_n$ to $\mathbf{2}$ is determined by the images of the generators, an arbitrary point of $\mathbf{2}^n$; hence the homomorphisms biject with $\mathbf{2}^n$. The map that sends a function $f$ to the set of points where it is $1$ is a bijection with $\mathcal{P}(\mathbf{2}^n)$, and the pointwise operations correspond to the set operations, so it is an isomorphism onto the power set; its cardinality is $2^{2^n}$. The atoms of a power set are the singletons, corresponding to the functions that vanish except at one point, which are exactly the minterms. $\square$</p>
+<h2 id="boolean-algebras-as-the-algebra-of-propositional-logic">Boolean Algebras as the Algebra of Propositional Logic</h2>
+<h3 id="the-lindenbaumtarski-algebra">The Lindenbaum–Tarski Algebra</h3>
+<p>Let $L$ be the propositional language on a set of variables, built from the connectives $\wedge, \vee, \neg, \to, \leftrightarrow$ as in <em>Logic and Proof</em>, and let $T$ be a set of propositions. Define a relation on the propositions by</p>
+<p>$$
+\varphi \sim_T \psi \iff T \vdash \varphi \leftrightarrow \psi,
+$$</p>
+<p>that is, $T$ proves that $\varphi$ and $\psi$ are equivalent. The <strong>Lindenbaum–Tarski algebra</strong> of $T$ is the quotient of the propositions by $\sim_T$, with the operations induced by the connectives and the classes of the always-false and always-true propositions as $0$ and $1$.</p>
+<p><strong>Theorem (Lindenbaum–Tarski).</strong> The relation $\sim_T$ is a congruence on the propositional algebra, and the quotient is a Boolean algebra. It is the trivial algebra exactly when $T$ is inconsistent.</p>
+<p><strong>Proof.</strong> The relation is an equivalence relation because $\leftrightarrow$ is reflexive, symmetric and transitive in the propositional calculus, and it is a congruence because the connectives are compatible with provable equivalence; the quotient therefore inherits the operations. The distributive, complementation and bound laws hold because their instances in the connectives are tautologies, each provable from the axioms of <em>Logic and Proof</em>; for instance $\varphi \wedge \neg \varphi$ is refutable and $\varphi \vee \neg \varphi$ is provable in the classical calculus. If $T$ is inconsistent then every proposition is provable, so all classes coincide and $0 = 1$; conversely if $0 = 1$ then $T$ proves a contradiction. $\square$</p>
+<h3 id="semantics-and-the-two-element-model">Semantics and the Two-Element Model</h3>
+<p>A <strong>valuation</strong> is a map $v$ from the propositional variables to $\mathbf{2}$, extended to all propositions by the truth tables; equivalently, by the theorem above, a homomorphism from the free propositional algebra to $\mathbf{2}$. A proposition is a <strong>tautology</strong> if every valuation gives it the value $1$, and <strong>satisfiable</strong> if some valuation does.</p>
+<p><strong>Theorem (soundness and completeness, semantic form).</strong> For a set $T$ of propositions and a proposition $\varphi$,</p>
+<p>$$
+T \vdash \varphi \iff \text{every valuation satisfying } T \text{ satisfies } \varphi .
+$$</p>
+<p><strong>Pro.</strong> Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \varphi$; then the class of $\varphi$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem — pulling back to a valuation satisfying $T$ and falsifying $\varphi$. A direct proof from the syntax is in <em>Logic and Proof</em>. $\square$</p>
+<p><strong>Remark.</strong> The completeness theorem identifies the semantic models of propositional logic with the homomorphisms into $\mathbf{2}$. This is the reason the two-element algebra is the object of study: the variety generated by $\mathbf{2}$ is the variety of all Boolean algebras, so the equational theory of the system is the theory of this single finite algebra.</p>
+<h2 id="constructions">Constructions</h2>
+<h3 id="products-and-quotients">Products and Quotients</h3>
+<p><strong>Definition.</strong> The <strong>product</strong> of Boolean algebras $B_1, B_2$ is the Cartesian product $B_1 \times B_2$ with the operations defined componentwise. The <strong>quotient</strong> of $B$ by a filter $F$ is $B/\sim_F$, where</p>
+<p>$$
+a \sim_F b \iff \text{there is } c \in F \text{ with } a \wedge c = b \wedge c,
+$$</p>
+<p>and dually for an ideal.</p>
+<p><strong>Theorem.</strong> The product is a Boolean algebra, with $\neg(a_1,a_2) = (\neg a_1, \neg a_2)$ and bounds $(0,0)$ and $(1,1)$, and it is the categorical product of $B_1$ and $B_2$. The quotient $B/F$ is a Boolean algebra, and it is trivial if and only if $F = B$.</p>
+<p><strong>Proof.</strong> The componentwise verification is immediate, and the projection maps $B_1 \times B_2 \to B_i$ have the universal property of the product because a pair of homomorphisms assembles into one. For the quotient, the relation $\sim_F$ is a congruence: if $c \in F$ witnesses $a \sim_F b$ and $c' \in F$ witnesses $a' \sim_F b'$, then $c \wedge c' \in F$ witnesses $a \wedge a' \sim_F b \wedge b'$, and for the complement one uses that $a \wedge c = b \wedge c$ implies $\neg a \wedge c = \neg b \wedge c$; the standard filter-quotient computation is in <em>Order Theory and Lattices</em>. The quotient identifies $0$ and $1$ exactly when $F$ contains an element $c$ with $0 \wedge c = 1 \wedge c$, that is $c = 0$, and since $0 \in F$ forces $F = B$, the quotient is trivial exactly when $F = B$. $\square$</p>
+<p><strong>Example.</strong> The power set $\mathcal{P}(X)$ is the product over $x \in X$ of copies of $\mathbf{2}$: a subset is a $0$–$1$ function on $X$, and the product is taken pointwise. In the finite case every Boolean algebra arises this way, by the following theorem.</p>
+<h3 id="atoms-and-the-finite-structure-theorem">Atoms and the Finite Structure Theorem</h3>
+<p><strong>Definition.</strong> An <strong>atom</strong> of a Boolean algebra $B$ is a minimal nonzero element: an $a \neq 0$ such that $0 \leq b \leq a$ implies $b = 0$ or $b = a$. The algebra is <strong>atomic</strong> if every nonzero element lies above an atom, and <strong>atomless</strong> if it has no atoms.</p>
+<p><strong>Theorem (finite representation).</strong> Every finite Boolean algebra is isomorphic to the power set of its set of atoms. In particular a finite Boolean algebra has $2^n$ elements for some $n \geq 0$, and it is determined up to isomorphism by the number $n$ of its atoms.</p>
+<p><strong>Proof.</strong> Let $A$ be the set of atoms of the finite algebra $B$. For $b \in B$ let $A_b = \{a \in A : a \leq b\}$. If $b \neq 0$, then some atom lies below $b$: the interval $[0,b]$ is finite, so a minimal element of the nonempty set $\{x : 0 < x \leq b\}$ is an atom of $B$ lying below $b$. Hence $b = \bigvee A_b$. Indeed the join $c = \bigvee A_b$ satisfies $c \leq b$; if $c < b$ then $b \wedge \neg c \neq 0$ contains an atom $a \leq b \wedge \neg c$, and $a$ lies in $A_b$ but not below $c$, contradicting the definition of $c$. Distinct atoms have meet $0$, since their meet lies below both and is neither of them. The map $b \mapsto A_b$ is therefore injective, and it preserves joins, meets, complements and bounds, so it is an isomorphism onto $\mathcal{P}(A)$; the cardinality is $2^{\lvert A \rvert}$. $\square$</p>
+<p><strong>Example (the atomless algebra).</strong> The algebra of finite and cofinite subsets of an infinite set is Boolean and atomless; so is the algebra of measurable subsets of $[0,1]$ modulo null sets, the measure algebra of <em>Measure Theory and Integration</em>, which is the standard atomless Boolean algebra of cardinality continuum. These show that the finite representation theorem does not extend to the infinite case in the form in which atoms determine the algebra: the measure algebra has no atoms at all. The general representation is the Stone theorem of the topological slot.</p>
+<h2 id="the-boolean-system-supports-no-analysis">The Boolean System Supports No Analysis</h2>
+<p>The Boolean system carries an algebra in the strongest sense: a finitely axiomatised equational theory, a free algebra on every finite set of generators, arbitrary products and quotients, and a complete semantic model in the two-element algebra. What it does not carry is analysis, and the reason is structural rather than incidental.</p>
+<p>There is no distance on a Boolean algebra that the algebra itself supplies, and there is no notion of limit to define: a sequence of elements of a Boolean algebra cannot converge in the algebra, because the only available convergence is eventual constancy, and the completeness theorem above already extracts from the algebra everything a limit could contribute — the homomorphisms to $\mathbf{2}$ — without a metric. Equivalently, the Boolean system is <em>finite</em> in the sense that its free algebra on $n$ generators is finite, so every function of finitely many Boolean variables is continuous in every topology that makes $\mathbf{2}$ Hausdorff, and the subject is the algebra of these functions.</p>
+<p>The enrichment the system does admit is <em>topological</em>, and it lies outside this article. A Boolean algebra can be read as a ring under symmetric difference and intersection, and the prime ideals of that ring form a compact Hausdorff totally disconnected space whose clopen sets reproduce the algebra; this is Stone duality, the first instance in the corpus of the algebra–topology dictionary that Gelfand duality completes. Even there analysis is absent: the Stone space is totally disconnected, so the only continuous functions that matter are locally constant, and no derivative or integral arises. The Boolean system supports an algebra, a topology, and no analysis.</p>
+<h2 id="summary">Summary</h2>
+<p>A Boolean algebra is a bounded distributive lattice in which every element has a complement; the complement is unique in a distributive lattice, so complementation is an operation and the theory is equational. The axioms are self-dual under the interchange of $\wedge$ with $\vee$ and $0$ with $1$, which gives the duality principle, and the basic identities — double complement, De Morgan, and the characterisation $a \leq b \iff a \wedge \neg b = 0$ — are forced by the axioms. The two-element algebra $\mathbf{2}$ and the power sets $\mathcal{P}(X)$ are the examples, and the finite Boolean algebras are exactly the power sets of finite sets: every finite Boolean algebra is isomorphic to the power set of its atoms, and so has $2^n$ elements. The infinite case is different, the atomless algebras showing that atoms need not determine the algebra.</p>
+<p>The Boolean functions on $n$ variables form a Boolean algebra of $2^{2^n}$ elements, which is simultaneously the free Boolean algebra on $n$ generators and the power set of $\mathbf{2}^n$. Every such function has a unique algebraic normal form as an $\mathbb{F}_2$-combination of the $2^n$ reduced monomials, and dually a disjunctive normal form as a join of minterms; the two are exchanged by the identity $x \vee y = x \oplus y \oplus xy$. The Lindenbaum–Tarski construction turns any propositional theory into a Boolean algebra, and the homomorphisms of that algebra into $\mathbf{2}$ are exactly the valuations, so the completeness theorem of propositional logic is the statement that $\mathbf{2}$ generates the variety of Boolean algebras. Products and filter-quotients of Boolean algebras are Boolean algebras, the product being the categorical product.</p>
+<p>The Boolean system supports an algebra and no analysis. Its free algebras are finite, it carries no distance of its own, and the enrichment it admits is the topological one of Stone duality, in which the prime ideals form a compact totally disconnected space. That topology, and with it the representation theorem, is not covered here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L = (L, \wedge, \vee)$</td>
+<td>A lattice, with meet $\wedge$ and join $\vee$</td>
+</tr>
+<tr>
+<td>$\leq$</td>
+<td>The order of a lattice, $a \leq b \iff a \wedge b = a$</td>
+</tr>
+<tr>
+<td>$0, 1$</td>
+<td>Least and greatest elements of a bounded lattice</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>A Boolean algebra</td>
+</tr>
+<tr>
+<td>$\neg a$</td>
+<td>Complement of $a$, unique in a distributive lattice</td>
+</tr>
+<tr>
+<td>$\mathbf{2} = \{0,1\}$</td>
+<td>The two-element Boolean algebra</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>The integer two, in cardinalities and exponents</td>
+</tr>
+<tr>
+<td>$\mathcal{P}(X)$</td>
+<td>Power set of $X$, the standard Boolean algebra of subsets</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$</td>
+<td>The field of two elements</td>
+</tr>
+<tr>
+<td>$x^{e}$</td>
+<td>Reduced monomial, $e \in \mathbf{2}^n$</td>
+</tr>
+<tr>
+<td>$\oplus$</td>
+<td>Addition in $\mathbb{F}_2$, the symmetric difference</td>
+</tr>
+<tr>
+<td>$\varphi \sim_T \psi$</td>
+<td>Provable equivalence modulo $T$, defining the Lindenbaum–Tarski algebra</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>Valuation, equivalently a homomorphism to $\mathbf{2}$</td>
+</tr>
+<tr>
+<td>$m_x$</td>
+<td>Minterm at the point $x$</td>
+</tr>
+<tr>
+<td>$a \uparrow b$</td>
+<td>NAND, $1 \oplus ab$</td>
+</tr>
+<tr>
+<td>$B_1 \times B_2$</td>
+<td>Product of Boolean algebras, componentwise</td>
+</tr>
+<tr>
+<td>$B/F$</td>
+<td>Quotient by a filter $F$</td>
+</tr>
+<tr>
+<td>$M_3$, $N_5$</td>
+<td>The forbidden sublattices of a non-distributive lattice</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Garrett Birkhoff, <em>Lattice Theory</em> (American Mathematical Society Colloquium Publications, 3rd ed. 1967), for the lattice laws, distributivity, modularity and the forbidden-sublattice criterion.</li>
+<li>George Boole, <em>An Investigation of the Laws of Thought</em> (Walton and Maberly, 1854), for the origin of the algebra of logic.</li>
+<li>Paul R. Halmos, <em>Lectures on Boolean Algebras</em> (Van Nostrand, 1963), for the equational theory, ideals and filters, and the representation theorem.</li>
+<li>Roman Sikorski, <em>Boolean Algebras</em> (Springer, 3rd ed. 1969), for the infinite theory, free algebras and the measure algebra.</li>
+<li>Steven Givant and Paul Halmos, <em>Introduction to Boolean Algebras</em> (Springer, 2009), for a modern systematic treatment with the Stone theorem.</li>
+<li>Herbert B. Enderton, <em>A Mathematical Introduction to Logic</em> (Academic Press, 2nd ed. 2001), for the Lindenbaum–Tarski construction and the completeness theorem of propositional logic.</li>
+<li>Ingo Wegener, <em>The Complexity of Boolean Functions</em> (Wiley, 1987), for the normal forms and the representation of Boolean functions, treated as finite mathematics.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

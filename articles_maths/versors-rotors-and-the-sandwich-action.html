@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Versors, Rotors and the Sandwich Action — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="versors-rotors-and-the-sandwich-action"><strong>Versors, Rotors and the Sandwich Action</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The generators of a Clifford algebra are vectors, and the elements built from them by multiplication are the versors. An even versor of unit norm is a <strong>rotor</strong>, and it acts on the space of vectors by the <strong>sandwich</strong> $v\mapsto RvR^{-1}$, which is a rotation; the same element acts on the spinor module of <em>Spin Representations and Clifford Modules</em> by <strong>left multiplication</strong> $\psi\mapsto R\psi$. The two actions are not interchangeable. The sandwich is the vector action and carries the full angle of the rotation; left multiplication is the spinor action and carries half that angle, which is why a spinor changes sign under a full turn while a vector returns to itself. This article derives both actions, proves the rotation formula from the exponential of a bivector, exhibits the failure of left multiplication on a vector and shows how the sandwich repairs it, and records the two-to-one cover of the rotation group that the two actions express.</p>
+<p>The Clifford algebra, the fundamental relation and the parity grading are from <em>The Clifford Algebra</em>; the grade subspaces, the grade projection and the outer and inner products are from <em>The Geometric Product and the Grade Decomposition</em>; the volume element and the star are from <em>The Volume Element, Duality and the Hodge Star</em>; the Clifford group, the twisted adjoint action, the Clifford norm, the Pin and Spin groups and the Cartan–Dieudonné theorem are from <em>The Clifford, Pin and Spin Groups</em>; the identification of the bivectors with the orthogonal Lie algebra is from <em>The Clifford Algebra as a Lie Algebra</em>; the quaternion rotations are from <em>Quaternion Rotations and Reflections</em> and the rotation and reflection groups of the biquaternion algebra from <em>The Rotation and Reflection Groups in the Biquaternion Algebra</em>. Nothing owned by those entries is re-derived. The base is a field of characteristic not $2$, with $q$ non-degenerate on a finite-dimensional space $V$ and $B$ its polar form; the conventions are $v^2=q(v)\cdot1$, reversion $x^{r}$ and Clifford conjugation $\bar x=\alpha(x^{r})$.</p>
+<h2 id="versors">Versors</h2>
+<h3 id="products-of-invertible-vectors">Products of Invertible Vectors</h3>
+<p><strong>Definition.</strong> A <strong>versor</strong> is an element of $\mathrm{Cl}(V,q)$ of the form</p>
+<p>$$
+x=v_1v_2\cdots v_k, \qquad q(v_i)\neq0\ \text{ for every }i,
+$$</p>
+<p>a product of non-isotropic, hence invertible, vectors. The number $k$ is the length of the expression and its parity is the parity of the versor.</p>
+<p><strong>Proposition.</strong> Every versor is invertible, with</p>
+<p>$$
+(v_1v_2\cdots v_k)^{-1}=v_k^{-1}\cdots v_2^{-1}v_1^{-1}, \qquad v^{-1}=v\,q(v)^{-1}\ \text{ for a vector }v,
+$$</p>
+<p>and the inverse of a versor is a versor of the same length and parity.</p>
+<p><strong>Proof.</strong> The inverse of a vector is $v/q(v)$ by the fundamental relation, since $v\cdot v=v^2=q(v)$; the inverse of the product is the product of the inverses in the reverse order. $\square$</p>
+<p><strong>Definition.</strong> The <strong>Lipschitz group</strong> of $(V,q)$ is the group generated by the non-isotropic vectors.</p>
+<p><strong>Theorem.</strong> The Lipschitz group is the Clifford group $\Gamma(V,q)$ of <em>The Clifford, Pin and Spin Groups</em>, that is, the group of units $x$ with $\widetilde{\mathrm{Ad}}_x(V)\subseteq V$, where $\widetilde{\mathrm{Ad}}_x(v)=\alpha(x)vx^{-1}$.</p>
+<p><strong>Proof.</strong> A non-isotropic vector $u$ satisfies $\widetilde{\mathrm{Ad}}_u(v)=-uvu^{-1}=\rho_u(v)$, the reflection in the hyperplane $u^{\perp}$, which is a linear map of $V$ to $V$; hence $\widetilde{\mathrm{Ad}}_u(V)\subseteq V$ and $u\in\Gamma$. The twisted adjoint is multiplicative, $\widetilde{\mathrm{Ad}}_{xy}=\widetilde{\mathrm{Ad}}_x\circ\widetilde{\mathrm{Ad}}_y$, because $\alpha$ is an algebra automorphism, so the group generated by the vectors lies in $\Gamma$. Conversely $\Gamma$ is generated by the non-isotropic vectors it contains, as recorded in <em>The Clifford, Pin and Spin Groups</em>; hence the two groups coincide. $\square$</p>
+<p><strong>Remark.</strong> The scalars of $\Gamma$ are versors: for $\lambda\neq0$ and any non-isotropic vector $v$, the element $\lambda v$ is a non-isotropic vector and $\lambda=(\lambda v)v^{-1}$ is a product of two of them. So the description by products of vectors and the description by the condition $\widetilde{\mathrm{Ad}}_x(V)\subseteq V$ cover the same elements, scalars included.</p>
+<h3 id="the-parity-of-a-versor">The Parity of a Versor</h3>
+<p>The parity of a versor is determined by its length, and the even versors are the ones that act by orientation-preserving isometries.</p>
+<p><strong>Proposition.</strong> A versor of even length lies in $\mathrm{Cl}^0(V,q)$ and a versor of odd length in $\mathrm{Cl}^1(V,q)$; a versor of odd length acts on $V$ by an isometry of determinant $-1$ and a versor of even length by one of determinant $+1$.</p>
+<p><strong>Proof.</strong> The product of $k$ odd elements lies in $\mathrm{Cl}^0$ or $\mathrm{Cl}^1$ according to the parity of $k$, by the parity grading. The determinant statement is the corollary of Cartan–Dieudonné recorded in <em>The Clifford, Pin and Spin Groups</em>: each reflection has determinant $-1$, and the parity of the number of reflections is the parity of the length. $\square$</p>
+<h2 id="rotors">Rotors</h2>
+<h3 id="the-rotor-group">The Rotor Group</h3>
+<p><strong>Definition.</strong> A <strong>rotor</strong> is an even versor $R$ of unit norm,</p>
+<p>$$
+R\in\mathrm{Cl}^0(V,q), \qquad N(R)=R\bar R=RR^{r}=1.
+$$</p>
+<p><strong>Proposition.</strong> The rotors form a subgroup of the spin group $\mathrm{Spin}(V,q)$, containing $\pm1$, and the map $R\mapsto\widetilde{\mathrm{Ad}}_R$ is a homomorphism from the rotors into $SO(V,q)$, of kernel $\{\pm1\}$.</p>
+<p><strong>Proof.</strong> The even versors form a subgroup of $\Gamma$ and the norm $N$ is multiplicative on $\Gamma$ with values in $F$, so the elements of norm $1$ form a subgroup; by the definition of $\mathrm{Spin}(V,q)$ in <em>The Clifford, Pin and Spin Groups</em> this subgroup lies in $\mathrm{Spin}$. The kernel of $\widetilde{\mathrm{Ad}}$ on $\Gamma$ is the group of nonzero scalars, and a scalar $\lambda$ has norm $\lambda^2$; intersecting with the rotors leaves $\lambda=\pm1$. $\square$</p>
+<p><strong>Remark (the condition is not redundant).</strong> The two conditions of the definition — even and of norm one — do not by themselves put an element in the Clifford group: over an indefinite form there are units of norm one in the even part whose twisted adjoint does not preserve $V$, and the example is recorded in <em>The Clifford, Pin and Spin Groups</em>. What makes an element a rotor is that it be a versor; the norm-one condition then cuts the versors down to the spin group.</p>
+<h3 id="the-exponential-of-a-bivector">The Exponential of a Bivector</h3>
+<p><strong>Theorem.</strong> Let $B\in\mathrm{Cl}_2(V,q)$ be a bivector and let</p>
+<p>$$
+R=\exp(B)=\sum_{m\ge0}\frac{B^m}{m!},
+$$</p>
+<p>the series converging when $F=\mathbb{R}$ or $\mathbb{C}$. Then $R$ is an even element with $R^{r}=\exp(-B)$ and $N(R)=R\exp(-B)=1$, and $\widetilde{\mathrm{Ad}}_R(v)=\exp(B)v\exp(-B)$ lies in $V$ for every $v\in V$. So $R$ is a rotor.</p>
+<p><strong>Proof.</strong> The series is even because $B$ is. Reversion reverses the order of the factors of a product, so $B^{r}=-B$ for a bivector and $R^{r}=\exp(B^{r})=\exp(-B)$; hence $N(R)=R\bar R=R R^{r}=\exp(B)\exp(-B)=1$. For the action on $V$: the commutator with $B$ maps $V$ into $V$, by the identification of the bivectors with the skew transformations in <em>The Clifford Algebra as a Lie Algebra</em>; the power series</p>
+<p>$$
+\exp(B)\,v\,\exp(-B)=\sum_{m\ge0}\frac{\operatorname{ad}_B^m(v)}{m!}
+$$</p>
+<p>then has every term in $V$. $\square$</p>
+<p><strong>Definition.</strong> For a bivector $B$ define the endomorphism of $V$</p>
+<p>$$
+J_B=\tfrac12\operatorname{ad}_B, \qquad J_B(v)=\tfrac12(Bv-vB)=\langle Bv\rangle_1,
+$$</p>
+<p>the last expression being the inner product of $B$ with $v$. Then $\operatorname{ad}_B=2J_B$ and the theorem gives</p>
+<p>$$
+\exp(B)v\exp(-B)=\exp(2J_B)v .
+$$</p>
+<p>The map $J_B$ is skew for the polar form, $B(J_Bv,w)+B(v,J_Bw)=0$, because $\operatorname{ad}_B$ is, and its square is determined by the square of $B$.</p>
+<h3 id="the-rotation-formula-in-a-plane">The Rotation Formula in a Plane</h3>
+<p><strong>Theorem (the plane).</strong> Let $e_1,e_2$ be orthogonal with $q(e_1)=1$ and $q(e_2)=\varepsilon\in\{+1,-1\}$, and put $B=e_1e_2$, so that $B^2=-\varepsilon$. Then $J_B$ annihilates the orthogonal complement of the plane of $B$ and acts on the plane by</p>
+<p>$$
+J_B(e_1)=-e_2, \qquad J_B(e_2)=\varepsilon e_1, \qquad J_B^2=-\varepsilon.
+$$</p>
+<p>For $\varepsilon=+1$, with a real $\theta$,</p>
+<p>$$
+\exp(-\tfrac{\theta}{2}B)\,e_1\,\exp(\tfrac{\theta}{2}B)=\cos\theta\,e_1+\sin\theta\,e_2,
+$$</p>
+<p>the rotation of the plane through $\theta$; for $\varepsilon=-1$, with a real $\varphi$,</p>
+<p>$$
+\exp(-\tfrac{\varphi}{2}B)\,e_1\,\exp(\tfrac{\varphi}{2}B)=\cosh\varphi\,e_1+\sinh\varphi\,e_2,
+$$</p>
+<p>a hyperbolic rotation of the plane whose half-rapidity is $\varphi/2$. In both cases the rotor fixes every vector orthogonal to the plane.</p>
+<p><strong>Proof.</strong> With $B=e_1e_2$ the anticommutation gives $Be_1=-q(e_1)e_2=-e_2$, $e_1B=q(e_1)e_2=e_2$, $Be_2=q(e_2)e_1=\varepsilon e_1$ and $e_2B=-q(e_2)e_1=-\varepsilon e_1$; hence</p>
+<p>$$
+J_B(e_1)=\tfrac12(Be_1-e_1B)=-e_2, \qquad J_B(e_2)=\tfrac12(Be_2-e_2B)=\varepsilon e_1,
+$$</p>
+<p>and $J_B^2=-\varepsilon$ on the plane. For $v$ orthogonal to the plane the monomials $B$ and $v$ have disjoint index sets, so $Bv=vB$, the Koszul sign being $(-1)^{2\cdot1}=+1$, and $J_B(v)=0$. The exponential theorem gives $RvR^{-1}=\exp(-\theta J_B)v$; on the plane the exponential of an operator of square $-1$ is $\cos\theta-\sin\theta J_B$ and the exponential of one of square $+1$ is $\cosh\varphi-\sinh\varphi J_B$, and substituting $J_B(e_1)=-e_2$ gives the two displays. $\square$</p>
+<p><strong>Corollary (the half angle).</strong> The rotor $R=\exp(-\tfrac{\theta}{2}B)$ carries the parameter $\theta/2$ while producing the rotation through $\theta$: replacing $\theta$ by $\theta+\pi$ gives the rotation through $\theta+\pi$, and replacing $\theta$ by $\theta+2\pi$ gives the same rotation but the rotor $-R$.</p>
+<p><strong>Proof.</strong> The first statement is immediate from the formula. For the second, $\cos(\tfrac{\theta+2\pi}{2})=\cos(\tfrac{\theta}{2}+\pi)=-\cos\tfrac{\theta}{2}$ and likewise for the sine, so the rotor changes sign while its angle of rotation, $\theta+2\pi$, defines the same rotation as $\theta$. $\square$</p>
+<h3 id="the-hyperbolic-case">The Hyperbolic Case</h3>
+<p><strong>Corollary (boosts).</strong> Under the theorem with $\varepsilon=-1$, so that $B^2=+1$, the rotor is</p>
+<p>$$
+R=\exp(-\tfrac{\varphi}{2}B)=\cosh\tfrac{\varphi}{2}-B\sinh\tfrac{\varphi}{2}
+$$</p>
+<p>and the map $v\mapsto RvR^{-1}$ is the hyperbolic rotation, or boost, of the plane of $B$, through rapidity $\varphi$, the rotor carrying the half-rapidity $\varphi/2$: it preserves the form, fixes the orthogonal complement of the plane, and $R(\varphi)^{-1}=R(-\varphi)$. A bivector of square $+1$ thus generates a boost where a bivector of square $-1$ generates a rotation, the two cases being distinguished by the sign of $q(e_1)q(e_2)$.</p>
+<p><strong>Proof.</strong> By the theorem $B^2=-\varepsilon=+1$, so $B=e_1e_2$ with $q(e_1)q(e_2)=-1$; the exponential of an element of square $+1$ is the hyperbolic cosine and sine, and the action on the plane is the second display of the theorem. $\square$</p>
+<p><strong>Remark (general bivectors).</strong> Over the real numbers with a definite form, the operator $J_B$ is skew, so it has the canonical form of a skew transformation: $V$ splits into an orthogonal sum of planes invariant under $J_B$ on each of which $J_B^2=-1$, together with the kernel. The bivector is therefore a sum of pairwise commuting simple bivectors, $B=B_1+\cdots+B_r$, and the exponential factors as $\exp(B)=\exp(B_1)\cdots\exp(B_r)$, a product of commuting rotations about orthogonal planes. The exponential of an arbitrary bivector is thus a product of the two cases of this section.</p>
+<h2 id="the-two-actions">The Two Actions</h2>
+<h3 id="the-sandwich-action-on-vectors">The Sandwich Action on Vectors</h3>
+<p>By the definition of the Clifford group, an element $R$ of $\Gamma(V,q)$ acts on the quadratic space by the twisted adjoint, and for an even element the grade involution is the identity, so</p>
+<p>$$
+v\longmapsto \widetilde{\mathrm{Ad}}_R(v)=R\,v\,R^{-1}, \qquad R\in\mathrm{Cl}^0(V,q),
+$$</p>
+<p>the <strong>sandwich</strong> by $R$. For a rotor this is a rotation, and the theorems above compute it: the parameter inside the rotor is the half angle while the rotation produced is through the full angle.</p>
+<p><strong>Proposition.</strong> For a rotor $R$ and $v\in V$ the element $Rv$ is generally neither a vector nor even, while the sandwich $RvR^{-1}$ is a vector.</p>
+<p><strong>Proof.</strong> The sandwich is a vector because $R$ lies in $\Gamma(V,q)$, so by definition $\widetilde{\mathrm{Ad}}_R(V)\subseteq V$. For the first statement, take $R$ of the plane case and $v$ orthogonal to the plane: $Rv=(c-sB)v=cv-sBv$, and $Bv$ is of grade three, being the outer product of the bivector with the vector, so that $Rv$ is the sum of a vector and a trivector. $\square$</p>
+<p><strong>Example.</strong> In $\mathrm{Cl}_{3,0}$ take $B=e_1e_2$, the rotor $R=\cos\tfrac{\theta}{2}-B\sin\tfrac{\theta}{2}$, and the vector $e_3$ orthogonal to the plane. Then</p>
+<p>$$
+Re_3=\cos\tfrac{\theta}{2}\,e_3-\sin\tfrac{\theta}{2}\,B e_3
+=\cos\tfrac{\theta}{2}\,e_3-\sin\tfrac{\theta}{2}\,\omega,
+$$</p>
+<p>a vector together with a trivector. Multiplying on the right by $R^{-1}=\cos\tfrac{\theta}{2}+B\sin\tfrac{\theta}{2}$ and using $e_3B=B e_3=\omega$ and $\omega B=-e_3$ gives</p>
+<p>$$
+Re_3R^{-1}=\Bigl(\cos^2\tfrac{\theta}{2}+\sin^2\tfrac{\theta}{2}\Bigr)e_3=e_3,
+$$</p>
+<p>the trivectors cancelling; this is the expected result, since $e_3$ is the axis of the rotation.</p>
+<p><strong>Remark (why the cancellation is forced).</strong> In the expansion $RvR^{-1}=(c-sB)v(c+sB)=c^2v+cs(vB-Bv)-s^2BvB$ of the last example, the trivector parts of $vB$ and of $Bv$ are equal, $v\wedge B=B\wedge v$, and they enter with opposite signs, so the middle term is the pure grade-one element $2cs\langle vB\rangle_1=2cs(v\lrcorner B)$; the trivector has no way to survive the sandwich, and a general $RvR^{-1}$ is a vector because the twisted adjoint of a versor preserves the quadratic space.</p>
+<h3 id="the-left-action-on-spinors">The Left Action on Spinors</h3>
+<p>The other action of a rotor is multiplication on the left, and it is a different action on a different object.</p>
+<p><strong>Definition.</strong> Let $S$ be a Clifford module over $\mathrm{Cl}(V,q)$, in the sense of <em>Spin Representations and Clifford Modules</em>. The <strong>spinor action</strong> of the rotors is left multiplication,</p>
+<p>$$
+\psi\longmapsto R\psi, \qquad \psi\in S,\ R\ \text{a rotor},
+$$</p>
+<p>the restriction to the rotors of the left action of the even subalgebra $\mathrm{Cl}^0(V,q)$.</p>
+<p><strong>Proposition.</strong> Left multiplication by a rotor is a linear map of $S$ and a representation of the rotor group, with kernel $\{\pm1\}$ on an irreducible module. It is not a map of $V$ to $V$ in general: left multiplication by an even element sends a vector to a sum of odd grades.</p>
+<p><strong>Proof.</strong> $S$ is a $\mathrm{Cl}(V,q)$-module, so the left action of every element is defined and multiplicative; the kernel statement is the one proved in <em>Spin Representations and Clifford Modules</em> for the spin representation, $\rho(-1)=-\mathrm{id}_S$. For the last statement, an even element of positive grade does not preserve $\mathrm{Cl}_1$ under left multiplication; the example above, $Re_3=\cos\tfrac{\theta}{2}e_3-\sin\tfrac{\theta}{2}\omega$, is a vector together with a trivector. $\square$</p>
+<h3 id="why-the-two-actions-differ-by-the-half-angle">Why the Two Actions Differ by the Half Angle</h3>
+<p>The two actions of the same rotor carry the two halves of the double cover.</p>
+<p><strong>Theorem.</strong> Let $R=\exp(-\tfrac{\theta}{2}B)$ be the rotor of the rotation through $\theta$ in the plane of $B$. Then the sandwich acts on $V$ by the rotation through $\theta$, and the left action on a spinor module is the spin representation of that same rotation, carrying the parameter $\theta/2$: a full turn of the vectors, $\theta=2\pi$, acts on the spinor module as multiplication by $-1$.</p>
+<p><strong>Proof.</strong> The first statement is the rotation formula. For the second, the left action of $R$ on $S$ is the spin representation $\rho$ of <em>Spin Representations and Clifford Modules</em>, which is well defined on the spin group and satisfies $\rho(-1)=-\mathrm{id}_S$; at $\theta=2\pi$ the rotor is $R=\exp(-\pi B)=\cos\pi-B\sin\pi=-1$, so $\rho(R)=-\mathrm{id}_S$. $\square$</p>
+<p>So the two actions are not two ways of rotating the same object. The sandwich acts on the vector space, where a full turn is the identity; left multiplication acts on the spinor module, where a full turn is $-1$. This is the double cover in the form in which it is seen in a computation rather than in a covering map. The two actions are related by the fact that a vector may be regarded as a spinor in the low-dimensional cases, and then the two differ; the precise sense in which a vector is a spinor, and the module in which left multiplication is the only action, are the subject of <em>Spinors as Minimal Left Ideals</em>.</p>
+<h2 id="the-double-cover">The Double Cover</h2>
+<p><strong>Theorem.</strong> The map $R\mapsto\widetilde{\mathrm{Ad}}_R$ from the rotors to $SO(V,q)$ is surjective under the hypotheses of the theorem of <em>The Clifford, Pin and Spin Groups</em> on the field, in particular over $\mathbb{R}$, and its kernel is $\{\pm1\}$; hence the rotors are a two-to-one cover of the rotation group.</p>
+<p><strong>Proof.</strong> The kernel is $\{\pm1\}$ by the proposition on the rotor group. For surjectivity, Cartan–Dieudonné writes every element of $SO(V,q)$ as a product of an even number of reflections, each reflection is $\widetilde{\mathrm{Ad}}_u$ for a non-isotropic vector $u$, and the product of the corresponding vectors is a versor of even length; rescaling the vectors as in the cited theorem puts it in the rotors. $\square$</p>
+<p><strong>Remark (the exponential and surjectivity).</strong> The differential at $B=0$ of the map $B\mapsto\exp(B)$ is the identity on the bivectors, and the identification of the bivectors with the orthogonal Lie algebra of <em>The Clifford Algebra as a Lie Algebra</em> makes it the isomorphism $\Lambda^2V\to\mathfrak{so}(V,q)$; so the exponential is a local diffeomorphism at the origin and its image generates the identity component of the rotor group. Over $\mathbb{R}$ with a definite form every rotor is such an exponential, since a rotation is a product of commuting plane rotations and the sign $-1$ is $\exp(\pi B)$ for a unit bivector $B$; over an indefinite form the exponential is not surjective in general, and the elements it misses are the ones reached only by products of rotations and boosts.</p>
+<h2 id="low-dimensional-cases">Low-Dimensional Cases</h2>
+<h3 id="two-and-three-dimensions">Two and Three Dimensions</h3>
+<p>In $\mathrm{Cl}_{2,0}$ the even part is spanned by $1$ and $B=e_1e_2$, with $B^2=-1$, so the rotors are the elements $\cos\tfrac{\theta}{2}-B\sin\tfrac{\theta}{2}$, a circle; the sandwich rotates the plane through $\theta$, and the star of <em>The Volume Element, Duality and the Hodge Star</em> is the rotation through a quarter turn. The rotors are $\mathrm{Spin}(2)\cong U(1)$.</p>
+<p>In $\mathrm{Cl}_{3,0}$ the even part is spanned by $1$ and the three bivectors, and it is a copy of the quaternion algebra; the rotors are the unit quaternions, $\mathrm{Spin}(3)\cong Sp(1)$, and the sandwich is the adjoint action of the unit quaternions on the vectors. The companion article <em>Quaternion Rotations and Reflections</em> writes the same rotor as $\exp(\tfrac{\mu\theta}{2})$ with $\mu$ a unit pure quaternion, and the passage from $\mu$ to the bivector is the duality of <em>The Volume Element, Duality and the Hodge Star</em>: with the axis $a=e_3$ the bivector is $a\omega=e_1e_2$, so that $R=\exp(-\tfrac{\theta}{2}a\omega)$. The relative sign of the two expressions is carried by the orientation of the identification of the imaginary quaternions with the bivectors. The obvious labelling already reverses the product, $ij=-k$ for $i=e_2e_3$, $j=e_3e_1$, $k=e_1e_2$, so that this identification is an anti-isomorphism of the quaternion algebra and the signs must be matched by hand: $ij=k$ in the quaternions, while $(e_2e_3)(e_3e_1)=-e_1e_2$.</p>
+<h3 id="minkowski-space">Minkowski Space</h3>
+<p>In $\mathrm{Cl}_{1,3}$ the rotors are the elements of $\mathrm{Spin}(1,3)\cong SL(2,\mathbb{C})$, and the sandwich is the Lorentz transformation of the quadratic space: a bivector of square $-1$ generates a spatial rotation and a bivector of square $+1$ a boost, the two together generating the whole group. The group and its realisation inside the biquaternion algebra are from <em>The Rotation and Reflection Groups in the Biquaternion Algebra</em>, and the description of the Lorentz transformation by the sandwich is the biquaternion form of the same action.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>versor</strong> is a product of non-isotropic vectors; versors are invertible, their inverses are versors of the same parity, and they form the Lipschitz group, which coincides with the Clifford group of units that preserve the space of vectors under the twisted adjoint. An even versor of Clifford norm one is a <strong>rotor</strong>; the rotors form a subgroup of the spin group containing $\pm1$, and they map onto the special orthogonal group with kernel $\{\pm1\}$, so that they are a two-to-one cover of the rotations.</p>
+<p>Every exponential of a bivector is a rotor. With $J_B=\tfrac12\operatorname{ad}_B$ acting on $V$, one has $\exp(B)v\exp(-B)=\exp(2J_B)v$; if $B=e_1e_2$ with $B^2=-1$ then $J_B$ is a complex structure on the plane of $B$ and annihilates its orthogonal complement, and the rotor $R=\exp(-\tfrac{\theta}{2}B)$ satisfies $Re_1R^{-1}=\cos\theta\,e_1+\sin\theta\,e_2$, fixing the perpendicular directions, so that it is the rotation through $\theta$ while its parameter is the half angle. If $B^2=+1$ the same computation with $\cosh$ and $\sinh$ gives a boost of the plane, with half-rapidity $\varphi/2$. A general bivector of a definite real space is a sum of commuting simple bivectors, and its exponential is a product of commuting rotations.</p>
+<p>The rotor has two actions. The <strong>sandwich</strong> $v\mapsto RvR^{-1}$ acts on the vectors and carries the full angle of the rotation, because it is the twisted adjoint of a versor and therefore preserves the quadratic space. The <strong>left action</strong> $\psi\mapsto R\psi$ acts on a Clifford module and carries the half angle, because it is the spin representation and satisfies $\rho(-1)=-\mathrm{id}$: a full turn of the vectors acts on a spinor as $-1$. Left multiplication does not act on the vectors at all, and the reason is visible in the example $Re_3=\cos\tfrac{\theta}{2}e_3-\sin\tfrac{\theta}{2}\omega$ of $\mathrm{Cl}_{3,0}$, a vector together with a trivector; in the sandwich the two trivector parts cancel, because the trivector parts of $vB$ and of $Bv$ are equal and enter with opposite signs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x=v_1\cdots v_k$</td>
+<td>Versor, a product of non-isotropic vectors</td>
+</tr>
+<tr>
+<td>$\Gamma(V,q)$</td>
+<td>Clifford group, equal to the Lipschitz group</td>
+</tr>
+<tr>
+<td>$\widetilde{\mathrm{Ad}}_x(v)=\alpha(x)vx^{-1}$</td>
+<td>Twisted adjoint action</td>
+</tr>
+<tr>
+<td>$N(x)=x\bar x$</td>
+<td>Clifford norm, $N(v)=-q(v)$ on a vector</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>Rotor, an even versor with $N(R)=1$</td>
+</tr>
+<tr>
+<td>$R=\exp(-\tfrac{\theta}{2}B)$</td>
+<td>Elliptic rotor of the plane of $B$, $B^2=-1$</td>
+</tr>
+<tr>
+<td>$R=\exp(-\tfrac{\varphi}{2}B)$</td>
+<td>Hyperbolic rotor, $B^2=+1$, half-rapidity $\varphi/2$</td>
+</tr>
+<tr>
+<td>$J_B=\tfrac12\operatorname{ad}_B$</td>
+<td>Endomorphism of $V$, $\exp(B)v\exp(-B)=\exp(2J_B)v$</td>
+</tr>
+<tr>
+<td>$v\mapsto RvR^{-1}$</td>
+<td>Sandwich, the vector action, full angle</td>
+</tr>
+<tr>
+<td>$\psi\mapsto R\psi$</td>
+<td>Left action, the spinor action, half angle</td>
+</tr>
+<tr>
+<td>$\mathrm{Rotors}\to SO(V,q)$</td>
+<td>Two-to-one cover, kernel $\{\pm1\}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for versors, the Lipschitz group and the sandwich action.</li>
+<li>David Hestenes, <em>New Foundations for Classical Mechanics</em> (Reidel, 2nd ed. 1999), for the rotor as the exponential of a bivector and the rotation formula in the geometric algebra of space.</li>
+<li>David Hestenes and Garret Sobczyk, <em>Clifford Algebra to Geometric Calculus</em> (Reidel, 1984), for the two actions of a versor and the half-angle parametrisation.</li>
+<li>Leo Dorst, Daniel Fontijne and Stephen Mann, <em>Geometric Algebra for Computer Science</em> (Morgan Kaufmann, 2007), for the sandwich action and its numerical use.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the Clifford group, the spin group and the double cover.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Zero Divisors and Prime Ideals — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-zero-divisors-and-prime-ideals"><strong>List of Zero Divisors and Prime Ideals</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the rings of the corpus together with their zero divisors, the annihilator $\operatorname{Ann}(a)$ of an element, and the associated primes in which those zero divisors lie. Every entry points to the article that introduces the object, and the theorem $Z(R) = \bigcup_{\mathfrak{p} \in \operatorname{Ass}(R)} \mathfrak{p}$ is the statement the list is built to illustrate.</p>
+<p>The zero divisors of a Noetherian ring are a finite union of prime ideals, so they carry an ideal-theoretic description even though they are not themselves an ideal; the annihilator of an element is an ideal, and the associated primes are exactly the maximal elements among the ideals of the form $\operatorname{Ann}(a)$. The list records each ring with its zero divisor set, its associated primes, and the idempotents that generate direct summands.</p>
+<p>The article introduces nothing and proves nothing. It records examples and non-examples side by side.</p>
+<h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The element</th>
+<th>$\operatorname{Ann}(a)$</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>$n \neq 0$</td>
+<td>$(0)$</td>
+<td><em>The Integers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>$2$</td>
+<td>$(2)$</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$2$</td>
+<td>$(3)$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$3$</td>
+<td>$(2)$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$4$</td>
+<td>$(3)$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$k[x,y]/(x^2,y)$</td>
+<td>the class of $x$</td>
+<td>$(x,y)$</td>
+<td><em>Primary Decomposition</em></td>
+</tr>
+<tr>
+<td>$R \times S$</td>
+<td>$(1, 0)$</td>
+<td>$(0) \times S$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>a domain $R$</td>
+<td>$a \neq 0$</td>
+<td>$(0)$</td>
+<td><em>Integral Domains</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+<td>$2$</td>
+<td>$(0)$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The annihilator $\operatorname{Ann}(a) = \{r : ra = 0\}$ is an ideal, and it consists of zero divisors together with $0$: every nonzero element of $\operatorname{Ann}(a)$ kills the nonzero element $a$. The colon form $(I : x) = \{r : rx \in I\}$ of the same construction, used for the zero divisors of a quotient $R/I$, is the notation of <em>Primary Decomposition</em>, and $\operatorname{Ann}(a) = ((0) : a)$ is the special case $I = (0)$.</p>
+<h2 id="the-associated-primes-and-the-theorem">The Associated Primes and the Theorem</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The zero divisor set $Z(R)$</th>
+<th>The associated primes $\operatorname{Ass}(R)$</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a domain $R$</td>
+<td>$\{0\}$</td>
+<td>the single prime $(0)$</td>
+<td><em>Integral Domains</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>$(2)$</td>
+<td>$(2)$</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$(2) \cup (3)$</td>
+<td>$(2)$ and $(3)$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/12\mathbb{Z}$</td>
+<td>$(2) \cup (3)$</td>
+<td>$(2)$ and $(3)$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$k[x,y]/(x^2,xy)$</td>
+<td>$(x,y)$</td>
+<td>$(x)$ and $(x,y)$</td>
+<td><em>Primary Decomposition</em></td>
+</tr>
+<tr>
+<td>an Artinian local ring with maximal ideal $\mathfrak{m}$</td>
+<td>$\mathfrak{m}$, the maximal ideal</td>
+<td>$\mathfrak{m}$</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>a Dedekind domain</td>
+<td>$\{0\}$</td>
+<td>the single prime $(0)$, although every nonunit lies in some maximal ideal</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>a product $R \times S$</td>
+<td>$(Z(R) \times S) \cup (R \times Z(S))$</td>
+<td>$\operatorname{Ass}(R) \cup \operatorname{Ass}(S)$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>a Boolean ring</td>
+<td>every element except $0$ and $1$</td>
+<td>the maximal ideals</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The theorem is that the two middle columns agree: for a Noetherian ring, the zero divisors are the union of the associated primes, $\bigcup_{x \neq 0} \operatorname{Ann}(x) = \bigcup_{\mathfrak{p} \in \operatorname{Ass}(R)} \mathfrak{p}$, and this is stated and proved in <em>Primary Decomposition</em>. The theorem gives the zero divisors a finite description even when they are not an ideal, and it is the reason the row for an Artinian local ring is a single prime: its maximal ideal is nilpotent, hence consists of zero divisors, and it is the one associated prime.</p>
+<h2 id="why-the-zero-divisors-are-not-an-ideal">Why the Zero Divisors Are Not an Ideal</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The zero divisors</th>
+<th>Their sum</th>
+<th>The failure</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$2, 3, 4$</td>
+<td>$2 + 3 = 5$, a unit</td>
+<td>$Z(R)$ is not closed under addition</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>$0$ alone</td>
+<td>$0 + 0 = 0$</td>
+<td>$Z(R) = (0)$ happens to be an ideal</td>
+<td><em>The Integers</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/4\mathbb{Z}$</td>
+<td>$0, 2$</td>
+<td>$2 + 2 = 0$</td>
+<td>$Z(R) = (2)$, an ideal by accident of the nilpotent</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>$k[x,y]/(x^2,xy)$</td>
+<td>$\mathfrak{m} = (x,y)$, the union of $(x)$ and $(x,y)$</td>
+<td>$x + y$, again a zero divisor</td>
+<td>$Z(R)$ is the maximal ideal, so the failure is absent</td>
+<td><em>Primary Decomposition</em></td>
+</tr>
+<tr>
+<td>$\mathbb{R} \times \mathbb{R}$</td>
+<td>$(a,0)$ and $(0,b)$</td>
+<td>$(1,0) + (0,1) = (1,1)$, a unit</td>
+<td>$Z(R)$ is not closed under addition</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>the singular matrices</td>
+<td>$E_{11} + (I - E_{11})$ is a unit</td>
+<td>$Z(R)$ is not an ideal</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The zero divisors form a union of primes and not an ideal, and the table records the two ways the failure shows: in $\mathbb{Z}/6\mathbb{Z}$ and in $\mathbb{R}\times\mathbb{R}$ the sum of two zero divisors is a unit, while in $k[x,y]/(x^2,xy)$ the sum stays a zero divisor because the whole set is the maximal ideal $(x,y)$, the union of the prime $(x)$ with the embedded prime $(x,y)$. The one case where the set is an ideal is the case where it is a single prime, the nilpotent maximal ideal of a local ring such as $\mathbb{Z}/4\mathbb{Z}$ or the dual numbers, and this is recorded in <em>List of Reduced, Local and Product Rings</em>.</p>
+<h2 id="the-idempotent-generated-ideals-and-the-direct-summands">The Idempotent-Generated Ideals and the Direct Summands</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ring</th>
+<th>The idempotent $e$</th>
+<th>The ideal $Re$</th>
+<th>The complementary summand</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$3$</td>
+<td>$(3) = \{0, 3\}$</td>
+<td>$(2) = \{0, 2, 4\}$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6\mathbb{Z}$</td>
+<td>$4$</td>
+<td>$(2) = \{0, 2, 4\}$</td>
+<td>$(3) = \{0, 3\}$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D} = \mathbb{R}[j]/(j^2-1)$</td>
+<td>$e_+ = \tfrac{1}{2}(1+j)$</td>
+<td>$\mathbb{R}e_+$</td>
+<td>$\mathbb{R}e_-$</td>
+<td><em>Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>$e_+$, $e_-$</td>
+<td>$\mathbb{H}e_+$, $\mathbb{H}e_-$</td>
+<td>the other ideal</td>
+<td><em>Split-Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$R \times S$</td>
+<td>$(1, 0)$</td>
+<td>$R \times 0$</td>
+<td>$0 \times S$</td>
+<td><em>Examples of Rings and Fields</em></td>
+</tr>
+<tr>
+<td>a Boolean ring</td>
+<td>every element other than $0$ and $1$</td>
+<td>the principal ideal it generates</td>
+<td>the ideal generated by $1 - e$</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>$E_{11}$, $E_{22}$</td>
+<td>the $(1,1)$ entries</td>
+<td>the $(2,2)$ entries</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>An idempotent $e$ satisfies $e(1-e) = 0$ and induces the direct sum decomposition $R = Re \oplus R(1-e)$, so the principal ideal $Re$ is a direct summand and is generated by an idempotent. The rings in which every ideal is idempotent-generated are the von Neumann regular rings, in which every principal ideal is generated by an idempotent; the commutative von Neumann regular rings are exactly the reduced rings of Krull dimension zero, and the Boolean rings are the characteristic-two examples. The domains and the local rings are the opposite case, in which the idempotents are $0$ and $1$ alone: this is recorded in <em>Von Neumann Regular Rings</em> and in <em>List of Rings by Their Idempotents</em>.</p>
+<h2 id="the-classes-of-ring-by-their-zero-divisors">The Classes of Ring by Their Zero Divisors</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>The zero divisor set</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a domain</td>
+<td>$\{0\}$</td>
+<td><em>Integral Domains</em></td>
+</tr>
+<tr>
+<td>a reduced ring</td>
+<td>a union of primes, possibly $\{0\}$</td>
+<td><em>Reduced Rings and the Nilradical</em></td>
+</tr>
+<tr>
+<td>an Artinian local ring</td>
+<td>the maximal ideal</td>
+<td><em>Noetherian and Artinian Rings</em></td>
+</tr>
+<tr>
+<td>a principal ideal domain</td>
+<td>$\{0\}$</td>
+<td><em>Principal Ideal Domains</em></td>
+</tr>
+<tr>
+<td>a Dedekind domain</td>
+<td>$\{0\}$; the nonunits are the union of the maximal ideals, the zero divisors are not</td>
+<td><em>Dedekind Domains and Ideal Class Groups</em></td>
+</tr>
+<tr>
+<td>a Noetherian ring</td>
+<td>a finite union of primes</td>
+<td><em>Primary Decomposition</em></td>
+</tr>
+<tr>
+<td>a general commutative ring</td>
+<td>a union of primes, not necessarily finite</td>
+<td><em>Commutative Rings</em></td>
+</tr>
+<tr>
+<td>a von Neumann regular ring</td>
+<td>the union of the maximal ideals</td>
+<td><em>Von Neumann Regular Rings</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The eighth row is the row that ties this list to the idempotents: in a von Neumann regular ring every element is a unit times an idempotent, the maximal ideals are the associated primes, and the zero divisors are their union, so the ring realises the theorem in its sharpest form. The non-Noetherian case loses only the finiteness of the union.</p>
+<h2 id="warnings">Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it has no zero divisors and no prime to record</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a field $k$</td>
+<td>every nonzero element is a unit; the only prime is $(0)$</td>
+<td><em>Fields</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/p\mathbb{Z}$</td>
+<td>a field; its associated prime is $(0)$</td>
+<td><em>Modular Arithmetic and the Ring of Residues</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>a division ring; every nonzero element is a unit</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$, $k[x]$, $\mathbb{Z}[i]$</td>
+<td>domains, so $Z(R) = \{0\}$</td>
+<td><em>Integral Domains</em></td>
+</tr>
+<tr>
+<td>the free algebra $R\langle x_1, \dots, x_n\rangle$</td>
+<td>a non-commutative domain; the annihilator is one-sided</td>
+<td><em>Tensor Powers and the Free Algebra</em></td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>non-commutative: an element may have a left annihilator and no right annihilator</td>
+<td><em>Matrix Algebras</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The last two rows are the reason the theorem is stated for a commutative ring: in a non-commutative ring the annihilator of an element is a one-sided ideal, the associated primes are replaced by the prime ideals in the non-commutative sense, and the union statement is not available in the same form. The non-commutative substitute is developed in <em>Prime Rings</em> and <em>Semiprime Rings</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the rings of the corpus with their zero divisors, their annihilators and their associated primes. The annihilator $\operatorname{Ann}(a)$ is computed for the residue rings, the quotient $k[x,y]/(x^2,y)$, the products and the domains; the associated primes are tabulated for the same objects, and the theorem $Z(R) = \bigcup \operatorname{Ass}(R)$ of <em>Primary Decomposition</em> is the statement they illustrate, holding for a finite union in the Noetherian case and for a possibly infinite one in general; the failure of the zero divisors to be an ideal is recorded at $\mathbb{Z}/6\mathbb{Z}$ and at $\mathbb{R}\times\mathbb{R}$, where the sum of two zero divisors is a unit; and the idempotent-generated ideals $Re$ are recorded as the direct summands $R = Re \oplus R(1-e)$, with the von Neumann regular rings as the case in which every ideal is generated by an idempotent and the domains and local rings as the case in which no nontrivial idempotent exists.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z(R)$</td>
+<td>The set of zero divisors of $R$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}(a) = ((0) : a)$</td>
+<td>The annihilator of $a$, $\{r : ra = 0\}$</td>
+</tr>
+<tr>
+<td>$(I : x)$</td>
+<td>The colon ideal $\{r : rx \in I\}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ass}(R)$</td>
+<td>The associated primes of $R$, that is $\operatorname{Ass}((0))$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ass}(I)$</td>
+<td>The associated primes of the ideal $I$</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}, \mathfrak{m}$</td>
+<td>Prime ideal, maximal ideal</td>
+</tr>
+<tr>
+<td>$e$, $e_{\pm}$</td>
+<td>Idempotents; $e_+ = \tfrac{1}{2}(1+j)$, $e_- = \tfrac{1}{2}(1-j)$</td>
+</tr>
+<tr>
+<td>$k[x,y]/(x^2,xy)$</td>
+<td>The quotient with associated primes $(x)$ and $(x,y)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Irving Kaplansky, <em>Commutative Rings</em> (University of Chicago Press, revised ed. 1974), for the associated primes and the union-of-primes description of the zero divisors.</li>
+<li>M. F. Atiyah and I. G. Macdonald, <em>Introduction to Commutative Algebra</em> (Addison–Wesley, 1969), for primary decomposition, the first uniqueness theorem and the Nullstellensatz.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the non-commutative prime and semiprime rings that replace the prime ideals of the commutative theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

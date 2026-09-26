@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Affine and Euclidean Groups — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="list-of-affine-and-euclidean-groups"><strong>List of Affine and Euclidean Groups</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article lists the affine, Euclidean and similarity groups of the corpus — $\operatorname{Aff}(n)$, $E(n)$, $SE(n)$ and $\operatorname{Sim}(n)$ — together with the transformations that generate them and the theorem of Cartan–Dieudonné that controls the length of a product of reflections. The property the list gathers is that of a group of transformations of affine or Euclidean space defined by a semidirect product: the translations by a linear or orthogonal part. The affine group is the automorphism group of affine space, the Euclidean group is the isometry group of Euclidean space, and the similarity group is the group of transformations that multiply all distances by a common positive scalar.</p>
+<p>Every entry points to the article that introduces the group or the theorem. The article introduces nothing and proves nothing: it records the semidirect product, the dimension, the generators and the classification of the plane isometries as the introducing articles give them, and it neither restates a definition nor gives a proof.</p>
+<p>The article records examples and non-examples side by side. Beside the groups it lists the transformations that fail the property of their group: an affine map with a general linear part is not an isometry; a similarity with ratio different from $1$ does not preserve distance; a translation has no fixed point, so the isometries of the plane divide into those with a fixed point and those without; the line admits no non-trivial rotation, so the one-dimensional case is not a degenerate case of the plane; and the affine group of a general field is not the Euclidean group of a metric space, each with the failure named and the article that records it.</p>
+<h2 id="the-affine-group">The Affine Group</h2>
+<p>An affine space is a torsor for the additive group of a vector space: any two points determine a difference vector and no point is distinguished. The affine group is its automorphism group, the semidirect product of the translations with the general linear group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or property</th>
+<th>The statement</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the affine space $\mathbb{A}$ with direction $V$</td>
+<td>a set with a free and transitive action of $(V,+)$; the translation picture of geometry</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the translation $t_v$ and the translation group $T(\mathbb{A})$</td>
+<td>$t_v(a) = a + v$; the translations form a normal subgroup $\cong (V,+)$, acting simply transitively</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the affine group $\operatorname{Aff}(\mathbb{A}) = V \rtimes \operatorname{GL}(V)$</td>
+<td>the semidirect product with $(T,b)(T',b') = (TT',Tb'+b)$; the affine maps $x \mapsto Tx + b$</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the affine group as the automorphism group of affine space</td>
+<td>$\operatorname{Aff}(V)$ is to the affine structure what $\operatorname{GL}(V)$ is to the linear structure</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the affine invariants</td>
+<td>incidence, parallelism, affine independence and the barycentres; the linear part is the homomorphism onto $\operatorname{GL}(V)$</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the barycentric coordinates $(\alpha_0,\ldots,\alpha_n)$</td>
+<td>affine combinations $\sum_i\lambda_ia_i$ with $\sum_i\lambda_i = 1$; the coordinate system of the affine structure</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the affine subspace $B = a + W$</td>
+<td>a point and a direction; the incidence structure of affine geometry</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the affine group of the line, $\operatorname{Aff}(\mathbb{R}) = \mathbb{R} \rtimes \mathbb{R}^\times$</td>
+<td>the group $x \mapsto ax + b$ of the line; the dilations and translations</td>
+<td><em>Real Line Geometry and Isometries</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-euclidean-group">The Euclidean Group</h2>
+<p>The Euclidean group is the isometry group of $\mathbb{R}^n$ with its positive definite inner product; every isometry is affine, with linear part orthogonal, and the group is the semidirect product of the translations with the orthogonal group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or property</th>
+<th>The statement</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Euclidean group $E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>the maps $x \mapsto Ax + b$ with $A$ orthogonal; the isometry group of $\mathbb{R}^n$</td>
+<td><em>Euclidean Geometry</em>; <em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the dimension of $E(n)$</td>
+<td>$n(n+1)/2$: $n$ translations and $n(n-1)/2$ rotations</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the special Euclidean group $SE(n) = \mathbb{R}^n \rtimes SO(n)$</td>
+<td>the orientation-preserving isometries; the rigid motions</td>
+<td><em>Euclidean Geometry</em>; <em>The Rotation Group and Orientation</em></td>
+</tr>
+<tr>
+<td>the linear part $\ell(A,b) = A$</td>
+<td>the homomorphism $E(n) \to O(n)$; every isometry is affine with orthogonal linear part</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the isometry group of a form of arbitrary signature</td>
+<td>$E(\mathbb{A}) = V \rtimes O(V,Q)$ with distance $d(a,b)^2 = Q(a-b)$</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the squared distance $d(a,b)^2 = Q(a-b)$</td>
+<td>the quantity an isometry preserves; the Euclidean case is $Q$ positive definite</td>
+<td><em>Affine Spaces and Translations</em>; <em>Metric, Uniform and Complete Spaces</em></td>
+</tr>
+<tr>
+<td>the classification of the plane isometries</td>
+<td>translation, rotation, reflection and glide reflection; those with a fixed point are the rotations and reflections</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the isometries of the line</td>
+<td>$T_b(x) = x+b$ and $R_b(x) = b-x$; $\operatorname{Isom}(\mathbb{R}) = \mathbb{R} \rtimes \mathbb{Z}/2\mathbb{Z}$</td>
+<td><em>Real Line Geometry and Isometries</em></td>
+</tr>
+<tr>
+<td>the Euclidean group as a topological group</td>
+<td>a closed subgroup of the affine group, locally compact, with $O(n)$ a maximal compact subgroup</td>
+<td><em>Topological Groups</em>; <em>Matrix Groups and Classical Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-similarity-group-and-the-generators">The Similarity Group and the Generators</h2>
+<p>The similarity group allows a common positive scale, and its elements together with the reflections generate the whole group of the Euclidean structure. The generators are translations, rotations, reflections, glide reflections and dilatations.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or property</th>
+<th>The statement</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the similarity group $\operatorname{Sim}(n) = \mathbb{R}^n \rtimes (\mathbb{R}_{>0} \times O(n))$</td>
+<td>the maps $x \mapsto \lambda Ax + b$ with $\lambda > 0$; the similarities of Euclidean space</td>
+<td><em>Euclidean Geometry</em>; <em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the similarities of the line</td>
+<td>$\operatorname{Sim}(\mathbb{R}) = \mathbb{R} \rtimes \mathbb{R}^\times$; the dilations $D_a(x) = ax$</td>
+<td><em>Real Line Geometry and Isometries</em></td>
+</tr>
+<tr>
+<td>the dilatation $D_a$</td>
+<td>$x \mapsto ax$; it multiplies every distance by $\lvert a\rvert$ and fixes the origin</td>
+<td><em>Real Line Geometry and Isometries</em></td>
+</tr>
+<tr>
+<td>the multiplier of a similarity</td>
+<td>$q(Tv) = c\,q(v)$; the similarities of a quadratic form, with multiplier group $\mu$</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>the translations as generators</td>
+<td>the translation subgroup is normal and the quotient is the linear part; every element is a linear part and a translation</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the reflections as generators</td>
+<td>the reflections $\tau_v$ generate the orthogonal group; the equal-norm lemma reduces a product to a single reflection</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>Cartan–Dieudonné, linear form</td>
+<td>every isometry of an $n$-dimensional non-degenerate quadratic space is a product of at most $n$ reflections</td>
+<td><em>Isometries and Orthogonal Transformations</em></td>
+</tr>
+<tr>
+<td>Cartan–Dieudonné, affine form</td>
+<td>every isometry of affine $n$-space is a product of at most $n+1$ reflections</td>
+<td><em>Isometries and Orthogonal Transformations</em>; <em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the plane isometries from reflections</td>
+<td>a rotation is a product of two reflections in lines through its centre; a translation is a product of two reflections in parallel lines</td>
+<td><em>Euclidean Geometry</em>; <em>The Rotation Group and Orientation</em></td>
+</tr>
+<tr>
+<td>the rotation and reflection matrices</td>
+<td>$R(\theta)$ and $S(\theta)$; $\operatorname{SO}(2) \cong S^1$</td>
+<td><em>The Rotation Group and Orientation</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-structures-preserved-and-their-invariants">The Structures Preserved and Their Invariants</h2>
+<p>The affine and Euclidean groups are the automorphism groups of two nested structures on the same set of points: the affine structure of incidence and parallelism, and the Euclidean structure of distance and angle.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object or statement</th>
+<th>The content</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the affine structure</td>
+<td>the torsor of the translations; its automorphism group is $\operatorname{Aff}(V)$ and it contains no metric</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the Euclidean structure</td>
+<td>the positive definite inner product $\langle x,y\rangle = \sum_i x_iy_i$ and the norm $\lvert x\rvert$; its automorphism group is $O(n)$ at a point</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the affine invariants</td>
+<td>incidence, parallelism, affine independence and the barycentres; the affine maps preserve all of them</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the affine subspaces and the incidence theory</td>
+<td>$B = a + W$; two subspaces with the same direction are equal or disjoint</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the parallel postulate and Playfair's form</td>
+<td>exactly one line through a point parallel to a given line; the axiom that distinguishes Euclidean from hyperbolic geometry</td>
+<td><em>Euclidean Geometry</em>; <em>Non-Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>congruence and similarity</td>
+<td>figures related by an isometry, and by a similarity $\mathbb{R}^n \rtimes (\mathbb{R}_{>0} \times O(n))$</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the congruence theorems and the orthogonal group</td>
+<td>the synthetic criteria SSS, SAS, ASA correspond to facts about $O(n)$</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the Pythagorean theorem and the angle sum</td>
+<td>the classical theorems of the metric geometry, proved from the congruence criteria</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the regular polygons and the Platonic solids</td>
+<td>the regular $m$-gon with symmetry group $D_m$; the five regular solids and their symmetry groups</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the crystallographic restriction</td>
+<td>a periodic lattice admits a rotation of order $1,2,3,4$ or $6$ only; the bridge to the crystallographic groups</td>
+<td><em>Euclidean Geometry</em>; <em>Symmetry, Point and Crystallographic Groups</em></td>
+</tr>
+<tr>
+<td>the Euclidean space as a flat model</td>
+<td>the complete simply connected model of curvature zero; the geodesics are the lines</td>
+<td><em>Euclidean Geometry</em>; <em>Non-Euclidean Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="non-examples-and-warnings">Non-examples and Warnings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why the expected statement fails</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a general affine map $x \mapsto Tx + b$</td>
+<td>it is not an isometry when the linear part is not orthogonal; it preserves incidence and parallelism and not distance</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>a similarity with ratio $\lambda \neq 1$</td>
+<td>it does not preserve distance; it multiplies it by $\lambda$, so it is not in $E(n)$</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>a translation</td>
+<td>it has no fixed point; the isometries with a fixed point are only the rotations and the reflections</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>a glide reflection</td>
+<td>it preserves orientation and is not a rotation when its translation part is non-zero; it has no fixed point</td>
+<td><em>Euclidean Geometry</em></td>
+</tr>
+<tr>
+<td>the one-dimensional case</td>
+<td>there is no non-trivial rotation of the line; the Cayley–Klein ladder degenerates, and the line is the base case rather than a case of the plane</td>
+<td><em>Real Line Geometry and Isometries</em></td>
+</tr>
+<tr>
+<td>the affine group of a general field</td>
+<td>it is a group of transformations of an affine space over $F$, not the isometry group of a metric space; the Euclidean group needs an ordered field and a form</td>
+<td><em>Affine Spaces and Translations</em></td>
+</tr>
+<tr>
+<td>the affine group $\operatorname{Aff}(n)$</td>
+<td>it is not compact and not unimodular for $n \geq 1$; it is a Lie group of dimension $n^2+n$</td>
+<td><em>Affine Spaces and Translations</em>; <em>Lie Groups</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Objects that a reader may expect in a list of affine and Euclidean groups, and does not find here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Why it is not listed</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the isometry groups $\operatorname{Isom}(\mathbb{H}^n) = O(n,1)$ and $\operatorname{Isom}(S^n) = O(n+1)$</td>
+<td>they are the isometry groups of the non-Euclidean model spaces and are catalogued with the isometry and symmetry groups</td>
+<td><em>List of Isometry and Symmetry Groups</em></td>
+</tr>
+<tr>
+<td>the crystallographic, wallpaper and frieze groups</td>
+<td>they are the discrete subgroups of $E(n)$ and are catalogued with the discrete geometric groups</td>
+<td><em>Symmetry, Point and Crystallographic Groups</em>; <em>List of Discrete Geometric Groups</em></td>
+</tr>
+<tr>
+<td>$\operatorname{PGL}(n+1)$ and the projective transformations</td>
+<td>the projective group is not a semidirect product of this kind and is catalogued with the projective groups</td>
+<td><em>List of Projective Geometric Groups</em></td>
+</tr>
+<tr>
+<td>the Möbius and conformal groups</td>
+<td>they are the transformations of a conformal structure and are catalogued with the Möbius groups</td>
+<td><em>List of Möbius and Conformal Groups</em></td>
+</tr>
+<tr>
+<td>the Galilean and Poincaré groups</td>
+<td>they are the symmetry groups of space–time, a physical construction outside this list</td>
+<td><em>Pseudo-Riemannian and Lorentzian Geometry</em>; <em>Split-Biquaternion Rotations and the Lorentz Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>This article has listed the affine and Euclidean groups of the corpus: the affine group $\operatorname{Aff}(n) = \mathbb{R}^n \rtimes GL(n)$, the automorphism group of affine space, with the translations as a simply transitive normal subgroup, the affine maps $x \mapsto Tx+b$, the barycentric coordinates and the affine invariants; the Euclidean group $E(n) = \mathbb{R}^n \rtimes O(n)$ with the special group $SE(n) = \mathbb{R}^n \rtimes SO(n)$, the linear part, the dimension $n(n+1)/2$ and the classification of the plane isometries; the similarity group $\operatorname{Sim}(n) = \mathbb{R}^n \rtimes (\mathbb{R}_{>0} \times O(n))$ with the dilatations; the generators — translations, rotations, reflections and glide reflections — and Cartan–Dieudonné's theorem that every isometry is a product of at most $n+1$ reflections. Beside the examples stand the non-examples: the affine maps that are not isometries, the similarities of ratio not one, the translations and glide reflections without fixed points, and the absence of a non-trivial rotation of the line. The list introduces and proves nothing; it is the index of the affine and Euclidean groups of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are those of the articles that introduce them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{A}$, $V$</td>
+<td>an affine space, its direction vector space</td>
+</tr>
+<tr>
+<td>$a + v$, $b - a$</td>
+<td>the action of $V$ on $\mathbb{A}$, the difference of two points</td>
+</tr>
+<tr>
+<td>$t_v$, $T(\mathbb{A})$</td>
+<td>translation by $v$, the translation group</td>
+</tr>
+<tr>
+<td>$\operatorname{Aff}(n) = \mathbb{R}^n \rtimes GL(n)$, or $V \rtimes GL(V)$ over a general vector space</td>
+<td>the affine group; the maps $x \mapsto Tx+b$</td>
+</tr>
+<tr>
+<td>$(\alpha_0,\ldots,\alpha_n)$</td>
+<td>barycentric coordinates; affine combinations</td>
+</tr>
+<tr>
+<td>$E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>the Euclidean isometry group</td>
+</tr>
+<tr>
+<td>$SE(n) = \mathbb{R}^n \rtimes SO(n)$</td>
+<td>the orientation-preserving Euclidean group</td>
+</tr>
+<tr>
+<td>$\operatorname{Sim}(n) = \mathbb{R}^n \rtimes (\mathbb{R}_{>0} \times O(n))$</td>
+<td>the similarity group</td>
+</tr>
+<tr>
+<td>$\ell(A,b) = A$</td>
+<td>the linear part of an affine map</td>
+</tr>
+<tr>
+<td>$Q$, $d(a,b)^2 = Q(a-b)$</td>
+<td>the quadratic form and the squared distance</td>
+</tr>
+<tr>
+<td>$T_b$, $R_b$, $D_a$</td>
+<td>translation, reflection and dilation of the line</td>
+</tr>
+<tr>
+<td>$\tau_v$</td>
+<td>the reflection in the vector $v$</td>
+</tr>
+<tr>
+<td>$GL(V)$, $O(n)$, $SO(n)$</td>
+<td>the linear, orthogonal and special orthogonal groups</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Marcel Berger, <em>Geometry I</em> (Springer, 1987), for affine spaces, the affine and Euclidean groups and the classification of the isometries.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 3rd ed. 1971), for the orthogonal and unitary groups and the reflection theorem of Cartan–Dieudonné.</li>
+<li>David Hilbert, <em>Grundlagen der Geometrie</em> (Teubner, 1899), for the synthetic axioms of Euclidean geometry and the relation between the synthetic and analytic formulations.</li>
+<li>John Stillwell, <em>The Four Pillars of Geometry</em> (Springer, 2005), for the affine and Euclidean transformations and the geometry they organise.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="graph-theory"><strong>Graph Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A graph is the simplest structure that a set can carry beyond its own equality: a <strong>relation</strong> on it, read as adjacency. Everything in this article is a consequence of that one observation, and the article is the corpus's first purely combinatorial subject — the first place where the objects counted are configurations rather than algebraic operations, and where the standard questions are existence, connectivity and extremality rather than closure. It is placed at the end of <em>Foundations of Topology</em> because its only prerequisites are behind it: the sets, functions and relations of <em>Sets, Functions and Relations</em> of Part I, and the metric space of <em>Metric, Uniform and Complete Spaces</em>, an earlier entry of this category. A graph is not a topological space here, and no topology beyond the metric is used.</p>
+<p>The reason a topological category holds a combinatorial article is the <strong>graph distance</strong>, the number of edges on a shortest path between two vertices. It is a metric, it is the structure through which the group-theoretic articles of <em>Topology on Groups</em> read a Cayley graph, and it is the reason this article is placed where it is: the combinatorial objects come first, and the metric attached to them comes next. The <strong>Cayley graph</strong>, the <strong>word metric</strong> and the <strong>Bass–Serre tree</strong> are constructed in <em>Topology on Groups</em>, where a group acts on them; this article supplies the graph and its distance and does not attach them to an algebraic object.</p>
+<p>Two boundaries are held throughout. First, no algebra is imported: a graph is a set with a relation, not a module or an algebra, and the adjacency matrix as a linear operator, the graph Laplacian and graph homology belong to the articles that own linear and homological structure, if they belong to the corpus at all. Second, no topology beyond the metric appears: compactness, continuity of an invariant and limits are not available in this Part, and nothing below is stated in those terms. The standing convention of the corpus — a commutative ring with identity, modules on the left — is not needed here; the only structures are sets, relations and the metric space of <em>Metric, Uniform and Complete Spaces</em>.</p>
+<p>Throughout, a graph is <strong>simple</strong> unless the contrary is said explicitly: no loops and at most one edge between a pair of vertices. The graph is written $\Gamma$, its vertex set $V(\Gamma)$ and its edge set $E(\Gamma)$, the letters $u,v,w,x,y$ denote vertices, $e$ an edge, and $n = |V(\Gamma)|$ and $m = |E(\Gamma)|$ are the order and the size. Where an argument needs a finite graph this is stated at the start of the result, so that the finite and the infinite cases are not confused.</p>
+<h2 id="graphs-and-morphisms">Graphs and Morphisms</h2>
+<h3 id="graphs-as-sets-with-a-relation">Graphs as Sets with a Relation</h3>
+<p><strong>Definition.</strong> A <strong>graph</strong> $\Gamma$ consists of a set $V(\Gamma)$, the <strong>vertices</strong>, and a set $E(\Gamma)$ of two-element subsets of $V(\Gamma)$, the <strong>edges</strong>. An edge $\{u,v\}$ is written $uv$, and $u$ and $v$ are its <strong>ends</strong>; the vertices $u$ and $v$ are then <strong>adjacent</strong> or <strong>neighbours</strong>, written $u \sim v$, and the edge is <strong>incident</strong> with each of them. Equivalently, the adjacency relation is a symmetric, irreflexive relation $E(\Gamma) \subseteq V(\Gamma) \times V(\Gamma)$, and the passage between the two descriptions identifies such a relation with the family of two-element sets $\{u,v\}$ for which $(u,v) \in E(\Gamma)$. The number of vertices is the <strong>order</strong> of $\Gamma$ and the number of edges its <strong>size</strong>.</p>
+<p><strong>Definition.</strong> A <strong>directed graph</strong>, or <strong>digraph</strong>, is a pair $D = (U,A)$ with $A \subseteq U \times U$ an arbitrary relation; its elements are <strong>arcs</strong> and are written $(u,v)$ with $u$ the <strong>tail</strong> and $v$ the <strong>head</strong>. A digraph is <strong>symmetric</strong> if $(u,v) \in A$ implies $(v,u) \in A$, and the symmetric digraphs with no loops correspond exactly to the graphs above, with $U = V(\Gamma)$. The undirected theory is the one developed here; the directed case is named where it differs, and an orientation of an undirected graph is a digraph whose arcs are ordered pairs of vertices joined in the graph, one pair for each edge.</p>
+<p><strong>Remark (what is excluded, and why).</strong> A <strong>loop</strong> is an edge with equal ends and a <strong>multigraph</strong> allows several edges between the same pair. Neither occurs in a simple graph, and the restriction is not cosmetic: loops make the degree count of the handshake lemma below false, and multiple edges make the distance and the enumeration of cycles behave differently. Where a result needs one of them it is stated for the wider class and the class is named.</p>
+<p><strong>Example (the standard families).</strong> The <strong>complete graph</strong> $K_n$ has $n$ vertices and every pair joined. The <strong>path</strong> $P_n$ has vertices $1, \ldots, n$ and edges $\{i,i+1\}$. The <strong>cycle</strong> $C_n$ for $n \geq 3$ is the path $P_n$ with the additional edge $\{n,1\}$. The <strong>empty graph</strong>, or <strong>edgeless graph</strong>, $\overline{K_n}$ has $n$ vertices and no edges; the notation records that it is the complement of $K_n$, taken in the two-element subsets of its vertex set. The <strong>complete bipartite graph</strong> $K_{m,n}$ has a bipartition $V(\Gamma) = X \sqcup Y$ with $|X| = m$, $|Y| = n$ and all $mn$ edges between $X$ and $Y$. The counts are $|E(K_n)| = \binom n2$, $|E(P_n)| = n-1$, $|E(C_n)| = n$ and $|E(K_{m,n})| = mn$.</p>
+<h3 id="morphisms-and-isomorphisms">Morphisms and Isomorphisms</h3>
+<p><strong>Definition.</strong> A <strong>graph morphism</strong> $f : \Gamma \to \Lambda$ is a map $f : V(\Gamma) \to V(\Lambda)$ of vertex sets carrying every edge of $\Gamma$ to an edge of $\Lambda$: if $uv \in E(\Gamma)$ then $f(u)f(v) \in E(\Lambda)$. The morphism is an <strong>isomorphism</strong> if $f$ is a bijection and $f^{-1}$ is also a morphism, in which case $\Gamma$ and $\Lambda$ are <strong>isomorphic</strong>, written $\Gamma \cong \Lambda$; it is an <strong>endomorphism</strong> if $\Gamma = \Lambda$, and an <strong>automorphism</strong> if in addition it is an isomorphism. The set of automorphisms of $\Gamma$ is a group $\operatorname{Aut}(\Gamma)$ under composition, and it is a subgroup of the symmetric group on $V(\Gamma)$.</p>
+<p><strong>Proposition.</strong> Isomorphism is an equivalence relation on graphs.</p>
+<p><em>Proof.</em> The identity map is a morphism, the inverse of an isomorphism is an isomorphism by definition, and a composite of bijective edge-preserving maps is again one. $\square$</p>
+<p><strong>Remark.</strong> A graph morphism is more permissive than the drawing suggests: it need not be injective, and it may create adjacencies, since $u \not\sim w$ does not prevent $f(u) \sim f(w)$. It cannot, however, collapse an edge to a vertex: if $uv \in E(\Gamma)$ then $f(u)f(v) \in E(\Lambda)$, and a simple graph has no loops, so $f(u) \neq f(v)$ whenever $u \sim v$. An isomorphism, by contrast, preserves adjacency and non-adjacency both, since $uv \notin E(\Gamma)$ forces $f(u)f(v) \notin E(\Lambda)$ when $f^{-1}$ is a morphism; isomorphism is therefore the correct notion of "the same graph", and every invariant introduced below is an isomorphism invariant.</p>
+<h3 id="subgraphs-and-induced-subgraphs">Subgraphs and Induced Subgraphs</h3>
+<p><strong>Definition.</strong> A <strong>subgraph</strong> $\Lambda \subseteq \Gamma$ is a graph with $V(\Lambda) \subseteq V(\Gamma)$ and $E(\Lambda) \subseteq E(\Gamma)$; it is <strong>spanning</strong> if $V(\Lambda) = V(\Gamma)$, and it is an <strong>induced subgraph</strong> on a set $W \subseteq V(\Gamma)$ if $V(\Lambda) = W$ and $E(\Lambda)$ consists of exactly those edges of $\Gamma$ with both ends in $W$, written $\Gamma[W]$. Thus a subgraph is obtained by deleting vertices and edges, and an induced subgraph by deleting vertices only, the edges among the survivors being kept. A <strong>proper</strong> subgraph is one with $V(\Lambda) \neq V(\Gamma)$ or $E(\Lambda) \neq E(\Gamma)$, and the deletion of a set of vertices is written $\Gamma - S = \Gamma[V(\Gamma) \setminus S]$, with $\Gamma - v$ for a single vertex.</p>
+<p><strong>Example.</strong> In $K_4$ with vertex set $\{1,2,3,4\}$, the subgraph with edges $\{12, 23, 34\}$ is the path $P_4$, a spanning subgraph; the induced subgraph on $\{1,2,3\}$ is $K_3$, and the induced subgraph on $\{1,2,3\}$ of the cycle $C_4 = K_{2,2}$ is the path $P_3$. Inducedness is not inherited by a spanning subgraph: $K_4$ contains $P_4$ as a spanning subgraph and contains no induced $P_4$, since every induced subgraph of a complete graph is complete.</p>
+<h3 id="degree-and-the-handshake-lemma">Degree and the Handshake Lemma</h3>
+<p><strong>Definition.</strong> The <strong>degree</strong> $\deg v$ of a vertex $v$ is the number of its neighbours, $\deg v = |\{u : u \sim v\}|$; a vertex of degree $0$ is <strong>isolated</strong> and one of degree $1$ is a <strong>leaf</strong>. The graph is <strong>locally finite</strong> if every degree is finite, and <strong>$d$-regular</strong> if $\deg v = d$ for every $v$. The <strong>maximum degree</strong> and <strong>minimum degree</strong> are written $\Delta(\Gamma)$ and $\delta(\Gamma)$. In a digraph the <strong>out-degree</strong> and <strong>in-degree</strong> count the arcs with tail and head at the vertex.</p>
+<p><strong>Theorem (handshake lemma).</strong> For every finite graph $\Gamma$,</p>
+<p>$$
+\sum_{v \in V(\Gamma)} \deg v = 2\,|E(\Gamma)|.
+$$</p>
+<p><em>Proof.</em> Count the pairs $(v,e)$ with $v$ an end of $e$. Each vertex $v$ contributes exactly $\deg v$ such pairs and each edge contributes exactly two, one for each of its ends, so the two counts are equal; no loop occurs, which is why every edge contributes two and not one. $\square$</p>
+<p><strong>Corollary.</strong> In every finite graph the number of vertices of odd degree is even.</p>
+<p><em>Proof.</em> The sum $\sum_v \deg v = 2|E(\Gamma)|$ is even, and it is congruent modulo $2$ to the number of odd-degree vertices. $\square$</p>
+<p><strong>Corollary.</strong> Every $d$-regular finite graph satisfies $d\,|V(\Gamma)| = 2|E(\Gamma)|$, so $d|V(\Gamma)|$ is even. In particular, there is no $d$-regular finite graph on $n$ vertices when $d$ and $n$ are both odd.</p>
+<h2 id="paths-cycles-and-connectedness">Paths, Cycles and Connectedness</h2>
+<h3 id="walks-paths-and-cycles">Walks, Paths and Cycles</h3>
+<p><strong>Definition.</strong> A <strong>walk</strong> in $\Gamma$ from $u$ to $v$ is a finite sequence $v_0, v_1, \ldots, v_k$ with $v_0 = u$, $v_k = v$ and $v_i \sim v_{i+1}$ for each $i$; its <strong>length</strong> is $k$, the number of edges traversed, and $u$ and $v$ are its <strong>endpoints</strong>. A walk is <strong>closed</strong> if $u = v$; a <strong>path</strong> is a walk with all vertices distinct; a <strong>cycle</strong> is a closed walk of length at least three with $v_0, \ldots, v_{k-1}$ distinct. A graph is <strong>acyclic</strong> if it contains no cycle. The <strong>girth</strong> $\operatorname{gir}\Gamma$ of a graph with a cycle is the least length of a cycle, and $\operatorname{gir}\Gamma = \infty$ if the graph is acyclic.</p>
+<p><strong>Proposition.</strong> If there is a walk from $u$ to $v$, there is a path from $u$ to $v$.</p>
+<p><em>Proof.</em> Choose a walk of least length among those from $u$ to $v$. If two of its vertices coincided, say $v_i = v_j$ with $i < j$, deleting the segment $v_{i+1}, \ldots, v_j$ would produce a shorter walk from $u$ to $v$, a contradiction; hence all vertices are distinct and the walk is a path. $\square$</p>
+<p><strong>Example.</strong> The girth of $C_n$ is $n$, of $K_n$ is $3$ for $n \geq 3$, and of $K_{m,n}$ is $4$ when $m, n \geq 2$. A graph with girth $\infty$ is exactly an acyclic graph.</p>
+<h3 id="connectedness-and-components">Connectedness and Components</h3>
+<p><strong>Definition.</strong> Two vertices $u$ and $v$ are <strong>connected</strong> if there is a path from $u$ to $v$; equivalently, by the proposition above, if there is a walk from $u$ to $v$. The graph is <strong>connected</strong> if every two vertices are connected, and a <strong>component</strong> is an equivalence class of the relation of being connected.</p>
+<p><strong>Theorem.</strong> The relation "$u$ is connected to $v$" is an equivalence relation on $V(\Gamma)$.</p>
+<p><em>Proof.</em> The one-vertex walk $v_0 = v$ is a path of length zero, so the relation is reflexive; reversing a path gives a path in the opposite direction, so it is symmetric; and concatenating a walk from $u$ to $v$ with a walk from $v$ to $w$ gives a walk from $u$ to $w$, so it is transitive. $\square$</p>
+<p><strong>Corollary.</strong> The components partition $V(\Gamma)$, and a graph is connected if and only if it has exactly one component. Writing $c(\Gamma)$ for the number of components and $\Gamma_1, \ldots, \Gamma_{c}$ for the components, every edge lies within one $\Gamma_i$, so $E(\Gamma)$ is the disjoint union of the edge sets $E(\Gamma_i)$.</p>
+<p><strong>Lemma (edge lower bound).</strong> Every connected finite graph on $n$ vertices has at least $n-1$ edges.</p>
+<p><em>Proof.</em> Induct on $n$; the case $n = 1$ is vacuous. Let $v$ be a vertex and let $\Gamma_1, \ldots, \Gamma_k$ be the components of $\Gamma - v$, of orders $n_1, \ldots, n_k$ with $n_1 + \cdots + n_k = n-1$. By induction $|E(\Gamma_i)| \geq n_i - 1$, so $|E(\Gamma-v)| \geq (n-1) - k$. Each $\Gamma_i$ contains a neighbour of $v$: otherwise no edge of $\Gamma$ would join $\Gamma_i$ to $v$ or to any $\Gamma_j$, and $\Gamma$ would be disconnected. Hence $\deg v \geq k$, and</p>
+<p>$$
+|E(\Gamma)| \geq (n-1-k) + k = n-1. \qquad \square
+$$</p>
+<p><strong>Corollary.</strong> For every finite graph $\Gamma$, $|E(\Gamma)| \geq n - c(\Gamma)$.</p>
+<p><em>Proof.</em> Apply the lemma to each component and add. $\square$</p>
+<p><strong>Lemma (edge count of a forest).</strong> Every finite acyclic graph with $n$ vertices, $m$ edges and $c$ components satisfies $m = n - c$.</p>
+<p><em>Proof.</em> Induct on $m$. If $m = 0$ then $c = n$ and both sides are zero. Otherwise choose an edge $e = uv$. Since the graph is acyclic, $e$ is the unique path in it from $u$ to $v$: a second path together with $e$ would form a cycle. Removing $e$ therefore separates $u$ from $v$ and leaves every other pair of vertices joined as before, so the graph with $e$ removed has $n$ vertices, $m-1$ edges and $c+1$ components, and is still acyclic. By induction $m - 1 = n - (c+1)$, so $m = n-c$. $\square$</p>
+<p><strong>Corollary.</strong> A tree on $n$ vertices has exactly $n-1$ edges.</p>
+<h3 id="the-graph-distance">The Graph Distance</h3>
+<p><strong>Definition.</strong> Let $\Gamma$ be connected. The <strong>distance</strong> between $u$ and $v$ is the least length of a path from $u$ to $v$,</p>
+<p>$$
+d(u,v) = \min\{k : \text{there is a path of length } k \text{ from } u \text{ to } v\},
+$$</p>
+<p>which exists by connectedness and is attained because the set of admissible lengths is a nonempty subset of the nonnegative integers. For a disconnected graph the distance is defined between vertices in the same component and taken to be $\infty$ between different components.</p>
+<p><strong>Theorem.</strong> On each component of a graph, $d$ is a metric: $d(u,v) \geq 0$ with equality if and only if $u = v$; $d(u,v) = d(v,u)$; and $d(u,w) \leq d(u,v) + d(v,w)$.</p>
+<p><em>Proof.</em> The distance is a nonnegative integer, and $d(u,v) = 0$ says there is a path of length zero, which is a path whose only vertex is both $u$ and $v$, so $u = v$. Symmetry is the reversal of paths. For the triangle inequality, concatenate a shortest path from $u$ to $v$ with a shortest path from $v$ to $w$; the result is a walk from $u$ to $w$ of length $d(u,v) + d(v,w)$, and a shortest path is no longer than any walk, so $d(u,w) \leq d(u,v) + d(v,w)$. $\square$</p>
+<p><strong>Remark.</strong> This is the distance of <em>Metric, Uniform and Complete Spaces</em> applied to the graph, and it is the sense in which a graph is a metric space. A vertex and the graph are the only objects of the article; the metric language is inherited, and nothing topological beyond the metric — no compactness, no continuity of an invariant — is used in what follows.</p>
+<p><strong>Definition.</strong> Let $\Gamma$ be a finite connected graph. The <strong>eccentricity</strong> of $v$ is $\operatorname{ecc}(v) = \max_{u \in V(\Gamma)} d(v,u)$; the <strong>diameter</strong> is the greatest distance,</p>
+<p>$$
+\operatorname{diam}\Gamma = \max_{u,v \in V(\Gamma)} d(u,v) = \max_{v} \operatorname{ecc}(v),
+$$</p>
+<p>and the <strong>radius</strong> is the least eccentricity, $\operatorname{rad}\Gamma = \min_v \operatorname{ecc}(v)$. A <strong>centre</strong> of $\Gamma$ is a vertex attaining the radius, and a finite connected graph has one because its finite set of eccentricities has a minimum. For an infinite connected graph the two maxima become suprema, which may be infinite, and no centre need exist: on the integer line of the growth example below every eccentricity is infinite. The <strong>diameter of a disconnected graph</strong> is infinite if one insists on a single value for all pairs, and is defined componentwise otherwise.</p>
+<p><strong>Proposition.</strong> For every finite connected graph, $\operatorname{rad}\Gamma \leq \operatorname{diam}\Gamma \leq 2\operatorname{rad}\Gamma$.</p>
+<p><em>Proof.</em> The first inequality is immediate from the definitions. For the second, let $z$ be a centre and let $u, v$ be vertices with $d(u,v) = \operatorname{diam}\Gamma$. Two applications of the triangle inequality through $z$ give</p>
+<p>$$
+\operatorname{diam}\Gamma = d(u,v) \leq d(u,z) + d(z,v) \leq 2 \operatorname{ecc}(z) = 2\operatorname{rad}\Gamma. \qquad \square
+$$</p>
+<p><strong>Proposition.</strong> A connected graph is finite if and only if it is locally finite and of finite diameter.</p>
+<p><em>Proof.</em> A finite graph is locally finite and of finite diameter. Conversely let $\Gamma$ be connected, locally finite and of finite diameter $D$, and fix a vertex $v$. By induction on $r$ the set of vertices at distance at most $r$ from $v$ is finite: for $r = 0$ it is $\{v\}$, and at each step it is enlarged by the neighbour sets of its finitely many vertices, each of them finite by local finiteness. The set of vertices at distance at most $D$ is therefore finite, and it is all of $V(\Gamma)$ because no distance exceeds $D$. $\square$</p>
+<p><strong>Example.</strong> $\operatorname{diam} K_n = 1$ for $n \geq 2$, $\operatorname{diam} P_n = n-1$, $\operatorname{diam} C_n = \lfloor n/2 \rfloor$, $\operatorname{diam} K_{1,1} = 1$, and $\operatorname{diam} K_{m,n} = 2$ for $m+n \geq 3$. In the cycle, a vertex has exactly one vertex at distance $\lfloor n/2\rfloor$ from it when $n$ is even and exactly two when $n$ is odd.</p>
+<h3 id="geodesics-and-the-geodesic-property">Geodesics and the Geodesic Property</h3>
+<p><strong>Definition.</strong> A <strong>geodesic</strong> from $u$ to $v$ is a path of length $d(u,v)$; a metric space is <strong>geodesic</strong> if every two of its points are joined by a geodesic. A shortest path, rather than any path, is a geodesic, and a graph can have several geodesics between the same pair.</p>
+<p><strong>Proposition.</strong> A connected graph, with its distance, is a geodesic metric space.</p>
+<p><em>Proof.</em> Let $u \neq v$ and let $k = d(u,v)$. By the definition of the distance as a minimum over a nonempty set of path lengths, there is a path of length $k$ from $u$ to $v$, and this path is a geodesic by definition. $\square$</p>
+<p><strong>Definition.</strong> A graph is <strong>geodesic</strong> if it is connected and every pair of vertices is joined by a geodesic; by the proposition every connected graph is geodesic. The metric space of a Cayley graph, constructed in <em>Topology on Groups</em>, is read through this property, and the choice of the geodesic is what carries the information there.</p>
+<p><strong>Remark (uniqueness).</strong> A geodesic between two vertices of a graph need not be unique, and the failure of uniqueness is measured by the number of shortest paths. In the cycle $C_n$ two distinct vertices at distance $k$ with $2k < n$ are joined by exactly two geodesics, one in each direction; in the complete graph $K_n$ with $n \geq 3$ the two ends of an edge are joined by a unique geodesic, while a non-adjacent pair is joined by one geodesic of length two through each of the $n-2$ remaining vertices.</p>
+<h2 id="trees-and-forests">Trees and Forests</h2>
+<h3 id="definitions">Definitions</h3>
+<p><strong>Definition.</strong> A <strong>forest</strong> is an acyclic graph, and a <strong>tree</strong> is a connected forest. A <strong>leaf</strong> of a tree is a vertex of degree one, and a tree is <strong>trivial</strong> if it has one vertex and no edges. A <strong>spanning tree</strong> of a connected graph $\Gamma$ is a spanning subgraph that is a tree. The components of a forest are trees.</p>
+<p><strong>Proposition.</strong> Every tree with at least two vertices has at least two leaves.</p>
+<p><em>Proof.</em> Let $P = v_0, \ldots, v_k$ be a longest path in the tree, so that all its vertices are distinct. Then $v_0$ has no neighbour outside $P$ by maximality of the length, and its only neighbour in $P$ is $v_1$ by distinctness, so $\deg v_0 = 1$; the same argument applies to $v_k$. $\square$</p>
+<h3 id="characterisations-of-a-tree">Characterisations of a Tree</h3>
+<p><strong>Theorem.</strong> Let $\Gamma$ be a finite graph with $n \geq 1$ vertices. The following are equivalent:</p>
+<p><strong>(a)</strong> $\Gamma$ is a tree;</p>
+<p><strong>(b)</strong> any two vertices of $\Gamma$ are joined by exactly one path;</p>
+<p><strong>(c)</strong> $\Gamma$ is connected and $|E(\Gamma)| = n-1$;</p>
+<p><strong>(d)</strong> $\Gamma$ is acyclic and $|E(\Gamma)| = n-1$;</p>
+<p><strong>(e)</strong> $\Gamma$ is acyclic, and adding any edge between two non-adjacent vertices creates a cycle;</p>
+<p><strong>(f)</strong> $\Gamma$ is connected, and deleting any edge disconnects it.</p>
+<p><em>Proof.</em> (a) $\Rightarrow$ (b): connectedness gives at least one path. Two distinct paths from $u$ to $v$ would contain a cycle: traversing the first path and then the reverse of the second, the first place at which the two paths separate and the next place at which they meet bound a closed walk with distinct interior vertices, hence a cycle. This contradicts acyclicity.</p>
+<p>(b) $\Rightarrow$ (c): $\Gamma$ is connected by hypothesis, and (b) implies acyclicity, since two distinct paths between the same pair of vertices would contradict the uniqueness. Hence $\Gamma$ is a tree. Induct on $n$; the case $n = 1$ is immediate. For $n \geq 2$ the tree has a leaf $x$ by the proposition above. The graph $\Gamma - x$ satisfies (b): a path in $\Gamma$ between two vertices of $\Gamma - x$ cannot pass through $x$, since $x$ has degree one and a path entering $x$ along its only incident edge could not leave. Hence by induction $|E(\Gamma-x)| = (n-1)-1 = n-2$, and $|E(\Gamma)| = n-1$ because $x$ has exactly one incident edge.</p>
+<p>(c) $\Rightarrow$ (d): it suffices to show acyclicity. If $\Gamma$ contained a cycle, deleting an edge of that cycle would leave a connected spanning subgraph with $n-2$ edges, contradicting the edge lower bound of a connected graph on $n$ vertices. Hence $\Gamma$ is acyclic.</p>
+<p>(d) $\Rightarrow$ (e): the edge count of a forest gives $n - c(\Gamma) = |E(\Gamma)| = n-1$, so $c(\Gamma) = 1$ and $\Gamma$ is connected; by (a) $\Rightarrow$ (b) any two vertices are joined by a unique path. Now let $u$ and $v$ be non-adjacent; they lie in the one component, so a path joins them, and that path together with the added edge $uv$ is a cycle.</p>
+<p>(e) $\Rightarrow$ (f): first, $\Gamma$ is connected: if $u$ and $v$ lay in different components, the edge $uv$ could be added between two non-adjacent vertices and would create no cycle, since no path joins $u$ to $v$. So $\Gamma$ is acyclic and connected, hence a tree, and deleting an edge of a tree disconnects it: the edge is the unique path between its ends, and any path in $\Gamma - e$ between them would be a second such path, hence would close a cycle in $\Gamma$.</p>
+<p>(f) $\Rightarrow$ (a): the graph is connected, so it remains to show acyclicity. If $\Gamma$ contained a cycle, deleting an edge of that cycle would leave $\Gamma$ connected, since the cycle provides an alternative route between its ends, contradicting (f). $\square$</p>
+<p><strong>Theorem (Cayley).</strong> The number of labelled trees on $n \geq 2$ vertices is $n^{n-2}$.</p>
+<p><em>Proof sketch.</em> A <strong>Prüfer sequence</strong> of a labelled tree on $\{1, \ldots, n\}$ is obtained by repeatedly deleting the smallest leaf and recording its unique neighbour, until two vertices remain: this produces a sequence of $n-2$ elements of $\{1,\ldots,n\}$. Conversely, given a sequence $(a_1, \ldots, a_{n-2})$, let $d_i = 1 + |\{j : a_j = i\}|$; the smallest $x$ with $d_x = 1$ is the first vertex deleted, it is joined to $a_1$, and the counts are updated by lowering $d_x$ and $d_{a_1}$; repeating recovers the tree. The two constructions are inverse to one another, so the number of labelled trees on $n$ vertices is the number of sequences of length $n-2$ in an $n$-element set, namely $n^{n-2}$. $\square$</p>
+<p><strong>Remark.</strong> The values of $n^{n-2}$ for $n = 2, 3, 4, 5$ are $1, 3, 16, 125$, and they agree with the direct enumeration of the labelled trees on those few vertices; the number of unlabelled trees on $n$ vertices grows far more slowly and has no comparable closed form.</p>
+<h3 id="spanning-trees">Spanning Trees</h3>
+<p><strong>Theorem.</strong> Every finite connected graph contains a spanning tree.</p>
+<p><em>Proof.</em> Let $\Lambda$ be a spanning subgraph of $\Gamma$ that is connected and has as few edges as possible; such a $\Lambda$ exists because $\Gamma$ itself is a connected spanning subgraph and $\Gamma$ is finite. If $\Lambda$ contained a cycle, deleting an edge of that cycle would keep $\Lambda$ connected, by the same argument as in the characterisation above, contradicting minimality; hence $\Lambda$ is acyclic, and a connected acyclic spanning subgraph is a spanning tree. $\square$</p>
+<p><strong>Corollary.</strong> A connected graph on $n$ vertices has at least $n-1$ edges, with equality exactly for the trees.</p>
+<p><strong>Remark.</strong> The number of spanning trees of a graph is an invariant of considerable interest; for the complete graph $K_n$ it is $n^{n-2}$ by Cayley's theorem, and for a general graph it is given by the matrix-tree theorem, as a determinant of a matrix built from the graph, which belongs to the linear-algebraic layer of Part I and is not used here.</p>
+<h3 id="the-metric-structure-of-a-tree">The Metric Structure of a Tree</h3>
+<p><strong>Proposition.</strong> In a tree, the geodesic between two vertices is unique: for any two vertices $u$ and $v$, the path of part (b) of the characterisation theorem is the unique path of length $d(u,v)$.</p>
+<p><em>Proof.</em> Part (b) gives uniqueness among all paths, and a geodesic is a path. $\square$</p>
+<p><strong>Proposition (four-point condition for trees).</strong> Let $T$ be a tree with distance $d$. For any four vertices $x_1, x_2, x_3, x_4$, of the three sums</p>
+<p>$$
+s_{12|34} = d(x_1,x_2)+d(x_3,x_4), \quad
+s_{13|24} = d(x_1,x_3)+d(x_2,x_4), \quad
+s_{14|23} = d(x_1,x_4)+d(x_2,x_3),
+$$</p>
+<p>the two largest are equal.</p>
+<p><em>Proof.</em> Let $S$ be the minimal subtree spanning $x_1,x_2,x_3,x_4$. If there is a vertex $m$ of $S$ whose removal leaves the four points in four distinct components, put $r_i = d(m,x_i)$; then $m$ lies on the path $x_ix_j$ for every pair, so $d(x_i,x_j) = r_i + r_j$ and all three sums equal $r_1+r_2+r_3+r_4$. Otherwise there is an edge $uv$ of $S$ whose removal separates the four points into two pairs, and after relabelling $x_1,x_2$ lie on the $u$-side and $x_3,x_4$ on the $v$-side. Put $a_i = d(x_i,u)$ for $i = 1,2$, $b_j = d(x_j,v)$ for $j = 3,4$ and $L = d(u,v) \geq 1$; then $d(x_1,x_2) = a_1+a_2$, $d(x_3,x_4) = b_3+b_4$ and $d(x_i,x_j) = a_i + L + b_j$ for $i \leq 2 < j$. Hence</p>
+<p>$$
+s_{12|34} = a_1+a_2+b_3+b_4, \qquad s_{13|24} = s_{14|23} = a_1+a_2+b_3+b_4+2L,
+$$</p>
+<p>so the two largest of the three sums are equal. $\square$</p>
+<p><strong>Remark.</strong> The four-point condition characterises, among metrics, those that embed isometrically in a tree. The two cases of the proof are the two shapes of the minimal subtree: a star, where all three sums are equal, and a pair of cherries joined by an edge, where the sum pairing the cherries is strictly the smallest and the other two coincide. The condition is the metric shadow of the acyclicity of the tree, and it is the form in which a tree metric is recognised when only the distances are given.</p>
+<h3 id="balls-spheres-and-growth">Balls, Spheres and Growth</h3>
+<p><strong>Definition.</strong> For a vertex $v$ of a connected graph and an integer $r \geq 0$, the <strong>ball</strong> of radius $r$ is $B(v,r) = \{u : d(v,u) \leq r\}$ and the <strong>sphere</strong> is $S(v,r) = \{u : d(v,u) = r\}$, so that $B(v,r)$ is the disjoint union of $S(v,0), \ldots, S(v,r)$. The <strong>growth function</strong> of $\Gamma$ at $v$ is $r \mapsto |B(v,r)|$, and $\Gamma$ has <strong>exponential growth</strong> if there are constants $C > 0$ and $\lambda > 1$ with $|B(v,r)| \geq C\lambda^r$ for all $r$, and <strong>polynomial growth of degree at most $q$</strong> if $|B(v,r)| \leq C r^q$ for all $r$. A locally finite graph has finite balls, so the function is finite-valued.</p>
+<p><strong>Proposition.</strong> Let $T_d$ be the infinite $(d+1)$-regular tree with $d \geq 1$. Then for every vertex $v$, $|S(v,0)| = 1$, $|S(v,1)| = d+1$, and $|S(v,r)| = (d+1)d^{r-1}$ for $r \geq 1$. Consequently $|B(v,r)| = 1 + (d+1)\dfrac{d^r-1}{d-1}$ for $d \geq 2$, and $T_d$ has exponential growth.</p>
+<p><em>Proof.</em> In a tree a vertex of $S(v,r)$ with $r \geq 1$ has exactly one neighbour at distance $r-1$ from $v$, namely its predecessor on the unique path to $v$, and the neighbours at distance $r$ of distinct vertices of $S(v,r-1)$ are distinct, since a common successor of two of them would give two paths from that successor to $v$. Hence $S(v,r)$ is in bijection with the set of pairs consisting of a vertex of $S(v,r-1)$ and one of its $d$ neighbours at distance $r$: each vertex of $S(v,r-1)$ has, for $r \geq 2$, exactly one neighbour in $S(v,r-2)$ and $d+1$ neighbours in all, so exactly $d$ of them lie in $S(v,r)$. Summing the geometric series gives the ball count, and it exceeds $d^{r}$ up to a constant, so the growth is exponential. $\square$</p>
+<p><strong>Example (the number systems as graphs).</strong> The integer line $\mathbb{Z}$ with edges $\{i, i+1\}$ is the infinite $2$-regular tree and has $|B(v,r)| = 2r+1$, so it has polynomial growth of degree one. A cycle has bounded balls, since its diameter is finite, and a finite graph has polynomial growth of degree zero: its ball of radius at least the diameter is the whole vertex set. The exponential growth of the regular tree is the property that the group-theoretic articles read on the Cayley graph of a free group, which is that tree; the construction belongs to <em>Topology on Groups</em>.</p>
+<h2 id="bipartite-graphs-matchings-and-colourings">Bipartite Graphs, Matchings and Colourings</h2>
+<h3 id="bipartite-graphs">Bipartite Graphs</h3>
+<p><strong>Definition.</strong> A graph $\Gamma$ is <strong>bipartite</strong> if $V(\Gamma)$ admits a partition $V(\Gamma) = X \sqcup Y$ such that every edge has one end in $X$ and the other in $Y$; the pair $(X,Y)$ is a <strong>bipartition</strong>. A bipartite graph with a fixed bipartition is written $\Gamma = (X \sqcup Y, E(\Gamma))$. The graph is <strong>complete bipartite</strong> if every $x \in X$ and $y \in Y$ are adjacent, which is the graph $K_{|X|,|Y|}$ of the standard families.</p>
+<p><strong>Theorem.</strong> A graph is bipartite if and only if it contains no cycle of odd length.</p>
+<p><em>Proof.</em> Suppose $(X,Y)$ is a bipartition. Along a closed walk the sides $X$ and $Y$ alternate, so the walk has even length; hence every cycle, being a closed walk, has even length.</p>
+<p>Conversely, assume every cycle is even and define a colouring by fixing a vertex $v$ in each component and setting $\chi(u) = d(v,u) \bmod 2$. Adjacent vertices have distances from $v$ differing by at most one. If the colouring failed to be proper there would be an edge $uw$ with $d(v,u)$ and $d(v,w)$ of the same parity; then a geodesic from $v$ to $u$ and a geodesic from $v$ to $w$, followed by the edge $wu$, form a closed walk of length $d(v,u)+d(v,w)+1$, which is odd, and a closed walk of odd length contains a cycle of odd length, since it decomposes into cycles whose lengths sum to its own length. This contradicts the hypothesis; hence the colouring is proper, and the two colour classes form a bipartition. $\square$</p>
+<p><strong>Corollary.</strong> Every forest is bipartite, and every tree is bipartite.</p>
+<h3 id="matchings-and-halls-theorem">Matchings and Hall's Theorem</h3>
+<p><strong>Definition.</strong> A <strong>matching</strong> in $\Gamma$ is a set of pairwise disjoint edges, that is, a set $\mathcal{M} \subseteq E(\Gamma)$ no two of whose members share an end. A matching is <strong>maximum</strong> if it has the greatest possible size, <strong>saturates</strong> a set $Z \subseteq V(\Gamma)$ when every vertex of $Z$ is an end of a member of $\mathcal{M}$, and <strong>perfect</strong> if it saturates $V(\Gamma)$. In a bipartite graph $\Gamma = (X \sqcup Y, E(\Gamma))$ and a set $S \subseteq X$, the <strong>neighbourhood</strong> is $N(S) = \{y \in Y : xy \in E(\Gamma) \text{ for some } x \in S\}$.</p>
+<p><strong>Theorem (Hall).</strong> Let $\Gamma = (X \sqcup Y, E(\Gamma))$ be a finite bipartite graph. There is a matching saturating $X$ if and only if $|N(S)| \geq |S|$ for every $S \subseteq X$.</p>
+<p><em>Proof.</em> If a matching saturating $X$ exists, its edges inject $S$ into $N(S)$ for every $S \subseteq X$, so $|N(S)| \geq |S|$.</p>
+<p>For the converse, argue by induction on $|X|$, the case $X = \emptyset$ being vacuous. If some nonempty proper $S \subsetneq X$ satisfies $|N(S)| = |S|$, then $\Gamma[S \cup N(S)]$ has a matching saturating $S$ by induction, and the remaining graph on $(X \setminus S) \cup (Y \setminus N(S))$ satisfies Hall's condition: if $T \subseteq X \setminus S$ had $|N(T)| < |T|$, then $N(S \cup T) \subseteq N(S) \cup N(T)$ and $|N(S \cup T)| \leq |S| + |N(T)| < |S| + |T| = |S \cup T|$, a violation on $S \cup T$. Induction applies to both parts, and their matchings combine. If no such $S$ exists, then $|N(S)| > |S|$ for every nonempty proper $S$. Choose $a \in X$ and $b \in N(\{a\})$, and remove $a$ and $b$; Hall's condition persists on $X \setminus \{a\}$: for $T \subseteq X \setminus \{a\}$, the set $T$ is a proper subset of $X$, so $|N_\Gamma(T)| > |T|$ and hence $|N_{\Gamma-\{a,b\}}(T)| \geq |N_\Gamma(T)| - 1 \geq |T|$. Induction gives a matching saturating $X \setminus \{a\}$ in the smaller graph, and adjoining the edge $ab$ saturates $X$. $\square$</p>
+<p><strong>Corollary.</strong> Every $d$-regular bipartite graph with $d \geq 1$ has a perfect matching.</p>
+<p><em>Proof.</em> For $S \subseteq X$, count the edges between $S$ and $N(S)$: there are $d|S|$ of them, and each vertex of $N(S)$ is incident with at most $d$ of them, so $d|S| \leq d|N(S)|$ and $|N(S)| \geq |S|$. Hall gives a matching saturating $X$, and the same argument with the roles of $X$ and $Y$ exchanged gives one saturating $Y$; $d$-regularity forces $d|X| = |E(\Gamma)| = d|Y|$, so $|X| = |Y|$ and a matching saturating $X$ is perfect. $\square$</p>
+<p><strong>Example.</strong> In the complete bipartite graph $K_{m,n}$ every nonempty subset of the $m$-side has the whole $n$-side as its neighbourhood, so Hall's condition holds exactly when $m \leq n$ and the matching is an injection; in the cycle $C_{2k}$ the two sides alternate along the cycle, and a subset of one side that is a union of consecutive blocks has a neighbourhood one vertex larger.</p>
+<h3 id="colourings">Colourings</h3>
+<p><strong>Definition.</strong> A <strong>proper $k$-colouring</strong> of $\Gamma$ is a map $\chi : V(\Gamma) \to \{1, \ldots, k\}$ with $\chi(u) \neq \chi(v)$ whenever $u \sim v$; the <strong>chromatic number</strong> $\chi(\Gamma)$ is the least $k$ for which a proper $k$-colouring exists, and $\Gamma$ is <strong>$k$-colourable</strong> if $\chi(\Gamma) \leq k$. A bipartite graph is exactly a graph with $\chi(\Gamma) \leq 2$, by the theorem above.</p>
+<p><strong>Proposition.</strong> For every finite graph, $\chi(\Gamma) \leq \Delta(\Gamma) + 1$.</p>
+<p><em>Proof.</em> Colour the vertices one at a time in any order. A vertex has at most $\Delta(\Gamma)$ neighbours, so among $\Delta(\Gamma)+1$ colours at least one is unused by its already coloured neighbours; assign it that colour. Every edge is properly coloured when its second end is assigned, and so at the end. $\square$</p>
+<p><strong>Theorem (König's edge-colouring theorem).</strong> Every finite bipartite graph has a proper edge colouring with $\Delta(\Gamma)$ colours, where edges with a common end receive distinct colours.</p>
+<p><em>Proof sketch.</em> Decompose a $d$-regular bipartite graph into $d$ perfect matchings by iterating the corollary above, and reduce a general bipartite graph to a regular one by adjoining a suitable number of vertices and edges; each perfect matching is one colour class, so $\Delta(\Gamma)$ colours suffice, and the lower bound is $\Delta(\Gamma)$ because the edges at a vertex of maximum degree are pairwise adjacent. $\square$</p>
+<p><strong>Remark.</strong> The two fundamental bounds are sharp in the expected places: $\chi(K_n) = n = \Delta(K_n)+1$ attains the greedy bound, and for a cycle $\chi(C_n) = 2$ for even $n$ and $3$ for odd $n$, so the greedy bound is far from sharp there. The refinement of the greedy bound for connected graphs — Brooks' theorem, that $\chi(\Gamma) \leq \Delta(\Gamma)$ unless $\Gamma$ is complete or an odd cycle — is standard and is quoted here rather than proved.</p>
+<h2 id="graphs-with-additional-structure">Graphs with Additional Structure</h2>
+<h3 id="cayley-graphs">Cayley Graphs</h3>
+<p><strong>Definition (stated for the record; constructed in <em>Topology on Groups</em>, below).</strong> Let $G$ be a group and $S \subseteq G$ a generating set with $S = S^{-1}$ and $1 \notin S$. The <strong>Cayley graph</strong> $\operatorname{Cay}(G,S)$ has vertex set $G$ and an edge joining $g$ and $gs$ for every $g \in G$ and $s \in S$. Its graph distance from $1$ to $g$ is the <strong>word metric</strong> with respect to $S$, namely the least length of an expression of $g$ as a word in the elements of $S$, and its growth function at $1$ is the growth of $G$ with respect to $S$. The construction and the metric it carries belong and to the group-theoretic articles of <em>Topology on Groups</em>, both, where a group acts on the graph; only the graph and its distance, as defined here, are used there.</p>
+<p><strong>Example.</strong> The Cayley graph of $\mathbb{Z}$ with $S = \{\pm 1\}$ is the integer line of the growth example, and the Cayley graph of the free group $F_d$ on $d$ generators with respect to the symmetric generating set is the infinite $2d$-regular tree $T_{2d-1}$. This is the point at which the combinatorial material of this article is consumed by the group-theoretic articles, and it is the reason the graph distance is defined here rather than there.</p>
+<h3 id="the-dynkin-diagrams-as-graphs">The Dynkin Diagrams as Graphs</h3>
+<p>The classification of <em>Root Systems and Classification</em> attaches to an irreducible reduced root system a <strong>Dynkin diagram</strong>: the graph whose vertices are the simple roots, with $a_{ij}a_{ji}$ edges between the vertices $i$ and $j$ and an arrow on a double or triple edge from the longer root to the shorter one. The diagram is defined there as a graph, and the graph-theoretic reading of it is useful here.</p>
+<p><strong>Proposition.</strong> The underlying graph of a connected Dynkin diagram of finite type is a tree, hence bipartite; it has at most one double or triple edge, and removing the arrow and suppressing multiple edges makes it simply laced, that is, a graph all of whose edges are single.</p>
+<p><em>Proof.</em> The diagram is connected and finite. The constraints on a connected diagram of finite type — no cycles, no vertex of degree at least four, and a subdiagram argument for multiple edges — are exactly the exclusions proved in the classification of <em>Root Systems and Classification</em>, and they say that the underlying graph is a tree. A tree is bipartite by the corollary above. The second claim is the corresponding constraint on the number of double and triple edges, also part of the same classification; on contracting the multiple edges to single ones the result is a graph with the same connected tree structure and no multiple edges. $\square$</p>
+<p><strong>Example.</strong> The diagram $A_n$ is the path $P_n$, the diagram $D_n$ is the tree obtained from $P_{n-2}$ by attaching two leaves at an end, and the exceptional diagrams $E_6, E_7, E_8$ are the trees drawn in <em>Root Systems and Classification</em>. The diagrams $B_n$, $C_n$ and $F_4$ carry a double edge and $G_2$ a triple edge, so they are not simply laced; the simply-laced types are exactly $A_n, D_n, E_6, E_7, E_8$. The affine Dynkin diagrams, whose underlying graphs may contain a cycle and are the Coxeter diagrams of the affine Coxeter groups, are treated in <em>Coxeter Groups</em>, where the Coxeter matrix is the defining datum.</p>
+<p><strong>Remark.</strong> The Dynkin diagram is the graph-theoretic shadow of the root system: its connectedness is the irreducibility of the root system, its bipartite colouring is the parity of the roots' expression in the simple roots, and its automorphism group is the group of diagram automorphisms appearing in the classification of the finite simple groups of Lie type of <em>Finite Simple Groups of Lie Type</em>. No algebra is used here beyond what the citation of <em>Root Systems and Classification</em> supplies; the graph-theoretic facts used are the proposition above and the characterisation of trees.</p>
+<h2 id="summary">Summary</h2>
+<p>A graph is a set with a symmetric irreflexive relation, and a morphism is a map preserving the relation; subgraphs are obtained by deletion, induced subgraphs by deleting vertices only. The degree sequence obeys the handshake lemma $\sum_v \deg v = 2|E(\Gamma)|$, and the relation "joined by a walk" is an equivalence relation whose classes are the components. In a connected graph the least path length is a metric, the graph distance $d(u,v)$; it makes the graph a geodesic metric space and gives the eccentricity, the diameter, the radius and the centre, with $\operatorname{rad}\Gamma \leq \operatorname{diam}\Gamma \leq 2\operatorname{rad}\Gamma$. A tree is a connected acyclic graph, characterised equivalently by uniqueness of paths, by connectivity together with $|E(\Gamma)| = |V(\Gamma)|-1$, by acyclicity together with $|E(\Gamma)| = |V(\Gamma)|-1$, and by the extremality properties of adding and deleting edges; every finite connected graph has a spanning tree, and the labelled trees on $n$ vertices number $n^{n-2}$. In a tree the geodesic is unique and the tree metric satisfies the four-point condition. Balls and spheres define the growth function, linear on $\mathbb{Z}$ and exponential on the regular tree. Bipartite graphs are exactly the graphs without an odd cycle; matchings are governed by Hall's theorem and, in the regular bipartite case, by the existence of perfect matchings; colourings begin with the greedy bound $\chi(\Gamma) \leq \Delta(\Gamma)+1$. The graph distance is the structure that <em>Topology on Groups</em> attaches to a group through the Cayley graph, and the Dynkin diagrams of <em>Root Systems and Classification</em> are read here as trees.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Gamma$</td>
+<td>A graph, with vertex set $V(\Gamma)$ and edge set $E(\Gamma)$</td>
+</tr>
+<tr>
+<td>$n = |V(\Gamma)|$, $m = |E(\Gamma)|$</td>
+<td>Order and size of $\Gamma$</td>
+</tr>
+<tr>
+<td>$u \sim v$, $uv$</td>
+<td>Adjacency of $u$ and $v$, and the edge between them</td>
+</tr>
+<tr>
+<td>$D = (U,A)$</td>
+<td>Directed graph, with vertex set $U$ and arc set $A$</td>
+</tr>
+<tr>
+<td>$\Gamma[W]$</td>
+<td>Induced subgraph on $W \subseteq V(\Gamma)$</td>
+</tr>
+<tr>
+<td>$\deg v$, $\Delta(\Gamma)$, $\delta(\Gamma)$</td>
+<td>Degree, maximum degree, minimum degree</td>
+</tr>
+<tr>
+<td>$K_n$, $P_n$, $C_n$, $\overline{K_n}$, $K_{m,n}$</td>
+<td>Complete, path, cycle, empty and complete bipartite graphs</td>
+</tr>
+<tr>
+<td>$c(\Gamma)$</td>
+<td>Number of connected components</td>
+</tr>
+<tr>
+<td>$d(u,v)$</td>
+<td>Graph distance: fewest edges on a path from $u$ to $v$</td>
+</tr>
+<tr>
+<td>$\operatorname{ecc}(v)$, $\operatorname{diam}\Gamma$, $\operatorname{rad}\Gamma$</td>
+<td>Eccentricity, diameter, radius</td>
+</tr>
+<tr>
+<td>$\operatorname{gir}\Gamma$</td>
+<td>Girth: least length of a cycle, $\infty$ if acyclic</td>
+</tr>
+<tr>
+<td>$B(v,r)$, $S(v,r)$</td>
+<td>Ball and sphere of radius $r$ about $v$</td>
+</tr>
+<tr>
+<td>$T_d$</td>
+<td>The infinite $(d+1)$-regular tree</td>
+</tr>
+<tr>
+<td>$(X,Y)$, $N(S)$</td>
+<td>The two sides of a bipartition; neighbourhood of $S$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}$</td>
+<td>A matching: a set of pairwise disjoint edges</td>
+</tr>
+<tr>
+<td>$\chi(\Gamma)$</td>
+<td>Chromatic number</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\Gamma)$</td>
+<td>Automorphism group of $\Gamma$</td>
+</tr>
+<tr>
+<td>$\operatorname{Cay}(G,S)$</td>
+<td>Cayley graph of a group $G$; constructed in <em>Topology on Groups</em>, below</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Béla Bollobás, <em>Modern Graph Theory</em> (Springer, 1998), for connectivity, trees, matchings, colourings and the growth of graphs.</li>
+<li>Reinhard Diestel, <em>Graph Theory</em> (5th edition, Springer, 2017), for the characterisations of trees, Hall's theorem and the combinatorial treatment of connectivity.</li>
+<li>John Adrian Bondy and U. S. R. Murty, <em>Graph Theory</em> (Springer, 2008), for spanning trees, Prüfer sequences and Cayley's formula.</li>
+<li>Frank Harary, <em>Graph Theory</em> (Addison-Wesley, 1969), for the standard families, the diameter and radius relations and the centre of a graph.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras, Chapters 4–6</em> (Springer, 2002), for the Dynkin diagram as a graph and the constraints on its shape.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

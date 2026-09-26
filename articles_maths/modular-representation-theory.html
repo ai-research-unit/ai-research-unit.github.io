@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modular Representation Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="modular-representation-theory"><strong>Modular Representation Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $G$ be a finite group, let $p$ be a prime dividing $\lvert G\rvert$ and let $k$ be a field of characteristic $p$. Then the group algebra $k[G]$ is not semisimple: <strong>Maschke's theorem</strong> fails because the averaging of a projection involves the division by $\lvert G\rvert$, which is zero in $k$, and the representation theory of $G$ over $k$ is the theory of the finite-dimensional modules over a non-semisimple algebra. Its central objects are the <strong>Brauer characters</strong> — the traces of the actions of the elements of order prime to $p$, read in characteristic zero — the <strong>projective indecomposable modules</strong> and the <strong>Cartan matrix</strong> that records their composition factors, and the <strong>decomposition matrix</strong> that relates the ordinary characters of <em>Character Theory</em> to the modular ones.</p>
+<p>The article is the twenty-fourth of the corpus, in the category <em>Linear Spaces over Linear Algebras</em>, and it follows <em>Projective Representations</em>; it uses the character theory of the articles above it and the module theory of <em>Simple and Semisimple Modules</em> and <em>Morita Equivalence</em>, and its structural background is that the group algebra is a <strong>Frobenius algebra</strong> in the sense of the article of that name, whence the projectives and the injectives coincide. It develops the failure of semisimplicity and the structure of $k[G]$ as a self-injective algebra, the Brauer characters and the theorem of Brauer–Nesbitt on the number of simple modules, the decomposition matrix and the Cartan matrix with the identity $C = D^{\mathsf{T}}D$, the projective indecomposable modules and their composition factors, the framework of Brauer's theory with the induction of the modular characters, and the two completely computable examples: the symmetric group $S_3$ in characteristic $3$, whose decomposition and Cartan matrices are computed and verified, and the cyclic group of order $p$ in characteristic $p$, whose group algebra is a truncated polynomial algebra and whose indecomposable modules are classified.</p>
+<p>Two boundaries are kept. The <strong>block theory</strong> — the decomposition of $k[G]$ into its indecomposable two-sided ideals, the defect groups and the Brauer correspondence — is the subject of another article of this category and is referred to but not used here; the <strong>integral</strong> theory of the lattices over a discrete valuation ring, which underlies the reduction that defines the decomposition matrix, is the subject, the final article, and only the existence of an integral form is used here. The analytic theory of the modular forms and of the $p$-adic completions of the character fields belongs to Part III.</p>
+<p>Throughout, $G$ is a finite group, $p$ a prime dividing $\lvert G\rvert$, $k$ an algebraically closed field of characteristic $p$, $k[G]$ the group algebra, $\operatorname{rad}$ the Jacobson radical, $S_1,\dots,S_r$ the simple $k[G]$-modules and $P_i$ the projective cover of $S_i$, also called the <strong>projective indecomposable</strong> module; $p$-regular elements are the elements of order prime to $p$, $\varphi_i$ are the Brauer characters, $D = (d_{\chi j})$ is the decomposition matrix, $C = (c_{ij})$ is the Cartan matrix, and $\chi$ runs over the ordinary irreducible characters of <em>Character Theory</em>, restricted to the $p$-regular elements.</p>
+<h2 id="the-group-algebra-in-positive-characteristic">The Group Algebra in Positive Characteristic</h2>
+<p><strong>Proposition.</strong> Let $k$ be a field of characteristic $p$ dividing $\lvert G\rvert$. Then:</p>
+<ol>
+<li>the group algebra $k[G]$ is a <strong>symmetric algebra</strong> with the trace form $T(\sum a_gg) = a_1$, in the sense of <em>Frobenius Algebras</em>; it is therefore self-injective, and a $k[G]$-module is projective if and only if it is injective;</li>
+<li>$k[G]$ is a finite-dimensional $k$-algebra, and the Krull–Schmidt theorem holds: every module is a direct sum of indecomposable modules with the summands unique up to isomorphism and order;</li>
+<li>the simple $k[G]$-modules are the simple modules of the semisimple quotient $k[G]/\operatorname{rad}k[G]$, the radical being the largest nilpotent two-sided ideal, and the number $r$ of the simple modules is at most the number of conjugacy classes of $G$, with equality only when $p$ does not divide $\lvert G\rvert$;</li>
+<li>the module $k[G]$ decomposes as $k[G]\cong\bigoplus_{i=1}^rP_i^{\oplus\dim_kS_i}$, where $P_i$ is the projective cover of the simple module $S_i$, that is the unique indecomposable projective module with $P_i/\operatorname{rad}P_i\cong S_i$.</li>
+</ol>
+<p><em>Proof.</em> The trace form $T$ is a $k[G]$-bimodule functional whose kernel contains no non-zero left ideal: if $I$ is a left ideal and $a = \sum a_gg\in I$ has $a_1\neq0$, then $g^{-1}a\in I$ has coefficient of $1$ equal to $a_g$, so $I$ contains an element with a non-zero coefficient at $1$ for every $g$, and the form is non-degenerate on $I$; this is the standard non-degeneracy of the trace form of the group algebra, making $k[G]$ symmetric, and the self-injectivity follows as in <em>Frobenius Algebras</em>. Krull–Schmidt holds for finite-dimensional modules over a finite-dimensional algebra by the standard argument, and the description of the simples and the decomposition of the regular module are the classical structure of a self-injective algebra. $\square$</p>
+<p><strong>Corollary.</strong> The projective indecomposable modules $P_1,\dots,P_r$ are the direct summands of $k[G]$, each $P_i$ has a unique maximal submodule $\operatorname{rad}P_i$ and, up to isomorphism, the $P_i$ are the only indecomposable projective $k[G]$-modules; a module is projective if and only if it is a direct sum of copies of the $P_i$.</p>
+<p><strong>Theorem (Brauer–Nesbitt).</strong> Let $k$ be an algebraically closed field of characteristic $p$. Then the number of simple $k[G]$-modules equals the number of conjugacy classes of $G$ consisting of $p$-regular elements, that is of elements whose order is prime to $p$.</p>
+<p><em>Proof (outline).</em> One extends scalars to a field of characteristic zero and identifies the class functions on the $p$-regular elements with the traces of the modules over a ring of characteristic zero; the standard argument uses the fact that a $k[G]$-module is determined by the function $g\mapsto\operatorname{tr}(g)$ on the $p$-regular elements and that the space of these functions has dimension the number of $p$-regular classes, together with the theorem that the simple modules are distinct in this space. The proof is the standard one and is recorded in the references. $\square$</p>
+<h2 id="brauer-characters">Brauer Characters</h2>
+<p><strong>Definition.</strong> Let $V$ be a finite-dimensional $k[G]$-module with $k$ of characteristic $p$, let $g\in G$ be $p$-regular and let $\lambda_1,\dots,\lambda_n$ be the eigenvalues of $g$ on $V$ in the algebraic closure of $k$, each a root of unity of order prime to $p$. Lifting each $\lambda_i$ to the root of unity of the same order in a field of characteristic zero, the <strong>Brauer character</strong> of $V$ is</p>
+<p>$$
+\varphi_V(g) = \lambda_1+\cdots+\lambda_n \;\in\; \mathbb{C},
+$$</p>
+<p>a complex number depending only on the $p$-regular element $g$ and the isomorphism class of $V$; the Brauer character is extended by zero (or not at all) on the elements of order divisible by $p$, and the values so defined make $\varphi_V$ a class function on the $p$-regular elements.</p>
+<p><strong>Proposition.</strong> Let $k$ be algebraically closed of characteristic $p$. Then the Brauer characters satisfy:</p>
+<ol>
+<li>$\varphi_V(1) = \dim_kV$, and $\varphi_{V\oplus W} = \varphi_V+\varphi_W$, $\varphi_{V\otimes W} = \varphi_V\varphi_W$;</li>
+<li>$\varphi_V$ is constant on the conjugacy classes of $p$-regular elements;</li>
+<li>the Brauer characters of the simple modules $S_1,\dots,S_r$ are linearly independent over $\mathbb{C}$ on the $p$-regular classes;</li>
+<li>the multiplicity of the simple module $S_i$ as a composition factor of $V$ is computable from $\varphi_V$ by the orthogonality relations, whose weights involve the $p$-parts of the centralisers of the $p$-regular elements.</li>
+</ol>
+<p><em>Proof.</em> The Brauer character is the trace of the action on the $p$-regular elements after a lift of the eigenvalues, and the trace is additive and multiplicative; the conjugacy invariance is the invariance of the trace; the linear independence is the theorem of Brauer–Nesbitt together with the existence of enough functions, and the orthogonality relations are the standard form of the theory, recorded in the references. $\square$</p>
+<p><strong>Definition.</strong> Let $\chi$ be an ordinary irreducible character of $G$ and let $\mathcal{O}$ be a discrete valuation ring of characteristic zero with residue field $k$; an <strong>integral form</strong> of the module of $\chi$ is an $\mathcal{O}[G]$-module $M$, free of finite rank over $\mathcal{O}$, whose extension of scalars to the fraction field is the module of $\chi$. The reduction $M\otimes_{\mathcal{O}}k$ is a $k[G]$-module of finite length, and the <strong>decomposition numbers</strong> are the multiplicities</p>
+<p>$$
+d_{\chi j} = \bigl[M\otimes_{\mathcal{O}}k : S_j\bigr],
+$$</p>
+<p>the number of times the simple module $S_j$ occurs in a composition series of the reduction, and the <strong>decomposition matrix</strong> is the matrix $D = (d_{\chi j})$ with the ordinary irreducible characters as rows and the simple modular modules as columns; the decomposition is independent of the choice of the integral form, and the reduction is compatible with the Brauer character in the sense that</p>
+<p>$$
+\chi(g) = \sum_jd_{\chi j}\,\varphi_j(g) \qquad\text{for every } p\text{-regular } g\in G .
+$$</p>
+<p>The existence of the integral form and the independence of the reduction are not covered here.</p>
+<p><strong>Theorem (Brauer, standard).</strong> The decomposition matrix has the following properties:</p>
+<ol>
+<li>the entries of $D$ are non-negative integers and no row of $D$ is zero;</li>
+<li>the columns of $D$ are non-zero and the number $r$ of the simple modules equals the number of $p$-regular classes;</li>
+<li>if $\varphi_1,\dots,\varphi_r$ are the Brauer characters of the simple modules and $\chi_1,\dots,\chi_s$ the ordinary irreducible characters, then the matrix $D$ has rank $r$, and the relations $\sum_\chi d_{\chi i}d_{\chi j} = c_{ij}$ define the <strong>Cartan matrix</strong> $C = D^{\mathsf{T}}D$, whose entries are the multiplicities of the simple modules in the projective indecomposables:</li>
+</ol>
+<p>$$
+c_{ij} = \bigl[P_i : S_j\bigr] = \bigl[P_j : S_i\bigr].
+$$</p>
+<p><em>Proof (outline).</em> The first two assertions are the standard properties of the reduction; the third is the computation of the multiplicities of the composition factors of the projective modules: the multiplicity of $S_j$ in $P_i$ is the multiplicity of $S_i$ in $P_j$, by the symmetry of the algebra, and it equals $\sum_\chi d_{\chi i}d_{\chi j}$ by counting the occurrences of the ordinary constituents of $k[G]$ through the decomposition matrix. The details are the standard theory of Brauer and are recorded in the references. $\square$</p>
+<h2 id="projective-indecomposable-modules">Projective Indecomposable Modules</h2>
+<p><strong>Proposition.</strong> Let $k$ be algebraically closed of characteristic $p$ and let $P_i$ be the projective cover of the simple module $S_i$. Then:</p>
+<ol>
+<li>$P_i$ is indecomposable, projective and injective, and every indecomposable projective module is isomorphic to exactly one $P_i$;</li>
+<li>the composition factors of $P_i$ are the simple modules $S_j$ with multiplicities $c_{ij}$, and $P_i/\operatorname{rad}P_i\cong S_i$ with $\operatorname{rad}P_i$ the unique maximal submodule;</li>
+<li>$\operatorname{Hom}_{k[G]}(P_i,V)$ is the largest quotient of $V$ all of whose composition factors are isomorphic to $S_i$, and $\dim_k\operatorname{Hom}_{k[G]}(P_i,S_j) = \delta_{ij}$;</li>
+<li>the dimension formula $\dim_kP_i = \sum_jc_{ij}\dim_kS_j$ holds, and $\sum_i\dim_kP_i\cdot\dim_kS_i = \lvert G\rvert$, the second identity being the dimension count of the decomposition $k[G]\cong\bigoplus_iP_i^{\oplus\dim S_i}$.</li>
+</ol>
+<p><em>Proof.</em> The statements are the standard properties of the projective cover in a finite-dimensional self-injective algebra: the cover exists because the algebra is finite-dimensional, the uniqueness of the maximal submodule is the Nakayama-type property of a symmetric algebra, and the dimension formulas are the multiplicities counted in the regular module. $\square$</p>
+<p><strong>Corollary.</strong> The Cartan matrix $C$ is symmetric, positive definite, and its entries are non-negative integers with positive diagonal; the multiplicity of $S_j$ as a composition factor of the regular module $k[G]$ is $\sum_i c_{ij}\dim_kS_i$, and the determinant of $C$ measures the departure of the algebra from a product of matrix algebras: it is one exactly when the algebra is semisimple, that is when $p$ does not divide $\lvert G\rvert$.</p>
+<p><strong>Example (the case $p\nmid\lvert G\rvert$).</strong> If $p$ does not divide $\lvert G\rvert$ the group algebra is semisimple, every simple module is projective, $P_i = S_i$, the Cartan matrix is the identity and the decomposition matrix is the identity after the ordinary and the modular characters are identified; the modular theory therefore reduces to the ordinary theory of <em>Character Theory</em> in the case of a prime not dividing the order, and the two theories are the two ends of the same scale with $p$ dividing the order.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the symmetric group $S_3$ in characteristic $3$).</strong> Let $G = S_3$ and $k$ algebraically closed of characteristic $3$. The $3$-regular classes are the class of the identity and the class of the transpositions, so $k[S_3]$ has exactly two simple modules, both of dimension one: the trivial module $S_1$ and the module $S_2$ on which the transpositions act by $-1$ and the 3-cycles by $1$. The ordinary irreducible characters are $\mathbf{1}$, $\varepsilon$ and $\sigma$ of <em>Character Theory</em>; on the $3$-regular classes $\mathbf{1}$ and $\varepsilon$ reduce to the two simple modular characters, while the two-dimensional $\sigma$ has the trivial module as a submodule — the span of the sum of the basis vectors — with quotient $S_2$, so that</p>
+<p>$$
+D = \begin{pmatrix}1&0\\0&1\\1&1\end{pmatrix}, \qquad C = D^{\mathsf{T}}D = \begin{pmatrix}2&1\\1&2\end{pmatrix}.
+$$</p>
+<p>Hence the two projective indecomposable modules have $\dim_kP_1 = c_{11}\cdot1+c_{12}\cdot1 = 3$ and $\dim_kP_2 = c_{21}+c_{22} = 3$, and $\dim_kP_1+\dim_kP_2 = 6 = \lvert S_3\rvert$, in agreement with the decomposition $k[S_3]\cong P_1\oplus P_2$ of the regular module in this case; the Cartan matrix is symmetric and positive definite with determinant $3$. The matrix product $D^{\mathsf{T}}D$, the dimensions of the projective indecomposables, the sum $6$, and the equality of the number of simple modules with the number of $3$-regular classes were recomputed with the exact arithmetic of the integers.</p>
+<p><strong>Example (the cyclic group of order $p$ in characteristic $p$).</strong> Let $G = C_p = \langle x\rangle$ and $k$ of characteristic $p$. Then $k[C_p] = k[x]/(x^p-1) = k[x]/((x-1)^p)$, since $x^p-1 = (x-1)^p$ in characteristic $p$; the algebra is therefore <strong>local</strong> with a unique maximal ideal $(x-1)$, and there is exactly one simple module, the trivial module $S_1$: the number of $p$-regular classes is one, namely the class of the identity, in agreement with Brauer–Nesbitt. The projective indecomposable is $P_1 = k[C_p]$ of dimension $p$, the decomposition matrix is the column with the $p$ entries $1$ — the $p$ ordinary irreducible characters of $C_p$ are the one-dimensional characters $x\mapsto\zeta$, and each reduces to the trivial Brauer character — and the Cartan matrix is the $1\times1$ matrix $(p)$, with $\dim_kP_1 = p\cdot1 = p = \lvert G\rvert$ in accordance with the dimension formula. The indecomposable $k[C_p]$-modules are the $k[x]/((x-1)^i)$ for $1\leq i\leq p$, of dimensions $i$, forming a chain under inclusion; this is the simplest instance of the uniserial structure of the modular group algebras of the groups with a cyclic Sylow $p$-subgroup.</p>
+<p><strong>Example (the case of a $p$-group).</strong> If $G$ is a $p$-group, then $k[G]$ is a local algebra with the unique simple module the trivial one, and the only projective indecomposable is $k[G]$ itself; the Cartan matrix is the $1\times1$ matrix $(\lvert G\rvert)$ and the decomposition matrix is the column of $\lvert G\rvert$ ones. The group algebra of a $p$-group is thus an indecomposable projective module over itself, and the whole modular theory of such a group reduces to the study of the module $k[G]$ and its submodules, which is the content of the theory of the modular group rings in the lowest case.</p>
+<h2 id="brauers-framework">Brauer's Framework</h2>
+<p><strong>Theorem (Brauer, standard).</strong> Let $k$ be algebraically closed of characteristic $p$. Then:</p>
+<ol>
+<li>the Brauer characters of the simple $k[G]$-modules are linearly independent as class functions on the $p$-regular classes and they form a basis of the space of those class functions, which has dimension $r$;</li>
+<li>the restrictions of the ordinary irreducible characters to the $p$-regular elements span the same lattice generated by the Brauer characters, and the decomposition matrix expresses the change of basis;</li>
+<li><strong>Brauer's induction theorem for the modular characters</strong>: the Brauer characters of the simple modules are the $\mathbb{Z}$-linear combinations of the induced characters from the one-dimensional modules of the elementary subgroups, so that the modular theory is controlled by the subgroups of restricted type exactly as the ordinary theory is.</li>
+</ol>
+<p><em>Proof (outline).</em> The linear independence is the proposition of the second section; the spanning statement and the induction theorem follow from the existence of the decomposition and the ordinary induction theorem of Brauer; the proofs are standard and are recorded in the references. $\square$</p>
+<p><strong>Remark (the road to the blocks).</strong> The algebra $k[G]$ decomposes as a direct sum of indecomposable two-sided ideals, $k[G] = \bigoplus_BB$, the <strong>blocks</strong>, and the projective indecomposables and the ordinary irreducible characters are distributed among the blocks; the defect group of a block measures the "defect" of the modular representations it carries, and the correspondence of Brauer relates the blocks of $G$ to those of the normaliser of their defect groups. This is the subject, another article of this category, in which the partition of the ordinary and the modular characters into blocks, the defect groups and the Brauer correspondence are developed; nothing of that theory beyond the mere statement of the decomposition of $k[G]$ into blocks has been used in the present article.</p>
+<h2 id="summary">Summary</h2>
+<p>Let $G$ be a finite group, $p$ a prime dividing $\lvert G\rvert$ and $k$ an algebraically closed field of characteristic $p$. The group algebra $k[G]$ is a <strong>symmetric</strong> (hence self-injective) finite-dimensional algebra by the non-degeneracy of the trace form, so that its projective and injective modules coincide, the Krull–Schmidt theorem holds, and $k[G]\cong\bigoplus_iP_i^{\oplus\dim S_i}$ with $P_i$ the projective cover of the simple module $S_i$; the number of simple modules equals the number of $p$-regular conjugacy classes of $G$ by the theorem of <strong>Brauer–Nesbitt</strong>. The <strong>Brauer characters</strong> $\varphi_V$, defined by lifting the eigenvalues of a $p$-regular element to characteristic zero and summing them, are additive and multiplicative class functions on the $p$-regular elements, and they are linearly independent for the simple modules; the ordinary irreducible characters restrict to the $p$-regular elements as $\chi = \sum_jd_{\chi j}\varphi_j$ with $d_{\chi j}$ the multiplicities of the reduction of an integral form, and the <strong>decomposition matrix</strong> $D = (d_{\chi j})$ and the <strong>Cartan matrix</strong> $C = D^{\mathsf{T}}D$ satisfy $c_{ij} = [P_i:S_j] = [P_j:S_i]$, with $\dim_kP_i = \sum_jc_{ij}\dim_kS_j$ and $\sum_i\dim_kP_i\dim_kS_i = \lvert G\rvert$. For $S_3$ in characteristic $3$ the computation gives $D = \begin{pmatrix}1&0\\0&1\\1&1\end{pmatrix}$ and $C = \begin{pmatrix}2&1\\1&2\end{pmatrix}$ with $\dim_kP_1 = \dim_kP_2 = 3$ and the total $6 = \lvert G\rvert$, all verified with exact arithmetic; for the cyclic group of order $p$ in characteristic $p$ the group algebra is the local algebra $k[x]/((x-1)^p)$ with one simple module, the projective indecomposable $k[C_p]$ of dimension $p$ and the Cartan matrix $(p)$, and the indecomposable modules are the truncated polynomial algebras $k[x]/((x-1)^i)$; for a $p$-group the algebra is local and the only projective indecomposable is $k[G]$ itself. When $p$ does not divide $\lvert G\rvert$ the theory collapses to the ordinary theory of <em>Character Theory</em> with the identity matrices. The block decomposition of $k[G]$ and the defect groups are the subject, and the integral forms underlying the reduction are the subject, the two remaining articles of this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p\mid\lvert G\rvert$, $k$</td>
+<td>prime divisor of the order, algebraically closed field of characteristic $p$</td>
+</tr>
+<tr>
+<td>$k[G]$, $T(a) = a_1$</td>
+<td>group algebra and its trace form, making it symmetric</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}k[G]$</td>
+<td>Jacobson radical</td>
+</tr>
+<tr>
+<td>$S_i$, $P_i$</td>
+<td>simple modules and their projective covers</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>$\lvert\{S_i\}\rvert = $ number of $p$-regular conjugacy classes</td>
+</tr>
+<tr>
+<td>$\varphi_V$, $\varphi_i$</td>
+<td>Brauer characters of a module and of the simple modules</td>
+</tr>
+<tr>
+<td>$p$-regular element</td>
+<td>element of order prime to $p$</td>
+</tr>
+<tr>
+<td>$D = (d_{\chi j})$, $\chi = \sum_jd_{\chi j}\varphi_j$</td>
+<td>decomposition matrix and decomposition numbers</td>
+</tr>
+<tr>
+<td>$C = D^{\mathsf{T}}D$, $c_{ij} = [P_i:S_j]$</td>
+<td>Cartan matrix and Cartan invariants</td>
+</tr>
+<tr>
+<td>$\dim_kP_i = \sum_jc_{ij}\dim_kS_j$, $\sum_i\dim_kP_i\dim_kS_i = \lvert G\rvert$</td>
+<td>dimension formulas</td>
+</tr>
+<tr>
+<td>$k[C_p]\cong k[x]/((x-1)^p)$</td>
+<td>local group algebra of the cyclic group of order $p$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Brauer, "Investigations on group theory I", <em>Transactions of the American Mathematical Society</em> <strong>42</strong> (1937), 361–401, and "On modular and $p$-adic representations of algebras", <em>Proceedings of the National Academy of Sciences of the USA</em> <strong>25</strong> (1939), 252–258, for the Brauer characters, the decomposition numbers and the modular theory.</li>
+<li>Richard Brauer and Cecil Nesbitt, "On the modular characters of groups", <em>Annals of Mathematics</em> <strong>42</strong> (1941), 556–590, for the theorem on the number of the simple modules and the properties of the decomposition matrix.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Interscience, 1962), for the systematic development of the modular theory, the Cartan matrix and the projective indecomposables.</li>
+<li>Walter Feit, <em>The Representation Theory of Finite Groups</em> (North-Holland, 1982), for the modular theory with the methods of the block theory and the examples.</li>
+<li>J. Alexander Green, "On the indecomposable representations of a finite group", <em>Mathematische Zeitschrift</em> <strong>70</strong> (1959), 430–445, for the vertices, the sources and the Green correspondence for the indecomposable modules.</li>
+<li>Gordon James and Adalbert Kerber, <em>The Representation Theory of the Symmetric Group</em> (Addison-Wesley, 1981), for the modular representation theory of the symmetric groups and the Specht modules over a field of positive characteristic.</li>
+<li>Jean-Pierre Serre, <em>Linear Representations of Finite Groups</em> (Springer, 1977), for the modular characters as an introduction to the theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

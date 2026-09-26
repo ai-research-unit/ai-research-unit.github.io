@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duality Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="duality-theory"><strong>Duality Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The dual of a locally convex space is the space of its continuous linear functionals, and its interest comes from the fact that the original space and its dual determine one another: a locally convex topology is completely described by which linear functionals are continuous, and a linear functional is continuous exactly when it is bounded on the neighbourhoods of $0$. <strong>Duality theory</strong> makes this reciprocal determination into a systematic calculus. It begins with the notion of a <strong>dual pair</strong> — two vector spaces joined by a separating bilinear form — and shows that the topologies on each space which are compatible with the pairing are exactly the topologies of uniform convergence on a suitable family of weakly bounded sets. The two extremes are the <strong>weak topology</strong>, given by uniform convergence on finite sets, and the <strong>Mackey topology</strong>, given by uniform convergence on the weakly compact convex balanced sets; the topologies between them are the ones that arise in practice, and the <strong>strong topology</strong>, given by uniform convergence on the bounded sets, is the most important of them.</p>
+<p>The theory gives several structural results that are used throughout analysis: the <strong>bipolar theorem</strong>, which computes the closed convex balanced hull in terms of polars; the <strong>Banach–Alaoglu theorem</strong>, which makes the polar of a neighbourhood compact in the weak-star topology, and is the fundamental compactness theorem of the subject; <strong>Goldstine's theorem</strong>, which says that a space is weak-star dense in its second dual; and the characterisations of <strong>reflexivity</strong>, which identify the spaces that coincide with their second duals with those whose unit balls are weakly compact. The counterexamples — the duality of $\ell^1$ with $\ell^\infty$ and the failure of reflexivity of $\ell^1$ and $c_0$, the difference between the weak and the weak-star topologies on the dual — are as instructive as the theorems.</p>
+<p>This article develops the duality of locally convex spaces. The theory of operators on these spaces, the spectral theorem and the theory of distributions are the subject of <em>Analysis on Linear Spaces</em> in Part III; the general theory of locally convex spaces is that of <em>Locally Convex Spaces</em>, the metrisable complete case is that of <em>Fréchet Spaces</em>, and the tensor-product side of the duality is . Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $E$ and $F$ are vector spaces over $\mathbb{K}$ with a <strong>pairing</strong> $\langle \cdot, \cdot \rangle: E \times F \to \mathbb{K}$, which is bilinear and <strong>separating</strong> (for each $x \neq 0$ there is $y$ with $\langle x,y\rangle \neq 0$, and symmetrically); such a pair is a <strong>dual pair</strong> written $\langle E, F\rangle$. The <strong>weak topology</strong> $\sigma(E,F)$ is the locally convex topology on $E$ generated by the seminorms $x \mapsto \lvert \langle x,y\rangle\rvert$, $y \in F$, and $\sigma(F,E)$ is defined symmetrically.</p>
+<hr />
+<h2 id="dual-pairs-and-polar-topologies">Dual Pairs and Polar Topologies</h2>
+<h3 id="dual-pairs">Dual Pairs</h3>
+<p><strong>Definition.</strong> Let $\langle E, F \rangle$ be a dual pair. The <strong>annihilator</strong> of a subset $A \subseteq E$ is</p>
+<p>$$
+A^\perp = \{y \in F : \langle x, y \rangle = 0 \ \text{for all } x \in A\},
+$$</p>
+<p>and symmetrically for a subset of $F$. A subset $B \subseteq F$ is <strong>weakly bounded</strong> if $\sup_{y \in B}\lvert \langle x,y\rangle\rvert < \infty$ for every $x \in E$, that is, if $B$ is bounded for $\sigma(F,E)$, and symmetrically for subsets of $E$.</p>
+<p><strong>Proposition.</strong> Let $\langle E,F\rangle$ be a dual pair with $x \in E$, $x \neq 0$. Then there is $y \in F$ with $\langle x, y\rangle \neq 0$, and the map $x \mapsto \langle x, \cdot\rangle$ is a linear injection $E \hookrightarrow F^*$, the algebraic dual of $F$; similarly $F \hookrightarrow E^*$. The weak topology $\sigma(E,F)$ is Hausdorff, and its dual is $F$: a linear functional on $E$ is $\sigma(E,F)$-continuous if and only if it is $\langle \cdot, y\rangle$ for some $y \in F$.</p>
+<p><strong>Proof.</strong> The injection is the separating property; the continuity of each $\langle\cdot,y\rangle$ is the definition of the topology; conversely a $\sigma(E,F)$-continuous functional is bounded on a set of the form $\{\lvert\langle\cdot,y_i\rangle\rvert \leq 1\}$, and the standard finite-dimensional argument expresses it as a linear combination of the $y_i$, hence as $\langle\cdot,y\rangle$ for a $y$ in the span of the $y_i$. Hausdorffness is the separating property. $\square$</p>
+<p><strong>Definition.</strong> The <strong>polar</strong> of $A \subseteq E$ is</p>
+<p>$$
+A^\circ = \{y \in F : \lvert \langle x,y\rangle\rvert \leq 1 \ \text{for all } x \in A\} \subseteq F ,
+$$</p>
+<p>and the <strong>absolute polar</strong> is the same set when $A$ is balanced; if $A$ is not balanced one takes the polar of its balanced hull. For a family $\mathcal{A}$ of weakly bounded subsets of $E$ which is directed by inclusion and covers $E$, the <strong>topology of uniform convergence on the members of $\mathcal{A}$</strong> is the locally convex topology on $F$ generated by the seminorms</p>
+<p>$$
+q_A(y) = \sup_{x \in A}\lvert \langle x, y \rangle \rvert \qquad (A \in \mathcal{A}) ,
+$$</p>
+<p>whose neighbourhoods of $0$ are generated by the polars $A^\circ$.</p>
+<p><strong>Proposition (elementary polar calculus).</strong> The following hold.</p>
+<p><strong>(a)</strong> $A \subseteq A^{\circ\circ}$ when the polar is taken twice with respect to the dual pair, and $A^\circ$ is convex and balanced and contains $0$.</p>
+<p><strong>(b)</strong> $A \subseteq B$ implies $B^\circ \subseteq A^\circ$.</p>
+<p><strong>(c)</strong> $(\lambda A)^\circ = \lambda^{-1}A^\circ$ for $\lambda \neq 0$.</p>
+<p><strong>(d)</strong> $(\bigcup_i A_i)^\circ = \bigcap_i A_i^\circ$.</p>
+<p><strong>Proof.</strong> All four are immediate from the definition of the polar as the set of $y$ satisfying a family of linear inequalities. $\square$</p>
+<h3 id="the-bipolar-theorem">The Bipolar Theorem</h3>
+<p><strong>Theorem (bipolar).</strong> Let $\langle E,F\rangle$ be a dual pair and let $A \subseteq E$. Then</p>
+<p>$$
+A^{\circ\circ} = \overline{\operatorname{conv}}\bigl(A \cup \{0\}\bigr) ,
+$$</p>
+<p>the closure being taken in $\sigma(E,F)$; if $A$ is convex and contains $0$, then $A^{\circ\circ}$ is the $\sigma(E,F)$-closure of $A$, and if $A$ is convex, balanced and closed in $\sigma(E,F)$ then $A = A^{\circ\circ}$.</p>
+<p><strong>Proof.</strong> Write $C$ for the $\sigma(E,F)$-closed convex hull of $A \cup \{0\}$. The inclusion $A^{\circ\circ} \supseteq C$ follows because $A^{\circ\circ}$ is closed, convex and contains $0$. For the reverse inclusion, suppose $x_0 \notin C$; by the geometric form of the Hahn–Banach theorem applied in the space $E$ with the topology $\sigma(E,F)$, there is a $\sigma(E,F)$-continuous functional separating $x_0$ from $C$, that is, a $y \in F$ and a real $\alpha$ with $\langle x_0, y\rangle > \alpha \geq \sup_{x \in C}\langle x,y\rangle$; since $0 \in C$ one has $\alpha \geq 0$, and normalising the separating functional to the balanced case gives $\lvert \langle x, y\rangle\rvert \leq 1$ for all $x \in C$ while $\lvert \langle x_0,y\rangle\rvert > 1$; hence $y \in A^\circ$ but $x_0 \notin A^{\circ\circ}$. Therefore $A^{\circ\circ} \subseteq C$. $\square$</p>
+<p><strong>Corollary.</strong> Let $\langle E,F\rangle$ be a dual pair. A convex balanced $\sigma(E,F)$-closed subset of $E$ is the polar of a subset of $F$; and the $\sigma(E,F)$-closed convex balanced subsets of $E$ are exactly the polars of the weakly bounded subsets of $F$.</p>
+<p><strong>Proof.</strong> A closed convex balanced set $A$ equals $A^{\circ\circ}$ by the theorem, hence is a polar; conversely a polar is closed convex and balanced. $\square$</p>
+<h3 id="polar-topologies-and-mackeys-theorem">Polar Topologies and Mackey's Theorem</h3>
+<p><strong>Definition.</strong> Let $\langle E,F\rangle$ be a dual pair. A topology $\mathcal{T}$ on $E$ is <strong>compatible</strong> with the pairing if it is locally convex and its dual is exactly $F$ under the identification $E \hookrightarrow F^*$. A <strong>polar topology</strong> on $E$ is a topology of uniform convergence on a family $\mathcal{A}$ of weakly bounded subsets of $F$ covering $F$, in which the polars $A^\circ$ $(A \in \mathcal{A})$ form a neighbourhood basis of $0$; every compatible topology is polar, but being polar is not by itself enough for compatibility. The <strong>weak topology</strong> $\sigma(E,F)$ and the <strong>Mackey topology</strong> $\tau(E,F)$ are the extreme compatible polar topologies: $\sigma(E,F)$ corresponds to the finite subsets of $F$ and $\tau(E,F)$ to the weakly compact convex balanced subsets of $F$. The <strong>strong topology</strong> $\beta(E,F)$ corresponds to the weakly bounded subsets of $F$; it is polar, and it is compatible only under additional hypotheses, its dual being in general strictly larger than $F$.</p>
+<p><strong>Theorem (Mackey–Arens).</strong> Let $\langle E,F\rangle$ be a dual pair. A locally convex topology $\mathcal{T}$ on $E$ is compatible with the pairing if and only if</p>
+<p>$$
+\sigma(E,F) \subseteq \mathcal{T} \subseteq \tau(E,F),
+$$</p>
+<p>where $\tau(E,F)$ is the topology of uniform convergence on the weakly compact convex balanced subsets of $F$; in particular $\tau(E,F)$ is the finest compatible topology, $\sigma(E,F)$ is the coarsest, and the compatible topologies form the interval between them. Every compatible topology has dual $F$, and hence all compatible topologies have the same weakly closed convex sets and the same bounded sets.</p>
+<p><strong>Proof.</strong> If $\sigma(E,F) \subseteq \mathcal{T} \subseteq \tau(E,F)$ then, passing to duals and using that $\sigma(E,F)$ and $\tau(E,F)$ are compatible, $F = (E,\sigma)' \supseteq (E,\mathcal{T})' \supseteq (E,\tau)' = F$, so $\mathcal{T}$ is compatible. Conversely a compatible $\mathcal{T}$ is finer than $\sigma(E,F)$, which is the coarsest locally convex topology with dual $F$ because it is generated by the functionals of $F$, and no finer than $\tau(E,F)$, which is Mackey's theorem that the topology of uniform convergence on the weakly compact convex balanced subsets of $F$ is the finest compatible one; both statements are quoted as standard (Bourbaki, Schaefer). The common dual gives the common closed convex sets, a convex set being closed for a compatible topology exactly when it is weakly closed, and the common bounded sets, a set being bounded for a compatible topology exactly when it is weakly bounded, by the uniform boundedness principle applied to the functionals of $F$. $\square$</p>
+<p><strong>Corollary.</strong> A locally convex space $E$ is a <strong>Mackey space</strong> in the sense of <em>Locally Convex Spaces</em> if and only if its topology is the Mackey topology $\tau(E,E')$; the weak topology is never the Mackey topology unless $E$ is finite-dimensional.</p>
+<p><strong>Proof.</strong> The identification is the definition; for the second statement, if $\sigma(E,E') = \tau(E,E')$ then every weakly compact set is finite-dimensional, which forces finite dimension. $\square$</p>
+<hr />
+<h2 id="the-weak-topologies-and-compactness">The Weak Topologies and Compactness</h2>
+<h3 id="weak-and-weak-star-topologies">Weak and Weak-Star Topologies</h3>
+<p><strong>Definition.</strong> Let $E$ be a locally convex space with dual $E'$. The <strong>weak topology</strong> is $\sigma(E,E')$, and the <strong>weak-star topology</strong> is $\sigma(E',E)$; the <strong>strong topology</strong> on $E'$ is $\beta(E',E)$, the topology of uniform convergence on the bounded subsets of $E$; and the <strong>Mackey topology</strong> on $E'$ is $\tau(E',E)$. The space $E'$ with $\beta(E',E)$ is the <strong>strong dual</strong>, written $E'_b$, and with $\sigma(E',E)$ the <strong>weak dual</strong>, written $E'_\sigma$.</p>
+<p><strong>Theorem.</strong> Let $E$ be a locally convex space. Then:</p>
+<p><strong>(a)</strong> $(E, \sigma(E,E'))' = E'$, and $(E', \sigma(E',E))' = E$ under the canonical identification;</p>
+<p><strong>(b)</strong> $\sigma(E,E')$ has the same closed convex sets as the original topology, and $E$ and $(E,\sigma(E,E'))$ have the same bounded sets;</p>
+<p><strong>(c)</strong> the weak topology is Hausdorff if and only if $E'$ separates points of $E$, which holds whenever $E$ is Hausdorff and locally convex.</p>
+<p><strong>Proof.</strong> (a) is the proposition on dual pairs. (b) The closed convex sets are determined by the continuous linear functionals, and the two topologies have the same functionals; the bounded sets are determined by the continuous seminorms and again the families coincide. (c) is the separation corollary of the Hahn–Banach theorem in <em>Locally Convex Spaces</em>. $\square$</p>
+<p><strong>Theorem (Banach–Alaoglu).</strong> Let $E$ be a locally convex space and let $U$ be a neighbourhood of $0$ in $E$. Then its polar $U^\circ \subseteq E'$ is compact for the weak-star topology $\sigma(E',E)$.</p>
+<p><strong>Proof.</strong> It suffices to treat the case of a single seminorm ball: if $U = \{x : p(x) \leq 1\}$ for a continuous seminorm $p$, then $U^\circ = \{f \in E' : \lvert f(x)\rvert \leq 1 \ \text{for all } x \in U\}$ and the map $f \mapsto (f(x))_{x \in U}$ embeds $U^\circ$ into the product $\prod_{x \in U}\{\lambda \in \mathbb{K} : \lvert\lambda\rvert \leq p(x)\}$, which is compact by Tychonoff. The image is closed because the conditions of linearity and boundedness are closed conditions, so $U^\circ$ is compact. A general neighbourhood of $0$ contains a finite intersection $V = V_1 \cap \cdots \cap V_n$ of seminorm balls, so $U^\circ \subseteq V^\circ$ and it suffices to know the theorem for $V$; now $V^\circ$ is the weak-star closed convex balanced hull of $V_1^\circ \cup \cdots \cup V_n^\circ$, which is weak-star compact because each $V_i^\circ$ is compact by the argument above and the closed convex hull of a weakly compact set is weakly compact (Krein's theorem), the finite union of compact sets being compact. $\square$</p>
+<p><strong>Corollary.</strong> The closed unit ball of the dual of a normed space is weak-star compact; the closed unit ball of a reflexive Banach space is weakly compact.</p>
+<p><strong>Proof.</strong> The first is the theorem with $U$ the unit ball. For the second, the weak topology on the ball is the weak-star topology under the identification $E = E''$, so the polar $U^\circ$ is compact, and $U$ is the polar of $U^\circ$. $\square$</p>
+<p><strong>Theorem (Goldstine).</strong> Let $E$ be a normed space with dual $E'$ and second dual $E''$. Then the image of the closed unit ball of $E$ under the canonical embedding $E \to E''$ is weak-star dense in the closed unit ball of $E''$.</p>
+<p><strong>Proof.</strong> The weak-star closure of the image of the unit ball is a weak-star closed convex balanced set, hence a polar of a subset of $E'$ by the bipolar theorem, and a computation of that polar shows it is the whole unit ball of $E''$; the details are the standard proof. $\square$</p>
+<h3 id="reflexivity">Reflexivity</h3>
+<p><strong>Definition.</strong> Let $E$ be a locally convex space with strong dual $E'_b$. The <strong>canonical embedding</strong> is</p>
+<p>$$
+\iota : E \longrightarrow (E'_b)'_b , \qquad \iota(x)(f) = f(x) ,
+$$</p>
+<p>and it is continuous and injective when $E$ is Hausdorff and locally convex. The space $E$ is <strong>semi-reflexive</strong> if $\iota$ is bijective, and <strong>reflexive</strong> if in addition $\iota$ is a topological isomorphism onto the strong bidual.</p>
+<p><strong>Theorem (characterisations of reflexivity).</strong> Let $E$ be a locally convex space. The following are equivalent:</p>
+<p><strong>(a)</strong> $E$ is semi-reflexive;</p>
+<p><strong>(b)</strong> every bounded subset of $E$ is relatively weakly compact;</p>
+<p><strong>(c)</strong> every bounded subset of $E$ is contained in a weakly compact set.</p>
+<p>If $E$ is a normed space, these are further equivalent to:</p>
+<p><strong>(d)</strong> the closed unit ball of $E$ is weakly compact;</p>
+<p><strong>(e)</strong> $E$ is reflexive as a normed space, that is, $\iota$ is a surjective isometry onto $E''$.</p>
+<p><strong>Proof.</strong> The equivalence of (a), (b) and (c) is the standard characterisation of semi-reflexivity for locally convex spaces, proved by applying Banach–Alaoglu to the bidual and using the bipolar theorem; the equivalence with (d) and (e) in the normed case is Kakutani's theorem. The statements are quoted as standard. $\square$</p>
+<p><strong>Corollary.</strong> Let $E$ be a Fréchet space. If $E$ is Montel then $E$ is reflexive, and in that case its strong dual is a Montel space and a reflexive one. The converse to the first statement fails: an infinite-dimensional reflexive Banach space is reflexive and is not Montel, its closed unit ball being bounded but not compact (<em>Fréchet Spaces</em>), so for Fréchet spaces reflexivity is strictly weaker than the Montel property.</p>
+<p><strong>Pro.</strong> A Montel space is quasi-complete and every bounded subset is relatively compact, hence relatively weakly compact, so it is semi-reflexive by the characterisation above; being barrelled it is reflexive, and the statement about the strong dual is the standard duality theorem for Montel spaces, which is the form in which reflexivity is used in <em>Fréchet Spaces</em> . The counterexample is the one given in <em>Fréchet Spaces</em>: the closed unit ball of an infinite-dimensional Banach space is not compact, so the space is not Montel, while the classical reflexive spaces $\ell^p$, $1 < p < \infty$, show that reflexivity can hold. $\square$</p>
+<hr />
+<h2 id="examples">Examples</h2>
+<h3 id="sequence-spaces">Sequence Spaces</h3>
+<p><strong>Example ($c_0$ and $\ell^1$).</strong> Let $c_0$ be the Banach space of sequences tending to $0$ with the supremum norm, and $\ell^1$ the space of summable sequences with the norm $\lVert x\rVert_1 = \sum_k\lvert x_k\rvert$. The pairing $\langle x, y\rangle = \sum_k x_k y_k$ identifies $\ell^1$ with the dual of $c_0$ and $c_0$ with the dual of $\ell^1$:</p>
+<p>$$
+(c_0)' \cong \ell^1, \qquad (\ell^1)' \cong \ell^\infty .
+$$</p>
+<p>The second duality is strict: the dual of $\ell^\infty$ is strictly larger than $\ell^1$, the extra functionals being the finitely additive measures on $\mathbb{N}$ rather than the summable sequences. The space $c_0$ is not isometric to the dual of any Banach space: the closed unit ball of $c_0$ has no extreme point, because an element of norm $1$ in $c_0$ has a coordinate of modulus $< 1$ that can be perturbed, while the closed unit ball of a dual space is weak-star compact and convex and therefore has extreme points by the Krein–Milman theorem.</p>
+<p><strong>Example (reflexivity of $\ell^p$).</strong> For $1 < p < \infty$ the pairing $\langle x,y\rangle = \sum_k x_k y_k$ identifies $(\ell^p)' \cong \ell^q$ with $q$ the conjugate exponent, and the closed unit ball of $\ell^p$ is weakly compact; hence $\ell^p$ is reflexive. For $p = 1$ the unit ball of $\ell^1 = (c_0)'$ is weak-star compact by Banach–Alaoglu, but it is not weakly compact. The sequence $e_n$ of unit vectors satisfies $\langle e_n, x\rangle = x_n \to 0$ for every $x \in c_0$, so $e_n \to 0$ in the weak-star topology $\sigma(\ell^1, c_0)$; but $\langle e_n, y\rangle = 1$ for $y = (1,1,1,\dots) \in \ell^\infty$, so $e_n$ does not converge to $0$ in the weak topology $\sigma(\ell^1,\ell^\infty)$, which is therefore strictly finer than the weak-star topology. By <strong>Schur's theorem</strong> a weakly convergent sequence in $\ell^1$ converges in norm, and since $\lVert e_n - e_m\rVert_1 = 2$ for $n \neq m$ the sequence has no weakly convergent subsequence; hence the unit ball of $\ell^1$ is not weakly sequentially compact, so $\ell^1$ is not reflexive. The same computation exhibits the polar of the unit ball of $c_0$ inside $\ell^1$ as the unit ball of $\ell^1$.</p>
+<p><strong>Example (the dual norm as a supremum).</strong> On $\mathbb{K}^n$ the dual of the $\ell^1$-norm is the $\ell^\infty$-norm and conversely:</p>
+<p>$$
+\lVert x \rVert_1 = \sup\{\lvert\langle x,y\rangle\rvert : \lVert y\rVert_\infty \leq 1\}, \qquad \lVert x\rVert_\infty = \sup\{\lvert\langle x,y\rangle\rvert : \lVert y\rVert_1 \leq 1\},
+$$</p>
+<p>with the suprema attained at $y = \operatorname{sign}(x)$ and at $y = e_{i_0}$ for an index $i_0$ of maximal modulus respectively. The computations illustrate the polar calculus: the polar of the $\ell^1$-ball is the $\ell^\infty$-ball and conversely, and each identity is checked by direct evaluation on a general vector.</p>
+<h3 id="the-strong-dual-and-the-schwartz-space">The Strong Dual and the Schwartz Space</h3>
+<p><strong>Definition.</strong> Let $E$ be a locally convex space. The <strong>strong dual</strong> $E'_b$ carries the topology $\beta(E',E)$ of uniform convergence on the bounded subsets of $E$. If $E$ is a normed space, $\beta(E',E)$ is the norm topology of the operator norm, and $E'_b$ is a Banach space.</p>
+<p><strong>Theorem.</strong> Let $E$ be a normed space. Then $E'_b$ is a Banach space, and $E$ is reflexive if and only if $E'_b$ is reflexive.</p>
+<p><strong>Proof.</strong> The operator norm on $E'$ is complete because a uniformly convergent sequence of continuous functionals has a continuous limit; reflexivity passes to the dual and back by the standard argument using the canonical embeddings and the bipolar theorem. $\square$</p>
+<p><strong>Example (the strong dual of the Schwartz space).</strong> In <em>Fréchet Spaces</em> the Schwartz space $\mathcal{S}(\mathbb{R}^n)$ was shown to be a Fréchet–Montel space. Being Montel and Fréchet, it is reflexive; its strong dual $\mathcal{S}'(\mathbb{R}^n)$ is the space of <strong>tempered distributions</strong>, and the strong topology is the topology of uniform convergence on the rapidly decreasing bounded sets. The distribution theory, the Fourier transform on $\mathcal{S}'$ and the operations of differentiation and convolution of distributions are the subject of <em>Analysis on Linear Spaces</em> in Part III.</p>
+<p><strong>Remark.</strong> A Montel space is reflexive, and the strong dual of a Montel space is Montel; the strong dual of a Fréchet–Montel space is therefore a reflexive Montel space, which is why the spaces $C^\infty(U)$, $\mathcal{O}(\Omega)$, $\mathcal{S}(\mathbb{R}^n)$ and their duals form a self-dual class under the passage to the strong dual. The precise notions of a distinguished Fréchet space and a DF-space, which control when the strong dual is again Fréchet, belong to the finer theory and are treated.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A <strong>dual pair</strong> $\langle E, F\rangle$ is a pair of vector spaces with a separating bilinear form; the <strong>weak topology</strong> $\sigma(E,F)$ is generated by the seminorms $x \mapsto \lvert\langle x,y\rangle\rvert$ and has dual $F$, the <strong>polar</strong> $A^\circ \subseteq F$ of $A \subseteq E$ is the set of $y$ with $\lvert\langle x,y\rangle\rvert \leq 1$ on $A$, and the <strong>topology of uniform convergence on a family</strong> $\mathcal{A}$ of weakly bounded sets has the polars $A^\circ$ as a neighbourhood basis. The <strong>bipolar theorem</strong> states that $A^{\circ\circ}$ is the weak closure of the convex balanced hull of $A$; consequently the weakly closed convex balanced sets are exactly the polars. By the <strong>Mackey–Arens theorem</strong> the locally convex topologies on $E$ with dual $F$ are exactly the topologies of uniform convergence on weakly bounded families covering $F$, they form an interval from the <strong>weak topology</strong> $\sigma(E,F)$ to the <strong>Mackey topology</strong> $\tau(E,F)$, and they all have the same dual, the same closed convex sets and the same bounded sets. A space whose topology is the Mackey topology of its dual pair is a <strong>Mackey space</strong>.</p>
+<p>For a locally convex space $E$ the <strong>weak topology</strong> is $\sigma(E,E')$ and the <strong>weak-star topology</strong> on the dual is $\sigma(E',E)$; the <strong>strong dual</strong> $E'_b$ carries the topology $\beta(E',E)$ of uniform convergence on the bounded sets, and the <strong>Mackey topology</strong> on the dual is $\tau(E',E)$. The <strong>Banach–Alaoglu theorem</strong> says that the polar of every neighbourhood of $0$ in $E$ is weak-star compact, which for a normed space means that the dual unit ball is weak-star compact and for a reflexive space that the unit ball is weakly compact; <strong>Goldstine's theorem</strong> says that the unit ball of $E$ is weak-star dense in the unit ball of $E''$. The <strong>canonical embedding</strong> $\iota : E \to (E'_b)'_b$ defines semi-reflexivity (bijectivity) and reflexivity (bijective topological isomorphism); for locally convex spaces semi-reflexivity is equivalent to the relative weak compactness of the bounded sets, for normed spaces to the weak compactness of the unit ball, and for Fréchet spaces reflexivity is equivalent to the Montel property. The standard examples are $(c_0)' \cong \ell^1$ and $(\ell^1)' \cong \ell^\infty$ with $c_0$ not a dual space, the reflexivity of $\ell^p$ for $1<p<\infty$ and its failure for $\ell^1$, and the strong dual of the Schwartz space, the space of tempered distributions, whose analysis belongs to Part III.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle E, F\rangle$, $\langle x,y\rangle$</td>
+<td>Dual pair and its pairing</td>
+</tr>
+<tr>
+<td>$A^\perp$</td>
+<td>Annihilator of $A$</td>
+</tr>
+<tr>
+<td>$A^\circ$</td>
+<td>Polar of $A$</td>
+</tr>
+<tr>
+<td>$\sigma(E,F)$, $\sigma(E',E)$</td>
+<td>Weak and weak-star topologies</td>
+</tr>
+<tr>
+<td>$\tau(E,F)$, $\tau(E',E)$</td>
+<td>Mackey topologies</td>
+</tr>
+<tr>
+<td>$\beta(E',E)$</td>
+<td>Strong topology on the dual</td>
+</tr>
+<tr>
+<td>$E'$, $E'_b$, $E'_\sigma$</td>
+<td>Dual, strong dual, weak dual</td>
+</tr>
+<tr>
+<td>$\iota : E \to E''$</td>
+<td>Canonical embedding</td>
+</tr>
+<tr>
+<td>$c_0$, $\ell^p$, $\ell^\infty$</td>
+<td>Sequence spaces</td>
+</tr>
+<tr>
+<td>$\mathcal{S}$, $\mathcal{S}'$</td>
+<td>Schwartz space and tempered distributions</td>
+</tr>
+<tr>
+<td>Montel, Mackey, semi-reflexive, reflexive</td>
+<td>Properties of locally convex spaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces</em> (Springer, 1987), Chapters IV–V, for dual pairs, polar topologies, the bipolar theorem and the Mackey–Arens theorem.</li>
+<li>Gottfried Köthe, <em>Topological Vector Spaces I</em> and <em>II</em> (Springer, 1969 and 1979), for a comprehensive treatment of duality theory and the strong dual.</li>
+<li>Helmut H. Schaefer and Manfred P. Wolff, <em>Topological Vector Spaces</em> (Springer, second edition 1999), for the Mackey topology, the bipolar theorem and reflexivity.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition 1990), for the Banach–Alaoglu theorem, Goldstine's theorem, the Krein–Milman theorem and weak compactness in Banach spaces.</li>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw–Hill, second edition 1991), for the weak topologies, the Banach–Alaoglu theorem and the characterisations of reflexivity.</li>
+<li>Joseph Diestel, <em>Sequences and Series in Banach Spaces</em> (Springer, 1984), for Schur's theorem, the duality of the sequence spaces and the failure of reflexivity.</li>
+<li>François Trèves, <em>Topological Vector Spaces, Distributions and Kernels</em> (Academic Press, 1967), for the strong dual of the Schwartz space and the route to distribution theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
