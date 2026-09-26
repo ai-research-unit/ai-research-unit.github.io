@@ -180,6 +180,11 @@ if src_assets.exists():
     shutil.copytree(src_assets, deploy_assets)
     print("Copied assets/")
 
+for name in ("robots.txt", ".nojekyll", ".gitlab-ci.yml"):
+    if (SRC / name).exists():
+        shutil.copy(SRC / name, DEPLOY / name)
+        print(f"Copied {name}")
+
 # nav_articles is only used for the {nav} placeholder, which renders the same
 # four links on every page regardless of the current article, so the pool it is
 # drawn from does not matter.
