@@ -6,6 +6,9 @@
 ### <a href="articles_physics/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>
 <!-- the core proposal; the two sectors, informational and material; the complex coordinates; the metric; what the framework achieves; status and open questions. -->
 
+### <a href="articles_physics/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>
+<!-- the algebraic conventions; the spacetime conventions; the Dirac mass term and the linear chirality-off-diagonal convention; the real structure $\flat$; the four-vector, the 4×4 regular and the 2×2 matrix representations. -->
+
 ### <a href="articles_physics/why-complexify-spacetime.html">Why Complexify Spacetime?</a>
 <!-- the question; what Minkowski knew; what $ict$ does; what was lost and why the loss is technical; what we forgot; the complex structure should be local; additional motivations; what the programme does not claim. -->
 
@@ -36,8 +39,6 @@
 
 ## Mathematical physics
 
-### <a href="articles_physics/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>
-<!-- the algebraic conventions; the spacetime conventions; the Dirac mass term and the linear chirality-off-diagonal convention; the real structure $\flat$; the four-vector, the 4×4 regular and the 2×2 matrix representations. -->
 
 ### - Biquaternion Algebra
 
