@@ -70,7 +70,7 @@ $$
 $$
 where $\bar{\tilde{\Lambda}}$ is the quaternion conjugate. It acts on the material sector $\mathbb{M}_-$ by <strong>rotor conjugation</strong>
 $$
-\tilde{X}\ \longmapsto\ \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger,\qquad \tilde{X}\in\mathbb{M}_-.
+\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,\qquad \tilde{Q}\in\mathbb{M}_-.
 $$
 The set of unit-norm biquaternions is a group under biquaternion multiplication; under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ (with $\Phi(e_k)=-i\sigma_k$ and $\Phi(i)=iI_2$) it is exactly
 $$
@@ -113,13 +113,13 @@ since $\tilde{\Lambda}\bar{\tilde{\Lambda}}=\bar{\tilde{\Lambda}}\tilde{\Lambda}
 <p><strong>The action and its kernel.</strong> Rotor conjugation defines a map
 $$
 \Pi:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
-\Pi(\tilde{\Lambda}):\ \tilde{X}\longmapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger ,
+\Pi(\tilde{\Lambda}):\ \tilde{Q}\longmapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger ,
 $$
 into the restricted (proper orthochronous) Lorentz group. It is well defined because the conjugate of an anti-Hermitian element is anti-Hermitian, it preserves the norm form, and it is a group homomorphism:
 $$
 \Pi(\tilde{\Lambda}_2\tilde{\Lambda}_1)=\Pi(\tilde{\Lambda}_2)\circ\Pi(\tilde{\Lambda}_1),
 $$
-as follows from $(\tilde{\Lambda}_2\tilde{\Lambda}_1)\tilde{X}(\tilde{\Lambda}_2\tilde{\Lambda}_1)^\dagger=\tilde{\Lambda}_2(\tilde{\Lambda}_1\tilde{X}\tilde{\Lambda}_1^\dagger)\tilde{\Lambda}_2^\dagger$. Its kernel is
+as follows from $(\tilde{\Lambda}_2\tilde{\Lambda}_1)\tilde{Q}(\tilde{\Lambda}_2\tilde{\Lambda}_1)^\dagger=\tilde{\Lambda}_2(\tilde{\Lambda}_1\tilde{Q}\tilde{\Lambda}_1^\dagger)\tilde{\Lambda}_2^\dagger$. Its kernel is
 $$
 \ker\Pi=\{\pm e_0\}\cong\mathbb{Z}/2\mathbb{Z},
 $$
@@ -196,7 +196,7 @@ the familiar leading Thomas-precession angle. For two boosts of $0.01\,c$ at rig
 <p>The Lie algebra of $SL(2,\mathbb{C})$, viewed as a <strong>real</strong> Lie algebra, is the space of traceless $2\times2$ complex matrices,
 $$
 \mathfrak{g}=\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}
-=\{X\in M_2(\mathbb{C}):\operatorname{tr}X=0\},
+=\{M\in M_2(\mathbb{C}):\operatorname{tr}M=0\},
 $$
 of real dimension $6$. In the biquaternion basis it is
 $$
@@ -213,10 +213,10 @@ $$
 [K_j,K_k]=-2\varepsilon_{jkl}J_l .
 $$
 The first two say that the rotations form a subalgebra $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ (the compact part) and that the boosts transform as a vector under it. The third is the infinitesimal statement that <strong>the boosts do not close</strong>: the bracket of two boost generators is a rotation generator. This is the Lie-algebraic origin of the Thomas–Wigner rotation and of the non-closure of the preceding section.</p>
-<p><strong>Relation to $\mathfrak{so}(1,3)$ and to $\mathfrak{sl}(2,\mathbb{C})$.</strong> The real Lie algebra $\mathfrak{g}$ is isomorphic to the Lie algebra $\mathfrak{so}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\Pi$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathfrak{sl}(2,\mathbb{C})$. The exponential map $\exp:\mathfrak{g}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $X$ maps to $e_0$ exactly when it is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$, so the preimage of $e_0$ is nonzero — indeed a union of conjugacy classes, not a discrete set. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a <strong>product</strong> of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
+<p><strong>Relation to $\mathfrak{so}(1,3)$ and to $\mathfrak{sl}(2,\mathbb{C})$.</strong> The real Lie algebra $\mathfrak{g}$ is isomorphic to the Lie algebra $\mathfrak{so}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\Pi$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathfrak{sl}(2,\mathbb{C})$. The exponential map $\exp:\mathfrak{g}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $M$ maps to $e_0$ exactly when it is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$, so the preimage of $e_0$ is nonzero — indeed a union of conjugacy classes, not a discrete set. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a <strong>product</strong> of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
 $$
-\tilde{\Lambda}=\exp(X)\exp(Y),\qquad
-X\in\operatorname{span}_{\mathbb{R}}\{K_1,K_2,K_3\},\quad
+\tilde{\Lambda}=\exp(M)\exp(N),\qquad
+M\in\operatorname{span}_{\mathbb{R}}\{K_1,K_2,K_3\},\quad
 Y\in\operatorname{span}_{\mathbb{R}}\{J_1,J_2,J_3\}.
 $$
 The exponential map and its failure of surjectivity are treated in the companion article on the biquaternion exponential.</p>
@@ -226,7 +226,7 @@ B(J_j,J_k)=-16\,\delta_{jk},\qquad
 B(K_j,K_k)=+16\,\delta_{jk},\qquad
 B(J_j,K_k)=0,
 $$
-(computed from $B(X,Y)=\operatorname{tr}(\operatorname{ad}X\,\operatorname{ad}Y)$ in this algebra). Its signature is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.</p>
+(computed from $B(M,N)=\operatorname{tr}(\operatorname{ad}M\,\operatorname{ad}N)$ in this algebra). Its signature is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.</p>
 <h2 id="the-two-math154-halves">The Two $\mathfrak{su}(2)$ Halves</h2>
 <p>The complexification of the real Lie algebra $\mathfrak{g}$ splits. Let $\mathsf{i}$ denote the <strong>complexification unit</strong>, which is a formal scalar and is not the scalar imaginary $i\in\mathbb{B}$. Define
 $$
@@ -341,8 +341,8 @@ of dimension $1+3+3+9=16=4\times4$.</p>
 <p>The biquaternion algebra is not merely the home of the rotors; it is itself a representation of the group it defines. Three distinct structures should be distinguished.</p>
 <p><strong>As the vector representation.</strong> Under the conjugation action
 $$
-X\ \longmapsto\ \tilde{\Lambda}\,X\,\tilde{\Lambda}^\dagger,
-\qquad X\in\mathbb{B},\quad \tilde{\Lambda}\in SL(2,\mathbb{C}),
+\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
+\qquad \tilde{Q}\in\mathbb{B},\quad \tilde{\Lambda}\in SL(2,\mathbb{C}),
 $$
 the four-complex-dimensional algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries the irreducible representation
 $$
@@ -379,7 +379,7 @@ Consequently:</p>
 </ul>
 <p>The defining spinor $(\tfrac12,0)$ is the simplest example: $\Phi(-e_0)=-I_2$, so $\pm\tilde{\Lambda}$ act differently on every spinor, whereas they act identically on every four-vector. In particular a rotation by $2\pi$, which is $e_0$ in the four-vector representation, is $-e_0$ on the spinor module; a rotation by $4\pi$ is the identity on both. The spinor therefore carries a genuine two-valued representation, and the sign of a spinor is a degree of freedom invisible to any four-vector. The companion article on the spinor module develops the spinor action and the bilinear pairings in detail; the point recorded here is its representation-theoretic classification.</p>
 <h2 id="summary">Summary</h2>
-<p>The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$; rotor conjugation $\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^\dagger$ is the covering homomorphism, with kernel $\{\pm e_0\}$.</p>
+<p>The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$; rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$ is the covering homomorphism, with kernel $\{\pm e_0\}$.</p>
 <p>Within the group, the rotations form the subgroup $SU(2)\subset\mathbb{H}_{\mathbb{B}}$, while the boosts are the Hermitian unit-norm biquaternions $\mathcal{B}\subset\mathbb{M}_+$. The boosts are closed under inverse but not under multiplication: the product of two boost rotors is Hermitian exactly when the boosts are collinear, and otherwise is a boost times a rotation. The rotation angle is the Thomas–Wigner angle,
 $$
 \tan\frac{\delta}{2}
@@ -430,7 +430,7 @@ about the axis $\hat{\mathbf u}_1\times\hat{\mathbf u}_2$; the boost factor has 
 <td>Unit-norm biquaternion (Lorentz rotor)</td>
 </tr>
 <tr>
-<td>$\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^\dagger$</td>
+<td>$\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$</td>
 <td>Rotor conjugation (four-vector action)</td>
 </tr>
 <tr>

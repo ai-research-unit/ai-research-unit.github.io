@@ -70,9 +70,9 @@ $$</p>
 <p>$$
 E_{ij} E_{kl} = \delta_{jk} E_{il},
 $$</p>
-<p>from which $E_{ik} X E_{lj} = X_{kl} E_{ij}$ for any matrix $X = (X_{kl})$. If $I \neq 0$ is a two-sided ideal and $X \in I$ has $X_{kl} \neq 0$, then</p>
+<p>from which $E_{ik} M E_{lj} = M_{kl} E_{ij}$ for any matrix $M = (M_{kl})$. If $I \neq 0$ is a two-sided ideal and $M \in I$ has $M_{kl} \neq 0$, then</p>
 <p>$$
-E_{ij} = X_{kl}^{-1} E_{ik} X E_{lj} \in I.
+E_{ij} = M_{kl}^{-1} E_{ik} M E_{lj} \in I.
 $$</p>
 <p>Hence $I$ contains every matrix unit, so $I = M_2(\mathbb{C})$. Transporting back gives the claim. $\square$</p>
 <p>Consequences over $\mathbb{C}$:</p>
@@ -92,23 +92,16 @@ $$</p>
 <p>With the idempotents $p, q$ of Section 4 this reads $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ with $\mathbb{B}p \cong \mathbb{B}q \cong S$. Hence $0 \subset \mathbb{B}p \subset \mathbb{B}$ is a composition series, and the <strong>length of $\mathbb{B}$ as a left module over itself is $2$</strong>, with both factors isomorphic to $S$. The right regular module has length $2$ as well, with factors the dual module $S^{*}$. All of this is over $\mathbb{C}$.</p>
 <h1 id="part-ii-idempotents-and-the-peirce-decomposition">Part II: Idempotents and the Peirce Decomposition</h1>
 <h2 id="4-idempotents-and-orthogonal-idempotents">4. Idempotents and Orthogonal Idempotents</h2>
-<p>Let $A$ be an associative unital algebra. An element $e \in A$ is an <strong>idempotent</strong> if $e^2 = e$. Idempotents encode direct summands: for idempotent $e$,</p>
-<p>$$
-A = Ae \oplus A(1-e) \quad (\text{left}), \qquad A = eA \oplus (1-e)A \quad (\text{right}),
-$$</p>
-<p>and every such decomposition of the regular module arises from an idempotent. Two idempotents $e, f$ are <strong>orthogonal</strong> if $ef = fe = 0$; then $e+f$ is again idempotent. A family $\{e_1, \dots, e_n\}$ is pairwise orthogonal if $e_i e_j = 0$ for $i \neq j$, and <strong>complete</strong> if in addition $\sum_i e_i = 1$. A nonzero idempotent $e$ is <strong>primitive</strong> if it is not a sum of two nonzero orthogonal idempotents. The criterion used below, for a semisimple algebra $A$, is</p>
+<p>Let $A$ be an associative unital algebra. An element $e \in A$ is an <strong>idempotent</strong> if $e^2 = e$, and two idempotents $e, f$ are <strong>orthogonal</strong> if $ef = fe = 0$. A nonzero idempotent $e$ is <strong>primitive</strong> if it is not a sum of two nonzero orthogonal idempotents, and for a semisimple algebra</p>
 <p>$$
 e \text{ primitive} \iff Ae \text{ is a minimal left ideal} \iff eAe \text{ is a division ring}.
 $$</p>
-<p><strong>Explicit idempotents in $\mathbb{B}$.</strong> Over $\mathbb{C}$, put</p>
+<p>Over $\mathbb{C}$, the idempotents</p>
 <p>$$
-p = \frac{e_0 + i e_3}{2}, \qquad q = \frac{e_0 - i e_3}{2}.
+p = \frac{e_0 + i e_3}{2}, \qquad q = \frac{e_0 - i e_3}{2}
 $$</p>
-<p>Since $(i e_3)^2 = i^2 e_3^2 = (-1)(-1) = 1$, one has $p^2 = p$, $q^2 = q$ and</p>
-<p>$$
-pq = qp = \frac{e_0 - (i e_3)^2}{4} = 0, \qquad p + q = e_0.
-$$</p>
-<p>So $p$ and $q$ are orthogonal idempotents summing to the unit. They are not central: $e_1$ anticommutes with $i e_3$, hence does not commute with $p$ or $q$. Under $\mathbb{B} \cong M_2(\mathbb{C})$ they correspond to the diagonal matrix units, and each is primitive.</p>
+<p>satisfy $p^2 = p$, $q^2 = q$, $pq = qp = 0$ and $p + q = e_0$, and correspond to the diagonal matrix units $E_{11}$ and $E_{22}$. They are primitive, and they generate the matrix units of the next section.</p>
+<p>The classification of the idempotents of $\mathbb{B}$ — the trivial idempotents, the bijection with the roots of $-1$, the Hermitian projections and the dimension of the idempotent set — is the subject of <em>Biquaternion Idempotents and Projections</em>.</p>
 <h2 id="5-matrix-units-in-the-biquaternion-algebra">5. Matrix Units in the Biquaternion Algebra</h2>
 <p>The off-diagonal matrix units can also be written explicitly. Put</p>
 <p>$$

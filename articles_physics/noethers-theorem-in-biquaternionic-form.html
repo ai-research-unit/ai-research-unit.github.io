@@ -55,13 +55,13 @@
 <p>Noether's theorem connects two things a physical theory supplies separately: its <strong>symmetries</strong> and its <strong>conservation laws</strong>. Every continuous symmetry of an action corresponds to a conserved quantity, and in a field theory to a conserved current. The theorem is not specific to any algebra, so writing it biquaternionically does not by itself produce a conservation law that was not already there. What the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ fixes is the <strong>form</strong> the theorem takes: which subspace the conserved objects live in, how a symmetry acts on a biquaternion-valued field, and which biquaternion expressions are the currents.</p>
 <p>The two ends of the theorem are both already in the read list. <em>Relativistic Mechanics in Biquaternionic Form</em> gives the free-particle action</p>
 <p>$$
-S = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}},
+S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}},
 $$</p>
 <p>whose integrand is built from the norm form of the displacement biquaternion, and it gives the conservation of the four-current in the framework form $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$. This article joins the two ends: it derives the current from the symmetry of the action, for the two kinds of symmetry the framework contains.</p>
 <p><strong>Two kinds of symmetry.</strong> A relativistic action has</p>
 <ul>
 <li><strong>internal</strong> symmetries, which do not move the spacetime point — here the central phase $\tilde{\Phi}\mapsto e^{i\alpha}\tilde{\Phi}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and</li>
-<li><strong>spacetime</strong> symmetries, the Poincaré transformations — four translations $\tilde{X}\mapsto\tilde{X}+\tilde{a}$ and six Lorentz transformations $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.</li>
+<li><strong>spacetime</strong> symmetries, the Poincaré transformations — four translations $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$ and six Lorentz transformations $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.</li>
 </ul>
 <p>The internal case produces a current biquaternion $\tilde{J}\in\mathbb{M}_-$ with $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})=0$, the framework form of $\partial_\mu J^\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.</p>
 <p><strong>What is established, and what is not.</strong> Established below, and recomputed: the central-phase current of the complex biquaternion scalar field,</p>
@@ -74,10 +74,10 @@ $$</p>
 <h2 id="the-action-and-what-a-symmetry-is">The Action and What a Symmetry Is</h2>
 <p><strong>The particle.</strong> The free relativistic particle of rest mass $m$ has the action</p>
 <p>$$
-S[\tilde{X}] = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}},
-\qquad d\tilde{X} = ic\,dt\,e_0 + d\mathbf{x}\in\mathbb{M}_- .
+S[\tilde{Q}] = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}},
+\qquad d\tilde{Q} = ic\,dt\,e_0 + d\mathbf{x}\in\mathbb{M}_- .
 $$</p>
-<p>Because $d\tilde{X}\,\overline{d\tilde{X}} = -c^2dt^2 + d\mathbf{x}^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt/\gamma$, and the Lagrangian in the coordinate time $t$ is</p>
+<p>Because $d\tilde{Q}\,\overline{d\tilde{Q}} = -c^2dt^2 + d\mathbf{x}^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt/\gamma$, and the Lagrangian in the coordinate time $t$ is</p>
 <p>$$
 L(\mathbf{v}) = -mc^2\sqrt{1-\mathbf{v}^2/c^2} = -\frac{mc^2}{\gamma},
 \qquad \gamma = \frac{1}{\sqrt{1-\mathbf{v}^2/c^2}} .
@@ -99,7 +99,7 @@ $$</p>
 \qquad\Longrightarrow\qquad
 \mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{J}\right) = 0 \ \text{on shell}.
 $$</p>
-<p>For a spacetime symmetry, the same construction applied to a transformation that moves the point $\tilde{X}$ yields a current carrying one index per generator: for translations the energy–momentum current, for Lorentz transformations the angular-momentum current. The two forms differ only in what the symmetry variation acts on. The general identity behind both is that the divergence of the current is the field equation contracted with the symmetry variation; it is written out for the central phase in the next section and for translations after that.</p>
+<p>For a spacetime symmetry, the same construction applied to a transformation that moves the point $\tilde{Q}$ yields a current carrying one index per generator: for translations the energy–momentum current, for Lorentz transformations the angular-momentum current. The two forms differ only in what the symmetry variation acts on. The general identity behind both is that the divergence of the current is the field equation contracted with the symmetry variation; it is written out for the central phase in the next section and for translations after that.</p>
 <h2 id="the-current-of-the-central-phase">The Current of the Central Phase</h2>
 <p><strong>The symmetry.</strong> Multiplication by a central phase,</p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 \mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{J}\right) = 0 \quad\text{on shell},
 $$</p>
 <p>which is the continuity equation $\partial_t\rho + \mathrm{div}\,\mathbf{j} = 0$.</p>
-<p><strong>On what case was this checked?</strong> A single plane wave is a trap: for $\tilde{\Phi} = \tilde{\Phi}_0e^{i\,\mathrm{Sc}(\tilde{K}\tilde{X})}$ the current is <em>constant</em>, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:</p>
+<p><strong>On what case was this checked?</strong> A single plane wave is a trap: for $\tilde{\Phi} = \tilde{\Phi}_0e^{i\,\mathrm{Sc}(\tilde{K}\tilde{Q})}$ the current is <em>constant</em>, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:</p>
 <ul>
 <li><strong>a superposition of on-shell plane waves.</strong> With $c = \hbar = m = 1$ and the momenta $(|\mathbf{k}|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = \mathbf{k}^2 + 1$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})$ simplifies to <strong>exactly zero</strong>;</li>
 <li><strong>a standing wave</strong>, $\tilde{\Phi} = \sin(kx)\cos(\omega t) + i\sin(kx)\sin(\omega t)$ with $\omega^2 = c^2k^2 + m^2c^4/\hbar^2$: this is on shell and is <strong>not</strong> a plane wave, and again $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})$ is <strong>exactly zero</strong>;</li>
@@ -146,9 +146,9 @@ $$</p>
 $$</p>
 <p>which vanishes only in the massless limit. In the biquaternion reading the mass term is the off-diagonal coupling between the two <em>central</em> ideals of $\mathbb{B}$ — the two chiralities — so it breaks exactly the symmetry that rotates them, and not the central $U(1)$ that the algebra canonically carries. The previously recorded obstruction belonged to the retired antilinear single-field equation; the gauge principle article's corresponding section is revised on the same grounds.</p>
 <h2 id="translation-invariance-and-the-conserved-four-momentum">Translation Invariance and the Conserved Four-Momentum</h2>
-<p><strong>The particle charge.</strong> The action $S[\tilde{X}]$ above depends on $\tilde{X}$ only through $d\tilde{X}$, so the constant shift</p>
+<p><strong>The particle charge.</strong> The action $S[\tilde{Q}]$ above depends on $\tilde{Q}$ only through $d\tilde{Q}$, so the constant shift</p>
 <p>$$
-\tilde{X}\ \longmapsto\ \tilde{X} + \tilde{a},
+\tilde{Q}\ \longmapsto\ \tilde{Q} + \tilde{a},
 \qquad \tilde{a}\in\mathbb{M}_-\ \text{constant},
 $$</p>
 <p>is a symmetry of the action. The Noether charges are the momentum conjugate to $\mathbf{x}$ and the energy conjugate to $t$; computing the first from the Lagrangian,</p>
@@ -162,7 +162,7 @@ $$</p>
 \boxed{\ \tilde{P} = m\tilde{U} = i\frac{E}{c}\,e_0 + \mathbf{p}\ }
 \qquad (\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})).
 $$</p>
-<p>The mass-shell relation $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $\dot{\tilde{P}} = 0$, because $L$ has no explicit $\tilde{X}$-dependence. As an independent check, a particle with $m = c = 1$, $\mathbf{p} = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)e_1$ with $\psi = 1.2$: the norm form is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.</p>
+<p>The mass-shell relation $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $\dot{\tilde{P}} = 0$, because $L$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\mathbf{p} = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)e_1$ with $\psi = 1.2$: the norm form is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.</p>
 <p><strong>The conservation law for a system, stated correctly.</strong> For an isolated system of bodies $a$ the conserved object is the <strong>total</strong> four-momentum, and the correct statement is</p>
 <p>$$
 \tilde{P}_{\mathrm{tot}} = \sum_a \tilde{P}_a,
@@ -185,9 +185,9 @@ $$</p>
 \tilde{F}_1 + \tilde{F}_2 = (\gamma_1 - \gamma_2)\frac{d\tilde{P}_1}{dt} = -\frac{5}{12}\left(i\,e_0 + e_1\right) \neq 0 .
 $$</p>
 <p>The naive sum of the parent's four-forces is not zero even though the total four-momentum is conserved. For the collision of <em>Exercise: Four-Momentum Conservation in a Collision</em> ($E_1 = 3mc^2$, equal masses, $\theta^* = 90^\circ$), the total four-momenta $\tilde{P}_{\mathrm{in}}$ and $\tilde{P}_{\mathrm{out}}$ were recomputed and agree component by component in the laboratory.</p>
-<p><strong>What translation does to a plane wave.</strong> A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde{K}\tilde{X}))$, $\tilde{K}\in\mathbb{M}_-$, and $\tilde{X}\mapsto\tilde{X}+\tilde{a}$,</p>
+<p><strong>What translation does to a plane wave.</strong> A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde{K}\tilde{Q}))$, $\tilde{K}\in\mathbb{M}_-$, and $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$,</p>
 <p>$$
-\tilde{\Phi}\big|_{\tilde{X}+\tilde{a}} = e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{a})}\,\tilde{\Phi}\big|_{\tilde{X}},
+\tilde{\Phi}\big|_{\tilde{Q}+\tilde{a}} = e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{a})}\,\tilde{\Phi}\big|_{\tilde{Q}},
 \qquad
 \tilde{\Phi}_0\ \text{constant}.
 $$</p>
@@ -308,7 +308,7 @@ $$</p>
 <td>d'Alembertian</td>
 </tr>
 <tr>
-<td>$S = -mc\int\sqrt{-d\tilde{X}\,\overline{d\tilde{X}}}$</td>
+<td>$S = -mc\int\sqrt{-d\tilde{Q}\,\overline{d\tilde{Q}}}$</td>
 <td>Free-particle action</td>
 </tr>
 <tr>
@@ -316,7 +316,7 @@ $$</p>
 <td>Free-particle Lagrangian</td>
 </tr>
 <tr>
-<td>$\tilde{X} = ic\,t\,e_0 + \mathbf{x}$</td>
+<td>$\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$</td>
 <td>Four-position, in $\mathbb{M}_-$</td>
 </tr>
 <tr>

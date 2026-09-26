@@ -87,17 +87,17 @@ $$</p>
 <p><strong>Not a division algebra.</strong> $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ contains zero divisors. The zero divisors are the elements $Q_0 e_0$ with $Q_0$ a nonzero multiple of $1 \pm j$, i.e., the elements $\pm t(1 \mp j) e_0$ with $t \neq 0$. These form the union of the two real lines $\mathbb{R}(1 + j)$ and $\mathbb{R}(1 - j)$ in the two-dimensional real space $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$.</p>
 <p><strong>Identification with $\mathbb{R}^2$.</strong> The elements of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ are in bijection with pairs $(q_0, q'_0)$ of real numbers, where $Q_0 = q_0 + j q'_0$. We use the notation</p>
 <p>$$
-\tilde{X} = x_0 e_0 + j x'_0 e_0, \qquad x_0, x'_0 \in \mathbb{R},
+\tilde{Q} = x_0 e_0 + j x'_0 e_0, \qquad x_0, x'_0 \in \mathbb{R},
 $$</p>
-<p>for a general element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$. The two real numbers $x_0, x'_0$ are the <strong>coordinates</strong> of $\tilde{X}$ in the split complex subspace.</p>
+<p>for a general element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$. The two real numbers $x_0, x'_0$ are the <strong>coordinates</strong> of $\tilde{Q}$ in the split complex subspace.</p>
 <h3 id="functions-on-the-split-complex-subspace">Functions on the Split Complex Subspace</h3>
 <p>A <strong>split-biquaternion-valued function on the split complex subspace</strong> is a map</p>
 <p>$$
-\tilde{F} : \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{X} \mapsto \tilde{F}(\tilde{X}).
+\tilde{F} : \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{Q} \mapsto \tilde{F}(\tilde{Q}).
 $$</p>
-<p>Writing $\tilde{X} = x_0 e_0 + j x'_0 e_0$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the two real variables $x_0, x'_0$:</p>
+<p>Writing $\tilde{Q} = x_0 e_0 + j x'_0 e_0$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the two real variables $x_0, x'_0$:</p>
 <p>$$
-\tilde{F}(\tilde{X}) = F_0(x_0, x'_0) e_0 + F_1(x_0, x'_0) e_1 + F_2(x_0, x'_0) e_2 + F_3(x_0, x'_0) e_3.
+\tilde{F}(\tilde{Q}) = F_0(x_0, x'_0) e_0 + F_1(x_0, x'_0) e_1 + F_2(x_0, x'_0) e_2 + F_3(x_0, x'_0) e_3.
 $$</p>
 <p>The restriction to $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ reduces the number of independent real variables from eight to two.</p>
 <h3 id="partial-derivatives">Partial Derivatives</h3>
@@ -138,12 +138,12 @@ $$</p>
 <p>where each $F_\mu$ is integrated over the two-dimensional domain $\Omega$ with respect to the Lebesgue measure on $\mathbb{R}^2$.</p>
 <p>The integration theory on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the two-dimensional analogue of the four-dimensional theory. The fundamental solution of the split complex derivative is the kernel</p>
 <p>$$
-\tilde{G}_{\mathbb{D}}(\tilde{X}) = \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^2},
+\tilde{G}_{\mathbb{D}}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^2},
 $$</p>
-<p>where $\bar{\tilde{X}}$ is the split complex conjugate and $\|\tilde{X}\|_E^2 = x_0^2 + x'^2_0$ is the squared Euclidean norm. The kernel is defined for $\tilde{X} \neq 0$.</p>
+<p>where $\bar{\tilde{Q}}$ is the split complex conjugate and $\|\tilde{Q}\|_E^2 = x_0^2 + x'^2_0$ is the squared Euclidean norm. The kernel is defined for $\tilde{Q} \neq 0$.</p>
 <p>The Cauchy integral formula on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ takes the form</p>
 <p>$$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi i_{\mathbb{D}}} \int_{\partial \Omega} \tilde{G}_{\mathbb{D}}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, ds(\tilde{X}),
+\tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi i_{\mathbb{D}}} \int_{\partial \Omega} \tilde{G}_{\mathbb{D}}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, ds(\tilde{Q}),
 $$</p>
 <p>where $i_{\mathbb{D}}$ is a formal imaginary unit in the split complex algebra (which does not exist as an element of $\mathbb{D}$ but is used as a bookkeeping device), and $ds$ is the arc length on the boundary. The formula is not directly analogous to the complex case, because the split complex algebra has no imaginary unit. The correct form is obtained in the idempotent basis, where it reduces to two copies of the real Cauchy integral formula.</p>
 <h3 id="comparison-with-the-complex-subspace">Comparison with the Complex Subspace</h3>
@@ -176,7 +176,7 @@ $$</p>
 <p>This vanishes if and only if all $q_\mu = 0$. So every nonzero element is invertible, and there are no zero divisors.</p>
 <p><strong>Identification with $\mathbb{R}^4$.</strong> The elements of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ are in bijection with quadruples $(q_0, q_1, q_2, q_3)$ of real numbers. We use the notation</p>
 <p>$$
-\tilde{X} = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+\tilde{Q} = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
 $$</p>
 <p>for a general element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.</p>
 <h3 id="functions-and-operators">Functions and Operators</h3>
@@ -195,7 +195,7 @@ $$</p>
 $$</p>
 <p>and the convective derivative $\tilde{D}$.</p>
 <p>The analysis on $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the ordinary quaternion analysis, extended to functions with values in the full split biquaternion algebra. Since there are no zero divisors in $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the analysis is clean everywhere.</p>
-<p>The integral and the Cauchy integral formula are the same as on the general subspace, with the fundamental solution $\tilde{G}(\tilde{X}) = \bar{\tilde{X}}/\|\tilde{X}\|_E^4$.</p>
+<p>The integral and the Cauchy integral formula are the same as on the general subspace, with the fundamental solution $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$.</p>
 <h3 id="comparison-with-the-quaternion-subspace-of-the-biquaternion-algebra">Comparison with the Quaternion Subspace of the Biquaternion Algebra</h3>
 <p>In the biquaternion algebra $\mathbb{B}$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, and it is a copy of the real quaternion algebra. It is a division algebra, and the analysis on it is the ordinary quaternion analysis.</p>
 <p>In the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed-point set of split complex conjugation, and it is also a copy of the real quaternion algebra. It is a division algebra, and the analysis on it is the ordinary quaternion analysis.</p>
@@ -225,7 +225,7 @@ $$</p>
 <p>whose zero set is the three-dimensional cone $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$; that form does not detect zero divisors either, as the invertible element $e_0 + j e_1$ on the cone shows.</p>
 <p><strong>Identification with $\mathbb{R}^4$.</strong> The elements of $\mathbb{M}_+$ are in bijection with quadruples $(q_0, q'_1, q'_2, q'_3)$ of real numbers. We use the notation</p>
 <p>$$
-\tilde{X} = x_0 e_0 + j x_1 e_1 + j x_2 e_2 + j x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+\tilde{Q} = x_0 e_0 + j x_1 e_1 + j x_2 e_2 + j x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
 $$</p>
 <p>for a general element of $\mathbb{M}_+$.</p>
 <h3 id="functions-and-operators_1">Functions and Operators</h3>
@@ -260,7 +260,7 @@ $$</p>
 <p>whose zero set is the three-dimensional cone $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$; as on $\mathbb{M}_+$, that form does not detect zero divisors.</p>
 <p><strong>Identification with $\mathbb{R}^4$.</strong> The elements of $\mathbb{M}_-$ are in bijection with quadruples $(q'_0, q_1, q_2, q_3)$ of real numbers. We use the notation</p>
 <p>$$
-\tilde{X} = j x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+\tilde{Q} = j x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
 $$</p>
 <p>for a general element of $\mathbb{M}_-$.</p>
 <h3 id="functions-and-operators_2">Functions and Operators</h3>
@@ -463,8 +463,8 @@ $$</p>
 <td>Split-quaternion-valued integral</td>
 </tr>
 <tr>
-<td>$\tilde{G}(\tilde{X})$</td>
-<td>$\bar{\tilde{X}}/\|\tilde{X}\|_E^4$</td>
+<td>$\tilde{G}(\tilde{Q})$</td>
+<td>$\bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$</td>
 <td>Fundamental solution of $\tilde{\nabla}$</td>
 </tr>
 </tbody>

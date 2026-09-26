@@ -251,12 +251,12 @@ $$</p>
 <h2 id="the-lie-algebra-of-the-operator-group">The Lie Algebra of the Operator Group</h2>
 <h3 id="the-derivative-at-the-identity">The Derivative at the Identity</h3>
 <p>Differentiating the operator action along a one-parameter subgroup gives the infinitesimal operator, and the result identifies the Lie algebra of the operator group with a familiar space.</p>
-<p><strong>Proposition.</strong> Let $X \in \mathbb{B}$ and let $x$ be fixed. Then</p>
+<p><strong>Proposition.</strong> Let $\tilde{Q} \in \mathbb{B}$ and let $x$ be fixed. Then</p>
 <p>$$
 \left.\frac{d}{dt}\right|_{t=0}\operatorname{H}_{e_0+tX}(x) = Xx + xX^\dagger .
 $$</p>
 <p><strong>Proof.</strong> Since $\operatorname{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^\dagger$, differentiating the product at $\tilde{Q} = e_0$ gives $\dot{\tilde{Q}}x + x\dot{\tilde{Q}}^\dagger = Xx + xX^\dagger$. $\square$</p>
-<p>The formula contains both of the algebra's symmetries. Along the anti-Hermitian directions, $X^\dagger = -X$, the infinitesimal operator is the <strong>commutator</strong> $[X,x]$, which is the infinitesimal rotation; along the Hermitian directions, $X^\dagger = X$, it is the <strong>anticommutator</strong> $Xx + xX$, which is the infinitesimal boost. The two appear in one formula because the sandwich is built from the dagger, and the anticommutator is the infinitesimal form of the statement that a boost does not double the half-angle of its element, which the section on the rotor records.</p>
+<p>The formula contains both of the algebra's symmetries. Along the anti-Hermitian directions, $\tilde{Q}^\dagger = -\tilde{Q}$, the infinitesimal operator is the <strong>commutator</strong> $[\tilde{Q},x]$, which is the infinitesimal rotation; along the Hermitian directions, $\tilde{Q}^\dagger = \tilde{Q}$, it is the <strong>anticommutator</strong> $\tilde{Q}x + x\tilde{Q}$, which is the infinitesimal boost. The two appear in one formula because the sandwich is built from the dagger, and the anticommutator is the infinitesimal form of the statement that a boost does not double the half-angle of its element, which the section on the rotor records.</p>
 <h3 id="the-lie-algebra-of-the-sandwich">The Lie Algebra of the Sandwich</h3>
 <p><strong>Theorem.</strong> Restricted to the unit-norm slice the operator group is the Lorentz group $SL(2,\mathbb{C})$ acting by the sandwich, and its Lie algebra is $\mathfrak{sl}(2,\mathbb{C})$ regarded over $\mathbb{R}$,</p>
 <p>$$
@@ -471,7 +471,7 @@ $$</p>
 $$</p>
 <p>which has both real and imaginary coefficients: an element of the quaternion subspace is taken out of it, and a rotation would have preserved it. The comparison is the content of the subspaces table of the main text, where the dagger sandwich preserves the two sectors for every element while the automorphism preserves the two halves only for a unitary element.</p>
 <h3 id="an-inner-derivation">An Inner Derivation</h3>
-<p>Take $X = e_1$ and compute the infinitesimal operator of the inverse sandwich on the other units:</p>
+<p>Take $\tilde{Q} = e_1$ and compute the infinitesimal operator of the inverse sandwich on the other units:</p>
 <p>$$
 [e_1, e_2] = e_1e_2 - e_2e_1 = e_3 + e_3 = 2e_3 , \qquad [e_1, e_3] = e_1e_3 - e_3e_1 = -e_2 - e_2 = -2e_2 , \qquad [e_1, e_1] = 0 .
 $$</p>
@@ -554,15 +554,15 @@ $$</p>
 <td>the composition law</td>
 </tr>
 <tr>
-<td>$Xx + xX^\dagger$</td>
-<td>the infinitesimal operator, $[X,x]$ on the anti-Hermitian directions</td>
+<td>$\tilde{Q}x + x\tilde{Q}^\dagger$</td>
+<td>the infinitesimal operator, $[\tilde{Q},x]$ on the anti-Hermitian directions</td>
 </tr>
 <tr>
 <td>$\operatorname{Int}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{-1}$</td>
 <td>the inverse sandwich, or inner action (contrast section)</td>
 </tr>
 <tr>
-<td>$\operatorname{ad}_X(x) = [X,x]$</td>
+<td>$\operatorname{ad}_{\tilde{Q}}(x) = [\tilde{Q},x]$</td>
 <td>the inner derivation, the derivative of the inverse sandwich</td>
 </tr>
 <tr>
@@ -608,7 +608,7 @@ $$</p>
 <li><em>Biquaternion Polar Representation</em> (<code>articles_maths/biquaternion-polar-representation.md</code>), for the four factors of a single element and the theorem that they exist and are unique</li>
 <li><em>Biquaternion Partial Polar Representations</em> (<code>articles_maths/biquaternion-partial-polar-representations.md</code>), for the three pairings of the four factors, immediately before the present article in the menu</li>
 <li><em>Biquaternion Representation Theory</em> (<code>articles_maths/biquaternion-representation-theory.md</code>), for the automorphisms, the derivations and the Skolem–Noether theorem in their own right</li>
-<li><em>Biquaternion Algebraic Representations</em> (<code>articles_maths/biquaternion-algebraic-representations.md</code>), for the four-vector, matrix, spinor and Clifford representations of the algebra</li>
+<li><em>Biquaternion Other Algebraic Representations</em> (<code>articles_maths/biquaternion-other-algebraic-representations.md</code>), for the spinor and Clifford realizations of the algebra, and <em>Biquaternion 2×2 Matrix Representation</em> (<code>articles_maths/biquaternion-2x2-matrix-representation.md</code>) for the matrix model on which they rest</li>
 <li><em>Biquaternion 4×4 Regular Matrix Representation</em> (<code>articles_maths/biquaternion-4x4-regular-matrix-representation.md</code>), for left multiplication, the operator of this article's comparison column</li>
 <li><em>Biquaternion Zero Divisors</em> (<code>articles_maths/biquaternion-zero-divisors.md</code>), for the rank-one stratum and the null cone as orbits</li>
 <li><em>Biquaternion Roots of Minus One</em> (<code>articles_maths/biquaternion-roots-of-minus-one.md</code>), for the elements of square minus the unit, the generators of the operators of order two</li>

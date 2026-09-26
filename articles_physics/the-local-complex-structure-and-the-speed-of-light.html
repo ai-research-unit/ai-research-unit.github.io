@@ -87,19 +87,19 @@ A general element $i q_0e_0+\mathbf q$ of $\mathbb{M}_-$ is sent to $-q_0e_0+i\m
 <h3 id="the-minkowski-metric-admits-no-compatible-complex-structure">The Minkowski metric admits no compatible complex structure</h3>
 <p>The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ satisfied both $J^2=-I$ and the compatibility
 $$
-N(JX,JY)=N(X,Y) \qquad \text{for all } X,Y,
+N(JX,JY)=N(\tilde{Q},\tilde{R}) \qquad \text{for all } \tilde{Q},\tilde{R},
 $$
-which is the condition that the complex structure be an isometry of the norm form. Two elementary identities follow. Taking $Y=JX$ and using $J^2=-I$ and the symmetry of $N$,
+which is the condition that the complex structure be an isometry of the norm form. Two elementary identities follow. Taking $\tilde{R}=JX$ and using $J^2=-I$ and the symmetry of $N$,
 $$
-N(JX,-X)=N(X,JX) \;\Longrightarrow\; -N(X,JX)=N(X,JX) \;\Longrightarrow\; N(X,JX)=0 ,
+N(JX,-\tilde{Q})=N(\tilde{Q},JX) \;\Longrightarrow\; -N(\tilde{Q},JX)=N(\tilde{Q},JX) \;\Longrightarrow\; N(\tilde{Q},JX)=0 ,
 $$
-so a vector and its image under $J$ are orthogonal. Taking $Y=X$,
+so a vector and its image under $J$ are orthogonal. Taking $\tilde{R}=\tilde{Q}$,
 $$
-N(JX,JX)=N(X,X).
+N(JX,JX)=N(\tilde{Q},\tilde{Q}).
 $$
-Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $N(X,X)\neq0$, the form is definite with the sign of $N(X,X)$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $Y$ orthogonal to the plane and $Z$ in the plane,
+Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $N(\tilde{Q},\tilde{Q})\neq0$, the form is definite with the sign of $N(\tilde{Q},\tilde{Q})$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde{R}$ orthogonal to the plane and $Z$ in the plane,
 $$
-N(JY,Z)=N(J^2Y,JZ)=-N(Y,JZ)=0,
+N(JY,Z)=N(J^2\tilde{R},JZ)=-N(\tilde{R},JZ)=0,
 $$
 using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The norm form of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore <strong>no complex structure compatible with the Minkowski metric exists</strong>, neither globally nor at a single point.</p>
 <p>The obstruction is easy to check directly. In two dimensions, writing $g=\begin{pmatrix}p&q\\q&r\end{pmatrix}$ and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the condition $J^{\mathsf T}gJ=g$ forces $p=r$ and $q=0$: the compatible form is a multiple of the identity, hence definite, of signature $(2,0)$ or $(0,2)$, never $(1,1)$. In four dimensions the forms compatible with a complex structure have eigenvalues each of multiplicity two, so each sign occurs an even number of times — the signature is $(4,0)$, $(2,2)$ or $(0,4)$; a symbolic solution of $J_0^{\mathsf T}GJ_0=G$ for the standard $J_0$ returns a form whose eigenvalues each occur twice. A count of three positives and one negative cannot arise, and the signature $(3,1)$ is exactly the excluded case.</p>
@@ -122,9 +122,9 @@ with $c>0$ a local scale. Equivalently, the temporal coordinate of $\mathbb{M}_-
 <li><strong>It is pointwise, not holomorphic.</strong> The local structure is an identification on the local tangent space at each point. It is not a system of holomorphic coordinates and it does not make spacetime a complex manifold, since by the previous section no such structure exists. In flat spacetime with constant $c$ the pointwise identifications fit together and the structure becomes global; in general they do not.</li>
 <li><strong>It requires a scale.</strong> The coordinate $ict$ is a length and $t$ is a time, so the map $t\mapsto ict$ is dimensionally consistent only because $c$ is a speed. Without a scale, the statement "the temporal direction is imaginary" has no metric content. The local complex structure is therefore not a structure that merely <em>has</em> a scale; it is a structure <em>with</em> a scale, and that scale is $c$.</li>
 </ul>
-<p>At each point the local structure induces the quadratic form of the material sector. With $d\tilde{X}=ic\,dt\,e_0+d\mathbf x$,
+<p>At each point the local structure induces the quadratic form of the material sector. With $d\tilde{Q}=ic\,dt\,e_0+d\mathbf x$,
 $$
-N(d\tilde{X})=(ic\,dt)^2+d\mathbf x^2=-c^2\,dt^2+d\mathbf x^2 .
+N(d\tilde{Q})=(ic\,dt)^2+d\mathbf x^2=-c^2\,dt^2+d\mathbf x^2 .
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the metric.</p>
 <h2 id="the-scale-math130-and-the-minkowski-metric">The Scale $c$ and the Minkowski Metric</h2>
@@ -236,7 +236,7 @@ The wave-operator route uses the field equation and the constitutive relations, 
 <td>Complex structure of the algebra</td>
 </tr>
 <tr>
-<td>$\tilde{X}=ic\,t\,e_0+\mathbf x$</td>
+<td>$\tilde{Q}=ic\,t\,e_0+\mathbf x$</td>
 <td>Four-position of the material sector</td>
 </tr>
 <tr>

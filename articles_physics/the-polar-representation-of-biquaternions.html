@@ -113,15 +113,15 @@ $$</p>
 <h3 id="the-phase-of-a-four-vector-is-the-math45">The Phase of a Four-Vector Is the $ict$</h3>
 <p>Take a four-position on a world line of velocity $\mathbf{v} = \beta c\,\hat{\mathbf{u}}$, with time component $ct$. In the material sector it is</p>
 <p>$$
-\tilde{X} = i\,ct\,e_0 + \beta c t\,\hat{\mathbf{u}} ,
+\tilde{Q} = i\,ct\,e_0 + \beta c t\,\hat{\mathbf{u}} ,
 $$</p>
 <p>and its norm form is the interval</p>
 <p>$$
-N(\tilde{X}) = -c^2t^2 + \beta^2c^2t^2 = -c^2t^2\left(1-\beta^2\right) ,
+N(\tilde{Q}) = -c^2t^2 + \beta^2c^2t^2 = -c^2t^2\left(1-\beta^2\right) ,
 $$</p>
 <p>a <strong>negative</strong> real for a timelike displacement. The principal square root of a negative real is positive imaginary, so</p>
 <p>$$
-\rho = \sqrt{N(\tilde{X})} = i\,ct\sqrt{1-\beta^2} , \qquad r = c t\sqrt{1-\beta^2} = c\tau , \qquad \alpha = \frac{\pi}{2} ,
+\rho = \sqrt{N(\tilde{Q})} = i\,ct\sqrt{1-\beta^2} , \qquad r = c t\sqrt{1-\beta^2} = c\tau , \qquad \alpha = \frac{\pi}{2} ,
 $$</p>
 <p>where $\tau$ is the proper time: the scale is $c$ times the proper time, and the phase is $\pi/2$. The phase is thus the object that makes the time component imaginary, and it takes the value $\pi/2$ exactly on the timelike four-vectors. For a spacelike displacement, whose interval is positive, the modulus is real and the phase vanishes, $\alpha = 0$. The two values $\alpha = 0$ and $\alpha = \pi/2$ are the two sectors: the sector exchange $i\mathbb{M}_- = \mathbb{M}_+$ of the four-vector article is the multiplication by the phase factor at its two distinguished angles.</p>
 <p>For the four-velocity and the four-momentum the same computation gives the standard constants. With $u^\mu = \gamma c(1,\boldsymbol\beta)$ the interval is $N = -c^2$, so the scale is $c$ itself; with $p^\mu = \gamma m c(1,\boldsymbol\beta)$ the interval is $N = -m^2c^2$, so the scale is $mc$. In each case the phase is $\pi/2$, and the boost and rotation factors carry the frame.</p>
@@ -135,15 +135,15 @@ $$</p>
 <p>Hence $r$ and $\alpha$ are invariants of the orbit of $\tilde{Q}$ under the Lorentz group, and the phase is not a gauge artefact of the frame: two elements with different phases cannot be carried into one another by a Lorentz transformation. The phase is an invariant of the element, and it is the only one of the four factors that the algebra's own symmetry group cannot move.</p>
 <h2 id="the-boost-and-the-two-rotor-normalisations">The Boost and the Two Rotor Normalisations</h2>
 <h3 id="the-boost-factor-is-a-square">The Boost Factor Is a Square</h3>
-<p>The boost factor of the polar representation of a four-vector is the <strong>square</strong> of the boost rotor that the physics articles use, taken in the normalisation that carries the rest frame to the lab frame, and the reason is the structure of the action. A Lorentz rotor $\tilde{\Lambda}$ acts on a four-vector by conjugation, $X\mapsto\tilde{\Lambda}X\tilde{\Lambda}^\dagger$, so the rotor appears twice. With the corpus's convention $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $\hat{\mathbf{u}} = \mathbf{v}/|\mathbf{v}|$, the rotor carries the four-position of a particle of velocity $\mathbf{v}$ into its rest four-position,</p>
+<p>The boost factor of the polar representation of a four-vector is the <strong>square</strong> of the boost rotor that the physics articles use, taken in the normalisation that carries the rest frame to the lab frame, and the reason is the structure of the action. A Lorentz rotor $\tilde{\Lambda}$ acts on a four-vector by conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, so the rotor appears twice. With the corpus's convention $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $\hat{\mathbf{u}} = \mathbf{v}/|\mathbf{v}|$, the rotor carries the four-position of a particle of velocity $\mathbf{v}$ into its rest four-position,</p>
 <p>$$
-\tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger = ic\tau\,e_0 ,
+\tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger = ic\tau\,e_0 ,
 \qquad\text{hence}\qquad
-\tilde{X} = \tilde{\Lambda}^\dagger\left(ic\tau e_0\right)\tilde{\Lambda} = ic\tau\,\tilde{\Lambda}^{\dagger 2} = ic\tau\,\bar{\tilde{\Lambda}}^2 ,
+\tilde{Q} = \tilde{\Lambda}^\dagger\left(ic\tau e_0\right)\tilde{\Lambda} = ic\tau\,\tilde{\Lambda}^{\dagger 2} = ic\tau\,\bar{\tilde{\Lambda}}^2 ,
 $$</p>
 <p>where the last step uses the Hermitian character of a pure boost rotor, $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}$. The comparison with the representation of the same four-position,</p>
 <p>$$
-\tilde{X} = c\tau\,e^{i\pi/2}\,B , 
+\tilde{Q} = c\tau\,e^{i\pi/2}\,B , 
 $$</p>
 <p>identifies the boost factor with the square of the <strong>conjugate</strong> rotor, the rotor of rapidity $-\psi$ which carries the rest frame to the lab frame: $B = \bar{\tilde{\Lambda}}^2$, or equivalently</p>
 <p>$$
@@ -209,9 +209,9 @@ $$</p>
 $$</p>
 <p>with $B = \tilde{\Lambda}$, since a Hermitian positive-definite element is its own positive-definite factor and the rotor is then $\hat{q} = \bar{B}\tilde{\Lambda} = N(\tilde{\Lambda})e_0 = e_0$. The example is the one the maths companion article uses, and it is the reason the physics corpus works with two factors instead of four: on the Lorentz group the first two are trivial.</p>
 <h3 id="a-four-position-and-its-proper-time">A Four-Position and Its Proper Time</h3>
-<p>Take $\tilde{X} = i\,e_0 + 0.6\,e_1$, the four-position of a particle at $ct = 1$ moving at $0.6c$ along $e_1$. Then</p>
+<p>Take $\tilde{Q} = i\,e_0 + 0.6\,e_1$, the four-position of a particle at $ct = 1$ moving at $0.6c$ along $e_1$. Then</p>
 <p>$$
-N(\tilde{X}) = -1+0.36 = -0.64 , \qquad r = 0.8 = c\tau , \qquad \alpha = \frac{\pi}{2} ,
+N(\tilde{Q}) = -1+0.36 = -0.64 , \qquad r = 0.8 = c\tau , \qquad \alpha = \frac{\pi}{2} ,
 $$</p>
 <p>so the scale is the proper time and $B = 1.25e_0 - 0.75ie_1$, the square of the conjugate of the rotor of the previous example, $B = \bar{\tilde{\Lambda}}^2 = -(i/c)\tilde{U}$ with $\tilde{U} = \gamma(ie_0+0.6e_1)$ the four-velocity; the three rows of the table above are the rest of this family. The four-position is the proper time times the imaginary unit times that square, applied twice because the rotor acts by conjugation on both sides.</p>
 <h3 id="a-general-element-of-the-algebra">A General Element of the Algebra</h3>
@@ -229,7 +229,7 @@ $$</p>
 $$</p>
 <p>a rotation of $2.161669$ rad about $(1,2,0)/\sqrt5$. The element is a scale, a phase, a boost and a rotation, and no Lorentz transformation can remove the phase, since it is an invariant of the orbit.</p>
 <h3 id="a-null-four-vector">A Null Four-Vector</h3>
-<p>Take $\tilde{X} = i\,e_0 + e_1$, a displacement on the light cone, since $N(\tilde{X}) = -1+1 = 0$. The polar representation does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and the algebra's zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.</p>
+<p>Take $\tilde{Q} = i\,e_0 + e_1$, a displacement on the light cone, since $N(\tilde{Q}) = -1+1 = 0$. The polar representation does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and the algebra's zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.</p>
 <h2 id="the-four-factors-in-one-table">The Four Factors in One Table</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -364,7 +364,7 @@ $$</p>
 <td>the informational and material sectors; four-vectors live in $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$\tilde{X} = ict\,e_0+\mathbf{x}$</td>
+<td>$\tilde{Q} = ict\,e_0+\mathbf{x}$</td>
 <td>a four-position, interval $N = -c^2t^2+\mathbf{x}^2$</td>
 </tr>
 </tbody>

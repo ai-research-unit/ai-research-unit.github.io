@@ -82,7 +82,7 @@ $$</p>
 $$</p>
 <p>This is the standard <strong>mostly-minus</strong> convention, and it is the one the corpus uses throughout: the generators are the usual ones, the name is correct in the standard counting, and the square of a Clifford vector agrees with the biquaternion norm of the biquaternion the vector represents instead of differing by a sign. The $\mathbb{M}_-$ interval is a <em>separate</em> object — it belongs to the $ict$ gradient and not to the generators — and reads $ds^2 = -c^2\,dt^2 + d\mathbf{x}^2$, i.e.</p>
 <p>$$
-N(d\tilde{X}) = d\tilde{X}\circ\overline{d\tilde{X}} = (ic\,dt)^2 + d\mathbf{x}^2 = -c^2\,dt^2 + d\mathbf{x}^2 ,
+N(d\tilde{Q}) = d\tilde{Q}\circ\overline{d\tilde{Q}} = (ic\,dt)^2 + d\mathbf{x}^2 = -c^2\,dt^2 + d\mathbf{x}^2 ,
 $$</p>
 <p>with the minus arising from $i^2 = -1$ and not from the generators' metric. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$, and it is the level-2 object of the companion <em>Conventions in the Biquaternion Universe</em>; $g$ is the level-3 metric of the generators.</p>
 <p>The four generators, with the metric above, span a real Clifford algebra of dimension $16$, denoted $\mathrm{Cl}_{1,3}(\mathbb{R})$. In the standard mathematical convention $\mathrm{Cl}_{p,q}$ carries $p$ generators squaring to $+1$ and $q$ squaring to $-1$, so the label $(1,3)$ records one generator squaring to $+1$ and three to $-1$; the name is the standard one, $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$, and no relabelling warning is needed.</p>
@@ -500,7 +500,7 @@ $$</p>
 <p><strong>Mechanism one: multiplication, on the module.</strong> A spinor is an element of the minimal left ideal $S = \mathbb{B}p$, $p = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, <em>every</em> complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field.</p>
 <p><strong>Mechanism two: conjugation, on the algebra.</strong> A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation</p>
 <p>$$
-\tilde X \;\mapsto\; \tilde\Lambda\,\tilde X\,\tilde\Lambda^\dagger,
+\tilde{Q} \;\mapsto\; \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^\dagger,
 \qquad \tilde\Lambda\in\mathbb{B},\quad N(\tilde\Lambda)=1,
 $$</p>
 <p>not by multiplication. This mechanism carries the integer-spin sector: the four-vector, the gauge potential, the field strength, the four-current, and the rotors themselves as points of $SL(2,\mathbb{C})$.</p>
@@ -549,7 +549,7 @@ $$</p>
 <tr>
 <td>four-vector (momentum, position)</td>
 <td>$\mathbb{M}_-\subset\mathbb{B}$</td>
-<td>conjugation $\tilde\Lambda\tilde X\tilde\Lambda^\dagger$</td>
+<td>conjugation $\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$</td>
 <td>$1$</td>
 </tr>
 <tr>
@@ -692,7 +692,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Companion articles: <em>Biquaternion Algebra</em> (the definition, the four conjugations, and the four real subspaces); <em>Biquaternion Algebraic Representations</em> (the $2\times 2$ matrix representation, the trace, and the Clifford-algebra isomorphism on which this dictionary is built); <em>Clifford Algebras</em> (the general definition and the fundamental relation); <em>Clifford Algebras in Finite Dimensions</em> (the classification of the low-dimensional real Clifford algebras); <em>Clifford Algebras and Bott Periodicity</em> (the periodic structure); <em>The Dirac Equation in Biquaternionic Form</em> (the gradient, the mass term, and the plane-wave solutions); <em>Spinors</em> (the spinor representation); <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> (the module on which the even algebra acts); <em>The Spinor Representation of the Lorentz Group in Biquaternionic Form</em> (the Lorentz generators in biquaternion form); <em>Chiral Fermions in the Biquaternion Framework</em> and <em>Exercise: Chirality and the Weyl Spinors</em> ($\gamma_5$, the chiral projectors, and the Weyl spinors); <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> and <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> (the two sectors whose Clifford images are tabulated here); <em>Introduction to the Biquaternion Universe</em> (the algebra and the two sectors).</li>
+<li>Companion articles: <em>Biquaternion Algebra</em> (the definition, the four conjugations, and the four real subspaces); <em>Biquaternion 2×2 Matrix Representation</em> (the $2\times 2$ matrix representation and the trace) and <em>Biquaternion Other Algebraic Representations</em> (the Clifford-algebra isomorphism on which this dictionary is built); <em>Clifford Algebras</em> (the general definition and the fundamental relation); <em>Clifford Algebras in Finite Dimensions</em> (the classification of the low-dimensional real Clifford algebras); <em>Clifford Algebras and Bott Periodicity</em> (the periodic structure); <em>The Dirac Equation in Biquaternionic Form</em> (the gradient, the mass term, and the plane-wave solutions); <em>Spinors</em> (the spinor representation); <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> (the module on which the even algebra acts); <em>The Spinor Representation of the Lorentz Group in Biquaternionic Form</em> (the Lorentz generators in biquaternion form); <em>Chiral Fermions in the Biquaternion Framework</em> and <em>Exercise: Chirality and the Weyl Spinors</em> ($\gamma_5$, the chiral projectors, and the Weyl spinors); <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> and <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> (the two sectors whose Clifford images are tabulated here); <em>Introduction to the Biquaternion Universe</em> (the algebra and the two sectors).</li>
 </ul>
       </div>
     </main>

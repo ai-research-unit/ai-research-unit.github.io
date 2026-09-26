@@ -101,21 +101,21 @@ $$</p>
 <h3 id="the-observables">The observables</h3>
 <p>On a single qubit introduce the three Hermitian involutions</p>
 <p>$$
-\tilde{X} = ie_1, \qquad \tilde{Y} = ie_2, \qquad \tilde{Z} = ie_3,
+\tilde{Q} = ie_1, \qquad \tilde{Y} = ie_2, \qquad \tilde{Z} = ie_3,
 $$</p>
-<p>each of which satisfies $\tilde{X}^2 = \tilde{Y}^2 = \tilde{Z}^2 = e_0$ and which multiply as the Pauli matrices do up to central phases, for example</p>
+<p>each of which satisfies $\tilde{Q}^2 = \tilde{Y}^2 = \tilde{Z}^2 = e_0$ and which multiply as the Pauli matrices do up to central phases, for example</p>
 <p>$$
-\tilde{X}\tilde{Z} = (ie_1)(ie_3) = -e_1e_3 = e_2 = -i\tilde{Y}, \qquad
-\tilde{Z}\tilde{X} = -e_2 = i\tilde{Y}.
+\tilde{Q}\tilde{Z} = (ie_1)(ie_3) = -e_1e_3 = e_2 = -i\tilde{Y}, \qquad
+\tilde{Z}\tilde{Q} = -e_2 = i\tilde{Y}.
 $$</p>
 <p>On the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, tensor these with $e_0$ and with one another to form the nine elements</p>
 <div class="table-scroll"><table>
 
 <tbody>
 <tr>
-<td>$\tilde{X}\otimes e_0$</td>
-<td>$e_0\otimes\tilde{X}$</td>
-<td>$\tilde{X}\otimes\tilde{X}$</td>
+<td>$\tilde{Q}\otimes e_0$</td>
+<td>$e_0\otimes\tilde{Q}$</td>
+<td>$\tilde{Q}\otimes\tilde{Q}$</td>
 </tr>
 <tr>
 <td>$e_0\otimes\tilde{Z}$</td>
@@ -123,8 +123,8 @@ $$</p>
 <td>$\tilde{Z}\otimes\tilde{Z}$</td>
 </tr>
 <tr>
-<td>$\tilde{X}\otimes\tilde{Z}$</td>
-<td>$\tilde{Z}\otimes\tilde{X}$</td>
+<td>$\tilde{Q}\otimes\tilde{Z}$</td>
+<td>$\tilde{Z}\otimes\tilde{Q}$</td>
 <td>$\tilde{Y}\otimes\tilde{Y}$</td>
 </tr>
 </tbody>
@@ -145,9 +145,9 @@ $$</p>
 <tbody>
 <tr>
 <td><strong>row 1</strong></td>
-<td>$\tilde{X}\otimes e_0$</td>
-<td>$e_0\otimes\tilde{X}$</td>
-<td>$\tilde{X}\otimes\tilde{X}$</td>
+<td>$\tilde{Q}\otimes e_0$</td>
+<td>$e_0\otimes\tilde{Q}$</td>
+<td>$\tilde{Q}\otimes\tilde{Q}$</td>
 <td>$\prod = e_0\otimes e_0$</td>
 </tr>
 <tr>
@@ -159,8 +159,8 @@ $$</p>
 </tr>
 <tr>
 <td><strong>row 3</strong></td>
-<td>$\tilde{X}\otimes\tilde{Z}$</td>
-<td>$\tilde{Z}\otimes\tilde{X}$</td>
+<td>$\tilde{Q}\otimes\tilde{Z}$</td>
+<td>$\tilde{Z}\otimes\tilde{Q}$</td>
 <td>$\tilde{Y}\otimes\tilde{Y}$</td>
 <td>$\prod = e_0\otimes e_0$</td>
 </tr>
@@ -178,7 +178,7 @@ $$</p>
 <p>The value assignments of the parity argument use multiplicativity within each row and column. This is not an assumption about hidden variables; it is a theorem about commuting Hermitian elements, and it is worth deriving in the framework's terms.</p>
 <p><strong>Lemma.</strong> Let $\tilde{A}_1,\dots,\tilde{A}_m$ be mutually commuting Hermitian elements of $\mathbb{M}_+^{\otimes n}$ with common idempotent basis $\{\tilde{Q}_\alpha\}$, $\sum_\alpha \tilde{Q}_\alpha = e_0^{\otimes n}$, on which $\tilde{A}_i\tilde{Q}_\alpha = a_i^{(\alpha)}\tilde{Q}_\alpha$. Then the product $\tilde{A}_1\cdots\tilde{A}_m$ has eigenvalues $a^{(\alpha)}_1\cdots a^{(\alpha)}_m$ on the same idempotents.</p>
 <p><em>Proof.</em> Multiplying the eigenvalue equations gives $\tilde{A}_1\cdots\tilde{A}_m\tilde{Q}_\alpha = a^{(\alpha)}_1\cdots a^{(\alpha)}_m\tilde{Q}_\alpha$. $\square$</p>
-<p>For the magic square each generator has spectrum $\{\pm1\}$, so on each joint eigen-idempotent the product relation reads as a product of signs. Applying the lemma to row $1$, whose joint idempotents are built from $\tilde{P}_\pm(\hat{e}_1)$ on both factors, the identity $\tilde{X}\otimes\tilde{X} = (\tilde{X}\otimes e_0)(e_0\otimes\tilde{X})$ forces the third entry's value to be the product of the first two on every joint eigen-idempotent, so the row product relation holds automatically. The same argument applies to each row and column. The parity contradiction then needs only the two evaluations of the product of all nine values, one from the rows and one from the columns.</p>
+<p>For the magic square each generator has spectrum $\{\pm1\}$, so on each joint eigen-idempotent the product relation reads as a product of signs. Applying the lemma to row $1$, whose joint idempotents are built from $\tilde{P}_\pm(\hat{e}_1)$ on both factors, the identity $\tilde{Q}\otimes\tilde{Q} = (\tilde{Q}\otimes e_0)(e_0\otimes\tilde{Q})$ forces the third entry's value to be the product of the first two on every joint eigen-idempotent, so the row product relation holds automatically. The same argument applies to each row and column. The parity contradiction then needs only the two evaluations of the product of all nine values, one from the rows and one from the columns.</p>
 <h3 id="the-parity-contradiction">The parity contradiction</h3>
 <p>Suppose a noncontextual value assignment $v$ exists, with $v(e_0\otimes e_0) = 1$ and $v(\cdot)$ taking values in $\{\pm1\}$ on the nine entries, since each squares to the identity. Multiplicativity on commuting sets then forces, for each row,</p>
 <p>$$
@@ -247,7 +247,7 @@ $$</p>
 <p><strong>5. Empirical content.</strong> Contextuality is already tested; the framework reproduces the standard predictions and adds no observable.</p>
 <h2 id="summary">Summary</h2>
 <p>A context is a maximal set of mutually commuting Hermitian elements of $\mathbb{M}_+$, realized by a complete family of orthogonal idempotents. A noncontextual value assignment is an algebra homomorphism on each context, with a value for each observable independent of which context contains it. The <strong>Kochen–Specker theorem</strong> states that for a module of complex dimension at least three no such assignment exists; the hypothesis is necessary, and the native qubit, of dimension two, admits a noncontextual model.</p>
-<p>The smallest arena in which the obstruction appears in the framework is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module has dimension four. There the <strong>Mermin–Peres magic square</strong> gives the obstruction explicitly: nine Hermitian involutions $\tilde{X}=ie_1,\tilde{Y}=ie_2,\tilde{Z}=ie_3$ and $e_0$ arranged in a $3\times3$ array, every row and column a commuting set, with every row product equal to $+e_0\otimes e_0$, the first two column products equal to $+e_0\otimes e_0$, and the third column product equal to $-e_0\otimes e_0$. Multiplying the row equations and the column equations evaluates the product of all nine entries as $+1$ and as $-1$ respectively, so no noncontextual $\{\pm1\}$ assignment exists.</p>
+<p>The smallest arena in which the obstruction appears in the framework is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module has dimension four. There the <strong>Mermin–Peres magic square</strong> gives the obstruction explicitly: nine Hermitian involutions $\tilde{Q}=ie_1,\tilde{Y}=ie_2,\tilde{Z}=ie_3$ and $e_0$ arranged in a $3\times3$ array, every row and column a commuting set, with every row product equal to $+e_0\otimes e_0$, the first two column products equal to $+e_0\otimes e_0$, and the third column product equal to $-e_0\otimes e_0$. Multiplying the row equations and the column equations evaluates the product of all nine entries as $+1$ and as $-1$ respectively, so no noncontextual $\{\pm1\}$ assignment exists.</p>
 <p>State-independent contextuality (the Kochen–Specker theorem and the magic square) is a property of the algebra $\mathbb{M}_+^{\otimes2}$ alone; state-dependent contextuality (the Bell and CHSH inequalities) is a property of a state paired with a context and is expressed in the framework by the trace pairing. The framework transcribes both; it does not change their predictions.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -291,7 +291,7 @@ $$</p>
 <td>Multiplicativity</td>
 </tr>
 <tr>
-<td>$\tilde{X}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$</td>
+<td>$\tilde{Q}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$</td>
 <td>Hermitian involutions ($\sigma_1,\sigma_2,\sigma_3$)</td>
 </tr>
 <tr>

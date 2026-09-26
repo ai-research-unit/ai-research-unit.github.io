@@ -65,19 +65,19 @@
 <h2 id="the-four-position">The Four-Position</h2>
 <p>The <strong>four-position biquaternion</strong> is</p>
 <p>$$
-\tilde{X} = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3,
+\tilde{Q} = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3,
 $$</p>
-<p>where $t \in \mathbb{R}$ is the ordinary time coordinate, $x, y, z \in \mathbb{R}$ are the ordinary spatial coordinates, and $c$ is the speed of light in the medium. The scalar part of $\tilde{X}$ is the complex time coordinate $ict$, and the vector part is the spatial position $\mathbf{x} = x\,e_1 + y\,e_2 + z\,e_3$. In compact form,</p>
+<p>where $t \in \mathbb{R}$ is the ordinary time coordinate, $x, y, z \in \mathbb{R}$ are the ordinary spatial coordinates, and $c$ is the speed of light in the medium. The scalar part of $\tilde{Q}$ is the complex time coordinate $ict$, and the vector part is the spatial position $\mathbf{x} = x\,e_1 + y\,e_2 + z\,e_3$. In compact form,</p>
 <p>$$
-\tilde{X} = ic\,t\,e_0 + \mathbf{x}.
+\tilde{Q} = ic\,t\,e_0 + \mathbf{x}.
 $$</p>
 <p>The four-position biquaternion lives in the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ (imaginary scalar part, real vector part), matching the structure of the four-vector $x^\mu = (ict, \mathbf{x})$ in the $ict$ convention.</p>
 <h2 id="the-invariant-interval">The Invariant Interval</h2>
-<p>The <strong>invariant interval</strong> between two nearby events in spacetime is the <strong>norm form</strong> of the displacement biquaternion $d\tilde{X} \in \mathbb{M}_-$:</p>
+<p>The <strong>invariant interval</strong> between two nearby events in spacetime is the <strong>norm form</strong> of the displacement biquaternion $d\tilde{Q} \in \mathbb{M}_-$:</p>
 <p>$$
-ds^2 = d\tilde{X}\,\overline{d\tilde{X}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
+ds^2 = d\tilde{Q}\,\overline{d\tilde{Q}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
 $$</p>
-<p>Here $\overline{d\tilde{X}} = ic\,dt\,e_0 - d\mathbf{x}$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.</p>
+<p>Here $\overline{d\tilde{Q}} = ic\,dt\,e_0 - d\mathbf{x}$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.</p>
 <p><strong>The norm form on $\mathbb{M}_-$.</strong> For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 = i q'_0$ imaginary and $\mathbf{Q} = q_1 e_1 + q_2 e_2 + q_3 e_3$ real, the norm form is</p>
 <p>$$
 \tilde{Q}\bar{\tilde{Q}} = Q_0^2 + |\mathbf{Q}|^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
@@ -142,9 +142,9 @@ $$</p>
 <h2 id="the-action">The Action</h2>
 <p>The <strong>relativistic action</strong> for a free particle of rest mass $m$ is</p>
 <p>$$
-S = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}},
+S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}},
 $$</p>
-<p>where the square root is the ordinary real square root of the positive quantity $-d\tilde{X}\,\overline{d\tilde{X}} = c^2\,dt^2 - d\mathbf{x}^2 = c^2\,d\tau^2$. Since $d\tau = dt/\gamma$, we have $c\,d\tau = c\,dt/\gamma$, and the action becomes</p>
+<p>where the square root is the ordinary real square root of the positive quantity $-d\tilde{Q}\,\overline{d\tilde{Q}} = c^2\,dt^2 - d\mathbf{x}^2 = c^2\,d\tau^2$. Since $d\tau = dt/\gamma$, we have $c\,d\tau = c\,dt/\gamma$, and the action becomes</p>
 <p>$$
 S = -mc^2\int\frac{dt}{\gamma} = -mc^2\int\sqrt{1 - \mathbf{v}^2/c^2}\,dt,
 $$</p>
@@ -199,12 +199,12 @@ $$</p>
 <tbody>
 <tr>
 <td>Four-position</td>
-<td>$\tilde{X} = ic\,t\,e_0 + \mathbf{x}$</td>
+<td>$\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$</td>
 <td>—</td>
 </tr>
 <tr>
 <td>Invariant interval</td>
-<td>$ds^2 = d\tilde{X}\,\overline{d\tilde{X}}$</td>
+<td>$ds^2 = d\tilde{Q}\,\overline{d\tilde{Q}}$</td>
 <td>$= -c^2 dt^2 + d\mathbf{x}^2$</td>
 </tr>
 <tr>
@@ -229,7 +229,7 @@ $$</p>
 </tr>
 <tr>
 <td>Action</td>
-<td>$S = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}}$</td>
+<td>$S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}}$</td>
 <td>—</td>
 </tr>
 <tr>
@@ -263,7 +263,7 @@ $$</p>
 <p><strong>The Lorentz force in biquaternion form.</strong> The four-force in component form is standard: $\tilde{F} = i\gamma q(\mathbf{E}\cdot\mathbf{v})/c\,e_0 + \gamma q(\mathbf{E} + \mathbf{v}\times\mathbf{B})$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde{F}_{\text{EM}}$ and the four-velocity $\tilde{U}$ is <strong>not</strong> simply the real part of $\tilde{F}_{\text{EM}}\circ\tilde{U}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.</p>
 </li>
 <li>
-<p><strong>The Lagrangian formulation.</strong> The biquaternion action $S = -mc\int\sqrt{-d\tilde{X}\,\overline{d\tilde{X}}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form?</p>
+<p><strong>The Lagrangian formulation.</strong> The biquaternion action $S = -mc\int\sqrt{-d\tilde{Q}\,\overline{d\tilde{Q}}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form?</p>
 </li>
 <li>
 <p><strong>The Hamiltonian formulation.</strong> The biquaternion form of the relativistic Hamiltonian and the associated Hamilton equations have not been developed.</p>
@@ -321,7 +321,7 @@ $$</p>
 <td>Lorentz factor</td>
 </tr>
 <tr>
-<td>$\tilde{X} = ict\,e_0 + \mathbf{x}$</td>
+<td>$\tilde{Q} = ict\,e_0 + \mathbf{x}$</td>
 <td>Four-position biquaternion</td>
 </tr>
 <tr>

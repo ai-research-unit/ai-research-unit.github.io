@@ -64,12 +64,12 @@ $$</p>
 <p>for all biquaternions $\tilde{Q},\tilde{R}$. A multiplicative quadratic form on a four-dimensional algebra is a rare object, and the group that preserves it is thereby tied to the algebra's multiplication rather than imposed from outside. The automorphism group of the form on the complex algebra is $O(4,\mathbb{C})$; the automorphisms that also preserve the algebra's <strong>real structure</strong> — the anti-Hermitian material slice — form the Lorentz group.</p>
 <p>Three statements organize the article, and they are the three levels at which the identification can be read.</p>
 <ul>
-<li><strong>At the complex level</strong>, $N$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$, acting by $\tilde{X}\mapsto\tilde{A}\tilde{X}\tilde{B}^{-1}$.</li>
+<li><strong>At the complex level</strong>, $N$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$, acting by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$.</li>
 <li><strong>At the real level</strong>, the restricted form on the anti-Hermitian slice is the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.</li>
-<li><strong>At the rotor level</strong>, the identity component is exactly the group of conjugations $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ by unit-norm biquaternions, and the correspondence is two-to-one.</li>
+<li><strong>At the rotor level</strong>, the identity component is exactly the group of conjugations $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ by unit-norm biquaternions, and the correspondence is two-to-one.</li>
 </ul>
 <p><strong>Boundaries.</strong> This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article <em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em>. The structure and the finite-dimensional representations of the group as such are treated in <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>; this article's subject is the characterization of the group by the form.</p>
-<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the center). The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat = -\dagger$ (anti-Hermitian). The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$. The material coordinate is $\tilde{X} = ict\,e_0 + \mathbf{x}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
+<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the center). The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat = -\dagger$ (anti-Hermitian). The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$. The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
 <h2 id="the-norm-form-as-a-quadratic-form">The Norm Form as a Quadratic Form</h2>
 <p>The norm form is the quadratic map</p>
 <p>$$
@@ -131,15 +131,15 @@ $$</p>
 <p>The norm form <strong>is the determinant</strong>, and $\Phi$ is an isomorphism of $\mathbb{C}$-algebras. The verification of the determinant identity is a direct expansion; it was also checked numerically on random biquaternions, with $\det\Phi(\tilde{Q})$ and $N(\tilde{Q})$ agreeing to machine precision.</p>
 <p>The determinant is a quadratic form on the four-dimensional space $M_2(\mathbb{C})$, and its automorphism group is classical. Consider the map</p>
 <p>$$
-T_{\tilde{A},\tilde{B}}:\ \tilde{X}\ \longmapsto\ \tilde{A}\,\tilde{X}\,\tilde{B}^{-1},
+T_{\tilde{A},\tilde{B}}:\ \tilde{Q}\ \longmapsto\ \tilde{A}\,\tilde{Q}\,\tilde{B}^{-1},
 \qquad
 \tilde{A},\tilde{B}\in GL_2(\mathbb{C}).
 $$</p>
 <p>It is invertible and $\mathbb{C}$-linear, and its effect on the form is</p>
 <p>$$
-N(T_{\tilde{A},\tilde{B}}\tilde{X}) = \det\!\left(\tilde{A}\tilde{X}\tilde{B}^{-1}\right)
-= \frac{\det\tilde{A}}{\det\tilde{B}}\,\det\tilde{X}
-= \frac{\det\tilde{A}}{\det\tilde{B}}\,N(\tilde{X}).
+N(T_{\tilde{A},\tilde{B}}\tilde{Q}) = \det\!\left(\tilde{A}\tilde{Q}\tilde{B}^{-1}\right)
+= \frac{\det\tilde{A}}{\det\tilde{B}}\,\det\tilde{Q}
+= \frac{\det\tilde{A}}{\det\tilde{B}}\,N(\tilde{Q}).
 $$</p>
 <p>Preservation of $N$ therefore requires $\det\tilde{A} = \det\tilde{B}$, and one may normalize both to unit determinant; the surviving pairs are $(\tilde{A},\tilde{B})\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(\tilde{A},\tilde{B})\mapsto T_{\tilde{A},\tilde{B}}$ is the set of pairs acting trivially, $T_{\tilde{A},\tilde{B}} = \mathrm{id}$, which is</p>
 <p>$$
@@ -159,16 +159,16 @@ $$</p>
 <h2 id="the-real-slice-and-the-minkowski-form">The Real Slice and the Minkowski Form</h2>
 <p>The Lorentz group is selected by the algebra's real structure. The <strong>anti-Hermitian slice</strong> is</p>
 <p>$$
-\mathbb{M}_- = \{\tilde{X}\in\mathbb{B} : \tilde{X}^\dagger = -\tilde{X}\},
+\mathbb{M}_- = \{\tilde{Q}\in\mathbb{B} : \tilde{Q}^\dagger = -\tilde{Q}\},
 $$</p>
 <p>a four-<strong>real</strong>-dimensional subspace, with the real basis $\{ie_0, e_1, e_2, e_3\}$. Writing</p>
 <p>$$
-\tilde{X} = i x_0 e_0 + x_1e_1 + x_2e_2 + x_3e_3,
+\tilde{Q} = i x_0 e_0 + x_1e_1 + x_2e_2 + x_3e_3,
 \qquad x_\mu\in\mathbb{R},
 $$</p>
 <p>the norm form is real and indefinite:</p>
 <p>$$
-N(\tilde{X}) = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 + \mathbf{x}^2 .
+N(\tilde{Q}) = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 + \mathbf{x}^2 .
 $$</p>
 <p>The restriction of $N$ to $\mathbb{M}_-$, in the real coordinates, is therefore the quadratic form with matrix</p>
 <p>$$
@@ -220,7 +220,7 @@ $$</p>
 $$</p>
 <p>On $\mathbb{M}_-$ the map $T$ is a real-linear transformation, and the condition</p>
 <p>$$
-N(T\tilde{X}) = N(\tilde{X})\ \text{ for all }\tilde{X}\in\mathbb{M}_-
+N(T\tilde{Q}) = N(\tilde{Q})\ \text{ for all }\tilde{Q}\in\mathbb{M}_-
 $$</p>
 <p>says exactly that $T$ preserves the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Hence</p>
 <p>$$
@@ -237,32 +237,32 @@ $$</p>
 $$</p>
 <p>and it acts by <strong>conjugation</strong>,</p>
 <p>$$
-\pi(\tilde{\Lambda}):\ \tilde{X}\ \longmapsto\ \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger .
+\pi(\tilde{\Lambda}):\ \tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger .
 $$</p>
 <p>Three properties, each a one-line verification, are the content of the identification.</p>
-<p><strong>It preserves the slice.</strong> If $\tilde{X}^\dagger = -\tilde{X}$ then</p>
+<p><strong>It preserves the slice.</strong> If $\tilde{Q}^\dagger = -\tilde{Q}$ then</p>
 <p>$$
-\left(\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger\right)^\dagger
-= \tilde{\Lambda}\tilde{X}^\dagger\tilde{\Lambda}^\dagger
-= -\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger,
+\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger\right)^\dagger
+= \tilde{\Lambda}\tilde{Q}^\dagger\tilde{\Lambda}^\dagger
+= -\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger,
 $$</p>
 <p>so the image is again anti-Hermitian.</p>
 <p><strong>It preserves the form.</strong> By multiplicativity,</p>
 <p>$$
-N(\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger)
-= N(\tilde{\Lambda})\,N(\tilde{X})\,N(\tilde{\Lambda}^\dagger)
-= 1\cdot N(\tilde{X})\cdot\overline{N(\tilde{\Lambda})}
-= N(\tilde{X}),
+N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger)
+= N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda}^\dagger)
+= 1\cdot N(\tilde{Q})\cdot\overline{N(\tilde{\Lambda})}
+= N(\tilde{Q}),
 $$</p>
 <p>using $N(\tilde{\Lambda}) = 1$ and $N(\tilde{\Lambda}^\dagger) = \overline{N(\tilde{\Lambda})} = 1$.</p>
-<p><strong>It defines a homomorphism.</strong> Since $\pi(\tilde{\Lambda}_1)\pi(\tilde{\Lambda}_2) = \pi(\tilde{\Lambda}_1\tilde{\Lambda}_2)$ and $(\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger)^\dagger$ reuses the same $\tilde{\Lambda}$ on both sides, the assignment is a continuous group homomorphism</p>
+<p><strong>It defines a homomorphism.</strong> Since $\pi(\tilde{\Lambda}_1)\pi(\tilde{\Lambda}_2) = \pi(\tilde{\Lambda}_1\tilde{\Lambda}_2)$ and $(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger)^\dagger$ reuses the same $\tilde{\Lambda}$ on both sides, the assignment is a continuous group homomorphism</p>
 <p>$$
 \pi:\ SL(2,\mathbb{C}) = \{\tilde{\Lambda} : N(\tilde{\Lambda}) = 1\} \longrightarrow SO^+(1,3).
 $$</p>
-<p>Its kernel is the set of rotors acting trivially on every $\tilde{X}\in\mathbb{M}_-$. Since $-e_0$ is central,</p>
+<p>Its kernel is the set of rotors acting trivially on every $\tilde{Q}\in\mathbb{M}_-$. Since $-e_0$ is central,</p>
 <p>$$
-(-e_0)\,\tilde{X}\,(-e_0)^\dagger = \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger\big|_{\tilde{\Lambda} = -e_0}
-= (-e_0)\tilde{X}(-e_0) = \tilde{X},
+(-e_0)\,\tilde{Q}\,(-e_0)^\dagger = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger\big|_{\tilde{\Lambda} = -e_0}
+= (-e_0)\tilde{Q}(-e_0) = \tilde{Q},
 $$</p>
 <p>so $\pm e_0$ act identically, and no other element does; hence</p>
 <p>$$
@@ -275,23 +275,23 @@ $$</p>
 \boxed{\; SO^+(1,3)\;\cong\;SL(2,\mathbb{C})/\{\pm e_0\}
 \;=\;\{\pi(\tilde{\Lambda}): N(\tilde{\Lambda})=1\}/\ker\pi .\;}
 $$</p>
-<p><strong>Verification.</strong> The two preservation properties and the kernel statement were checked numerically. Over three hundred random unit-norm rotors $\tilde{\Lambda} = R\,B$ (a rotation times a boost, normalized) applied to random anti-Hermitian $\tilde{X}$, the image was always anti-Hermitian and $|N(\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger) - N(\tilde{X})|$ was zero to machine precision. For a random rotor the identity $\pi(-\tilde{\Lambda}) = \pi(\tilde{\Lambda})$ held exactly.</p>
+<p><strong>Verification.</strong> The two preservation properties and the kernel statement were checked numerically. Over three hundred random unit-norm rotors $\tilde{\Lambda} = R\,B$ (a rotation times a boost, normalized) applied to random anti-Hermitian $\tilde{Q}$, the image was always anti-Hermitian and $|N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger) - N(\tilde{Q})|$ was zero to machine precision. For a random rotor the identity $\pi(-\tilde{\Lambda}) = \pi(\tilde{\Lambda})$ held exactly.</p>
 <p>A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by conjugation with unit-norm elements.</p>
 <h2 id="the-infinitesimal-automorphisms-the-lie-algebra">The Infinitesimal Automorphisms: the Lie Algebra</h2>
 <p>Differentiating the unit-norm condition gives the Lie algebra of infinitesimal norm-form automorphisms. Let</p>
 <p>$$
-\tilde{\Lambda} = e_0 + \varepsilon\,\tilde{X},
+\tilde{\Lambda} = e_0 + \varepsilon\,\tilde{Q},
 \qquad \varepsilon\in\mathbb{R},\quad \varepsilon\ll1 .
 $$</p>
 <p>The condition $N(\tilde{\Lambda}) = 1$ becomes</p>
 <p>$$
-N(e_0+\varepsilon\tilde{X}) = (e_0+\varepsilon\tilde{X})(e_0+\varepsilon\bar{\tilde{X}})
-= e_0 + \varepsilon\left(\tilde{X}+\bar{\tilde{X}}\right) + O(\varepsilon^2)
-= e_0 + 2\varepsilon\,\mathrm{Sc}(\tilde{X}) + O(\varepsilon^2),
+N(e_0+\varepsilon\tilde{Q}) = (e_0+\varepsilon\tilde{Q})(e_0+\varepsilon\bar{\tilde{Q}})
+= e_0 + \varepsilon\left(\tilde{Q}+\bar{\tilde{Q}}\right) + O(\varepsilon^2)
+= e_0 + 2\varepsilon\,\mathrm{Sc}(\tilde{Q}) + O(\varepsilon^2),
 $$</p>
 <p>so the tangent space at the identity is</p>
 <p>$$
-\mathfrak{sl}(2,\mathbb{C}) = \{\tilde{X}\in\mathbb{B} : \mathrm{Sc}(\tilde{X}) = 0\},
+\mathfrak{sl}(2,\mathbb{C}) = \{\tilde{Q}\in\mathbb{B} : \mathrm{Sc}(\tilde{Q}) = 0\},
 $$</p>
 <p>the six-<strong>real</strong>-dimensional space spanned by the three real units and the three imaginary units,</p>
 <p>$$
@@ -333,7 +333,7 @@ $$</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
-<p><strong>Automorphisms of the full algebra.</strong> The maps considered here preserve the norm form and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, $X\mapsto\tilde{A}X\tilde{A}^{-1}$, a subgroup of the form automorphisms. Does the framework assign a physical role to the difference between algebra automorphisms and form automorphisms?</p>
+<p><strong>Automorphisms of the full algebra.</strong> The maps considered here preserve the norm form and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{-1}$, a subgroup of the form automorphisms. Does the framework assign a physical role to the difference between algebra automorphisms and form automorphisms?</p>
 </li>
 <li>
 <p><strong>The discrete components.</strong> $O(1,3)$ has four components; the rotor group covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside the rotor group. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.</p>
@@ -368,7 +368,7 @@ $$</p>
 <p>$$
 SO(4,\mathbb{C}) \cong \frac{SL(2,\mathbb{C})\times SL(2,\mathbb{C})}{\{\pm(e_0,e_0)\}},
 $$</p>
-<p>realized by $\tilde{X}\mapsto\tilde{A}\tilde{X}\tilde{B}^{-1}$ with $\det\tilde{A}=\det\tilde{B}=1$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to</p>
+<p>realized by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ with $\det\tilde{A}=\det\tilde{B}=1$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to</p>
 <p>$$
 N(ict\,e_0+\mathbf{x}) = -c^2t^2+\mathbf{x}^2,
 \qquad
@@ -378,11 +378,11 @@ $$</p>
 <p>$$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\},
 \qquad
-\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger,
+\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger,
 \qquad
 N(\tilde{\Lambda})=1,
 $$</p>
-<p>the map being two-to-one with kernel $\{\pm e_0\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(X)=0\}$, spanned by the rotation generators $\mathcal{J}_k = e_k$ and the boost generators $\mathcal{K}_k = ie_k$, with</p>
+<p>the map being two-to-one with kernel $\{\pm e_0\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(\tilde{Q})=0\}$, spanned by the rotation generators $\mathcal{J}_k = e_k$ and the boost generators $\mathcal{K}_k = ie_k$, with</p>
 <p>$$
 [\mathcal{J}_j,\mathcal{J}_k] = 2\varepsilon_{jkl}\mathcal{J}_l,
 \qquad
@@ -425,7 +425,7 @@ $$</p>
 <td>Matrix realization; norm form is the determinant</td>
 </tr>
 <tr>
-<td>$T_{\tilde{A},\tilde{B}}:\tilde{X}\mapsto\tilde{A}\tilde{X}\tilde{B}^{-1}$</td>
+<td>$T_{\tilde{A},\tilde{B}}:\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$</td>
 <td>General norm-preserving complex map</td>
 </tr>
 <tr>
@@ -453,7 +453,7 @@ $$</p>
 <td>Unit-norm biquaternion (Lorentz rotor)</td>
 </tr>
 <tr>
-<td>$\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$</td>
+<td>$\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$</td>
 <td>Rotor conjugation; the automorphism of the slice</td>
 </tr>
 <tr>
@@ -461,7 +461,7 @@ $$</p>
 <td>Two-to-one covering homomorphism</td>
 </tr>
 <tr>
-<td>$\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(X)=0\}$</td>
+<td>$\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(\tilde{Q})=0\}$</td>
 <td>Lie algebra; $\mathcal{J}_k=e_k$ (rotations), $\mathcal{K}_k=ie_k$ (boosts)</td>
 </tr>
 <tr>

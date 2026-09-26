@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="the-quantized-scalar-field-in-biquaternionic-form"><strong>The Quantized Scalar Field in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The companion article <em>Canonical Quantization of the Biquaternion Klein–Gordon Field</em> promotes the classical central-valued field $\tilde{\Phi}=\phi\,e_0$ to an operator, imposes the equal-time commutators, expands it in the parent's plane waves, and obtains the mode algebra, the Fock space and the Hamiltonian. It leaves one object unexamined for its own sake: the <strong>field operator</strong> $\hat{\tilde{\Phi}}(\tilde{X})$ itself. This article is about that object — what kind of thing it is, how it splits, what its algebra is, how it transforms, and what its correlation functions are.</p>
+<p>The companion article <em>Canonical Quantization of the Biquaternion Klein–Gordon Field</em> promotes the classical central-valued field $\tilde{\Phi}=\phi\,e_0$ to an operator, imposes the equal-time commutators, expands it in the parent's plane waves, and obtains the mode algebra, the Fock space and the Hamiltonian. It leaves one object unexamined for its own sake: the <strong>field operator</strong> $\hat{\tilde{\Phi}}(\tilde{Q})$ itself. This article is about that object — what kind of thing it is, how it splits, what its algebra is, how it transforms, and what its correlation functions are.</p>
 <p>The distinction from the companion quantization is the same as the distinction between the Dirac equation article and the <em>solutions</em> article of the spin-$\tfrac12$ sector. There the field equation was one subject and the space of its solutions, with the plane waves, normalizations and spin sums, was another. Here the mode algebra was one subject, and the field operator built from it is another. The article's question is exact:</p>
 <blockquote>
 <p>In what sense is the operator-valued field of the framework a <strong>biquaternionic</strong> object, and in what sense is it merely an operator constructed on a module?</p>
@@ -61,7 +61,7 @@
 <ol>
 <li><strong>Its value space.</strong> The field is central-valued: at each event it is an operator times $e_0$, so its value-space indices are trivial, its Lorentz transformation has no spin part, and it commutes with every element of the algebra. This is the operator form of the statement that spin $0$ lives in the center.</li>
 <li><strong>Its algebra.</strong> The field is an operator-valued distribution, unbounded, and its commutator with its adjoint is a <strong>multiple of the identity</strong>, the commutator function. The field therefore generates a CCR algebra whose brackets are central; the non-commutativity of the field is a fixed c-number function, not an operator. This is what makes the scalar field bosonic, and it is the structure $\mathbb{B}$ cannot host, as the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> proves.</li>
-<li><strong>Its phases.</strong> The only biquaternion structure the field carries is the transport of the central phase $e^{\pm i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})}$ and the centrality of that phase. The mass shell is a level set of the norm form; the exponentials are central unitaries; the Lorentz rotors act trivially on them.</li>
+<li><strong>Its phases.</strong> The only biquaternion structure the field carries is the transport of the central phase $e^{\pm i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}$ and the centrality of that phase. The mass shell is a level set of the norm form; the exponentials are central unitaries; the Lorentz rotors act trivially on them.</li>
 </ol>
 <p>The article is organised as follows. The next section treats the field as an operator-valued distribution and fixes its value space. The following section separates its positive- and negative-frequency parts. The next section treats the real and complex cases and charge conjugation. The section after that establishes the c-number character of the field commutator. The next section gives the two-point functions and the propagator, read through the norm form. A section treats the transformation of the field operator under the Poincaré group and the central phase. The final section separates what is standard from what is open.</p>
 <ul>
@@ -76,14 +76,14 @@
 <h2 id="the-field-operator-and-its-value-space">The Field Operator and Its Value Space</h2>
 <p>Quantization replaces the classical field by an operator-valued distribution. For a test function $f$ on spacetime, the smeared field is</p>
 <p>$$
-\hat{\tilde{\Phi}}(f)=\int d^4x\,f(x)\,\hat{\tilde{\Phi}}(\tilde{X}),
+\hat{\tilde{\Phi}}(f)=\int d^4x\,f(x)\,\hat{\tilde{\Phi}}(\tilde{Q}),
 \qquad
-\hat{\tilde{\Phi}}(f)^\dagger=\int d^4x\,f^*(x)\,\hat{\tilde{\Phi}}(\tilde{X})^\dagger,
+\hat{\tilde{\Phi}}(f)^\dagger=\int d^4x\,f^*(x)\,\hat{\tilde{\Phi}}(\tilde{Q})^\dagger,
 $$</p>
-<p>and it is this smeared object, not the point value, that is a well-defined operator on the Fock space. The point value is recovered formally as $f\to\delta^{(4)}(x-X)$. The field is unbounded, as any field with an infinite ladder must be, and its domain is the finite-particle subspace of the Fock space.</p>
+<p>and it is this smeared object, not the point value, that is a well-defined operator on the Fock space. The point value is recovered formally as $f\to\delta^{(4)}(x-x_0)$. The field is unbounded, as any field with an infinite ladder must be, and its domain is the finite-particle subspace of the Fock space.</p>
 <p>The value space of the field is the center. In the mode expansion</p>
 <p>$$
-\hat{\tilde{\Phi}}(\tilde{X})=\hat{\phi}(x)\,e_0,
+\hat{\tilde{\Phi}}(\tilde{Q})=\hat{\phi}(x)\,e_0,
 \qquad
 \hat{\phi}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf{p}}}}
 \left(\hat a_{\mathbf{p}}e^{-ip\cdot x}+\hat b_{\mathbf{p}}^\dagger e^{+ip\cdot x}\right),
@@ -109,7 +109,7 @@ $$</p>
 \langle0|\hat{\phi}^{(-)}(x)=0 ,
 $$</p>
 <p>so $\hat\phi^{(+)}$ is the <strong>annihilation part</strong> and $\hat\phi^{(-)}$ the <strong>creation part</strong>. The same statement in the biquaternion notation is that the annihilation part is the transport of the vacuum by the positive-frequency central phase.</p>
-<p><strong>The frequency split is Lorentz invariant.</strong> The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $e^{-iE_{\mathbf{p}}t}$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})}$ is the phase in which the statement is made.</p>
+<p><strong>The frequency split is Lorentz invariant.</strong> The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $e^{-iE_{\mathbf{p}}t}$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}$ is the phase in which the statement is made.</p>
 <p><strong>Verification.</strong> The annihilation property was checked on the explicit truncated Fock space: with $\hat\phi^{(+)}$ represented by the lowering operator on the span of $|0\rangle,\dots,|6\rangle$, the vector $\hat\phi^{(+)}|0\rangle$ vanished exactly, and the number operator $\hat N=\hat a^\dagger\hat a$ returned $0$ on the vacuum state.</p>
 <h2 id="real-and-complex-scalar-fields">Real and Complex Scalar Fields</h2>
 <p>The framework admits both cases, and their difference is the standard one, sharpened by the algebra's conjugation structure.</p>
@@ -179,10 +179,10 @@ $$</p>
 <h2 id="transformation-of-the-field-operator">Transformation of the Field Operator</h2>
 <p>The Poincaré group acts on the field by</p>
 <p>$$
-U(\Lambda,a)\,\hat{\tilde{\Phi}}(\tilde{X})\,U(\Lambda,a)^{-1}
-=\hat{\tilde{\Phi}}\big(\Lambda\tilde{X}+a\big),
+U(\Lambda,a)\,\hat{\tilde{\Phi}}(\tilde{Q})\,U(\Lambda,a)^{-1}
+=\hat{\tilde{\Phi}}\big(\Lambda\tilde{Q}+a\big),
 $$</p>
-<p>the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde\Lambda\in\mathbb{M}_+$ acting on the material coordinate by conjugation, $\tilde{X}\mapsto\tilde\Lambda\tilde{X}\tilde\Lambda^\dagger$, and the rotor acts trivially on the central value, $\tilde\Lambda e_0\tilde\Lambda^\dagger=e_0$. The spin-$0$ representation is thus the trivial representation of the rotor group on the center.</p>
+<p>the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde\Lambda\in\mathbb{M}_+$ acting on the material coordinate by conjugation, $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$, and the rotor acts trivially on the central value, $\tilde\Lambda e_0\tilde\Lambda^\dagger=e_0$. The spin-$0$ representation is thus the trivial representation of the rotor group on the center.</p>
 <p>The internal symmetry acts by the central phase,</p>
 <p>$$
 \hat U_\alpha=e^{\,i\alpha\hat Q},
@@ -259,7 +259,7 @@ $$</p>
 <td>Center; the field's value space</td>
 </tr>
 <tr>
-<td>$\tilde{X}=ict\,e_0+\mathbf{x}$</td>
+<td>$\tilde{Q}=ict\,e_0+\mathbf{x}$</td>
 <td>Material coordinate</td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ $$</p>
 <td>Gradient and d'Alembertian</td>
 </tr>
 <tr>
-<td>$\hat{\tilde{\Phi}}(\tilde{X})=\hat{\phi}(x)e_0$</td>
+<td>$\hat{\tilde{\Phi}}(\tilde{Q})=\hat{\phi}(x)e_0$</td>
 <td>Quantized scalar field (central-valued)</td>
 </tr>
 <tr>

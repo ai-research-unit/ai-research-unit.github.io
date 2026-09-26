@@ -64,7 +64,7 @@
 <p><strong>Established, and recomputed below.</strong> The shared Bell idempotent $P_{\Phi^+}$ resolves the initial three-qubit state into four orthogonal branches, one per Bell outcome; each branch is the product of the outcome idempotent with a single conjugation of the unknown state; each outcome occurs with probability $\tfrac14$; and the correction equal to the (Hermitian, involutive) Pauli gate $\{e_0,ie_1,ie_2,ie_3\}$ restores the state exactly. Averaged over the outcomes without the classical record, Bob's qubit is the maximally mixed state $\tfrac12 e_0$ — the protocol transfers nothing on its own — and with the record and the correction the net state map on the teleported qubit is the identity channel, a gate of Kraus rank one, realised through a measurement of Kraus rank four. Alice's qubit is left maximally mixed, so no copy survives. Each of the four identities was recomputed separately, on input states other than the $\Phi^+$ case that fixes the labelling.</p>
 <p><strong>Gap, left visible.</strong> The two classical bits are <em>not</em> an element of the algebra. The algebra represents the outcome label — the joint eigenvalue of the stabiliser observables — and it represents the conditional correction; it does not contain the arithmetic by which the label reaches Bob. The protocol is a statement about the algebra <em>plus</em> a classical channel, and the classical channel is where the non-algebraic step sits. The status of the tensor-product arena $\mathbb{B}\otimes\mathbb{B}$ is the open question inherited from the companion articles and is not resolved here.</p>
 <p>The article is organised as follows. The next section fixes the three-qubit arena and says which algebra each object of the protocol lives in. The section after that fixes the resource and the measurement. The following section proves the teleportation identity, first as a vector identity and then as the projected operator identity that gives the probabilities and Bob's state. The next section reads off the four corrections and records them in terms of the stabiliser observables. Two shorter sections treat no-signalling and the channel-theoretic reading of the protocol. The article closes with what the reformulation does and does not claim, and with open questions.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and the cyclic relations $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and with $i$ the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The Hermitian subspace is $\mathbb{M}_+$ with real basis $\{e_0,ie_1,ie_2,ie_3\}$; a single-qubit <strong>state</strong> is a Hermitian, positive, trace-one element of $\mathbb{M}_+$. The $n$-qubit arena is the tensor square $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, with trace $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, where $\mathrm{Tr}_\mathbb{B}(e_0)=2$ and $\mathrm{Tr}_\mathbb{B}(e_k)=0$, and with the partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$ of the companion article on entangled subsystems. The four <strong>Bell idempotents</strong> of $\mathbb{B}\otimes\mathbb{B}$ are $P_\epsilon=\tfrac14(e_0\otimes e_0+\epsilon_1 e_1\otimes e_1+\epsilon_2 e_2\otimes e_2+\epsilon_3 e_3\otimes e_3)$ with $\epsilon_1\epsilon_2\epsilon_3=+1$, in the labelling of the companion article on the Bell basis; the <strong>stabiliser involutions</strong> are $S_1=-e_1\otimes e_1$ and $S_3=-e_3\otimes e_3$, with $S_kP_\epsilon=-\epsilon_kP_\epsilon$. The <strong>gates</strong> are the unitary elements $\tilde{U}\tilde{U}^\dagger=e_0$ of $\mathbb{B}$, with Pauli representatives $\tilde{X}=ie_1$, $\tilde{Y}=ie_2$, $\tilde{Z}=ie_3$ and Hadamard $\tilde{H}=\tfrac{i}{\sqrt2}(e_1+e_3)$. The single-factor trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and the cyclic relations $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and with $i$ the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The Hermitian subspace is $\mathbb{M}_+$ with real basis $\{e_0,ie_1,ie_2,ie_3\}$; a single-qubit <strong>state</strong> is a Hermitian, positive, trace-one element of $\mathbb{M}_+$. The $n$-qubit arena is the tensor square $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, with trace $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, where $\mathrm{Tr}_\mathbb{B}(e_0)=2$ and $\mathrm{Tr}_\mathbb{B}(e_k)=0$, and with the partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$ of the companion article on entangled subsystems. The four <strong>Bell idempotents</strong> of $\mathbb{B}\otimes\mathbb{B}$ are $P_\epsilon=\tfrac14(e_0\otimes e_0+\epsilon_1 e_1\otimes e_1+\epsilon_2 e_2\otimes e_2+\epsilon_3 e_3\otimes e_3)$ with $\epsilon_1\epsilon_2\epsilon_3=+1$, in the labelling of the companion article on the Bell basis; the <strong>stabiliser involutions</strong> are $S_1=-e_1\otimes e_1$ and $S_3=-e_3\otimes e_3$, with $S_kP_\epsilon=-\epsilon_kP_\epsilon$. The <strong>gates</strong> are the unitary elements $\tilde{U}\tilde{U}^\dagger=e_0$ of $\mathbb{B}$, with Pauli representatives $\tilde{Q}=ie_1$, $\tilde{Y}=ie_2$, $\tilde{Z}=ie_3$ and Hadamard $\tilde{H}=\tfrac{i}{\sqrt2}(e_1+e_3)$. The single-factor trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.</p>
 <h2 id="the-three-qubit-arena-and-the-objects-of-the-protocol">The Three-Qubit Arena and the Objects of the Protocol</h2>
 <p>Three qubits are involved, and it matters which is which:</p>
 <ul>
@@ -189,9 +189,9 @@ $$</p>
 <p>The four operators appearing on the right are the Pauli gates $I,X,Z,XZ$, and in biquaternion representatives (companion article on gates and circuits) they are</p>
 <p>$$
 I\leftrightarrow e_0,\qquad
-X\leftrightarrow \tilde{X}=ie_1,\qquad
-Z\leftrightarrow \tilde{Z}=ie_3,\qquad
-XZ\leftrightarrow e_2\sim ie_2=\tilde{Y}.
+X\leftrightarrow ie_1,\qquad
+Z\leftrightarrow ie_3,\qquad
+XZ\leftrightarrow e_2\sim ie_2.
 $$</p>
 <p>The last equivalence is a statement about <strong>gates</strong>, not about elements: $e_2$ and $ie_2$ differ by the central phase $-i$, which cancels in every conjugation, so they define the same unitary action. We use the Hermitian representative $ie_2$ below.</p>
 <h3 id="the-projected-identity">The projected identity</h3>
@@ -251,32 +251,32 @@ $$</p>
 <td>$P_{\Phi^-}$</td>
 <td>$(+1,-1,-1)$</td>
 <td>$(-1,+1)$</td>
-<td>$\tilde{Z}\tilde{\rho}_\psi\tilde{Z}$</td>
-<td>$ie_3=\tilde{Z}$</td>
+<td>$ie_3\,\tilde{\rho}_\psi\,ie_3$</td>
+<td>$ie_3$</td>
 </tr>
 <tr>
 <td>$P_{\Psi^+}$</td>
 <td>$(-1,-1,+1)$</td>
 <td>$(+1,-1)$</td>
-<td>$\tilde{X}\tilde{\rho}_\psi\tilde{X}$</td>
-<td>$ie_1=\tilde{X}$</td>
+<td>$ie_1\,\tilde{\rho}_\psi\,ie_1$</td>
+<td>$ie_1$</td>
 </tr>
 <tr>
 <td>$P_{\Psi^-}$</td>
 <td>$(+1,+1,+1)$</td>
 <td>$(-1,-1)$</td>
-<td>$\tilde{Y}\tilde{\rho}_\psi\tilde{Y}$</td>
-<td>$ie_2=\tilde{Y}$</td>
+<td>$ie_2\,\tilde{\rho}_\psi\,ie_2$</td>
+<td>$ie_2$</td>
 </tr>
 </tbody>
 </table></div>
 <p>In terms of the stabiliser record the correction has the compact form, up to the central phase that does not affect a gate,</p>
 <p>$$
-\tilde{\kappa}_{(s_1,s_3)}=\tilde{Z}^{(1-s_1)/2}\,\tilde{X}^{(1-s_3)/2},
+\tilde{\kappa}_{(s_1,s_3)}=(ie_3)^{(1-s_1)/2}\,(ie_1)^{(1-s_3)/2},
 $$</p>
-<p>that is, $\tilde{Z}$ if the $S_1$ outcome is $-1$ and $\tilde{X}$ if the $S_3$ outcome is $-1$; when both are $-1$ the product is $\tilde{Z}\tilde{X}=-\tilde{X}\tilde{Z}\sim\tilde{Y}$, the fourth Pauli. The four corrections are precisely the Pauli gates modulo phase; they lie in the Pauli group, hence in the Clifford group, of the companion article on gates and circuits. The protocol consumes only these four gates and a Bell-basis measurement.</p>
+<p>that is, $ie_3$ if the $S_1$ outcome is $-1$ and $ie_1$ if the $S_3$ outcome is $-1$; when both are $-1$ the product is $\tilde{Z}\tilde{Q}=-\tilde{Q}\tilde{Z}\sim\tilde{Y}$, the fourth Pauli. The four corrections are precisely the Pauli gates modulo phase; they lie in the Pauli group, hence in the Clifford group, of the companion article on gates and circuits. The protocol consumes only these four gates and a Bell-basis measurement.</p>
 <p>Two remarks about the table. First, the fourth row is the one where the naive correspondence is easiest to get wrong: the standard decomposition produces $XZ$ for the outcome $|\Psi^-\rangle$, and $XZ=-i\sigma_y$ is <em>not</em> the element $\tilde{Y}=ie_2$ but differs from it by the central phase $-i$. As a <strong>gate</strong> the two agree, and the row is written with the Hermitian representative; it was checked by conjugating a state by both, which gives the same result. Second, the table is not symmetric between $\Phi$ and $\Psi$ outcomes: the $\Phi^+$ row is the identity, and the others are the three non-identity Paulis, but the assignment of which Pauli goes with which outcome depends on the shared resource. It is a statement about the pair (resource, outcome), not about the outcome alone.</p>
-<p><strong>A general Bell resource.</strong> The choice $P_{\Phi^+}$ is a convention; any resource of the form $(e_0\otimes\tilde{V})P_{\Phi^+}(e_0\otimes\tilde{V}^\dagger)$ with $\tilde{V}$ a single-qubit unitary on Bob's factor works, and Bob's uncorrected state becomes $\tilde{V}\tilde{\kappa}_\epsilon\tilde{\rho}_\psi\tilde{\kappa}_\epsilon^\dagger\tilde{V}^\dagger$, so that the correction is $\tilde{\kappa}_\epsilon^\dagger\tilde{V}^\dagger$. For $\tilde{V}=\tilde{X}$ — which conjugates the resource to another Bell idempotent — this was verified outcome by outcome: the probabilities are still $\tfrac14$, Bob's state is the stated conjugation, and the stated correction restores $\tilde{\rho}_\psi$. The general statement is the standard local-unitary covariance of the protocol; it is recorded here as an inherited fact, with the one case checked.</p>
+<p><strong>A general Bell resource.</strong> The choice $P_{\Phi^+}$ is a convention; any resource of the form $(e_0\otimes\tilde{V})P_{\Phi^+}(e_0\otimes\tilde{V}^\dagger)$ with $\tilde{V}$ a single-qubit unitary on Bob's factor works, and Bob's uncorrected state becomes $\tilde{V}\tilde{\kappa}_\epsilon\tilde{\rho}_\psi\tilde{\kappa}_\epsilon^\dagger\tilde{V}^\dagger$, so that the correction is $\tilde{\kappa}_\epsilon^\dagger\tilde{V}^\dagger$. For $\tilde{V}=\tilde{Q}$ — which conjugates the resource to another Bell idempotent — this was verified outcome by outcome: the probabilities are still $\tfrac14$, Bob's state is the stated conjugation, and the stated correction restores $\tilde{\rho}_\psi$. The general statement is the standard local-unitary covariance of the protocol; it is recorded here as an inherited fact, with the one case checked.</p>
 <h2 id="no-signalling-and-why-there-is-no-copy">No-Signalling, and Why There Is No Copy</h2>
 <p>Before the classical record reaches Bob, his qubit carries no information about $\tilde{\rho}_\psi$. Write $\text{post}_\epsilon=P_\epsilon^{(12)}\otimes(\tilde{\kappa}_\epsilon\tilde{\rho}_\psi\tilde{\kappa}_\epsilon^\dagger)^{(3)}$ for the normalised post-measurement state on the branch $\epsilon$, so that $\mathrm{Tr}_{12}[\text{post}_\epsilon]=\tilde{\kappa}_\epsilon\tilde{\rho}_\psi\tilde{\kappa}_\epsilon^\dagger$. Averaging these over the outcomes, with their probabilities $p_\epsilon=\tfrac14$ and <em>without</em> any correction,</p>
 <p>$$
@@ -351,7 +351,7 @@ $$</p>
 \left(P_\epsilon^{(12)}\otimes e_0\right)\tilde{\rho}^{(0)}\left(P_\epsilon^{(12)}\otimes e_0\right)
 =\tfrac14\,P_\epsilon^{(12)}\otimes\left(\tilde{\kappa}_\epsilon\,\tilde{\rho}_\psi\,\tilde{\kappa}_\epsilon^\dagger\right)^{(3)}
 $$</p>
-<p>holds for each of the four outcomes, with the Hermitian Pauli representatives $\tilde{\kappa}_{\Phi^+}=e_0$, $\tilde{\kappa}_{\Phi^-}=\tilde{Z}=ie_3$, $\tilde{\kappa}_{\Psi^+}=\tilde{X}=ie_1$, $\tilde{\kappa}_{\Psi^-}=\tilde{Y}=ie_2$. Its trace gives $p_\epsilon=\tfrac14$ for every outcome, and its partial trace gives Bob's conditional state $\tilde{\kappa}_\epsilon\tilde{\rho}_\psi\tilde{\kappa}_\epsilon^\dagger$. Bob applies the correction $\tilde{\kappa}_\epsilon^\dagger=\tilde{\kappa}_\epsilon$ and recovers $\tilde{\rho}_\psi$ exactly.</p>
+<p>holds for each of the four outcomes, with the Hermitian Pauli representatives $\tilde{\kappa}_{\Phi^+}=e_0$, $\tilde{\kappa}_{\Phi^-}=\tilde{Z}=ie_3$, $\tilde{\kappa}_{\Psi^+}=\tilde{Q}=ie_1$, $\tilde{\kappa}_{\Psi^-}=\tilde{Y}=ie_2$. Its trace gives $p_\epsilon=\tfrac14$ for every outcome, and its partial trace gives Bob's conditional state $\tilde{\kappa}_\epsilon\tilde{\rho}_\psi\tilde{\kappa}_\epsilon^\dagger$. Bob applies the correction $\tilde{\kappa}_\epsilon^\dagger=\tilde{\kappa}_\epsilon$ and recovers $\tilde{\rho}_\psi$ exactly.</p>
 <p>The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsilon\tilde{\kappa}_\epsilon\tilde{\rho}_\psi\tilde{\kappa}_\epsilon^\dagger=\tfrac12 e_0$, so no information reaches Bob before the record does — no-signalling in the protocol's own form — and Alice's qubit is left maximally mixed, so no copy is made. In the language of channels, the protocol without the record is a rank-four irreversible channel, each branch with the record is a rank-one gate, and the completed protocol with the record and the correction is the identity channel, a rank-one gate. Teleportation is thus the identity gate realised through a measurement of Kraus rank four, the resource and the record being its cost.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -411,8 +411,8 @@ $$</p>
 <td>Correction gate (Hermitian Pauli)</td>
 </tr>
 <tr>
-<td>$\tilde{X}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$</td>
-<td>Pauli gates</td>
+<td>$ie_1,\ ie_2,\ ie_3$</td>
+<td>Pauli-gate representatives</td>
 </tr>
 <tr>
 <td>$p_\epsilon=\tfrac14$</td>

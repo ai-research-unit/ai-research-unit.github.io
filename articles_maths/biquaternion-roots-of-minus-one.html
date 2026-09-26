@@ -56,7 +56,7 @@
 <p>$$
 \xi^2 = -1.
 $$</p>
-<p>It follows the article on biquaternion zero divisors, where the classification of the roots is used to classify the idempotents, and it follows the article on biquaternion norm and invertibility, where the norm form and the invertibility criterion are established. The goal here is to state the classification precisely and to prove it.</p>
+<p>It follows <em>Biquaternion Idempotents and Projections</em>, where the idempotents are classified by the roots, and the article on biquaternion norm and invertibility, where the norm form and the invertibility criterion are established. The goal here is to state the classification precisely and to prove it.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its six distinguished subspaces.</p>
 <p>Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar imaginary is written $i$, so that it does not collide with the quaternion units. A general biquaternion is written</p>
 <p>$$
@@ -73,32 +73,32 @@ $$</p>
 <h3 id="vector-part-decomposition">Vector-Part Decomposition</h3>
 <p>Write $\xi$ in the scalar-vector form</p>
 <p>$$
-\xi = A + \mathbf{X}, \qquad A = Q_0 \in \mathbb{C}, \qquad \mathbf{X} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
+\xi = Q_0 + \mathbf{Q}, \qquad Q_0 \in \mathbb{C}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
 $$</p>
-<p>where $A$ is the <strong>complex scalar part</strong> and $\mathbf{X}$ is the <strong>complex vector part</strong>.</p>
+<p>where $Q_0$ is the <strong>complex scalar part</strong> and $\mathbf{Q}$ is the <strong>complex vector part</strong>.</p>
 <p>The square of $\xi$ is given by the product formula for biquaternions:</p>
 <p>$$
-\xi^2 = \bigl(A^2 - (\mathbf{X}, \mathbf{X})\bigr) e_0 + 2A\mathbf{X}, \qquad (\mathbf{X}, \mathbf{X}) = Q_1^2 + Q_2^2 + Q_3^2.
+\xi^2 = \bigl(Q_0^2 - (\mathbf{Q}, \mathbf{Q})\bigr) e_0 + 2Q_0\mathbf{Q}, \qquad (\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2.
 $$</p>
-<p>The scalar part of $\xi^2$ is $(A^2 - (\mathbf{X}, \mathbf{X})) e_0$, and the vector part is $2A\mathbf{X}$.</p>
+<p>The scalar part of $\xi^2$ is $(Q_0^2 - (\mathbf{Q}, \mathbf{Q})) e_0$, and the vector part is $2Q_0\mathbf{Q}$.</p>
 <h3 id="reduction-to-two-cases">Reduction to Two Cases</h3>
 <p>Equating $\xi^2$ to $-1 = -e_0$ requires</p>
 <p>$$
-2A\mathbf{X} = 0, \qquad A^2 - (\mathbf{X}, \mathbf{X}) = -1.
+2Q_0\mathbf{Q} = 0, \qquad Q_0^2 - (\mathbf{Q}, \mathbf{Q}) = -1.
 $$</p>
-<p>The first equation is a vector equation. Since $\mathbb{B}$ is a free $\mathbb{C}$-module and $\mathbb{C}$ is a field, the equation $A\mathbf{X} = 0$ holds if and only if $A = 0$ or $\mathbf{X} = 0$. So the roots of $-1$ split into two cases.</p>
-<p><strong>Case 1: $\mathbf{X} = 0$.</strong> Then $\xi = A e_0$ is a complex scalar, and the scalar equation becomes $A^2 = -1$. So $A = \pm i$, and</p>
+<p>The first equation is a vector equation. Since $\mathbb{B}$ is a free $\mathbb{C}$-module and $\mathbb{C}$ is a field, the equation $Q_0\mathbf{Q} = 0$ holds if and only if $Q_0 = 0$ or $\mathbf{Q} = 0$. So the roots of $-1$ split into two cases.</p>
+<p><strong>Case 1: $\mathbf{Q} = 0$.</strong> Then $\xi = Q_0 e_0$ is a complex scalar, and the scalar equation becomes $Q_0^2 = -1$. So $Q_0 = \pm i$, and</p>
 <p>$$
 \xi = \pm i.
 $$</p>
 <p>These are the <strong>trivial roots</strong>.</p>
-<p><strong>Case 2: $A = 0$.</strong> Then $\xi = \mathbf{X}$ is <strong>pure</strong> (vanishing scalar part), and the scalar equation becomes $(\mathbf{X}, \mathbf{X}) = 1$. The <strong>pure roots</strong> are the pure biquaternions whose square is $-1$.</p>
+<p><strong>Case 2: $Q_0 = 0$.</strong> Then $\xi = \mathbf{Q}$ is <strong>pure</strong> (vanishing scalar part), and the scalar equation becomes $(\mathbf{Q}, \mathbf{Q}) = 1$. The <strong>pure roots</strong> are the pure biquaternions whose square is $-1$.</p>
 <p>The two cases are disjoint: the trivial roots have vanishing vector part, so they fall only in Case 1; the pure roots have vanishing scalar part, so they fall only in Case 2.</p>
 <h3 id="the-pure-roots">The Pure Roots</h3>
-<p>We now solve the equation $(\mathbf{X}, \mathbf{X}) = 1$ for the pure biquaternion $\mathbf{X} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.</p>
+<p>We now solve the equation $(\mathbf{Q}, \mathbf{Q}) = 1$ for the pure biquaternion $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.</p>
 <p>Write each complex coefficient as $Q_k = q_k + i q'_k$ with $q_k, q'_k \in \mathbb{R}$. Then</p>
 <p>$$
-(\mathbf{X}, \mathbf{X}) = \sum_{k=1}^{3} Q_k^2 = \sum_{k=1}^{3} (q_k + i q'_k)^2 = \sum_{k=1}^{3} (q_k^2 - q'^2_k) + 2i \sum_{k=1}^{3} q_k q'_k.
+(\mathbf{Q}, \mathbf{Q}) = \sum_{k=1}^{3} Q_k^2 = \sum_{k=1}^{3} (q_k + i q'_k)^2 = \sum_{k=1}^{3} (q_k^2 - q'^2_k) + 2i \sum_{k=1}^{3} q_k q'_k.
 $$</p>
 <p>Equating the real and imaginary parts to $1$ and $0$:</p>
 <p>$$
@@ -109,7 +109,7 @@ $$</p>
 |\mathbf{q}|^2 - |\mathbf{q}'|^2 = 1, \qquad \mathbf{q} \cdot \mathbf{q}' = 0.
 $$</p>
 <p>From the first condition, $|\mathbf{q}|^2 = 1 + |\mathbf{q}'|^2 \geq 1 > 0$, so $\mathbf{q} \neq 0$.</p>
-<p><strong>Sub-case 2a: $\mathbf{q}' = 0$.</strong> Then $|\mathbf{q}|^2 = 1$, so $\mathbf{q}$ is a unit vector in $\mathbb{R}^3$. Let $\mu = \mathbf{q}$, which is a unit pure real quaternion. Then $\mathbf{X} = \mu$, and $\xi = \mu$. Since $\mu$ is a unit pure real quaternion, $\mu^2 = -1$ (a standard fact from the quaternion algebra). These are the <strong>real roots</strong>. Since $\mu$ ranges over the whole unit sphere $S^2 \subset \mathbb{R}^3$, and $S^2$ is invariant under $\mu \mapsto -\mu$, the family can also be written in the redundant form $\xi = \pm \mu$.</p>
+<p><strong>Sub-case 2a: $\mathbf{q}' = 0$.</strong> Then $|\mathbf{q}|^2 = 1$, so $\mathbf{q}$ is a unit vector in $\mathbb{R}^3$. Let $\mu = \mathbf{q}$, which is a unit pure real quaternion. Then $\mathbf{Q} = \mu$, and $\xi = \mu$. Since $\mu$ is a unit pure real quaternion, $\mu^2 = -1$ (a standard fact from the quaternion algebra). These are the <strong>real roots</strong>. Since $\mu$ ranges over the whole unit sphere $S^2 \subset \mathbb{R}^3$, and $S^2$ is invariant under $\mu \mapsto -\mu$, the family can also be written in the redundant form $\xi = \pm \mu$.</p>
 <p><strong>Sub-case 2b: $\mathbf{q}' \neq 0$.</strong> Then $|\mathbf{q}| \geq 1 > 0$ and $|\mathbf{q}'| > 0$, so we can normalize both. Let</p>
 <p>$$
 \mu = \frac{\mathbf{q}}{|\mathbf{q}|}, \qquad \nu = \frac{\mathbf{q}'}{|\mathbf{q}'|},
@@ -118,7 +118,7 @@ $$</p>
 <p>$$
 b = |\mathbf{q}| > 0, \qquad d = |\mathbf{q}'| > 0.
 $$</p>
-<p>Then $\mathbf{q} = b\mu$, $\mathbf{q}' = d\nu$, and $\mathbf{X} = \mathbf{q} + i\mathbf{q}' = b\mu + d\nu i$. The condition $|\mathbf{q}|^2 - |\mathbf{q}'|^2 = 1$ becomes</p>
+<p>Then $\mathbf{q} = b\mu$, $\mathbf{q}' = d\nu$, and $\mathbf{Q} = \mathbf{q} + i\mathbf{q}' = b\mu + d\nu i$. The condition $|\mathbf{q}|^2 - |\mathbf{q}'|^2 = 1$ becomes</p>
 <p>$$
 b^2 - d^2 = 1.
 $$</p>
@@ -163,7 +163,7 @@ $$</p>
 <h3 id="degenerate-cases">Degenerate Cases</h3>
 <p>The three families are related as follows.</p>
 <p><strong>Real roots as the boundary of the non-trivial family.</strong> If $d \to 0$ in the non-trivial family, then $b^2 \to 1$ (by the constraint $b^2 - d^2 = 1$), and $\xi = b\mu + d\nu i$ tends to $\mu$, a real root. The unit pure quaternion $\nu$ becomes undetermined in the limit. So the real roots (the unit sphere $S^2$) form the boundary of the non-trivial family.</p>
-<p><strong>Trivial roots as a separate family.</strong> The trivial roots $\xi = \pm i$ have vanishing vector part. Neither the real roots (which are pure, hence have $\mathbf{X} = \mu \neq 0$) nor the non-trivial roots (which have $\mathbf{X} = b\mu + d\nu i$ with $b \neq 0$, hence $\mathbf{X} \neq 0$) include or approach the trivial roots. So the trivial roots form a separate family, consisting of two isolated points.</p>
+<p><strong>Trivial roots as a separate family.</strong> The trivial roots $\xi = \pm i$ have vanishing vector part. Neither the real roots (which are pure, hence have $\mathbf{Q} = \mu \neq 0$) nor the non-trivial roots (which have $\mathbf{Q} = b\mu + d\nu i$ with $b \neq 0$, hence $\mathbf{Q} \neq 0$) include or approach the trivial roots. So the trivial roots form a separate family, consisting of two isolated points.</p>
 <h3 id="parametrization-by-hyperbolic-functions">Parametrization by Hyperbolic Functions</h3>
 <p>The constraint $b^2 - d^2 = 1$ is the equation of a hyperbola in the $(b, d)$-plane. If we take $b > 0$, we can parametrize the constraint by</p>
 <p>$$
@@ -186,57 +186,14 @@ $$</p>
 <p>All roots except the trivial ones are <strong>pure</strong> (their scalar part vanishes). The pure roots (real and non-trivial) sit inside the six-real-dimensional space of pure biquaternions.</p>
 <p>The roots are neither idempotents ($\xi^2 = -1 \neq \xi$) nor zero divisors ($N(\xi) \neq 0$ in every case). They therefore lie in the group of units $\mathbb{B}^\times$ studied in the article on biquaternion norm and invertibility.</p>
 <h2 id="the-relation-to-the-idempotents">The Relation to the Idempotents</h2>
-<h3 id="the-idempotent-construction">The Idempotent Construction</h3>
-<p>The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$. Recall from the article on biquaternion zero divisors that every idempotent is of the form</p>
+<p>The classification of the roots gives the classification of the idempotents of $\mathbb{B}$: the map</p>
 <p>$$
-\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
+\xi \longmapsto P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)
 $$</p>
-<p>where $\xi$ is a root of $-1$.</p>
-<p><strong>Theorem.</strong> The idempotents of $\mathbb{B}$ are exactly the elements of the form</p>
-<p>$$
-\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
-$$</p>
-<p>where $\xi$ is a root of $-1$. Every such element satisfies $\tilde{P}^2 = \tilde{P}$, and conversely every idempotent of $\mathbb{B}$ has this form.</p>
-<p><strong>Proof.</strong> If $\xi^2 = -1$, then</p>
-<p>$$
-\tilde{P}^2 = \tfrac{1}{4}(e_0 \pm \xi i)^2 = \tfrac{1}{4}(e_0 \pm 2\xi i + \xi^2 i^2) = \tfrac{1}{4}(e_0 \pm 2\xi i + 1) = \tfrac{1}{2}(e_0 \pm \xi i) = \tilde{P},
-$$</p>
-<p>where we have used $\xi^2 i^2 = (-1)(-1) = 1$ and the fact that $e_0$ commutes with $\xi i$. The converse is proved in the article on biquaternion zero divisors. $\square$</p>
-<p>Substituting the classification of $\xi$:</p>
-<ul>
-<li>For the trivial root $\xi = \pm i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde{P} = 0$ or $\tilde{P} = e_0$. These are the <strong>trivial idempotents</strong>.</li>
-<li>For the real root $\xi = \pm \mu$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. These are the idempotents that involve the real scalar part together with the imaginary vector direction $\mu i$. Since $\mu i$ is Hermitian when $\mu$ is a real unit imaginary quaternion, $(\mu i)^\dagger = \mu i$, these are the <strong>Hermitian idempotents</strong>, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections that occur in the biquaternion spectral theorem.</li>
-<li>For the non-trivial root $\xi = b\mu + d\nu i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These idempotents combine a real scalar part, a real vector part in the direction of $\nu$, and an imaginary vector part in the direction of $\mu$. Since their vector part mixes a real and an imaginary direction, they lie in none of the four four-dimensional subspaces.</li>
-</ul>
-<h3 id="the-correspondence">The Correspondence</h3>
-<p>The map</p>
-<p>$$
-\xi \longmapsto P_+(\xi), \qquad P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i),
-$$</p>
-<p>is a <strong>bijection</strong> from the set of roots of $-1$ to the set of idempotents of $\mathbb{B}$. Indeed:</p>
-<ul>
-<li>It is well-defined: the verification that $P_+(\xi)$ is idempotent whenever $\xi^2 = -1$ is the computation above.</li>
-<li>It is injective: $P_+(\xi) = P_+(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$.</li>
-<li>It is surjective onto the set of idempotents of the stated form, since $P_-(\xi) = \tfrac{1}{2}(e_0 - \xi i) = P_+(-\xi)$ and $-\xi$ is again a root of $-1$.</li>
-</ul>
-<p>Consequently, the <strong>complementary pairs</strong> $\{P, e_0 - P\}$ of idempotents are in bijection with the roots of $-1$ modulo the sign identification $\xi \sim -\xi$, since</p>
-<p>$$
-P_+(-\xi) = \tfrac{1}{2}(e_0 - \xi i) = e_0 - P_+(\xi).
-$$</p>
-<p>Thus $P_+(\xi)$ and $P_+(-\xi)$ are the two members of a complementary pair, and the pair itself corresponds to the class $\{\xi, -\xi\}$.</p>
-<h3 id="the-idempotent-as-a-projection">The Idempotent as a Projection</h3>
-<p>An idempotent $\tilde{P}$ satisfies $\tilde{P}^2 = \tilde{P}$. Its <strong>complement</strong> $e_0 - \tilde{P}$ is also an idempotent, and $\tilde{P}(e_0 - \tilde{P}) = 0$, so the pair $\{\tilde{P}, e_0 - \tilde{P}\}$ gives a <strong>direct sum decomposition</strong> of the underlying $\mathbb{C}$-module:</p>
-<p>$$
-\mathbb{B} = \tilde{P}\mathbb{B} \oplus (e_0 - \tilde{P})\mathbb{B}.
-$$</p>
-<p>This is the algebraic content of the statement that idempotents correspond to projections.</p>
+<p>is a bijection from the set of roots of $-1$ onto the set of idempotents, under which the complementary pairs $\{\tilde{P}, e_0 - \tilde{P}\}$ correspond to the classes $\{\xi, -\xi\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of <em>Biquaternion Idempotents and Projections</em>.</p>
 <h2 id="the-relation-to-the-zero-divisors">The Relation to the Zero Divisors</h2>
 <h3 id="the-idempotents-as-zero-divisors">The Idempotents as Zero Divisors</h3>
-<p>Every non-trivial idempotent is a zero divisor, because</p>
-<p>$$
-\tilde{P}(e_0 - \tilde{P}) = \tilde{P} - \tilde{P}^2 = 0,
-$$</p>
-<p>and both $\tilde{P}$ and $e_0 - \tilde{P}$ are nonzero unless $\tilde{P}$ is $0$ or $e_0$. So the non-trivial idempotents form a subset of the zero divisor set $\mathcal{Z}$ studied in the article on biquaternion zero divisors. The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ has nonzero norm form.</p>
+<p>Every non-trivial idempotent is a zero divisor, $\tilde{P}(e_0 - \tilde{P}) = 0$ with both factors nonzero (the computation is in <em>Biquaternion Idempotents and Projections</em>), so the non-trivial idempotents form a subset of the zero divisor set $\mathcal{Z}$ studied in <em>Biquaternion Zero Divisors</em>, which follows this article. The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ has nonzero norm form.</p>
 <h3 id="the-roots-as-invertible-elements">The Roots as Invertible Elements</h3>
 <p>A root of $-1$ is <strong>not</strong> a zero divisor. Indeed, the norm form of a root satisfies</p>
 <p>$$
@@ -245,8 +202,8 @@ $$</p>
 <p>In either case $N(\xi) \neq 0$, so by the invertibility criterion, $\xi$ is invertible. The roots of $-1$ therefore lie in the group of units $\mathbb{B}^\times$.</p>
 <h3 id="dimensions">Dimensions</h3>
 <p>The set of roots of $-1$ is a stratified space of real dimension $4$ (the non-trivial family) with a two-dimensional boundary stratum (the real roots, $S^2$) and two isolated points (the trivial roots, $\pm i$).</p>
-<p>The idempotents correspond bijectively to the roots of -1, so the non-trivial idempotents (that is, the idempotents other than 0 and e₀) also form a set of real dimension 4, with a two-dimensional boundary stratum inherited from the real roots. The trivial roots $\pm i$ map to the trivial idempotents $0$ and $e_0$, which are excluded from the non-trivial idempotents, so there are no isolated points among the non-trivial idempotents.</p>
-<p>The non-trivial roots sit inside the six-real-dimensional space of pure biquaternions. The non-trivial idempotents sit inside the six-real-dimensional zero divisor set. The trivial roots ($\pm i$) and trivial idempotents ($0, e_0$) are isolated points outside these families.</p>
+<p>By the bijection of §<em>The Relation to the Idempotents</em> the idempotents inherit this size: the non-trivial idempotents form a set of real dimension $4$ with a two-dimensional boundary stratum, with no isolated points, and they sit inside the six-real-dimensional zero divisor set.</p>
+<p>The non-trivial roots sit inside the six-real-dimensional space of pure biquaternions. The trivial roots ($\pm i$) are isolated points outside it.</p>
 <h2 id="the-roots-of-plus-one">The Roots of Plus One</h2>
 <p>For completeness, we note the analogous problem for $+1$. A <strong>root of $+1$</strong> is an element $\eta \in \mathbb{B}$ satisfying $\eta^2 = 1$.</p>
 <p>The roots of $+1$ are related to the roots of $-1$ by</p>
@@ -272,7 +229,7 @@ $$</p>
 <li><strong>Trivial root:</strong> $\xi = \pm i$.</li>
 <li><strong>Real roots:</strong> $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion.</li>
 </ol>
-<p>The proof proceeds by writing $\xi = A + \mathbf{X}$ in scalar-vector form, squaring using the biquaternion product formula, and equating to $-1$. The vector part of the square is $2A\mathbf{X}$, which forces $A = 0$ or $\mathbf{X} = 0$; the scalar part is $A^2 - (\mathbf{X}, \mathbf{X})$, which then determines the roots in each case. The scalar case gives the trivial root. The pure case reduces to $(\mathbf{X}, \mathbf{X}) = 1$, which splits into the real and non-trivial families according to whether the imaginary part of the pure biquaternion vanishes.</p>
+<p>The proof proceeds by writing $\xi = Q_0 + \mathbf{Q}$ in scalar-vector form, squaring using the biquaternion product formula, and equating to $-1$. The vector part of the square is $2A\mathbf{Q}$, which forces $A = 0$ or $\mathbf{Q} = 0$; the scalar part is $A^2 - (\mathbf{Q}, \mathbf{Q})$, which then determines the roots in each case. The scalar case gives the trivial root. The pure case reduces to $(\mathbf{Q}, \mathbf{Q}) = 1$, which splits into the real and non-trivial families according to whether the imaginary part of the pure biquaternion vanishes.</p>
 <p>The non-trivial roots form a four-real-dimensional family, with the real roots (a two-dimensional sphere) as their boundary. The trivial roots are two isolated points. All roots except the trivial ones are pure, and they lie in the six-dimensional space of pure biquaternions.</p>
 <p>The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The map $\xi \mapsto P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\xi \sim -\xi$. The non-trivial idempotents form a four-dimensional family in the six-dimensional zero divisor set, and are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units studied in the article on biquaternion norm and invertibility.</p>
 <p>The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\eta = \xi i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.</p>
@@ -304,6 +261,14 @@ $$</p>
 <tr>
 <td>$\eta$</td>
 <td>Root of $+1$</td>
+</tr>
+<tr>
+<td>$Q_0$</td>
+<td>Complex scalar part of the root, $Q_0 \in \mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\mathbf{Q} = Q_1e_1+Q_2e_2+Q_3e_3$</td>
+<td>Complex vector part of the root</td>
 </tr>
 <tr>
 <td>$\mu, \nu$</td>
