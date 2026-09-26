@@ -27,10 +27,10 @@ The article is organised as follows. The next section fixes the classical field,
 The relativistic scalar field of the framework is the central-valued complex field
 
 $$
-\tilde{\Phi}(\tilde{X})=\phi(\tilde{X})\,e_0,\qquad \phi:\mathbb{R}^{1,3}\to\mathbb{C},
+\tilde{\Phi}(\tilde{Q})=\phi(\tilde{Q})\,e_0,\qquad \phi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
 
-with $\tilde{X}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$. Its action is $S[\tilde{\Phi}]=\int\mathcal{L}\,d^4x$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
+with $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$. Its action is $S[\tilde{\Phi}]=\int\mathcal{L}\,d^4x$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
 
 $$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})\right]
@@ -83,13 +83,13 @@ $$
 N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=\left(-\frac{\omega^2}{c^2}+\mathbf{k}^2\right)e_0 ,
 $$
 
-and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})=\mathbf{k}\cdot\mathbf{x}-\omega t$. Substituting $\tilde{\Phi}=\phi_0e^{i\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})}e_0$ into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ gives $\omega^2/c^2-\mathbf{k}^2=\mu^2$, which is the mass-shell condition
+and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})=\mathbf{k}\cdot\mathbf{x}-\omega t$. Substituting $\tilde{\Phi}=\phi_0e^{i\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}e_0$ into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ gives $\omega^2/c^2-\mathbf{k}^2=\mu^2$, which is the mass-shell condition
 
 $$
 N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=-\frac{m^2c^2}{\hbar^2}\,e_0 .
 $$
 
-**Verification.** For $\mu=0.7$ and the three on-shell wavevectors $(1.3,0.2,-0.5)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$, the direct biquaternion product gave $\tilde{K}\bar{\tilde{K}}=-0.49\,e_0$ to twelve decimal places in every case, with the vector part vanishing to machine precision, and the phase identity $\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})=\mathbf{k}\cdot\mathbf{x}-\omega t$ was reproduced exactly on an independent four-vector. The mass shell is a level set of the norm form, in the sense recorded by the parent article.
+**Verification.** For $\mu=0.7$ and the three on-shell wavevectors $(1.3,0.2,-0.5)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$, the direct biquaternion product gave $\tilde{K}\bar{\tilde{K}}=-0.49\,e_0$ to twelve decimal places in every case, with the vector part vanishing to machine precision, and the phase identity $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})=\mathbf{k}\cdot\mathbf{x}-\omega t$ was reproduced exactly on an independent four-vector. The mass shell is a level set of the norm form, in the sense recorded by the parent article.
 
 ## Equal-Time Commutation Relations
 
@@ -139,11 +139,11 @@ The operator $\hat a_{\mathbf{p}}$ annihilates a particle of momentum $\mathbf{p
 The biquaternion form of the expansion is the replacement of the phase $e^{\mp ip\cdot x}$ by a central unitary element built from the material four-wavevector. With $\tilde{K}=iE_{\mathbf{p}}e_0+\mathbf{p}$ in natural units, the identity above gives
 
 $$
-\mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{X}}\right)=\mathbf{p}\cdot\mathbf{x}-E_{\mathbf{p}}t=-p\cdot x ,
+\mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{Q}}\right)=\mathbf{p}\cdot\mathbf{x}-E_{\mathbf{p}}t=-p\cdot x ,
 \qquad
-e^{-ip\cdot x}=e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})},
+e^{-ip\cdot x}=e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})},
 \qquad
-e^{+ip\cdot x}=e^{-i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})} .
+e^{+ip\cdot x}=e^{-i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})} .
 $$
 
 The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_0$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalization $1/\sqrt{2E_{\mathbf{p}}}$ and the measure $d^3p/(2\pi)^3$ are the standard Lorentz-invariant ones and are inherited.
@@ -236,7 +236,7 @@ $$
 \big[\hat{\phi}(\mathbf{x},t),\hat{\phi}^\dagger(\mathbf{y},t)\big]=0,
 $$
 
-because the integrand of the momentum integral is odd under $\mathbf{p}\to-\mathbf{p}$; this is the statement that the field is a canonical coordinate and not its own momentum. For spacelike separation, $N(\tilde{X}-\tilde{Y})>0$, it vanishes as well, which is **microcausality**: two measurements of the field in causally disconnected regions commute, and the quantization does not correlate them. For timelike separation it does not vanish, and the commutator is what enforces the canonical relation and the positivity of the energy. The standard result that $\Delta$ has support on the light cone and its interior is inherited from the standard theory; the framework's notation neither alters it nor needs to.
+because the integrand of the momentum integral is odd under $\mathbf{p}\to-\mathbf{p}$; this is the statement that the field is a canonical coordinate and not its own momentum. For spacelike separation, $N(\tilde{Q}-\tilde{Y})>0$, it vanishes as well, which is **microcausality**: two measurements of the field in causally disconnected regions commute, and the quantization does not correlate them. For timelike separation it does not vanish, and the commutator is what enforces the canonical relation and the positivity of the energy. The standard result that $\Delta$ has support on the light cone and its interior is inherited from the standard theory; the framework's notation neither alters it nor needs to.
 
 ## What Is Standard and What Is Open
 
@@ -279,7 +279,7 @@ $$
 \left(\hat a_{\mathbf{p}}e^{-ip\cdot x}+\hat b_{\mathbf{p}}^\dagger e^{+ip\cdot x}\right),
 $$
 
-the phases being central unitaries $e^{\pm i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})}$ built from the material four-wavevector $\tilde{K}=iE_{\mathbf{p}}e_0+\mathbf{p}$; the mode commutators are $[\hat a_{\mathbf{p}},\hat a_{\mathbf{q}}^\dagger]=[\hat b_{\mathbf{p}},\hat b_{\mathbf{q}}^\dagger]=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!\hat H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\mathbf{p}}(\hat a^\dagger\hat a+\hat b^\dagger\hat b)$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
+the phases being central unitaries $e^{\pm i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}$ built from the material four-wavevector $\tilde{K}=iE_{\mathbf{p}}e_0+\mathbf{p}$; the mode commutators are $[\hat a_{\mathbf{p}},\hat a_{\mathbf{q}}^\dagger]=[\hat b_{\mathbf{p}},\hat b_{\mathbf{q}}^\dagger]=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!\hat H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\mathbf{p}}(\hat a^\dagger\hat a+\hat b^\dagger\hat b)$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
 
 The field's value space is the center $\mathbb{C}_{\mathbb{B}}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_0$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the norm-form reading of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
 
@@ -292,7 +292,7 @@ The field's value space is the center $\mathbb{C}_{\mathbb{B}}$, and the algebra
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center; the scalar field's value space |
-| $\tilde{X}=ict\,e_0+\mathbf{x}$, $N(\tilde{X})=\tilde{X}\bar{\tilde{X}}$ | Material coordinate, $\in\mathbb{M}_-$, and its norm form; spacelike means $N>0$ |
+| $\tilde{Q}=ict\,e_0+\mathbf{x}$, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Material coordinate, $\in\mathbb{M}_-$, and its norm form; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}=\partial_{ict}^2+\Delta$ | d'Alembertian |
 | $\tilde{\Phi}=\phi\,e_0$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Scalar field, valued in the center; real components |

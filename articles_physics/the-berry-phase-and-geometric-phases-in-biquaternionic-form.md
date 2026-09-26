@@ -127,7 +127,7 @@ $$
 \qquad\text{with}\qquad \partial_\mu = \frac{\partial}{\partial R^\mu}.
 $$
 
-This is the standard Berry connection, written through the trace. Under the isomorphism, the quotient is the column-vector inner product $\langle\psi|\partial_\mu\psi\rangle$ divided by $\langle\psi|\psi\rangle$; in the algebra it is the same number, computed by the trace formula $\mathrm{Tr}(X) = 2\,\mathrm{Sc}(X)$ inherited from the read list. The definition uses the pairing that gives the Born rule, which is a structural point and not a coincidence of notation: the connection and the Born rule are two readings of one bilinear form on the state module.
+This is the standard Berry connection, written through the trace. Under the isomorphism, the quotient is the column-vector inner product $\langle\psi|\partial_\mu\psi\rangle$ divided by $\langle\psi|\psi\rangle$; in the algebra it is the same number, computed by the trace formula $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ inherited from the read list. The definition uses the pairing that gives the Born rule, which is a structural point and not a coincidence of notation: the connection and the Born rule are two readings of one bilinear form on the state module.
 
 **Reality.** For normalized $\psi$, $\mathrm{Tr}(\psi^\dagger\psi) = 1$ is constant, so differentiating gives
 

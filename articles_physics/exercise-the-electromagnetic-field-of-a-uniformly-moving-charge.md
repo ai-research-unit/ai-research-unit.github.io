@@ -287,7 +287,7 @@ $$
 $$
 whose velocity is $-c\tanh\psi_u\,\hat{\mathbf{u}} = -\mathbf{u}$. Verified numerically: for $\mathbf{u} = 0.6c\,\hat{\mathbf{e}}_1$, $\mathbf{u} = (0,0.5c,0.3c)$, and $\mathbf{u} = (0.3c,-0.4c,0.5c)$ the conjugated rest four-velocity had velocity exactly $-\mathbf{u}$ in each case. So the rotor built with $+\mathbf{u}$ carries the lab to the frame moving with $+\mathbf{u}$; a particle at rest in the lab appears in that frame to move with $-\mathbf{u}$.
 
-**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
+**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
 $$
 \tilde{F}' = \bar{\tilde{\Lambda}}_{\mathbf{u}}\,\tilde{F}\,\tilde{\Lambda}_{\mathbf{u}}
 = \tilde{\Lambda}_{\mathbf{u}}^{-1}\tilde{F}\,\tilde{\Lambda}_{\mathbf{u}}

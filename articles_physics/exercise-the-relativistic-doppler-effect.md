@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic Doppler effect, using the framework and the notation of the companion articles *Relativistic Mechanics in Biquaternionic Form* and *The Lorentz Transformation as a Biquaternionic Rotation*. Those two articles are the parents of this exercise: they set up the four-vectors of $\mathbb{M}_-$ and the boost rotor that acts on them, and what follows applies them to the light of a moving source. Nothing new is introduced, and every result below is obtained from the tools already defined there.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ and the scalar projection $\mathrm{Sc}$. The four-wavevector $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ from the table of four-vectors in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$, and the boost biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ and the scalar projection $\mathrm{Sc}$. The four-wavevector $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ from the table of four-vectors in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$, and the boost biquaternion
 $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}},
 \qquad
@@ -48,27 +48,27 @@ the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zer
 
 **Solution (b).** Fix the plane-wave convention $\propto e^{i\Phi}$ with
 $$
-\Phi = \mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{X}}\right)
+\Phi = \mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{Q}}\right)
 = \left(\frac{i\omega}{c}\right)(ic\,t) + \mathbf{k}\cdot\mathbf{x}
 = \mathbf{k}\cdot\mathbf{x} - \omega t ,
 \qquad
-\tilde{X} = ic\,t\,e_0 + \mathbf{x} .
+\tilde{Q} = ic\,t\,e_0 + \mathbf{x} .
 $$
-Let $\tilde{\Lambda}$ be any unit-norm biquaternion and let $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$, $\tilde{X}' = \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$. Then
+Let $\tilde{\Lambda}$ be any unit-norm biquaternion and let $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$, $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$. Then
 $$
-\tilde{K}'\bar{\tilde{X}}'
-= \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger\;\overline{\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger}
-= \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger\,\overline{\tilde{\Lambda}^\dagger}\,\bar{\tilde{X}}\,\bar{\tilde{\Lambda}} .
+\tilde{K}'\bar{\tilde{Q}}'
+= \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger\;\overline{\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger}
+= \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger\,\overline{\tilde{\Lambda}^\dagger}\,\bar{\tilde{Q}}\,\bar{\tilde{\Lambda}} .
 $$
 Since $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^*$ and quaternion and complex conjugation commute, $\overline{\tilde{\Lambda}^\dagger} = \overline{\bar{\tilde{\Lambda}}^*} = \tilde{\Lambda}^*$; hence the inner pair collapses,
 $$
 \tilde{\Lambda}^\dagger\overline{\tilde{\Lambda}^\dagger} = \bar{\tilde{\Lambda}}^*\,\tilde{\Lambda}^* = (\bar{\tilde{\Lambda}}\tilde{\Lambda})^* = \bar{\tilde{\Lambda}}\tilde{\Lambda} = e_0 ,
 $$
-so $\tilde{K}'\bar{\tilde{X}}' = \tilde{\Lambda}(\tilde{K}\bar{\tilde{X}})\bar{\tilde{\Lambda}}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_0$,
+so $\tilde{K}'\bar{\tilde{Q}}' = \tilde{\Lambda}(\tilde{K}\bar{\tilde{Q}})\bar{\tilde{\Lambda}}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_0$,
 $$
-\mathrm{Sc}\!\left(\tilde{\Lambda}\,(\tilde{K}\bar{\tilde{X}})\,\bar{\tilde{\Lambda}}\right)
-= \mathrm{Sc}\!\left((\tilde{K}\bar{\tilde{X}})\,\bar{\tilde{\Lambda}}\tilde{\Lambda}\right)
-= \mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{X}}\right) .
+\mathrm{Sc}\!\left(\tilde{\Lambda}\,(\tilde{K}\bar{\tilde{Q}})\,\bar{\tilde{\Lambda}}\right)
+= \mathrm{Sc}\!\left((\tilde{K}\bar{\tilde{Q}})\,\bar{\tilde{\Lambda}}\tilde{\Lambda}\right)
+= \mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{Q}}\right) .
 $$
 Hence $\Phi' = \Phi$: the phase is a scalar of the algebra and of the Lorentz group. This is the biquaternion form of the statement that the phase of a plane wave is an invariant, and it is what makes the transformation of the frequency a transformation of the four-wavevector alone.
 
@@ -308,7 +308,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ is an element of $\mathbb{M}_-$ with $N(\tilde{K}) = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $N(\tilde{K}) = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde{K}\bar{\tilde{X}}) = \mathbf{k}\cdot\mathbf{x}-\omega t$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ is an element of $\mathbb{M}_-$ with $N(\tilde{K}) = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $N(\tilde{K}) = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = \mathbf{k}\cdot\mathbf{x}-\omega t$ is invariant under rotor conjugation.
 
 2. **Frequency invariant.** An observer of four-velocity $\tilde{U}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde{K}\bar{\tilde{U}})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 
@@ -334,7 +334,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde{X} = ict\,e_0 + \mathbf{x}$ | Four-position |
+| $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position |
 | $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ | Four-wavevector, $N(\tilde{K}) = 0$ for light |
 | $\tilde{U} = \gamma_u(ic\,e_0 + \mathbf{u})$ | Observer four-velocity, $N(\tilde{U}) = -c^2$ |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | Boost biquaternion (Hermitian, unit norm) |

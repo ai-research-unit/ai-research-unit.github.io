@@ -20,7 +20,7 @@ The treatment is classical and non-quantum throughout. The companion articles *T
 
 ### Where the World Is Placed
 
-The full worldline is the material-sector curve $\tilde{X}(t) = ic\,t\,e_0 + \mathbf{x}(t)$. In the non-relativistic limit the scalar direction $ie_0$ is inert — the Galilean shear of the first article leaves it fixed — so the configuration space of the non-relativistic particle is the direct sum
+The full worldline is the material-sector curve $\tilde{Q}(t) = ic\,t\,e_0 + \mathbf{x}(t)$. In the non-relativistic limit the scalar direction $ie_0$ is inert — the Galilean shear of the first article leaves it fixed — so the configuration space of the non-relativistic particle is the direct sum
 
 $$
 ie_0\mathbb{R} \;\oplus\; \operatorname{span}\{e_1, e_2, e_3\} \;\subset\; \mathbb{M}_- ,

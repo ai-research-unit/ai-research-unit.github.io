@@ -129,7 +129,7 @@ The chiral Lagrangian is the most general Lagrangian for the field $\tilde U$ th
 **The chiral field.** Define
 
 $$
-\tilde U(\tilde X) = \exp\!\left(\frac{\tilde\pi(\tilde X)}{f_\pi}\right)\in\mathbb{H}^1_{\mathbb{B}} ,
+\tilde U(\tilde{Q}) = \exp\!\left(\frac{\tilde\pi(\tilde{Q})}{f_\pi}\right)\in\mathbb{H}^1_{\mathbb{B}} ,
 $$
 
 which is unitary because $\tilde\pi$ is anti-Hermitian, and which may be written in the closed form

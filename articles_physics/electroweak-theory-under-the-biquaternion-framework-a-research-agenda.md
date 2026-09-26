@@ -30,7 +30,7 @@ The four obstacles the agenda treats are the **chiral-fermion obstacle** (the fr
 
 The read-list article *The Gauge Principle in Biquaternionic Form* derives the abelian gauge structure from the center of the algebra. Its results are established and are used here unchanged.
 
-The center is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$, and its unitary part is $U(1) = \{e^{i\theta}\}$. A constant central phase is a symmetry of the massless biquaternion field equation, because a central constant passes through the gradient. Localizing it, $\lambda(\tilde{X}) = e^{iq\Gamma(\tilde{X})/\hbar}$ with real $\Gamma$, forces a connection $\tilde{A}$ with the transformation law
+The center is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$, and its unitary part is $U(1) = \{e^{i\theta}\}$. A constant central phase is a symmetry of the massless biquaternion field equation, because a central constant passes through the gradient. Localizing it, $\lambda(\tilde{Q}) = e^{iq\Gamma(\tilde{Q})/\hbar}$ with real $\Gamma$, forces a connection $\tilde{A}$ with the transformation law
 
 $$
 \tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma,

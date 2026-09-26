@@ -7,7 +7,7 @@ The **strong CP problem** is the near-vanishing of the physical theta parameter 
 This article constructs the axion and the Peccei–Quinn mechanism in the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The framework's center $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ carries an exact $U(1)$ of scalar phases, and the axion is the phase of a central scalar field,
 
 $$
-\tilde\Phi = \frac{\rho(\tilde X)}{\sqrt2}\,e^{i\,a(\tilde X)/f_a}\,e_0 \in \mathbb{C}_{\mathbb{B}} ,
+\tilde\Phi = \frac{\rho(\tilde{Q})}{\sqrt2}\,e^{i\,a(\tilde{Q})/f_a}\,e_0 \in \mathbb{C}_{\mathbb{B}} ,
 \qquad
 a \;\longmapsto\; a + 2\pi f_a ,
 $$

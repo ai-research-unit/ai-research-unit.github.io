@@ -66,9 +66,9 @@ The two summands are precisely two of the four coordinate blocks of the algebra:
 
 ### It Is the Lie Algebra of the Unit-Norm Group
 
-**Theorem.** Let $\tilde{X} \in \mathbb{B}$ and let $\Phi$ be the matrix realization. Then $\tilde{X} \in \mathrm{Vect}(\mathbb{B})$ if and only if the one-parameter family $t \mapsto \Phi^{-1}\!\left(e^{t\Phi(\tilde{X})}\right)$ lies in the norm-one group $\{\tilde{Q} : N(\tilde{Q}) = 1\}$ for all real $t$.
+**Theorem.** Let $\tilde{Q} \in \mathbb{B}$ and let $\Phi$ be the matrix realization. Then $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ if and only if the one-parameter family $t \mapsto \Phi^{-1}\!\left(e^{t\Phi(\tilde{Q})}\right)$ lies in the norm-one group $\{\tilde{Q} : N(\tilde{Q}) = 1\}$ for all real $t$.
 
-**Proof.** $\det \Phi(\tilde{Q}) = N(\tilde{Q})$, and $\det e^{M} = e^{\operatorname{Tr}M}$ for every matrix $M$, so the norm form of the exponential is $e^{t\operatorname{Tr}\Phi(\tilde{X})}$; this equals $1$ for all $t$ exactly when $\operatorname{Tr}\Phi(\tilde{X}) = 0$, and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ vanishes exactly on the vector subspace. $\square$
+**Proof.** $\det \Phi(\tilde{Q}) = N(\tilde{Q})$, and $\det e^{M} = e^{\operatorname{Tr}M}$ for every matrix $M$, so the norm form of the exponential is $e^{t\operatorname{Tr}\Phi(\tilde{Q})}$; this equals $1$ for all $t$ exactly when $\operatorname{Tr}\Phi(\tilde{Q}) = 0$, and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ vanishes exactly on the vector subspace. $\square$
 
 The proposition identifies $\mathrm{Vect}(\mathbb{B})$ with the Lie algebra of the unit-norm group, which is $\mathfrak{sl}(2, \mathbb{C})$ in the matrix picture; the same statement appears in *Biquaternion Exponential and Lie Group Structure* from the side of the group.
 

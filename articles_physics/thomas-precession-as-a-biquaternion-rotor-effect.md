@@ -41,7 +41,7 @@ $$
 which is Hermitian, $\tilde{\Lambda}_{\mathbf{u}}^{\dagger}=\tilde{\Lambda}_{\mathbf{u}}$, lies in $\mathbb{M}_+$, and has unit norm form, $\tilde{\Lambda}_{\mathbf{u}}\bar{\tilde{\Lambda}}_{\mathbf{u}}=e_0$. It acts on a four-vector by **rotor conjugation**,
 
 $$
-\tilde{X}'\;=\;\tilde{\Lambda}_{\mathbf{u}}\,\tilde{X}\,\tilde{\Lambda}_{\mathbf{u}}^{\dagger},
+\tilde{Q}'\;=\;\tilde{\Lambda}_{\mathbf{u}}\,\tilde{Q}\,\tilde{\Lambda}_{\mathbf{u}}^{\dagger},
 $$
 
 and the conjugation preserves the material sector $\mathbb{M}_-$. When the four-vector acted upon is a four-velocity $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$, the conjugation produces the standard parallel–perpendicular Lorentz transformation (Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity), and in the collinear case the rapidities subtract, $v'=c\tanh(\psi_v-\psi_u)$.
@@ -106,11 +106,11 @@ $$
 d\mathbf{v}=\mathbf{a}\,dt .
 $$
 
-Indeed, if $X'=\tilde{\Lambda}_{\mathbf{v}}X\tilde{\Lambda}_{\mathbf{v}}^{\dagger}$ are the components of a four-vector in the rest frame at $t$, then the components in the rest frame at $t+dt$ are
+Indeed, if $\tilde{Q}'=\tilde{\Lambda}_{\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}}^{\dagger}$ are the components of a four-vector in the rest frame at $t$, then the components in the rest frame at $t+dt$ are
 
 $$
-X''=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}X\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}^{\dagger}
-=\tilde{M}X'\tilde{M}^{\dagger},
+\tilde{Q}''=\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}\tilde{Q}\tilde{\Lambda}_{\mathbf{v}+d\mathbf{v}}^{\dagger}
+=\tilde{M}\tilde{Q}'\tilde{M}^{\dagger},
 $$
 
 so $\tilde{M}$ is the transformation between the two rest frames. It is unit-norm, and its polar decomposition

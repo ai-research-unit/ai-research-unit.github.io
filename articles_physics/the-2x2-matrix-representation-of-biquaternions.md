@@ -12,7 +12,7 @@ and the isomorphism is written $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ throughou
 
 The article supplies the $2 \times 2$ matrices that carry a single chirality, that is, the simple module $S = \mathbb{C}^2$ on which the algebra acts irreducibly. Its coefficient space is that of *The Four-Vector Representation of Biquaternions*, the left multiplication written on that space is that of *The 4×4 Regular Matrix Representation of Biquaternions*, and that representation is the direct sum $S \oplus S$ of two copies of the simple module treated here. The article states the assignment, checks that the four basis matrices multiply as the four units do, notes why the signs cannot be chosen differently, and reads off the invariants, the six subspaces, the two ideals as columns, the conjugations, and the spin and qubit structures.
 
-The assignment is the one fixed by *Biquaternion Algebraic Representations* in the mathematics pages. It is not free: it is used identically by the spin, qubit, Bell-state, Dirac and Fock-space articles, and the two conventions a reader is likely to meet elsewhere do not agree with it.
+The assignment is the one fixed by *Biquaternion 2×2 Matrix Representation* in the mathematics pages. It is not free: it is used identically by the spin, qubit, Bell-state, Dirac and Fock-space articles, and the two conventions a reader is likely to meet elsewhere do not agree with it.
 
 ## The Representation
 
@@ -34,7 +34,7 @@ $$
 with $\Phi(i) = i\,\Phi(e_0)$ on the central scalar $\mathbb{C}_{\mathbb{B}}$.
 <!-- CONVENTION — the matrix basis: the four basis images are asserted, and the images of the Hermitian units follow from them as Phi(i e_k) = i Phi(e_k) by C-linearity, needing no new choice. Both the factor i and the sign are forced (e_k^2 = -e_0 and e_1 e_2 = e_3), so a reviewer must not "correct" the assignment by making the three images real, nor by negating all three, and must not treat the choice as free. -->
 
-This is the assignment of the mathematics article *Biquaternion Algebraic Representations*, taken over unchanged. A general biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$ therefore maps to
+This is the assignment of the mathematics article *Biquaternion 2×2 Matrix Representation*, taken over unchanged. A general biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$ therefore maps to
 
 $$
 \Phi(\tilde{Q}) = Q_0\,\Phi(e_0) + Q_1 \Phi(e_1) + Q_2 \Phi(e_2) + Q_3 \Phi(e_3)

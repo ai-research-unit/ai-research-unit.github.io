@@ -66,7 +66,7 @@ $$
 \mathcal{B}_k = \bigl\{\tilde{P}_+(\hat{e}_k),\ \tilde{P}_-(\hat{e}_k)\bigr\}, \qquad k=1,2,3 .
 $$
 
-Explicitly, using $\tilde{X}=ie_1$, $\tilde{Y}=ie_2$, $\tilde{Z}=ie_3$,
+Explicitly, using $\tilde{Q}=ie_1$, $\tilde{Y}=ie_2$, $\tilde{Z}=ie_3$,
 
 $$
 \mathcal{B}_1 = \Bigl\{\tfrac12(e_0+i e_1),\ \tfrac12(e_0-i e_1)\Bigr\}, \quad
@@ -74,7 +74,7 @@ $$
 \mathcal{B}_3 = \Bigl\{\tfrac12(e_0+i e_3),\ \tfrac12(e_0-i e_3)\Bigr\} .
 $$
 
-Each basis is the eigenbasis of the corresponding involution: $\tilde{X}$ takes the values $\pm1$ on $\mathcal{B}_1$, and similarly for $\tilde{Y}$ on $\mathcal{B}_2$ and $\tilde{Z}$ on $\mathcal{B}_3$. These are the three coordinate measurements of the qubit.
+Each basis is the eigenbasis of the corresponding involution: $\tilde{Q}$ takes the values $\pm1$ on $\mathcal{B}_1$, and similarly for $\tilde{Y}$ on $\mathcal{B}_2$ and $\tilde{Z}$ on $\mathcal{B}_3$. These are the three coordinate measurements of the qubit.
 
 ## Mutual Unbiasedness of the Coordinate Bases
 
@@ -280,7 +280,7 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 | $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$ | Trace pairing (overlap) |
 | $\mathrm{Tr}(\tilde{P}_i^{(b)}\tilde{P}_j^{(b')}) = 1/d$ for $b\neq b'$ | Mutual unbiasedness |
 | $\mathcal{B}_k = \{\tilde{P}_\pm(\hat{e}_k)\}$ | The three coordinate bases |
-| $\tilde{X}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$ | Hermitian involutions defining the bases |
+| $\tilde{Q}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$ | Hermitian involutions defining the bases |
 | $\mathrm{Tr}(\tilde{P}_s(\hat{e}_j)\tilde{P}_{s'}(\hat{e}_k)) = \tfrac12$ ($j\neq k$) | Unbiasedness of the coordinate bases |
 | $\tilde{\rho} = \sum_b\sum_i p_i^{(b)}\tilde{P}_i^{(b)} - e_0$ | Reconstruction from a complete MUB set |
 | $P_\epsilon$ | Bell idempotents (maximally entangled basis) |

@@ -16,7 +16,7 @@ $$
 $$
 and it is the one used by the Klein–Gordon and Dirac companions and by the great majority of the series. The Weyl-spinor exercise uses the opposite sign, and a mass equation written $(\Box + m^2)\psi = 0$ there and $(\Box - m^2c^2/\hbar^2)\psi = 0$ here is the *same* equation, a point recorded in the companion article and returned to below.
 
-Second, the kernels. Because the $ict$ coordinate turns $\Box$ into the four-dimensional Euclidean Laplacian, the inversion of $\Box$ is the classical theory of the Laplacian's fundamental solutions, and its different Green's functions are different boundary conditions on one equation. The **invariant** (Euclidean) kernel is $1/(4\pi^2\rho^2)$ with $\rho^2 = N(\tilde{X})$; the **retarded** and **advanced** kernels are supported on the light cone, $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ and $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(t + R/c)$; their difference is the commutator function; and the **causal** kernel is the boundary-value combination that the Wick rotation continues to the Euclidean one. The light-cone delta and its Jacobian, which the companion exercise *Exercise: The Retarded Potentials and the Green's Function* derives for the electromagnetic problem, are re-derived here as the general statement they are an instance of.
+Second, the kernels. Because the $ict$ coordinate turns $\Box$ into the four-dimensional Euclidean Laplacian, the inversion of $\Box$ is the classical theory of the Laplacian's fundamental solutions, and its different Green's functions are different boundary conditions on one equation. The **invariant** (Euclidean) kernel is $1/(4\pi^2\rho^2)$ with $\rho^2 = N(\tilde{Q})$; the **retarded** and **advanced** kernels are supported on the light cone, $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ and $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(t + R/c)$; their difference is the commutator function; and the **causal** kernel is the boundary-value combination that the Wick rotation continues to the Euclidean one. The light-cone delta and its Jacobian, which the companion exercise *Exercise: The Retarded Potentials and the Green's Function* derives for the electromagnetic problem, are re-derived here as the general statement they are an instance of.
 
 Third, the genuinely biquaternionic kernel. The second-order operator $\Box$ has a scalar Green's function, but the first-order operator $\tilde{\nabla}$ — the one the Dirac and Maxwell equations are built from — has a **biquaternion-valued** Green's function, $\tilde{G}_1 = \bar{\tilde{\nabla}} G_\Box$, and it lies in the material sector $\mathbb{M}_-$. This is not a cosmetic difference. The scalar kernel is central and commutes with the whole algebra; the first-order kernel is a material four-vector, transforms under the rotor action, and does not commute. Both facts are consequences of the algebra and are verified below.
 
@@ -134,23 +134,23 @@ which is the operator form of the statement that $\Box$ is real and central. Thi
 
 ## The Defining Equation for the Green's Function
 
-A Green's function of $\Box$ is a distribution $G(\tilde{X},\tilde{X}')$ satisfying
+A Green's function of $\Box$ is a distribution $G(\tilde{Q},\tilde{Q}')$ satisfying
 $$
-\Box_{\tilde{X}}\,G(\tilde{X},\tilde{X}') = -\,\delta^{(4)}(\tilde{X} - \tilde{X}') ,
+\Box_{\tilde{Q}}\,G(\tilde{Q},\tilde{Q}') = -\,\delta^{(4)}(\tilde{Q} - \tilde{Q}') ,
 $$
-where $\Box_{\tilde{X}}$ differentiates in the first argument and the right-hand side is the four-dimensional delta in the $ict$ coordinate. The sign is the series convention: it is the sign of the companion exercise, and with it the retarded kernel of the electromagnetic problem is $\Box\tilde{A} = -\mu\tilde{R}'$ inverted by convolution. With this normalisation the inhomogeneous equation
+where $\Box_{\tilde{Q}}$ differentiates in the first argument and the right-hand side is the four-dimensional delta in the $ict$ coordinate. The sign is the series convention: it is the sign of the companion exercise, and with it the retarded kernel of the electromagnetic problem is $\Box\tilde{A} = -\mu\tilde{R}'$ inverted by convolution. With this normalisation the inhomogeneous equation
 $$
 \Box\tilde{\Phi} = \tilde{J}
 $$
 is solved by
 $$
-\tilde{\Phi}(\tilde{X}) = -\int G(\tilde{X},\tilde{X}')\,\tilde{J}(\tilde{X}')\,d^4X' ,
+\tilde{\Phi}(\tilde{Q}) = -\int G(\tilde{Q},\tilde{Q}')\,\tilde{J}(\tilde{Q}')\,d^4Q' ,
 $$
 because $\Box$ is central and may be moved through any algebraic factor. The minus sign and the sign of the source equation are a matched pair; changing either alone changes the sign of the field, which is the usual source of an apparent inconsistency between articles that state the convolution differently.
 
 When the kernel depends only on the difference,
 $$
-G(\tilde{X},\tilde{X}') = G(\tilde{X}-\tilde{X}') ,
+G(\tilde{Q},\tilde{Q}') = G(\tilde{Q}-\tilde{Q}') ,
 $$
 the operator is translation invariant and the convolution is a convolution. This will be the case for all the kernels below: $\Box$ has constant coefficients, so the general solution is the sum of a particular convolution and a solution of the homogeneous equation, and the choice among kernels is a choice of boundary condition, not of algebra.
 
@@ -158,9 +158,9 @@ the operator is translation invariant and the convolution is a convolution. This
 
 ### The four-dimensional Euclidean reading
 
-With $\tilde{X} = ict\,e_0 + \mathbf{x}$, the norm form is
+With $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the norm form is
 $$
-\rho^2 := N(\tilde{X}) = (ict)^2 + \mathbf{x}^2 = -c^2t^2 + \mathbf{x}^2 ,
+\rho^2 := N(\tilde{Q}) = (ict)^2 + \mathbf{x}^2 = -c^2t^2 + \mathbf{x}^2 ,
 $$
 the Minkowski interval continued to imaginary time. Read as a quadratic form in the four real coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = ict$, the operator $\Box = \partial_{ict}^2 + \Delta$ is *exactly* the four-dimensional Laplacian,
 $$
@@ -170,9 +170,9 @@ so that the inversion of the wave operator is the classical inversion of the Lap
 
 The rotationally invariant fundamental solution of $-\Delta_4 G = \delta^{(4)}$ in four dimensions is
 $$
-G_{\mathrm{inv}}(\tilde{X}) = \frac{1}{4\pi^2\rho^2} ,
+G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} ,
 \qquad
--\Box\,G_{\mathrm{inv}} = \delta^{(4)}(\tilde{X}) .
+-\Box\,G_{\mathrm{inv}} = \delta^{(4)}(\tilde{Q}) .
 $$
 The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4x$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\mathbf{k})$ conjugate to the $ict$ coordinate, $\Box \to -k_4^2 - \mathbf{k}^2$ and
 $$
@@ -180,7 +180,7 @@ $$
 $$
 the four-dimensional Coulomb kernel.
 
-Three properties of $G_{\mathrm{inv}}$ are worth naming. It is **real and scalar**: it is a multiple of $e_0$, hence central, and it commutes with every biquaternion. It is **invariant**: it depends on $\tilde{X}$ only through $N(\tilde{X})$, so it is unchanged by the Lorentz action $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, which preserves the norm form. And it is **singular on the light cone**: $\rho^2$ vanishes exactly on the zero-divisor cone, and the kernel is not defined there as a function. As the Euclidean solution it is the one selected by decay at large $\rho$ with no reference to time; the causal solutions below differ from it by solutions of the homogeneous equation, and the difference is the whole of the physical content of the choice.
+Three properties of $G_{\mathrm{inv}}$ are worth naming. It is **real and scalar**: it is a multiple of $e_0$, hence central, and it commutes with every biquaternion. It is **invariant**: it depends on $\tilde{Q}$ only through $N(\tilde{Q})$, so it is unchanged by the Lorentz action $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, which preserves the norm form. And it is **singular on the light cone**: $\rho^2$ vanishes exactly on the zero-divisor cone, and the kernel is not defined there as a function. As the Euclidean solution it is the one selected by decay at large $\rho$ with no reference to time; the causal solutions below differ from it by solutions of the homogeneous equation, and the difference is the whole of the physical content of the choice.
 
 ### The light-cone delta and the retarded kernel
 
@@ -193,11 +193,11 @@ where the Jacobian is $|dg/dt| = 2c^2|t| = 2cR$ at either root. Applying the fut
 $$
 \Theta(t)\,\delta(\rho^2) = \frac{1}{2cR}\,\delta\!\left(t - \frac{R}{c}\right) ,
 \qquad\text{hence}\qquad
-G_{\mathrm{ret}}(\tilde{X}) := \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(t)\,\delta(\rho^2) .
+G_{\mathrm{ret}}(\tilde{Q}) := \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(t)\,\delta(\rho^2) .
 $$
 The Jacobian identity was checked by smearing $\Theta(t)\,\delta(\rho^2)$ against a test function on a two-million-point mesh, the numerical value reproducing $\chi(R/c)/(2cR)$ for three values of $R$ to three decimal places. The normalisation is the one the display uses: $\delta$ of the argument $\rho^2$ carries the Jacobian $2cR$ and gives $\chi(R/c)/(2cR)$, whereas $\delta$ of $t^2 - R^2/c^2$ would carry the Jacobian $2R/c$ and return $c\,\chi(R/c)/(2R)$ — the two differ by $c^2$ and must not be interchanged. The symmetric relation between the retarded and advanced kernels is then immediate,
 $$
-G_{\mathrm{adv}}(\tilde{X}) = \frac{1}{4\pi R}\,\delta\!\left(t + \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(-t)\,\delta(\rho^2) .
+G_{\mathrm{adv}}(\tilde{Q}) = \frac{1}{4\pi R}\,\delta\!\left(t + \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(-t)\,\delta(\rho^2) .
 $$
 
 The retarded kernel inverts the operator. Applying $\Box = \partial_{ict}^2 + \Delta$ to $\frac{u(t - R/c)}{4\pi R}$ and using the two radial identities
@@ -217,7 +217,7 @@ The result was checked directly: on a smooth radial-$u$ kernel, $\Box[u(t-R/c)/(
 
 The difference of the two causal kernels solves the *homogeneous* equation, since the sources cancel:
 $$
-\Delta_{\mathrm{PJ}}(\tilde{X}) := G_{\mathrm{ret}}(\tilde{X}) - G_{\mathrm{adv}}(\tilde{X})
+\Delta_{\mathrm{PJ}}(\tilde{Q}) := G_{\mathrm{ret}}(\tilde{Q}) - G_{\mathrm{adv}}(\tilde{Q})
 = \frac{1}{4\pi R}\Bigl[\delta\!\left(t - \frac{R}{c}\right) - \delta\!\left(t + \frac{R}{c}\right)\Bigr] ,
 \qquad
 \Box\,\Delta_{\mathrm{PJ}} = 0 .
@@ -226,7 +226,7 @@ This is the Pauli–Jordan (commutator) function: it is antisymmetric in time, s
 
 The **causal** or Feynman kernel is the boundary-value combination that is symmetric in time and selects positive frequencies forward and negative frequencies backward. In the $ict$ variables it is the analytic continuation of the Euclidean kernel with the Feynman prescription,
 $$
-G_{F}(\tilde{X}) = \frac{1}{4\pi^2}\,\frac{1}{\rho^2 - i\epsilon} ,
+G_{F}(\tilde{Q}) = \frac{1}{4\pi^2}\,\frac{1}{\rho^2 - i\epsilon} ,
 \qquad \epsilon \to 0^+ ,
 $$
 whose Fourier transform is $1/(k_4^2 + \mathbf{k}^2 - i\epsilon)$. Two facts make this the natural object of the quantum theory: its Wick rotation to imaginary time is exactly $G_{\mathrm{inv}}$, and its $i\epsilon$ prescription is the statement of which vacuum the propagator is referred to. The companion *The Wick Rotation in the Biquaternion Universe* develops the rotation in full; here it is enough to record that the four kernels — invariant, retarded, advanced, causal — are four boundary conditions on one operator, related by the cone identities above and by the time boundary conditions.
@@ -239,9 +239,9 @@ $$
 $$
 and the defining equation becomes $(\Box - \mu^2)G = -\delta$. In the $ict$ variables the shifted operator is Helmholtz's, $-\Delta_4 + \mu^2$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
 $$
-G^{(\mu)}_{\mathrm{inv}}(\tilde{X}) = \frac{\mu}{4\pi^2\rho}\,K_1(\mu\rho) ,
+G^{(\mu)}_{\mathrm{inv}}(\tilde{Q}) = \frac{\mu}{4\pi^2\rho}\,K_1(\mu\rho) ,
 \qquad
-\left(-\Delta_4 + \mu^2\right) G^{(\mu)}_{\mathrm{inv}} = \delta^{(4)}(\tilde{X}) ,
+\left(-\Delta_4 + \mu^2\right) G^{(\mu)}_{\mathrm{inv}} = \delta^{(4)}(\tilde{Q}) ,
 $$
 with $K_1$ the modified Bessel function; its Fourier transform is
 $$
@@ -259,9 +259,9 @@ which was checked on a random on-shell four-momentum $K = i(\omega/c)e_0 + \math
 
 The Dirac and Maxwell equations are first order, and their kernel is the kernel of $\tilde{\nabla}$ rather than of $\Box$. Since $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$, the inverse of left multiplication by $\tilde{\nabla}$ is left multiplication by $\bar{\tilde{\nabla}}$ followed by the scalar kernel:
 $$
-\tilde{G}_1(\tilde{X}) := \bar{\tilde{\nabla}}\,G_\Box(\tilde{X}) ,
+\tilde{G}_1(\tilde{Q}) := \bar{\tilde{\nabla}}\,G_\Box(\tilde{Q}) ,
 \qquad
-\tilde{\nabla}\,\tilde{G}_1 = \tilde{\nabla}\bar{\tilde{\nabla}}\,G_\Box = \Box\,G_\Box = -\,\delta^{(4)}(\tilde{X}) .
+\tilde{\nabla}\,\tilde{G}_1 = \tilde{\nabla}\bar{\tilde{\nabla}}\,G_\Box = \Box\,G_\Box = -\,\delta^{(4)}(\tilde{Q}) .
 $$
 So $\tilde{G}_1$ inverts the first-order operator with the same sign as $G_\Box$ inverts the second. The result is not a scalar. With $G_\Box$ a real scalar kernel,
 $$
@@ -277,9 +277,9 @@ Three consequences follow and are used by the companion articles.
 
 **The kernel transforms as a vector.** Under the Lorentz action the scalar kernel is invariant, but the first-order kernel transforms by the four-vector rule,
 $$
-G_\Box(\tilde{X}) \mapsto G_\Box(\tilde{X}) ,
+G_\Box(\tilde{Q}) \mapsto G_\Box(\tilde{Q}) ,
 \qquad
-\tilde{G}_1(\tilde{X}) \mapsto \tilde{\Lambda}\,\tilde{G}_1(\tilde{\Lambda}^{-1}\tilde{X}\tilde{\Lambda}^{-\dagger})\,\tilde{\Lambda}^\dagger ,
+\tilde{G}_1(\tilde{Q}) \mapsto \tilde{\Lambda}\,\tilde{G}_1(\tilde{\Lambda}^{-1}\tilde{Q}\tilde{\Lambda}^{-\dagger})\,\tilde{\Lambda}^\dagger ,
 $$
 so that $\tilde{\nabla}\tilde{G}_1 = -\delta$ is preserved with the rotated gradient. This is what makes the inverse of the Dirac operator a covariant object.
 
@@ -321,7 +321,7 @@ the two minus signs cancelling. The adjoint statement was verified through the a
 The Green's functions are the boundary conditions on one equation, $-\Box G = \delta^{(4)}$. The invariant kernel is
 $$
 G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2} ,
-\qquad \rho^2 = N(\tilde{X}) = -c^2t^2 + \mathbf{x}^2 ,
+\qquad \rho^2 = N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2 ,
 $$
 the four-dimensional Euclidean fundamental solution, verified by parts against a radial test function. The causal kernels are supported on the light cone,
 $$
@@ -350,8 +350,8 @@ which is material-sector-valued, transforms as a four-vector, and does not commu
 | $\Box_{\text{Weyl}} = -\Box$ | Opposite-sign convention of the Weyl-spinor exercise, same kernel |
 | $\tilde{\nabla}^\dagger = -\bar{\tilde{\nabla}}$, $\Box^\dagger = \Box$ | Adjoints under $\langle\tilde{F},\tilde{G}\rangle = \int\mathrm{Tr}(\tilde{F}^\dagger\tilde{G})$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_1^\flat = \tilde{G}_1$ | Conjugation action on the operator and the kernels: $\bar{\cdot}$, ${}^*$, $\dagger$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_1 \in \mathbb{M}_+$ |
-| $\tilde{X} = ict\,e_0 + \mathbf{x}$ | Material four-position |
-| $\rho^2 = N(\tilde{X}) = -c^2t^2 + \mathbf{x}^2$ | Norm form of the separation; Euclidean four-distance squared |
+| $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Material four-position |
+| $\rho^2 = N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2$ | Norm form of the separation; Euclidean four-distance squared |
 | $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ | Invariant (Euclidean) kernel; $-\Box G_{\mathrm{inv}} = \delta^{(4)}$ |
 | $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ | Retarded kernel; $\Box G_{\mathrm{ret}} = -\delta$ |
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(t + R/c)$ | Advanced kernel; $\Box G_{\mathrm{adv}} = -\delta$ |

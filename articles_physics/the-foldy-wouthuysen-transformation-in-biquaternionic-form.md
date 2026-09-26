@@ -171,20 +171,20 @@ the $\mathbf{p}^4$ term being the first relativistic correction to the kinetic e
 The transformation does more than block-diagonalise the Hamiltonian: it also changes the position operator, and the change is the resolution of the Zitterbewegung paradox. Conjugating $\mathbf{x}$ by $U = e^{iS}$ gives
 
 $$
-\mathbf{X} = U\,\mathbf{x}\,U^\dagger
+\mathbf{Q} = U\,\mathbf{x}\,U^\dagger
 = \mathbf{x} + i[S,\mathbf{x}] + \frac{i^2}{2!}[S,[S,\mathbf{x}]]+\cdots
 = \mathbf{x} - \frac{i\hbar\,\beta\boldsymbol\alpha}{2mc} + \cdots,
 $$
 
-where the leading term uses $[S_1,x_k] = -\frac{i}{2mc}\beta[\alpha_j\pi_j,x_k] = -\frac{\hbar}{2mc}\beta\alpha_k$ for the free case, so the correction is of the order of the reduced Compton wavelength $\hbar/(mc)$, and the next correction is of order $1/m^2$. The operator $\mathbf{X}$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
+where the leading term uses $[S_1,x_k] = -\frac{i}{2mc}\beta[\alpha_j\pi_j,x_k] = -\frac{\hbar}{2mc}\beta\alpha_k$ for the free case, so the correction is of the order of the reduced Compton wavelength $\hbar/(mc)$, and the next correction is of order $1/m^2$. The operator $\mathbf{Q}$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
-\dot{\mathbf{X}} = \frac{i}{\hbar}[H',\mathbf{X}],
+\dot{\mathbf{Q}} = \frac{i}{\hbar}[H',\mathbf{Q}],
 $$
 
-contains no oscillatory term: to leading order it is the classical drift $\mathbf{p}c^2/E$, so the rapid trembling of the ordinary position operator $\mathbf{x}$ is entirely contained in the difference $\mathbf{x} - \mathbf{X}$. In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the FW position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the transformed position operator.
+contains no oscillatory term: to leading order it is the classical drift $\mathbf{p}c^2/E$, so the rapid trembling of the ordinary position operator $\mathbf{x}$ is entirely contained in the difference $\mathbf{x} - \mathbf{Q}$. In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the FW position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the transformed position operator.
 
-The correction $-\frac{i\hbar\beta\boldsymbol\alpha}{2mc}$ is itself worth reading in the algebra. It is an odd, spinorial displacement: it is proportional to the same matrix $\beta\boldsymbol\alpha$ that generates the transformation, it anticommutes with $\beta$, and it is suppressed by one power of $1/c$ relative to the ordinary position. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the block-diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\mathbf{X}$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\mathbf{x}$ and a configuration-space position on the module.
+The correction $-\frac{i\hbar\beta\boldsymbol\alpha}{2mc}$ is itself worth reading in the algebra. It is an odd, spinorial displacement: it is proportional to the same matrix $\beta\boldsymbol\alpha$ that generates the transformation, it anticommutes with $\beta$, and it is suppressed by one power of $1/c$ relative to the ordinary position. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the block-diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\mathbf{Q}$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\mathbf{x}$ and a configuration-space position on the module.
 
 ## The Biquaternion Reading
 
@@ -241,7 +241,7 @@ U = \cos\frac{\theta}{2} + \beta\,\boldsymbol\alpha\cdot\hat{\mathbf{p}}\,\sin\f
 UHU^\dagger = \beta\sqrt{\mathbf{p}^2c^2 + m^2c^4},
 $$
 
-checked to $9\times10^{-16}$ by direct matrix computation. The transformed position operator is the mean position, $\mathbf{X} = \mathbf{x} - i\hbar\beta\boldsymbol\alpha/(2mc) + \cdots$, whose Heisenberg velocity has no trembling term; the Zitterbewegung resides in the difference $\mathbf{x}-\mathbf{X}$.
+checked to $9\times10^{-16}$ by direct matrix computation. The transformed position operator is the mean position, $\mathbf{Q} = \mathbf{x} - i\hbar\beta\boldsymbol\alpha/(2mc) + \cdots$, whose Heisenberg velocity has no trembling term; the Zitterbewegung resides in the difference $\mathbf{x}-\mathbf{Q}$.
 
 The biquaternion reading turns on two gradings that must not be conflated. The frame grading, conjugation by $\gamma^0$, is what the FW transformation diagonalises and in which the mass is diagonal; the chirality grading, $\gamma_5$, is what the biquaternion mass pair is written in and in which the mass is off-diagonal. The two gradings anticommute, so no single unitary diagonalises both, and the mass term is the measure of their incompatibility. The FW generator contains $\gamma^0$ and therefore lies outside the even subalgebra $\Phi(\mathbb{B})$: the transformation is not one of the algebra's Lorentz rotors but a transformation in the enlarged Clifford algebra that adjoins the frame.
 
@@ -261,7 +261,7 @@ The biquaternion reading turns on two gradings that must not be conflated. The f
 | $S_1 = -\frac{i}{2mc^2}\beta O$ | Leading FW generator |
 | $H' = UHU^\dagger - i\hbar U\partial_t U^\dagger$ | Transformed Hamiltonian |
 | $\theta = \arctan(|\mathbf{p}|/(mc))$ | Free-particle FW angle |
-| $\mathbf{X} = \mathbf{x} - \frac{i\hbar\beta\boldsymbol\alpha}{2mc}+\cdots$ | Mean (Foldy–Wouthuysen) position |
+| $\mathbf{Q} = \mathbf{x} - \frac{i\hbar\beta\boldsymbol\alpha}{2mc}+\cdots$ | Mean (Foldy–Wouthuysen) position |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair (chirality grading) |
 | $\Box = \partial_{ict}^2 + \Delta$ | Series d'Alembertian |
 

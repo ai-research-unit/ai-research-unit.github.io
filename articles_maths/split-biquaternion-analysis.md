@@ -184,7 +184,7 @@ We adopt this approach for the split biquaternion algebra. The function is defin
 Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$. A general element of $V$ is written
 
 $$
-\tilde{X} = x_0 f_0 + x_1 f_1 + x_2 f_2 + x_3 f_3,
+\tilde{Q} = x_0 f_0 + x_1 f_1 + x_2 f_2 + x_3 f_3,
 $$
 
 where $\{f_0, f_1, f_2, f_3\}$ is a basis of $V$ and $x_0, x_1, x_2, x_3 \in \mathbb{R}$ are the **coordinates**. The four real numbers $x_\mu$ are the independent variables.
@@ -202,13 +202,13 @@ The general theory is independent of the choice of basis; only the interpretatio
 A **split-biquaternion-valued function on $V$** is a map
 
 $$
-\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{X} \mapsto \tilde{F}(\tilde{X}).
+\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{Q} \mapsto \tilde{F}(\tilde{Q}).
 $$
 
-Writing $\tilde{X} = \sum_\mu x_\mu f_\mu$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the four real variables $x_0, x_1, x_2, x_3$:
+Writing $\tilde{Q} = \sum_\mu x_\mu f_\mu$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the four real variables $x_0, x_1, x_2, x_3$:
 
 $$
-\tilde{F}(\tilde{X}) = F_0(x_0, x_1, x_2, x_3) e_0 + F_1(x_0, x_1, x_2, x_3) e_1 + F_2(x_0, x_1, x_2, x_3) e_2 + F_3(x_0, x_1, x_2, x_3) e_3.
+\tilde{F}(\tilde{Q}) = F_0(x_0, x_1, x_2, x_3) e_0 + F_1(x_0, x_1, x_2, x_3) e_1 + F_2(x_0, x_1, x_2, x_3) e_2 + F_3(x_0, x_1, x_2, x_3) e_3.
 $$
 
 The restriction to $V$ reduces the number of independent real variables from eight to four.

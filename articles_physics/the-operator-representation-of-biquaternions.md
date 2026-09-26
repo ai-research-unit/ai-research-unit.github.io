@@ -129,10 +129,10 @@ which is Hermitian, of unit norm form, and lies in the informational sector $\ma
 
 ### The Four-Position Goes to the Rest Frame
 
-The action of the boost rotor on a four-position is the boost relation of the series. With $\tilde{X} = ict\,e_0 + \mathbf{x}$ the four-position of a world line of velocity $\mathbf{v}$, and $\tilde{\Lambda}$ the boost rotor along $\hat{\mathbf{v}}$ of rapidity $\psi$ with $\tanh\psi = |\mathbf{v}|/c$,
+The action of the boost rotor on a four-position is the boost relation of the series. With $\tilde{Q} = ict\,e_0 + \mathbf{x}$ the four-position of a world line of velocity $\mathbf{v}$, and $\tilde{\Lambda}$ the boost rotor along $\hat{\mathbf{v}}$ of rapidity $\psi$ with $\tanh\psi = |\mathbf{v}|/c$,
 
 $$
-\tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger = ic\tau\,e_0 ,
+\tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger = ic\tau\,e_0 ,
 \qquad \tau = t\sqrt{1 - \beta^2} ,
 $$
 
@@ -157,7 +157,7 @@ $$
 a real unit quaternion lying in $\mathbb{H}_{\mathbb{B}}$. The rotation rotor is unitary, $\tilde{R}^\dagger = \bar{\tilde{R}} = \tilde{R}^{-1}$, which is the property that makes the sandwich preserve the product of two elements of the algebra, as the section on the product shows. Its operator rotates the spatial part of a four-vector:
 
 $$
-\tilde{R}\,\tilde{X}\,\tilde{R}^\dagger = icte_0 + \mathbf{x}\cos\theta + \left(\hat{\mathbf{n}}\times\mathbf{x}\right)\sin\theta + \hat{\mathbf{n}}\left(\hat{\mathbf{n}}\cdot\mathbf{x}\right)\left(1-\cos\theta\right),
+\tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger = icte_0 + \mathbf{x}\cos\theta + \left(\hat{\mathbf{n}}\times\mathbf{x}\right)\sin\theta + \hat{\mathbf{n}}\left(\hat{\mathbf{n}}\cdot\mathbf{x}\right)\left(1-\cos\theta\right),
 $$
 
 and it leaves the scalar part untouched. The angle in the operator is twice the half-angle in the element, which is the doubling that the spin representation rests on.
@@ -220,12 +220,12 @@ Read on the algebra, the statement is that the unit $e_0$ and its scalar imagina
 
 The sandwich preserves the rank of the matrix image always, and it preserves the norm form itself on the rotor slice; on the material sector it preserves the sign and the vanishing of the norm form of a four-vector, which is what the causal classification needs. These two invariants cut the elements into the classes the physics articles use.
 
-| class | norm form $N(\tilde{X})$ | physical reading |
+| class | norm form $N(\tilde{Q})$ | physical reading |
 |---|---|---|
 | timelike | $N < 0$, in the corpus's sign convention for $ict\,e_0 + \mathbf{x}$ | a world line of a massive particle |
-| null | $N = 0$, $\tilde{X}\neq 0$ | a point of the light cone, a zero divisor of rank one |
+| null | $N = 0$, $\tilde{Q}\neq 0$ | a point of the light cone, a zero divisor of rank one |
 | spacelike | $N > 0$ | a separation outside the cone |
-| zero | $\tilde{X} = 0$ | the origin |
+| zero | $\tilde{Q} = 0$ | the origin |
 
 ### The Mass Shell and the Light Cone as Single Orbits
 
@@ -294,30 +294,30 @@ The operator sees the boost and the rotor of the element, in that order, and it 
 
 ### A Boost Rotor Acting on a Four-Position
 
-Let $\beta = 0.6$ along $e_3$, so that $\psi = \operatorname{artanh}0.6$, $\cosh\frac{\psi}{2} = 1.060660172$ and $\sinh\frac{\psi}{2} = 0.353553391$, and let $\tilde{X} = ict\,e_0 + 0.6ct\,e_3$ with $ct = 1$. Then
+Let $\beta = 0.6$ along $e_3$, so that $\psi = \operatorname{artanh}0.6$, $\cosh\frac{\psi}{2} = 1.060660172$ and $\sinh\frac{\psi}{2} = 0.353553391$, and let $\tilde{Q} = ict\,e_0 + 0.6ct\,e_3$ with $ct = 1$. Then
 
 $$
-\tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger = i\tau e_0 , \qquad \tau = \sqrt{1-0.36} = 0.8 ,
+\tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger = i\tau e_0 , \qquad \tau = \sqrt{1-0.36} = 0.8 ,
 $$
 
 so that $ct' = 0.8$ and $z' = 2.8\times10^{-17}$, the residual of a zero. The example is the corpus's own numerical check of the boost rotor, and it exhibits the action as the statement that the four-position of a moving particle is carried to its rest frame.
 
 ### A Rotation Rotor Acting on a Four-Vector
 
-Let $\tilde{R} = \cos\frac{\pi}{6} + \sin\frac{\pi}{6}e_3$, of angle $\theta = \pi/3$, and let $\tilde{X} = 2ie_0 + e_1 + 0.5e_3$. Then
+Let $\tilde{R} = \cos\frac{\pi}{6} + \sin\frac{\pi}{6}e_3$, of angle $\theta = \pi/3$, and let $\tilde{Q} = 2ie_0 + e_1 + 0.5e_3$. Then
 
 $$
-\tilde{R}\,\tilde{X}\,\tilde{R}^\dagger = 2ie_0 + 0.5e_1 + 0.866025404e_2 + 0.5e_3 ,
+\tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger = 2ie_0 + 0.5e_1 + 0.866025404e_2 + 0.5e_3 ,
 $$
 
 so the temporal and $e_3$ components are untouched and the spatial part is rotated through $\pi/3$ in the $(e_1,e_2)$ plane: the values are $\cos\frac{\pi}{3} = 0.5$ and $\sin\frac{\pi}{3} = 0.866025404$. The norm form is unchanged, $N = -4 + 1 + 0.25 = -2.75$ before and after.
 
 ### A Boost Rotor Acting on a Null Four-Vector
 
-With $\tilde{\Lambda} = \frac53e_0 + \frac43ie_3$, of norm form $N = \frac{25}{9} - \frac{16}{9} = 1$ and hence of rapidity $\psi = 2\ln 3$, for which $\beta = \tanh\psi = \frac{40}{41}$, and with the null four-vector $\tilde{X} = ie_0 + e_1$, the sandwich gives
+With $\tilde{\Lambda} = \frac53e_0 + \frac43ie_3$, of norm form $N = \frac{25}{9} - \frac{16}{9} = 1$ and hence of rapidity $\psi = 2\ln 3$, for which $\beta = \tanh\psi = \frac{40}{41}$, and with the null four-vector $\tilde{Q} = ie_0 + e_1$, the sandwich gives
 
 $$
-\operatorname{H}_{\tilde{\Lambda}}(\tilde{X}) = \frac{41}{9}ie_0 + e_1 - \frac{40}{9}e_3 ,
+\operatorname{H}_{\tilde{\Lambda}}(\tilde{Q}) = \frac{41}{9}ie_0 + e_1 - \frac{40}{9}e_3 ,
 \qquad
 \frac{41}{9} = \cosh\psi , \quad \frac{40}{9} = \sinh\psi .
 $$

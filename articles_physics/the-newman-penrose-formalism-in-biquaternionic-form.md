@@ -29,7 +29,7 @@ $$
 \Phi(e_0) = I_2, \quad \Phi(e_k) = -i\sigma_k, \quad \Phi(i) = iI_2,
 $$
 
-so that $N(\tilde Q) = \det\Phi(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde\Lambda : \tilde\Lambda\bar{\tilde\Lambda} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde X \mapsto \tilde\Lambda\tilde X\tilde\Lambda^\dagger$, with covering homomorphism $\Pi$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+so that $N(\tilde Q) = \det\Phi(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde\Lambda : \tilde\Lambda\bar{\tilde\Lambda} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$, with covering homomorphism $\Pi$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## Conventions: Signature and the Tetrad Normalization
 
@@ -124,10 +124,10 @@ The metric is off-diagonal because the basis is null; there is no orthonormal fr
 
 ## The Metric Recovered from the Tetrad
 
-The tetrad is a complex basis of $\mathbb{B}$ as a four-dimensional complex vector space, and the coordinate metric is recovered from it by the completeness relation. Since the matrix $\eta$ in (5) squares to the identity, the expansion of an arbitrary element $\tilde X\in\mathbb{B}$ in the tetrad is
+The tetrad is a complex basis of $\mathbb{B}$ as a four-dimensional complex vector space, and the coordinate metric is recovered from it by the completeness relation. Since the matrix $\eta$ in (5) squares to the identity, the expansion of an arbitrary element $\tilde{Q}\in\mathbb{B}$ in the tetrad is
 
 $$
-\tilde X = -\langle \tilde X,l\rangle\,n - \langle \tilde X,n\rangle\,l + \langle \tilde X,m\rangle\,\bar m + \langle \tilde X,\bar m\rangle\,m ,
+\tilde{Q} = -\langle \tilde{Q},l\rangle\,n - \langle \tilde{Q},n\rangle\,l + \langle \tilde{Q},m\rangle\,\bar m + \langle \tilde{Q},\bar m\rangle\,m ,
 \tag{6}
 $$
 
@@ -138,7 +138,7 @@ g_{\mu\nu} = -l_\mu n_\nu - n_\mu l_\nu + m_\mu\bar m_\nu + \bar m_\mu m_\nu .
 \tag{7}
 $$
 
-Substituting (2), the right-hand side of (7) evaluates to $\mathrm{diag}(-1,+1,+1,+1)$: the four zero divisors reproduce the material-sector metric, with the correct signature, and no other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde X$ with all four coefficients arbitrary, and (7) on the explicit legs.
+Substituting (2), the right-hand side of (7) evaluates to $\mathrm{diag}(-1,+1,+1,+1)$: the four zero divisors reproduce the material-sector metric, with the correct signature, and no other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
 
 Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_\mu,\tilde E_\nu\rangle$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{M}_-$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
 

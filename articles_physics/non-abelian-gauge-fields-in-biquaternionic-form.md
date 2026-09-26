@@ -8,7 +8,7 @@ The essential difference from the abelian case has nothing to do with the existe
 
 $$
 F'_{\mu\nu} = U\,F_{\mu\nu}\,U^{-1},
-\qquad U = U(\tilde{X}) \in SU(2),
+\qquad U = U(\tilde{Q}) \in SU(2),
 $$
 
 so a component of the field strength is *not* a number; it is an algebra element that is rotated by the gauge group. Every other non-abelian feature — the commutator term $[A_\mu,A_\nu]$ in $F$, the non-linearity of the field equations, the Bianchi identity as the statement that the covariant derivative of $F$ is a cycle — is downstream of this one fact. The single most likely error in passing from the abelian case to the non-abelian one is to keep treating $F$ as invariant, and the bulk of this article is arranged as a guard against it.
@@ -64,7 +64,7 @@ the unit-norm real quaternions. This is the group of rotors of pure spatial rota
 Let the connection be a one-form with values in this Lie algebra,
 
 $$
-\mathcal{A}_\mu(\tilde{X}) = \mathcal{A}_\mu^{a}(\tilde{X})\,e_a \;\in\; \mathfrak{su}(2), \qquad \mathcal{A} = \sum_{\mu=0}^{3}\mathcal{A}_\mu\,e_\mu ,
+\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,e_a \;\in\; \mathfrak{su}(2), \qquad \mathcal{A} = \sum_{\mu=0}^{3}\mathcal{A}_\mu\,e_\mu ,
 $$
 
 with real coefficient functions $\mathcal{A}_\mu^{a}$. The parent's covariant derivative is generalized in the only way that keeps its form,
@@ -79,7 +79,7 @@ acting on a matter field $\Psi$ by left multiplication, $D_\mu\Psi = \partial_\m
 Now let the field transform by a **local, non-central** element of the group,
 
 $$
-\Psi \;\longmapsto\; U(\tilde{X})\,\Psi, \qquad U \in SU(2).
+\Psi \;\longmapsto\; U(\tilde{Q})\,\Psi, \qquad U \in SU(2).
 $$
 
 Unlike the abelian phase, $U$ does not commute with the algebra, and left and right multiplication by it differ. Requiring the covariant derivative to be covariant, $D'_\mu(U\Psi) = U\,D_\mu\Psi$, with $D'_\mu$ built from a new connection $\mathcal{A}'_\mu$, gives
@@ -143,7 +143,7 @@ $$
 
 **The abelian limit.** If all the $\mathcal{A}_\mu$ are central — the abelian case — the commutator term vanishes, the transformation law degenerates to the abelian one, and $F_{\mu\nu}$ becomes invariant. The invariance of the abelian field strength is therefore not a general property of the curvature; it is the consequence of centrality, and it is exactly what fails here.
 
-**The connection as an adjoint-valued orbit.** The parent's reading of the connection as a gauge orbit survives, with the abelian group replaced by the adjoint action. The single point $\mathcal{A}_\mu(\tilde{X}_0) = 0$ can still be reached at any one point: take $U(\tilde{X}_0)$ arbitrary in $SU(2)$ and set $(\partial_\mu U)(\tilde{X}_0) = i\kappa\,U(\tilde{X}_0)\mathcal{A}_\mu(\tilde{X}_0)$, as the vanishing of $\mathcal{A}'_\mu = U\mathcal{A}_\mu U^{-1} + (i/\kappa)(\partial_\mu U)U^{-1}$ requires. The first derivatives of a matrix-valued function at a point can be set freely subject to the conjugation condition that unitarity imposes, and the prescribed derivative meets that condition under the mixed reality assignment exhibited in the reality-condition section below ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian); for a uniform anti-Hermitian connection the spatial components cannot be brought to zero by a unitary $U$. For that mixed assignment the connection therefore has no gauge-invariant local value. The curvature is again the obstruction to doing this on a neighbourhood. The difference is that the orbit is now the orbit of a vector under conjugation rather than a translate of a scalar, and the statement "$\mathcal{A}$ can be gauged to zero at a point" is a statement about a matrix, not a number.
+**The connection as an adjoint-valued orbit.** The parent's reading of the connection as a gauge orbit survives, with the abelian group replaced by the adjoint action. The single point $\mathcal{A}_\mu(\tilde{Q}_0) = 0$ can still be reached at any one point: take $U(\tilde{Q}_0)$ arbitrary in $SU(2)$ and set $(\partial_\mu U)(\tilde{Q}_0) = i\kappa\,U(\tilde{Q}_0)\mathcal{A}_\mu(\tilde{Q}_0)$, as the vanishing of $\mathcal{A}'_\mu = U\mathcal{A}_\mu U^{-1} + (i/\kappa)(\partial_\mu U)U^{-1}$ requires. The first derivatives of a matrix-valued function at a point can be set freely subject to the conjugation condition that unitarity imposes, and the prescribed derivative meets that condition under the mixed reality assignment exhibited in the reality-condition section below ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian); for a uniform anti-Hermitian connection the spatial components cannot be brought to zero by a unitary $U$. For that mixed assignment the connection therefore has no gauge-invariant local value. The curvature is again the obstruction to doing this on a neighbourhood. The difference is that the orbit is now the orbit of a vector under conjugation rather than a translate of a scalar, and the statement "$\mathcal{A}$ can be gauged to zero at a point" is a statement about a matrix, not a number.
 
 ## The Field Strength as the Commutator of Covariant Derivatives
 
@@ -161,13 +161,13 @@ The identity has a structural reading that the abelian case hides. The failure o
 
 ## The Bianchi Identity and Where Jacobi Enters
 
-The field strength is constructed from the connection by differentiation, so it cannot be arbitrary: it satisfies a differential identity. In the non-abelian case this identity is not optional either, and it is the statement that the covariant derivative of $F$ is a cycle. Define the covariant derivative acting on an algebra-valued field $X$ by the adjoint action,
+The field strength is constructed from the connection by differentiation, so it cannot be arbitrary: it satisfies a differential identity. In the non-abelian case this identity is not optional either, and it is the statement that the covariant derivative of $F$ is a cycle. Define the covariant derivative acting on an algebra-valued field $\tilde{Q}$ by the adjoint action,
 
 $$
-D_\lambda X = \partial_\lambda X + i\kappa\,[\mathcal{A}_\lambda, X],
+D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa\,[\mathcal{A}_\lambda, \tilde{Q}],
 $$
 
-which is the same as the commutator of operators, $[D_\lambda,X] = D_\lambda X$ when $X$ is multiplication by an algebra element. Then the **Bianchi identity** is
+which is the same as the commutator of operators, $[D_\lambda,\tilde{Q}] = D_\lambda \tilde{Q}$ when $\tilde{Q}$ is multiplication by an algebra element. Then the **Bianchi identity** is
 
 $$
 D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0
@@ -228,7 +228,7 @@ $$
 
 and it states that the first identity — the expression of $\tilde{F}$ as $\mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ — is "purely algebraic in the derivatives". Both formulas, and the invariance of $\tilde{F}$ asserted two paragraphs later ("The curvature is gauge invariant"), are theorems in the abelian case, and all three **fail** when the connection is $\mathfrak{su}(2)$-valued. This is a defect of the parent, not a defect of this article's construction, and it is reported here rather than quietly repaired.
 
-To state the failure precisely, take the natural non-abelian generalization of the first formula, $\bar{\tilde{\nabla}}\mathcal{A} = \sum_{\mu\nu}\bar{e}_\mu(\partial_\mu\mathcal{A}_\nu)e_\nu$ with $\mathcal{A}_\nu$ now an algebra element, and let $\mathrm{Vect}$ be the trace-free projection used by the parent, $\mathrm{Vect}(X) = X - \mathrm{Sc}(X)$ with $\mathrm{Sc}(X) = \tfrac12\mathrm{Tr}(X)e_0$. On the generic non-commuting connection:
+To state the failure precisely, take the natural non-abelian generalization of the first formula, $\bar{\tilde{\nabla}}\mathcal{A} = \sum_{\mu\nu}\bar{e}_\mu(\partial_\mu\mathcal{A}_\nu)e_\nu$ with $\mathcal{A}_\nu$ now an algebra element, and let $\mathrm{Vect}$ be the trace-free projection used by the parent, $\mathrm{Vect}(\tilde{Q}) = \tilde{Q} - \mathrm{Sc}(\tilde{Q})$ with $\mathrm{Sc}(\tilde{Q}) = \tfrac12\mathrm{Tr}(\tilde{Q})e_0$. On the generic non-commuting connection:
 
 1. **$\mathrm{Vect}(\bar{\tilde{\nabla}}\mathcal{A})$ is not in the reality class of the field strength.** Evaluated on a connection whose components are Hermitian-traceless, the object acquires a nonzero anti-Hermitian part of order unity; it is not Hermitian. This is not a cosmetic difference. In the abelian case $\mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ is, up to the normalization, the gauge-invariant field strength — a pure vector with a fixed behaviour under quaternion conjugation — which is what permits the corpus to identify it with $\tilde{F}$; non-abelianly the corresponding object is not adjoint-covariant and need not coincide with the field strength.
 2. **$\mathrm{Vect}(\bar{\tilde{\nabla}}\mathcal{A})$ is not adjoint-covariant.** Its gauge transform does not equal $U\,\mathrm{Vect}(\bar{\tilde{\nabla}}\mathcal{A})\,U^{-1}$; the discrepancy is of order unity. The reason is structural: differentiating $\bar{\tilde{\nabla}}\mathcal{A}$ brings down a term $(\partial_\mu U)$, which is not accompanied by the compensating connection term because the object is bilinear in $\mathcal{A}$ rather than built from the covariant derivative. The abelian case is immune only because there the inhomogeneous term is central and cancels in $\bar{\tilde{\nabla}}\tilde{A}$.
@@ -356,7 +356,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $\mathfrak{su}(2) = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
 | $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathfrak{su}(2)$ | Lie-algebra decomposition of the material sector |
 | $T_a = \tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
-| $U(\tilde{X}) \in SU(2)$ | Unit real quaternion, $U^{-1}=\bar U=U^\dagger$ |
+| $U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $U^{-1}=\bar U=U^\dagger$ |
 | $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathfrak{su}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa = q/\hbar$ | Coupling |
 | $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative, $D=\tilde{\nabla}+i\kappa\mathcal{A}$ |
@@ -366,7 +366,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A}$ | Curvature two-form; $(\mathcal{A}\wedge\mathcal{A})_{\mu\nu}=[\mathcal{A}_\mu,\mathcal{A}_\nu]$ |
 | $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$ | Adjoint (NOT invariant) transformation of the field strength |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as commutator of covariant derivatives |
-| $D_\lambda X = \partial_\lambda X + i\kappa[\mathcal{A}_\lambda,X]$ | Adjoint covariant derivative, $[D_\lambda,X]=D_\lambda X$ |
+| $D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + \text{cyclic} = 0$ | Bianchi identity |
 | $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Biquaternion representative of the curvature (a definition) |
 | $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ | Gauge-invariant Yang–Mills density |
@@ -383,7 +383,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the coupled Dirac equation and the left/right matter-representation issue.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which bounds the non-abelian orbit as well.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector's basis, its four-vectors and the imaginary-scalar/real-vector structure on which the Lie-algebra decomposition rests.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector, the rotor action $X\mapsto HXH^\dagger$, and the trace formula distinguished here from the matrix trace.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector, the rotor action $\tilde{Q}\mapsto HXH^\dagger$, and the trace formula distinguished here from the matrix trace.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
 - *Quaternion Algebra* and *Biquaternion Algebra* — the multiplication rule, the conjugations and the center used throughout.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.

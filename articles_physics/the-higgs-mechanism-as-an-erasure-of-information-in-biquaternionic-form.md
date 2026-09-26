@@ -41,14 +41,14 @@ $$
 Every point of the circle minimizes $V$, and no point is preferred by the action, which is invariant under the central phase $\varphi\mapsto e^{i\alpha}\varphi$. The vacuum is therefore a member of a **degenerate family** parametrized by the phase. Writing
 
 $$
-\varphi(\tilde{X}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{X})\bigr)e^{\,i\theta(\tilde{X})/v},
+\varphi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)e^{\,i\theta(\tilde{Q})/v},
 $$
 
 with $h$ and $\theta$ real, exhibits the two real fields: $h$ the radial fluctuation, with mass $m_h^2 = 2\beta v^2$ from the curvature of the potential, and $\theta$ the angular fluctuation, with no potential term at all.
 
 ### The Informational Status of the Phase
 
-Considered as a classical label, the phase is a continuum: the vacuum family is a circle at every point of spacetime, and a description that resolved $\theta(\tilde{X})$ point by point would carry the classical information of a function space — a continuum rather than a finite string of bits. If the phase were a physical observable, the choice of one vacuum would **erase** all of it, and the erasure would be a loss of a continuum and not of a record: a field with values on a circle, one at each point of spacetime, reduced to a single number, with no way to recover it from the broken phase.
+Considered as a classical label, the phase is a continuum: the vacuum family is a circle at every point of spacetime, and a description that resolved $\theta(\tilde{Q})$ point by point would carry the classical information of a function space — a continuum rather than a finite string of bits. If the phase were a physical observable, the choice of one vacuum would **erase** all of it, and the erasure would be a loss of a continuum and not of a record: a field with values on a circle, one at each point of spacetime, reduced to a single number, with no way to recover it from the broken phase.
 
 Two facts of the framework make the actual situation different, and they are the reason the title's word needs the qualification this section supplies.
 
@@ -106,7 +106,7 @@ The important point for the erasure reading is that the flat direction is not me
 The elimination of the phase is an explicit gauge transformation. With the parametrization above, choose
 
 $$
-\Gamma(\tilde{X}) = -\,\frac{\hbar}{qv}\,\theta(\tilde{X}),
+\Gamma(\tilde{Q}) = -\,\frac{\hbar}{qv}\,\theta(\tilde{Q}),
 $$
 
 so that the covariant phase factor is $e^{iq\Gamma/\hbar} = e^{-i\theta/v}$ and

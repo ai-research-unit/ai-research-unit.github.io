@@ -7,7 +7,7 @@ The **effective potential** is the part of the quantum effective action that sur
 This article works the effective potential of the scalar sector of the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ in the notation of the companion articles, and derives the Coleman–Weinberg result for the framework's scalar. The scalar sector has already been fixed by the read list. The framework's scalar is the **complex central field**
 
 $$
-\tilde{\Phi}(\tilde{X}) = \varphi(\tilde{X})\,e_0 \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\},
+\tilde{\Phi}(\tilde{Q}) = \varphi(\tilde{Q})\,e_0 \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\},
 $$
 
 with $\varphi$ a complex function and $\mathbb{C}_{\mathbb{B}}$ the center of the algebra. Its renormalizable invariant potential is a function of the single modulus

@@ -20,26 +20,26 @@ The conventions are those of the companion articles: the biquaternion algebra is
 The **four-position biquaternion** is
 
 $$
-\tilde{X} = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3,
+\tilde{Q} = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3,
 $$
 
-where $t \in \mathbb{R}$ is the ordinary time coordinate, $x, y, z \in \mathbb{R}$ are the ordinary spatial coordinates, and $c$ is the speed of light in the medium. The scalar part of $\tilde{X}$ is the complex time coordinate $ict$, and the vector part is the spatial position $\mathbf{x} = x\,e_1 + y\,e_2 + z\,e_3$. In compact form,
+where $t \in \mathbb{R}$ is the ordinary time coordinate, $x, y, z \in \mathbb{R}$ are the ordinary spatial coordinates, and $c$ is the speed of light in the medium. The scalar part of $\tilde{Q}$ is the complex time coordinate $ict$, and the vector part is the spatial position $\mathbf{x} = x\,e_1 + y\,e_2 + z\,e_3$. In compact form,
 
 $$
-\tilde{X} = ic\,t\,e_0 + \mathbf{x}.
+\tilde{Q} = ic\,t\,e_0 + \mathbf{x}.
 $$
 
 The four-position biquaternion lives in the **anti-Hermitian subspace** $\mathbb{M}_-$ (imaginary scalar part, real vector part), matching the structure of the four-vector $x^\mu = (ict, \mathbf{x})$ in the $ict$ convention.
 
 ## The Invariant Interval
 
-The **invariant interval** between two nearby events in spacetime is the **norm form** of the displacement biquaternion $d\tilde{X} \in \mathbb{M}_-$:
+The **invariant interval** between two nearby events in spacetime is the **norm form** of the displacement biquaternion $d\tilde{Q} \in \mathbb{M}_-$:
 
 $$
-ds^2 = d\tilde{X}\,\overline{d\tilde{X}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
+ds^2 = d\tilde{Q}\,\overline{d\tilde{Q}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
 $$
 
-Here $\overline{d\tilde{X}} = ic\,dt\,e_0 - d\mathbf{x}$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
+Here $\overline{d\tilde{Q}} = ic\,dt\,e_0 - d\mathbf{x}$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
 
 **The norm form on $\mathbb{M}_-$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 = i q'_0$ imaginary and $\mathbf{Q} = q_1 e_1 + q_2 e_2 + q_3 e_3$ real, the norm form is
 
@@ -144,10 +144,10 @@ where $q$ is the charge, $\mathbf{E}$ and $\mathbf{B}$ are the electric and magn
 The **relativistic action** for a free particle of rest mass $m$ is
 
 $$
-S = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}},
+S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}},
 $$
 
-where the square root is the ordinary real square root of the positive quantity $-d\tilde{X}\,\overline{d\tilde{X}} = c^2\,dt^2 - d\mathbf{x}^2 = c^2\,d\tau^2$. Since $d\tau = dt/\gamma$, we have $c\,d\tau = c\,dt/\gamma$, and the action becomes
+where the square root is the ordinary real square root of the positive quantity $-d\tilde{Q}\,\overline{d\tilde{Q}} = c^2\,dt^2 - d\mathbf{x}^2 = c^2\,d\tau^2$. Since $d\tau = dt/\gamma$, we have $c\,d\tau = c\,dt/\gamma$, and the action becomes
 
 $$
 S = -mc^2\int\frac{dt}{\gamma} = -mc^2\int\sqrt{1 - \mathbf{v}^2/c^2}\,dt,
@@ -219,13 +219,13 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 
 | Quantity | Biquaternion formula | Constraint |
 |---|---|---|
-| Four-position | $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$ | — |
-| Invariant interval | $ds^2 = d\tilde{X}\,\overline{d\tilde{X}}$ | $= -c^2 dt^2 + d\mathbf{x}^2$ |
+| Four-position | $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$ | — |
+| Invariant interval | $ds^2 = d\tilde{Q}\,\overline{d\tilde{Q}}$ | $= -c^2 dt^2 + d\mathbf{x}^2$ |
 | Four-velocity | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | $\tilde{U}\bar{\tilde{U}} = -c^2$ |
 | Four-momentum | $\tilde{P} = m\tilde{U}$ | $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ |
 | Mass-shell relation | $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ | — |
 | Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $\tilde{F}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{F}} = 0$ |
-| Action | $S = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}}$ | — |
+| Action | $S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}}$ | — |
 | Current | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$ |
 | Klein–Gordon | $(\tilde{\nabla}\bar{\tilde{\nabla}} - m^2c^2/\hbar^2)\tilde{\Phi} = 0$ | — |
 | Dirac | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | — |
@@ -246,7 +246,7 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 
 2. **The Lorentz force in biquaternion form.** The four-force in component form is standard: $\tilde{F} = i\gamma q(\mathbf{E}\cdot\mathbf{v})/c\,e_0 + \gamma q(\mathbf{E} + \mathbf{v}\times\mathbf{B})$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde{F}_{\text{EM}}$ and the four-velocity $\tilde{U}$ is **not** simply the real part of $\tilde{F}_{\text{EM}}\circ\tilde{U}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.
 
-3. **The Lagrangian formulation.** The biquaternion action $S = -mc\int\sqrt{-d\tilde{X}\,\overline{d\tilde{X}}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form?
+3. **The Lagrangian formulation.** The biquaternion action $S = -mc\int\sqrt{-d\tilde{Q}\,\overline{d\tilde{Q}}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form?
 
 4. **The Hamiltonian formulation.** The biquaternion form of the relativistic Hamiltonian and the associated Hamilton equations have not been developed.
 
@@ -279,7 +279,7 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\mathbf{v}$ | Particle three-velocity |
 | $\gamma = 1/\sqrt{1 - \mathbf{v}^2/c^2}$ | Lorentz factor |
-| $\tilde{X} = ict\,e_0 + \mathbf{x}$ | Four-position biquaternion |
+| $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position biquaternion |
 | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | Four-velocity biquaternion |
 | $\tilde{P} = m\tilde{U}$ | Four-momentum biquaternion |
 | $\tilde{F} = d\tilde{P}/d\tau$ | Four-force biquaternion |

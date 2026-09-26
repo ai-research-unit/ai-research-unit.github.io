@@ -101,11 +101,11 @@ The external legs carry the framework's plane waves, and this is where the reduc
 
 **Central-phase plane waves.** The biquaternion plane wave
 $$
-\tilde\Phi_{\tilde k}(\tilde X) = \tilde w\,e^{\,i\,\mathrm{Sc}(\bar{\tilde k}\tilde X)} ,
+\tilde\Phi_{\tilde k}(\tilde{Q}) = \tilde w\,e^{\,i\,\mathrm{Sc}(\bar{\tilde k}\tilde{Q})} ,
 \qquad
-\tilde X = ict\,e_0+\mathbf x ,
+\tilde{Q} = ict\,e_0+\mathbf x ,
 $$
-with $\tilde w$ a constant biquaternion amplitude, satisfies $(\Box-m^2)\tilde\Phi_{\tilde k}=0$ for $\tilde k\bar{\tilde k}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde k\bar{\tilde k}+m^2)=-\mathcal{M}(\tilde k)$. The phase is the central scalar $\mathrm{Sc}(\bar{\tilde k}\tilde X)=p\cdot x$, so the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.
+with $\tilde w$ a constant biquaternion amplitude, satisfies $(\Box-m^2)\tilde\Phi_{\tilde k}=0$ for $\tilde k\bar{\tilde k}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde k\bar{\tilde k}+m^2)=-\mathcal{M}(\tilde k)$. The phase is the central scalar $\mathrm{Sc}(\bar{\tilde k}\tilde{Q})=p\cdot x$, so the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.
 
 **The one-particle states.** The asymptotic states are one-particle states of the Fock module of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, labeled by on-shell momenta and by the internal (spinor or helicity) label carried by the module. The external wavefunction is the module vector $\tilde w$ times the central phase, and the LSZ integral projects a correlation function onto that module vector.
 
@@ -264,7 +264,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $p^2-m^2=-\mathcal{M}(\tilde k)$ | Symbol of the wave operator $(\Box-m^2)$; amputation uses $\mathcal{M}$ |
 | $Z=\lim_{p^2\to m^2}(m^2-p^2)D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
 | $\langle f|S|i\rangle$ | S-matrix element from the reduction |
-| $e^{\,i\,\mathrm{Sc}(\bar{\tilde k}\tilde X)}=e^{\,ip\cdot x}$ | Central-phase plane wave (external leg) |
+| $e^{\,i\,\mathrm{Sc}(\bar{\tilde k}\tilde{Q})}=e^{\,ip\cdot x}$ | Central-phase plane wave (external leg) |
 | $\not p=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p$ | Spinor mass-shell operator |
 | $u^{(r)},v^{(r)}$ | External spinors; $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ |
 | $Z=Z_-+Z_+$ | Scalar-sector splitting of the residue (sum) |

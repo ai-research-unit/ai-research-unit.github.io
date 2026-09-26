@@ -3,7 +3,7 @@
 
 ## Introduction
 
-*Biquaternion Algebra ($\mathbb{B}$)* developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions and its quadratic forms. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the matrix representation that identifies $\mathbb{B}$ with $M_2(\mathbb{C})$, the six subspaces exhibited on one element, the four conjugations applied to that element, the norm form and the unit criterion, the idempotents and the minimal left ideals, explicit zero-divisor pairs, and the realisation of $\mathbb{C}^2$ as a left ideal of $\mathbb{B}$.
+*Biquaternion Algebra ($\mathbb{B}$)* developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions and its quadratic forms. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the matrix representation that identifies $\mathbb{B}$ with $M_2(\mathbb{C})$, the six subspaces exhibited on one element, the four conjugations applied to that element, the norm form and the unit criterion, and explicit zero-divisor pairs. The idempotents, the minimal left ideals and the realisation of $\mathbb{C}^2$ as a left ideal are the subject of *Biquaternion Idempotents and Projections*, which owns the general construction.
 
 Notation follows *Biquaternion Algebra ($\mathbb{B}$)*. A biquaternion is written in developed form
 
@@ -47,7 +47,7 @@ $$
 \Phi(e_3) = -i\sigma_3 = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
 $$
 
-and by $\Phi(i) = i I_2$ on the central complex unit; this is the matrix model fixed in *Biquaternion Algebraic Representations*, and it is the one used throughout the biquaternion articles. That $\Phi$ respects the quaternion relations is checked directly:
+and by $\Phi(i) = i I_2$ on the central complex unit; this is the matrix model fixed in *Biquaternion 2×2 Matrix Representation*, and it is the one used throughout the biquaternion articles. That $\Phi$ respects the quaternion relations is checked directly:
 
 $$
 \Phi(e_1)^2 = \Phi(e_2)^2 = \Phi(e_3)^2 = -I_2, \qquad \Phi(e_1)\Phi(e_2) = (-i\sigma_1)(-i\sigma_2) = -\sigma_1\sigma_2 = -i\sigma_3 = \Phi(e_3),
@@ -154,41 +154,11 @@ because $N$ is invariant under $\bar{\cdot}$ and conjugate-linear in the complex
 
 ## Idempotents and the Two Minimal Left Ideals
 
-**Proposition (idempotents).** The elements
-
-$$
-p = \tfrac{1}{2}(e_0 + ie_3), \qquad q = \tfrac{1}{2}(e_0 - ie_3)
-$$
-
-are orthogonal idempotents: $p^2 = p$, $q^2 = q$, $pq = qp = 0$, and $p + q = e_0$. They are the idempotents $p, q$ of *Biquaternion Ideals and Peirce Decomposition*.
-
-*Proof.* Since $i$ is central, $(ie_3)^2 = i^2e_3^2 = (-1)(-1) = 1$. Hence
-
-$$
-(e_0 \pm ie_3)^2 = e_0 \pm 2ie_3 + (ie_3)^2 = 2e_0 \pm 2ie_3 = 2(e_0 \pm ie_3),
-$$
-
-so $p^2 = p$ and $q^2 = q$, and $(e_0+ie_3)(e_0-ie_3) = e_0 - (ie_3)^2 = 0$, so $pq = 0$. $\square$
-
-**Proposition (the minimal left ideals).** The left ideals
-
-$$
-\mathbb{B}p = \{\tilde{Q}p : \tilde{Q} \in \mathbb{B}\}, \qquad \mathbb{B}q = \{\tilde{Q}q : \tilde{Q} \in \mathbb{B}\}
-$$
-
-satisfy $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ as left $\mathbb{B}$-modules, and each is a minimal left ideal, of dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$.
-
-*Proof.* Every $\tilde{Q}$ satisfies $\tilde{Q} = \tilde{Q}(p + q) = \tilde{Q}p + \tilde{Q}q$, and the intersection of the two ideals is zero because $pq = 0$: if $\tilde{Q}p = \tilde{P}q$ then multiplying on the right by $p$ gives $\tilde{Q}p = 0$. Under the matrix representation, $\Phi(ie_3) = \Phi(i)\Phi(e_3) = i(-i\sigma_3) = \sigma_3$, so
-
-$$
-\Phi(p) = \tfrac{1}{2}(I_2 + \sigma_3) = \operatorname{diag}(1,0) = E_{11}, \qquad \Phi(q) = \tfrac{1}{2}(I_2 - \sigma_3) = \operatorname{diag}(0,1) = E_{22},
-$$
-
-and $\mathbb{B}p$ corresponds to the matrices with only the first column nonzero, which is a minimal left ideal of $M_2(\mathbb{C})$. $\square$
+The standard idempotents $p = \tfrac{1}{2}(e_0 + ie_3)$ and $q = \tfrac{1}{2}(e_0 - ie_3)$ satisfy $p^2 = p$, $q^2 = q$, $pq = qp = 0$ and $p + q = e_0$; they are the diagonal matrix units $E_{11}$ and $E_{22}$ under $\Phi$; they are primitive; and they give the decomposition $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ into two minimal left ideals of real dimension $4$. The verification is carried out in *Biquaternion Idempotents and Projections*, which owns the idempotents of the series.
 
 ## Explicit Zero Divisors
 
-**Example (an explicit pair).** With $p, q$ as above, $pq = 0$ and both factors are nonzero: this is a zero-divisor pair. In unnormalised form, set $a = e_0 + ie_3$ and $b = e_0 - ie_3$. Then
+**Example (an explicit pair).** With the standard idempotents $p, q$ of *Biquaternion Idempotents and Projections*, $pq = 0$ and both factors are nonzero: this is a zero-divisor pair. In unnormalised form, set $a = e_0 + ie_3$ and $b = e_0 - ie_3$. Then
 
 $$
 ab = e_0 - (ie_3)^2 = e_0 - 1 = 0, \qquad a \neq 0, \qquad b \neq 0,
@@ -206,25 +176,15 @@ and $\Phi(a)\Phi(b) = \operatorname{diag}(2,0)\operatorname{diag}(0,2) = 0$, con
 
 ## $\mathbb{C}^2$ as a Left Ideal
 
-**Proposition.** The minimal left ideal $\mathbb{B}p$ is isomorphic to $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the central element $i$ acts on it as multiplication by $i$.
+The minimal left ideal $\mathbb{B}p$ is isomorphic to $\mathbb{C}^2$ as a left $\mathbb{B}$-module, the central element $i$ acting on it as multiplication by $i$: under $\Phi$ the ideal is the set of matrices with zero second column, and left multiplication acts on the first column. The isomorphism, and the resulting decomposition of $\mathbb{B}$ into two copies of the simple module, are derived in *Biquaternion Idempotents and Projections*.
 
-*Proof.* Under $\Phi$, the ideal $\mathbb{B}p$ corresponds to the set of matrices with zero second column,
-
-$$
-\left\{ \begin{pmatrix} \alpha & 0 \\ \beta & 0 \end{pmatrix} : \alpha, \beta \in \mathbb{C} \right\},
-$$
-
-which is $\mathbb{C}^2$ by the map $\begin{pmatrix}\alpha&0\\\beta&0\end{pmatrix} \mapsto (\alpha,\beta)$, and left multiplication by a matrix in $M_2(\mathbb{C})$ acts on the first column by the corresponding linear map. The identification $\Phi$ is an algebra isomorphism, so this is an isomorphism of left $\mathbb{B}$-modules. The central unit $i$ maps to $iI_2$, which acts as multiplication by $i$. $\square$
-
-**Corollary (the module structure).** $\mathbb{B}$ is a free left module of rank one over itself — the unit $e_0$ is a basis — and, as a module, it decomposes as $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$; each summand is a simple left $\mathbb{B}$-module isomorphic to $\mathbb{C}^2$, and since $M_2(\mathbb{C})$ is simple all its simple left modules are isomorphic, so the two summands are isomorphic and correspond to the two columns.
-
-The computations show all the structural features asserted in *Biquaternion Algebra ($\mathbb{B}$)* on a single element and on the standard idempotents: the six subspaces split the element into its centre, vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian parts; the four conjugations act as listed; the norm form decides invertibility and is computed by the determinant of the matrix representation; and the two primitive idempotents produce the decomposition of $\mathbb{B}$ into two copies of $\mathbb{C}^2$.
+The computations show all the structural features asserted in *Biquaternion Algebra ($\mathbb{B}$)* on a single element and on the standard idempotents: the six subspaces split the element into its centre, vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian parts; the four conjugations act as listed; the norm form decides invertibility and is computed by the determinant of the matrix representation; and the two primitive idempotents produce the decomposition of $\mathbb{B}$ into two copies of $\mathbb{C}^2$, as derived in *Biquaternion Idempotents and Projections*.
 
 ## Summary
 
 The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2 = -1$; the algebra is isomorphic to $M_2(\mathbb{C})$ through the explicit map $\Phi$ sending $e_0, e_1, e_2, e_3$ to the matrices $I_2$, $-i\sigma_1$, $-i\sigma_2$, $-i\sigma_3$. On the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the trace of the matrix is twice the scalar part and the determinant is the **norm form** $N(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 11+2i$; the element is a unit because $N\neq0$, with inverse $\bar{\tilde{Q}}/N$. The six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat} = -\dagger$ act on it as listed.
 
-The idempotents $p = \tfrac12(e_0+ie_3)$ and $q = \tfrac12(e_0-ie_3)$ satisfy $pq = 0$ and give $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ with each summand minimal and isomorphic to $\mathbb{C}^2$; the pair $a = e_0+ie_3$, $b = e_0-ie_3$ is an explicit zero-divisor pair of norm $0$; and the zero divisors of $\mathbb{B}$ are exactly the nonzero isotropic vectors of the complex quadratic form $Q_0^2+Q_1^2+Q_2^2+Q_3^2$. As a left module over itself, $\mathbb{B}$ is free of rank one, with $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ its decomposition into two copies of the simple module.
+The idempotents $p, q$ of *Biquaternion Idempotents and Projections* satisfy $pq = 0$ and give $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ with each summand minimal and isomorphic to $\mathbb{C}^2$; the pair $a = e_0+ie_3$, $b = e_0-ie_3$ is an explicit zero-divisor pair of norm $0$; and the zero divisors of $\mathbb{B}$ are exactly the nonzero isotropic vectors of the complex quadratic form $Q_0^2+Q_1^2+Q_2^2+Q_3^2$. As a left module over itself, $\mathbb{B}$ is free of rank one, with $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ its decomposition into two copies of the simple module.
 
 ## Summary of Notation
 

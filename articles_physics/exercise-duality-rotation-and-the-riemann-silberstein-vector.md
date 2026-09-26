@@ -258,11 +258,11 @@ whose three complex components are the six real components of $(\mathbf E,c\math
 
 ## Problem 5: The Lorentz Transformation of the Field Strength — a Gap in the Parent
 
-**Statement.** The parent states that "the two pieces transform independently under the Lorentz group, in the two three-dimensional complex representations." (a) Write down the natural biquaternion candidate for the Lorentz action, by analogy with the four-vector law $\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^\dagger$, and test it on a pure spatial rotation. (b) Test the same candidate on a pure boost. (c) Identify a transformation that reproduces the standard boost, and state what this implies about the parent's claim.
+**Statement.** The parent states that "the two pieces transform independently under the Lorentz group, in the two three-dimensional complex representations." (a) Write down the natural biquaternion candidate for the Lorentz action, by analogy with the four-vector law $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$, and test it on a pure spatial rotation. (b) Test the same candidate on a pure boost. (c) Identify a transformation that reproduces the standard boost, and state what this implies about the parent's claim.
 
 **Solution (a).** For a unit-norm biquaternion $\tilde\Lambda$ (so $\tilde\Lambda\bar{\tilde\Lambda} = e_0$), the four-vector law of the parents is
 $$
-\tilde X \mapsto \tilde\Lambda\,\tilde X\,\tilde\Lambda^\dagger .
+\tilde{Q} \mapsto \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^\dagger .
 $$
 The natural candidate for the field strength is the same conjugation,
 $$

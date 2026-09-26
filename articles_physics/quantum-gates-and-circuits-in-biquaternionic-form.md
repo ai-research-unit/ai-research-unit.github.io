@@ -22,7 +22,7 @@ Two warnings are in order at the outset, both inherited from the companion artic
 
 First, the mathematics below is **standard quantum information theory** transcribed into biquaternion notation. Nothing here depends on the physical hypothesis that $\mathbb{M}_+$ is a distinct sector of the world. The reformulation is structural: it says where the objects of quantum computation live in the algebra and which algebraic operation each circuit ingredient is.
 
-Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions have the same form $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, but the condition on the acting element is different. The material-sector rotor satisfies the **unit-norm-form** condition $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ and generates $SL(2,\mathbb{C})$; a gate satisfies the **matrix-unitarity** condition $\tilde{U}\tilde{U}^\dagger = e_0$ and generates $U(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde{\Lambda}\tilde{\Lambda}^\dagger = \tilde{\Lambda}^2 \neq e_0$: it is a perfectly good rotor on $\mathbb{M}_-$ but **not** a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.
+Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions have the same form $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, but the condition on the acting element is different. The material-sector rotor satisfies the **unit-norm-form** condition $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ and generates $SL(2,\mathbb{C})$; a gate satisfies the **matrix-unitarity** condition $\tilde{U}\tilde{U}^\dagger = e_0$ and generates $U(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde{\Lambda}\tilde{\Lambda}^\dagger = \tilde{\Lambda}^2 \neq e_0$: it is a perfectly good rotor on $\mathbb{M}_-$ but **not** a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.
 
 The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.
 
@@ -86,8 +86,8 @@ The two actions are collected here for contrast.
 |---|---|---|
 | Acting element | $\tilde{\Lambda}\in\mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | $\tilde{U}\in\mathbb{B}$, $\tilde{U}\tilde{U}^\dagger = e_0$ |
 | Group | $SL(2,\mathbb{C})$ | $U(2)$ |
-| Acting on | $\tilde{X}\in\mathbb{M}_-$ | $\tilde{\rho}\in\mathbb{M}_+$ |
-| Action | $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^\dagger$ |
+| Acting on | $\tilde{Q}\in\mathbb{M}_-$ | $\tilde{\rho}\in\mathbb{M}_+$ |
+| Action | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^\dagger$ |
 | Pure boost | Hermitian, in $\mathbb{M}_+$, not unitary | not a gate |
 
 ### The Structure of the Gate Group
@@ -152,7 +152,7 @@ Under the isomorphism $e_k \mapsto -i\sigma_k$, the image of $i e_k$ is $\sigma_
 
 | Gate | Biquaternion representative | Matrix image | Action on $\mathbf{r}=(r_1,r_2,r_3)$ |
 |---|---|---|---|
-| $X$ (Pauli) | $\tilde{X} = i e_1$ | $\sigma_1$ | $(r_1,-r_2,-r_3)$ |
+| $X$ (Pauli) | $\tilde{Q} = i e_1$ | $\sigma_1$ | $(r_1,-r_2,-r_3)$ |
 | $Y$ (Pauli) | $\tilde{Y} = i e_2$ | $\sigma_2$ | $(-r_1,r_2,-r_3)$ |
 | $Z$ (Pauli) | $\tilde{Z} = i e_3$ | $\sigma_3$ | $(-r_1,-r_2,r_3)$ |
 | $H$ (Hadamard) | $\tilde{H} = \dfrac{i}{\sqrt{2}}\left(e_1+e_3\right)$ | $\dfrac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$ | $(r_3,-r_2,r_1)$ |
@@ -167,17 +167,17 @@ The matrix column is the image under $\mathbb{B}\cong M_2(\mathbb{C})$. For $S$ 
 The three Pauli gates are the Hermitian unitaries along the coordinate axes:
 
 $$
-\tilde{X} = i e_1, \qquad \tilde{Y} = i e_2, \qquad \tilde{Z} = i e_3 .
+\tilde{Q} = i e_1, \qquad \tilde{Y} = i e_2, \qquad \tilde{Z} = i e_3 .
 $$
 
-Each satisfies $\tilde{X}^2 = \tilde{Y}^2 = \tilde{Z}^2 = e_0$, so each is an involution and a $\pi$-rotation; the actions on the Bloch vector in the table are the corresponding reflections through the coordinate axes. Their products reproduce the Pauli algebra as an algebra identity:
+Each satisfies $\tilde{Q}^2 = \tilde{Y}^2 = \tilde{Z}^2 = e_0$, so each is an involution and a $\pi$-rotation; the actions on the Bloch vector in the table are the corresponding reflections through the coordinate axes. Their products reproduce the Pauli algebra as an algebra identity:
 
 $$
-\tilde{X}\tilde{Y} = i\tilde{Z}, \qquad \tilde{Y}\tilde{Z} = i\tilde{X}, \qquad \tilde{Z}\tilde{X} = i\tilde{Y}, \qquad \tilde{X}\tilde{Z} = -\tilde{Z}\tilde{X},
-\qquad \tilde{X}\tilde{Y}\tilde{Z} = i e_0 .
+\tilde{Q}\tilde{Y} = i\tilde{Z}, \qquad \tilde{Y}\tilde{Z} = i\tilde{Q}, \qquad \tilde{Z}\tilde{Q} = i\tilde{Y}, \qquad \tilde{Q}\tilde{Z} = -\tilde{Z}\tilde{Q},
+\qquad \tilde{Q}\tilde{Y}\tilde{Z} = i e_0 .
 $$
 
-The central factor $i e_0$ is the price of writing the Pauli matrices in a basis of *real* quaternions: the standard Pauli matrices obey $\sigma_1\sigma_2 = i\sigma_3$ with the same scalar imaginary, and the isomorphism carries that scalar imaginary to the central element $i e_0$ of $\mathbb{B}$. The sign of the product is what distinguishes the two orders, $\tilde{X}\tilde{Z} = -\tilde{Z}\tilde{X}$: this is the algebraic origin of the non-commutativity that makes gates into a group rather than a set.
+The central factor $i e_0$ is the price of writing the Pauli matrices in a basis of *real* quaternions: the standard Pauli matrices obey $\sigma_1\sigma_2 = i\sigma_3$ with the same scalar imaginary, and the isomorphism carries that scalar imaginary to the central element $i e_0$ of $\mathbb{B}$. The sign of the product is what distinguishes the two orders, $\tilde{Q}\tilde{Z} = -\tilde{Z}\tilde{Q}$: this is the algebraic origin of the non-commutativity that makes gates into a group rather than a set.
 
 ### The Hadamard Gate
 
@@ -194,8 +194,8 @@ $$
 It is the $\pi$-rotation about $\hat{\mathbf{n}} = (e_1+e_3)/\sqrt{2}$, so on the Bloch vector it exchanges the $e_1$ and $e_3$ axes and reverses $e_2$:
 
 $$
-\tilde{H}\,\tilde{Z}\,\tilde{H} = \tilde{X}, \qquad
-\tilde{H}\,\tilde{X}\,\tilde{H} = \tilde{Z}, \qquad
+\tilde{H}\,\tilde{Z}\,\tilde{H} = \tilde{Q}, \qquad
+\tilde{H}\,\tilde{Q}\,\tilde{H} = \tilde{Z}, \qquad
 \tilde{H}\,\tilde{Y}\,\tilde{H} = -\tilde{Y}.
 $$
 
@@ -253,13 +253,13 @@ Second, because the map $\tilde{U}\mapsto\Phi_{\tilde{U}}$ has kernel $U(1)$, th
 
 ### Worked Identities
 
-The Hadamard conjugation of the Pauli gates is a compact illustration. The identity $\tilde{H}\tilde{Z}\tilde{H} = \tilde{X}$ already displayed says that the circuit "Hadamard, then $Z$, then Hadamard" realises the $X$ gate:
+The Hadamard conjugation of the Pauli gates is a compact illustration. The identity $\tilde{H}\tilde{Z}\tilde{H} = \tilde{Q}$ already displayed says that the circuit "Hadamard, then $Z$, then Hadamard" realises the $X$ gate:
 
 $$
-\Phi_{\tilde{H}}\circ\Phi_{\tilde{Z}}\circ\Phi_{\tilde{H}} = \Phi_{\tilde{H}\tilde{Z}\tilde{H}} = \Phi_{\tilde{X}} .
+\Phi_{\tilde{H}}\circ\Phi_{\tilde{Z}}\circ\Phi_{\tilde{H}} = \Phi_{\tilde{H}\tilde{Z}\tilde{H}} = \Phi_{\tilde{Q}} .
 $$
 
-The identity $\tilde{H}\tilde{X}\tilde{H} = \tilde{Z}$ gives the reverse. These are exact as algebra identities, and they hold as gate identities. The identity $\tilde{H}\tilde{Y}\tilde{H} = -\tilde{Y}$ holds only up to the central phase $-e_0$; as gates, $\Phi_{\tilde{H}}\circ\Phi_{\tilde{Y}}\circ\Phi_{\tilde{H}} = \Phi_{\tilde{Y}}$.
+The identity $\tilde{H}\tilde{Q}\tilde{H} = \tilde{Z}$ gives the reverse. These are exact as algebra identities, and they hold as gate identities. The identity $\tilde{H}\tilde{Y}\tilde{H} = -\tilde{Y}$ holds only up to the central phase $-e_0$; as gates, $\Phi_{\tilde{H}}\circ\Phi_{\tilde{Y}}\circ\Phi_{\tilde{H}} = \Phi_{\tilde{Y}}$.
 
 Non-commuting gates give distinct circuits. For example, the two orderings of a Hadamard and a controlled gate differ, as they do in standard circuit notation; the framework expresses this as the failure of $\tilde{H}\otimes e_0$ and the controlled gate to commute in $\mathbb{B}\otimes\mathbb{B}$. Composition is the algebra product, and the algebra is non-commutative.
 
@@ -279,7 +279,7 @@ $$
 
 i.e. the set of gates that permute the Pauli group under conjugation, up to sign. The elementary gates $H$ and $S$ both lie in it, and in fact generate it; this is the biquaternion form of the standard statement that $H$ and $S$ generate the single-qubit Clifford group. Modulo the phase, the conjugation action of the Clifford group on the Bloch sphere is the rotation symmetry group of the octahedron, of order $24$; a direct enumeration of the group generated by the two rotation matrices $R(\tilde{H})$ and $R(\tilde{S})$ returns exactly $24$ distinct rotations. In the algebra, the octahedral symmetry is the symmetry of the Pauli axes $\{\pm i e_1,\pm i e_2,\pm i e_3\}$ that the Clifford gates permute.
 
-The **$T$ gate is not Clifford**. Its conjugation of $\tilde{X}$ produces a rotation by $\pi/4$ about $e_3$, which does not return the Pauli axes to themselves. The standard statement that $\{H,T\}$ generates a dense subgroup of the gate group — the basis of the Solovay–Kitaev universality of single-qubit computation — is inherited unchanged by the reformulation; it is a statement about the group generated by a Hadamard involution and a rotation of order eight, and the biquaternion representatives are $i(e_1+e_3)/\sqrt{2}$ and $\cos(\pi/8)e_0+\sin(\pi/8)e_3$. This article does not re-derive universality; it records where the generators live.
+The **$T$ gate is not Clifford**. Its conjugation of $\tilde{Q}$ produces a rotation by $\pi/4$ about $e_3$, which does not return the Pauli axes to themselves. The standard statement that $\{H,T\}$ generates a dense subgroup of the gate group — the basis of the Solovay–Kitaev universality of single-qubit computation — is inherited unchanged by the reformulation; it is a statement about the group generated by a Hadamard involution and a rotation of order eight, and the biquaternion representatives are $i(e_1+e_3)/\sqrt{2}$ and $\cos(\pi/8)e_0+\sin(\pi/8)e_3$. This article does not re-derive universality; it records where the generators live.
 
 ## Multi-Qubit Gates and the Tensor Arena
 
@@ -362,7 +362,7 @@ $$
 the biquaternion idempotent corresponding to $|00\rangle$. Apply the Hadamard to the first qubit and then the CNOT with the first qubit as control. As a circuit, the operation is the product
 
 $$
-\tilde{W} = \tilde{C}_{\tilde{X}}\,\left(\tilde{H}\otimes e_0\right), \qquad \tilde{C}_{\tilde{X}} = \tilde{P}_+(\hat{\mathbf{e}}_3)\otimes e_0 + \tilde{P}_-(\hat{\mathbf{e}}_3)\otimes (i e_1),
+\tilde{W} = \tilde{C}_{\tilde{Q}}\,\left(\tilde{H}\otimes e_0\right), \qquad \tilde{C}_{\tilde{Q}} = \tilde{P}_+(\hat{\mathbf{e}}_3)\otimes e_0 + \tilde{P}_-(\hat{\mathbf{e}}_3)\otimes (i e_1),
 $$
 
 and the output state is $\tilde{W}\tilde{\rho}_0\tilde{W}^\dagger$, a single conjugation because $\tilde{W}$ is a single gate.
@@ -381,7 +381,7 @@ $$
 
 the product state $|{+}\rangle|0\rangle$.
 
-**Step two: the CNOT.** Write $\tilde{A} = \tilde{P}_+(\hat{\mathbf{e}}_1)$, $\tilde{B} = \tilde{P}_+(\hat{\mathbf{e}}_3)$, $\tilde{P}_\pm = \tilde{P}_\pm(\hat{\mathbf{e}}_3)$, and $\tilde{C} = \tilde{C}_{\tilde{X}}$. Since $\tilde{C} = \tilde{C}^\dagger$ and $\tilde{C}^2 = e_0\otimes e_0$, conjugation by $\tilde{C}$ expands into four terms:
+**Step two: the CNOT.** Write $\tilde{A} = \tilde{P}_+(\hat{\mathbf{e}}_1)$, $\tilde{B} = \tilde{P}_+(\hat{\mathbf{e}}_3)$, $\tilde{P}_\pm = \tilde{P}_\pm(\hat{\mathbf{e}}_3)$, and $\tilde{C} = \tilde{C}_{\tilde{Q}}$. Since $\tilde{C} = \tilde{C}^\dagger$ and $\tilde{C}^2 = e_0\otimes e_0$, conjugation by $\tilde{C}$ expands into four terms:
 
 $$
 \tilde{C}(\tilde{A}\otimes\tilde{B})\tilde{C}
@@ -408,7 +408,7 @@ $$
 
 The right-hand side is the **Bell idempotent** $P_\epsilon$ of the companion article on the Bell basis, with sign pattern $\epsilon = (-1,+1,-1)$, which is the idempotent of $|\Phi^+\rangle$. The identification was verified independently by mapping both sides to $M_4(\mathbb{C})$: the biquaternion element equals $\tfrac{1}{2}(|00\rangle+|11\rangle)(\langle 00|+\langle 11|)$.
 
-The whole circuit is thus the single element $\tilde{W} = \tilde{C}_{\tilde{X}}(\tilde{H}\otimes e_0)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
+The whole circuit is thus the single element $\tilde{W} = \tilde{C}_{\tilde{Q}}(\tilde{H}\otimes e_0)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
 
 $$
 \tilde{W}\left[\tilde{P}_+(\hat{\mathbf{e}}_3)\otimes\tilde{P}_+(\hat{\mathbf{e}}_3)\right]\tilde{W}^\dagger
@@ -488,7 +488,7 @@ The channel set is convex, with the gates among its extreme points; the companio
 
 A gate in the biquaternion framework is a **unitary element** $\tilde{U}\in\mathbb{B}$ with $\tilde{U}\tilde{U}^\dagger = e_0$, acting on a state $\tilde{\rho}\in\mathbb{M}_+$ by **rotor conjugation** $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^\dagger$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $U(2) = U(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde{U}\tilde{U}^\dagger = e_0$ is **not** the unit-norm-form condition $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ of the Lorentz rotors: a boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$.
 
-The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde{X}=ie_1$, $\tilde{Y}=ie_2$, $\tilde{Z}=ie_3$; the Hadamard is $\tilde{H}=\tfrac{i}{\sqrt2}(e_1+e_3)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_0+e_3)$ and $\cos\tfrac{\pi}{8}e_0+\sin\tfrac{\pi}{8}e_3$; a general gate is $e^{i\phi}(\cos\tfrac{\theta}{2}e_0+\sin\tfrac{\theta}{2}\hat{\mathbf{n}})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\hat{\mathbf{n}}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
+The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde{Q}=ie_1$, $\tilde{Y}=ie_2$, $\tilde{Z}=ie_3$; the Hadamard is $\tilde{H}=\tfrac{i}{\sqrt2}(e_1+e_3)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_0+e_3)$ and $\cos\tfrac{\pi}{8}e_0+\sin\tfrac{\pi}{8}e_3$; a general gate is $e^{i\phi}(\cos\tfrac{\theta}{2}e_0+\sin\tfrac{\theta}{2}\hat{\mathbf{n}})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\hat{\mathbf{n}}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
 
 **Composition** is the algebra product: applying $\tilde{U}$ then $\tilde{V}$ gives $\tilde{V}\tilde{U}$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_0,\pm ie_0,\pm e_k,\pm ie_k\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
 
@@ -513,7 +513,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ | Lorentz rotor (unit norm form); $SL(2,\mathbb{C})$, not a gate |
 | $\Phi_{\tilde{U}}(\tilde{\rho})=\tilde{U}\tilde{\rho}\tilde{U}^\dagger$ | Rotor conjugation (gate action) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
-| $\tilde{X}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$ | Pauli gates |
+| $\tilde{Q}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$ | Pauli gates |
 | $\tilde{H}=\tfrac{i}{\sqrt2}(e_1+e_3)$ | Hadamard gate |
 | $\tilde{S}=\tfrac{1}{\sqrt2}(e_0+e_3),\ \tilde{T}=\cos\tfrac{\pi}{8}e_0+\sin\tfrac{\pi}{8}e_3$ | Phase and $T$ gates |
 | $\tilde{R}_{\hat{\mathbf{n}}}(\theta)=\cos\tfrac{\theta}{2}e_0+\sin\tfrac{\theta}{2}\hat{\mathbf{n}}$ | General rotation gate |

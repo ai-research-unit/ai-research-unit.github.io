@@ -268,13 +268,13 @@ The algebra's reason for caring about the cone is that its points are the **zero
 
 ### The Material Light Cone
 
-The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde X=ict\,e_0+\mathbf x\in\mathbb{M}_-$,
+The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde{Q}=ict\,e_0+\mathbf x\in\mathbb{M}_-$,
 
 $$
-N(\tilde X)=(ict)^2+\mathbf x^2=-c^2t^2+\mathbf x^2 ,
+N(\tilde{Q})=(ict)^2+\mathbf x^2=-c^2t^2+\mathbf x^2 ,
 $$
 
-which is the Minkowski interval; its zero set $N(\tilde X)=0$ is the **light cone**. So the light cone is the real slice of the norm-form cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the norm form under a complex rotation of its scalar direction.
+which is the Minkowski interval; its zero set $N(\tilde{Q})=0$ is the **light cone**. So the light cone is the real slice of the norm-form cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the norm form under a complex rotation of its scalar direction.
 
 The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde K=\frac{i\omega}{c}e_0+\mathbf k$, the norm form is
 
@@ -341,7 +341,7 @@ The symplectic form and the norm-form cone are the two canonical quadratic struc
 - The algebra's complex structure $i$ is the Kähler $J$: $g(i\tilde Z,\tilde W)=\omega(\tilde Z,\tilde W)$ and $g(i\tilde Z,i\tilde W)=g(\tilde Z,\tilde W)$.
 - The symplectic potential is $\theta=\frac12\mathrm{Im}\,\mathrm{Sc}(\tilde Z^\dagger d\tilde Z)$, with $d\theta=\omega$; equivalently $\omega=\frac{i}{2}\mathrm{Sc}(d\tilde Z\wedge d\tilde Z^\dagger)$, while $d\tilde Z\wedge d\tilde Z=0$.
 - The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^\dagger\nabla g)$ with $\nabla f=\sum_\mu e_\mu(\partial_{q_\mu}f+i\partial_{p_\mu}f)$.
-- The holomorphic companion of the Hermitian pairing is the norm form $N(\tilde Z)=\sum_\mu Z_\mu^2$, whose zero set is the norm-form cone. On the material sector the cone is the light cone $N(\tilde X)=0$ and the characteristic cone $N(\tilde K)=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
+- The holomorphic companion of the Hermitian pairing is the norm form $N(\tilde Z)=\sum_\mu Z_\mu^2$, whose zero set is the norm-form cone. On the material sector the cone is the light cone $N(\tilde{Q})=0$ and the characteristic cone $N(\tilde K)=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
 
 The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairing, the metric is its symmetric (real) part, the algebra's complex structure is the compatible $J$, and the norm-form cone is the isotropic cone of the holomorphic form of the same complex structure. Nothing in this article is quantum: the Hermitian pairing is read as a classical phase-space form, and the cone is the classical light and wave cone.
 
@@ -358,7 +358,7 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\theta=\frac12\mathrm{Im}\,\mathrm{Sc}(\tilde Z^\dagger d\tilde Z)$ | Symplectic potential, $d\theta=\omega$ |
 | $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$ | Norm form (holomorphic) |
 | $B(\tilde Z,\tilde W)=\mathrm{Sc}(\tilde Z\bar{\tilde W})$ | Symmetric complex bilinear form of $N$ |
-| $N(\tilde X)=0$, $\tilde X=ict\,e_0+\mathbf x$ | Light cone of the material sector |
+| $N(\tilde{Q})=0$, $\tilde{Q}=ict\,e_0+\mathbf x$ | Light cone of the material sector |
 | $N(\tilde K)=0$, $\tilde K=\frac{i\omega}{c}e_0+\mathbf k$ | Characteristic cone of $\Box$ |
 | $N(\tilde S)=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
 | $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{ijk}S_i dS_j\wedge dS_k$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |

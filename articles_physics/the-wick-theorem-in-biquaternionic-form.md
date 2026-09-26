@@ -134,8 +134,8 @@ A numerical check over the products confirms closure: every product of the basis
 
 **The vacuum in the subalgebra.** The vacuum projector is $P_+(e_3)=e_0-\tilde N_{\mathrm{tr}}$, which lies in $\mathcal{A}_{\mathrm{tr}}$ because $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$. So the one-mode GNS vacuum of the previous articles is an element of the same four-dimensional real algebra, and the vacuum expectation value is an $\mathbb{R}$-linear functional on it:
 $$
-\langle \tilde X\rangle_0 = \mathrm{Tr}\big(P_+(e_3)\tilde X\big) = 2\,\mathrm{Sc}\big(P_+(e_3)\tilde X\big),
-\qquad \tilde X\in\mathcal{A}_{\mathrm{tr}} .
+\langle \tilde{Q}\rangle_0 = \mathrm{Tr}\big(P_+(e_3)\tilde{Q}\big) = 2\,\mathrm{Sc}\big(P_+(e_3)\tilde{Q}\big),
+\qquad \tilde{Q}\in\mathcal{A}_{\mathrm{tr}} .
 $$
 
 ## The One-Mode Wick Identity
@@ -150,10 +150,10 @@ Because the generators are nilpotent, the one-mode theorem can be stated and pro
 > \qquad
 > \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 1 ,
 > $$
-> and for every product $\tilde X_1\cdots\tilde X_{2m}$ of mode operators,
+> and for every product $\tilde{Q}_1\cdots\tilde{Q}_{2m}$ of mode operators,
 > $$
-> \langle \tilde X_1\cdots\tilde X_{2m}\rangle_0
-> = \sum_{\text{complete pairings}} \mathrm{sgn}(\pi)\prod_{(i,j)}\langle \tilde X_i\tilde X_j\rangle_0 .
+> \langle \tilde{Q}_1\cdots\tilde{Q}_{2m}\rangle_0
+> = \sum_{\text{complete pairings}} \mathrm{sgn}(\pi)\prod_{(i,j)}\langle \tilde{Q}_i\tilde{Q}_j\rangle_0 .
 > $$
 
 **Proof of the two-point identity.** The contraction is, by the anticommutator,
@@ -178,7 +178,7 @@ $$
 \qquad
 \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}\rangle_0 = \langle \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 0 .
 $$
-The complete table of the four-point function is the following, in which each entry was computed twice: directly as $\mathrm{Tr}(P_+(e_3)\tilde X_1\tilde X_2\tilde X_3\tilde X_4)$ using explicit $2\times2$ complex matrices, and by the pairing sum. All entries agree to machine precision.
+The complete table of the four-point function is the following, in which each entry was computed twice: directly as $\mathrm{Tr}(P_+(e_3)\tilde{Q}_1\tilde{Q}_2\tilde{Q}_3\tilde{Q}_4)$ using explicit $2\times2$ complex matrices, and by the pairing sum. All entries agree to machine precision.
 
 | $\langle\,\cdot\,\rangle_0$ | direct | pairing sum |
 |---|---|---|
@@ -189,7 +189,7 @@ The complete table of the four-point function is the following, in which each en
 | $\langle \tilde a^\dagger\tilde a^\dagger\tilde a\tilde a\rangle$ | $0$ | $0$ |
 | $\langle \tilde a^\dagger\tilde a\tilde a\tilde a^\dagger\rangle$ | $0$ | $0$ |
 
-Two entries carry the sign. For $\langle\tilde a\tilde a\tilde a^\dagger\tilde a^\dagger\rangle$ the two complete pairings are $(1,3)(2,4)$ and $(1,4)(2,3)$, with relative sign $-1$: in the expansion of the theorem the contraction $\langle X_1X_3\rangle\langle X_2X_4\rangle$ carries the minus and $\langle X_1X_4\rangle\langle X_2X_3\rangle$ the plus, since the pairing $(1,3)(2,4)$ requires a single transposition of the four fermionic factors while $(1,4)(2,3)$ is even. Their values are $1\cdot1$ and $1\cdot1$, so the sum is $-1+1=0$, in agreement with the direct value $\tilde a^2=0$. For $\langle\tilde a\tilde a^\dagger\tilde a\tilde a^\dagger\rangle$ the only surviving pairing is $(1,2)(3,4)$, of value $1$, and the direct value is $P_+(e_3)^2=P_+(e_3)$ with vacuum expectation $1$.
+Two entries carry the sign. For $\langle\tilde a\tilde a\tilde a^\dagger\tilde a^\dagger\rangle$ the two complete pairings are $(1,3)(2,4)$ and $(1,4)(2,3)$, with relative sign $-1$: in the expansion of the theorem the contraction $\langle \tilde{Q}_1\tilde{Q}_3\rangle\langle \tilde{Q}_2\tilde{Q}_4\rangle$ carries the minus and $\langle \tilde{Q}_1\tilde{Q}_4\rangle\langle \tilde{Q}_2\tilde{Q}_3\rangle$ the plus, since the pairing $(1,3)(2,4)$ requires a single transposition of the four fermionic factors while $(1,4)(2,3)$ is even. Their values are $1\cdot1$ and $1\cdot1$, so the sum is $-1+1=0$, in agreement with the direct value $\tilde a^2=0$. For $\langle\tilde a\tilde a^\dagger\tilde a\tilde a^\dagger\rangle$ the only surviving pairing is $(1,2)(3,4)$, of value $1$, and the direct value is $P_+(e_3)^2=P_+(e_3)$ with vacuum expectation $1$.
 
 **The six-point function.** The six-point contraction $\langle(\tilde a\tilde a^\dagger)^3\rangle_0$ is $1$: $(\tilde a\tilde a^\dagger)^3 = P_+(e_3)^3=P_+(e_3)$, and the pairing sum has the single nonvanishing complete pairing $(1,2)(3,4)(5,6)$ with sign $+1$ and value $1$. The six-point contractions with any pair in the reversed order vanish, as the direct computation confirms. The pattern is the general one: in the one-mode algebra the only nonvanishing contractible word is the alternating one, and its value is the product of contractions.
 
@@ -277,7 +277,7 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 | $\mathcal{A}_{\mathrm{tr}}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,e_2,ie_3\}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ | One-mode real form of $\mathbb{B}$ |
 | $(-1)^F=ie_3=e_0-2\tilde N_{\mathrm{tr}}$ | Fermion-parity grading |
 | $T\{\cdots\}$, $:\!\cdots\!:$ | Time ordering, normal ordering |
-| $\langle \tilde X_i\tilde X_j\rangle_0$ | Contraction (two-point function) |
+| $\langle \tilde{Q}_i\tilde{Q}_j\rangle_0$ | Contraction (two-point function) |
 | $D_F$, $S_F$ | Feynman propagators (scalar, spinor) |
 | $\tilde k=iEe_0+\mathbf{p}$, $\tilde k\bar{\tilde k}=-m^2$ | Wave biquaternion; mass shell |
 | $\mathrm{sgn}(\pi)$ | Fermionic sign of a complete pairing |

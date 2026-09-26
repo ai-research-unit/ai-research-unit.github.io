@@ -6,7 +6,7 @@ The special theory of relativity does more than relate the measurements of movin
 
 The biquaternion framework expresses this structure in the algebra. In the material sector $\mathbb{M}_-$ the interval between two events is the norm form $N$ of their displacement biquaternion, and the light cone is the set on which $N$ vanishes. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* establishes that this vanishing set is the material-sector part of the algebra's zero-divisor cone, and that the null directions are the directions in which the biquaternion wave operator propagates without dispersion. That result is taken as given below: the cone is not re-derived. What is developed here is what the cone does, and why it acts as a barrier to information.
 
-The interval $N(\tilde{X}_{qp})$ classifies each pair of events as spacelike, null or timelike, and the null set is the light cone. On that structure the article establishes the following, all of it classical:
+The interval $N(\tilde{Q}_{qp})$ classifies each pair of events as spacelike, null or timelike, and the null set is the light cone. On that structure the article establishes the following, all of it classical:
 
 - the interval is invariant under the rotor conjugation, so no element of the Lorentz group can move a displacement from one causal class to another, and the invariant strata are the orbits of the restricted group;
 - the complement of the cone has exactly three connected components, so a continuous worldline crosses from the future to the past or to the spacelike region only through the cone;
@@ -19,7 +19,7 @@ The cone is also the characteristic cone of the algebra's wave operator. The sta
 
 The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two readings share the algebra and nothing else.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_0 + \mathbf{a}$, $\alpha \in \mathbb{R}$, $\mathbf{a} = a_1e_1+a_2e_2+a_3e_3$ real. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, and the material coordinate is $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and on generic configurations rather than on a single null direction.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_0 + \mathbf{a}$, $\alpha \in \mathbb{R}$, $\mathbf{a} = a_1e_1+a_2e_2+a_3e_3$ real. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, and the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and on generic configurations rather than on a single null direction.
 
 ## Events, Displacements and the Causal Order
 
@@ -28,13 +28,13 @@ The word "information" is used in its physical, signal-theoretic sense: a signal
 An event is an element of the material sector,
 
 $$
-\tilde{X} = ic\,t\,e_0 + \mathbf{x}, \qquad \mathbf{x} = x\,e_1 + y\,e_2 + z\,e_3,
+\tilde{Q} = ic\,t\,e_0 + \mathbf{x}, \qquad \mathbf{x} = x\,e_1 + y\,e_2 + z\,e_3,
 $$
 
-with $t, x, y, z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde{X} \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is
+with $t, x, y, z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde{Q} \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is
 
 $$
-\tilde{X}_{qp} = \tilde{X}_q - \tilde{X}_p = ic\,\Delta t\,e_0 + \Delta\mathbf{x},
+\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p = ic\,\Delta t\,e_0 + \Delta\mathbf{x},
 \qquad
 \Delta t = t_q - t_p, \quad \Delta\mathbf{x} = \mathbf{x}_q - \mathbf{x}_p,
 $$
@@ -42,24 +42,24 @@ $$
 and its norm form is the invariant interval
 
 $$
-N(\tilde{X}_{qp}) = \tilde{X}_{qp}\bar{\tilde{X}}_{qp} = (ic\,\Delta t)^2 + |\Delta\mathbf{x}|^2 = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2 .
+N(\tilde{Q}_{qp}) = \tilde{Q}_{qp}\bar{\tilde{Q}}_{qp} = (ic\,\Delta t)^2 + |\Delta\mathbf{x}|^2 = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2 .
 $$
 
 The minus sign in the time–time term is the algebraic consequence of $i^2 = -1$; it is not an independent postulate of the metric. The time orientation of the displacement is carried by the scalar projection,
 
 $$
-\mathrm{Sc}(\tilde{X}_{qp}) = ic\,\Delta t ,
+\mathrm{Sc}(\tilde{Q}_{qp}) = ic\,\Delta t ,
 $$
 
-so $\Delta t$ is recovered as $\mathrm{Im}\,\mathrm{Sc}(\tilde{X}_{qp})/c$, and the sign of $\Delta t$ is the sign of $\mathrm{Im}\,\mathrm{Sc}(\tilde{X}_{qp})$.
+so $\Delta t$ is recovered as $\mathrm{Im}\,\mathrm{Sc}(\tilde{Q}_{qp})/c$, and the sign of $\Delta t$ is the sign of $\mathrm{Im}\,\mathrm{Sc}(\tilde{Q}_{qp})$.
 
 ### The Three Classes of Separation
 
 The interval has one of three signs, and these signs define the three causal classes of Minkowski space:
 
-- **spacelike** ($N(\tilde{X}_{qp}) > 0$): the events are too far apart for any signal to join them;
-- **null** ($N(\tilde{X}_{qp}) = 0$): the events can be joined by a light signal;
-- **timelike** ($N(\tilde{X}_{qp}) < 0$): the events can be joined by a signal travelling more slowly than light.
+- **spacelike** ($N(\tilde{Q}_{qp}) > 0$): the events are too far apart for any signal to join them;
+- **null** ($N(\tilde{Q}_{qp}) = 0$): the events can be joined by a light signal;
+- **timelike** ($N(\tilde{Q}_{qp}) < 0$): the events can be joined by a signal travelling more slowly than light.
 
 The null displacements are the light cone. The companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* records the same classification, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the algebraic characterization of the null set, which the next section recalls.
 
@@ -70,17 +70,17 @@ An event $p$ can influence an event $q$ only if a signal can pass from the first
 $$
 p \preceq q
 \quad\Longleftrightarrow\quad
-N(\tilde{X}_{qp}) \le 0 \ \text{ and } \ \Delta t \ge 0 .
+N(\tilde{Q}_{qp}) \le 0 \ \text{ and } \ \Delta t \ge 0 .
 $$
 
-The relation $\preceq$ is the **causal order**. It is reflexive, since $\tilde{X}_{pp} = 0$ has $N = 0$ and $\Delta t = 0$; the two remaining order properties are established in the sections after the next. Physically, $p \preceq q$ says that a signal emitted at $p$ can reach $q$, and the information carried by that signal can affect what happens at $q$. The converse reading — that a signal *is* the only way for $p$ to affect $q$ — is the causal postulate of the theory, and it is what gives the order its information-theoretic meaning.
+The relation $\preceq$ is the **causal order**. It is reflexive, since $\tilde{Q}_{pp} = 0$ has $N = 0$ and $\Delta t = 0$; the two remaining order properties are established in the sections after the next. Physically, $p \preceq q$ says that a signal emitted at $p$ can reach $q$, and the information carried by that signal can affect what happens at $q$. The converse reading — that a signal *is* the only way for $p$ to affect $q$ — is the causal postulate of the theory, and it is what gives the order its information-theoretic meaning.
 
 ## The Light Cone as the Zero-Divisor Cone
 
 The vanishing set of the norm form on the material sector is the double cone
 
 $$
-\mathcal{Z} = \{\, \tilde{X} \in \mathbb{M}_- : \tilde{X} \ne 0,\ N(\tilde{X}) = 0 \,\}
+\mathcal{Z} = \{\, \tilde{Q} \in \mathbb{M}_- : \tilde{Q} \ne 0,\ N(\tilde{Q}) = 0 \,\}
 = \{\, ic\,t\,e_0 + \mathbf{x} : |\mathbf{x}| = c\,|t| \,\},
 $$
 
@@ -89,7 +89,7 @@ the light cone of Minkowski space. The companion article *The Light Cone as the 
 **The cone is the zero-divisor set.** A nonzero biquaternion has $N(\tilde{Q}) = 0$ if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde{R}$ with $\tilde{Q}\tilde{R} = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $ct \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2ict$,
 
 $$
-\tilde{X} = ict\left(e_0 - i\hat{\mathbf{x}}\right) = 2ict\,\tilde{P}(-\hat{\mathbf{x}}),
+\tilde{Q} = ict\left(e_0 - i\hat{\mathbf{x}}\right) = 2ict\,\tilde{P}(-\hat{\mathbf{x}}),
 \qquad
 \tilde{P}(-\hat{\mathbf{x}}) = \tfrac12\left(e_0 - i\hat{\mathbf{x}}\right),
 \qquad
@@ -104,7 +104,7 @@ $$
 
 so every nonzero displacement is invertible except the null ones.
 
-**The cone is the propagation locus.** The d'Alembertian of the algebra is the norm form of the gradient, $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$, and a four-wavevector $\tilde{K}$ solves the massless dispersion relation $N(\tilde{K}) = 0$ exactly when it is null. For a null $\tilde{K}$ every function of the phase $\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
+**The cone is the propagation locus.** The d'Alembertian of the algebra is the norm form of the gradient, $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$, and a four-wavevector $\tilde{K}$ solves the massless dispersion relation $N(\tilde{K}) = 0$ exactly when it is null. For a null $\tilde{K}$ every function of the phase $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
 
 Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $N$ is a continuous real function on $\mathbb{M}_-$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
 
@@ -115,7 +115,7 @@ Two features of $\mathcal{Z}$ are used below. First, it is the common boundary o
 The Lorentz group acts on the material sector by the rotor conjugation
 
 $$
-\tilde{X} \;\longmapsto\; \tilde{X}' = \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger,
+\tilde{Q} \;\longmapsto\; \tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
 \qquad
 \tilde{\Lambda} \in \mathbb{B}, \quad \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0,
 $$
@@ -123,9 +123,9 @@ $$
 as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The norm form is multiplicative, $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$, and complex conjugation supplies $N(\tilde{\Lambda}^\dagger) = N(\tilde{\Lambda})^*$. Hence
 
 $$
-N(\tilde{X}') = N(\tilde{\Lambda}) \, N(\tilde{X}) \, N(\tilde{\Lambda}^\dagger)
-= N(\tilde{\Lambda})\,N(\tilde{X})\,N(\tilde{\Lambda})^*
-= N(\tilde{X}),
+N(\tilde{Q}') = N(\tilde{\Lambda}) \, N(\tilde{Q}) \, N(\tilde{\Lambda}^\dagger)
+= N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda})^*
+= N(\tilde{Q}),
 $$
 
 because $N(\tilde{\Lambda}) = e_0$ as a coefficient, that is $N(\tilde{\Lambda}) = 1$ in $\mathbb{C}$. The interval is invariant, and with it the sign of the interval. A rotor cannot map a timelike displacement to a spacelike one, or a null displacement to a non-null one; the three causal classes are invariant under every Lorentz transformation. This is the algebraic form of the statement that the light cone is preserved, and it is the first sense in which the cone is a barrier: the group of allowed changes of frame cannot move a displacement across it.
@@ -170,7 +170,7 @@ $$
 
 while the scalar coefficient has $\alpha_a + \alpha_b > 0$, so the sum is future-directed. Hence the sum of two future-directed nonspacelike displacements is future-directed nonspacelike: if $p \preceq q$ and $q \preceq r$, then $p \preceq r$ and the causal order is transitive. Equality $N(\tilde{a}+\tilde{b}) = 0$ occurs only when both displacements are null and their spatial parts are parallel and equally oriented, so that the relay is itself a light signal; two null displacements in non-parallel or oppositely oriented directions sum to a strictly timelike one.
 
-The order is also antisymmetric. If $p \preceq q$ and $q \preceq p$ then $\Delta t \ge 0$ and $\Delta t \le 0$, so $\Delta t = 0$, and $N(\tilde{X}_{qp}) \le 0$ then gives $|\Delta\mathbf{x}| \le 0$, hence $\Delta\mathbf{x} = 0$ and $p = q$. Together with reflexivity and transitivity this makes $\preceq$ a **partial order** on the events: the structure of possible influence is an order, not a graph with cycles, and distinct events are ordered in at most one direction. This is what forbids a signal loop that closes on itself and returns to its own emission event; a closed causal curve in flat spacetime would require a strict part of the order to hold in both directions.
+The order is also antisymmetric. If $p \preceq q$ and $q \preceq p$ then $\Delta t \ge 0$ and $\Delta t \le 0$, so $\Delta t = 0$, and $N(\tilde{Q}_{qp}) \le 0$ then gives $|\Delta\mathbf{x}| \le 0$, hence $\Delta\mathbf{x} = 0$ and $p = q$. Together with reflexivity and transitivity this makes $\preceq$ a **partial order** on the events: the structure of possible influence is an order, not a graph with cycles, and distinct events are ordered in at most one direction. This is what forbids a signal loop that closes on itself and returns to its own emission event; a closed causal curve in flat spacetime would require a strict part of the order to hold in both directions.
 
 ## The Relative-Velocity Barrier
 
@@ -307,7 +307,7 @@ $$
 \Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c^2}\partial_t^2,
 $$
 
-the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde{K}\bar{\tilde{X}}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the chain rule gives the corpus identity
+the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the chain rule gives the corpus identity
 
 $$
 \Box f(s) = N(\tilde{K})\,f''(s),
@@ -327,10 +327,10 @@ $$
 p \preceq q \quad\Longleftrightarrow\quad f(p) \preceq f(q),
 $$
 
-is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ with $N(\tilde{\Lambda}) = e_0$, and the translation is the addition of a fixed displacement $\tilde{T} \in \mathbb{M}_-$:
+is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $N(\tilde{\Lambda}) = e_0$, and the translation is the addition of a fixed displacement $\tilde{T} \in \mathbb{M}_-$:
 
 $$
-\tilde{X} \;\longmapsto\; \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger + \tilde{T}.
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger + \tilde{T}.
 $$
 
 The theorem says that the cone, together with the time orientation, determines the allowed transformations up to these two operations. Nothing beyond the causal order is needed to recover the kinematics of the frame changes; the barrier is not only preserved by the relativity group, it characterizes it.
@@ -349,7 +349,7 @@ J^-(p) = \{\, q : q \preceq p \,\},
 E(p) = \mathbb{M}_- \setminus \big(J^+(p) \cup J^-(p)\big).
 $$
 
-$J^+(p)$ and $J^-(p)$ are the **causal future** and **causal past** of $p$, and $E(p)$ is its **elsewhere**, the set of events with a spacelike separation from $p$. In terms of the displacement $\tilde{X}_{qp}$, membership in $J^+(p)$ is the condition $N(\tilde{X}_{qp}) \le 0$ with $\mathrm{Im}\,\mathrm{Sc}(\tilde{X}_{qp}) \ge 0$; membership in $J^-(p)$ is the same norm condition with the opposite sign of the scalar part; and $E(p)$ is the set on which $N(\tilde{X}_{qp}) > 0$. Each of the three sets is a union of orbits of the rotor group, and their common boundary is the light cone through $p$.
+$J^+(p)$ and $J^-(p)$ are the **causal future** and **causal past** of $p$, and $E(p)$ is its **elsewhere**, the set of events with a spacelike separation from $p$. In terms of the displacement $\tilde{Q}_{qp}$, membership in $J^+(p)$ is the condition $N(\tilde{Q}_{qp}) \le 0$ with $\mathrm{Im}\,\mathrm{Sc}(\tilde{Q}_{qp}) \ge 0$; membership in $J^-(p)$ is the same norm condition with the opposite sign of the scalar part; and $E(p)$ is the set on which $N(\tilde{Q}_{qp}) > 0$. Each of the three sets is a union of orbits of the rotor group, and their common boundary is the light cone through $p$.
 
 The information-theoretic content is the following pair of statements.
 
@@ -379,11 +379,11 @@ The conventions and the results taken over from the relativity series are those 
 
 The causal structure of the material sector $\mathbb{M}_-$ is the structure of the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ and of its vanishing set, the light cone.
 
-1. **The interval and its sign.** For the displacement $\tilde{X}_{qp} = ic\,\Delta t\,e_0 + \Delta\mathbf{x}$, the interval is $N(\tilde{X}_{qp}) = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2$, and its sign divides Minkowski space into the spacelike, null and timelike regions. The null set is the light cone, which the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* identifies with the material-sector part of the zero-divisor set of the algebra.
+1. **The interval and its sign.** For the displacement $\tilde{Q}_{qp} = ic\,\Delta t\,e_0 + \Delta\mathbf{x}$, the interval is $N(\tilde{Q}_{qp}) = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2$, and its sign divides Minkowski space into the spacelike, null and timelike regions. The null set is the light cone, which the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* identifies with the material-sector part of the zero-divisor set of the algebra.
 
-2. **The causal order.** The relation $p \preceq q$, defined by $N(\tilde{X}_{qp}) \le 0$ with $\Delta t \ge 0$, is a partial order. Transitivity follows from the triangle inequality: a sum of future-directed nonspacelike displacements is future-directed nonspacelike, with equality in $N$ only for null segments that are parallel and equally oriented.
+2. **The causal order.** The relation $p \preceq q$, defined by $N(\tilde{Q}_{qp}) \le 0$ with $\Delta t \ge 0$, is a partial order. Transitivity follows from the triangle inequality: a sum of future-directed nonspacelike displacements is future-directed nonspacelike, with equality in $N$ only for null segments that are parallel and equally oriented.
 
-3. **Invariance.** The norm form is invariant under the rotor conjugation, $N(\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger) = N(\tilde{X})$ for $N(\tilde{\Lambda}) = e_0$, so the causal classes are invariant, and the invariant strata — the two sheets of the null cone, the two timelike sheets of a fixed norm form, and the spacelike region of that norm form — are the orbits of the restricted Lorentz group.
+3. **Invariance.** The norm form is invariant under the rotor conjugation, $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger) = N(\tilde{Q})$ for $N(\tilde{\Lambda}) = e_0$, so the causal classes are invariant, and the invariant strata — the two sheets of the null cone, the two timelike sheets of a fixed norm form, and the spacelike region of that norm form — are the orbits of the restricted Lorentz group.
 
 4. **The topological barrier.** The complement of the cone has three connected components, and $N$ can change sign along a continuous path only at the cone. A continuous causal process therefore reaches the elsewhere only by leaving the cone.
 
@@ -408,16 +408,16 @@ The information-theoretic reading is that $J^+(p)$ is the set of events that $p$
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\bar{\tilde{Q}}, \tilde{Q}^* , \tilde{Q}^\dagger = \bar{\tilde{Q}}^{*}$ | Quaternion, complex and Hermitian conjugation |
-| $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$ | Material four-position |
-| $\tilde{X}_{qp} = \tilde{X}_q - \tilde{X}_p$ | Displacement from $p$ to $q$ |
+| $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$ | Material four-position |
+| $\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p$ | Displacement from $p$ to $q$ |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form; the interval on $\mathbb{M}_-$ |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{M}_-$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
-| $p \preceq q$ | Causal order: $N(\tilde{X}_{qp})\le 0$ and $\Delta t\ge 0$ |
+| $p \preceq q$ | Causal order: $N(\tilde{Q}_{qp})\le 0$ and $\Delta t\ge 0$ |
 | $J^+(p)$, $J^-(p)$, $E(p)$ | Causal future, causal past, and elsewhere of $p$ |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $N(\tilde{\Lambda})=e_0$ | Boost rotor (unit-norm biquaternion) |
-| $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | Rotor conjugation |
+| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation |
 | $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$, $N(\tilde{U})=-c^2$ | Four-velocity |
 | $\beta = |\mathbf{v}|/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\psi$, $\tanh\psi=\beta$ | Rapidity |

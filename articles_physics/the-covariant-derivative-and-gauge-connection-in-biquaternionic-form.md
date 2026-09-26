@@ -45,7 +45,7 @@ D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}
   =: \sum_{\mu=0}^{3} e_\mu\, D_\mu,
 $$
 
-where $\partial_0 = \partial_{ict}$ and $\partial_k = \partial_{x_k}$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{X})$ is left multiplication by that operator,
+where $\partial_0 = \partial_{ict}$ and $\partial_k = \partial_{x_k}$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,
 
 $$
 D\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iq}{\hbar}\tilde{A}\tilde{\Psi},
@@ -109,7 +109,7 @@ and this is the precise sense in which the connection "compensates" for the ordi
 
 ## Gauge Covariance and What It Forces
 
-The gauge principle article proves the covariance of the construction (inherited here, not rederived): with $\lambda = e^{iq\Gamma(\tilde{X})/\hbar}$ a central phase and $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, the covariant derivative built from $\tilde{A}'$ satisfies
+The gauge principle article proves the covariance of the construction (inherited here, not rederived): with $\lambda = e^{iq\Gamma(\tilde{Q})/\hbar}$ a central phase and $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, the covariant derivative built from $\tilde{A}'$ satisfies
 
 $$
 D'(\lambda\tilde{\Psi}) = \lambda\,D\tilde{\Psi}
@@ -162,14 +162,14 @@ $$
 
 because $\bar{\tilde{\nabla}}\tilde{\nabla}\Gamma = \Box\Gamma\, e_0$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.
 
-**A single point can always be made connection-free.** Given any connection $\tilde{A}$ and any point $\tilde{X}_0$, choose the real, affine gauge function
+**A single point can always be made connection-free.** Given any connection $\tilde{A}$ and any point $\tilde{Q}_0$, choose the real, affine gauge function
 
 $$
-\Gamma(\tilde{X}) = -a\,t + A_1(\tilde{X}_0)\,x + A_2(\tilde{X}_0)\,y + A_3(\tilde{X}_0)\,z,
-\qquad a = -ic\,A_0(\tilde{X}_0) = \phi(\tilde{X}_0) \in \mathbb{R},
+\Gamma(\tilde{Q}) = -a\,t + A_1(\tilde{Q}_0)\,x + A_2(\tilde{Q}_0)\,y + A_3(\tilde{Q}_0)\,z,
+\qquad a = -ic\,A_0(\tilde{Q}_0) = \phi(\tilde{Q}_0) \in \mathbb{R},
 $$
 
-so that $\partial_\mu\Gamma(\tilde{X}_0) = A_\mu(\tilde{X}_0)$ and hence $\tilde{A}'(\tilde{X}_0) = 0$. The connection therefore has no gauge-invariant value at a point; whatever invariant content it has must be built from derivatives.
+so that $\partial_\mu\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and hence $\tilde{A}'(\tilde{Q}_0) = 0$. The connection therefore has no gauge-invariant value at a point; whatever invariant content it has must be built from derivatives.
 
 **The curvature is the obstruction to doing this on a neighbourhood.** A connection with $\tilde{F} = 0$ satisfies $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu = 0$, and the Poincaré lemma applied to the one-form $\tilde{A}_\mu\,dx^\mu$ then supplies a local $\Gamma$ with $\tilde{A} = \tilde{\nabla}\Gamma$. The converse direction of this last statement is the Poincaré lemma; it is *invoked* here, not recomputed. The exact direction — that a gradient connection is flat — was recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.
 
@@ -267,7 +267,7 @@ The boundary can be drawn as in the companion articles.
 
 The word "connection" is used in the framework for two different objects, and conflating them is an error worth naming.
 
-The connection of this article is **one-sided**: $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $D_\mu\tilde{X} = \partial_\mu\tilde{X} + \tilde{\Gamma}_\mu\tilde{X} + \tilde{X}\tilde{\Gamma}_\mu^\dagger$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{X} + \tilde{X}G^\dagger$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $U(1)$ connection of the center; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
+The connection of this article is **one-sided**: $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^\dagger$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^\dagger$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $U(1)$ connection of the center; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
 
 ## Open Questions
 

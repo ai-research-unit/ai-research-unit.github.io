@@ -22,7 +22,7 @@ W[\tilde J] = \tfrac12\big\langle \tilde J,\tilde K^{-1}\tilde J\big\rangle ,
 \qquad
 \Gamma[\tilde\phi] = \tfrac12\big\langle \tilde\phi,\tilde K\tilde\phi\big\rangle ,
 $$
-built from the real bilinear form $\langle \tilde X,\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde X^\dagger\tilde Y)$ of the previous article, with the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$ and the Legendre identity $W[\tilde J]+\Gamma[\tilde\phi]=\langle \tilde J,\tilde\phi\rangle$ at $\tilde\phi=\delta W/\delta\tilde J$. These were checked in finite dimension with explicit matrices.
+built from the real bilinear form $\langle \tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$ of the previous article, with the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$ and the Legendre identity $W[\tilde J]+\Gamma[\tilde\phi]=\langle \tilde J,\tilde\phi\rangle$ at $\tilde\phi=\delta W/\delta\tilde J$. These were checked in finite dimension with explicit matrices.
 - **Established (algebra).** Because the source $\tilde J$, the classical field $\tilde\phi=\delta W/\delta\tilde J$, and the fluctuations all live in the same module, the effective action is a functional **on the module**, and its convexity is convexity with respect to the real form of the algebra — a real form that is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. For a central kinetic operator the effective action **factorizes** over the sectors,
 $$
 \Gamma[\tilde\phi] = \Gamma_-[{\tilde\phi}_-]+\Gamma_+[{\tilde\phi}_+] ,
@@ -39,7 +39,7 @@ The article proceeds as follows. The next section defines the connected function
 
 **Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational). The real bilinear form is
 $$
-\langle \tilde X,\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde X^\dagger\tilde Y\big),
+\langle \tilde{Q},\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^\dagger\tilde Y\big),
 $$
 positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,\tilde K\tilde\Phi\rangle$ with $\tilde K=\Box-m^2$ and $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the trace pairing and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
 
@@ -209,7 +209,7 @@ S_E[\tilde\phi] + \frac{\hbar}{2}\,\mathrm{Tr}\log S_E''[\tilde\phi] + O(\hbar^2
 $$
 the last form under the Wick rotation that turns $iS$ into $-S_E$. The logarithm of the fluctuation operator's determinant is thus the whole of the one-loop effective action, and its regularization is the source of the trace anomaly of *The Trace Anomaly in Biquaternionic Form*.
 
-**Biquaternion content.** Two features are the algebra's. First, $S''[\tilde\phi]$ acts on the module, so its determinant is a determinant on a two-complex-dimensional fibre per mode, and the trace in $\mathrm{Tr}\log$ is the trace pairing $\mathrm{Tr}(\tilde X)=2\mathrm{Sc}(\tilde X)$. Second, when $S''$ is central the logarithm factorizes over the sectors, giving the factorized one-loop expressions above. These are the only two places the algebra enters; the rest — the loop integral, the regularization, the renormalization — is standard.
+**Biquaternion content.** Two features are the algebra's. First, $S''[\tilde\phi]$ acts on the module, so its determinant is a determinant on a two-complex-dimensional fibre per mode, and the trace in $\mathrm{Tr}\log$ is the trace pairing $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$. Second, when $S''$ is central the logarithm factorizes over the sectors, giving the factorized one-loop expressions above. These are the only two places the algebra enters; the rest — the loop integral, the regularization, the renormalization — is standard.
 
 ### The Proper-Time Form
 
@@ -231,7 +231,7 @@ has coefficients $a_n$ built from the curvature of $S''$ and the geometry of the
 
 **Established (algebra and functional analysis of the module).**
 - The connected and effective functionals are the quadratic forms $W=\tfrac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle$ and $\Gamma=\tfrac12\langle\tilde\phi,\tilde K\tilde\phi\rangle$ for a free theory, with the inverse-Hessian relation and the Legendre identity; verified in finite dimension.
-- The Legendre transform is taken on the module, and its convexity is convexity in the real form $\langle\tilde X,\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde X^\dagger\tilde Y)$, which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$.
+- The Legendre transform is taken on the module, and its convexity is convexity in the real form $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$, which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$.
 - For a sector-diagonal action the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing.
 - The one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\phi]$, the logarithm of a module determinant.
 
@@ -247,7 +247,7 @@ has coefficients $a_n$ built from the curvature of $S''$ and the geometry of the
 
 ## Summary
 
-The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde X,\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde X^\dagger\tilde Y)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle$ and $\Gamma[\tilde\phi]=\tfrac12\langle\tilde\phi,\tilde K\tilde\phi\rangle$, with $\tilde K=\Box-m^2$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde\phi\rangle$ at $\tilde\phi=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\phi]$, which the next article computes and regularizes.
+The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle$ and $\Gamma[\tilde\phi]=\tfrac12\langle\tilde\phi,\tilde K\tilde\phi\rangle$, with $\tilde K=\Box-m^2$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde\phi\rangle$ at $\tilde\phi=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\phi]$, which the next article computes and regularizes.
 
 Because a central kinetic operator does not mix the material and informational sectors, the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing with it; any non-central term — an interaction, a non-central kinetic operator, or the chirality-off-diagonal Dirac mass — breaks the factorization. The tree-level effective potential $V=\tfrac12 m^2\langle\tilde\phi,\tilde\phi\rangle$ has its minimum at the symmetric point and, in a one-mode truncation, at a minimal idempotent of $\mathbb{M}_+$: the field-theoretic statement of the vacuum-selection rule of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
@@ -257,7 +257,7 @@ Because a central kinetic operator does not mix the material and informational s
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\langle\tilde X,\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde X^\dagger\tilde Y)$ | Real bilinear form; positive on $\mathbb{M}_+$, negative on $\mathbb{M}_-$ |
+| $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$ | Real bilinear form; positive on $\mathbb{M}_+$, negative on $\mathbb{M}_-$ |
 | $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,e^{iS/\hbar+\langle\tilde J,\tilde\Phi\rangle}$ | Generating functional |
 | $W[\tilde J]=-i\hbar\log Z[\tilde J]$ | Connected generating functional |
 | $\tilde\phi=\delta W/\delta\tilde J$ | Classical field (module-valued) |

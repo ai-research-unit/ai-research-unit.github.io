@@ -48,19 +48,19 @@ A general element $i q_0e_0+\mathbf q$ of $\mathbb{M}_-$ is sent to $-q_0e_0+i\m
 
 The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ satisfied both $J^2=-I$ and the compatibility
 $$
-N(JX,JY)=N(X,Y) \qquad \text{for all } X,Y,
+N(JX,JY)=N(\tilde{Q},\tilde{R}) \qquad \text{for all } \tilde{Q},\tilde{R},
 $$
-which is the condition that the complex structure be an isometry of the norm form. Two elementary identities follow. Taking $Y=JX$ and using $J^2=-I$ and the symmetry of $N$,
+which is the condition that the complex structure be an isometry of the norm form. Two elementary identities follow. Taking $\tilde{R}=JX$ and using $J^2=-I$ and the symmetry of $N$,
 $$
-N(JX,-X)=N(X,JX) \;\Longrightarrow\; -N(X,JX)=N(X,JX) \;\Longrightarrow\; N(X,JX)=0 ,
+N(JX,-\tilde{Q})=N(\tilde{Q},JX) \;\Longrightarrow\; -N(\tilde{Q},JX)=N(\tilde{Q},JX) \;\Longrightarrow\; N(\tilde{Q},JX)=0 ,
 $$
-so a vector and its image under $J$ are orthogonal. Taking $Y=X$,
+so a vector and its image under $J$ are orthogonal. Taking $\tilde{R}=\tilde{Q}$,
 $$
-N(JX,JX)=N(X,X).
+N(JX,JX)=N(\tilde{Q},\tilde{Q}).
 $$
-Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $N(X,X)\neq0$, the form is definite with the sign of $N(X,X)$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $Y$ orthogonal to the plane and $Z$ in the plane,
+Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $N(\tilde{Q},\tilde{Q})\neq0$, the form is definite with the sign of $N(\tilde{Q},\tilde{Q})$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde{R}$ orthogonal to the plane and $Z$ in the plane,
 $$
-N(JY,Z)=N(J^2Y,JZ)=-N(Y,JZ)=0,
+N(JY,Z)=N(J^2\tilde{R},JZ)=-N(\tilde{R},JZ)=0,
 $$
 using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The norm form of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
 
@@ -90,9 +90,9 @@ Three features of this definition are the content of its locality.
 - **It is pointwise, not holomorphic.** The local structure is an identification on the local tangent space at each point. It is not a system of holomorphic coordinates and it does not make spacetime a complex manifold, since by the previous section no such structure exists. In flat spacetime with constant $c$ the pointwise identifications fit together and the structure becomes global; in general they do not.
 - **It requires a scale.** The coordinate $ict$ is a length and $t$ is a time, so the map $t\mapsto ict$ is dimensionally consistent only because $c$ is a speed. Without a scale, the statement "the temporal direction is imaginary" has no metric content. The local complex structure is therefore not a structure that merely *has* a scale; it is a structure *with* a scale, and that scale is $c$.
 
-At each point the local structure induces the quadratic form of the material sector. With $d\tilde{X}=ic\,dt\,e_0+d\mathbf x$,
+At each point the local structure induces the quadratic form of the material sector. With $d\tilde{Q}=ic\,dt\,e_0+d\mathbf x$,
 $$
-N(d\tilde{X})=(ic\,dt)^2+d\mathbf x^2=-c^2\,dt^2+d\mathbf x^2 .
+N(d\tilde{Q})=(ic\,dt)^2+d\mathbf x^2=-c^2\,dt^2+d\mathbf x^2 .
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the metric.
 
@@ -185,7 +185,7 @@ The reading closes no empirical gap and claims no global structure. Its content 
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |
-| $\tilde{X}=ic\,t\,e_0+\mathbf x$ | Four-position of the material sector |
+| $\tilde{Q}=ic\,t\,e_0+\mathbf x$ | Four-position of the material sector |
 | $g_{\mu\nu}=\mathrm{diag}(-c^2,1,1,1)$ | Local metric induced by the local complex structure |
 | $ds^2=-c^2dt^2+d\mathbf x^2$ | Interval; null cone $|d\mathbf x/dt|=c$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed, vacuum speed |

@@ -35,7 +35,7 @@ $$
 \qquad T_a = \tfrac12 e_a,\quad [T_a,T_b] = \varepsilon_{abc}T_c,\quad \mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}.
 $$
 
-The gauge group is the unit real quaternions, $SU(2) = \{U \in \mathbb{H}_{\mathbb{B}} : U\bar U = e_0\}$, acting on a matter field by left multiplication. A local transformation $U(\tilde{X})$ forces the connection
+The gauge group is the unit real quaternions, $SU(2) = \{U \in \mathbb{H}_{\mathbb{B}} : U\bar U = e_0\}$, acting on a matter field by left multiplication. A local transformation $U(\tilde{Q})$ forces the connection
 
 $$
 \mathcal{A}'_\mu = U\,\mathcal{A}_\mu\,U^{-1} + \frac{i}{\kappa}\,(\partial_\mu U)\,U^{-1},

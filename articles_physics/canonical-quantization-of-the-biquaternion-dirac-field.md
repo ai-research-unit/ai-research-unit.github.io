@@ -139,7 +139,7 @@ $$
 
 together define the operator-valued field. The **annihilation** operators $\hat a_r(\mathbf p)$ multiply the positive-frequency solutions, and the **creation** operators $\hat b_r^\dagger(\mathbf p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
 
-Two structural remarks belong here. First, $\hat{\psi}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\bar{\tilde{X}})\right)$; the two branches are the two roots of the single biquaternion mass-shell condition
+Two structural remarks belong here. First, $\hat{\psi}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\bar{\tilde{Q}})\right)$; the two branches are the two roots of the single biquaternion mass-shell condition
 
 $$
 \tilde k\bar{\tilde k}=-\frac{m^2c^2}{\hbar^2},

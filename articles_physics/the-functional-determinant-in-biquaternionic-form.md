@@ -39,7 +39,7 @@ the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\ze
 
 The article proceeds as follows. A section defines the determinant of a module operator and the fundamental determinant of an algebra element. A section proves the regular-representation identity and verifies it. A section connects the determinant to the Gaussian integral and the one-loop action. A section treats regularization, and a section the fermionic determinant and its phase. A section treats the conformal variation, and a section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; the isomorphism is $\Phi(e_k)=-i\sigma_k$; the norm form is $N(\tilde Q)=\tilde Q\bar{\tilde Q}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde X)=2\mathrm{Sc}(\tilde X)$; the real bilinear form is $\langle\tilde X,\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde X^\dagger\tilde Y)$, positive on $\mathbb{M}_+$ and negative on $\mathbb{M}_-$; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $\tilde K=\Box-m^2$ with $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$, and the wave biquaternion is $\tilde k=iEe_0+\mathbf{p}$ with $\tilde k\bar{\tilde k}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\bar{\tilde\nabla}\tilde\Psi_L=m\tilde\Psi_R$, as *Conventions in the Biquaternion Universe* fixes.
+**Conventions.** We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; the isomorphism is $\Phi(e_k)=-i\sigma_k$; the norm form is $N(\tilde Q)=\tilde Q\bar{\tilde Q}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$; the real bilinear form is $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$, positive on $\mathbb{M}_+$ and negative on $\mathbb{M}_-$; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $\tilde K=\Box-m^2$ with $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$, and the wave biquaternion is $\tilde k=iEe_0+\mathbf{p}$ with $\tilde k\bar{\tilde k}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\bar{\tilde\nabla}\tilde\Psi_L=m\tilde\Psi_R$, as *Conventions in the Biquaternion Universe* fixes.
 
 ## The Determinant of a Module Operator
 
@@ -77,7 +77,7 @@ where $\Phi$ is the isomorphism onto $M_2(\mathbb{C})$ and $N$ is the norm form.
 
 The determinant of $\tilde Q$ is thus the **norm form**, the same object that supplies the Minkowski interval of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.
 
-**Proposition (regular representation).** Left multiplication $L_{\tilde Q}:X\mapsto\tilde QX$ and right multiplication $R_{\tilde Q}:X\mapsto X\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
+**Proposition (regular representation).** Left multiplication $L_{\tilde Q}:\tilde{R}\mapsto\tilde Q\tilde R$ and right multiplication $R_{\tilde Q}:\tilde{R}\mapsto \tilde R\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
 $$
 \det L_{\tilde Q} = \det R_{\tilde Q} = N(\tilde Q)^2 .
 $$

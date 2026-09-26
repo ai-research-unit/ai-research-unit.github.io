@@ -209,7 +209,7 @@ $$
 
 **The physical reading of $D$.** The matrix $D = \operatorname{diag}(-1,1,1,1)$ is exactly the $ict$ metric $\eta = \operatorname{diag}(-1,+1,+1,+1)$ of *Conventions in the Biquaternion Universe*. The relation $\rho_R(\tilde{Q}) = \eta\,\rho_L(\tilde{Q})^{\mathsf{T}}\,\eta$ therefore says that the change of basis relating the two copies of the algebra is the **metric itself**, and it is the level-2 face of the same sign that puts $-c^2t^2 + \mathbf{x}^2$ on the four-position. Nothing else in the article uses the metric, so the appearance of $\eta$ here is not a coincidence of notation but the visible trace of the sign convention itself.
 
-**The same relation read as an adjoint.** With the bilinear form $\langle X, Y \rangle_\eta = X^{\mathsf{T}}\eta Y$ on the columns, the theorem says that $\rho_R(\tilde{Q})$ is the transpose of $\rho_L(\tilde{Q})$ **with respect to $\eta$** and not with respect to the Euclidean form:
+**The same relation read as an adjoint.** With the bilinear form $\langle u, v \rangle_\eta = u^{\mathsf{T}}\eta v$ on the columns, the theorem says that $\rho_R(\tilde{Q})$ is the transpose of $\rho_L(\tilde{Q})$ **with respect to $\eta$** and not with respect to the Euclidean form:
 
 $$
 \langle \rho_L(\tilde{Q})R, S \rangle_\eta = \langle R, \rho_R(\tilde{Q})S \rangle_\eta

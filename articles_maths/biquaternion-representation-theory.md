@@ -68,7 +68,7 @@ $$
 \operatorname{Aut}_{\mathbb{R}\text{-alg}}(\mathbb{B}) \cong PGL_2(\mathbb{C}) \rtimes \mathbb{Z}/2.
 $$
 
-**Derivations.** Every derivation of a full matrix algebra is inner, $D = \operatorname{ad}_X$ with $\operatorname{ad}_X(Y) = XY - YX$. The map $X \mapsto \operatorname{ad}_X$ has kernel the centre $\mathbb{C}$ and image the traceless matrices, so
+**Derivations.** Every derivation of a full matrix algebra is inner, $D = \operatorname{ad}_{\tilde{Q}}$ with $\operatorname{ad}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q}$. The map $\tilde{Q} \mapsto \operatorname{ad}_{\tilde{Q}}$ has kernel the centre $\mathbb{C}$ and image the traceless matrices, so
 
 $$
 \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C}), \qquad \dim_{\mathbb{C}} \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) = 3.
@@ -109,7 +109,7 @@ $$
 a simply connected complex Lie group of complex dimension $3$, real dimension $6$. The map
 
 $$
-SL(2,\mathbb{C}) \longrightarrow SO^{+}(1,3), \qquad \tilde{Q} \longmapsto \left(\tilde{X} \mapsto \tilde{Q}\tilde{X}\tilde{Q}^{\dagger}\right),
+SL(2,\mathbb{C}) \longrightarrow SO^{+}(1,3), \qquad \tilde{Q} \longmapsto \left(\tilde{R} \mapsto \tilde{Q}\tilde{R}\tilde{Q}^{\dagger}\right),
 $$
 
 is surjective with kernel $\{\pm e_0\}$, so $SL(2,\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group. Since $-e_0$ acts as $-\mathrm{id}$ on $V$, the defining two-dimensional representation does not descend to $SO^{+}(1,3)$. The unitary biquaternions $\tilde{Q}^{\dagger}\tilde{Q} = 1$ form $U(2)$, the maximal compact subgroup of $\mathbb{B}^{\times}$, and the unit quaternions form $SU(2) = SL(2,\mathbb{C}) \cap U(2)$, the maximal compact subgroup of $SL(2,\mathbb{C})$ and the double cover of $SO(3)$.

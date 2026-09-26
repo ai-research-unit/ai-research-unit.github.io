@@ -178,15 +178,15 @@ The Proca equation equates the first to $\mu^2A_0$ and the second to $\mu^2\math
 Write a plane-wave potential
 
 $$
-\tilde{A} = \tilde{A}_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})}, \qquad
+\tilde{A} = \tilde{A}_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}, \qquad
 \tilde{A}_0 = A_0e_0 + \mathbf{a}, \qquad
 \tilde{K} = i\frac{\omega}{c}\,e_0 + \mathbf{k},
 $$
 
-where $\mathrm{Sc}(\tilde{K}\bar{\tilde{X}}) = \mathbf{k}\cdot\mathbf{x} - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_0$ is purely imaginary and $\mathbf{a}$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde{K}\tilde{A}$ and $\bar{\tilde{\nabla}}\tilde{A} = i\bar{\tilde{K}}\tilde{A}$, and the Klein–Gordon operator acts as
+where $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = \mathbf{k}\cdot\mathbf{x} - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_0$ is purely imaginary and $\mathbf{a}$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde{K}\tilde{A}$ and $\bar{\tilde{\nabla}}\tilde{A} = i\bar{\tilde{K}}\tilde{A}$, and the Klein–Gordon operator acts as
 
 $$
-\Box\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})} = \left(\frac{\omega^2}{c^2} - \mathbf{k}^2\right)e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})},
+\Box\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})} = \left(\frac{\omega^2}{c^2} - \mathbf{k}^2\right)e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})},
 $$
 
 as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires

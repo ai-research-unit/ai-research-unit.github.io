@@ -17,7 +17,7 @@ The article is organized as follows. The rotation algebra is constructed as the 
 - Companion article *Canonical Quantization of the Biquaternion Proca Field*, for the massive vector field whose three on-shell polarizations are the weight basis of this article.
 - Companion article *Canonical Quantization of the Biquaternion Graviton Field*, for the rank-two instance of the tensor-power construction, where the trace removal is performed on the symmetric square of the material vector.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar plus real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$, and the material basis is $\hat e_0=ie_0$, $\hat e_k=e_k$, with $\eta_{\mu\nu}=\langle\hat e_\mu,\hat e_\nu\rangle=\mathrm{diag}(-1,+1,+1,+1)$. The vector part of the material sector is $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$, a three-dimensional complex space on which the rotations act, and it is the carrier of the spin-one representation. The angular momentum operator is $J_k=\tfrac12\mathrm{ad}_{ie_k}$, with $\mathrm{ad}_XY=[X,Y]=XY-YX$. The adjoint action is bracketing, a derivation of the algebra: $\mathrm{ad}_X(YZ)=(\mathrm{ad}_XY)Z+Y(\mathrm{ad}_XZ)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar plus real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$, and the material basis is $\hat e_0=ie_0$, $\hat e_k=e_k$, with $\eta_{\mu\nu}=\langle\hat e_\mu,\hat e_\nu\rangle=\mathrm{diag}(-1,+1,+1,+1)$. The vector part of the material sector is $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$, a three-dimensional complex space on which the rotations act, and it is the carrier of the spin-one representation. The angular momentum operator is $J_k=\tfrac12\mathrm{ad}_{ie_k}$, with $\mathrm{ad}_{\tilde{Q}}\tilde{R}=[\tilde{Q},\tilde{R}]=\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q}$. The adjoint action is bracketing, a derivation of the algebra: $\mathrm{ad}_{\tilde{Q}}(\tilde{R}\tilde{S})=(\mathrm{ad}_{\tilde{Q}}\tilde{R})\tilde{S}+\tilde{R}(\mathrm{ad}_{\tilde{Q}}\tilde{S})$.
 
 ## The Rotation Algebra as Inner Derivations
 
@@ -26,13 +26,13 @@ The article is organized as follows. The rotation algebra is constructed as the 
 The rotation group acts on the algebra by inner automorphisms. For a unit quaternion $Q$ with $Q\bar{Q}=e_0$, the map
 
 $$
-R_Q:\;X\longmapsto QXQ^{-1}=\bar{Q}XQ
+R_Q:\;\tilde{Q}\longmapsto Q\tilde{Q}Q^{-1}=\bar{Q}\tilde{Q}Q
 $$
 
 is an algebra automorphism that fixes the center, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{M}_-$ and $\mathbb{M}_+$: conjugation preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=e^{\theta\,e_k/2}$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
 
 $$
-\delta_kX = \tfrac{\theta}{2}\,[e_k,X] = \tfrac{\theta}{2}\,\mathrm{ad}_{e_k}X .
+\delta_k\tilde{Q} = \tfrac{\theta}{2}\,[e_k,\tilde{Q}] = \tfrac{\theta}{2}\,\mathrm{ad}_{e_k}\tilde{Q} .
 $$
 
 The three derivations $\mathrm{ad}_{e_k}$ span the Lie algebra of the rotation group, and the Hermitian angular-momentum operator is the corresponding anti-Hermitian generator multiplied by $i$:
@@ -41,7 +41,7 @@ $$
 J_k = \tfrac12\,\mathrm{ad}_{ie_k} = \tfrac{i}{2}\,\mathrm{ad}_{e_k}.
 $$
 
-The factor $i$ is the usual one that turns the anti-Hermitian generator $e_k$ of the unitary rotation into a Hermitian observable. The three $J_k$ act on the material sector by bracketing, $X\mapsto[J_k,X]$, and they are derivations: the Leibniz rule holds, so the action on a product is the sum of the actions on the factors.
+The factor $i$ is the usual one that turns the anti-Hermitian generator $e_k$ of the unitary rotation into a Hermitian observable. The three $J_k$ act on the material sector by bracketing, $\tilde{Q}\mapsto[J_k,\tilde{Q}]$, and they are derivations: the Leibniz rule holds, so the action on a product is the sum of the actions on the factors.
 
 ### The Adjoint Action Preserves the Material Sector
 
@@ -212,7 +212,7 @@ The symmetric part of the square has dimension $6$ and contains the spin-$2$ and
 The additivity of the angular momentum across factors is the Leibniz rule in disguise. Because each $J_k$ is a derivation, its action on a product of material vectors is the sum of its actions on the factors,
 
 $$
-J_k(X_1X_2\cdots X_s) = \sum_{a=1}^{s}X_1\cdots (J_kX_a)\cdots X_s,
+J_k(\tilde{Q}_1\tilde{Q}_2\cdots \tilde{Q}_s) = \sum_{a=1}^{s}\tilde{Q}_1\cdots (J_k\tilde{Q}_a)\cdots \tilde{Q}_s,
 $$
 
 which is exactly the statement that the total internal angular momentum of a composite is the sum of the internal angular momenta of its parts. The rule that combines the angular momenta of composite systems is therefore not imposed on the algebra from outside; it is the derivation property, and the higher integer-spin carriers inherit their transformation law from it.
@@ -288,8 +288,8 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ | Material sector (anti-Hermitian) |
 | $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ | Informational sector (Hermitian) |
 | $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ | Vector part of the material sector; spin-one carrier |
-| $\mathrm{ad}_XY=[X,Y]$ | Inner derivation (adjoint action) |
-| $R_Q(X)=QXQ^{-1}$ | Inner automorphism; rotation for $Q=e^{\theta e_k/2}$ |
+| $\mathrm{ad}_{\tilde{Q}}\tilde{R}=[\tilde{Q},\tilde{R}]$ | Inner derivation (adjoint action) |
+| $R_Q(\tilde{Q})=Q\tilde{Q}Q^{-1}$ | Inner automorphism; rotation for $Q=e^{\theta e_k/2}$ |
 | $J_k=\tfrac12\mathrm{ad}_{ie_k}$ | Hermitian angular-momentum (spin) generator |
 | $\mathbf{L}=\tilde{x}\times\tilde{p}$, $\mathbf{S}_k=J_k$ | Orbital and internal parts; $\mathbf{J}=\mathbf{L}+\mathbf{S}$ |
 | $[J_i,J_j]=i\varepsilon_{ijk}J_k$ | Rotation algebra (verified, residual zero) |

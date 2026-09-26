@@ -14,7 +14,7 @@ That much is already recorded, in one line, by the companion article *The Empiri
 
 The article is a **limitation statement**, of the same species as the companion articles *Conventions in the Biquaternion Universe* and *The Empirical Status of the Biquaternion Framework*: its content is what the algebra supplies and what it does not. It adds no physics, and it derives no constant. It is written because the corpus makes the dimensional remarks piecemeal — the Stern–Gerlach article records that $\hbar$ is supplied from outside, the electron article that the mass and the charge are inserted, the $g-2$ article that the algebra fixes the ratio and not the scale — and those remarks have no common home. The home is here.
 
-The conventions are those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary is $i$, central, with $i^2=-1$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar, real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ (real scalar, imaginary vector), the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$, the trace is normalized by $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The material coordinate is $\tilde{X}=ict\,e_0+\mathbf{x}$, the biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the series d'Alembertian is $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
+The conventions are those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary is $i$, central, with $i^2=-1$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar, real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ (real scalar, imaginary vector), the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$, the trace is normalized by $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The material coordinate is $\tilde{Q}=ict\,e_0+\mathbf{x}$, the biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the series d'Alembertian is $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
 
 The companion articles used below are:
 
@@ -49,7 +49,7 @@ $$
 (\lambda\tilde{A})(\lambda\tilde{B})=\lambda^2\tilde{A}\tilde{B}\neq\lambda(\tilde{A}\tilde{B}).
 $$
 
-This is worth stating carefully, because the algebraic fact has a physical reading. The multiplication of the algebra is not invariant under a rescaling of its elements — the product of two rescaled elements acquires a factor $\lambda^2$ — so the scale of an element of the algebra is not a redundancy of the algebra. It is data the algebra does not contain, and which must therefore be supplied by the identification that says what the element represents. When the framework says that $\tilde{X}=ict\,e_0+\mathbf{x}$ *is* a displacement in metres, it is supplying that data. Nothing in the algebra did it.
+This is worth stating carefully, because the algebraic fact has a physical reading. The multiplication of the algebra is not invariant under a rescaling of its elements — the product of two rescaled elements acquires a factor $\lambda^2$ — so the scale of an element of the algebra is not a redundancy of the algebra. It is data the algebra does not contain, and which must therefore be supplied by the identification that says what the element represents. When the framework says that $\tilde{Q}=ict\,e_0+\mathbf{x}$ *is* a displacement in metres, it is supplying that data. Nothing in the algebra did it.
 
 There is an exception worth noting, because it is the only place where the algebra speaks about a scale at all. An element's norm form is homogeneous of degree two under the rescaling, $N(\lambda\tilde{Q})=\lambda^2N(\tilde{Q})$, so a *ratio* of norm forms is rescaling-invariant. The framework therefore has access to ratios and to pure numbers, and to nothing dimensionful. This is the algebraic root of the dichotomy that organises the whole article and is stated flatly in the summary: **the framework's outputs are pure numbers; its inputs are dimensionful.**
 
@@ -72,13 +72,13 @@ The constraint is **per element, and not across elements**. The norm form of a f
 Apply the constraint to a displacement. A displacement must have the four components of a displacement — that is, all four of length — since only then is its norm form a length squared, the invariant interval. The material sector's temporal coordinate therefore has to be a length, and the framework writes it
 
 $$
-\tilde{X}=ict\,e_0+\mathbf{x}, \qquad \mathbf{x}=x e_1+y e_2+z e_3 ,
+\tilde{Q}=ict\,e_0+\mathbf{x}, \qquad \mathbf{x}=x e_1+y e_2+z e_3 ,
 $$
 
-with $ict$ a length because $c$ is a speed. The alternative, $\tilde{X}=it\,e_0+\mathbf{x}$, gives
+with $ict$ a length because $c$ is a speed. The alternative, $\tilde{Q}=it\,e_0+\mathbf{x}$, gives
 
 $$
-N(\tilde{X})=(it)^2+\mathbf{x}^2=-t^2+\mathbf{x}^2 ,
+N(\tilde{Q})=(it)^2+\mathbf{x}^2=-t^2+\mathbf{x}^2 ,
 $$
 
 a sum of a time squared and a length squared, which is not a quadratic form on any single space. The same requirement, applied to the four-velocity $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$, gives $N(\tilde{U})=-c^2$; applied to the four-momentum $\tilde{P}=m\tilde{U}$ it gives the mass shell $N(\tilde{P})=-m^2c^2$. Three different elements, three different units, one constraint.
@@ -344,7 +344,7 @@ The framework's guideline follows from the dichotomy: a dimensionful constant is
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (imaginary scalar, real vector) and informational (real scalar, imaginary vector) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; center |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Norm form; a sum of four commensurable squares |
-| $\tilde{X}=ict\,e_0+\mathbf{x}$ | Material coordinate; the temporal coefficient is a length |
+| $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material coordinate; the temporal coefficient is a length |
 | $\tilde{\nabla}=e_0\partial_{ict}+\nabla$ | Biquaternionic gradient; coefficients of inverse length |
 | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ | d'Alembertian |
 | $\mu=mc/\hbar$ | Inverse Compton length; the mass parameter as an inverse length |

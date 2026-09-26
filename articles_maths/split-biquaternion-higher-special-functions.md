@@ -301,23 +301,23 @@ are the split biquaternion analogues of holomorphic functions and harmonic funct
 The **Cauchy kernel** is the fundamental solution of the gradient:
 
 $$
-\tilde{G}(\tilde{X}) = \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^4}, \qquad \tilde{X} \neq 0.
+\tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$
 
 It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions. In the idempotent basis, it decomposes:
 
 $$
-\tilde{G}(\tilde{X}) = \tilde{G}(\tilde{X}_+) e_+ + \tilde{G}(\tilde{X}_-) e_-,
+\tilde{G}(\tilde{Q}) = \tilde{G}(\tilde{Q}_+) e_+ + \tilde{G}(\tilde{Q}_-) e_-,
 $$
 
-where $\tilde{G}(\tilde{X}_\pm)$ is the quaternion Cauchy kernel of the component.
+where $\tilde{G}(\tilde{Q}_\pm)$ is the quaternion Cauchy kernel of the component.
 
 ### The Poisson Kernel
 
 The **Poisson kernel** for the ball of radius $r$ is
 
 $$
-P(\tilde{X}, \tilde{Y}) = \frac{r^2 - \|\tilde{X}\|_E^2}{2\pi^2 r \|\tilde{X} - \tilde{Y}\|_E^4}, \qquad \|\tilde{X}\|_E < r, \quad \|\tilde{Y}\|_E = r.
+P(\tilde{Q}, \tilde{Y}) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde{Y}\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde{Y}\|_E = r.
 $$
 
 It solves the Dirichlet problem for the d'Alembertian on the ball, and it decomposes in the idempotent basis into the quaternion Poisson kernels of the two components.
@@ -327,7 +327,7 @@ It solves the Dirichlet problem for the d'Alembertian on the ball, and it decomp
 The **Green's function** for the d'Alembertian on a domain $\Omega$ satisfies
 
 $$
-\Box_{\tilde{X}} G(\tilde{X}, \tilde{Y}) = \delta(\tilde{X} - \tilde{Y}) e_0, \qquad G(\tilde{X}, \tilde{Y}) = 0 \text{ for } \tilde{X} \in \partial \Omega.
+\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{Y}) = \delta(\tilde{Q} - \tilde{Y}) e_0, \qquad G(\tilde{Q}, \tilde{Y}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
 $$
 
 Its construction is standard from the fundamental solution, and it decomposes in the idempotent basis.

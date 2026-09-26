@@ -125,7 +125,7 @@ $$
 (ie_1)(ie_2)=i^2e_1e_2=-e_3\in\mathbb{M}_-,
 $$
 
-whereas a grading would require $\mathbb{M}_+\cdot\mathbb{M}_+\subseteq\mathbb{M}_+$. What the splitting *does* grade is the **symmetrized** product: for $\tilde Q,\tilde R$ Hermitian the anticommutator $\{\tilde Q,\tilde R\}$ is Hermitian, for $\tilde X,\tilde Y$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{M}_\pm$ grading" is a phrase the corpus uses loosely.
+whereas a grading would require $\mathbb{M}_+\cdot\mathbb{M}_+\subseteq\mathbb{M}_+$. What the splitting *does* grade is the **symmetrized** product: for $\tilde Q,\tilde R$ Hermitian the anticommutator $\{\tilde Q,\tilde R\}$ is Hermitian, for $\tilde{Q},\tilde Y$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{M}_\pm$ grading" is a phrase the corpus uses loosely.
 
 **2. The number grading.** The Fock space is $\mathbb{N}$-graded by total particle number, with $\hat N$ the degree operator. For fermions the degree is bounded per mode by Pauli exclusion; for bosons it is unbounded. This grading lives on the Fock space, never on $\mathbb{B}$.
 

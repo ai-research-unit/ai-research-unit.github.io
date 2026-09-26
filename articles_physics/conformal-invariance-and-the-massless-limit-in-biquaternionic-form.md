@@ -6,11 +6,11 @@ A massless relativistic field has a larger symmetry than a massive one. The Poin
 
 Three things are established. First, the **transformation law**. The massless scalar field of the framework transforms with conformal weight $\Delta = 1$,
 $$
-\tilde{\Phi}(\tilde{X}) \longmapsto \Omega(\tilde{X})^{\Delta}\,\tilde{\Phi}\bigl(\tilde{X}'\bigr) ,
+\tilde{\Phi}(\tilde{Q}) \longmapsto \Omega(\tilde{Q})^{\Delta}\,\tilde{\Phi}\bigl(\tilde{Q}'\bigr) ,
 $$
-where $\Omega$ is the conformal factor and $\tilde{X}'$ is the image point; with this weight the massless equation $\Box\tilde{\Phi} = 0$ is carried into itself. The weight is not free: the identity
+where $\Omega$ is the conformal factor and $\tilde{Q}'$ is the image point; with this weight the massless equation $\Box\tilde{\Phi} = 0$ is carried into itself. The weight is not free: the identity
 $$
-\Box_{\tilde{X}}\Bigl[\Omega(\tilde{X})^{\Delta}\,\phi\bigl(\tilde{X}'\bigr)\Bigr] = \Omega(\tilde{X})^{\Delta+2}\,\bigl(\Box_{\tilde{X}'}\phi\bigr)\bigl(\tilde{X}'\bigr)
+\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}'\bigr)\Bigr] = \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}'}\phi\bigr)\bigl(\tilde{Q}'\bigr)
 $$
 holds at $\Delta = 1$ and fails at every other weight, and it was verified on a superposition of two smooth test fields to a relative accuracy of $10^{-16}$ at the correct weight, with a residual of order unity at the wrong one. Second, the **massless limit**. The mass enters the equation as the single scale in $\Box - \mu^2$, and the limit $\mu\to0$ is the limit in which the conformal weight exists; algebraically it is the limit in which the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell momentum dropping from rank four to rank two. Third, the **breaking**. Improving the stress–energy tensor makes its trace proportional to the mass term, $\Theta^\mu{}_\mu \propto \mu^2\tilde{\Phi}^2$ on shell, the coefficient depending only on the normalisation of the kinetic term — so the trace is the local measure of the conformal symmetry's failure, and it vanishes exactly in the massless limit.
 
@@ -52,11 +52,11 @@ with $x^2 = \eta_{\rho\sigma}x^\rho x^\sigma$. The conformal group contains the 
 
 ### What the algebra carries, and what it does not
 
-Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $J_k = e_k$ and the boosts $K_k = ie_k$, and the Lorentz group acts by $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_0$, which scales the norm form without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
+Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $J_k = e_k$ and the boosts $K_k = ie_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_0$, which scales the norm form without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
-I(\tilde{X}) = \overline{\tilde{X}}^{-1} = \frac{\bar{\tilde{X}}}{N(\tilde{X})} ,
+I(\tilde{Q}) = \overline{\tilde{Q}}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})} ,
 \qquad
-N\bigl(I(\tilde{X})\bigr) = \frac{1}{N(\tilde{X})} .
+N\bigl(I(\tilde{Q})\bigr) = \frac{1}{N(\tilde{Q})} .
 $$
 The companion establishes the count precisely: six generators inside, one expressible, eight outside. The invariance derived below is therefore a statement about the field equations under conformal transformations of spacetime, not a statement that the conformal group is a subgroup of the algebra's own multiplication group, and the two must not be conflated. The reason the framework is nevertheless the natural setting is that the **invariant object** of the conformal group is native to the algebra: it is the zero set of the norm form, and the inversion is built from the norm form by division.
 
@@ -64,19 +64,19 @@ The companion establishes the count precisely: six generators inside, one expres
 
 One convention note is needed before the weight is used, because two quadratic forms are in play. The conformal group is the conformal group of Minkowski space, and its invariant interval is
 $$
-x^2 = \eta_{\mu\nu}x^\mu x^\nu = -c^2t^2 + \mathbf{x}^2 = N(\tilde{X}) ,
+x^2 = \eta_{\mu\nu}x^\mu x^\nu = -c^2t^2 + \mathbf{x}^2 = N(\tilde{Q}) ,
 $$
-with $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the level-two $ict$ metric of the conventions article. The operator $\Box = \partial_{ict}^2 + \Delta$, by contrast, is the **Euclidean** four-dimensional Laplacian in the real coordinates $(ict,\mathbf{x})$, so the differential operator's own "norm" is $\rho^2 = (ict)^2+\mathbf{x}^2$, which equals the level-one form on the $ict$ coordinates. The two agree as functions of the coordinates — both are $N(\tilde{X})$ — but they differ in what they are: one is the Minkowski interval whose zero set is the light cone, the other is the Euclidean distance-squared of the continued coordinates. The conformal transformations preserve the former's zero set; the conformal factor $\Omega$ is defined by the scaling of the former; and the box operator's covariance identity is a statement about the latter. Keeping the two readings apart is what prevents the sign confusions the conventions article warns about.
+with $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the level-two $ict$ metric of the conventions article. The operator $\Box = \partial_{ict}^2 + \Delta$, by contrast, is the **Euclidean** four-dimensional Laplacian in the real coordinates $(ict,\mathbf{x})$, so the differential operator's own "norm" is $\rho^2 = (ict)^2+\mathbf{x}^2$, which equals the level-one form on the $ict$ coordinates. The two agree as functions of the coordinates — both are $N(\tilde{Q})$ — but they differ in what they are: one is the Minkowski interval whose zero set is the light cone, the other is the Euclidean distance-squared of the continued coordinates. The conformal transformations preserve the former's zero set; the conformal factor $\Omega$ is defined by the scaling of the former; and the box operator's covariance identity is a statement about the latter. Keeping the two readings apart is what prevents the sign confusions the conventions article warns about.
 
 ### Conformal weight
 
-A conformal transformation is a coordinate change $\tilde{X}\mapsto\tilde{X}'$ with
+A conformal transformation is a coordinate change $\tilde{Q}\mapsto\tilde{Q}'$ with
 $$
-d\tilde{X}'\,\overline{d\tilde{X}'} = \Omega(\tilde{X})^{2}\,d\tilde{X}\,\overline{d\tilde{X}} ,
+d\tilde{Q}'\,\overline{d\tilde{Q}'} = \Omega(\tilde{Q})^{2}\,d\tilde{Q}\,\overline{d\tilde{Q}} ,
 $$
-so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{X}' = \bar{\tilde{X}}/N(\tilde{X})$, whose interval is scaled by $1/N^2$, has $\Omega = 1/N$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{X})) = 1/\Omega(\tilde{X})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
+so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}' = \bar{\tilde{Q}}/N(\tilde{Q})$, whose interval is scaled by $1/N^2$, has $\Omega = 1/N$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
 $$
-\phi'(\tilde{X}) = \Omega(\tilde{X})^{\Delta}\,\phi\bigl(\tilde{X}'\bigr) ,
+\phi'(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}'\bigr) ,
 $$
 and the transformation is a symmetry of the equation $(\Box - \mu^2)\phi = 0$ if the equation is carried into itself. The weight is a property of the equation together with the dimension: in four dimensions the massless scalar has $\Delta = 1$, which is the value forced by the requirement that the box operator's transformation law be consistent. The massive equation has no consistent weight, because under a conformal transformation the kinetic term acquires the factor $\Omega^{\Delta+2}$ while the mass term acquires only $\Omega^{\Delta}$ — but the mass *coefficient* is a constant and does not transform, so the two terms scale differently and no choice of $\Delta$ preserves both. This is the algebraic statement of the symmetry breaking, and it is what the rest of the article quantifies.
 
@@ -84,46 +84,46 @@ and the transformation is a symmetry of the equation $(\Box - \mu^2)\phi = 0$ if
 
 ### The dilation
 
-The dilation is $\tilde{X}\mapsto\tilde{X}' = \lambda\tilde{X}$, whose interval is scaled by $\lambda^2$ and which therefore has the constant conformal factor $\Omega = \lambda$; read in the inverse direction, $\Omega = \lambda^{-1}$. For the rescaled field
+The dilation is $\tilde{Q}\mapsto\tilde{Q}' = \lambda\tilde{Q}$, whose interval is scaled by $\lambda^2$ and which therefore has the constant conformal factor $\Omega = \lambda$; read in the inverse direction, $\Omega = \lambda^{-1}$. For the rescaled field
 $$
-\phi_\lambda(\tilde{X}) = \lambda^{-\Delta}\,\phi(\lambda^{-1}\tilde{X})
+\phi_\lambda(\tilde{Q}) = \lambda^{-\Delta}\,\phi(\lambda^{-1}\tilde{Q})
 $$
 the chain rule gives
 $$
-\Box\,\phi_\lambda = \lambda^{-(\Delta+2)}\,\bigl(\Box\phi\bigr)\bigl(\lambda^{-1}\tilde{X}\bigr) ,
+\Box\,\phi_\lambda = \lambda^{-(\Delta+2)}\,\bigl(\Box\phi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
 $$
 so $\phi_\lambda$ solves $\Box\phi_\lambda = 0$ whenever $\phi$ does, for **every** weight $\Delta$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The identity was checked numerically by comparing the two sides at three random points, with agreement to $2\times10^{-8}$. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
 
 ### The inversion and the conformal Laplacian
 
-For the inversion $\tilde{X}' = I(\tilde{X}) = \bar{\tilde{X}}/N(\tilde{X})$, the conformal factor is $\Omega(\tilde{X}) = 1/N(\tilde{X})$, and the transformation law of the box operator is
+For the inversion $\tilde{Q}' = I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$, the conformal factor is $\Omega(\tilde{Q}) = 1/N(\tilde{Q})$, and the transformation law of the box operator is
 $$
-\Box_{\tilde{X}}\Bigl[\Omega(\tilde{X})^{\Delta}\,\phi\bigl(\tilde{X}'\bigr)\Bigr]
-= \Omega(\tilde{X})^{\Delta+2}\,\bigl(\Box_{\tilde{X}'}\phi\bigr)\bigl(\tilde{X}'\bigr)
+\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}'\bigr)\Bigr]
+= \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}'}\phi\bigr)\bigl(\tilde{Q}'\bigr)
 \qquad\text{at } \Delta = 1 ,
 $$
 with a residual proportional to $(\Delta-1)$ at other weights. The identity is the sharp statement of the massless scalar's conformal invariance, and it was verified on a superposition of two Gaussians in the four $ict$ coordinates: at $\Delta = 1$ the two sides agree to a relative accuracy of $10^{-16}$ on six random points away from the origin, while at $\Delta = 1/2$ the residual is of order unity. The two ends of the identity are the two ways of reading it: as an operator statement, it says $\Box$ is carried by the inversion into $\Omega^2\Box$; as a solution statement, it says the field $\Omega^{\Delta}\phi\circ I$ solves the massless equation whenever $\phi$ does.
 
 The elementary consequence is that the inversion image of the constant is a solution,
 $$
-\Box\Bigl[\frac{1}{N(\tilde{X})}\Bigr] = 0 \quad \text{off the origin},
+\Box\Bigl[\frac{1}{N(\tilde{Q})}\Bigr] = 0 \quad \text{off the origin},
 $$
-which was verified numerically at five random points with a maximum residual of $1.5\times10^{-7}$. The function $1/N(\tilde{X}) = 1/\rho^2$ is the massless invariant Green's function of the operator article, and the computation says that it is *also* the inversion image of the constant field, which is the first sign that the kernel and the conformal structure are the same object.
+which was verified numerically at five random points with a maximum residual of $1.5\times10^{-7}$. The function $1/N(\tilde{Q}) = 1/\rho^2$ is the massless invariant Green's function of the operator article, and the computation says that it is *also* the inversion image of the constant field, which is the first sign that the kernel and the conformal structure are the same object.
 
 ### The special conformal transformations
 
 The special conformal transformation is a translation sandwiched between two inversions,
 $$
-\tilde{X} \longmapsto I\bigl(I(\tilde{X}) + \bar{\tilde{A}}\bigr) ,
+\tilde{Q} \longmapsto I\bigl(I(\tilde{Q}) + \bar{\tilde{A}}\bigr) ,
 \qquad \tilde{A} \in \mathbb{M}_- ,
 $$
-the reversal on the parameter compensating the parity that the framework's inversion $I(\tilde{X}) = \bar{\tilde{X}}/N(\tilde{X})$ carries. In finite form the map and its conformal factor are
+the reversal on the parameter compensating the parity that the framework's inversion $I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$ carries. In finite form the map and its conformal factor are
 $$
-\tilde{X}' = \frac{\tilde{X} + \tilde{A}\,N(\tilde{X})}{1 + 2\,\mathrm{Sc}\bigl(\bar{\tilde{A}}\tilde{X}\bigr) + N(\tilde{A})N(\tilde{X})} ,
+\tilde{Q}' = \frac{\tilde{Q} + \tilde{A}\,N(\tilde{Q})}{1 + 2\,\mathrm{Sc}\bigl(\bar{\tilde{A}}\tilde{Q}\bigr) + N(\tilde{A})N(\tilde{Q})} ,
 \qquad
-\Omega(\tilde{X}) = \frac{1}{1 + 2\,\mathrm{Sc}\bigl(\bar{\tilde{A}}\tilde{X}\bigr) + N(\tilde{A})N(\tilde{X})} ,
+\Omega(\tilde{Q}) = \frac{1}{1 + 2\,\mathrm{Sc}\bigl(\bar{\tilde{A}}\tilde{Q}\bigr) + N(\tilde{A})N(\tilde{Q})} ,
 $$
-so that the conformal factor is the reciprocal of the finite map's denominator; this is the companion's fractional form with the standard parameter $\tilde{A}$, reproducing $x'^\mu = (x^\mu + a^\mu x^2)/(1 + 2a\cdot x + a^2x^2)$. The pair was verified by measuring $\Omega^2 = N(d\tilde{X}')/N(d\tilde{X})$ on finite differences in the four coordinate directions, agreement holding to the discretisation error in every direction and for the unbarred translation failing by a factor that varies from point to point. For $\tilde{A}\to0$ the map is the identity and $\Omega\to1$; for $\tilde{A}\to\infty$ it degenerates to the constant $I(\bar{\tilde{A}}) = \tilde{A}/N(\tilde{A})$, while $\Omega$ tends to a constant multiple of the inversion's $1/N(\tilde{X})$. Because the inversion carries the box operator with weight $\Delta=1$ and the translation is a symmetry of the massless equation, the special conformal transformation is a symmetry as well, and the four $\mathcal{K}_\mu$ are conserved. The companion derives the fractional form and the conformal factor and shows that the generator is
+so that the conformal factor is the reciprocal of the finite map's denominator; this is the companion's fractional form with the standard parameter $\tilde{A}$, reproducing $x'^\mu = (x^\mu + a^\mu x^2)/(1 + 2a\cdot x + a^2x^2)$. The pair was verified by measuring $\Omega^2 = N(d\tilde{Q}')/N(d\tilde{Q})$ on finite differences in the four coordinate directions, agreement holding to the discretisation error in every direction and for the unbarred translation failing by a factor that varies from point to point. For $\tilde{A}\to0$ the map is the identity and $\Omega\to1$; for $\tilde{A}\to\infty$ it degenerates to the constant $I(\bar{\tilde{A}}) = \tilde{A}/N(\tilde{A})$, while $\Omega$ tends to a constant multiple of the inversion's $1/N(\tilde{Q})$. Because the inversion carries the box operator with weight $\Delta=1$ and the translation is a symmetry of the massless equation, the special conformal transformation is a symmetry as well, and the four $\mathcal{K}_\mu$ are conserved. The companion derives the fractional form and the conformal factor and shows that the generator is
 $$
 \mathcal{K}_\mu = 2x_\mu x^\nu\partial_\nu - x^2\partial_\mu ,
 $$
@@ -131,23 +131,23 @@ the standard expression; the point for this article is that the four extra symme
 
 ### The finite transformations and the compactification
 
-The four families can be written in finite form, and their composition is what makes them a group. The Lorentz transformations are $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$; the dilation is $\tilde{X}\mapsto\lambda\tilde{X}$; the translation is $\tilde{X}\mapsto\tilde{X}+\tilde{A}$; and the inversion is $\tilde{X}\mapsto\bar{\tilde{X}}/N(\tilde{X})$. A special conformal transformation is a translation between two inversions, and the composition law of the four families closes on the fifteen parameters. Two features of the finite maps belong to this article's subject. First, the inversion is **involutive**, $I(I(\tilde{X})) = \tilde{X}$ off the null cone, and its conformal factor satisfies $\Omega(I(\tilde{X})) = 1/\Omega(\tilde{X}) = N(\tilde{X})$; the weight-one transformation law is consistent with this involution, which was checked by composing the map with itself on random off-cone points. Second, the maps are only **locally defined** on $\mathbb{M}_-$: the inversion is singular where $N(\tilde{X}) = 0$, and the special conformal transformation is singular where its denominator vanishes. The conformal group is globally defined on the conformal compactification, in which the light cone is adjoined as a boundary and the inversions become everywhere defined; the companion's boundary statement and this article's field-theoretic statements both live on the locally defined maps, and the compactification is developed in the twistor literature rather than here.
+The four families can be written in finite form, and their composition is what makes them a group. The Lorentz transformations are $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$; the dilation is $\tilde{Q}\mapsto\lambda\tilde{Q}$; the translation is $\tilde{Q}\mapsto\tilde{Q}+\tilde{A}$; and the inversion is $\tilde{Q}\mapsto\bar{\tilde{Q}}/N(\tilde{Q})$. A special conformal transformation is a translation between two inversions, and the composition law of the four families closes on the fifteen parameters. Two features of the finite maps belong to this article's subject. First, the inversion is **involutive**, $I(I(\tilde{Q})) = \tilde{Q}$ off the null cone, and its conformal factor satisfies $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q}) = N(\tilde{Q})$; the weight-one transformation law is consistent with this involution, which was checked by composing the map with itself on random off-cone points. Second, the maps are only **locally defined** on $\mathbb{M}_-$: the inversion is singular where $N(\tilde{Q}) = 0$, and the special conformal transformation is singular where its denominator vanishes. The conformal group is globally defined on the conformal compactification, in which the light cone is adjoined as a boundary and the inversions become everywhere defined; the companion's boundary statement and this article's field-theoretic statements both live on the locally defined maps, and the compactification is developed in the twistor literature rather than here.
 
 ## The Conformal Two-Point Function
 
 The massless invariant Green's function of the operator article,
 $$
-G_{\mathrm{inv}}(\tilde{X}) = \frac{1}{4\pi^2\rho^2} = \frac{1}{4\pi^2 N(\tilde{X})} ,
+G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} = \frac{1}{4\pi^2 N(\tilde{Q})} ,
 $$
 is the conformal two-point function of a field of weight $\Delta = 1$. Two properties make this identification exact. First, it is the unique function of the interval with the right scaling: the conformal covariance of a two-point function requires
 $$
-\bigl\langle\phi(\tilde{X})\phi(\tilde{Y})\bigr\rangle = \frac{\text{const}}{N(\tilde{X}-\tilde{Y})^{\Delta}} \qquad\text{with } \Delta = 1 ,
+\bigl\langle\phi(\tilde{Q})\phi(\tilde{Y})\bigr\rangle = \frac{\text{const}}{N(\tilde{Q}-\tilde{Y})^{\Delta}} \qquad\text{with } \Delta = 1 ,
 $$
-and the kernel has exactly this form, since $G_{\mathrm{inv}}(\tilde{X}-\tilde{Y}) = 1/(4\pi^2N(\tilde{X}-\tilde{Y}))$. Second, it obeys the inversion covariance of a weight-one two-point function,
+and the kernel has exactly this form, since $G_{\mathrm{inv}}(\tilde{Q}-\tilde{Y}) = 1/(4\pi^2N(\tilde{Q}-\tilde{Y}))$. Second, it obeys the inversion covariance of a weight-one two-point function,
 $$
-G\bigl(I(\tilde{X})-I(\tilde{Y})\bigr) = N(\tilde{X})^{\Delta}N(\tilde{Y})^{\Delta}\,G(\tilde{X}-\tilde{Y}) \Big|_{\Delta=1} ,
+G\bigl(I(\tilde{Q})-I(\tilde{Y})\bigr) = N(\tilde{Q})^{\Delta}N(\tilde{Y})^{\Delta}\,G(\tilde{Q}-\tilde{Y}) \Big|_{\Delta=1} ,
 $$
-which was verified on two hundred random off-cone pairs with a maximum relative error of $5\times10^{-16}$. The consistency of the two statements is exact: $|I(\tilde{X})-I(\tilde{Y})|^2 = N(\tilde{X}-\tilde{Y})/(N(\tilde{X})N(\tilde{Y}))$, so the two-point function's covariance follows from the geometry of the inversion rather than being imposed. The two-point function of the massless theory is therefore not merely a Green's function that happens to be scale invariant: it is the unique conformally covariant two-point function, and its exponent is the conformal weight of the field. This is the sharpest link between the operator article and the conformal statement: the invariant kernel *is* the conformal two-point function, and the massless limit of the massive kernel is the limit in which the conformal weight exists.
+which was verified on two hundred random off-cone pairs with a maximum relative error of $5\times10^{-16}$. The consistency of the two statements is exact: $|I(\tilde{Q})-I(\tilde{Y})|^2 = N(\tilde{Q}-\tilde{Y})/(N(\tilde{Q})N(\tilde{Y}))$, so the two-point function's covariance follows from the geometry of the inversion rather than being imposed. The two-point function of the massless theory is therefore not merely a Green's function that happens to be scale invariant: it is the unique conformally covariant two-point function, and its exponent is the conformal weight of the field. This is the sharpest link between the operator article and the conformal statement: the invariant kernel *is* the conformal two-point function, and the massless limit of the massive kernel is the limit in which the conformal weight exists.
 
 ## The Massless Limit
 
@@ -157,11 +157,11 @@ The massive operator is $\Box - \mu^2$ with $\mu = mc/\hbar$, and $\mu$ is the o
 
 ### The effective mass under dilation
 
-The breaking can be exhibited in one line. If $\phi$ solves the massive equation, $(\Box-\mu^2)\phi=0$, then the dilated field $\phi_\lambda(\tilde{X}) = \lambda^{-\Delta}\phi(\lambda^{-1}\tilde{X})$ solves the *dilated* massive equation,
+The breaking can be exhibited in one line. If $\phi$ solves the massive equation, $(\Box-\mu^2)\phi=0$, then the dilated field $\phi_\lambda(\tilde{Q}) = \lambda^{-\Delta}\phi(\lambda^{-1}\tilde{Q})$ solves the *dilated* massive equation,
 $$
 \bigl(\Box - \lambda^{-2}\mu^2\bigr)\phi_\lambda = 0 ,
 $$
-because $\Box_{\tilde{X}} = \lambda^{-2}\Box_{\lambda^{-1}\tilde{X}}$ and the mass term is a constant. The computation was checked on a massive plane wave: with $\mu = 0.7$ and $\lambda = 2$ the rescaled field has $\Box\phi_\lambda/\phi_\lambda = 0.1225 = \mu^2/\lambda^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\lambda$ returns the original equation** unless $\mu = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $\mu^2$ into a point-dependent multiple of itself, and only at $\mu=0$ is the set of solutions preserved.
+because $\Box_{\tilde{Q}} = \lambda^{-2}\Box_{\lambda^{-1}\tilde{Q}}$ and the mass term is a constant. The computation was checked on a massive plane wave: with $\mu = 0.7$ and $\lambda = 2$ the rescaled field has $\Box\phi_\lambda/\phi_\lambda = 0.1225 = \mu^2/\lambda^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\lambda$ returns the original equation** unless $\mu = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $\mu^2$ into a point-dependent multiple of itself, and only at $\mu=0$ is the set of solutions preserved.
 
 ### The symbol on the light cone and the rank drop
 
@@ -239,7 +239,7 @@ which is the local statement of the invariance. The Proca field, by contrast, ha
 
 The spin-half field completes the pattern, and its conformal weight is the other standard value. In four dimensions the massless Dirac equation is conformally invariant with weight $\Delta = 3/2$,
 $$
-\tilde{\Psi}'(\tilde{X}) = \Omega(\tilde{X})^{3/2}\,\tilde{\Psi}\bigl(\tilde{X}'\bigr) ,
+\tilde{\Psi}'(\tilde{Q}) = \Omega(\tilde{Q})^{3/2}\,\tilde{\Psi}\bigl(\tilde{Q}'\bigr) ,
 $$
 the exponent being the standard one for a spinor in four dimensions, fixed by the conformal covariance of the first-order operator: the standard identity is
 $$
@@ -256,9 +256,9 @@ The symmetry statement has a worked consequence in the article that follows this
 
 Collecting the algebraic content, the conformal statement of the framework has four parts, and each is a statement about the norm form.
 
-The **weight** is the exponent of the norm form in the transformation law: a field of weight $\Delta$ transforms by $N(\tilde{X})^{-\Delta}$ under the inversion, and the massless scalar's weight is $\Delta = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
+The **weight** is the exponent of the norm form in the transformation law: a field of weight $\Delta$ transforms by $N(\tilde{Q})^{-\Delta}$ under the inversion, and the massless scalar's weight is $\Delta = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
 
-The **inversion** is the norm form's division, $I(\tilde{X}) = \bar{\tilde{X}}/N(\tilde{X})$, with the parity correction that makes it the standard map. It is the one conformal operation that the algebra carries as an algebraic operation, and the dilation and the special conformal transformations are built from it by composition with the translation and the scaling.
+The **inversion** is the norm form's division, $I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$, with the parity correction that makes it the standard map. It is the one conformal operation that the algebra carries as an algebraic operation, and the dilation and the special conformal transformations are built from it by composition with the translation and the scaling.
 
 The **null cone** is the norm form's zero set. All conformal transformations preserve it and only it; it is the single invariant object of the group that is native to the algebra, and the massless limit is the limit in which the on-shell momentum lies on it and becomes a zero divisor.
 
@@ -266,15 +266,15 @@ The **breaking** is the mass term, and it is measured by the trace, $\Theta^\mu{
 
 ## Summary
 
-The massless relativistic field of the framework has the conformal symmetry: the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the Lorentz generators, the translations, the dilation, and the special conformal generators $\mathcal{K}_\mu$, is a symmetry of the massless wave equation and of the massless Maxwell field, and is broken by the mass term alone. The algebra carries the conformal structure — the null cone as the norm form's zero set, the inversion as $I(\tilde{X}) = \bar{\tilde{X}}/N(\tilde{X})$ — but not the group; six of the fifteen generators are algebra elements, and the companion article on the conformal group establishes the count.
+The massless relativistic field of the framework has the conformal symmetry: the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the Lorentz generators, the translations, the dilation, and the special conformal generators $\mathcal{K}_\mu$, is a symmetry of the massless wave equation and of the massless Maxwell field, and is broken by the mass term alone. The algebra carries the conformal structure — the null cone as the norm form's zero set, the inversion as $I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$ — but not the group; six of the fifteen generators are algebra elements, and the companion article on the conformal group establishes the count.
 
 The massless scalar field transforms with weight $\Delta = 1$,
 $$
-\phi'(\tilde{X}) = \Omega(\tilde{X})^{\Delta}\phi\bigl(\tilde{X}'\bigr) ,
+\phi'(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\phi\bigl(\tilde{Q}'\bigr) ,
 \qquad
-\Box_{\tilde{X}}\Bigl[\Omega^{\Delta}\phi\circ I\Bigr] = \Omega^{\Delta+2}\bigl(\Box\phi\bigr)\circ I \ \text{ at } \Delta = 1 ,
+\Box_{\tilde{Q}}\Bigl[\Omega^{\Delta}\phi\circ I\Bigr] = \Omega^{\Delta+2}\bigl(\Box\phi\bigr)\circ I \ \text{ at } \Delta = 1 ,
 $$
-the identity verified on a superposition of two Gaussians to a relative accuracy of $10^{-16}$ at the correct weight and failing at the wrong one; the dilation covariance was verified to $2\times10^{-8}$ and the harmonicity of $1/N(\tilde{X})$ to $1.5\times10^{-7}$. The massless invariant kernel is the conformal two-point function of weight one, $G_{\mathrm{inv}} = 1/(4\pi^2N(\tilde{X}))$, and it is the inversion image of the constant.
+the identity verified on a superposition of two Gaussians to a relative accuracy of $10^{-16}$ at the correct weight and failing at the wrong one; the dilation covariance was verified to $2\times10^{-8}$ and the harmonicity of $1/N(\tilde{Q})$ to $1.5\times10^{-7}$. The massless invariant kernel is the conformal two-point function of weight one, $G_{\mathrm{inv}} = 1/(4\pi^2N(\tilde{Q}))$, and it is the inversion image of the constant.
 
 The massless limit is the limit in which the on-shell symbol becomes a zero divisor: left multiplication by the on-shell momentum has complex rank four for $N(\tilde{K}) = -\mu^2\neq0$ and rank two for $N(\tilde{K}) = 0$, as computed on two on-shell momenta. The limit of the massive invariant kernel is the conformal two-point function, $\frac{\mu}{4\pi^2\rho}K_1(\mu\rho)\to1/(4\pi^2\rho^2)$, non-uniformly because the massive support is inside the cone and the massless support on it.
 
@@ -287,13 +287,13 @@ The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell 
 | $SO^+(2,4) \cong SU(2,2)/\{\pm I_4\}$ | Conformal group of four-dimensional Minkowski space |
 | $P_\mu, M_{\mu\nu}, D, \mathcal{K}_\mu$ | Generators: translations, Lorentz, dilation, special conformal |
 | $\mathcal{K}_\mu = 2x_\mu x^\nu\partial_\nu - x^2\partial_\mu$ | Special conformal generator (series symbol; not the boost $K_k$) |
-| $\Omega(\tilde{X})$ | Conformal factor; interval scaled by $\Omega^{2}$; $\Omega = 1/N$ for the inversion |
+| $\Omega(\tilde{Q})$ | Conformal factor; interval scaled by $\Omega^{2}$; $\Omega = 1/N$ for the inversion |
 | $\Delta$ | Conformal weight of the field; $\Delta = 1$ for the massless scalar in $d=4$ |
-| $\phi'(\tilde{X}) = \Omega^{\Delta}\phi(\tilde{X}')$ | Conformal transformation law |
-| $I(\tilde{X}) = \bar{\tilde{X}}/N(\tilde{X})$ | Conformal inversion; $N(I(\tilde{X})) = 1/N(\tilde{X})$ |
+| $\phi'(\tilde{Q}) = \Omega^{\Delta}\phi(\tilde{Q}')$ | Conformal transformation law |
+| $I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$ | Conformal inversion; $N(I(\tilde{Q})) = 1/N(\tilde{Q})$ |
 | $\Box[\Omega^{\Delta}\phi\circ I] = \Omega^{\Delta+2}(\Box\phi)\circ I$ | Conformal covariance of the box operator at $\Delta=1$ |
-| $\Box[1/N(\tilde{X})] = 0$ | Harmonicity of the inversion image of the constant |
-| $G_{\mathrm{inv}} = 1/(4\pi^2N(\tilde{X}))$ | Massless kernel = conformal two-point function of weight one |
+| $\Box[1/N(\tilde{Q})] = 0$ | Harmonicity of the inversion image of the constant |
+| $G_{\mathrm{inv}} = 1/(4\pi^2N(\tilde{Q}))$ | Massless kernel = conformal two-point function of weight one |
 | $\mu = mc/\hbar$ | The unique scale; breaks the conformal symmetry |
 | $N(\tilde{K}) = -\mu^2$ / $0$ | Massive / massless on-shell symbol; zero divisor in the massless case |
 | $\Theta_{\mu\nu} = T_{\mu\nu} + \xi(\delta_{\mu\nu}\Box - \partial_\mu\partial_\nu)\phi^2$ | Improved stress tensor; $\xi = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |

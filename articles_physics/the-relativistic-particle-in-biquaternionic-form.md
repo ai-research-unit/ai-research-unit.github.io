@@ -6,10 +6,10 @@ The relativistic particle is the simplest physical object the biquaternion frame
 
 Two facts from the algebra organize the whole account, and they are worth stating at the outset.
 
-**The interval is the norm form.** The material coordinate is the anti-Hermitian biquaternion $\tilde{X} = ict\,e_0 + \mathbf{x} \in \mathbb{M}_-$, with $\mathbf{x} = x e_1 + y e_2 + z e_3$, and the Minkowski interval of a displacement is the norm form
+**The interval is the norm form.** The material coordinate is the anti-Hermitian biquaternion $\tilde{Q} = ict\,e_0 + \mathbf{x} \in \mathbb{M}_-$, with $\mathbf{x} = x e_1 + y e_2 + z e_3$, and the Minkowski interval of a displacement is the norm form
 
 $$
-N(d\tilde{X}) = d\tilde{X}\,d\overline{\tilde{X}} = (ic\,dt)^2 + d\mathbf{x}^2 = -c^2dt^2 + d\mathbf{x}^2 .
+N(d\tilde{Q}) = d\tilde{Q}\,d\overline{\tilde{Q}} = (ic\,dt)^2 + d\mathbf{x}^2 = -c^2dt^2 + d\mathbf{x}^2 .
 $$
 
 The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own norm form, restricted to the real four-dimensional subspace $\mathbb{M}_-$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$; both levels are fixed by the companion article *Conventions in the Biquaternion Universe*, and no metric is introduced here beyond them.
@@ -25,32 +25,32 @@ The article is organized as follows. The next section fixes the worldline and th
 A relativistic particle is described by a curve in the material sector,
 
 $$
-\tilde{X}(\lambda) : \lambda \longmapsto \tilde{X}(\lambda) = ic\,t(\lambda)\,e_0 + \mathbf{x}(\lambda) \in \mathbb{M}_- ,
+\tilde{Q}(\lambda) : \lambda \longmapsto \tilde{Q}(\lambda) = ic\,t(\lambda)\,e_0 + \mathbf{x}(\lambda) \in \mathbb{M}_- ,
 $$
 
 with $\lambda$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form
 
 $$
-d\tilde{X} = ic\,dt\,e_0 + d\mathbf{x},
+d\tilde{Q} = ic\,dt\,e_0 + d\mathbf{x},
 $$
 
 whose norm form is
 
 $$
-N(d\tilde{X}) = d\tilde{X}\,d\overline{\tilde{X}} = -c^2dt^2 + d\mathbf{x}^2 .
+N(d\tilde{Q}) = d\tilde{Q}\,d\overline{\tilde{Q}} = -c^2dt^2 + d\mathbf{x}^2 .
 $$
 <!-- CONVENTION — norm form on the material sector: N(dX) = dX dXbar = -c^2 dt^2 + dx^2. The minus sign comes from the ict coordinate, (ic dt)^2 = -c^2 dt^2, not from a choice of metric. The level-1 identity form diag(+1,+1,+1,+1) on B restricts to the level-2 Minkowski form eta = diag(-1,+1,+1,+1) on the real material slice. Do not "correct" the sign by importing a direct Euclidean metric on (t,x). -->
 
-Off the null set, $N(d\tilde{X})$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
+Off the null set, $N(d\tilde{Q})$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
 
 $$
-\boxed{\; c^2\,d\tau^2 = -\,N(d\tilde{X}) = c^2dt^2 - d\mathbf{x}^2 \;}
+\boxed{\; c^2\,d\tau^2 = -\,N(d\tilde{Q}) = c^2dt^2 - d\mathbf{x}^2 \;}
 \qquad\Longrightarrow\qquad
 d\tau = dt\sqrt{1 - \frac{\mathbf{v}^2}{c^2}},
 \qquad \mathbf{v} = \frac{d\mathbf{x}}{dt} .
 $$
 
-The definition is real precisely when the worldline is timelike, $N(d\tilde{X}) < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the norm form:
+The definition is real precisely when the worldline is timelike, $N(d\tilde{Q}) < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the norm form:
 
 $$
 \text{timelike: } N<0,
@@ -62,14 +62,14 @@ $$
 
 Two structural remarks. First, $d\tau$ is real and positive for a future-directed timelike curve, and it is a scalar under the rotor conjugation that implements the Lorentz group (the companion article *The Lorentz Transformation as a Biquaternionic Rotation*), because $N$ is preserved by that action; this is what makes it a usable parameter. Second, the definition is invariant under reparametrization, so a worldline carries a canonical affine parameter up to an additive constant, and it is by $d\tau$ that the four-velocity is normalized below.
 
-The curve is **causal** if $N(d\tilde{X}) \leq 0$ everywhere and **timelike** if the inequality is strict. A physical particle has a timelike worldline, and the statement that no signal exceeds $c$ is the statement that its tangent never leaves the interior of the null cone. Nothing in this article requires the curve to be straight; acceleration is admitted, and the four-force that produces it is treated in the companion articles *The Lorentz Force in Biquaternion Form* and *The Relativistic Particle in an External Field, in Biquaternionic Form*.
+The curve is **causal** if $N(d\tilde{Q}) \leq 0$ everywhere and **timelike** if the inequality is strict. A physical particle has a timelike worldline, and the statement that no signal exceeds $c$ is the statement that its tangent never leaves the interior of the null cone. Nothing in this article requires the curve to be straight; acceleration is admitted, and the four-force that produces it is treated in the companion articles *The Lorentz Force in Biquaternion Form* and *The Relativistic Particle in an External Field, in Biquaternionic Form*.
 
 ## The Four-Velocity and the Rapidity
 
 The **four-velocity** is the tangent with respect to proper time,
 
 $$
-\tilde{U} = \frac{d\tilde{X}}{d\tau}
+\tilde{U} = \frac{d\tilde{Q}}{d\tau}
 = \frac{dt}{d\tau}\left(ic\,e_0 + \frac{d\mathbf{x}}{dt}\right)
 = \gamma\left(ic\,e_0 + \mathbf{v}\right),
 \qquad
@@ -165,7 +165,7 @@ which is the subject of the penultimate section.
 A Lorentz transformation acts on the material sector by **rotor conjugation**,
 
 $$
-\tilde{X}\ \longmapsto\ \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger,
+\tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger,
 \qquad
 \tilde{\Lambda}\in\mathbb{B},
 \qquad
@@ -180,7 +180,7 @@ $$
 \overline{\tilde{\Lambda}} = \tilde{\Lambda}^\dagger ,
 $$
 
-with $\psi$ the rapidity and $\hat{\mathbf{u}}$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{U}$ is $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\bar{\tilde{U}}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ carries the four-velocity $\gamma(ic\,e_0+\mathbf{v})$ of a particle moving with velocity $\mathbf{v} = c\tanh\psi\,\hat{\mathbf{u}}$ to the rest four-velocity $ic\,e_0$.
+with $\psi$ the rapidity and $\hat{\mathbf{u}}$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{U}$ is $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\bar{\tilde{U}}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ carries the four-velocity $\gamma(ic\,e_0+\mathbf{v})$ of a particle moving with velocity $\mathbf{v} = c\tanh\psi\,\hat{\mathbf{u}}$ to the rest four-velocity $ic\,e_0$.
 
 Composition of two boosts is composition of their rotors. For two **collinear** boosts the rotors commute and their rapidities add: if the first has rapidity $\psi_1$ and the second $\psi_2$ along the same direction, the product is the boost of rapidity $\psi_1+\psi_2$, and the composed velocity is
 
@@ -207,8 +207,8 @@ For **non-collinear** boosts the rotors do not commute, and their product is not
 The action of a free relativistic particle is the invariant length of its worldline, measured in units of $mc$:
 
 $$
-S[\tilde{X}] = -mc\int\sqrt{-\,d\tilde{X}\,d\overline{\tilde{X}}}
-= -mc\int\sqrt{-N(d\tilde{X})}
+S[\tilde{Q}] = -mc\int\sqrt{-\,d\tilde{Q}\,d\overline{\tilde{Q}}}
+= -mc\int\sqrt{-N(d\tilde{Q})}
 = -mc^2\int\frac{dt}{\gamma} .
 $$
 
@@ -235,12 +235,12 @@ $$
 so the free four-momentum $\tilde{P} = m\tilde{U}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,
 
 $$
-\frac{d\tilde{P}}{d\tau} = m\frac{d^2\tilde{X}}{d\tau^2} = 0 ,
+\frac{d\tilde{P}}{d\tau} = m\frac{d^2\tilde{Q}}{d\tau^2} = 0 ,
 $$
 
 the geodesic of flat $\mathbb{M}_-$. In the algebra the action is exactly the length functional of the norm form, and the four-momentum is exactly its Noether charge under translations; the companion article *Noether's Theorem in Biquaternionic Form* derives the charge from the translation invariance of this action.
 
-The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $N(d\tilde{X})$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of *The Relativistic Particle in an External Field, in Biquaternionic Form*.
+The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $N(d\tilde{Q})$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of *The Relativistic Particle in an External Field, in Biquaternionic Form*.
 
 ## The Non-Relativistic Limit
 
@@ -317,15 +317,15 @@ The conventions of the construction are those of the following companion article
 The relativistic particle is a timelike worldline in the material sector $\mathbb{M}_-$,
 
 $$
-\tilde{X}(\tau) = ic\,t\,e_0 + \mathbf{x},
+\tilde{Q}(\tau) = ic\,t\,e_0 + \mathbf{x},
 \qquad
-d\tau^2 = -\frac{1}{c^2}N(d\tilde{X}) = dt^2 - \frac{d\mathbf{x}^2}{c^2},
+d\tau^2 = -\frac{1}{c^2}N(d\tilde{Q}) = dt^2 - \frac{d\mathbf{x}^2}{c^2},
 $$
 
 along which the four-velocity
 
 $$
-\tilde{U} = \frac{d\tilde{X}}{d\tau} = \gamma\left(ic\,e_0 + \mathbf{v}\right),
+\tilde{U} = \frac{d\tilde{Q}}{d\tau} = \gamma\left(ic\,e_0 + \mathbf{v}\right),
 \qquad
 \gamma = \frac{1}{\sqrt{1-\mathbf{v}^2/c^2}},
 $$
@@ -343,7 +343,7 @@ $$
 satisfies the mass-shell relation $N(\tilde{P}) = -m^2c^2$, equivalently $E^2 = \mathbf{p}^2c^2 + m^2c^4$. The rapidity $\psi$, with $v = c\tanh\psi$ and $\gamma = \cosh\psi$, makes the four-velocity $\tilde{U} = ic\cosh\psi\,e_0 + c\sinh\psi\,\hat{\mathbf{u}}$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
 
 $$
-S[\tilde{X}] = -mc\int\sqrt{-\,d\tilde{X}\,d\overline{\tilde{X}}}
+S[\tilde{Q}] = -mc\int\sqrt{-\,d\tilde{Q}\,d\overline{\tilde{Q}}}
 = -mc^2\int\frac{dt}{\gamma},
 \qquad
 L(\mathbf{v}) = -\frac{mc^2}{\gamma},
@@ -363,8 +363,8 @@ The interval is the norm form, the mass shell is its level set, the causal trich
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (center) |
 | $\bar{\cdot},\ {}^*,\ {}^\dagger=\bar{\cdot}^{\,*},\ {}^\flat=-\dagger$ | Quaternion, complex, Hermitian, anti-Hermitian conjugations |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form (level 1: identity on $\mathbb{C}$) |
-| $\tilde{X} = ict\,e_0 + \mathbf{x}$ | Four-position, in $\mathbb{M}_-$ |
-| $d\tau^2 = -N(d\tilde{X})/c^2$ | Proper time |
+| $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position, in $\mathbb{M}_-$ |
+| $d\tau^2 = -N(d\tilde{Q})/c^2$ | Proper time |
 | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$, $N(\tilde{U}) = -c^2$ | Four-velocity, unit timelike |
 | $\gamma = 1/\sqrt{1-\mathbf{v}^2/c^2}$ | Lorentz factor |
 | $\psi$, $v = c\tanh\psi$, $\gamma=\cosh\psi$ | Rapidity |
@@ -372,8 +372,8 @@ The interval is the norm form, the mass shell is its level set, the causal trich
 | $E = \gamma mc^2$, $\mathbf{p} = \gamma m\mathbf{v}$ | Energy and momentum |
 | $N(\tilde{P}) = -m^2c^2$ | Mass-shell relation |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ | Boost rotor, in $\mathbb{M}_+$ |
-| $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | Rotor conjugation on $\mathbb{M}_-$ |
-| $S = -mc\int\sqrt{-d\tilde{X}\,d\bar{\tilde{X}}}$, $L = -mc^2/\gamma$ | Free action and Lagrangian |
+| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $S = -mc\int\sqrt{-d\tilde{Q}\,d\bar{\tilde{Q}}}$, $L = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

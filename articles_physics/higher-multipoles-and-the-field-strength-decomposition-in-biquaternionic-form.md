@@ -76,12 +76,12 @@ The pairing is worth holding on to: at each order in $k$ the field carries an el
 On the sphere the two transverse families that carry the radiation are the **vector spherical harmonics**
 
 $$
-\mathbf{X}_{lm} = \frac{1}{\sqrt{l(l+1)}}\,\mathbf{L}\,Y_{lm} ,
+\mathbf{Q}_{lm} = \frac{1}{\sqrt{l(l+1)}}\,\mathbf{L}\,Y_{lm} ,
 \qquad
 \mathbf{L} = -i\,\mathbf{r}\times\boldsymbol{\nabla} ,
 $$
 
-which are tangential, $\mathbf{X}_{lm}\cdot\hat{\mathbf{r}} = 0$, together with their rotated partners $\hat{\mathbf{r}}\times\mathbf{X}_{lm}$ and the radial family $\hat{\mathbf{r}}Y_{lm}$. Any vector field on the sphere decomposes into these three families; the radiation field is transverse, so its radial family is absent, and it is a sum of the two tangential families. One family is the **electric** $l$-pole and the other the **magnetic** $l$-pole. In the common convention the magnetic $l$-pole has its magnetic field along $\mathbf{X}_{lm}$ and its electric field along $\hat{\mathbf{r}}\times\mathbf{X}_{lm}$, and the electric $l$-pole interchanges the two. The two families carry opposite parity: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$. This is standard vector-harmonic analysis, and it is cited as standard.
+which are tangential, $\mathbf{Q}_{lm}\cdot\hat{\mathbf{r}} = 0$, together with their rotated partners $\hat{\mathbf{r}}\times\mathbf{Q}_{lm}$ and the radial family $\hat{\mathbf{r}}Y_{lm}$. Any vector field on the sphere decomposes into these three families; the radiation field is transverse, so its radial family is absent, and it is a sum of the two tangential families. One family is the **electric** $l$-pole and the other the **magnetic** $l$-pole. In the common convention the magnetic $l$-pole has its magnetic field along $\mathbf{Q}_{lm}$ and its electric field along $\hat{\mathbf{r}}\times\mathbf{Q}_{lm}$, and the electric $l$-pole interchanges the two. The two families carry opposite parity: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$. This is standard vector-harmonic analysis, and it is cited as standard.
 
 ### The Multipole Fields and Their Angular Momentum
 
@@ -210,7 +210,7 @@ A four-dimensional rotation module cannot contain a $D^{(l)}$ with $l\ge2$: the 
 
 At each order $l\ge1$ the field carries two multiplet types, an electric one and a magnetic one, and the two decompositions of $\tilde{F}$ relate to them in different ways.
 
-**The multipole types and the Hermitian decomposition.** The electric and magnetic multipole types are distinguished by **parity**: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$, and in the vector-spherical-harmonic basis the magnetic family is $\mathbf{X}_{lm}$ and the electric family $\hat{\mathbf{r}}\times\mathbf{X}_{lm}$. This is *not* the Hermitian split of the field strength. The Hermitian split separates the electric **field** from the magnetic **field**, $\tfrac{1}{2}(\tilde{F}+\tilde{F}^\dagger) = i\sqrt{\epsilon}\mathbf{E}$ and $\tfrac{1}{2}(\tilde{F}-\tilde{F}^\dagger) = -\sqrt{\mu}\mathbf{H}$, and a radiating multipole of either type has both an electric and a magnetic field. The two distinctions coincide only in the static limit: a static charge distribution has $\mathbf{B} = 0$, so its multipole fields are purely Hermitian, and a stationary current has $\mathbf{E} = 0$, so its multipole fields are purely anti-Hermitian. In that limit, and only there, the electric multipoles $E_l$ are Hermitian fields and the magnetic multipoles $M_l$ anti-Hermitian ones.
+**The multipole types and the Hermitian decomposition.** The electric and magnetic multipole types are distinguished by **parity**: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$, and in the vector-spherical-harmonic basis the magnetic family is $\mathbf{Q}_{lm}$ and the electric family $\hat{\mathbf{r}}\times\mathbf{Q}_{lm}$. This is *not* the Hermitian split of the field strength. The Hermitian split separates the electric **field** from the magnetic **field**, $\tfrac{1}{2}(\tilde{F}+\tilde{F}^\dagger) = i\sqrt{\epsilon}\mathbf{E}$ and $\tfrac{1}{2}(\tilde{F}-\tilde{F}^\dagger) = -\sqrt{\mu}\mathbf{H}$, and a radiating multipole of either type has both an electric and a magnetic field. The two distinctions coincide only in the static limit: a static charge distribution has $\mathbf{B} = 0$, so its multipole fields are purely Hermitian, and a stationary current has $\mathbf{E} = 0$, so its multipole fields are purely anti-Hermitian. In that limit, and only there, the electric multipoles $E_l$ are Hermitian fields and the magnetic multipoles $M_l$ anti-Hermitian ones.
 
 **The multipole types and the self-dual decomposition.** In the radiation field the two chiral halves are the two **helicities**. For each order $l$ the self-dual part carries one circular polarisation and the anti-self-dual part the other, and the electric and magnetic multiplet types are the parity-even and parity-odd combinations of the two helicity amplitudes, related to them by the same linear transformation that relates linear to circular polarisation. The reason is that parity exchanges the two chiral halves. Spatial inversion acts on the fields by $\mathbf{E}\mapsto-\mathbf{E}$ and $\mathbf{B}\mapsto\mathbf{B}$, so on the Riemann–Silberstein vector it acts as
 
@@ -405,8 +405,8 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $L^2(S^2) = \bigoplus_l D^{(l)}$ | Angular function space (infinite-dimensional) |
 | $E_l$, $M_l$ | Electric and magnetic multiplets of order $l$ |
 | $q_{lm}$ | Electric multipole moment of the source |
-| $\mathbf{X}_{lm} = \mathbf{L}Y_{lm}/\sqrt{l(l+1)}$ | Vector spherical harmonic (magnetic family) |
-| $\hat{\mathbf{r}}\times\mathbf{X}_{lm}$ | Electric family of vector spherical harmonics |
+| $\mathbf{Q}_{lm} = \mathbf{L}Y_{lm}/\sqrt{l(l+1)}$ | Vector spherical harmonic (magnetic family) |
+| $\hat{\mathbf{r}}\times\mathbf{Q}_{lm}$ | Electric family of vector spherical harmonics |
 | $\mathbf{F}(\hat{\mathbf{n}}) = \int\mathbf{J}\,e^{-ik\hat{\mathbf{n}}\cdot\mathbf{x}'}d^3x'$ | Radiation vector |
 | $k = \omega/c$ | Wavenumber |
 | $\mathbf{p}$, $\mathbf{m}$ | Electric and magnetic dipole moments |

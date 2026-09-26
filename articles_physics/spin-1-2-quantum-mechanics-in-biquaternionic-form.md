@@ -120,10 +120,10 @@ $$
 
 This is a **Hermitian $2 \times 2$ matrix**. So $\mathbb{M}_+$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
 
-**Anti-Hermitian subspace $\mathbb{M}_-$.** A general element is $\tilde{X} = i x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ with $x_k \in \mathbb{R}$. Under the isomorphism:
+**Anti-Hermitian subspace $\mathbb{M}_-$.** A general element is $\tilde{Q} = i x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ with $x_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
-\tilde{X} \mapsto i x_0 I_2 - i x_1 \sigma_1 - i x_2 \sigma_2 - i x_3 \sigma_3 = i\left(x_0 I_2 - x_1\sigma_1 - x_2\sigma_2 - x_3\sigma_3\right).
+\tilde{Q} \mapsto i x_0 I_2 - i x_1 \sigma_1 - i x_2 \sigma_2 - i x_3 \sigma_3 = i\left(x_0 I_2 - x_1\sigma_1 - x_2\sigma_2 - x_3\sigma_3\right).
 $$
 
 This is $i$ times a Hermitian matrix, i.e., an **anti-Hermitian** matrix. So $\mathbb{M}_-$ is isomorphic to the space of anti-Hermitian operators on $\mathbb{C}^2$.

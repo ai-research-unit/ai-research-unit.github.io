@@ -231,7 +231,7 @@ $$
 \left\{\tilde{U} : N(\tilde{U}) = e_0\right\} = Sp(1)\times Sp(1) = S^3\times S^3 ,
 $$
 
-the product being taken through the idempotents. The set is compact and six-dimensional, and it is the double cover of the rotation group $SO(4)$ of the four-dimensional space $\mathbb{H}$ under the two-sided action $X\mapsto u_+Xu_-^{-1}$ of the companion article on rotations.
+the product being taken through the idempotents. The set is compact and six-dimensional, and it is the double cover of the rotation group $SO(4)$ of the four-dimensional space $\mathbb{H}$ under the two-sided action $\tilde{Q}\mapsto u_+\tilde{Q}u_-^{-1}$ of the companion article on rotations.
 
 ### The Rotor as an Exponential
 
@@ -251,7 +251,7 @@ and the argument is an element of the Lie algebra of the unit group: the rotor i
 
 ### The Rotor Is the Compact Factor
 
-The rotor is compact and six-dimensional, and it is the whole non-central part of the group of units: the unit group is the direct product of $S^3\times S^3$ with the central group $\mathbb{D}_{>0}$, so that a general unit is a rotation of the two halves together with a scale and a hyperbolic phase, and the two operations commute. In the biquaternion algebra the non-central part of the unit group is $SU(2)\times H^3$ — a rotor and a boost — and only half of it is compact; here the non-central part is compact and carries no non-compact direction at all. The two-sided action $X\mapsto u_+Xu_-^{-1}$ is the double cover $Sp(1)\times Sp(1)\to SO(4)$ of the companion article on rotations, and it is the action by which the rotor factor of a polar representation rotates a split biquaternion.
+The rotor is compact and six-dimensional, and it is the whole non-central part of the group of units: the unit group is the direct product of $S^3\times S^3$ with the central group $\mathbb{D}_{>0}$, so that a general unit is a rotation of the two halves together with a scale and a hyperbolic phase, and the two operations commute. In the biquaternion algebra the non-central part of the unit group is $SU(2)\times H^3$ — a rotor and a boost — and only half of it is compact; here the non-central part is compact and carries no non-compact direction at all. The two-sided action $\tilde{Q}\mapsto u_+\tilde{Q}u_-^{-1}$ is the double cover $Sp(1)\times Sp(1)\to SO(4)$ of the companion article on rotations, and it is the action by which the rotor factor of a polar representation rotates a split biquaternion.
 
 ## The Theorem
 
@@ -470,7 +470,7 @@ For $\tilde{Q} = 0$ the modulus is $\rho = 0$ and the rotor is arbitrary: $0 = 0
 
 ### The Four Conjugations and the Two Factors
 
-The four conjugations act on the pair $(A,A')$ as follows: $\bar{\cdot}$ conjugates the two quaternion parts, $\bar{\tilde{Q}} = \bar{A} + j\bar{A}'$; ${}^{*}$ changes the sign of the split complex part, $\tilde{Q}^{*} = A - jA'$, so that $\tilde{Q}_{\pm}^{*} = \tilde{Q}_{\mp}$; $\dagger = \bar{\cdot}\circ{}^{*}$ does both; and $\flat = -\dagger$. Of these, $\bar{\cdot}$ and $\dagger$ are anti-automorphisms, ${}^{*}$ is an automorphism, and $\flat$ is neither, satisfying $(XY)^{\flat} = -Y^{\flat}X^{\flat}$ in place of an anti-automorphism law.
+The four conjugations act on the pair $(A,A')$ as follows: $\bar{\cdot}$ conjugates the two quaternion parts, $\bar{\tilde{Q}} = \bar{A} + j\bar{A}'$; ${}^{*}$ changes the sign of the split complex part, $\tilde{Q}^{*} = A - jA'$, so that $\tilde{Q}_{\pm}^{*} = \tilde{Q}_{\mp}$; $\dagger = \bar{\cdot}\circ{}^{*}$ does both; and $\flat = -\dagger$. Of these, $\bar{\cdot}$ and $\dagger$ are anti-automorphisms, ${}^{*}$ is an automorphism, and $\flat$ is neither, satisfying $(\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat}$ in place of an anti-automorphism law.
 
 On the polar data the first three act as follows. Quaternion conjugation fixes the modulus — $\rho$ has real components, so $\bar{\rho} = \rho$ — and inverts each half of the rotor,
 
@@ -562,7 +562,7 @@ with $\exp(2e_1) = \cos2 + \sin2\,e_1 = -0.416146837 + 0.909297427\,e_1$. The ve
 
 ### The Nilpotent Case
 
-It is worth recording the case that a reader may expect and that does not occur. For a vector part, $\mathbf{Q}^2 = 0$ forces $\mathbf{Q} = 0$, because the components of $\theta^2$ are sums of squares and vanish only when every $Q_k$ does; consequently the identity $\exp(\mathbf{Q}) = e_0 + \mathbf{Q}$ holds only at $\mathbf{Q} = 0$. More generally the algebra has no non-zero nilpotent element of any kind, because it is the direct sum $\mathbb{H}\oplus\mathbb{H}$ of two division algebras and a nilpotent of the sum has a nilpotent component in each summand; in the recomputation the smallest ratio $|X^2|/|X|$ over four thousand random non-zero elements was $0.754$. The zero divisors are not nilpotent: the witness of the previous subsection has square $-4e_+$, and the zero divisor witness $\tfrac12(1+e_1)(1+j)$ has square $e_1(1+j)$, both of them non-zero.
+It is worth recording the case that a reader may expect and that does not occur. For a vector part, $\mathbf{Q}^2 = 0$ forces $\mathbf{Q} = 0$, because the components of $\theta^2$ are sums of squares and vanish only when every $Q_k$ does; consequently the identity $\exp(\mathbf{Q}) = e_0 + \mathbf{Q}$ holds only at $\mathbf{Q} = 0$. More generally the algebra has no non-zero nilpotent element of any kind, because it is the direct sum $\mathbb{H}\oplus\mathbb{H}$ of two division algebras and a nilpotent of the sum has a nilpotent component in each summand; in the recomputation the smallest ratio $|\tilde{Q}^2|/|\tilde{Q}|$ over four thousand random non-zero elements was $0.754$. The zero divisors are not nilpotent: the witness of the previous subsection has square $-4e_+$, and the zero divisor witness $\tfrac12(1+e_1)(1+j)$ has square $e_1(1+j)$, both of them non-zero.
 
 ### The Logarithm
 

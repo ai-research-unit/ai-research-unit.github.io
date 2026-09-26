@@ -7,7 +7,7 @@ The **Skyrme model** is the proposal that the baryon is a soliton of the pion fi
 This article constructs the Skyrme model in the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The skyrmion field is the framework's **unit real quaternion**,
 
 $$
-\tilde U(\tilde X) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\bar{\tilde U} = e_0 ,
+\tilde U(\tilde{Q}) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\bar{\tilde U} = e_0 ,
 $$
 
 which is the chiral field of the companion pion article; its target is the group manifold $\mathbb{S}^3$, whose third homotopy group is $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, so the winding number is an integer. The Skyrme term is the fourth-order invariant built from the flat current $j_\mu = \tilde U^{-1}\partial_\mu\tilde U$ of the nonlinear-sigma-model article, and the topological baryon number is its winding.
@@ -45,7 +45,7 @@ The Skyrme model is the pion effective theory with one extra term, and both term
 **The field.** The skyrmion field is the chiral field of the pion, a map from spacetime to the group,
 
 $$
-\tilde U(\tilde X)\in\mathbb{H}^1_{\mathbb{B}} ,
+\tilde U(\tilde{Q})\in\mathbb{H}^1_{\mathbb{B}} ,
 \qquad
 \tilde U = \exp\!\left(\frac{\tilde\pi}{f_\pi}\right),
 \qquad

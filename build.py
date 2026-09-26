@@ -191,7 +191,39 @@ for name in ("robots.txt", ".nojekyll", ".gitlab-ci.yml"):
 nav_articles = [p for coll in COLLECTIONS for p in coll["articles"]
                 if "zexample" not in p.stem.lower()]
 
-for coll in COLLECTIONS:
+
+def build_root_page(md_path, out_name, articles):
+    if md_path.exists():
+        raw = md_path.read_text()
+        meta, body_md = parse_frontmatter(raw)
+
+        body_html = md_to_html(body_md)
+
+        html = (INDEX_TEMPLATE
+            .replace("{nav}",         build_nav_index(articles))
+            .replace("{index_items}", body_html)
+        )
+        (DEPLOY / out_name).write_text(html)
+        print(f"Built: {out_name}")
+    else:
+        print(f"Warning: {md_path.name} not found at {md_path}")
+
+
+# Root pages first: the menus and the landing page are the site's entry points,
+# so they are written before the article corpus.
+build_root_page(SRC / "index.md",      "index.html",      nav_articles)
+build_root_page(SRC / "maths.md", "maths.html", nav_articles)
+build_root_page(SRC / "physics.md", "physics.html", nav_articles)
+build_root_page(SRC / "disclaimer.md", "disclaimer.html", nav_articles)
+build_root_page(SRC / "contact.md",    "contact.html",    nav_articles)
+
+# Physics before maths. BUILD_ORDER only controls build sequence; COLLECTIONS
+# keeps its own order because the nav links are derived from it.
+BUILD_ORDER = ["physics", "maths"]
+ordered_collections = sorted(COLLECTIONS,
+                            key=lambda c: BUILD_ORDER.index(c["name"]))
+
+for coll in ordered_collections:
     if not coll["articles"]:
         print(f"Warning: no md files in {coll['src'].name}/")
         continue
@@ -236,28 +268,6 @@ if legacy_art.is_dir():
     shutil.rmtree(legacy_art)
     print("Removed legacy deploy directory: articles/")
 # ──────────────────────────────────────────────────────────────────────────
-
-def build_root_page(md_path, out_name, articles):
-    if md_path.exists():
-        raw = md_path.read_text()
-        meta, body_md = parse_frontmatter(raw)
-
-        body_html = md_to_html(body_md)
-
-        html = (INDEX_TEMPLATE
-            .replace("{nav}",         build_nav_index(articles))
-            .replace("{index_items}", body_html)
-        )
-        (DEPLOY / out_name).write_text(html)
-        print(f"Built: {out_name}")
-    else:
-        print(f"Warning: {md_path.name} not found at {md_path}")
-
-build_root_page(SRC / "index.md",      "index.html",      nav_articles)
-build_root_page(SRC / "maths.md", "maths.html", nav_articles)
-build_root_page(SRC / "physics.md", "physics.html", nav_articles)
-build_root_page(SRC / "disclaimer.md", "disclaimer.html", nav_articles)
-build_root_page(SRC / "contact.md",    "contact.html",    nav_articles)
 
 # ── Convention check (non-fatal) ──────────────────────────────────────────────
 # Reports shared symbols given conflicting definitions across articles — the class of

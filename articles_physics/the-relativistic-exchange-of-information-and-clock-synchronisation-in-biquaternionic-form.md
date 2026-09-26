@@ -9,7 +9,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 The article develops the following.
 
 - **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\hat{\mathbf{n}}$, the null condition is $\Delta\mathbf{x} = \pm c\,\Delta t\,\hat{\mathbf{n}}$, and the retarded and advanced combinations $u = t - \hat{\mathbf{n}}\cdot\mathbf{x}/c$, $v = t + \hat{\mathbf{n}}\cdot\mathbf{x}/c$ are constant along the outgoing and incoming rays.
-- **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-N(d\tilde{X})}/c$, and the clock four-velocity is $\tilde{U} = d\tilde{X}/d\tau$ with $N(\tilde{U}) = -c^2$.
+- **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-N(d\tilde{Q})}/c$, and the clock four-velocity is $\tilde{U} = d\tilde{Q}/d\tau$ with $N(\tilde{U}) = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $t_2 = (t_1+t_3)/2$, and the distance is $L = c(t_3-t_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
 - **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta t = \gamma u\,\Delta x'/c^2$.
@@ -18,25 +18,25 @@ The article develops the following.
 
 The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_0+\mathbf{a}$ of imaginary scalar part and real vector part. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict}+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_0+\mathbf{a}$ of imaginary scalar part and real vector part. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict}+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
 
 ## Signals as Null Displacements
 
 ### The Null Condition Between Two Events
 
-Let an emitter be at the event $A$ with coordinate $\tilde{X}_A = ic\,t_A\,e_0 + \mathbf{x}_A$, and a receiver at the event $B$ with $\tilde{X}_B = ic\,t_B\,e_0 + \mathbf{x}_B$. The displacement is
+Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = ic\,t_A\,e_0 + \mathbf{x}_A$, and a receiver at the event $B$ with $\tilde{Q}_B = ic\,t_B\,e_0 + \mathbf{x}_B$. The displacement is
 
 $$
-\tilde{X}_{BA} = \tilde{X}_B - \tilde{X}_A = ic\,\Delta t\,e_0 + \Delta\mathbf{x},
+\tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\Delta t\,e_0 + \Delta\mathbf{x},
 \qquad \Delta t = t_B - t_A, \quad \Delta\mathbf{x} = \mathbf{x}_B - \mathbf{x}_A,
 $$
 
-with norm form $N(\tilde{X}_{BA}) = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
+with norm form $N(\tilde{Q}_{BA}) = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
 
 $$
 |\Delta\mathbf{x}| = c\,\Delta t,
 \qquad
-N(\tilde{X}_{BA}) = 0 :
+N(\tilde{Q}_{BA}) = 0 :
 $$
 
 **an exchange of information between two events along a light signal is possible exactly when their displacement is null.** Because a null displacement is a zero divisor of $\mathbb{B}$ (companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*), the channel through which signals pass is the algebra's degenerate locus. The barrier of the companion article and the channel of this one are the same set; the cone forbids the spacelike separations and carries the null ones.
@@ -70,34 +70,34 @@ independent of $t$, while $v$ increases at rate $2$; and conversely for the inco
 For a displacement whose spatial part is collinear with $\hat{\mathbf{n}}$ — which is the case for a signal along $\hat{\mathbf{n}}$ — the norm form factorizes in these coordinates:
 
 $$
-N(\tilde{X}_{BA}) = -c^2\,\Delta u\,\Delta v .
+N(\tilde{Q}_{BA}) = -c^2\,\Delta u\,\Delta v .
 $$
 
 A signal therefore satisfies $\Delta u = 0$ or $\Delta v = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ propagating along $\hat{\mathbf{k}}$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-\Phi = \mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{X}}\right) = \mathbf{k}\cdot\mathbf{x} - \omega t = -\omega\left(t - \frac{\hat{\mathbf{k}}\cdot\mathbf{x}}{c}\right) = -\omega\,u,
+\Phi = \mathrm{Sc}\!\left(\tilde{K}\bar{\tilde{Q}}\right) = \mathbf{k}\cdot\mathbf{x} - \omega t = -\omega\left(t - \frac{\hat{\mathbf{k}}\cdot\mathbf{x}}{c}\right) = -\omega\,u,
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
 
 ### Relays and Superpositions
 
-If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{X}_{BA}+\tilde{X}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde{K} \mapsto \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
+If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde{K} \mapsto \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
 
 ## Clocks and Proper Time
 
 ### Proper Time from the Norm Form
 
-A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde{X}(\lambda)$, the **proper time** is defined by
+A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde{Q}(\lambda)$, the **proper time** is defined by
 
 $$
-c\,d\tau = \sqrt{-\,N(d\tilde{X})}
+c\,d\tau = \sqrt{-\,N(d\tilde{Q})}
 = \sqrt{-\left(ic\,dt\right)^2 - d\mathbf{x}^2}
 = \sqrt{c^2\,dt^2 - d\mathbf{x}^2},
 $$
 
-the positive root being taken because $d\tilde{X}$ is timelike along a physical worldline, so that $N(d\tilde{X}) < 0$ and $-N(d\tilde{X}) > 0$. Factoring the coordinate time,
+the positive root being taken because $d\tilde{Q}$ is timelike along a physical worldline, so that $N(d\tilde{Q}) < 0$ and $-N(d\tilde{Q}) > 0$. Factoring the coordinate time,
 
 $$
 d\tau = \sqrt{1 - \frac{\mathbf{v}^2}{c^2}}\;dt = \frac{dt}{\gamma},
@@ -110,7 +110,7 @@ $$
 which is the standard time-dilation relation. The reading of the clock between two events on the worldline is the integral
 
 $$
-\Delta\tau = \int_{A}^{B}\frac{\sqrt{-\,N(d\tilde{X})}}{c}
+\Delta\tau = \int_{A}^{B}\frac{\sqrt{-\,N(d\tilde{Q})}}{c}
 = \int_{t_A}^{t_B}\sqrt{1-\frac{\mathbf{v}(t)^2}{c^2}}\;dt .
 $$
 
@@ -121,8 +121,8 @@ The biquaternion form has one structural advantage over the component form: the 
 Differentiating the worldline with respect to proper time gives the **four-velocity**
 
 $$
-\tilde{U} = \frac{d\tilde{X}}{d\tau}
-= \frac{d\tilde{X}}{dt}\frac{dt}{d\tau}
+\tilde{U} = \frac{d\tilde{Q}}{d\tau}
+= \frac{d\tilde{Q}}{dt}\frac{dt}{d\tau}
 = \gamma\left(ic\,e_0 + \mathbf{v}\right),
 $$
 
@@ -141,12 +141,12 @@ Every clock, whatever its state of motion, carries a four-velocity of the same n
 Two clocks at different places cannot be compared directly; they must be compared through signals. The **radar method** is the standard procedure. A signal leaves a clock at $A$ at the time $t_1$, is reflected by a mirror at $B$, and returns to $A$ at the time $t_3$. The reflection event at $B$ is at time $t_2$, and the two legs are null displacements:
 
 $$
-N(\tilde{X}_B - \tilde{X}_A) = 0,
+N(\tilde{Q}_B - \tilde{Q}_A) = 0,
 \qquad
-N(\tilde{X}_A' - \tilde{X}_B) = 0,
+N(\tilde{Q}_A' - \tilde{Q}_B) = 0,
 $$
 
-with $\tilde{X}_A' = ic\,t_3\,e_0+\mathbf{x}_A$ the reception event at the mirror's home position. Since $\mathbf{x}_A' = \mathbf{x}_A$, the spatial separation is the same on both legs, $|\mathbf{x}_B-\mathbf{x}_A| = L$, and the null conditions read
+with $\tilde{Q}_A' = ic\,t_3\,e_0+\mathbf{x}_A$ the reception event at the mirror's home position. Since $\mathbf{x}_A' = \mathbf{x}_A$, the spatial separation is the same on both legs, $|\mathbf{x}_B-\mathbf{x}_A| = L$, and the null conditions read
 
 $$
 c^2(t_2-t_1)^2 = L^2,
@@ -345,7 +345,7 @@ The exchange of information and the synchronisation of clocks are built from the
 
 1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta\mathbf{x}| = c\,\Delta t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta\mathbf{x} = \pm c\,\Delta t\,\hat{\mathbf{n}}$, and the retarded coordinate $u = t-\hat{\mathbf{n}}\cdot\mathbf{x}/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega u$.
 
-2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-N(d\tilde{X})}/c = \int\sqrt{1-\mathbf{v}^2/c^2}\,dt$, and the clock four-velocity is $\tilde{U} = d\tilde{X}/d\tau = \gamma(ic\,e_0+\mathbf{v})$ with $N(\tilde{U}) = -c^2$.
+2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-N(d\tilde{Q})}/c = \int\sqrt{1-\mathbf{v}^2/c^2}\,dt$, and the clock four-velocity is $\tilde{U} = d\tilde{Q}/d\tau = \gamma(ic\,e_0+\mathbf{v})$ with $N(\tilde{U}) = -c^2$.
 
 3. **Einstein synchronisation is the round trip.** For emission at $t_1$, reflection at $t_2$, reception at $t_3$, the null conditions give $t_2 = (t_1+t_3)/2$ and the distance $L = c(t_3-t_1)/2$. The split of the round trip into one-way times is fixed by the convention $t_2 = t_1+\varepsilon(t_3-t_1)$; the round-trip time is independent of $\varepsilon$, and only the two-way speed of light is measured.
 
@@ -367,15 +367,15 @@ The exchange of information and the synchronisation of clocks are built from the
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde{X} = ic\,t\,e_0+\mathbf{x}$ | Material four-position |
-| $\tilde{X}_{BA} = \tilde{X}_B-\tilde{X}_A$ | Displacement from $A$ to $B$ |
+| $\tilde{Q} = ic\,t\,e_0+\mathbf{x}$ | Material four-position |
+| $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |
 | $\mathrm{Sc}$ | Scalar projection |
 | $\hat{\mathbf{n}}$ | Propagation direction |
 | $u = t-\hat{\mathbf{n}}\cdot\mathbf{x}/c$, $v = t+\hat{\mathbf{n}}\cdot\mathbf{x}/c$ | Retarded and advanced radar coordinates |
 | $\tilde{K} = i\omega/c\,e_0+\mathbf{k}$ | Four-wavevector |
-| $\Phi = \mathrm{Sc}(\tilde{K}\bar{\tilde{X}}) = -\omega u$ | Plane-wave phase |
+| $\Phi = \mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = -\omega u$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$, $N(\tilde{U})=-c^2$ | Clock four-velocity |
 | $\beta = u/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |

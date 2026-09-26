@@ -181,7 +181,7 @@ The loss can be modelled by a single map. Let $\mathcal{M}$ be the algebra of ob
 $$
 E:\mathcal{M}\to\mathcal{N},
 \qquad
-E(X) = \int_{G} dU\;U X U^{-1},
+E(\tilde{Q}) = \int_{G} dU\;U \tilde{Q} U^{-1},
 $$
 
 averaging over the colour group with its normalized Haar measure, is a completely positive unital idempotent map: $E^2 = E$. It is the colour-singlet projection, and it is the natural model of what the asymptotic description retains. Applied to a state, it discards exactly the off-diagonal colour coherences and keeps the colour-neutral content, so that
@@ -313,7 +313,7 @@ What the framework cannot supply is the colour theory itself. The compact algebr
 | $\mathbf{r}\cdot\hat{\mathbf{n}}$ | Component along the charge axis; accessible content |
 | $R_{\hat{\mathbf{n}}}(\theta)$, $U = e^{i\theta n_a ie_a/2}$ | Charge rotation |
 | $S(\tilde{\rho}\|\tilde{\sigma})$ | Relative entropy; monotone under channels |
-| $E(X) = \int_G dU\, UXU^{-1}$ | Colour-singlet conditional expectation; idempotent channel |
+| $E(\tilde{Q}) = \int_G dU\, UXU^{-1}$ | Colour-singlet conditional expectation; idempotent channel |
 | $\beta_g = -(g^3/16\pi^2)b_0$, $b_0 = 11 - \tfrac{2}{3}N_f$ | One-loop running (transcribed) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing; $\mathrm{Tr}(e_0) = 2$ |
 | $\mathfrak{u}(2) = \mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |

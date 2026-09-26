@@ -5,7 +5,7 @@
 The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has been read, in the companion articles, in two ways. The article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* identifies the anti-Hermitian subspace $\mathbb{M}_-$ with Minkowski space: the four-vectors of relativistic physics live in $\mathbb{M}_-$, and the Lorentz group acts on them by the **rotor conjugation**
 
 $$
-\tilde{X} \;\longmapsto\; \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^{\dagger}.
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{\dagger}.
 $$
 
 The article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies the Hermitian subspace $\mathbb{M}_+$ with the operator algebra of a two-state system. Both accounts rest on a more primitive representation-theoretic fact: $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, so it has a two-dimensional complex module, and the Lorentz group acts on that module by **multiplication**. This module is the **spinor module**. It is the subject of the present article.
@@ -218,7 +218,7 @@ The action on the four-vector space is the conjugation map
 
 $$
 \pi:\; SL(2,\mathbb{C}) \longrightarrow SO^{+}(1,3), \qquad
-\pi(\tilde{\Lambda}):\; \tilde{X} \;\longmapsto\; \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^{\dagger}, \qquad \tilde{X}\in\mathbb{M}_-.
+\pi(\tilde{\Lambda}):\; \tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{\dagger}, \qquad \tilde{Q}\in\mathbb{M}_-.
 $$
 
 It is well defined (the image of an anti-Hermitian element is anti-Hermitian), it preserves the norm form, and it is a group homomorphism. Its kernel is
@@ -227,7 +227,7 @@ $$
 \ker\pi = \{\pm e_0\} \cong \mathbb{Z}/2\mathbb{Z},
 $$
 
-since $-e_0$ is central, $(-\tilde{\Lambda})\tilde{X}(-\tilde{\Lambda})^\dagger = \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ for every $\tilde{X}$ (the two signs cancel). Hence $\pi$ is **two-to-one** onto the proper orthochronous Lorentz group,
+since $-e_0$ is central, $(-\tilde{\Lambda})\tilde{Q}(-\tilde{\Lambda})^\dagger = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ for every $\tilde{Q}$ (the two signs cancel). Hence $\pi$ is **two-to-one** onto the proper orthochronous Lorentz group,
 
 $$
 SO^{+}(1,3) \;\cong\; SL(2,\mathbb{C})/\{\pm e_0\},
@@ -358,13 +358,13 @@ because $\tilde{\Lambda}^{\dagger}\tilde{\Lambda}^{*} = (\bar{\tilde{\Lambda}}\t
 Finally, the outer product of a spinor with its conjugate lands in the algebra. For $u,v\in S$, the matrix
 
 $$
-X = u\,v^{\dagger} \;\in\; M_2(\mathbb{C}) \;\cong\; \mathbb{B}
+\tilde{Q} = u\,v^{\dagger} \;\in\; M_2(\mathbb{C}) \;\cong\; \mathbb{B}
 $$
 
 is a rank-one element of the algebra, and under the Lorentz action $u\mapsto gu$ on the first spinor and the conjugate (right-handed) entry $v^{\dagger}\mapsto v^{\dagger}g^{\dagger}$ it transforms as
 
 $$
-X = u\,v^{\dagger} \;\longmapsto\; (gu)(gv)^{\dagger} = g\,X\,g^{\dagger}.
+\tilde{Q} = u\,v^{\dagger} \;\longmapsto\; (gu)(gv)^{\dagger} = g\,\tilde{Q}\,g^{\dagger}.
 $$
 
 This is exactly the transformation law of the **rotor conjugation** on the material sector. It must be read as a statement about the equivariance of the whole algebra $M_2(\mathbb{C})$, however, and not as the vector representation itself; two cautions are in order. First, the real span of the outer products $u v^{\dagger}$ as $u$ and $v$ range over $S$ is all of $M_2(\mathbb{C})$, of real dimension $8$, not the Hermitian subspace of real dimension $4$: the matrices $E_{12}$ and $iE_{12}$ are each a single outer product, realized by $u = e_1$, $v = e_2$ and by $u = e_1$, $v = -ie_2$ respectively, and they are independent over the reals. Second, $u v^{\dagger}$ is Hermitian **only** when the two spinors are proportional by a real factor, $v = \lambda u$ with $\lambda \in \mathbb{R}$; for a generic pair $i\,uv^{\dagger}$ does not lie in $\mathbb{M}_-$ at all, and is therefore not a four-vector.
@@ -392,7 +392,7 @@ The transformation laws are collected in the following table.
 | $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ | $S\times S\to\mathbb{C}$ | invariant | $g^{T}\epsilon g = \epsilon$ |
 | $h(\psi,\phi) = \psi^{\dagger}\phi$ | $S\times S\to\mathbb{C}$ | $\psi^{\dagger}g^{\dagger}g\,\phi$ | invariant iff $g\in SU(2)$ |
 | $b(\psi,\chi) = \psi^{\dagger}\chi$ | $S\times\bar{S}\to\mathbb{C}$ | invariant | $\tilde{\Lambda}^{\dagger}\tilde{\Lambda}^{*}=e_0$ |
-| $X = u\,v^{\dagger}$ | $S\times\bar{S}\to\mathbb{B}$ | $g\,X\,g^{\dagger}$ | equivariant |
+| $\tilde{Q} = u\,v^{\dagger}$ | $S\times\bar{S}\to\mathbb{B}$ | $g\,\tilde{Q}\,g^{\dagger}$ | equivariant |
 | $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$ | $S\times\bar{S}\to\mathbb{M}_+$ | $g\,H\,g^{\dagger}$ | Hermitian; four-vector is $iH$ |
 
 ## Spinor Action Versus Rotor Conjugation
@@ -401,19 +401,19 @@ It is worth stating the contrast in one place, since it is the conceptual centre
 
 | Feature | Four-vector action on $\mathbb{M}_-$ | Spinor action on $S$ |
 |---|---|---|
-| Formula | $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^{\dagger}$ | $\psi\mapsto\tilde{\Lambda}\psi$ |
+| Formula | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ | $\psi\mapsto\tilde{\Lambda}\psi$ |
 | Number of factors of $\tilde{\Lambda}$ | two (quadratic) | one (linear) |
 | Kernel of the action | $\{\pm e_0\}$ | $\{e_0\}$ |
 | Image group | $SO^{+}(1,3)$ | $SL(2,\mathbb{C})$ |
 | Action of $-e_0$ | $+\mathrm{id}$ | $-\mathrm{id}$ |
 | Descends to the Lorentz group? | yes | no |
 
-The two actions do not "differ by the double cover" in the sense that one is a cover of the other; rather, the four-vector action **factors through** the double cover while the spinor action does not. The conjugate parameter $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ describe the same Lorentz transformation of every four-vector, but opposite transformations of every spinor. For this reason the spinor representation is the representation of the **double cover** $SL(2,\mathbb{C})$, and the sign of the spinor is a genuine degree of freedom that no four-vector can see. The relation between the two actions is the bilinear map $X = u v^{\dagger}$ of the preceding section: the four-vector is a *pair* of spinors, and the two one-sided actions on the pair combine into the two-sided action on their product.
+The two actions do not "differ by the double cover" in the sense that one is a cover of the other; rather, the four-vector action **factors through** the double cover while the spinor action does not. The conjugate parameter $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ describe the same Lorentz transformation of every four-vector, but opposite transformations of every spinor. For this reason the spinor representation is the representation of the **double cover** $SL(2,\mathbb{C})$, and the sign of the spinor is a genuine degree of freedom that no four-vector can see. The relation between the two actions is the bilinear map $\tilde{Q} = u v^{\dagger}$ of the preceding section: the four-vector is a *pair* of spinors, and the two one-sided actions on the pair combine into the two-sided action on their product.
 
 A concrete illustration is the composition of two transformations. If $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ are rotors, then on four-vectors
 
 $$
-\tilde{\Lambda}_2(\tilde{\Lambda}_1\tilde{X}\tilde{\Lambda}_1^{\dagger})\tilde{\Lambda}_2^{\dagger} = (\tilde{\Lambda}_2\tilde{\Lambda}_1)\tilde{X}(\tilde{\Lambda}_2\tilde{\Lambda}_1)^{\dagger},
+\tilde{\Lambda}_2(\tilde{\Lambda}_1\tilde{Q}\tilde{\Lambda}_1^{\dagger})\tilde{\Lambda}_2^{\dagger} = (\tilde{\Lambda}_2\tilde{\Lambda}_1)\tilde{Q}(\tilde{\Lambda}_2\tilde{\Lambda}_1)^{\dagger},
 $$
 
 while on spinors
@@ -440,7 +440,7 @@ $$
 \operatorname{Spin}(1,3) \;\cong\; SL(2,\mathbb{C}) \;\subset\; \mathbb{B} \;\subset\; \mathrm{Cl}_{1,3}.
 $$
 
-Two distinct actions are then visible in the Clifford picture. The spin group acts on the spinor module by left multiplication — one-sided, because a Clifford module is a module and the action is linear. The same group acts on the vector space $W\subset\mathrm{Cl}_{1,3}$ (spanned by the odd generators) by a **two-sided conjugation** — the twisted adjoint, $v\mapsto\tilde{\Lambda}v\tilde{\Lambda}^{-1}$, written in the read-list conventions as the rotor conjugation $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^{\dagger}$ — which is two-sided because a vector is being conjugated inside the algebra. The vector representation is the tensor product of the spinor representation with its conjugate in the sense of the preceding section; the even subalgebra is exactly the algebra generated by the bivectors, and the bivectors are the Lie algebra of the spin group.
+Two distinct actions are then visible in the Clifford picture. The spin group acts on the spinor module by left multiplication — one-sided, because a Clifford module is a module and the action is linear. The same group acts on the vector space $W\subset\mathrm{Cl}_{1,3}$ (spanned by the odd generators) by a **two-sided conjugation** — the twisted adjoint, $v\mapsto\tilde{\Lambda}v\tilde{\Lambda}^{-1}$, written in the read-list conventions as the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ — which is two-sided because a vector is being conjugated inside the algebra. The vector representation is the tensor product of the spinor representation with its conjugate in the sense of the preceding section; the even subalgebra is exactly the algebra generated by the bivectors, and the bivectors are the Lie algebra of the spin group.
 
 This correspondence between the biquaternion algebra and the even Clifford subalgebra is the algebraic origin of the whole structure. It explains at once:
 
@@ -478,7 +478,7 @@ $$
 \qquad \tilde{\Lambda}\in SL(2,\mathbb{C}),\quad \psi\in S,
 $$
 
-with $\pm\tilde{\Lambda}$ acting differently ($-e_0$ acts as $-\mathrm{id}$). The four-vector action of the companion articles, $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^{\dagger}$ on $\mathbb{M}_-$, is recovered from the Hermitian part of the spinor bilinear, $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$, which transforms as $gHg^{\dagger}$ and whose four-vector image is $iH$. The spinor action is faithful and does not descend to the Lorentz group; the four-vector action has kernel $\{\pm e_0\}$ and does. This is the double cover, seen from the module side.
+with $\pm\tilde{\Lambda}$ acting differently ($-e_0$ acts as $-\mathrm{id}$). The four-vector action of the companion articles, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ on $\mathbb{M}_-$, is recovered from the Hermitian part of the spinor bilinear, $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$, which transforms as $gHg^{\dagger}$ and whose four-vector image is $iH$. The spinor action is faithful and does not descend to the Lorentz group; the four-vector action has kernel $\{\pm e_0\}$ and does. This is the double cover, seen from the module side.
 
 The spinor module carries three bilinear structures and one equivariant bilinear map: the symplectic form $\varepsilon$ (invariant, and the source of self-duality $S^{*}\cong S$), the Hermitian form $h$ (invariant only on the compact subgroup $SU(2)$), the mixed pairing $b:S\times\bar{S}\to\mathbb{C}$ (invariant, the Dirac scalar bilinear), and the outer product $S\times\bar{S}\to\mathbb{B}$, whose Hermitian part $H$ carries the vector representation. The algebraic origin of the one-sided spinor action and the two-sided four-vector action is the identification $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$: the spin group lies in the even subalgebra and acts on a Clifford module by left multiplication, while it acts on the odd part by twisted conjugation.
 

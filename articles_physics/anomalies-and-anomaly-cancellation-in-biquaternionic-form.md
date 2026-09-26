@@ -225,10 +225,10 @@ with one factor of each left- and each right-handed field. The operator has the 
 **The chiral trace is a difference of Weyl traces.** In the block decomposition $\Delta=S\oplus\bar{S}$ with $\gamma_5=\mathrm{diag}(-I_2,I_2)$, a trace with a chirality insertion splits:
 
 $$
-\mathrm{tr}\big(\gamma_5 X\big) = -\,\mathrm{tr}_S(X_{LL}) + \mathrm{tr}_S(X_{RR}) = \mathrm{tr}_S(X_{RR})-\mathrm{tr}_S(X_{LL}),
+\mathrm{tr}\big(\gamma_5 M\big) = -\,\mathrm{tr}_S(M_{LL}) + \mathrm{tr}_S(M_{RR}) = \mathrm{tr}_S(M_{RR})-\mathrm{tr}_S(M_{LL}),
 $$
 
-so the chirality-weighted trace is the **difference** of the two Weyl traces. For $X=I_4$ both halves contribute their dimension and the difference vanishes, $\mathrm{tr}(\gamma_5)=2-2=0$, which is the recomputed identity that makes the anomaly compatible with Lorentz invariance. The same splitting is the algebraic origin of the left-minus-right rule: a left-handed Weyl fermion in $S$ contributes its Weyl trace with one sign and a right-handed one with the other, and the anomaly is their difference.
+so the chirality-weighted trace is the **difference** of the two Weyl traces. For $M=I_4$ both halves contribute their dimension and the difference vanishes, $\mathrm{tr}(\gamma_5)=2-2=0$, which is the recomputed identity that makes the anomaly compatible with Lorentz invariance. The same splitting is the algebraic origin of the left-minus-right rule: a left-handed Weyl fermion in $S$ contributes its Weyl trace with one sign and a right-handed one with the other, and the anomaly is their difference.
 
 **The trace that is not involved.** The framework's informational trace formula, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, is the state-and-observable pairing of the Hermitian sector $\mathbb{M}_+$; it counts the scalar part of a product with the factor $\mathrm{Tr}(e_0)=2$. It is **not** the trace that computes an anomaly. The anomaly trace is the ordinary matrix trace over the gauge representation and the ordinary Clifford trace over the module; neither is the scalar-part pairing, and substituting one for the other would be a category error. The trace formula of $\mathbb{M}_+$ is used in the companion articles for expectation values of observables; the anomaly uses the traces of the module. The distinction is stated here because the two are both called "the trace" in the series.
 

@@ -51,7 +51,7 @@ $$
 This is the standard **mostly-minus** convention, and it is the one the corpus uses throughout: the generators are the usual ones, the name is correct in the standard counting, and the square of a Clifford vector agrees with the biquaternion norm of the biquaternion the vector represents instead of differing by a sign. The $\mathbb{M}_-$ interval is a *separate* object — it belongs to the $ict$ gradient and not to the generators — and reads $ds^2 = -c^2\,dt^2 + d\mathbf{x}^2$, i.e.
 
 $$
-N(d\tilde{X}) = d\tilde{X}\circ\overline{d\tilde{X}} = (ic\,dt)^2 + d\mathbf{x}^2 = -c^2\,dt^2 + d\mathbf{x}^2 ,
+N(d\tilde{Q}) = d\tilde{Q}\circ\overline{d\tilde{Q}} = (ic\,dt)^2 + d\mathbf{x}^2 = -c^2\,dt^2 + d\mathbf{x}^2 ,
 $$
 
 with the minus arising from $i^2 = -1$ and not from the generators' metric. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$, and it is the level-2 object of the companion *Conventions in the Biquaternion Universe*; $g$ is the level-3 metric of the generators.
@@ -481,7 +481,7 @@ The dictionary so far has mapped objects; it is worth stating the two ways an el
 **Mechanism two: conjugation, on the algebra.** A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation
 
 $$
-\tilde X \;\mapsto\; \tilde\Lambda\,\tilde X\,\tilde\Lambda^\dagger,
+\tilde{Q} \;\mapsto\; \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^\dagger,
 \qquad \tilde\Lambda\in\mathbb{B},\quad N(\tilde\Lambda)=1,
 $$
 
@@ -498,7 +498,7 @@ The same fact shows up as a closure failure. Left multiplication by a general el
 | chirality projectors $\tfrac12(1\pm\gamma_5)$ | central idempotents of $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$ | on the complexified module | — |
 | mass $m$, phase $\lambda$ | center $\mathbb{C}_{\mathbb{B}}$ | scalar multiplication | $0$ |
 | gradient $\tilde{\nabla}$ acting on a field | $\mathbb{B}$ | left multiplication | — |
-| four-vector (momentum, position) | $\mathbb{M}_-\subset\mathbb{B}$ | conjugation $\tilde\Lambda\tilde X\tilde\Lambda^\dagger$ | $1$ |
+| four-vector (momentum, position) | $\mathbb{M}_-\subset\mathbb{B}$ | conjugation $\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$ | $1$ |
 | gauge potential, four-current | $\mathbb{M}_-$ | conjugation | $1$ |
 | field strength, Lorentz generator | the algebra's vector part | conjugation | $1$ |
 
@@ -587,4 +587,4 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 
 ## Further Reading
 
-- Companion articles: *Biquaternion Algebra* (the definition, the four conjugations, and the four real subspaces); *Biquaternion Algebraic Representations* (the $2\times 2$ matrix representation, the trace, and the Clifford-algebra isomorphism on which this dictionary is built); *Clifford Algebras* (the general definition and the fundamental relation); *Clifford Algebras in Finite Dimensions* (the classification of the low-dimensional real Clifford algebras); *Clifford Algebras and Bott Periodicity* (the periodic structure); *The Dirac Equation in Biquaternionic Form* (the gradient, the mass term, and the plane-wave solutions); *Spinors* (the spinor representation); *The Spinor Module in Biquaternionic Form and Its Lorentz Action* (the module on which the even algebra acts); *The Spinor Representation of the Lorentz Group in Biquaternionic Form* (the Lorentz generators in biquaternion form); *Chiral Fermions in the Biquaternion Framework* and *Exercise: Chirality and the Weyl Spinors* ($\gamma_5$, the chiral projectors, and the Weyl spinors); *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (the two sectors whose Clifford images are tabulated here); *Introduction to the Biquaternion Universe* (the algebra and the two sectors).
+- Companion articles: *Biquaternion Algebra* (the definition, the four conjugations, and the four real subspaces); *Biquaternion 2×2 Matrix Representation* (the $2\times 2$ matrix representation and the trace) and *Biquaternion Other Algebraic Representations* (the Clifford-algebra isomorphism on which this dictionary is built); *Clifford Algebras* (the general definition and the fundamental relation); *Clifford Algebras in Finite Dimensions* (the classification of the low-dimensional real Clifford algebras); *Clifford Algebras and Bott Periodicity* (the periodic structure); *The Dirac Equation in Biquaternionic Form* (the gradient, the mass term, and the plane-wave solutions); *Spinors* (the spinor representation); *The Spinor Module in Biquaternionic Form and Its Lorentz Action* (the module on which the even algebra acts); *The Spinor Representation of the Lorentz Group in Biquaternionic Form* (the Lorentz generators in biquaternion form); *Chiral Fermions in the Biquaternion Framework* and *Exercise: Chirality and the Weyl Spinors* ($\gamma_5$, the chiral projectors, and the Weyl spinors); *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (the two sectors whose Clifford images are tabulated here); *Introduction to the Biquaternion Universe* (the algebra and the two sectors).

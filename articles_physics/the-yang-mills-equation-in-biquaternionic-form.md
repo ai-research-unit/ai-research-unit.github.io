@@ -37,7 +37,7 @@ The division between what is established and what is interpretation is kept expl
 
 The constructions of this article are those of its two parents, and they are recalled here only far enough to fix the conventions the field equation uses.
 
-The connection is an $\mathfrak{su}(2)$-valued one-form, $\mathcal{A}_\mu$, and the covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Under a local gauge transformation $U(\tilde{X})\in SU(2)$ the connection and field strength transform in the adjoint representation,
+The connection is an $\mathfrak{su}(2)$-valued one-form, $\mathcal{A}_\mu$, and the covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Under a local gauge transformation $U(\tilde{Q})\in SU(2)$ the connection and field strength transform in the adjoint representation,
 
 $$
 \mathcal{A}'_\mu = U\mathcal{A}_\mu U^{-1} + \frac{i}{\kappa}(\partial_\mu U)U^{-1},
@@ -47,26 +47,26 @@ $$
 
 and $F_{\mu\nu}$ is *not* gauge invariant: it is an algebra element rotated by the group. The covariance of the first-order operator is what forces the inhomogeneous term in the first law.
 
-Two derived objects carry the rest of the article. The first is the **adjoint covariant derivative**, the action of the gauge connection on an algebra-valued field $X$:
+Two derived objects carry the rest of the article. The first is the **adjoint covariant derivative**, the action of the gauge connection on an algebra-valued field $\tilde{Q}$:
 
 $$
-D_\lambda X = \partial_\lambda X + i\kappa\,[\mathcal{A}_\lambda, X].
+D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa\,[\mathcal{A}_\lambda, \tilde{Q}].
 $$
 
-It is the unique first-order operator whose action on $X$ is the commutator of the covariant derivative operator with multiplication by $X$. Recomputing that commutator directly,
+It is the unique first-order operator whose action on $\tilde{Q}$ is the commutator of the covariant derivative operator with multiplication by $\tilde{Q}$. Recomputing that commutator directly,
 
 $$
-[D_\lambda, X]\Psi = D_\lambda(X\Psi) - X(D_\lambda\Psi)
-= (\partial_\lambda X + i\kappa[\mathcal{A}_\lambda,X])\Psi,
+[D_\lambda, \tilde{Q}]\Psi = D_\lambda(\tilde{Q}\Psi) - \tilde{Q}(D_\lambda\Psi)
+= (\partial_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}])\Psi,
 $$
 
 for every $\Psi$, so that as operators
 
 $$
-[D_\lambda, X] = D_\lambda X,
+[D_\lambda, \tilde{Q}] = D_\lambda \tilde{Q},
 $$
 
-with $X$ read as multiplication by the algebra element. (The notation table and the Bianchi discussion of *Non-Abelian Gauge Fields in Biquaternionic Form* print $[D_\lambda,X] = i\kappa D_\lambda X$; that line is not consistent with the definition $D_\lambda X = \partial_\lambda X + i\kappa[\mathcal{A}_\lambda,X]$ given in the same article, and the factor $i\kappa$ is an evident slip — the operator commutator is first order in $\partial_\lambda$ and equal to multiplication by $D_\lambda X$. The Bianchi identity itself is unaffected, because the substitution that produces it is the same either way once the identity is corrected. The recomputed identity $[D_\lambda,X] = D_\lambda X$ is the one used here, and it was checked numerically — see the companion.) The second is the **Bianchi identity**,
+with $\tilde{Q}$ read as multiplication by the algebra element. (The notation table and the Bianchi discussion of *Non-Abelian Gauge Fields in Biquaternionic Form* print $[D_\lambda,\tilde{Q}] = i\kappa D_\lambda \tilde{Q}$; that line is not consistent with the definition $D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ given in the same article, and the factor $i\kappa$ is an evident slip — the operator commutator is first order in $\partial_\lambda$ and equal to multiplication by $D_\lambda \tilde{Q}$. The Bianchi identity itself is unaffected, because the substitution that produces it is the same either way once the identity is corrected. The recomputed identity $[D_\lambda,\tilde{Q}] = D_\lambda \tilde{Q}$ is the one used here, and it was checked numerically — see the companion.) The second is the **Bianchi identity**,
 
 $$
 D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0,
@@ -176,7 +176,7 @@ The ordinary divergence does not vanish. For a generic non-abelian connection it
 
 ## The Abelian Limit
 
-The abelian case is the case of a **commuting generator set**: the connection takes values in a one-dimensional subalgebra, so that all its coefficients commute. Two settings realise it in the framework. The parent's abelian connection lies in the center $\mathbb{C}_{\mathbb{B}}$, whose imaginary scalar $ie_0$ commutes with every biquaternion; and any connection proportional to a single fixed generator, $\mathcal{A}_\mu = a_\mu(\tilde{X})\,e_1$, has commuting coefficients even though $e_1$ is not central. The reduction to Maxwell is the same in both, and it is worth saying exactly which terms vanish and why.
+The abelian case is the case of a **commuting generator set**: the connection takes values in a one-dimensional subalgebra, so that all its coefficients commute. Two settings realise it in the framework. The parent's abelian connection lies in the center $\mathbb{C}_{\mathbb{B}}$, whose imaginary scalar $ie_0$ commutes with every biquaternion; and any connection proportional to a single fixed generator, $\mathcal{A}_\mu = a_\mu(\tilde{Q})\,e_1$, has commuting coefficients even though $e_1$ is not central. The reduction to Maxwell is the same in both, and it is worth saying exactly which terms vanish and why.
 
 Write $\mathcal{A}_\mu = a_\mu\,g$ for a fixed generator $g$ with $a_\mu$ scalar functions (for the center, $g = ie_0$; for a single spatial generator, $g = e_1$). Then
 
@@ -296,7 +296,7 @@ The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
 | $\mathfrak{su}(2) = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
 | $T_a = \tfrac12 e_a$, $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$ | Normalized generators; matrix trace |
-| $U(\tilde{X}) \in SU(2)$ | Unit real quaternion, $U^{-1} = \bar U = U^\dagger$ |
+| $U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $U^{-1} = \bar U = U^\dagger$ |
 | $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathfrak{su}(2)$, $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$ | Non-abelian connection |
 | $\kappa = q/\hbar$ | Coupling |
 | $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, $D = \tilde{\nabla} + i\kappa\mathcal{A}$ | Covariant derivative (left multiplication on matter) |
@@ -304,7 +304,7 @@ The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J
 | $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian curvature |
 | $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$ | Adjoint transformation of the curvature (not invariant) |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as commutator of covariant derivatives |
-| $D_\lambda X = \partial_\lambda X + i\kappa[\mathcal{A}_\lambda,X]$ | Adjoint covariant derivative; $[D_\lambda,X] = D_\lambda X$ |
+| $D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative; $[D_\lambda,\tilde{Q}] = D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$ | Bianchi identity (homogeneous half) |
 | $J^\nu = D_\mu F^{\mu\nu} = \partial_\mu F^{\mu\nu} + i\kappa[\mathcal{A}_\mu,F^{\mu\nu}]$ | Yang–Mills current (source) |
 | $D_\mu F^{\mu\nu} = J^\nu$ | Yang–Mills equation |

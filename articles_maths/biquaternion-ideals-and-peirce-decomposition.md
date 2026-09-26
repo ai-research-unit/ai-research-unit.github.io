@@ -34,10 +34,10 @@ $$
 E_{ij} E_{kl} = \delta_{jk} E_{il},
 $$
 
-from which $E_{ik} X E_{lj} = X_{kl} E_{ij}$ for any matrix $X = (X_{kl})$. If $I \neq 0$ is a two-sided ideal and $X \in I$ has $X_{kl} \neq 0$, then
+from which $E_{ik} M E_{lj} = M_{kl} E_{ij}$ for any matrix $M = (M_{kl})$. If $I \neq 0$ is a two-sided ideal and $M \in I$ has $M_{kl} \neq 0$, then
 
 $$
-E_{ij} = X_{kl}^{-1} E_{ik} X E_{lj} \in I.
+E_{ij} = M_{kl}^{-1} E_{ik} M E_{lj} \in I.
 $$
 
 Hence $I$ contains every matrix unit, so $I = M_2(\mathbb{C})$. Transporting back gives the claim. $\square$
@@ -67,31 +67,21 @@ With the idempotents $p, q$ of Section 4 this reads $\mathbb{B} = \mathbb{B}p \o
 
 ## 4. Idempotents and Orthogonal Idempotents
 
-Let $A$ be an associative unital algebra. An element $e \in A$ is an **idempotent** if $e^2 = e$. Idempotents encode direct summands: for idempotent $e$,
-
-$$
-A = Ae \oplus A(1-e) \quad (\text{left}), \qquad A = eA \oplus (1-e)A \quad (\text{right}),
-$$
-
-and every such decomposition of the regular module arises from an idempotent. Two idempotents $e, f$ are **orthogonal** if $ef = fe = 0$; then $e+f$ is again idempotent. A family $\{e_1, \dots, e_n\}$ is pairwise orthogonal if $e_i e_j = 0$ for $i \neq j$, and **complete** if in addition $\sum_i e_i = 1$. A nonzero idempotent $e$ is **primitive** if it is not a sum of two nonzero orthogonal idempotents. The criterion used below, for a semisimple algebra $A$, is
+Let $A$ be an associative unital algebra. An element $e \in A$ is an **idempotent** if $e^2 = e$, and two idempotents $e, f$ are **orthogonal** if $ef = fe = 0$. A nonzero idempotent $e$ is **primitive** if it is not a sum of two nonzero orthogonal idempotents, and for a semisimple algebra
 
 $$
 e \text{ primitive} \iff Ae \text{ is a minimal left ideal} \iff eAe \text{ is a division ring}.
 $$
 
-**Explicit idempotents in $\mathbb{B}$.** Over $\mathbb{C}$, put
+Over $\mathbb{C}$, the idempotents
 
 $$
-p = \frac{e_0 + i e_3}{2}, \qquad q = \frac{e_0 - i e_3}{2}.
+p = \frac{e_0 + i e_3}{2}, \qquad q = \frac{e_0 - i e_3}{2}
 $$
 
-Since $(i e_3)^2 = i^2 e_3^2 = (-1)(-1) = 1$, one has $p^2 = p$, $q^2 = q$ and
+satisfy $p^2 = p$, $q^2 = q$, $pq = qp = 0$ and $p + q = e_0$, and correspond to the diagonal matrix units $E_{11}$ and $E_{22}$. They are primitive, and they generate the matrix units of the next section.
 
-$$
-pq = qp = \frac{e_0 - (i e_3)^2}{4} = 0, \qquad p + q = e_0.
-$$
-
-So $p$ and $q$ are orthogonal idempotents summing to the unit. They are not central: $e_1$ anticommutes with $i e_3$, hence does not commute with $p$ or $q$. Under $\mathbb{B} \cong M_2(\mathbb{C})$ they correspond to the diagonal matrix units, and each is primitive.
+The classification of the idempotents of $\mathbb{B}$ — the trivial idempotents, the bijection with the roots of $-1$, the Hermitian projections and the dimension of the idempotent set — is the subject of *Biquaternion Idempotents and Projections*.
 
 ## 5. Matrix Units in the Biquaternion Algebra
 

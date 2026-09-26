@@ -400,10 +400,22 @@ $$
 The **Hermitian form** of a biquaternion $\tilde{Q}$ is the biquaternion
 
 $$
-\tilde{Q} \tilde{Q}^\dagger = \sum_{\mu=0}^{3} |Q_\mu|^2 + \text{(vector terms)},
+\tilde{Q} \tilde{Q}^\dagger =
+\Big( \sum_{\mu=0}^{3} |Q_\mu|^2 \Big) e_0
++ \Big( Q_0^* \mathbf{Q} - Q_0 \mathbf{Q}^* - [\mathbf{Q}, \mathbf{Q}^*] \Big),
 $$
 
-where $\tilde{Q}^\dagger$ is the Hermitian conjugate. This is generally a **biquaternion**, not a real scalar: its scalar part is $\sum_\mu |Q_\mu|^2$, but its vector part need not vanish. For example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^\dagger = e_0 + ie_1$ and
+where $\tilde{Q}^\dagger$ is the Hermitian conjugate, $\mathbf{Q} = \sum_{k=1}^{3} Q_k e_k$ is the vector part of $\tilde{Q}$, $\mathbf{Q}^* = \sum_{k=1}^{3} Q_k^* e_k$ is its coefficient-wise conjugate, and $[\mathbf{Q}, \mathbf{Q}^*]$ is the complex bilinear cross product of the product formula above. In terms of the real and imaginary coefficient vectors, $Q_\mu = q_\mu + i q'_\mu$, $\mathbf{q} = \sum_k q_k e_k$, $\mathbf{q}' = \sum_k q'_k e_k$, this is
+
+$$
+\tilde{Q} \tilde{Q}^\dagger =
+\Big( \sum_{\mu=0}^{3} |Q_\mu|^2 \Big) e_0
++ 2i\Big( q_0 \mathbf{q}' - q'_0 \mathbf{q} + [\mathbf{q}, \mathbf{q}'] \Big),
+$$
+
+with $[\mathbf{q}, \mathbf{q}']$ the ordinary cross product, since $[\mathbf{Q}, \mathbf{Q}^*] = -2i[\mathbf{q}, \mathbf{q}']$ and $Q_0^* \mathbf{Q} - Q_0 \mathbf{Q}^* = 2i(q_0 \mathbf{q}' - q'_0 \mathbf{q})$.
+
+So the **vector terms** are not arbitrary: they are the vector part of the product, built from the two vectors $\mathbf{Q}$ and $\mathbf{Q}^*$ and the scalar $Q_0$. This is generally a **biquaternion**, not a real scalar, and it is Hermitian: $\tilde{Q}\tilde{Q}^\dagger$ is fixed by $\dagger$, hence lies in the Hermitian subspace $\mathbb{M}_+ = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\}$ of the Hermitian decomposition below. Its scalar part is $\sum_\mu |Q_\mu|^2$; its vector part vanishes exactly when the four coefficients $Q_\mu$ are all real multiples of one complex number, $Q_\mu = \lambda r_\mu$ with $\lambda \in \mathbb{C}$ and $r_\mu \in \mathbb{R}$ — equivalently, when every ratio $Q_\mu/Q_\nu$ of nonzero coefficients is real. For example, for $\tilde{Q} = e_0 + ie_1$ the coefficients are $Q_0 = 1$ and $Q_1 = i$, not real multiples of one another, so the vector part does not vanish: $\tilde{Q}^\dagger = e_0 + ie_1$ and
 
 $$
 \tilde{Q}\tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,

@@ -263,13 +263,13 @@ This is the article's second main formula. It is the entropy of the classical re
 
 Coarse-graining cannot decrease the entropy. The proof has two steps, and both are standard.
 
-The first step is that a unital, completely positive, trace-preserving map is a **contraction of the Bloch ball**. This is the Kadison–Schwarz inequality: for a unital completely positive map $\Phi$ one has $\Phi(\tilde{X})^2 \leq \Phi(\tilde{X}^2)$ in the matrix order. Taking the trace, and using trace preservation in the form $\mathrm{Tr}(\Phi(\tilde{X}^2)) = \mathrm{Tr}(\tilde{X}^2)$,
+The first step is that a unital, completely positive, trace-preserving map is a **contraction of the Bloch ball**. This is the Kadison–Schwarz inequality: for a unital completely positive map $\Phi$ one has $\Phi(\tilde{Q})^2 \leq \Phi(\tilde{Q}^2)$ in the matrix order. Taking the trace, and using trace preservation in the form $\mathrm{Tr}(\Phi(\tilde{Q}^2)) = \mathrm{Tr}(\tilde{Q}^2)$,
 
 $$
-\mathrm{Tr}\!\left(\Phi(\tilde{X})^2\right) \le \mathrm{Tr}\!\left(\Phi(\tilde{X}^2)\right) = \mathrm{Tr}\!\left(\tilde{X}^2\right),
+\mathrm{Tr}\!\left(\Phi(\tilde{Q})^2\right) \le \mathrm{Tr}\!\left(\Phi(\tilde{Q}^2)\right) = \mathrm{Tr}\!\left(\tilde{Q}^2\right),
 $$
 
-and with $\tilde{X} = \tilde{\rho}$ this is the purity inequality $\mathrm{Tr}(\Phi(\tilde{\rho})^2) \le \mathrm{Tr}(\tilde{\rho}^2)$. By the purity formula $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$ this is exactly
+and with $\tilde{Q} = \tilde{\rho}$ this is the purity inequality $\mathrm{Tr}(\Phi(\tilde{\rho})^2) \le \mathrm{Tr}(\tilde{\rho}^2)$. By the purity formula $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$ this is exactly
 
 $$
 |\mathbf{r}_\Phi| \le |\mathbf{r}| ,

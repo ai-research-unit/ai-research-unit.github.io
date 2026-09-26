@@ -48,7 +48,7 @@ with $L=\int d^3x\,\mathcal{L}$; the phase-space form is obtained by inserting a
 In the framework's notation the field is central-valued and the weight is a central phase,
 
 $$
-\tilde{\Phi}(\tilde{X})=\phi(\tilde{X})e_0,
+\tilde{\Phi}(\tilde{Q})=\phi(\tilde{Q})e_0,
 \qquad
 S[\tilde{\Phi}]=\int d^4x\left[-\mathrm{Sc}\!\left[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})\right]-\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^\dagger\tilde{\Phi}\right)\right],
 $$
@@ -205,7 +205,7 @@ $$
 Z_E=\int\mathcal{D}\tilde{\Phi}\;e^{-S_E[\tilde{\Phi}]/\hbar},
 $$
 
-a sum of positive weights. The step from the material coordinate $\tilde{X}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ to its Euclidean form is the replacement of the imaginary time coefficient by a real one, i.e. the passage to the quaternion subspace on which the norm form is positive definite; this is the framework's reading of the Wick rotation, and it is the reason the Euclidean Gaussian converges. The action is central, the weight is positive and central, and the configuration space is unchanged.
+a sum of positive weights. The step from the material coordinate $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ to its Euclidean form is the replacement of the imaginary time coefficient by a real one, i.e. the passage to the quaternion subspace on which the norm form is positive definite; this is the framework's reading of the Wick rotation, and it is the reason the Euclidean Gaussian converges. The action is central, the weight is positive and central, and the configuration space is unchanged.
 
 **The lattice regulator.** Discretizing the Euclidean direction on a lattice of spacing $h$, the quadratic form of one degree of freedom is a tridiagonal matrix with diagonal $a=2/h^2+\mu^2$ and off-diagonal $b=-1/h^2$, and its determinant obeys the recursion
 
@@ -274,7 +274,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 **The quadratic form is the norm form.** The momentum-space symbol of the Gaussian's operator is $-(N(\tilde{K})+\mu^2)$ with $N(\tilde{K})=\tilde{K}\bar{\tilde{K}}$, and it vanishes on the mass shell, the level set $N(\tilde{K})=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three readings of one algebraic object, and the framework's convention for $\Box$ makes them mutually consistent.
 
-**The phase is central, and the Wick rotation is a sector relabelling.** The phase $e^{iS/\hbar}$ is a central unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde{X}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the norm form is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
+**The phase is central, and the Wick rotation is a sector relabelling.** The phase $e^{iS/\hbar}$ is a central unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the norm form is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
 
 **The algebra supplies nothing beyond the center.** There is no bosonic ladder in $\mathbb{B}$, as the companion Fock-space article's trace argument shows, so the mode expansion, the Fock space and the perturbative expansion that the path integral organises are all constructed on an imported module. The functional integral's algebraic content is exhausted by the centrality of the field and the norm-form geometry of the quadratic form.
 
@@ -308,7 +308,7 @@ The framework's contribution is the centrality of the configuration space, the n
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center; the configuration space's value space |
 | $\tilde{\Phi}=\phi\,e_0$, $\tilde J=J\,e_0$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Scalar field and central source; real components |
-| $\tilde{X}=ict\,e_0+\mathbf{x}$ | Material coordinate |
+| $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material coordinate |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$, $\Box=\partial_{ict}^2+\Delta$ | Gradient and d'Alembertian |
 | $S[\tilde{\Phi}]$ | Central scalar action |
 | $Z[\tilde J]=\int\mathcal{D}\tilde{\Phi}\,e^{\,iS+i\int[\mathrm{Sc}(\tilde J^\dagger\tilde{\Phi})+\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde J)]}$ | Generating functional |

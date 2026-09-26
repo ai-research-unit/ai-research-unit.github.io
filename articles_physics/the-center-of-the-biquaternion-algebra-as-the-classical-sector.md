@@ -4,9 +4,9 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is non-commutative, and the failure of commutativity is what makes it a quantum algebra. It is therefore natural to ask which part of it **does** commute, and the answer is the centre $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})$. The thesis of this article is that the centre is the framework's canonical classical sector: it is the largest commuting subalgebra that is fixed by the whole symmetry group, the part of the algebra whose Hermitian elements are the real multiples of the unit and on which the Hermitian conjugation reduces to complex conjugation, and the home of the $c$-number parameters that a quantum theory needs.
 
-The centre is small. Writing $\tilde{X}=x_0e_0+x_1e_1+x_2e_2+x_3e_3$, one finds
+The centre is small. Writing $\tilde{Q}=x_0e_0+x_1e_1+x_2e_2+x_3e_3$, one finds
 $$
-Z(\mathbb{B})=\bigl\{\tilde{X}:\tilde{X}\tilde{Y}=\tilde{Y}\tilde{X}\ \ \forall\tilde{Y}\bigr\}
+Z(\mathbb{B})=\bigl\{\tilde{Q}:\tilde{Q}\tilde{Y}=\tilde{Y}\tilde{Q}\ \ \forall\tilde{Y}\bigr\}
 =\bigl\{x_0e_0:\ x_0\in\mathbb{C}\bigr\}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C},
 $$
 a **two-real-dimensional** commutative subalgebra, with Hermitian part
@@ -15,7 +15,7 @@ Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_0
 $$
 of real dimension one. So the classical sector of the algebra is one-dimensional in the operator sense: the only Hermitian central element is a real multiple of the identity. Three consequences follow, and together they are the content of the article.
 
-First, **the centre is exactly the set of observables invariant under every symmetry.** The adjoint action $\tilde{X}\mapsto\tilde{U}\tilde{X}\tilde{U}^\dagger$ of the unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.
+First, **the centre is exactly the set of observables invariant under every symmetry.** The adjoint action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^\dagger$ of the unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.
 
 Second, **the centre is the classical sector in the literal sense of $c$-numbers.** Central elements are the ones that multiply every element on the same side, so they are the scalars with respect to which all algebraic operations are linear. The framework's external parameters — $\hbar$, the speed $c$, a mass $m$, a coupling constant — enter the equations as real multiples of $e_0$, hence as central elements, and the chirality-off-diagonal mass of the linear extension enters as the central coefficient $m e_0$. The centre is where the theory's classical data live.
 
@@ -31,21 +31,21 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{X},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{X}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
 
 ## The Center: Definition and Computation
 
 **Definition.** The centre of $\mathbb{B}$ is the set of elements that commute with every element,
 $$
-Z(\mathbb{B})=\bigl\{\tilde{X}\in\mathbb{B}:\ \tilde{X}\tilde{Y}=\tilde{Y}\tilde{X}\ \text{for all }\tilde{Y}\in\mathbb{B}\bigr\}.
+Z(\mathbb{B})=\bigl\{\tilde{Q}\in\mathbb{B}:\ \tilde{Q}\tilde{Y}=\tilde{Y}\tilde{Q}\ \text{for all }\tilde{Y}\in\mathbb{B}\bigr\}.
 $$
 Equivalently, since $\mathbb{B}$ is generated as a real algebra by $e_0,e_1,e_2,e_3,i$, an element is central if and only if it commutes with $e_1,e_2,e_3$ and with $i$; commutation with $i$ is automatic because $i$ is central, and commutation with $e_0$ is automatic because $e_0$ is the unit.
 
-**Computation.** Write $\tilde{X}=x_0e_0+\mathbf{x}$ with $\mathbf{x}=x_1e_1+x_2e_2+x_3e_3$ the pure-quaternion part. For $k=1,2,3$,
+**Computation.** Write $\tilde{Q}=x_0e_0+\mathbf{x}$ with $\mathbf{x}=x_1e_1+x_2e_2+x_3e_3$ the pure-quaternion part. For $k=1,2,3$,
 $$
-[\tilde{X},e_k]=[\mathbf{x},e_k]=2\,\mathbf{x}\times e_k ,
+[\tilde{Q},e_k]=[\mathbf{x},e_k]=2\,\mathbf{x}\times e_k ,
 $$
-where the cross product is that of $\mathbb{R}^3$ under the identification $e_j\leftrightarrow$ the $j$-th basis vector. If $\tilde{X}$ is central then $[\tilde{X},e_k]=0$ for all $k$, so $\mathbf{x}\times e_k=0$ for $k=1,2,3$. Since $e_1,e_2,e_3$ span $\mathbb{R}^3$, this forces $\mathbf{x}=0$. Hence a central element is a complex multiple of the unit,
+where the cross product is that of $\mathbb{R}^3$ under the identification $e_j\leftrightarrow$ the $j$-th basis vector. If $\tilde{Q}$ is central then $[\tilde{Q},e_k]=0$ for all $k$, so $\mathbf{x}\times e_k=0$ for $k=1,2,3$. Since $e_1,e_2,e_3$ span $\mathbb{R}^3$, this forces $\mathbf{x}=0$. Hence a central element is a complex multiple of the unit,
 $$
 \boxed{\ Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\bigl\{x_0e_0:\ x_0\in\mathbb{C}\bigr\}=\mathbb{C}e_0\cong\mathbb{C}.\ }
 $$
@@ -79,7 +79,7 @@ N(\lambda e_0)=\lambda^2e_0 ,
 $$
 which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $N(ae_0)=a^2e_0\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $N(ibe_0)=-b^2e_0\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the norm form indefinite (on the complexified directions). The verification of $N(\lambda e_0)=\lambda^2e_0$ for representative $\lambda$ is elementary and was checked numerically.
 
-**Commutativity and associativity.** The centre is commutative, $\tilde{X}\tilde{Y}=\tilde{Y}\tilde{X}$, and associative, being a subalgebra; its multiplication is complex multiplication,
+**Commutativity and associativity.** The centre is commutative, $\tilde{Q}\tilde{Y}=\tilde{Y}\tilde{Q}$, and associative, being a subalgebra; its multiplication is complex multiplication,
 $$
 (\lambda e_0)(\mu e_0)=(\lambda\mu)e_0 ,
 $$
@@ -89,28 +89,28 @@ and its unit is $e_0$. As a real algebra, $Z(\mathbb{B})\cong\mathbb{C}$; as a c
 
 The centre can be described from five directions, and the equivalence of the descriptions is what makes it canonical rather than conventional.
 
-**1. The commuting part.** This is the definition: $\tilde{X}\in Z(\mathbb{B})$ if and only if $\tilde{X}$ commutes with every element. In the language of observables, the central Hermitian elements are exactly the observables compatible with every observable; they form the maximally commutative and symmetry-blind part of the algebra.
+**1. The commuting part.** This is the definition: $\tilde{Q}\in Z(\mathbb{B})$ if and only if $\tilde{Q}$ commutes with every element. In the language of observables, the central Hermitian elements are exactly the observables compatible with every observable; they form the maximally commutative and symmetry-blind part of the algebra.
 
-**2. The fixed points of the adjoint action.** Let $\mathrm{Ad}_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^{-1}$; for $\tilde{U}$ unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
+**2. The fixed points of the adjoint action.** Let $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$; for $\tilde{U}$ unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
 $$
-\bigl\{\tilde{X}:\ \mathrm{Ad}_{\tilde{U}}\tilde{X}=\tilde{X}\ \ \forall\tilde{U}\in U(2)\bigr\}=Z(\mathbb{B}).
+\bigl\{\tilde{Q}:\ \mathrm{Ad}_{\tilde{U}}\tilde{Q}=\tilde{Q}\ \ \forall\tilde{U}\in U(2)\bigr\}=Z(\mathbb{B}).
 $$
 This is the operational characterization of the classical sector: it is the set of algebraic objects that no symmetry of the framework can move. Since the adjoint action descends to the rotations of the Bloch sphere, the rotation-invariant Hermitian observables are the real multiples of the identity, and there is exactly a one-parameter family of them.
 
-**3. Vanishing of the inner derivations.** The inner derivation attached to $\tilde{X}$ is $\mathrm{ad}_{\tilde{X}}(\tilde{Y})=[\tilde{X},\tilde{Y}]$. The centre is the common kernel,
+**3. Vanishing of the inner derivations.** The inner derivation attached to $\tilde{Q}$ is $\mathrm{ad}_{\tilde{Q}}(\tilde{Y})=[\tilde{Q},\tilde{Y}]$. The centre is the common kernel,
 $$
-Z(\mathbb{B})=\bigcap_{\tilde{X}\in\mathbb{B}}\ker\bigl(\mathrm{ad}_{\tilde{X}}\bigr),
+Z(\mathbb{B})=\bigcap_{\tilde{Q}\in\mathbb{B}}\ker\bigl(\mathrm{ad}_{\tilde{Q}}\bigr),
 $$
 and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the unitary group here is $\mathfrak{u}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathfrak{u}(2)$ on which the adjoint representation is trivial, $\mathfrak{z}(\mathfrak{u}(2))=\mathbb{R}\,ie_0$.
 
-**4. Factorization of the trace pairing.** An element $\tilde{X}$ is central if and only if its Hilbert–Schmidt correlations factorize,
+**4. Factorization of the trace pairing.** An element $\tilde{Q}$ is central if and only if its Hilbert–Schmidt correlations factorize,
 $$
-\tilde{X}\in Z(\mathbb{B})
+\tilde{Q}\in Z(\mathbb{B})
 \iff
-\mathrm{Tr}\bigl(\tilde{X}\tilde{Y}\bigr)=\tfrac12\,\mathrm{Tr}(\tilde{X})\,\mathrm{Tr}(\tilde{Y})
+\mathrm{Tr}\bigl(\tilde{Q}\tilde{Y}\bigr)=\tfrac12\,\mathrm{Tr}(\tilde{Q})\,\mathrm{Tr}(\tilde{Y})
 \quad\text{for all }\tilde{Y}\in\mathbb{B}.
 $$
-The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{X}-\tfrac12\mathrm{Tr}(\tilde{X})e_0)\tilde{Y}\bigr)=0$ for all $\tilde{Y}$, and the trace pairing is non-degenerate, so the bracket vanishes. The physical reading is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
+The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{Q}-\tfrac12\mathrm{Tr}(\tilde{Q})e_0)\tilde{Y}\bigr)=0$ for all $\tilde{Y}$, and the trace pairing is non-degenerate, so the bracket vanishes. The physical reading is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
 
 **5. The matrix-model characterization.** Under the representation, $Z(\mathbb{B})$ corresponds to the scalar matrices $\mathbb{C}I_2$; equivalently, these are the elements on which the left regular representation and the right regular representation coincide. This is the form in which the statement is standard: a full matrix algebra over a field has the field itself as its centre.
 
@@ -120,9 +120,9 @@ The five characterizations — commuting, symmetry-fixed, derivation-free, corre
 
 The centre's smallness has a structural consequence that limits what classical structure the framework can carry, and it should be stated precisely.
 
-**$\mathbb{B}$ is a factor.** Since the matrix model is an isomorphism $\Phi(\mathbb{B})=M_2(\mathbb{C})$ of complex algebras, $\mathbb{B}$ is a **central simple algebra** over its centre: it has no non-trivial two-sided ideals, and its centre is exactly the scalars. Every non-zero $\tilde{X}\in\mathbb{B}$ generates the whole algebra as a two-sided ideal,
+**$\mathbb{B}$ is a factor.** Since the matrix model is an isomorphism $\Phi(\mathbb{B})=M_2(\mathbb{C})$ of complex algebras, $\mathbb{B}$ is a **central simple algebra** over its centre: it has no non-trivial two-sided ideals, and its centre is exactly the scalars. Every non-zero $\tilde{Q}\in\mathbb{B}$ generates the whole algebra as a two-sided ideal,
 $$
-\mathbb{B}\tilde{X}\mathbb{B}=\mathbb{B}\qquad(\tilde{X}\neq0),
+\mathbb{B}\tilde{Q}\mathbb{B}=\mathbb{B}\qquad(\tilde{Q}\neq0),
 $$
 a fact visible in the matrix model (a single non-zero matrix and its two-sided multiples span all matrices).
 
@@ -199,7 +199,7 @@ $$
 $$
 because an element commuting with every projector $\tilde{P}(\hat{n})$ for every axis $\hat{n}$ commutes with everything. The centre is therefore the canonical commutative subalgebra common to every MASA, and the only commutative subalgebra that requires no choice to specify; it is not itself maximal, and every MASA beyond it requires the selection of an axis, i.e. of a preferred observable or pointer basis. This is complementarity in algebraic form: the algebra contains many classical bits, but no canonical classical bit.
 
-**The classical sector of a context is a MASA.** Relative to a chosen Hermitian observable $\tilde{H}$ with distinct spectral projections, the set of observables compatible with it is its centralizer, which is the MASA generated by its projections. In that context — and only in that context — the theory looks classical: the MASA is commutative, its elements can be simultaneously diagonalized, and it contains idempotents that behave as classical propositions. The classical sector is thus **context-relative**: it is the centralizer $\{\tilde{X}:[\tilde{X},\tilde{H}]=0\}$, a subalgebra that depends on which observable defines the context.
+**The classical sector of a context is a MASA.** Relative to a chosen Hermitian observable $\tilde{H}$ with distinct spectral projections, the set of observables compatible with it is its centralizer, which is the MASA generated by its projections. In that context — and only in that context — the theory looks classical: the MASA is commutative, its elements can be simultaneously diagonalized, and it contains idempotents that behave as classical propositions. The classical sector is thus **context-relative**: it is the centralizer $\{\tilde{Q}:[\tilde{Q},\tilde{H}]=0\}$, a subalgebra that depends on which observable defines the context.
 
 **Relation to the quantum–classical divide.** The companion article *The Quantum–Classical Divide in the Biquaternion Framework* treats the divide dynamically and statistically. The algebraic identification supplied here is its structural backdrop: the divide is not a direct-sum decomposition of $\mathbb{B}$ into a quantum part and a classical part, because $\mathbb{B}$ is a factor and admits no such central splitting. It is instead the distinction between the canonical centre — the classical parameters — and the state- or context-dependent MASAs, which supply the classical bits. A theory written over $\mathbb{B}$ has a classical sector at every context, and it has no context-free classical sector beyond the scalars. This is the honest position, and it is the reason the framework cannot manufacture superselection labels out of its own centre.
 
@@ -221,7 +221,7 @@ The identification of the centre with the classical sector is exact, and its exa
 
 Four further roles of the centre place it inside the framework's standard machinery.
 
-**1. Commutant and bicommutant.** For a subset $\mathbb{S}\subseteq\mathbb{B}$ write $\mathbb{S}'=\{\tilde{X}:[\tilde{X},\tilde{s}]=0\ \forall\tilde{s}\in\mathbb{S}\}$ for its commutant. The centre is the commutant of the largest possible set,
+**1. Commutant and bicommutant.** For a subset $\mathbb{S}\subseteq\mathbb{B}$ write $\mathbb{S}'=\{\tilde{Q}:[\tilde{Q},\tilde{s}]=0\ \forall\tilde{s}\in\mathbb{S}\}$ for its commutant. The centre is the commutant of the largest possible set,
 $$
 Z(\mathbb{B})=\mathbb{B}',
 $$
@@ -276,8 +276,8 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_0$ | Hermitian central elements |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form, $N(\lambda e_0)=\lambda^2e_0$ |
-| $\mathrm{Ad}_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^{-1}$ | Adjoint (inner) action |
-| $\mathrm{ad}_{\tilde{X}}(\tilde{Y})=[\tilde{X},\tilde{Y}]$ | Inner derivation |
+| $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$ | Adjoint (inner) action |
+| $\mathrm{ad}_{\tilde{Q}}(\tilde{Y})=[\tilde{Q},\tilde{Y}]$ | Inner derivation |
 | $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde{P}(\hat{n}),e_0-\tilde{P}(\hat{n})\}$ | Maximal commutative subalgebra (MASA) |
 | $\tilde{P}(\hat{n})=\tfrac12(e_0+i\hat{n})$ | Pure-state projection, $|\hat{n}|=1$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ |

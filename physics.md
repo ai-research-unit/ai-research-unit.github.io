@@ -41,9 +41,23 @@
 
 ### - Biquaternion Algebra
 
+### <a href="articles_physics/biquaternion-algebra.html">Biquaternion Algebra</a>
+<!-- $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the algebra structure and the four conjugations; the six distinguished subspaces, indexed to their articles in the Subspaces group; the quaternion, Hermitian and centre–vector decompositions and the relations between them; the quadratic form, the Hermitian form and the inner product; the physical reading of each: the two sectors, the complex time and complex space coordinates, and the material and informational conventions $ict\,e_0+\mathbf{x}$ and $ct'\,e_0+i\mathbf{x}'$. -->
 
+### <a href="articles_physics/biquaternion-norm-and-invertibility.html">Biquaternion Norm and Invertibility</a>
+<!-- the norm form and its multiplicativity; the norm form as a semi-norm and the audit of the norm axioms, of which only the sign axiom survives; the unique multiplicative real norm and the polar scale; the Hermitian form and the Euclidean norm; the invertibility criterion and the inverse formula; the group of units; the three-way classification; the physical reading: the interval and the mass shell, the four-velocity of norm $-c^2$, the null momentum of a photon, and the rotor inverse $Q^{-1}=\bar{Q}$ on the unit group versus the dagger. -->
 
+### <a href="articles_physics/biquaternion-idempotents-and-projections.html">Biquaternion Idempotents and Projections</a>
+<!-- idempotents and the direct sum decompositions they carry; orthogonal, complete and primitive idempotents and the primitivity criterion; the standard idempotents $p$ and $q$ as the diagonal matrix units; the classification of the idempotents; the bijection $\xi\mapsto\tfrac12(e_0+\xi i)$ from the roots of $-1$ onto the idempotents, with complementary pairs for $\{\xi,-\xi\}$; the physical reading: the idempotents as projectors, the Hermitian ones as the pure states on the Bloch sphere and the vacuum projector among them, the non-Hermitian ones as legitimate algebra that is not a state; idempotents as zero divisors; the two minimal left ideals and the one-particle modules; the three decompositions (ideal, sector, chiral) that must not be conflated; the dimension of the idempotent set. -->
 
+### <a href="articles_physics/biquaternion-ideals-and-peirce-decomposition.html">Biquaternion Ideals and Peirce Decomposition</a>
+<!-- ideals in an algebra; the two-sided ideals and the simplicity of $\mathbb{B}$, hence the sector split is not a decomposition into algebras; Artinian, semisimple and length two; matrix units and the transition elements $x,y$; the Peirce decomposition as the two-state block structure; the matrix-unit decomposition as a sum of minimal ideals, the columns as one-particle modules and the rows as their duals; minimal left and right ideals and why every physical label lies outside the module structure; the lattice of left ideals as a projective line, the same two-sphere as the pure states; the radical and complete reducibility; the real structure and the pairing of $S$ with $\bar{S}$. -->
+
+### <a href="articles_physics/biquaternion-roots-of-minus-one.html">Biquaternion Roots of Minus One</a>
+<!-- the problem and its reduction; the classification of the solutions of $\xi^2=-1$; the physical reading: the roots as the imaginary units and generators of the algebra's circle subgroups, the trivial roots as the central phase, the real roots as the spatial rotation axes, the non-trivial roots as the mixed rotation–boost generators with rapidity $t$ in $b=\cosh t$, $d=\sinh t$; the elliptic, hyperbolic and parabolic cases of the square of a pure element; the relation to the idempotents and to the zero divisors; the roots of $+1$ as the involutions and parity operators, with $(-1)^F=ie_3$. -->
+
+### <a href="articles_physics/biquaternion-zero-divisors.html">Biquaternion Zero Divisors</a>
+<!-- definition and criterion; the two families of zero divisors; pure zero divisors as the parabolic nilpotents and non-pure ones as complex multiples of idempotents, with the photon's null momentum as the instance; the roots of minus one; the distribution of the zero divisors over the six subspaces, where the double cones in $\mathbb{M}_\pm$ are the light cones of the material and informational sectors and their complements' three components are the future timelike, past timelike and spacelike regions; the zero divisor set as a variety; the zero divisor set as the boundary of the polar decomposition, where the boost family converges at infinite rapidity to a minimal idempotent. -->
 
 ### - Subspaces
 

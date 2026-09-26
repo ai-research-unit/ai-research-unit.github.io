@@ -297,7 +297,7 @@ $$
 $$
 whose velocity is $-\mathbf{u}$. Equivalently, the rotor carries the lab to the frame with velocity $+\mathbf{u}$; a particle at rest in the lab appears, in that frame, to move with $-\mathbf{u}$. This was checked numerically: for $\mathbf{u} = 0.6c\,\hat{\mathbf{e}}_3$ the conjugated rest four-velocity has velocity exactly $-0.6c\,\hat{\mathbf{e}}_3$. We use this convention consistently; the conjugate $\bar{\tilde{\Lambda}}_{\mathbf{u}} = \tilde{\Lambda}_{\mathbf{u}}^{-1}$ generates the inverse (moving-to-lab) transformation.
 
-**Solution (b).** The field strength is a rank-two object, not an element of $\mathbb{M}_-$; the four-vector rotor conjugation $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ is defined for four-vectors, and it does *not* give the correct field transformation. The correct law for a pure boost is the similarity
+**Solution (b).** The field strength is a rank-two object, not an element of $\mathbb{M}_-$; the four-vector rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ is defined for four-vectors, and it does *not* give the correct field transformation. The correct law for a pure boost is the similarity
 $$
 \tilde{F}' = \bar{\tilde{\Lambda}}_{\mathbf{u}}\,\tilde{F}\,\tilde{\Lambda}_{\mathbf{u}}
 = \tilde{\Lambda}_{\mathbf{u}}^{-1}\tilde{F}\,\tilde{\Lambda}_{\mathbf{u}} ,

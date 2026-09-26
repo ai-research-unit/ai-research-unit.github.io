@@ -32,7 +32,7 @@ $$
 
 since $|e^{i\theta}| = 1$. They form the group $U(1)$, the unitary part of the center.
 
-Let $\tilde{\Psi}(\tilde{X})$ be a biquaternion-valued field. Define the **global phase transformation**
+Let $\tilde{\Psi}(\tilde{Q})$ be a biquaternion-valued field. Define the **global phase transformation**
 
 $$
 \tilde{\Psi} \;\longmapsto\; e^{i\theta}\,\tilde{\Psi}, \qquad \theta \ \text{constant}.
@@ -64,10 +64,10 @@ is invariant: if $\tilde{\nabla}\tilde{\Psi} = 0$ then $\tilde{\nabla}(e^{i\thet
 Now let the phase depend on the point. Write
 
 $$
-\lambda(\tilde{X}) = e^{iq\Gamma(\tilde{X})/\hbar},
+\lambda(\tilde{Q}) = e^{iq\Gamma(\tilde{Q})/\hbar},
 $$
 
-where $\Gamma = \Gamma(\tilde{X})$ is a real scalar function and $q$ is a real coupling constant. The two elementary facts about this phase are the Leibniz rule for the left action of $\tilde{\nabla}$,
+where $\Gamma = \Gamma(\tilde{Q})$ is a real scalar function and $q$ is a real coupling constant. The two elementary facts about this phase are the Leibniz rule for the left action of $\tilde{\nabla}$,
 
 $$
 \tilde{\nabla}\!\left(\lambda\tilde{\Psi}\right) = \lambda\,\tilde{\nabla}\tilde{\Psi} + \left(\tilde{\nabla}\lambda\right)\tilde{\Psi},
@@ -291,7 +291,7 @@ Two things should be said about this, one established and one open.
 
 The gauge principle in biquaternionic form begins with the **center** of the biquaternion algebra. Since $\mathbb{B} \cong M_2(\mathbb{C})$, its center is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, whose unitary part is $U(1)$. A constant central phase $\tilde{\Psi} \mapsto e^{i\theta}\tilde{\Psi}$ is a symmetry of the biquaternion field equation, massive or massless, because a central constant passes through the gradient and through the linear mass term.
 
-Making the phase local, $\lambda = e^{iq\Gamma(\tilde{X})/\hbar}$, introduces the term $\frac{iq}{\hbar}(\tilde{\nabla}\Gamma)\tilde{\Psi}$, and cancelling it forces a connection $\tilde{A}$ with the transformation law
+Making the phase local, $\lambda = e^{iq\Gamma(\tilde{Q})/\hbar}$, introduces the term $\frac{iq}{\hbar}(\tilde{\nabla}\Gamma)\tilde{\Psi}$, and cancelling it forces a connection $\tilde{A}$ with the transformation law
 
 $$
 \tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma,

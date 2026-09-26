@@ -48,11 +48,11 @@ $$
 
 be positive for every $n$. A positive but not completely positive map is not a physical process, because acting on half of an entangled pair it can produce an operator with a negative eigenvalue.
 
-The standard illustration is the **transpose** $\tilde{X} \mapsto \tilde{X}^{\mathsf{T}}$ in a fixed matrix representative. It is positive and complex-linear, but not completely positive: transposing one factor of a maximally entangled two-qubit state produces a non-positive operator. Complete positivity is strictly stronger than positivity, and it is the condition the algebra imposes on physical operations.
+The standard illustration is the **transpose** $\tilde{Q} \mapsto \tilde{Q}^{\mathsf{T}}$ in a fixed matrix representative. It is positive and complex-linear, but not completely positive: transposing one factor of a maximally entangled two-qubit state produces a non-positive operator. Complete positivity is strictly stronger than positivity, and it is the condition the algebra imposes on physical operations.
 
 ### Trace Preservation and the Dual Map
 
-Because a state map must send trace-one elements to trace-one elements, we require **trace preservation**, $\mathrm{Tr}(\Phi(\tilde{\rho})) = \mathrm{Tr}(\tilde{\rho})$ for all $\tilde{\rho} \in \mathbb{M}_+$, equivalently $\mathrm{Tr}(\Phi(\tilde{X})) = \mathrm{Tr}(\tilde{X})$ for all $\tilde{X} \in \mathbb{B}$. The trace pairing defines a **dual map** on observables, the Heisenberg-picture representative of $\Phi$, by
+Because a state map must send trace-one elements to trace-one elements, we require **trace preservation**, $\mathrm{Tr}(\Phi(\tilde{\rho})) = \mathrm{Tr}(\tilde{\rho})$ for all $\tilde{\rho} \in \mathbb{M}_+$, equivalently $\mathrm{Tr}(\Phi(\tilde{Q})) = \mathrm{Tr}(\tilde{Q})$ for all $\tilde{Q} \in \mathbb{B}$. The trace pairing defines a **dual map** on observables, the Heisenberg-picture representative of $\Phi$, by
 
 $$
 \mathrm{Tr}\bigl(\Phi(\tilde{\rho})\,\tilde{H}\bigr) = \mathrm{Tr}\bigl(\tilde{\rho}\,\Phi^{*}(\tilde{H})\bigr) \qquad \text{for all } \tilde{\rho}, \tilde{H}.
@@ -65,7 +65,7 @@ Trace preservation of $\Phi$ is equivalent to **unitality** of the dual, $\Phi^{
 The structure theorem for completely positive maps is the **Kraus representation** (the Choi–Kraus theorem). A map $\Phi$ on $\mathbb{B}$ is completely positive if and only if there exist finitely many **Kraus operators** $\tilde{K}_l \in \mathbb{B}$ with
 
 $$
-\Phi(\tilde{X}) = \sum_l \tilde{K}_l\,\tilde{X}\,\tilde{K}_l^\dagger ,
+\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\,\tilde{Q}\,\tilde{K}_l^\dagger ,
 $$
 
 and it is trace preserving if and only if $\sum_l \tilde{K}_l^\dagger \tilde{K}_l = e_0$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^\dagger \tilde{H}\tilde{K}_l$, and the normalization is exactly $\Phi^{*}(e_0) = e_0$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(\Phi) = \sum_{jk} \tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$, and complete positivity is the condition $J(\Phi) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
@@ -117,7 +117,7 @@ is a unit **real** quaternion, whose conjugation is an ordinary spatial rotation
 
 The map $\Phi_{\tilde{U}}$ is invertible, with inverse $\Phi_{\tilde{U}}^{-1} = \Phi_{\tilde{U}^\dagger} = \Phi_{\tilde{U}(-t)}$, again a unitary channel: unitary evolution is **reversible**.
 
-The converse is the precise statement of the dichotomy. A completely positive, trace-preserving map on $\mathbb{B} \cong M_2(\mathbb{C})$ is invertible, with an inverse that is again completely positive and trace preserving, **if and only if** it is conjugation by a unitary element; equivalently, a channel preserves the purity of every state if and only if it is a unitary conjugation. In the Kraus language the criterion is transparent: a channel with Kraus rank one has the form $\Phi(\tilde{X}) = \tilde{K}\tilde{X}\tilde{K}^\dagger$ with $\tilde{K}^\dagger\tilde{K} = e_0$, so $\tilde{K}$ is unitary; and a unitary conjugation has Kraus rank one. Hence
+The converse is the precise statement of the dichotomy. A completely positive, trace-preserving map on $\mathbb{B} \cong M_2(\mathbb{C})$ is invertible, with an inverse that is again completely positive and trace preserving, **if and only if** it is conjugation by a unitary element; equivalently, a channel preserves the purity of every state if and only if it is a unitary conjugation. In the Kraus language the criterion is transparent: a channel with Kraus rank one has the form $\Phi(\tilde{Q}) = \tilde{K}\tilde{Q}\tilde{K}^\dagger$ with $\tilde{K}^\dagger\tilde{K} = e_0$, so $\tilde{K}$ is unitary; and a unitary conjugation has Kraus rank one. Hence
 
 $$
 \text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad \Phi = \Phi_{\tilde{U}} \text{ for some unitary } \tilde{U} .
@@ -180,7 +180,7 @@ It is completely positive and trace preserving with the three Kraus operators $\
 Put $\alpha = i\hat{\mathbf{n}}$, so that $\tilde{P}_\pm = \tfrac{1}{2}(e_0 \pm \alpha)$ with $\alpha^\dagger = \alpha$ and $\alpha^2 = e_0$. A direct expansion gives
 
 $$
-\tilde{P}_+\,\tilde{X}\,\tilde{P}_+ + \tilde{P}_-\,\tilde{X}\,\tilde{P}_- = \tfrac{1}{2}\left(\tilde{X} + \alpha\,\tilde{X}\,\alpha\right),
+\tilde{P}_+\,\tilde{Q}\,\tilde{P}_+ + \tilde{P}_-\,\tilde{Q}\,\tilde{P}_- = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
 $$
 
 since the cross terms cancel between the two projectors. For a state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$, the elementary products are $\alpha\,e_0\,\alpha = \alpha^2 = e_0$ and $\alpha\,(i\mathbf{r})\,\alpha = -i\,\hat{\mathbf{n}}\,\mathbf{r}\,\hat{\mathbf{n}} = -i(\mathbf{r} - 2(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}})$, using $\hat{\mathbf{n}}\,\mathbf{r}\,\hat{\mathbf{n}} = \mathbf{r} - 2(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$. Combining,

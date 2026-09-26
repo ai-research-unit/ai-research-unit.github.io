@@ -12,7 +12,7 @@ The contributions divide cleanly, and the division is the content of the article
 
 - **Established, and recomputed below.** The **action** of a biquaternion field is a *real central scalar*, extracted from the trace pairing. The framework's real bilinear form is
 $$
-\langle \tilde X,\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde X^\dagger\tilde Y\big) = \mathrm{Re}\,\mathrm{Tr}\big(\bar{\tilde X}^{\,*}\tilde Y\big),
+\langle \tilde{Q},\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^\dagger\tilde Y\big) = \mathrm{Re}\,\mathrm{Tr}\big(\bar{\tilde{Q}}^{\,*}\tilde Y\big),
 $$
 which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$ — the signature split — and for a field $\tilde\Phi=\tilde\phi_-+\tilde\phi_+$ and a central kinetic operator $\tilde K=\Box-m^2$ the quadratic action is
 $$
@@ -49,7 +49,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
 $$
-the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ are the real-quaternion subspace and the center. The isomorphism is $\Phi(e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Sc}$ the real part of the $e_0$ coefficient, and the norm form is $N(\tilde Q)=\tilde Q\bar{\tilde Q}$. The material coordinate is $\tilde X = ict\,e_0+\mathbf{x}$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$; the mass shell in momentum space is $\tilde k\bar{\tilde k}=-m^2$ for $\tilde k=iEe_0+\mathbf{p}$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, and *The S-Matrix in Biquaternionic Form*.
+the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ are the real-quaternion subspace and the center. The isomorphism is $\Phi(e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Sc}$ the real part of the $e_0$ coefficient, and the norm form is $N(\tilde Q)=\tilde Q\bar{\tilde Q}$. The material coordinate is $\tilde{Q} = ict\,e_0+\mathbf{x}$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$; the mass shell in momentum space is $\tilde k\bar{\tilde k}=-m^2$ for $\tilde k=iEe_0+\mathbf{p}$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, and *The S-Matrix in Biquaternionic Form*.
 
 ## The Functional Integral and the Path Integral
 
@@ -79,9 +79,9 @@ where $\flat=-\dagger$ is the anti-Hermitian conjugation; this is the field-leve
 
 **The action must be a scalar, and the algebra supplies the extraction.** A biquaternion is not a number, so a Lagrangian built from $\tilde\Phi$ is not automatically an action. The framework's scalar extraction is the trace, whose $e_0$ coefficient,
 $$
-\mathrm{Sc}(\tilde X) = \tfrac12 \mathrm{Tr}(\tilde X) = X_0 ,
+\mathrm{Sc}(\tilde{Q}) = \tfrac12 \mathrm{Tr}(\tilde{Q}) = X_0 ,
 $$
-is the *scalar part* of $\tilde X$; it is a complex number in general, and the physical action is its real part, equivalently the real bilinear form $\langle\tilde X,\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde X^\dagger\tilde Y)$. For a quadratic theory the natural action is
+is the *scalar part* of $\tilde{Q}$; it is a complex number in general, and the physical action is its real part, equivalently the real bilinear form $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$. For a quadratic theory the natural action is
 $$
 S[\tilde\Phi] = \int d^4x\;\Big\langle \tilde\Phi,\tilde K\tilde\Phi\Big\rangle
 + S_{\mathrm{int}}[\tilde\Phi],
@@ -271,8 +271,8 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}},\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; center |
 | $\tilde\Phi=\tilde\phi_-+\tilde\phi_+$ | Biquaternion field and its sector parts |
-| $\mathrm{Sc}(\tilde X)=\tfrac12\mathrm{Tr}(\tilde X)=X_0$ (complex scalar part) | Scalar extraction; the trace converts a biquaternion into a number |
-| $\langle\tilde X,\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde X^\dagger\tilde Y)$ | Real bilinear form of the action; sector-orthogonal |
+| $\mathrm{Sc}(\tilde{Q})=\tfrac12\mathrm{Tr}(\tilde{Q})=X_0$ (complex scalar part) | Scalar extraction; the trace converts a biquaternion into a number |
+| $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^\dagger\tilde Y)$ | Real bilinear form of the action; sector-orthogonal |
 | $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\tilde k=iEe_0+\mathbf{p}$, $\tilde k\bar{\tilde k}=-p^2$ | Wave biquaternion; Euclidean $k_E^2$ |

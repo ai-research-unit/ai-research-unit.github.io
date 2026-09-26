@@ -27,12 +27,12 @@ The division between what is established and what is interpretation is kept expl
 The scalar of the framework is the complex central field
 
 $$
-\tilde{\Phi}(\tilde{X}) = \varphi(\tilde{X})\,e_0 \;\in\; \mathbb{C}_{\mathbb{B}}, \qquad \varphi \in \mathbb{C},
+\tilde{\Phi}(\tilde{Q}) = \varphi(\tilde{Q})\,e_0 \;\in\; \mathbb{C}_{\mathbb{B}}, \qquad \varphi \in \mathbb{C},
 $$
 
 which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\varphi\mapsto e^{i\alpha}\varphi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is **complex**, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $U(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.
 
-**The symmetry.** The global symmetry is the unitary part of the center, $\varphi\mapsto\lambda\varphi$ with $\lambda = e^{i\alpha}$ central. Localizing it means $\lambda(\tilde{X}) = e^{iq\Gamma(\tilde{X})/\hbar}$ with $\Gamma$ a real scalar function, and it forces the connection,
+**The symmetry.** The global symmetry is the unitary part of the center, $\varphi\mapsto\lambda\varphi$ with $\lambda = e^{i\alpha}$ central. Localizing it means $\lambda(\tilde{Q}) = e^{iq\Gamma(\tilde{Q})/\hbar}$ with $\Gamma$ a real scalar function, and it forces the connection,
 
 $$
 \tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma, \qquad
@@ -79,7 +79,7 @@ Two features of this minimum are the whole content of "spontaneous" symmetry bre
 **2. The vacuum is a scalar with a constant magnitude.** Write
 
 $$
-\varphi(\tilde{X}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{X})\bigr)\,e^{\,i\theta(\tilde{X})/v},
+\varphi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\,e^{\,i\theta(\tilde{Q})/v},
 $$
 
 with $h$ and $\theta$ real. Here $h$ is the **radial** fluctuation away from the minimum and $\theta$ is the **angular** fluctuation along it. The potential depends on $|\varphi| = \frac{1}{\sqrt{2}}|v+h|$ alone, so it is independent of $\theta$: expanding, $V = \beta v^2h^2 + O(h^3)$, giving the radial mode the mass
@@ -162,7 +162,7 @@ The mass term above was obtained in the gauge in which $\varphi$ is real and con
 **The phase is a gauge direction.** The parametrization $\varphi = \frac{1}{\sqrt{2}}(v+h)e^{i\theta/v}$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing
 
 $$
-\Gamma(\tilde{X}) = -\,\frac{\hbar}{qv}\,\theta(\tilde{X})
+\Gamma(\tilde{Q}) = -\,\frac{\hbar}{qv}\,\theta(\tilde{Q})
 $$
 
 gives $\varphi\mapsto e^{iq\Gamma/\hbar}\varphi = e^{-i\theta/v}\varphi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the **unitary gauge** for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.

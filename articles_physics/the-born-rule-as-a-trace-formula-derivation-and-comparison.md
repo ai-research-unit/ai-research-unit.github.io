@@ -24,7 +24,7 @@ $$
 \mathrm{Tr}(\tilde{H})=2\,\mathrm{Sc}(\tilde{H})=2h_0 .
 $$
 
-It is **tracial**, $\mathrm{Tr}(\tilde{X}\tilde{Y})=\mathrm{Tr}(\tilde{Y}\tilde{X})$, because $\mathrm{Sc}(\tilde{X}\tilde{Y})=X_0Y_0-\sum_kX_kY_k$ is symmetric, and **normalized** by $\mathrm{Tr}(e_0)=2$, the dimension of the algebra's representation. It defines the **trace pairing**
+It is **tracial**, $\mathrm{Tr}(\tilde{Q}\tilde{Y})=\mathrm{Tr}(\tilde{Y}\tilde{Q})$, because $\mathrm{Sc}(\tilde{Q}\tilde{Y})=Q_0Y_0-\sum_kQ_kY_k$ is symmetric, and **normalized** by $\mathrm{Tr}(e_0)=2$, the dimension of the algebra's representation. It defines the **trace pairing**
 
 $$
 \mathrm{Tr}(\tilde{H}\tilde{K})=2(h_0k_0+\mathbf{h}\cdot\mathbf{k}),
@@ -63,7 +63,7 @@ $$
 the convention of the companion article. It gives $\varphi(\tilde{H})=h_0I_2+\mathbf{h}\cdot\boldsymbol{\sigma}$, so $\mathbb{M}_+$ maps onto the Hermitian $2\times2$ matrices, and, the Pauli matrices being traceless,
 
 $$
-\mathrm{tr}\,\varphi(\tilde{X})=2\,\mathrm{Sc}(\tilde{X})=\mathrm{Tr}(\tilde{X}),
+\mathrm{tr}\,\varphi(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})=\mathrm{Tr}(\tilde{Q}),
 \qquad\text{hence}\qquad
 \mathrm{Tr}(\tilde{H}\tilde{K})=\mathrm{tr}\bigl(\varphi(\tilde{H})\varphi(\tilde{K})\bigr).
 $$
@@ -207,7 +207,7 @@ $$
 f_{\mathbf{u}}(\tilde{H})=h_0+\mathbf{u}\cdot\mathbf{h}
 $$
 
-is positive on the positive cone, being the pairing with the state $\tilde{\rho}_{\mathbf{u}}=\tfrac12(e_0+i\mathbf{u})$. Why is positivity restricted to $|\mathbf{u}|\leq1$? Under $\varphi$ the functional is $f_{\mathbf{u}}(\tilde{H})=\mathrm{tr}(\rho_{\mathbf{u}}A)$ with $A=\varphi(\tilde{H})$ and $\rho_{\mathbf{u}}=\tfrac12(I+\mathbf{u}\cdot\boldsymbol{\sigma})$; positivity of the functional is positivity of the density matrix, which holds exactly when $\mathbf{u}$ lies in the Bloch ball. The trace corresponds to $\mathbf{u}=0$, the maximally mixed state, which is the only point at which the functional is tracial. The trace is not the unique functional "chosen by nature"; it is the unique *tracial* functional. Concretely, extending $f_{\mathbf{u}}$ to $\mathbb{B}$ by $f_{\mathbf{u}}(\tilde{X})=\mathrm{Re}(X_0)+\mathbf{u}\cdot\mathbf{v}_i(\tilde{X})$, where $\mathbf{v}_i$ is the coefficient of the imaginary vector part, one finds for $\tilde{X}=e_1$, $\tilde{Y}=ie_2$ that $f_{\mathbf{u}}(\tilde{X}\tilde{Y})=+u_3$ while $f_{\mathbf{u}}(\tilde{Y}\tilde{X})=-u_3$; the extension of $f_{\mathbf{u}}$ to $\mathbb{B}$ is not tracial unless $\mathbf{u}=0$.
+is positive on the positive cone, being the pairing with the state $\tilde{\rho}_{\mathbf{u}}=\tfrac12(e_0+i\mathbf{u})$. Why is positivity restricted to $|\mathbf{u}|\leq1$? Under $\varphi$ the functional is $f_{\mathbf{u}}(\tilde{H})=\mathrm{tr}(\rho_{\mathbf{u}}A)$ with $A=\varphi(\tilde{H})$ and $\rho_{\mathbf{u}}=\tfrac12(I+\mathbf{u}\cdot\boldsymbol{\sigma})$; positivity of the functional is positivity of the density matrix, which holds exactly when $\mathbf{u}$ lies in the Bloch ball. The trace corresponds to $\mathbf{u}=0$, the maximally mixed state, which is the only point at which the functional is tracial. The trace is not the unique functional "chosen by nature"; it is the unique *tracial* functional. Concretely, extending $f_{\mathbf{u}}$ to $\mathbb{B}$ by $f_{\mathbf{u}}(\tilde{Q})=\mathrm{Re}(Q_0)+\mathbf{u}\cdot\mathbf{v}_i(\tilde{Q})$, where $\mathbf{v}_i$ is the coefficient of the imaginary vector part, one finds for $\tilde{Q}=e_1$, $\tilde{Y}=ie_2$ that $f_{\mathbf{u}}(\tilde{Q}\tilde{Y})=+u_3$ while $f_{\mathbf{u}}(\tilde{Y}\tilde{Q})=-u_3$; the extension of $f_{\mathbf{u}}$ to $\mathbb{B}$ is not tracial unless $\mathbf{u}=0$.
 
 There is a further uniqueness question: is the trace form the only probability measure on the projection lattice? In dimension at least three, **Gleason's theorem** says yes. In dimension two it **fails**: the projection lattice of $\mathbb{C}^2$ is the Bloch sphere with $P$ and $I-P$ complementary, and assignments in $[0,1]$ with complementary projectors summing to one need not be of trace form — non-trace frame functions exist. Uniqueness is restored if the domain is enlarged from projections to all effects and additivity is required there: by **Busch's** effect-based version of Gleason's theorem, a normalized additive assignment on the full effect algebra is of trace form in every dimension, including two. For a qubit, then, uniqueness of the probability measure is not a consequence of the algebra alone; it requires the effect structure, i.e. the POVM framework. It is significant that the trace formula extends cleanly to effects, since that is precisely the statement whose uniqueness is a theorem.
 

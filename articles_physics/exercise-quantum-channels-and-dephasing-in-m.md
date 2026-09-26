@@ -13,7 +13,7 @@ The article is therefore a sequence of independent problems, each in its own sec
 5. Composition of channels, and the growth of the Kraus rank.
 6. The Bloch-ball contraction and the increase of the von Neumann entropy under dephasing.
 
-The conventions are those of the companion articles. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{M}_+$ consists of the elements $\tilde{H} = h_0 e_0 + i\mathbf{h}$ with real $h_0$ and $\mathbf{h} \in \mathbb{R}^3$. A state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, and $\mathbf{r}$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $\Phi(\tilde{X}) = \sum_l \tilde{K}_l\tilde{X}\tilde{K}_l^\dagger$ and normalization $\sum_l \tilde{K}_l^\dagger\tilde{K}_l = e_0$, and the Choi matrix is $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\hat{\mathbf{n}}$ is
+The conventions are those of the companion articles. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{M}_+$ consists of the elements $\tilde{H} = h_0 e_0 + i\mathbf{h}$ with real $h_0$ and $\mathbf{h} \in \mathbb{R}^3$. A state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, and $\mathbf{r}$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^\dagger$ and normalization $\sum_l \tilde{K}_l^\dagger\tilde{K}_l = e_0$, and the Choi matrix is $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\hat{\mathbf{n}}$ is
 $$
 \Phi^{\mathrm{deph}}_p(\tilde{\rho})
 := (1-p)\,\tilde{\rho}
@@ -45,13 +45,13 @@ $$
 
 For the action on the state, use the elementary identity
 $$
-\tilde{P}_+\,\tilde{X}\,\tilde{P}_+ + \tilde{P}_-\,\tilde{X}\,\tilde{P}_-
-= \tfrac{1}{2}\left(\tilde{X} + \alpha\,\tilde{X}\,\alpha\right),
+\tilde{P}_+\,\tilde{Q}\,\tilde{P}_+ + \tilde{P}_-\,\tilde{Q}\,\tilde{P}_-
+= \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
 $$
-valid for every $\tilde{X} \in \mathbb{B}$: the cross terms come with opposite signs,
+valid for every $\tilde{Q} \in \mathbb{B}$: the cross terms come with opposite signs,
 $$
-\tfrac{1}{4}\left(e_0 \pm \alpha\right)\tilde{X}\left(e_0 \pm \alpha\right)
-= \tfrac{1}{4}\left(\tilde{X} \pm \alpha\tilde{X} \pm \tilde{X}\alpha + \alpha\tilde{X}\alpha\right),
+\tfrac{1}{4}\left(e_0 \pm \alpha\right)\tilde{Q}\left(e_0 \pm \alpha\right)
+= \tfrac{1}{4}\left(\tilde{Q} \pm \alpha\tilde{Q} \pm \tilde{Q}\alpha + \alpha\tilde{Q}\alpha\right),
 $$
 and cancel in the sum. The two products needed are
 $$
@@ -136,7 +136,7 @@ Since $(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}}) = -\hat{\mathbf{n}}\ti
 
 ## Problem 3: A Positive Map That Is Not Completely Positive
 
-**Problem.** In the matrix representative of $\mathbb{B}$, let $\Phi_T$ be the transpose, $\Phi_T(\tilde{X}) = \tilde{X}^{\mathsf{T}}$. Show that $\Phi_T$ is positive and trace preserving, but not completely positive.
+**Problem.** In the matrix representative of $\mathbb{B}$, let $\Phi_T$ be the transpose, $\Phi_T(\tilde{Q}) = \tilde{Q}^{\mathsf{T}}$. Show that $\Phi_T$ is positive and trace preserving, but not completely positive.
 
 **Solution.** On the matrix units $\Phi_T$ acts by $E_{jk} \mapsto E_{kj}$; equivalently, on a state,
 $$
@@ -224,9 +224,9 @@ For the maximally mixed input ($\mathbf{r} = 0$) the purity rises from $\tfrac{1
 
 **Solution.** Composing,
 $$
-\Phi_2\!\left(\Phi_1(\tilde{X})\right)
-= \sum_l B_l\left(\sum_m A_m\tilde{X}A_m^\dagger\right)B_l^\dagger
-= \sum_{l,m}\left(B_l A_m\right)\tilde{X}\left(B_l A_m\right)^\dagger ,
+\Phi_2\!\left(\Phi_1(\tilde{Q})\right)
+= \sum_l B_l\left(\sum_m A_m\tilde{Q}A_m^\dagger\right)B_l^\dagger
+= \sum_{l,m}\left(B_l A_m\right)\tilde{Q}\left(B_l A_m\right)^\dagger ,
 $$
 so $\{B_l A_m\}$ is a Kraus set for the composite, and it is trace preserving whenever both factors are. The Kraus rank of the composite is the dimension of the span of the products $B_l A_m$, which cannot exceed the product of the dimensions of the individual spans; hence $\mathrm{rank}(\Phi_2\circ\Phi_1) \leq \mathrm{rank}(\Phi_1)\,\mathrm{rank}(\Phi_2)$. For a qubit the composite has rank at most $4$, since its Choi matrix is $4\times4$.
 
@@ -320,7 +320,7 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State; $\mathbf{r}$ the Bloch vector |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{P}_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{n}})$ | Idempotents along $\hat{\mathbf{n}}$ |
-| $\Phi(\tilde{X}) = \sum_l \tilde{K}_l\tilde{X}\tilde{K}_l^\dagger$ | Kraus representation |
+| $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^\dagger$ | Kraus representation |
 | $\sum_l \tilde{K}_l^\dagger\tilde{K}_l = e_0$ | Trace-preservation condition |
 | $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J$ |
 | $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat{\mathbf{n}}$ |

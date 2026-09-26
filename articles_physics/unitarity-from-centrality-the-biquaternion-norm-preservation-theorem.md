@@ -2,15 +2,15 @@
 
 ## Introduction
 
-Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the **Hermitian norm** $\mathrm{Tr}(\tilde{X}^\dagger\tilde{X})$, which is positive definite and is the norm that Born probabilities are built from, and the **norm form** $N(\tilde{X})=\tilde{X}\bar{\tilde{X}}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
+Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the **Hermitian norm** $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Q})$, which is positive definite and is the norm that Born probabilities are built from, and the **norm form** $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
 $$
-\Gamma_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^\dagger
+\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^\dagger
 $$
 preserves it. The answer is a norm-preservation theorem with a single organising theme: **the conditions are conditions on the centre of the algebra.**
 
 Three statements are proved. The first is that $\Gamma_{\tilde{U}}$ preserves the Hermitian norm if and only if $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^\dagger=e_0$. The second is that $\Gamma_{\tilde{U}}$ scales the norm form by a **central scalar**,
 $$
-N\bigl(\Gamma_{\tilde{U}}\tilde{X}\bigr)=\bigl|N(\tilde{U})\bigr|^2\,N(\tilde{X}),
+N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|N(\tilde{U})\bigr|^2\,N(\tilde{Q}),
 $$
 so that it preserves the norm form exactly when $|N(\tilde{U})|=1$, i.e. when $N(\tilde{U})$ lies on the unit circle of the centre $\mathbb{C}_{\mathbb{B}}$. The third is the structural reason behind the word *centrality* in the title: the product $\tilde{U}^\dagger\tilde{U}$, which measures the failure of $\Gamma_{\tilde{U}}$ to be multiplicative, is central if and only if that failure is a scalar rather than an operator-valued anomaly; and it equals $e_0$ — the case of a genuine algebra automorphism — if and only if $\tilde{U}$ is unitary. Thus
 
@@ -38,26 +38,26 @@ The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong
 
 The word "norm" carries two distinct objects in this framework, and the whole article turns on not confusing them.
 
-**The Hermitian norm.** For $\tilde{X},\tilde{Y}\in\mathbb{B}$ define
+**The Hermitian norm.** For $\tilde{Q},\tilde{Y}\in\mathbb{B}$ define
 $$
-\langle\tilde{X},\tilde{Y}\rangle_{\dagger}=\mathrm{Tr}\bigl(\tilde{X}^\dagger\tilde{Y}\bigr),
+\langle\tilde{Q},\tilde{Y}\rangle_{\dagger}=\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Y}\bigr),
 \qquad
-\|\tilde{X}\|_{\dagger}^2=\mathrm{Tr}\bigl(\tilde{X}^\dagger\tilde{X}\bigr).
+\|\tilde{Q}\|_{\dagger}^2=\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Q}\bigr).
 $$
-Writing $\tilde{X}=x_0e_0+x_1e_1+x_2e_2+x_3e_3$ with $x_\mu\in\mathbb{C}$ and using $\tilde{X}^\dagger=x_0^{*}e_0-x_1^{*}e_1-x_2^{*}e_2-x_3^{*}e_3$, one finds
+Writing $\tilde{Q}=x_0e_0+x_1e_1+x_2e_2+x_3e_3$ with $x_\mu\in\mathbb{C}$ and using $\tilde{Q}^\dagger=x_0^{*}e_0-x_1^{*}e_1-x_2^{*}e_2-x_3^{*}e_3$, one finds
 $$
-\|\tilde{X}\|_{\dagger}^2
-=2\bigl(|x_0|^2+|x_1|^2+|x_2|^2+|x_3|^2\bigr)>0\quad(\tilde{X}\neq0).
+\|\tilde{Q}\|_{\dagger}^2
+=2\bigl(|x_0|^2+|x_1|^2+|x_2|^2+|x_3|^2\bigr)>0\quad(\tilde{Q}\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{X},\tilde{Y}\rangle_\dagger=\mathrm{tr}(M(\tilde{X})^\dagger M(\tilde{Y}))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum mechanics: the Born probability $\mathrm{Tr}(\tilde{P}\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q})$ of two states is the boundary case of this norm.
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Y}))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum mechanics: the Born probability $\mathrm{Tr}(\tilde{P}\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q})$ of two states is the boundary case of this norm.
 
 **The norm form.** The second object is
 $$
-N(\tilde{X})=\tilde{X}\bar{\tilde{X}}=\bigl(x_0^2+x_1^2+x_2^2+x_3^2\bigr)e_0\in\mathbb{C}_{\mathbb{B}},
+N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\bigl(x_0^2+x_1^2+x_2^2+x_3^2\bigr)e_0\in\mathbb{C}_{\mathbb{B}},
 $$
-a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coefficient is the determinant of the matrix model, $N(\tilde{X})e_0=\det M(\tilde{X})\,e_0$, so $N$ is multiplicative,
+a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coefficient is the determinant of the matrix model, $N(\tilde{Q})e_0=\det M(\tilde{Q})\,e_0$, so $N$ is multiplicative,
 $$
-N(\tilde{X}\tilde{Y})=N(\tilde{X})N(\tilde{Y}),
+N(\tilde{Q}\tilde{Y})=N(\tilde{Q})N(\tilde{Y}),
 $$
 and it is indefinite on $\mathbb{M}_+$: for $\tilde{H}=h_0e_0+i\mathbf{h}$ one has $N(\tilde{H})=(h_0^2-|\mathbf{h}|^2)e_0$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
 
@@ -67,7 +67,7 @@ The two norms differ in every structural respect that matters here. The Hermitia
 
 The action studied throughout is conjugation by an invertible element,
 $$
-\Gamma_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^\dagger,
+\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^\dagger,
 \qquad
 \tilde{U}\in\mathbb{B}^{\times}.
 $$
@@ -75,7 +75,7 @@ It has the following elementary properties, each immediate from the definitions.
 
 **It preserves Hermiticity.** Since $\dagger$ is an anti-automorphism,
 $$
-\Gamma_{\tilde{U}}(\tilde{X})^\dagger=\tilde{U}\tilde{X}^\dagger\tilde{U}^\dagger=\Gamma_{\tilde{U}}\bigl(\tilde{X}^\dagger\bigr),
+\Gamma_{\tilde{U}}(\tilde{Q})^\dagger=\tilde{U}\tilde{Q}^\dagger\tilde{U}^\dagger=\Gamma_{\tilde{U}}\bigl(\tilde{Q}^\dagger\bigr),
 $$
 so Hermitian elements go to Hermitian elements and anti-Hermitian to anti-Hermitian. In particular $\Gamma_{\tilde{U}}$ acts on $\mathbb{M}_+$ and on the state space, and it maps the positive cone to itself, because a congruence by an invertible element preserves the signature.
 
@@ -87,11 +87,11 @@ So the action is unital, $\Gamma_{\tilde{U}}(e_0)=e_0$, if and only if $\tilde{U
 
 **Its defect is $\tilde{U}^\dagger\tilde{U}$.** Compute the product of two images:
 $$
-\Gamma_{\tilde{U}}(\tilde{X})\,\Gamma_{\tilde{U}}(\tilde{Y})
-=\tilde{U}\tilde{X}\tilde{U}^\dagger\tilde{U}\tilde{Y}\tilde{U}^\dagger
-=\tilde{U}\tilde{X}\bigl(\tilde{U}^\dagger\tilde{U}\bigr)\tilde{Y}\tilde{U}^\dagger .
+\Gamma_{\tilde{U}}(\tilde{Q})\,\Gamma_{\tilde{U}}(\tilde{Y})
+=\tilde{U}\tilde{Q}\tilde{U}^\dagger\tilde{U}\tilde{Y}\tilde{U}^\dagger
+=\tilde{U}\tilde{Q}\bigl(\tilde{U}^\dagger\tilde{U}\bigr)\tilde{Y}\tilde{U}^\dagger .
 $$
-Compare with $\Gamma_{\tilde{U}}(\tilde{X}\tilde{Y})=\tilde{U}\tilde{X}\tilde{Y}\tilde{U}^\dagger$. The two agree for all $\tilde{X},\tilde{Y}$ if and only if
+Compare with $\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y})=\tilde{U}\tilde{Q}\tilde{Y}\tilde{U}^\dagger$. The two agree for all $\tilde{Q},\tilde{Y}$ if and only if
 $$
 \tilde{U}^\dagger\tilde{U}\,\tilde{Y}=\tilde{Y}\qquad\text{for all }\tilde{Y},
 $$
@@ -99,10 +99,10 @@ which holds if and only if $\tilde{U}^\dagger\tilde{U}=e_0$. This is the **defec
 
 **The centrality statement.** If the defect is central, $\tilde{U}^\dagger\tilde{U}=\lambda e_0$ with $\lambda\in\mathbb{C}_{\mathbb{B}}$, then it commutes past $\tilde{Y}$ and
 $$
-\Gamma_{\tilde{U}}(\tilde{X})\Gamma_{\tilde{U}}(\tilde{Y})
-=\lambda\,\Gamma_{\tilde{U}}(\tilde{X}\tilde{Y}),
+\Gamma_{\tilde{U}}(\tilde{Q})\Gamma_{\tilde{U}}(\tilde{Y})
+=\lambda\,\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y}),
 $$
-so that $\Gamma_{\tilde{U}}$ is an algebra homomorphism **up to the central scalar $\lambda$**. The failure of multiplicativity is then a scalar — the same number for every pair $\tilde{X},\tilde{Y}$ — rather than an operator-valued anomaly that distorts each product differently. Centrality of the defect is exactly the condition that the anomaly is scalar; and the scalar is $1$, i.e. the action is multiplicative, exactly when $\tilde{U}$ is unitary:
+so that $\Gamma_{\tilde{U}}$ is an algebra homomorphism **up to the central scalar $\lambda$**. The failure of multiplicativity is then a scalar — the same number for every pair $\tilde{Q},\tilde{Y}$ — rather than an operator-valued anomaly that distorts each product differently. Centrality of the defect is exactly the condition that the anomaly is scalar; and the scalar is $1$, i.e. the action is multiplicative, exactly when $\tilde{U}$ is unitary:
 $$
 \Gamma_{\tilde{U}}\text{ multiplicative}
 \iff \tilde{U}^\dagger\tilde{U}=e_0
@@ -116,36 +116,36 @@ The two parts of the theorem are stated and proved separately, because they have
 
 ### Part 1: the Hermitian norm
 
-**Theorem 1.** Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation $\Gamma_{\tilde{U}}$ preserves the Hermitian norm for all $\tilde{X}$,
+**Theorem 1.** Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation $\Gamma_{\tilde{U}}$ preserves the Hermitian norm for all $\tilde{Q}$,
 $$
-\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{X})^\dagger\,\Gamma_{\tilde{U}}(\tilde{X})\bigr)=\mathrm{Tr}\bigl(\tilde{X}^\dagger\tilde{X}\bigr)
-\qquad\text{for all }\tilde{X},
+\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^\dagger\,\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Q}\bigr)
+\qquad\text{for all }\tilde{Q},
 $$
 if and only if $\tilde{U}$ is unitary, $\tilde{U}^\dagger\tilde{U}=e_0$.
 
-**Proof.** Write $\tilde{Z}=\tilde{U}^\dagger\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{X})^\dagger=\tilde{U}\tilde{X}^\dagger\tilde{U}^\dagger$,
+**Proof.** Write $\tilde{Z}=\tilde{U}^\dagger\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{Q})^\dagger=\tilde{U}\tilde{Q}^\dagger\tilde{U}^\dagger$,
 $$
-\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{X})^\dagger\Gamma_{\tilde{U}}(\tilde{X})\bigr)
-=\mathrm{Tr}\bigl(\tilde{U}\tilde{X}^\dagger\tilde{U}^\dagger\tilde{U}\tilde{X}\tilde{U}^\dagger\bigr)
-=\mathrm{Tr}\bigl(\tilde{X}^\dagger\tilde{Z}\tilde{X}\tilde{Z}\bigr),
+\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^\dagger\Gamma_{\tilde{U}}(\tilde{Q})\bigr)
+=\mathrm{Tr}\bigl(\tilde{U}\tilde{Q}^\dagger\tilde{U}^\dagger\tilde{U}\tilde{Q}\tilde{U}^\dagger\bigr)
+=\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Z}\tilde{Q}\tilde{Z}\bigr),
 $$
-using the cyclicity of the trace twice. If $\tilde{Z}=e_0$ this is $\mathrm{Tr}(\tilde{X}^\dagger\tilde{X})$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde{X}$ and take $\tilde{X}$ rank one, $\tilde{X}=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde{X}^\dagger\tilde{Z}\tilde{X}=\langle\varphi|\tilde{Z}\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
+using the cyclicity of the trace twice. If $\tilde{Z}=e_0$ this is $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Q})$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde{Q}$ and take $\tilde{Q}$ rank one, $\tilde{Q}=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde{Q}^\dagger\tilde{Z}\tilde{Q}=\langle\varphi|\tilde{Z}\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
 $$
-\mathrm{Tr}\bigl(\tilde{X}^\dagger\tilde{Z}\tilde{X}\tilde{Z}\bigr)
+\mathrm{Tr}\bigl(\tilde{Q}^\dagger\tilde{Z}\tilde{Q}\tilde{Z}\bigr)
 =\langle\varphi|\tilde{Z}\varphi\rangle\,\mathrm{Tr}\bigl(|\varphi\rangle\langle\varphi|\tilde{Z}\bigr)
 =\langle\varphi|\tilde{Z}\varphi\rangle^2 .
 $$
-The preserved value is $\mathrm{Tr}(\tilde{X}^\dagger\tilde{X})=1$, so $\langle\varphi|\tilde{Z}\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde{Z}\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde{Z}=e_0$. $\square$
+The preserved value is $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Q})=1$, so $\langle\varphi|\tilde{Z}\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde{Z}\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde{Z}=e_0$. $\square$
 
-The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{X}\tilde{Y})$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.
+The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{Q}\tilde{Y})$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.
 
 ### Part 2: the norm form
 
 **Theorem 2.** Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation scales the norm form by a central scalar,
 $$
-N\bigl(\Gamma_{\tilde{U}}(\tilde{X})\bigr)=\bigl|N(\tilde{U})\bigr|^2\,N(\tilde{X})
+N\bigl(\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\bigl|N(\tilde{U})\bigr|^2\,N(\tilde{Q})
 \qquad
-\text{for all }\tilde{X},
+\text{for all }\tilde{Q},
 $$
 where $|N(\tilde{U})|^2=N(\tilde{U})\,N(\tilde{U})^{*}$ is a non-negative real scalar, the complex conjugate being taken coefficientwise on the central element $N(\tilde{U})$. Consequently $\Gamma_{\tilde{U}}$ preserves the norm form if and only if
 $$
@@ -153,13 +153,13 @@ $$
 $$
 i.e. if and only if the norm form of $\tilde{U}$ lies on the unit circle of the centre.
 
-**Proof.** Under the matrix model, $M(\Gamma_{\tilde{U}}\tilde{X})=M(\tilde{U})M(\tilde{X})M(\tilde{U}^\dagger)$, and $M(\tilde{U}^\dagger)=M(\tilde{U})^\dagger$. The determinant is multiplicative and the determinant of the adjoint is the conjugate,
+**Proof.** Under the matrix model, $M(\Gamma_{\tilde{U}}\tilde{Q})=M(\tilde{U})M(\tilde{Q})M(\tilde{U}^\dagger)$, and $M(\tilde{U}^\dagger)=M(\tilde{U})^\dagger$. The determinant is multiplicative and the determinant of the adjoint is the conjugate,
 $$
-\det M\bigl(\Gamma_{\tilde{U}}\tilde{X}\bigr)
-=\det M(\tilde{U})\,\det M(\tilde{X})\,\det M(\tilde{U})^{*}
-=\bigl|\det M(\tilde{U})\bigr|^2\det M(\tilde{X}).
+\det M\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)
+=\det M(\tilde{U})\,\det M(\tilde{Q})\,\det M(\tilde{U})^{*}
+=\bigl|\det M(\tilde{U})\bigr|^2\det M(\tilde{Q}).
 $$
-Since $\det M(\tilde{Q})=N(\tilde{Q})$ for every $\tilde{Q}$, and since $N(\tilde{X})e_0=\det M(\tilde{X})\,e_0$, the stated identity follows. Preservation for all $\tilde{X}$ is equivalent to $|N(\tilde{U})|^2=1$, i.e. $|N(\tilde{U})|=1$. $\square$
+Since $\det M(\tilde{Q})=N(\tilde{Q})$ for every $\tilde{Q}$, and since $N(\tilde{Q})e_0=\det M(\tilde{Q})\,e_0$, the stated identity follows. Preservation for all $\tilde{Q}$ is equivalent to $|N(\tilde{U})|^2=1$, i.e. $|N(\tilde{U})|=1$. $\square$
 
 Two features of the proof are worth isolating. First, the scaling factor $|N(\tilde{U})|^2$ is a **central** scalar: it is a real non-negative multiple of $e_0$, so it commutes with everything and multiplies the norm form uniformly. The norm form of an element is itself central-valued, and its modulus is therefore a classical number; preservation of the norm form is a condition on that number. This is the second appearance of the centre, and it is of a different kind from the first: there the centre appeared as the condition for the multiplicative anomaly to be scalar, here as the target space of the norm form itself.
 
@@ -219,13 +219,13 @@ $$
 $$
 which is not central for $\lambda\neq1$, so $\Gamma_{\tilde{U}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde{P}=\tfrac12(e_0+i e_1)$ the trace pairing of $\tilde{P}$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde{U}}\tilde{P})^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the norm form $N$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the norm form sees only the determinant, and the determinant is blind to $\lambda$.
 
-**Example 2: a central scaling.** Take $\tilde{U}=\lambda_0 e_0$ with $\lambda_0>0$, $\lambda_0\neq1$. This defect is central, $\tilde{U}^\dagger\tilde{U}=\lambda_0^2e_0$, so $\Gamma_{\tilde{U}}$ is a homomorphism up to the central scalar $\lambda_0^2$: for all $\tilde{X},\tilde{Y}$,
+**Example 2: a central scaling.** Take $\tilde{U}=\lambda_0 e_0$ with $\lambda_0>0$, $\lambda_0\neq1$. This defect is central, $\tilde{U}^\dagger\tilde{U}=\lambda_0^2e_0$, so $\Gamma_{\tilde{U}}$ is a homomorphism up to the central scalar $\lambda_0^2$: for all $\tilde{Q},\tilde{Y}$,
 $$
-\Gamma_{\tilde{U}}(\tilde{X})\Gamma_{\tilde{U}}(\tilde{Y})=\lambda_0^2\,\Gamma_{\tilde{U}}(\tilde{X}\tilde{Y}),
+\Gamma_{\tilde{U}}(\tilde{Q})\Gamma_{\tilde{U}}(\tilde{Y})=\lambda_0^2\,\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y}),
 \qquad
-\Gamma_{\tilde{U}}(\tilde{X})=\lambda_0^2\tilde{X}.
+\Gamma_{\tilde{U}}(\tilde{Q})=\lambda_0^2\tilde{Q}.
 $$
-The norm form scales as $N(\Gamma_{\tilde{U}}\tilde{X})=\lambda_0^4N(\tilde{X})=\bigl|\lambda_0^2\bigr|^2N(\tilde{X})$, in agreement with Theorem 2 with $|N(\tilde{U})|=|\lambda_0^2|=\lambda_0^2$. The Hermitian norm scales by $\lambda_0^4$ and is not preserved. This example shows that *centrality of the defect is not enough for unitarity*: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_0$ must be normalized to be $\pm i$.
+The norm form scales as $N(\Gamma_{\tilde{U}}\tilde{Q})=\lambda_0^4N(\tilde{Q})=\bigl|\lambda_0^2\bigr|^2N(\tilde{Q})$, in agreement with Theorem 2 with $|N(\tilde{U})|=|\lambda_0^2|=\lambda_0^2$. The Hermitian norm scales by $\lambda_0^4$ and is not preserved. This example shows that *centrality of the defect is not enough for unitarity*: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_0$ must be normalized to be $\pm i$.
 
 **Example 3: a non-central root of $-e_0$.** Take $J=e_3$, so $J^2=-e_0$, and take the Hermitian generator $\tilde{H}=i e_1$ (i.e. $\mathbf{h}=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}J\tilde{H}$,
 $$
@@ -243,7 +243,7 @@ $$
 $$
 which grows without bound, so the Hermitian norm of a state is not preserved. Its norm form, by contrast, is $N(\exp Gt)=\bigl(\cosh^2\hbar^{-1}t-\sinh^2\hbar^{-1}t\bigr)e_0=e_0$, so this non-unitary element has $|N|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $J=e_3$ with the Hermitian element $ie_1$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
 
-**Example 4: an accidental invariance.** If one tests norm preservation only on a single fixed element, non-unitary elements can appear to preserve it. With $\tilde{X}=\tilde{P}(\hat{\mu})$ and $\tilde{U}$ a rotation element of $G_N$ that happens to fix $\hat{\mu}$, the Hermitian norm of that particular $\tilde{X}$ can be unchanged even though $\Gamma_{\tilde{U}}$ is not unitary. The quantifier "for all $\tilde{X}$" in Theorem 1 is therefore essential, and the numerical checks of this article were run on random superpositions precisely to avoid this accident.
+**Example 4: an accidental invariance.** If one tests norm preservation only on a single fixed element, non-unitary elements can appear to preserve it. With $\tilde{Q}=\tilde{P}(\hat{\mu})$ and $\tilde{U}$ a rotation element of $G_N$ that happens to fix $\hat{\mu}$, the Hermitian norm of that particular $\tilde{Q}$ can be unchanged even though $\Gamma_{\tilde{U}}$ is not unitary. The quantifier "for all $\tilde{Q}$" in Theorem 1 is therefore essential, and the numerical checks of this article were run on random superpositions precisely to avoid this accident.
 
 ## Unitarity from Centrality: the Flow
 
@@ -303,10 +303,10 @@ Third, the **forced centrality of the unit in the dynamics** is algebraic in a w
 
 ## Summary
 
-The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{X}^\dagger\tilde{X})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^\dagger$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The norm form $N(\tilde{X})=\tilde{X}\bar{\tilde{X}}$ is central-valued and indefinite, and under the same action it scales by a **central** scalar,
+The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Q})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^\dagger$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ is central-valued and indefinite, and under the same action it scales by a **central** scalar,
 
 $$
-N\bigl(\Gamma_{\tilde{U}}\tilde{X}\bigr)=\bigl|N(\tilde{U})\bigr|^2N(\tilde{X}),
+N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|N(\tilde{U})\bigr|^2N(\tilde{Q}),
 $$
 
 so it is preserved exactly when $|N(\tilde{U})|=1$; that is Theorem 2, and its group is the seven-real-dimensional $G_N=U(1)\cdot SL(2,\mathbb{C})$, which contains $U(2)$; the intersection is $U(2)$ itself, while $U(2)\cap SL(2,\mathbb{C})=SU(2)$.
@@ -325,8 +325,8 @@ The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^\dagger\tilde
 | $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form, centre-valued |
-| $\langle\tilde{X},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{X}^\dagger\tilde{Y})$ | Hermitian (Hilbert–Schmidt) pairing |
-| $\Gamma_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^\dagger$ | Conjugation action |
+| $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$ | Hermitian (Hilbert–Schmidt) pairing |
+| $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^\dagger$ | Conjugation action |
 | $\tilde{Z}=\tilde{U}^\dagger\tilde{U}$ | Defect of the action |
 | $U(2)=\{\tilde{U}:\tilde{U}^\dagger\tilde{U}=e_0\}$ | Unitary group; preserves the Hermitian norm |
 | $SL(2,\mathbb{C})=\{\tilde{U}:N(\tilde{U})=e_0\}$ | Unit-norm-form group |

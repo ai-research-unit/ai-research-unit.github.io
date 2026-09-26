@@ -50,7 +50,7 @@ $$
 SO^{+}(2,2)\cong( SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm1\},
 $$
 
-the latter a standard isomorphism, obtained as follows: $SL_2(\mathbb{R})$ acts on the space of symmetric $2\times2$ matrices by $X\mapsto AXA^{t}$, preserving the determinant, which is a form of signature $(2,1)$, and the product acts on all $2\times2$ matrices by $(A,B)\cdot X = AXB^{-1}$, preserving the determinant, which is a form of signature $(2,2)$. The maximal compact subgroup of $SO^{+}(2,2)$ is the two-dimensional torus $SO(2)\times SO(2)$, larger than in the Lorentzian case relative to the dimension; the difference between the two signatures is exactly the difference between the ranks of the associated symmetric spaces.
+the latter a standard isomorphism, obtained as follows: $SL_2(\mathbb{R})$ acts on the space of symmetric $2\times2$ matrices by $M\mapsto AMA^{t}$, preserving the determinant, which is a form of signature $(2,1)$, and the product acts on all $2\times2$ matrices by $(A,B)\cdot M = AMB^{-1}$, preserving the determinant, which is a form of signature $(2,2)$. The maximal compact subgroup of $SO^{+}(2,2)$ is the two-dimensional torus $SO(2)\times SO(2)$, larger than in the Lorentzian case relative to the dimension; the difference between the two signatures is exactly the difference between the ranks of the associated symmetric spaces.
 
 The two signatures are not unrelated. Over $\mathbb{C}$ a non-degenerate symmetric form has no signature, and the complexifications $O(3,1)_{\mathbb{C}}$ and $O(2,2)_{\mathbb{C}}$ coincide with $O(4,\mathbb{C})$; the two real forms classified by $(3,1)$ and $(2,2)$ are the two real structures of the same complex group, one with real points the Lorentz group and one with real points the neutral group. The complex quadric $\{g = 0\}\subset\mathbb{P}^3$, which describes both, is doubly ruled: through each of its points pass two lines, and the two families are interchanged by the Galois action. This is the sense in which the definite case has one kind of rotation and the indefinite case has three, and it explains why the classification of one-parameter subgroups below has three entries rather than one.
 
@@ -158,12 +158,12 @@ The unit sphere is thus a product of two copies of the quaternion unit sphere, a
 **Proposition.** The unit sphere acts on $\mathbb{H}_{\mathbb{D}}$ by the two-sided action
 
 $$
-\Phi_{(\tilde S,\tilde T)}(\tilde X) = \tilde S\tilde X\tilde T^{-1},
+\Phi_{(\tilde S,\tilde T)}(\tilde{Q}) = \tilde S\tilde{Q}\tilde T^{-1},
 $$
 
-which preserves the norm form; the resulting homomorphism $S^3\times S^3\times S^3\times S^3\to GL_8(\mathbb{R})$ has image of dimension eight, and the restriction to the quaternion subspace $\mathbb{H}\subset\mathbb{H}_{\mathbb{D}}$, on which the action is $X\mapsto \tilde S_+X\tilde S_-^{-1}$, realises $SO(4)$ on each idempotent component, as in *Quaternion Rotations and Reflections*.
+which preserves the norm form; the resulting homomorphism $S^3\times S^3\times S^3\times S^3\to GL_8(\mathbb{R})$ has image of dimension eight, and the restriction to the quaternion subspace $\mathbb{H}\subset\mathbb{H}_{\mathbb{D}}$, on which the action is $\tilde{Q}\mapsto \tilde S_+\tilde{Q}\tilde S_-^{-1}$, realises $SO(4)$ on each idempotent component, as in *Quaternion Rotations and Reflections*.
 
-*Proof.* Multiplicativity of the norm form shows that $\tilde S\tilde X\tilde T^{-1}$ has norm form $N(\tilde S)N(\tilde X)N(\tilde T)^{-1} = N(\tilde X)$ when $\tilde S,\tilde T$ have norm form $e_0$. The image is the product of the two commuting $SO(4)$s corresponding to the two idempotent components, of dimension $3+3$ for the components plus the two-dimensional diagonal scaling, that is eight. The restriction statement is the two-sided action of the quaternion unit sphere, established in *Quaternion Rotations and Reflections*. $\square$
+*Proof.* Multiplicativity of the norm form shows that $\tilde S\tilde{Q}\tilde T^{-1}$ has norm form $N(\tilde S)N(\tilde{Q})N(\tilde T)^{-1} = N(\tilde{Q})$ when $\tilde S,\tilde T$ have norm form $e_0$. The image is the product of the two commuting $SO(4)$s corresponding to the two idempotent components, of dimension $3+3$ for the components plus the two-dimensional diagonal scaling, that is eight. The restriction statement is the two-sided action of the quaternion unit sphere, established in *Quaternion Rotations and Reflections*. $\square$
 
 The comparison with the quaternion sphere is then as follows. In the quaternion algebra the unit sphere $S^3$ is the whole group of units; in the split biquaternion algebra the unit sphere is $S^3\times S^3$, and the group of all units is four times as large in dimension, $\mathbb{H}^\times\times\mathbb{H}^\times$. The compactness of $S^3$ is not lost but doubled. What is lost is the divisibility: the split biquaternion algebra has zero divisors, so the set of elements of norm one is a proper subset of the units, and the polar representations of the units are governed by the idempotent decomposition rather than by a single unit quaternion, as in *Split-Biquaternion Polar Representation*.
 
@@ -183,7 +183,7 @@ $$
 U(\mathbb{H}_{\mathbb{D}}) = \left\{u\,e^{\psi j} : u\in Sp(1),\ \psi\in\mathbb{R}\right\}, \qquad e^{\psi j} = \cosh\psi + j\sinh\psi,
 $$
 
-and its action on $\mathbb{M}_-$ given by $\tilde X\mapsto \tilde S\tilde X\tilde S^{\dagger}$ is by isometries of $g$; it fixes the timelike vector $je_0$ and acts on the spacelike three-plane $\operatorname{Im}\mathbb{H} = \mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3$ by
+and its action on $\mathbb{M}_-$ given by $\tilde{Q}\mapsto \tilde S\tilde{Q}\tilde S^{\dagger}$ is by isometries of $g$; it fixes the timelike vector $je_0$ and acts on the spacelike three-plane $\operatorname{Im}\mathbb{H} = \mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3$ by
 
 $$
 v\longmapsto u\,v\,\bar u ,
@@ -191,10 +191,10 @@ $$
 
 so that the image is the group $SO(3)$ of rotations of the spacelike three-plane. The factor $e^{\psi j}$ lies in the kernel of the action.
 
-*Proof.* Write $\tilde S = a + jb$. Then $\tilde S\tilde S^{\dagger} = (a\bar a - b\bar b) + j(b\bar a - a\bar b) = e_0$ gives the two conditions $a\bar a - b\bar b = 1$ and $a\bar b = b\bar a$; the second says $a\bar b$ is real. Writing $b = tu$ with $t = \lvert b\rvert$ and $u\in Sp(1)$, the first condition forces $a = \pm\sqrt{1 + t^2}\,u$, so $\tilde S = \pm u(\cosh\psi + j\sinh\psi)$ with $\sinh\psi = t$, and since $j$ is central the factor $\cosh\psi + j\sinh\psi = e^{\psi j}$ commutes with $u$; the sign is absorbed into $u$, giving the stated decomposition, of dimension $3+1$. For the action, let $\tilde X = a' + jb'$ with $a'\in\operatorname{Im}\mathbb{H}$ and $b'\in\mathbb{R}$, so that $\tilde X\in\mathbb{M}_-$. Then $\tilde X^{\dagger} = -a' - jb' = -\tilde X$, and
+*Proof.* Write $\tilde S = a + jb$. Then $\tilde S\tilde S^{\dagger} = (a\bar a - b\bar b) + j(b\bar a - a\bar b) = e_0$ gives the two conditions $a\bar a - b\bar b = 1$ and $a\bar b = b\bar a$; the second says $a\bar b$ is real. Writing $b = tu$ with $t = \lvert b\rvert$ and $u\in Sp(1)$, the first condition forces $a = \pm\sqrt{1 + t^2}\,u$, so $\tilde S = \pm u(\cosh\psi + j\sinh\psi)$ with $\sinh\psi = t$, and since $j$ is central the factor $\cosh\psi + j\sinh\psi = e^{\psi j}$ commutes with $u$; the sign is absorbed into $u$, giving the stated decomposition, of dimension $3+1$. For the action, let $\tilde{Q} = a' + jb'$ with $a'\in\operatorname{Im}\mathbb{H}$ and $b'\in\mathbb{R}$, so that $\tilde{Q}\in\mathbb{M}_-$. Then $\tilde{Q}^{\dagger} = -a' - jb' = -\tilde{Q}$, and
 
 $$
-\tilde S\tilde X\tilde S^{\dagger} = u(a' + jb')e^{\psi j}\big(\bar u - j\bar u\,\sinh\psi\big)
+\tilde S\tilde{Q}\tilde S^{\dagger} = u(a' + jb')e^{\psi j}\big(\bar u - j\bar u\,\sinh\psi\big)
 = u a'\bar u + j\,b' ,
 $$
 
@@ -258,9 +258,9 @@ This is the precise content of the split in the classification: the elliptic and
 
 The subsets of $\mathbb{M}_-$ on which $g$ takes constant values carry the geometry of the Lorentzian form.
 
-**Definition.** In the Lorentzian four-space $(\mathbb{M}_-,g)$ the **null cone** is $C_0 = \{\tilde X\in\mathbb{M}_- : g(\tilde X,\tilde X) = 0\}$, and the **hyperboloids** are the level sets $C_{\pm1} = \{\tilde X\in\mathbb{M}_- : g(\tilde X,\tilde X) = \pm1\}$.
+**Definition.** In the Lorentzian four-space $(\mathbb{M}_-,g)$ the **null cone** is $C_0 = \{\tilde{Q}\in\mathbb{M}_- : g(\tilde{Q},\tilde{Q}) = 0\}$, and the **hyperboloids** are the level sets $C_{\pm1} = \{\tilde{Q}\in\mathbb{M}_- : g(\tilde{Q},\tilde{Q}) = \pm1\}$.
 
-**Theorem.** In coordinates $\tilde X = a\,je_0 + v$ with $a\in\mathbb{R}$ and $v\in\operatorname{Im}\mathbb{H}$, the form is $g(\tilde X,\tilde X) = \lvert v\rvert^2 - a^2$, so that the level sets are
+**Theorem.** In coordinates $\tilde{Q} = a\,je_0 + v$ with $a\in\mathbb{R}$ and $v\in\operatorname{Im}\mathbb{H}$, the form is $g(\tilde{Q},\tilde{Q}) = \lvert v\rvert^2 - a^2$, so that the level sets are
 
 $$
 C_{-1} = \{a^2 = 1 + \lvert v\rvert^2\}, \qquad C_{+1} = \{\lvert v\rvert^2 = 1 + a^2\}, \qquad C_0 = \{\lvert v\rvert = \lvert a\rvert\}.
@@ -268,11 +268,11 @@ $$
 
 The set $C_{-1}$ is a **hyperboloid of two sheets**, each sheet diffeomorphic to $\mathbb{R}^3$; the set $C_{+1}$ is a **hyperboloid of one sheet**, diffeomorphic to $S^2\times\mathbb{R}$; and $C_0$ is the cone over the two-sphere $S^2$ with apex at the origin. The group $SO^{+}(3,1)$ acts transitively on each sheet of $C_{-1}$ and on $C_{+1}$, with isotropy $SO(3)$ at a point of $C_{+1}$ and at a point of a sheet of $C_{-1}$; the elliptic one-parameter subgroups are those fixing a timelike direction, the hyperbolic ones those fixing a spacelike direction, and the parabolic ones those fixing a null direction of $C_0$.
 
-*Proof.* The coordinate expression for $g$ is the one computed in the previous section. The equation $g(\tilde X,\tilde X) = -1$ is $a^2 = 1 + \lvert v\rvert^2$, giving the two sheets $a = \pm\sqrt{1+\lvert v\rvert^2}$, each parametrised by $v\in\mathbb{R}^3$ and therefore diffeomorphic to $\mathbb{R}^3$. The equation $g(\tilde X,\tilde X) = +1$ is $\lvert v\rvert^2 = 1 + a^2$; for each $a\in\mathbb{R}$ this is the sphere of radius $\sqrt{1+a^2}$ in the $v$-variable, so the assignment $\tilde X\mapsto(v/\lvert v\rvert, a)$ is a diffeomorphism $C_{+1}\to S^2\times\mathbb{R}$, and $C_{+1}$ is connected. The equation $g(\tilde X,\tilde X) = 0$ is $\lvert v\rvert = \lvert a\rvert$, the cone over $S^2$. The transitivity and isotropy statements are the orbit theory of the Lorentzian form, treated in *Pseudo-Riemannian and Lorentzian Geometry*; the classification of one-parameter subgroups by the type of the vectors they fix is the standard normal form theory of $\mathfrak{so}(3,1)$, in the three cases listed. $\square$
+*Proof.* The coordinate expression for $g$ is the one computed in the previous section. The equation $g(\tilde{Q},\tilde{Q}) = -1$ is $a^2 = 1 + \lvert v\rvert^2$, giving the two sheets $a = \pm\sqrt{1+\lvert v\rvert^2}$, each parametrised by $v\in\mathbb{R}^3$ and therefore diffeomorphic to $\mathbb{R}^3$. The equation $g(\tilde{Q},\tilde{Q}) = +1$ is $\lvert v\rvert^2 = 1 + a^2$; for each $a\in\mathbb{R}$ this is the sphere of radius $\sqrt{1+a^2}$ in the $v$-variable, so the assignment $\tilde{Q}\mapsto(v/\lvert v\rvert, a)$ is a diffeomorphism $C_{+1}\to S^2\times\mathbb{R}$, and $C_{+1}$ is connected. The equation $g(\tilde{Q},\tilde{Q}) = 0$ is $\lvert v\rvert = \lvert a\rvert$, the cone over $S^2$. The transitivity and isotropy statements are the orbit theory of the Lorentzian form, treated in *Pseudo-Riemannian and Lorentzian Geometry*; the classification of one-parameter subgroups by the type of the vectors they fix is the standard normal form theory of $\mathfrak{so}(3,1)$, in the three cases listed. $\square$
 
 Two warnings are needed, because they are the points at which the split biquaternion geometry differs from what the definite case would suggest.
 
-**Proposition.** Every zero divisor of $\mathbb{H}_{\mathbb{D}}$ is isotropic for the ambient form $g$: if $\tilde X$ is a zero divisor then $g(\tilde X,\tilde X) = 0$. The converse fails, and the null cone of $g$ is strictly larger than the zero divisor set; moreover the two ideals meet the Lorentzian four-plane $\mathbb{M}_-$ only at the origin, so the null vectors of $(\mathbb{M}_-,g)$ are not zero divisors.
+**Proposition.** Every zero divisor of $\mathbb{H}_{\mathbb{D}}$ is isotropic for the ambient form $g$: if $\tilde{Q}$ is a zero divisor then $g(\tilde{Q},\tilde{Q}) = 0$. The converse fails, and the null cone of $g$ is strictly larger than the zero divisor set; moreover the two ideals meet the Lorentzian four-plane $\mathbb{M}_-$ only at the origin, so the null vectors of $(\mathbb{M}_-,g)$ are not zero divisors.
 
 *Proof.* By *Split-Biquaternion Zero Divisors* the zero divisors are exactly the elements with $\tilde Q_+ = 0$ or $\tilde Q_- = 0$, that is, the union of the two ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$. Let $\tilde Q = \tilde Q_-e_-$, so that $\tilde Q_+ = 0$. Since ${}^{\dagger} = \bar{\cdot}\,{}^{*}$ and ${}^{*}$ interchanges $e_+$ and $e_-$, one has $\tilde Q^{\dagger} = \bar{\tilde Q}_-e_+$, whence
 
@@ -280,7 +280,7 @@ $$
 \tilde Q\tilde Q^{\dagger} = \tilde Q_-\bar{\tilde Q}_-e_-e_+ = 0,
 $$
 
-because $e_-e_+ = 0$; therefore $g(\tilde Q,\tilde Q) = \operatorname{Sc}(0) = 0$. The same argument applies to the other ideal. For the failure of the converse, the element $\tilde X = e_1 + je_0$ satisfies $g(\tilde X,\tilde X) = 1 - 1 = 0$, so it lies on the null cone of $g$ in $\mathbb{M}_-$, while $\tilde X_+ = e_1 + e_0$ and $\tilde X_- = e_1 - e_0$ are both non-zero, so $\tilde X$ is not a zero divisor. Finally, if $\tilde Q = \tilde Q_+e_+$ lies in $\mathbb{M}_-$, then writing $\tilde Q = a + jb$ gives $a = b = \tfrac{1}{2}\tilde Q_+$; the condition $a\in\operatorname{Im}\mathbb{H}$ forces $\tilde Q_+\in\operatorname{Im}\mathbb{H}$ and the condition $b\in\mathbb{R}$ forces $\tilde Q_+\in\mathbb{R}$, so $\tilde Q_+ = 0$ and $\tilde Q = 0$; the same holds for the other ideal. $\square$
+because $e_-e_+ = 0$; therefore $g(\tilde Q,\tilde Q) = \operatorname{Sc}(0) = 0$. The same argument applies to the other ideal. For the failure of the converse, the element $\tilde{Q} = e_1 + je_0$ satisfies $g(\tilde{Q},\tilde{Q}) = 1 - 1 = 0$, so it lies on the null cone of $g$ in $\mathbb{M}_-$, while $\tilde{Q}_+ = e_1 + e_0$ and $\tilde{Q}_- = e_1 - e_0$ are both non-zero, so $\tilde{Q}$ is not a zero divisor. Finally, if $\tilde Q = \tilde Q_+e_+$ lies in $\mathbb{M}_-$, then writing $\tilde Q = a + jb$ gives $a = b = \tfrac{1}{2}\tilde Q_+$; the condition $a\in\operatorname{Im}\mathbb{H}$ forces $\tilde Q_+\in\operatorname{Im}\mathbb{H}$ and the condition $b\in\mathbb{R}$ forces $\tilde Q_+\in\mathbb{R}$, so $\tilde Q_+ = 0$ and $\tilde Q = 0$; the same holds for the other ideal. $\square$
 
 The second warning is that the non-compactness appears only on the isometry-group side. The unit sphere of the algebra is compact, being $S^3\times S^3$; the Lorentzian hyperboloids $C_{\pm1}$ are non-compact and are orbits of the non-compact group $SO^{+}(3,1)$; and the zero divisor cone, which is the union of the two isotropic ideals, lives in the ambient eight-dimensional space and meets $\mathbb{M}_-$ only at the origin, so it is not the null cone of the Lorentzian form. In the quaternion case the compact sphere $S^3$ is simultaneously the set of units and an orbit of the compact rotation group; here the set of units and the Lorentzian hyperboloid are different objects, one compact and one not, and the bridge between them is the idempotent decomposition.
 

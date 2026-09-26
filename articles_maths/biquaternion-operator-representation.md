@@ -193,7 +193,7 @@ The subgroup of the operator group that preserves the subspace structure acts by
 
 Differentiating the operator action along a one-parameter subgroup gives the infinitesimal operator, and the result identifies the Lie algebra of the operator group with a familiar space.
 
-**Proposition.** Let $X \in \mathbb{B}$ and let $x$ be fixed. Then
+**Proposition.** Let $\tilde{Q} \in \mathbb{B}$ and let $x$ be fixed. Then
 
 $$
 \left.\frac{d}{dt}\right|_{t=0}\operatorname{H}_{e_0+tX}(x) = Xx + xX^\dagger .
@@ -201,7 +201,7 @@ $$
 
 **Proof.** Since $\operatorname{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^\dagger$, differentiating the product at $\tilde{Q} = e_0$ gives $\dot{\tilde{Q}}x + x\dot{\tilde{Q}}^\dagger = Xx + xX^\dagger$. $\square$
 
-The formula contains both of the algebra's symmetries. Along the anti-Hermitian directions, $X^\dagger = -X$, the infinitesimal operator is the **commutator** $[X,x]$, which is the infinitesimal rotation; along the Hermitian directions, $X^\dagger = X$, it is the **anticommutator** $Xx + xX$, which is the infinitesimal boost. The two appear in one formula because the sandwich is built from the dagger, and the anticommutator is the infinitesimal form of the statement that a boost does not double the half-angle of its element, which the section on the rotor records.
+The formula contains both of the algebra's symmetries. Along the anti-Hermitian directions, $\tilde{Q}^\dagger = -\tilde{Q}$, the infinitesimal operator is the **commutator** $[\tilde{Q},x]$, which is the infinitesimal rotation; along the Hermitian directions, $\tilde{Q}^\dagger = \tilde{Q}$, it is the **anticommutator** $\tilde{Q}x + x\tilde{Q}$, which is the infinitesimal boost. The two appear in one formula because the sandwich is built from the dagger, and the anticommutator is the infinitesimal form of the statement that a boost does not double the half-angle of its element, which the section on the rotor records.
 
 ### The Lie Algebra of the Sandwich
 
@@ -462,7 +462,7 @@ which has both real and imaginary coefficients: an element of the quaternion sub
 
 ### An Inner Derivation
 
-Take $X = e_1$ and compute the infinitesimal operator of the inverse sandwich on the other units:
+Take $\tilde{Q} = e_1$ and compute the infinitesimal operator of the inverse sandwich on the other units:
 
 $$
 [e_1, e_2] = e_1e_2 - e_2e_1 = e_3 + e_3 = 2e_3 , \qquad [e_1, e_3] = e_1e_3 - e_3e_1 = -e_2 - e_2 = -2e_2 , \qquad [e_1, e_1] = 0 .
@@ -506,9 +506,9 @@ The automorphism $x \mapsto \tilde{Q}x\tilde{Q}^{-1}$ of the last section is the
 | $\operatorname{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^\dagger$ | the sandwich, or dagger sandwich; the physics rotor conjugation for a rotor |
 | $\operatorname{H}_{z\tilde{Q}} = \lvert z\rvert^2\operatorname{H}_{\tilde{Q}}$ | the central rule, $z$ central |
 | $\operatorname{H}_{\tilde{Q}\tilde{R}} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}}$ | the composition law |
-| $Xx + xX^\dagger$ | the infinitesimal operator, $[X,x]$ on the anti-Hermitian directions |
+| $\tilde{Q}x + x\tilde{Q}^\dagger$ | the infinitesimal operator, $[\tilde{Q},x]$ on the anti-Hermitian directions |
 | $\operatorname{Int}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{-1}$ | the inverse sandwich, or inner action (contrast section) |
-| $\operatorname{ad}_X(x) = [X,x]$ | the inner derivation, the derivative of the inverse sandwich |
+| $\operatorname{ad}_{\tilde{Q}}(x) = [\tilde{Q},x]$ | the inner derivation, the derivative of the inverse sandwich |
 | $\operatorname{Inn}(\mathbb{B}) \cong PGL_2(\mathbb{C}) \cong PSL_2(\mathbb{C})$ | the image of the inverse sandwich |
 | $SO(3) \cong SU(2)/\{\pm e_0\}$ | the operators that preserve the six subspaces of the unit-norm slice |
 | $\mathbb{C}_{\mathbb{B}}^{\times} = \mathbb{C}^{\times}e_0$ | the kernel of the inverse sandwich |
@@ -524,7 +524,7 @@ The automorphism $x \mapsto \tilde{Q}x\tilde{Q}^{-1}$ of the last section is the
 - *Biquaternion Polar Representation* (`articles_maths/biquaternion-polar-representation.md`), for the four factors of a single element and the theorem that they exist and are unique
 - *Biquaternion Partial Polar Representations* (`articles_maths/biquaternion-partial-polar-representations.md`), for the three pairings of the four factors, immediately before the present article in the menu
 - *Biquaternion Representation Theory* (`articles_maths/biquaternion-representation-theory.md`), for the automorphisms, the derivations and the Skolem–Noether theorem in their own right
-- *Biquaternion Algebraic Representations* (`articles_maths/biquaternion-algebraic-representations.md`), for the four-vector, matrix, spinor and Clifford representations of the algebra
+- *Biquaternion Other Algebraic Representations* (`articles_maths/biquaternion-other-algebraic-representations.md`), for the spinor and Clifford realizations of the algebra, and *Biquaternion 2×2 Matrix Representation* (`articles_maths/biquaternion-2x2-matrix-representation.md`) for the matrix model on which they rest
 - *Biquaternion 4×4 Regular Matrix Representation* (`articles_maths/biquaternion-4x4-regular-matrix-representation.md`), for left multiplication, the operator of this article's comparison column
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the rank-one stratum and the null cone as orbits
 - *Biquaternion Roots of Minus One* (`articles_maths/biquaternion-roots-of-minus-one.md`), for the elements of square minus the unit, the generators of the operators of order two

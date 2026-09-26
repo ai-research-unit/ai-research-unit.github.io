@@ -34,14 +34,14 @@ $$
 \tilde R(\theta,\hat n)=\cos\tfrac{\theta}{2}\,e_0+\sin\tfrac{\theta}{2}\,\hat n_ke_k\in\mathbb{H}_{\mathbb{B}},\qquad \tilde R\tilde R^\dagger=e_0,
 $$
 
-and $\tilde R$ is the exponential of the corresponding spin angular momentum, $\tilde R(\theta,\hat n)=\exp(-i\theta\,\hat n_k\tilde S_k/\hbar)$ with $\tilde S_k=\tfrac{\hbar}{2}ie_k\in\mathbb{M}_+$. Conjugation by $\tilde R$ rotates the vectors of the material sector $\mathbb{M}_-$ and the states of the informational sector; the map $\tilde X\mapsto\tilde R\tilde X\tilde R^\dagger$ on $\mathbb{M}_-$ has kernel $\{\pm e_0\}$ and is the covering homomorphism onto the rotation group. The rotation group is the quotient of the rotor group, which is $SU(2)$, by $\{\pm e_0\}$. These facts are established in the companion articles on angular momentum and on the Lorentz group, and are recalled here because the spin–statistics dichotomy is a statement about which side of the cover a representation lives on.
+and $\tilde R$ is the exponential of the corresponding spin angular momentum, $\tilde R(\theta,\hat n)=\exp(-i\theta\,\hat n_k\tilde S_k/\hbar)$ with $\tilde S_k=\tfrac{\hbar}{2}ie_k\in\mathbb{M}_+$. Conjugation by $\tilde R$ rotates the vectors of the material sector $\mathbb{M}_-$ and the states of the informational sector; the map $\tilde{Q}\mapsto\tilde R\tilde{Q}\tilde R^\dagger$ on $\mathbb{M}_-$ has kernel $\{\pm e_0\}$ and is the covering homomorphism onto the rotation group. The rotation group is the quotient of the rotor group, which is $SU(2)$, by $\{\pm e_0\}$. These facts are established in the companion articles on angular momentum and on the Lorentz group, and are recalled here because the spin–statistics dichotomy is a statement about which side of the cover a representation lives on.
 
 The relevant representations of the cover are the two-valued ones. The biquaternion algebra acts on itself by left multiplication, and this is where its irreducible modules live. As a module over $\mathbb{B}$, the algebra affords only $j=\tfrac12$ — the defining module $S$, since $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and its left regular module is $S\oplus S$ — so the half-integer-spin structure is **native to the algebra as a module**, and it is double-valued, because $-e_0$ acts on a module element as $-\mathrm{id}$. The integer-spin representations do not appear as modules at all: the trivial $j=0$ is carried by the center under conjugation and the $j=1$ representation appears through the **adjoint action** on the imaginary quaternions, that is, on $\mathbb{M}_-$ by conjugation, and higher spins require tensor products. This is the precise algebraic form of the dichotomy.
 
 | Representation | Carrier | Action of the rotor | Action of $-e_0$ | Spin |
 |---|---|---|---|---|
 | Defining spinor module | $\mathbb{C}^2$ (module) | left multiplication $\psi\mapsto\tilde\Lambda\psi$ | $-\mathrm{id}$ | half-integer ($\tfrac12$) |
-| Vector (adjoint) | $\mathbb{M}_-$ | conjugation $\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^\dagger$ | $+\mathrm{id}$ | integer ($1$) |
+| Vector (adjoint) | $\mathbb{M}_-$ | conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$ | $+\mathrm{id}$ | integer ($1$) |
 | Descended tensor powers | tensors over $\mathbb{M}_-$ | conjugation / tensor | $+\mathrm{id}$ | integer |
 | Genuine spin tensor powers | tensors over the module | left multiplication | $(-1)^{2s}$ | half-integer |
 
@@ -57,7 +57,7 @@ $$
 
 The $2\pi$ rotation is the nontrivial element of the kernel $\{\pm e_0\}$ of the covering, whatever the axis. Its action therefore separates the two columns of the table above in the sharpest possible way.
 
-- On a **four-vector** $\tilde X\in\mathbb{M}_-$, conjugation by $-e_0$ is trivial, $(-e_0)\tilde X(-e_0)^\dagger=\tilde X$. A rotation by $2\pi$ returns a vector to itself; the vector representation is single-valued.
+- On a **four-vector** $\tilde{Q}\in\mathbb{M}_-$, conjugation by $-e_0$ is trivial, $(-e_0)\tilde{Q}(-e_0)^\dagger=\tilde{Q}$. A rotation by $2\pi$ returns a vector to itself; the vector representation is single-valued.
 - On a **spinor** $\psi$ in the module, $2\pi$ means left multiplication by $-e_0$, so $\psi\mapsto-\psi$. The spinor representation is double-valued; only a rotation by $4\pi$ returns the spinor to itself.
 
 The sign is not an artefact of a basis. It is the image of the nontrivial element of $\pi_1(SO^+(1,3))\cong\mathbb{Z}/2$ under the covering homomorphism, and it is why a spinor has no single-valued representative.

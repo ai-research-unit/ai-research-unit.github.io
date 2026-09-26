@@ -265,7 +265,7 @@ The Bell idempotents satisfy this, as we compute in the next section. This is th
 The distinguishing structural feature of the Bell idempotents is visible directly in their definition. Expanding an arbitrary element of $\mathbb{B}\otimes\mathbb{B}$ in the tensor basis,
 
 $$
-X=\sum_{\mu,\nu=0}^{3}X_{\mu\nu}\,e_\mu\otimes e_\nu,
+\tilde{Q}=\sum_{\mu,\nu=0}^{3}Q_{\mu\nu}\,e_\mu\otimes e_\nu,
 $$
 
 the Bell idempotents are precisely those **trace-one idempotents** whose expansion contains only the **diagonal** terms $e_\mu\otimes e_\mu$:

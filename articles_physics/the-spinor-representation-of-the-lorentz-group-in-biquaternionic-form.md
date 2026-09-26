@@ -31,7 +31,7 @@ Three properties of the representation are worth stating at once, because they d
 
 **It is irreducible.** Since $\mathbb{B}$ is simple, it has exactly one simple module up to isomorphism, and Schur's lemma gives $\mathrm{End}_{\mathbb{B}}(S)=\mathbb{C}$. The module $S$ carries no proper submodule, so the spinor representation is irreducible.
 
-**It is faithful.** The kernel of the action is trivial: $\Phi(-e_0)=-I_2$, so $\pm\tilde{\Lambda}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^{\dagger}$ on $\mathbb{M}_-$, whose kernel is $\{\pm e_0\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
+**It is faithful.** The kernel of the action is trivial: $\Phi(-e_0)=-I_2$, so $\pm\tilde{\Lambda}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ on $\mathbb{M}_-$, whose kernel is $\{\pm e_0\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
 
 **It is not unitary.** A finite-dimensional unitary representation of a real Lie algebra $\mathfrak{g}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $K_k=ie_k$ is represented by $\rho(K_k)=i\rho(e_k)$. If $\rho(e_k)$ is skew-adjoint then
 
@@ -91,11 +91,11 @@ $$
 the four-vector representation. The biquaternion algebra carries this representation, not by multiplication but by **conjugation**,
 
 $$
-X \;\longmapsto\; \tilde{\Lambda}\,X\,\tilde{\Lambda}^{\dagger},
-\qquad X\in\mathbb{B},
+\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{\dagger},
+\qquad \tilde{Q}\in\mathbb{B},
 $$
 
-and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $u\otimes\bar{v}\mapsto X=u\,v^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(uv^{\dagger}+vu^{\dagger})$ is the element of $\mathbb{M}_+$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself.
+and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $u\otimes\bar{v}\mapsto \tilde{Q}=u\,v^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(uv^{\dagger}+vu^{\dagger})$ is the element of $\mathbb{M}_+$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself.
 
 **Verification on a chosen case.** Take the diagonal generator $J_3=e_3$ and the third boost generator $K_3=ie_3$, represented on $S$ by $J_3\mapsto-i\sigma_3$, $K_3\mapsto\sigma_3$. On the four-dimensional space $S\otimes\bar{S}$ the diagonal generator acts by $-i\sigma_3\otimes I+I\otimes(i\sigma_3)$ — note that $\bar{S}$ carries $\overline{(-i\sigma_3)}=i\sigma_3$ — and its eigenvalues on the basis $e_a\otimes\bar{e}_b$ are
 
@@ -104,7 +104,7 @@ $$
 \qquad\text{i.e.}\qquad \{0,\,0,\,+2i,\,-2i\}.
 $$
 
-On $\mathbb{B}$ the conjugation action of the same generator is $X\mapsto J_3X-XJ_3$ (the two signs are opposite because $J_3^{\dagger}=-J_3$). Its eigenvalues on the basis $I,\sigma_1,\sigma_2,\sigma_3$ are $0$ on $I$ and $\sigma_3$, and $\pm2i$ on the combinations of $\sigma_1,\sigma_2$ — the same multiset $\{0,0,\pm2i\}$. The boost generator agrees as well: on $\mathbb{B}$ the action is $X\mapsto K_3X+XK_3$ (the two signs are equal because $K_3^{\dagger}=K_3$), with eigenvalues $\{+2,-2,0,0\}$, matching $K_3\otimes I+I\otimes K_3$ on $S\otimes\bar{S}$. Both representations are four-dimensional and irreducible, so agreement of the Cartan eigenvalues identifies them: the algebra under conjugation **is** the tensor product of the two chiralities.
+On $\mathbb{B}$ the conjugation action of the same generator is $\tilde{Q}\mapsto J_3\tilde{Q}-XJ_3$ (the two signs are opposite because $J_3^{\dagger}=-J_3$). Its eigenvalues on the basis $I,\sigma_1,\sigma_2,\sigma_3$ are $0$ on $I$ and $\sigma_3$, and $\pm2i$ on the combinations of $\sigma_1,\sigma_2$ — the same multiset $\{0,0,\pm2i\}$. The boost generator agrees as well: on $\mathbb{B}$ the action is $\tilde{Q}\mapsto K_3\tilde{Q}+XK_3$ (the two signs are equal because $K_3^{\dagger}=K_3$), with eigenvalues $\{+2,-2,0,0\}$, matching $K_3\otimes I+I\otimes K_3$ on $S\otimes\bar{S}$. Both representations are four-dimensional and irreducible, so agreement of the Cartan eigenvalues identifies them: the algebra under conjugation **is** the tensor product of the two chiralities.
 
 This identification is also what makes the tensor product concrete physically. Restricting the four-vector representation to the rotation subgroup $SU(2)\subset SL(2,\mathbb{C})$, the tensor product of two spin-$\tfrac12$ representations decomposes by the Clebsch–Gordan rule,
 
@@ -173,7 +173,7 @@ The only irreducible representation realized by left multiplication on the algeb
 
 **Right multiplication.** As a right module, $\mathbb{B}\cong S^{*}\oplus S^{*}$, and $S^{*}\cong S$. So right multiplication carries two copies of the *same* chirality, $2\times(\tfrac12,0)$; it does **not** produce the right-handed chirality. This is a precise statement of the caution of the companion on the spinor module: both one-sided multiplications see a single chirality.
 
-**Conjugation.** Under $X\mapsto\tilde{\Lambda}X\tilde{\Lambda}^{\dagger}$ the algebra is irreducible,
+**Conjugation.** Under $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ the algebra is irreducible,
 $$
 \mathbb{B}\cong(\tfrac12,\tfrac12),
 $$
@@ -227,7 +227,7 @@ The higher representations are $(j,j')=V_j\boxtimes V_{j'}$, $\dim=(2j+1)(2j'+1)
 | $C_\pm=\sum_k(N_k^{\pm})^2$ | Chiral Casimirs; $(0,-3)$ vs $(-3,0)$ on $S$ vs $\bar{S}$ |
 | $(j,j')=V_j\boxtimes V_{j'}$ | Irreducible representation, $\dim=(2j+1)(2j'+1)$ |
 | $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S})$ | Carrier of $(j,j')$ from symmetric powers of the spinor |
-| $X\mapsto\tilde{\Lambda}X\tilde{\Lambda}^{\dagger}$ | Conjugation action carrying $(\tfrac12,\tfrac12)$ on $\mathbb{B}$ |
+| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ | Conjugation action carrying $(\tfrac12,\tfrac12)$ on $\mathbb{B}$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing on the Hermitian sector |
 
 ## Further Reading

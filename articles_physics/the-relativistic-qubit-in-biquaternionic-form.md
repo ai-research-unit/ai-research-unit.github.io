@@ -64,11 +64,11 @@ this is the **spinor representation**, complex two-dimensional and faithful, and
 
 **On the material sector**, by congruence,
 $$
-\tilde{X} \ \longmapsto\ \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger , \qquad \tilde{X}\in\mathbb{M}_- ;
+\tilde{Q} \ \longmapsto\ \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger , \qquad \tilde{Q}\in\mathbb{M}_- ;
 $$
 this is the **four-vector representation**. It preserves $\mathbb{M}_-$ by the sector identity of the companion structural article, and it preserves the norm form,
 $$
-N\bigl(\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger\bigr) = N(\tilde{\Lambda})\,N(\tilde{X})\,N(\tilde{\Lambda}^\dagger) = N(\tilde{X}),
+N\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger\bigr) = N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda}^\dagger) = N(\tilde{Q}),
 $$
 so it preserves the interval and the light cone.
 
@@ -148,7 +148,7 @@ $$
 $$
 \tilde{V}(u) = \tfrac{i}{2}\,e_0 - \tfrac12\,\mathbf{r} ,
 $$
-so in the four-vector coordinates $\tilde{X} = ict\,e_0 + \mathbf{x}$ its time component is $ct = \tfrac12 > 0$ and its spatial direction is
+so in the four-vector coordinates $\tilde{Q} = ict\,e_0 + \mathbf{x}$ its time component is $ct = \tfrac12 > 0$ and its spatial direction is
 $$
 \hat{\mathbf{p}} = -\hat{\mathbf{r}} .
 $$

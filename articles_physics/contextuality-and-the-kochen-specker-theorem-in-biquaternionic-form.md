@@ -82,14 +82,14 @@ The two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ is isomorphic to $M_4(\mathb
 On a single qubit introduce the three Hermitian involutions
 
 $$
-\tilde{X} = ie_1, \qquad \tilde{Y} = ie_2, \qquad \tilde{Z} = ie_3,
+\tilde{Q} = ie_1, \qquad \tilde{Y} = ie_2, \qquad \tilde{Z} = ie_3,
 $$
 
-each of which satisfies $\tilde{X}^2 = \tilde{Y}^2 = \tilde{Z}^2 = e_0$ and which multiply as the Pauli matrices do up to central phases, for example
+each of which satisfies $\tilde{Q}^2 = \tilde{Y}^2 = \tilde{Z}^2 = e_0$ and which multiply as the Pauli matrices do up to central phases, for example
 
 $$
-\tilde{X}\tilde{Z} = (ie_1)(ie_3) = -e_1e_3 = e_2 = -i\tilde{Y}, \qquad
-\tilde{Z}\tilde{X} = -e_2 = i\tilde{Y}.
+\tilde{Q}\tilde{Z} = (ie_1)(ie_3) = -e_1e_3 = e_2 = -i\tilde{Y}, \qquad
+\tilde{Z}\tilde{Q} = -e_2 = i\tilde{Y}.
 $$
 
 On the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, tensor these with $e_0$ and with one another to form the nine elements
@@ -97,9 +97,9 @@ On the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, tensor these with $e_0$ 
 
 |  |  |  |
 |---|---|---|
-| $\tilde{X}\otimes e_0$ | $e_0\otimes\tilde{X}$ | $\tilde{X}\otimes\tilde{X}$ |
+| $\tilde{Q}\otimes e_0$ | $e_0\otimes\tilde{Q}$ | $\tilde{Q}\otimes\tilde{Q}$ |
 | $e_0\otimes\tilde{Z}$ | $\tilde{Z}\otimes e_0$ | $\tilde{Z}\otimes\tilde{Z}$ |
-| $\tilde{X}\otimes\tilde{Z}$ | $\tilde{Z}\otimes\tilde{X}$ | $\tilde{Y}\otimes\tilde{Y}$ |
+| $\tilde{Q}\otimes\tilde{Z}$ | $\tilde{Z}\otimes\tilde{Q}$ | $\tilde{Y}\otimes\tilde{Y}$ |
 
 
 Each entry is Hermitian and squares to $e_0\otimes e_0$, so each has spectrum $\{\pm1\}$; this is why the array is called a **magic square**. The entries are the framework's transcription of the standard Mermin–Peres observables built from $\sigma_1,\sigma_2,\sigma_3$ and the identity, using the identification $\sigma_k\leftrightarrow ie_k$.
@@ -111,9 +111,9 @@ Within each row and each column the three entries commute, so their product is u
 
 |  | $\text{column }1$ | $\text{column }2$ | $\text{column }3$ | $\text{row product}$ |
 |---|---|---|---|---|
-| **row 1** | $\tilde{X}\otimes e_0$ | $e_0\otimes\tilde{X}$ | $\tilde{X}\otimes\tilde{X}$ | $\prod = e_0\otimes e_0$ |
+| **row 1** | $\tilde{Q}\otimes e_0$ | $e_0\otimes\tilde{Q}$ | $\tilde{Q}\otimes\tilde{Q}$ | $\prod = e_0\otimes e_0$ |
 | **row 2** | $e_0\otimes\tilde{Z}$ | $\tilde{Z}\otimes e_0$ | $\tilde{Z}\otimes\tilde{Z}$ | $\prod = e_0\otimes e_0$ |
-| **row 3** | $\tilde{X}\otimes\tilde{Z}$ | $\tilde{Z}\otimes\tilde{X}$ | $\tilde{Y}\otimes\tilde{Y}$ | $\prod = e_0\otimes e_0$ |
+| **row 3** | $\tilde{Q}\otimes\tilde{Z}$ | $\tilde{Z}\otimes\tilde{Q}$ | $\tilde{Y}\otimes\tilde{Y}$ | $\prod = e_0\otimes e_0$ |
 | **column product** | $\prod = e_0\otimes e_0$ | $\prod = e_0\otimes e_0$ | $\prod = -e_0\otimes e_0$ |  |
 
 
@@ -127,7 +127,7 @@ The value assignments of the parity argument use multiplicativity within each ro
 
 *Proof.* Multiplying the eigenvalue equations gives $\tilde{A}_1\cdots\tilde{A}_m\tilde{Q}_\alpha = a^{(\alpha)}_1\cdots a^{(\alpha)}_m\tilde{Q}_\alpha$. $\square$
 
-For the magic square each generator has spectrum $\{\pm1\}$, so on each joint eigen-idempotent the product relation reads as a product of signs. Applying the lemma to row $1$, whose joint idempotents are built from $\tilde{P}_\pm(\hat{e}_1)$ on both factors, the identity $\tilde{X}\otimes\tilde{X} = (\tilde{X}\otimes e_0)(e_0\otimes\tilde{X})$ forces the third entry's value to be the product of the first two on every joint eigen-idempotent, so the row product relation holds automatically. The same argument applies to each row and column. The parity contradiction then needs only the two evaluations of the product of all nine values, one from the rows and one from the columns.
+For the magic square each generator has spectrum $\{\pm1\}$, so on each joint eigen-idempotent the product relation reads as a product of signs. Applying the lemma to row $1$, whose joint idempotents are built from $\tilde{P}_\pm(\hat{e}_1)$ on both factors, the identity $\tilde{Q}\otimes\tilde{Q} = (\tilde{Q}\otimes e_0)(e_0\otimes\tilde{Q})$ forces the third entry's value to be the product of the first two on every joint eigen-idempotent, so the row product relation holds automatically. The same argument applies to each row and column. The parity contradiction then needs only the two evaluations of the product of all nine values, one from the rows and one from the columns.
 
 ### The parity contradiction
 
@@ -233,7 +233,7 @@ The two are related but not identical. The magic square is the stronger statemen
 
 A context is a maximal set of mutually commuting Hermitian elements of $\mathbb{M}_+$, realized by a complete family of orthogonal idempotents. A noncontextual value assignment is an algebra homomorphism on each context, with a value for each observable independent of which context contains it. The **Kochen–Specker theorem** states that for a module of complex dimension at least three no such assignment exists; the hypothesis is necessary, and the native qubit, of dimension two, admits a noncontextual model.
 
-The smallest arena in which the obstruction appears in the framework is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module has dimension four. There the **Mermin–Peres magic square** gives the obstruction explicitly: nine Hermitian involutions $\tilde{X}=ie_1,\tilde{Y}=ie_2,\tilde{Z}=ie_3$ and $e_0$ arranged in a $3\times3$ array, every row and column a commuting set, with every row product equal to $+e_0\otimes e_0$, the first two column products equal to $+e_0\otimes e_0$, and the third column product equal to $-e_0\otimes e_0$. Multiplying the row equations and the column equations evaluates the product of all nine entries as $+1$ and as $-1$ respectively, so no noncontextual $\{\pm1\}$ assignment exists.
+The smallest arena in which the obstruction appears in the framework is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module has dimension four. There the **Mermin–Peres magic square** gives the obstruction explicitly: nine Hermitian involutions $\tilde{Q}=ie_1,\tilde{Y}=ie_2,\tilde{Z}=ie_3$ and $e_0$ arranged in a $3\times3$ array, every row and column a commuting set, with every row product equal to $+e_0\otimes e_0$, the first two column products equal to $+e_0\otimes e_0$, and the third column product equal to $-e_0\otimes e_0$. Multiplying the row equations and the column equations evaluates the product of all nine entries as $+1$ and as $-1$ respectively, so no noncontextual $\{\pm1\}$ assignment exists.
 
 State-independent contextuality (the Kochen–Specker theorem and the magic square) is a property of the algebra $\mathbb{M}_+^{\otimes2}$ alone; state-dependent contextuality (the Bell and CHSH inequalities) is a property of a state paired with a context and is expressed in the framework by the trace pairing. The framework transcribes both; it does not change their predictions.
 
@@ -249,7 +249,7 @@ State-independent contextuality (the Kochen–Specker theorem and the magic squa
 | $\tilde{P}_a$, $\sum_a\tilde{P}_a = e_0$ | Idempotent basis of a context |
 | $v(\cdot)$ | Noncontextual value assignment |
 | $v(\tilde{A}\tilde{B}) = v(\tilde{A})v(\tilde{B})$ on a context | Multiplicativity |
-| $\tilde{X}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$ | Hermitian involutions ($\sigma_1,\sigma_2,\sigma_3$) |
+| $\tilde{Q}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$ | Hermitian involutions ($\sigma_1,\sigma_2,\sigma_3$) |
 | $S_1=-e_1\otimes e_1,\ S_3=-e_3\otimes e_3$ | Context generators (Bell stabilizers) |
 | $P_\epsilon$ | Bell idempotents (joint spectral basis) |
 | Magic square | $3\times3$ array of commuting involutions |

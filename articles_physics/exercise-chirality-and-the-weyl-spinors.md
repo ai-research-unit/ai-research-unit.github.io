@@ -10,8 +10,8 @@ The following are assumed, with the notation of the parent article.
 - The matrix realization $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, satisfying $\Phi(\tilde{Q}\tilde{R}) = \Phi(\tilde{Q})\Phi(\tilde{R})$, $\det\Phi(\tilde{Q}) = N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, and $\Phi(\tilde{Q}^{\dagger}) = \Phi(\tilde{Q})^{\dagger}$.
 - The **spinor module** $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying $\psi\mapsto\Phi(\tilde{Q})\psi$. Its ideal realization is $S\cong\mathbb{B}p$, with $p = \tfrac12(e_0+ie_3)$, $q = \tfrac12(e_0-ie_3)$, $pq = qp = 0$, $p+q = e_0$, and basis $\{p,\,y\}$, $y = e_2p = \tfrac12(ie_1+e_2)$.
 - The **two chiral halves**: the left-handed Weyl module $V_1 = (\tfrac12,0)$, carried by $S$ with action $\psi\mapsto g\psi$, $g = \Phi(\tilde{\Lambda})$; and the right-handed module $\bar{S} = (0,\tfrac12)$, carried by $\mathbb{C}^2$ with action $\chi\mapsto\Phi(\tilde{\Lambda}^{*})\chi$. Their direct sum is the **Dirac module** $\Delta = S\oplus\bar{S}$, $\dim_{\mathbb{C}}\Delta = 4$.
-- The group $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}$ of **unit-norm biquaternions**, and the double cover $\pi:SL(2,\mathbb{C})\to SO^{+}(1,3)$, $\pi(\tilde{\Lambda}):\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^{\dagger}$ on $\mathbb{M}_-$.
-- The **symplectic form** $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$, $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$; the mixed pairing $b(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$; and the bilinear $X = uv^{\dagger}$, transforming as $X\mapsto gXg^{\dagger}$.
+- The group $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}$ of **unit-norm biquaternions**, and the double cover $\pi:SL(2,\mathbb{C})\to SO^{+}(1,3)$, $\pi(\tilde{\Lambda}):\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ on $\mathbb{M}_-$.
+- The **symplectic form** $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$, $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$; the mixed pairing $b(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$; and the bilinear $\tilde{Q} = uv^{\dagger}$, transforming as $\tilde{Q}\mapsto gXg^{\dagger}$.
 
 Seven problems are worked below, one per section. Each is carried to a definite answer, and the algebraic identities are checked numerically in double precision.
 
@@ -206,18 +206,18 @@ This is the self-duality of the defining module. It is **not** self-conjugacy: $
 The parent article introduces the bilinear
 
 $$
-X = u\,v^{\dagger}, \qquad u,v\in S,
+\tilde{Q} = u\,v^{\dagger}, \qquad u,v\in S,
 $$
 
-and shows that it transforms as $X\mapsto gXg^{\dagger}$. This is immediate: $(gu)(gv)^{\dagger} = g(uv^{\dagger})g^{\dagger}$.
+and shows that it transforms as $\tilde{Q}\mapsto gXg^{\dagger}$. This is immediate: $(gu)(gv)^{\dagger} = g(uv^{\dagger})g^{\dagger}$.
 
-**Hermiticity and the general four-vector map.** The matrix $X = uv^{\dagger}$ is Hermitian if and only if $u$ and $v$ are proportional by a real factor; in general it is a rank-one element of the full algebra $\mathbb{B}$, not of the Hermitian subspace. The bilinear that lands in the Hermitian subspace $\mathbb{M}_+$ (real dimension four) is the **Hermitian part**
+**Hermiticity and the general four-vector map.** The matrix $\tilde{Q} = uv^{\dagger}$ is Hermitian if and only if $u$ and $v$ are proportional by a real factor; in general it is a rank-one element of the full algebra $\mathbb{B}$, not of the Hermitian subspace. The bilinear that lands in the Hermitian subspace $\mathbb{M}_+$ (real dimension four) is the **Hermitian part**
 
 $$
 H(u,v) = \tfrac12\left(u\,v^{\dagger} + v\,u^{\dagger}\right) \in \mathbb{M}_+ .
 $$
 
-For $v = \pm u$ this reduces to $H = \pm uu^{\dagger}$, and the parent's unsymmetrized $X = uv^{\dagger}$ is then already Hermitian. In general one must symmetrize. The four-vector associated with the spinor pair is
+For $v = \pm u$ this reduces to $H = \pm uu^{\dagger}$, and the parent's unsymmetrized $\tilde{Q} = uv^{\dagger}$ is then already Hermitian. In general one must symmetrize. The four-vector associated with the spinor pair is
 
 $$
 V(u,v) = i\,H(u,v) \in \mathbb{M}_- ,
@@ -276,7 +276,7 @@ so the spinor returns to itself.
 **On the four-vector.** The corresponding four-vector action is rotor conjugation by $\tilde{R}(\theta)$. At $\theta = 2\pi$ the rotor is $\tilde{R}(2\pi) = \cos\pi\,e_0 = -e_0$, and
 
 $$
-(-e_0)\,\tilde{X}\,(-e_0)^{\dagger} = (-e_0)\,\tilde{X}\,(-e_0) = e_0\,\tilde{X}\,e_0 = \tilde{X},
+(-e_0)\,\tilde{Q}\,(-e_0)^{\dagger} = (-e_0)\,\tilde{Q}\,(-e_0) = e_0\,\tilde{Q}\,e_0 = \tilde{Q},
 $$
 
 using $(-e_0)^{\dagger} = -e_0$. So a $2\pi$ rotation acts as $+\mathrm{id}$ on every four-vector. At $\theta = 4\pi$ the rotor is $+e_0$ and both actions are the identity.
@@ -345,7 +345,7 @@ Three points arose where the parent either leaves a definition to convention or 
 
 1. **Right-handed action, exact form.** The parent says the right-handed action is "equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$ (the two differ by conjugation with the invariant tensor $\epsilon$)"; it does not give the identity. The precise identity is $\Phi(\tilde{\Lambda}^{*}) = \epsilon^{-1}\bar{g}\epsilon = \epsilon\bar{g}\epsilon^{-1}$, verified numerically. The orientation of $\epsilon$ in this identity is a convention.
 
-2. **The spinor-to-vector map for a general pair.** The parent writes $X = uv^{\dagger}$ and warns that for a generic pair $iuv^{\dagger}$ does not lie in $\mathbb{M}_-$ and is therefore not a four-vector; it then supplies the symmetrised map $H = \tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_+$, with four-vector image $V = iH\in\mathbb{M}_-$. The exercise uses that symmetrised map. The shorthand $X = uv^{\dagger}$ is general, but the identification of $iX$ with a four-vector is not.
+2. **The spinor-to-vector map for a general pair.** The parent writes $\tilde{Q} = uv^{\dagger}$ and warns that for a generic pair $iuv^{\dagger}$ does not lie in $\mathbb{M}_-$ and is therefore not a four-vector; it then supplies the symmetrised map $H = \tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_+$, with four-vector image $V = iH\in\mathbb{M}_-$. The exercise uses that symmetrised map. The shorthand $\tilde{Q} = uv^{\dagger}$ is general, but the identification of $iX$ with a four-vector is not.
 
 3. **The biquaternion mass term and the conjugate module.** The parent's massive equation is now the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose mass term couples the two chiral halves, with the anti-Hermitian conjugation $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{\dagger}$ the algebra's real structure rather than the mass. The exercise keeps its mass term in the explicit Dirac representation, where it is unambiguous. The parent exhibits neither $\bar{S}$ inside $\mathbb{B}$ nor the isomorphism between the left-regular module $\mathbb{B}\cong S\oplus S$ and the Dirac module $S\oplus\bar{S}$.
 

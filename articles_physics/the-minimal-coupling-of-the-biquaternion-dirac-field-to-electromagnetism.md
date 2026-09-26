@@ -31,7 +31,7 @@ The article is organized as follows. The next section recalls the Dirac field an
 
 ## The Dirac Field and Its Phase Symmetry
 
-The **biquaternion Dirac field** is a biquaternion-valued field $\tilde{\Psi}(\tilde{X}) \in \mathbb{B}$ satisfying the free equation
+The **biquaternion Dirac field** is a biquaternion-valued field $\tilde{\Psi}(\tilde{Q}) \in \mathbb{B}$ satisfying the free equation
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\,\tilde{\Psi}_R, \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger = -\bar{\tilde{\Psi}}^{\,*},
@@ -131,7 +131,7 @@ Both constructions are gauge covariant (verified below). What is **not** covaria
 The gauge transformation is
 
 $$
-\tilde{\Psi}' = \lambda\,\tilde{\Psi}, \qquad \lambda = e^{iq\Gamma(\tilde{X})/\hbar}, \qquad \Gamma \ \text{real},
+\tilde{\Psi}' = \lambda\,\tilde{\Psi}, \qquad \lambda = e^{iq\Gamma(\tilde{Q})/\hbar}, \qquad \Gamma \ \text{real},
 $$
 
 together with $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$. The covariance is the same computation as in the gauge principle article, repeated here because it is the justification of the prescription. The Leibniz rule for the left action of the gradient,

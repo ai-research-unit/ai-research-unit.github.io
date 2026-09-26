@@ -44,7 +44,7 @@ $$
 \mathbf{B} = B_1 e_1 + B_2 e_2 + B_3 e_3 \in \mathbb{H}_{\mathbb{B}} .
 $$
 
-This is the same slot that carries the three real spatial directions $\mathbf{x} = x e_1 + y e_2 + z e_3$ of the material coordinate $\tilde{X} = ict\,e_0 + \mathbf{x}$, and it is the slot in which the magnetic field appears in the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$. The moment and the induction are therefore elements of the *same* real subspace, and their bilinears can be formed with the ordinary quaternion product.
+This is the same slot that carries the three real spatial directions $\mathbf{x} = x e_1 + y e_2 + z e_3$ of the material coordinate $\tilde{Q} = ict\,e_0 + \mathbf{x}$, and it is the slot in which the magnetic field appears in the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$. The moment and the induction are therefore elements of the *same* real subspace, and their bilinears can be formed with the ordinary quaternion product.
 
 For a pure real quaternion $\mathbf{a}$ and a pure real quaternion $\mathbf{b}$, the quaternion product splits into a scalar and a vector part,
 

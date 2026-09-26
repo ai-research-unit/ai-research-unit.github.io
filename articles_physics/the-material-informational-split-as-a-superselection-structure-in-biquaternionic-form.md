@@ -59,7 +59,7 @@ $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
 \tilde{H} = h_0\,e_0 + i\mathbf{h}, \qquad
-\tilde{X} = i x_0\,e_0 + \mathbf{x}, \qquad h_0,\mathbf{h},x_0,\mathbf{x}\ \text{real},
+\tilde{Q} = i x_0\,e_0 + \mathbf{x}, \qquad h_0,\mathbf{h},x_0,\mathbf{x}\ \text{real},
 $$
 so that $\mathbb{M}_+$ is the span of $\{e_0, ie_1, ie_2, ie_3\}$ and $\mathbb{M}_-$ is the span of $\{ie_0, e_1, e_2, e_3\}$. The real structure
 $$
@@ -204,7 +204,7 @@ and the two terms have definite reality types. Because $\tilde{\rho}$ and $\tild
 $$
 \mathrm{Re}\,\mathrm{Tr}\bigl(\tilde{\rho}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{\rho}\,\mathrm{Re}_{\mathbb{B}}\,\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{\rho}\tilde{Q}_+\bigr).
 $$
-The material component contributes only to the imaginary part, which no Hermitian observable reads out. The material component is invisible to every expectation value, exactly as a superselection charge is invisible to every observable that commutes with it. This is a statement about the pairing and not about the physical importance of the material sector: the material sector enters the theory through invariants — the interval $N(\tilde{X}) = \tilde{X}\bar{\tilde{X}}$, the four-velocity norm, the mass shell — and not through expectation values.
+The material component contributes only to the imaginary part, which no Hermitian observable reads out. The material component is invisible to every expectation value, exactly as a superselection charge is invisible to every observable that commutes with it. This is a statement about the pairing and not about the physical importance of the material sector: the material sector enters the theory through invariants — the interval $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, the four-velocity norm, the mass shell — and not through expectation values.
 
 **Summary of the test.** Against the two conditions of a superselection structure: the operations preserve the sectors (verified by the conjugation identity), and the relative phase is unobservable (verified by the centre acting as a scalar on rays and by the reality type of the pairing). Against the standard algebraic realization: there is no central projection, and the module is irreducible, so the sectors are not the summands of a central decomposition. The split therefore satisfies the operational conditions of a superselection structure while violating its standard realization, and the charge that carries it is the antilinear real structure $\flat$.
 
@@ -251,7 +251,7 @@ with even part $\mathbb{M}_-^{0}$ and odd part $\mathbb{M}_+^{0}$.
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the reading in one place.
 
-**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{X} = ict\,e_0+\mathbf{x}$, the four-velocity $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$, the four-momentum $\tilde{P} = m\tilde{U}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{Q} = ict\,e_0+\mathbf{x}$, the four-velocity $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$, the four-momentum $\tilde{P} = m\tilde{U}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
 **What the superselection statement forbids.** Because the conjugation action preserves the sectors and the relative phase is central, there is no operation of the framework that converts material data into informational data or the reverse, and there is no observable coherence between the two. A change of frame is a congruence, so it acts on both sectors simultaneously and preserves the grading: it rotates a four-vector in $\mathbb{M}_-$ and a state in $\mathbb{M}_+$ by the same rotor, and it never turns one into the other. This is the structural reason that a Lorentz transformation can rearrange the information carried by a system but cannot create it from kinematic data or destroy it into kinematic data.
 
@@ -288,7 +288,7 @@ with the material part the compact $\mathfrak{su}(2)$ of rotations and the infor
 | $P_\pm = \tfrac12(\mathrm{id}\pm\dagger)$ | Real-linear sector projections (not in $\mathbb{B}$) |
 | $Z(\mathbb{B}) = \mathbb{C}e_0$ | Centre; $\mathbb{R}e_0$ informational, $\mathbb{R}(ie_0)$ material |
 | $\tilde{H} = h_0e_0 + i\mathbf{h}$ | General Hermitian element |
-| $\tilde{X} = ix_0e_0 + \mathbf{x}$ | General anti-Hermitian element |
+| $\tilde{Q} = ix_0e_0 + \mathbf{x}$ | General anti-Hermitian element |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Congruence (physical operation) |
 | $\mathbb{M}_\pm^{0}$ | Traceless parts, $\mathfrak{sl}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}$ |

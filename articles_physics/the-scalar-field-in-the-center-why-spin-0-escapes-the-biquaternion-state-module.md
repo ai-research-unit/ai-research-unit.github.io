@@ -114,33 +114,33 @@ A scalar field is exactly the opposite. It has no axis, and no rotation may move
 
 ### The Centralizer of the Rotations
 
-Consider the element $X=\sum_{\mu=0}^{3}X_\mu e_\mu\in\mathbb{B}$ and ask which elements are fixed by **every** rotation. Equivalently, ask for which $X$ the infinitesimal condition
+Consider the element $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu\in\mathbb{B}$ and ask which elements are fixed by **every** rotation. Equivalently, ask for which $\tilde{Q}$ the infinitesimal condition
 
 $$
-[e_j,X]=e_jX-Xe_j=0,
+[e_j,\tilde{Q}]=e_j\tilde{Q}-\tilde{Q}e_j=0,
 \qquad j=1,2,3,
 $$
 
 holds. Evaluating the first of these with $e_1^2=-e_0$, $e_1e_2=e_3$, $e_1e_3=-e_2$, one finds
 
 $$
-[e_1,X]=2X_2e_3-2X_3e_2,
+[e_1,\tilde{Q}]=2Q_2e_3-2Q_3e_2,
 $$
 
-so $[e_1,X]=0$ forces $X_2=X_3=0$. The condition $[e_2,X]=0$ then forces $X_1=X_3=0$, and together with the first gives $X_1=X_2=X_3=0$. Hence
+so $[e_1,\tilde{Q}]=0$ forces $Q_2=Q_3=0$. The condition $[e_2,\tilde{Q}]=0$ then forces $Q_1=Q_3=0$, and together with the first gives $Q_1=Q_2=Q_3=0$. Hence
 
 $$
-\{X\in\mathbb{B} : [e_j,X]=0,\ j=1,2,3\}
+\{\tilde{Q}\in\mathbb{B} : [e_j,\tilde{Q}]=0,\ j=1,2,3\}
 =\mathbb{C}_{\mathbb{B}}
 =\{Q_0e_0 : Q_0\in\mathbb{C}\},
 $$
 
-the **center** of the algebra. The result was confirmed independently by solving the linear system $[e_j,X]=0$ over the eight real coordinates of $X$: the coefficient matrix has rank six and nullity two, so the solution space is the real two-dimensional subspace $\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, as stated.
+the **center** of the algebra. The result was confirmed independently by solving the linear system $[e_j,\tilde{Q}]=0$ over the eight real coordinates of $\tilde{Q}$: the coefficient matrix has rank six and nullity two, so the solution space is the real two-dimensional subspace $\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, as stated.
 
 The algebraic statement is therefore exact: **the elements of $\mathbb{B}$ that are invariant under the rotation subgroup are precisely the central elements.** The traceless part of $\mathbb{B}$, on the other hand, transforms as the adjoint representation, of spin one. Under rotations,
 
 $$
-\mathbb{B}=\underbrace{\mathbb{C}_{\mathbb{B}}}_{\text{spin }0}\;\oplus\;\underbrace{\{X:\mathrm{Sc}\,X=0\}}_{\text{spin }1},
+\mathbb{B}=\underbrace{\mathbb{C}_{\mathbb{B}}}_{\text{spin }0}\;\oplus\;\underbrace{\{\tilde{Q}:\mathrm{Sc}\,\tilde{Q}=0\}}_{\text{spin }1},
 $$
 
 so the algebra under the conjugation action carries spin $0$ and spin $1$, while the state module carries spin $\tfrac{1}{2}$. A spin-$0$ field has no alternative but the center.
@@ -155,13 +155,13 @@ $$
 
 and it is a field isomorphic to $\mathbb{C}$. It is fixed pointwise by quaternion conjugation, and it is the fixed space of the algebra's center in the ring-theoretic sense.
 
-It is **not** a left ideal. For a central element $Q_0e_0$ and a general $\tilde{X}\in\mathbb{B}$,
+It is **not** a left ideal. For a central element $Q_0e_0$ and a general $\tilde{Q}\in\mathbb{B}$,
 
 $$
-(Q_0e_0)\tilde{X}=Q_0\tilde{X},
+(Q_0e_0)\tilde{Q}=Q_0\tilde{Q},
 $$
 
-which lies in the center only if $\tilde{X}$ does. Taking $\tilde{X}$ with a nonzero vector part produces a nonzero vector part in the product, so the center is not closed under left multiplication by the algebra. In particular the center contains no nonzero $\mathbb{B}$-submodule: the only $\mathbb{B}$-module it could be is trivial, and $M_2(\mathbb{C})$ has no one-dimensional module with a nonzero action. The center meets the state module trivially as well: a central element $\lambda e_0$ lies in $\mathbb{B}\tilde{P}$ only if its second column vanishes, which forces $\lambda=0$. This was confirmed in the matrix representation.
+which lies in the center only if $\tilde{Q}$ does. Taking $\tilde{Q}$ with a nonzero vector part produces a nonzero vector part in the product, so the center is not closed under left multiplication by the algebra. In particular the center contains no nonzero $\mathbb{B}$-submodule: the only $\mathbb{B}$-module it could be is trivial, and $M_2(\mathbb{C})$ has no one-dimensional module with a nonzero action. The center meets the state module trivially as well: a central element $\lambda e_0$ lies in $\mathbb{B}\tilde{P}$ only if its second column vanishes, which forces $\lambda=0$. This was confirmed in the matrix representation.
 
 The distinction has a second, more elementary face. Every nonzero element of the state module is a **zero divisor**. A spinor satisfies $\tilde{\psi}\tilde{P}=\tilde{\psi}$, hence $\tilde{\psi}(e_0-\tilde{P})=0$ with $e_0-\tilde{P}\neq0$; in the matrix picture its determinant vanishes. A central element $\lambda e_0$, by contrast, has determinant $\lambda^2$ and is invertible whenever $\lambda\neq0$. The scalar line is the algebra's line of invertible complex numbers; the module is its space of non-invertible spinors. They cannot be the same space, and they do not overlap except at zero.
 
@@ -179,7 +179,7 @@ The state module is not an exception within a richer family of modules; it is, u
 
 If one insists on locating the scalar inside the algebra rather than inside a module, the centralizer computation settles where. Under the rotation subgroup the algebra decomposes as spin $0$ (the center) plus spin $1$ (the traceless part); under the conjugation action there is no nonzero element invariant under the full Lorentz group, since the conjugation action on $\mathbb{B}$ is the irreducible complexified four-vector representation. The only rotationally invariant elements are central. A scalar field, being invariant under rotations, must therefore take its values in $\mathbb{C}_{\mathbb{B}}$, and there is nothing else it could take them in.
 
-It is worth stating plainly how the scalar relates to the rotor-conjugation action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, which is the four-vector representation; under rotations it splits into the time component (spin $0$) and the spatial vector (spin $1$). The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}'(x')=\tilde{\Phi}(x)$, with no algebraic factor acting on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the center is the value space in which that absence is natural.
+It is worth stating plainly how the scalar relates to the rotor-conjugation action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, which is the four-vector representation; under rotations it splits into the time component (spin $0$) and the spatial vector (spin $1$). The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}'(x')=\tilde{\Phi}(x)$, with no algebraic factor acting on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the center is the value space in which that absence is natural.
 
 ### The Trivial Representation Lives in the Tensor Square
 
@@ -263,13 +263,13 @@ The plane-wave solutions exhibit the same point. Writing the four-wavevector in 
 $$
 \tilde{K}=i\frac{\omega}{c}e_0+\mathbf{k}\in\mathbb{M}_-,
 \qquad
-\tilde{X}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-,
+\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-,
 $$
 
-the phase is the scalar part $\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})=\mathbf{k}\cdot\mathbf{x}-\omega t$, a real central element, and the positive-frequency solution is
+the phase is the scalar part $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})=\mathbf{k}\cdot\mathbf{x}-\omega t$, a real central element, and the positive-frequency solution is
 
 $$
-\tilde{\Phi}=\phi_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})}\,e_0
+\tilde{\Phi}=\phi_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}\,e_0
 =\phi_0\,e^{\,i(\mathbf{k}\cdot\mathbf{x}-\omega t)}\,e_0 .
 $$
 
@@ -345,7 +345,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 A scalar field carries the trivial representation of the Lorentz group, and the biquaternion framework must therefore be asked where a trivial-representation field can live. The framework's state module is the minimal left ideal $\mathbb{B}\tilde{P}(\hat{\mu})\cong\mathbb{C}^2$, and it carries the defining two-dimensional, spin-$\tfrac{1}{2}$ representation of $SL(2,\mathbb{C})$: the left action of the rotation generators $J_k=\tfrac{i}{2}e_k$ on the module has Casimir $\tfrac{3}{4}e_0$. Its primitive idempotent is built from a spatial axis, and rotations move that axis around the two-sphere, so the module is not rotationally invariant.
 
-The unique rotationally invariant subspace of $\mathbb{B}$ is the center $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, obtained as the centralizer of the quaternion units: $[e_j,X]=0$ for $j=1,2,3$ forces $X=X_0e_0$. The center is a subalgebra isomorphic to $\mathbb{C}$ and is not a left ideal; it meets the state module only at zero. This gives three equivalent reasons why spin $0$ escapes the state module. The algebra $M_2(\mathbb{C})$ is simple and has only one simple module, $\mathbb{C}^2$, so there is no one-dimensional module for the trivial representation. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the center. And the trivial representation appears in the tensor square — in $S\otimes\bar{S}=\mathbb{C}\oplus\mathbb{C}^3$ under the rotation subgroup, and in the symplectic channel of $S\otimes S$ and the mixed left-right pairing under the full Lorentz group — not as a submodule of either factor, so a scalar is a bilinear in the module rather than an element of it.
+The unique rotationally invariant subspace of $\mathbb{B}$ is the center $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, obtained as the centralizer of the quaternion units: $[e_j,\tilde{Q}]=0$ for $j=1,2,3$ forces $\tilde{Q}=Q_0e_0$. The center is a subalgebra isomorphic to $\mathbb{C}$ and is not a left ideal; it meets the state module only at zero. This gives three equivalent reasons why spin $0$ escapes the state module. The algebra $M_2(\mathbb{C})$ is simple and has only one simple module, $\mathbb{C}^2$, so there is no one-dimensional module for the trivial representation. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the center. And the trivial representation appears in the tensor square — in $S\otimes\bar{S}=\mathbb{C}\oplus\mathbb{C}^3$ under the rotation subgroup, and in the symplectic channel of $S\otimes S$ and the mixed left-right pairing under the full Lorentz group — not as a submodule of either factor, so a scalar is a bilinear in the module rather than an element of it.
 
 For the sector split, the center meets each sector in one real direction: the real scalar $e_0$ is the scalar part of $\mathbb{M}_+$, and the imaginary scalar $ie_0$ is the scalar part of $\mathbb{M}_-$. The $\mathbb{M}_-/\mathbb{M}_+$ decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the representation-theoretic reason behind the companion article's finding that the second-order Klein–Gordon structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{\Phi}=\phi e_0$ with $\phi$ complex, obeying $(\Box-m^2c^2/\hbar^2)\tilde{\Phi}=0$ with $\Box$ central and scalar; the framework's first-order, module-theoretic structure never acts on it.
 
@@ -365,7 +365,7 @@ For the sector split, the center meets each sector in one real direction: the re
 | $\tilde{\psi}$ | Spinor, an element of the state module |
 | $J_k=\tfrac{i}{2}e_k$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_0$ on the module |
 | $SL(2,\mathbb{C})=\{\tilde{\Lambda}:\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0\}$ | Unit-norm biquaternions; Lorentz group |
-| $\tilde{X}=ict\,e_0+\mathbf{x}$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
+| $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
 | $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$ | Four-wavevector, $\in\mathbb{M}_-$ |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |

@@ -205,11 +205,11 @@ The square is now applied to the plane waves of the series. Write the four-wavev
 $$
 \tilde{K} = i\frac{\omega}{c}e_0 + \mathbf{k}\in\mathbb{M}_-,
 \qquad
-\tilde{X} = ict\,e_0 + \mathbf{x}\in\mathbb{M}_-,
+\tilde{Q} = ict\,e_0 + \mathbf{x}\in\mathbb{M}_-,
 \qquad \mathbf{k} = k_1e_1 + k_2e_2 + k_3e_3,
 $$
 
-and take the phase $\mathrm{Sc}(\tilde{K}\bar{\tilde{X}}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+and take the phase $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
 \partial_t \longmapsto -i\omega, \qquad \partial_{x_j}\longmapsto ik_j, \qquad \partial_{ict} \longmapsto -\frac{\omega}{c},
@@ -288,7 +288,7 @@ The square carries the mass shell $\tilde{K}\bar{\tilde{K}} = -\mu^2$, hence $E^
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (the Dirac operator) |
 | $\bar{\tilde{\nabla}}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
-| $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$, $\tilde{X} = ict\,e_0 + \mathbf{x}$ | Four-wavevector and four-position |
+| $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$, $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-wavevector and four-position |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
 | $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\mu = mc/\hbar$ | Mass parameter of the operator pair (inverse reduced Compton wavelength) |

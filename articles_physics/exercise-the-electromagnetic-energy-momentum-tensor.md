@@ -98,7 +98,7 @@ using the Poynting theorem for the last equality. The factor $i$ is now uniform,
 
 ## Problem 2: The Tensor as a Biquaternion Bilinear
 
-**Statement.** With $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ the basis of $\mathbb{M}_-$ and $\tilde X = X^\mu\mathcal{E}_\mu$ a four-vector, so that the $X^\mu$ are its physical components, define
+**Statement.** With $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ the basis of $\mathbb{M}_-$ and $\tilde{Q} = Q^\mu\mathcal{E}_\mu$ a four-vector, so that the $Q^\mu$ are its physical components, define
 $$
 T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^\dagger\,\mathcal{E}_\nu\right) = \frac{1}{4}\,\mathrm{Tr}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^\dagger\,\mathcal{E}_\nu\right).
 $$
@@ -242,7 +242,7 @@ T^{\mu\nu} = \frac{1}{\mu}\left(F^{\mu\alpha}{F^\nu}_\alpha - \frac{1}{4}\,\eta^
 $$
 reproduces the component table of Problem 2 up to the medium factors, and identify the normalization of the bracketed expression in terms of $W$ and $\sigma_{jk}$. This shows that the biquaternion bilinear and the standard tensor formula are the same object.
 
-**3. Angular momentum.** Define the angular-momentum density $M^{\mu\nu\lambda} = X^\nu T^{\mu\lambda} - X^\lambda T^{\mu\nu}$, with $\tilde X$ the four-position in $\mathbb{M}_-$. Show that $\partial_\mu M^{\mu\nu\lambda} = 0$ for a source-free field, and identify the three spatial components as the field angular momentum and the three mixed components as the boost (centre-of-energy) densities. Does the biquaternion bilinear simplify $M$, or is the position biquaternion $\tilde X$ the only extra ingredient?
+**3. Angular momentum.** Define the angular-momentum density $M^{\mu\nu\lambda} = Q^\nu T^{\mu\lambda} - Q^\lambda T^{\mu\nu}$, with $\tilde{Q}$ the four-position in $\mathbb{M}_-$. Show that $\partial_\mu M^{\mu\nu\lambda} = 0$ for a source-free field, and identify the three spatial components as the field angular momentum and the three mixed components as the boost (centre-of-energy) densities. Does the biquaternion bilinear simplify $M$, or is the position biquaternion $\tilde{Q}$ the only extra ingredient?
 
 **4. The medium and the Abraham–Minkowski question.** The tensor constructed here is the symmetric tensor with $T^{00} = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ and $\mathbf{S} = \mathbf{E}\times\mathbf{H}$. In a dispersive or moving medium the physically correct momentum density is a matter of the Abraham–Minkowski controversy, and the symmetric tensor used here is only one of the candidates. Determine which choice makes $\partial_\mu T^{\mu\nu} = -f^\nu$ hold with the least additional force term, and whether the biquaternion bilinear of Problem 2 can be written with a different field normalization to produce the Minkowski tensor instead. This is an open question, not a computation with a standard answer.
 

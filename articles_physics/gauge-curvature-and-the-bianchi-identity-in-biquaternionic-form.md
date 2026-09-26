@@ -25,7 +25,7 @@ with normalised generators $T_a = \tfrac12 e_a$ obeying $[T_a,T_b] = \varepsilon
 
 Let the connection be a one-form with values in the compact factor of the material sector,
 $$
-\mathcal{A}_\mu(\tilde{X}) = \mathcal{A}_\mu^{a}(\tilde{X})\,e_a \in \mathfrak{su}(2), \qquad
+\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,e_a \in \mathfrak{su}(2), \qquad
 \mathcal{A} = \sum_{\mu=0}^{3}\mathcal{A}_\mu\,e_\mu ,
 $$
 with real coefficient functions, and let the covariant derivative act on a matter field by left multiplication,
@@ -35,7 +35,7 @@ D_\mu\Psi = \partial_\mu\Psi + i\kappa\,\mathcal{A}_\mu\Psi ,
 \qquad \kappa = \frac{q}{\hbar}.
 $$
 This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $ict$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
-This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $U(\tilde{X}) \in SU(2)$ is
+This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $U(\tilde{Q}) \in SU(2)$ is
 $$
 \mathcal{A}'_\mu = U\,\mathcal{A}_\mu\,U^{-1} + \frac{i}{\kappa}\,(\partial_\mu U)\,U^{-1},
 $$
@@ -70,7 +70,7 @@ The identity $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ is where the framework's reading
 $$
 F_{\mu\nu} = \underbrace{\partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu}_{\text{abelian curl}} + i\kappa\underbrace{[\mathcal{A}_\mu,\mathcal{A}_\nu]}_{\text{algebra commutator}} .
 $$
-The first term is an exterior derivative, not a commutator of two algebra elements, so $F_{\mu\nu}$ is *not in general a single algebra commutator of the connection components*. It is a single commutator only when the first term vanishes, which happens in particular for a connection that is constant in $\tilde{X}$. In that case
+The first term is an exterior derivative, not a commutator of two algebra elements, so $F_{\mu\nu}$ is *not in general a single algebra commutator of the connection components*. It is a single commutator only when the first term vanishes, which happens in particular for a connection that is constant in $\tilde{Q}$. In that case
 $$
 \mathcal{A}_\mu = \text{const} \quad\Longrightarrow\quad F_{\mu\nu} = i\kappa\,[\mathcal{A}_\mu,\mathcal{A}_\nu],
 $$
@@ -95,29 +95,29 @@ which was verified both for an infinitesimal local $U = e_0 + \varepsilon g$ wit
 
 The curvature carries two gauge indices — in the matrix representation, two matrix indices — and the group acts on them two-sidedly, by conjugation. The same is true of the covariant derivative acting on the curvature: because $F_{\mu\nu}$ is an algebra element in the adjoint representation, and not a matter field in the defining representation, its covariant derivative is not the left multiplication used above.
 
-For any algebra-valued field $X(\tilde{X})$, define
+For any algebra-valued field $\tilde{Q}$, define
 $$
-D_\lambda X = \partial_\lambda X + i\kappa\,[\mathcal{A}_\lambda, X],
+D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa\,[\mathcal{A}_\lambda, \tilde{Q}],
 $$
 which is the same as the operator commutator,
 $$
-[D_\lambda, X] = D_\lambda X ,
+[D_\lambda, \tilde{Q}] = D_\lambda \tilde{Q} ,
 $$
-where on the left $X$ is understood as multiplication by the algebra element $X$. The bracket is a **commutator**, $\mathcal{A}_\lambda X - X\mathcal{A}_\lambda$: the action is two-sided in the two matrix indices of $X$, and it cannot be collapsed to a one-sided multiplication. This is the first of the traps this article guards against, and the two actions are genuinely different:
+where on the left $\tilde{Q}$ is understood as multiplication by the algebra element $\tilde{Q}$. The bracket is a **commutator**, $\mathcal{A}_\lambda \tilde{Q} - \tilde{Q}\mathcal{A}_\lambda$: the action is two-sided in the two matrix indices of $\tilde{Q}$, and it cannot be collapsed to a one-sided multiplication. This is the first of the traps this article guards against, and the two actions are genuinely different:
 
 $$
 \underbrace{D_\mu\Psi = \partial_\mu\Psi + i\kappa\,\mathcal{A}_\mu\Psi}_{\text{matter field: one-sided (left)}},
 \qquad
-\underbrace{D_\lambda X = \partial_\lambda X + i\kappa\,[\mathcal{A}_\lambda, X]}_{\text{adjoint-valued curvature: two-sided}} .
+\underbrace{D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa\,[\mathcal{A}_\lambda, \tilde{Q}]}_{\text{adjoint-valued curvature: two-sided}} .
 $$
 
 The distinction is not cosmetic. Replacing the two-sided covariant derivative of the curvature by the one-sided $\partial_\lambda F_{\mu\nu} + i\kappa\,\mathcal{A}_\lambda F_{\mu\nu}$ destroys the Bianchi identity: on a generic non-commuting connection the resulting cyclic sum is nonzero and of order unity, while the correct two-sided sum vanishes. This was checked as a negative control, not assumed.
 
 Finally, this gauge connection must not be confused with the gravitational connection of the corpus. The gauge connection is **one-sided**: it acts on matter by left multiplication, and on the adjoint-valued curvature by the commutator. The gravitational connection of *Curved Spacetime and the Biquaternion Framework* is **two-sided in a different sense**,
 $$
-D_\mu\tilde{X} = \partial_\mu\tilde{X} + \tilde{\Gamma}_\mu\tilde{X} + \tilde{X}\tilde{\Gamma}_\mu^\dagger ,
+D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^\dagger ,
 $$
-because the infinitesimal Lorentz action on $\mathbb{M}_-$ is $G\tilde{X} + \tilde{X}G^\dagger$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathfrak{su}(2)\subset\mathbb{M}_-$ and is one-sided; the gravitational connection lives in the six-dimensional traceless subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
+because the infinitesimal Lorentz action on $\mathbb{M}_-$ is $G\tilde{Q} + \tilde{Q}G^\dagger$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathfrak{su}(2)\subset\mathbb{M}_-$ and is one-sided; the gravitational connection lives in the six-dimensional traceless subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
 
 ## The Bianchi Identity
 
@@ -151,13 +151,13 @@ The identity was recomputed for all $64$ ordered triples $(\lambda,\mu,\nu)$, on
 
 The derivation is short and complete, and the point is to display each substitution rather than name the result.
 
-For any three operators $X,Y,Z$ in an associative algebra, the Jacobi identity holds:
+For any three operators $\tilde{Q},Y,Z$ in an associative algebra, the Jacobi identity holds:
 
 $$
-[X,[Y,Z]] + [Y,[Z,X]] + [Z,[X,Y]] = 0 ,
+[\tilde{Q},[Y,Z]] + [Y,[Z,\tilde{Q}]] + [Z,[\tilde{Q},Y]] = 0 ,
 $$
 
-as a consequence of the associativity of composition, $(XY)Z = X(YZ)$. This is an identity of the *operator* algebra, and it applies to the covariant derivatives because they are operators. Take $X = D_\lambda$, $Y = D_\mu$, $Z = D_\nu$:
+as a consequence of the associativity of composition, $(XY)Z = \tilde{Q}(YZ)$. This is an identity of the *operator* algebra, and it applies to the covariant derivatives because they are operators. Take $\tilde{Q} = D_\lambda$, $Y = D_\mu$, $Z = D_\nu$:
 
 $$
 [D_\lambda,[D_\mu,D_\nu]] + [D_\mu,[D_\nu,D_\lambda]] + [D_\nu,[D_\lambda,D_\mu]] = 0 .
@@ -290,7 +290,7 @@ $$
 
 and the commutator is zeroth order: it is multiplication by the single algebra element $i\kappa F_{\mu\nu}$. That localisation of an operator commutator onto the finite-dimensional algebra is the content of the reduction, and it was verified exactly on generic non-commuting connections for all index pairs. The curvature is antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, and transforms in the adjoint representation, $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$.
 
-Because the curvature is adjoint-valued, its covariant derivative is the two-sided commutator $D_\lambda X = \partial_\lambda X + i\kappa[\mathcal{A}_\lambda,X]$, not the one-sided left multiplication used on a matter field; collapsing the two-sided action to a one-sided one destroys the Bianchi identity. This distinction is separate from, and not to be confused with, the two-sided gravitational connection of the curved-spacetime article.
+Because the curvature is adjoint-valued, its covariant derivative is the two-sided commutator $D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$, not the one-sided left multiplication used on a matter field; collapsing the two-sided action to a one-sided one destroys the Bianchi identity. This distinction is separate from, and not to be confused with, the two-sided gravitational connection of the curved-spacetime article.
 
 The Bianchi identity is
 
@@ -315,7 +315,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
 | $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$ | Gauge algebra inside $\mathbb{M}_-$ |
 | $T_a=\tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
-| $U(\tilde{X}) \in SU(2)$ | Unit real quaternion, $U^{-1}=\bar U=U^\dagger$ |
+| $U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $U^{-1}=\bar U=U^\dagger$ |
 | $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathfrak{su}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa = q/\hbar$ | Coupling |
 | $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative on matter (one-sided, left) |
@@ -323,7 +323,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Curvature components, antisymmetric |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as the commutator of covariant derivatives |
 | $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$ | Adjoint transformation of the curvature |
-| $D_\lambda X = \partial_\lambda X + i\kappa[\mathcal{A}_\lambda,X]$ | Adjoint covariant derivative, $[D_\lambda,X]=D_\lambda X$ |
+| $D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu}=0$ | Bianchi identity (cyclic order as shown) |
 | $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ | Contracted form of the Bianchi identity |
 | $\tilde{F}=i\sqrt{\epsilon}\mathbf{E}-\sqrt{\mu}\mathbf{H}$ | Abelian field-strength biquaternion, $\mathbf{F}=\sum_kF_ke_k$ |
@@ -340,7 +340,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - *The Field-Strength Biquaternion and Its Invariants* — the abelian field strength, its pure-vector character, and the norm-form apparatus that the non-abelian extension does not yet reproduce.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ whose homogeneous part is the Bianchi identity.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
-- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{X}=\partial_\mu\tilde{X}+\tilde{\Gamma}_\mu\tilde{X}+\tilde{X}\tilde{\Gamma}_\mu^\dagger$, distinct from the one-sided gauge connection of this article.
+- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial_\mu\tilde{Q}+\tilde{\Gamma}_\mu\tilde{Q}+\tilde{Q}\tilde{\Gamma}_\mu^\dagger$, distinct from the one-sided gauge connection of this article.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Biquaternion Algebra* and *Quaternion Algebra* — the multiplication rule, the conjugations, and the center used throughout.

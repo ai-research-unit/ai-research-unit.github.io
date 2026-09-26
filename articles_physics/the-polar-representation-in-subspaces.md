@@ -320,20 +320,20 @@ All three rows have the same scale, and the pattern of the two branches is compl
 
 ### The Element and Its Norm Form
 
-Let $\tilde{X}\in\mathbb{M}_-$, written in the physics coordinates as
+Let $\tilde{Q}\in\mathbb{M}_-$, written in the physics coordinates as
 
 $$
-\tilde{X} = i\,a\,e_0 + \mathbf{v} , \qquad a = ct\in\mathbb{R}, \quad \mathbf{v}\in\mathbb{R}^3, \quad s = |\mathbf{v}| , \qquad N(\tilde{X}) = s^2 - a^2 \in\mathbb{R} .
+\tilde{Q} = i\,a\,e_0 + \mathbf{v} , \qquad a = ct\in\mathbb{R}, \quad \mathbf{v}\in\mathbb{R}^3, \quad s = |\mathbf{v}| , \qquad N(\tilde{Q}) = s^2 - a^2 \in\mathbb{R} .
 $$
 
-The sector is the fixed space of the anti-Hermitian conjugation $\flat$ and the $-1$ eigenspace of Hermitian conjugation, of real dimension four; its norm form is the real indefinite form $s^2-a^2$, vanishing on the light cone $s = |a|$, and the representation is defined off that cone. In the matrix picture it is $i$ times the Hermitian class, $\Phi(\tilde{X}) = i\left(aI - v_k\sigma_k\right)$. The norm form is real, so the phase takes one of the two values compatible with a real norm form, and the element is anti-Hermitian, $\tilde{X}^\dagger = -\tilde{X}$. That single condition fixes the shape of the representation.
+The sector is the fixed space of the anti-Hermitian conjugation $\flat$ and the $-1$ eigenspace of Hermitian conjugation, of real dimension four; its norm form is the real indefinite form $s^2-a^2$, vanishing on the light cone $s = |a|$, and the representation is defined off that cone. In the matrix picture it is $i$ times the Hermitian class, $\Phi(\tilde{Q}) = i\left(aI - v_k\sigma_k\right)$. The norm form is real, so the phase takes one of the two values compatible with a real norm form, and the element is anti-Hermitian, $\tilde{Q}^\dagger = -\tilde{Q}$. That single condition fixes the shape of the representation.
 
 ### Why There Are Exactly Two Branches
 
-Write the representation as $\tilde{X} = \rho B\hat{q}$ and apply the anti-Hermitian condition. With $\hat{q}$ a real unit quaternion, $\hat{q}^\dagger = \bar{\hat{q}} = 2q_0 - \hat{q}$, so
+Write the representation as $\tilde{Q} = \rho B\hat{q}$ and apply the anti-Hermitian condition. With $\hat{q}$ a real unit quaternion, $\hat{q}^\dagger = \bar{\hat{q}} = 2q_0 - \hat{q}$, so
 
 $$
-\tilde{X}^\dagger = \bar{\rho}\,B\,\bar{\hat{q}} = -\tilde{X} = -\rho\,B\,\hat{q} \quad\Longrightarrow\quad \bar{\hat{q}} = -e^{2i\alpha}\hat{q} \quad\Longrightarrow\quad 2q_0 = \left(1 - e^{2i\alpha}\right)\hat{q} .
+\tilde{Q}^\dagger = \bar{\rho}\,B\,\bar{\hat{q}} = -\tilde{Q} = -\rho\,B\,\hat{q} \quad\Longrightarrow\quad \bar{\hat{q}} = -e^{2i\alpha}\hat{q} \quad\Longrightarrow\quad 2q_0 = \left(1 - e^{2i\alpha}\right)\hat{q} .
 $$
 
 The left-hand side is a real multiple of the unit, so either $q_0 = 0$, which forces $e^{2i\alpha} = 1$, or $\hat{q} = \pm e_0$, which forces $e^{2i\alpha} = -1$ with the same sign in $q_0$ and in $\hat{q}$. The two solutions are therefore
@@ -346,13 +346,13 @@ and no third possibility exists. Since $N = r^2e^{2i\alpha}$, the first branch i
 
 ### The Boost Factor
 
-From $\tilde{X}\tilde{X}^\dagger = (a^2+s^2)e_0 - 2ia\mathbf{v}$ and $r^2 = |N|$ one gets the explicit factor
+From $\tilde{Q}\tilde{Q}^\dagger = (a^2+s^2)e_0 - 2ia\mathbf{v}$ and $r^2 = |N|$ one gets the explicit factor
 
 $$
 B = \frac{1}{r}\left(M\,e_0 - i\,\operatorname{sign}(a)\,m\,\hat{\mathbf{v}}\right) , \qquad M = \max(|a|,s), \quad m = \min(|a|,s) , \qquad \hat{\mathbf{v}} = \frac{\mathbf{v}}{s} ,
 $$
 
-which is a boost rotor $B = \cosh\varphi\,e_0 - i\operatorname{sign}(a)\sinh\varphi\,\hat{\mathbf{v}}$ of rapidity $2\varphi$ with $\tanh\varphi = m/M$. Squaring it uses $Mm = |a|s$ and gives $B^2 = \left((a^2+s^2)e_0 - 2ia\mathbf{v}\right)/r^2 = \tilde{X}\tilde{X}^\dagger/r^2$, so the closed form is verified by squaring. In the timelike case with $a = ct > 0$ it is the four-velocity identity of the companion article,
+which is a boost rotor $B = \cosh\varphi\,e_0 - i\operatorname{sign}(a)\sinh\varphi\,\hat{\mathbf{v}}$ of rapidity $2\varphi$ with $\tanh\varphi = m/M$. Squaring it uses $Mm = |a|s$ and gives $B^2 = \left((a^2+s^2)e_0 - 2ia\mathbf{v}\right)/r^2 = \tilde{Q}\tilde{Q}^\dagger/r^2$, so the closed form is verified by squaring. In the timelike case with $a = ct > 0$ it is the four-velocity identity of the companion article,
 
 $$
 B = \frac{ct\,e_0 - i\mathbf{x}}{c\tau} = \gamma\left(e_0 - i\frac{\mathbf{v}}{c}\right) = -\frac{i}{c}\tilde{U} , \qquad \gamma = \frac{ct}{c\tau} = \frac{1}{\sqrt{1-\beta^2}} ,
@@ -377,8 +377,8 @@ On the **spacelike** branch the rotor is the pure unit vector $\hat{\mathbf{v}}$
 
 | example | $N$ | $r$ | $\alpha$ | $B$ | $\hat{q}$ |
 |---|---|---|---|---|---|
-| $\tilde{X} = ie_0+0.6\,e_1$ | $-0.64$ | $0.8$ | $1.570796327$ | $1.25\,e_0 - 0.75\,ie_1$ | $e_0$ |
-| $\tilde{X} = 0.5\,ie_0+e_1$ | $0.75$ | $0.866025404$ | $0$ | $1.154700538\,e_0 - 0.577350269\,ie_1$ | $e_1$ |
+| $\tilde{Q} = ie_0+0.6\,e_1$ | $-0.64$ | $0.8$ | $1.570796327$ | $1.25\,e_0 - 0.75\,ie_1$ | $e_0$ |
+| $\tilde{Q} = 0.5\,ie_0+e_1$ | $0.75$ | $0.866025404$ | $0$ | $1.154700538\,e_0 - 0.577350269\,ie_1$ | $e_1$ |
 
 The first row is the four-position of the companion article at $ct = 1$ and $0.6c$: $r = 0.8 = c\tau$, $\alpha = \pi/2$, $B = \gamma(e_0-i\beta)$ with $\gamma = 1.25$ and $\beta = 0.6$, and the rotor is $e_0$. The second row is spacelike: $r = \sqrt{3}/2 = 0.866025404$, the phase vanishes, the rotor is the direction $e_1$, and the boost is a boost about the axis $-e_1$ of rapidity $2\operatorname{arctanh}(0.5) = 1.098612289$.
 
@@ -464,7 +464,7 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\operatorname{Sc}(\tilde{Q}) = 0$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | real quaternion subspace, antiquaternion subspace |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | informational and material sectors |
-| $\tilde{X} = iae_0+\mathbf{v}$, $s = |\mathbf{v}|$ | element of the material sector; $a = ct$ for a four-position |
+| $\tilde{Q} = iae_0+\mathbf{v}$, $s = |\mathbf{v}|$ | element of the material sector; $a = ct$ for a four-position |
 | $\tilde{Q} = ae_0+i\mathbf{w}$, $s = |\mathbf{w}|$ | element of the informational sector |
 | $\tilde{Q} = \mathbf{v}+i\mathbf{w}$ | element of the vector subspace |
 | $\varphi$ | the half-rapidity of $B$: $B = \cosh\varphi\,e_0 + i\sinh\varphi\,\hat{\mathbf{u}}$, rapidity $2\varphi$ |

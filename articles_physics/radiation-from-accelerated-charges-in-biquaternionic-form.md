@@ -29,13 +29,13 @@ $$
 and that the physically correct solution is the **retarded** one, built by convolution over the past light cone. The scalar Green's function of this second-order equation, distinct from the scalar part of that article's biquaternion-valued retarded Green's function (a first-order kernel of the opposite sign), is the familiar retarded kernel of the d'Alembertian,
 
 $$
-G_{\Box}(\tilde{X}) = \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right), \qquad R = |\mathbf{x}|,
+G_{\Box}(\tilde{Q}) = \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right), \qquad R = |\mathbf{x}|,
 $$
 
 so that
 
 $$
-\tilde{A}(\tilde{X}) = \mu\int G_{\Box}(\tilde{X} - \tilde{Y})\,\tilde{R}'(\tilde{Y})\,d^4Y .
+\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde{Y})\,\tilde{R}'(\tilde{Y})\,d^4Y .
 $$
 
 We do not re-derive this structure; we only specialize it. For a point charge $q$ on a worldline $\mathbf{r}_q(t)$, the source is
@@ -98,7 +98,7 @@ The retarded separation is therefore a **null** element of $\mathbb{M}_-$ — a 
 The second is the **coordinate velocity biquaternion**
 
 $$
-\tilde{V} = ic\,e_0 + \mathbf{v}(t_r) = \frac{d\tilde{X}_q}{dt}\bigg|_{\text{ret}} \in \mathbb{M}_-,
+\tilde{V} = ic\,e_0 + \mathbf{v}(t_r) = \frac{d\tilde{Q}_q}{dt}\bigg|_{\text{ret}} \in \mathbb{M}_-,
 $$
 
 whose norm form is
@@ -298,7 +298,7 @@ $$
 \frac{\left|\hat{\mathbf{R}}\times\left[\left(\hat{\mathbf{R}}-\boldsymbol{\beta}\right)\times\dot{\boldsymbol{\beta}}\right]\right|^2}{\kappa^6},
 $$
 
-with the retarded-time derivative convention fixed above. This is the relativistic generalization of the Larmor angular distribution. Its integral over the sphere gives the total radiated power. Because $\boldsymbol{\beta}$, $\dot{\boldsymbol{\beta}}$ and $\kappa$ are functions of the retarded time, the integral is most transparent in the invariant form: writing $\tilde{U} = d\tilde{X}_q/d\tau$ for the four-velocity, the radiated power is
+with the retarded-time derivative convention fixed above. This is the relativistic generalization of the Larmor angular distribution. Its integral over the sphere gives the total radiated power. Because $\boldsymbol{\beta}$, $\dot{\boldsymbol{\beta}}$ and $\kappa$ are functions of the retarded time, the integral is most transparent in the invariant form: writing $\tilde{U} = d\tilde{Q}_q/d\tau$ for the four-velocity, the radiated power is
 
 $$
 P = \frac{q^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{U}}{d\tau}\right)

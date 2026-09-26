@@ -16,7 +16,7 @@ Three claims organise the discussion, and they are worth stating at the outset, 
 
 The article closes by separating what has been constructed from what remains an agenda. The separation is stark: the kinematical fibre of tetrad gravity is present, its dynamics is absent, and the informational sector $\mathbb{M}_+$ has no curved-space treatment at all.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The rotor group is $\{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, with covering homomorphism $\Pi$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The rotor group is $\{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, with covering homomorphism $\Pi$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## What the Flat Machinery Assumes
 
@@ -38,7 +38,7 @@ because the norm form is invariant and the conjugation action is linear in $\til
 
 Four assumptions are built into that statement, and each is a flat-space assumption.
 
-**1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde{X}$, the four-velocity $\tilde{U}$, and every other four-vector are elements of $\mathbb{M}_-$; separation between events enters only as a difference $\tilde{X}_1 - \tilde{X}_2$, never as a displacement along a path.
+**1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde{Q}$, the four-velocity $\tilde{U}$, and every other four-vector are elements of $\mathbb{M}_-$; separation between events enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$, never as a displacement along a path.
 
 **2. A norm form with constant coefficients.** The form $\langle \cdot,\cdot \rangle$ is the same at every point, by construction. Nothing in the algebra can vary it.
 
@@ -83,13 +83,13 @@ It is at this point that a genuine ambiguity appears, and it should be stated be
 
 ### The Two Readings
 
-**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde{X} = ict\,e_0 + \mathbf{x}$, with the local $c$. Then $c$ is a function of position and
+**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde{Q} = ict\,e_0 + \mathbf{x}$, with the local $c$. Then $c$ is a function of position and
 
 $$
 d(ict) = ic\,dt + i\,t\,dc,
 $$
 
-so the displacement biquaternion is $d\tilde{X} = i(c\,dt + t\,dc)e_0 + d\mathbf{x}$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = N(d\tilde{X})$,
+so the displacement biquaternion is $d\tilde{Q} = i(c\,dt + t\,dc)e_0 + d\mathbf{x}$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = N(d\tilde{Q})$,
 
 $$
 ds^2 = -c^2\,dt^2 - 2ct\,dt\,dc - t^2 (dc)^2 + d\mathbf{x}^2
@@ -139,10 +139,10 @@ There is a further conceptual gap along this route, independent of the calculati
 The general way to make the embedding of spacetime into the algebra local is to allow the coordinate differentials to be carried into $\mathbb{M}_-$ by a point-dependent frame:
 
 $$
-d\tilde{X} = \tilde{E}_\mu(x)\,dx^\mu, \qquad \tilde{E}_\mu(x) \in \mathbb{M}_- .
+d\tilde{Q} = \tilde{E}_\mu(x)\,dx^\mu, \qquad \tilde{E}_\mu(x) \in \mathbb{M}_- .
 $$
 
-The interval is $ds^2 = N(d\tilde{X})$, and since $N$ is the polar form evaluated on $d\tilde{X} = \tilde{E}_\mu dx^\mu$,
+The interval is $ds^2 = N(d\tilde{Q})$, and since $N$ is the polar form evaluated on $d\tilde{Q} = \tilde{E}_\mu dx^\mu$,
 
 $$
 g_{\mu\nu}(x) = \langle \tilde{E}_\mu(x), \tilde{E}_\nu(x)\rangle
@@ -181,22 +181,22 @@ $$
 
 six real dimensions, with the rotation generators $J_k = e_k$ and the boost generators $K_k = ie_k$ of the read list. Since this Lie algebra is a subspace of $\mathbb{B}$, a connection 1-form and its curvature 2-form can both be carried as $\mathbb{B}$-valued objects — specifically, as objects valued in that six-dimensional subspace. The spin connection of the tetrad formalism is therefore not foreign to the algebra; it sits inside it.
 
-The trap concerns the covariant derivative. The group acts on the material sector by the two-sided formula $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, so the infinitesimal action of a generator $G$ is
+The trap concerns the covariant derivative. The group acts on the material sector by the two-sided formula $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, so the infinitesimal action of a generator $G$ is
 
 $$
-\tilde{X} \longmapsto \tilde{X} + \epsilon\left(G\tilde{X} + \tilde{X}G^\dagger\right) + O(\epsilon^2),
+\tilde{Q} \longmapsto \tilde{Q} + \epsilon\left(G\tilde{Q} + \tilde{Q}G^\dagger\right) + O(\epsilon^2),
 $$
 
-which is **not** in general the commutator $[G,\tilde{X}]$. The two agree exactly when $G^\dagger = -G$, which is the case for the rotation generators $e_k$; for the boost generators $ie_k$, which are Hermitian, they do not agree. On $\tilde{X} = iq_0 + q_1e_1 + q_2e_2 + q_3e_3$, the boost generator $G = ie_1$ acts to first order as
+which is **not** in general the commutator $[G,\tilde{Q}]$. The two agree exactly when $G^\dagger = -G$, which is the case for the rotation generators $e_k$; for the boost generators $ie_k$, which are Hermitian, they do not agree. On $\tilde{Q} = iq_0 + q_1e_1 + q_2e_2 + q_3e_3$, the boost generator $G = ie_1$ acts to first order as
 
 $$
 q_0 \longmapsto q_0 - 2\epsilon q_1, \qquad q_1 \longmapsto q_1 - 2\epsilon q_0,
 $$
 
-mixing the time and $e_1$ components as a boost must, whereas $[G,\tilde{X}]$ is $2\epsilon(-iq_3\,e_2 + iq_2\,e_3)$, a rotation in the $e_2e_3$ plane — a different transformation altogether. A biquaternionic covariant derivative must therefore be written in the two-sided form
+mixing the time and $e_1$ components as a boost must, whereas $[G,\tilde{Q}]$ is $2\epsilon(-iq_3\,e_2 + iq_2\,e_3)$, a rotation in the $e_2e_3$ plane — a different transformation altogether. A biquaternionic covariant derivative must therefore be written in the two-sided form
 
 $$
-D_\mu \tilde{X} = \partial_\mu \tilde{X} + \tilde{\Gamma}_\mu \tilde{X} + \tilde{X}\tilde{\Gamma}_\mu^\dagger ,
+D_\mu \tilde{Q} = \partial_\mu \tilde{Q} + \tilde{\Gamma}_\mu \tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^\dagger ,
 $$
 
 with $\tilde{\Gamma}_\mu$ in the Lie subspace; the natural abbreviation $D_\mu = \partial_\mu + [\tilde{\Gamma}_\mu, \cdot]$ would be wrong for exactly the boosts, which is where the Lorentzian content of the theory lives.
@@ -227,11 +227,11 @@ The honest summary of the boundary is this. The biquaternion framework contains 
 
 The read-list machinery is flat and pointwise: one fixed algebra, one fixed norm form with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
 
-The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent readings. As a map of points, $\tilde{X} = i\,c(\mathbf{x})\,t\,e_0 + \mathbf{x}$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial_{ict} = -(i/c)\partial_t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = -u\Delta u$, $R_{0i} = 0$, $R_{ij} = \partial_i\partial_j u / u$ for $u = c$. The framework's prose does not choose between the readings, and the choice is left open here.
+The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent readings. As a map of points, $\tilde{Q} = i\,c(\mathbf{x})\,t\,e_0 + \mathbf{x}$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial_{ict} = -(i/c)\partial_t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = -u\Delta u$, $R_{0i} = 0$, $R_{ij} = \partial_i\partial_j u / u$ for $u = c$. The framework's prose does not choose between the readings, and the choice is left open here.
 
 Within the second reading's class — one function, no shift, flat spatial slices — Ricci-flatness forces $u$ to be affine in the spatial coordinates, and every such metric is flat. The class therefore contains no non-flat vacuum geometry: no Weyl curvature, no gravitational waves, no black-hole exteriors. The local scale factor is not the route to general relativity. Nor is it the same object as the metric: $c$ is the Maxwell speed of a medium, and the standard effective metric of a dielectric is a metric for light, not for free fall.
 
-A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, so curvature is exactly the non-gauge part of the frame. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{X} + \tilde{X}G^\dagger$, not the commutator, the two differing precisely for the boosts.
+A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, so curvature is exactly the non-gauge part of the frame. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{Q} + \tilde{Q}G^\dagger$, not the commutator, the two differing precisely for the boosts.
 
 What is missing is not a technical detail but the theory. Nothing determines the frame, the connection, or the metric; there is no action, no field equation, and no Einstein equation; the gravitating rank-2 tensors are not the framework's four-vectors; diffeomorphism invariance has no algebraic counterpart; global and topological structure is outside a pointwise algebra; and the informational sector's trace formula is a fibre trace with no measure and no integral, so its curved-space extension is not merely unwritten but unlocated. The framework contains the kinematical fibre of tetrad gravity and none of its dynamics; the title names a framework, and that is exactly what it is.
 
@@ -247,16 +247,16 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
 | $\langle \tilde{Q},\tilde{P}\rangle = \mathrm{Sc}(\tilde{Q}\bar{\tilde{P}})$ | Bilinear (polar) form on $\mathbb{M}_-$; the pointwise metric |
 | $\tilde{\Lambda} \in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
-| $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | Rotor conjugation (four-vector action) |
+| $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation (four-vector action) |
 | $\Pi : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $ict$ | Local imaginary time coordinate, material sector |
 | $\tilde{\nabla} = e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ | Biquaternionic gradient (needs a global chart) |
-| $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{X} = \tilde{E}_\mu dx^\mu$ |
+| $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{Q} = \tilde{E}_\mu dx^\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle$ | Metric carried by the frame field |
 | $J_k = e_k$, $K_k = ie_k$ | Rotation and boost generators, spanning $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
 | $\tilde{\Gamma}_\mu$ | Connection 1-form, valued in the Lie subspace |
-| $D_\mu\tilde{X} = \partial_\mu\tilde{X} + \tilde{\Gamma}_\mu\tilde{X} + \tilde{X}\tilde{\Gamma}_\mu^\dagger$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
+| $D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^\dagger$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
 | $u = c$, $f = c^2$ | Local scale factor and its square, in the local-scale route |
 | $R_{00}=-u\Delta u$, $R_{0i}=0$, $R_{ij}=\partial_i\partial_j u/u$ | Ricci tensor of $g=\mathrm{diag}(-c^2,1,1,1)$ |
 | $(m,n)$, $\left(\tfrac12,\tfrac12\right)$, $\left(1,1\right)\oplus\left(0,0\right)$ | Lorentz representations: four-vectors; symmetric rank-2 tensors |

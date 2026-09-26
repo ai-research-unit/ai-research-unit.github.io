@@ -68,19 +68,19 @@ For a general element of the algebra, and not only for a Lorentz rotor, the modu
 Take a four-position on a world line of velocity $\mathbf{v} = \beta c\,\hat{\mathbf{u}}$, with time component $ct$. In the material sector it is
 
 $$
-\tilde{X} = i\,ct\,e_0 + \beta c t\,\hat{\mathbf{u}} ,
+\tilde{Q} = i\,ct\,e_0 + \beta c t\,\hat{\mathbf{u}} ,
 $$
 
 and its norm form is the interval
 
 $$
-N(\tilde{X}) = -c^2t^2 + \beta^2c^2t^2 = -c^2t^2\left(1-\beta^2\right) ,
+N(\tilde{Q}) = -c^2t^2 + \beta^2c^2t^2 = -c^2t^2\left(1-\beta^2\right) ,
 $$
 
 a **negative** real for a timelike displacement. The principal square root of a negative real is positive imaginary, so
 
 $$
-\rho = \sqrt{N(\tilde{X})} = i\,ct\sqrt{1-\beta^2} , \qquad r = c t\sqrt{1-\beta^2} = c\tau , \qquad \alpha = \frac{\pi}{2} ,
+\rho = \sqrt{N(\tilde{Q})} = i\,ct\sqrt{1-\beta^2} , \qquad r = c t\sqrt{1-\beta^2} = c\tau , \qquad \alpha = \frac{\pi}{2} ,
 $$
 
 where $\tau$ is the proper time: the scale is $c$ times the proper time, and the phase is $\pi/2$. The phase is thus the object that makes the time component imaginary, and it takes the value $\pi/2$ exactly on the timelike four-vectors. For a spacelike displacement, whose interval is positive, the modulus is real and the phase vanishes, $\alpha = 0$. The two values $\alpha = 0$ and $\alpha = \pi/2$ are the two sectors: the sector exchange $i\mathbb{M}_- = \mathbb{M}_+$ of the four-vector article is the multiplication by the phase factor at its two distinguished angles.
@@ -105,18 +105,18 @@ Hence $r$ and $\alpha$ are invariants of the orbit of $\tilde{Q}$ under the Lore
 
 ### The Boost Factor Is a Square
 
-The boost factor of the polar representation of a four-vector is the **square** of the boost rotor that the physics articles use, taken in the normalisation that carries the rest frame to the lab frame, and the reason is the structure of the action. A Lorentz rotor $\tilde{\Lambda}$ acts on a four-vector by conjugation, $X\mapsto\tilde{\Lambda}X\tilde{\Lambda}^\dagger$, so the rotor appears twice. With the corpus's convention $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $\hat{\mathbf{u}} = \mathbf{v}/|\mathbf{v}|$, the rotor carries the four-position of a particle of velocity $\mathbf{v}$ into its rest four-position,
+The boost factor of the polar representation of a four-vector is the **square** of the boost rotor that the physics articles use, taken in the normalisation that carries the rest frame to the lab frame, and the reason is the structure of the action. A Lorentz rotor $\tilde{\Lambda}$ acts on a four-vector by conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, so the rotor appears twice. With the corpus's convention $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $\hat{\mathbf{u}} = \mathbf{v}/|\mathbf{v}|$, the rotor carries the four-position of a particle of velocity $\mathbf{v}$ into its rest four-position,
 
 $$
-\tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger = ic\tau\,e_0 ,
+\tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger = ic\tau\,e_0 ,
 \qquad\text{hence}\qquad
-\tilde{X} = \tilde{\Lambda}^\dagger\left(ic\tau e_0\right)\tilde{\Lambda} = ic\tau\,\tilde{\Lambda}^{\dagger 2} = ic\tau\,\bar{\tilde{\Lambda}}^2 ,
+\tilde{Q} = \tilde{\Lambda}^\dagger\left(ic\tau e_0\right)\tilde{\Lambda} = ic\tau\,\tilde{\Lambda}^{\dagger 2} = ic\tau\,\bar{\tilde{\Lambda}}^2 ,
 $$
 
 where the last step uses the Hermitian character of a pure boost rotor, $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}$. The comparison with the representation of the same four-position,
 
 $$
-\tilde{X} = c\tau\,e^{i\pi/2}\,B , 
+\tilde{Q} = c\tau\,e^{i\pi/2}\,B , 
 $$
 
 identifies the boost factor with the square of the **conjugate** rotor, the rotor of rapidity $-\psi$ which carries the rest frame to the lab frame: $B = \bar{\tilde{\Lambda}}^2$, or equivalently
@@ -169,10 +169,10 @@ with $B = \tilde{\Lambda}$, since a Hermitian positive-definite element is its o
 
 ### A Four-Position and Its Proper Time
 
-Take $\tilde{X} = i\,e_0 + 0.6\,e_1$, the four-position of a particle at $ct = 1$ moving at $0.6c$ along $e_1$. Then
+Take $\tilde{Q} = i\,e_0 + 0.6\,e_1$, the four-position of a particle at $ct = 1$ moving at $0.6c$ along $e_1$. Then
 
 $$
-N(\tilde{X}) = -1+0.36 = -0.64 , \qquad r = 0.8 = c\tau , \qquad \alpha = \frac{\pi}{2} ,
+N(\tilde{Q}) = -1+0.36 = -0.64 , \qquad r = 0.8 = c\tau , \qquad \alpha = \frac{\pi}{2} ,
 $$
 
 so the scale is the proper time and $B = 1.25e_0 - 0.75ie_1$, the square of the conjugate of the rotor of the previous example, $B = \bar{\tilde{\Lambda}}^2 = -(i/c)\tilde{U}$ with $\tilde{U} = \gamma(ie_0+0.6e_1)$ the four-velocity; the three rows of the table above are the rest of this family. The four-position is the proper time times the imaginary unit times that square, applied twice because the rotor acts by conjugation on both sides.
@@ -201,7 +201,7 @@ a rotation of $2.161669$ rad about $(1,2,0)/\sqrt5$. The element is a scale, a p
 
 ### A Null Four-Vector
 
-Take $\tilde{X} = i\,e_0 + e_1$, a displacement on the light cone, since $N(\tilde{X}) = -1+1 = 0$. The polar representation does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and the algebra's zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.
+Take $\tilde{Q} = i\,e_0 + e_1$, a displacement on the light cone, since $N(\tilde{Q}) = -1+1 = 0$. The polar representation does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and the algebra's zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.
 
 ## The Four Factors in One Table
 
@@ -270,7 +270,7 @@ The polar representation of a biquaternion is $r e^{i\alpha}B\hat{q}$, and in th
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $\hat{\mathbf{u}} = \mathbf{v}/|\mathbf{v}|$ | the physics boost rotor; for a four-position $B = \bar{\tilde{\Lambda}}^2 = -(i/c)\tilde{U}$ |
 | $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$ | the four-velocity |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors; four-vectors live in $\mathbb{M}_-$ |
-| $\tilde{X} = ict\,e_0+\mathbf{x}$ | a four-position, interval $N = -c^2t^2+\mathbf{x}^2$ |
+| $\tilde{Q} = ict\,e_0+\mathbf{x}$ | a four-position, interval $N = -c^2t^2+\mathbf{x}^2$ |
 
 ## Further Reading
 

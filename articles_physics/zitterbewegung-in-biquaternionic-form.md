@@ -73,7 +73,7 @@ $$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \bar{\tilde\nabla}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^\dagger,
 $$
 
-with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde k\tilde X)$ with wave biquaternion $\tilde k = e_0k_0 + \mathbf{k}$ and the single mass-shell condition
+with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde k\tilde{Q})$ with wave biquaternion $\tilde k = e_0k_0 + \mathbf{k}$ and the single mass-shell condition
 
 $$
 \tilde k\bar{\tilde k} = -\frac{m^2c^2}{\hbar^2}.

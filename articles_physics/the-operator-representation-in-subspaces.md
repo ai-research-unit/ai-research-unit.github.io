@@ -10,7 +10,7 @@ $$
 
 reads it as a representation of the group of units, and computes its kernel, its invariants and its action on the six distinguished subspaces. This article restricts the **acting element** to one of the six subspaces and records what the restriction does to the operator. It is the operator counterpart of *The Polar Representation in Subspaces*, which restricts the same six subspaces in the other direction: there the question is which of the four polar factors a subspace can carry, here it is which operator an element of a subspace produces.
 
-The question is a physical one, and it has a physical answer. The Lorentz transformation of the corpus is written with a rotor, and for a pure boost that rotor lies in the Hermitian subspace $\mathbb{M}_+$, as *The Lorentz Transformation as a Biquaternionic Rotation* records: the boost biquaternion has a real scalar part and a purely imaginary vector part, so it is Hermitian and its sandwich collapses to $\tilde{\Lambda}\tilde{X}\tilde{\Lambda}$. The rotation lies in $\mathbb{H}_{\mathbb{B}}$, the home of the unit real quaternions; the phase lies in the centre; the four-vectors lie in $\mathbb{M}_-$. Each subspace therefore asks a separate question — what kind of transformation does an element of *this* subspace produce? — and the article answers the six questions and finds that they are four.
+The question is a physical one, and it has a physical answer. The Lorentz transformation of the corpus is written with a rotor, and for a pure boost that rotor lies in the Hermitian subspace $\mathbb{M}_+$, as *The Lorentz Transformation as a Biquaternionic Rotation* records: the boost biquaternion has a real scalar part and a purely imaginary vector part, so it is Hermitian and its sandwich collapses to $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$. The rotation lies in $\mathbb{H}_{\mathbb{B}}$, the home of the unit real quaternions; the phase lies in the centre; the four-vectors lie in $\mathbb{M}_-$. Each subspace therefore asks a separate question — what kind of transformation does an element of *this* subspace produce? — and the article answers the six questions and finds that they are four.
 
 Three results organise the answer. The first is a **central invariance**: multiplying the acting element by a central scalar multiplies the sandwich by the squared modulus of that scalar. Because the scalar imaginary $i$ is central, the six subspaces collapse to four **operator classes**: the centre, the vector subspace, the two halves together, and the two sectors together; an antiquaternion acts exactly as its real quaternion, and an element of the material sector acts exactly as the corresponding informational element. The second is that the operator's **type** is decided by the subspace in a sharp way: the centre gives the dilations, the vector subspace gives the similarities, the rotations by $\pi$ among them, the two halves give the rotations, and the two sectors give the Lorentz transformations: the boosts, and the boosts composed with a rotation by $\pi$ on the negative-norm branch. The third is the answer to the question the series puts to the Hermitian subspace: **the Lorentz transformation of the corpus is the sandwich of an element of $\mathbb{M}_+$**, so the informational sector is the home of the boosts, and the material sector reaches the same family through the central imaginary.
 
@@ -224,7 +224,7 @@ $$
 and when both are negative it is $-\tilde{\Lambda}$ with the same operator. Since $\tilde{\Lambda}$ is Hermitian, its sandwich has the element on both sides of the argument,
 
 $$
-\operatorname{H}_{\tilde{\Lambda}}(\tilde{X}) = \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda} ,
+\operatorname{H}_{\tilde{\Lambda}}(\tilde{Q}) = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda} ,
 $$
 
 which is the form in which *The Lorentz Transformation as a Biquaternionic Rotation* writes the boost. This is the sharpest answer the article gives to the question it started from: **the Lorentz transformation of the corpus is the sandwich of an element of the informational sector**, with no rotation part, and the element is Hermitian, so no inverse appears in it. Its action on a four-position is the boost relation, and the kernel on the class is the two central signs, so the boost family is three-dimensional — the hyperbolic three-space of the rapidity vector — and the map from the class to the boosts is two to one.
@@ -235,10 +235,10 @@ $$
 \tilde{\Lambda} = 1.060660172\,e_0 + 0.353553391\,i\,e_3 , \qquad N(\tilde{\Lambda}) = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1 ,
 $$
 
-and the four-position $\tilde{X} = icte_0 + 0.6ct\,e_3$ of a world line of velocity $0.6c$, at $ct = 1$. Then
+and the four-position $\tilde{Q} = icte_0 + 0.6ct\,e_3$ of a world line of velocity $0.6c$, at $ct = 1$. Then
 
 $$
-\operatorname{H}_{\tilde{\Lambda}}(\tilde{X}) = \tilde{\Lambda}\tilde{X}\tilde{\Lambda} = 0.8\,ie_0 ,
+\operatorname{H}_{\tilde{\Lambda}}(\tilde{Q}) = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda} = 0.8\,ie_0 ,
 $$
 
 the four-position in the rest frame, with $ct' = 0.8 = \sqrt{1-0.6^2}$ and $z' = 0$. The boost formula of the corpus, $ct' = ct\cosh\psi - z\sinh\psi$ and $z' = z\cosh\psi - ct\sinh\psi$, is the same computation in components, and the element of the informational sector is the operator that performs it.

@@ -10,7 +10,7 @@ The biquaternion content of the Klein–Gordon path integral is a statement abou
 
 The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion reading, and open questions are recorded.
 
-Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center; $\tilde{X}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$; $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$; and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.
+Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the center; $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$; $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$; and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the central scalar operator.
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
@@ -26,7 +26,7 @@ Throughout, the conventions are those of the companion articles: $\mathbb{B}=\ma
 The field of the theory is a function on spacetime taking values in the center,
 
 $$
-\tilde{\Phi}(\tilde{X})=\phi(\tilde{X})\,e_0,
+\tilde{\Phi}(\tilde{Q})=\phi(\tilde{Q})\,e_0,
 \qquad
 \phi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
@@ -152,7 +152,7 @@ $$
 with Dirichlet endpoints, and its inverse is the lattice propagator. The continuum limit $h\to0$ on a fixed physical volume gives the Euclidean Green's function
 
 $$
-G_E(\tilde{X}_E)=\left(-\Delta_E+\mu^2\right)^{-1},
+G_E(\tilde{Q}_E)=\left(-\Delta_E+\mu^2\right)^{-1},
 \qquad
 \tilde{G}_E(p)=\frac{1}{\mathbf{p}_E^2+\mu^2},
 $$
@@ -160,8 +160,8 @@ $$
 which is the standard massive Euclidean propagator. The free two-point function of the path integral is therefore the Euclidean kernel
 
 $$
-\langle\tilde{\Phi}(\tilde{X}_E)\tilde{\Phi}^\dagger(\tilde{Y}_E)\rangle
-=G_E(\tilde{X}_E-\tilde{Y}_E)\,e_0,
+\langle\tilde{\Phi}(\tilde{Q}_E)\tilde{\Phi}^\dagger(\tilde{Y}_E)\rangle
+=G_E(\tilde{Q}_E-\tilde{Y}_E)\,e_0,
 $$
 
 a central scalar times $e_0$, whose closed Yukawa form is given in the companion article on the propagator. The identity of the Gaussian two-point function with the inverse of the quadratic form, verified exactly on the lattice, is the path-integral proof that the free propagator is the Green's function of the Klein–Gordon operator: the two constructions agree by construction once the quadratic form is identified with the operator.
@@ -220,9 +220,9 @@ so that the propagator is the inverse of the norm form shifted by the mass. In t
 The oscillatory functional integral is converted into a decaying one by the Wick rotation, which the companion article *The Wick Rotation in the Biquaternion Universe* identifies with the passage from the material sector to the quaternion subspace: the imaginary time coefficient $ict$ is relabelled as the real coefficient $c\tau$, and a point of $\mathbb{M}_-$ becomes a point of $\mathbb{H}_{\mathbb{B}}$,
 
 $$
-\tilde{X}=ict\,e_0+\mathbf{x}\;\in\;\mathbb{M}_-
+\tilde{Q}=ict\,e_0+\mathbf{x}\;\in\;\mathbb{M}_-
 \qquad\longmapsto\qquad
-\tilde{X}_E=c\tau\,e_0+\mathbf{x}\;\in\;\mathbb{H}_{\mathbb{B}} .
+\tilde{Q}_E=c\tau\,e_0+\mathbf{x}\;\in\;\mathbb{H}_{\mathbb{B}} .
 $$
 
 On $\mathbb{H}_{\mathbb{B}}$ the norm form is positive definite, and this is exactly what the Euclidean functional integral needs. The action becomes
@@ -308,8 +308,8 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center of $\mathbb{B}$; the scalar field's value space |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, target of the Wick rotation |
-| $\tilde{X}=ict\,e_0+\mathbf{x}$ | Material coordinate, $\in\mathbb{M}_-$ |
-| $\tilde{X}_E=c\tau\,e_0+\mathbf{x}$ | Euclidean coordinate, $\in\mathbb{H}_{\mathbb{B}}$ |
+| $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material coordinate, $\in\mathbb{M}_-$ |
+| $\tilde{Q}_E=c\tau\,e_0+\mathbf{x}$ | Euclidean coordinate, $\in\mathbb{H}_{\mathbb{B}}$ |
 | $\tilde{\Phi}=\phi e_0$ | Scalar (spin-$0$) field, valued in the center |
 | $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$ | Material four-wavevector, $\in\mathbb{M}_-$ |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form; $N(\tilde{K})=-\mu^2$ is the mass shell |

@@ -252,11 +252,11 @@ $\mathbb{H}_{\mathbb{B}}$ meets the informational sector in the time axis, $\mat
 
 ### The sectors are preserved by every conjugation
 
-A fact that is easy to expect and false is that the conjugations mix the sectors. They do not. Building a Hermitian element $\tilde{H} = \tilde{R}+\tilde{R}^\dagger$ and an anti-Hermitian element $\tilde{X} = \tilde{R}-\tilde{R}^\dagger$ from a random biquaternion $\tilde{R}$, and applying each of the four maps to each, gives
+A fact that is easy to expect and false is that the conjugations mix the sectors. They do not. Building a Hermitian element $\tilde{H} = \tilde{R}+\tilde{R}^\dagger$ and an anti-Hermitian element $\tilde{Q} = \tilde{R}-\tilde{R}^\dagger$ from a random biquaternion $\tilde{R}$, and applying each of the four maps to each, gives
 $$
 \bar{\tilde{H}},\ {}^*\tilde{H},\ \dagger\tilde{H},\ \flat\tilde{H} \in \mathbb{M}_+ ,
 \qquad
-\bar{\tilde{X}},\ {}^*\tilde{X},\ \dagger\tilde{X},\ \flat\tilde{X} \in \mathbb{M}_- ,
+\bar{\tilde{Q}},\ {}^*\tilde{Q},\ \dagger\tilde{Q},\ \flat\tilde{Q} \in \mathbb{M}_- ,
 $$
 verified on two hundred random cases with no exception. The reason is visible in the sign table: each conjugation either fixes or negates the pair (the $e_k$ sign, the $i$ sign) as a whole, and the condition for membership in a sector is exactly a relation between those two signs, which a simultaneous transformation preserves. What does exchange the sectors is an odd power of the central multiplication
 $$
@@ -284,8 +284,8 @@ with $\epsilon = i\sigma_2$ (any nonzero real multiple of $\epsilon$ serves equa
 
 Two consequences of the table are worth recording. First, $\Phi$ is a *real* algebra isomorphism onto $M_2(\mathbb{C})$, so a biquaternion identity holds in the algebra exactly when the corresponding matrix identity holds; this is the sense in which the four conjugations may be computed entrywise once the realisation is fixed. Second, the trace pairs with the scalar part through
 $$
-\mathrm{Tr}\bigl(\tilde{X}\tilde{Y}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{X}\tilde{Y}\bigr)
-\qquad\text{for all } \tilde{X},\tilde{Y} \in \mathbb{B},
+\mathrm{Tr}\bigl(\tilde{Q}\tilde{Y}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{Q}\tilde{Y}\bigr)
+\qquad\text{for all } \tilde{Q},\tilde{Y} \in \mathbb{B},
 $$
 because $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2Q_0 = 2\,\mathrm{Sc}(\tilde{Q})$; the identity was verified on two hundred random pairs. The corpus states the trace formula on the Hermitian sector, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$; the computation here shows that it holds without any restriction on the arguments, which is the form in which the operator articles use it.
 
@@ -306,7 +306,7 @@ which is symmetric, $B(\tilde{A},\tilde{B}) = B(\tilde{B},\tilde{A})$, verified 
 | $\mathbb{M}_-$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $-1,+1,+1,+1$ | $(-,+,+,+)$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $e_0,\ e_1,\ e_2,\ e_3$ | $+1,+1,+1,+1$ | $(+,+,+,+)$ |
 
-The verification is the norm-form computation of the companion *Conventions in the Biquaternion Universe*: for $\tilde{X} = i v_0e_0 + \mathbf{v} \in \mathbb{M}_-$ the diagonal is $N(\tilde{X}) = -v_0^2 + \mathbf{v}^2$, the Minkowski interval, and for a real quaternion it is $\sum_\mu Q_\mu^2$. The lattice therefore carries the two signatures: the bilinear pairing is Lorentzian on the material sector and positive definite on the real quaternions, and it is the *same* level-one form read on the two bases, not a pair of independent choices. This is the algebraic content of the companion article's three-level metric discussion, and the reason a sign difference between the two sectors is never an inconsistency.
+The verification is the norm-form computation of the companion *Conventions in the Biquaternion Universe*: for $\tilde{Q} = i v_0e_0 + \mathbf{v} \in \mathbb{M}_-$ the diagonal is $N(\tilde{Q}) = -v_0^2 + \mathbf{v}^2$, the Minkowski interval, and for a real quaternion it is $\sum_\mu Q_\mu^2$. The lattice therefore carries the two signatures: the bilinear pairing is Lorentzian on the material sector and positive definite on the real quaternions, and it is the *same* level-one form read on the two bases, not a pair of independent choices. This is the algebraic content of the companion article's three-level metric discussion, and the reason a sign difference between the two sectors is never an inconsistency.
 
 **When the pairing vanishes.** Sangwine, Ell and Le Bihan give the criterion for $B(\tilde{A},\tilde{B}) = 0$ from the coordinate form of the same pairing,
 $$
@@ -322,7 +322,7 @@ so orthogonality means that a real scalar and an imaginary scalar vanish separat
 - Weaker II: the real halves are not orthogonal to each other, and neither are the imaginary halves, but the two scalar products agree, sign included, so the real part cancels; the real part of each factor is orthogonal to the imaginary part of the other, so the imaginary part vanishes term by term. Here $\tilde{B} = \tilde{A}ie_1$ with $\tilde{A}$ arbitrary.
 - Weakest: no pair of halves is orthogonal, and both scalars cancel between the terms. Here $\tilde{B} = \tilde{A}(e_1 + ie_2)$, again with $\tilde{A}$ arbitrary, and the factor $e_1+ie_2$ is a divisor of zero, so $\tilde{B}$ is one as well. This is the grade in which the pairing vanishes for a reason unconnected with any pair of directions being perpendicular.
 
-**The vanishing is not the null condition.** The strongest grade produces divisor-of-zero pairs, but rescaling the two halves destroys the divisor-of-zero property and leaves the orthogonality untouched. Verified: $\tilde{A} = e_0 + ie_1$ and $\tilde{B} = e_2 + ie_3$ are orthogonal with $N(\tilde{A}) = N(\tilde{B}) = 0$, while $\tilde{A} = e_0 + 2.5\,ie_1$ and $\tilde{B} = e_2 + 0.4\,ie_3$ are still orthogonal with $N(\tilde{A}) = -5.25$. Orthogonality of the pairing and membership in the null cone are therefore independent conditions, linked only in the strongest grade above. This is worth stating because the corpus uses "orthogonal" in two other senses (idempotents multiplying to zero, and the Hermitian complement) with no metric content, and because a null element is orthogonal to itself, $B(\tilde{X},\tilde{X}) = \mathrm{Sc}\,N(\tilde{X}) = 0$, a case the criterion covers as well.
+**The vanishing is not the null condition.** The strongest grade produces divisor-of-zero pairs, but rescaling the two halves destroys the divisor-of-zero property and leaves the orthogonality untouched. Verified: $\tilde{A} = e_0 + ie_1$ and $\tilde{B} = e_2 + ie_3$ are orthogonal with $N(\tilde{A}) = N(\tilde{B}) = 0$, while $\tilde{A} = e_0 + 2.5\,ie_1$ and $\tilde{B} = e_2 + 0.4\,ie_3$ are still orthogonal with $N(\tilde{A}) = -5.25$. Orthogonality of the pairing and membership in the null cone are therefore independent conditions, linked only in the strongest grade above. This is worth stating because the corpus uses "orthogonal" in two other senses (idempotents multiplying to zero, and the Hermitian complement) with no metric content, and because a null element is orthogonal to itself, $B(\tilde{Q},\tilde{Q}) = \mathrm{Sc}\,N(\tilde{Q}) = 0$, a case the criterion covers as well.
 
 **An open point.** The paper records that the geometric reading of the pairing is left incomplete: with both factors complex, the moduli and the angle are complex, so there is no direct analogue of $|A||B|\cos\theta$ with a real angle, and the interpretation "requires further work". In the corpus's terms the numbers $N(\tilde{A})$ and $N(\tilde{B})$ are complex, no real angle between two biquaternions is defined in general, and the vanishing of the pairing is an algebraic condition rather than a statement about perpendicular real directions.
 

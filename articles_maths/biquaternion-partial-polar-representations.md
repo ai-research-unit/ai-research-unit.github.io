@@ -34,10 +34,10 @@ $$
 r \in (0,\infty), \qquad e^{i\alpha} \in \mathbb{C}_{\mathbb{B}}, \quad |e^{i\alpha}| = 1, \qquad B \in \mathbb{M}_+, \quad N(B) = 1, \qquad \hat{q}\in\mathbb{H}_{\mathbb{B}}, \quad N(\hat{q}) = 1, \quad \hat{q}\in\mathrm{Sp}(1) ,
 $$
 
-in the canonical order $\tilde{Q} = r\,e^{i\alpha}B\hat{q}$. Two structural facts about them govern every regrouping below. The phase $e^{i\alpha}$ is central, so it may be moved freely across the other factors. The boost and the rotor are not central, so moving one past the other conjugates it: for any element $X$,
+in the canonical order $\tilde{Q} = r\,e^{i\alpha}B\hat{q}$. Two structural facts about them govern every regrouping below. The phase $e^{i\alpha}$ is central, so it may be moved freely across the other factors. The boost and the rotor are not central, so moving one past the other conjugates it: for any element $\tilde{Q}$,
 
 $$
-\hat{q}\,X = \left(\hat{q}X\hat{q}^{-1}\right)\hat{q} , \qquad \hat{q}^{-1}X = \left(\hat{q}^{-1}X\hat{q}\right)\hat{q}^{-1} ,
+\hat{q}\,\tilde{Q} = \left(\hat{q}\tilde{Q}\hat{q}^{-1}\right)\hat{q} , \qquad \hat{q}^{-1}\tilde{Q} = \left(\hat{q}^{-1}\tilde{Q}\hat{q}\right)\hat{q}^{-1} ,
 $$
 
 which is the algebraic statement that a rotated object in the conjugate position is the same object.

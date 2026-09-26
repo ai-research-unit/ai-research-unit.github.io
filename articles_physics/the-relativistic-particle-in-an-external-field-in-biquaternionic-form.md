@@ -9,13 +9,13 @@ A particle of rest mass $m$ and charge $q$ moving in a prescribed electromagneti
 
 Two limitations are stated at the outset, because they bound what is claimed.
 
-**One particle, a prescribed field, and the proper-time derivative.** The field $\tilde{F}$ is *external*: it is a fixed function of the event $\tilde{X}$, not a dynamical field with its own equation of motion. The four-force $\tilde{K} = d\tilde{P}/d\tau$ is therefore a **proper-time** derivative, and for a single particle that is the correct form; the equation of motion is $\tilde{K} = q\,F(\tilde{U})$ and no conservation law is invoked. This matters because the proper-time form does **not** sum across bodies: the four-forces of two particles with different Lorentz factors are not the terms of a coordinate-time conservation law. That distinction, reported by the exercise *Four-Momentum Conservation in a Collision*, is the reason this article treats one particle only; a many-body or field-theoretic extension is a different problem and is not attempted here. Nothing in this article contradicts the exercise — the two statements concern different systems.
+**One particle, a prescribed field, and the proper-time derivative.** The field $\tilde{F}$ is *external*: it is a fixed function of the event $\tilde{Q}$, not a dynamical field with its own equation of motion. The four-force $\tilde{K} = d\tilde{P}/d\tau$ is therefore a **proper-time** derivative, and for a single particle that is the correct form; the equation of motion is $\tilde{K} = q\,F(\tilde{U})$ and no conservation law is invoked. This matters because the proper-time form does **not** sum across bodies: the four-forces of two particles with different Lorentz factors are not the terms of a coordinate-time conservation law. That distinction, reported by the exercise *Four-Momentum Conservation in a Collision*, is the reason this article treats one particle only; a many-body or field-theoretic extension is a different problem and is not attempted here. Nothing in this article contradicts the exercise — the two statements concern different systems.
 
 **The frame convention.** The read-list article on the Lorentz transformation builds the boost biquaternion from the four-velocity as $\tilde{\Lambda} = \sqrt{-\frac{i}{c}\bar{\tilde{U}}}$, with the boost direction aligned with the particle velocity $\hat{\mathbf{u}} = \hat{\mathbf{v}}$. The rotor built from $+\mathbf{v}$ carries the **laboratory to the moving frame**, and its quaternion conjugate carries the moving frame back to the laboratory. This is the convention used throughout: whenever this article transforms to the instantaneous rest frame of the particle it uses $\tilde{\Lambda}$ built from $+\tilde{U}$, and the inverse transformation is by $\bar{\tilde{\Lambda}}$. The convention is stated because it is a genuine ambiguity — the oppositely-signed rotor implements the same Lorentz transformation on a different branch — and it is fixed here rather than left implicit.
 
 The article is organized as follows. The next section recalls the free four-momentum. The section after that states the minimal-coupling prescription and derives the canonical momentum from the action. The following section separates the canonical and kinetic momenta. The next section derives the equation of motion. Two sections check it on a purely electric field and on a purely magnetic field. A short section records the proper-time restriction, and another fixes the boost convention. A section separates what the algebra supplies from what it only transcribes, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The four-position is $\tilde{X} = ict\,e_0 + \mathbf{x}$, the four-velocity is $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ with $\gamma = 1/\sqrt{1-\mathbf{v}^2/c^2}$, and the four-momentum is $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$; all live in $\mathbb{M}_-$. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, and the invariant pairing on $\mathbb{M}_-$ is $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\bar{\tilde{B}}) = -a_0b_0 + \mathbf{a}\cdot\mathbf{b}$ for $\tilde{A} = ia_0e_0 + \mathbf{a}$, $\tilde{B} = ib_0e_0 + \mathbf{b}$. The four-potential is $\tilde{A} = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$ and the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, with source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ and Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$. The field tensor is $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$ in the $ict$ convention. Following the article *The Lorentz Force in Biquaternion Form*, the symbol $\tilde{F}$ is reserved for the field strength and the **four-force is written $\tilde{K}$**, so that $\tilde{K} = d\tilde{P}/d\tau$ and $\tilde{K}\in\mathbb{M}_-$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; $\mathbf{B} = \mu\mathbf{H}$ is the magnetic induction. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The four-position is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the four-velocity is $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ with $\gamma = 1/\sqrt{1-\mathbf{v}^2/c^2}$, and the four-momentum is $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$; all live in $\mathbb{M}_-$. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, and the invariant pairing on $\mathbb{M}_-$ is $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\bar{\tilde{B}}) = -a_0b_0 + \mathbf{a}\cdot\mathbf{b}$ for $\tilde{A} = ia_0e_0 + \mathbf{a}$, $\tilde{B} = ib_0e_0 + \mathbf{b}$. The four-potential is $\tilde{A} = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$ and the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, with source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ and Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$. The field tensor is $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$ in the $ict$ convention. Following the article *The Lorentz Force in Biquaternion Form*, the symbol $\tilde{F}$ is reserved for the field strength and the **four-force is written $\tilde{K}$**, so that $\tilde{K} = d\tilde{P}/d\tau$ and $\tilde{K}\in\mathbb{M}_-$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; $\mathbf{B} = \mu\mathbf{H}$ is the magnetic induction. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Free Particle
 
@@ -91,31 +91,31 @@ This is the standard result: the potential energy $q\phi$ is added, and the kine
 
 ### The action form and the canonical momentum
 
-The same prescription is forced by the action. Let $\tau$ be the proper time and $\dot{\tilde{X}} = d\tilde{X}/d\tau$. The action of a charged particle in a prescribed field is
+The same prescription is forced by the action. Let $\tau$ be the proper time and $\dot{\tilde{Q}} = d\tilde{Q}/d\tau$. The action of a charged particle in a prescribed field is
 
 $$
-S = -mc\int\sqrt{-N(\dot{\tilde{X}})}\,d\tau \;+\; q\int \mathrm{Sc}\!\left(\tilde{A}\,\bar{\dot{\tilde{X}}}\right)d\tau,
+S = -mc\int\sqrt{-N(\dot{\tilde{Q}})}\,d\tau \;+\; q\int \mathrm{Sc}\!\left(\tilde{A}\,\bar{\dot{\tilde{Q}}}\right)d\tau,
 $$
 
 with Lagrangian
 
 $$
-L = -mc\sqrt{-N(\dot{\tilde{X}})} \;+\; q\,\mathrm{Sc}\!\left(\tilde{A}\,\bar{\dot{\tilde{X}}}\right)
-= -mc\sqrt{-N(\dot{\tilde{X}})} \;+\; q\left\langle \tilde{A}, \dot{\tilde{X}}\right\rangle .
+L = -mc\sqrt{-N(\dot{\tilde{Q}})} \;+\; q\,\mathrm{Sc}\!\left(\tilde{A}\,\bar{\dot{\tilde{Q}}}\right)
+= -mc\sqrt{-N(\dot{\tilde{Q}})} \;+\; q\left\langle \tilde{A}, \dot{\tilde{Q}}\right\rangle .
 $$
 
-The first term is the free point-particle Lagrangian of the parent article; the second is the coupling, and its sign is fixed below by the requirement that the canonical momentum come out positive. The conjugate momentum is the element of $\mathbb{M}_-$ defined by the first variation, $\delta L = \langle \tilde\Pi, \delta\dot{\tilde{X}}\rangle$. For the free term, using $\delta N(\dot{\tilde{X}}) = 2\langle \dot{\tilde{X}}, \delta\dot{\tilde{X}}\rangle$ and the on-shell normalization $N(\dot{\tilde{X}}) = -c^2$,
+The first term is the free point-particle Lagrangian of the parent article; the second is the coupling, and its sign is fixed below by the requirement that the canonical momentum come out positive. The conjugate momentum is the element of $\mathbb{M}_-$ defined by the first variation, $\delta L = \langle \tilde\Pi, \delta\dot{\tilde{Q}}\rangle$. For the free term, using $\delta N(\dot{\tilde{Q}}) = 2\langle \dot{\tilde{Q}}, \delta\dot{\tilde{Q}}\rangle$ and the on-shell normalization $N(\dot{\tilde{Q}}) = -c^2$,
 
 $$
-\delta\!\left(-mc\sqrt{-N(\dot{\tilde{X}})}\right)
-= \frac{mc}{\sqrt{-N(\dot{\tilde{X}})}}\left\langle \dot{\tilde{X}}, \delta\dot{\tilde{X}}\right\rangle
-= m\left\langle \dot{\tilde{X}}, \delta\dot{\tilde{X}}\right\rangle,
+\delta\!\left(-mc\sqrt{-N(\dot{\tilde{Q}})}\right)
+= \frac{mc}{\sqrt{-N(\dot{\tilde{Q}})}}\left\langle \dot{\tilde{Q}}, \delta\dot{\tilde{Q}}\right\rangle
+= m\left\langle \dot{\tilde{Q}}, \delta\dot{\tilde{Q}}\right\rangle,
 $$
 
-so the free term contributes $m\dot{\tilde{X}} = \tilde{P}$. The coupling contributes $q\langle\tilde{A}, \delta\dot{\tilde{X}}\rangle$, hence $q\tilde{A}$. The conjugate momentum is therefore
+so the free term contributes $m\dot{\tilde{Q}} = \tilde{P}$. The coupling contributes $q\langle\tilde{A}, \delta\dot{\tilde{Q}}\rangle$, hence $q\tilde{A}$. The conjugate momentum is therefore
 
 $$
-\boxed{\;\tilde\Pi = m\dot{\tilde{X}} + q\tilde{A} = \tilde{P} + q\tilde{A},\;}
+\boxed{\;\tilde\Pi = m\dot{\tilde{Q}} + q\tilde{A} = \tilde{P} + q\tilde{A},\;}
 $$
 
 that is, **canonical = kinetic + $q\tilde{A}$**, which is exactly the component statement above. The prescription $P \to P - qA$ of the mass-shell form and the conjugate momentum of the action form are the same equation read in opposite directions.
@@ -160,24 +160,24 @@ The kinetic momentum, by contrast, is not conserved: it rotates in the plane per
 
 ## The Equation of Motion
 
-The equation of motion follows from the action by the Euler–Lagrange equations, and it is the Lorentz force. Written in components $\tilde{X} = \sum_\mu X_\mu e_\mu$ (with $X_0 = ict$), $\tilde{A} = \sum_\nu A_\nu e_\nu$, the Lagrangian is
+The equation of motion follows from the action by the Euler–Lagrange equations, and it is the Lorentz force. Written in components $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ (with $Q_0 = ict$), $\tilde{A} = \sum_\nu A_\nu e_\nu$, the Lagrangian is
 
 $$
-L = -mc\sqrt{-\sum_\mu \dot{X}_\mu^2} \;+\; q\sum_\nu A_\nu(X)\,\dot{X}_\nu,
+L = -mc\sqrt{-\sum_\mu \dot{Q}_\mu^2} \;+\; q\sum_\nu A_\nu(\tilde{Q})\,\dot{Q}_\nu,
 \qquad \dot{X}_\mu = \frac{dX_\mu}{d\tau},
 $$
 
-because $\mathrm{Sc}(\tilde{A}\bar{\dot{\tilde{X}}}) = \sum_\nu A_\nu\dot{X}_\nu$ in the $ict$ convention. The conjugate momentum is $\Pi_\mu = \partial L/\partial\dot{X}_\mu$, with $\Pi_0 = m\dot{X}_0 + qA_0$ and $\Pi_k = m\dot{X}_k + qA_k$ up to the on-shell normalization $\sqrt{-\sum_\mu\dot{X}_\mu^2} = c$. Differentiating $\Pi_\mu$ along the worldline and using the Euler–Lagrange equation $\frac{d}{d\tau}\Pi_\mu = \partial L/\partial X_\mu$,
+because $\mathrm{Sc}(\tilde{A}\bar{\dot{\tilde{Q}}}) = \sum_\nu A_\nu\dot{Q}_\nu$ in the $ict$ convention. The conjugate momentum is $\Pi_\mu = \partial L/\partial\dot{Q}_\mu$, with $\Pi_0 = m\dot{Q}_0 + qA_0$ and $\Pi_k = m\dot{Q}_k + qA_k$ up to the on-shell normalization $\sqrt{-\sum_\mu\dot{Q}_\mu^2} = c$. Differentiating $\Pi_\mu$ along the worldline and using the Euler–Lagrange equation $\frac{d}{d\tau}\Pi_\mu = \partial L/\partial Q_\mu$,
 
 $$
-\frac{d}{d\tau}\left(m\dot{X}_\mu + qA_\mu\right) = q\sum_\nu \frac{\partial A_\nu}{\partial X_\mu}\dot{X}_\nu,
+\frac{d}{d\tau}\left(m\dot{Q}_\mu + qA_\mu\right) = q\sum_\nu \frac{\partial A_\nu}{\partial Q_\mu}\dot{Q}_\nu,
 $$
 
 and therefore
 
 $$
 \frac{d}{d\tau}\left(m\dot{X}_\mu\right)
-= q\sum_\nu\left(\frac{\partial A_\nu}{\partial X_\mu} - \frac{\partial A_\mu}{\partial X_\nu}\right)\dot{X}_\nu
+= q\sum_\nu\left(\frac{\partial A_\nu}{\partial Q_\mu} - \frac{\partial A_\mu}{\partial Q_\nu}\right)\dot{Q}_\nu
 = q\sum_\nu F_{\mu\nu}\dot{X}_\nu .
 $$
 
@@ -200,7 +200,7 @@ whose scalar part is the power and whose vector part is the relativistic three-f
 $$
 \tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(X) = \tfrac{1}{2}\left(X - X^\dagger\right).
+P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^\dagger\right).
 $$
 
 This article does not re-derive that formula; it records that the two routes agree, because the minimal-coupling contraction $qF^{\mu\nu}U_\nu$ and the projection formula are the same element of $\mathbb{M}_-$. The minimal-coupling route exhibits the force as the derivative of a momentum; the product route exhibits it as a bilinear in $\tilde{U}$ and $\tilde{F}$ that is manifestly covariant.
@@ -283,7 +283,7 @@ $$
 \qquad \tilde\Lambda\bar{\tilde\Lambda} = e_0,
 $$
 
-with the boost direction $\hat{\mathbf{u}}$ aligned with the particle velocity $\hat{\mathbf{v}}$, and implements the transformation of a four-vector by rotor conjugation $\tilde{X}' = \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$.
+with the boost direction $\hat{\mathbf{u}}$ aligned with the particle velocity $\hat{\mathbf{v}}$, and implements the transformation of a four-vector by rotor conjugation $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$.
 
 **Convention, stated once.** The rotor built from $+\tilde{U}$ carries the **laboratory to the moving (rest) frame**: acting on the four-velocity it gives
 
@@ -301,7 +301,7 @@ With that convention the four-velocity, the four-momentum, and the four-force al
 
 - *A single home for the four-vectors of the problem.* The four-position, four-velocity, kinetic four-momentum, canonical four-momentum, four-potential, and four-force all lie in the same four-dimensional real subspace $\mathbb{M}_-$, and the minimal-coupling shift $\tilde\Pi = \tilde{P}_{\mathrm{kin}} + q\tilde{A}$ is an equation inside that subspace.
 - *A constraint, not an extra postulate.* The mass-shell relation $N(\tilde{P}_{\mathrm{kin}}) = -m^2c^2$ is the norm-form condition on $\mathbb{M}_-$; with minimal coupling it *is* the relativistic Hamiltonian, and it delivers both the canonical/kinetic relation and the form of the energy in one equation.
-- *A canonical momentum from the action.* The conjugate momentum $\tilde\Pi = \tilde{P} + q\tilde{A}$ follows from the first variation of the biquaternion action with the pairing $\langle\tilde{A},\dot{\tilde{X}}\rangle$, with no index apparatus.
+- *A canonical momentum from the action.* The conjugate momentum $\tilde\Pi = \tilde{P} + q\tilde{A}$ follows from the first variation of the biquaternion action with the pairing $\langle\tilde{A},\dot{\tilde{Q}}\rangle$, with no index apparatus.
 - *The form of the force.* The contraction $\tilde{K} = qF^{\mu\nu}U_\nu$ reassembles into the $\mathbb{M}_-$-valued four-force, and it agrees with the projection formula $ -q\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{U}\tilde{F})$ of the Lorentz-force article.
 
 **Only transcribed.** The minimal-coupling *principle* itself — that the canonical four-momentum should be replaced by $\tilde{\Pi} - q\tilde{A}$ — is not derived from the algebra; it is the standard prescription carried into it, and the algebra supplies a home and a compact expression rather than a reason. The sign conventions are inherited from the parent articles and are conventions, not results. The non-relativistic limit likewise reproduces the Newtonian Lorentz force, as it must, and does not test the relativistic part of the construction.
@@ -332,7 +332,7 @@ $$
 N\!\left(\tilde{\Pi} - q\tilde{A}\right) = -m^2c^2 .
 $$
 
-The object $\tilde{\Pi} - q\tilde{A}$ is the **kinetic** four-momentum and $\tilde{\Pi}$ is the **canonical** four-momentum, $\tilde{\Pi} = \tilde{P}_{\mathrm{kin}} + q\tilde{A}$. The prescription has two faces, and they agree: on the mass-shell relation it yields the relativistic Hamiltonian $E_{\mathrm{can}} = q\phi + c\sqrt{(\boldsymbol{\Pi}-q\mathbf{A})^2 + m^2c^2}$; on the action $S = -mc\int\sqrt{-N(d\tilde{X})} + q\int\mathrm{Sc}(\tilde{A}\,\bar{d\tilde{X}})$ it yields the conjugate momentum $\tilde\Pi = m\dot{\tilde{X}} + q\tilde{A}$. The two distinctions that carry the physical content are that the **kinetic momentum is gauge-invariant** and the **canonical momentum is not**, and that the kinetic, not the canonical, momentum is the one that obeys the free mass-shell relation and appears in the velocity $\mathbf{v} = \mathbf{p}c^2/E$.
+The object $\tilde{\Pi} - q\tilde{A}$ is the **kinetic** four-momentum and $\tilde{\Pi}$ is the **canonical** four-momentum, $\tilde{\Pi} = \tilde{P}_{\mathrm{kin}} + q\tilde{A}$. The prescription has two faces, and they agree: on the mass-shell relation it yields the relativistic Hamiltonian $E_{\mathrm{can}} = q\phi + c\sqrt{(\boldsymbol{\Pi}-q\mathbf{A})^2 + m^2c^2}$; on the action $S = -mc\int\sqrt{-N(d\tilde{Q})} + q\int\mathrm{Sc}(\tilde{A}\,\bar{d\tilde{Q}})$ it yields the conjugate momentum $\tilde\Pi = m\dot{\tilde{Q}} + q\tilde{A}$. The two distinctions that carry the physical content are that the **kinetic momentum is gauge-invariant** and the **canonical momentum is not**, and that the kinetic, not the canonical, momentum is the one that obeys the free mass-shell relation and appears in the velocity $\mathbf{v} = \mathbf{p}c^2/E$.
 
 The equation of motion is the Lorentz force in its contracted form,
 
@@ -358,7 +358,7 @@ The algebra supplies the common home $\mathbb{M}_-$ of the four-vectors, the nor
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar subspace (center) |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\bar{\tilde{B}})$ | Invariant pairing on $\mathbb{M}_-$ |
-| $\tilde{X} = ict\,e_0 + \mathbf{x}$ | Four-position |
+| $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position |
 | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | Four-velocity, $N(\tilde{U}) = -c^2$ |
 | $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ | Kinetic four-momentum, $N(\tilde{P}) = -m^2c^2$ |
 | $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | Four-potential (material-sector connection) |
@@ -370,7 +370,7 @@ The algebra supplies the common home $\mathbb{M}_-$ of the four-vectors, the nor
 | $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Field tensor; $F^{0k} = iE_k/c$, $F^{jk} = \epsilon_{jkl}B_l$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion |
 | $\tilde{K} = d\tilde{P}_{\mathrm{kin}}/d\tau$ | Four-force; $\tilde{K} = qF^{\mu\nu}U_\nu = -q\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{U}\tilde{F})$ |
-| $P_{\mathbb{M}_-}(X) = \tfrac12(X - X^\dagger)$ | Projection onto $\mathbb{M}_-$ |
+| $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q} - \tilde{Q}^\dagger)$ | Projection onto $\mathbb{M}_-$ |
 | $\tilde{\Lambda} = \sqrt{-\frac{i}{c}\bar{\tilde{U}}}$ | Boost rotor; $+\mathbf{v}$ branch: laboratory to moving frame |
 | $\gamma = 1/\sqrt{1-\mathbf{v}^2/c^2}$ | Lorentz factor |
 | $\omega_c = qB_0/(\gamma m)$ | Relativistic cyclotron frequency |

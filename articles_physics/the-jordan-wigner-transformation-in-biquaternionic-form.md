@@ -45,7 +45,7 @@ $$
 [\tilde a,\tilde a^\dagger]=ie_3 ,
 $$
 
-so the $\tilde a$ satisfy the canonical anticommutation relations and the commutator fails the bosonic relation by an element of $\mathbb{M}_+$ rather than by a c-number. The tracelessness of a commutator ($\mathrm{Tr}[X,Y]=0$, while $\mathrm{Tr}\,e_0=2$) shows that no bosonic mode with a central commutator exists here, so the algebra's one mode is fermionic — the algebra's finite content is the fermionic Fock space.
+so the $\tilde a$ satisfy the canonical anticommutation relations and the commutator fails the bosonic relation by an element of $\mathbb{M}_+$ rather than by a c-number. The tracelessness of a commutator ($\mathrm{Tr}[\tilde{Q},\tilde{R}]=0$, while $\mathrm{Tr}\,e_0=2$) shows that no bosonic mode with a central commutator exists here, so the algebra's one mode is fermionic — the algebra's finite content is the fermionic Fock space.
 
 The spin generators are the bilinears
 

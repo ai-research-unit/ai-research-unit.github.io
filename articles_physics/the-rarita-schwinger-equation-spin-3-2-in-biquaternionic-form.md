@@ -275,7 +275,7 @@ The massive case is also where the known difficulty lives. The constraint analys
 Because each component satisfies the Dirac equation, each component satisfies the Klein–Gordon equation on squaring, exactly as in the spin-$\tfrac12$ case. For a biquaternion plane wave of the component,
 
 $$
-\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{X}})},
+\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,e^{\,i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})},
 $$
 
 the Dirac equation on the component requires $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ in the normalization of the companion Dirac article, that is,

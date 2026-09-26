@@ -54,7 +54,7 @@ The dimension count is recorded once and used throughout: of the six distinguish
 **Theorem.** $\mathbb{C}_{\mathbb{B}}$ is the centre of $\mathbb{B}$,
 
 $$
-\mathbb{C}_{\mathbb{B}} = \left\{ \tilde{X} \in \mathbb{B} : \tilde{X}\tilde{Q} = \tilde{Q}\tilde{X} \ \text{for every} \ \tilde{Q} \in \mathbb{B} \right\} .
+\mathbb{C}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}\tilde{R} = \tilde{R}\tilde{Q} \ \text{for every} \ \tilde{R} \in \mathbb{B} \right\} .
 $$
 
 **Proof.** An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$; the central elements are then the $\mathbb{C}$-multiples of $e_0$, which is the fixed space of $\bar{\cdot}$ computed above. $\square$

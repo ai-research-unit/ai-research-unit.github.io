@@ -89,14 +89,14 @@ $$
 The norm form is invariant under this action, because the rotor is unitary and the norm form is multiplicative:
 
 $$
-N\!\left(\tilde{R}\,\tilde{X}\,\tilde{R}^\dagger\right)
-= \tilde{R}\,\tilde{X}\,\tilde{R}^\dagger\,\overline{\tilde{R}\,\tilde{X}\,\tilde{R}^\dagger}
-= \tilde{R}\,\tilde{X}\,\bar{\tilde{X}}\,\tilde{R}^\dagger
-= N(\tilde{X})\,\tilde{R}\tilde{R}^\dagger
-= N(\tilde{X}) .
+N\!\left(\tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger\right)
+= \tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger\,\overline{\tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger}
+= \tilde{R}\,\tilde{Q}\,\bar{\tilde{Q}}\,\tilde{R}^\dagger
+= N(\tilde{Q})\,\tilde{R}\tilde{R}^\dagger
+= N(\tilde{Q}) .
 $$
 
-The same computation applies to the trace pairing, $\mathrm{Tr}((\tilde{R}\tilde{X}\tilde{R}^\dagger)^2) = \mathrm{Tr}(\tilde{X}^2)$, since the conjugation is an algebra automorphism. Therefore
+The same computation applies to the trace pairing, $\mathrm{Tr}((\tilde{R}\tilde{Q}\tilde{R}^\dagger)^2) = \mathrm{Tr}(\tilde{Q}^2)$, since the conjugation is an algebra automorphism. Therefore
 
 $$
 \left|N\!\left(\delta\tilde{\rho}(t)\right)\right| = \left|N\!\left(\delta\tilde{\rho}(0)\right)\right|

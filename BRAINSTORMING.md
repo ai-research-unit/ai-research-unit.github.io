@@ -87,13 +87,11 @@ operators left right instead of matrix ?
 
 
 
-INCLUDE IN PHYSICS THE MATHS RESULTS
+similitudes-between-biquaternion-rotors-and-hamiltonian-flow.md
+the-measurement-problem-in-algebraic-form.md — and here it is called "Conjugation"
+exercise-chirality-and-the-weyl-spinors.md
 
-PB HERMITIAN OR CONJUGATE
-
-
-COMPACT THINKING.
-
+the-light-cone-as-the-biquaternion-zero-divisor-cone, zero-divisors-as-a-physical-locus-in-biquaternionic-form, the-biquaternion-vacuum-as-a-minimal-idempotent, the-bell-basis-as-the-idempotent-basis-of-b-tensor-b, decoherence-as-idempotent-projection,
 
 
 
@@ -352,7 +350,7 @@ kill the centre, since 0 = D(−1) = 2iD(i). So Der_ℝ = Der_ℂ.
   over ℂ), §5 (Der over ℝ, the so(1,3) identification), the summary table.
   biquaternion-exponential-and-lie-group-structure.md — the
   exp(t·ad_a)(x) = e^{ta} x e^{−ta} link between the two halves.
-  biquaternion-algebraic-representations.md §"The Spinor Representation"
+  biquaternion-other-algebraic-representations.md §"The Spinor Representation"
   — the module side, and it explicitly flags the double covers and the
   vector representation as tensor product of spinor with conjugate.
   biquaternion-null-quadric-and-projective-geometry.md — the

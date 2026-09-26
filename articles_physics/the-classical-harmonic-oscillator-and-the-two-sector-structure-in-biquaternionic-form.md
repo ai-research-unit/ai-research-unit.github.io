@@ -39,7 +39,7 @@ $$
 In the framework the worldline is the material-sector curve
 
 $$
-\tilde{X}(t) = ic\,t\,e_0 + \mathbf{x}(t), \qquad \mathbf{x}(t) = x(t)\,e_1 + y(t)\,e_2 + z(t)\,e_3 ,
+\tilde{Q}(t) = ic\,t\,e_0 + \mathbf{x}(t), \qquad \mathbf{x}(t) = x(t)\,e_1 + y(t)\,e_2 + z(t)\,e_3 ,
 $$
 
 and the equation of motion is a statement about its vector part alone. The scalar direction $ie_0$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.
@@ -245,7 +245,7 @@ A genuinely two-oscillator structure would require two independent complex ampli
 
 ## Summary
 
-The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{X} = ic\,t\,e_0 + \mathbf{x}(t)$ with $\ddot{\mathbf{x}} = -\omega^2\mathbf{x}$; the restoring force $\mathbf{F} = -m\omega^2\mathbf{x}$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
+The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}(t)$ with $\ddot{\mathbf{x}} = -\omega^2\mathbf{x}$; the restoring force $\mathbf{F} = -m\omega^2\mathbf{x}$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
 
 The complex amplitude $a = x + ip/(m\omega)$ embeds in the algebra as the central element
 
@@ -277,7 +277,7 @@ positive definite and bounded below, whereas the norm form $N(\tilde{A}) = a^2e_
 | $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$ | Centre; the phase plane of the oscillator |
 | $\mathbb{M}_+ \cap \mathbb{C}_{\mathbb{B}} = e_0\mathbb{R}$ | Real axis of the phase plane (position quadrature) |
 | $\mathbb{M}_- \cap \mathbb{C}_{\mathbb{B}} = ie_0\mathbb{R}$ | Imaginary axis of the phase plane (momentum quadrature) |
-| $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$ | Worldline, in $\mathbb{M}_-$ |
+| $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$ | Worldline, in $\mathbb{M}_-$ |
 | $\omega$, $k = m\omega^2$ | Angular frequency; spring constant |
 | $\mathbf{F} = -m\omega^2\mathbf{x}$ | Restoring force, real vector in $\mathbb{M}_-$; central, $[\mathbf{F},\mathbf{x}]=0$ |
 | $x$, $p$, $\Pi = p/(m\omega)$ | Displacement, momentum, normalized momentum |

@@ -24,10 +24,10 @@ For the rotors the doubling is familiar and the two readings are both two-sided 
 The two actions on a four-vector are worth naming explicitly, since both are used below. For $\tilde{\Lambda}$ even with $N(\tilde{\Lambda}) = 1$, the rotor conjugation
 
 $$
-\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger
+\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger
 $$
 
-implements the Lorentz transformation of the material vector $\tilde{X}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$, and the action reduces to $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the conjugation $x\mapsto\Lambda x\Lambda^{-1}$ by $\Phi(\tilde{\Lambda})$, which is legitimate because in that representation a unit element satisfies $\Phi(\tilde{\Lambda})^\dagger = \Phi(\tilde{\Lambda})^{-1}$.
+implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$, and the action reduces to $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the conjugation $x\mapsto\Lambda x\Lambda^{-1}$ by $\Phi(\tilde{\Lambda})$, which is legitimate because in that representation a unit element satisfies $\Phi(\tilde{\Lambda})^\dagger = \Phi(\tilde{\Lambda})^{-1}$.
 
 The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative. They lie in the odd part of $\mathrm{Cl}_{1,3}$ and act on vectors by the two-sided map of the Pin group,
 
@@ -352,7 +352,7 @@ The claims of this article, in order.
 | $\Phi(\tilde{Q}^\dagger) = \gamma^0\mathrm{rev}(\Phi(\tilde{Q}))\gamma^0$ | Hermitian conjugation |
 | $\gamma^0\Phi(\tilde{Q})\gamma^0 = \Phi(\tilde{Q}^*)$ | Conjugation by the frame is complex conjugation |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
-| $\tilde{X}' = \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $\mathbb{M}_+$ | Hermitian sector; $\Phi(\mathbb{M}_+)$ = identity + timelike bivectors (boosts) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion sector; $\Phi(\mathbb{H}_{\mathbb{B}})$ = identity + spacelike bivectors (spatial rotations) |
 | $\det M$ | Two-reflection criterion: $\det M = 0$ iff $\tilde{\Lambda}$ fixes a plane |

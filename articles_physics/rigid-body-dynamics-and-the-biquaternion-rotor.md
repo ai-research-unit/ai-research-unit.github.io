@@ -6,7 +6,7 @@ The rotation group of three-dimensional space is the group $SO(3)$ of orientatio
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains the real quaternions as a subalgebra, so the rotor description of rotations is available inside the framework, and the algebra's additional structure — the two sectors and the complex structure — supplies the language for the angular velocity and the angular momentum. This article develops the rigid-body dynamics in that language. The main results are these.
 
-1. **Orientation is a rotor.** A rotation is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=e_0$, acting on a vector by $\tilde X\mapsto\tilde R\tilde X\tilde R^\dagger$; the body axes are $\tilde R e_k\tilde R^\dagger$.
+1. **Orientation is a rotor.** A rotation is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=e_0$, acting on a vector by $\tilde{Q}\mapsto\tilde R\tilde{Q}\tilde R^\dagger$; the body axes are $\tilde R e_k\tilde R^\dagger$.
 2. **Angular velocity is the logarithmic derivative of the rotor.** The body-frame angular velocity is $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$ and the space-frame angular velocity is $\tilde\omega_s=+2\dot{\tilde R}\bar{\tilde R}$; both are real pure quaternions, and $\tilde\omega_s=\tilde R\tilde\omega_b\bar{\tilde R}$.
 3. **The kinetic energy is the inertia form of the angular velocity, and the free isotropic top's is the norm form.** For a spherical top, $T=\frac{\lambda}{2}N(\tilde\omega_b)$; for a general top, $T=\frac12\boldsymbol\omega_b\cdot I\boldsymbol\omega_b$, with the inertia tensor a symmetric positive-definite operator on the real vector part.
 4. **Euler's equations are one quaternion equation.** In the body frame, $\dot{\tilde L}=\frac12[\tilde L,\tilde\omega_b]+\tilde\tau$; the commutator is the cross product.
@@ -70,11 +70,11 @@ Two integrals are immediate for a torque-free body: the energy $T$ and the squar
 A unit real quaternion $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=\tilde R\bar{\tilde R}=e_0$, defines a rotation by conjugation,
 
 $$
-\tilde X\longmapsto\tilde R\,\tilde X\,\tilde R^\dagger=\tilde R\,\tilde X\,\bar{\tilde R},
-\qquad \tilde X\in\mathbb{H}_{\mathbb{B}} .
+\tilde{Q}\longmapsto\tilde R\,\tilde{Q}\,\tilde R^\dagger=\tilde R\,\tilde{Q}\,\bar{\tilde R},
+\qquad \tilde{Q}\in\mathbb{H}_{\mathbb{B}} .
 $$
 
-For a pure vector $\mathbf x$ the image is again a pure vector, and the map preserves the norm form and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde R\mapsto(\tilde X\mapsto\tilde R\tilde X\bar{\tilde R})$ is two-to-one, since $\tilde R$ and $-\tilde R$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
+For a pure vector $\mathbf x$ the image is again a pure vector, and the map preserves the norm form and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde R\mapsto(\tilde{Q}\mapsto\tilde R\tilde{Q}\bar{\tilde R})$ is two-to-one, since $\tilde R$ and $-\tilde R$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
 
 $$
 \mathbf e_k^{b}=\tilde R\,e_k\,\bar{\tilde R},
@@ -329,7 +329,7 @@ The construction shows the two canonical quadratic forms of the algebra at work 
 
 The rigid body is described in the biquaternion algebra as follows.
 
-- The orientation is a unit real quaternion (rotor) $\tilde R$, $N(\tilde R)=e_0$, acting by $\tilde X\mapsto\tilde R\tilde X\bar{\tilde R}$; the body axes are $\tilde Re_k\bar{\tilde R}$. Unit quaternions form $SU(2)$, the double cover of $SO(3)$.
+- The orientation is a unit real quaternion (rotor) $\tilde R$, $N(\tilde R)=e_0$, acting by $\tilde{Q}\mapsto\tilde R\tilde{Q}\bar{\tilde R}$; the body axes are $\tilde Re_k\bar{\tilde R}$. Unit quaternions form $SU(2)$, the double cover of $SO(3)$.
 - The body- and space-frame angular velocities are $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$ and $\tilde\omega_s=+2\dot{\tilde R}\bar{\tilde R}$, both real pure quaternions, related by $\tilde\omega_s=\tilde R\tilde\omega_b\bar{\tilde R}$. The rotor equation is $\dot{\tilde R}=+\frac12\tilde R\tilde\omega_b$.
 - The kinetic energy and angular momentum are $T=-\frac12\mathrm{Sc}(\tilde\omega_b\tilde L_b)=\frac12\boldsymbol\omega_b\cdot I\boldsymbol\omega_b$ and $\tilde L_b=I(\tilde\omega_b)$; for a spherical top $T=\frac{\lambda}{2}N(\tilde\omega_b)$.
 - The body-frame Euler equation is $\dot{\tilde L}_b=\frac12[\tilde L_b,\tilde\omega_b]+\tilde\tau$, equivalently $I(\dot{\tilde\omega}_b)+\frac12[\tilde\omega_b,I(\tilde\omega_b)]=\tilde\tau$.
@@ -343,7 +343,7 @@ The rigid body is described in the biquaternion algebra as follows.
 | Symbol | Meaning |
 |---|---|
 | $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$ | Orientation rotor (unit real quaternion) |
-| $\tilde X\mapsto\tilde R\tilde X\bar{\tilde R}$ | Rotation by rotor conjugation |
+| $\tilde{Q}\mapsto\tilde R\tilde{Q}\bar{\tilde R}$ | Rotation by rotor conjugation |
 | $e_k^{b}=\tilde Re_k\bar{\tilde R}$ | Body axes |
 | $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$ | Body-frame angular velocity |
 | $\tilde\omega_s=+2\dot{\tilde R}\bar{\tilde R}=\tilde R\tilde\omega_b\bar{\tilde R}$ | Space-frame angular velocity |

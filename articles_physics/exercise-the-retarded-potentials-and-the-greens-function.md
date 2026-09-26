@@ -38,7 +38,7 @@ $$
 $$
 and the companion article observes that "the physically correct solution is the retarded one, built by convolution over the past light cone," displaying the kernel and the convolution but leaving the derivation to the standard references. An exercise built on a parent tests it: the task here is to *construct* the kernel from the operator, to *verify* it by applying the operator, and to *use* it to obtain the retarded potentials.
 
-The problem is an inverse problem. The operator $\Box$ is a linear differential operator with constant coefficients, and a Green's function is a distributional inverse: a kernel $G$ such that $\Box_{\tilde X} G(\tilde X) = -\delta^{(4)}(\tilde X)$, so that convolution with a source produces a solution. Two features make this more than bookkeeping, and both are traps.
+The problem is an inverse problem. The operator $\Box$ is a linear differential operator with constant coefficients, and a Green's function is a distributional inverse: a kernel $G$ such that $\Box_{\tilde{Q}} G(\tilde{Q}) = -\delta^{(4)}(\tilde{Q})$, so that convolution with a source produces a solution. Two features make this more than bookkeeping, and both are traps.
 
 First, the kernel is concentrated on the light cone, and the delta function that concentrates it is a delta function of an *argument that vanishes on the cone*. When that argument is $t - R/c$ the coefficient is $1/(4\pi R)$; when it is written as the invariant $t^2 - R^2/c^2$ the coefficient is $1/(2\pi c)$, and the two are related by the Jacobian $\left|d(t^2 - R^2/c^2)/dt\right| = 2R/c$ evaluated at the future root. A derivation that drops the Jacobian gets the wrong power of $R$ and the wrong constant. The exercise makes this step explicit and checks it numerically.
 
@@ -48,7 +48,7 @@ Two points of discipline are kept in view. Every displayed formula is applied to
 
 ## Problem 1: The Wave Operator and the Defining Equation
 
-**Statement.** (a) Show that with $\partial_{ict} = -\frac{i}{c}\partial_t$ the d'Alembertian $\Box = \partial_{ict}^2 + \Delta$ is the wave operator $\Delta - c^{-2}\partial_t^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{X})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{X}) = \mu\int G(\tilde{X} - \tilde{Y})\tilde{R}'(\tilde{Y})\,d^3y\,dt'$ solves the potential equation $\Box\tilde{A} = -\mu\tilde{R}'$.
+**Statement.** (a) Show that with $\partial_{ict} = -\frac{i}{c}\partial_t$ the d'Alembertian $\Box = \partial_{ict}^2 + \Delta$ is the wave operator $\Delta - c^{-2}\partial_t^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{Y})\tilde{R}'(\tilde{Y})\,d^3y\,dt'$ solves the potential equation $\Box\tilde{A} = -\mu\tilde{R}'$.
 
 **Solution.** (a) Since $\partial_{ict} = \frac{1}{ic}\partial_t = -\frac{i}{c}\partial_t$,
 $$
@@ -63,20 +63,20 @@ $$
 
 (b) The Green's function is the distributional inverse of $\Box$. We define it by
 $$
-\Box_{\tilde{X}}\,G(\tilde{X}) = -\delta^{(4)}(\tilde{X}),
+\Box_{\tilde{Q}}\,G(\tilde{Q}) = -\delta^{(4)}(\tilde{Q}),
 \qquad
-\delta^{(4)}(\tilde{X}) = \delta(t)\,\delta^{(3)}(\mathbf{x}),
+\delta^{(4)}(\tilde{Q}) = \delta(t)\,\delta^{(3)}(\mathbf{x}),
 $$
 with the physical measure $d^3y\,dt'$ for the convolution (the parent writes $d^4Y$ for the four-dimensional volume element; the constant conventions relating the four-dimensional delta, the volume element, and the kernel are fixed here once and for all by using $d^3y\,dt'$). The minus sign is not free: the potential equation carries $-\mu\tilde{R}'$ on the right, so a kernel with $\Box G = -\delta^{(4)}$ gives that sign directly. With $\Box G = +\delta^{(4)}$ one would have to insert a compensating minus in the convolution; we fix both once by the convention above.
 
 (c) Differentiation under the convolution integral gives
 $$
-\Box_{\tilde{X}}\tilde{A}(\tilde{X})
-= \mu\int \Box_{\tilde{X}}G(\tilde{X} - \tilde{Y})\,\tilde{R}'(\tilde{Y})\,d^3y\,dt'
-= \mu\int \bigl(-\delta^{(4)}(\tilde{X} - \tilde{Y})\bigr)\tilde{R}'(\tilde{Y})\,d^3y\,dt'
-= -\mu\,\tilde{R}'(\tilde{X}),
+\Box_{\tilde{Q}}\tilde{A}(\tilde{Q})
+= \mu\int \Box_{\tilde{Q}}G(\tilde{Q} - \tilde{Y})\,\tilde{R}'(\tilde{Y})\,d^3y\,dt'
+= \mu\int \bigl(-\delta^{(4)}(\tilde{Q} - \tilde{Y})\bigr)\tilde{R}'(\tilde{Y})\,d^3y\,dt'
+= -\mu\,\tilde{R}'(\tilde{Q}),
 $$
-where in the last step the delta picks out $\tilde{Y} = \tilde{X}$. The derivative acts only on $G$, because $\tilde{R}'$ does not depend on $\tilde{X}$; equivalently $\Box_{\tilde{X}}G(\tilde{X}-\tilde{Y}) = \Box_{\tilde{Y}}G(\tilde{X}-\tilde{Y})$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
+where in the last step the delta picks out $\tilde{Y} = \tilde{Q}$. The derivative acts only on $G$, because $\tilde{R}'$ does not depend on $\tilde{Q}$; equivalently $\Box_{\tilde{Q}}G(\tilde{Q}-\tilde{Y}) = \Box_{\tilde{Y}}G(\tilde{Q}-\tilde{Y})$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
 
 ## Problem 2: The Retarded Green's Function and the Light-Cone Jacobian
 
@@ -115,7 +115,7 @@ the last equality because $\delta^{(3)}(\mathbf{x})$ forces $R = 0$, where $g = 
 $$
 G_{\mathrm{ret}}(\mathbf{x},t) = \frac{\delta(t - R/c)}{4\pi R},
 \qquad
-\Box\,G_{\mathrm{ret}} = -\delta(t)\,\delta^{(3)}(\mathbf{x}) = -\delta^{(4)}(\tilde{X}).
+\Box\,G_{\mathrm{ret}} = -\delta(t)\,\delta^{(3)}(\mathbf{x}) = -\delta^{(4)}(\tilde{Q}).
 $$
 
 Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $u'$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $u'$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the *argument* $g$: because $(\nabla g)^2 = 1/c^2$ exactly, the two second-derivative terms combine, and because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.
@@ -146,7 +146,7 @@ $$
 $$
 This is the Jacobian the exercise warns about: the factor $c/(2R)$ is what turns the invariant coefficient $1/(2\pi c)$ into the radial coefficient $1/(4\pi R)$. Dropping it — writing the radial kernel as $\frac{1}{2\pi c}\delta(t-R/c)$, or as $\frac{1}{2\pi R}\delta(t-R/c)$, or as a coefficient without the $R$ in the denominator — gives a kernel that fails in part (a). The $u'$ term does not cancel, except for the middle form, whose $u'$ term does cancel but which produces twice the unit point source. The conversion was checked numerically for several pairs $(R,c)$ by smearing the invariant delta against test functions.
 
-**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde X) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)\tilde{G} = -1$ gives
+**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)\tilde{G} = -1$ gives
 $$
 \tilde{G}(\mathbf{k},\omega) = \frac{c^2}{c^2 k^2 - \omega^2},
 \qquad
@@ -176,7 +176,7 @@ using $\int_0^\infty \sin(kR)\sin(ckt)\,dk = \frac{\pi}{2c}\bigl[\delta(t - R/c)
 $$
 G_{\mathrm{adv}}(\mathbf{x},t) = \frac{1}{4\pi R}\,\delta\!\left(t + \frac{R}{c}\right),
 \qquad
-\Box\,G_{\mathrm{adv}} = -\delta^{(4)}(\tilde{X}),
+\Box\,G_{\mathrm{adv}} = -\delta^{(4)}(\tilde{Q}),
 $$
 with support on the past light cone. In the invariant form it is $G_{\mathrm{adv}} = \frac{1}{2\pi c}\Theta(-t)\delta(t^2 - R^2/c^2)$, and the Jacobian at the past root $t = -R/c$ is again $2R/c$.
 
@@ -267,7 +267,7 @@ The parent and its companion are correct where they are defined, and the derivat
 
 1. **The kernel was stated, not derived.** The radiation companion displays $G_\Box = \frac{1}{4\pi R}\delta(t-R/c)$ and the retarded convolution and says it does not re-derive the structure; the parent states the potential equation and refers the reader to the standard references for the kernel. This exercise supplies the derivation, the Jacobian, and the boundary condition. This is a presentation gap, now closed.
 
-2. **The parent's first-order Green's function for $\tilde{\nabla}$ is unverified.** The parent also states a biquaternion-valued kernel $\tilde{G}_{\mathrm{ret}}$ solving $\tilde{\nabla}\tilde{G} = \delta(\tilde{X})e_0$, with an explicit vector term, and immediately adds that it satisfies the equation "up to a sign convention for the delta distribution" and that its precise form "should be verified against the standard references." The defining equation with $+\delta e_0$ and the satisfaction statement with $-\delta e_0$ do not agree, and the vector term's normalization is not fixed. This exercise does not use that object — the potential equation is second order, and its kernel is the scalar $G_\Box$ derived above — and it records the first-order kernel as an unverified parent statement rather than inheriting it.
+2. **The parent's first-order Green's function for $\tilde{\nabla}$ is unverified.** The parent also states a biquaternion-valued kernel $\tilde{G}_{\mathrm{ret}}$ solving $\tilde{\nabla}\tilde{G} = \delta(\tilde{Q})e_0$, with an explicit vector term, and immediately adds that it satisfies the equation "up to a sign convention for the delta distribution" and that its precise form "should be verified against the standard references." The defining equation with $+\delta e_0$ and the satisfaction statement with $-\delta e_0$ do not agree, and the vector term's normalization is not fixed. This exercise does not use that object — the potential equation is second order, and its kernel is the scalar $G_\Box$ derived above — and it records the first-order kernel as an unverified parent statement rather than inheriting it.
 
 3. **The retarded choice is a boundary condition.** The defining equation admits both the retarded and the advanced kernel, and the retarded one is selected by causality, not by the algebra. The parent states that the physically relevant kernel is the retarded one but does not state the selection principle; Problem 3 supplies it, and the exercise records that the selection is a physical input.
 
@@ -319,8 +319,8 @@ with all sources at the retarded time $t - R/c$; the retarded solution is automa
 | $\tilde{\nabla}, \bar{\tilde{\nabla}}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\partial_{ict} = -\frac{i}{c}\partial_t$ | Temporal component of the gradient |
 | $\Box = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2$ | Wave operator (d'Alembertian) |
-| $\delta^{(4)}(\tilde{X}) = \delta(t)\delta^{(3)}(\mathbf{x})$ | Four-dimensional Dirac delta |
-| $G(\tilde{X})$ | Green's function, $\Box G = -\delta^{(4)}$ |
+| $\delta^{(4)}(\tilde{Q}) = \delta(t)\delta^{(3)}(\mathbf{x})$ | Four-dimensional Dirac delta |
+| $G(\tilde{Q})$ | Green's function, $\Box G = -\delta^{(4)}$ |
 | $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ | Retarded Green's function |
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(t + R/c)$ | Advanced Green's function |
 | $\sigma = t^2 - R^2/c^2$ | Light-cone invariant (argument of the invariant delta) |

@@ -58,23 +58,23 @@ The vector part vanishes. The subset $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is a
 **Identification with $\mathbb{R}^2$.** The elements of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ are in bijection with pairs $(q_0, q'_0)$ of real numbers, where $Q_0 = q_0 + j q'_0$. We use the notation
 
 $$
-\tilde{X} = x_0 e_0 + j x'_0 e_0, \qquad x_0, x'_0 \in \mathbb{R},
+\tilde{Q} = x_0 e_0 + j x'_0 e_0, \qquad x_0, x'_0 \in \mathbb{R},
 $$
 
-for a general element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$. The two real numbers $x_0, x'_0$ are the **coordinates** of $\tilde{X}$ in the split complex subspace.
+for a general element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$. The two real numbers $x_0, x'_0$ are the **coordinates** of $\tilde{Q}$ in the split complex subspace.
 
 ### Functions on the Split Complex Subspace
 
 A **split-biquaternion-valued function on the split complex subspace** is a map
 
 $$
-\tilde{F} : \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{X} \mapsto \tilde{F}(\tilde{X}).
+\tilde{F} : \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{Q} \mapsto \tilde{F}(\tilde{Q}).
 $$
 
-Writing $\tilde{X} = x_0 e_0 + j x'_0 e_0$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the two real variables $x_0, x'_0$:
+Writing $\tilde{Q} = x_0 e_0 + j x'_0 e_0$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the two real variables $x_0, x'_0$:
 
 $$
-\tilde{F}(\tilde{X}) = F_0(x_0, x'_0) e_0 + F_1(x_0, x'_0) e_1 + F_2(x_0, x'_0) e_2 + F_3(x_0, x'_0) e_3.
+\tilde{F}(\tilde{Q}) = F_0(x_0, x'_0) e_0 + F_1(x_0, x'_0) e_1 + F_2(x_0, x'_0) e_2 + F_3(x_0, x'_0) e_3.
 $$
 
 The restriction to $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ reduces the number of independent real variables from eight to two.
@@ -140,15 +140,15 @@ where each $F_\mu$ is integrated over the two-dimensional domain $\Omega$ with r
 The integration theory on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the two-dimensional analogue of the four-dimensional theory. The fundamental solution of the split complex derivative is the kernel
 
 $$
-\tilde{G}_{\mathbb{D}}(\tilde{X}) = \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^2},
+\tilde{G}_{\mathbb{D}}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^2},
 $$
 
-where $\bar{\tilde{X}}$ is the split complex conjugate and $\|\tilde{X}\|_E^2 = x_0^2 + x'^2_0$ is the squared Euclidean norm. The kernel is defined for $\tilde{X} \neq 0$.
+where $\bar{\tilde{Q}}$ is the split complex conjugate and $\|\tilde{Q}\|_E^2 = x_0^2 + x'^2_0$ is the squared Euclidean norm. The kernel is defined for $\tilde{Q} \neq 0$.
 
 The Cauchy integral formula on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ takes the form
 
 $$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi i_{\mathbb{D}}} \int_{\partial \Omega} \tilde{G}_{\mathbb{D}}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, ds(\tilde{X}),
+\tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi i_{\mathbb{D}}} \int_{\partial \Omega} \tilde{G}_{\mathbb{D}}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, ds(\tilde{Q}),
 $$
 
 where $i_{\mathbb{D}}$ is a formal imaginary unit in the split complex algebra (which does not exist as an element of $\mathbb{D}$ but is used as a bookkeeping device), and $ds$ is the arc length on the boundary. The formula is not directly analogous to the complex case, because the split complex algebra has no imaginary unit. The correct form is obtained in the idempotent basis, where it reduces to two copies of the real Cauchy integral formula.
@@ -200,7 +200,7 @@ This vanishes if and only if all $q_\mu = 0$. So every nonzero element is invert
 **Identification with $\mathbb{R}^4$.** The elements of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ are in bijection with quadruples $(q_0, q_1, q_2, q_3)$ of real numbers. We use the notation
 
 $$
-\tilde{X} = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+\tilde{Q} = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
 $$
 
 for a general element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.
@@ -229,7 +229,7 @@ and the convective derivative $\tilde{D}$.
 
 The analysis on $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the ordinary quaternion analysis, extended to functions with values in the full split biquaternion algebra. Since there are no zero divisors in $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the analysis is clean everywhere.
 
-The integral and the Cauchy integral formula are the same as on the general subspace, with the fundamental solution $\tilde{G}(\tilde{X}) = \bar{\tilde{X}}/\|\tilde{X}\|_E^4$.
+The integral and the Cauchy integral formula are the same as on the general subspace, with the fundamental solution $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$.
 
 ### Comparison with the Quaternion Subspace of the Biquaternion Algebra
 
@@ -280,7 +280,7 @@ whose zero set is the three-dimensional cone $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_
 **Identification with $\mathbb{R}^4$.** The elements of $\mathbb{M}_+$ are in bijection with quadruples $(q_0, q'_1, q'_2, q'_3)$ of real numbers. We use the notation
 
 $$
-\tilde{X} = x_0 e_0 + j x_1 e_1 + j x_2 e_2 + j x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+\tilde{Q} = x_0 e_0 + j x_1 e_1 + j x_2 e_2 + j x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
 $$
 
 for a general element of $\mathbb{M}_+$.
@@ -340,7 +340,7 @@ whose zero set is the three-dimensional cone $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$;
 **Identification with $\mathbb{R}^4$.** The elements of $\mathbb{M}_-$ are in bijection with quadruples $(q'_0, q_1, q_2, q_3)$ of real numbers. We use the notation
 
 $$
-\tilde{X} = j x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+\tilde{Q} = j x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
 $$
 
 for a general element of $\mathbb{M}_-$.
@@ -474,7 +474,7 @@ The following table summarizes the differential operators on the four subspaces.
 | $\tilde{\nabla}^2$ | $(\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ | Split-quaternion-valued second-order operator |
 | $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | $(u_0 \partial_0 + \mathbf{u}\cdot\mathrm{grad}) + \sum_k e_k(u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\mathbf{u})$ | Split-quaternion-valued first-order operator |
 | $\int_\Omega \tilde{F} \, dV$ | $\sum_\mu \left(\int_\Omega F_\mu \, dV\right) e_\mu$ | Split-quaternion-valued integral |
-| $\tilde{G}(\tilde{X})$ | $\bar{\tilde{X}}/\|\tilde{X}\|_E^4$ | Fundamental solution of $\tilde{\nabla}$ |
+| $\tilde{G}(\tilde{Q})$ | $\bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ | Fundamental solution of $\tilde{\nabla}$ |
 
 On the split complex subspace, the operators reduce to the two-dimensional operators $\partial_{\mathbb{D}}$, $\bar{\partial}_{\mathbb{D}}$, and $\partial_{\mathbb{D}} \bar{\partial}_{\mathbb{D}} = \partial_0^2 - \partial'^2_0$.
 

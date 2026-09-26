@@ -67,10 +67,10 @@ $$
 
 with $\eta_{\mu\nu}\epsilon^{(r)\mu}\epsilon^{(s)\nu}=\zeta_r\delta_{rs}$ and $\zeta=(-1,+1,+1,+1)$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\hat{\mathbf{k}}$, $\epsilon^{(3)}=\hat{\mathbf{k}}$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
 
-The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{M}_-$ as $\tilde{X}=iq_0e_0+\mathbf{q}$ with $q_0$ real and $\mathbf{q}$ a real pure quaternion, its norm form is
+The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{M}_-$ as $\tilde{Q}=iq_0e_0+\mathbf{q}$ with $q_0$ real and $\mathbf{q}$ a real pure quaternion, its norm form is
 
 $$
-N(\tilde{X}) = |\mathbf{q}|^2 - q_0^2 ,
+N(\tilde{Q}) = |\mathbf{q}|^2 - q_0^2 ,
 $$
 
 an indefinite quadratic form of signature $(-1,+1,+1,+1)$. The four basis directions are $ie_0$ (the timelike direction, matching $\epsilon^{(0)}$) and $e_1,e_2,e_3$ (the spatial directions, matching $\epsilon^{(1)},\epsilon^{(2)},\epsilon^{(3)}$). So:
@@ -206,7 +206,7 @@ The gaps are of three kinds, and none is closed by better notation.
 
 ## Summary
 
-The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite metric $\zeta=(-1,+1,+1,+1)$ is the norm form $N(\tilde{X})=|\mathbf{q}|^2-q_0^2$ of that sector. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\hat\varepsilon^{(r)}_i\hat\varepsilon^{(r)}_j=\delta_{ij}-\hat k_i\hat k_j$.
+The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite metric $\zeta=(-1,+1,+1,+1)$ is the norm form $N(\tilde{Q})=|\mathbf{q}|^2-q_0^2$ of that sector. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\hat\varepsilon^{(r)}_i\hat\varepsilon^{(r)}_j=\delta_{ij}-\hat k_i\hat k_j$.
 
 Circular polarization is the algebra's complex structure acting on the propagation direction: the circular vectors $\hat\varepsilon_\pm=\tfrac{1}{\sqrt2}(\hat\varepsilon_1\pm i\hat\varepsilon_2)$ are the eigenvectors of left multiplication by $\hat{\mathbf{k}}$, with $\hat{\mathbf{k}}\hat\varepsilon_\pm=\mp i\hat\varepsilon_\pm$. The helicity operator is $\lambda=\hat{\mathbf{k}}\cdot\mathbf{S}=\tfrac{i}{2}\mathrm{ad}_{\hat{\mathbf{k}}}=i\,\mathrm{Vect}(\hat{\mathbf{k}}\,\cdot\,)$, the vector part of left multiplication by the Hermitian element $i\hat{\mathbf{k}}\in\mathbb{M}_+$, with spectral values $\{+1,0,-1\}$; its $\pm1$ eigenvectors are the two physical polarizations and its $0$ eigenvector is the longitudinal direction $\hat{\mathbf{k}}$. The two helicities are the self-dual and anti-self-dual halves of the field strength: a definite-helicity plane wave is supported on $\mathbf{E}+ic\mathbf{B}$ or on $\mathbf{E}-ic\mathbf{B}$, never both.
 

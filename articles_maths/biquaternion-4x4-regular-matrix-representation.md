@@ -193,7 +193,7 @@ $$
 
 so that $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ as a direct sum of left ideals.
 
-**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $p^2 = \tfrac{1}{4}(e_0^2 + 2ie_3 + i^2 e_3^2) = \tfrac{1}{4}(e_0 + 2ie_3 + e_0) = \tfrac{1}{2}(e_0 + ie_3) = p$, and similarly $q^2 = q$, while $pq = \tfrac{1}{4}(e_0^2 - i^2e_3^2) = \tfrac{1}{4}(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{X} = \tilde{X}q = 0$, because membership of $\mathbb{B}q$ gives $\tilde{X}q = \tilde{X}$ while $pq = 0$. The sum is therefore direct. The idempotents and the Peirce decomposition are the subject of *Biquaternion Ideals and Peirce Decomposition*; the statement is used here only to split the module. $\square$
+**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $p^2 = \tfrac{1}{4}(e_0^2 + 2ie_3 + i^2 e_3^2) = \tfrac{1}{4}(e_0 + 2ie_3 + e_0) = \tfrac{1}{2}(e_0 + ie_3) = p$, and similarly $q^2 = q$, while $pq = \tfrac{1}{4}(e_0^2 - i^2e_3^2) = \tfrac{1}{4}(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}q = 0$, because membership of $\mathbb{B}q$ gives $\tilde{Q}q = \tilde{Q}$ while $pq = 0$. The sum is therefore direct. The idempotents and the Peirce decomposition are the subject of *Biquaternion Ideals and Peirce Decomposition*; the statement is used here only to split the module. $\square$
 
 **Theorem (the regular representation is $V \oplus V$).** In the basis
 
@@ -335,16 +335,16 @@ It is a group, and under the isomorphism $\Phi$ of *Biquaternion 2×2 Matrix Rep
 **Proposition (the two-sided action).** The map
 
 $$
-\tilde{G} \times \mathbb{M}_+ \longrightarrow \mathbb{M}_+, \qquad (\tilde{A}, \tilde{X}) \longmapsto \tilde{A} \tilde{X} \tilde{A}^{\dagger},
+\tilde{G} \times \mathbb{M}_+ \longrightarrow \mathbb{M}_+, \qquad (\tilde{A}, \tilde{Q}) \longmapsto \tilde{A} \tilde{Q} \tilde{A}^{\dagger},
 $$
 
 is a group action of $\tilde{G}$ on the real vector space $\mathbb{M}_+$ of real dimension $4$, and it preserves the norm form restricted to $\mathbb{M}_+$:
 
 $$
-N(\tilde{A}\tilde{X}\tilde{A}^{\dagger}) = N(\tilde{X}) .
+N(\tilde{A}\tilde{Q}\tilde{A}^{\dagger}) = N(\tilde{Q}) .
 $$
 
-**Proof.** If $\tilde{X}$ is Hermitian then $(\tilde{A}\tilde{X}\tilde{A}^{\dagger})^{\dagger} = \tilde{A}\tilde{X}^{\dagger}\tilde{A}^{\dagger} = \tilde{A}\tilde{X}\tilde{A}^{\dagger}$, so $\mathbb{M}_+$ is preserved. The norm form is multiplicative, $N(\tilde{A}\tilde{X}\tilde{A}^{\dagger}) = N(\tilde{A})N(\tilde{X})N(\tilde{A}^{\dagger})$, and $N(\tilde{A}) = 1$ while $N(\tilde{A}^{\dagger}) = N(\tilde{A})^{*} = 1$. Composition holds because $\tilde{A}_1(\tilde{A}_2\tilde{X}\tilde{A}_2^{\dagger})\tilde{A}_1^{\dagger} = (\tilde{A}_1\tilde{A}_2)\tilde{X}(\tilde{A}_1\tilde{A}_2)^{\dagger}$. $\square$
+**Proof.** If $\tilde{Q}$ is Hermitian then $(\tilde{A}\tilde{Q}\tilde{A}^{\dagger})^{\dagger} = \tilde{A}\tilde{Q}^{\dagger}\tilde{A}^{\dagger} = \tilde{A}\tilde{Q}\tilde{A}^{\dagger}$, so $\mathbb{M}_+$ is preserved. The norm form is multiplicative, $N(\tilde{A}\tilde{Q}\tilde{A}^{\dagger}) = N(\tilde{A})N(\tilde{Q})N(\tilde{A}^{\dagger})$, and $N(\tilde{A}) = 1$ while $N(\tilde{A}^{\dagger}) = N(\tilde{A})^{*} = 1$. Composition holds because $\tilde{A}_1(\tilde{A}_2\tilde{Q}\tilde{A}_2^{\dagger})\tilde{A}_1^{\dagger} = (\tilde{A}_1\tilde{A}_2)\tilde{Q}(\tilde{A}_1\tilde{A}_2)^{\dagger}$. $\square$
 
 **Theorem (the double cover).** The action above defines a surjective group homomorphism
 
@@ -354,7 +354,7 @@ $$
 
 onto the identity component $SO^+(1,3)$ of the orthogonal group of the form, with kernel $\{e_0, -e_0\}$, which is central of order two.
 
-**Proof.** A real-linear map of $\mathbb{M}_+$ preserving the quadratic form of signature $(1,3)$ is an element of $O(1,3)$; the action is continuous in $\tilde{A}$ and $\tilde{G} = SL_2(\mathbb{C})$ is connected, so the image is a connected subgroup of $O(1,3)$ and therefore lies in the identity component $SO^+(1,3)$. The surjectivity onto that component is the standard fact that $SL_2(\mathbb{C})$ is the double cover of the restricted orthogonal group, cited from the standard theory of the orthogonal groups. For the kernel, $\tilde{A}$ acts trivially precisely when $\tilde{A}\tilde{X}\tilde{A}^{\dagger} = \tilde{X}$ for every Hermitian $\tilde{X}$. Taking $\tilde{X} = e_0$ gives $\tilde{A}\tilde{A}^{\dagger} = e_0$, that is, $\tilde{A}$ is unitary, and the condition then reads $\tilde{A}\tilde{X} = \tilde{X}\tilde{A}$ for every Hermitian $\tilde{X}$. The Hermitian elements span $\mathbb{B}$ over $\mathbb{C}$, so $\tilde{A}$ commutes with every element of $\mathbb{B}$ and is therefore a central element $\lambda e_0$; the norm condition $N(\lambda e_0) = \lambda^2 = 1$ leaves $\lambda = \pm 1$. Both central elements act trivially on $\mathbb{M}_+$, and no other element does. The same double cover is met in *Spinors and the Biquaternion Spinor Module*, where it is read on the module; here it is read as the two-sided action of the regular representation, that is, as the left copy composed with the right copy of the conjugate transpose. $\square$
+**Proof.** A real-linear map of $\mathbb{M}_+$ preserving the quadratic form of signature $(1,3)$ is an element of $O(1,3)$; the action is continuous in $\tilde{A}$ and $\tilde{G} = SL_2(\mathbb{C})$ is connected, so the image is a connected subgroup of $O(1,3)$ and therefore lies in the identity component $SO^+(1,3)$. The surjectivity onto that component is the standard fact that $SL_2(\mathbb{C})$ is the double cover of the restricted orthogonal group, cited from the standard theory of the orthogonal groups. For the kernel, $\tilde{A}$ acts trivially precisely when $\tilde{A}\tilde{Q}\tilde{A}^{\dagger} = \tilde{Q}$ for every Hermitian $\tilde{Q}$. Taking $\tilde{Q} = e_0$ gives $\tilde{A}\tilde{A}^{\dagger} = e_0$, that is, $\tilde{A}$ is unitary, and the condition then reads $\tilde{A}\tilde{Q} = \tilde{Q}\tilde{A}$ for every Hermitian $\tilde{Q}$. The Hermitian elements span $\mathbb{B}$ over $\mathbb{C}$, so $\tilde{A}$ commutes with every element of $\mathbb{B}$ and is therefore a central element $\lambda e_0$; the norm condition $N(\lambda e_0) = \lambda^2 = 1$ leaves $\lambda = \pm 1$. Both central elements act trivially on $\mathbb{M}_+$, and no other element does. The same double cover is met in *Spinors and the Biquaternion Spinor Module*, where it is read on the module; here it is read as the two-sided action of the regular representation, that is, as the left copy composed with the right copy of the conjugate transpose. $\square$
 
 **Remark.** The statement above is a statement of algebra and of the geometry of a quadratic form: a group of linear transformations of a four-dimensional real space preserving a form of signature $(1,3)$, and a two-to-one homomorphism onto it. It is not a statement about a physical particle, and no vocabulary of physics is used. The two-sided action is the regular representation read twice, once through $\rho_L(\tilde{A})$ and once through the right action of $\tilde{A}^{\dagger}$; it is the one place in this article where the left and right copies enter together.
 

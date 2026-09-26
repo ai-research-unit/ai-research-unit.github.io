@@ -143,13 +143,13 @@ was checked against the direct evaluation of $\mathrm{Vect}(\bar{\tilde{\nabla}}
 
 ### Local Triviality and the Degree-of-Freedom Count
 
-Any connection can be removed at a single point. Fix a point $\tilde{X}_0$ and let $A_\mu$ be the components of $\tilde{A}(\tilde{X}_0)$, with $A_0$ imaginary and $\mathbf{A}$ real. Define
+Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_\mu$ be the components of $\tilde{A}(\tilde{Q}_0)$, with $A_0$ imaginary and $\mathbf{A}$ real. Define
 
 $$
-\Gamma(\tilde{X}) = \sum_{\mu=0}^{3} A_\mu\,(x_\mu - x_{0\mu}),
+\Gamma(\tilde{Q}) = \sum_{\mu=0}^{3} A_\mu\,(x_\mu - x_{0\mu}),
 $$
 
-treating the $x_\mu$ as independent coordinates. Then $\partial_\mu\Gamma = A_\mu$, so $\tilde{\nabla}\Gamma = \tilde{A}(\tilde{X}_0)$ and the transformed connection $\tilde{A} - \tilde{\nabla}\Gamma$ vanishes at $\tilde{X}_0$. The connection can therefore be gauged to zero at any one point, and consequently **no gauge-invariant local function of $\tilde{A}$ exists**: every such function would have to be constant along the orbit, and the orbit passes through zero at the point. The first non-trivial gauge-invariant object is the curvature, and it is the obstruction to extending the elimination from a point to a neighbourhood.
+treating the $x_\mu$ as independent coordinates. Then $\partial_\mu\Gamma = A_\mu$, so $\tilde{\nabla}\Gamma = \tilde{A}(\tilde{Q}_0)$ and the transformed connection $\tilde{A} - \tilde{\nabla}\Gamma$ vanishes at $\tilde{Q}_0$. The connection can therefore be gauged to zero at any one point, and consequently **no gauge-invariant local function of $\tilde{A}$ exists**: every such function would have to be constant along the orbit, and the orbit passes through zero at the point. The first non-trivial gauge-invariant object is the curvature, and it is the obstruction to extending the elimination from a point to a neighbourhood.
 
 The count of physical degrees of freedom now follows from the rank of the pure-gauge map.
 
@@ -177,7 +177,7 @@ The claim that the orbit carries no state information can be made exact with the
 Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}$, and let $\omega'$ be the corresponding state in the gauge-transformed background $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,
 
 $$
-\lambda(\tilde{X}) = e^{iq\Gamma(\tilde{X})/\hbar}, \qquad
+\lambda(\tilde{Q}) = e^{iq\Gamma(\tilde{Q})/\hbar}, \qquad
 \omega' = \omega \circ \mathrm{Ad}_{\lambda^{-1}} .
 $$
 

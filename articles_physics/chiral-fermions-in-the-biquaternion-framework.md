@@ -97,14 +97,14 @@ The read-list articles record that the embedding of the projectors in $\mathbb{B
 
 ## Chiral Gauge Symmetry on the Dirac Module
 
-The gauge principle of the read list localizes a **central** phase: $\lambda=e^{iq\Gamma(\tilde{X})/\hbar}$, with $q$ a single coupling, and it produces a covariant derivative $D=\tilde{\nabla}+\tfrac{iq}{\hbar}\tilde{A}$. A single coupling acts on the whole Dirac field; to make the gauge action *chiral* we must let the two halves carry independent charges. On the module this is elementary, and we write it out because the selection rule below is read off from it.
+The gauge principle of the read list localizes a **central** phase: $\lambda=e^{iq\Gamma(\tilde{Q})/\hbar}$, with $q$ a single coupling, and it produces a covariant derivative $D=\tilde{\nabla}+\tfrac{iq}{\hbar}\tilde{A}$. A single coupling acts on the whole Dirac field; to make the gauge action *chiral* we must let the two halves carry independent charges. On the module this is elementary, and we write it out because the selection rule below is read off from it.
 
-Introduce a real scalar gauge function $\Gamma(\tilde{X})$ and two real charges $q_L, q_R$, and set
+Introduce a real scalar gauge function $\Gamma(\tilde{Q})$ and two real charges $q_L, q_R$, and set
 
 $$
 Q \;=\; q_L P_L + q_R P_R \;=\; \begin{pmatrix} q_L I_2 & 0\\ 0 & q_R I_2\end{pmatrix},
 \qquad
-\Lambda(\tilde{X}) \;=\; \exp\!\left(\frac{i}{\hbar}\,\Gamma(\tilde{X})\,Q\right) \;=\; \begin{pmatrix} e^{iq_L\Gamma/\hbar}I_2 & 0\\ 0 & e^{iq_R\Gamma/\hbar}I_2\end{pmatrix}.
+\Lambda(\tilde{Q}) \;=\; \exp\!\left(\frac{i}{\hbar}\,\Gamma(\tilde{Q})\,Q\right) \;=\; \begin{pmatrix} e^{iq_L\Gamma/\hbar}I_2 & 0\\ 0 & e^{iq_R\Gamma/\hbar}I_2\end{pmatrix}.
 $$
 
 The gauge transformation is $\Psi\mapsto\Lambda\Psi$, and the connection transforms as $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, exactly as in the abelian gauge principle. The covariant derivative is the module operator

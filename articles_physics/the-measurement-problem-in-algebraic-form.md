@@ -6,7 +6,7 @@ The measurement problem is the unresolved question of how the definite, single o
 
 What it does is narrower, and worth doing carefully. A reformulation changes which notions are primitive, and the measurement problem is stated in terms of primitive notions. The question here is: **stated in the objects of the framework, what is the measurement problem, and what does the restatement change?**
 
-The answer, in advance, is one change in form and no change in physics. In its usual statement the problem is a clash between **two kinds of time evolution** — a unitary evolution and a projection — with no rule saying when each applies. In the framework both are instances of the **same bilinear operation**, $X \mapsto \tilde{A} X \tilde{A}^\dagger$ (with renormalization in the measurement case), applied with an acting element $\tilde{A} \in \mathbb{B}$ of one of two algebraic types: **unitary** ($\tilde{A}\tilde{A}^\dagger = e_0$) or **Hermitian idempotent** ($\tilde{A}^2 = \tilde{A} = \tilde{A}^\dagger$). The two kinds of time evolution are thus one operation form applied to two classes of element. That is an exact restatement, and it moves the centre of gravity of the problem — from a boundary between physical regimes to a choice of acting element — without supplying a rule for the choice.
+The answer, in advance, is one change in form and no change in physics. In its usual statement the problem is a clash between **two kinds of time evolution** — a unitary evolution and a projection — with no rule saying when each applies. In the framework both are instances of the **same bilinear operation**, $\tilde{Q} \mapsto \tilde{A} \tilde{Q} \tilde{A}^\dagger$ (with renormalization in the measurement case), applied with an acting element $\tilde{A} \in \mathbb{B}$ of one of two algebraic types: **unitary** ($\tilde{A}\tilde{A}^\dagger = e_0$) or **Hermitian idempotent** ($\tilde{A}^2 = \tilde{A} = \tilde{A}^\dagger$). The two kinds of time evolution are thus one operation form applied to two classes of element. That is an exact restatement, and it moves the centre of gravity of the problem — from a boundary between physical regimes to a choice of acting element — without supplying a rule for the choice.
 
 The residue is stated below as the algebraic form of the problem. The companion article *Decoherence as Idempotent Projection* is then used to say exactly what the framework's dephasing model of decoherence does in this language: it supplies a unique channel that removes the coherences while preserving the outcome statistics, and that channel's output is the **average** of the outcomes, not one of them. The difference between the mixture and the outcome is thereby a difference between a segment of the Bloch ball and an endpoint of that segment. What the framework cannot do is make the endpoint a function of the state. That failure is the selection problem in algebraic form, and no change of notation removes it.
 
@@ -59,7 +59,7 @@ where $\hat{\mathbf{h}} = \mathbf{h}/|\mathbf{h}|$ is the measurement direction.
 The central algebraic observation for the present subject is this. For any $\tilde{A} \in \mathbb{B}$ define the **conjugation**
 
 $$
-\Gamma_{\tilde{A}}: X \;\longmapsto\; \tilde{A}\,X\,\tilde{A}^\dagger .
+\Gamma_{\tilde{A}}: \tilde{Q} \;\longmapsto\; \tilde{A}\,\tilde{Q}\,\tilde{A}^\dagger .
 $$
 
 The framework's two fundamental operations are both instances of $\Gamma_{\tilde{A}}$, distinguished only by an algebraic property of $\tilde{A}$:
@@ -138,7 +138,7 @@ the diagonal part of $\tilde{\rho}$ in the pointer basis. As the preceding secti
 **Second, $\tilde{\rho}_d$ is the outcome-weighted average of the two selection operations.** Let $\Lambda_\pm$ denote the constant (reset) channels onto the two outcomes,
 
 $$
-\Lambda_\pm(\tilde{X}) = \mathrm{Tr}(\tilde{X})\,\tilde{P}_\pm .
+\Lambda_\pm(\tilde{Q}) = \mathrm{Tr}(\tilde{Q})\,\tilde{P}_\pm .
 $$
 
 Each $\Lambda_\pm$ is completely positive, trace preserving, and idempotent as a channel; each is what "select the outcome $\pm$" means as an operation. For every state $\tilde{\rho}$ (so $\mathrm{Tr}(\tilde{\rho}) = 1$),
@@ -150,7 +150,7 @@ $$
 since $\Lambda_\pm(\tilde{\rho}) = \tilde{P}_\pm$ and $p_\pm = \mathrm{Tr}(\tilde{P}_\pm\tilde{\rho})$. The fully dephased element is exactly the convex average of the two possible outcomes with their Born weights. Two differences between $\Lambda_\pm$ and $\Phi^{\mathrm{deph}}_1$ are decisive for the problem:
 
 - **The selection channels do not preserve the Born statistics.** $\Lambda_+$ sends every state to $\tilde{P}_+$, so it assigns probability $1$ to the outcome $+$ regardless of $\tilde{\rho}$, whereas the Born probability is $p_+$. A selection channel is a legitimate operation, but it is not a statistics-preserving description of the ensemble.
-- **The dephasing channel is a conditional expectation; the selection channels are not.** $\Phi^{\mathrm{deph}}_1$ is the trace-preserving conditional expectation onto the commutative pointer subalgebra $A = \mathbb{C}\tilde{P}_+(\hat{\mathbf{n}}) \oplus \mathbb{C}\tilde{P}_-(\hat{\mathbf{n}})$, hence an orthogonal projection with respect to the trace pairing. The reset channels $\Lambda_\pm$ are idempotent but fail the module property $\Lambda(\tilde{A}\tilde{X}\tilde{B}) = \tilde{A}\,\Lambda(\tilde{X})\,\tilde{B}$ for $\tilde{A}, \tilde{B} \in A$; for example $\Lambda_+(\tilde{\rho}\,\tilde{P}_-) = p_-\,\tilde{P}_+$ while $\Lambda_+(\tilde{\rho})\,\tilde{P}_- = 0$. So "idempotent channel" does not by itself identify the statistics-preserving operation, and the two operations that the problem contrasts — the average and the selection — are both present in the algebra as channels, with different properties.
+- **The dephasing channel is a conditional expectation; the selection channels are not.** $\Phi^{\mathrm{deph}}_1$ is the trace-preserving conditional expectation onto the commutative pointer subalgebra $A = \mathbb{C}\tilde{P}_+(\hat{\mathbf{n}}) \oplus \mathbb{C}\tilde{P}_-(\hat{\mathbf{n}})$, hence an orthogonal projection with respect to the trace pairing. The reset channels $\Lambda_\pm$ are idempotent but fail the module property $\Lambda(\tilde{A}\tilde{Q}\tilde{B}) = \tilde{A}\,\Lambda(\tilde{Q})\,\tilde{B}$ for $\tilde{A}, \tilde{B} \in A$; for example $\Lambda_+(\tilde{\rho}\,\tilde{P}_-) = p_-\,\tilde{P}_+$ while $\Lambda_+(\tilde{\rho})\,\tilde{P}_- = 0$. So "idempotent channel" does not by itself identify the statistics-preserving operation, and the two operations that the problem contrasts — the average and the selection — are both present in the algebra as channels, with different properties.
 
 Geometrically the situation is exact and easy to see. Under $\Phi^{\mathrm{deph}}_p$ the Bloch vector moves along a straight line toward the pointer axis; at $p = 1$ it lands on the pointer diameter at the interior point $(\hat{\mathbf{n}}\cdot\mathbf{r})\,\hat{\mathbf{n}}$. The two outcomes are the endpoints $\pm\hat{\mathbf{n}}$ of that diameter. So the passage from "the measurement has interacted with the environment" to "the measurement has an outcome" is the passage from the segment to an endpoint — a passage that the statistics-preserving channel does not make, and that the algebra does not otherwise perform. That is the sharpened algebraic statement of the "and/or" strand of the measurement problem.
 
@@ -208,7 +208,7 @@ The honest summary is a division of labour. The algebraic form makes the *struct
 
 ## Summary
 
-The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $X \mapsto \tilde{A}X\tilde{A}^\dagger$, with the acting element either unitary ($\tilde{U}\tilde{U}^\dagger = e_0$, reversible evolution) or Hermitian idempotent ($\tilde{P}^2 = \tilde{P} = \tilde{P}^\dagger$, the projective sandwich). The Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.
+The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{A}\tilde{Q}\tilde{A}^\dagger$, with the acting element either unitary ($\tilde{U}\tilde{U}^\dagger = e_0$, reversible evolution) or Hermitian idempotent ($\tilde{P}^2 = \tilde{P} = \tilde{P}^\dagger$, the projective sandwich). The Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.
 
 Decoherence, in the framework's worked dephasing model, is the channel $\Phi^{\mathrm{deph}}_p$ of *Decoherence as Idempotent Projection*. At full strength it is the trace-preserving conditional expectation onto the pointer subalgebra, and it is the unique coherence-free assignment that reproduces the Born statistics: its output is the mixture $\tilde{\rho}_d = p_+\tilde{P}_+ + p_-\tilde{P}_-$, which, for a state $\tilde{\rho}$, is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The mixture is an interior point of the pointer diameter; the outcomes are its endpoints. Decoherence supplies the statistics and the segment, not the endpoint and not the index.
 
@@ -230,12 +230,12 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $p_\pm = \mathrm{Tr}(\tilde{P}_\pm(\hat{\mathbf{h}})\tilde{\rho})$ | Outcome probabilities |
 | $\hat{\mathbf{h}} = \mathbf{h}/\|\mathbf{h}\|$, $\hat{\mathbf{n}}$ | Measurement and pointer directions |
-| $\Gamma_{\tilde{A}}(X) = \tilde{A}X\tilde{A}^\dagger$ | Conjugation; unitary evolution ($\tilde{A} = \tilde{U}$) or projective sandwich ($\tilde{A} = \tilde{P}_\pm$) |
+| $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^\dagger$ | Conjugation; unitary evolution ($\tilde{A} = \tilde{U}$) or projective sandwich ($\tilde{A} = \tilde{P}_\pm$) |
 | $\tilde{U}\tilde{U}^\dagger = e_0$ | Unitary element (reversible evolution) |
 | $\tilde{P}_\pm^2 = \tilde{P}_\pm = \tilde{P}_\pm^\dagger$ | Hermitian idempotent (orthogonal projection; irreversible) |
 | $\tilde{\rho}_d = p_+\tilde{P}_+ + p_-\tilde{P}_-$ | Fully dephased state (pointer-diagonal) |
 | $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat{\mathbf{n}}$ at strength $p$ |
-| $\Lambda_\pm(\tilde{X}) = \mathrm{Tr}(\tilde{X})\tilde{P}_\pm$ | Selection (reset) channels onto the outcomes |
+| $\Lambda_\pm(\tilde{Q}) = \mathrm{Tr}(\tilde{Q})\tilde{P}_\pm$ | Selection (reset) channels onto the outcomes |
 | $A = \mathbb{C}\tilde{P}_+ \oplus \mathbb{C}\tilde{P}_-$ | Pointer (commutative) subalgebra |
 | $\mathrm{Tr}(\tilde{\rho}^2)$ | Purity; $= \tfrac{1}{2}(1 + \|\mathbf{r}\|^2)$ |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(\|\mathbf{r}\|^2 - 1)e_0$ | Deviation from idempotency (mixedness) |

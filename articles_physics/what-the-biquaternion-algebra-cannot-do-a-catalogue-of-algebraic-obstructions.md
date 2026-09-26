@@ -22,7 +22,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), $\dagger=\bar{\cdot}\circ{}^{*}$ (Hermitian), with $\flat=-\dagger$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the Hermitian form is $\langle\tilde{X},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{X}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), $\dagger=\bar{\cdot}\circ{}^{*}$ (Hermitian), with $\flat=-\dagger$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
 
 ## How an Obstruction Is Certified
 
@@ -56,7 +56,7 @@ The catalogue is deliberately non-relativistic and structural. Obstructions that
 $$
 \tilde{C}^2=\tilde{C}\iff c^2=c\iff c\in\{0,1\},
 $$
-so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $\mathbb{B}\tilde{C}$ are $0$ and $\mathbb{B}$. The statement that a non-zero element generates the whole algebra, $\mathbb{B}\tilde{X}\mathbb{B}=\mathbb{B}$ for $\tilde{X}\neq0$, is the standard statement that $M_2(\mathbb{C})$ is simple, transported by the isomorphism $\Phi$. $\square$
+so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $\mathbb{B}\tilde{C}$ are $0$ and $\mathbb{B}$. The statement that a non-zero element generates the whole algebra, $\mathbb{B}\tilde{Q}\mathbb{B}=\mathbb{B}$ for $\tilde{Q}\neq0$, is the standard statement that $M_2(\mathbb{C})$ is simple, transported by the isomorphism $\Phi$. $\square$
 
 **Consequence.** The framework cannot split itself into non-interfering branches labelled by central projections. Superposition across any two subspaces of the state module remains coherent unless coherence is destroyed by an external mechanism; the algebra provides no internal superselection rule.
 
@@ -88,15 +88,15 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Statement.** Neither the norm form nor its negative is positive definite on the Hermitian subspace $\mathbb{M}_+$, and on the full algebra the form is complex-valued, so definiteness is not defined there at all. The norm form is therefore not a norm and cannot be used to define probabilities.
 
-**Proof.** On $\mathbb{M}_+$ the norm form is $N(h_0e_0+i\mathbf{h})=(h_0^2-|\mathbf{h}|^2)e_0$, of signature $(1,3)$; on the algebra it is $N(\tilde{X})=(x_0^2+x_1^2+x_2^2+x_3^2)e_0$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_0+ie_1$ has $N(\tilde{H})=(1-1)e_0=0$ while $\tilde{H}\neq0$, and $\tilde{H}=ie_1$ has $N(ie_1)=-e_0$, so neither sign is definite there. $\square$
+**Proof.** On $\mathbb{M}_+$ the norm form is $N(h_0e_0+i\mathbf{h})=(h_0^2-|\mathbf{h}|^2)e_0$, of signature $(1,3)$; on the algebra it is $N(\tilde{Q})=(x_0^2+x_1^2+x_2^2+x_3^2)e_0$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_0+ie_1$ has $N(\tilde{H})=(1-1)e_0=0$ while $\tilde{H}\neq0$, and $\tilde{H}=ie_1$ has $N(ie_1)=-e_0$, so neither sign is definite there. $\square$
 
 **Consequence.** The norm form cannot certify that an element is non-zero, cannot define a topology, and cannot supply the positive quantity that Born probabilities require. Its physical role is the determinant — the Minkowski form on the Hermitian sector and the null cone of the pure states — not a metre.
 
-**Remedy.** Use the Hermitian form $\mathrm{Tr}(\tilde{X}^\dagger\tilde{Y})$ for positivity, and the norm form for the cone and the metric; the two are not interchangeable, and the companion articles of this subcategory use them accordingly.
+**Remedy.** Use the Hermitian form $\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$ for positivity, and the norm form for the cone and the metric; the two are not interchangeable, and the companion articles of this subcategory use them accordingly.
 
 ### O6. The norm form vanishes on non-zero elements
 
-**Statement.** The radical of the norm form is non-trivial: there are non-zero $\tilde{X}$ with $N(\tilde{X})=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.
+**Statement.** The radical of the norm form is non-trivial: there are non-zero $\tilde{Q}$ with $N(\tilde{Q})=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.
 
 **Proof.** For the pure-state projector, $\bar{\tilde{P}}(\hat{\mu})=e_0-\tilde{P}(\hat{\mu})$ and hence
 $$
@@ -112,7 +112,7 @@ for every $\hat{\mu}$ while $\tilde{P}(\hat{\mu})\neq0$; indeed the defining pro
 
 **Statement.** There is no quadratic form on $\mathbb{B}$ that is simultaneously positive definite and independent of an arbitrary normalization. The Hermitian form is positive definite but depends on the trace normalization; the norm form is canonical but indefinite.
 
-**Proof.** The Hermitian form is determined by the trace, and the trace is normalised by $\mathrm{Tr}(e_0)=2$, a convention fixed by the degree of the matrix model; replacing $\mathrm{Tr}$ by $c\,\mathrm{Tr}$ for positive $c$ gives another positive definite form, so the positivity is canonical but the scale is not. The norm form is determined by the algebra's product alone, $N(\tilde{X})=\tilde{X}\bar{\tilde{X}}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone. $\square$
+**Proof.** The Hermitian form is determined by the trace, and the trace is normalised by $\mathrm{Tr}(e_0)=2$, a convention fixed by the degree of the matrix model; replacing $\mathrm{Tr}$ by $c\,\mathrm{Tr}$ for positive $c$ gives another positive definite form, so the positivity is canonical but the scale is not. The norm form is determined by the algebra's product alone, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone. $\square$
 
 **Consequence.** All probabilities, distances and normalizations in the framework are trace-relative. The trace normalization is a posit, and the numerical factors of the Fubini–Study metric are statements in the normalization $\mathrm{Tr}(e_0)=2$.
 
@@ -142,7 +142,7 @@ for every $\hat{\mu}$ while $\tilde{P}(\hat{\mu})\neq0$; indeed the defining pro
 
 **Statement.** The group of invertible elements preserving the norm form under conjugation is $G_N=U(1)\cdot SL(2,\mathbb{C})$, strictly larger than the unitary group $U(2)$ that preserves the Hermitian form and acts on the state space. The algebra's quadratic form and its state-space geometry therefore have different symmetries.
 
-**Proof.** From the multiplicativity of the determinant, $N(\tilde{U}\tilde{X}\tilde{U}^\dagger)=|N(\tilde{U})|^2N(\tilde{X})$, so the norm form is preserved exactly by the elements with $|N(\tilde{U})|=1$; the group is seven-real-dimensional and contains $U(2)$, which is four-real-dimensional. The element $\mathrm{diag}(\lambda,\lambda^{-1})$ with real $\lambda\neq1$ is in $G_N$ but not in $U(2)$. $\square$
+**Proof.** From the multiplicativity of the determinant, $N(\tilde{U}\tilde{Q}\tilde{U}^\dagger)=|N(\tilde{U})|^2N(\tilde{Q})$, so the norm form is preserved exactly by the elements with $|N(\tilde{U})|=1$; the group is seven-real-dimensional and contains $U(2)$, which is four-real-dimensional. The element $\mathrm{diag}(\lambda,\lambda^{-1})$ with real $\lambda\neq1$ is in $G_N$ but not in $U(2)$. $\square$
 
 **Consequence.** One cannot identify "the symmetry group" of the framework by asking which transformations preserve the norm form: the answer is larger than the group of physical symmetries and includes transformations that change the Hermitian norm of states.
 
@@ -152,13 +152,13 @@ for every $\hat{\mu}$ while $\tilde{P}(\hat{\mu})\neq0$; indeed the defining pro
 
 ### O11. The algebra is not a division algebra
 
-**Statement.** There exist non-zero $\tilde{X},\tilde{Y}\in\mathbb{B}$ with $\tilde{X}\tilde{Y}=0$. Hence $\mathbb{B}$ has no multiplicative inverse operation defined on all its non-zero elements.
+**Statement.** There exist non-zero $\tilde{Q},\tilde{Y}\in\mathbb{B}$ with $\tilde{Q}\tilde{Y}=0$. Hence $\mathbb{B}$ has no multiplicative inverse operation defined on all its non-zero elements.
 
 **Proof.** The complementary pure-state projectors satisfy
 $$
 \tilde{P}(\hat{\mu})\,\bigl(e_0-\tilde{P}(\hat{\mu})\bigr)=0
 $$
-for every unit $\hat{\mu}$, with both factors non-zero. In the matrix model this is the statement that rank-one matrices of orthogonal ranges multiply to zero; an element is invertible exactly when $\det M(\tilde{X})=N(\tilde{X})\neq0$, and the zero divisors are the elements of vanishing norm. $\square$
+for every unit $\hat{\mu}$, with both factors non-zero. In the matrix model this is the statement that rank-one matrices of orthogonal ranges multiply to zero; an element is invertible exactly when $\det M(\tilde{Q})=N(\tilde{Q})\neq0$, and the zero divisors are the elements of vanishing norm. $\square$
 
 **Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde{P}$ is idempotent with $N(\tilde{P})=0$, hence a zero divisor, while a mixed state $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|<1$ has $N(\tilde{\rho})=\tfrac14(1-r^2)e_0\neq0$ and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{N\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
 
@@ -166,11 +166,11 @@ for every unit $\hat{\mu}$, with both factors non-zero. In the matrix model this
 
 ### O12. There are no canonical commutation relations inside the algebra
 
-**Statement.** There are no elements $\tilde{X},\tilde{P}\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{X},\tilde{P}]=\lambda e_0$, and no finite-dimensional module of $\mathbb{B}$ carries such a pair either.
+**Statement.** There are no elements $\tilde{Q},\tilde{P}\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{Q},\tilde{P}]=\lambda e_0$, and no finite-dimensional module of $\mathbb{B}$ carries such a pair either.
 
 **Proof.** The trace of any commutator vanishes,
 $$
-\mathrm{Tr}\bigl([\tilde{X},\tilde{P}]\bigr)=\mathrm{Tr}\bigl(\tilde{X}\tilde{P}\bigr)-\mathrm{Tr}\bigl(\tilde{P}\tilde{X}\bigr)=0,
+\mathrm{Tr}\bigl([\tilde{Q},\tilde{P}]\bigr)=\mathrm{Tr}\bigl(\tilde{Q}\tilde{P}\bigr)-\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)=0,
 $$
 by cyclicity, whereas $\mathrm{Tr}(\lambda e_0)=2\lambda\neq0$. The same argument applies in any finite-dimensional representation, since the trace there is also cyclic. $\square$
 
@@ -257,7 +257,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** There is no element or operation of $\mathbb{B}$ that represents the time derivative or selects a Hamiltonian. The dynamics must be supplied from outside.
 
-**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{X}}$ for some $\tilde{X}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial_t\psi=J\tilde{H}\psi$ therefore introduces both $\partial_t$ and $\tilde{H}$ as external data. $\square$
+**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial_t\psi=J\tilde{H}\psi$ therefore introduces both $\partial_t$ and $\tilde{H}$ as external data. $\square$
 
 **Consequence.** The framework derives no arrow of time and no equation of motion from its algebra; the dynamical law is a posit, and so is the identification of the central parameters that accompany it.
 
@@ -364,14 +364,14 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form, $\mathbb{B}^{\times}=\{N\neq0\}$ |
-| $\langle\tilde{X},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{X}^\dagger\tilde{Y})$ | Hermitian form |
+| $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$ | Hermitian form |
 | $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state, null under $N$ |
 | $\mathbb{A}_{\hat{n}}$ | Maximal commutative subalgebra |
 | $\mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ |
 | $U(2)$ | Norm-preserving (unitary) group |
 | $G_N=U(1)\cdot SL(2,\mathbb{C})$ | Norm-form-preserving group, $\dim_\mathbb{R}=7$ |
-| $\mathrm{ad}_{\tilde{X}}$ | Inner derivation $[\tilde{X},\cdot]$ |
+| $\mathrm{ad}_{\tilde{Q}}$ | Inner derivation $[\tilde{Q},\cdot]$ |
 
 ## Further Reading
 

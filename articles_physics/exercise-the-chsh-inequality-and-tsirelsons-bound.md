@@ -311,24 +311,24 @@ $$
 = -\hat{a}\otimes(\hat{b}-\hat{b}') - \hat{a}'\otimes(\hat{b}+\hat{b}').
 $$
 
-Write $X=\hat{a}\otimes(\hat{b}-\hat{b}')$ and $Y=\hat{a}'\otimes(\hat{b}+\hat{b}')$, so that $\tilde{\mathcal{S}}=-(X+Y)$ and
+Write $\tilde{Q}=\hat{a}\otimes(\hat{b}-\hat{b}')$ and $\tilde{R}=\hat{a}'\otimes(\hat{b}+\hat{b}')$, so that $\tilde{\mathcal{S}}=-(\tilde{Q}+\tilde{R})$ and
 
 $$
-\tilde{\mathcal{S}}^2 = X^2 + Y^2 + XY + YX .
+\tilde{\mathcal{S}}^2 = \tilde{Q}^2 + \tilde{R}^2 + XY + YX .
 $$
 
 Each term is evaluated with the quaternion multiplication rules. First, $\hat{a}^2=-e_0$ and $(\hat{b}-\hat{b}')^2=-|\hat{b}-\hat{b}'|^2e_0=-2(1-c)e_0$ with $c=\hat{b}\cdot\hat{b}'$, so
 
 $$
-X^2 = \hat{a}^2\otimes(\hat{b}-\hat{b}')^2 = (-e_0)\otimes\bigl(-2(1-c)e_0\bigr) = 2(1-c)\,e_0\otimes e_0 .
+\tilde{Q}^2 = \hat{a}^2\otimes(\hat{b}-\hat{b}')^2 = (-e_0)\otimes\bigl(-2(1-c)e_0\bigr) = 2(1-c)\,e_0\otimes e_0 .
 $$
 
 Similarly, $(\hat{b}+\hat{b}')^2=-2(1+c)e_0$, so
 
 $$
-Y^2 = 2(1+c)\,e_0\otimes e_0,
+\tilde{R}^2 = 2(1+c)\,e_0\otimes e_0,
 \qquad
-X^2+Y^2 = 4\,e_0\otimes e_0 .
+\tilde{Q}^2+\tilde{R}^2 = 4\,e_0\otimes e_0 .
 $$
 
 For the cross terms, the anti-commutativity of distinct quaternion units gives

@@ -69,7 +69,7 @@ and the charge contraction is $\tilde{K}=q\,\mathfrak{F}(\tilde{U})$, the biquat
 
 <!-- CONVENTION — field-tensor components: the contraction four-vector $F^{\mu\nu}V_\nu$ and the field action $\mathfrak{F}(\tilde V)$ are written here in the real time coordinate $x^0=ct$, where $F^{0k}=E_k/c$. In the corpus's $ict$ convention $x^0=ict$, the same component reads $F^{0k}=iE_k/c$, and the four-force time component is $i\gamma q\,\mathbf{E}\cdot\mathbf{v}/c$. The factor $i$ is the complex time direction; it is the same field, and a reviewer must not remove the $i$ from the $ict$ component to "match" the real-component form. -->
 
-Here $\tau$ is proper time, $t$ laboratory time, $\mathbf{v}$ the velocity, $\gamma$ the Lorentz factor, $\mathbf{E}$ and $\mathbf{B}$ the electric field and magnetic induction, and $q,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(X)=\tfrac12(X-X^{\dagger})$, and the trace pairing on $\mathbb{M}_+$ is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+Here $\tau$ is proper time, $t$ laboratory time, $\mathbf{v}$ the velocity, $\gamma$ the Lorentz factor, $\mathbf{E}$ and $\mathbf{B}$ the electric field and magnetic induction, and $q,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{\dagger})$, and the trace pairing on $\mathbb{M}_+$ is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Spin Four-Vector
 
@@ -218,7 +218,7 @@ It remains to write the two structures in $\mathbb{B}$. The key object is the **
 $$
 \mathfrak{F}(\tilde{V}):=-\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(X)=\tfrac{1}{2}\left(X-X^{\dagger}\right),
+P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{\dagger}\right),
 $$
 
 the anti-Hermitian projection of the product of the material element $\tilde{V}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathfrak{F}(\tilde{V})$ lies in the material sector is immediate, since the projection is onto $\mathbb{M}_-$ by construction; that its four-vector components are the contraction $F^{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
@@ -301,10 +301,10 @@ $$
 \frac{du^\mu}{d\tau}=\frac{q}{m}\,F^{\mu\nu}u_\nu .
 $$
 
-The map $X\mapsto (q/m)F^{\mu\nu}X_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F^{0k}=0$, the time components of both $u$ and $S$ are constant and the spatial parts satisfy
+The map $\tilde{Q}\mapsto (q/m)F^{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F^{0k}=0$, the time components of both $u$ and $S$ are constant and the spatial parts satisfy
 
 $$
-\frac{dX^k}{d\tau}=\frac{q}{m}\big(\mathbf{X}\times\mathbf{B}\big)_k ,
+\frac{dX^k}{d\tau}=\frac{q}{m}\big(\mathbf{Q}\times\mathbf{B}\big)_k ,
 $$
 
 so $S_{\rm vec}$ and $\gamma\mathbf{v}$ precess about $\mathbf{B}$ at the same proper-time rate, of magnitude $|q||\mathbf{B}|/m$, and a spin whose spatial part is initially parallel to the velocity remains parallel: **the spin follows the velocity**. This is the classical statement that there is **no anomalous precession** at $g=2$: the spin's laboratory precession exactly follows the momentum's, and the kinematic (Thomas) rotation of the rest frame is already contained in the common transport. The $g=2$ identity was verified by recomputation on random fields and velocities: the spatial right-hand sides of the two equations for $S_{\rm vec}$ and $\gamma\mathbf{v}$ agree identically, so a spin initially parallel to the velocity remains parallel.
@@ -416,7 +416,7 @@ with the **field action**
 $$
 \mathfrak{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(X)=\tfrac{1}{2}\left(X-X^{\dagger}\right),
+P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{\dagger}\right),
 $$
 
 whose four-vector components are the contraction $F^{\mu\nu}V_\nu$, and the invariant material pairing
@@ -445,7 +445,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form |
 | $\bar{\tilde{Q}}$, $\tilde{Q}^\dagger=\bar{\tilde{Q}}^{*}$ | Quaternion conjugate, Hermitian conjugate |
-| $P_{\mathbb{M}_-}(X)=\tfrac12(X-X^\dagger)$ | Projection onto the material sector |
+| $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^\dagger)$ | Projection onto the material sector |
 | $\tilde{U}=\gamma(ic\,e_0+\mathbf{v})$ | Four-velocity, $N(\tilde{U})=-c^2$ |
 | $\tilde{P}=m\tilde{U}=iE/c\,e_0+\mathbf{p}$ | Four-momentum |
 | $\tilde{K}=d\tilde{P}/d\tau=q\,\mathfrak{F}(\tilde{U})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |

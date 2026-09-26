@@ -4,7 +4,7 @@
 
 This article studies the zero divisors of the biquaternion algebra $\mathbb{B}$. It follows the article on biquaternion norm and invertibility, which established the criterion for invertibility and the three-way classification of the elements of $\mathbb{B}$. The goal here is to characterize the zero divisors, to split them into two families, and to describe their structure.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its six distinguished subspaces. The invertibility criterion is assumed from the article on biquaternion norm and invertibility. The classification of the roots of $-1$ is assumed from the article on biquaternion roots of minus one, and it is stated here in the form in which it is used.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its six distinguished subspaces. The invertibility criterion is assumed from the article on biquaternion norm and invertibility. The classification of the roots of $-1$ is assumed from the article on biquaternion roots of minus one. The idempotent classification that depends on it is the subject of *Biquaternion Idempotents and Projections*, and the roots themselves are not restated here.
 
 Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar imaginary is written $i$, so that it does not collide with the quaternion units. A general biquaternion is written
 
@@ -189,70 +189,10 @@ This is the key structural property of non-pure zero divisors: their square is a
 From the relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$, we divide by $2 Q_0$ (which is nonzero, since $Q_0 \neq 0$) and obtain
 
 $$
-\frac{\tilde{Q}^2}{2 Q_0} = \tilde{Q}.
+\tilde{P} = \frac{\tilde{Q}}{2 Q_0}, \qquad \tilde{P}^2 = \frac{\tilde{Q}^2}{(2 Q_0)^2} = \frac{2 Q_0 \tilde{Q}}{4 Q_0^2} = \frac{\tilde{Q}}{2 Q_0} = \tilde{P},
 $$
 
-Define
-
-$$
-\tilde{P} = \frac{\tilde{Q}}{2 Q_0}.
-$$
-
-Then
-
-$$
-\tilde{P}^2 = \frac{\tilde{Q}^2}{(2 Q_0)^2} = \frac{2 Q_0 \tilde{Q}}{4 Q_0^2} = \frac{\tilde{Q}}{2 Q_0} = \tilde{P}.
-$$
-
-So $\tilde{P}$ is an **idempotent**: an element satisfying $\tilde{P}^2 = \tilde{P}$. And $\tilde{Q}$ is recovered from $\tilde{P}$ by
-
-$$
-\tilde{Q} = 2 Q_0 \tilde{P}.
-$$
-
-So every non-pure zero divisor is a complex multiple of an idempotent.
-
-### The Idempotent Classification
-
-The idempotents of $\mathbb{B}$ are classified as follows. The classification depends on the roots of $-1$ in $\mathbb{B}$, which are classified in the article on biquaternion roots of minus one.
-
-**Theorem.** Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_0$) or of the form
-
-$$
-\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
-$$
-
-where $\xi \in \mathbb{B}$ is a root of $-1$, i.e. $\xi^2 = -1$. There are no other idempotents in $\mathbb{B}$.
-
-**Proof.** Write $\tilde{P} = A e_0 + \mathbf{B}$ with $A \in \mathbb{C}$ and $\mathbf{B} = B_1 e_1 + B_2 e_2 + B_3 e_3$ a pure biquaternion. Then
-
-$$
-\tilde{P}^2 = (A^2 - (\mathbf{B}, \mathbf{B})) e_0 + 2 A \mathbf{B}.
-$$
-
-Equating to $\tilde{P} = A e_0 + \mathbf{B}$ gives the two equations
-
-$$
-A^2 - (\mathbf{B}, \mathbf{B}) = A, \qquad 2 A \mathbf{B} = \mathbf{B}.
-$$
-
-If $\mathbf{B} = 0$, then $A^2 = A$, so $A = 0$ or $A = 1$, giving the trivial idempotents. If $\mathbf{B} \neq 0$, then the second equation gives $A = 1/2$. Substituting into the first gives $1/4 - (\mathbf{B}, \mathbf{B}) = 1/2$, so $(\mathbf{B}, \mathbf{B}) = -1/4$.
-
-Define $\xi = -2 i \mathbf{B}$. Then $\xi$ is pure, and
-
-$$
-(\xi, \xi) = \sum_{k=1}^{3} (-2 i B_k)^2 = -4 \sum_{k=1}^{3} B_k^2 = -4 (\mathbf{B}, \mathbf{B}) = 1,
-$$
-
-so $\xi^2 = -(\xi, \xi) = -1$. Thus $\xi$ is a root of $-1$, and $\mathbf{B} = \xi \cdot (i/2)$. Hence
-
-$$
-\tilde{P} = \tfrac{1}{2} e_0 + \tfrac{1}{2} \xi i.
-$$
-
-The sign choice arises from replacing $\xi$ by $-\xi$, which is also a root of $-1$. $\square$
-
-The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: with $\xi = i$, the formula gives $\tilde{P} = \frac{1}{2} e_0 + \frac{1}{2} i \cdot i = \frac{1}{2} e_0 - \frac{1}{2} e_0 = 0$; with $\xi = -i$, it gives $\tilde{P} = \frac{1}{2} e_0 - \frac{1}{2} i \cdot i = \frac{1}{2} e_0 + \frac{1}{2} e_0 = e_0$.
+so $\tilde{P}$ is an **idempotent** and $\tilde{Q}$ is recovered from it by $\tilde{Q} = 2 Q_0 \tilde{P}$: every non-pure zero divisor is a complex multiple of an idempotent. The idempotents themselves — their classification, their bijection with the roots of $-1$, and the dimension of the set they form — are the subject of *Biquaternion Idempotents and Projections*.
 
 ### Properties
 
@@ -273,15 +213,7 @@ $$
 
 ## The Roots of Minus One
 
-The classification of the idempotents depends on the classification of the roots of $-1$ in $\mathbb{B}$. The roots are stated here; the proof is in the article on biquaternion roots of minus one.
-
-**Theorem.** The roots of $-1$ in $\mathbb{B}$, i.e. the elements $\xi \in \mathbb{B}$ with $\xi^2 = -1$, are exactly:
-
-1. **The trivial roots:** $\xi = \pm i$ (the scalar imaginary).
-2. **The real quaternion roots:** $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion, i.e. $\mu = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ with $\mu_1, \mu_2, \mu_3 \in \mathbb{R}$ and $\mu_1^2 + \mu_2^2 + \mu_3^2 = 1$.
-3. **The non-trivial roots:** $\xi = b \mu + d \nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$ with $b \neq 0$ and $d \neq 0$.
-
-The three families are distinguished by the value of the real and imaginary parts of $\xi$. Writing $\xi = \xi_0 e_0 + \xi_1 e_1 + \xi_2 e_2 + \xi_3 e_3$ with $\xi_\mu = a_\mu + i b_\mu$, the trivial roots have $a_\mu = 0$ for all $\mu$, $b_0 = \pm 1$, and $b_k = 0$ for $k = 1, 2, 3$; the real quaternion roots have $b_\mu = 0$ for all $\mu$ and $a_0 = 0$; and the non-trivial roots have both a nonzero real part and a nonzero imaginary part in the vector directions.
+The non-pure zero divisors are complex multiples of idempotents, and the idempotents are classified by the roots of $-1$. Those roots are classified in *Biquaternion Roots of Minus One*, and the resulting classification of the idempotents is the subject of *Biquaternion Idempotents and Projections*; neither is restated here.
 
 ## Distribution of the Zero Divisors
 
@@ -481,11 +413,11 @@ The zero divisors of the biquaternion algebra are the nonzero elements on which 
 - The **pure zero divisors**, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero nilpotents: their square is zero, and their annihilator contains themselves. They form a complex cone of real dimension $4$.
 - The **non-pure zero divisors**, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero complex multiples of the nontrivial idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form an open dense subset of the full zero divisor cone.
 
-The idempotents are either trivial ($0$ or $e_0$) or of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$, where $\xi$ is a root of $-1$ in $\mathbb{B}$. The roots of $-1$ are classified as the trivial roots $\pm i$, the real quaternion roots $\pm \mu$ with $\mu$ a unit pure real quaternion, and the non-trivial roots $b\mu + d\nu i$ with $b^2 - d^2 = 1$ and $\mu \perp \nu$ unit pure real quaternions.
+The idempotents that appear here — trivial, Hermitian and general, with their bijection with the roots of $-1$ — are classified in *Biquaternion Idempotents and Projections*.
 
 Of the six distinguished subspaces of $\mathbb{B}$, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone of zero divisors and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, of real dimension $4$. A generic zero divisor lies in none of the six.
 
-The zero divisor set is a complex cone of complex dimension $3$ (real dimension $6$) in $\mathbb{B} \cong \mathbb{C}^4$, with the origin removed. The classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.
+The zero divisor set is a complex cone of complex dimension $3$ (real dimension $6$) in $\mathbb{B} \cong \mathbb{C}^4$, with the origin removed. The classification of the roots of $-1$ that underlies the idempotent classification is studied in *Biquaternion Roots of Minus One*, and the idempotent classification in *Biquaternion Idempotents and Projections*.
 
 ## Summary of Notation
 

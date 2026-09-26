@@ -8,7 +8,7 @@ This article carries out that work. The result is a two-term product formula, bi
 
 $$
 \boxed{\;\tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\,\tilde{F}\right),\qquad
-P_{\mathbb{M}_-}(X) = \tfrac{1}{2}\left(X - X^\dagger\right).\;}
+P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^\dagger\right).\;}
 $$
 
 The projection $P_{\mathbb{M}_-}$ is the anti-Hermitian part, and it lands in the material sector $\mathbb{M}_-$ automatically. Written out, the formula is
@@ -33,7 +33,7 @@ $$
 
 and the field strength keeps the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ of the field-strength article.
 
-The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The conjugate of a biquaternion $X = X_0e_0 + X_1e_1 + X_2e_2 + X_3e_3$ is $\bar{X} = X_0e_0 - \mathbf{X}$, its complex conjugate is $X^* = \sum_\mu X_\mu^* e_\mu$, and its Hermitian conjugate is $X^\dagger = \bar{X}^{\,*} = \sum_\mu X_\mu^* e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\mathbf{v}$ is the particle velocity, $\mathbf{u}$ is a frame (boost) velocity, and $\mathbf{B} = \mu\mathbf{H}$ is the magnetic induction.
+The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The conjugate of a biquaternion $\tilde{Q} = \tilde{Q}_0e_0 + \tilde{Q}_1e_1 + \tilde{Q}_2e_2 + \tilde{Q}_3e_3$ is $\bar{X} = \tilde{Q}_0e_0 - \mathbf{Q}$, its complex conjugate is $\tilde{Q}^* = \sum_\mu \tilde{Q}_\mu^* e_\mu$, and its Hermitian conjugate is $\tilde{Q}^\dagger = \bar{X}^{\,*} = \sum_\mu \tilde{Q}_\mu^* e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\mathbf{v}$ is the particle velocity, $\mathbf{u}$ is a frame (boost) velocity, and $\mathbf{B} = \mu\mathbf{H}$ is the magnetic induction.
 
 ## The Lorentz Four-Force in Component Form
 
@@ -266,7 +266,7 @@ and the formula becomes the single statement
 $$
 \tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(X) = \tfrac{1}{2}\left(X - X^\dagger\right).
+P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^\dagger\right).
 $$
 
 This is the cleanest form of the result. It says that the Lorentz four-force is, up to the constant $q\sqrt{\mu}$, the **projection of the product $\tilde{U}\tilde{F}$ onto the material sector** $\mathbb{M}_-$. No real part is taken, and no Clifford algebra outside $\mathbb{B}$ is needed.
@@ -556,9 +556,9 @@ The structural consequences are these. The four-force is orthogonal to the four-
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $X^\dagger = \bar{X}^{\,*}$ | Hermitian conjugate |
-| $X^*$, $\bar{X}$ | Complex conjugate, quaternion conjugate |
-| $P_{\mathbb{M}_-}(X) = \tfrac12(X - X^\dagger)$ | Projection onto $\mathbb{M}_-$ (anti-Hermitian part) |
+| $\tilde{Q}^\dagger = \bar{X}^{\,*}$ | Hermitian conjugate |
+| $\tilde{Q}^*$, $\bar{X}$ | Complex conjugate, quaternion conjugate |
+| $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q} - \tilde{Q}^\dagger)$ | Projection onto $\mathbb{M}_-$ (anti-Hermitian part) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^\dagger = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H}$ | Hermitian conjugate of the field strength |
 | $\mathbf{E}, \mathbf{H}, \mathbf{B} = \mu\mathbf{H}$ | Electric field, magnetic field, magnetic induction |

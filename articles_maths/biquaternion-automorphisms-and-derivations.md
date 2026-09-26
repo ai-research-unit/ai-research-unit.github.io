@@ -14,24 +14,12 @@ We use the conventions of the article on the biquaternion algebra throughout: th
 
 No physics is invoked and no new results are claimed. Everything below is standard structure theory of the algebra $M_2(\mathbb{C})$ and of its real form $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$.
 
-## 1. Ideal Structure and Central Simplicity
+## 1. Standing Facts: Simplicity and the Centre
+The automorphism group and the derivation algebra of $\mathbb{B}$ are governed by two structural facts, recorded here and used throughout. Both are proved elsewhere and are cited, not reproved.
 
-Before automorphisms and derivations, we record the ideal structure, because both invariants are governed by it.
+**Simplicity.** Over $\mathbb{C}$, the only two-sided ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$: the algebra is **simple**. The proof, by transport along the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, is in *Biquaternion Ideals and Peirce Decomposition* (§2), where the ideal structure of the algebra is developed; the lattice is the same over $\mathbb{R}$ and over $\mathbb{C}$, because the condition $xy,yx\in I$ is field-independent.
 
-**Definition.** A **two-sided ideal** of $\mathbb{B}$ is a vector subspace $I \subseteq \mathbb{B}$ with $xy, yx \in I$ for all $x \in \mathbb{B}$, $y \in I$. An algebra is **simple** if its only two-sided ideals are $\{0\}$ and itself.
-
-The ideal lattice of $\mathbb{B}$ is the same over $\mathbb{R}$ and over $\mathbb{C}$, because the conditions $xy, yx \in I$ are field-independent.
-
-**The ideals of $\mathbb{B}$ are only $\{0\}$ and $\mathbb{B}$.** Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, ideals correspond to ideals. The matrix algebra $M_2(\mathbb{C})$ is simple: a nonzero two-sided ideal contains a nonzero matrix, and multiplying that matrix by matrix units on the left and right produces every matrix unit, hence the whole algebra. Therefore $\mathbb{B}$ has no nonzero proper two-sided ideal.
-
-**The center.** The center of $\mathbb{B}$ is $Z(\mathbb{B}) = \mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$, a complex vector space of dimension $1$ in the $\mathbb{C}$-algebra view. In the $\mathbb{R}$-algebra view the same center is the real vector space $\mathbb{C}_{\mathbb{B}} = \mathbb{R} e_0 \oplus \mathbb{R}(i e_0)$, of real dimension $2$ and isomorphic to $\mathbb{C}$ as a real algebra.
-
-**Central simplicity, in the correct ground field.** An algebra is **central** over a field $F$ if its center equals $F \cdot 1$, and **central simple** if in addition it is simple. Therefore:
-
-- Over $\mathbb{C}$, the algebra $\mathbb{B}$ is central simple: it is simple, of dimension $4$, and its center is $\mathbb{C} \cdot e_0 = \mathbb{C}$.
-- Over $\mathbb{R}$, the algebra $\mathbb{B}$ is simple but **not central**, because its center $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ is strictly larger than $\mathbb{R} \cdot e_0$. Equivalently, $\mathbb{B}$ is an Azumaya algebra over its center $\mathbb{C}_{\mathbb{B}}$, not over $\mathbb{R}$.
-
-Stating that "$\mathbb{B}$ is central simple" without naming the field $\mathbb{C}$ would be false over $\mathbb{R}$, and the sections below respect this distinction. The algebra is simple but is **not** a division algebra, since it has zero divisors; by Wedderburn–Artin a finite-dimensional simple unital algebra over an algebraically closed field is a full matrix algebra, and here it is $M_2(\mathbb{C})$, of dimension $4 = 2^2$.
+**The centre.** The centre of $\mathbb{B}$ is $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, a complex vector space of dimension $1$, the subspace $\mathbb{C}_{\mathbb{B}}$ of *Biquaternion Algebra*. Hence $\mathbb{B}$ is **central simple over $\mathbb{C}$** — simple, of dimension $4$, with centre exactly $\mathbb{C}$ — while over $\mathbb{R}$ the same algebra is simple but **not central**, its centre $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$ being strictly larger than $\mathbb{R}e_0$. Stating that "$\mathbb{B}$ is central simple" without naming the field is false over $\mathbb{R}$, and the sections below respect the distinction.
 
 ## 2. Automorphisms over $\mathbb{C}$
 

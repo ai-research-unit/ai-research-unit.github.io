@@ -17,7 +17,7 @@ The **covering group** $SL(2,\mathbb{C})$ is simply connected. As a manifold it 
 $$
 \pi:\ SL(2,\mathbb{C})\ \longrightarrow\ SO^+(1,3),
 \qquad
-\pi(\tilde{\Lambda}):\tilde{X}\longmapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger,
+\pi(\tilde{\Lambda}):\tilde{Q}\longmapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger,
 $$
 
 is the **universal cover** of the restricted Lorentz group, and the fundamental group of that group is
@@ -54,7 +54,7 @@ B\in\mathbb{M}_+,
 B = B^\dagger .
 $$
 
-The material coordinate is $\tilde{X} = ict\,e_0 + \mathbf{x}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Manifold of the Covering Group
 
@@ -121,7 +121,7 @@ using $R^\dagger R = e_0$; the other ordering gives $\tilde{\Lambda}\tilde{\Lamb
 The conjugation map
 
 $$
-\pi(\tilde{\Lambda}):\ \tilde{X}\ \longmapsto\ \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger
+\pi(\tilde{\Lambda}):\ \tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^\dagger
 $$
 
 is a continuous surjective homomorphism from $SL(2,\mathbb{C})$ onto the restricted Lorentz group, and its kernel is
@@ -350,7 +350,7 @@ $$
 SL(2,\mathbb{C}) = \{\tilde{\Lambda} : N(\tilde{\Lambda}) = e_0\} \cong SU(2)\times\mathbb{R}^3 \simeq S^3 ,
 $$
 
-which is simply connected, with $\pi_1 = 0$ and $\pi_3 = \mathbb{Z}$. The conjugation map $\pi(\tilde{\Lambda}):\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ has kernel $\{\pm e_0\}$ and is the universal cover,
+which is simply connected, with $\pi_1 = 0$ and $\pi_3 = \mathbb{Z}$. The conjugation map $\pi(\tilde{\Lambda}):\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ has kernel $\{\pm e_0\}$ and is the universal cover,
 
 $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\},
@@ -386,7 +386,7 @@ with $\omega\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\omega\t
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (center) |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = e_0$ | Unit-norm biquaternion; Lorentz rotor |
-| $\pi(\tilde{\Lambda}):\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | Conjugation action on $\mathbb{M}_-$ |
+| $\pi(\tilde{\Lambda}):\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Conjugation action on $\mathbb{M}_-$ |
 | $\ker\pi = \{\pm e_0\}$, $\pi_1(SO^+(1,3))=\mathbb{Z}/2$ | Two-sheeted universal cover |
 | $SL(2,\mathbb{C}) = \{\tilde{\Lambda}:N(\tilde{\Lambda})=e_0\}\cong SU(2)\times\mathbb{R}^3$ | Covering group manifold |
 | $R(\theta) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf{n}}$ | Rotation rotor; $R(2\pi)=-e_0$, $R(4\pi)=e_0$ |
