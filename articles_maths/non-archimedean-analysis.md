@@ -1,0 +1,269 @@
+
+# __Non-Archimedean Analysis__
+
+## Introduction
+
+Over a field whose absolute value satisfies the strong triangle inequality, the geometry of balls is rigid: any two balls are nested or disjoint, every point of a ball is its centre, and a series converges if and only if its terms tend to zero. These facts belong to *Absolute Values, Valuations and Completions*, and this article begins where that one stops. It develops the analysis that the ultrametric geometry supports — series and their unconditional convergence, the functions that a series of rational coefficients defines, the exponential and the logarithm with their precise discs, the structure of the zeros of an analytic function, and the maximum principle that replaces the maximum modulus theorem of the complex theory. It then records, deliberately and in one place, the classical theorems that fail and the theorems that take their place, because the working habits that real analysis installs are the principal obstacle to reading the non-Archimedean theory correctly.
+
+The subject is coherent enough to be treated once, in general, for a complete non-Archimedean field. The arithmetic specialisations are the subject of other articles: one treats the fields $\mathbb{Q}_p$ and $\mathbb{C}_p$ concretely, with Mahler's theorem, the Newton polygon and the Weierstrass preparation theorem for the unit disc;supplies the measure;develops the higher-dimensional theory of the Tate algebra; anddevelops the normed and Banach theory. This article keeps to one variable and to the phenomena that are present over any complete non-Archimedean field, and it states its theorems in that generality.
+
+The prerequisites are *Absolute Values, Valuations and Completions* for the ultrametric geometry, the value group and the residue field; *Analytic Functions and Power Series* for the radius of convergence, the identity theorem, and the exponential, logarithm and binomial series; *Topological Rings and Fields* for the completion; *Local Fields* for the residue field, the uniformiser and the compactness criterion; and *Modes of Convergence* for uniform convergence and the interchange theorems. The differential equations over a non-Archimedean field lie outside this article, and the archimedean theory of the same objects is developed in the synthetic part of the corpus. No physics is invoked.
+
+Throughout, $K$ is a complete non-Archimedean field with a nontrivial absolute value $\lvert \cdot \rvert$, valuation ring $\mathcal{O} = \{x : \lvert x \rvert \leq 1\}$, maximal ideal $\mathfrak{m}$, residue field $k = \mathcal{O}/\mathfrak{m}$ of characteristic $p > 0$ and cardinality $q$, value group $\Gamma = \lvert K^\times \rvert$ and a uniformiser $\pi$ when the value group is discrete. The valuation is written $v$, normalised by $v(\pi) = 1$ when a uniformiser exists, with the absolute value normalised so that $\lvert x \rvert = q^{-v(x)}$; in this normalisation $\lvert \pi \rvert = q^{-1}$ and $\lvert p \rvert = q^{-e}$, where $e$ is the ramification index of $K$ over the prime field, so that $\lvert p \rvert = q^{-1}$ for an unramified field such as $\mathbb{Q}_p$. The prime $p$ of the residue field is the **residue characteristic**; it is the integer whose absolute value controls the radii of the elementary series, the radius of the exponential being $\lvert p \rvert^{1/(p-1)}$, as was computed in *Analytic Functions and Power Series*. When the residue characteristic is $0$ the field's absolute value is trivial on the prime field, so $\lvert n \rvert = 1$ for every integer $n$ and the exceptional phenomena below are absent; that case is mentioned only for contrast, and $p > 0$ is assumed from the second section on.
+
+## Series and the Ultrametric Estimate
+
+### Unconditional Convergence and Rearrangement
+
+**Theorem.** Let $K$ be complete and non-Archimedean and let $\sum_{n \geq 0} a_n$ be a series in $K$.
+
+**(a)** The series converges if and only if $a_n \to 0$, and then
+$$
+\Bigl\lvert \sum_{n \geq 0} a_n \Bigr\rvert \leq \max_{n \geq 0} \lvert a_n \rvert ,
+$$
+with equality whenever the maximum is attained and the terms attaining it do not cancel.
+
+**(b)** Convergence is unconditional: if $\sum_n a_n$ converges and $\sigma$ is a permutation of $\mathbb{N}$, then $\sum_n a_{\sigma(n)}$ converges to the same sum.
+
+**(c)** Grouping and bracketing do not change the sum of a convergent series, and a convergent series may be summed over any countable partition of $\mathbb{N}$ and the results added.
+
+**Proof.** (a) is the telescoping estimate $\lvert s_M - s_N \rvert = \lvert \sum_{N < n \leq M} a_n \rvert \leq \max_{N < n \leq M} \lvert a_n \rvert$ together with completeness, and the equality case is the equality case of the ultrametric inequality. (b) Given $\epsilon > 0$, only finitely many $n$ have $\lvert a_n \rvert > \epsilon$, say those in a finite set $F$; choose $N$ with $\sigma^{-1}(F) \subseteq \{1, \dots, N\}$, so that for $M > N$ the partial sum of the rearrangement and the partial sum of the original differ by terms of absolute value $\leq \epsilon$, hence by an element of absolute value $\leq \epsilon$; the two limits differ by at most $\epsilon$, and $\epsilon$ was arbitrary. (c) follows from (b), since a grouping is the sum of a permutation followed by a partition of the index set into consecutive blocks. $\square$
+
+Part (b) is the first structural difference from the Archimedean theory: there are no conditionally convergent series, so there is no alternating-series criterion to apply and no rearrangement pathology to guard against. A non-Archimedean series either converges unconditionally or not at all.
+
+**Corollary (comparison with the Archimedean case).** The series $\sum_n (-1)^n/n$ converges over $\mathbb{R}$ and its value depends on the order of summation; the series $\sum_n 1/n$ diverges over $\mathbb{R}$ although $1/n \to 0$. Over a non-Archimedean field the first series converges unconditionally to the same sum in every order, and the second diverges because its terms do not tend to $0$, the harmonic terms having absolute value $\lvert 1/n \rvert$, which does not tend to $0$ unless the residue characteristic is $0$.
+
+### Convergence of Series of Functions
+
+**Definition.** Let $f_n : X \to K$. The series $\sum_n f_n$ **converges uniformly** on $X$ if its partial sums do so, and **converges normally** if $\sum_n \lVert f_n \rVert_\infty < \infty$, in the notation of *Modes of Convergence*.
+
+**Theorem (the non-Archimedean Weierstrass test).** Let $K$ be complete and non-Archimedean and let $f_n : X \to K$ satisfy $f_n \to 0$ uniformly on $X$. Then $\sum_n f_n$ converges uniformly on $X$, its sum satisfies $\lVert \sum_n f_n \rVert_\infty \leq \sup_n \lVert f_n \rVert_\infty$, and the sum is continuous if the $f_n$ are continuous.
+
+**Proof.** The uniform Cauchy condition holds because $\lVert \sum_{n=p}^{q} f_n \rVert_\infty \leq \max_{p \leq n \leq q} \lVert f_n \rVert_\infty$ and the last supremum tends to $0$; completeness of the space of bounded functions gives the limit, and continuity is preserved by uniform convergence. $\square$
+
+The hypothesis is strictly weaker than the Archimedean one: over $\mathbb{R}$ the terms must be summable in modulus, while here it suffices that they tend to zero uniformly. Consequently the classical distinction between normal and uniform convergence disappears, and a series of continuous functions whose terms tend to zero uniformly has a continuous sum with no integrability hypothesis anywhere.
+
+**Example (a series that is uniform but not normal).** On $X = \mathcal{O}$ the series $\sum_n \pi^n x^n$ has $\lVert \pi^n x^n \rVert_\infty = q^{-n}$, which is summable, so this example is normal. On the other hand, put $a_0 = 1$ and $a_n = \pi^{\lfloor \log_q n\rfloor}$ for $n \geq 1$; then $\lvert a_n \rvert = q^{-\lfloor\log_q n\rfloor} \to 0$, so the series $\sum_n a_n x^n$ converges uniformly on $\mathcal{O}$ by the theorem, while $\sum_n \lVert a_n x^n \rVert_\infty = \sum_n \lvert a_n\rvert$ grouped into the blocks $q^j \leq n < q^{j+1}$ gives $(q^{j+1}-q^j)q^{-j} = q-1$ from each block and hence $+\infty$: the convergence is uniform and not normal, and the Archimedean test would not apply.
+
+## The Value Group and the Residue Field
+
+### Leading Terms and the Reduction
+
+**Definition.** Let $f = \sum_{n \geq 0} a_n x^n$ converge on $\overline{B}(0,1)$, so that $a_n \to 0$ by the convergence criterion. The **Gauss norm** of $f$ is
+$$
+\lVert f \rVert_G = \max_{n \geq 0} \lvert a_n \rvert ,
+$$
+the maximum existing because $a_n \to 0$. If in addition $a_n \in \mathcal{O}$ for all $n$, the **reduction** of $f$ is the formal power series $\tilde{f} = \sum_n \tilde{a}_n x^n \in k[[x]]$, with $\tilde{a}_n$ the image of $a_n$ in $k$.
+
+**Proposition.** The Gauss norm is a multiplicative norm on the ring of series convergent on $\overline{B}(0,1)$, and the reduction is a ring homomorphism onto its image, compatible with the Gauss norm in the sense that $\deg \tilde{f}$ is the largest index $n$ with $\lvert a_n \rvert = \lVert f \rVert_G$ when the residue field is infinite, and is the corresponding largest index modulo the possibility of several coefficients of maximal absolute value when the residue field is finite.
+
+**Proof.** Multiplicativity is the equality case of the ultrametric inequality applied to the Cauchy product: the coefficient of $x^n$ in a product is a sum, its absolute value is the maximum of the absolute values of the summands provided there is a unique summand of maximal absolute value, and if there are several the residue field records the cancellation. The remaining statements are the definitions. $\square$
+
+The reduction is the device that makes the arithmetic of the unit disc visible: a series with integral coefficients reduces to a formal power series over $k$, and properties of that formal series — its degree, its factorisation, its roots in the algebraic closure of $k$ — control the analytic function. The precise form of this control is the Weierstrass preparation theorem, stated for the unit disc and for the affinoid algebras of several variables.
+
+### Radii Controlled by the Residue Characteristic
+
+The absolute values of the integers, and hence the radii of the elementary series with integral coefficients, are determined by the residue characteristic alone.
+
+**Proposition.** Let $n$ be a positive integer with base-$p$ digits $n = \sum_i n_i p^i$.
+
+**(a)** $\lvert n \rvert = \lvert p \rvert^{v_p(n)}$, where $v_p(n) = \max\{i : p^i \mid n\}$; in the discretely valued case with $v(\pi) = 1$ and residue field of cardinality $q$ one has $\lvert p \rvert = q^{-e}$, with $e$ the ramification index, so that $\lvert p \rvert = q^{-1}$ when the field is unramified over the prime field.
+
+**(b)** $\lvert n! \rvert = \lvert p \rvert^{(n - s_p(n))/(p-1)}$ with $s_p(n) = \sum_i n_i$; consequently $\lvert n! \rvert \leq \lvert n \rvert$ for every $n$, with equality exactly for $n \leq p$, and $n! \to 0$ and $\lvert 1/n! \rvert^{1/n} \to \lvert p \rvert^{-1/(p-1)}$.
+
+**(c)** For every $\alpha \in \mathcal{O}$ and every $n$ one has $\lvert \binom{\alpha}{n} \rvert \leq 1$, and the coefficients tend to $0$ exactly when $\alpha \in \mathbb{Z}_{\geq 0}$; for $\alpha \notin \mathbb{Z}_{\geq 0}$ one has $\lvert \binom{\alpha}{p^k} \rvert \geq 1$ for every $k$.
+
+**Proof.** (a) and (b) are Legendre's formula, together with the decomposition $n! = n\,(n-1)!$ for the comparison with $\lvert n \rvert$; the limit in (b) follows because the digit sum is $O(\log n)$. (c) is the integrality of the binomial coefficients for parameters in the valuation ring of a non-Archimedean field, the non-decay being the Legendre count of the binomial series of *Analytic Functions and Power Series*. $\square$
+
+The proposition explains the appearance of $p$ in every convergence radius of the subject: the exponential converges exactly as far as $n!$ permits, the logarithm as far as $n$ permits, and the binomial series as far as the binomial coefficients permit, and all three thresholds are functions of the residue characteristic. It also shows that the analysis over a field whose absolute value is trivial on the prime field is degenerate in the opposite direction: there $\lvert n! \rvert = 1$ for every $n$ and the exponential has radius $1$.
+
+## The Exponential, the Logarithm and the Artin–Hasse Exponential
+
+### The Logarithm of a Principal Unit
+
+Let $K$ be a non-Archimedean local field with uniformiser $\pi$, residue field of cardinality $q$ and residue characteristic $p$, and normalise the absolute value by $\lvert \pi \rvert = q^{-1}$. Then $\lvert p \rvert = q^{-e}$ with $e$ the ramification index, so that $\lvert p \rvert = q^{-1}$ for an unramified field, and $\rho_{\exp} = \lvert p \rvert^{1/(p-1)}$. Recall from *Analytic Functions and Power Series* that $\exp$ converges exactly on $B(0, \rho_{\exp})$ and $\log$ on $B(0,1) = \mathfrak{m}$.
+
+**Theorem (the exponential and the logarithm of principal units).**
+
+**(a)** On $B(0,\rho_{\exp})$ the two series are mutually inverse: $\exp\log(1+x) = 1+x$ and $\log\exp x = x$ there, and $\exp$ is a continuous isomorphism of topological groups from $(B(0,\rho_{\exp}),+)$ onto $(1 + B(0,\rho_{\exp}),\times)$ with inverse $\log$.
+
+**(b)** If $p$ is odd and $\rho_{\exp} > \lvert \pi \rvert$, which holds for every unramified field and in particular for $\mathbb{Q}_p$, the disc $B(0,\rho_{\exp})$ contains $\mathfrak{m}$ and the maps
+$$
+\exp : (\mathfrak{m}, +) \longrightarrow (1 + \mathfrak{m}, \times), \qquad \log : (1+\mathfrak{m}, \times) \longrightarrow (\mathfrak{m}, +),
+$$
+are mutually inverse isomorphisms of topological groups.
+
+**(c)** If $p = 2$ the same statement holds with $\mathfrak{m}$ replaced by $4\mathcal{O}$: $\exp$ and $\log$ are mutually inverse isomorphisms between $(4\mathcal{O},+)$ and $(1+4\mathcal{O},\times)$.
+
+**(d)** In all cases $\log$ is a continuous homomorphism from the multiplicative group $1+\mathfrak{m}$ onto an open additive subgroup of $\mathfrak{m}$, and $\exp\bigl(\tfrac{1}{n}\log(1+u)\bigr)$ defines the interpolated power $(1+u)^{1/n}$ whenever $\log(1+u)$ lies in the disc of convergence of $\exp$.
+
+**Proof.** (a) The identities $\exp\log(1+x) = 1+x$ and $\log\exp x = x$ of *Analytic Functions and Power Series* hold where both sides converge; for $\lvert x \rvert < \rho_{\exp}$ one has $\lvert \log(1+x) \rvert = \lvert x \rvert$ and $\lvert \exp x - 1 \rvert = \lvert x \rvert$, so the disc is stable under the substitutions and the two maps are inverse on it. Continuity is the continuity of a convergent power series, and the homomorphism property is $\exp(x+y) = \exp x \exp y$ and $\log(uv) = \log u + \log v$ on the respective discs. (b) Here $\rho_{\exp} = q^{-e/(p-1)}$ exceeds $\lvert \pi \rvert = q^{-1}$ exactly when $e < p-1$, which holds when $e = 1$ and $p > 2$, so $\mathfrak{m} \subset B(0,\rho_{\exp})$ and (a) applies on $\mathfrak{m}$. (c) For $p = 2$ and $e = 1$ one has $\rho_{\exp} = \lvert 2 \rvert = q^{-1} = 1/2$ for $q = 2$, so the disc of convergence of $\exp$ is the ball $4\mathcal{O}$; the same argument applies there. On the larger ball $2\mathcal{O}$ the exponential does not converge, since the terms $x^{2^k}/(2^k)!$ at $\lvert x \rvert = 1/2$ have absolute value $1/2$ and do not tend to $0$. (d) is the construction of the interpolated power and the homomorphism property. $\square$
+
+The exceptional position of $p = 2$ is not an artefact: $\log$ and $\exp$ are inverse only on the disc where both converge, and for $p = 2$ that disc is strictly smaller than the maximal ideal. The same is true of a ramified field: the pair is an isomorphism on the maximal ideal only when the ramification index satisfies $e < p-1$, and in general the mutually inverse pair is defined on the disc $B(0,\rho_{\exp})$ of (a).
+
+### Teichmüller Representatives
+
+**Theorem.** Let $K$ be a non-Archimedean local field with residue field $k$ of cardinality $q$ and residue characteristic $p$. The group $\mu_{q-1}$ of $(q-1)$-st roots of unity in $\mathcal{O}$ exists, its reduction $\mu_{q-1} \to k^\times$ is an isomorphism, and the **Teichmüller representative** $\omega(u)$ of $u \in k^\times$ is the unique lift of $u$ in $\mu_{q-1}$.
+
+**Proposition (decomposition of the units).** With the notation above, $\mathcal{O}^\times = \mu_{q-1} \times U^1$ as topological groups, where $U^1 = 1 + \mathfrak{m}$ is the group of principal units, and $U^1$ is a pro-$p$ group. When $K$ is a local field of characteristic $0$ with residue characteristic $p$ and $p$ is odd, $U^1 \cong \mathfrak{m}$ additively by $\log$; when $p = 2$, $U^1$ contains $1 + 4\mathcal{O}$ as an open subgroup isomorphic to $4\mathcal{O}$ and $U^1/(1+4\mathcal{O})$ is a finite $2$-group.
+
+**Proof.** By Hensel's lemma applied to $x^{q-1} - 1$, the reduction $\mathcal{O}^\times \to k^\times$ has a unique splitting, which is the Teichmüller lift; the image of the splitting is $\mu_{q-1}$ and the splitting exhibits $\mathcal{O}^\times$ as the direct product $\mu_{q-1}\times U^1$. The principal units are an inverse limit of finite $p$-groups $U^1/U^n$ and hence pro-$p$, and the isomorphism with $\mathfrak{m}$ is the logarithm of the preceding theorem. $\square$
+
+The decomposition is the structural reason that the multiplicative group of a local field is as simple as it is: a torsion part that is cyclic of order $q-1$ modulo the $p$-power torsion, and a pro-$p$ part that the logarithm linearises. The finer statements for $\mathbb{Q}_p$, with the Teichmüller representatives written down explicitly, belong.
+
+### The Artin–Hasse Exponential
+
+The exponential of the preceding theorem converges only on a proper disc. There is a second exponential, with integral coefficients, that converges on the whole open unit disc and coincides with the ordinary exponential in degrees below $p$.
+
+**Definition.** The **Artin–Hasse exponential** is
+$$
+E_p(x) = \prod_{\substack{n \geq 1 \\ p \nmid n}} (1 - x^n)^{-\mu(n)/n} ,
+$$
+the product over the positive integers not divisible by $p$, with $\mu$ the Möbius function.
+
+**Theorem.** The product converges on $B(0,1)$, its coefficients are rational with denominators prime to $p$, so that $E_p \in \mathbb{Z}_{(p)}[[x]]$ has integral coefficients after the identification $\mathbb{Z}_{(p)} \subset \mathcal{O}$, and on the disc $B(0, \rho_{\exp})$ of convergence of the exponential,
+$$
+E_p(x) = \exp\Bigl( x + \frac{x^p}{p} + \frac{x^{p^2}}{p^2} + \cdots \Bigr) ,
+$$
+the series in the argument converging on $B(0,1)$ and its exponential on $B(0,\rho_{\exp})$. In particular $E_p(x) \equiv \exp x \pmod{x^{p}}$: the two series agree in degrees below $p$, while $E_p$, unlike $\exp$, has integral coefficients.
+
+**Proof sketch.** The Möbius inversion identity $\sum_{n \mid m}\mu(n) = 0$ for $m > 1$, applied over the divisors coprime to $p$, gives the stated form of the logarithm: the coefficient of $x^m$ in $\log E_p$ is $\frac1m \sum_{n \mid m,\, (n,p)=1}\mu(n)$, which vanishes unless $m$ is a power of $p$. The denominators are prime to $p$ because the index $n$ is, so the logarithm series has integral coefficients up to the factor $1/n$, which is a unit, and the passage back by the exponential preserves integrality; hence $E_p \in \mathbb{Z}_{(p)}[[x]]$. Convergence on $B(0,1)$ follows because for $\lvert x \rvert < 1$ each factor is $1 + O(\lvert x\rvert^n)$, so the factors tend to $1$ and the product converges. The agreement in degrees below $p$ is the comparison of $\log E_p = \sum_k x^{p^k}/p^k$ with $\log\exp x = x$, the two differing first in degree $p$. $\square$
+
+The Artin–Hasse exponential is the standard integral replacement for the exponential and is the reason the theory of the unit group does not stop at the disc of convergence of $\exp$. The proof of the product formula uses the Möbius function of Part I and the logarithm of the preceding theorem; the full theory, with the application to the structure of the principal units and to the formal groups of Part I, is arithmetic and is not needed here beyond the convergence statement.
+
+## Analytic Functions and Their Zeros
+
+### Isolation of Zeros
+
+**Theorem.** Let $K$ be complete, non-Archimedean and of characteristic $0$, let $a \in K$ and let $f$ be analytic on a neighbourhood of $a$ with $f(a) = 0$ and $f$ not identically zero. Then there is $m \geq 1$ and a function $g$, analytic on a neighbourhood of $a$ with $g(a) \neq 0$, such that $f(x) = (x-a)^m g(x)$. Consequently $f$ has no zero other than $a$ in some neighbourhood of $a$.
+
+**Proof.** Expand $f$ in a power series about $a$; since $f(a) = 0$ the expansion is $\sum_{n \geq 1} c_n (x-a)^n$, and since $f$ is not identically zero some $c_n \neq 0$; let $m$ be the least such index. Then $f(x) = (x-a)^m \sum_{k \geq 0} c_{m+k}(x-a)^k$ and the second factor is a power series with nonzero constant term, hence analytic and nonzero at $a$, hence nonzero on a neighbourhood of $a$ by continuity. The division by $(x-a)^m$ is legitimate because $x - a$ is invertible for $x \neq a$ and the algebraic identity is checked coefficient by coefficient. $\square$
+
+**Corollary (no accumulation of zeros).** Let $f$ be analytic and not identically zero on an open set $U$, and let $(a_n)$ be a sequence of distinct zeros of $f$ in $U$. Then $(a_n)$ has no limit point in $U$: a sequence of distinct zeros of a nonzero analytic function on $U$ converges to no point of $U$.
+
+**Proof.** If $a_n \to a \in U$ with $f(a_n) = 0$ and the $a_n$ distinct, then $f(a) = 0$ by continuity, and the theorem applies at $a$: on a neighbourhood of $a$ the only zero is $a$, contradicting the existence of distinct zeros $a_n \to a$. $\square$
+
+The corollary is the non-Archimedean form of the uniqueness of analytic continuation, and it is proved from continuity and the local factorisation rather than from the identity theorem of *Analytic Functions and Power Series*, which is the statement that vanishing on an open set forces vanishing identically. The two are complementary: zeros cannot accumulate, and a function that vanishes on open set is zero.
+
+### Finiteness on the Unit Disc
+
+**Theorem.** Let $K$ be a non-Archimedean local field, so that $\mathcal{O}$ is compact, and let $f$ be analytic and not identically zero on a neighbourhood of $\mathcal{O}$. Then $f$ has finitely many zeros in $\mathcal{O}$.
+
+**Proof.** The zero set $Z = f^{-1}(0) \cap \mathcal{O}$ is closed, being the preimage of a closed set under a continuous map. Each point of $Z$ is isolated in $Z$ by the local factorisation, so $Z$ is a closed discrete subset of the compact space $\mathcal{O}$, and a closed discrete subset of a compact space is finite. $\square$
+
+The theorem explains a structural difference from the Archimedean case: the closed unit disc of a local field is compact, and the non-Archimedean topology is totally disconnected, so the compactness argument that usually gives existence without uniqueness instead gives finiteness of the zero set. Over $\mathbb{C}$ an analytic function bounded on the unit disc can have infinitely many zeros; over $\mathbb{Z}_p$ it cannot. For a general complete non-Archimedean field the unit ball need not be compact, and finiteness holds only on those discs that are compact, which by *Local Fields* are exactly the discs of a discretely valued field with finite residue field.
+
+### The Maximum Principle
+
+**Theorem (maximum modulus principle).** Let $K$ be a complete non-Archimedean field with infinite residue field, let $f = \sum_n a_n x^n$ converge on $\overline{B}(0,r)$ and let $\lVert f \rVert_r = \sup_{\lvert x \rvert \leq r} \lvert f(x) \rvert$. Then
+$$
+\lVert f \rVert_r = \max_{n \geq 0} \lvert a_n \rvert r^n ,
+$$
+and the supremum on the left is attained: there is $x_0$ with $\lvert x_0 \rvert \leq r$ and $\lvert f(x_0) \rvert = \lVert f \rVert_r$.
+
+**Proof sketch.** The inequality $\lVert f \rVert_r \leq \max_n \lvert a_n \rvert r^n$ is the ultrametric inequality and holds always. For the reverse inequality put $s = \max_n \lvert a_n \rvert r^n$ and let $F$ be the finite set of indices $n$ with $\lvert a_n \rvert r^n = s$, with largest element $N$. The polynomial $P(\xi) = \sum_{n \in F} \tilde{a}_n \xi^n$ over the residue field is nonzero, since $\tilde{a}_N \neq 0$, so it has at most $\deg P$ roots; an infinite residue field therefore contains a $\xi$ with $P(\xi) \neq 0$. At a point $x_0$ with $\lvert x_0 \rvert = r$ and reduction $\xi$ the terms of index in $F$ all have absolute value $s$ and their sum is $a_N x_0^N P(\xi)/\tilde{a}_N$, of absolute value $s$, while every term of index outside $F$ is strictly smaller; the equality case of the ultrametric inequality gives $\lvert f(x_0) \rvert = s$. $\square$
+
+The maximum principle is the replacement for the maximum modulus theorem of complex analysis: no holomorphy is needed, and the maximum is read from the coefficients. The hypothesis on the residue field is essential and not an artefact of the proof: over $\mathbb{Q}_2$ the series $x + x^2$ has Gauss norm $1$ at the radius $1$ but supremum $\tfrac12$ there, the two maximal coefficients cancelling modulo the maximal ideal. What the hypothesis secures is that the finitely many coefficients of maximal absolute value can be prevented from cancelling; over an extension with infinite residue field the identity holds, the Gauss norm being unchanged. The affinoid version, with the spectral seminorm in place of $\lVert \cdot \rVert_r$, is not covered here.
+
+## What Fails, and What Replaces It
+
+### The Intermediate Value Theorem
+
+**Proposition.** A non-Archimedean field is totally disconnected, and the only connected subsets of $K$ are the empty set and the points; consequently the intermediate value theorem has no content: a continuous function on a ball of $K$ is constant on each ball of the neighbourhood basis and the image of a "connected" set is a point.
+
+**Proof.** Every ball is open and closed, by the ultrametric nesting property: if $\lvert x - y \rvert < r$ then $B(y,r) = B(x,r)$, so a ball is a union of balls and its complement is a union of balls; hence a set containing more than one point can be partitioned into two nonempty open pieces. $\square$
+
+The arithmetic statement that behaves like an intermediate value theorem is Hensel's lemma, which is proved in *The $p$-adic Numbers*: a polynomial $f \in \mathcal{O}[x]$ with a simple root in the residue field has a root in $\mathcal{O}$. Hensel's lemma is not a topological statement about continuous functions but an algebraic lifting statement; it is the correct substitute, and the reader should not expect a continuous-function formulation.
+
+### Rolle and the Mean Value Theorem
+
+**Proposition.** The mean value theorem and Rolle's theorem fail over a non-Archimedean field. Over $\mathbb{Q}_p$ the polynomial $f(x) = x^p - x$ satisfies $f(0) = f(1) = 0$, while $f'(x) = px^{p-1} - 1$ has constant absolute value $1$ at every $x \in \mathbb{Z}_p$ and in particular has no zero in $\mathbb{Z}_p$.
+
+**Proof.** $f(0) = f(1) = 0$ is immediate from Fermat's little theorem read modulo $p$. Every $x \in \mathbb{Z}_p$ satisfies $\lvert px^{p-1} \rvert \leq \lvert p \rvert < 1$, so $\lvert f'(x) \rvert = 1$ by the equality case of the ultrametric inequality, and $f'$ never vanishes. Rolle's theorem would require a critical point strictly between $0$ and $1$, but there is no order and the equation $f'(x) = 0$ has no solution. $\square$
+
+The failure is not a defect of the statements but of the order: the mean value theorem is proved with the order of $\mathbb{R}$ through the extreme value theorem, and no order is available here.
+
+### Zero Derivative Without Constancy
+
+**Theorem (standard).** Over a non-Archimedean field of characteristic $0$, there exists a differentiable function $f : \mathbb{Z}_p \to \mathbb{Q}_p$ with $f'(x) = 0$ for every $x \in \mathbb{Z}_p$ and $f$ not constant.
+
+**Proof sketch (standard, after Schikhof).** Write $\mathbb{Z}_p$ as a disjoint union of the $p^n$ balls of radius $p^{-n}$ and define $f$ by recursion on $n$: on each ball of radius $p^{-n}$ choose a value that is congruent to the value already chosen on the containing ball of radius $p^{-(n-1)}$ modulo $p^n$, but nonconstant; the values are chosen so that the difference quotients between distinct points of a ball of radius $p^{-n}$ lie in $p^{n}\mathcal{O}$, which makes the derivative zero everywhere, while the values at $0$ and $1$ differ by a unit. The construction uses the clopen decomposition of $\mathbb{Z}_p$ and the completeness of $\mathbb{Q}_p$. $\square$
+
+The function is the non-Archimedean analogue of a nonconstant function with zero derivative; in the Archimedean theory such a function does not exist, and the proof of that fact uses the mean value theorem. The construction shows that differentiability over a non-Archimedean field constrains the function much less than over $\mathbb{R}$ or $\mathbb{C}$, and it is the reason that the theory of analytic functions is formulated with power series rather than with differentiability.
+
+### Taylor Series That Do Not Represent
+
+**Theorem (standard).** Over a non-Archimedean field there exist functions $f : \mathbb{Z}_p \to \mathbb{Q}_p$ that are $C^\infty$ in the sense that $f^{(n)}$ exists for every $n$, and whose Taylor series at a point has radius of convergence $0$. There also exist $C^\infty$ functions whose Taylor series at a point has positive radius and converges to a function different from $f$ on every neighbourhood of the point. Consequently a $C^\infty$ function need not be analytic, and the Taylor map is neither injective nor surjective from the ring of $C^\infty$ functions to the ring of power series.
+
+**Proof sketch (standard).** The $C^\infty$ functions on $\mathbb{Z}_p$ form a ring $\mathcal{E}$ with a complete norm, and the analytic functions form a proper closed subring; separation of the two is achieved by a diagonal construction over the balls of radius $p^{-n}$, as in the preceding theorem. The failure of injectivity is the preceding example: a nonzero function with all derivatives vanishing has Taylor series $0$. $\square$
+
+The replacement for the classical theory is the characterisation of analytic functions among the $C^\infty$ ones: a $C^\infty$ function is analytic exactly when its Taylor series converges to it on a neighbourhood of each point, uniformly on compacta. This is the theorem that makes the ring of analytic functions the right object and is one of the structural results of the ultrametric calculus.
+
+### The Extent of the Analogy
+
+The following table collects the contrasts. It is a statement about the two theories and not a theorem to be proved, and each row is established in the preceding sections or in the article cited.
+
+| Notion | Archimedean case | Non-Archimedean case |
+|---|---|---|
+| Convergence of $\sum a_n$ | absolute or conditional | iff $a_n \to 0$; unconditional |
+| Rearrangement | sum may change | sum invariant |
+| Connectedness | intervals are connected | every ball is open and closed |
+| Intermediate value | yes for continuous functions | vacuous; Hensel's lemma instead |
+| Mean value theorem | yes | fails |
+| $f' = 0 \Rightarrow f$ constant | yes | fails (standard example) |
+| $C^\infty \Rightarrow$ analytic | no, a smooth bump is not analytic | no, and a smooth function may have Taylor series of radius $0$ |
+| Zeros of an analytic function | isolated in the domain | isolated, and finitely many on a compact disc |
+| Maximum modulus | needs holomorphy | from the ultrametric inequality |
+| Unit ball compact | no | iff the valuation is discrete and the residue field finite |
+| Local compactness | $\mathbb{R}$, $\mathbb{C}$ yes | local field yes, $\mathbb{C}_p$ no |
+
+The last two rows are the ones that govern how far the theory can be pushed: $\mathbb{C}_p$ is complete and algebraically closed but not locally compact, so the compactness arguments used for $\mathbb{Q}_p$ must be replaced by arguments on the affinoid pieces, and the compactness of the unit ball is a property of the value group and the residue field together rather than of the characteristic or of the algebraicity of the field.
+
+## Summary
+
+Non-Archimedean analysis is the calculus of a complete field whose absolute value satisfies the strong triangle inequality. A series converges if and only if its terms tend to zero, and then unconditionally; a series of functions converges uniformly as soon as its terms tend to zero uniformly, so the Archimedean distinction between normal and uniform convergence disappears. The reduction of an integral series modulo the maximal ideal is a ring homomorphism to a formal power series over the residue field, and the size of the elementary series is governed by the residue characteristic through Legendre's formula: the exponential converges on the disc of radius $\lvert p \rvert^{1/(p-1)}$ and no further, the logarithm on the maximal ideal, and the binomial series on the open unit disc for parameters in the valuation ring, its coefficients being bounded by $1$ but not decaying.
+
+On the discs where they both converge, the exponential and the logarithm are mutually inverse isomorphisms between the additive group of the maximal ideal and the group of principal units, with the exceptional case $p = 2$ requiring the disc $4\mathcal{O}$ and a ramified field requiring the disc $\lvert p \rvert^{1/(p-1)}$ in place of the maximal ideal; the units of the valuation ring split as the Teichmüller roots of unity times the principal units, and the Artin–Hasse exponential supplies an integral exponential on the whole open unit disc, coinciding with the ordinary exponential in degrees below $p$. Analytic functions have isolated zeros, and on the compact unit disc of a local field a nonzero analytic function has finitely many zeros; the maximum modulus of an analytic function on a disc is attained and equals the largest term of its expansion, over a field whose residue field is infinite.
+
+The classical theorems that fail are the intermediate value theorem, whose hypotheses are vacuous because the field is totally disconnected, the mean value theorem and Rolle's theorem, which use the order, the implication from vanishing derivative to constancy, which is false by an explicit clopen decomposition, and the implication from smoothness to analyticity, which fails because a smooth function may have a Taylor series of radius zero. The replacements are Hensel's lemma, the maximum principle, the characterisation of analytic functions by the convergence of their Taylor series, and the Weierstrass preparation theorem, which is stated for the unit disc and for affinoid algebr.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $K$ | Complete non-Archimedean field with nontrivial absolute value |
+| $\lvert \cdot \rvert$, $v$ | Absolute value and valuation, $\lvert x \rvert = q^{-v(x)}$ |
+| $\mathcal{O}$, $\mathfrak{m}$, $k$ | Valuation ring, maximal ideal, residue field |
+| $q = \lvert k \rvert$ | Cardinality of the residue field |
+| $\Gamma = \lvert K^\times \rvert$ | Value group |
+| $\pi$ | Uniformiser, when the value group is discrete |
+| $p$ | Residue characteristic |
+| $U^1 = 1 + \mathfrak{m}$ | Principal units |
+| $U^n = 1 + \mathfrak{m}^n$ | Higher principal units |
+| $\mu_{q-1}$ | Teichmüller roots of unity |
+| $\omega(u)$ | Teichmüller representative of $u \in k^\times$ |
+| $\rho_{\exp}$ | Radius of convergence of $\exp$, $\lvert p \rvert^{1/(p-1)}$ |
+| $\lVert f \rVert_G$ | Gauss norm $\max_n \lvert a_n \rvert$ |
+| $\lVert f \rVert_r$ | Supremum of $\lvert f \rvert$ on $\overline{B}(0,r)$ |
+| $\tilde{f}$ | Reduction of an integral series to $k[[x]]$ |
+| $E_p(x)$ | Artin–Hasse exponential |
+| $\mu(n)$ | Möbius function |
+| $B(0,r)$, $\overline{B}(0,r)$ | Open and closed discs |
+| $f^{(n)}$, $C^\infty$ | Higher derivatives, smoothness in the ultrametric sense |
+| $\rightrightarrows$ | Uniform convergence |
+| $\sum_n a_n$ | Series, convergent iff $a_n \to 0$ |
+
+
+
+
+
+## Further Reading
+
+- Wim H. Schikhof, *Ultrametric Calculus* (Cambridge University Press, 1984), for the calculus of continuous and differentiable functions over a non-Archimedean field and for the examples of this article.
+- Alain M. Robert, *A Course in $p$-adic Analysis* (Springer, 2000), for series, the exponential, the logarithm and the structure of the unit group.
+- Neal Koblitz, *$p$-adic Numbers, $p$-adic Analysis, and Zeta-Functions*, 2nd ed. (Springer, 1984), for the elementary analysis of $\mathbb{Q}_p$ with worked computations.
+- Jean-Pierre Serre, *Local Fields* (Springer, 1979), for the principal units, the Teichmüller representatives and the decomposition of $\mathcal{O}^\times$.
+- Paulo Ribenboim, *The Theory of Classical Valuations* (Springer, 1999), for the value group, the residue field and the convergence criteria.
+- Siegfried Bosch, *Lectures on Formal and Rigid Analytic Geometry* (Springer, 2014), for the maximum principle and the passage to the affinoid theory.
+- John Tate, *Rigid Analytic Spaces* (Inventiones Mathematicae 12, 1971), for the maximum modulus principle in the rigid setting.
+- Bernard Dwork, Giovanni Gerotto and Francis J. Sullivan, *An Introduction to $G$-Functions* (Princeton University Press, 1994), for the Artin–Hasse exponential and the integral convergence arguments.

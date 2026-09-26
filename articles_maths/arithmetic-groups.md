@@ -1,0 +1,222 @@
+
+# __Arithmetic Groups__
+
+## Introduction
+
+An **arithmetic group** is a group of integer matrices, or more precisely the group of integral points of a linear algebraic group defined over a number field; a **lattice** is a discrete subgroup of finite covolume. The Borel–Harish-Chandra theorem identifies the two in one direction: every arithmetic group is a lattice, and this is the principal source of lattices in semisimple Lie groups. The arithmeticity theorem of Margulis gives the converse in the higher-rank case: every lattice in a semisimple Lie group of real rank at least two, with trivial centre and no compact factors, is arithmetic up to commensurability. Together these two theorems are the reason the theory of lattices in higher-rank groups is a chapter of arithmetic: the lattices are the integral points of $\mathbb{Q}$-groups, their quotients are the locally symmetric spaces in which the number theory of the period theory lives, and their congruence quotients are the finite groups out of which expander families are built.
+
+The article develops the definition of an algebraic group over a number field and of its integral and $S$-integral points, the theorem of Borel and Harish-Chandra and its cocompactness criterion, reduction theory at the level of Siegel sets and cusps, the congruence subgroup property and its failure for $SL_2$, the arithmeticity and superrigidity theorems of Margulis, and the applications to expanders and rigidity. The group-theoretic and number-theoretic input is that of Part I: the number fields, rings of integers, ideal class groups and Dirichlet unit theorem of *Algebraic Number Theory*, and the places and product formula of *Global Fields*. The lattice-theoretic input is that of the companion article *Lattices in Lie Groups*, immediately above this one, where the covolume, unimodularity and the rigidity theorems are developed; the class of arithmetic groups is defined here and the theory of the buildings attached to a semisimple group is the subject of and with this one.
+
+The **linear algebraic group over a field** $k$ is that of *Linear Algebraic Groups*, above this article in the menu, where the definition by polynomial equations, the Zariski topology and the structure theory are given. One concept is defined in line because nothing above introduces it: the **completion** $k_v$ of $k$ at a place $v$, which is the completion of $k$ for the distance induced by the absolute value of $v$; the completions are the real and complex numbers at the archimedean places and the $p$-adic fields at the non-archimedean ones. It is the completion of a metric space, which is the one structure this Part adds.
+
+The boundary with Part III is the one fixed for this block. What is developed here is the arithmetic structure: integral points, lattices, reduction theory, the congruence subgroup property and the arithmeticity theorems. What is deferred is the **analytic, ergodic and automorphic** theory: the spectral theory of automorphic forms, the trace formula, the measure-theoretic counting of rational points and the equidistribution of Hecke points all belong to *Analysis on Groups*, where the measure and the limit are available. The adelic formalism is not covered here. No physics is invoked.
+
+## Algebraic Groups and their Integral Points
+
+### Linear Algebraic Groups
+
+**Definition.** Let $k$ be a field. A **linear algebraic group over $k$** is a subgroup $\mathbf{G} \leq GL_n$ of the general linear group, considered as an algebraic variety, defined as the set of matrices $g$ with $f(g) = 0$ for a family of polynomials $f$ with coefficients in $k$; the group operations are the restrictions of the matrix operations and are polynomial. A **morphism** of algebraic groups over $k$ is a group homomorphism that is polynomial with coefficients in $k$. The group $\mathbf{G}(k)$ of **$k$-points** is the set of solutions in $GL_n(k)$. A **reductive** group is one with no nontrivial connected unipotent normal subgroup, and a **semisimple** group is a reductive group with finite centre in the algebraic sense. A **$k$-parabolic subgroup** is a closed subgroup $\mathbf{P}$ such that the quotient variety $\mathbf{G}/\mathbf{P}$ is projective over $k$; a **$k$-split torus** is a torus isomorphic over $k$ to a product of copies of the multiplicative group.
+
+**Example.** $GL_n$, $SL_n$, $Sp_{2n}$ and $O(q)$ for a quadratic form $q$ are linear algebraic groups defined over any field containing the coefficients of the defining equations; over $\mathbb{Q}$ the groups with integral entries give the arithmetic examples below. The classical groups themselves are the standard examples, and the quadratic forms are those of the elementary theory; the orthogonal and unitary groups defined by a form are the classical families.
+
+**Definition (number-theoretic data).** Let $k$ be a number field, let $\mathcal{O}_k$ be its ring of integers, and let $S$ be a finite set of **places** of $k$ containing all the archimedean ones. Write $k_v$ for the completion of $k$ at $v$, a locally compact field, and
+
+$$
+k_S = \prod_{v \in S} k_v ,
+$$
+
+the product of finitely many locally compact fields, a locally compact ring. For a linear algebraic group $\mathbf{G}$ over $k$ and a subring $\mathcal{O} \subseteq k$, write $\mathbf{G}(\mathcal{O}) = \mathbf{G}(k) \cap GL_n(\mathcal{O})$ for the matrices with entries in $\mathcal{O}$ in a fixed faithful representation; for $S$-integral points one takes
+
+$$
+\mathcal{O}_k[S^{-1}] = \{x \in k : v(x) \geq 0 \text{ for every } v \notin S\} ,
+$$
+
+the ring of $S$-integers, whose units are those of $\mathcal{O}_k$ together with the primes in $S$ inverted.
+
+### Arithmetic Subgroups
+
+**Definition.** Let $\mathbf{G}$ be a linear algebraic group over the number field $k$. A subgroup $\Gamma \leq \mathbf{G}(k)$ is **arithmetic** if there is a faithful representation $\mathbf{G} \hookrightarrow GL_n$ defined over $k$ and a finite set $S$ of places containing the archimedean ones such that $\Gamma$ is **commensurable** with $\mathbf{G}(\mathcal{O}_k[S^{-1}])$: that is, the intersection $\Gamma \cap \mathbf{G}(\mathcal{O}_k[S^{-1}])$ has finite index in both. For $S$ the set of archimedean places alone one speaks of an arithmetic subgroup of $\mathbf{G}(k)$; in general the group is **$S$-arithmetic**. A subgroup is **congruence** if it contains the kernel of the reduction map
+
+$$
+\mathbf{G}(\mathcal{O}_k[S^{-1}]) \longrightarrow \mathbf{G}(\mathcal{O}_k[S^{-1}]/I)
+$$
+
+for some nonzero ideal $I$ of $\mathcal{O}_k[S^{-1}]$.
+
+**Proposition (commensurability).** Being arithmetic is a property of the commensurability class: if $\Gamma$ is arithmetic and $\Gamma'$ is commensurable with $\Gamma$ then $\Gamma'$ is arithmetic. For a fixed connected semisimple group $\mathbf{G}$ over $k$ and a fixed set $S$ of places, the $S$-arithmetic subgroups of $\mathbf{G}(k)$ form a single commensurability class; the commensurator of an arithmetic subgroup is the group of $k$-points of the algebraic group that commensurates it.
+
+**Proof.** The first statement is immediate from the definition. For the second, two faithful $k$-representations of a fixed $\mathbf{G}$ give two integral structures on the same group; the corresponding arithmetic subgroups are commensurable because the change of coordinates between the two representations has coefficients in $k$, so that integrality for one structure implies integrality up to a bounded denominator for the other, and a bounded-denominator condition defines a finite-index subgroup. The last statement is the computation of the commensurator: a $k$-point that commensurates $\Gamma$ acts on the arithmetic structure, and conversely a commensurating element is defined over $k$ by the rigidity of the algebraic group. The details are standard. $\square$
+
+## Arithmetic Subgroups are Lattices
+
+### The Borel–Harish-Chandra Theorem
+
+**Theorem (Borel–Harish-Chandra).** Let $k$ be a number field, let $\mathbf{G}$ be a connected reductive linear algebraic group over $k$ with no nontrivial $k$-character — a condition that holds automatically when $\mathbf{G}$ is semisimple — and let $S$ be a finite set of places containing the archimedean ones. Then the $S$-arithmetic group $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ is a lattice in
+
+$$
+G_S = \prod_{v \in S} \mathbf{G}(k_v) ,
+$$
+
+a locally compact group. It is uniform if and only if $\mathbf{G}$ has no nontrivial $k$-split torus; equivalently, when $\mathbf{G}$ is semisimple, if and only if no proper $k$-parabolic subgroup of $\mathbf{G}$ exists.
+
+**Proof sketch.** The theorem is the reduction theory of Hermite, Minkowski and Siegel in the general setting. One covers $G_S$ by finitely many translates of a **Siegel set** — a set defined by inequalities on the coordinates of the elements in a fixed representation, of the form "the first $k$ coefficients of the matrix are bounded below, the remaining ones bounded above" — and shows that a Siegel set has finite Haar measure in $G_S$. The finiteness of the measure uses the determinant and the two-sided growth of the coefficients, which is the arithmetic content of the Hermite–Minkowski theory of *Algebraic Number Theory*. The cocompactness criterion is that a Siegel set stays in a compact subset exactly when the parameter measuring the growth is bounded, that is, when there is no $k$-parabolic subgroup providing a cusp; a nontrivial $k$-split torus produces such a parabolic subgroup, and conversely. The details are the theorem of Borel and Harish-Chandra and are quoted from the literature. $\square$
+
+**Corollary (lattices from arithmetic).** Every arithmetic subgroup of a semisimple group is a lattice; in particular $SL_n(\mathcal{O}_k)$ is a lattice in $SL_n(\mathbb{R})^{r_1} \times SL_n(\mathbb{C})^{r_2}$ for a number field $k$ with $r_1$ real and $r_2$ complex places, where the product is over the archimedean completions. For $k = \mathbb{Q}$ and $n \geq 2$ this recovers the lattice $SL_n(\mathbb{Z}) \leq SL_n(\mathbb{R})$.
+
+**Definition.** The **$\mathbb{Q}$-rank** of a linear algebraic group $\mathbf{G}$ over $\mathbb{Q}$ is the dimension of a maximal $\mathbb{Q}$-split torus of $\mathbf{G}$; it vanishes exactly when $\mathbf{G}$ has no nontrivial $\mathbb{Q}$-split torus, equivalently when $\mathbf{G}$ has no proper $\mathbb{Q}$-parabolic subgroup, and for a semisimple group it is the dimension of the split part of a minimal $\mathbb{Q}$-parabolic subgroup, the parameter that governs the cusps of the associated locally symmetric space. A group of $\mathbb{Q}$-rank $0$ has no cusps and its arithmetic lattices are uniform; a group of positive $\mathbb{Q}$-rank has cusps.
+
+### The Classical Examples
+
+**Example (the unit group and Dirichlet's theorem).** Let $k$ be a number field with $r_1$ real and $r_2$ complex places and let $\mathbf{G} = \mathbb{G}_m$ be the multiplicative group, with $\prod_{v|\infty} k_v^\times = (\mathbb{R}^\times)^{r_1}\times(\mathbb{C}^\times)^{r_2}$. The torus has the nontrivial character given by the norm, so the lattice property holds for the units of norm $\pm 1$, a subgroup of finite index in $\mathcal{O}_k^\times$: those units form a lattice in the subgroup of the product on which $\prod_v|x_v|^{n_v} = 1$, where $n_v = 1$ at a real place and $n_v = 2$ at a complex one. The original Borel–Harish-Chandra statement is recovered by applying the norm-one condition, and the standard computation of the covolume through the logarithm map $x\mapsto(\log|x|_v)_v$ recovers Dirichlet's unit theorem: $\mathcal{O}_k^\times$ is a finitely generated abelian group of rank $r_1+r_2-1$, and its image is a lattice in the hyperplane $\sum_v n_v\log|x|_v = 0$ of dimension $r_1+r_2-1$. The quotient is compact exactly when this rank is zero, that is, for $k = \mathbb{Q}$ and for imaginary quadratic $k$, and is non-compact with a cusp otherwise. This is the simplest instance of the theory and the one from which the general reduction theory is modelled.
+
+**Example ($SL_2(\mathcal{O}_k)$ and Hilbert modular groups).** Let $k$ be a totally real number field with $[k:\mathbb{Q}] = d$ and let $\mathbf{G} = SL_2$. Then $SL_2(\mathcal{O}_k)$ is a lattice in $SL_2(\mathbb{R})^d$, and its quotient is a Hilbert modular surface when $d = 2$ (a Hilbert modular variety in general). The group is non-uniform because $SL_2$ has a proper $k$-parabolic subgroup (the upper triangular subgroup); the quotient has finitely many cusps, one for each ideal class of $k$, so their number is the class number of $k$. This is the standard example showing that the arithmetic lattices are far from being only the integral groups over $\mathbb{Q}$.
+
+**Example (orthogonal groups and hyperbolic manifolds).** Let $q$ be a quadratic form over $\mathbb{Q}$ of signature $(n,1)$ with $n \geq 2$, and let $\mathbf{G} = SO(q)$ be the special orthogonal group. Then $SO(q)(\mathbb{Z})$ is an arithmetic lattice in $SO(q)(\mathbb{R}) \cong SO(n,1)$, and its quotient is a finite-volume hyperbolic $n$-manifold, non-compact exactly when $q$ is not anisotropic over $\mathbb{Q}$; for the form $q(x) = x_1^2 + \cdots + x_n^2 - x_{n+1}^2$ the group $SO(q)(\mathbb{Z})$ is a non-uniform lattice in $SO(n,1)$ with one cusp, and for $n \geq 3$ Mostow rigidity applies to the resulting hyperbolic manifolds, while for $n = 2$ the corresponding hyperbolic surfaces have a nontrivial deformation space. This is the arithmetic source of the hyperbolic manifolds of the companion article *Lattices in Lie Groups*, and the forms themselves are the standard ones.
+
+**Example ($Sp_{2n}(\mathbb{Z})$ and $SL_n(\mathbb{Z})$).** The symplectic group $Sp_{2n}(\mathbb{Z})$ is an arithmetic lattice in $Sp_{2n}(\mathbb{R})$, the **Siegel modular group**, and its quotient is the moduli space of principally polarised abelian varieties in the arithmetic sense. The group $SL_n(\mathbb{Z})$ is arithmetic in $SL_n(\mathbb{R})$, and for $n \geq 3$ the group is of $\mathbb{Q}$-rank $n-1$, so its quotient is non-compact and has the cusps described by the rational points of the projective space.
+
+### The $S$-Arithmetic Groups
+
+**Theorem (Borel).** Let $k$ be a number field, $S$ a finite set of places containing the archimedean ones, and $\mathbf{G}$ a connected semisimple algebraic group over $k$. Then $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ is a lattice in $\prod_{v \in S}\mathbf{G}(k_v)$, and every $S$-arithmetic subgroup is a lattice. The diagonal image of $\mathcal{O}_k[S^{-1}]$ in $\prod_{v\in S}k_v$ is discrete by the product formula, which is what makes the group discrete.
+
+**Proof sketch.** The proof is the same reduction theory as in the archimedean case, with the Siegel set now a product of local Siegel sets. The finiteness of the measure is reduced to the archimedean case by the product formula for absolute values, which is the place where the number theory of *Global Fields* in Part I enters; the non-archimedean factors contribute compact sets for the coordinate ranges involved. The details are Borel's theorem and are quoted from the literature. $\square$
+
+**Example ($S$-units and $\mathbb{Z}[1/p]$).** For $k = \mathbb{Q}$ and $S = \{\infty, p\}$ the additive group $\mathbb{Z}[1/p]$ is a cocompact lattice in $\mathbb{R}\times\mathbb{Q}_p$: the diagonal image is discrete by the product formula and the quotient is the compact solenoid. The multiplicative group behaves differently, because $\mathbb{G}_m$ has a nontrivial character: the group of $S$-units $\mathbb{Z}[1/p]^\times = \pm p^{\mathbb{Z}}$ is a lattice, not in $\mathbb{R}^\times\times\mathbb{Q}_p^\times$, but in the norm-one subgroup $\{(x,y) : |x|_\infty|y|_p = 1\}$, which has dimension one. In logarithmic coordinates the $S$-units map to the lattice $\log p\cdot(1,-1)$ in the line $\{(s,-s)\}$, of covolume $\log p$. This is the $S$-unit theorem, the $S$-arithmetic analogue of Dirichlet's theorem, and it exhibits the $p$-adic coordinates as genuine directions of the lattice.
+
+## Reduction Theory
+
+### Siegel Sets and Fundamental Domains
+
+**Definition.** A **Siegel set** in $G_S$ relative to a minimal $k$-parabolic subgroup $\mathbf{P}$ with Levi decomposition $\mathbf{P} = \mathbf{M}\cdot\mathbf{N}$ and a maximal $k$-split torus $\mathbf{A} \leq \mathbf{M}$ is a set of the form
+
+$$
+\mathfrak{S}_{t,u} = \omega\cdot\mathbf{A}_t\cdot\mathbf{N}_u ,
+$$
+
+where $\omega$ is a compact set, $\mathbf{A}_t = \{a \in \mathbf{A} : \chi(a) \geq t \text{ for all } k\text{-roots } \chi \text{ of } \mathbf{A} \text{ in } \mathbf{N}\}$ is the truncation of the split torus at level $t$, and $\mathbf{N}_u$ is the truncation of the unipotent radical.
+
+**Theorem (reduction theory; Siegel, Borel).** Let $\mathbf{G}$ be a connected reductive group over the number field $k$ and let $\Gamma = \mathbf{G}(\mathcal{O}_k[S^{-1}])$.
+
+**(a)** There are finitely many minimal $k$-parabolic subgroups $\mathbf{P}_1, \dots, \mathbf{P}_m$ of $\mathbf{G}$ and, for each, a Siegel set $\mathfrak{S}_i$ such that $G_S = \bigcup_i \Gamma\cdot\mathfrak{S}_i$; that is, finitely many Siegel sets cover a fundamental domain.
+
+**(b)** Each Siegel set has finite Haar measure, and $\mathfrak{S}_i$ is contained in a compact set exactly when it is truncated away from the cusp of $\mathbf{P}_i$; hence $G_S/\Gamma$ is compact if and only if there is no proper $k$-parabolic subgroup.
+
+**(c)** The number $m$ is finite and is the number of $\Gamma$-conjugacy classes of minimal $k$-parabolic subgroups; for $\mathbb{Q}$-rank one this number is the number of cusps of the quotient.
+
+**Proof sketch.** (a) is Minkowski's reduction theory in the general setting: given an element of $G_S$, one uses the arithmetic of the representation to move it by an element of $\Gamma$ into the region where the first coefficients are bounded below and the remaining ones bounded above, which is a Siegel set. (b) the measure of a Siegel set is finite because the truncation parameters make the growth integrable; the compactness criterion is the statement that the only way to escape every compact set is to move out along the split torus in the direction of a $k$-parabolic subgroup, i.e. into a cusp, and this is measured by the parameters $t$ and $u$. (c) the finiteness of the number of cusps is the finiteness of the class number of the relevant arithmetic data, and the identification with the conjugacy classes of minimal parabolics is the standard dictionary. The details are the reduction theory of Siegel and Borel and are quoted from the literature. $\square$
+
+### Finite Generation and Finite Presentation
+
+**Theorem.** Let $\mathbf{G}$ be a connected semisimple linear algebraic group over the number field $k$ and let $\Gamma = \mathbf{G}(\mathcal{O}_k[S^{-1}])$. Then $\Gamma$ is finitely generated; it is finitely presented when $k$ is a number field, and it is finitely presented for every global field $k$ when the $S$-rank is at least two.
+
+**Proof sketch.** Finite generation follows from reduction theory: a fundamental domain is covered by finitely many Siegel sets, and $\Gamma$ is generated by the finite set of elements of $\Gamma$ that move the Siegel sets into each other, together with the generators of the unipotent and torus directions; the argument is the same as the cocompact case, with the cusp directions contributing finitely many generators. Finite presentation is the theorem of Borel and Serre, proved by exhibiting an action of $\Gamma$ on the contractible space obtained by compactifying the symmetric space, with finitely many orbits of cells and finitely generated stabilisers; for the global function field case the $S$-rank condition is necessary and the failure for $S$-rank one is the standard counterexample. The results are quoted from the literature. $\square$
+
+**Corollary.** An arithmetic lattice in a semisimple Lie group is finitely generated, and for $k$ a number field it is finitely presented. For the higher-rank lattices this also follows from property (T), which gives finite generation, and the finite presentation is then a consequence of the $C^*$-algebraic and building-theoretic methods of the companion articles.
+
+## The Congruence Subgroup Property
+
+### Statement
+
+**Definition.** Let $\Gamma$ be an arithmetic subgroup of a semisimple group over a global field. The **congruence subgroup property** (CSP) holds for $\Gamma$ if every finite-index subgroup of $\Gamma$ contains a congruence subgroup, that is, a subgroup containing the kernel of the reduction $\mathbf{G}(\mathcal{O}_k[S^{-1}]) \to \mathbf{G}(\mathcal{O}_k[S^{-1}]/I)$ for some nonzero ideal $I$. Equivalently, the profinite completion of $\Gamma$ agrees with the completion by the congruence quotients, and the **congruence kernel** — the kernel of the map from the profinite completion to the product of the congruence quotients — is trivial.
+
+**Theorem (congruence subgroup property).** The CSP holds for:
+
+**(a)** $SL_n(\mathbb{Z})$ with $n \geq 3$, and more generally for $SL_n(\mathcal{O}_k[S^{-1}])$ with $n \geq 3$;
+
+**(b)** $Sp_{2n}(\mathbb{Z})$ with $n \geq 2$, and the split simply connected almost simple groups of rank at least two;
+
+**(c)** for $SL_2(\mathcal{O}_k)$ the property is delicate: it fails for $k = \mathbb{Q}$, and for imaginary quadratic fields it has been established only in special cases, the general statement being Serre's conjecture.
+
+The CSP fails for $SL_2(\mathbb{Z})$: the group has non-congruence subgroups, of which the commutator subgroup of a principal congruence subgroup of level $2$ is the classical example.
+
+**Proof sketch.** For $SL_n$, $n \geq 3$, the proof is the solution of the congruence subgroup problem by Mennicke, Bass, Lazard and Serre: the group $SL_n(\mathbb{Z})$ is generated by elementary matrices, the elementary subgroup is a perfect group, and the congruence quotients are analysed by the action of $SL_n$ on the building of the group over $\mathbb{Q}_p$, where the congruence subgroups appear as the stabilisers of the vertices and the simplicity of the building's geometry forces every finite-index subgroup to contain one of them. The failure for $SL_2(\mathbb{Z})$ is detected by the existence of a surjection onto a finite group that does not factor through any congruence quotient, and the classical example is displayed by the action of $SL_2(\mathbb{Z})$ on the modular curve and its congruence covers; the group $\Gamma(2)$ and its commutator subgroup give the standard non-congruence subgroup. The CSP for the higher-rank groups is the theorem of Bass–Milnor–Serre and is quoted from the literature; the congruence kernel is computed in Galois cohomology, that of *Galois Cohomology* in Part I. $\square$
+
+### Applications
+
+**Theorem (expanders from congruence quotients; Margulis).** Let $\Gamma$ be an arithmetic lattice with property (T), for instance $\Gamma = SL_3(\mathbb{Z})$, and let $\Gamma \to \Gamma_i$ be a family of finite congruence quotients with $|\Gamma_i| \to \infty$. Then the Cayley graphs of the $\Gamma_i$ with respect to the images of a fixed finite generating set of $\Gamma$ form an expander family, with expansion constant bounded below by the Kazhdan constant of $\Gamma$.
+
+**Proof sketch.** Property (T) of $\Gamma$ gives a uniform spectral gap for the averaging operator of every unitary representation of $\Gamma$ without invariant vectors, and the regular representation of each quotient $\Gamma_i$ is such a representation because $\Gamma_i$ is finite and nontrivial; the gap bound is inherited by the finite quotients, since a representation of $\Gamma_i$ pulled back to $\Gamma$ has no invariant vectors when $\Gamma_i$ is nontrivial. The CSP is what makes the congruence quotients a cofinal family in the profinite completion and hence an infinite family. The construction of expanders is the one sketched in *Property (T)*; the graph-theoretic and analytic consequences are Part III. $\square$
+
+**Corollary (the congruence subgroup property as a profinite statement).** For $\Gamma$ with CSP, the profinite completion of $\Gamma$ is the inverse limit of the congruence quotients, and the finite quotients of $\Gamma$ are exactly the quotients by congruence subgroups. This is why the CSP is the arithmetic input into the rigidity and expander constructions: without it the finite quotients of the lattice are not controlled by the arithmetic.
+
+## Arithmeticity of Lattices
+
+### Margulis Superrigidity and Arithmeticity
+
+**Theorem (Margulis superrigidity).** Let $G$ and $H$ be connected semisimple algebraic groups over local fields of characteristic zero, let $\Gamma \leq G$ be a lattice, and suppose that the real rank of $G$ is at least two and that $H$ has no compact simple factor. Then every homomorphism $\Gamma \to H$ with Zariski dense image extends to a continuous homomorphism $G \to H$; in particular, every representation of $\Gamma$ extends and the finite-dimensional representation theory of $\Gamma$ is that of $G$.
+
+**Proof sketch.** The proof is the "superrigidity by ergodic theory" of Margulis: a homomorphism $\Gamma \to H$ gives an action of $\Gamma$ on the Furstenberg boundary of $H$, and one shows that this action is induced by a measurable $\Gamma$-equivariant map from the boundary of $G$ to the boundary of $H$; the existence of such a map is the rigidity theorem of the boundary actions, proved by the ergodicity and the amenability of the boundary actions, where the ergodicity uses the finite measure of $G/\Gamma$ and belongs to Part III. A measurable equivariant map of these homogeneous spaces is then automatically algebraic, by the theory of algebraic groups and the fundamental theorem of projective geometry, and produces the extension. The theorem is Margulis's and is quoted from the literature. $\square$
+
+**Theorem (Margulis arithmeticity).** Let $G$ be a connected semisimple Lie group with trivial centre and no compact factors, all of whose simple factors have real rank at least two, and let $\Gamma \leq G$ be an irreducible lattice. Then $\Gamma$ is arithmetic: there are a number field $k$, a linear algebraic group $\mathbf{G}$ over $k$ and a finite set $S$ of places such that $\Gamma$ is commensurable with $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ and $G$ is isogenous to a product of the groups $\mathbf{G}(k_v)$ for $v \in S$.
+
+**Proof sketch.** Superrigidity applies to the representations of $\Gamma$ obtained from the algebraic representations of its Zariski closure, and the extension of these representations to $G$ is used to produce an algebraic structure on $\Gamma$: the set of homomorphisms $\Gamma \to GL_n$ that extend to $G$ is Zariski dense in the space of all representations, and the commutation relations of the extensions define a field $k$ — the field generated by the traces of the extensions — over which the group is defined. The lattice is then recovered as the integral points of the $k$-group, and the finite set $S$ records the places at which the group is non-compact. The details are the arithmeticity theorem of Margulis and are quoted from the literature. $\square$
+
+**Remark.** The rank hypothesis is sharp. In real rank one there are non-arithmetic lattices: in $SO(n,1)$ for $n \geq 3$ the constructions of Gromov and Piatetski-Shapiro give non-arithmetic lattices, and in $SU(2,1)$ and $SU(3,1)$ the complex hyperbolic lattices of Mostow and of Deligne–Mostow include non-arithmetic examples. The arithmeticity theorem is therefore a phenomenon of higher rank, exactly as superrigidity is.
+
+### Arithmeticity and the Structure of Lattices
+
+**Corollary.** Let $\Gamma$ be a lattice as in the arithmeticity theorem. Then $\Gamma$ is finitely generated and finitely presented, has a finite abelianisation, is residually finite, and has the congruence subgroup property when the group is of higher rank and simply connected in the sense of the classification. Its finite quotients are the congruence quotients, and its profinite completion is the inverse limit of these.
+
+**Proof.** Finite generation and finite presentation are the reduction theory above; the finiteness of the abelianisation is the consequence of property (T), inherited by the lattice; residual finiteness is the standard approximation of the arithmetic group by its congruence quotients, using the congruence subgroup property; the CSP itself is the theorem stated above. The corollary assembles results proved in the earlier sections and in *Property (T)*. $\square$
+
+## The Boundary with Analysis
+
+- The **spectral theory of automorphic forms**, the **trace formula** and the **Langlands decomposition** of $L^2(G/\Gamma)$ areand *Analysis on Groups* in Part III.
+- The **equidistribution of Hecke points**, the **measure classification** and the counting of rational points are.
+- The **adelic formulation** of the arithmeticity and the congruence subgroup problem is not covered here.
+- The **buildings** attached to a semisimple group over a local field, which appear in the proof of the CSP as the spaces on which the congruence subgroups act, are the subject and with this one.
+- What is *not* deferred: the definitions of algebraic group, arithmetic subgroup and congruence subgroup; the Borel–Harish-Chandra theorem and its cocompactness criterion; reduction theory at the level of Siegel sets; finite generation and finite presentation; the congruence subgroup property and its failure for $SL_2$; superrigidity and arithmeticity; and the expander construction at the level of groups.
+
+## Summary
+
+Let $k$ be a number field with ring of integers $\mathcal{O}_k$ and $S$ a finite set of places containing the archimedean ones. A linear algebraic group over $k$ is a subgroup of $GL_n$ defined by polynomial equations with coefficients in $k$; a subgroup $\Gamma \leq \mathbf{G}(k)$ is arithmetic, or $S$-arithmetic, when it is commensurable with the group $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ of $S$-integral points. The theorem of Borel and Harish-Chandra says that $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ is a lattice in the locally compact product $\prod_{v\in S}\mathbf{G}(k_v)$, and it is uniform exactly when $\mathbf{G}$ has no nontrivial $k$-split torus, equivalently no proper $k$-parabolic subgroup. The examples are the units of norm $\pm 1$ in $\mathcal{O}_k^\times$ (whose lattice property is Dirichlet's unit theorem), the Hilbert modular groups $SL_2(\mathcal{O}_k)$, the orthogonal groups $SO(q)(\mathbb{Z})$ of signature $(n,1)$ giving hyperbolic manifolds, and the Siegel modular group $Sp_{2n}(\mathbb{Z})$.
+
+Reduction theory covers the quotient by finitely many translates of Siegel sets of finite measure, which gives finite generation and, by the theorem of Borel and Serre, finite presentation. The congruence subgroup property — every finite-index subgroup contains a congruence subgroup — holds for $SL_n$ with $n \geq 3$ and for the higher-rank simply connected groups, and fails for $SL_2(\mathbb{Z})$, which has non-congruence subgroups. The property makes the congruence quotients cofinal in the profinite completion; with property (T) it produces expander families from the congruence quotients of $SL_3(\mathbb{Z})$.
+
+The converse direction is the theorem of Margulis: a lattice in a connected semisimple Lie group with trivial centre, no compact factors and all simple factors of real rank at least two is arithmetic. The proof runs through superrigidity, the extension of representations of the lattice to the ambient group, and the recovery of the field of definition from the extension. In real rank one the theorem fails and non-arithmetic lattices exist, for instance in $SO(n,1)$ for $n \geq 3$ and in the complex hyperbolic groups. The automorphic, spectral and ergodic theory that accompanies the arithmetic groups belongs to Part III, and the buildings that appear in the congruence subgroup problem to the companion articles of this category.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $k$, $\mathcal{O}_k$ | Number field; its ring of integers |
+| $v$, $k_v$ | Place of $k$; completion of $k$ at $v$, a locally compact field |
+| $S$, $k_S = \prod_{v\in S}k_v$ | Finite set of places containing the archimedean ones; the locally compact product |
+| $\mathcal{O}_k[S^{-1}]$ | Ring of $S$-integers |
+| $\mathbf{G}$ | Linear algebraic group over $k$; $\mathbf{G}(k)$ its $k$-points |
+| $GL_n$, $SL_n$, $Sp_{2n}$, $O(q)$, $SO(q)$ | The classical algebraic groups |
+| reductive, semisimple | Reductive: no nontrivial connected unipotent normal subgroup; semisimple: finite algebraic centre |
+| $k$-parabolic subgroup | Closed subgroup with projective quotient $\mathbf{G}/\mathbf{P}$ |
+| $k$-split torus | Torus isomorphic over $k$ to a product of copies of $\mathbb{G}_m$ |
+| $\mathbb{Q}$-rank | Dimension of a maximal $\mathbb{Q}$-split torus; governs the cusps |
+| arithmetic subgroup | Commensurable with $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ |
+| commensurable | $\Gamma\cap\Gamma'$ of finite index in both |
+| congruence subgroup | Contains the kernel of $\mathbf{G}(\mathcal{O}_k[S^{-1}]) \to \mathbf{G}(\mathcal{O}_k[S^{-1}]/I)$ |
+| CSP (congruence subgroup property) | Every finite-index subgroup contains a congruence subgroup |
+| congruence kernel | Kernel of the map from the profinite completion to the congruence completion |
+| Siegel set $\mathfrak{S}_{t,u}$ | Truncated fundamental set of finite Haar measure |
+| $\mathcal{O}_k^\times$ | Units; those of norm $\pm1$ form a lattice in the norm-one subgroup of $\prod_{v|\infty}k_v^\times$ (Dirichlet's unit theorem) |
+| Hilbert modular group | $SL_2(\mathcal{O}_k)$ in $SL_2(\mathbb{R})^{r_1}\times SL_2(\mathbb{C})^{r_2}$ |
+| $Sp_{2n}(\mathbb{Z})$ | Siegel modular group, an arithmetic lattice in $Sp_{2n}(\mathbb{R})$ |
+| $SL_n(\mathbb{Z})$, $n \geq 3$ | Arithmetic lattice with the congruence subgroup property |
+| arithmeticity (Margulis) | Higher-rank lattices are arithmetic |
+| superrigidity | Homomorphisms of a higher-rank lattice extend to the ambient group |
+
+
+
+
+
+
+
+## Further Reading
+
+- Armand Borel, *Introduction aux groupes arithmétiques* (Hermann, 1969), for the general theory of arithmetic groups and reduction theory.
+- Armand Borel and Harish-Chandra, *Arithmetic subgroups of algebraic groups*, Annals of Mathematics 75 (1962), 485–535, for the lattice theorem and the compactness criterion.
+- Armand Borel, *Linear Algebraic Groups* (Springer, 2nd ed. 1991), for the algebraic-group foundations used throughout.
+- Armand Borel and Jean-Pierre Serre, *Corners and arithmetic groups*, Commentarii Mathematici Helvetici 48 (1973), 436–491, for the compactification and finite presentation.
+- Hyman Bass, John Milnor and Jean-Pierre Serre, *Solution of the congruence subgroup problem for $SL_n$ ($n \geq 3$) and $Sp_{2n}$ ($n \geq 2$)*, Publications Mathématiques de l'IHÉS 33 (1967), 59–137, for the congruence subgroup property.
+- Gregory Margulis, *Discrete Subgroups of Semisimple Lie Groups* (Springer, 1991), for superrigidity, arithmeticity and the finiteness theorems.
+- M. S. Raghunathan, *Discrete Subgroups of Lie Groups* (Springer, 1972), for the reduction theory and the structure of arithmetic quotients.
+- Gopal Prasad, *Strong rigidity of $\mathbb{Q}$-rank 1 lattices*, Inventiones Mathematicae 21 (1973), 255–286, for rigidity in the rank-one case.
+- Gregory Margulis, *Explicit constructions of expanders*, Problemy Peredachi Informatsii 9 (1973), 71–80, for the expander construction from property (T) and the congruence quotients.
+- Dave Witte Morris, *Introduction to Arithmetic Groups* (American Mathematical Society, 2015), for a modern textbook treatment with proofs.

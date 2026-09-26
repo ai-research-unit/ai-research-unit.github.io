@@ -1,0 +1,198 @@
+# __Schur–Weyl Duality__
+
+## Introduction
+
+Let $V = K^n$ be a vector space over a field $K$ and consider the $d$-fold tensor power $V^{\otimes d}$. Two groups act on it, and they act in opposite ways. The symmetric group $S_d$ permutes the $d$ factors, so that $\sigma\cdot(v_1\otimes\cdots\otimes v_d) = v_{\sigma^{-1}(1)}\otimes\cdots\otimes v_{\sigma^{-1}(d)}$; its action is combinatorial and does not depend on the dimension $n$. The general linear group $GL(V)$ acts diagonally, $g\cdot(v_1\otimes\cdots\otimes v_d) = gv_1\otimes\cdots\otimes gv_d$; its action is linear and does not depend on $d$. Every element of the first action commutes with every element of the second, so the two act on $V^{\otimes d}$ as mutual commutants, and the theorem of Schur and Weyl states that over a field of characteristic zero each is the full commutant of the other, and that $V^{\otimes d}$ decomposes as a sum, over partitions $\lambda$ of $d$ with at most $n$ rows, of a tensor product of an irreducible representation of $S_d$ and one of $GL(V)$.
+
+The theorem is the meeting point of the two combinatorial theories of this Part: the representation theory of the symmetric groups, whose irreducible modules are the Specht modules $S^\lambda$ of *Representation Theory of Symmetric Groups*, and the symmetric functions, whose Schur functions $s_\lambda$ are the characters of the modules $W^\lambda$ of *Symmetric Functions and Schur Functions*. Its arithmetic content is a statement of pure algebra — a decomposition of a finite-dimensional module under the action of a product of two groups, and the identification of two endomorphism rings — and no geometry, form or distance enters. It is the source of the Cauchy identity and of the hook length formula for the dimensions, and it is the reason the characters of $S_d$ are computable from symmetric functions at all.
+
+Throughout, $K$ is a field, $V = K^n$, $d \geq 1$, $V^{\otimes d} = V\otimes_K\cdots\otimes_K V$, and the two actions are written $\sigma\cdot$ for $\sigma \in S_d$ and $g\cdot$ for $g \in GL(V)$. The group ring $K[S_d]$ and the group ring $K[GL(V)]$ are used as rings acting on modules; the symmetric group terminology ($\lambda$, $S^\lambda$, $f^\lambda$, $\chi^\lambda$, $K_{\lambda\mu}$) is that of *Representation Theory of Symmetric Groups*, and the symmetric function terminology ($s_\lambda$, $h_\lambda$, $\Lambda$, the Hall inner product) that of *Symmetric Functions and Schur Functions*. Unless stated otherwise the characteristic is zero, and the modular case is recorded with its own statement.
+
+---
+
+## The Commuting Actions
+
+### Commutation and the Generalised Determinant
+
+**Proposition.** With the actions defined above, $\sigma\cdot$ and $g\cdot$ commute for all $\sigma \in S_d$ and $g \in GL(V)$; that is, $\sigma\cdot(g\cdot u) = g\cdot(\sigma\cdot u)$ for every $u \in V^{\otimes d}$. Moreover each action permutes or scales the tensor monomials: writing $e_1,\ldots,e_n$ for a basis of $V$, the monomials $e_{i_1}\otimes\cdots\otimes e_{i_d}$ form a basis of $V^{\otimes d}$, on which $S_d$ permutes the index sequences and $GL(V)$ acts by the product of the matrix entries.
+
+**Proof.** Both statements are immediate from the definitions: $g$ acts on each tensor factor separately and independently of the position, and a permutation of the factors followed by an application of $g$ to each coincides with the reverse order. $\square$
+
+### The Dimension Formula
+
+**Theorem (the number of tensor monomials).** For every $d$ and $n$,
+
+$$
+\sum_{\lambda \vdash d,\ \ell(\lambda)\leq n}f^\lambda\,s_\lambda(1^n) = n^d ,
+$$
+
+where $f^\lambda = d!/\prod h(u)$ is the number of standard tableaux of shape $\lambda$ and $s_\lambda(1^n)$ is the number of semistandard tableaux of shape $\lambda$ with entries in $\{1,\ldots,n\}$.
+
+**Proof.** This is a numerical consequence of Schur–Weyl duality, proved below; the sum is the dimension count for the decomposition $V^{\otimes d} = \bigoplus_\lambda S^\lambda\otimes W^\lambda$, since $\dim V^{\otimes d} = n^d$ and $\dim(S^\lambda\otimes W^\lambda) = f^\lambda s_\lambda(1^n)$. $\square$
+
+**Example.** For $d = 2$: the partitions are $(2)$ and $(1,1)$, with $f^{(2)} = f^{(1,1)} = 1$, and the identity reads $\binom{n+1}{2}+\binom{n}{2} = n^2$; for $n = 3$ this is $6+3 = 9$. For $d = 3$ and $n = 2$: $f^{(3)} = 1$, $f^{(2,1)} = 2$, $f^{(1,1,1)} = 1$, while $s_{(3)}(1,1) = 4$, $s_{(2,1)}(1,1) = 2$, $s_{(1,1,1)}(1,1) = 0$; the sum is $4+4+0 = 8 = 2^3$. The vanishing of $s_\lambda(1^n)$ for $\ell(\lambda) > n$ is why the sum is restricted to partitions with at most $n$ rows.
+
+---
+
+## The Duality
+
+### Statement
+
+**Definition.** Let $\lambda \vdash d$ with $\ell(\lambda) \leq n$. The **Schur functor** $\mathbb{S}_\lambda$ assigns to $V$ the module
+
+$$
+\mathbb{S}_\lambda(V) = \operatorname{Hom}_{S_d}(S^\lambda, V^{\otimes d}),
+$$
+
+where $S^\lambda$ is the Specht module and $S_d$ acts on $V^{\otimes d}$ by permuting the factors; thus $\mathbb{S}_\lambda(V)$ is the **multiplicity space** of $S^\lambda$ in $V^{\otimes d}$.
+
+**Theorem (Schur–Weyl duality).** Let $K$ have characteristic $0$, $V = K^n$, $d \geq 1$.
+
+**(a)** As a module for the product of the two actions, $V^{\otimes d}$ decomposes as
+
+$$
+V^{\otimes d} \cong \bigoplus_{\substack{\lambda \vdash d\\ \ell(\lambda)\leq n}} S^\lambda\otimes_K \mathbb{S}_\lambda(V),
+$$
+
+the sum over partitions of $d$ with at most $n$ rows; the multiplicities are finite and the decomposition is multiplicity-free, each irreducible pair occurring at most once.
+
+**(b)** The two algebras of endomorphisms are mutual commutants:
+
+$$
+\operatorname{End}_{S_d}(V^{\otimes d}) = \text{the image of } K[GL(V)], \qquad \operatorname{End}_{GL(V)}(V^{\otimes d}) = \text{the image of } K[S_d] .
+$$
+
+**(c)** $\mathbb{S}_\lambda(V)$ is either $0$ or an irreducible polynomial representation of $GL(V)$, of highest weight $\lambda$ with respect to the diagonal torus, and its dimension is
+
+$$
+\dim \mathbb{S}_\lambda(V) = s_\lambda(1^n) = \prod_{1\leq i<j\leq n}\frac{\lambda_i-\lambda_j+j-i}{j-i} ;
+$$
+
+it is the Weyl module of highest weight $\lambda$, and it is nonzero exactly when $\ell(\lambda) \leq n$.
+
+**(d)** The character of $\mathbb{S}_\lambda(V)$ at a diagonal element $g = \operatorname{diag}(x_1,\ldots,x_n)$ is the Schur polynomial $s_\lambda(x_1,\ldots,x_n)$; consequently the trace of the diagonal element on $V^{\otimes d}$ is $(x_1+\cdots+x_n)^d$, and expanding in the basis $s_\lambda$ gives the **Frobenius character formula**
+
+$$
+(x_1+\cdots+x_n)^d = \sum_{\substack{\lambda \vdash d\\ \ell(\lambda)\leq n}}f^\lambda\,s_\lambda(x_1,\ldots,x_n).
+$$
+
+**Proof sketch.** (a) Over a field of characteristic $0$ the action of $S_d$ on $V^{\otimes d}$ is completely reducible by Maschke's theorem, and the isotypic component of $S^\lambda$ is $S^\lambda\otimes\operatorname{Hom}_{S_d}(S^\lambda,V^{\otimes d})$; that this is stable under $GL(V)$ follows from the commutation of the actions, and that its $GL(V)$-structure is irreducible of highest weight $\lambda$ is proved by exhibiting a highest-weight vector — the symmetriser of a tableau — and computing its weight, together with the dimension formula (c). (b) Both rings are finite-dimensional and act faithfully; since the isotypic decomposition is multiplicity-free, an endomorphism of $V^{\otimes d}$ commuting with $S_d$ is a sum of endomorphisms of the multiplicity spaces, and every such is induced by $GL(V)$; the argument for the other side is symmetric. (c) The dimension formula is the Weyl dimension formula, equal to $s_\lambda(1^n)$ by the specialisation theorem of *Symmetric Functions and Schur Functions*. (d) Tracing the action of a diagonal $g$ on the tensor basis gives $(x_1+\cdots+x_n)^d$; on the other hand the trace on $S^\lambda\otimes\mathbb{S}_\lambda(V)$ is $\dim(S^\lambda)\cdot(\text{character of }\mathbb{S}_\lambda(V))$, and the character is $s_\lambda$, which is the Frobenius characteristic of $\chi^\lambda$ evaluated diagonally. $\square$
+
+**Example.** For $d = 2$: $V^{\otimes2} = \operatorname{Sym}^2V\oplus\Lambda^2V$, corresponding to $\lambda = (2)$ and $\lambda = (1,1)$; the Specht modules $S^{(2)}$ and $S^{(1,1)}$ are the trivial and sign representations of $S_2$, the multiplicity spaces have dimensions $\binom{n+1}{2}$ and $\binom{n}{2}$, and $\dim\operatorname{End}_{S_2}(V^{\otimes2}) = \binom{n+1}{2}^2+\binom{n}{2}^2$. The same number is $\dim\operatorname{End}_{GL(V)}(V^{\otimes2})$, spanned by the identity and the swap: for $n = 2$ the centraliser of the swap on the four-dimensional space $V^{\otimes2}$ is the centraliser of an involution with eigenvalue multiplicities $3$ and $1$, of dimension $3^2+1^2 = 10 = \binom32^2+\binom22^2$, in agreement.
+
+**Example.** For $d = 2$ and independent eigenvalues $x_1,\ldots,x_n$: (d) reads $(x_1+\cdots+x_n)^2 = s_{(2)}(x)+s_{(1,1)}(x)$, which in two variables is $x_1^2+2x_1x_2+x_2^2 = (x_1^2+x_1x_2+x_2^2)+x_1x_2$, verified by substitution. For $d = 3$ and two variables: $(x_1+x_2)^3 = s_{(3)}+2s_{(2,1)}+s_{(1,1,1)}$, and with $s_{(1,1,1)}(x_1,x_2) = 0$, $s_{(3)} = x_1^3+x_1^2x_2+x_1x_2^2+x_2^3$ and $s_{(2,1)} = x_1^2x_2+x_1x_2^2$, the right side is $x_1^3+x_2^3+3x_1^2x_2+3x_1x_2^2 = (x_1+x_2)^3$, as required.
+
+### Consequences
+
+**Corollary (the Cauchy identity).** Applying the duality to $V\otimes W$ with $V = K^n$ and $W = K^m$, and passing to the symmetric algebra of $V\otimes W$, gives the multiplicity-free decomposition
+
+$$
+\operatorname{Sym}(V\otimes W) = \bigoplus_{\lambda}\mathbb{S}_\lambda(V)\otimes\mathbb{S}_\lambda(W),
+$$
+
+whose character identity is the Cauchy identity
+
+$$
+\sum_{\lambda}s_\lambda(x)\,s_\lambda(y) = \prod_{i=1}^{n}\prod_{j=1}^{m}\frac{1}{1-x_iy_j}
+$$
+
+of *Symmetric Functions and Schur Functions*. The symmetry of the identity in $x$ and $y$ is the symmetry of the duality in the two factors.
+
+**Proof sketch.** The symmetric algebra of $V\otimes W$ is the direct sum of the invariants of $S_d$ acting on $(V\otimes W)^{\otimes d}$; combining Schur–Weyl duality for $V\otimes W$ with the decomposition of the tensor powers of a tensor product gives the displayed multiplicity-free decomposition, and taking characters at diagonal elements gives the Cauchy identity as a formal power series identity. $\square$
+
+**Corollary (the tensor algebra).** The same argument applied to the whole tensor algebra gives
+
+$$
+\bigoplus_{d\geq0}V^{\otimes d} = \bigoplus_{\lambda}S^\lambda\otimes\mathbb{S}_\lambda(V),
+$$
+
+the sum over all partitions, and evaluating characters at the diagonal element of $GL(V)$ with entries $x_1,\ldots,x_n$ and at the identity of $S_d$ recovers the generating function of the dimensions, $\sum_\lambda f^\lambda s_\lambda(x)$, whose specialisation at $x = 1^n$ is the dimension formula of the previous section.
+
+**Corollary (special functors).** The two extreme partitions give the classical functors: $\mathbb{S}_{(d)}(V) = \operatorname{Sym}^dV$ of dimension $\binom{n+d-1}{d}$ and $\mathbb{S}_{(1^d)}(V) = \Lambda^dV$ of dimension $\binom{n}{d}$, corresponding to the trivial and sign representations of $S_d$; the remaining $\mathbb{S}_\lambda$ interpolate between them, and the restriction of $\mathbb{S}_\lambda$ to the subgroup $S_{d-1}$ of $S_d$ is the branching rule of *Representation Theory of Symmetric Groups*, which in the Schur basis is the single-row Pieri rule $s_\lambda h_1 = \sum_{\lambda^+}s_{\lambda^+}$.
+
+---
+
+## The Centraliser Algebra and the Schur Algebra
+
+**Definition.** The image of $K[S_d]$ in $\operatorname{End}_K(V^{\otimes d})$ is the **Schur algebra**, written $S(n,d)$; it is a finite-dimensional $K$-ring acting on $V^{\otimes d}$ and its modules are exactly the polynomial representations of $GL(V)$ of degree $d$.
+
+**Theorem (structure of the Schur algebra).** With $K$ of characteristic $0$:
+
+**(a)** $S(n,d) \cong \bigoplus_{\lambda \vdash d,\ \ell(\lambda)\leq n}\operatorname{End}_K(\mathbb{S}_\lambda(V))$ as a ring, and consequently
+
+$$
+\dim_K S(n,d) = \sum_{\substack{\lambda\vdash d\\ \ell(\lambda)\leq n}}s_\lambda(1^n)^2 ;
+$$
+
+**(b)** the simple modules of $S(n,d)$ are the $\mathbb{S}_\lambda(V)$ for $\lambda \vdash d$ with $\ell(\lambda)\leq n$, and the category of finite-dimensional $S(n,d)$-modules is equivalent to the category of polynomial $GL(V)$-modules of degree $d$;
+
+**(c)** the endomorphism ring of the permutation module $M^\mu$ of *Representation Theory of Symmetric Groups* is spanned by the double cosets $S_\mu\backslash S_d/S_\mu$ and has dimension the number of such double cosets, and for $n \geq d$ the algebra $S(n,d)$ is Morita equivalent to $K[S_d]$, the equivalence sending $S^\lambda$ to $\mathbb{S}_\lambda(V)$; the natural map $S(n,d) \to S(n+1,d)$ is then a full embedding of module categories.
+
+**Proof sketch.** (a) is the multiplicity-free decomposition of the previous theorem applied to the endomorphism ring; (b) follows since every simple is a summand of some tensor power, and the equivalence is the definition of polynomial representation; (c) is the combinatorial description of the double coset ring and its quotient, the multiplicities being the Kostka numbers. $\square$
+
+**Example.** For $n = 2$, $d = 2$: $\dim S(2,2) = s_{(2)}(1,1)^2+s_{(1,1)}(1,1)^2 = 3^2+1^2 = 10$, in agreement with the computation of the centraliser of the swap above. For $n \geq d$ every partition of $d$ occurs, so $\dim S(n,d) = \sum_{\lambda\vdash d}s_\lambda(1^n)^2$, a number that grows with $n$ even in fixed degree $d$; the separate identity $\sum_{\lambda\vdash d}(f^\lambda)^2 = d!$ is the dimension count for the regular representation of $S_d$, and for $d = 4$ it reads $1+9+4+9+1 = 24$.
+
+**Remark (the modular case).** If $K$ has characteristic $p$, the tensor power $V^{\otimes d}$ need not be completely reducible and the decomposition (a) of the duality theorem fails: the Specht modules acquire composition series, the role of $\mathbb{S}_\lambda(V)$ is taken by the **Weyl module** $\Delta^\lambda$ or by its quotient, and the Schur algebra remains semisimple exactly when the characteristic does not divide the relevant factorials. What survives in all characteristics is the commutation of the two actions and the double centraliser statement (b) in the weakened form that each centraliser is the image of the appropriate group ring; the composition factors of the Weyl modules are the **decomposition numbers** of *Representation Theory of Symmetric Groups*, and the resulting theory of the polynomial representations of $GL_n$ in characteristic $p$ is the modular Schur–Weyl correspondence.
+
+### Complements
+
+**Corollary (decomposition of the tensor algebra and of the symmetric algebra).** Summing the duality over all degrees,
+
+$$
+\bigoplus_{d\geq0}V^{\otimes d} \cong \bigoplus_{\lambda}S^\lambda\otimes\mathbb{S}_\lambda(V),
+$$
+
+the sum over all partitions, graded by $|\lambda|$. The character is $\sum_\lambda f^\lambda s_\lambda(x)$, whose homogeneous component of degree $d$ is $(x_1+\cdots+x_n)^d$, while the sum $\sum_\lambda s_\lambda(x)$ of the characters of the multiplicity spaces is the principal specialisation $\prod_i(1-x_i)^{-1}\prod_{i<j}(1-x_ix_j)^{-1}$ of *Symmetric Functions and Schur Functions*. The summands of degree $d$ of $\operatorname{Sym}(V) = \bigoplus_d\operatorname{Sym}^dV$ are those attached to the one-row partitions, $\operatorname{Sym}^dV = \mathbb{S}_{(d)}(V)$.
+
+**Definition.** For symmetric functions $f = \sum_\lambda c_\lambda s_\lambda$ of degree $d$ and $g$, the **plethysm** $f[g]$ is defined on the power sums by $p_k[g] = g(x_1^k,x_2^k,\ldots)$ and extended by linearity and multiplicativity in the coefficients; the character of $\operatorname{Sym}^d(\mathbb{S}_\mu(V))$ is the plethysm $h_d[s_\mu]$, and that of $\Lambda^d(\mathbb{S}_\mu(V))$ is $e_d[s_\mu]$.
+
+**Example.** Taking $\mu = (1)$ gives $\operatorname{Sym}^dV$ again. For $\mu = (2)$ the module $\operatorname{Sym}^2(\operatorname{Sym}^2V)$ has character $h_2[h_2] = s_4+s_{2,2}$, so that $\operatorname{Sym}^2(\operatorname{Sym}^2V) = \mathbb{S}_{(4)}(V)\oplus\mathbb{S}_{(2,2)}(V)$. The identity is checked in one variable, where both sides are $x_1^4$, and in two variables, where both sides are $x_1^4+x_1^3x_2+2x_1^2x_2^2+x_1x_2^3+x_2^4$. For $n = 4$ the dimensions of the two summands are $s_4(1^4) = \binom74 = 35$ and $s_{2,2}(1^4) = 20$, summing to $55 = \binom{10+1}{2}$, the dimension of the second symmetric power of the ten-dimensional module $\operatorname{Sym}^2K^4$.
+
+**Remark (other classical groups).** The duality of Schur and Weyl is the first of a family: for the other classical groups, the centraliser of the group action on a tensor power or on a polynomial ring is described by a diagram ring — the Brauer algebra, which presupposes a form, the walled Brauer algebra in the mixed case — and the analogue of the multiplicity-free decomposition of $\operatorname{Sym}(V\otimes W)$ is Howe duality, whose statement for the orthogonal and symplectic cases requires the form and its associated group. Since neither a form nor an orthogonal group is available in this Part, the analogue is deferred to the Part in which they are introduced; only the general linear case, requiring no form, is treated here.
+
+**Corollary (invariants and the duality).** The $S_d$-invariants of $V^{\otimes d}$ are the summand with $\lambda = (d)$, namely $\operatorname{Sym}^dV$, and the $S_d$-coinvariants are the summand with $\lambda = (1^d)$, namely $\Lambda^dV$; more generally the multiplicity space $\mathbb{S}_\lambda(V)$ is the image of the idempotent of $K[S_d]$ attached to $S^\lambda$, so every polynomial representation of $GL(V)$ of degree $d$ is cut out of a tensor power by an element of the group ring of $S_d$. This is the precise sense in which the representation theory of the symmetric group controls the polynomial representations of the general linear group, and it is the content of the double centraliser statement (b).
+
+---
+
+## Summary
+
+On $V^{\otimes d}$ with $V = K^n$ the symmetric group $S_d$ permutes the factors and $GL(V)$ acts diagonally, and the two actions commute. Over a field of characteristic zero, Schur–Weyl duality states
+
+$$
+V^{\otimes d} \cong \bigoplus_{\substack{\lambda\vdash d\\ \ell(\lambda)\leq n}}S^\lambda\otimes\mathbb{S}_\lambda(V),
+$$
+
+a multiplicity-free decomposition into Specht modules of $S_d$ and Weyl modules of $GL(V)$, in which $\mathbb{S}_\lambda(V) = \operatorname{Hom}_{S_d}(S^\lambda,V^{\otimes d})$ is irreducible of highest weight $\lambda$, of dimension $s_\lambda(1^n) = \prod_{i<j}(\lambda_i-\lambda_j+j-i)/(j-i)$ and character the Schur polynomial $s_\lambda$ at diagonal elements. The two centralisers are mutual commutants — $\operatorname{End}_{S_d}(V^{\otimes d})$ is the image of $K[GL(V)]$ and $\operatorname{End}_{GL(V)}(V^{\otimes d})$ the image of $K[S_d]$ — so that the Schur algebra $S(n,d)$ has dimension $\sum_{\lambda\vdash d,\ell(\lambda)\leq n}s_\lambda(1^n)^2$, equal to $10$ for $n = d = 2$, and its simple modules are the $\mathbb{S}_\lambda(V)$.
+
+The dimension count gives $\sum_{\lambda\vdash d,\ell(\lambda)\leq n}f^\lambda s_\lambda(1^n) = n^d$, and taking characters gives the Frobenius formula $(x_1+\cdots+x_n)^d = \sum_\lambda f^\lambda s_\lambda(x)$, of which $(x_1+x_2)^3 = s_{(3)}+2s_{(2,1)}$ is the simplest nontrivial case. Applying the duality to $V\otimes W$ and to the symmetric algebra gives the Cauchy identity $\sum_\lambda s_\lambda(x)s_\lambda(y) = \prod_{i,j}(1-x_iy_j)^{-1}$ and its multiplicity-free interpretation, while the extreme partitions give $\mathbb{S}_{(d)}(V) = \operatorname{Sym}^dV$ and $\mathbb{S}_{(1^d)}(V) = \Lambda^dV$. In characteristic $p$ the decomposition fails and the Weyl modules replace the $\mathbb{S}_\lambda$, with the decomposition numbers of $S_d$ recording the composition factors; the commuting actions and the double centraliser statement survive. The symmetric-group input is *Representation Theory of Symmetric Groups*, the symmetric-function input *Symmetric Functions and Schur Functions*, and the invariant-theoretic reading of the symmetric algebra is *Invariant Theory*.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $K$ | Field of coefficients |
+| $V = K^n$ | Defining representation of $GL(V)$ |
+| $V^{\otimes d}$ | $d$-fold tensor power |
+| $S_d$ | Symmetric group permuting the tensor factors |
+| $\sigma\cdot$, $g\cdot$ | The commuting actions |
+| $\lambda$ | Partition of $d$, with $\ell(\lambda) \leq n$ |
+| $S^\lambda$ | Specht module of $S_d$ |
+| $\mathbb{S}_\lambda(V)$ | Schur functor; Weyl module of highest weight $\lambda$ |
+| $s_\lambda(1^n)$ | Dimension of $\mathbb{S}_\lambda(V)$, number of semistandard tableaux |
+| $f^\lambda$ | Number of standard tableaux of shape $\lambda$ |
+| $\chi^\lambda$ | Irreducible character of $S_d$ |
+| $S(n,d)$ | Schur algebra, image of $K[S_d]$ in $\operatorname{End}_K(V^{\otimes d})$ |
+| $M^\mu$, $K_{\lambda\mu}$ | Permutation module, Kostka number |
+| $\Delta^\lambda$ | Weyl module in the modular case |
+| $h_1$ | $p_1 = \sum_ix_i$, the single-row Pieri operator |
+
+## Further Reading
+
+- Issai Schur, "Über eine Klasse von Matrizen, die sich einer gegebenen Matrix zuordnen lassen" (Dissertation, Berlin, 1901), for the original duality.
+- Hermann Weyl, *The Classical Groups* (Princeton University Press, 1939), for the character theory of the classical groups and the duality in its modern form.
+- Hermann Weyl, "Theorie der Darstellung kontinuierlicher halb-einfacher Gruppen durch lineare Transformationen", *Mathematische Zeitschrift* 23 (1925), 271–309, for the character formula used in (d).
+- Gordon James and Adalbert Kerber, *The Representation Theory of the Symmetric Group* (Addison-Wesley, 1981), for the double centraliser theorem and the Schur algebra.
+- Stephen Donkin, "On Schur algebras and related algebras I", *Journal of Algebra* 104 (1986), 310–328, for the Schur algebra in arbitrary characteristic.
+- Jens Carsten Jantzen, *Representations of Algebraic Groups* (American Mathematical Society, 2nd ed. 2003), for the Weyl modules, the modular duality and the decomposition numbers.
+- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for an introduction with the Cauchy identity and the symmetric algebra.
+- Richard P. Stanley, *Enumerative Combinatorics*, Volume 2 (Cambridge University Press, 1999), for the symmetric function identities arising from the duality.

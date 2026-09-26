@@ -1,0 +1,189 @@
+# __Global Fields__
+
+## Introduction
+
+Two families of fields carry almost the same arithmetic. The first is the family of number fields, finite extensions of $\mathbb{Q}$, whose arithmetic was assembled in *Algebraic Number Theory*. The second is the family of finite extensions of a rational function field $\mathbb{F}_q(t)$ in one variable over a finite field. In both families the nonzero elements satisfy a product formula, the ring of integers is a Dedekind domain whose class group is finite, the unit group is finitely generated, there is a theory of places, ramification, discriminants and characters, and the reciprocity law of *Class Field Theory* holds verbatim. A field belonging to either family is called a **global field**, and the purpose of this article is to develop the part of the theory that is common to the two families and to say exactly where the two diverge.
+
+The unification is not a curiosity but a working principle: a theorem proved by a method that never uses the order structure of the rational numbers — the ideal theory, the class group, ramification, the different, the Riemann–Hurwitz formula, the reciprocity law, Chebotarev's theorem — is true in both families, and a theorem whose proof uses the ordering of $\mathbb{Q}$ or the size of a rational number — Minkowski's bound, the geometry of numbers, the analytic theory of the zeta function — has no counterpart for function fields and must be replaced. The article states the common theory with the same notation for both families, tabulates the analogies, and marks the metric and analytic statements that the present Part cannot supply: the multiplicative form of the product formula, the completions of a global field, the adele ring, the idele class group and the convergence of the zeta function all belong to later Parts.
+
+Throughout, $K$ is a global field, $\mathcal{O}_K$ its ring of integers (described separately for the two families), $\mathcal{O}_K^\times$ its unit group, $\operatorname{Cl}(\mathcal{O}_K)$ its class group, $h_K$ the class number, $P(K)$ the set of places of $K$, and $\mathfrak{p}$ a nonzero prime of $\mathcal{O}_K$. The theory of number fields is *Algebraic Number Theory*; of Dedekind domains, the class group and unique factorisation of ideals *Dedekind Domains and Ideal Class Groups*; of finite fields *Finite Fields*; of valuations and discrete valuation rings *Valuation Theory and Henselian Rings*; of the reciprocity law, ray class groups, conductors and the Frobenius *Class Field Theory*; of cyclotomic and Kummer extensions *Cyclotomic Fields* and *Kummer Theory*. The Riemann–Roch theorem for the function-field side isand the geometric reading of the function-field side is; both are. The completions, the local fields, the adele ring and the idele class group, together with the multiplicative form of the product formula, are the subject and of Part II, and this article does not use them.
+
+---
+
+## The Two Families
+
+**Definition.** A **global field** is either
+
+**(a)** a number field: a finite extension $K$ of $\mathbb{Q}$, so $[K:\mathbb{Q}] = n < \infty$; or
+
+**(b)** a function field: a finite separable extension $K$ of a rational function field $\mathbb{F}_q(t)$ in one variable over a finite field $\mathbb{F}_q$, so $[K:\mathbb{F}_q(t)] < \infty$.
+
+In case (b) the algebraic closure of $\mathbb{F}_q$ in $K$ is a finite field $\mathbb{F}_{q^s}$, called the **field of constants** of $K$, and $K$ is a function field over $\mathbb{F}_{q^s}$; the field $\mathbb{F}_q$ is **the** constant field if $s = 1$.
+
+**Remark.** The two cases are mutually exclusive, since a field of characteristic $0$ is not finite-dimensional over a rational function field of positive characteristic. They are not a classification ad hoc: a field is a global field if and only if it carries a family of places with the product formula, and one proves from that axiom that the field is either a number field or a function field as above. In the axiom form the two families are the only solutions, which is why they are treated as one notion.
+
+**Definition.** For a function field $K$ over $\mathbb{F}_q$ choose the ring of functions regular away from a fixed place — equivalently, in the geometric language, the affine coordinate ring of the curve minus a point. Concretely, if $K$ is the fraction field of its **ring of integers** $\mathcal{O}_K = \mathbb{F}_q[t, \ldots]$ at the place at infinity, then $\mathcal{O}_K$ is a Dedekind domain with field of fractions $K$, exactly as in the number-field case; the choice of the distinguished place is immaterial for the arithmetic statements below. The nonzero primes of $\mathcal{O}_K$ are in bijection with the **finite places** of $K$, and the excluded place is the **place at infinity**.
+
+**Example.** For $K = \mathbb{F}_q(t)$ the choice of the place at infinity given by the degree valuation gives $\mathcal{O}_K = \mathbb{F}_q[t]$, the nonzero primes of which are the ideals generated by the monic irreducible polynomials, each of degree $f$, with residue field $\mathbb{F}_{q^f}$; the remaining place, the one at infinity $\mathfrak{p}_\infty = (1/t)$, has residue field $\mathbb{F}_q$. For $q = 2$ the finite places of degree $1$ correspond to the irreducible polynomials $t$ and $t+1$, of degree $2$ to $t^2+t+1$, of degree $3$ to $t^3+t+1$ and $t^3+t^2+1$, and so on, the count of degree-$f$ places being $\frac1f\sum_{d \mid f}\mu(d)q^{f/d}$.
+
+**Definition.** For a global field $K$ define the **zeta function** of the divisor problem as the counting function of ideals of bounded norm, and the arithmetic invariants:
+
+- the **class number** $h_K = \lvert \operatorname{Cl}(\mathcal{O}_K)\rvert$, finite by Dedekind's theorem, valid in both families;
+- the **unit group** $\mathcal{O}_K^\times$ and its rank, which is $r_1 + r_2 - 1$ for a number field by Dirichlet's unit theorem and $\lvert S\rvert - 1$ (in the $S$-unit form) for a function field;
+- the **discriminant** $d_K$ for a number field and its analogue, the **divisor of the different**, for a function field, both of which record the ramified places.
+
+---
+
+## Places and Divisors
+
+**Definition.** A **place** of a global field $K$ is, for a number field, either a real or a complex embedding of $K$ up to conjugation — the **archimedean** places — or a nonzero prime of $\mathcal{O}_K$ — the **non-Archimedean** ones; for a function field every place is a nonzero prime of a coordinate ring, and all are non-Archimedean. Equivalently, a place is an equivalence class of nontrivial absolute values of $K$, the archimedean classes being those for which the associated absolute value fails the ultrametric inequality; absolute values, their equivalence and the completions they define belong and to Part II, and this article uses only the descriptions just listed. The place corresponding to a nonzero prime $\mathfrak{p}$ has **residue field** $\kappa(\mathfrak{p}) = \mathcal{O}_K/\mathfrak{p}$, of cardinality $q^{f}$ with $q$ the characteristic-cardinality of the field of constants and $f$ the degree of the place; the **degree** of the place is $f$, and $\deg \mathfrak{p} = f$.
+
+**Definition.** The **divisor group** $\operatorname{Div}(K)$ is the free abelian group on the places of $K$, and the **degree** of a divisor $D = \sum n_\mathfrak{p}\mathfrak{p}$ is $\deg D = \sum n_\mathfrak{p}\deg\mathfrak{p}$, an integer. The **principal divisor** of $x \in K^\times$ is
+
+$$
+\operatorname{div}(x) = \sum_{\mathfrak{p}} v_\mathfrak{p}(x)\,\mathfrak{p},
+$$
+
+with $v_\mathfrak{p}$ the discrete valuation of *Valuation Theory and Henselian Rings*; in the function-field case $\operatorname{div}(x)$ is the divisor of the zeros and poles of $x$ on the curve, with the place at infinity allowed to carry a negative coefficient. Two divisors are **linearly equivalent** if their difference is principal, and the class group of the curve, for a function field, is $\operatorname{Div}^0(K)/\{\operatorname{div}(x)\}$, the quotient of the degree-zero part.
+
+**Theorem (product formula, algebraic form).** Let $K$ be a global field and $x \in K^\times$.
+
+**(a)** If $K$ is a function field, then $\deg \operatorname{div}(x) = 0$; equivalently, a nonconstant function on the curve has as many zeros as poles, counted with multiplicity.
+
+**(b)** If $K$ is a number field, the corresponding product formula holds as well, but its formulation uses the normalised absolute values , one for each place, together with the degree of the place as the exponent. That formulation, and its pro, belong to that article and to Part II, where the absolute values and the completions exist; it is recorded here only to be cited, and nothing below uses it.
+
+**Proof.** (a) By multiplicativity it suffices to treat a nonzero element of the affine ring $\mathbb{F}_q[t]$, and the general case follows by taking the norm down to $\mathbb{F}_q(t)$, the degree being multiplicative in a finite extension. For $x = f \in \mathbb{F}_q[t]$ of degree $m$ the divisor is $\operatorname{div}(f) = \sum_{\mathfrak{p} \neq \mathfrak{p}_\infty}\nu_{\mathfrak{p}}(f)\,\mathfrak{p} - m\,\mathfrak{p}_\infty$: the affine zeros of $f$ contribute $\deg f = m$ and the pole at infinity contributes $-m$, so $\deg\operatorname{div}(f) = 0$. The number-field case (b) is quoted from the companion article. $\square$
+
+**Example.** For $K = \mathbb{F}_q(t)$ and $x = t^2(t+1)^{-1}$: the places are the primes $(t)$ and $(t+1)$ of degree $1$ and the place at infinity of degree $1$, and $\operatorname{div}(x) = 2(t) - (t+1) - \mathfrak{p}_\infty$, of degree $2 - 1 - 1 = 0$. The number-field case of the identity, stated in (b) and proved, is the balance between the prime factorisation of a rational number $x = a/b$ in lowest terms and the ordinary size of $x$: neither the numerator nor the denominator can be read off from the other alone, and the formula is the precise sense in which the two determine one another.
+
+**Remark.** The product formula is the algebraic content of the statement that the diagonal embedding of $K^\times$ into the product of its completions has image in the norm-one subgroup; the completions, the adele ring $\mathbb{A}_K$ and the idele class group are Part II's objects, and the product formula in its multiplicative form is proved there. In this Part the product formula is used only through its algebraic corollary (a).
+
+---
+
+## The Common Arithmetic
+
+### The Class Group and the Unit Theorem
+
+**Theorem (finiteness of the class group).** For a global field $K$ the class group $\operatorname{Cl}(\mathcal{O}_K)$ is finite; for a function field, $\operatorname{Div}^0(K)/\{\operatorname{div}(x)\}$ is finite of order $h_K$.
+
+**Proof sketch.** For a number field this is Dedekind's theorem, with the Minkowski bound, as in *Algebraic Number Theory* and *Dedekind Domains and Ideal Class Groups*. For a function field one argues with the Riemann–Roch theorem: the space of functions with a given pole divisor is finite-dimensional, whence each degree-zero divisor class has a representative in a bounded range of divisors and there are finitely many of those. The geometric proof uses the dimensions counted. $\square$
+
+**Theorem (unit theorem).** Let $K$ be a global field, and let $S$ be a finite nonempty set of places containing the archimedean ones, with $\mathcal{O}_{K,S} = \{x \in K : v_\mathfrak{p}(x) \geq 0 \ \text{for } \mathfrak{p} \notin S\}$ the ring of $S$-integers.
+
+**(a)** If $K$ is a number field, then $\mathcal{O}_{K,S}^\times \cong \mu_K \oplus \mathbb{Z}^{\lvert S\rvert - 1}$, where $\mu_K$ is the group of roots of unity in $K$.
+
+**(b)** If $K$ is a function field with field of constants $\mathbb{F}_q$, then $\mathcal{O}_{K,S}^\times \cong \mathbb{F}_q^\times \oplus \mathbb{Z}^{\lvert S\rvert - 1}$.
+
+**Theorem (Dirichlet, in the number-field case).** For a number field $K$ of signature $(r_1,r_2)$ and $S$ the set of archimedean places, this reads $\mathcal{O}_K^\times \cong \mu_K \oplus \mathbb{Z}^{r_1+r_2-1}$, and the **regulator** $\operatorname{Reg}_K$ is the covolume of the image of the units under the logarithmic embedding.
+
+**Proof sketch.** The $S$-units are the elements with $v_\mathfrak{p}(x) \geq 0$ for $\mathfrak{p} \notin S$. The group $\mathcal{O}_{K,S}^\times$ is finitely generated because the class group is finite and the valuations at the places of $S$ give a homomorphism from it to a free abelian group of rank $\lvert S\rvert - 1$ with finite kernel, the roots of unity in the number-field case and the constant field in the function-field case. For a function field this homomorphism is read off from the degree map on divisors, which is available here; for a number field the classical proof that the image is discrete uses the logarithmic embedding of the units in a real vector space, a construction that belongs to Part II and Part III, and it is not given here. $\square$
+
+**Example.** For $K = \mathbb{F}_q(t)$ and $S = \{\mathfrak{p}_\infty\}$: $\mathcal{O}_{K,S} = \mathbb{F}_q[t]$, whose units are $\mathbb{F}_q^\times$, of rank $\lvert S\rvert - 1 = 0$; this is the exact analogue of $\mathbb{Z}$, whose units are $\{\pm1\}$. For $K = \mathbb{F}_q(t)$ and $S = \{\mathfrak{p}_\infty, (t), (t+1)\}$ the $S$-units have rank $2$: the elements $t$ and $t+1$ are fundamental, and every $S$-unit is $\lambda t^m(t+1)^n$ with $\lambda \in \mathbb{F}_q^\times$ and $m,n \in \mathbb{Z}$. For $K = \mathbb{Q}$ and $S = \{2, 3, \infty\}$ the $S$-units are $\pm 2^m3^n$, of rank $2$, the analogue of the function-field example with the same number of places.
+
+**Example.** The two examples just given are mirror images, as the following table shows.
+
+| | $\mathbb{Z}$ | $\mathbb{F}_q[t]$ |
+|---|---|---|
+| field of fractions | $\mathbb{Q}$ | $\mathbb{F}_q(t)$ |
+| finitely many units? | $\{\pm1\}$, finite | $\mathbb{F}_q^\times$, finite |
+| primes | rational primes | monic irreducible polynomials |
+| residue field at a prime | $\mathbb{F}_p$ | $\mathbb{F}_{q^f}$ |
+| class group | trivial | trivial |
+| $S$-units, $\lvert S\rvert$ places | rank $\lvert S\rvert - 1$ | rank $\lvert S\rvert - 1$ |
+| product formula | deferred to Part II | $\deg\operatorname{div}(x) = 0$ |
+
+### Ramification, the Different and the Genus
+
+**Theorem (Hilbert's ramification theory, global form).** Let $L/K$ be a finite separable extension of global fields and $\mathfrak{p}$ a place of $K$. Then $\mathfrak{p}\mathcal{O}_L = \mathfrak{P}_1^{e_1}\cdots\mathfrak{P}_g^{e_g}$ with $\sum e_if_i = [L:K]$, the place $\mathfrak{p}$ ramifies if and only if it divides the relative discriminant $\mathfrak d_{L/K}$, and if and only if it divides the different $\mathfrak{D}_{L/K} = \prod_\mathfrak{P}\mathfrak{P}^{d(\mathfrak{P}/\mathfrak{p})}$ with $d(\mathfrak{P}/\mathfrak{p}) \geq e-1$, equality holding if and only if the residue characteristic does not divide $e$.
+
+**Theorem (Riemann–Hurwitz).** Let $L/K$ be a finite separable extension of function fields, $[L:K] = m$, let $F_L$ be the constant field of $L$ and $K' = KF_L$, so that $[L:K'] = m/[F_L:F_K]$, and let $g_L$, $g_K$ be the genera of $L$ and $K$. Then
+
+$$
+2g_L - 2 = [L:K'](2g_K - 2) + \deg \mathfrak{D}_{L/K},
+$$
+
+where $\deg \mathfrak{D}_{L/K}$ is the degree of the different of $L/K$, a nonnegative integer vanishing exactly when the extension is unramified.
+
+**Proof sketch.** The extension $K'/K$ is a constant field extension: it is unramified, with $e = 1$, $f = [F_L:F_K]$ and $g_{K'} = g_K$ at every place, and its different is trivial. The geometric extension $L/K'$ has the same constants for $L$ and $K'$, and for it a place $\mathfrak{p}$ of $K'$ with places $\mathfrak{P}_1,\ldots,\mathfrak{P}_g$ above it contributes $f_i - 1$ to the difference of the two sides from each prime, together with the different exponent $d(\mathfrak{P}_i/\mathfrak{p})$; summing over the places of $K'$ and comparing with the definition of the genus through the Riemann–Roch theorem — the dimension of the space of functions with prescribed poles — gives the formula for $L/K'$, and multiplicativity of the different in $K \subseteq K' \subseteq L$ with $\mathfrak{D}_{K'/K} = 1$ gives the stated form. The genus is defined by the Riemann–Roch theorem. $\square$
+
+**Example.** Let $K = \mathbb{F}_q(t)$ with $g_K = 0$ and let $L = K(y)$ with $y^2 = f(t)$, $f$ squarefree of degree $d$. The places of $K$ are the roots of $f$ and the place at infinity. A root of $f$ ramifies with $e = 2$, $f = 1$ and different exponent $d(\mathfrak{P}/\mathfrak{p}) = 1$, since the residue characteristic is not $2$; the place at infinity ramifies exactly when $d$ is odd. Hence
+
+$$
+\deg \mathfrak{D}_{L/K} = \begin{cases} d, & d \text{ even},\\ d+1, & d \text{ odd},\end{cases}
+\qquad
+g_L = \frac{d-2}{2} \ \ (d \text{ even}), \qquad g_L = \frac{d-1}{2} \ \ (d \text{ odd}).
+$$
+
+Thus $d = 1$ or $2$ gives the genus $0$ (a conic), $d = 3$ or $4$ gives genus $1$ (the elliptic curve), and $d = 2g+1$ or $2g+2$ gives genus $g$: the hyperelliptic curve $y^2 = f(t)$ has genus $\lfloor (d-1)/2 \rfloor$, the standard family, verified at $d = 5$, where $2g_L - 2 = 2(-2) + 6 = 2$ gives $g_L = 2$.
+
+**Example.** Let $q$ be odd and $L = \mathbb{F}_q(t)(\sqrt t) = \mathbb{F}_q(u)$ with $u = \sqrt t$, over $K = \mathbb{F}_q(t) = \mathbb{F}_q(u^2)$. The extension is geometric — the constants of $L$ are still $\mathbb{F}_q$ — of degree $2$, and it is ramified exactly at the two places where $t$ has odd valuation, namely $(t)$ and the place at infinity, since $v_{(t)}(t) = 1$ and $v_{\infty}(t) = -1$. Each ramified place has $e = 2$, $f = 1$ and different exponent $d = 1$, because the residue characteristic does not divide $e$; hence $\deg\mathfrak{D}_{L/K} = 2$ and $2g_L - 2 = 2(2\cdot 0 - 2) + 2 = -2$, giving $g_L = 0$, as it must for the rational function field $\mathbb{F}_q(u)$.
+
+**Remark (constant field extensions).** If $K$ is a function field with constant field $\mathbb{F}_{q^s}$ and $L = K\mathbb{F}_{q^{st}}$, then $L/K$ is unramified, every place has $e = 1$, $f = t$, $g = 1$, and the genus is unchanged: $g_L = g_K$. In the general Riemann–Hurwitz formula this is expressed by the factor $[L:K'] = 1$ when $K' = KF_L = L$; taking $m$ in place of $[L:K']$ would give the false value $g_L = -1$ for $K = \mathbb{F}_q(t)$ and $L = \mathbb{F}_{q^2}(t)$, both of genus $0$, which is why the formula is stated with $K'$. A constant field extension therefore contributes no different but does contribute the residue degrees $f = t$, and the two effects balance exactly in the genus.
+
+---
+
+## Class Field Theory over Global Fields
+
+**Theorem (Artin reciprocity for global fields).** Let $L/K$ be a finite abelian extension of global fields. There is a modulus $\mathfrak{m}$ of $K$, a formal product of a divisor supported on the ramified places and the archimedean places in the number-field case, such that the Artin map of *Class Field Theory*
+
+$$
+\left(\frac{L/K}{\cdot}\right) : I_K^{\mathfrak m} \longrightarrow \operatorname{Gal}(L/K), \qquad \mathfrak{a} \longmapsto \left(\frac{L/K}{\mathfrak{a}}\right),
+$$
+
+is a surjective homomorphism with kernel $P_\mathfrak{m}\operatorname{N}_{L/K}(I_L^{\mathfrak m})$; it induces an isomorphism of the ray class group $\operatorname{Cl}_\mathfrak{m}(K)$ modulo the norm group with the Galois group, and the map $H \mapsto L_H$ from congruence subgroups to abelian extensions is a bijection with the extension theorem of Takagi. Every statement in *Class Field Theory* holds verbatim for function fields, with the single modification that the archimedean part of the modulus is absent.
+
+**Theorem (Chebotarev, infinitude form).** Let $L/K$ be a finite Galois extension of global fields and $C$ a conjugacy class of $\operatorname{Gal}(L/K)$. Then there are infinitely many places $\mathfrak{p}$ of $K$, unramified in $L$, whose Frobenius conjugacy class is $C$.
+
+**Example.** For a function field the reciprocity law specialises to the theory of the jacobian and of the Hilbert class field of the curve: for $L = K(\alpha)$ with $\alpha^m = x \in K^\times$ and $\mu_m \subseteq K$, Kummer theory of *Kummer Theory* describes the extension and the Artin symbol is given by the $m$-th power residue symbol $\left(\frac{x}{\mathfrak p}\right)_m = x^{(\operatorname{N}\mathfrak{p}-1)/m} \bmod \mathfrak p$, exactly as for number fields. The reciprocity law for the power residue symbol is the statement that $\prod_{\mathfrak p} \left(\frac{x}{\mathfrak p}\right)_m = 1$ over the places of $K$, which is the multiplicative product formula in disguise.
+
+**Example ($\mathbb{F}_q(t)$ and the constant field extension).** The maximal abelian extension of $\mathbb{F}_q(t)$ unramified away from the place at infinity and of degree dividing $n$ is the constant field extension $\mathbb{F}_{q^n}(t)$; the Artin map sends the place $\mathfrak{p}_\infty$ — the degree valuation — to the Frobenius $x \mapsto x^q$ of $\mathbb{F}_{q^n}/\mathbb{F}_q$, and this is the function-field analogue of the Kronecker–Weber theorem for $\mathbb{Q}$, in the form computed in *Cyclotomic Fields*.
+
+**Theorem (Hasse norm theorem, statement).** Let $L/K$ be a cyclic extension of global fields and $x \in K^\times$. Then $x$ is a norm from $L$ if and only if it is a norm from $L_\mathfrak{P}$ for every place $\mathfrak{P}$ of $L$; the fields $L_\mathfrak{P}$ are the completions of $L$, which are constructed and in Part II, and the theorem is therefore stated rather than used here.
+
+---
+
+## Summary
+
+A global field is either a number field or a finite extension of a rational function field $\mathbb{F}_q(t)$ over a finite field, and the two families share an arithmetic: a Dedekind domain of integers, a finite class group, a finitely generated unit group of rank $\lvert S\rvert-1$ for a set $S$ of places, a theory of places with degrees $\deg\mathfrak{p} = f$ and residue fields $\mathbb{F}_{q^f}$, a divisor group with a degree map, a ramification theory with a different and a discriminant, a Riemann–Hurwitz formula $2g_L-2 = [L:K](2g_K-2)+\deg\mathfrak{D}_{L/K}$, and the reciprocity law, the existence theorem of Takagi and Chebotarev's theorem, all verbatim.
+
+The product formula is the invariant that binds the places together: in its algebraic form for function fields, a principal divisor has degree zero; in its multiplicative form, the product of the normalised absolute values of $x$ over all places is $1$, a statement about absolute values and hence one belonging and to Part II. Likewise the completions, the local fields, the adele ring, the idele class group and the analytic theory of the zeta function lie in later Parts, and the metric proofs of Dirichlet's unit theorem, of the finiteness of the class group for number fields via Minkowski's bound, and of the Hasse norm theorem are deferred to them. What remains, and what this article is about, is the order-free, metric-free arithmetic that the two families of global fields have in common.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $K$, $L$ | Global fields |
+| $\mathbb{F}_q$ | Finite field of $q$ elements, the constant field of a function field |
+| $\mathbb{F}_q(t)$ | Rational function field |
+| $\mathcal{O}_K$ | Ring of integers of $K$ |
+| $P(K)$ | Set of places of $K$ |
+| $\mathfrak{p}, \mathfrak{P}$ | Places of $K$, of $L$ above $\mathfrak{p}$ |
+| $\kappa(\mathfrak{p})$, $\deg\mathfrak{p}$ | Residue field $\mathcal{O}_K/\mathfrak{p}$ of order $q^{f}$; the degree $f$ of the place |
+| $v_\mathfrak{p}$ | The discrete valuation at $\mathfrak{p}$ |
+| $\operatorname{Div}(K)$, $\deg D$ | Divisor group, degree of a divisor |
+| $\operatorname{div}(x)$ | Principal divisor of $x$ |
+| $\operatorname{Cl}(\mathcal{O}_K)$, $h_K$ | Class group, class number |
+| $\mathcal{O}_{K,S}$, $S$ | Ring of $S$-integers, finite set of places |
+| $\mathcal{O}_K^\times$, $\mu_K$ | Unit group, roots of unity |
+| $\operatorname{Reg}_K$ | Regulator |
+| $r_1$, $r_2$ | Signature of a number field |
+| $e, f, g$ | Ramification index, residue degree, number of places above |
+| $\mathfrak{D}_{L/K}$, $\mathfrak{d}_{L/K}$ | Different, discriminant |
+| $g_K$ | Genus of a function field |
+| $I_K^{\mathfrak m}$, $P_\mathfrak m$, $\operatorname{Cl}_\mathfrak m(K)$ | Ideals coprime to $\mathfrak m$, principal congruence subgroup, ray class group |
+| $\left(\frac{L/K}{\mathfrak a}\right)$ | Artin symbol |
+| $\left(\frac{x}{\mathfrak p}\right)_m$ | $m$-th power residue symbol |
+| $\mathbb{A}_K$ | Adele ring, named only, a Part II object |
+
+
+
+## Further Reading
+
+- Emil Artin and John Tate, *Class Field Theory* (Benjamin, 1967), for the axiomatic treatment of global fields by the product formula and for the reciprocity law in the global setting.
+- André Weil, *Basic Number Theory* (Springer, 1967), for the unified treatment of number fields and function fields, and for the adelic formulation.
+- Michael Rosen, *Number Theory in Function Fields* (Springer, 2002), for the function-field side in full: divisors, class groups, the zeta function, and the analogue of the prime number theorem.
+- Jürgen Neukirch, *Algebraic Number Theory* (Springer, 1999), for the number-field side organised by localisation.
+- Ernst Steinitz, "Algebraische Theorie der Körper", *Journal für die reine und angewandte Mathematik* 137 (1910), 167–309, for the structure theory of fields underlying the definition of a function field.
+- Helmut Hasse, *Number Theory* (Springer, 1980), for the classical treatment of the Hasse norm theorem and the Hilbert symbol.
+- Carlos Moreno, *Algebraic Curves over Finite Fields* (Cambridge University Press, 1991), for the geometric reading of the function-field theory, including the Riemann–Roch and Riemann–Hurwitz statements used here.
+- Jean-Pierre Serre, *Local Fields* (Springer, 1979), for the local theory whose global form is sampled in the last two sections.

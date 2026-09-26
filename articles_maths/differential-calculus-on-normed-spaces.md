@@ -1,0 +1,347 @@
+
+# __Differential Calculus on Normed Spaces__
+
+## Introduction
+
+The derivative of a function of one real variable is a number, the derivative of a function of several variables is a matrix of partial derivatives, and both are approximations of the function by a linear map. On a normed space the second description is the invariant one and the first two are its coordinate shadows, which is why the calculus is stated once, for maps between normed spaces, and then read back in coordinates. The central object is the **Fréchet derivative**: the bounded linear map that best approximates $f$ at a point, with an error that vanishes faster than the displacement. Every rule of the elementary calculus — the chain rule, the product rule, the mean value inequality, Taylor's theorem — is a statement about that map, and each of them survives the passage to infinite dimension without change of form, provided the correct hypothesis is placed where completeness, and not the norm alone, is the thing that matters.
+
+The substance of the article is the local theory. The derivative is defined and its uniqueness and continuity are established; the rules of differentiation are collected; higher derivatives are identified with bounded symmetric multilinear maps and Taylor's theorem is given with a remainder; and the two structural theorems, the inverse function theorem and the implicit function theorem, are proved by one and the same device, the contraction mapping principle applied to a well-chosen auxiliary map. That principle is stated here, in the form the calculus needs, because the differential calculus of this article and the ordinary differential equations of the extension of this Part both rely on it, and because, treats its systematic theory.
+
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $X$ and $Y$ are normed spaces over $\mathbb{K}$, and $U \subseteq X$ is open. The basic theory of norms, bounded maps, the operator norm, completeness and the Baire-based cornerstones is that of the companion articles *Normed and Banach Spaces* and *Banach and Hilbert Spaces*; the general locally convex setting is that of *Locally Convex Spaces*. Integration of vector-valued functions, used only for the integral form of the remainder, is the Bochner integral, whose properties follow from the scalar theory of *Measure Theory and Integration* by duality. The differentiation of measures, the differentiation theory of functions of a real variable and the differential equations that the theorems below make solvable are not treated here: the first two belong to *Measure Theory and Integration* and to *Modes of Convergence*, and the last to the extension of this Part that contains. The differential geometry of manifolds, where the same calculus is applied to the tangent bundle, belongs to Part II and to *Smooth Manifolds and Differential Geometry*.
+
+No physics is invoked.
+
+## Bounded Multilinear Maps
+
+### The Space of Multilinear Maps
+
+**Definition.** For normed spaces $X_1,\dots,X_k,Y$ a map $A:X_1 \times \cdots \times X_k \to Y$ is **$k$-linear** if it is linear in each argument separately. It is **bounded** if there is $C$ with
+
+$$
+\|A(x_1,\dots,x_k)\| \le C\,\|x_1\|\cdots\|x_k\|
+$$
+
+for all $x_i$, and the least such $C$ is the **norm**
+
+$$
+\|A\|=\sup_{\|x_i\|\le1}\|A(x_1,\dots,x_k)\| .
+$$
+
+The set of bounded $k$-linear maps is written $\mathcal L(X_1,\dots,X_k;Y)$, and $\mathcal L^k(X;Y)$ when all the domains are $X$.
+
+**Proposition.** Let $A$ be $k$-linear. Then $A$ is continuous if and only if it is bounded, and if and only if it is continuous at the origin. Under the norm above, $\mathcal L(X_1,\dots,X_k;Y)$ is a normed space, complete when $Y$ is complete, and the canonical isometry
+
+$$
+\mathcal L(X_1,\dots,X_k;Y) \longrightarrow \mathcal L\bigl(X_1,\mathcal L(X_2,\dots,X_k;Y)\bigr)
+$$
+
+identifies a $k$-linear map with the linear map obtained by fixing the first argument.
+
+*Proof.* Boundedness gives, by the telescoping lemma below, $\|A(x_1,\dots,x_k)-A(x_1',\dots,x_k')\|\le\|A\|\sum_j\|x_j-x_j'\|\prod_{i\neq j}\max(\|x_i\|,\|x_i'\|)$, so $A$ is continuous; conversely continuity at $0$ gives a ball on which $A$ is bounded by $1$, and homogeneity of each argument extends the bound to all of the product. The norm axioms and the identification are immediate from the definitions, and completeness is the completeness of $B(X_1,\cdot)$ iterated, by *Normed and Banach Spaces*. $\square$
+
+**Definition.** When $X_1=\cdots=X_k=X$, the **symmetrisation** of $A \in \mathcal L^k(X;Y)$ is
+
+$$
+\operatorname{Sym}(A)(x_1,\dots,x_k)=\frac1{k!}\sum_{\sigma \in S_k}A(x_{\sigma(1)},\dots,x_{\sigma(k)}),
+$$
+
+and $A$ is **symmetric** if $A=\operatorname{Sym}(A)$. The subspace $\mathcal L^k_{\mathrm{sym}}(X;Y)$ of symmetric bounded $k$-linear maps is closed in $\mathcal L^k(X;Y)$.
+
+The symmetrisation generalises to $k$ arguments the formula $\operatorname{Sym}(A)(x_1,x_2)=\tfrac12\bigl(A(x_1,x_2)+A(x_2,x_1)\bigr)$ for bilinear forms, whose fixed points are the symmetric ones, and it will be used to symmetrise ordinary iterated derivatives.
+
+### The Telescoping Identity
+
+The basic estimate behind the chain rule and Taylor's theorem is the following identity, which converts a difference of products into a sum of products of differences.
+
+**Lemma (telescoping).** For a $k$-linear $A$ and arbitrary vectors,
+
+$$
+A(x_1,\dots,x_k)-A(y_1,\dots,y_k)=\sum_{j=1}^{k}A(y_1,\dots,y_{j-1},x_j-y_j,x_{j+1},\dots,x_k),
+$$
+
+and consequently
+
+$$
+\|A(x_1,\dots,x_k)-A(y_1,\dots,y_k)\| \le \|A\|\sum_{j=1}^{k}\|x_j-y_j\|\prod_{i \neq j}\max(\|x_i\|,\|y_i\|).
+$$
+
+*Proof.* Add and subtract the intermediate tuples $A(y_1,\dots,y_{j-1},x_j,\dots,x_k)$; each successive difference changes exactly one argument, and the terms cancel in pairs except the first and the last. $\square$
+
+## The Fréchet Derivative
+
+### Definition and Uniqueness
+
+**Definition.** Let $f:U \to Y$. The function $f$ is **differentiable at $x \in U$** if there is a bounded linear map $Df(x) \in B(X,Y)$ with
+
+$$
+f(x+h)=f(x)+Df(x)h+o(\|h\|), \qquad \text{that is} \qquad \lim_{h \to 0}\frac{\|f(x+h)-f(x)-Df(x)h\|}{\|h\|}=0 .
+$$
+
+The map $Df(x)$ is the **Fréchet derivative** of $f$ at $x$. The limit is taken over $h \neq 0$ with $x+h \in U$, and it is a limit in the norm of $Y$. If $f$ is differentiable at every point of $U$ and $x \mapsto Df(x)$ is continuous as a map $U \to B(X,Y)$, then $f$ is of class $C^1$, written $f \in C^1(U,Y)$.
+
+**Proposition (uniqueness).** If $f$ is differentiable at $x$, the derivative is unique.
+
+*Proof.* If $L,M$ both satisfy the definition, then $\|(L-M)h\|=o(\|h\|)$, and for fixed $h \neq 0$ homogeneity gives $\|(L-M)h\|=\frac1t\|(L-M)(th)\| \to 0$ as $t \to 0$, so $(L-M)h=0$ for every $h$. $\square$
+
+**Proposition (differentiable implies continuous).** If $f$ is differentiable at $x$ then $f$ is continuous at $x$.
+
+*Proof.* $\|f(x+h)-f(x)\|\le\|Df(x)\|\|h\|+o(\|h\|) \to 0$. $\square$
+
+**Example.** (i) A constant function has derivative $0$; a bounded linear map $T$ has $DT(x)=T$ everywhere, since $T(x+h)-T(x)-Th=0$. A bounded $k$-linear map $A$ is differentiable with derivative computed below.
+
+(ii) The norm on a real Hilbert space $H$ is differentiable away from $0$ with $D\|x\|h=\langle h,x\rangle/\|x\|$, and it is not differentiable at $0$; over $\mathbb{C}$ the same formula is the derivative of $\|x\|$ as a real-linear map, $D\|x\|h=\operatorname{Re}\langle h,x\rangle/\|x\|$, the norm being real-valued and not complex differentiable. The square of the norm is differentiable everywhere with $D(\|x\|^2)h=2\operatorname{Re}\langle h,x\rangle$.
+
+(iii) The Euclidean norm $f:\mathbb{R}^n \to \mathbb{R}$, $f(x)=\|x\|_2$, has derivative $Df(x)h=\langle h,x\rangle/\|x\|$ away from the origin, and over $\mathbb{C}^n$ the same expression with the real part is the derivative as a real-linear map; the norm is not differentiable at the origin, where the directional derivatives $\pm1$ differ.
+
+### The Rules of Differentiation
+
+**Theorem (algebra of derivatives).** Let $f,g:U \to Y$ be differentiable at $x$ and let $T \in B(Y,Z)$. Then:
+
+(i) $D(f+g)(x)=Df(x)+Dg(x)$ and $D(\lambda f)(x)=\lambda\,Df(x)$;
+
+(ii) $D(T \circ f)(x)=T \circ Df(x)$;
+
+(iii) if $\varphi:U \to \mathbb{K}$ is differentiable at $x$ then so is $\varphi f$, with $D(\varphi f)(x)h=\varphi(x)Df(x)h+(D\varphi(x)h)f(x)$.
+
+*Proof.* The difference quotients of (i) and (ii) are the corresponding combinations of the difference quotients of $f$ and $g$, each of which is $o(\|h\|)$; for (iii), $(\varphi f)(x+h)-(\varphi f)(x)=\varphi(x)Df(x)h+\varphi(x)o(\|h\|)+(D\varphi(x)h)f(x)+(D\varphi(x)h)Df(x)h+o(\|h\|)$ and the last two terms are $O(\|h\|^2)$, hence $o(\|h\|)$. $\square$
+
+**Theorem (chain rule).** Let $f:U \to V$ and $g:V \to Z$ with $V \subseteq Y$ open. If $f$ is differentiable at $x$ and $g$ is differentiable at $f(x)$, then $g \circ f$ is differentiable at $x$ with
+
+$$
+D(g \circ f)(x)=Dg(f(x)) \circ Df(x).
+$$
+
+*Proof.* Write $g(f(x+h))-g(f(x))=Dg(f(x))\bigl(f(x+h)-f(x)\bigr)+r\bigl(f(x+h)-f(x)\bigr)$ with $r(q)=o(\|q\|)$; substitute $f(x+h)-f(x)=Df(x)h+o(\|h\|)$ and use the boundedness of $Dg(f(x))$ and the estimate $\|r(q)\|\le\varepsilon\|q\|$ for small $\|q\|$. $\square$
+
+**Corollary (differentiation of $k$-linear maps and of polynomials).** A bounded $k$-linear map $A$ is differentiable at every point, and
+
+$$
+DA(x_1,\dots,x_{k-1})h=\sum_{j=1}^{k}A(x_1,\dots,x_{j-1},h,x_{j+1},\dots,x_{k}).
+$$
+
+For $k=2$ this is the product rule $DA(x_1,x_2)(h_1,h_2)=A(h_1,x_2)+A(x_1,h_2)$; a polynomial map built from bounded multilinear maps by composition, addition and scalar multiplication is differentiable, and its derivative is computed by the chain rule.
+
+*Proof.* The telescoping lemma gives $A(x+h)-A(x)-\sum_jA(\dots,h,\dots)=$ a sum of terms with at least two factors $h$, bounded by $\|A\|\,k(k-1)\|h\|^2\max(\|x\|,\|x+h\|,1)^{k-2}=o(\|h\|)$. $\square$
+
+### Partial Derivatives and the Total Derivative
+
+**Definition.** Let $X=X_1 \times \cdots \times X_n$ be a product of normed spaces with any of the equivalent product norms, and let $x=(x_1,\dots,x_n)$. The **partial derivative** of $f:U \to Y$ with respect to the $i$-th variable at $x$ is the derivative at $x_i$ of the map $u \mapsto f(x_1,\dots,x_{i-1},u,x_{i+1},\dots,x_n)$, written $D_if(x) \in B(X_i,Y)$; it is computed on the line through $x$ in the direction of $X_i$.
+
+**Theorem.** If $f$ is differentiable at $x$ with $X=X_1\times\cdots\times X_n$, then all partial derivatives exist and
+
+$$
+Df(x)(h_1,\dots,h_n)=\sum_{i=1}^{n}D_if(x)h_i .
+$$
+
+Conversely, if the partial derivatives exist and are continuous on a neighbourhood of $x$, then $f$ is differentiable at $x$ and the formula holds.
+
+*Proof.* The first statement is the chain rule applied to the coordinate injections $u \mapsto (0,\dots,u,\dots,0)$. For the converse, write $f(x+h)-f(x)=\sum_i\bigl[f(x_1,\dots,x_i+h_i,x_{i+1},\dots,x_{n})-f(x_1,\dots,x_{i-1},x_i,x_{i+1}+h_{i+1},\dots,x_n+h_n)\bigr]$ and apply the mean value inequality in the $i$-th variable, whose derivative is $D_if$ at the intermediate point; continuity of $D_if$ at $x$ makes the sum $\sum_iD_if(x)h_i+o(\|h\|)$. $\square$
+
+**Remark.** Continuity of the partial derivatives is essential: the function $f:\mathbb{R}^2 \to \mathbb{R}$ with $f(x,y)=xy(x^2+y^2)^{-1}$ for $(x,y)\neq0$ and $f(0,0)=0$ has both partial derivatives at $0$ but is not even continuous there, because along the curve $y=x$ the value is $\tfrac12$. In the converse direction it is the *continuity* of the partials, not their existence, that yields differentiability.
+
+### The Mean Value Inequality
+
+The mean value theorem of the real calculus has no direct vector-valued analogue: the function $f(t)=e^{it}$ on $[0,2\pi]$ satisfies $f(2\pi)-f(0)=0$ while $f'$ never vanishes. What survives is an inequality.
+
+**Theorem (mean value inequality).** Let $U$ be convex, let $f:U \to Y$ be continuous on $U$ and differentiable on the interior, and suppose $\|Df(z)\|\le M$ for all $z$ in the interior. Then
+
+$$
+\|f(x)-f(y)\| \le M\|x-y\| \qquad \text{for all } x,y \in U .
+$$
+
+*Proof.* Fix $x,y$, fix $\varepsilon>0$ and put $\varphi(t)=f(x+t(y-x))$ for $t \in [0,1]$. Let $\Phi$ be the set of $t \in [0,1]$ such that $\|\varphi(s)-\varphi(0)\|\le(M+\varepsilon)s\|y-x\|$ for every $s \le t$. The set is nonempty, since $0 \in \Phi$, and closed by continuity. If $t \in \Phi$ with $t<1$, then differentiability at $t$ gives $\|\varphi(t+h)-\varphi(t)-\varphi'(t)h\|\le\varepsilon h\|y-x\|$ for all sufficiently small $h>0$, and $\|\varphi'(t)\|\le M\|y-x\|$, whence
+
+$$
+\|\varphi(t+h)-\varphi(0)\| \le (M+\varepsilon)t\|y-x\|+(M+\varepsilon)h\|y-x\|=(M+\varepsilon)(t+h)\|y-x\|,
+$$
+
+so $t+h \in \Phi$. Hence $\Phi$ is open in $[0,1]$ as well as closed and nonempty, so $\Phi=[0,1]$; taking $t=1$ and letting $\varepsilon \to 0$ gives the inequality. $\square$
+
+**Corollary.** If $f$ is differentiable on a convex $U$ with $Df=0$ there, then $f$ is constant. If $f$ and $g$ have the same derivative on a convex $U$, they differ by a constant.
+
+## Higher Derivatives and Taylor's Theorem
+
+### The Second Derivative and Symmetry
+
+**Definition.** Let $f:U \to Y$ be differentiable. Its derivative is a map $Df:U \to B(X,Y)$, and if that map is differentiable at $x$ its derivative is the **second derivative**
+
+$$
+D^2f(x)=D(Df)(x) \in B\bigl(X,B(X,Y)\bigr)\cong \mathcal L^2(X;Y),
+$$
+
+read as a bounded bilinear map by $D^2f(x)(h,k)=\bigl(D^2f(x)h\bigr)k$. Inductively, the $k$-th derivative is the bounded $k$-linear map
+
+$$
+D^kf(x) \in \mathcal L^k(X;Y),
+$$
+
+defined wherever the preceding derivative is differentiable, and $f$ is of class $C^k$ if $D^kf$ exists and is continuous on $U$; $f$ is **smooth** if it is of class $C^k$ for every $k$.
+
+**Theorem (symmetry of the second derivative).** If $f$ is twice differentiable at $x$ and $D^2f$ is continuous at $x$, then $D^2f(x)$ is symmetric:
+
+$$
+D^2f(x)(h,k)=D^2f(x)(k,h) \qquad \text{for all } h,k \in X .
+$$
+
+*Proof.* For small $s,t$ form the second difference $\Delta=f(x+sh+tk)-f(x+sh)-f(x+tk)+f(x)$, which is symmetric in $h,k$. Applying the mean value inequality twice, first to $u \mapsto f(x+u+tk)-f(x+u)$ whose derivative at $x+u$ is $Df(x+u+tk)-Df(x+u)$, and then to the map $u \mapsto Df(x+u+tk)-Df(x+u)$, gives $\Delta=D^2f(x)(sh,tk)+o(st)$ and likewise with $h,k$ exchanged; comparing and letting $s,t \to 0$ gives the result. $\square$
+
+**Corollary.** $D^kf(x)(h_1,\dots,h_k)$ is unchanged under permutations of $h_1,\dots,h_k$, so $D^kf(x)$ is symmetric; equivalently $D^kf(x)$ takes its values in $\mathcal L^k_{\mathrm{sym}}(X;Y)$. In coordinates on $\mathbb{R}^n$ the second derivative is the Hessian matrix $\bigl(\partial_i\partial_jf(x)\bigr)$ and its symmetry is the equality of mixed partial derivatives.
+
+### Taylor's Theorem
+
+**Theorem (Taylor with integral remainder).** Let $f:U \to Y$ be of class $C^{k+1}$ and let $x \in U$, with the segment from $x$ to $x+h$ contained in $U$. Then
+
+$$
+f(x+h)=\sum_{j=0}^{k}\frac{1}{j!}D^jf(x)h^j+\int_0^1\frac{(1-t)^k}{k!}D^{k+1}f(x+th)h^{k+1}\,dt,
+$$
+
+where $h^j$ abbreviates $(h,\dots,h)$ and the integral is the Bochner integral of the continuous $Y$-valued function $t \mapsto D^{k+1}f(x+th)h^{k+1}$. Consequently
+
+$$
+\Bigl\|f(x+h)-\sum_{j=0}^{k}\frac{1}{j!}D^jf(x)h^j\Bigr\| \le \frac{\|h\|^{k+1}}{(k+1)!}\sup_{0\le t\le1}\|D^{k+1}f(x+th)\| .
+$$
+
+*Proof.* Put $\varphi(t)=f(x+th)$ for $t \in [0,1]$, so that $D\varphi(t)=Df(x+th)h$ by the chain rule and, by induction, $D^j\varphi(t)=D^jf(x+th)h^j$. The scalar-parameter formula $\varphi(1)=\sum_{j\le k}\varphi^{(j)}(0)/j!+\int_0^1(1-t)^k\varphi^{(k+1)}(t)/k!\,dt$ follows from repeated integration by parts, and substituting the expressions for $\varphi^{(j)}$ gives the claim; the estimate uses $\int_0^1(1-t)^kdt=1/(k+1)$ and the boundedness of $D^{k+1}$. $\square$
+
+**Theorem (Taylor with Peano remainder).** If $f$ is of class $C^k$ on a neighbourhood of $x$, then
+
+$$
+f(x+h)=\sum_{j=0}^{k}\frac{1}{j!}D^jf(x)h^j+o(\|h\|^k) \qquad (h \to 0).
+$$
+
+The Peano form needs only the continuity and not the differentiability of $D^kf$, and it is the form used when a higher derivative is known to exist at the point alone.
+
+**Corollary (the derivative as a best approximation).** For $k=1$ the Peano form is the definition of the derivative, and for $k=2$ it reads $f(x+h)=f(x)+Df(x)h+\tfrac12D^2f(x)(h,h)+o(\|h\|^2)$, which identifies the second derivative with the quadratic term of the expansion.
+
+## The Contraction Mapping Principle
+
+The two structural theorems below are consequences of one fixed point theorem, and the theorem is stated here in the form in which the calculus uses it. Its systematic development and its relatives lie outside this article; the topological degree and the Brouwer fixed point theorem, which are of a different character and rest on a degree rather than on completeness, belong to Part II and to *Degree Theory and the Brouwer Fixed Point Theorem*.
+
+**Definition.** Let $(M,d)$ be a complete metric space. A map $F:M \to M$ is a **contraction** with constant $c$ if $d(Fx,Fy)\le c\,d(x,y)$ for all $x,y$ and some $0 \le c<1$.
+
+**Theorem (Banach contraction principle).** A contraction $F$ of a complete nonempty metric space $M$ has a unique fixed point $x^*$; for every $x_0 \in M$ the iterates $x_{n+1}=F(x_n)$ converge to $x^*$, and
+
+$$
+d(x_n,x^*) \le \frac{c^n}{1-c}d(x_1,x_0), \qquad d(x_n,x^*) \le \frac{1}{1-c}d(x_{n+1},x_n).
+$$
+
+*Proof.* The estimate $d(x_{n+1},x_n)\le c^nd(x_1,x_0)$ makes the sequence Cauchy, by comparison with a geometric series; completeness gives a limit $x^*$, and continuity of $F$ gives $F(x^*)=x^*$. If $x^*,y^*$ are fixed points then $d(x^*,y^*)=d(Fx^*,Fy^*)\le cd(x^*,y^*)$, forcing $x^*=y^*$. The first error estimate is the sum of the tail of the geometric series, and the second follows from $d(x_n,x^*)\le d(x_n,x_{n+1})+cd(x_n,x^*)$. $\square$
+
+**Corollary (powers).** If $F$ is continuous and some iterate $F^n$ is a contraction, then $F$ has a unique fixed point, the fixed point of $F^n$, and it is fixed by $F$ because $F(x^*)=F(F^n(x^*))=F^n(F(x^*))$.
+
+**Example.** On $[0,1]$ the map $F(x)=\cos x$ satisfies $|F'|\le\sin1<1$, so it is a contraction and the iterates of any starting point converge to the unique solution of $x=\cos x$, approximately $0.739085$. On $\mathbb{R}$ the same map is not a contraction, and the contraction hypothesis is not superfluous.
+
+## The Inverse Function Theorem
+
+**Theorem (inverse function theorem).** Let $X,Y$ be Banach spaces, $U \subseteq X$ open, $f:U \to Y$ of class $C^1$, and let $x_0 \in U$ with $Df(x_0)$ invertible in $B(X,Y)$ and with a bounded inverse. Then there are open neighbourhoods $U_0$ of $x_0$ and $V_0$ of $y_0=f(x_0)$ such that $f:U_0 \to V_0$ is a bijection whose inverse $g:V_0 \to U_0$ is of class $C^1$, and
+
+$$
+Dg(y)=\bigl(Df(g(y))\bigr)^{-1} \qquad (y \in V_0).
+$$
+
+If $f$ is of class $C^k$ then so is $g$.
+
+*Proof.* Composing with the invertible map $Df(x_0)^{-1}$ reduces to $Df(x_0)=I$. Fix $y$ near $y_0$ and define $F_y(x)=x+y-f(x)$; solving $f(x)=y$ is the same as finding a fixed point of $F_y$. Since $DF_y(x)=I-Df(x)$ and $Df$ is continuous at $x_0$ with $Df(x_0)=I$, there is a ball $B(x_0,r)$ on which $\|I-Df(x)\|\le\tfrac12$, so $F_y$ is a contraction there with constant $\tfrac12$. Moreover $\|F_y(x)-x_0\|\le\|y-y_0\|+\tfrac12\|x-x_0\|$, so for $\|y-y_0\|\le r/2$ the ball is mapped into itself and the contraction principle gives a unique solution $x=g(y)$ in it. The estimate $d(x_n,x^*)\le 2d(x_1,x_0)$ of the principle gives $\|g(y)-x_0\|\le2\|y-y_0\|$, so $g$ is continuous; the identity
+
+$$
+g(y+k)-g(y)=\bigl(Df(g(y))\bigr)^{-1}\bigl(k-\bigl(f(g(y)+q)-f(g(y))-Df(g(y))q\bigr)\bigr)
+$$
+
+with $q=g(y+k)-g(y)$ shows that $g$ is differentiable with the stated derivative. Continuity of $Dg$ follows from that of $Df$, $g$ and inversion, and the $C^k$ statement is induction on $k$. $\square$
+
+**Corollary (local structure).** With the hypotheses of the theorem, $f$ is a local homeomorphism at $x_0$: it maps some neighbourhood of $x_0$ homeomorphically onto a neighbourhood of $f(x_0)$, and it is an open map near $x_0$. In particular the image of an open set under such an $f$ is open.
+
+**Example (local does not imply global).** The map $f:\mathbb{R}^2 \to \mathbb{R}^2$, $f(x,y)=(e^x\cos y,e^x\sin y)$, has Jacobian
+
+$$
+J_f(x,y)=\begin{pmatrix}e^x\cos y & -e^x\sin y\\ e^x\sin y & e^x\cos y\end{pmatrix}, \qquad \det J_f(x,y)=e^{2x}>0,
+$$
+
+so $Df(x,y)$ is invertible at every point and the theorem gives a local inverse everywhere; but $f$ is not injective, since $f(x,y+2\pi)=f(x,y)$, so no global inverse exists. The theorem is local for a reason.
+
+## The Implicit Function Theorem
+
+**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $W \subseteq X \times Y$ be open and $F:W \to Z$ of class $C^1$, and let $(x_0,y_0) \in W$ with $F(x_0,y_0)=0$. Suppose the partial derivative $D_2F(x_0,y_0) \in B(Y,Z)$ is invertible with bounded inverse, where $D_2F$ denotes the derivative with respect to the second variable. Then there are open neighbourhoods $U_0$ of $x_0$ and $V_0$ of $y_0$ and a unique map $\varphi:U_0 \to V_0$ of class $C^1$ with
+
+$$
+F(x,\varphi(x))=0 \quad (x \in U_0), \qquad \varphi(x_0)=y_0,
+$$
+
+and for $x \in U_0$,
+
+$$
+D\varphi(x)=-\bigl(D_2F(x,\varphi(x))\bigr)^{-1}\circ D_1F(x,\varphi(x)).
+$$
+
+If $F$ is of class $C^k$ then so is $\varphi$.
+
+*Proof.* Define $\Phi:W \to X \times Z$ by $\Phi(x,y)=(x,F(x,y))$; then $D\Phi(x_0,y_0)$ is invertible, with inverse $(u,v)\mapsto(u,(D_2F)^{-1}(v-D_1F\,u))$. The inverse function theorem applied to $\Phi$ gives a local inverse of the form $(x,z) \mapsto (x,\psi(x,z))$, and $\varphi(x)=\psi(x,0)$ satisfies $F(x,\varphi(x))=0$; uniqueness follows from the injectivity of $\Phi$ on the neighbourhood. Differentiating the identity $F(x,\varphi(x))=0$ by the chain rule gives $D_1F+D_2F\circ D\varphi=0$, whence the formula. $\square$
+
+**Corollary (submersions and the rank theorem).** Let $F:W \to Z$ be $C^1$ and suppose $DF$ is surjective at $(x_0,y_0)$ with the kernel splitting; then there are local coordinates in which $F$ is the projection onto the first factor, so the level set $F^{-1}(F(x_0,y_0))$ is locally the graph of $\varphi$ and is a $C^1$ submanifold modelled on $\ker DF$. This is the local form of the rank theorem; the global theory of such local models on manifolds is that of Part II and of *Smooth Manifolds and Differential Geometry*.
+
+**Corollary (existence of solutions).** If $F(x_0,y_0)=0$ and $D_2F(x_0,y_0)$ is invertible, then for every $x$ near $x_0$ the equation $F(x,y)=0$ has exactly one solution in a fixed neighbourhood of $y_0$. This is the sense in which the theorem solves equations: it converts the invertibility of one bounded linear map into a local existence and uniqueness statement for a nonlinear equation, and its quantitative form is the contraction estimate of the proof.
+
+## The Finite-Dimensional Case
+
+In finite dimension the theory reduces to matrices, and the general theorems become the theorems of linear algebra and of the classical calculus.
+
+**Definition.** For $U \subseteq \mathbb{K}^n$ open and $f:U \to \mathbb{K}^m$ with components $f_1,\dots,f_m$, the **Jacobian matrix** at $x$ is
+
+$$
+J_f(x)=\Bigl(\frac{\partial f_i}{\partial x_j}(x)\Bigr)_{i,j} \in M_{m\times n}(\mathbb{K}),
+$$
+
+and $Df(x)$ is the linear map it represents.
+
+**Theorem.** (i) $f$ is differentiable at $x$ if and only if all partial derivatives $\partial_jf_i(x)$ exist and the linear map $h \mapsto J_f(x)h$ approximates $f$ to first order; then $Df(x)h=J_f(x)h$.
+
+(ii) The chain rule is matrix multiplication: $J_{g\circ f}(x)=J_g(f(x))J_f(x)$.
+
+(iii) The inverse function theorem reads: if $m=n$ and $\det J_f(x_0)\neq0$, then $f$ is a local $C^1$ diffeomorphism at $x_0$ and $J_{f^{-1}}(f(x_0))=J_f(x_0)^{-1}$.
+
+(iv) The implicit function theorem reads: if $\det\bigl(\partial F_i/\partial y_j(x_0,y_0)\bigr)\neq0$, then the level set $F=0$ is locally a graph $y=\varphi(x)$ with $J_\varphi=-(D_yF)^{-1}D_xF$.
+
+**Example (Newton's method).** Let $f:\mathbb{R}^n \to \mathbb{R}^n$ be $C^1$ with $Df(x)$ invertible near a zero $x^*$ and put $F(x)=x-Df(x)^{-1}f(x)$; then $DF(x^*)=I-D(Df(x^*)^{-1})f(x^*)-Df(x^*)^{-1}Df(x^*)=0$, so $F$ is a contraction on a suitable ball and the Newton iterates $x_{n+1}=x_n-Df(x_n)^{-1}f(x_n)$ converge to $x^*$ with $\|x_{n+1}-x^*\|\le C\|x_n-x^*\|^2$. The vanishing of $DF$ at the zero is the source of the quadratic order, and it is the quantitative content of the differentiability hypothesis.
+
+**Example (a global theorem from a local one).** If $F:\mathbb{R}^n \to \mathbb{R}^n$ is $C^1$, proper, and $\det J_F(x)\neq0$ at every $x$, then $F$ is a global diffeomorphism onto $\mathbb{R}^n$: local invertibility gives an open image, properness gives a closed image, connectedness of $\mathbb{R}^n$ gives surjectivity, and the local injectivity together with properness gives injectivity. The argument is a standard consequence of the inverse function theorem and is quoted here as the model of a global statement obtained from the local one.
+
+## Summary
+
+A bounded multilinear map is one that is continuous, and the bounded $k$-linear maps form a normed space $\mathcal L(X_1,\dots,X_k;Y)$, complete when $Y$ is; the telescoping identity converts differences of products into sums of products of differences. A map $f:U\to Y$ is differentiable at $x$ when a bounded linear map $Df(x)$ approximates it to first order with error $o(\|h\|)$; the derivative is unique, differentiability implies continuity, and the chain rule $D(g\circ f)(x)=Dg(f(x))\circ Df(x)$ holds, with the sum, scalar-multiple and product rules. Partial derivatives exist whenever the total derivative does and assemble it as $Df(x)h=\sum_iD_if(x)h_i$; conversely continuous partial derivatives imply differentiability. The mean value theorem is replaced by the mean value inequality $\|f(x)-f(y)\|\le M\|x-y\|$ when $\|Df\|\le M$ on a convex set, and a vanishing derivative on a convex set forces constancy.
+
+Higher derivatives are bounded symmetric multilinear maps $D^kf(x) \in \mathcal L^k(X;Y)$, the symmetry of the second derivative holding when it is continuous and extending to all orders; Taylor's theorem holds with the integral remainder, giving an error bounded by $\|h\|^{k+1}\sup\|D^{k+1}f\|/(k+1)!$ for $C^{k+1}$ maps, and with the Peano remainder $o(\|h\|^k)$ for $C^k$ maps. The Banach contraction principle supplies the unique fixed point and the geometric error estimates, and from it the inverse function theorem follows by contraction of the auxiliary map $x \mapsto x+y-f(x)$: an invertible derivative at a point makes the map a local $C^k$ diffeomorphism with $D(f^{-1})(y)=(Df(f^{-1}(y)))^{-1}$. The implicit function theorem follows from the inverse theorem applied to $(x,y)\mapsto(x,F(x,y))$: an invertible partial derivative $D_2F$ makes the equation $F(x,y)=0$ locally solvable as $y=\varphi(x)$, with $D\varphi=-(D_2F)^{-1}D_1F$, and gives the local rank theorem. In finite dimension all of this is the Jacobian matrix: the chain rule is matrix multiplication and the inverse function theorem is the nonvanishing of $\det J_f$.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{K}$ | $\mathbb{R}$ or $\mathbb{C}$ |
+| $X,Y,Z$ | normed spaces; $U,V,W$ open subsets |
+| $B(X,Y)$ | bounded linear maps |
+| $\mathcal L(X_1,\dots,X_k;Y)$, $\mathcal L^k(X;Y)$ | bounded multilinear maps |
+| $\|A\|$ | norm of a multilinear map |
+| $\operatorname{Sym}(A)$, $\mathcal L^k_{\mathrm{sym}}$ | symmetrisation and symmetric multilinear maps |
+| $Df(x)$ | Fréchet derivative |
+| $D^kf(x)$ | $k$-th derivative, a symmetric $k$-linear map |
+| $C^k(U,Y)$, smooth | classes of differentiability |
+| $D_if$, $\partial_jf_i$ | partial derivatives |
+| $J_f(x)$, $\det J_f$ | Jacobian matrix and determinant |
+| $o(\|h\|)$, $O(\|h\|^2)$ | Landau notation in the norm of $X$ |
+| $M$, $c$ | bounds and contraction constants |
+| $F$, $x_{n+1}=F(x_n)$ | contraction and its iterates |
+| $\varphi$ | implicitly defined map |
+| $h^j=(h,\dots,h)$ | repeated argument of a multilinear map |
+
+
+
+
+
+## Further Reading
+
+- Henri Cartan, *Differential Calculus* (Hermann, 1971; Kershaw, 1983), for the Fréchet derivative and the structural theorems on Banach spaces.
+- Jean Dieudonné, *Foundations of Modern Analysis* (Academic Press, 1969), for the mean value inequality, higher derivatives and Taylor's theorem.
+- Serge Lang, *Real and Functional Analysis*, 3rd ed. (Springer, 1993), for the inverse and implicit function theorems on Banach spaces.
+- James R. Munkres, *Analysis on Manifolds* (Addison-Wesley, 1991), for the finite-dimensional calculus and the rank theorem.
+- Lynn H. Loomis and Shlomo Sternberg, *Advanced Calculus* (Addison-Wesley, 1968), for a coordinate-free treatment with the classical applications.
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed. (McGraw-Hill, 1976), for the one-variable and finite-dimensional background.
+- Eberhard Zeidler, *Nonlinear Functional Analysis and its Applications I: Fixed-Point Theorems* (Springer, 1986), for the contraction principle and its use in solving equations.

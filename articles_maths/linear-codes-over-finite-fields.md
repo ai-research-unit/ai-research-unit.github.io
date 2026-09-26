@@ -1,0 +1,180 @@
+# __Linear Codes over Finite Fields__
+
+## Introduction
+
+A linear code over a finite field $\mathbb{F}_q$ is a subspace $C \subseteq \mathbb{F}_q^n$; its words are the vectors of $C$, and its two numerical parameters are the dimension $k = \dim_{\mathbb{F}_q}C$ and the least number $d$ of coordinates in which two distinct codewords differ, equivalently the least number of nonzero coordinates of a nonzero codeword. The pair $(k,d)$ measures the two things a code is for: $k$ measures how many messages it carries, and $d$ measures how far apart its words are, hence how many coordinate errors a transmitted word may suffer and still be uniquely recognised. A code is written $[n,k,d]_q$; the systematic theory begins with the counting theorems that relate $n$, $k$ and $d$, and it uses nothing but the algebra of finite fields, linear algebra over $\mathbb{F}_q$, and the ideal theory of the ring $\mathbb{F}_q[x]/(x^n-1)$.
+
+The algebraic background enters twice. The finite fields themselves are *Finite Fields*, in which $\mathbb{F}_{q}$ is constructed as $\mathbb{F}_p[x]/(f)$ for an irreducible $f$; and the evaluation map $K[x]_{<k} \to K^S$, that is, the fact that a nonzero polynomial of degree less than $k$ has at most $k-1$ roots, is the source of the Reed–Solomon codes and is proved in *Polynomial Rings and Rational Functions*. The coding theory then adds two ideas of its own: the dual code, whose generator and parity check roles are exchanged, and the description of cyclic codes as ideals in a quotient of a polynomial ring, where the divisibility theory of *Unique Factorisation Domains* computes dimensions.
+
+A word on what is not used. The notion of the number of coordinates in which two words differ is a **weight**, a count of nonzero coordinates, and it is defined combinatorially; the associated metric space, its balls, and the resulting topological language belong to Part II, where a distance is available, and no statement here uses them. Everything is phrased as agreement: a word that agrees with a codeword in all but $t$ coordinates is recognised uniquely whenever $2t < d$, because a second codeword agreeing with it in all but $t$ coordinates would differ from the first in at most $2t < d$ coordinates. Throughout, $q$ is a prime power, $\mathbb{F}_q$ the field with $q$ elements, $n \geq 1$ the **length**, and a code is a subspace $C \subseteq \mathbb{F}_q^n$ with parameters $[n,k,d]$.
+
+---
+
+## Codes, Parameters and Counting
+
+### Definitions and the Basic Subspaces
+
+**Definition.** A **linear code** $C \subseteq \mathbb{F}_q^n$ is a subspace; its **weight** function is $\operatorname{wt}(v) = \#\{i : v_i \neq 0\}$, its **minimum weight** is $d = \min\{\operatorname{wt}(v) : v \in C, v \neq 0\}$ (with $d$ defined to be $n+1$ for the zero code), and its parameters are written $[n,k,d]_q$ with $k = \dim C$. The **dual code** is
+
+$$
+C^\perp = \{w \in \mathbb{F}_q^n : \textstyle\sum_{i=1}^{n}w_iv_i = 0 \ \text{for all } v \in C\},
+$$
+
+a subspace of dimension $n-k$, so that $C^\perp$ is an $[n,n-k,d^\perp]$-code for some $d^\perp$.
+
+**Proposition.** Let $C$ be an $[n,k,d]_q$-code.
+
+**(a)** Two distinct codewords differ in at least $d$ coordinates; a word agreeing with a codeword of $C$ in all but $t$ coordinates with $2t < d$ agrees with no other codeword in that many coordinates, so it determines the codeword.
+
+**(b)** If $G$ is a $k\times n$ matrix whose rows form an $\mathbb{F}_q$-basis of $C$, then $C = \{uG : u \in \mathbb{F}_q^k\}$ and $C^\perp = \{w : Gw^{T} = 0\}$; the rows of $G$ are a **generator matrix** and the matrix of the equations $Gw^T = 0$ a **parity check matrix**.
+
+**(c)** $C^{\perp\perp} = C$, and $\dim C + \dim C^\perp = n$.
+
+**Proof.** (a) is the definition of $d$ applied to the difference of two codewords. (b) and (c) are linear algebra over a field, using that the pairing $\sum_iv_iw_i$ is nondegenerate; the finite-field input is only the existence of the field, from *Finite Fields*. $\square$
+
+**Example ($\mathbb{F}_2^n$ and the zero code).** The whole space $\mathbb{F}_2^n$ is an $[n,n,1]$-code with dual the zero code; the zero code has parameters $[n,0,\cdot]$. The repetition code $\{0, (1,1,\ldots,1)\}$ is an $[n,1,n]$-code, and its dual, the even-weight code $\{v : \sum v_i = 0\}$, is $[n,n-1,2]$.
+
+### The Bounds
+
+**Theorem (Singleton bound).** Every $[n,k,d]_q$-code satisfies $d \leq n-k+1$; a code attaining the bound is called **MDS**; the abbreviation is the classical one and its expansion refers to the metric reading of the weight, which belongs to Part II, so it is used here only as a name.
+
+**Proof.** Delete $d-1$ coordinates from the code: the projection $\mathbb{F}_q^n \to \mathbb{F}_q^{n-d+1}$ is injective on $C$, since a nonzero codeword of weight $< d$ cannot vanish on $n-d+1$ coordinates — it has at most $d-1$ nonzero coordinates, hence vanishes on at least $n-d+1$ of them. Hence $k \leq n-d+1$. $\square$
+
+**Theorem (Hamming bound and perfect codes).** For an $[n,k,d]_q$-code with $d = 2t+1$, writing $V = \sum_{i=0}^{t}\binom{n}{i}(q-1)^i$ for the number of words agreeing with a fixed word in at least $n-t$ coordinates,
+
+$$
+q^k\,V \leq q^n ,
+$$
+
+with equality exactly when every word of $\mathbb{F}_q^n$ agrees with some codeword in at least $n-t$ coordinates; such a code is called **perfect**.
+
+**Proof.** The sets of words agreeing with a codeword in at least $n-t$ coordinates are disjoint, by the same subtraction argument as in part (a) of the previous proposition, and each has $V$ elements; counting them all inside $\mathbb{F}_q^n$ gives the inequality, and the equality case is immediate. $\square$
+
+**Example.** For the binary Hamming code of length $7$ and minimum weight $3$ (constructed below), $q^k = 16$, $t = 1$, $V = 1+7 = 8$, and $16\cdot8 = 128 = 2^7$: the code is perfect. For the binary Golay code of length $23$ and minimum weight $7$, $q^k = 2^{12}$, $t = 3$, $V = 1+23+\binom{23}{2}+\binom{23}{3} = 1+23+253+1771 = 2048 = 2^{11}$, and $2^{12}\cdot2^{11} = 2^{23}$: the Golay code is perfect as well.
+
+**Theorem (Gilbert–Varshamov bound).** For every $n,q$ and every $d$ with $\sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i < q^{n-k}$ there exists an $[n,k,d']_q$-code with $d' \geq d$. Equivalently, if $M$ is the least integer with $q^{M} > \sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i$, then a code of length $n$ and minimum weight at least $d$ exists with $k = n-M$, that is, with $k \geq n-\log_q\left(\sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i\right) - 1$.
+
+**Proof.** Build a parity check matrix column by column in $\mathbb{F}_q^{n-k}$: a word of weight at most $d-1$ in the kernel corresponds to a linear dependence among at most $d-1$ columns, so it suffices that the span of any $d-2$ chosen columns avoid the next one. The number of vectors spanned by at most $d-2$ columns, counted by the number of nonzero coefficients, is at most $\sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i$, so as long as this is less than $q^{n-k}$ a column outside the span exists. $\square$
+
+---
+
+## Evaluation Codes and the Weight Enumerator
+
+### Reed–Solomon Codes
+
+**Theorem (Reed–Solomon).** Let $S = \{a_1,\ldots,a_n\} \subseteq \mathbb{F}_q$ be a set of $n$ distinct elements and let $1 \leq k \leq n$. Then the image
+
+$$
+C = \{(f(a_1),\ldots,f(a_n)) : f \in \mathbb{F}_q[x],\ \deg f < k\}
+$$
+
+is an $[n,k,n-k+1]_q$-code, hence MDS, of dimension $k$ and minimum weight exactly $n-k+1$.
+
+**Proof.** The evaluation map is injective on $\mathbb{F}_q[x]_{<k}$ by the root bound, giving dimension $k$; a nonzero polynomial of degree $<k$ vanishes in at most $k-1$ of the points of $S$, so a nonzero codeword has at most $k-1$ zero coordinates, hence weight at least $n-k+1$; and a polynomial vanishing exactly at $k-1$ of the points exists, so the bound is attained. The Singleton bound gives the same value from above. $\square$
+
+**Example.** Over $\mathbb{F}_7$ with $S = \{0,1,2,3,4,5,6\}$ and $k = 3$: the Reed–Solomon code $[7,3,5]_7$ has $7^3 = 343$ words and minimum weight $5$; the code obtained by taking the polynomials of degree $<3$ with coefficients summing to zero has $49$ words and is a subcode. Shortened and punctured versions of Reed–Solomon codes are the ones used in practice, and the general construction with $S$ a subset of a larger field is the **generalized Reed–Solomon** code.
+
+### The Weight Enumerator and MacWilliams' Identity
+
+**Definition.** The **weight distribution** of a code $C$ is $A_i = \#\{v \in C : \operatorname{wt}(v) = i\}$, and the **weight enumerator** is the homogeneous polynomial
+
+$$
+W_C(x,y) = \sum_{v\in C}x^{\operatorname{wt}(v)}y^{n-\operatorname{wt}(v)} = \sum_{i=0}^{n}A_ix^iy^{n-i} .
+$$
+
+**Theorem (MacWilliams).** For every linear code $C \subseteq \mathbb{F}_q^n$,
+
+$$
+W_{C^\perp}(x,y) = \frac{1}{\lvert C\rvert}W_C(y-x,\ y+(q-1)x) ,
+$$
+
+so that the weight distribution of the dual code is determined by that of $C$.
+
+**Proof sketch.** The enumerator is a sum over the codewords of a product over the coordinates, and the Fourier expansion of the indicator of a subspace over $\mathbb{F}_q$ — that is, the character sum $\sum_{w}\psi(w\cdot v)$ — transforms the sum over $C$ into a sum over $C^\perp$; for $q = 2$ the characters are $\pm1$ and the substitution is the displayed one. $\square$
+
+**Example ($[7,4,3]$ and its dual).** The binary linear code with the parity check matrix whose columns are the seven nonzero vectors of $\mathbb{F}_2^3$ is a $[7,4,3]$-code, the **Hamming code**. Its weight distribution, computed by listing its sixteen words, is
+
+$$
+A_0 = 1,\quad A_3 = 7,\quad A_4 = 7,\quad A_7 = 1,
+$$
+
+so $W_C = y^7+7x^3y^4+7x^4y^3+x^7$, and its dual has weight distribution $B_0 = 1$, $B_4 = 7$, so $W_{C^\perp} = y^7+7x^4y^3$. MacWilliams' identity is satisfied exactly: $W_C(y-x,y+x)/16 = y^7+7x^4y^3$, verified by expanding both sides in the basis $x^iy^{7-i}$, where $W_C(y-x,y+x) = \sum_iA_i(y-x)^i(y+x)^{7-i}$. The dual is the $[7,3,4]$ simplex code, whose seven nonzero words all have weight $4$; the two codes together exhibit the exchange of $k$ and $n-k$ under duality.
+
+**Example ($[8,4,4]$ extended Hamming).** Appending a parity coordinate to the $[7,4,3]$ Hamming code gives the extended Hamming code $[8,4,4]$, with weight distribution $A_0 = 1$, $A_4 = 14$, $A_8 = 1$: the nonzero weights of the Hamming code are $3$, $4$ and $7$, with multiplicities $7$, $7$ and $1$, and the parity coordinate makes each of them even, so the extended code has weights $4$, $4$ and $8$ with multiplicities $7$, $7$, $1$, as displayed.
+
+---
+
+## Cyclic Codes
+
+### Codes as Ideals
+
+**Definition.** A code $C \subseteq \mathbb{F}_q^n$ is **cyclic** if $(v_1,\ldots,v_n) \in C$ implies $(v_n,v_1,\ldots,v_{n-1}) \in C$, and one identifies $\mathbb{F}_q^n$ with the quotient ring $R_n = \mathbb{F}_q[x]/(x^n-1)$ by sending a word to the class of $\sum_{i=1}^{n}v_ix^{i-1}$.
+
+**Theorem (cyclic codes as ideals).** Under this identification, cyclic codes are exactly the ideals of $R_n$, and $R_n$ is a principal ideal ring; consequently every cyclic code has a **generator polynomial** $g$ dividing $x^n-1$, of dimension $n-\deg g$, and if $\gcd(n,q) = 1$ then $x^n-1$ is squarefree and
+
+$$
+R_n \cong \prod_{i}\mathbb{F}_q[x]/(f_i)
+$$
+
+is a product of fields, the $f_i$ being the distinct irreducible factors of $x^n-1$; the dimension of the cyclic code attached to a divisor $g = \prod_{i\in I}f_i$ is $\sum_{i\notin I}\deg f_i$.
+
+**Proof.** Multiplication by $x$ in $R_n$ is the cyclic shift, so the cyclic codes are the ideals; $R_n$ is a quotient of the principal ideal domain $\mathbb{F}_q[x]$, hence every ideal is principal and is generated by a divisor of $x^n-1$; the Chinese remainder theorem provides the product decomposition when $x^n-1$ is squarefree, which by the derivative criterion of *Polynomial Rings and Rational Functions* holds exactly when $\gcd(n,q)=1$. $\square$
+
+**Example ($[7,4,3]$ as a cyclic code).** Over $\mathbb{F}_2$ with $n = 7$: $x^7-1 = (x+1)(x^3+x+1)(x^3+x^2+1)$, and the cyclic code generated by $g = x^3+x+1$ has dimension $7-3 = 4$ and is the Hamming code of the previous section; the code generated by $x+1$ is the even-weight code $[7,6,2]$, and the code generated by the product $(x^3+x+1)(x^3+x^2+1)$ is the repetition code $[7,1,7]$. The dual of the Hamming code is generated by the polynomial $(x^7-1)/g$, of degree $3$, and is the $[7,3,4]$ simplex code.
+
+**Example (BCH codes).** Let $n$ be coprime to $q$, let $\alpha$ be a primitive $n$-th root of unity in an extension field, and let $\delta \geq 2$. The **BCH code** of designed weight $\delta$ is the cyclic code whose generator is the least common multiple of the minimal polynomials over $\mathbb{F}_q$ of $\alpha, \alpha^2, \ldots, \alpha^{\delta-1}$; its minimum weight is at least $\delta$, by the BCH bound, and its dimension is at least $n-m(\delta-1)$ where $m$ is the degree of the field containing $\alpha$ over $\mathbb{F}_q$. For $q=2$, $n = 2^m-1$ and $\delta = 3$ one obtains the Hamming codes; the binary Golay code $[23,12,7]$ is the BCH code with $n = 23$, $\delta = 5$ and dimension $12$; the ternary Golay code is $[11,6,5]$.
+
+**Example (algebraic-geometry codes).** Let $C$ be a nonsingular curve of genus $g$ over $\mathbb{F}_q$ with $n$ distinct rational points $P_1,\ldots,P_n$, let $G$ be a divisor on $C$ with $\operatorname{supp}G \cap \{P_i\} = \emptyset$ and $\deg G < n$, and let $L(G)$ be the space of functions whose poles are bounded by $G$. Evaluating a basis of $L(G)$ at the points $P_1,\ldots,P_n$ gives a linear code of length $n$ and dimension $\ell(G)-\ell(G-\sum_iP_i) \geq \deg G+1-g$, by the Riemann–Roch theorem of *The Riemann–Roch Theorem for Curves*, and its minimum weight is at least $n-\deg G$, since a nonzero function in $L(G)$ has at most $\deg G$ zeros among the $n$ points. For $g = 0$ and $G = (k-1)\mathfrak{p}_\infty$ these are the Reed–Solomon codes above; for suitable families of curves of growing genus they give sequences of codes whose parameters approach the Gilbert–Varshamov bound, and for $q \geq 49$ they exceed it, a theorem of Tsfasman, Vlăduț and Zink. The asymptotic comparison of such families belongs to information theory and is not made here.
+
+---
+
+## Reed–Muller Codes and the Summary of Bounds
+
+**Definition.** Let $q$ be a prime, $m \geq 1$ and $0 \leq r \leq m(q-1)$; enumerate $\mathbb{F}_q^m = \{P_1,\ldots,P_{q^m}\}$ and let $\operatorname{RM}_q(r,m)$ be the image of the evaluation map on the polynomials of degree at most $r$:
+$$
+\operatorname{RM}_q(r,m) = \{(f(P_1),\ldots,f(P_{q^m})) : f \in \mathbb{F}_q[x_1,\ldots,x_m],\ \deg f \leq r\} .
+$$
+
+**Theorem (Reed–Muller parameters).** $\operatorname{RM}_q(r,m)$ is a linear code of length $q^m$ and dimension $\sum_{j=0}^{r}\sum_{i=0}^{\lfloor j/q\rfloor}(-1)^i\binom{m}{i}\binom{j-iq+m-1}{m-1}$, and for $r < q$ its minimum weight is $(q-r)q^{m-1}$; in particular over $\mathbb{F}_2$, $\operatorname{RM}(r,m)$ has length $2^m$, dimension $\sum_{i=0}^{r}\binom{m}{i}$ and minimum weight $2^{m-r}$.
+
+**Proof sketch.** The dimension is the dimension of the space of polynomials of degree at most $r$ modulo those vanishing on $\mathbb{F}_q^m$, computed by the reduction of monomials modulo $x_i^q-x_i$; the minimum weight is computed by bounding the number of zeros of a polynomial of given degree on $\mathbb{F}_q^m$, using the Combinatorial Nullstellensatz and its degree estimates. $\square$
+
+**Example.** $\operatorname{RM}(1,3)$ over $\mathbb{F}_2$ has length $8$, dimension $1+3 = 4$ and minimum weight $4$: it is the extended Hamming code $[8,4,4]$ of the example above, as the degree-one polynomials in three variables are the affine linear functions, of which the nonzero ones vanish on exactly four points. Its dual is $\operatorname{RM}(m-1-r,m) = \operatorname{RM}(1,3)$, so the extended Hamming code is self-dual.
+
+**Summary of bounds.** For an $[n,k,d]_q$-code one has $d \leq n-k+1$ (Singleton), $\sum_{i=0}^{t}\binom{n}{i}(q-1)^i \leq q^{n-k}$ for $d = 2t+1$ (Hamming), and, for given $n$ and $d$, a code exists with $k$ at least the Gilbert–Varshamov value; the Hamming and Golay codes attain the Hamming bound and Reed–Solomon codes attain the Singleton bound, while the general question of the largest possible $k$ for given $n$ and $d$ is open. The asymptotic theory — the **rate** $k/n$ as $n$ grows, the growth of the maximum minimum weight, and the entropy-type bounds — is the domain of information theory, and the notion of capacity belongs to it; no statement of it is made here.
+
+---
+
+## Summary
+
+A linear code over $\mathbb{F}_q$ is a subspace $C \subseteq \mathbb{F}_q^n$ with parameters $[n,k,d]$, where $k$ is its dimension and $d$ the least number of coordinates in which two codewords differ; its dual $C^\perp$ has dimension $n-k$, and a word agreeing with a codeword in all but $t$ coordinates with $2t < d$ determines that codeword uniquely. The Singleton bound $d \leq n-k+1$ holds always, with equality for the Reed–Solomon codes, which are the images of the evaluation maps $f \mapsto (f(a_1),\ldots,f(a_n))$ on the polynomials of degree less than $k$ and have minimum weight exactly $n-k+1$; the Hamming bound $\sum_{i=0}^t\binom ni(q-1)^i \leq q^{n-k}$ counts the words agreeing with codewords, with equality defining the perfect codes, attained by the binary Hamming codes and by the Golay codes; and the Gilbert–Varshamov bound guarantees the existence of codes of prescribed length and minimum weight by a column-by-column construction of a parity check matrix.
+
+The weight enumerator $W_C(x,y) = \sum_vx^{\operatorname{wt}(v)}y^{n-\operatorname{wt}(v)}$ satisfies MacWilliams' identity $W_{C^\perp}(x,y) = \lvert C\rvert^{-1}W_C(y-x,y+(q-1)x)$, verified explicitly for the binary $[7,4,3]$ Hamming code, whose weights are $0,3,4,7$ with multiplicities $1,7,7,1$ and whose dual is the $[7,3,4]$ simplex code with weights $0,4$; the extended Hamming code $[8,4,4]$ has weights $0,4,8$ with multiplicities $1,14,1$ and is the Reed–Muller code $\operatorname{RM}(1,3)$. Cyclic codes are exactly the ideals of the ring $\mathbb{F}_q[x]/(x^n-1)$, which is principal and, when $\gcd(n,q)=1$, a product of fields, so that a cyclic code is generated by a divisor $g$ of $x^n-1$ and has dimension $n-\deg g$; the binary Hamming code is the cyclic code generated by $x^3+x+1$, and the BCH construction produces families with prescribed minimum weight, including the Golay code $[23,12,7]$. All of this is algebra over $\mathbb{F}_q$; the metric reading of the weight, and the asymptotic theory with its capacity, are not part of this Part.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{F}_q$ | Finite field with $q$ elements, $q$ a prime power |
+| $C \subseteq \mathbb{F}_q^n$ | Linear code of length $n$ |
+| $[n,k,d]_q$ | Length, dimension, minimum weight |
+| $\operatorname{wt}(v)$ | Number of nonzero coordinates |
+| $C^\perp$ | Dual code, $[n,n-k]$ |
+| $G$, $H$ | Generator matrix, parity check matrix |
+| $A_i$, $W_C(x,y)$ | Weight distribution, weight enumerator |
+| $R_n$ | $\mathbb{F}_q[x]/(x^n-1)$ |
+| $g$ | Generator polynomial of a cyclic code |
+| $\alpha$ | Primitive $n$-th root of unity |
+| $\operatorname{RM}_q(r,m)$ | Reed–Muller code |
+| $t$ | $\lfloor (d-1)/2\rfloor$ |
+
+## Further Reading
+
+- Richard W. Hamming, "Error detecting and error correcting codes", *Bell System Technical Journal* 29 (1950), 147–160, for the first linear codes and the bound bearing Hamming's name.
+- Irving S. Reed and Gustave Solomon, "Polynomial codes over certain finite fields", *Journal of the Society for Industrial and Applied Mathematics* 8 (1960), 300–304, for the evaluation codes.
+- F. Jessie MacWilliams, "A theorem on the distribution of weights in a systematic code", *Bell System Technical Journal* 42 (1963), 79–94, for the identity relating the weight enumerators of a code and its dual.
+- R. C. Bose and D. K. Ray-Chaudhuri, "On a class of error correcting binary group codes", *Information and Control* 3 (1960), 68–79, and A. Hocquenghem, "Codes correcteurs d'erreurs", *Chiffres* 2 (1959), 147–156, for the BCH construction.
+- Edgar F. Assmus and Jennifer D. Key, *Designs and their Codes* (Cambridge University Press, 1992), for the interaction of codes with design theory.
+- F. Jessie MacWilliams and Neil J. A. Sloane, *The Theory of Error-Correcting Codes* (North-Holland, 1977), for the complete classical account of bounds, cyclic codes and weight enumerators.
+- Rudolf Lidl and Harald Niederreiter, *Finite Fields* (Cambridge University Press, 2nd ed. 1997), for the finite field theory underlying all of it.
+- Elwyn R. Berlekamp, *Algebraic Coding Theory* (McGraw-Hill, 1968), for the algorithmic side, including the decoding of BCH codes.

@@ -1,0 +1,238 @@
+# __Ring and Field Automorphisms__
+
+## Introduction
+
+An automorphism of a ring is an isomorphism of the ring with itself, and the automorphisms of a structure form a group whose size and internal structure measure how symmetric the structure is. For fields the group is constrained by the subfields that the automorphisms fix, and this is the substance of the Galois correspondence; for noncommutative rings there is a second, internal source of automorphisms, namely conjugation by a unit, and these are the inner automorphisms.
+
+This article studies automorphism groups of rings and of fields, the fixed subrings and fixed fields they determine, and the arithmetic automorphism supplied by the Frobenius map. It separates the commutative theory, in which conjugation is trivial, from the noncommutative theory of inner automorphisms, and it records the boundary where the two diverge.
+
+Throughout, $R$ is a commutative ring with $1 \neq 0$ unless the noncommutative case is explicitly signalled, and $K/F$ is a field extension. Automorphisms are unital: $\sigma(1) = 1$. The Galois correspondence and its lemmas are from *Galois Theory*; the vocabulary of units, zero divisors and idempotents is from *Rings*.
+
+---
+
+## Automorphisms of a Ring
+
+### Definition and Basic Properties
+
+**Definition.** An **automorphism** of a ring $R$ is a bijective ring homomorphism $\sigma : R \to R$ with $\sigma(1) = 1$. The set of automorphisms of $R$ is a group under composition, written
+
+$$
+\operatorname{Aut}(R) = \operatorname{Aut}_{\mathbb{Z}}(R),
+$$
+
+where the subscript records that only $1$ is required to be fixed, so that $\operatorname{Aut}(R)$ is the group of unital ring automorphisms.
+
+**Proposition.** Let $\sigma \in \operatorname{Aut}(R)$.
+
+**(a)** $\sigma(u) \in R^\times$ for every $u \in R^\times$, and $\sigma$ restricts to a group automorphism of $R^\times$.
+
+**(b)** $\sigma(0) = 0$; $\sigma(r) = 0$ if and only if $r = 0$, so $\sigma$ preserves zero divisors and non-zero-divisors.
+
+**(c)** $\sigma$ preserves idempotents, nilpotents, the characteristic, and the prime subring.
+
+**(d)** $\sigma(I)$ is an ideal for every ideal $I \subseteq R$; $\sigma(\mathfrak{p})$ is prime for every prime ideal $\mathfrak{p}$, and $\sigma(\mathfrak{m})$ is maximal for every maximal ideal $\mathfrak{m}$. Hence $\sigma$ acts on the set of primes of $R$.
+
+**(e)** If $R$ is an integral domain, then $\sigma$ extends uniquely to an automorphism of $\operatorname{Frac}(R)$, and $\operatorname{Aut}(R) \leq \operatorname{Aut}(\operatorname{Frac}(R))$.
+
+**Proof.** (a) $\sigma(u)\sigma(u^{-1}) = \sigma(1) = 1$. (b) $\sigma(0) = \sigma(0+0)$ forces $\sigma(0)=0$, and injectivity gives the rest. (c) $\sigma(e)^2 = \sigma(e^2) = \sigma(e)$; $\sigma(x)^n = \sigma(x^n)$; the additive order of $1$ is preserved. (d) $\sigma(I)$ is an additive subgroup and for $r \in R$, $r\sigma(i) = \sigma(\sigma^{-1}(r) i) \in \sigma(I)$; the quotient induced by $\sigma$ is $R/\sigma^{-1}(\mathfrak{p}) \cong R/\mathfrak{p}$, so primality and maximality are preserved. (e) The universal property of the fraction field applies to $\sigma : R \to \operatorname{Frac}(R)$. $\square$
+
+### Inner Automorphisms and the Noncommutative Case
+
+**Definition.** Let $R$ be a ring, not necessarily commutative, with unit group $R^\times$. For $u \in R^\times$ the **inner automorphism** (or **conjugation**) by $u$ is
+
+$$
+\operatorname{conj}_u : R \to R, \qquad \operatorname{conj}_u(r) = u r u^{-1}.
+$$
+
+The set $\operatorname{Inn}(R) = \{\operatorname{conj}_u : u \in R^\times\}$ is a subgroup of $\operatorname{Aut}(R)$ called the **inner automorphism group**, and the quotient $\operatorname{Out}(R) = \operatorname{Aut}(R)/\operatorname{Inn}(R)$ is the **outer automorphism group**.
+
+**Proposition.** The map $R^\times \to \operatorname{Aut}(R)$, $u \mapsto \operatorname{conj}_u$, is a group homomorphism with kernel $Z(R)^\times$, the group of units of the centre. Hence
+
+$$
+\operatorname{Inn}(R) \cong R^\times / Z(R)^\times, \qquad \operatorname{Inn}(R) \trianglelefteq \operatorname{Aut}(R).
+$$
+
+**Proof.** $\operatorname{conj}_u \operatorname{conj}_v = \operatorname{conj}_{uv}$, and $\operatorname{conj}_u = \mathrm{id}$ exactly when $ur = ru$ for all $r$, that is, $u \in Z(R)$. Normality holds because $\sigma \operatorname{conj}_u \sigma^{-1} = \operatorname{conj}_{\sigma(u)}$ for $\sigma \in \operatorname{Aut}(R)$. $\square$
+
+**Corollary.** If $R$ is commutative then $\operatorname{Inn}(R) = 1$, and $\operatorname{Aut}(R) = \operatorname{Out}(R)$. In particular, the inner automorphisms of a commutative ring carry no information.
+
+In the commutative theory, therefore, an automorphism can only act through the arithmetic of the ring: it is determined by what it does to generators, and its fixed subring is the natural invariant to study.
+
+### Examples
+
+| Ring $R$ | $\operatorname{Aut}(R)$ | Description |
+|---|---|---|
+| $\mathbb{Z}$ | $1$ | $\mathbb{Z}$ is generated by $1$, which is fixed |
+| $\mathbb{F}_p$ | $1$ | prime field, generated by $1$ |
+| $\mathbb{Z}/n\mathbb{Z}$ | $1$ | $\sigma(1)=1$ forces $\sigma=\mathrm{id}$ |
+| $\mathbb{Z}[i]$ | $\mathbb{Z}/2$ | $i \mapsto \pm i$; the nontrivial one is conjugation |
+| $\mathbb{Z}[\sqrt2]$ | $\mathbb{Z}/2$ | $\sqrt2 \mapsto -\sqrt2$ |
+| $\mathbb{F}_{p^n}$ | $\mathbb{Z}/n$ | generated by Frobenius |
+| $F[x]$, as $F$-algebra | affine group | $x \mapsto ax + b$, $a \in F^\times$, $b \in F$ |
+| $F(x)$, as $F$-algebra | $\operatorname{PGL}_2(F)$ | fractional linear $x \mapsto \frac{ax+b}{cx+d}$ |
+
+**Theorem.** For a field $F$, every $F$-algebra automorphism of $F[x]$ is of the form $x \mapsto ax + b$ with $a \in F^\times$, $b \in F$. Every $F$-algebra automorphism of the rational function field $F(x)$ is of the form $x \mapsto \frac{ax+b}{cx+d}$ with $ad - bc \neq 0$.
+
+**Proof.** An $F$-algebra endomorphism $\varphi$ of $F[x]$ is determined by $f = \varphi(x)$, and $\varphi$ is surjective exactly when $f$ generates $F[x]$ as an $F$-algebra, that is, exactly when $x$ lies in the subalgebra $F[f]$ of polynomials in $f$; this happens exactly when $\deg f = 1$, since $x = a^{-1}(f - b)$ for $f = ax + b$ with $a \neq 0$, and $x \notin F[f]$ when $\deg f \geq 2$. Similarly, an $F$-algebra endomorphism of $F(x)$ is determined by $g = \varphi(x) \in F(x)$, and it is an automorphism exactly when $g$ has degree $1$ as a rational map, that is, when $g$ is a fractional linear transformation; the composition rule is matrix multiplication in $\operatorname{PGL}_2(F)$. $\square$
+
+**Remark.** For a non-reduced commutative ring the automorphism group of $R[x]$ is larger than the affine group: if $a \in R$ is nilpotent then $x \mapsto x + ax^2$ is an automorphism, because $y = x + ax^2$ can be solved for $x$ by the series $x = y - ay^2 + 2a^2y^3 - \cdots$, which terminates in a polynomial since $a^N = 0$ for some $N$; over a field the same substitution is not an automorphism, the series being infinite. Separately, $\operatorname{Aut}(\mathbb{Z}/n\mathbb{Z}) = 1$ for every $n$, because a unital automorphism fixes $1$ and hence every element; the group $(\mathbb{Z}/n\mathbb{Z})^\times$ that one meets in this connection is the automorphism group of the *additive group* $\mathbb{Z}/n\mathbb{Z}$, not of the ring.
+
+---
+
+## Fixed Subrings and Fixed Fields
+
+### The Fixed Subring
+
+**Definition.** Let $G \leq \operatorname{Aut}(R)$ be a subgroup. The **fixed subring** is
+
+$$
+R^G = \{r \in R : \sigma(r) = r \text{ for all } \sigma \in G\}.
+$$
+
+For a field $K$ and $G \leq \operatorname{Aut}(K)$, $K^G$ is the **fixed field**.
+
+**Proposition.** $R^G$ is a subring of $R$ containing the prime subring, and the map $G \mapsto R^G$ reverses inclusions: $H \leq G$ implies $R^G \subseteq R^H$.
+
+**Proof.** If $\sigma$ fixes $r$ and $s$ for all $\sigma \in G$, it fixes $r \pm s$ and $rs$, and fixes $1$; every automorphism fixes the prime subring since it fixes $1$. The inclusion reversal is immediate. $\square$
+
+**Theorem (Artin).** Let $K$ be a field and $G$ a finite subgroup of $\operatorname{Aut}(K)$. Then $K/K^G$ is a Galois extension of degree $\lvert G \rvert$ and
+
+$$
+\operatorname{Gal}(K/K^G) = G, \qquad [K : K^G] = \lvert G \rvert.
+$$
+
+**Proof.** Artin's lemma gives $[K:K^G] \leq \lvert G \rvert < \infty$, so $K/K^G$ is finite, and then $\lvert \operatorname{Aut}(K/K^G) \rvert \leq [K:K^G]$, since this is the number of $K^G$-embeddings of $K$ into an algebraic closure. Also every $\sigma \in G$ fixes $K^G$ by definition, so $G \leq \operatorname{Aut}(K/K^G)$ and $\lvert G \rvert \leq \lvert \operatorname{Aut}(K/K^G) \rvert$. Chaining,
+
+$$
+\lvert G \rvert \leq \lvert \operatorname{Aut}(K/K^G) \rvert \leq [K:K^G] \leq \lvert G \rvert,
+$$
+
+so equality holds throughout; thus $\lvert \operatorname{Aut}(K/K^G) \rvert = [K:K^G]$ and $K/K^G$ is Galois by the characterization of *Galois Theory*, and $\operatorname{Gal}(K/K^G) = \operatorname{Aut}(K/K^G)$ equals $G$ because both have order $\lvert G \rvert$. $\square$
+
+---
+
+## Automorphisms of Extensions
+
+### Relative Automorphisms
+
+**Definition.** For a field extension $K/F$ the **relative automorphism group** is
+
+$$
+\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K) = \{\sigma \in \operatorname{Aut}(K) : \sigma\vert_F = \mathrm{id}\}.
+$$
+
+The group $\operatorname{Aut}(K) = \operatorname{Aut}_{\mathbb{Z}}(K)$ of all automorphisms of $K$ is the **absolute** automorphism group, as opposed to the relative group $\operatorname{Gal}(K/F)$.
+
+**Proposition.** Let $K = F(\alpha)$ be algebraic with minimal polynomial $m_\alpha$ over $F$. Then $\sigma \mapsto \sigma(\alpha)$ is a bijection from $\operatorname{Aut}_F(F(\alpha))$ onto the set of roots of $m_\alpha$ lying in $F(\alpha)$; if $m_\alpha$ splits in $F(\alpha)$ with distinct roots, so that the root set has $\deg m_\alpha$ elements, the automorphism group has order $\deg m_\alpha$.
+
+**Proof.** An $F$-automorphism $\sigma$ is determined by $\sigma(\alpha)$, which must be a root of $m_\alpha$; conversely every root of $m_\alpha$ in $F(\alpha)$ defines an $F$-embedding $F(\alpha) \to F(\alpha)$, which is an automorphism because the extension is finite-dimensional over $F$. $\square$
+
+**Example.** For $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ the minimal polynomial $x^2 - 2$ splits in $\mathbb{Q}(\sqrt2)$, so the automorphism group has order $2$. For $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ the minimal polynomial $x^3 - 2$ has only one root in the field, so the group is trivial, even though the extension is not Galois and $\lvert \operatorname{Aut} \rvert < [K:F]$.
+
+**Example.** For the cyclotomic field $\mathbb{Q}(\zeta_n)$, every automorphism sends $\zeta_n \mapsto \zeta_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in *Unique Factorisation Domains* and standard in general.
+
+### Termination of the Correspondence for Finite Extensions
+
+Let $K/F$ be a finite extension and let $E = K^{\operatorname{Gal}(K/F)}$ be the fixed field of all $F$-automorphisms. Then $E \supseteq F$ and $\operatorname{Gal}(K/E) = \operatorname{Gal}(K/F)$. The extension $K/F$ is Galois exactly when $E = F$; in general $E$ is the smallest intermediate subfield over which $K$ is Galois, since $K/E$ is Galois by Artin's theorem and any intermediate field $L$ with $K/L$ Galois satisfies $L \supseteq K^{\operatorname{Gal}(K/F)} = E$; and $K/F$ is Galois if and only if $F$ is the fixed field of its own automorphism group.
+
+**Example.** For $K = \mathbb{Q}(\sqrt[3]{2})$ the group is trivial, so the fixed field is $K$ itself, and the Galois part of the extension is the trivial subextension $\mathbb{Q}/\mathbb{Q}$.
+
+---
+
+## Frobenius and Arithmetic Automorphisms
+
+### The Frobenius Automorphism
+
+**Theorem.** Let $K$ have characteristic $p > 0$. The **Frobenius map** $\varphi(x) = x^p$ is an injective endomorphism of $K$; it is an automorphism exactly when $K$ is perfect. In particular $\varphi \in \operatorname{Aut}(\mathbb{F}_{p^n})$ has order $n$, and $\operatorname{Aut}(\mathbb{F}_{p^n}) = \operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n$.
+
+**Proof.** The freshman's dream gives additivity, multiplicativity is immediate, and the kernel is trivial. Surjectivity of $\varphi$ is exactly the perfectness criterion of *Splitting Fields and Algebraic Closure*; it holds for every finite field since an injective self-map of a finite set is bijective, and for every algebraically closed field. The order computation on $\mathbb{F}_{p^n}$ and the identification with the full automorphism group are from *Finite Fields* and *Galois Theory*. $\square$
+
+**Remark (absolute Galois group).** The automorphism group $\operatorname{Gal}(\overline{F}/F) = \operatorname{Aut}_F(\overline{F})$ is the **absolute Galois group** of $F$. It is a profinite group and it is the basic invariant of the arithmetic of $F$; for $F = \mathbb{F}_p$ it is the profinite completion $\widehat{\mathbb{Z}}$, topologically generated by the Frobenius, while for $F = \mathbb{Q}$ it is a large group about which much is known and much is not. The structure of absolute Galois groups belongs to algebraic number theory ; only the finite-field case is elementary.
+
+### Order-Based Automorphisms
+
+**Definition.** An automorphism $\sigma$ of a ring with $\sigma^2 = \mathrm{id}$ is an **involution**. More generally the order of $\sigma$ is the least $n \geq 1$ with $\sigma^n = \mathrm{id}$.
+
+**Proposition (involutions and quadratic subextensions).** Let $K/F$ be a finite Galois extension with group of order divisible by $2$, and let $\sigma \in \operatorname{Gal}(K/F)$ have order $2$. Then the fixed field $K^{\langle\sigma\rangle}$ is an intermediate field with
+
+$$
+[K : K^{\langle\sigma\rangle}] = 2, \qquad [K^{\langle\sigma\rangle} : F] = \frac{[K:F]}{2}.
+$$
+
+When $[K:F] = 2$ this fixed field is $F$ itself, and if in addition $\operatorname{char} F \neq 2$ then $K = F(\sqrt{a})$ for a nonsquare $a \in F$.
+
+**Proof.** The first identity is the fundamental theorem applied to the subgroup of order $2$, and the second follows from the tower law. If $[K:F] = 2$ then $\sigma$ generates $\operatorname{Gal}(K/F)$, so $K^{\langle\sigma\rangle}$ is the fixed field of the full Galois group, namely $F$; in characteristic different from $2$ every quadratic extension is obtained by adjoining a square root of a nonsquare in the base field (the usual completion-of-the-square argument). $\square$
+
+**Example.** The complex conjugation $\sigma(z) = \bar z$ is an involution of $\mathbb{C}$ with fixed field $\mathbb{R}$; the field extension $\mathbb{R}(i)/\mathbb{R}$ is quadratic, adjoining a root of $x^2 + 1$. On $\mathbb{F}_{p^n}$ with $n$ even, the involution $\varphi^{n/2}$ has fixed field $\mathbb{F}_{p^{n/2}}$, and the extension $\mathbb{F}_{p^n}/\mathbb{F}_{p^{n/2}}$ is quadratic.
+
+**Example.** The Galois group of $\mathbb{Q}(\zeta_n)$ contains the involution $\zeta_n \mapsto \zeta_n^{-1}$, whose fixed field $\mathbb{Q}(\zeta_n + \zeta_n^{-1})$ is the **maximal real subfield** of the cyclotomic field, of index $2$.
+
+---
+
+## Conjugation and Anti-Automorphisms
+
+### Anti-Automorphisms and Involutions
+
+**Definition.** An **anti-automorphism** of a ring $A$ is a bijection $\tau : A \to A$ with $\tau(1) = 1$, $\tau(x+y) = \tau(x)+\tau(y)$, and
+
+$$
+\tau(xy) = \tau(y)\tau(x).
+$$
+
+An anti-automorphism with $\tau^2 = \mathrm{id}$ is an **involution** (anti-involution). The fixed set $A^\tau = \{a : \tau(a)=a\}$ is an additive subgroup containing $1$; for $a, b \in A^\tau$ one has $\tau(ab) = ba$, so $A^\tau$ is closed under multiplication, and hence a subring, exactly when its elements commute pairwise. That holds in the commutative case, where $\tau$ is an automorphism, and for complex conjugation, whose fixed set is $\mathbb{R}$. It fails for the transpose anti-involution of $\mathbb{M}_n(k)$ with $n \geq 2$, whose fixed set is the symmetric matrices, since a product of two symmetric matrices need not be symmetric.
+
+**Examples.** Complex conjugation is an anti-automorphism of $\mathbb{C}$; since $\mathbb{C}$ is commutative it is simply the nontrivial automorphism. The transpose $X \mapsto X^{\mathsf{T}}$ is an anti-automorphism of the matrix ring $\mathbb{M}_n(k)$, an involution with fixed set the symmetric matrices, and it is **not** an automorphism for $n \geq 2$, since it reverses the order of products: $(XY)^{\mathsf{T}} = Y^{\mathsf{T}}X^{\mathsf{T}}$.
+
+**Remark.** In a commutative ring every anti-automorphism is an automorphism, so the distinction is only visible noncommutatively, and the matrix transpose above is the standard instance. The rigidity of the automorphisms of a central simple algebra — the Skolem–Noether theorem, that every such automorphism is inner — belongs to the algebra layer and is treated in *Automorphisms and Derivations of Algebras* and *Central Simple Algebras and the Brauer Group*.
+
+---
+
+## Summary
+
+The automorphisms of a unital ring form a group $\operatorname{Aut}(R)$ that preserves units, zero divisors, idempotents, nilpotents, characteristic, ideals, and prime and maximal ideals, and that acts on the lattice of ideals; for a domain it embeds in $\operatorname{Aut}(\operatorname{Frac}(R))$. For a commutative ring the inner automorphism group is trivial, $\operatorname{Inn}(R) = 1$, since conjugation by a unit is the identity there; for a general ring the automorphisms induced by conjugation by units are the **inner** automorphisms, and they form a normal subgroup $\operatorname{Inn}(R) \cong R^\times/Z(R)^\times$ of $\operatorname{Aut}(R)$.
+
+For a field $K$ and a subgroup $G \leq \operatorname{Aut}(K)$, the fixed field $K^G$ is a subfield, the map $G \mapsto K^G$ reverses inclusions, and Artin's lemma gives $[K:K^G] \leq \lvert G \rvert$ for finite $G$. A finite extension $K/F$ is Galois exactly when $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, and then $F$ is the fixed field of the relative automorphism group; an $F$-automorphism of a simple extension $F(\alpha)$ is determined by the image of $\alpha$, which must be a root of $m_\alpha$ lying in the field. In positive characteristic the Frobenius map $x \mapsto x^p$ is an automorphism of $K$ exactly when $K$ is perfect, and on $\mathbb{F}_{p^n}$ it generates the cyclic automorphism group of order $n$.
+
+Anti-automorphisms reverse multiplication; complex conjugation is the standard involutive example in the commutative case, where it coincides with an automorphism, and the matrix transpose is the standard genuinely noncommutative one. The rigidity of the automorphisms of a central simple algebra is treated in the algebra layer.
+
+| Ring or field | $\operatorname{Aut}$ | Inner part |
+|---|---|---|
+| $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{F}_p$ | $1$ | $1$ |
+| $\mathbb{Z}/n\mathbb{Z}$ | $1$ | $1$ |
+| $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt2]$ | $\mathbb{Z}/2$ | $1$ |
+| $\mathbb{F}_{p^n}$ | $\mathbb{Z}/n$ | $1$ |
+| $F[x]$ | $F \rtimes F^\times$, $x \mapsto ax+b$ | $1$ |
+| $F(x)$ | $\operatorname{PGL}_2(F)$ | $1$ |
+| $\mathbb{Q}(\zeta_n)$ | $(\mathbb{Z}/n\mathbb{Z})^\times$ | $1$ |
+| $\mathbb{M}_n(k)$ (over $k$) | $\operatorname{PGL}_n(k)$ | all |
+| $\mathbb{C}$ | $2^{2^{\aleph_0}}$, wild | $1$ |
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $R$ | Ring; commutative with $1 \neq 0$ unless stated |
+| $\operatorname{char} R$ | Characteristic of $R$ |
+| $\mathfrak{p}$, $\mathfrak{m}$ | Prime and maximal ideals of $R$ |
+| $\operatorname{Frac}(R)$ | Field of fractions of an integral domain $R$ |
+| $\widehat{\mathbb{Z}}$ | Profinite completion of $\mathbb{Z}$, $\operatorname{Gal}(\overline{\mathbb{F}_p}/\mathbb{F}_p)$ |
+| $\operatorname{Aut}(R)$ | Group of unital ring automorphisms of $R$ |
+| $\operatorname{Aut}_F(K) = \operatorname{Gal}(K/F)$ | $F$-automorphisms of $K$, the Galois group |
+| $\operatorname{conj}_u$ | Inner automorphism $r \mapsto uru^{-1}$ |
+| $\operatorname{Inn}(R)$ | Inner automorphism group $\cong R^\times/Z(R)^\times$ |
+| $\operatorname{Out}(R)$ | Outer automorphism group $\operatorname{Aut}(R)/\operatorname{Inn}(R)$ |
+| $R^G$, $K^G$ | Fixed subring, fixed field of a subgroup $G$ |
+| $\varphi(x) = x^p$ | Frobenius map |
+| $\operatorname{Gal}(\overline{F}/F)$ | Absolute Galois group |
+| $\zeta_n$ | Primitive $n$-th root of unity |
+| $\mathbb{M}_n(k)$, $\operatorname{PGL}_n(k)$ | Matrix algebra and its projective general linear group |
+| $Z(A)$, $A^\times$ | Centre and unit group of an algebra $A$ |
+
+
+
+## Further Reading
+
+- Paul M. Cohn, *Skew Fields: Theory of General Division Rings* (Cambridge University Press, 1995), for automorphisms and anti-automorphisms of division rings.
+- Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for inner automorphisms of rings.
+- Serge Lang, *Algebra* (Springer, 3rd ed. 2002), for absolute Galois groups and the arithmetic of automorphisms.
+- Ian Stewart, *Galois Theory* (Chapman & Hall/CRC, 4th ed. 2015), for fixed fields, Artin's lemma and the automorphism groups of simple extensions.

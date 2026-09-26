@@ -1,0 +1,200 @@
+
+# __p-adic Integration__
+
+## Introduction
+
+The additive group of $\mathbb{Q}_p$ is locally compact, so it carries a Haar measure, and the Haar measure of a ball is computed from the radius alone: $\mu(a + p^n\mathbb{Z}_p) = p^{-n}$ once $\mu(\mathbb{Z}_p) = 1$ is fixed. This article develops the integration theory on the $p$-adic line that follows. It defines the measure, computes its volumes, identifies the integral of a continuous function with the limit of Riemann sums over the partitions of $\mathbb{Z}_p$ into residue classes, and evaluates the integrals of the monomials and the binomial polynomials, which turn out to be the Bernoulli numbers and the reciprocals $(-1)^n/(n+1)$ respectively. It then passes to the dual point of view: a $p$-adic distribution is a continuous linear functional on the space of continuous functions, and the Amice transform identifies the distributions with the power series with bounded coefficients, the measures with the power series over $\mathbb{Z}_p$, and the algebra of measures with the Iwasawa algebra $\mathbb{Z}_p[[T]]$. The article closes with the multiplicative Haar measure on $\mathbb{Q}_p^\times$ and with the local computation of the integrals that appear in the adelic theory.
+
+The prerequisites are *Measure Theory and Integration* for the general theory of measure and integration, *Locally Compact Groups and Haar Measure* for the existence and uniqueness of the Haar measure on a locally compact group, *The $p$-adic Numbers* and *Local Fields* for $\mathbb{Q}_p$ and its topology, and *p-adic Analysis* for the Banach space $C(\mathbb{Z}_p, \mathbb{Q}_p)$, Mahler's theorem and the difference operator. The article is the local half, where the product of the local measures is assembled into the Tamagawa measure and the local computations below become the Euler factors of the zeta integrals. The arithmetic application of $p$-adic integration — the Bernoulli distribution and the Kubota–Leopoldt $p$-adic $L$-function — belongs andalso in this Part, and is not developed here.
+
+Throughout, $p$ is a prime, $\mathbb{Q}_p$ is the field of $p$-adic numbers with $\mathbb{Z}_p$ its valuation ring, $v = v_p$ the valuation and $\lvert \cdot \rvert_p$ the absolute value normalised by $\lvert p \rvert_p = p^{-1}$. The additive group of $\mathbb{Q}_p$ is written $(\mathbb{Q}_p,+)$ and its Haar measure $\mu$, normalised by $\mu(\mathbb{Z}_p) = 1$; the multiplicative group is $\mathbb{Q}_p^\times$ with the Haar measure written $\mu^\times$ or $d^\times x$. The characteristic function of a set $A$ is $\mathbf{1}_A$, the Bernoulli numbers are those of the generating function $t/(e^t - 1) = \sum_n B_n t^n / n!$, so that $B_0 = 1$, $B_1 = -\tfrac12$, $B_2 = \tfrac16$, $B_3 = 0$, $B_4 = -\tfrac{1}{30}$, and the binomial polynomial is $\binom{x}{n} = x(x-1)\cdots(x-n+1)/n!$.
+
+## The Additive Haar Measure on $\mathbb{Q}_p$
+
+### Existence, Uniqueness and Normalisation
+
+**Theorem (Haar measure).** The additive group $(\mathbb{Q}_p,+)$ is locally compact and Hausdorff, and it carries a nonzero Radon measure $\mu$ that is invariant under translation and is unique up to multiplication by a positive scalar. The measure is moreover invariant under the additive group and satisfies
+$$
+\mu(a + p^n\mathbb{Z}_p) = p^{-n}\,\mu(\mathbb{Z}_p) \qquad (a \in \mathbb{Q}_p,\ n \in \mathbb{Z}),
+$$
+and $(\mathbb{Q}_p, +)$ is unimodular, its left and right Haar measures coinciding because the group is abelian.
+
+**Proof.** Existence and uniqueness up to scalar are the Haar theorem of *Locally Compact Groups and Haar Measure*. The group is abelian, so left invariance equals right invariance and the modulus is $1$. For the volume formula, note that $\mathbb{Z}_p$ is a compact open subgroup and $p^n\mathbb{Z}_p$ is a subgroup of index $p^n$ for $n \geq 0$, so the additivity of $\mu$ gives $\mu(\mathbb{Z}_p) = p^n \mu(p^n\mathbb{Z}_p)$; for negative $n$ the same argument with $\mathbb{Z}_p \subseteq p^{-n}\mathbb{Z}_p$ gives the formula, and the cosets of $p^n\mathbb{Z}_p$ all have the same measure by translation invariance. $\square$
+
+**Definition.** The normalisation $\mu(\mathbb{Z}_p) = 1$ is fixed once and for all. It gives
+$$
+\mu(a + p^n\mathbb{Z}_p) = p^{-n}, \qquad \mu(\mathbb{Z}_p) = 1, \qquad \mu(\mathbb{Q}_p) = +\infty, \qquad \mu(p^n\mathbb{Z}_p^\times) = p^{-n}\Bigl(1 - \frac1p\Bigr).
+$$
+
+**Proposition (scaling and invariance).** For $a \in \mathbb{Q}_p^\times$ and $f$ integrable,
+$$
+\int_{\mathbb{Q}_p} f(ax) \, d\mu(x) = \lvert a \rvert_p^{-1} \int_{\mathbb{Q}_p} f(x) \, d\mu(x), \qquad \int_{\mathbb{Q}_p} f(x + b) \, d\mu(x) = \int_{\mathbb{Q}_p} f(x) \, d\mu(x).
+$$
+
+**Proof.** The second identity is the translation invariance of the Haar measure. For the first, the measure $\mu_a(A) = \mu(aA)$ is a translation-invariant Radon measure, hence equals $\mu_a(\mathbb{Z}_p)\mu$ by uniqueness; and $\mu_a(\mathbb{Z}_p) = \mu(a\mathbb{Z}_p) = \lvert a \rvert_p$ for $a \in \mathbb{Q}_p^\times$, by the volume formula for $a = p^n$ and the fact that $\lvert a \rvert_p = p^{-n}$. $\square$
+
+### Riemann Sums and the Integral of a Continuous Function
+
+**Theorem (Riemann sums).** Let $f : \mathbb{Z}_p \to \mathbb{Q}_p$ be continuous. Then the Riemann sums
+$$
+S_n(f) = \frac{1}{p^n} \sum_{x=0}^{p^n-1} f(x)
+$$
+converge in $\mathbb{Q}_p$ as $n \to \infty$, and their limit is $\int_{\mathbb{Z}_p} f \, d\mu$.
+
+**Proof.** The points $0, 1, \dots, p^n-1$ are representatives of the cosets of $p^n\mathbb{Z}_p$ in $\mathbb{Z}_p$, each of measure $p^{-n}$, so $S_n(f)$ is the integral of the locally constant function that is constant on each coset with the value $f$ at its representative. The difference $\int f - S_n(f)$ is the integral of $f$ minus its coset-wise approximations, of absolute value at most the supremum of the oscillation of $f$ on the cosets. Since $\mathbb{Z}_p$ is compact and $f$ continuous, $f$ is uniformly continuous, so for $n$ large the oscillation of $f$ on every coset of $p^n\mathbb{Z}_p$ is at most $\epsilon$, and the non-Archimedean estimate gives $\lvert \int f - S_n(f) \rvert \leq \epsilon$ for those $n$. $\square$
+
+The theorem is the concrete form of the integral on the unit ball: the Haar integral is computed by sampling a continuous function at the representatives of the residue classes modulo $p^n$ and dividing by the number of classes. The resulting functional of $f$ is called the **Volkenborn integral** of $f$ over $\mathbb{Z}_p$, and for continuous $f$ it is the Haar integral; for functions that are not continuous the Riemann sums may fail to converge, and the Volkenborn integral is then a distinct notion, defined only for the function classes on which the limit exists.
+
+## Integration of Continuous Functions
+
+### The Integral of a Binomial Polynomial
+
+**Theorem.** For every $n \geq 0$,
+$$
+\int_{\mathbb{Z}_p} \binom{x}{n} \, d\mu(x) = \frac{(-1)^n}{n+1}.
+$$
+
+**Proof.** By the hockey-stick identity $\sum_{x=0}^{N}\binom{x}{n} = \binom{N+1}{n+1}$, the Riemann sum is
+$$
+S_m\Bigl(\binom{\cdot}{n}\Bigr) = \frac{1}{p^m}\binom{p^m}{n+1}
+= \frac{(p^m-1)(p^m-2)\cdots(p^m-n)}{(n+1)!},
+$$
+since $\binom{p^m}{n+1} = \frac{p^m(p^m-1)\cdots(p^m-n)}{(n+1)!}$ has exactly the factor $p^m$ in the numerator that the division removes. As $m \to \infty$ each factor $p^m - j$ tends to $-j$ in $\mathbb{Q}_p$, so the limit of the Riemann sums is $(-1)^n n!/(n+1)! = (-1)^n/(n+1)$, and it equals the integral by the Riemann-sum theorem. $\square$
+
+### The Integral of a Monomial
+
+**Theorem.** For every $n \geq 0$,
+$$
+\int_{\mathbb{Z}_p} x^n \, d\mu(x) = B_n,
+$$
+the $n$-th Bernoulli number.
+
+**Proof.** The monomial expands in the binomial basis as $x^n = \sum_{k=0}^{n} k!\,S(n,k)\binom{x}{k}$, with $S(n,k)$ the Stirling numbers of the second kind; the expansion is finite and is the standard change of basis between the monomials and the binomial polynomials. Integrating term by term and applying the binomial integral gives
+$$
+\int_{\mathbb{Z}_p} x^n \, d\mu(x) = \sum_{k=0}^{n} \frac{(-1)^k k!\,S(n,k)}{k+1} = B_n,
+$$
+the last equality being the classical Stirling-number formula for the Bernoulli numbers. $\square$
+
+**Corollary (consistency of the two bases).** The two evaluations agree, as they must: the derivation of the monomial integral *uses* the binomial integral, and the resulting expression for $B_n$ is the standard one. Numerically, $B_0 = 1$, $B_1 = -\tfrac12$, $B_2 = \tfrac16$, $B_3 = 0$, $B_4 = -\tfrac{1}{30}$, and the first two values are checked directly below.
+
+**Example.** $\int_{\mathbb{Z}_p} x \, d\mu(x) = -\tfrac12$ and $\int_{\mathbb{Z}_p} x^2 \, d\mu(x) = \tfrac16$. Directly, $\sum_{x<p^m} x = p^m(p^m-1)/2$, so $S_m(x) = (p^m-1)/2 \to -1/2$; and $\sum_{x<p^m}x^2 = (p^m-1)p^m(2p^m-1)/6$, so $S_m(x^2) = (p^m-1)(2p^m-1)/6 \to 1/6$. The integral of $x$ is negative although the Haar measure is positive on Borel sets: the field $\mathbb{Q}_p$ is not ordered, so the positivity of the measure does not constrain the integral of a $\mathbb{Q}_p$-valued function.
+
+**Remark (integrality).** The values $\int x^n \, d\mu = B_n$ are rational, and by the von Staudt–Clausen theorem the primes dividing the denominator of $B_n$ are exactly the primes $q$ with $q - 1 \mid n$. The Haar integral of a polynomial with $\mathbb{Z}_p$-coefficients therefore need not lie in $\mathbb{Z}_p$: the integral is a $\mathbb{Q}_p$-linear functional of norm $1$ on $C(\mathbb{Z}_p,\mathbb{Q}_p)$, not a $\mathbb{Z}_p$-valued functional on the polynomial subspace.
+
+## $p$-adic Distributions and Measures
+
+### Definitions
+
+**Definition.** A **$p$-adic distribution** on $\mathbb{Z}_p$ is a $\mathbb{Q}_p$-linear map $\lambda : C(\mathbb{Z}_p, \mathbb{Q}_p) \to \mathbb{Q}_p$ that is continuous for the supremum norm, equivalently $\lvert \lambda(f) \rvert \leq C \lVert f \rVert_\infty$ for some constant $C$. A **$p$-adic measure** is a distribution with $\lvert \lambda(f) \rvert \leq \lVert f \rVert_\infty$, that is, a distribution of norm at most $1$.
+
+The Haar measure of the previous sections is a measure in this sense, with $\lambda(f) = \int_{\mathbb{Z}_p} f \, d\mu$, and the Cauchy–Schwarz-type positivity of a real measure has no place in the definition: what is retained is linearity, continuity and the norm bound. The space of distributions is the continuous dual of the Banach space $C(\mathbb{Z}_p,\mathbb{Q}_p)$, and the space of measures is its unit ball.
+
+### The Mahler Description and the Amice Transform
+
+**Theorem (duality with bounded sequences).** The map
+$$
+\lambda \longmapsto \bigl( \lambda\bigl(\tbinom{\cdot}{n}\bigr) \bigr)_{n \geq 0}
+$$
+is a linear isomorphism of the space of $p$-adic distributions on $\mathbb{Z}_p$ onto the space $\ell^\infty$ of bounded sequences in $\mathbb{Q}_p$, and it carries the measures onto the sequences with values in $\mathbb{Z}_p$.
+
+**Proof.** Mahler's theorem of *p-adic Analysis* identifies $C(\mathbb{Z}_p,\mathbb{Q}_p)$ isometrically with $c_0$ by $f \mapsto (\Delta^n f(0))$, the binomial polynomials forming the corresponding basis; a continuous linear functional on $c_0$ is given by a bounded sequence, and the duality $\ell^\infty = (c_0)'$ in the non-Archimedean case is proved by the same argument as the classical one, with the ultrametric inequality replacing the triangle inequality. A functional has norm at most $1$ exactly when its coefficient sequence has all terms in $\mathbb{Z}_p$. $\square$
+
+**Theorem (Amice transform).** For a distribution $\lambda$ on $\mathbb{Z}_p$, define
+$$
+A_\lambda(T) = \int_{\mathbb{Z}_p} (1+T)^x \, d\lambda(x) = \sum_{n \geq 0} \lambda\bigl(\tbinom{\cdot}{n}\bigr) T^n .
+$$
+Then $\lambda \mapsto A_\lambda$ is a linear isomorphism of the space of distributions onto the ring of power series with bounded coefficients, and it restricts to a linear isomorphism of the space of measures onto $\mathbb{Z}_p[[T]]$.
+
+**Proof.** The expansion $(1+T)^x = \sum_n \binom{x}{n}T^n$ is Mahler's expansion of the function $x \mapsto (1+T)^x$ for a formal variable $T$, and the coefficients are $\binom{x}{n}$; applying $\lambda$ term by term and using continuity gives the stated power series, whose coefficients are the values of $\lambda$ on the binomial basis. The coefficient sequence is bounded for a distribution and lies in $\mathbb{Z}_p$ for a measure, by the preceding theorem. $\square$
+
+**Corollary (the Iwasawa algebra).** The convolution product of measures — $(\lambda * \nu)(f) = \int \int f(x+y) \, d\lambda(x) \, d\nu(y)$ — corresponds under the Amice transform to the product of power series, so that the algebra of $p$-adic measures on $\mathbb{Z}_p$ is isomorphic to the **Iwasawa algebra** $\Lambda = \mathbb{Z}_p[[T]]$; it is a complete local ring of dimension $2$ over $\mathbb{Z}_p$, and the group $\mathbb{Z}_p$ acts on it by $(1+T)^a$, corresponding to translation of measures by $a$.
+
+**Proof.** The binomial theorem gives $(1+T)^{x+y} = (1+T)^x(1+T)^y$, and the double integral factorises; the identification with $\mathbb{Z}_p[[T]]$ is the measure case of the Amice transform. The structural statements are standard: $\Lambda$ is the inverse limit of the group rings $\mathbb{Z}_p[\mathbb{Z}/p^n]$, hence complete and local, and the action is the formal substitution $T \mapsto (1+T)^a - 1$. $\square$
+
+The Iwasawa algebra is the ring in which the arithmetic of $p$-adic $L$-functions is expressed: the Kubota–Leopoldt $p$-adic zeta function is obtained by integrating a suitable power of $x$ against the Bernoulli distribution, which is a distribution but not a measure, and the resulting analytic function of the Iwasawa algebra is not covered here. What this article supplies is the integration theory and the dual description of measures; what that theory integrates is taken up there.
+
+## The Multiplicative Haar Measure on $\mathbb{Q}_p^\times$
+
+### Definition and Normalisation
+
+**Definition.** The **multiplicative Haar measure** on $\mathbb{Q}_p^\times$ is
+$$
+d^\times x = \frac{p}{p-1}\,\frac{d\mu(x)}{\lvert x \rvert_p},
+$$
+normalised so that $\mu^\times(\mathbb{Z}_p^\times) = 1$. The normalising factor $p/(p-1)$ is the reciprocal of the additive measure $1 - p^{-1}$ of the unit circle.
+
+**Proposition (volumes and integration).** The measure $d^\times x$ is invariant under multiplication and
+
+**(a)** $\mu^\times(p^n\mathbb{Z}_p^\times) = 1$ and $\mu^\times(1 + p^n\mathbb{Z}_p) = p^{-n}$ for $n \geq 0$;
+
+**(b)** $\mathbb{Q}_p^\times = \bigsqcup_{n \in \mathbb{Z}} p^n\mathbb{Z}_p^\times$ is a disjoint union of sets of multiplicative measure $1$, and for an integrable $f$,
+$$
+\int_{\mathbb{Q}_p^\times} f \, d^\times x = \sum_{n \in \mathbb{Z}} \int_{\mathbb{Z}_p^\times} f(p^n u) \, d^\times u .
+$$
+
+**Proof.** Multiplicative invariance is the multiplicative invariance of $\mu$ combined with the transformation law $\lvert ax \rvert_p = \lvert a \rvert_p \lvert x \rvert_p$. For (a), $\mu(p^n\mathbb{Z}_p^\times) = \lvert p^n \rvert_p (1 - p^{-1}) = p^{-n}(1-p^{-1})$, so $d^\times$ gives $\frac{p}{p-1}\cdot p^{n}\cdot p^{-n}(1-p^{-1}) = 1$; and $1+p^n\mathbb{Z}_p$ lies in $\mathbb{Z}_p^\times$, on which $\lvert x \rvert_p = 1$, so $\mu^\times(1+p^n\mathbb{Z}_p) = \frac{p}{p-1}\mu(1+p^n\mathbb{Z}_p) = \frac{p}{p-1}p^{-n}(1-p^{-1}) = p^{-n}$. Part (b) is the countable additivity of the measure on the disjoint clopen pieces and the multiplication-invariance of $\lvert \cdot \rvert_p$ and $d^\times x$. $\square$
+
+### The Local Zeta Integral
+
+**Theorem.** Let $\Phi = \mathbf{1}_{\mathbb{Z}_p}$ and let $s$ be a complex variable with $\Re s > 0$. Then
+$$
+\int_{\mathbb{Q}_p^\times} \Phi(x)\,\lvert x \rvert_p^{s} \, d^\times x = \sum_{n \geq 0} p^{-ns} = \frac{1}{1 - p^{-s}} .
+$$
+
+**Proof.** The support of $\Phi$ on $\mathbb{Q}_p^\times$ is $\mathbb{Z}_p \setminus \{0\} = \bigsqcup_{n \leq 0} p^n\mathbb{Z}_p^\times$. On the piece $p^n\mathbb{Z}_p^\times$ the integrand $\lvert x \rvert_p^s$ is constant with value $p^{-ns}$, and the multiplicative measure of the piece is $1$; adding the pieces,
+$$
+\int_{\mathbb{Q}_p^\times} \Phi(x)\,\lvert x \rvert_p^{s} \, d^\times x = \sum_{n \leq 0} p^{-ns} = \sum_{k \geq 0} p^{-ks},
+$$
+which converges exactly when $\lvert p^{-s} \rvert = p^{-\Re s} < 1$, that is when $\Re s > 0$, and then equals $1/(1-p^{-s})$. $\square$
+
+The integral is the **local zeta integral** at the place $p$, and its value is the local Euler factor of the Riemann zeta function. Its convergence half-plane and its meromorphic continuation to $s$ by the formula $1/(1-p^{-s})$ are the prototypes of the local computations, where the product of these factors over the places produces the global zeta function, and where the same integral with $\Phi$ replaced by a general test function defines the local functional equation.
+
+## The Passage to the Adeles
+
+The measure constructed here is the local factor of the adelic measure. Over the adele ring $\mathbb{A}_K$ of a global field $K$, of which $\mathbb{Q}$ is the prototype, the restricted product of the local measures converges because almost every factor is normalised, and the resulting Tamagawa measure on the quotient $\mathbb{A}_K/K$ has finite total volume; the multiplicative version on the idele class group has the same property, and the finiteness of the volume is the analytic form of the finiteness of the class number and Dirichlet's unit theorem. The assembly of the local measures into the adelic one, the Poisson summation formula on the adeles, and the zeta integrals obtained by multiplying the local computations of this article, all belong, which assumes this article for the local theory. The additive group and the idele group themselves are constructed in *Adeles and Ideles*.
+
+## Summary
+
+The additive group of $\mathbb{Q}_p$ is locally compact and carries a Haar measure, unique up to a positive scalar and fixed here by $\mu(\mathbb{Z}_p) = 1$; the measure of a ball is $\mu(a+p^n\mathbb{Z}_p) = p^{-n}$, the measure scales as $\int f(ax)d\mu = \lvert a \rvert_p^{-1}\int f\,d\mu$, and the measure of the unit circle is $1 - p^{-1}$. The integral of a continuous function on $\mathbb{Z}_p$ is the limit of the Riemann sums $p^{-n}\sum_{x<p^n} f(x)$, and this functional is the Volkenborn integral. Its values on the monomials are the Bernoulli numbers and its values on the binomial polynomials are $(-1)^n/(n+1)$; the two computations are consistent through the Stirling-number expansion of the monomials, and the integral is linear but not multiplicative.
+
+The continuous dual of the space of continuous functions is the space of $p$-adic distributions, identified with the bounded sequences by evaluation on the binomial basis, and the Amice transform identifies the distributions with the power series of bounded coefficients and the measures with $\mathbb{Z}_p[[T]]$. The convolution of measures makes the last ring the Iwasawa algebra, a complete local ring in which the $p$-adic $L$-functions of the arithmetic theory are the analytic objects. The multiplicative Haar measure $d^\times x = \frac{p}{p-1}\lvert x \rvert_p^{-1}d\mu(x)$, normalised by $\mu^\times(\mathbb{Z}_p^\times) = 1$, gives each set $p^n\mathbb{Z}_p^\times$ measure $1$ and each principal-unit group $1+p^n\mathbb{Z}_p$ measure $p^{-n}$; its integral against $\mathbf{1}_{\mathbb{Z}_p}\lvert x \rvert^s$ is the local Euler factor $(1-p^{-s})^{-1}$, the prototype of the local computations of the adelic theory.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $p$ | A prime |
+| $\mathbb{Q}_p$, $\mathbb{Z}_p$ | Field of $p$-adic numbers, ring of $p$-adic integers |
+| $v = v_p$, $\lvert \cdot \rvert_p$ | $p$-adic valuation and absolute value, $\lvert p \rvert_p = p^{-1}$ |
+| $\mu$ | Additive Haar measure on $\mathbb{Q}_p$, $\mu(\mathbb{Z}_p) = 1$ |
+| $a + p^n\mathbb{Z}_p$ | Ball, of measure $p^{-n}$ |
+| $S_n(f)$ | Riemann sum $p^{-n}\sum_{x=0}^{p^n-1} f(x)$ |
+| $\int_{\mathbb{Z}_p} f \, d\mu$ | Haar integral, equal to $\lim_n S_n(f)$ for continuous $f$ |
+| $d^\times x = \frac{p}{p-1}\frac{d\mu(x)}{\lvert x \rvert_p}$ | Multiplicative Haar measure on $\mathbb{Q}_p^\times$ |
+| $\mu^\times$ | Multiplicative measure, $\mu^\times(\mathbb{Z}_p^\times) = 1$ |
+| $p^n\mathbb{Z}_p^\times$ | Sphere of radius $p^{-n}$, of multiplicative measure $1$ |
+| $1 + p^n\mathbb{Z}_p$ | Principal-unit group, $\mu^\times(1+p^n\mathbb{Z}_p) = p^{-n}$ |
+| $B_n$ | Bernoulli numbers, $\int_{\mathbb{Z}_p} x^n d\mu = B_n$ |
+| $\binom{x}{n}$ | Binomial polynomial, $\int_{\mathbb{Z}_p}\binom{x}{n}d\mu = (-1)^n/(n+1)$ |
+| $\mathbf{1}_A$ | Indicator function of a set |
+| $C(\mathbb{Z}_p,\mathbb{Q}_p)$ | Banach space of continuous functions on $\mathbb{Z}_p$ |
+| $\lambda$, $\ell^\infty$ | A $p$-adic distribution, bounded sequences |
+| $A_\lambda(T)$ | Amice transform, $\int (1+T)^x d\lambda(x)$ |
+| $\Lambda = \mathbb{Z}_p[[T]]$ | Iwasawa algebra, algebra of $p$-adic measures |
+| $\Phi = \mathbf{1}_{\mathbb{Z}_p}$ | Standard test function |
+| $(1-p^{-s})^{-1}$ | Local zeta integral, the local Euler factor |
+
+
+
+
+
+## Further Reading
+
+- Neal Koblitz, *$p$-adic Numbers, $p$-adic Analysis, and Zeta-Functions*, 2nd ed. (Springer, 1984), for the Haar measure, the Volkenborn integral and the Bernoulli numbers.
+- Alain M. Robert, *A Course in $p$-adic Analysis* (Springer, 2000), for the integral of continuous functions and the Riemann-sum description.
+- Wim H. Schikhof, *Ultrametric Calculus* (Cambridge University Press, 1984), for the integral of locally analytic functions and the Volkenborn theory.
+- Yvette Amice, *Interpolation $p$-adique* (Bulletin de la Société Mathématique de France 92, 1964), for the Amice transform and the duality between distributions and power series.
+- Serge Lang, *Cyclotomic Fields I and II* (Springer, 1990), for the Iwasawa algebra and the measure-theoretic formulation of the $p$-adic $L$-functions.
+- John Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions* (thesis, Princeton, 1950), for the local zeta integrals and the global assembly.
+- Andrei A. Kirillov, *Elements of the Theory of Representations* (Springer, 1976), for Haar measure on locally compact groups and the additive group of a local field.
+- Pierre Colmez, *Fonctions d'une variable $p$-adique* (Astérisque 248, 1998), for the integration theory of locally analytic functions and its applications.

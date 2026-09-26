@@ -1,0 +1,287 @@
+
+# __The Fundamental Group and Covering Spaces__
+
+## Introduction
+
+A topological space is a set with a distance, or with the open sets that a distance generates; the invariants of the space studied in this article are built from *maps of the interval into it*. Two such maps are identified when one can be deformed into the other through maps with the same endpoints, and the resulting equivalence classes of loops, composed by concatenation, form a group — the **fundamental group**. This is the first algebraic invariant of a space in the corpus, and it is the paradigm of the whole of algebraic topology: a space is replaced by an algebraic object, a continuous map is replaced by a homomorphism, and a question about spaces becomes a question about groups.
+
+The companion article *Topological Spaces* supplies the general topology: open and closed sets, continuity, subspaces, the product and quotient topologies, compactness and connectedness. The companion article *Metric, Uniform and Complete Spaces* supplies the distance, and it is from there that the closed unit interval $I$ and the Euclidean spaces $\mathbb{R}^n$ are taken. The present article uses nothing beyond these, and in particular it introduces no measure and no integral: the whole of the theory is a theory of continuous maps of the interval and the square. Where another article needs a smooth or a measure-theoretic statement, the deferral is stated at the point where it occurs.
+
+The article has four parts. The first defines homotopy, the fundamental group and its functorial behaviour, computes $\pi_1(S^1)$, and proves van Kampen's theorem. The second develops covering spaces: the path and homotopy lifting properties, the correspondence between connected coverings of a space and subgroups of its fundamental group, and deck transformations. The third records the universal cover and the classification of the connected coverings of a locally simply connected space. The fourth collects the standard examples and the computations that the rest of the corpus uses, and records where the results pass to a smoother or a more general setting.
+
+Throughout, $I = [0,1]$ is the closed unit interval with its usual distance, a **path** in $X$ is a continuous map $\gamma : I \to X$, a **loop** based at $x_0$ is a path with $\gamma(0) = \gamma(1) = x_0$, and a space is **simply connected** when it is path-connected and its fundamental group at every point is trivial. The basepoint is written $x_0$ and is never suppressed without comment.
+
+## Homotopy
+
+### Homotopic Maps
+
+**Definition.** Let $X$ and $Y$ be topological spaces and let $f, g : X \to Y$ be continuous. A **homotopy** from $f$ to $g$ is a continuous map
+
+$$
+F : X \times I \longrightarrow Y
+$$
+
+with $F(x, 0) = f(x)$ and $F(x, 1) = g(x)$ for all $x \in X$, the product carrying the product topology. When such an $F$ exists, $f$ and $g$ are **homotopic**, written $f \simeq g$.
+
+The partial maps $F_t(x) = F(x,t)$ are continuous, and $F$ is a path in the space of continuous maps from $X$ to $Y$; but that space is not itself given a topology here, so the definition is kept as a map on the product.
+
+**Proposition.** Homotopy is an equivalence relation on the set of continuous maps $X \to Y$, compatible with composition: if $f \simeq f'$ and $g \simeq g'$ then $g \circ f \simeq g' \circ f'$.
+
+*Proof.* Reflexivity is the constant homotopy $F(x,t) = f(x)$; symmetry is $F'(x,t) = F(x,1-t)$, which is continuous because $t \mapsto 1-t$ is; transitivity is obtained by reparametrising, $F''(x,t) = F(x, 2t)$ for $t \leq \tfrac12$ and $F''(x,t) = G(x, 2t-1)$ for $t \geq \tfrac12$, which is well defined and continuous on the two closed halves by the pasting lemma. For compatibility let $F$ be a homotopy from $f$ to $f'$ and $G$ one from $g$ to $g'$; then $H(x,t) = G(F(x,t),t)$ is continuous and joins $g \circ f$ to $g' \circ f'$. $\square$
+
+**Definition.** A map $f : X \to Y$ is a **homotopy equivalence** if there is a map $g : Y \to X$ with $g \circ f \simeq \mathrm{id}_X$ and $f \circ g \simeq \mathrm{id}_Y$; the map $g$ is a **homotopy inverse** of $f$, and $X$ and $Y$ are **homotopy equivalent**, written $X \simeq Y$. A space is **contractible** if it is homotopy equivalent to a one-point space.
+
+Homotopy equivalence is an equivalence relation on spaces, coarser than homeomorphism, and it is the equivalence the whole of algebraic topology respects.
+
+**Example.** The disc $D^n = \{x \in \mathbb{R}^n : |x| \leq 1\}$ is contractible: the map $H(x,t) = (1-t)x$ is a homotopy from the identity to the constant map at $0$. More generally a subset $A \subseteq X$ is a **deformation retract** of $X$ when there is a homotopy $H : X \times I \to X$ from $\mathrm{id}_X$ to a map with image in $A$ that is the identity on $A$ at every time; then $A \hookrightarrow X$ is a homotopy equivalence. The sphere $S^{n-1}$ is a deformation retract of $\mathbb{R}^n \setminus \{0\}$ via $H(x,t) = ((1-t)|x| + t)\,x/|x|$.
+
+### Homotopy of Paths
+
+For paths, homotopy is taken relative to the endpoints.
+
+**Definition.** Two paths $\gamma_0, \gamma_1 : I \to X$ with the same endpoints, $\gamma_0(0) = \gamma_1(0)$ and $\gamma_0(1) = \gamma_1(1)$, are **path homotopic** if there is a homotopy $H : I \times I \to X$ from $\gamma_0$ to $\gamma_1$ with $H(0,t) = \gamma_0(0)$ and $H(1,t) = \gamma_0(1)$ for all $t \in I$. Path homotopy is written $\gamma_0 \simeq_p \gamma_1$.
+
+**Lemma.** Path homotopy is an equivalence relation on paths with fixed endpoints, and it is compatible with concatenation.
+
+*Proof.* The three properties are verified as in the proposition above, with the extra condition at the two ends maintained because the homotopies are constant there. For compatibility, if $H$ joins $\alpha_0$ to $\alpha_1$ and $K$ joins $\beta_0$ to $\beta_1$ with $\alpha_i(1) = \beta_i(0)$, then concatenating at each time, $(H \ast K)(s,t) = H(2s,t)$ for $s \leq \tfrac12$ and $K(2s-1,t)$ for $s \geq \tfrac12$, is a path homotopy joining $\alpha_0 \ast \beta_0$ to $\alpha_1 \ast \beta_1$. $\square$
+
+**Definition.** For paths $\alpha$ from $x_0$ to $x_1$ and $\beta$ from $x_1$ to $x_2$, the **concatenation** $\alpha \ast \beta : I \to X$ is
+
+$$
+(\alpha \ast \beta)(s) = \begin{cases} \alpha(2s), & 0 \leq s \leq \tfrac12, \\ \beta(2s-1), & \tfrac12 \leq s \leq 1,\end{cases}
+$$
+
+well defined and continuous at $s = \tfrac12$ because both branches equal $x_1$ there. For a path $\gamma$ the **reverse path** is $\bar\gamma(s) = \gamma(1-s)$, and the **constant path** at $x_0$ is $c_{x_0}(s) = x_0$.
+
+Concatenation of paths is not associative as an operation on paths, but it is associative up to path homotopy; this is the mechanism by which the fundamental group acquires its group law.
+
+## The Fundamental Group
+
+### Definition and the Group Axioms
+
+**Definition.** Let $X$ be a topological space and $x_0 \in X$. The **fundamental group** of $X$ at $x_0$, written $\pi_1(X, x_0)$, is the set of path-homotopy classes of loops based at $x_0$, with the operation induced by concatenation, $[\alpha][\beta] = [\alpha \ast \beta]$.
+
+**Theorem.** $\pi_1(X,x_0)$ is a group under the operation induced by concatenation. Its identity is the class of the constant loop and the inverse of $[\gamma]$ is $[\bar\gamma]$.
+
+*Proof.* The operation is well defined by the compatibility lemma. Associativity: the two loops $(\alpha \ast \beta) \ast \gamma$ and $\alpha \ast (\beta \ast \gamma)$ differ only by the reparametrisation of $I$ carrying the break points $\tfrac14, \tfrac12$ to $\tfrac12, \tfrac34$, and the affine reparametrisation $u \mapsto (u + \tfrac14)/2$ gives a homotopy relative to endpoints through the linear interpolation of the two reparametrisations. Identity: $c_{x_0} \ast \gamma$ is homotopic to $\gamma$ by the reparametrisation that spends the first half of the interval at $x_0$ and then traverses $\gamma$, a homotopy being given by $H(s,t) = \gamma\bigl(\max(0, 2s - t)/(2 - t)\bigr)$ for $t < 1$ and $H(s,1) = \gamma(s)$. Inverse: $\gamma \ast \bar\gamma$ traverses the loop and returns, and $H(s,t) = \gamma(\cdot)$ evaluated at the trapezoidal speed $\max(0, 2s-t)\cdot\min(1, 2s - t + 1 - s)$ collapses it to the constant loop; explicitly $H(s,t) = \gamma(\phi_t(s))$ with $\phi_t$ the piecewise linear map that is $0$ on $[0, t/2]$, equals $2s - t$ on $[t/2, \tfrac12]$, equals $2 - 2s - t$ on $[\tfrac12, 1 - t/2]$ and $0$ on $[1-t/2, 1]$. $\square$
+
+**Remark.** The notation $\pi_1(X,x_0)$ is functorial but not yet a homotopy invariant as written, since it depends on the basepoint; the next paragraph removes the dependence when $X$ is path-connected.
+
+### Change of Basepoint
+
+**Definition.** Let $\gamma : I \to X$ be a path from $x_0$ to $x_1$. The **change of basepoint map** is
+
+$$
+\gamma_\# : \pi_1(X,x_1) \longrightarrow \pi_1(X,x_0), \qquad \gamma_\#[\alpha] = [\gamma \ast \alpha \ast \bar\gamma].
+$$
+
+**Theorem.** $\gamma_\#$ is a group isomorphism, and it depends on $\gamma$ only through its path-homotopy class. If $\delta$ is a second path from $x_0$ to $x_1$ then $\delta_\#^{-1} \circ \gamma_\#$ is the inner automorphism $[\alpha] \mapsto [\delta \ast \bar\gamma]\,[\alpha]\,[\gamma \ast \bar\delta]$ of $\pi_1(X,x_0)$.
+
+*Proof.* The class $\gamma \ast \alpha \ast \bar\gamma$ is a loop at $x_0$, and the map is a homomorphism because concatenation is associative up to homotopy: $\gamma_\#[\alpha]\gamma_\#[\beta] = [\gamma \ast \alpha \ast \bar\gamma \ast \gamma \ast \beta \ast \bar\gamma] = \gamma_\#[\alpha\beta]$. It is bijective with inverse $\bar\gamma_\#$, computed from $\bar\gamma \ast \gamma \simeq_p c_{x_0}$. For the second statement, $\delta_\#^{-1}\gamma_\#[\alpha] = [\bar\delta \ast \gamma \ast \alpha \ast \bar\gamma \ast \delta]$, and the loop $\bar\delta \ast \gamma$ at $x_0$ conjugates. $\square$
+
+**Corollary.** If $X$ is path-connected, the isomorphism class of $\pi_1(X,x_0)$ is independent of $x_0$, and $\pi_1(X,x_0)$ is abelian whenever the change-of-basepoint maps act trivially. When $X$ is path-connected and $\pi_1$ is abelian the basepoint is suppressed and one writes $\pi_1(X)$.
+
+### Functoriality
+
+**Theorem.** A continuous map $f : X \to Y$ with $f(x_0) = y_0$ induces a group homomorphism
+
+$$
+f_* : \pi_1(X,x_0) \longrightarrow \pi_1(Y,y_0), \qquad f_*[\gamma] = [f \circ \gamma],
+$$
+
+and the assignments $X \mapsto \pi_1(X,x_0)$, $f \mapsto f_*$ are functorial: $(g \circ f)_* = g_* \circ f_*$ and $(\mathrm{id}_X)_* = \mathrm{id}$.
+
+*Proof.* If $H$ is a path homotopy from $\gamma$ to $\gamma'$ then $f \circ H$ is one from $f \circ \gamma$ to $f \circ \gamma'$, so $f_*$ is well defined. It is a homomorphism because $f \circ (\alpha \ast \beta) = (f \circ \alpha) \ast (f \circ \beta)$, the two sides agreeing on each half by the formula. The functorial identities are immediate from associativity of composition. $\square$
+
+**Corollary.** If $f$ is a homotopy equivalence then $f_*$ is an isomorphism, and if $f \simeq g$ through maps fixing the basepoint then $f_* = g_*$.
+
+*Proof.* Let $g$ be a homotopy inverse. Then $g_* f_* = (g f)_* = (\mathrm{id})_* = \mathrm{id}$ because a homotopy $gf \simeq \mathrm{id}_X$ relative to $x_0$ produces the equality of induced maps by transporting a loop through the homotopy. Symmetrically $f_* g_* = \mathrm{id}$. The second statement is the same argument applied to a homotopy from $f$ to $g$ that is constant on the basepoint at every time. $\square$
+
+**Remark.** The fundamental group is therefore a functor from the homotopy category of based spaces to groups, and it is the first of a family; the higher homotopy groups, the homology and the cohomology groups of this category are its siblings, and the same functoriality statements hold for each.
+
+### The Fundamental Group of the Circle
+
+**Theorem.** $\pi_1(S^1, 1) \cong \mathbb{Z}$, generated by the class of the loop $\omega(s) = e^{2\pi i s}$.
+
+The proof is a covering-space argument and is given after the covering theory below; the statement is recorded here because it is the computation on which the rest depends.
+
+**Corollary.** The disc is not homeomorphic to the circle, and $\mathbb{R}^n$ is not homeomorphic to $\mathbb{R}^m$ for $n \neq m$ at the level of the invariants computed here; the stronger invariance of dimension is treated in *Dimension Theory*, which is being written in parallel.
+
+## Covering Spaces
+
+### Definitions and Basic Properties
+
+**Definition.** A **covering space** of a topological space $B$ is a space $E$ together with a continuous surjection $p : E \to B$ such that every $b \in B$ has an open neighbourhood $U$ for which
+
+$$
+p^{-1}(U) = \bigsqcup_{\lambda \in \Lambda} V_\lambda
+$$
+
+is a disjoint union of open sets $V_\lambda \subseteq E$ each mapped homeomorphically onto $U$ by $p$. Such a $U$ is **evenly covered**; the sets $V_\lambda$ are its **sheets**, and $B$ is the **base**. The number of sheets over a point is the **degree** of the covering when it is finite and constant.
+
+**Proposition.** A covering map is a local homeomorphism and an open map, and every point of $E$ has a neighbourhood mapped homeomorphically onto an open set of $B$.
+
+*Proof.* The evenly covered neighbourhood of $p(e)$ contains the sheet through $e$, and $p$ restricts to a homeomorphism on it. A local homeomorphism is open because the restriction to a neighbourhood is a homeomorphism onto an open set. $\square$
+
+**Example.** The map $p : \mathbb{R} \to S^1$, $p(t) = e^{2\pi i t}$, is a covering with infinitely many sheets, the sheets over a small arc being the intervals obtained by translation by integers. The map $z \mapsto z^n$ from $S^1$ to $S^1$ is an $n$-sheeted covering. The product $E \times F \to B \times F$ of a covering with a space is a covering.
+
+**Definition.** A covering $p : E \to B$ is **connected** if $E$ is path-connected, and two coverings $p_1 : E_1 \to B$ and $p_2 : E_2 \to B$ are **isomorphic** if there is a homeomorphism $\varphi : E_1 \to E_2$ with $p_2 \circ \varphi = p_1$. Isomorphism is an equivalence relation, and the covering theory classifies the isomorphism classes.
+
+### Path Lifting
+
+**Theorem (path lifting).** Let $p : E \to B$ be a covering, let $\gamma : I \to B$ be a path, and let $e_0 \in E$ with $p(e_0) = \gamma(0)$. Then there is exactly one path $\tilde\gamma : I \to E$ with $\tilde\gamma(0) = e_0$ and $p \circ \tilde\gamma = \gamma$.
+
+*Proof.* Cover $B$ by evenly covered open sets and pull the cover back to a cover of the compact interval $I$; by the Lebesgue number lemma for the metric space $I$ there is $n$ such that each subinterval $[k/n, (k+1)/n]$ lies in an evenly covered set $U_k$. Construct $\tilde\gamma$ inductively on the subintervals: on $[0, 1/n]$ take the sheet over $U_0$ through $e_0$ and set $\tilde\gamma = (p|_{V_0})^{-1} \circ \gamma$; the endpoint $\tilde\gamma(1/n)$ lies over $\gamma(1/n)$, so it lies in some sheet over $U_1$, and the construction continues. Uniqueness: two lifts agreeing at a point agree on a neighbourhood of it by uniqueness of the local inverse, so the set where they agree is open; it is also closed, because by continuity both maps land in one sheet near a limit point, and $I$ is connected. $\square$
+
+**Theorem (homotopy lifting).** Let $p : E \to B$ be a covering and let $H : I \times I \to B$ be a homotopy with $H(0,0) = b_0$. Given $e_0 \in E$ over $b_0$ there is exactly one $\tilde H : I \times I \to E$ with $p \circ \tilde H = H$ and $\tilde H(0,0) = e_0$.
+
+*Proof.* The argument is that of path lifting with the Lebesgue number lemma applied to the compact square, subdividing into small squares each carried into an evenly covered set, and extending over the squares in lexicographic order; uniqueness is again by connectedness of the square. $\square$
+
+**Corollary (monodromy).** If $\gamma_0, \gamma_1 : I \to B$ are path homotopic and have the same initial point $b_0$, and if $e_0$ lies over $b_0$, then the lifts $\tilde\gamma_0, \tilde\gamma_1$ from $e_0$ have the same endpoint and are path homotopic.
+
+*Proof.* Let $H$ be the path homotopy; lift it to $\tilde H$ with $\tilde H(0,0) = e_0$. For each $t$ the path $s \mapsto \tilde H(s,t)$ lifts the path $s \mapsto H(s,t)$ with the same initial point $e_0$, so by uniqueness it is the lift of that path. Since $H(0,t)$ and $H(1,t)$ are constant in $t$ and the lifted endpoints vary continuously in a discrete fibre, they are constant. Thus $\tilde H$ is a path homotopy between the lifts. $\square$
+
+### The Lifting Criterion
+
+**Theorem (lifting criterion).** Let $p : (\tilde X, \tilde x_0) \to (X, x_0)$ be a covering with $\tilde X$ and $X$ path-connected and locally path-connected, and let $f : (Y, y_0) \to (X, x_0)$ be continuous with $Y$ path-connected and locally path-connected. Then a lift $\tilde f : (Y,y_0) \to (\tilde X, \tilde x_0)$ with $p \circ \tilde f = f$ exists if and only if
+
+$$
+f_*\bigl(\pi_1(Y,y_0)\bigr) \subseteq p_*\bigl(\pi_1(\tilde X, \tilde x_0)\bigr).
+$$
+
+*Proof.* Necessity: if $\tilde f$ exists then $f_* = p_* \tilde f_*$, so the image of $f_*$ lies in the image of $p_*$. Sufficiency: for $y \in Y$ choose a path $\alpha$ from $y_0$ to $y$ and define $\tilde f(y)$ as the endpoint of the lift of $f \circ \alpha$ starting at $\tilde x_0$. The condition ensures that a second choice $\alpha'$ gives the same endpoint: $\alpha \ast \bar\alpha'$ is a loop at $y_0$, its image under $f$ is a loop whose class lies in $p_*\pi_1(\tilde X,\tilde x_0)$, hence lifts to a loop at $\tilde x_0$, and the two lifts end at the same point. Continuity is checked locally: $y$ has a path-connected neighbourhood $V$ contained in an evenly covered set $U$ about $f(y)$, the lift over the sheet through $\tilde f(y)$ composed with $f$ agrees with $\tilde f$ on $V$, and hence $\tilde f$ is continuous there. $\square$
+
+**Corollary.** With the same hypotheses, two lifts of $f$ that agree at one point of a connected $Y$ agree everywhere.
+
+## The Classification of Coverings
+
+### The Correspondence
+
+Fix a path-connected, locally path-connected and semilocally simply connected space $X$ and a basepoint $x_0$. The last hypothesis says that each point has a neighbourhood whose inclusion induces the trivial map on $\pi_1$; it holds for CW complexes, for manifolds and for all the spaces of this corpus that admit a universal cover.
+
+**Theorem.** The assignment $p \mapsto p_*\bigl(\pi_1(E,e_0)\bigr)$ is a bijection between the isomorphism classes of connected coverings $p : E \to X$ and the subgroups of $\pi_1(X,x_0)$.
+
+*Proof sketch.* Given a subgroup $H \leq \pi_1(X,x_0)$, let $\tilde X_H$ be the set of path-homotopy classes of paths in $X$ issuing from $x_0$, modulo the equivalence $\alpha \sim \beta$ when $\alpha(1) = \beta(1)$ and $[\alpha \ast \bar\beta] \in H$; topologise it by the sets of classes extending a path into a fixed open set, and let $p$ send a class to its endpoint. Then $p$ is a covering, and its image subgroup is $H$. Conversely, given a covering, the image $p_*\pi_1(E,e_0)$ is a subgroup, and two coverings with the same image subgroup are isomorphic by the lifting criterion applied in both directions. The map is injective because the isomorphism class determines the conjugacy class of the image, and for a fixed basepoint the conjugacy is removed by the choice of $e_0$. $\square$
+
+**Corollary.** The covering corresponds to the whole group $\pi_1(X,x_0)$ exactly when $E$ is simply connected; it corresponds to the trivial subgroup exactly when $p$ is a homeomorphism.
+
+### The Universal Cover
+
+**Definition.** A covering $p : \tilde X \to X$ with $\tilde X$ simply connected is a **universal cover** of $X$. When it exists it is unique up to isomorphism over $X$, and it is the covering corresponding to the trivial subgroup.
+
+**Theorem.** If $X$ is path-connected, locally path-connected and semilocally simply connected, then $X$ admits a universal cover.
+
+*Proof.* Apply the construction of the previous theorem with $H$ the trivial subgroup. Equivalently, take $\tilde X$ to be the set of path-homotopy classes of paths issuing from $x_0$ with the endpoint map, as above. $\square$
+
+**Theorem (lifting to the universal cover).** Let $p : \tilde X \to X$ be the universal cover and let $f : (Y,y_0) \to (X,x_0)$ be continuous with $Y$ path-connected and locally path-connected. Then there is a lift $\tilde f$ for every choice of $\tilde x_0$ over $x_0$.
+
+*Proof.* The condition of the lifting criterion holds because $p_*\pi_1(\tilde X,\tilde x_0)$ is trivial, so every subgroup is contained in it. $\square$
+
+**Example.** The universal cover of $S^1$ is $p : \mathbb{R} \to S^1$, $t \mapsto e^{2\pi i t}$; the universal cover of the torus $S^1 \times S^1$ is $\mathbb{R}^2 \to S^1 \times S^1$; the universal cover of $\mathbb{RP}^n$ for $n \geq 2$ is $S^n$, with two sheets.
+
+**Definition.** A covering $p : E \to X$ is **regular** (or normal, or Galois) when $p_*\pi_1(E,e_0)$ is a normal subgroup of $\pi_1(X,x_0)$. The covering is regular exactly when the deck group acts transitively on each fibre.
+
+### Deck Transformations
+
+**Definition.** A **deck transformation** of a covering $p : E \to X$ is a homeomorphism $\tau : E \to E$ with $p \circ \tau = p$. The deck transformations form a group under composition, written $\operatorname{Deck}(E/X)$, or $\operatorname{Aut}(E/X)$.
+
+**Theorem.** If $E$ is connected then $\operatorname{Deck}(E/X)$ acts freely on each fibre: a deck transformation with a fixed point is the identity. Consequently a deck transformation is determined by its value at one point, and $\operatorname{Deck}(E/X)$ is isomorphic to the quotient of the normaliser of $p_*\pi_1(E,e_0)$ in $\pi_1(X,x_0)$ by that subgroup.
+
+*Proof.* A deck transformation with $\tau(e) = e$ and a lift of $p$ satisfies $p \circ \tau = p = p \circ \mathrm{id}$, so $\tau = \mathrm{id}$ by uniqueness of lifts of the same map on a connected space. For the identification, a loop $\gamma$ at $x_0$ whose class normalises $H = p_*\pi_1(E,e_0)$ defines a deck transformation by $e \mapsto$ endpoint of the lift of $\gamma$ from $e$, and the assignment is a homomorphism with kernel $H$. $\square$
+
+**Corollary.** For a regular covering with $E$ connected, $\operatorname{Deck}(E/X) \cong \pi_1(X,x_0)/p_*\pi_1(E,e_0)$. In particular the deck group of the universal cover is $\pi_1(X,x_0)$, acting simply transitively on each fibre.
+
+**Example.** For $S^1$, the deck group of $\mathbb{R} \to S^1$ is $\mathbb{Z}$, generated by $t \mapsto t+1$; for $\mathbb{RP}^n$, the deck group of $S^n \to \mathbb{RP}^n$ is $\mathbb{Z}/2$.
+
+**Remark.** The quotient $X = \tilde X/\Gamma$ of a simply connected space by a group $\Gamma$ acting freely and properly discontinuously is a covering with deck group $\Gamma$ and fundamental group $\Gamma$. This is the standard construction of the lens spaces and of the flat manifolds, and it is stated here without the general theory of properly discontinuous actions, which requires the compactness and separation machinery of *Topological Spaces*.
+
+## Computations
+
+### The Circle and its Consequences
+
+**Theorem.** $\pi_1(S^1,1) \cong \mathbb{Z}$.
+
+*Proof.* The map $p : \mathbb{R} \to S^1$, $p(t) = e^{2\pi i t}$, is a covering with fibre $\mathbb{Z}$ and total space contractible, hence simply connected; it is therefore the universal cover, and $\pi_1(S^1,1) \cong \operatorname{Deck}(\mathbb{R}/S^1) \cong \mathbb{Z}$. Concretely, the assignment to a loop of the endpoint of its lift at $0$ is an isomorphism $\pi_1(S^1,1) \to \mathbb{Z}$, the **winding number**. $\square$
+
+**Corollary.** $\pi_1(S^1 \times S^1) \cong \mathbb{Z} \oplus \mathbb{Z}$, since $\pi_1$ of a product is the product of the fundamental groups.
+
+**Theorem (fundamental theorem of algebra, topological form).** Every nonconstant polynomial with complex coefficients has a root in $\mathbb{C}$.
+
+*Proof.* Suppose $f(z) = z^n + a_{n-1}z^{n-1} + \cdots + a_0$ has no root. Then for each $r \geq 0$ the loop $\gamma_r(s) = f(r e^{2\pi i s})/|f(r e^{2\pi i s})|$ in $S^1$ is defined. As $r$ varies the loops $\gamma_r$ are homotopic, so their winding numbers agree. For small $r$ the loop $\gamma_r$ is homotopic to the constant loop, of winding number $0$. For large $r$ the loop is homotopic to $s \mapsto e^{2\pi i n s}$, of winding number $n$. Hence $n = 0$, so $f$ is constant. $\square$
+
+### van Kampen's Theorem
+
+**Theorem (van Kampen).** Let $X$ be the union of path-connected open sets $A_\alpha$ each containing the basepoint $x_0$, such that each intersection $A_\alpha \cap A_\beta$ is path-connected. Let $j_\alpha : \pi_1(A_\alpha, x_0) \to \pi_1(X,x_0)$ be induced by the inclusion. Then $\pi_1(X,x_0)$ is the **free product** of the groups $\pi_1(A_\alpha,x_0)$ amalgamated over the images of the fundamental groups of the intersections: the pushout of the diagram
+
+$$
+\coprod_{\alpha,\beta} \pi_1(A_\alpha \cap A_\beta, x_0) \rightrightarrows \coprod_\alpha \pi_1(A_\alpha, x_0)
+$$
+
+in the category of groups. Equivalently, presenting each $\pi_1(A_\alpha,x_0)$ by generators and relations, a presentation of $\pi_1(X,x_0)$ is obtained by taking all the generators and all the relations together and adding, for each pair $\alpha, \beta$ and each class in $\pi_1(A_\alpha\cap A_\beta)$, the relation equating its two images.
+
+*Proof sketch.* Every loop in $X$ is, by compactness of $I$ and the Lebesgue number lemma, a finite concatenation of paths each lying in some $A_\alpha$, so the images of the $j_\alpha$ generate; every relation among them comes from a homotopy in $X$, which by compactness of the square factors through finitely many of the sets, giving a relation inside one $\pi_1(A_\alpha)$ or one $\pi_1(A_\alpha \cap A_\beta)$. $\square$
+
+**Example.** For the wedge $S^1 \vee S^1$, take $A_1$ and $A_2$ to be the two circles thickened a little, with $A_1 \cap A_2$ contractible. Then
+
+$$
+\pi_1(S^1 \vee S^1) \cong \mathbb{Z} \ast \mathbb{Z},
+$$
+
+the free group on two generators. More generally the wedge of $n$ circles has fundamental group the free group $F_n$, and the fundamental group of the surface of genus $g$ is $\langle a_1, b_1, \ldots, a_g, b_g \mid [a_1,b_1]\cdots[a_g,b_g]\rangle$.
+
+**Example.** For $S^2$ write $S^2 = U_1 \cup U_2$ with $U_1$ and $U_2$ open discs, path-connected, and $U_1 \cap U_2$ an annulus, hence path-connected with $\pi_1 \cong \mathbb{Z}$. Both $\pi_1(U_i)$ are trivial, so van Kampen gives $\pi_1(S^2) = 1$. More generally $S^n$ is simply connected for $n \geq 2$. By contrast $\mathbb{RP}^n$ has fundamental group $\mathbb{Z}/2$ for $n \geq 2$, computed from the double cover $S^n \to \mathbb{RP}^n$.
+
+### Products, Retracts and the Boundary
+
+**Theorem.** For spaces $X$ and $Y$ with basepoints $x_0$ and $y_0$, the inclusions induce an isomorphism
+
+$$
+\pi_1(X \times Y, (x_0,y_0)) \cong \pi_1(X,x_0) \times \pi_1(Y,y_0).
+$$
+
+*Proof.* The projections induce a homomorphism to the product and the two inclusions a homomorphism from it, and the two composites are the identity by the explicit formulas $F(s) = (f_1(s), f_2(s))$. $\square$
+
+**Corollary.** A retract $A$ of $X$ has $\pi_1(A,x_0)$ a subgroup of $\pi_1(X,x_0)$ with the inclusion and retraction exhibiting the inclusion as injective on $\pi_1$. Consequently $S^1$ is not a retract of $D^2$, since the identity map on $\mathbb{Z}$ would factor through the trivial group; this is the two-dimensional **Brouwer fixed point theorem**, whose full statement and the degree theory behind it are not treated here.
+
+## Summary
+
+Homotopy is the equivalence relation on continuous maps generated by deformation through a continuous family, and it is compatible with composition, so it defines the homotopy category. The fundamental group $\pi_1(X,x_0)$ is the group of path-homotopy classes of loops based at $x_0$, with concatenation as the operation; its identity is the constant loop and inverses are given by reversal. A continuous based map induces a homomorphism, the assignment is functorial, and homotopy equivalences induce isomorphisms, so the fundamental group is an invariant of the homotopy type. A change of basepoint along a path gives an isomorphism, canonical up to an inner automorphism, so for a path-connected space the group is determined up to isomorphism and for abelian groups the basepoint may be suppressed.
+
+A covering space is a map that is locally a disjoint union of homeomorphisms onto open sets. Paths and homotopies lift uniquely once an initial point is chosen, and the monodromy corollary says that a path homotopy between two paths forces the lifts to be homotopic; the lifting criterion states that a map lifts exactly when the image of its fundamental group lies in the image of the covering's. For a path-connected, locally path-connected and semilocally simply connected space, connected coverings are classified by the subgroups of the fundamental group, the universal cover corresponds to the trivial subgroup, and for a regular covering the deck group is the quotient of the fundamental group by the image subgroup. The universal cover of the circle is the real line, and its deck group is $\mathbb{Z}$; this gives $\pi_1(S^1) \cong \mathbb{Z}$, the winding number, the topological proof of the fundamental theorem of algebra, and, with van Kampen's theorem, the fundamental groups of wedges, spheres, projective spaces, products and surfaces.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $I = [0,1]$ | Closed unit interval |
+| $X, Y, B, E$ | Topological spaces; $B$ a base, $E$ a total space of a covering |
+| $x_0, y_0, b_0$ | Basepoints |
+| $f \simeq g$ | Homotopic maps; homotopy $F : X \times I \to Y$ |
+| $\simeq_p$ | Path homotopy relative to endpoints |
+| $\alpha \ast \beta$ | Concatenation of paths; $\bar\gamma$ the reverse; $c_{x_0}$ the constant path |
+| $\pi_1(X,x_0)$ | Fundamental group: path-homotopy classes of loops at $x_0$ |
+| $f_* : \pi_1(X,x_0) \to \pi_1(Y,y_0)$ | Induced homomorphism; $(gf)_* = g_*f_*$ |
+| $\gamma_\# : \pi_1(X,x_1) \to \pi_1(X,x_0)$ | Change-of-basepoint isomorphism along a path $\gamma$ |
+| $X \simeq Y$ | Homotopy equivalence; contractible if $\simeq$ a point |
+| $p : E \to X$ | Covering space; evenly covered sets, sheets, degree |
+| $\operatorname{Deck}(E/X)$, $\operatorname{Aut}(E/X)$ | Group of deck transformations, $p \circ \tau = p$ |
+| $\tilde X$ | Universal cover; $\pi_1(X,x_0) \cong \operatorname{Deck}(\tilde X/X)$ |
+| $\operatorname{id}_X$ | Identity map of $X$ |
+| $D^n, S^n$ | Closed unit ball and unit sphere in $\mathbb{R}^{n+1}$ |
+| $\mathbb{RP}^n$ | Real projective space |
+| $A \ast B$, $F_n$ | Free product of groups; free group on $n$ generators |
+| $\omega(s) = e^{2\pi i s}$ | Standard generator of $\pi_1(S^1,1)$ |
+
+
+
+
+
+## Further Reading
+
+- Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for homotopy, covering spaces, van Kampen's theorem and the classification of coverings.
+- William S. Massey, *A Basic Course in Algebraic Topology* (Springer, 1991), for the fundamental group and a detailed treatment of covering spaces.
+- James R. Munkres, *Topology*, 2nd ed. (Prentice Hall, 2000), for the general topology presupposed throughout.
+- Edwin H. Spanier, *Algebraic Topology* (McGraw–Hill, 1966), for the classification theorem and the universal cover in full generality.
+- Raoul Bott and Loring W. Tu, *Differential Forms in Algebraic Topology* (Springer, 1982), for the cohomological counterparts of the invariants introduced here.
+- John M. Lee, *Introduction to Topological Manifolds*, 2nd ed. (Springer, 2011), for covering spaces and the fundamental group with the manifold applications.
+- Peter May, *A Concise Course in Algebraic Topology* (University of Chicago Press, 1999), for the categorical organisation of the fundamental groupoid.

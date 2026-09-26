@@ -1,0 +1,178 @@
+
+# __Spin Geometry__
+
+## Introduction
+
+A Riemannian manifold carries a bundle of Clifford algebras, the Clifford bundle $\mathrm{Cl}(TM)$, whose fibres are the Clifford algebras of the tangent spaces with the metric; the Clifford algebras, the Pin and Spin groups and the spin representations of this Part therefore attach to every Riemannian manifold, and the question the subject answers is when the tangent bundle can be represented by the **spin structures** of the Spin group rather than those of the special orthogonal group. A **spin structure** on an oriented Riemannian manifold is a two-fold covering of the orthonormal frame bundle by a principal $\operatorname{Spin}(n)$-bundle; its **spinor bundle** carries the spin representation of the Clifford algebra fibre by fibre, and the **Cauchy–Riemann operator** is the first-order differential operator assembled from the Clifford multiplication and the Levi-Civita connection. Its square satisfies the **Lichnerowicz formula** $D^2 = \nabla^*\nabla + \tfrac14 \operatorname{scal}$, from which the positivity of the scalar curvature forces the vanishing of the harmonic spinors and, in the even-dimensional closed case, the vanishing of the index of the chiral operator; the index computes the **$\hat{A}$-genus** by the Atiyah–Singer index theorem, so the geometry of the operator produces a topological obstruction, and this is the form-theoretic heart of the subject.
+
+The article develops the spin structures, the spinor bundle and the Cauchy–Riemann operator, states the Lichnerowicz formula and its consequences, records the index theorem for the chiral Cauchy–Riemann operator, and describes the $\operatorname{Spin}^c$ refinement, which exists on every almost complex manifold and carries the Dolbeault operator as its Cauchy–Riemann operator. The analytic theory of the operator, that is, its self-adjointness, its spectrum and the completeness of its eigenspinors, belongs to Part III, where the measure and the limit are available; the present article uses the algebraic and bundle-theoretic theory of the Clifford algebras of this Part and the curvature of *Fibre Bundles, Connections and Curvature*, and cites *Riemannian Geometry* and *Smooth Manifolds and Differential Geometry* for the manifold theory. The corpus names the flat operator $e_\mu\partial_\mu$ of a Clifford algebra the Cauchy–Riemann operator, and the operator of the present article is the curved-space member of the same family.
+
+## Clifford Bundles and Spinor Bundles
+
+### The Clifford Bundle
+
+**Definition.** Let $(M, g)$ be a smooth Riemannian manifold of dimension $n$, with $TM$ its tangent bundle and $g$ the metric, as in *Riemannian Geometry*. The **Clifford bundle** is the bundle of algebras
+$$
+\mathrm{Cl}(TM) = \coprod_{x \in M} \mathrm{Cl}(T_xM, g_x) ,
+$$
+whose fibre over $x$ is the Clifford algebra of the tangent space with the quadratic form $v \mapsto g_x(v,v)$; it is a bundle of finite-dimensional real algebras of rank $2^n$, and the Clifford relations $v \cdot v = -g(v,v) \cdot 1$ hold in each fibre, the sign being the one of the convention of *The Clifford Algebra*.
+
+**Proposition.** The Clifford bundle is a smooth vector bundle of rank $2^n$ with the multiplication of the fibres smooth in the sense that the multiplication map $\mathrm{Cl}(TM) \otimes \mathrm{Cl}(TM) \to \mathrm{Cl}(TM)$ is a bundle map; the Levi-Civita connection of $(M,g)$ induces a connection on $\mathrm{Cl}(TM)$ which is compatible with the multiplication and the grading, and which acts as a derivation over the algebra.
+
+**Proof.** The Clifford algebra of a vector space with a quadratic form is the quotient of the tensor algebra, and the construction is natural in the pair $(T_xM, g_x)$, so the bundle is associated to the orthonormal frame bundle by the representation $SO(n) \to \operatorname{Aut}(\mathrm{Cl}_{n})$ of the structure group on the Clifford algebra; the connection is the associated connection of the frame bundle, and the compatibility with the multiplication is the $SO(n)$-equivariance of the Clifford product, as in the functoriality of *The Clifford Algebra* and the associated-bundle construction of *Fibre Bundles, Connections and Curvature*. $\square$
+
+**Definition.** A **Clifford module bundle** on $(M,g)$ is a complex vector bundle $\mathcal{S} \to M$ with a bundle map
+$$
+c : TM \otimes \mathcal{S} \longrightarrow \mathcal{S}, \qquad (v, \sigma) \longmapsto c(v)\sigma = v \cdot \sigma,
+$$
+such that $c(v)^2 = -g(v,v)\operatorname{id}$ in each fibre; equivalently, a bundle of modules over the Clifford bundle. A Clifford module bundle is **graded** if it carries a $\mathbb{Z}/2$-grading $\mathcal{S} = \mathcal{S}^+ \oplus \mathcal{S}^-$ with $c(v)$ odd for every tangent vector.
+
+**Example.** The complexified Clifford bundle $\mathrm{Cl}(TM) \otimes \mathbb{C}$ is a Clifford module bundle under left multiplication; the exterior algebra bundle $\Lambda^\bullet T^*M$ is a Clifford module bundle with $c(v)\alpha = \epsilon(v)\alpha - \iota(v)\alpha$, the creation and annihilation operators of the metric, and the grading is by the degree modulo $2$. The spinor bundles constructed below are the irreducible examples.
+
+## Spin Structures
+
+### The Definition
+
+**Definition.** Let $(M,g)$ be an oriented Riemannian manifold of dimension $n \geq 2$ with orthonormal frame bundle $P_{SO}(M)$, a principal $SO(n)$-bundle. A **spin structure** on $(M,g)$ is a principal $\operatorname{Spin}(n)$-bundle $P_{\operatorname{Spin}}(M) \to M$ together with a two-fold covering map
+$$
+\xi : P_{\operatorname{Spin}}(M) \longrightarrow P_{SO}(M)
+$$
+that is $\operatorname{Spin}(n)$-equivariant over the double covering $\operatorname{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups*: the map $\xi$ intertwines the right actions, $\xi(p \cdot \tilde{g}) = \xi(p) \cdot \rho(\tilde{g})$ for the covering homomorphism $\rho$. An oriented Riemannian manifold is a **spin manifold** if it admits a spin structure.
+
+**Proposition.** A spin structure exists if and only if the second Stiefel–Whitney class vanishes,
+$$
+w_2(TM) = 0 \in H^2(M; \mathbb{Z}/2),
+$$
+and when it exists the set of spin structures is a torsor over $H^1(M; \mathbb{Z}/2)$; a spin structure is unique when $M$ is simply connected. The obstruction class $w_2(TM)$ is the characteristic class of the frame bundle of *Characteristic Classes*, earlier in this Part, and the existence criterion is the vanishing of the obstruction to the lift of the structure group along the covering $\operatorname{Spin}(n) \to SO(n)$, which is a $\mathbb{Z}/2$-obstruction.
+
+**Proof sketch.** A covering of the principal bundle $P_{SO}(M)$ by a $\operatorname{Spin}(n)$-bundle exists exactly when the cocycle of the frame bundle with values in $SO(n)$ lifts to a cocycle with values in $\operatorname{Spin}(n)$ on a fine enough cover; the obstruction to the lift is the image of the cocycle under the connecting map $H^1(M; SO(n)) \to H^2(M; \mathbb{Z}/2)$, which is by definition $w_2(TM)$; the ambiguity of the lift on the overlap of two trivialisations is a $1$-cocycle with values in the kernel $\mathbb{Z}/2$ of the covering, that is, an element of $H^1(M;\mathbb{Z}/2)$. $\square$
+
+**Example.** The sphere $S^n$ for $n \geq 2$ is spin: the frame bundle of $S^n$ is a principal $SO(n)$-bundle over the sphere, the sphere is simply connected and $H^2(S^n;\mathbb{Z}/2) = 0$ for $n \geq 3$ while for $n = 2$ the class $w_2(TS^2) = 0$ because $TS^2$ is trivial; the tangent bundle of $S^n$ is trivial only for $n = 1, 3, 7$, but a spin structure exists for all $n$. The torus $T^n$ is spin because its tangent bundle is trivial. The real projective space $\mathbb{RP}^n$ is spin if and only if $n \equiv 3 \pmod 4$: the total Stiefel–Whitney class is $w = (1+a)^{n+1}$ with $a$ the generator of $H^1(\mathbb{RP}^n;\mathbb{Z}/2)$, so $w_2 = \binom{n+1}{2}a^2$ vanishes exactly when $n+1 \equiv 0 \pmod 4$. The complex projective space $\mathbb{CP}^n$ is spin if and only if $n$ is odd, since $w_2(T\mathbb{CP}^n) = (n+1)x$ with $x$ the generator of $H^2(\mathbb{CP}^n;\mathbb{Z}/2)$. A Lie group is spin, because its tangent bundle is trivial; the quadric in $\mathbb{CP}^3$ is spin; and a K3 surface is spin, being the only simply connected compact complex surface with trivial canonical bundle and vanishing $w_2$.
+
+### The Spinor Bundle and Clifford Multiplication
+
+**Definition.** Let $(M,g)$ be a spin manifold of dimension $n$ with spin structure $P_{\operatorname{Spin}}(M)$, and let $\Delta_n$ be the complex spin representation of $\operatorname{Spin}(n)$ of *Spin Representations and Clifford Modules*. The **spinor bundle** is the associated bundle
+$$
+\mathcal{S} = P_{\operatorname{Spin}}(M) \times_{\operatorname{Spin}(n)} \Delta_n ,
+$$
+a complex vector bundle of rank $2^{\lfloor n/2\rfloor}$; for $n$ even the splitting $\Delta_n = \Delta_n^+ \oplus \Delta_n^-$ into the half-spin representations induces the grading $\mathcal{S} = \mathcal{S}^+ \oplus \mathcal{S}^-$; the Clifford multiplication
+$$
+c(v) : \mathcal{S}_x \longrightarrow \mathcal{S}_x , \qquad c(v)^2 = -g(v,v)\operatorname{id},
+$$
+is defined by the Clifford action of $v$ on the spin module, and it is a bundle map because the action of $\operatorname{Spin}(n)$ on $\Delta_n$ intertwines the Clifford multiplication, the group being a subgroup of the units of the Clifford algebra.
+
+**Proposition.** For $n$ even the Clifford multiplication exchanges the two halves, $c(v) : \mathcal{S}^\pm \to \mathcal{S}^\mp$, and for $n$ odd there is no such splitting over the algebra; the spinor bundle is a Clifford module bundle and, when the complex dimension permits, its endomorphism bundle is the Clifford bundle, $\operatorname{End}(\mathcal{S}) \cong \mathrm{Cl}(TM)\otimes\mathbb{C}$ for $n$ even, resulting in the irreducibility of the spin module.
+
+**Proof.** The statements are the module theory of the spin representations of *Spin Representations and Clifford Modules*: the half-spin modules are the two simple modules of the even Clifford algebra, the odd elements exchange them, and for $n$ even the complex Clifford algebra is a full matrix algebra over $\Delta_n$, so the endomorphisms of the spin module are the Clifford algebra itself. $\square$
+
+**Example (the low-dimensional cases).** For $n = 3$ the spinor bundle has rank $2$ and $\operatorname{Spin}(3) = SU(2)$; the Clifford multiplication is by the Pauli-type matrices. For $n = 4$ the spinor bundle splits into two rank-$2$ bundles; the self-dual and anti-self-dual Weyl curvature act on the two halves. For $n = 2$ the spin module is two-dimensional and $\operatorname{Spin}(2) = U(1)$, so both chiral halves of the spinor bundle are complex line bundles; the spin structures on a Riemann surface are the square roots $L$ of the canonical bundle, $L^{\otimes 2} = K$, and the Cauchy–Riemann operator on a spin surface is the $\bar\partial$-type operator twisted by $L$.
+
+## The Cauchy–Riemann Operator
+
+### The Definition and the Local Formula
+
+**Definition.** Let $(M,g)$ be a spin manifold with spinor bundle $\mathcal{S}$ and let $\nabla^{\mathcal{S}}$ be the connection on $\mathcal{S}$ induced by the Levi-Civita connection through the spin structure. The **Cauchy–Riemann operator** is the first-order differential operator
+$$
+D = c \circ \nabla^{\mathcal{S}} : \Gamma(\mathcal{S}) \longrightarrow \Gamma(\mathcal{S}), \qquad D\sigma = \sum_{i=1}^{n} e_i \cdot \nabla^{\mathcal{S}}_{e_i}\sigma ,
+$$
+where $(e_1, \ldots, e_n)$ is a local orthonormal frame and the sum is independent of the frame because the Clifford multiplication is isometric. For $n$ even the operator is odd with respect to the grading, $D = D^+ \oplus D^-$ with
+$$
+D^\pm : \Gamma(\mathcal{S}^\pm) \longrightarrow \Gamma(\mathcal{S}^\mp),
+$$
+the **chiral Cauchy–Riemann operators**. The operator is the curved-space member of the family of the Cauchy–Riemann operators; the flat operator $e_\mu\partial_\mu$ of a Clifford algebra is the flat Cauchy–Riemann operator of *Clifford Modules and the Twisted Cauchy–Riemann Operator*, and the analytic theory of the family belongs to Part III.
+
+**Proposition.** The Cauchy–Riemann operator is a formally self-adjoint elliptic operator of order one when $M$ is closed; its principal symbol is the Clifford multiplication $\sigma_D(x,\xi) = i\,c(\xi)$, which is invertible for $\xi \neq 0$ because $c(\xi)^2 = -|\xi|^2\operatorname{id}$; the operator $D$ and the connection split according to the grading, and $D$ is the composition of the covariant derivative with the Clifford contraction, which on the exterior Clifford bundle $\Lambda^\bullet T^*M$ is the operator $d + d^{*}$ of the de Rham complex.
+
+**Proof.** The symbol is computed by freezing the coefficients and differentiating the highest-order part, which is the Clifford multiplication; the self-adjointness uses the formal adjoint of the covariant derivative, $(\nabla^{\mathcal{S}})^* = -\operatorname{tr}_g \nabla^{\mathcal{S}}$ plus the metric compatibility, and the ellipticity is the invertibility of the symbol. The details are in the references. $\square$
+
+**Example (the flat cases).** On $\mathbb{R}^n$ with the flat metric and the spinor bundle $\mathbb{R}^n \times \Delta_n$, the Cauchy–Riemann operator is the constant-coefficient operator $\sum_i e_i \partial_i$, which is the Cauchy–Riemann operator of the Clifford algebra of the flat space; its square is the Laplacian, $D^2 = -\Delta$, and its kernel is the space of "monogenic" spinor-valued functions. On the round sphere $S^n$ the Cauchy–Riemann operator is the square root of the Laplace–Beltrami operator shifted by a constant, and its spectrum is determined by the representation theory of the spin group; the explicit eigenvalues of the Cauchy–Riemann operator on the sphere are $\pm(k + n/2)$, $k \geq 0$, with multiplicities the dimensions of the spin representations, a computation of the spin geometry of the homogeneous space.
+
+### The Lichnerowicz Formula
+
+**Theorem (Lichnerowicz).** For a spin manifold $(M,g)$ with the spinor bundle $\mathcal{S}$ and the Levi-Civita spin connection,
+$$
+D^2 = \nabla^{*}\nabla + \tfrac{1}{4}\operatorname{scal},
+$$
+where $\nabla^{*}\nabla$ is the connection Laplacian on the spinors and $\operatorname{scal}$ is the scalar curvature of the metric, acting on $\Gamma(\mathcal{S})$ by scalar multiplication by $\tfrac14$ of the scalar curvature.
+
+**Proof sketch.** The Weitzenböck argument computes the difference $D^2 - \nabla^*\nabla$ as a zero-order operator, an endomorphism of the spinor bundle, from the Clifford relations. In an orthonormal frame the composition of two Clifford multiplications is $e_i e_j = -e_j e_i$ for $i \neq j$ and $e_i^2 = -1$, so the second-order terms cancel up to the Laplacian, and the curvature of the Levi-Civita connection enters through the Ricci tensor, $\sum_i e_i e_j R^{\mathcal{S}}(e_i, e_j) = \tfrac14\operatorname{scal}$; the identification of the curvature term with one quarter of the scalar curvature is the algebraic identity of the Clifford algebra in dimension $n$, and the computation is in the references. $\square$
+
+**Corollary (the vanishing of the harmonic spinors).** If $(M,g)$ is a closed spin manifold of positive scalar curvature, then the Cauchy–Riemann operator has no nonzero harmonic spinors, $\ker D = 0$; in particular the index of the chiral Cauchy–Riemann operator vanishes, and the $\hat{A}$-genus of $M$ vanishes by the index theorem below. The same conclusion holds for the nonnegative curvature case with the harmonic spinors parallel.
+
+**Proof.** For a harmonic spinor $D\sigma = 0$ the formula gives $0 = \|\nabla\sigma\|^2 \cdot \operatorname{vol}$ integrated against the pointwise identity $\tfrac12\Delta|\sigma|^2 = \langle \nabla^*\nabla\sigma,\sigma\rangle - |\nabla\sigma|^2$, and with the Lichnerowicz formula one obtains
+$$
+0 = D^2\sigma = \nabla^*\nabla\sigma + \tfrac14\operatorname{scal}\cdot\sigma,
+$$
+so that on integrating the inner product with $\sigma$ over the closed manifold, $0 = \|\nabla\sigma\|^2 + \tfrac14\int_M \operatorname{scal}|\sigma|^2$, and the positivity of the scalar curvature forces $\sigma = 0$. The integration over the manifold is that of *Differential Forms and Stokes' Theorem*, earlier in this Part; the analytic completions that make the argument into a theorem belong to Part III, and the formal identity is the one stated. $\square$
+
+**Remark.** The corollary is a rigidity statement of the curvature: the existence of a metric of positive scalar curvature on a closed spin manifold is obstructed by the $\hat{A}$-genus, which is a topological invariant of the manifold; the obstruction is the first of the topological obstructions of the positive-scalar-curvature problem, and the general problem of which manifolds admit metrics of positive scalar curvature is the subject of the surgery theory and the index theory of this Part. In dimension $4$ the integrality of the $\hat{A}$-genus reads $-\operatorname{sign}/8 \in \mathbb{Z}$, which gives $8 \mid \operatorname{sign}$, and the sharper **Rökhlin's theorem** states that the signature of a closed spin manifold of dimension $4$ is divisible by $16$, the additional factor $2$ coming from the mod-$2$ index theory of the spin cobordism class.
+
+## The Index of the Chiral Cauchy–Riemann Operator
+
+**Theorem (Atiyah–Singer; the spin case).** Let $(M,g)$ be a closed spin manifold of even dimension $n = 2m$ with the grading $\mathcal{S} = \mathcal{S}^+\oplus\mathcal{S}^-$ and the chiral Cauchy–Riemann operator $D^+ : \Gamma(\mathcal{S}^+) \to \Gamma(\mathcal{S}^-)$. Then $D^+$ is Fredholm and its analytic index is the **$\hat{A}$-genus**,
+$$
+\operatorname{ind}(D^+) = \dim\ker D^+ - \dim\ker D^- = \int_M \hat{A}(TM) = \langle \hat{A}(TM), [M]\rangle \in \mathbb{Z},
+$$
+where $\hat{A}(TM)$ is the $\hat{A}$-class of the tangent bundle, the invariant polynomial of the Pontryagin classes
+$$
+\hat{A}(TM) = \prod_{j} \frac{x_j/2}{\sinh(x_j/2)}
+$$
+in the Pontryagin roots $x_j$ of the curvature; the integral is a characteristic number of the manifold, and it is independent of the metric and the spin structure.
+
+**Proof sketch.** The index is the difference of the dimensions of the kernels of the two chiral halves, and the Atiyah–Singer index theorem identifies it with the topological index, the evaluation of a characteristic class of the symbol on the fundamental class; for the Cauchy–Riemann operator the symbol is the Clifford multiplication and the topological index is the $\hat{A}$-genus. The theorem is proved by the heat-kernel method, in which the supertrace of the heat kernel of $D^2$ localises to the curvature polynomial, or by the topological $K$-theory of the symbol; both proofs belong to the index theory of this Part, and the statement and its normalisation are in the cited literature. The class $\hat{A}(TM)$ is a characteristic class in the sense of *Characteristic Classes* of this category, expressed in the Pontryagin classes of *Fibre Bundles, Connections and Curvature*. $\square$
+
+**Corollary.** For a closed spin manifold of even dimension the $\hat{A}$-genus is an integer, and it vanishes whenever the manifold admits a metric of positive scalar curvature. The index is additive under the connected sum and multiplicative under the products, and it is a spin-cobordism invariant; the geometric refinement of the index is the **Atiyah–Singer index theorem**, whose general form for elliptic operators on complex bundles is treated in the index theory of this Part.
+
+**Example (the surfaces and the low dimensions).** In dimension $2$ the spin structures of a Riemann surface are the theta characteristics, the line bundles $L$ with $L^{\otimes 2} = K$, and the Cauchy–Riemann operator is the $\bar\partial$-type operator twisted by $L$; the index of the chiral operator vanishes, in agreement with the vanishing of the $\hat{A}$-genus of a surface, and the Riemann–Roch computation of the index in terms of the degree of $L$ is the two-dimensional case of the theorem. In dimension $4$ a K3 surface is spin with $\hat{A} = 2$ and signature $-16$, the Rökhlin divisibility being realised; the Cauchy–Riemann operator on a K3 surface has analytic index $2$, which is the value of its $\hat{A}$-genus and the reason the K3 surface is the basic example of the four-dimensional theory. In dimension $8$ the $\hat{A}$-genus of a closed spin manifold is the index of the Cauchy–Riemann operator and is a topological invariant of the spin cobordism class.
+
+## The $\operatorname{Spin}^c$ Refinement
+
+**Definition.** Let $(M,g)$ be an oriented Riemannian manifold. A **$\operatorname{Spin}^c$ structure** is a principal $\operatorname{Spin}^c(n)$-bundle $P_{\operatorname{Spin}^c}(M)$ with an equivariant two-fold-type covering to $P_{SO}(M)$, where $\operatorname{Spin}^c(n) = \operatorname{Spin}(n) \times_{\mathbb{Z}/2} U(1)$ is the $\operatorname{Spin}^c$ group, the extension of the spin group by the circle with the two elements $\pm 1$ of the spin group identified with $\pm 1 \in U(1)$; equivalently, a spin structure twisted by a complex line bundle.
+
+**Proposition.** A $\operatorname{Spin}^c$ structure on an oriented Riemannian manifold exists if and only if the class $w_2(TM) \in H^2(M;\mathbb{Z}/2)$ is the mod-$2$ reduction of an integral class $c \in H^2(M;\mathbb{Z})$, and the set of $\operatorname{Spin}^c$ structures is a torsor over $H^2(M;\mathbb{Z})$; every almost complex manifold is $\operatorname{Spin}^c$ with the canonical structure whose determinant line bundle is the anticanonical bundle, and every spin manifold is $\operatorname{Spin}^c$ with the trivial line bundle.
+
+**Proof sketch.** The covering $\operatorname{Spin}^c(n) \to SO(n)$ has kernel $U(1)$, and the obstruction to the lift of the frame bundle is the class in $H^2(M;U(1)) \cong H^3(M;\mathbb{Z})$ of the extension; the constraint on the image of the connecting map is that its mod-$2$ reduction is $w_2(TM)$, which gives the condition. The canonical structure on an almost complex manifold is the bundle of complex frames with the $\operatorname{Spin}^c$ structure of the complexified tangent bundle, and the determinant line bundle is the anticanonical bundle. $\square$
+
+**Theorem (the $\operatorname{Spin}^c$ index theorem).** Let $(M,g)$ be a closed $\operatorname{Spin}^c$ manifold of even dimension with $\operatorname{Spin}^c$ structure whose determinant line bundle is $L$, and let $D^+_L$ be the chiral $\operatorname{Spin}^c$ Cauchy–Riemann operator twisted by $L$. Then
+$$
+\operatorname{ind}(D^+_L) = \int_M e^{c_1(L)/2}\,\hat{A}(TM) = \langle e^{c_1(L)/2}\hat{A}(TM), [M]\rangle ,
+$$
+the exponential being expanded in the cohomology of $M$; in the almost complex case with the canonical structure the operator is the Dolbeault operator $\bar\partial + \bar\partial^*$ up to a factor, and the index is the holomorphic Euler characteristic, $\operatorname{ind}(D^+) = \chi(M, \mathcal{O})$ in the Kähler case, with the generalisation to the twisted bundles by the Riemann–Roch–Hirzebruch theorem.
+
+**Example.** The complex projective spaces are $\operatorname{Spin}^c$ and not spin in even dimension; the $\operatorname{Spin}^c$ Cauchy–Riemann operator on $\mathbb{CP}^n$ with the canonical structure is the Dolbeault operator, and its index is $\chi(\mathbb{CP}^n, \mathcal{O}) = 1$, which is the value of the integral of $e^{c/2}\hat{A}$ with the appropriate normalisation; the computation is the standard verification of the index formula, and it shows how the $\operatorname{Spin}^c$ theory recovers the holomorphic invariants of the complex manifolds.
+
+**Remark.** The $\operatorname{Spin}^c$ theory is the natural home of the index theorem for the almost complex manifolds, and the $\operatorname{Spin}$ theory is the specialisation with the trivial determinant line bundle; the existence criterion of the two theories is the difference between an integral lift of $w_2$ and the vanishing of $w_2$, and the two theories agree on the spin manifolds. The twisted operators and the elliptic complexes they define, including the twisted Cauchy–Riemann operator, are treated in *Clifford Modules and the Twisted Cauchy–Riemann Operator*, and the analytic theory of the operators belongs to the functional analysis of Part III.
+
+## Summary
+
+A Riemannian manifold $(M,g)$ has a **Clifford bundle** $\mathrm{Cl}(TM)$ whose fibres are the Clifford algebras of the tangent spaces, and a **Clifford module bundle** is a bundle on which the Clifford bundle acts with $c(v)^2 = -g(v,v)\operatorname{id}$. A **spin structure** on an oriented Riemannian manifold is a principal $\operatorname{Spin}(n)$-bundle covering the orthonormal frame bundle equivariantly over the double cover $\operatorname{Spin}(n) \to SO(n)$; it exists if and only if $w_2(TM) = 0$, it is unique for a simply connected manifold, and the set of spin structures is a torsor over $H^1(M;\mathbb{Z}/2)$. On a spin manifold the **spinor bundle** $\mathcal{S}$ is the bundle associated to the spin representation, it splits as $\mathcal{S}^+\oplus\mathcal{S}^-$ in even dimension, and the **Cauchy–Riemann operator** $D = \sum_i e_i \cdot \nabla^{\mathcal{S}}_{e_i}$ is a formally self-adjoint elliptic first-order operator with symbol $i\,c(\xi)$; the classical name is Dirac, the flat operator $e_\mu\partial_\mu$ being the Cauchy–Riemann operator of this corpus. The **Lichnerowicz formula** is $D^2 = \nabla^*\nabla + \tfrac14\operatorname{scal}$, and it forces a closed spin manifold of positive scalar curvature to have no harmonic spinors and vanishing $\hat{A}$-genus. For even-dimensional closed spin manifolds the **chiral Cauchy–Riemann operator** $D^+$ has analytic index $\operatorname{ind}(D^+) = \int_M\hat{A}(TM)$, the $\hat{A}$-genus, by the Atiyah–Singer index theorem, so the $\hat{A}$-genus is an integer and a spin-cobordism and positive-scalar-curvature obstruction; in dimension $4$ this yields Rökhlin's theorem that the signature of a closed spin manifold is divisible by $16$. The **$\operatorname{Spin}^c$ refinement** replaces the spin group by $\operatorname{Spin}^c(n) = \operatorname{Spin}(n)\times_{\mathbb{Z}/2}U(1)$; it exists precisely when $w_2(TM)$ lifts to an integral class, it is present on every almost complex manifold, and the $\operatorname{Spin}^c$ index is $\int_M e^{c_1(L)/2}\hat{A}(TM)$, which in the Kähler case is the holomorphic Euler characteristic and the Riemann–Roch–Hirzebruch theorem.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $(M,g)$ | Oriented Riemannian manifold; $n = \dim M$ |
+| $\mathrm{Cl}(TM)$ | Clifford bundle, fibre $\mathrm{Cl}(T_xM, g_x)$ |
+| $c(v)$ | Clifford multiplication; $c(v)^2 = -g(v,v)\operatorname{id}$ |
+| $P_{SO}(M)$ | Orthonormal frame bundle |
+| $P_{\operatorname{Spin}}(M)$, $\xi$ | Spin structure and its covering map |
+| $w_2(TM)$ | Second Stiefel–Whitney class; spin iff zero |
+| $\Delta_n$, $\Delta_n^\pm$ | Complex spin module and half-spin modules |
+| $\mathcal{S} = P_{\operatorname{Spin}}\times_{\operatorname{Spin}(n)}\Delta_n$ | Spinor bundle |
+| $\mathcal{S}^\pm$ | Chiral halves of the spinor bundle for $n$ even |
+| $\nabla^{\mathcal{S}}$ | Spin connection from the Levi-Civita connection |
+| $D$, $D^\pm$ | Cauchy–Riemann operator and its chiral parts |
+| $\operatorname{scal}$ | Scalar curvature of $g$ |
+| $\hat{A}(TM)$ | $\hat{A}$-class; $\hat{A}(TM) = \prod_j \frac{x_j/2}{\sinh(x_j/2)}$ |
+| $\operatorname{ind}(D^+)$ | Analytic index; equals $\int_M\hat{A}(TM)$ |
+| $\operatorname{Spin}^c(n)$ | $\operatorname{Spin}(n)\times_{\mathbb{Z}/2}U(1)$; $\operatorname{Spin}^c$ structures |
+| $L$, $c_1(L)$ | Determinant line bundle of a $\operatorname{Spin}^c$ structure and its class |
+| $\chi(M,\mathcal{O})$ | Holomorphic Euler characteristic in the Kähler case |
+
+## Further Reading
+
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the spin structures, the Cauchy–Riemann operator, the Lichnerowicz formula, the index theory and the $\operatorname{Spin}^c$ refinement (Chapter IV).
+- Michael F. Atiyah and Isadore M. Singer, "The Index of Elliptic Operators III", *Annals of Mathematics* 87 (1968), 546–604, for the index theorem for the Cauchy–Riemann operator and the $\hat{A}$-genus.
+- André Lichnerowicz, "Spineurs harmoniques", *Comptes Rendus de l'Académie des Sciences* 257 (1963), 7–9, for the Lichnerowicz formula and the vanishing of the harmonic spinors.
+- John W. Milnor and James D. Stasheff, *Characteristic Classes* (Princeton University Press, 1974), for the Stiefel–Whitney classes, the $\hat{A}$-class and the spin obstruction.
+- Nigel Hitchin, "Harmonic Spinors", *Advances in Mathematics* 14 (1974), 1–55, for the geometry of the harmonic spinors on the low-dimensional manifolds.
