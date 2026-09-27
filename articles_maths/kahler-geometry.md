@@ -157,7 +157,7 @@ $$
 L : \Omega^\bullet(M) \longrightarrow \Omega^{\bullet+2}(M), \qquad L\alpha = \Omega\wedge\alpha,
 $$
 
-and its adjoint is $\Lambda = L^*$. The **degree operator** is $H = \sum_k (k-n)\,\Pi_k$, where $\Pi_k$ is the projection onto the $k$-forms; equivalently $H\alpha = (k-n)\alpha$ for $\alpha$ of degree $k$.
+and its adjoint is $\Lambda = L^*$. The **degree operator** is $H = \sum_k (k-n)\,\operatorname{pr}_k$, where $\operatorname{pr}_k$ is the projection onto the $k$-forms; equivalently $H\alpha = (k-n)\alpha$ for $\alpha$ of degree $k$.
 
 **Theorem.** On a compact Kähler manifold the operators $L, \Lambda, H$ satisfy
 

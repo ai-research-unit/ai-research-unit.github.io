@@ -174,7 +174,7 @@ $$
 \pi_\lambda(x,y,z)\xi(t) = e^{2\pi i \lambda(z + ty)}\xi(t+x),
 $$
 
-which by the Stone–von Neumann theorem is the unique irreducible representation with central character $e^{2\pi i\lambda z}$. The Plancherel measure is supported on the infinite-dimensional part , with the Haar measure normalised as in the formula above, has density proportional to $|\lambda|\,d\lambda$; this is the explicit form of the abstract theorem of the previous section, and its derivation is.
+which by the Stone–von Neumann theorem is the unique irreducible representation with central character $e^{2\pi i\lambda z}$. The Plancherel measure is supported on the infinite-dimensional part , with the Haar measure normalised as in the formula above, has density proportional to $|\lambda|\,d\lambda$; this is the explicit form of the abstract theorem of the previous section, and its derivation is standard.
 
 ### $SL_2(\mathbb{R})$
 

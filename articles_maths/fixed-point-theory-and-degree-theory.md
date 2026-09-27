@@ -81,7 +81,7 @@ The proof is the model of the passage from the finite-dimensional to the infinit
 
 **Corollary (unbounded convex sets).** If $C$ is a closed convex set and $T:C\to C$ is continuous and compact with $T(C)$ bounded, then $T$ has a fixed point: choose $r$ with $T(C)\subseteq B(0,r)$ and apply Schauder's theorem to the closed bounded convex set $C\cap\overline{B(0,r)}$, which is invariant under $T$. If the fixed point is sought in a specified bounded open set rather than anywhere in $C$, the degree theory of the next section is used instead.
 
-**Corollary (compact convex sets).** Let $C$ be a compact convex subset of $X$ and $T:C\to C$ continuous. Then $T$ has a fixed point, since $T$ is compact and $C$ is closed, bounded and convex; in particular every nonexpansive self-map of a compact convex set has a fixed point. The generalisation to a weakly compact convex set and a nonexpansive map, in the form of the Ryll-Nardzewski theorem, needs the weak topology and the existence of an invariant mean, and its statement and proof belong to the topological fixed point theory .
+**Corollary (compact convex sets).** Let $C$ be a compact convex subset of $X$ and $T:C\to C$ continuous. Then $T$ has a fixed point, since $T$ is compact and $C$ is closed, bounded and convex; in particular every nonexpansive self-map of a compact convex set has a fixed point. The generalisation to a weakly compact convex set and a nonexpansive map, in the form of the Ryll-Nardzewski theorem, needs the weak topology and the existence of an invariant mean, and its statement and proof belong to the topological fixed point theory.
 
 ## The Leray–Schauder Degree
 
@@ -195,7 +195,7 @@ $$
 (Tu)(x)=\int_0^1k(x,y)\,g(u(y))\,dy
 $$
 
-is continuous and compact on $C[0,1]$ by the Ascoli–Arzelà theorem, and if $\|g\|_\infty\int|k|\,dy\le1$ then $T$ maps a ball into itself and Schauder's theorem gives a solution of $u=Tu$. The example is the standard existence theorem for a nonlinear integral equation, and the detailed regularity theory belongs andboth.
+is continuous and compact on $C[0,1]$ by the Ascoli–Arzelà theorem, and if $\|g\|_\infty\int|k|\,dy\le1$ then $T$ maps a ball into itself and Schauder's theorem gives a solution of $u=Tu$. The example is the standard existence theorem for a nonlinear integral equation, and the detailed regularity theory belongs to both.
 
 **Example (the Cauchy problem).** The local existence theorem of Peano for $y'=f(x,y)$ follows by applying Schauder's theorem to the compact operator $u\mapsto y_0+\int_{x_0}^x f(t,u(t))dt$ on a ball in $C[x_0-\delta,x_0+\delta]$; the a priori bound that makes the ball invariant is the boundedness of $f$ on the relevant strip. The theorem, its sharpness and the uniqueness theory belong to *Differential Equations*.
 

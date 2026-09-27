@@ -7,7 +7,7 @@ An **abelian topological group** is an abelian group carrying a topology for whi
 
 The article is written additively throughout, since the groups here are abelian: the group law is $+$, the identity is $0$, and the inverse is $-x$. The topological frame is that of the companion articles *Topological Spaces* and *Metric, Uniform and Complete Spaces*, the group-theoretic frame is *Topological Groups*, and the abstract structure theory of discrete abelian groups — torsion, divisibility, rank — is that of *Infinite Abelian Groups* in the algebra of Part I. A topology on an abelian group may come from a distance, from a norm, from a filtration by subgroups, or from no metric at all; the examples below include the first three and the profinite groups of the third kind.
 
-Two boundaries are stated once and used throughout. The **measure** enters only as the Haar measure constructed in: this article uses it only as an invariant measure on a locally compact group, and integrates against it nowhere beyond the finite sums of the finite case. The Fourier transform, the convolution algebra $L^1(G)$, the $L^p$ spaces and the Plancherel theorem are the subject in Part III, where the measure and the limit are available; where the harmonic analysis of an example is classical, the example is named and the analysis is deferred. The base ring $R$ is a commutative ring with identity $1 \neq 0$ and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; no physics is invoked.
+Two boundaries are stated once and used throughout. The **measure** enters only as the Haar measure constructed in *Locally Compact Groups and Haar Measure*, the opening article of Part III's *Analysis on Groups*: this article uses it only as an invariant measure on a locally compact group, and integrates against it nowhere beyond the finite sums of the finite case. The Fourier transform, the convolution algebra $L^1(G)$, the $L^p$ spaces and the Plancherel theorem are the subject in Part III, where the measure and the limit are available; where the harmonic analysis of an example is classical, the example is named and the analysis is deferred. The base ring $R$ is a commutative ring with identity $1 \neq 0$ and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; no physics is invoked.
 
 ## The Additive Setting
 
@@ -23,13 +23,13 @@ are continuous, the product carrying the product topology. Equivalently, the sin
 
 The definition is the additive case of *Topological Groups*, §The Axioms and Their Consequences, and the general theory transfers without change: translations $x \mapsto x + a$ are homeomorphisms, so $G$ is homogeneous and its topology is determined by a neighbourhood base at $0$; a subgroup is open if and only if it is a neighbourhood of $0$, and an open subgroup is closed; the quotient $G/H$ by a subgroup carries the quotient topology and is Hausdorff exactly when $H$ is closed; and the body of examples is shared with the non-abelian theory. What is new is the following, and it is used constantly.
 
-**Proposition.** In an abelian topological group the left and right uniformities coincide, and the map $(x, y) \mapsto x + y$ is uniformly continuous for the common uniformity. Consequently every abelian topological group is unimodular: its left Haar measure, when it exists, is right-invariant.
+**Proposition.** In an abelian topological group the left and right uniformities coincide, and the map $(x, y) \mapsto x + y$ is uniformly continuous for the common uniformity. Consequently every abelian topological group is unimodular — the modular function of *Locally Compact Groups and Haar Measure* in Part III is then trivial — and its left Haar measure, when it exists, is right-invariant.
 
-**Pro.** The left uniformity has a base of sets $\{(x,y): x^{-1}y \in U\}$ and the right uniformity a base of sets $\{(x,y): yx^{-1} \in U\}$; in additive notation $x^{-1}y = y - x = yx^{-1}$, so the two families are identical. For uniform continuity of addition, if $y - x \in U$ and $y' - x' \in U$ then $(y + y') - (x + x') = (y - x) + (y' - x') \in U + U$, so the preimage of the entourage of $U + U$ contains the product of the entourages of $U$. Unimodularity: the modular function is a continuous homomorphism to the abelian group $\mathbb{R}_{>0}$, and the modular function is invariant under conjugation, and conjugation is trivial in an abelian group, so the modular function is identically $1$ and left and right invariance agree. $\square$
+**Pro.** The left uniformity has a base of sets $\{(x,y): x^{-1}y \in U\}$ and the right uniformity a base of sets $\{(x,y): yx^{-1} \in U\}$; in additive notation $x^{-1}y = y - x = yx^{-1}$, so the two families are identical. For uniform continuity of addition, if $y - x \in U$ and $y' - x' \in U$ then $(y + y') - (x + x') = (y - x) + (y' - x') \in U + U$, so the preimage of the entourage of $U + U$ contains the product of the entourages of $U$. Unimodularity (a Part III statement, quoted): the modular function is a continuous homomorphism to the abelian group $\mathbb{R}_{>0}$, and the modular function is invariant under conjugation, and conjugation is trivial in an abelian group, so the modular function is identically $1$ and left and right invariance agree. $\square$
 
 **Example (the classical additive groups).** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$, $\mathbb{Z}$, $\mathbb{R}^n$ and $\mathbb{K}^n$ with the usual topology are abelian topological groups; $\mathbb{Z}$ and every group with the discrete topology are discrete abelian topological groups; a finite group is a compact discrete abelian topological group. The circle group $S^1 = \{z \in \mathbb{C} : |z| = 1\}$ is a compact abelian topological group, and the map $t \mapsto e^{2\pi i t}$ presents it as $\mathbb{R}/\mathbb{Z}$.
 
-**Example (locally compact and p-adic cases).** $\mathbb{Q}_p$ with the $p$-adic absolute value and $\mathbb{Z}_p$ with the subspace topology are locally compact abelian topological groups, the second compact and totally disconnected; both are treated, and the profinite topology of $\mathbb{Z}_p$ is developed . The direct product of locally compact abelian groups with the product topology is locally compact abelian.
+**Example (locally compact and p-adic cases).** $\mathbb{Q}_p$ with the $p$-adic absolute value and $\mathbb{Z}_p$ with the subspace topology are locally compact abelian topological groups, the second compact and totally disconnected; both are treated, and the profinite topology of $\mathbb{Z}_p$ is developed in *Topological Groups*. The direct product of locally compact abelian groups with the product topology is locally compact abelian.
 
 **Example (topological vector spaces).** A topological vector space is in particular an abelian topological group under addition, and the additive group of a topological ring is an abelian topological group; the additive groups $\mathbb{Q}_p^n$ and the function groups $C(X, \mathbb{R})$ with the compact-open topology are instances. The additive structure alone forgets the scalars, which is why the theory below is the *group* theory of these objects and not their linear theory.
 
@@ -176,7 +176,7 @@ holds, the left-hand side being the average $\frac{1}{n}\sum_{m=0}^{n-1} (e^{2\p
 
 ### Statement of Pontryagin Duality
 
-The main theorem of the theory is stated here and developed in the companion article.
+The main theorem of the theory is stated here and developed in the companion article *Pontryagin Duality*.
 
 **Theorem (Pontryagin duality).** For every locally compact abelian group $G$, the evaluation map
 
@@ -287,7 +287,7 @@ Pontryagin duality, stated here, asserts that evaluation $G \to G^{\vee\vee}$ is
 | $b\mathbb{Q}$ | Bohr compactification of the discrete group $\mathbb{Q}$ |
 | $\varprojlim$, $\varinjlim$ | Inverse and direct limits of groups |
 | $\mathbb{R}_{>0}$, $\Delta$ | Positive reals; the modular function, trivial for abelian groups |
-| $\mu$, $dx$ | Haar measure and its notation; the measure is constructed in the companion article |
+| $\mu$, $dx$ | Haar measure and its notation; the measure is constructed in *Locally Compact Groups and Haar Measure*, in Part III |
 
 
 

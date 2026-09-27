@@ -236,23 +236,23 @@ The regular representation is reducible, and its reduction into minimal left ide
 **Definition.** Let
 
 $$
-P_+ = \tfrac{1}{2}(e_0 + ie_3), \qquad P_- = \tfrac{1}{2}(e_0 - ie_3).
+\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3).
 $$
 
-**Lemma (orthogonal idempotents).** The elements $P_+$ and $P_-$ satisfy
+**Lemma (orthogonal idempotents).** The elements $\tilde\Pi_1$ and $\tilde\Pi_2$ satisfy
 
 $$
-P_+^2 = P_+, \qquad P_-^2 = P_-, \qquad P_+P_- = P_-P_+ = 0, \qquad P_+ + P_- = e_0,
+\tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0,
 $$
 
-so that $\mathbb{B} = \mathbb{B}P_+ \oplus \mathbb{B}P_-$ as a direct sum of left ideals.
+so that $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as a direct sum of left ideals.
 
-**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $P_+^2 = \tfrac14(e_0 + 2ie_3 + i^2e_3^2) = \tfrac14(e_0 + 2ie_3 + e_0) = P_+$, and similarly $P_-^2 = P_-$; while $P_+P_- = \tfrac14(e_0 - i^2e_3^2) = \tfrac14(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}P_- = 0$, because membership of $\mathbb{B}P_-$ gives $\tilde{Q}P_- = \tilde{Q}$ while $P_+P_- = 0$. The sum is therefore direct. Under the isomorphism $\Phi$ of *The 2×2 Matrix Representation of Biquaternions* the two idempotents are the matrix units $P_+ \mapsto E_{11}$ and $P_- \mapsto E_{22}$, and the two ideals are the two **columns** of the matrix algebra, which the corpus calls the two chiralities.
+**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $\tilde\Pi_1^2 = \tfrac14(e_0 + 2ie_3 + i^2e_3^2) = \tfrac14(e_0 + 2ie_3 + e_0) = \tilde\Pi_1$, and similarly $\tilde\Pi_2^2 = \tilde\Pi_2$; while $\tilde\Pi_1\tilde\Pi_2 = \tfrac14(e_0 - i^2e_3^2) = \tfrac14(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}\tilde\Pi_2 = 0$, because membership of $\mathbb{B}\tilde\Pi_2$ gives $\tilde{Q}\tilde\Pi_2 = \tilde{Q}$ while $\tilde\Pi_1\tilde\Pi_2 = 0$. The sum is therefore direct. Under the isomorphism $\Phi$ of *The 2×2 Matrix Representation of Biquaternions* the two idempotents are the matrix units $\tilde\Pi_1 \mapsto E_{11}$ and $\tilde\Pi_2 \mapsto E_{22}$, and the two ideals are the two **columns** of the matrix algebra, which the corpus calls the two chiralities.
 
 **Theorem (the regular representation is the sum of the two chiralities).** In the basis
 
 $$
-P_+, \quad e_1P_+, \quad P_-, \quad e_1P_-
+\tilde\Pi_1, \quad e_1\tilde\Pi_1, \quad \tilde\Pi_2, \quad e_1\tilde\Pi_2
 $$
 
 of $\mathbb{B}$, the left regular matrix of $\tilde{Q}$ is block diagonal,
@@ -275,13 +275,13 @@ $$
 
 as a left $\mathbb{B}$-module.
 
-**Proof.** The two ideals are stable under $\rho_L(\tilde{Q})$, because $\rho_L(\tilde{Q})(\tilde{S}P_+) = (\tilde{Q}\tilde{S})P_+$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}P_+$ has the basis $P_+, e_1P_+$, since $e_2P_+ = ie_1P_+$ and $e_3P_+ = -iP_+$. Its multiplication by the units is read from
+**Proof.** The two ideals are stable under $\rho_L(\tilde{Q})$, because $\rho_L(\tilde{Q})(\tilde{S}\tilde\Pi_1) = (\tilde{Q}\tilde{S})\tilde\Pi_1$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_1$ has the basis $\tilde\Pi_1, e_1\tilde\Pi_1$, since $e_2\tilde\Pi_1 = ie_1\tilde\Pi_1$ and $e_3\tilde\Pi_1 = -i\tilde\Pi_1$. Its multiplication by the units is read from
 
 $$
-e_2P_+ = ie_1P_+, \quad e_3P_+ = -iP_+, \qquad e_1(e_1P_+) = -P_+, \quad e_2(e_1P_+) = iP_+, \quad e_3(e_1P_+) = ie_1P_+,
+e_2\tilde\Pi_1 = ie_1\tilde\Pi_1, \quad e_3\tilde\Pi_1 = -i\tilde\Pi_1, \qquad e_1(e_1\tilde\Pi_1) = -\tilde\Pi_1, \quad e_2(e_1\tilde\Pi_1) = i\tilde\Pi_1, \quad e_3(e_1\tilde\Pi_1) = ie_1\tilde\Pi_1,
 $$
 
-so in the basis $P_+, e_1P_+$ the three vector units act by the matrices $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, $\begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix}$ and $\begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}$, and carrying out the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ gives $A_+$; the same computation on the basis $P_-, e_1P_-$ of $\mathbb{B}P_-$ gives $A_-$. The trace of each block is $2Q_0$ by inspection and the determinant is
+so in the basis $\tilde\Pi_1, e_1\tilde\Pi_1$ the three vector units act by the matrices $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, $\begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix}$ and $\begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}$, and carrying out the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ gives $A_+$; the same computation on the basis $\tilde\Pi_2, e_1\tilde\Pi_2$ of $\mathbb{B}\tilde\Pi_2$ gives $A_-$. The trace of each block is $2Q_0$ by inspection and the determinant is
 
 $$
 \det A_+ = (Q_0 - iQ_3)(Q_0 + iQ_3) - (-Q_1 + iQ_2)(Q_1 + iQ_2) = Q_0^2 + Q_3^2 + Q_1^2 + Q_2^2 = N(\tilde{Q}),
@@ -325,7 +325,7 @@ $$
 \tilde{a}_{\mathrm{tr}} = \tfrac{1}{2}(ie_1 - e_2) \longmapsto E_{12},
 $$
 
-whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second, so that $P_+\tilde{a}_{\mathrm{tr}} = \tilde{a}_{\mathrm{tr}}$ while $P_-\tilde{a}_{\mathrm{tr}} = 0$, and the algebra product is nilpotent, $\tilde{a}_{\mathrm{tr}}^2 = 0$. The pair $\tilde{a}_{\mathrm{tr}}$, $\tilde{a}_{\mathrm{tr}}^{\dagger} = \tfrac12(ie_1 + e_2)$ satisfies $\tilde{a}_{\mathrm{tr}}\tilde{a}_{\mathrm{tr}}^{\dagger} = P_+$ and $\tilde{a}_{\mathrm{tr}}^{\dagger}\tilde{a}_{\mathrm{tr}} = P_-$. In the notation of the spinor-module articles these are the truncated ladder operators $x$ and $y$. The consequence is recorded in *Conventions in the Biquaternion Universe*: the biquaternionic Dirac equation is linear and chirality-off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$, and the Dirac field is carried by the spinor module and not by the whole algebra. The regular representation is where one sees that this is forced by the algebra and not chosen: the left action has no off-diagonal blocks.
+whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second, so that $\tilde\Pi_1\tilde{a}_{\mathrm{tr}} = \tilde{a}_{\mathrm{tr}}$ while $\tilde\Pi_2\tilde{a}_{\mathrm{tr}} = 0$, and the algebra product is nilpotent, $\tilde{a}_{\mathrm{tr}}^2 = 0$. The pair $\tilde{a}_{\mathrm{tr}}$, $\tilde{a}_{\mathrm{tr}}^{\dagger} = \tfrac12(ie_1 + e_2)$ satisfies $\tilde{a}_{\mathrm{tr}}\tilde{a}_{\mathrm{tr}}^{\dagger} = \tilde\Pi_1$ and $\tilde{a}_{\mathrm{tr}}^{\dagger}\tilde{a}_{\mathrm{tr}} = \tilde\Pi_2$. In the notation of the spinor-module articles these are the truncated ladder operators $x$ and $y$. The consequence is recorded in *Conventions in the Biquaternion Universe*: the biquaternionic Dirac equation is linear and chirality-off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$, and the Dirac field is carried by the spinor module and not by the whole algebra. The regular representation is where one sees that this is forced by the algebra and not chosen: the left action has no off-diagonal blocks.
 
 ## The Determinant and the Trace
 
@@ -622,22 +622,22 @@ The prime is deliberately not used for the transformed coordinates: in this corp
 **Theorem (the double cover).** The two-sided action defines a surjective group homomorphism
 
 $$
-\Pi : SL(2,\mathbb{C}) \longrightarrow SO^+(1,3),
+\mathrm{Ad} : SL(2,\mathbb{C}) \longrightarrow SO^+(1,3),
 $$
 
 onto the identity component $SO^+(1,3)$ of the orthogonal group of the interval, with kernel $\{e_0, -e_0\}$, central of order two.
 
 **Proof.** A real-linear map of $\mathbb{M}_-$ preserving the quadratic form of signature $(3,1)$ is an element of $O(3,1)$; the action is continuous in $\tilde{\Lambda}$ and $SL(2,\mathbb{C})$ is connected, so the image is a connected subgroup of $O(3,1)$ and therefore lies in $SO^+(1,3)$. Surjectivity onto that component is the standard fact that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, cited from the standard theory of the orthogonal groups. For the kernel, $\tilde{\Lambda}$ acts trivially precisely when $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger} = \tilde{Q}$ for every $\tilde{Q}$ in $\mathbb{M}_-$. Taking $\tilde{Q} = ie_0$ gives $\tilde{\Lambda}\tilde{\Lambda}^{\dagger} = e_0$, that is, $\tilde{\Lambda}$ is unitary, and the condition then reads $\tilde{\Lambda}\tilde{Q} = \tilde{Q}\tilde{\Lambda}$ for every $\tilde{Q}$ in $\mathbb{M}_-$. The elements of $\mathbb{M}_-$ span $\mathbb{B}$ over $\mathbb{C}$, so $\tilde{\Lambda}$ commutes with every element of $\mathbb{B}$ and is therefore a central element $\lambda e_0$; the norm condition $N(\lambda e_0) = \lambda^2 = 1$ leaves $\lambda = \pm 1$. Both central elements act trivially and no other element does.
 
-**The physical reading.** The rotor group is the covering group of the Lorentz group, the map $\Pi$ is two-to-one, and the two-element kernel is the statement that a physical Lorentz transformation corresponds to two rotors, $\tilde{\Lambda}$ and $-\tilde{\Lambda}$. The double cover is met in the spinor articles, where it is read on the module; here it is read as the two-sided action of the regular representation, that is, as the left copy composed with the right copy of the conjugate transpose. The corpus's account of the framework records that this rotor conjugation is the **only coupling** the framework supplies, and that it is kinematic: it is a symmetry of each of the two sectors and not a source, and no equation of motion for $\mathbb{M}_+$-valued fields is supplied with it.
+**The physical reading.** The rotor group is the covering group of the Lorentz group, the map $\mathrm{Ad}$ is two-to-one, and the two-element kernel is the statement that a physical Lorentz transformation corresponds to two rotors, $\tilde{\Lambda}$ and $-\tilde{\Lambda}$. The double cover is met in the spinor articles, where it is read on the module; here it is read as the two-sided action of the regular representation, that is, as the left copy composed with the right copy of the conjugate transpose. The corpus's account of the framework records that this rotor conjugation is the **only coupling** the framework supplies, and that it is kinematic: it is a symmetry of each of the two sectors and not a source, and no equation of motion for $\mathbb{M}_+$-valued fields is supplied with it.
 
 ## Summary
 
 The left regular representation $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$ is the algebra acting on itself on the left, and in the basis $e_0, e_1, e_2, e_3$ its matrix is the Cayley matrix of quaternion multiplication, each entry of which is a single coefficient of $\tilde{Q}$ carrying a sign and none of which is a sum of coefficients. It is a homomorphism, its transpose is the left matrix of the quaternion conjugate, $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\bar{\tilde{Q}})$, its determinant is the square of the norm form, $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, and its trace is $4Q_0$. The right regular representation $\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde{Q}$ is an anti-homomorphism and the regular representation of the opposite algebra; the naive identity $\rho_R(\tilde{Q}) = \rho_L(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\bar{\tilde{Q}}$ is the same statement, since $\rho_L(\bar{\tilde{Q}})^{\mathsf{T}} = \rho_L(\tilde{Q})$ — while what holds is $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D = D\rho_L(\bar{\tilde{Q}})D$ with $D = \operatorname{diag}(-1,1,1,1) = \eta$, the $ict$ metric.
 
-The regular module is $\mathbb{B} = \mathbb{B}P_+ \oplus \mathbb{B}P_-$ with $P_\pm = \tfrac12(e_0 \pm ie_3)$, the two chiralities; in the adapted basis $P_+, e_1P_+, P_-, e_1P_-$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\Phi(\tilde{Q})$ and each a copy of the simple module $S$. So $\rho_L \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_0\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2)$. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_0)$, hence traceless on a material four-vector.
+The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ with $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3)$, the two chiralities; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\Phi(\tilde{Q})$ and each a copy of the simple module $S$. So $\rho_L \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_0\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2)$. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_0)$, hence traceless on a material four-vector.
 
-Read on the material sector, the regular matrix of a four-vector is the matrix displayed in the first section, with trace $4iq'_0$ and determinant the square of the interval; the four-position has determinant $(-c^2t^2 + \mathbf{x}^2)^2$, the four-velocity $c^4$, the on-shell four-momentum $m^4c^4$, and the massless four-momentum zero. The gradient's regular matrix is the first-order $4 \times 4$ operator whose chiral block has determinant $\Box$ and whose determinant is $\Box^2$. Finally, the rotor group $\{\tilde{\Lambda} : N(\tilde{\Lambda}) = e_0\} \cong SL(2,\mathbb{C})$ acts on $\mathbb{M}_-$ and $\mathbb{M}_+$ by $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$, which is $\rho_L(\tilde{\Lambda})\rho_R(\tilde{\Lambda}^{\dagger})$ acting on the four-vector — the Lorentz transformation as left times right — preserving the interval, with rotation rotors the unit real quaternions, boost rotors the Hermitian unit elements, and the covering homomorphism $\Pi$ onto $SO^+(1,3)$ two-to-one with kernel $\{\pm e_0\}$.
+Read on the material sector, the regular matrix of a four-vector is the matrix displayed in the first section, with trace $4iq'_0$ and determinant the square of the interval; the four-position has determinant $(-c^2t^2 + \mathbf{x}^2)^2$, the four-velocity $c^4$, the on-shell four-momentum $m^4c^4$, and the massless four-momentum zero. The gradient's regular matrix is the first-order $4 \times 4$ operator whose chiral block has determinant $\Box$ and whose determinant is $\Box^2$. Finally, the rotor group $\{\tilde{\Lambda} : N(\tilde{\Lambda}) = e_0\} \cong SL(2,\mathbb{C})$ acts on $\mathbb{M}_-$ and $\mathbb{M}_+$ by $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$, which is $\rho_L(\tilde{\Lambda})\rho_R(\tilde{\Lambda}^{\dagger})$ acting on the four-vector — the Lorentz transformation as left times right — preserving the interval, with rotation rotors the unit real quaternions, boost rotors the Hermitian unit elements, and the covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ two-to-one with kernel $\{\pm e_0\}$.
 
 ## Summary of Notation
 
@@ -656,11 +656,11 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\bar{\cdot}, {}^{*}, {}^{\dagger} = \bar{\cdot}\circ{}^{*}, {}^{\flat} = -\dagger$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_0$; locus where $\rho_L = \rho_R$ |
 | $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | Real sector, imaginary sector, informational sector, material sector |
-| $P_+ = \tfrac12(e_0 + ie_3)$, $P_- = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $P_+ + P_- = e_0$, $P_+P_- = 0$ |
-| $\mathbb{B}P_+$, $\mathbb{B}P_-$ | The two minimal left ideals, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}P_+ \oplus \mathbb{B}P_-$ |
+| $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$ |
+| $\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The two minimal left ideals, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ |
 | $A_+(\tilde{Q}), A_-(\tilde{Q})$ | The two $2 \times 2$ blocks of $\rho_L$ in the adapted basis; $\operatorname{Tr} = 2Q_0$, $\det = N$ |
 | $u_+ = e_0 + e_3$, $u_- = e_1 + e_2$ | Conjugating elements, $A_\pm(\tilde{Q}) = \Phi(u_\pm)\Phi(\tilde{Q})\Phi(u_\pm)^{-1}$ |
-| $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Truncated ladder operator; right multiplication carries $\mathbb{B}P_+$ onto $\mathbb{B}P_-$ |
+| $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Truncated ladder operator; right multiplication carries $\mathbb{B}\tilde\Pi_1$ onto $\mathbb{B}\tilde\Pi_2$ |
 | $S = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, the spinor module; $\rho_L \cong S \oplus S$ |
 | $\Phi(\tilde{Q})$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Representation of Biquaternions* |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \rho_R(\mathbb{B})$ | Endomorphism algebra of the regular module, the double centralizer statement |
@@ -672,7 +672,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\eta = \operatorname{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = e_0$ | Rotor; the rotor group $\cong SL(2,\mathbb{C})$ |
 | $\tilde{R}(\theta,\hat n)$, $\tilde{B}(s,\hat n)$ | Rotation rotor (real, $\tilde{R}^{\dagger} = \bar{\tilde{R}}$) and boost rotor (Hermitian, $\tilde{B}^{\dagger} = \tilde{B}$) |
-| $\Pi : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Covering homomorphism, kernel $\{\pm e_0\}$ |
+| $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Covering homomorphism, kernel $\{\pm e_0\}$ |
 | $c$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$ |
 | $ict$, $\mathbf{x}$; $ct'$, $i\mathbf{x}'$ | Material coordinate; informational coordinate |
 

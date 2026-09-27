@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Two independent conditions single out the field of real numbers among ordered fields. The first is **real closedness**, an algebraic condition: the field is ordered, every positive element is a square, and every polynomial of odd degree has a root. The second is **order completeness**, a condition on the ordering: every nonempty subset that is bounded above has a least upper bound. Real closedness describes the *algebraic* shape of $\mathbb{R}$ and is inherited by the field of real algebraic numbers, which is countable; order completeness describes its *analytic* shape and is not inherited by any proper subfield. Each condition characterises $\mathbb{R}$ together with an additional hypothesis: an order-complete ordered field is $\mathbb{R}$ up to isomorphism, and a real-closed field whose ordering is order-complete and whose rationals are dense in it is also $\mathbb{R}$.
+Two independent conditions single out the field of real numbers among ordered fields. The first is **real closedness**, an algebraic condition: the field is ordered, every positive element is a square, and every polynomial of odd degree has a root. The second is **order completeness**, a condition on the ordering: every nonempty subset that is bounded above has a least upper bound. Real closedness describes the *algebraic* shape of $\mathbb{R}$ and is inherited by the field of real algebraic numbers, which is countable; order completeness describes its *analytic* shape and is not inherited by any proper subfield. Each condition characterises $\mathbb{R}$ together with an additional hypothesis: an order-complete ordered field is $\mathbb{R}$ up to isomorphism, and a real-closed field whose ordering is order-complete and whose rationals are order-dense in it is also $\mathbb{R}$.
 
 This article develops both notions, proves that a real-closed field has a unique ordering determined by its field structure, constructs the **real closure** of an ordered field and proves its uniqueness, and proves the uniqueness of $\mathbb{R}$ as the order-complete ordered field. The relation between real closedness and algebraic closedness is settled by showing that $F(i)$ is algebraically closed whenever $F$ is real closed.
 
@@ -76,7 +76,7 @@ $$
 A = \{x \in \overline{\mathbb{Q}} \cap \mathbb{R} : x < \pi\}
 $$
 
-is nonempty and bounded above by $4$, and its supremum in $\mathbb{R}$ is $\pi$, since $\mathbb{Q} \subseteq A$ is dense in $\mathbb{R}$; if $A$ had a supremum $s$ in $\overline{\mathbb{Q}} \cap \mathbb{R}$, then $s$ would equal the real supremum $\pi$, contradicting the transcendence of $\pi$. So $A$ has no least upper bound in the real algebraic numbers.
+is nonempty and bounded above by $4$, and its supremum in $\mathbb{R}$ is $\pi$, since $\mathbb{Q} \subseteq A$ is order-dense in $\mathbb{R}$; if $A$ had a supremum $s$ in $\overline{\mathbb{Q}} \cap \mathbb{R}$, then $s$ would equal the real supremum $\pi$, contradicting the transcendence of $\pi$. So $A$ has no least upper bound in the real algebraic numbers.
 
 **Example.** The real closure of $\mathbb{R}(t)$ with $t$ infinite is a real-closed field of generalized Puiseux series; it is not a subfield of $\mathbb{R}$, in contrast to the real closure of any ordered subfield of $\mathbb{R}$.
 
@@ -116,9 +116,9 @@ Thus the algebraic closure of a real-closed field is obtained by adjoining a sin
 
 ### Density and the Least Upper Bound Property
 
-**Theorem.** Let $F$ be an order-complete ordered field. Then $\mathbb{Q}$ is dense in $F$, and every element of $F$ is both the supremum of the rationals below it and the infimum of the rationals above it.
+**Theorem.** Let $F$ be an order-complete ordered field. Then $\mathbb{Q}$ is order-dense in $F$, and every element of $F$ is both the supremum of the rationals below it and the infimum of the rationals above it.
 
-**Proof.** $F$ is Archimedean by the proposition, so $\mathbb{Q}$ is dense by the characterization of Archimedean fields in *Ordered Fields*. For $x \in F$, the set $A_x = \{q \in \mathbb{Q} : q < x\}$ is nonempty (as $F$ is Archimedean, $-n < x$ for $n$ large) and bounded above by $x$, so it has a supremum $s \leq x$. If $s < x$, density gives a rational $q$ with $s < q < x$, hence $q \in A_x$ and $q > s$, contradicting $s = \sup A_x$; so $s = x$. The statement for the infimum follows by applying the result to $-x$. $\square$
+**Proof.** $F$ is Archimedean by the proposition, so $\mathbb{Q}$ is order-dense by the characterization of Archimedean fields in *Ordered Fields*. For $x \in F$, the set $A_x = \{q \in \mathbb{Q} : q < x\}$ is nonempty (as $F$ is Archimedean, $-n < x$ for $n$ large) and bounded above by $x$, so it has a supremum $s \leq x$. If $s < x$, order-density gives a rational $q$ with $s < q < x$, hence $q \in A_x$ and $q > s$, contradicting $s = \sup A_x$; so $s = x$. The statement for the infimum follows by applying the result to $-x$. $\square$
 
 **Corollary.** In an order-complete ordered field, the rationals separate points and the order is the order generated by the embedding of $\mathbb{Q}$; consequently, if $F$ and $F'$ are order-complete ordered fields, any order-preserving isomorphism between their prime fields extends to at most one isomorphism $F \to F'$.
 
@@ -138,9 +138,9 @@ $$
 \varphi(x) = \sup\{ \varphi_0(q) : q \in \mathbb{Q},\ q < x \},
 $$
 
-which is defined because $\varphi_0(A_x)$ is nonempty and bounded above in $F'$. The map is order-preserving and additive and multiplicative by the arithmetic of suprema, and its kernel is trivial; it is surjective because, given $y \in F'$, the element $x = \sup\{q \in \mathbb{Q} : \varphi_0(q) < y\}$ satisfies $\varphi(x) = y$ by the density of $\mathbb{Q}$ in both fields. Uniqueness holds because an order-preserving field map is determined by its restriction to $\mathbb{Q}$, hence to the dense subfield $\mathbb{Q}$, hence to $F$. $\square$
+which is defined because $\varphi_0(A_x)$ is nonempty and bounded above in $F'$. The map is order-preserving and additive and multiplicative by the arithmetic of suprema, and its kernel is trivial; it is surjective because, given $y \in F'$, the element $x = \sup\{q \in \mathbb{Q} : \varphi_0(q) < y\}$ satisfies $\varphi(x) = y$ by the order-density of $\mathbb{Q}$ in both fields. Uniqueness holds because an order-preserving field map is determined by its restriction to $\mathbb{Q}$, hence to the order-dense subfield $\mathbb{Q}$, hence to $F$. $\square$
 
-**Corollary (the real numbers are unique).** Up to a unique order-preserving field isomorphism there is exactly one order-complete ordered field, namely $\mathbb{R}$. In particular every complete ordered field is $\mathbb{R}$, and every order-complete ordered field contains $\mathbb{Q}$ densely and is isomorphic to $\mathbb{R}$.
+**Corollary (the real numbers are unique).** Up to a unique order-preserving field isomorphism there is exactly one order-complete ordered field, namely $\mathbb{R}$. In particular every complete ordered field is $\mathbb{R}$, and every order-complete ordered field contains $\mathbb{Q}$ as an order-dense subfield and is isomorphic to $\mathbb{R}$.
 
 **Corollary (characterisation by order).** $\mathbb{R}$ is Archimedean and order-complete; conversely an Archimedean order-complete ordered field is $\mathbb{R}$. Hence among ordered fields the field of real numbers is characterised by the least upper bound property.
 
@@ -150,7 +150,7 @@ which is defined because $\varphi_0(A_x)$ is nonempty and bounded above in $F'$.
 
 **Theorem.** $\mathbb{R}$ is real closed; equivalently, every positive real number is a square and every real polynomial of odd degree has a real root.
 
-**Pro.** That every positive real has a square root is the completeness of $\mathbb{R}$ applied to the set $\{y \geq 0: y^2 \leq x\}$, which is nonempty and bounded above and whose supremum $\sqrt x$ satisfies $(\sqrt x)^2 = x$; the verification that the supremum has this property uses the order and the Archimedean property. For odd degree, a real polynomial $p$ of odd degree takes both signs, say $p(a) < 0 < p(b)$ with $a < b$ chosen far enough out, and the set $S = \{x \in (a,b): p < 0 \text{ on } (a,x]\}$ is nonempty and bounded above; its supremum $s \in (a,b]$ satisfies $p(s) = 0$, because polynomial functions are continuous for the order topology and both $p(s) < 0$ and $p(s) > 0$ contradict the definition of $s$. The case of negative leading coefficient is analogous. $\square$
+**Pro.** That every positive real has a square root is the completeness of $\mathbb{R}$ applied to the set $\{y \geq 0: y^2 \leq x\}$, which is nonempty and bounded above and whose supremum $\sqrt x$ satisfies $(\sqrt x)^2 = x$; the verification that the supremum has this property uses the order and the Archimedean property. For odd degree, a real polynomial $p$ of odd degree takes both signs, say $p(a) < 0 < p(b)$ with $a < b$ chosen far enough out, and the set $S = \{x \in (a,b): p < 0 \text{ on } (a,x]\}$ is nonempty and bounded above; its supremum $s \in (a,b]$ satisfies $p(s) = 0$, because a value $p(s) \neq 0$ persists on both sides of $s$: factoring $p(x) - p(s) = (x-s)q(x)$ with $q$ a polynomial, the finitely many coefficients of $q$ are bounded, so for $|x - s|$ small enough $|(x-s)q(x)| < |p(s)|$ and $p(x)$ has the sign of $p(s)$; a value $p(s) < 0$ would put $s+\delta$ in $S$ for small $\delta > 0$, so $s$ would not bound $S$, and $p(s) > 0$ would put $s-\delta$ above every element of $S$ for small $\delta > 0$, so $s$ would not be the least upper bound. The case of negative leading coefficient is analogous. $\square$
 
 **Theorem (fundamental theorem of algebra, real-closed form).** Let $F$ be a real-closed field and let $i^2 = -1$ in an algebraic closure. Then $F(i)$ is algebraically closed.
 
@@ -167,9 +167,9 @@ The two constructions of this article differ in a way worth recording.
 | Construction | Input | Output | Extension type |
 |---|---|---|---|
 | Real closure $F^{rc}$ | ordered field $F$ | real-closed, algebraic over $F$ | algebraic |
-| Order completion $\widehat{F}$ | ordered field $F$ | order-complete, containing $F$ densely | not algebraic in general |
+| Order completion $\widehat{F}$ | ordered field $F$ | order-complete, containing $F$ as an order-dense subfield | not algebraic in general |
 
-**Proposition.** For an Archimedean ordered field $F$ the order completion $\widehat{F}$ is an order-complete ordered field containing $F$ as a dense subfield; it is unique up to a unique order-preserving $F$-isomorphism, and $\widehat{\mathbb{Q}} = \mathbb{R}$.
+**Proposition.** For an Archimedean ordered field $F$ the order completion $\widehat{F}$ is an order-complete ordered field containing $F$ as an order-dense subfield; it is unique up to a unique order-preserving $F$-isomorphism, and $\widehat{\mathbb{Q}} = \mathbb{R}$.
 
 **Proof sketch.** The completion is constructed from the Dedekind cuts of $F$, ordered by inclusion, with the field operations defined by the arithmetic of cuts; the same construction applied to $\mathbb{Q}$ produces $\mathbb{R}$. Uniqueness is Cantor's theorem. $\square$
 
@@ -179,7 +179,7 @@ $$
 2u = \sup_{n \geq 1} 2n\epsilon = \sup_{n \geq 1} n\epsilon = u,
 $$
 
-forcing $u = 0$, although $u \geq \epsilon > 0$. Hence $\widehat{F}$ is a complete linear order containing $F$ densely but carries no field structure making it an ordered field extension of $F$: the completion row of the table above is an ordered field only in the Archimedean case.
+forcing $u = 0$, although $u \geq \epsilon > 0$. Hence $\widehat{F}$ is a complete linear order containing $F$ as an order-dense subset but carries no field structure making it an ordered field extension of $F$: the completion row of the table above is an ordered field only in the Archimedean case.
 
 **Corollary.** $\mathbb{R}$ is simultaneously the order completion of $\mathbb{Q}$ and the order completion of the real algebraic numbers. The real closure of $\mathbb{Q}$ is the smaller field $\overline{\mathbb{Q}} \cap \mathbb{R}$, and $\mathbb{R}$ is the order completion of that real closure.
 
@@ -199,7 +199,7 @@ forcing $u = 0$, although $u \geq \epsilon > 0$. Hence $\widehat{F}$ is a comple
 
 An ordered field is real closed when every positive element is a square and every polynomial of odd degree has a root. This is equivalent to $F$ being formally real with no proper formally real algebraic extension, to $F(i)$ being algebraically closed, and, by Tarski's theorem, to $F$ being elementarily equivalent to $\mathbb{R}$; a real-closed field carries a unique ordering, determined by the field structure through the identity $P = \{a^2 : a \neq 0\}$, so all isomorphisms of real-closed fields preserve the order. Every ordered field has a real closure, unique up to order-preserving isomorphism fixing the base field: the real closure of $\mathbb{Q}$ is the countable field of real algebraic numbers, while the real closure of $\mathbb{R}(t)$ with $t$ infinite is a field of generalized Puiseux series that does not sit inside $\mathbb{R}$.
 
-An ordered field is order-complete when every nonempty bounded-above subset has a supremum; order-complete fields are Archimedean, they contain $\mathbb{Q}$ densely, and they are all isomorphic to $\mathbb{R}$ by Cantor's uniqueness theorem. Among Archimedean ordered fields, real closedness is strictly weaker than order completeness: the real algebraic numbers are real closed but not order-complete, and no proper subfield of $\mathbb{R}$ is order-complete, while completeness does imply real closedness, because every order-complete ordered field is isomorphic to $\mathbb{R}$. The field $\mathbb{R}$ is real closed, and for a real-closed field $F$ the extension $F(i)$ is algebraically closed, so $\mathbb{C} = \mathbb{R}(i)$ is algebraically closed and is the algebraic closure of $\mathbb{R}$.
+An ordered field is order-complete when every nonempty bounded-above subset has a supremum; order-complete fields are Archimedean, they contain $\mathbb{Q}$ as an order-dense subfield, and they are all isomorphic to $\mathbb{R}$ by Cantor's uniqueness theorem. Among Archimedean ordered fields, real closedness is strictly weaker than order completeness: the real algebraic numbers are real closed but not order-complete, and no proper subfield of $\mathbb{R}$ is order-complete, while completeness does imply real closedness, because every order-complete ordered field is isomorphic to $\mathbb{R}$. The field $\mathbb{R}$ is real closed, and for a real-closed field $F$ the extension $F(i)$ is algebraically closed, so $\mathbb{C} = \mathbb{R}(i)$ is algebraically closed and is the algebraic closure of $\mathbb{R}$.
 
 | Ordered field | Real closed | Archimedean | Order-complete |
 |---|---|---|---|
@@ -226,8 +226,6 @@ An ordered field is order-complete when every nonempty bounded-above subset has 
 | $\mathbb{R}$ | The unique order-complete ordered field |
 | $F(i)$ | Quadratic extension by a square root of $-1$ |
 | $F(t)$ | Rational function field, ordered by leading coefficients |
-
-
 
 ## Further Reading
 

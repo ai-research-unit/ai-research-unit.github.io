@@ -161,11 +161,11 @@ The two order parameters are therefore the framework's rank-one and rank-two ten
 The spin-one coherent states are the rotations of the stretched state. In the two-factor realisation the stretched state is the product of two identical fundamental states, $|\!\uparrow\uparrow\rangle$, and the framework's version of it is the symmetrised product of two identical fundamental idempotents,
 
 $$
-P_{\mathrm{sym}}\left(P_+(\hat{\mathbf n})\otimes P_+(\hat{\mathbf n})\right)P_{\mathrm{sym}}
+P_{\mathrm{sym}}\left(\tilde\Pi(\hat{\mathbf n})\otimes \tilde\Pi(\hat{\mathbf n})\right)P_{\mathrm{sym}}
 =\lvert\boldsymbol\zeta_{\hat{\mathbf n}}\rangle\langle\boldsymbol\zeta_{\hat{\mathbf n}}\rvert ,
 $$
 
-where $P_+(\hat{\mathbf n})$ is the fundamental idempotent of the informational sector along $\hat{\mathbf n}$ and $\boldsymbol\zeta_{\hat{\mathbf n}}$ is the spin-one coherent state whose magnetic order points along $\hat{\mathbf n}$. The magnetic order parameter of the condensate is thus read off from the axis along which the two fundamental idempotents coincide, and the ferromagnetic phase is the phase in which the two constituent fundamental spins are *parallel*.
+where $\tilde\Pi(\hat{\mathbf n})$ is the fundamental idempotent of the informational sector along $\hat{\mathbf n}$ and $\boldsymbol\zeta_{\hat{\mathbf n}}$ is the spin-one coherent state whose magnetic order points along $\hat{\mathbf n}$. The magnetic order parameter of the condensate is thus read off from the axis along which the two fundamental idempotents coincide, and the ferromagnetic phase is the phase in which the two constituent fundamental spins are *parallel*.
 
 This gives the algebraic form of the ferromagnetic order: the order parameter is the axis of a single fundamental idempotent, doubled. The spin-one coherent state has $\lvert\langle\mathbf F\rangle\rvert=1$ — verified explicitly on rotated coherent states — and the two-parameter family of directions, together with the phase, makes the ferromagnetic order-parameter manifold.
 
@@ -174,11 +174,11 @@ This gives the algebraic form of the ferromagnetic order: the order parameter is
 The polar states have a different and equally transparent realisation: they are the symmetrised products of two *antipodal* fundamental idempotents,
 
 $$
-P_{\mathrm{sym}}\left(P_+(\hat{\mathbf n})\otimes P_-(\hat{\mathbf n})\right)P_{\mathrm{sym}}
+P_{\mathrm{sym}}\left(\tilde\Pi(\hat{\mathbf n})\otimes \tilde\Pi(-\hat{\mathbf n})\right)P_{\mathrm{sym}}
 =\tfrac{1}{2}\,\lvert\boldsymbol\zeta_{\hat{\mathbf n}}^{\mathrm{pol}}\rangle\langle\boldsymbol\zeta_{\hat{\mathbf n}}^{\mathrm{pol}}\rvert ,
 $$
 
-with $P_-(\hat{\mathbf n})$ the orthogonal idempotent along the same axis. That the result is a projector, and that it is the polar state with director $\hat{\mathbf n}$, was verified directly: for $\hat{\mathbf n}=\hat z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\mathbf F\rangle=0$, $Q=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are *antiparallel*: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.
+with $\tilde\Pi(-\hat{\mathbf n})$ the orthogonal idempotent along the same axis. That the result is a projector, and that it is the polar state with director $\hat{\mathbf n}$, was verified directly: for $\hat{\mathbf n}=\hat z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\mathbf F\rangle=0$, $Q=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are *antiparallel*: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.
 
 The two families exhaust the two extreme values of the magnetic invariant, and they are distinguished by a single algebraic choice — whether the two fundamental idempotents that are symmetrised are the same or orthogonal. The broken-axisymmetric family, which interpolates between them when $q<0$, corresponds to symmetrising two fundamental idempotents that are neither identical nor orthogonal; the angle between the two fundamental spin directions parameterises the departure from the two extremes.
 
@@ -267,7 +267,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 - The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $e^{i\alpha}e_0$, and the spin rotation is the adjoint action on the triplet.
 - The standard mean-field energy is a function of the spinor only through the three invariants $\lvert\langle\mathbf F\rangle\rvert^2$, $\langle F_z\rangle$ and $\langle F_z^2\rangle$. In the framework these are the rank-one tensor expectation, the quadratic $F_z^2$ expectation, and the $z$-component of the magnetic order; the alignment was verified to be $\langle F_z^2\rangle=\tfrac23+n_3/\sqrt3-n_8/3$ on random pure states, and the magnetic order components are $s_1=\sqrt{2/3}(n_1+n_6)$, $s_2=\sqrt{2/3}(n_2+n_7)$, $s_3=n_3/\sqrt3+n_8$.
 - The nematic (quadrupolar) order parameter is the traceless symmetric tensor $Q_{ij}=\langle F_iF_j\rangle-\tfrac23\delta_{ij}$; for the polar state along $\hat{\mathbf n}$ it is $\tfrac13\delta_{ij}-\hat n_i\hat n_j$, invariant under $\hat{\mathbf n}\to-\hat{\mathbf n}$. The polar state $\boldsymbol\zeta=(0,1,0)^T$ has $\langle\mathbf F\rangle=0$ and $Q=\tfrac13\mathrm{diag}(1,1,-2)$, both verified.
-- Ferromagnetic and polar ground states have a common algebraic origin: the ferromagnetic states are $P_{\mathrm{sym}}\left(P_+(\hat{\mathbf n})\otimes P_+(\hat{\mathbf n})\right)P_{\mathrm{sym}}$, symmetrised products of *identical* fundamental idempotents, with $\lvert\langle\mathbf F\rangle\rvert=1$; the polar states are $P_{\mathrm{sym}}\left(P_+(\hat{\mathbf n})\otimes P_-(\hat{\mathbf n})\right)P_{\mathrm{sym}}=\tfrac12\lvert\boldsymbol\zeta^{\mathrm{pol}}_{\hat{\mathbf n}}\rangle\langle\boldsymbol\zeta^{\mathrm{pol}}_{\hat{\mathbf n}}\rvert$, symmetrised products of *antipodal* idempotents, with $\langle\mathbf F\rangle=0$. Parallel constituents give magnetic order, antiparallel constituents give nematic order.
+- Ferromagnetic and polar ground states have a common algebraic origin: the ferromagnetic states are $P_{\mathrm{sym}}\left(\tilde\Pi(\hat{\mathbf n})\otimes \tilde\Pi(\hat{\mathbf n})\right)P_{\mathrm{sym}}$, symmetrised products of *identical* fundamental idempotents, with $\lvert\langle\mathbf F\rangle\rvert=1$; the polar states are $P_{\mathrm{sym}}\left(\tilde\Pi(\hat{\mathbf n})\otimes \tilde\Pi(-\hat{\mathbf n})\right)P_{\mathrm{sym}}=\tfrac12\lvert\boldsymbol\zeta^{\mathrm{pol}}_{\hat{\mathbf n}}\rangle\langle\boldsymbol\zeta^{\mathrm{pol}}_{\hat{\mathbf n}}\rvert$, symmetrised products of *antipodal* idempotents, with $\langle\mathbf F\rangle=0$. Parallel constituents give magnetic order, antiparallel constituents give nematic order.
 - The order-parameter manifolds follow from the orbit-stabiliser computation with the stabilisers $U(1)_{\mathrm{diag}}$ and $U(1)\rtimes\mathbb{Z}_2$: $M_{\mathrm{FM}}\cong S^2\times S^1$ and $M_{\mathrm{polar}}\cong(S^2/\mathbb{Z}_2)\times S^1$, both of three real dimensions, the second encoding the unoriented director.
 - The uniform energy is a quadratic function of the Bloch vector of the symmetric sector; the phase diagram is the competition of two quadratic forms, and the couplings that decide the winner are imported from the two-body theory, not derived from the algebra. A numerical minimisation over superpositions reproduces the standard corners: ferromagnetic ($\lvert\langle\mathbf F\rangle\rvert=1$, $\langle F_z^2\rangle=1$ for the field-aligned member of the degenerate direction family) for $c_2<0$ at $q=0$, polar ($0$, $0$) for $c_2>0$ at $q>0$, and broken axisymmetric ($0$, $1$) for $c_2>0$ at $q<0$; the minimiser is always a pure state, as convexity requires.
 
@@ -285,7 +285,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 | $p,q$ | Linear and quadratic Zeeman coefficients |
 | $P_{\mathrm{sym}}$ | Symmetriser onto the triplet of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
 | $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ | Triplet spin operators of the two-factor algebra |
-| $P_\pm(\hat{\mathbf n})$ | Fundamental idempotents of the informational sector |
+| $\tilde\Pi(\pm\hat{\mathbf n})$ | Fundamental idempotents of the informational sector |
 | $n_1,\dots,n_8$ | Bloch coordinates of the symmetric-sector state |
 | $M_{\mathrm{FM}},M_{\mathrm{polar}}$ | Order-parameter manifolds $S^2\times S^1$, $(S^2/\mathbb{Z}_2)\times S^1$ |
 

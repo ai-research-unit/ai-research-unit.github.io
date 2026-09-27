@@ -1,3 +1,4 @@
+
 # __Rotations and Reflections in the Complex Plane__
 
 ## Introduction
@@ -80,35 +81,9 @@ $$
 
 The map $R_u$ fixes the origin and preserves distances, so it is an **isometry of the plane** fixing the origin.
 
-### Matrix Form
-
-In the real basis $\{1, i\}$ of $\mathbb{C}$, write $z = x + iy$ and $u = e^{i\theta}$. Then
-
-$$
-R_u(z) = (\cos\theta + i\sin\theta)(x + iy) = (x\cos\theta - y\sin\theta) + i(x\sin\theta + y\cos\theta),
-$$
-
-so the matrix of $R_u$ is
-
-$$
-R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}, \qquad \det R_\theta = \cos^2\theta + \sin^2\theta = 1, \qquad \operatorname{tr} R_\theta = 2\cos\theta .
-$$
-
-The matrix is orthogonal, $R_\theta^T R_\theta = I$, and its determinant is $+1$. It is the standard matrix of rotation through the angle $\theta$.
-
 ### The Identification with SO(2)
 
-**Definition.** The **orthogonal group** of the plane is
-
-$$
-O(2) = \{A \in GL_2(\mathbb{R}) : A^T A = I\},
-$$
-
-and the **special orthogonal group** is the subgroup of determinant $+1$,
-
-$$
-SO(2) = \{A \in O(2) : \det A = 1\}.
-$$
+**Definition.** The **orthogonal group** of the plane is the group $O(2)$ of distance-preserving $\mathbb{R}$-linear maps $\mathbb{C} \to \mathbb{C}$, and the **special orthogonal group** $SO(2)$ is its subgroup of orientation-preserving elements, those of determinant $+1$.
 
 **Theorem.** The map $u \mapsto R_u$ is an injective group homomorphism $U(1) \to SO(2)$, and it is surjective. Hence
 
@@ -116,11 +91,11 @@ $$
 U(1) \cong SO(2),
 $$
 
-and every element of $SO(2)$ is the rotation matrix $R_\theta$ for exactly one $\theta \in \mathbb{R}/2\pi\mathbb{Z}$.
+and every element of $SO(2)$ is the rotation $R_u$ for exactly one $u \in U(1)$, that is, one angle $\theta \in \mathbb{R}/2\pi\mathbb{Z}$.
 
-**Proof.** The product rule $R_{uv} = R_u \circ R_v$ and $R_1 = \mathrm{id}$ follow from associativity of multiplication, so the map is a homomorphism; it is injective because $R_u = R_v$ implies $u = R_u(1) = R_v(1) = v$. For surjectivity, let $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfy $A^T A = I$ and $\det A = 1$. The columns are orthonormal and oriented, so there is $\theta$ with $A = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta$: the first column is $(\cos\theta, \sin\theta)$ for some $\theta$, and the second column is orthogonal to it with the same length, giving $(-\sin\theta, \cos\theta)$ under the determinant condition. Setting $u = e^{i\theta}$ gives $A = R_u$. $\square$
+**Proof.** The product rule $R_{uv} = R_u \circ R_v$ and $R_1 = \mathrm{id}$ follow from associativity of multiplication, so the map is a homomorphism; it is injective because $R_u = R_v$ implies $u = R_u(1) = R_v(1) = v$. For surjectivity, let $L \in SO(2)$ and put $u = L(1)$, so that $|u| = |1| = 1$ and $u \in U(1)$. The map $R_u^{-1} \circ L$ then fixes $1$ and preserves distances; a distance-preserving $\mathbb{R}$-linear map fixing $1$ and preserving the determinant is the identity, since it carries the orthonormal basis $\{1, i\}$ to an orthonormal basis with the same orientation and the same first vector. Hence $L = R_u$. $\square$
 
-So $U(1)$ and $SO(2)$ are two descriptions of one group: the multiplicative group of units of $\mathbb{C}$ and the group of orientation-preserving isometries of the plane fixing the origin.
+So $U(1)$ and $SO(2)$ are two descriptions of one group: the multiplicative group of units of $\mathbb{C}$ and the group of orientation-preserving isometries of the plane fixing the origin. Multiplication by the unit $u = e^{i\theta}$ is the rotation through the angle $\theta$.
 
 ### Why the Sandwich Form Degenerates
 
@@ -130,9 +105,9 @@ $$
 v \mapsto q v q^{-1}.
 $$
 
-In the quaternion algebra the unit group acts on the pure imaginary subspace this way, and this is how $SO(3)$ arises from $\mathbb{H}$, treats that case. In $\mathbb{C}$ the sandwich is vacuous.
+In the quaternion algebra the unit group acts on the pure imaginary subspace this way, and this is how $SO(3)$ arises from $\mathbb{H}$. In $\mathbb{C}$ the sandwich is vacuous.
 
-**Proposition.** Let $u \in U(1)$ and $z \in \mathbb{C}$. Then $u z u^{-1} = z$. Consequently the conjugation action of $U(1)$ on $\mathbb{C}$ is trivial, and the induced map $U(1) \to GL_2(\mathbb{R})$ is the constant map to the identity.
+**Proposition.** Let $u \in U(1)$ and $z \in \mathbb{C}$. Then $u z u^{-1} = z$. Consequently the conjugation action of $U(1)$ on $\mathbb{C}$ is trivial, and the algebra has no nontrivial inner automorphism.
 
 **Proof.** Complex multiplication is commutative, so $u z u^{-1} = z u u^{-1} = z$. $\square$
 
@@ -148,7 +123,7 @@ where $\bar{\cdot}$ is complex conjugation. Consequently no rotation $R_u$ with 
 
 **Proof.** An automorphism $\sigma$ fixes $\mathbb{R}$ and is determined by $\sigma(i)$, which must satisfy $\sigma(i)^2 = \sigma(-1) = -1$, so $\sigma(i) = \pm i$; this is the computation of the Galois group of $\mathbb{C}/\mathbb{R}$, where the group is shown to be $\mathbb{Z}/2\mathbb{Z}$ generated by conjugation. A rotation $R_u$ with $u \neq 1$ does not fix $1$, since $R_u(1) = u$, so it is not an algebra automorphism. $\square$
 
-Thus $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ is finite whereas $U(1)$ is a circle: the rotation group cannot be recovered from the multiplication alone. It is recovered only when the norm form $N(z) = z\bar z$ — equivalently, the Euclidean metric — is carried along with the algebra. The correct reading is that $U(1)$ acts on $\mathbb{C}$ by the restriction of the left regular representation, $u \mapsto R_u$, and this action is faithful. In a commutative algebra the regular representation, not the adjoint representation, is the source of the isometries.
+Thus $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ is finite whereas $U(1)$ is a circle: the rotation group cannot be recovered from the multiplication alone. It is recovered only when the norm form $N(z) = z\bar z$ — equivalently, the Euclidean metric — is carried along with the algebra. The correct reading is that the isometries of the plane are the action of $U(1)$ on $\mathbb{C}$ by multiplication, $u \mapsto R_u$, which is faithful; in a commutative algebra multiplication, not conjugation, is the natural action.
 
 ## Reflections
 
@@ -168,19 +143,7 @@ $$
 S_u(S_u(z)) = u\overline{u\bar z} = u\bar u z = |u|^2 z = z,
 $$
 
-so $S_u$ is an involution. In the basis $\{1, i\}$ with $u = e^{2i\alpha}$,
-
-$$
-S_u(x + iy) = e^{2i\alpha}(x - iy) = (x\cos 2\alpha + y\sin 2\alpha) + i(x\sin 2\alpha - y\cos 2\alpha),
-$$
-
-with matrix
-
-$$
-\begin{pmatrix} \cos 2\alpha & \sin 2\alpha \\ \sin 2\alpha & -\cos 2\alpha \end{pmatrix},
-$$
-
-whose determinant is $-(\cos^2 2\alpha + \sin^2 2\alpha) = -1$. $\square$
+so $S_u$ is an involution. For the determinant, write $u = e^{2i\alpha}$; then $S_u$ sends $1$ to $e^{2i\alpha}$ and $i$ to $e^{2i\alpha}(-i) = -e^{2i\alpha} i$, so on the real basis $\{1, i\}$ it acts by the linear map of determinant $-\lvert u\rvert^2 = -1$. $\square$
 
 **Theorem (fixed line).** Write $u = e^{2i\alpha}$. The fixed-point set of $S_u$ is the line through the origin of direction $e^{i\alpha}$:
 
@@ -215,7 +178,7 @@ $$
 **Proof.** Compute on $z$:
 
 $$
-R_u(S_1(R_u^{-1}(z))) = R_u(\overline{u^{-1} z}) = u \bar u^{-1} \bar z = u^2 \bar z = S_{u^2}(z),
+R_u(S_1(R_u^{-1}(z))) = R_u(\overline{u^{-1} z}) = u\,\overline{u^{-1}}\,\bar z = u^2 \bar z = S_{u^2}(z),
 $$
 
 using $\bar u^{-1} = u$ for $|u| = 1$. As $u$ ranges over $U(1)$, $u^2$ ranges over $U(1)$, so every reflection is conjugate to conjugation; the reflections form one conjugacy class. $\square$
@@ -322,43 +285,31 @@ The subgroup $U(1) \times \{1\}$ is normal; the complement $\{1\} \times \mathbb
 
 **Theorem.** $O(2)$ is compact and has exactly two connected components, each homeomorphic to a circle: the rotations $SO(2) = U(1)$ and the reflections $U(1)\bar{\cdot}$. The identity component is $SO(2)$.
 
-**Proof.** Compactness follows because $O(2)$ is closed and bounded in the space of real $2\times 2$ matrices. The determinant is continuous and takes the two discrete values $\pm 1$, so each of $SO(2)$ and its complement is open in $O(2)$ and the group is disconnected. Both are images of the connected set $U(1)$ under the homeomorphisms $u \mapsto R_u$ and $u \mapsto S_u$, hence connected. $\square$
+**Proof.** Compactness follows because $O(2)$ is closed and bounded in the finite-dimensional space of $\mathbb{R}$-linear maps $\mathbb{C} \to \mathbb{C}$. The determinant is continuous and takes the two discrete values $\pm 1$, so each of $SO(2)$ and its complement is open in $O(2)$ and the group is disconnected. Both are images of the connected set $U(1)$ under the homeomorphisms $u \mapsto R_u$ and $u \mapsto S_u$, hence connected. $\square$
 
 Consequently $\pi_0(O(2)) = \mathbb{Z}/2\mathbb{Z}$, and $SO(2) \cong U(1) \cong \mathbb{R}/2\pi\mathbb{Z}$ is connected with fundamental group $\pi_1(SO(2)) = \mathbb{Z}$. In the plane a rotation can be deformed continuously to the identity, while a reflection cannot; the discrete invariant that separates them is the sign of the determinant.
 
 ## The Exponential, the Angle and the Lie Algebra
 
-The matrix $R_\theta$ is the exponential of a skew-symmetric matrix. Writing
+The rotation $R_u$ is the exponential of an element of the Lie algebra. On the complex side the Lie algebra of $U(1)$ is the line of purely imaginary numbers,
 
 $$
-J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix},
+\mathfrak{u}(1) = i\mathbb{R} \subset \mathbb{C},
 $$
 
-one has $J^2 = -I$ and, by summing the exponential series,
+a one-dimensional abelian real Lie algebra, and the exponential is $\exp(it) = e^{it}$, which maps this line onto $U(1)$ with kernel $2\pi i\mathbb{Z}$. Written as a rotation, $R_{e^{i\theta}}(z) = e^{i\theta}z$, and $\exp : \mathfrak{u}(1) \to SO(2)$ is surjective with kernel $2\pi i \mathbb{Z}$; the identification $U(1) \cong SO(2)$ carries $i\mathbb{R}$ to the one-dimensional Lie algebra $\mathfrak{so}(2) \cong \mathbb{R}$ of $SO(2)$.
+
+**Theorem.** The determinant and the trace of the rotation $R_u$ with $u = e^{i\theta}$ are
 
 $$
-\exp(\theta J) = \sum_{n\ge0} \frac{\theta^n J^n}{n!} = \cos\theta \, I + \sin\theta \, J = R_\theta .
+\det R_u = 1, \qquad \operatorname{tr} R_{u} = 2\cos\theta,
 $$
 
-The set of skew-symmetric $2 \times 2$ real matrices is the one-dimensional abelian Lie algebra
+and the eigenvalues of $R_u$, over $\mathbb{C}$, are $e^{i\theta}$ and $e^{-i\theta}$. For a reflection the eigenvalues are $+1$ and $-1$, and $\det S_u = -1$, $\operatorname{tr} S_u = 0$.
 
-$$
-\mathfrak{so}(2) = \{\theta J : \theta \in \mathbb{R}\} \cong \mathbb{R},
-$$
+**Proof.** The determinant is $N(u) = 1$ and the trace is twice the real part of $u$, as for any multiplication operator on $\mathbb{C}$; the eigenvalues of $R_u$ are the roots of $\lambda^2 - 2\cos\theta\,\lambda + 1 = 0$, namely $e^{\pm i\theta}$. The reflection was treated in the fixed-line theorem, where its two eigenvalues $+1$ and $-1$ on the fixed and perpendicular lines were exhibited, so its trace is $0$ and its determinant $-1$. $\square$
 
-and $\exp : \mathfrak{so}(2) \to SO(2)$ is surjective with kernel $2\pi\mathbb{Z}$. On the complex side the same statement reads: the Lie algebra of $U(1)$ is $\mathfrak{u}(1) = i\mathbb{R} \subset \mathbb{C}$, and $\exp(it) = e^{it}$ is the exponential map, again with kernel $2\pi i \mathbb{Z}$. The identification $U(1) \cong SO(2)$ carries $i\mathbb{R}$ to $\mathfrak{so}(2)$.
-
-**Theorem.** The determinant and the trace of a rotation are
-
-$$
-\det R_\theta = 1, \qquad \operatorname{tr} R_\theta = 2\cos\theta,
-$$
-
-and the eigenvalues of $R_\theta$, over $\mathbb{C}$, are $e^{i\theta}$ and $e^{-i\theta}$. For a reflection the eigenvalues are $+1$ and $-1$, and $\det S_u = -1$, $\operatorname{tr} S_u = 0$.
-
-**Proof.** The determinant and the eigenvalues of $R_\theta$ are computed from the matrix displayed above; the eigenvalues solve $\lambda^2 - 2\cos\theta\,\lambda + 1 = 0$. The reflection was treated in the fixed-line theorem, and its matrix has trace $\cos 2\alpha - \cos 2\alpha = 0$. $\square$
-
-The trace recovers $\cos\theta$ and hence $\theta$ up to sign: it identifies the pair $\{R_\theta, R_{-\theta}\}$ and cannot distinguish a rotation from its inverse. The angle itself is not a function of the matrix that is continuous and single-valued on all of $SO(2)$, because $SO(2)$ is a circle and $\theta$ unwraps it; this is exactly the multivaluedness of the argument $\arg u$. Choosing a branch of $\arg$ on a slit circle gives a local angle, and the total change of the angle around the circle is $2\pi$, the winding number of $\theta \mapsto e^{i\theta}$ about the origin.
+The trace recovers $\cos\theta$ and hence $\theta$ up to sign: it identifies the pair $\{R_u, R_{u^{-1}}\}$ and cannot distinguish a rotation from its inverse. The angle itself is not a continuous single-valued function on all of $SO(2)$, because $SO(2)$ is a circle and $\theta$ unwraps it; this is exactly the multivaluedness of the argument $\arg u$. Choosing a branch of $\arg$ on a slit circle gives a local angle, and the total change of the angle around the circle is $2\pi$, the winding number of $\theta \mapsto e^{i\theta}$ about the origin.
 
 ## Rotations, Automorphisms and Similarities
 
@@ -370,7 +321,7 @@ Three distinct groups act on the complex plane and they should not be confused.
 
 **The similarities.** The group of $\mathbb{C}$-linear bijections of $\mathbb{C}$, that is, the maps $z \mapsto az$ with $a \neq 0$, is $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$. Each such map is a rotation followed by a scaling by $|a|$, and it preserves angles but not distances; the rotations are the isometric part.
 
-This is the precise sense in which multiplication is the natural action. In $\mathbb{C}$ the sandwich action is trivial, the algebra automorphism group is finite, and the isometries come from the regular representation of the units, $u \mapsto R_u$; adding the reflections gives the full orthogonal group. The subgroups are summarised below.
+This is the precise sense in which multiplication is the natural action. In $\mathbb{C}$ the sandwich action is trivial, the algebra automorphism group is finite, and the isometries come from the multiplication action of the units, $u \mapsto R_u$; adding the reflections gives the full orthogonal group. The subgroups are summarised below.
 
 | Group | Elements | Structure | Fixes |
 |---|---|---|---|
@@ -406,7 +357,7 @@ Every orientation-preserving isometry with $u = 1$ is a translation, and with $u
 
 The unit circle $U(1) = \{u : \lvert u\rvert = 1\}$ is a compact connected abelian group, isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$ via $\theta \mapsto e^{i\theta}$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ by the polar decomposition.
 
-Multiplication by a unit, $R_u(z) = uz$, is an $\mathbb{R}$-linear isometry fixing the origin; in the basis $\{1, i\}$ it is the rotation matrix $R_\theta$ with $\det = 1$ and $\operatorname{tr} = 2\cos\theta$. The map $u \mapsto R_u$ is an isomorphism $U(1) \cong SO(2)$. The sandwich $z \mapsto uzu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the center. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the left regular representation together with the norm form $N(z) = z\bar z$. Multiplication, not conjugation, is the natural action.
+Multiplication by a unit, $R_u(z) = uz$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = e^{i\theta}$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $e^{\pm i\theta}$. The map $u \mapsto R_u$ is an isomorphism $U(1) \cong SO(2)$. The sandwich $z \mapsto uzu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the center. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm form $N(z) = z\bar z$. Multiplication, not conjugation, is the natural action.
 
 The reflections are the maps $S_u(z) = u\bar z$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\alpha$ when $u = e^{2i\alpha}$. They form the coset $U(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\alpha$ and $\beta$ compose to the rotation through $2(\alpha - \beta)$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
 
@@ -424,18 +375,15 @@ The orthogonal group is $O(2) = U(1) \cup U(1)\bar{\cdot}$, with determinant hom
 | $\operatorname{Re}(\bar z w)$ | Real inner product |
 | $U(1) = \{u : \lvert u\rvert = 1\}$ | Unit circle, unit group of $\mathbb{C}$ |
 | $e^{i\theta} = \cos\theta + i\sin\theta$ | Exponential of an angle |
-| $R_u(z) = uz$ | Rotation by the unit $u$ |
-| $R_\theta$ | Rotation matrix $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$ |
+| $R_u(z) = uz$ | Rotation by the unit $u$; determinant $1$, trace $2\cos\theta$ for $u = e^{i\theta}$ |
 | $S_u(z) = u\bar z$ | Reflection determined by the unit $u$ |
 | $O(2)$ | Orthogonal group of the plane; rotations and reflections |
 | $SO(2)$ | Rotation group, $\cong U(1)$ |
 | $O(2) \cong U(1) \rtimes \mathbb{Z}/2\mathbb{Z}$ | Reflection–rotation decomposition of $O(2)$ |
 | $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ | $\mathbb{R}$-algebra automorphisms; Galois group of $\mathbb{C}/\mathbb{R}$ |
-| $\mathfrak{so}(2) \cong \mathbb{R}$ | Lie algebra of $SO(2)$; $J = \begin{pmatrix} 0 & -1 \\ 1 & 0\end{pmatrix}$ |
+| $\mathfrak{so}(2) \cong \mathbb{R}$ | Lie algebra of $SO(2)$ |
 | $\mathfrak{u}(1) = i\mathbb{R}$ | Lie algebra of $U(1)$ |
 | $\operatorname{Isom}(\mathbb{C}) \cong \mathbb{C} \rtimes O(2)$ | Isometry group of the plane |
-
-
 
 ## Further Reading
 

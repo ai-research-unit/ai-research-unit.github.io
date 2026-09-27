@@ -182,23 +182,23 @@ The regular representation is the first reducible realization in this subcategor
 **Definition.** Let
 
 $$
-p = \tfrac{1}{2}(e_0 + i e_3), \qquad q = \tfrac{1}{2}(e_0 - i e_3).
+\tilde\Pi_1 = \tfrac{1}{2}(e_0 + i e_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - i e_3).
 $$
 
-**Lemma (orthogonal idempotents).** The elements $p$ and $q$ satisfy
+**Lemma (orthogonal idempotents).** The elements $\tilde\Pi_1$ and $\tilde\Pi_2$ satisfy
 
 $$
-p^2 = p, \qquad q^2 = q, \qquad pq = qp = 0, \qquad p + q = e_0,
+\tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0,
 $$
 
-so that $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ as a direct sum of left ideals.
+so that $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as a direct sum of left ideals.
 
-**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $p^2 = \tfrac{1}{4}(e_0^2 + 2ie_3 + i^2 e_3^2) = \tfrac{1}{4}(e_0 + 2ie_3 + e_0) = \tfrac{1}{2}(e_0 + ie_3) = p$, and similarly $q^2 = q$, while $pq = \tfrac{1}{4}(e_0^2 - i^2e_3^2) = \tfrac{1}{4}(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}q = 0$, because membership of $\mathbb{B}q$ gives $\tilde{Q}q = \tilde{Q}$ while $pq = 0$. The sum is therefore direct. The idempotents and the Peirce decomposition are the subject of *Biquaternion Ideals and Peirce Decomposition*; the statement is used here only to split the module. $\square$
+**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $\tilde\Pi_1^2 = \tfrac{1}{4}(e_0^2 + 2ie_3 + i^2 e_3^2) = \tfrac{1}{4}(e_0 + 2ie_3 + e_0) = \tfrac{1}{2}(e_0 + ie_3) = \tilde\Pi_1$, and similarly $\tilde\Pi_2^2 = \tilde\Pi_2$, while $\tilde\Pi_1\tilde\Pi_2 = \tfrac{1}{4}(e_0^2 - i^2e_3^2) = \tfrac{1}{4}(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}\tilde\Pi_2 = 0$, because membership of $\mathbb{B}\tilde\Pi_2$ gives $\tilde{Q}\tilde\Pi_2 = \tilde{Q}$ while $\tilde\Pi_1\tilde\Pi_2 = 0$. The sum is therefore direct. The idempotents and the Peirce decomposition are the subject of *Biquaternion Ideals and Peirce Decomposition*; the statement is used here only to split the module. $\square$
 
 **Theorem (the regular representation is $V \oplus V$).** In the basis
 
 $$
-p, \quad e_1 p, \quad q, \quad e_1 q
+\tilde\Pi_1, \quad e_1 \tilde\Pi_1, \quad \tilde\Pi_2, \quad e_1 \tilde\Pi_2
 $$
 
 of $\mathbb{B}$, the left regular matrix of $\tilde{Q}$ is block diagonal,
@@ -221,16 +221,16 @@ $$
 
 as a left $\mathbb{B}$-module. The regular representation is therefore reducible, and it is the first reducible realization in this subcategory.
 
-**Proof.** The two ideals $\mathbb{B}p$ and $\mathbb{B}q$ are stable under $\rho_L(\tilde{Q})$, because $\rho_L(\tilde{Q})(\tilde{S}p) = (\tilde{Q}\tilde{S})p$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}p$ has the basis $p, e_1p$, since $e_2 p = i e_1 p$ and $e_3 p = -ip$. Its multiplication by the basis elements is read from
+**Proof.** The two ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ are stable under $\rho_L(\tilde{Q})$, because $\rho_L(\tilde{Q})(\tilde{S}\tilde\Pi_1) = (\tilde{Q}\tilde{S})\tilde\Pi_1$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_1$ has the basis $\tilde\Pi_1, e_1\tilde\Pi_1$, since $e_2 \tilde\Pi_1 = i e_1 \tilde\Pi_1$ and $e_3 \tilde\Pi_1 = -i\tilde\Pi_1$. Its multiplication by the basis elements is read from
 
 $$
-e_1 p = e_1p, \quad e_2 p = ie_1p, \quad e_3 p = -ip, \qquad e_1(e_1p) = -p, \quad e_2(e_1p) = ip, \quad e_3(e_1p) = ie_1p,
+e_1 \tilde\Pi_1 = e_1\tilde\Pi_1, \quad e_2 \tilde\Pi_1 = ie_1\tilde\Pi_1, \quad e_3 \tilde\Pi_1 = -i\tilde\Pi_1, \qquad e_1(e_1\tilde\Pi_1) = -\tilde\Pi_1, \quad e_2(e_1\tilde\Pi_1) = i\tilde\Pi_1, \quad e_3(e_1\tilde\Pi_1) = ie_1\tilde\Pi_1,
 $$
 
-so in the basis $p, e_1p$ the three units act by the matrices
+so in the basis $\tilde\Pi_1, e_1\tilde\Pi_1$ the three units act by the matrices
 $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$,
 $\begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix}$ and
-$\begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}$, and carrying out the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ gives the displayed block $A_+$; the same computation on the basis $q, e_1q$ of $\mathbb{B}q$ gives $A_-$. The trace of each block is $2Q_0$ by inspection and the determinant is computed as in the matrix realization,
+$\begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}$, and carrying out the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ gives the displayed block $A_+$; the same computation on the basis $\tilde\Pi_2, e_1\tilde\Pi_2$ of $\mathbb{B}\tilde\Pi_2$ gives $A_-$. The trace of each block is $2Q_0$ by inspection and the determinant is computed as in the matrix realization,
 
 $$
 \det A_+ = (Q_0 - iQ_3)(Q_0 + iQ_3) - (-Q_1 + iQ_2)(Q_1 + iQ_2) = N(\tilde{Q}),
@@ -264,7 +264,7 @@ $$
 
 which the block form of the theorem above gives at once. The eigenvalues themselves, the Cayley–Hamilton identity, the eigenspace dimensions and the doubling of the multiplicities that the square produces are the subject of *Biquaternion Spectral Theory*, later in this chapter, and are cited from there rather than developed here.
 
-**Remark (the irreducible submodules are the minimal left ideals).** The two blocks are the two minimal left ideals $I_1 = \mathbb{B}p$ and $I_2 = \mathbb{B}q$ of the algebra. Both are isomorphic to the module $V$ of *Biquaternion 2×2 Matrix Representation*, and the fact that $V$ is the only simple module is the classification of *Biquaternion Representation Theory*. The decomposition $\mathbb{B} = I_1 \oplus I_2$ is therefore the same fact as the two-block form of the regular matrix, read as ideals rather than as a matrix; the same decomposition is stated in *The Defining Module of the Biquaternion Algebra*, where the simple module is written $S$, as $\mathbb{B} \cong S \oplus S$.
+**Remark (the irreducible submodules are the minimal left ideals).** The two blocks are the two minimal left ideals $I_1 = \mathbb{B}\tilde\Pi_1$ and $I_2 = \mathbb{B}\tilde\Pi_2$ of the algebra. Both are isomorphic to the module $V$ of *Biquaternion 2×2 Matrix Representation*, and the fact that $V$ is the only simple module is the classification of *Biquaternion Representation Theory*. The decomposition $\mathbb{B} = I_1 \oplus I_2$ is therefore the same fact as the two-block form of the regular matrix, read as ideals rather than as a matrix; the same decomposition is stated in *The Defining Module of the Biquaternion Algebra*, where the simple module is written $S$, as $\mathbb{B} \cong S \oplus S$.
 
 ## The Determinant and the Trace
 
@@ -364,7 +364,7 @@ The left regular representation $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{
 
 The right regular representation $\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde{Q}$ is an anti-homomorphism and the regular representation of the opposite algebra. The naive identity $\rho_R(\tilde{Q}) = \rho_L(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\bar{\tilde{Q}}$ is the same statement, since $\rho_L(\bar{\tilde{Q}})^{\mathsf{T}} = \rho_L(\tilde{Q})$ — while what holds is $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D = D\rho_L(\bar{\tilde{Q}})D$ with $D = \operatorname{diag}(-1,1,1,1)$. The difference $\rho_L - \rho_R$ vanishes exactly on the centre $\mathbb{C}_{\mathbb{B}}$, which is the precise sense in which left and right differ because the algebra is non-commutative.
 
-The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}p$, $I_2 = \mathbb{B}q$ and $p = \tfrac{1}{2}(e_0 + ie_3)$, $q = \tfrac12(e_0 - ie_3)$; in the adapted basis $p, e_1p, q, e_1q$ the regular matrix is block diagonal with the two blocks $A_+$, $A_-$, each similar to $\Phi(\tilde{Q})$ and each a copy of the simple module $V$. So $\rho_L \cong V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, the right copy, of complex dimension $4$. Over $\mathbb{R}$ the regular representation is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars. The two-sided action of the unit-norm group on $\mathbb{M}_+$ preserves the norm form and gives a two-to-one homomorphism $SL_2(\mathbb{C}) \to SO^+(1,3)$ with kernel $\{\pm e_0\}$.
+The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ and $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is block diagonal with the two blocks $A_+$, $A_-$, each similar to $\Phi(\tilde{Q})$ and each a copy of the simple module $V$. So $\rho_L \cong V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, the right copy, of complex dimension $4$. Over $\mathbb{R}$ the regular representation is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars. The two-sided action of the unit-norm group on $\mathbb{M}_+$ preserves the norm form and gives a two-to-one homomorphism $SL_2(\mathbb{C}) \to SO^+(1,3)$ with kernel $\{\pm e_0\}$.
 
 ## Summary of Notation
 
@@ -382,8 +382,8 @@ The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}p$, $I
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_0$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subalgebra; its restriction carries the quaternion regular representation of *Quaternion Representations* |
-| $p = \tfrac{1}{2}(e_0 + ie_3)$, $q = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $p + q = e_0$, $pq = 0$ |
-| $I_1 = \mathbb{B}p$, $I_2 = \mathbb{B}q$ | The two minimal left ideals, $\mathbb{B} = I_1 \oplus I_2$ |
+| $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$ |
+| $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ | The two minimal left ideals, $\mathbb{B} = I_1 \oplus I_2$ |
 | $A_+(\tilde{Q}), A_-(\tilde{Q})$ | The two $2 \times 2$ blocks of $\rho_L$ in the adapted basis |
 | $u_+ = e_0 + e_3$, $u_- = e_1 + e_2$ | Conjugating elements, $A_\pm(\tilde{Q}) = \Phi(u_\pm)\Phi(\tilde{Q})\Phi(u_\pm)^{-1}$ |
 | $V = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, complex dimension $2$ |

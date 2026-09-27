@@ -1,3 +1,4 @@
+
 # __Complex Representations__
 
 ## Introduction
@@ -60,7 +61,7 @@ $$
 V \cong \mathbb{C}^{\oplus n}, \qquad \rho(z)(v_1, \dots, v_n) = (z v_1, \dots, z v_n).
 $$
 
-**Proof.** Let $V$ be a finite-dimensional representation. Choose a basis $(v_1, \dots, v_n)$. For each $i$, the map $z \mapsto z \cdot v_i$ is $\mathbb{C}$-linear, so $z \cdot v_i = \lambda_i(z) v_i$ for some scalar $\lambda_i(z) \in \mathbb{C}$. Since $1 \cdot v_i = v_i$, we have $\lambda_i(1) = 1$. Since $z \cdot (w \cdot v_i) = (zw) \cdot v_i$, we have $\lambda_i(z) \lambda_i(w) = \lambda_i(zw)$. It follows that $\lambda_i(z) = z$ for all $z$, because $\lambda_i$ is $\mathbb{C}$-linear and $\lambda_i(1) = 1$. Hence $z \cdot v_i = z v_i$ in the chosen basis, and the representation is a direct sum of copies of the regular representation. $\square$
+**Proof.** The map $z \mapsto z \cdot v$ is $\mathbb{C}$-linear in $z$ for each fixed $v$, because $\rho$ is a $\mathbb{C}$-algebra homomorphism; hence $z \cdot v = z\,(1 \cdot v) = z v$ for every $v$. In particular $z \cdot v_i = z v_i$ on a basis, so the action is the scalar multiplication $z \cdot v = zv$ and $V \cong \mathbb{C}^{\oplus n}$ as a representation. $\square$
 
 ### Irreducible Representations
 
@@ -161,7 +162,7 @@ This is the definition of the dual representation, written as a pairing.
 The **tensor product** of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{C}} W$ defined by
 
 $$
-z \cdot (v \otimes w) = (z \cdot v) \otimes w = v \otimes (z \cdot w).
+z \cdot (v \otimes u) = (z \cdot v) \otimes u = v \otimes (z \cdot u).
 $$
 
 The two definitions agree because $\mathbb{C}$ is commutative.

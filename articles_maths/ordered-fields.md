@@ -4,7 +4,7 @@
 
 An ordered field is a field equipped with a total order that is compatible with addition and multiplication. The compatibility has strong algebraic consequences: the field has characteristic $0$, it contains a canonical copy of $\mathbb{Q}$, every nonzero square is positive, and the positive elements form a cone closed under addition and multiplication. The extra structure that distinguishes one ordered field from another is whether the natural numbers are bounded above, and this **Archimedean** condition turns out to be equivalent to the density of $\mathbb{Q}$ and to embeddability into $\mathbb{R}$.
 
-This article develops ordered rings and fields, the positive cone that encodes the order, the order topology in the elementary form needed here, and the Archimedean and non-Archimedean cases, with $\mathbb{Q}$ and $F(t)$ as the two standard examples. The completion theory and the theory of real-closed fields are the subjects, and the general theory of topological rings is; here the topology is used only to record the compatibility of the order with the field operations.
+This article develops ordered rings and fields, the positive cone that encodes the order, and the Archimedean and non-Archimedean cases, with $\mathbb{Q}$ and $F(t)$ as the two standard examples. The completion theory is the subject of *Absolute Values, Valuations and Completions*, the theory of real-closed fields that of *Real-Closed and Complete Ordered Fields*, and the general theory of topological rings that of *Topological Rings and Fields*; the order-theoretic facts are stated by the order alone, so no distance, no topology and no continuity is used here.
 
 Throughout, an ordered field is written $F$ and its order $\leq$. The axioms of an ordered field are stated from scratch, so no prior theory of order is assumed; the theory of fields, characteristic, and prime fields is from *Fields*, and divisibility is from *Integral Domains*.
 
@@ -118,29 +118,29 @@ $$
 
 ---
 
-## The Order Topology
+## Order and the Field Operations
 
-### Definition
+The order is compatible with the field operations, and the facts needed later are the ones already proved in §*Basic Rules*: negation reverses the order, translation preserves it, and multiplication by a positive element preserves it. The interval notation used below is order-theoretic throughout.
 
-**Definition.** Let $F$ be an ordered field. The **order topology** on $F$ is the topology with basis the open intervals
-
-$$
-(a, b) = \{x \in F : a < x < b\}, \qquad a, b \in F,\ a < b.
-$$
-
-The rays $(a, \infty) = \{x : x > a\}$ and $(-\infty, a) = \{x : x < a\}$ are also open, being unions of intervals — $(a, \infty) = \bigcup_{b > a} (a,b)$, since $x + 1 > x$ for every $x$ — and they occur as basis elements in the usual description of the topology of $\mathbb{R}$; the bounded intervals alone already generate the same topology.
-
-**Theorem.** With the order topology, an ordered field $F$ is a **topological field**: the maps
+**Definition.** For $a < b$ in an ordered field $F$ the **open interval** is the set
 
 $$
-(x, y) \mapsto x + y, \qquad x \mapsto -x, \qquad (x,y) \mapsto xy, \qquad x \mapsto x^{-1} \ (\text{on } F^\times)
+(a, b) = \{x \in F : a < x < b\},
 $$
 
-are continuous, and $F$ is a Hausdorff space.
+and the **rays** are $(a,\infty)=\{x : x>a\}$ and $(-\infty,a)=\{x:x<a\}$.
 
-**Proof.** Continuity of addition and negation follows from translation invariance: the preimage of $(a,b)$ under $x \mapsto x+c$ is $(a-c, b-c)$, an open interval, and addition is continuous jointly by the estimate that $x' \in (x - \epsilon, x+\epsilon)$ and $y' \in (y - \epsilon, y+\epsilon)$ give $x'+y' \in (x+y-2\epsilon, x+y+2\epsilon)$. Continuity of multiplication uses $x'y' - xy = x'(y'-y) + y(x'-x)$ and the local boundedness of $x'$ and $y$; continuity of inversion on $F^\times$ follows from $x^{-1} - y^{-1} = (y - x)(xy)^{-1}$ and the continuity of multiplication, since $xy$ is bounded away from $0$ near a nonzero point. Hausdorffness: if $x < y$ then $\tfrac{x+y}{2}$ satisfies $x < \tfrac{x+y}{2} < y$, and the open rays $(-\infty, \tfrac{x+y}{2})$ and $(\tfrac{x+y}{2}, \infty)$ are disjoint neighborhoods of $x$ and $y$ respectively. $\square$
+**Proposition.** Let $F$ be an ordered field and $a, b, c \in F$.
 
-**Corollary.** The order topology on $\mathbb{Q}$ is the usual metric topology, with basis the intervals with rational endpoints, and every rational point has a countable neighborhood basis. The same holds for $\mathbb{R}$. The general theory, including uniformity, completeness and the analogue for valued fields, is developed .
+**(a)** If $a < b$ then $-a > -b$ and $a + c < b + c$.
+
+**(b)** If $a < b$ and $c > 0$ then $ac < bc$.
+
+**(c)** $x \in (a,b)$ if and only if $a < x < b$; an interval is order-convex, and it is nonempty exactly when $a < b$, since it then contains $(a+b)/2$.
+
+*Proof.* (a) and (b) restate (O1) and the proposition of §*Ordered Rings and Fields*; (c) is the definition together with (d) of the basic-rules theorem. $\square$
+
+No distance, no metric and no topology is used here: the topology generated by these intervals, its interaction with the field operations, and the metric and uniform structure it carries belong to *Topological Rings and Fields*, and the completeness of an ordered field belongs to *Real-Closed and Complete Ordered Fields*. The statements above are read off the order alone.
 
 ---
 
@@ -162,7 +162,7 @@ Equivalently, the set $\{n \cdot 1 : n \geq 1\}$ is unbounded above in $F$.
 
 **(b)** For every $\epsilon > 0$ there is $n \geq 1$ with $1/n < \epsilon$.
 
-**(c)** $\mathbb{Q}$ is dense in $F$: for all $a < b$ in $F$ there is $q \in \mathbb{Q}$ with $a < q < b$.
+**(c)** $\mathbb{Q}$ is order-dense in $F$: for all $a < b$ in $F$ there is $q \in \mathbb{Q}$ with $a < q < b$.
 
 **(d)** There is no element $x \in F$ with $x > n$ for all $n \geq 1$, and no element $x > 0$ with $x < 1/n$ for all $n \geq 1$.
 
@@ -170,11 +170,11 @@ Equivalently, the set $\{n \cdot 1 : n \geq 1\}$ is unbounded above in $F$.
 
 (b) $\Rightarrow$ (c): given $a < b$, first choose $n$ with $1/n < b - a$; then the multiples $k/n$ form a chain of step $1/n < b-a$, so some $k$ has $k/n \leq a < (k+1)/n \leq a + 1/n < b$, and $(k+1)/n \in \mathbb{Q}$ lies in $(a,b)$.
 
-(c) $\Rightarrow$ (b): if $\mathbb{Q}$ is dense and $\epsilon > 0$, the interval $(0,\epsilon)$ contains a rational $q$ with $q > 0$; writing $q = m/n$ with $m \geq 1$ gives $1/n \leq m/n = q < \epsilon$. $\square$
+(c) $\Rightarrow$ (b): if $\mathbb{Q}$ is order-dense and $\epsilon > 0$, the interval $(0,\epsilon)$ contains a rational $q$ with $q > 0$; writing $q = m/n$ with $m \geq 1$ gives $1/n \leq m/n = q < \epsilon$. $\square$
 
 **Corollary.** Every Archimedean ordered field contains $\mathbb{Q}$ as an ordered subfield, and in an Archimedean ordered field every element is the supremum of the rationals below it and the infimum of the rationals above it.
 
-**Proof.** Containment of $\mathbb{Q}$ is the basic-rules theorem; density is (c); the last statement is the definition of density together with the order. $\square$
+**Proof.** Containment of $\mathbb{Q}$ is the basic-rules theorem; order-density is (c); the last statement is the definition of order-density together with the order. $\square$
 
 ### Non-Archimedean Examples
 
@@ -248,11 +248,11 @@ is an injective order-preserving field homomorphism; hence $F$ is isomorphic, as
 
 ## Summary
 
-An ordered ring is a commutative ring with a total order compatible with addition and multiplication, and an ordered field is an ordered ring that is a field. In an ordered field $1 > 0$, the characteristic is $0$, every nonzero square is positive, inverses of positive elements are positive, the order is dense, and $-1$ is not a sum of squares; the last condition is formal reality, and a field is orderable exactly when it is formally real (Artin–Schreier). An ordering is equivalent to a choice of positive cone $P$, a subset closed under addition and multiplication and making $F = (-P) \cup \{0\} \cup P$ a disjoint union; equivalently the order is determined by the positive cone, and every element of a field of characteristic different from $2$ is a difference of squares.
+An ordered ring is a commutative ring with a total order compatible with addition and multiplication, and an ordered field is an ordered ring that is a field. In an ordered field $1 > 0$, the characteristic is $0$, every nonzero square is positive, inverses of positive elements are positive, the order is order-dense, and $-1$ is not a sum of squares; the last condition is formal reality, and a field is orderable exactly when it is formally real (Artin–Schreier). An ordering is equivalent to a choice of positive cone $P$, a subset closed under addition and multiplication and making $F = (-P) \cup \{0\} \cup P$ a disjoint union; equivalently the order is determined by the positive cone, and every element of a field of characteristic different from $2$ is a difference of squares.
 
-The order topology has the open intervals as a basis, makes the field a Hausdorff topological field, and agrees with the usual topology on $\mathbb{Q}$ and $\mathbb{R}$; the general theory of topological fields is. An ordered field is Archimedean when the natural numbers are unbounded, equivalently when $\mathbb{Q}$ is dense, equivalently when every positive element exceeds some $1/n$, equivalently when there is no infinite element and no infinitesimal; $F(t)$ ordered by leading coefficients and $F((t))$ ordered lexicographically are the standard non-Archimedean examples, with $t$ infinite in the former and infinitesimal in the latter. Every ordered field contains a unique copy of $\mathbb{Q}$ as its prime field, with the unique ordering of $\mathbb{Q}$, and every Archimedean ordered field embeds as an ordered subfield of $\mathbb{R}$, so the Archimedean ordered fields are exactly the subfields of $\mathbb{R}$.
+The order is compatible with the field operations — negation reverses it, translation preserves it and multiplication by a positive element preserves it — and it is order-dense in the sense that between any two elements there is a third; the topology built on the order, and the compatibility of that topology with the field operations, belong to *Topological Rings and Fields*. An ordered field is Archimedean when the natural numbers are unbounded, equivalently when $\mathbb{Q}$ is order-dense, equivalently when every positive element exceeds some $1/n$, equivalently when there is no infinite element and no infinitesimal; $F(t)$ ordered by leading coefficients and $F((t))$ ordered lexicographically are the standard non-Archimedean examples, with $t$ infinite in the former and infinitesimal in the latter. Every ordered field contains a unique copy of $\mathbb{Q}$ as its prime field, with the unique ordering of $\mathbb{Q}$, and every Archimedean ordered field embeds as an ordered subfield of $\mathbb{R}$, so the Archimedean ordered fields are exactly the subfields of $\mathbb{R}$.
 
-| Ordered field | Archimedean | $\mathbb{Q}$ dense | Contains infinitesimals |
+| Ordered field | Archimedean | $\mathbb{Q}$ order-dense | Contains infinitesimals |
 |---|---|---|---|
 | $\mathbb{Q}$ | yes | yes | no |
 | $\mathbb{R}$ | yes | yes | no |
@@ -268,7 +268,7 @@ The order topology has the open intervals as a basis, makes the field a Hausdorf
 | $R$ | Ordered ring |
 | $\leq$ | Total order compatible with the field operations |
 | $P = \{x : x > 0\}$ | Positive cone |
-| $(a,b)$ | Open interval, basis element of the order topology |
+| $(a,b)$ | Open interval in the order |
 | $n \cdot 1$ | Integer multiple of the identity, $n \in \mathbb{Z}$ |
 | $\mathbb{Q}$ | Prime field of every ordered field; uniquely ordered |
 | $\mathbb{R}$ | Largest Archimedean ordered field (complete) |
@@ -278,12 +278,9 @@ The order topology has the open intervals as a basis, makes the field a Hausdorf
 | $\operatorname{Frac}(R)$ | Fraction field |
 | $\sup$, $\inf$ | Supremum, infimum in an ordered set |
 
-
-
 ## Further Reading
 
 - Serge Lang, *Algebra* (Springer, 3rd ed. 2002), for ordered fields, formally real fields and the Artin–Schreier theorem.
-- Nathan Jacobson, *Basic Algebra I* (Dover, 2nd ed. 2009), for ordered rings, positive cones and the order topology.
+- Nathan Jacobson, *Basic Algebra I* (Dover, 2nd ed. 2009), for ordered rings, positive cones and the embedding of the Archimedean ordered fields in $\mathbb{R}$.
 - Alexander Prestel and Charles N. Delzell, *Positive Polynomials* (Springer, 2001), for the real spectrum and the orderings of a field.
 - Norman L. Alling, *Foundations of Analysis over Surreal Number Fields* (North-Holland, 1987), for non-Archimedean ordered fields and formal power series.
-- James R. Munkres, *Topology* (Prentice Hall, 2nd ed. 2000), for the order topology, its basis of open intervals, and the topological properties of $\mathbb{Q}$ and $\mathbb{R}$.

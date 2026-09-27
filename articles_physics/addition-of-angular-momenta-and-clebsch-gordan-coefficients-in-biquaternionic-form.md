@@ -78,7 +78,7 @@ $$
 \tilde S^2=\tfrac{3\hbar^2}{4}e_0 ,
 $$
 
-the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $P_\pm(\hat n)=\tfrac12(e_0\pm i\hat n)$, on which $\hat n_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\Phi$ of the companion articles, $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
+the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat n)=\tfrac12(e_0\pm i\hat n)$, on which $\hat n_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\Phi$ of the companion articles, $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
 
 The material point for what follows is that the fundamental module of $\mathbb{B}$ is two-dimensional, so the operators above are the only spin operators the algebra carries internally. Composite angular momenta require more than one factor of the algebra.
 
@@ -132,7 +132,7 @@ P_{\hat m}\otimes P_{\hat n}
 =\tfrac14\left(e_0\otimes e_0+i\hat m_ke_k\otimes e_0+i e_0\otimes\hat n_le_l-\hat m_k\hat n_l\,e_k\otimes e_l\right),
 $$
 
-which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $P_\pm(\hat z)\otimes P_\pm(\hat z)$.
+which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi(\pm\hat z)\otimes \tilde\Pi(\pm\hat z)$.
 
 One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article *Biquaternion Representation Theory* records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The angular momenta $\tilde J_k^{(1)},\tilde J_k^{(2)}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.
 

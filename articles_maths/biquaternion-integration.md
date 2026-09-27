@@ -430,9 +430,7 @@ The following questions are not answered in this article and are left for later 
 
 3. **The Cauchy integral formula for other domains.** What is the form of the Cauchy integral formula for domains with non-smooth boundaries, or for domains that are not simply connected?
 
-4. **The relation to the polar representations.** How do the polar representations of the biquaternion algebra interact with the integration theory?
-
-5. **Applications.** What are the applications of the biquaternion integration theory to the solution of partial differential equations?
+4. **Applications.** What are the applications of the biquaternion integration theory to the solution of partial differential equations?
 
 6. **The general subspace.** Can the integration theory be extended from $\mathbb{H}_{\mathbb{B}}$ to the full biquaternion algebra $\mathbb{B}$ and to its indefinite subspaces, with a canonical choice of fundamental solution for each?
 

@@ -24,9 +24,9 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{Z}/6\mathbb{Z}$ | $0, 1, 3, 4$ | $4$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/12\mathbb{Z}$ | $0, 1, 4, 9$ | $4$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/n\mathbb{Z}$ | one for each factorisation into coprime parts | $2^{\omega(n)}$ | *Modular Arithmetic and the Ring of Residues* |
-| $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | $0, 1, e_+, e_-$ | $4$ | *Split-Complex Algebra* |
+| $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | $0, 1, \pi_+, \pi_-$ | $4$ | *Split-Complex Algebra* |
 | $\mathbb{R}[x]/(x^2-1)$ | $0, 1$, the two class idempotents | $4$ | *Examples of Rings and Fields* |
-| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $0, e_+, e_-, e_0$ | $4$ | *Split-Biquaternion Algebra* |
+| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $0, \pi_+, \pi_-, e_0$ | $4$ | *Split-Biquaternion Algebra* |
 | $\mathbb{Q}[C_3]$ | $0, 1$ and the two minimal ones | $4$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | the projections | infinitely many | *Matrix Algebras* |
 | $\mathbb{B}$, the biquaternions | the complex multiples of the idempotents | infinitely many | *Biquaternion Ideals and Peirce Decomposition* |
@@ -40,8 +40,8 @@ The dichotomy the table records is between the rings that are connected, with $0
 |---|---|---|---|
 | any ring | $e$ | $R = Re \oplus R(1-e)$ | *Rings*, §§8–9 |
 | $\mathbb{Z}/6\mathbb{Z}$ | $3$ | $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ | *Modular Arithmetic and the Ring of Residues* |
-| $\mathbb{D}$ | $e_+$ | $\mathbb{D} \cong \mathbb{R} e_+ \oplus \mathbb{R} e_- \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
-| $\mathbb{H}_{\mathbb{D}}$ | $e_+$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}e_+ \oplus \mathbb{H}e_-$ | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{D}$ | $\pi_+$ | $\mathbb{D} \cong \mathbb{R} \pi_+ \oplus \mathbb{R} \pi_- \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
+| $\mathbb{H}_{\mathbb{D}}$ | $\pi_+$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\pi_+ \oplus \mathbb{H}\pi_-$ | *Split-Biquaternion Zero Divisors* |
 | $R \times S$ | $(1,0)$ | the product by construction | *Examples of Rings and Fields* |
 | $\mathbb{Q}[C_3]$ | the minimal idempotents | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | *Examples of Rings and Fields* |
 | $\mathbb{R}[x]/(x^2-1)$ | $e_{\pm}$ | $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$ | *Examples of Rings and Fields* |

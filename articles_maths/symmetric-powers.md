@@ -8,7 +8,7 @@ The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, the d
 
 The symmetric power is the commutative counterpart of the tensor power. The tensor power $M^{\otimes n}$ records an ordered $n$-tuple of vectors; the symmetric power $\operatorname{Sym}^n M$ records an unordered $n$-tuple, so that $x \otimes y$ and $y \otimes x$ become the same element. It is the module that receives the **symmetric multilinear** maps from $M^n$, just as the tensor power receives the multilinear ones.
 
-An essential point, and one that is easy to miss over a general ring, is that there are two natural candidates for "the unordered $n$-tuple": the module of vectors fixed by the permutation action, and the module of coinvariants, in which the action is divided out. Over a field of characteristic zero, or more generally whenever $n!$ is invertible, the two coincide. Over a general commutative ring they do not, and the symmetric power is by definition the coinvariant one. The refined object that repairs the difference is the **divided power**, treated .
+An essential point, and one that is easy to miss over a general ring, is that there are two natural candidates for "the unordered $n$-tuple": the module of vectors fixed by the permutation action, and the module of coinvariants, in which the action is divided out. Over a field of characteristic zero, or more generally whenever $n!$ is invertible, the two coincide. Over a general commutative ring they do not, and the symmetric power is by definition the coinvariant one. The refined object that repairs the difference is the **divided power**, treated in *Divided Powers*.
 
 ## Multilinear and Symmetric Maps
 

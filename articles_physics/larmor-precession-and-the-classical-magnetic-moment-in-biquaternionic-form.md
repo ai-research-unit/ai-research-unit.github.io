@@ -66,13 +66,13 @@ The classical moment of a body in rigid rotation is the case that fixes the gyro
 
 $$
 \boldsymbol{\mu} = \frac{1}{2}\int \rho_c(\mathbf{r})\,\mathbf{r}\times(\boldsymbol{\omega}\times\mathbf{r})\,d^3x
-= \frac{1}{2}\,\hat{\Pi}\,\boldsymbol{\omega},
+= \frac{1}{2}\,\hat{\mathcal{M}}\,\boldsymbol{\omega},
 $$
 
 where
 
 $$
-\hat{\Pi}_{ij} = \int \rho_c(\mathbf{r})\left(r^2\delta_{ij} - r_i r_j\right)d^3x
+\hat{\mathcal{M}}_{ij} = \int \rho_c(\mathbf{r})\left(r^2\delta_{ij} - r_i r_j\right)d^3x
 $$
 
 is the **charge inertia tensor**, the charge-weighted analogue of the mass inertia tensor
@@ -81,7 +81,7 @@ $$
 \hat{I}_{ij} = \int \rho_m(\mathbf{r})\left(r^2\delta_{ij} - r_i r_j\right)d^3x .
 $$
 
-The mechanical angular momentum is $\mathbf{L} = \hat{I}\,\boldsymbol{\omega}$. The two tensors are the entire classical input of the gyromagnetic problem: whether the ratio of the moment to the angular momentum is the orbital value $q/2m$ or something else is decided by whether $\hat{\Pi}$ is proportional to $\hat{I}$. That question is taken up in the article *The Classical Origin of g = 2 in Biquaternionic Form*; here it is enough to record that the moment of a rigid rotor is a pure real quaternion like any other axial vector.
+The mechanical angular momentum is $\mathbf{L} = \hat{I}\,\boldsymbol{\omega}$. The two tensors are the entire classical input of the gyromagnetic problem: whether the ratio of the moment to the angular momentum is the orbital value $q/2m$ or something else is decided by whether $\hat{\mathcal{M}}$ is proportional to $\hat{I}$. That question is taken up in the article *The Classical Origin of g = 2 in Biquaternionic Form*; here it is enough to record that the moment of a rigid rotor is a pure real quaternion like any other axial vector.
 
 ### The Moment of a Spin
 
@@ -385,7 +385,7 @@ The gyromagnetic ratio is $\gamma = g\,q/2m$, with $g = 1$ for a convective mome
 | $\mathbf{B} = B_k e_k = \mu\mathbf{H}$ | Magnetic induction (pure real quaternion) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion |
 | $\mathbf{j}, \rho_c, \rho_m$ | Current density; charge and mass densities |
-| $\hat{\Pi}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
+| $\hat{\mathcal{M}}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
 | $\hat{I}_{ij} = \int\rho_m(r^2\delta_{ij}-r_ir_j)$ | Mass inertia tensor |
 | $\mathbf{L} = \hat{I}\boldsymbol{\omega}$ | Mechanical angular momentum |
 | $\gamma$, $g$ | Gyromagnetic ratio; gyromagnetic factor ($\gamma = g\,q/2m$) |

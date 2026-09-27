@@ -191,8 +191,8 @@ The theory of this article is combinatorial and topological; the analysis of the
 
 - The **measure-theoretic boundary** of the Bass–Serre tree, the **harmonic analysis** of the action of the fundamental group, the **random walks** on the tree and the **Poisson boundary** are *Analysis on Groups* .
 - The **spectral theory** of the graph Laplacian of a quotient graph of groups, the **zeta functions** of a graph and the **prime geodesic** counting for a tree are Part III.
-- The **measured group theory** of the splittings, the **orbit equivalence** of the actions and the **cost** are.
-- The **Bruhat–Tits tree** and the **buildings** areand with this article; the tree is the rank-one case of the building and the dictionary of this article is the genus-one case of the building dictionary.
+- The **measured group theory** of the splittings, the **orbit equivalence** of the actions and the **cost** are Part III's.
+- The **Bruhat–Tits tree** and the **buildings** are treated with this article; the tree is the rank-one case of the building and the dictionary of this article is the genus-one case of the building dictionary.
 - What is *not* deferred: graphs of groups and their fundamental groups; the Bass–Serre tree and the structure theorem; the normal form theorems and Britton's lemma; the subgroup theorem and the Kurosh theorem as consequences; the fixed-point criteria and property (FA); the finiteness and word-problem statements; the ends and the Stallings and Dunwoody theorems; and the arithmetic examples with the Euler characteristic formula.
 
 ## Summary

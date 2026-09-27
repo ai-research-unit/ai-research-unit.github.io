@@ -13,7 +13,7 @@ The representations we discuss in this article are:
 1. **Split complex four-vector representation.** A split biquaternion as a split complex four-vector.
 2. **Idempotent representation.** A split biquaternion as a pair of ordinary quaternions.
 3. **Module representation.** A split biquaternion as an operator on a module over the quaternion algebra.
-4. **Clifford algebra representation.** A split biquaternion as an element of a Clifford algebra of split signature.
+4. **Clifford algebra representation.** A split biquaternion as an element of a real Clifford algebra.
 
 The matrix representation, which is the primary algebraic representation in the biquaternion case, is **not** available in the split biquaternion case in the same form. The reason is discussed in a separate section: the split biquaternion algebra is not isomorphic to a matrix algebra over $\mathbb{R}$ or over $\mathbb{D}$. The idempotent representation plays the role that the matrix representation plays in the biquaternion case, and it is the primary representation of the split biquaternion algebra.
 
@@ -33,13 +33,13 @@ with $e_0 = 1$ and $e_1, e_2, e_3$ the quaternion units. The split complex unit 
 
 The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.
 
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.
 
 ## The Split Complex Four-Vector Representation
 
@@ -137,13 +137,13 @@ It is also the representation in which the split biquaternion looks least like a
 The **idempotent representation** of a split biquaternion is the expression
 
 $$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
-where $e_\pm = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra, and
+where $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra, and
 
 $$
-\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}
+\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}
 $$
 
 are ordinary quaternions. The two quaternions $\tilde{Q}_\pm$ are the **idempotent components** of $\tilde{Q}$.
@@ -161,10 +161,10 @@ is an algebra isomorphism, where the multiplication on $\mathbb{H} \oplus \mathb
 Writing $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu = q_\mu + j q'_\mu$,
 
 $$
-\tilde{Q}_+ = \tilde{Q} e_+ = \sum_\mu Q_\mu e_\mu e_+ = \sum_\mu Q_\mu e_+ e_\mu = \sum_\mu (Q_\mu e_+) e_\mu.
+\tilde{Q}_+ = \tilde{Q} \tilde\Pi_+ = \sum_\mu Q_\mu e_\mu \tilde\Pi_+ = \sum_\mu Q_\mu \tilde\Pi_+ e_\mu = \sum_\mu (Q_\mu \tilde\Pi_+) e_\mu.
 $$
 
-Since $Q_\mu e_+ = (q_\mu + j q'_\mu) e_+ = (q_\mu + q'_\mu) e_+$, we have
+Since $Q_\mu \tilde\Pi_+ = (q_\mu + j q'_\mu) \tilde\Pi_+ = (q_\mu + q'_\mu) \tilde\Pi_+$, we have
 
 $$
 \tilde{Q}_+ = \sum_\mu (q_\mu + q'_\mu) e_\mu,
@@ -185,7 +185,7 @@ $$
 Conversely, given two real quaternions $\tilde{Q}_\pm = \sum_\mu q_\mu^\pm e_\mu$, the split biquaternion is recovered by
 
 $$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
 and the coefficients in the standard basis are
@@ -220,7 +220,7 @@ The split complex conjugation is the map that swaps the two components. This is 
 **Norm form.** The norm form is
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-,
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \bar{\tilde{Q}}_\pm$ is the ordinary quaternion norm, which is a non-negative real number. In the standard basis, this is
@@ -255,24 +255,24 @@ The idempotent representation plays the role in the split biquaternion algebra t
 
 **It simplifies the zero divisor analysis.** The zero divisor set is the union of the two subspaces $Z_+ = \{\tilde{Q}_+ = 0\}$ and $Z_- = \{\tilde{Q}_- = 0\}$, which are four-dimensional linear subspaces.
 
-**It connects to the split complex algebra.** The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is the extension of the idempotent decomposition of $\mathbb{D}$. The two idempotents $e_+$ and $e_-$ are the same in both algebras, and they are the source of the semisimple structure.
+**It connects to the split complex algebra.** The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is the extension of the idempotent decomposition of $\mathbb{D}$. The two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are the same in both algebras, and they are the source of the semisimple structure.
 
 ## The Module Representation
 
 ### Definition
 
-The split biquaternion algebra acts on itself by left multiplication. This gives a representation of $\mathbb{H}_{\mathbb{D}}$ on the vector space $\mathbb{H}_{\mathbb{D}}$, which is a module over $\mathbb{H}$ in the following sense: the idempotent decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H} e_+ \oplus \mathbb{H} e_-$ exhibits $\mathbb{H}_{\mathbb{D}}$ as a direct sum of two copies of the quaternion algebra $\mathbb{H}$, each of which is a left module over $\mathbb{H}$.
+The split biquaternion algebra acts on itself by left multiplication. This gives a representation of $\mathbb{H}_{\mathbb{D}}$ on the vector space $\mathbb{H}_{\mathbb{D}}$, which is a module over $\mathbb{H}$ in the following sense: the idempotent decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$ exhibits $\mathbb{H}_{\mathbb{D}}$ as a direct sum of two copies of the quaternion algebra $\mathbb{H}$, each of which is a left module over $\mathbb{H}$.
 
 The **module representation** of $\mathbb{H}_{\mathbb{D}}$ is the pair of representations
 
 $$
-\rho_\pm : \mathbb{H}_{\mathbb{D}} \to \mathrm{End}_{\mathbb{H}}(\mathbb{H} e_\pm)
+\rho_\pm : \mathbb{H}_{\mathbb{D}} \to \mathrm{End}_{\mathbb{H}}(\mathbb{H} \tilde\Pi_\pm)
 $$
 
 given by
 
 $$
-\rho_\pm(\tilde{Q})(\tilde{R} e_\pm) = \tilde{Q} \tilde{R} e_\pm.
+\rho_\pm(\tilde{Q})(\tilde{R} \tilde\Pi_\pm) = \tilde{Q} \tilde{R} \tilde\Pi_\pm.
 $$
 
 In the idempotent basis, this is
@@ -281,7 +281,7 @@ $$
 \rho_\pm(\tilde{Q}) = \tilde{Q}_\pm,
 $$
 
-so the representation $\rho_\pm$ is evaluation at the idempotent $e_\pm$.
+so the representation $\rho_\pm$ is evaluation at the idempotent $\tilde\Pi_\pm$.
 
 ### Properties
 
@@ -295,33 +295,31 @@ so the representation $\rho_\pm$ is evaluation at the idempotent $e_\pm$.
 
 ### Definition
 
-The split biquaternion algebra is isomorphic to the even subalgebra of a Clifford algebra of split signature:
+The split biquaternion algebra is isomorphic to a real Clifford algebra:
 
 $$
-\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{2,2}^+(\mathbb{R}) \cong \mathrm{Cl}_{1,1,1,1}^+(\mathbb{R}),
+\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,3}(\mathbb{R}) \cong \mathrm{Cl}_{1,2}(\mathbb{R}),
 $$
 
-depending on the sign convention. The Clifford algebra $\mathrm{Cl}_{2,2}$ is generated by four elements $\gamma^0, \gamma^1, \gamma^2, \gamma^3$ satisfying
+the Clifford algebras of a three-dimensional form, definite or split according to the convention. The Clifford algebra $\mathrm{Cl}_{0,3}$ is generated by three elements $\gamma^1, \gamma^2, \gamma^3$ satisfying
 
 $$
-\gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 \eta^{\mu\nu},
+\gamma^k \gamma^l + \gamma^l \gamma^k = -2 \delta^{kl},
 $$
 
-where $\eta = \mathrm{diag}(-1, -1, +1, +1)$ (or another split signature, depending on the convention). The even subalgebra has real dimension $2^3 = 8$, matching the real dimension of $\mathbb{H}_{\mathbb{D}}$.
-
-The isomorphism is given by mapping the quaternion units to the bivectors:
+and it is isomorphic to $\mathbb{H} \oplus \mathbb{H}$, of real dimension $8$. The isomorphism is given by mapping the quaternion units to the generators and the split complex unit to the volume element:
 
 $$
-e_1 \mapsto \gamma^2 \gamma^3, \qquad e_2 \mapsto \gamma^3 \gamma^0, \qquad e_3 \mapsto \gamma^0 \gamma^1,
+e_k \mapsto \gamma^k \quad (k = 1,2,3), \qquad j \mapsto \omega = \gamma^1 \gamma^2 \gamma^3 ,
 $$
 
-and the split complex unit $j$ to another bivector, for example $\gamma^0 \gamma^2$. The precise assignment depends on the signature and the convention.
+because the generators satisfy $\gamma_k^2 = -1$ exactly as the quaternion units do, while the volume element of an odd Clifford algebra is central and satisfies $\omega^2 = +1$, exactly as $j$ does. The even subalgebra is $\mathrm{Cl}_{0,3}^+ \cong \mathbb{H}$, the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.
 
 ### Properties
 
-**Multiplication.** The Clifford product of two even elements is even, so the even subalgebra is closed under multiplication. Under the isomorphism, the Clifford product corresponds to the split biquaternion product.
+**Multiplication.** Under the isomorphism the Clifford product corresponds to the split biquaternion product, the generators multiplying as the quaternion units and the volume element commuting with them.
 
-**Norm.** The Clifford norm on the even subalgebra corresponds to the split biquaternion norm form.
+**Norm.** The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm form. The full norm form $N(\tilde{Q}) = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\bar{\tilde{Q}}$.
 
 ### Why the Clifford Algebra Representation Is Useful
 
@@ -343,6 +341,18 @@ The reason is the following. The quaternion algebra $\mathbb{H}$ is a division a
 The split biquaternion algebra is $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H} \cong \mathbb{H} \oplus \mathbb{H}$. It is semisimple but not simple, and its simple summands are both isomorphic to $\mathbb{H}$. It is not isomorphic to a matrix algebra over a field, because a matrix algebra over a field is simple (for $M_n$ with $n \geq 1$), and $\mathbb{H}_{\mathbb{D}}$ is not simple.
 
 The algebra $\mathbb{H}_{\mathbb{D}}$ is isomorphic to a subalgebra of $M_2(\mathbb{H})$, namely the subalgebra of matrices of the form $\begin{pmatrix} \tilde{Q}_+ & 0 \\ 0 & \tilde{Q}_- \end{pmatrix}$ with $\tilde{Q}_\pm \in \mathbb{H}$. This is a faithful representation, but it is not surjective onto $M_2(\mathbb{H})$.
+
+### The Degenerate System of Matrix Units
+
+A **system of matrix units** in an algebra $A$ is a family $\{E_{ij}\}_{i,j=1}^{n}$ with $E_{ij} E_{kl} = \delta_{jk} E_{il}$ and $\sum_i E_{ii} = 1$. In $\mathbb{H}_{\mathbb{D}}$ the only available system is the degenerate one
+
+$$
+E_{11} = \tilde\Pi_+, \qquad E_{22} = \tilde\Pi_-, \qquad E_{12} = E_{21} = 0,
+$$
+
+which satisfies $E_{11}^2 = E_{11}$, $E_{22}^2 = E_{22}$, $E_{11} E_{22} = 0$ and $E_{11} + E_{22} = 1$. There is no nonzero off-diagonal matrix unit: an element $u$ with $\tilde\Pi_+ u \tilde\Pi_- \neq 0$ would produce a nonzero element of the ideal $\mathbb{H} \tilde\Pi_+$ annihilated on the left by $\tilde\Pi_+$, which is impossible because $\tilde\Pi_+ \mathbb{H} \tilde\Pi_+ = \mathbb{H} \tilde\Pi_+ \cong \mathbb{H}$ is a division ring.
+
+This is exactly the difference from the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H} \cong M_2(\mathbb{C})$, where the matrix units $E_{ij}$ are all nonzero and generate the whole matrix algebra. The absence of the off-diagonal units reflects the fact that $\mathbb{H}_{\mathbb{D}}$ is a *product* of two division algebras rather than a full matrix algebra, and it is why the diagonal image in $M_2(\mathbb{H})$ carries no off-diagonal entries.
 
 ### Comparison with the Biquaternion Case
 
@@ -375,7 +385,7 @@ This is a linear isomorphism $\mathbb{R}^8 \to \mathbb{H} \oplus \mathbb{H}$.
 
 **Idempotent and module.** The idempotent representation and the module representation are the same representation viewed from two different angles: the idempotent representation is the pair of components, and the module representation is the action of the algebra on each component.
 
-**Idempotent and Clifford algebra.** The idempotent representation and the Clifford algebra representation are related by the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{2,2}^+$. The idempotents $e_\pm$ correspond to the projectors onto the two summands of the Clifford algebra.
+**Idempotent and Clifford algebra.** The idempotent representation and the Clifford algebra representation are related by the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,3}$. The idempotents $\tilde\Pi_\pm$ correspond to the projectors onto the two summands of the Clifford algebra.
 
 **All four.** The four representations are different ways of presenting the same algebra. The idempotent representation is the primary one, because it reveals the semisimple structure and simplifies the norm form, the invertibility criterion, and the zero divisor analysis. The four-vector representation is the most familiar from the tensor formalism. The module and Clifford algebra representations place the algebra in the larger contexts of module theory and Clifford algebra theory.
 
@@ -384,7 +394,7 @@ This is a linear isomorphism $\mathbb{R}^8 \to \mathbb{H} \oplus \mathbb{H}$.
 Each representation involves a choice, and different choices give equivalent but not identical representations.
 
 - **Four-vector representation:** the choice of the ordering of the components.
-- **Idempotent representation:** the choice of the idempotents $e_+$ and $e_-$. There is a unique pair of nontrivial idempotents in $\mathbb{D}$, so there is no real choice here; the representation is canonical.
+- **Idempotent representation:** the choice of the idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$. There is a unique pair of nontrivial idempotents in $\mathbb{D}$, so there is no real choice here; the representation is canonical.
 - **Module representation:** the choice of the module (left or right), which is a matter of convention.
 - **Clifford algebra representation:** the choice of the Clifford generators and the signature.
 
@@ -396,12 +406,40 @@ Different choices give representations that are related by conjugation or by a c
 |---|---|---|
 | Split complex four-vector | $Q^\mu = (Q^0, \mathbf{Q})$ | Tensor formalism, indefinite quadratic forms |
 | Idempotent | $(\tilde{Q}_+, \tilde{Q}_-) \in \mathbb{H} \oplus \mathbb{H}$ | Structure, norm form, invertibility, zero divisors |
-| Module | Operator on $\mathbb{H} e_+ \oplus \mathbb{H} e_-$ | Representation theory |
-| Clifford algebra | Element of $\mathrm{Cl}_{2,2}^+$ | Clifford algebra classification, geometry |
+| Module | Operator on $\mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$ | Representation theory |
+| Clifford algebra | Element of $\mathrm{Cl}_{0,3} \cong \mathrm{Cl}_{1,2}$ | Clifford algebra classification, geometry |
 
 The four-vector representation is the one most familiar from the tensor formalism. The idempotent representation is the primary algebraic representation, and it is the one that reveals the semisimple structure of the algebra. The module and Clifford algebra representations place the algebra in the larger contexts of representation theory and Clifford algebra theory.
 
 Unlike the biquaternion algebra, the split biquaternion algebra does **not** have a faithful matrix representation over a field or over $\mathbb{D}$ that is surjective. The idempotent representation plays the role that the matrix representation plays in the biquaternion case.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{D}$ | Split complex algebra, unit $j$, $j^2 = +1$ |
+| $\mathbb{H}$ | Quaternion algebra |
+| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H} \cong \mathbb{H} \oplus \mathbb{H}$ |
+| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis of $\mathbb{H}_{\mathbb{D}}$ over $\mathbb{D}$ |
+| $j$ | Split complex unit, $j^2 = +1$, central |
+| $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | General split biquaternion |
+| $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient, $q_\mu, q'_\mu \in \mathbb{R}$ |
+| $Q^\mu = (Q^0, \mathbf{Q})$ | Four-vector components; $Q^0$ the scalar component |
+| $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
+| $\bar{\tilde{Q}}$ | Quaternion conjugate |
+| $\tilde{Q}^*$ | Split complex conjugate |
+| $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ | Hermitian conjugate |
+| $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components, in $\mathbb{H}$ |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$ | Split complex, quaternion, Hermitian, anti-Hermitian subspaces |
+| $\rho : A \to \mathrm{End}(V)$ | An algebra representation |
+| $\rho_\pm : \mathbb{H}_{\mathbb{D}} \to \mathrm{End}_{\mathbb{H}}(\mathbb{H} \tilde\Pi_\pm)$ | Module representation |
+| $E_{11} = \tilde\Pi_+$, $E_{22} = \tilde\Pi_-$, $E_{12} = E_{21} = 0$ | The degenerate system of matrix units |
+| $\mathrm{Cl}_{0,3} \cong \mathrm{Cl}_{1,2}$ | Real Clifford algebra of a three-dimensional form, $\cong \mathbb{H}\oplus\mathbb{H}$ |
+| $\gamma^k$, $\delta$ | Clifford generators, $\gamma^k\gamma^l + \gamma^l\gamma^k = -2\delta^{kl}$ |
+| $\omega = \gamma^1\gamma^2\gamma^3$ | Volume element, central, $\omega^2 = +1$, image of $j$ |
 
 ## Further Reading
 

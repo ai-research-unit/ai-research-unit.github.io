@@ -205,18 +205,18 @@ $$
 In biquaternion form, the joint state is
 
 $$
-P_{\mathrm{prod}} = P_+(\hat{z}) \otimes P_+(\hat{z}),
+P_{\mathrm{prod}} = \tilde\Pi_1 \otimes \tilde\Pi_1,
 $$
 
-with $P_+(\hat{z}) = \tfrac{1}{2}(e_0 + ie_3)$. Computing the partial trace,
+with $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$. Computing the partial trace,
 
 $$
-\rho_1^{\mathrm{prod}} = \mathrm{Tr}_2(P_{\mathrm{prod}}) = P_+(\hat{z}) \cdot \mathrm{Tr}_\mathbb{B}(P_+(\hat{z})) = P_+(\hat{z}) \cdot 1 = P_+(\hat{z}),
+\rho_1^{\mathrm{prod}} = \mathrm{Tr}_2(P_{\mathrm{prod}}) = \tilde\Pi_1 \cdot \mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
 $$
 
-using $\mathrm{Tr}_\mathbb{B}(P_+(\hat{z})) = 1$ for an idempotent of trace one.
+using $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = 1$ for an idempotent of trace one.
 
-So the reduced state is the pure state $P_+(\hat{z}) = \tfrac{1}{2}(e_0 + ie_3)$, which is an idempotent with Bloch vector $\mathbf{r} = e_3$ and purity $1$. The purity and entropy are
+So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, which is an idempotent with Bloch vector $\mathbf{r} = e_3$ and purity $1$. The purity and entropy are
 
 $$
 \mathrm{Tr}((\rho_1^{\mathrm{prod}})^2) = 1, \qquad S(\rho_1^{\mathrm{prod}}) = 0.

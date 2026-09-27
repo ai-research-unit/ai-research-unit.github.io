@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This is the fourth article of the Real Numbers system in Part V, and it occupies the **geometry slot** of that system. The system is the ordered field $\mathbb{R}$ of *The Real Numbers*, and the object of study is the real line as a geometric object: the distance $\lvert x - y\rvert$, the isometries it determines, the group they form, the reflections and translations that generate it, and the subsidiary notions of interval, midpoint, similarity and crystallographic symmetry that the line supports. The real line is the *first* object of the ladder that carries a distance, and its geometry is the base case of the whole geometric ladder of Part V.
+This is the geometry article of the Real Numbers system, and it occupies the **geometry slot** of that system. The system is the ordered field $\mathbb{R}$ of *The Real Numbers*, and the object of study is the real line as a geometric object: the distance $\lvert x - y\rvert$, the isometries it determines, the group they form, the reflections and translations that generate it, and the subsidiary notions of interval, midpoint, similarity and crystallographic symmetry that the line supports. The real line is the *first* object of the ladder that carries a distance, and its geometry is the base case of the whole geometric ladder of the number systems.
 
-The algebra and the order of $\mathbb{R}$, and the representations of the additive group, are the subjects of *Real Algebra* and *Real Representations*, and are used here rather than developed; the metric and uniform structure of the line is from *Metric, Uniform and Complete Spaces*, the topological structure from *Topological Spaces* and *Topological Groups*, and the length of an interval from *Measure Theory and Integration*. What this article develops is only the geometric content: the classification of the isometries, the structure of the isometry group, the symmetries of a lattice, the similarities and the cross-ratio, and the failure of a nontrivial rotation in one dimension — the failure that makes the geometry of the line the base case of the Cayley–Klein ladder rather than a degenerate case of the plane.
+The algebra and the order of $\mathbb{R}$ are the subjects of *Real Algebra*, and are used here rather than developed; the metric and uniform structure of the line is from *Metric, Uniform and Complete Spaces*, the topological structure from *Topological Spaces* and *Topological Groups*, and the length of an interval from *Measure Theory and Integration*. What this article develops is only the geometric content: the classification of the isometries, the structure of the isometry group, the symmetries of a lattice, the similarities and the cross-ratio, and the failure of a nontrivial rotation in one dimension — the failure that makes the geometry of the line the base case of the Cayley–Klein ladder rather than a degenerate case of the plane.
 
 Throughout, $\mathbb{R}$ is the real line with its usual absolute value, $\lvert x - y\rvert$ is the distance between $x$ and $y$, and an **isometry** of $\mathbb{R}$ is a bijection $f : \mathbb{R} \to \mathbb{R}$ with $\lvert f(x) - f(y)\rvert = \lvert x - y\rvert$ for all $x, y$. The translation by $b$ is $T_b(x) = x+b$, the reflection in the point $b/2$ is $R_b(x) = b - x$, the dilation of ratio $a$ is $D_a(x) = ax$, and $\operatorname{Isom}(\mathbb{R})$ is the group of all isometries under composition. The infinite dihedral group is $D_\infty = \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, and the cross-ratio of four distinct real points is written $(x_1, x_2; x_3, x_4)$.
 
@@ -23,7 +23,7 @@ and the last is the triangle inequality, which for the absolute value is the ine
 
 **Theorem.** $(\mathbb{R}, d)$ is a complete, connected, separable metric space, and the closed balls $\bar B(x, r) = [x-r, x+r]$ are the closed intervals. The topology determined by $d$ is the order topology of $\mathbb{R}$, so its open sets are the unions of open intervals.
 
-**Proof.** Completeness is the Cauchy construction of *The Real Numbers*; connectedness is the intermediate value property of the order, proved in *Real Algebra* by the completeness of the order; separability is the density of $\mathbb{Q}$ by *The Rational Numbers*; the identification of the balls with the intervals is immediate from the definition of the absolute value, and the agreement of the metric and order topologies is the standard equivalence of the two descriptions of the neighbourhoods. $\square$
+**Proof.** Completeness is the Cauchy construction of *The Real Numbers*; connectedness is the intermediate value property of the order, proved in *The Real Numbers* by the completeness of the order; separability is the density of $\mathbb{Q}$ by *The Rational Numbers*; the identification of the balls with the intervals is immediate from the definition of the absolute value, and the agreement of the metric and order topologies is the standard equivalence of the two descriptions of the neighbourhoods. $\square$
 
 **Theorem.** The **convex** subsets of $\mathbb{R}$ are exactly the intervals, and every interval is the intersection of $\mathbb{R}$ with a closed or open interval of the extended line. For $x < y$, the **segment** between them is $[x,y]$, its **midpoint** is $(x+y)/2$, and it is the unique point equidistant from $x$ and $y$ lying between them.
 
@@ -118,7 +118,7 @@ for four distinct points, in the sense that a map preserving it in general posit
 
 **Proof.** By the classification, an orientation-preserving isometry is a translation $T_b$, and if it fixes a point $x$ then $b = 0$, so it is the identity. $\square$
 
-**Remark.** A rotation is, by definition, an orientation-preserving isometry with a fixed point; the theorem therefore rules it out in one dimension, and the first genuine rotation must appear in a two-dimensional system. This is the geometric content of the ladder: the complex plane, whose isometry group contains the rotations $z \mapsto e^{i\theta} z$, is the first system in which rotation is nontrivial, and the real line is its degenerate one-dimensional base case, with the orthogonal group $O(1) = \{\pm 1\}$ in place of $O(2)$. The complex rotations are the subject, which belongs to the Complex Numbers system of this Part and completes the ladder begun here.
+**Remark.** A rotation is, by definition, an orientation-preserving isometry with a fixed point; the theorem therefore rules it out in one dimension, and the first genuine rotation must appear in a two-dimensional system. This is the geometric content of the ladder: the complex plane, whose isometry group contains the rotations $z \mapsto e^{i\theta} z$, is the first system in which rotation is nontrivial, and the real line is its degenerate one-dimensional base case, with the orthogonal group $O(1) = \{\pm 1\}$ in place of $O(2)$. The complex rotations are the subject of *Rotations and Reflections in the Complex Plane*, which completes the ladder begun here.
 
 ## Symmetry of the Line
 
@@ -180,7 +180,7 @@ and the **intrinsic distance** associated with $g$ is the infimum of the lengths
 
 **Proof.** In one dimension the Riemann curvature tensor has no nonzero components, so every such manifold is flat and is locally isometric to $\mathbb{R}$; a complete and connected one is therefore either a line or a circle by the classification of the one-dimensional manifolds, and the covering statement is the standard quotient $\mathbb{R} \to \mathbb{R}/a\mathbb{Z}$. The isometry group of the circle is $O(2)$ acting on the angle. $\square$
 
-**Remark.** The classification is the precise sense in which the line is the base case of the geometric ladder. In dimension one the three model geometries of the Cayley–Klein ladder coincide: Euclidean, spherical and hyperbolic geometry all degenerate to the line with its affine structure, and the sectional curvature of a one-dimensional manifold is vacuous, so no curvature invariant distinguishes them. The first genuine divergence of the three geometries, and the first genuine rotation, occur in dimension two, and it is there that the ladder of the systems of Part V begins to separate.
+**Remark.** The classification is the precise sense in which the line is the base case of the geometric ladder. In dimension one the three model geometries of the Cayley–Klein ladder coincide: Euclidean, spherical and hyperbolic geometry all degenerate to the line with its affine structure, and the sectional curvature of a one-dimensional manifold is vacuous, so no curvature invariant distinguishes them. The first genuine divergence of the three geometries, and the first genuine rotation, occur in dimension two, and it is there that the ladder of the number systems begins to separate.
 
 ### The Line as the Universal Cover
 
@@ -198,7 +198,7 @@ The similarities $x \mapsto ax+b$ form the affine group $\mathbb{R} \rtimes \mat
 
 ## Summary of Notation
 
-| Symbol | Meaning |
+| symbol | meaning |
 |---|---|
 | $\mathbb{R}$ | The real line |
 | $d(x,y) = \lvert x-y\rvert$ | Distance |
@@ -213,8 +213,6 @@ The similarities $x \mapsto ax+b$ form the affine group $\mathbb{R} \rtimes \mat
 | $D_\infty$, $D_\infty(a)$ | Infinite dihedral group, $a\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ |
 | $(x_1,x_2;x_3,x_4)$ | Cross-ratio |
 | $a\mathbb{Z}$ | Discrete subgroup of translations of step $a$ |
-
-
 
 ## Further Reading
 

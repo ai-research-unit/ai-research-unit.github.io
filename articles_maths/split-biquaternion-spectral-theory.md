@@ -1,0 +1,204 @@
+
+# __Split-Biquaternion Spectral Theory__
+
+## Introduction
+
+The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\oplus\mathbb{H}$ is unital and associative but neither commutative nor a division algebra, and its centre $\mathbb{D}$ is not a field. Both failures complicate the notion of a spectrum, and the main source of error is the silent switching between inequivalent definitions. In this article "spectrum" without qualification means the spectrum of the linear map of left multiplication, computed as a complex spectrum by complexifying that real operator; the quaternionic spectrum, and the intrinsic spectrum with scalars in the centre, are stated separately and compared.
+
+The treatment is mathematically honest: every claim is either proved or stated as a definition. We assume the algebra, its idempotents and the decomposition $\tilde{Q} = \tilde{Q}_+\tilde\Pi_+ + \tilde{Q}_-\tilde\Pi_-$ from *Split-Biquaternion Algebra* and *Split-Biquaternion Idempotents and Projections*; the norm form and invertibility criterion from *Split-Biquaternion Norm and Invertibility*; and the elementary functions from *Split-Biquaternion Elementary Functions*. Throughout $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{D}$, and the two quaternion components are $\tilde{Q}_\pm = \sum_\mu(q_\mu \pm q'_\mu)e_\mu$, so that $\tilde{Q}\tilde{R}$ has components $\tilde{Q}_+\tilde{R}_+$ and $\tilde{Q}_-\tilde{R}_-$.
+
+## The Spectrum of an Element
+
+### The Intrinsic Definition and Its Failure
+
+**Definition.** Let $A$ be a unital associative algebra over a field $F$. The **spectrum** of $a \in A$ is $\sigma_A(a) = \{\lambda \in F : a - \lambda 1_A \text{ is not invertible in } A\}$.
+
+**Proposition.** If $A$ is a finite-dimensional unital algebra over $\mathbb{C}$ with $A \neq 0$ and $L_a(x) = ax$ is left multiplication, then $\sigma_A(a)$ is the set of eigenvalues of $L_a$ and is nonempty.
+
+**Proof.** $b$ is invertible if and only if $L_b$ is bijective; the characteristic polynomial of $L_a$ has a root $\mu \in \mathbb{C}$, and $L_a - \mu\,\mathrm{id} = L_{a-\mu1_A}$ is singular, so $\mu \in \sigma_A(a)$; conversely $\lambda \in \sigma_A(a)$ makes $L_{a-\lambda1_A}$ non-bijective. $\square$
+
+**Remark.** For $\mathbb{H}_{\mathbb{D}}$ the only scalar algebra available intrinsically is the centre $\mathbb{D}$, which is not a field. Taking scalars in $\mathbb{D}$ in the definition, $\tilde{Q} - \lambda e_0$ has components $\tilde{Q}_+ - \lambda_+$ and $\tilde{Q}_- - \lambda_-$, with $\lambda = a + jb$ mapping to $\lambda_+ = a+b$, $\lambda_- = a-b$; since $\mathbb{H}$ is a division algebra, a quaternion shift is a zero divisor only when it vanishes, so $\tilde{Q} - \lambda e_0$ is non-invertible exactly when $\tilde{Q}_+ = \lambda_+$ or $\tilde{Q}_- = \lambda_-$. The intrinsic spectrum with scalars in $\mathbb{D}$ is therefore empty unless one of the two components is a real number, and when nonempty it is a line or a pair of lines in $\mathbb{D}$. This set carries almost no information, and the reason is structural: the scalar ring is not a field, so the implicit-function argument behind the nonemptiness of $\sigma$ is unavailable. The working definitions below replace the scalar ring by a field.
+
+### Left Multiplication
+
+**Definition.** **Left multiplication** is the operator $L : \mathbb{H}_{\mathbb{D}} \to \mathrm{End}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}})$, $L_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}$. In the idempotent decomposition it is block diagonal,
+
+$$
+L_{\tilde{Q}} = \mathrm{diag}\left(L_{\tilde{Q}_+},\, L_{\tilde{Q}_-}\right), \qquad L_{\tilde{Q}_\pm}(\tilde{R}_\pm) = \tilde{Q}_\pm\tilde{R}_\pm ,
+$$
+
+the two blocks being left multiplications by quaternions on two copies of $\mathbb{H} \cong \mathbb{R}^4$.
+
+**Definition.** The **spectrum** of $\tilde{Q}$ is the spectrum of $L_{\tilde{Q}}$ over $\mathbb{C}$, that is the set of complex eigenvalues of the real endomorphism $L_{\tilde{Q}}$.
+
+**Theorem.** The characteristic polynomial of $L_{\tilde{Q}}$ is
+
+$$
+p_{\tilde{Q}}(\lambda) = \left(\lambda^2 - 2q_0^+\lambda + |\tilde{Q}_+|^2\right)^2\left(\lambda^2 - 2q_0^-\lambda + |\tilde{Q}_-|^2\right)^2 ,
+$$
+
+where $q_0^\pm = \mathrm{Re}\,\tilde{Q}_\pm$ and $|\tilde{Q}_\pm|^2 = \sum_\mu(q_\mu\pm q'_\mu)^2$. Hence
+
+$$
+\sigma(\tilde{Q}) = \left\{q_0^+ + i|\mathbf{Q}_+|,\, q_0^+ - i|\mathbf{Q}_+|,\, q_0^- + i|\mathbf{Q}_-|,\, q_0^- - i|\mathbf{Q}_-|\right\},
+$$
+
+where $\mathbf{Q}_\pm = \mathrm{Vect}\,\tilde{Q}_\pm$ is the vector part of the component and $|\mathbf{Q}_\pm| = \sqrt{|\tilde{Q}_\pm|^2 - (q_0^\pm)^2}$ its modulus, the four values with each occurring to multiplicity two.
+
+**Proof.** Left multiplication by a quaternion $q$ on $\mathbb{H}$ has characteristic polynomial $(\lambda^2 - 2q_0\lambda + |q|^2)^2$: the eigenvalues of $L_q$ are $q_0 \pm i|\mathbf{v}|$, where $\mathbf{v} = \mathrm{Vect}\,q$, each occurring to multiplicity two when $q$ is non-real, since the real vector space $\mathbb{H}$ is two-dimensional over the centraliser plane $\mathbb{R}[q] \cong \mathbb{C}$, and the real value $q_0$ occurs to multiplicity four when $q$ is real. Applying this to the two blocks and multiplying gives the displayed polynomial; the roots are as stated. $\square$
+
+**Corollary.** $\sigma(\tilde{Q})$ contains $0$ if and only if $\tilde{Q}$ lies on the zero divisor locus, that is $N(\tilde{Q}_+) = 0$ or $N(\tilde{Q}_-) = 0$, equivalently $|\tilde{Q}_+| = 0$ or $|\tilde{Q}_-| = 0$; by the division property of $\mathbb{H}$ this means $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$, the union $\mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$ of the two ideals.
+
+## Left and Right Eigenvalues
+
+The centre of $\mathbb{H}_{\mathbb{D}}$ is $\mathbb{D}$, so split complex scalars commute with everything; but the larger quaternion scalars do not, and the left and right eigenvalue problems then differ. In the idempotent decomposition the relevant space is $\mathbb{H}^2$, whose vectors are written $v = (v_+, v_-)$ and on which $\tilde{Q} = (\tilde{Q}_+,\tilde{Q}_-)$ acts componentwise.
+
+**Definition.** A scalar $\lambda \in \mathbb{H}$ is a **left eigenvalue** of $\tilde{Q}$ if $\tilde{Q}v = \lambda v$ for some nonzero $v \in \mathbb{H}^2$, meaning $\tilde{Q}_+v_+ = \lambda v_+$ and $\tilde{Q}_-v_- = \lambda v_-$, and a **right eigenvalue** if $\tilde{Q}v = v\lambda$, meaning $\tilde{Q}_+v_+ = v_+\lambda$ and $\tilde{Q}_-v_- = v_-\lambda$, for some nonzero $v$. The sets of such scalars are the **left spectrum** $\sigma_L(\tilde{Q})$ and the **right spectrum** $\sigma_R(\tilde{Q})$.
+
+**Theorem.** $\sigma_L(\tilde{Q}) = \{\tilde{Q}_+, \tilde{Q}_-\}$ as a set, while $\sigma_R(\tilde{Q}) = [\tilde{Q}_+]\cup[\tilde{Q}_-]$, the union of the two conjugacy classes $[\tilde{Q}_\pm] = \{v^{-1}\tilde{Q}_\pm v : v \in \mathbb{H}^\times\}$.
+
+**Proof.** Write $v = (v_+,v_-)$. The equation $\tilde{Q}v = \lambda v$ gives $\tilde{Q}_+v_+ = \lambda v_+$ and $\tilde{Q}_-v_- = \lambda v_-$. If $v_+ \neq 0$ then, $\mathbb{H}$ being a division algebra, $\lambda = \tilde{Q}_+$; if $v_- \neq 0$ then $\lambda = \tilde{Q}_-$. The equation $\tilde{Q}v = v\lambda$ gives $\tilde{Q}_+v_+ = v_+\lambda$ and $\tilde{Q}_-v_- = v_-\lambda$, so a nonzero $v_+$ gives $\lambda = v_+^{-1}\tilde{Q}_+v_+ \in [\tilde{Q}_+]$ and a nonzero $v_-$ gives $\lambda \in [\tilde{Q}_-]$. $\square$
+
+A conjugacy class of a quaternion is a point when it is real and a two-sphere otherwise; so the right spectrum is a point or a two-sphere for each half. This is the same phenomenon as for quaternionic matrices, and it is absent from the biquaternion case, where the scalar field is central.
+
+**Definition.** The **S-spectrum** of $\tilde{Q}$ is $\sigma_S(\tilde{Q}) = \{s \in \mathbb{H} : \tilde{Q}^2 - 2\mathrm{Re}(s)\tilde{Q} + |s|^2 e_0 \text{ is not invertible}\}$, resting on the identity $s^2 - 2\mathrm{Re}(s)s + |s|^2 = 0$, valid because $s - \mathrm{Re}(s)$ is pure imaginary.
+
+**Theorem.** $\sigma_S(\tilde{Q}) = \sigma_R(\tilde{Q}) = [\tilde{Q}_+]\cup[\tilde{Q}_-]$.
+
+**Proof.** If $\tilde{Q}v = v\lambda$ then $(\tilde{Q}^2 - 2\mathrm{Re}(\lambda)\tilde{Q} + |\lambda|^2 e_0)v = v(\lambda^2 - 2\mathrm{Re}(\lambda)\lambda + |\lambda|^2) = 0$, so this element annihilates the nonzero vector $v$ and is not invertible; hence $\lambda \in \sigma_S$. The converse is the classical S-spectrum theorem, and the identification with $\sigma_R$ is that theorem applied to the two components. $\square$
+
+## Cayley–Hamilton and the Trace and Determinant Functionals
+
+**Definition.** The **trace** and **norm** (determinant) functionals are the centre-valued maps
+
+$$
+T(\tilde{Q}) = \left(2q_0^+,\, 2q_0^-\right) \in \mathbb{D} , \qquad D(\tilde{Q}) = N(\tilde{Q}) = \left(|\tilde{Q}_+|^2,\, |\tilde{Q}_-|^2\right) \in \mathbb{D} ,
+$$
+
+the first the reduced trace and the second the reduced norm of $\mathbb{H}\oplus\mathbb{H}$, both valued in the centre $\mathbb{D}$.
+
+**Theorem (Cayley–Hamilton).** Every $\tilde{Q}$ satisfies $\tilde{Q}^2 - T(\tilde{Q})\tilde{Q} + D(\tilde{Q})e_0 = 0$, which reads componentwise as $\tilde{Q}_\pm^2 - 2q_0^\pm\tilde{Q}_\pm + |\tilde{Q}_\pm|^2e_0 = 0$.
+
+**Proof.** In each component, with $\mathbf{Q}_\pm$ the vector part and $\mathbf{Q}_\pm^2 = -|\mathbf{Q}_\pm|^2e_0$, one has $\tilde{Q}_\pm^2 = 2q_0^\pm\tilde{Q}_\pm - (|\mathbf{Q}_\pm|^2 + (q_0^\pm)^2)e_0 = 2q_0^\pm\tilde{Q}_\pm - |\tilde{Q}_\pm|^2e_0$. $\square$
+
+**Corollary.** If $N(\tilde{Q})$ is a unit of $\mathbb{D}$, that is if both $|\tilde{Q}_\pm|^2 \neq 0$, then $\tilde{Q}^{-1} = (T(\tilde{Q})e_0 - \tilde{Q})D(\tilde{Q})^{-1} = \bar{\tilde{Q}}N(\tilde{Q})^{-1}$, recovering the inverse formula on the complement of the zero divisor locus.
+
+**Proposition.** The functionals satisfy
+
+$$
+T(\tilde P + \tilde{Q}) = T(\tilde P) + T(\tilde{Q}), \quad T(\lambda\tilde{Q}) = \lambda T(\tilde{Q}), \quad T(\tilde P\tilde{Q}) = T(\tilde{Q}\tilde P), \quad T(e_0) = 2 ,
+$$
+
+$$
+D(\tilde P\tilde{Q}) = D(\tilde P)D(\tilde{Q}), \quad D(\lambda\tilde{Q}) = \lambda^2 D(\tilde{Q}), \quad D(e_0) = 1 ,
+$$
+
+for central $\lambda \in \mathbb{D}$, and both are invariant under similarity, $T(S\tilde{Q}S^{-1}) = T(\tilde{Q})$, $D(S\tilde{Q}S^{-1}) = D(\tilde{Q})$ for invertible $S$.
+
+**Proof.** Each identity holds componentwise by the corresponding quaternion identity: the real part is linear and the quaternion norm is multiplicative, $|q_+q_-|^2 = |q_+|^2|q_-|^2$, on each half. $\square$
+
+**Remark.** Unlike the biquaternion case, where $D = N$ is the determinant of a $2\times2$ complex matrix, here $D$ is the reduced norm of a product of two division algebras and is not the determinant of a matrix over a field; it is $\mathbb{D}$-valued, and it takes a zero divisor value exactly on the zero divisor locus.
+
+## Similarity and the Classification
+
+**Definition.** Two split biquaternions are **similar** if $\tilde{Q}' = S\tilde{Q}S^{-1}$ for an invertible $S \in \mathbb{H}_{\mathbb{D}}$, that is $S = (S_+,S_-)$ with $S_\pm \neq 0$.
+
+**Theorem (classification).** $\tilde{Q}'$ is similar to $\tilde{Q}$ precisely when $\tilde{Q}_+' \in [\tilde{Q}_+]$ and $\tilde{Q}_-' \in [\tilde{Q}_-]$. Consequently the similarity class is determined by the ordered pair of conjugacy classes $\left([\tilde{Q}_+],[\tilde{Q}_-]\right)$, equivalently by the ordered pair of real numbers $(|\tilde{Q}_+|,|\tilde{Q}_-|)$ together with the ordered pair of real parts $(q_0^+,q_0^-)$.
+
+**Proof.** $S\tilde{Q}S^{-1} = (S_+\tilde{Q}_+S_+^{-1}, S_-\tilde{Q}_-S_-^{-1})$, and the invertibles of $\mathbb{H}$ are the nonzero quaternions, so each component may be conjugated independently by any nonzero quaternion. The conjugacy class of a quaternion is determined by its real part and its modulus. $\square$
+
+Thus the invariant is a pair of "quaternionic data", whereas in the biquaternion case the similarity class is determined by the eigenvalues alone, with a single Jordan exception at the repeated locus. There is no repeated-point pathology here, because the halves are division algebras and a diagonal block is semisimple in each.
+
+## Eigenspaces and Their Dimensions
+
+**Definition.** For a left eigenvalue $\lambda$ the **left eigenspace** is $E_\lambda = \{v \in \mathbb{H}^2 : \tilde{Q}v = \lambda v\}$, stable under right multiplication by $\mathbb{H}$, and its dimension over $\mathbb{H}$ is the **geometric multiplicity**; the right eigenspaces for the right eigenvalues are defined analogously.
+
+**Proposition.** The left eigenvalues are $\tilde{Q}_+$ and $\tilde{Q}_-$, and:
+
+1. if $\tilde{Q}_+ \neq \tilde{Q}_-$, then $E_{\tilde{Q}_+} = \mathbb{H}\oplus0$ and $E_{\tilde{Q}_-} = 0\oplus\mathbb{H}$, each of $\mathbb{H}$-dimension one;
+2. if $\tilde{Q}_+ = \tilde{Q}_-$ (that is $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$), then there is a single left eigenvalue with $E = \mathbb{H}^2$ of $\mathbb{H}$-dimension two.
+
+**Proof.** In case (1), the equation $\tilde{Q}v = \tilde{Q}_+ v$ forces the second coordinate to satisfy $(\tilde{Q}_- - \tilde{Q}_+)v_- = 0$, hence $v_- = 0$, and the first coordinate is free; the other eigenvalue is symmetric. In case (2) the two components are equal, so every vector is an eigenvector. $\square$
+
+**Corollary (real dimension).** Over $\mathbb{R}$ the eigenspace dimensions are four in the generic case and eight in the quaternion-subspace case; the right eigenspace of a non-real right eigenvalue $\lambda = v^{-1}\tilde{Q}v$ is $\mathbb{H}$-one-dimensional when $\lambda$ is not conjugate to the other component's value, and the right S-spectrum is a union of two two-spheres in the generic case. In the biquaternion case the geometric multiplicity was one over $\mathbb{C}$ (two over $\mathbb{R}$) except at the central locus; here the minimal non-central dimension over $\mathbb{R}$ is four.
+
+## The Resolvent
+
+**Definition.** The **resolvent** of $\tilde{Q}$ is $R(\lambda) = (\tilde{Q} - \lambda e_0)^{-1}$, defined for $\lambda$ in the resolvent set, the complement in $\mathbb{H}$ of the S-spectrum $[\tilde{Q}_+]\cup[\tilde{Q}_-]$.
+
+**Proposition.** For $\lambda$ outside $[\tilde{Q}_+]\cup[\tilde{Q}_-]$,
+
+$$
+R(\lambda) = \left(\frac{\overline{\tilde{Q}_+ - \lambda}}{|\tilde{Q}_+ - \lambda|^2}\right)\tilde\Pi_+ + \left(\frac{\overline{\tilde{Q}_- - \lambda}}{|\tilde{Q}_- - \lambda|^2}\right)\tilde\Pi_- ,
+$$
+
+with $|\tilde{Q}_\pm - \lambda|^2 = (\mathrm{Re}(\tilde{Q}_\pm) - \mathrm{Re}\,\lambda)^2 + |\mathrm{Vect}(\tilde{Q}_\pm) - \mathrm{Vect}\,\lambda|^2 \neq 0$.
+
+**Proof.** Componentwise, $(q - \lambda)^{-1} = \overline{(q-\lambda)}/|q-\lambda|^2$ for a quaternion $q$ and $\lambda$ not conjugate to $q$; the denominator is a sum of squares of real numbers and vanishes exactly when $q = \lambda$. Apply this in each idempotent component. $\square$
+
+**Corollary (analyticity and resolvent identity).** The resolvent is real-analytic on its domain, with poles along the two conjugacy classes $[\tilde{Q}_\pm]$; for $\lambda,\mu$ in the resolvent set,
+
+$$
+R(\lambda) - R(\mu) = (\lambda - \mu)R(\lambda)R(\mu) ,
+$$
+
+since with $A = \tilde{Q} - \lambda e_0$ and $B = \tilde{Q} - \mu e_0$ one has $A^{-1} - B^{-1} = A^{-1}(B - A)B^{-1}$ for central $\lambda, \mu$.
+
+## The Spectral Radius
+
+**Definition.** The **spectral radius** is $\rho(\tilde{Q}) = \max\{|\lambda| : \lambda \in \sigma(\tilde{Q})\}$, the maximum modulus of the complex eigenvalues of $L_{\tilde{Q}}$, where $|\cdot|$ is the complex modulus.
+
+**Theorem.** $\rho(\tilde{Q}) = \max\left(|\tilde{Q}_+|,\, |\tilde{Q}_-|\right)$, the maximum of the two quaternion norms, and this equals the operator norm of $L_{\tilde{Q}}$ for the Euclidean norm on $\mathbb{R}^8$. Moreover $\rho(\tilde{Q}) = 0$ if and only if $\tilde{Q} = 0$.
+
+**Proof.** The eigenvalues of $L_{\tilde{Q}}$ are $q_0^\pm \pm i|\mathbf{Q}_\pm|$ with modulus $\sqrt{(q_0^\pm)^2 + |\mathbf{Q}_\pm|^2} = |\tilde{Q}_\pm|$, giving the first statement. For the operator norm, $|L_{\tilde{Q}}\tilde{R}|_E^2 = \tfrac{1}{2}(|\tilde{Q}_+\tilde{R}_+|^2 + |\tilde{Q}_-\tilde{R}_-|^2) = \tfrac{1}{2}(|\tilde{Q}_+|^2|\tilde{R}_+|^2 + |\tilde{Q}_-|^2|\tilde{R}_-|^2) \leq \max(|\tilde{Q}_+|,|\tilde{Q}_-|)^2|\tilde{R}|_E^2$, with equality for a unit vector in the larger half; so $\|L_{\tilde{Q}}\| = \max(|\tilde{Q}_+|,|\tilde{Q}_-|)$. Finally $\rho(\tilde{Q}) = 0$ forces both components to be zero, since a nonzero quaternion has nonzero modulus and $\mathbb{H}$ is a division algebra; there are no nonzero nilpotents. $\square$
+
+**Theorem (Gelfand).** For any norm on the finite-dimensional algebra $\mathbb{H}_{\mathbb{D}}$, $\rho(\tilde{Q}) = \lim_{k\to\infty}\|\tilde{Q}^k\|^{1/k}$, independently of the norm.
+
+The contrast with the biquaternion case is sharp: there $\rho(\tilde{Q}) = 0$ for the nonzero nilpotent elements, which are zero divisors, whereas here the division property of each half makes $\rho(\tilde{Q}) = 0$ equivalent to $\tilde{Q} = 0$; the zero divisors of $\mathbb{H}_{\mathbb{D}}$ are not nilpotent.
+
+## The Exponential and the Logarithm
+
+The exponential $\exp(\tilde{Q}) = \sum_n\tilde{Q}^n/n!$ is entire, acts componentwise, $\exp(\tilde{Q}) = (\exp\tilde{Q}_+)\tilde\Pi_+ + (\exp\tilde{Q}_-)\tilde\Pi_-$, and is the value of $e^z$ at the reduced spectrum. Componentwise, for a quaternion $q = q_0 + \hat{q}\theta$ with $|\hat q| = 1$,
+
+$$
+\exp q = e^{q_0}\left(\cos\theta\,e_0 + \sin\theta\,\hat q\right) ,
+$$
+
+so the eigenvalues of $L_{\exp\tilde{Q}}$ are $e^{q_0^\pm}(\cos|\mathbf{Q}_\pm| \pm i\sin|\mathbf{Q}_\pm|) = e^{q_0^\pm \pm i|\mathbf{Q}_\pm|}$, as expected from the spectrum.
+
+**Non-injectivity and the logarithm.** $\exp$ is not injective: for every imaginary unit $\hat u \in \mathbb{H}$ and every integer $n$, $\exp(2\pi n\hat u) = 1$, hence $\exp(\tilde{L} + 2\pi n(\hat u_+,\hat u_-)) = \exp(\tilde{L})$ for the central-pair element $2\pi n(\hat u_+,\hat u_-)$. A **logarithm** of $\tilde{Q}$ is any $\tilde{L}$ with $\exp(\tilde{L}) = \tilde{Q}$; since every nonzero quaternion has a logarithm, every element of the group of units has one in each half, so $\exp$ maps onto the units, and a branch must be chosen in each half. No continuous logarithm exists on the whole group of units of $\mathbb{H}$, and hence none on that of $\mathbb{H}_{\mathbb{D}}$, for the same reason as in the complex and biquaternion cases.
+
+## The Relation to the Biquaternion Spectral Theory
+
+In the biquaternion algebra the centre is the field $\mathbb{C}$, the algebra is isomorphic to $M_2(\mathbb{C})$, and the spectrum of an element is the two-element complex set $\{Q_0 + iB, Q_0 - iB\}$ determined by the trace $T = 2Q_0$ and the determinant $D = N = Q_0^2 + B^2$. In the split biquaternion algebra the centre is the ring $\mathbb{D}$, the algebra is $\mathbb{H}\oplus\mathbb{H}$ and not a full matrix algebra over a field, and the spectrum is read off the two halves: the complex spectrum of left multiplication is the four-value set $\{q_0^+ \pm i|\mathbf{Q}_+|, q_0^- \pm i|\mathbf{Q}_-|\}$, each value to multiplicity two, and the scalar-field-independent spectrum is the quaternionic S-spectrum $[\tilde{Q}_+]\cup[\tilde{Q}_-]$, a union of two conjugacy classes rather than a finite set. The trace and determinant functionals are $\mathbb{D}$-valued rather than $\mathbb{C}$-valued, the reduced trace being $(2q_0^+,2q_0^-)$ and the reduced norm $(|\tilde{Q}_+|^2,|\tilde{Q}_-|^2)$; and the similarity classification is by the ordered pair of conjugacy classes, with no Jordan exception, because no half is non-semisimple. The Cayley–Hamilton theorem, the resolvent, the spectral radius and the exponential all transport across, the last two with the notable replacement of "spectral radius zero at a nonzero nilpotent" by "spectral radius zero only at zero": the zero divisors of $\mathbb{H}_{\mathbb{D}}$ are the elements killed by one idempotent, and they are never nilpotent, in contrast with the pure vector nilpotents of $\mathbb{B}$.
+
+## Summary
+
+The spectrum of a split biquaternion is governed by its two quaternion halves. The intrinsic spectrum with scalars in the centre $\mathbb{D}$ is inadequate, because $\mathbb{D}$ is not a field, and it is empty unless a component is real. Left multiplication is block diagonal in the idempotent decomposition, and the characteristic polynomial of $L_{\tilde{Q}}$ factors as $\prod_\pm(\lambda^2 - 2q_0^\pm\lambda + |\tilde{Q}_\pm|^2)^2$, so the complex spectrum is $\{q_0^+ \pm i|\mathbf{Q}_+|\}\cup\{q_0^- \pm i|\mathbf{Q}_-|\}$ with doubled multiplicities; it contains $0$ exactly on the zero divisor locus $\mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$. With quaternion scalars the left spectrum is $\{\tilde{Q}_+,\tilde{Q}_-\}$ and the right spectrum, equal to the S-spectrum, is the union of the two conjugacy classes $[\tilde{Q}_+]\cup[\tilde{Q}_-]$. The reduced trace $T = (2q_0^+,2q_0^-)$ and reduced norm $D = (|\tilde{Q}_+|^2,|\tilde{Q}_-|^2)$ are $\mathbb{D}$-valued, additive and multiplicative, and give the componentwise Cayley–Hamilton identity $\tilde{Q}^2 - T\tilde{Q} + De_0 = 0$; the inverse formula $\tilde{Q}^{-1} = \bar{\tilde{Q}}N(\tilde{Q})^{-1}$ holds on the complement of the zero divisor locus. Similarity is conjugation independently in each half, so the class is the ordered pair of conjugacy classes, with no Jordan pathology. The left eigenspaces are one-dimensional over $\mathbb{H}$ in the generic case and all of $\mathbb{H}^2$ when the element lies in the quaternion subspace; the resolvent is real-analytic off the two conjugacy classes and satisfies the resolvent identity; the spectral radius is $\max(|\tilde{Q}_+|,|\tilde{Q}_-|)$, equal to the operator norm of left multiplication, and vanishes only at $\tilde{Q} = 0$, since the algebra has no nonzero nilpotents. The exponential acts componentwise and is surjective onto the units but not injective; a branch must be chosen in each half. Against the biquaternion spectral theory, the finite complex spectrum and the field-valued trace and determinant are replaced by a four-value complex spectrum, a quaternionic S-spectrum that is a union of two conjugacy classes, and $\mathbb{D}$-valued trace and norm functionals, the whole theory being the pair of quaternionic spectral theories of the two halves.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ | Split biquaternion algebra |
+| $\tilde{Q} = \tilde{Q}_+\tilde\Pi_+ + \tilde{Q}_-\tilde\Pi_-$ | Idempotent decomposition into the two quaternion halves |
+| $L_{\tilde{Q}}$ | Left multiplication operator, block diagonal in the halves |
+| $p_{\tilde{Q}}(\lambda)$ | Characteristic polynomial of $L_{\tilde{Q}}$ |
+| $\sigma(\tilde{Q})$ | Spectrum over $\mathbb{C}$: the four values $q_0^\pm \pm i|\mathbf{Q}_\pm|$ |
+| $\sigma_L, \sigma_R$ | Left and right spectra with quaternion scalars |
+| $[\tilde{Q}_\pm]$ | Conjugacy class $\{v^{-1}\tilde{Q}_\pm v : v \in \mathbb{H}^\times\}$ |
+| $\sigma_S$ | S-spectrum $[\tilde{Q}_+]\cup[\tilde{Q}_-]$ |
+| $T(\tilde{Q}) = (2q_0^+,2q_0^-)$ | Reduced trace, $\mathbb{D}$-valued |
+| $D(\tilde{Q}) = N(\tilde{Q}) = (|\tilde{Q}_+|^2,|\tilde{Q}_-|^2)$ | Reduced norm (determinant), $\mathbb{D}$-valued |
+| $E_\lambda$ | Left eigenspace in $\mathbb{H}^2$, stable under right multiplication by $\mathbb{H}$ |
+| $R(\lambda) = (\tilde{Q}-\lambda e_0)^{-1}$ | Resolvent |
+| $\rho(\tilde{Q}) = \max(|\tilde{Q}_+|,|\tilde{Q}_-|)$ | Spectral radius |
+| $\mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$ | Zero divisor locus, where $0 \in \sigma(\tilde{Q})$ |
+
+## Further Reading
+
+- F. R. Gantmacher, *The Theory of Matrices* (Chelsea, New York, 1959), for the Jordan form and the similarity classification.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 1985), for eigenvalues, normal matrices and the spectral theorem.
+- Fuzhen Zhang, "Quaternions and matrices of quaternions", *Linear Algebra and its Applications* **251** (1997) 21–57, for left and right quaternionic eigenvalues and quaternionic similarity.
+- Fabrizio Colombo, Irene Sabadini and Daniele C. Struppa, *Noncommutative Functional Calculus* (Birkhäuser, Basel, 2011), for the S-spectrum and the quaternionic spectral theorem.
+- Israel Gelfand, Dmitrii Raikov and Georgii Shilov, *Commutative Normed Rings* (Chelsea, New York, 1964), for the spectral radius formula.

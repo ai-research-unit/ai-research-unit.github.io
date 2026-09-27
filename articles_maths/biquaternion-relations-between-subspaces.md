@@ -23,13 +23,13 @@ The fourth conjugation, the reversal $\flat = -\dagger$, has the same eigenspace
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm form |
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0, ie_0$ | $2$ | yes, $\cong \mathbb{C}$ | $Q_0^2$, complex, real signature $(1,1)$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $\bar{\tilde{Q}} = -\tilde{Q}$ | $e_1,e_2,e_3,ie_1,ie_2,ie_3$ | $6$ | no | $Q_1^2+Q_2^2+Q_3^2$, complex, real signature $(3,3)$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $\bar{\tilde{Q}} = -\tilde{Q}$ | $e_1,e_2,e_3,ie_1,ie_2,ie_3$ | $6$ | no, Lie | $Q_1^2+Q_2^2+Q_3^2$, complex, real signature $(3,3)$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,e_1,e_2,e_3$ | $4$ | yes, $\cong \mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$, definite positive |
 | $i\mathbb{H}_{\mathbb{B}}$ | $\tilde{Q}^{*} = -\tilde{Q}$ | $ie_0,ie_1,ie_2,ie_3$ | $4$ | no | $-\sum_\mu (q'_\mu)^2$, definite negative |
 | $\mathbb{M}_+$ | $\tilde{Q}^{\dagger} = \tilde{Q}$ | $e_0,ie_1,ie_2,ie_3$ | $4$ | no, Jordan | $q_0^2 - |\mathbf{q}'|^2$, signature $(1,3)$ |
 | $\mathbb{M}_-$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,e_1,e_2,e_3$ | $4$ | no, Lie | $|\mathbf{q}|^2 - (q'_0)^2$, signature $(3,1)$ |
 
-Only two of the six are closed under multiplication, and only one of the six is closed under the commutator as a Lie algebra and one under the symmetrized product as a Jordan algebra; the table names them in the last column's first words.
+Only two of the six are closed under multiplication, and among the remaining four two are closed under the commutator as Lie algebras and one under the symmetrized product as a Jordan algebra; the table names them in the last column.
 
 ## The Four Coordinate Blocks
 
@@ -123,7 +123,7 @@ $$
 i\,\mathbb{M}_+ = \mathbb{M}_- , \qquad i\,\mathbb{M}_- = \mathbb{M}_+ .
 $$
 
-The action is read off from the block table: $i$ preserves each block up to its complex structure, exchanging the real scalar line with the imaginary one and the real vector triple with the imaginary one, and the two stable subspaces $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$ are exactly those made of a block and its image. The reader will recognize in this action, and in the two-fold repetition of the operator classes it produces, the reason the six subspaces fall into four classes under the conjugations of the algebra, as developed in *Biquaternion Operator Representation*.
+The action is read off from the block table: $i$ preserves each block up to its complex structure, exchanging the real scalar line with the imaginary one and the real vector triple with the imaginary one, and the two stable subspaces $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$ are exactly those made of a block and its image. The reader will recognize in this action the reason the six subspaces fall into four classes under the conjugations of the algebra.
 
 ### The Product and the Brackets
 
@@ -138,22 +138,7 @@ The following table records, for each pair of equal subspaces, where the product
 | $\mathbb{M}_+$ | not contained; contains a real vector part $-\mathbf{q}'\times\mathbf{r}'$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
 | $\mathbb{M}_-$ | not contained; contains an imaginary vector part $i(q'_0\mathbf{r}+r'_0\mathbf{q})$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
 
-The table is the summary of the algebraic sections of the six subspace articles, and it explains the two structural identifications of the algebra: the vector subspace is a Lie algebra under the commutator, and the Hermitian and anti-Hermitian sectors are Jordan algebras under the symmetrized product, in each case with the sign pattern given by the table.
-
-## The Matrix Picture
-
-Under the isomorphism $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ the six subspaces have the following images:
-
-| subspace | image | matrix characterization |
-|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | scalar matrices | $M = \lambda I$ |
-| $\mathrm{Vect}(\mathbb{B})$ | traceless matrices | $\operatorname{Tr} M = 0$, that is $\mathfrak{sl}_2(\mathbb{C})$ |
-| $\mathbb{H}_{\mathbb{B}}$ | matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ | $M_{21} = -\overline{M_{12}}$, $M_{22} = \overline{M_{11}}$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | matrices $\begin{pmatrix} u & v \\ \bar{v} & -\bar{u}\end{pmatrix}$ | $M_{21} = \overline{M_{12}}$, $M_{22} = -\overline{M_{11}}$ |
-| $\mathbb{M}_+$ | Hermitian matrices | $M = M^{\dagger}$ |
-| $\mathbb{M}_-$ | anti-Hermitian matrices | $M = -M^{\dagger}$ |
-
-Three of the six images have a one-line characterization by an equation on the matrix: the centre by being scalar, the vector subspace by having zero trace, and the two sectors by the self-adjointness condition with a sign. The two middle rows are the coefficient conditions of the quaternion and anti-quaternion subspaces, which in the matrix picture become the two possible relations between the two entries of each row. The table also shows what the isomorphism preserves and what it does not: the decompositions of the algebra are read off from the trace and from the Hermitian decomposition, while the scalar–vector decomposition is the pair (scalar, traceless).
+The table is the summary of the algebraic sections of the six subspace articles, and it explains the two structural identifications of the algebra: the vector subspace and the anti-Hermitian subspace are Lie algebras under the commutator, and the Hermitian subspace is a Jordan algebra under the symmetrized product, in each case with the sign pattern given by the table.
 
 ## Worked Verifications
 
@@ -189,7 +174,7 @@ For $\tilde{Q} = 3e_1 + ie_2$ the real part $3e_1$ lies in the real vector tripl
 
 ## Summary
 
-The six distinguished subspaces of $\mathbb{B}$ are organized by three decompositions — scalar–vector, quaternion and Hermitian — whose two members meet in the origin. Their intersections are sums of the four coordinate blocks, the real and imaginary scalar lines and the real and imaginary vector triples, and therefore have dimension $0$, $1$ or $3$; the lattice of intersections is read off from the block membership of the subspaces, and exactly the three pairs of the decompositions sum to the whole algebra, the pairs sharing a vector triple summing to a subspace of dimension $7$ and the pairs sharing a scalar line to one of dimension $5$. Each of the four involutions preserves each subspace and acts on it diagonally with signs $+1$ and $-1$, the vanishing multiplicities of the sign $-1$ identifying the six subspaces one by one. Multiplication by the central imaginary unit preserves the centre and the vector subspace and exchanges the quaternion with the anti-quaternion subspace and the two sectors. Multiplication behaves differently on each subspace: the centre and the quaternion subspace are closed under it, the vector subspace produces a scalar part proportional to a dot product, the anti-quaternion subspace lands in the quaternion one, and the two sectors produce cross-product and symmetric terms outside themselves; the commutator closes on the vector subspace and maps the Hermitian sector into the anti-Hermitian one, while the symmetrized product closes on each sector and supplies the two Jordan algebra structures. In the matrix picture the six subspaces are the scalar, the traceless, the two quaternion-type patterns, and the Hermitian and anti-Hermitian matrices.
+The six distinguished subspaces of $\mathbb{B}$ are organized by three decompositions — scalar–vector, quaternion and Hermitian — whose two members meet in the origin. Their intersections are sums of the four coordinate blocks, the real and imaginary scalar lines and the real and imaginary vector triples, and therefore have dimension $0$, $1$ or $3$; the lattice of intersections is read off from the block membership of the subspaces, and exactly the three pairs of the decompositions sum to the whole algebra, the pairs sharing a vector triple summing to a subspace of dimension $7$ and the pairs sharing a scalar line to one of dimension $5$. Each of the four involutions preserves each subspace and acts on it diagonally with signs $+1$ and $-1$, the vanishing multiplicities of the sign $-1$ identifying the six subspaces one by one. Multiplication by the central imaginary unit preserves the centre and the vector subspace and exchanges the quaternion with the anti-quaternion subspace and the two sectors. Multiplication behaves differently on each subspace: the centre and the quaternion subspace are closed under it, the vector subspace produces a scalar part proportional to a dot product, the anti-quaternion subspace lands in the quaternion one, and the two sectors produce cross-product and symmetric terms outside themselves; the commutator closes on the vector subspace and on the anti-Hermitian subspace and maps the Hermitian sector into the anti-Hermitian one, while the symmetrized product closes on the Hermitian subspace and supplies the Jordan algebra structure, mirrored on the anti-Hermitian side with the sign of the product reversed.
 
 ## Summary of Notation
 
@@ -202,7 +187,6 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by three decomposi
 | coordinate block | one of $\langle e_0\rangle$, $\langle e_1,e_2,e_3\rangle$, $\langle ie_1,ie_2,ie_3\rangle$, $\langle ie_0\rangle$ |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | quaternion, complex, Hermitian conjugation and reversal |
 | $\mathbf{q} \times \mathbf{r}$, $(\mathbf{q},\mathbf{r})$ | the cross and dot products of vector coefficient triples |
-| $\Phi$ | the isomorphism $\mathbb{B} \to M_2(\mathbb{C})$ |
 | $\tilde{Q} \circ \tilde{R}$ | the symmetrized product |
 
 ## Further Reading
@@ -215,4 +199,3 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by three decomposi
 - *Biquaternion Anti-Hermitian Subspace* (`articles_maths/biquaternion-anti-hermitian-subspace.md`)
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions, their group structure and the two spaces each defines
 - *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra, its multiplication and its three decompositions in their original setting
-- *Biquaternion 2×2 Matrix Representation* (`articles_maths/biquaternion-2x2-matrix-representation.md`), for the isomorphism $\Phi$ and the matrix images in detail

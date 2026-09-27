@@ -382,13 +382,13 @@ $\gamma_5$ anticommutes with every generator and commutes with every even elemen
 Because $\gamma_5^2 = I_4$, the chirality projectors are
 
 $$
-P_{\pm} = \tfrac{1}{2}\bigl(I_4 \pm \gamma_5\bigr) \;=\; \Phi_{\mathbb{C}}\!\left(\tfrac{1}{2}\bigl(e_0 \mp i_{\mathrm{Cl}}\, i\bigr)\right),
+\tilde\Pi_{L,R} = \tfrac{1}{2}\bigl(I_4 \pm \gamma_5\bigr) \;=\; \Phi_{\mathbb{C}}\!\left(\tfrac{1}{2}\bigl(e_0 \mp i_{\mathrm{Cl}}\, i\bigr)\right),
 $$
 
 each of rank $2$ in the $4\times 4$ representation. Direct multiplication gives
 
 $$
-P_+^2 = P_+, \qquad P_-^2 = P_-, \qquad P_+P_- = 0, \qquad P_+ + P_- = I_4, \qquad \mathrm{Tr}\,P_\pm = 2 .
+\tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1\tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = I_4, \qquad \mathrm{Tr}\,\tilde\Pi_{1,2} = 2 .
 $$
 
 In biquaternion terms these are the **central** idempotents $\tfrac{1}{2}(e_0 \pm i_{\mathrm{Cl}} i)$ of the complexified biquaternion algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$. Since $(i_{\mathrm{Cl}} i)^2 = +1$ and $i$ is central, they are central, and they split
@@ -401,13 +401,13 @@ the decomposition of the complexified even algebra into its two chiral halves.
 
 ### Two families of idempotents, not to be confused
 
-The chirality projectors are **not** the same as the pure-state idempotents $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$ of the informational sector, in which $\mu$ is a unit pure real quaternion and $i$ is the biquaternion imaginary. Under the dictionary, with $\mu = \mu_k e_k$ and $\Phi(\mu)$ a spacelike bivector $b$ satisfying $b^2 = -I_4$,
+The chirality projectors are **not** the same as the pure-state idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \mu i)$ of the informational sector, in which $\mu$ is a unit pure real quaternion and $i$ is the biquaternion imaginary. Under the dictionary, with $\mu = \mu_k e_k$ and $\Phi(\mu)$ a spacelike bivector $b$ satisfying $b^2 = -I_4$,
 
 $$
 \tfrac{1}{2}\bigl(e_0 + \mu i\bigr) \;\longmapsto\; \tfrac{1}{2}\bigl(I_4 + b\,\omega\bigr) \;=\; \tfrac{1}{2}\bigl(I_4 + \Phi(\mu)\omega\bigr),
 $$
 
-which is idempotent, because $(b\omega)^2 = b^2\omega^2 = (-1)(-1) = +1$, but is **not central**: it does not commute with the even algebra, since $b$ does not. For example, $\tfrac{1}{2}(e_0 + ie_3)$ maps to $\tfrac{1}{2}(I_4 + \gamma^0\gamma^3)$, which squares to itself and does not commute with $\Phi(e_1) = \gamma^2\gamma^3$. So the dictionary separates two idempotent families that both carry the name $P_\pm$ in the corpus:
+which is idempotent, because $(b\omega)^2 = b^2\omega^2 = (-1)(-1) = +1$, but is **not central**: it does not commute with the even algebra, since $b$ does not. For example, $\tfrac{1}{2}(e_0 + ie_3)$ maps to $\tfrac{1}{2}(I_4 + \gamma^0\gamma^3)$, which squares to itself and does not commute with $\Phi(e_1) = \gamma^2\gamma^3$. So the dictionary separates two idempotent families that both carry the name $\tilde\Pi_{1,2}$ in the corpus:
 
 - the **chirality projectors** $\tfrac{1}{2}(1 \pm \gamma_5) \leftrightarrow \tfrac{1}{2}(e_0 \mp i_{\mathrm{Cl}} i)$, central, two of them, splitting the complexified algebra;
 - the **state projectors** $\tfrac{1}{2}(1 + b\omega) \leftrightarrow \tfrac{1}{2}(e_0 + \mu i)$, non-central, parametrized by a unit vector and the Bloch sphere.
@@ -574,7 +574,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $\Phi$ | Isomorphism $\mathbb{B} \to \mathrm{Cl}_{1,3}^{+}$ |
 | $\Phi_C$ | Its $\mathbb{C}$-linear extension |
 | $\gamma_5 = i_{\mathrm{Cl}}\omega$ | Chirality operator |
-| $P_\pm = \tfrac{1}{2}(1 \pm \gamma_5)$ | Chirality projectors |
+| $\tilde\Pi_{L,R} = \tfrac{1}{2}(1 \pm \gamma_5)$ | Chirality projectors |
 | $\sigma^{\mu\nu} = \tfrac{1}{4}[\gamma^\mu,\gamma^\nu]$ | Lorentz generators |
 | $\mathrm{rev}$ | Clifford reversal anti-automorphism |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |

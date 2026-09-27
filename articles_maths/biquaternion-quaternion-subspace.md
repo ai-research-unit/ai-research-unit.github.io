@@ -4,7 +4,7 @@
 
 The **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation: the elements of the biquaternion algebra $\mathbb{B}$ whose four complex coefficients are real. It is the copy of the real quaternion algebra inside $\mathbb{B}$, and it is one of the two distinguished subspaces that are subalgebras — indeed the only one that is non-commutative. On it the norm form is positive definite, so every non-zero element is a unit and there are no zero divisors; this is what separates it from the two sectors and from the vector subspace, where the norm form is indefinite.
 
-The article follows the same plan as its companion *Biquaternion Centre Subspace*: definition and basis, algebra and module structure, norm form, matrix image, the action of the four involutions, and the intersections with the other five subspaces. All statements are algebraic; no coordinates other than the coefficients $Q_0, \dots, Q_3$ and their real and imaginary parts $q_\mu, q'_\mu$ are used.
+The article follows the same plan as its companion *Biquaternion Centre Subspace*: definition and basis, algebra and module structure, norm form, the action of the four involutions, and the intersections with the other five subspaces. All statements are algebraic; no coordinates other than the coefficients $Q_0, \dots, Q_3$ and their real and imaginary parts $q_\mu, q'_\mu$ are used.
 
 ## Definition and Basis
 
@@ -84,11 +84,11 @@ $$
 
 a two-sphere. The element $\tilde{Q} = q_0e_0 + \mathbf{q}$ with $\mathbf{q}$ in that span satisfies $\tilde{Q}^2 = -e_0$ if and only if $q_0 = 0$ and $|\mathbf{q}| = 1$.
 
-**Proof.** For a pure imaginary element the cross product of its coefficient triple with itself vanishes, so $\tilde{Q}^2 = -N(\tilde{Q})e_0$; the equation $\tilde{Q}^2 = -e_0$ is therefore $N(\tilde{Q}) = 1$ together with slenderness of the scalar part, and the norm form on $\operatorname{span}\{e_1,e_2,e_3\}$ is the Euclidean square $|\mathbf{q}|^2$. $\square$
+**Proof.** For a pure imaginary element the cross product of its coefficient triple with itself vanishes, so $\tilde{Q}^2 = -N(\tilde{Q})e_0$; the equation $\tilde{Q}^2 = -e_0$ is therefore $N(\tilde{Q}) = 1$ together with vanishing of the scalar part, and the norm form on $\operatorname{span}\{e_1,e_2,e_3\}$ is the Euclidean square $|\mathbf{q}|^2$. $\square$
 
 ### The Commutator
 
-**Proposition.** The derived subspace of $\mathbb{H}_{\mathbb{B}}$ is the pure imaginary part, $[\mathbb{H}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}] = \operatorname{span}\{e_1, e_2, e_3\}$, which is $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ as a real Lie algebra, with brackets $[e_j, e_k] = 2e_{j \times k}$.
+**Proposition.** The derived subspace of $\mathbb{H}_{\mathbb{B}}$ is the pure imaginary part, $[\mathbb{H}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}] = \operatorname{span}\{e_1, e_2, e_3\}$, with brackets $[e_j, e_k] = 2e_{j \times k}$.
 
 **Proof.** The bracket of two subspace elements has vanishing scalar part by the product formula with real coefficients, and $e_1 = \tfrac12[e_2,e_3]$ with its cyclic analogues recovers the three basis vectors. $\square$
 
@@ -123,24 +123,6 @@ and the group of units is $\mathbb{H}_{\mathbb{B}} \setminus \{0\} \cong \mathbb
 **Proof.** From $\tilde{Q}^2 = \tilde{Q}$ with $\tilde{Q} \neq 0$ one has $\tilde{Q}(\tilde{Q} - e_0) = 0$, and the absence of zero divisors forces $\tilde{Q} = e_0$. $\square$
 
 The unit sphere $S^3$ of the subspace is the group of unit quaternions; it is the double cover of the rotation group of the three-dimensional Euclidean space, and the covering is the content of *The Rotation and Reflection Groups in the Biquaternion Algebra*. The presence of an infinite family of roots of minus one, computed above, is the geometric reason a rotation has two possible interpolating one-parameter families and the double cover is unavoidable.
-
-## The Matrix Image
-
-**Proposition.** Under the matrix realization $\Phi$, the image of the quaternion subspace is the set of matrices of the form
-
-$$
-\Phi(\tilde{Q}) = \begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix} , \qquad z = q_0 - i q_3 , \quad w = -q_2 - i q_1 ,
-$$
-
-that is, the matrices fixed by the antilinear conjugation $M \mapsto \epsilon \overline{M} \epsilon^{-1}$ with $\epsilon = \operatorname{diag}(1, -1)$. On this image the trace and the determinant read
-
-$$
-\operatorname{Tr}\Phi(\tilde{Q}) = 2q_0 = 2\operatorname{Re} z , \qquad \det\Phi(\tilde{Q}) = |z|^2 + |w|^2 = N(\tilde{Q}) > 0 .
-$$
-
-**Proof.** Substitution of the real coefficients in the general matrix $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$ gives the displayed pattern with $z = q_0 - iq_3$ and $w = -q_2 - iq_1$; the determinant is $|z|^2+|w|^2$ and is the norm form, which is positive by the theorem above. $\square$
-
-The image is a four-dimensional real subspace of $M_2(\mathbb{C})$, closed under multiplication, and its non-zero elements are invertible matrices: it is a realization of the quaternion division algebra inside the matrix algebra.
 
 ## The Four Involutions on It
 
@@ -183,11 +165,11 @@ $$
 \tilde{Q}^{-1} = \frac{e_0 - 2e_1 - 2e_2 - 2e_3}{13} ,
 $$
 
-and the product $\tilde{Q}\tilde{Q}^{-1} = e_0$ is the verification of the inverse formula. The matrix image is $\begin{pmatrix} 1 - 2i & -2 - 2i \\ 2 - 2i & 1 + 2i \end{pmatrix}$, of trace $2$ and determinant $13$; the determinant agrees with the norm form as it must.
+and the product $\tilde{Q}\tilde{Q}^{-1} = e_0$ is the verification of the inverse formula.
 
 ### The Imaginary Units and Their Products
 
-The three elements $e_1, e_2, e_3$ are roots of minus one, $e_j^2 = -e_0$, and they anticommute, $e_1e_2 = -e_2e_1 = e_3$ and cyclically. The products are again in the subspace, which is the closure statement; the commutators are twice the cyclic units, $[e_1,e_2] = 2e_3$, and the bracket is the three-dimensional cross product, the Lie algebra $\mathfrak{su}(2)$.
+The three elements $e_1, e_2, e_3$ are roots of minus one, $e_j^2 = -e_0$, and they anticommute, $e_1e_2 = -e_2e_1 = e_3$ and cyclically. The products are again in the subspace, which is the closure statement; the commutators are twice the cyclic units, $[e_1,e_2] = 2e_3$, and the bracket is the three-dimensional cross product.
 
 ### A Family of Roots of Minus One
 
@@ -197,9 +179,9 @@ $$
 \tilde{Q}^2 = (a^2 + b^2)(-e_0) = -e_0 ,
 $$
 
-so the roots of minus one in the subspace fill a two-sphere rather than a discrete set. Each root defines a one-parameter subgroup $\cos\theta\, e_0 + \sin\theta\, \tilde{Q}$ interpolating $e_0$ and $-e_0$, and it is the algebraic origin of the two-fold covering of the rotation group: the path $\theta \mapsto \cos\theta e_0 + \sin\theta \tilde{Q}$ closes at $\theta = 2\pi$ with the value $-e_0$ and only at $\theta = 4\pi$ returns to the unit.
+so the roots of minus one in the subspace fill a two-sphere rather than a discrete set. Each root defines a one-parameter subgroup $\cos\theta\, e_0 + \sin\theta\, \tilde{Q}$ interpolating $e_0$ and $-e_0$, and it is the algebraic origin of the two-fold covering of the rotation group: the rotation induced by the subgroup turns through the angle $2\theta$, so it is the identity at $\theta = \pi$, where the element is $-e_0$, while the element itself returns to $e_0$ only at $\theta = 2\pi$.
 
-### A Non-Unit Element of the Subspace
+### A Unit Whose Square Is Not a Scalar
 
 The element $\tilde{Q} = e_0 + e_1$ has $N(\tilde{Q}) = 2$, which is non-zero, so it is a unit of the subspace although its square is not a scalar:
 
@@ -211,7 +193,7 @@ a pure imaginary element. Its inverse is $(e_0 - e_1)/2$, and the computation sh
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the set of elements with real coefficients, a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, and the real form of the algebra, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \otimes_{\mathbb{R}} \mathbb{C}$. It is a subalgebra, isomorphic to the real quaternions, non-commutative, central simple, and a division algebra: the norm form restricts to the positive definite sum of four squares, every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $e_0$. Its group of units is $\mathbb{R}^4 \setminus \{0\}$, retracting onto the unit sphere $S^3$, and the roots of minus one in it fill a two-sphere. Its matrix image is the set of matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, on which the determinant is $|z|^2+|w|^2$. Of the four involutions, complex conjugation fixes the subspace pointwise, quaternion and Hermitian conjugation coincide on it and act as quaternion conjugation, and reversal acts as its negative; the subspace is invariant under all four. It is complementary to the anti-quaternion subspace, its intersection with the vector subspace is the pure imaginary triple, and its decompositions along the coordinate blocks are $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the set of elements with real coefficients, a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, and the real form of the algebra, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \otimes_{\mathbb{R}} \mathbb{C}$. It is a subalgebra, isomorphic to the real quaternions, non-commutative, central simple, and a division algebra: the norm form restricts to the positive definite sum of four squares, every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $e_0$. Its group of units is $\mathbb{R}^4 \setminus \{0\}$, retracting onto the unit sphere $S^3$, and the roots of minus one in it fill a two-sphere. Of the four involutions, complex conjugation fixes the subspace pointwise, quaternion and Hermitian conjugation coincide on it and act as quaternion conjugation, and reversal acts as its negative; the subspace is invariant under all four. It is complementary to the anti-quaternion subspace, its intersection with the vector subspace is the pure imaginary triple, and its decompositions along the coordinate blocks are $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$.
 
 ## Summary of Notation
 
@@ -225,8 +207,6 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex 
 | $q_0, q_1, q_2, q_3$ | the four real coefficients of an element of the subspace |
 | $N(\tilde{Q})$ | the norm form, $q_0^2+q_1^2+q_2^2+q_3^2$ on the subspace |
 | $S^3$ | the unit sphere of the subspace, $N(\tilde{Q}) = 1$ |
-| $\mathfrak{su}(2)$ | the derived subspace $\operatorname{span}\{e_1,e_2,e_3\}$ |
-| $z, w$ | the complex entries of $\Phi(\tilde{Q})$ in the quaternionic pattern |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
 
 ## Further Reading

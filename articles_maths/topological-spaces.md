@@ -7,7 +7,7 @@ A group carries an operation, and to speak of an operation that is *continuous* 
 
 The material is standard and is stated with proofs or with an explicit citation to the standard literature. Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $F$, $K$ denote fields; the topological examples are mostly $\mathbb{R}$ and $\mathbb{C}$, and the article on *Metric, Uniform and Complete Spaces*, written in parallel, takes up the metric case in detail. The value system is that of the corpus: a topology is described by open sets and their finite intersections and arbitrary unions, and every subsequent statement is checked against that description. No physics is invoked.
 
-The article onmay be consulted for the concrete theory of the real line, which is the model case of everything below.
+The article on *The Real Numbers* may be consulted for the concrete theory of the real line, which is the model case of everything below.
 
 ## Topological Spaces
 
@@ -316,7 +316,7 @@ $$
 
 **Example.** The one-point compactification of $\mathbb{R}^n$ is $S^n$; of $\mathbb{R}$ is $S^1$; of a discrete space is the **Alexandrov compactification**, with $\infty$ the only non-isolated point. The one-point compactification of the natural numbers is the convergent sequence $\{0\} \cup \{1/n\}$.
 
-**Remark.** Local compactness and $\sigma$-compactness are the hypotheses under which measure theory produces the standard measures. A locally compact Hausdorff group admits a Haar measure, and a locally compact Hausdorff space has a rich supply of continuous functions of compact support; both facts are used . The relevant topological input is exhausted by the results above: Tychonoff for products and inverse limits, the quotient topology for coset spaces, and the separation theorems for the construction of functions.
+**Remark.** Local compactness and $\sigma$-compactness are the hypotheses under which measure theory produces the standard measures. A locally compact Hausdorff group admits a Haar measure, and a locally compact Hausdorff space has a rich supply of continuous functions of compact support; both facts are used in Part III, where the measure and the integral are available, and both are named here rather than proved. The relevant topological input is exhausted by the results above: Tychonoff for products and inverse limits, the quotient topology for coset spaces, and the separation theorems for the construction of functions.
 
 ## Summary
 

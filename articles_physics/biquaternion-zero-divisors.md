@@ -11,7 +11,7 @@ The zero divisors split into two families, and the split is the same one that or
 - the **pure** zero divisors, with vanishing scalar part, which square to zero: the **nilpotent** or **parabolic** elements, the null generators of the algebra's flow;
 - the **non-pure** zero divisors, with nonzero scalar part, which are complex multiples of idempotents: a null element of this family is a **scaled projector**, and the normalised element is a pure state.
 
-The article closes with the distribution of the zero divisors over the six distinguished subspaces — this is where the causal structure appears explicitly, as the double cones inside the two Hermitian sectors — and with the zero divisor set as the boundary of the polar decomposition, reached in the limit of infinite rapidity.
+The article closes with the distribution of the zero divisors over the six distinguished subspaces — this is where the causal structure appears explicitly, as the double cones inside the two Hermitian sectors — and with the zero divisor set itself.
 
 **Conventions.** The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$; a general element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\bar{\tilde{Q}}$, $\tilde{Q}^*$ and $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$, and the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
 
@@ -291,28 +291,6 @@ $$
 
 **Dimension.** $\mathcal{Z}$ has **real dimension 6** (complex dimension 3). The norm form is one complex equation in the four complex coefficients — two real equations in eight real coordinates — so its solution set is a complex hypersurface in $\mathbb{C}^4$ of complex dimension 3. The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real 6-manifold away from the origin.
 
-### The Zero Divisors as the Boundary of the Polar Decomposition
-
-The set $\mathcal{Z}$ is the boundary at which the polar representation of *The Polar Representation of Biquaternions* stops, and what sits on that boundary is a minimal idempotent. So the degenerate elements are not an unrelated pathology: they are the limit of the polar family, and the classification describes the face of a domain rather than a separate set of exceptions.
-
-For a zero divisor the four factors of the polar representation do not exist, since the modulus vanishes, $\rho = \sqrt{N(\tilde{Q})} = 0$, whereas the product of a scale with three unit factors has norm form $\rho^2$. The boundary is nevertheless reached from inside, by the boost family. Take the boost of rapidity $\psi$ about the null direction $-e_3$ together with the real scale that collapses with it:
-
-$$
-e^{-\psi/2}\Big(\cosh\tfrac{\psi}{2}\,e_0-i\sinh\tfrac{\psi}{2}\,e_3\Big) \longrightarrow \tfrac12\big(e_0-ie_3\big), \qquad \psi\to\infty ,
-$$
-
-the difference from the limit being exactly $\tfrac12e^{-\psi}$ in each of the two nonzero coefficients (verified at $\psi = 20,40,80$). The limit is the minimal idempotent $\tfrac12(e_0+\xi i)$ with $\xi = -e_3$, Hermitian and of norm form zero: the boost's positive factor collapses, the limit is not a unit, and the unit group is not closed in the algebra.
-
-**Physical reading.** This is the algebraic form of the statement that a massless particle is the infinite-rapidity limit of a massive one. The boosting frame's polar data degenerate: the modulus goes to zero (the ordinary rest-mass factor is $e^{-\psi/2}$), and what remains is a projector — the direction the boost has become asymptotic to. The corpus's "a photon carries a pure state direction rather than a frame" is this limit. Note where the collapse lands: on a Hermitian minimal idempotent, that is, on a state, which is why the framework can describe a photon's polarisation state without ever constructing a rest frame for it.
-
-Sangwine and Hitzer exhibit the same object inside the degenerate word of a zero divisor. For
-
-$$
-p = \tfrac12\big(e_0+e_1+ie_2-ie_3\big) = \sqrt2\cdot\frac{e_0+e_1}{\sqrt2}\cdot\tfrac12\big(e_0-ie_3\big),
-$$
-
-the element $p$ has vanishing norm form and is idempotent, the last factor is that minimal idempotent, and the numerical factor $\sqrt2$ is the inverse modulus of the *real part* of $p$, not of $p$ (checked). A zero divisor therefore has no four-factor representation, but it does have a boundary word — a real scale, a unit complex number and a Hermitian idempotent of norm form zero — produced by normalising the real part of the element rather than the element itself, the degenerate case of the algorithm that normalises the Hermitian square root.
-
 ## Summary
 
 The zero divisors of the biquaternion algebra are the nonzero elements on which the norm form vanishes. They split into two families:
@@ -324,7 +302,7 @@ The idempotents appearing here — trivial, Hermitian and general, with their bi
 
 Of the six distinguished subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors (phases, rotations and pure boosts are never null), while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone — the light cone of the informational and of the material sector, whose complement's three components are the future timelike, past timelike and spacelike regions — and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone of real dimension 4. A generic zero divisor lies in none of the six.
 
-The zero divisor set is a complex cone of complex dimension 3, real dimension 6, in $\mathbb{B}\cong\mathbb{C}^4$, with the origin removed. It is the boundary of the polar decomposition, reached at infinite rapidity, where the polar factors collapse onto a minimal idempotent; the degenerate word of a zero divisor has the same shape, with the modulus taken on the real part rather than on the element.
+The zero divisor set is a complex cone of complex dimension 3, real dimension 6, in $\mathbb{B}\cong\mathbb{C}^4$, with the origin removed.
 
 ## Summary of Notation
 
@@ -342,7 +320,6 @@ The zero divisor set is a complex cone of complex dimension 3, real dimension 6,
 | $\mathbb{M}_+$ | Hermitian subspace; informational coordinate; light cone of the informational sector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace; material coordinate; light cone of the material sector |
 | $ict\,e_0+\mathbf{x}$, $ct'\,e_0+i\mathbf{x}'$ | Material and informational coordinates |
-| $\psi$ | Rapidity; the polar boundary is the limit $\psi\to\infty$ |
 
 ## Further Reading
 
@@ -351,5 +328,3 @@ The zero divisor set is a complex cone of complex dimension 3, real dimension 6,
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the classification of the roots of $-1$.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- *The Polar Representation of Biquaternions* (`articles_physics/the-polar-representation-of-biquaternions.md`), for the four-factor polar decomposition whose boundary the zero divisor set is.
-- S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for the degenerate word of a zero divisor and the minimal idempotent discussed in the section on the boundary.

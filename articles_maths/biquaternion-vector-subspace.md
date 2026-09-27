@@ -66,11 +66,17 @@ The two summands are precisely two of the four coordinate blocks of the algebra:
 
 ### It Is the Lie Algebra of the Unit-Norm Group
 
-**Theorem.** Let $\tilde{Q} \in \mathbb{B}$ and let $\Phi$ be the matrix realization. Then $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ if and only if the one-parameter family $t \mapsto \Phi^{-1}\!\left(e^{t\Phi(\tilde{Q})}\right)$ lies in the norm-one group $\{\tilde{Q} : N(\tilde{Q}) = 1\}$ for all real $t$.
+**Theorem.** The vector subspace is the Lie algebra of the norm-one group $\{\tilde{Q} : N(\tilde{Q}) = 1\}$: it is the tangent space at $e_0$ of that group.
 
-**Proof.** $\det \Phi(\tilde{Q}) = N(\tilde{Q})$, and $\det e^{M} = e^{\operatorname{Tr}M}$ for every matrix $M$, so the norm form of the exponential is $e^{t\operatorname{Tr}\Phi(\tilde{Q})}$; this equals $1$ for all $t$ exactly when $\operatorname{Tr}\Phi(\tilde{Q}) = 0$, and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ vanishes exactly on the vector subspace. $\square$
+**Proof.** The norm-one group is a smooth subgroup of the units, so its Lie algebra is its tangent space at the identity, and an element $\tilde{Q}$ lies in that tangent space exactly when the derivative at $t = 0$ of $t \mapsto N(e_0 + t\tilde{Q})$ vanishes. By multiplicativity of the norm form,
 
-The proposition identifies $\mathrm{Vect}(\mathbb{B})$ with the Lie algebra of the unit-norm group, which is $\mathfrak{sl}(2, \mathbb{C})$ in the matrix picture; the same statement appears in *Biquaternion Exponential and Lie Group Structure* from the side of the group.
+$$
+N(e_0 + t\tilde{Q}) = (e_0 + t\tilde{Q})(e_0 + t\bar{\tilde{Q}}) = e_0 + t\bigl(\tilde{Q} + \bar{\tilde{Q}}\bigr) + t^2 N(\tilde{Q}) ,
+$$
+
+whose linear coefficient is $\tilde{Q} + \bar{\tilde{Q}} = 2\operatorname{Sc}(\tilde{Q})$; this vanishes exactly on the vector subspace. $\square$
+
+The proposition identifies $\mathrm{Vect}(\mathbb{B})$ with the Lie algebra of the norm-one group, a statement developed in *Biquaternion Lie Algebra and Lie Group Structure* from the side of the group.
 
 ## Algebra and Module Structure
 
@@ -140,24 +146,6 @@ Like the centre subspace and unlike the four others, the vector subspace is a su
 
 The zero divisors of the vector subspace are called the **pure zero divisors** in *Biquaternion Zero Divisors*, which develops the classification and the two families of the algebra as a whole.
 
-## The Matrix Image
-
-**Proposition.** Under the matrix realization $\Phi$,
-
-$$
-\Phi\!\left(\mathrm{Vect}(\mathbb{B})\right) = \left\{ M \in M_2(\mathbb{C}) : \operatorname{Tr} M = 0 \right\} = \mathfrak{sl}(2, \mathbb{C}) .
-$$
-
-**Proof.** $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$, so the trace vanishes exactly when the scalar part does. $\square$
-
-In the coefficients the image reads
-
-$$
-\Phi(\tilde{Q}) = \begin{pmatrix} -iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & iQ_3 \end{pmatrix} ,
-$$
-
-the general traceless matrix. The determinant of the image is the norm form, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$, so the null elements are exactly the singular traceless matrices, and the nilpotent ones are the rank-one elements with zero square, in agreement with the nilpotency proved above.
-
 ## The Four Involutions on It
 
 In the basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ the four involutions act diagonally:
@@ -169,7 +157,7 @@ In the basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ the four involutions act diagonal
 | ${}^{\dagger}$ | $\operatorname{diag}(-1,-1,-1,1,1,1)$ | real vectors negated, imaginary vectors fixed |
 | $\flat$ | $\operatorname{diag}(1,1,1,-1,-1,-1)$ | as ${}^{*}$ |
 
-The subspace is invariant under all four. Quaternion conjugation acts as the negative of the identity, which is the defining property of the subspace; complex conjugation exchanges the two coordinate blocks it contains, so it does not preserve either $\operatorname{span}\{e_k\}$ or $\operatorname{span}\{ie_k\}$ separately — those two are preserved by $\dagger$ and by $\flat$ in the exchanged roles.
+The subspace is invariant under all four. Quaternion conjugation acts as the negative of the identity, which is the defining property of the subspace; complex conjugation preserves the two coordinate blocks it contains, fixing $\operatorname{span}\{e_k\}$ and negating $\operatorname{span}\{ie_k\}$, and Hermitian conjugation preserves them with the two roles exchanged, negating the first and fixing the second; reversal acts as complex conjugation does.
 
 ## Relations to the Other Five Subspaces
 
@@ -206,12 +194,12 @@ The two computations are the two faces of the product formula, and together they
 For $\tilde{Q} = e_1 + e_2$ one has $N(\tilde{Q}) = 2$, so $\tilde{Q}$ is a unit with $\tilde{Q}^2 = -2e_0$ and
 
 $$
-\tilde{Q}^{-1} = -\frac{\bar{\tilde{Q}}}{2} = \frac{e_1 + e_2}{2} ,
+\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{2} = -\frac{e_1 + e_2}{2} ,
 $$
 
 which is again a vector element; the inverse of a non-null vector stays in the subspace, as the formula for the inverse of a pure element requires.
 
-### A Null Vector and Its Matrix
+### A Null Vector
 
 For $\tilde{Q} = e_1 + ie_2$ one has $N(\tilde{Q}) = 1 + i^2 = 0$, so $\tilde{Q}$ is a zero divisor, and indeed
 
@@ -219,13 +207,7 @@ $$
 \tilde{Q}^2 = -N(\tilde{Q})e_0 = 0 , \qquad \tilde{Q} \neq 0 ,
 $$
 
-so $\tilde{Q}$ is its own annihilator. Its matrix image is
-
-$$
-\Phi(\tilde{Q}) = \begin{pmatrix} 0 & -2i \\ 0 & 0 \end{pmatrix} ,
-$$
-
-of rank one and square zero, the Jordan block of size two in nilpotent form. The example exhibits the coincidence of three conditions that hold only on the vector subspace among the six: purity of the element, nullity of the norm form, and nilpotency of index two.
+so $\tilde{Q}$ is its own annihilator. The example exhibits the coincidence of three conditions that hold only on the vector subspace among the six: purity of the element, nullity of the norm form, and nilpotency of index two.
 
 ### An Imaginary Vector and the Cross Product
 
@@ -235,11 +217,11 @@ $$
 e_1 \cdot ie_2 = i e_3 \in \mathrm{Vect}(\mathbb{B}) , \qquad [e_1, ie_2] = 2ie_3 ,
 $$
 
-with vanishing dot product of the triples $(1, 0, 0)$ and $(0, i, 0)$. The bracket relations with a factor $i$ are the complexification of the real ones and are the reason the Lie algebra of the subspace is $\mathfrak{sl}(2, \mathbb{C})$ over $\mathbb{C}$ while its real form $\operatorname{span}\{e_1,e_2,e_3\}$ is $\mathfrak{su}(2)$.
+with vanishing dot product of the triples $(1, 0, 0)$ and $(0, i, 0)$. The bracket relations with a factor $i$ are the complexification of the real ones.
 
 ## Summary
 
-The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quaternion conjugation, the set of elements of vanishing scalar part, a real vector space of dimension $6$ with basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, splitting into the real and imaginary vectors. It is simultaneously the kernel of the scalar-part functional, the derived subspace $[\mathbb{B}, \mathbb{B}]$, and the Lie algebra of the unit-norm group; its matrix image is $\mathfrak{sl}(2,\mathbb{C})$. It is not a subalgebra and not a module over the quaternion or anti-quaternion subspaces, but it is closed under the commutator, where the bracket is twice the cross product of the coefficient triples. The square of a vector element is central, $\tilde{Q}^2 = -N(\tilde{Q})e_0$, so null elements are nilpotent and units have their inverses in the subspace. The norm form restricts to $Q_1^2+Q_2^2+Q_3^2$, complex-valued, of real signature $(3,3)$; the zero divisors are exactly the null elements. Quaternion conjugation acts as minus the identity, complex conjugation exchanges the two coordinate blocks it contains, and all four involutions preserve the subspace. It is complementary to the centre, and its intersections with the other four subspaces are three-dimensional.
+The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quaternion conjugation, the set of elements of vanishing scalar part, a real vector space of dimension $6$ with basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, splitting into the real and imaginary vectors. It is simultaneously the kernel of the scalar-part functional, the derived subspace $[\mathbb{B}, \mathbb{B}]$, and the Lie algebra of the unit-norm group. It is not a subalgebra and not a module over the quaternion or anti-quaternion subspaces, but it is closed under the commutator, where the bracket is twice the cross product of the coefficient triples. The square of a vector element is central, $\tilde{Q}^2 = -N(\tilde{Q})e_0$, so null elements are nilpotent and units have their inverses in the subspace. The norm form restricts to $Q_1^2+Q_2^2+Q_3^2$, complex-valued, of real signature $(3,3)$; the zero divisors are exactly the null elements. Quaternion conjugation acts as minus the identity, complex conjugation fixes the coordinate block $\operatorname{span}\{e_k\}$ and negates $\operatorname{span}\{ie_k\}$, and all four involutions preserve the subspace. It is complementary to the centre, and its intersections with the other four subspaces are three-dimensional.
 
 ## Summary of Notation
 
@@ -254,7 +236,6 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 | $\operatorname{span}\{ie_1,ie_2,ie_3\}$ | the imaginary vectors |
 | $[\mathbb{B},\mathbb{B}]$ | the derived subspace, equal to $\mathrm{Vect}(\mathbb{B})$ |
 | $N(\tilde{Q}) = Q_1^2+Q_2^2+Q_3^2$ | the norm form on the subspace |
-| $\mathfrak{sl}(2,\mathbb{C})$ | the matrix image of the subspace |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
 
 ## Further Reading
@@ -264,6 +245,6 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the pure and non-pure zero divisors and the two families of the algebra
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions and the two spaces each defines
-- *Biquaternion Exponential and Lie Group Structure* (`articles_maths/biquaternion-exponential-and-lie-group-structure.md`), for the Lie algebra of the group of units and of the norm-one group
+- *Biquaternion Lie Algebra and Lie Group Structure* (`articles_maths/biquaternion-lie-algebra-and-lie-group-structure.md`), for the Lie algebra of the group of units and of the norm-one group
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm form and the invertibility criterion
 - *The Orthogonal Lie Algebra* (`articles_maths/the-orthogonal-lie-algebra.md`), for the cross-product Lie structure in its general setting

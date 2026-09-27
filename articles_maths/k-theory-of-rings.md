@@ -187,7 +187,7 @@ $$
 
 **Remark.** The two functors above are the beginning of a sequence. For $n\ge2$ the group $K_n(R)$ is defined as a homotopy group of a construction applied to the category of finitely generated projective $R$-modules; the two standard constructions are the plus-construction on the classifying space of $GL(R)$, which yields the Quillen K-groups, and the classifying space of the category itself, which yields the same groups and is the source of the agreements with the functors computed here: $K_0(R)$ is the Grothendieck group of the category of finitely generated projectives, and $K_1(R)$ is recovered from the fundamental group of the classifying space abelianised by its elementary subgroup. The definitions, those agreements, the fundamental theorems (resolution, dévissage, localisation, and homotopy invariance in all degrees) and the computations form, which is; nothing in the present article rests on them, and the article is complete at $K_0$ and $K_1$.
 
-**Remark.** Two further theories carry the name K-theory but take different input. The K-theory of vector bundles over a space and the K-theory of projections in a topological algebra both belong to Part II, where they are treated andboth; they presuppose a topology that this Part does not have, and they are not related to the present constructions by any result stated here.
+**Remark.** Two further theories carry the name K-theory but take different input. The K-theory of vector bundles over a space and the K-theory of projections in a topological algebra both belong to Part II, where they are treated as well; they presuppose a topology that this Part does not have, and they are not related to the present constructions by any result stated here.
 
 ## Summary
 

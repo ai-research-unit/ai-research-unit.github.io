@@ -1,3 +1,4 @@
+
 # __Complex Special Functions__
 
 ## Introduction
@@ -664,7 +665,7 @@ $$
 
 ### Applications
 
-The Lambert W function solves equations of the form $a e^z + b z + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the solution of the time-dependent Schrödinger equation for certain potentials.
+The Lambert W function solves equations of the form $a e^z + b z + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the inversion of the iterated exponential $x^x = a$, where $x = e^{W(\ln a)}$.
 
 ## Summary
 
@@ -701,5 +702,5 @@ The article closes with the higher transcendental functions: the Airy functions 
 - N. N. Lebedev, *Special Functions and Their Applications* (Dover, 1972), for a thorough treatment of the classical functions.
 - G. E. Andrews, R. Askey, and R. Roy, *Special Functions* (Cambridge, 1999), for the modern unified approach.
 - M. Abramowitz and I. A. Stegun, *Handbook of Mathematical Functions* (Dover, 1965), for tables and formulas.
-- NIST Digital Library of Mathematical Functions, for the modern reference.
+- F. W. J. Olver, A. B. Olde Daalhuis, D. W. Lozier and others (eds.), *NIST Digital Library of Mathematical Functions* (National Institute of Standards and Technology, 2010–), for the modern reference.
 

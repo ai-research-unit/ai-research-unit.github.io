@@ -1,3 +1,4 @@
+
 # __The Real Numbers ($\mathbb{R}$)__
 
 ## Introduction
@@ -6,7 +7,7 @@ The real numbers are the order completion of the rationals: the unique ordered f
 
 This article carries out the two constructions, records the order, field and topological properties of $\mathbb{R}$, proves that the only field automorphism of $\mathbb{R}$ is the identity, and locates $\mathbb{R}$ among the ordered fields and among the completions of $\mathbb{Q}$. Real closedness, the proof that $\mathbb{R}$ is real closed, and the uniqueness of the complete ordered field are proved in *Real-Closed and Complete Ordered Fields* and are used here; the constructions by cuts and by Cauchy sequences also underlie *The Complex Numbers* and the valued completion of *Absolute Values, Valuations and Completions*.
 
-Throughout, $\mathbb{Q}$ is the field of rationals with its unique order and $\mathbb{R}$ is the order-complete ordered field. Convergence and continuity are used only as the completion and order theories make them necessary; the analytic theory of functions on $\mathbb{R}$ belongs to the companion real-analysis articles of categories 25–26.
+Throughout, $\mathbb{Q}$ is the field of rationals with its unique order and $\mathbb{R}$ is the order-complete ordered field. Convergence and continuity are used only as the completion and order theories make them necessary; the analytic theory of functions on $\mathbb{R}$ belongs to the companion articles *Real Analysis* and *Real Integration*.
 
 ---
 
@@ -214,7 +215,7 @@ In the order-theoretic terms of Cantor's theorems, $\mathbb{Q}$ is the unique co
 
 ## Summary of Notation
 
-| Symbol | Meaning |
+| symbol | meaning |
 |---|---|
 | $\mathbb{R}$ | The real numbers, the complete ordered field |
 | $\mathbb{Q}$ | Rational numbers, prime field |

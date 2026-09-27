@@ -5,20 +5,20 @@
 
 This article studies the action of the unit split-quaternions on the vector subspace. It identifies the unit groups, computes the adjoint action, proves the double cover $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ of the Lorentz group of signature $(2,1)$, describes the elliptic and hyperbolic one-parameter subgroups, and classifies the elements of the vector subspace as timelike, lightlike or spacelike according to their orbits.
 
-The split-quaternion algebra, its vector subspace $V$, its norm form $N$, its conjugation and its idempotents are assumed from *Split-Quaternion Algebra*; the group of units, the norm-one group and the signature of the restricted form are assumed from *Split-Quaternion Norm and Invertibility*. The defining module and the matrix model are assumed from *Split-Quaternion Matrix Representations*, and the representations of the algebra from *Split-Quaternion Representations*. The Lorentz groups and the orthogonal groups are those of *The Orthogonal Lie Algebra* and *Isometries and Orthogonal Transformations*; the hyperbolic plane that the sheets carry is the subject of *Split-Quaternions and Hyperbolic Geometry*, to which the last step of this article points. Nothing physical is invoked.
+The split-quaternion algebra, its vector subspace $V$, its norm form $N$, its conjugation and its idempotents are assumed from *Split-Quaternion Algebra*; the group of units, the norm-one group and the signature of the restricted form are assumed from *Split-Quaternion Norm and Invertibility*. The Lorentz groups and the orthogonal groups are those of *The Orthogonal Lie Algebra* and *Isometries and Orthogonal Transformations*; the hyperbolic plane that the sheets carry is the subject of *Split-Quaternions and Hyperbolic Geometry*, to which the last step of this article points. Nothing physical is invoked.
 
 ## The Unit Split-Quaternions
 
 **Definition.** The **norm-one group** of the algebra is
 
 $$
-U = \{x \in \mathbb{H}_{\mathrm{s}} : N(x) = 1\},
+U = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : N(\tilde q) = 1\},
 $$
 
 and the set of elements of norm $\pm 1$ is
 
 $$
-U^{\pm} = \{x \in \mathbb{H}_{\mathrm{s}} : N(x) = \pm 1\} = \mathrm{SL}_2^{\pm}(\mathbb{R}).
+U^{\pm} = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : N(\tilde q) = \pm 1\} = \mathrm{SL}_2^{\pm}(\mathbb{R}).
 $$
 
 Both are groups under multiplication, and $U$ is a subgroup of $U^{\pm}$.
@@ -26,18 +26,18 @@ Both are groups under multiplication, and $U$ is a subgroup of $U^{\pm}$.
 **Theorem (The Two Components).** The group $U$ is isomorphic to $\mathrm{SL}_2(\mathbb{R})$ and is connected; the group $U^{\pm}$ has exactly two connected components,
 
 $$
-U = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{x : N(x) = -1\} = \mathrm{SL}_2^{-}(\mathbb{R}),
+U = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{\tilde q : N(\tilde q) = -1\} = \mathrm{SL}_2^{-}(\mathbb{R}),
 $$
 
 and the two components are interchanged by multiplication by $e_2$. The full group of units is
 
 $$
-\mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\} \cong GL_2(\mathbb{R}),
+\mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\},
 $$
 
-its centre is $\mathbb{R}^{\times}$, and it has the two components $\{N > 0\} = GL_2^{+}(\mathbb{R})$ and $\{N < 0\} = GL_2^{-}(\mathbb{R})$.
+its centre is $\mathbb{R}^{\times}$, and it has the two components $\{N > 0\}$ and $\{N < 0\}$.
 
-**Proof.** The identification $U \cong \mathrm{SL}_2(\mathbb{R})$ and the isomorphism $\mathbb{H}_{\mathrm{s}}^{\times} \cong GL_2(\mathbb{R})$ are (*Split-Quaternion Norm and Invertibility*, §*The Group of Units*), where the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the splitting of the units into the two components $\{N>0\}$, $\{N<0\}$ are recorded. The element $e_2$ has $N(e_2) = -1$ and $e_2^{-1} = e_2$, so multiplication by $e_2$ exchanges the two norm levels; it therefore identifies the two components of $U^{\pm}$, and since $U$ is connected, $U^{\pm}$ has exactly two components. The centre is $\mathbb{R}$ by (*Split-Quaternion Algebra*, §*The Centre and Simplicity*), so the central units are the nonzero scalars. $\square$
+**Proof.** The identification $U \cong \mathrm{SL}_2(\mathbb{R})$ and the description of the unit group are (*Split-Quaternion Norm and Invertibility*, §*The Group of Units*), where the connectedness of the norm-one group and the splitting of the units into the two components $\{N>0\}$, $\{N<0\}$ are recorded. The element $e_2$ has $N(e_2) = -1$ and $e_2^{-1} = e_2$, so multiplication by $e_2$ exchanges the two norm levels; it therefore identifies the two components of $U^{\pm}$, and since $U$ is connected, $U^{\pm}$ has exactly two components. The centre is $\mathbb{R}$ by (*Split-Quaternion Algebra*, §*The Centre and Simplicity*), so the central units are the nonzero scalars. $\square$
 
 **Remark (Two readings of "the unit split-quaternions").** The norm-one group $U$ is connected and has no two-component structure; the two components appear for the group $U^{\pm}$ of units of norm $\pm 1$. Both readings occur in the literature, and this article keeps them apart: the double cover below is a statement about $U = \mathrm{SL}_2(\mathbb{R})$, and the second component of $U^{\pm}$ is reached by $e_2$ and acts by isometries reversing the time direction.
 
@@ -63,7 +63,7 @@ $$
 
 has kernel $\{\pm 1\}$.
 
-**Proof.** *The maps land in $V$.* Conjugation by $u$ is an algebra automorphism, and it commutes with the conjugation, since $\overline{uvu^{-1}} = \bar{u}\,\bar{v}\,\bar{u}^{-1}$ and $\overline{u^{-1}} = \bar{u}^{-1}$. The vector subspace is the $-1$ eigenspace of the conjugation by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), so it is mapped to itself. *The form is preserved.* $N(uvu^{-1}) = N(u)N(v)N(u)^{-1} = N(v)$ by multiplicativity, since $N$ is real and nonzero on a unit. Hence $\Theta(u) \in O(V,N)$. *Kernel.* If $\Theta(u) = \mathrm{id}$ then $u$ commutes with every element of $V$; since $1$ and $V$ generate the algebra, $u$ is central, so $u \in \mathbb{R}^{\times}$. Conversely every nonzero scalar is in the kernel. *Determinant.* The map $\det\circ\,\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \to \{\pm 1\}$ is a continuous homomorphism. Its domain has the two components $\{N>0\}$ and $\{N<0\}$; the first is $GL_2^{+}(\mathbb{R})$, which is connected, so $\det\Theta \equiv 1$ there. On the second component, $\Phi(e_2) = K$ is a reflection, and the computation of (*Split-Quaternion Algebra*, §*The Multiplication Table*) gives $e_2e_1e_2 = -e_1$, $e_2e_2e_2 = e_2$, $e_2e_3e_2 = -e_3$, so $\Theta(e_2) = \operatorname{diag}(-1,1,-1)$ in the basis $e_1,e_2,e_3$ and $\det\Theta(e_2) = +1$. Hence $\det\Theta \equiv 1$ and the image lies in $SO(2,1)$. *The restricted kernel.* The kernel on $U$ is the centre intersected with $\{N=1\}$, that is $\{\pm 1\}$. $\square$
+**Proof.** *The maps land in $V$.* Conjugation by $u$ is an algebra automorphism, and it commutes with the conjugation, since $\overline{uvu^{-1}} = \bar{u}\,\bar{v}\,\bar{u}^{-1}$ and $\overline{u^{-1}} = \bar{u}^{-1}$. The vector subspace is the $-1$ eigenspace of the conjugation by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), so it is mapped to itself. *The form is preserved.* $N(uvu^{-1}) = N(u)N(v)N(u)^{-1} = N(v)$ by multiplicativity, since $N$ is real and nonzero on a unit. Hence $\Theta(u) \in O(V,N)$. *Kernel.* If $\Theta(u) = \mathrm{id}$ then $u$ commutes with every element of $V$; since $1$ and $V$ generate the algebra, $u$ is central, so $u \in \mathbb{R}^{\times}$. Conversely every nonzero scalar is in the kernel. *Determinant.* The map $\det\circ\,\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \to \{\pm 1\}$ is a continuous homomorphism. Its domain has the two components $\{N>0\}$ and $\{N<0\}$; the first is connected, so $\det\Theta \equiv 1$ there. On the second component, the computation of (*Split-Quaternion Algebra*, §*The Multiplication Table*) gives $e_2e_1e_2 = -e_1$, $e_2e_2e_2 = e_2$, $e_2e_3e_2 = -e_3$, so $\Theta(e_2) = \operatorname{diag}(-1,1,-1)$ in the basis $e_1,e_2,e_3$ and $\det\Theta(e_2) = +1$. Hence $\det\Theta \equiv 1$ and the image lies in $SO(2,1)$. *The restricted kernel.* The kernel on $U$ is the centre intersected with $\{N=1\}$, that is $\{\pm 1\}$. $\square$
 
 **Corollary (The Image of the Unit Group).** The image of the full unit group is
 
@@ -103,9 +103,9 @@ This is a structural difference from the quaternion case and it is worth naming:
 
 ## The Lorentz Group of Signature $(2,1)$
 
-**Definition.** The **Lorentz group of signature $(2,1)$** is the isometry group $O(V,N) \cong O(2,1)$ of the form $N = b^2 - c^2 - d^2$ on the three-dimensional vector subspace; its **identity component** is $\mathrm{SO}^{+}(2,1)$, the group of isometries of determinant $+1$ preserving the time orientation.
+**Definition.** The **Lorentz group of signature $(2,1)$** is the isometry group $O(V,N) \cong O(2,1)$ of the form $N = q_1^2 - q_2^2 - q_3^2$ on the three-dimensional vector subspace; its **identity component** is $\mathrm{SO}^{+}(2,1)$, the group of isometries of determinant $+1$ preserving the time orientation.
 
-**Theorem (The Structure of the Group).** The group $O(2,1)$ has four connected components, distinguished by the signs of $\det$ and of the coordinate $b$ of a timelike vector; the subgroup $SO(2,1)$ of determinant $+1$ has two components, and its identity component is $\mathrm{SO}^{+}(2,1)$, a three-dimensional group isomorphic to $\mathrm{PSL}_2(\mathbb{R})$. The full group of units of the algebra maps onto $SO(2,1)$ with kernel $\mathbb{R}^{\times}$, and the norm-one group maps onto $\mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$.
+**Theorem (The Structure of the Group).** The group $O(2,1)$ has four connected components, distinguished by the signs of $\det$ and of the coordinate $q_1$ of a timelike vector; the subgroup $SO(2,1)$ of determinant $+1$ has two components, and its identity component is $\mathrm{SO}^{+}(2,1)$, a three-dimensional group isomorphic to $\mathrm{PSL}_2(\mathbb{R})$. The full group of units of the algebra maps onto $SO(2,1)$ with kernel $\mathbb{R}^{\times}$, and the norm-one group maps onto $\mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$.
 
 **Proof.** The components of $O(2,1)$ are described in *Isometries and Orthogonal Transformations*; the isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ is the double cover of the preceding section, and the statement about the images and kernels is the theorem on the adjoint representation and its corollary. $\square$
 
@@ -129,7 +129,7 @@ $$
 
 The subgroups obtained from the solutions of $\xi^2 = -1$ are the compact subgroups of $U$, and they exhaust the conjugacy classes of maximal compact subgroups.
 
-**Proof.** The norm is $N(g(\theta)) = \cos^2\theta \cdot 1 + \sin^2\theta \cdot N(\xi) = \cos^2\theta + \sin^2\theta = 1$, using $\xi^2 = -N(\xi) = -1$; the addition formula for $g$ follows from $\xi^2 = -1$. The element $g$ commutes with $\xi$, so $\xi$ is fixed; and $\xi^{\perp}$ is the orthogonal plane of dimension two, which is definite because $\xi$ has positive norm, so that conjugation by $g$ acts on it as a rotation; the explicit computation with $\xi = e_1$ in the basis $e_2,e_3$ gives $\Theta(g(\theta))e_2 = \cos 2\theta\, e_2 + \sin 2\theta\, e_3$ and $\Theta(g(\theta))e_3 = -\sin 2\theta\, e_2 + \cos 2\theta\, e_3$, a rotation by $2\theta$, as in the quaternion case of *Quaternion Algebra*, §*The Rotation Group*. $\square$
+**Proof.** The norm is $N(g(\theta)) = \cos^2\theta \cdot 1 + \sin^2\theta \cdot N(\xi) = \cos^2\theta + \sin^2\theta = 1$, using $\xi^2 = -N(\xi) = -1$; the addition formula for $g$ follows from $\xi^2 = -1$. The element $g$ commutes with $\xi$, so $\xi$ is fixed; and $\xi^{\perp}$ is the orthogonal plane of dimension two, which is definite because $\xi$ has positive norm, so that conjugation by $g$ acts on it as a rotation; the explicit computation with $\xi = e_1$ in the basis $e_2,e_3$ gives $\Theta(g(\theta))e_2 = \cos 2\theta\, e_2 + \sin 2\theta\, e_3$ and $\Theta(g(\theta))e_3 = -\sin 2\theta\, e_2 + \cos 2\theta\, e_3$, a rotation by $2\theta$, as in the quaternion case of *Quaternion Rotations and Reflections*, §*The Homomorphism to SO(3)*. $\square$
 
 **Theorem (Hyperbolic Subgroups).** Let $\eta \in V$ with $\eta^2 = +1$, that is $N(\eta) = -1$. Then the elements
 
@@ -162,7 +162,7 @@ The form $N$ is isotropic, so the trichotomy is real: all three classes are none
 | Orbit | Criterion | Structure |
 |---|---|---|
 | $\{0\}$ | $v = 0$ | one point |
-| two timelike orbits | $N(v) = 1$, the two sheets $b \geq 1$ and $b \leq -1$ | each a copy of the hyperbolic plane |
+| two timelike orbits | $N(v) = 1$, the two sheets $q_1 \geq 1$ and $q_1 \leq -1$ | each a copy of the hyperbolic plane |
 | two lightlike orbits | $v \neq 0$, $N(v) = 0$ | the two nappes of the cone, each a homogeneous space of dimension $2$ |
 | one spacelike orbit | $N(v) = -1$ | the one-sheeted hyperboloid, a homogeneous space of dimension $2$ |
 
@@ -191,7 +191,7 @@ Each nontrivial orbit is a level set of $N$ scaled to $\pm 1$ or $0$, and the st
 | form on the vector part | definite, signature $(3,0)$ | isotropic, signature $(2,1)$ |
 | trichotomy | only one class, all nonzero vectors equivalent | timelike, lightlike, spacelike, all nonempty |
 
-The quaternion column is the classical description of the unit quaternions as the double cover of the rotation group, recorded in *Quaternion Algebra*, §*The Rotation Group*, and in *Quaternion Rotations and Reflections*. The single structural cause of every difference is the sign pattern: a definite form gives a compact sphere and one class of vectors, an isotropic form gives a non-compact hyperboloid and the full trichotomy.
+The quaternion column is the classical description of the unit quaternions as the double cover of the rotation group, recorded in *Quaternion Rotations and Reflections*, §*The Double Cover of SO(3)*. The single structural cause of every difference is the sign pattern: a definite form gives a compact sphere and one class of vectors, an isotropic form gives a non-compact hyperboloid and the full trichotomy.
 
 ### The Split-Biquaternion Case
 
@@ -199,11 +199,11 @@ The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$ of the notation table is
 
 ## Summary
 
-The norm-one group of the split-quaternion algebra is $U \cong \mathrm{SL}_2(\mathbb{R})$, connected; the group of units of norm $\pm 1$ is $\mathrm{SL}_2^{\pm}(\mathbb{R})$, with the two components $U$ and the norm $-1$ component interchanged by $e_2$; and the full group of units is $GL_2(\mathbb{R})$ with centre $\mathbb{R}^{\times}$.
+The norm-one group of the split-quaternion algebra is $U \cong \mathrm{SL}_2(\mathbb{R})$, connected; the group of units of norm $\pm 1$ has the two components $U$ and the norm $-1$ component interchanged by $e_2$; and the full group of units $\{N \neq 0\}$ has centre $\mathbb{R}^{\times}$.
 
-Conjugation by a unit preserves the vector subspace and the form, giving a homomorphism from the group of units onto $SO(2,1) \cong PGL_2(\mathbb{R})$ with kernel $\mathbb{R}^{\times}$, and a homomorphism $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$, hence a double cover and an isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The double cover is not the universal cover, because $\mathrm{SL}_2(\mathbb{R})$ has infinite cyclic fundamental group. The Lorentz group of the system is the three-dimensional $\mathrm{SO}^{+}(2,1)$, the group of the signature-$(2,1)$ form, and not $\mathrm{SO}^{+}(3,1)$.
+Conjugation by a unit preserves the vector subspace and the form, giving a homomorphism from the group of units onto $\mathrm{SO}(2,1) \cong \mathrm{PGL}_2(\mathbb{R})$ with kernel $\mathbb{R}^{\times}$ — onto the full group, not only its identity component, because a negative-norm unit such as $e_2$ acts on $V$ as $\operatorname{diag}(-1,1,-1)$, which reverses the sheets — and a homomorphism $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$, hence a double cover and an isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The double cover is not the universal cover, because $\mathrm{SL}_2(\mathbb{R})$ has infinite cyclic fundamental group. The Lorentz group of the system is the three-dimensional $\mathrm{SO}(2,1)$ of the signature-$(2,1)$ form, with identity component $\mathrm{SO}^{+}(2,1)$, and not $\mathrm{SO}(3,1)$.
 
-The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroups, isomorphic to $SO(2)$ and fixing a timelike direction and rotating its orthogonal plane; the roots of $\eta^2 = +1$ generate the non-compact (hyperbolic) subgroups, fixing a spacelike direction and acting as hyperbolic rotations on its orthogonal plane of signature $(1,1)$; the nilpotents generate the parabolic subgroups. The nonzero vectors of the vector subspace fall into two timelike orbits (the sheets of the hyperboloid $N=1$, each a hyperbolic plane), two lightlike orbits (the nappes of the cone) and one spacelike orbit, with the trichotomy nonempty because the form is isotropic. The quaternion case has a compact simply connected unit sphere, a universal double cover of $SO(3)$, a definite vector form and a single class of vectors; the eight-dimensional relative is a later system of Part V, named here only.
+The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroups, isomorphic to $SO(2)$ and fixing a timelike direction and rotating its orthogonal plane; the roots of $\eta^2 = +1$ generate the non-compact (hyperbolic) subgroups, fixing a spacelike direction and acting as hyperbolic rotations on its orthogonal plane of signature $(1,1)$; the nilpotents generate the parabolic subgroups. Under the norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$, the nonzero vectors of the vector subspace fall into two timelike orbits (the sheets of the hyperboloid $N=1$, each a hyperbolic plane), two lightlike orbits (the nappes of the cone) and one spacelike orbit; the four sheets and nappes merge in pairs under the negative-norm units, so that the full group of units has one orbit of each sign type. The trichotomy is nonempty because the form is isotropic. The quaternion case has a compact simply connected unit sphere, a universal double cover of $SO(3)$, a definite vector form and a single class of vectors; the eight-dimensional relative is a later system of Part V, named here only.
 
 ## Summary of Notation
 
@@ -211,7 +211,7 @@ The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroup
 |---|---|---|
 | $U = \{N=1\}$ | the norm-one group, $\cong \mathrm{SL}_2(\mathbb{R})$ | *Split-Quaternion Norm and Invertibility* |
 | $U^{\pm} = \{N = \pm 1\}$ | $\mathrm{SL}_2^{\pm}(\mathbb{R})$, two components | this article |
-| $\mathbb{H}_{\mathrm{s}}^{\times} \cong GL_2(\mathbb{R})$ | the group of units | *Split-Quaternion Norm and Invertibility* |
+| $\mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\}$ | the group of units | *Split-Quaternion Norm and Invertibility* |
 | $\Theta(u)v = uvu^{-1}$ | the adjoint action on $V$ | this article |
 | $(V,N) \cong \mathbb{R}^{2,1}$ | the vector subspace with its signature-$(2,1)$ form | *Split-Quaternion Algebra* |
 | $O(2,1)$, $SO(2,1)$, $\mathrm{SO}^{+}(2,1)$ | the Lorentz group, its determinant-one part, its identity component | this article |

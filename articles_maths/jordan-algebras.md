@@ -154,7 +154,7 @@ Then $JSpin(V)$ is a unital Jordan algebra of **degree two**: every element sati
 
 ### The Albert Algebra
 
-If $\mathbb{O}$ denotes the octonions, the algebra $H_3(\mathbb{O})$ of Hermitian $3 \times 3$ matrices over $\mathbb{O}$ with the symmetrised product is a Jordan algebra of dimension $27$. It is the **Albert algebra**, and it is exceptional: it does not embed into any $A^+$ with $A$ associative. It is the smallest exceptional Jordan algebra and the only one among the finite-dimensional formally real algebras; the details, including the verification that the symmetrised product satisfies the Jordan identity, are. The naive symmetrisation of matrix multiplication works only because the diagonal entries are required to be real, that is, fixed by the octonion conjugation; without that restriction the symmetrised product fails the Jordan identity.
+If $\mathbb{O}$ denotes the octonions, the algebra $H_3(\mathbb{O})$ of Hermitian $3 \times 3$ matrices over $\mathbb{O}$ with the symmetrised product is a Jordan algebra of dimension $27$. It is the **Albert algebra**, and it is exceptional: it does not embed into any $A^+$ with $A$ associative. It is the smallest exceptional Jordan algebra and the only one among the finite-dimensional formally real algebras; the details, including the verification that the symmetrised product satisfies the Jordan identity, are in *Non-Associative Algebras and the Property Ladder*. The naive symmetrisation of matrix multiplication works only because the diagonal entries are required to be real, that is, fixed by the octonion conjugation; without that restriction the symmetrised product fails the Jordan identity.
 
 ## The Trace Form and Derivations
 
@@ -289,7 +289,7 @@ This is the algebraic condition that makes the set of sums of squares a pointed 
 5. the quaternionic Hermitian matrix algebras $H_n(\mathbb{H})$, $n \geq 3$;
 6. the exceptional Albert algebra $H_3(\mathbb{O})$.
 
-The list separates the spin factors from the matrix family because the overlap is genuine: $H_2(D) \cong JSpin_{1+\dim_{\mathbb{R}}D}$ for $D = \mathbb{R}, \mathbb{C}, \mathbb{H}$, so the rank-two matrix algebras are spin factors , while $H_n(\mathbb{R})$ for $n \geq 3$ is a genuinely different algebra that embeds in no spin factor. The classification is quoted here as standard; the individual families, the verification that they are Jordan algebras, and the proof that the Albert algebra is exceptional are the content .
+The list separates the spin factors from the matrix family because the overlap is genuine: $H_2(D) \cong JSpin_{1+\dim_{\mathbb{R}}D}$ for $D = \mathbb{R}, \mathbb{C}, \mathbb{H}$, so the rank-two matrix algebras are spin factors , while $H_n(\mathbb{R})$ for $n \geq 3$ is a genuinely different algebra that embeds in no spin factor. The classification is quoted here as standard; the individual families, the verification that they are Jordan algebras, and the proof that the Albert algebra is exceptional are the content of *Special and Exceptional Jordan Algebras*.
 
 **Remark.** Over a general field the classification is much more delicate and was completed only with Zel'manov's theorem on the nilpotency of the radical; the present article and the two that follow its theme restrict to the classical and formally real setting, where the classification is the one above.
 

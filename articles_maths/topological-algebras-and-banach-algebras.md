@@ -111,7 +111,7 @@ $$
 
 **Example.** $M_n(\mathbb{K})$ with the operator norm $\|M\| = \sup\{\|Mv\| : \|v\| \leq 1\}$ is a unital Banach algebra; the operator norm is submultiplicative by submultiplicativity of the composition of operators.
 
-**Example.** For a locally compact group $G$, the convolution algebra $L^1(G)$ with the $L^1$-norm is a Banach algebra, commutative when $G$ is abelian; it need not have a unit. Group algebras over a field are the subject of *Group Algebras*; the analytic version is quoted here only as an example.
+**Example.** For a locally compact group $G$, the convolution algebra $L^1(G)$ with the $L^1$-norm is a Banach algebra, commutative when $G$ is abelian; it need not have a unit. Group algebras over a field are the subject of *Group Algebras*; the analytic version is quoted here only as an example, the convolution algebra itself being *The Convolution Algebra $L^1(G)$* in Part III, where the integral that defines it is available.
 
 **Example.** The finite-dimensional algebras $\mathbb{H}$ and $\mathbb{B}$ are Banach algebras: $\mathbb{H}$ with the norm $\|q\| = N(q)^{1/2}$, which is multiplicative because $N$ is; $\mathbb{B}$ with the operator norm transported across the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of *Biquaternion Algebra ($\mathbb{B}$)*.
 
@@ -173,7 +173,7 @@ $$
 \exp(h) = 1 + h + O(\|h\|^2),
 $$
 
-so the Fréchet derivative of $\exp$ at $0$ is $\mathrm{id}_A$; the inverse function theorem in Banach spaces gives a local diffeomorphism, and the image lies in $A^\times$ because $\exp(x)\exp(-x) = 1$. $\square$
+so the Fréchet derivative of $\exp$ at $0$ is $\mathrm{id}_A$, Part III's calculus applied to the Banach space $A$; the inverse function theorem in Banach spaces, likewise Part III's, gives a local diffeomorphism, and the image lies in $A^\times$ because $\exp(x)\exp(-x) = 1$. $\square$
 
 **Corollary (the exponential and inner automorphisms).** For $a, x \in A$,
 

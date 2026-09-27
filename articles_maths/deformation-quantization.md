@@ -81,7 +81,7 @@ $$
 
 so the bracket is graded antisymmetric with $[f,g] = (-1)^{(\lvert f\rvert-1)(\lvert g\rvert-1)}[g,f]$ and satisfies the graded Jacobi identity, and the bracket has degree $-1$ in the shifted grading.
 
-The Gerstenhaber bracket is the algebraic structure that controls deformations: an element $\mu$ of degree $2$ is an associative multiplication modulo a coboundary exactly when $[\mu,\mu] = 0$, that is, when $[\mu,\mu]$ is a coboundary; the Maurer–Cartan equation $[\mu,\mu]=0$ appears aga, where it is the defining equation of an $A_\infty$-structure. The Gerstenhaber algebra structure itself is the subject in the anti-symmetric category, where the Leibniz and Jacobi identities of the bracket are stated in full.
+The Gerstenhaber bracket is the algebraic structure that controls deformations: an element $\mu$ of degree $2$ is an associative multiplication modulo a coboundary exactly when $[\mu,\mu] = 0$, that is, when $[\mu,\mu]$ is a coboundary; the Maurer–Cartan equation $[\mu,\mu]=0$ appears again, where it is the defining equation of an $A_\infty$-structure. The Gerstenhaber algebra structure itself is the subject in the anti-symmetric category, where the Leibniz and Jacobi identities of the bracket are stated in full.
 
 ### The operadic formulation
 

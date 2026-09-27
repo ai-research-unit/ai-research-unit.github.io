@@ -3,7 +3,7 @@
 
 ## Introduction
 
-*Biquaternion Algebra ($\mathbb{B}$)* developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions and its quadratic forms. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the matrix representation that identifies $\mathbb{B}$ with $M_2(\mathbb{C})$, the six subspaces exhibited on one element, the four conjugations applied to that element, the norm form and the unit criterion, and explicit zero-divisor pairs. The idempotents, the minimal left ideals and the realisation of $\mathbb{C}^2$ as a left ideal are the subject of *Biquaternion Idempotents and Projections*, which owns the general construction.
+*Biquaternion Algebra ($\mathbb{B}$)* developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions and its quadratic forms. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the six subspaces exhibited on one element, the four conjugations applied to that element, the norm form and the unit criterion, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the subject of *Biquaternion Idempotents and Projections*, which owns the general construction.
 
 Notation follows *Biquaternion Algebra ($\mathbb{B}$)*. A biquaternion is written in developed form
 
@@ -35,39 +35,6 @@ The table is the quaternion table, but the coefficients are now complex and the 
 $$
 e_1^2 = e_2^2 = e_3^2 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_1 = -e_3, \quad e_1e_3 = -e_2, \quad e_3e_2 = -e_1 .
 $$
-
-## The Matrix Representation
-
-The identification $\mathbb{B} \cong M_2(\mathbb{C})$ is exhibited by the algebra homomorphism $\Phi$ determined on the basis by
-
-$$
-\Phi(e_0) = I_2, \quad
-\Phi(e_1) = -i\sigma_1 = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \quad
-\Phi(e_2) = -i\sigma_2 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
-\Phi(e_3) = -i\sigma_3 = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
-$$
-
-and by $\Phi(i) = i I_2$ on the central complex unit; this is the matrix model fixed in *Biquaternion 2×2 Matrix Representation*, and it is the one used throughout the biquaternion articles. That $\Phi$ respects the quaternion relations is checked directly:
-
-$$
-\Phi(e_1)^2 = \Phi(e_2)^2 = \Phi(e_3)^2 = -I_2, \qquad \Phi(e_1)\Phi(e_2) = (-i\sigma_1)(-i\sigma_2) = -\sigma_1\sigma_2 = -i\sigma_3 = \Phi(e_3),
-$$
-
-and cyclically.
-
-**Example.** For the fixed element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$,
-
-$$
-\Phi(\tilde{Q}) = (2+i)I_2 + (1-i)(-i\sigma_1) + 3(-i\sigma_2) + i(-i\sigma_3) = \begin{pmatrix} 3+i & -4-i \\ 2-i & 1+i \end{pmatrix}.
-$$
-
-The two invariants of the matrix recover the two invariants of the biquaternion:
-
-$$
-\operatorname{Tr}\Phi(\tilde{Q}) = 4 + 2i = 2Q_0 = 2\,\mathrm{Sc}\,\tilde{Q}, \qquad \det\Phi(\tilde{Q}) = (3+i)(1+i) - (-4-i)(2-i) = 11 + 2i = N(\tilde{Q}).
-$$
-
-So the trace detects the scalar part and the determinant is the norm form; this is the $\mathbb{C}$-algebra version of the statement that $\mathbb{B}$ is the algebra of $2\times2$ complex matrices.
 
 ## The Six Subspaces on a Concrete Element
 
@@ -142,7 +109,7 @@ $$
 N(\tilde{Q}) = (2+i)^2 + (1-i)^2 + 3^2 + i^2 = (3+4i) + (-2i) + 9 - 1 = 11 + 2i \neq 0,
 $$
 
-so $\tilde{Q}$ is a unit, with inverse $\bar{\tilde{Q}}/(11+2i)$. The determinant computed above, $\det\Phi(\tilde{Q}) = 11+2i$, agrees, as it must.
+so $\tilde{Q}$ is a unit, with inverse $\bar{\tilde{Q}}/(11+2i)$.
 
 **Example (the norm under conjugation).** The conjugation rules give
 
@@ -154,11 +121,11 @@ because $N$ is invariant under $\bar{\cdot}$ and conjugate-linear in the complex
 
 ## Idempotents and the Two Minimal Left Ideals
 
-The standard idempotents $p = \tfrac{1}{2}(e_0 + ie_3)$ and $q = \tfrac{1}{2}(e_0 - ie_3)$ satisfy $p^2 = p$, $q^2 = q$, $pq = qp = 0$ and $p + q = e_0$; they are the diagonal matrix units $E_{11}$ and $E_{22}$ under $\Phi$; they are primitive; and they give the decomposition $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ into two minimal left ideals of real dimension $4$. The verification is carried out in *Biquaternion Idempotents and Projections*, which owns the idempotents of the series.
+The standard idempotents $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$ and $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$ satisfy $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$; they are primitive; and they give the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into two minimal left ideals of real dimension $4$. The verification is carried out in *Biquaternion Idempotents and Projections*, which owns the idempotents of the series.
 
 ## Explicit Zero Divisors
 
-**Example (an explicit pair).** With the standard idempotents $p, q$ of *Biquaternion Idempotents and Projections*, $pq = 0$ and both factors are nonzero: this is a zero-divisor pair. In unnormalised form, set $a = e_0 + ie_3$ and $b = e_0 - ie_3$. Then
+**Example (an explicit pair).** With the standard idempotents $\tilde\Pi_1, \tilde\Pi_2$ of *Biquaternion Idempotents and Projections*, $\tilde\Pi_1\tilde\Pi_2 = 0$ and both factors are nonzero: this is a zero-divisor pair. In unnormalised form, set $a = e_0 + ie_3$ and $b = e_0 - ie_3$. Then
 
 $$
 ab = e_0 - (ie_3)^2 = e_0 - 1 = 0, \qquad a \neq 0, \qquad b \neq 0,
@@ -166,25 +133,15 @@ $$
 
 and the norms vanish: $N(a) = 1^2 + i^2 = 0$, $N(b) = 1 + i^2 = 0$. Both $a$ and $b$ have two nonzero complex coefficients, $a = e_0 + ie_3$ and $b = e_0 - ie_3$.
 
-**Example (matrix confirmation).** For $a = e_0 + ie_3$ and $b = e_0 - ie_3$ the matrix images are
+The zero divisors of $\mathbb{B}$ are exactly the nonzero elements of norm $0$, that is, the nonzero solutions of $Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 0$, a quadric hypersurface in $\mathbb{C}^4$.
 
-$$
-\Phi(a) = I_2 + \sigma_3 = \operatorname{diag}(2,0), \qquad \Phi(b) = I_2 - \sigma_3 = \operatorname{diag}(0,2),
-$$
-
-and $\Phi(a)\Phi(b) = \operatorname{diag}(2,0)\operatorname{diag}(0,2) = 0$, confirming the product $ab = 0$. The zero divisors of $\mathbb{B}$ are exactly the nonzero elements of norm $0$, that is, the nonzero solutions of $Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 0$, a quadric hypersurface in $\mathbb{C}^4$.
-
-## $\mathbb{C}^2$ as a Left Ideal
-
-The minimal left ideal $\mathbb{B}p$ is isomorphic to $\mathbb{C}^2$ as a left $\mathbb{B}$-module, the central element $i$ acting on it as multiplication by $i$: under $\Phi$ the ideal is the set of matrices with zero second column, and left multiplication acts on the first column. The isomorphism, and the resulting decomposition of $\mathbb{B}$ into two copies of the simple module, are derived in *Biquaternion Idempotents and Projections*.
-
-The computations show all the structural features asserted in *Biquaternion Algebra ($\mathbb{B}$)* on a single element and on the standard idempotents: the six subspaces split the element into its centre, vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian parts; the four conjugations act as listed; the norm form decides invertibility and is computed by the determinant of the matrix representation; and the two primitive idempotents produce the decomposition of $\mathbb{B}$ into two copies of $\mathbb{C}^2$, as derived in *Biquaternion Idempotents and Projections*.
+The computations show all the structural features asserted in *Biquaternion Algebra ($\mathbb{B}$)* on a single element and on the standard idempotents: the six subspaces split the element into its centre, vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian parts; the four conjugations act as listed; the norm form decides invertibility; and the two primitive idempotents produce the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into minimal left ideals.
 
 ## Summary
 
-The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2 = -1$; the algebra is isomorphic to $M_2(\mathbb{C})$ through the explicit map $\Phi$ sending $e_0, e_1, e_2, e_3$ to the matrices $I_2$, $-i\sigma_1$, $-i\sigma_2$, $-i\sigma_3$. On the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the trace of the matrix is twice the scalar part and the determinant is the **norm form** $N(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 11+2i$; the element is a unit because $N\neq0$, with inverse $\bar{\tilde{Q}}/N$. The six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat} = -\dagger$ act on it as listed.
+The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2 = -1$. On the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the **norm form** is $N(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 11+2i$; the element is a unit because $N\neq0$, with inverse $\bar{\tilde{Q}}/N$. The six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat} = -\dagger$ act on it as listed.
 
-The idempotents $p, q$ of *Biquaternion Idempotents and Projections* satisfy $pq = 0$ and give $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ with each summand minimal and isomorphic to $\mathbb{C}^2$; the pair $a = e_0+ie_3$, $b = e_0-ie_3$ is an explicit zero-divisor pair of norm $0$; and the zero divisors of $\mathbb{B}$ are exactly the nonzero isotropic vectors of the complex quadratic form $Q_0^2+Q_1^2+Q_2^2+Q_3^2$. As a left module over itself, $\mathbb{B}$ is free of rank one, with $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ its decomposition into two copies of the simple module.
+The idempotents $\tilde\Pi_1, \tilde\Pi_2$ of *Biquaternion Idempotents and Projections* satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ and give $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $a = e_0+ie_3$, $b = e_0-ie_3$ is an explicit zero-divisor pair of norm $0$; and the zero divisors of $\mathbb{B}$ are exactly the nonzero isotropic vectors of the complex quadratic form $Q_0^2+Q_1^2+Q_2^2+Q_3^2$. As a left module over itself, $\mathbb{B}$ has the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into minimal left ideals.
 
 ## Summary of Notation
 
@@ -201,15 +158,12 @@ The idempotents $p, q$ of *Biquaternion Idempotents and Projections* satisfy $pq
 | ${}^{\flat} = -\dagger$ | Anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six subspaces |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form, multiplicative |
-| $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ | Matrix representation, $\Phi(e_k) = -i\sigma_k$ |
-| $p = \tfrac12(e_0+ie_3),\ q = \tfrac12(e_0-ie_3)$ | Orthogonal primitive idempotents |
-| $\mathbb{B}p,\ \mathbb{B}q$ | Minimal left ideals, each $\cong \mathbb{C}^2$ |
-| $\sigma_1,\sigma_2,\sigma_3$ | Pauli matrices |
+| $\tilde\Pi_1 = \tfrac12(e_0+ie_3),\ \tilde\Pi_2 = \tfrac12(e_0-ie_3)$ | Orthogonal primitive idempotents |
+| $\mathbb{B}\tilde\Pi_1,\ \mathbb{B}\tilde\Pi_2$ | The two minimal left ideals |
 
 ## Further Reading
 
-- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the structure of $M_2(\mathbb{C})$, its idempotents and its minimal left ideals.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for idempotents and minimal left ideals in the structure theory of finite-dimensional algebras.
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for idempotents, minimal ideals and the decomposition of a ring into simple modules.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the quaternion and biquaternion computations.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2nd ed. 2001), for the complexification of the quaternions and its matrix representation.
-- Andrew Baker, *Matrix Groups: An Introduction to Lie Group Theory* (Springer, 2002), for the use of the identification $\mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2nd ed. 2001), for the complexification of the quaternions.

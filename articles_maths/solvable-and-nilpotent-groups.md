@@ -152,7 +152,7 @@ The equivalence (i) $\Leftrightarrow$ (iii) is the structure theorem for finite 
 
 **Theorem (Feit–Thompson).** Every finite group of odd order is solvable.
 
-The first is proved by a character-theoretic argument on the vanishing of characters on conjugacy classes; the second is the deep theorem that the solvable groups of odd order exhaust the odd-order finite groups, and it is the first step of the classification of finite simple groups, where it rules out all odd-order nonabelian simple groups. Both are stated here without pro; the second is used.
+The first is proved by a character-theoretic argument on the vanishing of characters on conjugacy classes; the second is the deep theorem that the solvable groups of odd order exhaust the odd-order finite groups, and it is the first step of the classification of finite simple groups, where it rules out all odd-order nonabelian simple groups. Both are stated here without proof; the second is used.
 
 **Theorem (Wielandt).** A finite group is nilpotent if and only if every maximal subgroup is normal; equivalently, the nilpotent groups are the finite groups all of whose subgroups are subnormal.
 

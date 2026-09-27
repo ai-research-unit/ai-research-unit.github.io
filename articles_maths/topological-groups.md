@@ -5,7 +5,7 @@
 
 A topological group is a group with a topology for which the group operations are continuous — the combination of the two structures treated separately in *Transformation Groups* and in *Topological Spaces*, *Metric, Uniform and Complete Spaces*. The combination is far more rigid than either structure alone: the topology is determined by a neighbourhood base at the identity, it is automatically homogeneous, the group carries two natural uniform structures, and the quotient by a subgroup inherits both a group structure and a topology. Continuity of multiplication then forces a strong interplay between algebra and topology, so that compactness and connectedness become statements about subgroups, and the counting and averaging arguments of *Group Actions and Structure* acquire topological analogues.
 
-This article develops that interplay: the axioms and their first consequences, the uniformity and the completion, subgroups and quotients, the standard separation and connectedness facts, compactness and local compactness, the profinite case, the Haar measure that integration on a group requires, and the structure theory of locally compact abelian groups with its Pontryagin duality. The final subject is Pontryagin duality, which identifies the category of locally compact abelian groups with its own dual and is the topological counterpart of the duality between a finite abelian group and its character group. The base ring $R$ is a commutative ring with identity $1 \neq 0$ and $F$, $K$ are fields as usual; the groups here are written multiplicatively unless abelian, and the identity is $e$. No physics is invoked.
+This article develops that interplay: the axioms and their first consequences, the uniformity and the completion, subgroups and quotients, the standard separation and connectedness facts, compactness and local compactness, the profinite case, the measure a locally compact group carries (named here, constructed in Part III), and the structure theory of locally compact abelian groups with its Pontryagin duality. The final subject is Pontryagin duality, which identifies the category of locally compact abelian groups with its own dual and is the topological counterpart of the duality between a finite abelian group and its character group. The base ring $R$ is a commutative ring with identity $1 \neq 0$ and $F$, $K$ are fields as usual; the groups here are written multiplicatively unless abelian, and the identity is $e$. No physics is invoked.
 
 ## The Axioms and Their Consequences
 
@@ -97,7 +97,7 @@ $$
 \begin{pmatrix} 1 & x & z \\ 0 & 1 & y \\ 0 & 0 & 1 \end{pmatrix},
 $$
 
-where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so no bounded neighbourhood of $e$ is conjugation-invariant; but the group is nilpotent and hence unimodular. Coincidence of the two uniformities is therefore a genuinely stronger condition than the vanishing of the modular function of the next section.
+where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so no bounded neighbourhood of $e$ is conjugation-invariant; but the group is nilpotent, and hence unimodular in the sense of *Locally Compact Groups and Haar Measure*. Coincidence of the two uniformities is therefore a genuinely stronger condition than the vanishing of the modular function of the next section.
 
 ### The Completion and Its Structure
 
@@ -181,25 +181,13 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 **Example.** $S^1$, $O(n)$, $U(n)$ and the $p$-adic integers $\mathbb{Z}_p$ are compact; $\mathbb{Z}_p$ is moreover totally disconnected, and its open subgroups $p^n\mathbb{Z}_p$ form a neighbourhood base.
 
-### Local Compactness and Haar Measure
+### Local Compactness
 
-**Theorem.** Every Hausdorff locally compact group carries a nonzero left-invariant Radon measure $\mu$, finite on compact sets, unique up to a positive scalar. This is the **Haar measure**, for which the measure-theoretic apparatus is developed.
+**Theorem.** A closed subgroup of a locally compact Hausdorff group is locally compact, a quotient by a closed normal subgroup is locally compact, and a finite product of locally compact groups is locally compact.
 
-**Definition.** The **modular function** $\Delta : G \to (0, +\infty)$ is defined by $\mu(Ag) = \Delta(g)\mu(A)$ for a left Haar measure $\mu$. It is a continuous homomorphism, and $G$ is **unimodular** when $\Delta \equiv 1$. A left Haar measure is right-invariant exactly when $\Delta \equiv 1$.
+**Proof.** A closed subset of a locally compact Hausdorff space is locally compact; the quotient map is open and continuous, so it carries a compact neighbourhood onto a compact neighbourhood; and a product of compact neighbourhoods is a compact neighbourhood. $\square$
 
-**Theorem.** Compact groups, discrete groups and locally compact abelian groups are unimodular. On a compact group the normalised Haar measure, with $\mu(G) = 1$, is the unique bi-invariant probability measure, and it is the averaging device that replaces the division by $|G|$ in the orthogonality relations of the representation theory of finite groups.
-
-**Proof.** For a compact group, $\Delta(G)$ is a compact subgroup of $(0,\infty)$, hence $\{1\}$; for a discrete group the counting measure is bi-invariant; for abelian $G$ left and right translations coincide. The normalisation is by dividing by $\mu(G) < \infty$. $\square$
-
-**Example.** On $(\mathbb{R}, +)$ the Haar measure is Lebesgue measure; on $(\mathbb{R}_{>0}, \cdot)$ it is $dx/x$; and on $GL_n(\mathbb{R})$ the bi-invariant Haar measure is $|\det A|^{-n} \prod_{i,j} dA_{ij}$, the group being unimodular because $\operatorname{Ad}(A)$ acts on $\mathfrak{gl}_n$ with eigenvalues $\lambda_i \lambda_j^{-1}$, whose product is $1$. A first non-unimodular example is the affine group $\mathbb{R}^n \rtimes GL_n(\mathbb{R})$: its left Haar measure is $|\det A|^{-(n+1)} \, dx \, dA$ and its modular function is $\Delta(x, A) = |\det A|^{-1}$, so that already the group of the maps $x \mapsto ax + b$ of the line with $a > 0$ has $\Delta(a, b) = a^{-1}$ and is not unimodular.
-
-**Theorem (invariant integration).** If $\mu$ is a left Haar measure on $G$ and $f \in L^1(\mu)$, then for every $g \in G$,
-
-$$
-\int_G f(gx) \, d\mu(x) = \int_G f(x) \, d\mu(x), \qquad \int_G f(x^{-1}) \, d\mu(x) = \int_G f(x) \, \Delta(x^{-1}) \, d\mu(x).
-$$
-
-**Proof.** The first identity is the invariance of $\mu$ under $L_g$. For the second, the image of $\mu$ under inversion is a right Haar measure, hence of the form $\Delta(x^{-1}) \, d\mu(x)$ with $\Delta$ the modular function, and the change of variable $y = x^{-1}$ converts the integral of $f(x^{-1})$ into the integral of $f(x)\Delta(x^{-1})$. $\square$
+**Remark (the measure a locally compact group carries).** The class of locally compact Hausdorff groups is exactly the class on which invariant integration exists: **Haar's theorem** gives a nonzero left-invariant Radon measure, the **Haar measure**, unique up to a positive scalar; its failure of right-invariance is measured by the **modular function** $\Delta : G \to (0,\infty)$, and $G$ is **unimodular** when $\Delta \equiv 1$ — as every compact, discrete or locally compact abelian group is. The measure, the modular function, unimodularity, the invariant integral and the harmonic analysis built on them are *Locally Compact Groups and Haar Measure* and *Analysis on Groups* in Part III, where the measure and the integral are available. The Haar measure is a measure, so this Part names it and does not construct it; nothing in this article uses it, and the structure theory of the sections below is purely topological.
 
 ## Profinite Groups
 
@@ -264,13 +252,13 @@ is an isomorphism of topological groups. The assignment $G \mapsto G^\vee$ is a 
 
 **Proof sketch.** The identity component is a connected locally compact abelian group, hence of the form $\mathbb{R}^n \times K$ with $K$ compact by the solution of Hilbert's fifth problem in the abelian case; passing to the quotient by the identity component reduces to a totally disconnected locally compact abelian group, which contains an open compact subgroup. The compactly generated refinement uses that a compactly generated locally compact group is up to compact subgroups $\mathbb{R}^n \times \mathbb{Z}^m$ together with a finite group. $\square$
 
-**Example.** $\mathbb{Z}^\vee = S^1$ and $(S^1)^\vee = \mathbb{Z}$ illustrate the interchange of discrete and compact. The Fourier transform on a group $G$ with Haar measure is the map $f \mapsto \hat f(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$, defined on $G^\vee$; on $\mathbb{R}$ it is the classical Fourier transform, on $S^1$ the Fourier series, on a finite abelian group the discrete Fourier transform, and the inversion formula holds in each case with the appropriate dual Haar measure. The Pontryagin theorem is what makes the same theorem true in all of them.
+**Example.** $\mathbb{Z}^\vee = S^1$ and $(S^1)^\vee = \mathbb{Z}$ illustrate the interchange of discrete and compact. The Fourier transform on a group $G$ — an object of Part III's *Harmonic Analysis on Groups*, defined there with the invariant integral — is the map $f \mapsto \hat f(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$, defined on $G^\vee$; on $\mathbb{R}$ it is the classical Fourier transform, on $S^1$ the Fourier series, on a finite abelian group the discrete Fourier transform, and the inversion formula holds in each case with the appropriate dual Haar measure. The Pontryagin theorem is what makes the same theorem true in all of them.
 
 ## Summary
 
 A topological group is a group whose multiplication and inversion are continuous; equivalently the map $(g, h) \mapsto gh^{-1}$ is continuous. Left and right translations are homeomorphisms and inversion is a homeomorphism, so the group is homogeneous and is determined by a neighbourhood base at the identity, subject to the three local-base axioms. A topological group is $T_0$ if and only if it is Hausdorff and then Tychonoff, so separation is cheap; every subgroup that is open is closed.
 
-The neighbourhoods of $e$ generate the left and right uniformities, which induce the topology; the group is complete exactly when its uniform structure is complete, for which the two-sided uniformity is used, and the left and right uniformities agree exactly when the identity has a neighbourhood base of conjugation-invariant sets, a condition strictly stronger than unimodularity. Every topological group has a completion, unique up to isomorphism fixing $G$, obtained from the uniform completion with the group operation extended by continuity; a locally compact Hausdorff group is complete. Subgroups and quotients behave as expected: closures of subgroups are subgroups, the identity component is a closed normal subgroup, $G/H$ carries the quotient topology and is Hausdorff exactly when $H$ is closed, and the quotient map is open. A connected group is generated by each neighbourhood of $e$, and conversely a locally compact group generated by each neighbourhood of $e$ is connected; compact subgroups of Hausdorff groups are closed, open subgroups of compact groups have finite index, a continuous bijection from a compact group onto a Hausdorff group is a homeomorphism, and every locally compact Hausdorff group carries a Haar measure, unique up to scale, with modular function $\Delta$ and unimodularity for compact, discrete and abelian groups.
+The neighbourhoods of $e$ generate the left and right uniformities, which induce the topology; the group is complete exactly when its uniform structure is complete, for which the two-sided uniformity is used, and the left and right uniformities agree exactly when the identity has a neighbourhood base of conjugation-invariant sets, a condition strictly stronger than the unimodularity of Part III. Every topological group has a completion, unique up to isomorphism fixing $G$, obtained from the uniform completion with the group operation extended by continuity; a locally compact Hausdorff group is complete. Subgroups and quotients behave as expected: closures of subgroups are subgroups, the identity component is a closed normal subgroup, $G/H$ carries the quotient topology and is Hausdorff exactly when $H$ is closed, and the quotient map is open. A connected group is generated by each neighbourhood of $e$, and conversely a locally compact group generated by each neighbourhood of $e$ is connected; compact subgroups of Hausdorff groups are closed, open subgroups of compact groups have finite index, a continuous bijection from a compact group onto a Hausdorff group is a homeomorphism, and every locally compact Hausdorff group carries a Haar measure, unique up to scale, with modular function $\Delta$ and unimodularity for compact, discrete and abelian groups.
 
 A profinite group is a compact Hausdorff totally disconnected group, equivalently an inverse limit of finite groups; its open subgroups are its finite-index closed subgroups and form a neighbourhood base, and every group has a profinite completion, injective precisely for residually finite groups. Finally, Pontryagin duality identifies a locally compact abelian group with its double dual and the category of such groups with its own opposite, exchanging compactness and discreteness; the structure theorem $\mathbb{R}^n \times K$ and the Fourier transform realise the classical Fourier analysis of $\mathbb{R}$, $S^1$, $\mathbb{Z}$ and finite abelian groups as instances of one theory.
 
@@ -287,8 +275,8 @@ A profinite group is a compact Hausdorff totally disconnected group, equivalentl
 | $G/H$, $\pi$ | Coset space or quotient group with quotient topology, and the quotient map |
 | $G/H$ Hausdorff | Exactly when $H$ is closed |
 | $G_e$, $G/G_e$ | Identity component (closed normal, intersection of the open subgroups) and component group |
-| $\mu$, $\Delta$ | Haar measure and modular function |
-| unimodular | $\Delta \equiv 1$; left Haar measure is right-invariant |
+| $\mu$, $\Delta$ | Part III: Haar measure and modular function, named here only |
+| unimodular | Part III: $\Delta \equiv 1$; left Haar measure is right-invariant |
 | $\mathbb{Z}_p$, $\mathbb{Q}_p$ | $p$-adic integers and numbers |
 | $\hat G^{\mathrm{pf}}$, $\hat{\mathbb{Z}}$ | Profinite completion of an abstract group; $\hat{\mathbb{Z}} = \mathbb{Z}^{\mathrm{pf}}$ |
 | $\varprojlim$ | Inverse limit of finite groups |
@@ -303,7 +291,7 @@ A profinite group is a compact Hausdorff totally disconnected group, equivalentl
 
 - Lev S. Pontryagin, *Topological Groups* (Gordon and Breach, 2nd ed. 1966), for the classical development of the theory and of duality.
 - Nicolas Bourbaki, *General Topology*, Chapters 1–4 and *Topological Vector Spaces*, Chapters 1–5 (Springer, 1995, 1987), for uniformity and completion in the group setting.
-- Edwin Hewitt and Kenneth A. Ross, *Abstract Harmonic Analysis I* (Springer, 2nd ed. 1979), for Haar measure, the structure of locally compact groups and Pontryagin duality.
+- Edwin Hewitt and Kenneth A. Ross, *Abstract Harmonic Analysis I* (Springer, 2nd ed. 1979), for the structure of locally compact groups and Pontryagin duality; the Haar measure and the harmonic analysis are Part III's.
 - Lynn H. Loomis, *An Introduction to Abstract Harmonic Analysis* (Van Nostrand, 1953; reprinted Dover, 2011), for a concise account of invariant integration and duality.
 - Walter Rudin, *Fourier Analysis on Groups* (Interscience, 1962; reprinted Wiley, 1990), for the harmonic analysis of locally compact abelian groups.
 - John S. Wilson, *Profinite Groups* (Oxford University Press, 1998), for the profinite theory and its use in Galois theory.

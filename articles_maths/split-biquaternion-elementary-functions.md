@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This article introduces the elementary functions of a split biquaternion variable. It follows the article on the split biquaternion polar representation, which defined the exponential and the polar decomposition of the algebra, and it uses the article on split biquaternion roots of minus one, which classified the roots of $-1$.
+This article introduces the elementary functions of a split biquaternion variable. It follows the article on the split biquaternion exponential, which defined the exponential and the polar decomposition of the algebra, and it uses the article on split biquaternion roots of minus one, which classified the roots of $-1$.
 
-The treatment is purely mathematical. No physics is invoked. No examples are given. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, together with its conjugations, its four fixed-point subspaces, and its three decompositions. The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$, and the idempotent decomposition of a split biquaternion is $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ with $\tilde{Q}_\pm \in \mathbb{H}$.
+The treatment is purely mathematical. No physics is invoked. No examples are given. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, together with its conjugations, its four fixed-point subspaces, and its three decompositions. The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$, and the idempotent decomposition of a split biquaternion is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$.
 
 The key structural fact is that the elementary functions of a split biquaternion are determined by the **idempotent decomposition** and by the **powers** of the split biquaternion. Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the elementary functions of a split biquaternion reduce to the elementary functions of two ordinary quaternions, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case, where the elementary functions involve a complex angle and the roots of $-1$.
 
@@ -46,10 +46,10 @@ The series converges for every $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$, because 
 
 ### Computation via the Idempotent Decomposition
 
-The exponential is multiplicative on commuting elements, and the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$. So for $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$,
+The exponential is multiplicative on commuting elements, and the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$. So for $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$,
 
 $$
-\exp(\tilde{Q}) = \exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-,
+\exp(\tilde{Q}) = \exp(\tilde{Q}_+) \tilde\Pi_+ + \exp(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $\exp(\tilde{Q}_\pm)$ is the ordinary quaternion exponential of the component $\tilde{Q}_\pm \in \mathbb{H}$. The quaternion exponential is
@@ -63,7 +63,7 @@ where $\tilde{Q}_\pm = q_0^\pm + \mathbf{Q}_\pm$ is the scalar-vector decomposit
 So the exponential of a split biquaternion is the pair of the quaternion exponentials of its two idempotent components:
 
 $$
-\boxed{\exp(\tilde{Q}) = \exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-}.
+\boxed{\exp(\tilde{Q}) = \exp(\tilde{Q}_+) \tilde\Pi_+ + \exp(\tilde{Q}_-) \tilde\Pi_-}.
 $$
 
 This is the cleanest form of the exponential, and it is the reason the split biquaternion exponential is simpler than the biquaternion exponential.
@@ -106,7 +106,7 @@ If the vector part is nilpotent, i.e., $\mathbf{Q}^2 = 0$, then $\theta = 0$ and
 
 **Non-vanishing.** The exponential is never zero, because both idempotent components are nonzero: $\exp(\tilde{Q}_\pm) \neq 0$ since the quaternion exponential is never zero.
 
-**Multiplicativity.** The exponential satisfies $\exp(\tilde{P} + \tilde{Q}) = \exp(\tilde{P}) \exp(\tilde{Q})$ whenever $\tilde{P}$ and $\tilde{Q}$ commute, but commutativity is not necessary: for example $\tilde{P} = 2\pi e_1$ and $\tilde{Q} = -\pi e_1 + \pi\sqrt{3}\,e_2$ do not commute and all three exponentials equal $e_0$. In general, the exponential is not multiplicative.
+**Multiplicativity.** The exponential satisfies $\exp(\tilde P + \tilde{Q}) = \exp(\tilde P) \exp(\tilde{Q})$ whenever $\tilde P$ and $\tilde{Q}$ commute, but commutativity is not necessary: for example $\tilde P = 2\pi e_1$ and $\tilde{Q} = -\pi e_1 + \pi\sqrt{3}\,e_2$ do not commute and all three exponentials equal $e_0$. In general, the exponential is not multiplicative.
 
 **Derivative.** The exponential is its own derivative in the sense of the directional derivative along the scalar direction: $\partial_0 \exp(\tilde{Q}) = \exp(\tilde{Q})$.
 
@@ -129,7 +129,7 @@ $$
 Because the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$, the trigonometric and hyperbolic functions also decompose:
 
 $$
-\sin(\tilde{Q}) = \sin(\tilde{Q}_+) e_+ + \sin(\tilde{Q}_-) e_-,
+\sin(\tilde{Q}) = \sin(\tilde{Q}_+) \tilde\Pi_+ + \sin(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 and similarly for the other three functions. The quaternion trigonometric and hyperbolic functions are
@@ -166,7 +166,7 @@ Note: in the biquaternion case, the trigonometric functions are defined using th
 
 ### Properties
 
-**Pythagorean identity.** The identity $\sin^2(\tilde{Q}) + \cos^2(\tilde{Q}) = e_0$ holds for every split biquaternion: componentwise it is the quaternion identity $\sin^2(q) + \cos^2(q) = 1$, and $\sin\tilde{Q}$ and $\cos\tilde{Q}$ both lie in the commutative subalgebra generated by $\tilde{Q}$ and the idempotents, so they commute and the two components add to $e_+ + e_- = e_0$. Non-commutativity obstructs only identities involving two independent variables.
+**Pythagorean identity.** The identity $\sin^2(\tilde{Q}) + \cos^2(\tilde{Q}) = e_0$ holds for every split biquaternion: componentwise it is the quaternion identity $\sin^2(q) + \cos^2(q) = 1$, and $\sin\tilde{Q}$ and $\cos\tilde{Q}$ both lie in the commutative subalgebra generated by $\tilde{Q}$ and the idempotents, so they commute and the two components add to $\tilde\Pi_+ + \tilde\Pi_- = e_0$. Non-commutativity obstructs only identities involving two independent variables.
 
 **Hyperbolic identity.** Similarly, $\cosh^2(\tilde{Q}) - \sinh^2(\tilde{Q}) = e_0$ holds in the idempotent basis for each component.
 
@@ -187,7 +187,7 @@ The logarithm is multivalued in general, as in the complex case. We compute the 
 In the idempotent basis, the logarithm decomposes:
 
 $$
-\log(\tilde{Q}) = \log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-,
+\log(\tilde{Q}) = \log(\tilde{Q}_+) \tilde\Pi_+ + \log(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $\log(\tilde{Q}_\pm)$ is the ordinary quaternion logarithm of the component. The quaternion logarithm is
@@ -206,7 +206,7 @@ The logarithm is defined when both idempotent components are nonzero, i.e., when
 
 ### Properties
 
-**Multiplicativity.** The logarithm satisfies $\log(\tilde{P} \tilde{Q}) = \log(\tilde{P}) + \log(\tilde{Q})$ if and only if $\tilde{P}$ and $\tilde{Q}$ commute. In general, the logarithm is not multiplicative.
+**Multiplicativity.** The logarithm satisfies $\log(\tilde P \tilde{Q}) = \log(\tilde P) + \log(\tilde{Q})$ if and only if $\tilde P$ and $\tilde{Q}$ commute. In general, the logarithm is not multiplicative.
 
 **Multivaluedness.** The logarithm is multivalued. The branches are parameterized by the branches of the quaternion logarithm in each component, which are determined by the addition of $2\pi$ to the argument of each component.
 
@@ -227,10 +227,10 @@ The power function inherits the multivaluedness of the logarithm. For non-intege
 In the idempotent basis, the power function decomposes:
 
 $$
-\tilde{Q}^\alpha = \tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-,
+\tilde{Q}^\alpha = \tilde{Q}_+^{\alpha_+} \tilde\Pi_+ + \tilde{Q}_-^{\alpha_-} \tilde\Pi_-,
 $$
 
-where $\alpha = \alpha_+ e_+ + \alpha_- e_-$ with $\alpha_\pm \in \mathbb{R}$ (or, more generally, $\alpha_\pm \in \mathbb{H}$ if $\alpha$ has a non-scalar component), and $\tilde{Q}_\pm^{\alpha_\pm}$ is the quaternion power of the component. The quaternion power is defined by
+where $\alpha = \alpha_+ \tilde\Pi_+ + \alpha_- \tilde\Pi_-$ with $\alpha_\pm \in \mathbb{R}$ (or, more generally, $\alpha_\pm \in \mathbb{H}$ if $\alpha$ has a non-scalar component), and $\tilde{Q}_\pm^{\alpha_\pm}$ is the quaternion power of the component. The quaternion power is defined by
 
 $$
 \tilde{Q}_\pm^{\alpha_\pm} = \exp(\alpha_\pm \log \tilde{Q}_\pm).
@@ -246,7 +246,7 @@ When $\alpha$ is a real scalar, $\alpha_+ = \alpha_- = \alpha$, and the power fu
 
 ### Properties
 
-**Multiplicativity.** In general, $(\tilde{P} \tilde{Q})^\alpha \neq \tilde{P}^\alpha \tilde{Q}^\alpha$, because the logarithm is not multiplicative.
+**Multiplicativity.** In general, $(\tilde P \tilde{Q})^\alpha \neq \tilde P^\alpha \tilde{Q}^\alpha$, because the logarithm is not multiplicative.
 
 **Idempotent reduction.** The power function is the pair of the quaternion powers of the two idempotent components.
 
@@ -257,11 +257,11 @@ When $\alpha$ is a real scalar, $\alpha_+ = \alpha_- = \alpha$, and the power fu
 The split biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, which is the fixed-point set of split complex conjugation. For a quaternion $q = q_0 + \mathbf{q}$ with real coefficients, the idempotent components are equal: $\tilde{Q}_+ = \tilde{Q}_- = q$. So the elementary functions reduce to the ordinary quaternion elementary functions applied to the same quaternion in each component:
 
 $$
-\exp(\tilde{Q}) = \exp(q) e_+ + \exp(q) e_- = \exp(q),
+\exp(\tilde{Q}) = \exp(q) \tilde\Pi_+ + \exp(q) \tilde\Pi_- = \exp(q),
 $$
 
 $$
-\log(\tilde{Q}) = \log(q) e_+ + \log(q) e_- = \log(q),
+\log(\tilde{Q}) = \log(q) \tilde\Pi_+ + \log(q) \tilde\Pi_- = \log(q),
 $$
 
 and so on. So the elementary functions of a split biquaternion that lies in the quaternion subspace are the ordinary quaternion elementary functions.
@@ -277,7 +277,7 @@ $$
 So the elementary functions reduce to the ordinary real elementary functions applied to the two real scalars:
 
 $$
-\exp(Q_0 e_0) = e^{q_0 + q'_0} e_+ + e^{q_0 - q'_0} e_-.
+\exp(Q_0 e_0) = e^{q_0 + q'_0} \tilde\Pi_+ + e^{q_0 - q'_0} \tilde\Pi_-.
 $$
 
 In the standard basis, this is
@@ -294,9 +294,9 @@ The quaternion case and the split complex case are the two extremes of the split
 
 ## Non-Commutativity and the One-Variable Case
 
-The elementary functions of a split biquaternion variable are as simple as they are because the idempotent decomposition reduces them to two independent quaternion elementary functions. The reduction works because the two idempotents $e_+$ and $e_-$ commute with everything, and the algebra is the direct sum of two commuting copies of $\mathbb{H}$.
+The elementary functions of a split biquaternion variable are as simple as they are because the idempotent decomposition reduces them to two independent quaternion elementary functions. The reduction works because the two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ commute with everything, and the algebra is the direct sum of two commuting copies of $\mathbb{H}$.
 
-For functions of **two or more split biquaternion variables**, the situation is different. The powers of a sum $\tilde{P} + \tilde{Q}$ involve the products $\tilde{P} \tilde{Q}$ and $\tilde{Q} \tilde{P}$, which are not equal in general. The binomial expansion does not hold, and the exponential of a sum is not the product of the exponentials unless the two split biquaternions commute. So the elementary functions of several split biquaternion variables are much more complicated than the elementary functions of one variable, and their theory is largely open.
+For functions of **two or more split biquaternion variables**, the situation is different. The powers of a sum $\tilde P + \tilde{Q}$ involve the products $\tilde P \tilde{Q}$ and $\tilde{Q} \tilde P$, which are not equal in general. The binomial expansion does not hold, and the exponential of a sum is not the product of the exponentials unless the two split biquaternions commute. So the elementary functions of several split biquaternion variables are much more complicated than the elementary functions of one variable, and their theory is largely open.
 
 This is the same situation as in the biquaternion case, and it is the fundamental reason the theory of the elementary functions of a single split biquaternion is tractable.
 
@@ -304,13 +304,13 @@ This is the same situation as in the biquaternion case, and it is the fundamenta
 
 | Function | Idempotent form | Standard form |
 |---|---|---|
-| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-$ | $e^{Q_0}(\cos\theta \, e_0 + \frac{\sin\theta}{\theta}\mathbf{Q})$ |
-| $\sin(\tilde{Q})$ | $\sin(\tilde{Q}_+) e_+ + \sin(\tilde{Q}_-) e_-$ | (computed from the exponential) |
-| $\cos(\tilde{Q})$ | $\cos(\tilde{Q}_+) e_+ + \cos(\tilde{Q}_-) e_-$ | (computed from the exponential) |
-| $\sinh(\tilde{Q})$ | $\sinh(\tilde{Q}_+) e_+ + \sinh(\tilde{Q}_-) e_-$ | (computed from the exponential) |
-| $\cosh(\tilde{Q})$ | $\cosh(\tilde{Q}_+) e_+ + \cosh(\tilde{Q}_-) e_-$ | (computed from the exponential) |
-| $\log(\tilde{Q})$ | $\log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-$ | (computed from the components) |
-| $\tilde{Q}^\alpha$ | $\tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-$ | $\exp(\alpha \log \tilde{Q})$ |
+| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) \tilde\Pi_+ + \exp(\tilde{Q}_-) \tilde\Pi_-$ | $e^{Q_0}(\cos\theta \, e_0 + \frac{\sin\theta}{\theta}\mathbf{Q})$ |
+| $\sin(\tilde{Q})$ | $\sin(\tilde{Q}_+) \tilde\Pi_+ + \sin(\tilde{Q}_-) \tilde\Pi_-$ | (computed from the exponential) |
+| $\cos(\tilde{Q})$ | $\cos(\tilde{Q}_+) \tilde\Pi_+ + \cos(\tilde{Q}_-) \tilde\Pi_-$ | (computed from the exponential) |
+| $\sinh(\tilde{Q})$ | $\sinh(\tilde{Q}_+) \tilde\Pi_+ + \sinh(\tilde{Q}_-) \tilde\Pi_-$ | (computed from the exponential) |
+| $\cosh(\tilde{Q})$ | $\cosh(\tilde{Q}_+) \tilde\Pi_+ + \cosh(\tilde{Q}_-) \tilde\Pi_-$ | (computed from the exponential) |
+| $\log(\tilde{Q})$ | $\log(\tilde{Q}_+) \tilde\Pi_+ + \log(\tilde{Q}_-) \tilde\Pi_-$ | (computed from the components) |
+| $\tilde{Q}^\alpha$ | $\tilde{Q}_+^{\alpha_+} \tilde\Pi_+ + \tilde{Q}_-^{\alpha_-} \tilde\Pi_-$ | $\exp(\alpha \log \tilde{Q})$ |
 
 The idempotent form is the primary one, because it reduces the elementary functions of a split biquaternion to the elementary functions of two ordinary quaternions. The standard form, in terms of the scalar-vector decomposition and the split complex exponential, is useful when the split complex structure is the natural language.
 
@@ -320,11 +320,11 @@ The idempotent form is the primary one, because it reduces the elementary functi
 |---|---|---|
 | Extra unit | $i$, $i^2 = -1$ | $j$, $j^2 = +1$ |
 | Primary decomposition | Quaternion decomposition | Idempotent decomposition |
-| Exponential | $e^{Q_0}(\cos\theta \, e_0 + \sin\theta \, \hat{n})$ with $\theta$ complex | $\exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-$ |
+| Exponential | $e^{Q_0}(\cos\theta \, e_0 + \sin\theta \, \hat{n})$ with $\theta$ complex | $\exp(\tilde{Q}_+) \tilde\Pi_+ + \exp(\tilde{Q}_-) \tilde\Pi_-$ |
 | Trigonometric functions | Defined via the scalar imaginary $i$ | Defined by the same power series, or componentwise by the quaternion trigonometric functions (no central scalar imaginary exists) |
 | Hyperbolic functions | Defined via the exponential | Defined via the exponential, or via $j$ |
-| Logarithm | $Q_0 e_0 + \theta \hat{n}$ with $\theta$ complex | $\log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-$ |
-| Power function | $e^{\alpha Q_0}(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \hat{n})$ | $\tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-$ |
+| Logarithm | $Q_0 e_0 + \theta \hat{n}$ with $\theta$ complex | $\log(\tilde{Q}_+) \tilde\Pi_+ + \log(\tilde{Q}_-) \tilde\Pi_-$ |
+| Power function | $e^{\alpha Q_0}(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \hat{n})$ | $\tilde{Q}_+^{\alpha_+} \tilde\Pi_+ + \tilde{Q}_-^{\alpha_-} \tilde\Pi_-$ |
 | Angle | Complex | Real (in each component) |
 | Modulus | Complex scalar | Pair of real moduli |
 
@@ -350,7 +350,7 @@ The key differences are:
 
 4. **The power function and the roots of $-1$.** In the biquaternion case, the power function is related to the roots of $-1$ through the complex angle. In the split biquaternion case, the roots of $-1$ are a four-dimensional family, but they do not appear in the power function directly. What is the role of the roots of $-1$ in the split biquaternion power function?
 
-5. **The relation to the polar representation.** How do the elementary functions interact with the polar representation of the algebra, in its two-factor form and in its exponential form?
+5. **The relation to the polar decomposition.** How do the elementary functions interact with the polar decomposition of the algebra, in its two-factor form and in its exponential form?
 
 6. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general split biquaternion $\tilde{Q}$?
 
@@ -358,18 +358,18 @@ The key differences are:
 
 The elementary functions of a split biquaternion variable are the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions.
 
-The key structural fact is the **idempotent decomposition**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $e_\pm$ commute with everything. So every elementary function of a split biquaternion reduces to the corresponding elementary function of two ordinary quaternions, one for each idempotent component:
+The key structural fact is the **idempotent decomposition**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $\tilde\Pi_\pm$ commute with everything. So every elementary function of a split biquaternion reduces to the corresponding elementary function of two ordinary quaternions, one for each idempotent component:
 
 $$
-\exp(\tilde{Q}) = \exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-,
-$$
-
-$$
-\log(\tilde{Q}) = \log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-,
+\exp(\tilde{Q}) = \exp(\tilde{Q}_+) \tilde\Pi_+ + \exp(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 $$
-\tilde{Q}^\alpha = \tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-,
+\log(\tilde{Q}) = \log(\tilde{Q}_+) \tilde\Pi_+ + \log(\tilde{Q}_-) \tilde\Pi_-,
+$$
+
+$$
+\tilde{Q}^\alpha = \tilde{Q}_+^{\alpha_+} \tilde\Pi_+ + \tilde{Q}_-^{\alpha_-} \tilde\Pi_-,
 $$
 
 and similarly for the trigonometric and hyperbolic functions.
@@ -385,6 +385,26 @@ where $\theta^2 = Q_1^2 + Q_2^2 + Q_3^2$ is the split complex norm of the vector
 The elementary functions of a split biquaternion are **simpler** than the elementary functions of a biquaternion, because the idempotent decomposition reduces them to two copies of the quaternion case, the angles are real numbers, and the split complex unit produces hyperbolic functions rather than trigonometric ones. The main complication is the zero divisor set, on which the logarithm is not defined.
 
 The elementary functions of several split biquaternion variables are largely open, because the non-commutativity prevents the simple reductions that work for a single variable.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{H}$ | Quaternion algebra |
+| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $j$ | Split complex unit, central, $j^2 = +1$ |
+| $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
+| $\tilde{Q}_\pm = \sum_\mu (q_\mu \pm q'_\mu) e_\mu$ | Idempotent components, real quaternions |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $\exp, \log$ | Split biquaternion exponential and logarithm |
+| $\sin, \cos, \sinh, \cosh$ | Trigonometric and hyperbolic functions |
+| $\tilde{Q}^\alpha$ | Split biquaternion power function |
+| $q = r \exp(\mu \theta)$ | Quaternion polar form, axis $\mu$, angle $\theta$ |
+| $\mu$ | A unit pure real quaternion (axis), $\mu^2 = -1$ |
+| $r = |q|$ | Quaternion modulus |
+| $\tilde\Pi_\pm$ | Idempotents producing the hyperbolic functions |
 
 ## Further Reading
 

@@ -1,3 +1,4 @@
+
 # __Real Special Functions__
 
 ## Introduction
@@ -688,7 +689,7 @@ $$
 
 ### Applications
 
-The Lambert W function solves equations of the form $a e^x + b x + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the solution of the time-dependent Schrödinger equation for certain potentials.
+The Lambert W function solves equations of the form $a e^x + b x + c = 0$. It appears in combinatorics, in the enumeration of labelled trees, and in the analysis of delay differential equations.
 
 ## Summary
 
@@ -700,7 +701,7 @@ The arithmetic families follow, the Bernoulli and Euler numbers defined by gener
 
 ## Summary of Notation
 
-| Symbol | Meaning |
+| symbol | meaning |
 |---|---|
 | $e^x, \ln x$ | Exponential, logarithm |
 | $\sin x, \cos x, \tan x$ | Trigonometric functions |

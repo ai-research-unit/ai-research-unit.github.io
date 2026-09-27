@@ -81,14 +81,12 @@ $$
 Then $\rho$ is uniquely determined, and it is
 
 $$
-r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|},
+r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} .
 $$
 
-where $\Phi$ is the $2\times2$ matrix realisation.
+**Proof.** The norm form is a surjective group homomorphism $N : \mathbb{B}^\times \to \mathbb{C}^\times$ — multiplicative, and surjective because $N(\lambda e_0) = \lambda^2$ attains every nonzero complex value — with kernel the norm-one group $G_1 = \{\tilde{Q} : N(\tilde{Q}) = 1\}$. A continuous homomorphism into the abelian group $\mathbb{R}_{>0}$ is trivial on the commutator subgroup; the norm-one group $G_1$ is perfect, equal to its own commutator subgroup, so $\rho$ is trivial on $G_1$ and factors as $\rho = f \circ N$ for a continuous homomorphism $f : \mathbb{C}^\times \to \mathbb{R}_{>0}$. Every such $f$ is $z \mapsto |z|^t$: on the positive reals it is a continuous homomorphism to $\mathbb{R}_{>0}$, hence a power, and the unit circle, being compact and connected, maps to the identity. The normalisation $\rho(\lambda e_0) = f(\lambda^2) = |\lambda|^{2t} = |\lambda|$ forces $t = \tfrac12$, so $\rho(\tilde{Q}) = |N(\tilde{Q})|^{1/2} = r(\tilde{Q})$. $\square$
 
-**Proof in one paragraph.** The group of units of $\mathbb{B}$ is $\mathrm{GL}_2(\mathbb{C})$ under $\Phi$. A continuous homomorphism from $\mathrm{GL}_2(\mathbb{C})$ to the multiplicative group $\mathbb{R}_{>0}$ is constant on the commutator subgroup; that subgroup is $\mathrm{SL}_2(\mathbb{C})$, which is perfect, so such a homomorphism factors through the determinant, $\mathrm{GL}_2(\mathbb{C}) \to \mathbb{C}^\times$. A continuous homomorphism $\mathbb{C}^\times \to \mathbb{R}_{>0}$ is $z \mapsto |z|^t$: on the positive reals it is a power, and the unit circle is compact and connected, so its image is trivial. Hence $\rho(\tilde{Q}) = |\det\Phi(\tilde{Q})|^t$ for some real $t$, and the normalisation $\rho(\lambda e_0) = |\det(\lambda I_2)|^t = |\lambda|^{2t} = |\lambda|$ forces $t = \tfrac12$. That value is $r$, since $|\det\Phi(\tilde{Q})| = |N(\tilde{Q})|$. $\square$
-
-The function $r$ was verified to be multiplicative on random pairs, $r(\tilde{P}\tilde{Q}) = r(\tilde{P})r(\tilde{Q})$, and to satisfy $r(\tilde{Q})^2 = |\det\Phi(\tilde{Q})|$; it is defined by those two properties, vanishes on the zero divisors, and is therefore a semi-norm on $\mathbb{B}$ while remaining a genuine norm on the units. The corpus uses $r$ as the real factor of the polar representations, so the polar scale is not one convention among several: it is the only real size function compatible with multiplicativity and with $\rho(e_0) = 1$. The matrix face $\sqrt{|\det\Phi(\tilde{Q})|}$ also shows the statement in the realisation the physics articles use.
+The function $r$ is multiplicative, $r(\tilde{P}\tilde{Q}) = r(\tilde{P})r(\tilde{Q})$, by multiplicativity of the norm form, and satisfies $r(\tilde{Q})^2 = |N(\tilde{Q})|$; it vanishes on the zero divisors, and is therefore a semi-norm on $\mathbb{B}$ while remaining a genuine norm on the units. It is defined by multiplicativity together with the normalisation $r(e_0) = 1$: the proposition says it is the only real size function on the units compatible with those two requirements.
 
 ### The Norm Form from the Halves
 
@@ -151,8 +149,6 @@ It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: p
 $$
 \mathrm{Tr}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2 = 2 \|\tilde{Q}\|_E^2.
 $$
-
-The trace is the **Frobenius norm squared** of the matrix representing $\tilde{Q}$ under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$.
 
 ### Relation Between the Norm Form and the Hermitian Form
 
@@ -248,9 +244,9 @@ It is a group under multiplication, with identity $e_0$.
 
 **Non-compactness.** The group of units is not compact, because it contains the real line $\{a e_0 : a \in \mathbb{R}, a \neq 0\}$, which is unbounded.
 
-**Connected components.** The group of units is **connected**. To see this, use the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of the basic algebra article. Under this isomorphism, $\mathbb{B}^\times$ corresponds to the group $GL(2, \mathbb{C})$ of invertible $2 \times 2$ complex matrices. The group $GL(n, \mathbb{C})$ is connected for every $n \geq 1$: every invertible complex matrix can be continuously deformed to the identity, for instance via the Gram–Schmidt process, which gives a continuous retraction of $GL(n, \mathbb{C})$ onto the unitary group $U(n)$, and $U(n)$ is connected. Hence $\mathbb{B}^\times \cong GL(2, \mathbb{C})$ is connected.
+**Connected components.** The group of units is **connected**. It is the complement in $\mathbb{B}$ of the null cone together with the origin, $\mathbb{B}^\times = \{\tilde{Q} : N(\tilde{Q}) \neq 0\}$. The null cone is a cone of real codimension two, and its intersection with each sphere centred at the origin is connected, so the cone does not separate the algebra; its complement, the group of units, is therefore connected.
 
-**Lie group structure.** The group of units is a Lie group of real dimension $8$ over $\mathbb{R}$. Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, it corresponds to $GL(2, \mathbb{C})$, which is a complex Lie group of complex dimension $4$, hence a real Lie group of real dimension $8$. Its Lie algebra is $\mathbb{B}$ itself (as a real vector space), with the commutator bracket
+**Lie group structure.** The group of units is a Lie group of real dimension $8$ over $\mathbb{R}$: it is an open subset of $\mathbb{B} \cong \mathbb{R}^8$, and the algebra multiplication and inversion are smooth there. Its Lie algebra is $\mathbb{B}$ itself (as a real vector space), with the commutator bracket
 
 $$
 [\tilde{P}, \tilde{Q}] = \tilde{P} \tilde{Q} - \tilde{Q} \tilde{P}.
@@ -438,9 +434,9 @@ The **scalar part** of the Hermitian form, by contrast, is always non-negative, 
 
 ## Summary
 
-The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra, the **semi-norm** of the literature. It is not positive-definite, and it vanishes on the zero divisors. Of the usual norm axioms only the sign axiom survives: the triangle inequality is inapplicable to a complex value, and the scaling axiom fails for complex scalars, since the square root of $\lambda^2$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|}$ is, by contrast, the **unique** multiplicative real norm on the group of units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$, and it is the real scale the polar representations use. The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full Hermitian form is not scalar-valued in general; its vector part vanishes precisely when $\tilde{Q}$ is a complex scalar multiple of a real quaternion, i.e. when $\tilde{Q} = (\alpha + i\beta) A$ with $\alpha, \beta \in \mathbb{R}$ and $A \in \mathbb{H}_{\mathbb{B}}$.
+The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra, the **semi-norm** of the literature. It is not positive-definite, and it vanishes on the zero divisors. Of the usual norm axioms only the sign axiom survives: the triangle inequality is inapplicable to a complex value, and the scaling axiom fails for complex scalars, since the square root of $\lambda^2$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|}$ is, by contrast, the **unique** multiplicative real norm on the group of units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$. The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full Hermitian form is not scalar-valued in general; its vector part vanishes precisely when $\tilde{Q}$ is a complex scalar multiple of a real quaternion, i.e. when $\tilde{Q} = (\alpha + i\beta) A$ with $\alpha, \beta \in \mathbb{R}$ and $A \in \mathbb{H}_{\mathbb{B}}$.
 
-The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$. The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{B}^\times$ is an open, connected subset of $\mathbb{B}$, isomorphic to $GL(2, \mathbb{C})$, and is a Lie group of real dimension $8$, with Lie algebra $\mathbb{B}$ and center $\mathbb{C}^\times$.
+The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$. The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{B}^\times$ is an open, connected subset of $\mathbb{B}$, and is a Lie group of real dimension $8$, with Lie algebra $\mathbb{B}$ and center $\mathbb{C}^\times$.
 
 The algebra $\mathbb{B}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the six distinguished subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors at all; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors, the invertible elements in each forming a complement of the cone with three connected components; and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, whose complement is connected.
 
@@ -458,7 +454,7 @@ The zero divisors themselves are studied in the article on biquaternion zero div
 | $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
 | $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form; the semi-norm of the literature |
-| $r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|}$ | The unique multiplicative real norm on the units |
+| $r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|}$ | The unique multiplicative real norm on the units |
 | $\tilde{Q} \tilde{Q}^\dagger$ | Hermitian form (a Hermitian biquaternion) |
 | $\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
 | $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger)}$ | Euclidean norm |

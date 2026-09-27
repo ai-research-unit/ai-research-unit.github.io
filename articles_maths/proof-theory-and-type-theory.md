@@ -267,7 +267,7 @@ Gentzen's cut-elimination theorem removes the cut rule from every derivation, yi
 
 The lambda calculus has variables, application and abstraction, with $\beta$- and $\eta$-reduction; it is confluent by the Church–Rosser theorem and computationally universal, and the fixed-point combinator $Y$ gives every term a fixed point and produces terms such as $\Omega$ with no normal form, so the calculus is undecidable. The simply typed lambda calculus and its extensions are strongly normalising; the definable functions are the extended polynomials for $\lambda_\to$ and the provably total functions of second-order arithmetic for System F.
 
-The Curry–Howard correspondence identifies propositions with types, derivations with terms, and the reduction of detours with $\beta$-reduction; product, sum, empty and unit types realise conjunction, disjunction, falsity and truth, and dependent types realise the quantifiers. Martin-Löf type theory adds identity types and gives the propositions-as-types reading its strongest form, and the lambda cube arranges the typed systems by what depends on what. The categorical semantics of these calculi belongs.
+The Curry–Howard correspondence identifies propositions with types, derivations with terms, and the reduction of detours with $\beta$-reduction; product, sum, empty and unit types realise conjunction, disjunction, falsity and truth, and dependent types realise the quantifiers. Martin-Löf type theory adds identity types and gives the propositions-as-types reading its strongest form, and the lambda cube arranges the typed systems by what depends on what. The categorical semantics of these calculi belongs to *Universal Properties and Categories*.
 
 ## Summary of Notation
 

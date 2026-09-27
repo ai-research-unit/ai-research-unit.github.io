@@ -4,7 +4,7 @@
 
 This article studies the zero divisors of the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$. It follows the article on split biquaternion norm and invertibility, which established the criterion for invertibility and the three-way classification of the elements of $\mathbb{H}_{\mathbb{D}}$. The goal here is to characterize the zero divisors, to describe their structure, and to compare them with the zero divisors of the split complex algebra and of the biquaternion algebra.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, its three decompositions, and its norm form.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, its three decompositions, and its norm form.
 
 Throughout, a split biquaternion is written
 
@@ -14,16 +14,16 @@ $$
 
 The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$.
 
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions. The norm form in the idempotent basis is
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions. The norm form in the idempotent basis is
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-,
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \bar{\tilde{Q}}_\pm$ is the ordinary quaternion norm, a non-negative real number.
@@ -48,7 +48,7 @@ $$
 \tilde{Q} \neq 0 \quad \text{and} \quad (\tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0).
 $$
 
-**Proof.** In the idempotent basis the product is $\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ e_+ + \tilde{Q}_- \tilde{R}_- e_-$, so $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_+ \tilde{R}_+ = 0$ and $\tilde{Q}_- \tilde{R}_- = 0$. If $\tilde{Q}_+ = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}_- \neq 0$, and $\tilde{R} = e_+ \neq 0$ satisfies $\tilde{Q} \tilde{R} = 0$, so $\tilde{Q}$ is a zero divisor. Conversely, if $\tilde{Q} \tilde{R} = 0$ with $\tilde{R} \neq 0$, then $\tilde{R}_+ \neq 0$ or $\tilde{R}_- \neq 0$; in the first case $\tilde{Q}_+ \tilde{R}_+ = 0$ with $\tilde{R}_+ \neq 0$ forces $\tilde{Q}_+ = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_- = 0$. $\square$
+**Proof.** In the idempotent basis the product is $\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde{R}_- \tilde\Pi_-$, so $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_+ \tilde{R}_+ = 0$ and $\tilde{Q}_- \tilde{R}_- = 0$. If $\tilde{Q}_+ = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}_- \neq 0$, and $\tilde{R} = \tilde\Pi_+ \neq 0$ satisfies $\tilde{Q} \tilde{R} = 0$, so $\tilde{Q}$ is a zero divisor. Conversely, if $\tilde{Q} \tilde{R} = 0$ with $\tilde{R} \neq 0$, then $\tilde{R}_+ \neq 0$ or $\tilde{R}_- \neq 0$; in the first case $\tilde{Q}_+ \tilde{R}_+ = 0$ with $\tilde{R}_+ \neq 0$ forces $\tilde{Q}_+ = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_- = 0$. $\square$
 
 **Remark.** The norm form is not the criterion: as the closing section computes, $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$. The zero divisor condition is **linear** in the idempotent basis.
 
@@ -66,10 +66,10 @@ The zero divisors are exactly the nonzero elements with at least one vanishing i
 
 ### The Criterion in the Idempotent Basis
 
-In the idempotent basis, the criterion takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+In the idempotent basis, the criterion takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-.
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-.
 $$
 
 Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $N(\tilde{Q}) = 0$ if and only if
@@ -104,7 +104,7 @@ $$
 
 Each of these is a **four-dimensional real linear subspace** of $\mathbb{H}_{\mathbb{D}}$.
 
-**$Z_+$.** An element of $Z_+$ satisfies $\tilde{Q} e_+ = 0$, i.e., $\tilde{Q}(1 + j) = 0$. Writing $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{D}$, the condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 - j$. Since the ideal generated by $1 - j$ in $\mathbb{D}$ is the one-dimensional real subspace $\mathbb{R}(1 - j)$, the condition is
+**$Z_+$.** An element of $Z_+$ satisfies $\tilde{Q} \tilde\Pi_+ = 0$, i.e., $\tilde{Q}(1 + j) = 0$. Writing $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{D}$, the condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 - j$. Since the ideal generated by $1 - j$ in $\mathbb{D}$ is the one-dimensional real subspace $\mathbb{R}(1 - j)$, the condition is
 
 $$
 Q_\mu = t_\mu (1 - j), \qquad t_\mu \in \mathbb{R}.
@@ -112,7 +112,7 @@ $$
 
 There are four real parameters $t_0, t_1, t_2, t_3$, so $Z_+$ is four-dimensional. It is isomorphic to $\mathbb{H}$ via the map $\tilde{Q} \mapsto (t_0, t_1, t_2, t_3)$.
 
-**$Z_-$.** An element of $Z_-$ satisfies $\tilde{Q} e_- = 0$, i.e., $\tilde{Q}(1 - j) = 0$. The condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 + j$:
+**$Z_-$.** An element of $Z_-$ satisfies $\tilde{Q} \tilde\Pi_- = 0$, i.e., $\tilde{Q}(1 - j) = 0$. The condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 + j$:
 
 $$
 Q_\mu = s_\mu (1 + j), \qquad s_\mu \in \mathbb{R}.
@@ -142,41 +142,98 @@ So the zero divisor set is the union of two four-dimensional linear subspaces th
 
 The zero divisor set has real dimension $4$ in the sense that each of the two components is four-dimensional. The union $Z_+ \cup Z_-$ is not a manifold at the origin, but away from the origin it is a disjoint union of two four-dimensional submanifolds.
 
+## Distribution of the Zero Divisors
+
+We now examine how the zero divisors are distributed among the four fixed-point subspaces of $\mathbb{H}_{\mathbb{D}}$.
+
+### The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$
+
+An element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ has the form $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{D}$. The norm form is $N(\tilde{Q}) = Q_0^2$, which vanishes only when $Q_0 = 0$. The element $Q_0 e_0$ is a zero divisor exactly when $Q_0$ is a zero divisor of $\mathbb{D}$, i.e., $Q_0 = t(1 \pm j)$ with $t \neq 0$. So the split complex subspace contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
+
+These zero divisors are in $Z_+$ (if $Q_0$ is a multiple of $1 - j$) or in $Z_-$ (if $Q_0$ is a multiple of $1 + j$). They form a one-dimensional subset of the four-dimensional subspaces $Z_\pm$.
+
+### The Quaternion Subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$
+
+An element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ has real coefficients, and its norm form is a sum of squares of real numbers, which vanishes only at the origin. So the quaternion subspace contains no zero divisors.
+
+### The Hermitian Subspace $\mathbb{M}_+$
+
+An element of $\mathbb{M}_+$ has the form
+
+$$
+\tilde{Q} = q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3.
+$$
+
+The norm form is
+
+$$
+N(\tilde{Q}) = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
+$$
+
+since $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$. This is a sum of squares, so it vanishes only at the origin, and $\mathbb{M}_+$ contains no zero divisors: a nonzero element of $\mathbb{M}_+$ has $\tilde{Q}_+ = q_0 + \sum_k q'_k e_k$ and $\tilde{Q}_- = \overline{\tilde{Q}_+}$ both nonzero, hence is invertible.
+
+### The Anti-Hermitian Subspace $\mathbb{M}_-$
+
+An element of $\mathbb{M}_-$ has the form
+
+$$
+\tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
+$$
+
+The norm form is
+
+$$
+N(\tilde{Q}) = r_0^2 + q_1^2 + q_2^2 + q_3^2,
+$$
+
+since $(j r_0)^2 = +r_0^2$. This is a sum of squares, so it vanishes only at the origin, and $\mathbb{M}_-$ contains no zero divisors: a nonzero element of $\mathbb{M}_-$ is invertible.
+
+### Summary of the Distribution
+
+Of the four fixed-point subspaces:
+
+- $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
+- $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ contains no zero divisors.
+- $\mathbb{M}_+$ contains no zero divisors.
+- $\mathbb{M}_-$ contains no zero divisors.
+
+In all cases, the zero divisors lie in the two subspaces $Z_+$ and $Z_-$, and the intersection of any fixed-point subspace with the zero divisor set is a subset of $Z_+ \cup Z_-$.
+
 ## The Structure of the Zero Divisors
 
 ### Algebraic Structure of the Two Families
 
 Each of $Z_+$ and $Z_-$ is a **left ideal** and a **right ideal** of $\mathbb{H}_{\mathbb{D}}$. Indeed:
 
-- If $\tilde{Q} \in Z_+$ and $\tilde{R} \in \mathbb{H}_{\mathbb{D}}$, then $(\tilde{Q} \tilde{R}) e_+ = \tilde{Q} (\tilde{R} e_+) = \tilde{Q} e_+ \tilde{R}_+ = 0 \cdot \tilde{R}_+ = 0$, so $\tilde{Q} \tilde{R} \in Z_+$. So $Z_+$ is a right ideal.
-- Similarly, $(\tilde{R} \tilde{Q}) e_+ = \tilde{R} (\tilde{Q} e_+) = 0$, so $\tilde{R} \tilde{Q} \in Z_+$. So $Z_+$ is a left ideal.
+- If $\tilde{Q} \in Z_+$ and $\tilde{R} \in \mathbb{H}_{\mathbb{D}}$, then $(\tilde{Q} \tilde{R}) \tilde\Pi_+ = \tilde{Q} (\tilde{R} \tilde\Pi_+) = \tilde{Q} \tilde\Pi_+ \tilde{R}_+ = 0 \cdot \tilde{R}_+ = 0$, so $\tilde{Q} \tilde{R} \in Z_+$. So $Z_+$ is a right ideal.
+- Similarly, $(\tilde{R} \tilde{Q}) \tilde\Pi_+ = \tilde{R} (\tilde{Q} \tilde\Pi_+) = 0$, so $\tilde{R} \tilde{Q} \in Z_+$. So $Z_+$ is a left ideal.
 
-So $Z_+$ and $Z_-$ are two-sided ideals of $\mathbb{H}_{\mathbb{D}}$. This is the algebraic content of the idempotent decomposition: the two ideals $\mathbb{H} e_+$ and $\mathbb{H} e_-$ are the two summands of the semisimple algebra.
+So $Z_+$ and $Z_-$ are two-sided ideals of $\mathbb{H}_{\mathbb{D}}$. This is the algebraic content of the idempotent decomposition: the two ideals $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are the two summands of the semisimple algebra.
 
 ### The Idempotents
 
-The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde{P}$ with $\tilde{P}^2 = \tilde{P}$. In the idempotent basis, an element $\tilde{P} = \tilde{P}_+ e_+ + \tilde{P}_- e_-$ is idempotent if and only if
+The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde P$ with $\tilde P^2 = \tilde P$. In the idempotent basis, an element $\tilde P = \tilde P_+ \tilde\Pi_+ + \tilde P_- \tilde\Pi_-$ is idempotent if and only if
 
 $$
-\tilde{P}_+^2 = \tilde{P}_+, \qquad \tilde{P}_-^2 = \tilde{P}_-.
+\tilde P_+^2 = \tilde P_+, \qquad \tilde P_-^2 = \tilde P_-.
 $$
 
 In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements
 
 $$
-0, \qquad e_+, \qquad e_-, \qquad e_+ + e_- = 1.
+0, \qquad \tilde\Pi_+, \qquad \tilde\Pi_-, \qquad \tilde\Pi_+ + \tilde\Pi_- = 1.
 $$
 
-These are the only idempotents. The two nontrivial idempotents $e_+$ and $e_-$ are the ones associated with the two ideals $Z_-$ and $Z_+$ respectively (note the reversal: $e_+$ is annihilated by $Z_+$, i.e., $e_+ \in Z_-$).
+These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are the ones associated with the two ideals $Z_-$ and $Z_+$ respectively (note the reversal: $\tilde\Pi_+$ is annihilated by $Z_+$, i.e., $\tilde\Pi_+ \in Z_-$).
 
-Each of the idempotents $e_+$ and $e_-$ is a zero divisor, because $e_+ e_- = 0$ with both $e_+$ and $e_-$ nonzero.
+Each of the idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ is a zero divisor, because $\tilde\Pi_+ \tilde\Pi_- = 0$ with both $\tilde\Pi_+$ and $\tilde\Pi_-$ nonzero.
 
 ### The Annihilators
 
 For an element $\tilde{Q} \in Z_+$ (i.e., $\tilde{Q}_+ = 0$), the left annihilator is
 
 $$
-\{\tilde{R} : \tilde{R} \tilde{Q} = 0\} = \{\tilde{R} : \tilde{R} \tilde{Q}_- e_- = 0\} = \{\tilde{R} : \tilde{R}_- \tilde{Q}_- = 0\}.
+\{\tilde{R} : \tilde{R} \tilde{Q} = 0\} = \{\tilde{R} : \tilde{R} \tilde{Q}_- \tilde\Pi_- = 0\} = \{\tilde{R} : \tilde{R}_- \tilde{Q}_- = 0\}.
 $$
 
 Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$ (unless $\tilde{Q} = 0$), the condition is $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_-$. So the left annihilator of a nonzero element of $Z_+$ is $Z_-$ itself.
@@ -184,12 +241,12 @@ Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$ (unless $\tild
 Similarly, the right annihilator of a nonzero element of $Z_+$ is $Z_-$. If $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, and the product $\tilde{Q} \tilde{R}$ in the idempotent basis is
 
 $$
-\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ e_+ + \tilde{Q}_- \tilde{R}_- e_- = \tilde{Q}_- \tilde{R}_- e_-.
+\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde{R}_- \tilde\Pi_- = \tilde{Q}_- \tilde{R}_- \tilde\Pi_-.
 $$
 
 So $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_- \tilde{R}_- = 0$, which (since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$) is equivalent to $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_-$.
 
-So the annihilator of a nonzero element of $Z_+$ is $Z_-$ on both sides: the two annihilators agree, and they are the other component of the zero divisor set, not the component containing the element. Indeed $e_+ \in Z_-$ annihilates every element of $Z_+$, while the elements of $Z_+$ do not annihilate one another.
+So the annihilator of a nonzero element of $Z_+$ is $Z_-$ on both sides: the two annihilators agree, and they are the other component of the zero divisor set, not the component containing the element. Indeed $\tilde\Pi_+ \in Z_-$ annihilates every element of $Z_+$, while the elements of $Z_+$ do not annihilate one another.
 
 By symmetry, the annihilator of a nonzero element of $Z_-$ is $Z_+$ on both sides.
 
@@ -277,67 +334,10 @@ In $\mathbb{B}$, the zero divisors split into nilpotents (pure case) and complex
 Indeed, if $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, so
 
 $$
-\tilde{Q}^2 = \tilde{Q}_-^2 e_-,
+\tilde{Q}^2 = \tilde{Q}_-^2 \tilde\Pi_-,
 $$
 
 which is nonzero because $\tilde{Q}_- \neq 0$ and $\mathbb{H}$ is a division algebra. So $\tilde{Q}^2 \neq 0$, and $\tilde{Q}$ is not nilpotent.
-
-## Distribution of the Zero Divisors
-
-We now examine how the zero divisors are distributed among the four fixed-point subspaces of $\mathbb{H}_{\mathbb{D}}$.
-
-### The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$
-
-An element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ has the form $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{D}$. The norm form is $N(\tilde{Q}) = Q_0^2$, which vanishes only when $Q_0 = 0$. The element $Q_0 e_0$ is a zero divisor exactly when $Q_0$ is a zero divisor of $\mathbb{D}$, i.e., $Q_0 = t(1 \pm j)$ with $t \neq 0$. So the split complex subspace contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
-
-These zero divisors are in $Z_+$ (if $Q_0$ is a multiple of $1 - j$) or in $Z_-$ (if $Q_0$ is a multiple of $1 + j$). They form a one-dimensional subset of the four-dimensional subspaces $Z_\pm$.
-
-### The Quaternion Subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$
-
-An element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ has real coefficients, and its norm form is a sum of squares of real numbers, which vanishes only at the origin. So the quaternion subspace contains no zero divisors.
-
-### The Hermitian Subspace $\mathbb{M}_+$
-
-An element of $\mathbb{M}_+$ has the form
-
-$$
-\tilde{Q} = q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3.
-$$
-
-The norm form is
-
-$$
-N(\tilde{Q}) = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
-$$
-
-since $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$. This is a sum of squares, so it vanishes only at the origin, and $\mathbb{M}_+$ contains no zero divisors: a nonzero element of $\mathbb{M}_+$ has $\tilde{Q}_+ = q_0 + \sum_k q'_k e_k$ and $\tilde{Q}_- = \overline{\tilde{Q}_+}$ both nonzero, hence is invertible.
-
-### The Anti-Hermitian Subspace $\mathbb{M}_-$
-
-An element of $\mathbb{M}_-$ has the form
-
-$$
-\tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
-$$
-
-The norm form is
-
-$$
-N(\tilde{Q}) = r_0^2 + q_1^2 + q_2^2 + q_3^2,
-$$
-
-since $(j r_0)^2 = +r_0^2$. This is a sum of squares, so it vanishes only at the origin, and $\mathbb{M}_-$ contains no zero divisors: a nonzero element of $\mathbb{M}_-$ is invertible.
-
-### Summary of the Distribution
-
-Of the four fixed-point subspaces:
-
-- $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
-- $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ contains no zero divisors.
-- $\mathbb{M}_+$ contains no zero divisors.
-- $\mathbb{M}_-$ contains no zero divisors.
-
-In all cases, the zero divisors lie in the two subspaces $Z_+$ and $Z_-$, and the intersection of any fixed-point subspace with the zero divisor set is a subset of $Z_+ \cup Z_-$.
 
 ## The Zero Divisor Set as a Variety
 
@@ -355,7 +355,7 @@ $$
 $$
 The first is a sum of eight squares, so it forces all eight real components to vanish, and the common solution is the origin. The null set of the norm form is therefore $\{0\}$, and the zero divisor set is **not** the null set of $N$.
 
-The reason the norm form does not detect the zero divisors is that it takes values in $\mathbb{D}$, which is not a field: a nonzero norm need not be invertible. The element $\tilde{Q} = e_+$ has $N(\tilde{Q}) = e_+$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde{Q}$ is itself a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $e_+ e_- = 0$. So $N(\tilde{Q}) \neq 0$ does not imply that $\tilde{Q}$ is invertible.
+The reason the norm form does not detect the zero divisors is that it takes values in $\mathbb{D}$, which is not a field: a nonzero norm need not be invertible. The element $\tilde{Q} = \tilde\Pi_+$ has $N(\tilde{Q}) = \tilde\Pi_+$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde{Q}$ is itself a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $\tilde\Pi_+ \tilde\Pi_- = 0$. So $N(\tilde{Q}) \neq 0$ does not imply that $\tilde{Q}$ is invertible.
 
 ### The Reduced Norm
 
@@ -383,11 +383,11 @@ $$
 $$
 which holds in the quaternion and biquaternion algebras, requires $N(\tilde{Q})$ to be **invertible in** $\mathbb{D}$, not merely nonzero. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, non-vanishing is not enough: when $\tilde{Q}$ is a zero divisor, $N(\tilde{Q})$ is a nonzero zero divisor of $\mathbb{D}$, and $N(\tilde{Q})^{-1}$ does not exist.
 
-In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $N(\tilde{Q}) = N_+ e_+ + N_- e_-$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
+In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $N(\tilde{Q}) = N_+ \tilde\Pi_+ + N_- \tilde\Pi_-$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
 $$
-N(\tilde{Q})^{-1} = \frac{e_+}{N_+} + \frac{e_-}{N_-} = \frac{N(\tilde{Q})^*}{\Delta(\tilde{Q})},
+N(\tilde{Q})^{-1} = \frac{\tilde\Pi_+}{N_+} + \frac{\tilde\Pi_-}{N_-} = \frac{N(\tilde{Q})^*}{\Delta(\tilde{Q})},
 $$
-where $N(\tilde{Q})^* = N_- e_+ + N_+ e_-$ is the split complex conjugate. Substituting this into $\tilde{Q}^{-1} = \bar{\tilde{Q}} N(\tilde{Q})^{-1}$ expresses the inverse through the determinant:
+where $N(\tilde{Q})^* = N_- \tilde\Pi_+ + N_+ \tilde\Pi_-$ is the split complex conjugate. Substituting this into $\tilde{Q}^{-1} = \bar{\tilde{Q}} N(\tilde{Q})^{-1}$ expresses the inverse through the determinant:
 $$
 \tilde{Q}^{-1} = \frac{\bar{\tilde{Q}} \, N(\tilde{Q})^*}{\Delta(\tilde{Q})}, \qquad \Delta(\tilde{Q}) \neq 0.
 $$
@@ -413,7 +413,7 @@ The zero divisors of the split biquaternion algebra are the nonzero elements wit
 $$
 \tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
 $$
-The condition is **linear** in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{H}_{\mathbb{D}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $e_+$, $e_-$, and $e_0$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.
+The condition is **linear** in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{H}_{\mathbb{D}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $\tilde\Pi_+$, $\tilde\Pi_-$, and $e_0$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.
 
 The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. The invertibility criterion is that the norm form be invertible in $\mathbb{D}$, equivalently that the **reduced norm**
 $$
@@ -434,9 +434,9 @@ The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreduci
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
-| $e_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $e_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
-| $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ | Idempotent decomposition |
+| $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ | Idempotent decomposition |
 | $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
 | $N_{\mathbb{H}}(\tilde{Q}_\pm)$ | Ordinary quaternion norm of an idempotent component |
 | $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |

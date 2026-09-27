@@ -56,6 +56,21 @@ $$
 
 and this identification is used constantly. It is fixed by a single isomorphism, written $\Phi$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in *The 2×2 Matrix Representation* below, and the development of the representation — the general element, the six subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The 2×2 Matrix Representation of Biquaternions*. Its two **minimal left ideals** are the algebra's two chiralities. They are the reason the Dirac field is carried by the spinor module rather than by the whole algebra, and the reason the mass term has the shape it has, as discussed below.
 
+### Case and Tildes
+
+A generic element is preferably written so that the glyph alone identifies its algebra. Two features are read together: the **case** separates a real scalar from a complex one, and a **tilde** marks the quaternionic factor.
+
+| Algebra | Glyph | Example |
+|---|---|---|
+| the real numbers | lower case, no tilde | $q_\mu$, $t$, $x$ |
+| the complex numbers | upper case, no tilde | $Q_\mu$, $ct'$ |
+| the quaternions and split-quaternions | lower case, with tilde | $\tilde q$ |
+| the biquaternions and split-biquaternions | upper case, with tilde | $\tilde Q$ |
+
+The notation of this article already reads through the convention, and it is worth saying so explicitly: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$. The case names the scalar sector, the tilde the presence of the quaternion factor.
+
+This is a **preferred convention** — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{x}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, and the ladder operators $\tilde a, \tilde a^{\dagger}$ keep their established symbols, and a split construction is qualified by a subscript where it must be separated from the non-split one.
+
 ### The Conjugations and the Fixed Spaces
 
 The algebra carries four natural involutions, all of them used in the series:

@@ -200,23 +200,23 @@ The two rows for the halves and the sectors carry the same condition, and the co
 
 ### The Two Minimal Left Ideals
 
-The algebra is $M_2(\mathbb{C})$ and its simple module appears inside it as a minimal left ideal, as in *Biquaternion 2×2 Matrix Representation*. With $p = \tfrac12(e_0 + ie_3)$, so that $e_3p = ip$ and $1-p = \tfrac12(e_0 - ie_3)$, the two halves of the algebra are the minimal left ideals $\mathbb{B}p$ and $\mathbb{B}(1-p)$. Left multiplication preserves each of them, while the conjugation action carries each to a minimal left ideal, because it is an automorphism:
+The algebra is $M_2(\mathbb{C})$ and its simple module appears inside it as a minimal left ideal, as in *Biquaternion 2×2 Matrix Representation*. With $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$, so that $e_3\tilde\Pi_1 = i\tilde\Pi_1$ and $1-\tilde\Pi_1 = \tfrac12(e_0 - ie_3)$, the two halves of the algebra are the minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}(1-\tilde\Pi_1)$. Left multiplication preserves each of them, while the conjugation action carries each to a minimal left ideal, because it is an automorphism:
 
 $$
-\operatorname{Ad}_{\tilde{Q}}\bigl(\mathbb{B}p\bigr) = \mathbb{B}\bigl(\tilde{Q}p\tilde{Q}^{-1}\bigr),
+\operatorname{Ad}_{\tilde{Q}}\bigl(\mathbb{B}\tilde\Pi_1\bigr) = \mathbb{B}\bigl(\tilde{Q}\tilde\Pi_1\tilde{Q}^{-1}\bigr),
 \qquad
-\tilde{Q}p\tilde{Q}^{-1} = p \iff \tilde{Q}p = p\tilde{Q}.
+\tilde{Q}\tilde\Pi_1\tilde{Q}^{-1} = \tilde\Pi_1 \iff \tilde{Q}\tilde\Pi_1 = \tilde\Pi_1\tilde{Q}.
 $$
 
-A unit that does not commute with $p$ therefore moves the halving, and $\tilde{Q}p\tilde{Q}^{-1}$ is again an idempotent of the algebra, generating the minimal left ideal $\mathbb{B}(\tilde{Q}p\tilde{Q}^{-1})$. The two halves are **exchanged** by $\tilde{Q} = ie_1$, for which
+A unit that does not commute with $\tilde\Pi_1$ therefore moves the halving, and $\tilde{Q}\tilde\Pi_1\tilde{Q}^{-1}$ is again an idempotent of the algebra, generating the minimal left ideal $\mathbb{B}(\tilde{Q}\tilde\Pi_1\tilde{Q}^{-1})$. The two halves are **exchanged** by $\tilde{Q} = ie_1$, for which
 
 $$
-(ie_1)\,p\,(ie_1)^{-1} = 1 - p ,
+(ie_1)\,\tilde\Pi_1\,(ie_1)^{-1} = 1 - \tilde\Pi_1 ,
 $$
 
-and for a generic unit the image is a third idempotent, neither $p$ nor $1-p$: the exchange of the two halves is the special case, not the rule. The units that leave the halving untouched are exactly those commuting with $p$, that is, the elements of $\mathrm{span}_{\mathbb{C}}\{e_0, e_3\}$; being unitary is not sufficient for that, since $e_1$ is unitary and does not commute with $p$.
+and for a generic unit the image is a third idempotent, neither $\tilde\Pi_1$ nor $1-\tilde\Pi_1$: the exchange of the two halves is the special case, not the rule. The units that leave the halving untouched are exactly those commuting with $\tilde\Pi_1$, that is, the elements of $\mathrm{span}_{\mathbb{C}}\{e_0, e_3\}$; being unitary is not sufficient for that, since $e_1$ is unitary and does not commute with $\tilde\Pi_1$.
 
-The dagger sandwich exchanges them as well, $\operatorname{H}_{ie_1}(p) = 1 - p$. Neither action is a map of left modules over the algebra — $\operatorname{H}_{\tilde{Q}}(bx) \neq b\operatorname{H}_{\tilde{Q}}(x)$ in general, and the same is true of $\operatorname{Ad}_{\tilde{Q}}$ — but only the automorphism is multiplicative, and it is multiplicativity that makes the exchange of the halves a statement about the algebra rather than about one element. Since the spinor module of this article is one of the two halves, the two-sided actions either preserve the spinor module or exchange it with its opposite; this is the algebraic origin of the conjugate spinor, the second of the two chiral components.
+The dagger sandwich exchanges them as well, $\operatorname{H}_{ie_1}(\tilde\Pi_1) = 1 - \tilde\Pi_1$. Neither action is a map of left modules over the algebra — $\operatorname{H}_{\tilde{Q}}(bx) \neq b\operatorname{H}_{\tilde{Q}}(x)$ in general, and the same is true of $\operatorname{Ad}_{\tilde{Q}}$ — but only the automorphism is multiplicative, and it is multiplicativity that makes the exchange of the halves a statement about the algebra rather than about one element. Since the spinor module of this article is one of the two halves, the two-sided actions either preserve the spinor module or exchange it with its opposite; this is the algebraic origin of the conjugate spinor, the second of the two chiral components.
 
 ## Relations Between the Representations
 
@@ -229,11 +229,11 @@ $$
 x \longmapsto \bigl(\text{first column of } \Phi(x),\ \text{second column of } \Phi(x)\bigr),
 $$
 
-on which $\tilde{Q}$ acts on each copy as $\Phi(\tilde{Q})$. The two copies are the two minimal left ideals of the section above, $\mathbb{B}p$ and $\mathbb{B}(1-p)$, each of real dimension $4$, and in the $\Phi$ picture they are the two column spaces. In a basis of $\mathbb{B}$ made of a basis of $\mathbb{B}p$ followed by a basis of $\mathbb{B}(1-p)$, the left-regular $4\times4$ matrix of $\tilde{Q}$ is therefore block diagonal with $\Phi(\tilde{Q})$ in both diagonal blocks. This is why the $2\times2$ and $4\times4$ accounts of the same algebra cannot disagree about the isomorphism $\Phi$: the second contains the first twice.
+on which $\tilde{Q}$ acts on each copy as $\Phi(\tilde{Q})$. The two copies are the two minimal left ideals of the section above, $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}(1-\tilde\Pi_1)$, each of real dimension $4$, and in the $\Phi$ picture they are the two column spaces. In a basis of $\mathbb{B}$ made of a basis of $\mathbb{B}\tilde\Pi_1$ followed by a basis of $\mathbb{B}(1-\tilde\Pi_1)$, the left-regular $4\times4$ matrix of $\tilde{Q}$ is therefore block diagonal with $\Phi(\tilde{Q})$ in both diagonal blocks. This is why the $2\times2$ and $4\times4$ accounts of the same algebra cannot disagree about the isomorphism $\Phi$: the second contains the first twice.
 
 **Conjugation and the sandwich.** The conjugation action is the multiplicative core of the dagger sandwich: the two coincide exactly on the unitary elements, $\operatorname{H}_{\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for $\tilde{Q}^{\dagger}\tilde{Q} = e_0$, and in general $\operatorname{H}_{\lambda\tilde{U}} = |\lambda|^2\operatorname{Ad}_{\tilde{U}}$ for $\tilde{Q} = \lambda\tilde{U}$ with central $\lambda$ and unitary $\tilde{U}$. *Biquaternion Operator Representation* reads the sandwich against this reference, and the two differ in exactly two respects: the sandwich is not multiplicative off the unitary slice, and it is not invariant under a rescaling of $\tilde{Q}$ by a central element, so that it distinguishes the class of $\tilde{Q}$ from $\tilde{Q}$ itself.
 
-**Conjugation and the spinor module.** Because it is an automorphism, the conjugation action permutes the two minimal left ideals, and it exchanges them for any unit not commuting with $p$, for instance $ie_1$. The spinor realization of this article is one of the two; a two-sided action either leaves the halving alone, when the acting unit commutes with $p$, or carries the spinor module to another minimal left ideal, which is its opposite in the special case of $ie_1$ and a third module in general. This is the algebraic origin of the conjugate spinor.
+**Conjugation and the spinor module.** Because it is an automorphism, the conjugation action permutes the two minimal left ideals, and it exchanges them for any unit not commuting with $\tilde\Pi_1$, for instance $ie_1$. The spinor realization of this article is one of the two; a two-sided action either leaves the halving alone, when the acting unit commutes with $\tilde\Pi_1$, or carries the spinor module to another minimal left ideal, which is its opposite in the special case of $ie_1$ and a third module in general. This is the algebraic origin of the conjugate spinor.
 
 **With the realizations treated elsewhere.** The remaining relations are recorded in the articles that own those realizations:
 
@@ -288,7 +288,7 @@ The matrix, four-vector and regular realizations, the norm form read in each of 
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -1$, central in $\mathrm{Cl}_{1,3}^+$ |
 | $\operatorname{Ad}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{-1}$ | Conjugation action of a unit, the inner automorphism |
 | $\operatorname{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{\dagger}$ | The dagger sandwich of *Biquaternion Operator Representation* |
-| $p = \tfrac12(e_0 + ie_3)$ | Idempotent, $\mathbb{B}p$ a minimal left ideal of real dimension $4$ |
+| $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$ | Idempotent, $\mathbb{B}\tilde\Pi_1$ a minimal left ideal of real dimension $4$ |
 
 ## Further Reading
 

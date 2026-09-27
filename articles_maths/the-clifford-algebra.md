@@ -123,7 +123,7 @@ $$
 
 **Proof.** The map $v \mapsto -v$ squares to the same map as $v \mapsto v$ on the generators, since $(-v)^2 = v^2 = q(v)$; by the universal property it extends to an algebra endomorphism, and applying it twice is the identity on generators, hence everywhere. The eigenspace description is the definition. $\square$
 
-**Remark.** The grade involution is one of the three standard involutions of the Clifford algebra. The other two, **reversion** and **Clifford conjugation**, together with the volume element and the centre, are properties of the finite-dimensional theory and are treated.
+**Remark.** The grade involution is one of the three standard involutions of the Clifford algebra. The other two, **reversion** and **Clifford conjugation**, together with the volume element and the centre, are properties of the finite-dimensional theory and are treated in *Clifford Algebras in Finite Dimensions*.
 
 ## Functoriality
 

@@ -71,7 +71,7 @@ $$
 
 *Proof.* $\mathbb{B}\cong S^{\oplus 2}$, so $\mathbb{B}^{\oplus m}\cong S^{\oplus 2m}$, and every free module is of this form; thus $S^{\oplus k}$ is free exactly when $k=2m$ for some $m$. The dimension statement is immediate. $\square$
 
-Thus the defining module $S$ is projective but not free, a module of dimension $2$ over $\mathbb{C}$ with no basis over $\mathbb{B}$, and the obstruction to freeness is a parity. This is the sharpest contrast with $\mathbb{H}$: over the division algebra every module is free, over the matrix algebra only the even ones are.
+Thus the defining module $S$ is projective but not free, a module of dimension $2$ over $\mathbb{C}$ with no basis over $\mathbb{B}$, and the obstruction to freeness is a parity. This is the sharpest contrast with $\mathbb{H}$: over the division algebra every module is free, over the matrix algebra only the even ones are free.
 
 ### Morita reduction
 

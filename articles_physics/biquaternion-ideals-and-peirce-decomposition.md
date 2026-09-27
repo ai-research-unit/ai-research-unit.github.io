@@ -197,10 +197,10 @@ The middle elements are pairwise incomparable; each covers $0$ and is covered by
 
 The parameter space deserves a caution. The projective space classifying the minimal one-sided ideals of $M_n(D)$ is $\mathbb{P}^{n-1}(D)$, over the **division ring** $D$ in the Wedderburn–Artin decomposition — not over an arbitrary base field. Here $D = \mathbb{C}$ and $n = 2$, so the parameter space is $\mathbb{P}^1(\mathbb{C})$. In particular, regarding $\mathbb{B}$ as an $\mathbb{R}$-algebra does not replace this by $\mathbb{P}^1(\mathbb{R})$: the one-sided ideals are still parametrised by $\mathbb{P}^1(\mathbb{C})$. The real projective line appears only as the subfamily of kernels the real structure preserves, not as a set of fixed minimal left ideals; Section 11 shows that no minimal left ideal is stable under coefficient conjugation.
 
-**Physical reading: the two spheres.** The projective line $\mathbb{P}^1(\mathbb{C})$ is a two-sphere, and so is the family of pure states: the Hermitian idempotents are parametrised by the unit directions $\hat{\boldsymbol\mu}\in S^2$ through $P_+(\hat{\boldsymbol\mu}) = \tfrac12(e_0+i\hat{\boldsymbol\mu})$, as *Biquaternion Idempotents and Projections* records. The two parametrisations match: the assignment
+**Physical reading: the two spheres.** The projective line $\mathbb{P}^1(\mathbb{C})$ is a two-sphere, and so is the family of pure states: the Hermitian idempotents are parametrised by the unit directions $\hat{\boldsymbol\mu}\in S^2$ through $\tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac12(e_0+i\hat{\boldsymbol\mu})$, as *Biquaternion Idempotents and Projections* records. The two parametrisations match: the assignment
 
 $$
-\hat{\boldsymbol\mu} \longmapsto \mathbb{B}\,P_+(\hat{\boldsymbol\mu})
+\hat{\boldsymbol\mu} \longmapsto \mathbb{B}\,\tilde\Pi(\hat{\boldsymbol\mu})
 $$
 
 sends a state direction to its one-particle module, and it is **injective** — distinct directions give distinct minimal left ideals, verified on random directions — so the sphere of state directions embeds in the projective line; both are compact connected surfaces, so the embedding is a bijection. The state space and the lattice of one-particle modules are therefore the same two-sphere seen twice, once as projectors and once as modules. This is the algebraic reason the Bloch sphere appears both in the state language and in the ideal language of the framework.
@@ -284,7 +284,7 @@ Physically: the two-sided triviality of the ideal lattice is the statement that 
 | $S = \mathbb{C}^2$ | The defining module; all simple left modules are isomorphic to it |
 | $L_W$ | Minimal left ideal defined by a line $W\subset\mathbb{C}^2$ |
 | $\mathbb{P}^1(\mathbb{C})$ | The projective line parametrising the minimal left ideals; a two-sphere |
-| $P_+(\hat{\boldsymbol\mu}) = \tfrac12(e_0+i\hat{\boldsymbol\mu})$ | Pure state; Hermitian idempotent; $\hat{\boldsymbol\mu}\in S^2$ |
+| $\tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac12(e_0+i\hat{\boldsymbol\mu})$ | Pure state; Hermitian idempotent; $\hat{\boldsymbol\mu}\in S^2$ |
 | $\sigma$ | Coefficient conjugation, the real structure; pairs $L_W\leftrightarrow L_{W^{\perp}}$ |
 | $J(\mathbb{B})$ | Jacobson radical; it is 0 |
 

@@ -262,7 +262,7 @@ $$
 from which the whole chirality behaviour follows. Every **even** element commutes with $\gamma_5$, so an even element maps each chiral half into itself; every **odd** element anticommutes with it — vectors and trivectors alike, hence every odd element — so an odd element exchanges the halves:
 
 $$
-\gamma^\mu P_+ = P_-\,\gamma^\mu .
+\gamma^\mu \tilde\Pi_R = \tilde\Pi_L\,\gamma^\mu .
 $$
 
 Combine this with the grading of the second section and the statement is: **rotations preserve chirality, reflections reverse it.** A rotation cannot change which chiral half a spinor belongs to, and a reflection always does. Chirality is not an extra label attached to the spinor; it is the eigenvalue of the operator that tells the two halves of the algebra apart, and only the odd half moves it.
@@ -287,10 +287,10 @@ This is the precise sense in which chirality is tied to spin $\tfrac12$: the two
 The exchange of the two factors is an orientation-reversing operation, which is why it takes a reflection. **Parity is exactly that reflection.** It fixes the time direction and reverses the three spatial ones, and it exchanges the two spinor modules,
 
 $$
-\Pi : (\tfrac12,0) \longleftrightarrow (0,\tfrac12),
+\mathsf{P} : (\tfrac12,0) \longleftrightarrow (0,\tfrac12),
 $$
 
-verified at the level of the projectors as $\gamma^0P_+ = P_-\gamma^0$. Parity violation — the statement that the weak interaction couples to one chirality and not the other — is therefore not an accidental property of the Standard Model but the statement that the interaction distinguishes the two factors of $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$. This is what *Chiral Fermions in the Biquaternion Framework* and *The Neutrino and Majorana Fermions in Biquaternionic Form* develop on the physical side.
+verified at the level of the projectors as $\gamma^0\tilde\Pi_R = \tilde\Pi_L\gamma^0$. Parity violation — the statement that the weak interaction couples to one chirality and not the other — is therefore not an accidental property of the Standard Model but the statement that the interaction distinguishes the two factors of $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$. This is what *Chiral Fermions in the Biquaternion Framework* and *The Neutrino and Majorana Fermions in Biquaternionic Form* develop on the physical side.
 
 One corollary concerns the mass. The mass term of the series is linear and chirality-off-diagonal; being even, $m$ itself commutes with $\gamma_5$ and does not flip chirality. What the mass does is *couple* the two chiral equations, so that chirality ceases to be conserved — it permits the flip, while the generators perform it. A massive fermion therefore has no definite chirality, which is the operator-level content of the standard statement that chirality and helicity agree only in the massless limit.
 
@@ -345,7 +345,7 @@ The claims of this article, in order.
 | $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict$ metric of the material coordinates |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -I_4$ |
 | $\gamma_5 = i_{\mathrm{Cl}}\omega$ | Chirality operator, $\gamma_5^2 = I_4$ |
-| $P_\pm = \tfrac12(1\pm\gamma_5)$ | Chirality projectors, rank $2$ |
+| $\tilde\Pi_{L,R} = \tfrac12(1\pm\gamma_5)$ | Chirality projectors, rank $2$ |
 | $\gamma^0$ | The frame; the reflection whose normal is $e_0$ |
 | $\rho(u) : x\mapsto -uxu^{-1}$ | Pin action of an odd unit element |
 | $\mathrm{rev}(\Phi(\tilde{Q})) = \Phi(\bar{\tilde{Q}})$ | Clifford reversal is quaternion conjugation |
@@ -357,7 +357,7 @@ The claims of this article, in order.
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion sector; $\Phi(\mathbb{H}_{\mathbb{B}})$ = identity + spacelike bivectors (spatial rotations) |
 | $\det M$ | Two-reflection criterion: $\det M = 0$ iff $\tilde{\Lambda}$ fixes a plane |
 | $\det = (-1)^{k}(-1)^{\text{anti}}$ | Reflection parity of a module map, linear or anti-linear |
-| $\Pi$ | Parity reflection; exchanges the two chiral halves |
+| $\mathsf{P}$ | Parity reflection; exchanges the two chiral halves |
 
 ## Further Reading
 

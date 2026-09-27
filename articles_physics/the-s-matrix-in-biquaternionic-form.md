@@ -14,7 +14,7 @@ The companion articles have assembled every ingredient this article needs. *Cano
 
 This article asks what "the S-matrix in biquaternionic form" names. The finding is stated at the outset.
 
-- **Established, and recomputed below.** Conditional on the one-mode identification of the Fock article, the S-matrix of a single fermionic mode is a **matrix-unitary** element of $\mathbb{B}$. Matrix unitarity, $\tilde{S}\tilde{S}^\dagger = e_0$, is *not* the norm-form condition $\tilde{S}\bar{\tilde{S}} = e_0$ that the framework uses to define its Lorentz rotors. The two conditions define different groups, $U(2)$ and $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$; the S-matrix belongs to the first, not the second. Every matrix-unitary biquaternion factors as $\tilde{S} = e^{i\theta}\tilde{R}$ with $\tilde{R}$ a unit real quaternion, and a parity-conserving one-mode S-matrix is $\tilde{S} = e^{i\theta_0}P_+ + e^{i\theta_1}P_-$, whose norm form is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. Its transition probabilities are given by the trace formula $2\,\mathrm{Sc}(\tilde{P}_f\,\tilde{S}\tilde{\rho}_i\,\tilde{S}^\dagger)$.
+- **Established, and recomputed below.** Conditional on the one-mode identification of the Fock article, the S-matrix of a single fermionic mode is a **matrix-unitary** element of $\mathbb{B}$. Matrix unitarity, $\tilde{S}\tilde{S}^\dagger = e_0$, is *not* the norm-form condition $\tilde{S}\bar{\tilde{S}} = e_0$ that the framework uses to define its Lorentz rotors. The two conditions define different groups, $U(2)$ and $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$; the S-matrix belongs to the first, not the second. Every matrix-unitary biquaternion factors as $\tilde{S} = e^{i\theta}\tilde{R}$ with $\tilde{R}$ a unit real quaternion, and a parity-conserving one-mode S-matrix is $\tilde{S} = e^{i\theta_0}\tilde\Pi_1 + e^{i\theta_1}\tilde\Pi_2$, whose norm form is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. Its transition probabilities are given by the trace formula $2\,\mathrm{Sc}(\tilde{P}_f\,\tilde{S}\tilde{\rho}_i\,\tilde{S}^\dagger)$.
 - **Standard, and transcribed.** The interaction picture, the Dyson series, the unitarity relation $S = 1+iT$, the finite-dimensional identity $2\,\mathrm{Im}\,T = T^\dagger T$, the optical theorem, and the contraction of the Dyson series into Feynman propagators by Wick's theorem. None of this depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
 - **Gap, left visible.** The S-matrix of the *field* is an operator on an infinite-dimensional Fock space and is **not** an element of $\mathbb{B}$; the algebra hosts at most the one-mode truncation. And the algebra does not select the boundary condition — the $i\epsilon$ orientation, equivalently the in/out splitting — that makes the time-ordered exponential a well-defined distributional object. That gap is inherited from the propagator article and is not closed here.
 
@@ -147,18 +147,18 @@ $$
 $$
 The conditionality is the Fock article's: whether the one-mode identification is a structural feature of the framework or a coincidence of the dimension count $\dim_\mathbb{C}M_2(\mathbb{C}) = 4 = \dim_\mathbb{C}\mathbb{B}$ is not decided there, and this article does not decide it either. The S-matrix is not a derivation from the algebra; it is the algebra's one-mode truncation of a standard operator.
 
-**The physical one-mode S-matrix is diagonal.** An S-matrix must conserve fermion parity: a scattering process cannot turn an even state into an odd one. Parity conservation is the statement that $\tilde S$ commutes with the grading $(-1)^F = ie_3$, and the elements of $\mathbb{B}$ that commute with $ie_3$ are exactly the complex span of $e_0$ and $ie_3$, which is also the span of the two occupation projectors $P_+ = \tfrac12(e_0+ie_3)$ and $P_- = \tfrac12(e_0-ie_3)$. A parity-conserving S-matrix therefore has the form
+**The physical one-mode S-matrix is diagonal.** An S-matrix must conserve fermion parity: a scattering process cannot turn an even state into an odd one. Parity conservation is the statement that $\tilde S$ commutes with the grading $(-1)^F = ie_3$, and the elements of $\mathbb{B}$ that commute with $ie_3$ are exactly the complex span of $e_0$ and $ie_3$, which is also the span of the two occupation projectors $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_2 = \tfrac12(e_0-ie_3)$. A parity-conserving S-matrix therefore has the form
 
 $$
-\tilde S = e^{i\theta_0}\,P_+ + e^{i\theta_1}\,P_-, \qquad P_\pm = \tfrac12\left(e_0\pm ie_3\right),
+\tilde S = e^{i\theta_0}\,\tilde\Pi_1 + e^{i\theta_1}\,\tilde\Pi_2, \qquad \tilde\Pi_{1,2} = \tfrac12\left(e_0\pm ie_3\right),
 $$
 
 because unitarity forces the two eigenvalues to lie on the unit circle. This is the one-mode S-matrix in its physical form: a phase on the vacuum and a phase on the occupied mode, which is what "no particle creation or annihilation in the asymptotic region" means at this level.
 
-**Its norm form is a phase, not one.** The quaternion conjugate of $P_\pm$ is $P_\mp$, so
+**Its norm form is a phase, not one.** The quaternion conjugate of $\tilde\Pi_{1,2}$ is $\tilde\Pi_{2,1}$, so
 
 $$
-\tilde S\bar{\tilde S} = e^{i(\theta_0+\theta_1)}(P_+ + P_-) = e^{i(\theta_0+\theta_1)}\,e_0 .
+\tilde S\bar{\tilde S} = e^{i(\theta_0+\theta_1)}(\tilde\Pi_1 + \tilde\Pi_2) = e^{i(\theta_0+\theta_1)}\,e_0 .
 $$
 
 The parity-conserving one-mode S-matrix is unit norm form only when $\theta_0+\theta_1 \in 2\pi\mathbb{Z}$. This is the concrete form of the previous section's warning: a physically unitary S-matrix is generally not in $SL(2,\mathbb{C})$, and one should not assign it to the Lorentz rotor group on the strength of the word "unitarity". Computed for three parameter pairs with $\theta_0,\theta_1$ at generic values, the matrix unitarity held, $\tilde S$ commuted with $ie_3$, and $N(\tilde S)$ matched $e^{i(\theta_0+\theta_1)}$ to machine precision — none of the three had $N = 1$.
@@ -190,7 +190,7 @@ $$
 
 which is the Born rule of the informational-space article applied to the scattering channel $\tilde\rho_i \mapsto \tilde S\tilde\rho_i\tilde S^\dagger$. The S-matrix acts as a **reversible** channel: it is matrix-unitary, in contrast with the idempotent projections that implement measurement. The reversible/irreversible dichotomy of $\mathbb{M}_+$ is thus visible in the scattering formalism, with the S-matrix on the reversible side.
 
-The formula was checked against the elementary Born rule on cases chosen for the purpose rather than for convenience. Take the two occupation states $|0\rangle,|1\rangle$ with projectors $P_+ = \tfrac12(e_0+ie_3)$ and $P_- = \tfrac12(e_0-ie_3)$, and take for $\tilde S$ a spin rotation about $e_2$,
+The formula was checked against the elementary Born rule on cases chosen for the purpose rather than for convenience. Take the two occupation states $|0\rangle,|1\rangle$ with projectors $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_2 = \tfrac12(e_0-ie_3)$, and take for $\tilde S$ a spin rotation about $e_2$,
 
 $$
 \tilde S = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,e_2,
@@ -295,7 +295,7 @@ $$
 and matrix unitarity is *not* the norm-form condition $\tilde S\bar{\tilde S} = e_0$: the first defines $U(2)$, the second $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$. Every matrix-unitary biquaternion is $e^{i\theta}\tilde R$ with $\tilde R$ a unit real quaternion, and a parity-conserving one-mode S-matrix is
 
 $$
-\tilde S = e^{i\theta_0}P_+ + e^{i\theta_1}P_-, \qquad P_\pm = \tfrac12(e_0\pm ie_3),
+\tilde S = e^{i\theta_0}\tilde\Pi_1 + e^{i\theta_1}\tilde\Pi_2, \qquad \tilde\Pi_{1,2} = \tfrac12(e_0\pm ie_3),
 $$
 
 whose norm form is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, $\tilde S = e^{-i\tilde H\tau}$ and
@@ -345,7 +345,7 @@ Two gaps remain. The field S-matrix is an operator on an infinite-dimensional Fo
 | $\tilde{k}\bar{\tilde{k}}=-m^2c^2/\hbar^2$ | Biquaternion mass shell (external legs) |
 | $\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger,\tilde N_{\mathrm{tr}}$ | Single-mode ladder and number operators |
 | $(-1)^F=ie_3$ | Fermion-parity grading (one mode) |
-| $P_\pm=\tfrac12(e_0\pm ie_3)$ | Occupation projectors (vacuum, occupied) |
+| $\tilde\Pi_{1,2}=\tfrac12(e_0\pm ie_3)$ | Occupation projectors (vacuum, occupied) |
 | $\tilde\rho_i$, $\tilde P_f$ | Initial state and final projector in $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing (Born rule) |
 | $c$ | Speed of light, restored in the mass-shell relation |

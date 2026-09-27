@@ -1,3 +1,4 @@
+
 # __Real Algebra__
 
 ## Introduction
@@ -364,7 +365,7 @@ The **uniqueness** of $\mathbb{R}$ as a complete ordered field is a theorem: if 
 
 ## Summary
 
-The real algebra is the field $\mathbb{R}$ of real numbers considered as a one-dimensional real vector space equipped with its field multiplication. It is the base case of the ladder: commutative, associative and unital, and a field, so that every nonzero element is invertible. It is the only system of Part V that also carries a total order compatible with its operations.
+The real algebra is the field $\mathbb{R}$ of real numbers considered as a one-dimensional real vector space equipped with its field multiplication. It is the base case of the ladder: commutative, associative and unital, and a field, so that every nonzero element is invertible. It is the only system of the family that also carries a total order compatible with its operations.
 
 The only conjugation is the identity. Its fixed-point set is all of $\mathbb{R}$, so the single fixed-point subspace is $\mathbb{R}$ itself. There is no nontrivial conjugate decomposition, because the eigenspace for the eigenvalue $-1$ is zero, and there is no Hermitian or anti-Hermitian subspace, because there is no Hermitian conjugation: the decomposition of the general case collapses to a single summand.
 
@@ -372,7 +373,7 @@ The quadratic objects collapse with it. The norm form is $N(a) = a \cdot a = a^2
 
 ## Summary of Notation
 
-| Symbol | Meaning |
+| symbol | meaning |
 |---|---|
 | $\mathbb{R}$ | Real number field |
 | $1$ | Identity |
@@ -396,5 +397,4 @@ The quadratic objects collapse with it. The norm form is $N(a) = a \cdot a = a^2
 - Edmund Landau, *Grundlagen der Analysis* (1930), for the axiomatic treatment.
 - Walter Rudin, *Principles of Mathematical Analysis* (McGraw-Hill, 1976), for the standard modern treatment.
 - John H. Conway, *On Numbers and Games* (Academic Press, 1976), for the construction by surreal numbers.
-- Charles C. Pinter, *A Book of Abstract Algebra* (Dover, 2010), for the representation theory of fields.
 

@@ -38,7 +38,7 @@ The entries are the low-dimensional classification, read from the number-system 
 
 **The complex numbers.** With one generator $e$ of square $-1$, the algebra is $\mathrm{Cl}_{0,1}=\mathbb{R}[e]/(e^2+1)=\mathbb{C}$. The Clifford form is $q(e)=-1$; the norm form is $N(x+ye)=x^2+y^2$, multiplicative, and non-vanishing on nonzero elements, so $\mathbb{C}$ is a division algebra. The conjugation $\bar{\cdot}$ is the Clifford conjugation $\bar e=-e$, the norm satisfies $N(z)=z\bar z$, and the units are the nonzero elements.
 
-**The split complex numbers.** With one generator $j$ of square $+1$, the algebra is $\mathrm{Cl}_{1,0}=\mathbb{R}[j]/(j^2-1)=\mathbb{D}=\mathbb{R}\times\mathbb{R}$, with the idempotents $e_\pm=\tfrac12(1\pm j)$. The Clifford form is $q(j)=+1$. The norm form $N(x+yj)=x^2-y^2$ is indefinite and vanishes on the isotropic lines $x=\pm y$, so $\mathbb{D}$ is not a division algebra; the zero divisors are the nonzero multiples of the idempotents. The appearance of the zero divisors is thus exactly the statement that the form of the Clifford algebra is indefinite, or equivalently that the algebra is a nontrivial direct product.
+**The split complex numbers.** With one generator $j$ of square $+1$, the algebra is $\mathrm{Cl}_{1,0}=\mathbb{R}[j]/(j^2-1)=\mathbb{D}=\mathbb{R}\times\mathbb{R}$, with the idempotents $\pi_\pm=\tfrac12(1\pm j)$. The Clifford form is $q(j)=+1$. The norm form $N(x+yj)=x^2-y^2$ is indefinite and vanishes on the isotropic lines $x=\pm y$, so $\mathbb{D}$ is not a division algebra; the zero divisors are the nonzero multiples of the idempotents. The appearance of the zero divisors is thus exactly the statement that the form of the Clifford algebra is indefinite, or equivalently that the algebra is a nontrivial direct product.
 
 **The dual numbers.** The degenerate case is obtained by taking the form $q=0$ on a one-dimensional space. The Clifford algebra $\mathrm{Cl}(\mathbb{R},0)$ is the exterior algebra on the generator, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ with $\varepsilon^2=0$, which is the algebra of dual numbers $\mathbb{D}'$. The radical of the form is the whole space, the algebra is not semisimple, and the "norm form" degenerates: $N(a+b\varepsilon)=a^{2}$ vanishes on the line $\mathbb{R}\varepsilon$, so its radical is one-dimensional and the form is not non-degenerate. The dual numbers are therefore the Clifford algebra of a degenerate form, and they are the smallest model of the radical phenomena of the degenerate case: they are not a composition algebra, because the norm form is degenerate.
 
@@ -169,7 +169,7 @@ The composition property of the norm â€” the multiplicativity $N(xy)=N(x)N(y)$ â
 | $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$ | Norm form of $\mathbb{B}$, complex-valued, signature $(4,4)$ in its real part |
 | $\tilde Q\tilde Q^\dagger$ | Hermitian form of $\mathbb{B}$ |
 | $\langle\tilde P,\tilde Q\rangle=\sum_\mu P_\mu^*Q_\mu$ | Complex inner product on $\mathbb{B}$ |
-| $e_\pm=\tfrac12(1\pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\pi_\pm=\tfrac12(1\pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\gamma_k\mapsto ie_k$ | Isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$ |
 | $Sp(1)$ | Unit quaternions, $\cong SU(2)\cong\mathrm{Spin}(3)$ |
 | $U(1)$ | Unit complex numbers, $\cong\mathrm{Spin}(2)$ |

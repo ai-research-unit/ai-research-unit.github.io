@@ -232,7 +232,7 @@ Concretely, the factorization is the following procedure:
 2. **Complex Fourier transforms.** Apply the ordinary complex Fourier transform to the four complex functions obtained by combining the coefficients as above. The result is four complex spectra.
 3. **Reassemble.** Combine the four complex spectra into the biquaternion spectrum $F(\omega)$.
 
-The factorization shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied to the entries of the matrix representation, dressed in biquaternion language. The non-trivial content is the choice of root and the basis change that it induces.
+The factorization shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied entrywise to the coefficients, dressed in biquaternion language. The non-trivial content is the choice of root and the basis change that it induces.
 
 ### The Number of Complex Transforms
 

@@ -287,11 +287,11 @@ $$
 
 The optimization of Step 4 is then carried out in the algebra exactly as before, since it uses only the real vectors $\hat{a},\hat{a}',\hat{b},\hat{b}'$ and the bilinear form. The result is the same: $|S_\epsilon|=2\sqrt{2}$ for every Bell state.
 
-It is worth recording the same content in the language of **joint probabilities**, because that is the form in which the CHSH combination enters the operational discussion of the companion article *The Quantum–Classical Divide in the Biquaternion Framework*. With the single-qubit idempotents $P_\pm(\hat{a})=\tfrac12(e_0\pm i\hat{a})$, the joint probability of outcomes $\pm,\pm$ is the Born pairing applied twice:
+It is worth recording the same content in the language of **joint probabilities**, because that is the form in which the CHSH combination enters the operational discussion of the companion article *The Quantum–Classical Divide in the Biquaternion Framework*. With the single-qubit idempotents $\tilde\Pi(\pm\hat{a})=\tfrac12(e_0\pm i\hat{a})$, the joint probability of outcomes $\pm,\pm$ is the Born pairing applied twice:
 
 $$
 p_\epsilon(\pm,\pm\mid\hat{a},\hat{b})
-= \mathrm{Tr}\Bigl(P_\epsilon\circ\bigl(P_\pm(\hat{a})\otimes P_\pm(\hat{b})\bigr)\Bigr).
+= \mathrm{Tr}\Bigl(P_\epsilon\circ\bigl(\tilde\Pi(\pm\hat{a})\otimes \tilde\Pi(\pm\hat{b})\bigr)\Bigr).
 $$
 
 Expanding the product of projectors gives $p(+,+)=p(-,-)=\tfrac14\bigl(1+E(\hat{a},\hat{b})\bigr)$ and $p(+,-)=p(-,+)=\tfrac14\bigl(1-E(\hat{a},\hat{b})\bigr)$ — the cross terms vanish because the single-particle expectations $\langle\sigma_j\otimes I\rangle$ and $\langle I\otimes\sigma_k\rangle$ are zero in every Bell state — and the CHSH combination is the corresponding combination of joint probabilities,
@@ -419,7 +419,7 @@ Compute its correlation matrix and show that the maximal CHSH value is $2\sqrt{2
 
 **Problem 2 (The algebraic maximum and the Popescu–Rohrlich box).** Write down the four correlators of the Popescu–Rohrlich box and verify that they give $|S|=4$ while all four single-party marginals are unbiased. Explain, using the eigenvalue computation of Step 5, why no choice of $\pm1$ observables on $\mathbb{C}^2\otimes\mathbb{C}^2$ can realize those four correlators: what constraint on $|u|$ and $|v|$ does the derivation impose?
 
-**Problem 3 (Product states do not violate).** For the product state $P_+(\hat{m})\otimes P_+(\hat{n})$ of two qubits, compute $E(\hat{a},\hat{b})$ and show that $|S|\le2$ for all directions, with the classical value $2$ attainable. Where in the biquaternion computation does the factorization of the state enter?
+**Problem 3 (Product states do not violate).** For the product state $\tilde\Pi(\hat{m})\otimes \tilde\Pi(\hat{n})$ of two qubits, compute $E(\hat{a},\hat{b})$ and show that $|S|\le2$ for all directions, with the classical value $2$ attainable. Where in the biquaternion computation does the factorization of the state enter?
 
 **Problem 4 (Verification of the square identity on the optimal configuration).** Evaluate $\tilde{\mathcal{S}}^2$ of Step 3 at $\hat{a}\perp\hat{a}'$, $\hat{b}\perp\hat{b}'$, and verify directly that its image has eigenvalue $8$ — so that $\tilde{\mathcal{S}}$ has eigenvalue $2\sqrt{2}$ — and that the singlet idempotent is a corresponding eigen-idempotent. This is the algebraic form of the statement that the bound is saturated.
 

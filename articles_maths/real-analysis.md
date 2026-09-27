@@ -1,3 +1,4 @@
+
 # __Real Analysis__
 
 ## Introduction
@@ -514,9 +515,9 @@ The article also passes from sequences of numbers to sequences of functions, whe
 
 ## Summary of Notation
 
-| Symbol | Meaning |
+| symbol | meaning |
 |---|---|
-| $d(a, b) = \|a - b\|$ | Distance on $\mathbb{R}$ |
+| $d(a, b) = \lvert a - b \rvert$ | Distance on $\mathbb{R}$ |
 | $B(a, r)$ | Open ball of radius $r$ |
 | $U, F$ | Open, closed sets |
 | $K$ | Compact set |

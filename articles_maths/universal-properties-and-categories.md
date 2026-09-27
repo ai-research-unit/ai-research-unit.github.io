@@ -110,7 +110,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 
 **Example (free monoid).** Let $U : \mathbf{Mon} \to \mathbf{Set}$ be the forgetful functor from monoids to sets. For a set $X$, let $X^*$ be the set of finite words in the alphabet $X$, with concatenation and the empty word as multiplication and identity; this is the **free monoid** on $X$. The insertion $u : X \to U(X^*)$ sending a letter to the one-letter word, with $X^*$, is a universal arrow from $X$ to $U$. Indeed, a monoid homomorphism $X^* \to M$ is determined by its values on the one-letter words, and any function $X \to U(M)$ extends uniquely to a homomorphism.
 
-**Remark.** The free group on a set, the free module on a set, the free algebra of a signature and the tensor product of modules are all universal arrows of the same shape, and their constructions belong,andall. The present article supplies the schema; those articles supply the objects.
+**Remark.** The free group on a set, the free module on a set, the free algebra of a signature and the tensor product of modules are all universal arrows of the same shape, and their constructions belong to all. The present article supplies the schema; those articles supply the objects.
 
 ## Limits and Colimits
 
@@ -230,7 +230,7 @@ A **comonad** is the dual.
 
 **Proof sketch.** For the first statement, the triangular identities of the adjunction give the two monad laws, and the verification is a calculation with $\eta$ and $\varepsilon$. For the converse, the Kleisli category has the free algebras as its objects, and the Eilenberg–Moore category has all algebras; the two adjunctions induce the given monad because $G \circ F$ recovers $T$ on both. $\square$
 
-**Remark.** The monadicity theorem of Beck gives a criterion for a right adjoint to be the Eilenberg–Moore comparison functor, hence for a category to be the category of algebras of a monad over another. The theory is the categorical form of universal algebra, and it is used in the corpus for the algebraic theories whose models are groups, rings and modules, whose constructions are in the corresponding articles .
+**Remark.** The monadicity theorem of Beck gives a criterion for a right adjoint to be the Eilenberg–Moore comparison functor, hence for a category to be the category of algebras of a monad over another. The theory is the categorical form of universal algebra, and it is used in the corpus for the algebraic theories whose models are groups, rings and modules, whose constructions are in the corresponding articles.
 
 ## Universal Properties in Algebra
 

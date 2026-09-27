@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries four distinguished conjugations, and almost every operation in the relativistic articles is one of them. The norm form is built from the first, the reality of an observable is decided by the second, the adjoint of an operator is the third, and the algebra's real structure is the fourth. This article fixes the four, derives their composition law, identifies the real subspaces they single out, and states the matrix realisation that makes the whole structure concrete. It is the algebraic companion to the operator article, whose adjoint identities it supplies.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries four distinguished conjugations, and almost every operation in the relativistic articles is one of them. The norm form is built from the first, the reality of an observable is decided by the second, the adjoint of an operator is the third, and the algebra's real structure is the fourth. This article fixes the four, derives their composition law, identifies the real subspaces they single out, and states the two pairings and the adjoint identities that the operator article uses.
 
 The four maps are **quaternion conjugation** (also called reversal or conjugation by the quaternion conjugate) $\bar{\cdot}$, **complex conjugation** ${}^*$, **Hermitian conjugation** $\dagger = \bar{\cdot}^{\,*}$, and **anti-Hermitian conjugation** $\flat = -\dagger$. Their names are inherited unchanged from the companion *Conventions in the Biquaternion Universe*, and nothing here renames them. Three facts organise the article.
 
@@ -21,13 +21,13 @@ The remaining two are the anti-fixed spaces: the vector subspace $\mathrm{Vect}(
 
 Third, the adjoints. The reason the lattice is not merely bookkeeping is that adjoints of operators are read off it. Left multiplication by $\tilde{A}$ has adjoint left multiplication by $\tilde{A}^\dagger$, and the gradient of the operator article has adjoint $-\bar{\tilde{\nabla}}$; the two signs cancel in the d'Alembertian, which is self-adjoint. The reversal is the anti-automorphism that builds the norm form, and the fixed space of $\flat$ is the real form in which the first-order kernels live. The operator article uses these facts; this article derives them.
 
-The article is organised as follows. The four conjugations are defined and typed, the Klein four-group is established with its composition table, the fixed spaces and their lattice are computed, and the matrix realisation is given. The two pairings — the bilinear one built from reversal and the Hermitian one built from $\dagger$ — are treated next, with their signatures and invariance, and the article closes with the adjoint identities and the central complex structure.
+The article is organised as follows. The four conjugations are defined and typed, the Klein four-group is established with its composition table, the fixed spaces and their lattice are computed. The two pairings — the bilinear one built from reversal and the Hermitian one built from $\dagger$ — are treated next, with their signatures and invariance, and the article closes with the adjoint identities and the central complex structure.
 
-- Companion article *Conventions in the Biquaternion Universe*, for the four conjugations, the two sectors, and the trace formula as the series fixes them.
+- Companion article *Conventions in the Biquaternion Universe*, for the four conjugations and the two sectors as the series fixes them.
 - Companion article *Relations Between Subspaces*, for the six distinguished subspaces named one by one, their three decompositions, and the six-subspace intersection table restricted here to the four fixed spaces.
 - Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for the material sector and its four-vector reading.
 - Companion article *The Hermitian Subspace M+ as the Informational Sector*, for the Hermitian sector and the observables.
-- Companion article *The Dirac Algebra and Biquaternions — A Dictionary*, for reversal as Clifford reversion and the $2\times2$ matrix realisation.
+- Companion article *The Dirac Algebra and Biquaternions — A Dictionary*, for reversal as Clifford reversion.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for $\flat$ as the real structure and the antilinear operations built from it.
 - Companion article *Exercise: Chirality and the Weyl Spinors*, for the conjugate spinor structures and the opposite d'Alembertian sign convention.
 
@@ -44,7 +44,7 @@ $$
 \overline{\tilde{A}\tilde{B}} = \bar{\tilde{B}}\,\bar{\tilde{A}} , \qquad
 \overline{\alpha\tilde{A} + \beta\tilde{B}} = \alpha\bar{\tilde{A}} + \beta\bar{\tilde{B}} , \qquad \alpha,\beta \in \mathbb{C}.
 $$
-It reverses the order of a product and fixes the complex scalars, which is exactly the **Clifford reversal** of the even algebra; the companion *The Dirac Algebra and Biquaternions — A Dictionary* identifies the two under the dictionary, $\Phi(\bar{\tilde{Q}}) = \mathrm{rev}(\Phi(\tilde{Q}))$, and the corpus uses the name "reversal" for it. Its fixed space is $\mathbb{C}_{\mathbb{B}}$.
+It reverses the order of a product and fixes the complex scalars, which is exactly the **Clifford reversal** of the even algebra; the corpus uses the name "reversal" for it. Its fixed space is $\mathbb{C}_{\mathbb{B}}$.
 
 **Complex conjugation.** The map ${}^*$ conjugates the scalar imaginary and fixes the quaternion units,
 $$
@@ -66,7 +66,7 @@ $$
 (\tilde{A}\tilde{B})^\dagger = \tilde{B}^\dagger\tilde{A}^\dagger , \qquad
 (\alpha\tilde{A})^\dagger = \alpha^*\tilde{A}^\dagger ,
 $$
-and in the matrix realisation it is the conjugate transpose. Its fixed space is $\mathbb{M}_+$, the informational sector.
+Its fixed space is $\mathbb{M}_+$, the informational sector.
 
 **Anti-Hermitian conjugation.** The map $\flat$ is the Hermitian conjugation with a sign,
 $$
@@ -150,7 +150,7 @@ Consequently $G$ is **non-abelian**, and it is the semidirect product
 $$
 G \cong \mathbb{Z}_4 \rtimes V_4 \cong D_8 \times \mathbb{Z}_2 ,
 $$
-where $D_8 = \langle m_i, {}^*\rangle$ is the dihedral group of order eight — $m_i$ a four-fold rotation and ${}^*$ a reflection that inverts it — and the commuting reversal generates the central $\mathbb{Z}_2$. Reading $G$ as $\mathbb{Z}_4\times V_4$ would make it abelian with a centre of order sixteen; the computed centre has order four, $\{e_0,\, m_{-1},\, \bar{\cdot},\, m_{-1}\bar{\cdot}\}$, and the abelian reading is thereby excluded. The sixteen composite maps were enumerated on the real $8\times8$ representation: they are pairwise distinct, their element orders are $1$ for the identity, $2$ for eleven elements and $4$ for four, and the four of order four are $m_{\pm i}$ and $m_{\pm i}\circ\bar{\cdot}$. Composing $m_{\pm i}$ with ${}^*$ or with $\dagger$ gives an involution instead, because those conjugations invert $m_i$; it is only reversal, which commutes with it, that preserves the order. The structural point survives in corrected form: the conjugations form a four-element group and the complex structure a four-element group, but they do **not** commute, and it is their semidirect product — not either factor alone, and not a direct product — that describes the algebra's full group of signs.
+where $D_8 = \langle m_i, {}^*\rangle$ is the dihedral group of order eight — $m_i$ a four-fold rotation and ${}^*$ a reflection that inverts it — and the commuting reversal generates the central $\mathbb{Z}_2$. Reading $G$ as $\mathbb{Z}_4\times V_4$ would make it abelian with a centre of order sixteen; the computed centre has order four, $\{e_0,\, m_{-1},\, \bar{\cdot},\, m_{-1}\bar{\cdot}\}$, and the abelian reading is thereby excluded. The sixteen composite maps were enumerated explicitly: they are pairwise distinct, their element orders are $1$ for the identity, $2$ for eleven elements and $4$ for four, and the four of order four are $m_{\pm i}$ and $m_{\pm i}\circ\bar{\cdot}$. Composing $m_{\pm i}$ with ${}^*$ or with $\dagger$ gives an involution instead, because those conjugations invert $m_i$; it is only reversal, which commutes with it, that preserves the order. The structural point survives in corrected form: the conjugations form a four-element group and the complex structure a four-element group, but they do **not** commute, and it is their semidirect product — not either factor alone, and not a direct product — that describes the algebra's full group of signs.
 
 ### A biquaternion need not commute with its complex conjugate
 
@@ -182,7 +182,7 @@ The two products are not the norm form and are not scalars; the norm form is the
 
 ### The six subspaces and the four fixed spaces
 
-Each involution sorts the algebra into its $+1$ and $-1$ eigenspaces, and the framework's six distinguished subspaces are exactly these. Solving the linear conditions, with dimensions computed by exact row reduction on the $8\times8$ real system, gives them one by one in the order used throughout:
+Each involution sorts the algebra into its $+1$ and $-1$ eigenspaces, and the framework's six distinguished subspaces are exactly these. Solving the linear conditions, with dimensions computed by exact row reduction on the real linear system, gives them one by one in the order used throughout:
 
 | involution | its fixed space | name | real dim | basis |
 |---|---|---|---|---|
@@ -229,7 +229,7 @@ $$
 \Pi_a\Pi_b = 0 \ \ (a \neq b) , \qquad
 \Pi_S + \Pi_B + \Pi_V + \Pi_P = \mathrm{id} .
 $$
-The four identities were verified as $8\times8$ real matrices and separately on random elements. They are the four minimal idempotents of the group algebra of $V_4$, one for each character, which is why exactly four such combinations arise and why their images are four real lines of the algebra. Read through the geometric-algebra dictionary of the companion *The Dirac Algebra and Biquaternions — A Dictionary*, the four components are the four grades: $\Re S$ is the scalar, $\Re V$ the bivector, $i\Im V$ the vector, and $i\Im S$ the pseudoscalar. In this article's language the same four lines span the fixed spaces and the anti-fixed one below them: $\Re S$ and $i\Im S$ span the center subspace $\mathbb{C}_{\mathbb{B}}$, while $\Re V$ and $i\Im V$ span the vector subspace $\mathrm{Vect}(\mathbb{B})$, the elements of zero scalar part. The two-term projections above them are the coarse versions already met — $\frac12(\mathrm{id}\pm\bar{\cdot})$ give the complex scalar and vector parts $S$ and $V$, $\frac12(\mathrm{id}\pm{}^*)$ give the componentwise real and imaginary parts, and $\frac12(\mathrm{id}\pm\dagger)$ give the two sectors.
+The four identities were verified on the basis elements and separately on random elements. They are the four minimal idempotents of the group algebra of $V_4$, one for each character, which is why exactly four such combinations arise and why their images are four real lines of the algebra. Read through the geometric-algebra dictionary of the companion *The Dirac Algebra and Biquaternions — A Dictionary*, the four components are the four grades: $\Re S$ is the scalar, $\Re V$ the bivector, $i\Im V$ the vector, and $i\Im S$ the pseudoscalar. In this article's language the same four lines span the fixed spaces and the anti-fixed one below them: $\Re S$ and $i\Im S$ span the center subspace $\mathbb{C}_{\mathbb{B}}$, while $\Re V$ and $i\Im V$ span the vector subspace $\mathrm{Vect}(\mathbb{B})$, the elements of zero scalar part. The two-term projections above them are the coarse versions already met — $\frac12(\mathrm{id}\pm\bar{\cdot})$ give the complex scalar and vector parts $S$ and $V$, $\frac12(\mathrm{id}\pm{}^*)$ give the componentwise real and imaginary parts, and $\frac12(\mathrm{id}\pm\dagger)$ give the two sectors.
 
 Which combinations are algebraic is decided by the previous section: the two-term combinations in $\bar{\cdot}$ alone are words in the products, whereas the four-term projections contain ${}^*$ and are primitive in the same sense. A worked instance, verified: for $\tilde{Q} = (1+2i)e_0 + (3+4i)e_1 + (5+6i)e_2 + (7+8i)e_3$ the four projections are $e_0$, $3e_1 + 5e_2 + 7e_3$, $i(4e_1 + 6e_2 + 8e_3)$ and $2ie_0$.
 
@@ -263,31 +263,6 @@ $$
 i\,\mathbb{M}_+ = \mathbb{M}_- , \qquad i\,\mathbb{M}_- = \mathbb{M}_+ , \qquad N(i\tilde{Q}) = -N(\tilde{Q}) ,
 $$
 verified on Hermitian and anti-Hermitian random elements: multiplying by $i$ converts a real scalar and imaginary vector into an imaginary scalar and real vector, and vice versa. The conjugations are a group of four sign choices on the *basis*; the complex structure is a fourth-root-of-unity action on the *coefficients*; reversal commutes with $m_i$ but complex conjugation anticommutes with it, they generate the order-sixteen group above, and the sector exchange is the eight-element set $m_{\pm i}V_4$ of operations containing an odd power of $m_i$. This is the algebraic reason the companion articles can speak of a "material" and an "informational" reading of one complex field without one conjugation turning into the other. One product is asymmetric in the two maps, and it is recorded with the composition law above: the reversal product is the scalar $N(\tilde{Q})$ in either order, while the complex-conjugate products $\tilde{Q}\tilde{Q}^*$ and $\tilde{Q}^*\tilde{Q}$ need not agree.
-
-## The Matrix Realisation
-
-The algebra is $M_2(\mathbb{C})$ as a real algebra, and the realisation used throughout the series is
-$$
-\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}
-= Q_0 I_2 - i\bigl(Q_1\sigma_1 + Q_2\sigma_2 + Q_3\sigma_3\bigr) ,
-$$
-the dictionary's $\Phi$ restricted to the even algebra. In this realisation the four conjugations are the four standard structures on $M_2(\mathbb{C})$:
-
-| Map | Matrix realisation | Verified as |
-|---|---|---|
-| $\bar{\cdot}$ | $\Phi(\bar{\tilde{Q}}) = \epsilon\,\Phi(\tilde{Q})^{\mathsf{T}}\epsilon^{-1}$ | reversal = transpose |
-| ${}^*$ | $\Phi(\tilde{Q}^*) = \epsilon\,\overline{\Phi(\tilde{Q})}\,\epsilon^{-1}$ | conjugation |
-| $\dagger$ | $\Phi(\tilde{Q}^\dagger) = \Phi(\tilde{Q})^\dagger$ | conjugate transpose |
-| $\flat$ | $\Phi(\tilde{Q}^\flat) = -\,\Phi(\tilde{Q})^\dagger$ | minus conjugate transpose |
-
-with $\epsilon = i\sigma_2$ (any nonzero real multiple of $\epsilon$ serves equally, since $\epsilon$ appears with its inverse in each relation). The four relations were verified entrywise on two hundred random complex biquaternions. The entries of the table are the precise sense in which "Hermitian conjugation is the matrix adjoint", "reversal is the transpose", and "complex conjugation is the entrywise conjugation dressed by $\epsilon$": the dressing is necessary because the basis elements $\Phi(e_k) = -i\sigma_k$ are themselves complex matrices, so that conjugating the coefficients is not the same as conjugating the entries.
-
-Two consequences of the table are worth recording. First, $\Phi$ is a *real* algebra isomorphism onto $M_2(\mathbb{C})$, so a biquaternion identity holds in the algebra exactly when the corresponding matrix identity holds; this is the sense in which the four conjugations may be computed entrywise once the realisation is fixed. Second, the trace pairs with the scalar part through
-$$
-\mathrm{Tr}\bigl(\tilde{Q}\tilde{Y}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{Q}\tilde{Y}\bigr)
-\qquad\text{for all } \tilde{Q},\tilde{Y} \in \mathbb{B},
-$$
-because $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2Q_0 = 2\,\mathrm{Sc}(\tilde{Q})$; the identity was verified on two hundred random pairs. The corpus states the trace formula on the Hermitian sector, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$; the computation here shows that it holds without any restriction on the arguments, which is the form in which the operator articles use it.
 
 ## The Two Pairings
 
@@ -330,9 +305,9 @@ so orthogonality means that a real scalar and an imaginary scalar vanish separat
 
 Hermitian conjugation defines a second pairing,
 $$
-\langle \tilde{A},\tilde{B}\rangle_2 := \mathrm{Tr}\bigl(\tilde{A}^\dagger\tilde{B}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{A}^\dagger\tilde{B}\bigr) ,
+\langle \tilde{A},\tilde{B}\rangle_2 := 2\,\mathrm{Sc}\bigl(\tilde{A}^\dagger\tilde{B}\bigr) ,
 $$
-which is sesquilinear and positive definite: it is the Frobenius inner product of the matrix realisation, $\langle \tilde{A},\tilde{B}\rangle_2 = \mathrm{tr}\bigl(\Phi(\tilde{A})^\dagger\Phi(\tilde{B})\bigr)$ up to the trace identity, and the Gram matrix on any real basis is positive definite. It is the pairing in which operators have adjoints, and it is *not* the norm form: the norm form is bilinear and indefinite, the Hermitian pairing is sesquilinear and definite, and the companion article distinguishes them for exactly this reason. Both are preserved by the appropriate group. The bilinear form is invariant under reversal-conjugation,
+which is sesquilinear and positive definite, and the Gram matrix on any real basis is positive definite. It is the pairing in which operators have adjoints, and it is *not* the norm form: the norm form is bilinear and indefinite, the Hermitian pairing is sesquilinear and definite, and the companion article distinguishes them for exactly this reason. Both are preserved by the appropriate group. The bilinear form is invariant under reversal-conjugation,
 $$
 B\bigl(\bar{\tilde{\Lambda}}\tilde{A}\bar{\tilde{\Lambda}},\ \bar{\tilde{\Lambda}}\tilde{B}\bar{\tilde{\Lambda}}\bigr) = B(\tilde{A},\tilde{B}) \qquad \text{for unit-norm } \tilde{\Lambda} ,
 $$
@@ -346,7 +321,7 @@ The reason the lattice matters for the relativistic equations is that the adjoin
 $$
 \langle \tilde{A}\tilde{F},\tilde{G}\rangle_2 = \langle \tilde{F},\tilde{A}^\dagger\tilde{G}\rangle_2 ,
 $$
-because $\mathrm{Tr}((\tilde{A}\tilde{F})^\dagger\tilde{G}) = \mathrm{Tr}(\tilde{F}^\dagger\tilde{A}^\dagger\tilde{G})$; the same holds for right multiplication, $R_{\tilde{A}}^\dagger = R_{\tilde{A}^\dagger}$. Verified on random biquaternions and random module elements. This is the statement that the Hermitian conjugation of the algebra is the operator adjoint of its multiplication, and it is what makes $\dagger$ the right involution for physical observables.
+because $\mathrm{Sc}((\tilde{A}\tilde{F})^\dagger\tilde{G}) = \mathrm{Sc}(\tilde{F}^\dagger\tilde{A}^\dagger\tilde{G})$; the same holds for right multiplication, $R_{\tilde{A}}^\dagger = R_{\tilde{A}^\dagger}$. Verified on random biquaternions and random module elements. This is the statement that the Hermitian conjugation of the algebra is the operator adjoint of its multiplication, and it is what makes $\dagger$ the right involution for physical observables.
 
 **Differentiation.** For the gradient of the operator article,
 $$
@@ -371,7 +346,7 @@ The biquaternion algebra carries four conjugations. Quaternion conjugation (reve
 
 The four maps form the Klein four-group $\{\mathrm{id},\bar{\cdot},{}^*,\dagger\}$ with $\dagger = \bar{\cdot}\circ{}^*$, their composition table verified on random elements; together with the central scalars $\{\pm1,\pm i\}$ they generate a group of order sixteen, $\mathbb{Z}_4\rtimes V_4 \cong D_8\times\mathbb{Z}_2$ (non-abelian; the direct product $\mathbb{Z}_4\times V_4$ is excluded by the centre), whose sixteen elements were enumerated and found distinct. Their eigenspaces are the framework's six distinguished subspaces, named one by one: the center subspace $\mathbb{C}_{\mathbb{B}}$ (dim $2$), the vector subspace $\mathrm{Vect}(\mathbb{B})$ (dim $6$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (dim $4$), the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ (dim $4$), the informational sector $\mathbb{M}_+$ (dim $4$) and the material sector $\mathbb{M}_-$ (dim $4$). The four fixed spaces are $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$, with the intersection lattice tabulated: $\mathbb{C}_{\mathbb{B}} = (\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+)\oplus(\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-)$ and $\mathbb{H}_{\mathbb{B}} = (\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+)\oplus(\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-)$, and $\mathbb{M}_+\cap\mathbb{M}_- = \{0\}$. Every conjugation preserves each sector; multiplication by $\pm i$ exchanges them, and the operations that exchange the sectors are the eight-element set $m_{\pm i}V_4$, not the central multiplications alone.
 
-In the $2\times2$ realisation $\Phi(\tilde{Q}) = Q_0I_2 - iQ_k\sigma_k$ the four maps are the transpose dressed by $\epsilon = i\sigma_2$, the entrywise conjugation dressed by $\epsilon$, the conjugate transpose, and minus the conjugate transpose. Reversal defines the bilinear pairing $B(\tilde{A},\tilde{B}) = \mathrm{Sc}(\bar{\tilde{A}}\tilde{B})$, Lorentzian on $\mathbb{M}_-$ with signature $(-,+,+,+)$ and positive definite on $\mathbb{H}_{\mathbb{B}}$; Hermitian conjugation defines the positive-definite sesquilinear pairing $\mathrm{Tr}(\tilde{A}^\dagger\tilde{B}) = 2\,\mathrm{Sc}(\tilde{A}^\dagger\tilde{B})$, the identity holding for all biquaternions. Multiplication operators have adjoints $L_{\tilde{A}}^\dagger = L_{\tilde{A}^\dagger}$, and the gradient has adjoint $-\bar{\tilde{\nabla}}$, so that $\Box^\dagger = \Box$. Reversal is a word in the products, $\bar{\tilde{Q}} = -\tfrac12(\tilde{Q} + e_1\tilde{Q}e_1 + e_2\tilde{Q}e_2 + e_3\tilde{Q}e_3)$, whereas complex conjugation is primitive and no word in $\tilde{Q}$ computes it; an element commutes with its reversal, $\tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = N(\tilde{Q})$, but need not commute with its complex conjugate, for which $\tilde{Q}\tilde{Q}^* - \tilde{Q}^*\tilde{Q} = 2i\,(q_iq_r - q_rq_i)$ vanishes only for quaternions, for imaginary biquaternions, and for co-planar elements. The four characters of $V_4$ are four projections onto the four real components, the scalar, bivector, vector and pseudoscalar of the geometric-algebra dictionary, and the bilinear pairing vanishes in four grades, its vanishing being independent of the norm form.
+Reversal defines the bilinear pairing $B(\tilde{A},\tilde{B}) = \mathrm{Sc}(\bar{\tilde{A}}\tilde{B})$, Lorentzian on $\mathbb{M}_-$ with signature $(-,+,+,+)$ and positive definite on $\mathbb{H}_{\mathbb{B}}$; Hermitian conjugation defines the positive-definite sesquilinear pairing $2\,\mathrm{Sc}(\tilde{A}^\dagger\tilde{B})$. Multiplication operators have adjoints $L_{\tilde{A}}^\dagger = L_{\tilde{A}^\dagger}$, and the gradient has adjoint $-\bar{\tilde{\nabla}}$, so that $\Box^\dagger = \Box$. Reversal is a word in the products, $\bar{\tilde{Q}} = -\tfrac12(\tilde{Q} + e_1\tilde{Q}e_1 + e_2\tilde{Q}e_2 + e_3\tilde{Q}e_3)$, whereas complex conjugation is primitive and no word in $\tilde{Q}$ computes it; an element commutes with its reversal, $\tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = N(\tilde{Q})$, but need not commute with its complex conjugate, for which $\tilde{Q}\tilde{Q}^* - \tilde{Q}^*\tilde{Q} = 2i\,(q_iq_r - q_rq_i)$ vanishes only for quaternions, for imaginary biquaternions, and for co-planar elements. The four characters of $V_4$ are four projections onto the four real components, the scalar, bivector, vector and pseudoscalar of the geometric-algebra dictionary, and the bilinear pairing vanishes in four grades, its vanishing being independent of the norm form.
 
 The lattice is not decoration: it is the set of real forms on which the norm form, the observables, the adjoints, and the material kernels all live.
 
@@ -396,15 +371,14 @@ The lattice is not decoration: it is the set of real forms on which the norm for
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
 | $B(\tilde{A},\tilde{B}) = \mathrm{Sc}(\bar{\tilde{A}}\tilde{B})$ | Bilinear pairing; signature $(-,+,+,+)$ on $\mathbb{M}_-$; vanishes in four grades, independently of the norm |
 | $\Pi_S,\Pi_B,\Pi_V,\Pi_P$ | The four $V_4$ projections onto $\Re S$, $\Re V$, $i\Im V$, $i\Im S$ (scalar, bivector, vector, pseudoscalar) |
-| $\mathrm{Tr}(\tilde{A}^\dagger\tilde{B}) = 2\,\mathrm{Sc}(\tilde{A}^\dagger\tilde{B})$ | Positive-definite sesquilinear pairing |
-| $\Phi(\tilde{Q}) = Q_0I_2 - iQ_k\sigma_k$ | $2\times2$ realisation; $\epsilon = i\sigma_2$ |
+| $\langle \tilde{A},\tilde{B}\rangle_2 = 2\,\mathrm{Sc}(\tilde{A}^\dagger\tilde{B})$ | Positive-definite sesquilinear pairing |
 | $\tilde{\nabla}^\dagger = -\bar{\tilde{\nabla}}$, $\Box^\dagger = \Box$ | Operator adjoints |
 
 ## Further Reading
 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for reversion, Clifford conjugation, the grade involution, and the classification of the anti-involutions of the Clifford algebras.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge, 1995), for the real forms of the complexified algebras and the correspondence between conjugations and real structures.
-- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the quaternionic and complex structures on $\mathbb{H}$ and $M_2(\mathbb{C})$ and the matrix realisations of the conjugations.
+- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the quaternionic and complex structures on $\mathbb{H}$ and $M_2(\mathbb{C})$.
 - Israel M. Gel'fand and Mikhail A. Naimark, *Unitäre Darstellungen der klassischen Gruppen* (Akademie-Verlag, 1957), for the invariant Hermitian and bilinear forms on the quaternion algebra and the unitary and Lorentz groups preserving them.
 - Claude Chevalley, *The Algebraic Theory of Spinors* (Columbia, 1954), for the anti-automorphisms of the Clifford algebra and the norm form built from reversal.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the two-component spinor conjugation structures and the correspondence with the quaternion conjugation.

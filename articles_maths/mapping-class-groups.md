@@ -75,7 +75,7 @@ $$
 
 is a closed three-manifold that is hyperbolic, the mapping class $f$ is the monodromy of the fibration and the stretch factor is the exponential growth rate of the lengths of the curves in the fibres; the topological entropy of the monodromy is $\log\lambda$. The mapping torus of a periodic element is a Seifert fibred manifold and that of a reducible element decomposes along the invariant curves, so the trichotomy of the classification is the trichotomy of the geometry of the fibred three-manifolds.
 
-**Proof sketch.** The suspension of the pseudo-Anosov homeomorphism has a flow that is hyperbolic on a subset and the manifold admits a hyperbolic structure with the fibres as the immersed totally geodesic surfaces; the construction of the metric is the double limit theorem of Thurston. The geometry of the hyperbolic three-manifolds is that of *Hyperbolic Geometry* and the classification of the fibred manifolds . $\square$
+**Proof sketch.** The suspension of the pseudo-Anosov homeomorphism has a flow that is hyperbolic on a subset and the manifold admits a hyperbolic structure with the fibres as the immersed totally geodesic surfaces; the construction of the metric is the double limit theorem of Thurston. The geometry of the hyperbolic three-manifolds is that of *Hyperbolic Geometry* and the classification of the fibred manifolds is deferred to Part III. $\square$
 
 ## The Curve Complex and the Geometry of the Group
 

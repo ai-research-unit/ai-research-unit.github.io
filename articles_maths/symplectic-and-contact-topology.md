@@ -133,7 +133,7 @@ $$
 
 **Proof sketch.** A filling provides the holomorphic curves — the fibres of the filling fibration or the pseudoholomorphic discs with boundary on the binding — that the Bennequin-type inequalities require; the non-existence of an overtwisted disc follows. Conversely, the neighbourhood of an overtwisted disc is a symplectic cobordism that obstructs fillability. $\square$
 
-**Remark.** The filling problem is the contact analogue of the existence problem for symplectic structures: given a contact boundary, does a symplectic manifold exist inside it? The answer is governed by the dichotomy aga, and in dimension three it can be decided by the Floer-theoretic invariants and by the Heegaard Floer theory. The higher-dimensional case is open in general; the flexible side is governed by the overtwisted $h$-principle of Borman–Eliashberg–Murphy, and the rigid side by the symplectic field theory introduced by Eliashberg–Givental–Hofer, whose invariants are built from the pseudoholomorphic curves of the symplectisation.
+**Remark.** The filling problem is the contact analogue of the existence problem for symplectic structures: given a contact boundary, does a symplectic manifold exist inside it? The answer is governed by the dichotomy above, and in dimension three it can be decided by the Floer-theoretic invariants and by the Heegaard Floer theory. The higher-dimensional case is open in general; the flexible side is governed by the overtwisted $h$-principle of Borman–Eliashberg–Murphy, and the rigid side by the symplectic field theory introduced by Eliashberg–Givental–Hofer, whose invariants are built from the pseudoholomorphic curves of the symplectisation.
 
 ## Summary
 
@@ -141,7 +141,7 @@ The local theory of symplectic and contact manifolds is unique up to diffeomorph
 
 Contact topology has a finer structure: contact structures on a closed manifold are either tight or overtwisted, the overtwisted ones satisfy the $h$-principle and are classified by algebraic topology (Eliashberg in dimension three, Borman–Eliashberg–Murphy in higher dimensions), and the tight ones are rigid and are the ones that can fill. Every closed oriented three-manifold carries contact structures, by Lutz–Martinet, and the regular ones are the circle bundles over integral symplectic manifolds, by Boothby–Wang.
 
-In the presence of a torus action the symplectic structure reduces to a Delzant polytope, giving a complete classification of symplectic toric manifolds; without one, the four-dimensional theory is governed by Taubes' constraints, Gompf's symplectic sums and the realisation of arbitrary finitely presented fundamental groups, which together separate the symplectic four-manifolds sharply from the Kähler ones. The invariants behind these statements — the Gromov–Witten and Floer theories and their contact analogues — are constructed.
+In the presence of a torus action the symplectic structure reduces to a Delzant polytope, giving a complete classification of symplectic toric manifolds; without one, the four-dimensional theory is governed by Taubes' constraints, Gompf's symplectic sums and the realisation of arbitrary finitely presented fundamental groups, which together separate the symplectic four-manifolds sharply from the Kähler ones. The invariants behind these statements — the Gromov–Witten and Floer theories and their contact analogues — are constructed in Part III.
 
 ## Summary of Notation
 

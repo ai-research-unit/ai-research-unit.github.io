@@ -59,7 +59,7 @@ $$
 \mathbf r=-\tanh(\beta|\mathbf h|)\,\hat{\mathbf h}.
 $$
 
-Its scalar part is $\mathrm{Sc}(\tilde\rho_\beta)=\tfrac12$, so $\mathrm{Tr}(\tilde\rho_\beta)=2\,\mathrm{Sc}(\tilde\rho_\beta)=1$: normalization is itself the trace formula. The state lies in the Bloch ball, with $|\mathbf r|=\tanh(\beta|\mathbf h|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde P_-(\hat{\mathbf h})=\tfrac12(e_0-i\hat{\mathbf h})$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_0$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
+Its scalar part is $\mathrm{Sc}(\tilde\rho_\beta)=\tfrac12$, so $\mathrm{Tr}(\tilde\rho_\beta)=2\,\mathrm{Sc}(\tilde\rho_\beta)=1$: normalization is itself the trace formula. The state lies in the Bloch ball, with $|\mathbf r|=\tanh(\beta|\mathbf h|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde \tilde\Pi(-\hat{\mathbf h})=\tfrac12(e_0-i\hat{\mathbf h})$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_0$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
 
 ## Thermodynamic Quantities as Functionals of the State
 
@@ -189,7 +189,7 @@ The limits test the signs and the normalizations of the preceding sections, and 
 
 $$
 \mathbf r\to-\hat{\mathbf h},\qquad
-\tilde\rho\to\tilde P_-(\hat{\mathbf h})=\tfrac12\big(e_0-i\hat{\mathbf h}\big),
+\tilde\rho\to\tilde \tilde\Pi(-\hat{\mathbf h})=\tfrac12\big(e_0-i\hat{\mathbf h}\big),
 $$
 
 the pure ground state, and
@@ -216,7 +216,7 @@ The internal energy tends to the arithmetic mean $h_0$ of the two levels, which 
 
 | Quantity | $\beta\to\infty$ ($T\to0$) | $\beta\to0$ ($T\to\infty$) |
 |---|---|---|
-| $\tilde\rho$ | $\tilde P_-(\hat{\mathbf h})$ (pure) | $\tfrac12 e_0$ (maximally mixed) |
+| $\tilde\rho$ | $\tilde \tilde\Pi(-\hat{\mathbf h})$ (pure) | $\tfrac12 e_0$ (maximally mixed) |
 | $U$ | $h_0-|\mathbf h|$ | $h_0$ |
 | $S$ | $0$ | $\log 2$ |
 | $F$ | $h_0-|\mathbf h|$ | $-\infty$ |

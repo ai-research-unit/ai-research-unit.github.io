@@ -12,9 +12,7 @@ $$
 
 and $i$ is a central scalar imaginary. We write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$, $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.
 
-# Part I: The Variable, the Complex Structures, and the Operators
-
-## 1. The Biquaternion Variable and Its Two Complex Structures
+## The Biquaternion Variable and Its Two Complex Structures
 
 A **complex structure** on a real vector space is a real-linear map $J$ with $J^2 = -\mathrm{id}$. The biquaternion algebra carries a pair of commuting complex structures,
 
@@ -30,9 +28,9 @@ $$
 \mathbb{C}[e_1] = \{a e_0 + b e_1 : a, b \in \mathbb{C}\} = \mathrm{span}_{\mathbb{R}}\{e_0, e_1, i e_0, i e_1\} \cong \mathbb{C} \times \mathbb{C},
 $$
 
-the largest commutative subalgebra in which $e_1$ is the imaginary unit; the coefficient structure similarly singles out $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$. These two structures give two inequivalent notions of holomorphy, distinguished in Section 3: no single complex structure reduces the four real variables to one. Finally, $\mathbb{B} \cong M_2(\mathbb{C})$, so the algebra is simple, its center is $\mathbb{C}_{\mathbb{B}}$, its norm form is the determinant, and its zero divisors are the nonzero singular matrices.
+the largest commutative subalgebra in which $e_1$ is the imaginary unit; the coefficient structure similarly singles out $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$. These two structures give two inequivalent notions of holomorphy, distinguished in §*Regular Functions: Single-Plane versus Hypercomplex*: no single complex structure reduces the four real variables to one. Finally, $\mathbb{B}$ is a simple algebra whose center is $\mathbb{C}_{\mathbb{B}}$, and its norm form vanishes exactly on the zero divisors and the origin.
 
-## 2. The Cauchy–Riemann Operator and Its Conjugate
+## The Cauchy–Riemann Operator and Its Conjugate
 
 On a four-dimensional real subspace $V \subset \mathbb{B}$ with complex coefficients $Q_0, \dots, Q_3$, the **biquaternionic gradient**, called here the **biquaternionic Cauchy–Riemann operator**, and its **quaternion conjugate** are
 
@@ -52,7 +50,7 @@ $$
 \tilde{\nabla}\tilde{F} = 2\partial_{\bar{z}}\tilde{F}, \qquad \bar{\tilde{\nabla}}\tilde{F} = 2\partial_{z}\tilde{F}, \qquad \partial_{\bar{z}} = \tfrac{1}{2}(\partial_{q_0} + e_1\partial_{q_1}), \qquad \partial_{z} = \tfrac{1}{2}(\partial_{q_0} - e_1\partial_{q_1}).
 $$
 
-## 3. Regular Functions: Single-Plane versus Hypercomplex
+## Regular Functions: Single-Plane versus Hypercomplex
 
 **Definition (left-regular).** Let $\Omega$ be open in a four-dimensional real subspace $V \subset \mathbb{B}$, and let $\tilde{F} : \Omega \to \mathbb{B}$ be continuously differentiable. Then $\tilde{F}$ is **left-regular**, or **left-monogenic**, if $\tilde{\nabla}\tilde{F} = 0$ on $\Omega$. It is **right-regular** if $\tilde{F}\tilde{\nabla} := \sum_\mu \partial_\mu\tilde{F}\, e_\mu = 0$ on $\Omega$. The two differ by non-commutativity — the units act on the left in the first and on the right in the second — and are exchanged by quaternion conjugation together with the interchange of $\tilde{\nabla}$ and $\bar{\tilde{\nabla}}$ ($\tilde{\nabla}\tilde{F} = 0 \iff \bar{\tilde{F}}\,\bar{\tilde{\nabla}} = 0$); a function regular with respect to $\bar{\tilde{\nabla}}$ is **anti-regular**, the analogue of an anti-holomorphic function.
 
@@ -62,7 +60,7 @@ $$
 
 **Hypercomplex regularity.** The hypercomplex notion uses the full dependence on all four variables and the full Clifford structure. It is strictly larger than the single-plane class: the Cauchy kernel $\tilde{G} = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ is regular on $\mathbb{H}_{\mathbb{B}} \setminus \{0\}$ and is not holomorphic in any single-plane variable. The two notions coincide only in two real dimensions, where the biquaternionic operator reduces to the classical Cauchy–Riemann operator in one complex variable.
 
-## 4. The System of Regularity Equations
+## The System of Regularity Equations
 
 Writing $\tilde{F} = F_0 + \mathbf{F}$ with $\mathbf{F} = F_1 e_1 + F_2 e_2 + F_3 e_3$, the analysis article gives
 
@@ -86,19 +84,19 @@ $$
 
 which vanishes when $\xi_0^2 = \xi_1^2 + \xi_2^2 + \xi_3^2$. Thus on the indefinite subspaces $\tilde{\nabla}$ is not elliptic; it is a Cauchy–Riemann-type operator factoring the wave operator, and the null cone is its characteristic set. The elliptic tools of the complex theory — the maximum principle, the mean value property, and Liouville's theorem — are therefore not available on $\mathbb{M}_\pm$.
 
-## 5. Examples of Regular Functions
+## Examples of Regular Functions
 
 **Constants.** If $\tilde{F}(\tilde{Q}) = \tilde{C}$ is constant, then $\tilde{\nabla}\tilde{F} = 0$ on any subspace; the constants form an eight-real-dimensional space of regular functions.
 
 **Powers of a single-plane variable.** On $\mathbb{H}_{\mathbb{B}}$, with $z = q_0 + e_1 q_1$, every $z^n$, $n \geq 0$, is regular, being holomorphic in $z$ and independent of $q_2, q_3$; for $n = 1$ directly, $\tilde{\nabla} z = e_0 \cdot e_0 + e_1 \cdot e_1 = e_0 - e_0 = 0$. The negative power $(z - w)^{-1}$ is regular away from $z = w$, and more generally every classical holomorphic function of $z$, extended by constancy in the orthogonal directions, is regular. These are the regular **linear** and power functions.
 
-**The coordinate function is not regular.** On $\mathbb{H}_{\mathbb{B}}$, $\tilde{\nabla}\tilde{Q} = \sum_{\mu} e_\mu e_\mu = e_0 - 3e_0 = -2e_0 \neq 0$. So the identity function is not regular, in sharp contrast with the complex case, where $z$ is holomorphic; the regular object that replaces it is the Cauchy kernel of Section 7.
+**The coordinate function is not regular.** On $\mathbb{H}_{\mathbb{B}}$, $\tilde{\nabla}\tilde{Q} = \sum_{\mu} e_\mu e_\mu = e_0 - 3e_0 = -2e_0 \neq 0$. So the identity function is not regular, in sharp contrast with the complex case, where $z$ is holomorphic; the regular object that replaces it is the Cauchy kernel of §*The Cauchy Integral Formula Where It Holds*.
 
 **The Cauchy kernel.** On $\mathbb{H}_{\mathbb{B}}$, $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ satisfies $\tilde{\nabla}\tilde{G} = 0$ for $\tilde{Q} \neq 0$; it is the fundamental solution of $\tilde{\nabla}$ and is singular only at the origin, since $\mathbb{H}_{\mathbb{B}}$ has no zero divisors.
 
 **Closure properties.** Regular functions are closed under addition, under right multiplication by constants, $\tilde{\nabla}(\tilde{F}\tilde{C}) = (\tilde{\nabla}\tilde{F})\tilde{C} = 0$, and under left multiplication by complex scalars, since $\lambda$ is central. Left multiplication by a **general** constant does not preserve regularity: on $\mathbb{H}_{\mathbb{B}}$, $\tilde{\nabla}(e_2 z) = e_0 e_2 + e_1 e_2 e_1 = e_2 + e_3 e_1 = 2e_2 \neq 0$. Thus the regular functions form a right $\mathbb{B}$-module under pointwise right multiplication by constants, but not a left module. Similarly $\tilde{\nabla}(cz) = c + e_1 c e_1 = 2(c_2 e_2 + c_3 e_3)$, so $cz$ is regular exactly when $c \in \mathbb{C}[e_1]$.
 
-## 6. Harmonicity and the Factorization of the Laplacian
+## Harmonicity and the Factorization of the Laplacian
 
 Since $\Box = \bar{\tilde{\nabla}}\tilde{\nabla}$, every left-regular function is harmonic: $\Box\tilde{F} = \bar{\tilde{\nabla}}(\tilde{\nabla}\tilde{F}) = 0$, that is, $(\sum_\mu \partial^2_{Q_\mu})\tilde{F} = 0$. On $\mathbb{H}_{\mathbb{B}}$ this is the ordinary Laplace equation for each coefficient $F_\nu$; on $\mathbb{M}_\pm$ it is the wave equation. The converse fails: $q_0$ on $\mathbb{H}_{\mathbb{B}}$ is harmonic but $\tilde{\nabla} q_0 = e_0 \neq 0$. The factorization is the analogue of $\partial_z \partial_{\bar{z}} = \tfrac{1}{4}\Delta$ in one complex variable, and it explains why the harmonic functions form a strictly larger class. Right-regular functions are likewise harmonic: if $\tilde{F}\tilde{\nabla} = 0$, then
 
@@ -108,9 +106,7 @@ $$
 
 the mixed terms cancelling by the Clifford relation. Every regular function also satisfies $\tilde{\nabla}^2\tilde{F} = 0$, but $\tilde{\nabla}^2$ is not the natural second-order operator.
 
-# Part II: Integral Representation and Its Limits
-
-## 7. The Cauchy Integral Formula Where It Holds
+## The Cauchy Integral Formula Where It Holds
 
 The integral theory is developed on $\mathbb{H}_{\mathbb{B}}$, where it is the standard Clifford analysis of $\mathbb{R}^4$ and is complete because $\mathbb{H}_{\mathbb{B}}$ is a division algebra. The following results are established in the integration article.
 
@@ -128,19 +124,19 @@ $$
 \tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}\tilde{G}(\tilde{Q} - \tilde{Q}_0)\tilde{n}\tilde{F}(\tilde{Q})\,dS.
 $$
 
-Three hypotheses must be emphasized: the formula holds on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, where all four coefficients of $\tilde{Q}$ are real, and is **not** asserted on $\mathbb{M}_-$ or $\mathbb{M}_+$ or on the full algebra $\mathbb{B}$ (Section 8); regularity is required on all of $\Omega$, not merely on the boundary; and the operator inverted is the first-order operator $\tilde{\nabla}$, normalized by $\tilde{\nabla}\tilde{G} = -2\pi^2\delta_0 e_0$. The mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates, and the residue theory for isolated singularities then follow, as in the integration article, on $\mathbb{H}_{\mathbb{B}}$ only.
+Three hypotheses must be emphasized: the formula holds on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, where all four coefficients of $\tilde{Q}$ are real, and is **not** asserted on $\mathbb{M}_-$ or $\mathbb{M}_+$ or on the full algebra $\mathbb{B}$ (§*Where the Complex Analogy Fails: Zero Divisors and the Null Cone*); regularity is required on all of $\Omega$, not merely on the boundary; and the operator inverted is the first-order operator $\tilde{\nabla}$, normalized by $\tilde{\nabla}\tilde{G} = -2\pi^2\delta_0 e_0$. The mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates, and the residue theory for isolated singularities then follow, as in the integration article, on $\mathbb{H}_{\mathbb{B}}$ only.
 
-## 8. Where the Complex Analogy Fails: Zero Divisors and the Null Cone
+## Where the Complex Analogy Fails: Zero Divisors and the Null Cone
 
 The complex theory rests on $\mathbb{C}$ being a field. In the biquaternion algebra this fails, and every consequence below is traceable to the zero divisors.
 
-Since $\mathbb{B} \cong M_2(\mathbb{C})$, the zero divisors are exactly the nonzero elements with $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. The zero divisor set $\mathcal{Z}$ is a complex cone of complex dimension $3$ (real dimension $6$); on the indefinite subspaces it cuts out the double cones $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$ in $\mathbb{M}_-$ and $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$ in $\mathbb{M}_+$, each three-dimensional with apex at the origin; in $\mathrm{Vect}(\mathbb{B})$ the norm form is complex and vanishes on the nilpotent cone, of real dimension $4$; while on $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the norm form is definite and there are none. On the null cone there is no inverse, so no quotient $\tilde{A}/\tilde{Q}$ is defined, and the naive difference quotient of the analysis article requires $\tilde{H}^{-1}$, which may not exist.
+The zero divisors are exactly the nonzero elements with $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. The zero divisor set $\mathcal{Z}$ is a complex cone of complex dimension $3$ (real dimension $6$); on the indefinite subspaces it cuts out the double cones $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$ in $\mathbb{M}_-$ and $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$ in $\mathbb{M}_+$, each three-dimensional with apex at the origin; in $\mathrm{Vect}(\mathbb{B})$ the norm form is complex and vanishes on the nilpotent cone, of real dimension $4$; while on $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the norm form is definite and there are none. On the null cone there is no inverse, so no quotient $\tilde{A}/\tilde{Q}$ is defined, and the naive difference quotient of the analysis article requires $\tilde{H}^{-1}$, which may not exist.
 
-The proof that $\tilde{\nabla}\tilde{G} = 0$ uses $\bar{\tilde{Q}}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, which requires real coefficients; on $\mathbb{M}_\pm$ this identity fails, so $\tilde{G}$ is not a fundamental solution and no Cauchy formula of the stated form holds, and whether a modified kernel exists is open (integration article). By Section 4 the principal symbol degenerates on the null cone on $\mathbb{M}_\pm$, so the system is not elliptic and the maximum principle, the mean value property, and Liouville's theorem do not generalize; a regular function there, if defined, solves a hyperbolic rather than an elliptic system. The natural singular set is the six-real-dimensional null quadric, not a point, so there is no punctured-disk model and the residue theory of the integration article is correspondingly delicate.
+The proof that $\tilde{\nabla}\tilde{G} = 0$ uses $\bar{\tilde{Q}}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, which requires real coefficients; on $\mathbb{M}_\pm$ this identity fails, so $\tilde{G}$ is not a fundamental solution and no Cauchy formula of the stated form holds, and whether a modified kernel exists is open (integration article). By §*The System of Regularity Equations* the principal symbol degenerates on the null cone on $\mathbb{M}_\pm$, so the system is not elliptic and the maximum principle, the mean value property, and Liouville's theorem do not generalize; a regular function there, if defined, solves a hyperbolic rather than an elliptic system. The natural singular set is the six-real-dimensional null quadric, not a point, so there is no punctured-disk model and the residue theory of the integration article is correspondingly delicate.
 
 On the indefinite subspaces the null cone is thus simultaneously the zero divisor set, the characteristic set of $\tilde{\nabla}$, and the set where the Cauchy kernel ceases to be a fundamental solution. A theorem about regular functions must therefore either restrict to a domain avoiding the cone — or, better, to a subspace such as $\mathbb{H}_{\mathbb{B}}$ — or state explicitly which weakened conclusion replaces the classical one. No Cauchy formula may be asserted beyond the quaternion subspace.
 
-## 9. The Naive Inverse Function and the Role of the Null Cone
+## The Naive Inverse Function and the Role of the Null Cone
 
 The naive transcription of $1/(z - w)$ is $\tilde{F}(\tilde{Q}) = \tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$, defined exactly on the group of units, that is, off the null quadric with the origin removed; it does not exist on the null cone. Its singular set is six-dimensional, not isolated, so there is no Laurent expansion about an isolated pole.
 
@@ -152,11 +148,11 @@ $$
 
 The genuine regular radial function is the Cauchy kernel $\tilde{G} = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$. In four variables the fundamental solution of $\tilde{\nabla}$ has homogeneity $1 - 4 = -3$, and the exponent $4$ is exactly this homogeneity; the naive inverse carries the two-dimensional exponent and is the fundamental solution of the Cauchy–Riemann operator only in the complex plane. The single-plane inverse $(z - w)^{-1}$ is regular, so this failure is a genuinely hypercomplex phenomenon — the change of dimension from two to four — not merely a consequence of non-commutativity. The null cone thus enters in two ways: on the full algebra it makes the inverse undefined on a positive-dimensional set, and on $\mathbb{H}_{\mathbb{B}}$, where the cone is absent, the naive inverse is still the wrong function, the correct kernel being selected by the homogeneity required in four variables.
 
-## 10. Relation to Fueter and Quaternionic Theories
+## Relation to Fueter and Quaternionic Theories
 
 Restricting to real quaternion-valued functions on $\mathbb{H}_{\mathbb{B}}$ recovers Fueter's quaternionic analysis: $\tilde{\nabla}$ is the Cauchy–Riemann operator $D$, the equation $DF = 0$ is the Cauchy–Riemann–Fueter equation, and the Cauchy formula, mean value property, maximum principle, Liouville theorem, identity theorem, Taylor and Laurent expansions, and residue theorem all hold (quaternion analysis article). Since $\mathbb{H}$ is a division algebra, this case has no zero divisors and is a complete analogue of the complex theory in the sense appropriate to four real variables; the biquaternion theory is its complexification, the variable remaining quaternionic in structure while the coefficients become complex.
 
-The general framework is Clifford analysis. Since $\mathbb{B} \cong \mathrm{Cl}_{1,3}^{+} \cong M_2(\mathbb{C})$, the regular functions of this article are the monogenic functions of the even Clifford algebra in four dimensions; relative to the quaternionic case, the additional structure is the complex coefficients, the four conjugations, the two complex structures, and the zero divisors. The bridge between the single-plane and hypercomplex notions is the **Fueter–Sce construction**: a slice-regular function is generally not monogenic, but applying the appropriate power of the Laplacian to a slice-regular function produces a monogenic one. Due to Fueter and completed by Sce, this is the precise mechanism converting holomorphic data of a single complex variable into regular functions of four real variables; it is treated in the companion article on Fueter theory for biquaternions.
+The general framework is Clifford analysis. Since $\mathbb{B} \cong \mathrm{Cl}_{1,3}^{+}$, the regular functions of this article are the monogenic functions of the even Clifford algebra in four dimensions; relative to the quaternionic case, the additional structure is the complex coefficients, the four conjugations, the two complex structures, and the zero divisors. The bridge between the single-plane and hypercomplex notions is the **Fueter–Sce construction**: a slice-regular function is generally not monogenic, but applying the appropriate power of the Laplacian to a slice-regular function produces a monogenic one. Due to Fueter and completed by Sce, this is the precise mechanism converting holomorphic data of a single complex variable into regular functions of four real variables; it is treated in the companion article on Fueter theory for biquaternions.
 
 ## Summary
 
@@ -172,7 +168,7 @@ Restricting to real quaternion-valued functions recovers Fueter's quaternionic a
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | Biquaternion algebra, $\cong \mathrm{Cl}_{1,3}^{+} \cong M_2(\mathbb{C})$ |
+| $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | Biquaternion algebra, $\cong \mathrm{Cl}_{1,3}^{+}$ |
 | $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ | Biquaternion variable; $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ |
 | $\tilde{\nabla} = \sum_\mu e_\mu \partial_{Q_\mu}$ | Biquaternionic Cauchy–Riemann operator |
 | $\bar{\tilde{\nabla}} = e_0\partial_{Q_0} - \sum_k e_k\partial_{Q_k}$ | Quaternion conjugate operator; $(\tilde{\nabla}, \bar{\tilde{\nabla}})$ mirrors $(\partial_{\bar z}, \partial_z)$ |

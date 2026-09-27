@@ -268,7 +268,7 @@ $$
 
 so $TST^{-1}$ is an isometry of $B'$; the assignment is a homomorphism with inverse $R \mapsto T^{-1}RT$. $\square$
 
-The group is written $\operatorname{O}(M, B)$ when $B$ is symmetric, and $\operatorname{Sp}(M, B)$ when $B$ is alternating; the notation and the structure theory of these groups are developed .
+The group is written $\operatorname{O}(M, B)$ when $B$ is symmetric, and $\operatorname{Sp}(M, B)$ when $B$ is alternating; the notation and the structure theory of these groups are developed in *The Orthogonal Lie Algebra* and *The Unitary and Symplectic Groups*.
 
 ### Congruence and the Discriminant
 

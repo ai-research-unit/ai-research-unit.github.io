@@ -188,7 +188,7 @@ The functional equation is proved by Tate's thesis for $GL_1$ and by the theory 
 
 ### Rankin–Selberg and the Arithmetic
 
-For two cuspidal automorphic representations $\pi$ of $GL_n$ and $\pi'$ of $GL_m$ the **Rankin–Selberg convolution** $L(s, \pi \times \pi')$ is defined by an Euler product whose local factors are the local Rankin–Selberg factors, and the associated integral representation relates the analytic behaviour of the convolution to the inner product of the forms; the residue at $s=1$ measures the non-vanishing and is connected to the Petersson norm of the corresponding modular form. The general theory of these $L$-functions, their analytic continuation and their special values, is the subject andwhere the analytic theory is developed.
+For two cuspidal automorphic representations $\pi$ of $GL_n$ and $\pi'$ of $GL_m$ the **Rankin–Selberg convolution** $L(s, \pi \times \pi')$ is defined by an Euler product whose local factors are the local Rankin–Selberg factors, and the associated integral representation relates the analytic behaviour of the convolution to the inner product of the forms; the residue at $s=1$ measures the non-vanishing and is connected to the Petersson norm of the corresponding modular form. The general theory of these $L$-functions, their analytic continuation and their special values, is the subject of *L-Functions*, where the analytic theory is developed.
 
 ## Summary
 

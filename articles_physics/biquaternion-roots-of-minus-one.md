@@ -183,12 +183,12 @@ All roots except the trivial ones are **pure**, hence sit in the six-real-dimens
 The classification of the roots gives the classification of the idempotents: the map
 
 $$
-\xi\longmapsto P_+(\xi) = \tfrac{1}{2}(e_0+\xi i)
+\xi\longmapsto \tilde\Pi(\xi) = \tfrac{1}{2}(e_0+\xi i)
 $$
 
 is a bijection from the roots of $-1$ onto the idempotents, under which the complementary pairs $\{\tilde{P},e_0-\tilde{P}\}$ correspond to the classes $\{\xi,-\xi\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of *Biquaternion Idempotents and Projections*.
 
-**Physical reading.** The correspondence is why the framework can speak of a state direction as an algebraic datum of the same kind as a generator: a root $\xi$ is an imaginary unit, its associated projector $P_+(\xi)$ is a pure state, and the sphere of real roots is the sphere of pure states. The rotation axis and the state direction are the same direction.
+**Physical reading.** The correspondence is why the framework can speak of a state direction as an algebraic datum of the same kind as a generator: a root $\xi$ is an imaginary unit, its associated projector $\tilde\Pi(\xi)$ is a pure state, and the sphere of real roots is the sphere of pure states. The rotation axis and the state direction are the same direction.
 
 ## The Relation to the Zero Divisors
 
@@ -228,7 +228,7 @@ which squares to $1$ since $\xi^2i^2 = (-1)(-1) = 1$. The map $\xi\mapsto\xi i$ 
 
 A root of $+1$ is an **involution**, and every involution splits the algebra: if $\eta^2 = 1$ then $\eta\neq1$ gives the idempotents $\tfrac12(e_0\pm\eta)$ with $\tfrac12(e_0+\eta)+\tfrac12(e_0-\eta) = e_0$ and $\tfrac12(e_0+\eta)\cdot\tfrac12(e_0-\eta) = 0$, which is the bijection above read in the other direction.
 
-**Physical reading: the reflections and the parities.** The roots of $+1$ are the algebra's reflections. The real roots $\pm\mu i$ are the Hermitian ones — $(\mu i)^\dagger = \mu i$ — so they are exactly the involutions that split the algebra into **orthogonal** projectors, and they are the parity-type operators of the framework. The fermion parity of the field-theory articles is an instance: $(-1)^F = ie_3$ is a real root of $+1$ (with $\mu = e_3$), Hermitian, and its associated projectors are $\tfrac12(e_0\pm ie_3)$, the vacuum projector $P_+(e_3)$ and its complement. The trivial roots $\pm1$ are the two central involutions (the identity and the total sign), and the non-trivial roots are the non-Hermitian involutions, which split the algebra into complementary projectors that are not orthogonal. See *The Biquaternion Vacuum as a Minimal Idempotent* and *Bogoliubov Transformations in Biquaternionic Form* for the parity and vacuum instances. Beyond the framework, the roots of $+1$ generate the hyperbolic subgroups, which is where the boosts of *The Lorentz Group as Biquaternion Norm-Form Automorphisms* come from.
+**Physical reading: the reflections and the parities.** The roots of $+1$ are the algebra's reflections. The real roots $\pm\mu i$ are the Hermitian ones — $(\mu i)^\dagger = \mu i$ — so they are exactly the involutions that split the algebra into **orthogonal** projectors, and they are the parity-type operators of the framework. The fermion parity of the field-theory articles is an instance: $(-1)^F = ie_3$ is a real root of $+1$ (with $\mu = e_3$), Hermitian, and its associated projectors are $\tfrac12(e_0\pm ie_3)$, the vacuum projector $\tilde\Pi_1$ and its complement. The trivial roots $\pm1$ are the two central involutions (the identity and the total sign), and the non-trivial roots are the non-Hermitian involutions, which split the algebra into complementary projectors that are not orthogonal. See *The Biquaternion Vacuum as a Minimal Idempotent* and *Bogoliubov Transformations in Biquaternionic Form* for the parity and vacuum instances. Beyond the framework, the roots of $+1$ generate the hyperbolic subgroups, which is where the boosts of *The Lorentz Group as Biquaternion Norm-Form Automorphisms* come from.
 
 ## Summary
 

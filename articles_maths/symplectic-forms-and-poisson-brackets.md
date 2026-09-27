@@ -131,7 +131,7 @@ $$
 
 **Proposition.** $\mathfrak{sp}(2n, K)$ is a Lie subalgebra of $\mathfrak{gl}(2n, K)$ under the commutator bracket, of dimension $n(2n+1)$, and it consists of those $X$ for which $JX$ is symmetric. It is the tangent space at the identity of $Sp(2n, K)$, equivalently the Lie algebra of the symplectic group in the sense of *Lie Groups*.
 
-**Proof.** Differentiating the defining equations $A^{\mathsf{T}} J A = J$ along a path $A(t) = I + tX + O(t^2)$ gives $X^{\mathsf{T}} J + J X = 0$, so the tangent space is contained in the displayed set; the two sides have the same dimension because the map $X \mapsto JX$ identifies the solution set with the symmetric matrices, which form a subspace of dimension $\binom{2n+1}{2} = n(2n+1)$. Closure under the commutator is the usual one: if $X^{\mathsf{T}}J + JX = 0$ and $Y^{\mathsf{T}}J + JY = 0$, then $[X,Y]^{\mathsf{T}}J + J[X,Y] = 0$, as one checks by expanding. $\square$
+**Proof.** The defining equation $A^{\mathsf{T}} J A = J$ is a polynomial identity in the entries of $A$, so it may be evaluated at $A = I + tX$ in $K[t]$: the coefficient of $t$ is $X^{\mathsf{T}} J + J X$, and it must vanish, so the Lie algebra is contained in the displayed set; the two sides have the same dimension because the map $X \mapsto JX$ identifies the solution set with the symmetric matrices, which form a subspace of dimension $\binom{2n+1}{2} = n(2n+1)$. Closure under the commutator is the usual one: if $X^{\mathsf{T}}J + JX = 0$ and $Y^{\mathsf{T}}J + JY = 0$, then $[X,Y]^{\mathsf{T}}J + J[X,Y] = 0$, as one checks by expanding. $\square$
 
 ### Order over a Finite Field
 

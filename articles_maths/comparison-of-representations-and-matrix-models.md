@@ -1,0 +1,94 @@
+
+# __Comparison of Representations and Matrix Models__
+
+## Introduction
+
+This article compares the representation theory and the matrix models of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$. It states the left regular representation and its dimension, the Cayley matrix and its determinant, the minimal faithful matrix model of each algebra and its size, the two-component, four-vector, four-by-four regular and operator realizations and where each exists, and the representation ring and the irreducible modules where they exist, in tables with the eight algebras as columns in the fixed order of *The Eight Algebras Compared*. Every entry restates a result of the representation articles cited in the explanations.
+
+The organising thread is the **ladder of the minimal faithful model**: the scalar matrix in $\mathbb{R}$, the $2\times2$ real matrix in $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$, the $2\times2$ and $4\times4$ models of $\mathbb{H}$, the $2\times2$ real model of $\mathbb{H}_{\mathrm{s}}$, the $2\times2$ complex model of $\mathbb{B}$ and the $4\times4$ complex model of $\mathbb{H}_{\mathbb{D}}$. The model grows when the algebra ceases to be a field and stops growing, at the last rung, at the smallest matrix algebra that can contain a product of two division algebras.
+
+## The Minimal Faithful Matrix Models
+
+The following table compares the minimal faithful matrix model of the eight algebras: the model, its size, the coefficient field, whether the model is surjective onto that matrix algebra, and the dimension of the irreducible module it carries. The eight algebras are the columns, in the fixed order.
+
+| datum | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
+|---|---|---|---|---|---|---|---|---|
+| minimal faithful model | $M_1(\mathbb{R})$ | $M_2(\mathbb{R})$ | $M_2(\mathbb{R})$ | $M_2(\mathbb{R})$ | $M_4(\mathbb{R})$ | $M_2(\mathbb{R})$ | $M_2(\mathbb{C})$ | $M_4(\mathbb{C})$ |
+| size | $1$ | $2$ | $2$ | $2$ | $4$ | $2$ | $2$ | $4$ |
+| coefficient field | $\mathbb{R}$ | $\mathbb{R}$ | $\mathbb{R}$ | $\mathbb{R}$ | $\mathbb{R}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{C}$ |
+| surjective onto the matrix algebra | yes | no | no | no | no | yes | yes | no |
+| smallest model over $\mathbb{C}$ | $M_1(\mathbb{C})$ | $M_1(\mathbb{C})$ | $M_2(\mathbb{C})$ | $M_2(\mathbb{C})$ | $M_2(\mathbb{C})$ | $M_2(\mathbb{C})$ | $M_2(\mathbb{C})$ | $M_4(\mathbb{C})$ |
+
+The table is the ladder of the matrix models. In $\mathbb{R}$ the algebra is the scalars and the model is the $1\times1$ matrix algebra itself; in $\mathbb{C}$ the Cayley matrix $\rho_L(Z)=aI+bJ$ gives a faithful image inside $M_2(\mathbb{R})$ which is the field of conformal matrices and not the whole algebra (*Complex Regular Representation*, §*The Left Regular Representation*). In $\mathbb{D}$ the image is the symmetric matrices $\{aI+bJ\}$ with $J^2=I$, in $\mathbb{D}'$ the upper-triangular Toeplitz matrices spanned by $I$ and the nilpotent Jordan block $E$ with $E^2=0$; both are faithful and neither is onto (*Split-Complex Regular Representation*; *Dual-Numbers Matrix Representation*). The quaternion algebra is the first column whose smallest faithful matrix model is not a real matrix algebra of size equal to the dimension: an isomorphism $\mathbb{H}\to M_2(\mathbb{R})$ is impossible, because $M_2(\mathbb{R})$ has zero divisors and $\mathbb{H}$ has none, so the smallest real model is the $4\times4$ regular one, while the complexification gives the $2\times2$ complex model $\iota:\mathbb{H}\to M_2(\mathbb{C})$ (*Quaternion 2x2 Matrix Representation*). The split quaternions are the exception of the four-dimensional rung: $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$, so the faithful model of size two is an isomorphism, the only surjective model of the table with a non-commutative algebra (*Split-Quaternion Matrix Representations*). The biquaternions likewise satisfy $\mathbb{B}\cong M_2(\mathbb{C})$, a surjective model of size two over $\mathbb{C}$ (*Biquaternion 2×2 Matrix Representation*). The last column is where the model stops at the smallest size that is forced: $\mathbb{H}_{\mathbb{D}}$ has no faithful $2\times2$ representation over $\mathbb{R}$ by the dimension count and none over $\mathbb{C}$ by the centre obstruction of its two central idempotents, so its smallest faithful model is $M_4(\mathbb{C})$, the algebra of the two simple modules taken together (*Dual-Numbers Matrix Representation*, §*The Absence of a Two-Dimensional Representation for $\mathbb{H}_{\mathbb{D}}$*).
+
+## The Regular Representations and the Cayley Determinant
+
+The following table compares the left regular representation of the eight algebras: the size of the Cayley matrix, whether the right regular representation coincides with the left, the determinant of the Cayley matrix, and the reducibility of the regular module. The eight algebras are the columns, in the fixed order.
+
+| datum | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
+|---|---|---|---|---|---|---|---|---|
+| Cayley matrix size | $1$ | $2$ | $2$ | $2$ | $4$ | $4$ | $4$ over $\mathbb{C}$ | $4$ over $\mathbb{D}$ |
+| right = left | yes | yes | yes | yes | no | no | no | no |
+| determinant of the Cayley matrix | $x$ | $N$ | $N$ | $N$ | $N^2$ | $N^2$ | $N^2$ | — |
+| regular module | simple | simple | $I_1\oplus I_2$ | indecomposable | simple | $S\oplus S$ | $V\oplus V$ | $\mathbb{H}\tilde\Pi_+\oplus\mathbb{H}\tilde\Pi_-$ |
+
+The table records the determinant ladder. In $\mathbb{R}$ the determinant of the $1\times1$ Cayley matrix is the element $x$ itself, whose square is the norm form; in $\mathbb{C}$ it is the norm form $N$; in $\mathbb{D}$ and $\mathbb{D}'$ it is again the norm form, $\det\rho_L(Z)=a^2-b^2$ and $\det\Phi(Z)=a^2$ respectively (*Real Regular Representation*; *Complex Regular Representation*; *Split-Complex Regular Representation*; *Dual-Numbers Matrix Representation*). At the quaternion rung the determinant is the **square** of the norm form, $\det L_q=N(\tilde q)^2$, because $L_q^{T}L_q=N(\tilde q)I$ and the quaternion algebra has degree two over its centre; the same square appears for $\mathbb{H}_{\mathrm{s}}$ and for $\mathbb{B}$, whose complex regular matrix has $\det\rho_L(\tilde Q)=N(\tilde Q)^2$ (*Quaternion 4x4 Regular Matrix Representation*; *Biquaternion 4×4 Regular Matrix Representation*). The last column carries the marker **—** because no source of the category records a Cayley determinant for $\mathbb{H}_{\mathbb{D}}$: division is not available in the coefficient ring $\mathbb{D}$, the determinant of the $4\times4$ matrix over $\mathbb{D}$ would be a $\mathbb{D}$-valued quantity, and the category treats the split biquaternion algebra through its four-vector and idempotent realizations, in which the regular module is the direct sum $\mathbb{H}\tilde\Pi_+\oplus\mathbb{H}\tilde\Pi_-$ of the two components. The reducibility row is the module-theoretic form of the same contrast: the regular module is simple exactly for the three division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, while $\mathbb{D}$ splits as its two minimal ideals $I_1=\mathbb{R}\Pi_1$ and $I_2=\mathbb{R}\Pi_2$, $\mathbb{D}'$ is indecomposable but not semisimple, and the three higher non-division algebras have reducible regular modules ($\mathbb{H}_{\mathrm{s}}$ as a sum of two copies of its simple module $S$, $\mathbb{B}$ as $V\oplus V$, $\mathbb{H}_{\mathbb{D}}$ as its two one-sided ideals).
+
+## The Realizations
+
+The following table compares the standard realizations of the eight algebras: the two-component realization, the four-vector realization, the four-by-four regular matrix realization and the operator realization, with the marker **—** where a realization does not occur. The eight algebras are the columns, in the fixed order.
+
+| realization | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
+|---|---|---|---|---|---|---|---|---|
+| two-component | — | yes | yes | — | — | — | — | — |
+| four-vector | — | — | — | — | yes | yes | yes | yes |
+| four-by-four regular | — | — | — | — | yes | yes | yes | yes |
+| operator | — | — | — | — | yes | yes | yes | yes |
+
+The table shows which realizations exist at which rung. The **two-component** realization is available exactly in the two-dimensional definite and split cases, where it reads $Z=a+ib$ or $Z=a+jb$ as the pair $(a,b)$ and the product is computed in components; the sign of the $bd$ term of the first component is the whole difference between the two (*Complex Two-Component Representation*; *Split-Complex Two-Component Representation*). It does not occur in $\mathbb{D}'$, whose coefficient pair is handled by the upper-triangular matrix model rather than by a two-component algebra, nor in the four- and eight-dimensional columns, whose coefficient vectors have four components. The **four-vector** realization is available exactly in the four higher systems, where the algebra is read as its quadruple of coefficients: $(q_0,q_1,q_2,q_3)$ over the coefficient field, with the product given by the scalar and vector product in components and a Levi-Civita term whose presence measures the non-commutativity, and with the four positive signs of $\mathbb{H}$ becoming the indefinite sign pattern of the two biquaternion systems (*Quaternion Four-Vector Representation*; *Biquaternion Four-Vector Representation*; *Split-Biquaternion Four-Vector Representation*). The **four-by-four regular** realization is the Cayley matrix of the table above, and it becomes the $4\times4$ complex regular matrix for $\mathbb{B}$ and the $4\times4$ complex matrix over $\mathbb{D}$ for $\mathbb{H}_{\mathbb{D}}$ (*Quaternion 4x4 Regular Matrix Representation*; *Biquaternion 4×4 Regular Matrix Representation*). The **operator** realization is the action on the algebra by a unit: for $\mathbb{H}$ it is the adjoint action $\operatorname{Ad}_{\tilde q}(x)=\tilde q x\tilde q^{-1}$ and the sandwich $S_{\tilde q}(x)=\tilde q x\bar{\tilde q}$, for $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ the dagger sandwich $\operatorname{H}_{\tilde Q}(x)=\tilde Q x\tilde Q^\dagger$, which is the Lorentz action of the split cases written on the algebra (*Quaternion Operator Representation*; *Biquaternion Operator Representation*; *Split-Biquaternion Operator Representation*). The operator realization exists in the four higher systems and not in the four lower ones, where the adjoint action of a unit is trivial because the algebra is commutative.
+
+## The Representation Rings and the Irreducibles
+
+The following table compares the module theory of the eight algebras: the number of simple modules, the dimension of a simple module, the endomorphism ring of a simple module by Schur's lemma, whether the representation category is semisimple, and the representation ring. The eight algebras are the columns, in the fixed order.
+
+| datum | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
+|---|---|---|---|---|---|---|---|---|
+| simple modules | $1$ | $1$ | $2$ | $1$ | $1$ | $1$ | $1$ | $2$ |
+| dimension of a simple module | $1$ | $1$ over $\mathbb{C}$ | $1$ | $1$ | $4$ over $\mathbb{R}$ | $2$ | $2$ over $\mathbb{C}$ | $4$ |
+| endomorphism ring | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{R}$ | $\mathbb{R}$ | $\mathbb{H}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{H}$ |
+| semisimple | yes | yes | yes | no | yes | yes | yes | yes |
+| representation ring | $\mathbb{Z}$ | $\mathbb{Z}$ | $\mathbb{Z}^2$ | not semisimple | $\mathbb{Z}$ | $\mathbb{Z}$ | $\mathbb{Z}$ | $\mathbb{Z}^2$ |
+
+The table is the module theory of the ladder. The three field-like columns $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ have a single simple module and representation ring $\mathbb{Z}$ generated by it, because a division algebra has one isomorphism class of simple module and its endomorphism ring is the division algebra itself, $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$ (*Real Representations*; *Complex Representations*; *Quaternion Representations*). The split complex algebra has **two** one-dimensional simple modules $\rho_+$ and $\rho_-$, the two characters $j\mapsto\pm1$, so its representation ring $R(\mathbb{D})$ is $\mathbb{Z}^2$, generated by $[\rho_+]$ and $[\rho_-]$ (*Split-Complex Representations*, §*The Representation Ring*): this is the module-theoretic form of the idempotent decomposition $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$, and it is the first column in which the number of simple modules exceeds one (*Split-Complex Representations*). The dual numbers are the one column that is **not semisimple**: $\mathbb{D}'$ is a local ring with nilpotent maximal ideal, so its category of representations is abelian but not semisimple, the indecomposables are classified by the Jordan type of the square-zero endomorphism $E=\rho(\varepsilon)$, and Schur's lemma still makes the endomorphism ring of the simple module $\mathbb{R}$ (*Dual-Numbers Representations*). The split quaternions and the biquaternions are semisimple with a single simple module each, of dimension two, with endomorphism rings $\mathbb{R}$ and $\mathbb{C}$ respectively: $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ is split, and the representation ring of the split quaternions is $\mathbb{Z}$ with product $m\cdot n=2mn$ and no identity element, because the algebra has no trivial representation to serve as a unit (*Split-Quaternion Representations*; *Biquaternion Representation Theory*). The last column has **two** simple modules $S_\pm$, each isomorphic to $\mathbb{H}$ and of dimension four, with endomorphism ring $\mathbb{H}$ in place of the field $\mathbb{C}$ of the biquaternion case, so its representation ring is $\mathbb{Z}^2$ and its representations are classified by a pair of multiplicities $(a,b)$, the regular representation being $(1,1)$ (*Split-Biquaternion Representation Theory*). The endomorphism-ring row is the sharpest contrast of the table: it is a field in six of the eight columns — the real field in $\mathbb{R}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{H}_{\mathrm{s}}$, the complex field in $\mathbb{C}$ and $\mathbb{B}$ — and the non-commutative division ring $\mathbb{H}$ exactly in the two quaternion columns $\mathbb{H}$ and $\mathbb{H}_{\mathbb{D}}$, where the simple module is quaternionic.
+
+## Summary
+
+The minimal faithful matrix model of the eight algebras climbs from the scalars $M_1(\mathbb{R})$ of $\mathbb{R}$ through the $2\times2$ real models of $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$ to the $4\times4$ real model of $\mathbb{H}$, the $2\times2$ real isomorphism of $\mathbb{H}_{\mathrm{s}}$, the $2\times2$ complex isomorphism of $\mathbb{B}$ and the $4\times4$ complex model of $\mathbb{H}_{\mathbb{D}}$, the last rung stopping at the smallest size that can carry a product of two division algebras. The determinant of the Cayley matrix is the element itself for $\mathbb{R}$, the norm form for $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$, and its square for $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$; the split biquaternion column carries no Cayley determinant and is treated through its four-vector and idempotent realizations. The two-component realization exists for $\mathbb{C}$ and $\mathbb{D}$, the four-vector and operator realizations for the four higher systems, and the four-by-four regular realization for the four higher systems as the Cayley matrix of each. The module theory is a single simple module with representation ring $\mathbb{Z}$ for $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$, two simple modules with ring $\mathbb{Z}^2$ for $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$, and a nonsemisimple category for $\mathbb{D}'$; the endomorphism ring of a simple module is a field except in the two quaternion columns, where it is the division algebra $\mathbb{H}$.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $M_n(F)$ | the algebra of $n\times n$ matrices over $F$ |
+| $\rho_L,\rho_R$ | the left and right regular representations |
+| $L_q,R_q$ | the Cayley matrices of left and right quaternion multiplication |
+| $\det\rho_L$ | the determinant of the Cayley matrix |
+| $N$ | the norm form of the algebra |
+| $J$ | the complex structure of the $2\times2$ real model, $J^2=-I$ |
+| $E$ | the nilpotent Jordan block of the dual model, $E^2=0$ |
+| $\iota:\mathbb{H}\to M_2(\mathbb{C})$ | the $2\times2$ complex quaternion model |
+| $\operatorname{Ad}_{\tilde q},S_{\tilde q}$ | the adjoint action and the sandwich of $\mathbb{H}$ |
+| $\operatorname{H}_{\tilde Q}(x)=\tilde Q x\tilde Q^\dagger$ | the dagger sandwich, the operator of $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ |
+| $S,V,I_1,I_2$ | the simple quaternion module and the ideals of the regular modules |
+| $R(\cdot)$ | the representation ring of an algebra |
+| $\mathbb{Z},\mathbb{Z}^2$ | the representation rings of the eight algebras |
+| `—` | an empty cell, stated and never filled |
+
+## Further Reading
+
+- Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the regular representation, the Cayley matrix and the reduced norm as its determinant.
+- Charles W. Curtis and Irving Reiner, *Representation Theory of Finite Groups and Associative Algebras* (Wiley, 1962), for the module theory of a finite-dimensional algebra and the role of semisimplicity.
+- Nathan Jacobson, *Basic Algebra II*, 2nd ed. (W. H. Freeman, 1989), for the structure of semisimple algebras and Schur's lemma.
+- John Voight, *Quaternion Algebras*, Graduate Texts in Mathematics 288 (Springer, 2021), for the $2\times2$ matrix model of a quaternion algebra and the obstruction over its centre.
+- Israel M. Gelfand and Alexandre Shenitzer, "On the structure of the Lie algebras of quaternion and biquaternion groups", *American Mathematical Society Translations* (Series 2) **17** (1961) 1–13, for the representation theory of the complexified quaternion algebra.
+

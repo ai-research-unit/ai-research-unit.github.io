@@ -19,7 +19,7 @@ $$
 A^G = \{a \in A : \alpha_\sigma(a) = a \ \text{for all } \sigma \in G\},
 $$
 
-a unital subalgebra of $A$. If $A = \prod_i A_i$ is a product of algebras, an automorphism permutes the factors; the action is **faithful** if $\alpha_\sigma \neq \mathrm{id}$ for $\sigma \neq 1$, and it is **inner** if each $\alpha_\sigma$ is the inner automorphism $a \mapsto u_\sigma a u_\sigma^{-1}$ for some unit $u_\sigma \in A^\times$. Inner actions are the ones that already live inside $A$, and they lead to the identification $A \rtimes_c G \cong A \otimes_F F^\alpha G$ in the cases where the units can be chosen consistently; the general theory of automorphisms is .
+a unital subalgebra of $A$. If $A = \prod_i A_i$ is a product of algebras, an automorphism permutes the factors; the action is **faithful** if $\alpha_\sigma \neq \mathrm{id}$ for $\sigma \neq 1$, and it is **inner** if each $\alpha_\sigma$ is the inner automorphism $a \mapsto u_\sigma a u_\sigma^{-1}$ for some unit $u_\sigma \in A^\times$. Inner actions are the ones that already live inside $A$, and they lead to the identification $A \rtimes_c G \cong A \otimes_F F^\alpha G$ in the cases where the units can be chosen consistently; the general theory of automorphisms is in *Automorphisms and Derivations of Algebras*.
 
 ### The skew group ring
 

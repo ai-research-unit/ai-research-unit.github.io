@@ -1,3 +1,4 @@
+
 # __Complex Harmonic Analysis__
 
 ## Introduction
@@ -262,7 +263,7 @@ in the sense of distributions. This is the starting point of the theory of the *
 
 ### The Hardy Spaces
 
-The **Hardy space** $H^p(\mathbb{D})$ on the unit disk $\mathbb{D} = \{z : |z| < 1\}$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with
+The **Hardy space** $H^p(D)$ on the unit disk $D = \{z : |z| < 1\}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
 \|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r e^{i\theta})|^p \, d\theta \right)^{1/p} < \infty
@@ -271,7 +272,7 @@ $$
 for $1 \leq p < \infty$, and
 
 $$
-\|f\|_{H^\infty} = \sup_{z \in \mathbb{D}} |f(z)| < \infty
+\|f\|_{H^\infty} = \sup_{z \in D} |f(z)| < \infty
 $$
 
 for $p = \infty$.
@@ -296,10 +297,10 @@ It is the natural setting for the sampling theorem of Shannon, which states that
 
 ### The Bergman Space
 
-The **Bergman space** $A^p(\mathbb{D})$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with
+The **Bergman space** $A^p(D)$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
-\|f\|_{A^p} = \left( \int_{\mathbb{D}} |f(z)|^p \, dx \, dy \right)^{1/p} < \infty.
+\|f\|_{A^p} = \left( \int_{D} |f(z)|^p \, dx \, dy \right)^{1/p} < \infty.
 $$
 
 For $p = 2$, the Bergman space is a reproducing kernel Hilbert space, with reproducing kernel
@@ -312,10 +313,10 @@ It is the natural setting for the study of holomorphic functions with controlled
 
 ### The Bloch Space
 
-The **Bloch space** $\mathcal{B}$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with
+The **Bloch space** $\mathcal{B}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
-\|f\|_{\mathcal{B}} = |f(0)| + \sup_{z \in \mathbb{D}} (1 - |z|^2) |f'(z)| < \infty.
+\|f\|_{\mathcal{B}} = |f(0)| + \sup_{z \in D} (1 - |z|^2) |f'(z)| < \infty.
 $$
 
 It is a Banach space, and it is the natural setting for the study of holomorphic functions with bounded mean oscillation of the derivative.
@@ -461,9 +462,10 @@ The last three sections extend the transform beyond the group setting: the Melli
 | $f \star g$ | Multiplicative (Mellin) convolution |
 | $\bar{\partial} = \partial/\partial \bar{z}$ | Cauchy–Riemann operator |
 | $\Delta$ | Laplacian |
-| $H^p(\mathbb{D})$ | Hardy space |
+| $D = \{z : |z| < 1\}$ | Unit disk |
+| $H^p(D)$ | Hardy space |
 | $PW_B$ | Paley–Wiener space |
-| $A^p(\mathbb{D})$ | Bergman space |
+| $A^p(D)$ | Bergman space |
 | $\mathcal{B}$ | Bloch space |
 | $\mathcal{M} f$ | Mellin transform |
 | $Rf$ | Radon transform |

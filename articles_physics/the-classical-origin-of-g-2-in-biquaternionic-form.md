@@ -63,7 +63,7 @@ A body in rigid rotation with angular velocity $\boldsymbol{\omega}$ carries a c
 
 $$
 \boldsymbol{\mu} = \frac{1}{2}\int \rho_c(\mathbf{r})\,\mathbf{r}\times(\boldsymbol{\omega}\times\mathbf{r})\,d^3x
-= \frac{1}{2}\,\hat{\Pi}\,\boldsymbol{\omega},
+= \frac{1}{2}\,\hat{\mathcal{M}}\,\boldsymbol{\omega},
 \qquad
 \mathbf{L} = \int \rho_m(\mathbf{r})\,\mathbf{r}\times(\boldsymbol{\omega}\times\mathbf{r})\,d^3x
 = \hat{I}\,\boldsymbol{\omega},
@@ -72,7 +72,7 @@ $$
 where
 
 $$
-\hat{\Pi}_{ij} = \int \rho_c(\mathbf{r})\left(r^2\delta_{ij} - r_ir_j\right)d^3x,
+\hat{\mathcal{M}}_{ij} = \int \rho_c(\mathbf{r})\left(r^2\delta_{ij} - r_ir_j\right)d^3x,
 \qquad
 \hat{I}_{ij} = \int \rho_m(\mathbf{r})\left(r^2\delta_{ij} - r_ir_j\right)d^3x
 $$
@@ -87,7 +87,7 @@ $$
 \rho_c(\mathbf{r}) = \frac{q}{m}\,\rho_m(\mathbf{r}),
 $$
 
-then the two tensors are proportional, $\hat{\Pi} = (q/m)\hat{I}$, and the moment is
+then the two tensors are proportional, $\hat{\mathcal{M}} = (q/m)\hat{I}$, and the moment is
 
 $$
 \boldsymbol{\mu} = \frac{1}{2}\,\frac{q}{m}\,\hat{I}\,\boldsymbol{\omega}
@@ -105,9 +105,9 @@ and this is the **classical theorem**: any rigid distribution of charge whose de
 
 ### The Classical Distributions
 
-For a body that is not proportional, the value of $g$ is the ratio of the two inertia integrals about the rotation axis. Three elementary axisymmetric bodies, all of unit radius and carrying unit total charge and unit total mass, give the values of $\hat{\Pi}_{zz}$ and $\hat{I}_{zz}$ collected below. The uniform sphere and the thin spherical shell have proportional densities and return $g=1$; a distribution whose charge is concentrated on a ring or a shell while its mass is distributed uniformly returns a different value, and the table shows the range.
+For a body that is not proportional, the value of $g$ is the ratio of the two inertia integrals about the rotation axis. Three elementary axisymmetric bodies, all of unit radius and carrying unit total charge and unit total mass, give the values of $\hat{\mathcal{M}}_{zz}$ and $\hat{I}_{zz}$ collected below. The uniform sphere and the thin spherical shell have proportional densities and return $g=1$; a distribution whose charge is concentrated on a ring or a shell while its mass is distributed uniformly returns a different value, and the table shows the range.
 
-| Charge distribution | Mass distribution | $\hat{\Pi}_{zz}$ | $\hat{I}_{zz}$ | $g = \hat{\Pi}_{zz}/\hat{I}_{zz}$ |
+| Charge distribution | Mass distribution | $\hat{\mathcal{M}}_{zz}$ | $\hat{I}_{zz}$ | $g = \hat{\mathcal{M}}_{zz}/\hat{I}_{zz}$ |
 |---|---|---|---|---|
 | uniform sphere | uniform sphere | $2/5$ | $2/5$ | $1$ |
 | thin shell | thin shell | $2/3$ | $2/3$ | $1$ |
@@ -126,12 +126,12 @@ The values are the standard moments of inertia and their charge analogues. The t
 The general condition for the convective value $g=2$ is read off the definition,
 
 $$
-g = \frac{2m}{q}\frac{\mu}{L} = \frac{m}{q}\frac{\hat{\Pi}_{zz}}{\hat{I}_{zz}} = 2
+g = \frac{2m}{q}\frac{\mu}{L} = \frac{m}{q}\frac{\hat{\mathcal{M}}_{zz}}{\hat{I}_{zz}} = 2
 \qquad\Longleftrightarrow\qquad
-\hat{\Pi}_{zz} = 2\,\frac{q}{m}\,\hat{I}_{zz},
+\hat{\mathcal{M}}_{zz} = 2\,\frac{q}{m}\,\hat{I}_{zz},
 $$
 
-a single scalar condition for rotation about a given axis, and a tensor condition in general. A generic rigid body does not satisfy it. The condition can be met by a deliberate choice: a body whose charge is concentrated on the equator of a sphere, with $\hat{\Pi}_{zz} = qa^2$, meets it when the mass is distributed as the combination
+a single scalar condition for rotation about a given axis, and a tensor condition in general. A generic rigid body does not satisfy it. The condition can be met by a deliberate choice: a body whose charge is concentrated on the equator of a sphere, with $\hat{\mathcal{M}}_{zz} = qa^2$, meets it when the mass is distributed as the combination
 
 $$
 \hat{I}_{zz} = \frac{1}{2}\,ma^2
@@ -275,7 +275,7 @@ and the anomaly $a=(g-2)/2$ is the one-loop Schwinger value $a\approx\alpha/2\pi
 
 ## Summary
 
-The gyromagnetic factor $g$, defined by $\boldsymbol{\mu} = g(q/2m)\mathbf{S}$, compares the magnetic moment of a charged configuration to its angular momentum. For a **convective** configuration — a rigid rotor whose charge current is the motion of its charge density — the moment and the angular momentum are the two inertia integrals $\boldsymbol{\mu} = \tfrac{1}{2}\hat{\Pi}\boldsymbol{\omega}$ and $\mathbf{L} = \hat{I}\boldsymbol{\omega}$, and proportional charge and mass densities give
+The gyromagnetic factor $g$, defined by $\boldsymbol{\mu} = g(q/2m)\mathbf{S}$, compares the magnetic moment of a charged configuration to its angular momentum. For a **convective** configuration — a rigid rotor whose charge current is the motion of its charge density — the moment and the angular momentum are the two inertia integrals $\boldsymbol{\mu} = \tfrac{1}{2}\hat{\mathcal{M}}\boldsymbol{\omega}$ and $\mathbf{L} = \hat{I}\boldsymbol{\omega}$, and proportional charge and mass densities give
 
 $$
 \boldsymbol{\mu} = \frac{q}{2m}\,\mathbf{L},
@@ -283,7 +283,7 @@ $$
 g = 1 .
 $$
 
-This is the classical convective theorem. Values other than one are attainable when the densities differ, but $g=2$ requires the fine-tuned condition $\hat{\Pi}_{zz} = 2(q/m)\hat{I}_{zz}$; it holds, for example, for a body whose charge is on the equator and whose mass is $5/8$ uniform and $3/8$ on a shell. Convective magnetism is therefore not pinned to two.
+This is the classical convective theorem. Values other than one are attainable when the densities differ, but $g=2$ requires the fine-tuned condition $\hat{\mathcal{M}}_{zz} = 2(q/m)\hat{I}_{zz}$; it holds, for example, for a body whose charge is on the equator and whose mass is $5/8$ uniform and $3/8$ on a shell. Convective magnetism is therefore not pinned to two.
 
 The **intrinsic** magnetic moment is not a convective current, and its gyromagnetic factor is fixed by the representation of its angular momentum. In the biquaternion algebra the intrinsic angular momentum is generated by the half-unit
 
@@ -316,7 +316,7 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 | $\boldsymbol{\mu} = \gamma\mathbf{S}$ | Magnetic moment; gyromagnetic relation |
 | $\gamma = g\,q/2m$ | Gyromagnetic ratio |
 | $g = 2m\mu/(qS)$ | Gyromagnetic factor |
-| $\hat{\Pi}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
+| $\hat{\mathcal{M}}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
 | $\hat{I}_{ij} = \int\rho_m(r^2\delta_{ij}-r_ir_j)$ | Mass inertia tensor |
 | $\rho_c$, $\rho_m$ | Charge and mass densities |
 | $\tfrac{1}{2}\hat{n}_ke_k$ | Rotation generator; the rotor $\tilde{R}$ is its exponential |

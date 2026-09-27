@@ -88,7 +88,7 @@ $$
 So the truncated ladder satisfies the **fermionic** canonical anticommutation relations exactly, with no truncation error, while its commutator fails the bosonic relation by a nonzero, non-central element. The number operator and the fermion-parity element are
 
 $$
-\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-ie_3)=P_-(e_3),\qquad
+\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-ie_3)=\tilde\Pi_2,\qquad
 (-1)^F=e_0-2\tilde N=ie_3=\frac{2\tilde S_3}{\hbar},
 $$
 
@@ -227,7 +227,7 @@ The table also displays what the framework does and does not explain. The *spin*
 
 - The rotor group of unit real quaternions is the double cover of the rotation group; the rotor through $2\pi$ about any axis is $-e_0$, and through $4\pi$ is $e_0$.
 - Under the rotor action, the half-integer-spin representations live on the spinor module and its tensor powers, where $-e_0$ acts as $(-1)^{2s}=-1$, while the integer-spin representations live on $\mathbb{M}_-$ and its tensor powers, where $-e_0$ acts as $+1$. The algebra affords $j=\tfrac12$ as a module, $j=0$ on the center under conjugation, and $j=1$ through the adjoint action on $\mathbb{M}_-$.
-- The single-mode ladder operators are the spin ladder operators, $\tilde a=\tilde S_+/\hbar$, and satisfy $\{\tilde a,\tilde a^\dagger\}=e_0$; the number operator is the idempotent $P_-(e_3)$; and the fermion-parity grading is the inner automorphism by $(-1)^F=ie_3=2\tilde S_3/\hbar$, an element of $\mathbb{M}_+$.
+- The single-mode ladder operators are the spin ladder operators, $\tilde a=\tilde S_+/\hbar$, and satisfy $\{\tilde a,\tilde a^\dagger\}=e_0$; the number operator is the idempotent $\tilde\Pi_2$; and the fermion-parity grading is the inner automorphism by $(-1)^F=ie_3=2\tilde S_3/\hbar$, an element of $\mathbb{M}_+$.
 - No bosonic mode exists in $\mathbb{B}$: a canonical commutator would be central and its trace would vanish, forcing it to zero.
 - For the free spin-$\tfrac12$ field built on the module, the equal-time anticommutator is $\delta_{ab}\delta^{(3)}(\boldsymbol\Delta)$ and the equal-time commutator is a nonzero Bessel kernel at every $\boldsymbol\Delta\ne 0$. The spinorial part of the anticommutator, $2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\mathbf p$, is odd in $\mathbf p$ and cancels; this was checked independently of the terms that suggested it.
 - The sign in $\tilde a\tilde a^\dagger=e_0\mp\tilde a^\dagger\tilde a$ is the sign of the antiparticle term in the Hamiltonian and the sign that decides positivity of the norm.
@@ -280,7 +280,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $\tilde R(2\pi,\hat n)=-e_0$, $\tilde R(4\pi,\hat n)=e_0$ | The two-valued sign of the spinor module |
 | $\tilde S_k=\tfrac{\hbar}{2}ie_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(ie_1\mp e_2)$ | Spin operators in $\mathbb{M}_+$; ladders in $\mathbb{B}$ (they are not Hermitian) |
 | $\tilde a=\tfrac12(ie_1-e_2)=\tilde S_+/\hbar$, $\tilde a^\dagger=\tilde S_-/\hbar$ | Single fermionic mode ladder |
-| $\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-ie_3)=P_-(e_3)$ | Single-mode number operator (idempotent) |
+| $\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-ie_3)=\tilde\Pi_2$ | Single-mode number operator (idempotent) |
 | $(-1)^F=ie_3=e_0-2\tilde N=2\tilde S_3/\hbar$ | Fermion parity; Hermitian involution in $\mathbb{M}_+$ |
 | $\{\tilde a,\tilde a^\dagger\}=e_0$, $[\tilde a,\tilde a^\dagger]=ie_3$ | Fermionic mode relation; failure of the bosonic relation |
 | $\hat\psi$, $\bar{\hat\psi}=\hat\psi^\dagger\gamma^0$ | Quantized spinor-module field and its Dirac adjoint |

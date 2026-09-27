@@ -224,7 +224,7 @@ Several key properties of vector spaces fail for modules over a general commutat
 
 **(a) Not every module is free.** Over a field, every module is free. Over a general ring, this is false. For example, $\mathbb{Z}/n\mathbb{Z}$ is not a free $\mathbb{Z}$-module.
 
-**(b) Not every submodule is a direct summ.** Over a field, every subspace of a vector space has a complement. Over a general ring, this is false.
+**(b) Not every submodule is a direct summand.** Over a field, every subspace of a vector space has a complement. Over a general ring, this is false.
 
 **(c) Rank and the invariant basis number property.** Over a field, every basis has the same cardinality. Over a commutative ring with $1 \neq 0$ this remains true, since every such ring has the invariant basis number property; the failure $R^m \cong R^n$ with $m \neq n$ occurs only for non-commutative rings.
 

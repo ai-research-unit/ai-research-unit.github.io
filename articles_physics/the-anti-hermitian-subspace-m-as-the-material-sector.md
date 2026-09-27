@@ -234,7 +234,7 @@ Each has an imaginary scalar part (the time component) and a real vector part (t
 
 The **light cone** of Minkowski space is the zero divisor cone of $\mathbb{M}_-$: the null four-vectors of light-like propagation are exactly the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.
 
-The subspace $\mathbb{M}_-$ is specifically the **vector representation** of the Lorentz group.
+The subspace $\mathbb{M}_-$ is specifically the **representation** of the Lorentz group.
 
 ## Summary of Notation
 

@@ -158,7 +158,7 @@ $$
 V^{\otimes d} \cong \bigoplus_{\lambda\vdash d,\ \ell(\lambda)\leq n}S^\lambda\otimes W^\lambda,
 $$
 
-with $S^\lambda$ the Specht module and $W^\lambda$ the irreducible polynomial representation of $GL(V)$ of highest weight $\lambda$; the multiplicity of $S^\lambda$ is $\dim W^\lambda = s_\lambda(1^n)$, and the two endomorphism rings are the homomorphic images of the respective group rings. The pro, the construction of $W^\lambda$ as a Weyl module, and the modular version arebeing.
+with $S^\lambda$ the Specht module and $W^\lambda$ the irreducible polynomial representation of $GL(V)$ of highest weight $\lambda$; the multiplicity of $S^\lambda$ is $\dim W^\lambda = s_\lambda(1^n)$, and the two endomorphism rings are the homomorphic images of the respective group rings. The proof, the construction of $W^\lambda$ as a Weyl module, and the modular version arebeing.
 
 **Example.** For $d = 2$ and $n \geq 2$: $V^{\otimes2} = \operatorname{Sym}^2V\oplus\Lambda^2V$, with $S^{(2)}$ acting trivially on the symmetric part and by the sign on the exterior part; the multiplicity of $S^{(2)}$ is $\dim\operatorname{Sym}^2V = \binom{n+1}{2} = s_{(2)}(1^n)$ and that of $S^{(1,1)}$ is $\binom{n}{2} = s_{(1,1)}(1^n)$, in agreement with the dimension formula $s_\lambda(1^n) = \prod_{i<j}\frac{\lambda_i-\lambda_j+j-i}{j-i}$ of *Symmetric Functions and Schur Functions*. For $n = 2$ this gives $3+1 = 4 = 2^2$; for $n = 3$ it gives $6+3 = 9 = 3^2$.
 

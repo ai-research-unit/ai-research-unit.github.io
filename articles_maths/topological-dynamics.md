@@ -153,7 +153,7 @@ and the two limits agree with the definition by covers.
 
 **Example (rotation and shift).** (i) If $T$ is an isometry of a compact metric space, then $h_{\mathrm{top}}(T)=0$: a cover by balls of radius $\epsilon/2$ is carried to covers by balls of the same radius, and $H(\mathcal U^n)\le H(\mathcal U)$, so the entropy vanishes. In particular every rotation of the circle and every translation of the torus has entropy zero.
 
-(ii) The full shift on $d$ symbols has $h_{\mathrm{top}}(\sigma)=\log d$; the counting of the $n$-blocks gives $d^n$ and the logarithm divided by $n$ tends to $\log d$. The entropy of a subshift is computed by the growth of its language, and the entropy of a subshift of finite type is the logarithm of the spectral radius of its transition matrix; these computations belong.
+(ii) The full shift on $d$ symbols has $h_{\mathrm{top}}(\sigma)=\log d$; the counting of the $n$-blocks gives $d^n$ and the logarithm divided by $n$ tends to $\log d$. The entropy of a subshift is computed by the growth of its language, and the entropy of a subshift of finite type is the logarithm of the spectral radius of its transition matrix; these computations belong to *Symbolic Dynamics*.
 
 (iii) The doubling map $x\mapsto2x\bmod1$ has entropy $\log2$, by the conjugacy with the full two-shift modulo the countable set of dyadic rationals; the entropy is finite and positive, and it is the topological measure of the exponential growth of the number of orbits distinguishable at resolution $\epsilon$.
 

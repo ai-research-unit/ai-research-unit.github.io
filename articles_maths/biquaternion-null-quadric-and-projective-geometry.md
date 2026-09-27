@@ -6,17 +6,11 @@ The norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_{\mu=0}^{3} Q_\mu^2$ d
 
 The plan: polarise $N$ and read $\mathbb{B}$ as a complex quadratic space; describe its null cone, a cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$; identify the two rulings of that variety with the two chiral spinor families; place the picture in the classical projective geometry of lines in $\mathbb{P}^3$, namely the Klein quadric and the Plücker embedding; state carefully how the quadric is related to the Lorentz group; and read the light cone of the Minkowski slices as the real slice of the null cone. Everything here is standard; no new results are claimed and no physics is invoked.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. We use the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ of the article *Biquaternion 2×2 Matrix Representation*,
-$$
-\tilde{Q}\;\longmapsto\;\begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix},
-$$
-under which $N$ becomes the determinant. The criterion of *Biquaternion Norm and Invertibility* is used without proof: $N(\tilde{Q})\neq0$ if and only if $\tilde{Q}$ is invertible, and $N(\tilde{Q})=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Biquaternion Norm and Invertibility* is used without proof: $N(\tilde{Q})\neq0$ if and only if $\tilde{Q}$ is invertible, and $N(\tilde{Q})=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
 
 ---
 
-# Part I: The Norm Form as a Quadratic Space
-
-## 1. The norm form and its polarization
+## The norm form and its polarization
 
 $N(\tilde{Q})=\sum_{\mu=0}^{3} Q_\mu^2$ is homogeneous of degree two, hence is a quadratic form on $\mathbb{B}\cong\mathbb{C}^4$. Its polar form is
 $$
@@ -26,13 +20,9 @@ the complex bilinear dot product. It is symmetric and non-degenerate, and the qu
 $$
 B(e_\mu,e_\nu)=\delta_{\mu\nu}.
 $$
-So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear; it is not the Hermitian inner product $\sum_\mu P_\mu^*Q_\mu$ of the basic algebra article. Under $\mathbb{B}\cong M_2(\mathbb{C})$ the norm is the determinant, and for $2\times2$ matrices
-$$
-\det(M+N)-\det M-\det N=\operatorname{tr}(M)\operatorname{tr}(N)-\operatorname{tr}(MN),
-$$
-so $B(M,N)=\tfrac{1}{2}\bigl(\operatorname{tr}(M)\operatorname{tr}(N)-\operatorname{tr}(MN)\bigr)$.
+So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear; it is not the Hermitian inner product $\sum_\mu P_\mu^*Q_\mu$ of the basic algebra article.
 
-## 2. Real forms and split signature
+## Real forms and split signature
 
 Over $\mathbb{C}$ a non-degenerate quadratic form has no signature; signature appears only after a real form is chosen. With $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$,
 $$
@@ -51,7 +41,7 @@ Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate
 
 Each is a real slice whose complexification is $(\mathbb{B},N)$. The full realification is split; the Lorentzian slice is $\mathbb{M}_+$, and up to sign $\mathbb{M}_-$.
 
-## 3. The associated Clifford algebra
+## The associated Clifford algebra
 
 With the series convention $v^2=N(v)\cdot1$,
 $$
@@ -59,17 +49,15 @@ $$
 $$
 the second being the split real form of signature $(4,4)$, the case $p-q\equiv0\pmod 8$. The even part is
 $$
-\mathrm{Cl}^+(\mathbb{B},N)\cong\mathrm{Cl}_3(\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B},
+\mathrm{Cl}^+(\mathbb{B},N)\cong\mathrm{Cl}_3(\mathbb{C})\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B},
 $$
-whose two simple summands are the two chiralities, matched to the rulings in §7.
+whose two simple summands are the two chiralities, matched to the rulings in §*Chirality: the primed and unprimed spinor lines*.
 
 A caution. The biquaternion algebra itself is the even Clifford algebra $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ of the Minkowski quadratic space of signature $(1,3)$ (*Spinors*). That is a different Clifford algebra, attached to a different quadratic space; it is not $\mathrm{Cl}(\mathbb{B},N)$.
 
 ---
 
-# Part II: The Null Cone and Its Rulings
-
-## 4. The null cone
+## The null cone
 
 The null cone is
 $$
@@ -80,9 +68,9 @@ $$
 \{\text{zero divisors}\}=\mathcal{N}\setminus\{0\}=\{\tilde{Q}\neq0:N(\tilde{Q})=0\}.
 $$
 
-## 5. Rank-one description and the Segre embedding
+## Factorisation and the Segre embedding
 
-Since $N$ is the determinant, the nonzero null elements are exactly the rank-one matrices. Such a matrix is an outer product
+The nonzero null elements are exactly the factorisable ones, each an outer product
 $$
 A=uv^{T},\qquad u=\binom{\alpha}{\beta}\neq0,\quad v=\binom{\gamma}{\delta}\neq0,
 $$
@@ -90,7 +78,7 @@ determined by $(u,v)$ up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. Projectivis
 $$
 s:\mathbb{P}^1\times\mathbb{P}^1\longrightarrow\mathbb{P}^3,\qquad ([u],[v])\mapsto[uv^{T}]=[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta].
 $$
-The matrix identity $A_{11}A_{22}=A_{12}A_{21}$, read through $A_{11}=Q_0-iQ_3$, $A_{22}=Q_0+iQ_3$, $A_{12}=-iQ_1-Q_2$, $A_{21}=-iQ_1+Q_2$, is
+The factorisation condition, read in the coordinates $Q_0,\dots,Q_3$ through $A_{11}=Q_0-iQ_3$, $A_{22}=Q_0+iQ_3$, $A_{12}=-iQ_1-Q_2$, $A_{21}=-iQ_1+Q_2$, is
 $$
 (Q_0-iQ_3)(Q_0+iQ_3)=(-iQ_1-Q_2)(-iQ_1+Q_2)\iff Q_0^2+Q_3^2=-Q_1^2-Q_2^2,
 $$
@@ -98,9 +86,9 @@ exactly $N(\tilde{Q})=0$. Hence
 $$
 \mathbb{P}(\mathcal{N})=\{[\tilde{Q}]\in\mathbb{P}^3:N(\tilde{Q})=0\}
 $$
-is the image of the Segre embedding. The affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$, and the zero-divisor set is that cone with its apex removed. In particular a null biquaternion is parametrised by a pair of two-component spinors, as made explicit in §7.
+is the image of the Segre embedding. The affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$, and the zero-divisor set is that cone with its apex removed. In particular a null biquaternion is parametrised by a pair of two-component spinors, as made explicit in §*Chirality: the primed and unprimed spinor lines*.
 
-## 6. The two rulings of null planes
+## The two rulings of null planes
 
 For fixed $[u]$ the set $\ell_{[u]}=\{[uv^{T}]:v\in\mathbb{C}^2\}$ is a line in $\mathbb{P}^3$, and for fixed $[v]$ the set $m_{[v]}=\{[uv^{T}]:u\in\mathbb{C}^2\}$ is another. These are the **two rulings**, with the classical incidence properties: each is a $\mathbb{P}^1$ of lines; every quadric point lies on exactly one line of each family; lines of the same family are disjoint, while lines of different families meet in exactly one point.
 
@@ -108,29 +96,23 @@ In algebra language, $\ell_{[u]}=\mathbb{P}(W_u)$ with $W_u=\{uv^{T}:v\in\mathbb
 $$
 B(uv_1^{T},uv_2^{T})=0\qquad\text{for all }v_1,v_2\in\mathbb{C}^2,
 $$
-by the trace formula of §1 and $\operatorname{tr}(uv^{T})=v^{T}u$. Since $\dim W_u=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, these are the **null planes**; the two rulings are the two families $\{W_u\}$ and $\{W^v\}$.
+by the trace formula of §*The norm form and its polarization* and $\operatorname{tr}(uv^{T})=v^{T}u$. Since $\dim W_u=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, these are the **null planes**; the two rulings are the two families $\{W_u\}$ and $\{W^v\}$.
 
-## 7. Chirality: the primed and unprimed spinor lines
+## Chirality: the primed and unprimed spinor lines
 
 As a module over the complexified Lorentz algebra, the complexification of the Minkowski slice is the tensor product of the two Weyl spinor spaces of *Spinors*,
 $$
-\mathbb{B}\cong\Delta^+\otimes\Delta^-,\qquad \dim_{\mathbb{C}}\Delta^\pm=2,
+\mathbb{B}\cong\Delta^+\otimes\Delta^-,\qquad \dim_{\mathbb{C}}\Delta^\pm=2 .
 $$
-the complexified four-vector representation. A biquaternion is therefore a **mixed spinor** with one unprimed and one primed index, $A_\alpha{}^{\dot\beta}$, and the rank-one condition is exactly factorisability:
+A biquaternion is therefore a **mixed spinor** with one unprimed and one primed index, $A_\alpha{}^{\dot\beta}$, and the null condition is exactly factorisability:
 $$
 A_\alpha{}^{\dot\beta}=\phi_\alpha\,\pi^{\dot\beta},\qquad \phi\in\Delta^+,\ \pi\in\Delta^- .
 $$
-Matching $A=uv^{T}$, the column $u$ is the unprimed spinor $\phi$ and the row $v^{T}$ the primed spinor $\pi$. Hence fixing $\phi$ and varying $\pi$ traces $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)=\mathbb{P}^1$, while fixing $\pi$ and varying $\phi$ traces $m_{[\pi]}\cong\mathbb{P}(\Delta^+)=\mathbb{P}^1$. The two rulings are the **primed and unprimed spinor lines**, and they correspond to the two chiralities, since the complexified algebra splits as
-$$
-\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})
-$$
-into its two simple summands, the two chirality eigenspaces. Which half-spin module is named $\Delta^+$ is a convention.
+Matching $A=uv^{T}$, the column $u$ is the unprimed spinor $\phi$ and the row $v^{T}$ the primed spinor $\pi$. Hence fixing $\phi$ and varying $\pi$ traces $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)=\mathbb{P}^1$, while fixing $\pi$ and varying $\phi$ traces $m_{[\pi]}\cong\mathbb{P}(\Delta^+)=\mathbb{P}^1$. The two rulings are the **primed and unprimed spinor lines**, and they correspond to the two chiralities, since the complexified algebra splits into two simple summands, the two chirality eigenspaces. Which half-spin module is named $\Delta^+$ is a convention.
 
 ---
 
-# Part III: Projective Geometry of the Null Quadric
-
-## 8. The projective null quadric $Q^2$
+## The projective null quadric $Q^2$
 
 The projectivised null cone
 $$
@@ -138,9 +120,9 @@ Q^2=\{[\tilde{Q}]\in\mathbb{P}^3:N(\tilde{Q})=0\}
 $$
 is a smooth irreducible quadric surface, isomorphic to $\mathbb{P}^1\times\mathbb{P}^1$; it is the classical **Segre quadric**. Non-degeneracy of $B$ gives smoothness, and over $\mathbb{C}$ all smooth quadric surfaces in $\mathbb{P}^3$ are projectively equivalent.
 
-Its real points depend on the real form of §2: empty for the definite form on $\mathbb{H}_{\mathbb{B}}$; the sphere $S^2$ for the Lorentzian form on $\mathbb{M}_+$ (or $\mathbb{M}_-$); the torus $S^1\times S^1$ for the split form of signature $(2,2)$. Only in the split case does the real quadric contain real lines.
+Its real points depend on the real form of §*Real forms and split signature*: empty for the definite form on $\mathbb{H}_{\mathbb{B}}$; the sphere $S^2$ for the Lorentzian form on $\mathbb{M}_+$ (or $\mathbb{M}_-$); the torus $S^1\times S^1$ for the split form of signature $(2,2)$. Only in the split case does the real quadric contain real lines.
 
-## 9. Lines in $\mathbb{P}^3$, the Klein quadric, and the Plücker embedding
+## Lines in $\mathbb{P}^3$, the Klein quadric, and the Plücker embedding
 
 A line in $\mathbb{P}^3$ is $\mathbb{P}(U)$ for a two-dimensional subspace $U\subset\mathbb{C}^4$. With a basis $x,y$ of $U$, the **Plücker coordinates** are the six minors
 $$
@@ -158,7 +140,7 @@ Over $\mathbb{R}$ the Plücker form has signature $(3,3)$. This Klein quadric in
 
 The rulings of $Q^2$ appear in this picture as follows. A line of $Q^2$ is a maximal isotropic two-plane, and its Plücker point lies on the Klein quadric. The lines on $Q^2$ form two components, the two rulings, each a $\mathbb{P}^1$; their Plücker images are two conics on the Klein quadric. (The maximal isotropic subspaces of the Klein quadric itself are two families of projective planes $\mathbb{P}^2$: the stars of lines through a fixed point and the plane fields of lines in a fixed plane.)
 
-## 10. Tangency and polarity
+## Tangency and polarity
 
 The form $B$ defines a **polarity**, the correlation
 $$
@@ -176,36 +158,31 @@ in which case the two points lie on a common ruling line. A line through $[\tild
 
 ---
 
-# Part IV: The Quadric and the Lorentz Group
-
-## 11. Automorphisms of the complex quadric
+## Automorphisms of the complex quadric
 
 The projective automorphisms of $Q^2$ are induced by the complex orthogonal group of $N$:
 $$
-\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})=O_4(\mathbb{C})/\{\pm I\}\cong\bigl(PGL_2(\mathbb{C})\times PGL_2(\mathbb{C})\bigr)\rtimes\mathbb{Z}/2,
+\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})=O_4(\mathbb{C})/\{\pm I\},
 $$
-acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, with the $\mathbb{Z}/2$ exchanging the rulings. This is the projective form of the double cover $SL_2(\mathbb{C})\times SL_2(\mathbb{C})\to SO_4(\mathbb{C})$. The connected group $PSO_4(\mathbb{C})\cong PGL_2(\mathbb{C})\times PGL_2(\mathbb{C})$ preserves each ruling; the outer component swaps them.
+acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, with the $\mathbb{Z}/2$ exchanging the rulings. Its identity component $PSO_4(\mathbb{C})$ preserves each ruling; the outer component swaps them.
 
-## 12. The Minkowski slice and the conformal group
+## The Minkowski slice and the conformal group
 
-Take the Lorentzian real form $\mathbb{M}_+\cong\mathbb{R}^{1,3}$ of §2. Its null cone is the Minkowski null cone, whose projectivisation is the sphere
+Take the Lorentzian real form $\mathbb{M}_+\cong\mathbb{R}^{1,3}$ of §*Real forms and split signature*. Its null cone is the Minkowski null cone, whose projectivisation is the sphere
 $$
 \mathbb{P}(\mathcal{N}\cap\mathbb{M}_+)\cong S^2,
 $$
 the **celestial sphere** of null directions. This $S^2$ is a real slice of $Q^2$, the real locus of one real form.
 
 The Lorentz group enters as its conformal group:
-$$
-SO^+(1,3)\cong PSL_2(\mathbb{C})\cong PGL_2(\mathbb{C}),
-$$
-with $SL_2(\mathbb{C})\to SO^+(1,3)$ the double cover, and this group acts on $S^2=\mathbb{C}\mathbb{P}^1$ by Möbius transformations, the orientation-preserving conformal diffeomorphisms. The full Lorentz group $O(1,3)$ acts by all Möbius transformations, $PGL_2(\mathbb{C})\rtimes\mathbb{Z}/2$, the extra $\mathbb{Z}/2$ being complex conjugation.
+The proper orthochronous Lorentz group $SO^+(1,3)$ acts on $S^2=\mathbb{C}\mathbb{P}^1$ by Möbius transformations, the orientation-preserving conformal diffeomorphisms, and the full Lorentz group $O(1,3)$ acts by all Möbius transformations, the additional ones being complex conjugation.
 
-Two qualifications. First, $SO^+(1,3)$ is **not** the automorphism group of the complex quadric; that is the larger $PO_4(\mathbb{C})$ of §11 (complex dimension $6$, real dimension $12$), of which the Lorentz group is the group of a real form (real dimension $6$). Second, "conformal group" refers to conformal transformations of the celestial sphere $S^2$, not of Minkowski space: the conformal group of $\mathbb{R}^{1,3}$ is larger, the fifteen-dimensional $O(2,4)$ of the standard conformal compactification. The Lorentz group is the conformal group only of the projective null cone.
+Two qualifications. First, $SO^+(1,3)$ is **not** the automorphism group of the complex quadric; that is the larger $PO_4(\mathbb{C})$ of §*Automorphisms of the complex quadric* (complex dimension $6$, real dimension $12$), of which the Lorentz group is the group of a real form (real dimension $6$). Second, "conformal group" refers to conformal transformations of the celestial sphere $S^2$, not of Minkowski space: the conformal group of $\mathbb{R}^{1,3}$ is larger, the fifteen-dimensional $O(2,4)$ of the standard conformal compactification. The Lorentz group is the conformal group only of the projective null cone.
 
-## 13. The light cone in the Minkowski slices
+## The light cone in the Minkowski slices
 
 
-By the table of §2 the restriction of $N$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ this reads $N(\tilde{Q})=-(q'_0)^2+q_1^2+q_2^2+q_3^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,
+By the table of §*Real forms and split signature* the restriction of $N$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ this reads $N(\tilde{Q})=-(q'_0)^2+q_1^2+q_2^2+q_3^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,
 
 $$
 N(\tilde{Q})=0\iff(q'_0)^2=q_1^2+q_2^2+q_3^2,
@@ -221,41 +198,39 @@ $$
 
 one sphere per nappe. Each nappe is the cone on its sphere, and the complement of the light cone in $\mathbb{M}_-$ has exactly three connected components, the future timelike, past timelike and spacelike regions, as in *Biquaternion Norm and Invertibility*.
 
-Two warnings are in order: the light cone is a real cone of real dimension $3$ in $\mathbb{M}_-\cong\mathbb{R}^4$, not the full null cone $\mathcal{N}$ of §4, which has real dimension $6$; and $\mathcal{N}$ is the complex cone over the Segre quadric, whose intersection with $\mathbb{M}_-$ recovers the light cone, so the Minkowski null biquaternions form a three-dimensional real cone while the null elements of the full algebra form a six-dimensional one.
+Two warnings are in order: the light cone is a real cone of real dimension $3$ in $\mathbb{M}_-\cong\mathbb{R}^4$, not the full null cone $\mathcal{N}$ of §*The null cone*, which has real dimension $6$; and $\mathcal{N}$ is the complex cone over the Segre quadric, whose intersection with $\mathbb{M}_-$ recovers the light cone, so the Minkowski null biquaternions form a three-dimensional real cone while the null elements of the full algebra form a six-dimensional one.
 
-## 14. The split real form
+## The split real form
 
 For the split real form of signature $(2,2)$ the real quadric is
 $$
 S^1\times S^1\cong\mathbb{P}^1_{\mathbb{R}}\times\mathbb{P}^1_{\mathbb{R}},
 $$
-and the rulings are real, so the quadric is doubly ruled by real lines; the corresponding connected group is $SO^+(2,2)\cong PSL_2(\mathbb{R})\times PSL_2(\mathbb{R})$, acting on the two factors separately. In the Lorentzian case no real line lies on the real quadric: the real points form $S^2$, and the rulings exist only over $\mathbb{C}$. The signature thus decides whether the rulings are visible over $\mathbb{R}$ or only over $\mathbb{C}$.
+and the rulings are real, so the quadric is doubly ruled by real lines; the corresponding connected group is $SO^+(2,2)$, acting on the two factors separately. In the Lorentzian case no real line lies on the real quadric: the real points form $S^2$, and the rulings exist only over $\mathbb{C}$. The signature thus decides whether the rulings are visible over $\mathbb{R}$ or only over $\mathbb{C}$.
 
 ---
-
-# Part V: Summary
 
 ## Summary
 
 - $N$ is a non-degenerate quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polar form the complex dot product $B=\sum_\mu P_\mu Q_\mu$ and orthonormal basis $e_0,\dots,e_3$. Its realification has split signature $(4,4)$; the Lorentzian slice $\mathbb{M}_+$ has signature $(1,3)$.
 - The associated Clifford algebra is $\mathrm{Cl}_4(\mathbb{C})\cong M_4(\mathbb{C})$, and $\mathrm{Cl}_{4,4}\cong M_{16}(\mathbb{R})$ for the split form; its even part has the two chiral summands. It is not the same as $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$.
-- The null cone is a complex cone of dimension $3$ (real dimension $6$), smooth away from the origin and, punctured, exactly the zero-divisor set; under $\mathbb{B}\cong M_2(\mathbb{C})$ its points are the rank-one matrices.
+- The null cone is a complex cone of dimension $3$ (real dimension $6$), smooth away from the origin and, punctured, exactly the zero-divisor set; its nonzero points are exactly the factorisable elements.
 - The projectivised null cone is the smooth quadric $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1$, and the null cone is the affine cone over it. The two rulings are the two families of maximal isotropic null planes, each a $\mathbb{P}^1$.
 - A null biquaternion is a factorisable mixed spinor $\phi_\alpha\pi^{\dot\beta}$; the two rulings are the primed and unprimed spinor lines, corresponding to the two chiralities.
-- The quadric sits in the Plücker–lein geometry of lines in $\mathbb{P}^3$; its rulings are two conics on the Klein quadric, and tangency and polarity come from the form $B$.
+- The quadric sits in the Plücker–Klein geometry of lines in $\mathbb{P}^3$; its rulings are two conics on the Klein quadric, and tangency and polarity come from the form $B$.
 - The null set of the Lorentzian slice $\mathbb{M}_\pm$ is the **light cone**: a real double cone of real dimension $3$, whose link is $S^2\sqcup S^2$ and whose complement has three connected components (the future timelike, past timelike and spacelike regions). It is the real slice of the complex null cone, so its dimension is $3$, not $6$.
-- $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$PGL_2(\mathbb{C})\times PGL_2(\mathbb{C}))\rtimes\mathbb{Z}/2$, while $SO^+(1,3)\cong PSL_2(\mathbb{C})$ is the conformal group of the projective null cone $S^2$, not the automorphism group of the complex quadric.
+- $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, while the proper orthochronous Lorentz group $SO^+(1,3)$ is the conformal group of the projective null cone $S^2$, not the automorphism group of the complex quadric.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $N(\tilde{Q}) = \sum_{\mu=0}^{3} Q_\mu^2$ | Norm form on $\mathbb{B} \cong \mathbb{C}^4$; the determinant under $\mathbb{B} \cong M_2(\mathbb{C})$ |
+| $N(\tilde{Q}) = \sum_{\mu=0}^{3} Q_\mu^2$ | Norm form on $\mathbb{B} \cong \mathbb{C}^4$ |
 | $B(\tilde{P},\tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | Polar form of $N$, the complex bilinear dot product; $B(e_\mu,e_\nu) = \delta_{\mu\nu}$ |
 | $\mathcal{N} = \{\tilde{Q} : N(\tilde{Q}) = 0\}$ | Affine null cone; punctured, it is exactly the zero-divisor set |
 | $Q^2 = \mathbb{P}(\mathcal{N})$ | Projective null quadric in $\mathbb{P}^3$ |
 | $s : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ | Segre embedding, $([u],[v]) \mapsto [uv^{T}]$; its image is $Q^2$ |
-| $u = (\alpha,\beta)^{T}$, $v = (\gamma,\delta)^{T}$ | Two-component spinors parametrising a null biquaternion $A = uv^{T}$ |
+| $u = (\alpha,\beta)^{T}$, $v = (\gamma,\delta)^{T}$ | Two-component vectors parametrising a null biquaternion $A = uv^{T}$ |
 | $A_\alpha{}^{\dot\beta}$ | Spinor form of a biquaternion, with one unprimed and one primed index |
 | $\ell_{[u]}, m_{[v]}$ | The two rulings of $Q^2$; the lines through $[\tilde{P}] \in Q^2$ |
 | $p_{ij} = x_i y_j - x_j y_i$ | Plücker coordinates; the Klein quadric in $\mathbb{P}^5$ is their Plücker locus |

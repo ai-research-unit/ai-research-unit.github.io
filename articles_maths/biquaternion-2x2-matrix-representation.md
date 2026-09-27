@@ -7,7 +7,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H
 
 This article presents the **matrix realization** of $\mathbb{B}$ together with the module on which the matrices act. It is deeper than the coefficient realization of *Biquaternion Four-Vector Representation* by exactly one level of structure: the four-vector article lists the four coefficients, while the matrix realization exhibits an **action**. The word *representation* is therefore used here in both of its senses at once, the concrete realization and the technical representation of an algebra on a vector space, and the module $V = \mathbb{C}^2$ is introduced as the object on which the action is defined. The two realizations agree on the four parameters: they are related by an explicit $\mathbb{C}$-linear isomorphism, stated below.
 
-The article owns the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, the trace and the determinant, the Hermitian form and the Euclidean norm, the matrix form of the four conjugations, the six distinguished subspaces in matrix form, the structural consequences of the isomorphism, and the simple module $V$ with its left action. It deliberately does not treat the spinor reading of $V$, which belongs to *Spinors and the Biquaternion Spinor Module*; it does not treat the module-theoretic treatment with matrix units, which belongs to *The Defining Module of the Biquaternion Algebra*; it does not re-derive the Clifford identification of *The Biquaternion Algebra as a Clifford Algebra*; and it does not reprove the classification of the simple modules or Schur's lemma, which belong to *Biquaternion Representation Theory*. No physical vocabulary is used: in particular the matrices below are not gamma matrices and the module is not a spinor of a physical field.
+The article owns the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, the trace and the determinant, the Hermitian form and the Euclidean norm, the matrix form of the four conjugations, the six distinguished subspaces in matrix form, the characteristic polynomial and the spectrum, the Cayley–Hamilton identity, the Jordan structure of the Hermitian subspace, the real norm as an absolute determinant, the matrix exponential, the structural consequences of the isomorphism, and the simple module $V$ with its left action. It deliberately does not treat the spinor reading of $V$, which belongs to *Spinors and the Biquaternion Spinor Module*; it does not treat the module-theoretic treatment with matrix units, which belongs to *The Defining Module of the Biquaternion Algebra*; it does not re-derive the Clifford identification of *The Biquaternion Algebra as a Clifford Algebra*; and it does not reprove the classification of the simple modules or Schur's lemma, which belong to *Biquaternion Representation Theory*. No physical vocabulary is used: in particular the matrices below are not gamma matrices and the module is not a spinor of a physical field.
 
 ## The Isomorphism
 
@@ -101,6 +101,58 @@ The criterion and the group of units are the subject of *Biquaternion Norm and I
 
 **Remark (the two dimensions).** The dimension of the simple module introduced below is $2$ over $\mathbb{C}$, and the size of the matrix algebra is $2 \times 2$. These are the same two for the same reason: the algebra of endomorphisms of a $2$-dimensional space is the algebra of $2 \times 2$ matrices, and the isomorphism $\Phi$ is exactly the identification of $\mathbb{B}$ with that endomorphism algebra.
 
+**Worked example.** For the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the image is
+
+$$
+\Phi(\tilde{Q}) = (2+i)I_2 + (1-i)(-i\sigma_1) + 3(-i\sigma_2) + i(-i\sigma_3) = \begin{pmatrix} 3+i & -4-i \\ 2-i & 1+i \end{pmatrix},
+$$
+
+whose trace is $4+2i = 2Q_0$ and whose determinant is $(3+i)(1+i) - (-4-i)(2-i) = 11+2i = N(\tilde{Q})$, so the element is a unit with inverse $\bar{\tilde{Q}}/N$.
+
+## The Real Norm from the Determinant
+
+The norm form $N$ is complex-valued and vanishes on the zero divisors; its modulus does not. The determinant supplies the real size function that the polar representations use.
+
+**Proposition (the real norm as an absolute determinant).** For every biquaternion $\tilde{Q}$,
+
+$$
+r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{\bigl|\det \Phi(\tilde{Q})\bigr|},
+$$
+
+and $r$ is multiplicative, $r(\tilde{P}\tilde{Q}) = r(\tilde{P})r(\tilde{Q})$, with $r(\lambda e_0) = |\lambda|$ for real $\lambda$.
+
+**Proof.** The first identity is the determinant proposition above, $N = \det\Phi$, with absolute values taken. Multiplicativity is that of the determinant, and $r(\lambda e_0) = \sqrt{|\lambda^2|} = |\lambda|$. $\square$
+
+**Remark.** The function $r$ is the unique multiplicative real norm on the group of units normalised by $r(\lambda e_0) = |\lambda|$; the uniqueness is proved in *Biquaternion Norm and Invertibility*, where $r$ is developed as the real size function of the algebra. What the matrix realization contributes is the reading of $r$ as the **absolute determinant**, which is the form in which the polar representations and the physics articles use it.
+
+## The Characteristic Polynomial and the Spectrum
+
+**Definition.** The **spectrum** of a biquaternion $\tilde{Q}$ is the spectrum of the matrix $\Phi(\tilde{Q})$, that is, its two eigenvalues in $\mathbb{C}$. This is the unqualified meaning of the word in the series; the other inequivalent spectra are the subject of *Biquaternion Spectral Theory*.
+
+**Proposition (characteristic polynomial).** The characteristic polynomial of $\Phi(\tilde{Q})$ is
+
+$$
+\det\bigl(\lambda I - \Phi(\tilde{Q})\bigr) = \lambda^2 - 2Q_0\,\lambda + N(\tilde{Q}),
+$$
+
+so the spectrum is $\{Q_0 + iB,\; Q_0 - iB\}$ with $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$, the trace is $2Q_0$, and the determinant is $N(\tilde{Q})$.
+
+**Proof.** For a $2 \times 2$ matrix the characteristic polynomial is $\lambda^2 - \operatorname{Tr}(M)\lambda + \det(M)$, and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ by the trace-and-determinant proposition. The eigenvalues are the two roots $Q_0 \pm \sqrt{Q_0^2 - N(\tilde{Q})}$, and $Q_0^2 - N(\tilde{Q}) = -(Q_1^2 + Q_2^2 + Q_3^2) = -B^2$. $\square$
+
+**Remark (similarity).** Two biquaternions are similar, $\tilde{Q}' = S\tilde{Q}S^{-1}$ with $S$ invertible, exactly when their matrices are similar, so the spectrum is a similarity invariant. The similarity classification, the eigenvalue dichotomy, and the resolvent are the subject of *Biquaternion Spectral Theory*, which also records the several inequivalent meanings of "spectrum".
+
+## The Cayley–Hamilton Identity
+
+**Proposition.** Every biquaternion satisfies the **Cayley–Hamilton identity**
+
+$$
+\tilde{Q}^2 - 2Q_0\,\tilde{Q} + N(\tilde{Q})\,e_0 = 0 .
+$$
+
+**Proof.** Cayley–Hamilton for the $2 \times 2$ matrix $\Phi(\tilde{Q})$ reads $\Phi(\tilde{Q})^2 - \operatorname{Tr}\Phi(\tilde{Q})\,\Phi(\tilde{Q}) + \det\Phi(\tilde{Q})\,I = 0$. Substituting $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ and $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and transporting back along the injective map $\Phi$ gives the identity. $\square$
+
+**Remark.** This is the identity that reduces every power of $\tilde{Q}$ to a combination of $e_0$ and $\tilde{Q}$, and it is the starting point for the closed forms of the exponential and the trigonometric functions in *Biquaternion Elementary Functions*.
+
 ## The Hermitian Form and the Euclidean Norm
 
 The matrix realization carries the conjugate-transpose operation $\dagger$, and with it the Hermitian form of the algebra.
@@ -142,6 +194,38 @@ $$
 $$
 
 linear in the second argument and conjugate-linear in the first. Its diagonal value $\langle \tilde{Q}, \tilde{Q}\rangle = \|\tilde{Q}\|_E^2$ is the scalar part of the Hermitian form. This is the coefficient-space statement of *Biquaternion Algebra* read through the matrix realization.
+
+## The Jordan Structure of the Hermitian Subspace
+
+**Proposition.** The isomorphism $\Phi$ carries $\mathbb{M}_+$ onto the Hermitian $2 \times 2$ matrices and intertwines the **symmetrized product**
+
+$$
+\tilde{Q} \circ \tilde{R} = \tfrac{1}{2}\bigl(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}\bigr)
+$$
+
+with $\tfrac{1}{2}(AB + BA)$. Hence $\mathbb{M}_+$ is a Jordan algebra over $\mathbb{R}$, isomorphic through $\Phi$ to the Jordan algebra $H_2(\mathbb{C})$ of Hermitian $2 \times 2$ complex matrices.
+
+**Proof.** The subspace $\mathbb{M}_+$ is the fixed space of $\dagger$ and the Hermitian matrices are the fixed space of the conjugate transpose, and the proposition above shows that $\Phi$ carries $\dagger$ to the conjugate transpose, so $\Phi(\mathbb{M}_+)$ is exactly $H_2(\mathbb{C})$. Since $\Phi$ is $\mathbb{C}$-linear and multiplicative, $\Phi(\tilde{Q} \circ \tilde{R}) = \tfrac{1}{2}\bigl(\Phi(\tilde{Q})\Phi(\tilde{R}) + \Phi(\tilde{R})\Phi(\tilde{Q})\bigr)$. $\square$
+
+**Remark.** The symmetrized product is commutative but not associative, which is the Jordan axiom pattern; the Jordan theory of the Hermitian subspace, its powers and its idempotents are developed in *Biquaternion Hermitian Subspace*.
+
+## The Exponential and the Matrix Exponential
+
+**Proposition.** Under the isomorphism the biquaternion exponential corresponds to the matrix exponential:
+
+$$
+\Phi\bigl(\exp \tilde{Q}\bigr) = \exp\bigl(\Phi(\tilde{Q})\bigr),
+$$
+
+and consequently
+
+$$
+N\bigl(\exp \tilde{Q}\bigr) = \det\Phi\bigl(\exp \tilde{Q}\bigr) = e^{\operatorname{Tr}\Phi(\tilde{Q})} = e^{2Q_0}.
+$$
+
+**Proof.** The power series defining $\exp$ involves only sums, scalar multiples and products, all of which $\Phi$ preserves, so it commutes with $\Phi$; the identity $\det(e^{M}) = e^{\operatorname{Tr} M}$ is Jacobi's formula for a square matrix. $\square$
+
+**Remark (the spectrum of the exponential).** Since $\Phi(\exp\tilde{Q}) = \exp\Phi(\tilde{Q})$, the spectrum of $\exp\tilde{Q}$ is $\{e^{\lambda_1}, e^{\lambda_2}\}$, where $\lambda_1, \lambda_2$ are the eigenvalues of $\Phi(\tilde{Q})$, and the determinant identity above is the product of the two. The exponential itself, its group law and its kernel are the subject of *Biquaternion Elementary Functions*.
 
 ## The Conjugations in Matrix Form
 
@@ -202,6 +286,23 @@ The six distinguished subspaces of *Biquaternion Four-Vector Representation* hav
 
 The two middle rows are the matrix form of the real and imaginary coefficient conditions: the quaternion subspace consists of the matrices of the displayed pattern, in which the off-diagonal entries are related by $M_{21} = -\overline{M_{12}}$ and the diagonal entries by $M_{22} = \overline{M_{11}}$, and the anti-quaternion subspace has the same pattern with the two diagonal signs exchanged, $M_{21} = \overline{M_{12}}$ and $M_{22} = -\overline{M_{11}}$. The Hermitian and anti-Hermitian subspaces are the real and imaginary parts of the coefficient space in the matrix picture, and they are the two subspaces on which the norm form is real and indefinite, as recorded in *Biquaternion Four-Vector Representation*.
 
+**Remark (the two named images).** Two entries of the table carry standard names. The traceless matrices are exactly the Lie algebra $\mathfrak{sl}(2,\mathbb{C}) = \mathrm{span}_{\mathbb{C}}\{e_1, e_2, e_3\}$, so $\Phi(\mathrm{Vect}(\mathbb{B})) = \mathfrak{sl}(2,\mathbb{C})$, whose compact real form $\mathfrak{su}(2)$ is the image of the real vector triple; and the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ maps onto a four-dimensional real subspace of $M_2(\mathbb{C})$ closed under multiplication, whose nonzero elements are invertible, so that it is a realization of the quaternion division algebra inside $M_2(\mathbb{C})$, with $\det\Phi(\tilde{Q}) = N(\tilde{Q}) > 0$ on it. The Lie-algebra structure is developed in *Biquaternion Lie Algebra and Lie Group Structure*, and the quaternion subspace in *Biquaternion Quaternion Subspace*.
+
+### Explicit Patterns and Invariants
+
+The table above gives each image by its defining condition; solving that condition gives the explicit pattern and the trace and determinant. With $\tilde{Q} = Q_0e_0 + \mathbf{Q}$ and the coefficient notation $Q_\mu = q_\mu + iq'_\mu$,
+
+| subspace | explicit pattern of $\Phi(\tilde{Q})$ | $\operatorname{Tr}\Phi(\tilde{Q})$ | $\det\Phi(\tilde{Q})$ |
+|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $Q_0 I$ | $2Q_0$ | $Q_0^2 = N$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $\begin{pmatrix} -iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & iQ_3 \end{pmatrix}$, traceless | $0$ | $N$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix}$, $z = q_0 - iq_3$, $w = -q_2 - iq_1$ | $2q_0$ | $\lvert z\rvert^2 + \lvert w\rvert^2 = N > 0$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $\begin{pmatrix} u & v \\ \bar{v} & -\bar{u} \end{pmatrix}$, $u = q'_3 + iq'_0$, $v = q'_1 - iq'_2$ | $2iq'_0$ | $-\bigl(\lvert u\rvert^2 + \lvert v\rvert^2\bigr) = N < 0$ |
+| $\mathbb{M}_+$ | $M = M^\dagger$, Hermitian | $2q_0 \in \mathbb{R}$ | $N \in \mathbb{R}$ |
+| $\mathbb{M}_-$ | $M = -M^\dagger$, anti-Hermitian | $2iq'_0$ | $N \in \mathbb{R}$ |
+
+The quaternion subspace is the fixed space of the antilinear conjugation $M \mapsto \epsilon\overline{M}\epsilon^{-1}$ with $\epsilon = i\sigma_2 = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$; the anti-quaternion subspace has the transpose-conjugate pattern, with $M_{21} = \overline{M_{12}}$ and the two diagonal signs exchanged. Two elements illustrate the degenerate cases: $\Phi(e_0 + ie_1) = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}$, a Hermitian matrix of rank one, determinant zero and square equal to twice itself, so that half of it is an idempotent; and $\Phi(ie_0 + e_1) = \begin{pmatrix} i & -i \\ -i & i \end{pmatrix}$, a singular anti-Hermitian matrix of trace $2i$, corresponding to the null element $ie_0 + e_1$. On the quaternion subspace the image is a realization of the quaternion division algebra, with nonzero determinant; on the anti-quaternion subspace the determinant is strictly negative, so that subspace misses the singular matrices altogether, which is the matrix statement of the absence of zero divisors there. The determinant of the traceless image identifies the null elements with the singular traceless matrices and the nilpotent ones with the rank-one matrices of zero square.
+
 ## The Simple Module
 
 The matrix realization is the realization in which the module of the algebra is exhibited concretely.
@@ -232,13 +333,13 @@ $$
 M_2(\mathbb{C}) E_{11} = \left\{ \begin{pmatrix} \alpha & 0 \\ \beta & 0 \end{pmatrix} : \alpha, \beta \in \mathbb{C} \right\},
 $$
 
-which is $V$ by the map $\begin{pmatrix} \alpha & 0 \\ \beta & 0 \end{pmatrix} \mapsto \begin{pmatrix} \alpha \\ \beta \end{pmatrix}$. Under the inverse of $\Phi$ this is the minimal left ideal $\mathbb{B} p$ of $\mathbb{B}$, where
+which is $V$ by the map $\begin{pmatrix} \alpha & 0 \\ \beta & 0 \end{pmatrix} \mapsto \begin{pmatrix} \alpha \\ \beta \end{pmatrix}$. Under the inverse of $\Phi$ this is the minimal left ideal $\mathbb{B} \tilde\Pi_1$ of $\mathbb{B}$, where
 
 $$
-p = \tfrac{1}{2}(e_0 + i e_3), \qquad \Phi(p) = E_{11},
+\tilde\Pi_1 = \tfrac{1}{2}(e_0 + i e_3), \qquad \Phi(\tilde\Pi_1) = E_{11},
 $$
 
-and the complementary ideal is $\mathbb{B} q$ with $q = \tfrac{1}{2}(e_0 - i e_3)$ and $\Phi(q) = E_{22}$. The two ideals are isomorphic as left modules and satisfy $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$. The idempotents and the resulting Peirce decomposition are the subject of *Biquaternion Ideals and Peirce Decomposition* and are cited here only for the identification of $V$ with $\mathbb{B}p$.
+and the complementary ideal is $\mathbb{B} \tilde\Pi_2$ with $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - i e_3)$ and $\Phi(\tilde\Pi_2) = E_{22}$. The two ideals are isomorphic as left modules and satisfy $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$. The idempotents and the resulting Peirce decomposition are the subject of *Biquaternion Ideals and Peirce Decomposition* and are cited here only for the identification of $V$ with $\mathbb{B}\tilde\Pi_1$.
 
 **Remark (the endomorphism algebra).** Two facts complete the picture of $V$. First, the commutant is one-dimensional, $\operatorname{End}_{\mathbb{B}}(V) = \mathbb{C}\,\mathrm{id}$, so $V$ is absolutely irreducible; this is Schur's lemma, and the element of $\operatorname{End}_{\mathbb{B}}(V)$ is the scalar action $\lambda v$, the diagonal copy of $\mathbb{C}$ in $M_2(\mathbb{C})$. Second, the double centralizer theorem gives $\mathbb{B} = \operatorname{End}_{\mathbb{C}}(V)$: the algebra is not merely contained in the endomorphisms of $V$, it is all of them. Both statements are proved in *The Defining Module of the Biquaternion Algebra*, where the module is exhibited with the matrix units and shown to reconstruct the algebra; that article writes the simple module $S$ and reads the regular module as $S \oplus S$, so its $S$ is the module called $V$ here. The reading of $V$ as a pair of chiral spinors with their dual and conjugate is the subject of *Spinors and the Biquaternion Spinor Module*, which also writes the module $S$.
 
@@ -249,6 +350,52 @@ S = \operatorname{Res}_{\mathbb{C}/\mathbb{R}} V, \qquad \dim_{\mathbb{R}} S = 2
 $$
 
 The real dimension of $S$ is four, and the left action of the eight-dimensional real algebra $\mathbb{B}$ on it is the restriction of the complex-linear action; the real structure carried by $S$ is treated in *The Defining Module of the Biquaternion Algebra*. The letter $S$ names the realification here and is not the letter by which that article writes the simple module.
+
+## Matrix Units, the One-Sided Ideals, and the Projective Line
+
+The four matrix units are realized by the two standard idempotents together with two off-diagonal elements,
+
+$$
+E_{11} = \Phi(\tilde\Pi_1) = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \qquad
+E_{22} = \Phi(\tilde\Pi_2) = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix},
+$$
+$$
+E_{12} = \Phi(x), \qquad E_{21} = \Phi(y), \qquad
+x = \frac{i e_1 - e_2}{2}, \qquad y = \frac{i e_1 + e_2}{2},
+$$
+
+so that $\{\tilde\Pi_1, x, y, \tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ and the multiplication is the table of the matrix units,
+
+$$
+\tilde\Pi_1x = x = x\tilde\Pi_2, \qquad \tilde\Pi_2y = y = y\tilde\Pi_1, \qquad xy = \tilde\Pi_1, \qquad yx = \tilde\Pi_2,
+$$
+
+together with $x\tilde\Pi_1 = \tilde\Pi_2x = \tilde\Pi_1y = 0$, $y\tilde\Pi_2 = 0$, and $x^2 = y^2 = 0$.
+
+The matrix units group the basis into one-sided ideals. The two **left ideals** $\mathbb{B}\tilde\Pi_1, \mathbb{B}\tilde\Pi_2$ are the column spaces and the two **right ideals** $\tilde\Pi_1\mathbb{B}, \tilde\Pi_2\mathbb{B}$ are the row spaces, and
+
+$$
+\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}y) \oplus (\mathbb{C}x \oplus \mathbb{C}\tilde\Pi_2),
+$$
+$$
+\mathbb{B} = \tilde\Pi_1\mathbb{B} \oplus \tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}x) \oplus (\mathbb{C}y \oplus \mathbb{C}\tilde\Pi_2).
+$$
+
+The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $x$ and $\tilde\Pi_2$ with $y$, whereas the left-ideal decomposition groups $\tilde\Pi_1$ with $y$ and $\tilde\Pi_2$ with $x$. Each left ideal is two-dimensional over $\mathbb{C}$ and isomorphic to the simple module $V$; each right ideal is isomorphic to the dual $V^{*}$.
+
+The minimal left ideals are parametrized by the projective line. For a $\mathbb{C}$-subspace $W \subseteq V = \mathbb{C}^2$ put
+
+$$
+L_W = \{\, M \in M_2(\mathbb{C}) : M|_W = 0 \,\},
+$$
+
+the matrices annihilating $W$; this is a left ideal, since $\ker(AM) \supseteq \ker M$ for every $A$, and $W \mapsto L_W$ reverses inclusions. One has $L_0 = \mathbb{B}$, $L_{\mathbb{C}^2} = 0$, and $L_W$ is minimal exactly when $\dim_{\mathbb{C}} W = 1$. Conversely every left ideal arises this way, because a left ideal is a submodule of the regular module $\mathbb{B} \cong V \oplus V$, and the only submodules of $V \oplus V$ are $0$, a copy of $V$, and the whole module. So the left ideals of $\mathbb{B}$ are exactly $0$, the whole algebra, and the minimal ideals $L_W$ indexed by the projective line
+
+$$
+\mathbb{P}^1(\mathbb{C}) = \{\, W \subseteq \mathbb{C}^2 : W \text{ a one-dimensional } \mathbb{C}\text{-subspace} \,\},
+$$
+
+which form the middle layer of the lattice; they are pairwise incomparable, and because the regular module has length two each is maximal as well as minimal. Right ideals admit the same description, with lines in the dual space and the rows as coordinate members.
 
 ## Structural Consequences of the Isomorphism
 
@@ -270,7 +417,7 @@ Taken together, the three statements say that $\mathbb{B}$ is the full endomorph
 
 ## Summary
 
-The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ through the map $\Phi$ fixed by $e_0 \mapsto I$ and $e_k \mapsto -i\sigma_k$, whose explicit form is $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$. The choice is stated once: the Pauli matrices are a shorthand for the images and not the organising device, and every statement is about $\mathbb{B}$ and $M_2(\mathbb{C})$. The trace is $2Q_0$ and the determinant is the norm form $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, so invertibility is non-vanishing norm and the zero divisors are the singular matrices.
+The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ through the map $\Phi$ fixed by $e_0 \mapsto I$ and $e_k \mapsto -i\sigma_k$, whose explicit form is $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$. The choice is stated once: the Pauli matrices are a shorthand for the images and not the organising device, and every statement is about $\mathbb{B}$ and $M_2(\mathbb{C})$. The trace is $2Q_0$ and the determinant is the norm form $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, so invertibility is non-vanishing norm and the zero divisors are the singular matrices. The characteristic polynomial is $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ and the Cayley–Hamilton identity is $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, so every power reduces to a combination of $e_0$ and $\tilde{Q}$. The real norm of the algebra is the absolute determinant, $r(\tilde{Q}) = \sqrt{|\det\Phi(\tilde{Q})|}$, the real scale the polar representations use. The biquaternion exponential corresponds to the matrix exponential, $\Phi(\exp\tilde{Q}) = \exp\Phi(\tilde{Q})$, whence $N(\exp\tilde{Q}) = e^{2Q_0}$; and $\Phi$ carries the Hermitian subspace onto the Hermitian matrices, intertwining the symmetrized product with $\tfrac12(AB + BA)$ as Jordan algebras.
 
 Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate transpose, and complex conjugation is **not** entrywise: it is dressed with the antisymmetric form $\epsilon = i\sigma_2 = \Phi(-e_2)$, as $\Phi(\tilde{Q}^*) = \epsilon\overline{\Phi(\tilde{Q})}\epsilon^{-1}$. The Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ has trace twice the squared Euclidean length of the four-vector, and the Euclidean norm is its square root. The six distinguished subspaces are the scalar, traceless, quaternionic, anti-quaternionic, Hermitian and anti-Hermitian matrices. The algebra is simple with centre the scalar matrices and is the full endomorphism algebra of the simple module $V = \mathbb{C}^2$ of complex dimension $2$, on which it acts by matrix multiplication; the minimal left ideals are the column spaces, and $V$ is the only simple module. The two dimensions $2$ of the module and $2$ of the matrix are the same two, because the algebra is the endomorphism algebra of the module.
 
@@ -292,11 +439,15 @@ Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate t
 | $\|\tilde{Q}\|_E$ | Euclidean norm, $\sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$ |
 | $\|\cdot\|_F$ | Frobenius norm of a matrix, $\|\Phi(\tilde{Q})\|_F = \sqrt{2}\,\|\tilde{Q}\|_E$ |
 | $\langle \tilde{P}, \tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$ | Hermitian inner product |
+| $r(\tilde{Q}) = \sqrt{\lvert \det\Phi(\tilde{Q})\rvert}$ | Real norm, the absolute determinant |
+| $\operatorname{spec}\tilde{Q} = \{Q_0 \pm iB\}$ | Spectrum, the eigenvalues of $\Phi(\tilde{Q})$, $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ |
+| $H_2(\mathbb{C})$ | Hermitian $2 \times 2$ matrices, the Jordan algebra $\Phi(\mathbb{M}_+)$ |
+| $\mathfrak{sl}(2,\mathbb{C})$ | Traceless matrices, the image $\Phi(\mathrm{Vect}(\mathbb{B}))$ |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces |
 | $V = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, complex dimension $2$ |
 | $S = \operatorname{Res}_{\mathbb{C}/\mathbb{R}} V$ | Restriction of scalars, real dimension $4$ |
-| $p = \tfrac{1}{2}(e_0 + ie_3)$, $q = \tfrac{1}{2}(e_0 - ie_3)$ | Orthogonal idempotents, $\Phi(p) = E_{11}$, $\Phi(q) = E_{22}$ |
+| $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$ | Orthogonal idempotents, $\Phi(\tilde\Pi_1) = E_{11}$, $\Phi(\tilde\Pi_2) = E_{22}$ |
 | $E_{ij}$ | Matrix units, $E_{ij}E_{kl} = \delta_{jk}E_{il}$ |
 | $\operatorname{End}_{\mathbb{C}}(V) \cong M_2(\mathbb{C})$ | Endomorphism algebra identified with $\mathbb{B}$ |
 

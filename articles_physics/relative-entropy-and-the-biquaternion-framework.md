@@ -74,7 +74,7 @@ and positivity plus the trace condition give exactly
 $$
 \tilde\rho\ \text{a state}\iff |\mathbf r|\le1 .
 $$
-The state is **pure** on the Bloch sphere $|\mathbf r|=1$, where $\tilde\rho=P_+(\hat{\mathbf r})=\tfrac12(e_0+i\hat{\mathbf r})$ is a minimal idempotent and $\tilde\rho^2=\tilde\rho$; it is **faithful** on the open Bloch ball $|\mathbf r|<1$, where both eigenvalues are positive; and it is the **trace state** at $\mathbf r=0$, where $\tilde\rho=\tfrac12e_0$ and $\omega$ is the normalized algebra trace.
+The state is **pure** on the Bloch sphere $|\mathbf r|=1$, where $\tilde\rho=\tilde\Pi(\hat{\mathbf r})=\tfrac12(e_0+i\hat{\mathbf r})$ is a minimal idempotent and $\tilde\rho^2=\tilde\rho$; it is **faithful** on the open Bloch ball $|\mathbf r|<1$, where both eigenvalues are positive; and it is the **trace state** at $\mathbf r=0$, where $\tilde\rho=\tfrac12e_0$ and $\omega$ is the normalized algebra trace.
 
 The parameter is a genuine superposition coordinate: $\mathbf r$ is the Bloch vector of the state in the basis of the Pauli matrices, and a generic state has all three components nonzero. The computations below are performed on such generic vectors.
 
@@ -146,12 +146,12 @@ S\big(\tfrac12e_0\big\|\tilde\sigma\big)=-\tfrac12\log\big(1-|\mathbf s|^2\big),
 $$
 the relative entropy of the trace state from $\tilde\sigma$, which is finite for every faithful $\tilde\sigma$ and tends to $+\infty$ only as $\tilde\sigma$ itself approaches the pure boundary. If $|\mathbf r|\to1$ with $|\mathbf s|<1$ the expression tends to the finite limit
 $$
-S\big(P_+(\hat{\mathbf r})\big\|\tilde\sigma\big)
+S\big(\tilde\Pi(\hat{\mathbf r})\big\|\tilde\sigma\big)
 =-\tfrac12\log\frac{1-|\mathbf s|^2}{4}
 -\mathrm{artanh}\big(|\mathbf s|\big)\cos\gamma',
 \qquad \cos\gamma'=\hat{\mathbf r}\cdot\hat{\mathbf s},
 $$
-which is the direct computation $-\mathrm{Tr}(P_+(\hat{\mathbf r})\log\tilde\sigma)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
+which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\hat{\mathbf r})\log\tilde\sigma)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
 
 ### Verification on Generic Superpositions
 
@@ -272,7 +272,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $\cos\gamma=\mathbf r\cdot\mathbf s/(|\mathbf r||\mathbf s|)$ | Bloch-vector angle |
 | $\Delta_{\omega,\varphi}$ | Araki relative modular operator |
 | $\log\tilde\rho\in\mathbb{M}_+$ | Biquaternion logarithm of a faithful state |
-| $|0\rangle\langle0|=P_+(e_3)$ | Vacuum idempotent (pure state) |
+| $|0\rangle\langle0|=\tilde\Pi_1$ | Vacuum idempotent (pure state) |
 | $\tfrac12 e_0$ | Trace state (maximally mixed) |
 
 ## Further Reading

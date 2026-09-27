@@ -189,19 +189,19 @@ This is the key structural property of non-pure zero divisors: their square is a
 From the relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$, we divide by $2 Q_0$ (which is nonzero, since $Q_0 \neq 0$) and obtain
 
 $$
-\tilde{P} = \frac{\tilde{Q}}{2 Q_0}, \qquad \tilde{P}^2 = \frac{\tilde{Q}^2}{(2 Q_0)^2} = \frac{2 Q_0 \tilde{Q}}{4 Q_0^2} = \frac{\tilde{Q}}{2 Q_0} = \tilde{P},
+\tilde\Pi = \frac{\tilde{Q}}{2 Q_0}, \qquad \tilde\Pi^2 = \frac{\tilde{Q}^2}{(2 Q_0)^2} = \frac{2 Q_0 \tilde{Q}}{4 Q_0^2} = \frac{\tilde{Q}}{2 Q_0} = \tilde\Pi,
 $$
 
-so $\tilde{P}$ is an **idempotent** and $\tilde{Q}$ is recovered from it by $\tilde{Q} = 2 Q_0 \tilde{P}$: every non-pure zero divisor is a complex multiple of an idempotent. The idempotents themselves — their classification, their bijection with the roots of $-1$, and the dimension of the set they form — are the subject of *Biquaternion Idempotents and Projections*.
+so $\tilde\Pi$ is an **idempotent** and $\tilde{Q}$ is recovered from it by $\tilde{Q} = 2 Q_0 \tilde\Pi$: every non-pure zero divisor is a complex multiple of an idempotent. The idempotents themselves — their classification, their bijection with the roots of $-1$, and the dimension of the set they form — are the subject of *Biquaternion Idempotents and Projections*.
 
 ### Properties
 
 A non-pure zero divisor $\tilde{Q}$ has the following properties.
 
-- **Form.** $\tilde{Q} = 2 Q_0 \tilde{P}$ with $\tilde{P}$ idempotent. So the zero divisor is a complex multiple of an idempotent.
+- **Form.** $\tilde{Q} = 2 Q_0 \tilde\Pi$ with $\tilde\Pi$ idempotent. So the zero divisor is a complex multiple of an idempotent.
 - **Square.** $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$. This is a complex multiple of $\tilde{Q}$ itself, with the multiplier being twice the scalar part.
 - **Non-invertibility.** By the criterion for invertibility, $\tilde{Q}$ has no inverse.
-- **Nontrivial annihilator.** The element $\tilde{Q} - 2 Q_0 e_0 = 2 Q_0 (\tilde{P} - e_0)$ is annihilated by $\tilde{Q}$ on the right and on the left:
+- **Nontrivial annihilator.** The element $\tilde{Q} - 2 Q_0 e_0 = 2 Q_0 (\tilde\Pi - e_0)$ is annihilated by $\tilde{Q}$ on the right and on the left:
 
 $$
 \tilde{Q} \circ (\tilde{Q} - 2 Q_0 e_0) = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0,
@@ -352,7 +352,7 @@ The two cases are distinct in their structure:
 | Square | $\tilde{Q}^2 = 0$ | $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ |
 | Structure | Nilpotent | Complex multiple of an idempotent |
 | Annihilator | Contains $\tilde{Q}$ itself | Contains $\tilde{Q} - 2 Q_0 e_0$ |
-| Idempotent | None | $\tilde{P} = \tilde{Q}/(2 Q_0)$ |
+| Idempotent | None | $\tilde\Pi = \tilde{Q}/(2 Q_0)$ |
 
 ### The Union
 
@@ -386,26 +386,6 @@ $$
 
 The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real $6$-manifold away from the origin. (The two real equations are $N_r = 0$ and $N_i = 0$, with gradients $\nabla N_r$ and $\nabla N_i$ proportional only when $(q_0, q_1, q_2, q_3, q'_0, q'_1, q'_2, q'_3) = (0, \dots, 0)$; since the origin is excluded from $\mathcal{Z}$, the gradients are linearly independent everywhere on $\mathcal{Z}$.)
 
-### The Zero Divisors as the Boundary of the Polar Decomposition
-
-The set $\mathcal{Z}$ is also the boundary at which the polar representation of the companion article stops, and what sits on that boundary is the minimal idempotent of the classification above. So the degenerate elements are not an unrelated pathology of the algebra; they are the limit of the polar family, and the classification describes the face of a domain rather than a separate set of exceptions.
-
-For a zero divisor the four factors of the polar representation do not exist, since the modulus vanishes, $\rho = \sqrt{N(\tilde{Q})} = 0$, while the product of a scale with three unit factors has norm form $\rho^2$. The boundary is nevertheless reached from inside, by the boost family. Take the boost of rapidity $\psi$ about the null direction $-e_3$ together with the real scale that collapses with it:
-
-$$
-e^{-\psi/2}\left(\cosh\tfrac{\psi}{2}\,e_0 - i\sinh\tfrac{\psi}{2}\,e_3\right) \longrightarrow \tfrac12\left(e_0 - ie_3\right), \qquad \psi \to \infty,
-$$
-
-verified at $\psi = 20, 40, 80$, with the difference from the limit exactly $\tfrac12e^{-\psi}$ in each of the two non-zero coefficients. The limit is the minimal idempotent $\tfrac12(e_0 + \xi i)$ with $\xi = -e_3$, Hermitian and of norm form zero: the boost's positive factor collapses, the limit is not a unit, and the unit group is not closed in the algebra.
-
-Sangwine & Hitzer exhibit the same object inside the degenerate word of a zero divisor. For
-
-$$
-p = \tfrac12\left(e_0 + e_1 + ie_2 - ie_3\right) = \sqrt2\cdot\frac{e_0+e_1}{\sqrt2}\cdot\tfrac12\left(e_0 - ie_3\right),
-$$
-
-the element $p$ has vanishing norm form and is idempotent, the last factor is that minimal idempotent, and the numerical factor $\sqrt2$ is the inverse modulus of the real part of $p$ and not of $p$. A zero divisor therefore has no four-factor representation but does have a boundary word — a real scale, a unit complex number and a Hermitian idempotent of norm form zero — and it is produced by normalising the real part of the element rather than the element itself, which is the degenerate case of the corpus algorithm that normalises the Hermitian square root.
-
 ## Summary
 
 The zero divisors of the biquaternion algebra are the nonzero elements on which the norm form vanishes. They split into two families:
@@ -428,7 +408,7 @@ The zero divisor set is a complex cone of complex dimension $3$ (real dimension 
 | $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficient |
 | $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
 | $\mathcal{Z}$ | Zero divisor set |
-| $\tilde{P}^2 = \tilde{P}$ | Idempotent equation |
+| $\tilde\Pi^2 = \tilde\Pi$ | Idempotent equation |
 | $\tilde{Q}^2 = 0$ | Nilpotent equation |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace |
@@ -442,6 +422,4 @@ The zero divisor set is a complex cone of complex dimension $3$ (real dimension 
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the classification of the roots of $-1$.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- *Biquaternion Polar Representation* (`articles_maths/biquaternion-polar-representation.md`), for the four-factor polar decomposition whose boundary the zero divisor set is.
-- S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for the degenerate word of a zero divisor and the minimal idempotent discussed in the section on the boundary.
 

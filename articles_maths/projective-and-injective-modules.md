@@ -219,7 +219,7 @@ $$
 
 **Corollary.** The first syzygy is well defined up to projective direct summands: two projective presentations of $M$ give syzygies whose direct sums with the other presentation's projective term are isomorphic. Consequently $\operatorname{pd}_R M$ is the least $n$ for which the $n$-th syzygy is projective, and this number does not depend on the chosen resolution.
 
-The corollary is the reason projective dimension is computable from any resolution: the ambiguity at each stage is a projective summ, and projective summands do not change the length at which the syzygies become projective.
+The corollary is the reason projective dimension is computable from any resolution: the ambiguity at each stage is a projective summand, and projective summands do not change the length at which the syzygies become projective.
 
 **Example (self-injective rings).** Over a field every module is injective and projective. Over $\mathbb{Z}/4\mathbb{Z}$, which is not a principal ideal domain, the regular module is injective — the ring is self-injective, or quasi-Frobenius — and also projective; but the module $\mathbb{Z}/2\mathbb{Z}$ is neither. It is not injective because Baer's criterion fails on the ideal $(2)=\{0,2\}$: a homomorphism on that ideal sending $2$ to a generator of $\mathbb{Z}/2\mathbb{Z}$ cannot extend to $\mathbb{Z}/4\mathbb{Z}$, since $2g(1)=0$ for every $g$. It is not projective because $\mathbb{Z}/4\mathbb{Z}$ is local, so its finitely generated projective modules are free, and $\mathbb{Z}/2\mathbb{Z}$ is not free. The injective envelope of $\mathbb{Z}/2\mathbb{Z}$ is the whole regular module $\mathbb{Z}/4\mathbb{Z}$, which is the smallest injective containing it.
 

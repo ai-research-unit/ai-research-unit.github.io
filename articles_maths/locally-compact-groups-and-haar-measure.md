@@ -5,9 +5,9 @@
 
 A **locally compact group** is a topological group whose topology is Hausdorff and locally compact: every point has a compact neighbourhood. The class contains the discrete groups, the compact groups, the additive groups $\mathbb{R}^n$, $\mathbb{Q}_p^n$ and $\mathbb{Z}_p^n$, the general linear groups over $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and every Lie group; and it is exactly the class on which invariant integration exists. **Haar's theorem** states that a locally compact group carries a nonzero left-invariant Radon measure, unique up to a positive scalar; the measure is the **Haar measure**. Its failure of right-invariance is measured by a continuous homomorphism $\Delta : G \to \mathbb{R}_{>0}$, the **modular function**, and the groups for which $\Delta \equiv 1$ — the abelian, compact, discrete, nilpotent and semisimple ones — are the **unimodular** groups.
 
-This article constructs the Haar measure and states its invariance and uniqueness, develops the modular function and unimodularity, computes the measure on the standard examples, and treats the quasi-invariant measure of a homogeneous space $G/H$ with the criterion for its invariance. The article is placed in this slot of the category because the measure is an invariant of the topological group, and it is the last of the four structural articles before the representation theory; every other article of this category uses it as an object.
+This article constructs the Haar measure and states its invariance and uniqueness, develops the modular function and unimodularity, computes the measure on the standard examples, and treats the quasi-invariant measure of a homogeneous space $G/H$ with the criterion for its invariance. The article opens the category *Analysis on Groups* because the measure is where the analysis of a group begins: it is the invariant that makes integration on $G$ possible, and every other article of the category — and the representation theory of *Topology on Groups* in Part II — uses it as an object.
 
-Two boundaries are held exactly. The **construction** of the measure and the statement of its invariance are given here, as is the identification of the standard examples; but the **integration theory** — the $\sigma$-algebra, measurability, the convergence theorems, the $L^p$ spaces, the convolution algebra $L^1(G)$ and the Plancherel theorem — is *Analysis on Groups* in Part III, where the measure and the limit are available, and it is not taken here. Where an integral is written below it is the invariant functional of the Haar integral on continuous functions of compact support, and its measure-theoretic reading is the Riesz representation theorem. The topological frame is *Topological Groups*, *Metric, Uniform and Complete Spaces* and *Topological Spaces*; the Lie-theoretic examples are ; the p-adic examples are, with their integration a Part III subject. No physics is invoked.
+Two boundaries are held exactly. The **construction** of the measure and the statement of its invariance are given here, as is the identification of the standard examples; but the **integration theory** — the $\sigma$-algebra, measurability, the convergence theorems, the $L^p$ spaces, the convolution algebra $L^1(G)$ and the Plancherel theorem — is the following articles of this Part, where the general measure and the limit are available, and it is not taken here. Where an integral is written below it is the invariant functional of the Haar integral on continuous functions of compact support, and its measure-theoretic reading is the Riesz representation theorem. The topological frame is *Topological Groups*, *Metric, Uniform and Complete Spaces* and *Topological Spaces*; the Lie-theoretic examples are ; the p-adic examples are, with their integration treated in this Part. No physics is invoked.
 
 ## Locally Compact Groups
 
@@ -185,13 +185,13 @@ where the cocycle reduces to a constant when the invariance criterion holds. In 
 
 **Example (the modular function of a quotient group).** If $N \trianglelefteq G$ is a closed normal subgroup then $G/N$ is locally compact, but $\Delta_{G/N}$ is **not** in general the composite of $\Delta_G$ with the quotient map: for the affine group $G$ above and its normal subgroup $N = \{(1,b)\}$ of translations, the quotient $G/N \cong \mathbb{R}_{>0}$ is abelian, hence unimodular, while $\Delta_G(a,b) = a^{-1}$ is nontrivial on the elements projecting to an $a \neq 1$. The relation $\Delta_{G/N} = \Delta_G \circ \pi$ does hold for a direct product of unimodular factors, $\Delta_{N \times H} = \Delta_N \cdot \Delta_H$. In general the kernel of $\Delta_G$ is a closed normal unimodular subgroup of $G$ with abelian quotient embedded in $\mathbb{R}_{>0}$, and $G$ is unimodular exactly when that kernel is all of $G$.
 
-## The Boundary with Analysis
+## What Is Deferred to the Later Articles
 
-The Haar measure is an object of the topological theory; the analysis built on it is not.
+The Haar measure is constructed from the topological group; the analysis built on it is the rest of this Part.
 
-- The **spaces $L^p(G)$** ($1 \leq p \leq \infty$), the completeness and duality of $L^2(G)$, and the **convolution algebra** $L^1(G)$ with the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ are *Analysis on Groups* in Part III, beginning and continuing.
-- The **regular representation** of $G$ on $L^2(G)$, the **Peter–Weyl theorem** for a compact group and the **Plancherel theorem** for a unimodular group are likewise Part III; the algebraic skeleton — unitary representations, irreducibility and intertwiners — is the subject, which uses the Haar measure only through the invariance defining integration over $G$.
-- The **modular function** appears in the analysis in the formula for the adjoint of a convolution and in the definition of the group von Neumann algebra; both are Part III or the operator-algebra articles of *Topology on Linear Algebras*.
+- The **spaces $L^p(G)$** ($1 \leq p \leq \infty$), the completeness and duality of $L^2(G)$, and the **convolution algebra** $L^1(G)$ with the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ are the following articles of this Part.
+- The **regular representation** of $G$ on $L^2(G)$, the **Peter–Weyl theorem** for a compact group and the **Plancherel theorem** for a unimodular group are likewise later in this Part; the algebraic skeleton — unitary representations, irreducibility and intertwiners — is the subject, which uses the Haar measure only through the invariance defining integration over $G$.
+- The **modular function** appears in the analysis in the formula for the adjoint of a convolution and in the definition of the group von Neumann algebra; both are later in this Part or the operator-algebra articles of Part II.
 
 ## Summary
 
@@ -199,7 +199,7 @@ A locally compact group is a Hausdorff topological group in which every point ha
 
 The failure of right-invariance is measured by the modular function $\Delta : G \to \mathbb{R}_{>0}$, a continuous homomorphism with $\mu(Ag) = \Delta(g)\mu(A)$ and $d\mu_R = \Delta^{-1}d\mu_L$. The group is unimodular exactly when $\Delta \equiv 1$, which holds for abelian, compact, discrete, nilpotent, perfect and semisimple groups; the affine group of the line is the standard non-unimodular example, with $\mu_L = a^{-2}da\,db$, $\mu_R = a^{-1}da\,db$ and $\Delta(a,b) = a^{-1}$. Haar measure is computed explicitly on $\mathbb{R}^n$, $S^1$, $T^n$, $\mathbb{Z}$, $\mathbb{Z}_p$, $\mathbb{Q}_p$, $GL_n(\mathbb{R})$, $GL_n(\mathbb{C})$ and the compact Lie groups.
 
-For a closed subgroup $H$ the homogeneous space $G/H$ carries a quasi-invariant Radon measure, and an invariant one exactly when $\Delta_G|_H = \Delta_H$; Weil's formula expresses integration over $G$ as an iterated integral over $H$ and $G/H$. All of the integration theory — the $L^p$ spaces, the convolution algebra $L^1(G)$, the regular representation, the Peter–Weyl and Plancherel theorems — belongs to *Analysis on Groups* in Part III.
+For a closed subgroup $H$ the homogeneous space $G/H$ carries a quasi-invariant Radon measure, and an invariant one exactly when $\Delta_G|_H = \Delta_H$; Weil's formula expresses integration over $G$ as an iterated integral over $H$ and $G/H$. All of the integration theory — the $L^p$ spaces, the convolution algebra $L^1(G)$, the regular representation, the Peter–Weyl and Plancherel theorems — belongs to the following articles of this Part.
 
 ## Summary of Notation
 
@@ -221,7 +221,7 @@ For a closed subgroup $H$ the homogeneous space $G/H$ carries a quasi-invariant 
 | $\mu(\mathbb{Z}_p) = 1$ | Normalisation of the Haar measure on $\mathbb{Q}_p$ |
 | $\nu$, cocycle $\rho$ | Quasi-invariant measure on $G/H$ and its Radon–Nikodym cocycle |
 | lattice, covolume | Discrete $\Gamma$ with $G/\Gamma$ of finite invariant volume, and that volume |
-| $L^p(G)$, $L^1(G)$ | Part III objects: the $L^p$ spaces and the convolution algebra |
+| $L^p(G)$, $L^1(G)$ | Later in this Part: the $L^p$ spaces and the convolution algebra |
 | $\Delta_G|_H = \Delta_H$ | Criterion for an invariant measure on $G/H$ |
 
 

@@ -150,17 +150,17 @@ the scalar imaginary being central, so that left and right multiplication agree.
 Since $\star^2 = -1$ on the complexified vector part, the operator $\star$ has eigenvalues $\pm i$, and the projectors onto its eigenspaces are
 
 $$
-P_{\pm} = \tfrac12\left(1 \pm i\,\star\right), \qquad
-\star P_{\pm} = \mp i\,P_{\pm}.
+\tilde\Pi_{sd,asd} = \tfrac12\left(1 \pm i\,\star\right), \qquad
+\star \tilde\Pi_{sd,asd} = \mp i\,\tilde\Pi_{sd,asd}.
 $$
 
 They are idempotent and orthogonal,
 
 $$
-P_+^2 = P_+, \qquad P_-^2 = P_-, \qquad P_+P_- = P_-P_+ = 0, \qquad P_+ + P_- = 1,
+\tilde\Pi_{sd}^2 = \tilde\Pi_{sd}, \qquad \tilde\Pi_{asd}^2 = \tilde\Pi_{asd}, \qquad \tilde\Pi_{sd}\tilde\Pi_{asd} = \tilde\Pi_{asd}\tilde\Pi_{sd} = 0, \qquad \tilde\Pi_{sd} + \tilde\Pi_{asd} = 1,
 $$
 
-and they decompose the complexified vector part into two three-dimensional complex spaces. Following the companion article's convention, the $P_+$ space, on which $\star = -i$, is the **self-dual** half, and the $P_-$ space, on which $\star = +i$, is the **anti-self-dual** half. Each is a copy of the representation $(1,0)$, respectively $(0,1)$, of the Lorentz group.
+and they decompose the complexified vector part into two three-dimensional complex spaces. Following the companion article's convention, the $\tilde\Pi_{sd}$ space, on which $\star = -i$, is the **self-dual** half, and the $\tilde\Pi_{asd}$ space, on which $\star = +i$, is the **anti-self-dual** half. Each is a copy of the representation $(1,0)$, respectively $(0,1)$, of the Lorentz group.
 
 The subtlety is that the real vector part is already complex, with the scalar imaginary supplying its complex structure. The complexification that the projectors require is a second, external complexification: one allows coefficients in a new unit, so that the complexified vector part is $\mathbb{C}\otimes_\mathbb{R}\mathrm{Vect}(\mathbb{B})$, of complex dimension six. On it, $\star$ has the two three-dimensional eigenspaces above. The real field strength is a real form of this six-dimensional space: it is an element of the vector part, and the biquaternion that the framework assigns to it carries the self-dual coordinate. Concretely, with the two combinations
 
@@ -190,7 +190,7 @@ For a general complexified two-form, written as the sum of a self-dual and an an
 
 $$
 \tilde{F}_{\mathbb{C}} = \tilde{F}_{+} + \tilde{F}_{-}, \qquad
-\tilde{F}_{+} = P_+\tilde{F}_{\mathbb{C}} = \tfrac12\left(\tilde{F}_{\mathbb{C}} + i\,\star\tilde{F}_{\mathbb{C}}\right), \qquad
+\tilde{F}_{+} = \tilde\Pi_{sd}\tilde{F}_{\mathbb{C}} = \tfrac12\left(\tilde{F}_{\mathbb{C}} + i\,\star\tilde{F}_{\mathbb{C}}\right), \qquad
 \tilde{F}_{-} = \tfrac12\left(\tilde{F}_{\mathbb{C}} - i\,\star\tilde{F}_{\mathbb{C}}\right),
 $$
 
@@ -198,7 +198,7 @@ the two pieces are independent and transform separately under the Lorentz group,
 
 The split is Lorentz covariant, and the reason is short. The Lorentz action on the field strength is complex-linear on the Riemann–Silberstein vector: writing a boost as a complex $3\times3$ matrix $M$ acting on $\mathbf{V}$, the same boost acts on $i\mathbf{V}$ as $iM$, so the action commutes with multiplication by $i$ and consequently $\star$ commutes with the boost and maps each half to itself. The two halves are therefore invariant subspaces of the Lorentz action, which is what it means for them to be the two three-dimensional complex representations.
 
-<!-- CONVENTION — self-dual half and the algebra's complex structure: the projectors $P_\pm=\tfrac12(1\pm i\star)$ require an external complexification of the real vector part, because the vector part is already complex with the algebra's $i$. On a real field the self-dual coordinate is the field-strength biquaternion and the anti-self-dual coordinate is the combination $\mathbf{V}^*$ carried by its coefficient conjugate. Do not identify the external complexification with the algebra's scalar imaginary: they are distinct structures, and conflating them makes the real form of the six-dimensional complex space disappear. In particular do not write $\star\tilde{F}^*=+i\tilde{F}^*$: the dual anticommutes with coefficient conjugation, $\star(\tilde{F}^*)=-(\star\tilde{F})^*$, so $\tilde{F}^*$ has the same dual eigenvalue $-i$ as $\tilde{F}$, and the $+i$ belongs to the coordinate $\mathbf{V}^*$. -->
+<!-- CONVENTION — self-dual half and the algebra's complex structure: the projectors $\tilde\Pi_{sd,asd}=\tfrac12(1\pm i\star)$ require an external complexification of the real vector part, because the vector part is already complex with the algebra's $i$. On a real field the self-dual coordinate is the field-strength biquaternion and the anti-self-dual coordinate is the combination $\mathbf{V}^*$ carried by its coefficient conjugate. Do not identify the external complexification with the algebra's scalar imaginary: they are distinct structures, and conflating them makes the real form of the six-dimensional complex space disappear. In particular do not write $\star\tilde{F}^*=+i\tilde{F}^*$: the dual anticommutes with coefficient conjugation, $\star(\tilde{F}^*)=-(\star\tilde{F})^*$, so $\tilde{F}^*$ has the same dual eigenvalue $-i$ as $\tilde{F}$, and the $+i$ belongs to the coordinate $\mathbf{V}^*$. -->
 
 ## The Spin Content of the Two Halves
 
@@ -289,7 +289,7 @@ $$
 \star\tilde{F} = -i\,\tilde{F},
 $$
 
-that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$. Since $\star^2 = -1$, its projectors $P_\pm = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\mathbf{V}$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\mathbf{V}$ carries the self-dual coordinate $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\mathbf{V}^* = \mathbf{E}-ic\mathbf{B}$ carried by $\tilde{F}^*$, on which $\star = +i$.
+that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\mathbf{V}$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\mathbf{V}$ carries the self-dual coordinate $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\mathbf{V}^* = \mathbf{E}-ic\mathbf{B}$ carried by $\tilde{F}^*$, on which $\star = +i$.
 
 The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{Sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{Sym}^2(\bar{S})\cong(0,1)$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\mathbf{E}+ic\mathbf{B}$ carries helicity $+1$ and $\mathbf{E}-ic\mathbf{B}$ helicity $-1$. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
 
@@ -310,7 +310,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$ | Riemann–Silberstein vector, $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{V}$ |
 | $I_1 = \mathbf{E}^2-c^2\mathbf{B}^2$, $I_2 = \mathbf{E}\cdot\mathbf{B}$ | The two field invariants, real and imaginary parts of $\mathbf{V}\cdot\mathbf{V} = I_1+2icI_2$ |
 | $\star$ | Hodge dual, $\star(\mathbf{E},\mathbf{B})=(c\mathbf{B},-\mathbf{E}/c)$, $\star^2=-1$, $\star\tilde{F}=-i\tilde{F}$ |
-| $P_\pm = \tfrac12(1\pm i\star)$ | Projectors onto the self-dual ($\star=-i$) and anti-self-dual ($\star=+i$) halves |
+| $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ | Projectors onto the self-dual ($\star=-i$) and anti-self-dual ($\star=+i$) halves |
 | $(1,0)$, $(0,1)$ | The two three-dimensional complex Lorentz representations |
 | $S$ | Defining (spinor) module, $\mathrm{Sym}^2(S)\cong(1,0)$ |
 | $\tilde{\Lambda}\in SL(2,\mathbb{C})$ | Lorentz rotor, $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ |

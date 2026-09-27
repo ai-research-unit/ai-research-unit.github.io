@@ -22,7 +22,7 @@ $$
 \tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
 $$
 
-The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$, with $e_\pm = \tfrac{1}{2}(1 \pm j)$.
+The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$, with $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$.
 
 **Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.
 
@@ -166,16 +166,16 @@ $$
 
 ### The Idempotent Decomposition of the Transform
 
-The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) e_+ + f_-(t) e_-$ and using the fact that the kernel is the same in both components,
+The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) \tilde\Pi_+ + f_-(t) \tilde\Pi_-$ and using the fact that the kernel is the same in both components,
 
 $$
-F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) e_+ + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) e_-.
+F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) \tilde\Pi_+ + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) \tilde\Pi_-.
 $$
 
 So the transform is the pair of the **quaternion Fourier transforms** of the two idempotent components:
 
 $$
-F(\omega) = F_+(\omega) e_+ + F_-(\omega) e_-,
+F(\omega) = F_+(\omega) \tilde\Pi_+ + F_-(\omega) \tilde\Pi_-,
 $$
 
 where $F_\pm(\omega) = \int_{-\infty}^{\infty} W(t, \omega) f_\pm(t) \, dt$ is the quaternion Fourier transform of the component $f_\pm$.
@@ -350,10 +350,10 @@ The general principle is that the continuous Fourier transform **diagonalizes th
 
 ### The Operators in the Idempotent Basis
 
-In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as
+In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as
 
 $$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) e_+ + (\tilde{\nabla} \tilde{F}_-) e_-,
+\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_+ + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_-,
 $$
 
 where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.
@@ -433,6 +433,23 @@ The vanishing-norm issue is a genuinely split biquaternion feature: functions th
 The continuous transform is the limit of the discrete transform as the sampling interval tends to zero, and it is related to the discrete transform by the Poisson summation formula and the sampling theorem.
 
 The key simplification relative to the biquaternion case is the **idempotent decomposition**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, so the split biquaternion Fourier transform reduces to two quaternion Fourier transforms. The split complex unit $j$ does not appear in the kernel; it only appears in the idempotent decomposition that separates the two components.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $j$ | Split complex unit, central, $j^2 = +1$ |
+| $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
+| $K_\rho(\mathbf{x})$ | Split biquaternion Fourier kernel |
+| $\hat{f}(\xi)$ | Continuous split-biquaternion Fourier transform |
+| $f * g$ | Convolution |
+| $\tilde{\nabla}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, d'Alembertian, gradient square, convective derivative |
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 This article treats the split-quaternion algebra as a matrix algebra. It exhibits the faithful representation by $2 \times 2$ real matrices, proves that it exists and is unique up to conjugacy, identifies the determinant with the norm form and the trace with twice the scalar part, describes the image as a linear subspace of $M_2(\mathbb{R})$, and compares the situation with the quaternion algebra and with the eight-dimensional algebra, which admits no representation of this size.
 
-The split-quaternion algebra, its matrix model $\Phi$ and the proof that $\Phi$ is an algebra isomorphism are assumed from *Split-Quaternion Algebra*, §*The Matrix Model*; the explicit map and its multiplicativity are not reproved here. The matrix algebra $M_n(\mathbb{R})$, its matrix units, its centre and the Skolem–Noether theorem that every automorphism of $M_n(k)$ over a field is inner are assumed from *Matrix Algebras*. The norm form and its invertibility theory are assumed from *Split-Quaternion Norm and Invertibility*; the classification of the modules of the algebra belongs to *Split-Quaternion Representations*, which cites this article for the module of the model. Nothing physical is invoked.
+The split-quaternion algebra and its multiplication table are assumed from *Split-Quaternion Algebra*; the matrix model $\Phi$ is defined here and its multiplicativity is verified here. The matrix algebra $M_n(\mathbb{R})$, its matrix units, its centre and the Skolem–Noether theorem that every automorphism of $M_n(k)$ over a field is inner are assumed from *Matrix Algebras*. The norm form and its invertibility theory are assumed from *Split-Quaternion Norm and Invertibility*; the classification of the modules of the algebra belongs to *Split-Quaternion Representations*, which cites this article for the module of the model. Nothing physical is invoked.
 
 ## The Representation
 
@@ -20,10 +20,10 @@ The representation is **faithful** by definition, since injectivity is required;
 **Definition.** The **defining representation** of $\mathbb{H}_{\mathrm{s}}$ is the isomorphism
 
 $$
-\Phi(a + b e_1 + c e_2 + d e_3) = \begin{pmatrix} a - d & c - b \\ b + c & a + d \end{pmatrix}
+\Phi(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0 - q_3 & q_2 - q_1 \\ q_1 + q_2 & q_0 + q_3 \end{pmatrix}
 $$
 
-of (*Split-Quaternion Algebra*, §*The Matrix Model*), whose values on the generators are
+of the model, whose values on the generators are
 
 $$
 \Phi(1) = I, \quad \Phi(e_1) = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
@@ -43,7 +43,7 @@ $$
 
 as real algebras.
 
-**Proof.** By (*Split-Quaternion Algebra*, §*The Matrix Model*), the linear map $\Phi$ is an algebra homomorphism, it is injective because the four generators have linearly independent images, and it is surjective because the domain and the target both have real dimension $4$. An isomorphism is in particular an injective unital homomorphism of degree $2$. $\square$
+**Proof.** By the multiplication table of *Split-Quaternion Algebra*, the linear map $\Phi$ is an algebra homomorphism, it is injective because the four generators have linearly independent images, and it is surjective because the domain and the target both have real dimension $4$. An isomorphism is in particular an injective unital homomorphism of degree $2$. $\square$
 
 **Corollary (Dimension).** The least degree of a faithful real matrix representation of $\mathbb{H}_{\mathrm{s}}$ is $2$. Indeed a faithful representation of degree $n$ embeds a four-dimensional algebra into $M_n(\mathbb{R})$, whose dimension is $n^2$, so $n^2 \geq 4$, and $n = 1$ is impossible because $M_1(\mathbb{R})$ is commutative while $\mathbb{H}_{\mathrm{s}}$ is not; degree $2$ is attained.
 
@@ -56,7 +56,7 @@ The existence theorem is the Clifford identification of the anchor article read 
 **Theorem (Uniqueness).** Let $\Psi : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ be a unital algebra homomorphism. Then $\Psi$ is an isomorphism, and there is an invertible matrix $P$ with
 
 $$
-\Psi(x) = P \, \Phi(x) \, P^{-1} \qquad (x \in \mathbb{H}_{\mathrm{s}}).
+\Psi(\tilde q) = P \, \Phi(\tilde q) \, P^{-1} \qquad (\tilde q \in \mathbb{H}_{\mathrm{s}}).
 $$
 
 Thus the faithful representation of degree $2$ is unique up to conjugacy: any two such representations are equivalent.
@@ -66,38 +66,38 @@ Thus the faithful representation of degree $2$ is unique up to conjugacy: any tw
 **Corollary (The Automorphisms of the Algebra).** Every automorphism of $\mathbb{H}_{\mathrm{s}}$ is obtained by conjugating by an invertible element:
 
 $$
-\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R}), \qquad \alpha(x) = g x g^{-1} \quad (g \in \mathbb{H}_{\mathrm{s}}^{\times}).
+\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R}), \qquad \alpha(\tilde q) = g \tilde q g^{-1} \quad (g \in \mathbb{H}_{\mathrm{s}}^{\times}).
 $$
 
 **Proof.** An automorphism $\alpha$ of $\mathbb{H}_{\mathrm{s}}$ corresponds to the inner automorphism $\Phi\alpha\Phi^{-1}$ of $M_2(\mathbb{R})$, which is inner by Skolem–Noether; transport back. Conversely every inner automorphism of the algebra is an automorphism, and two units $g, g'$ give the same automorphism exactly when $g' g^{-1}$ is central, which by (*Split-Quaternion Algebra*, §*The Centre and Simplicity*) means $g' = \lambda g$ with $\lambda \in \mathbb{R}^{\times}$. $\square$
 
 ## The Determinant and the Trace
 
-**Theorem (Determinant and Trace).** For every split-quaternion $x$,
+**Theorem (Determinant and Trace).** For every split-quaternion $\tilde q$,
 
 $$
-\det \Phi(x) = N(x), \qquad \operatorname{tr} \Phi(x) = 2 \operatorname{Sc}(x).
+\det \Phi(\tilde q) = N(\tilde q), \qquad \operatorname{tr} \Phi(\tilde q) = 2 \operatorname{Sc}(\tilde q).
 $$
 
 The determinant of the matrix model is the norm form, a quadratic form of signature $(2,2)$, and the trace is twice the scalar part; the restriction of the trace to the vector subspace vanishes, so $\Phi(V)$ is the space of traceless matrices.
 
-**Proof.** The determinant computation is (*Split-Quaternion Algebra*, §*The Matrix Model*) and (*Split-Quaternion Norm and Invertibility*, §*The Norm Form and the Determinant Form*). For the trace,
+**Proof.** The determinant computation is (*Split-Quaternion Algebra*, §*The Norm Form*) together with (*Split-Quaternion Norm and Invertibility*, §*The Norm Form*). For the trace,
 
 $$
-\operatorname{tr}\Phi(a + be_1 + ce_2 + de_3) = (a - d) + (a + d) = 2a = 2\operatorname{Sc}(x).
+\operatorname{tr}\Phi(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = (q_0 - q_3) + (q_0 + q_3) = 2q_0 = 2\operatorname{Sc}(\tilde q).
 $$
 
-The vanishing of the trace on $V$ is the case $a = 0$. $\square$
+The vanishing of the trace on $V$ is the case $q_0 = 0$. $\square$
 
-**Corollary (Formulas in the Model).** For every $x$,
+**Corollary (Formulas in the Model).** For every $\tilde q$,
 
 $$
-\det \Phi(\bar{x}) = \det \Phi(x), \qquad \Phi(\bar{x}) = \operatorname{adj}\Phi(x),
+\det \Phi(\bar{\tilde q}) = \det \Phi(\tilde q), \qquad \Phi(\bar{\tilde q}) = \operatorname{adj}\Phi(\tilde q),
 $$
 
-and $x$ is a unit if and only if $\Phi(x)$ is invertible, in which case $\Phi(x^{-1}) = \Phi(x)^{-1} = \operatorname{adj}\Phi(x)/\det\Phi(x)$.
+and $\tilde q$ is a unit if and only if $\Phi(\tilde q)$ is invertible, in which case $\Phi(\tilde q^{-1}) = \Phi(\tilde q)^{-1} = \operatorname{adj}\Phi(\tilde q)/\det\Phi(\tilde q)$.
 
-**Proof.** The conjugation is an involution of the algebra, so it preserves the norm: $N(\bar{x}) = \bar{x}x = N(x)$, and the first identity follows from $\det = N$. The second is the adjugate identity of (*Split-Quaternion Algebra*, §*The Conjugation*). The invertibility statement is the equality $\det\Phi = N$ together with *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. $\square$
+**Proof.** The conjugation is an involution of the algebra, so it preserves the norm: $N(\bar{\tilde q}) = \bar{\tilde q}\tilde q = N(\tilde q)$, and the first identity follows from $\det = N$. The second is the adjugate identity of (*Split-Quaternion Algebra*, §*The Conjugation*). The invertibility statement is the equality $\det\Phi = N$ together with *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. $\square$
 
 ## The Image as a Linear Subspace
 
@@ -119,19 +119,19 @@ The distinguished subspaces of the algebra correspond to the following subspaces
 | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $\mathfrak{sl}_2(\mathbb{R})$ | the traceless matrices |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | $\left\{\begin{pmatrix}p & q \\ q & p\end{pmatrix}\right\}$ | the symmetric matrices with equal diagonal |
 | $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | $\left\{\begin{pmatrix}p & 0 \\ 0 & q\end{pmatrix}\right\}$ | the diagonal matrices |
-| $\mathbb{H}_{\mathrm{s}} u_+$, $u_+ \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_w}$, $R_{\ell_v}$ | maximal isotropic subspaces |
-| $\mathbb{H}_{\mathrm{s}} u_-$, $u_- \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_v}$, $R_{\ell_w}$ | maximal isotropic subspaces |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$, $\tilde\pi_+ \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_w}$, $R_{\ell_v}$ | maximal isotropic subspaces |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$, $\tilde\pi_- \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_v}$, $R_{\ell_w}$ | maximal isotropic subspaces |
 
-The last row is the dictionary of (*Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra*), where $\ell_v$ and $\ell_w$ are the lines spanned by $(1,1)$ and $(1,-1)$ and the subspaces $R_\ell$, $K_\ell$ are the two families of maximal isotropic subspaces. The table shows that the algebra and the matrix algebra carry the same structure: the scalar part is the trace part, the vector part is the traceless part, the split-complex subalgebra $\mathbb{D}_3$ is the diagonal subalgebra, and the minimal ideals are the isotropic subspaces.
+The last row is the dictionary of (*Split-Quaternion Zero Divisors*, §*The Two Families*), where $\ell_v$ and $\ell_w$ are the lines spanned by $(1,1)$ and $(1,-1)$ and the subspaces $R_\ell$, $K_\ell$ are the two families of maximal isotropic subspaces. The table shows that the algebra and the matrix algebra carry the same structure: the scalar part is the trace part, the vector part is the traceless part, the split-complex subalgebra $\mathbb{D}_3$ is the diagonal subalgebra, and the minimal ideals are the isotropic subspaces.
 
 **Corollary (The Idempotents in the Model).** The idempotents of the algebra correspond to the idempotent matrices of rank one together with $0$ and $I$. In particular
 
 $$
-\Phi(u_+) = \tfrac12 \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \qquad
-\Phi(u_-) = \tfrac12 \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix},
+\Phi(\tilde\pi_+) = \tfrac12 \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \qquad
+\Phi(\tilde\pi_-) = \tfrac12 \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix},
 $$
 
-two rank-one projections, and $\Phi(u_+) + \Phi(u_-) = I$ with $\Phi(u_+) \Phi(u_-) = 0$.
+two rank-one projections, and $\Phi(\tilde\pi_+) + \Phi(\tilde\pi_-) = I$ with $\Phi(\tilde\pi_+) \Phi(\tilde\pi_-) = 0$.
 
 **Proof.** The images are computed from the formula for $\Phi$, and the identities are the images of the identities of (*Split-Quaternion Algebra*, §*The Idempotents*). The classification of idempotents is that of *Split-Quaternion Roots of Minus One*, §*The Relation to the Idempotents and to the Zero Divisors*. $\square$
 
@@ -142,7 +142,7 @@ The matrix algebra $M_2(\mathbb{R})$ acts on the column space $\mathbb{R}^2$, an
 **Definition.** The **defining module** of $\mathbb{H}_{\mathrm{s}}$ is the real vector space $\mathbb{R}^2$ with the action
 
 $$
-x \cdot v = \Phi(x) v, \qquad x \in \mathbb{H}_{\mathrm{s}}, \quad v \in \mathbb{R}^2 .
+\tilde q \cdot v = \Phi(\tilde q) v, \qquad \tilde q \in \mathbb{H}_{\mathrm{s}}, \quad v \in \mathbb{R}^2 .
 $$
 
 **Theorem (Irreducibility).** The defining module is simple: it has no nonzero proper submodule. Consequently the defining representation is irreducible, and it is the unique irreducible representation of the algebra up to equivalence.
@@ -179,7 +179,7 @@ The algebra is treated later in Part V, under Split-Biquaternions; nothing of it
 
 ## Summary
 
-The split-quaternion algebra has a faithful real matrix representation of degree $2$, the defining representation $\Phi(a + be_1 + ce_2 + de_3) = \begin{pmatrix} a-d & c-b \\ b+c & a+d\end{pmatrix}$, and no faithful representation of lower degree. The representation is unique up to conjugacy: every unital algebra homomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ is an isomorphism, and any two differ by conjugation by an invertible matrix. The automorphism group of the algebra is $\mathrm{PGL}_2(\mathbb{R})$, acting by inner automorphisms.
+The split-quaternion algebra has a faithful real matrix representation of degree $2$, the defining representation $\Phi(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$, and no faithful representation of lower degree. The representation is unique up to conjugacy: every unital algebra homomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ is an isomorphism, and any two differ by conjugation by an invertible matrix. The automorphism group of the algebra is $\mathrm{PGL}_2(\mathbb{R})$, acting by inner automorphisms.
 
 The determinant of the model is the norm form $N$, of signature $(2,2)$, and the trace is twice the scalar part; the vector subspace is the traceless part, and conjugation is the adjugate. The image of the algebra is the whole of $M_2(\mathbb{R})$, and the distinguished subspaces of the algebra correspond to the scalar matrices, the traceless matrices, the diagonal subalgebra, the symmetric subalgebra, the minimal ideals and the two families of maximal isotropic subspaces. The defining module $\mathbb{R}^2$ is simple, and it is the unique irreducible module of the algebra.
 
@@ -190,13 +190,13 @@ The quaternion algebra has no faithful real degree-two representation, because a
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\Psi$ | a matrix representation of $\mathbb{H}_{\mathrm{s}}$ | this article |
-| $\Phi$ | the defining representation, $x \mapsto \begin{pmatrix} a-d & c-b \\ b+c & a+d\end{pmatrix}$ | *Split-Quaternion Algebra* |
+| $\Phi$ | the defining representation, $\tilde q \mapsto \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$ | *Split-Quaternion Algebra* |
 | $I, J, K, D$ | the images of $1, e_1, e_2, e_3$ | this article |
 | $\operatorname{Int}_P$ | conjugation by $P$, $M \mapsto PMP^{-1}$ | this article |
 | $\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$ | the automorphism group | this article |
-| $\det\Phi(x) = N(x)$ | the determinant as norm form | this article |
-| $\operatorname{tr}\Phi(x) = 2\operatorname{Sc}(x)$ | the trace as twice the scalar part | this article |
-| $\Phi(\bar{x}) = \operatorname{adj}\Phi(x)$ | conjugation as the adjugate | this article |
+| $\det\Phi(\tilde q) = N(\tilde q)$ | the determinant as norm form | this article |
+| $\operatorname{tr}\Phi(\tilde q) = 2\operatorname{Sc}(\tilde q)$ | the trace as twice the scalar part | this article |
+| $\Phi(\bar{\tilde q}) = \operatorname{adj}\Phi(\tilde q)$ | conjugation as the adjugate | this article |
 | $\mathfrak{sl}_2(\mathbb{R})$ | the traceless matrices, the image of $V$ | this article |
 | defining module, $\mathbb{R}^2$ | the simple module of the algebra | this article |
 | $R_\ell, K_\ell$ | the two families of maximal isotropic subspaces | *Split-Quaternion Zero Divisors* |

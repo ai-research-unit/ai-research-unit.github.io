@@ -4,11 +4,9 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ was defined in the basic algebra article, with its conjugations, its norm form and its group of units. This article treats its **representation theory** in the technical sense: a representation of an algebra $A$ over a field $k$ is a $k$-vector space $V$ with a unital algebra homomorphism $A \to \operatorname{End}_k(V)$, and a representation of a group $G$ is a vector space with a homomorphism $G \to GL(V)$. The chapter also uses the word in a non-technical sense, for a *concrete realization* of the algebra: the companion articles on biquaternion algebraic representations and on biquaternion polar representations, together with the three articles on the four-vector, matrix and regular realizations of the algebra, written in parallel, use it so. Only the matrix and the regular realizations are representations in the technical sense as well, since only they carry an action; the four-vector realization is the coefficient space alone. The two senses meet at the simple module, which every realization carries, and the theory below is stated for the module, so that it holds independently of the realization chosen.
 
-Every claim below states its ground field ($\mathbb{R}$ or $\mathbb{C}$) and its side (algebra or group). Part I treats the algebra: over $\mathbb{C}$, $\mathbb{B}$ is four-dimensional and isomorphic to $M_2(\mathbb{C})$, hence semisimple and central simple, with a unique simple module of complex dimension $2$; over $\mathbb{R}$ it is eight-dimensional, simple with centre $\mathbb{C}$, again with a unique simple module of complex dimension $2$. Part II treats the group of units $\mathbb{B}^{\times} \cong GL(2,\mathbb{C})$ and its unit-norm subgroup $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group: its finite-dimensional polynomial representations, the defining representation and the Weyl spinors, the Clebsch–Gordan rule and tensor powers, and the unitary representations, including the principal series.
+Every claim below states its ground field ($\mathbb{R}$ or $\mathbb{C}$) and its side (algebra or group). The first group of sections treats the algebra: over $\mathbb{C}$, $\mathbb{B}$ is four-dimensional and isomorphic to $M_2(\mathbb{C})$, hence semisimple and central simple, with a unique simple module of complex dimension $2$; over $\mathbb{R}$ it is eight-dimensional, simple with centre $\mathbb{C}$, again with a unique simple module of complex dimension $2$. The later sections treat the group of units $\mathbb{B}^{\times} \cong GL(2,\mathbb{C})$ and its unit-norm subgroup $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group: its finite-dimensional polynomial representations, the defining representation and the Weyl spinors, the Clebsch–Gordan rule and tensor powers, and the unitary representations, including the principal series.
 
-# Part I: The Algebra
-
-## 1. The Algebra and Its Two Ground Fields
+## The Algebra and Its Two Ground Fields
 
 As a $\mathbb{C}$-algebra, $\mathbb{B}$ has $\mathbb{C}$-basis $\{e_0,e_1,e_2,e_3\}$ and is four-dimensional; as an $\mathbb{R}$-algebra it has $\mathbb{R}$-basis $\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\}$ and is eight-dimensional. The central fact is the isomorphism of $\mathbb{C}$-algebras
 
@@ -18,7 +16,7 @@ $$
 
 which is the structure theorem of a central simple algebra of degree $2$ over its centre: the theorem writes such an algebra as $M_2(D)$ for a division algebra $D$ over the centre, and over the algebraically closed field $\mathbb{C}$ the only such $D$ is $\mathbb{C}$ itself, so the algebra is $M_2(\mathbb{C})$. The isomorphism is not unique, two choices differing by conjugation by an invertible matrix, and nothing below depends on the choice; it is therefore stated here as an isomorphism and not as a matrix. Each concrete realization of the algebra is one way of writing it down, and each has its own companion article: the complex four-vector realization, the $2 \times 2$ matrix realization and the $4 \times 4$ regular realization, all three written in parallel. In the four-vector realization the norm form is read directly from the coefficients; in the other two it is recovered from the operator instead, whose determinant is $N(\tilde{Q})$ on the simple module and $N(\tilde{Q})^2$ on the regular one, and whose trace is the scalar part $Q_0$ multiplied by the dimension of the space it acts on, that is, $2$ on the simple module and $4$ on the regular one. Three consequences are used throughout. The **centre** of $M_2(\mathbb{C})$ is the scalar matrices, so the centre of $\mathbb{B}$ is $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$: one-dimensional over $\mathbb{C}$, and the two-dimensional real space spanned by $e_0$ and $ie_0$ over $\mathbb{R}$. The algebra is **simple**, having no nontrivial two-sided ideals: a nonzero ideal of $M_2(\mathbb{C})$ contains a rank-one matrix, and products of a rank-one matrix with arbitrary matrices generate the whole algebra. Finally it is **central** over $\mathbb{C}$, since its centre is the ground field $\mathbb{C}$, but **not** central over $\mathbb{R}$, where its centre is the quadratic field $\mathbb{C} \neq \mathbb{R}$; it is central simple over its centre $\mathbb{C}$.
 
-## 2. Complex Representations of the Algebra
+## Complex Representations of the Algebra
 
 Over $\mathbb{C}$, a representation is a complex vector space with a unital homomorphism $\mathbb{B} \to \operatorname{End}_{\mathbb{C}}(V)$, that is, a left $\mathbb{B}$-module. Since $\mathbb{B} \cong M_2(\mathbb{C})$, this is the theory of left modules over a full matrix algebra. Let $V$ be a simple left $\mathbb{B}$-module, of complex dimension $2$; in the matrix realization $V$ is the space of column vectors with the natural action, and in the regular realization it appears as a minimal left ideal. The theory below is stated for $V$ and not for any particular realization of it.
 
@@ -38,9 +36,9 @@ Hence a finite-dimensional complex representation is determined up to isomorphis
 
 The case $n = 2$ is the **regular representation**: the algebra regarded as a left module over itself by left multiplication is $\mathbb{B} = I_1 \oplus I_2 \cong V \oplus V$, the direct sum of two minimal left ideals. Over $\mathbb{C}$ this is a representation on a four-dimensional space, and the matrix of left multiplication by $\tilde{Q}$ in the basis $e_0, e_1, e_2, e_3$ is $\rho_L(\tilde{Q})$; its entries are the coefficients of $\tilde{Q}$, with signs, and its explicit form is the subject of the companion article on the regular representation, written in parallel. Right multiplication is not a second representation of the algebra but the regular representation of the **opposite** algebra, with matrix $\rho_R(\tilde{Q})$, and the two matrices agree exactly on the centre: this is where left and right first differ, the algebra being non-commutative. The classification above is therefore not confined to the two-dimensional module: the algebra itself is the first reducible case.
 
-A caution: for a non-commutative algebra the tensor product of two left modules is not naturally a left module, so the tensor-product ring structure belongs to the group side (Part II); the classification above uses direct sums only.
+A caution: for a non-commutative algebra the tensor product of two left modules is not naturally a left module, so the tensor-product ring structure belongs to the group side; the classification above uses direct sums only.
 
-## 3. Schur's Lemma, Intertwiners, Automorphisms and Derivations
+## Schur's Lemma, Intertwiners, Automorphisms and Derivations
 
 Let $V$ be the simple module. A $\mathbb{B}$-module homomorphism, or intertwining operator, is a $\mathbb{C}$-linear map $T$ with $T(\tilde{Q}u) = \tilde{Q}T(u)$.
 
@@ -76,7 +74,7 @@ $$
 
 Every $\mathbb{R}$-derivation annihilates the centre, because for central $\lambda$ one has $D(\lambda)x = xD(\lambda)$ for all $x$, and $0 = D(-1) = D(i^2) = 2iD(i)$ forces $D(i) = 0$, so the derivation is $\mathbb{C}$-linear; hence $\operatorname{Der}_{\mathbb{R}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C})$ as a real Lie algebra of dimension $6$. All derivations, over $\mathbb{C}$ and over $\mathbb{R}$, are inner.
 
-## 4. Real Representations of the Algebra
+## Real Representations of the Algebra
 
 Over $\mathbb{R}$, the algebra $\mathbb{B}$ is the eight-dimensional simple real algebra underlying $M_2(\mathbb{C})$, with centre $\mathbb{C}$. It is central simple over $\mathbb{C}$, but not central over $\mathbb{R}$. Let $S = \operatorname{Res}_{\mathbb{C}/\mathbb{R}} V$ be the complex simple module regarded as a real vector space by restriction of scalars; then $\dim_{\mathbb{R}} S = 4$ and $\dim_{\mathbb{C}} S = 2$.
 
@@ -90,9 +88,7 @@ $$
 
 By Schur's lemma, $\operatorname{End}_{\mathbb{B}}(S) = \mathbb{C}$: an $\mathbb{R}$-division algebra containing the algebraically closed field $\mathbb{C} = Z(\mathbb{B})$ and finite-dimensional over it, hence equal to $\mathbb{C}$. Thus $S$ is of **complex type**, neither real nor quaternionic, and this is the precise sense in which the simple module of the real algebra is "two-dimensional complex" while being four-dimensional real. Restriction and extension of scalars relate the two cases, $S$ being the restriction of the complex simple module $V$. The case $n = 2$ of the theorem is the real regular representation, $\mathbb{B} \cong S \oplus S$ of real dimension $8$: the algebra as a left module over itself. This is why the regular representation is $4 \times 4$ over $\mathbb{C}$ and $8 \times 8$ over $\mathbb{R}$, the complex and the real matrix realization of one and the same action.
 
-# Part II: The Group
-
-## 5. The Group of Units and $SL(2,\mathbb{C})$
+## The Group of Units and $SL(2,\mathbb{C})$
 
 The group of units is $\mathbb{B}^{\times} = \{\tilde{Q} : N(\tilde{Q}) \neq 0\}$, which under $\mathbb{B} \cong M_2(\mathbb{C})$ is the group of invertible matrices, because the norm form is the determinant:
 
@@ -116,7 +112,7 @@ is surjective with kernel $\{\pm e_0\}$, so $SL(2,\mathbb{C})$ is the double cov
 
 **Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1, \lambda_2) \in \mathbb{Z}^2$ with $\lambda_1 \geq \lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1 - \lambda_2}(\mathbb{C}^2) \otimes (\det)^{\lambda_2}$, of dimension $\lambda_1 - \lambda_2 + 1$, with central character $z \mapsto z^{\lambda_1 + \lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2j = \lambda_1 - \lambda_2 \geq 0$, that is, the irreducible $V_j$ of the next section with spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$.
 
-## 6. Finite-Dimensional Representations of $SL(2,\mathbb{C})$
+## Finite-Dimensional Representations of $SL(2,\mathbb{C})$
 
 Let $G = SL(2,\mathbb{C})$ and let $\mathfrak{g} = \mathfrak{sl}(2,\mathbb{C})$ be its Lie algebra, regarded as a real Lie algebra. Its complexification is a sum of two copies of $\mathfrak{sl}(2,\mathbb{C})$, the complexified Lorentz algebra:
 
@@ -136,11 +132,11 @@ $$
 \left\{\text{f.d. polynomial representations of } SL(2,\mathbb{C})\right\} \simeq \left\{\text{f.d. unitary representations of } SU(2)\right\},
 $$
 
-so the finite-dimensional polynomial representations of $SL(2,\mathbb{C})$ are obtained from those of $SU(2)$ by complexifying the Lie algebra and exponentiating, and both are parameterised by the same highest weights $2j$, $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$. What complexification does not preserve is unitarity, a point taken up in Section 9.
+so the finite-dimensional polynomial representations of $SL(2,\mathbb{C})$ are obtained from those of $SU(2)$ by complexifying the Lie algebra and exponentiating, and both are parameterised by the same highest weights $2j$, $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$. What complexification does not preserve is unitarity, a point taken up in §*Unitary Representations*.
 
-## 7. The Defining Representation and the Weyl Spinors
+## The Defining Representation and the Weyl Spinors
 
-The defining representation of $SL(2,\mathbb{C})$ is $V_{1/2} = \mathbb{C}^2$, the polynomial representation of highest weight $1$. It is the same space that appears in Part I as the unique simple module of the algebra $\mathbb{B}$, and the isomorphism $\mathbb{B} \cong \operatorname{End}_{\mathbb{C}}(V_{1/2})$ is the content of the matrix realization: choosing a basis of $V_{1/2}$ writes each element of the algebra as a $2 \times 2$ matrix, and the choice of basis is the only freedom in doing so. Under the Lorentz group the defining representation and its conjugate are the two **Weyl spinors**: $V_{1/2} = (\tfrac{1}{2}, 0)$ is the left-handed one and $\overline{V_{1/2}} = (0, \tfrac{1}{2})$ is the right-handed one; they are not isomorphic as complex representations, and parity exchanges them. Their direct sum is the **Dirac spinor**
+The defining representation of $SL(2,\mathbb{C})$ is $V_{1/2} = \mathbb{C}^2$, the polynomial representation of highest weight $1$. It is the same space that appears in §*Complex Representations of the Algebra* as the unique simple module of the algebra $\mathbb{B}$, and the isomorphism $\mathbb{B} \cong \operatorname{End}_{\mathbb{C}}(V_{1/2})$ is the content of the matrix realization: choosing a basis of $V_{1/2}$ writes each element of the algebra as a $2 \times 2$ matrix, and the choice of basis is the only freedom in doing so. Under the Lorentz group the defining representation and its conjugate are the two **Weyl spinors**: $V_{1/2} = (\tfrac{1}{2}, 0)$ is the left-handed one and $\overline{V_{1/2}} = (0, \tfrac{1}{2})$ is the right-handed one; they are not isomorphic as complex representations, and parity exchanges them. Their direct sum is the **Dirac spinor**
 
 $$
 \Delta = V_{1/2} \oplus \overline{V_{1/2}} = (\tfrac{1}{2},0) \oplus (0,\tfrac{1}{2}), \qquad \dim_{\mathbb{C}} \Delta = 4,
@@ -150,7 +146,7 @@ and their tensor product is the **vector representation** $(\tfrac{1}{2}, \tfrac
 
 Two dualities must be distinguished. The defining module is **self-dual** as a representation of $SL(2,\mathbb{C})$: since $\det = 1$, the alternating form $\varepsilon(u,v) = u_1 v_2 - u_2 v_1$ is invariant and identifies $V_{1/2}^{*}$ with $V_{1/2}$, so $V_{1/2}^{*} \cong V_{1/2}$. The **conjugate** $\overline{V_{1/2}}$, by contrast, is not isomorphic to $V_{1/2}$; it is the other chirality. Finally, $-e_0$ acts as $-1$ on $V_{1/2}$, so the defining representation, and every $(m,n)$ with $m+n$ half-integral, is a genuine spin representation that does not descend to $SO^{+}(1,3)$.
 
-## 8. Tensor Products and the Clebsch–Gordan Rule
+## Tensor Products and the Clebsch–Gordan Rule
 
 Group representations tensor with the diagonal action $g \cdot (v \otimes w) = (gv) \otimes (gw)$. For the polynomial representations of $SL(2,\mathbb{C})$ the Clebsch–Gordan rule is
 
@@ -182,7 +178,7 @@ $$
 
 the multiplicity of $V_{N/2-k}$ being the ballot (Catalan-triangle) number $\binom{N}{k} - \binom{N}{k-1}$. For example $V_{1/2}^{\otimes 2} \cong V_1 \oplus V_0$ and $V_{1/2}^{\otimes 3} \cong V_{3/2} \oplus 2V_{1/2}$. Since every finite-dimensional polynomial representation is completely reducible, the **composition factors** of a tensor power are exactly its direct summands, with these multiplicities.
 
-## 9. Unitary Representations
+## Unitary Representations
 
 A representation $\rho$ on $W$ is **unitary** if $W$ carries an invariant positive-definite Hermitian form $\langle \cdot, \cdot \rangle$. On $V_{1/2} = \mathbb{C}^2$ the standard form $\langle u,v \rangle = u_1^{*}v_1 + u_2^{*}v_2$ is invariant under $SU(2)$, so $V_{1/2}$ is unitary for the compact form $SU(2)$. It is **not** unitary for $SL(2,\mathbb{C})$: the non-compact one-parameter subgroups of hyperbolic rotations do not preserve it. More generally a non-compact simple Lie group has no nontrivial finite-dimensional unitary representation, since the image would lie in a compact group; hence only the trivial representation is finite-dimensional and unitary for $SL(2,\mathbb{C})$, and the defining representation is not unitarisable for the complex group. Unitarity of the compact form $SU(2)$, not of $SL(2,\mathbb{C})$, is what complexification preserves.
 

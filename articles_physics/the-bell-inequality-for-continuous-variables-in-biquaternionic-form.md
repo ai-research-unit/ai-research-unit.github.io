@@ -62,19 +62,19 @@ so that a coherent state $|\alpha\rangle$ has $\langle\hat x\rangle=\sqrt2\,\mat
 
 The **displacement operator** is $D(\alpha)=\exp(\alpha\hat a^\dagger-\bar\alpha\hat a)$, and the **displaced parity**
 $$
-\Pi(\alpha)=D(\alpha)\,(-1)^{\hat n}\,D(\alpha)^\dagger,\qquad \hat n=\hat a^\dagger\hat a,
+\mathsf{P}(\alpha)=D(\alpha)\,(-1)^{\hat n}\,D(\alpha)^\dagger,\qquad \hat n=\hat a^\dagger\hat a,
 $$
 is Hermitian, unitary, and has eigenvalues $\pm1$ exactly, because $(-1)^{\hat n}$ does and $D(\alpha)$ is unitary. It is the standard continuous-variable pseudo-spin: a genuinely continuous-family observable with a discrete, dichotomic, $\pm1$ spectrum. This is the observable family used throughout the article, because it is the family for which the CHSH combination is defined without further normalisation and for which the discrete bound $2$ applies verbatim as the classical bound.
 
-Two facts about $\Pi(\alpha)$ are used below. First, its expectation is a fixed multiple of the Wigner function evaluated at the corresponding phase-space point,
+Two facts about $\mathsf{P}(\alpha)$ are used below. First, its expectation is a fixed multiple of the Wigner function evaluated at the corresponding phase-space point,
 $$
-\langle\Pi(\alpha)\rangle=\pi\,W(\alpha),
+\langle\mathsf{P}(\alpha)\rangle=\pi\,W(\alpha),
 $$
-where $W$ is the Wigner function in the standard $x$–$p$ normalisation, so that a single mode has $\int W\,d^2\alpha=\tfrac12$. (The factor is $\pi$ and not $\pi/2$; the elementary vacuum value settles it, since $\langle\Pi(\alpha)\rangle_{\mathrm{vac}}=\langle\alpha|(-1)^{\hat n}|\alpha\rangle=e^{-2|\alpha|^2}$ and the vacuum Wigner in this convention is $\pi^{-1}e^{-2|\alpha|^2}$.) Second, $\Pi(\alpha)^2=e_0$: the eigenvalues are $\pm1$, so the classical CHSH proof applies to any two settings per party on each mode.
+where $W$ is the Wigner function in the standard $x$–$p$ normalisation, so that a single mode has $\int W\,d^2\alpha=\tfrac12$. (The factor is $\pi$ and not $\pi/2$; the elementary vacuum value settles it, since $\langle\mathsf{P}(\alpha)\rangle_{\mathrm{vac}}=\langle\alpha|(-1)^{\hat n}|\alpha\rangle=e^{-2|\alpha|^2}$ and the vacuum Wigner in this convention is $\pi^{-1}e^{-2|\alpha|^2}$.) Second, $\mathsf{P}(\alpha)^2=e_0$: the eigenvalues are $\pm1$, so the classical CHSH proof applies to any two settings per party on each mode.
 
 For a two-mode state the correlation of two displacements is
 $$
-E(\alpha,\beta)=\bigl\langle \Pi(\alpha)\otimes\Pi(\beta)\bigr\rangle .
+E(\alpha,\beta)=\bigl\langle \mathsf{P}(\alpha)\otimes\mathsf{P}(\beta)\bigr\rangle .
 $$
 
 ### The two-mode squeezed vacuum
@@ -114,9 +114,9 @@ the thermal Gaussian of the reduced state, which reproduces $\bar n=\sinh^2r$. T
 
 The correlation of two displaced parities in the TMSV follows from the Wigner functions. Using
 $$
-\langle\Pi(\alpha)\rangle=\pi W_1(\alpha),
+\langle\mathsf{P}(\alpha)\rangle=\pi W_1(\alpha),
 \qquad
-\bigl\langle\Pi(\alpha)\otimes\Pi(\beta)\bigr\rangle=\pi^2 W(\alpha,\beta),
+\bigl\langle\mathsf{P}(\alpha)\otimes\mathsf{P}(\beta)\bigr\rangle=\pi^2 W(\alpha,\beta),
 $$
 the factor $\pi$ arising on each mode because each parity is a single-mode operator, one obtains
 $$
@@ -132,9 +132,9 @@ Two independent evaluations were made.
 
 **From the Wigner function.** With $E=\exp(-2\cosh2r(|\alpha|^2+|\beta|^2)+4\sinh2r\,\mathrm{Re}(\alpha\beta))$, the one-mode marginals reproduce the thermal distribution $p_n=\mathrm{sech}^2r\,\tanh^{2n}r$ and the two-mode function is a normalised Gaussian whose covariance matrix has $\mathrm{Var}(\hat x_1-\hat x_2)=\mathrm{Var}(\hat p_1+\hat p_2)=e^{-2r}$ and $\mathrm{Var}(\hat x_1+\hat x_2)=\mathrm{Var}(\hat p_1-\hat p_2)=e^{2r}$, matching the EPR structure named in the previous section.
 
-**From an explicit Fock computation.** The displaced-parity operators $\Pi(\alpha)$, $\Pi(\beta)$ were built in a truncated Fock space from the matrix elements $\langle m|D(\alpha)|n\rangle$ of the displacement operator, and
+**From an explicit Fock computation.** The displaced-parity operators $\mathsf{P}(\alpha)$, $\mathsf{P}(\beta)$ were built in a truncated Fock space from the matrix elements $\langle m|D(\alpha)|n\rangle$ of the displacement operator, and
 $$
-E_{\mathrm{Fock}}=\sum_{m,n}(\mathrm{sech}\,r)(\tanh r)^m\,(\mathrm{sech}\,r)(\tanh r)^n\,\langle m|\Pi(\alpha)|n\rangle\langle m|\Pi(\beta)|n\rangle
+E_{\mathrm{Fock}}=\sum_{m,n}(\mathrm{sech}\,r)(\tanh r)^m\,(\mathrm{sech}\,r)(\tanh r)^n\,\langle m|\mathsf{P}(\alpha)|n\rangle\langle m|\mathsf{P}(\beta)|n\rangle
 $$
 was evaluated for complex displacements at several $r$. The agreement with the closed form above is exact to machine precision (residuals at the level of $10^{-16}$ for moderate truncation, growing only to $10^{-6}$ where the truncation is stressed). The same computation with $\mathrm{Re}(\alpha\bar\beta)$ in place of $\mathrm{Re}(\alpha\beta)$ disagrees by amounts up to order unity at the same points — the discrepancy is not marginal, it is qualitative. The sign is therefore settled by an independent route, not by the argument that produced the formula.
 
@@ -146,7 +146,7 @@ With the four displacements $\alpha_1,\alpha_2$ for party $1$ and $\beta_1,\beta
 $$
 S=E(\alpha_1,\beta_1)-E(\alpha_1,\beta_2)+E(\alpha_2,\beta_1)+E(\alpha_2,\beta_2).
 $$
-Because $\Pi(\alpha)$ and $\Pi(\beta)$ have spectrum $\{\pm1\}$, the classical proof of the discrete case applies unchanged: for a local hidden-variable model the outcomes are $\pm1$ functions of the setting and the shared variable, one of $\Pi(\beta_1)\mp\Pi(\beta_2)$ vanishes at each value of the shared variable, and
+Because $\mathsf{P}(\alpha)$ and $\mathsf{P}(\beta)$ have spectrum $\{\pm1\}$, the classical proof of the discrete case applies unchanged: for a local hidden-variable model the outcomes are $\pm1$ functions of the setting and the shared variable, one of $\mathsf{P}(\beta_1)\mp\mathsf{P}(\beta_2)$ vanishes at each value of the shared variable, and
 $$
 |S|\le2 .
 $$
@@ -206,7 +206,7 @@ $$
 \tilde{\mathcal S}
 =(i\hat a)\otimes(i\hat b)-(i\hat a)\otimes(i\hat b')+(i\hat a')\otimes(i\hat b)+(i\hat a')\otimes(i\hat b'),
 $$
-whose square is $\tilde{\mathcal S}^2=4\bigl(e_0\otimes e_0+(\hat a\times\hat a')\otimes(\hat b\times\hat b')\bigr)$, giving the bound $2\sqrt2$ through the spectrum of its image in $M_4(\mathbb{C})$. That derivation needs only two things: a two-outcome observable whose square is the identity, and an idempotent state paired with it by the trace. The first is present for the displaced parity, since $\Pi(\alpha)^2=1$; the second is *not*, for the reason in the next subsection. So the transcribable content is the algebra of the **bound**, restricted to the dichotomic class: if one is handed a state that is an element of $\mathbb{M}_+\otimes\mathbb{M}_+$ and a pair of settings per party, the exercise's argument gives $|S|\le2\sqrt2$ for those settings. The framework states the ceiling correctly.
+whose square is $\tilde{\mathcal S}^2=4\bigl(e_0\otimes e_0+(\hat a\times\hat a')\otimes(\hat b\times\hat b')\bigr)$, giving the bound $2\sqrt2$ through the spectrum of its image in $M_4(\mathbb{C})$. That derivation needs only two things: a two-outcome observable whose square is the identity, and an idempotent state paired with it by the trace. The first is present for the displaced parity, since $\mathsf{P}(\alpha)^2=1$; the second is *not*, for the reason in the next subsection. So the transcribable content is the algebra of the **bound**, restricted to the dichotomic class: if one is handed a state that is an element of $\mathbb{M}_+\otimes\mathbb{M}_+$ and a pair of settings per party, the exercise's argument gives $|S|\le2\sqrt2$ for those settings. The framework states the ceiling correctly.
 
 But the ceiling is the least informative row of the table above. For the two-mode squeezed vacuum the actual boundary is $8\cdot3^{-9/8}$, and the framework contributes nothing to it, because the state is not in the algebra.
 
@@ -214,7 +214,7 @@ But the ceiling is the least informative row of the table above. For the two-mod
 
 The obstruction is structural and is already proved in the corpus. It has two independent faces.
 
-**The algebra cannot hold the mode.** A quadrature $\hat x$ has continuous spectrum, and every element of $\mathbb{B}\cong M_2(\mathbb{C})$ has a finite spectrum of at most two values. The parity $\Pi(\alpha)$, for all that its eigenvalues are $\pm1$, is built from $(-1)^{\hat n}$ and a displacement $D(\alpha)$; both are functions of the bosonic pair $(\hat a,\hat a^\dagger)$, and one bosonic mode requires $[\hat a,\hat a^\dagger]=e_0$ on an infinite-dimensional module. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* shows that no such pair exists in $\mathbb{B}$: a commutator has vanishing trace, while $\mathrm{Tr}(e_0)=2$, so the only central scalar a commutator can produce is $0$. The framework carries the **fermionic** canonical relation exactly for one mode — the truncated ladder $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$ satisfies $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$ — and the bosonic relation not at all. There is therefore no $\Pi(\alpha)$ in $\mathbb{B}$, no $\hat xe_0$, no quadrature, and no phase-space displacement as an element of the algebra.
+**The algebra cannot hold the mode.** A quadrature $\hat x$ has continuous spectrum, and every element of $\mathbb{B}\cong M_2(\mathbb{C})$ has a finite spectrum of at most two values. The parity $\mathsf{P}(\alpha)$, for all that its eigenvalues are $\pm1$, is built from $(-1)^{\hat n}$ and a displacement $D(\alpha)$; both are functions of the bosonic pair $(\hat a,\hat a^\dagger)$, and one bosonic mode requires $[\hat a,\hat a^\dagger]=e_0$ on an infinite-dimensional module. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* shows that no such pair exists in $\mathbb{B}$: a commutator has vanishing trace, while $\mathrm{Tr}(e_0)=2$, so the only central scalar a commutator can produce is $0$. The framework carries the **fermionic** canonical relation exactly for one mode — the truncated ladder $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$ satisfies $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$ — and the bosonic relation not at all. There is therefore no $\mathsf{P}(\alpha)$ in $\mathbb{B}$, no $\hat xe_0$, no quadrature, and no phase-space displacement as an element of the algebra.
 
 **The algebra cannot hold the state or the arena.** The two-mode squeezed vacuum is a vector in the symmetric algebra of a two-mode one-particle space, a state on $\ell^2(\mathbb{N})^{\otimes2}$; it is infinite-dimensional and is not an element of $\mathbb{B}\otimes\mathbb{B}$, which has complex dimension sixteen. Writing "$|r\rangle$" as an idempotent of the tensor-product algebra would reproduce neither its spectrum nor its marginal, and the reduced thermal state $\sum_n p_n|n\rangle\langle n|$ has no image in $\mathbb{M}_+$, whose positive trace-one elements are exactly the Bloch ball.
 
@@ -261,8 +261,8 @@ well below $2\sqrt{2}$. Different observable families give different boundaries;
 | $\hat x,\hat p$ | Quadratures, $\hat x=(\hat a+\hat a^\dagger)/\sqrt2$, $\hat p=-i(\hat a-\hat a^\dagger)/\sqrt2$, $[\hat x,\hat p]=i$ |
 | $\alpha=(x+ip)/\sqrt2$ | Complex phase-space displacement, $|\alpha|^2=(x^2+p^2)/2$ |
 | $D(\alpha)=\exp(\alpha\hat a^\dagger-\bar\alpha\hat a)$ | Displacement operator |
-| $\Pi(\alpha)=D(\alpha)(-1)^{\hat n}D(\alpha)^\dagger$ | Displaced parity, spectrum $\{\pm1\}$, $\Pi(\alpha)^2=1$ |
-| $\langle\Pi(\alpha)\rangle=\pi W_1(\alpha)$ | Parity expectation from the Wigner function ($x$–$p$ normalisation, $\int W_1 d^2\alpha=\tfrac12$) |
+| $\mathsf{P}(\alpha)=D(\alpha)(-1)^{\hat n}D(\alpha)^\dagger$ | Displaced parity, spectrum $\{\pm1\}$, $\mathsf{P}(\alpha)^2=1$ |
+| $\langle\mathsf{P}(\alpha)\rangle=\pi W_1(\alpha)$ | Parity expectation from the Wigner function ($x$–$p$ normalisation, $\int W_1 d^2\alpha=\tfrac12$) |
 | $|r\rangle=\mathrm{sech}\,r\sum_n(\tanh r)^n|n\rangle_1|n\rangle_2$ | Two-mode squeezed vacuum |
 | $\bar n=\sinh^2 r$, $p_n=\mathrm{sech}^2r\,\tanh^{2n}r$ | Mean occupation and thermal marginal |
 | $\mathrm{Var}(\hat x_1-\hat x_2)=\mathrm{Var}(\hat p_1+\hat p_2)=e^{-2r}$ | Squeezed (quiet) EPR combinations |

@@ -94,12 +94,12 @@ $$
 $$
 and the replica shift is the cyclic permutation of the factors. On a state $\rho_{A_1B_1}\otimes\cdots\otimes\rho_{A_nB_n}$ of $n$ replicas, the shift acts on the $A$ factors alone,
 $$
-\Pi_n:\ A_1\to A_2\to\cdots\to A_n\to A_1,
+\mathsf{C}_n:\ A_1\to A_2\to\cdots\to A_n\to A_1,
 \qquad \text{with the } B_i \text{ fixed},
 $$
 and the replica moment is the expectation of the shift,
 $$
-Z_n=\mathrm{Tr}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\Pi_n\Big].
+Z_n=\mathrm{Tr}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\mathsf{C}_n\Big].
 $$
 This is the finite-dimensional image of the $n$-sheeted cover: the sheets are the replicas, the branch locus is the $A$ factor, and the cyclic joining of the sheets is the cyclic permutation. The state is the $n$-fold product, so the expectation is a product-state matrix element, which is why the computation is elementary.
 
@@ -184,7 +184,7 @@ The table displays the three regimes: near the product state ($\theta=0.2$, $r_A
 
 ### The Replica Shift at Higher $n$
 
-For $n\ge3$ the moment is the expectation of the cyclic shift on the $n$-fold tensor power, and for the state above the reduced spectrum is $\cos^2\theta,\sin^2\theta$, so the shift's expectation reduces to the power sum $\cos^{2n}\theta+\sin^{2n}\theta$. The general finite-dimensional statement is that $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\Pi_n]$ holds for every $n$ with the cyclic shift $\Pi_n$; the two-qubit case of the previous subsection is the $n=2$ instance, verified by the swap computation. The identity was checked further against $\mathrm{Tr}(\rho_A^n)$ on a generic two-qubit pure state at $n=2,3,4$, where the two sides agree to machine precision. The finite framework's replica geometry is thus the tensor power with its cyclic permutation, and the analytic continuation is the continuation of the power sum.
+For $n\ge3$ the moment is the expectation of the cyclic shift on the $n$-fold tensor power, and for the state above the reduced spectrum is $\cos^2\theta,\sin^2\theta$, so the shift's expectation reduces to the power sum $\cos^{2n}\theta+\sin^{2n}\theta$. The general finite-dimensional statement is that $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ holds for every $n$ with the cyclic shift $\mathsf{C}_n$; the two-qubit case of the previous subsection is the $n=2$ instance, verified by the swap computation. The identity was checked further against $\mathrm{Tr}(\rho_A^n)$ on a generic two-qubit pure state at $n=2,3,4$, where the two sides agree to machine precision. The finite framework's replica geometry is thus the tensor power with its cyclic permutation, and the analytic continuation is the continuation of the power sum.
 
 ### A Second Example: the W State
 
@@ -206,7 +206,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 **Established (theorem, imported).** The definition of entanglement entropy and the Rényi entropies; their ordering and limits; the identification $S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n|_{1}$; the field-theoretic replica trick as a partition function on an $n$-sheeted cover, including the quotient by $Z_1^n$; the area-law output of the method. All standard.
 
-**Established (recomputed here).** The finite-dimensional replica moments $Z_n=\sum_i\lambda_i^n$; the replica formula $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\Pi_n]$ with the $n=2$ swap identity and its $n=2,3,4$ instances, verified on the explicit state and on a generic two-qubit state; the reduced state of the two-qubit family as a biquaternion Bloch state with $r_A=|\cos2\theta|$; the agreement of the biquaternion entropy closed form with the binary entropy; and the Rényi table with its $n\to1$ convergence.
+**Established (recomputed here).** The finite-dimensional replica moments $Z_n=\sum_i\lambda_i^n$; the replica formula $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ with the $n=2$ swap identity and its $n=2,3,4$ instances, verified on the explicit state and on a generic two-qubit state; the reduced state of the two-qubit family as a biquaternion Bloch state with $r_A=|\cos2\theta|$; the agreement of the biquaternion entropy closed form with the binary entropy; and the Rényi table with its $n\to1$ convergence.
 
 **Interpretation.** That the tensor power and its cyclic shift are read as the framework's replica geometry, and that the entanglement entropy of a bipartition is read as the entropy of a reduced biquaternion state.
 
@@ -214,7 +214,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 ## Open Questions
 
-**1. The replica shift and the sector structure.** The cyclic shift $\Pi_n$ permutes the tensor factors. Is there a reading of $\Pi_n$ in terms of the material/informational decomposition of $\mathbb{B}^{\otimes n}$, and does the shift's expectation factor across the sectors?
+**1. The replica shift and the sector structure.** The cyclic shift $\mathsf{C}_n$ permutes the tensor factors. Is there a reading of $\mathsf{C}_n$ in terms of the material/informational decomposition of $\mathbb{B}^{\otimes n}$, and does the shift's expectation factor across the sectors?
 
 **2. The many-mode replica moments.** For a state of $\mathbb{B}^{\otimes m}$ with a bipartition into several modes, the reduced state has $2^{m_A}$ eigenvalues and the moments are power sums. Do these reproduce, in a regulated chain, the scaling of the field-theoretic entanglement entropy that the area law describes?
 
@@ -228,7 +228,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 Entanglement entropy is the von Neumann entropy of a reduced state, $S_A=-\mathrm{Tr}(\rho_A\log\rho_A)$ with $\rho_A=\mathrm{Tr}_B\rho_{AB}$, and the replica trick computes it from the moments $Z_n=\mathrm{Tr}\rho_A^n$ by continuation to $n\to1$: $S_A=-d\log Z_n/dn|_1$. In quantum field theory the moments are partition functions on $n$-sheeted covers; in finite dimension they are power sums of the reduced state's eigenvalues.
 
-In the biquaternion framework the replicas are the factors of the tensor power $\mathbb{B}^{\otimes n}$, the replica geometry is the cyclic permutation $\Pi_n$ of the factors, and the moment is the shift expectation $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\Pi_n]$. The case $n=2$ is the swap expectation that computes the purity, verified on the explicit two-qubit state. For the pure family $|\psi_\theta\rangle=\cos\theta|00\rangle+\sin\theta|11\rangle$, the reduced state is a biquaternion Bloch state with $r_A=|\cos2\theta|$, the moments are $Z_n=\cos^{2n}\theta+\sin^{2n}\theta$, and the Rényi entropies $S_n=\frac{1}{1-n}\log Z_n$ interpolate between the product state and the maximally entangled state. The biquaternion entropy closed form agrees with the binary entropy at every angle, and the $n\to1$ limit was checked to bracket $S_1$ at two angles.
+In the biquaternion framework the replicas are the factors of the tensor power $\mathbb{B}^{\otimes n}$, the replica geometry is the cyclic permutation $\mathsf{C}_n$ of the factors, and the moment is the shift expectation $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$. The case $n=2$ is the swap expectation that computes the purity, verified on the explicit two-qubit state. For the pure family $|\psi_\theta\rangle=\cos\theta|00\rangle+\sin\theta|11\rangle$, the reduced state is a biquaternion Bloch state with $r_A=|\cos2\theta|$, the moments are $Z_n=\cos^{2n}\theta+\sin^{2n}\theta$, and the Rényi entropies $S_n=\frac{1}{1-n}\log Z_n$ interpolate between the product state and the maximally entangled state. The biquaternion entropy closed form agrees with the binary entropy at every angle, and the $n\to1$ limit was checked to bracket $S_1$ at two angles.
 
 The framework thus reproduces the replica method exactly in finite dimension, with the entanglement entropy of a bipartition equal to the entropy of a reduced biquaternion state. What it cannot reproduce is the field-theoretic content: the branched cover, the ultraviolet divergence, and the geometric scaling that the area-law companion article treats.
 
@@ -247,7 +247,7 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | $Z_n=\mathrm{Tr}(\rho_A^n)$ | Replica moment |
 | $S_n=\frac{1}{1-n}\log Z_n$ | Rényi entropy of order $n$ |
 | $S_A=-\frac{d}{dn}\log Z_n\big|_{n=1}$ | Replica-trick representation of $S_A$ |
-| $\Pi_n$ | Cyclic shift of the $n$ replicas |
+| $\mathsf{C}_n$ | Cyclic shift of the $n$ replicas |
 | $\mathbb F_{AA'}$ | Swap operator; $n=2$ replica shift |
 | $\mathbf r_A$, $r_A=|\mathbf r_A|$ | Bloch vector and radius of a single-mode reduced state |
 | $\cos^2\theta,\sin^2\theta$ | Eigenvalues of $\rho_A$ for $|\psi_\theta\rangle$ |

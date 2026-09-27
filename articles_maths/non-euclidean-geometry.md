@@ -99,7 +99,7 @@ The three geometries can be read from the three real two-dimensional algebras of
 
 **Proof sketch.** Transitivity on points and frames is the definition of a space of constant curvature and is verified in each case in the three articles; the dimensions are those of the groups $\mathbb{R}^2 \rtimes O(2)$, $O(3)$ and $PSL(2, \mathbb{R})$, all three-dimensional as Lie groups; the stabiliser identification is the classical fact that a frame at a point of a surface has two degrees of freedom. $\square$
 
-The three homogeneous spaces $E(2)/O(2)$, $O(3)/O(2)$ and $PSL(2, \mathbb{R})/O(2)$ are the three two-dimensional symmetric spaces of rank one, the first non-compact flat, the second compact and the third non-compact; they are the model cases .
+The three homogeneous spaces $E(2)/O(2)$, $O(3)/O(2)$ and $PSL(2, \mathbb{R})/O(2)$ are the three two-dimensional symmetric spaces of rank one, the first non-compact flat, the second compact and the third non-compact; they are the model cases.
 
 ## The Model Comparison
 

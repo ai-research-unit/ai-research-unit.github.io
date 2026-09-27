@@ -16,7 +16,7 @@ Three claims organise the discussion, and they are worth stating at the outset, 
 
 The article closes by separating what has been constructed from what remains an agenda. The separation is stark: the kinematical fibre of tetrad gravity is present, its dynamics is absent, and the informational sector $\mathbb{M}_+$ has no curved-space treatment at all.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The rotor group is $\{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, with covering homomorphism $\Pi$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The rotor group is $\{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## What the Flat Machinery Assumes
 
@@ -248,7 +248,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\langle \tilde{Q},\tilde{P}\rangle = \mathrm{Sc}(\tilde{Q}\bar{\tilde{P}})$ | Bilinear (polar) form on $\mathbb{M}_-$; the pointwise metric |
 | $\tilde{\Lambda} \in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation (four-vector action) |
-| $\Pi : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
+| $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $ict$ | Local imaginary time coordinate, material sector |
 | $\tilde{\nabla} = e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ | Biquaternionic gradient (needs a global chart) |

@@ -189,7 +189,7 @@ where $|0\rangle=(1,0)^{\mathsf T}$ and $|1\rangle=(0,1)^{\mathsf T}$ in the mod
 
 Three consequences follow at once, all of them recomputed above.
 
-- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $P_+(e_3)=\tfrac12(e_0+ie_3)$ and $P_-(e_3)=\tfrac12(e_0-ie_3)$, and $\tilde N_{\mathrm{tr}}=P_-(e_3)$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.
+- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$, and $\tilde N_{\mathrm{tr}}=\tilde\Pi_2$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.
 - **The grading is an element of the algebra.** Fermion parity for one mode is
 
 $$

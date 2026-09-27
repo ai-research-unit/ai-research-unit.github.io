@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article treats the higher special functions of a split-quaternion variable. It states the general principle by which a classical special function extends to the algebra, defines the Gamma function, the Bessel functions, the hypergeometric function and the orthogonal polynomials in that framework, describes the special functions coming from the matrix model and those coming from the analysis, and records the conventions used.
+This article treats the higher special functions of a split-quaternion variable. It states the general principle by which a classical special function extends to the algebra, defines the Gamma function, the Bessel functions, the hypergeometric function and the orthogonal polynomials in that framework, describes the special functions coming from the commutative subalgebras and those coming from the analysis, and records the conventions used.
 
-The split-quaternion algebra, its involution, its idempotents and its null basis are assumed from *Split-Quaternion Algebra*; the units and the three-way classification from *Split-Quaternion Norm and Invertibility*; the nilpotents from *Split-Quaternion Zero Divisors*; the matrix model from *Split-Quaternion Matrix Representations*; the exponential and the elementary functions from *Split-Quaternion Elementary Functions*; and the convergence of power series from *Split-Quaternion Analysis*, §*Power Series and Analytic Functions*. The functions of matrices are those of *Holomorphic Functional Calculus*, the special functions of the division-algebra case those of *Quaternion Special Functions*, and of the two-dimensional hyperbolic case those of *Split-Complex Special Functions*. Nothing physical is invoked.
+The split-quaternion algebra, its involution, its idempotents and its null basis are assumed from *Split-Quaternion Algebra*; the units and the three-way classification from *Split-Quaternion Norm and Invertibility*; the nilpotents from *Split-Quaternion Zero Divisors*;  the exponential and the elementary functions from *Split-Quaternion Elementary Functions*; and the convergence of power series from *Split-Quaternion Analysis*, §*Power Series and Analytic Functions*. The functions of matrices are those of *Holomorphic Functional Calculus*, the special functions of the division-algebra case those of *Quaternion Special Functions*, and of the two-dimensional hyperbolic case those of *Split-Complex Special Functions*. Nothing physical is invoked.
 
 ## The General Principle
 
@@ -18,52 +18,54 @@ $$
 with real coefficients $a_n$ and radius of convergence $R$. Then the same series
 
 $$
-F(x) = \sum_{n\geq 0} a_n x^n
+F(\tilde q) = \sum_{n\geq 0} a_n \tilde q^n
 $$
 
-converges absolutely for $|x| < R/\sqrt{2}$ in the Euclidean norm of the algebra, defines a function of the split-quaternion variable, and agrees with $F$ on every commutative subalgebra. If $F$ is entire, so is the extension.
+converges absolutely for $|\tilde q| < R/\sqrt{2}$ in the Euclidean norm of the algebra, defines a function of the split-quaternion variable, and agrees with $F$ on every commutative subalgebra. If $F$ is entire, so is the extension.
 
-**Proof.** The bound $|a_nx^n| \leq (\sqrt{2})^n |a_n|\,|x|^n$ of *Split-Quaternion Analysis*, §*The Metric Structure*, reduces the convergence to the real majorant series. $\square$
+**Proof.** The bound $|a_n\tilde q^n| \leq (\sqrt{2})^n |a_n|\,|\tilde q|^n$ of *Split-Quaternion Analysis*, §*The Metric Structure*, reduces the convergence to the real majorant series. $\square$
 
-**Theorem (The Reduction on a Plane).** If $x$ lies in a commutative subalgebra $\operatorname{span}\{1,\xi\}$ with $\xi^2 = \pm1$, then
-
-$$
-F(x) = F(s + t\xi) = \tfrac12\big(F(s+t) + F(s-t)\big) + \tfrac12\big(F(s+t) - F(s-t)\big)\,\xi \quad (\xi^2=1),
-$$
+**Theorem (The Reduction on a Plane).** If $\tilde q$ lies in a commutative subalgebra $\operatorname{span}\{1,\xi\}$ with $\xi^2 = \pm1$, then
 
 $$
-F(x) = \tfrac12\big(F(s+it) + F(s-it)\big) + \tfrac1{2i}\big(F(s+it) - F(s-it)\big)\,\xi \quad (\xi^2=-1),
+F(\tilde q) = F(s + t\xi) = \tfrac12\big(F(s+t) + F(s-t)\big) + \tfrac12\big(F(s+t) - F(s-t)\big)\,\xi \quad (\xi^2=1),
 $$
 
-with the second formula understood through its real series. In particular, in the null coordinates $x = p\,n_+ + q\,n_-$ of the split-complex plane the value is
+$$
+F(\tilde q) = \tfrac12\big(F(s+it) + F(s-it)\big) + \tfrac1{2i}\big(F(s+it) - F(s-it)\big)\,\xi \quad (\xi^2=-1),
+$$
+
+with the second formula understood through its real series. In particular, in the null coordinates $\tilde q = p\,n_+ + q\,n_-$ of the split-complex plane the value is
 
 $$
-F(x) = F(p)\, n_+ + F(q)\, n_- .
+F(\tilde q) = F(p)\, n_+ + F(q)\, n_- .
 $$
 
 **Proof.** In the split case the subalgebra is $\mathbb{R}\times\mathbb{R}$ through the null basis, and $F$ acts on each factor; in the definite case the subalgebra is $\mathbb{C}$ and the displayed formula is the even–odd decomposition. $\square$
 
-**Theorem (Extension by the Matrix Model).** For every function $F$ of a real $2\times2$ matrix in the sense of *Holomorphic Functional Calculus*, the function $x \mapsto \Phi^{-1}\big(F(\Phi(x))\big)$ is an extension of $F$ to the algebra, defined on the open set where the matrix function is defined; on the elements $x$ whose matrix model has two distinct real eigenvalues $\lambda_1, \lambda_2$ it is given by the interpolation formula
+**Theorem (Extension by Interpolation).** Let $F$ be a function of one complex variable, holomorphic on a neighbourhood of the roots $\lambda_1, \lambda_2$ of the characteristic polynomial of $\tilde q$; define
 
 $$
-F(\Phi(x)) = \frac{F(\lambda_1) - F(\lambda_2)}{\lambda_1 - \lambda_2}\,\Phi(x) + \frac{\lambda_1F(\lambda_2) - \lambda_2F(\lambda_1)}{\lambda_1-\lambda_2}\,\mathrm{id}.
+F(\tilde q) = \frac{F(\lambda_1) - F(\lambda_2)}{\lambda_1 - \lambda_2}\,\tilde q + \frac{\lambda_1F(\lambda_2) - \lambda_2F(\lambda_1)}{\lambda_1-\lambda_2},
 $$
 
-**Proof.** The matrix functional calculus is that of *Holomorphic Functional Calculus*, and the interpolation formula is the Sylvester formula for a matrix with distinct eigenvalues. $\square$
+for distinct roots, with the limiting derivative form when the roots coincide. The value depends only on the two roots and on $\tilde q$, and the map is the unique homomorphism on the subalgebra generated by $\tilde q$ taking $\tilde q$ to $F(\tilde q)$.
 
-**Remark (The Sibling Functions).** The error function and the Airy functions of *Quaternion Special Functions* and *Split-Complex Special Functions* have real power series, so they too extend by substitution; the Lambert $W$ is defined by the equation $W(x)e^{W(x)} = x$ rather than by a series and is extended through the matrix model. The reduction on a commutative subalgebra used throughout is the idempotent principle of *Split-Complex Special Functions*, §*The Idempotent Principle*, transported to the split-quaternion variable.
+**Proof.** The element $\tilde q$ has the spectral decomposition $\tilde q = \lambda_1 P_1 + \lambda_2 P_2$ with the idempotents $P_1 = (\tilde q-\lambda_2)/(\lambda_1-\lambda_2)$ and $P_2 = (\tilde q-\lambda_1)/(\lambda_2-\lambda_1)$, which satisfy $P_1+P_2 = 1$ and $P_1P_2 = 0$; setting $F(\tilde q) = F(\lambda_1)P_1 + F(\lambda_2)P_2$ and collecting terms gives the displayed formula. Uniqueness holds because the values on the two idempotents determine a homomorphism on the two-dimensional subalgebra. $\square$
 
-**Remark (The Convention Used Here).** Where a special function is given by a real power series the extension is by substitution, as in the first theorem, and no convention is needed. Where it is not, the extension used is the one of the matrix model, as in the last theorem; this is stated explicitly at each use, and it is not claimed to be the only possible extension. In particular the "hypergeometric function of a matrix argument" of random matrix theory, defined through zonal polynomials, is a different convention and is not used here.
+**Remark (The Sibling Functions).** The error function and the Airy functions of *Quaternion Special Functions* and *Split-Complex Special Functions* have real power series, so they too extend by substitution; the Lambert $W$ is defined by the equation $W(\tilde q)e^{W(\tilde q)} = \tilde q$ rather than by a series and is extended by interpolation. The reduction on a commutative subalgebra used throughout is the idempotent principle of *Split-Complex Special Functions*, §*The Idempotent Principle*, transported to the split-quaternion variable.
+
+**Remark (The Convention Used Here).** Where a special function is given by a real power series the extension is by substitution, as in the first theorem, and no convention is needed. Where it is not, the extension used is the interpolation of the last theorem; this is stated explicitly at each use, and it is not claimed to be the only possible extension. In particular the "hypergeometric function of a matrix argument" of random matrix theory, defined through zonal polynomials, is a different convention and is not used here.
 
 ## The Gamma Function
 
 **Definition.** On the commutative subalgebras generated by $e_1$ and by $e_2$ the **Gamma function** is defined by the integral
 
 $$
-\Gamma(x) = \int_0^\infty t^{x-1} e^{-t}\,\mathrm{d}t ,
+\Gamma(\tilde q) = \int_0^\infty t^{\tilde q-1} e^{-t}\,\mathrm{d}t ,
 $$
 
-the integral being taken in the subalgebra, and on a general element it is defined by the matrix model of the preceding section.
+the integral being taken in the subalgebra, and on a general element it is defined by the interpolation of the preceding section.
 
 **Theorem (Values and Identities).** In the null basis of the split-complex plane, for $p, q > 0$,
 
@@ -74,14 +76,14 @@ $$
 For every positive real $t$ the element $t$ is central, so the scalar identities hold in the algebra:
 
 $$
-\Gamma(1) = 1, \qquad \Gamma(n+1) = n!, \qquad \Gamma(x+1) = x\,\Gamma(x) \ \text{for central } x .
+\Gamma(1) = 1, \qquad \Gamma(n+1) = n!, \qquad \Gamma(\tilde q+1) = \tilde q\,\Gamma(\tilde q) \ \text{for central } \tilde q .
 $$
 
-On the norm-one group the Gamma function of the matrix model is defined off the elements whose matrix model has a non-positive eigenvalue, and it agrees with the substitution extension on the elements of scalar square.
+On the norm-one group the Gamma function of the interpolation is defined off the elements whose characteristic polynomial has a non-positive root, and it agrees with the substitution extension on the elements of scalar square.
 
 **Proof.** The null-basis formula follows from $t^x = t^p n_+ + t^q n_-$ and the fact that $e^{-t}$ is central; the scalar identities are the classical ones for real arguments, and the last statement is the agreement of the two extensions, which is the theorem on the reduction on a plane. $\square$
 
-**Remark (No Integral in the General Case).** The integral definition does not extend to a general element, because $e^{-t}$ is central but $t^{x}$ is not defined for a general $x$ without a branch and a commutative subalgebra; this is the reason for the convention of the matrix model. Recorded here once and used below.
+**Remark (No Integral in the General Case).** The integral definition does not extend to a general element, because $e^{-t}$ is central but $t^{\tilde q}$ is not defined for a general $\tilde q$ without a branch and a commutative subalgebra; this is the reason for the interpolation convention. Recorded here once and used below.
 
 ## The Beta Function
 
@@ -99,16 +101,16 @@ $$
 B(pn_+ + qn_-, r n_+ + s n_-) = B(p,r)\,n_+ + B(q,s)\,n_- ,
 $$
 
-and $B(x,y) = \Gamma(x)\Gamma(y)/\Gamma(x+y)$ for $x,y$ in a commutative subalgebra on which both sides are defined; for central arguments the identity holds in the algebra.
+and $B(\tilde q,y) = \Gamma(\tilde q)\Gamma(y)/\Gamma(\tilde q+y)$ for $\tilde q,y$ in a commutative subalgebra on which both sides are defined; for central arguments the identity holds in the algebra.
 
-**Proof.** The binary expansion of $t^{x}$ and $(1-t)^{y}$ in the null basis is termwise, and $t$ is central, so the integral splits into the two scalar integrals; the classical identity is then applied in each component. $\square$
+**Proof.** The binary expansion of $t^{\tilde q}$ and $(1-t)^{y}$ in the null basis is termwise, and $t$ is central, so the integral splits into the two scalar integrals; the classical identity is then applied in each component. $\square$
 
 ## Bessel Functions
 
 **Definition.** For integer $\nu$ the **Bessel function** is the entire series
 
 $$
-J_\nu(x) = \sum_{m\geq 0} \frac{(-1)^m}{m!\,\Gamma(m+\nu+1)} \Big(\frac{x}{2}\Big)^{2m+\nu},
+J_\nu(\tilde q) = \sum_{m\geq 0} \frac{(-1)^m}{m!\,\Gamma(m+\nu+1)} \Big(\frac{\tilde q}{2}\Big)^{2m+\nu},
 $$
 
 with real coefficients, extended to the algebra by substitution; for non-integer $\nu$ the same series is used on each commutative subalgebra with the corresponding branch of the power.
@@ -140,7 +142,7 @@ and the factor $(-1)^m\sigma^m$ is $1$ when $\sigma = -1$ and $(-1)^m$ when $\si
 **Definition.** The **hypergeometric function** is the series
 
 $$
-{}_2F_1(a,b;c;x) = \sum_{n\geq 0}\frac{(a)_n(b)_n}{(c)_n}\frac{x^n}{n!},
+{}_2F_1(a,b;c;\tilde q) = \sum_{n\geq 0}\frac{(a)_n(b)_n}{(c)_n}\frac{\tilde q^n}{n!},
 $$
 
 with the rising factorial $(a)_n = a(a+1)\cdots(a+n-1)$, extended to the algebra by substitution whenever $a,b,c$ are real and $c$ is not a non-positive integer, with the radius of convergence of the series.
@@ -148,10 +150,10 @@ with the rising factorial $(a)_n = a(a+1)\cdots(a+n-1)$, extended to the algebra
 **Theorem (Properties).** The extension satisfies the same differential equation with the algebra coefficients,
 
 $$
-x(1-x)\,{}_2F_1'' + \big(c - (a+b+1)x\big)\,{}_2F_1' - ab\,{}_2F_1 = 0,
+\tilde q(1-\tilde q)\,{}_2F_1'' + \big(c - (a+b+1)\tilde q\big)\,{}_2F_1' - ab\,{}_2F_1 = 0,
 $$
 
-where the derivatives are taken in a commutative subalgebra, and the classical transformation and special-value formulas hold for commuting arguments. On the split-complex plane the reduction is $${}_2F_1(a,b;c;pn_+ + qn_-) = {}_2F_1(a,b;c;p)n_+ + {}_2F_1(a,b;c;q)n_-$$ whenever the two series converge.
+where the derivatives are taken in a commutative subalgebra, and the classical transformation and special-value formulas hold for commuting arguments. On the split-complex plane the reduction is ${}_2F_1(a,b;c;pn_+ + qn_-) = {}_2F_1(a,b;c;p)n_+ + {}_2F_1(a,b;c;q)n_-$ whenever the two series converge.
 
 **Proof.** The coefficients are the classical ones and commute with central elements, so the differential equation is verified series by series; the reduction is the null-basis theorem. $\square$
 
@@ -169,13 +171,13 @@ where the derivatives are taken in a commutative subalgebra, and the classical t
 
 ## The Special Functions from the Matrix Model
 
-**Theorem (Functions of the Matrix Model).** Every function of a real $2\times2$ matrix that is defined by the matrix functional calculus gives a function of the split-quaternion variable; the value depends only on the eigenvalues and, in the non-derogatory case, on the interpolation formula of the first section. In particular the square root, the logarithm, the power and the matrix Gamma function are defined on the open sets where the corresponding matrix function is defined, and they agree with the extensions by substitution where both are defined.
+**Theorem (Functions by Interpolation).** Every function holomorphic on a neighbourhood of the two roots of the characteristic polynomial gives a function of the split-quaternion variable by the interpolation formula; the value depends only on the two roots and the element. In particular the square root, the logarithm, the power and the Gamma function are defined on the open sets where the two roots lie in the domain of the branch, and they agree with the extensions by substitution where both are defined.
 
-**Proof.** The matrix functional calculus and its uniqueness are those of *Holomorphic Functional Calculus*; the interpolation formula was displayed in the first section. $\square$
+**Proof.** The interpolation formula of the first section realises the functional calculus on the two-dimensional subalgebra generated by the element; its uniqueness on the two spectral idempotents is standard, and agreement with the substitution extension holds because the two agree on a power series. $\square$
 
-**Corollary (The Determinant of a Function).** For a function $F$ of the matrix model, $\det F(\Phi(x)) = F(\lambda_1)F(\lambda_2)$, where $\lambda_1,\lambda_2$ are the eigenvalues of $\Phi(x)$; hence the determinant of a function can vanish even where the function is defined, and the norm of an algebra-valued function is generally not a function of the norm of its argument. The functions of the algebra for which this happens are exactly the ones whose values at the two eigenvalues have a product that vanishes.
+**Corollary (The Norm of a Function).** For a function $F$ defined by interpolation at the roots $\lambda_1,\lambda_2$ of $\tilde q$, the roots of the characteristic polynomial of $F(\tilde q)$ are $F(\lambda_1),F(\lambda_2)$, hence $N(F(\tilde q)) = F(\lambda_1)F(\lambda_2)$; hence the norm of a function can vanish even where the function is defined, and the norm of an algebra-valued function is generally not a function of the norm of its argument. The functions of the algebra for which this happens are exactly the ones whose values at the two eigenvalues have a product that vanishes.
 
-**Proof.** The determinant is multiplicative on the eigenvalues; the vanishing statement is then immediate. $\square$
+**Proof.** The interpolation assigns the values $F(\lambda_1),F(\lambda_2)$ to the two spectral idempotents, so these are the roots of the characteristic polynomial of $F(\tilde q)$; the norm is their product, and the vanishing statement is then immediate. $\square$
 
 ## The Special Functions from the Analysis
 
@@ -192,20 +194,20 @@ where the derivatives are taken in a commutative subalgebra, and the classical t
 
 ## Summary
 
-A special function given by a real power series extends to the split-quaternion algebra by substitution, converges on the ball of the rescaled radius, and on a commutative subalgebra reduces to its values at the two components of the element in the null basis; on an element with scalar square the reduction is by the even and odd parts. The Gamma function is defined by its integral on the commutative subalgebras, where it reduces to the scalar Gamma function in each null component, and by the matrix model elsewhere; the Bessel functions and the hypergeometric function are defined by their real series and reduce on the subalgebras; the orthogonal polynomials extend by substitution, but their orthogonality does not, because the algebra has no definite form and no positive measure.
+A special function given by a real power series extends to the split-quaternion algebra by substitution, converges on the ball of the rescaled radius, and on a commutative subalgebra reduces to its values at the two components of the element in the null basis; on an element with scalar square the reduction is by the even and odd parts. The Gamma function is defined by its integral on the commutative subalgebras, where it reduces to the scalar Gamma function in each null component, and by interpolation elsewhere; the Bessel functions and the hypergeometric function are defined by their real series and reduce on the subalgebras; the orthogonal polynomials extend by substitution, but their orthogonality does not, because the algebra has no definite form and no positive measure.
 
-The matrix model gives a second, general extension, valid for every function of a matrix, computed from the eigenvalues and the interpolation formula, and it agrees with the substitution extension where both are defined. The special functions that arise from the analysis are of a third kind: the fundamental-solution kernel supported on the light cone, the Poisson kernel of the hyperbolic plane, the Legendre functions of the hyperboloid and the characters of the norm-one group. Every convention used in this article is stated at the point of use, and the "matrix-argument" hypergeometric function of random matrix theory is explicitly not the one used here.
+The interpolation gives a second, general extension, computed from the two roots of the characteristic polynomial, and it agrees with the substitution extension where both are defined. The special functions that arise from the analysis are of a third kind: the fundamental-solution kernel supported on the light cone, the Poisson kernel of the hyperbolic plane, the Legendre functions of the hyperboloid and the characters of the norm-one group. Every convention used in this article is stated at the point of use, and the "matrix-argument" hypergeometric function of random matrix theory is explicitly not the one used here.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| substitution extension | $F(x) = \sum a_nx^n$ for real $a_n$ | this article |
+| substitution extension | $F(\tilde q) = \sum a_n\tilde q^n$ for real $a_n$ | this article |
 | null-basis reduction | $F(pn_+ + qn_-) = F(p)n_+ + F(q)n_-$ | this article |
-| $\Gamma$ | the Gamma function, by integral on the subalgebras and by the matrix model generally | this article |
+| $\Gamma$ | the Gamma function, by integral on the subalgebras and by interpolation generally | this article |
 | $J_\nu$ | the Bessel function, an entire series for integer $\nu$ | this article |
-| ${}_2F_1(a,b;c;x)$ | the hypergeometric function, by its series | this article |
-| Sylvester interpolation | the value of a function of a $2\times2$ matrix with distinct eigenvalues | *Holomorphic Functional Calculus* |
+| ${}_2F_1(a,b;c;\tilde q)$ | the hypergeometric function, by its series | this article |
+| interpolation formula | the value of a function at the two roots of the characteristic polynomial | this article |
 | $E_D$ | the fundamental solution, a function of the analysis | *Split-Quaternion Integration* |
 | Poisson kernel | $\frac{1-|w|^2}{|w-\zeta|^2}$ on the disc | *Split-Quaternions and Hyperbolic Geometry* |
 | Legendre functions | the spherical functions of the hyperboloid | this article |

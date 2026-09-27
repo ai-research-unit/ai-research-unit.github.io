@@ -284,7 +284,7 @@ The result is a fast algorithm for the discrete biquaternion Fourier transform, 
 
 ### Why This Matters
 
-The factorization is a computational result, but it also has a structural meaning. It shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied to the entries of the matrix representation, dressed in biquaternion language. The non-trivial content is the **choice of root** and the **basis change** that it induces. Everything else is ordinary harmonic analysis.
+The factorization is a computational result, but it also has a structural meaning. It shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied entrywise to the coefficients, dressed in biquaternion language. The non-trivial content is the **choice of root** and the **basis change** that it induces. Everything else is ordinary harmonic analysis.
 
 ## The Convolution Theorem
 

@@ -34,7 +34,7 @@ The word semisimple is used in the sense of *Simple and Semisimple Modules*: a r
 | $\mathbb{Q}[C_2]$ | $\mathbb{Q} \times \mathbb{Q}$ | the group-ring idempotents | *Examples of Rings and Fields* |
 | $\mathbb{Q}[C_3]$ | $\mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | the group-ring idempotents | *Examples of Rings and Fields* |
 
-The split-complex numbers are the geometric name for $\mathbb{R} \times \mathbb{R}$: the idempotents $e_+$ and $e_-$ are the two factors, and $j = e_+ - e_-$. This is the sense in which split-$\mathbb{C}$ sits in the reduced semisimple family: it is a product of two copies of the real field, not a field and not local.
+The split-complex numbers are the geometric name for $\mathbb{R} \times \mathbb{R}$: the idempotents $\pi_+$ and $\pi_-$ are the two factors, and $j = \pi_+ - \pi_-$. This is the sense in which split-$\mathbb{C}$ sits in the reduced semisimple family: it is a product of two copies of the real field, not a field and not local.
 
 ## Local Rings, Which May Be Non-Reduced
 

@@ -167,7 +167,7 @@ for $n \geq 1$. $\square$
 
 **Proof.** The locally compact and totally disconnected properties are those of $F$. The description as a union of the increasing chain $\pi^{-n}\mathcal{O}$ is part (c) of the theorem on balls, and the topology of $F$ is the final topology of that union because each $\pi^{-n}\mathcal{O}$ is open. In characteristic $0$ an integer $n \neq 0$ acts invertibly on $F$, so $nx = 0$ forces $x = 0$; in characteristic $p$ one has $px = 0$ for every $x$, and $F$ is an elementary abelian $p$-group as an additive group. $\square$
 
-**Remark.** The additive group of $F$ is neither compact nor discrete; it is $\sigma$-compact. The natural measure-theoretic statements about these groups — the existence and uniqueness of a translation-invariant measure on $F$ and on $F^\times$, and the module function relating the left and right variants — belong to *Locally Compact Groups and Haar Measure*, where the measure and its invariance are constructed, and their integration theory is Part III's; only the topological statements are made here.
+**Remark.** The additive group of $F$ is neither compact nor discrete; it is $\sigma$-compact. The natural measure-theoretic statements about these groups — the existence and uniqueness of a translation-invariant measure on $F$ and on $F^\times$, and the module function relating the left and right variants — belong to *Locally Compact Groups and Haar Measure* in Part III, where the measure and its invariance are constructed and where their integration theory is developed; only the topological statements are made here.
 
 ---
 

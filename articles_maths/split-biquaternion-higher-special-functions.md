@@ -8,7 +8,7 @@ The goal is to define the Bessel functions, the orthogonal polynomials, the hype
 
 The treatment is purely mathematical. No physics is invoked. No examples are given. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, together with its conjugations, its four fixed-point subspaces, and its idempotent decomposition. The elementary functions are assumed from the preceding article.
 
-The key structural fact is the **idempotent decomposition**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $e_\pm$ commute with everything. So every function defined by a power series in the split biquaternion variable, with coefficients that are split complex scalars, reduces to the corresponding function of two ordinary quaternions, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case.
+The key structural fact is the **idempotent decomposition**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $\tilde\Pi_\pm$ commute with everything. So every function defined by a power series in the split biquaternion variable, with coefficients that are split complex scalars, reduces to the corresponding function of two ordinary quaternions, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case.
 
 For functions defined by integrals, the situation is different. The integral definitions require convergence conditions and a notion of the integrand for split biquaternion arguments. The gamma function and the zeta function are in this class, and their theory is only partially developed.
 
@@ -43,12 +43,12 @@ For integer order the series converges for every $\tilde{Q} \in \mathbb{H}_{\mat
 Because the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$, the Bessel function decomposes:
 
 $$
-J_\nu(\tilde{Q}) = J_{\nu_+}(\tilde{Q}_+) e_+ + J_{\nu_-}(\tilde{Q}_-) e_-,
+J_\nu(\tilde{Q}) = J_{\nu_+}(\tilde{Q}_+) \tilde\Pi_+ + J_{\nu_-}(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
-where $\nu = \nu_+ e_+ + \nu_- e_-$ and $J_{\nu_\pm}(\tilde{Q}_\pm)$ is the ordinary quaternion Bessel function of the component $\tilde{Q}_\pm$ with the order $\nu_\pm$ belonging to that component. The quaternion Bessel function is defined by the same power series, with $\tilde{Q}_\pm$ in place of $\tilde{Q}$, and it can be computed in closed form in the two regimes (pure oscillatory and pure nilpotent), as discussed in the biquaternion higher special functions article.
+where $\nu = \nu_+ \tilde\Pi_+ + \nu_- \tilde\Pi_-$ and $J_{\nu_\pm}(\tilde{Q}_\pm)$ is the ordinary quaternion Bessel function of the component $\tilde{Q}_\pm$ with the order $\nu_\pm$ belonging to that component. The quaternion Bessel function is defined by the same power series, with $\tilde{Q}_\pm$ in place of $\tilde{Q}$, and it can be computed in closed form in the two regimes (pure oscillatory and pure nilpotent), as discussed in the biquaternion higher special functions article.
 
-The split complex order $\nu \in \mathbb{D}$ is decomposed in the idempotent basis as $\nu = \nu_+ e_+ + \nu_- e_-$ with $\nu_\pm \in \mathbb{R}$ (or, more generally, $\nu_\pm \in \mathbb{H}$), and the Bessel function of the component is taken with the corresponding order.
+The split complex order $\nu \in \mathbb{D}$ is decomposed in the idempotent basis as $\nu = \nu_+ \tilde\Pi_+ + \nu_- \tilde\Pi_-$ with $\nu_\pm \in \mathbb{R}$ (or, more generally, $\nu_\pm \in \mathbb{H}$), and the Bessel function of the component is taken with the corresponding order.
 
 So the split biquaternion Bessel function is the pair of the quaternion Bessel functions of the two idempotent components. This is the cleanest form of the function, and it is the reason the split biquaternion Bessel function is simpler than the biquaternion Bessel function.
 
@@ -103,7 +103,7 @@ with $P_0 = e_0$ and $P_1 = \tilde{Q}$.
 The Legendre polynomials are polynomials in $\tilde{Q}$ with real coefficients, and they decompose in the idempotent basis:
 
 $$
-P_n(\tilde{Q}) = P_n(\tilde{Q}_+) e_+ + P_n(\tilde{Q}_-) e_-,
+P_n(\tilde{Q}) = P_n(\tilde{Q}_+) \tilde\Pi_+ + P_n(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion Legendre polynomial of the component. In the pure oscillatory regime the quaternion Legendre polynomial does **not** reduce to the ordinary Legendre polynomial at the same argument: for a component $\tilde{Q}_\pm = \theta\hat{n}$ with $\hat{n}^2 = -e_0$ one has $P_n(\theta\hat{n}) = P_n(i\theta)$ with $i$ replaced by $\hat{n}$, since the generator $\hat{n}$ plays the role of the imaginary unit. For instance $P_2(\theta\hat{n}) = -(3\theta^2+1)/2$, whereas the ordinary $P_2$ gives $(3\theta^2-1)/2$: only the even part of $P_n$ survives on $e_0$ and only the odd part on $\hat{n}$. The analogous statement is discussed in the biquaternion higher special functions article.
@@ -143,7 +143,7 @@ with $L_0 = e_0$ and $L_1 = e_0 - \tilde{Q}$. The same analysis applies.
 The orthogonal polynomials are defined by three-term recurrences involving only the multiplication and addition of split biquaternions. So they are defined for every $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$, and they decompose in the idempotent basis:
 
 $$
-P_n(\tilde{Q}) = P_n(\tilde{Q}_+) e_+ + P_n(\tilde{Q}_-) e_-,
+P_n(\tilde{Q}) = P_n(\tilde{Q}_+) \tilde\Pi_+ + P_n(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion polynomial of the component. In the pure oscillatory regime the quaternion polynomial is obtained from the ordinary polynomial by replacing $i$ with $\hat{n}$ (as for the Legendre polynomials above), not by evaluating the ordinary polynomial at the same argument.
@@ -167,7 +167,7 @@ where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in
 The hypergeometric function decomposes in the idempotent basis:
 
 $$
-{}_2F_1(a, b; c; \tilde{Q}) = {}_2F_1(a_+, b_+; c_+; \tilde{Q}_+) e_+ + {}_2F_1(a_-, b_-; c_-; \tilde{Q}_-) e_-,
+{}_2F_1(a, b; c; \tilde{Q}) = {}_2F_1(a_+, b_+; c_+; \tilde{Q}_+) \tilde\Pi_+ + {}_2F_1(a_-, b_-; c_-; \tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $a_\pm, b_\pm, c_\pm$ are the idempotent components of the parameters, and ${}_2F_1(a_\pm, b_\pm; c_\pm; \tilde{Q}_\pm)$ is the ordinary quaternion hypergeometric function of the component.
@@ -209,7 +209,7 @@ The integral is defined component-wise, but the integrand is a split-biquaternio
 In the idempotent basis, the power decomposes:
 
 $$
-t^{\tilde{Q}-1} = t^{\tilde{Q}_+ - 1} e_+ + t^{\tilde{Q}_- - 1} e_-,
+t^{\tilde{Q}-1} = t^{\tilde{Q}_+ - 1} \tilde\Pi_+ + t^{\tilde{Q}_- - 1} \tilde\Pi_-,
 $$
 
 where $t^{\tilde{Q}_\pm - 1}$ is the ordinary quaternion power of the component. The quaternion power involves the quaternion logarithm, which is multivalued, and the convergence of the integral depends on the behavior of each component.
@@ -225,7 +225,7 @@ So the integral converges in the pure nilpotent regime if the real part of the s
 The gamma function is well-defined in the pure nilpotent regime for suitable values of the scalar part, and it decomposes in the idempotent basis:
 
 $$
-\Gamma(\tilde{Q}) = \Gamma(\tilde{Q}_+) e_+ + \Gamma(\tilde{Q}_-) e_-,
+\Gamma(\tilde{Q}) = \Gamma(\tilde{Q}_+) \tilde\Pi_+ + \Gamma(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $\Gamma(\tilde{Q}_\pm)$ is the quaternion gamma function of the component. The quaternion gamma function is defined by the same integral, and its convergence and analyticity are the same as for the split biquaternion case.
@@ -259,7 +259,7 @@ where $n^{\tilde{Q}} = \exp(\tilde{Q} \log n)$ is the split biquaternion power.
 The series is a series of split biquaternions. The convergence depends on the behavior of $n^{\tilde{Q}}$ as $n \to \infty$. In the idempotent basis, the series decomposes:
 
 $$
-\zeta(\tilde{Q}) = \zeta(\tilde{Q}_+) e_+ + \zeta(\tilde{Q}_-) e_-,
+\zeta(\tilde{Q}) = \zeta(\tilde{Q}_+) \tilde\Pi_+ + \zeta(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $\zeta(\tilde{Q}_\pm)$ is the quaternion zeta function of the component. The convergence of the quaternion zeta function depends on the quaternion power, which involves the quaternion logarithm, and the theory is largely open.
@@ -307,7 +307,7 @@ $$
 It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions. In the idempotent basis, it decomposes:
 
 $$
-\tilde{G}(\tilde{Q}) = \tilde{G}(\tilde{Q}_+) e_+ + \tilde{G}(\tilde{Q}_-) e_-,
+\tilde{G}(\tilde{Q}) = \tilde{G}(\tilde{Q}_+) \tilde\Pi_+ + \tilde{G}(\tilde{Q}_-) \tilde\Pi_-,
 $$
 
 where $\tilde{G}(\tilde{Q}_\pm)$ is the quaternion Cauchy kernel of the component.
@@ -383,6 +383,26 @@ The higher special functions of a split biquaternion variable fall into three cl
 The common thread is the idempotent decomposition: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and every power-series function reduces to the corresponding function of two ordinary quaternions. The integral-defined functions are more complicated, because the integral must be defined and convergent in each component.
 
 The split biquaternion special functions are therefore a partially developed subject: the power-series functions are well understood via the idempotent decomposition, while the integral-defined functions are open problems. The theory is simpler than the biquaternion case, because the idempotent decomposition reduces everything to two copies of the quaternion case, and the quaternion case is itself well understood.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $j$ | Split complex unit, central, $j^2 = +1$ |
+| $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
+| $\tilde{Q}_\pm = \sum_\mu (q_\mu \pm q'_\mu) e_\mu$ | Idempotent components |
+| $\exp, \log$ | Exponential and logarithm of a split biquaternion |
+| $J_\nu, I_\nu$ | Bessel function and modified Bessel function of order $\nu$ |
+| $P_n, T_n, H_n, L_n$ | Legendre, Chebyshev, Hermite, Laguerre polynomials |
+| ${}_2F_1, {}_pF_q$ | Gauss and generalized hypergeometric functions |
+| $\Gamma$ | Gamma function |
+| $\zeta$ | Riemann zeta function |
+| $\tilde{K}$ | Cauchy kernel |
+| $P(\tilde{Q}, \zeta)$ | Poisson kernel |
+| $G(\tilde P, \tilde{Q})$ | Green's function |
 
 ## Further Reading
 

@@ -19,7 +19,7 @@ Throughout, $\mathbb{K}$ denotes $\mathbb{R}$ or $\mathbb{C}$ and all spaces are
 
 (iii) $C(K)$ for a compact Hausdorff space $K$, under $\|f\|_\infty=\sup_{x \in K}|f(x)|$.
 
-(iv) $L^p(\mu)$, $1 \le p<\infty$, under $\|f\|_p=(\int|f|^p\,d\mu)^{1/p}$, after identifying functions equal almost everywhere.
+(iv) The $L^p(\mu)$ spaces, the standard Banach spaces of Part III: they are built from the integral, so they are named here and constructed there, where the measure is available.
 
 (v) For normed spaces $X,Y$, the space $B(X,Y)$ of bounded linear maps under the operator norm defined below; this is the standard example of a normed space whose elements are themselves maps.
 
@@ -57,7 +57,7 @@ $$
 
 **Definition.** A linear bijection $T:X \to Y$ is a **topological isomorphism** if $T$ and $T^{-1}$ are bounded, and an **isometry** if $\|Tx\|=\|x\|$ for all $x$; an isometric isomorphism is a **linear isometry**. Two norms are equivalent exactly when the identity is a topological isomorphism.
 
-**Example.** The map $\ell^p \to (\ell^q)^*$, $x \mapsto (y \mapsto \sum_i x_i\overline{y_i})$, is an isometric isomorphism for $1<p<\infty$ with $1/p+1/q=1$; the same formula identifies $\ell^1$ with $(c_0)^*$ and $\ell^\infty$ with $(\ell^1)^*$. The dual of $L^p(\mu)$ is $L^q(\mu)$ for $1<p<\infty$ and $\mu$ $\sigma$-finite, and the dual of $C(K)$ is the space of finite signed or complex measures by the Riesz–Markov theorem.
+**Example.** The map $\ell^p \to (\ell^q)^*$, $x \mapsto (y \mapsto \sum_i x_i\overline{y_i})$, is an isometric isomorphism for $1<p<\infty$ with $1/p+1/q=1$; the same formula identifies $\ell^1$ with $(c_0)^*$ and $\ell^\infty$ with $(\ell^1)^*$. The dual of $C(K)$ is the space of finite signed or complex measures by the Riesz–Markov theorem — a Part III theorem, quoted here for the identification — and the duality of the $L^p$ spaces has the same shape as $(\ell^p)^* \cong \ell^q$; that statement is measure-theoretic and is Part III's, quoted there.
 
 ## Completeness
 
@@ -139,9 +139,9 @@ $$
 
 *Proof.* Equivalence of the three norms reduces to equivalence of the corresponding norms on $\mathbb{K}^n$, together with homogeneity. Cauchy sequences are Cauchy in each coordinate and conversely, which gives both the completeness statement and the diagonal limit. For the countable case fix nonzero $x_i \in X_i$ with $\sum_i\|x_i\|<\infty$, and put $x^{(k)}=(x_1,\dots,x_k,0,\dots)$. Then $\|x^{(k)}-x^{(m)}\|$ is $\sum_{i>\min(k,m)}^{\max(k,m)}\|x_i\|$ for the sum norm and $\max_{i>\min(k,m)}\|x_i\|$ for the supremum norm, and both tend to $0$, so $(x^{(k)})$ is Cauchy in either norm. It has no limit in the direct sum: a limit $y$ there has finite support, and for $j$ outside that support and $k \ge j$ one has $\|x^{(k)}-y\| \ge \|x_j\|$, a fixed positive number, so the distance does not tend to $0$. Hence the direct sum is incomplete in both norms, and the two completions are the sequences with $\sum_i\|x_i\|<\infty$ and those with $\|x_i\| \to 0$. $\square$
 
-**Corollary (completion).** Every normed space $X$ has a completion $\widehat X$, unique up to isometric isomorphism, which is a Banach space containing $X$ as a dense subspace. The completion of the finitely supported sequences under $\|\cdot\|_p$ is $\ell^p$, and the completion of $C[0,1]$ under $\|\cdot\|_1$ is $L^1[0,1]$.
+**Corollary (completion).** Every normed space $X$ has a completion $\widehat X$, unique up to isometric isomorphism, which is a Banach space containing $X$ as a dense subspace. The completion of the finitely supported sequences under $\|\cdot\|_p$ is $\ell^p$.
 
-*Proof.* Complete the metric space $X$; the vector operations and the norm extend by continuity and uniformity, and the result is a Banach space. Uniqueness is the universal property of the completion of a metric space. The finitely supported sequences are dense in $\ell^p$ and the continuous functions are dense in $L^1[0,1]$. $\square$
+*Proof.* Complete the metric space $X$; the vector operations and the norm extend by continuity and uniformity, and the result is a Banach space. Uniqueness is the universal property of the completion of a metric space. The finitely supported sequences are dense in $\ell^p$. $\square$
 
 ## Summary
 
@@ -164,7 +164,7 @@ A quotient $X/M$ by a closed subspace is a normed space with the quotient norm, 
 | $X^*=B(X,\mathbb{K})$ | dual space |
 | $X^{**}$, $J$ | bidual and canonical isometry |
 | $c_0$, $\ell^p$, $\ell^\infty$ | sequence spaces |
-| $C(K)$, $L^p(\mu)$ | function spaces |
+| $C(K)$ | continuous functions on a compact Hausdorff space |
 | $c_1$, $c_2$ | equivalence constants for norms |
 | $M$, $Y$ | subspace, closed subspace |
 | $\mathcal{F}$ | pointwise bounded family of operators |

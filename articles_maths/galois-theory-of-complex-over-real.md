@@ -1,3 +1,4 @@
+
 # __Galois Theory of ℂ/ℝ__
 
 ## Introduction
@@ -8,14 +9,12 @@ The surrounding structure is the point. The base field $\mathbb{R}$ is real clos
 
 Notation is that of *Fields* and *Complex Algebra*: $i^2 = -1$, $\operatorname{Gal}(K/F)$ is the group of $F$-automorphisms of $K$, and $[K:F]$ is the degree. All statements are standard. The two real-analytic inputs needed for the fundamental theorem of algebra — the intermediate value theorem and the existence of real square roots of non-negative reals — are flagged where they are used.
 
-# Part I: The Galois Extension ℂ/ℝ
-
 ## 1. The Extension and Its Degree
 
 The imaginary unit satisfies $i^2 = -1$, so it is a root of $x^2+1 \in \mathbb{R}[x]$. That polynomial has no real root, since in the ordered field $\mathbb{R}$ squares are non-negative while $-1 < 0$, and a quadratic with no root is irreducible. Hence $x^2+1$ is the minimal polynomial of $i$ over $\mathbb{R}$, and
 
 $$
-\mathbb{C} = \mathbb{R}(i) = \mathbb{R}[i] = \{a+bi : a,b \in \mathbb{R}\}, \qquad [\mathbb{C}:\mathbb{R}] = 2, \qquad \mathbb{C} \cong \mathbb{R}[x]/(x^2+1),
+\mathbb{C} = \mathbb{R}(i) = \mathbb{R}[i] = \{a+i b : a,b \in \mathbb{R}\}, \qquad [\mathbb{C}:\mathbb{R}] = 2, \qquad \mathbb{C} \cong \mathbb{R}[x]/(x^2+1),
 $$
 
 with $\{1,i\}$ a basis over $\mathbb{R}$. The two roots of $x^2+1$ are $i$ and $-i$, the conjugates of $i$ over $\mathbb{R}$ in the sense of *Fields*, §8.
@@ -30,7 +29,7 @@ $$
 |\operatorname{Gal}(\mathbb{C}/\mathbb{R})| = [\mathbb{C}:\mathbb{R}] = 2.
 $$
 
-## 3. The Galois Group: Conjugation Generates ℤ/2ℤ
+## 3. The Galois Group: Conjugation Generates $\mathbb{Z}/2\mathbb{Z}$
 
 An $\mathbb{R}$-automorphism $\sigma$ of $\mathbb{C}$ fixes $\mathbb{R}$ and is determined by $\sigma(i)$, because $\mathbb{C} = \mathbb{R}(i)$. Since $\sigma(i)^2 + 1 = \sigma(i^2+1) = 0$, the value $\sigma(i)$ must be a root of the minimal polynomial $x^2+1$, so
 
@@ -41,7 +40,7 @@ $$
 There are at most two such automorphisms, and both occur: the identity, and complex conjugation
 
 $$
-\sigma(z) = \bar{z}, \qquad \sigma(a+bi) = a - bi, \qquad \sigma(i) = -i.
+\sigma(Z) = \bar{Z}, \qquad \sigma(a+i b) = a - i b, \qquad \sigma(i) = -i.
 $$
 
 Conjugation is a field automorphism and an involution, with $\sigma^2 = \operatorname{id}$ and $\sigma \neq \operatorname{id}$. Hence
@@ -61,7 +60,7 @@ For $K/F$ finite Galois with group $G$, the fundamental theorem (*Fields*, §16)
 | $\{e\}$ | $\mathbb{C}$ | $2$ |
 | $G$ | $\mathbb{R}$ | $1$ |
 
-The fixed field of the full group is the fixed field of conjugation, $\mathbb{C}^G = \{z \in \mathbb{C} : \bar{z} = z\} = \mathbb{R}$, as in *Complex Algebra*: $a+bi$ is fixed precisely when $b = 0$. Hence **the only intermediate fields of $\mathbb{C}/\mathbb{R}$ are $\mathbb{R}$ and $\mathbb{C}$**. Both intermediate extensions are Galois, consistent with $G$ being abelian so that every subgroup is normal. Since every degree-$2$ extension of a field of characteristic not $2$ is normal and separable, this is the simplest nontrivial Galois extension.
+The fixed field of the full group is the fixed field of conjugation, $\mathbb{C}^G = \{Z \in \mathbb{C} : \bar{Z} = Z\} = \mathbb{R}$, as in *Complex Algebra*: $a+i b$ is fixed precisely when $b = 0$. Hence **the only intermediate fields of $\mathbb{C}/\mathbb{R}$ are $\mathbb{R}$ and $\mathbb{C}$**. Both intermediate extensions are Galois, consistent with $G$ being abelian so that every subgroup is normal. Since every degree-$2$ extension of a field of characteristic not $2$ is normal and separable, this is the simplest nontrivial Galois extension.
 
 ## 5. Real Closed Fields and the Artin–Schreier Characterization
 
@@ -85,15 +84,13 @@ $$
 
 The degree $2$ is the minimum for the algebraic closure of a field that is not itself algebraically closed, and a field with finite absolute Galois group is either algebraically closed (trivial group) or real closed (group $\mathbb{Z}/2\mathbb{Z}$); so $\mathbb{R}$ realizes the smallest nontrivial absolute Galois group.
 
-# Part II: Closure, Order, and Model Theory
-
 ## 6. The Fundamental Theorem of Algebra and Equivalent Formulations
 
 **Theorem.** $\mathbb{C}$ is algebraically closed.
 
 For a field $K$ the following are equivalent, and any may serve as the definition (*Fields*, §11): **(a)** every nonconstant polynomial over $K$ has a root in $K$; **(b)** every nonconstant polynomial factors into linear factors; **(c)** every irreducible polynomial over $K$ is linear; **(d)** $K$ has no nontrivial finite (equivalently algebraic) extension; **(e)** $K = \overline{K}$. For $K = \mathbb{C}$, a nontrivial finite extension would contain a simple extension $\mathbb{C}(\alpha)$ whose minimal polynomial has no root, so (a) and (d) agree; and because $[\mathbb{C}:\mathbb{R}] = 2$, (a) is equivalent to **(f)** $\mathbb{R}$ is real closed, by Artin–Schreier (b). Thus the fundamental theorem of algebra and the real-closedness of $\mathbb{R}$ are one statement seen from the two ends of the extension.
 
-**Proof sketch.** Two real-analytic inputs are used: **(i)** every odd-degree real polynomial has a real root (intermediate value theorem); **(ii)** every non-negative real has a square root, so every $z = a+bi$ has a square root, namely $\pm\bigl(\sqrt{(|z|+a)/2} + i\,\operatorname{sgn}(b)\sqrt{(|z|-a)/2}\bigr)$ with $|z|^2 = a^2+b^2$.
+**Proof sketch.** Two real-analytic inputs are used: **(i)** every odd-degree real polynomial has a real root (intermediate value theorem); **(ii)** every non-negative real has a square root, so every $Z = a+i b$ has a square root, namely $\pm\bigl(\sqrt{(|Z|+a)/2} + i\,\operatorname{sgn}(b)\sqrt{(|Z|-a)/2}\bigr)$ with $|Z|^2 = a^2+b^2$.
 
 Suppose $\mathbb{C}$ is not algebraically closed. The normal closure over $\mathbb{R}$ of a proper finite extension is a finite Galois extension $L/\mathbb{R}$ with $L \supseteq \mathbb{C}$ and $L \neq \mathbb{C}$, of group $G$ with $|G| = [L:\mathbb{R}] = 2[L:\mathbb{C}]$. Write $|G| = 2^s m$ with $m$ odd. The fixed field of a Sylow $2$-subgroup has degree $m$ over $\mathbb{R}$, and $\mathbb{R}$ has no odd-degree extension by (i); so $m = 1$ and $G$ is a $2$-group. Since $L \neq \mathbb{C}$ we have $|G| \geq 4$, so $G$ has a subgroup $H$ of index $2$, whose fixed field $M$ satisfies $[M:\mathbb{R}] = 2$. A degree-$2$ extension of $\mathbb{R}$ is $\mathbb{R}(\sqrt{d})$ with $d$ a non-square; since $M \neq \mathbb{R}$, $d < 0$, so $M$ contains a square root of $-1$, necessarily $\pm i$, and hence $M = \mathbb{C}$. Then $M = \mathbb{C}$, so $H = \operatorname{Gal}(L/\mathbb{C})$ is a $2$-group of order $|G|/2$. If $|H| > 1$ it has a subgroup $N$ of index $2$, whose fixed field $M'$ satisfies $[M':\mathbb{C}] = [H:N] = 2$, and by (ii) every quadratic over $\mathbb{C}$ splits, so $M' = \mathbb{C}$, a contradiction; hence $|H| = 1$, $|G| = 2$, and $[L:\mathbb{C}] = 1$, contradicting $L \neq \mathbb{C}$. Hence $\mathbb{C}$ is algebraically closed. $\square$
 
@@ -129,8 +126,6 @@ a degree-$2$ radical (indeed cyclic) extension, with no solvability obstruction.
 
 The naive reading that "$\mathbb{C}$ cannot be reached from $\mathbb{R}$ by radicals because $-1$ has no real square root" confuses a radical extension with a tower of **real** extensions. If every step must remain inside $\mathbb{R}$ — for instance if only radicals $\sqrt[n]{a}$ with $a > 0$ are allowed — the tower never leaves $\mathbb{R}$, and a subfield of $\mathbb{R}$ cannot be $\mathbb{C}$; but a radical extension allows a root of $-1$, and the tower $\mathbb{R} \subseteq \mathbb{C}$ with $\alpha^2 = -1$ has degree $2$. Consistently, $\mathbb{R}$ has no proper finite extension other than $\mathbb{C}$, so this is the only nontrivial radical tower over $\mathbb{R}$.
 
-# Part III: Comparisons and the Automorphism Group
-
 ## 10. Comparison with Finite Fields
 
 For prime $p$ and $n \geq 1$ the extension $\mathbb{F}_{p^n}/\mathbb{F}_p$ is Galois of degree $n$, with
@@ -148,7 +143,7 @@ and its subfields are the fields $\mathbb{F}_{p^m}$ with $m \mid n$ (*Fields*, �
 
 The differences are instructive. No finite field is algebraically closed, and $\overline{\mathbb{F}_p}$ is infinite over $\mathbb{F}_p$, with $\operatorname{Gal}(\overline{\mathbb{F}_p}/\mathbb{F}_p) \cong \widehat{\mathbb{Z}} = \varprojlim_n \mathbb{Z}/n\mathbb{Z}$ topologically generated by Frobenius; by contrast $\operatorname{Gal}(\overline{\mathbb{R}}/\mathbb{R}) = \mathbb{Z}/2\mathbb{Z}$. The analogue of adjoining $i$ depends on $p$: $-1$ is a square in $\mathbb{F}_p$ exactly when $p = 2$ or $p \equiv 1 \pmod 4$. Hence for $p \equiv 1 \pmod 4$ one has $\mathbb{F}_p(i) = \mathbb{F}_p$; for $p \equiv 3 \pmod 4$ one gets the quadratic extension $\mathbb{F}_{p^2}$; and for $p = 2$ the polynomial $x^2+1 = (x+1)^2$ is a square and is not separable. So $\mathbb{C}/\mathbb{R}$ behaves like the case $p \equiv 3 \pmod 4$, except that over $\mathbb{R}$ the element $-1$ is never a square because $\mathbb{R}$ is ordered.
 
-## 11. Comparison with the Algebraic Closure of ℚ
+## 11. Comparison with the Algebraic Closure of $\mathbb{Q}$
 
 $\overline{\mathbb{Q}}$ is algebraically closed of characteristic $0$, but $\overline{\mathbb{Q}}/\mathbb{Q}$ is infinite, and $\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ is the absolute Galois group of $\mathbb{Q}$: an infinite profinite group, not abelian and not explicitly known. It has many finite quotients (the inverse Galois problem asks which finite groups occur, and remains open, though all solvable groups and the symmetric groups do). This is the sharpest contrast with the group $\mathbb{Z}/2\mathbb{Z}$ of $\mathbb{C}/\mathbb{R}$.
 
@@ -168,11 +163,11 @@ the same quadratic pattern as $\mathbb{C} = \mathbb{R}(i)$. The difference is en
 
 Note also that $\mathbb{C}$ is an algebraic closure of $\mathbb{R}$ but **not** of $\mathbb{Q}$: $\mathbb{C}/\mathbb{Q}$ is transcendental. Its algebraic part over $\mathbb{Q}$ is the countable field $\overline{\mathbb{Q}}$, and $\mathbb{C}$ is obtained from it by adjoining a transcendence basis of cardinality $\mathfrak{c} = 2^{\aleph_0}$.
 
-## 12. The Automorphism Group of ℂ
+## 12. The Automorphism Group of $\mathbb{C}$
 
 Three nested groups must be distinguished: the Galois group $\operatorname{Gal}(\mathbb{C}/\mathbb{R})$, the group of continuous automorphisms, and the full automorphism group $\operatorname{Aut}(\mathbb{C})$ of $\mathbb{C}$ as a field.
 
-**$\mathbb{R}$-linear automorphisms.** A field automorphism is $\mathbb{R}$-linear precisely when it fixes $\mathbb{R}$, that is, precisely when it lies in $\operatorname{Gal}(\mathbb{C}/\mathbb{R}) = \{\operatorname{id}, \text{conjugation}\}$ by §3.
+**$\mathbb{R}$-linear automorphisms.** A field automorphism is $\mathbb{R}$-linear precisely when it fixes $\mathbb{R}$, that is, precisely when it lies in $\operatorname{Gal}(\mathbb{C}/\mathbb{R}) = \{\operatorname{id}, \text{conjugation}\}$ by the computation of the Galois group above.
 
 **Continuous automorphisms.** Give $\mathbb{C}$ its usual topology. A continuous field automorphism $\sigma$ fixes $\mathbb{Q}$, hence, by continuity and the density of $\mathbb{Q}$ in $\mathbb{R}$,
 
@@ -208,22 +203,27 @@ The article places the extension in its wider setting. Real closed fields are ch
 
 | Symbol | Meaning |
 |---|---|
+| $F$, $K$, $E$ | Base field, extension field, intermediate field |
 | $\mathbb{R}, \mathbb{C}$ | Real and complex fields |
-| $i$, $\bar{z}$ | Imaginary unit $i^2 = -1$; complex conjugation |
+| $i$, $\bar{Z}$ | Imaginary unit $i^2 = -1$; complex conjugation |
 | $[K:F]$, $\operatorname{Gal}(K/F)$ | Degree; group of $F$-automorphisms |
+| $G$, $H$, $K^H$ | Galois group, a subgroup, its fixed field |
 | $\overline{F}$ | Algebraic closure of $F$ |
 | $\overline{\mathbb{Q}}$, $\overline{\mathbb{Q}} \cap \mathbb{R}$ | Algebraic closure of $\mathbb{Q}$; real algebraic numbers |
 | $\mathbb{F}_{p^n}$, $\varphi(x) = x^p$ | Finite field; Frobenius automorphism |
-| $\widehat{\mathbb{Z}}$ | Absolute Galois group of $\mathbb{F}_p$ |
+| $\widehat{\mathbb{Z}} = \varprojlim_n \mathbb{Z}/n\mathbb{Z}$ | Absolute Galois group of $\mathbb{F}_p$ |
 | $\operatorname{Aut}(\mathbb{C})$ | All field automorphisms of $\mathbb{C}$ |
+| $P$ | Positive cone of an ordering of a field |
+| $\mathrm{RCF}$, $\mathrm{ACF}_0$ | Theories of real closed fields; of algebraically closed fields of characteristic $0$ |
+| $B$, $\operatorname{Sym}(B)$, $\mathfrak{c}$ | Transcendence basis of $\mathbb{C}$ over $\mathbb{Q}$, its symmetry group, the cardinality $2^{\aleph_0}$ |
 
 ## Further Reading
 
-- Emil Artin, *Galois Theory* (Dover, 2nd ed. 1998).
-- David S. Dummit and Richard M. Foote, *Abstract Algebra* (Wiley, 3rd ed. 2004).
-- Benjamin Fine and Gerhard Rosenberger, *The Fundamental Theorem of Algebra* (Springer, 1997).
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005).
-- Serge Lang, *Algebra* (Springer, 3rd ed. 2002).
-- Rudolf Lidl and Harald Niederreiter, *Finite Fields* (Cambridge University Press, 2nd ed. 1997).
-- David Marker, *Model Theory: An Introduction* (Springer, 2002).
-- Ian Stewart, *Galois Theory* (Chapman & Hall/CRC, 4th ed. 2015).
+- Emil Artin, *Galois Theory* (Dover, 1998), for the Galois correspondence and the quadratic extension.
+- David S. Dummit and Richard M. Foote, *Abstract Algebra* (Wiley, 2004), for the fundamental theorem of Galois theory and the worked quadratic extensions.
+- Benjamin Fine and Gerhard Rosenberger, *The Fundamental Theorem of Algebra* (Springer, 1997), for the real-closedness of $\mathbb{R}$ and the degree of $\mathbb{C}$ over $\mathbb{R}$.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for orderings of fields and the theory of real-closed fields.
+- Serge Lang, *Algebra* (Springer, 2002), for field automorphisms, separable and normal extensions and the Galois group.
+- Rudolf Lidl and Harald Niederreiter, *Finite Fields* (Cambridge University Press, 1997), for the Frobenius automorphism and the finite-field analogue of the Galois group.
+- David Marker, *Model Theory: An Introduction* (Springer, 2002), for the theories $\mathrm{RCF}$ and $\mathrm{ACF}_0$ and quantifier elimination.
+- Ian Stewart, *Galois Theory* (Chapman & Hall/CRC, 2015), for the correspondence between subgroups and intermediate fields.

@@ -7,7 +7,7 @@ The companion article *Lie Algebras* introduces Lie algebras, the Jacobi identit
 
 The theory is carried out over a field $K$ of characteristic zero; this is the setting in which the classical results hold cleanly, and where a result needs more than that — an algebraically closed field, or the finite dimension of the algebra — this is stated explicitly. Lie algebras are written in lowercase fraktur, so $\mathfrak{g}$, $\mathfrak{h}$ are Lie algebras, $\mathfrak{i}$ is an ideal, $\mathfrak{r}$ the radical, $\mathfrak{n}$ the nilradical, and $\mathfrak{z}(\mathfrak{g})$ the centre; the field is $K$, and $R$ is reserved for the commutative-ring statements of the earlier articles. No physics is invoked.
 
-The general facts about Lie algebras used below — the definition, the Jacobi identity, ideals, quotients, homomorphisms, the centre, the derived subalgebra, and the elementary properties of solvable and nilpotent algebras — are assumed from *Lie Algebras*, and the representation-theoretic notions are developed further .
+The general facts about Lie algebras used below — the definition, the Jacobi identity, ideals, quotients, homomorphisms, the centre, the derived subalgebra, and the elementary properties of solvable and nilpotent algebras — are assumed from *Lie Algebras*, and the representation-theoretic notions are developed further.
 
 ## Recapitulation and the Radical
 

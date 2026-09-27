@@ -161,8 +161,8 @@ The CSP fails for $SL_2(\mathbb{Z})$: the group has non-congruence subgroups, of
 
 ## The Boundary with Analysis
 
-- The **spectral theory of automorphic forms**, the **trace formula** and the **Langlands decomposition** of $L^2(G/\Gamma)$ areand *Analysis on Groups* in Part III.
-- The **equidistribution of Hecke points**, the **measure classification** and the counting of rational points are.
+- The **spectral theory of automorphic forms**, the **trace formula** and the **Langlands decomposition** of $L^2(G/\Gamma)$ are those of *Analysis on Groups* in Part III.
+- The **equidistribution of Hecke points**, the **measure classification** and the counting of rational points are Part III's.
 - The **adelic formulation** of the arithmeticity and the congruence subgroup problem is not covered here.
 - The **buildings** attached to a semisimple group over a local field, which appear in the proof of the CSP as the spaces on which the congruence subgroups act, are the subject and with this one.
 - What is *not* deferred: the definitions of algebraic group, arithmetic subgroup and congruence subgroup; the Borel–Harish-Chandra theorem and its cocompactness criterion; reduction theory at the level of Siegel sets; finite generation and finite presentation; the congruence subgroup property and its failure for $SL_2$; superrigidity and arithmeticity; and the expander construction at the level of groups.

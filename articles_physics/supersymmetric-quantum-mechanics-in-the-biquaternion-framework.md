@@ -89,7 +89,7 @@ $$
 
 the central scalar d'Alembertian. The first-order pair of operators $(\tilde{\nabla},\bar{\tilde{\nabla}})$ is therefore a supercharge pair in the sense of the previous section, with the following dictionary.
 
-**The grading is chirality.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and its two minimal left ideals are the two chiral halves; the chiral projectors $P_\pm = \frac12(1\pm\gamma_5)$ split the module. The gradient $\tilde{\nabla}$ maps one chiral ideal into the other: this is the statement that the mass term is off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$. The $\mathbb{Z}_2$ grading of the supersymmetry is the chirality grading, and the supercharge is the biquaternion Dirac operator $\mathcal{Q}$ of the next paragraph, which is odd under it.
+**The grading is chirality.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and its two minimal left ideals are the two chiral halves; the chiral projectors $\tilde\Pi_{L,R} = \frac12(1\pm\gamma_5)$ split the module. The gradient $\tilde{\nabla}$ maps one chiral ideal into the other: this is the statement that the mass term is off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$. The $\mathbb{Z}_2$ grading of the supersymmetry is the chirality grading, and the supercharge is the biquaternion Dirac operator $\mathcal{Q}$ of the next paragraph, which is odd under it.
 
 **The superalgebra is the mass pair.** The massive biquaternionic Dirac equation is the pair
 

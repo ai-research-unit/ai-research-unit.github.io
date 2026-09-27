@@ -81,9 +81,9 @@ $$
 \tilde{Q} \circ \tilde{R} = \tfrac{1}{2}\left(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}\right) ,
 $$
 
-and with this product it is a Jordan algebra over $\mathbb{R}$, commutative, of degree two, isomorphic through $\Phi$ to the Jordan algebra $H_2(\mathbb{C})$ of Hermitian $2 \times 2$ complex matrices.
+and with this product it is a Jordan algebra over $\mathbb{R}$, commutative, of degree two.
 
-**Proof.** $(\tilde{Q}\tilde{R}+\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}\tilde{Q} + \tilde{Q}\tilde{R}$, so the symmetrized product of two Hermitian elements is Hermitian; commutativity is built into the definition; and $\Phi$ is an algebra isomorphism of $\mathbb{B}$ onto $M_2(\mathbb{C})$ carrying $\mathbb{M}_+$ onto the Hermitian matrices, through which the symmetrized product becomes $\tfrac12(AB+BA)$. $\square$
+**Proof.** $(\tilde{Q}\tilde{R}+\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}^{\dagger}\tilde{Q}^{\dagger} + \tilde{Q}^{\dagger}\tilde{R}^{\dagger} = \tilde{R}\tilde{Q} + \tilde{Q}\tilde{R}$, so the symmetrized product of two Hermitian elements is again Hermitian; commutativity is built into the definition, and the product is bilinear, so it makes $\mathbb{M}_+$ a commutative algebra over $\mathbb{R}$ with the Jordan identity. $\square$
 
 Two consequences are read off. First, the subspace is **closed under powers**: $\tilde{Q}^2 = \tilde{Q} \circ \tilde{Q} \in \mathbb{M}_+$, and by induction every positive power of a Hermitian element is Hermitian. Second, the subspace is power-associative but not associative, which is exactly the Jordan axiom pattern; the general theory is in *Jordan Algebras*.
 
@@ -144,32 +144,14 @@ The second half of the theorem is the sharpest difference between this subspace 
 **Theorem.** The non-zero idempotents of $\mathbb{M}_+$ are exactly the elements
 
 $$
-\tilde{E} = \frac{e_0 + i\hat{\mathbf{u}}}{2} , \qquad \hat{\mathbf{u}} \in \operatorname{span}\{e_1,e_2,e_3\}, \ |\hat{\mathbf{u}}| = 1 ,
+\tilde\Pi = \frac{e_0 + i\hat{\mathbf{u}}}{2} , \qquad \hat{\mathbf{u}} \in \operatorname{span}\{e_1,e_2,e_3\}, \ |\hat{\mathbf{u}}| = 1 ,
 $$
 
-together with $e_0$; each of them has zero norm form, and any two with opposite directions are orthogonal, $\tilde{E}_{+}\tilde{E}_{-} = 0$.
+together with $e_0$; each of them has zero norm form, and any two with opposite directions are orthogonal, $\tilde\Pi_{+}\tilde\Pi_{-} = 0$.
 
 **Proof.** Let $\tilde{Q} = q_0e_0 + i\mathbf{q}'$ satisfy $\tilde{Q}^2 = \tilde{Q}$. Comparing the square formula with $\tilde{Q}$ gives $q_0^2 + (\mathbf{q}',\mathbf{q}') = q_0$ and $2q_0\mathbf{q}' = \mathbf{q}'$. If $\mathbf{q}' = 0$ then $q_0 \in \{0,1\}$, and if $\mathbf{q}' \neq 0$ then $q_0 = \tfrac12$ and $(\mathbf{q}',\mathbf{q}') = \tfrac14$, which is the displayed family; the orthogonality is $\left(\tfrac{e_0+i\hat{\mathbf{u}}}{2}\right)\left(\tfrac{e_0-i\hat{\mathbf{u}}}{2}\right) = \tfrac14(e_0 - (i\hat{\mathbf{u}})^2 + i\hat{\mathbf{u}} - i\hat{\mathbf{u}}) = \tfrac14(e_0 - e_0) = 0$. $\square$
 
 The family is a two-sphere's worth of mutually orthogonal idempotent pairs, and it is the source of the two minimal left ideals of the algebra: a primitive idempotent of $\mathbb{B}$ is a minimal idempotent of $\mathbb{M}_+$ up to a central phase, as developed in *Biquaternion Ideals and Peirce Decomposition*.
-
-## The Matrix Image
-
-**Proposition.** Under the matrix realization,
-
-$$
-\Phi\!\left(\mathbb{M}_+\right) = \left\{ M \in M_2(\mathbb{C}) : M = M^{\dagger} \right\} ,
-$$
-
-the Hermitian matrices, and on this image
-
-$$
-\operatorname{Tr}\Phi(\tilde{Q}) = 2q_0 \in \mathbb{R} , \qquad \det\Phi(\tilde{Q}) = N(\tilde{Q}) \in \mathbb{R} .
-$$
-
-**Proof.** The fixed space of $\dagger$ on $\mathbb{B}$ is carried by the isomorphism onto the fixed space of the conjugate transpose on $M_2(\mathbb{C})$, by the compatibility of $\Phi$ with the involutions; the trace and the determinant are those of the general matrix with real scalar and imaginary vector coefficients, both real. $\square$
-
-As an example, $\Phi(e_0 + ie_1) = \begin{pmatrix} 1 & 1 \\ 1 & 1\end{pmatrix}$, a Hermitian matrix of rank one, determinant zero and square equal to twice itself, so that half of it is an idempotent — the matrix form of the theorem above. The trace and determinant statements identify the subspace with the Jordan algebra $H_2(\mathbb{C})$ through the standard trace and determinant of the matrix picture.
 
 ## The Four Involutions on It
 
@@ -206,27 +188,21 @@ $$
 \tilde{Q}^2 = (1+1)e_0 + 2i e_1 = 2\tilde{Q} , \qquad \frac{\tilde{Q}}{2} = \frac{e_0+ie_1}{2} ,
 $$
 
-so half of it is an idempotent, consistent with $\tilde{Q}^2 = 2\tilde{Q}$ and with the classification: the idempotent $\tilde{Q}/2$ has scalar part $\tfrac12$ and its imaginary vector part is a unit vector. Its matrix image is the rank-one Hermitian matrix $\begin{pmatrix} 1 & 1 \\ 1 & 1\end{pmatrix}$. Take instead $\tilde{Q} = e_0$: norm form $1$, a unit of inverse $e_0$; and $\tilde{Q} = ie_1$: norm form $-1$, also a unit, with inverse $\tilde{Q}$ itself because $\tilde{Q}^2 = e_0$.
+so half of it is an idempotent, consistent with $\tilde{Q}^2 = 2\tilde{Q}$ and with the classification: the idempotent $\tilde{Q}/2$ has scalar part $\tfrac12$ and its imaginary vector part is a unit vector. Take instead $\tilde{Q} = e_0$: norm form $1$, a unit of inverse $e_0$; and $\tilde{Q} = ie_1$: norm form $-1$, also a unit, with inverse $\tilde{Q}$ itself because $\tilde{Q}^2 = e_0$.
 
 ### An Orthogonal Idempotent Pair
 
 With $\hat{\mathbf{u}} = e_1$ the two idempotents are
 
 $$
-\tilde{E}_+ = \frac{e_0+ie_1}{2} , \qquad \tilde{E}_- = \frac{e_0-ie_1}{2} , \qquad \tilde{E}_+\tilde{E}_- = 0 , \qquad \tilde{E}_+ + \tilde{E}_- = e_0 ,
+\tilde\Pi_+ = \frac{e_0+ie_1}{2} , \qquad \tilde\Pi_- = \frac{e_0-ie_1}{2} , \qquad \tilde\Pi_+\tilde\Pi_- = 0 , \qquad \tilde\Pi_+ + \tilde\Pi_- = e_0 ,
 $$
 
 a decomposition of the unit of the algebra into two orthogonal idempotents of the subspace. This is the pair that generates the two minimal left ideals, and it shows that the idempotents of the algebra are not to be found in the centre or in the vector subspace: the centre has only $e_0$ and the vector subspace none at all.
 
 ### A Rigid Element
 
-For $\hat{\mathbf{u}} = \cos\varphi\, e_1 + \sin\varphi\, e_2$ the idempotent $\tilde{E} = \tfrac12(e_0 + i\hat{\mathbf{u}})$ has matrix image
-
-$$
-\Phi(\tilde{E}) = \frac{1}{2}\begin{pmatrix} 1 & \sin\varphi + i\cos\varphi \\ \sin\varphi - i\cos\varphi & 1 \end{pmatrix} ,
-$$
-
-of trace $1$ and determinant $0$: a rank-one projector. The whole two-sphere of unit vectors $\hat{\mathbf{u}}$ thus gives a two-sphere of projectors, and two of them are orthogonal exactly when their directions are opposite. The family is the algebraic skeleton of the two minimal left ideals and of the Peirce decomposition of the algebra.
+For $\hat{\mathbf{u}} = \cos\varphi\, e_1 + \sin\varphi\, e_2$ the idempotent $\tilde\Pi = \tfrac12(e_0 + i\hat{\mathbf{u}})$ satisfies $\tilde\Pi^2 = \tilde\Pi$, since $(i\hat{\mathbf{u}})^2 = -e_0$: it is a projector of the subspace. The whole two-sphere of unit vectors $\hat{\mathbf{u}}$ thus gives a two-sphere of projectors, and two of them are orthogonal exactly when their directions are opposite. The family is the algebraic skeleton of the two minimal left ideals and of the Peirce decomposition of the algebra.
 
 ### An Element Not on the Cone and Its Inverse
 
@@ -240,7 +216,7 @@ again in the subspace, since quaternion conjugation preserves $\mathbb{M}_+$ and
 
 ## Summary
 
-The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the set of elements with real scalar part and imaginary vector part, a real vector space of dimension $4$ with basis $e_0, ie_1, ie_2, ie_3$ and decomposition $\mathbb{R}e_0 \oplus \operatorname{span}\{ie_1,ie_2,ie_3\}$. It is not a subalgebra, but it is closed under the symmetrized product, with which it is a Jordan algebra of degree two isomorphic to the Hermitian $2\times2$ matrices; it is closed under powers; and its commutator lands in the anti-Hermitian subspace. The norm form restricts to the real form $q_0^2 - ((q'_1)^2+(q'_2)^2+(q'_3)^2)$ of signature $(1,3)$, so the units are the elements off the isotropic cone $q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2$; the zero divisors are exactly the non-zero elements of the cone, and none of them is nilpotent. The non-trivial idempotents are the elements $\tfrac12(e_0 + i\hat{\mathbf{u}})$ with $\hat{\mathbf{u}}$ a unit real vector, of zero norm form, forming a two-sphere of orthogonal pairs; one such pair sums to the unit and generates the two minimal left ideals. The matrix image is the set of Hermitian matrices, with trace $2q_0$ and determinant $N$. Complex conjugation and quaternion conjugation both negate the vector part, Hermitian conjugation fixes the subspace, and reversal negates it. It is complementary to $\mathbb{M}_-$.
+The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the set of elements with real scalar part and imaginary vector part, a real vector space of dimension $4$ with basis $e_0, ie_1, ie_2, ie_3$ and decomposition $\mathbb{R}e_0 \oplus \operatorname{span}\{ie_1,ie_2,ie_3\}$. It is not a subalgebra, but it is closed under the symmetrized product, with which it is a Jordan algebra of degree two; it is closed under powers; and its commutator lands in the anti-Hermitian subspace. The norm form restricts to the real form $q_0^2 - ((q'_1)^2+(q'_2)^2+(q'_3)^2)$ of signature $(1,3)$, so the units are the elements off the isotropic cone $q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2$; the zero divisors are exactly the non-zero elements of the cone, and none of them is nilpotent. The non-trivial idempotents are the elements $\tfrac12(e_0 + i\hat{\mathbf{u}})$ with $\hat{\mathbf{u}}$ a unit real vector, of zero norm form, forming a two-sphere of orthogonal pairs; one such pair sums to the unit and generates the two minimal left ideals. Complex conjugation and quaternion conjugation both negate the vector part, Hermitian conjugation fixes the subspace, and reversal negates it. It is complementary to $\mathbb{M}_-$.
 
 ## Summary of Notation
 
@@ -255,8 +231,8 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 | $N(\tilde{Q})$ | the norm form, $q_0^2 - (\mathbf{q}',\mathbf{q}')$ on the subspace |
 | $B$ | the symmetric bilinear form polarizing $N$ |
 | $\tilde{Q} \circ \tilde{R}$ | the symmetrized product, $\tfrac12(\tilde{Q}\tilde{R}+\tilde{R}\tilde{Q})$ |
-| $H_2(\mathbb{C})$ | the Jordan algebra of Hermitian $2\times2$ complex matrices |
 | $\hat{\mathbf{u}}$ | a unit real vector, used to parametrize the idempotents |
+| $\tilde\Pi = \tfrac12(e_0+i\hat{\mathbf{u}})$ | the idempotents of $\mathbb{M}_+$, forming the pair $\tilde\Pi_\pm$ |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
 
 ## Further Reading
@@ -264,7 +240,6 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 - *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the Hermitian decomposition, the norm form and the quadratic forms of the algebra
 - *Biquaternion Anti-Hermitian Subspace* (`articles_maths/biquaternion-anti-hermitian-subspace.md`), the complementary subspace, into which the commutator maps
 - *Jordan Algebras* (`articles_maths/jordan-algebras.md`), for the symmetrized product, the Jordan identity and the structure of Hermitian matrix algebras
-- *Special and Exceptional Jordan Algebras* (`articles_maths/special-and-exceptional-jordan-algebras.md`), for the position of $H_2(\mathbb{C})$ among the matrix Jordan algebras
 - *Quadratic Forms over Algebras and Norm Forms* (`articles_maths/quadratic-forms-over-algebras-and-norm-forms.md`), for quadratic forms of signature $(1,3)$ and norm forms over algebras
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the primitive idempotents and the minimal left ideals
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six

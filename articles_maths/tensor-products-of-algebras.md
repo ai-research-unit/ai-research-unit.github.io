@@ -123,7 +123,7 @@ $$
 \mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$ act as central idempotents, so the algebra decomposes as a direct sum of two ideals; the details are.
+the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_\pm = \tfrac{1}{2}(1 \pm j)$ act as central idempotents, so the algebra decomposes as a direct sum of two ideals; the details are below.
 
 **Example (matrix algebras).** For a commutative ring $R$ and positive integers $m, n$, there is an isomorphism of $R$-algebras
 

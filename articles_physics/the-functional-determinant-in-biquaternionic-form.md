@@ -49,7 +49,7 @@ $$
 \qquad
 \log\det S'' = \sum_n \log\lambda_n = \mathrm{Tr}\log S'' ,
 $$
-the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}P_+(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
+the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
 
 **The central case.** If $S''=\kappa\,e_0$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde k\bar{\tilde k}+m^2=\mathcal{M}(\tilde k)$, whose Lorentzian continuation differs from the action's operator $\Box-m^2$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$

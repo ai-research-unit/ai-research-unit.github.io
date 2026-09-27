@@ -71,7 +71,7 @@ block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation
 
 This is where a plausible-looking identification is wrong, and it is worth being explicit.
 
-**The algebra's module is two-dimensional too.** The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}P_+(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$, and the isomorphism $\Phi$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.
+**The algebra's module is two-dimensional too.** The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$, and the isomorphism $\Phi$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.
 
 **The branch factor is external.** The CTP field is a map from the contour pair to the field's own value space; the field's value space is the module (a two-dimensional complex space for a scalar, the spinor module for a spinor). Hence the doubled field space is a **tensor product**,
 $$

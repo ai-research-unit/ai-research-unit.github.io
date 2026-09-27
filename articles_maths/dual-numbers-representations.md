@@ -1,4 +1,5 @@
-# __Dual Numbers Representations__
+
+# __Dual-Numbers Representations__
 
 ## Introduction
 
@@ -15,13 +16,13 @@ Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and t
 A **representation** of $\mathbb{D}'$ is an $R$-module $V$ together with a bilinear map
 
 $$
-\rho : \mathbb{D}' \times V \to V, \qquad \rho(z, v) = z \cdot v,
+\rho : \mathbb{D}' \times V \to V, \qquad \rho(Z, v) = Z \cdot v,
 $$
 
 satisfying
 
 $$
-z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
+Z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
 $$
 
 Equivalently, a representation is an algebra homomorphism
@@ -46,10 +47,10 @@ $$
 E^2 = 0.
 $$
 
-So a representation of $\mathbb{D}'$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $a + b\varepsilon$ is
+So a representation of $\mathbb{D}'$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $a + \varepsilon b$ is
 
 $$
-(a + b\varepsilon) \cdot v = a v + b E(v).
+(a + \varepsilon b) \cdot v = a v + b E(v).
 $$
 
 This is the fundamental structural fact about representations of $\mathbb{D}'$: they are determined by a single square-zero endomorphism.
@@ -59,17 +60,17 @@ This is the fundamental structural fact about representations of $\mathbb{D}'$: 
 The **regular representation** of $\mathbb{D}'$ is $\mathbb{D}'$ acting on itself by left multiplication:
 
 $$
-\rho_{\mathrm{reg}}(z) w = z w, \qquad z, w \in \mathbb{D}'.
+\rho_{\mathrm{reg}}(Z) w = Z w, \qquad Z, w \in \mathbb{D}'.
 $$
 
-This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(z) = z$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $a + b\varepsilon$ to $a \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.
+This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(Z) = Z$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $a + \varepsilon b$ to $a \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.
 
 ### The Trivial Representation
 
 The **trivial representation** (or **augmentation representation**) is the one-dimensional representation on $R$ defined by
 
 $$
-\rho_{\mathrm{triv}}(a + b\varepsilon) = a.
+\rho_{\mathrm{triv}}(a + \varepsilon b) = a.
 $$
 
 This is the representation that sends $\varepsilon$ to zero. It is the quotient of the regular representation by the maximal ideal.
@@ -79,7 +80,7 @@ This is the representation that sends $\varepsilon$ to zero. It is the quotient 
 The **standard representation** is the one-dimensional representation on $R$ defined by
 
 $$
-\rho_{\mathrm{std}}(a + b\varepsilon) = a.
+\rho_{\mathrm{std}}(a + \varepsilon b) = a.
 $$
 
 This coincides with the trivial representation. In the dual case, there is no non-trivial one-dimensional representation, because every algebra homomorphism $\mathbb{D}' \to R$ must send $\varepsilon$ to an element $c \in R$ with $c^2 = 0$, and the only such element in a reduced ring is $c = 0$. So the trivial representation is the only one-dimensional representation.
@@ -91,19 +92,19 @@ This coincides with the trivial representation. In the dual case, there is no no
 **Theorem.** Let $V$ be an $R$-module. The representations of $\mathbb{D}'$ on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, via the correspondence
 
 $$
-E \longleftrightarrow \rho_E(a + b\varepsilon) = a \cdot \mathrm{id}_V + b E.
+E \longleftrightarrow \rho_E(a + \varepsilon b) = a \cdot \mathrm{id}_V + b E.
 $$
 
-**Proof.** Given a representation $\rho$, the endomorphism $E = \rho(\varepsilon)$ satisfies $E^2 = \rho(\varepsilon^2) = 0$. Conversely, given a square-zero endomorphism $E$, the formula $\rho_E(a + b\varepsilon) = a \cdot \mathrm{id}_V + b E$ defines an algebra homomorphism, because
+**Proof.** Given a representation $\rho$, the endomorphism $E = \rho(\varepsilon)$ satisfies $E^2 = \rho(\varepsilon^2) = 0$. Conversely, given a square-zero endomorphism $E$, the formula $\rho_E(a + \varepsilon b) = a \cdot \mathrm{id}_V + b E$ defines an algebra homomorphism, because
 
 $$
-\rho_E((a + b\varepsilon)(c + d\varepsilon)) = \rho_E(ac + (ad + bc)\varepsilon) = ac \cdot \mathrm{id}_V + (ad + bc) E,
+\rho_E((a + \varepsilon b)(c + \varepsilon d)) = \rho_E(ac + (ad + bc)\varepsilon) = ac \cdot \mathrm{id}_V + (ad + bc) E,
 $$
 
 and
 
 $$
-\rho_E(a + b\varepsilon) \rho_E(c + d\varepsilon) = (a \cdot \mathrm{id}_V + b E)(c \cdot \mathrm{id}_V + d E) = ac \cdot \mathrm{id}_V + (ad + bc) E + bd E^2 = ac \cdot \mathrm{id}_V + (ad + bc) E,
+\rho_E(a + \varepsilon b) \rho_E(c + \varepsilon d) = (a \cdot \mathrm{id}_V + b E)(c \cdot \mathrm{id}_V + d E) = ac \cdot \mathrm{id}_V + (ad + bc) E + bd E^2 = ac \cdot \mathrm{id}_V + (ad + bc) E,
 $$
 
 since $E^2 = 0$. The two agree. $\square$
@@ -223,7 +224,7 @@ $$
 E^* : V^* \to V^*, \qquad (E^* f)(v) = -f(E v).
 $$
 
-The sign is a convention — $(E^*)^2 = 0$ holds for either choice — and it makes the contragredient action the one induced by dual conjugation, $(z \cdot f)(v) = f(\bar{z} v)$. Indeed,
+The sign is a convention — $(E^*)^2 = 0$ holds for either choice — and it makes the contragredient action the one induced by dual conjugation, $(Z \cdot f)(v) = f(\bar{Z} v)$. Indeed,
 
 $$
 (E^*)^2 f = E^*(E^* f) = - (E^* f) \circ E = f \circ E \circ E = f \circ E^2 = 0.
@@ -313,9 +314,9 @@ So the representation theory of $\mathbb{D}'$ is controlled by the Ext algebra, 
 
 The representation theory of $\mathbb{D}'$ differs from that of the split complex algebra $\mathbb{D}$ in several ways.
 
-**Idempotents versus nilpotents.** The split complex algebra has two non-trivial idempotents $e_+$ and $e_-$, which give two one-dimensional representations. The dual algebra has no non-trivial idempotents, and the only irreducible representation is the trivial one.
+**Idempotents versus nilpotents.** The split complex algebra has two non-trivial idempotents $\Pi_1$ and $\Pi_2$, which give two one-dimensional representations. The dual algebra has no non-trivial idempotents, and the only irreducible representation is the trivial one.
 
-**Semisimplicity.** The split complex algebra over a field is isomorphic to $F \oplus F$, which is semisimple. Its representations are direct sums of copies of the two irreducible representations. The dual algebra is local, with nilpotent maximal ideal, and its representations are not semisimple in general.
+**Semisimplicity.** The split complex algebra over a field is isomorphic to $F \oplus F$, which is semisimple. Its representations are direct sums of copies of the two irreducible representations. Over a field the dual algebra is local, with nilpotent maximal ideal, and its representations are not semisimple in general.
 
 **Number of indecomposables.** The split complex algebra has two indecomposable representations (the two one-dimensional ones). The dual algebra has two indecomposable representations (the trivial one and the regular one). So both have two, but the structure is different: for $\mathbb{D}$, the two are irreducible; for $\mathbb{D}'$, only one is irreducible, and the other is a non-split extension.
 
@@ -327,7 +328,7 @@ The representation theory of $\mathbb{D}'$ differs from that of the split comple
 
 A representation of $\mathbb{D}'$ is an $R$-module $V$ together with a bilinear action of the algebra on it, equivalently a unital algebra homomorphism $\mathbb{D}' \to \operatorname{End}_R(V)$. The classification reduces the theory to linear algebra: the representations on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, the representation being recovered from $E$ as the action of $\varepsilon$.
 
-The theory is not semisimple. Because $\mathbb{D}'$ is a local ring with nilpotent maximal ideal rather than a field, the category of representations is abelian but not semisimple, and the indecomposable representations are not the irreducible ones. Schur's lemma still holds, so an endomorphism of an irreducible representation is a scalar multiple of the identity, while the classification of the indecomposables is governed by the Jordan structure of the nilpotent $E$.
+The theory is not semisimple. Over a field, because $\mathbb{D}'$ is a local ring with nilpotent maximal ideal rather than a field, the category of representations is abelian but not semisimple, and the indecomposable representations are not the irreducible ones. Schur's lemma still holds, so an endomorphism of an irreducible representation is a scalar multiple of the identity, while the classification of the indecomposables is governed by the Jordan structure of the nilpotent $E$.
 
 The article also records the representation ring $R(\mathbb{D}')$, the dual or contragredient representation on $V^*$, and the homomorphisms, the $R$-linear maps $T$ with $T \circ E = F \circ T$. The final section compares the theory with that of the split complex algebra, where the two nontrivial idempotents take the place of the nilpotent and the algebra is correspondingly decomposable.
 

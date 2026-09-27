@@ -193,10 +193,10 @@ Four features of the algebra obstruct the programme, and they are logically inde
 
 In both degenerate cases $D$ is not elliptic, the characteristic variety meets the real space, and the theory of §Consequences of Ellipticity is not available.
 
-**Example (the degenerate systems solved explicitly).** For $\mathbb{D}$, write a function in the idempotent decomposition $f = f_+e_+ + f_-e_-$ and use the characteristic coordinates $\xi_\pm = x_0 \pm x_1$, so that $\partial_0 = \partial_+ + \partial_-$ and $\partial_1 = \partial_+ - \partial_-$ and therefore $e_+\partial_+ + e_-\partial_- = \tfrac12(\partial_0 + j\partial_1)$. Then
+**Example (the degenerate systems solved explicitly).** For $\mathbb{D}$, write a function in the idempotent decomposition $f = f_+\Pi_+ + f_-\Pi_-$ and use the characteristic coordinates $\xi_\pm = x_0 \pm x_1$, so that $\partial_0 = \partial_+ + \partial_-$ and $\partial_1 = \partial_+ - \partial_-$ and therefore $\Pi_+\partial_+ + \Pi_-\partial_- = \tfrac12(\partial_0 + j\partial_1)$. Then
 
 $$
-D = \partial_0 + j\partial_1 = 2\bigl(e_+\partial_+ + e_-\partial_-\bigr),
+D = \partial_0 + j\partial_1 = 2\bigl(\Pi_+\partial_+ + \Pi_-\partial_-\bigr),
 $$
 
 so $f$ is left regular exactly when $f_+$ is a function of $\xi_-$ alone and $f_-$ is a function of $\xi_+$ alone. The regular functions of $\mathbb{D}$ therefore depend on arbitrary functions of one real variable, and they obey neither unique continuation nor Liouville's theorem nor the maximum principle: the bounded function
@@ -311,7 +311,7 @@ The method above takes a different shape for each algebra, and the articles of c
 | $\mathbb{H}_{\mathbb{D}}$ | 8 | $\partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ in the four quaternionic coordinates | monogenic | closure under products, zero divisors |
 | $\mathbb{B}$ | 8 | $\partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ in the four complex coordinates | monogenic | closure under products, zero divisors |
 
-The rows for $\mathbb{H}_{\mathbb{D}}$ and $\mathbb{B}$ treat the two eight-dimensional algebras through their four *quaternionic* coordinates: the variable is $\tilde Q = \sum_\mu Q_\mu e_\mu$ with coefficients $Q_\mu$ in $\mathbb{D}$ or in $\mathbb{C}$, the operator differentiates with respect to those four coordinates, and the remaining four real coordinates are carried as coefficients of the variable rather than as direction variables. The operator that $D$ factors is then the four-dimensional one, $\sum_\mu \partial^2/\partial Q_\mu^2$; it is the Euclidean Laplacian on the quaternion subspace, the negative of the Euclidean Laplacian on the anti-quaternion subspace, and it is indefinite in the underlying real coordinates on the Hermitian and anti-Hermitian subspaces. The theories so obtained are developed .
+The rows for $\mathbb{H}_{\mathbb{D}}$ and $\mathbb{B}$ treat the two eight-dimensional algebras through their four *quaternionic* coordinates: the variable is $\tilde Q = \sum_\mu Q_\mu e_\mu$ with coefficients $Q_\mu$ in $\mathbb{D}$ or in $\mathbb{C}$, the operator differentiates with respect to those four coordinates, and the remaining four real coordinates are carried as coefficients of the variable rather than as direction variables. The operator that $D$ factors is then the four-dimensional one, $\sum_\mu \partial^2/\partial Q_\mu^2$; it is the Euclidean Laplacian on the quaternion subspace, the negative of the Euclidean Laplacian on the anti-quaternion subspace, and it is indefinite in the underlying real coordinates on the Hermitian and anti-Hermitian subspaces. The theories so obtained are developed in *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*.
 
 The rows are worked out system by system:for $\mathbb{C}$, where every classical theorem holds;and *Dual Numbers Analysis* for the two degenerate two-dimensional systems, where the idempotent and nilpotent structures replace the elliptic analysis;for $\mathbb{H}$, where the monogenic functions and the Fueter construction are developed. The general theorems of the present article are the common form of all of them: an operator, the kernel it defines, the Cauchy representation, and the consequences of ellipticity, with the last column of the table recording the price paid in each case.
 
@@ -343,7 +343,7 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | $L_A$ | Left multiplications in $\operatorname{End}_\mathbb{R}(A)$, $\dim = m$ |
 | $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | Split complex numbers, $j^2=+1$; degenerate for $D = \partial_0 + j\partial_1$ |
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual numbers, $\varepsilon^2=0$; degenerate for $D = \partial_0+\varepsilon\partial_1$ |
-| $e_\pm = \tfrac12(1\pm j)$, $\xi_\pm = x_0\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
+| $\Pi_\pm = \tfrac12(1\pm j)$, $\xi_\pm = x_0\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
 
 
 

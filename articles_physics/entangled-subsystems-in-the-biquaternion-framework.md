@@ -49,22 +49,22 @@ This is the tensor-product trace pairing between the state idempotent and the co
 The phenomenon of EPR steering — that measuring one particle's spin determines the conditional state of the other — has a particularly clean form in the biquaternion language. Suppose Alice measures particle 1 along $\hat{a}$ and obtains the outcome $+$. The unnormalized post-measurement joint state is
 
 $$
-\bigl(P_+(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(P_+(\hat{a})\otimes e_0\bigr),
+\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr),
 $$
 
-where $P_+(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. Computing directly, using $P_+(\hat{a})\,e_k\,P_+(\hat{a}) = \tfrac{1}{2}a_k(\hat{a} - ie_0)$ and $\hat{a} - ie_0 = -2iP_+(\hat{a})$, gives
+where $\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. Computing directly, using $\tilde\Pi(\hat{a})\,e_k\,\tilde\Pi(\hat{a}) = \tfrac{1}{2}a_k(\hat{a} - ie_0)$ and $\hat{a} - ie_0 = -2i\tilde\Pi(\hat{a})$, gives
 
 $$
-\bigl(P_+(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(P_+(\hat{a})\otimes e_0\bigr) = \tfrac{1}{2}\,P_+(\hat{a})\otimes P_-(\hat{a}),
+\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr) = \tfrac{1}{2}\,\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a}),
 $$
 
-where $P_-(\hat{a}) = \tfrac{1}{2}(e_0 - i\hat{a})$. The normalized post-measurement state is therefore the product state
+where $\tilde\Pi(-\hat{a}) = \tfrac{1}{2}(e_0 - i\hat{a})$. The normalized post-measurement state is therefore the product state
 
 $$
-P_+(\hat{a})\otimes P_-(\hat{a}).
+\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a}).
 $$
 
-The joint state is now a product: particle 1 is in the pure idempotent $P_+(\hat{a})$, and particle 2 is in the pure idempotent $P_-(\hat{a})$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.
+The joint state is now a product: particle 1 is in the pure idempotent $\tilde\Pi(\hat{a})$, and particle 2 is in the pure idempotent $\tilde\Pi(-\hat{a})$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.
 
 This is the biquaternion expression of EPR steering. The collapse of the joint state under a local projector factorizes the joint idempotent into a product of idempotents, one on each factor. The "spooky" character is that the direction $\hat{a}$ chosen by Alice appears in the conditional state of particle 2; the "non-spooky" character is that this is a *conditional* statement, not a signal, because the unconditional reduced state of particle 2 is unchanged.
 
@@ -158,7 +158,7 @@ Collecting the observations above, the biquaternion framework makes the followin
 
 **3. The reduced state's mixedness is the algebraic trace of entanglement.** The partial trace of the singlet produces $\tfrac{1}{2}e_0$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
 
-**4. Steering is a factorization of the joint idempotent.** A local projector applied to the singlet produces a product state $P_+(\hat{a})\otimes P_-(\hat{a})$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.
+**4. Steering is a factorization of the joint idempotent.** A local projector applied to the singlet produces a product state $\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a})$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.
 
 **5. No-signaling is cyclicity of the trace.** The invariance of the reduced state under local unitaries is the cyclicity of the trace applied to the partial trace.
 
@@ -236,7 +236,7 @@ The honest position is this. The framework makes certain structural features of 
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$ | Singlet idempotent |
-| $P_\pm(\hat{a}) = \tfrac{1}{2}(e_0 \pm i\hat{a})$ | Single-qubit idempotents along $\hat{a}$ |
+| $\tilde\Pi(\pm\hat{a}) = \tfrac{1}{2}(e_0 \pm i\hat{a})$ | Single-qubit idempotents along $\hat{a}$ |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_0$ | Reduced state of particle 1 |
 | $E(\hat{a}, \hat{b}) = \mathrm{Tr}(P_{\mathrm{singlet}}\circ((i\hat{a})\otimes(i\hat{b})))$ | Correlation function |

@@ -283,7 +283,7 @@ The sum is finite near each point by local finiteness, its coefficients are smoo
 
 **Example (the Euclidean metric).** On $\mathbb{R}^n$ the standard metric is $g_{ij} = \delta_{ij}$, whose value at $x$ is the standard inner product on the tangent space $\mathbb{R}^n$.
 
-**Example (the round sphere).** The inclusion $S^{n-1} \hookrightarrow \mathbb{R}^n$ restricts the standard inner product to the tangent spaces of the sphere, giving the **round metric** of constant curvature; the induced distance is the great-circle distance treated.
+**Example (the round sphere).** The inclusion $S^{n-1} \hookrightarrow \mathbb{R}^n$ restricts the standard inner product to the tangent spaces of the sphere, giving the **round metric** of constant curvature; the induced distance is the great-circle distance treated in *Spherical Geometry*.
 
 **Example (the hyperbolic metric).** On the upper half-space with coordinates $y > 0$ in $\mathbb{R}^n$ the metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$ is positive definite, and it is the **hyperbolic metric** whose geometry is developed.
 
@@ -319,7 +319,7 @@ the infimum being taken over all piecewise smooth curves joining the two points;
 
 **Proof sketch.** Symmetry and the triangle inequality follow from reversing and concatenating curves; positivity and separation were noted. For the topology, one shows that a point and the complement of a small geodesically convex ball of radius $r$ are at distance at least $r$ from each other, using the fact that the exponential map of the metric provides a coordinate system in which the metric is close to Euclidean; hence the metric balls generate the given topology. $\square$
 
-The metric $d_g$ is the distance that this Part places on the manifold, and it is the object that allows all the topological and metric notions of *Metric, Uniform and Complete Spaces* to be applied to $M$. The finer metric theory — geodesics, completeness, curvature and the comparison theorems — is the subject of the two articles.
+The metric $d_g$ is the distance that this Part places on the manifold, and it is the object that allows all the topological and metric notions of *Metric, Uniform and Complete Spaces* to be applied to $M$. The finer metric theory — geodesics, completeness, curvature and the comparison theorems — is the subject of *Riemannian Geometry* and *Curvature and Geodesics* in Part IV.
 
 **Remark (metric versus topological invariants).** Two Riemannian metrics on the same manifold may induce the same topology and different distances, as the metrics $|x - y|$ and $|\arctan x - \arctan y|$ on $\mathbb{R}$ do in *Metric, Uniform and Complete Spaces*. The distance therefore retains information — completeness, boundedness, the growth of balls — that the topology alone discards, and that information is what the geometry of the manifold is about.
 
@@ -369,4 +369,4 @@ A Riemannian metric is a smooth positive definite inner product on each tangent 
 - Frank W. Warner, *Foundations of Differentiable Manifolds and Lie Groups* (Springer, 1983), for the manifold and Lie-group material treated together.
 - John W. Milnor, *Topology from the Differentiable Viewpoint* (University Press of Virginia, 1965), for the regular-value arguments and their topological consequences.
 - Serge Lang, *Fundamentals of Differential Geometry* (Springer, 1999), for manifolds and bundles in the modern formulation.
-- Barrett O'Neill, *Semi-Riemannian Geometry with Applications to Relativity* (Academic Press, 1983), for the manifold theory with a view to the indefinite metrics of this Part.
+- Barrett O'Neill, *Semi-Riemannian Geometry with Applications to Relativity* (Academic Press, 1983), for the manifold theory with a view to the indefinite metrics of Part IV.

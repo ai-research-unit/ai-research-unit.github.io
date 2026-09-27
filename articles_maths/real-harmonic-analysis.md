@@ -1,10 +1,11 @@
+
 # __Real Harmonic Analysis__
 
 ## Introduction
 
 This article introduces harmonic analysis on the real line and on Euclidean space as the study of the Fourier transform, convolution, and the function spaces on which they act. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. Only the real analysis of the companion article is assumed; Lebesgue measure and integration are used throughout, and no complex analysis and no abstract topology are invoked. The Fourier transform is normalized so that the factor $2\pi$ sits in the exponent and no prefactor appears in either the transform or its inverse:
+The treatment is mathematically honest: every claim is either proved or stated as a definition. The real analysis of the companion article *Real Analysis*, together with Lebesgue measure and integration, is assumed; no abstract topology is invoked. Complex analysis enters only through the elementary identity theorem for holomorphic functions in the qualitative uncertainty principle. The Fourier transform is normalized so that the factor $2\pi$ sits in the exponent and no prefactor appears in either the transform or its inverse:
 
 $$
 \hat{f}(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i \xi x} \, dx.
@@ -315,7 +316,7 @@ $$
 
 Then $T$ is bounded from $L^p$ to $L^q$ with norm at most $M_0^{1 - \theta} M_1^{\theta}$.
 
-The conclusion holds for sublinear operators as well, by the same three-lines argument applied to an analytic family $z \mapsto \langle T f_z, g_z \rangle$ built from $L^p$ functions with suitable complex exponents.
+The conclusion holds for sublinear operators as well; the extension of the theorem to sublinear operators is standard.
 
 ### The Hausdorff–Young Theorem
 
@@ -452,7 +453,7 @@ The remaining sections take up the finer structure of the subject: the Littlewoo
 
 ## Summary of Notation
 
-| Symbol | Meaning |
+| symbol | meaning |
 |---|---|
 | $\mathbb{T} = \mathbb{R}/\mathbb{Z}$ | Circle, identified with $[0, 1]$ |
 | $\hat{f}(n)$ | Fourier coefficient on the circle |
@@ -466,7 +467,6 @@ The remaining sections take up the finer structure of the subject: the Littlewoo
 | $\delta$ | delta distribution |
 | $Mf$ | Hardy–Littlewood maximal function |
 | $Hf$ | Hilbert transform |
-| $R_j$ | Riesz transform |
 | $S f$ | Littlewood–Paley square function |
 | $\Delta_j$ | Littlewood–Paley frequency projection |
 | $W^{k,p}(\mathbb{R}^n)$ | Sobolev space, integer order |

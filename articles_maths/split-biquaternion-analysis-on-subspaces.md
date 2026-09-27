@@ -19,13 +19,13 @@ Every claim is either proved or stated as a definition. Where a computation is l
 
 The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, the convective derivative $\tilde{D}$, the integral, and the Cauchy integral formula are assumed from the preceding articles.
 
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.
 
 ## The Split Complex Subspace
 
@@ -422,7 +422,7 @@ The four subspaces are related to the idempotent decomposition in the following 
 **Split complex subspace.** The split complex subspace is the set of elements of the form $Q_0 e_0$ with $Q_0 \in \mathbb{D}$. In the idempotent basis, this is
 
 $$
-Q_0 e_0 = q_0 e_0 + j q'_0 e_0 = (q_0 + q'_0) e_+ + (q_0 - q'_0) e_-.
+Q_0 e_0 = q_0 e_0 + j q'_0 e_0 = (q_0 + q'_0) \tilde\Pi_+ + (q_0 - q'_0) \tilde\Pi_-.
 $$
 
 So the split complex subspace is the set of elements whose idempotent components are real scalars (i.e., real multiples of the identity in $\mathbb{H}$).
@@ -430,7 +430,7 @@ So the split complex subspace is the set of elements whose idempotent components
 **Quaternion subspace.** The quaternion subspace is the set of elements with real coefficients. In the idempotent basis, an element with real coefficients has the form
 
 $$
-q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
 where $\tilde{Q}_\pm = q_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ are the same quaternion in each component. So the quaternion subspace is the diagonal in $\mathbb{H} \oplus \mathbb{H}$: the set of pairs $(\tilde{Q}, \tilde{Q})$ with $\tilde{Q} \in \mathbb{H}$.
@@ -438,7 +438,7 @@ where $\tilde{Q}_\pm = q_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ are the same quaternio
 **Hermitian subspace.** The Hermitian subspace is the set of elements with real scalar part and purely split-imaginary vector part. In the idempotent basis, such an element has the form
 
 $$
-q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3 = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
 where $\tilde{Q}_+ = q_0 + q'_1 e_1 + q'_2 e_2 + q'_3 e_3$ and $\tilde{Q}_- = q_0 - q'_1 e_1 - q'_2 e_2 - q'_3 e_3 = \bar{\tilde{Q}}_+$. So the Hermitian subspace is the set of pairs $(\tilde{Q}, \bar{\tilde{Q}})$ with $\tilde{Q} \in \mathbb{H}$.
@@ -446,7 +446,7 @@ where $\tilde{Q}_+ = q_0 + q'_1 e_1 + q'_2 e_2 + q'_3 e_3$ and $\tilde{Q}_- = q_
 **Anti-Hermitian subspace.** The anti-Hermitian subspace is the set of elements with purely split-imaginary scalar part and real vector part. In the idempotent basis, such an element has the form
 
 $$
-j q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+j q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
 where $\tilde{Q}_+ = q'_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\tilde{Q}_- = -q'_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = -\overline{\tilde{Q}}_+$. So the anti-Hermitian subspace is the set of pairs $(\tilde{Q}, -\bar{\tilde{Q}})$ with $\tilde{Q} \in \mathbb{H}$.
@@ -513,6 +513,30 @@ This article studies the four distinguished real subspaces of the split biquater
 The subspaces are then related to one another and to the idempotent decomposition of the algebra: the conjugations preserve and permute them, and each is described in terms of the idempotent components, so that the analysis on each subspace is the analysis on the corresponding component factor.
 
 The differential operators of the general theory are restricted to the four subspaces and the resulting operators are gathered in a table; the formulas are the same on each subspace, with the appropriate dimension. The final sections record the intersection of the zero divisor set of $\mathbb{H}_{\mathbb{D}}$ with each subspace, and the questions that the article leaves open for later work.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $j$ | Split complex unit, central, $j^2 = +1$ |
+| $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
+| $\bar{\cdot}, {}^*, {}^\dagger, {}^\flat$ | Quaternion, split complex, Hermitian, anti-Hermitian conjugations |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Split complex subspace (quaternion-conjugation fixed space) |
+| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace (split-complex-conjugation fixed space) |
+| $\mathbb{M}_+$ | Hermitian subspace (Hermitian-conjugation fixed space) |
+| $\mathbb{M}_-$ | Anti-Hermitian subspace (anti-Hermitian-conjugation fixed space) |
+| $V$ | A general four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$ |
+| $\tilde{\nabla}$ | Split-biquaternion gradient on $V$ |
+| $\bar{\tilde{\nabla}}$ | Quaternion conjugate of the gradient |
+| $\Box$ | d'Alembertian on $V$ |
+| $\tilde{\nabla}_{\mathbb{D}}$ | Split complex derivative on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ |
+| $\Box_{\mathbb{D}}$ | Split complex Laplacian on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ |
+| $\tilde{F}$ | Split-biquaternion-valued function on a subspace |
 
 ## Further Reading
 

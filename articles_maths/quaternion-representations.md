@@ -1,3 +1,4 @@
+
 # __Quaternion Representations__
 
 ## Introduction
@@ -8,20 +9,20 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
-## Representations of $\mathbb{H}$
+## The Algebra and Its Ground Field
 
 ### Definition
 
 A **representation** of $\mathbb{H}$ is a vector space $V$ over $F$ together with a bilinear map
 
 $$
-\rho : \mathbb{H} \times V \to V, \qquad \rho(q, v) = q \cdot v,
+\rho : \mathbb{H} \times V \to V, \qquad \rho(\tilde q, v) = \tilde q \cdot v,
 $$
 
 satisfying
 
 $$
-q \cdot (r \cdot v) = (qr) \cdot v, \qquad 1 \cdot v = v.
+\tilde q \cdot (r \cdot v) = (qr) \cdot v, \qquad 1 \cdot v = v.
 $$
 
 Equivalently, a representation is an algebra homomorphism
@@ -37,29 +38,29 @@ Since $\mathbb{H}$ is a division algebra over $F$, every non-zero element is inv
 The **regular representation** of $\mathbb{H}$ is $\mathbb{H}$ acting on itself by left multiplication:
 
 $$
-\rho_{\mathrm{reg}}(q) r = q r, \qquad q, r \in \mathbb{H}.
+\rho_{\mathrm{reg}}(\tilde q) r = \tilde q r, \qquad \tilde q, r \in \mathbb{H}.
 $$
 
-This is the representation $\rho_{\mathrm{reg}} : \mathbb{H} \to \operatorname{End}_F(\mathbb{H})$ given by $\rho_{\mathrm{reg}}(q) = q$. It is the representation of $\mathbb{H}$ on a four-dimensional vector space over $F$. The image is a four-dimensional subalgebra of $\operatorname{End}_F(\mathbb{H})$, isomorphic to $\mathbb{H}$.
+This is the representation $\rho_{\mathrm{reg}} : \mathbb{H} \to \operatorname{End}_F(\mathbb{H})$ given by $\rho_{\mathrm{reg}}(\tilde q) = \tilde q$. It is the representation of $\mathbb{H}$ on a four-dimensional vector space over $F$. The image is a four-dimensional subalgebra of $\operatorname{End}_F(\mathbb{H})$, isomorphic to $\mathbb{H}$.
 
 ### The Left and Right Regular Representations
 
 Because $\mathbb{H}$ is not commutative, there are two distinct regular representations:
 
-**Left regular representation.** $\rho_L(q) r = q r$.
+**Left regular representation.** $\rho_L(\tilde q) r = \tilde q r$.
 
-**Right regular representation.** $\rho_R(q) r = r q$. This is a right action rather than a left one: $\rho_R(q) \rho_R(q') = \rho_R(q' q)$.
+**Right regular representation.** $\rho_R(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\rho_R(\tilde q) \rho_R(\tilde q') = \rho_R(\tilde q' \tilde q)$.
 
-Composing the right action with the anti-automorphism $q \mapsto \bar{q}$ gives a left representation $\rho_R(q) r = r \bar{q}$, and the map $r \mapsto \bar{r}$ intertwines it with $\rho_L$, so the two regular representations are isomorphic.
+Composing the right action with the anti-automorphism $\tilde q \mapsto \bar{\tilde q}$ gives a left representation $\rho_R(\tilde q) r = r \bar{\tilde q}$, and the map $r \mapsto \bar{r}$ intertwines it with $\rho_L$, so the two regular representations are isomorphic.
 
-## Classification
+## Representations of the Algebra
 
 ### The Classification Theorem
 
 **Theorem.** Let $F$ be a field of characteristic not two over which $\mathbb{H}$ is a division algebra. Every finite-dimensional representation of $\mathbb{H}$ over $F$ is isomorphic to a direct sum of copies of the regular representation:
 
 $$
-V \cong \mathbb{H}^{\oplus n}, \qquad \rho(q)(v_1, \dots, v_n) = (q v_1, \dots, q v_n).
+V \cong \mathbb{H}^{\oplus n}, \qquad \rho(\tilde q)(v_1, \dots, v_n) = (\tilde q v_1, \dots, \tilde q v_n).
 $$
 
 **Proof.** Let $V$ be a finite-dimensional representation. Since $\mathbb{H}$ is a division algebra and $\rho$ is non-zero (unless $V = 0$), the image $\rho(\mathbb{H})$ is isomorphic to $\mathbb{H}$. So $V$ is a module over the division algebra $\mathbb{H}$, and every module over a division algebra is free. Hence $V \cong \mathbb{H}^{\oplus n}$ for some $n$, and the action is by left multiplication. $\square$
@@ -82,13 +83,49 @@ So the representation theory of $\mathbb{H}$ is the simplest possible: every rep
 
 **The division algebra case.** Schur's lemma says that the endomorphism ring of the irreducible representation is a division algebra, namely $\mathbb{H}$. This is the general form of Schur's lemma: for a simple algebra over a field, the endomorphism ring of an irreducible module is a division algebra.
 
-## The Structure of $\mathbb{H}$ as a Simple Algebra
+## Schur's Lemma, Intertwiners and Homomorphisms
+
+### Definition
+
+A **homomorphism** of representations $V$ and $W$ is an $F$-linear map $T : V \to W$ such that
+
+$$
+T(\tilde q \cdot v) = \tilde q \cdot T(v), \qquad \tilde q \in \mathbb{H}, \; v \in V.
+$$
+
+The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{H}}(V, W)$.
+
+### Basic Properties
+
+**Composition.** If $T \in \operatorname{Hom}_{\mathbb{H}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{H}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{H}}(V, U)$.
+
+**Schur's lemma.** If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{H}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{H}}(V, V) \cong \mathbb{H}$.
+
+**Dimension count.** For $V \cong \mathbb{H}^{\oplus p}$ and $W \cong \mathbb{H}^{\oplus \tilde q}$,
+
+$$
+\dim_F \operatorname{Hom}_{\mathbb{H}}(V, W) = 4 pq.
+$$
+
+The factor of $4$ comes from the endomorphism ring of the regular representation, which is $\mathbb{H}$.
+
+### The Endomorphism Ring
+
+The **endomorphism ring** of a representation $V$ is $\operatorname{End}_{\mathbb{H}}(V) = \operatorname{Hom}_{\mathbb{H}}(V, V)$. For $V \cong \mathbb{H}^{\oplus n}$,
+
+$$
+\operatorname{End}_{\mathbb{H}}(V) \cong M_n(\mathbb{H}),
+$$
+
+the ring of $n \times n$ matrices over $\mathbb{H}$. This is a simple ring, and it is the prototypical example of a central simple algebra over $F$ of degree $2n$.
+
+## Simplicity and the Structure of the Algebra
 
 ### Simplicity
 
 The quaternion algebra $\mathbb{H}$ is **simple**: it has no non-trivial two-sided ideals. The only two-sided ideals are $0$ and $\mathbb{H}$.
 
-**Proof.** Let $I$ be a non-zero two-sided ideal, and let $q \in I$ be non-zero. Since $q$ is invertible, $1 = q^{-1} q \in I$, so $I = \mathbb{H}$. $\square$
+**Proof.** Let $I$ be a non-zero two-sided ideal, and let $\tilde q \in I$ be non-zero. Since $\tilde q$ is invertible, $1 = \tilde q^{-1} \tilde q \in I$, so $I = \mathbb{H}$. $\square$
 
 So $\mathbb{H}$ is a central simple algebra over $F$ when $F$ is the center. The center of $\mathbb{H}$ is $F$ (the scalars), and $\mathbb{H}$ is four-dimensional over $F$, so it is a central simple algebra of degree two.
 
@@ -97,6 +134,38 @@ So $\mathbb{H}$ is a central simple algebra over $F$ when $F$ is the center. The
 As a central simple algebra over $F$, the quaternion algebra $\mathbb{H}$ has a class in the Brauer group $\operatorname{Br}(F)$. This class is trivial if and only if $\mathbb{H}$ is isomorphic to the matrix algebra $M_2(F)$, which happens if and only if the quaternion algebra splits over $F$. The quaternion algebra is a division algebra precisely when its class in the Brauer group is non-trivial.
 
 **Example.** Over $\mathbb{R}$, the only non-trivial quaternion algebra is the classical one, with $e_1^2 = e_2^2 = e_3^2 = -1$. Over $\mathbb{Q}$, there are infinitely many quaternion algebras, classified by their ramification: a finite set of places of even cardinality, equivalently by the Hilbert symbol.
+
+## Complex Representations and the Complexification
+
+### Complex Quaternions
+
+The **complexified quaternion algebra**, the biquaternion algebra $\mathbb{B}$ of the corpus, is
+
+$$
+\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} = \mathbb{H} \otimes_{\mathbb{R}} \mathbb{C}.
+$$
+
+As a complex algebra, it has dimension four, and it is isomorphic to the matrix algebra $M_2(\mathbb{C})$:
+
+$$
+\mathbb{B} \cong M_2(\mathbb{C}).
+$$
+
+**Proof.** The complexification of $\mathbb{H}$ is a central simple algebra over $\mathbb{C}$. By the classification of central simple algebras over $\mathbb{C}$, every such algebra is a matrix algebra over $\mathbb{C}$. The dimension is four, so the matrix size is two. $\square$
+
+### Representations of $\mathbb{B}$
+
+Because $\mathbb{B}$ is a matrix algebra, its representation theory is the standard representation theory of $M_2(\mathbb{C})$:
+
+- There is exactly one irreducible representation, the standard representation on $\mathbb{C}^2$.
+- Every finite-dimensional representation is a direct sum of copies of the standard representation.
+- The representation ring is $\mathbb{Z}$, generated by the standard representation.
+
+So the complexified quaternion algebra has a simpler representation theory than the real quaternion algebra, because it is a matrix algebra rather than a division algebra.
+
+### The Relation to the Real Case
+
+The real quaternion algebra $\mathbb{H}$ is a **real form** of the complex matrix algebra $M_2(\mathbb{C})$. The representations of $\mathbb{H}$ over $\mathbb{R}$ are the real forms of the representations of $M_2(\mathbb{C})$ over $\mathbb{C}$. The classification of real forms is the subject of the theory of Galois descent, and it is the reason the real representation theory is richer than the complex one.
 
 ## The Representation Ring
 
@@ -134,38 +203,6 @@ $$
 
 So the representation ring is $\mathbb{Z}$ with the multiplication $m \cdot n = 4 mn$. This multiplication has no identity element, since $4 e n = n$ would force $e = 1/4$, so $R(\mathbb{H})$ is not isomorphic to $\mathbb{Z}$ as a ring.
 
-## The Complexification
-
-### Complex Quaternions
-
-The **complexified quaternion algebra** is
-
-$$
-\mathbb{H}_{\mathbb{C}} = \mathbb{H} \otimes_{\mathbb{R}} \mathbb{C}.
-$$
-
-As a complex algebra, it has dimension four, and it is isomorphic to the matrix algebra $M_2(\mathbb{C})$:
-
-$$
-\mathbb{H}_{\mathbb{C}} \cong M_2(\mathbb{C}).
-$$
-
-**Proof.** The complexification of $\mathbb{H}$ is a central simple algebra over $\mathbb{C}$. By the classification of central simple algebras over $\mathbb{C}$, every such algebra is a matrix algebra over $\mathbb{C}$. The dimension is four, so the matrix size is two. $\square$
-
-### Representations of $\mathbb{H}_{\mathbb{C}}$
-
-Because $\mathbb{H}_{\mathbb{C}}$ is a matrix algebra, its representation theory is the standard representation theory of $M_2(\mathbb{C})$:
-
-- There is exactly one irreducible representation, the standard representation on $\mathbb{C}^2$.
-- Every finite-dimensional representation is a direct sum of copies of the standard representation.
-- The representation ring is $\mathbb{Z}$, generated by the standard representation.
-
-So the complexified quaternion algebra has a simpler representation theory than the real quaternion algebra, because it is a matrix algebra rather than a division algebra.
-
-### The Relation to the Real Case
-
-The real quaternion algebra $\mathbb{H}$ is a **real form** of the complex matrix algebra $M_2(\mathbb{C})$. The representations of $\mathbb{H}$ over $\mathbb{R}$ are the real forms of the representations of $M_2(\mathbb{C})$ over $\mathbb{C}$. The classification of real forms is the subject of the theory of Galois descent, and it is the reason the real representation theory is richer than the complex one.
-
 ## Indecomposable Representations
 
 ### Definition
@@ -185,7 +222,7 @@ So $\mathbb{H}$ is a **semisimple** algebra: every representation is a direct su
 The **dual** (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_F(V, F)$ defined by
 
 $$
-(\rho^*(q) f)(v) = f(\rho(q) v), \qquad q \in \mathbb{H}, \; f \in V^*, \; v \in V.
+(\rho^*(\tilde q) f)(v) = f(\rho(\tilde q) v), \qquad \tilde q \in \mathbb{H}, \; f \in V^*, \; v \in V.
 $$
 
 ### Basic Properties
@@ -209,7 +246,7 @@ $$
 satisfies
 
 $$
-\langle \rho^*(q) f, v \rangle = \langle f, \rho(q) v \rangle.
+\langle \rho^*(\tilde q) f, v \rangle = \langle f, \rho(\tilde q) v \rangle.
 $$
 
 This is the definition of the dual representation, written as a pairing.
@@ -221,10 +258,10 @@ This is the definition of the dual representation, written as a pairing.
 The **tensor product** of two representations $V$ and $W$ is the representation on $V \otimes_F W$ defined by the diagonal action
 
 $$
-q \cdot (v \otimes w) = (q \cdot v) \otimes (q \cdot w).
+\tilde q \cdot (v \otimes w) = (\tilde q \cdot v) \otimes (\tilde q \cdot w).
 $$
 
-This is a representation because the diagonal map $\Delta(q) = q \otimes q$ is an algebra homomorphism: $\Delta(q) \Delta(q') = (q q') \otimes (q q') = \Delta(q q')$.
+This is a representation because the diagonal map $\Delta(\tilde q) = \tilde q \otimes \tilde q$ is an algebra homomorphism: $\Delta(\tilde q) \Delta(\tilde q') = (\tilde q \tilde q') \otimes (\tilde q \tilde q') = \Delta(\tilde q \tilde q')$.
 
 ### Basic Properties
 
@@ -244,43 +281,7 @@ because $\mathbb{H} \otimes_F \mathbb{H} \cong M_4(F)$.
 
 ### The Tensor Product as a Representation
 
-The diagonal map $\Delta(q) = q \otimes q$ is an algebra homomorphism whether or not $\mathbb{H}$ is commutative, so the tensor product of two representations of $\mathbb{H}$ is again a representation of $\mathbb{H}$. The tensor product is also symmetric: the swap $v \otimes w \mapsto w \otimes v$ is $\mathbb{H}$-linear under the diagonal action, so $V \otimes W \cong W \otimes V$ as representations.
-
-## Homomorphisms
-
-### Definition
-
-A **homomorphism** of representations $V$ and $W$ is an $F$-linear map $T : V \to W$ such that
-
-$$
-T(q \cdot v) = q \cdot T(v), \qquad q \in \mathbb{H}, \; v \in V.
-$$
-
-The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{H}}(V, W)$.
-
-### Basic Properties
-
-**Composition.** If $T \in \operatorname{Hom}_{\mathbb{H}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{H}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{H}}(V, U)$.
-
-**Schur's lemma.** If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{H}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{H}}(V, V) \cong \mathbb{H}$.
-
-**Dimension count.** For $V \cong \mathbb{H}^{\oplus p}$ and $W \cong \mathbb{H}^{\oplus q}$,
-
-$$
-\dim_F \operatorname{Hom}_{\mathbb{H}}(V, W) = 4 pq.
-$$
-
-The factor of $4$ comes from the endomorphism ring of the regular representation, which is $\mathbb{H}$.
-
-### The Endomorphism Ring
-
-The **endomorphism ring** of a representation $V$ is $\operatorname{End}_{\mathbb{H}}(V) = \operatorname{Hom}_{\mathbb{H}}(V, V)$. For $V \cong \mathbb{H}^{\oplus n}$,
-
-$$
-\operatorname{End}_{\mathbb{H}}(V) \cong M_n(\mathbb{H}),
-$$
-
-the ring of $n \times n$ matrices over $\mathbb{H}$. This is a simple ring, and it is the prototypical example of a central simple algebra over $F$ of degree $2n$.
+The diagonal map $\Delta(\tilde q) = \tilde q \otimes \tilde q$ is an algebra homomorphism whether or not $\mathbb{H}$ is commutative, so the tensor product of two representations of $\mathbb{H}$ is again a representation of $\mathbb{H}$. The tensor product is also symmetric: the swap $v \otimes w \mapsto w \otimes v$ is $\mathbb{H}$-linear under the diagonal action, so $V \otimes W \cong W \otimes V$ as representations.
 
 ## The Category of Representations
 
@@ -320,14 +321,14 @@ A representation of $\mathbb{H}$ is a vector space $V$ over a field $F$ together
 
 The category of representations is abelian and semisimple, and the representation ring $R(\mathbb{H})$ is generated as an abelian group by the class of the irreducible representation. The article records the standard constructions — the dual or contragredient representation on $V^*$, the tensor product with its diagonal action, and the homomorphisms, the $F$-linear maps intertwining the two actions — together with the indecomposable representations and their relation to the irreducible ones.
 
-Two further sections complete the theory: the complexification $\mathbb{H}_{\mathbb{C}} = \mathbb{H} \otimes_{\mathbb{R}} \mathbb{C}$, which is no longer a division algebra and whose representation theory therefore differs from that of $\mathbb{H}$, and the comparison with the complex and split complex cases, in which the non-commutativity of $\mathbb{H}$ is the source of every difference.
+Two further sections complete the theory: the complexification $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, which is no longer a division algebra and whose representation theory therefore differs from that of $\mathbb{H}$, and the comparison with the complex and split complex cases, in which the non-commutativity of $\mathbb{H}$ is the source of every difference.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
-| $\mathbb{H}_{\mathbb{C}} = \mathbb{H} \otimes_{\mathbb{R}} \mathbb{C}$ | Complexified quaternion algebra |
+| $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Complexified quaternion algebra, the biquaternion algebra |
 | $\rho : \mathbb{H} \to \operatorname{End}_F(V)$ | Representation |
 | $\rho_{\mathrm{reg}}$ | Regular representation |
 | $\rho_L, \rho_R$ | Left and right regular representations |

@@ -234,9 +234,9 @@ The coherent states have three equivalent descriptions, and the equivalence is t
 - they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $P\mapsto\tilde R P\tilde R^\dagger$;
 - they are the **symmetrised products of two fundamental idempotents**,
   $$
-  \rho_{\mathrm{coh}}(\hat n)=P_{\mathrm{sym}}\left(P_+(\hat n)\otimes P_+(\hat n)\right)P_{\mathrm{sym}},
+  \rho_{\mathrm{coh}}(\hat n)=P_{\mathrm{sym}}\left(\tilde\Pi(\hat n)\otimes \tilde\Pi(\hat n)\right)P_{\mathrm{sym}},
   $$
-  with $P_+(\hat n)=\tfrac12(e_0+i\hat n)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;
+  with $\tilde\Pi(\hat n)=\tfrac12(e_0+i\hat n)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;
 - they are the image of the degree-two Veronese embedding of the Bloch sphere in $\mathbb{CP}^2$.
 
 The last description fixes the topology: the coherent states form a two-sphere $S^2$ inside the four-dimensional pure-state manifold; the map $\hat n\mapsto\rho_{\mathrm{coh}}(\hat n)$ is one-to-one on the Bloch sphere (the phase of the state vector drops out in the projector), and its image is the degree-two Veronese surface in $\mathbb{CP}^2$. The Bloch vector of a coherent state has $|\mathbf n|=1$, so the coherent states lie on the pure-state sphere; but not every pure state is coherent, the obstruction being the dimension count $4>2$.

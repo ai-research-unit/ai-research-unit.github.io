@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops the one-parameter group theory of the infinitesimal extension of the real line, that is, the group theory of the dual numbers. It follows *Dual-Numbers Algebra*, which fixed the ring $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathfrak{m} = (\varepsilon)$ and the group of units $(\mathbb{D}')^\times$, and it follows *Dual-Numbers Representations* for the regular representation and the nilpotent endomorphism $E = \rho_{\mathrm{reg}}(\varepsilon)$. The subject is the geometry of multiplication by a unit, treated, as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, as a one-parameter transformation group and as a Lie group, not as a motion in any physical sense.
+This article develops the one-parameter group theory of the infinitesimal extension of the real line, that is, the group theory of the dual numbers. It follows *Dual-Numbers Algebra*, which fixed the ring $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathfrak{m} = (\varepsilon)$ and the group of units $(\mathbb{D}')^\times$. The subject is the geometry of multiplication by a unit, treated, as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, as a one-parameter transformation group and as a Lie group, not as a motion in any physical sense.
 
 The three two-dimensional commutative unital real algebras give three kinds of rotation. For the complex numbers $\mathbb{C}$ the norm-one group is the circle $U(1)$, compact, and its one-parameter group is the elliptic rotation. For the split complex numbers $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the norm-one group is the hyperbola and its identity component is the hyperbolic rotation group, with the rapidity as additive parameter. For the dual numbers $\mathbb{D}'$ the norm form is degenerate and the norm-one group degenerates to a pair of parallel lines; its identity component is the **shear group**, a one-parameter group whose elements are unipotent linear maps of the dual plane. The purpose of this article is to describe that group, its generator, its Lie algebra, its action, and its relation to the elliptic and hyperbolic cases as the common degenerate limit.
 
@@ -13,11 +13,11 @@ $$
 S(s) : x + y\varepsilon \longmapsto x + (sx + y)\varepsilon,
 $$
 
-the elementary shear matrix $\begin{pmatrix}1&0\\s&1\end{pmatrix}$. The family $\{S(s) : s \in \mathbb{R}\}$ is a one-parameter group, isomorphic to the additive group of the real line, whose infinitesimal generator is the nilpotent endomorphism $E = \rho_{\mathrm{reg}}(\varepsilon)$ with $E^2 = 0$. Because the generator is nilpotent rather than semisimple, the exponential map is polynomial, the group is unipotent, and no orbit other than a fixed point is periodic. The parameter $s$ is the **parabolic angle**; it is additive, and its addition law is the parabolic case of the trichotomy of angle-addition laws.
+the elementary shear matrix $\begin{pmatrix}1&0\\s&1\end{pmatrix}$. The family $\{S(s) : s \in \mathbb{R}\}$ is a one-parameter group, isomorphic to the additive group of the real line, whose infinitesimal generator is the nilpotent endomorphism $E$ of multiplication by $\varepsilon$, with $E^2 = 0$. Because the generator is nilpotent rather than semisimple, the exponential map is polynomial, the group is unipotent, and no orbit other than a fixed point is periodic. The parameter $s$ is the **parabolic angle**; it is additive, and its addition law is the parabolic case of the trichotomy of angle-addition laws.
 
 No physics is invoked anywhere. The word "rotation" is used throughout in the algebraic sense of a one-parameter subgroup of the group of units acting linearly on the algebra, exactly as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
 
-Notation: $z = x + y\varepsilon$ with $x, y \in \mathbb{R}$; $\operatorname{Re} z = x$, $\operatorname{Inf} z = y$; $\bar z = x - y\varepsilon$; $N(z) = z\bar z = x^2$; $x^2 + y^2$ the Euclidean form; $\mathfrak{m} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(x + y\varepsilon) = x$ the augmentation.
+Notation: $Z = x + y\varepsilon$ with $x, y \in \mathbb{R}$; $\operatorname{Re} Z = x$, $\operatorname{Inf} Z = y$; $\bar Z = x - y\varepsilon$; $N(Z) = Z\bar Z = x^2$; $x^2 + y^2$ the Euclidean form; $\mathfrak{m} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(x + y\varepsilon) = x$ the augmentation.
 
 ## The Group of Units
 
@@ -44,15 +44,15 @@ consists of the units of real part one; it is the fibre of the augmentation over
 **Theorem.** Let $R$ be a commutative ring. The map
 
 $$
-\Phi : R^\times \times (R, +) \longrightarrow (\mathbb{D}'_R)^\times, \qquad \Phi(a, s) = a + as\varepsilon = a(1 + s\varepsilon),
+\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{D}'_R)^\times, \qquad \Theta(a, s) = a + as\varepsilon = a(1 + s\varepsilon),
 $$
 
 is an isomorphism of groups.
 
-**Proof.** $\Phi$ is bijective: given $a + b\varepsilon$ with $a \in R^\times$, the unique preimage is $(a, a^{-1}b)$. It is a homomorphism, because
+**Proof.** $\Theta$ is bijective: given $a + b\varepsilon$ with $a \in R^\times$, the unique preimage is $(a, a^{-1}b)$. It is a homomorphism, because
 
 $$
-\Phi(a,s)\Phi(c,t) = a(1+s\varepsilon)\,c(1+t\varepsilon) = ac\bigl(1 + (s+t)\varepsilon\bigr) = \Phi\bigl(ac,\, s+t\bigr),
+\Theta(a,s)\Theta(c,t) = a(1+s\varepsilon)\,c(1+t\varepsilon) = ac\bigl(1 + (s+t)\varepsilon\bigr) = \Theta\bigl(ac,\, s+t\bigr),
 $$
 
 using $\varepsilon^2 = 0$. $\square$
@@ -71,10 +71,10 @@ The algebra article records that the unit group is an extension of $R^\times$ by
 
 ### The Norm-One Group
 
-The norm form $N(z) = z\bar z = x^2$ is multiplicative, $N(uv) = N(u)N(v)$, and its radical is $\mathfrak{m}$: it vanishes on $\mathfrak{m}$ and is nonzero off it. The **norm-one group** is
+The norm form $N(Z) = Z\bar Z = x^2$ is multiplicative, $N(uv) = N(u)N(v)$, and its radical is $\mathfrak{m}$: it vanishes on $\mathfrak{m}$ and is nonzero off it. The **norm-one group** is
 
 $$
-H = \{z \in \mathbb{D}' : N(z) = 1\}.
+H = \{Z \in \mathbb{D}' : N(Z) = 1\}.
 $$
 
 **Proposition.** $H = \{x + y\varepsilon : x = \pm 1\}$ is the union of the two parallel lines of real part $\pm1$; its identity component is $H_0 = 1 + \mathfrak{m}$, the shear group.
@@ -85,23 +85,25 @@ The three norm-one sets of the three two-dimensional algebras are therefore a ci
 
 ## Multiplication by a Unit as a Shear
 
-### The Regular Representation
+### Multiplication by a Unit as a Linear Map
 
-By *Dual-Numbers Representations*, the regular representation of $\mathbb{D}'$ is left multiplication on itself,
-
-$$
-\rho_{\mathrm{reg}}(u) : \mathbb{D}' \to \mathbb{D}', \qquad \rho_{\mathrm{reg}}(u)(z) = uz,
-$$
-
-and it is the case $V = \mathbb{D}'$, $E = \rho_{\mathrm{reg}}(\varepsilon)$ of the general correspondence of that article, in which a representation of $\mathbb{D}'$ on an $R$-module $V$ is a square-zero endomorphism $E \in \operatorname{End}_R(V)$ acting by $a + b\varepsilon \mapsto a\,\mathrm{id}_V + bE$. In particular the $\mathbb{D}'$-linear endomorphisms of the module $\mathbb{D}'$ are exactly the maps $\rho_{\mathrm{reg}}(u)$, and they form an algebra isomorphic to $\mathbb{D}'$. In the basis $(1, \varepsilon)$ the regular representation of the unit $u = a + b\varepsilon$ has the matrix
+Multiplication by a unit $u \in \mathbb{D}'$ is the $R$-linear map
 
 $$
-[u] = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix}.
+M_u : \mathbb{D}' \to \mathbb{D}', \qquad M_u(Z) = uZ,
 $$
 
-**Proof.** $\rho_{\mathrm{reg}}(a + b\varepsilon)(1) = a + b\varepsilon$ and $\rho_{\mathrm{reg}}(a+b\varepsilon)(\varepsilon) = a\varepsilon$, which are the columns of $[u]$. $\square$
+which is bijective with inverse $M_{u^{-1}}$ and satisfies $M_{uv} = M_u \circ M_v$. In the coordinates $Z = x + y\varepsilon$ it acts by
 
-The matrix is a general element of the commutative subalgebra of $\mathbb{R}^{2\times2}$ generated by the identity and the nilpotent Jordan block $\begin{pmatrix}0&0\\1&0\end{pmatrix}$, which is the endomorphism ring of the regular representation computed in *Dual-Numbers Representations*.
+$$
+M_{a + b\varepsilon}(x + y\varepsilon) = ax + (bx + ay)\,\varepsilon.
+$$
+
+In the basis $(1, \varepsilon)$ the map $M_{a + b\varepsilon}$ has the matrix $[a + b\varepsilon] = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix}$.
+
+**Proof.** $M_u(1) = a + b\varepsilon$ and $M_u(\varepsilon) = a\varepsilon$, which are the columns of $[u]$; bijectivity and the composition law follow from the existence of $u^{-1}$ and the associativity of multiplication. $\square$
+
+The matrix is a general element of the commutative subalgebra of $\mathbb{R}^{2\times2}$ generated by the identity and the nilpotent Jordan block $\begin{pmatrix}0&0\\1&0\end{pmatrix}$.
 
 ### Shear Matrices
 
@@ -111,9 +113,9 @@ $$
 [u] = a\Bigl(I + sE\Bigr), \qquad E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix},
 $$
 
-and $E$ is the matrix of $\rho_{\mathrm{reg}}(\varepsilon)$, the endomorphism sending $x + y\varepsilon$ to $x\varepsilon$.
+and $E$ is the matrix of multiplication by $\varepsilon$, the endomorphism sending $x + y\varepsilon$ to $x\varepsilon$.
 
-**Definition.** The **shear** of parameter $s$ is the $\mathbb{D}'$-linear map
+**Definition.** The **shear** of parameter $s$ is the linear map
 
 $$
 S(s) = I + sE = \begin{pmatrix} 1 & 0 \\ s & 1 \end{pmatrix}, \qquad S(s)(x + y\varepsilon) = x + (y + sx)\varepsilon.
@@ -129,7 +131,7 @@ $$
 S(s)(v) - v = s\,\langle v, 1\rangle\,\varepsilon, \qquad v = x + y\varepsilon,
 $$
 
-since $\langle v, 1\rangle = x$. The displacement is proportional to the component of $v$ along the real axis and points along the nilpotent axis, which is the Euclidean orthogonal complement of the real axis; so $S(s)$ is the elementary shear, or transvection, that displaces each point of the plane along the nilpotent direction by an amount proportional to its real part. In the notation of the other articles on the two-dimensional algebras this is the description of multiplication by a unit as the map $v \mapsto v + s\,v_\perp$, with $v_\perp = \langle v, 1\rangle\,\varepsilon = \operatorname{Re}(v)\,\varepsilon$: the "perpendicular" component is read off by the augmentation and displaced into the maximal ideal. The norm form registers none of this displacement. Its bilinear form is $B(z,w) = \operatorname{Re}(z)\operatorname{Re}(w)$, for which the nilpotent axis is the radical, $B$-orthogonal to the whole plane; the shear leaves $N$ invariant for that reason, and not because the displacement is small.
+since $\langle v, 1\rangle = x$. The displacement is proportional to the component of $v$ along the real axis and points along the nilpotent axis, which is the Euclidean orthogonal complement of the real axis; so $S(s)$ is the elementary shear, or transvection, that displaces each point of the plane along the nilpotent direction by an amount proportional to its real part. In the notation of the other articles on the two-dimensional algebras this is the description of multiplication by a unit as the map $v \mapsto v + s\,v_\perp$, with $v_\perp = \langle v, 1\rangle\,\varepsilon = \operatorname{Re}(v)\,\varepsilon$: the "perpendicular" component is read off by the augmentation and displaced into the maximal ideal. The norm form registers none of this displacement. Its bilinear form is $B(Z,W) = \operatorname{Re}(Z)\operatorname{Re}(W)$, for which the nilpotent axis is the radical, $B$-orthogonal to the whole plane; the shear leaves $N$ invariant for that reason, and not because the displacement is small.
 
 ### Orbits and the Fixed Fibre
 
@@ -140,7 +142,7 @@ since $\langle v, 1\rangle = x$. The displacement is proportional to the compone
 
 **Proof.** $S(s)(x + y\varepsilon) = x + (y + sx)\varepsilon$, so the real part $x$ is invariant and the infinitesimal part is translated by $sx$. If $x = 0$ the point is fixed for every $s$. If $x \neq 0$, the map $y \mapsto y + sx$ is a bijection of $\mathbb{R}$, so the orbit is the whole fibre and the stabiliser is trivial. $\square$
 
-The orbits of the shear group are therefore the fibres of the augmentation, and the fixed set is the fibre over the orig. This is the group-theoretic statement of the fact that the shear moves along the nilpotent direction: the invariant lines of the action are exactly the lines along which the integration theory, integrates.
+The orbits of the shear group are therefore the fibres of the augmentation, and the fixed set is the fibre over the origin. This is the group-theoretic statement of the fact that the shear moves along the nilpotent direction: the invariant lines of the action are exactly the lines along which the integration theory integrates.
 
 ## The One-Parameter Group of Shears
 
@@ -154,14 +156,14 @@ $$
 
 **Proof.** $S(s) = I + sE$ and $E^2 = 0$, so $(I+sE)(I+tE) = I + (s+t)E + stE^2 = I + (s+t)E$. $\square$
 
-The subgroup $G$ is exactly the image of $1 + \mathfrak{m}$ under the regular representation, and it is a subgroup of the group of $\mathbb{D}'$-linear automorphisms of the module $\mathbb{D}'$. It is **not** a subgroup of the algebra automorphism group: left multiplication by a unit is an algebra homomorphism only when the unit is the identity, since $(uz)(uw) = u^2 zw$ equals $u(zw)$ only when $u^2 = u$, which for a unit forces $u = 1$. The shears are module symmetries, not algebra symmetries.
+The subgroup $G$ is exactly the image of $1 + \mathfrak{m}$ under multiplication by units, and it is a subgroup of the group of linear automorphisms of the plane $\mathbb{D}'$. It is **not** a subgroup of the algebra automorphism group: left multiplication by a unit is an algebra homomorphism only when the unit is the identity, since $(uZ)(uW) = u^2 ZW$ equals $u(ZW)$ only when $u^2 = u$, which for a unit forces $u = 1$. The shears are symmetries of the plane that commute with multiplication, not algebra automorphisms.
 
 ### The Exponential Map
 
 The generator of the one-parameter group is
 
 $$
-E = \frac{d}{ds}\Big|_{s=0} S(s) = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} = \rho_{\mathrm{reg}}(\varepsilon).
+E = \frac{d}{ds}\Big|_{s=0} S(s) = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}.
 $$
 
 **Theorem (exponential).** The exponential map of the shear group is the polynomial map
@@ -172,7 +174,7 @@ $$
 
 which is a group isomorphism and a homeomorphism onto $G$; its inverse is the dual logarithm $\log(1 + s\varepsilon) = s\varepsilon$.
 
-**Proof.** The exponential series $\sum_k (sE)^k/k!$ terminates at $k = 1$ because $E^2 = 0$, so $\exp(sE) = I + sE$. Under the identification of the module with the algebra this is $\exp(s\varepsilon) = 1 + s\varepsilon$. The logarithm is its inverse, and the identities $\exp(s\varepsilon)\exp(t\varepsilon) = \exp((s+t)\varepsilon)$ and $\log(uv) = \log u + \log v$ are the group law. $\square$
+**Proof.** The exponential series $\sum_k (sE)^k/k!$ terminates at $k = 1$ because $E^2 = 0$, so $\exp(sE) = I + sE$. Under the identification of the endomorphism $E$ with the element $\varepsilon$ this is $\exp(s\varepsilon) = 1 + s\varepsilon$. The logarithm is its inverse, and the identities $\exp(s\varepsilon)\exp(t\varepsilon) = \exp((s+t)\varepsilon)$ and $\log(uv) = \log u + \log v$ are the group law. $\square$
 
 So the exponential of the shear generator is algebraic, its image is the whole shear group, and it is injective. This is the sharpest formal contrast with the elliptic case: there the exponential of the rotation generator is periodic, its kernel is $2\pi\mathbb{Z}$, and the group is compact; here the exponential is a homeomorphism from the line onto the group, and the group is a non-compact line.
 
@@ -242,17 +244,17 @@ the parabolic case of the angle-addition laws of the elliptic and hyperbolic cas
 
 ## The Lie Algebra of the Shear Group
 
-### The Generator as the Regular Representation of $\varepsilon$
+### The Generator of the Shear Group
 
 The Lie algebra of the shear group is the one-dimensional real Lie algebra
 
 $$
-\mathfrak{g} = \mathbb{R}E \subset \mathfrak{gl}_2(\mathbb{R}), \qquad E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} = \rho_{\mathrm{reg}}(\varepsilon).
+\mathfrak{g} = \mathbb{R}E \subset \mathfrak{gl}_2(\mathbb{R}), \qquad E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix},
 $$
 
 It is abelian, $[E,E] = 0$, and the generator is nilpotent of index two: $E \neq 0$ and $E^2 = 0$. So $\mathfrak{g}$ is a nilpotent Lie algebra of index two and $G = \exp(\mathfrak{g})$ is a **unipotent** group: every element is unipotent, of the form identity plus a nilpotent endomorphism, and the only eigenvalue of every element is $1$.
 
-Under the identification of the regular representation with the algebra, the Lie algebra of the shear group is the line $\mathbb{R}\varepsilon = \mathfrak{m}$ inside $\mathbb{D}'$, with the trivial bracket; the generator is $\varepsilon$ itself. This is the same square-zero endomorphism that generates the fibre direction, and its nilpotence is the same $\varepsilon^2 = 0$.
+Under the identification of the endomorphism $E$ with the element $\varepsilon$, the Lie algebra of the shear group is the line $\mathbb{R}\varepsilon = \mathfrak{m}$ inside $\mathbb{D}'$, with the trivial bracket; the generator is $\varepsilon$ itself. This is the same square-zero endomorphism that generates the fibre direction, and its nilpotence is the same $\varepsilon^2 = 0$.
 
 ### Derivations and Automorphisms
 
@@ -272,7 +274,7 @@ so $\operatorname{Der}(\mathbb{D}')$ is one-dimensional over $\mathbb{R}$, spann
 
 **Proof.** A unital endomorphism is determined by $\varphi(\varepsilon) = a + b\varepsilon$ and must satisfy $\varphi(\varepsilon)^2 = a^2 + 2ab\varepsilon = 0$, so $a = 0$; then $\varphi(x + y\varepsilon) = x + yb\varepsilon$, which is bijective exactly when $b \neq 0$. Writing $b = c$ gives the stated form. For the last statement, $\partial_\varepsilon^k(\varepsilon) = \varepsilon$ for every $k \geq 1$, so the exponential series of the derivation gives $\exp(t\partial_\varepsilon)(\varepsilon) = \sum_{k \geq 0} t^k \varepsilon/k! = e^t\varepsilon$; the exponential of a derivation of a finite-dimensional real algebra is an automorphism. $\square$
 
-The sharp contrast is now visible. The derivations fix the real axis pointwise and scale the maximal ideal by $\varepsilon \mapsto e^t\varepsilon$, generating the automorphism group $\mathbb{R}^\times$; the shears act on $\mathfrak{m}$ by the identity, fix it pointwise, and are module maps that are not algebra maps. Their generators are the idempotent $\partial_\varepsilon$ and the nilpotent $E$ respectively. The shear group is therefore **not** the exponential of the derivation algebra; it is the exponential of the square-zero direction of the algebra itself.
+The sharp contrast is now visible. The derivations fix the real axis pointwise and scale the maximal ideal by $\varepsilon \mapsto e^t\varepsilon$, generating the automorphism group $\mathbb{R}^\times$; the shears act on $\mathfrak{m}$ by the identity, fix it pointwise, and commute with multiplication without being algebra automorphisms. Their generators are the idempotent $\partial_\varepsilon$ and the nilpotent $E$ respectively. The shear group is therefore **not** the exponential of the derivation algebra; it is the exponential of the square-zero direction of the algebra itself.
 
 ### The Lie Algebra of the Unit Group
 
@@ -284,7 +286,7 @@ The unit group $(\mathbb{D}')^\times$ is a two-dimensional abelian Lie group, an
 
 The shear is an "orthogonal" transformation of the degenerate norm form, in the following sense.
 
-**Proposition.** A linear map $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $N(Az) = N(z)$ for all $z$ if and only if $a = \pm 1$ and $b = 0$; the coefficients $c$ and $d$ are then free. Such an $A$ is invertible, and hence an isometry of the form, exactly when $d \neq 0$.
+**Proposition.** A linear map $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $N(AZ) = N(Z)$ for all $Z$ if and only if $a = \pm 1$ and $b = 0$; the coefficients $c$ and $d$ are then free. Such an $A$ is invertible, and hence an isometry of the form, exactly when $d \neq 0$.
 
 **Proof.** $N(A(x+y\varepsilon)) = (ax + by)^2$ must equal $x^2$ for all $x, y$; comparing coefficients of $x^2$, $xy$ and $y^2$ gives $a^2 = 1$, $ab = 0$, $b^2 = 0$, hence $a = \pm1$ and $b = 0$. The determinant is then $\det A = ad = \pm d$, so $A$ is invertible exactly when $d \neq 0$. $\square$
 
@@ -294,7 +296,7 @@ So the stabiliser of the form is larger than in the non-degenerate cases, becaus
 
 ### The Norm-One Set
 
-The norm-one set $N(z) = 1$ is the pair of parallel lines $x = \pm1$. The identity component of the group of units, $\{a > 0\}$, meets this set in the single line $x = 1$, which is the shear group $1 + \mathfrak{m}$. So the shear group is exactly the connected "rotation group" of the degenerate form, and the passage from the circle to the hyperbola to the pair of parallel lines is the passage from $U(1)$ to $SO(1,1)_0$ to $G$.
+The norm-one set $N(Z) = 1$ is the pair of parallel lines $x = \pm1$. The identity component of the group of units, $\{a > 0\}$, meets this set in the single line $x = 1$, which is the shear group $1 + \mathfrak{m}$. So the shear group is exactly the connected "rotation group" of the degenerate form, and the passage from the circle to the hyperbola to the pair of parallel lines is the passage from $U(1)$ to $SO(1,1)_0$ to $G$.
 
 ### The Contraction from the Elliptic and Hyperbolic Cases
 
@@ -327,9 +329,9 @@ Two consequences make the parabolic case the degenerate end of the trichotomy.
 
 ## Summary
 
-The **group of units** of $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathfrak{m}$, with $(a+b\varepsilon)^{-1} = a^{-1} - a^{-2}b\,\varepsilon$. For commutative $R$ it is the direct product $(\mathbb{D}'_R)^\times \cong R^\times \times (R,+)$ via $a + as\varepsilon \leftrightarrow (a,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm form $N(z) = x^2$ is degenerate with radical $\mathfrak{m}$, and its norm-one set is the pair of parallel lines $x = \pm1$, whose identity component is the shear group $1 + \mathfrak{m}$.
+The **group of units** of $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathfrak{m}$, with $(a+b\varepsilon)^{-1} = a^{-1} - a^{-2}b\,\varepsilon$. For commutative $R$ it is the direct product $(\mathbb{D}'_R)^\times \cong R^\times \times (R,+)$ via $a + as\varepsilon \leftrightarrow (a,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm form $N(Z) = x^2$ is degenerate with radical $\mathfrak{m}$, and its norm-one set is the pair of parallel lines $x = \pm1$, whose identity component is the shear group $1 + \mathfrak{m}$.
 
-Multiplication by a unit is a **dilation composed with a shear**: in the basis $(1, \varepsilon)$ the regular representation is $[a + b\varepsilon] = a(I + (b/a)E)$ with $E = \rho_{\mathrm{reg}}(\varepsilon) = \begin{pmatrix}0&0\\1&0\end{pmatrix}$ and $E^2 = 0$. The **shear** $S(s) = I + sE$ acts by $x + y\varepsilon \mapsto x + (y+sx)\varepsilon$; it fixes $\mathfrak{m}$ pointwise, acts as the identity on the quotient, and its orbits are the fibres of the augmentation, with the fibre over the origin fixed.
+Multiplication by a unit is a **dilation composed with a shear**: in the basis $(1, \varepsilon)$ the matrix of multiplication by $a + b\varepsilon$ is $[a + b\varepsilon] = a(I + (b/a)E)$ with $E = \begin{pmatrix}0&0\\1&0\end{pmatrix}$ the matrix of multiplication by $\varepsilon$, $E^2 = 0$. The **shear** $S(s) = I + sE$ acts by $x + y\varepsilon \mapsto x + (y+sx)\varepsilon$; it fixes $\mathfrak{m}$ pointwise, acts as the identity on the quotient, and its orbits are the fibres of the augmentation, with the fibre over the origin fixed.
 
 The shears form a **one-parameter group** $G = \{S(s)\} \cong (\mathbb{R},+)$ with $S(s)S(t) = S(s+t)$ and generator $E$. The **exponential** is the polynomial map $\exp(s\varepsilon) = 1 + s\varepsilon$, a group isomorphism and homeomorphism onto $G$, inverse to the dual logarithm; on the projective chart $\{x \neq 0\}$ with coordinate $t = y/x$ the shear is the translation $t \mapsto t+s$, so $G$ is the unipotent one-parameter subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes the class of $\varepsilon$, a transformation with a double fixed point. The parameter is the **parabolic angle**; it is additive, globally defined and without period, and $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1+\mathfrak{m} \cong (\mathbb{R},+)$.
 
@@ -341,16 +343,15 @@ The **Lie algebra** of the shear group is the line $\mathfrak{g} = \mathbb{R}E =
 |---|---|
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual number algebra, $\varepsilon^2 = 0$ |
 | $\mathbb{D}$ | Split complex algebra, unit $j$, $j^2 = +1$ |
-| $z = x + y\varepsilon$ | General dual number, $x = \operatorname{Re} z$, $y = \operatorname{Inf} z$ |
-| $N(z) = z\bar z = x^2$ | Degenerate norm form, radical $\mathfrak{m}$ |
-| $H = \{z : N(z) = 1\}$ | Norm-one group, lines $x = \pm1$; $H_0 = 1+\mathfrak{m}$ |
+| $Z = x + y\varepsilon$ | General dual number, $x = \operatorname{Re} Z$, $y = \operatorname{Inf} Z$ |
+| $N(Z) = Z\bar Z = x^2$ | Degenerate norm form, radical $\mathfrak{m}$ |
+| $H = \{Z : N(Z) = 1\}$ | Norm-one group, lines $x = \pm1$; $H_0 = 1+\mathfrak{m}$ |
 | $\mathfrak{m} = \varepsilon\mathbb{R}$ | Maximal ideal, $\mathfrak{m}^2 = 0$ |
 | $\pi(x+y\varepsilon) = x$ | Augmentation, kernel $\mathfrak{m}$ |
 | $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathfrak{m}$ | Group of units |
 | $1 + \mathfrak{m}$ | Shear group, units of real part $1$ |
-| $\rho_{\mathrm{reg}}(u)(z) = uz$ | Regular representation |
-| $[u] = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix}$ | Matrix of $\rho_{\mathrm{reg}}(a + b\varepsilon)$ |
-| $E = \rho_{\mathrm{reg}}(\varepsilon) = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$ | Nilpotent generator, $E^2 = 0$ |
+| $[u] = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix}$ | Matrix of multiplication by $u = a + b\varepsilon$ |
+| $E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$ | Nilpotent generator, matrix of multiplication by $\varepsilon$, $E^2 = 0$ |
 | $S(s) = I + sE = \begin{pmatrix} 1 & 0 \\ s & 1 \end{pmatrix}$ | Shear of parameter $s$ |
 | $G = \{S(s)\} \cong (\mathbb{R},+)$ | One-parameter shear group |
 | $\exp(s\varepsilon) = 1 + s\varepsilon$ | Exponential of the shear generator |

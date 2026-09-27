@@ -69,7 +69,7 @@ For two submodules the condition reduces to $M=N_1+N_2$ and $N_1\cap N_2=0$. The
 
 **Definition.** A submodule $N \subseteq M$ is a **direct summand** of $M$ if $M=N\oplus N'$ for some submodule $N'$, called a **complement** of $N$.
 
-Over a field every subspace is a direct summ, because a basis of a subspace extends to a basis of the whole space; over a general ring this fails, and the failure is not covered here.
+Over a field every subspace is a direct summand, because a basis of a subspace extends to a basis of the whole space; over a general ring this fails, and the failure is not covered here.
 
 The module-theoretic content of a direct summand is an idempotent endomorphism.
 
@@ -221,13 +221,13 @@ Over a principal ideal domain, every submodule of a free module is free. This is
 
 ### Over the Split Complex Numbers
 
-The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $e_\pm=\tfrac{1}{2}(1 \pm j)$, which satisfy $e_+^2=e_+$, $e_-^2=e_-$, $e_+e_-=0$ and $e_++e_-=1$. The ring isomorphism
+The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_\pm=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_+^2=\pi_+$, $\pi_-^2=\pi_-$, $\pi_+\pi_-=0$ and $\pi_++\pi_-=1$. The ring isomorphism
 
 $$
 \mathbb{D} \cong \mathbb{R} \times \mathbb{R}, \qquad a+bj \longmapsto (a+b,\ a-b),
 $$
 
-sends $e_+$ to $(1,0)$ and $e_-$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and
+sends $\pi_+$ to $(1,0)$ and $\pi_-$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and
 
 $$
 \mathbb{D}^{(I)} \cong \mathbb{R}^{(I)} \oplus \mathbb{R}^{(I)}

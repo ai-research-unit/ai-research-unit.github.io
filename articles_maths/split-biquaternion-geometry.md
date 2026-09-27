@@ -5,7 +5,7 @@
 
 This article is the geometry slot of the split biquaternion system. It describes the geometric structures that the algebra $\mathbb{H}_{\mathbb{D}}$ carries in its own right: the two quadratic forms attached to it, the unit sphere and its metric, the zero divisor cone and its two ruling ideals, the quadric defined by the Hermitian form, and the incidence geometry of the neutral planes. The article is the geometric companion of the written algebraic articles of the same system and the split-biquaternion entry of the ladder that Part V traverses one number system at a time.
 
-The article assumes the split biquaternion algebra from *Split-Biquaternion Algebra*: the tensor product $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, the basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the central split complex unit $j$ with $j^2 = +e_0$, the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = \bar{\cdot}\,{}^{*}$ and ${}^{\flat} = -{}^{\dagger}$, the idempotents $e_{\pm} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q}$, its non-invertibility exactly on the zero divisors, and the idempotent description of invertibility, from *Split-Biquaternion Norm and Invertibility*; the description of the zero divisors as the union of the two ideals from *Split-Biquaternion Zero Divisors*; the classification of the roots of $-e_0$ from *Split-Biquaternion Roots of Minus One*; and the polar representation of the units from *Split-Biquaternion Polar Representation*, whose algebraic content is used here only as the input to a geometric statement and is not restated. The Hermitian scalar form and its two Lorentzian and neutral restrictions are established in *Split-Biquaternion Rotations and the Lorentz Group*, and are used here as the metric datum. The general theory of quadrics, of isotropic subspaces and of the isometry groups of forms is the subject of the Part II companion *Pseudo-Riemannian and Lorentzian Geometry* and of the Part I companions *Quadratic Forms and Polarisation*, *Bilinear Forms* and *Isometries and Orthogonal Transformations*, written in parallel; the present article treats only the structures of this one algebra.
+The article assumes the split biquaternion algebra from *Split-Biquaternion Algebra*: the tensor product $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, the basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the central split complex unit $j$ with $j^2 = +e_0$, the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{\dagger}$, the idempotents $\tilde\Pi_{\pm} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q}$, its non-invertibility exactly on the zero divisors, and the idempotent description of invertibility, from *Split-Biquaternion Norm and Invertibility*; the description of the zero divisors as the union of the two ideals from *Split-Biquaternion Zero Divisors*; the classification of the roots of $-e_0$ from *Split-Biquaternion Roots of Minus One*; and the polar representation of the units from *Split-Biquaternion Polar Representation*, whose algebraic content is used here only as the input to a geometric statement and is not restated. The Hermitian scalar form and its two Lorentzian and neutral restrictions are established in *Split-Biquaternion Rotations and the Lorentz Group*, and are used here as the metric datum. The general theory of quadrics, of isotropic subspaces and of the isometry groups of forms is the subject of the Part II companion *Pseudo-Riemannian and Lorentzian Geometry* and of the Part I companions *Quadratic Forms and Polarisation*, *Bilinear Forms* and *Isometries and Orthogonal Transformations*, written in parallel; the present article treats only the structures of this one algebra.
 
 Throughout, $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu$ and $q_\mu, q'_\mu\in\mathbb{R}$, and the real coordinates of $\tilde Q$ are $(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)$. Two quadratic forms are used: the **Euclidean form**
 
@@ -16,7 +16,7 @@ $$
 which is positive definite of signature $(8,0)$ and is the norm form of $\mathbb{H}_{\mathbb{D}}$ as a real vector space, and the **Hermitian scalar form**
 
 $$
-g(\tilde P,\tilde Q) = \operatorname{Sc}\!\left(\tilde P\tilde Q^{\dagger}\right),
+g(\tilde P,\tilde Q) = \mathrm{Sc}\!\left(\tilde P\tilde Q^{\dagger}\right),
 $$
 
 which is non-degenerate of signature $(4,4)$. The involution ${}^{\dagger}$ and its two eigenspaces $\mathbb{M}_{\pm}$ are those of *Split-Biquaternion Rotations and the Lorentz Group*.
@@ -57,27 +57,29 @@ so that $N = R + jI$. The form $R$ is the Euclidean form of the introduction; th
 
 ### The Zero Set
 
-**Definition.** The **null set** of the norm form, also called the **zero divisor cone**, is
+**Definition.** The **zero divisor cone** is the set of non-invertible elements of $\mathbb{H}_{\mathbb{D}}$, equivalently the set of elements whose norm form is a zero divisor of $\mathbb{D}$:
 
 $$
-Z = \{\tilde Q\in\mathbb{H}_{\mathbb{D}} : N(\tilde Q) = 0\}.
+Z = \{\tilde Q\in\mathbb{H}_{\mathbb{D}} : N(\tilde Q)\notin\mathbb{D}^\times\}.
 $$
 
-**Theorem.** The zero divisor cone has the following description. The norm form vanishes at $\tilde Q$ if and only if the split complex number $N(\tilde Q)$ is a zero divisor of $\mathbb{D}$, that is, if and only if the idempotent component $\tilde Q_+$ or the idempotent component $\tilde Q_-$ is the quaternion zero. Equivalently,
+The norm form itself is anisotropic, so its proper zero set $\{\tilde Q : N(\tilde Q) = 0\}$ is the single point $\{0\}$; the name *null set of the norm form* attaches to $Z$ through the zero divisors of the coefficient algebra rather than through vanishing.
+
+**Theorem.** The zero divisor cone has the following description. The element $\tilde Q$ lies in $Z$ if and only if the split complex number $N(\tilde Q)$ is a zero divisor of $\mathbb{D}$, that is, if and only if the idempotent component $\tilde Q_+$ or the idempotent component $\tilde Q_-$ is the quaternion zero. Equivalently,
 
 $$
-Z = \mathbb{H}e_+\cup\mathbb{H}e_- = \{\tilde Q : \tilde Q_+ = 0\}\cup\{\tilde Q : \tilde Q_- = 0\},
+Z = \mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_- = \{\tilde Q : \tilde Q_+ = 0\}\cup\{\tilde Q : \tilde Q_- = 0\},
 $$
 
 the union of the two ideals, and each of the two sets is a real four-dimensional subspace; the two meet only at the origin, and $Z$ is the union of two four-dimensional subspaces of the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$. In terms of the decomposition $N = R + jI$ the cone is the locus $\lvert I(\tilde Q)\rvert = R(\tilde Q)$, which for the two real forms $R$ and $I$ is the equality case of the Cauchy–Schwarz inequality.
 
-*Proof.* In the split complex algebra an element $u = c + js$ is a zero divisor if and only if $c^2 = s^2$, that is, if and only if $u$ has the form $\lambda(1\pm j)$ with $\lambda\in\mathbb{R}$; equivalently $uu^{*} = 0$ (see *Split Complex Algebra*). Since $N(\tilde Q) = N(\tilde Q_+)e_+ + N(\tilde Q_-)e_-$ under the idempotent decomposition, the norm form is a zero divisor of $\mathbb{D}$ exactly when one of the two quaternion norms vanishes, and a quaternion norm vanishes only at the quaternion zero. This gives the two ideals, and each ideal is four-dimensional over $\mathbb{R}$ because it is a copy of $\mathbb{H}$. They meet only at the origin because $\tilde Q_+ = 0$ and $\tilde Q_- = 0$ together give $\tilde Q = 0$. For the last statement, $N(\tilde Q) = R + jI$ with $R = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ and $I = 2\sum_\mu q_\mu q'_\mu$, so the idempotent components of $N(\tilde Q)$ are $R \pm I = \sum_\mu(q_\mu\pm q'_\mu)^2$, which vanish exactly when $q'_\mu = \mp q_\mu$ for all $\mu$; this is the equality case of $\lvert\sum_\mu q_\mu q'_\mu\rvert \leq \sqrt{\sum_\mu q_\mu^2}\sqrt{\sum_\mu (q'_\mu)^2}$. $\square$
+*Proof.* In the split complex algebra an element $u = c + js$ is a zero divisor if and only if $c^2 = s^2$, that is, if and only if $u$ has the form $\lambda(1\pm j)$ with $\lambda\in\mathbb{R}$; equivalently $uu^{*} = 0$ (see *Split Complex Algebra*). Since $N(\tilde Q) = N(\tilde Q_+)\tilde\Pi_+ + N(\tilde Q_-)\tilde\Pi_-$ under the idempotent decomposition, the norm form is a zero divisor of $\mathbb{D}$ exactly when one of the two quaternion norms vanishes, and a quaternion norm vanishes only at the quaternion zero. This gives the two ideals, and each ideal is four-dimensional over $\mathbb{R}$ because it is a copy of $\mathbb{H}$. They meet only at the origin because $\tilde Q_+ = 0$ and $\tilde Q_- = 0$ together give $\tilde Q = 0$. For the last statement, $N(\tilde Q) = R + jI$ with $R = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ and $I = 2\sum_\mu q_\mu q'_\mu$, so the idempotent components of $N(\tilde Q)$ are $R \pm I = \sum_\mu(q_\mu\pm q'_\mu)^2$, which vanish exactly when $q'_\mu = \mp q_\mu$ for all $\mu$; this is the equality case of $\lvert\sum_\mu q_\mu q'_\mu\rvert \leq \sqrt{\sum_\mu q_\mu^2}\sqrt{\sum_\mu (q'_\mu)^2}$. $\square$
 
 The description of the zero divisor set is the geometric counterpart of the algebraic statement of *Split-Biquaternion Zero Divisors*: the set of non-invertible elements is a union of two subspaces, not a hypersurface, and it is not a cone in the sense of a single quadratic cone but the union of the two ruling subspaces.
 
-**Proposition.** Both ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$ are totally isotropic for the Hermitian scalar form $g$: $g(\tilde P,\tilde Q) = 0$ for all $\tilde P,\tilde Q$ in the same ideal. They are four-dimensional and maximal with this property, since the maximal totally isotropic subspaces of a neutral form of signature $(4,4)$ are four-dimensional.
+**Proposition.** Both ideals $\mathbb{H}\tilde\Pi_+$ and $\mathbb{H}\tilde\Pi_-$ are totally isotropic for the Hermitian scalar form $g$: $g(\tilde P,\tilde Q) = 0$ for all $\tilde P,\tilde Q$ in the same ideal. They are four-dimensional and maximal with this property, since the maximal totally isotropic subspaces of a neutral form of signature $(4,4)$ are four-dimensional.
 
-*Proof.* If $\tilde Q = \tilde Q_-e_-$ then $\tilde Q^{\dagger} = \bar{\tilde Q}_-e_+$, so $\tilde Q\tilde Q^{\dagger} = \tilde Q_-\bar{\tilde Q}_-e_-e_+ = 0$ and hence $g(\tilde Q,\tilde Q) = 0$; polarisation gives $g(\tilde P,\tilde Q) = 0$ within the ideal, since $\tilde P\tilde Q^{\dagger}$ has the same form with $\tilde P_-,\tilde Q_-$ and $\operatorname{Sc}(\tilde P_-\bar{\tilde Q}_-e_-e_+) = 0$ because every element of the form $\tilde R e_+$ has scalar part $\tfrac{1}{2}\operatorname{Sc}(\tilde R)$ and $\tilde P_-\bar{\tilde Q}_-e_-e_+ = 0$. By Witt's theorem the maximal totally isotropic subspaces of a non-degenerate form of signature $(4,4)$ have dimension the minimum of the two indices, which is four. $\square$
+*Proof.* If $\tilde Q = \tilde Q_-\tilde\Pi_-$ then $\tilde Q^{\dagger} = \bar{\tilde Q}_-\tilde\Pi_+$, so $\tilde Q\tilde Q^{\dagger} = \tilde Q_-\bar{\tilde Q}_-\tilde\Pi_-\tilde\Pi_+ = 0$ and hence $g(\tilde Q,\tilde Q) = 0$; polarisation gives $g(\tilde P,\tilde Q) = 0$ within the ideal, since $\tilde P\tilde Q^{\dagger}$ has the same form with $\tilde P_-,\tilde Q_-$ and $\mathrm{Sc}(\tilde P_-\bar{\tilde Q}_-\tilde\Pi_-\tilde\Pi_+) = 0$ because every element of the form $\tilde R \tilde\Pi_+$ has scalar part $\tfrac{1}{2}\mathrm{Sc}(\tilde R)$ and $\tilde P_-\bar{\tilde Q}_-\tilde\Pi_-\tilde\Pi_+ = 0$. By Witt's theorem the maximal totally isotropic subspaces of a non-degenerate form of signature $(4,4)$ have dimension the minimum of the two indices, which is four. $\square$
 
 ## The Unit Sphere and Its Metric
 
@@ -92,13 +94,13 @@ $$
 **Theorem.** The unit sphere is the product $S^3\times S^3$ of two round three-spheres, exhibited by the idempotent decomposition: an element $\tilde Q$ has norm form $e_0$ if and only if $\lvert\tilde Q_+\rvert = \lvert\tilde Q_-\rvert = 1$, and the map
 
 $$
-\mathbb{H}e_+\oplus\mathbb{H}e_-\longrightarrow\mathbb{H}\oplus\mathbb{H}, \qquad
-\tilde Q = \tilde Q_+e_+ + \tilde Q_-e_-\longmapsto(\tilde Q_+,\tilde Q_-)
+\mathbb{H}\tilde\Pi_+\oplus\mathbb{H}\tilde\Pi_-\longrightarrow\mathbb{H}\oplus\mathbb{H}, \qquad
+\tilde Q = \tilde Q_+\tilde\Pi_+ + \tilde Q_-\tilde\Pi_-\longmapsto(\tilde Q_+,\tilde Q_-)
 $$
 
 is a ring isomorphism carrying $S(\mathbb{H}_{\mathbb{D}})$ onto $S^3\times S^3$. In particular $S(\mathbb{H}_{\mathbb{D}})$ is a compact six-dimensional manifold, and it is a group under multiplication.
 
-*Proof.* The norm form of $\tilde Q = \tilde Q_+e_+ + \tilde Q_-e_-$ is $N(\tilde Q_+)e_+ + N(\tilde Q_-)e_-$ because $e_{\pm}$ are orthogonal idempotents, and this equals $e_0 = e_+ + e_-$ exactly when both quaternion norms equal $1$. The identification $S^3\times S^3$ is then immediate. $\square$
+*Proof.* The norm form of $\tilde Q = \tilde Q_+\tilde\Pi_+ + \tilde Q_-\tilde\Pi_-$ is $N(\tilde Q_+)\tilde\Pi_+ + N(\tilde Q_-)\tilde\Pi_-$ because $\tilde\Pi_{\pm}$ are orthogonal idempotents, and this equals $e_0 = \tilde\Pi_+ + \tilde\Pi_-$ exactly when both quaternion norms equal $1$. The identification $S^3\times S^3$ is then immediate. $\square$
 
 The unit sphere is thus a compact Lie group of dimension six. It is not a hyperboloid and not a symmetric space of non-compact type; the hyperboloids of this system are described, and are level sets of the Hermitian form rather than of the norm form.
 
@@ -110,7 +112,7 @@ $$
 d\left((u_+,u_-),(v_+,v_-)\right)^2 = d_{S^3}(u_+,v_+)^2 + d_{S^3}(u_-,v_-)^2,
 $$
 
-where $d_{S^3}$ is the geodesic distance of the quaternion sphere, $d_{S^3}(u,v) = \arccos\operatorname{Sc}(u\bar v)$.
+where $d_{S^3}$ is the geodesic distance of the quaternion sphere, $d_{S^3}(u,v) = \arccos\mathrm{Sc}(u\bar v)$.
 
 **Proposition.** The product metric is a bi-invariant metric on the group $S^3\times S^3$, it is the metric induced by the Euclidean form restricted to the unit sphere in the directions tangent to it, and its geodesics are the products of great circles. Its diameter is $\pi$ in each coordinate, the cut locus of a point is the product of the two antipodes, and the volume of the unit sphere with respect to the induced Riemannian volume is
 
@@ -152,7 +154,7 @@ $$
 
 the projectivisation of the null cone of $g$; it is a non-degenerate quadric of dimension six and of signature $(4,4)$, called a quadric of Kleinian type.
 
-**Proposition.** The quadric $Q(g)$ contains two families of four-dimensional totally isotropic subspaces, namely the projectivisations of the maximal totally isotropic subspaces of $g$; through each point of $Q(g)$ there passes at least one member of each family, and the two families are interchanged by the symmetries of the quaternion index set. The ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$ project to two members of these families, so the zero divisor set of the algebra is a union of two ruling subspaces of the quadric.
+**Proposition.** The quadric $Q(g)$ contains two families of four-dimensional totally isotropic subspaces, namely the projectivisations of the maximal totally isotropic subspaces of $g$; through each point of $Q(g)$ there passes at least one member of each family, and the two families are interchanged by the symmetries of the quaternion index set. The ideals $\mathbb{H}\tilde\Pi_+$ and $\mathbb{H}\tilde\Pi_-$ project to two members of these families, so the zero divisor set of the algebra is a union of two ruling subspaces of the quadric.
 
 *Proof.* The zero divisor ideals are totally isotropic of dimension four by the proposition above, so their projectivisations are three-dimensional projective subspaces contained in $Q(g)$; in the projective space $\mathbb{P}^7$ the maximal projective subspaces of a $(4,4)$ quadric have dimension three, since the maximal totally isotropic vector subspaces have dimension four. The incidence statement is the standard description of the maximal isotropic subspaces of a form of signature $(4,4)$, whose two families are parametrised by the choice of a maximal positive subspace of dimension four and its orthogonal complement; the identification with the quaternion index set is made through the pairing $\mu\leftrightarrow$ the coordinate $e_\mu$ and the split partner. $\square$
 
@@ -225,9 +227,9 @@ Two features separate the split biquaternion system from both the complex and th
 
 ## Summary
 
-The split biquaternion algebra carries two quadratic forms. The Euclidean form $\lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ is positive definite of signature $(8,0)$ and gives the metric of the underlying real vector space. The norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ is split complex valued, equal to $R + jI$ with $R = \lvert\tilde Q\rvert^2$ and $I = 2\sum_\mu q_\mu q'_\mu$, and multiplicative. Its zero set is the union of the two ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$, each a real four-dimensional subspace, meeting only at the origin; the zero divisors are therefore a union of two ruling subspaces rather than a hypersurface.
+The split biquaternion algebra carries two quadratic forms. The Euclidean form $\lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ is positive definite of signature $(8,0)$ and gives the metric of the underlying real vector space. The norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ is split complex valued, equal to $R + jI$ with $R = \lvert\tilde Q\rvert^2$ and $I = 2\sum_\mu q_\mu q'_\mu$, and multiplicative. Its zero set is the union of the two ideals $\mathbb{H}\tilde\Pi_+$ and $\mathbb{H}\tilde\Pi_-$, each a real four-dimensional subspace, meeting only at the origin; the zero divisors are therefore a union of two ruling subspaces rather than a hypersurface.
 
-The unit sphere $\{\tilde Q : N(\tilde Q) = e_0\}$ is the product $S^3\times S^3$, a compact six-dimensional group with the product of the round metrics, of volume $4\pi^4$, bi-invariant, with geodesics the products of great circles. Its quotients by the diagonal and by either factor are three-spheres. The Hermitian scalar form $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ is non-degenerate of signature $(4,4)$; its projectivised null cone is a Kleinian quadric of dimension six, on which the two zero divisor ideals project to two maximal totally isotropic subspaces; the $\mathbb{D}$-span of two quaternion coordinates is a neutral plane of signature $(2,2)$ with isometry group $O(2,2)$. The isometry group of $g$ is $O(4,4)$, of dimension twenty-eight, with maximal compact subgroup $O(4)\times O(4)$, and the quadric is the compact dual of the Hermitian symmetric space $SO^{+}(4,4)/(SO(4)\times SO(4))$.
+The unit sphere $\{\tilde Q : N(\tilde Q) = e_0\}$ is the product $S^3\times S^3$, a compact six-dimensional group with the product of the round metrics, of volume $4\pi^4$, bi-invariant, with geodesics the products of great circles. Its quotients by the diagonal and by either factor are three-spheres. The Hermitian scalar form $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q^{\dagger})$ is non-degenerate of signature $(4,4)$; its projectivised null cone is a Kleinian quadric of dimension six, on which the two zero divisor ideals project to two maximal totally isotropic subspaces; the $\mathbb{D}$-span of two quaternion coordinates is a neutral plane of signature $(2,2)$ with isometry group $O(2,2)$. The isometry group of $g$ is $O(4,4)$, of dimension twenty-eight, with maximal compact subgroup $O(4)\times O(4)$, and the quadric is the compact dual of the Hermitian symmetric space $SO^{+}(4,4)/(SO(4)\times SO(4))$.
 
 ## Summary of Notation
 
@@ -237,16 +239,16 @@ The unit sphere $\{\tilde Q : N(\tilde Q) = e_0\}$ is the product $S^3\times S^3
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $j$ | Split complex unit, $j^2 = +e_0$, central |
 | $Q_\mu = q_\mu + jq'_\mu$ | Split complex coefficients, $q_\mu, q'_\mu\in\mathbb{R}$ |
-| $e_{\pm} = \tfrac{1}{2}(1\pm j)$ | Idempotents, $e_+e_- = 0$ |
+| $\tilde\Pi_{\pm} = \tfrac{1}{2}(1\pm j)$ | Idempotents, $\tilde\Pi_+\tilde\Pi_- = 0$ |
 | $\bar{\cdot},\ {}^{*},\ {}^{\dagger},\ {}^{\flat}$ | Quaternion, split complex, Hermitian and anti-Hermitian conjugations |
 | $N(\tilde Q) = \tilde Q\bar{\tilde Q} = R + jI$ | Norm form, split complex valued |
 | $R = \lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ | Euclidean form, signature $(8,0)$ |
 | $I = 2\sum_\mu q_\mu q'_\mu$ | Split part of the norm form |
-| $Z = \mathbb{H}e_+\cup\mathbb{H}e_-$ | Zero divisor cone, the two ideals |
+| $Z = \mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$ | Zero divisor cone, the two ideals |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
-| $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ | Hermitian scalar form, signature $(4,4)$ |
+| $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q^{\dagger})$ | Hermitian scalar form, signature $(4,4)$ |
 | $S(\mathbb{H}_{\mathbb{D}}) = \{\tilde Q : N(\tilde Q) = e_0\}\cong S^3\times S^3$ | Unit sphere, compact group |
-| $d_{S^3}(u,v) = \arccos\operatorname{Sc}(u\bar v)$ | Geodesic distance on $S^3$ |
+| $d_{S^3}(u,v) = \arccos\mathrm{Sc}(u\bar v)$ | Geodesic distance on $S^3$ |
 | $\Delta S^3$ | Diagonal subgroup of $S^3\times S^3$ |
 | $Q(g)$ | Hermitian quadric in $\mathbb{P}^7$, Kleinian type $(4,4)$ |
 | $\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu$ | Neutral four-plane, signature $(2,2)$ |

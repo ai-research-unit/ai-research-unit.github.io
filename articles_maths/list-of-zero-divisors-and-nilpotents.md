@@ -42,7 +42,7 @@ The nilpotents of a commutative ring form an ideal, the nilradical, which is the
 | $\mathbb{D}$, the split-complex numbers | $e_{\pm} = \tfrac{1}{2}(1 \pm j)$ | $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
 | $\mathbb{Z}/6\mathbb{Z}$ | the images of $(1,0)$ and $(0,1)$ | $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ | *Modular Arithmetic and the Ring of Residues* |
 | $R \times S$ | $(1,0)$ and $(0,1)$ | the ring is the product by construction | *Examples of Rings and Fields* |
-| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $e_+$, $e_-$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $\pi_+$, $\pi_-$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ | *Split-Biquaternion Zero Divisors* |
 | $M_2(\mathbb{R})$ | $E_{11}$, $E_{22}$ | the column decomposition $\mathbb{R}^2 = \mathbb{R}e_1 \oplus \mathbb{R}e_2$ | *Matrix Algebras* |
 | a Boolean ring $B$ | every element | $B$ is a product of copies of $\mathbb{F}_2$ | *Von Neumann Regular Rings* |
 | $\mathbb{Q}[C_3]$ | the orbit sums of the components | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | *Examples of Rings and Fields* |
@@ -68,7 +68,7 @@ The torsion case is where the three kinds of zero divisor separate most cleanly:
 |---|---|---|---|
 | $M_2(\mathbb{R})$ | yes: the nilpotent matrices with $N^2 = 0$ | yes: $E_{11}$, $E_{22}$ | *Matrix Algebras* |
 | $\mathbb{B}$, the biquaternions | yes: the pure zero divisors | yes: the complex multiples of the idempotents | *Biquaternion Zero Divisors* |
-| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | no nonzero nilpotents | yes: $e_+$, $e_-$ | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | no nonzero nilpotents | yes: $\pi_+$, $\pi_-$ | *Split-Biquaternion Zero Divisors* |
 | $\mathbb{H}$ | none | none | *Quaternion Algebra* |
 | the upper triangular matrices | yes: the strictly upper triangular matrices | yes: the diagonal idempotents | *Matrix Algebras* |
 | $k[G]$ for $G$ with torsion | when the characteristic divides the order | from the idempotents of the group algebra | *Group Algebras* |

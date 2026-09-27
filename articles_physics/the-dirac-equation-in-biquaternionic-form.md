@@ -167,7 +167,7 @@ $$
 acting as $-1$ on the upper two-component block and $+1$ on the lower. Since $\gamma_5^2 = 1$, the Dirac spinor space splits into its eigenspaces,
 
 $$
-\mathbb{C}^4 = \Delta_+\oplus\Delta_-, \qquad \Delta_\pm = \{\psi : \gamma_5\psi = \pm\psi\}, \qquad P_\pm = \tfrac12(1\pm\gamma_5),
+\mathbb{C}^4 = \Delta_+\oplus\Delta_-, \qquad \Delta_\pm = \{\psi : \gamma_5\psi = \pm\psi\}, \qquad \tilde\Pi_{L,R} = \tfrac12(1\pm\gamma_5),
 $$
 
 each of complex dimension two; the elements of $\Delta_\pm$ are the Weyl spinors of the preceding section, left- and right-handed up to the labelling convention for the sign. Correspondingly the central idempotents $\tfrac12(1\pm i\omega)$ split the complexified even algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathrm{Cl}_{1,3}^+ \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, which is the algebraic form of the same decomposition. The $i$ in $\gamma_5$ and in the projectors is the scalar imaginary of the complexified Clifford algebra; the biquaternion imaginary is the element whose image under $\Phi$ is $\omega$ itself.

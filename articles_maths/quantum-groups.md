@@ -185,7 +185,7 @@ The crystal and canonical basis theory is the source of the Kazhdan–Lusztig th
 
 **Theorem (standard, Lusztig).** For $\ell$ odd and coprime to the Coxeter number, the small quantum group $u_q(\mathfrak{g})$ is a finite-dimensional Hopf algebra with a one-dimensional space of integrals in the sense of *Hopf Algebras*, it is a **modular** Hopf algebra, and its representation category is a modular tensor category whose fusion rules are the Verlinde formula applied to the affine Lie algebra $\widehat{\mathfrak{g}}$ at level $\ell - h^\vee$.
 
-At a root of unity the deformation fails to be flat in the naive sense: $U_q(\mathfrak{g})$ acquires a large centre, its category of finite-dimensional modules is no longer semisimple, and the representation theory has a block decomposition analogous to the modular representation theory of finite groups, which is the subject andin the last category of this Part. This is the point of contact between the quantum groups and the modular representation theory; it is the Frobenius twist and the Steinberg tensor product theorem that make the analogy precise in the classical case.
+At a root of unity the deformation fails to be flat in the naive sense: $U_q(\mathfrak{g})$ acquires a large centre, its category of finite-dimensional modules is no longer semisimple, and the representation theory has a block decomposition analogous to the modular representation theory of finite groups, which is the subject of the last category of this Part. This is the point of contact between the quantum groups and the modular representation theory; it is the Frobenius twist and the Steinberg tensor product theorem that make the analogy precise in the classical case.
 
 ## Formal Deformations and the Link with Quantisation
 

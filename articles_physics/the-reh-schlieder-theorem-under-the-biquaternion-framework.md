@@ -8,13 +8,13 @@ This article asks what the Reeh–Schlieder theorem is in the biquaternion frame
 
 1. **The theorem is standard and its consequences are inherited.** For a Wightman field the theorem holds for the local algebras of any region whose causal complement has nonempty interior, and its consequences — that the vacuum is entangled across any region partition, that no local operator has the vacuum as an eigenstate, that a local operation cannot prepare the vacuum exactly — are standard.
 
-2. **The framework realizes the cyclic half exactly and the separating half only for faithful states.** The GNS cyclic vector of any biquaternion state is cyclic for the algebra by construction. It is separating exactly when the state is faithful, that is, in the interior of the Bloch ball. The vacuum $P_+(e_3)$ is pure; its GNS radical is nontrivial; and the single-mode ladder annihilates it. In the finite four-dimensional algebra the vacuum is therefore cyclic but not separating.
+2. **The framework realizes the cyclic half exactly and the separating half only for faithful states.** The GNS cyclic vector of any biquaternion state is cyclic for the algebra by construction. It is separating exactly when the state is faithful, that is, in the interior of the Bloch ball. The vacuum $\tilde\Pi_1$ is pure; its GNS radical is nontrivial; and the single-mode ladder annihilates it. In the finite four-dimensional algebra the vacuum is therefore cyclic but not separating.
 
 3. **The separating half is an infinite-dimensional and spectral phenomenon.** The field-theoretic proof of separating uses the spectrum condition — the positivity of the energy — and the resulting analyticity of the vacuum correlation functions, which the finite-dimensional algebra does not carry. The framework houses the theorem's algebraic content in the GNS representation and its field content in the CAR algebra built on the biquaternion one-particle module, which is infinite-dimensional and of type III; there the vacuum is cyclic and separating, and the finite truncation cannot reproduce it.
 
 The article proceeds as follows. The theorem is stated with its hypotheses and its two halves, and the role of the spectrum condition is explained. Cyclicity and separating are then characterized in the GNS construction, where cyclicity is automatic and separating is faithfulness. The biquaternion vacuum is examined and its failure to be separating is exhibited with an explicit algebra element. The infinite-dimensional field algebra on the biquaternion module is described, and the theorem is located there. The article closes with the established/interpretation/open split. The Bisognano–Wichmann theorem is referred to rather than re-derived: it is the statement that the modular flow the Reeh–Schlieder property makes possible is, for a wedge, the boost.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. The states are $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$, $\mathrm{Tr}\tilde\rho=1$; the vacuum idempotent is $P_+(e_3)=\tfrac12(e_0+ie_3)$ and the single-mode ladder is $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent* and *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The modular operator, modular conjugation and modular flow are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. The states are $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$, $\mathrm{Tr}\tilde\rho=1$; the vacuum idempotent is $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and the single-mode ladder is $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent* and *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The modular operator, modular conjugation and modular flow are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*.
 
 ## The Reeh–Schlieder Theorem
 
@@ -90,27 +90,27 @@ The two halves therefore have sharply different finite-dimensional characters: c
 
 ### The Vacuum Module Is Cyclically Generated
 
-Take the vacuum state $\tilde\rho=P_+(e_3)=\tfrac12(e_0+ie_3)$. Its GNS space is the minimal left ideal,
+Take the vacuum state $\tilde\rho=\tilde\Pi_1=\tfrac12(e_0+ie_3)$. Its GNS space is the minimal left ideal,
 $$
-\mathcal H_{P_+(e_3)}\cong\mathbb{B}\,P_+(e_3)\cong\mathbb{C}^2,
+\mathcal H_{\tilde\Pi_1}\cong\mathbb{B}\,\tilde\Pi_1\cong\mathbb{C}^2,
 $$
 of complex dimension two, the one-particle spinor module, with $\Omega=[e_0]$ and the representation $\pi$ left multiplication, which is irreducible. The cyclicity is realized concretely by the single-mode ladder: with
 $$
 \tilde a_{\mathrm{tr}}=\tfrac12\big(ie_1-e_2\big),\qquad
 \tilde a_{\mathrm{tr}}^\dagger=\tfrac12\big(ie_1+e_2\big),\qquad
-\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=P_-(e_3)=e_0-P_+(e_3),
+\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tilde\Pi_2=e_0-\tilde\Pi_1,
 $$
 the classes $\Omega=[e_0]$ and $\tilde a_{\mathrm{tr}}^\dagger\Omega=[\tilde a_{\mathrm{tr}}^\dagger]$ are orthonormal in the GNS inner product — $\langle e_0,e_0\rangle=\langle\tilde a_{\mathrm{tr}}^\dagger,\tilde a_{\mathrm{tr}}^\dagger\rangle=1$ and $\langle e_0,\tilde a_{\mathrm{tr}}^\dagger\rangle=0$, checked by the trace formula — and they span the module. The vacuum's module is generated by the vacuum under the algebra, which is the finite shadow of Reeh–Schlieder cyclicity.
 
 ### The Vacuum Is Not Separating: A Zero-Divisor Witness
 
-The GNS radical of the vacuum is not trivial, and an explicit element of it is the annihilation operator. Using $\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tilde N_{\mathrm{tr}}=P_-(e_3)=\tfrac12(e_0-ie_3)$ and $P_+(e_3)P_-(e_3)=0$,
+The GNS radical of the vacuum is not trivial, and an explicit element of it is the annihilation operator. Using $\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tilde N_{\mathrm{tr}}=\tilde\Pi_2=\tfrac12(e_0-ie_3)$ and $\tilde\Pi_1\tilde\Pi_2=0$,
 $$
 \big\langle\Omega_{\tilde\rho}\big|\pi_{\tilde\rho}(\tilde a_{\mathrm{tr}})^\dagger\pi_{\tilde\rho}(\tilde a_{\mathrm{tr}})\big|\Omega_{\tilde\rho}\big\rangle
-=\mathrm{Tr}\big(P_+(e_3)\,\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}\big)
-=\mathrm{Tr}\big(P_+(e_3)P_-(e_3)\big)=0 .
+=\mathrm{Tr}\big(\tilde\Pi_1\,\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}\big)
+=\mathrm{Tr}\big(\tilde\Pi_1\tilde\Pi_2\big)=0 .
 $$
-So $\pi_{\tilde\rho}(\tilde a_{\mathrm{tr}})\Omega_{\tilde\rho}=0$ with $\tilde a_{\mathrm{tr}}\ne0$: the vacuum fails to be separating, and the witness is the annihilation operator. Equivalently, the vacuum idempotent is a **zero divisor** — $N(P_+(e_3))=0$ — and the zero-divisor direction is the state's failure of faithfulness. The two facts are the same fact.
+So $\pi_{\tilde\rho}(\tilde a_{\mathrm{tr}})\Omega_{\tilde\rho}=0$ with $\tilde a_{\mathrm{tr}}\ne0$: the vacuum fails to be separating, and the witness is the annihilation operator. Equivalently, the vacuum idempotent is a **zero divisor** — $N(\tilde\Pi_1)=0$ — and the zero-divisor direction is the state's failure of faithfulness. The two facts are the same fact.
 
 This is the framework's honest statement of the difficulty: the pure vacuum of a single mode cannot be separating for the finite algebra, because a nonzero element of the algebra annihilates it. In the field theory the vacuum is separating because the local algebra is infinite-dimensional, and the annihilation operators that would be the witnesses are not elements of $\mathcal A(O)$ in the required sense — the local algebra is type III, its operators are not bounded functions of finitely many modes, and the spectral condition forbids the witness.
 
@@ -188,7 +188,7 @@ In the finite model of the preceding section the lemma holds verbatim: cyclicity
 
 ### The Module Algebra
 
-The field lives on the one-particle module $\mathbb{B}P_+(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$, and the field algebra is generated by the smeared ladder operators
+The field lives on the one-particle module $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$, and the field algebra is generated by the smeared ladder operators
 $$
 \tilde a(f)=f\,\tilde a_{\mathrm{tr}},\qquad
 \tilde a^\dagger(f)=\bar f\,\tilde a_{\mathrm{tr}}^\dagger,
@@ -215,7 +215,7 @@ The proof in the free case is the standard free-field proof: the vacuum two-poin
 
 **Established (theorem, imported).** The Reeh–Schlieder theorem for Wightman fields; its proof from locality and the spectrum condition via analyticity and the edge-of-the-wedge theorem; cyclicity and separating as dual properties; the consequences for vacuum entanglement, for the absence of local eigenstates, and for local preparation; the use of the property as the hypothesis of Tomita–Takesaki. All standard.
 
-**Established (recomputed here).** The finite-dimensional characterization: the GNS vector is cyclic for every biquaternion state and separating exactly for the faithful states; the vacuum's GNS space is the minimal left ideal $\mathbb{B}P_+(e_3)\cong\mathbb{C}^2$; and the explicit witness $\pi(\tilde a_{\mathrm{tr}})\Omega=0$, obtained from $\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=P_-(e_3)$ and $P_+P_-=0$.
+**Established (recomputed here).** The finite-dimensional characterization: the GNS vector is cyclic for every biquaternion state and separating exactly for the faithful states; the vacuum's GNS space is the minimal left ideal $\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$; and the explicit witness $\pi(\tilde a_{\mathrm{tr}})\Omega=0$, obtained from $\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2=0$.
 
 **Interpretation.** That the framework's finite truncation is read as exhibiting the algebraic content of Reeh–Schlieder cyclicity in the vacuum module and the field-theoretic separating property in the infinite-dimensional CAR algebra over the module, with the finite witness interpreted as the reason the single-mode vacuum cannot separate.
 
@@ -237,7 +237,7 @@ The proof in the free case is the standard free-field proof: the vacuum two-poin
 
 The Reeh–Schlieder theorem states that the vacuum of a relativistic quantum field theory is cyclic and separating for the algebra of observables of any region with nonempty causal complement. Cyclicity is the easier half and needs locality and irreducibility; separating is the deeper half and needs the spectrum condition, through the analyticity of the vacuum correlation functions and the edge-of-the-wedge theorem. The theorem supplies the cyclic and separating vector that the Tomita–Takesaki modular theory requires, and it is therefore the structural entry point to the modular programme: the vacuum of a wedge has a modular flow, and by the Bisognano–Wichmann theorem that flow is the boost.
 
-In the biquaternion framework the GNS cyclic vector of a state is cyclic for the algebra by construction, and it is separating exactly when the state is faithful, that is, in the open Bloch ball. The single-mode vacuum $P_+(e_3)$ is pure, and the annihilation operator $\tilde a_{\mathrm{tr}}$ gives an explicit nonzero element with $\pi(\tilde a_{\mathrm{tr}})\Omega=0$, because $\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=P_-(e_3)$ is orthogonal to the vacuum projector. The finite four-dimensional algebra therefore realizes the cyclic half of the theorem exactly and cannot realize the separating half for its pure vacuum; the failure is the zero-divisor structure of the vacuum idempotent.
+In the biquaternion framework the GNS cyclic vector of a state is cyclic for the algebra by construction, and it is separating exactly when the state is faithful, that is, in the open Bloch ball. The single-mode vacuum $\tilde\Pi_1$ is pure, and the annihilation operator $\tilde a_{\mathrm{tr}}$ gives an explicit nonzero element with $\pi(\tilde a_{\mathrm{tr}})\Omega=0$, because $\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tilde\Pi_2$ is orthogonal to the vacuum projector. The finite four-dimensional algebra therefore realizes the cyclic half of the theorem exactly and cannot realize the separating half for its pure vacuum; the failure is the zero-divisor structure of the vacuum idempotent.
 
 The separating property is recovered where the theorem actually lives: on the infinite-dimensional CAR algebra generated by the smeared ladder operators over the biquaternion one-particle module, whose vacuum is cyclic and separating for the local subalgebras by the standard free-field argument. The biquaternion framework supplies the module, the idempotent, and the trace; the infinite dimension and the spectrum condition supply the rest.
 
@@ -254,10 +254,10 @@ The separating property is recovered where the theorem actually lives: on the in
 | $\Omega$ | Vacuum vector; cyclic and separating |
 | $\mathcal H_{\tilde\rho},\pi_{\tilde\rho},\Omega_{\tilde\rho}$ | GNS Hilbert space, representation, cyclic vector |
 | $\mathcal N_{\tilde\rho}$ | GNS radical; nontrivial iff $\tilde\rho$ is not faithful |
-| $\tilde\rho=P_+(e_3)=\tfrac12(e_0+ie_3)$ | Single-mode vacuum state (minimal idempotent) |
-| $\mathbb{B}P_+(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$ | One-particle module; vacuum GNS space |
+| $\tilde\rho=\tilde\Pi_1=\tfrac12(e_0+ie_3)$ | Single-mode vacuum state (minimal idempotent) |
+| $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$ | One-particle module; vacuum GNS space |
 | $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$ | Single-mode ladder |
-| $\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=P_-(e_3)$ | Number operator (occupied projector) |
+| $\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tilde\Pi_2$ | Number operator (occupied projector) |
 | $\tilde a(f)=f\tilde a_{\mathrm{tr}}$ | Smeared annihilation operator |
 | $\{\tilde a(f),\tilde a^\dagger(g)\}=\langle f,g\rangle e_0$ | CAR relations |
 | $\Delta,J,\sigma_t$ | Modular operator, conjugation, flow |

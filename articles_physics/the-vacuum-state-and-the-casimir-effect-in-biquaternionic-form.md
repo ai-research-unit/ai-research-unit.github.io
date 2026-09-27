@@ -46,15 +46,15 @@ $$
 $$
 the number operator is the idempotent
 $$
-\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^{\dagger}\tilde a_{\mathrm{tr}}=\tfrac12\big(e_0-ie_3\big)=P_-(e_3)\in\mathbb{M}_+,
+\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^{\dagger}\tilde a_{\mathrm{tr}}=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_2\in\mathbb{M}_+,
 $$
 so the **vacuum projector** is the complementary idempotent
 $$
-\vert 0\rangle\langle 0\vert=e_0-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_0+ie_3\big)=P_+(e_3)\in\mathbb{M}_+.
+\vert 0\rangle\langle 0\vert=e_0-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_0+ie_3\big)=\tilde\Pi_1\in\mathbb{M}_+.
 $$
 The vacuum state is therefore realized, for one mode, as a pure-state projector of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_0-2\tilde N_{\mathrm{tr}}=ie_3$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
 $$
-\langle\tilde H\rangle_{0}=\mathrm{Tr}\big(|0\rangle\langle 0|\,\tilde H\big)=2\,\mathrm{Sc}\big(P_+(e_3)\tilde H\big),
+\langle\tilde H\rangle_{0}=\mathrm{Tr}\big(|0\rangle\langle 0|\,\tilde H\big)=2\,\mathrm{Sc}\big(\tilde\Pi_1\tilde H\big),
 $$
 which is the Born rule of the informational sector specialized to the vacuum. This is the one place where the framework's vacuum is genuinely algebraic rather than transcribed.
 
@@ -264,8 +264,8 @@ Both routes give $-\pi^{2}\hbar c/(240a^{4})$, and both were recomputed symbolic
 
 | Feature | Status in the framework | Where it comes from |
 |---|---|---|
-| Vacuum state (one fermionic mode) | Native | idempotent $P_+(e_3)=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$; trace formula |
-| Vacuum expectation values (one mode) | Native | $\langle\tilde H\rangle_0=2\,\mathrm{Sc}(P_+(e_3)\tilde H)$ |
+| Vacuum state (one fermionic mode) | Native | idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$; trace formula |
+| Vacuum expectation values (one mode) | Native | $\langle\tilde H\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_1\tilde H)$ |
 | Fermion parity of the vacuum | Native | $(-1)^F=ie_3$ |
 | Zero-point energy as a central scalar | Native (reading) | trace part of $\tilde H$; commutes |
 | Two physical transverse polarisations | Native | $\hat{\mathbf{k}}$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$ |
@@ -306,7 +306,7 @@ This suggests, but does not establish, a genuinely biquaternionic route to the f
 
 ## Summary
 
-The **vacuum state** of the biquaternion framework is not a biquaternion. For a **single fermionic mode** it is genuinely algebraic: the vacuum projector is the idempotent $|0\rangle\langle 0|=P_+(e_3)=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(P_+(e_3)\tilde H)$. For a **field** it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$.
+The **vacuum state** of the biquaternion framework is not a biquaternion. For a **single fermionic mode** it is genuinely algebraic: the vacuum projector is the idempotent $|0\rangle\langle 0|=\tilde\Pi_1=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_1\tilde H)$. For a **field** it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$.
 
 The **zero-point energy** of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_0$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.
 
@@ -334,7 +334,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
 | $\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger$ | One-mode ladder, $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$ |
 | $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ | One-mode number operator (idempotent) |
-| $\vert 0\rangle\langle 0\vert=P_+(e_3)=\tfrac12(e_0+ie_3)$ | One-mode vacuum projector (idempotent in $\mathbb{M}_+$) |
+| $\vert 0\rangle\langle 0\vert=\tilde\Pi_1=\tfrac12(e_0+ie_3)$ | One-mode vacuum projector (idempotent in $\mathbb{M}_+$) |
 | $(-1)^F=ie_3$ | Fermion parity (single mode) |
 | $\vert 0\rangle$ | Field vacuum, degree-zero term of the Fock space |
 | $\hat a_r,\hat a_r^\dagger$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |

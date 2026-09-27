@@ -154,7 +154,7 @@ and each is an involution. The Hermitian part $\tfrac{1}{2}(\tilde{Q} + \tilde{Q
 
 ## The Six Distinguished Subspaces
 
-Each involution cuts out a fixed subspace and an anti-fixed subspace, and the three involutions together produce six real subspaces of $\mathbb{B}$. Each of the six has its own article in the **Subspaces** group of the series, where its algebra, norm form, matrix image and intersections are developed; the present section records only the coordinate form, which is what the four-vector reading makes visible.
+Each involution cuts out a fixed subspace and an anti-fixed subspace, and the three involutions together produce six real subspaces of $\mathbb{B}$. Each of the six has its own article in the **Subspaces** group of the series, where its algebra, norm form and intersections are developed; the present section records only the coordinate form, which is what the four-vector reading makes visible.
 
 **Definition.** The six **distinguished subspaces** are
 

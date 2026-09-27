@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article introduces the biquaternion algebra as an algebraic structure, without yet discussing its representations. The goal is to define the algebra precisely, establish its basic properties, and describe the **six** distinguished real subspaces that arise from the natural conjugations: four of dimension four, together with the two-dimensional center and the six-dimensional vector subspace.
+This article introduces the biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the **six** distinguished real subspaces that arise from the natural conjugations: four of dimension four, together with the two-dimensional center and the six-dimensional vector subspace.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically.
 
@@ -36,9 +36,9 @@ because each complex dimension contributes two real dimensions (the real and ima
 
 **Which view to use.** The two views are complementary, and both are used in the literature.
 
-- The **$\mathbb{C}$-algebra view** is the natural one when the biquaternions are studied as a complex algebra, for instance in the context of complex representations, complex Lie algebras, or the algebra $M_2(\mathbb{C})$ of $2 \times 2$ complex matrices. In this view, the algebra is four-dimensional and its structure is relatively simple: it is isomorphic to $M_2(\mathbb{C})$.
+- The **$\mathbb{C}$-algebra view** is the natural one when the biquaternions are studied as a complex algebra. In this view, the algebra is four-dimensional and its structure is relatively simple.
 
-- The **$\mathbb{R}$-algebra view** is the natural one when the biquaternions are studied as a real algebra, for instance in the context of real representations or real Clifford algebras. In this view, the algebra is eight-dimensional, and the six real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ that we describe below are all real vector subspaces of this eight-dimensional real algebra.
+- The **$\mathbb{R}$-algebra view** is the natural one when the biquaternions are studied as a real algebra, for instance in the context of real Clifford algebras. In this view, the algebra is eight-dimensional, and the six real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ that we describe below are all real vector subspaces of this eight-dimensional real algebra.
 
 In this article we use both views, and we indicate which one is in force whenever it matters. When we say "$\mathbb{B}$ is four-dimensional," we mean over $\mathbb{C}$. When we say "$\mathbb{B}$ is eight-dimensional," we mean over $\mathbb{R}$. The context will make the field clear.
 
@@ -178,7 +178,7 @@ The three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}$ (with
 | $\mathbb{M}_+$ (Hermitian) | $\tilde{Q}^{\dagger} = \tilde{Q}$ | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $4$ |
 | $\mathbb{M}_-$ (anti-Hermitian) | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $4$ |
 
-Each of the six has its own article in the **Subspaces** group of the series, where its basis and dimension, its algebra and module structure, its norm form, its matrix image, its behaviour under the four conjugations and its intersections with the other five are worked out in full:
+Each of the six has its own article in the **Subspaces** group of the series, where its basis and dimension, its algebra and module structure, its norm form, its behaviour under the four conjugations and its intersections with the other five are worked out in full:
 
 | subspace | article |
 |---|---|
@@ -192,7 +192,7 @@ Each of the six has its own article in the **Subspaces** group of the series, wh
 The relations between them are collected in *Biquaternion Relations Between Subspaces*, and the four conjugations themselves in *Biquaternion Involution Lattice*. What the present article uses of the six, again and again, is the following:
 
 - $\mathbb{C}_{\mathbb{B}}$ is the set of central elements, a copy of $\mathbb{C}$ embedded as the scalar part, $\{\lambda e_0 : \lambda \in \mathbb{C}\}$;
-- $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar-part functional, equivalently the derived subspace $[\mathbb{B},\mathbb{B}]$, equivalently the set of traceless elements under $\Phi$, and it is neither a subalgebra nor a module over $\mathbb{H}_{\mathbb{B}}$;
+- $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar-part functional, equivalently the derived subspace $[\mathbb{B},\mathbb{B}]$, and it is neither a subalgebra nor a module over $\mathbb{H}_{\mathbb{B}}$;
 - $\mathbb{H}_{\mathbb{B}}$ is the set of elements with real coefficients, a copy of the real quaternion algebra, and the only non-commutative one of the six;
 - $i\mathbb{H}_{\mathbb{B}}$ is the set of products $i\tilde{P}$ with $\tilde{P} \in \mathbb{H}_{\mathbb{B}}$, a two-sided module over $\mathbb{H}_{\mathbb{B}}$ but not a subalgebra;
 - $\mathbb{M}_+$ is the set of elements with real scalar part and purely imaginary vector part;

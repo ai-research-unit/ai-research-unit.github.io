@@ -167,9 +167,9 @@ Conditional on the one-mode identification of the Fock article, the reduction ha
 
 **The one-mode statement.** For a single fermionic mode the field $\tilde\Phi$ is replaced by the ladder $\tilde a_{\mathrm{tr}}$ and its conjugate, the correlation functions by traces over the module, and the reduction becomes the matrix statement that the on-shell residue of the one-mode propagator is the identity of the mode algebra. Concretely, the one-mode two-point operators and their vacuum expectations are
 $$
-\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = P_+(e_3),
+\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = \tilde\Pi_1,
 \qquad
-\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = P_-(e_3),
+\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = \tilde\Pi_2,
 \qquad
 \big\langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\big\rangle_0 = 1,
 \qquad

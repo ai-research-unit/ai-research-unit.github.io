@@ -1,10 +1,11 @@
-# __Dual Numbers Special Functions__
+
+# __Dual-Numbers Special Functions__
 
 ## Introduction
 
 This article introduces the dual numbers special functions as a collection of named functions that arise in dual numbers analysis, in the deformation theory of algebras, and in the infinitesimal geometry of the dual plane. The goal is to define each function precisely, establish its basic properties, and describe the relations among them.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. No specific rings, no specific dimensions. Dual numbers analysis is assumed from the preceding article, and the maximal ideal is used throughout. The article is stated for an arbitrary commutative ring $R$ in which $2$ is invertible, and no finiteness assumption is made unless stated.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. No specific dimensions. Dual numbers analysis is assumed from the preceding article, and the maximal ideal is used throughout. The functions are defined over the real numbers $\mathbb{R}$, where the exponential, logarithmic and trigonometric series converge and the structure theorem for dual differentiable functions applies; the polynomial identities they satisfy hold over any commutative $\mathbb{Q}$-algebra.
 
 Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and the split complex algebra is denoted $\mathbb{D}$. The unit of $\mathbb{D}'$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
 
@@ -25,22 +26,22 @@ So every dual differentiable function is determined by two ordinary differentiab
 The functions defined below are of two kinds:
 
 - Functions defined by power series in $\varepsilon$, which are automatically dual differentiable.
-- Functions defined by the action of the dual algebra on itself or on modules, which are not necessarily differentiable but have algebraic significance.
+- Functions defined by the action of the dual algebra on itself, which are not necessarily differentiable but have algebraic significance.
 
 ## The Dual Exponential
 
 ### Definition
 
-The **dual exponential** is defined for $z \in \mathbb{D}'$ by
+The **dual exponential** is defined for $Z \in \mathbb{D}'$ by
 
 $$
-\exp(z) = \sum_{n=0}^\infty \frac{z^n}{n!}.
+\exp(Z) = \sum_{n=0}^\infty \frac{Z^n}{n!}.
 $$
 
-Because $\varepsilon^2 = 0$, the series truncates at the first order in the infinitesimal part. For $z = x + y\varepsilon$,
+Because $\varepsilon^2 = 0$, the series truncates at the first order in the infinitesimal part. For $Z = x + y\varepsilon$,
 
 $$
-\exp(z) = e^x + e^x y \varepsilon = e^x (1 + y \varepsilon).
+\exp(Z) = e^x + e^x y \varepsilon = e^x (1 + y \varepsilon).
 $$
 
 So the dual exponential is the ordinary real exponential applied to the real part, multiplied by the factor $1 + y\varepsilon$ in the infinitesimal part.
@@ -50,13 +51,13 @@ So the dual exponential is the ordinary real exponential applied to the real par
 The dual exponential satisfies
 
 $$
-\exp(z + w) = \exp(z) \exp(w), \qquad \exp(0) = 1, \qquad \exp'(z) = \exp(z).
+\exp(Z + w) = \exp(Z) \exp(w), \qquad \exp(0) = 1, \qquad \exp'(Z) = \exp(Z).
 $$
 
 **Proof.** The first identity follows from the truncated series and the addition formula for the real exponential:
 
 $$
-\exp(x + y\varepsilon) \exp(a + b\varepsilon) = e^x (1 + y\varepsilon) \cdot e^a (1 + b\varepsilon) = e^{x+a} (1 + (y + b)\varepsilon) = \exp((x + a) + (y + b)\varepsilon).
+\exp(x + y\varepsilon) \exp(a + \varepsilon b) = e^x (1 + y\varepsilon) \cdot e^a (1 + \varepsilon b) = e^{x+a} (1 + (y + b)\varepsilon) = \exp((x + a) + (y + b)\varepsilon).
 $$
 
 The second is immediate. The third follows from term-by-term differentiation of the series, or from the structure theorem applied to the real part. $\square$
@@ -79,10 +80,10 @@ The dual exponential is injective on the real part and affine in the infinitesim
 
 ### Definition
 
-The **dual logarithm** is the inverse of the dual exponential. It is defined for $z = x + y\varepsilon$ with $x > 0$ by
+The **dual logarithm** is the inverse of the dual exponential. It is defined for $Z = x + y\varepsilon$ with $x > 0$ by
 
 $$
-\log(z) = \log(x) + \frac{y}{x} \varepsilon.
+\log(Z) = \log(x) + \frac{y}{x} \varepsilon.
 $$
 
 So the dual logarithm is the ordinary real logarithm applied to the real part, plus the infinitesimal correction $y/x$.
@@ -92,13 +93,13 @@ So the dual logarithm is the ordinary real logarithm applied to the real part, p
 The dual logarithm satisfies
 
 $$
-\log(z w) = \log(z) + \log(w), \qquad \log(1) = 0, \qquad \log'(z) = \frac{1}{z}.
+\log(Z w) = \log(Z) + \log(w), \qquad \log(1) = 0, \qquad \log'(Z) = \frac{1}{Z}.
 $$
 
 **Proof.** The first identity follows from the formula and the addition formula for the real logarithm:
 
 $$
-\log((x + y\varepsilon)(a + b\varepsilon)) = \log(xa + (xb + ya)\varepsilon) = \log(xa) + \frac{xb + ya}{xa} \varepsilon = \log(x) + \log(a) + \left(\frac{b}{a} + \frac{y}{x}\right) \varepsilon.
+\log((x + y\varepsilon)(a + \varepsilon b)) = \log(xa + (xb + ya)\varepsilon) = \log(xa) + \frac{xb + ya}{xa} \varepsilon = \log(x) + \log(a) + \left(\frac{b}{a} + \frac{y}{x}\right) \varepsilon.
 $$
 
 The second is immediate. The third follows from the structure theorem applied to the real part, or from the inverse function rule for the exponential. $\square$
@@ -109,22 +110,22 @@ The dual logarithm is defined on the set of dual numbers with positive real part
 
 ### The Dual Argument
 
-There is no dual analogue of the argument of a complex number, because the dual algebra has no compact group of units. The group of units is the set of dual numbers with non-zero real part, which is not compact. So there is no dual polar decomposition, and no dual argument function.
+There is no dual analogue of the argument of a complex number, because the dual algebra has no compact group of units. The group of units is the set of dual numbers with non-zero real part, which is not compact. So there is no argument function with values in a compact group: the dual algebra admits no phase, and the dual logarithm of a unit is a real multiple of $\varepsilon$, with no angular part.
 
 ## The Dual Power Function
 
 ### Definition
 
-For $a \in \mathbb{D}'$ and $z$ in the domain of the dual logarithm, the **dual power** is
+For $a \in \mathbb{D}'$ and $Z$ in the domain of the dual logarithm, the **dual power** is
 
 $$
-z^a = \exp(a \log z).
+Z^a = \exp(a \log Z).
 $$
 
-For $z = x + y\varepsilon$ and $a = p + q\varepsilon$, this gives
+For $Z = x + y\varepsilon$ and $a = p + q\varepsilon$, this gives
 
 $$
-z^a = x^p \left(1 + \left(\frac{py}{x} + q \log x\right) \varepsilon\right).
+Z^a = x^p \left(1 + \left(\frac{py}{x} + q \log x\right) \varepsilon\right).
 $$
 
 So the dual power is the ordinary real power applied to the real parts, with an infinitesimal correction that involves both the infinitesimal part of the base and the infinitesimal part of the exponent.
@@ -132,7 +133,7 @@ So the dual power is the ordinary real power applied to the real parts, with an 
 ### Properties
 
 $$
-z^{a + b} = z^a z^b, \qquad (z w)^a = z^a w^a, \qquad (z^a)^b = z^{ab}.
+Z^{a + b} = Z^a Z^b, \qquad (Z w)^a = Z^a w^a, \qquad (Z^a)^b = Z^{ab}.
 $$
 
 These identities follow from the corresponding identities for the exponential and logarithm, applied to the real and infinitesimal parts separately.
@@ -142,7 +143,7 @@ These identities follow from the corresponding identities for the exponential an
 For integer $n$, the dual power reduces to the ordinary power:
 
 $$
-z^n = x^n + n x^{n-1} y \varepsilon.
+Z^n = x^n + n x^{n-1} y \varepsilon.
 $$
 
 This is the binomial expansion truncated at first order, and it is the reason the dual power is the algebraic content of the derivative of the power function.
@@ -154,15 +155,15 @@ This is the binomial expansion truncated at first order, and it is the reason th
 The **dual sine** and **cosine** are defined by
 
 $$
-\sin(z) = \frac{e^{i z} - e^{-i z}}{2i}, \qquad \cos(z) = \frac{e^{i z} + e^{-i z}}{2},
+\sin(Z) = \frac{e^{i Z} - e^{-i Z}}{2i}, \qquad \cos(Z) = \frac{e^{i Z} + e^{-i Z}}{2},
 $$
 
-where $i$ is the ordinary complex imaginary unit and the exponential is the complex exponential. Since $z = x + y\varepsilon$ is a dual number, the argument $iz$ is a complex number with a dual infinitesimal part, and the functions are defined by the ordinary complex trigonometric functions applied to the real part, with an infinitesimal correction.
+where $i$ is the ordinary complex imaginary unit and the exponential is the complex exponential. Since $Z = x + y\varepsilon$ is a dual number, the argument $iZ$ is a complex number with a dual infinitesimal part, and the functions are defined by the ordinary complex trigonometric functions applied to the real part, with an infinitesimal correction.
 
-Explicitly, for $z = x + y\varepsilon$,
+Explicitly, for $Z = x + y\varepsilon$,
 
 $$
-\sin(z) = \sin(x) + y \cos(x) \varepsilon, \qquad \cos(z) = \cos(x) - y \sin(x) \varepsilon.
+\sin(Z) = \sin(x) + y \cos(x) \varepsilon, \qquad \cos(Z) = \cos(x) - y \sin(x) \varepsilon.
 $$
 
 So the dual trigonometric functions are the ordinary real trigonometric functions applied to the real part, with infinitesimal corrections given by the derivatives.
@@ -176,15 +177,15 @@ $$
 $$
 
 $$
-\sin(z + w) = \sin z \cos w + \cos z \sin w,
+\sin(Z + w) = \sin Z \cos w + \cos Z \sin w,
 $$
 
 $$
-\cos(z + w) = \cos z \cos w - \sin z \sin w,
+\cos(Z + w) = \cos Z \cos w - \sin Z \sin w,
 $$
 
 $$
-\sin^2 z + \cos^2 z = 1.
+\sin^2 Z + \cos^2 Z = 1.
 $$
 
 These identities follow from the corresponding identities for the real trigonometric functions, applied to the real and infinitesimal parts separately.
@@ -200,13 +201,13 @@ The dual trigonometric functions are periodic in the real part with period $2\pi
 The **dual hyperbolic sine** and **cosine** are defined by
 
 $$
-\sinh(z) = \frac{e^z - e^{-z}}{2}, \qquad \cosh(z) = \frac{e^z + e^{-z}}{2},
+\sinh(Z) = \frac{e^Z - e^{-Z}}{2}, \qquad \cosh(Z) = \frac{e^Z + e^{-Z}}{2},
 $$
 
-where the exponential is the dual exponential. For $z = x + y\varepsilon$,
+where the exponential is the dual exponential. For $Z = x + y\varepsilon$,
 
 $$
-\sinh(z) = \sinh(x) + y \cosh(x) \varepsilon, \qquad \cosh(z) = \cosh(x) + y \sinh(x) \varepsilon.
+\sinh(Z) = \sinh(x) + y \cosh(x) \varepsilon, \qquad \cosh(Z) = \cosh(x) + y \sinh(x) \varepsilon.
 $$
 
 So the dual hyperbolic functions are the ordinary real hyperbolic functions applied to the real part, with infinitesimal corrections given by the derivatives.
@@ -218,7 +219,7 @@ $$
 $$
 
 $$
-\cosh^2 z - \sinh^2 z = 1.
+\cosh^2 Z - \sinh^2 Z = 1.
 $$
 
 These identities follow from the corresponding identities for the real hyperbolic functions.
@@ -228,7 +229,7 @@ These identities follow from the corresponding identities for the real hyperboli
 The relation between the dual trigonometric and hyperbolic functions is the same as in the real case:
 
 $$
-\sin(i z) = i \sinh(z), \qquad \cos(i z) = \cosh(z),
+\sin(i Z) = i \sinh(Z), \qquad \cos(i Z) = \cosh(Z),
 $$
 
 where $i$ is the ordinary complex imaginary unit.
@@ -237,16 +238,16 @@ where $i$ is the ordinary complex imaginary unit.
 
 ### Definition
 
-The **dual gamma function** is defined for $z$ with positive real part by
+The **dual gamma function** is defined for $Z$ with positive real part by
 
 $$
-\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt,
+\Gamma(Z) = \int_0^\infty t^{Z-1} e^{-t} \, dt,
 $$
 
-where the integral is along the positive real axis, $t^{z-1}$ is the dual power, and $e^{-t}$ is the dual exponential. For $z = x + y\varepsilon$ with $x > 0$,
+where the integral is along the positive real axis, $t^{Z-1}$ is the dual power, and $e^{-t}$ is the dual exponential. For $Z = x + y\varepsilon$ with $x > 0$,
 
 $$
-\Gamma(z) = \Gamma(x) + y \Gamma'(x) \varepsilon = \Gamma(x) + y \Gamma(x) \psi(x) \varepsilon,
+\Gamma(Z) = \Gamma(x) + y \Gamma'(x) \varepsilon = \Gamma(x) + y \Gamma(x) \psi(x) \varepsilon,
 $$
 
 where $\psi(x) = \Gamma'(x)/\Gamma(x)$ is the ordinary digamma function.
@@ -256,7 +257,7 @@ So the dual gamma function is the ordinary real gamma function applied to the re
 ### Properties
 
 $$
-\Gamma(z + 1) = z \Gamma(z).
+\Gamma(Z + 1) = Z \Gamma(Z).
 $$
 
 This follows from the corresponding identity for the real gamma function, applied to the real part, with the infinitesimal correction computed by differentiation.
@@ -264,7 +265,7 @@ This follows from the corresponding identity for the real gamma function, applie
 ### The Reflection Formula
 
 $$
-\Gamma(z) \Gamma(1 - z) = \frac{\pi}{\sin(\pi z)},
+\Gamma(Z) \Gamma(1 - Z) = \frac{\pi}{\sin(\pi Z)},
 $$
 
 where the sine is the dual trigonometric sine. This follows from the real reflection formula, with the infinitesimal corrections computed by differentiation.
@@ -279,7 +280,7 @@ $$
 B(x, y) = \int_0^1 t^{x-1} (1 - t)^{y-1} \, dt,
 $$
 
-where the integral is along the positive real axis and the powers are dual powers. For $x = a + b\varepsilon$ and $y = c + d\varepsilon$,
+where the integral is along the positive real axis and the powers are dual powers. For $x = a + \varepsilon b$ and $y = c + \varepsilon d$,
 
 $$
 B(x, y) = B(a, c) + \left(b \frac{\partial B}{\partial a}(a, c) + d \frac{\partial B}{\partial c}(a, c)\right) \varepsilon.
@@ -308,13 +309,13 @@ $$
 The **dual error function** is defined by
 
 $$
-\operatorname{erf}(z) = \frac{2}{\sqrt{\pi}} \int_0^z e^{-t^2} \, dt,
+\operatorname{erf}(Z) = \frac{2}{\sqrt{\pi}} \int_0^Z e^{-t^2} \, dt,
 $$
 
-where the integral is along a path from $0$ to $z$ and the exponential is the dual exponential. For $z = x + y\varepsilon$,
+where the integral is along a path from $0$ to $Z$ and the exponential is the dual exponential. For $Z = x + y\varepsilon$,
 
 $$
-\operatorname{erf}(z) = \operatorname{erf}(x) + \frac{2}{\sqrt{\pi}} e^{-x^2} y \varepsilon.
+\operatorname{erf}(Z) = \operatorname{erf}(x) + \frac{2}{\sqrt{\pi}} e^{-x^2} y \varepsilon.
 $$
 
 So the dual error function is the ordinary real error function applied to the real part, with an infinitesimal correction given by the Gaussian.
@@ -322,11 +323,11 @@ So the dual error function is the ordinary real error function applied to the re
 ### Properties
 
 $$
-\operatorname{erf}'(z) = \frac{2}{\sqrt{\pi}} e^{-z^2},
+\operatorname{erf}'(Z) = \frac{2}{\sqrt{\pi}} e^{-Z^2},
 $$
 
 $$
-\lim_{z \to \infty} \operatorname{erf}(z) = 1, \qquad \lim_{z \to -\infty} \operatorname{erf}(z) = -1,
+\lim_{Z \to \infty} \operatorname{erf}(Z) = 1, \qquad \lim_{Z \to -\infty} \operatorname{erf}(Z) = -1,
 $$
 
 where the limits are taken along the real axis.
@@ -334,13 +335,13 @@ where the limits are taken along the real axis.
 ### The Complementary Error Function
 
 $$
-\operatorname{erfc}(z) = 1 - \operatorname{erf}(z) = \frac{2}{\sqrt{\pi}} \int_z^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(Z) = 1 - \operatorname{erf}(Z) = \frac{2}{\sqrt{\pi}} \int_Z^\infty e^{-t^2} \, dt.
 $$
 
-For $z = x + y\varepsilon$,
+For $Z = x + y\varepsilon$,
 
 $$
-\operatorname{erfc}(z) = \operatorname{erfc}(x) - \frac{2}{\sqrt{\pi}} e^{-x^2} y \varepsilon.
+\operatorname{erfc}(Z) = \operatorname{erfc}(x) - \frac{2}{\sqrt{\pi}} e^{-x^2} y \varepsilon.
 $$
 
 ## The Dual Airy Function
@@ -350,13 +351,13 @@ $$
 The **dual Airy function** is defined by the contour integral
 
 $$
-\operatorname{Ai}(z) = \frac{1}{2\pi i} \int_C \exp\left(\frac{t^3}{3} - zt\right) dt,
+\operatorname{Ai}(Z) = \frac{1}{2\pi i} \int_C \exp\left(\frac{t^3}{3} - Zt\right) dt,
 $$
 
-where $C$ is a contour in the complex plane, the exponential is the complex exponential, and $z$ is a dual number. For $z = x + y\varepsilon$,
+where $C$ is a contour in the complex plane, the exponential is the complex exponential, and $Z$ is a dual number. For $Z = x + y\varepsilon$,
 
 $$
-\operatorname{Ai}(z) = \operatorname{Ai}(x) + y \operatorname{Ai}'(x) \varepsilon,
+\operatorname{Ai}(Z) = \operatorname{Ai}(x) + y \operatorname{Ai}'(x) \varepsilon,
 $$
 
 where $\operatorname{Ai}$ on the right is the ordinary real Airy function.
@@ -364,7 +365,7 @@ where $\operatorname{Ai}$ on the right is the ordinary real Airy function.
 ### Differential Equation
 
 $$
-y'' - z y = 0.
+y'' - Z y = 0.
 $$
 
 This is Airy's equation, and it holds in the dual sense: the second derivative with respect to the real part equals the product of the dual number and the function.
@@ -390,13 +391,13 @@ $$
 The **dual Bessel function** of the first kind of order $\nu$ is defined by
 
 $$
-J_\nu(z) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{z}{2} \right)^{2n + \nu},
+J_\nu(Z) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{Z}{2} \right)^{2n + \nu},
 $$
 
-where the power and the gamma function are dual. For $z = x + y\varepsilon$,
+where the power and the gamma function are dual. For $Z = x + y\varepsilon$,
 
 $$
-J_\nu(z) = J_\nu(x) + y J_\nu'(x) \varepsilon,
+J_\nu(Z) = J_\nu(x) + y J_\nu'(x) \varepsilon,
 $$
 
 where $J_\nu$ on the right is the ordinary real Bessel function.
@@ -404,7 +405,7 @@ where $J_\nu$ on the right is the ordinary real Bessel function.
 ### Differential Equation
 
 $$
-z^2 y'' + z y' + (z^2 - \nu^2) y = 0.
+Z^2 y'' + Z y' + (Z^2 - \nu^2) y = 0.
 $$
 
 This is Bessel's equation, and it holds in the dual sense.
@@ -414,35 +415,35 @@ This is Bessel's equation, and it holds in the dual sense.
 The **dual modified Bessel function** of the first kind is
 
 $$
-I_\nu(z) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{z}{2} \right)^{2n + \nu}.
+I_\nu(Z) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{Z}{2} \right)^{2n + \nu}.
 $$
 
-For $z = x + y\varepsilon$,
+For $Z = x + y\varepsilon$,
 
 $$
-I_\nu(z) = I_\nu(x) + y I_\nu'(x) \varepsilon.
+I_\nu(Z) = I_\nu(x) + y I_\nu'(x) \varepsilon.
 $$
 
 ## The Dual Hypergeometric Function
 
 ### Definition
 
-The **dual Gauss hypergeometric function** is defined for $\|z\|_E < 1$ by
+The **dual Gauss hypergeometric function** is defined for $\|Z\|_E < 1$ by
 
 $$
-{}_2F_1(a, b; c; z) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{z^n}{n!},
+{}_2F_1(a, b; c; Z) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{Z^n}{n!},
 $$
 
-where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and all operations are dual. For $z = x + y\varepsilon$,
+where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and all operations are dual. For $Z = x + y\varepsilon$,
 
 $$
-{}_2F_1(a, b; c; z) = {}_2F_1(a, b; c; x) + y \frac{\partial}{\partial x} {}_2F_1(a, b; c; x) \varepsilon.
+{}_2F_1(a, b; c; Z) = {}_2F_1(a, b; c; x) + y \frac{\partial}{\partial x} {}_2F_1(a, b; c; x) \varepsilon.
 $$
 
 ### Differential Equation
 
 $$
-z(1 - z) y'' + [c - (a + b + 1) z] y' - ab y = 0.
+Z(1 - Z) y'' + [c - (a + b + 1) Z] y' - ab y = 0.
 $$
 
 This is the hypergeometric equation, and it holds in the dual sense.
@@ -450,10 +451,10 @@ This is the hypergeometric equation, and it holds in the dual sense.
 ### The Generalized Hypergeometric Function
 
 $$
-{}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; z) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{z^n}{n!}.
+{}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; Z) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{Z^n}{n!}.
 $$
 
-For $z = x + y\varepsilon$, the dual function is the real function plus its derivative times $y\varepsilon$.
+For $Z = x + y\varepsilon$, the dual function is the real function plus its derivative times $y\varepsilon$.
 
 ## The Dual Lambert W Function
 
@@ -465,10 +466,10 @@ $$
 f(w) = w e^w,
 $$
 
-where the exponential is the dual exponential. For $z = x + y\varepsilon$, the equation $W(z) e^{W(z)} = z$ has a unique solution of the form
+where the exponential is the dual exponential. For $Z = x + y\varepsilon$, the equation $W(Z) e^{W(Z)} = Z$ has a unique solution of the form
 
 $$
-W(z) = W(x) + y \frac{W(x)}{x(1 + W(x))} \varepsilon,
+W(Z) = W(x) + y \frac{W(x)}{x(1 + W(x))} \varepsilon,
 $$
 
 where $W$ on the right is the ordinary real Lambert W function.
@@ -476,7 +477,7 @@ where $W$ on the right is the ordinary real Lambert W function.
 ### Derivative
 
 $$
-W'(z) = \frac{W(z)}{z(1 + W(z))},
+W'(Z) = \frac{W(Z)}{Z(1 + W(Z))},
 $$
 
 defined wherever the denominator is invertible.
@@ -489,10 +490,10 @@ The dual Lambert W function has two real branches, corresponding to the two real
 
 The pattern in all the definitions above is the same: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part. This is not a coincidence; it is a theorem.
 
-**Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the dual numbers defined by the same formula. Then for $z = x + y\varepsilon$ with $x \in I$,
+**Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the dual numbers defined by the same formula. Then for $Z = x + y\varepsilon$ with $x \in I$,
 
 $$
-\tilde{F}(z) = F(x) + y F'(x) \varepsilon.
+\tilde{F}(Z) = F(x) + y F'(x) \varepsilon.
 $$
 
 **Proof.** The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(x) + (y u'(x) + c(x))\varepsilon$. Evaluating at $y = 0$ gives $u(x) = F(x)$, hence $u'(x) = F'(x)$. The coefficient of $y$ in the infinitesimal part is therefore $F'(x)$, and the term $c(x)$ is the value of the infinitesimal part at $y = 0$, which is zero because the extension reduces to the real function $F$ when $y = 0$. $\square$
@@ -503,7 +504,7 @@ This theorem is the reason dual special functions are simpler than complex or sp
 
 The dual special functions are the named functions of dual numbers analysis. All of them are governed by one structural fact: a dual differentiable function is determined by its values on the real axis together with its derivative, so the infinitesimal part of each function below is fixed by the derivative of the corresponding real function.
 
-The exponential is defined by its series, which truncates at the first order in $\varepsilon$; the dual logarithm is its inverse and is the ordinary logarithm together with a term in the infinitesimal direction; the dual power function is defined by $z^a = \exp(a\log z)$; and the trigonometric and hyperbolic functions are built from the dual exponential as in the real case.
+The exponential is defined by its series, which truncates at the first order in $\varepsilon$; the dual logarithm is its inverse and is the ordinary logarithm together with a term in the infinitesimal direction; the dual power function is defined by $Z^a = \exp(a\log Z)$; and the trigonometric and hyperbolic functions are built from the dual exponential as in the real case.
 
 Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, each obtained by carrying the corresponding real definition to the dual variable, together with the Lambert $W$ function as the inverse of $w \mapsto we^w$.
 
@@ -515,17 +516,18 @@ The section on the structure principle states what organises all of the definiti
 |---|---|
 | $\mathbb{D}'$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
-| $e^z, \log z$ | Dual exponential, logarithm |
-| $\sin z, \cos z, \tan z$ | Dual trigonometric functions |
-| $\sinh z, \cosh z, \tanh z$ | Dual hyperbolic functions |
-| $z^a$ | Dual power |
-| $\Gamma(z)$ | Dual gamma function |
+| $Z = x + y\varepsilon$ | General dual number, $x = \operatorname{Re} Z$, $y = \operatorname{Inf} Z$ |
+| $e^Z, \log Z$ | Dual exponential, logarithm |
+| $\sin Z, \cos Z, \tan Z$ | Dual trigonometric functions |
+| $\sinh Z, \cosh Z, \tanh Z$ | Dual hyperbolic functions |
+| $Z^a$ | Dual power |
+| $\Gamma(Z)$ | Dual gamma function |
 | $B(x, y)$ | Dual beta function |
-| $\operatorname{erf}(z), \operatorname{erfc}(z)$ | Dual error functions |
-| $\operatorname{Ai}(z)$ | Dual Airy function |
-| $J_\nu(z), I_\nu(z)$ | Dual Bessel functions |
+| $\operatorname{erf}(Z), \operatorname{erfc}(Z)$ | Dual error functions |
+| $\operatorname{Ai}(Z)$ | Dual Airy function |
+| $J_\nu(Z), I_\nu(Z)$ | Dual Bessel functions |
 | ${}_pF_q$ | Dual generalized hypergeometric function |
-| $W(z)$ | Dual Lambert W function |
+| $W(Z)$ | Dual Lambert W function |
 | $\mathfrak{m} = (\varepsilon)$ | Maximal ideal |
 
 ## Further Reading

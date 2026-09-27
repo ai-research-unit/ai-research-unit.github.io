@@ -126,7 +126,7 @@ as is checked by putting the right side over the common denominator $x(x^2+1)$: 
 
 **Example.** $\mathbb{R}[x]/(x^2+1) \cong \mathbb{C}$, of dimension $2$; $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R}\times\mathbb{R}$ by the Chinese remainder theorem, with factors corresponding to the two roots; $\mathbb{F}_2[x]/(x^3+x+1)$ is a field of $8$ elements, since $x^3+x+1$ has no root in $\mathbb{F}_2$ and degree $3$. The last example is the construction of the fields used.
 
-**Theorem (evaluation).** Let $K$ be a field and $S \subseteq K$ a set of $n$ distinct elements. Then the evaluation map $K[x]_{<k} \to K^S$, $f \mapsto (f(s))_{s\in S}$, is injective for $k \leq n$ and is an isomorphism for $k = n$; for $k \leq n$ its image is a subspace of $K^S$ of dimension $k$ in which any two distinct elements differ in at least $n-k+1$ coordinates, since a nonzero polynomial of degree $<k$ has at most $k-1$ roots. This is the algebraic fact behind the Reed–Solomon codes; the codes themselves and their parameters are.
+**Theorem (evaluation).** Let $K$ be a field and $S \subseteq K$ a set of $n$ distinct elements. Then the evaluation map $K[x]_{<k} \to K^S$, $f \mapsto (f(s))_{s\in S}$, is injective for $k \leq n$ and is an isomorphism for $k = n$; for $k \leq n$ its image is a subspace of $K^S$ of dimension $k$ in which any two distinct elements differ in at least $n-k+1$ coordinates, since a nonzero polynomial of degree $<k$ has at most $k-1$ roots. This is the algebraic fact behind the Reed–Solomon codes; the codes themselves and their parameters are in *Linear Codes over Finite Fields*.
 
 **Proof.** Injectivity is the root bound; the dimension count follows, and the coordinate-difference statement is the same root bound applied to the difference. $\square$
 

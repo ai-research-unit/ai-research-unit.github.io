@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article introduces the analysis of split-biquaternion-valued functions. It follows the polar representation article, which defined the exponential and the polar decomposition of the algebra, and it uses the zero divisors article, which characterized the zero divisors as the union of two four-dimensional linear subspaces.
+This article introduces the analysis of split-biquaternion-valued functions. It follows the article on the split biquaternion exponential, which defined the exponential and the polar decomposition of the algebra, and it uses the zero divisors article, which characterized the zero divisors as the union of two four-dimensional linear subspaces.
 
 The treatment is purely mathematical. The independent variables are four real variables. They are the coordinates of $\mathbb{R}^4$, and they are independent of any physical interpretation. The split complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
 
@@ -18,13 +18,13 @@ $$
 
 The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, with $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
 
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.
 
 ## The Metric Structure of $\mathbb{H}_{\mathbb{D}}$
 
@@ -401,10 +401,10 @@ This contains terms that couple the four components of $\tilde{U}$ to the partia
 
 ### The Operators in the Idempotent Basis
 
-Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts componentwise:
+Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts componentwise:
 
 $$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) e_+ + (\tilde{\nabla} \tilde{F}_-) e_-,
+\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_+ + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_-,
 $$
 
 where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way.
@@ -453,7 +453,7 @@ The following questions are not answered in this article and are left for later 
 
 6. **Differentiability on the split complex subspace.** How does the analysis extend to the two-dimensional split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, and what replaces the quaternion gradient?
 
-7. **The relation to the polar representation.** How does the polar representation of the split biquaternion algebra interact with the analysis on the four-dimensional subspaces?
+7. **The relation to the polar decomposition.** How does the polar decomposition of the split biquaternion algebra interact with the analysis on the four-dimensional subspaces?
 
 ## Summary
 
@@ -475,6 +475,32 @@ The **idempotent decomposition** is the most important structural tool in the sp
 The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on split biquaternion integration.
 
 
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{D}$ | Split complex algebra, unit $j$, $j^2 = +1$ |
+| $\mathbb{H}$ | Quaternion algebra |
+| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $j$ | Split complex unit, central, $j^2 = +1$ |
+| $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | General split biquaternion |
+| $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
+| $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
+| $\bar{\tilde{Q}}, \tilde{Q}^*, \tilde{Q}^\dagger, \tilde{Q}^\flat$ | The four conjugations |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
+| $\|\tilde{Q}\|_E$ | Euclidean norm on $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$ |
+| $d(\tilde P, \tilde{Q}) = \|\tilde P - \tilde{Q}\|_E$ | Distance |
+| $V$ | A four-dimensional real subspace, coordinates $x_0, x_1, x_2, x_3$ |
+| $\tilde{F}$ | Split-biquaternion-valued function on $V$ |
+| $\tilde{\nabla}$ | Split-biquaternion gradient |
+| $\bar{\tilde{\nabla}}$ | Quaternion conjugate of the gradient |
+| $\Box$ | d'Alembertian (wave operator) |
+| $\tilde{\nabla}^2$ | Square of the split-biquaternion gradient |
+| $\tilde{D}$ | Split-biquaternion convective derivative |
 
 ## Further Reading
 

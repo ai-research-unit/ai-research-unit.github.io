@@ -7,7 +7,7 @@ The invertible linear transformations of a vector space form a group under compo
 
 Throughout, $F$ is a field, $V$ is an $F$-vector space of finite dimension $n \ge 1$, and $\operatorname{GL}(V)$ is the group of $F$-linear bijections $V \to V$. The matrix group $\operatorname{GL}_n(F)$ is the same object after a basis is chosen, and the dependence on that choice is made explicit rather than suppressed. The determinant is used here only as the group homomorphism $\det:\operatorname{GL}(V)\to F^{\times}$; its construction, its uniqueness as an alternating multilinear invariant and the structure of its kernel are the business of the category, on the special linear group and the determinant.
 
-The article ends where the geometry begins: $\operatorname{GL}(V)$ acts transitively on the $k$-dimensional subspaces for each $k$, the stabiliser of a subspace is a block-triangular subgroup, and the subgroups preserving a bilinear or sesquilinear form are the classical groups. The material is self-contained except for the standard facts about group actions and the Jordan canonical form, which is used only to describe conjugacy classes.
+The article ends where the geometry begins: $\operatorname{GL}(V)$ acts transitively on the $k$-dimensional subspaces for each $k$, the stabiliser of a subspace is a block-triangular subgroup, and the subgroups preserving a bilinear or sesquilinear form are the classical groups, and they are treated in Part IV. The material is self-contained except for the standard facts about group actions and the Jordan canonical form, which is used only to describe conjugacy classes.
 
 ## The Group of Automorphisms
 
@@ -143,7 +143,7 @@ $$
 \operatorname{GL}_n(F)=\bigsqcup_{w \in W} B w B,
 $$
 
-a disjoint union of double cosets indexed by the symmetric group. The double coset of the longest element $w_0$ is open and dense, and for every $w$ the closure of $BwB$ is the union of the $BvB$ with $v \le w$ in the Bruhat order.
+a disjoint union of double cosets indexed by the symmetric group. The double coset of the longest element $w_0$ is the big cell, of maximal dimension, and the cells $BvB$ with $v \le w$ in the Bruhat order are exactly those obtained from $BwB$ by imposing further vanishing of minors.
 
 This is quoted as standard; it is one of the two structural decompositions of the general linear group, the other being Gaussian elimination. A matrix $M$ lies in $BwB$ exactly when its rank matrix is that of $w$:
 
@@ -151,37 +151,7 @@ $$
 \operatorname{rk}M[i..n,1..j]=\#\{k \le j:w(k) \ge i\}, \qquad 1 \le i,j \le n .
 $$
 
-For $w=w_0$ the right-hand side is $\min(j,n+1-i)$, so the big cell $Bw_0B$ is the set of matrices whose bottom-left corner minors $\det M[n-k+1..n,1..k]$ are all nonzero. The element $w_0$ itself lies in this cell, while its leading principal minors of size less than $n$ vanish, so the big cell is not described by the leading principal minors; those describe instead the open cell $B_-B$ of the opposite Borel subgroup $B_-$ of lower triangular matrices, which is the set of matrices on which Gaussian elimination without row interchanges succeeds. The decomposition shows that the group is controlled by its Borel subgroup and its Weyl group $W$, and it generalises to every reductive group.
-
-## Classical Groups as Stabilisers of Forms
-
-The linear structure alone gives $\operatorname{GL}(V)$; imposing one more piece of structure cuts the group down to a subgroup preserving it. Three cases are standard.
-
-**Definition.** Let $g$ be a nondegenerate bilinear form on $V$ and let $q$ be a nondegenerate quadratic form with polar form $g$. The **orthogonal group** is
-
-$$
-O(V,q)=\{T \in \operatorname{GL}(V) : q(Tv)=q(v) \text{ for all } v \in V\},
-$$
-
-equivalently the maps preserving the polar form, $g(Tu,Tv)=g(u,v)$ for all $u,v$.
-
-**Definition.** Let $\omega$ be a nondegenerate alternating bilinear form on $V$, which requires $\dim_F V$ even. The **symplectic group** is
-
-$$
-\operatorname{Sp}(V,\omega)=\{T \in \operatorname{GL}(V) : \omega(Tu,Tv)=\omega(u,v) \text{ for all } u,v \in V\}.
-$$
-
-**Definition.** Let $h$ be a nondegenerate sesquilinear form on a vector space over a field with an involution, Hermitian in the complex case. The **unitary group** is
-
-$$
-U(V,h)=\{T \in \operatorname{GL}(V) : h(Tu,Tv)=h(u,v) \text{ for all } u,v \in V\}.
-$$
-
-Each set is a subgroup, because each is defined by the preservation of a form and the composition of two form-preserving maps preserves the form. The determinants are constrained: for a nondegenerate quadratic form over a field of characteristic not $2$, every $T \in O(V,q)$ has $\det T=\pm1$, and the subgroup with $\det T=1$ is $SO(V,q)$, of index at most $2$ in $O(V,q)$; every symplectic map has $\det T=1$, so $\operatorname{Sp}(V,\omega)\subseteq\operatorname{SL}(V)$; and every unitary map has $\det T$ of norm $1$ under the involution, in the complex case $|\det T|=1$. The determinant-one subgroups $SO(V,q)$, $SU(V,h)$ and $\operatorname{Sp}(V,\omega)$ are the classical groups.
-
-**Examples.** Over $\mathbb{R}$ with the standard positive definite form, $O(n)$ is the group of rotations and reflections and $SO(n)$ the rotations; these are the compact classical groups, and their structure depends on the signature of the form, a split form giving the non-compact groups $O(p,q)$. Over $\mathbb{C}$ the orthogonal and symplectic groups are the isometry groups of the corresponding complex forms. Over $\mathbb{F}_q$ the same definitions give the finite classical groups, whose orders are computed by the same counting as for $\operatorname{GL}_n(\mathbb{F}_q)$ and are used in the applications article on vector spaces over finite fields.
-
-**Remark.** The groups above are exactly the stabilisers of the forms: an element of $\operatorname{GL}(V)$ lies in $O(V,q)$ precisely when it preserves $q$, and the definition of a classical group is a definition by a preservation condition. This is the sense in which the classical groups are the subgroups of the general linear group that respect additional geometrical structure; the general linear group itself is the case of no additional structure.
+For $w=w_0$ the right-hand side is $\min(j,n+1-i)$, so the big cell $Bw_0B$ is the set of matrices whose bottom-left corner minors $\det M[n-k+1..n,1..k]$ are all nonzero. The element $w_0$ itself lies in this cell, while its leading principal minors of size less than $n$ vanish, so the big cell is not described by the leading principal minors; those describe instead the cell $B_-B$ of the opposite Borel subgroup $B_-$ of lower triangular matrices, which is the set of matrices on which Gaussian elimination without row interchanges succeeds. The decomposition shows that the group is controlled by its Borel subgroup and its Weyl group $W$, and it generalises to every reductive group.
 
 ## Generation and Structure
 
@@ -201,7 +171,7 @@ The invertible linear maps of a finite-dimensional vector space $V$ over a field
 
 The action of $\operatorname{GL}(V)$ on the projective space of lines has kernel the centre, so it factors through the faithful, transitive action of $\operatorname{PGL}(V)=\operatorname{GL}(V)/F^{\times}$; the projective special linear group is $\operatorname{PSL}(V)=\operatorname{SL}(V)/\mu_n$, with $\mu_n$ the $n$-th roots of unity, and the two coincide over an algebraically closed field. For dimension at least three, the fundamental theorem of projective geometry identifies $\operatorname{PGL}(V)$ with the whole automorphism group of the projective geometry modulo field automorphisms.
 
-$\operatorname{GL}(V)$ acts transitively on the Grassmannian $\operatorname{Gr}_k(V)$ of $k$-subspaces, the stabiliser of a subspace being the parabolic subgroup of block upper triangular matrices, and the stabiliser of a maximal flag is the Borel subgroup of upper triangular matrices; the Bruhat decomposition writes the group as a disjoint union of the double cosets $BwB$ over the symmetric group. The subgroups of $\operatorname{GL}(V)$ that preserve a nondegenerate form — orthogonal, symplectic and unitary groups, together with their determinant-one subgroups — are the classical groups, each defined as the stabiliser of the form. Over a field the group is generated by elementary matrices and diagonal matrices, and the special linear group by the elementary matrices alone; its conjugacy classes are the similarity classes of operators.
+$\operatorname{GL}(V)$ acts transitively on the Grassmannian $\operatorname{Gr}_k(V)$ of $k$-subspaces, the stabiliser of a subspace being the parabolic subgroup of block upper triangular matrices, and the stabiliser of a maximal flag is the Borel subgroup of upper triangular matrices; the Bruhat decomposition writes the group as a disjoint union of the double cosets $BwB$ over the symmetric group. The subgroups of $\operatorname{GL}(V)$ that preserve a nondegenerate form are the classical groups, and they are treated in Part IV. Over a field the group is generated by elementary matrices and diagonal matrices, and the special linear group by the elementary matrices alone; its conjugacy classes are the similarity classes of operators.
 
 ## Summary of Notation
 
@@ -226,12 +196,7 @@ $\operatorname{GL}(V)$ acts transitively on the Grassmannian $\operatorname{Gr}_
 | $w_0$ | longest element of $W$, indexing the big Bruhat cell |
 | $E_{ij}(\lambda)=I+\lambda e_{ij}$ | elementary matrix |
 | $e_{ij}$ | matrix unit, $1$ in position $(i,j)$ and zeros elsewhere |
-| $O(V,q)$, $SO(V,q)$ | orthogonal group of a quadratic form, and its determinant-one subgroup |
-| $\operatorname{Sp}(V,\omega)$ | symplectic group of an alternating form |
-| $U(V,h)$, $SU(V,h)$ | unitary group of a sesquilinear form |
 | $\mathbb{F}_q$ | finite field with $q$ elements |
-
-
 
 ## Further Reading
 

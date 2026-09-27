@@ -217,16 +217,16 @@ The roots are neither idempotents ($\xi^2 = -1 \neq \xi$) nor zero divisors ($N(
 The classification of the roots gives the classification of the idempotents of $\mathbb{B}$: the map
 
 $$
-\xi \longmapsto P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)
+\xi \longmapsto \tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)
 $$
 
-is a bijection from the set of roots of $-1$ onto the set of idempotents, under which the complementary pairs $\{\tilde{P}, e_0 - \tilde{P}\}$ correspond to the classes $\{\xi, -\xi\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of *Biquaternion Idempotents and Projections*.
+is a bijection from the set of roots of $-1$ onto the set of idempotents, under which the complementary pairs $\{\tilde\Pi, e_0 - \tilde\Pi\}$ correspond to the classes $\{\xi, -\xi\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of *Biquaternion Idempotents and Projections*.
 
 ## The Relation to the Zero Divisors
 
 ### The Idempotents as Zero Divisors
 
-Every non-trivial idempotent is a zero divisor, $\tilde{P}(e_0 - \tilde{P}) = 0$ with both factors nonzero (the computation is in *Biquaternion Idempotents and Projections*), so the non-trivial idempotents form a subset of the zero divisor set $\mathcal{Z}$ studied in *Biquaternion Zero Divisors*, which follows this article. The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ has nonzero norm form.
+Every non-trivial idempotent is a zero divisor, $\tilde\Pi(e_0 - \tilde\Pi) = 0$ with both factors nonzero (the computation is in *Biquaternion Idempotents and Projections*), so the non-trivial idempotents form a subset of the zero divisor set $\mathcal{Z}$ studied in *Biquaternion Zero Divisors*, which follows this article. The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ has nonzero norm form.
 
 ### The Roots as Invertible Elements
 
@@ -284,7 +284,7 @@ The proof proceeds by writing $\xi = Q_0 + \mathbf{Q}$ in scalar-vector form, sq
 
 The non-trivial roots form a four-real-dimensional family, with the real roots (a two-dimensional sphere) as their boundary. The trivial roots are two isolated points. All roots except the trivial ones are pure, and they lie in the six-dimensional space of pure biquaternions.
 
-The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The map $\xi \mapsto P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\xi \sim -\xi$. The non-trivial idempotents form a four-dimensional family in the six-dimensional zero divisor set, and are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units studied in the article on biquaternion norm and invertibility.
+The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The map $\xi \mapsto \tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\xi \sim -\xi$. The non-trivial idempotents form a four-dimensional family in the six-dimensional zero divisor set, and are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units studied in the article on biquaternion norm and invertibility.
 
 The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\eta = \xi i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.
 
@@ -302,14 +302,14 @@ The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: 
 | $\mu, \nu$ | Unit pure real quaternions |
 | $b, d$ | Real parameters with $b^2 - d^2 = 1$ |
 | $t$ | Rapidity parameter |
-| $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ | Idempotent |
+| $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ | Idempotent |
 
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original discovery of the biquaternions.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the original classification.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the relation to the idempotents and the zero divisors.
-- S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the representation theory and the constraint verification.
+- S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the constraint verification.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 

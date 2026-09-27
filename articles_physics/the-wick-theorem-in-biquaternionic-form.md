@@ -26,7 +26,7 @@ $$
 \qquad
 \tilde N_{\mathrm{tr}} = \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = \tfrac12\big(e_0-ie_3\big),
 $$
-with $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$, $\tilde a_{\mathrm{tr}}^2=(\tilde a_{\mathrm{tr}}^\dagger)^2=0$, and $(-1)^F=ie_3$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The one-mode vacuum projector is $P_+(e_3)=\tfrac12(e_0+ie_3)=e_0-\tilde N_{\mathrm{tr}}$. Throughout, $\langle\cdot\rangle_0$ denotes the vacuum expectation value $\mathrm{Tr}(P_+(e_3)\,\cdot\,)$.
+with $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$, $\tilde a_{\mathrm{tr}}^2=(\tilde a_{\mathrm{tr}}^\dagger)^2=0$, and $(-1)^F=ie_3$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The one-mode vacuum projector is $\tilde\Pi_1=\tfrac12(e_0+ie_3)=e_0-\tilde N_{\mathrm{tr}}$. Throughout, $\langle\cdot\rangle_0$ denotes the vacuum expectation value $\mathrm{Tr}(\tilde\Pi_1\,\cdot\,)$.
 
 ## The Wick Theorem in the Standard Theory
 
@@ -132,9 +132,9 @@ The one-mode truncation is therefore a **real form** of the biquaternion algebra
 
 A numerical check over the products confirms closure: every product of the basis elements $u,v,w$ lies in the real span of $\{e_0,u,v,w\}$ with a residual below $10^{-16}$, and the coefficient vectors are exactly those of the table above — in particular $u v = w$ with coordinates $(0,0,0,1)$ and $v^2 = -e_0$ with coordinates $(-1,0,0,0)$ in the basis $(e_0,u,v,w)$. The dimension count is $4$ over $\mathbb{R}$, as $\mathrm{Cl}_{1,1}$ requires.
 
-**The vacuum in the subalgebra.** The vacuum projector is $P_+(e_3)=e_0-\tilde N_{\mathrm{tr}}$, which lies in $\mathcal{A}_{\mathrm{tr}}$ because $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$. So the one-mode GNS vacuum of the previous articles is an element of the same four-dimensional real algebra, and the vacuum expectation value is an $\mathbb{R}$-linear functional on it:
+**The vacuum in the subalgebra.** The vacuum projector is $\tilde\Pi_1=e_0-\tilde N_{\mathrm{tr}}$, which lies in $\mathcal{A}_{\mathrm{tr}}$ because $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$. So the one-mode GNS vacuum of the previous articles is an element of the same four-dimensional real algebra, and the vacuum expectation value is an $\mathbb{R}$-linear functional on it:
 $$
-\langle \tilde{Q}\rangle_0 = \mathrm{Tr}\big(P_+(e_3)\tilde{Q}\big) = 2\,\mathrm{Sc}\big(P_+(e_3)\tilde{Q}\big),
+\langle \tilde{Q}\rangle_0 = \mathrm{Tr}\big(\tilde\Pi_1\tilde{Q}\big) = 2\,\mathrm{Sc}\big(\tilde\Pi_1\tilde{Q}\big),
 \qquad \tilde{Q}\in\mathcal{A}_{\mathrm{tr}} .
 $$
 
@@ -158,9 +158,9 @@ Because the generators are nilpotent, the one-mode theorem can be stated and pro
 
 **Proof of the two-point identity.** The contraction is, by the anticommutator,
 $$
-\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = e_0 - \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = e_0 - \tilde N_{\mathrm{tr}} = P_+(e_3),
+\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = e_0 - \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = e_0 - \tilde N_{\mathrm{tr}} = \tilde\Pi_1,
 $$
-whose vacuum expectation is $\mathrm{Tr}(P_+(e_3)^2)=\mathrm{Tr}(P_+(e_3))=1$. Normal ordering moves the creation operator to the left and produces $:\tilde a\tilde a^\dagger:\,=-\tilde a^\dagger\tilde a=-\tilde N_{\mathrm{tr}}$. Adding back the contraction gives $-\tilde N_{\mathrm{tr}}+e_0=e_0-\tilde N_{\mathrm{tr}}$, which is the left-hand side. $\square$
+whose vacuum expectation is $\mathrm{Tr}(\tilde\Pi_1^2)=\mathrm{Tr}(\tilde\Pi_1)=1$. Normal ordering moves the creation operator to the left and produces $:\tilde a\tilde a^\dagger:\,=-\tilde a^\dagger\tilde a=-\tilde N_{\mathrm{tr}}$. Adding back the contraction gives $-\tilde N_{\mathrm{tr}}+e_0=e_0-\tilde N_{\mathrm{tr}}$, which is the left-hand side. $\square$
 
 **Why the higher identities are exact.** No induction is needed. The identities $\tilde a_{\mathrm{tr}}^2=0$ and $(\tilde a_{\mathrm{tr}}^\dagger)^2=0$ say that any word in the mode operators that contains two adjacent equal letters vanishes; and any word in which the letters alternate can be reduced by the anticommutator to a word with a repeated adjacent pair plus a contraction times a shorter word:
 $$
@@ -178,7 +178,7 @@ $$
 \qquad
 \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}\rangle_0 = \langle \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 0 .
 $$
-The complete table of the four-point function is the following, in which each entry was computed twice: directly as $\mathrm{Tr}(P_+(e_3)\tilde{Q}_1\tilde{Q}_2\tilde{Q}_3\tilde{Q}_4)$ using explicit $2\times2$ complex matrices, and by the pairing sum. All entries agree to machine precision.
+The complete table of the four-point function is the following, in which each entry was computed twice: directly as $\mathrm{Tr}(\tilde\Pi_1\tilde{Q}_1\tilde{Q}_2\tilde{Q}_3\tilde{Q}_4)$ using explicit $2\times2$ complex matrices, and by the pairing sum. All entries agree to machine precision.
 
 | $\langle\,\cdot\,\rangle_0$ | direct | pairing sum |
 |---|---|---|
@@ -189,9 +189,9 @@ The complete table of the four-point function is the following, in which each en
 | $\langle \tilde a^\dagger\tilde a^\dagger\tilde a\tilde a\rangle$ | $0$ | $0$ |
 | $\langle \tilde a^\dagger\tilde a\tilde a\tilde a^\dagger\rangle$ | $0$ | $0$ |
 
-Two entries carry the sign. For $\langle\tilde a\tilde a\tilde a^\dagger\tilde a^\dagger\rangle$ the two complete pairings are $(1,3)(2,4)$ and $(1,4)(2,3)$, with relative sign $-1$: in the expansion of the theorem the contraction $\langle \tilde{Q}_1\tilde{Q}_3\rangle\langle \tilde{Q}_2\tilde{Q}_4\rangle$ carries the minus and $\langle \tilde{Q}_1\tilde{Q}_4\rangle\langle \tilde{Q}_2\tilde{Q}_3\rangle$ the plus, since the pairing $(1,3)(2,4)$ requires a single transposition of the four fermionic factors while $(1,4)(2,3)$ is even. Their values are $1\cdot1$ and $1\cdot1$, so the sum is $-1+1=0$, in agreement with the direct value $\tilde a^2=0$. For $\langle\tilde a\tilde a^\dagger\tilde a\tilde a^\dagger\rangle$ the only surviving pairing is $(1,2)(3,4)$, of value $1$, and the direct value is $P_+(e_3)^2=P_+(e_3)$ with vacuum expectation $1$.
+Two entries carry the sign. For $\langle\tilde a\tilde a\tilde a^\dagger\tilde a^\dagger\rangle$ the two complete pairings are $(1,3)(2,4)$ and $(1,4)(2,3)$, with relative sign $-1$: in the expansion of the theorem the contraction $\langle \tilde{Q}_1\tilde{Q}_3\rangle\langle \tilde{Q}_2\tilde{Q}_4\rangle$ carries the minus and $\langle \tilde{Q}_1\tilde{Q}_4\rangle\langle \tilde{Q}_2\tilde{Q}_3\rangle$ the plus, since the pairing $(1,3)(2,4)$ requires a single transposition of the four fermionic factors while $(1,4)(2,3)$ is even. Their values are $1\cdot1$ and $1\cdot1$, so the sum is $-1+1=0$, in agreement with the direct value $\tilde a^2=0$. For $\langle\tilde a\tilde a^\dagger\tilde a\tilde a^\dagger\rangle$ the only surviving pairing is $(1,2)(3,4)$, of value $1$, and the direct value is $\tilde\Pi_1^2=\tilde\Pi_1$ with vacuum expectation $1$.
 
-**The six-point function.** The six-point contraction $\langle(\tilde a\tilde a^\dagger)^3\rangle_0$ is $1$: $(\tilde a\tilde a^\dagger)^3 = P_+(e_3)^3=P_+(e_3)$, and the pairing sum has the single nonvanishing complete pairing $(1,2)(3,4)(5,6)$ with sign $+1$ and value $1$. The six-point contractions with any pair in the reversed order vanish, as the direct computation confirms. The pattern is the general one: in the one-mode algebra the only nonvanishing contractible word is the alternating one, and its value is the product of contractions.
+**The six-point function.** The six-point contraction $\langle(\tilde a\tilde a^\dagger)^3\rangle_0$ is $1$: $(\tilde a\tilde a^\dagger)^3 = \tilde\Pi_1^3=\tilde\Pi_1$, and the pairing sum has the single nonvanishing complete pairing $(1,2)(3,4)(5,6)$ with sign $+1$ and value $1$. The six-point contractions with any pair in the reversed order vanish, as the direct computation confirms. The pattern is the general one: in the one-mode algebra the only nonvanishing contractible word is the alternating one, and its value is the product of contractions.
 
 ## The Contraction Is the Propagator
 
@@ -207,7 +207,7 @@ Within the one-mode truncation, the contraction is a **central scalar** times $e
 
 The relative sign in the fermionic Wick theorem is implemented by the **fermion-parity grading**
 $$
-(-1)^F = ie_3 = P_+(e_3) - \tilde N_{\mathrm{tr}} = e_0 - 2\tilde N_{\mathrm{tr}} .
+(-1)^F = ie_3 = \tilde\Pi_1 - \tilde N_{\mathrm{tr}} = e_0 - 2\tilde N_{\mathrm{tr}} .
 $$
 The operator $(-1)^F$ is Hermitian, squares to $e_0$, and satisfies
 $$
@@ -251,9 +251,9 @@ $$
 \qquad
 \mathcal{A}_{\mathrm{tr}}\otimes_\mathbb{R}\mathbb{C} = \mathbb{B},
 $$
-which is a real form of the biquaternion algebra, and the vacuum projector $P_+(e_3)=e_0-\tilde N_{\mathrm{tr}}$ lies in it. The nilpotency of the ladder makes the contraction exact:
+which is a real form of the biquaternion algebra, and the vacuum projector $\tilde\Pi_1=e_0-\tilde N_{\mathrm{tr}}$ lies in it. The nilpotency of the ladder makes the contraction exact:
 $$
-\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = -\,\tilde N_{\mathrm{tr}} + e_0 = P_+(e_3),
+\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = -\,\tilde N_{\mathrm{tr}} + e_0 = \tilde\Pi_1,
 \qquad
 \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 1,
 \qquad
@@ -273,7 +273,7 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
 | $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$ | Single-mode ladder |
 | $\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ | Number operator |
-| $P_+(e_3)=e_0-\tilde N_{\mathrm{tr}}=\tfrac12(e_0+ie_3)$ | One-mode vacuum projector |
+| $\tilde\Pi_1=e_0-\tilde N_{\mathrm{tr}}=\tfrac12(e_0+ie_3)$ | One-mode vacuum projector |
 | $\mathcal{A}_{\mathrm{tr}}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,e_2,ie_3\}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ | One-mode real form of $\mathbb{B}$ |
 | $(-1)^F=ie_3=e_0-2\tilde N_{\mathrm{tr}}$ | Fermion-parity grading |
 | $T\{\cdots\}$, $:\!\cdots\!:$ | Time ordering, normal ordering |
@@ -295,4 +295,4 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 - N. N. Bogoliubov and D. V. Shirkov, *Introduction to the Theory of Quantized Fields* (Interscience, 1959), for the classical presentation of contractions and pairings.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification of the real form $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ inside the complex algebra.
 - F. R. Gantmacher, *The Theory of Matrices*, Vol. II (Chelsea, 1959), for the algebra structure of $\mathrm{Cl}_{1,1}$ and its complexification.
-- Companion articles: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder, the grading, and the module structure; *The Feynman Propagator in Biquaternionic Form*, for the contractions as propagators; *The S-Matrix in Biquaternionic Form*, for the Dyson series contracted by this theorem; *The Biquaternion Vacuum as a Minimal Idempotent*, for the vacuum expectation value and the projector $P_+(e_3)$.
+- Companion articles: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder, the grading, and the module structure; *The Feynman Propagator in Biquaternionic Form*, for the contractions as propagators; *The S-Matrix in Biquaternionic Form*, for the Dyson series contracted by this theorem; *The Biquaternion Vacuum as a Minimal Idempotent*, for the vacuum expectation value and the projector $\tilde\Pi_1$.

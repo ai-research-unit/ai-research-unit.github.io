@@ -40,7 +40,7 @@ $$
 \sum_{P \in C \cap D} I_P(C,D) = mn .
 $$
 
-**Proof sketch.** The intersection number is the degree of the resultant of the two defining forms with respect to one of the variables, and the resultant is a form of degree $mn$; the localised multiplicities are exactly the multiplicities of its roots. This is the classical pro, and it is made rigorous by the theory of resultants, whose algorithm is the elimination. $\square$
+**Proof sketch.** The intersection number is the degree of the resultant of the two defining forms with respect to one of the variables, and the resultant is a form of degree $mn$; the localised multiplicities are exactly the multiplicities of its roots. This is the classical proof, and it is made rigorous by the theory of resultants, whose algorithm is the elimination. $\square$
 
 **Corollary.** Two lines of $\mathbb{P}^2$ meet in exactly one point; a line and a conic meet in two points counted with multiplicity; two conics meet in four points counted with multiplicity — in each case a statement about the number of solutions of a system of polynomial equations in the projective plane.
 
@@ -88,7 +88,7 @@ $$
 \ell(D) - \ell(K_C - D) = \deg D + 1 - g ,
 $$
 
-$\deg K_C = 2g - 2$, and $g = \ell(K_C)$. The theorem and its pro, together with the duality statement for the space of differentials, are not covered here.
+$\deg K_C = 2g - 2$, and $g = \ell(K_C)$. The theorem and its proof, together with the duality statement for the space of differentials, are not covered here.
 
 **Example.** For $C = \mathbb{P}^1$: $g = 0$, $K_C = -2P$ for any point $P$, and $\ell(D) = \deg D + 1$ for $\deg D \geq 0$; hence every divisor of degree $0$ on the line is principal, so $\operatorname{Pic}^0(\mathbb{P}^1) = 0$ and the class number is $1$. A divisor of degree $d$ on $\mathbb{P}^1$ is the divisor of zeros and poles of a rational function of degree $d$ when $\ell(D) = d+1$, exactly as the classical theory of rational functions requires.
 

@@ -60,7 +60,7 @@ $$
 \mathbb{D} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\times\mathbb{R},
 $$
 
-so that $\mathbb{D}$ is a product of two fields, with the nontrivial idempotents $e_\pm = \frac12(1\pm j)$ satisfying $e_+e_- = 0$, $e_+^2 = e_+$, $e_-^2 = e_-$. The contrast with $\mathbb{D}'$ is instructive: $j^2 = +1$ splits into two fields, while $\varepsilon^2 = 0$ gives a ring with a nilpotent; the two rings are the two possible two-dimensional quotients of $\mathbb{R}[x]$ by a nonconstant polynomial up to isomorphism, corresponding to a squarefree and to a nonsquarefree quadratic.
+so that $\mathbb{D}$ is a product of two fields, with the nontrivial idempotents $\pi_\pm = \frac12(1\pm j)$ satisfying $\pi_+\pi_- = 0$, $\pi_+^2 = \pi_+$, $\pi_-^2 = \pi_-$. The contrast with $\mathbb{D}'$ is instructive: $j^2 = +1$ splits into two fields, while $\varepsilon^2 = 0$ gives a ring with a nilpotent; the two rings are the two possible two-dimensional quotients of $\mathbb{R}[x]$ by a nonconstant polynomial up to isomorphism, corresponding to a squarefree and to a nonsquarefree quadratic.
 
 ---
 
@@ -130,7 +130,7 @@ The two two-dimensional rings fixed by the conventions appear in their proper pl
 | $\mathcal{O}_K$ | Ring of integers of a number field |
 | $\mathbb{Z}_{(p)}$ | Localisation of $\mathbb{Z}$ at $p$ |
 | $K[x]$, $K[x,y]$, $K[[x]]$ | Polynomial and power series rings |
-| $\mathbb{D}$ | Split complex numbers, $j^2 = +1$, $e_\pm = \frac12(1\pm j)$ |
+| $\mathbb{D}$ | Split complex numbers, $j^2 = +1$, $\pi_\pm = \frac12(1\pm j)$ |
 | $\mathbb{D}'$ | Dual numbers, $\varepsilon^2 = 0$ |
 | $M_n(R)$ | Ring of $n\times n$ matrices over $R$ |
 | $K[G]$ | Group ring of a finite group |

@@ -175,10 +175,10 @@ The three cases are collected in the following table, together with the ladder c
 
 Here $\sigma_\pm = \tfrac{1}{2}(\sigma_1 \pm i\sigma_2)$ are the standard raising and lowering matrices. The elements $\tilde S_k$ lie in $\mathbb{M}_+$ and are Hermitian. The ladder operators do **not**: $\tilde S_\pm^\dagger = \tilde S_\mp$, so they are neither Hermitian nor in $\mathbb{M}_+$; they lie in the full algebra $\mathbb{B}$. They are also invariant, up to sign, under quaternion conjugation, $\bar{\tilde S}_\pm = -\tilde S_\pm$.
 
-The pure spin states are the idempotents $P_\pm(\hat{n}) = \tfrac{1}{2}(e_0 \pm i\hat{n})$ with $\hat n$ a unit pure real quaternion, and they are the eigenstates of the spin along $\hat n$:
+The pure spin states are the idempotents $\tilde\Pi(\pm\hat{n}) = \tfrac{1}{2}(e_0 \pm i\hat{n})$ with $\hat n$ a unit pure real quaternion, and they are the eigenstates of the spin along $\hat n$:
 
 $$
-\hat{n}_k \tilde{S}_k\, P_\pm(\hat{n}) = \pm\tfrac{\hbar}{2}\, P_\pm(\hat{n}) .
+\hat{n}_k \tilde{S}_k\, \tilde\Pi(\pm\hat{n}) = \pm\tfrac{\hbar}{2}\, \tilde\Pi(\pm\hat{n}) .
 $$
 
 This is the content of the parent article, expressed in the notation needed below.
@@ -381,7 +381,7 @@ It is useful to separate the two kinds of result that the article contains.
 - The spin commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow from the quaternion product rule $e_ie_j=\epsilon_{ijk}e_k$, the square $e_k^2=-e_0$, and $i^2=-1$; the Hermiticity of $ie_k$ is what places the observables in $\mathbb{M}_+$.
 - The commutator of two Hermitian observables is $-2(\mathbf{h}\times\mathbf{k})$, a pure real quaternion in $\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$: the commutator of observables is a rotation generator.
 - The pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$ is a central element of $\mathbb{B}$, and its value $s(s+1)\hbar^2$ with $s=\tfrac12$ follows from $(ie_k)^2=+e_0$.
-- The spin eigenstates are the idempotents $P_\pm(\hat n)=\tfrac12(e_0\pm i\hat n)$, and $\hat n_k\tilde S_k$ has eigenvalues $\pm\hbar/2$ on them.
+- The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat n)=\tfrac12(e_0\pm i\hat n)$, and $\hat n_k\tilde S_k$ has eigenvalues $\pm\hbar/2$ on them.
 - The spin ladder operators are nilpotent and null in the norm form, $\tilde S_\pm^2=0$ and $N(\tilde S_\pm)=0$: they are zero divisors of the algebra.
 - Orbital operators occupy the central scalar slot $e_0$ and spin operators the vector slots $ie_k$, an algebraic distinction between external and internal degrees of freedom.
 - As a module over $\mathbb{B}$, the algebra affords only $j=0$ and $j=\tfrac12$; the $j=1$ vector representation appears through the adjoint action on the imaginary quaternions, and higher spins require tensor products.
@@ -427,7 +427,7 @@ The spin ladder operators are nilpotent and null in the norm form, and hence zer
 | $\tilde{J}^2=\sum_k\tilde{J}_k^2$ | Casimir operator, eigenvalue $j(j+1)\hbar^2$ |
 | $[\tilde{J}_i,\tilde{J}_j]=i\hbar\epsilon_{ijk}\tilde{J}_k$ | Angular-momentum algebra |
 | $\tilde{R}(\theta,\hat{n})=\cos\tfrac{\theta}{2}e_0+\sin\tfrac{\theta}{2}\hat{n}_ke_k$ | Rotation rotor (unit real quaternion) |
-| $P_\pm(\hat{n})=\tfrac{1}{2}(e_0\pm i\hat{n})$ | Spin eigenstates (idempotents) |
+| $\tilde\Pi(\pm\hat{n})=\tfrac{1}{2}(e_0\pm i\hat{n})$ | Spin eigenstates (idempotents) |
 | $j,m$; $l$; $s=\tfrac12$ | Total, orbital, and spin quantum numbers |
 | $\langle l,m_1;\tfrac12,m_2|j,m\rangle$ | Clebsch–Gordan coefficients (Condon–Shortley phase) |
 

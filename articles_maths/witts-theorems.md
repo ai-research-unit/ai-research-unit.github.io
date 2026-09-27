@@ -257,7 +257,7 @@ Over a field every submodule is a direct summand, and the proofs above use this 
 
 **Theorem (cancellation over a ring, standard).** With the same hypotheses, if $q \perp q_1 \cong q \perp q_2$ and $q$ is Witt and non-degenerate, then $q_1 \cong q_2$.
 
-These statements are the content of the theory of quadratic forms over rings; the point of recording them here is that the field case proved in this article is the special case in which the Witt condition is automatic. Over a ring the condition is a genuine restriction: a submodule on which the form is non-degenerate need not be a direct summ, and the argument by orthogonal complement then fails. The precise formulation, and the examples that show the necessity of the condition, are in the standard references on quadratic forms over rings.
+These statements are the content of the theory of quadratic forms over rings; the point of recording them here is that the field case proved in this article is the special case in which the Witt condition is automatic. Over a ring the condition is a genuine restriction: a submodule on which the form is non-degenerate need not be a direct summand, and the argument by orthogonal complement then fails. The precise formulation, and the examples that show the necessity of the condition, are in the standard references on quadratic forms over rings.
 
 ## Summary
 

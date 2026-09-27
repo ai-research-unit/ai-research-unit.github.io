@@ -152,7 +152,7 @@ and the maps are surjective, with a bounded right inverse (an extension operator
 
 *Proof (sketch).* The Fourier description in the normal variable turns the trace into the restriction of a frequency-localised function, and the factor $2^{-j/p}$ lost in the normal variable is exactly the exponent shift; the extension is obtained by extending each block separately with a Schwartz cutoff. The sharpness is shown by testing on a function that concentrates at the boundary. $\square$
 
-The theorem is the model of the trace theorems of the scale; it shows that the loss of $\frac1p$ derivatives is exactly the price of restriction to a hyperplane, and it is the analytical basis of the boundary-value problems in the scale, whose theory belongs andboth. The spaces on a domain $\Omega$ are defined by restriction, $B^s_{p,q}(\Omega)=\{f|_\Omega:f \in B^s_{p,q}(\mathbb{R}^n)\}$ with the quotient norm, and the extension and trace theorems identify them with the intrinsic definitions for the smooth domains.
+The theorem is the model of the trace theorems of the scale; it shows that the loss of $\frac1p$ derivatives is exactly the price of restriction to a hyperplane, and it is the analytical basis of the boundary-value problems in the scale, whose theory belongs to both. The spaces on a domain $\Omega$ are defined by restriction, $B^s_{p,q}(\Omega)=\{f|_\Omega:f \in B^s_{p,q}(\mathbb{R}^n)\}$ with the quotient norm, and the extension and trace theorems identify them with the intrinsic definitions for the smooth domains.
 
 ## Atomic and Molecular Decompositions
 

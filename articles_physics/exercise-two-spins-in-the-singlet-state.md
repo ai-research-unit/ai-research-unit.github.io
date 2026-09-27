@@ -39,13 +39,13 @@ It is a **maximally entangled** state: it cannot be written as a product $|\psi_
 The projector onto spin-up along $\hat{a}$ for particle 1 is
 
 $$
-P_+(\hat{a}) = \frac{1}{2}\left(I + \hat{a}\cdot\boldsymbol{\sigma}\right),
+\tilde\Pi(\hat{a}) = \frac{1}{2}\left(I + \hat{a}\cdot\boldsymbol{\sigma}\right),
 $$
 
 and similarly for particle 2 along $\hat{b}$. The joint measurement operator is the tensor product
 
 $$
-P_{++}(\hat{a},\hat{b}) = P_+(\hat{a})\otimes P_+(\hat{b}) = \frac{1}{4}\left(I + \hat{a}\cdot\boldsymbol{\sigma}_1\right)\otimes\left(I + \hat{b}\cdot\boldsymbol{\sigma}_2\right),
+P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b}) = \frac{1}{4}\left(I + \hat{a}\cdot\boldsymbol{\sigma}_1\right)\otimes\left(I + \hat{b}\cdot\boldsymbol{\sigma}_2\right),
 $$
 
 where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1, and $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ acts on particle 2.
@@ -129,10 +129,10 @@ $$
 
 ### Step 2: The measurement operators
 
-The single-qubit projector onto spin-up along $\hat{a}$ is the idempotent $P_+(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. The joint measurement operator is the tensor product
+The single-qubit projector onto spin-up along $\hat{a}$ is the idempotent $\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. The joint measurement operator is the tensor product
 
 $$
-P_{++}(\hat{a},\hat{b}) = P_+(\hat{a})\otimes P_+(\hat{b}) = \frac{1}{4}\left(e_0 + i\hat{a}\right)\otimes\left(e_0 + i\hat{b}\right).
+P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b}) = \frac{1}{4}\left(e_0 + i\hat{a}\right)\otimes\left(e_0 + i\hat{b}\right).
 $$
 
 ### Step 3: The probability
@@ -217,7 +217,7 @@ $$
 
 the natural pairing between the joint state and the joint measurement operator. The trace is the tensor product of the single-qubit traces, $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
-**3. The correlations arise from the tensor-product structure.** The single-qubit projectors $P_+(\hat{a})$ and $P_+(\hat{b})$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\hat{a}\cdot\hat{b}$ enters through the cross terms $\sum_k e_k\otimes e_k$ in the singlet idempotent, which couple the two qubits.
+**3. The correlations arise from the tensor-product structure.** The single-qubit projectors $\tilde\Pi(\hat{a})$ and $\tilde\Pi(\hat{b})$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\hat{a}\cdot\hat{b}$ enters through the cross terms $\sum_k e_k\otimes e_k$ in the singlet idempotent, which couple the two qubits.
 
 **4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\hat{a}\cdot\hat{b}$, which appears in the trace formula through the products $e_k\hat{a}$ and $e_k\hat{b}$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -257,8 +257,8 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $|\Psi^-\rangle$ | Singlet state |
 | $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$ | Singlet idempotent |
-| $P_+(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$ | Single-qubit projector |
-| $P_{++}(\hat{a},\hat{b}) = P_+(\hat{a})\otimes P_+(\hat{b})$ | Joint projector |
+| $\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$ | Single-qubit projector |
+| $P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b})$ | Joint projector |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 
 ## Further Reading

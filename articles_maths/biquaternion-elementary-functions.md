@@ -2,15 +2,13 @@
 
 ## Introduction
 
-This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and to compute them in closed form.
+This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and to compute them in closed form. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials of the rotation and hyperbolic-rotation directions. Its Lie-group consequences — the group of units, the norm-one group, and the Lorentz group — are in *Biquaternion Lie Algebra and Lie Group Structure*.
 
 The treatment is purely mathematical. No physics is invoked. No examples are given, except for the explicit counterexamples that establish the failure of the addition formulas in the non-commutative setting. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its norm form, and its four conjugations.
 
 The key structural fact is that the elementary functions of a biquaternion are determined by the **powers** of the biquaternion, and the powers simplify dramatically in two cases: when the vector part has a nonzero **complex norm**, and when the vector part is **nilpotent**. These two cases cover all possibilities, and they lead to two regimes: the **oscillatory regime** and the **nilpotent regime**. The purpose of this article is to develop the elementary functions in both regimes.
 
-The higher special functions — Bessel, hypergeometric, gamma, zeta, and the functions arising from the analysis — are treated in the companion article on biquaternion higher special functions. The polar representations are treated in the article on biquaternion polar representations; this article uses the Hamilton polar form, and we take care to distinguish it from the Cartesian decomposition used to compute the exponential.
-
-Throughout, a biquaternion is written
+The higher special functions — Bessel, hypergeometric, gamma, zeta, and the functions arising from the analysis — are treated in the companion article on biquaternion higher special functions. Throughout, a biquaternion is written
 
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
@@ -87,7 +85,7 @@ $$
 \tilde{Q}^2 - 2 Q_0 \tilde{Q} + N(\tilde{Q}) e_0 = 0.
 $$
 
-This is the **Cayley–Hamilton identity** for $\tilde{Q}$. It is the biquaternion case of the general matrix identity $M^2 - \mathrm{tr}(M) M + \det(M) I = 0$ for $2 \times 2$ matrices, with $\mathrm{tr}(M) = 2 Q_0$ and $\det(M) = N(\tilde{Q})$.
+This is the **Cayley–Hamilton identity** for $\tilde{Q}$. It is the analogue of the identity $\lambda^2 - T(\tilde{Q})\lambda + N(\tilde{Q}) = 0$ satisfied by the eigenvalues $Q_0 \pm iB$, where $T(\tilde{Q}) = 2Q_0$ is the trace functional and $N(\tilde{Q})$ the norm form.
 
 Consequently, every power $\tilde{Q}^n$ with $n \geq 2$ is a $\mathbb{C}$-linear combination of $e_0$ and $\tilde{Q}$, and $\mathbb{C}[\tilde{Q}]$ is spanned by $e_0$ and $\tilde{Q}$:
 
@@ -145,7 +143,7 @@ $$
 R = \sqrt{N(\tilde{Q})} = \sqrt{Q_0^2 + B^2}, \qquad \cos\Theta = \frac{Q_0}{R}, \qquad \sin\Theta = \frac{B}{R}.
 $$
 
-Here $R$ is the **complex modulus**, $B$ is the **complex norm of the vector part**, and $\Theta$ is the **complex angle**. This is exactly the Hamilton polar form defined in the companion article on biquaternion polar representations, with $B$ in place of the complex modulus of the vector part and $\hat{n}$ in place of the axis $\xi$.
+Here $R$ is the **complex modulus**, $B$ is the **complex norm of the vector part**, and $\Theta$ is the **complex angle**. This is the Hamilton polar form of the element, written with the complex norm $B$ of the vector part and the unit axis $\hat{n}$.
 
 It is important to distinguish the Hamilton polar form of $\tilde{Q}$ from the exponential of $\tilde{Q}$. The exponential is
 
@@ -297,9 +295,75 @@ $$
 N(\exp(\tilde{Q})) = \exp(2 Q_0) = \exp(\mathrm{Tr}(\tilde{Q})),
 $$
 
-where $\mathrm{Tr}$ denotes the matrix trace in the representation $\mathbb{B} \cong M_2(\mathbb{C})$. This is not an analogy with the matrix identity $\det(e^M) = e^{\mathrm{tr}(M)}$; it **is** that identity, since under the isomorphism $N$ corresponds to the determinant and $\mathrm{Tr}$ to the matrix trace. The verification is direct: in the oscillatory regime, $N(\exp(\tilde{Q})) = e^{2 Q_0}(\cos^2 B + \sin^2 B) = e^{2 Q_0}$; in the nilpotent regime, $N(\exp(\tilde{Q})) = e^{2 Q_0}(1 + 0) = e^{2 Q_0}$.
+where $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}\,\tilde{Q} = 2Q_0$ is the trace of the element. The verification is direct: in the oscillatory regime, $N(\exp(\tilde{Q})) = e^{2 Q_0}(\cos^2 B + \sin^2 B) = e^{2 Q_0}$; in the nilpotent regime, $N(\exp(\tilde{Q})) = e^{2 Q_0}(1 + 0) = e^{2 Q_0}$.
 
-**Relation to the matrix exponential.** Under the algebra isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternion exponential corresponds to the matrix exponential: if $\tilde{Q} \mapsto M$, then $\exp(\tilde{Q}) \mapsto e^M$. This follows from the power series definition, which is compatible with the algebra isomorphism. Consequently, all the standard facts about the matrix exponential carry over to the biquaternion exponential, with the identifications $\det \leftrightarrow N$ and $\mathrm{tr} \leftrightarrow 2\,\mathrm{Sc}$.
+### Derivative at the Origin
+
+The differential of the exponential at the origin is the identity, $d\exp_0 = \mathrm{id}$, so $\exp$ is a local diffeomorphism near $0$ and provides exponential coordinates near the identity of the group of units $\mathbb{B}^\times$ (the Lie-group side of this is in *Biquaternion Lie Algebra and Lie Group Structure*).
+
+### The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$
+
+The exponential is not a homomorphism from the additive group of the algebra to the multiplicative group of the units. Its failure to be one is measured by the bracket.
+
+**Commuting case.** If $[a,b] = 0$, then
+
+$$
+\exp(a)\exp(b) = \exp(a+b) = \exp(b)\exp(a).
+$$
+
+In particular, this holds when $a$ and $b$ lie in a common commutative subalgebra. For a single biquaternion $\tilde{Q}$, all elementary functions lie in the commutative subalgebra $\mathbb{C}[\tilde{Q}]$ generated by $e_0$ and $\tilde{Q}$, so the usual addition formula holds there.
+
+**General case.** The Baker–Campbell–Hausdorff theorem gives, for sufficiently small $a, b$,
+
+$$
+\exp(a)\exp(b) = \exp\!\left(a + b + \frac{1}{2}[a,b] + \frac{1}{12}\bigl[a,[a,b]\bigr] - \frac{1}{12}\bigl[b,[a,b]\bigr] + \cdots\right),
+$$
+
+a convergent series of iterated brackets. Thus $\exp(a)\exp(b)$ differs from $\exp(a+b)$ by the term $\tfrac{1}{2}[a,b]$ and higher brackets; the difference vanishes whenever $[a,b] = 0$, though the converse can fail, since a non-commuting pair may still satisfy $\exp(a)\exp(b) = \exp(a+b)$ when the BCH remainder exponentiates to $e_0$ (§*The Kernel of the Exponential*). For instance, with $a = e_1$ and $b = e_2$ the product $\exp(e_1)\exp(e_2)$ carries a term $\sin^2 1\, e_3$ that is absent from $\exp(e_1+e_2)$.
+
+### The Kernel of the Exponential
+
+Because $\exp$ is surjective onto the group of units but not injective (§*The Logarithm*), the fibre over the identity measures the ambiguity of the logarithm.
+
+**Theorem.** For a biquaternion $\tilde{Q}$ one has $\exp(\tilde{Q}) = e_0$ if and only if $\tilde{Q}$ is diagonalizable over $\mathbb{C}$ and every eigenvalue of $\tilde{Q}$ lies in $2\pi i\mathbb{Z}$.
+
+**Proof.** If $\tilde{Q}$ is diagonalizable with eigenvalues $\lambda_1, \lambda_2$, then $\exp(\tilde{Q})$ is diagonalizable with eigenvalues $e^{\lambda_1}, e^{\lambda_2}$, and equals $I$ exactly when $e^{\lambda_1} = e^{\lambda_2} = 1$. Conversely, write $\tilde{Q} = S + N$ with $S$ semisimple and $N$ nilpotent commuting. Then $\exp(\tilde{Q}) = \exp(S)\exp(N)$ is the product of a semisimple and a unipotent factor; if it equals $I$, the unipotent factor is semisimple, hence trivial, so $N = 0$. $\square$
+
+**Concrete description.** A biquaternion lies in the kernel exactly when its representing matrix is conjugate to $\mathrm{diag}(2\pi i m, 2\pi i n)$ with $m, n \in \mathbb{Z}$. The kernel is thus an infinite subset of $\mathbb{B}$, not an additive subgroup, since $\exp$ is not a homomorphism. It contains the scalars $2\pi i k\, e_0$ but much more: $\mathrm{diag}(0, 2\pi i)$ also exponentiates to the identity.
+
+**In biquaternion terms.** The eigenvalues of the matrix representing $\tilde{Q}$ are $\lambda_\pm = Q_0 \pm iB$, with $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$. So $\exp(\tilde{Q}) = e_0$ exactly when either $\mathbf{Q} = 0$ and $\tilde{Q} = Q_0 e_0$ is a scalar with $Q_0 \in 2\pi i\mathbb{Z}$, or $B \neq 0$ and both $Q_0 \pm iB$ lie in $2\pi i\mathbb{Z}$. The second condition is equivalent to
+
+$$
+Q_0 = \pi i k, \qquad B = \pi j, \qquad k, j \in \mathbb{Z}, \quad k \equiv j \pmod 2,
+$$
+
+the eigenvalues then being $2\pi i(k\pm j)/2$. If $B = 0$ but $\mathbf{Q} \neq 0$, the matrix is a nonzero nilpotent, hence not diagonalizable and not in the kernel: $\exp(\mathbf{Q}) = e_0 + \mathbf{Q} \neq e_0$.
+
+**Example.** The biquaternion $\tilde{Q} = \pi i\, e_0 + \pi\, e_3$ has $Q_0 = \pi i$, $B = \pi$, so $k = j = 1$ and $\exp(\tilde{Q}) = e^{\pi i}(\cos\pi\, e_0 + \sin\pi\, e_3) = e_0$. Since $N(\tilde{Q}) = 0$, this kernel element is a zero divisor: the kernel is not contained in the group of units.
+
+**On the phrase "eigenvalues differ by a multiple of $2\pi i$".** The condition implies such a difference, but the difference alone is weaker: $\tilde{Q} = e_0$ has equal eigenvalues yet $\exp(e_0) \neq e_0$. Each eigenvalue must be a multiple of $2\pi i$.
+
+### The Exponential of a Rotation and of a Hyperbolic Rotation
+
+Let $\hat{n}$ be a real unit vector part, so that $\hat{n}^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat{n}$ and the vector directions $\psi\, i\hat{n}$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *Biquaternion Lie Algebra and Lie Group Structure*.
+
+**Rotations (the bivector directions).** For real $\theta$,
+
+$$
+\exp(\theta\hat{n}) = \cos\theta\, e_0 + \sin\theta\, \hat{n},
+$$
+
+a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. It rotates the vector part: conjugation by $\exp(\theta\hat{n})$ rotates any real vector $\mathbf{v}$ about the axis $\hat{n}$ through $2\theta$, the double-cover relation $S^3 \to SO(3)$. The family $\theta \mapsto \exp(\theta\hat{n})$ has period $2\pi$ in $S^3$, since $\exp(2\pi\hat{n}) = e_0$; the induced rotation of the vector part has angle $2\theta$, so it is the identity already at $\theta = \pi$, where $\exp(\pi\hat{n}) = -e_0$, while the spinor returns to $e_0$ only after a $4\pi$ rotation.
+
+**Hyperbolic rotations (the vector directions).** With $(i\hat{n})^2 = +e_0$ and rapidity $\psi \in \mathbb{R}$,
+
+$$
+\exp(\psi\, i\hat{n}) = \cosh\psi\, e_0 + \sinh\psi\, i\hat{n}.
+$$
+
+This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the rotation family it is not periodic and is unbounded as $\psi \to \pm\infty$; it is the rotor of a Lorentz transformation along $\hat{n}$ with rapidity $\psi$. The set of hyperbolic rotations is not a subgroup: the product of two hyperbolic rotations in non-parallel directions is a hyperbolic rotation followed by a rotation.
+
+**Comparison.** A general exponent is $\tilde{Q} = q + iq'$ with $q, q'$ real vector parts; the rotation and hyperbolic families commute only when $q$ and $q'$ are parallel, since $[q, iq'] = 2i\,(q \times q')$, and in general the closed form of §*The Exponential* with $Q_0 = 0$ mixes the two behaviours.
 
 ## The Trigonometric and Hyperbolic Functions
 
@@ -600,6 +664,10 @@ defined on the group of units $\mathbb{B}^\times = \{N(\tilde{Q}) \neq 0\}$. Her
 
 **Failure at pure nilpotents.** In particular, the logarithm does not exist at any pure nilpotent $\tilde{Q} = \mathbf{Q}$ with $\mathbf{Q}^2 = 0$ and $\mathbf{Q} \neq 0$: such an element is a nonzero zero divisor, hence not invertible, whereas every exponential is invertible.
 
+### The Exponential Parametrisation
+
+By the surjectivity established above, every $\tilde{Q} \in \mathbb{B}^\times$ is $\tilde{Q} = \exp(\tilde{L})$ for some $\tilde{L} \in \mathbb{B}$, with $\tilde{L}$ given by the branches of the logarithm above; the parametrisation is many-to-one, with the ambiguity of §*The Kernel of the Exponential*. The two constructions must not be confused: the Hamilton polar form uses the axis and angle **of $\tilde{Q}$**, whereas the closed form for $\exp(\tilde{Q})$ in §*The Exponential* uses those of $\tilde{Q}$ read as an exponent; they agree only in special cases, such as $\tilde{Q}$ a scalar.
+
 ## The Power Functions
 
 ### Definition
@@ -740,13 +808,11 @@ In the table, $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$, $\hat{n} = \mathbf{Q}/B$, $R =
 
 3. **The complex norm.** What is the geometric or algebraic meaning of the complex norm $B$ when it is not real? The complex norm is a square root of the norm form, and it is complex for a general biquaternion, but its interpretation is not clear. In particular, $B$ is the analogue of the "magnitude" of the vector part, but its complex-valuedness means it has both a modulus and a phase.
 
-4. **The polar form and the polar representations.** How does the Hamilton polar form used in this article relate to the complex polar form discussed in the article on biquaternion polar representations? The two forms are complementary, and the Hamilton form used here is the same as the one defined there, with $B$ and $\Theta$ as above.
+4. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis article? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general biquaternion $\tilde{Q}$?
 
-5. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis article? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general biquaternion $\tilde{Q}$?
+5. **The logarithm at the boundary of the group of units.** The logarithm exists on $\mathbb{B}^\times$ but not on its boundary, which is the zero divisor set $\mathcal{Z}$ together with $0$. What is the correct object that replaces the logarithm on the boundary? The answer is likely to involve a formal logarithm or a deformation of the algebra.
 
-6. **The logarithm at the boundary of the group of units.** The logarithm exists on $\mathbb{B}^\times$ but not on its boundary, which is the zero divisor set $\mathcal{Z}$ together with $0$. What is the correct object that replaces the logarithm on the boundary? The answer is likely to involve a formal logarithm or a deformation of the algebra.
-
-7. **The derivative of the exponential in the vector directions.** The formula $\partial_k \exp(\tilde{Q}) = \int_0^1 e^{s \tilde{Q}} e_k e^{(1-s)\tilde{Q}}\,ds$ is the biquaternion analogue of the matrix identity for the derivative of the exponential. What are the consequences of this integral representation for the analysis of biquaternion-valued functions?
+6. **The derivative of the exponential in the vector directions.** The formula $\partial_k \exp(\tilde{Q}) = \int_0^1 e^{s \tilde{Q}} e_k e^{(1-s)\tilde{Q}}\,ds$ is the biquaternion analogue of the usual identity for the derivative of the exponential. What are the consequences of this formula for the analysis of biquaternion-valued functions?
 
 ## Summary
 
@@ -776,8 +842,8 @@ The exponential, the trigonometric and the hyperbolic functions are defined for 
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of the quaternion exponential and logarithm.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), Chapter 3, for the polar representations and elementary functions of biquaternions.
-- S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the polar forms and the exponential.
+- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), Chapter 3, for the elementary functions of biquaternions.
+- S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the exponential of complexified quaternions.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the roots of $-1$ on which the polar form depends.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the zero divisors and nilpotents.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.

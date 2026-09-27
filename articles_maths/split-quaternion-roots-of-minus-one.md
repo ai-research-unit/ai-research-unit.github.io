@@ -5,65 +5,61 @@
 
 This article determines the solutions of the equation $\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.
 
-The split-quaternion algebra, its basis, its vector subspace $V$, its norm form $N$, its matrix model $\Phi$, its idempotents $u_\pm$ and its conjugation are assumed from *Split-Quaternion Algebra*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its vector subspace $V$, its norm form $N$, its idempotents $\tilde\pi_\pm$ and its conjugation are assumed from *Split-Quaternion Algebra*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
 
 ## The Equation and the Reduction to the Vector Subspace
 
-**Theorem (The Solutions).** Let $\xi = a + \mathbf{u}$ with $a \in \mathbb{R}$ and $\mathbf{u} \in V$. Then $\xi^2 = -1$ if and only if
+**Theorem (The Solutions).** Let $\xi = q_0 + \mathbf{u}$ with $q_0 \in \mathbb{R}$ and $\mathbf{u} \in V$. Then $\xi^2 = -1$ if and only if
 
 $$
-a = 0 \quad \text{and} \quad N(\mathbf{u}) = 1 .
+q_0 = 0 \quad \text{and} \quad N(\mathbf{u}) = 1 .
 $$
 
 Hence the solution set is
 
 $$
-\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\} = \{b e_1 + c e_2 + d e_3 : b^2 - c^2 - d^2 = 1\},
+\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\} = \{b e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1\},
 $$
 
 a subset of the vector subspace. No solution has a nonzero scalar part.
 
-**Proof.** For an element of $V$ the square is $-\!N$ times the identity, by (*Split-Quaternion Algebra*, §*The Restricted Form on the Vector Subspace*); so for $\xi = a + \mathbf{u}$,
+**Proof.** For an element of $V$ the square is $-\!N$ times the identity, by (*Split-Quaternion Algebra*, §*The Restricted Form on the Vector Subspace*); so for $\xi = q_0 + \mathbf{u}$,
 
 $$
-\xi^2 = a^2 + 2a\mathbf{u} + \mathbf{u}^2 = \big(a^2 - N(\mathbf{u})\big) + 2a\mathbf{u},
+\xi^2 = q_0^2 + 2q_0\mathbf{u} + \mathbf{u}^2 = \big(q_0^2 - N(\mathbf{u})\big) + 2q_0\mathbf{u},
 $$
 
 where the first parenthesis is scalar and the second term is a vector. The equation $\xi^2 = -1$ splits into the two equations
 
 $$
-a^2 - N(\mathbf{u}) = -1, \qquad 2a\mathbf{u} = 0 .
+q_0^2 - N(\mathbf{u}) = -1, \qquad 2q_0\mathbf{u} = 0 .
 $$
 
-If $a \neq 0$ the second equation gives $\mathbf{u} = 0$, and the first then gives $a^2 = -1$, which has no real solution. Hence $a = 0$, and the first equation becomes $-N(\mathbf{u}) = -1$, that is $N(\mathbf{u}) = 1$. Conversely these two conditions give $\xi^2 = -N(\xi) = -1$. $\square$
+If $q_0 \neq 0$ the second equation gives $\mathbf{u} = 0$, and the first then gives $q_0^2 = -1$, which has no real solution. Hence $q_0 = 0$, and the first equation becomes $-N(\mathbf{u}) = -1$, that is $N(\mathbf{u}) = 1$. Conversely these two conditions give $\xi^2 = -N(\xi) = -1$. $\square$
 
 **Corollary (The Root Set Is a Two-Sheeted Hyperboloid).** The solution set is a surface in the three-dimensional vector space $V$, namely the level set $N = 1$ of the signature-$(2,1)$ form, a hyperboloid of two sheets
 
 $$
-\mathcal{R}_{-1} = \{b^2 - c^2 - d^2 = 1\} = \{b \geq 1\} \cup \{b \leq -1\},
+\mathcal{R}_{-1} = \{b^2 - q_2^2 - q_3^2 = 1\} = \{b \geq 1\} \cup \{b \leq -1\},
 $$
 
-the two sheets being distinguished by the sign of the coefficient $b$ of $e_1$. The set is not connected, and each sheet is diffeomorphic to a plane.
+the two sheets being distinguished by the sign of the coefficient $q_1$ of $e_1$. The set is not connected, and each sheet is diffeomorphic to a plane.
 
-**Proof.** The two sheets are the intersections of the level set with the closed half-spaces $b \geq 1$ and $b \leq -1$; on the first, $b = \sqrt{1 + c^2 + d^2}$, and the map $(\xi_2, \xi_3) \mapsto \big(\sqrt{1 + \xi_2^2 + \xi_3^2}, \xi_2, \xi_3\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second. $\square$
+**Proof.** The two sheets are the intersections of the level set with the closed half-spaces $q_1 \geq 1$ and $q_1 \leq -1$; on the first, $q_1 = \sqrt{1 + q_2^2 + q_3^2}$, and the map $(\xi_2, \xi_3) \mapsto \big(\sqrt{1 + \xi_2^2 + \xi_3^2}, \xi_2, \xi_3\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second. $\square$
 
 The solutions therefore have norm one, $N(\xi) = 1$, so by the invertibility criterion every solution is a **unit** and none is a zero divisor. This is the first point of contact with *Split-Quaternion Zero Divisors* and it is taken up again in *The Relation to the Idempotents and to the Zero Divisors* below.
 
 ## Identification with the Complex Structures of the Plane
 
-The matrix model turns the equation into a familiar one.
-
-**Definition.** A **complex structure** on $\mathbb{R}^2$ is a real-linear map $J : \mathbb{R}^2 \to \mathbb{R}^2$ with $J^2 = -\mathrm{id}$. It makes $\mathbb{R}^2$ a one-dimensional complex vector space with multiplication $(p + iq)\cdot v = pv + qJv$.
-
-**Theorem (The Root Set Is the Set of Complex Structures).** Under the isomorphism $\Phi : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$, the solutions of $\xi^2 = -1$ correspond exactly to the complex structures of $\mathbb{R}^2$:
+**Theorem (The Root Set Is the Hyperboloid).** The solutions of $\xi^2 = -1$ are exactly the vectors of the vector subspace with norm one:
 
 $$
-\Phi(\mathcal{R}_{-1}) = \{X \in M_2(\mathbb{R}) : X^2 = -I\} .
+\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\},
 $$
 
-A solution $\xi$ and its image $X = \Phi(\xi)$ satisfy $\operatorname{tr} X = 0$ and $\det X = 1$, and conversely every matrix with trace $0$ and determinant $1$ is an image of a solution.
+the two-sheeted hyperboloid $q_1^2 - q_2^2 - q_3^2 = 1$; every solution has $\operatorname{Sc}\xi = 0$ and $N(\xi) = 1$, and conversely.
 
-**Proof.** The model is an algebra isomorphism carrying $-1$ to $-I$, so $\xi^2 = -1$ is equivalent to $X^2 = -I$. For the trace and determinant, the Cayley–Hamilton identity for a $2 \times 2$ matrix reads $X^2 - (\operatorname{tr}X) X + (\det X) I = 0$. If $X^2 = -I$, then $(\det X - 1) I = (\operatorname{tr} X) X$. If $\operatorname{tr} X \neq 0$, the identity exhibits $X$ as a scalar matrix, $X = \lambda I$, and then $X^2 = \lambda^2 I = -I$ has no real solution; so $\operatorname{tr} X = 0$, and then the identity gives $\det X = 1$. Conversely, if $\operatorname{tr} X = 0$ and $\det X = 1$, Cayley–Hamilton reads $X^2 + I = 0$. $\square$
+**Proof.** Write $\xi = \xi_0 + \mathbf v$ with $\xi_0 \in S$ and $\mathbf v \in V$. Then $\xi^2 = \xi_0^2 + 2\xi_0\mathbf v + \mathbf v^2 = \xi_0^2 + 2\xi_0\mathbf v - N(\mathbf v)$; this equals $-1$ exactly when the $V$-component $2\xi_0\mathbf v$ vanishes, so $\xi_0 = 0$ or $\mathbf v = 0$. If $\mathbf v = 0$ then $\xi_0^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_0 = 0$ and the $S$-component gives $-N(\mathbf v) = -1$, that is $N(\xi) = 1$. Conversely $\xi \in V$ with $N(\xi) = 1$ has $\xi^2 = -N(\xi) = -1$. $\square$
 
 **Corollary (The Root Set as Complex Lines).** For each solution $\xi$, the subalgebra generated by $\xi$ is
 
@@ -75,8 +71,6 @@ a copy of the complex numbers inside $\mathbb{H}_{\mathrm{s}}$, and every subalg
 
 **Proof.** $\xi^2 = -1$ gives the isomorphism $p + q\xi \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\xi]$ with square $-1$ are the $p + q\xi$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\xi$; and $\xi$ and $-\xi$ lie on the two sheets, their coefficients of $e_1$ being opposite. $\square$
 
-The identification is the reason the matrix model is decisive here: the condition $\xi^2 = -1$ is a condition on a linear map, and the statement that the solutions are the complex structures of the plane is invisible in the generator description $b^2 - c^2 - d^2 = 1$ but immediate in the matrix description.
-
 ## The Root Set as a Conjugacy Class
 
 **Theorem (A Single Conjugacy Class).** All solutions of $\xi^2 = -1$ are conjugate to one another under the group of units:
@@ -87,13 +81,7 @@ $$
 
 The set is a single conjugacy class of the group $\mathbb{H}_{\mathrm{s}}^{\times}$, and it contains $e_1$, so it is the conjugacy class of $e_1$.
 
-**Proof.** Transport the statement to matrices. Let $X^2 = -I$ and let $v \neq 0$. The vectors $v$ and $Xv$ are linearly independent: if $Xv = \lambda v$ for a real $\lambda$, then applying $X$ gives $-v = \lambda Xv = \lambda^2 v$, so $\lambda^2 = -1$, impossible. In the basis $(v, Xv)$ the map $X$ has the matrix
-
-$$
-\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \Phi(e_1),
-$$
-
-since $Xv$ has coordinates $(0,1)$ and $X(Xv) = -v$ has coordinates $(-1,0)$. Hence $X$ is the conjugate of $\Phi(e_1)$ by the change-of-basis matrix, and $X$ is conjugate to $\Phi(e_1)$ within $GL_2(\mathbb{R})$. Transporting through $\Phi$ gives the statement. $\square$
+**Proof.** The adjoint action of the unit group on $V$ has image the Lorentz group $\mathrm{SO}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*, and $\mathrm{SO}(2,1)$ acts transitively on each sheet of the hyperboloid $N = 1$; the unit $e_2$ of norm $-1$ exchanges the sheets. Hence every solution is conjugate to $e_1$ under the unit group. $\square$
 
 **Corollary (The Two Orbits of the Norm-One Group).** The norm-one group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two sheets of the hyperboloid. The full unit group $\mathbb{H}_{\mathrm{s}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $e_2$, since $e_2 e_1 e_2^{-1} = -e_1$.
 
@@ -110,12 +98,12 @@ $$
 and the map $g \mapsto g e_1 g^{-1}$ induces a bijection of homogeneous spaces
 
 $$
-\mathcal{R}_{-1} \cong \mathbb{H}_{\mathrm{s}}^{\times} / \operatorname{Cent}(e_1) \cong GL_2(\mathbb{R}) / GL_1(\mathbb{C}).
+\mathcal{R}_{-1} \cong \mathbb{H}_{\mathrm{s}}^{\times} / \operatorname{Cent}(e_1), \qquad \operatorname{Cent}(e_1) \cong \mathbb{C}^{\times}.
 $$
 
-The two sides are real surfaces: $\dim_{\mathbb{R}} GL_2(\mathbb{R}) = 4$ and $\dim_{\mathbb{R}} \mathbb{C}^{\times} = 2$, so the quotient has real dimension $2$, matching the dimension of the hyperboloid.
+The two sides are real surfaces: the unit group has real dimension $4$ and $\mathbb{C}^{\times}$ has real dimension $2$, so the quotient has real dimension $2$, matching the dimension of the hyperboloid.
 
-**Proof.** In the matrix model $e_1$ corresponds to the rotation matrix $J$. A matrix $M$ commutes with $J$ exactly when $M$ has the form $\begin{pmatrix} p & q \\ -q & p \end{pmatrix} = p I + q J$ with $(p,q) \neq (0,0)$, since the equations $MJ = JM$ are $r = -q$ and $s = p$; such matrices are precisely the nonzero complex numbers acting on $\mathbb{R}^2 \cong \mathbb{C}$, and they are invertible with determinant $p^2 + q^2$. Hence the centraliser is $GL_1(\mathbb{C}) \cong \mathbb{C}^{\times}$. The orbit of $e_1$ under conjugation is the whole root set by the theorem that the root set is a single conjugacy class, and the stabiliser of $e_1$ is the centraliser, so the orbit–stabiliser correspondence gives the displayed bijection. $\square$
+**Proof.** An element commutes with $e_1$ exactly when it lies in the subalgebra $\operatorname{span}\{1,e_1\} \cong \mathbb{C}$: the elements $1$ and $e_1$ commute with $e_1$, while $e_2$ and $e_3 = e_1e_2$ anticommute with it, since $e_1e_2 = -e_2e_1$ and $e_3e_1 = -e_1e_3$. The units of this subalgebra are the nonzero complex numbers, so $\operatorname{Cent}(e_1) \cong \mathbb{C}^{\times}$. The orbit of $e_1$ under conjugation is the whole root set by the theorem that the root set is a single conjugacy class, and the stabiliser of $e_1$ is the centraliser, so the orbit–stabiliser correspondence gives the displayed bijection. $\square$
 
 **Corollary (Each Sheet Is a Hyperbolic Plane).** The quotient $\mathrm{SL}_2(\mathbb{R}) / SO(2)$ is a model of the hyperbolic plane, and each sheet of $\mathcal{R}_{-1}$ is a copy of it, the copy carried by the sheet being acted on transitively by $\mathrm{SL}_2(\mathbb{R})$ with stabiliser $SO(2)$.
 
@@ -129,9 +117,9 @@ The name for the object is therefore: **the root set is the conjugacy class of $
 
 The companion equation clarifies the role of the two signs.
 
-**Proposition (The Roots of $+1$).** Let $\eta = a + \mathbf{u}$. Then $\eta^2 = +1$ if and only if either $a = \pm 1$ and $\mathbf{u} = 0$, or $a = 0$ and $N(\mathbf{u}) = -1$. The non-central solutions are the vectors of the **spacelike unit hyperboloid** $N = -1$ in $V$, a one-sheeted hyperboloid; the central solutions are $\pm 1$.
+**Proposition (The Roots of $+1$).** Let $\eta = q_0 + \mathbf{u}$. Then $\eta^2 = +1$ if and only if either $q_0 = \pm 1$ and $\mathbf{u} = 0$, or $q_0 = 0$ and $N(\mathbf{u}) = -1$. The non-central solutions are the vectors of the **spacelike unit hyperboloid** $N = -1$ in $V$, a one-sheeted hyperboloid; the central solutions are $\pm 1$.
 
-**Proof.** The same splitting as in the proof of the main theorem gives $a^2 - N(\mathbf{u}) = 1$ and $2a\mathbf{u} = 0$. If $\mathbf{u} = 0$ then $a = \pm 1$; if $\mathbf{u} \neq 0$ then $a = 0$ and $N(\mathbf{u}) = -1$. $\square$
+**Proof.** The same splitting as in the proof of the main theorem gives $q_0^2 - N(\mathbf{u}) = 1$ and $2q_0\mathbf{u} = 0$. If $\mathbf{u} = 0$ then $q_0 = \pm 1$; if $\mathbf{u} \neq 0$ then $q_0 = 0$ and $N(\mathbf{u}) = -1$. $\square$
 
 **Theorem (The Idempotents Come from the Roots of $+1$).** Let $\eta \in V$ be a solution of $\eta^2 = 1$. Then
 
@@ -139,9 +127,9 @@ $$
 p_+ = \tfrac{1}{2}(1 + \eta), \qquad p_- = \tfrac{1}{2}(1 - \eta)
 $$
 
-are idempotents with $p_+ + p_- = 1$ and $p_+ p_- = 0$, and they are zero divisors. The idempotents $u_\pm$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = e_2$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
+are idempotents with $p_+ + p_- = 1$ and $p_+ p_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_\pm$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = e_2$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
 
-**Proof.** The identities are the same computation as for $u_\pm$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The norm is
+**Proof.** The identities are the same computation as for $\tilde\pi_\pm$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The norm is
 
 $$
 N\big(\tfrac12(1+\eta)\big) = \tfrac14\big(N(1) + 2B(1,\eta) + N(\eta)\big) = \tfrac14(1 + 0 - 1) = 0,
@@ -149,7 +137,7 @@ $$
 
 so the idempotent is a zero divisor, and the same holds for $p_-$.
 
-For the converse, let $p$ be a non-scalar idempotent. A non-scalar idempotent of $M_2(\mathbb{R})$ has minimal polynomial dividing $x^2 - x$ but not equal to $x$ or to $x - 1$, so its eigenvalues are $0$ and $1$ and its trace is $1$; equivalently $\operatorname{rank} \Phi(p) = 1$ and $\operatorname{tr}\Phi(p) = 1$. For every $2 \times 2$ matrix the adjugate is $\operatorname{adj} M = (\operatorname{tr} M) I - M$, by direct computation, so for $p$ the identity $\Phi(\bar{p}) = \operatorname{adj}\Phi(p)$ of (*Split-Quaternion Algebra*, §*The Conjugation*) gives $\bar{p} = \operatorname{tr}(p) - p = 1 - p$. Put $\eta = 2p - 1$. Then
+For the converse, let $p$ be a non-scalar idempotent, and write $p = \tfrac12 + u$ with $u \in V$. From $p^2 = p$ one gets $u^2 = \tfrac14$, so $N(u) = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $N(\eta) = -1$, so $\eta$ is a root of $+1$ in $V$ and $p = \tfrac12(1 + \eta)$, with $\eta = 2p - 1$ determined by $p$. Also $\bar p = \tfrac12 - u = 1 - p$. Put $\eta = 2p - 1$. Then
 
 $$
 \bar{\eta} = 2\bar{p} - 1 = 2(1 - p) - 1 = 1 - 2p = -\eta,
@@ -192,13 +180,13 @@ The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the not
 
 ## Summary
 
-The solutions of $\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $N(\xi) = 1$, that is, the points of the two-sheeted hyperboloid $b^2 - c^2 - d^2 = 1$; no solution has a nonzero scalar part, and every solution has norm one, so every solution is a unit and none is a zero divisor.
+The solutions of $\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $N(\xi) = 1$, that is, the points of the two-sheeted hyperboloid $q_1^2 - q_2^2 - q_3^2 = 1$; no solution has a nonzero scalar part, and every solution has norm one, so every solution is a unit and none is a zero divisor.
 
-Under the matrix model the solutions correspond to the complex structures of $\mathbb{R}^2$, the matrices $X$ with $X^2 = -I$, equivalently the matrices with trace $0$ and determinant $1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\xi$ and $-\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
+Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\xi$ and $-\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
 
-The solutions form a single conjugacy class, the class of $e_1$; the stabiliser of $e_1$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times} \cong GL_2(\mathbb{R})/GL_1(\mathbb{C})$, of real dimension two. The norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two sheets, and each sheet is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
+The solutions form a single conjugacy class, the class of $e_1$; the stabiliser of $e_1$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two sheets, and each sheet is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
 
-The roots of $+1$ play the companion role: they are $\pm 1$ together with the one-sheeted hyperboloid $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $u_\pm$ are the case $\eta = e_2$. Every solution of $\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected sphere $S^2$ and the homogeneous space is $Sp(1)/U(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
+The roots of $+1$ play the companion role: they are $\pm 1$ together with the one-sheeted hyperboloid $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_\pm$ are the case $\eta = e_2$. Every solution of $\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected sphere $S^2$ and the homogeneous space is $Sp(1)/U(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
 
 ## Summary of Notation
 
@@ -206,7 +194,7 @@ The roots of $+1$ play the companion role: they are $\pm 1$ together with the on
 |---|---|---|
 | $\xi^2 = -1$ | the equation of the article | this article |
 | $\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\}$ | the solution set | this article |
-| $b^2 - c^2 - d^2 = 1$ | the two-sheeted hyperboloid in the basis $e_1,e_2,e_3$ | this article |
+| $q_1^2 - q_2^2 - q_3^2 = 1$ | the two-sheeted hyperboloid in the basis $e_1,e_2,e_3$ | this article |
 | $X^2 = -I$ | the corresponding equation for matrices | this article |
 | $GL_1(\mathbb{C})$ | the centraliser of a complex structure, $\cong \mathbb{C}^{\times}$ | this article |
 | $\operatorname{Cent}(e_1)$ | the centraliser of $e_1$, $\cong \mathbb{C}^{\times}$ | this article |

@@ -233,7 +233,7 @@ The two-sector reading of the oscillator is therefore formal, not a pair of osci
 | $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$ | Truncated lowering operator |
 | $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ | Truncated number operator (idempotent) |
 | $\tilde\Lambda=\cosh\frac\psi2+i\sinh\frac\psi2\,\hat{\mathbf u}$ | Boost rotor in $\mathbb{M}_+$ |
-| $\tilde P_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$ | Idempotent (pure state) |
+| $\tilde\Pi(\pm\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (Born rule) |
 | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | Sector exchange by the scalar imaginary |
 

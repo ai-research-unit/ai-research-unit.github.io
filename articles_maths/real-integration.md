@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This is the seventh article of the Real Numbers system in Part V, and it occupies the **integration slot** of that system. The system is the ordered field $\mathbb{R}$ of *The Real Numbers*, and the object of study is the integral of a function of one real variable over an interval: the Riemann integral of the bounded functions on a compact interval, the fundamental theorem of calculus in both directions, the techniques of integration, the improper integrals over unbounded domains, and the Riemann–Stieltjes integral together with its role as the general form of a positive linear functional.
+This is the integration article of the Real Numbers system, and it occupies the **integration slot** of that system. The system is the ordered field $\mathbb{R}$ of *The Real Numbers*, and the object of study is the integral of a function of one real variable over an interval: the Riemann integral of the bounded functions on a compact interval, the fundamental theorem of calculus in both directions, the techniques of integration, the improper integrals over unbounded domains, and the Riemann–Stieltjes integral together with its role as the general form of a positive linear functional.
 
 The differential and sequential theory of the line is from *Real Analysis*, and the parts of the present article that concern the elementary theory of the Riemann integral are developed there; the purpose of this article is to isolate the integral as the *slot* of the system $\mathbb{R}$, that is, as the pairing of the line with its dual of functions, and to carry the theory to the point — the Riemann–Stieltjes integral, its integration by parts, the Riesz representation theorem and the comparison with Lebesgue integration — at which the integral of the line becomes a structure in its own right. The measure-theoretic integral on a general measure space is from *Measure Theory and Integration*, and the comparison is drawn where it matters; the special functions of the line, which are the next slot of the system, are not used.
 
@@ -211,7 +211,7 @@ for a function $g$ of bounded variation, unique if normalised by $g(a) = 0$ and 
 
 **Proof.** The convergence theorems are the content of *Measure Theory and Integration*; the uniform convergence statement for the Riemann integral is the standard interchange of limit and integral under the supremum norm, and the failure of the bounded pointwise statement is witnessed by an enumeration of the rationals and the indicator functions of its finite initial segments. $\square$
 
-**Remark.** On a compact interval the Riemann integral is sufficient for all the functions that occur in the special functions and the harmonic analysis of the system $\mathbb{R}$: those functions are continuous, piecewise continuous, or regulated, and the improper integrals that arise converge absolutely or conditionally in the classical sense. The Lebesgue integral is needed where the generality is genuinely used, namely in the measure theory of Part III, in the interchange theorems, and in the extension of the theory to the $L^p$ spaces; the present article therefore stops at the comparison, and the measure-theoretic construction is the subject of *Measure Theory and Integration*.
+**Remark.** On a compact interval the Riemann integral is sufficient for all the functions that occur in the special functions and the harmonic analysis of the system $\mathbb{R}$: those functions are continuous, piecewise continuous, or regulated, and the improper integrals that arise converge absolutely or conditionally in the classical sense. The Lebesgue integral is needed where the generality is genuinely used, namely in measure theory, in the interchange theorems, and in the extension of the theory to the $L^p$ spaces; the present article therefore stops at the comparison, and the measure-theoretic construction is the subject of *Measure Theory and Integration*.
 
 ## Summary
 
@@ -221,7 +221,7 @@ The fundamental theorem of calculus holds in both directions: the indefinite int
 
 ## Summary of Notation
 
-| Symbol | Meaning |
+| symbol | meaning |
 |---|---|
 | $[a,b]$ | Compact interval |
 | $P$, $\lVert P\rVert$ | Partition, and its mesh |

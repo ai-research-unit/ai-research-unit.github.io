@@ -1,3 +1,4 @@
+
 # __Real Representations__
 
 ## Introduction
@@ -230,7 +231,7 @@ the ring of $n \times n$ real matrices. This is a simple ring, and it is the pro
 
 ## Comparison with the Complex and Split Complex Cases
 
-The representation theory of $\mathbb{R}$ is the simplest of the three two-dimensional real algebras, but it is the foundation on which the other two are built.
+The representation theory of $\mathbb{R}$ is the simplest of the three real algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{D}$ considered here, but it is the foundation on which the other two are built.
 
 **Field versus ring.** $\mathbb{R}$ is a field, so every non-zero element is invertible. $\mathbb{D}$ is not a field, so it has zero divisors. This is the source of all the differences.
 
@@ -242,7 +243,7 @@ The representation theory of $\mathbb{R}$ is the simplest of the three two-dimen
 
 ## Summary
 
-A representation of $\mathbb{R}$ is a real vector space $V$ together with a bilinear action of the field on it, equivalently a unital algebra homomorphism $\mathbb{R} \to \operatorname{End}_{\mathbb{R}}(V)$. The theory is the simplest of the Part V systems and it is completely determined: because $\mathbb{R}$ is a field every module over it is free, so every finite-dimensional representation is isomorphic to a direct sum of copies of the regular representation, and the regular representation is the unique irreducible representation up to isomorphism.
+A representation of $\mathbb{R}$ is a real vector space $V$ together with a bilinear action of the field on it, equivalently a unital algebra homomorphism $\mathbb{R} \to \operatorname{End}_{\mathbb{R}}(V)$. The theory is the simplest of the number systems and it is completely determined: because $\mathbb{R}$ is a field every module over it is free, so every finite-dimensional representation is isomorphic to a direct sum of copies of the regular representation, and the regular representation is the unique irreducible representation up to isomorphism.
 
 The representation ring $R(\mathbb{R})$ is generated as an abelian group by the class of the regular representation with no relations, so $R(\mathbb{R}) \cong \mathbb{Z}$. The field structure is the source of this simplicity, as it is in the complex case, and the theory of $\mathbb{R}$ is the foundation on which the complex and split complex cases are built.
 
@@ -250,7 +251,7 @@ The article also records the standard constructions on representations: the dual
 
 ## Summary of Notation
 
-| Symbol | Meaning |
+| symbol | meaning |
 |---|---|
 | $\mathbb{R}$ | Real algebra |
 | $\rho : \mathbb{R} \to \operatorname{End}(V)$ | Representation |

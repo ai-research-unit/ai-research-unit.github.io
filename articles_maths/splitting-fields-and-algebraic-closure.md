@@ -262,7 +262,7 @@ The union is a field because the $K_i$ form a chain, it is algebraic over $F$ by
 
 **(d)** If $\operatorname{char} F = p$ then $\overline{F}$ is perfect and contains $\mathbb{F}_p$; if $\operatorname{char} F = 0$ then $\overline{F}$ contains $\mathbb{Q}$.
 
-**Remark.** Every field embeds into an algebraically closed field, namely its algebraic closure, and every algebraically closed field is infinite. The algebraic closure is the smallest algebraically closed extension in the sense that it is algebraic: any algebraically closed extension of $F$ contains a copy of $\overline{F}$. The model-theoretic properties of algebraic closures, and the classification of algebraically closed fields by characteristic and transcendence degree, belong.
+**Remark.** Every field embeds into an algebraically closed field, namely its algebraic closure, and every algebraically closed field is infinite. The algebraic closure is the smallest algebraically closed extension in the sense that it is algebraic: any algebraically closed extension of $F$ contains a copy of $\overline{F}$. The model-theoretic properties of algebraic closures, and the classification of algebraically closed fields by characteristic and transcendence degree, belong to *Model Theory*.
 
 ---
 

@@ -10,7 +10,7 @@ $$
 
 It follows the article on split biquaternion zero divisors, where the structure of the algebra and its zero divisors are established, and it uses the idempotent decomposition of the algebra into two copies of the quaternion algebra.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its idempotent decomposition.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its idempotent decomposition.
 
 Throughout, a split biquaternion is written
 
@@ -20,13 +20,13 @@ $$
 
 The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.
 
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.
 
 ## The Problem
 
@@ -42,13 +42,13 @@ The problem is to find all such elements.
 
 ### Reduction to the Idempotent Components
 
-In the idempotent basis, the square of $\xi = \xi_+ e_+ + \xi_- e_-$ is
+In the idempotent basis, the square of $\xi = \xi_+ \tilde\Pi_+ + \xi_- \tilde\Pi_-$ is
 
 $$
-\xi^2 = \xi_+^2 e_+ + \xi_-^2 e_-,
+\xi^2 = \xi_+^2 \tilde\Pi_+ + \xi_-^2 \tilde\Pi_-,
 $$
 
-because the idempotents satisfy $e_+^2 = e_+$, $e_-^2 = e_-$, and $e_+ e_- = e_- e_+ = 0$.
+because the idempotents satisfy $\tilde\Pi_+^2 = \tilde\Pi_+$, $\tilde\Pi_-^2 = \tilde\Pi_-$, and $\tilde\Pi_+ \tilde\Pi_- = \tilde\Pi_- \tilde\Pi_+ = 0$.
 
 The equation $\xi^2 = -1$ is therefore equivalent to the pair of equations
 
@@ -67,7 +67,7 @@ The problem therefore reduces to the problem of finding the roots of $-1$ in $\m
 So the roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are the elements
 
 $$
-\xi = \mu_+ e_+ + \mu_- e_-,
+\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-,
 $$
 
 where $\mu_+, \mu_- \in \mathbb{H}$ are unit pure real quaternions.
@@ -79,7 +79,7 @@ where $\mu_+, \mu_- \in \mathbb{H}$ are unit pure real quaternions.
 **Theorem.** The roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form
 
 $$
-\xi = \mu_+ e_+ + \mu_- e_-,
+\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-,
 $$
 
 where $\mu_+$ and $\mu_-$ are unit pure real quaternions. Equivalently, in the standard basis,
@@ -98,7 +98,7 @@ There are no other roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$.
 
 **Step 2: Quaternion roots.** The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions. This is the standard result: $\mu^2 = -1$ with $\mu \in \mathbb{H}$ implies $\mu$ is pure and $|\mu| = 1$: writing $\mu = a + v$ with $a$ real and $v$ a vector, the vector part of $\mu^2$ is $2av$, which must vanish, so $a = 0$ or $v = 0$; the case $v = 0$ gives $\mu^2 = a^2 \geq 0 \neq -1$, leaving $a = 0$, and then $\mu^2 = -|v|^2 = -1$ gives $|v| = 1$.
 
-**Step 3: Combination.** Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\xi = \mu_+ e_+ + \mu_- e_-$. Conversely, every root arises this way. $\square$
+**Step 3: Combination.** Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$. Conversely, every root arises this way. $\square$
 
 ### The Scalar Part
 
@@ -139,7 +139,7 @@ $$
 In this case, the root is
 
 $$
-\xi = \mu_+ e_+ - \mu_+ e_- = \mu_+ (e_+ - e_-) = \mu_+ j.
+\xi = \mu_+ \tilde\Pi_+ - \mu_+ \tilde\Pi_- = \mu_+ (\tilde\Pi_+ - \tilde\Pi_-) = \mu_+ j.
 $$
 
 So the pure roots of $-1$ are exactly the elements of the form $\mu j$ with $\mu \in \mathbb{H}$ a unit pure real quaternion. This is a two-dimensional family, parametrized by the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$.
@@ -155,7 +155,7 @@ $$
 In this case, the root is
 
 $$
-\xi = \mu_+ e_+ + \mu_+ e_- = \mu_+ (e_+ + e_-) = \mu_+.
+\xi = \mu_+ \tilde\Pi_+ + \mu_+ \tilde\Pi_- = \mu_+ (\tilde\Pi_+ + \tilde\Pi_-) = \mu_+.
 $$
 
 So the scalar roots of $-1$ are exactly the unit pure real quaternions $\mu \in \mathbb{H}$. This is a two-dimensional family.
@@ -185,31 +185,31 @@ The reason for the difference is that the split complex algebra $\mathbb{D}$ has
 
 ### The Idempotents of $\mathbb{H}_{\mathbb{D}}$
 
-The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde{P}$ with $\tilde{P}^2 = \tilde{P}$. In the idempotent basis, an element $\tilde{P} = \tilde{P}_+ e_+ + \tilde{P}_- e_-$ is idempotent if and only if
+The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde P$ with $\tilde P^2 = \tilde P$. In the idempotent basis, an element $\tilde P = \tilde P_+ \tilde\Pi_+ + \tilde P_- \tilde\Pi_-$ is idempotent if and only if
 
 $$
-\tilde{P}_+^2 = \tilde{P}_+, \qquad \tilde{P}_-^2 = \tilde{P}_-.
+\tilde P_+^2 = \tilde P_+, \qquad \tilde P_-^2 = \tilde P_-.
 $$
 
 In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements
 
 $$
-0, \qquad e_+, \qquad e_-, \qquad e_+ + e_- = 1.
+0, \qquad \tilde\Pi_+, \qquad \tilde\Pi_-, \qquad \tilde\Pi_+ + \tilde\Pi_- = 1.
 $$
 
-These are the only idempotents. The two nontrivial idempotents $e_+$ and $e_-$ are the ones associated with the two components.
+These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are the ones associated with the two components.
 
 ### The Relation Between Roots and Idempotents
 
 In the biquaternion case, the roots of $-1$ are related to the idempotents by the formula
 
 $$
-\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
+\tilde P = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
 $$
 
 where $\xi$ is a root of $-1$ and $i$ is the scalar imaginary. This formula gives all the idempotents of the biquaternion algebra.
 
-In the split biquaternion case, the idempotents are the fixed elements $0, e_+, e_-, 1$, and they are not obtained from the roots of $-1$ by a similar formula. The reason is that the split complex algebra has no scalar imaginary, so there is no element to multiply the root by to obtain an idempotent.
+In the split biquaternion case, the idempotents are the fixed elements $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and they are not obtained from the roots of $-1$ by a similar formula. The reason is that the split complex algebra has no scalar imaginary, so there is no element to multiply the root by to obtain an idempotent.
 
 The relation between the roots of $-1$ and the idempotents is therefore different in the two cases:
 - In $\mathbb{B}$, the roots of $-1$ generate the idempotents.
@@ -221,15 +221,15 @@ This is a reflection of the fact that the biquaternion algebra is simple (and it
 
 ### The Roots Are Not Zero Divisors
 
-A root $\xi$ of $-1$ satisfies $\xi^2 = -1$. In the idempotent basis, $\xi = \mu_+ e_+ + \mu_- e_-$ with $\mu_\pm$ unit pure real quaternions. The idempotent components $\xi_\pm = \mu_\pm$ are nonzero (they are unit quaternions). So $\xi$ is invertible, not a zero divisor.
+A root $\xi$ of $-1$ satisfies $\xi^2 = -1$. In the idempotent basis, $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$ with $\mu_\pm$ unit pure real quaternions. The idempotent components $\xi_\pm = \mu_\pm$ are nonzero (they are unit quaternions). So $\xi$ is invertible, not a zero divisor.
 
-The inverse of $\xi$ is $\xi^{-1} = -\xi = -\mu_+ e_+ - \mu_- e_-$.
+The inverse of $\xi$ is $\xi^{-1} = -\xi = -\mu_+ \tilde\Pi_+ - \mu_- \tilde\Pi_-$.
 
 So the roots of $-1$ are invertible elements, and they lie in the group of units $\mathbb{H}_{\mathbb{D}}^\times$.
 
 ### The Idempotents Are Zero Divisors
 
-The nontrivial idempotents $e_+$ and $e_-$ are zero divisors: $e_+ e_- = 0$ with both $e_+$ and $e_-$ nonzero. So the idempotents lie in the zero divisor set.
+The nontrivial idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are zero divisors: $\tilde\Pi_+ \tilde\Pi_- = 0$ with both $\tilde\Pi_+$ and $\tilde\Pi_-$ nonzero. So the idempotents lie in the zero divisor set.
 
 ### The Cones
 
@@ -245,14 +245,14 @@ The roots of $-1$ form a four-dimensional submanifold of $\mathbb{H}_{\mathbb{D}
 | Non-trivial roots | $b\mu + d\nu i$, $\mu \perp \nu$, $b^2 - d^2 = 1$ | None |
 | Dimension of root set | 4 (non-trivial family) | 4 (product of two quaternion root sets) |
 | Relation to idempotents | Roots generate idempotents | Independent |
-| Idempotents | $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ | $0, e_+, e_-, 1$ |
+| Idempotents | $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ | $0, \tilde\Pi_+, \tilde\Pi_-, 1$ |
 
 The key differences are:
 
 1. **No scalar root.** The split biquaternion algebra has no scalar root of $-1$, because the split complex algebra has no square root of $-1$.
 2. **No non-trivial roots.** The biquaternion algebra has a four-dimensional family of non-trivial roots, which arise from the combination of the scalar imaginary with the quaternion roots. The split biquaternion algebra has no such family, because there is no scalar imaginary.
 3. **The root set is a product.** The split biquaternion root set is the product of two copies of the quaternion root set, parametrized by a pair of unit pure real quaternions. The biquaternion root set is more complicated, because the scalar imaginary interacts with the quaternion roots.
-4. **The idempotents are different.** The idempotents of the split biquaternion algebra are the four elements $0, e_+, e_-, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$.
+4. **The idempotents are different.** The idempotents of the split biquaternion algebra are the four elements $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$.
 
 ## The Root Set as a Manifold
 
@@ -262,7 +262,7 @@ $$
 \{\xi \in \mathbb{H}_{\mathbb{D}} : \xi^2 = -1\} \cong \mathbb{S}^2 \times \mathbb{S}^2.
 $$
 
-The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ e_+ + \mu_- e_-$ and $\mu_\pm$ are unit pure real quaternions.
+The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$ and $\mu_\pm$ are unit pure real quaternions.
 
 So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimensional manifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$.
 
@@ -275,7 +275,7 @@ The biquaternion root set has dimension 4 (the non-trivial family is four-dimens
 The roots of $-1$ in the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form
 
 $$
-\xi = \mu_+ e_+ + \mu_- e_-,
+\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-,
 $$
 
 where $\mu_+$ and $\mu_-$ are unit pure real quaternions. Equivalently, in the standard basis,
@@ -290,7 +290,7 @@ The root set is parametrized by a pair of unit pure real quaternions, i.e., by a
 
 The pure roots (with vanishing scalar part) are the elements $\mu j$ with $\mu$ a unit pure real quaternion. The scalar roots (with vanishing vector part) are the unit pure real quaternions themselves. The general root is a combination of the two.
 
-The roots of $-1$ are invertible and lie in the group of units. They are not zero divisors. The relation to the idempotents is different from the biquaternion case: in the split biquaternion algebra, the idempotents are the fixed elements $0, e_+, e_-, 1$, and they are not generated by the roots of $-1$.
+The roots of $-1$ are invertible and lie in the group of units. They are not zero divisors. The relation to the idempotents is different from the biquaternion case: in the split biquaternion algebra, the idempotents are the fixed elements $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and they are not generated by the roots of $-1$.
 
 The split biquaternion root set is simpler than the biquaternion root set, because the split complex algebra has no square root of $-1$, so there is no scalar imaginary root and no non-trivial roots. The root set is the product of two copies of the quaternion root set, which is a clean and simple structure.
 
@@ -300,10 +300,10 @@ The split biquaternion root set is simpler than the biquaternion root set, becau
 |---|---|
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra |
 | $\xi$ | Root of $-1$ |
-| $\xi_\pm = \xi e_\pm$ | Idempotent components |
+| $\xi_\pm = \xi \tilde\Pi_\pm$ | Idempotent components |
 | $\mu, \mu_+, \mu_-$ | Unit pure real quaternions |
-| $e_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $e_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
 | $\mathbb{S}^2$ | Unit sphere in $\mathbb{R}^3$ |
 
 ## Further Reading

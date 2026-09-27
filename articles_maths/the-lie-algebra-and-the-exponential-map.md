@@ -243,7 +243,7 @@ defined near the origin of $\mathfrak{g}$ is a local Lie group law with the prop
 
 **Corollary.** If $[X, Y] = 0$ then $Z(X, Y) = X + Y$, so $\exp(X + Y) = \exp(X)\exp(Y)$; this recovers the abelian case and the matrix identity $e^{A+B} = e^A e^B$ for commuting matrices.
 
-**Corollary.** For a simply connected Lie group the group law is determined by the Lie algebra, and two simply connected Lie groups with isomorphic Lie algebras are isomorphic. This is one direction of the Lie correspondence; the general statement is.
+**Corollary.** For a simply connected Lie group the group law is determined by the Lie algebra, and two simply connected Lie groups with isomorphic Lie algebras are isomorphic. This is one direction of the Lie correspondence; the general statement is *The Lie Correspondence and the Adjoint Representation*.
 
 ### Exponential Coordinates
 

@@ -151,7 +151,7 @@ P_\theta=\tfrac14\Bigl(e_0\otimes e_0-e_3\otimes e_3
 +i\cos2\theta\,\bigl(e_3\otimes e_0+e_0\otimes e_3\bigr)\Bigr).
 $$
 
-At $\theta=0$ this reduces to $P_+(\hat{z})\otimes P_+(\hat{z})$, a product idempotent; at $\theta=\tfrac{\pi}{4}$ it reduces to the Bell idempotent $P_{\Phi^+}$. It is therefore the correct one-parameter interpolation between the product state $|\uparrow\uparrow\rangle$ and the maximally entangled $|\Phi^+\rangle$.
+At $\theta=0$ this reduces to $\tilde\Pi_1\otimes \tilde\Pi_1$, a product idempotent; at $\theta=\tfrac{\pi}{4}$ it reduces to the Bell idempotent $P_{\Phi^+}$. It is therefore the correct one-parameter interpolation between the product state $|\uparrow\uparrow\rangle$ and the maximally entangled $|\Phi^+\rangle$.
 
 ### The partial trace
 
@@ -214,7 +214,7 @@ This agrees with the Schmidt route, as it must: the Schmidt coefficients of $|\p
 At the endpoints:
 
 $$
-\theta=0:\quad \rho_1=P_+(\hat{z}),\quad \mathbf{r}=e_3,\quad S=0;
+\theta=0:\quad \rho_1=\tilde\Pi_1,\quad \mathbf{r}=e_3,\quad S=0;
 $$
 $$
 \theta=\tfrac{\pi}{4}:\quad \rho_1=\tfrac12 e_0,\quad \mathbf{r}=0,\quad S=\log2 .
@@ -317,8 +317,8 @@ So the partial-trace entropy is maximal. But the joint state is **separable**. U
 
 $$
 \rho_{\mathrm{mix}}=\tfrac14\left(e_0\otimes e_0-e_3\otimes e_3\right)
-=\tfrac12\,P_+(\hat{z})\otimes P_+(\hat{z})
-+\tfrac12\,P_-(\hat{z})\otimes P_-(\hat{z}),
+=\tfrac12\,\tilde\Pi_1\otimes \tilde\Pi_1
++\tfrac12\,\tilde\Pi_2\otimes \tilde\Pi_2,
 $$
 
 a classical mixture of the product states $|\uparrow\uparrow\rangle$ and $|\downarrow\downarrow\rangle$. Its entanglement is zero by any measure; its reduced entropy is maximal. The number $\log2$ here measures the mixedness of the *marginal*, not the entanglement of the *joint state*.
@@ -393,7 +393,7 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 | $\mathrm{Tr}_1,\mathrm{Tr}_2$ | Partial traces: $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace equals twice the scalar part |
-| $P_\pm(\hat{m})=\tfrac12(e_0\pm i\hat{m})$ | Single-qubit idempotents |
+| $\tilde\Pi(\pm\hat{m})=\tfrac12(e_0\pm i\hat{m})$ | Single-qubit idempotents |
 | $P_\epsilon=\tfrac14(e_0\otimes e_0+\sum_k\epsilon_k e_k\otimes e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
 | $P_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |

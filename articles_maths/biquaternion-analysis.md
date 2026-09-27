@@ -494,9 +494,7 @@ The following questions are not answered in this article and are left for later 
 
 6. **Differentiability on other subspaces.** How does the analysis extend to the other fixed-point subspaces, and in particular to the relation between $\mathbb{M}_-$ and $\mathbb{M}_+$?
 
-7. **The relation to the polar representations.** How do the polar representations of the biquaternion algebra interact with the analysis on the four-dimensional subspaces?
-
-8. **The square of the gradient.** The square $\tilde{\nabla}^2$ appears when the gradient is applied twice without conjugation. The identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$ expresses it in terms of $\Box$ and the first derivative. What is the natural setting in which the square $\tilde{\nabla}^2$ (as opposed to $\Box$) is the operator that appears?
+7. **The square of the gradient.** The square $\tilde{\nabla}^2$ appears when the gradient is applied twice without conjugation. The identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$ expresses it in terms of $\Box$ and the first derivative. What is the natural setting in which the square $\tilde{\nabla}^2$ (as opposed to $\Box$) is the operator that appears?
 
 ## Summary
 

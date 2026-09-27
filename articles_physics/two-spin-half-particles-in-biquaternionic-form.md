@@ -161,17 +161,17 @@ The coupled projectors are exactly the spectral projectors of the total Casimir.
 
 ## The Four Coupled States as Idempotents
 
-The spectral decomposition of $F$ has two eigenvalues, $+1$ on the triplet and $-1$ on the singlet. To separate the triplet into its three states one diagonalises $\tilde S_3$ within the symmetric subspace, whose spectral projectors are $P_+\otimes P_+$, $P_-\otimes P_-$, and their complement in $P_{\mathrm{sym}}$. With
+The spectral decomposition of $F$ has two eigenvalues, $+1$ on the triplet and $-1$ on the singlet. To separate the triplet into its three states one diagonalises $\tilde S_3$ within the symmetric subspace, whose spectral projectors are $\tilde\Pi_1\otimes \tilde\Pi_1$, $\tilde\Pi_2\otimes \tilde\Pi_2$, and their complement in $P_{\mathrm{sym}}$. With
 
 $$
-P_\pm=P_\pm(\hat z)=\tfrac{1}{2}\left(e_0\pm ie_3\right),
+\tilde\Pi_{1,2}=\tilde\Pi(\pm\hat z)=\tfrac{1}{2}\left(e_0\pm ie_3\right),
 $$
 
 the four coupled idempotents are
 
 $$
-E_{1,1}=P_+\otimes P_+,\qquad
-E_{1,-1}=P_-\otimes P_-,\qquad
+E_{1,1}=\tilde\Pi_1\otimes \tilde\Pi_1,\qquad
+E_{1,-1}=\tilde\Pi_2\otimes \tilde\Pi_2,\qquad
 E_{1,0}=P_{\mathrm{sym}}-E_{1,1}-E_{1,-1},\qquad
 E_{0,0}=P_{\mathrm{asym}} .
 $$
@@ -301,10 +301,10 @@ gives $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac12\left(\tilde S^2-\tfrac{3\
 The coupled states are not all of the same kind, and the partial trace makes the distinction algebraic. For the two outer triplet members, which are product idempotents,
 
 $$
-\mathrm{Tr}_2\!\left(E_{1,1}\right)=\mathrm{Tr}_2\!\left(P_+\otimes P_+\right)=P_+\mathrm{Tr}_\mathbb{B}(P_+)=P_+ ,
+\mathrm{Tr}_2\!\left(E_{1,1}\right)=\mathrm{Tr}_2\!\left(\tilde\Pi_1\otimes \tilde\Pi_1\right)=\tilde\Pi_1\mathrm{Tr}_\mathbb{B}(\tilde\Pi_1)=\tilde\Pi_1 ,
 $$
 
-since $\mathrm{Tr}_\mathbb{B}(P_\pm)=\tfrac{1}{2}\mathrm{Tr}_\mathbb{B}(e_0)=\tfrac12\cdot2=1$. So the reduced state of $E_{1,1}$ is the pure state $P_+$; the same holds for $E_{1,-1}$ with $P_-$.
+since $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_{1,2})=\tfrac{1}{2}\mathrm{Tr}_\mathbb{B}(e_0)=\tfrac12\cdot2=1$. So the reduced state of $E_{1,1}$ is the pure state $\tilde\Pi_1$; the same holds for $E_{1,-1}$ with $\tilde\Pi_2$.
 
 For the two diagonal-form idempotents the computation is a single line. Because $E_{1,0}$ and $E_{0,0}$ are sums of diagonal tensor terms,
 
@@ -351,10 +351,10 @@ The article established the following.
   where $F=\tfrac12(e_0\otimes e_0-\sum_k e_k\otimes e_k)$ is the exchange operator.
 - **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{2}F-\tfrac{\hbar^2}{4}e_0\otimes e_0$, so the interaction between the two spins is carried by the exchange operator; equivalently $[F,\tilde S_k]=0$, whence $F$ is central in the coupled rotation algebra.
 - **The coupled projectors.** $P_{\mathrm{sym}}=\tfrac14(3e_0\otimes e_0-\sum_k e_k\otimes e_k)$ of trace $3$ and $P_{\mathrm{asym}}=\tfrac14(e_0\otimes e_0+\sum_k e_k\otimes e_k)$ of trace $1$, Hermitian, orthogonal, complete; they are the $\pm1$ spectral projectors of $F$ and the spectral projectors of $\tilde S^2$, with $\tilde S^2=2\hbar^2P_{\mathrm{sym}}$.
-- **The four coupled idempotents.** $E_{1,\pm1}=P_\pm\otimes P_\pm$, $E_{1,0}=P_{\mathrm{sym}}-E_{1,1}-E_{1,-1}$, $E_{0,0}=P_{\mathrm{asym}}$; they are minimal Hermitian idempotents of trace one resolving the identity, and the total spin acts on them by $\tilde S_3E_{j,m}=m\hbar E_{j,m}$, $\tilde S^2E_{j,m}=j(j+1)\hbar^2E_{j,m}$, $\tilde S_\pm E_{j,m}=\hbar\sqrt{(j\mp m)(j\pm m+1)}\,|j,m\pm1\rangle\langle j,m|$.
+- **The four coupled idempotents.** $E_{1,\pm1}=\tilde\Pi_{1,2}\otimes \tilde\Pi_{1,2}$, $E_{1,0}=P_{\mathrm{sym}}-E_{1,1}-E_{1,-1}$, $E_{0,0}=P_{\mathrm{asym}}$; they are minimal Hermitian idempotents of trace one resolving the identity, and the total spin acts on them by $\tilde S_3E_{j,m}=m\hbar E_{j,m}$, $\tilde S^2E_{j,m}=j(j+1)\hbar^2E_{j,m}$, $\tilde S_\pm E_{j,m}=\hbar\sqrt{(j\mp m)(j\pm m+1)}\,|j,m\pm1\rangle\langle j,m|$.
 - **Exchange symmetry.** $F E_{j,m}=(-1)^{1-j}E_{j,m}$: the singlet is antisymmetric, the triplet symmetric; the singlet is annihilated by the total ladder operators and is a zero divisor of the two-qubit algebra.
 - **The Heisenberg coupling.** For $\tilde H=-J\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}$, the eigenvalues are $-J\hbar^2/4$ on the triplet and $+3J\hbar^2/4$ on the singlet, with splitting $J\hbar^2$; the Hamiltonian is the algebra element $\tilde H=-\tfrac{J\hbar^2}{2}F+\tfrac{J\hbar^2}{4}e_0\otimes e_0$.
-- **Reduced states.** $\mathrm{Tr}_2(E_{1,\pm1})=P_\pm$ are pure; $\mathrm{Tr}_2(E_{1,0})=\mathrm{Tr}_2(E_{0,0})=\tfrac12 e_0$ are maximally mixed. The middle triplet member and the singlet are indistinguishable by their reduced states.
+- **Reduced states.** $\mathrm{Tr}_2(E_{1,\pm1})=\tilde\Pi_{1,2}$ are pure; $\mathrm{Tr}_2(E_{1,0})=\mathrm{Tr}_2(E_{0,0})=\tfrac12 e_0$ are maximally mixed. The middle triplet member and the singlet are indistinguishable by their reduced states.
 - **Two idempotent bases.** The coupled basis and the Bell basis are two orthogonal families of minimal idempotents of the same algebra, sharing the singlet and related by a Hadamard rotation.
 
 All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes the tensor-product composition rule, which the framework assumes rather than derives.
@@ -370,7 +370,7 @@ All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes t
 | $\tilde S_k^{(1)}=\tilde S_k\otimes e_0,\ \tilde S_k^{(2)}=e_0\otimes\tilde S_k$ | Factor spin operators |
 | $\tilde S_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ | Total spin |
 | $\tilde S_\pm=\tilde S_1\pm i\tilde S_2$ | Total ladder operators |
-| $P_\pm(\hat z)=\tfrac12(e_0\pm ie_3)$ | One-particle idempotents |
+| $\tilde\Pi(\pm\hat z)=\tfrac12(e_0\pm ie_3)$ | One-particle idempotents |
 | $F=\tfrac12(e_0\otimes e_0-\sum_k e_k\otimes e_k)$ | Exchange operator |
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Triplet and singlet projectors |
 | $E_{j,m}$ | Coupled idempotents, $j\in\{1,0\}$ |

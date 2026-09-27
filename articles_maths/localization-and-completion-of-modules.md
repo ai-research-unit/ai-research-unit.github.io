@@ -47,7 +47,7 @@ with addition $m/s+m'/s'=(s'm+sm')/(ss')$ and scalar action $r(m/s)=(rm)/s$. The
 
 **Theorem.** (i) $M=0$ if and only if $M_{\mathfrak m}=0$ for every maximal ideal $\mathfrak{m}$. (ii) $M$ is flat over $R$ if and only if $M_{\mathfrak m}$ is flat over $R_{\mathfrak m}$ for every maximal ideal $\mathfrak{m}$. (iii) If $M$ is finitely generated and $M_{\mathfrak p}$ is free of rank $n(\mathfrak p)$ over $R_{\mathfrak p}$ for every prime $\mathfrak p$, then $n(\mathfrak p)$ is locally constant on $\operatorname{Spec}R$, and $M$ is a projective module if in addition $R$ is Noetherian or $M$ is of finite presentation.
 
-*Proof.* (i) If $M \neq 0$ choose $x \neq 0$; the annihilator of $x$ is contained in a maximal ideal $\mathfrak m$, and then $x/1 \neq 0$ in $M_{\mathfrak m}$ because $t x=0$ would put $t$ in the annihilator, hence in $\mathfrak m$, contradicting $t \in R \setminus \mathfrak m$. (ii) is the local character of flatness, proved by testing the ideal criterion at each maximal ideal. (iii) Local freeness of finite rank means that every prime has a neighbourhood on which the module is free of the same rank, by Nakayama's lemma; the local trivialisations glue because $M$ is finitely generated and projective is equivalent to being a direct summand of a free module of finite rank. $\square$
+*Proof.* (i) If $M \neq 0$ choose $x \neq 0$; the annihilator of $x$ is contained in a maximal ideal $\mathfrak m$, and then $x/1 \neq 0$ in $M_{\mathfrak m}$ because $t x=0$ would put $t$ in the annihilator, hence in $\mathfrak m$, contradicting $t \in R \setminus \mathfrak m$. (ii) is the local character of flatness, proved by testing the ideal criterion at each maximal ideal. (iii) Local freeness of finite rank means that for every prime $\mathfrak p$ there is an element $f \notin \mathfrak p$ such that $M_f$ is free of rank $n(\mathfrak p)$ over $R_f$, by Nakayama's lemma; the local trivialisations glue because $M$ is finitely generated and projective is equivalent to being a direct summand of a free module of finite rank. $\square$
 
 ## I-Adic Completion
 
@@ -61,9 +61,9 @@ $$
 
 with the projections $\widehat M \to M/I^nM$; the **$I$-adic completion of $R$** is $\widehat R=\varprojlim_n R/I^n$. There is a natural map $\iota:M \to \widehat M$, $m \mapsto (m+I^nM)_n$.
 
-**Definition.** $M$ is **$I$-adically separated** if $\bigcap_n I^nM=0$, and **$I$-adically complete** if $\iota$ is an isomorphism. The **$I$-adic topology** on $M$ has as neighbourhoods of $0$ the submodules $I^nM$; separatedness is Hausdorffness and completeness is the usual completeness of the topology.
+**Definition.** The chain $M \supseteq IM \supseteq I^2M \supseteq \cdots$ is the **$I$-adic filtration** of $M$. The module $M$ is **$I$-adically separated** if $\bigcap_n I^nM=0$, and **$I$-adically complete** if $\iota$ is an isomorphism, equivalently if every coherent sequence $(m_n)$ with $m_n \in M/I^nM$ and $m_{n+1} \equiv m_n \bmod I^nM$ is the sequence of truncations of a unique element of $M$. No distance and no topology is used: separatedness and completeness are statements about the filtration.
 
-**Example.** Take $R=\mathbb{Z}$ and $I=(p)$. Then $\varprojlim_n \mathbb{Z}/p^n\mathbb{Z}=\mathbb{Z}_p$, the ring of $p$-adic integers, and the $I$-adic completion of $\mathbb{Z}$ is separated and complete with $\mathbb{Z} \hookrightarrow \mathbb{Z}_p$ as a dense subring. Similarly, for $R=k[x]$ and $I=(x)$, the completion is the formal power series ring $k[[x]]=\varprojlim_n k[x]/(x^n)$.
+**Example.** Take $R=\mathbb{Z}$ and $I=(p)$. Then $\varprojlim_n \mathbb{Z}/p^n\mathbb{Z}=\mathbb{Z}_p$, the ring of $p$-adic integers, and the $I$-adic completion of $\mathbb{Z}$ is separated and complete, and the natural map $\mathbb{Z} \to \mathbb{Z}_p$ is injective. Similarly, for $R=k[x]$ and $I=(x)$, the completion is the formal power series ring $k[[x]]=\varprojlim_n k[x]/(x^n)$.
 
 ### Exactness
 
@@ -93,7 +93,7 @@ are exact, and the inverse limit is left exact, so $0 \to \varprojlim_nK_n \to \
 
 *Proof.* The statement is Krull's intersection theorem, quoted as standard; its proof uses the Artin–Rees lemma and the Nakayama lemma. $\square$
 
-**Corollary.** Let $R$ be Noetherian and $M$ finitely generated. Then (i) $\widehat M \cong \widehat R \otimes_R M$ and $\widehat R$ is flat over $R$; (ii) completion is exact on finitely generated modules; (iii) $\widehat M$ is a finitely generated $\widehat R$-module, and $\widehat R$ is a Noetherian local ring when $R$ is local; (iv) $\widehat M$ is complete for the $I$-adic topology.
+**Corollary.** Let $R$ be Noetherian and $M$ finitely generated. Then (i) $\widehat M \cong \widehat R \otimes_R M$ and $\widehat R$ is flat over $R$; (ii) completion is exact on finitely generated modules; (iii) $\widehat M$ is a finitely generated $\widehat R$-module, and $\widehat R$ is a Noetherian local ring when $R$ is local; (iv) $\widehat M$ is complete for the $I$-adic filtration.
 
 *Proof.* All four are standard consequences of Artin–Rees and Krull's theorem, quoted from the commutative algebra literature. $\square$
 
@@ -147,12 +147,12 @@ The $I$-adic completion is $\widehat M=\varprojlim M/I^nM$, with $\mathbb{Z}_p$ 
 | $\mathbb{Z}_p$ | the $p$-adic integers |
 | $k[[x]]$ | formal power series ring |
 | $\iota:M \to \widehat M$ | the natural completion map |
-| $I^nM$ | neighbourhoods of zero in the $I$-adic topology |
+| $I^nM$ | the $I$-adic filtration of $M$ |
 
 ## Further Reading
 
 - Michael F. Atiyah and Ian G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, 1969), for localisation, the local–global principles and completion.
-- Nicolas Bourbaki, *Commutative Algebra: Chapters 1–7* (Springer, 1989), for flatness and the $I$-adic topology.
+- Nicolas Bourbaki, *Commutative Algebra: Chapters 1–7* (Springer, 1989), for flatness and $I$-adic completion.
 - David Eisenbud, *Commutative Algebra with a View Toward Algebraic Geometry* (Springer, 1995), for Artin–Rees, Krull's theorem and completion.
 - Robin Hartshorne, *Algebraic Geometry* (Springer, 1977), for completion as a base change and its flatness.
 - Hideyuki Matsumura, *Commutative Ring Theory* (Cambridge University Press, 1989), for the local criteria and the completion of Noetherian rings.

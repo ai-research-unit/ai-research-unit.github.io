@@ -3,9 +3,9 @@
 
 ## Introduction
 
-A vector space has a distinguished point, its origin, and every linear statement is made with respect to it. An affine space is what remains when the origin is forgotten: a set of points on which the additive group of a vector space acts freely and transitively, so that any two points determine a difference vector but no point is singled out. This is a torsor structure, and it is the correct language for geometry, since points, lines, planes, barycentres and distances are all affine notions and none of them survives the loss of translational symmetry that a fixed origin would impose.
+A vector space has a distinguished point, its origin, and every linear statement is made with respect to it. An affine space is what remains when the origin is forgotten: a set of points on which the additive group of a vector space acts freely and transitively, so that any two points determine a difference vector but no point is singled out. This is a torsor structure, and it is the correct language for geometry, since points, lines, planes and barycentres are all affine notions and none of them survives the loss of translational symmetry that a fixed origin would impose.
 
-Throughout, $F$ is a field, $V$ is an $F$-vector space of dimension $n$, and an affine space with direction $V$ is a set $\mathbb{A}$ equipped with a free and transitive action of $(V,+)$. Translating between the affine and linear pictures is done by choosing an origin, and every construction in the article is checked to be independent of that choice. The affine group $\operatorname{Aff}(V)=V \rtimes \operatorname{GL}(V)$ is the symmetry group of the affine structure, exactly as $\operatorname{GL}(V)$ is the symmetry group of the linear structure; the final sections specialise to the Euclidean case, where the relevant subgroup is $V \rtimes O(V,Q)$, and to a form of arbitrary signature.
+Throughout, $F$ is a field, $V$ is an $F$-vector space of dimension $n$, and an affine space with direction $V$ is a set $\mathbb{A}$ equipped with a free and transitive action of $(V,+)$. Translating between the affine and linear pictures is done by choosing an origin, and every construction in the article is checked to be independent of that choice. The affine group $\operatorname{Aff}(V)=V \rtimes \operatorname{GL}(V)$ is the symmetry group of the affine structure, exactly as $\operatorname{GL}(V)$ is the symmetry group of the linear structure. The Euclidean case, where the group is $V \rtimes O(V,Q)$, is treated in Part IV.
 
 ## Affine Spaces
 
@@ -181,42 +181,6 @@ For $n=1$ an affine subspace of dimension $1$ is the whole of $\mathbb{A}$, and 
 
 An affine map with linear part zero is constant; an affine map with $L=\operatorname{id}$ is a translation; an affine map fixing a point $o$ and with $L$ invertible is linear in the coordinates centred at $o$.
 
-## The Euclidean Group
-
-### Isometries are Affine
-
-Let $\mathbb{A}$ be a Euclidean affine space, so that $V$ carries a positive definite inner product $Q$ and the distance between points is $d(a,b)=\sqrt{Q(a-b)}$; define the distance algebraically, without the square root, by $d(a,b)^2=Q(a-b)$.
-
-**Theorem (Mazur–Ulam).** Every bijection $f:\mathbb{A} \to \mathbb{A}$ preserving distances is affine, with linear part in the orthogonal group $O(V,Q)$. Conversely every affine map whose linear part lies in $O(V,Q)$ preserves distances.
-
-*Proof.* The converse is immediate from $Q(Lu,Lv)=Q(u,v)$ for $L \in O(V,Q)$. For the direct statement, $f$ preserves the midpoint operation, hence affine combinations with dyadic coefficients, and continuity or an algebraic substitute extends this to all coefficients; this is the content of the Mazur–Ulam theorem, quoted as standard. $\square$
-
-**Definition.** The **Euclidean group** (or **isometry group**) of $\mathbb{A}$ is
-
-$$
-E(\mathbb{A})=V \rtimes O(V,Q),
-$$
-
-the subgroup of $\operatorname{Aff}(V)$ with linear part orthogonal.
-
-### Classification of Isometries
-
-**Proposition.** Every isometry of a Euclidean affine space can be written uniquely as the composite of a translation and an isometry fixing a chosen point: $f=t_b \circ L$ with $L \in O(V,Q)$. Its fixed points, if any, form an affine subspace $a+W$ where $W=\ker(L-\operatorname{id})$.
-
-*Proof.* The decomposition is the semidirect product description. Writing $f(x)=Lx+b$, a point $x$ is fixed exactly when $(L-\operatorname{id})x=-b$, so the fixed set is empty when $-b \notin \operatorname{im}(L-\operatorname{id})$, and otherwise it is the coset of $\ker(L-\operatorname{id})$ through any one fixed point, that is, an affine subspace with direction $\ker(L-\operatorname{id})$. $\square$
-
-For a Euclidean plane the possibilities for a non-identity isometry are: a translation (no fixed point, $L=\operatorname{id}$); a rotation (one fixed point, $L$ a rotation by an angle not $0$, the half-turn included); a reflection (fixed line, $L$ a reflection); or a glide reflection (no fixed point, $L$ a reflection, the translation along the reflecting line nonzero). The classification is by the type of the orthogonal part and the position of the translation vector relative to the fixed space of the linear part.
-
-### Forms of Arbitrary Signature
-
-Let $Q$ be a nondegenerate quadratic form of signature $(p,q)$ on a real vector space $V$, and let $\mathbb{A}$ be an affine space with direction $V$. The group relevant to the geometry determined by $Q$ is
-
-$$
-G(Q)=V \rtimes O(V,Q),
-$$
-
-acting on $\mathbb{A}$ and preserving the polar form of $Q$ on differences of points, $g(u,v)=Q(u+v)-Q(u)-Q(v)$. For the positive definite form this is the Euclidean group; for the split form of signature $(n/2,n/2)$ the polar form is a nondegenerate symmetric form of that signature, whose maximal isotropic subspaces are Lagrangian, and $O(V,Q)$ is the corresponding indefinite orthogonal group. The algebraic structure $V \rtimes O(V,Q)$ is the same in every signature; what changes is the geometry the form defines, and no metric of positive definite type is needed to write down the group.
-
 ## Summary
 
 An affine space with direction a vector space $V$ is a set $\mathbb{A}$ on which $V$ acts freely and transitively; equivalently, every ordered pair of points has a unique difference in $V$, and the difference map satisfies $(c-b)+(b-a)=c-a$. Choosing an origin identifies $\mathbb{A}$ with $V$, and two origins differ by a translation, so an affine space is a vector space with its origin forgotten.
@@ -225,7 +189,7 @@ The translations $t_v(a)=a+v$ form a normal subgroup isomorphic to $(V,+)$ and a
 
 Affine combinations $\sum\lambda_ia_i$ with $\sum\lambda_i=1$ are well defined independently of the origin and give barycentres when the weights are equal and the number of points is invertible; affinely independent points give barycentric coordinates, and an affine basis of $n+1$ points gives every point a unique coordinate vector summing to $1$. Affine subspaces $a+W$ have a well-defined direction, two subspaces with the same direction are equal or disjoint, and a nonempty intersection has direction $W \cap U$; in dimensions two and three this is the incidence theory of points, lines and planes. Affine maps are the maps with a linear part, and affine automorphisms form the affine group.
 
-Finally, in a Euclidean affine space the distance-preserving bijections are exactly the affine maps with orthogonal linear part, by the Mazur–Ulam theorem, and they form the Euclidean group $E(\mathbb{A})=V \rtimes O(V,Q)$; every isometry is a translation composed with an isometry fixing a point, and in the plane the non-identity isometries are translations, rotations, reflections and glide reflections. For a form of arbitrary signature the analogous group is $V \rtimes O(V,Q)$, the algebraic structure being independent of the signature.
+The Euclidean group $V \rtimes O(V,Q)$ and the classification of its isometries are treated in Part IV.
 
 ## Summary of Notation
 
@@ -245,16 +209,11 @@ Finally, in a Euclidean affine space the distance-preserving bijections are exac
 | $(\alpha_0,\dots,\alpha_n)$ | barycentric coordinates |
 | $B=a+W$ | affine subspace with direction $W$ |
 | $Q$, $g$ | quadratic form and its polar form |
-| $O(V,Q)$ | orthogonal group of the form |
-| $E(\mathbb{A})=V \rtimes O(V,Q)$ | Euclidean group / isometry group |
-| $d(a,b)^2=Q(a-b)$ | squared distance |
 
 ## Further Reading
 
 - Emil Artin, *Geometric Algebra* (Interscience, 1957), for affine geometry and the structure of the affine group.
-- Marcel Berger, *Geometry I* (Springer, 1987), for affine spaces, barycentres and the classification of isometries.
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for torsors and semidirect products.
 - Harold S. M. Coxeter, *Introduction to Geometry* (Wiley, 2nd ed. 1969), for the classical affine and Euclidean geometry.
-- Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 3rd ed. 1971), for the groups $V \rtimes O(V,Q)$ and their classical geometry.
 - Igor R. Shafarevich, *Basic Algebraic Geometry 1* (Springer, 3rd ed. 2013), for affine spaces over arbitrary fields and their coordinate rings.
 - John Stillwell, *The Four Pillars of Geometry* (Springer, 2005), for the interplay between affine, projective and Euclidean structures.

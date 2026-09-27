@@ -83,7 +83,7 @@ The two Möbius groups are among the exceptional isomorphisms of low-dimensional
 | $PGL(2,\mathbb{R}) \cong PO(2,1)$ | the projective linear group of the line is the projective orthogonal group of the split conic, the full isometry group of $\mathbf{H}^2$ | *Projective Geometry*, §Quadrics and Their Polarity |
 | $SL(2,\mathbb{R}) \cong SO(2,1)$ | the rank-one simple Lie group is the special orthogonal group of a Lorentzian form of signature $(2,1)$ | *Property (T)*, §Groups with Property (T) |
 | $PSL(2,\mathbb{R}) \cong SO^+(2,1)$ | the real Möbius group is the identity component of the orthogonal group of the form of signature $(2,1)$ | *Hyperbolic Geometry*, §The Two-Dimensional Case; *Property (T)*, §Groups with Property (T) |
-| $PSL(2,\mathbb{C}) \cong SO^+(1,3)$ | the complex Möbius group is the proper orthochronous Lorentz group | *Biquaternion Exponential and Lie Group Structure*; *Split-Biquaternion Rotations and the Lorentz Group* |
+| $PSL(2,\mathbb{C}) \cong SO^+(1,3)$ | the complex Möbius group is the proper orthochronous Lorentz group | *Biquaternion Lie Algebra and Lie Group Structure*; *Split-Biquaternion Rotations and the Lorentz Group* |
 | $SU(1,1) \cong SL(2,\mathbb{R})$ | the disk model of the hyperbolic plane and the upper half-plane model have conjugate isometry groups | *The Unitary and Symplectic Groups*; *Hyperbolic Geometry* |
 | $SO^+(1,3) \cong SO(3,1)^{\circ}$ | the identity component of the Lorentz group, of dimension six | *Split-Biquaternion Rotations and the Lorentz Group*, §The Groups $O(3,1)$, $SO(3,1)$ and $SO^{+}(3,1)$ |
 

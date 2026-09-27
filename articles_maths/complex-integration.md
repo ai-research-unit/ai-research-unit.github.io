@@ -1,3 +1,4 @@
+
 # __Complex Integration__
 
 ## Introduction
@@ -561,8 +562,6 @@ The **residue theorem**, $\frac{1}{2\pi i} \oint_\gamma f \, dz = \sum_k \operat
 | $\mu, \nu$ | Orders of a zero and of a pole |
 | $dA$ | Area measure |
 | $\mathcal{C}\mu$ | Cauchy transform of a complex measure $\mu$ |
-
-
 
 ## Further Reading
 

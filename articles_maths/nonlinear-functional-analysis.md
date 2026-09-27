@@ -187,7 +187,7 @@ $$
 
 for every finite cycle, and then the function is recovered from $A$ by the formula $f(x)=\sup\bigl(\langle a_0,x\rangle+\sum_{j}\langle x_j^*,x_{j+1}-x_j\rangle\bigr)$ over the finite chains in the graph of $A$. The inclusion $0 \in Ax$ is the abstract form of a variational inequality, whose solvability theory follows from the surjectivity theorem above.
 
-**Example (the p-Laplacian).** On $W^{1,p}_0(\Omega)$ the operator $Au=-\operatorname{div}(|\nabla u|^{p-2}\nabla u)$ is monotone, coercive and hemicontinuous, hence maximal monotone and surjective onto $W^{-1,q}(\Omega)$ with $\frac1p+\frac1q=1$; the equation $Au=f$ has a unique solution for every $f$, and the monotonicity is the replacement for the ellipticity that is unavailable in the nonlinear setting. The example and its boundary-value theory belong.
+**Example (the p-Laplacian).** On $W^{1,p}_0(\Omega)$ the operator $Au=-\operatorname{div}(|\nabla u|^{p-2}\nabla u)$ is monotone, coercive and hemicontinuous, hence maximal monotone and surjective onto $W^{-1,q}(\Omega)$ with $\frac1p+\frac1q=1$; the equation $Au=f$ has a unique solution for every $f$, and the monotonicity is the replacement for the ellipticity that is unavailable in the nonlinear setting. The example and its boundary-value theory belong to *Partial Differential Equations*.
 
 ## Variational Methods
 
@@ -197,7 +197,7 @@ for every finite cycle, and then the function is recovered from $A$ by the formu
 
 *Proof.* Choose a minimising sequence $(x_n)$ with $F(x_n)\to\inf F$; coercivity bounds it, reflexivity gives a weakly convergent subsequence $x_{n_k}\rightharpoonup x$, weak lower semicontinuity gives $F(x)\le\liminf F(x_{n_k})=\inf F$, and hence $F(x)=\inf F$. $\square$
 
-This is the fundamental existence theorem of the calculus of variations; the technical work in its applications is the verification of the weak lower semicontinuity and the coercivity in the function space of the problem, which is the content .
+This is the fundamental existence theorem of the calculus of variations; the technical work in its applications is the verification of the weak lower semicontinuity and the coercivity in the function space of the problem, which is the content of this article.
 
 ### The Palais–Smale Condition and the Deformation Lemma
 
@@ -239,7 +239,7 @@ If $F$ satisfies $(PS)_c$, then $c$ is a critical value of $F$, and the correspo
 
 *Proof (sketch).* The family $\Gamma$ is invariant under the homeomorphisms of $X$ isotopic to the identity fixing $0$ and $v$, so the minimax principle applies. $\square$
 
-**Example (a semilinear problem).** On $H_0^1(\Omega)$ let $F(u)=\frac12\int_\Omega|\nabla u|^2dx-\int_\Omega G(u)\,dx$ with $G'=g$ of subcritical growth and $g(u)=o(u)$ at $0$; the origin is a local minimum, the energy is unbounded below along rays when $G$ is superquadratic, and the mountain pass geometry holds; the Palais–Smale condition follows from the compactness of the embedding $H_0^1\hookrightarrow L^2$ and the growth hypothesis, so the theorem produces a nontrivial solution of $-\Delta u=g(u)$ with $u=0$ on the boundary. The functional-analytic scheme is the content of the present section; the elliptic existence theory, the regularity of the solution and the maximum principle belong .
+**Example (a semilinear problem).** On $H_0^1(\Omega)$ let $F(u)=\frac12\int_\Omega|\nabla u|^2dx-\int_\Omega G(u)\,dx$ with $G'=g$ of subcritical growth and $g(u)=o(u)$ at $0$; the origin is a local minimum, the energy is unbounded below along rays when $G$ is superquadratic, and the mountain pass geometry holds; the Palais–Smale condition follows from the compactness of the embedding $H_0^1\hookrightarrow L^2$ and the growth hypothesis, so the theorem produces a nontrivial solution of $-\Delta u=g(u)$ with $u=0$ on the boundary. The functional-analytic scheme is the content of the present section; the elliptic existence theory, the regularity of the solution and the maximum principle belong to *Partial Differential Equations*.
 
 ### Ljusternik–Schnirelmann Theory
 

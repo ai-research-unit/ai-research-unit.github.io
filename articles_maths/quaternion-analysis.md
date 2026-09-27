@@ -1,3 +1,4 @@
+
 # __Quaternion Analysis__
 
 ## Introduction
@@ -8,34 +9,34 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
-## The Quaternion Space
+## The Metric Structure of $\mathbb{H}$
 
 ### Points and Distance
 
 A quaternion is written
 
 $$
-q = q_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
 $$
 
-The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ is the **vector part**. We write $q = q_0 + \mathbf{q}$ with $\mathbf{q} \in \mathbb{R}^3$.
+The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ is the **vector part**. We write $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\mathbf{q} \in \mathbb{R}^3$.
 
-The **modulus** of $q$ is
-
-$$
-|q| = \sqrt{q \bar{q}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2},
-$$
-
-where $\bar{q} = q_0 - \mathbf{q}$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:
+The **modulus** of $\tilde q$ is
 
 $$
-|pq| = |p| |q|.
+|\tilde q| = \sqrt{\tilde q \bar{\tilde q}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2},
 $$
 
-The **distance** between two quaternions $p$ and $q$ is
+where $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:
 
 $$
-d(p, q) = |p - q|.
+|pq| = |p| |\tilde q|.
+$$
+
+The **distance** between two quaternions $p$ and $\tilde q$ is
+
+$$
+d(p, \tilde q) = |p - \tilde q|.
 $$
 
 This makes $\mathbb{H}$ a metric space isometric to $\mathbb{R}^4$. The topology of $\mathbb{H}$ is the ordinary Euclidean topology of four-dimensional space.
@@ -45,7 +46,7 @@ This makes $\mathbb{H}$ a metric space isometric to $\mathbb{R}^4$. The topology
 The **open ball** of radius $r > 0$ centered at $q_0$ is
 
 $$
-B(q_0, r) = \{q \in \mathbb{H} : |q - q_0| < r\}.
+B(q_0, r) = \{\tilde q \in \mathbb{H} : |\tilde q - q_0| < r\}.
 $$
 
 It is an open ball in the quaternion space, exactly as in the real case. The topology is the ordinary Euclidean topology.
@@ -119,18 +120,18 @@ $$
 Let $f : D \to \mathbb{H}$ with $D \subseteq \mathbb{H}$, and let $q_0$ be a limit point of $D$. We say
 
 $$
-\lim_{q \to q_0} f(q) = L
+\lim_{\tilde q \to q_0} f(\tilde q) = L
 $$
 
 if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-q \in D, \; 0 < |q - q_0| < \delta \implies |f(q) - L| < \epsilon.
+\tilde q \in D, \; 0 < |\tilde q - q_0| < \delta \implies |f(\tilde q) - L| < \epsilon.
 $$
 
 **Uniqueness.** If the limit exists, it is unique.
 
-**Sequential criterion.** $\lim_{q \to q_0} f(q) = L$ iff for every sequence $(q_n)$ in $D \setminus \{q_0\}$ with $q_n \to q_0$, we have $f(q_n) \to L$.
+**Sequential criterion.** $\lim_{\tilde q \to q_0} f(\tilde q) = L$ iff for every sequence $(q_n)$ in $D \setminus \{q_0\}$ with $q_n \to q_0$, we have $f(q_n) \to L$.
 
 **Algebra of limits.** Sums, products, and quotients (where defined) of limits are the limits of the sums, products, and quotients.
 
@@ -139,13 +140,13 @@ $$
 A function $f : D \to \mathbb{H}$ is **continuous at** $q_0 \in D$ if
 
 $$
-\lim_{q \to q_0} f(q) = f(q_0).
+\lim_{\tilde q \to q_0} f(\tilde q) = f(q_0).
 $$
 
 Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-q \in D, \; |q - q_0| < \delta \implies |f(q) - f(q_0)| < \epsilon.
+\tilde q \in D, \; |\tilde q - q_0| < \delta \implies |f(\tilde q) - f(q_0)| < \epsilon.
 $$
 
 $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
@@ -154,19 +155,19 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 
 **Theorem.** $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.
 
-**Componentwise continuity.** Write $f(q) = f_0(q) + f_1(q) e_1 + f_2(q) e_2 + f_3(q) e_3$. Then $f$ is continuous at $q_0$ iff each $f_\mu$ is continuous at $q_0$. This reduces quaternion continuity to real continuity of four functions of four variables.
+**Componentwise continuity.** Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) e_1 + f_2(\tilde q) e_2 + f_3(\tilde q) e_3$. Then $f$ is continuous at $q_0$ iff each $f_\mu$ is continuous at $q_0$. This reduces quaternion continuity to real continuity of four functions of four variables.
 
 ### Uniform Continuity
 
 A function $f : D \to \mathbb{H}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-p, q \in D, \; |p - q| < \delta \implies |f(p) - f(q)| < \epsilon.
+p, \tilde q \in D, \; |p - \tilde q| < \delta \implies |f(p) - f(\tilde q)| < \epsilon.
 $$
 
 **Theorem.** A continuous function on a compact set is uniformly continuous.
 
-## Quaternion Differentiability
+## The Problem of Differentiability
 
 ### The Derivative
 
@@ -184,7 +185,7 @@ The limit is taken in the quaternion space, so $h$ can approach $0$ from any dir
 
 ### The Cauchy–Riemann Equations
 
-Write $f(q) = u(q) + v_1(q) e_1 + v_2(q) e_2 + v_3(q) e_3$, where $q = x_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ and $u, v_k : U \to \mathbb{R}$.
+Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) e_1 + v_2(\tilde q) e_2 + v_3(\tilde q) e_3$, where $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ and $u, v_k : U \to \mathbb{R}$.
 
 **Theorem.** $f$ is quaternion differentiable at $q_0$ iff the components $u, v_1, v_2, v_3$ are real differentiable at $q_0$ and satisfy the **quaternion Cauchy–Riemann equations**
 
@@ -219,7 +220,7 @@ This is the quaternion analogue of the Liouville theorem in complex analysis, an
 The quaternion Cauchy–Riemann equations are so restrictive that the quaternion differentiable functions are exactly the functions of the form
 
 $$
-f(q) = a q + b, \qquad a, b \in \mathbb{H}.
+f(\tilde q) = a \tilde q + b, \qquad a, b \in \mathbb{H}.
 $$
 
 That is, the only quaternion differentiable functions are the affine functions. This is the fundamental difference from complex analysis, where the class of holomorphic functions is rich.
@@ -228,7 +229,7 @@ That is, the only quaternion differentiable functions are the affine functions. 
 
 So the naive notion of quaternion differentiability is too restrictive to be useful. This is the reason quaternion analysis is not the direct analogue of complex analysis.
 
-## The Correct Notion: Monogenic Functions
+## Regular Functions on $\mathbb{H}$
 
 ### Definition
 
@@ -261,7 +262,7 @@ Monogenic functions satisfy:
 **The Cauchy integral formula.** If $f$ is monogenic on a domain containing a ball $B(q_0, r)$, then
 
 $$
-f(q) = \frac{1}{2\pi^2} \int_{\partial B(q_0, r)} \frac{(w - q)^{-1}}{|w - q|^2} n(w) f(w) \, dS(w),
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(q_0, r)} \frac{(w - \tilde q)^{-1}}{|w - \tilde q|^2} n(w) f(w) \, dS(w),
 $$
 
 where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the sphere. This is the quaternion analogue of the Cauchy integral formula.
@@ -276,7 +277,7 @@ So monogenic functions are the correct analogue of holomorphic functions in quat
 
 ### The Relation to the Cauchy–Riemann Operator
 
-The Cauchy–Riemann operator $D$ (classically called the Dirac operator) is the quaternion analogue of $\bar{\partial}$, the Cauchy–Riemann operator of one complex variable. It factors the Laplacian:
+The Cauchy–Riemann operator $D$ is the quaternion analogue of $\bar{\partial}$, the Cauchy–Riemann operator of one complex variable. It factors the Laplacian:
 
 $$
 \bar{D} D = \Delta,
@@ -288,163 +289,11 @@ and the monogenic functions are the kernel of $D$. This is the starting point of
 
 The Cauchy–Riemann–Fueter equation $D f = 0$ is a first-order system of four real equations for the four components of $f$. It is elliptic, and its solutions are harmonic. The equation is the quaternion analogue of the Cauchy–Riemann equations, and it is the correct notion of differentiability in quaternion analysis.
 
-## Integration
-
-### Contour Integrals
-
-Let $\gamma : [a, b] \to \mathbb{H}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The **contour integral** of $f$ along $\gamma$ is
-
-$$
-\int_\gamma f(q) \, dq = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
-$$
-
-**Linearity.** $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$ for constant $a, b \in \mathbb{H}$.
-
-**Reversal.** $\int_{-\gamma} f = -\int_\gamma f$.
-
-**Additivity.** If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.
-
-**Estimation.** If $|f(q)| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
-
-$$
-\left| \int_\gamma f(q) \, dq \right| \leq M L.
-$$
-
-### The Cauchy–Goursat Theorem
-
-**Theorem (Cauchy–Goursat, quaternion version).** If $f$ is monogenic on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then
-
-$$
-\oint_\gamma f(q) \, dq = 0.
-$$
-
-**Proof.** The integral of a monogenic function over a closed surface in $\mathbb{R}^4$ vanishes by the divergence theorem, because the Cauchy–Riemann operator annihilates $f$. The contour case follows by approximation. $\square$
-
-**Corollary.** On a simply connected domain, the integral of a monogenic function is path-independent. The function
-
-$$
-F(q) = \int_{q_0}^q f(w) \, dw
-$$
-
-is well-defined, monogenic, and satisfies $D F = f$ in the appropriate sense.
-
-### The Cauchy Integral Formula
-
-**Theorem (Cauchy Integral Formula, quaternion version).** Let $f$ be monogenic on a domain containing the closed ball $\overline{B}(q_0, r)$. Then for every $q$ in the open ball,
-
-$$
-f(q) = \frac{1}{2\pi^2} \int_{\partial B(q_0, r)} \frac{(w - q)^{-1}}{|w - q|^2} n(w) f(w) \, dS(w),
-$$
-
-where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the sphere.
-
-**Corollary (derivatives).** Under the same hypotheses, $f$ is infinitely differentiable, and the derivatives are given by differentiating the kernel.
-
-### Liouville's Theorem
-
-**Theorem (Liouville).** Every bounded monogenic function on all of $\mathbb{H}$ is constant.
-
-**Proof.** Apply the Cauchy estimates to the derivatives of $f$ on a ball of radius $r$ around $q_0$. Since $f$ is bounded by $M$, the derivatives are bounded by $M/r^n$. Let $r \to \infty$ to get that all derivatives vanish. So $f$ is constant. $\square$
-
-### Morera's Theorem
-
-**Theorem (Morera).** If $f$ is continuous on a domain $U$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $U$, then $f$ is monogenic on $U$.
-
-**Proof.** Define $F(q) = \int_{q_0}^q f(w) \, dw$. The hypothesis makes $F$ well-defined, and $D F = f$. Since $F$ is monogenic, $F$ is infinitely differentiable, so $f$ is monogenic. $\square$
-
-## Power Series
+## The Differential Operators
 
 ### Definition
 
-A **power series** centered at $q_0$ is
-
-$$
-\sum_{n=0}^\infty c_n (q - q_0)^n, \qquad c_n \in \mathbb{H}.
-$$
-
-The **radius of convergence** is
-
-$$
-R = \frac{1}{\limsup_{n \to \infty} |c_n|^{1/n}},
-$$
-
-with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.
-
-**Theorem.** The series converges absolutely for $|q - q_0| < R$ and diverges for $|q - q_0| > R$. On $|q - q_0| < R$ it converges uniformly on compact subsets.
-
-**Theorem.** A power series is monogenic on $|q - q_0| < R$, and its derivative is obtained by term-by-term differentiation:
-
-$$
-D \sum_{n=0}^\infty c_n (q - q_0)^n = \sum_{n=1}^\infty n c_n (q - q_0)^{n-1}.
-$$
-
-The differentiated series has the same radius of convergence.
-
-### Taylor Series
-
-**Theorem (Taylor, quaternion version).** If $f$ is monogenic on a domain containing the closed ball $\overline{B}(q_0, r)$, then $f$ has a power series expansion
-
-$$
-f(q) = \sum_{n=0}^\infty \frac{f^{(n)}(q_0)}{n!} (q - q_0)^n
-$$
-
-valid for $|q - q_0| < r$.
-
-**Corollary.** A monogenic function is analytic: it equals its Taylor series in a neighborhood of every point.
-
-**Corollary (identity theorem).** If two monogenic functions on a domain $U$ agree on a set with an accumulation point in $U$, they agree on all of $U$.
-
-### Laurent Series
-
-**Theorem (Laurent).** If $f$ is monogenic on an annulus $r < |q - q_0| < R$, then $f$ has a unique expansion
-
-$$
-f(q) = \sum_{n=-\infty}^\infty c_n (q - q_0)^n
-$$
-
-valid on the annulus, with
-
-$$
-c_n = \frac{1}{2\pi^2} \int_{\partial B(q_0, \rho)} \frac{(w - q_0)^{-n-1}}{|w - q_0|^2} n(w) f(w) \, dS(w), \qquad r < \rho < R.
-$$
-
-## Singularities
-
-### Classification
-
-Let $f$ be monogenic on a punctured ball $0 < |q - q_0| < R$.
-
-**Removable singularity.** $q_0$ is removable if $f$ extends to a monogenic function on $|q - q_0| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.
-
-**Pole.** $q_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.
-
-**Essential singularity.** $q_0$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.
-
-**Theorem (Riemann).** $q_0$ is removable iff $f$ is bounded near $q_0$.
-
-**Theorem (Casorati–Weierstrass).** If $q_0$ is an essential singularity, then $f$ takes values arbitrarily close to every quaternion in every neighborhood of $q_0$.
-
-### Residues
-
-The **residue** of $f$ at an isolated singularity $q_0$ is the coefficient $c_{-1}$ in the Laurent expansion:
-
-$$
-\operatorname{Res}(f, q_0) = c_{-1}.
-$$
-
-**Theorem (Residue Theorem).** Let $f$ be monogenic on a simply connected domain except for isolated singularities $q_1, \dots, q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $q_k$ and winds once around each. Then
-
-$$
-\oint_\gamma f(q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, q_k).
-$$
-
-The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, and it is the quaternion analogue of the factor $2\pi i$ in complex analysis.
-
-## The Cauchy–Riemann Operator
-
-### Definition
-
-The **Cauchy–Riemann operator** (classically called the Dirac operator) is
+The **Cauchy–Riemann operator** is
 
 $$
 D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}.
@@ -465,7 +314,7 @@ $$
 **Fundamental solution.** The fundamental solution of $D$ is
 
 $$
-E(q) = \frac{q^{-1}}{|q|^2} = \frac{\bar{q}}{|q|^4},
+E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\bar{\tilde q}}{|\tilde q|^4},
 $$
 
 which satisfies $D E = 2\pi^2 \delta_0$ in the sense of distributions.
@@ -479,6 +328,158 @@ $$
 $$
 
 and the holomorphic functions are the kernel of $\bar{\partial}$. In quaternion analysis, the Cauchy–Riemann operator is the analogue of $\bar{\partial}$, and the monogenic functions are the kernel of $D$. The Cauchy–Riemann operator is the correct generalization of the Cauchy–Riemann operator of one complex variable to higher dimensions.
+
+## Integration
+
+### Contour Integrals
+
+Let $\gamma : [a, b] \to \mathbb{H}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The **contour integral** of $f$ along $\gamma$ is
+
+$$
+\int_\gamma f(\tilde q) \, dq = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+$$
+
+**Linearity.** $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$ for constant $a, b \in \mathbb{H}$.
+
+**Reversal.** $\int_{-\gamma} f = -\int_\gamma f$.
+
+**Additivity.** If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.
+
+**Estimation.** If $|f(\tilde q)| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
+
+$$
+\left| \int_\gamma f(\tilde q) \, dq \right| \leq M L.
+$$
+
+### The Cauchy–Goursat Theorem
+
+**Theorem (Cauchy–Goursat, quaternion version).** If $f$ is monogenic on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then
+
+$$
+\oint_\gamma f(\tilde q) \, dq = 0.
+$$
+
+**Proof.** The integral of a monogenic function over a closed surface in $\mathbb{R}^4$ vanishes by the divergence theorem, because the Cauchy–Riemann operator annihilates $f$. The contour case follows by approximation. $\square$
+
+**Corollary.** On a simply connected domain, the integral of a monogenic function is path-independent. The function
+
+$$
+F(\tilde q) = \int_{q_0}^q f(w) \, dw
+$$
+
+is well-defined, monogenic, and satisfies $D F = f$ in the appropriate sense.
+
+### The Cauchy Integral Formula
+
+**Theorem (Cauchy Integral Formula, quaternion version).** Let $f$ be monogenic on a domain containing the closed ball $\overline{B}(q_0, r)$. Then for every $\tilde q$ in the open ball,
+
+$$
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(q_0, r)} \frac{(w - \tilde q)^{-1}}{|w - \tilde q|^2} n(w) f(w) \, dS(w),
+$$
+
+where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the sphere.
+
+**Corollary (derivatives).** Under the same hypotheses, $f$ is infinitely differentiable, and the derivatives are given by differentiating the kernel.
+
+### Liouville's Theorem
+
+**Theorem (Liouville).** Every bounded monogenic function on all of $\mathbb{H}$ is constant.
+
+**Proof.** Apply the Cauchy estimates to the derivatives of $f$ on a ball of radius $r$ around $q_0$. Since $f$ is bounded by $M$, the derivatives are bounded by $M/r^n$. Let $r \to \infty$ to get that all derivatives vanish. So $f$ is constant. $\square$
+
+### Morera's Theorem
+
+**Theorem (Morera).** If $f$ is continuous on a domain $U$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $U$, then $f$ is monogenic on $U$.
+
+**Proof.** Define $F(\tilde q) = \int_{q_0}^q f(w) \, dw$. The hypothesis makes $F$ well-defined, and $D F = f$. Since $F$ is monogenic, $F$ is infinitely differentiable, so $f$ is monogenic. $\square$
+
+## Power Series
+
+### Definition
+
+A **power series** centered at $q_0$ is
+
+$$
+\sum_{n=0}^\infty c_n (\tilde q - q_0)^n, \qquad c_n \in \mathbb{H}.
+$$
+
+The **radius of convergence** is
+
+$$
+R = \frac{1}{\limsup_{n \to \infty} |c_n|^{1/n}},
+$$
+
+with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.
+
+**Theorem.** The series converges absolutely for $|\tilde q - q_0| < R$ and diverges for $|\tilde q - q_0| > R$. On $|\tilde q - q_0| < R$ it converges uniformly on compact subsets.
+
+**Theorem.** A power series is monogenic on $|\tilde q - q_0| < R$, and its derivative is obtained by term-by-term differentiation:
+
+$$
+D \sum_{n=0}^\infty c_n (\tilde q - q_0)^n = \sum_{n=1}^\infty n c_n (\tilde q - q_0)^{n-1}.
+$$
+
+The differentiated series has the same radius of convergence.
+
+### Taylor Series
+
+**Theorem (Taylor, quaternion version).** If $f$ is monogenic on a domain containing the closed ball $\overline{B}(q_0, r)$, then $f$ has a power series expansion
+
+$$
+f(\tilde q) = \sum_{n=0}^\infty \frac{f^{(n)}(q_0)}{n!} (\tilde q - q_0)^n
+$$
+
+valid for $|\tilde q - q_0| < r$.
+
+**Corollary.** A monogenic function is analytic: it equals its Taylor series in a neighborhood of every point.
+
+**Corollary (identity theorem).** If two monogenic functions on a domain $U$ agree on a set with an accumulation point in $U$, they agree on all of $U$.
+
+### Laurent Series
+
+**Theorem (Laurent).** If $f$ is monogenic on an annulus $r < |\tilde q - q_0| < R$, then $f$ has a unique expansion
+
+$$
+f(\tilde q) = \sum_{n=-\infty}^\infty c_n (\tilde q - q_0)^n
+$$
+
+valid on the annulus, with
+
+$$
+c_n = \frac{1}{2\pi^2} \int_{\partial B(q_0, \rho)} \frac{(w - q_0)^{-n-1}}{|w - q_0|^2} n(w) f(w) \, dS(w), \qquad r < \rho < R.
+$$
+
+## Singularities
+
+### Classification
+
+Let $f$ be monogenic on a punctured ball $0 < |\tilde q - q_0| < R$.
+
+**Removable singularity.** $q_0$ is removable if $f$ extends to a monogenic function on $|\tilde q - q_0| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.
+
+**Pole.** $q_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.
+
+**Essential singularity.** $q_0$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.
+
+**Theorem (Riemann).** $q_0$ is removable iff $f$ is bounded near $q_0$.
+
+**Theorem (Casorati–Weierstrass).** If $q_0$ is an essential singularity, then $f$ takes values arbitrarily close to every quaternion in every neighborhood of $q_0$.
+
+### Residues
+
+The **residue** of $f$ at an isolated singularity $q_0$ is the coefficient $c_{-1}$ in the Laurent expansion:
+
+$$
+\operatorname{Res}(f, q_0) = c_{-1}.
+$$
+
+**Theorem (Residue Theorem).** Let $f$ be monogenic on a simply connected domain except for isolated singularities $q_1, \dots, q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $q_k$ and winds once around each. Then
+
+$$
+\oint_\gamma f(\tilde q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, q_k).
+$$
+
+The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, and it is the quaternion analogue of the factor $2\pi i$ in complex analysis.
 
 ## Applications
 
@@ -524,11 +525,11 @@ The complex case is the case $n = 2$ of the general theory, and the quaternion c
 
 ## Summary
 
-Quaternion analysis is the study of differentiable functions of a quaternion variable $q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$. The space carries its norm, and with it the convergent sequences and the continuous functions on which the subject is built.
+Quaternion analysis is the study of differentiable functions of a quaternion variable $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The space carries its norm, and with it the convergent sequences and the continuous functions on which the subject is built.
 
 The naive derivative $f'(q_0) = \lim_{h \to 0} (f(q_0 + h) - f(q_0))/h$ exists only for very special functions, because $\mathbb{H}$ is non-commutative and the limit must be independent of the direction of $h$. The correct notion replaces it: a function is monogenic, or regular, when it satisfies the Cauchy–Riemann–Fueter equation, and monogenic functions are the analogues of the holomorphic functions of one complex variable.
 
-The article develops what that notion supports: contour integrals along paths, power series and their radius of convergence, and the classification of the isolated singularities as removable, a pole, or essential. The Cauchy–Riemann operator, classically the Dirac operator, is studied in its own right, and the applications record the harmonicity of monogenic functions and the representation given by the Cauchy integral formula. The final section compares the subject with complex analysis and traces each difference to the non-commutativity of $\mathbb{H}$ and to the higher dimension of the space.
+The article develops what that notion supports: contour integrals along paths, power series and their radius of convergence, and the classification of the isolated singularities as removable, a pole, or essential. The Cauchy–Riemann operator is studied in its own right, and the applications record the harmonicity of monogenic functions and the representation given by the Cauchy integral formula. The final section compares the subject with complex analysis and traces each difference to the non-commutativity of $\mathbb{H}$ and to the higher dimension of the space.
 
 ## Summary of Notation
 
@@ -536,16 +537,16 @@ The article develops what that notion supports: contour integrals along paths, p
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
-| $q = q_0 + \mathbf{q}$ | General quaternion |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
 | $q_0$ | Scalar part |
 | $\mathbf{q}$ | Vector part |
-| $\bar{q} = q_0 - \mathbf{q}$ | Quaternion conjugate |
-| $\|q\| = \sqrt{q \bar{q}}$ | Modulus |
+| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $\lvert \tilde q\rvert = \sqrt{\tilde q \bar{\tilde q}}$ | Modulus |
 | $B(q_0, r)$ | Open ball of radius $r$ |
 | $D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$ | Cauchy–Riemann operator |
 | $D f = 0$ | Monogenic equation |
 | $\Delta = \bar{D} D$ | Laplacian |
-| $\int_\gamma f(q) \, dq$ | Contour integral |
+| $\int_\gamma f(\tilde q) \, dq$ | Contour integral |
 | $\operatorname{Res}(f, q_0)$ | Residue |
 | $2\pi^2$ | Surface area of the unit sphere in $\mathbb{R}^4$ |
 
@@ -556,5 +557,5 @@ The article develops what that notion supports: contour integrals along paths, p
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford theory.
 - John Ryan, *Clifford Algebras in Analysis and Related Topics* (CRC Press, 1996), for the analytic theory.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for the role of the Dirac operator in geometry.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for the Clifford-algebra and spinor background of the operator.
 

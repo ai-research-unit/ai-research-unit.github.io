@@ -99,7 +99,7 @@ Notice that the proof uses only that $I$ is closed under products and under mult
 
 **Definition.** $A/I$ is the **quotient algebra** of $A$ by $I$, and $\pi$ is the **quotient map**.
 
-**Example.** Every quotient of $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ is read off from the idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$. The ideals $\mathbb{D}e_+$ and $\mathbb{D}e_-$ are two-sided, $\mathbb{D}/\mathbb{D}e_- \cong \mathbb{R}$, and since $e_+ e_- = 0$ one has $\mathbb{D} \cong \mathbb{R}\oplus\mathbb{R}$ as an algebra, so $\mathbb{D}$ is the direct sum of the two quotients.
+**Example.** Every quotient of $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ is read off from the idempotents $\pi_\pm = \tfrac{1}{2}(1 \pm j)$. The ideals $\mathbb{D}\pi_+$ and $\mathbb{D}\pi_-$ are two-sided, $\mathbb{D}/\mathbb{D}\pi_- \cong \mathbb{R}$, and since $\pi_+ \pi_- = 0$ one has $\mathbb{D} \cong \mathbb{R}\oplus\mathbb{R}$ as an algebra, so $\mathbb{D}$ is the direct sum of the two quotients.
 
 **Example.** $\mathbb{H}$ has no proper nonzero two-sided ideal, so the only quotients of $\mathbb{H}$ are $0$ and $\mathbb{H}$ itself. This is the content of $\mathbb{H}$ being a division algebra, and it is proved in *Quaternion Algebra ($\mathbb{H}$)*.
 
@@ -195,10 +195,10 @@ The ideals of the standard examples are collected in the following table, with t
 |---|---|---|---|
 | $\mathbb{R}$ | $0$, $\mathbb{R}$ | field, no proper quotient ||
 | $\mathbb{C}$ | $0$, $\mathbb{C}$ | field ||
-| $\mathbb{D}$ | $0$, $\mathbb{D}e_+$, $\mathbb{D}e_-$, $\mathbb{D}$ | $\mathbb{D}/\mathbb{D}e_\pm \cong \mathbb{R}$ | *Split Complex Algebra* |
+| $\mathbb{D}$ | $0$, $\mathbb{D}\pi_+$, $\mathbb{D}\pi_-$, $\mathbb{D}$ | $\mathbb{D}/\mathbb{D}\pi_\pm \cong \mathbb{R}$ | *Split Complex Algebra* |
 | $\mathbb{D}'$ | $0$, $(\varepsilon)$, $\mathbb{D}'$ | $\mathbb{D}'/(\varepsilon)\cong\mathbb{R}$ | *Dual Numbers Algebra* |
 | $\mathbb{H}$ | $0$, $\mathbb{H}$ | $\mathbb{H}$ is a division algebra | *Quaternion Algebra ($\mathbb{H}$)* |
-| $\mathbb{H}_{\mathbb{D}}$ | $0$, $\mathbb{H}_{\mathbb{D}}e_+$, $\mathbb{H}_{\mathbb{D}}e_-$, $\mathbb{H}_{\mathbb{D}}$ | $\mathbb{H}_{\mathbb{D}}/\mathbb{H}_{\mathbb{D}}e_\pm \cong \mathbb{H}$ ||
+| $\mathbb{H}_{\mathbb{D}}$ | $0$, $\mathbb{H}_{\mathbb{D}}\pi_+$, $\mathbb{H}_{\mathbb{D}}\pi_-$, $\mathbb{H}_{\mathbb{D}}$ | $\mathbb{H}_{\mathbb{D}}/\mathbb{H}_{\mathbb{D}}\pi_\pm \cong \mathbb{H}$ ||
 | $\mathbb{B}$ | $0$, $\mathbb{B}$ | $M_2(\mathbb{C})$ is simple | *Biquaternion Algebra ($\mathbb{B}$)* |
 | $M_n(k)$ | $0$, $M_n(k)$ | $M_n(k)$ is simple ||
 | $k[x]$, $k$ a field | $(f)$, $f \in k[x]$ | $k[x]/(f)$ ||

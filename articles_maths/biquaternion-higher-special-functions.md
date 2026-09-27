@@ -401,8 +401,6 @@ The common thread is the **complex norm** $\theta$: the two regimes $\theta \neq
 
 6. **The extension to several variables.** Can the special functions be extended to functions of several biquaternion variables, and what replaces the two-regime structure?
 
-7. **The polar representations.** How do the higher special functions interact with the Hamilton and complex polar forms?
-
 ## Summary
 
 The higher special functions of a biquaternion variable fall into three classes.
@@ -437,7 +435,7 @@ The biquaternion special functions are therefore a partially developed subject: 
 
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), Chapter 3, for the special functions of biquaternions.
-- S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the polar forms and the representation theory.
+- S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the polar forms.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the roots of $-1$.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the zero divisors and nilpotents.
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.

@@ -133,13 +133,13 @@ $$
 
 the $i$-th summand vanishing by the divergence theorem in the subalgebra $A_i$; in the split complex case the two summands vanish because $f_+$ is independent of $\xi_+$ and $f_-$ is independent of $\xi_-$.
 
-**Example (the split complex numbers).** With $e_\pm = \tfrac12(1\pm j)$ and $\xi_\pm = x_0 \pm x_1$ one has $d\xi = e_+d\xi_+ + e_-d\xi_-$ and
+**Example (the split complex numbers).** With $\Pi_\pm = \tfrac12(1\pm j)$ and $\xi_\pm = x_0 \pm x_1$ one has $d\xi = \Pi_+d\xi_+ + \Pi_-d\xi_-$ and
 
 $$
-\int_\gamma f\,d\xi = e_+\int_{\gamma_+}f_+\,d\xi_+ + e_-\int_{\gamma_-}f_-\,d\xi_-,
+\int_\gamma f\,d\xi = \Pi_+\int_{\gamma_+}f_+\,d\xi_+ + \Pi_-\int_{\gamma_-}f_-\,d\xi_-,
 $$
 
-where $\gamma_\pm$ are the projections of $\gamma$ onto the two characteristic coordinates. Each term is an ordinary real line integral, and no single Cauchy formula can represent their sum; this is the idempotent form of the failure of a Cauchy integral formula in $\mathbb{D}$ recorded. The curve form of Cauchy's theorem fails too: the closure condition $\partial_0fj = \partial_1f$ for a left regular $f = f_+(\xi_-)e_+ + f_-(\xi_+)e_-$ reads $-2f_+'(\xi_-)e_+ + 2f_-'(\xi_+)e_- = 0$, so it holds only for constant $f$, while the hypersurface form above holds for every regular $f$. The two statements are not in conflict: the curve theorem is the closedness of the form, the hypersurface theorem is the divergence theorem for $D$.
+where $\gamma_\pm$ are the projections of $\gamma$ onto the two characteristic coordinates. Each term is an ordinary real line integral, and no single Cauchy formula can represent their sum; this is the idempotent form of the failure of a Cauchy integral formula in $\mathbb{D}$ recorded. The curve form of Cauchy's theorem fails too: the closure condition $\partial_0fj = \partial_1f$ for a left regular $f = f_+(\xi_-)\Pi_+ + f_-(\xi_+)\Pi_-$ reads $-2f_+'(\xi_-)\Pi_+ + 2f_-'(\xi_+)\Pi_- = 0$, so it holds only for constant $f$, while the hypersurface form above holds for every regular $f$. The two statements are not in conflict: the curve theorem is the closedness of the form, the hypersurface theorem is the divergence theorem for $D$.
 
 **Remark (path independence and zero divisors).** Path independence of $\int_\gamma f\,d\xi$ is governed by the closedness of the form, exactly as in the classical theory: on a simply connected domain a closed form is exact, and the primitive is built by integration, an operation that uses no division. The zero divisors enter elsewhere. First, a primitive is a function that is left $A$-differentiable with derivative $f$, so where $f$ takes a non-invertible value the differential is a non-invertible linear map and the inverse-function arguments that the classical theory uses locally are unavailable. Second, an expansion of a regular function at a singularity requires powers of $\xi - x_0$, and where $\xi - x_0$ is a zero divisor no such expansion exists; the singularities of a kernel supported on the null cone therefore have no Laurent description, which is why the residue calculus of the general theory is stated as an integral over a small sphere rather than as a coefficient extraction. Third, in an algebra with idempotents the integral splits, and the components that contribute nothing are exactly those in which the integrand is constant along the corresponding characteristic direction.
 
@@ -278,7 +278,7 @@ When $A$ has a complete set of orthogonal central idempotents the integral **spl
 | $\mathcal{C}^\pm$ | Inside and outside boundary values of the transform |
 | $f\,d\xi$ | Hypercomplex differential $1$-form |
 | $e_i$, $A_i = e_iA = Ae_i$ | Complete orthogonal central idempotents and the split components of $A$ |
-| $e_\pm = \tfrac12(1\pm j)$, $\xi_\pm = x_0 \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
+| $\Pi_\pm = \tfrac12(1\pm j)$, $\xi_\pm = x_0 \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
 
 
 

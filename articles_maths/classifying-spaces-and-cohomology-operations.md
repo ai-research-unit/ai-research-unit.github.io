@@ -73,7 +73,7 @@ for every $H$-module $M$. Consequently $BH$ is the Eilenberg–MacLane space $K(
 
 *Proof sketch.* The realisation $E_\bullet G$ has an extra degeneracy, given by inserting the identity in the last coordinate, and a simplicial space with an extra degeneracy has contractible realisation; the freeness is the freeness of the action on each $G^{n+1}$ and the quotient identifies $E_\bullet G/G$ with $B_\bullet G$. For discrete $H$ the realisation is a CW complex whose $n$-cells are the nondegenerate simplices, indexed by $H^n$, and the chain complex of $B_\bullet H$ is the bar resolution; its homology computes $\operatorname{Tor}$ over $\mathbb{Z}H$, and its cohomology computes $\operatorname{Ext}$, which is group cohomology as developed in *Group Cohomology*. The last statement is the characterisation of $K(H,1)$ by its homotopy groups, established below. $\square$
 
-**Remark.** Both constructions produce the same space up to homotopy equivalence; the Milnor join is the geometric model and the bar construction is the algebraic one, and it is the bar construction that exhibits $BH$ as the classifying space of a discrete group in the form in which group cohomology is computed. The description of $H^n(H;M)$ as the cohomology of $BH$ is used aga.
+**Remark.** Both constructions produce the same space up to homotopy equivalence; the Milnor join is the geometric model and the bar construction is the algebraic one, and it is the bar construction that exhibits $BH$ as the classifying space of a discrete group in the form in which group cohomology is computed. The description of $H^n(H;M)$ as the cohomology of $BH$ is used again.
 
 ### Functoriality
 
@@ -400,7 +400,7 @@ $$
 
 **Example.** For $n = 1$ the admissible monomials of excess less than one are only the empty one, since $e(I) \geq i_k \geq 1$ for nonempty $I$; hence $H^*(K(\mathbb{Z}/2,1);\mathbb{F}_2) = \mathbb{F}_2[\iota_1]$, which is $H^*(\mathbb{RP}^\infty;\mathbb{F}_2)$, as it must be. For $n = 2$ the admissible monomials of excess one are exactly $(1)$, $(2,1)$, $(4,2,1)$, $(8,4,2,1),\ldots$, so the polynomial generators of $H^*(K(\mathbb{Z}/2,2);\mathbb{F}_2)$ have degrees $2,3,5,9,17,33,\ldots$, that is $2^k+1$ for $k \geq 0$; and in the integral case the condition $i_k \neq 1$ removes them all, leaving $H^*(K(\mathbb{Z},2);\mathbb{F}_2) = \mathbb{F}_2[\iota_2]$, which is $H^*(\mathbb{CP}^\infty;\mathbb{F}_2)$, as it must be. For $n = 3$ the integral generators that survive have degrees $3,5,9,17,33,\ldots$, related to the fundamental class by $\iota_3$, $\mathrm{Sq}^2\iota_3$, $\mathrm{Sq}^4\mathrm{Sq}^2\iota_3$, and so on.
 
-**Corollary.** The Eilenberg–MacLane spaces are the coefficients of the obstruction theory: the successive quotients of a Postnikov tower are the spaces $K(\pi_n(X),n)$, and the cohomology operations are exactly the classes of their cohomology. The applications of this to a fibration, namely the filtration of the cohomology of the total space and the transgression in the spectral sequence, belong.
+**Corollary.** The Eilenberg–MacLane spaces are the coefficients of the obstruction theory: the successive quotients of a Postnikov tower are the spaces $K(\pi_n(X),n)$, and the cohomology operations are exactly the classes of their cohomology. The applications of this to a fibration, namely the filtration of the cohomology of the total space and the transgression in the spectral sequence, belong to *The Leray–Serre Spectral Sequence*.
 
 ## Summary
 

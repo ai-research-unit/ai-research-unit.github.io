@@ -71,7 +71,7 @@ $$
 The state space is the spinor space $\mathbb{C}^2$, and the spin states are the eigenstates of $\mathbf{S}\cdot\hat{\mathbf{n}}$ for a unit vector $\hat{\mathbf{n}}$. The spin-up and spin-down projectors along the direction $\hat{\mathbf{n}}$ are
 
 $$
-P_\pm^{\hat{\mathbf{n}}} = \frac{1}{2}\left(I_2 \pm \hat{\mathbf{n}}\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{1,2}^{\hat{\mathbf{n}}} = \frac{1}{2}\left(I_2 \pm \hat{\mathbf{n}}\cdot\boldsymbol{\sigma}\right).
 $$
 
 These are Hermitian, idempotent, and of trace 1. They are the **pure-state projectors** of the spin system.
@@ -159,24 +159,24 @@ The idempotents of $\mathbb{M}_+$ are the pure-state projectors of the spin-1/2 
 **Statement.** The idempotents of $\mathbb{M}_+$ are exactly the elements
 
 $$
-P_\pm = \tfrac{1}{2}\left(e_0 \pm \mu i\right),
+\tilde\Pi_{1,2} = \tfrac{1}{2}\left(e_0 \pm \mu i\right),
 $$
 
 where $\mu = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quaternion, $\mu_1^2 + \mu_2^2 + \mu_3^2 = 1$.
 
-**Properties.** Each such $P_\pm$ satisfies:
+**Properties.** Each such $\tilde\Pi_{1,2}$ satisfies:
 
-1. **Hermitian:** $P_\pm^\dagger = P_\pm$, since $P_\pm \in \mathbb{M}_+$.
-2. **Idempotent:** $P_\pm^2 = P_\pm$.
-3. **Trace one:** $\mathrm{Tr}(P_\pm) = 2\,\mathrm{Sc}(P_\pm) = 1$.
-4. **Rank one:** in the matrix representation, $P_\pm$ maps to a rank-1 projection matrix.
+1. **Hermitian:** $\tilde\Pi_{1,2}^\dagger = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{M}_+$.
+2. **Idempotent:** $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.
+3. **Trace one:** $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$.
+4. **Rank one:** in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
 
 **Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_0 \pm \xi i)$ with $\xi$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\xi = \pm \mu$ with $\mu$ a unit pure real quaternion. The Hermitian, idempotent, trace-1 properties are direct computations (article 3).
 
-**Identification with spin projectors.** Under the isomorphism, $P_\pm$ maps to
+**Identification with spin projectors.** Under the isomorphism, $\tilde\Pi_{1,2}$ maps to
 
 $$
-P_\pm \mapsto \frac{1}{2}\left(I_2 \pm \mu_1\sigma_1 \pm \mu_2\sigma_2 \pm \mu_3\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \boldsymbol{\mu}\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm \mu_1\sigma_1 \pm \mu_2\sigma_2 \pm \mu_3\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \boldsymbol{\mu}\cdot\boldsymbol{\sigma}\right).
 $$
 
 This is exactly the spin projector $|\pm\hat{\boldsymbol{\mu}}\rangle\langle\pm\hat{\boldsymbol{\mu}}|$ onto the spin-up or spin-down state along the direction $\hat{\boldsymbol{\mu}}$.
@@ -199,16 +199,16 @@ is **real** and is the **Born-rule expectation value** of $\tilde{H}$ in the sta
 
 ### Example
 
-Take $\mu = e_3$, so that $P_+ = \tfrac{1}{2}(e_0 + e_3 i)$ corresponds to the spin-up state along the $z$ axis, and let $\tilde{H} = i e_1$ (the spin observable along the $x$ axis). Then
+Take $\mu = e_3$, so that $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + e_3 i)$ corresponds to the spin-up state along the $z$ axis, and let $\tilde{H} = i e_1$ (the spin observable along the $x$ axis). Then
 
 $$
-P_+ \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_1) = \tfrac{1}{2}(ie_1 + e_3 i \cdot i e_1) = \tfrac{1}{2}(ie_1 - e_3 e_1) = \tfrac{1}{2}(ie_1 - e_2).
+\tilde\Pi_1 \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_1) = \tfrac{1}{2}(ie_1 + e_3 i \cdot i e_1) = \tfrac{1}{2}(ie_1 - e_3 e_1) = \tfrac{1}{2}(ie_1 - e_2).
 $$
 
 Taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(P_+ \tilde{H}) = 2 \cdot 0 = 0,
+2\,\mathrm{Sc}(\tilde\Pi_1 \tilde{H}) = 2 \cdot 0 = 0,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle = 0$. ✓
@@ -216,13 +216,13 @@ which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle 
 Take instead $\tilde{H} = ie_3$ (the spin observable along the $z$ axis):
 
 $$
-P_+ \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_3) = \tfrac{1}{2}(ie_3 + e_3 i \cdot ie_3) = \tfrac{1}{2}(ie_3 - e_3 e_3) = \tfrac{1}{2}(ie_3 + e_0).
+\tilde\Pi_1 \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_3) = \tfrac{1}{2}(ie_3 + e_3 i \cdot ie_3) = \tfrac{1}{2}(ie_3 - e_3 e_3) = \tfrac{1}{2}(ie_3 + e_0).
 $$
 
 Taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(P_+ \tilde{H}) = 2 \cdot \tfrac{1}{2} = 1,
+2\,\mathrm{Sc}(\tilde\Pi_1 \tilde{H}) = 2 \cdot \tfrac{1}{2} = 1,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\hbar/2$, which is absorbed in the normalization). ✓
@@ -394,7 +394,7 @@ These questions are open.
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$ for a unit pure quaternion $\mu$, correspond to the rank-1 projectors, i.e., the pure spin states. The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born rule.
+The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \mu i)$ for a unit pure quaternion $\mu$, correspond to the rank-1 projectors, i.e., the pure spin states. The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born rule.
 
 The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part. The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.
 
@@ -412,7 +412,7 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $e_0, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices |
-| $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$ | Idempotent (pure spin state) |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \mu i)$ | Idempotent (pure spin state) |
 | $\tilde{H} = h_0 e_0 + ih_k e_k$ | Hermitian element (observable) |
 | $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ | Born-rule expectation value |
 | $SU(2)$ | Spin rotation group |
