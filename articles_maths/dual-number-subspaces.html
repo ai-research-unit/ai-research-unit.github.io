@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual-Number Subspaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dual-number-subspaces"><strong>Dual-Number Subspaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article collects the submodule structure of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and the relations among its distinguished submodules. It follows <em>Dual-Numbers Algebra</em> for the two conjugations and the two distinguished submodules, <em>Dual-Numbers Norm and Invertibility</em> for the norm form, and <em>Dual-Numbers Ideals and the Maximal Ideal</em> for the ideal structure. Its structural model is <em>Biquaternion Relations Between Subspaces</em>, in which a lattice of six subspaces is organized by the four conjugations; here only one nontrivial conjugation exists, and the lattice is correspondingly small.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is</p>
+<p>$$
+Z = a + \varepsilon b, \qquad a, b \in R,
+$$</p>
+<p>with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, norm form $N(Z) = Z\bar{Z} = a^2$, and maximal ideal $\mathfrak{m} = (\varepsilon)$. The two distinguished submodules are</p>
+<p>$$
+R_{\mathbb{D}'} = R\cdot 1 = \{Z : \bar{Z} = Z\}, \qquad \varepsilon R_{\mathbb{D}'} = \varepsilon R = \{Z : \bar{Z} = -Z\}.
+$$</p>
+<p>The scope boundaries are these. This article owns the submodule lattice and the relations among the submodules. The ideals and the Peirce-type decomposition belong to <em>Dual-Numbers Ideals and the Maximal Ideal</em>; the classification of the zero divisors belongs to <em>Dual-Numbers Zero Divisors</em>. The submodules are treated here as submodules, that is, as $R$-linear objects, and the reader is referred elsewhere for their ideal-theoretic role.</p>
+<h2 id="the-decompositions">The Decompositions</h2>
+<h3 id="the-conjugate-decomposition">The Conjugate Decomposition</h3>
+<p>Dual conjugation $\bar{\cdot}$ is an involution of $\mathbb{D}'_R$ with eigenvalues $+1$ and $-1$, and its eigenspace decomposition is</p>
+<p>$$
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Z = \underbrace{a}_{+1} + \underbrace{\varepsilon b}_{-1}.
+$$</p>
+<p>The two projections are $Z \mapsto \tfrac{1}{2}(Z + \bar{Z}) = \operatorname{Re}(Z)$ and $Z \mapsto \tfrac{1}{2}(Z - \bar{Z}) = \operatorname{Inf}(Z)\varepsilon$.</p>
+<h3 id="the-realinfinitesimal-decomposition">The Real–Infinitesimal Decomposition</h3>
+<p>The same decomposition is the <strong>real–infinitesimal decomposition</strong>, written in the coordinates of the basis:</p>
+<p>$$
+Z = a + \varepsilon b, \qquad a \in R_{\mathbb{D}'}, \quad \varepsilon b \in \varepsilon R_{\mathbb{D}'}.
+$$</p>
+<p>It is not a second decomposition but the same one: the two names record the two ways of describing the same pair of eigenspaces.</p>
+<h3 id="there-is-no-third-decomposition">There Is No Third Decomposition</h3>
+<p>The biquaternion algebra carries four conjugations, and their eigenspaces generate six distinct subspaces, which is why <em>Biquaternion Relations Between Subspaces</em> has a lattice to organize. Over a field $k$, $\mathbb{D}'_k$ has exactly one nontrivial involution, namely dual conjugation, and hence exactly one pairing of eigenspaces. There is no analogue of the quaternion conjugation $\bar{\cdot}$, of the complex conjugation ${}^{*}$ distinct from it, or of the Hermitian and anti-Hermitian subspaces. So the single decomposition above is the whole of the submodule structure.</p>
+<h2 id="the-two-submodules-at-a-glance">The Two Submodules at a Glance</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Submodule</th>
+<th>Description</th>
+<th>$R$-rank</th>
+<th>Generator</th>
+<th>Square in itself</th>
+<th>Closed under $Z \mapsto \varepsilon Z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_{\mathbb{D}'}$</td>
+<td>$+1$-eigenspace of $\bar{\cdot}$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>yes (it is a subalgebra)</td>
+<td>no ($\varepsilon \notin R_{\mathbb{D}'}$)</td>
+</tr>
+<tr>
+<td>$\varepsilon R_{\mathbb{D}'}$</td>
+<td>$-1$-eigenspace of $\bar{\cdot}$</td>
+<td>$1$</td>
+<td>$\varepsilon$</td>
+<td>yes (it squares to $0$)</td>
+<td>yes (it is an ideal)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two submodules have the same rank, and they differ in every structural respect that matters: one contains the identity and is a subalgebra, the other is nilpotent and is an ideal.</p>
+<h3 id="the-basis-and-the-dimension">The Basis and the Dimension</h3>
+<p><strong>Proposition.</strong> $\{1, \varepsilon\}$ is an $R$-basis of $\mathbb{D}'_R$, and $\{1\}$, $\{\varepsilon\}$ are $R$-bases of $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$ respectively. Hence $\dim_R R_{\mathbb{D}'} = \dim_R \varepsilon R_{\mathbb{D}'} = 1$ and $\dim_R \mathbb{D}'_R = 2$.</p>
+<p><strong>Proof.</strong> $R[\varepsilon]/(\varepsilon^2)$ has $\{1, \varepsilon\}$ as a free basis by construction, and the two eigenspaces are spanned by the two basis vectors. $\square$</p>
+<h2 id="the-coordinate-blocks">The Coordinate Blocks</h2>
+<p>With respect to the basis $(1, \varepsilon)$, the group $\mathbb{D}'_R$ is the free module $R \oplus R$, and a general element is the coordinate pair $(a, b)$:</p>
+<p>$$
+Z = a + \varepsilon b \;\longleftrightarrow\; (a, b) \in R \oplus R.
+$$</p>
+<p>The two submodules are the coordinate axes: $R_{\mathbb{D}'} = \{b = 0\}$ and $\varepsilon R_{\mathbb{D}'} = \{a = 0\}$. Multiplication in coordinates is</p>
+<p>$$
+(a, b)(c, d) = (a c,\; a d + b c),
+$$</p>
+<p>the truncated polynomial product. The conjugation is the coordinatewise sign change $(a, b) \mapsto (a, -b)$, and the norm form is $N(a, b) = a^2$, the square of the first coordinate. So the submodule structure is the coordinate structure of the free module $R^2$ together with the diagonal sign action of the involution.</p>
+<h2 id="the-intersections">The Intersections</h2>
+<p><strong>Proposition.</strong> $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = \{0\}$; this is the only intersection of distinct positive-dimensional submodules, and it is the intersection of the two eigenspaces of an involution.</p>
+<p><strong>Proof.</strong> An element of the intersection has $b = 0$ and $a = 0$, hence is $0$. $\square$</p>
+<p><strong>Proposition.</strong> The intersections with the maximal ideal are</p>
+<p>$$
+R_{\mathbb{D}'} \cap \mathfrak{m} = \{0\}, \qquad \varepsilon R_{\mathbb{D}'} \cap \mathfrak{m} = \varepsilon R_{\mathbb{D}'}.
+$$</p>
+<p><strong>Proof.</strong> $\mathfrak{m} = \varepsilon R_{\mathbb{D}'}$, so the second identity is immediate; the first is the preceding proposition. $\square$</p>
+<p>So the maximal ideal coincides with one of the two submodules and meets the other only at the origin.</p>
+<h2 id="the-sums">The Sums</h2>
+<p><strong>Proposition.</strong> $R_{\mathbb{D}'} + \varepsilon R_{\mathbb{D}'} = \mathbb{D}'_R$, and the sum is direct. The maximal ideal satisfies $\mathfrak{m} + R_{\mathbb{D}'} = \mathbb{D}'_R$.</p>
+<p><strong>Proof.</strong> Direct from the basis $\{1, \varepsilon\}$ and the identity $\mathfrak{m} = \varepsilon R_{\mathbb{D}'}$. $\square$</p>
+<p><strong>Corollary.</strong> Every element of $\mathbb{D}'_R$ is uniquely a sum of an element of $R_{\mathbb{D}'}$ and an element of $\varepsilon R_{\mathbb{D}'}$; the uniqueness is the statement that the sum is direct, and it is equivalent to the intersection being zero.</p>
+<h2 id="the-involutions-as-sign-patterns">The Involutions as Sign Patterns</h2>
+<p>An $R$-linear involution $s$ that is also an algebra automorphism fixes $1$ and, by the automorphism theorem of <em>Dual-Numbers Automorphisms and Derivations</em>, is $\varphi_c$ with $\varphi_c(\varepsilon) = \varepsilon c$ for some $c \in R^\times$; it is an involution exactly when $c^2 = 1$. Over a field (or, more generally, an integral domain) this gives $c = \pm 1$, so the involutions are the sign patterns</p>
+<p>$$
+(+,+) : (a, b) \mapsto (a, b) \qquad \text{(identity)}, \qquad (+,-) : (a, b) \mapsto (a, -b) \qquad \text{(dual conjugation)}.
+$$</p>
+<p>There are exactly two over a field, and the second is the unique nontrivial one; over a general commutative ring there may be further involutions, one for every unit $c$ with $c^2 = 1$. The biquaternion algebra has four conjugations, whose sign patterns on the six subspaces fill a richer table; the reason for the difference is that $\mathbb{D}'_R$ has only one unit $\varepsilon$ of square zero up to scaling, whereas $\mathbb{B}$ has the two independent quaternion units and the scalar imaginary, giving four independent sign choices.</p>
+<p><strong>Remark.</strong> The sign pattern $(+,+)$ fixes both submodules pointwise, and $(+,-)$ fixes $R_{\mathbb{D}'}$ pointwise while negating $\varepsilon R_{\mathbb{D}'}$. Only the diagonal entries are free; an automorphism of $\mathbb{D}'_R$ cannot exchange the two submodules, because $1$ must be fixed and $\varepsilon$ must go to a multiple of $\varepsilon$. This is the submodule-theoretic content of the automorphism group $\operatorname{Aut}(\mathbb{D}'_R) \cong R^\times$ computed in <em>Dual-Numbers Automorphisms and Derivations</em>.</p>
+<h2 id="how-the-operations-act-on-the-splits">How the Operations Act on the Splits</h2>
+<h3 id="multiplication-by-math102">Multiplication by $\varepsilon$</h3>
+<p>The operator $E = \varepsilon\cdot$ acts on the two submodules as</p>
+<p>$$
+E : R_{\mathbb{D}'} \longrightarrow \varepsilon R_{\mathbb{D}'}, \qquad a \mapsto \varepsilon a, \qquad E : \varepsilon R_{\mathbb{D}'} \longrightarrow 0, \qquad \varepsilon b \mapsto 0.
+$$</p>
+<p>So $E$ has $\ker E = \varepsilon R_{\mathbb{D}'}$ and $\operatorname{im}E = \varepsilon R_{\mathbb{D}'}$: the kernel and the image coincide. This is the submodule form of the nilpotence $\mathfrak{m}^2 = 0$.</p>
+<h3 id="the-norm-form-on-the-splits">The Norm Form on the Splits</h3>
+<p>The norm form is additive on the direct sum and depends only on the first summand:</p>
+<p>$$
+N(a + \varepsilon b) = N(a) + N(\varepsilon b) = a^2 + 0 = a^2.
+$$</p>
+<p>On the two submodules,</p>
+<p>$$
+N(R_{\mathbb{D}'}) \subseteq R_{\mathbb{D}'}, \qquad N(\varepsilon R_{\mathbb{D}'}) = 0.
+$$</p>
+<p>So the norm form restricts to a multiplicative form on the real submodule and vanishes identically on the infinitesimal submodule; this is the submodule statement of the degeneracy of $N$.</p>
+<h3 id="the-product-and-the-bracket">The Product and the Bracket</h3>
+<p>Since $\mathbb{D}'_R$ is commutative, the commutator bracket vanishes: $[Z, W] = ZW - WZ = 0$ for all $Z, W$. The product respects the splits in the sense that</p>
+<p>$$
+R_{\mathbb{D}'} \cdot R_{\mathbb{D}'} \subseteq R_{\mathbb{D}'}, \qquad R_{\mathbb{D}'} \cdot \varepsilon R_{\mathbb{D}'} \subseteq \varepsilon R_{\mathbb{D}'}, \qquad \varepsilon R_{\mathbb{D}'} \cdot \varepsilon R_{\mathbb{D}'} = 0.
+$$</p>
+<p>So the real submodule is a subalgebra, the infinitesimal submodule is an ideal, and the product of two infinitesimal elements vanishes.</p>
+<h2 id="worked-verifications">Worked Verifications</h2>
+<h3 id="the-decomposition">The Decomposition</h3>
+<p>For $Z = 2 + 3\varepsilon$ the conjugate decomposition is $Z = 2 + 3\varepsilon$ with $2 \in R_{\mathbb{D}'}$ and $3\varepsilon \in \varepsilon R_{\mathbb{D}'}$; the projections are $\tfrac{1}{2}(Z + \bar{Z}) = 2$ and $\tfrac{1}{2}(Z - \bar{Z}) = 3\varepsilon$.</p>
+<h3 id="an-intersection">An Intersection</h3>
+<p>$R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = \{0\}$: the element $a + \varepsilon b$ lies in both submodules only if $b = 0$ and $a = 0$.</p>
+<h3 id="a-pair-that-spans-the-algebra">A Pair That Spans the Algebra</h3>
+<p>$1 \in R_{\mathbb{D}'}$ and $\varepsilon \in \varepsilon R_{\mathbb{D}'}$ are linearly independent and span $\mathbb{D}'$.</p>
+<h3 id="a-mixed-element-and-its-blocks">A Mixed Element and Its Blocks</h3>
+<p>For $Z = -4 + \varepsilon$ the blocks are $\operatorname{Re}(Z) = -4$ and $\operatorname{Inf}(Z)\varepsilon = \varepsilon$; the norm form is $N(Z) = (-4)^2 = 16$, read from the real block alone.</p>
+<h2 id="summary">Summary</h2>
+<p>The dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ carries exactly one nontrivial involution, dual conjugation, and hence exactly one decomposition into eigenspaces,</p>
+<p>$$
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'},
+$$</p>
+<p>the real and infinitesimal submodules, of $R$-rank one each. The only intersection of the two positive-dimensional submodules is $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = 0$, and their sum is the whole algebra; the maximal ideal $\mathfrak{m} = \varepsilon R_{\mathbb{D}'}$ coincides with the infinitesimal submodule and meets the real submodule only at the origin. Multiplication by $\varepsilon$ has kernel and image both equal to $\varepsilon R_{\mathbb{D}'}$, the submodule form of $\mathfrak{m}^2 = 0$; the norm form restricts multiplicatively to $R_{\mathbb{D}'}$ and vanishes on $\varepsilon R_{\mathbb{D}'}$. The lattice of six subspaces that organizes the biquaternion article has no analogue here: with a single nontrivial involution there are only two submodules and the two sign patterns $(+,+)$ and $(+,-)$, so a six-subspace lattice is unavailable for structural reasons and not for lack of interest.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$</td>
+<td>Dual-number algebra over $R$; $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$</td>
+<td>Dual-number algebra over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$Z = a + \varepsilon b$</td>
+<td>General dual number</td>
+</tr>
+<tr>
+<td>$a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$</td>
+<td>Real and infinitesimal parts</td>
+</tr>
+<tr>
+<td>$\bar{Z} = a - \varepsilon b$</td>
+<td>Dual conjugation, the unique nontrivial involution</td>
+</tr>
+<tr>
+<td>$R_{\mathbb{D}'} = R\cdot 1$</td>
+<td>Real submodule, $+1$-eigenspace of $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\varepsilon R_{\mathbb{D}'} = \varepsilon R$</td>
+<td>Infinitesimal submodule, $-1$-eigenspace of $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{m} = (\varepsilon)$</td>
+<td>Maximal ideal, equal to $\varepsilon R_{\mathbb{D}'}$</td>
+</tr>
+<tr>
+<td>$N(Z) = a^2$</td>
+<td>Norm form, vanishes on $\varepsilon R_{\mathbb{D}'}$</td>
+</tr>
+<tr>
+<td>$E = \varepsilon\cdot$</td>
+<td>Nilpotent operator, $\ker E = \operatorname{im}E = \varepsilon R_{\mathbb{D}'}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Eduard Study, <em>Geometrie der Dynamen</em> (Teubner, Leipzig, 1903), for the decomposition of the dual-number algebra into its real and infinitesimal parts.</li>
+<li>I. M. Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, New York, 1968), for the submodule structure of the two-dimensional real algebras.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, Natick, 2003), for the subalgebra and ideal lattices of the low-dimensional real algebras.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, New York, 2001), for eigenspace decompositions of involutions and their relation to Peirce decompositions.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, Berlin, 1991), for the restriction of a quadratic form to a subspace and to its radical.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

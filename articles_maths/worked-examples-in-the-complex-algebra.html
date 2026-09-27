@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples in the Complex Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-in-the-complex-algebra"><strong>Worked Examples in the Complex Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the computed companion to the structural articles of the complex algebra. Where <em>Complex Algebra</em> states the definitions and proves the general properties, and <em>Complex Subspaces</em>, <em>Complex Norm and Invertibility</em>, <em>Complex Polar Representation</em> and <em>Complex Automorphisms and Derivations</em> develop them, the present article exhibits every one of those structures on explicit elements, so that the general statements can be read against a concrete computation.</p>
+<p>The elements used throughout are</p>
+<p>$$
+Z = 3 + 4i, \qquad W = 1 - 2i,
+$$</p>
+<p>chosen because their arithmetic is exact and their norm forms are small squares and small integers: $N(Z) = 25$ and $N(W) = 5$, so that the inverse, the polar decomposition and the Galois action all display rational data. Where a statement needs a degenerate example, the element $0$ and the real and imaginary points of the previous articles are used. The conventions are those of <em>Complex Algebra</em>: basis $1$, $i$, $i^2 = -1$, involution $\bar{Z} = a - bi$, norm form $N(Z) = Z\bar{Z} = a^2+b^2$.</p>
+<p>Every numerical value below is recomputed exactly; where a trigonometric value is not rational it is given to the stated number of decimals and the exact replacement is indicated.</p>
+<h2 id="the-algebra-on-concrete-elements">The Algebra on Concrete Elements</h2>
+<p><strong>Sum, difference and product.</strong> With $Z = 3+4i$ and $W = 1-2i$,</p>
+<p>$$
+Z + W = 4 + 2i, \qquad Z - W = 2 + 6i,
+$$</p>
+<p>and, applying $(a+bi)(c+di) = (ac-bd) + (ad+bc)i$,</p>
+<p>$$
+Z W = (3+4i)(1-2i) = (3\cdot 1 - 4\cdot(-2)) + (3\cdot(-2) + 4\cdot 1)i = 11 - 2i .
+$$</p>
+<p>The reversed product is</p>
+<p>$$
+W Z = (1-2i)(3+4i) = (1\cdot 3 - (-2)\cdot 4) + (1\cdot 4 + (-2)\cdot 3)i = 11 - 2i,
+$$</p>
+<p>equal to $ZW$, the concrete form of commutativity.</p>
+<p><strong>Powers and the norm under multiplication.</strong> The square of $Z$ is</p>
+<p>$$
+Z^2 = (3+4i)^2 = 9 + 24i + 16 i^2 = -7 + 24i,
+$$</p>
+<p>with</p>
+<p>$$
+N(Z^2) = (-7)^2 + 24^2 = 49 + 576 = 625 = 25^2 = N(Z)^2,
+$$</p>
+<p>the multiplicativity of the norm form on a single element. In the same way $N(ZW) = N(11-2i) = 121+4 = 125 = 25 \cdot 5 = N(Z) N(W)$.</p>
+<p><strong>Associativity and distributivity</strong> are illustrated by the two products above agreeing and by $(Z+W)^2 = Z^2 + 2ZW + W^2$, which is a computation of the same rules and needs no separate display.</p>
+<h2 id="the-two-involutions-on-concrete-elements">The Two Involutions on Concrete Elements</h2>
+<p>The complex algebra carries the identity and complex conjugation.</p>
+<p><strong>The identity.</strong> $\operatorname{id}(Z) = 3+4i = Z$ and $\operatorname{id}(W) = W$. The identity fixes every element.</p>
+<p><strong>Complex conjugation.</strong> $\bar{Z} = 3-4i$ and $\bar{W} = 1+2i$. Conjugation is an involution:</p>
+<p>$$
+\overline{\bar{Z}} = \overline{3-4i} = 3+4i = Z,
+$$</p>
+<p>and it is an automorphism of the algebra:</p>
+<p>$$
+\overline{Z W} = \overline{11-2i} = 11+2i, \qquad \bar{Z}\,\bar{W} = (3-4i)(1+2i) = 3 + 6i - 4i - 8i^2 = 11 + 2i,
+$$</p>
+<p>the two values agreeing. In particular the norm form is invariant: $N(\bar{Z}) = 3^2 + (-4)^2 = 25 = N(Z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>$\operatorname{id}$</th>
+<th>$\bar{\cdot}$</th>
+<th>$\bar{\cdot}$ applied twice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z = 3+4i$</td>
+<td>$3+4i$</td>
+<td>$3-4i$</td>
+<td>$3+4i$</td>
+</tr>
+<tr>
+<td>$W = 1-2i$</td>
+<td>$1-2i$</td>
+<td>$1+2i$</td>
+<td>$1-2i$</td>
+</tr>
+<tr>
+<td>$ZW = 11-2i$</td>
+<td>$11-2i$</td>
+<td>$11+2i$</td>
+<td>$11-2i$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-subspaces-on-concrete-elements">The Two Subspaces on Concrete Elements</h2>
+<p>The fixed-point subspace of conjugation is the real axis $\mathbb{R}_{\mathbb{C}}$, and its anti-fixed subspace is the imaginary axis $i\mathbb{R}_{\mathbb{C}}$.</p>
+<p><strong>The real subspace.</strong> An element is fixed by conjugation exactly when its imaginary part vanishes. For $Z$ and $W$,</p>
+<p>$$
+\bar{Z} = Z \iff 3-4i = 3+4i \iff 4 = 0, \quad \text{false},
+$$</p>
+<p>so $Z \notin \mathbb{R}_{\mathbb{C}}$; the real element $3$ and the real scalar part of $W$, namely $1$, do lie in $\mathbb{R}_{\mathbb{C}}$, with $\overline{3} = 3$.</p>
+<p><strong>The imaginary subspace.</strong> An element is anti-fixed exactly when its real part vanishes. For $Z$ and $W$,</p>
+<p>$$
+\bar{Z} = -Z \iff 3-4i = -3-4i \iff 3 = 0, \quad \text{false},
+$$</p>
+<p>so $Z \notin i\mathbb{R}_{\mathbb{C}}$; the imaginary multiples $4i$ and $-2i$ do lie in $i\mathbb{R}_{\mathbb{C}}$, with $\overline{4i} = -4i$.</p>
+<p><strong>A product leaving the subspace.</strong> The product of the two anti-fixed elements $4i$ and $-2i$ is</p>
+<p>$$
+(4i)(-2i) = -8 i^2 = 8 \in \mathbb{R}_{\mathbb{C}},
+$$</p>
+<p>which is fixed and not anti-fixed, exhibiting the failure of $i\mathbb{R}_{\mathbb{C}}$ to be closed under multiplication.</p>
+<h2 id="the-decompositions-worked">The Decompositions, Worked</h2>
+<p><strong>The real and imaginary parts.</strong> The eigencomponents of conjugation are</p>
+<p>$$
+Z_+ = \tfrac{1}{2}(Z + \bar{Z}) = \tfrac{1}{2}\bigl((3+4i)+(3-4i)\bigr) = 3 \in \mathbb{R}_{\mathbb{C}},
+$$</p>
+<p>$$
+Z_- = \tfrac{1}{2}(Z - \bar{Z}) = \tfrac{1}{2}\bigl((3+4i)-(3-4i)\bigr) = 4i \in i\mathbb{R}_{\mathbb{C}},
+$$</p>
+<p>with $Z_+ + Z_- = 3+4i = Z$. For $W$ the same computation gives $W_+ = 1$ and $W_- = -2i$, again summing to $W$. The two subspaces meet only in $0$: the element $Z_+ = 3$ is not a multiple of $i$ unless $3 = 0$.</p>
+<p><strong>The norm form on the pieces.</strong> $N(Z_+) = 3^2 = 9$ and $N(Z_-) = 4^2 = 16$, and</p>
+<p>$$
+N(Z_+) + N(Z_-) = 9 + 16 = 25 = N(Z),
+$$</p>
+<p>the Pythagorean instance of the definite decomposition; for $W$, $N(W_+) + N(W_-) = 1 + 4 = 5 = N(W)$.</p>
+<h2 id="the-norm-criterion-for-a-unit-worked">The Norm Criterion for a Unit, Worked</h2>
+<p><strong>A unit.</strong> The norm form of $Z$ is $N(Z) = 3^2 + 4^2 = 25 \neq 0$, so $Z$ is a unit, and the inverse formula gives</p>
+<p>$$
+Z^{-1} = \frac{\bar{Z}}{N(Z)} = \frac{3-4i}{25} = 0.12 - 0.16 i .
+$$</p>
+<p>The verification is exact:</p>
+<p>$$
+Z Z^{-1} = (3+4i)\left(\frac{3}{25} - \frac{4}{25} i\right) = \frac{(3+4i)(3-4i)}{25} = \frac{25}{25} = 1 .
+$$</p>
+<p><strong>A second unit.</strong> $N(W) = 1^2 + (-2)^2 = 5 \neq 0$, so $W$ is a unit, and</p>
+<p>$$
+W^{-1} = \frac{\bar{W}}{N(W)} = \frac{1+2i}{5} = 0.2 + 0.4 i, \qquad W W^{-1} = \frac{(1-2i)(1+2i)}{5} = \frac{5}{5} = 1 .
+$$</p>
+<p><strong>The criterion in the product.</strong> The product $ZW = 11-2i$ has $N(ZW) = 125 \neq 0$ and is a unit, consistent with the general fact that the product of two units is a unit. Its inverse is computed in the two ways and the results agree:</p>
+<p>$$
+(ZW)^{-1} = W^{-1} Z^{-1} = (0.2+0.4i)(0.12-0.16i) = (0.024+0.064) + (0.048-0.032)i = 0.088 + 0.016 i,
+$$</p>
+<p>$$
+(ZW)^{-1} = \frac{\overline{ZW}}{N(ZW)} = \frac{11+2i}{125} = 0.088 + 0.016 i .
+$$</p>
+<p><strong>The non-units.</strong> The only element of vanishing norm form is $0$, since $a^2+b^2 = 0$ forces $a = b = 0$. The zero-divisor class is empty, and there is no nonzero worked example of it.</p>
+<h2 id="the-polar-decomposition-worked">The Polar Decomposition, Worked</h2>
+<p><strong>The element $Z$.</strong> The modulus is $r = \sqrt{N(Z)} = 5$ and the unit factor is</p>
+<p>$$
+u = \frac{Z}{r} = \frac{3+4i}{5} = 0.6 + 0.8 i, \qquad N(u) = \frac{N(Z)}{r^2} = \frac{25}{25} = 1,
+$$</p>
+<p>so $u$ lies on the unit circle. Its argument is</p>
+<p>$$
+\theta = \arg Z = \arctan\frac{4}{3} = 0.9272952180 \ \text{rad} = 53.13010235^\circ,
+$$</p>
+<p>and the reconstruction $u = \cos\theta + i\sin\theta$ gives $0.6 + 0.8 i$ to machine precision. The polar form is therefore $Z = 5(0.6+0.8i) = 5 e^{i\theta}$.</p>
+<p><strong>The doubling of the angle.</strong> Squaring the unit factor,</p>
+<p>$$
+u^2 = (0.6+0.8i)^2 = 0.36 + 0.96 i + 0.64 i^2 = -0.28 + 0.96 i,
+$$</p>
+<p>which is $e^{2i\theta} = \cos 2\theta + i\sin 2\theta$ with $2\theta = 1.8545904360$ rad, since $\cos 2\theta = -0.28$ and $\sin 2\theta = 0.96$.</p>
+<p><strong>The element $W$.</strong> Here $r = \sqrt{N(W)} = \sqrt{5}$ and</p>
+<p>$$
+u = \frac{1-2i}{\sqrt{5}} = 0.4472135955 - 0.8944271910 i, \qquad \theta = \arg W = \arctan(-2) = -1.1071487178 \ \text{rad},
+$$</p>
+<p>with $u = \cos\theta + i\sin\theta$ and $\theta$ on the principal branch $(-\pi,\pi]$. Squaring gives $u^2 = -0.6 - 0.8i$, which is $e^{2i\theta}$ at $2\theta = -2.2142974356$ rad.</p>
+<p><strong>Uniqueness.</strong> The modulus is unique and positive, and the unit factor is unique; only the angle is a class, in $\mathbb{R}/2\pi\mathbb{Z}$.</p>
+<h2 id="the-galois-action-worked">The Galois Action, Worked</h2>
+<p>The unique nontrivial $\mathbb{R}$-automorphism of $\mathbb{C}$ is complex conjugation, written $\sigma = \bar{\cdot}$, and <em>Complex Automorphisms and Derivations</em> and <em>Galois Theory of ℂ/ℝ</em> treat its automorphism theory. On the worked elements,</p>
+<p>$$
+\sigma(Z) = \bar{Z} = 3-4i, \qquad \sigma(W) = \bar{W} = 1+2i, \qquad \sigma(ZW) = \overline{11-2i} = 11+2i .
+$$</p>
+<p>The automorphism property is exhibited by</p>
+<p>$$
+\sigma(Z)\sigma(W) = (3-4i)(1+2i) = 3+6i-4i-8i^2 = 11+2i = \sigma(ZW),
+$$</p>
+<p>and the norm form is preserved, $N(\sigma(Z)) = 25 = N(Z)$. The fixed points are exactly the real axis: $\sigma(Z) = Z$ would require $4 = 0$, so $Z$ is moved; $\sigma(3) = 3$ and $\sigma$ fixes every real number. The action is not $\mathbb{C}$-linear: $\sigma(i\cdot 1) = -i$ while $i\,\sigma(1) = i$, so $\sigma$ conjugates the scalar $i$, which is the concrete form of the conjugate-linearity of complex conjugation over $\mathbb{C}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The article exhibits the structures of the complex algebra on the elements $Z = 3+4i$ and $W = 1-2i$. Their product is $ZW = 11-2i$ and their square norms are $N(Z) = 25$, $N(W) = 5$, $N(ZW) = 125$, so the norm form is multiplicative on the worked pair. The identity and complex conjugation are the two involutions; conjugation sends $Z$ to $3-4i$ and $W$ to $1+2i$, is an involution and an algebra automorphism, and fixes exactly the real axis while negating the imaginary axis.</p>
+<p>The eigencomponents of conjugation are $Z_+ = 3 \in \mathbb{R}_{\mathbb{C}}$ and $Z_- = 4i \in i\mathbb{R}_{\mathbb{C}}$, with $N(Z_+)+N(Z_-) = N(Z)$; the product $(4i)(-2i) = 8$ is real and shows that the imaginary subspace is not closed. Both worked elements are units, with inverses $Z^{-1} = (3-4i)/25$ and $W^{-1} = (1+2i)/5$, and $(ZW)^{-1} = \overline{ZW}/125 = (11+2i)/125$; there is no nonzero non-unit because the norm form is definite. The polar decompositions are $Z = 5(0.6+0.8i)$ at $\theta = \arctan(4/3)$ and $W = \sqrt{5}(0.4472-0.8944i)$ at $\theta = \arctan(-2)$, and the doubling $u^2 = e^{2i\theta}$ was checked in both cases. The Galois action $\sigma = \bar{\cdot}$ preserves the product and the norm form on the worked elements and is conjugate-linear over $\mathbb{C}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>the complex algebra, basis $1$, $i$, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$Z = 3+4i$, $W = 1-2i$</td>
+<td>the two worked elements</td>
+</tr>
+<tr>
+<td>$\operatorname{id}, \bar{\cdot}$</td>
+<td>the identity and complex conjugation</td>
+</tr>
+<tr>
+<td>$\sigma = \bar{\cdot}$</td>
+<td>the nontrivial $\mathbb{R}$-automorphism, the Galois action</td>
+</tr>
+<tr>
+<td>$Z_\pm = \tfrac12(Z \pm \bar{Z})$</td>
+<td>the eigencomponents of conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$</td>
+<td>the real and imaginary subspaces</td>
+</tr>
+<tr>
+<td>$N(Z) = Z\bar{Z} = a^2+b^2$</td>
+<td>the norm form</td>
+</tr>
+<tr>
+<td>$Z^{-1} = \bar{Z}/N(Z)$</td>
+<td>the inverse of a nonzero element</td>
+</tr>
+<tr>
+<td>$r = \sqrt{N(Z)}$, $u = Z/r$, $\theta = \arg Z$</td>
+<td>the polar data, $Z = ru = re^{i\theta}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Carl Friedrich Gauss, <em>Theoria residuorum biquadraticorum, Commentatio secunda</em> (Göttingen, 1831), for the geometry of the plane and worked computational examples.</li>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the origin of the worked multiplication rules.</li>
+<li>Israel Nathan Herstein, <em>Topics in Algebra</em>, 2nd edition (Wiley, 1975), for elementary computational practice with complex numbers and field automorphisms.</li>
+<li>Tristan Needham, <em>Visual Complex Analysis</em> (Oxford University Press, 1997), for the polar decomposition and the rotation interpretation of multiplication.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd edition (McGraw-Hill, 1987), for the norm, the modulus and the polar form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

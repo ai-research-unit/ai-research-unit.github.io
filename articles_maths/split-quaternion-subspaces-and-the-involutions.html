@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Subspaces and the Involutions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-subspaces-and-the-involutions"><strong>Split-Quaternion Subspaces and the Involutions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Three linear involutions act on the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$: the conjugation $\bar{\cdot}$, the principal involution $\alpha$, and the reversal $\rho$. Each cuts the algebra into its $+1$ and $-1$ eigenspaces, and the three decompositions together refine the algebra into the pieces on which the analysis of <em>Split-Quaternion Analysis on Subspaces</em> is carried out. This article studies the involutions, their individual eigenspaces, and their common eigenspaces — the finest decomposition they produce.</p>
+<p>The article gives the three involutions and their general properties of linearity and (anti-)automorphism type; the two composition relations among them; the eigenspaces of each involution taken separately; the common eigenspaces of the commuting pair $(\alpha, \rho)$, which is the finest decomposition; the reason one two-dimensional piece of that decomposition does not split further; and the relation to the operators the analysis places on the pieces. The group that the three involutions generate, and the lattice of their fixed spaces, are the subject of the companion article <em>Split-Quaternion Involution Lattice</em>.</p>
+<p><strong>Conventions.</strong> A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$; the norm form is $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$. The scalar and vector subspaces are $S = \mathbb{R}\cdot 1$ and $V = \operatorname{span}\{e_1,e_2,e_3\}$, and the split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$, as in <em>Split-Quaternion Scalar and Vector Subspaces</em> and <em>Split-Quaternion Split-Complex Subspaces</em>.</p>
+<h2 id="the-three-involutions">The Three Involutions</h2>
+<p><strong>Definition.</strong> The <strong>conjugation</strong> is the map $\bar{\cdot}$ with</p>
+<p>$$
+\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3 .
+$$</p>
+<p>The <strong>principal involution</strong> $\alpha$ is the algebra homomorphism defined on the generators by</p>
+<p>$$
+\alpha(e_1) = -e_1, \qquad \alpha(e_2) = -e_2, \qquad \alpha(e_3) = e_3,
+$$</p>
+<p>and the <strong>reversal</strong> $\rho$ is the algebra anti-homomorphism defined by</p>
+<p>$$
+\rho(e_1) = e_1, \qquad \rho(e_2) = e_2, \qquad \rho(e_3) = -e_3 .
+$$</p>
+<p>On a general element,</p>
+<p>$$
+\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \quad
+\alpha(\tilde q) = q_0 - q_1 e_1 - q_2 e_2 + q_3 e_3, \quad
+\rho(\tilde q) = q_0 + q_1 e_1 + q_2 e_2 - q_3 e_3 .
+$$</p>
+<h3 id="linearity-and-antilinearity-automorphism-and-anti-automorphism">Linearity and Antilinearity, Automorphism and Anti-Automorphism</h3>
+<p>All three maps are $\mathbb{R}$-linear involutions: each fixes $\mathbb{R}$ pointwise and satisfies $T^2 = \operatorname{id}$. They differ in how they treat the product.</p>
+<p><strong>Proposition.</strong></p>
+<ul>
+<li>$\alpha$ is an $\mathbb{R}$-<strong>algebra automorphism</strong>: $\alpha(\tilde q y) = \alpha(\tilde q)\alpha(y)$ and $\alpha(1) = 1$.</li>
+<li>$\rho$ is an $\mathbb{R}$-<strong>algebra anti-automorphism</strong>: $\rho(\tilde q y) = \rho(y)\rho(\tilde q)$ and $\rho(1) = 1$.</li>
+<li>$\bar{\cdot}$ is an $\mathbb{R}$-algebra anti-automorphism as well: $\overline{\tilde q y} = \bar{y}\,\bar{\tilde q}$ and $\bar{1} = 1$.</li>
+</ul>
+<p><strong>Proof.</strong> For $\alpha$, it is defined on generators, where the relations are preserved: $\alpha(e_1)^2 = (-e_1)^2 = -1$, $\alpha(e_2)^2 = (-e_2)^2 = +1$, and $\alpha(e_3) = e_3 = e_1 e_2 = \alpha(e_1)\alpha(e_2)$, since $(-e_1)(-e_2) = e_1 e_2$; so $\alpha$ extends to an automorphism. For $\rho$, the products reverse: $\rho(e_1 e_2) = \rho(e_3) = -e_3$, while $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3$, and the other products are similar, so $\rho$ is an anti-automorphism. The conjugation is the composite $\bar{\tilde q} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$, computed below, and the composite of an automorphism with an anti-automorphism is an anti-automorphism. $\square$</p>
+<p>In components $\tilde q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$ the three involutions act by their sign patterns:</p>
+<p>$$
+\bar{\tilde q} = q_0 - q_1e_1 - q_2e_2 - q_3e_3, \quad
+\alpha(\tilde q) = q_0 - q_1e_1 - q_2e_2 + q_3e_3, \quad
+\rho(\tilde q) = q_0 + q_1e_1 + q_2e_2 - q_3e_3 .
+$$</p>
+<h3 id="composition">Composition</h3>
+<p>The three involutions satisfy the <strong>composition relations</strong></p>
+<p>$$
+\bar{\tilde q} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q)),
+$$</p>
+<p>so that, as maps, $\bar{\cdot} = \alpha\rho = \rho\alpha$. Equivalently, $\alpha\bar{\cdot} = \rho$ and $\rho\bar{\cdot} = \alpha$. In particular $\alpha$ and $\rho$ commute, and the set $\{\operatorname{id}, \alpha, \rho, \bar{\cdot}\}$ is closed under composition with every element of order two; it is the Klein four-group. The structure of this group and the way it permutes its members are developed in <em>Split-Quaternion Involution Lattice</em>.</p>
+<h2 id="the-eigenspaces-of-each-involution">The Eigenspaces of Each Involution</h2>
+<p>Each involution $T$ with $T^2 = \operatorname{id}$ is diagonalisable with eigenvalues $\pm 1$, and the algebra splits as the direct sum of its $+1$ and $-1$ eigenspaces.</p>
+<h3 id="the-conjugation">The Conjugation</h3>
+<p>$$
+S = \{\tilde q : \bar{\tilde q} = \tilde q\} = \mathbb{R}\cdot 1, \qquad V = \{\tilde q : \bar{\tilde q} = -\tilde q\} = \operatorname{span}\{e_1,e_2,e_3\}.
+$$</p>
+<p>The fixed space is the scalar line, of dimension $1$; the anti-fixed space is the vector subspace, of dimension $3$. This is the scalar–vector decomposition of <em>Split-Quaternion Scalar and Vector Subspaces</em>.</p>
+<h3 id="the-principal-involution">The Principal Involution</h3>
+<p>$$
+\{\tilde q : \alpha(\tilde q) = \tilde q\} = \operatorname{span}\{1, e_3\} = \mathbb{D}_3, \qquad \{\tilde q : \alpha(\tilde q) = -\tilde q\} = \operatorname{span}\{e_1, e_2\}.
+$$</p>
+<p>Both eigenspaces have dimension $2$. The fixed space is the split-complex plane $\mathbb{D}_3$; the anti-fixed space is the plane $\operatorname{span}\{e_1,e_2\}$, which carries the hyperbolic form $q_1^2 - q_2^2$ of signature $(1,1)$ and is spanned by the two basis elements that anticommute into $\pm e_3$.</p>
+<h3 id="the-reversal">The Reversal</h3>
+<p>$$
+\{\tilde q : \rho(\tilde q) = \tilde q\} = \operatorname{span}\{1, e_1, e_2\}, \qquad \{\tilde q : \rho(\tilde q) = -\tilde q\} = \mathbb{R} e_3 .
+$$</p>
+<p>The fixed space has dimension $3$, and the anti-fixed space is the single line $\mathbb{R} e_3$.</p>
+<h3 id="summary-table">Summary Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>$+1$ eigenspace</th>
+<th>dimension</th>
+<th>$-1$ eigenspace</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$S = \mathbb{R}\cdot 1$</td>
+<td>$1$</td>
+<td>$V = \operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$\operatorname{span}\{1,e_3\} = \mathbb{D}_3$</td>
+<td>$2$</td>
+<td>$\operatorname{span}\{e_1,e_2\}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$\operatorname{span}\{1,e_1,e_2\}$</td>
+<td>$3$</td>
+<td>$\mathbb{R} e_3$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-common-eigenspaces">The Common Eigenspaces</h2>
+<p>Because $\alpha$ and $\rho$ commute, they are simultaneously diagonalisable, and the algebra decomposes into the four common eigenspaces of the pair $(\alpha, \rho)$, indexed by the sign pairs.</p>
+<p><strong>Theorem.</strong> The common eigenspaces of $\alpha$ and $\rho$ are</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \;\oplus\; \operatorname{span}\{e_1, e_2\} \;\oplus\; \mathbb{R} e_3,
+$$</p>
+<p>of dimensions $1, 2, 1$, on which the sign pair $(\alpha, \rho)$ takes the values $(+,+)$, $(-,+)$ and $(+,-)$ respectively. The sign pair $(-,-)$ does not occur.</p>
+<p><strong>Proof.</strong> The common $(+,+)$ space is the intersection of the two fixed spaces $\mathbb{D}_3 \cap \operatorname{span}\{1,e_1,e_2\}$, which consists of elements $q_0 + q_3 e_3 = q_0' e_0 + q_1' e_1 + q_2' e_2$; linear independence forces $q_3 = 0$ and $q_1' = q_2' = 0$, giving $\mathbb{R}\cdot 1$. The $(-,+)$ space is $\operatorname{span}\{e_1,e_2\} \cap \operatorname{span}\{1,e_1,e_2\} = \operatorname{span}\{e_1,e_2\}$. The $(+,-)$ space is $\mathbb{D}_3 \cap \mathbb{R} e_3 = \mathbb{R} e_3$. The $(-,-)$ space is $\operatorname{span}\{e_1,e_2\} \cap \mathbb{R} e_3 = \{0\}$. The three nonzero summands have dimensions $1 + 2 + 1 = 4$, so they exhaust $\mathbb{H}_{\mathrm{s}}$. $\square$</p>
+<h3 id="the-triple-sign-pattern">The Triple Sign Pattern</h3>
+<p>Since the conjugation is the composite $\alpha\rho$, it acts on each common eigenspace of $(\alpha,\rho)$ by the product of the two signs. The three pieces are therefore also common eigenspaces of all three involutions, with sign patterns</p>
+<p>$$
+\mathbb{R}\cdot 1 : (+,+,+), \qquad \operatorname{span}\{e_1,e_2\} : (-,-,+), \qquad \mathbb{R} e_3 : (-,+,-),
+$$</p>
+<p>the entries being the signs of $(\bar{\cdot}, \alpha, \rho)$. The sign pattern $(-,-,-)$ does not occur, and neither does $(+,+,-)$; among the eight patterns, exactly those three with $\text{sign}(\bar{\cdot}) = \text{sign}(\alpha)\text{sign}(\rho)$ are realised, one per piece. This is the finest decomposition of the algebra produced by the three involutions, and it is the one used in <em>Split-Quaternion Relations Between Subspaces</em> and <em>Split-Quaternion Involution Lattice</em>.</p>
+<h3 id="why-the-plane-math129-does-not-split">Why the Plane $\operatorname{span}\{e_1,e_2\}$ Does Not Split</h3>
+<p>The plane $\operatorname{span}\{e_1,e_2\}$ is the largest piece of the common decomposition, of dimension $2$, and none of the three involutions splits it. The reason is that all three act on it by a single scalar: the conjugation acts as $-1$ on the whole of $V \supseteq \operatorname{span}\{e_1,e_2\}$; the principal involution acts as $-1$ because $\alpha(e_1) = -e_1$ and $\alpha(e_2) = -e_2$; and the reversal acts as $+1$ because $\rho(e_1) = e_1$ and $\rho(e_2) = e_2$. An eigenspace of a linear involution carries no further structure that the involution can detect — it acts by one number — so no combination of these involutions can separate $e_1$ from $e_2$. The two directions are distinguished only by structures external to the involution group: the sign of the norm form ($N(e_1) = +1$, $N(e_2) = -1$), which belongs to the geometry, and the split-complex subalgebra structure, since $1$ and $e_2$ span $\mathbb{D}_2$ while $e_1$ alone generates the definite plane $\mathbb{R}[e_1] \cong \mathbb{C}$. The involution group is blind to that distinction, and the plane is the irreducible piece for it.</p>
+<h2 id="the-reduction-of-the-labelled-spaces">The Reduction of the Labelled Spaces</h2>
+<p>The decomposition classifies each of the distinguished subspaces by the signs of the involutions on it:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>$\bar{\cdot}$</th>
+<th>$\alpha$</th>
+<th>$\rho$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}\cdot 1$</td>
+<td>$+$</td>
+<td>$+$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\mathbb{R} e_1$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\mathbb{R} e_2$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\mathbb{R} e_3$</td>
+<td>$-$</td>
+<td>$+$</td>
+<td>$-$</td>
+</tr>
+<tr>
+<td>$\operatorname{span}\{e_1,e_2\}$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2$</td>
+<td>mixed</td>
+<td>mixed</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3$</td>
+<td>mixed</td>
+<td>$+$</td>
+<td>mixed</td>
+</tr>
+<tr>
+<td>$S \oplus V$</td>
+<td>mixed</td>
+<td>mixed</td>
+<td>mixed</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table shows the reduction: the lines $\mathbb{R} e_1$ and $\mathbb{R} e_2$ carry the same sign pattern $(-,-,+)$ as their span, which is why they cannot be separated by the involutions, while the line $\mathbb{R} e_3$ carries the distinct pattern $(-,+,-)$ and is thus the unique line isolated by the involutions.</p>
+<h2 id="the-relation-to-the-analysis-on-subspaces">The Relation to the Analysis on Subspaces</h2>
+<p>Each involution splits the algebra into a <strong>Hermitian part</strong> (the $+1$ eigenspace) and an <strong>anti-Hermitian part</strong> (the $-1$ eigenspace), and the analysis associates a first-order operator to each part, with the inherited form fixing the type of the operator.</p>
+<p><strong>The conjugation.</strong> The split is $S \oplus V$; the Hermitian part $S$ carries the single derivative $\partial_{q_0}$, and the anti-Hermitian part $V$ carries the vector operator $D = e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}$. The square $D^2$ is the wave operator of the restricted form.</p>
+<p><strong>The principal involution.</strong> The split is $\mathbb{D}_3 \oplus \operatorname{span}\{e_1,e_2\}$. The Hermitian part is the split-complex plane $\mathbb{D}_3$ with form $q_0^2 - q_3^2$ of signature $(1,1)$; the anti-Hermitian part is the plane $\operatorname{span}\{e_1,e_2\}$ with form $q_1^2 - q_2^2$, also of signature $(1,1)$. Each is a hyperbolic plane carrying a one-dimensional wave operator.</p>
+<p><strong>The reversal.</strong> The split is $\operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$. The Hermitian part has form $q_0^2 + q_1^2 - q_2^2$ of signature $(2,1)$ and carries a three-dimensional wave operator; the anti-Hermitian part is the line $\mathbb{R} e_3$ with the negative-definite form $-q_3^2$ and carries the single derivative $\partial_{q_3}$.</p>
+<p>The type of each operator — elliptic or hyperbolic — is determined by the signature of the form on the piece and by nothing else, and the characteristic variety of a hyperbolic operator is exactly the zero divisor set of the piece. The full development is in <em>Split-Quaternion Analysis on Subspaces</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (an element with a clean sign pattern).</strong> For $\tilde q = e_3$ the triple sign pattern is $(\bar{\cdot},\alpha,\rho) = (-,+,-)$: indeed $\bar{e_3} = -e_3$, $\alpha(e_3) = e_3$, $\rho(e_3) = -e_3$. The line $\mathbb{R} e_3$ is thus the unique line fixed by $\alpha$ and negated by $\rho$.</p>
+<p><strong>Example (an element with the mixed plane pattern).</strong> For $\tilde q = e_1 + e_2$, the image under the involutions is $\bar{\tilde q} = -e_1 - e_2$, $\alpha(\tilde q) = -e_1 - e_2$, $\rho(\tilde q) = e_1 + e_2$, so the triple sign pattern is $(-,-,+)$, the same as for $e_1$ and for $e_2$ separately. The three vectors $e_1, e_2, e_1 + e_2$ are all in the same common eigenspace, which exhibits the failure to split the plane.</p>
+<p><strong>Example (composition).</strong> For $\tilde q = e_1 + e_3$: $\alpha(\rho(\tilde q)) = \alpha(e_1 - e_3) = -e_1 - e_3 = \bar{\tilde q}$, and $\rho(\alpha(\tilde q)) = \rho(-e_1 + e_3) = -e_1 - e_3 = \bar{\tilde q}$, verifying $\bar{\cdot} = \alpha\rho = \rho\alpha$ on this element.</p>
+<p><strong>Example (the three involutions on a general element).</strong> For $\tilde q = 1 + e_1 + e_2 + e_3$ the three images are $\bar{\tilde q} = 1 - e_1 - e_2 - e_3$, $\alpha(\tilde q) = 1 - e_1 - e_2 + e_3$ and $\rho(\tilde q) = 1 + e_1 + e_2 - e_3$, exhibiting the sign patterns $(+,+,+)$ for the scalar, $(-,-,-)$ for the conjugation, $(-,-,+)$ for the principal involution and $(+,+,-)$ for the reversal.</p>
+<h2 id="summary">Summary</h2>
+<p>Three $\mathbb{R}$-linear involutions act on $\mathbb{H}_{\mathrm{s}}$: the conjugation $\bar{\cdot}$ (an anti-automorphism), the principal involution $\alpha$ (an automorphism), and the reversal $\rho$ (an anti-automorphism). They satisfy $\bar{\cdot} = \alpha\rho = \rho\alpha$, so $\alpha$ and $\rho$ commute and the three generate the Klein four-group.</p>
+<p>Each involution splits the algebra into its $+1$ and $-1$ eigenspaces: the conjugation gives $S$ (dimension $1$) and $V$ (dimension $3$); the principal involution gives the split-complex plane $\operatorname{span}\{1,e_3\}$ and the plane $\operatorname{span}\{e_1,e_2\}$, both of dimension $2$; the reversal gives the three-dimensional space $\operatorname{span}\{1,e_1,e_2\}$ and the line $\mathbb{R} e_3$. The common eigenspaces of the commuting pair $(\alpha,\rho)$ give the finest decomposition</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{e_1,e_2\} \oplus \mathbb{R} e_3,
+$$</p>
+<p>with triple sign patterns $(\bar{\cdot},\alpha,\rho)$ equal to $(+,+,+)$, $(-,-,+)$ and $(-,+,-)$. The plane $\operatorname{span}\{e_1,e_2\}$ does not split, because all three involutions act on it by a single scalar; only the norm form and the subalgebra structure distinguish $e_1$ from $e_2$. Each eigenspace carries the operator of <em>Split-Quaternion Analysis on Subspaces</em>, of type fixed by the signature of the inherited form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>the split-quaternion algebra</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>the conjugation, $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the principal involution, $\alpha(e_1)=-e_1$, $\alpha(e_2)=-e_2$, $\alpha(e_3)=e_3$</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>the reversal, $\rho(e_1)=e_1$, $\rho(e_2)=e_2$, $\rho(e_3)=-e_3$</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$S = \mathbb{R}\cdot 1$</td>
+<td>the $+1$ eigenspace of the conjugation</td>
+<td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
+</tr>
+<tr>
+<td>$V = \operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>the $-1$ eigenspace of the conjugation</td>
+<td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2, \mathbb{D}_3$</td>
+<td>the split-complex subspaces $\operatorname{span}\{1,e_2\}$, $\operatorname{span}\{1,e_3\}$</td>
+<td><em>Split-Quaternion Split-Complex Subspaces</em></td>
+</tr>
+<tr>
+<td>$\operatorname{span}\{e_1,e_2\}$</td>
+<td>the unsplittable common $(-,-,+)$ piece</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$</td>
+<td>the vector operator on $V$</td>
+<td><em>Split-Quaternion Analysis on Subspaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for involutions, their eigenspace decompositions and the Peirce-type decompositions they induce.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the grading and reversal involutions of a Clifford algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the conjugation, reversal and grade involutions and their composition rules.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the general theory of involutions on an algebra and their fixed subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

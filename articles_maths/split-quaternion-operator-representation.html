@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Operator Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-operator-representation"><strong>Split-Quaternion Operator Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A split-quaternion acts on the algebra in several ways: by left multiplication, by right multiplication, and by the <strong>adjoint</strong> (or sandwich) action $\tilde q \mapsto g \tilde q g^{-1}$. The first two are linear endomorphisms realizing the algebra in $\operatorname{End}(\mathbb{H}_{\mathrm{s}})$; the third is an algebra automorphism of the algebra, and its restriction to the vector subspace is the Lorentz action of signature $(2,1)$. This article treats these operators, their kernels, the double cover of the Lorentz group they produce, and their action on the distinguished subspaces.</p>
+<p>The article owns the operator realizations: the left and right multiplication operators, the adjoint operator and its automorphism property, its kernel, the Lorentz action on $V$, the double cover of the Lorentz group by the norm-one slice, the table of the action on the distinguished subspaces, and the relation to the polar representation. It relies on <em>Split-Quaternion Rotations and the Lorentz Group</em> for the group-theoretic facts it quotes and on <em>Split-Quaternion Polar Representation</em> for the polar form.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, norm form $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$, inverse $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ for $N(\tilde q) \neq 0$, and the matrix model $\Phi : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$. The vector subspace is $V = \operatorname{span}\{e_1,e_2,e_3\}$ with the restricted form $N|_V = q_1^2 - q_2^2 - q_3^2$ of signature $(2,1)$, and the distinguished subspaces $S, \mathbb{D}_2, \mathbb{D}_3$ are as in <em>Split-Quaternion Relations Between Subspaces</em>. All endomorphisms below are $\mathbb{R}$-linear.</p>
+<h2 id="the-element-as-an-operator-on-the-algebra">The Element as an Operator on the Algebra</h2>
+<p><strong>Definition.</strong> For $\tilde q \in \mathbb{H}_{\mathrm{s}}$ the <strong>left multiplication operator</strong> and the <strong>right multiplication operator</strong> are</p>
+<p>$$
+L_{\tilde q} : y \mapsto \tilde q y, \qquad R_{\tilde q} : y \mapsto y\tilde q .
+$$</p>
+<p>Both are $\mathbb{R}$-linear endomorphisms of the four-dimensional space $\mathbb{H}_{\mathrm{s}}$, and the maps $\tilde q \mapsto L_{\tilde q}$ and $\tilde q \mapsto R_{\tilde q}$ are $\mathbb{R}$-algebra homomorphisms into $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$; the first is the <strong>left regular representation</strong>.</p>
+<p><strong>Proposition.</strong> Both $L_{\tilde q}$ and $R_{\tilde q}$ have trace $4 \operatorname{Sc}(\tilde q) = 4q_0$ and determinant $N(\tilde q)^2$, and $L_{\tilde q}$ is invertible if and only if $\tilde q$ is a unit, i.e. if and only if $N(\tilde q) \neq 0$.</p>
+<p><strong>Proof.</strong> Under the matrix model, left multiplication by $\tilde q$ on $\mathbb{H}_{\mathrm{s}}$ corresponds to left multiplication by the matrix $\Phi(\tilde q)$ on $M_2(\mathbb{R}) \cong \mathbb{R}^4$, whose eigenvalues are the two eigenvalues $\lambda_1, \lambda_2$ of $\Phi(\tilde q)$, each with multiplicity two. Hence $\operatorname{tr} L_{\tilde q} = 2(\lambda_1 + \lambda_2) = 2\operatorname{tr}\Phi(\tilde q) = 4q_0$ and $\det L_{\tilde q} = (\lambda_1\lambda_2)^2 = \det\Phi(\tilde q)^2 = N(\tilde q)^2$. The eigenvalues satisfy $\lambda^2 - 2q_0\lambda + N(\tilde q) = 0$, so their sum is $2q_0$ and their product is $N(\tilde q)$. Finally $L_{\tilde q}$ is invertible if and only if $\tilde q$ is not a zero divisor (since $L_{\tilde q}(y) = \tilde q y$ and the algebra has no nonzero $\tilde q$ with $\tilde q y = 0$ for all $y$), which holds if and only if $N(\tilde q) \neq 0$. $\square$</p>
+<p><strong>Remark.</strong> The factor $N(\tilde q)^2$ and the doubled eigenvalues are the operator form of the double cover: left multiplication by $\tilde q$ and by $-\tilde q$ have the same determinant and, below, the same adjoint action on $V$.</p>
+<h2 id="the-adjoint-operator">The Adjoint Operator</h2>
+<p><strong>Definition.</strong> For a unit $g$ the <strong>adjoint operator</strong> is</p>
+<p>$$
+\operatorname{Ad}_g : \tilde q \mapsto g \tilde q g^{-1}.
+$$</p>
+<p>Since $g^{-1} = \bar{g}/N(g)$, the operator is $\operatorname{Ad}_g(\tilde q) = g\,\tilde q\,\bar{g}/N(g)$, and for $N(g) = 1$ it is $\operatorname{Ad}_g(\tilde q) = g \tilde q \bar{g}$.</p>
+<p><strong>Theorem.</strong> For every unit $g$, the adjoint operator $\operatorname{Ad}_g$ is an $\mathbb{R}$-<strong>algebra automorphism</strong> of $\mathbb{H}_{\mathrm{s}}$. The map $g \mapsto \operatorname{Ad}_g$ is a group homomorphism from the group of units $\mathbb{H}_{\mathrm{s}}^\times$ onto the inner automorphism group $\operatorname{Inn}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> It is linear (being a composite of linear maps), multiplicative, $\operatorname{Ad}_g(\tilde q y) = g \tilde q y g^{-1} = (g\tilde q g^{-1})(g y g^{-1})$, unital, and invertible with inverse $\operatorname{Ad}_{g^{-1}}$, so it is an automorphism. The homomorphism property $\operatorname{Ad}_{gh} = \operatorname{Ad}_g \operatorname{Ad}_h$ is immediate, and the image is by definition the inner automorphism group, computed under $\Phi$ as the conjugations of $M_2(\mathbb{R})$, which is $\mathrm{PGL}_2(\mathbb{R})$. $\square$</p>
+<h3 id="comparison-with-left-multiplication">Comparison With Left Multiplication</h3>
+<p>Left multiplication $L_g$ is <strong>not</strong> an algebra automorphism: it does not send $1$ to $1$ unless $g = 1$, and under it the scalar line $S$ maps to $\mathbb{R} g$, generally not to $S$. The adjoint operator, by contrast, fixes $S$ pointwise. Left multiplication realises the algebra as operators on itself and has a kernel consisting only of $0$ (the algebra is simple and not a zero divisor ring, so $L_g = 0$ only for $g = 0$); the adjoint operator realises the unit group as automorphisms and has the centre as its kernel.</p>
+<h2 id="the-kernel-and-the-centre">The Kernel and the Centre</h2>
+<p><strong>Proposition.</strong> The kernel of the homomorphism $g \mapsto \operatorname{Ad}_g$ on the group of units is the centre $\mathbb{R}^\times \cdot 1$, consisting of the nonzero scalars.</p>
+<p><strong>Proof.</strong> $\operatorname{Ad}_g = \operatorname{id}$ means $g\tilde q = \tilde q g$ for all $\tilde q$, i.e. $g \in Z(\mathbb{H}_{\mathrm{s}}) = S = \mathbb{R}\cdot 1$. A scalar is a unit exactly when it is nonzero. $\square$</p>
+<p>Consequently the inner automorphism group is $\mathbb{H}_{\mathrm{s}}^\times / \mathbb{R}^\times \cong \mathrm{PGL}_2(\mathbb{R})$, of dimension $3$ over $\mathbb{R}$. Two units induce the same automorphism exactly when they differ by a nonzero scalar, $g' = \lambda g$, so the automorphism sees only the class $[g] \in \mathrm{PGL}_2(\mathbb{R})$. In particular $g$ and $-g$ induce the same automorphism.</p>
+<h2 id="the-action-on-the-vector-subspace-is-the-lorentz-action">The Action on the Vector Subspace Is the Lorentz Action</h2>
+<p>The adjoint operator preserves the vector subspace: if $\tilde q \in V$ then $g\tilde q g^{-1}$ has zero scalar part, because $\operatorname{tr}\Phi(g\tilde q g^{-1}) = \operatorname{tr}\Phi(\tilde q) = 0$. Restricting, $\operatorname{Ad}_g$ acts on $V$.</p>
+<p><strong>Theorem.</strong> For every unit $g$, the restriction $\operatorname{Ad}_g|_V$ preserves the restricted form $N|_V = q_1^2 - q_2^2 - q_3^2$ of signature $(2,1)$. Hence the map</p>
+<p>$$
+\operatorname{Ad} : \mathbb{H}_{\mathrm{s}}^\times \longrightarrow O(2,1), \qquad g \mapsto \operatorname{Ad}_g|_V,
+$$</p>
+<p>is a group homomorphism with kernel $\mathbb{R}^\times$ whose image is $SO(2,1)$, and it is surjective onto $SO(2,1)$; on the norm-one slice it is surjective onto the identity component $\mathrm{SO}^{+}(2,1)$.</p>
+<p><strong>Proof.</strong> The norm form is multiplicative and $\operatorname{Ad}_g$ is an automorphism, so $N(g\tilde q g^{-1}) = N(g)N(\tilde q)N(g^{-1}) = N(\tilde q)$; since $\operatorname{Ad}_g$ preserves $V$, the restricted form is preserved, giving the map to $O(2,1)$. For a unit $g$ the inner automorphism $\operatorname{Ad}_g$ of $M_2(\mathbb{R})$ has determinant $+1$ as a transformation of $\mathfrak{sl}_2(\mathbb{R})$, so the image lies in $SO(2,1)$; the group of units has two components, $\{N>0\}$ and $\{N<0\}$, and the image is the union of their images, which is all of $SO(2,1)$ because $SO(2,1)$ has exactly two components and the image meets both. Restricting to the connected norm-one group $U = \{N=1\}$ gives a connected image containing the identity, hence the identity component $\mathrm{SO}^{+}(2,1)$, as computed in <em>Split-Quaternion Rotations and the Lorentz Group</em>. $\square$</p>
+<p>The generated transformations are the rotations and boosts computed in <em>Split-Quaternion Rotations and the Lorentz Group</em>: the elliptic subgroup from $\mathbb{R}[e_1]$ acts as rotations of the plane $\operatorname{span}\{e_2,e_3\}$ by the doubled angle, and the hyperbolic subgroups from $\mathbb{D}_2, \mathbb{D}_3$ act as boosts of the planes $\operatorname{span}\{e_1,e_3\}$ and $\operatorname{span}\{e_1,e_2\}$.</p>
+<h2 id="the-kernel-on-the-unit-norm-slice-and-the-double-cover">The Kernel on the Unit-Norm Slice and the Double Cover</h2>
+<p>The whole group of units acts with kernel $\mathbb{R}^\times$; on the <strong>unit-norm slice</strong></p>
+<p>$$
+\mathrm{SL}_2(\mathbb{R}) = \{\, g : N(g) = 1 \,\},
+$$</p>
+<p>which is the norm-one group of <em>Split-Quaternion Norm and Invertibility</em>, the kernel is smaller and the cover is two-to-one.</p>
+<p><strong>Theorem (the double cover).</strong> The homomorphism $\operatorname{Ad} : \mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ is surjective and has kernel $\{\pm 1\}$, so</p>
+<p>$$
+\mathrm{SL}_2(\mathbb{R}) / \{\pm 1\} \cong \mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)
+$$</p>
+<p>is a <strong>double cover</strong> of the identity component of the Lorentz group. The nontrivial deck transformation is $g \mapsto -g$.</p>
+<p><strong>Proof.</strong> On the slice the kernel is $(\mathbb{R}^\times\cdot1) \cap \mathrm{SL}_2(\mathbb{R}) = \{\lambda : \lambda^2 = 1\} = \{\pm 1\}$. Surjectivity onto $\mathrm{SO}^{+}(2,1)$ is the previous theorem restricted to the slice, which is the connected component of the identity in the group of units and maps onto the connected component $\mathrm{SO}^{+}(2,1)$ of $SO(2,1)$. $\square$</p>
+<p>The element $-1$ is the unique nontrivial unit of norm $1$ acting trivially on $V$; it represents a full turn of the "rotor" and is the reason the parametrisation by angles is at the doubled angle. In physical language this is the spin double cover, but here it is a statement about $M_2(\mathbb{R})$.</p>
+<h2 id="the-action-on-the-distinguished-subspaces">The Action on the Distinguished Subspaces</h2>
+<p>The adjoint operator acts on the distinguished subspaces as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>image under $\operatorname{Ad}_g$</th>
+<th>preserved?</th>
+<th>remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S = \mathbb{R}\cdot 1$</td>
+<td>$S$</td>
+<td>yes, pointwise</td>
+<td>the centre is fixed</td>
+</tr>
+<tr>
+<td>$V = \operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$V$</td>
+<td>yes</td>
+<td>the Lorentz action of signature $(2,1)$</td>
+</tr>
+<tr>
+<td>a line $\mathbb{R} v \subset V$</td>
+<td>a line $\mathbb{R}\,\operatorname{Ad}_g(v)$</td>
+<td>yes as a class</td>
+<td>the norm sign of $v$ is preserved</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$</td>
+<td>a conjugate split-complex plane</td>
+<td>only if $g$ normalises it</td>
+<td>automorphisms permute the split-complex planes</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$</td>
+<td>a conjugate split-complex plane</td>
+<td>only if $g$ normalises it</td>
+<td>as above</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$</td>
+<td>a minimal left ideal</td>
+<td>only if $g$ normalises it</td>
+<td>idempotents map to idempotents</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two rows are the content of the previous section. The remaining rows record that an automorphism sends a subalgebra to a subalgebra of the same isomorphism type: the split-complex planes are permuted among themselves (as all split Cartan subalgebras of $M_2(\mathbb{R})$ are conjugate), and a unit normalizes a given plane exactly when it preserves the pair of isotropic lines of that plane. The idempotents of the algebra form an orbit-like set under the automorphism group, and the minimal left ideals are permuted accordingly; this is developed alongside the idempotent theory in <em>Split-Quaternion Ideals and Peirce Decomposition</em>.</p>
+<h2 id="orbits-and-invariants">Orbits and Invariants</h2>
+<p>The adjoint action on $V$ has the invariants of the Lorentz action: the norm form $N|_V$ itself, and no others in general position. The adjoint action of the group of units has image the full Lorentz group $\mathrm{SO}(2,1)$, not only its identity component: a negative-norm unit such as $e_2$ acts on $V$ as $\operatorname{diag}(-1,1,-1)$, which has determinant $+1$ and reverses the sheets. The orbits on $V \setminus \{0\}$ are therefore the three <strong>orbit types</strong></p>
+<p>$$
+\{v : N(v) > 0\}, \qquad \{v : N(v) = 0\} \setminus \{0\}, \qquad \{v : N(v) < 0\},
+$$</p>
+<p>the two-sheeted timelike hyperboloid, the light cone minus its vertex, and the spacelike one-sheeted hyperboloid; under the identity component $\mathrm{SO}^{+}(2,1)$, which preserves the sign of the time coordinate $q_1$, the first two sets split into their two sheets and their two nappes, giving five orbits. On the full algebra the invariants of $\operatorname{Ad}_g$ are the scalar part $q_0$ and the norm form $N(\tilde q)$, since the scalar part is fixed by every adjoint operator; the adjoint action therefore acts trivially on $S$ and by the Lorentz action on $V$, with no mixing between the two, because it preserves each.</p>
+<h2 id="the-relation-to-the-polar-representation">The Relation to the Polar Representation</h2>
+<p>Every nonzero split-quaternion has a <strong>polar representation</strong> $\tilde q = \rho\, u$ with $\rho = \sqrt{|N(\tilde q)|} > 0$ and $u$ a unit of norm $\pm 1$, as in <em>Split-Quaternion Polar Representation</em>. In this representation the operator content of $\tilde q$ splits: the positive scalar $\rho$ contributes the scale factor $L_\rho = \rho \operatorname{id}$, and the unit part $u$ contributes the adjoint automorphism $\operatorname{Ad}_u$, which is the Lorentz transformation that the element carries. Left multiplication by $\tilde q$ is therefore the composite of a scaling and an operator whose restriction to $V$ is a Lorentz transformation of signature $(2,1)$; the explicit form of the polar factor for each of the three sign types ($N > 0$, $N < 0$, $N = 0$) is the subject of the polar article, and the operator here carries the action on $V$.</p>
+<h2 id="summary">Summary</h2>
+<p>A split-quaternion $\tilde q$ acts on the algebra by left multiplication $L_{\tilde q}$ and right multiplication $R_{\tilde q}$, both linear endomorphisms of trace $4q_0$ and determinant $N(\tilde q)^2$, and by the adjoint operator $\operatorname{Ad}_g : \tilde q \mapsto g\tilde q g^{-1}$ for a unit $g$. The adjoint operator is an algebra automorphism; the map $g \mapsto \operatorname{Ad}_g$ has kernel the centre $\mathbb{R}^\times$ and image $\operatorname{Inn}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$, so it depends only on the class of $g$ modulo scalars and in particular $\operatorname{Ad}_g = \operatorname{Ad}_{-g}$.</p>
+<p>The adjoint operator preserves the vector subspace $V$ and the restricted form $N|_V = q_1^2-q_2^2-q_3^2$ of signature $(2,1)$, so it realises the Lorentz group; on the unit-norm slice $\mathrm{SL}_2(\mathbb{R})$ the kernel shrinks to $\{\pm 1\}$ and the map is a double cover $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$, with deck transformation $g \mapsto -g$ and the angle doubling of the rotor. On the distinguished subspaces, $S$ is fixed pointwise and $V$ is preserved and acted on by Lorentz transformations, while the split-complex planes and the minimal left ideals are permuted among their conjugates and are preserved only by units that normalize them. The orbits on $V \setminus \{0\}$ under the adjoint action of the unit group are the two-sheeted timelike hyperboloid, the light cone minus its vertex and the spacelike one-sheeted hyperboloid; under the identity component $\mathrm{SO}^{+}(2,1)$, which is the image of the norm-one group, the first two split into two orbits each. The scale of a nonzero element is carried by its polar modulus and the Lorentz transformation it generates by its unit part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>the split-quaternion algebra</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$L_{\tilde q}, R_{\tilde q}$</td>
+<td>left and right multiplication operators</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_g(\tilde q) = g\tilde q g^{-1}$</td>
+<td>the adjoint (sandwich) operator</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$g$</td>
+<td>a unit, $N(g) \neq 0$</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$</td>
+<td>the inner automorphism group</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$Z(\mathbb{H}_{\mathrm{s}}) = S = \mathbb{R}\cdot 1$</td>
+<td>the kernel of $g \mapsto \operatorname{Ad}_g$</td>
+<td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the vector subspace, preserved, with form $(2,1)$</td>
+<td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
+</tr>
+<tr>
+<td>$\mathrm{SL}_2(\mathbb{R})$</td>
+<td>the norm-one slice $\{g : N(g)=1\}$</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$\mathrm{SO}^{+}(2,1)$</td>
+<td>the identity component of the Lorentz group</td>
+<td><em>Split-Quaternion Rotations and the Lorentz Group</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2, \mathbb{D}_3$</td>
+<td>the split-complex planes, permuted by automorphisms</td>
+<td><em>Split-Quaternion Split-Complex Subspaces</em></td>
+</tr>
+<tr>
+<td>$\rho u$</td>
+<td>the polar representation of a nonzero element</td>
+<td><em>Split-Quaternion Polar Representation</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the adjoint action of the units of a Clifford algebra on its Lie algebra and the Lorentz group.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the regular and adjoint representations and the double cover of the Lorentz group.</li>
+<li>Robert Gilmore, <em>Lie Groups, Lie Algebras, and Some of Their Applications</em> (Wiley, 1974), for $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ and the orbit classification of the Minkowski form.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the action of the coquaternion units on the split vector space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

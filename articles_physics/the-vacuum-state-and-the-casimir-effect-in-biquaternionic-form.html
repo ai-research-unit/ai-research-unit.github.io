@@ -88,15 +88,15 @@ $$
 $$
 the number operator is the idempotent
 $$
-\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^{\dagger}\tilde a_{\mathrm{tr}}=\tfrac12\big(e_0-ie_3\big)=P_-(e_3)\in\mathbb{M}_+,
+\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^{\dagger}\tilde a_{\mathrm{tr}}=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_2\in\mathbb{M}_+,
 $$
 so the <strong>vacuum projector</strong> is the complementary idempotent
 $$
-\vert 0\rangle\langle 0\vert=e_0-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_0+ie_3\big)=P_+(e_3)\in\mathbb{M}_+.
+\vert 0\rangle\langle 0\vert=e_0-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_0+ie_3\big)=\tilde\Pi_1\in\mathbb{M}_+.
 $$
 The vacuum state is therefore realized, for one mode, as a pure-state projector of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_0-2\tilde N_{\mathrm{tr}}=ie_3$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
 $$
-\langle\tilde H\rangle_{0}=\mathrm{Tr}\big(|0\rangle\langle 0|\,\tilde H\big)=2\,\mathrm{Sc}\big(P_+(e_3)\tilde H\big),
+\langle\tilde H\rangle_{0}=\mathrm{Tr}\big(|0\rangle\langle 0|\,\tilde H\big)=2\,\mathrm{Sc}\big(\tilde\Pi_1\tilde H\big),
 $$
 which is the Born rule of the informational sector specialized to the vacuum. This is the one place where the framework's vacuum is genuinely algebraic rather than transcribed.</p>
 <p><strong>The field vacuum is not.</strong> For a field, the vacuum is the $n=0$ term of a Fock space built from a module, and the companion article's finding applies unchanged: the Fock space is not a subalgebra of $\mathbb{B}$, and beyond one mode not even the operator algebra is. In particular the <strong>photon vacuum is not an element of $\mathbb{B}$</strong>, because there is no bosonic mode in the algebra at all: no pair $\tilde a,\tilde a^{\dagger}\in\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$. The electromagnetic vacuum is therefore the standard Fock vacuum of the mode algebra of <em>Canonical Quantization of the Biquaternion Maxwell Field</em>; the framework contributes the module on which it is built (the transverse polarization plane in the vector part of $\mathbb{M}_-$) and the notation, but no native ladder.</p>
@@ -280,12 +280,12 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <tr>
 <td>Vacuum state (one fermionic mode)</td>
 <td>Native</td>
-<td>idempotent $P_+(e_3)=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$; trace formula</td>
+<td>idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$; trace formula</td>
 </tr>
 <tr>
 <td>Vacuum expectation values (one mode)</td>
 <td>Native</td>
-<td>$\langle\tilde H\rangle_0=2\,\mathrm{Sc}(P_+(e_3)\tilde H)$</td>
+<td>$\langle\tilde H\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_1\tilde H)$</td>
 </tr>
 <tr>
 <td>Fermion parity of the vacuum</td>
@@ -374,7 +374,7 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The <strong>vacuum state</strong> of the biquaternion framework is not a biquaternion. For a <strong>single fermionic mode</strong> it is genuinely algebraic: the vacuum projector is the idempotent $|0\rangle\langle 0|=P_+(e_3)=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(P_+(e_3)\tilde H)$. For a <strong>field</strong> it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$.</p>
+<p>The <strong>vacuum state</strong> of the biquaternion framework is not a biquaternion. For a <strong>single fermionic mode</strong> it is genuinely algebraic: the vacuum projector is the idempotent $|0\rangle\langle 0|=\tilde\Pi_1=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_1\tilde H)$. For a <strong>field</strong> it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$.</p>
 <p>The <strong>zero-point energy</strong> of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_0$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.</p>
 <p>That remainder was obtained by two independent regularisations. The <strong>spectral zeta function</strong> route continues $\zeta_3(s)$ from $s>\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\hbar c}/({1440\,a^{3}})$. The <strong>heat-kernel</strong> route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.</p>
 <p>The <strong>electromagnetic</strong> result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\zeta=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\zeta$ with the norm form of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.</p>
@@ -426,7 +426,7 @@ $$
 <td>One-mode number operator (idempotent)</td>
 </tr>
 <tr>
-<td>$\vert 0\rangle\langle 0\vert=P_+(e_3)=\tfrac12(e_0+ie_3)$</td>
+<td>$\vert 0\rangle\langle 0\vert=\tilde\Pi_1=\tfrac12(e_0+ie_3)$</td>
 <td>One-mode vacuum projector (idempotent in $\mathbb{M}_+$)</td>
 </tr>
 <tr>

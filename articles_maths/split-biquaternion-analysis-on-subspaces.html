@@ -64,11 +64,11 @@
 <p>The treatment is purely mathematical. The independent variables are real variables, and they are independent of any physical interpretation. The split complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.</p>
 <p>Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.</p>
 <p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, the convective derivative $\tilde{D}$, the integral, and the Cauchy integral formula are assumed from the preceding articles.</p>
-<p>The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
+<p>The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
 <p>$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$</p>
-<p>with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.</p>
+<p>with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.</p>
 <h2 id="the-split-complex-subspace">The Split Complex Subspace</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>split complex subspace</strong> $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed-point set of quaternion conjugation:</p>
@@ -375,22 +375,22 @@ $$</p>
 <p>The four subspaces are related to the idempotent decomposition in the following way.</p>
 <p><strong>Split complex subspace.</strong> The split complex subspace is the set of elements of the form $Q_0 e_0$ with $Q_0 \in \mathbb{D}$. In the idempotent basis, this is</p>
 <p>$$
-Q_0 e_0 = q_0 e_0 + j q'_0 e_0 = (q_0 + q'_0) e_+ + (q_0 - q'_0) e_-.
+Q_0 e_0 = q_0 e_0 + j q'_0 e_0 = (q_0 + q'_0) \tilde\Pi_+ + (q_0 - q'_0) \tilde\Pi_-.
 $$</p>
 <p>So the split complex subspace is the set of elements whose idempotent components are real scalars (i.e., real multiples of the identity in $\mathbb{H}$).</p>
 <p><strong>Quaternion subspace.</strong> The quaternion subspace is the set of elements with real coefficients. In the idempotent basis, an element with real coefficients has the form</p>
 <p>$$
-q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$</p>
 <p>where $\tilde{Q}_\pm = q_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ are the same quaternion in each component. So the quaternion subspace is the diagonal in $\mathbb{H} \oplus \mathbb{H}$: the set of pairs $(\tilde{Q}, \tilde{Q})$ with $\tilde{Q} \in \mathbb{H}$.</p>
 <p><strong>Hermitian subspace.</strong> The Hermitian subspace is the set of elements with real scalar part and purely split-imaginary vector part. In the idempotent basis, such an element has the form</p>
 <p>$$
-q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3 = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$</p>
 <p>where $\tilde{Q}_+ = q_0 + q'_1 e_1 + q'_2 e_2 + q'_3 e_3$ and $\tilde{Q}_- = q_0 - q'_1 e_1 - q'_2 e_2 - q'_3 e_3 = \bar{\tilde{Q}}_+$. So the Hermitian subspace is the set of pairs $(\tilde{Q}, \bar{\tilde{Q}})$ with $\tilde{Q} \in \mathbb{H}$.</p>
 <p><strong>Anti-Hermitian subspace.</strong> The anti-Hermitian subspace is the set of elements with purely split-imaginary scalar part and real vector part. In the idempotent basis, such an element has the form</p>
 <p>$$
-j q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+j q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$</p>
 <p>where $\tilde{Q}_+ = q'_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\tilde{Q}_- = -q'_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = -\overline{\tilde{Q}}_+$. So the anti-Hermitian subspace is the set of pairs $(\tilde{Q}, -\bar{\tilde{Q}})$ with $\tilde{Q} \in \mathbb{H}$.</p>
 <p>So the four subspaces correspond to four natural conditions on the pair $(\tilde{Q}_+, \tilde{Q}_-)$:</p>
@@ -500,6 +500,93 @@ $$</p>
 <p>This article studies the four distinguished real subspaces of the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ and the analysis on them, continuing the general treatment of split biquaternion analysis. The four subspaces are the fixed-point sets of the four conjugations: the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, of real dimension two, the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, of dimension four, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$. Each is defined precisely, its elements are described explicitly, and the four are compared.</p>
 <p>The subspaces are then related to one another and to the idempotent decomposition of the algebra: the conjugations preserve and permute them, and each is described in terms of the idempotent components, so that the analysis on each subspace is the analysis on the corresponding component factor.</p>
 <p>The differential operators of the general theory are restricted to the four subspaces and the resulting operators are gathered in a table; the formulas are the same on each subspace, with the appropriate dimension. The final sections record the intersection of the zero divisor set of $\mathbb{H}_{\mathbb{D}}$ with each subspace, and the questions that the article leaves open for later work.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>Split complex unit, central, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>Idempotents of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$</td>
+<td>General split biquaternion</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^*, {}^\dagger, {}^\flat$</td>
+<td>Quaternion, split complex, Hermitian, anti-Hermitian conjugations</td>
+</tr>
+<tr>
+<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$</td>
+<td>Idempotent components</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</td>
+<td>Split complex subspace (quaternion-conjugation fixed space)</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$</td>
+<td>Quaternion subspace (split-complex-conjugation fixed space)</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (Hermitian-conjugation fixed space)</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace (anti-Hermitian-conjugation fixed space)</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>A general four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}$</td>
+<td>Split-biquaternion gradient on $V$</td>
+</tr>
+<tr>
+<td>$\bar{\tilde{\nabla}}$</td>
+<td>Quaternion conjugate of the gradient</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>d'Alembertian on $V$</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}_{\mathbb{D}}$</td>
+<td>Split complex derivative on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</td>
+</tr>
+<tr>
+<td>$\Box_{\mathbb{D}}$</td>
+<td>Split complex Laplacian on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</td>
+</tr>
+<tr>
+<td>$\tilde{F}$</td>
+<td>Split-biquaternion-valued function on a subspace</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and biquaternions.</li>

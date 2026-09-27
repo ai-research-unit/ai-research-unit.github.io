@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples in the Quaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-in-the-quaternion-algebra"><strong>Worked Examples in the Quaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article works the constructions of the quaternion algebra on explicit elements. Its purpose is to compute, once and completely, the quantities that the other articles of the family define in general: the three involutions and their fixed-point subspaces, the roots of $-1$, the norm criterion for a unit together with the inverse, the conjugation action on a concrete element. Nothing here is new mathematics; the interest is that each general statement is followed through in coordinates, so that the conventions of the family can be read off a single worked example.</p>
+<p>The element worked throughout is</p>
+<p>$$
+\tilde q = 1 + 2e_1 - e_2 + 3e_3,
+$$</p>
+<p>with scalar part $q_0 = 1$ and vector part $\mathbf{q} = 2e_1 - e_2 + 3e_3$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from <em>Quaternion Algebra</em> (the basis, the multiplication and the three involutions), <em>Quaternion Norm and Invertibility</em> (the norm form, the inverse and the unit criterion), <em>Quaternion Rotations and Reflections</em> (the conjugation action and the covering of $SO(3)$). A few examples with other elements are given where a single example would be misleading.</p>
+<p>Throughout, the basis is $e_0 = 1, e_1, e_2, e_3$ with</p>
+<p>$$
+e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_3 = e_1, \quad e_3e_1 = e_2,
+$$</p>
+<p>and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the norm form is $N(\tilde q) = \tilde q\bar{\tilde q}$.</p>
+<h2 id="the-three-involutions">The Three Involutions</h2>
+<p><strong>Definition.</strong> The three <strong>involutions</strong> of the quaternion algebra are the real-linear maps</p>
+<p>$$
+\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad -\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad -\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
+$$</p>
+<p>called quaternion, vector and total conjugation. Each is an involution: applying it twice returns $\tilde q$.</p>
+<p><strong>Proposition.</strong> The three involutions are $\bar{\cdot}$, $-\bar{\cdot}$ and $-\mathrm{id}$: the second is the negative of the first and the third is the negative of the identity, so the three maps together with the identity form the group $\mathbb{Z}/2\times\mathbb{Z}/2$ of sign changes of the scalar and vector parts.</p>
+<p><em>Proof.</em> The first negates the vector part and fixes the scalar part, $q_0-\mathbf{q}$; the second is its negative, $-q_0+\mathbf{q} = -(q_0-\mathbf{q})$, and so negates the scalar part and fixes the vector part; the third negates both, $-q_0-\mathbf{q}$. Composing the sign changes independently in the two parts gives the Klein four-group. $\square$</p>
+<p><strong>Worked values.</strong> For $\tilde q = 1+2e_1-e_2+3e_3$,</p>
+<p>$$
+\bar{\tilde q} = 1-2e_1+e_2-3e_3, \qquad -\bar{\tilde q} = -1+2e_1-e_2+3e_3, \qquad -\tilde q = -1-2e_1+e_2-3e_3 .
+$$</p>
+<p><strong>Proposition (fixed-point subspaces).</strong> The fixed points of the three involutions are</p>
+<p>$$
+\{\tilde q : \bar{\tilde q} = \tilde q\} = \mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0, \qquad
+\{\tilde q : -\bar{\tilde q} = \tilde q\} = \operatorname{Im}\mathbb{H}, \qquad
+\{\tilde q : -\tilde q = \tilde q\} = \{0\},
+$$</p>
+<p>of dimensions $1$, $3$ and $0$.</p>
+<p><em>Proof.</em> $\bar{\tilde q} = \tilde q$ gives $\mathbf{q} = 0$; $-\bar{\tilde q} = \tilde q$ gives $q_0 = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$. $\square$</p>
+<p>So the scalar axis, the imaginary three-space and the origin are the fixed sets, and they are exactly the images of the projections onto the scalar part, the vector part and zero. The first is a subalgebra isomorphic to $\mathbb{R}$; the second is not, because the product of two of its elements has a scalar part.</p>
+<h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
+<p><strong>Definition.</strong> A <strong>root of $-1$</strong> is a quaternion $\xi$ with $\xi^2 = -1$.</p>
+<p><strong>Theorem.</strong> The roots of $-1$ are the pure imaginary quaternions of norm one.</p>
+<p><em>Proof.</em> Write $\xi = x_0+\mathbf{x}$. Then $\xi^2 = x_0^2-N(\mathbf{x})+2x_0\mathbf{x}$, so $\xi^2 = -1$ gives $2x_0\mathbf{x} = 0$ and $x_0^2-N(\mathbf{x}) = -1$. If $x_0\neq0$ then $\mathbf{x} = 0$ and $x_0^2 = -1$, impossible, so $x_0 = 0$ and $N(\mathbf{x}) = 1$. $\square$</p>
+<p><strong>Worked roots.</strong> The element</p>
+<p>$$
+\xi = \frac{e_1+e_2+e_3}{\sqrt3}
+$$</p>
+<p>is a root of $-1$: its square is</p>
+<p>$$
+\xi^2 = \tfrac13\bigl(e_1^2+e_2^2+e_3^2+e_1e_2+e_2e_1+e_2e_3+e_3e_2+e_3e_1+e_1e_3\bigr) = \tfrac13(-3+0) = -1,
+$$</p>
+<p>because the off-diagonal products cancel in pairs and each square is $-1$. The element $e_2$ is a root, and so is the whole sphere $u_1e_1+u_2e_2+u_3e_3$ with $u_1^2+u_2^2+u_3^2 = 1$.</p>
+<p><strong>The roots of $+1$.</strong> For comparison, $\eta^2 = 1$ has only the solutions $\eta = \pm1$, because $(\eta-1)(\eta+1) = 0$ and there are no zero divisors; in particular $e_2$ is a root of $-1$ but no pure quaternion is a root of $+1$.</p>
+<h2 id="the-norm-criterion-for-a-unit">The Norm Criterion for a Unit</h2>
+<p><strong>Theorem.</strong> The element $\tilde q$ is a unit if and only if $N(\tilde q)\neq 0$, and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$.</p>
+<p><strong>Worked computation.</strong> For the chosen element,</p>
+<p>$$
+N(\tilde q) = 1^2 + 2^2 + (-1)^2 + 3^2 = 15 \neq 0,
+$$</p>
+<p>so $\tilde q$ is a unit, with inverse</p>
+<p>$$
+\tilde q^{-1} = \frac{\bar{\tilde q}}{15} = \frac{1}{15}\bigl(1-2e_1+e_2-3e_3\bigr).
+$$</p>
+<p>The verification is the product</p>
+<p>$$
+\tilde q\,\tilde q^{-1} = \frac{\tilde q\bar{\tilde q}}{15} = \frac{N(\tilde q)}{15} = 1 .
+$$</p>
+<p><strong>A second element.</strong> For $p = 1 + e_1 + e_2 + e_3$ one has $N(p) = 4$, so $p^{-1} = \tfrac14(1-e_1-e_2-e_3)$; and the multiplicativity of the norm form is checked on the pair by</p>
+<p>$$
+N(qp) = N(\tilde q)N(p) = 15\cdot4 = 60, \qquad |qp| = |\tilde q|\,|p| = \sqrt{15}\cdot2 = 2\sqrt{15}.
+$$</p>
+<p>There is no non-zero element of $\mathbb{H}$ with $N = 0$, so over $\mathbb{R}$ the unit criterion is simply $\tilde q\neq0$; the worked element is a unit for the trivial reason that it is not zero, and the content of the computation is the explicit inverse.</p>
+<h2 id="the-conjugation-action">The Conjugation Action</h2>
+<p><strong>Definition.</strong> For a unit quaternion $u$ the <strong>conjugation action</strong>, or adjoint action, is $\operatorname{Ad}_u(x) = uxu^{-1} = ux\bar u$.</p>
+<p><strong>Worked computation.</strong> Take the unit quaternion</p>
+<p>$$
+u = \exp\!\Bigl(\frac{\pi}{4}e_1\Bigr) = \cos\frac{\pi}{4} + e_1\sin\frac{\pi}{4} = \frac{1+e_1}{\sqrt2},
+$$</p>
+<p>so that $u^{-1} = \bar u = (1-e_1)/\sqrt2$. Then on the imaginary basis,</p>
+<p>$$
+u\,e_1\,u^{-1} = e_1, \qquad u\,e_2\,u^{-1} = e_3, \qquad u\,e_3\,u^{-1} = -e_2 .
+$$</p>
+<p>For instance, $ue_2 = \tfrac{1}{\sqrt2}(e_2+e_1e_2) = \tfrac{1}{\sqrt2}(e_2+e_3)$, and multiplying on the right by $u^{-1}$ gives</p>
+<p>$$
+ue_2u^{-1} = \tfrac12(e_2+e_3)(1-e_1) = \tfrac12\bigl(e_2+e_3-e_2e_1-e_3e_1\bigr) = \tfrac12(e_2+e_3+e_3-e_2) = e_3 .
+$$</p>
+<p>So $\operatorname{Ad}_u$ fixes the axis $e_1$ and rotates the plane spanned by $e_2,e_3$ through $+\pi/2$: it is the quarter turn about $e_1$. Its matrix in the basis $(e_1,e_2,e_3)$ is</p>
+<p>$$
+R_u = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix},
+$$</p>
+<p>which agrees with the general formula $R_q = \bigl(1-2(q_2^2+q_3^2),\,2(q_1q_2-q_0q_3),\,2(q_1q_3+q_0q_2);\ \dots\bigr)$ at $q_0 = q_1 = 1/\sqrt2$, $q_2 = q_3 = 0$. Since $u$ and $-u$ give the same matrix and no other unit does, the map $Sp(1)\to SO(3)$ is two-to-one with kernel $\{\pm1\}$, in agreement with <em>Quaternion Rotations and Reflections</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The three involutions of the quaternion algebra are quaternion, vector and total conjugation, given by negating the vector part, the scalar part, or both, with fixed-point subspaces the scalar line, the imaginary three-space and the origin. The roots of $-1$ are the pure imaginary quaternions of norm one, forming a two-sphere, while the roots of $+1$ are only $\pm1$; the element $(e_1+e_2+e_3)/\sqrt3$ is a worked root of the first equation.</p>
+<p>For the worked element $\tilde q = 1+2e_1-e_2+3e_3$ the norm form is $N(\tilde q) = 15$, so $\tilde q$ is a unit with $\tilde q^{-1} = \bar{\tilde q}/15$, and multiplicativity is checked against $p = 1+e_1+e_2+e_3$. The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and $e_2$ to $e_3$, a quarter turn about the first axis, with matrix $R_u$ matching the general formula and the two-to-one covering $Sp(1)\to SO(3)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The quaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Basis, $e_k^2 = -e_0$, $e_1e_2 = e_3$</td>
+</tr>
+<tr>
+<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
+<td>Worked element $\tilde q = 1+2e_1-e_2+3e_3$</td>
+</tr>
+<tr>
+<td>$\bar{\tilde q}, -\bar{\tilde q}, -\tilde q$</td>
+<td>Quaternion, vector and total conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$</td>
+<td>Fixed space of $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Im}\mathbb{H}$</td>
+<td>Fixed space of $\tilde{\cdot}$</td>
+</tr>
+<tr>
+<td>$N(\tilde q) = \tilde q\bar{\tilde q}$</td>
+<td>Norm form, $N(\tilde q) = 15$ for the worked element</td>
+</tr>
+<tr>
+<td>$\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$</td>
+<td>Inverse, $\tilde q^{-1} = \bar{\tilde q}/15$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_u(x) = ux\bar u$</td>
+<td>Conjugation action</td>
+</tr>
+<tr>
+<td>$R_u$</td>
+<td>Matrix of $\operatorname{Ad}_u$ on $\operatorname{Im}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$</td>
+<td>Modulus</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original computational treatment of the quaternion algebra.</li>
+<li>Peter Guthrie Tait, <em>An Elementary Treatise on Quaternions</em> (Cambridge University Press, 3rd ed. 1890), for a systematic collection of worked quaternion and vector computations.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for explicit computations with quaternion units and their products.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for worked examples of the adjoint action and the covering of the rotation group.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the quaternion units and the associated Clifford algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

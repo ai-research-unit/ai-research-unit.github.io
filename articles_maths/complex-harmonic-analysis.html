@@ -213,13 +213,13 @@ $$</p>
 <p>in the sense of distributions. This is the starting point of the theory of the <strong>Bochner–Martinelli integral</strong> and of the solution of the $\bar{\partial}$-equation.</p>
 <h2 id="holomorphic-functions-and-harmonic-analysis">Holomorphic Functions and Harmonic Analysis</h2>
 <h3 id="the-hardy-spaces">The Hardy Spaces</h3>
-<p>The <strong>Hardy space</strong> $H^p(\mathbb{D})$ on the unit disk $\mathbb{D} = \{z : |z| < 1\}$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with</p>
+<p>The <strong>Hardy space</strong> $H^p(D)$ on the unit disk $D = \{z : |z| < 1\}$ is the set of holomorphic functions $f$ on $D$ with</p>
 <p>$$
 \|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r e^{i\theta})|^p \, d\theta \right)^{1/p} < \infty
 $$</p>
 <p>for $1 \leq p < \infty$, and</p>
 <p>$$
-\|f\|_{H^\infty} = \sup_{z \in \mathbb{D}} |f(z)| < \infty
+\|f\|_{H^\infty} = \sup_{z \in D} |f(z)| < \infty
 $$</p>
 <p>for $p = \infty$.</p>
 <p><strong>Theorem (Fatou).</strong> Every $f \in H^p$ has a boundary value $f(e^{i\theta})$ for almost every $\theta$, and the boundary function is in $L^p(\mathbb{T})$.</p>
@@ -233,9 +233,9 @@ K_B(z, w) = \frac{\sin(2\pi B (z - \bar{w}))}{\pi (z - \bar{w})}.
 $$</p>
 <p>It is the natural setting for the sampling theorem of Shannon, which states that a function in $PW_B$ is determined by its values on the lattice $\mathbb{Z}/(2B)$.</p>
 <h3 id="the-bergman-space">The Bergman Space</h3>
-<p>The <strong>Bergman space</strong> $A^p(\mathbb{D})$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with</p>
+<p>The <strong>Bergman space</strong> $A^p(D)$ is the set of holomorphic functions $f$ on $D$ with</p>
 <p>$$
-\|f\|_{A^p} = \left( \int_{\mathbb{D}} |f(z)|^p \, dx \, dy \right)^{1/p} < \infty.
+\|f\|_{A^p} = \left( \int_{D} |f(z)|^p \, dx \, dy \right)^{1/p} < \infty.
 $$</p>
 <p>For $p = 2$, the Bergman space is a reproducing kernel Hilbert space, with reproducing kernel</p>
 <p>$$
@@ -243,9 +243,9 @@ K(z, w) = \frac{1}{\pi (1 - z \bar{w})^2}.
 $$</p>
 <p>It is the natural setting for the study of holomorphic functions with controlled $L^p$ growth on the disk.</p>
 <h3 id="the-bloch-space">The Bloch Space</h3>
-<p>The <strong>Bloch space</strong> $\mathcal{B}$ is the set of holomorphic functions $f$ on $\mathbb{D}$ with</p>
+<p>The <strong>Bloch space</strong> $\mathcal{B}$ is the set of holomorphic functions $f$ on $D$ with</p>
 <p>$$
-\|f\|_{\mathcal{B}} = |f(0)| + \sup_{z \in \mathbb{D}} (1 - |z|^2) |f'(z)| < \infty.
+\|f\|_{\mathcal{B}} = |f(0)| + \sup_{z \in D} (1 - |z|^2) |f'(z)| < \infty.
 $$</p>
 <p>It is a Banach space, and it is the natural setting for the study of holomorphic functions with bounded mean oscillation of the derivative.</p>
 <h2 id="the-mellin-transform">The Mellin Transform</h2>
@@ -363,7 +363,11 @@ $$</p>
 <td>Laplacian</td>
 </tr>
 <tr>
-<td>$H^p(\mathbb{D})$</td>
+<td>$D = \{z : |z| < 1\}$</td>
+<td>Unit disk</td>
+</tr>
+<tr>
+<td>$H^p(D)$</td>
 <td>Hardy space</td>
 </tr>
 <tr>
@@ -371,7 +375,7 @@ $$</p>
 <td>Paley–Wiener space</td>
 </tr>
 <tr>
-<td>$A^p(\mathbb{D})$</td>
+<td>$A^p(D)$</td>
 <td>Bergman space</td>
 </tr>
 <tr>

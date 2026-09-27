@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Complex Regular Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-complex-regular-representation"><strong>Split-Complex Regular Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-complex algebra $\mathbb{D}$ acting on itself by left multiplication is the <strong>left regular representation</strong>, and writing that action in the basis $\{1, j\}$ gives the <strong>regular matrix</strong> of a split-complex number. This article develops that matrix in full: the Cayley matrix of multiplication by $Z = a+j b$, its identification with the algebra of $2\times 2$ real matrices of hyperbolic type, its multiplicativity, its determinant as the norm form, its diagonalisation by the idempotent basis, its relation to the regular representation of the biquaternion algebra, and its relation to the hyperbolic rotations of the geometry slot. It is the two-dimensional counterpart of <em>Biquaternion $4\times4$ Regular Matrix Representation</em>, and it is the second of the three Representation articles, after <em>Split-Complex Representations</em> and before <em>Split-Complex Two-Component Representation</em>.</p>
+<p>The general representation theory is owned by <em>Split-Complex Representations</em>; here the regular representation alone is studied, in its matrix form, with the multiplication operator as the object. The word <em>representation</em> is used in both senses at once, the concrete realization and the technical action of an algebra on a vector space, because the action is the object of study. The article owns the $2\times2$ regular matrix, the left and right multiplication operators and the fact that they coincide, the identification $\mathbb{D}\cong\{aL+bJ\}$, the determinant identity $\det \rho_L(Z) = N(Z)$, the diagonalisation in the idempotent basis, the centralizer statement, and the identification of the unit-norm subgroup with the hyperbolic rotations. It does not treat the classification of all representations, which belongs to <em>Split-Complex Representations</em>; it does not treat the polar parametrisation of the unit-norm group in its own right, which belongs to <em>Split-Complex Polar Representation</em>; and it uses, but does not reprove, the idempotent decomposition of <em>Split-Complex Idempotents and Projections</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Z = a+j b$; conjugate $\bar Z = a-j b$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Z_\pm = a\pm b$, with $Z = Z_+\Pi_1 + Z_-\Pi_2$; norm form $N(Z) = a^2-b^2$. The coefficient space is the two-dimensional real vector space $\mathbb{D}$ itself, and the matrix of an operator is taken in the basis $\{1, j\}$ unless stated.</p>
+<h2 id="the-left-regular-representation">The Left Regular Representation</h2>
+<p><strong>Definition.</strong> The <strong>left regular representation</strong> of $\mathbb{D}$ is the map</p>
+<p>$$
+\rho_L : \mathbb{D} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{D}), \qquad \rho_L(Z)(W) = ZW.
+$$</p>
+<p>For each $Z$, the map $W \mapsto ZW$ is $\mathbb{R}$-linear because multiplication is bilinear, so $\rho_L(Z)$ is a real-linear endomorphism of the two-dimensional space $\mathbb{D}$. Writing each endomorphism as a matrix in the basis $1, j$, the same symbol $\rho_L(Z)$ denotes the matrix acting on the column of coordinates $(W_0, W_1)^{\mathsf{T}}$ of $W = W_0 + W_1 j$:</p>
+<p>$$
+\rho_L(Z)\, \begin{pmatrix} W_0 \\ W_1 \end{pmatrix} = \begin{pmatrix} (ZW)_0 \\ (ZW)_1 \end{pmatrix}.
+$$</p>
+<p><strong>Proposition (the regular matrix is the Cayley matrix).</strong> In the basis $1, j$,</p>
+<p>$$
+\rho_L(Z) = \begin{pmatrix} a & b \\ b & a \end{pmatrix}, \qquad Z = a+j b.
+$$</p>
+<p>Each entry is a single coefficient of $Z$, carrying no sign other than those of the coefficients themselves, because in this basis each product of basis elements is one basis element.</p>
+<p><strong>Proof.</strong> The columns are the images of the basis, $\rho_L(Z)(1) = Z$ and $\rho_L(Z)(j) = Zj$, expressed in the basis. The first is $Z = a + j b$, giving the column $(a, b)^{\mathsf{T}}$. The second is</p>
+<p>$$
+Zj = (a+j b)j = j a + j b^2 = b + j a,
+$$</p>
+<p>using $j^2 = +1$, giving the column $(b, a)^{\mathsf{T}}$. Hence the matrix displayed. $\square$</p>
+<p>The matrix is the <strong>Cayley matrix</strong> of multiplication by $Z$; it is symmetric, and its two columns are obtained from one another by exchanging the two coordinates, which is the reflection $j$ of the algebra.</p>
+<p><strong>Example.</strong> For $Z = 2+3j$,</p>
+<p>$$
+\rho_L(2+3j) = \begin{pmatrix} 2 & 3 \\ 3 & 2 \end{pmatrix},
+\qquad
+\rho_L(2+3j)\begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 2 \\ 3 \end{pmatrix},
+\qquad
+\rho_L(2+3j)\begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 3 \\ 2 \end{pmatrix}.
+$$</p>
+<p>The first column is the coordinate column of $Z$, the second that of $Zj = 3+2j$; the product $Z \cdot 1 = Z$ and $Z\cdot j = Zj$ are read off directly.</p>
+<h2 id="the-left-representation-is-a-homomorphism">The Left Representation Is a Homomorphism</h2>
+<p><strong>Theorem (multiplicativity).</strong> For all $Z, W \in \mathbb{D}$,</p>
+<p>$$
+\rho_L(Z)\,\rho_L(W) = \rho_L(ZW).
+$$</p>
+<p>Hence $\rho_L$ is an algebra homomorphism, and $\mathbb{D}$ is a left $\mathbb{D}$-module under it.</p>
+<p><strong>Proof.</strong> Both sides are $\mathbb{R}$-linear in the second factor and are computed on the basis. For every basis element $e_m$, associativity of the algebra gives</p>
+<p>$$
+\rho_L(Z)\bigl(\rho_L(W)(e_m)\bigr) = Z(We_m) = (ZW)e_m = \rho_L(ZW)(e_m),
+$$</p>
+<p>so the two matrices agree on a basis. In matrices this is the identity</p>
+<p>$$
+\begin{pmatrix} a & b \\ b & a \end{pmatrix}\begin{pmatrix} c & d \\ d & c \end{pmatrix} = \begin{pmatrix} a c+b d & a d+b c \\ a d+b c & a c+b d \end{pmatrix} = \rho_L(ZW),
+\qquad W = c+j d,
+$$</p>
+<p>whose right side is the Cayley matrix of $ZW$. $\square$</p>
+<p><strong>Corollary ($\rho_L$ is faithful).</strong> The map $\rho_L$ is injective, whence $\mathbb{D}$ embeds as an algebra of $2\times2$ real matrices. Indeed $\rho_L(Z) = 0$ forces the first column $(a,b)^{\mathsf{T}}$ to vanish, so $Z = 0$.</p>
+<p><strong>Example (a concrete check).</strong> For $Z = 1+j$ and $W = 1+2j$, the product is $ZW = (1+2) + (2+1)j = 3+3j$, and</p>
+<p>$$
+\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix} = \begin{pmatrix} 3 & 3 \\ 3 & 3 \end{pmatrix} = \rho_L(3+3j). \checkmark
+$$</p>
+<h2 id="the-right-regular-representation-and-commutativity">The Right Regular Representation and Commutativity</h2>
+<p><strong>Definition.</strong> The <strong>right regular representation</strong> is</p>
+<p>$$
+\rho_R : \mathbb{D} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{D}), \qquad \rho_R(Z)(W) = WZ.
+$$</p>
+<p>In the basis $1, j$ its matrix has columns $\rho_R(Z)(1) = Z$ and $\rho_R(Z)(j) = jZ = Zj$; since the algebra is commutative, $jZ = Zj$, so the two columns are again $(a,b)^{\mathsf{T}}$ and $(b,a)^{\mathsf{T}}$:</p>
+<p>$$
+\rho_R(Z) = \begin{pmatrix} a & b \\ b & a \end{pmatrix} = \rho_L(Z).
+$$</p>
+<p><strong>Proposition.</strong> The left and right regular representations of $\mathbb{D}$ coincide: $\rho_L = \rho_R$.</p>
+<p><strong>Proof.</strong> This is the commutativity of $\mathbb{D}$: $ZW = WZ$ for all $W$, so the two endomorphisms agree. $\square$</p>
+<p>This is a systematic difference from the biquaternion case, where the left and right regular matrices are distinct and are obtained from one another by transposition and the reversal of the coefficients; here there is no distinction to make, and the transposition identity of the four-dimensional article degenerates to the statement that the single regular matrix is symmetric. The vanishing of the commutator of the two actions is exactly the commutativity of the algebra.</p>
+<h2 id="the-image-math87-real-matrices-of-hyperbolic-type">The Image: $2\times2$ Real Matrices of Hyperbolic Type</h2>
+<p>The image of $\rho_L$ is the set</p>
+<p>$$
+\rho_L(\mathbb{D}) = \left\{ \begin{pmatrix} a & b \\ b & a \end{pmatrix} : a, b \in \mathbb{R} \right\} = \left\{ a I + b J : a, b \in \mathbb{R} \right\},
+\qquad
+I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}.
+$$</p>
+<p>The matrix $J$ satisfies</p>
+<p>$$
+J^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I,
+$$</p>
+<p>so the algebra $\rho_L(\mathbb{D})$ is the <strong>hyperbolic</strong> (or split-complex, or double-number) algebra of matrices, with the generator $J$ of square $+I$. It is the matrix image of $\mathbb{D}$ and is isomorphic to it:</p>
+<p>$$
+\mathbb{D} \;\cong\; \rho_L(\mathbb{D}) = \mathbb{R}[J], \qquad j \longmapsto J.
+$$</p>
+<p>By contrast the complex field embeds as $\mathbb{C}\cong\{aI + bK\}$ with $K = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ of square $-I$; the two matrix algebras differ only in the sign of the square of their generator, which is precisely the difference between $j^2 = +1$ and $i^2 = -1$.</p>
+<p>The matrix picture also exhibits the multiplication table of $\mathbb{D}$ on the generators $I, J$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>$I$</th>
+<th>$J$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I$</td>
+<td>$I$</td>
+<td>$J$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>$J$</td>
+<td>$I$</td>
+</tr>
+</tbody>
+</table></div>
+<p>which is the table of $\mathbb{Z}/2$ under addition, that is, the group ring $\mathbb{R}[\mathbb{Z}/2]$.</p>
+<h2 id="the-determinant-the-trace-and-the-norm-form">The Determinant, the Trace and the Norm Form</h2>
+<p><strong>Theorem.</strong> For $Z = a+j b$,</p>
+<p>$$
+\det \rho_L(Z) = a^2 - b^2 = N(Z), \qquad \operatorname{Tr}\rho_L(Z) = 2a = Z_+ + Z_-.
+$$</p>
+<p><strong>Proof.</strong> The determinant of a $2\times2$ matrix with diagonal $a$ and off-diagonal $b$ is $a^2-b^2$, which is $N(Z)$; the trace is $2a$, which is $Z_+ + Z_-$. $\square$</p>
+<p><strong>Corollary (multiplicativity of the norm form).</strong> Since $\rho_L$ is a homomorphism and the determinant is multiplicative,</p>
+<p>$$
+N(ZW) = \det \rho_L(ZW) = \det\bigl(\rho_L(Z)\rho_L(W)\bigr) = \det \rho_L(Z)\det \rho_L(W) = N(Z)N(W),
+$$</p>
+<p>which is the multiplicativity of the norm form, proved here as a special case of the multiplicativity of the determinant.</p>
+<p><strong>Corollary (invertibility).</strong> The matrix $\rho_L(Z)$ is invertible iff $\det \rho_L(Z) = N(Z) \neq 0$, so $\mathbb{D}^\times$ corresponds to the invertible matrices in $\rho_L(\mathbb{D})$, and</p>
+<p>$$
+\rho_L(Z)^{-1} = \rho_L(Z^{-1}) = \frac{1}{N(Z)}\begin{pmatrix} a & -b \\ -b & a \end{pmatrix}.
+$$</p>
+<p><strong>The characteristic polynomial.</strong> A $2\times2$ matrix has characteristic polynomial</p>
+<p>$$
+\lambda^2 - \operatorname{Tr}\rho_L(Z)\,\lambda + \det \rho_L(Z) = \lambda^2 - 2a\lambda + (a^2-b^2) = (\lambda - Z_+)(\lambda - Z_-),
+$$</p>
+<p>whose roots are the two idempotent coordinates $Z_+ = a+b$ and $Z_- = a-b$, both real. The eigenvalues of the regular matrix of $Z$ are therefore the two numbers from which $Z$ is reconstructed, and the Cayley–Hamilton identity reads</p>
+<p>$$
+\rho_L(Z)^2 - 2a\,\rho_L(Z) + (a^2-b^2) I = 0.
+$$</p>
+<p>So the norm form and the idempotent coordinates are the two elementary symmetric functions of the eigenvalues, and $\mathbb{D}$ is the algebra of real $2\times2$ matrices whose spectrum is real and whose eigenvectors are fixed, the two idempotent lines.</p>
+<h2 id="diagonalisation-in-the-idempotent-basis">Diagonalisation in the Idempotent Basis</h2>
+<p>Change basis from the eigenbasis $\{1, j\}$ of the involution to the idempotent basis $\{\Pi_1, \Pi_2\}$. In the idempotent basis multiplication is componentwise, so the left regular operator acts by</p>
+<p>$$
+Z \Pi_1 = Z_+ \Pi_1, \qquad Z \Pi_2 = Z_- \Pi_2,
+$$</p>
+<p>whence its matrix is diagonal:</p>
+<p>$$
+\rho_L(Z)\big|_{\{\Pi_1, \Pi_2\}} = \begin{pmatrix} Z_+ & 0 \\ 0 & Z_- \end{pmatrix} = \begin{pmatrix} a+b & 0 \\ 0 & a-b \end{pmatrix}.
+$$</p>
+<p>The change-of-basis matrix from $\{1, j\}$ to $\{\Pi_1, \Pi_2\}$ is $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$ acting on coordinate columns, and the diagonalisation is the similarity</p>
+<p>$$
+P\,\rho_L(Z)\,P^{-1} = \begin{pmatrix} a+b & 0 \\ 0 & a-b \end{pmatrix}, \qquad P \begin{pmatrix} a & b \\ b & a \end{pmatrix} P^{-1} = \begin{pmatrix} a+b & 0 \\ 0 & a-b \end{pmatrix},
+$$</p>
+<p>which holds for every $Z$. So the whole algebra $\rho_L(\mathbb{D})$ is simultaneously diagonalised by the single matrix $P$: the two idempotent coordinates are a complete set of eigenvalues, and the regular matrix is the diagonal matrix $\operatorname{diag}(Z_+, Z_-)$ in the idempotent basis.</p>
+<p><strong>Corollary (simultaneous diagonalisation and commutativity).</strong> The algebra $\rho_L(\mathbb{D})$ consists of the matrices simultaneously diagonalised by $P$, namely $\operatorname{diag}(\lambda, \mu)$ with $\lambda, \mu \in \mathbb{R}$; this is the matrix form of the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$.</p>
+<p><strong>Example.</strong> For $Z = 2+3j$ the idempotent coordinates are $Z_+ = 5$ and $Z_- = -1$, and</p>
+<p>$$
+\rho_L(2+3j) = \begin{pmatrix} 2 & 3 \\ 3 & 2 \end{pmatrix}, \qquad
+P \begin{pmatrix} 2 & 3 \\ 3 & 2 \end{pmatrix} P^{-1} = \begin{pmatrix} 5 & 0 \\ 0 & -1 \end{pmatrix}. \checkmark
+$$</p>
+<h3 id="the-idempotents-as-diagonal-matrix-units">The Idempotents as Diagonal Matrix Units</h3>
+<p>In the idempotent basis the two idempotents are the diagonal matrix units of the model:</p>
+<p>$$
+\rho_L(\Pi_1) = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} = E_{11}, \qquad \rho_L(\Pi_2) = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = E_{22}.
+$$</p>
+<p>In a non-commutative semisimple algebra the idempotents refine further into <strong>matrix units</strong> $E_{ij}$ satisfying $E_{ij}E_{kl} = \delta_{jk}E_{il}$; here the off-diagonal units cannot exist, and what survives is the diagonal family.</p>
+<p><strong>Proposition.</strong> The idempotents $\Pi_1$ and $\Pi_2$ satisfy the multiplication rule of the diagonal matrix units,</p>
+<p>$$
+\Pi_1^2 = \Pi_1, \qquad \Pi_2^2 = \Pi_2, \qquad \Pi_1\Pi_2 = \Pi_2\Pi_1 = 0, \qquad \Pi_1 + \Pi_2 = 1,
+$$</p>
+<p>and no elements $E_{12}, E_{21}$ with $E_{12}E_{21} = \Pi_1$ and $E_{21}E_{12} = \Pi_2$ exist in $\mathbb{D}$.</p>
+<p><strong>Proof.</strong> The rule is the standard idempotent identity. For the nonexistence, suppose $E_{12}, E_{21} \in \mathbb{D}$ satisfied $E_{12}E_{21} = \Pi_1$ and $E_{21}E_{12} = \Pi_2$. Since $\mathbb{D}$ is commutative the two products are equal, $E_{12}E_{21} = E_{21}E_{12}$, so $\Pi_1 = \Pi_2$, which is false. Hence no such pair exists. $\square$</p>
+<p>So the algebra is a direct sum of diagonal blocks only, and the idempotents $\Pi_\pm$ are its diagonal matrix units. In the biquaternion algebra the same decomposition splits $\mathbb{B}$ into four blocks of complex dimensions $1+1+1+1$, with all matrix units present; here only two blocks survive, of real dimension $1$ each.</p>
+<h2 id="the-unit-norm-subgroup-and-the-hyperbolic-rotations">The Unit-Norm Subgroup and the Hyperbolic Rotations</h2>
+<p>The unit-norm elements are those with $N(Z) = 1$; in the matrix picture they are the matrices of determinant $1$ in $\rho_L(\mathbb{D})$,</p>
+<p>$$
+SO(1,1) \;\cong\; \rho_L(\{Z : N(Z) = 1\}) = \left\{ \begin{pmatrix} a & b \\ b & a \end{pmatrix} : a^2 - b^2 = 1 \right\},
+$$</p>
+<p>Writing the spacelike branch $a > 0$ in the hyperbolic parametrisation $a = \cosh t$, $b = \sinh t$ gives</p>
+<p>$$
+R_j(t) = \rho_L(e^{jt}) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix},
+\qquad t \in \mathbb{R},
+$$</p>
+<p>the <strong>hyperbolic rotation</strong> matrix of angle $t$. It is the matrix of the one-parameter group $\{e^{jt}\}$, and the group law</p>
+<p>$$
+R_j(t)R_j(s) = R_j(t+s)
+$$</p>
+<p>is the multiplicativity of $\rho_L$ combined with $e^{jt}e^{js} = e^{j(t+s)}$.</p>
+<p><strong>Proposition.</strong> For every $t$, $R_j(t)$ preserves the norm form: if $W = c+j d$, then $N(R_j(t)W) = N(W)$.</p>
+<p><strong>Proof.</strong> $\det R_j(t) = \cosh^2 t - \sinh^2 t = 1$, and $N$ is the determinant of the coordinate matrix, so $N(R_j(t)W) = \det(R_j(t)\rho_L(W)) = \det R_j(t)\det\rho_L(W) = N(W)$. $\square$</p>
+<p>So the hyperbolic rotations are exactly the identity component $SO^+(1,1)$ of the determinant-one subgroup of the regular matrix algebra, and their action is the linear action on $\mathbb{R}^2$ preserving $a^2-b^2$. The unit-norm group has a second branch, $a < 0$, related to the first by the central reflection $-1$, and the whole group $\{N=1\}$ has two components; the matrix picture and the group structure are developed in <em>Split-Complex Exponential and Lie Group Structure</em> and in <em>Hyperbolic Rotations</em>, where $R_j(t)$ is the generator of the hyperbolic one-parameter group.</p>
+<h2 id="the-centralizer">The Centralizer</h2>
+<p><strong>Theorem.</strong> The centralizer of $\rho_L(\mathbb{D})$ in $M_2(\mathbb{R})$ is $\rho_L(\mathbb{D})$ itself.</p>
+<p><strong>Proof.</strong> A matrix $C = \begin{pmatrix} p & q \\ r & s \end{pmatrix}$ commutes with $J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$ iff</p>
+<p>$$
+\begin{pmatrix} p & q \\ r & s \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} q & p \\ s & r \end{pmatrix}, \qquad
+\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} p & q \\ r & s \end{pmatrix} = \begin{pmatrix} r & s \\ p & q \end{pmatrix},
+$$</p>
+<p>and equality gives $q = r$ and $p = s$. So $C = \begin{pmatrix} p & q \\ q & p \end{pmatrix} \in \rho_L(\mathbb{D})$. Conversely every matrix in $\rho_L(\mathbb{D})$ commutes with $J$, because $\rho_L(\mathbb{D})$ is commutative. $\square$</p>
+<p>So $\rho_L(\mathbb{D})$ is its own centralizer and its own bicommutant, a <strong>maximal commutative subalgebra</strong> of $M_2(\mathbb{R})$ of dimension two. This is the degeneration of the biquaternion double centralizer statement, where the centralizer of $\rho_L(\mathbb{B})$ is the image of the right regular representation $\rho_R(\mathbb{B})$, a distinct copy of complex dimension four that commutes with $\rho_L(\mathbb{B})$; here the two copies coincide, $\rho_R(\mathbb{D}) = \rho_L(\mathbb{D})$, and the algebra is its own centralizer because it is already commutative.</p>
+<h2 id="the-real-form-and-the-relation-to-the-biquaternion-case">The Real Form and the Relation to the Biquaternion Case</h2>
+<p>The image $\rho_L(\mathbb{D})$ is defined over $\mathbb{R}$ and consists of the real symmetric matrices of the special form $aI+bJ$. Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ the regular representation of $\mathbb{B}$ is the left action of $M_2(\mathbb{C})$ on the four-real-dimensional space $\mathbb{B}$, and its matrix is $4\times4$ over $\mathbb{C}$. The split-complex case is the two-dimensional real shadow of that construction:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>feature</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{D}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dimension over the base field</td>
+<td>$4$ over $\mathbb{C}$</td>
+<td>$2$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>regular matrix</td>
+<td>$4\times4$, complex, one sign per entry</td>
+<td>$2\times2$, real, symmetric</td>
+</tr>
+<tr>
+<td>left vs right</td>
+<td>$\rho_R(\tilde{Q})$ distinct from $\rho_L(\tilde{Q})$, the two copies commuting</td>
+<td>$\rho_L = \rho_R$ (commutativity)</td>
+</tr>
+<tr>
+<td>determinant of the regular matrix</td>
+<td>$N(\tilde{Q})^2$</td>
+<td>$N(Z) = a^2-b^2$</td>
+</tr>
+<tr>
+<td>eigenvalues</td>
+<td>the roots of a complex quartic</td>
+<td>the two real numbers $Z_\pm$</td>
+</tr>
+<tr>
+<td>diagonalisation</td>
+<td>block diagonalisation into two minimal ideals</td>
+<td>diagonalisation by $P$ into $\mathbb{R}\oplus\mathbb{R}$</td>
+</tr>
+<tr>
+<td>centralizer</td>
+<td>$\rho_R(\mathbb{B})$, a distinct copy</td>
+<td>the algebra itself</td>
+</tr>
+</tbody>
+</table></div>
+<p>The regular representation of $\mathbb{B}$ is reducible, splitting into the two minimal left ideals; the regular representation of $\mathbb{D}$ is likewise reducible, splitting into the two idempotent lines $I_1 = \mathbb{R}\Pi_1$ and $I_2 = \mathbb{R}\Pi_2$:</p>
+<p>$$
+\mathbb{D} = I_1 \oplus I_2, \qquad I_1 = \mathbb{R}\Pi_1, \quad I_2 = \mathbb{R}\Pi_2,
+$$</p>
+<p>on each of which $\rho_L(Z)$ acts by the scalar $Z_+$ or $Z_-$. So the two-dimensional regular representation is the direct sum of the two one-dimensional representations $Z \mapsto Z_+$ and $Z \mapsto Z_-$, and it is completely reducible, as a representation of a semisimple algebra must be.</p>
+<h2 id="summary">Summary</h2>
+<p>The left regular representation $\rho_L$ of $\mathbb{D}$ sends $Z$ to the endomorphism $W \mapsto ZW$ of the coefficient space $\mathbb{D}$, with matrix $\begin{pmatrix} a & b \\ b & a \end{pmatrix}$ in the basis $\{1, j\}$. The map is an algebra homomorphism and a faithful embedding, so $\mathbb{D}$ is isomorphic to the algebra $\{aI+bJ\}$ of real $2\times2$ matrices with $J^2 = I$, the hyperbolic analogue of the matrix model of $\mathbb{C}$. Because $\mathbb{D}$ is commutative the right regular representation coincides with the left, and the regular matrix is symmetric.</p>
+<p>The determinant of the regular matrix is the norm form, $\det\rho_L(Z) = a^2-b^2 = N(Z)$, and the trace is $2a$; multiplicativity of the determinant gives multiplicativity of the norm form, and invertibility of the matrix is the unit criterion. The characteristic polynomial is $(\lambda - Z_+)(\lambda - Z_-)$, so the eigenvalues are the idempotent coordinates; the idempotent basis diagonalises the whole algebra simultaneously, $\rho_L(Z) = \operatorname{diag}(a+b, a-b)$ up to the change of basis $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$, and the regular representation splits as the direct sum of the two one-dimensional representations $Z \mapsto Z_\pm$; the idempotents become the diagonal matrix units $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and no off-diagonal matrix unit exists. The unit-norm elements form the determinant-one subgroup, the hyperbolic rotations $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$, and the centralizer of the image is the image itself. The regular matrix is the two-dimensional real shadow of the $4\times4$ complex regular matrix of the biquaternion algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra</td>
+</tr>
+<tr>
+<td>$Z = a + j b$</td>
+<td>General split complex number</td>
+</tr>
+<tr>
+<td>$\rho_L(Z)$</td>
+<td>Left regular representation, matrix $\begin{pmatrix} a & b \\ b & a \end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$\rho_R(Z)$</td>
+<td>Right regular representation; $\rho_R = \rho_L$</td>
+</tr>
+<tr>
+<td>$I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$, $J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$</td>
+<td>Matrix units of the image, $J^2 = I$</td>
+</tr>
+<tr>
+<td>$E_{11} = \rho_L(\Pi_1)$, $E_{22} = \rho_L(\Pi_2)$</td>
+<td>Diagonal matrix units of the image</td>
+</tr>
+<tr>
+<td>$\det\rho_L(Z) = a^2-b^2$</td>
+<td>Determinant of the regular matrix, the norm form</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\rho_L(Z) = 2a$</td>
+<td>Trace of the regular matrix</td>
+</tr>
+<tr>
+<td>$P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$</td>
+<td>Change of basis to the idempotents, $P\rho_L(Z)P^{-1} = \operatorname{diag}(Z_+,Z_-)$</td>
+</tr>
+<tr>
+<td>$Z_\pm = a\pm b$</td>
+<td>Idempotent coordinates, the eigenvalues</td>
+</tr>
+<tr>
+<td>$\Pi_\pm = \tfrac12(1\pm j)$</td>
+<td>Idempotents</td>
+</tr>
+<tr>
+<td>$I_1 = \mathbb{R}\Pi_1$, $I_2 = \mathbb{R}\Pi_2$</td>
+<td>The two minimal left ideals</td>
+</tr>
+<tr>
+<td>$R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$</td>
+<td>Hyperbolic rotation matrix, $\rho_L(e^{jt})$</td>
+</tr>
+<tr>
+<td>$N(Z) = a^2-b^2$</td>
+<td>Norm form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the regular representation, the Cayley matrix and the structure of finite-dimensional algebras.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, Undergraduate Texts in Mathematics, 2008), for $2\times2$ matrix groups, the hyperbolic rotation matrices and $SO(1,1)$.</li>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the realization of split-complex numbers as matrices and its geometric meaning.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for regular representations of low-dimensional Clifford algebras.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for the double centralizer theorem and its commutative degeneration.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

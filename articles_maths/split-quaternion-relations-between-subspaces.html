@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Relations Between Subspaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-relations-between-subspaces"><strong>Split-Quaternion Relations Between Subspaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ — the scalar line $S$, the vector subspace $V$ and the two split-complex planes $\mathbb{D}_2, \mathbb{D}_3$ — are defined by different conditions, but they are not independent: they contain one another, they intersect, they sum to subspaces of $\mathbb{H}_{\mathrm{s}}$, and they are cut out of the four real coordinates by the involutions. This article collects those relations in one place, after the individual articles <em>Split-Quaternion Scalar and Vector Subspaces</em> and <em>Split-Quaternion Split-Complex Subspaces</em>, and before the structural article <em>Split-Quaternion Involution Lattice</em>, which treats the involutions themselves.</p>
+<p>Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived from the definitions by comparison of coefficients, so the article doubles as an index of the four subspaces and of the coordinate blocks.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$ are as in <em>Split-Quaternion Subspaces and the Involutions</em>, and $N$, $B$ are the norm form and its polarisation.</p>
+<h2 id="the-three-decompositions">The Three Decompositions</h2>
+<p>Two of the three involutions split $\mathbb{H}_{\mathrm{s}}$ into distinguished subspaces, and the third splits it into two further subspaces:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>fixed space</th>
+<th>anti-fixed space</th>
+<th>decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$S = \mathbb{R}\cdot 1$</td>
+<td>$V = \operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$\mathbb{H}_{\mathrm{s}} = S \oplus V$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$</td>
+<td>$\operatorname{span}\{e_1,e_2\}$</td>
+<td>$\mathbb{H}_{\mathrm{s}} = \mathbb{D}_3 \oplus \operatorname{span}\{e_1,e_2\}$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$\operatorname{span}\{1,e_1,e_2\}$</td>
+<td>$\mathbb{R} e_3$</td>
+<td>$\mathbb{H}_{\mathrm{s}} = \operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three decompositions are the <strong>scalar–vector</strong> decomposition, and the two decompositions associated with the principal involution and the reversal. Every element has three readings, one per row. The finest common refinement of the three is the coordinate-block decomposition of the next section.</p>
+<h2 id="the-four-subspaces-at-a-glance">The Four Subspaces at a Glance</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>defining condition</th>
+<th>real basis</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>subalgebra</th>
+<th>norm form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$</td>
+<td>$\bar{\tilde q} = \tilde q$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>yes, $\cong \mathbb{R}$</td>
+<td>$q_0^2$, positive definite</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>$\bar{\tilde q} = -\tilde q$</td>
+<td>$e_1,e_2,e_3$</td>
+<td>$3$</td>
+<td>no (Lie)</td>
+<td>$q_1^2-q_2^2-q_3^2$, signature $(2,1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2$</td>
+<td>closed under products of $1, e_2$</td>
+<td>$1,e_2$</td>
+<td>$2$</td>
+<td>yes, $\cong \mathbb{D}$</td>
+<td>$q_0^2-q_2^2$, signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3$</td>
+<td>$\alpha(\tilde q) = \tilde q$</td>
+<td>$1,e_3$</td>
+<td>$2$</td>
+<td>yes, $\cong \mathbb{D}$</td>
+<td>$q_0^2-q_3^2$, signature $(1,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norm forms are the restrictions of $N$; all four are non-degenerate, the first definite and the other three indefinite.</p>
+<h2 id="the-four-coordinate-blocks">The Four Coordinate Blocks</h2>
+<p>The four real coordinates of a split-quaternion are $(q_0,q_1,q_2,q_3)$ in the basis $1, e_1, e_2, e_3$. They group into four one-dimensional <strong>coordinate blocks</strong>,</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}} = \langle 1 \rangle \oplus \langle e_1 \rangle \oplus \langle e_2 \rangle \oplus \langle e_3 \rangle,
+$$</p>
+<p>where $\langle \cdot\rangle$ denotes the real span of the displayed elements. Each of the blocks $\langle 1\rangle$, $\langle e_2\rangle$ and $\langle e_3\rangle$ is the intersection of the distinguished subspaces containing it, and $\langle e_1\rangle$ is the complement of $\mathbb{D}_2 + \mathbb{D}_3$ in $\mathbb{H}_{\mathrm{s}}$; each of the four distinguished subspaces is a sum of blocks:</p>
+<p>$$
+S = \langle 1 \rangle, \qquad V = \langle e_1 \rangle \oplus \langle e_2 \rangle \oplus \langle e_3 \rangle,
+$$</p>
+<p>$$
+\mathbb{D}_2 = \langle 1 \rangle \oplus \langle e_2 \rangle, \qquad \mathbb{D}_3 = \langle 1 \rangle \oplus \langle e_3 \rangle .
+$$</p>
+<p>The blocks are the building units of the article: every intersection below is a sum of blocks, which is why the dimension arithmetic is so simple.</p>
+<h2 id="the-intersections">The Intersections</h2>
+<p>The ten pairwise intersections of the four subspaces, with the dimensions (the diagonal carries the dimensions of the subspaces themselves):</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$S$</th>
+<th>$V$</th>
+<th>$\mathbb{D}_2$</th>
+<th>$\mathbb{D}_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Explicitly,</p>
+<p>$$
+S \cap V = \{0\}, \quad S \cap \mathbb{D}_2 = S, \quad S \cap \mathbb{D}_3 = S, \quad V \cap \mathbb{D}_2 = \mathbb{R} e_2,
+$$</p>
+<p>$$
+V \cap \mathbb{D}_3 = \mathbb{R} e_3, \quad \mathbb{D}_2 \cap \mathbb{D}_3 = S .
+$$</p>
+<p>Three features are worth isolating:</p>
+<ul>
+<li>The scalar line is contained in both split-complex planes, so it meets them in dimension $1$; it meets the vector subspace only in the origin, being the complement of $V$ in the scalar–vector decomposition.</li>
+<li>The vector subspace meets each split-complex plane in a single line, spanned by the common basis element $e_2$ or $e_3$, and the two planes meet each other in the scalar line.</li>
+<li>No two of the four subspaces are equal, and no pair except the obvious containment pairs is nested: $S \subset \mathbb{D}_2$, $S \subset \mathbb{D}_3$, and $S \subset S \oplus V$ but $S \not\subseteq V$, $\mathbb{D}_2 \not\subseteq \mathbb{D}_3$.</li>
+</ul>
+<h2 id="the-sums">The Sums</h2>
+<p>The sums of the pairs, with the same ordering:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$S$</th>
+<th>$V$</th>
+<th>$\mathbb{D}_2$</th>
+<th>$\mathbb{D}_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>$4$</td>
+<td>$3$</td>
+<td>$4$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2$</td>
+<td>$2$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3$</td>
+<td>$2$</td>
+<td>$4$</td>
+<td>$3$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The dimension of a sum is the sum of the dimensions minus the dimension of the intersection. The pairs that span the whole algebra are $S + V = \mathbb{H}_{\mathrm{s}}$, $V + \mathbb{D}_2 = \mathbb{H}_{\mathrm{s}}$, and $V + \mathbb{D}_3 = \mathbb{H}_{\mathrm{s}}$; the pair $\mathbb{D}_2 + \mathbb{D}_3 = \operatorname{span}\{1,e_2,e_3\}$ has dimension $3$ and misses the line $\mathbb{R} e_1$; and $S + \mathbb{D}_k = \mathbb{D}_k$ because $S$ lies inside each split-complex plane. The sum $V + \mathbb{D}_k$ spans the algebra because $V$ contributes $e_1$ and $\mathbb{D}_k$ contributes $1$, and together with $e_2$ or $e_3$ they exhaust the four coordinates.</p>
+<h2 id="the-involutions-as-sign-patterns">The Involutions as Sign Patterns</h2>
+<p>Each involution preserves each of the four subspaces, and its restriction to a subspace is diagonal in the displayed bases with signs $\pm 1$. The following table records the multiplicity of the sign $-1$ on each subspace, in the basis of the table above:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>$S$</th>
+<th>$V$</th>
+<th>$\mathbb{D}_2$</th>
+<th>$\mathbb{D}_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$0$ of $1$</td>
+<td>$3$ of $3$</td>
+<td>$1$ of $2$</td>
+<td>$1$ of $2$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$0$ of $1$</td>
+<td>$2$ of $3$</td>
+<td>$1$ of $2$</td>
+<td>$0$ of $2$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$0$ of $1$</td>
+<td>$1$ of $3$</td>
+<td>$0$ of $2$</td>
+<td>$1$ of $2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The vanishing rows are the definitions: $\bar{\cdot}$ acts as the identity exactly on $S$, $\alpha$ exactly on $\mathbb{D}_3$, and $\rho$ exactly on $\operatorname{span}\{1,e_1,e_2\} \supset \mathbb{D}_2$. The full multiplicities give the anti-fixed spaces: $\bar{\cdot}$ negates all of $V$, $\alpha$ negates the plane $\operatorname{span}\{e_1,e_2\}$, and $\rho$ negates the line $\mathbb{R} e_3$. The remaining entries are mixed restrictions. The composition rule $\bar{\cdot} = \alpha\rho$ is visible row by row: the coordinates negated by $\bar{\cdot}$ are exactly those negated by one of $\alpha, \rho$ but not both, so the multiplicities compose by symmetric difference.</p>
+<h2 id="how-the-product-and-the-commutator-act">How the Product and the Commutator Act</h2>
+<h3 id="the-scalar-line">The Scalar Line</h3>
+<p>$S$ is the centre, so it acts on every subspace by scalar multiplication: $S \cdot V \subseteq V$, $S \cdot \mathbb{D}_k \subseteq \mathbb{D}_k$, and $[S, \tilde q] = 0$ for all $\tilde q$. As a product, $S \times S \to S$ is closed.</p>
+<h3 id="the-vector-subspace">The Vector Subspace</h3>
+<p>The product of two vectors is not a vector: it splits as</p>
+<p>$$
+\mathbf{u}\mathbf{v} = -B(\mathbf{u},\mathbf{v})\cdot 1 + \tfrac{1}{2}[\mathbf{u},\mathbf{v}],
+$$</p>
+<p>with scalar part $-B(\mathbf{u},\mathbf{v}) \in S$ and the remainder $\tfrac{1}{2}[\mathbf{u},\mathbf{v}] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $e_1, e_2, e_3$,</p>
+<p>$$
+[e_1,e_2] = 2 e_3, \qquad [e_2,e_3] = -2 e_1, \qquad [e_3,e_1] = 2 e_2,
+$$</p>
+<p>so $[V,V] \subseteq V$ and $V \cong \mathfrak{sl}_2(\mathbb{R})$. The bracket is alternating and satisfies the Jacobi identity. It is the antisymmetrisation of the product on the vector subspace.</p>
+<h3 id="the-split-complex-planes">The Split-Complex Planes</h3>
+<p>Each split-complex plane is a commutative subalgebra, so $\mathbb{D}_k \cdot \mathbb{D}_k \subseteq \mathbb{D}_k$ and $[\mathbb{D}_k, \mathbb{D}_k] = 0$. Across the planes the product leaves both: since $e_2 e_3 = -e_1$ and $e_3 e_2 = e_1$, one has $\mathbb{D}_2 \cdot \mathbb{D}_3 = \mathbb{H}_{\mathrm{s}}$ and $\mathbb{D}_2 \cdot \mathbb{D}_3 \not\subseteq \mathbb{D}_2 \cup \mathbb{D}_3$. The product of a scalar with a plane stays in the plane, and the two planes share only the scalar line.</p>
+<h3 id="the-operation-table">The Operation Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>$S$</th>
+<th>$V$</th>
+<th>$\mathbb{D}_2$</th>
+<th>$\mathbb{D}_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S \cdot$</td>
+<td>$S$</td>
+<td>$V$</td>
+<td>$\mathbb{D}_2$</td>
+<td>$\mathbb{D}_3$</td>
+</tr>
+<tr>
+<td>$V \cdot$</td>
+<td>$V$</td>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2 \cdot$</td>
+<td>$\mathbb{D}_2$</td>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>$\mathbb{D}_2$</td>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3 \cdot$</td>
+<td>$\mathbb{D}_3$</td>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>$\mathbb{D}_3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The commutator table is the antisymmetrisation of this one: it vanishes on the diagonal pairs among $S, \mathbb{D}_2, \mathbb{D}_3$ (all commutative), equals the bracket of $V$ restricted to the vector–vector entry, and is nonzero only where the product table has an off-diagonal entry that is not symmetric.</p>
+<h2 id="worked-verifications">Worked Verifications</h2>
+<p><strong>Example (an intersection of dimension one).</strong> Take $V \cap \mathbb{D}_2$. An element is $q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0' + q_2' e_2$; comparing coefficients gives $q_1 = 0$, $q_3 = 0$, $q_0' = 0$ and $q_2 = q_2'$, so the intersection is $\mathbb{R} e_2$, of dimension $1$, as tabulated.</p>
+<p><strong>Example (a pair that spans the algebra).</strong> The four elements $e_1, e_2, e_3$ span $V$ and $1, e_2$ span $\mathbb{D}_2$; together they include $1, e_1, e_2, e_3$, a basis, so $V + \mathbb{D}_2 = \mathbb{H}_{\mathrm{s}}$, in agreement with $\dim V + \dim \mathbb{D}_2 - \dim(V \cap \mathbb{D}_2) = 3 + 2 - 1 = 4$.</p>
+<p><strong>Example (a product that leaves its subspace).</strong> $e_2 \in \mathbb{D}_2$ and $e_3 \in V$; their product is $e_2 e_3 = -e_1 \notin \mathbb{D}_2$ and $\notin \mathbb{D}_3$ (indeed $e_1 \in V$), consistent with the entry $\mathbb{H}_{\mathrm{s}}$ in the product table.</p>
+<p><strong>Example (a mixed element and its blocks).</strong> For $\tilde q = 2 + 3e_1 - e_2 + 4e_3$ the scalar block is $2$, the vector block is $3e_1 - e_2 + 4e_3$, and the split-complex readings are $2 - e_2 + 4e_3$ in $\mathbb{D}_2$ and $2 + 3e_1 + 4e_3$ modulo the complementary block; the involution images are $\bar{\tilde q} = 2 - 3e_1 + e_2 - 4e_3$, $\alpha(\tilde q) = 2 - 3e_1 + e_2 + 4e_3$, $\rho(\tilde q) = 2 + 3e_1 - e_2 - 4e_3$.</p>
+<h2 id="the-relation-to-the-corresponding-article-for-math269">The Relation to the Corresponding Article for $\mathbb{B}$</h2>
+<p>The biquaternion article <em>Biquaternion Relations Between Subspaces</em> performs the same task for the six distinguished subspaces of $\mathbb{B}$, cut out by the four $\mathbb{C}$-linear and conjugate-linear involutions. The bookkeeping is analogous — decompositions, a glance table, coordinate blocks, tables of intersections, sums, sign patterns and operations — but the geometry of the tables differs, because $\mathbb{B}$ has eight real coordinates and six subspaces, whereas $\mathbb{H}_{\mathrm{s}}$ has four coordinates and four subspaces; in $\mathbb{B}$ the blocks have dimensions $1$ and $3$, while here all four blocks have dimension $1$, which is why the intersections here take only the values $0, 1, 2, 3$. The Biquaternions category is the structural model; nothing biquaternion-specific — the central unit $i$, the quaternionic half-algebra, the Hermitian and anti-Hermitian pairing — is imported here.</p>
+<h2 id="summary">Summary</h2>
+<p>The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ are the scalar line $S = \langle 1\rangle$, the vector subspace $V = \langle e_1,e_2,e_3\rangle$, and the two split-complex planes $\mathbb{D}_2 = \langle 1,e_2\rangle$ and $\mathbb{D}_3 = \langle 1,e_3\rangle$. They are the eigenspaces of the involutions, with $\bar{\cdot}$ giving $S \oplus V$, $\alpha$ giving $\mathbb{D}_3 \oplus \operatorname{span}\{e_1,e_2\}$, and $\rho$ giving $\operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$; the finest common decomposition is the coordinate-block decomposition $\mathbb{H}_{\mathrm{s}} = \langle 1\rangle \oplus \langle e_1\rangle \oplus \langle e_2\rangle \oplus \langle e_3\rangle$.</p>
+<p>The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, and $\mathbb{D}_2 \cap \mathbb{D}_3 = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,e_2,e_3\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule $\bar{\cdot} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{D}_2, \mathbb{D}_3$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathfrak{sl}_2(\mathbb{R})$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>the split-quaternion algebra</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$S = \langle 1\rangle$</td>
+<td>the scalar line</td>
+<td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
+</tr>
+<tr>
+<td>$V = \langle e_1,e_2,e_3\rangle$</td>
+<td>the vector subspace</td>
+<td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2 = \langle 1,e_2\rangle$, $\mathbb{D}_3 = \langle 1,e_3\rangle$</td>
+<td>the split-complex planes</td>
+<td><em>Split-Quaternion Split-Complex Subspaces</em></td>
+</tr>
+<tr>
+<td>$\langle \cdot \rangle$</td>
+<td>real span of the displayed elements</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$, $\alpha$, $\rho$</td>
+<td>conjugation, principal involution, reversal</td>
+<td><em>Split-Quaternion Subspaces and the Involutions</em></td>
+</tr>
+<tr>
+<td>$B$, $N$</td>
+<td>the polarised form and the norm form</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$[\tilde q,y] = \tilde q y-y\tilde q$</td>
+<td>the commutator</td>
+<td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the systematic bookkeeping of subspaces and their intersections in an algebra with idempotents.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the coordinate blocks and the involutions of a Clifford algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the lattice of subspaces fixed by the involutions of the low-dimensional Clifford algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -53,17 +53,17 @@
         <h1 id="split-biquaternion-norm-and-invertibility"><strong>Split-Biquaternion Norm and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article studies the norm form of the split biquaternion algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the norm form and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.</p>
 <p>Throughout, a split biquaternion is written</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$</p>
 <p>The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.</p>
-<p>The idempotents of the split complex algebra are denoted $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
+<p>The idempotents of the split complex algebra are denoted $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
 <p>$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$</p>
-<p>with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.</p>
+<p>with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.</p>
 <h2 id="the-norm-form">The Norm Form</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>norm form</strong> of a split biquaternion $\tilde{Q}$ is</p>
@@ -102,9 +102,9 @@ $$</p>
 <p><strong>Corollary.</strong> If $N(\tilde{Q})$ and $N(\tilde{R})$ are invertible in $\mathbb{D}$, then $N(\tilde{Q} \circ \tilde{R})$ is invertible in $\mathbb{D}$.</p>
 <p><strong>Corollary.</strong> If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.</p>
 <h3 id="the-norm-form-in-the-idempotent-basis">The Norm Form in the Idempotent Basis</h3>
-<p>In the idempotent basis, the norm form takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,</p>
+<p>In the idempotent basis, the norm form takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,</p>
 <p>$$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-,
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
 $$</p>
 <p>where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \bar{\tilde{Q}}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.</p>
 <p>So the norm form of a split biquaternion is the pair of non-negative real numbers $(N_{\mathbb{H}}(\tilde{Q}_+), N_{\mathbb{H}}(\tilde{Q}_-))$, embedded in the split complex algebra via the idempotent basis. This is the cleanest form of the norm form, and it is the form in which the invertibility criterion is most transparent.</p>
@@ -180,7 +180,7 @@ $$</p>
 N(\tilde{Q}) N(\tilde{Q}^{-1}) = N(e_0) = 1,
 $$</p>
 <p>so $N(\tilde{Q})$ is invertible in $\mathbb{D}$, with inverse $N(\tilde{Q}^{-1})$. $\square$</p>
-<p><strong>Remark.</strong> The hypothesis is not simply $\tilde{Q} \neq 0$, nor $N(\tilde{Q}) \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = e_+$ one has $N(\tilde{Q}) = e_+$, a nonzero zero divisor of $\mathbb{D}$, and $e_+$ is a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $e_+ e_- = 0$.</p>
+<p><strong>Remark.</strong> The hypothesis is not simply $\tilde{Q} \neq 0$, nor $N(\tilde{Q}) \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_+$ one has $N(\tilde{Q}) = \tilde\Pi_+$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde\Pi_+$ is a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $\tilde\Pi_+ \tilde\Pi_- = 0$.</p>
 <h3 id="the-inverse-formula">The Inverse Formula</h3>
 <p>When $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently when $\tilde{Q}$ is invertible, the inverse is</p>
 <p>$$
@@ -188,15 +188,15 @@ $$</p>
 $$</p>
 <p>This is the split biquaternion analogue of the formula $q^{-1} = \bar{q}/|q|^2$ for quaternions.</p>
 <h3 id="the-criterion-in-the-idempotent-basis">The Criterion in the Idempotent Basis</h3>
-<p>The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,</p>
+<p>The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,</p>
 <p>$$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-.
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-.
 $$</p>
-<p>Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $N(\tilde{Q}) \neq 0$ if and only if</p>
+<p>Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:</p>
 <p>$$
-N_{\mathbb{H}}(\tilde{Q}_+) \neq 0 \quad \text{or} \quad N_{\mathbb{H}}(\tilde{Q}_-) \neq 0.
+N_{\mathbb{H}}(\tilde{Q}_+) \neq 0 \quad \text{and} \quad N_{\mathbb{H}}(\tilde{Q}_-) \neq 0.
 $$</p>
-<p>Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is</p>
+<p>Mere non-vanishing of $N(\tilde{Q})$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_+$ above shows. Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is</p>
 <p>$$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
 $$</p>
@@ -272,7 +272,7 @@ $$</p>
 <p>The Frobenius theorem states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The split biquaternion algebra is a fourth finite-dimensional associative real algebra, but it is not a division algebra, because it contains zero divisors.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
 <p>We now examine how the invertible elements are distributed among the four fixed-point subspaces of $\mathbb{H}_{\mathbb{D}}$ defined in the preceding article. The criterion is the same in all cases: an element is invertible if and only if its norm form is invertible in $\mathbb{D}$, equivalently if and only if both of its idempotent components are nonzero.</p>
-<h3 id="the-split-complex-subspace-math189">The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</h3>
+<h3 id="the-split-complex-subspace-math192">The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</h3>
 <p>An element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ has the form</p>
 <p>$$
 \tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{D}.
@@ -283,7 +283,7 @@ N(\tilde{Q}) = Q_0^2.
 $$</p>
 <p>Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, this vanishes only when $Q_0 = 0$; the element $Q_0 e_0$ is a zero divisor if and only if $Q_0$ is a zero divisor in $\mathbb{D}$, that is a nonzero multiple of $1 \pm j$, which need not be detected by $N$ vanishing. So the split complex subspace contains the zero divisors $Q_0 e_0$ with $Q_0 = t(1 \pm j)$ for $t \neq 0$, inherited from the split complex algebra.</p>
 <p>The invertible elements of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ are those with $Q_0$ not a multiple of $1 \pm j$, i.e., with $Q_0$ invertible in $\mathbb{D}$.</p>
-<h3 id="the-quaternion-subspace-math208">The Quaternion Subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$</h3>
+<h3 id="the-quaternion-subspace-math211">The Quaternion Subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$</h3>
 <p>An element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
@@ -293,7 +293,7 @@ $$</p>
 N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2.
 $$</p>
 <p>This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e., if and only if $\tilde{Q} = 0$. So the quaternion subspace contains no zero divisors, and every nonzero element is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a copy of the division algebra $\mathbb{H}$.</p>
-<h3 id="the-hermitian-subspace-math216">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-hermitian-subspace-math219">The Hermitian Subspace $\mathbb{M}_+$</h3>
 <p>An element of $\mathbb{M}_+$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
@@ -308,7 +308,7 @@ $$</p>
 N(\tilde{Q}) = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
 $$</p>
 <p>which is a <strong>real</strong>, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{M}_+$ contains no zero divisors and every nonzero element of $\mathbb{M}_+$ is invertible.</p>
-<h3 id="the-anti-hermitian-subspace-math229">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-anti-hermitian-subspace-math232">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
 <p>An element of $\mathbb{M}_-$ has the form</p>
 <p>$$
 \tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad r_0, q_1, q_2, q_3 \in \mathbb{R}.
@@ -395,15 +395,15 @@ $$</p>
 <td>Group of units</td>
 </tr>
 <tr>
-<td>$e_+ = \tfrac{1}{2}(1 + j)$</td>
+<td>$\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$</td>
 <td>Positive idempotent</td>
 </tr>
 <tr>
-<td>$e_- = \tfrac{1}{2}(1 - j)$</td>
+<td>$\tilde\Pi_- = \tfrac{1}{2}(1 - j)$</td>
 <td>Negative idempotent</td>
 </tr>
 <tr>
-<td>$\tilde{Q}_\pm = \tilde{Q} e_\pm$</td>
+<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$</td>
 <td>Idempotent components</td>
 </tr>
 <tr>

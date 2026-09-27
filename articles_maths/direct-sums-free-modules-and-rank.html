@@ -89,7 +89,7 @@ $$</p>
 <p>For two submodules the condition reduces to $M=N_1+N_2$ and $N_1\cap N_2=0$. The external sum and the internal sum are identified by sending $(n_i)$ to $\sum_i \iota_i(n_i)$, so no distinction is needed once the summands are submodules of a common module.</p>
 <h3 id="direct-summands-and-idempotents">Direct Summands and Idempotents</h3>
 <p><strong>Definition.</strong> A submodule $N \subseteq M$ is a <strong>direct summand</strong> of $M$ if $M=N\oplus N'$ for some submodule $N'$, called a <strong>complement</strong> of $N$.</p>
-<p>Over a field every subspace is a direct summ, because a basis of a subspace extends to a basis of the whole space; over a general ring this fails, and the failure is not covered here.</p>
+<p>Over a field every subspace is a direct summand, because a basis of a subspace extends to a basis of the whole space; over a general ring this fails, and the failure is not covered here.</p>
 <p>The module-theoretic content of a direct summand is an idempotent endomorphism.</p>
 <p><strong>Proposition.</strong> $N$ is a direct summand of $M$ if and only if $N=e(M)$ for an idempotent $e \in \operatorname{End}_R(M)$, that is $e^2=e$.</p>
 <p><em>Proof.</em> If $M=N\oplus N'$, let $e$ be the projection onto $N$ along $N'$; it is $R$-linear, $e(M)=N$ and $e^2=e$. Conversely, given $e^2=e$, put $N=e(M)$; then $\operatorname{id}-e$ is idempotent with image $\ker e$, and every $m=e(m)+(\operatorname{id}-e)(m)$ with $e(m) \in N$ and $m-e(m) \in \ker e$, so $M=N+\ker e$. If $m \in N \cap \ker e$ then $m=e(m')$ and $0=e(m)=e^2(m')=e(m')=m$, so the sum is direct. $\square$</p>
@@ -170,11 +170,11 @@ $$</p>
 <h3 id="over-a-principal-ideal-domain">Over a Principal Ideal Domain</h3>
 <p>Over a principal ideal domain, every submodule of a free module is free. This is the theorem that makes a presentation $0 \to K \to R^n \to M \to 0$ computable: $K$ has a basis, so it is described by a matrix, and the structure of $M$ is read off from that matrix. Over a general commutative ring the corresponding statement is false, and the standard counterexample is the ideal $(x,y) \subseteq R=k[x,y]$, which is a submodule of the free module $R$ of rank $1$ and is not free: it is not principal, so it is not free of rank $1$, and it is not free of rank $n \ge 2$ either, since tensoring with the fraction field $k(x,y)$ turns it into $k(x,y)$ itself, of dimension $1$, while a free module of rank $n$ would give dimension $n$.</p>
 <h3 id="over-the-split-complex-numbers">Over the Split Complex Numbers</h3>
-<p>The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $e_\pm=\tfrac{1}{2}(1 \pm j)$, which satisfy $e_+^2=e_+$, $e_-^2=e_-$, $e_+e_-=0$ and $e_++e_-=1$. The ring isomorphism</p>
+<p>The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_\pm=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_+^2=\pi_+$, $\pi_-^2=\pi_-$, $\pi_+\pi_-=0$ and $\pi_++\pi_-=1$. The ring isomorphism</p>
 <p>$$
 \mathbb{D} \cong \mathbb{R} \times \mathbb{R}, \qquad a+bj \longmapsto (a+b,\ a-b),
 $$</p>
-<p>sends $e_+$ to $(1,0)$ and $e_-$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and</p>
+<p>sends $\pi_+$ to $(1,0)$ and $\pi_-$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and</p>
 <p>$$
 \mathbb{D}^{(I)} \cong \mathbb{R}^{(I)} \oplus \mathbb{R}^{(I)}
 $$</p>

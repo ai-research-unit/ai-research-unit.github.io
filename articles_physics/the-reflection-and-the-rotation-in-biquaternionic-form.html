@@ -338,7 +338,7 @@ $$</p>
 $$</p>
 <p>from which the whole chirality behaviour follows. Every <strong>even</strong> element commutes with $\gamma_5$, so an even element maps each chiral half into itself; every <strong>odd</strong> element anticommutes with it — vectors and trivectors alike, hence every odd element — so an odd element exchanges the halves:</p>
 <p>$$
-\gamma^\mu P_+ = P_-\,\gamma^\mu .
+\gamma^\mu \tilde\Pi_R = \tilde\Pi_L\,\gamma^\mu .
 $$</p>
 <p>Combine this with the grading of the second section and the statement is: <strong>rotations preserve chirality, reflections reverse it.</strong> A rotation cannot change which chiral half a spinor belongs to, and a reflection always does. Chirality is not an extra label attached to the spinor; it is the eigenvalue of the operator that tells the two halves of the algebra apart, and only the odd half moves it.</p>
 <p>The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra,</p>
@@ -380,9 +380,9 @@ $$</p>
 <p>This is the precise sense in which chirality is tied to spin $\tfrac12$: the two Weyl spinors are the two smallest nontrivial modules of the two factors, and "left-handed" <em>means</em> "$(\tfrac12,0)$". A scalar carries no chirality because it sits in neither factor, and a vector is chirality-blind because it sits in both equally. The link between spin $\tfrac12$ and chirality is not a coincidence to be explained; they are the two coordinates of one label.</p>
 <p>The exchange of the two factors is an orientation-reversing operation, which is why it takes a reflection. <strong>Parity is exactly that reflection.</strong> It fixes the time direction and reverses the three spatial ones, and it exchanges the two spinor modules,</p>
 <p>$$
-\Pi : (\tfrac12,0) \longleftrightarrow (0,\tfrac12),
+\mathsf{P} : (\tfrac12,0) \longleftrightarrow (0,\tfrac12),
 $$</p>
-<p>verified at the level of the projectors as $\gamma^0P_+ = P_-\gamma^0$. Parity violation — the statement that the weak interaction couples to one chirality and not the other — is therefore not an accidental property of the Standard Model but the statement that the interaction distinguishes the two factors of $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$. This is what <em>Chiral Fermions in the Biquaternion Framework</em> and <em>The Neutrino and Majorana Fermions in Biquaternionic Form</em> develop on the physical side.</p>
+<p>verified at the level of the projectors as $\gamma^0\tilde\Pi_R = \tilde\Pi_L\gamma^0$. Parity violation — the statement that the weak interaction couples to one chirality and not the other — is therefore not an accidental property of the Standard Model but the statement that the interaction distinguishes the two factors of $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$. This is what <em>Chiral Fermions in the Biquaternion Framework</em> and <em>The Neutrino and Majorana Fermions in Biquaternionic Form</em> develop on the physical side.</p>
 <p>One corollary concerns the mass. The mass term of the series is linear and chirality-off-diagonal; being even, $m$ itself commutes with $\gamma_5$ and does not flip chirality. What the mass does is <em>couple</em> the two chiral equations, so that chirality ceases to be conserved — it permits the flip, while the generators perform it. A massive fermion therefore has no definite chirality, which is the operator-level content of the standard statement that chirality and helicity agree only in the massless limit.</p>
 <h2 id="why-the-pauli-algebra-cannot-carry-chirality">Why the Pauli Algebra Cannot Carry Chirality</h2>
 <p>The non-relativistic limit of the Dirac equation is governed by the Pauli matrices, and it is natural to ask whether chirality could have been discussed there. It could not, and the reason is algebraic and exact.</p>
@@ -462,7 +462,7 @@ $$</p>
 <td>Chirality operator, $\gamma_5^2 = I_4$</td>
 </tr>
 <tr>
-<td>$P_\pm = \tfrac12(1\pm\gamma_5)$</td>
+<td>$\tilde\Pi_{L,R} = \tfrac12(1\pm\gamma_5)$</td>
 <td>Chirality projectors, rank $2$</td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ $$</p>
 <td>Reflection parity of a module map, linear or anti-linear</td>
 </tr>
 <tr>
-<td>$\Pi$</td>
+<td>$\mathsf{P}$</td>
 <td>Parity reflection; exchanges the two chiral halves</td>
 </tr>
 </tbody>

@@ -92,14 +92,14 @@ $$</p>
 <p>A body in rigid rotation with angular velocity $\boldsymbol{\omega}$ carries a charge current $\mathbf{j} = \rho_c\,\boldsymbol{\omega}\times\mathbf{r}$ and a mass current $\rho_m\,\boldsymbol{\omega}\times\mathbf{r}$, where $\rho_c$ and $\rho_m$ are the charge and mass densities. Its magnetic moment and its mechanical angular momentum are</p>
 <p>$$
 \boldsymbol{\mu} = \frac{1}{2}\int \rho_c(\mathbf{r})\,\mathbf{r}\times(\boldsymbol{\omega}\times\mathbf{r})\,d^3x
-= \frac{1}{2}\,\hat{\Pi}\,\boldsymbol{\omega},
+= \frac{1}{2}\,\hat{\mathcal{M}}\,\boldsymbol{\omega},
 \qquad
 \mathbf{L} = \int \rho_m(\mathbf{r})\,\mathbf{r}\times(\boldsymbol{\omega}\times\mathbf{r})\,d^3x
 = \hat{I}\,\boldsymbol{\omega},
 $$</p>
 <p>where</p>
 <p>$$
-\hat{\Pi}_{ij} = \int \rho_c(\mathbf{r})\left(r^2\delta_{ij} - r_ir_j\right)d^3x,
+\hat{\mathcal{M}}_{ij} = \int \rho_c(\mathbf{r})\left(r^2\delta_{ij} - r_ir_j\right)d^3x,
 \qquad
 \hat{I}_{ij} = \int \rho_m(\mathbf{r})\left(r^2\delta_{ij} - r_ir_j\right)d^3x
 $$</p>
@@ -109,7 +109,7 @@ $$</p>
 <p>$$
 \rho_c(\mathbf{r}) = \frac{q}{m}\,\rho_m(\mathbf{r}),
 $$</p>
-<p>then the two tensors are proportional, $\hat{\Pi} = (q/m)\hat{I}$, and the moment is</p>
+<p>then the two tensors are proportional, $\hat{\mathcal{M}} = (q/m)\hat{I}$, and the moment is</p>
 <p>$$
 \boldsymbol{\mu} = \frac{1}{2}\,\frac{q}{m}\,\hat{I}\,\boldsymbol{\omega}
 = \frac{q}{2m}\,\mathbf{L}.
@@ -121,15 +121,15 @@ $$</p>
 $$</p>
 <p>and this is the <strong>classical theorem</strong>: any rigid distribution of charge whose density is proportional to its mass density has $g = 1$, independently of the shape of the body. The theorem is the reason $g = 1$ is the reference value, and the reason a measured value different from one is evidence of magnetism that is not a convective current.</p>
 <h3 id="the-classical-distributions">The Classical Distributions</h3>
-<p>For a body that is not proportional, the value of $g$ is the ratio of the two inertia integrals about the rotation axis. Three elementary axisymmetric bodies, all of unit radius and carrying unit total charge and unit total mass, give the values of $\hat{\Pi}_{zz}$ and $\hat{I}_{zz}$ collected below. The uniform sphere and the thin spherical shell have proportional densities and return $g=1$; a distribution whose charge is concentrated on a ring or a shell while its mass is distributed uniformly returns a different value, and the table shows the range.</p>
+<p>For a body that is not proportional, the value of $g$ is the ratio of the two inertia integrals about the rotation axis. Three elementary axisymmetric bodies, all of unit radius and carrying unit total charge and unit total mass, give the values of $\hat{\mathcal{M}}_{zz}$ and $\hat{I}_{zz}$ collected below. The uniform sphere and the thin spherical shell have proportional densities and return $g=1$; a distribution whose charge is concentrated on a ring or a shell while its mass is distributed uniformly returns a different value, and the table shows the range.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Charge distribution</th>
 <th>Mass distribution</th>
-<th>$\hat{\Pi}_{zz}$</th>
+<th>$\hat{\mathcal{M}}_{zz}$</th>
 <th>$\hat{I}_{zz}$</th>
-<th>$g = \hat{\Pi}_{zz}/\hat{I}_{zz}$</th>
+<th>$g = \hat{\mathcal{M}}_{zz}/\hat{I}_{zz}$</th>
 </tr>
 </thead>
 <tbody>
@@ -189,11 +189,11 @@ $$</p>
 <h3 id="the-condition-for-g-2">The Condition for g = 2</h3>
 <p>The general condition for the convective value $g=2$ is read off the definition,</p>
 <p>$$
-g = \frac{2m}{q}\frac{\mu}{L} = \frac{m}{q}\frac{\hat{\Pi}_{zz}}{\hat{I}_{zz}} = 2
+g = \frac{2m}{q}\frac{\mu}{L} = \frac{m}{q}\frac{\hat{\mathcal{M}}_{zz}}{\hat{I}_{zz}} = 2
 \qquad\Longleftrightarrow\qquad
-\hat{\Pi}_{zz} = 2\,\frac{q}{m}\,\hat{I}_{zz},
+\hat{\mathcal{M}}_{zz} = 2\,\frac{q}{m}\,\hat{I}_{zz},
 $$</p>
-<p>a single scalar condition for rotation about a given axis, and a tensor condition in general. A generic rigid body does not satisfy it. The condition can be met by a deliberate choice: a body whose charge is concentrated on the equator of a sphere, with $\hat{\Pi}_{zz} = qa^2$, meets it when the mass is distributed as the combination</p>
+<p>a single scalar condition for rotation about a given axis, and a tensor condition in general. A generic rigid body does not satisfy it. The condition can be met by a deliberate choice: a body whose charge is concentrated on the equator of a sphere, with $\hat{\mathcal{M}}_{zz} = qa^2$, meets it when the mass is distributed as the combination</p>
 <p>$$
 \hat{I}_{zz} = \frac{1}{2}\,ma^2
 = \frac{5}{8}\left(\frac{2}{5}ma^2\right) + \frac{3}{8}\left(\frac{2}{3}ma^2\right),
@@ -288,13 +288,13 @@ a = \frac{g-2}{2} = 1.159652\times10^{-3},
 $$</p>
 <p>and the anomaly $a=(g-2)/2$ is the one-loop Schwinger value $a\approx\alpha/2\pi = 1.161410\times10^{-3}$ together with the higher-order corrections of quantum electrodynamics. The anomaly is a radiative correction and lies outside the classical algebra; the tree-level value $g=2$, which is what the classical account supplies and what the two companion articles presuppose, is the whole of the agreement claimed.</p>
 <h2 id="summary">Summary</h2>
-<p>The gyromagnetic factor $g$, defined by $\boldsymbol{\mu} = g(q/2m)\mathbf{S}$, compares the magnetic moment of a charged configuration to its angular momentum. For a <strong>convective</strong> configuration — a rigid rotor whose charge current is the motion of its charge density — the moment and the angular momentum are the two inertia integrals $\boldsymbol{\mu} = \tfrac{1}{2}\hat{\Pi}\boldsymbol{\omega}$ and $\mathbf{L} = \hat{I}\boldsymbol{\omega}$, and proportional charge and mass densities give</p>
+<p>The gyromagnetic factor $g$, defined by $\boldsymbol{\mu} = g(q/2m)\mathbf{S}$, compares the magnetic moment of a charged configuration to its angular momentum. For a <strong>convective</strong> configuration — a rigid rotor whose charge current is the motion of its charge density — the moment and the angular momentum are the two inertia integrals $\boldsymbol{\mu} = \tfrac{1}{2}\hat{\mathcal{M}}\boldsymbol{\omega}$ and $\mathbf{L} = \hat{I}\boldsymbol{\omega}$, and proportional charge and mass densities give</p>
 <p>$$
 \boldsymbol{\mu} = \frac{q}{2m}\,\mathbf{L},
 \qquad
 g = 1 .
 $$</p>
-<p>This is the classical convective theorem. Values other than one are attainable when the densities differ, but $g=2$ requires the fine-tuned condition $\hat{\Pi}_{zz} = 2(q/m)\hat{I}_{zz}$; it holds, for example, for a body whose charge is on the equator and whose mass is $5/8$ uniform and $3/8$ on a shell. Convective magnetism is therefore not pinned to two.</p>
+<p>This is the classical convective theorem. Values other than one are attainable when the densities differ, but $g=2$ requires the fine-tuned condition $\hat{\mathcal{M}}_{zz} = 2(q/m)\hat{I}_{zz}$; it holds, for example, for a body whose charge is on the equator and whose mass is $5/8$ uniform and $3/8$ on a shell. Convective magnetism is therefore not pinned to two.</p>
 <p>The <strong>intrinsic</strong> magnetic moment is not a convective current, and its gyromagnetic factor is fixed by the representation of its angular momentum. In the biquaternion algebra the intrinsic angular momentum is generated by the half-unit</p>
 <p>$$
 g_k = -\frac{1}{2}\,e_k,
@@ -334,7 +334,7 @@ $$</p>
 <td>Gyromagnetic factor</td>
 </tr>
 <tr>
-<td>$\hat{\Pi}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$</td>
+<td>$\hat{\mathcal{M}}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$</td>
 <td>Charge inertia tensor</td>
 </tr>
 <tr>

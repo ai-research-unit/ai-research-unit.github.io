@@ -55,26 +55,27 @@
 <p>This article introduces harmonic analysis on the quaternion space as the study of the Fourier transform, convolution, and the function spaces on which they act, with the non-commutative structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers, and the complexification is mentioned only where it clarifies the structure.</p>
 <p>Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.</p>
-<h2 id="the-quaternion-space-as-a-locally-compact-abelian-group">The Quaternion Space as a Locally Compact Abelian Group</h2>
+<p><strong>Remark.</strong> In the biquaternion case the Fourier kernel is obstructed on the null cone, where the norm form vanishes and the symbol of the transform is not invertible. Here the norm form is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.</p>
+<h2 id="the-additive-group-and-its-characters">The Additive Group and Its Characters</h2>
 <h3 id="additive-structure">Additive Structure</h3>
 <p>The quaternion space $\mathbb{H}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^4$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the characters are the ordinary four-dimensional Fourier characters:</p>
 <p>$$
-\chi_\xi(q) = e^{2\pi i \operatorname{Re}(\bar{\xi} q)}, \qquad \xi \in \mathbb{H},
+\chi_\xi(\tilde q) = e^{2\pi i \operatorname{Re}(\bar{\xi} \tilde q)}, \qquad \xi \in \mathbb{H},
 $$</p>
 <p>where the exponential is the ordinary complex exponential, and the pairing is</p>
 <p>$$
-\langle \xi, q \rangle = \operatorname{Re}(\bar{\xi} q) = \xi_0 q_0 + \xi_1 q_1 + \xi_2 q_2 + \xi_3 q_3.
+\langle \xi, \tilde q \rangle = \operatorname{Re}(\bar{\xi} \tilde q) = \xi_0 q_0 + \xi_1 q_1 + \xi_2 q_2 + \xi_3 q_3.
 $$</p>
-<p>Note the sign: the quaternion conjugation $\bar{\xi} = \xi_0 - \boldsymbol{\xi}$ gives $\bar{\xi} q = (\xi_0 - \boldsymbol{\xi})(q_0 + \mathbf{q})$, whose real part is $\xi_0 q_0 + \boldsymbol{\xi} \cdot \mathbf{q}$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.</p>
+<p>Note the sign: the quaternion conjugation $\bar{\xi} = \xi_0 - \boldsymbol{\xi}$ gives $\bar{\xi} \tilde q = (\xi_0 - \boldsymbol{\xi})(q_0 + \mathbf{q})$, whose real part is $\xi_0 q_0 + \boldsymbol{\xi} \cdot \mathbf{q}$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.</p>
 <p>So at the level of the additive group, quaternion harmonic analysis is the same as Fourier analysis on $\mathbb{R}^4$. The non-commutative structure of $\mathbb{H}$ enters only when the algebra structure is used, as in the quaternion Fourier transform and the convolution theorem.</p>
 <h3 id="the-quaternion-characters">The Quaternion Characters</h3>
 <p>The <strong>quaternion characters</strong> are the homomorphisms into the multiplicative group of $\mathbb{H}$:</p>
 <p>$$
-\chi_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)}, \qquad \xi \in \mathbb{H},
+\chi_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)}, \qquad \xi \in \mathbb{H},
 $$</p>
 <p>where $\omega$ is a fixed unit pure quaternion and the exponential is the quaternion exponential. Because $\omega^2 = -1$, this is</p>
 <p>$$
-\chi_\xi(q) = \cos(2\pi \operatorname{Re}(\bar{\xi} q)) + \omega \sin(2\pi \operatorname{Re}(\bar{\xi} q)).
+\chi_\xi(\tilde q) = \cos(2\pi \operatorname{Re}(\bar{\xi} \tilde q)) + \omega \sin(2\pi \operatorname{Re}(\bar{\xi} \tilde q)).
 $$</p>
 <p>These characters are <strong>bounded</strong> in the quaternion norm, because they take values on the unit sphere $\mathbb{S}^3$. This is the fundamental difference from the split complex case, where the characters are unbounded, and the similarity with the complex case, where the characters take values in the compact circle.</p>
 <p>So the quaternion case is intermediate between the complex case and the split complex case: the characters are bounded, but the algebra is non-commutative, and the transform depends on the choice of the unit pure quaternion $\omega$.</p>
@@ -82,36 +83,36 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>The <strong>quaternion Fourier transform</strong> of a function $f : \mathbb{H} \to \mathbb{H}$ is</p>
 <p>$$
-\hat{f}(\xi) = \int_{\mathbb{H}} f(q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, dq,
+\hat{f}(\xi) = \int_{\mathbb{H}} f(\tilde q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} \, dq,
 $$</p>
 <p>where $dq$ is Lebesgue measure on $\mathbb{H} \cong \mathbb{R}^4$, $\omega$ is a fixed unit pure quaternion, and the exponential is the quaternion exponential.</p>
 <p>Because the exponential depends on the choice of $\omega$, there are infinitely many quaternion Fourier transforms, one for each unit pure quaternion. The most common choices are:</p>
 <ul>
-<li><strong>Left-sided transform.</strong> $\hat{f}(\xi) = \int f(q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, dq$, with the exponential on the right.</li>
-<li><strong>Right-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} f(q) \, dq$, with the exponential on the left.</li>
-<li><strong>Two-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega_1 \operatorname{Re}(\bar{\xi} q)} f(q) e^{-2\pi \omega_2 \operatorname{Re}(\bar{\xi} q)} \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.</li>
+<li><strong>Left-sided transform.</strong> $\hat{f}(\xi) = \int f(\tilde q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} \, dq$, with the exponential on the right.</li>
+<li><strong>Right-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} f(\tilde q) \, dq$, with the exponential on the left.</li>
+<li><strong>Two-sided transform.</strong> $\hat{f}(\xi) = \int e^{-2\pi \omega_1 \operatorname{Re}(\bar{\xi} \tilde q)} f(\tilde q) e^{-2\pi \omega_2 \operatorname{Re}(\bar{\xi} \tilde q)} \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.</li>
 </ul>
 <p>The three transforms are related but not equivalent, and the choice depends on the application. The two-sided transform is the most general, and it is the one that diagonalizes the quaternion Cauchy–Riemann operator.</p>
 <h3 id="the-structure-of-the-transform">The Structure of the Transform</h3>
-<p>Write $f(q) = f_0(q) + f_1(q) e_1 + f_2(q) e_2 + f_3(q) e_3$ with $f_\mu : \mathbb{H} \to \mathbb{R}$. Then the quaternion Fourier transform decomposes into four real Fourier transforms, one for each component, with the kernel depending on the choice of $\omega$.</p>
+<p>Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) e_1 + f_2(\tilde q) e_2 + f_3(\tilde q) e_3$ with $f_\mu : \mathbb{H} \to \mathbb{R}$. Then the quaternion Fourier transform decomposes into four real Fourier transforms, one for each component, with the kernel depending on the choice of $\omega$.</p>
 <p>For the simplest case $\omega = e_1$, the kernel is</p>
 <p>$$
-e^{-2\pi e_1 \operatorname{Re}(\bar{\xi} q)} = \cos(2\pi \operatorname{Re}(\bar{\xi} q)) - e_1 \sin(2\pi \operatorname{Re}(\bar{\xi} q)).
+e^{-2\pi e_1 \operatorname{Re}(\bar{\xi} \tilde q)} = \cos(2\pi \operatorname{Re}(\bar{\xi} \tilde q)) - e_1 \sin(2\pi \operatorname{Re}(\bar{\xi} \tilde q)).
 $$</p>
 <p>So the transform is</p>
 <p>$$
-\hat{f}(\xi) = \int f(q) \cos(2\pi \operatorname{Re}(\bar{\xi} q)) \, dq - e_1 \int f(q) \sin(2\pi \operatorname{Re}(\bar{\xi} q)) \, dq.
+\hat{f}(\xi) = \int f(\tilde q) \cos(2\pi \operatorname{Re}(\bar{\xi} \tilde q)) \, dq - e_1 \int f(\tilde q) \sin(2\pi \operatorname{Re}(\bar{\xi} \tilde q)) \, dq.
 $$</p>
 <p>The first integral is the cosine transform, and the second is the sine transform. Both are real-valued when $f$ is real-valued, and both are ordinary four-dimensional Fourier transforms. So the quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$, tensored with the quaternion algebra.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Linearity.</strong> The transform is linear over $\mathbb{R}$, but not over $\mathbb{H}$, because $\mathbb{H}$ is non-commutative.</p>
-<p><strong>Translation.</strong> If $f_a(q) = f(q - a)$, then $\hat{f}_a(\xi) = e^{-2\pi \omega \operatorname{Re}(\bar{\xi} a)} \hat{f}(\xi)$ for the left-sided transform.</p>
-<p><strong>Modulation.</strong> If $f_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)} f(q)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.</p>
-<p><strong>Scaling.</strong> If $f_\lambda(q) = f(\lambda q)$ for $\lambda \in \mathbb{H}^\times$, then</p>
+<p><strong>Translation.</strong> If $f_a(\tilde q) = f(\tilde q - a)$, then $\hat{f}_a(\xi) = \hat{f}(\xi) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} a)}$ for the transform defined above, the kernel factor multiplying on the right because the kernel itself stands on the right.</p>
+<p><strong>Modulation.</strong> If $f_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} f(\tilde q)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.</p>
+<p><strong>Scaling.</strong> If $f_\lambda(\tilde q) = f(\lambda \tilde q)$ for $\lambda \in \mathbb{H}^\times$, then</p>
 <p>$$
 \widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^4} \hat{f}(\bar{\lambda}^{-1}\xi).
 $$</p>
-<p><strong>Rotation.</strong> If $f_u(q) = f(u q u^{-1})$ for a unit quaternion $u$, then $\hat{f}_u(\xi) = \hat{f}(u \xi u^{-1})$. The transform commutes with rotations.</p>
+<p><strong>Rotation.</strong> If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\hat{f}_u(\xi) = \hat{f}(u \xi u^{-1})$. The transform commutes with rotations.</p>
 <p><strong>Conjugation.</strong> $\widehat{\bar{f}}(\xi) = \overline{\hat{f}(-\xi)}$.</p>
 <h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
 <p><strong>Theorem.</strong> The quaternion Fourier transform extends uniquely to a unitary operator</p>
@@ -126,21 +127,21 @@ $$</p>
 <h3 id="the-inversion-theorem">The Inversion Theorem</h3>
 <p><strong>Theorem.</strong> If $f \in L^1(\mathbb{H})$ and $\hat{f} \in L^1(\mathbb{H})$, then</p>
 <p>$$
-f(q) = \int_{\mathbb{H}} \hat{f}(\xi) e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, d\xi
+f(\tilde q) = \int_{\mathbb{H}} \hat{f}(\xi) e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)} \, d\xi
 $$</p>
-<p>for almost every $q$.</p>
+<p>for almost every $\tilde q$.</p>
 <p>The inversion formula holds because the kernel is bounded and the transform is essentially the ordinary Fourier transform on $\mathbb{R}^4$.</p>
-<h2 id="convolution">Convolution</h2>
+<h2 id="the-convolution-theorem">The Convolution Theorem</h2>
 <h3 id="definition_1">Definition</h3>
 <p>The <strong>convolution</strong> of $f, g : \mathbb{H} \to \mathbb{H}$ is</p>
 <p>$$
-(f * g)(q) = \int_{\mathbb{H}} f(q - r) g(r) \, dr,
+(f * g)(\tilde q) = \int_{\mathbb{H}} f(\tilde q - r) g(r) \, dr,
 $$</p>
 <p>whenever the integral converges. This is the convolution on the additive group $\mathbb{H} \cong \mathbb{R}^4$.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
 <p><strong>Non-commutativity.</strong> The convolution is not commutative in general, because $\mathbb{H}$ is not commutative: $f * g \neq g * f$ in general. It is commutative only when one of the functions takes values in the center of $\mathbb{H}$, which is $\mathbb{R}$.</p>
 <p><strong>Associativity.</strong> $(f * g) * h = f * (g * h)$.</p>
-<p><strong>Young's inequality.</strong> If $1/p + 1/q = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then</p>
+<p><strong>Young's inequality.</strong> If $1/p + 1/\tilde q = 1/r + 1$ with $1 \leq p, \tilde q, r \leq \infty$, then</p>
 <p>$$
 \|f * g\|_r \leq \|f\|_p \|g\|_q,
 $$</p>
@@ -156,7 +157,7 @@ $$</p>
 <h3 id="approximate-identities">Approximate Identities</h3>
 <p>A sequence $(\phi_n)$ in $L^1(\mathbb{H})$ is an <strong>approximate identity</strong> if</p>
 <p>$$
-\int_{\mathbb{H}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{|q| > \delta} |\phi_n(q)| \, dq \to 0
+\int_{\mathbb{H}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{|\tilde q| > \delta} |\phi_n(\tilde q)| \, dq \to 0
 $$</p>
 <p>for every $\delta > 0$.</p>
 <p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^p(\mathbb{H})$ for $1 \leq p < \infty$, then</p>
@@ -190,7 +191,7 @@ $$</p>
 <h3 id="the-cauchy-kernel">The Cauchy Kernel</h3>
 <p>The <strong>Cauchy kernel</strong> is the distribution</p>
 <p>$$
-E(q) = \frac{\bar{q}}{|q|^4},
+E(\tilde q) = \frac{\bar{\tilde q}}{|\tilde q|^4},
 $$</p>
 <p>which satisfies</p>
 <p>$$
@@ -201,9 +202,9 @@ $$</p>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>quaternion Hilbert transform</strong> of $f : \mathbb{H} \to \mathbb{H}$ is defined by the principal value integral</p>
 <p>$$
-Hf(q) = \frac{1}{\pi^2} \, \text{p.v.} \int_{\mathbb{H}} \frac{(r - q)^{-1}}{|r - q|^2} f(r) \, dr,
+Hf(\tilde q) = \frac{1}{\pi^2} \, \text{p.v.} \int_{\mathbb{H}} \frac{(r - \tilde q)^{-1}}{|r - \tilde q|^2} f(r) \, dr,
 $$</p>
-<p>where the integral is over the quaternion space and the principal value is taken with respect to the singularity at $r = q$.</p>
+<p>where the integral is over the quaternion space and the principal value is taken with respect to the singularity at $r = \tilde q$.</p>
 <h3 id="basic-properties_2">Basic Properties</h3>
 <p><strong>Boundedness.</strong> $H$ is bounded on $L^p(\mathbb{H})$ for $1 < p < \infty$, with</p>
 <p>$$
@@ -220,13 +221,13 @@ $$</p>
 <h3 id="the-quaternion-maximal-function">The Quaternion Maximal Function</h3>
 <p>The <strong>quaternion Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{H})$ is</p>
 <p>$$
-Mf(q) = \sup_{r > 0} \frac{1}{|B(q, r)|} \int_{B(q, r)} |f(r)| \, dr,
+Mf(\tilde q) = \sup_{r > 0} \frac{1}{|B(\tilde q, r)|} \int_{B(\tilde q, r)} |f(r)| \, dr,
 $$</p>
-<p>where $B(q, r)$ is the Euclidean ball of radius $r$ centered at $q$, and $|B(q, r)|$ is its volume.</p>
+<p>where $B(\tilde q, r)$ is the Euclidean ball of radius $r$ centered at $\tilde q$, and $|B(\tilde q, r)|$ is its volume.</p>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
 <p><strong>Theorem (Hardy–Littlewood, quaternion version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{H})$ and every $\lambda > 0$,</p>
 <p>$$
-|\{q : Mf(q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+|\{\tilde q : Mf(\tilde q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$</p>
 <p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^p(\mathbb{H})$ for $1 < p \leq \infty$.</p>
 <p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
@@ -240,14 +241,14 @@ $$</p>
 <h3 id="singular-integrals">Singular Integrals</h3>
 <p>A <strong>quaternion Calderón–Zygmund operator</strong> is a bounded operator $T : L^2(\mathbb{H}) \to L^2(\mathbb{H})$ with a kernel $K : \mathbb{H} \times \mathbb{H} \to \mathbb{H}$ such that</p>
 <p>$$
-Tf(q) = \int_{\mathbb{H}} K(q, r) f(r) \, dr
+Tf(\tilde q) = \int_{\mathbb{H}} K(\tilde q, r) f(r) \, dr
 $$</p>
-<p>for $q \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
+<p>for $\tilde q \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
 <p>$$
-|K(q, r)| \leq \frac{C}{|q - r|^4},
+|K(\tilde q, r)| \leq \frac{C}{|\tilde q - r|^4},
 $$</p>
 <p>$$
-|K(q, r) - K(q', r)| \leq C \frac{|q - q'|^\delta}{|q - r|^{4+\delta}}, \qquad |q - q'| < \frac{1}{2} |q - r|,
+|K(\tilde q, r) - K(\tilde q', r)| \leq C \frac{|\tilde q - \tilde q'|^\delta}{|\tilde q - r|^{4+\delta}}, \qquad |\tilde q - \tilde q'| < \frac{1}{2} |\tilde q - r|,
 $$</p>
 <p>and the analogous estimate in the second variable, for some $\delta > 0$. The power $4$ is the dimension of $\mathbb{H}$ as a real vector space.</p>
 <p><strong>Theorem (Calderón–Zygmund, quaternion version).</strong> Every quaternion Calderón–Zygmund operator is bounded on $L^p(\mathbb{H})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
@@ -281,7 +282,7 @@ $$</p>
 <h3 id="definition_5">Definition</h3>
 <p>The <strong>quaternion Radon transform</strong> of a function $f : \mathbb{H} \to \mathbb{H}$ is</p>
 <p>$$
-Rf(\theta, t) = \int_{L(\theta, t)} f(q) \, ds,
+Rf(\theta, t) = \int_{L(\theta, t)} f(\tilde q) \, ds,
 $$</p>
 <p>where $L(\theta, t)$ is the hyperplane with normal direction $\theta \in \mathbb{S}^3$ and signed distance $t$ from the origin, and $ds$ is the Euclidean surface measure.</p>
 <h3 id="the-fourier-slice-theorem">The Fourier Slice Theorem</h3>
@@ -294,14 +295,14 @@ $$</p>
 <h3 id="the-inversion-formula">The Inversion Formula</h3>
 <p><strong>Theorem.</strong> For suitable $f$,</p>
 <p>$$
-f(q) = \frac{1}{2} \int_{\mathbb{S}^3} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma|^3 e^{2\pi \omega \operatorname{Re}(\bar{\theta} q)} \, d\sigma \, d\theta,
+f(\tilde q) = \frac{1}{2} \int_{\mathbb{S}^3} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma|^3 e^{2\pi \omega \operatorname{Re}(\bar{\theta} \tilde q)} \, d\sigma \, d\theta,
 $$</p>
 <p>where $d\theta$ is the surface measure on the unit sphere $\mathbb{S}^3$. The factor $|\sigma|^3$ is the ramp filter in dimension four, and it is the source of the high-frequency amplification in quaternion tomography.</p>
 <h2 id="the-wavelet-transform">The Wavelet Transform</h2>
 <h3 id="definition_6">Definition</h3>
 <p>The <strong>quaternion continuous wavelet transform</strong> of $f \in L^2(\mathbb{H})$ with respect to a wavelet $\psi \in L^2(\mathbb{H})$ is</p>
 <p>$$
-W_\psi f(a, b) = \frac{1}{|a|^2} \int_{\mathbb{H}} f(q) \overline{\psi\left( \frac{q - b}{a} \right)} \, dq, \qquad a \in \mathbb{H}^\times, \; b \in \mathbb{H}.
+W_\psi f(a, b) = \frac{1}{|a|^2} \int_{\mathbb{H}} f(\tilde q) \overline{\psi\left( \frac{\tilde q - b}{a} \right)} \, dq, \qquad a \in \mathbb{H}^\times, \; b \in \mathbb{H}.
 $$</p>
 <p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\psi$ is assumed to satisfy the <strong>admissibility condition</strong></p>
 <p>$$
@@ -311,7 +312,7 @@ $$</p>
 <h3 id="the-inversion-formula_1">The Inversion Formula</h3>
 <p><strong>Theorem.</strong> If $\psi$ is admissible and $f \in L^2(\mathbb{H})$, then</p>
 <p>$$
-f(q) = \frac{1}{C_\psi} \int_{\mathbb{H}^\times} \int_{\mathbb{H}} W_\psi f(a, b) \frac{1}{|a|^2} \psi\left( \frac{q - b}{a} \right) \frac{da \, db}{|a|^4}.
+f(\tilde q) = \frac{1}{C_\psi} \int_{\mathbb{H}^\times} \int_{\mathbb{H}} W_\psi f(a, b) \frac{1}{|a|^2} \psi\left( \frac{\tilde q - b}{a} \right) \frac{da \, db}{|a|^4}.
 $$</p>
 <p>The inversion formula reconstructs $f$ from its wavelet transform.</p>
 <h3 id="the-quaternion-wavelet-transform">The Quaternion Wavelet Transform</h3>
@@ -348,7 +349,7 @@ $$</p>
 <td>Quaternion basis</td>
 </tr>
 <tr>
-<td>$q = q_0 + \mathbf{q}$</td>
+<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
 <td>General quaternion</td>
 </tr>
 <tr>
@@ -356,7 +357,7 @@ $$</p>
 <td>Unit pure quaternion</td>
 </tr>
 <tr>
-<td>$\chi_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)}$</td>
+<td>$\chi_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)}$</td>
 <td>Quaternion character</td>
 </tr>
 <tr>
@@ -372,7 +373,7 @@ $$</p>
 <td>delta distribution</td>
 </tr>
 <tr>
-<td>$E(q) = \bar{q}/\|q\|^4$</td>
+<td>$E(\tilde q) = \bar{\tilde q}/\lvert \tilde q\rvert^4$</td>
 <td>Cauchy kernel</td>
 </tr>
 <tr>

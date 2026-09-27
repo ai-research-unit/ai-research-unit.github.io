@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaternion Topology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quaternion-topology"><strong>Quaternion Topology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article collects the topology of the quaternion algebra as a space and of its group of units: the topology of the underlying real four-space, its contractibility, the unit sphere, the homotopy type of the units, the low homotopy groups, and the double cover of the rotation group. It is the quaternion member of the family's topology articles; its counterpart is the biquaternion case, whose ambient space carries a null cone of zero divisors and whose group of units is the non-compact $GL_2(\mathbb{C})$. Here there are no zero divisors, the algebra norm and the Euclidean norm coincide, and the unit sphere is a group.</p>
+<p>The article uses <em>Quaternion Algebra</em> for the basis and product, <em>Quaternion Norm and Invertibility</em> for the norm form, division property and unit group, <em>Quaternion Exponential and Lie Group Structure</em> for the polar split of the units and the exponential, and <em>Quaternion Rotations and Reflections</em> for the covering of the rotation group. The standard algebraic topology used is cited rather than reproved.</p>
+<p>The corpus's default base is a commutative ring; the topology here requires the real numbers, and everything is stated over $\mathbb{R}$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$; the norm form is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2+q_2^2+q_3^2$ and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$.</p>
+<h2 id="the-algebra-as-a-topological-space">The Algebra as a Topological Space</h2>
+<p><strong>Theorem.</strong> The linear map</p>
+<p>$$
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3\longmapsto(q_0,q_1,q_2,q_3)
+$$</p>
+<p>is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product is bilinear, hence continuous, so $\mathbb{H}$ is a topological algebra over $\mathbb{R}$, and inversion is continuous on the units, so $\mathbb{H}^{\times}$ is a topological group.</p>
+<p><em>Proof.</em> The norm form of $\mathbb{H}$ is positive definite with four positive signs, $N(\tilde q) = \sum_k q_k^2$, so $|\tilde q|$ is the Euclidean norm of the coordinate vector and the map is an isometry. Bilinearity gives continuity of the product, and $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ is continuous on the complement of $N = 0$, which is $\mathbb{H}^{\times}$ because the norm form is definite. $\square$</p>
+<p><strong>Corollary.</strong> The algebra norm and the Euclidean norm agree on $\mathbb{H}$, so multiplication is continuous for the Euclidean topology and $\mathbb{H}$ is a normed division algebra; this is the property that fails for the biquaternions, whose norm form is indefinite.</p>
+<h2 id="contractibility">Contractibility</h2>
+<p><strong>Theorem.</strong> The quaternion algebra is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{H}) = 0$ for all $n\geq1$.</p>
+<p><em>Proof.</em> The straight-line homotopy $H(t,\tilde q) = (1-t)\tilde q$ is continuous, begins at the identity and ends at the constant map $0$, so the identity of $\mathbb{H}$ is null-homotopic; a contractible space has all homotopy groups trivial. $\square$</p>
+<p><strong>Corollary.</strong> Every vector subspace of $\mathbb{H}$ is contractible as a topological space in its own right, and in particular the scalar subspace $\mathbb{R}_{\mathbb{H}}\cong\mathbb{R}$ and the vector subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ carry no topology beyond that of Euclidean space.</p>
+<p><em>Proof.</em> Each is a vector subspace, and the straight-line homotopy above restricts to it. $\square$</p>
+<h2 id="the-unit-sphere">The Unit Sphere</h2>
+<p><strong>Definition.</strong> The <strong>unit sphere</strong> of $\mathbb{H}$ is $S^3 = \{\tilde q : |\tilde q| = 1\} = Sp(1)$.</p>
+<p><strong>Theorem.</strong> The unit sphere is a closed, compact, connected three-dimensional manifold, homeomorphic to the standard sphere $S^3\subset\mathbb{R}^4$, and it is a Lie group isomorphic to $SU(2)$; it is contained in the group of units, $S^3\subseteq\mathbb{H}^{\times}$.</p>
+<p><em>Proof.</em> The unit sphere is the level set of the continuous function $N$ at $1$, compact as a closed bounded subset of $\mathbb{R}^4$ and a manifold by the regular value theorem, since the gradient of $N$ is $2\tilde q$, non-vanishing on it; the homeomorphism with the standard sphere and the Lie group structure are from <em>Quaternion Algebra</em>. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$. $\square$</p>
+<p><strong>Remark.</strong> Multiplicativity of the norm, $N(pq) = N(p)N(\tilde q)$, is exactly the statement that $S^3$ is closed under the product, so the unit sphere is a subgroup rather than merely a subset; for the biquaternions the corresponding Euclidean sphere is not closed under the product and is not contained in the unit group.</p>
+<h2 id="the-group-of-units">The Group of Units</h2>
+<p><strong>Theorem.</strong> The map $\tilde q\mapsto(|\tilde q|,\tilde q/|\tilde q|)$ is a homeomorphism</p>
+<p>$$
+\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3,
+$$</p>
+<p>and the inclusion $S^3\hookrightarrow\mathbb{H}^{\times}$ is a homotopy equivalence; hence the group of units is homotopy equivalent to the sphere $S^3$.</p>
+<p><em>Proof.</em> The polar split of <em>Quaternion Norm and Invertibility</em> gives the bijection, both directions being continuous; the deformation retraction $r(t,\tilde q) = (1-t)\tilde q+t\,\tilde q/|\tilde q|$ is continuous and retracts $\mathbb{H}^{\times}$ onto $S^3$ along the radial lines. $\square$</p>
+<p><strong>Corollary.</strong> The group of units is path-connected and locally path-connected, and it is not compact; it deformation retracts onto the compact subgroup $Sp(1)$, which is its maximal compact subgroup.</p>
+<p><em>Proof.</em> $\mathbb{R}_{>0}\times S^3$ is connected and non-compact; the retraction is the corollary to the homeomorphism, and the maximality of $Sp(1)$ is from <em>Quaternion Exponential and Lie Group Structure</em>. $\square$</p>
+<h2 id="the-homotopy-groups">The Homotopy Groups</h2>
+<p><strong>Theorem.</strong> The group of units is simply connected and has the homotopy groups of the sphere,</p>
+<p>$$
+\pi_1(\mathbb{H}^{\times}) = 0, \qquad \pi_2(\mathbb{H}^{\times}) = 0, \qquad \pi_3(\mathbb{H}^{\times})\cong\mathbb{Z},
+$$</p>
+<p>and more generally $\pi_n(\mathbb{H}^{\times})\cong\pi_n(S^3)$ for every $n$.</p>
+<p><em>Proof.</em> By the homotopy equivalence $\mathbb{H}^{\times}\simeq S^3$ the homotopy groups agree with those of $S^3$; the sphere $S^3$ is simply connected, $\pi_2(S^3) = 0$, and the Hopf fibration $S^3\to S^2$ with fibre $S^1$ generates $\pi_3(S^3)\cong\mathbb{Z}$. $\square$</p>
+<p><strong>Theorem.</strong> The rotation group of the vector subspace is the projective space,</p>
+<p>$$
+SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3,
+$$</p>
+<p>with homotopy groups</p>
+<p>$$
+\pi_1(SO(3))\cong\mathbb{Z}/2, \qquad \pi_2(SO(3)) = 0, \qquad \pi_3(SO(3))\cong\mathbb{Z}.
+$$</p>
+<p><em>Proof.</em> The quotient identification is <em>Quaternion Rotations and Reflections</em>; the covering $\mathbb{Z}/2\to S^3\to\mathbb{RP}^3$ has connected total space, so its homotopy exact sequence gives $\pi_1(\mathbb{RP}^3)\cong\pi_0(\mathbb{Z}/2)\cong\mathbb{Z}/2$ and isomorphisms $\pi_n(\mathbb{RP}^3)\cong\pi_n(S^3)$ for every $n\geq2$; with $\pi_2(S^3) = 0$ and $\pi_3(S^3)\cong\mathbb{Z}$ this gives the listed groups. $\square$</p>
+<p><strong>Corollary.</strong> The fundamental group $\mathbb{Z}/2$ belongs to the rotation group, the quotient, and not to the group of units: the group of units and the unit sphere are simply connected, whereas their adjoint quotient by the centre $\{\pm1\}$ is the rotation group and has fundamental group $\mathbb{Z}/2$.</p>
+<h2 id="the-double-cover-of-the-rotation-group">The Double Cover of the Rotation Group</h2>
+<p><strong>Theorem.</strong> The adjoint map $u\mapsto\operatorname{Ad}_u|_{\operatorname{Im}\mathbb{H}}$ is a surjective group homomorphism</p>
+<p>$$
+Sp(1)\longrightarrow SO(3)
+$$</p>
+<p>with kernel $\{\pm1\}$, so the unit sphere is a two-to-one covering group of the rotation group, $SO(3)\cong Sp(1)/\{\pm1\}$; the covering $Sp(1)\to SO(3)$ is the universal cover of $SO(3)$.</p>
+<p><em>Proof.</em> The homomorphism property and the kernel follow from <em>Quaternion Automorphisms and Derivations</em>; the cover is connected and simply connected, being $S^3$, so it is the universal cover of the connected manifold $SO(3)$. $\square$</p>
+<p><strong>Corollary.</strong> The double cover is the topological content of the sign ambiguity of the unit quaternion representing a rotation: $\operatorname{Ad}_u = \operatorname{Ad}_{-u}$, and the two lifts of a closed loop in $SO(3)$ return to opposite points of $Sp(1)$ exactly when the loop is not null-homotopic, in agreement with $\pi_1(SO(3))\cong\mathbb{Z}/2$.</p>
+<h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the same real dimension eight and is contractible as an ambient space, but its norm form is indefinite and it has zero divisors, and this changes the distinguished subsets and the unit group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{B}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Underlying space</td>
+<td>$\mathbb{R}^4$, contractible</td>
+<td>$\mathbb{R}^8$, contractible</td>
+</tr>
+<tr>
+<td>Norm form</td>
+<td>definite, $N(\tilde q) = \sum_k q_k^2$, $N = \lvert\cdot\rvert^2$</td>
+<td>indefinite, complex valued</td>
+</tr>
+<tr>
+<td>Zero divisors / null set</td>
+<td>none: $\tilde q\neq0\Rightarrow N(\tilde q) > 0$</td>
+<td>the null cone $\mathcal{N} = \{N = 0\}$, real dimension $6$</td>
+</tr>
+<tr>
+<td>Euclidean unit sphere</td>
+<td>$S^3 = Sp(1)$, a group, $S^3\subseteq\mathbb{H}^{\times}$</td>
+<td>$S^7_E$, not a group, $S^7_E\not\subseteq\mathbb{B}^{\times}$</td>
+</tr>
+<tr>
+<td>Group of units</td>
+<td>$\mathbb{R}_{>0}\times S^3\simeq S^3$</td>
+<td>$GL_2(\mathbb{C})\simeq U(2)\simeq S^1\times S^3$</td>
+</tr>
+<tr>
+<td>Polar representation</td>
+<td>global on $\mathbb{H}^{\times}$</td>
+<td>only off the null cone</td>
+</tr>
+<tr>
+<td>Homotopy groups of the units</td>
+<td>$\pi_1 = 0$, $\pi_3\cong\mathbb{Z}$</td>
+<td>$\pi_1\cong\mathbb{Z}$, $\pi_3\cong\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>Rotation group from the adjoint action</td>
+<td>$SO(3)$, $\pi_1\cong\mathbb{Z}/2$</td>
+<td>$PSL(2,\mathbb{C})$, non-compact</td>
+</tr>
+</tbody>
+</table></div>
+<p>The essential difference is the definiteness of the norm form. For $\mathbb{H}$ the polar decomposition $\tilde q = |\tilde q|\,u$ is defined for every non-zero quaternion, so the group of units is a global product and the sphere $S^3$ is a deformation retract; there is no boundary or exceptional set in the polar representation. For $\mathbb{B}$ the same construction is available only where $N\neq0$, the null cone being the obstruction, and the unit group is the non-compact $GL_2(\mathbb{C})$, whose maximal compact subgroup $U(2)$ deforms to $S^1\times S^3$ and contributes the free factor $\mathbb{Z}$ to $\pi_1$. The biquaternion account is in <em>Biquaternion Topology</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion algebra is the Euclidean space $\mathbb{R}^4$ with the product as a continuous bilinear map, so it is a topological algebra and a normed division algebra; the algebra norm and the Euclidean norm coincide, and the space is contractible with all homotopy groups trivial. The unit sphere $S^3 = Sp(1)$ is a compact connected three-dimensional Lie group isomorphic to $SU(2)$ and contained in the unit group, because the norm is multiplicative.</p>
+<p>The group of units is homeomorphic to $\mathbb{R}_{>0}\times S^3$ and deformation retracts onto $S^3$, so it is homotopy equivalent to the sphere: $\pi_1 = 0$, $\pi_2 = 0$, $\pi_3\cong\mathbb{Z}$. Its adjoint quotient by the centre is the rotation group $SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$, which has $\pi_1\cong\mathbb{Z}/2$, $\pi_2 = 0$, $\pi_3\cong\mathbb{Z}$; the fundamental group $\mathbb{Z}/2$ therefore belongs to the quotient and not to the units.</p>
+<p>The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel $\{\pm1\}$, which is the topological content of the sign ambiguity in the unit-quaternion parametrisation of a rotation. The biquaternion case differs through the indefiniteness of its norm form: its null cone obstructs the polar representation, its Euclidean unit sphere is not a group and is not contained in the units, and its unit group $GL_2(\mathbb{C})$ has $\pi_1\cong\mathbb{Z}$. For the quaternion division algebra the polar representation is global and has no boundary.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}\cong\mathbb{R}^4$</td>
+<td>Quaternion algebra as a topological space; contractible</td>
+</tr>
+<tr>
+<td>$\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$</td>
+<td>Modulus, equal to the Euclidean norm</td>
+</tr>
+<tr>
+<td>$N(\tilde q) = \tilde q\bar{\tilde q} = \sum_k q_k^2$</td>
+<td>Definite norm form, four positive signs</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$</td>
+<td>Scalar and vector subspaces, $\cong\mathbb{R}$ and $\cong\mathbb{R}^3$</td>
+</tr>
+<tr>
+<td>$S^3 = Sp(1) = \{\lvert \tilde q\rvert = 1\}$</td>
+<td>Unit sphere; compact Lie group $\cong SU(2)$, $S^3\subseteq\mathbb{H}^{\times}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$</td>
+<td>Group of units; $\simeq S^3$</td>
+</tr>
+<tr>
+<td>$\pi_1(\mathbb{H}^{\times}) = 0$, $\pi_3(\mathbb{H}^{\times})\cong\mathbb{Z}$</td>
+<td>Homotopy groups of the units</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_u(x) = uxu^{-1}$</td>
+<td>Adjoint action; quotient map to $SO(3)$</td>
+</tr>
+<tr>
+<td>$SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$</td>
+<td>Rotation group; $\pi_1\cong\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra; indefinite norm, null cone</td>
+</tr>
+<tr>
+<td>$\mathcal{N} = \{N = 0\}$</td>
+<td>Null cone of $\mathbb{B}$, absent here</td>
+</tr>
+<tr>
+<td>$GL_2(\mathbb{C})\simeq U(2)\simeq S^1\times S^3$</td>
+<td>Biquaternion group of units</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for homotopy groups, covering spaces and the fundamental group of projective space.</li>
+<li>Dale Husemoller, <em>Fibre Bundles</em> (Springer, 3rd ed. 1994), for the Hopf fibration and the homotopy of spheres.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the covering $SU(2)\to SO(3)$ and the topology of the classical groups.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2nd ed. 2015), for the homotopy groups of the compact classical groups.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the unit sphere and the group of units of a quaternion algebra.</li>
+<li>Norman Steenrod, <em>The Topology of Fibre Bundles</em> (Princeton University Press, 1951), for fibre bundles, covering spaces and the homotopy groups of spheres.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

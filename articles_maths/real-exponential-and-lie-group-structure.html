@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Exponential and Lie Group Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-exponential-and-lie-group-structure"><strong>Real Exponential and Lie Group Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a commutative multiplication, and it is simultaneously a Lie algebra and, through its unit group, a Lie group. This article develops the two structures and the exponential map that joins them. The exponential $\exp(x) = e^x$ is the base case of the exponential of the family: it is an isomorphism of the additive group onto the positive reals, its kernel is trivial, and its image is exactly the identity component of the group of units.</p>
+<p>The real case is the degenerate abelian base. The bracket vanishes identically, so $\mathbb{R}$ is the abelian Lie algebra $\mathfrak{gl}_1(\mathbb{R})$ of dimension one, and the Baker–Campbell–Hausdorff series terminates at its leading term, making the exponential an exact group homomorphism. The group of units is disconnected, and the exponential covers only its identity component; the sign group is left over as the torsion of the unit group.</p>
+<p>The conventions are those of <em>Real Algebra</em>: basis $e_0 = 1$, a general element $x = x e_0$, the sole involution the identity, norm form $N(x) = x\,x = x^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a surjective homomorphism with kernel $2\pi i\,\mathbb{Z}$, with the quaternions $\mathbb{H}$, and with the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, for which the exponential is neither injective nor a homomorphism. Every numerical value displayed below is exact.</p>
+<h2 id="the-algebra-as-the-abelian-lie-algebra">The Algebra as the Abelian Lie Algebra</h2>
+<p>The commutator bracket of $\mathbb{R}$ vanishes identically,</p>
+<p>$$
+[x, y] = xy - yx = 0 \qquad (x, y \in \mathbb{R}),
+$$</p>
+<p>because the algebra is commutative. Hence $\mathbb{R}$ is an <strong>abelian Lie algebra</strong> of real dimension $1$. It is in fact the general linear Lie algebra of the one-dimensional real vector space,</p>
+<p>$$
+\mathfrak{gl}_1(\mathbb{R}) = M_1(\mathbb{R}) \cong \mathbb{R},
+$$</p>
+<p>the Lie algebra of $1\times1$ real matrices with the commutator bracket, which is zero because $1\times1$ matrices commute.</p>
+<p><strong>Theorem.</strong> $\mathbb{R}$ is the Lie algebra of the additive group $(\mathbb{R}, +)$ and of the positive multiplicative group $(\mathbb{R}_{>0}, \cdot)$; it is abelian of dimension $1$, and the two groups share it as their Lie algebra.</p>
+<p><strong>Proof.</strong> Both groups are real Lie groups of dimension $1$ and are abelian, so their Lie algebras are one-dimensional with zero bracket, hence isomorphic to $\mathbb{R}$ with the zero bracket, which is $\mathfrak{gl}_1(\mathbb{R})$ above. The tangent space at the identity of each is the same line $\mathbb{R}$. $\square$</p>
+<p>The universal enveloping algebra of this abelian Lie algebra is the polynomial algebra $\mathbb{R}[X]$ on one generator, the base case of the Poincaré–Birkhoff–Witt theorem. The centre of the Lie algebra is the whole algebra, and every subspace is an abelian ideal; the algebra is the simplest possible Lie algebra, and every bracket identity of the family reduces to $0 = 0$ here.</p>
+<h2 id="the-group-of-units">The Group of Units</h2>
+<p>The <strong>group of units</strong> is</p>
+<p>$$
+\mathbb{R}^\times = \{x : N(x) \neq 0\} = \mathbb{R} \setminus \{0\},
+$$</p>
+<p>the real line with the origin removed. It is a real Lie group of dimension $1$, open and dense in $\mathbb{R}$ by <em>Real Norm and Invertibility</em>, and it <strong>decomposes into two components</strong>,</p>
+<p>$$
+\mathbb{R}^\times = \mathbb{R}_{>0} \sqcup \mathbb{R}_{<0}, \qquad \pi_0(\mathbb{R}^\times) \cong \{\pm1\}.
+$$</p>
+<p>The identity component is the positive ray $\mathbb{R}_{>0}$, a connected, contractible, non-compact group; the other component is the negative ray $-\mathbb{R}_{>0}$. The group is abelian, so its Lie algebra is $\mathbb{R}$ itself with the zero bracket, and the group of units splits as</p>
+<p>$$
+\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\},
+$$</p>
+<p>the product of the identity component and the component group. In the complex and quaternion cases the unit group has one component, the second factor being the connected circle $U(1)$ or sphere $S^3$; here the second factor is the discrete sign group, and the disconnectedness is the distinctive feature of the real base.</p>
+<h2 id="the-exponential-series-and-closed-form">The Exponential: Series and Closed Form</h2>
+<p><strong>Definition.</strong> The <strong>exponential</strong> of a real number $x$ is the sum of the convergent series</p>
+<p>$$
+\exp(x) = \sum_{n \geq 0} \frac{x^n}{n!} .
+$$</p>
+<p>Since $|x^n/n!| \leq |x|^n/n!$, the series converges absolutely for every real $x$; the exponential is thus defined on all of $\mathbb{R}$. Its closed form is the classical one,</p>
+<p>$$
+\exp(x) = e^{x}, \qquad e = \exp(1) = \sum_{n\ge0} \frac{1}{n!} .
+$$</p>
+<p><strong>Basic properties.</strong> The exponential never vanishes, so it takes values in $\mathbb{R}^\times$:</p>
+<p>$$
+\exp(x) > 0 \qquad \text{for all} \ x \in \mathbb{R}, \qquad \exp(-x) = \exp(x)^{-1}.
+$$</p>
+<p>Its norm form is positive and satisfies</p>
+<p>$$
+N(\exp x) = e^{2x} = \exp(2x),
+$$</p>
+<p>the square of the exponential itself. The differential at the origin is the identity, $d\exp_0 = \operatorname{id}$, so $\exp$ is a local diffeomorphism near $0$ and supplies exponential coordinates near the identity; as the kernel computation below shows, it is in fact a global homeomorphism onto its image.</p>
+<h2 id="the-group-law">The Group Law</h2>
+<p>The exponential is a <strong>homomorphism</strong> from the additive group of the Lie algebra to the multiplicative group of the units:</p>
+<p><strong>Theorem.</strong> For all $x, y \in \mathbb{R}$,</p>
+<p>$$
+\exp(x+y) = \exp(x)\exp(y).
+$$</p>
+<p><strong>Proof.</strong> The real numbers commute, so $x$ and $y$ generate a commutative subalgebra, and the binomial theorem reorders the product of the two absolutely convergent series term by term into the series of $\exp(x+y)$; explicitly, the coefficient of the $n$-th power of the combined series is $\sum_{k} \frac{1}{k!(n-k)!} x^k y^{n-k} = \frac{(x+y)^n}{n!}$. $\square$</p>
+<p>This is the sharp difference from the biquaternion algebra, where the exponential is not a homomorphism and the failure is measured by the Baker–Campbell–Hausdorff series $\exp(a)\exp(b) = \exp(a+b+\tfrac12[a,b]+\cdots)$. Here every bracket in that series vanishes, so the series terminates at the leading term and the identity is exact without any smallness hypothesis. The general form reduces to the commuting case, which for $\mathbb{B}$ is the special case $[a,b] = 0$; for $\mathbb{R}$ the commuting case is the only case. The complex case is the same, one dimension up.</p>
+<h2 id="surjectivity-kernel-and-the-logarithm">Surjectivity, Kernel and the Logarithm</h2>
+<p><strong>Theorem (the image).</strong> The exponential maps $\mathbb{R}$ bijectively onto the positive reals:</p>
+<p>$$
+\exp(\mathbb{R}) = \mathbb{R}_{>0}, \qquad \exp : (\mathbb{R}, +) \longrightarrow (\mathbb{R}_{>0}, \cdot) \ \text{is an isomorphism of Lie groups.}
+$$</p>
+<p><strong>Proof.</strong> The exponential is a strictly increasing continuous function with $\lim_{x\to-\infty}e^x = 0$ and $\lim_{x\to+\infty}e^x = +\infty$, so its image is exactly $(0,\infty)$ and it is injective. It is a group homomorphism by the group law, and a bijective homomorphism of groups is an isomorphism; it is smooth with smooth inverse $\ln$, so it is an isomorphism of Lie groups. $\square$</p>
+<p>The inverse is the <strong>natural logarithm</strong>,</p>
+<p>$$
+\ln : \mathbb{R}_{>0} \longrightarrow \mathbb{R}, \qquad \ln x = \int_1^x \frac{dt}{t},
+$$</p>
+<p>and the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$. The exponential is therefore <strong>not surjective onto $\mathbb{R}^\times$</strong>: the negative reals are not in its image, because $e^x > 0$ always, so the image is exactly the identity component of the unit group. This is the base case of the restriction of the image to the identity component; the complex, quaternion and biquaternion exponentials all reach their whole unit group, so a two-component unit group with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.</p>
+<p><strong>Theorem (the kernel).</strong> For $x \in \mathbb{R}$ one has $\exp(x) = 1$ if and only if $x = 0$; hence</p>
+<p>$$
+\ker\exp = \{0\}.
+$$</p>
+<p><strong>Proof.</strong> $e^x = 1$ with $x \neq 0$ is impossible, since $e^x > 1$ for $x > 0$ and $0 < e^x < 1$ for $x < 0$. $\square$</p>
+<p>The kernel is trivial, so the exponential is injective and the real logarithm has no ambiguity. The biquaternion kernel is very much larger: it is not discrete, it is not a subgroup, and in its coordinates the conditions $Q_0 \in \pi i\mathbb{Z}$, $B \in \pi\mathbb{Z}$ with $Q_0$ and $B$ congruent modulo one another appear; the complex kernel is the discrete lattice $2\pi i\,\mathbb{Z}$. The real kernel is the smallest possible, the trivial subgroup, and every positive real has exactly one real logarithm.</p>
+<h2 id="one-parameter-subgroups-and-the-sign-group">One-Parameter Subgroups and the Sign Group</h2>
+<p><strong>Definition.</strong> A <strong>one-parameter subgroup</strong> of a Lie group $G$ is a continuous homomorphism $\gamma : \mathbb{R} \to G$, the group $\mathbb{R}$ being additive. For a real algebra it is written $\gamma(t) = \exp(tX)$ for a fixed $X$ in the Lie algebra.</p>
+<p><strong>Proposition.</strong> The one-parameter subgroups of $\mathbb{R}^\times$ are exactly the maps</p>
+<p>$$
+\gamma_X(t) = \exp(tX), \qquad X \in \mathbb{R}, \quad t \in \mathbb{R},
+$$</p>
+<p>and $\gamma_X$ determines $X$ through its derivative at $t = 0$. Every one-parameter subgroup takes values in the identity component $\mathbb{R}_{>0}$.</p>
+<p><strong>Proof.</strong> Each $\gamma_X$ is a homomorphism by the exponential identity $\exp((s+t)X) = \exp(sX)\exp(tX)$, and it is smooth. Conversely a one-parameter subgroup is determined by its derivative at $0$, which lies in the Lie algebra $\mathbb{R}$, since the group is abelian and exponential coordinates are available near the identity. A one-parameter subgroup is the image of the connected group $\mathbb{R}$, hence connected, so it lies in the identity component. $\square$</p>
+<p><strong>The scale as the one-parameter group.</strong> The subgroup generated by $X = 1$ is</p>
+<p>$$
+\gamma_1(t) = e^{t} \in \mathbb{R}_{>0},
+$$</p>
+<p>and this map $\gamma_1 : \mathbb{R} \to \mathbb{R}_{>0}$ is a bijective Lie group homomorphism. Hence</p>
+<p>$$
+\mathbb{R}_{>0} \cong \mathbb{R},
+$$</p>
+<p>a bijection of topological groups. The two one-parameter subgroups for $X$ and $-X$ are inverse to each other, and the whole family $\gamma_X$, $X \neq 0$, is obtained from $\gamma_1$ by the reparametrisation $t \mapsto Xt$.</p>
+<p><strong>The sign group is not generated by the exponential.</strong> The sign group $\{\pm1\}$ is <strong>not</strong> in the image of any one-parameter subgroup: every $\gamma_X(t)$ is positive. It is instead the <strong>torsion subgroup</strong> of $\mathbb{R}^\times$,</p>
+<p>$$
+\{x \in \mathbb{R}^\times : x^n = 1 \ \text{for some} \ n \geq 1\} = \{\pm1\},
+$$</p>
+<p>the elements of finite order. The sign group is thus the group of components $\pi_0(\mathbb{R}^\times)$, the maximal compact subgroup of $\mathbb{R}^\times$, and the two-element group $O(1)$, all at once. In the complex case the corresponding group of components is trivial, its compact subgroup $U(1)$ is nontrivial and connected, and the torsion of $\mathbb{C}^\times$ is the group of all roots of unity, $\mu_\infty \cong \mathbb{Q}/\mathbb{Z}$, a countable dense subgroup of $U(1)$; here the torsion is the two-element sign group and nothing else.</p>
+<h2 id="connectedness-and-the-compact-subgroup">Connectedness and the Compact Subgroup</h2>
+<p><strong>Theorem.</strong> $\mathbb{R}^\times$ is disconnected, with two components; its identity component is $\mathbb{R}_{>0}$, it has no compact connected subgroup of positive dimension, and its maximal compact subgroup is the finite group $\{\pm1\}$.</p>
+<p><strong>Proof.</strong> The decomposition $\mathbb{R}^\times = \mathbb{R}_{>0} \sqcup \mathbb{R}_{<0}$ is a separation into two non-empty open sets, so $\mathbb{R}^\times$ is disconnected; each piece is an open interval, hence connected, so there are exactly two components and the identity component is $\mathbb{R}_{>0}$. A compact connected subgroup of positive dimension would contain a one-parameter subgroup with nontrivial compact image, but every one-parameter subgroup of $\mathbb{R}^\times$ is the non-compact positive ray or all of the line, so none is compact. The maximal compact subgroup is therefore the finite group $\{\pm1\}$. $\square$</p>
+<p>The fundamental group of the unit group is the fundamental group of its components, each a contractible line:</p>
+<p>$$
+\pi_1(\mathbb{R}^\times) = 0, \qquad \pi_n(\mathbb{R}^\times) = 0 \ \ (n \geq 1).
+$$</p>
+<p>The complex unit group has $\pi_1 \cong \mathbb{Z}$ generated by the loop around the origin, the quaternion unit group has $\pi_1 = 0$ and $\pi_3 \cong \mathbb{Z}$, and the biquaternion unit group has $\pi_1 \cong \mathbb{Z}$ and $\pi_3 \cong \mathbb{Z}$; the real unit group is the case in which every homotopy group vanishes, because there is no compact connected factor to wind around.</p>
+<h2 id="comparison-with-the-complex-quaternion-and-biquaternion-lie-algebra-and-lie-group-structure">Comparison with the Complex, Quaternion and Biquaternion Lie Algebra and Lie Group Structure</h2>
+<p>The cases are tabulated; the field is named in the entries that depend on it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{B}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra as Lie algebra</td>
+<td>abelian, real dimension $1$; bracket $0$</td>
+<td>abelian, real dimension $2$; bracket $0$</td>
+<td>$\mathfrak{gl}(2,\mathbb{C})$, real dimension $8$; bracket $\neq 0$</td>
+</tr>
+<tr>
+<td>Group of units</td>
+<td>$\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, two components, abelian</td>
+<td>$\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, connected, abelian</td>
+<td>$\mathbb{B}^\times \cong GL(2,\mathbb{C})$, connected, non-abelian</td>
+</tr>
+<tr>
+<td>Exponential</td>
+<td>entire, homomorphism, injective</td>
+<td>entire, homomorphism, not injective</td>
+<td>entire, not a homomorphism</td>
+</tr>
+<tr>
+<td>Image of $\exp$</td>
+<td>$\mathbb{R}_{>0}$, the identity component</td>
+<td>$\mathbb{C}^\times$, the whole group</td>
+<td>$GL(2,\mathbb{C})$, the whole group</td>
+</tr>
+<tr>
+<td>Kernel of $\exp$</td>
+<td>$\{0\}$</td>
+<td>$2\pi i\,\mathbb{Z} \cong \mathbb{Z}$</td>
+<td>non-discrete subset of $\mathfrak{gl}(2,\mathbb{C})$, not a subgroup</td>
+</tr>
+<tr>
+<td>Torsion of the unit group</td>
+<td>$\{\pm1\}$, the sign group</td>
+<td>the roots of unity $\mu_\infty \cong \mathbb{Q}/\mathbb{Z}$</td>
+<td>the finite-order elements of $GL(2,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>Norm-one group</td>
+<td>$\{\pm1\} = O(1)$, finite</td>
+<td>$U(1) \cong SO(2)$, compact, dimension $1$</td>
+<td>$SL(2,\mathbb{C})$, non-compact</td>
+</tr>
+<tr>
+<td>Maximal compact subgroup</td>
+<td>$\{\pm 1\}$, dimension $0$</td>
+<td>$U(1) \cong S^1$</td>
+<td>$U(2) \cong S^1 \times S^3$</td>
+</tr>
+<tr>
+<td>Homotopy</td>
+<td>all $\pi_n = 0$</td>
+<td>$\pi_1 \cong \mathbb{Z}$, $\pi_n = 0$ ($n \ge 2$)</td>
+<td>$\pi_1 \cong \mathbb{Z}$, $\pi_3 \cong \mathbb{Z}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every exponential is entire and satisfies a group law; the differences are that the real exponential is injective with trivial kernel, that its image is only the identity component of the unit group rather than the whole group, and that its maximal compact subgroup is finite rather than a positive-dimensional torus. The real case is the completely reducible abelian base of the family, and its exponential is the base case of the isomorphism between an additive Lie algebra and a multiplicative Lie group.</p>
+<h2 id="summary">Summary</h2>
+<p>The commutator bracket of $\mathbb{R}$ vanishes identically, so $\mathbb{R} \cong \mathfrak{gl}_1(\mathbb{R})$ is an abelian Lie algebra of real dimension $1$, with the universal enveloping algebra the polynomial algebra on one generator, and it is the Lie algebra both of the additive group $(\mathbb{R},+)$ and of the positive multiplicative group $(\mathbb{R}_{>0},\cdot)$.</p>
+<p>The exponential $\exp(x) = \sum x^n/n!$ is entire, never zero, and a group homomorphism, $\exp(x+y) = \exp x \exp y$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $e^x$, its norm form is $N(\exp x) = e^{2x}$, it is injective with kernel $\{0\}$, and it maps $(\mathbb{R},+)$ isomorphically onto $(\mathbb{R}_{>0},\cdot)$ with inverse the natural logarithm. It is not surjective onto $\mathbb{R}^\times$, its image being exactly the identity component.</p>
+<p>The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$, with two components and the splitting $\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$. Every one-parameter subgroup is $t \mapsto \exp(tX)$ and takes values in $\mathbb{R}_{>0}$, so it never reaches the sign group; the sign group is the torsion subgroup of $\mathbb{R}^\times$, its group of components, and its maximal compact subgroup, and it is the compact factor $O(1)$ of the family. The real case is the abelian base of the family: the whole structure is a line, its exponential, and a two-element sign.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>the real algebra, basis $e_0 = 1$</td>
+</tr>
+<tr>
+<td>$[x,y] = xy - yx = 0$</td>
+<td>the commutator bracket, identically zero</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}_1(\mathbb{R}) \cong \mathbb{R}$</td>
+<td>the abelian Lie algebra of the $1\times1$ matrices</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$</td>
+<td>the group of units, two components</td>
+</tr>
+<tr>
+<td>$\exp(x) = \sum_n x^n/n! = e^x$</td>
+<td>the exponential, entire and a homomorphism</td>
+</tr>
+<tr>
+<td>$N(\exp x) = e^{2x}$</td>
+<td>the norm form of an exponential</td>
+</tr>
+<tr>
+<td>$\exp : (\mathbb{R},+)\to(\mathbb{R}_{>0},\cdot)$</td>
+<td>the isomorphism onto the positive reals</td>
+</tr>
+<tr>
+<td>$\ln = \exp^{-1}$</td>
+<td>the natural logarithm</td>
+</tr>
+<tr>
+<td>$\ker\exp = \{0\}$</td>
+<td>the kernel, trivial</td>
+</tr>
+<tr>
+<td>$\{\pm1\} = O(1)$</td>
+<td>the sign group, the torsion subgroup of $\mathbb{R}^\times$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$</td>
+<td>the splitting of the unit group</td>
+</tr>
+<tr>
+<td>$\gamma_X(t) = \exp(tX)$</td>
+<td>a one-parameter subgroup, $X$ in the Lie algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations: An Elementary Introduction</em>, 2nd edition (Springer, 2015), for the exponential map, its kernel and its surjectivity on the classical groups.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the exponential as an isomorphism $\mathbb{R} \cong \mathbb{R}_{>0}$ and the one-parameter subgroups of the line.</li>
+<li>Walter Rudin, <em>Principles of Mathematical Analysis</em>, 3rd edition (McGraw-Hill, 1976), for the exponential and the logarithm as inverse functions.</li>
+<li>Jean-Pierre Serre, <em>Lie Algebras and Lie Groups</em> (Springer, Lecture Notes in Mathematics 1500, 1992), for the Baker–Campbell–Hausdorff series and the abelian case in which it terminates.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the exponentials of the normed division algebras and the failure of surjectivity.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the exponential of the higher-dimensional algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

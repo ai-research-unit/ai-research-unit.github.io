@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dual Numbers Representations — Biquaternion Universe</title>
+  <title>Dual-Numbers Representations — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,7 +50,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="dual-numbers-representations"><strong>Dual Numbers Representations</strong></h1>
+        <h1 id="dual-numbers-representations"><strong>Dual-Numbers Representations</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the representation theory of the dual number algebra. The goal is to define representations precisely, classify them, and describe the structure of the representation ring.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The article is stated for an arbitrary commutative ring $R$ in which $2$ is invertible, and no finiteness assumption is made unless stated.</p>
@@ -59,11 +59,11 @@
 <h3 id="definition">Definition</h3>
 <p>A <strong>representation</strong> of $\mathbb{D}'$ is an $R$-module $V$ together with a bilinear map</p>
 <p>$$
-\rho : \mathbb{D}' \times V \to V, \qquad \rho(z, v) = z \cdot v,
+\rho : \mathbb{D}' \times V \to V, \qquad \rho(Z, v) = Z \cdot v,
 $$</p>
 <p>satisfying</p>
 <p>$$
-z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
+Z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
 $$</p>
 <p>Equivalently, a representation is an algebra homomorphism</p>
 <p>$$
@@ -79,42 +79,42 @@ $$</p>
 <p>$$
 E^2 = 0.
 $$</p>
-<p>So a representation of $\mathbb{D}'$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $a + b\varepsilon$ is</p>
+<p>So a representation of $\mathbb{D}'$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $a + \varepsilon b$ is</p>
 <p>$$
-(a + b\varepsilon) \cdot v = a v + b E(v).
+(a + \varepsilon b) \cdot v = a v + b E(v).
 $$</p>
 <p>This is the fundamental structural fact about representations of $\mathbb{D}'$: they are determined by a single square-zero endomorphism.</p>
 <h3 id="the-regular-representation">The Regular Representation</h3>
 <p>The <strong>regular representation</strong> of $\mathbb{D}'$ is $\mathbb{D}'$ acting on itself by left multiplication:</p>
 <p>$$
-\rho_{\mathrm{reg}}(z) w = z w, \qquad z, w \in \mathbb{D}'.
+\rho_{\mathrm{reg}}(Z) w = Z w, \qquad Z, w \in \mathbb{D}'.
 $$</p>
-<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(z) = z$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $a + b\varepsilon$ to $a \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.</p>
+<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(Z) = Z$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $a + \varepsilon b$ to $a \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.</p>
 <h3 id="the-trivial-representation">The Trivial Representation</h3>
 <p>The <strong>trivial representation</strong> (or <strong>augmentation representation</strong>) is the one-dimensional representation on $R$ defined by</p>
 <p>$$
-\rho_{\mathrm{triv}}(a + b\varepsilon) = a.
+\rho_{\mathrm{triv}}(a + \varepsilon b) = a.
 $$</p>
 <p>This is the representation that sends $\varepsilon$ to zero. It is the quotient of the regular representation by the maximal ideal.</p>
 <h3 id="the-standard-representation">The Standard Representation</h3>
 <p>The <strong>standard representation</strong> is the one-dimensional representation on $R$ defined by</p>
 <p>$$
-\rho_{\mathrm{std}}(a + b\varepsilon) = a.
+\rho_{\mathrm{std}}(a + \varepsilon b) = a.
 $$</p>
 <p>This coincides with the trivial representation. In the dual case, there is no non-trivial one-dimensional representation, because every algebra homomorphism $\mathbb{D}' \to R$ must send $\varepsilon$ to an element $c \in R$ with $c^2 = 0$, and the only such element in a reduced ring is $c = 0$. So the trivial representation is the only one-dimensional representation.</p>
 <h2 id="classification">Classification</h2>
 <h3 id="the-classification-theorem">The Classification Theorem</h3>
 <p><strong>Theorem.</strong> Let $V$ be an $R$-module. The representations of $\mathbb{D}'$ on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, via the correspondence</p>
 <p>$$
-E \longleftrightarrow \rho_E(a + b\varepsilon) = a \cdot \mathrm{id}_V + b E.
+E \longleftrightarrow \rho_E(a + \varepsilon b) = a \cdot \mathrm{id}_V + b E.
 $$</p>
-<p><strong>Proof.</strong> Given a representation $\rho$, the endomorphism $E = \rho(\varepsilon)$ satisfies $E^2 = \rho(\varepsilon^2) = 0$. Conversely, given a square-zero endomorphism $E$, the formula $\rho_E(a + b\varepsilon) = a \cdot \mathrm{id}_V + b E$ defines an algebra homomorphism, because</p>
+<p><strong>Proof.</strong> Given a representation $\rho$, the endomorphism $E = \rho(\varepsilon)$ satisfies $E^2 = \rho(\varepsilon^2) = 0$. Conversely, given a square-zero endomorphism $E$, the formula $\rho_E(a + \varepsilon b) = a \cdot \mathrm{id}_V + b E$ defines an algebra homomorphism, because</p>
 <p>$$
-\rho_E((a + b\varepsilon)(c + d\varepsilon)) = \rho_E(ac + (ad + bc)\varepsilon) = ac \cdot \mathrm{id}_V + (ad + bc) E,
+\rho_E((a + \varepsilon b)(c + \varepsilon d)) = \rho_E(ac + (ad + bc)\varepsilon) = ac \cdot \mathrm{id}_V + (ad + bc) E,
 $$</p>
 <p>and</p>
 <p>$$
-\rho_E(a + b\varepsilon) \rho_E(c + d\varepsilon) = (a \cdot \mathrm{id}_V + b E)(c \cdot \mathrm{id}_V + d E) = ac \cdot \mathrm{id}_V + (ad + bc) E + bd E^2 = ac \cdot \mathrm{id}_V + (ad + bc) E,
+\rho_E(a + \varepsilon b) \rho_E(c + \varepsilon d) = (a \cdot \mathrm{id}_V + b E)(c \cdot \mathrm{id}_V + d E) = ac \cdot \mathrm{id}_V + (ad + bc) E + bd E^2 = ac \cdot \mathrm{id}_V + (ad + bc) E,
 $$</p>
 <p>since $E^2 = 0$. The two agree. $\square$</p>
 <p>So the representation theory of $\mathbb{D}'$ is equivalent to the theory of square-zero endomorphisms. This is the reason the representation theory is both simple and rich: simple because the endomorphism is square-zero, rich because there are many such endomorphisms.</p>
@@ -186,7 +186,7 @@ $$</p>
 <p>$$
 E^* : V^* \to V^*, \qquad (E^* f)(v) = -f(E v).
 $$</p>
-<p>The sign is a convention — $(E^*)^2 = 0$ holds for either choice — and it makes the contragredient action the one induced by dual conjugation, $(z \cdot f)(v) = f(\bar{z} v)$. Indeed,</p>
+<p>The sign is a convention — $(E^*)^2 = 0$ holds for either choice — and it makes the contragredient action the one induced by dual conjugation, $(Z \cdot f)(v) = f(\bar{Z} v)$. Indeed,</p>
 <p>$$
 (E^*)^2 f = E^*(E^* f) = - (E^* f) \circ E = f \circ E \circ E = f \circ E^2 = 0.
 $$</p>
@@ -237,14 +237,14 @@ $$</p>
 <p>So the representation theory of $\mathbb{D}'$ is controlled by the Ext algebra, and the nilpotence of $\varepsilon$ is the source of the non-semisimplicity.</p>
 <h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
 <p>The representation theory of $\mathbb{D}'$ differs from that of the split complex algebra $\mathbb{D}$ in several ways.</p>
-<p><strong>Idempotents versus nilpotents.</strong> The split complex algebra has two non-trivial idempotents $e_+$ and $e_-$, which give two one-dimensional representations. The dual algebra has no non-trivial idempotents, and the only irreducible representation is the trivial one.</p>
-<p><strong>Semisimplicity.</strong> The split complex algebra over a field is isomorphic to $F \oplus F$, which is semisimple. Its representations are direct sums of copies of the two irreducible representations. The dual algebra is local, with nilpotent maximal ideal, and its representations are not semisimple in general.</p>
+<p><strong>Idempotents versus nilpotents.</strong> The split complex algebra has two non-trivial idempotents $\Pi_1$ and $\Pi_2$, which give two one-dimensional representations. The dual algebra has no non-trivial idempotents, and the only irreducible representation is the trivial one.</p>
+<p><strong>Semisimplicity.</strong> The split complex algebra over a field is isomorphic to $F \oplus F$, which is semisimple. Its representations are direct sums of copies of the two irreducible representations. Over a field the dual algebra is local, with nilpotent maximal ideal, and its representations are not semisimple in general.</p>
 <p><strong>Number of indecomposables.</strong> The split complex algebra has two indecomposable representations (the two one-dimensional ones). The dual algebra has two indecomposable representations (the trivial one and the regular one). So both have two, but the structure is different: for $\mathbb{D}$, the two are irreducible; for $\mathbb{D}'$, only one is irreducible, and the other is a non-split extension.</p>
 <p><strong>Tensor products.</strong> The split complex algebra is a Hopf algebra with the componentwise coproduct, and the tensor product of two representations is again a representation. The dual algebra is not a Hopf algebra with the primitive coproduct, because $\varepsilon$ is not primitive. So the tensor product is not a representation in general.</p>
 <p><strong>The representation ring.</strong> For $\mathbb{D}$, the representation ring is $\mathbb{Z} \oplus \mathbb{Z}$, with the two irreducibles as generators, and the multiplication is componentwise. For $\mathbb{D}'$, the representation ring is also $\mathbb{Z} \oplus \mathbb{Z}$, but the multiplication is not defined in the same way, because the tensor product of two non-trivial representations is not a representation.</p>
 <h2 id="summary">Summary</h2>
 <p>A representation of $\mathbb{D}'$ is an $R$-module $V$ together with a bilinear action of the algebra on it, equivalently a unital algebra homomorphism $\mathbb{D}' \to \operatorname{End}_R(V)$. The classification reduces the theory to linear algebra: the representations on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, the representation being recovered from $E$ as the action of $\varepsilon$.</p>
-<p>The theory is not semisimple. Because $\mathbb{D}'$ is a local ring with nilpotent maximal ideal rather than a field, the category of representations is abelian but not semisimple, and the indecomposable representations are not the irreducible ones. Schur's lemma still holds, so an endomorphism of an irreducible representation is a scalar multiple of the identity, while the classification of the indecomposables is governed by the Jordan structure of the nilpotent $E$.</p>
+<p>The theory is not semisimple. Over a field, because $\mathbb{D}'$ is a local ring with nilpotent maximal ideal rather than a field, the category of representations is abelian but not semisimple, and the indecomposable representations are not the irreducible ones. Schur's lemma still holds, so an endomorphism of an irreducible representation is a scalar multiple of the identity, while the classification of the indecomposables is governed by the Jordan structure of the nilpotent $E$.</p>
 <p>The article also records the representation ring $R(\mathbb{D}')$, the dual or contragredient representation on $V^*$, and the homomorphisms, the $R$-linear maps $T$ with $T \circ E = F \circ T$. The final section compares the theory with that of the split complex algebra, where the two nontrivial idempotents take the place of the nilpotent and the algebra is correspondingly decomposable.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

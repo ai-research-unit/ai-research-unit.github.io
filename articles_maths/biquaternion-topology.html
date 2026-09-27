@@ -51,12 +51,11 @@
     <main class="article">
       <div class="article-body">
         <h1 id="biquaternion-topology"><strong>Biquaternion Topology</strong></h1>
-<p>This article collects the topology of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a space: its contractibility, the Euclidean unit sphere, the null cone, and the link of the null cone. It uses the algebra and fixed-point subspaces of <em>Biquaternion Algebra</em>, the norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ and invertibility criterion of <em>Biquaternion Norm and Invertibility</em>, the zero divisor set of <em>Biquaternion Zero Divisors</em>, the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ with $N=\det$ of <em>Biquaternion 2×2 Matrix Representation</em>, the null cone and its rulings of <em>Biquaternion Null Quadric and Projective Geometry</em>, and <em>Lie Groups</em>. No physics is invoked and no new result is claimed.</p>
-<p><strong>Scope.</strong> The topology of the <strong>group of units</strong> $\mathbb{B}^\times\cong GL(2,\mathbb{C})$ — the polar decomposition, the retractions onto the compact subgroups $U(2)$ and $SU(2)$, the homotopy groups and the universal cover — belongs to the Lie theory of the algebra and is treated in <em>Biquaternion Exponential and Lie Group Structure</em>, Part III. This article owns the ambient space and its distinguished subsets, and takes from that article only the homotopy type of $\mathbb{B}^\times$ when a comparison is needed.</p>
+<p>This article collects the topology of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a space: its contractibility, the Euclidean unit sphere, the null cone, and the link of the null cone. It uses the algebra and fixed-point subspaces of <em>Biquaternion Algebra</em>, the norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ and invertibility criterion of <em>Biquaternion Norm and Invertibility</em>, the zero divisor set of <em>Biquaternion Zero Divisors</em>, the null cone and its rulings of <em>Biquaternion Null Quadric and Projective Geometry</em>, and <em>Lie Groups</em>. No physics is invoked and no new result is claimed.</p>
+<p><strong>Scope.</strong> The topology of the <strong>group of units</strong> $\mathbb{B}^\times$ — the polar decomposition, the retractions onto its compact subgroups, the homotopy groups and the universal cover — belongs to the Lie theory of the algebra and is treated in <em>Biquaternion Lie Algebra and Lie Group Structure</em>. This article owns the ambient space and its distinguished subsets, and takes from that article only the homotopy type of $\mathbb{B}^\times$ when a comparison is needed.</p>
 <p><strong>Conventions.</strong> The units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the central scalar imaginary is $i$, and $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The norm form is $N(\tilde{Q})=\sum_\mu Q_\mu^2$ and the Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$.</p>
 <p>The algebra itself has no interesting topology: as a real vector space it is $\mathbb{R}^8$, hence contractible. The two distinguished subsets studied here are the <strong>Euclidean unit sphere</strong> $S^7_E$ and the <strong>null cone</strong> $\{N(\tilde{Q})=0\}$, together with the link of the latter.</p>
-<h1 id="part-i-the-algebra-as-a-topological-space">Part I: The Algebra as a Topological Space</h1>
-<h2 id="1-the-underlying-space-and-its-contractibility">1. The underlying space and its contractibility</h2>
+<h2 id="the-underlying-space-and-its-contractibility">The underlying space and its contractibility</h2>
 <p>The real basis is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and</p>
 <p>$$
 \tilde{Q}\mapsto(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)
@@ -72,9 +71,8 @@ $$</p>
 <p>$$
 \mathbb{C}_{\mathbb{B}}\cong\mathbb{R}^2,\qquad \mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4,\qquad \mathbb{M}_+\cong\mathbb{R}^4,\qquad \mathbb{M}_-\cong\mathbb{R}^4.
 $$</p>
-<p>So $\mathbb{M}_\pm$ carry no topology beyond that of $\mathbb{R}^4$; their Minkowski content comes from the restricted quadratic form (<em>Biquaternion Null Quadric and Projective Geometry</em>, §2 and §13), not from the topology.</p>
-<h1 id="part-ii-the-euclidean-unit-sphere">Part II: The Euclidean Unit Sphere</h1>
-<h2 id="2-the-euclidean-unit-sphere">2. The Euclidean unit sphere</h2>
+<p>So $\mathbb{M}_\pm$ carry no topology beyond that of $\mathbb{R}^4$; their Minkowski content comes from the restricted quadratic form (<em>Biquaternion Null Quadric and Projective Geometry</em>, §<em>Real forms and split signature</em> and §<em>The light cone in the Minkowski slices</em>), not from the topology.</p>
+<h2 id="the-euclidean-unit-sphere">The Euclidean unit sphere</h2>
 <p>$$
 S^7_E=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|_E=1\}\cong S^7
 $$</p>
@@ -87,29 +85,25 @@ $$</p>
 S^7_E\not\subseteq\mathbb{B}^\times.
 $$</p>
 <p>For the normed division algebras the norm is multiplicative and the unit sphere is a Lie group, $S^0,S^1,S^3$, while $S^7$ is a Moufang loop for the octonions; since $\mathbb{B}$ is not a division algebra, none of this applies.</p>
-<p>The level set that <em>is</em> a subgroup of $\mathbb{B}^\times$ is $N(\tilde{Q})=1$, not $\|\tilde{Q}\|_E=1$: the <strong>norm-one group</strong> $\mathbb{B}^\times_1\cong SL(2,\mathbb{C})$ is developed with the rest of the group structure in <em>Biquaternion Exponential and Lie Group Structure</em>, §2.</p>
-<h1 id="part-iii-the-null-cone-and-its-link">Part III: The Null Cone and Its Link</h1>
-<h2 id="3-the-null-cone">3. The null cone</h2>
+<p>The level set that <em>is</em> a subgroup of $\mathbb{B}^\times$ is $N(\tilde{Q})=1$, not $\|\tilde{Q}\|_E=1$: the <strong>norm-one group</strong> $\mathbb{B}^\times_1$ is developed with the rest of the group structure in <em>Biquaternion Lie Algebra and Lie Group Structure</em>, §<em>The Group of Units</em>.</p>
+<h2 id="the-null-cone">The null cone</h2>
 <p>The <strong>null cone</strong>, or singular set, is</p>
 <p>$$
 \mathcal{N}=\{\tilde{Q}\in\mathbb{B}:N(\tilde{Q})=0\}=\{0\}\cup\mathcal{Z},
 $$</p>
-<p>where $\mathcal{Z}$ is the zero-divisor set; under $\rho$ it is the determinantal variety</p>
-<p>$$
-\rho(\mathcal{N})=\{A\in M_2(\mathbb{C}):\det A=0\}=\{A:\operatorname{rank}A\leq1\}.
-$$</p>
-<p>It is closed, with empty interior, so $\mathbb{B}^\times$ is dense; it is a real algebraic cone with apex $0$, since $N$ is homogeneous of degree $2$; and its real dimension is $6$, as the complex hypersurface $N=0$ in $\mathbb{B}\cong\mathbb{C}^4$. Away from the origin its two real gradients are independent, so $\mathcal{N}\setminus\{0\}$ is a smooth real $6$-manifold; at the origin it is not a manifold (§4).</p>
+<p>where $\mathcal{Z}$ is the zero-divisor set.</p>
+<p>It is closed, with empty interior, so $\mathbb{B}^\times$ is dense; it is a real algebraic cone with apex $0$, since $N$ is homogeneous of degree $2$; and its real dimension is $6$, as the complex hypersurface $N=0$ in $\mathbb{B}\cong\mathbb{C}^4$. Away from the origin its two real gradients are independent, so $\mathcal{N}\setminus\{0\}$ is a smooth real $6$-manifold; at the origin it is not a manifold (§<em>The link of the null cone</em>).</p>
 <p><strong>Contractibility.</strong> The homotopy $K(s,\tilde{Q})=(1-s)\tilde{Q}$ maps $[0,1]\times\mathcal{N}$ into $\mathcal{N}$, since scaling a null element by a complex number preserves nullity, and contracts $\mathcal{N}$ to the apex. The null cone is thus homotopy trivial, like the algebra, but is a singular subset of it.</p>
-<h2 id="4-the-link-of-the-null-cone">4. The link of the null cone</h2>
+<h2 id="the-link-of-the-null-cone">The link of the null cone</h2>
 <p>The <strong>link</strong> of the null cone is</p>
 <p>$$
 L=\{\tilde{Q}\in\mathbb{B}:N(\tilde{Q})=0,\ \|\tilde{Q}\|_E=1\}=\mathcal{N}\cap S^7_E.
 $$</p>
-<p>Every nonzero null element is uniquely $t\,u$ with $t=\|\tilde{Q}\|_E>0$ and $u\in L$, so $\mathcal{N}$ is the cone on $L$ and is contractible (§3). Since $\dim_{\mathbb{R}}\mathcal{N}=6$, the link has real dimension $5$. Under $M=uv^{T}$ with $\|u\|=\|v\|=1$,</p>
+<p>Every nonzero null element is uniquely $t\,u$ with $t=\|\tilde{Q}\|_E>0$ and $u\in L$, so $\mathcal{N}$ is the cone on $L$ and is contractible (§<em>The null cone</em>). Since $\dim_{\mathbb{R}}\mathcal{N}=6$, the link has real dimension $5$. Under $M=uv^{T}$ with $\|u\|=\|v\|=1$,</p>
 <p>$$
 L\cong(S^3\times S^3)/U(1),
 $$</p>
-<p>where $U(1)=S^1$ acts by $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, the relation under which $uv^{T}$ is unchanged. Here $Q=\mathbb{P}(\mathcal{N})\cong\mathbb{P}^1\times\mathbb{P}^1$ is the projectivised null cone, the smooth Segre quadric of <em>Biquaternion Null Quadric and Projective Geometry</em> (§5, §6). The Hopf maps combine to a bundle projection</p>
+<p>where $U(1)=S^1$ acts by $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, the relation under which $uv^{T}$ is unchanged. Here $Q=\mathbb{P}(\mathcal{N})\cong\mathbb{P}^1\times\mathbb{P}^1$ is the projectivised null cone, the smooth Segre quadric of <em>Biquaternion Null Quadric and Projective Geometry</em>, §<em>Rank-one description and the Segre embedding</em> and §<em>The two rulings of null planes</em>. The Hopf maps combine to a bundle projection</p>
 <p>$$
 q:L\to Q\cong S^2\times S^2,\qquad[(u,v)]\mapsto([u],[v]),
 $$</p>
@@ -119,7 +113,7 @@ $$</p>
 \pi_1(L)=0,\qquad \pi_2(L)\cong\pi_1(S^1)=\mathbb{Z}.
 $$</p>
 <p>So $L$ is simply connected but not homeomorphic to $S^5$, whose $\pi_2$ vanishes: the null cone is genuinely non-manifold at its apex.</p>
-<h2 id="5-pure-biquaternions-and-reality-conditions">5. Pure biquaternions and reality conditions</h2>
+<h2 id="pure-biquaternions-and-reality-conditions">Pure biquaternions and reality conditions</h2>
 <p>A biquaternion is <strong>pure</strong> if its complex scalar part vanishes,</p>
 <p>$$
 P=\{\tilde{Q}\in\mathbb{B}:Q_0=0\}=\{Q_1e_1+Q_2e_2+Q_3e_3:Q_k\in\mathbb{C}\}\cong\mathbb{C}^3,
@@ -137,19 +131,15 @@ $$</p>
 <p>$$
 S^2=\{\mu\in\mathbb{H}_{\mathbb{B}}:\mu^2=-e_0\},
 $$</p>
-<p>compact, connected and simply connected, with $\pi_2(S^2)\cong\mathbb{Z}$, and not a group, since only $S^0,S^1,S^3$ admit Lie group structures. It is a homogeneous space of the unit quaternions,</p>
-<p>$$
-S^2\cong SU(2)/U(1)\cong SO(3)/SO(2),
-$$</p>
-<p>the base of the Hopf fibration and the quotient of $S^3$ by the maximal torus of $SU(2)$; the sphere of roots of $+1$ is its image under multiplication by $i$, homeomorphic to it.</p>
-<p>Finally, on either pure reality slice the restricted norm form is definite, being $q_1^2+q_2^2+q_3^2$ on $P\cap\mathbb{H}_{\mathbb{B}}$ and $-(q'^2_1+q'^2_2+q'^2_3)$ on $P\cap i\mathbb{H}_{\mathbb{B}}$. Hence $N(\tilde{Q})=0$ forces $\tilde{Q}=0$: the only null element of either pure reality slice is the origin, so the light cone meets these three-dimensional spaces only at its apex, unlike the Minkowski slices $\mathbb{M}_\pm$, whose null set is the three-dimensional light cone (<em>Biquaternion Null Quadric and Projective Geometry</em>, §13).</p>
+<p>compact, connected and simply connected, with $\pi_2(S^2)\cong\mathbb{Z}$, and not a group, since only $S^0,S^1,S^3$ admit Lie group structures. It is a homogeneous space of the unit quaternions and the base of the Hopf fibration $S^3\to S^2$; the sphere of roots of $+1$ is its image under multiplication by $i$, homeomorphic to it.</p>
+<p>Finally, on either pure reality slice the restricted norm form is definite, being $q_1^2+q_2^2+q_3^2$ on $P\cap\mathbb{H}_{\mathbb{B}}$ and $-(q'^2_1+q'^2_2+q'^2_3)$ on $P\cap i\mathbb{H}_{\mathbb{B}}$. Hence $N(\tilde{Q})=0$ forces $\tilde{Q}=0$: the only null element of either pure reality slice is the origin, so the light cone meets these three-dimensional spaces only at its apex, unlike the Minkowski slices $\mathbb{M}_\pm$, whose null set is the three-dimensional light cone (<em>Biquaternion Null Quadric and Projective Geometry</em>, §<em>The light cone in the Minkowski slices</em>).</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>$\mathbb{B}\cong\mathbb{R}^8$ with the Euclidean topology is contractible, hence path-connected and simply connected with $\pi_n(\mathbb{B})=0$ for all $n\geq1$; the six distinguished real subspaces are contractible as well, so they carry no topology beyond that of $\mathbb{R}^n$.</li>
-<li>The Euclidean unit sphere $S^7_E$ is a closed, compact, connected $7$-manifold but not a group: $\|\cdot\|_E$ is not multiplicative and $S^7_E\not\subseteq\mathbb{B}^\times$. The level set that is a group, $N=1$, is the norm-one group treated in <em>Biquaternion Exponential and Lie Group Structure</em>.</li>
+<li>The Euclidean unit sphere $S^7_E$ is a closed, compact, connected $7$-manifold but not a group: $\|\cdot\|_E$ is not multiplicative and $S^7_E\not\subseteq\mathbb{B}^\times$. The level set that is a group, $N=1$, is the norm-one group treated in <em>Biquaternion Lie Algebra and Lie Group Structure</em>.</li>
 <li>The null cone $\mathcal{N}=\{N(\tilde{Q})=0\}=\{0\}\cup\mathcal{Z}$ is a closed real algebraic cone of real dimension $6$, smooth away from the apex and non-manifold at the apex, and contractible: it is the cone on its link.</li>
 <li>The link $L=\mathcal{N}\cap S^7_E$ is a closed connected $5$-manifold, an $S^1$-bundle over $S^2\times S^2$, simply connected with $\pi_2(L)\cong\mathbb{Z}$. Since $\pi_2(S^5)=0$, the apex is genuinely singular.</li>
-<li>The pure subspace $P\cong\mathbb{C}^3$ is contractible. In its real slice $P\cap\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^3$ the unit sphere is the sphere of real roots of $-1$, $S^2\cong SU(2)/U(1)$, which is compact, connected and simply connected with $\pi_2(S^2)\cong\mathbb{Z}$ and is not a group.</li>
+<li>The pure subspace $P\cong\mathbb{C}^3$ is contractible. In its real slice $P\cap\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^3$ the unit sphere is the sphere of real roots of $-1$, $S^2$, which is compact, connected and simply connected with $\pi_2(S^2)\cong\mathbb{Z}$ and is not a group.</li>
 <li>The restricted norm form is definite on each pure real slice, so the light cone of the Minkowski slices meets those slices only at the apex.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -175,7 +165,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{Q}) = \sum_\mu Q_\mu^2$</td>
-<td>Norm form; $N = \det$ under $\mathbb{B} \cong M_2(\mathbb{C})$</td>
+<td>Norm form</td>
 </tr>
 <tr>
 <td>$\mathcal{N} = \{N(\tilde{Q}) = 0\}$</td>
@@ -199,14 +189,15 @@ $$</p>
 </tr>
 <tr>
 <td>$S^2 = \{\mu \in \mathbb{H}_{\mathbb{B}} : \mu^2 = -e_0\}$</td>
-<td>Sphere of real roots of $-1$; $\cong SU(2)/U(1)$</td>
+<td>Sphere of real roots of $-1$</td>
 </tr>
 <tr>
-<td>$\mathbb{B}^\times \cong GL(2,\mathbb{C})$</td>
-<td>Group of units; its topology is in <em>Biquaternion Exponential and Lie Group Structure</em></td>
+<td>$\mathbb{B}^\times$</td>
+<td>Group of units; its topology is in <em>Biquaternion Lie Algebra and Lie Group Structure</em></td>
 </tr>
 </tbody>
 </table></div>
+<h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853).</li>
 <li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions", <em>Proceedings of the London Mathematical Society</em> <strong>4</strong> (1873) 381–395.</li>

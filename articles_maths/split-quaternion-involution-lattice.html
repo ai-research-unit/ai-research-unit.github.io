@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Involution Lattice — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-involution-lattice"><strong>Split-Quaternion Involution Lattice</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries three involutions — the conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$ — and the companion article <em>Split-Quaternion Subspaces and the Involutions</em> treats them one at a time. This article treats them as a <strong>group</strong>: it computes the group they generate, its composition table, the way the group acts on the algebra, the lattice of fixed spaces it produces, and the orbits and stabilisers of that action. It closes with the comparison to the involution lattice of $\mathbb{B}$.</p>
+<p>The group is the Klein four-group, and the lattice of fixed spaces is a three-element refinement of the coordinate-block decomposition of <em>Split-Quaternion Relations Between Subspaces</em>. The article is self-contained in its algebra but relies on the individual articles for the definitions of the subspaces.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, conjugation $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the two further involutions</p>
+<p>$$
+\alpha : (e_1, e_2, e_3) \mapsto (-e_1, -e_2, e_3), \qquad \rho : (e_1, e_2, e_3) \mapsto (e_1, e_2, -e_3).
+$$</p>
+<p>The scalar and vector subspaces and the split-complex planes are $S, V, \mathbb{D}_2, \mathbb{D}_3$ of <em>Split-Quaternion Relations Between Subspaces</em>. All three involutions fix $\mathbb{R}$ pointwise and are $\mathbb{R}$-linear.</p>
+<h2 id="the-three-involutions">The Three Involutions</h2>
+<p>Each involution is a linear map $T : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ with $T^2 = \operatorname{id}$, and each has a definite relationship to the product.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>definition on generators</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conjugation $\bar{\cdot}$</td>
+<td>$e_k \mapsto -e_k$</td>
+<td>anti-automorphism</td>
+</tr>
+<tr>
+<td>principal $\alpha$</td>
+<td>$e_1,e_2 \mapsto -e_1,-e_2$; $e_3 \mapsto e_3$</td>
+<td>automorphism</td>
+</tr>
+<tr>
+<td>reversal $\rho$</td>
+<td>$e_1,e_2 \mapsto e_1,e_2$; $e_3 \mapsto -e_3$</td>
+<td>anti-automorphism</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="antilinearity">(Anti)linearity</h3>
+<p>All three are $\mathbb{R}$-linear and fix the real scalars; none is $\mathbb{C}$-linear, because $\mathbb{H}_{\mathrm{s}}$ is an $\mathbb{R}$-algebra with no central imaginary unit to be conjugated. In the language of involutions of an algebra, $\bar{\cdot}$ is a <strong>conjugation</strong> (an anti-automorphism of order two with fixed field $\mathbb{R}$, here the full scalar line since the centre is $\mathbb{R}$), whereas $\alpha$ is a <strong>grade-type automorphism</strong> and $\rho$ is the <strong>reversal</strong> or <strong>principal anti-automorphism</strong>.</p>
+<h3 id="antiautomorphism-properties">(Anti)automorphism properties</h3>
+<p><strong>Proposition.</strong> For all $\tilde q, y \in \mathbb{H}_{\mathrm{s}}$,</p>
+<p>$$
+\alpha(\tilde q y) = \alpha(\tilde q)\alpha(y), \qquad \rho(\tilde q y) = \rho(y)\rho(\tilde q), \qquad \overline{\tilde q y} = \bar{y}\,\bar{\tilde q}.
+$$</p>
+<p><strong>Proof.</strong> It suffices to check the generators, using $e_3 = e_1 e_2$. For $\alpha$: $\alpha(e_1)\alpha(e_2) = (-e_1)(-e_2) = e_1 e_2 = e_3 = \alpha(e_3)$, and the squares are preserved. For $\rho$: $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3 = \rho(e_3)$. For the conjugation: $\bar{e_2}\bar{e_1} = (-e_2)(-e_1) = e_2 e_1 = -e_3 = \bar{e_3}$. $\square$</p>
+<h2 id="the-group-they-generate">The Group They Generate</h2>
+<h3 id="two-composition-rules">Two Composition Rules</h3>
+<p>The three involutions satisfy</p>
+<p>$$
+\bar{\cdot} = \alpha \circ \rho = \rho \circ \alpha,
+$$</p>
+<p>so that any two of them determine the third. Equivalent forms are $\bar{\cdot}\,\alpha = \alpha\,\bar{\cdot} = \rho$ and $\bar{\cdot}\,\rho = \rho\,\bar{\cdot} = \alpha$. In particular $\alpha$ and $\rho$ commute, every product of two distinct involutions is the third, and every square is the identity.</p>
+<p><strong>Theorem.</strong> The set $G = \{\operatorname{id}, \alpha, \rho, \bar{\cdot}\}$ is closed under composition and is a group, isomorphic to the <strong>Klein four-group</strong> $\mathbb{Z}/2 \times \mathbb{Z}/2$. Every non-identity element is an involution.</p>
+<p><strong>Proof.</strong> Closure follows from the rules above: the product of two distinct involutions is the third, and the square of each is the identity; the identity is included. Associativity is inherited from the composition of functions. Hence $G$ is a group of order $4$ in which every element has order $2$, which is $\mathbb{Z}/2 \times \mathbb{Z}/2$. $\square$</p>
+<h3 id="composition-table">Composition Table</h3>
+<p>The composition $g \circ h$ of the rows on the columns is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\circ$</th>
+<th>$\operatorname{id}$</th>
+<th>$\bar{\cdot}$</th>
+<th>$\alpha$</th>
+<th>$\rho$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{id}$</td>
+<td>$\operatorname{id}$</td>
+<td>$\bar{\cdot}$</td>
+<td>$\alpha$</td>
+<td>$\rho$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$\bar{\cdot}$</td>
+<td>$\operatorname{id}$</td>
+<td>$\rho$</td>
+<td>$\alpha$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$\alpha$</td>
+<td>$\rho$</td>
+<td>$\operatorname{id}$</td>
+<td>$\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$\rho$</td>
+<td>$\alpha$</td>
+<td>$\bar{\cdot}$</td>
+<td>$\operatorname{id}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is symmetric, which is the commutativity of $G$; the off-diagonal entries $2 \times 2$ blocks exhibit the rule that the product of two distinct involutions is the third. Note that $\bar{\cdot}$ is the product $\alpha\rho$, so the group is generated by the two algebra maps $\alpha$ and $\rho$, and $\bar{\cdot}$ is not an independent generator.</p>
+<h3 id="permutation-of-the-involutions">Permutation of the Involutions</h3>
+<p>Since $G$ is abelian, conjugation inside $G$ fixes each element, so the three involutions are permuted trivially by the group itself. The full automorphism group $\operatorname{Aut}(G) \cong S_3$ acts on the set $\{\bar{\cdot}, \alpha, \rho\}$ by the six permutations of the three elements, but only the identity permutation is induced by conjugation within $G$; the other permutations arise, when they do, from conjugation by a unit of the algebra, that is from the inner automorphism group $\operatorname{Isom}^{+}$, and the outer automorphisms of the algebra $M_2(\mathbb{R})$ are not realised as such. The relevant structure here is therefore the fixed-space lattice of $G$ and not a nontrivial action on $G$.</p>
+<h2 id="the-lattice-of-fixed-spaces">The Lattice of Fixed Spaces</h2>
+<h3 id="fixed-and-anti-fixed-spaces">Fixed and Anti-Fixed Spaces</h3>
+<p>For an involution $T$ the algebra splits as $\operatorname{Fix}(T) \oplus \operatorname{Anti}(T)$, where $\operatorname{Fix}(T)$ is the $+1$ eigenspace and $\operatorname{Anti}(T)$ the $-1$ eigenspace. For the three involutions,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$T$</th>
+<th>$\operatorname{Fix}(T)$</th>
+<th>$\dim$</th>
+<th>$\operatorname{Anti}(T)$</th>
+<th>$\dim$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$S = \operatorname{span}\{1\}$</td>
+<td>$1$</td>
+<td>$V = \operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$</td>
+<td>$2$</td>
+<td>$\operatorname{span}\{e_1,e_2\}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$\operatorname{span}\{1,e_1,e_2\}$</td>
+<td>$3$</td>
+<td>$\mathbb{R} e_3$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-eigenspace-lattice">The Eigenspace Lattice</h3>
+<p>Because $G$ is abelian, every element of $G$ preserves the eigenspaces of every other element, so the eigenspaces are nested with respect to the common decomposition and form a lattice under inclusion:</p>
+<p>$$
+\{0\} \;\subset\; S \;\subset\; \operatorname{span}\{e_1,e_2\} \;\subset\; \operatorname{span}\{1,e_1,e_2\} \;\subset\; \mathbb{H}_{\mathrm{s}},
+$$</p>
+<p>the eigenspaces of dimension $2$ being the two $\pm1$ eigenspaces of the single involution $\alpha$, namely $\mathbb{D}_3$ and $\operatorname{span}\{e_1,e_2\}$, and the eigenspaces of dimension $3$ being $V$ and $\operatorname{span}\{1,e_1,e_2\}$. The eigenspaces of the three involutions, their intersections and their common refinement, in terms of the coordinate blocks $\langle 1\rangle, \langle e_1\rangle, \langle e_2\rangle, \langle e_3\rangle$ of <em>Split-Quaternion Relations Between Subspaces</em>, are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>blocks</th>
+<th>dimension</th>
+<th>eigenspace of</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{0\}$</td>
+<td>—</td>
+<td>$0$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>$\langle 1\rangle$</td>
+<td>$1$</td>
+<td>$+1$ for $\bar{\cdot}, \alpha, \rho$</td>
+</tr>
+<tr>
+<td>$\mathbb{R} e_3$</td>
+<td>$\langle e_3\rangle$</td>
+<td>$1$</td>
+<td>$-1$ for $\bar{\cdot}, \rho$; $+1$ for $\alpha$</td>
+</tr>
+<tr>
+<td>$\mathbb{R} e_1$</td>
+<td>$\langle e_1\rangle$</td>
+<td>$1$</td>
+<td>$-1$ for $\bar{\cdot}, \alpha$; $+1$ for $\rho$</td>
+</tr>
+<tr>
+<td>$\mathbb{R} e_2$</td>
+<td>$\langle e_2\rangle$</td>
+<td>$1$</td>
+<td>$-1$ for $\bar{\cdot}, \alpha$; $+1$ for $\rho$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3$</td>
+<td>$\langle 1\rangle\oplus\langle e_3\rangle$</td>
+<td>$2$</td>
+<td>$+1$ for $\alpha$</td>
+</tr>
+<tr>
+<td>$\operatorname{span}\{e_1,e_2\}$</td>
+<td>$\langle e_1\rangle\oplus\langle e_2\rangle$</td>
+<td>$2$</td>
+<td>$-1$ for $\bar{\cdot}, \alpha$; $+1$ for $\rho$</td>
+</tr>
+<tr>
+<td>$\operatorname{span}\{1,e_1,e_2\}$</td>
+<td>$\langle 1\rangle\oplus\langle e_1\rangle\oplus\langle e_2\rangle$</td>
+<td>$3$</td>
+<td>$+1$ for $\rho$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>$\langle e_1\rangle\oplus\langle e_2\rangle\oplus\langle e_3\rangle$</td>
+<td>$3$</td>
+<td>$-1$ for $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>all four</td>
+<td>$4$</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The lattice is the refinement of the coordinate-block decomposition by the eigenspace data of the three involutions. The subspaces listed are the eigenspaces of the involutions, their intersections and their common refinement; the wider family of subspaces fixed by $G$ as a <strong>set</strong> is larger, since $\alpha$ acts as $-1$ on $\operatorname{span}\{e_1,e_2\}$ and a sign change fixes every line of that plane, so that every line of $\operatorname{span}\{e_1,e_2\}$ is also $G$-invariant. Within the eigenspace lattice a subspace is fixed pointwise by some nonzero element of $G$ exactly when its blocks all carry the same sign under that element.</p>
+<h2 id="the-orbits-and-the-orbitstabiliser-count">The Orbits and the Orbit–Stabiliser Count</h2>
+<p>The group $G$ acts on $\mathbb{H}_{\mathrm{s}}$ by the four sign patterns tabulated above, and the orbit–stabiliser theorem reads $|G| = |\operatorname{Orb}(\tilde q)| \cdot |\operatorname{Stab}(\tilde q)|$ with $|G| = 4$.</p>
+<p><strong>Theorem.</strong> The orbit of a general element consists of the four elements</p>
+<p>$$
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \quad \bar{\tilde q}, \quad \alpha(\tilde q), \quad \rho(\tilde q),
+$$</p>
+<p>with $\tilde q$ repeated exactly when $G$ does not act freely at $\tilde q$. The possible orbit sizes and stabilisers are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>orbit size</th>
+<th>stabiliser</th>
+<th>condition on $\tilde q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$4$</td>
+<td>$\{\operatorname{id}\}$</td>
+<td>$(q_1,q_2) \neq (0,0)$ and $q_3 \neq 0$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\{\operatorname{id}, \rho\}$</td>
+<td>$q_3 = 0$, $(q_1,q_2) \neq (0,0)$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\{\operatorname{id}, \alpha\}$</td>
+<td>$q_1 = q_2 = 0$, $q_3 \neq 0$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$G$</td>
+<td>$q_1 = q_2 = q_3 = 0$, i.e. $\tilde q \in S$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> For generic $\tilde q$ with $q_1,q_2,q_3 \neq 0$, the four images are distinct, so $|\operatorname{Orb}(\tilde q)| = 4$ and the stabiliser is trivial. If $q_3 = 0$ but $(q_1,q_2) \neq (0,0)$, the images of $\tilde q$ and $\rho(\tilde q)$ coincide, since $\rho$ fixes $e_1$ and $e_2$, and $\bar{\tilde q}, \alpha(\tilde q)$ coincide for the same reason; the orbit has size $2$ and the stabiliser is $\{\operatorname{id},\rho\}$. If $q_1 = q_2 = 0$ and $q_3 \neq 0$, then $\alpha$ fixes $\tilde q$ while $\bar{\cdot}$ and $\rho$ coincide, giving size $2$ and stabiliser $\{\operatorname{id},\alpha\}$. If $\tilde q \in S$ then every element of $G$ fixes $\tilde q$, giving the singleton orbit and stabiliser $G$. $\square$</p>
+<p>The count is exact because $G$ acts in the $(q_1,q_2,q_3)$-coordinates through the subgroup</p>
+<p>$$
+H = \{\, (0,0,0),\, (1,1,1),\, (1,1,0),\, (0,0,1) \,\} \subset (\mathbb{Z}/2)^3,
+$$</p>
+<p>of order $4$, where $1$ means a sign flip; equivalently $\bar{\cdot}, \alpha, \rho$ flip the sign patterns $(q_1,q_2,q_3)$, $(q_1,q_2)$, $(q_3)$. The orbit of $(q_1,q_2,q_3)$ has size $|H| / |\operatorname{Stab}|$, and the stabiliser is the subgroup of $H$ generated by the sign flips of the vanishing coordinates of $(q_1,q_2,q_3)$, which is the content of the table.</p>
+<h2 id="the-reduction-of-the-labelled-spaces">The Reduction of the Labelled Spaces</h2>
+<p>Each of the four blocks and each of the distinguished subspaces carries a <strong>triple sign pattern</strong> $(\bar{\cdot}, \alpha, \rho)$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>space</th>
+<th>$\bar{\cdot}$</th>
+<th>$\alpha$</th>
+<th>$\rho$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle 1\rangle$</td>
+<td>$+$</td>
+<td>$+$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\langle e_1\rangle$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\langle e_2\rangle$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\langle e_3\rangle$</td>
+<td>$-$</td>
+<td>$+$</td>
+<td>$-$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>$+$</td>
+<td>$+$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\mathbb{R} e_3$</td>
+<td>$-$</td>
+<td>$+$</td>
+<td>$-$</td>
+</tr>
+<tr>
+<td>$\operatorname{span}\{e_1,e_2\}$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3$</td>
+<td>mixed on $\{1,e_3\}$</td>
+<td>$+$</td>
+<td>mixed</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>$-$</td>
+<td>mixed on $\{e_1,e_2,e_3\}$</td>
+<td>mixed</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two lines $\langle e_1\rangle$ and $\langle e_2\rangle$ carry the same triple pattern and are therefore not separated by $G$; this is the lattice-theoretic reason for the unsplittable plane of <em>Split-Quaternion Subspaces and the Involutions</em>. Only the line $\langle e_3\rangle$ carries a distinct pattern, $(-,+,-)$.</p>
+<h2 id="the-relation-to-the-involution-lattice-of-math299">The Relation to the Involution Lattice of $\mathbb{B}$</h2>
+<p>The biquaternion article <em>Biquaternion Involution Lattice</em> treats four involutions — the conjugation $\bar{\cdot}$, the complex conjugation ${}^{*}$, the Hermitian conjugation ${}^{\dagger} = {}^{*}\bar{\cdot}$ and the anti-Hermitian one $\flat = -\dagger$ — which generate a larger group and produce a richer lattice, because $\mathbb{B}$ has eight real coordinates and four involutions. The split-quaternion lattice differs in two structural ways. First, three involutions generate the Klein four-group, so the composition table is the simplest of all nontrivial groups and the whole group is determined by any two of the involutions. Second, the eigenspace lattice has a <strong>maximum chain</strong> of length four, $\{0\} \subset S \subset \operatorname{span}\{e_1,e_2\} \subset \operatorname{span}\{1,e_1,e_2\} \subset \mathbb{H}_{\mathrm{s}}$, and the vector subspace $V$ lies outside it; the lattice has two incomparable three-dimensional elements $V$ and $\operatorname{span}\{1,e_1,e_2\}$ rather than a single maximal proper subspace as a chain would give. Nothing biquaternion-specific — the two commuting complex structures, the Hermitian pairing — is invoked here.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (an element of each orbit size).</strong> The element $\tilde q = 5 + 2e_1 + 3e_2 + 4e_3$ has orbit size $4$ with trivial stabiliser; the element $\tilde q = 5 + 2e_1 + 3e_2$ has orbit $\{\tilde q, \bar{\tilde q}\}$ of size $2$ with stabiliser $\{\operatorname{id},\rho\}$; the element $\tilde q = 5 + 4e_3$ has orbit size $2$ with stabiliser $\{\operatorname{id},\alpha\}$; and the scalar $\tilde q = 5$ has orbit size $1$ with stabiliser $G$.</p>
+<p><strong>Example (the stabiliser of a vector).</strong> For $e_3$ the images are $\bar{e_3} = -e_3$, $\alpha(e_3) = e_3$, $\rho(e_3) = -e_3$, so the orbit is $\{e_3, -e_3\}$ of size $2$ and the stabiliser is $\{\operatorname{id}, \alpha\}$. For the vector $e_1 + e_2$ the images are $\bar{\cdot}(e_1+e_2) = -e_1-e_2$, $\alpha(e_1+e_2) = -e_1-e_2$, $\rho(e_1+e_2) = e_1+e_2$, so the stabiliser is $\{\operatorname{id}, \rho\}$. The vector $e_1 + e_3$, by contrast, has the four images $e_1+e_3$, $-e_1-e_3$, $-e_1+e_3$, $e_1-e_3$, all distinct, so its stabiliser is trivial.</p>
+<p><strong>Example (an element with mixed pattern).</strong> For $\tilde q = 2 + e_1 + e_3$, the images are $\bar{\tilde q} = 2 - e_1 - e_3$, $\alpha(\tilde q) = 2 - e_1 + e_3$, $\rho(\tilde q) = 2 + e_1 - e_3$, all distinct, so the orbit has size $4$ and the stabiliser is trivial; the sign pattern of $\tilde q$ itself is not a single triple because $\tilde q$ is a mixed element, only its coordinates carry triples.</p>
+<p><strong>Example (composition verified on an element).</strong> For $\tilde q = 1 + e_2$: $\alpha(\rho(\tilde q)) = \alpha(1 - e_2) = 1 - e_2 = \bar{\tilde q}$, and $\rho(\alpha(\tilde q)) = \rho(1 - e_2) = 1 - e_2 = \bar{\tilde q}$, confirming $\bar{\cdot} = \alpha\rho = \rho\alpha$.</p>
+<h2 id="summary">Summary</h2>
+<p>The split-quaternion algebra carries three $\mathbb{R}$-linear involutions — the conjugation $\bar{\cdot}$ (an anti-automorphism), the principal involution $\alpha$ (an automorphism) and the reversal $\rho$ (an anti-automorphism) — related by $\bar{\cdot} = \alpha\rho = \rho\alpha$. Together they form the Klein four-group $G \cong \mathbb{Z}/2\times\mathbb{Z}/2$, whose composition table is the one above; $\bar{\cdot}$ is the product of the other two, so $\alpha$ and $\rho$ generate.</p>
+<p>The fixed spaces of the three involutions are $S = \operatorname{span}\{1\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ and $\operatorname{span}\{1,e_1,e_2\}$, with anti-fixed spaces $V$, $\operatorname{span}\{e_1,e_2\}$ and $\mathbb{R} e_3$. The lattice of eigenspaces is the coordinate-block decomposition refined by the sign data, with the maximum chain $\{0\} \subset S \subset \operatorname{span}\{e_1,e_2\} \subset \operatorname{span}\{1,e_1,e_2\} \subset \mathbb{H}_{\mathrm{s}}$. The group acts on the algebra by four sign patterns; the orbit–stabiliser theorem gives orbit sizes $1, 2$ or $4$ with the stabilisers tabulated, the generic orbit having size $4$ and trivial stabiliser and the scalar orbit being a fixed point. The lines $\langle e_1\rangle$ and $\langle e_2\rangle$ carry the same triple sign pattern and are not separated by the involution group. This lattice is the split-quaternion analogue of the biquaternion involution lattice, with three involutions in place of four and a Klein four-group in place of the larger group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>the split-quaternion algebra</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, \alpha, \rho$</td>
+<td>conjugation, principal involution, reversal</td>
+<td><em>Split-Quaternion Subspaces and the Involutions</em></td>
+</tr>
+<tr>
+<td>$G = \{\operatorname{id},\alpha,\rho,\bar{\cdot}\}$</td>
+<td>the Klein four-group generated by the involutions</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}(T)$, $\operatorname{Anti}(T)$</td>
+<td>the $+1$ and $-1$ eigenspaces of an involution $T$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$S, V, \mathbb{D}_2, \mathbb{D}_3$</td>
+<td>the distinguished subspaces</td>
+<td><em>Split-Quaternion Relations Between Subspaces</em></td>
+</tr>
+<tr>
+<td>$\langle 1\rangle,\langle e_1\rangle,\langle e_2\rangle,\langle e_3\rangle$</td>
+<td>the four coordinate blocks</td>
+<td><em>Split-Quaternion Relations Between Subspaces</em></td>
+</tr>
+<tr>
+<td>$(\bar{\cdot},\alpha,\rho)$, $(-,+,-)$ …</td>
+<td>triple sign patterns</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\operatorname{Orb}(\tilde q)$, $\operatorname{Stab}(\tilde q)$</td>
+<td>orbit and stabiliser under $G$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(G) \cong S_3$</td>
+<td>the automorphisms of the Klein four-group</td>
+<td>this article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the general theory of involutions, their groups and their fixed fields.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the involution group generated by the conjugation, reversal and grade involutions of a Clifford algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the composition rules of the involutions of the low-dimensional Clifford algebras and the lattice of their fixed spaces.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the involutions of the coquaternions and their fixed subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

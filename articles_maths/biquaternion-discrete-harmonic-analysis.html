@@ -231,7 +231,7 @@ $$</p>
 </ol>
 <p>The result is a fast algorithm for the discrete biquaternion Fourier transform, using existing complex FFT libraries. The cost is four complex FFTs of size $N$, which is $O(N \log N)$, as opposed to the naive evaluation of the transform, which is $O(N^2)$.</p>
 <h3 id="why-this-matters">Why This Matters</h3>
-<p>The factorization is a computational result, but it also has a structural meaning. It shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied to the entries of the matrix representation, dressed in biquaternion language. The non-trivial content is the <strong>choice of root</strong> and the <strong>basis change</strong> that it induces. Everything else is ordinary harmonic analysis.</p>
+<p>The factorization is a computational result, but it also has a structural meaning. It shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied entrywise to the coefficients, dressed in biquaternion language. The non-trivial content is the <strong>choice of root</strong> and the <strong>basis change</strong> that it induces. Everything else is ordinary harmonic analysis.</p>
 <h2 id="the-convolution-theorem">The Convolution Theorem</h2>
 <h3 id="definition-of-convolution">Definition of Convolution</h3>
 <p>Let $f, g : \mathbb{Z} \to \mathbb{B}$ be two biquaternion-valued sequences, extended to $\mathbb{Z}$ by $f[n] = g[n] = 0$ outside the support $\{0, 1, \ldots, N-1\}$. The <strong>convolution</strong> of $f$ and $g$ is</p>

@@ -52,13 +52,13 @@
       <div class="article-body">
         <h1 id="biquaternion-idempotents-and-projections"><strong>Biquaternion Idempotents and Projections</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The algebra article defined the biquaternion algebra $\mathbb{B}$, its conjugations and its six distinguished real subspaces. This article treats the <strong>idempotents</strong> of $\mathbb{B}$ — the elements satisfying $\tilde{P}^2 = \tilde{P}$ — and the projections and direct sum decompositions they carry.</p>
+<p>The algebra article defined the biquaternion algebra $\mathbb{B}$, its conjugations and its six distinguished real subspaces. This article treats the <strong>idempotents</strong> of $\mathbb{B}$ — the elements satisfying $\tilde\Pi^2 = \tilde\Pi$ — and the projections and direct sum decompositions they carry.</p>
 <p>Idempotents are the algebraic form of a projection, and in $\mathbb{B}$ they do four separate jobs at once:</p>
 <ol>
 <li>they give the direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals;</li>
 <li>they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent;</li>
 <li>they are in bijection with the roots of $-1$, so the classification of the idempotents is exactly the classification of those roots;</li>
-<li>they drive the Peirce decomposition and the matrix-unit model of the algebra.</li>
+<li>they drive the Peirce decomposition of the algebra.</li>
 </ol>
 <p>The material here was previously distributed over the article on ideals, the article on zero divisors, the article on the roots of minus one and the worked examples. It is collected here because the four statements above are one subject: the idempotent.</p>
 <p><strong>Placement.</strong> The article is third in the Algebra group, after the algebra and the norm forms and before the roots of $-1$, the zero divisors and the ideals, because all of those use the idempotents. Its own proofs use only the algebra article: the roots of $-1$ enter as a parameter set whose classification is quoted from <em>Biquaternion Roots of Minus One</em>, and the relations to the zero divisors and to the ideals are forward pointers.</p>
@@ -67,46 +67,42 @@
 (\mathbf{A}, \mathbf{B}) = \sum_{k=1}^{3} A_k B_k,
 $$</p>
 <p>so that a pure element satisfies $\mathbf{B}^2 = -(\mathbf{B}, \mathbf{B}) e_0$. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ and decides invertibility. The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
-<h2 id="1-idempotents-in-an-algebra">1. Idempotents in an Algebra</h2>
-<p>Let $A$ be an associative unital algebra. An element $e \in A$ is an <strong>idempotent</strong> if $e^2 = e$. Idempotents encode direct summands: for an idempotent $e$,</p>
+<h2 id="idempotents-in-an-algebra">Idempotents in an Algebra</h2>
+<p>Let $A$ be an associative unital algebra. An element $\tilde\Pi \in A$ is an <strong>idempotent</strong> if $\tilde\Pi^2 = \tilde\Pi$. Idempotents encode direct summands: for an idempotent $\tilde\Pi$,</p>
 <p>$$
-A = Ae \oplus A(1-e) \quad (\text{left}), \qquad A = eA \oplus (1-e)A \quad (\text{right}),
+A = A\tilde\Pi \oplus A(1-\tilde\Pi) \quad (\text{left}), \qquad A = \tilde\Pi A \oplus (1-\tilde\Pi)A \quad (\text{right}),
 $$</p>
-<p>and every such decomposition of the regular module arises from an idempotent. Two idempotents $e, f$ are <strong>orthogonal</strong> if $ef = fe = 0$; then $e+f$ is again idempotent. A family $\{e_1, \dots, e_n\}$ is pairwise orthogonal if $e_i e_j = 0$ for $i \neq j$, and <strong>complete</strong> if in addition $\sum_i e_i = 1$. A nonzero idempotent $e$ is <strong>primitive</strong> if it is not a sum of two nonzero orthogonal idempotents. The criterion used throughout, valid for a semisimple algebra $A$, is</p>
+<p>and every such decomposition of the regular module arises from an idempotent. Two idempotents $\tilde\Pi, \tilde\Pi'$ are <strong>orthogonal</strong> if $\tilde\Pi\tilde\Pi' = \tilde\Pi'\tilde\Pi = 0$; then $\tilde\Pi+\tilde\Pi'$ is again idempotent. A family $\{\tilde\Pi_1, \dots, \tilde\Pi_n\}$ is pairwise orthogonal if $\tilde\Pi_i \tilde\Pi_j = 0$ for $i \neq j$, and <strong>complete</strong> if in addition $\sum_i \tilde\Pi_i = 1$. A nonzero idempotent $\tilde\Pi$ is <strong>primitive</strong> if it is not a sum of two nonzero orthogonal idempotents. The criterion used throughout, valid for a semisimple algebra $A$, is</p>
 <p>$$
-e \text{ primitive} \iff Ae \text{ is a minimal left ideal} \iff eAe \text{ is a division ring}.
+\tilde\Pi \text{ primitive} \iff A\tilde\Pi \text{ is a minimal left ideal} \iff \tilde\Pi A\tilde\Pi \text{ is a division ring}.
 $$</p>
-<p>Since $\mathbb{B} \cong M_2(\mathbb{C})$ is semisimple, the criterion applies to it, and it is the reason the idempotent and the ideal theories of this series are two views of one subject.</p>
-<h2 id="2-the-standard-idempotents-of-math41">2. The Standard Idempotents of $\mathbb{B}$</h2>
+<p>Since $\mathbb{B}$ is semisimple, the criterion applies to it, and it is the reason the idempotent and the ideal theories of this series are two views of one subject.</p>
+<h2 id="the-standard-idempotents-of-math41">The Standard Idempotents of $\mathbb{B}$</h2>
 <p>Over $\mathbb{C}$, put</p>
 <p>$$
-p = \frac{e_0 + i e_3}{2}, \qquad q = \frac{e_0 - i e_3}{2}.
+\tilde\Pi_1 = \frac{e_0 + i e_3}{2}, \qquad \tilde\Pi_2 = \frac{e_0 - i e_3}{2}.
 $$</p>
-<p>Since $i$ is central and $(i e_3)^2 = i^2 e_3^2 = (-1)(-1) = 1$, one has $p^2 = p$, $q^2 = q$ and</p>
+<p>Since $i$ is central and $(i e_3)^2 = i^2 e_3^2 = (-1)(-1) = 1$, one has $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and</p>
 <p>$$
-pq = qp = \frac{e_0 - (i e_3)^2}{4} = 0, \qquad p + q = e_0.
+\tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = \frac{e_0 - (i e_3)^2}{4} = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0.
 $$</p>
-<p>So $p$ and $q$ are orthogonal idempotents summing to the unit. They are not central: $e_1$ anticommutes with $i e_3$, hence does not commute with $p$ or $q$. Under $\mathbb{B} \cong M_2(\mathbb{C})$ they correspond to the diagonal matrix units,</p>
-<p>$$
-\Phi(p) = \tfrac{1}{2}(I_2 + \sigma_3) = \operatorname{diag}(1,0) = E_{11}, \qquad \Phi(q) = \tfrac{1}{2}(I_2 - \sigma_3) = \operatorname{diag}(0,1) = E_{22},
-$$</p>
-<p>and each is primitive. These two are the standard idempotents of the algebra.</p>
+<p>So $\tilde\Pi_1$ and $\tilde\Pi_2$ are orthogonal idempotents summing to the unit. They are not central: $e_1$ anticommutes with $i e_3$, hence does not commute with $\tilde\Pi_1$ or $\tilde\Pi_2$. Each is primitive, and these two are the standard idempotents of the algebra.</p>
 <p>Left multiplication by $e_3$ and by $e_2$ acts on them as</p>
 <p>$$
-e_3 p = -i p, \qquad e_3 q = i q, \qquad e_2 p = i e_1 p,
+e_3 \tilde\Pi_1 = -i \tilde\Pi_1, \qquad e_3 \tilde\Pi_2 = i \tilde\Pi_2, \qquad e_2 \tilde\Pi_1 = i e_1 \tilde\Pi_1,
 $$</p>
-<p>the first two because $e_3 p = (e_3 + i e_3^2)/2 = (e_3 - i)/2 = -i\,p$ and similarly for $q$. The consequence used in Section 7 is that the four products $e_\mu p$ reduce to $p$ and $e_1 p$, so that $\{p, e_1 p\}$ is a basis of $\mathbb{B}p$ over $\mathbb{C}$.</p>
-<h2 id="3-the-classification-of-the-idempotents">3. The Classification of the Idempotents</h2>
+<p>the first two because $e_3 \tilde\Pi_1 = (e_3 + i e_3^2)/2 = (e_3 - i)/2 = -i\,\tilde\Pi_1$ and similarly for $\tilde\Pi_2$. The consequence used in §<em>Idempotents and the Minimal Left Ideals</em> is that the four products $e_\mu \tilde\Pi_1$ reduce to $\tilde\Pi_1$ and $e_1 \tilde\Pi_1$, so that $\{\tilde\Pi_1, e_1 \tilde\Pi_1\}$ is a basis of $\mathbb{B}\tilde\Pi_1$ over $\mathbb{C}$.</p>
+<h2 id="the-classification-of-the-idempotents">The Classification of the Idempotents</h2>
 <p><strong>Theorem.</strong> Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_0$) or of the form</p>
 <p>$$
-\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
+\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
 $$</p>
 <p>where $\xi \in \mathbb{B}$ is a root of $-1$, i.e. $\xi^2 = -1$. There are no other idempotents in $\mathbb{B}$.</p>
-<p><strong>Proof.</strong> Write $\tilde{P} = A e_0 + \mathbf{B}$ with $A \in \mathbb{C}$ and $\mathbf{B}$ pure. Then</p>
+<p><strong>Proof.</strong> Write $\tilde\Pi = A e_0 + \mathbf{B}$ with $A \in \mathbb{C}$ and $\mathbf{B}$ pure. Then</p>
 <p>$$
-\tilde{P}^2 = (A^2 - (\mathbf{B}, \mathbf{B})) e_0 + 2 A \mathbf{B}.
+\tilde\Pi^2 = (A^2 - (\mathbf{B}, \mathbf{B})) e_0 + 2 A \mathbf{B}.
 $$</p>
-<p>Equating to $\tilde{P} = A e_0 + \mathbf{B}$ gives the two equations</p>
+<p>Equating to $\tilde\Pi = A e_0 + \mathbf{B}$ gives the two equations</p>
 <p>$$
 A^2 - (\mathbf{B}, \mathbf{B}) = A, \qquad 2 A \mathbf{B} = \mathbf{B}.
 $$</p>
@@ -117,75 +113,75 @@ $$</p>
 $$</p>
 <p>so $\xi^2 = -(\xi, \xi) = -1$. Thus $\xi$ is a root of $-1$, and $\mathbf{B} = \xi \cdot (i/2)$. Hence</p>
 <p>$$
-\tilde{P} = \tfrac{1}{2} e_0 + \tfrac{1}{2} \xi i.
+\tilde\Pi = \tfrac{1}{2} e_0 + \tfrac{1}{2} \xi i.
 $$</p>
 <p>The sign choice arises from replacing $\xi$ by $-\xi$, which is also a root of $-1$. $\square$</p>
-<p>The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: with $\xi = i$, the formula gives $\tilde{P} = \frac{1}{2} e_0 + \frac{1}{2} i \cdot i = \frac{1}{2} e_0 - \frac{1}{2} e_0 = 0$; with $\xi = -i$, it gives $\tilde{P} = \frac{1}{2} e_0 - \frac{1}{2} i \cdot i = \frac{1}{2} e_0 + \frac{1}{2} e_0 = e_0$.</p>
-<p>The classification is a classification of the idempotents only because the roots of $-1$ are classified, and that classification is the subject of <em>Biquaternion Roots of Minus One</em>, which follows this article. The three families it produces — the trivial roots $\pm i$, the real quaternion roots $\pm\mu$ over unit pure real quaternions, and the non-trivial roots $b\mu + d\nu i$ — give the three families of idempotents in Section 4.</p>
-<h2 id="4-the-bijection-with-the-roots-of-minus-one">4. The Bijection With the Roots of Minus One</h2>
+<p>The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: with $\xi = i$, the formula gives $\tilde\Pi = \frac{1}{2} e_0 + \frac{1}{2} i \cdot i = \frac{1}{2} e_0 - \frac{1}{2} e_0 = 0$; with $\xi = -i$, it gives $\tilde\Pi = \frac{1}{2} e_0 - \frac{1}{2} i \cdot i = \frac{1}{2} e_0 + \frac{1}{2} e_0 = e_0$.</p>
+<p>The classification is a classification of the idempotents only because the roots of $-1$ are classified, and that classification is the subject of <em>Biquaternion Roots of Minus One</em>, which follows this article. The three families it produces — the trivial roots $\pm i$, the real quaternion roots $\pm\mu$ over unit pure real quaternions, and the non-trivial roots $b\mu + d\nu i$ — give the three families of idempotents in §<em>The Bijection With the Roots of Minus One</em>.</p>
+<h2 id="the-bijection-with-the-roots-of-minus-one">The Bijection With the Roots of Minus One</h2>
 <p><strong>Theorem.</strong> The map</p>
 <p>$$
-\xi \longmapsto P_+(\xi), \qquad P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i),
+\xi \longmapsto \tilde\Pi_+(\xi), \qquad \tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i),
 $$</p>
 <p>is a <strong>bijection</strong> from the set of roots of $-1$ onto the set of idempotents of $\mathbb{B}$.</p>
 <p><strong>Proof.</strong> <em>Well defined:</em> if $\xi^2 = -1$, then</p>
 <p>$$
-P_+(\xi)^2 = \tfrac{1}{4}(e_0 + \xi i)^2 = \tfrac{1}{4}(e_0 + 2\xi i + \xi^2 i^2) = \tfrac{1}{4}(e_0 + 2\xi i + 1) = \tfrac{1}{2}(e_0 + \xi i) = P_+(\xi),
+\tilde\Pi_+(\xi)^2 = \tfrac{1}{4}(e_0 + \xi i)^2 = \tfrac{1}{4}(e_0 + 2\xi i + \xi^2 i^2) = \tfrac{1}{4}(e_0 + 2\xi i + 1) = \tfrac{1}{2}(e_0 + \xi i) = \tilde\Pi_+(\xi),
 $$</p>
-<p>where $\xi^2 i^2 = (-1)(-1) = 1$ and $e_0$ commutes with $\xi i$. <em>Injective:</em> $P_+(\xi) = P_+(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$. <em>Surjective:</em> the classification theorem says every idempotent is $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ for some root $\xi$, and $P_-(\xi) = \tfrac{1}{2}(e_0 - \xi i) = P_+(-\xi)$, while $-\xi$ is again a root of $-1$. $\square$</p>
-<p>Consequently the <strong>complementary pairs</strong> $\{\tilde{P}, e_0 - \tilde{P}\}$ of idempotents are in bijection with the roots of $-1$ modulo the sign identification $\xi \sim -\xi$, since</p>
+<p>where $\xi^2 i^2 = (-1)(-1) = 1$ and $e_0$ commutes with $\xi i$. <em>Injective:</em> $\tilde\Pi_+(\xi) = \tilde\Pi_+(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$. <em>Surjective:</em> the classification theorem says every idempotent is $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ for some root $\xi$, and $\tilde\Pi_-(\xi) = \tfrac{1}{2}(e_0 - \xi i) = \tilde\Pi_+(-\xi)$, while $-\xi$ is again a root of $-1$. $\square$</p>
+<p>Consequently the <strong>complementary pairs</strong> $\{\tilde\Pi, e_0 - \tilde\Pi\}$ of idempotents are in bijection with the roots of $-1$ modulo the sign identification $\xi \sim -\xi$, since</p>
 <p>$$
-P_+(-\xi) = \tfrac{1}{2}(e_0 - \xi i) = e_0 - P_+(\xi).
+\tilde\Pi_+(-\xi) = \tfrac{1}{2}(e_0 - \xi i) = e_0 - \tilde\Pi_+(\xi).
 $$</p>
-<p>Thus $P_+(\xi)$ and $P_+(-\xi)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\xi, -\xi\}$.</p>
+<p>Thus $\tilde\Pi_+(\xi)$ and $\tilde\Pi_+(-\xi)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\xi, -\xi\}$.</p>
 <p>Substituting the classification of $\xi$ of <em>Biquaternion Roots of Minus One</em> gives the three families of idempotents:</p>
 <ul>
-<li>For the trivial root $\xi = \pm i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde{P} = 0$ or $\tilde{P} = e_0$. These are the <strong>trivial idempotents</strong>.</li>
-<li>For the real root $\xi = \pm \mu$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. Since $\mu i$ is Hermitian when $\mu$ is a unit pure real quaternion, $(\mu i)^\dagger = \mu i$, these are the <strong>Hermitian idempotents</strong>, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections that occur in the biquaternion spectral theorem, treated in <em>Biquaternion Spectral Theory</em>.</li>
-<li>For the non-trivial root $\xi = b\mu + d\nu i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These idempotents combine a real scalar part, a real vector part in the direction of $\nu$ and an imaginary vector part in the direction of $\mu$. Since their vector part mixes a real and an imaginary direction, they lie in none of the four four-dimensional subspaces.</li>
+<li>For the trivial root $\xi = \pm i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde\Pi = 0$ or $\tilde\Pi = e_0$. These are the <strong>trivial idempotents</strong>.</li>
+<li>For the real root $\xi = \pm \mu$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. Since $\mu i$ is Hermitian when $\mu$ is a unit pure real quaternion, $(\mu i)^\dagger = \mu i$, these are the <strong>Hermitian idempotents</strong>, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections that occur in the biquaternion spectral theorem, treated in <em>Biquaternion Spectral Theory</em>.</li>
+<li>For the non-trivial root $\xi = b\mu + d\nu i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These idempotents combine a real scalar part, a real vector part in the direction of $\nu$ and an imaginary vector part in the direction of $\mu$. Since their vector part mixes a real and an imaginary direction, they lie in none of the four four-dimensional subspaces.</li>
 </ul>
-<h2 id="5-idempotents-as-projections">5. Idempotents as Projections</h2>
-<p>An idempotent $\tilde{P}$ satisfies $\tilde{P}^2 = \tilde{P}$. Its <strong>complement</strong> $e_0 - \tilde{P}$ is also an idempotent, and</p>
+<h2 id="idempotents-as-projections">Idempotents as Projections</h2>
+<p>An idempotent $\tilde\Pi$ satisfies $\tilde\Pi^2 = \tilde\Pi$. Its <strong>complement</strong> $e_0 - \tilde\Pi$ is also an idempotent, and</p>
 <p>$$
-\tilde{P}(e_0 - \tilde{P}) = \tilde{P} - \tilde{P}^2 = 0,
+\tilde\Pi(e_0 - \tilde\Pi) = \tilde\Pi - \tilde\Pi^2 = 0,
 $$</p>
-<p>so the pair $\{\tilde{P}, e_0 - \tilde{P}\}$ gives a <strong>direct sum decomposition</strong> of the underlying $\mathbb{C}$-module:</p>
+<p>so the pair $\{\tilde\Pi, e_0 - \tilde\Pi\}$ gives a <strong>direct sum decomposition</strong> of the underlying $\mathbb{C}$-module:</p>
 <p>$$
-\mathbb{B} = \tilde{P}\mathbb{B} \oplus (e_0 - \tilde{P})\mathbb{B},
+\mathbb{B} = \tilde\Pi\mathbb{B} \oplus (e_0 - \tilde\Pi)\mathbb{B},
 $$</p>
-<p>and equally $\mathbb{B} = \mathbb{B}\tilde{P} \oplus \mathbb{B}(e_0 - \tilde{P})$ on the other side. This is the algebraic content of the statement that idempotents correspond to projections: the idempotent is the projection, its complement is the complementary projection, and the algebra splits into the image of one and the image of the other.</p>
-<p>A <strong>Hermitian idempotent</strong>, $\tilde{P}^\dagger = \tilde{P}$, is an <strong>orthogonal</strong> projection with respect to the Hermitian form, and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde{P}^\dagger = \bar{\tilde{P}}^{*}$, the Hermitian idempotents are the idempotents of the second family of Section 4, and they lie in $\mathbb{M}_+$.</p>
-<h2 id="6-idempotents-and-the-non-pure-zero-divisors">6. Idempotents and the Non-Pure Zero Divisors</h2>
+<p>and equally $\mathbb{B} = \mathbb{B}\tilde\Pi \oplus \mathbb{B}(e_0 - \tilde\Pi)$ on the other side. This is the algebraic content of the statement that idempotents correspond to projections: the idempotent is the projection, its complement is the complementary projection, and the algebra splits into the image of one and the image of the other.</p>
+<p>A <strong>Hermitian idempotent</strong>, $\tilde\Pi^\dagger = \tilde\Pi$, is an <strong>orthogonal</strong> projection with respect to the Hermitian form, and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^\dagger = \bar{\tilde\Pi}^{*}$, the Hermitian idempotents are the idempotents of the second family of §<em>The Bijection With the Roots of Minus One</em>, and they lie in $\mathbb{M}_+$.</p>
+<h2 id="idempotents-and-the-non-pure-zero-divisors">Idempotents and the Non-Pure Zero Divisors</h2>
 <p>A nontrivial idempotent is a zero divisor, since</p>
 <p>$$
-\tilde{P}(e_0 - \tilde{P}) = \tilde{P} - \tilde{P}^2 = 0,
+\tilde\Pi(e_0 - \tilde\Pi) = \tilde\Pi - \tilde\Pi^2 = 0,
 $$</p>
-<p>and both factors are nonzero unless $\tilde{P}$ is $0$ or $e_0$. Conversely, every non-pure zero divisor — every zero divisor with $Q_0 \neq 0$ — is a complex multiple of a nontrivial idempotent,</p>
+<p>and both factors are nonzero unless $\tilde\Pi$ is $0$ or $e_0$. Conversely, every non-pure zero divisor — every zero divisor with $Q_0 \neq 0$ — is a complex multiple of a nontrivial idempotent,</p>
 <p>$$
-\tilde{Q} = 2 Q_0 \tilde{P}, \qquad \tilde{P} = \frac{\tilde{Q}}{2 Q_0}.
+\tilde{Q} = 2 Q_0 \tilde\Pi, \qquad \tilde\Pi = \frac{\tilde{Q}}{2 Q_0}.
 $$</p>
 <p>The derivation, from the square relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ that the non-pure family satisfies, together with the structure of the two families and their distribution among the six subspaces, is the subject of <em>Biquaternion Zero Divisors</em>, which follows this article.</p>
-<h2 id="7-idempotents-and-the-minimal-left-ideals">7. Idempotents and the Minimal Left Ideals</h2>
+<h2 id="idempotents-and-the-minimal-left-ideals">Idempotents and the Minimal Left Ideals</h2>
 <p><strong>Proposition.</strong> The left ideals</p>
 <p>$$
-\mathbb{B}p = \{\tilde{Q}p : \tilde{Q} \in \mathbb{B}\}, \qquad \mathbb{B}q = \{\tilde{Q}q : \tilde{Q} \in \mathbb{B}\}
+\mathbb{B}\tilde\Pi_1 = \{\tilde{Q}\tilde\Pi_1 : \tilde{Q} \in \mathbb{B}\}, \qquad \mathbb{B}\tilde\Pi_2 = \{\tilde{Q}\tilde\Pi_2 : \tilde{Q} \in \mathbb{B}\}
 $$</p>
-<p>satisfy $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ as left $\mathbb{B}$-modules, and each has dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$ and is a minimal left ideal.</p>
-<p><strong>Proof.</strong> Every $\tilde{Q}$ satisfies $\tilde{Q} = \tilde{Q}(p + q) = \tilde{Q}p + \tilde{Q}q$, and the intersection of the two ideals is zero because $pq = 0$: if $\tilde{Q}p = \tilde{P}q$ then multiplying on the right by $p$ gives $\tilde{Q}p = 0$. For the dimension, the relations $e_3p = -ip$ and $e_2p = ie_1p$ of Section 2 reduce the four products $e_\mu p$ to $p$ and $e_1p$, and the two are independent over $\mathbb{C}$, so $\mathbb{B}p = \mathbb{C}p \oplus \mathbb{C}e_1p$ has $\mathbb{C}$-dimension $2$ and $\mathbb{R}$-dimension $4$; the two ideals then span $4 + 4 = 8 = \dim_{\mathbb{R}}\mathbb{B}$. Minimality is read in the matrix model: under the isomorphism $\Phi$ of <em>Biquaternion 2×2 Matrix Representation</em>, $\Phi(p) = E_{11}$ and $\Phi(q) = E_{22}$, so $\mathbb{B}p$ corresponds to the matrices whose only nonzero column is the first, which is a minimal left ideal of $M_2(\mathbb{C})$. $\square$</p>
-<p><strong>Proposition.</strong> The minimal left ideal $\mathbb{B}p$ is isomorphic to $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the central element $i$ acts on it as multiplication by $i$.</p>
-<p><strong>Proof.</strong> Every element of $\mathbb{B}p$ is uniquely $\alpha p + \beta e_1 p$ with $\alpha, \beta \in \mathbb{C}$ by the basis above, so the assignment $\alpha p + \beta e_1p \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{C}^2$. Left multiplication by a biquaternion $\tilde{Q}'$ sends $\tilde{Q}p$ to $(\tilde{Q}'\tilde{Q})p$, again an element of $\mathbb{B}p$, and the coordinates of the image depend linearly on $(\alpha, \beta)$; hence the assignment is an isomorphism of left $\mathbb{B}$-modules. Since $i$ is central, $i(\alpha p + \beta e_1p) = (i\alpha)p + (i\beta)e_1p$, so $i$ acts as multiplication by $i$. $\square$</p>
-<p><strong>Corollary (the module structure).</strong> $\mathbb{B}$ is a free left module of rank one over itself — the unit $e_0$ is a basis — and, as a module, it decomposes as $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$; each summand is a simple left $\mathbb{B}$-module isomorphic to $\mathbb{C}^2$, and since $M_2(\mathbb{C})$ is simple all its simple left modules are isomorphic, so the two summands are isomorphic and correspond to the two columns.</p>
-<p>The two ideals here are the minimal left ideals of the projective line of left ideals of <em>Biquaternion Ideals and Peirce Decomposition</em>, and the module is the defining module used throughout the representations group. The module itself — its dual, its conjugate and the reality conditions on it — is developed in <em>Spinors and the Biquaternion Spinor Module</em>.</p>
-<h2 id="8-the-dimension-of-the-set-of-idempotents">8. The Dimension of the Set of Idempotents</h2>
+<p>satisfy $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as left $\mathbb{B}$-modules, and each has dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$ and is a minimal left ideal.</p>
+<p><strong>Proof.</strong> Every $\tilde{Q}$ satisfies $\tilde{Q} = \tilde{Q}(\tilde\Pi_1 + \tilde\Pi_2) = \tilde{Q}\tilde\Pi_1 + \tilde{Q}\tilde\Pi_2$, and the intersection of the two ideals is zero because $\tilde\Pi_1\tilde\Pi_2 = 0$: if $\tilde{Q}\tilde\Pi_1 = \tilde{P}\tilde\Pi_2$ then multiplying on the right by $\tilde\Pi_1$ gives $\tilde{Q}\tilde\Pi_1 = 0$. For the dimension, the relations $e_3\tilde\Pi_1 = -i\tilde\Pi_1$ and $e_2\tilde\Pi_1 = ie_1\tilde\Pi_1$ of §<em>The Standard Idempotents of $\mathbb{B}$</em> reduce the four products $e_\mu \tilde\Pi_1$ to $\tilde\Pi_1$ and $e_1\tilde\Pi_1$, and the two are independent over $\mathbb{C}$, so $\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}e_1\tilde\Pi_1$ has $\mathbb{C}$-dimension $2$ and $\mathbb{R}$-dimension $4$; the two ideals then span $4 + 4 = 8 = \dim_{\mathbb{R}}\mathbb{B}$. Minimality is the primitivity of $\tilde\Pi_1$: a left ideal $\mathbb{B}\tilde\Pi$ is minimal exactly when the idempotent $\tilde\Pi$ is primitive, which $\tilde\Pi_1$ is. $\square$</p>
+<p><strong>Proposition.</strong> The minimal left ideal $\mathbb{B}\tilde\Pi_1$ has $\mathbb{C}$-basis $\{\tilde\Pi_1, e_1\tilde\Pi_1\}$, and the central element $i$ acts on it as multiplication by $i$.</p>
+<p><strong>Proof.</strong> Every element of $\mathbb{B}\tilde\Pi_1$ is uniquely $\alpha \tilde\Pi_1 + \beta e_1 \tilde\Pi_1$ with $\alpha, \beta \in \mathbb{C}$ by the basis above. Left multiplication by a biquaternion $\tilde{Q}'$ sends $\tilde{Q}\tilde\Pi_1$ to $(\tilde{Q}'\tilde{Q})\tilde\Pi_1$, again an element of $\mathbb{B}\tilde\Pi_1$; the ideal is stable under left multiplication. Since $i$ is central, $i(\alpha \tilde\Pi_1 + \beta e_1\tilde\Pi_1) = (i\alpha)\tilde\Pi_1 + (i\beta)e_1\tilde\Pi_1$, so $i$ acts as multiplication by $i$. $\square$</p>
+<p><strong>Corollary (the module structure).</strong> $\mathbb{B}$ is a free left module of rank one over itself — the unit $e_0$ is a basis — and, as a module, it decomposes as $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$; each summand is a simple left $\mathbb{B}$-module, and since $\mathbb{B}$ is simple all its simple left modules are isomorphic, so the two summands are isomorphic.</p>
+<p>The two ideals here are the minimal left ideals of the projective line of left ideals of <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<h2 id="the-dimension-of-the-set-of-idempotents">The Dimension of the Set of Idempotents</h2>
 <p>The idempotents correspond bijectively to the roots of $-1$, so they inherit the size of that set. The roots form a stratified space of real dimension $4$ — the non-trivial family $b\mu + d\nu i$ — with a two-dimensional boundary stratum (the real roots, $S^2$) and two isolated points (the trivial roots, $\pm i$).</p>
 <p>The trivial roots $\pm i$ map to the trivial idempotents $0$ and $e_0$, which are excluded from the non-trivial idempotents, so there are no isolated points among the non-trivial idempotents: they form a set of real dimension $4$ with a two-dimensional boundary stratum inherited from the real roots. The non-trivial idempotents sit inside the six-real-dimensional zero divisor set of $\mathbb{B}$, the trivial ones outside it. The dimension statements for the roots themselves are in <em>Biquaternion Roots of Minus One</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>An idempotent of $\mathbb{B}$ is an element $\tilde{P}$ with $\tilde{P}^2 = \tilde{P}$. The algebra has the standard orthogonal idempotents</p>
+<p>An idempotent of $\mathbb{B}$ is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. The algebra has the standard orthogonal idempotents</p>
 <p>$$
-p = \tfrac{1}{2}(e_0 + ie_3), \qquad q = \tfrac{1}{2}(e_0 - ie_3), \qquad pq = 0, \qquad p + q = e_0,
+\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3), \qquad \tilde\Pi_1\tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0,
 $$</p>
-<p>corresponding to the diagonal matrix units and giving the decomposition $\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q$ into two minimal left ideals, each isomorphic to $\mathbb{C}^2$ as a left $\mathbb{B}$-module.</p>
-<p>Every idempotent is either trivial or of the form $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ with $\xi^2 = -1$, and the map $\xi \mapsto \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ onto the idempotents, under which complementary pairs of idempotents correspond to the classes $\{\xi, -\xi\}$. The three families of roots — trivial, real and non-trivial — give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and idempotents lying in none of the four four-dimensional subspaces. Every non-pure zero divisor $\tilde{Q}$ with $Q_0 \neq 0$ satisfies $\tilde{Q}^2 = 2Q_0\tilde{Q}$ and is the complex multiple $\tilde{Q} = 2Q_0\tilde{P}$ of an idempotent; the development of that family is in <em>Biquaternion Zero Divisors</em>. Idempotents and their complements split the algebra as $\mathbb{B} = \tilde{P}\mathbb{B} \oplus (e_0-\tilde{P})\mathbb{B}$, which is the algebraic form of a projection and its complementary projection.</p>
+<p>and they give the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into two minimal left ideals.</p>
+<p>Every idempotent is either trivial or of the form $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ with $\xi^2 = -1$, and the map $\xi \mapsto \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ onto the idempotents, under which complementary pairs of idempotents correspond to the classes $\{\xi, -\xi\}$. The three families of roots — trivial, real and non-trivial — give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and idempotents lying in none of the four four-dimensional subspaces. Every non-pure zero divisor $\tilde{Q}$ with $Q_0 \neq 0$ satisfies $\tilde{Q}^2 = 2Q_0\tilde{Q}$ and is the complex multiple $\tilde{Q} = 2Q_0\tilde\Pi$ of an idempotent; the development of that family is in <em>Biquaternion Zero Divisors</em>. Idempotents and their complements split the algebra as $\mathbb{B} = \tilde\Pi\mathbb{B} \oplus (e_0-\tilde\Pi)\mathbb{B}$, which is the algebraic form of a projection and its complementary projection.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -196,24 +192,24 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde{P}, e, p, q$</td>
-<td>Idempotents, $\tilde{P}^2 = \tilde{P}$</td>
+<td>$\tilde\Pi$</td>
+<td>Idempotent, $\tilde\Pi^2 = \tilde\Pi$ (of $\mathbb{B}$, or of a general associative unital algebra)</td>
 </tr>
 <tr>
-<td>$p = \tfrac{1}{2}(e_0 + ie_3)$, $q = \tfrac{1}{2}(e_0 - ie_3)$</td>
-<td>The standard orthogonal idempotents, $p + q = e_0$</td>
+<td>$\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$</td>
+<td>The standard orthogonal idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$</td>
 </tr>
 <tr>
 <td>$\xi$</td>
 <td>A root of $-1$, $\xi^2 = -1$</td>
 </tr>
 <tr>
-<td>$P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$</td>
-<td>The idempotent of the root $\xi$; $\xi \mapsto P_+(\xi)$ is a bijection</td>
+<td>$\tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$</td>
+<td>The idempotent of the root $\xi$; $\xi \mapsto \tilde\Pi_+(\xi)$ is a bijection</td>
 </tr>
 <tr>
-<td>$\mathbb{B}p$, $\mathbb{B}q$</td>
-<td>The two minimal left ideals, each $\cong \mathbb{C}^2$</td>
+<td>$\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$</td>
+<td>The two minimal left ideals</td>
 </tr>
 <tr>
 <td>$(\mathbf{A}, \mathbf{B}) = \sum_k A_k B_k$</td>

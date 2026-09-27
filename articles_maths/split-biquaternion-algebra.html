@@ -53,7 +53,7 @@
         <h1 id="split-biquaternion-algebra"><strong>Split-Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the split biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugations.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.</p>
 <p>Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the split complex unit is written $j$, with $j^2 = +1$. The unit $j$ commutes with the quaternion units: $j e_k = e_k j$ for $k = 0, 1, 2, 3$.</p>
 <h2 id="the-split-biquaternions">The Split Biquaternions</h2>
 <h3 id="definition">Definition</h3>
@@ -82,7 +82,7 @@ $$</p>
 <p>The split complex unit $j$ satisfies $j^2 = +1$ and commutes with all quaternion units: $j e_k = e_k j$. It is the only extra unit in the algebra; the quaternion units $e_k$ satisfy $e_k^2 = -e_0$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Non-commutative.</strong> Split biquaternion multiplication is not commutative: $e_1 e_2 = e_3$ but $e_2 e_1 = -e_3$.</p>
-<p><strong>Associative.</strong> Split biquaternion multiplication is associative: $(\tilde{P} \tilde{Q}) \tilde{R} = \tilde{P} (\tilde{Q} \tilde{R})$.</p>
+<p><strong>Associative.</strong> Split biquaternion multiplication is associative: $(\tilde P \tilde{Q}) \tilde{R} = \tilde P (\tilde{Q} \tilde{R})$.</p>
 <p><strong>Not a division algebra.</strong> The split biquaternion algebra has zero divisors. This is the fundamental difference from the quaternion algebra, and it is the source of everything that distinguishes the two theories. The zero divisors are studied in the article on split biquaternion zero divisors.</p>
 <p><strong>Not simple.</strong> The split biquaternion algebra is not simple: it has nontrivial two-sided ideals, and it is isomorphic to the direct sum of two copies of the quaternion algebra.</p>
 <p><strong>Semisimple.</strong> The split biquaternion algebra is semisimple: it is isomorphic to a direct sum of simple algebras. The isomorphism is established below.</p>
@@ -94,22 +94,22 @@ $$</p>
 <p>The isomorphism is given by the <strong>idempotent decomposition</strong>, which is the most important structural fact about the algebra.</p>
 <p>Define the idempotents</p>
 <p>$$
-e_+ = \tfrac{1}{2}(1 + j), \qquad e_- = \tfrac{1}{2}(1 - j).
+\tilde\Pi_+ = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_- = \tfrac{1}{2}(1 - j).
 $$</p>
 <p>They satisfy</p>
 <p>$$
-e_+^2 = e_+, \qquad e_-^2 = e_-, \qquad e_+ e_- = e_- e_+ = 0, \qquad e_+ + e_- = 1.
+\tilde\Pi_+^2 = \tilde\Pi_+, \qquad \tilde\Pi_-^2 = \tilde\Pi_-, \qquad \tilde\Pi_+ \tilde\Pi_- = \tilde\Pi_- \tilde\Pi_+ = 0, \qquad \tilde\Pi_+ + \tilde\Pi_- = 1.
 $$</p>
 <p>Every split biquaternion is written uniquely in the idempotent basis as</p>
 <p>$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$</p>
 <p>where $\tilde{Q}_\pm \in \mathbb{H}$ are ordinary quaternions, given by</p>
 <p>$$
-\tilde{Q}_+ = \tilde{Q} e_+ = Q_0' + Q_1' e_1 + Q_2' e_2 + Q_3' e_3,
+\tilde{Q}_+ = \tilde{Q} \tilde\Pi_+ = Q_0' + Q_1' e_1 + Q_2' e_2 + Q_3' e_3,
 $$</p>
 <p>$$
-\tilde{Q}_- = \tilde{Q} e_- = Q_0'' + Q_1'' e_1 + Q_2'' e_2 + Q_3'' e_3,
+\tilde{Q}_- = \tilde{Q} \tilde\Pi_- = Q_0'' + Q_1'' e_1 + Q_2'' e_2 + Q_3'' e_3,
 $$</p>
 <p>with real coefficients $Q_\mu', Q_\mu'' \in \mathbb{R}$.</p>
 <p>The map</p>
@@ -117,7 +117,7 @@ $$</p>
 \varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-),
 $$</p>
 <p>is an algebra isomorphism, where the multiplication on $\mathbb{H} \oplus \mathbb{H}$ is componentwise. This is the <strong>idempotent decomposition</strong> of the split biquaternion algebra.</p>
-<p>The isomorphism is the reason the algebra is semisimple. It is not simple, because the two summands $\mathbb{H} e_+$ and $\mathbb{H} e_-$ are nontrivial two-sided ideals.</p>
+<p>The isomorphism is the reason the algebra is semisimple. It is not simple, because the two summands $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are nontrivial two-sided ideals.</p>
 <h3 id="multiplication">Multiplication</h3>
 <p>The product of two split biquaternions is defined by extending the quaternion product split-complex-linearly. In developed form,</p>
 <p>$$
@@ -250,40 +250,40 @@ $$</p>
 $$</p>
 <p>where $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the set of split biquaternions of the form $j \tilde{Q}$ with $\tilde{Q} \in \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{H}_{\mathbb{D}}$ of real dimension 8.</p>
 <p>This is the <strong>quaternion decomposition</strong> of a split biquaternion. It expresses $\tilde{Q}$ as a quaternion plus the split complex unit times another quaternion.</p>
-<h2 id="idempotent-decomposition">Idempotent Decomposition</h2>
-<p>The idempotent decomposition is the second natural decomposition of $\mathbb{H}_{\mathbb{D}}$, and it is the key to the structure of the algebra.</p>
-<p>Every split biquaternion is written uniquely as</p>
-<p>$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
-$$</p>
-<p>where $e_\pm = \tfrac{1}{2}(1 \pm j)$ are the idempotents, and $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$.</p>
-<p>This gives the direct sum decomposition</p>
-<p>$$
-\mathbb{H}_{\mathbb{D}} = \mathbb{H} e_+ \oplus \mathbb{H} e_-,
-$$</p>
-<p>where $\mathbb{H} e_+$ and $\mathbb{H} e_-$ are the two ideals of $\mathbb{H}_{\mathbb{D}}$, each isomorphic to $\mathbb{H}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{H}_{\mathbb{D}}$ of real dimension 8.</p>
-<p>The isomorphism</p>
-<p>$$
-\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)
-$$</p>
-<p>is an algebra isomorphism, and it is the reason the algebra is semisimple.</p>
 <h2 id="hermitian-decomposition">Hermitian Decomposition</h2>
 <p>The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation $\dagger$. Every split biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:</p>
 <p>$$
-\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-, \qquad \tilde{Q}_+ \in \mathbb{M}_+, \quad \tilde{Q}_- \in \mathbb{M}_-.
+\tilde{Q} = \tilde{Q}_{\mathrm{H}} + \tilde{Q}_{\mathrm{A}}, \qquad \tilde{Q}_{\mathrm{H}} \in \mathbb{M}_+, \quad \tilde{Q}_{\mathrm{A}} \in \mathbb{M}_-.
 $$</p>
 <p>The two components are obtained from the Hermitian conjugation:</p>
 <p>$$
-\tilde{Q}_+ = \frac{1}{2}(\tilde{Q} + \tilde{Q}^\dagger), \qquad \tilde{Q}_- = \frac{1}{2}(\tilde{Q} - \tilde{Q}^\dagger).
+\tilde{Q}_{\mathrm{H}} = \frac{1}{2}(\tilde{Q} + \tilde{Q}^\dagger), \qquad \tilde{Q}_{\mathrm{A}} = \frac{1}{2}(\tilde{Q} - \tilde{Q}^\dagger).
 $$</p>
 <p>This gives the direct sum decomposition</p>
 <p>$$
 \mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-,
 $$</p>
 <p>where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-Hermitian subspace. Both are real vector spaces of dimension 4.</p>
-<h2 id="relation-between-the-two-decompositions">Relation Between the Two Decompositions</h2>
+<h2 id="idempotent-decomposition">Idempotent Decomposition</h2>
+<p>The idempotent decomposition is the second natural decomposition of $\mathbb{H}_{\mathbb{D}}$, and it is the key to the structure of the algebra.</p>
+<p>Every split biquaternion is written uniquely as</p>
+<p>$$
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
+$$</p>
+<p>where $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are the idempotents, and $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$.</p>
+<p>This gives the direct sum decomposition</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-,
+$$</p>
+<p>where $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are the two ideals of $\mathbb{H}_{\mathbb{D}}$, each isomorphic to $\mathbb{H}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{H}_{\mathbb{D}}$ of real dimension 8.</p>
+<p>The isomorphism</p>
+<p>$$
+\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)
+$$</p>
+<p>is an algebra isomorphism, and it is the reason the algebra is semisimple.</p>
+<h2 id="relation-between-the-three-decompositions">Relation Between the Three Decompositions</h2>
 <p>The quaternion decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ are two different decompositions of the same eight-dimensional real vector space. They are associated with two different involutions: the quaternion decomposition is associated with the split complex conjugation ${}^*$, and the Hermitian decomposition is associated with the Hermitian conjugation $\dagger$.</p>
-<p>The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{M}_+$ to $\mathbb{M}_-$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $e_\pm$, and it is the one that reveals the semisimple structure of the algebra.</p>
+<p>The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{M}_+$ to $\mathbb{M}_-$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_\pm$, and it is the one that reveals the semisimple structure of the algebra.</p>
 <h2 id="quadratic-forms-and-inner-product">Quadratic Forms and Inner Product</h2>
 <h3 id="the-norm-form">The Norm Form</h3>
 <p>The <strong>norm form</strong> of a split biquaternion $\tilde{Q}$ is</p>
@@ -313,34 +313,34 @@ $$</p>
 $$</p>
 <p>It is a genuine norm on the real vector space $\mathbb{H}_{\mathbb{D}}$: positive-definite, subadditive, and homogeneous of degree one. It is <strong>not</strong> the square root of the Hermitian form, because the Hermitian form is indefinite. It is the ordinary Euclidean norm on the underlying real vector space.</p>
 <h3 id="the-inner-product">The Inner Product</h3>
-<p>The <strong>inner product</strong> of two split biquaternions $\tilde{P}$ and $\tilde{Q}$ is</p>
+<p>The <strong>inner product</strong> of two split biquaternions $\tilde P$ and $\tilde{Q}$ is</p>
 <p>$$
-\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu,
+\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu,
 $$</p>
 <p>which is a split complex number in general:</p>
 <p>$$
-\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} (p_\mu q_\mu - p'_\mu q'_\mu) + j \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu).
+\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} (p_\mu q_\mu - p'_\mu q'_\mu) + j \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu).
 $$</p>
-<p>The real part is the indefinite form of signature $(4, 4)$, and the split part is the cross-term. The inner product is linear in the second argument and split-antilinear in the first, and it is Hermitian in the sense that $\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$.</p>
+<p>The real part is the indefinite form of signature $(4, 4)$, and the split part is the cross-term. The inner product is linear in the second argument and split-antilinear in the first, and it is Hermitian in the sense that $\langle \tilde P, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde P \rangle$.</p>
 <h3 id="relation-between-the-three-forms">Relation Between the Three Forms</h3>
 <p>The three quadratic objects are related as follows:</p>
 <ul>
 <li><strong>Norm form:</strong> $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Split complex-valued, vanishes only at $\tilde{Q}=0$, multiplicative.</li>
 <li><strong>Hermitian form:</strong> $\tilde{Q} \tilde{Q}^\dagger$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$. That scalar part is real, indefinite of signature $(4, 4)$, and vanishes on a quadric hypersurface of dimension $7$; the full product is not multiplicative.</li>
-<li><strong>Inner product:</strong> $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$. Split complex-valued in general, Hermitian, linear in the second argument.</li>
+<li><strong>Inner product:</strong> $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$. Split complex-valued in general, Hermitian, linear in the second argument.</li>
 </ul>
 <p>The three are distinct, and each is useful in a different context. The norm form controls invertibility (through $\Delta$, its split complex invertibility). The zero divisors are not a norm-form condition; they are the vanishing of an idempotent component. The Hermitian form is indefinite and does not control the topological structure. The Euclidean norm, which is defined separately, provides the topological structure.</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
 <p>The split biquaternion algebra carries a Lie bracket, defined by the commutator</p>
 <p>$$
-[\tilde{P}, \tilde{Q}] = \tilde{P} \tilde{Q} - \tilde{Q} \tilde{P}.
+[\tilde P, \tilde{Q}] = \tilde P \tilde{Q} - \tilde{Q} \tilde P.
 $$</p>
 <p>The Lie algebra structure of $\mathbb{H}_{\mathbb{D}}$ is the direct sum of two copies of the Lie algebra of $\mathbb{H}$, because the algebra is isomorphic to $\mathbb{H} \oplus \mathbb{H}$. In particular, the pure split biquaternions (with respect to the quaternion conjugation) form a Lie subalgebra isomorphic to $\mathfrak{so}(3) \oplus \mathfrak{so}(3)$, which is the Lie algebra of the group $SO(3) \times SO(3)$.</p>
 <h2 id="summary">Summary</h2>
 <p>The split biquaternion algebra is the tensor product $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the split complex algebra and the quaternion algebra. It is an eight-dimensional real algebra, non-commutative and associative, with zero divisors. It is not a division algebra, and it is not simple, but it is semisimple.</p>
-<p>The algebra is isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ via the idempotent decomposition $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$, where $e_\pm = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra. This is the most important structural fact about the algebra.</p>
+<p>The algebra is isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ via the idempotent decomposition $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$, where $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra. This is the most important structural fact about the algebra.</p>
 <p>There are four natural conjugations: quaternion conjugation, split complex conjugation, Hermitian conjugation, and anti-Hermitian conjugation. Each has a fixed-point set, which is a four-dimensional real subspace (or two-dimensional in the case of the split complex subspace). The four subspaces are the split complex subspace, the quaternion subspace, the Hermitian subspace, and the anti-Hermitian subspace.</p>
-<p>There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the idempotent decomposition $\mathbb{H} e_+ \oplus \mathbb{H} e_-$, and the Hermitian decomposition $\mathbb{M}_+ \oplus \mathbb{M}_-$.</p>
+<p>There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$, and the Hermitian decomposition $\mathbb{M}_+ \oplus \mathbb{M}_-$.</p>
 <p>The norm form is split complex-valued and multiplicative. The scalar part of the Hermitian form is real and indefinite of signature $(4, 4)$. The Euclidean norm is defined separately and is positive-definite. The split biquaternion algebra is therefore not a normed algebra in the same sense as the quaternion algebra, where the norm form is positive-definite and multiplicative.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -376,11 +376,11 @@ $$</p>
 <td>Split complex unit, $j^2 = +1$, commutes with $e_k$</td>
 </tr>
 <tr>
-<td>$e_+ = \tfrac{1}{2}(1 + j)$</td>
+<td>$\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$</td>
 <td>Positive idempotent</td>
 </tr>
 <tr>
-<td>$e_- = \tfrac{1}{2}(1 - j)$</td>
+<td>$\tilde\Pi_- = \tfrac{1}{2}(1 - j)$</td>
 <td>Negative idempotent</td>
 </tr>
 <tr>
@@ -444,7 +444,15 @@ $$</p>
 <td>Anti-Hermitian subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{H} e_+, \mathbb{H} e_-$</td>
+<td>$\tilde{Q}_{\mathrm{H}}, \tilde{Q}_{\mathrm{A}}$</td>
+<td>Hermitian and anti-Hermitian parts of $\tilde{Q}$</td>
+</tr>
+<tr>
+<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$</td>
+<td>Idempotent components of $\tilde{Q}$, in $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H} \tilde\Pi_+, \mathbb{H} \tilde\Pi_-$</td>
 <td>Idempotent ideals</td>
 </tr>
 </tbody>

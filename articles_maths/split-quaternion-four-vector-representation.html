@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Four-Vector Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-four-vector-representation"><strong>Split-Quaternion Four-Vector Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is the four-dimensional real algebra with basis $1, e_1, e_2, e_3$, where $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is written</p>
+<p>$$
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>The algebra, its three involutions, its distinguished subspaces and its norm form are those of the companion articles <em>Split-Quaternion Algebra</em> and <em>Split-Quaternion Scalar and Vector Subspaces</em>, and nothing of that structure is re-derived here except where the coordinate realization requires it.</p>
+<p>This article presents the <strong>four-vector realization</strong> of $\mathbb{H}_{\mathrm{s}}$: the split-quaternion read off as its list of four real coefficients. The word <em>representation</em> is used in the sense of a concrete realization of the algebra as computable objects, the sense in which <em>Split-Quaternion Other Algebraic Representations</em> uses it, and not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of <em>Split-Quaternion Representations</em>. The article owns the coefficient space, the column and the dual row, the component form of the product, the three involutions in coordinates, the distinguished subspaces as coordinate conditions, and the norm form with its signatures. It introduces no physical vocabulary.</p>
+<h2 id="the-coefficient-space">The Coefficient Space</h2>
+<p><strong>Definition.</strong> The <strong>four-vector</strong> of a split-quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ is the ordered quadruple</p>
+<p>$$
+\tilde q^\mu = (q_0, q_1, q_2, q_3), \qquad \tilde q^0 = q_0, \quad (\tilde q^1, \tilde q^2, \tilde q^3) = (q_1, q_2, q_3),
+$$</p>
+<p>where $\tilde q^0$ is the <strong>scalar component</strong> and $\tilde q^1, \tilde q^2, \tilde q^3$ are the <strong>vector components</strong>. Unlike the biquaternion case, every component is a real number, because $\mathbb{H}_{\mathrm{s}}$ has no central imaginary unit and no complex structure.</p>
+<p><strong>Proposition.</strong> The map $\tilde q \mapsto \tilde q^\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{H}_{\mathrm{s}}$ onto $\mathbb{R}^4$. Consequently the coefficient space has real dimension $4$.</p>
+<p><strong>Proof.</strong> The map sends the basis $1, e_1, e_2, e_3$ to the standard basis of $\mathbb{R}^4$ and is extended by linearity; it is bijective on bases. $\square$</p>
+<p>The coefficient space $\mathbb{R}^4$ is <strong>not</strong> the simple module of $\mathbb{H}_{\mathrm{s}}$. The simple module has real dimension $2$ and is the subject of <em>Split-Quaternion Matrix Representations</em>; the coefficient space is the algebra itself, of real dimension $4$. The number $4$ recurs as the size of the matrix of the regular action on this space, and it is the same four for a different reason: the algebra has real dimension $4$, so the matrix of its left action on itself is $4 \times 4$.</p>
+<h2 id="the-column-and-the-dual-row">The Column and the Dual Row</h2>
+<p><strong>Definition.</strong> The <strong>column</strong> of $\tilde q$ is the $4 \times 1$ matrix</p>
+<p>$$
+X = \begin{pmatrix} q_0 \\ q_1 \\ q_2 \\ q_3 \end{pmatrix},
+$$</p>
+<p>and the <strong>row</strong> is its transpose $X^{\mathsf{T}} = (q_0\ q_1\ q_2\ q_3)$.</p>
+<p>The row is the <strong>dual</strong> object: the norm form $N$ is a non-degenerate quadratic form on $\mathbb{R}^4$, and its polarisation $B(\tilde q, y) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3'$ provides a bilinear pairing that identifies the coefficient space with its dual, sending $y$ to the linear functional $\tilde q \mapsto B(\tilde q, y)$. In the coordinate basis this identification is multiplication by the matrix $\operatorname{diag}(1,1,-1,-1)$:</p>
+<p>$$
+B(\tilde q, y) = X^{\mathsf{T}} G Y, \qquad G = \operatorname{diag}(1,1,-1,-1).
+$$</p>
+<p>So the row is the dual vector paired with the column through $G$, and the two are equals only because the pairing is non-degenerate; when $G$ is replaced by the identity the pairing is the Euclidean one and the dual is the plain transpose.</p>
+<h2 id="multiplication-in-components">Multiplication in Components</h2>
+<p>Since $\tilde q \mapsto \tilde q^\mu$ is a linear isomorphism and the product is bilinear, the product of two split-quaternions is determined by its value on the basis. The <strong>multiplication table</strong> of the basis, whose entry in row $i$ and column $j$ is $e_i e_j$, is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$1$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$e_1$</td>
+<td>$-1$</td>
+<td>$e_3$</td>
+<td>$-e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$e_2$</td>
+<td>$-e_3$</td>
+<td>$+1$</td>
+<td>$-e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$e_3$</td>
+<td>$e_2$</td>
+<td>$e_1$</td>
+<td>$+1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> For $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $y = q_0' e_0 + q_1' e_1 + q_2' e_2 + q_3' e_3$, the product has components</p>
+<p>$$
+\tilde q y = (q_0 q_0' - q_1 q_1' + q_2 q_2' + q_3 q_3') + (q_0 q_1' + q_0' q_1 - q_2 q_3' + q_2' q_3)\,e_1
+$$</p>
+<p>$$
++ (q_0 q_2' + q_0' q_2 + q_1 q_3' - q_1' q_3)\,e_2 + (q_0 q_3' + q_0' q_3 + q_1 q_2' - q_1' q_2)\,e_3 .
+$$</p>
+<p><strong>Proof.</strong> Expand the product bilinearly and read each surviving basis product from the table; for instance the $e_1$-coefficient collects $q_0 q_1'$ from $1 \cdot e_1$, $q_0' q_1$ from $e_1 \cdot 1$, $-q_2 q_3'$ from $e_2 \cdot e_3 = -e_1$, and $q_2' q_3$ from $e_3 \cdot e_2 = e_1$. $\square$</p>
+<p>The scalar component of the product, $q_0 q_0' - q_1 q_1' + q_2 q_2' + q_3 q_3'$, is exactly the bilinear form $B(\tilde q,\bar{y})$ evaluated against the conjugate; the remaining coefficients are the antisymmetric remainder. In particular the product is <strong>not</strong> componentwise, and the sign pattern of the scalar component is that of the form $B$ read against the conjugated coordinates.</p>
+<h2 id="the-three-involutions-in-coordinates">The Three Involutions in Coordinates</h2>
+<p>The three involutions act on the four-vector by independent sign changes of the last three components:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>$\tilde q^0 = q_0$</th>
+<th>$\tilde q^1 = q_1$</th>
+<th>$\tilde q^2 = q_2$</th>
+<th>$\tilde q^3 = q_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conjugation $\bar{\cdot}$</td>
+<td>$+$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$-$</td>
+</tr>
+<tr>
+<td>principal $\alpha$</td>
+<td>$+$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>reversal $\rho$</td>
+<td>$+$</td>
+<td>$+$</td>
+<td>$+$</td>
+<td>$-$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Thus $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ has four-vector $(q_0,-q_1,-q_2,-q_3)$; $\alpha(\tilde q) = q_0 - q_1 e_1 - q_2 e_2 + q_3 e_3$ has $(q_0,-q_1,-q_2,q_3)$; and $\rho(\tilde q) = q_0 + q_1 e_1 + q_2 e_2 - q_3 e_3$ has $(q_0,q_1,q_2,-q_3)$. The scalar component is fixed by all three. The composition $\bar{\cdot} = \alpha\rho$ is the composition of the sign flips, and the three act on the vector triple $(q_1,q_2,q_3)$ by the sign patterns $(-,-,-)$, $(-,-,+)$, $(+,+,-)$, the subgroup of <em>Split-Quaternion Involution Lattice</em>.</p>
+<h2 id="the-distinguished-subspaces-in-coordinates">The Distinguished Subspaces in Coordinates</h2>
+<p>The four distinguished subspaces are cut out by coordinate conditions:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>coordinate condition</th>
+<th>four-vectors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$</td>
+<td>$\tilde q^1 = \tilde q^2 = \tilde q^3 = 0$</td>
+<td>$(q_0,0,0,0)$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>$\tilde q^0 = 0$</td>
+<td>$(0,q_1,q_2,q_3)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2$</td>
+<td>$\tilde q^1 = \tilde q^3 = 0$</td>
+<td>$(q_0,0,q_2,0)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3$</td>
+<td>$\tilde q^1 = \tilde q^2 = 0$</td>
+<td>$(q_0,0,0,q_3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the scalar subspace is the first coordinate axis, the vector subspace is the hyperplane $\tilde q^0 = 0$, and the two split-complex planes are the coordinate planes $(q_0,q_2)$ and $(q_0,q_3)$. The fourth coordinate plane, $(q_0,q_1)$, is the definite plane $\mathbb{R}[e_1] \cong \mathbb{C}$, which is not among the four distinguished subspaces. The involutions of the previous section preserve each of these coordinate conditions, as the sign table shows.</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<p>The norm form of $\tilde q$ is</p>
+<p>$$
+N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+$$</p>
+<p>of <strong>signature $(2,2)$</strong>, with polarisation $B(\tilde q,y) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3'$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $e_1$ directions being positive and the $e_2, e_3$ directions negative. Under the matrix model it is the determinant, $N(\tilde q) = \det \Phi(\tilde q)$.</p>
+<p>The restrictions to the distinguished subspaces read off the coordinates:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>restriction of $N$</th>
+<th>signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$</td>
+<td>$q_0^2$</td>
+<td>positive definite</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>$q_1^2 - q_2^2 - q_3^2$</td>
+<td>$(2,1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2$</td>
+<td>$q_0^2 - q_2^2$</td>
+<td>$(1,1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_3$</td>
+<td>$q_0^2 - q_3^2$</td>
+<td>$(1,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Only the scalar restriction is definite; the others are indefinite, and their null sets are the zero-divisor sets of the respective subspaces.</p>
+<h2 id="the-unit-criterion-in-coordinates">The Unit Criterion in Coordinates</h2>
+<p><strong>Theorem.</strong> The four-vector $(q_0,q_1,q_2,q_3)$ is <strong>invertible</strong> if and only if</p>
+<p>$$
+N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2 \neq 0,
+$$</p>
+<p>and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q) = \dfrac{q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3}{q_0^2+q_1^2-q_2^2-q_3^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.</p>
+<p><strong>Proof.</strong> The identity $\tilde q\bar{\tilde q} = N(\tilde q)$ gives $\tilde q \cdot (\bar{\tilde q}/N(\tilde q)) = 1$ whenever $N(\tilde q) \neq 0$; conversely, if $N(\tilde q) = 0$ with $\tilde q \neq 0$, then $\tilde q\bar{\tilde q} = 0$ with $\bar{\tilde q} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit. $\square$</p>
+<p>The non-invertible nonzero four-vectors are exactly those on the <strong>null cone</strong> $q_0^2 + q_1^2 = q_2^2 + q_3^2$; on the vector subspace $q_0 = 0$ this is the light cone $q_1^2 = q_2^2 + q_3^2$ of the Minkowski form, and in the split-complex plane $\mathbb{D}_2$ it is the pair of isotropic lines $q_0 = \pm q_2$.</p>
+<h2 id="the-analogue-of-the-four-vector-representation-of-math170">The Analogue of the Four-Vector Representation of $\mathbb{B}$</h2>
+<p>The biquaternion article <em>Biquaternion Four-Vector Representation</em> reads $\tilde q = \sum_\mu Q_\mu e_\mu$ as a quadruple of <strong>complex</strong> coefficients, so that the coefficient space is $\mathbb{C}^4$ of real dimension $8$; two of its six distinguished subspaces are read from the real and imaginary parts of the coefficients, and the norm form becomes a complex quadratic form with a positive-definite Euclidean companion. The split-quaternion case is the real, split analogue: the coefficient space is $\mathbb{R}^4$ of real dimension $4$, the coefficients are real, all four distinguished subspaces are read directly from coordinate conditions, and the norm form is a single real form of signature $(2,2)$ with no complex companion. The structural parallel is exact — a quadruple, a column, a dual row, the component product, the involutions as sign flips, and the norm form in coordinates — but every object is real and indefinite here where it is complex in $\mathbb{B}$. Nothing biquaternion-specific — the central imaginary unit $i$, the real-imaginary splitting of the coefficients, the complex definite companion — is imported.</p>
+<h2 id="summary">Summary</h2>
+<p>The four-vector realization reads a split-quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ as the quadruple $(q_0,q_1,q_2,q_3) \in \mathbb{R}^4$, an $\mathbb{R}$-linear isomorphism $\mathbb{H}_{\mathrm{s}} \to \mathbb{R}^4$ with no complex structure. The column $X$ is the quadruple written vertically and the row $X^{\mathsf{T}}$ is its dual under the non-degenerate pairing $B$ with matrix $G = \operatorname{diag}(1,1,-1,-1)$.</p>
+<p>The product is computed in components by the displayed formula, whose scalar part is $B(\tilde q,\bar{y})$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_1,q_2,q_3)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_0$-axis ($S$), $\tilde q^0=0$ ($V$), and the $(q_0,q_2)$-, $(q_0,q_3)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The norm form is $q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$, restricting to $q_0^2$, $q_1^2-q_2^2-q_3^2$, $q_0^2-q_2^2$ and $q_0^2-q_3^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \bar{\tilde q}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>the split-quaternion algebra</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
+<td>a general split-quaternion</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\tilde q^\mu = (q_0,q_1,q_2,q_3)$</td>
+<td>the four-vector of $\tilde q$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\tilde q^0 = q_0$, $(\tilde q^1,\tilde q^2,\tilde q^3) = (q_1,q_2,q_3)$</td>
+<td>the scalar and vector components</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$X$, $X^{\mathsf{T}}$</td>
+<td>the column and the dual row</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$G = \operatorname{diag}(1,1,-1,-1)$</td>
+<td>the matrix of the polarised form in coordinates</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$</td>
+<td>the norm form, signature $(2,2)$</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$B(\tilde q,y)$</td>
+<td>the polarised bilinear form</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, \alpha, \rho$</td>
+<td>the three involutions as sign flips</td>
+<td><em>Split-Quaternion Subspaces and the Involutions</em></td>
+</tr>
+<tr>
+<td>$S, V, \mathbb{D}_2, \mathbb{D}_3$</td>
+<td>the distinguished subspaces as coordinate conditions</td>
+<td><em>Split-Quaternion Relations Between Subspaces</em></td>
+</tr>
+<tr>
+<td>$\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$</td>
+<td>the inverse of a unit</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the coefficient space of a Clifford algebra and the coordinate form of its product.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the coordinate multiplication tables and the matrix generators of the low-dimensional algebras.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the coordinate descriptions of the split forms.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for polarisation, the matrix of a bilinear form, and the inertia law.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

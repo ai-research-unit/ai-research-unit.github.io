@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaternion Norm and Invertibility — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quaternion-norm-and-invertibility"><strong>Quaternion Norm and Invertibility</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion algebra $\mathbb{H}$ is the four-dimensional algebra with basis $e_0 = 1, e_1, e_2, e_3$ and the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$, so that $e_1e_2 = e_3$ and the basis elements anticommute in pairs. This article studies the multiplicative quadratic form that the algebra carries, the <strong>norm form</strong> $N(\tilde q) = \tilde q\bar{\tilde q}$, and the property that the form forces: every non-zero quaternion is invertible, so that $\mathbb{H}$ is a division algebra. It is the entry of the quaternion family that owns the norm form, its multiplicativity, the inverse formula and the group of units.</p>
+<p>The companion article <em>Quaternion Algebra</em> fixes the basis, the conjugation, the multiplication table and the scalar–vector decomposition, and they are used here without restatement. The companion article <em>Quaternion Ideals and Simplicity</em> treats the absence of proper one- and two-sided ideals and the central-simplicity statement; this article owns the norm form, the multiplicativity, the invertibility criterion and the unit group, and it refers to that article for the ideal-theoretic consequences. A reader who wants the full structure of the algebra should read the three together: the algebra supplies the multiplication, this article supplies the norm and the division property, and the ideals article supplies the consequences of division for the ideal structure.</p>
+<p>The corpus's default base is a commutative ring with identity, and the algebra $\mathbb{H}$ is defined over such a base by the same presentation. The results of this article that need more than that base are obtained over a field $F$ of characteristic not $2$; the positivity statements are obtained over $F = \mathbb{R}$, and they are flagged where they occur. In particular, the multiplicativity of the norm form, the inverse formula and the group-of-units statements hold over any field of characteristic not $2$, whereas the statement that the norm form is positive definite, the polar split of the unit group, and the topological description of the unit sphere are statements over $\mathbb{R}$.</p>
+<p>Throughout, a quaternion is written</p>
+<p>$$
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu, \qquad q_0, q_1, q_2, q_3 \in F,
+$$</p>
+<p>with <strong>scalar part</strong> $\operatorname{Sc}(\tilde q) = q_0$ and <strong>vector part</strong> $\mathbf{q} = q_1e_1 + q_2e_2 + q_3e_3$; the <strong>conjugate</strong> is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The pure imaginary subspace is $\operatorname{Im}\mathbb{H} = \{\tilde q : \bar{\tilde q} = -\tilde q\}$.</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>norm form</strong> of a quaternion $\tilde q$ is</p>
+<p>$$
+N(\tilde q) = \tilde q\bar{\tilde q} = \bar{\tilde q} \tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2 .
+$$</p>
+<p>The equality of the two products is checked from the multiplication table: the vector part of $\tilde q\bar{\tilde q}$ is $q_0\mathbf{q} - \mathbf{q}q_0 + \mathbf{q}\times(-\mathbf{q}) = 0$, and the scalar calculation is the sum of squares.</p>
+<p><strong>Proposition.</strong> $N(\tilde q)$ is a central element of $\mathbb{H}$, it lies in the image of $F$, and the map $N : \mathbb{H}\to F$ is a quadratic form on the underlying vector space, with polar form $b(p,\tilde q) = \operatorname{Sc}(p\bar{\tilde q})$.</p>
+<p><em>Proof.</em> The scalar part of $\tilde q\bar{\tilde q}$ is $\sum_\mu q_\mu^2$, a scalar, and a scalar commutes with every quaternion; this is the centrality. The coordinate expression is homogeneous of degree two and its polarisation is $\operatorname{Sc}(p\bar{\tilde q})$, as the polar form of a sum of squares. $\square$</p>
+<h3 id="multiplicativity">Multiplicativity</h3>
+<p><strong>Theorem.</strong> The norm form is multiplicative:</p>
+<p>$$
+N(pq) = N(p)\,N(\tilde q), \qquad p, \tilde q \in \mathbb{H}.
+$$</p>
+<p><em>Proof.</em> Using $\overline{pq} = \bar{\tilde q}\bar p$ and the fact that $N(\tilde q) = \tilde q\bar{\tilde q}$ is central,</p>
+<p>$$
+N(pq) = (pq)\overline{(pq)} = pq\,\bar{\tilde q}\,\bar p = p\,N(\tilde q)\,\bar p = N(\tilde q)\,p\bar p = N(p)N(\tilde q) . \square
+$$</p>
+<p>Multiplicativity is the single feature that makes the norm form the algebraic centre of gravity of the subject. It holds over any commutative base in which the computation makes sense, and in particular over any field.</p>
+<p><strong>Corollary.</strong> If $N(p) = 0$ then $N(pq) = N(qp) = 0$ for every $\tilde q$, so a vanishing norm propagates and neither $p$ nor any multiple of it is a unit; over a field over which the norm form is anisotropic, that is $N(u) = 0$ only for $u = 0$, this middle case is empty and every non-zero element is a unit.</p>
+<h3 id="positive-definiteness-and-the-real-norm">Positive Definiteness and the Real Norm</h3>
+<p><strong>Theorem.</strong> Over $F = \mathbb{R}$ the norm form is positive definite: $N(\tilde q) \geq 0$ for every $\tilde q$, and $N(\tilde q) = 0$ if and only if $\tilde q = 0$.</p>
+<p><em>Proof.</em> $N(\tilde q) = \sum_\mu q_\mu^2$ is a sum of squares of real numbers, hence non-negative, and it vanishes only when every $q_\mu$ vanishes. $\square$</p>
+<p><strong>Definition.</strong> Over $\mathbb{R}$ the <strong>modulus</strong> of $\tilde q$ is $|\tilde q| = \sqrt{N(\tilde q)}$.</p>
+<p><strong>Theorem.</strong> The modulus is a norm on the real vector space $\mathbb{H}\cong\mathbb{R}^4$: it is positive definite, absolutely homogeneous, and satisfies the triangle inequality. It is also multiplicative,</p>
+<p>$$
+|pq| = |p|\,|\tilde q|,
+$$</p>
+<p>and therefore submultiplicative as well.</p>
+<p><em>Proof.</em> Positive definiteness is the preceding theorem; homogeneity and the triangle inequality are those of the Euclidean norm on $\mathbb{R}^4$ under the identification $\tilde q\leftrightarrow(q_0,q_1,q_2,q_3)$. Multiplicativity is the square root of the multiplicativity of $N$, both factors being non-negative. $\square$</p>
+<p>The modulus is the unique real norm on $\mathbb{H}$ compatible with the algebra in the sense of being multiplicative; this is the content of the next statement.</p>
+<h3 id="the-norm-form-and-the-conjugate">The Norm Form and the Conjugate</h3>
+<p><strong>Proposition.</strong> The norm form is invariant under conjugation, $N(\bar{\tilde q}) = N(\tilde q)$, and it is the <strong>reduced norm</strong> of $\mathbb{H}$ viewed as a central simple algebra of degree two over the base field.</p>
+<p><em>Proof.</em> $N(\bar{\tilde q}) = \bar{\tilde q} \tilde q = N(\tilde q)$. For a central simple algebra over a field the corresponding form is the reduced norm; for a quaternion algebra the reduced norm is the norm form above, and the identification is the classical one, quoted here as standard. $\square$</p>
+<h2 id="the-inner-product">The Inner Product</h2>
+<h3 id="definition_1">Definition</h3>
+<p><strong>Definition.</strong> The <strong>inner product</strong> of two quaternions is</p>
+<p>$$
+\langle p, \tilde q\rangle = \operatorname{Sc}(p\bar{\tilde q}) = \sum_{\mu=0}^{3} p_\mu q_\mu ,
+$$</p>
+<p>a symmetric bilinear form on the real vector space $\mathbb{H}$. The one-variable expression $\tilde q\bar{\tilde q}$ is the <strong>Hermitian form</strong>; in the quaternion case, the coefficients being real, it coincides with the norm form, as in <em>Quaternion Algebra</em>.</p>
+<p><strong>Proposition.</strong> The form $\langle\cdot,\cdot\rangle$ is bilinear, symmetric and positive definite over $\mathbb{R}$; it satisfies $\langle p, \tilde q\rangle = \operatorname{Sc}(\bar p \tilde q)$, and it is invariant under left and under right multiplication by a unit quaternion.</p>
+<p><em>Proof.</em> Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = N(\tilde q)$. For a unit $u$, $\langle up, uq\rangle = \operatorname{Sc}(up\overline{uq}) = \operatorname{Sc}(u\,p\bar{\tilde q}\,\bar u) = \operatorname{Sc}(p\bar{\tilde q})$ because conjugation by a unit preserves the scalar part, as in <em>Quaternion Rotations and Reflections</em>; the right case is the same computation. $\square$</p>
+<h3 id="the-euclidean-norm">The Euclidean Norm</h3>
+<p>The form $\langle\cdot,\cdot\rangle$ is the Euclidean inner product of $\mathbb{R}^4$ under the identification $\tilde q\leftrightarrow(q_0,q_1,q_2,q_3)$, and the modulus is its norm: $N(\tilde q) = \langle \tilde q, \tilde q\rangle$ and $|\tilde q| = \sqrt{\langle \tilde q,\tilde q\rangle}$. The orthogonal group of the form is $O(4)$, and the isometries of $\mathbb{H}$ that are also algebra automorphisms are the inner automorphisms of <em>Quaternion Rotations and Reflections</em>.</p>
+<h3 id="relation-between-the-norm-form-and-the-inner-product">Relation Between the Norm Form and the Inner Product</h3>
+<p><strong>Proposition.</strong> The norm form is the diagonal of the inner product, $N(\tilde q) = \langle \tilde q, \tilde q\rangle$, and the inner product is recovered from the norm form by polarisation,</p>
+<p>$$
+\langle p, \tilde q\rangle = \tfrac{1}{2}\bigl(N(p+\tilde q) - N(p) - N(\tilde q)\bigr).
+$$</p>
+<p>The two forms are therefore the same datum: a positive definite quadratic form on a four-dimensional real space, whose associated bilinear form is the Euclidean inner product. The multiplicativity of $N$ is an extra property, not shared by a general Euclidean form.</p>
+<h2 id="invertibility">Invertibility</h2>
+<h3 id="definition_2">Definition</h3>
+<p><strong>Definition.</strong> An element $\tilde q\in\mathbb{H}$ is <strong>invertible</strong> if there is $p\in\mathbb{H}$ with $pq = qp = 1$; the element $p$ is then the <strong>inverse</strong> and is written $\tilde q^{-1}$.</p>
+<p><strong>Proposition.</strong> The inverse, when it exists, is unique, and the invertible elements of $\mathbb{H}$ form a group under multiplication.</p>
+<p><em>Proof.</em> If $p$ and $p'$ are inverses then $p = p1 = p(qp') = (pq)p' = p'$. Closure, associativity, the identity and the existence of inverses are then immediate, so the invertible elements form a group. $\square$</p>
+<h3 id="left-and-right-inverses">Left and Right Inverses</h3>
+<p><strong>Theorem.</strong> For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q$ has a left inverse; $\tilde q$ has a right inverse; $\tilde q$ has a two-sided inverse; $N(\tilde q)\neq 0$.</p>
+<p><em>Proof.</em> If $pq = 1$ for some $p$, then $N(p)N(\tilde q) = N(pq) = 1$, so $N(\tilde q)\neq 0$ in the base field; conversely if $N(\tilde q)\neq 0$ then $\tilde q\cdot(\tilde q^{-1}) $ with $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ is a two-sided inverse by the inverse formula below. The right case is symmetric. $\square$</p>
+<p>Thus, over a field of characteristic not $2$, the three notions coincide, and an element is a unit exactly when its norm form does not vanish.</p>
+<h3 id="criterion-for-invertibility">Criterion for Invertibility</h3>
+<p><strong>Theorem.</strong> A quaternion $\tilde q$ is invertible if and only if $\tilde q\neq 0$ over $F = \mathbb{R}$; more generally, $\tilde q$ is invertible if and only if $N(\tilde q)\neq 0$, and over a field of characteristic not $2$ the vanishing of $N$ away from $0$ is exactly what it means for the algebra to fail to be a division algebra.</p>
+<p><em>Proof.</em> Over $\mathbb{R}$ the norm form is positive definite, so $N(\tilde q) = 0$ holds only for $\tilde q = 0$; by the criterion of the preceding paragraph every non-zero $\tilde q$ is a unit. $\square$</p>
+<h3 id="the-inverse-formula">The Inverse Formula</h3>
+<p><strong>Theorem.</strong> If $N(\tilde q)\neq 0$ then</p>
+<p>$$
+\tilde q^{-1} = \frac{\bar{\tilde q}}{N(\tilde q)} = \frac{\bar{\tilde q}}{\tilde q\bar{\tilde q}}.
+$$</p>
+<p><em>Proof.</em> $(\tilde q)(\bar{\tilde q}/N(\tilde q)) = (\tilde q\bar{\tilde q})/N(\tilde q) = N(\tilde q)/N(\tilde q) = 1$, and $(\bar{\tilde q}/N(\tilde q))(\tilde q) = (\bar{\tilde q} \tilde q)/N(\tilde q) = 1$ because $\bar{\tilde q} \tilde q = N(\tilde q)$ is central. $\square$</p>
+<p>For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = \bar{\tilde q}$: on the unit sphere, inversion is conjugation. For a pure imaginary $x$ one has $\bar x = -x$ and $x^{-1} = -x/N(x)$, so the imaginary line is closed under inversion up to the real scale.</p>
+<h2 id="the-group-of-units">The Group of Units</h2>
+<h3 id="definition_3">Definition</h3>
+<p><strong>Definition.</strong> The <strong>group of units</strong> of $\mathbb{H}$ is</p>
+<p>$$
+\mathbb{H}^{\times} = \{\tilde q\in\mathbb{H} : N(\tilde q)\neq 0\}.
+$$</p>
+<p><strong>Proposition.</strong> $\mathbb{H}^{\times}$ is a group under multiplication, it is the complement of the set $\{\tilde q : N(\tilde q) = 0\}$, and over $\mathbb{R}$ it is $\mathbb{H}\setminus\{0\}$.</p>
+<p><em>Proof.</em> Closure and inverses are the multiplicativity of $N$ and the inverse formula; the complement description is the criterion for invertibility. Over $\mathbb{R}$ the vanishing set of $N$ is $\{0\}$ by positive definiteness. $\square$</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Theorem.</strong> The centre of $\mathbb{H}^{\times}$ is $F^{\times} = F\setminus\{0\}$, realised as the non-zero scalars; over $\mathbb{R}$ every central quaternion is real, and the centre is $\mathbb{R}^{\times}$.</p>
+<p><em>Proof.</em> An element commuting with every quaternion is central in $\mathbb{H}$; the centre of the quaternion algebra over a field of characteristic not $2$ is the scalar field, as in <em>Quaternion Algebra</em>. Conversely a non-zero scalar commutes with everything and is invertible. $\square$</p>
+<h3 id="the-inverse-map">The Inverse Map</h3>
+<p><strong>Proposition.</strong> The inverse map $\tilde q\mapsto \tilde q^{-1}$ is an anti-automorphism of the group: $(pq)^{-1} = \tilde q^{-1}p^{-1}$. It is the composite of the conjugation anti-automorphism $\tilde q\mapsto\bar{\tilde q}$ with the central scalar division $\tilde q\mapsto \tilde q/N(\tilde q)$, and it coincides with conjugation on the unit sphere $N(\tilde q) = 1$.</p>
+<p><em>Proof.</em> $(pq)(\tilde q^{-1}p^{-1}) = p(qq^{-1})p^{-1} = pp^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ then exhibits the composite. $\square$</p>
+<h3 id="the-polar-split-of-the-units">The Polar Split of the Units</h3>
+<p><strong>Theorem.</strong> Over $\mathbb{R}$ the group of units factors as a direct product</p>
+<p>$$
+\mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times Sp(1), \qquad \tilde q = |\tilde q|\,\frac{\tilde q}{|\tilde q|},
+$$</p>
+<p>where $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$ is the unit sphere $S^3$ and the two factors commute. The map is a homeomorphism and a group isomorphism, and $Sp(1)$ is a compact connected Lie group.</p>
+<p><em>Proof.</em> The map $\tilde q\mapsto(|\tilde q|, \tilde q/|\tilde q|)$ is a bijection with inverse $(r,u)\mapsto ru$, it is a homomorphism because the modulus is multiplicative and positive, and it is continuous with continuous inverse. Every positive real is central, so the two factors commute and the product is direct. The identification $Sp(1) = S^3$ is the definition, and the Lie-group statements are those of <em>Quaternion Rotations and Reflections</em>. $\square$</p>
+<p>Thus every unit is the product of a positive scale and a unit quaternion, and the two factors are unique. This is the polar decomposition of the quaternion algebra, and it divides the group theory of the units into the multiplicative group $\mathbb{R}_{>0}$ and the compact group $Sp(1)$.</p>
+<h2 id="the-absence-of-zero-divisors">The Absence of Zero Divisors</h2>
+<p><strong>Definition.</strong> An element $\tilde q\neq 0$ is a <strong>zero divisor</strong> if there is $p\neq 0$ with $pq = 0$ or $qp = 0$.</p>
+<p><strong>Theorem.</strong> Over $F = \mathbb{R}$ the algebra $\mathbb{H}$ has no zero divisors: $pq = 0$ implies $p = 0$ or $\tilde q = 0$.</p>
+<p><em>Proof.</em> Take norms: $N(pq) = N(p)N(\tilde q)$ and $N(pq) = 0$, so $N(p)N(\tilde q) = 0$ in the field $\mathbb{R}$, hence $N(p) = 0$ or $N(\tilde q) = 0$, and by positive definiteness $p = 0$ or $\tilde q = 0$. $\square$</p>
+<p>The same argument shows that over any field in which the norm form is anisotropic — that is, vanishes only at the origin — there are no zero divisors. The failure of anisotropy is exactly the failure of the algebra to be a division algebra: if $N(\tilde q) = 0$ for some $\tilde q\neq 0$, then $\bar{\tilde q}$ is a non-zero element annihilating $\tilde q$.</p>
+<h2 id="the-three-way-classification">The Three-Way Classification</h2>
+<p>The elements of the biquaternion algebra fall into three classes: the invertible elements, the non-zero zero divisors, and zero. The three are mutually exclusive and, over the complex field, exhaust the algebra. Here the classification has the same three slots but one of them is empty.</p>
+<p><strong>Theorem (classification).</strong> Over $\mathbb{R}$ every quaternion is exactly one of the following:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Condition</th>
+<th>Status in $\mathbb{H}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>invertible</td>
+<td>$N(\tilde q)\neq 0$</td>
+<td>non-empty; every $\tilde q\neq 0$</td>
+</tr>
+<tr>
+<td>zero divisor, non-zero</td>
+<td>$\tilde q\neq 0$ and $N(\tilde q) = 0$</td>
+<td>empty</td>
+</tr>
+<tr>
+<td>zero</td>
+<td>$\tilde q = 0$</td>
+<td>a single element</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The classes are defined by the mutually exclusive conditions $N\neq 0$, $N = 0$ with $\tilde q\neq 0$, and $\tilde q = 0$. The middle class is empty by positive definiteness, and the first class is the whole punctured algebra. $\square$</p>
+<p><strong>Corollary.</strong> Over $\mathbb{R}$ the algebra $\mathbb{H}$ is a division algebra: for $a\neq 0$ the equations $ax = b$ and $xa = b$ have the unique solutions $x = a^{-1}b$ and $x = ba^{-1}$ respectively.</p>
+<p><em>Proof.</em> The classification makes every non-zero element invertible; multiplying the equation $ax = b$ on the left by $a^{-1}$ gives $x = a^{-1}b$, and uniqueness is the same computation, the right case being symmetric. $\square$</p>
+<p>The division property is the reason the quaternion algebra stands at the head of its family: it is a four-dimensional real division algebra, and it is the largest-dimensional associative one.</p>
+<h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the same multiplication table with the coefficients extended from $\mathbb{R}$ to $\mathbb{C}$, and its norm form</p>
+<p>$$
+N(\tilde Q) = \tilde Q\,\bar{\tilde Q}
+$$</p>
+<p>takes values in $\mathbb{C}$ rather than in $\mathbb{R}$. The comparison isolates what the real coefficient field buys.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>$\mathbb{H}$ over $\mathbb{R}$</th>
+<th>$\mathbb{B}$ over $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Values of $N$</td>
+<td>non-negative reals</td>
+<td>complex numbers</td>
+</tr>
+<tr>
+<td>Positive definite</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>none</td>
+<td>the null cone $N = 0$</td>
+</tr>
+<tr>
+<td>Invertibility criterion</td>
+<td>$\tilde q\neq 0$</td>
+<td>$N(\tilde Q)\neq 0$</td>
+</tr>
+<tr>
+<td>Classes of elements</td>
+<td>two (zero, invertible)</td>
+<td>three (invertible, zero divisor, zero)</td>
+</tr>
+<tr>
+<td>Group of units</td>
+<td>$\mathbb{R}_{>0}\times Sp(1)$</td>
+<td>$GL_2(\mathbb{C})$, connected</td>
+</tr>
+</tbody>
+</table></div>
+<p>In the biquaternion case the norm form is a complex-valued quadratic form, its zero set is the null cone, and an element with $N = 0$ but $\tilde Q\neq 0$ is a genuine zero divisor; the three-way classification is then a genuine trichotomy. Here the norm form is real and positive definite, the null cone degenerates to the origin, the middle class of the classification is empty, and the unit group is the product of a line and a compact group. The biquaternion case is treated in <em>Biquaternion Norm and Invertibility</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion algebra carries the multiplicative quadratic form $N(\tilde q) = \tilde q\bar{\tilde q} = \bar{\tilde q} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $N(pq) = N(p)N(\tilde q)$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle p,\tilde q\rangle = \operatorname{Sc}(p\bar{\tilde q})$, a real symmetric bilinear form whose diagonal is $N(\tilde q)$ and whose polarisation recovers it; the Hermitian form $\tilde q\bar{\tilde q}$ coincides with $N(\tilde q)$.</p>
+<p>Invertibility is decided by the norm: $\tilde q$ is a unit exactly when $N(\tilde q)\neq 0$, the inverse being $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$, which reduces to $\tilde q^{-1} = \bar{\tilde q}$ on the unit sphere. Over $\mathbb{R}$ every non-zero quaternion is invertible, the algebra has no zero divisors, and it is a division algebra, so the three-way classification of the biquaternion case collapses to the dichotomy zero or invertible. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times Sp(1)$ of a positive scale and the unit sphere.</p>
+<p>The contrast with the biquaternion case is the contrast between a real and a complex norm form: the complex norm has a null cone, the null cone supplies non-zero zero divisors, and the trichotomy invertible–zero-divisor–zero is genuine there, whereas here it degenerates.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The quaternion algebra</td>
+</tr>
+<tr>
+<td>$F$</td>
+<td>Base field of characteristic not $2$; $\mathbb{R}$ for the definite statements</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu$</td>
+<td>General quaternion, scalar part $q_0$, vector part $\mathbf{q}$</td>
+</tr>
+<tr>
+<td>$\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
+<td>Quaternion conjugate</td>
+</tr>
+<tr>
+<td>$N(\tilde q) = \tilde q\bar{\tilde q} = \bar{\tilde q} \tilde q$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$</td>
+<td>Modulus over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\langle p,\tilde q\rangle = \operatorname{Sc}(p\bar{\tilde q})$</td>
+<td>Inner product, $N(\tilde q) = \langle \tilde q,\tilde q\rangle$</td>
+</tr>
+<tr>
+<td>$\tilde q\bar{\tilde q}$</td>
+<td>Hermitian form, coinciding with $N(\tilde q)$</td>
+</tr>
+<tr>
+<td>$\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$</td>
+<td>Inverse formula</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{\times} = \{\tilde q : N(\tilde q)\neq 0\}$</td>
+<td>Group of units</td>
+</tr>
+<tr>
+<td>$Sp(1) = \{\tilde q : N(\tilde q) = 1\} = S^3$</td>
+<td>Unit quaternions, the compact factor</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$</td>
+<td>Polar split of the units</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra, for contrast</td>
+</tr>
+<tr>
+<td>$N(\tilde Q) = \tilde Q\bar{\tilde Q}$</td>
+<td>Complex-valued norm form of $\mathbb{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the origin of the norm form and its multiplicativity.</li>
+<li>Leonard Dickson, <em>Algebras and Their Arithmetics</em> (University of Chicago Press, 1923), for the norm form and the division property of the quaternion algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the reduced norm and the group of units of a central simple algebra.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for multiplicative quadratic forms and the anisotropic case.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the norm form, the unit sphere and the division algebras.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the identification of the norm form with a Clifford norm.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -56,11 +56,11 @@
 <p>The treatment is purely mathematical. The independent variables are four real variables. They are the coordinates of $\mathbb{R}^4$, and they are independent of any physical interpretation. The split complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.</p>
 <p>Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.</p>
 <p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.</p>
-<p>The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
+<p>The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
 <p>$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$</p>
-<p>with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.</p>
+<p>with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.</p>
 <h2 id="the-integral-of-a-split-biquaternion-valued-function">The Integral of a Split-Biquaternion-Valued Function</h2>
 <h3 id="definition">Definition</h3>
 <p>Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$, with coordinates $x_0, x_1, x_2, x_3$. Let $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$ be a split-biquaternion-valued function, written in components as</p>
@@ -105,9 +105,9 @@ $$</p>
 <p><strong>Theorem (absolute integrability).</strong> If $\|\tilde{F}\|_E$ is integrable over $\Omega$, then $\tilde{F}$ is integrable over $\Omega$.</p>
 <p><strong>Proof.</strong> Since $|u_\mu| \leq \|\tilde{F}\|_E$ and $|v_\mu| \leq \|\tilde{F}\|_E$ for each $\mu$, the integrability of $\|\tilde{F}\|_E$ implies the integrability of each component. $\square$</p>
 <h3 id="the-integral-in-the-idempotent-basis">The Integral in the Idempotent Basis</h3>
-<p>Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the integral can be computed in the idempotent basis. Writing $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ with $\tilde{F}_\pm \in \mathbb{H}$,</p>
+<p>Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the integral can be computed in the idempotent basis. Writing $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ with $\tilde{F}_\pm \in \mathbb{H}$,</p>
 <p>$$
-\int_\Omega \tilde{F} \, dV = \left(\int_\Omega \tilde{F}_+ \, dV\right) e_+ + \left(\int_\Omega \tilde{F}_- \, dV\right) e_-,
+\int_\Omega \tilde{F} \, dV = \left(\int_\Omega \tilde{F}_+ \, dV\right) \tilde\Pi_+ + \left(\int_\Omega \tilde{F}_- \, dV\right) \tilde\Pi_-,
 $$</p>
 <p>where each of the two integrals is the quaternion-valued integral of the corresponding component. So the integration of split-biquaternion-valued functions reduces to the integration of two quaternion-valued functions, one for each idempotent component.</p>
 <p>This is the same reduction as for the differential operators: the split biquaternion analysis is the quaternion analysis applied to each of the two components separately.</p>
@@ -254,7 +254,7 @@ $$</p>
 $$</p>
 <p>Rearranging gives the stated formula. $\square$</p>
 <h3 id="the-cauchy-integral-formula-in-the-idempotent-basis">The Cauchy Integral Formula in the Idempotent Basis</h3>
-<p>In the idempotent basis, the Cauchy integral formula decomposes into two copies of the quaternion Cauchy integral formula. Writing $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ and $\tilde{G} = \tilde{G}_+ e_+ + \tilde{G}_- e_-$,</p>
+<p>In the idempotent basis, the Cauchy integral formula decomposes into two copies of the quaternion Cauchy integral formula. Writing $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ and $\tilde{G} = \tilde{G}_+ \tilde\Pi_+ + \tilde{G}_- \tilde\Pi_-$,</p>
 <p>$$
 \tilde{F}_\pm(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}_\pm(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}_\pm(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega \tilde{G}_\pm(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}\tilde{F}_\pm)(\tilde{Q}) \, dV(\tilde{Q}),
 $$</p>
@@ -302,7 +302,7 @@ $$</p>
 <h3 id="the-residue-in-the-idempotent-basis">The Residue in the Idempotent Basis</h3>
 <p>In the idempotent basis, the residue decomposes into two quaternion residues:</p>
 <p>$$
-\mathrm{Res}(\tilde{F}, \tilde{Q}_0) = \mathrm{Res}(\tilde{F}_+, \tilde{Q}_0) e_+ + \mathrm{Res}(\tilde{F}_-, \tilde{Q}_0) e_-,
+\mathrm{Res}(\tilde{F}, \tilde{Q}_0) = \mathrm{Res}(\tilde{F}_+, \tilde{Q}_0) \tilde\Pi_+ + \mathrm{Res}(\tilde{F}_-, \tilde{Q}_0) \tilde\Pi_-,
 $$</p>
 <p>where each of the two residues is the quaternion residue of the corresponding component. So the split biquaternion residue theory is the pair of the quaternion residue theories, one for each component.</p>
 <h2 id="the-role-of-the-zero-divisors">The Role of the Zero Divisors</h2>
@@ -336,7 +336,7 @@ $$</p>
 <p><strong>The role of the zero divisor set.</strong> How do the integral formulas behave when the domain intersects the zero divisor set?</p>
 </li>
 <li>
-<p><strong>The relation to the polar representation.</strong> How does the polar representation of the split biquaternion algebra interact with the integration theory?</p>
+<p><strong>The relation to the polar decomposition.</strong> How does the polar decomposition of the split biquaternion algebra interact with the integration theory?</p>
 </li>
 <li>
 <p><strong>The relation to the integral formulas of Clifford analysis.</strong> How does the split biquaternion integration theory relate to the general Clifford analysis with split signature?</p>
@@ -351,6 +351,85 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.</p>
 <p>The <strong>fundamental solution</strong> of the gradient operator is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$, the distributional identity established above.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>Split complex unit, central, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>Idempotents of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$</td>
+<td>General split biquaternion</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + j q'_\mu$, $F_\mu = u_\mu + j v_\mu$</td>
+<td>Split complex coefficients and values</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^*, {}^\dagger, {}^\flat$</td>
+<td>The four conjugations</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$</td>
+<td>Idempotent components</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>A four-dimensional real subspace, coordinates $x_0, \dots, x_3$</td>
+</tr>
+<tr>
+<td>$\Omega \subset V$</td>
+<td>Domain of integration</td>
+</tr>
+<tr>
+<td>$\partial \Omega$</td>
+<td>Boundary of $\Omega$</td>
+</tr>
+<tr>
+<td>$\int_\Omega \tilde{F} \, dV$</td>
+<td>Integral of $\tilde{F}$ over $\Omega$</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}, \bar{\tilde{\nabla}}, \Box, \tilde{\nabla}^2, \tilde{D}$</td>
+<td>Gradient, conjugate gradient, d'Alembertian, gradient square, convective derivative</td>
+</tr>
+<tr>
+<td>$\tilde{E}$</td>
+<td>Fundamental solution of $\Box$</td>
+</tr>
+<tr>
+<td>$\tilde{K}$</td>
+<td>Cauchy kernel</td>
+</tr>
+<tr>
+<td>$\mathrm{Res}(\tilde{F}, \tilde{Q}_0)$</td>
+<td>Residue at an isolated singularity</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and biquaternions.</li>

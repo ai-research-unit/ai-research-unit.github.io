@@ -116,7 +116,7 @@ and positivity plus the trace condition give exactly
 $$
 \tilde\rho\ \text{a state}\iff |\mathbf r|\le1 .
 $$
-The state is <strong>pure</strong> on the Bloch sphere $|\mathbf r|=1$, where $\tilde\rho=P_+(\hat{\mathbf r})=\tfrac12(e_0+i\hat{\mathbf r})$ is a minimal idempotent and $\tilde\rho^2=\tilde\rho$; it is <strong>faithful</strong> on the open Bloch ball $|\mathbf r|<1$, where both eigenvalues are positive; and it is the <strong>trace state</strong> at $\mathbf r=0$, where $\tilde\rho=\tfrac12e_0$ and $\omega$ is the normalized algebra trace.</p>
+The state is <strong>pure</strong> on the Bloch sphere $|\mathbf r|=1$, where $\tilde\rho=\tilde\Pi(\hat{\mathbf r})=\tfrac12(e_0+i\hat{\mathbf r})$ is a minimal idempotent and $\tilde\rho^2=\tilde\rho$; it is <strong>faithful</strong> on the open Bloch ball $|\mathbf r|<1$, where both eigenvalues are positive; and it is the <strong>trace state</strong> at $\mathbf r=0$, where $\tilde\rho=\tfrac12e_0$ and $\omega$ is the normalized algebra trace.</p>
 <p>The parameter is a genuine superposition coordinate: $\mathbf r$ is the Bloch vector of the state in the basis of the Pauli matrices, and a generic state has all three components nonzero. The computations below are performed on such generic vectors.</p>
 <h3 id="the-logarithm-of-a-biquaternion-state">The Logarithm of a Biquaternion State</h3>
 <p>The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mathbb{B}$, and for the state above it takes a closed form. Two ingredients give it. First, the exponential of an element in the plane of a unit direction: for a unit pure quaternion $\hat{\mathbf r}$ one has $(i\hat{\mathbf r})^2=e_0$, so
@@ -179,12 +179,12 @@ S\big(\tfrac12e_0\big\|\tilde\sigma\big)=-\tfrac12\log\big(1-|\mathbf s|^2\big),
 $$
 the relative entropy of the trace state from $\tilde\sigma$, which is finite for every faithful $\tilde\sigma$ and tends to $+\infty$ only as $\tilde\sigma$ itself approaches the pure boundary. If $|\mathbf r|\to1$ with $|\mathbf s|<1$ the expression tends to the finite limit
 $$
-S\big(P_+(\hat{\mathbf r})\big\|\tilde\sigma\big)
+S\big(\tilde\Pi(\hat{\mathbf r})\big\|\tilde\sigma\big)
 =-\tfrac12\log\frac{1-|\mathbf s|^2}{4}
 -\mathrm{artanh}\big(|\mathbf s|\big)\cos\gamma',
 \qquad \cos\gamma'=\hat{\mathbf r}\cdot\hat{\mathbf s},
 $$
-which is the direct computation $-\mathrm{Tr}(P_+(\hat{\mathbf r})\log\tilde\sigma)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.</p>
+which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\hat{\mathbf r})\log\tilde\sigma)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.</p>
 <h3 id="verification-on-generic-superpositions">Verification on Generic Superpositions</h3>
 <p>The closed form was checked against the explicit $2\times2$ complex matrices in the representation $\Phi$, with the matrix logarithm computed from the spectral decomposition and the entropy from the eigenvalues. The state pair
 $$
@@ -321,7 +321,7 @@ verified against the explicit matrix computation on generic superpositions and n
 <td>Biquaternion logarithm of a faithful state</td>
 </tr>
 <tr>
-<td>$|0\rangle\langle0|=P_+(e_3)$</td>
+<td>$|0\rangle\langle0|=\tilde\Pi_1$</td>
 <td>Vacuum idempotent (pure state)</td>
 </tr>
 <tr>

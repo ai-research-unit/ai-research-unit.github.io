@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Topology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-topology"><strong>Split-Quaternion Topology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is a four-dimensional real vector space with an indefinite norm form $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$. Its topology is therefore simple wherever it is the topology of the underlying vector space, and interesting only where the norm form cuts out the group of units, the norm-one group and the null cone. This article collects those topological facts: the contractibility of the algebra, the two components of the group of units, the circle that the norm-one group retracts onto, the torus that is the link of the null cone, the two families of isotropic lines, and the radial structure of the algebra near the null cone.</p>
+<p>The article owns the topological statements of the category. It relies on <em>Split-Quaternion Norm and Invertibility</em> for the group of units, on <em>Split-Quaternion Exponential and Lie Group Structure</em> for the norm-one group and the Lorentz double cover, and on <em>Split-Quaternion Null Quadric and Projective Geometry</em> for the ruling of the null quadric. All the invariants below are standard; the signs of the indefinite form and the reality of the algebra are what distinguish the picture from the biquaternion one. No physics is invoked.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ with the coordinates $q_0, q_1, q_2, q_3$; the norm form is $N = q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$; the group of units is $\mathbb{H}_{\mathrm{s}}^\times = \{N \neq 0\}$; the norm-one group is $U = \{N = 1\} = \mathrm{SL}_2(\mathbb{R})$; the null cone is $\mathcal{N} = \{N = 0\}$; the vector subspace is $V = \operatorname{span}\{e_1,e_2,e_3\}$ with $N|_V = q_1^2 - q_2^2 - q_3^2$ of signature $(2,1)$. The Euclidean norm of $(q_0,q_1,q_2,q_3)$ is $|\tilde q|_E = (q_0^2+q_1^2+q_2^2+q_3^2)^{1/2}$, and $\Sigma^3$ denotes the Euclidean unit sphere.</p>
+<h2 id="the-underlying-space-and-its-contractibility">The Underlying Space and Its Contractibility</h2>
+<p><strong>Theorem.</strong> As a topological space, $\mathbb{H}_{\mathrm{s}}$ is homeomorphic to $\mathbb{R}^4$ and is therefore <strong>contractible</strong>: $\pi_0(\mathbb{H}_{\mathrm{s}})$ is a point and $\pi_k(\mathbb{H}_{\mathrm{s}}) = 0$ for every $k \geq 1$.</p>
+<p><strong>Proof.</strong> The coordinate map $\tilde q \mapsto (q_0,q_1,q_2,q_3)$ is a homeomorphism onto $\mathbb{R}^4$, and the straight-line homotopy $H(\tilde q,t) = (1-t)\tilde q$ contracts the algebra to the origin. $\square$</p>
+<p>Consequently every interesting invariant of the article comes from a <em>deleted</em> set or a <em>level set</em> of $N$, not from the algebra itself. The punctured algebra $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ has the homotopy type of the Euclidean sphere $\Sigma^3$, by the radial deformation retraction $\tilde q \mapsto \tilde q/|\tilde q|_E$.</p>
+<h2 id="the-group-of-units-and-its-components">The Group of Units and Its Components</h2>
+<p><strong>Theorem.</strong> The group of units $\mathbb{H}_{\mathrm{s}}^\times = \{N \neq 0\}$ has exactly two connected components, $\{N > 0\}$ and $\{N < 0\}$. Each component deformation retracts onto its intersection with $\Sigma^3$, and each is homotopy equivalent to a circle:</p>
+<p>$$
+\{N > 0\} \simeq SO(2), \qquad \{N < 0\} \simeq SO(2).
+$$</p>
+<p>Hence $\pi_0(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}/2$ and $\pi_1(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}$ on each component, so $\pi_1$ of the group is free abelian of rank two.</p>
+<p><strong>Proof.</strong> The map $\tilde q \mapsto \tilde q/|\tilde q|_E$ retracts $\{N \neq 0\}$ onto the set $\{N = \pm 1\} \cap \Sigma^3$ without changing the sign of $N$, componentwise. The component $\{N>0\}$ retracts onto its maximal compact subgroup $SO(2)$ by the Gram–Schmidt process, and the component $\{N<0\}$ is the coset $e_2\{N>0\}$, homeomorphic to the first. A circle has $\pi_0$ a point and $\pi_1 = \mathbb{Z}$. $\square$</p>
+<h2 id="the-norm-one-group">The Norm-One Group</h2>
+<p><strong>Theorem.</strong> The norm-one group $U = \{N = 1\} = \mathrm{SL}_2(\mathbb{R})$ is a connected three-dimensional submanifold of $\mathbb{H}_{\mathrm{s}}$, diffeomorphic to $S^1 \times \mathbb{R}^2$; it deformation retracts onto its maximal compact subgroup $SO(2)$,</p>
+<p>$$
+U \simeq S^1, \qquad \pi_1(U) = \mathbb{Z}.
+$$</p>
+<p><strong>Proof.</strong> The set $U$ is the level set of the regular value $1$ of $N$, so it is a smooth three-manifold; it is connected, retracting onto its intersection with $\Sigma^3$, which is the set $\{N=1\} \cap \Sigma^3 = \{q_0^2+q_1^2 = 1, q_2=q_3=0\}$, a circle. The KAN (Iwasawa) decomposition $\mathrm{SL}_2(\mathbb{R}) = SO(2)\cdot A \cdot N$ with $A \cong \mathbb{R}$ and $N \cong \mathbb{R}$ gives the diffeomorphism $U \cong S^1 \times \mathbb{R}^2$. $\square$</p>
+<p>By <em>Split-Quaternion Exponential and Lie Group Structure</em> the group $U$ double-covers the identity component $\mathrm{SO}^{+}(2,1)$ of the Lorentz group. The double cover is <strong>not</strong> the universal cover: $\pi_1(U) = \mathbb{Z}$ is infinite, so the universal cover of $\mathrm{SO}^{+}(2,1)$ is an infinite cyclic cover of $U$ and not $U$ itself. This is a structural difference from the quaternion case, where the unit sphere is the simply connected three-sphere and its double cover of $SO(3)$ is universal.</p>
+<h2 id="the-null-cone-and-its-link">The Null Cone and Its Link</h2>
+<p><strong>Definition.</strong> The <strong>null cone</strong> is</p>
+<p>$$
+\mathcal{N} = \{\, \tilde q : N(\tilde q) = 0 \,\} = \{\, q_0^2 + q_1^2 = q_2^2 + q_3^2 \,\},
+$$</p>
+<p>the set of zero divisors together with the origin; the <strong>link</strong> of the cone is $\mathcal{N} \cap \Sigma^3$.</p>
+<p><strong>Theorem.</strong> The null cone is a cone on its link: $\mathcal{N} = \{\, t\, y : t \geq 0,\ y \in \mathcal{N}\cap\Sigma^3 \,\}$, and the link is a <strong>torus</strong>,</p>
+<p>$$
+\mathcal{N} \cap \Sigma^3 \;\cong\; S^1 \times S^1 = T^2 .
+$$</p>
+<p>Hence $\mathcal{N}\setminus\{0\}$ is homotopy equivalent to $T^2$, with $\pi_1(\mathcal{N}\setminus\{0\}) = \mathbb{Z}^2$.</p>
+<p><strong>Proof.</strong> A null point $\tilde q \neq 0$ is $t y$ with $t = |\tilde q|_E > 0$ and $y$ on the sphere; the cone property is homogeneity of $N$. On the sphere the equations $q_0^2+q_1^2 = q_2^2+q_3^2$ and $q_0^2+q_1^2+q_2^2+q_3^2 = 1$ give $q_0^2+q_1^2 = q_2^2+q_3^2 = \tfrac12$, so $(q_0,q_1)$ lies on the circle of radius $1/\sqrt2$ and $(q_2,q_3)$ on the circle of radius $1/\sqrt2$, independently: the link is the product of the two circles, a torus. The radial retraction makes $\mathcal{N}\setminus\{0\}$ homotopy equivalent to the link. $\square$</p>
+<p>The cone is singular at the origin, and the singularity is the vertex of the cone on the torus; away from the origin the cone is a smooth three-manifold.</p>
+<h2 id="the-two-families-of-isotropic-lines">The Two Families of Isotropic Lines</h2>
+<p>Inside the null cone sit the <strong>maximal isotropic subspaces</strong> of the form, of dimension $2$. They fall into two families, each parametrised by a projective line.</p>
+<p><strong>Theorem.</strong> The maximal isotropic subspaces of $N$ are the two families of two-dimensional planes</p>
+<p>$$
+\mathcal{L} = \{\, L_\lambda \,\}, \qquad \mathcal{M} = \{\, M_\mu \,\},
+$$</p>
+<p>each parametrised by a projective line and each consisting of totally isotropic planes; the two families are disjoint, their union fills the null cone, and each maximal isotropic plane belongs to exactly one of them. In the projective space $\mathbb{P}^3$ the two families are the two rulings of the smooth quadric surface $Q = \{N = 0\}$, which is $\cong \mathbb{P}^1 \times \mathbb{P}^1$.</p>
+<p><strong>Proof.</strong> The form has signature $(2,2)$, so a maximal isotropic subspace has dimension $2$ and the Witt index is $2$. A concrete maximal isotropic plane is</p>
+<p>$$
+L = \operatorname{span}\Bigl\{ \tfrac12(1+e_2),\; e_1 + e_3 \Bigr\},
+$$</p>
+<p>whose generators are null — $N\bigl(\tfrac12(1+e_2)\bigr) = \tfrac14 N(1+e_2) = 0$ and $N(e_1+e_3) = 1 - 1 = 0$ — and mutually $B$-orthogonal, $B\bigl(\tfrac12(1+e_2), e_1+e_3\bigr) = 0$; it is therefore totally isotropic. The isometry group $O(2,2)$ acts transitively on each family, and the two families are exchanged by the reflection $e_2 \mapsto -e_2$; each family is the set of images of $L$ under the two connected components of $O(2,2)$, a copy of $\mathrm{SO}^{+}(2,2)/P$ for a maximal parabolic $P$, hence a projective line. The identification of the projectivised cone with $\mathbb{P}^1\times\mathbb{P}^1$ and its two rulings is the standard description of a smooth quadric surface, developed in <em>Split-Quaternion Null Quadric and Projective Geometry</em>. $\square$</p>
+<p>The link of the null cone and the two rulings are the same object seen twice: the two families of lines of the quadric pull back to the two families of circles of the torus $T^2 = S^1 \times S^1$, one circle of each factor for each ruling.</p>
+<h2 id="the-radial-structure-and-the-null-cone">The Radial Structure and the Null Cone</h2>
+<p>Every nonzero split-quaternion has the radial decomposition $\tilde q = \rho\, u$ with $\rho = \sqrt{|N(\tilde q)|} > 0$ and $u$ a unit of norm $\pm 1$. The map</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}} \setminus \{0\} \longrightarrow \mathbb{R}_{>0} \times \{\, u : N(u) = \pm 1 \,\}, \qquad \tilde q \mapsto (\rho, \tilde q/\rho),
+$$</p>
+<p>is a homeomorphism, and the second factor is the two-sheeted unit slice of <em>Split-Quaternion Norm and Invertibility</em>.</p>
+<p><strong>Theorem.</strong> The <strong>boundary of the radial decomposition</strong> is the null cone. As $N(\tilde q) \to 0$ with $\tilde q$ fixed and nonzero, the modulus $\rho \to 0$ while the unit part $\tilde q/\rho$ leaves every compact set of the unit slice; the radial map does not extend continuously to $\mathcal{N}$, and its image is an open dense subset whose complement is $\mathcal{N}$.</p>
+<p><strong>Proof.</strong> The modulus is continuous and vanishes exactly on the null cone, where the normalisation $\tilde q/\rho$ is undefined. Along a path to a nonzero null point the unit part is unbounded because $\rho \to 0$ with $|\tilde q|_E$ bounded below. The identity above shows the polar map is a homeomorphism onto its image, which is the complement of the cone. $\square$</p>
+<p>The unit slice of the second factor has two connected components, $\{N=1\} \cong S^1\times\mathbb{R}^2$ and $\{N=-1\}$, corresponding to the two components of the group of units; the radial decomposition separates the scale $\rho \in \mathbb{R}_{>0}$ from the direction, itself split into the two component types.</p>
+<h2 id="comparison-with-the-topology-of-math131">Comparison with the Topology of $\mathbb{B}$</h2>
+<p>The biquaternion article <em>Biquaternion Topology</em> treats the eight-dimensional algebra $\mathbb{B}$, its Euclidean unit sphere $S^7$, the null cone of the complex quadratic form and the reality conditions on the pure biquaternions. The split-quaternion picture is the four-dimensional real analogue. The algebra is $\mathbb{R}^4$ in place of $\mathbb{R}^8$, with Euclidean sphere $\Sigma^3 = S^3$ in place of $S^7$; the group of units $\{N \neq 0\}$ has <strong>two</strong> components (retracting onto two circles) where the biquaternion unit group is connected; the norm-one group retracts onto the circle $SO(2)$ with infinite cyclic fundamental group, where the biquaternion norm-one group retracts onto the simply connected $SU(2)$; and the link of the null cone is the torus $T^2$, of the same type as the biquaternion link because both come from a quadric of split type, but realised in one real dimension less. The two rulings and the two-component structure of the units are the topological shadow of the indefinite form; nothing biquaternion-specific — no complex structure, no Hermitian reality condition, no $S^7$ — is imported.</p>
+<h2 id="summary">Summary</h2>
+<p>The split-quaternion algebra is $\mathbb{R}^4$ and is contractible, so its only interesting topology is that of the level sets of the norm form. The group of units $\{N \neq 0\}$ has two components, $\{N>0\}$ and $\{N<0\}$, each homotopy equivalent to a circle; the norm-one group $U = \mathrm{SL}_2(\mathbb{R})$ is connected, diffeomorphic to $S^1 \times \mathbb{R}^2$ and homotopy equivalent to $S^1$, with $\pi_1 = \mathbb{Z}$, so the double cover $U \to \mathrm{SO}^{+}(2,1)$ is not the universal cover. The null cone $\mathcal{N} = \{q_0^2+q_1^2=q_2^2+q_3^2\}$ is a cone on its link, which is the torus $T^2 = S^1\times S^1$, and its maximal isotropic subspaces are the two families of planes, each parametrised by a circle and each corresponding to one ruling of the smooth projective quadric. The radial decomposition $\tilde q = \rho u$ is a homeomorphism from the punctured algebra onto $\mathbb{R}_{>0}$ times the two-sheeted unit slice, and its boundary is the null cone, where the modulus vanishes and the unit part escapes to infinity. Compared with the biquaternion topology the dimension drops by four, the group of units splits into two components, the norm-one group acquires infinite cyclic fundamental group, and the Euclidean sphere is $S^3$ in place of $S^7$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$</td>
+<td>the split-quaternion algebra, contractible</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$N = q_0^2+q_1^2-q_2^2-q_3^2$</td>
+<td>the norm form, signature $(2,2)$</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}^\times = \{N \neq 0\}$</td>
+<td>the group of units, two components</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$U = \{N = 1\} = \mathrm{SL}_2(\mathbb{R})$</td>
+<td>the norm-one group, $\simeq S^1$</td>
+<td><em>Split-Quaternion Exponential and Lie Group Structure</em></td>
+</tr>
+<tr>
+<td>$\mathcal{N} = \{N=0\}$</td>
+<td>the null cone / zero-divisor set</td>
+<td><em>Split-Quaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$\mathcal{N} \cap \Sigma^3 = T^2$</td>
+<td>the link of the null cone, a torus</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\Sigma^3$, $|\tilde q|_E$</td>
+<td>the Euclidean unit sphere and norm of $\mathbb{R}^4$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$L_{(s:t)}, M_{(u:v)}$</td>
+<td>the two families of maximal isotropic planes</td>
+<td><em>Split-Quaternion Null Quadric and Projective Geometry</em></td>
+</tr>
+<tr>
+<td>$Q \subset \mathbb{P}^3$</td>
+<td>the projective null quadric, $\cong \mathbb{P}^1\times\mathbb{P}^1$</td>
+<td><em>Split-Quaternion Null Quadric and Projective Geometry</em></td>
+</tr>
+<tr>
+<td>$\rho u$</td>
+<td>the radial decomposition; boundary the null cone</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}^{+}(2,1)$</td>
+<td>the Lorentz group double-covered by $U$</td>
+<td><em>Split-Quaternion Rotations and the Lorentz Group</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the homotopy type of matrix groups and the homotopy groups of spheres.</li>
+<li>Morris W. Hirsch, <em>Differential Topology</em>, Graduate Texts in Mathematics 33 (Springer, 1976), for level sets of regular values and the link of a cone singularity.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the deformation retractions of the classical matrix groups onto their maximal compact subgroups.</li>
+<li>Joe Harris, <em>Algebraic Geometry: A First Course</em>, Graduate Texts in Mathematics 133 (Springer, 1992), for the two rulings of a smooth quadric surface and the Segre embedding.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the isotropic subspaces and the quadric of an indefinite form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

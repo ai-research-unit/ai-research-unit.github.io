@@ -75,7 +75,7 @@ $$</p>
 <p><strong>Definition.</strong> For a prime ideal $\mathfrak{p} \subseteq R$, write $M_{\mathfrak p}=S^{-1}M$ with $S=R \setminus \mathfrak{p}$; this is the localisation at $\mathfrak{p}$, an $R_{\mathfrak p}$-module. The <strong>support</strong> of $M$ is $\operatorname{Supp}M=\{\mathfrak p : M_{\mathfrak p} \neq 0\}$.</p>
 <p><strong>Example.</strong> The localisations of a finite module are computed from its primary decomposition. For $M=\mathbb{Z}/12\mathbb{Z}$ and the prime $\mathfrak p=(2)$, the multiplicatively closed set is the odd integers; the Chinese remainder theorem writes $M \cong \mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$, inverting odd integers leaves $\mathbb{Z}/4\mathbb{Z}$ unchanged because every odd integer is a unit modulo $4$, and kills $\mathbb{Z}/3\mathbb{Z}$ because $3$ is odd and therefore becomes invertible, so $M_{(2)} \cong \mathbb{Z}/4\mathbb{Z}$. The same computation gives $M_{(3)} \cong \mathbb{Z}/3\mathbb{Z}$ and $M_{(5)}=0$, since $12$ annihilates every element of $M$ and $12$ is not a multiple of $5$, so it belongs to the multiplicatively closed set $\mathbb{Z}\setminus(5)$ and kills every fraction. The support is therefore $\operatorname{Supp}M=\{(2),(3)\}$, the primes dividing $12$, and the rank of $M_{\mathfrak p}$ over $R_{\mathfrak p}$ is $0$ at every prime, even though $M$ is nonzero: localising detects the support, not the size.</p>
 <p><strong>Theorem.</strong> (i) $M=0$ if and only if $M_{\mathfrak m}=0$ for every maximal ideal $\mathfrak{m}$. (ii) $M$ is flat over $R$ if and only if $M_{\mathfrak m}$ is flat over $R_{\mathfrak m}$ for every maximal ideal $\mathfrak{m}$. (iii) If $M$ is finitely generated and $M_{\mathfrak p}$ is free of rank $n(\mathfrak p)$ over $R_{\mathfrak p}$ for every prime $\mathfrak p$, then $n(\mathfrak p)$ is locally constant on $\operatorname{Spec}R$, and $M$ is a projective module if in addition $R$ is Noetherian or $M$ is of finite presentation.</p>
-<p><em>Proof.</em> (i) If $M \neq 0$ choose $x \neq 0$; the annihilator of $x$ is contained in a maximal ideal $\mathfrak m$, and then $x/1 \neq 0$ in $M_{\mathfrak m}$ because $t x=0$ would put $t$ in the annihilator, hence in $\mathfrak m$, contradicting $t \in R \setminus \mathfrak m$. (ii) is the local character of flatness, proved by testing the ideal criterion at each maximal ideal. (iii) Local freeness of finite rank means that every prime has a neighbourhood on which the module is free of the same rank, by Nakayama's lemma; the local trivialisations glue because $M$ is finitely generated and projective is equivalent to being a direct summand of a free module of finite rank. $\square$</p>
+<p><em>Proof.</em> (i) If $M \neq 0$ choose $x \neq 0$; the annihilator of $x$ is contained in a maximal ideal $\mathfrak m$, and then $x/1 \neq 0$ in $M_{\mathfrak m}$ because $t x=0$ would put $t$ in the annihilator, hence in $\mathfrak m$, contradicting $t \in R \setminus \mathfrak m$. (ii) is the local character of flatness, proved by testing the ideal criterion at each maximal ideal. (iii) Local freeness of finite rank means that for every prime $\mathfrak p$ there is an element $f \notin \mathfrak p$ such that $M_f$ is free of rank $n(\mathfrak p)$ over $R_f$, by Nakayama's lemma; the local trivialisations glue because $M$ is finitely generated and projective is equivalent to being a direct summand of a free module of finite rank. $\square$</p>
 <h2 id="i-adic-completion">I-Adic Completion</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> Let $I \subseteq R$ be an ideal. The <strong>$I$-adic completion</strong> of $M$ is the inverse limit</p>
@@ -83,8 +83,8 @@ $$</p>
 \widehat M = \varprojlim_n M/I^nM ,
 $$</p>
 <p>with the projections $\widehat M \to M/I^nM$; the <strong>$I$-adic completion of $R$</strong> is $\widehat R=\varprojlim_n R/I^n$. There is a natural map $\iota:M \to \widehat M$, $m \mapsto (m+I^nM)_n$.</p>
-<p><strong>Definition.</strong> $M$ is <strong>$I$-adically separated</strong> if $\bigcap_n I^nM=0$, and <strong>$I$-adically complete</strong> if $\iota$ is an isomorphism. The <strong>$I$-adic topology</strong> on $M$ has as neighbourhoods of $0$ the submodules $I^nM$; separatedness is Hausdorffness and completeness is the usual completeness of the topology.</p>
-<p><strong>Example.</strong> Take $R=\mathbb{Z}$ and $I=(p)$. Then $\varprojlim_n \mathbb{Z}/p^n\mathbb{Z}=\mathbb{Z}_p$, the ring of $p$-adic integers, and the $I$-adic completion of $\mathbb{Z}$ is separated and complete with $\mathbb{Z} \hookrightarrow \mathbb{Z}_p$ as a dense subring. Similarly, for $R=k[x]$ and $I=(x)$, the completion is the formal power series ring $k[[x]]=\varprojlim_n k[x]/(x^n)$.</p>
+<p><strong>Definition.</strong> The chain $M \supseteq IM \supseteq I^2M \supseteq \cdots$ is the <strong>$I$-adic filtration</strong> of $M$. The module $M$ is <strong>$I$-adically separated</strong> if $\bigcap_n I^nM=0$, and <strong>$I$-adically complete</strong> if $\iota$ is an isomorphism, equivalently if every coherent sequence $(m_n)$ with $m_n \in M/I^nM$ and $m_{n+1} \equiv m_n \bmod I^nM$ is the sequence of truncations of a unique element of $M$. No distance and no topology is used: separatedness and completeness are statements about the filtration.</p>
+<p><strong>Example.</strong> Take $R=\mathbb{Z}$ and $I=(p)$. Then $\varprojlim_n \mathbb{Z}/p^n\mathbb{Z}=\mathbb{Z}_p$, the ring of $p$-adic integers, and the $I$-adic completion of $\mathbb{Z}$ is separated and complete, and the natural map $\mathbb{Z} \to \mathbb{Z}_p$ is injective. Similarly, for $R=k[x]$ and $I=(x)$, the completion is the formal power series ring $k[[x]]=\varprojlim_n k[x]/(x^n)$.</p>
 <h3 id="exactness_1">Exactness</h3>
 <p><strong>Theorem.</strong> (i) Let $0 \to M' \xrightarrow{\ \alpha\ } M \xrightarrow{\ \beta\ } M'' \to 0$ be exact and put $K_n=\ker(M'/I^nM' \to M/I^nM)$. Then the completed sequence</p>
 <p>$$
@@ -101,7 +101,7 @@ $$</p>
 <h3 id="flatness-and-the-localglobal-picture">Flatness and the Local–Global Picture</h3>
 <p><strong>Theorem (Krull).</strong> Let $R$ be Noetherian, $I \subseteq R$ an ideal and $M$ a finitely generated $R$-module. Then $\bigcap_n I^nM$ consists of the elements annihilated by $1+i$ for some $i \in I$. In particular, if $R$ is a Noetherian local ring with maximal ideal $\mathfrak m$ and $M$ is finitely generated, then $M$ is $\mathfrak m$-adically separated, so $M \hookrightarrow \widehat M$.</p>
 <p><em>Proof.</em> The statement is Krull's intersection theorem, quoted as standard; its proof uses the Artin–Rees lemma and the Nakayama lemma. $\square$</p>
-<p><strong>Corollary.</strong> Let $R$ be Noetherian and $M$ finitely generated. Then (i) $\widehat M \cong \widehat R \otimes_R M$ and $\widehat R$ is flat over $R$; (ii) completion is exact on finitely generated modules; (iii) $\widehat M$ is a finitely generated $\widehat R$-module, and $\widehat R$ is a Noetherian local ring when $R$ is local; (iv) $\widehat M$ is complete for the $I$-adic topology.</p>
+<p><strong>Corollary.</strong> Let $R$ be Noetherian and $M$ finitely generated. Then (i) $\widehat M \cong \widehat R \otimes_R M$ and $\widehat R$ is flat over $R$; (ii) completion is exact on finitely generated modules; (iii) $\widehat M$ is a finitely generated $\widehat R$-module, and $\widehat R$ is a Noetherian local ring when $R$ is local; (iv) $\widehat M$ is complete for the $I$-adic filtration.</p>
 <p><em>Proof.</em> All four are standard consequences of Artin–Rees and Krull's theorem, quoted from the commutative algebra literature. $\square$</p>
 <h2 id="behaviour-under-closure-of-the-base">Behaviour under Closure of the Base</h2>
 <p><strong>Proposition (localisation of a localisation).</strong> For multiplicatively closed sets $S \subseteq T \subseteq R$ there is a natural isomorphism $T^{-1}M \cong (T^{-1}R) \otimes_{S^{-1}R} S^{-1}M$. In particular $S^{-1}$ and $T^{-1}$ may be composed, and the composite is a flat base change.</p>
@@ -179,14 +179,14 @@ $$</p>
 </tr>
 <tr>
 <td>$I^nM$</td>
-<td>neighbourhoods of zero in the $I$-adic topology</td>
+<td>the $I$-adic filtration of $M$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Michael F. Atiyah and Ian G. Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, 1969), for localisation, the local–global principles and completion.</li>
-<li>Nicolas Bourbaki, <em>Commutative Algebra: Chapters 1–7</em> (Springer, 1989), for flatness and the $I$-adic topology.</li>
+<li>Nicolas Bourbaki, <em>Commutative Algebra: Chapters 1–7</em> (Springer, 1989), for flatness and $I$-adic completion.</li>
 <li>David Eisenbud, <em>Commutative Algebra with a View Toward Algebraic Geometry</em> (Springer, 1995), for Artin–Rees, Krull's theorem and completion.</li>
 <li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, 1977), for completion as a base change and its flatness.</li>
 <li>Hideyuki Matsumura, <em>Commutative Ring Theory</em> (Cambridge University Press, 1989), for the local criteria and the completion of Noetherian rings.</li>

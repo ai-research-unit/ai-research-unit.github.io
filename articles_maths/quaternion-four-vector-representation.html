@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaternion Four-Vector Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quaternion-four-vector-representation"><strong>Quaternion Four-Vector Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion four-vector representation is the identification of a quaternion with the ordered quadruple of its four real coordinates. It is the simplest of the representations of the algebra and the one on which the others are read: the column vector of coordinates, its dual row vector, the component form of the product, the coordinate forms of the three involutions and of the scalar and vector subspaces, and the norm form as a sum of four positive squares. This article develops those identifications. It is the quaternion member of the family's coordinate-representation pair; its counterpart is the four-vector representation of the biquaternion algebra, where the four coordinates are complex and the norm form has an indefinite complex signature rather than four positive signs.</p>
+<p>The article is coordinate bookkeeping on the algebra fixed in <em>Quaternion Algebra</em>: the basis $(e_0,e_1,e_2,e_3)$, the multiplication rules, the conjugate and the scalar–vector decomposition are used as given. The matrix forms built from the coordinates are the subject of <em>Quaternion 4x4 Regular Matrix Representation</em> and <em>Quaternion 2x2 Matrix Representation</em>, and the subspaces in coordinates are from <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em>.</p>
+<p>The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the norm form are statements over $\mathbb{R}$, and they are flagged where they occur.</p>
+<p>Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\operatorname{Sc}(\tilde q) = q_0$ and $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the norm form is $N(\tilde q) = \tilde q\bar{\tilde q}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.</p>
+<h2 id="the-coordinate-vector">The Coordinate Vector</h2>
+<p><strong>Definition.</strong> The <strong>coordinate map</strong> sends $\tilde q = \sum_{\mu=0}^{3}q_\mu e_\mu$ to the quadruple</p>
+<p>$$
+\varphi(\tilde q) = (q_0,q_1,q_2,q_3)\in F^4 .
+$$</p>
+<p><strong>Theorem.</strong> The map $\varphi$ is an isomorphism of $F$-vector spaces, and the basis $(e_0,e_1,e_2,e_3)$ is sent to the standard basis $(1,0,0,0),\dots,(0,0,0,1)$. Consequently addition and scalar multiplication are computed coordinatewise.</p>
+<p><em>Proof.</em> The map is the unique $F$-linear map sending each basis element to the corresponding standard basis element; it is bijective by the definition of a basis. $\square$</p>
+<p><strong>Definition.</strong> The <strong>column vector</strong> of $\tilde q$ is</p>
+<p>$$
+[\tilde q] = \begin{pmatrix} q_0 \\ q_1 \\ q_2 \\ q_3 \end{pmatrix},
+$$</p>
+<p>and the <strong>dual row vector</strong> is $[\tilde q]^{T} = (q_0\ q_1\ q_2\ q_3)$.</p>
+<p><strong>Proposition.</strong> The dual row vector acts on the column vector by matrix multiplication with the standard Euclidean inner product,</p>
+<p>$$
+[\tilde q]^{T}[p] = q_0p_0+q_1p_1+q_2p_2+q_3p_3 = \operatorname{Sc}(\tilde q\bar p),
+$$</p>
+<p>and it is the coordinate expression of the inner product of <em>Quaternion Norm and Invertibility</em>.</p>
+<h2 id="multiplication-in-components">Multiplication in Components</h2>
+<p><strong>Theorem.</strong> The product of $p = p_0+\mathbf{p}$ and $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, in components, is given by the scalar and vector parts</p>
+<p>$$
+\operatorname{Sc}(pq) = p_0q_0 - \langle\mathbf{p},\mathbf{q}\rangle, \qquad
+\operatorname{Vect}(pq) = p_0\mathbf{q} + q_0\mathbf{p} + \mathbf{p}\times\mathbf{q},
+$$</p>
+<p>that is, in coordinates,</p>
+<p>$$
+(pq)_0 = p_0q_0 - p_1q_1 - p_2q_2 - p_3q_3, \qquad
+\begin{aligned}
+(pq)_1 &= p_0q_1 + p_1q_0 + p_2q_3 - p_3q_2, \\
+(pq)_2 &= p_0q_2 - p_1q_3 + p_2q_0 + p_3q_1, \\
+(pq)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0 .
+\end{aligned}
+$$</p>
+<p><em>Proof.</em> Expanding $(p_0+\mathbf{p})(q_0+\mathbf{q})$ and using $\mathbf{p}\mathbf{q} = -\langle\mathbf{p},\mathbf{q}\rangle+\mathbf{p}\times\mathbf{q}$ gives the scalar and vector parts; the coordinate formulas are the coordinate form of the inner product and the standard cross product, whose components are $(p_2q_3-p_3q_2,\ p_3q_1-p_1q_3,\ p_1q_2-p_2q_1)$. $\square$</p>
+<p><strong>Proposition.</strong> The scalar part of the product is symmetric and the vector part is neither symmetric nor antisymmetric as a whole: the symmetric part of the vector component is $p_0\mathbf{q}+q_0\mathbf{p}$ and the antisymmetric part is the cross product $\mathbf{p}\times\mathbf{q}$.</p>
+<p><em>Proof.</em> The scalar formula is symmetric in $p$ and $\tilde q$; in the vector formula the terms $p_0\mathbf{q}+q_0\mathbf{p}$ exchange under the swap while the cross product changes sign. $\square$</p>
+<p><strong>Remark.</strong> The four coordinate functions of the product are the components of the matrix product $L_p[\tilde q]$ with the left regular matrix $L_p$ of <em>Quaternion 4x4 Regular Matrix Representation</em>, so the coordinate multiplication rule and the left regular representation carry the same information in different notation.</p>
+<h2 id="the-three-involutions-in-coordinates">The Three Involutions in Coordinates</h2>
+<p><strong>Theorem.</strong> The three involutions act on the coordinate vector by the diagonal sign matrices</p>
+<p>$$
+\varphi(\bar{\tilde q}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
+\varphi(-\bar{\tilde q}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
+\varphi(-\tilde q) = -[\tilde q] .
+$$</p>
+<p><em>Proof.</em> Quaternion conjugation negates the three vector coordinates; vector conjugation negates the scalar coordinate; total conjugation is the negation of all four. $\square$</p>
+<p><strong>Corollary.</strong> The scalar subspace is the coordinate set $q_1 = q_2 = q_3 = 0$, the vector subspace is the set $q_0 = 0$, and the two are the $\pm1$ eigenspaces of the first two sign matrices. The composition of the three involutions generates the Klein four-group of sign changes described in <em>Worked Examples in the Quaternion Algebra</em>.</p>
+<h2 id="the-subspaces-in-coordinates">The Subspaces in Coordinates</h2>
+<p><strong>Definition.</strong> The <strong>scalar coordinate</strong> is $q_0$ and the <strong>vector coordinates</strong> are $(q_1,q_2,q_3)$.</p>
+<p><strong>Theorem.</strong> In coordinates the scalar subspace is the first coordinate axis $\{(q_0,0,0,0)\}$ and the vector subspace is the hyperplane $\{(0,q_1,q_2,q_3)\}$, and</p>
+<p>$$
+\mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}, \qquad
+F^4 = \varphi(\mathbb{R}_{\mathbb{H}})\oplus\varphi(\operatorname{Im}\mathbb{H})
+$$</p>
+<p>is the orthogonal decomposition, in the algebra and in coordinates, into the two summands.</p>
+<p><em>Proof.</em> The conditions are the coordinate forms of $\mathbf{q} = 0$ and $q_0 = 0$; orthogonality of the two coordinate images is $q_0\cdot 0+0\cdot(q_1+q_2+q_3) = 0$ for the standard inner product. $\square$</p>
+<p><strong>Proposition.</strong> On the vector coordinates the product law reduces to the scalar and vector products of three-dimensional vector analysis: the scalar coordinate of the product of two vectors is minus the inner product, and the three vector coordinates are the components of the cross product.</p>
+<p><em>Proof.</em> Set $p_0 = q_0 = 0$ in the component formula; the scalar becomes $-p_1q_1-p_2q_2-p_3q_3$ and the vector part becomes the cross product. $\square$</p>
+<h2 id="the-norm-form-in-coordinates">The Norm Form in Coordinates</h2>
+<p><strong>Theorem.</strong> The norm form in coordinates is the sum of the four squares of the coordinates,</p>
+<p>$$
+N(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = [\tilde q]^{T}[\tilde q],
+$$</p>
+<p>and the associated bilinear form is the standard Euclidean inner product $\operatorname{Sc}(p\bar{\tilde q}) = [p]^{T}[\tilde q]$.</p>
+<p><em>Proof.</em> $\tilde q\bar{\tilde q} = (q_0+\mathbf{q})(q_0-\mathbf{q}) = q_0^2-\mathbf{q}^2 = q_0^2+N(\mathbf{q}) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\operatorname{Sc}(p\bar{\tilde q})$. $\square$</p>
+<p><strong>Corollary.</strong> Over $F = \mathbb{R}$ the norm form is positive definite, the coordinate map is an isometry $\mathbb{H}\to\mathbb{R}^4$, and the modulus is the Euclidean length $|\tilde q| = \sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$. In particular the four signs of the norm form are all positive.</p>
+<p><em>Proof.</em> The sum of four squares of real numbers is non-negative and vanishes only at the origin; the remaining statements are the definitions. $\square$</p>
+<h2 id="relation-to-the-biquaternion-four-vector-representation">Relation to the Biquaternion Four-Vector Representation</h2>
+<p>In the biquaternion algebra the four coordinates are complex numbers and the coordinate map is an isomorphism $\mathbb{B}\to\mathbb{C}^4$; the four-vector representation there carries the complex conjugate on each coordinate and an indefinite norm form, because the complex norm is not positive. The two representations share their bookkeeping — the coordinate vector, the dual row, the component product and the two subspaces — and differ in the field of the coordinates and in the sign pattern of the norm form.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coordinate field</td>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{C}$</td>
+</tr>
+<tr>
+<td>Coordinates of $\tilde q$</td>
+<td>four reals $q_0,q_1,q_2,q_3$</td>
+<td>four complex numbers</td>
+</tr>
+<tr>
+<td>Additional conjugation</td>
+<td>none</td>
+<td>complex conjugation of each coordinate</td>
+</tr>
+<tr>
+<td>Norm form</td>
+<td>$\sum_\mu q_\mu^2$</td>
+<td>$\sum_\mu q_\mu^2$ with complex $q_\mu$</td>
+</tr>
+<tr>
+<td>Sign pattern of $N$</td>
+<td>four positive signs</td>
+<td>indefinite, values in $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>Inner product</td>
+<td>Euclidean, positive definite</td>
+<td>Hermitian, indefinite</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table makes the point of the comparison: the quaternion coordinate description is the real one, with four positive signs, and it becomes the biquaternion description by extending the coordinate field. The extra structure of the biquaternion case — the further conjugation and the indefinite form — is exactly what the complexification supplies, and it is not available over $\mathbb{R}$. The biquaternion account is in <em>Biquaternion Four-Vector Representation</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The four-vector representation identifies a quaternion with the quadruple of its coordinates in the basis $(e_0,e_1,e_2,e_3)$; the column vector $[\tilde q]$ and the dual row $[\tilde q]^T$ carry the algebra, the row acting on the column by the Euclidean inner product $\operatorname{Sc}(\tilde q\bar p)$. The product is computed in components by $(pq)_0 = p_0q_0-\langle\mathbf{p},\mathbf{q}\rangle$ and $(pq)_k$ the three components of $p_0\mathbf{q}+q_0\mathbf{p}+\mathbf{p}\times\mathbf{q}$, so that the coordinate rule is the three-dimensional scalar and vector product extended by the scalar coordinates.</p>
+<p>The three involutions are the diagonal sign matrices $\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{diag}(-1,1,1,1)$ and $-I$, whose fixed coordinate sets are the first axis, the hyperplane $q_0 = 0$ and the origin. The scalar and vector subspaces are the first axis and that hyperplane, an orthogonal decomposition of the coordinate space, and the norm form is the sum of the four positive squares $[\tilde q]^T[\tilde q]$.</p>
+<p>The biquaternion four-vector representation has the same shape over the complex field, with four complex coordinates, an additional coordinatewise conjugation and an indefinite norm form. The quaternion case is the real case, and its four positive signs are the whole of the difference.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The quaternion algebra</td>
+</tr>
+<tr>
+<td>$F$</td>
+<td>Base field; $\mathbb{R}$ for the positive-definite statements</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
+<td>Quaternion with coordinates $q_\mu$</td>
+</tr>
+<tr>
+<td>$\varphi : \mathbb{H}\to F^4$</td>
+<td>Coordinate isomorphism</td>
+</tr>
+<tr>
+<td>$[\tilde q] = (q_0,q_1,q_2,q_3)^T$</td>
+<td>Column vector of coordinates</td>
+</tr>
+<tr>
+<td>$[\tilde q]^{T} = (q_0\ q_1\ q_2\ q_3)$</td>
+<td>Dual row vector</td>
+</tr>
+<tr>
+<td>$[\tilde q]^{T}[p] = \operatorname{Sc}(\tilde q\bar p)$</td>
+<td>Euclidean inner product in coordinates</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>Matrix of quaternion conjugation</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(-1,1,1,1)$</td>
+<td>Matrix of vector conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$</td>
+<td>Scalar axis and vector hyperplane in coordinates</td>
+</tr>
+<tr>
+<td>$N(\tilde q) = \sum_{\mu=0}^{3}q_\mu^2 = [\tilde q]^{T}[\tilde q]$</td>
+<td>Norm form, four positive signs</td>
+</tr>
+<tr>
+<td>$\mathbf{p}\times\mathbf{q}$</td>
+<td>Cross product in the vector coordinates</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra, four complex coordinates, indefinite form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original coordinate treatment of quaternion multiplication.</li>
+<li>Peter Guthrie Tait, <em>An Elementary Treatise on Quaternions</em> (Cambridge University Press, 3rd ed. 1890), for coordinate computations with the vector product.</li>
+<li>Josiah Willard Gibbs and Edwin Bidwell Wilson, <em>Vector Analysis</em> (Scribner, 1901), for the scalar and vector products recovered from the coordinate rule.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the coordinate and matrix descriptions of the quaternion algebra.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge University Press, 2003), for the component form of quaternion and Clifford products.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -53,7 +53,7 @@
         <h1 id="real-harmonic-analysis"><strong>Real Harmonic Analysis</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces harmonic analysis on the real line and on Euclidean space as the study of the Fourier transform, convolution, and the function spaces on which they act. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. Only the real analysis of the companion article is assumed; Lebesgue measure and integration are used throughout, and no complex analysis and no abstract topology are invoked. The Fourier transform is normalized so that the factor $2\pi$ sits in the exponent and no prefactor appears in either the transform or its inverse:</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The real analysis of the companion article <em>Real Analysis</em>, together with Lebesgue measure and integration, is assumed; no abstract topology is invoked. Complex analysis enters only through the elementary identity theorem for holomorphic functions in the qualitative uncertainty principle. The Fourier transform is normalized so that the factor $2\pi$ sits in the exponent and no prefactor appears in either the transform or its inverse:</p>
 <p>$$
 \hat{f}(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i \xi x} \, dx.
 $$</p>
@@ -236,7 +236,7 @@ $$</p>
 \frac{1}{p} = \frac{1 - \theta}{p_0} + \frac{\theta}{p_1}, \qquad \frac{1}{q} = \frac{1 - \theta}{q_0} + \frac{\theta}{q_1}.
 $$</p>
 <p>Then $T$ is bounded from $L^p$ to $L^q$ with norm at most $M_0^{1 - \theta} M_1^{\theta}$.</p>
-<p>The conclusion holds for sublinear operators as well, by the same three-lines argument applied to an analytic family $z \mapsto \langle T f_z, g_z \rangle$ built from $L^p$ functions with suitable complex exponents.</p>
+<p>The conclusion holds for sublinear operators as well; the extension of the theorem to sublinear operators is standard.</p>
 <h3 id="the-hausdorffyoung-theorem">The Hausdorff–Young Theorem</h3>
 <p><strong>Theorem (Hausdorff–Young).</strong> Let $1 \le p \le 2$ and let $q$ be the conjugate exponent, $\frac{1}{p} + \frac{1}{q} = 1$. If $f \in L^p(\mathbb{R}^n)$, then $\hat{f} \in L^q(\mathbb{R}^n)$ and</p>
 <p>$$
@@ -317,8 +317,8 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Symbol</th>
-<th>Meaning</th>
+<th>symbol</th>
+<th>meaning</th>
 </tr>
 </thead>
 <tbody>
@@ -369,10 +369,6 @@ $$</p>
 <tr>
 <td>$Hf$</td>
 <td>Hilbert transform</td>
-</tr>
-<tr>
-<td>$R_j$</td>
-<td>Riesz transform</td>
 </tr>
 <tr>
 <td>$S f$</td>

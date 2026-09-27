@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual-Numbers Norm and Invertibility — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dual-numbers-norm-and-invertibility"><strong>Dual-Numbers Norm and Invertibility</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the norm form of the dual-number algebra and the invertibility of its elements. It follows the base article <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the two conjugations, the two distinguished submodules and the maximal ideal $\mathfrak{m} = (\varepsilon)$. The goal here is to define the norm form and the Euclidean form, to establish the criterion for invertibility, to describe the group of units and its structure, and to record the three-way classification of the elements.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, the algebra is $\mathbb{D}'_R$, and $\mathbb{D}$ denotes the split complex algebra $\mathbb{R}[j]$, $j^2 = +1$. A general dual number is written</p>
+<p>$$
+Z = a + \varepsilon b, \qquad a, b \in R,
+$$</p>
+<p>with real part $a = \operatorname{Re} Z$ and infinitesimal part $b = \operatorname{Inf} Z$. Dual conjugation is written $\bar{Z} = a - \varepsilon b$ and the identity conjugation $\operatorname{id}(Z) = Z$. When $R = \mathbb{R}$ we write $\mathbb{D}'$ for $\mathbb{D}'_{\mathbb{R}}$, and $\mathfrak{m} = \varepsilon\mathbb{R}$ is the maximal ideal. Every numerical value displayed below was recomputed in exact rational arithmetic.</p>
+<p>The base is the commutative ring, not the field: the criterion for invertibility is stated for an arbitrary commutative $R$, and the places where a field, or invertibility of $2$, is needed are flagged. The default specialisation for the geometric statements is $R = \mathbb{R}$.</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>norm form</strong> of a dual number $Z = a + \varepsilon b$ is</p>
+<p>$$
+N(Z) = Z\bar{Z} = (a + \varepsilon b)(a - \varepsilon b) = a^2.
+$$</p>
+<p>It is an element of $R$, and it takes its value in the real submodule $R_{\mathbb{D}'}$.</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Proposition.</strong> Let $Z = a + \varepsilon b$ and $W = c + \varepsilon d$.</p>
+<ul>
+<li><strong>Dependence on the real part alone.</strong> $N(Z) = a^2$ does not involve the infinitesimal part $b$; equivalently, $N(Z + \eta) = N(Z)$ for every $\eta \in \mathfrak{m}$.</li>
+<li><strong>Invariance under dual conjugation.</strong> $N(\bar{Z}) = N(Z)$, since $(-b)^2 = b^2$ plays no role and the real part is unchanged.</li>
+<li><strong>Sign.</strong> Over an ordered ring $R$ the value $a^2$ is non-negative, and $N(Z) = 0$ if and only if $a = 0$.</li>
+<li><strong>Vanishing locus.</strong> Over a field, $N(Z) = 0$ if and only if $Z \in \mathfrak{m} = (\varepsilon)$.</li>
+</ul>
+<p><strong>Proof.</strong> The first two are immediate from $N(Z) = a^2$. For the third, $a^2 \ge 0$ in an ordered ring and $a^2 = 0$ forces $a = 0$ in a domain. For the fourth, $a^2 = 0$ with $a$ in a field gives $a = 0$, that is $Z = \varepsilon b \in \mathfrak{m}$. $\square$</p>
+<p>The norm form is <strong>degenerate</strong>: it is a quadratic form of rank one on the two-dimensional free module $\mathbb{D}'_R$, and its radical is the line $\mathfrak{m} = \varepsilon R_{\mathbb{D}'}$. Degeneracy in this article always means that the associated bilinear form has nonzero radical, and the radical is the maximal ideal.</p>
+<h3 id="multiplicativity">Multiplicativity</h3>
+<p><strong>Theorem.</strong> The norm form is multiplicative:</p>
+<p>$$
+N(ZW) = N(Z)\,N(W).
+$$</p>
+<p><strong>Proof.</strong> With $Z = a + \varepsilon b$ and $W = c + \varepsilon d$ one has $ZW = a c + (a d + b c)\varepsilon$, so</p>
+<p>$$
+N(ZW) = (a c)^2 = a^2c^2 = N(Z)N(W).
+$$</p>
+<p>The identity $(a c)^2 = a^2c^2$ holds in every commutative ring. $\square$</p>
+<p><strong>Corollary.</strong> If $N(Z) \neq 0$ and $N(W) \neq 0$, then $N(ZW) \neq 0$.</p>
+<p><strong>Corollary.</strong> If $N(Z) = 0$ or $N(W) = 0$, then $N(ZW) = 0$. In particular the product of an element of the maximal ideal with any dual number lies in the maximal ideal, since $\mathfrak{m}$ is a two-sided ideal.</p>
+<p><strong>Remark.</strong> Multiplicativity is the reason for the name, and it survives the degeneracy: the norm form is a <em>ring homomorphism</em> from $\mathbb{D}'_R$ to the multiplicative monoid of $R$, whose kernel is the maximal ideal. It is the degenerate analogue of the modulus of a complex number.</p>
+<h3 id="the-norm-form-as-a-degenerate-form">The Norm Form as a Degenerate Form</h3>
+<p>The norm form is a norm only in a qualified sense, and it is worth recording which of the usual axioms survive.</p>
+<ul>
+<li>The <strong>sign axiom</strong> holds: $N(-Z) = N(Z)$ over any commutative ring.</li>
+<li>The <strong>triangle inequality</strong> has no content: $N$ takes values in $R$, which carries no order in general, and even over $\mathbb{R}$ the value $N(Z)$ is a square, not a length.</li>
+<li>The <strong>scaling axiom</strong> holds in its quadratic form, $N(\lambda Z) = \lambda^2 N(Z)$ for $\lambda \in R$, and this is the only homogeneity the form has.</li>
+<li>The <strong>non-degeneracy axiom fails</strong>: $N(Z) = 0$ for every nonzero $Z \in \mathfrak{m}$.</li>
+</ul>
+<p>So the norm form is a degenerate multiplicative quadratic form, homogeneous of degree two, whose vanishing locus is the maximal ideal. It is not a norm in the analytic sense, and the Euclidean form of the next section is the analytic quantity that the norm form is not.</p>
+<h3 id="the-reduction-of-the-scale-to-math74">The Reduction of the Scale to $|a|$</h3>
+<p>There is nevertheless a genuine real size function on the units, singled out by the norm form. Let $\rho : (\mathbb{D}'_{\mathbb{R}})^\times \to \mathbb{R}_{>0}$ be a continuous multiplicative function, normalised on the real scalars by</p>
+<p>$$
+\rho(\lambda) = |\lambda| \qquad \text{for } \lambda \in \mathbb{R}^\times.
+$$</p>
+<p><strong>Theorem.</strong> The function</p>
+<p>$$
+r(Z) = |a| = \sqrt{|N(Z)|}
+$$</p>
+<p>is a continuous multiplicative real size function on the units, normalised on the real scalars, and it is invariant under the parabolic one-parameter subgroup, $r(Z(1 + t\varepsilon)) = r(Z)$ for every $t \in \mathbb{R}$. It is the unique such function with that invariance.</p>
+<p><strong>Proof.</strong> Multiplicativity is $N(ZW) = N(Z)N(W)$ together with $r = \sqrt{|N|}$, and continuity is the continuity of $a \mapsto |a|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $Z(1 + t\varepsilon) = a + (b + ta)\varepsilon$ has the same real part $a$, so $r(Z(1 + t\varepsilon)) = |a| = r(Z)$. For uniqueness, by <em>Shears and Parabolic Rotations</em> every unit is $a(1 + s\varepsilon)$ with $a \in \mathbb{R}^\times$ and $s = a^{-1}b$; the shear invariance gives $r(a + \varepsilon b) = r(a)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$. $\square$</p>
+<p>So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm form supplies a genuine positive scale via $r = \sqrt{|N|}$, and it is the only scale fixed by the shear. The biquaternion article <em>Biquaternion Norm and Invertibility</em> proves the analogous statement with $r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|}$; the dual case is the rank-one degeneration of it, in which the square root is the square root of a square.</p>
+<p><strong>Remark (the shear condition is needed).</strong> Invariance under the shear is not automatic, and without it the scale is not unique. For each real $c$, the function</p>
+<p>$$
+\rho_c(a + \varepsilon b) = |a|\,\exp\!\Bigl(c\,\frac{b}{a}\Bigr)
+$$</p>
+<p>is continuous on the units, multiplicative because the shear parameter is additive, $\rho_c(ZW) = \rho_c(Z)\rho_c(W)$, and normalised on the real scalars, where $b = 0$. These functions form a one-parameter family with $r = \rho_0$, and $r(Z) = |a|$ is exactly the member that is constant along the orbits of the parallel one-parameter subgroup $1 + \mathfrak{m}$. So the reduction of the scale to $|a|$ is the statement that the norm form fixes the scale to be blind to the nilpotent direction, which is the analytic face of the degeneracy of the form.</p>
+<h3 id="the-norm-form-from-the-two-components">The Norm Form from the Two Components</h3>
+<p>Writing $Z = Z_r + Z_i\varepsilon$ with $Z_r = a$ and $Z_i = b$ in $R$, the norm form depends on the two components only through the first:</p>
+<p>$$
+N(Z) = Z_r^2.
+$$</p>
+<p>The Euclidean form of the next section is the sum of squares of the two components, and the contrast between the two is the whole content of the degeneracy.</p>
+<h2 id="the-euclidean-form">The Euclidean Form</h2>
+<h3 id="definition_1">Definition</h3>
+<p><strong>Definition.</strong> The <strong>Euclidean form</strong> of a dual number is the real quadratic form</p>
+<p>$$
+q(Z) = a^2 + b^2,
+$$</p>
+<p>the <strong>Euclidean inner product</strong> of two dual numbers $Z = a + \varepsilon b$ and $W = c + \varepsilon d$ is</p>
+<p>$$
+\langle Z, W \rangle = a c + b d,
+$$</p>
+<p>and the <strong>Euclidean norm</strong> is</p>
+<p>$$
+\|Z\|_E = \sqrt{a^2 + b^2}.
+$$</p>
+<p>Over $R = \mathbb{R}$ this is the ordinary Euclidean structure of the plane $\mathbb{D}' \cong \mathbb{R}^2$ in dual coordinates.</p>
+<h3 id="properties">Properties</h3>
+<p><strong>Proposition.</strong> The Euclidean form is positive-definite over an ordered ring and satisfies $\langle Z, Z \rangle = q(Z)$. It is <strong>not</strong> multiplicative with respect to the dual product:</p>
+<p>$$
+q(ZW) = (a c)^2 + (a d + b c)^2, \qquad q(Z)q(W) = (a^2 + b^2)(c^2 + d^2),
+$$</p>
+<p>and the two agree only when $a d + b c = \pm(a c - b d)$, which is not an identity.</p>
+<p><strong>Proof.</strong> Substituting the components of $ZW$ gives the first expression; it is not the product of the two squares, as the example $Z = W = 1 + \varepsilon$ shows: $q(ZW) = q(1 + 2\varepsilon) = 5$ while $q(Z)q(W) = 2 \cdot 2 = 4$. $\square$</p>
+<h3 id="relation-between-the-norm-form-and-the-euclidean-form">Relation Between the Norm Form and the Euclidean Form</h3>
+<p>The two forms are distinct and play different roles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Norm form $N$</th>
+<th>Euclidean form $q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>$a^2$</td>
+<td>$a^2 + b^2$</td>
+</tr>
+<tr>
+<td>Multiplicative</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Degenerate</td>
+<td>yes, radical $\mathfrak{m}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Sign over $\mathbb{R}$</td>
+<td>non-negative</td>
+<td>positive-definite</td>
+</tr>
+<tr>
+<td>Controls</td>
+<td>the multiplicative structure</td>
+<td>the topology</td>
+</tr>
+</tbody>
+</table></div>
+<p>The inner product is <strong>not</strong> the real part of $Z\bar{W}$; indeed</p>
+<p>$$
+Z\bar{W} = (a + \varepsilon b)(c - \varepsilon d) = a c + (b c - a d)\varepsilon, \qquad \operatorname{Re}(Z\bar{W}) = a c,
+$$</p>
+<p>which is the polarisation of the degenerate norm form $N$ and not of the Euclidean form. The distinction between $a c$ and $a c + b d$ is the distinction between the multiplicative and the topological structures on the plane.</p>
+<h2 id="invertibility">Invertibility</h2>
+<h3 id="definition_2">Definition</h3>
+<p><strong>Definition.</strong> A dual number $Z$ is <strong>invertible</strong> if there exists $W$ with $ZW = WZ = 1$. The element $W$, if it exists, is the <strong>inverse</strong> of $Z$ and is denoted $Z^{-1}$.</p>
+<p>Since $\mathbb{D}'_R$ is commutative there is no distinction between left, right and two-sided inverses.</p>
+<h3 id="criterion-for-invertibility">Criterion for Invertibility</h3>
+<p><strong>Theorem.</strong> Let $Z = a + \varepsilon b \in \mathbb{D}'_R$. The following are equivalent.</p>
+<ol>
+<li>$Z$ is invertible.</li>
+<li>$a$ is a unit of $R$.</li>
+<li>$N(Z) = a^2$ is a unit of $R$.</li>
+<li>The residue class of $Z$ in the quotient ring $\mathbb{D}'_R/\mathfrak{m} \cong R$ is a unit of $R$.</li>
+</ol>
+<p>Over a field, the criterion reads: $Z$ is invertible if and only if $a \neq 0$, that is, if and only if $N(Z) \neq 0$.</p>
+<p><strong>Proof.</strong> If $a \in R^\times$, set $W = a^{-1} - a^{-2}\varepsilon b$. Then</p>
+<p>$$
+ZW = (a + \varepsilon b)(a^{-1} - a^{-2}\varepsilon b) = a a^{-1} + \bigl(-a^{-1}b + b a^{-1}\bigr)\varepsilon = 1,
+$$</p>
+<p>so $Z$ is invertible, and (1) follows from (2). Since $a^2 \in R^\times$ exactly when $a \in R^\times$, (2) and (3) are equivalent. Conversely, if $ZW = 1$ for some $W = c + \varepsilon d$, then comparing real parts gives $a c = 1$, so $a \in R^\times$, giving (2) from (1). The equivalence with the residue condition is the definition of $\mathfrak{m} = (\varepsilon)$ together with the computation just made. Over a field, $a \in R^\times$ means $a \neq 0$. $\square$</p>
+<h3 id="the-inverse-formula">The Inverse Formula</h3>
+<p><strong>Corollary.</strong> When $Z$ is invertible,</p>
+<p>$$
+Z^{-1} = \frac{1}{a} - \frac{b}{a^2}\,\varepsilon.
+$$</p>
+<p>This is the degeneration of the complex formula $Z^{-1} = \bar{Z}/|Z|^2$: the conjugate is $\bar{Z} = a - \varepsilon b$ and the "modulus squared" is $N(Z) = a^2$, so $\bar{Z}/N(Z) = (a - \varepsilon b)/a^2$, which is the inverse above.</p>
+<p><strong>Corollary.</strong> If $Z$ is invertible then so is $\bar{Z}$, and $\overline{Z^{-1}} = (\bar{Z})^{-1}$.</p>
+<p><strong>Proof.</strong> Direct from the formula. $\square$</p>
+<h2 id="the-group-of-units">The Group of Units</h2>
+<h3 id="definition_3">Definition</h3>
+<p><strong>Definition.</strong> The <strong>group of units</strong> of $\mathbb{D}'_R$ is</p>
+<p>$$
+(\mathbb{D}'_R)^\times = \{a + \varepsilon b : a \in R^\times\}.
+$$</p>
+<p>It is a group under multiplication with identity $1$.</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Proposition.</strong> Over a field, the group of units is the complement of the maximal ideal, $(\mathbb{D}'_k)^\times = \mathbb{D}'_k \setminus \mathfrak{m}$, and over $R = \mathbb{R}$ it is an open, dense subset of the plane $\mathbb{D}'$ with exactly two connected components, distinguished by the sign of the real part.</p>
+<p><strong>Proof.</strong> Over a field the complement statement is the invertibility criterion $a \neq 0$. Over a general commutative ring the unit group is the smaller set $\{a + \varepsilon b : a \in R^\times\}$, the preimage of $R^\times$ under $\operatorname{Re}$. Openness and density over $\mathbb{R}$ follow from $\{a \neq 0\}$ being the complement of a line. The map $Z \mapsto \operatorname{sgn}(a)$ is a continuous surjection onto $\{\pm 1\}$ that is multiplicative, so there are at least two components; $\{a > 0\}$ and $\{a < 0\}$ are each homeomorphic to a half-plane and hence connected. $\square$</p>
+<h3 id="the-structure-as-a-semidirect-product">The Structure as a Semidirect Product</h3>
+<p><strong>Theorem.</strong> Let $R$ be a commutative ring with $2$ invertible. The map</p>
+<p>$$
+\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{D}'_R)^\times, \qquad \Theta(a, s) = a(1 + s\varepsilon),
+$$</p>
+<p>is an isomorphism of groups.</p>
+<p><strong>Proof.</strong> Every unit is $a(1 + s\varepsilon)$ with $a \in R^\times$ and $s = a^{-1}b$, uniquely, so $\Theta$ is a bijection. It is a homomorphism because</p>
+<p>$$
+\Theta(a,s)\Theta(c,t) = a(1 + s\varepsilon)\,c(1 + t\varepsilon) = a c\bigl(1 + (s + t)\varepsilon\bigr) = \Theta\bigl(a c,\, s + t\bigr),
+$$</p>
+<p>using $\varepsilon^2 = 0$ and the commutativity of $R$. $\square$</p>
+<p>So the group of units is the <strong>direct product</strong> $R^\times \times (R, +)$. Read as a semidirect product $R^\times \ltimes (R, +)$, the action of $R^\times$ on $(R, +)$ is trivial — because $\mathbb{D}'_R$ is commutative, the conjugation action of the first factor on the shear group $1 + \mathfrak{m}$ is trivial — so the semidirect structure degenerates to the direct product:</p>
+<p>$$
+(\mathbb{D}'_R)^\times \cong R^\times \times (R, +).
+$$</p>
+<p>The extension</p>
+<p>$$
+1 \longrightarrow (1 + \mathfrak{m}) \longrightarrow (\mathbb{D}'_R)^\times \longrightarrow R^\times \longrightarrow 1
+$$</p>
+<p>is split by $a \mapsto a$, and its kernel $1 + \mathfrak{m} = \{1 + s\varepsilon\}$ is the <strong>shear group</strong>, isomorphic to $(R, +)$ through $s \mapsto 1 + s\varepsilon$. Over $\mathbb{R}$ the group of units is $\mathbb{R}^\times \times \mathbb{R}$: abelian, two-dimensional, with two contractible components.</p>
+<h3 id="the-norm-one-group">The Norm-One Group</h3>
+<p><strong>Definition.</strong> The <strong>norm-one group</strong> is $H = \{Z \in \mathbb{D}'_{\mathbb{R}} : N(Z) = 1\}$.</p>
+<p><strong>Proposition.</strong> $H = \{a + \varepsilon b : a = \pm 1\}$ is the union of the two parallel lines of real part $\pm 1$; its identity component is $H_0 = 1 + \mathfrak{m}$, the shear group.</p>
+<p><strong>Proof.</strong> $N(a + \varepsilon b) = a^2 = 1$ gives $a = \pm 1$ and leaves $b$ free; the line $a = 1$ is $1 + \mathfrak{m}$, the component through the identity. $\square$</p>
+<h2 id="the-three-way-classification">The Three-Way Classification</h2>
+<h3 id="the-table">The Table</h3>
+<p>Over a field $k$, combining the criterion for invertibility with the vanishing of the norm form, the elements of $\mathbb{D}'_k$ fall into exactly three classes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition on $N(Z)$</th>
+<th>Condition on $Z$</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(Z) \neq 0$</td>
+<td>(automatically $Z \neq 0$)</td>
+<td>$Z$ is invertible</td>
+</tr>
+<tr>
+<td>$N(Z) = 0$</td>
+<td>$Z = 0$</td>
+<td>$Z$ is the zero element</td>
+</tr>
+<tr>
+<td>$N(Z) = 0$</td>
+<td>$Z \neq 0$</td>
+<td>$Z$ is a zero divisor</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third class is exactly $\mathfrak{m} \setminus \{0\}$; its elements are studied in <em>Dual-Numbers Zero Divisors</em>, and the ideals that organize the classification are studied in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
+<h3 id="the-algebra-is-not-a-division-algebra">The Algebra Is Not a Division Algebra</h3>
+<p>By definition, a <strong>division algebra</strong> is an algebra in which every nonzero element is invertible; for a finite-dimensional algebra this is equivalent to the absence of zero divisors. The dual algebra contains the nonzero nilpotent $\varepsilon$, which is a zero divisor; hence $\mathbb{D}'_R$ is <strong>not</strong> a division algebra whenever $\mathfrak{m} \neq 0$ (that is, whenever $\varepsilon \neq 0$ in the algebra).</p>
+<p>This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. The dual algebra is a two-dimensional commutative associative real algebra, and it is not among them because it is not a field.</p>
+<h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
+<p>The two distinguished submodules of $\mathbb{D}'_R$ behave oppositely with respect to invertibility.</p>
+<h3 id="the-real-submodule">The Real Submodule</h3>
+<p>An element of $R_{\mathbb{D}'}$ is $Z = a$ with $b = 0$, and $N(Z) = a^2$. Over a field, every nonzero element of $R_{\mathbb{D}'}$ is invertible, and $R_{\mathbb{D}'}$ is a subalgebra isomorphic to the field; it is the unique subalgebra of $\mathbb{D}'_R$ that is a division algebra.</p>
+<h3 id="the-infinitesimal-submodule">The Infinitesimal Submodule</h3>
+<p>An element of $\varepsilon R_{\mathbb{D}'} = \mathfrak{m}$ is $Z = \varepsilon b$ with $a = 0$, and $N(Z) = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-unit; the invertible elements meet $\mathfrak{m}$ in the empty set, and the zero divisors are exactly $\mathfrak{m} \setminus \{0\}$.</p>
+<h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
+<p>Over a field $k$ the distribution is as follows, the units being read off from $R^\times = k^\times$ and the zero-divisor column from the criterion of <em>Dual-Numbers Zero Divisors</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Submodule</th>
+<th>Elements</th>
+<th>$N$</th>
+<th>Units</th>
+<th>Zero divisors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_{\mathbb{D}'}$</td>
+<td>$a$, $a \in R$</td>
+<td>$a^2$</td>
+<td>all $a \in R^\times$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\varepsilon R_{\mathbb{D}'} = \mathfrak{m}$</td>
+<td>$\varepsilon b$, $b \in R$</td>
+<td>$0$</td>
+<td>none</td>
+<td>all $b \neq 0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two submodules are the eigenspaces of dual conjugation, and the distribution table is the algebraic statement that the norm form is a homomorphism whose kernel is exactly one of the two eigenspaces.</p>
+<h2 id="relation-to-the-conjugate-decomposition">Relation to the Conjugate Decomposition</h2>
+<p>The criterion is stated in terms of the norm form and the real part. In the conjugate decomposition</p>
+<p>$$
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Z = a + \varepsilon b,
+$$</p>
+<p>the norm form reads $N(Z) = (\operatorname{Re} Z)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. The biquaternion analogue, in which the four conjugations and their six subspaces control the distribution, is in <em>Biquaternion Norm and Invertibility</em>; in the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
+<h2 id="comparison-with-the-split-complex-and-biquaternion-cases">Comparison with the Split Complex and Biquaternion Cases</h2>
+<p>The three norm forms of the family are</p>
+<p>$$
+N_{\mathbb{C}}(Z) = a^2 + b^2, \qquad N_{\mathbb{D}}(Z) = a^2 - b^2, \qquad N_{\mathbb{D}'}(Z) = a^2,
+$$</p>
+<p>for $\mathbb{C}$, the split complex numbers $\mathbb{D} = \mathbb{R}[j]$ and the dual numbers. They are the three real binary quadratic forms of rank two, two and one respectively: positive-definite, indefinite non-degenerate, and degenerate.</p>
+<ul>
+<li>In $\mathbb{C}$ the norm never vanishes away from the origin, and every nonzero element is a unit; the norm-one group is the circle.</li>
+<li>In the split complex $\mathbb{D}$ the norm is indefinite, its null set is the pair of linear null directions on which the zero divisors live, and the norm-one group is a hyperbola, with two branches.</li>
+<li>In $\mathbb{D}'$ the norm is degenerate, its null set is the maximal ideal, a whole line, and the norm-one group is a pair of parallel lines.</li>
+</ul>
+<p>In the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ the norm form is complex-valued and multiplicative, and its vanishing locus is the zero-divisor cone, of real codimension two; the invertibility criterion is $N(\tilde{Q}) \neq 0$ and the group of units is $GL(2, \mathbb{C})$. The dual case is the rank-one member of this family: complex, split complex, dual, quaternion, split quaternion, biquaternion, split biquaternion. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the signature and the value ring of that form.</p>
+<h2 id="summary">Summary</h2>
+<p>The norm form $N(Z) = Z\bar{Z} = a^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathfrak{m} = (\varepsilon)$. It is not a norm in the analytic sense, and the Euclidean form $a^2 + b^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Z) = |a| = \sqrt{|N(Z)|}$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |a|\exp(c\,b/a)$.</p>
+<p>A dual number $Z = a + \varepsilon b$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $a \neq 0$, equivalently if and only if $N(Z) \neq 0$. The inverse is $Z^{-1} = a^{-1} - a^{-2}\varepsilon b$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathfrak{m}$; it is the split extension $1 \to (1 + \mathfrak{m}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathfrak{m}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathfrak{m} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm form imposes on the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$</td>
+<td>Dual-number algebra over $R$; $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$</td>
+<td>Dual-number algebra over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split-complex algebra, unit $j$, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$Z = a + \varepsilon b$</td>
+<td>General dual number</td>
+</tr>
+<tr>
+<td>$a = \operatorname{Re} Z$</td>
+<td>Real part</td>
+</tr>
+<tr>
+<td>$b = \operatorname{Inf} Z$</td>
+<td>Infinitesimal part</td>
+</tr>
+<tr>
+<td>$\bar{Z} = a - \varepsilon b$</td>
+<td>Dual conjugation</td>
+</tr>
+<tr>
+<td>$N(Z) = Z\bar{Z} = a^2$</td>
+<td>Norm form, degenerate, radical $\mathfrak{m}$</td>
+</tr>
+<tr>
+<td>$q(Z) = a^2 + b^2$</td>
+<td>Euclidean form</td>
+</tr>
+<tr>
+<td>$\langle Z, W \rangle = a c + b d$</td>
+<td>Euclidean inner product</td>
+</tr>
+<tr>
+<td>$\|Z\|_E = \sqrt{a^2 + b^2}$</td>
+<td>Euclidean norm</td>
+</tr>
+<tr>
+<td>$r(Z) = |a| = \sqrt{|N(Z)|}$</td>
+<td>Continuous multiplicative real size on the units, normalised on the scalars and shear-invariant</td>
+</tr>
+<tr>
+<td>$\rho_c(Z) = |a|\exp(c\,b/a)$</td>
+<td>The normalised multiplicative size functions; $r = \rho_0$</td>
+</tr>
+<tr>
+<td>$\mathfrak{m} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$</td>
+<td>Maximal ideal, kernel of $N$</td>
+</tr>
+<tr>
+<td>$R_{\mathbb{D}'}$</td>
+<td>Real submodule</td>
+</tr>
+<tr>
+<td>$(\mathbb{D}'_k)^\times = \mathbb{D}'_k \setminus \mathfrak{m}$</td>
+<td>Group of units, over a field $k$</td>
+</tr>
+<tr>
+<td>$1 + \mathfrak{m}$</td>
+<td>Shear group, kernel of $(\mathbb{D}'_R)^\times \to R^\times$</td>
+</tr>
+<tr>
+<td>$\Theta : R^\times \times (R,+) \to (\mathbb{D}'_R)^\times$</td>
+<td>Unit-group isomorphism, $\Theta(a,s) = a(1 + s\varepsilon)$</td>
+</tr>
+<tr>
+<td>$H = \{Z : N(Z) = 1\}$</td>
+<td>Norm-one group, lines $a = \pm 1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions", <em>Proceedings of the London Mathematical Society</em> <strong>4</strong> (1873) 381–395, for the origin of the dual numbers as a degenerate extension.</li>
+<li>Eduard Study, <em>Geometrie der Dynamen</em> (Teubner, Leipzig, 1903), for the degeneracy of the dual-number form and its geometry.</li>
+<li>I. M. Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, New York, 1968), for the dual numbers and their degenerate quadratic form alongside the complex and split-complex cases.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, Natick, 2003), for the classification of the two-dimensional real algebras by the sign of the square of the generator.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, Berlin, 1991), for the theory of degenerate quadratic forms, their radical, and their isometry groups.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, Providence, 2005), for the classification of quadratic forms by their radical.</li>
+<li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the complex-valued semi-norm and the unique real norm in the biquaternion case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

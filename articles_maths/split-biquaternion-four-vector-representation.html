@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Biquaternion Four-Vector Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-biquaternion-four-vector-representation"><strong>Split-Biquaternion Four-Vector Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A split biquaternion is an element $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with four <strong>split complex</strong> coefficients $Q_\mu \in \mathbb{D}$, and this article reads the algebra through those four coefficients: the coefficient space, the column and dual row presentations, the multiplication in components, the four conjugations as coordinate operations, the four distinguished subspaces as coefficient conditions, and the norm form with its two real restrictions. The construction is the split complex analogue of the four-vector representation of the biquaternions; the coefficient arithmetic is that of <em>Split-Complex Numbers</em>, and the algebra structure is that of <em>Split-Biquaternion Algebra</em>.</p>
+<p>The treatment is purely mathematical. No physics is invoked, and no Minkowski structure is imposed; the four coefficients are an algebraic device and the form they carry is the split complex norm form, not a spacetime metric.</p>
+<h2 id="the-coefficient-space">The Coefficient Space</h2>
+<p><strong>Definition.</strong> The <strong>coefficient space</strong> of $\mathbb{H}_{\mathbb{D}}$ is the free module $\mathbb{D}^4$ of quadruples $(Q_0, Q_1, Q_2, Q_3)$ of split complex numbers, with the corresponding isomorphism</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}} \longrightarrow \mathbb{D}^4 , \qquad \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longmapsto (Q_0, Q_1, Q_2, Q_3) .
+$$</p>
+<p>Each coefficient splits as $Q_\mu = q_\mu + j q'_\mu$ with real $q_\mu, q'_\mu$, so $\mathbb{D}^4$ is the real vector space $\mathbb{R}^8$ and the <strong>eight real coordinates</strong> of the algebra are $(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)$.</p>
+<h3 id="real-and-split-imaginary-parts-of-the-components">Real and Split-Imaginary Parts of the Components</h3>
+<p>Writing each coefficient through the idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ gives $Q_\mu = Q_{\mu +} \tilde\Pi_+ + Q_{\mu -} \tilde\Pi_-$ with</p>
+<p>$$
+Q_{\mu +} = q_\mu + q'_\mu , \qquad Q_{\mu -} = q_\mu - q'_\mu ,
+$$</p>
+<p>so the coefficient space is also the sum of two real four-dimensional spaces, the <strong>real part</strong> $q'_\mu = 0$ and the <strong>split-imaginary part</strong> $q_\mu = 0$. The passage from $(q_\mu, q'_\mu)$ to $(Q_{\mu+}, Q_{\mu-})$ is the diagonalisation of the split complex structure.</p>
+<h2 id="the-column-and-the-row">The Column and the Row</h2>
+<p>A split biquaternion is written either as a <strong>column</strong> of its coefficients,</p>
+<p>$$
+\tilde{Q} = \begin{pmatrix} Q_0 \\ Q_1 \\ Q_2 \\ Q_3 \end{pmatrix} ,
+$$</p>
+<p>or as the <strong>dual row</strong> $\tilde{Q}^{\mathsf{T}}$ of quaternion conjugation, obtained by transposing the column of conjugates; the pairing of a row and a column is the scalar part of the product. Because $\mathbb{D}$ is commutative, no distinction between left and right coefficients arises in the column description, and the linear maps of the algebra are the $4 \times 4$ matrices over $\mathbb{D}$, the split complex analogue of the $M_4(\mathbb{D})$ representation.</p>
+<h2 id="multiplication-in-four-vector-form">Multiplication in Four-Vector Form</h2>
+<p><strong>Proposition.</strong> In components, the product $\tilde P = \tilde{Q}\tilde{R}$ is given by</p>
+<p>$$
+P_0 = Q_0R_0 - Q_1R_1 - Q_2R_2 - Q_3R_3 , \qquad P_1 = Q_0R_1 + Q_1R_0 + Q_2R_3 - Q_3R_2 ,
+$$</p>
+<p>$$
+P_2 = Q_0R_2 - Q_1R_3 + Q_2R_0 + Q_3R_1 , \qquad P_3 = Q_0R_3 + Q_1R_2 - Q_2R_1 + Q_3R_0 ,
+$$</p>
+<p>the structure constants being those of the quaternion basis and the coefficients multiplying in the commutative algebra $\mathbb{D}$.</p>
+<p><strong>Proof.</strong> These are the standard quaternion multiplication formulas with the coefficients taken in $\mathbb{D}$; the multiplication is well defined because $\mathbb{D}$ is commutative and central. $\square$</p>
+<h3 id="the-multiplication-table-of-the-basis">The Multiplication Table of the Basis</h3>
+<p>The basis elements multiply as in the quaternion case,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$e_1$</td>
+<td>$-e_0$</td>
+<td>$e_3$</td>
+<td>$-e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$e_2$</td>
+<td>$-e_3$</td>
+<td>$-e_0$</td>
+<td>$e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$e_3$</td>
+<td>$e_2$</td>
+<td>$-e_1$</td>
+<td>$-e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>so that the four-vector multiplication is the quaternion multiplication generalised by the ring $\mathbb{D}$ of scalars. The four-vector form is thus the standard model of the algebra, and every algebraic operation below is the coordinate reading of an operation of the algebra.</p>
+<h2 id="the-conjugations-in-coordinates">The Conjugations in Coordinates</h2>
+<p>On the column $(Q_0,Q_1,Q_2,Q_3)$ the four conjugations act by:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>conjugation</th>
+<th>$Q_0$</th>
+<th>$Q_1$</th>
+<th>$Q_2$</th>
+<th>$Q_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$Q_0$</td>
+<td>$-Q_1$</td>
+<td>$-Q_2$</td>
+<td>$-Q_3$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$Q_0^{*}$</td>
+<td>$Q_1^{*}$</td>
+<td>$Q_2^{*}$</td>
+<td>$Q_3^{*}$</td>
+</tr>
+<tr>
+<td>${}^{\dagger}$</td>
+<td>$Q_0^{*}$</td>
+<td>$-Q_1^{*}$</td>
+<td>$-Q_2^{*}$</td>
+<td>$-Q_3^{*}$</td>
+</tr>
+<tr>
+<td>$\flat$</td>
+<td>$-Q_0^{*}$</td>
+<td>$Q_1^{*}$</td>
+<td>$Q_2^{*}$</td>
+<td>$Q_3^{*}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>That is, quaternion conjugation negates the three vector components and fixes the scalar one; split complex conjugation conjugates every coefficient; Hermitian conjugation is their composite; and anti-Hermitian conjugation is minus the Hermitian conjugate. The patterns in the four real coordinates $q_\mu$ and $q'_\mu$ are the sign patterns tabulated in <em>Split-Biquaternion Involution Lattice</em>.</p>
+<h2 id="the-four-distinguished-subspaces">The Four Distinguished Subspaces</h2>
+<p>The four distinguished subspaces appear as coefficient conditions:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>condition on coefficients</th>
+<th>real coordinates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</td>
+<td>$Q_1 = Q_2 = Q_3 = 0$</td>
+<td>$q_1,q_2,q_3,q'_1,q'_2,q'_3 = 0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$</td>
+<td>$Q_\mu \in \mathbb{R}$ for all $\mu$</td>
+<td>$q'_\mu = 0$ for all $\mu$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$Q_0 \in \mathbb{R}$, $Q_k \in j\mathbb{R}$</td>
+<td>$q'_0 = 0$, $q_k = 0$ for $k = 1,2,3$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$Q_0 \in j\mathbb{R}$, $Q_k \in \mathbb{R}$</td>
+<td>$q_0 = 0$, $q'_k = 0$ for $k = 1,2,3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The centre is the set of elements whose vector components vanish; the quaternion subspace is the real part of the coefficient space; the Hermitian subspace has real scalar component and split-imaginary vector components; the anti-Hermitian subspace has split-imaginary scalar component and real vector components. The four coordinate blocks of <em>Split-Biquaternion Relations Between Subspaces</em> are the coordinate sets selected by these conditions.</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<p><strong>Proposition.</strong> In the four-vector description the norm form is</p>
+<p>$$
+N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right) ,
+$$</p>
+<p>with real part the square of the Euclidean norm and split-imaginary part twice the inner product of the real and split-imaginary coordinate vectors.</p>
+<p><strong>Proof.</strong> Expand each $Q_\mu^2 = (q_\mu + j q'_\mu)^2 = q_\mu^2 + q'^2_\mu + 2j q_\mu q'_\mu$ and sum over $\mu$. $\square$</p>
+<p>The real part of the norm form is <strong>positive definite</strong>: it vanishes only when all eight coordinates vanish, that is only for $\tilde{Q} = 0$. The norm form is therefore <strong>anisotropic</strong> as a quadratic map to $\mathbb{D}$ — there is no nonzero element of norm form zero — even though the algebra has many zero divisors, whose norm forms are nonzero zero divisors of $\mathbb{D}$.</p>
+<h3 id="the-two-real-restrictions">The Two Real Restrictions</h3>
+<p>On the two real parts of the coefficient space the norm form is a genuine positive definite quadratic form:</p>
+<ul>
+<li>on the <strong>real part</strong> $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, where $q'_\mu = 0$, it is $N = \sum_\mu q_\mu^2$;</li>
+<li>on the <strong>split-imaginary part</strong> $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, where $q_\mu = 0$, it is $N = \sum_\mu q'^2_\mu$.</li>
+</ul>
+<p>Both are positive definite; the indefinite form of the algebra is the Hermitian form with scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$ of signature $(4,4)$, as in <em>Split-Biquaternion Norm and Invertibility</em>.</p>
+<h3 id="the-unit-criterion-in-coordinates">The Unit Criterion in Coordinates</h3>
+<p><strong>Theorem.</strong> A split biquaternion $\tilde{Q}$ is a unit if and only if $N(\tilde{Q})$ is a unit of $\mathbb{D}$, that is, if and only if</p>
+<p>$$
+\sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0 .
+$$</p>
+<p><strong>Proof.</strong> Under the Peirce decomposition $N(\tilde{Q}) = N_+ \tilde\Pi_+ + N_- \tilde\Pi_-$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive. $\square$</p>
+<p>The criterion shows directly that the <strong>zero divisors</strong> are the elements whose norm form vanishes in exactly one of the two idempotent components, that is the elements with $\sum_\mu (q_\mu+q'_\mu)^2 = 0$ or $\sum_\mu (q_\mu-q'_\mu)^2 = 0$, which are the two four-dimensional subspaces $Z_\pm$ of <em>Split-Biquaternion Zero Divisors</em>. In the four-vector picture the zero divisors are thus the coefficient quadruples lying in one of the two real four-dimensional subspaces defined by $\sum_\mu(q_\mu\pm q'_\mu)^2 = 0$.</p>
+<h2 id="summary">Summary</h2>
+<p>The four-vector representation reads a split biquaternion as a column $(Q_0,Q_1,Q_2,Q_3)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{D}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_0 \mapsto \pm Q_0^{*\text{ or not}}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{M}_+$, and the reverse for $\mathbb{M}_-$. The norm form is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose norm form is a nonzero zero divisor of $\mathbb{D}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{D}$ in place of $\mathbb{C}$ and the complexified Minkowski form replaced by the split complex norm form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{Q} = \sum_\mu Q_\mu e_\mu$</td>
+<td>Split biquaternion</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$</td>
+<td>Split complex coefficient</td>
+</tr>
+<tr>
+<td>$(Q_0,Q_1,Q_2,Q_3)$</td>
+<td>Column of coefficients; $\mathbb{D}^4 \cong \mathbb{R}^8$</td>
+</tr>
+<tr>
+<td>$(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)$</td>
+<td>The eight real coordinates</td>
+</tr>
+<tr>
+<td>$Q_{\mu\pm} = q_\mu \pm q'_\mu$</td>
+<td>Idempotent components of a coefficient</td>
+</tr>
+<tr>
+<td>$P_\mu = (QR)_\mu$</td>
+<td>Components of the product, quaternion structure constants</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$</td>
+<td>The four conjugations on the column</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$</td>
+<td>Distinguished subspaces as coefficient conditions</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \sum_\mu Q_\mu^2$</td>
+<td>Norm form, anisotropic</td>
+</tr>
+<tr>
+<td>$\sum_\mu(q_\mu^2 - q'^2_\mu)$</td>
+<td>Scalar part of the Hermitian form, signature $(4,4)$</td>
+</tr>
+<tr>
+<td>$Z_\pm$</td>
+<td>The two four-dimensional zero divisor subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. L. Kantor and A. S. Solodovnikov, <em>Hypercomplex Numbers: An Elementary Introduction to Algebras</em> (Springer, 1989), for the coefficient description of a hypercomplex algebra and its norm form.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, 1997), for the four-component representation of the split biquaternion algebra.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for norm forms of composition algebras and the coordinate description of their zero divisors.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the componentwise reading of the quaternion product and its conjugations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -52,17 +52,17 @@
       <div class="article-body">
         <h1 id="spinors-and-the-biquaternion-spinor-module"><strong>Spinors and the Biquaternion Spinor Module</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The spinor module of the biquaternion algebra is the vector space on which the double cover of the rotation group acts without passing through the rotation itself, and it is the reason the biquaternion algebra is the natural home of the rotation groups of the preceding article. As a module over $\mathbb{B}\cong M_2(\mathbb{C})$ it is the defining module $\mathbb{C}^2$; equivalently, it is a minimal left ideal $\mathbb{B}p$ of the algebra, and the choice of the minimal idempotent $p$ is the choice of a basis of the module. On this module the group $SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ acts by matrix multiplication, and it is this action — not the action of $SO^{+}(1,3)$ — that carries the spinors.</p>
+<p>The spinor module of the biquaternion algebra is the vector space on which the double cover of the rotation group acts without passing through the rotation itself, and it is the reason the biquaternion algebra is the natural home of the rotation groups of the preceding article. As a module over $\mathbb{B}\cong M_2(\mathbb{C})$ it is the defining module $\mathbb{C}^2$; equivalently, it is a minimal left ideal $\mathbb{B}\tilde\Pi$ of the algebra, and the choice of the minimal idempotent $\tilde\Pi$ is the choice of a basis of the module. On this module the group $SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ acts by matrix multiplication, and it is this action — not the action of $SO^{+}(1,3)$ — that carries the spinors.</p>
 <p>This article identifies the module, splits it into its two chiral halves, distinguishes the defining module from its dual and from its conjugate, and computes the invariant forms. The biquaternion algebra, its norm form and its matrix model are from <em>The Biquaternion Algebra as a Clifford Algebra</em>; the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ and the rotation groups are from <em>The Rotation and Reflection Groups in the Biquaternion Algebra</em>; and the general theory of Clifford modules, chirality and the spin representation is from <em>Spin Representations and Clifford Modules</em>. The module-theoretic treatment of $S$ — its freeness over $\mathbb{B}$, the bimodule and double-centralizer structure, and the invariant forms as abstract module data — belongs to <em>The Defining Module of the Biquaternion Algebra</em> and is cited rather than reproduced; what is established here is the spinor statement, namely the minimal left ideal, its decomposition $\Delta=V_{1/2}\oplus\overline{V_{1/2}}$ into chiral halves, and the action of $SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ on it. Only the computations special to $\mathbb{B}$ are performed here.</p>
 <h2 id="the-spinor-module">The Spinor Module</h2>
 <p><strong>Theorem.</strong> The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has, up to isomorphism, exactly one simple left module, of complex dimension two. It is realised as the minimal left ideal</p>
 <p>$$
-S=\mathbb{B}p, \qquad p=\tfrac12(e_0+ie_3),
+S=\mathbb{B}\tilde\Pi, \qquad \tilde\Pi=\tfrac12(e_0+ie_3),
 $$</p>
 <p>which in the matrix model is the column space $\mathbb{C}^2$.</p>
-<p><strong>Proof.</strong> A full matrix algebra $M_n(\mathbb{C})$ has a unique simple left module, the column space $\mathbb{C}^n$, of dimension $n$; for $n=2$ this is the statement. The explicit realisation by the minimal idempotent $p$ and the Peirce decomposition is in <em>The Biquaternion Algebra as a Clifford Algebra</em>, where $\Phi(p)=\operatorname{diag}(1,0)$ and $\mathbb{B}p$ is the first column. $\square$</p>
-<p><strong>Definition.</strong> The <strong>biquaternion spinor module</strong> is $S=\mathbb{B}p\cong\mathbb{C}^2$, and its elements are <strong>spinors</strong>. The <strong>real spinor module</strong> is $S$ regarded as a real vector space of dimension four by forgetting the complex structure.</p>
-<p><strong>Remark.</strong> All minimal left ideals of $\mathbb{B}$ are isomorphic to $S$, and the choice of $p$ among the minimal idempotents, which are parametrised by the projective line $\mathbb{CP}^1$, changes the identification of $S$ with a column of the matrix model but not the isomorphism class of the module. This is the module-theoretic form of the statement that spinors are defined up to a choice of basis, and it is the source of the freedom that in the applications appears as the choice of a spin structure.</p>
+<p><strong>Proof.</strong> A full matrix algebra $M_n(\mathbb{C})$ has a unique simple left module, the column space $\mathbb{C}^n$, of dimension $n$; for $n=2$ this is the statement. The explicit realisation by the minimal idempotent $\tilde\Pi$ and the Peirce decomposition is in <em>The Biquaternion Algebra as a Clifford Algebra</em>, where $\Phi(\tilde\Pi)=\operatorname{diag}(1,0)$ and $\mathbb{B}\tilde\Pi$ is the first column. $\square$</p>
+<p><strong>Definition.</strong> The <strong>biquaternion spinor module</strong> is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, and its elements are <strong>spinors</strong>. The <strong>real spinor module</strong> is $S$ regarded as a real vector space of dimension four by forgetting the complex structure.</p>
+<p><strong>Remark.</strong> All minimal left ideals of $\mathbb{B}$ are isomorphic to $S$, and the choice of $\tilde\Pi$ among the minimal idempotents, which are parametrised by the projective line $\mathbb{CP}^1$, changes the identification of $S$ with a column of the matrix model but not the isomorphism class of the module. This is the module-theoretic form of the statement that spinors are defined up to a choice of basis, and it is the source of the freedom that in the applications appears as the choice of a spin structure.</p>
 <h2 id="the-double-cover-and-the-spinor-action">The Double Cover and the Spinor Action</h2>
 <p>The whole point of the spinor module is that the rotation group acts on it only through its double cover.</p>
 <p><strong>Theorem.</strong> The group $SL(2,\mathbb{C})=\{\tilde G\in\mathbb{B}:N(\tilde G)=1\}$ acts on $S=\mathbb{C}^2$ by left multiplication, and the representation is irreducible; the action on $S$ is faithful, since the simple algebra $\mathbb{B}$ acts faithfully on its simple module, so its kernel on $S$ is $\{e_0\}$ alone. The kernel of the induced action on the Hermitian subspace $\mathbb{M}_+$, $x\mapsto\tilde Gx\tilde G^{\dagger}$, is $\{\pm e_0\}$, and the quotient is the identity component $SO^{+}(1,3)$ acting on $\mathbb{M}_+$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p><strong>Corollary.</strong> The chiral halves $S_+$ and $S_-$ are the two eigenspaces of $c(\omega)$ on the complexified module $S\otimes_{\mathbb{R}}\mathbb{C}$, of eigenvalues $+i$ and $-i$; over $\mathbb{R}$ they are amalgamated into the single irreducible module $S$. This is the module-theoretic form of the statement that the three-dimensional definite Clifford algebra has complex type: the chirality operator is defined, but its eigenvalues are not real, so it does not cut the real module.</p>
 <p><strong>Remark.</strong> The explicit multiplication also exhibits the two-sided structure used in the applications: left multiplication by $\mathbb{B}$ and right multiplication by the commuting scalars commute, the left action being the Clifford action on $S$ and the right action being the commutant of the module, which by Schur's lemma is exactly $\mathbb{C}$ for the irreducible complex module. The pair of actions is the reason the spinor module of $\mathbb{B}$ carries both a spin-group action and a commuting scalar structure.</p>
 <h2 id="summary">Summary</h2>
-<p>The spinor module of the biquaternion algebra is the unique simple module $S=\mathbb{B}p\cong\mathbb{C}^2$ of $\mathbb{B}\cong M_2(\mathbb{C})$, realised as a minimal left ideal for the idempotent $p=\tfrac12(e_0+ie_3)$; its real dimension is four and its commutant is $\mathbb{C}$, so its reality type is complex and no Majorana spinor exists. The group $SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ acts irreducibly and faithfully on $S$ by left multiplication, while the two elements $\pm e_0$ lying over the identity rotation act by $\pm\mathrm{id}_S$; this two-to-one cover of $SO^{+}(1,3)$ is the reason spinors are needed at all.</p>
+<p>The spinor module of the biquaternion algebra is the unique simple module $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of $\mathbb{B}\cong M_2(\mathbb{C})$, realised as a minimal left ideal for the idempotent $\tilde\Pi=\tfrac12(e_0+ie_3)$; its real dimension is four and its commutant is $\mathbb{C}$, so its reality type is complex and no Majorana spinor exists. The group $SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ acts irreducibly and faithfully on $S$ by left multiplication, while the two elements $\pm e_0$ lying over the identity rotation act by $\pm\mathrm{id}_S$; this two-to-one cover of $SO^{+}(1,3)$ is the reason spinors are needed at all.</p>
 <p>Over the complexified algebra $\mathbb{C}\mathrm{l}_3=M_2(\mathbb{C})\times M_2(\mathbb{C})$ the module splits into two chiral halves $S_+$ and $S_-$, conjugate and inequivalent, whose direct sum is the complexification of $S$. The dual $S^{*}$ is identified with $S$ by the $SL(2,\mathbb{C})$-invariant antisymmetric spinor contraction $\varepsilon(u,v)=u^{T}\varepsilon_{0}v$, which is the unique invariant bilinear form up to scale; the conjugate module is the other chiral half and is not the dual. The positive definite Hermitian form is invariant only under $SU(2)\subset SL(2,\mathbb{C})$, and it gives the antilinear identification of $S^{*}$ with the conjugate. The antisymmetric contraction pairs spinors and the Hermitian norm measures them, and the two structures are distinct.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -146,11 +146,11 @@ $$</p>
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$p=\tfrac12(e_0+ie_3)$</td>
+<td>$\tilde\Pi=\tfrac12(e_0+ie_3)$</td>
 <td>Minimal idempotent</td>
 </tr>
 <tr>
-<td>$S=\mathbb{B}p\cong\mathbb{C}^2$</td>
+<td>$S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$</td>
 <td>Biquaternion spinor module, the defining module</td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ $$</p>
 <td>Hermitian spinor norm, positive definite</td>
 </tr>
 <tr>
-<td>$d=p-q$, $N(\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>$d=\tilde\Pi-q$, $N(\tilde Q)=\sum_\mu Q_\mu^2$</td>
 <td>Signature difference and norm form</td>
 </tr>
 </tbody>

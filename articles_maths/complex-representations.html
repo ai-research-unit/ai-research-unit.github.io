@@ -87,7 +87,7 @@ $$</p>
 <p>$$
 V \cong \mathbb{C}^{\oplus n}, \qquad \rho(z)(v_1, \dots, v_n) = (z v_1, \dots, z v_n).
 $$</p>
-<p><strong>Proof.</strong> Let $V$ be a finite-dimensional representation. Choose a basis $(v_1, \dots, v_n)$. For each $i$, the map $z \mapsto z \cdot v_i$ is $\mathbb{C}$-linear, so $z \cdot v_i = \lambda_i(z) v_i$ for some scalar $\lambda_i(z) \in \mathbb{C}$. Since $1 \cdot v_i = v_i$, we have $\lambda_i(1) = 1$. Since $z \cdot (w \cdot v_i) = (zw) \cdot v_i$, we have $\lambda_i(z) \lambda_i(w) = \lambda_i(zw)$. It follows that $\lambda_i(z) = z$ for all $z$, because $\lambda_i$ is $\mathbb{C}$-linear and $\lambda_i(1) = 1$. Hence $z \cdot v_i = z v_i$ in the chosen basis, and the representation is a direct sum of copies of the regular representation. $\square$</p>
+<p><strong>Proof.</strong> The map $z \mapsto z \cdot v$ is $\mathbb{C}$-linear in $z$ for each fixed $v$, because $\rho$ is a $\mathbb{C}$-algebra homomorphism; hence $z \cdot v = z\,(1 \cdot v) = z v$ for every $v$. In particular $z \cdot v_i = z v_i$ on a basis, so the action is the scalar multiplication $z \cdot v = zv$ and $V \cong \mathbb{C}^{\oplus n}$ as a representation. $\square$</p>
 <h3 id="irreducible-representations">Irreducible Representations</h3>
 <p><strong>Theorem.</strong> The regular representation is the unique irreducible complex representation of $\mathbb{C}$, up to isomorphism.</p>
 <p><strong>Proof.</strong> Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{C}$ is a field and every non-zero $\mathbb{C}$-linear map $\mathbb{C} \to V$ is injective. $\square$</p>
@@ -144,7 +144,7 @@ $$</p>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>tensor product</strong> of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{C}} W$ defined by</p>
 <p>$$
-z \cdot (v \otimes w) = (z \cdot v) \otimes w = v \otimes (z \cdot w).
+z \cdot (v \otimes u) = (z \cdot v) \otimes u = v \otimes (z \cdot u).
 $$</p>
 <p>The two definitions agree because $\mathbb{C}$ is commutative.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>

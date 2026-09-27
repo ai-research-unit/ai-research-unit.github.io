@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaternion 2x2 Matrix Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quaternion-2x2-matrix-representation"><strong>Quaternion 2x2 Matrix Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion algebra has no faithful representation by real $2\times2$ matrices, but it has a faithful representation by complex ones, and the representation becomes an isomorphism after complexification: $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$. This article develops that representation. It gives the isomorphism, the images of the basis, the trace and the determinant, the inner product and the Euclidean norm, the matrix form of quaternion conjugation, the images of the scalar and vector subspaces, and the reason there is no real $2\times2$ representation. It is the quaternion member of the family's small-matrix pair; the counterpart is the $2\times2$ complex representation of the biquaternion algebra, which is an isomorphism already over $\mathbb{C}$ because the algebra itself is complex.</p>
+<p>The article depends on <em>Quaternion Algebra</em> for the basis and relations, on <em>Quaternion Norm and Invertibility</em> for the norm form and the invertibility criterion, and on <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em> for the two subspaces. The larger matrix representation is in <em>Quaternion 4x4 Regular Matrix Representation</em>, and the coordinate description of the product in <em>Quaternion Four-Vector Representation</em>. The Clifford identification of the complexification is sketched in <em>Quaternion Other Algebraic Representations</em>.</p>
+<p>The corpus's default base is a commutative ring with identity. The representation by complex matrices is stated over $\mathbb{R}$ and then over $\mathbb{C}$ after scalar extension; the norm form is positive definite over $\mathbb{R}$, and the determinant statements are the algebraic identities that remain valid after extending the coefficient field.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with real $q_\mu$ in the definite statements; the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the norm form is $N(\tilde q) = \tilde q\bar{\tilde q}$. The Pauli matrices are</p>
+<p>$$
+\sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
+\sigma_2 = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \qquad
+\sigma_3 = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+$$</p>
+<p>with $i$ the imaginary unit of $\mathbb{C}$.</p>
+<h2 id="the-complexification">The Complexification</h2>
+<p><strong>Definition.</strong> The <strong>complexification</strong> of the quaternion algebra is the $\mathbb{C}$-algebra $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$, the scalar extension of $\mathbb{H}$ from $\mathbb{R}$ to $\mathbb{C}$, with the same basis $e_0,e_1,e_2,e_3$ and the same relations, the coefficients now taken in $\mathbb{C}$.</p>
+<p><strong>Proposition.</strong> The complexification is a four-dimensional $\mathbb{C}$-algebra, hence an eight-dimensional real algebra, and it is the complex quaternion algebra; the central imaginary unit of the extension is $i$ itself, which commutes with the $e_k$.</p>
+<p><em>Proof.</em> The tensor product of a four-dimensional real algebra with $\mathbb{C}$ is four-dimensional over $\mathbb{C}$; the element $i = 1\otimes i$ is central and satisfies $i^2 = -1$. $\square$</p>
+<p><strong>Theorem.</strong> The complexification of the quaternion algebra is the full matrix algebra,</p>
+<p>$$
+\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C}),
+$$</p>
+<p>an isomorphism of $\mathbb{C}$-algebras.</p>
+<p><em>Proof.</em> The $\mathbb{R}$-linear map $\iota : \mathbb{H}\to M_2(\mathbb{C})$ given by $\iota(\tilde q) = q_0I - i(q_1\sigma_1+q_2\sigma_2+q_3\sigma_3)$ is multiplicative, since the Pauli matrices satisfy $\sigma_j\sigma_k = \delta_{jk}I + i\sum_l\epsilon_{jkl}\sigma_l$, which is the quaternion multiplication rule under the correspondence $e_k\leftrightarrow -i\sigma_k$. It is injective with four-dimensional real image, so its $\mathbb{C}$-linear extension $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$ is a surjective map of four-dimensional $\mathbb{C}$-algebras, hence an isomorphism. $\square$</p>
+<p><strong>Definition.</strong> In the general element $\tilde Q = \sum_\mu Q_\mu e_\mu$ of the complexification the coefficients $Q_\mu$ lie in $\mathbb{C}$; the map $\Phi : \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$ extends $\iota$ by $\mathbb{C}$-linearity.</p>
+<h2 id="the-images-of-the-basis">The Images of the Basis</h2>
+<p><strong>Theorem.</strong> The isomorphism $\Phi$ can be fixed by</p>
+<p>$$
+\Phi(e_0) = I, \quad \Phi(e_1) = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \quad \Phi(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad \Phi(e_3) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
+$$</p>
+<p>so that on a general element</p>
+<p>$$
+\Phi(\tilde Q) = Q_0 I - i(Q_1\sigma_1+Q_2\sigma_2+Q_3\sigma_3) = \begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3 \end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> The four images satisfy the quaternion relations, as the basis relations are checked directly: $\Phi(e_1)^2 = -I$, $\Phi(e_2)^2 = -I$, $\Phi(e_3)^2 = -I$ and $\Phi(e_1)\Phi(e_2) = \Phi(e_3)$, with the reversed products negative; the four images are linearly independent over $\mathbb{C}$, so the extension is an isomorphism. $\square$</p>
+<p><strong>Remark (the choice).</strong> The correspondence $e_k\mapsto-i\sigma_k$ is the corpus's choice, held fixed once and for all. It is not canonical: another isomorphism differs from this one by conjugation by an invertible matrix, and all the invariants below are unchanged. The Pauli matrices appear only as a shorthand for the images of $e_1,e_2,e_3$.</p>
+<p><strong>Corollary.</strong> The images of the basis are, up to the factor $-i$, the Pauli matrices, and the image of the real quaternion algebra $\iota(\mathbb{H})$ is the set</p>
+<p>$$
+\left\{ \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix} : z, w\in\mathbb{C} \right\},
+$$</p>
+<p>a four-dimensional real subspace of $M_2(\mathbb{C})$.</p>
+<p><em>Proof.</em> Write $z = q_0-iq_3$, $w = -iq_1-q_2$ for real $q_\mu$; then the lower-left entry is $-i q_1+q_2 = -\bar w$ and the lower-right is $q_0+iq_3 = \bar z$. Conversely every such matrix arises from the real quadruple $(q_0,q_1,q_2,q_3) = (\operatorname{Re}z, -\operatorname{Re}w, -\operatorname{Im}w, -\operatorname{Im}z)$. $\square$</p>
+<h2 id="trace-and-determinant">Trace and Determinant</h2>
+<p><strong>Theorem.</strong> For every element of the complexification,</p>
+<p>$$
+\operatorname{tr}\Phi(\tilde Q) = 2Q_0, \qquad \det\Phi(\tilde Q) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = N(\tilde Q).
+$$</p>
+<p><em>Proof.</em> The trace is the sum of the diagonal entries $Q_0-iQ_3$ and $Q_0+iQ_3$, namely $2Q_0$. The determinant is</p>
+<p>$$
+(Q_0-iQ_3)(Q_0+iQ_3) - (-iQ_1-Q_2)(-iQ_1+Q_2) = (Q_0^2+Q_3^2) - (-Q_1^2-Q_2^2) = \sum_\mu Q_\mu^2 . \square
+$$</p>
+<p><strong>Corollary.</strong> Over $\mathbb{R}$ an element $\tilde q$ is a unit exactly when $\det\iota(\tilde q)\neq0$, and then $\iota(\tilde q^{-1}) = \iota(\tilde q)^{-1}$; the matrix image of the unit group $\mathbb{H}^{\times}$ is the set of matrices in $\iota(\mathbb{H})$ of non-zero determinant, and the image of the norm-one subgroup $Sp(1)$ is the group of matrices in $\iota(\mathbb{H})$ of determinant $1$.</p>
+<p><em>Proof.</em> Invertibility is non-vanishing norm by <em>Quaternion Norm and Invertibility</em>, and the determinant is the norm form; multiplicativity of $\iota$ gives $\iota(\tilde q^{-1}) = \iota(\tilde q)^{-1}$. A norm-one element has $N(\tilde q) = 1$, so its determinant is $1$, and conversely a determinant-$1$ matrix in $\iota(\mathbb{H})$ is the image of a norm-one element. $\square$</p>
+<p><strong>Theorem.</strong> The restriction of $\iota$ to the unit sphere is an isomorphism of groups</p>
+<p>$$
+Sp(1)\cong SU(2),
+$$</p>
+<p>where $SU(2)$ is the group of $2\times2$ complex unitary matrices of determinant one.</p>
+<p><em>Proof.</em> By the corollary the image of $Sp(1)$ is the set of matrices in $\iota(\mathbb{H})$ that are unitary of determinant one, and this set is $SU(2)$: it is contained in $SU(2)$ by definition, and the two are three-dimensional connected groups, so the containment is an equality. The map $\iota$ is injective and multiplicative, so it restricts to a group isomorphism. $\square$</p>
+<p><strong>Remark.</strong> The trace is twice the scalar coordinate and the determinant is the whole norm form. This is the matrix expression of the facts that the scalar subspace has dimension one and that the trace of a pure quaternion image vanishes.</p>
+<h2 id="the-inner-product-and-the-euclidean-norm">The Inner Product and the Euclidean Norm</h2>
+<p><strong>Definition.</strong> The <strong>inner product</strong> of two quaternions is $\langle p,\tilde q\rangle = \operatorname{Sc}(p\bar{\tilde q})$; the <strong>Euclidean norm</strong> is $|\tilde q| = \sqrt{N(\tilde q)}$. The one-variable expression $\tilde q\bar{\tilde q}$ is the <strong>Hermitian form</strong>, which here coincides with the norm form.</p>
+<p><strong>Theorem.</strong> The matrix image intertwines the norm form and the determinant and the inner product and the Frobenius form:</p>
+<p>$$
+N(\tilde q) = \det\iota(\tilde q), \qquad \operatorname{tr}\bigl(\iota(p)\iota(\tilde q)^{\dagger}\bigr) = 2\,\langle p,\tilde q\rangle, \qquad \operatorname{tr}\bigl(\iota(\tilde q)\iota(\tilde q)^{\dagger}\bigr) = 2\,|\tilde q|^2,
+$$</p>
+<p>where ${}^{\dagger}$ is the conjugate transpose.</p>
+<p><em>Proof.</em> The determinant identity is the determinant theorem. For the trace identities, note that for a matrix with real quaternion coefficients, transposition combined with conjugation of the entries reverses the signs of the three vector coordinates, so</p>
+<p>$$
+\iota(\tilde q)^{\dagger} = \iota(\bar{\tilde q}).
+$$</p>
+<p>Hence $\iota(\tilde q)^{\dagger}\iota(\tilde q) = \iota(\bar{\tilde q} \tilde q) = \iota(N(\tilde q)) = N(\tilde q)I$, whose trace is $2N(\tilde q) = 2|\tilde q|^2$; and $\iota(p)\iota(\tilde q)^{\dagger} = \iota(p\bar{\tilde q})$, whose trace is $2\operatorname{Sc}(p\bar{\tilde q}) = 2\langle p,\tilde q\rangle$. $\square$</p>
+<p><strong>Corollary.</strong> The image $\iota(\mathbb{H})$ consists of those matrices $\iota(\tilde q)$ for which $\iota(\tilde q)^\dagger\iota(\tilde q)$ is a scalar matrix, namely $|\tilde q|^2 I$; the map $\tilde q\mapsto |\tilde q|^{-1}\iota(\tilde q)$ for $\tilde q\neq0$ is an isometric embedding of the unit sphere $Sp(1)$ into the unitary group $U(2)$.</p>
+<p><em>Proof.</em> $\iota(\tilde q)^\dagger\iota(\tilde q) = \iota(\bar{\tilde q})\iota(\tilde q) = \iota(\bar{\tilde q} \tilde q) = \iota(N(\tilde q)) = N(\tilde q)I$, so the columns of $\iota(\tilde q)$ are orthogonal and of equal length $|\tilde q|$; after normalising, $\iota(\tilde q)$ is unitary. $\square$</p>
+<h2 id="the-conjugations-in-matrix-form">The Conjugations in Matrix Form</h2>
+<p><strong>Theorem.</strong> Quaternion conjugation is the adjugate:</p>
+<p>$$
+\iota(\bar{\tilde q}) = \operatorname{adj}\iota(\tilde q) = \begin{pmatrix} q_0+iq_3 & iq_1+q_2 \\ iq_1-q_2 & q_0-iq_3 \end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> For a $2\times2$ matrix $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ the adjugate is $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Applying this to $\iota(\tilde q)$ gives the displayed matrix, which is $\iota(q_0-q_1e_1-q_2e_2-q_3e_3) = \iota(\bar{\tilde q})$. $\square$</p>
+<p><strong>Definition.</strong> The <strong>antisymmetric form</strong> is</p>
+<p>$$
+\epsilon = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = i\sigma_2 = -\Phi(e_2), \qquad \epsilon^{T} = -\epsilon, \quad \epsilon^2 = -I .
+$$</p>
+<p><strong>Theorem.</strong> Quaternion conjugation is transposition dressed with the antisymmetric form:</p>
+<p>$$
+\iota(\bar{\tilde q}) = \epsilon\,\iota(\tilde q)^{T}\,\epsilon^{-1}.
+$$</p>
+<p><em>Proof.</em> Compute $\epsilon M^{T}\epsilon^{-1}$ for $M = \iota(\tilde q)$ with $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$. Since $\epsilon^{-1} = -\epsilon$, one has $\epsilon M^{T}\epsilon^{-1} = -\epsilon M^{T}\epsilon$, and a direct multiplication gives $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$, which is the adjugate of $M$ and equals $\iota(\bar{\tilde q})$ by the preceding theorem. $\square$</p>
+<p><strong>Remark.</strong> Unlike the biquaternion case there is only one conjugation of the algebra to realise, namely quaternion conjugation, and it is the adjugate; the antisymmetric form is needed to write it as a dressed transposition because the matrix realisation uses the same $i$ that conjugates coefficients. Here the coefficients are real, so no complex conjugation of entries enters, and the single relation above is the whole correspondence.</p>
+<h2 id="the-scalar-and-vector-subspaces-in-matrix-form">The Scalar and Vector Subspaces in Matrix Form</h2>
+<p><strong>Theorem.</strong> Under $\iota$ the scalar subspace is the space of scalar matrices with real entries and the vector subspace is the space of traceless matrices:</p>
+<p>$$
+\iota(\mathbb{R}_{\mathbb{H}}) = \mathbb{R}\,I, \qquad
+\iota(\operatorname{Im}\mathbb{H}) = \left\{ M\in\iota(\mathbb{H}) : \operatorname{tr}M = 0 \right\}.
+$$</p>
+<p><em>Proof.</em> A scalar $s$ maps to $sI$, whose trace is $2s$ and which is scalar; a pure quaternion $\mathbf{q}$ maps to $-i(q_1\sigma_1+q_2\sigma_2+q_3\sigma_3)$, a traceless matrix. The trace vanishes exactly when $Q_0 = 0$, the vector condition. $\square$</p>
+<p><strong>Corollary.</strong> In matrix terms the decomposition is the splitting of $\iota(\mathbb{H})$ into its scalar part and its traceless part, and after complexification the algebra splits as $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathfrak{sl}_2(\mathbb{C})$; the scalar subspace is the one-dimensional centre and the vector subspace the three-dimensional traceless summand.</p>
+<p><em>Proof.</em> The splitting $M = \tfrac12(\operatorname{tr}M)I + (M-\tfrac12(\operatorname{tr}M)I)$ separates the scalar and traceless parts, and the image of a quaternion under $\iota$ has trace twice its scalar coordinate. $\square$</p>
+<h2 id="a-worked-image">A Worked Image</h2>
+<p><strong>Example.</strong> For the element</p>
+<p>$$
+\tilde q = 1 + 2e_1 - e_2 + 3e_3
+$$</p>
+<p>the matrix image is</p>
+<p>$$
+\iota(\tilde q) = \begin{pmatrix} 1-3i & 1-2i \\ -1-2i & 1+3i \end{pmatrix},
+$$</p>
+<p>with</p>
+<p>$$
+\operatorname{tr}\iota(\tilde q) = 2 = 2q_0, \qquad \det\iota(\tilde q) = (1-3i)(1+3i) - (1-2i)(-1-2i) = 10 - (-5) = 15 = N(\tilde q).
+$$</p>
+<p>The determinant is the norm form and the trace is twice the scalar part, as the general theorem requires.</p>
+<h2 id="the-absence-of-a-math165-real-representation">The Absence of a $2\times2$ Real Representation</h2>
+<p><strong>Theorem.</strong> There is no injective algebra homomorphism $\mathbb{H}\to M_2(\mathbb{R})$.</p>
+<p><em>Proof.</em> Suppose $\varphi : \mathbb{H}\to M_2(\mathbb{R})$ were injective. Then its image is a four-dimensional subalgebra of the four-dimensional algebra $M_2(\mathbb{R})$, hence all of $M_2(\mathbb{R})$, so $\mathbb{H}$ would be isomorphic to $M_2(\mathbb{R})$. But $M_2(\mathbb{R})$ has zero divisors — the matrix $\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ is non-zero and squares to zero — while $\mathbb{H}$ has none, a contradiction. $\square$</p>
+<p><strong>Corollary.</strong> The quaternion algebra is not isomorphic to any full matrix algebra over $\mathbb{R}$, and the smallest faithful matrix representation over $\mathbb{R}$ is the four-dimensional one $L : \mathbb{H}\to M_4(\mathbb{R})$ of <em>Quaternion 4x4 Regular Matrix Representation</em>. The $2\times2$ representation exists only after the coefficient field is enlarged to $\mathbb{C}$.</p>
+<p><em>Proof.</em> The first statement is the theorem; a faithful representation makes $F^n$ a module over the division algebra $\mathbb{H}$, so $F^n\cong\mathbb{H}^k$ and $n$ is a multiple of $\dim_F\mathbb{H} = 4$, whence the minimal faithful real representation is the left regular one $L : \mathbb{H}\to M_4(F)$. $\square$</p>
+<h2 id="comparison-with-the-biquaternion-and-split-biquaternion-cases">Comparison with the Biquaternion and Split-Biquaternion Cases</h2>
+<p><strong>Theorem.</strong> The biquaternion algebra is isomorphic to the matrix algebra over its own centre,</p>
+<p>$$
+\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C}),
+$$</p>
+<p>and it therefore has a $2\times2$ matrix representation over a commutative ring without any extension of coefficients.</p>
+<p><em>Proof.</em> The biquaternion algebra is the complexification of the quaternion algebra, so the isomorphism of this article is an equality of the algebra with $M_2(\mathbb{C})$. $\square$</p>
+<p><strong>Theorem.</strong> The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ is not isomorphic to a full $2\times2$ matrix algebra over any commutative ring.</p>
+<p><em>Proof.</em> The split-complex numbers decompose as $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ through the idempotents $\Pi_\pm = \tfrac12(1\pm j)$, so $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. A ring of the form $M_2(k)$ with $k$ commutative has no non-trivial central idempotent, since its centre is the scalar matrices; the product $\mathbb{H}\oplus\mathbb{H}$ has the two central idempotents $(1,0)$ and $(0,1)$. Hence $\mathbb{H}_{\mathbb{D}}$ is not isomorphic to any $M_2(k)$. $\square$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra</td>
+<td>division algebra</td>
+<td>$\cong M_2(\mathbb{C})$</td>
+<td>$\cong\mathbb{H}\oplus\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$2\times2$ representation</td>
+<td>only over $\mathbb{C}$</td>
+<td>over $\mathbb{C}$, directly</td>
+<td>none over a commutative ring</td>
+</tr>
+<tr>
+<td>Determinant image</td>
+<td>$N(\tilde q) = \sum q_\mu^2$</td>
+<td>$N(\tilde Q) = \sum Q_\mu^2$</td>
+<td>componentwise</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>none</td>
+<td>singular matrices</td>
+<td>present in each summand</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pattern is that a $2\times2$ matrix realisation over a commutative ring exists exactly when the algebra is a full matrix algebra over that ring. The quaternion algebra becomes one only after complexification, the biquaternion algebra already is one, and the split biquaternion algebra never is: its decomposition into two division algebras is exactly what prevents it. The biquaternion account is in <em>Biquaternion 2x2 Matrix Representation</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The complexification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is a four-dimensional complex algebra isomorphic to $M_2(\mathbb{C})$, through the map sending $e_0\mapsto I$ and $e_k\mapsto-i\sigma_k$, with $\Phi(\tilde Q) = Q_0I-i\sum_k Q_k\sigma_k$; the choice is fixed once and is not canonical. The trace of an image is twice the scalar coordinate and the determinant is the norm form, $N(\tilde Q) = \sum_\mu Q_\mu^2$, so invertibility over $\mathbb{R}$ is non-vanishing determinant, and the determinant is a perfect square no longer: over $\mathbb{C}$ it is an arbitrary complex number.</p>
+<p>The image of the real quaternion algebra is the four-dimensional real space of matrices $\begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$, on which the norm form is the determinant and the inner product matches half the Frobenius form, $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2|\tilde q|^2$. Quaternion conjugation is the adjugate, equivalently the antisymmetric-form-dressed transpose $\iota(\bar{\tilde q}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ with $\epsilon = i\sigma_2$; the scalar subspace maps to the real scalar matrices and the vector subspace to the traceless matrices, giving $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathfrak{sl}_2(\mathbb{C})$ after complexification.</p>
+<p>There is no injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, because its image would be all of $M_2(\mathbb{R})$, which has zero divisors while $\mathbb{H}$ has none; the smallest real representation is the $4\times4$ regular one. The biquaternion algebra is $M_2(\mathbb{C})$ without extension of coefficients, and the split biquaternion algebra is $\mathbb{H}\oplus\mathbb{H}$, whose central idempotents rule out a $2\times2$ matrix realisation over any commutative ring.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>The quaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
+<td>Quaternion, conjugate $\bar{\tilde q}$, norm form $N(\tilde q)$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$</td>
+<td>Complexification, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\iota : \mathbb{H}\to M_2(\mathbb{C})$</td>
+<td>Matrix representation of the real algebra</td>
+</tr>
+<tr>
+<td>$\Phi : \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$</td>
+<td>The $\mathbb{C}$-algebra isomorphism</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>Pauli matrices; $\Phi(e_k) = -i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\Phi(\tilde Q) = 2Q_0$</td>
+<td>Trace image of the scalar coordinate</td>
+</tr>
+<tr>
+<td>$\det\Phi(\tilde Q) = N(\tilde Q)$</td>
+<td>Determinant image of the norm form</td>
+</tr>
+<tr>
+<td>$\dagger$</td>
+<td>Conjugate transpose; $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2\lvert \tilde q\rvert^2$</td>
+</tr>
+<tr>
+<td>$\epsilon = i\sigma_2 = -\Phi(e_2)$</td>
+<td>Antisymmetric form; $\iota(\bar{\tilde q}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$</td>
+<td>Scalar matrices and traceless matrices</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2(\mathbb{C})$</td>
+<td>Traceless matrices, the vector image in the complexification</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Split biquaternion algebra, $\cong\mathbb{H}\oplus\mathbb{H}$, no $2\times2$ realisation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Bartel Leendert van der Waerden, <em>Algebra</em>, Vol. II (Springer, 1955), for the complexification of algebras and the structure of matrix algebras.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the matrix representation of central simple algebras and the Brauer group.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the Pauli-matrix realization of the quaternion algebra and its complexification.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for matrix algebras, idempotents and the absence of a real $2\times2$ representation.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the structure of matrix algebras and simple rings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

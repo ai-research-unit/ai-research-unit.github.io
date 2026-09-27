@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of Integration — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comparison-of-integration"><strong>Comparison of Integration</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article compares the integration theory of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$: the path or contour integral and its construction from the Riemann sum, the Cauchy integral theorem and formula and the hypotheses each needs, the residues and the argument principle, and the measure-theoretic and hypercomplex integral. It states the situation of the eight algebras on each of these subjects in tables with the eight algebras as columns in the fixed order of <em>The Eight Algebras Compared</em>. Every entry restates a result of the integration articles cited in the explanations.</p>
+<p>The organising thread is the <strong>division property</strong>. Where the algebra is a division algebra the Cauchy kernel $(\zeta-z_0)^{-1}$ exists off a single point, the Cauchy integral formula holds, and the residue theory follows; where the algebra has zero divisors the kernel fails on the null cone or the zero-divisor set, the Cauchy integral formula does not exist, and the theory loses the Cauchy estimates, the mean value property, the maximum principle and the Liouville theorem. The two four-dimensional systems $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ are a mixed case: their integrals are taken on a four-dimensional real subspace, and on the quaternion subspace — which is a division ring — the full Cauchy theory returns, while on the indefinite sectors it fails.</p>
+<h2 id="the-integral-theories">The Integral Theories</h2>
+<p>The following table compares the integration theory of the eight algebras: the path integral, the Cauchy–Goursat theorem, the Cauchy integral formula, the residue theory, the argument principle and the measure-theoretic integral. The eight algebras are the columns, in the fixed order, with the marker <strong>—</strong> where the notion is not carried.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the path integral</td>
+<td>Riemann</td>
+<td>contour, Riemann sums</td>
+<td>split contour</td>
+<td>dual contour</td>
+<td>left and right path forms</td>
+<td>componentwise, Green formulas</td>
+<td>componentwise on $\mathbb{H}_{\mathbb{B}}$</td>
+<td>componentwise on $V$</td>
+</tr>
+<tr>
+<td>Cauchy–Goursat theorem</td>
+<td>—</td>
+<td>yes, homological</td>
+<td>yes, soft</td>
+<td>no</td>
+<td>yes, three-dimensional boundary</td>
+<td>no</td>
+<td>yes on $\mathbb{H}_{\mathbb{B}}$</td>
+<td>yes on $V$</td>
+</tr>
+<tr>
+<td>Cauchy integral formula</td>
+<td>—</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes, two-sided</td>
+<td>no</td>
+<td>yes on $\mathbb{H}_{\mathbb{B}}$</td>
+<td>yes, pair of quaternion formulas</td>
+</tr>
+<tr>
+<td>residues</td>
+<td>—</td>
+<td>residue theorem</td>
+<td>distributional jump on a null line</td>
+<td>—</td>
+<td>residue theory</td>
+<td>no</td>
+<td>residue theory, non-commutative</td>
+<td>pair of quaternion residues</td>
+</tr>
+<tr>
+<td>argument principle</td>
+<td>—</td>
+<td>yes</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>measure-theoretic integral</td>
+<td>Riemann, Stieltjes, Lebesgue</td>
+<td>Bochner</td>
+<td>Bochner</td>
+<td>Bochner</td>
+<td>componentwise Lebesgue</td>
+<td>componentwise Lebesgue</td>
+<td>componentwise Lebesgue</td>
+<td>componentwise Lebesgue</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table shows the reach of the Cauchy theory. In $\mathbb{R}$ the integral is the Riemann and Riemann–Stieltjes integral, with the fundamental theorem of calculus in both directions and the Riesz representation of the dual of $C[a,b]$, but there is no contour Cauchy theory; the empty cells of the Cauchy rows are the absence of a complex-variable structure and are stated rather than omitted (<em>Real Integration</em>). In $\mathbb{C}$ the contour integral is the limit of Riemann sums with complex increments, the Cauchy–Goursat theorem holds in its homological form, the Cauchy integral formula is the boundary representation of a holomorphic function, and the residue theorem yields the argument principle and the evaluation of definite integrals; the winding number replaces the winding of a curve on the line (<em>Complex Integration</em>). In $\mathbb{D}$ the split contour integral exists for every continuous integrand, decomposes into a pair of real line integrals through the idempotents, and satisfies the Cauchy–Goursat theorem for every closed path — but the theorem is <strong>soft</strong>, since differentiability excludes nothing — while the Cauchy integral formula <strong>fails</strong>, because the element $\zeta-z_0$ is a unit exactly off the null cone and no contour of non-zero winding avoids it; what survives is a residue datum attached to a null line rather than a point, realised distributionally as the Sokhotski–Plemelj jump across the characteristic (<em>Split-Complex Integration</em>). In $\mathbb{D}'$ the dual integral decomposes into a pair of real line integrals through the fibre decomposition, and integration along a fibre evaluates only the real part, the nilpotent direction being totally isotropic, so iterated fibre integration vanishes; there is no Cauchy integral formula (<em>Dual-Numbers Integration</em>). In $\mathbb{H}$ the integral is defined componentwise, the path integral has a left and a right form because of non-commutativity, and the Cauchy–Goursat theorem is a statement about a <strong>three-dimensional</strong> boundary rather than a curve; the two-sided Cauchy integral formula with the kernel $\bar{\tilde q}/|\tilde q|^4$ holds and carries the mean value property, the maximum modulus principle, the Liouville theorem and the residue theory without exception (<em>Quaternion Integration</em>). In $\mathbb{H}_{\mathrm{s}}$ the operator is not elliptic, the divergence theorem holds with the Euclidean normal but degenerates on a boundary tangent to the light cone, and the Cauchy integral formula does <strong>not</strong> exist because the candidate kernel $(\tilde q-y)^{-1}$ fails on the light cone where the difference of two points is a zero divisor; the inversion that holds is one-sided, $f=D(E_D*f)$, and the elliptic Liouville, removable-singularity and maximum-principle theorems all fail (<em>Split-Quaternion Integration</em>). In $\mathbb{B}$ the integral on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is componentwise, the fundamental solution of the gradient is $\tilde G=\bar{\tilde Q}/\|\tilde Q\|_E^4$ with $\tilde\nabla\tilde G=-2\pi^2\delta_0e_0$, and the Cauchy integral formula with its consequences and the residue theory hold on $\mathbb{H}_{\mathbb{B}}$; off $\mathbb{H}_{\mathbb{B}}$ the null cone removes the kernel (<em>Biquaternion Integration</em>). In $\mathbb{H}_{\mathbb{D}}$ the integral is componentwise on the four-dimensional subspace $V$, the fundamental solution is the same $\tilde G$, and the Cauchy integral formula and the residue theory hold, but in the idempotent basis they are exactly the <strong>pair</strong> of the quaternion formulas and the pair of the quaternion residues, one for each component (<em>Split-Biquaternion Integration</em>). The argument principle row is carried by $\mathbb{C}$ alone: the higher systems have no winding-number theory of a single closed curve, and the row is empty for them.</p>
+<h2 id="obstructions-and-what-survives">Obstructions and What Survives</h2>
+<p>The following table compares the obstruction that limits the integration theory of the eight algebras and what survives it: the division property, the obstruction, the reach of the Cauchy theory and the surviving integral identity. The eight algebras are the columns, in the fixed order, with the marker <strong>—</strong> where the notion is not carried.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>division property</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>obstruction</td>
+<td>—</td>
+<td>none</td>
+<td>null cone, two lines</td>
+<td>maximal ideal $\mathfrak{m}$</td>
+<td>none</td>
+<td>light cone</td>
+<td>null cone off $\mathbb{H}_{\mathbb{B}}$</td>
+<td>the two ideals</td>
+</tr>
+<tr>
+<td>reach of the Cauchy theory</td>
+<td>—</td>
+<td>global</td>
+<td>fails</td>
+<td>fails</td>
+<td>global</td>
+<td>fails</td>
+<td>on $\mathbb{H}_{\mathbb{B}}$ only</td>
+<td>on the subspace $V$</td>
+</tr>
+<tr>
+<td>what survives</td>
+<td>fundamental theorem, Stieltjes</td>
+<td>residues, argument principle</td>
+<td>distributional jump on a null line</td>
+<td>fibre integration</td>
+<td>two-sided formula, residues</td>
+<td>one-sided inversion $f=D(E_D*f)$</td>
+<td>formula and residues on $\mathbb{H}_{\mathbb{B}}$</td>
+<td>pair of quaternion formulas and residues</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table records the obstruction and the surviving theory. In the division algebras $\mathbb{C}$ and $\mathbb{H}$, which carry a contour theory, the Cauchy theory is global; in the division algebra $\mathbb{R}$ the integral is complete as the Riemann and Stieltjes integral but carries no contour Cauchy theory, so its Cauchy cells are empty. The three columns with zero divisors but no definite part, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{H}_{\mathrm{s}}$, lose the Cauchy integral formula together with the Cauchy estimates, the mean value property, the maximum principle and the Liouville theorem, and each retains a different fragment: a distributional jump on a null line for $\mathbb{D}$, a one-dimensional fibre calculus for $\mathbb{D}'$, and a one-sided inversion for $\mathbb{H}_{\mathrm{s}}$. The two four-dimensional systems occupy the mixed position that the table makes explicit: the division property holds on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of $\mathbb{B}$ — a division ring — so the Cauchy integral formula and the residue theory hold there, and it fails on the full algebra, where the integral is defined only on a chosen four-dimensional subspace and the kernel is undefined on the null cone or the two ideals. For $\mathbb{H}_{\mathbb{D}}$ the product structure sharpens the statement: the Cauchy integral formula and the residue are the <strong>pair</strong> of the quaternion objects on the two idempotent components, so the full theorem is the direct sum of two copies of the quaternion theorem, one for each half (<em>Biquaternion Integration</em>; <em>Split-Biquaternion Integration</em>; <em>Hypercomplex Integration</em>).</p>
+<h2 id="summary">Summary</h2>
+<p>The path integral exists for all eight algebras and is built from Riemann sums with algebra-valued increments; in $\mathbb{R}$ it is the Riemann integral, in $\mathbb{C}$ the contour integral of a holomorphic function, in $\mathbb{D}$ and $\mathbb{D}'$ a pair of real line integrals through the idempotent or fibre decomposition, and in the four higher systems a componentwise integral taken on the whole algebra or on a chosen four-dimensional subspace. The Cauchy–Goursat theorem holds in $\mathbb{C}$, in $\mathbb{H}$ (on a three-dimensional boundary), on the quaternion subspace of $\mathbb{B}$ and on the subspace $V$ of $\mathbb{H}_{\mathbb{D}}$, holds but is soft in $\mathbb{D}$, and fails in $\mathbb{D}'$ and $\mathbb{H}_{\mathrm{s}}$. The Cauchy integral formula holds exactly where the division property holds off a single point — in $\mathbb{C}$, in $\mathbb{H}$, on the quaternion subspace of $\mathbb{B}$ and, as a pair of quaternion formulas, on the subspace of $\mathbb{H}_{\mathbb{D}}$ — and fails in $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{H}_{\mathrm{s}}$, where the kernel is undefined on the null cone or the maximal ideal and the maximum principle, the mean value property, the Liouville theorem and the removable-singularity theorems fail with it. The residues follow the same line: the residue theorem in $\mathbb{C}$, the residue theory in $\mathbb{H}$, on $\mathbb{H}_{\mathbb{B}}$ and, as a pair, in $\mathbb{H}_{\mathbb{D}}$, a distributional jump on a null line in $\mathbb{D}$, and nothing in $\mathbb{D}'$ and $\mathbb{H}_{\mathrm{s}}$; the argument principle is carried by $\mathbb{C}$ alone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\int_\gamma f\,dz$</td>
+<td>the path or contour integral</td>
+</tr>
+<tr>
+<td>$\operatorname{Ind}(\gamma,z_0)$</td>
+<td>the winding number</td>
+</tr>
+<tr>
+<td>$\zeta-z_0$</td>
+<td>the Cauchy kernel argument; a unit off the zero-divisor set</td>
+</tr>
+<tr>
+<td>$\bar{\tilde q}/\lvert\tilde q\rvert^4$</td>
+<td>the quaternion Cauchy kernel</td>
+</tr>
+<tr>
+<td>$\tilde G=\bar{\tilde Q}/\lVert\tilde Q\rVert_E^4$</td>
+<td>the fundamental solution of the biquaternion gradient</td>
+</tr>
+<tr>
+<td>$E_D$</td>
+<td>the fundamental solution of the split-quaternion vector operator</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}=\varepsilon\mathbb{R}$</td>
+<td>the maximal ideal of $\mathbb{D}'$</td>
+</tr>
+<tr>
+<td>$\Pi_\pm,e_\pm$</td>
+<td>the idempotents of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the four-dimensional subspace of $\mathbb{H}_{\mathbb{D}}$ carrying the integral</td>
+</tr>
+<tr>
+<td><code>—</code></td>
+<td>an empty cell, stated and never filled</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd ed. (McGraw-Hill, 1987), for the Riemann–Stieltjes and Lebesgue integrals and the Cauchy theory of one complex variable.</li>
+<li>Lars Ahlfors, <em>Complex Analysis</em>, 3rd ed. (McGraw-Hill, 1979), for the homological form of the Cauchy theorem, the residue theorem and the argument principle.</li>
+<li>F. Brackx, R. Delanghe and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the fundamental solution of the Cauchy–Riemann operator and the higher-dimensional Cauchy integral formula.</li>
+<li>Klaus Gürlebeck and Wolfgang Sprößig, <em>Quaternionic and Clifford Calculus for Physicists and Engineers</em> (Wiley, 1997), for the two-sided quaternionic Cauchy integral formula and its consequences.</li>
+<li>V. S. Vladimirov, <em>Generalized Functions in Mathematical Physics</em> (Mir, 1979), for the distributional boundary values and the Sokhotski–Plemelj formula.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Biquaternion Representation Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-biquaternion-representation-theory"><strong>Split-Biquaternion Representation Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is a finite-dimensional real algebra, and its representation theory is governed by a single structural fact: it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two copies of the quaternion division algebra. This makes it a <strong>semisimple</strong> but <strong>not simple</strong> algebra, with exactly two isomorphism classes of simple modules, in contrast to the biquaternion algebra $\mathbb{B}$, which is simple. This article records the representations of the algebra and of its group of units, the form of Schur's lemma, the intertwiners, the real and split complex forms, the tensor products, and the comparison with the biquaternion case. The structural facts about the algebra are assumed from <em>Split-Biquaternion Algebra</em>, and the ideals and the splitting from <em>Split-Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<p>The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, the Jacobson radical, Schur's lemma — is used as standard, and the module theory is that of the companion articles on modules and on algebras.</p>
+<h2 id="the-algebra-and-its-ground-fields">The Algebra and Its Ground Fields</h2>
+<p>The algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is free of rank $4$ over the split complex algebra $\mathbb{D}$, which is its centre. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ is not a field, the two natural ground structures are:</p>
+<ul>
+<li>the real numbers $\mathbb{R}$, over which $\mathbb{H}_{\mathbb{D}}$ has dimension $8$;</li>
+<li>the split complex algebra $\mathbb{D}$, over which it is a free module of rank $4$ and a $\mathbb{D}$-algebra.</li>
+</ul>
+<p>The idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ of the centre give the <strong>Peirce decomposition</strong> of every module, and are the key to the whole theory. Because $\tilde\Pi_+ + \tilde\Pi_- = 1$ and $\tilde\Pi_+ \tilde\Pi_- = 0$, the algebra splits as a product</p>
+<p>$$
+\varphi : \mathbb{H}_{\mathbb{D}} \longrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) ,
+$$</p>
+<p>and every left $\mathbb{H}_{\mathbb{D}}$-module $M$ splits as</p>
+<p>$$
+M = \tilde\Pi_+ M \oplus \tilde\Pi_- M ,
+$$</p>
+<p>with $\tilde\Pi_\pm$ acting as the two projections. On $\tilde\Pi_+ M$ the algebra acts through the first factor $\mathbb{H}$, and on $\tilde\Pi_- M$ through the second.</p>
+<h2 id="representations-over-the-split-complex-numbers">Representations over the Split Complex Numbers</h2>
+<p><strong>Theorem.</strong> A left $\mathbb{H}_{\mathbb{D}}$-module is the same thing as a pair $(M_+, M_-)$ of left $\mathbb{H}$-modules, and the passage to the pair is by $M \mapsto (\tilde\Pi_+ M, \tilde\Pi_- M)$.</p>
+<p><strong>Proof.</strong> For a left $\mathbb{H}_{\mathbb{D}}$-module $M$, the central idempotents $\tilde\Pi_\pm$ act as commuting projections with $\tilde\Pi_+ + \tilde\Pi_- = 1$, giving the direct sum decomposition, and each piece is stable under the algebra, which acts through the corresponding factor of $\mathbb{H} \oplus \mathbb{H}$. Conversely two $\mathbb{H}$-modules $M_+, M_-$ form an $\mathbb{H}_{\mathbb{D}}$-module $M_+ \oplus M_-$ with $(\tilde{Q}_+, \tilde{Q}_-)(m_+, m_-) = (\tilde{Q}_+ m_+, \tilde{Q}_- m_-)$, and the two constructions are inverse. $\square$</p>
+<p>Since the quaternion algebra $\mathbb{H}$ is a division algebra, every $\mathbb{H}$-module is free: the category $\mathbb{H}\text{-}\mathrm{Mod}$ is the category of free $\mathbb{H}$-modules, and its simple objects are the one-dimensional $\mathbb{H}$-modules, isomorphic to $\mathbb{H}$ itself.</p>
+<p><strong>Theorem.</strong> The algebra $\mathbb{H}_{\mathbb{D}}$ is semisimple, with Jacobson radical zero and composition length two as a module over itself. It has exactly two isomorphism classes of simple left modules,</p>
+<p>$$
+S_+ = (\mathbb{H}, 0) , \qquad S_- = (0, \mathbb{H}) ,
+$$</p>
+<p>each of real dimension $4$, and each isomorphic as an $\mathbb{H}$-module to $\mathbb{H}$.</p>
+<p><strong>Proof.</strong> The category of modules is the product $\mathbb{H}\text{-}\mathrm{Mod} \times \mathbb{H}\text{-}\mathrm{Mod}$ by the previous theorem; the simple objects of a product category are the simple objects of one factor with the other factor zero, which are $S_+$ and $S_-$. A product of division algebras has zero radical, and the module $\mathbb{H}_{\mathbb{D}} = S_+ \oplus S_-$ over itself shows the length. $\square$</p>
+<p>The <strong>regular representation</strong> is therefore the regular bimodule $\mathbb{H}_{\mathbb{D}}$, which as a left module is $S_+ \oplus S_-$. By Wedderburn's theorem the algebra is isomorphic to the product of the endomorphism rings of its simple modules, $\mathbb{H} \oplus \mathbb{H}$, which is the splitting already used.</p>
+<p>The two minimal two-sided ideals $\mathbb{H}\tilde\Pi_\pm$, viewed as left $\mathbb{D}$-modules, are projective but not free: each is a direct summand of the free $\mathbb{D}$-module $\mathbb{H}_{\mathbb{D}}$, while the annihilator of $\mathbb{H}\tilde\Pi_+$ contains $j-1$ and that of $\mathbb{H}\tilde\Pi_-$ contains $j+1$, so neither is free, a free $\mathbb{D}$-module being faithful.</p>
+<h2 id="schurs-lemma-and-intertwiners">Schur's Lemma and Intertwiners</h2>
+<p><strong>Theorem (Schur).</strong> For simple $\mathbb{H}_{\mathbb{D}}$-modules $S, T$, every nonzero homomorphism $S \to T$ is an isomorphism, and $\operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S)$ is a division ring. Here</p>
+<p>$$
+\operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}^{\mathrm{op}} \cong \mathbb{H} .
+$$</p>
+<p><strong>Proof.</strong> Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_+ T$ to $\tilde\Pi_+ T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{op}}$. $\square$</p>
+<p>The division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$ is the analogue of the field $\mathbb{C}$ appearing in the biquaternion case through $\mathbb{B} \cong M_2(\mathbb{C})$. The non-isomorphism of the two simple modules is the module-theoretic expression of the fact that $\tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_- = 0$.</p>
+<p><strong>Corollary.</strong> The algebra is a product of two division algebras and is therefore <strong>not simple</strong>: each of the two simple modules spans a distinct two-sided ideal, and these are the two minimal two-sided ideals $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ of <em>Split-Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<h2 id="real-representations">Real Representations</h2>
+<p>The <strong>real representations</strong> of $\mathbb{H}_{\mathbb{D}}$ are its representations on real vector spaces, that is its left modules; by the structure theorem these decompose into copies of $S_+$ and $S_-$. A real representation of dimension $n$ is described by a pair of non-negative integers $(a, b)$ with $4(a+b) = n$, the multiplicities of $S_+$ and $S_-$:</p>
+<p>$$
+M \cong a\, S_+ \oplus b\, S_- , \qquad \dim_{\mathbb{R}} M = 4(a+b) .
+$$</p>
+<p>The regular representation corresponds to $(a,b) = (1,1)$. The endomorphism ring of such a module is $M_a(\mathbb{H}) \times M_b(\mathbb{H})$, a product of two matrix algebras over the division ring $\mathbb{H}$.</p>
+<p>Because the centre is $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, a real representation is irreducible precisely when $(a,b) = (1,0)$ or $(0,1)$: irreducibility over $\mathbb{R}$ of a module for a product algebra means triviality on one factor. There is no representation irreducible over $\mathbb{D}$ that is not already one of the two simple modules.</p>
+<h2 id="the-group-of-units">The Group of Units</h2>
+<p><strong>Theorem.</strong> The group of units of $\mathbb{H}_{\mathbb{D}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\varphi$:</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad \tilde{Q}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
+$$</p>
+<p><strong>Proof.</strong> An element is a unit in a product ring exactly when both components are units, and the units of the division algebra $\mathbb{H}$ are its nonzero elements. $\square$</p>
+<p>The unit group is a real Lie group of dimension $8$, connected because it is the square of the connected group $\mathbb{H}^{\times}$. By the polar form of the nonzero quaternions, $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$, so that</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3 ,
+$$</p>
+<p>a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in <em>Split-Biquaternion Rotations and the Lorentz Group</em>, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $U(2)$.</p>
+<p>The <strong>norm-one group</strong> — the elements whose norm form is the identity of $\mathbb{D}$ — is the kernel of $N$ restricted to the units. Since $N(\tilde{Q}) = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $N(\tilde{Q}) = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is</p>
+<p>$$
+\left\{ \tilde{Q} : N(\tilde{Q}) = 1 \right\} = S^3 \times S^3 \cong \mathrm{Spin}(4) .
+$$</p>
+<h2 id="finite-dimensional-representations">Finite-Dimensional Representations</h2>
+<p>Since $\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ and $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$ with $S^3 = SU(2)$, every finite-dimensional continuous representation of $\mathbb{H}_{\mathbb{D}}^{\times}$ is the exterior tensor product of one representation of the first copy of $\mathbb{H}^{\times}$ and one of the second:</p>
+<p>$$
+\rho = \rho_1 \boxtimes \rho_2 , \qquad \rho_i : \mathbb{H}^{\times} \to GL(V_i) .
+$$</p>
+<p>Each copy of $\mathbb{H}^{\times}$ is the product of the abelian factor $\mathbb{R}_{>0}$ and the compact factor $SU(2)$, so its irreducible finite-dimensional continuous representations are the tensor products $\chi \otimes \sigma$ of a continuous character $\chi(x) = x^{\lambda}$ of $\mathbb{R}_{>0}$, $\lambda \in \mathbb{C}$, and an irreducible representation $\sigma = \mathrm{Sym}^{n}(\mathbb{C}^2)$ of $SU(2)$ of spin $n/2$. The irreducible finite-dimensional continuous representations of the unit group are therefore indexed by a pair of a character exponent and a spin for each factor, with</p>
+<p>$$
+\rho = \left(\chi_{\lambda_1} \otimes \mathrm{Sym}^{n_1}(\mathbb{C}^2)\right) \boxtimes \left(\chi_{\lambda_2} \otimes \mathrm{Sym}^{n_2}(\mathbb{C}^2)\right) .
+$$</p>
+<p>Restricting to the representations that are trivial on the two positive rays, equivalently to the finite-dimensional representations of the compact part $S^3 \times S^3 = \mathrm{Spin}(4)$, the exponents are zero and the classification is by a pair $(n_1, n_2)$ of non-negative integers, with</p>
+<p>$$
+\rho_{(n_1,n_2)} = \mathrm{Sym}^{n_1}(\mathbb{C}^2) \boxtimes \mathrm{Sym}^{n_2}(\mathbb{C}^2) , \qquad \dim_{\mathbb{C}} = (n_1+1)(n_2+1) .
+$$</p>
+<p>The two positive rays are also the reason the unit group is non-compact and its representations need not be unitary; the whole classification is that of the Lie group $(\mathbb{R}_{>0} \times SU(2))^2$, whose compact part is $SU(2) \times SU(2)$.</p>
+<h2 id="the-defining-representation">The Defining Representation</h2>
+<p>The <strong>defining representation</strong> of $\mathbb{H}_{\mathbb{D}}$ is the action on either simple module, $S_\pm \cong \mathbb{H}$, of real dimension $4$. Under $\varphi$ it is the representation $(\tilde{Q}_+, \tilde{Q}_-) \mapsto \tilde{Q}_+$ on the first factor (or $\tilde{Q}_-$ on the second). There is no faithful irreducible representation: any faithful module must have $a \geq 1$ and $b \geq 1$, hence dimension at least $8$, and the regular representation $S_+ \oplus S_-$ is the smallest faithful one.</p>
+<p>This is a genuine difference from the biquaternion case. There the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ has a single simple module $\mathbb{C}^2$, the defining representation is two-dimensional over $\mathbb{C}$, and it is faithful; the split biquaternion algebra has two four-dimensional simple modules over $\mathbb{R}$ and no faithful irreducible one.</p>
+<h2 id="tensor-products">Tensor Products</h2>
+<p>For a non-commutative algebra the tensor product of two left modules is not naturally a left module, and the split biquaternion algebra is no exception. A tentative action of $\tilde{Q}$ on $S_+ \otimes_{\mathbb{R}} S_-$ would have to place the component $\tilde{Q}_+$ on the first factor and $\tilde{Q}_-$ on the second, but the resulting assignment</p>
+<p>$$
+\tilde{Q} \longmapsto \tilde{Q}_+ \otimes \tilde{Q}_-
+$$</p>
+<p>is bilinear rather than linear in $\tilde{Q}$: on a sum $\tilde{Q} = \tilde{Q}' + \tilde{Q}''$ the two sides $(\tilde{Q}'+\tilde{Q}'')_+ \otimes (\tilde{Q}'+\tilde{Q}'')_-$ and $\tilde{Q}'_+ \otimes \tilde{Q}'_- + \tilde{Q}''_+ \otimes \tilde{Q}''_-$ differ, since the assignment uses both components at once. Such a map therefore does not factor through the algebra and does not define a module structure. Consequently there is no decomposition of $S_\pm \otimes_{\mathbb{R}} S_\pm$ into simple modules, and no multiplicity statement of the form $S_+ \otimes_{\mathbb{R}} S_- \cong 4\,S_-$; the tensor-product decomposition that the biquaternion case reads off from the tensor square of its single simple module has no counterpart on the algebra side here.</p>
+<p>The tensor products that are defined are those of the unit-group representations: the irreducible finite-dimensional representations $\rho_{(n_1,n_2)}$ form the tensor products of representations of the two $SU(2)$ factors, and their tensor product is computed factor by factor by the Clebsch–Gordan rule of $SU(2)$. The product of $\rho_{(n_1,n_2)}$ and $\rho_{(m_1,m_2)}$ is the direct sum of the $\rho_{(k_1,k_2)}$ with $|n_1-m_1| \leq k_1 \leq n_1+m_1$ and $|n_2-m_2| \leq k_2 \leq n_2+m_2$, the steps being two and each pair appearing once. This is the Clebsch–Gordan rule applied independently to two factors, in place of the single $SU(2)$ rule of the biquaternion case.</p>
+<h2 id="the-relation-to-the-representation-theory-of-the-biquaternions">The Relation to the Representation Theory of the Biquaternions</h2>
+<p>The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, with a single simple module $\mathbb{C}^2$, division ring $\mathbb{C}$, and regular representation of dimension $4$ over $\mathbb{C}$; its unit group is essentially $SL(2,\mathbb{C})$, whose finite-dimensional representations are the symmetric powers $\mathrm{Sym}^n(\mathbb{C}^2)$. The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$, with two simple modules, division ring $\mathbb{H}$, regular representation of dimension $8$ over $\mathbb{R}$, and unit group $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$. The correspondence is by the idempotent decomposition: each biquaternion representation is transported to a pair of quaternionic representations through the Peirce decomposition, and the passage</p>
+<p>$$
+\mathbb{B} \longleftrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \mathbb{C} \longleftrightarrow \mathbb{H}
+$$</p>
+<p>is the replacement of the simple algebra $M_2(\mathbb{C})$ by the product of two division algebras. The representation rings are correspondingly the representation ring of $SL(2,\mathbb{C})$ on the one hand and that of $S^3 \times S^3$ on the other.</p>
+<h2 id="summary">Summary</h2>
+<p>The split biquaternion algebra is a free $\mathbb{D}$-module of rank $4$ and a real algebra of dimension $8$, isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ by the Peirce decomposition along its central idempotents $\tilde\Pi_\pm$. Its module category is the product of two copies of the category of $\mathbb{H}$-modules, so it is semisimple with zero radical, has composition length two over itself, and possesses exactly two simple left modules $S_\pm$, each of real dimension $4$ and isomorphic to $\mathbb{H}$. The two minimal ideals, viewed as $\mathbb{D}$-modules, are projective but not free. Schur's lemma gives intertwiners $\operatorname{Hom}(S_+,S_-) = 0$ and division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$, in place of the field $\mathbb{C}$ of the biquaternion case, and the algebra is not simple, its two minimal two-sided ideals being the spans of the simple modules. A real representation is classified by a pair of multiplicities $(a,b)$, irreducible only for $(1,0)$ and $(0,1)$, and the regular representation is $(1,1)$. The group of units is $\mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$, and the norm-one group is $S^3 \times S^3 \cong \mathrm{Spin}(4)$; finite-dimensional representations of the unit group are the exterior tensor products of representations of the two copies of $\mathbb{R}_{>0} \times SU(2)$, indexed by a character exponent and a spin for each factor. The defining representation is the four-dimensional action on a simple module, and no faithful irreducible representation exists. The tensor product of two left modules is not naturally a left module, since the only candidate action is bilinear in the algebra element and fails to factor through it, so the tensor products belong to the unit group, where they follow the Clebsch–Gordan rule factor by factor on the two $SU(2)$'s. The whole theory is the biquaternion theory with the simple algebra $M_2(\mathbb{C})$ replaced by the product of two division algebras.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}, \mathbb{H}, \mathbb{R}$</td>
+<td>The split complex, quaternion and real ground structures</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>Central idempotents, the Peirce projections</td>
+</tr>
+<tr>
+<td>$\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$</td>
+<td>Isomorphism to $\mathbb{H} \oplus \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$S_+, S_-$</td>
+<td>The two simple left modules, each $\cong \mathbb{H}$, dimension $4$</td>
+</tr>
+<tr>
+<td>$M = a S_+ \oplus b S_-$</td>
+<td>Classification of real representations by multiplicities</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}$</td>
+<td>Division ring of the simple module</td>
+</tr>
+<tr>
+<td>$\mathbb{H}\tilde\Pi_\pm$</td>
+<td>Minimal two-sided ideals, projective but not free as $\mathbb{D}$-modules</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$</td>
+<td>Group of units</td>
+</tr>
+<tr>
+<td>$\{ \tilde{Q} : N(\tilde{Q}) = 1 \} = S^3 \times S^3$</td>
+<td>Norm-one group</td>
+</tr>
+<tr>
+<td>$\rho_{(n_1,n_2)}$</td>
+<td>Irreducible unit-group representation, spin $(n_1/2, n_2/2)$</td>
+</tr>
+<tr>
+<td>$S_+ \otimes_{\mathbb{R}} S_-$</td>
+<td>Tensor product of simple modules; not a module here</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Wedderburn's theorem, semisimple algebras and the module category.</li>
+<li>Irving Kaplansky, <em>Fields and Rings</em> (Chicago, 1972), for the structure of products of division algebras and their representations.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Wiley, 1962), for Schur's lemma, intertwiners and tensor products over a division ring.</li>
+<li>Jacques Dixmier, <em>Enveloping Algebras</em> (North-Holland, 1977), for the finite-dimensional representation theory of $SU(2)$ and the Clebsch–Gordan rule as used in the unit-group case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -57,17 +57,17 @@
 \xi^2 = -1.
 $$</p>
 <p>It follows the article on split biquaternion zero divisors, where the structure of the algebra and its zero divisors are established, and it uses the idempotent decomposition of the algebra into two copies of the quaternion algebra.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its idempotent decomposition.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its idempotent decomposition.</p>
 <p>Throughout, a split biquaternion is written</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$</p>
 <p>The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.</p>
-<p>The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
+<p>The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
 <p>$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
 $$</p>
-<p>with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.</p>
+<p>with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.</p>
 <h2 id="the-problem">The Problem</h2>
 <h3 id="statement">Statement</h3>
 <p>A <strong>root of $-1$</strong> in $\mathbb{H}_{\mathbb{D}}$ is an element $\xi \in \mathbb{H}_{\mathbb{D}}$ satisfying</p>
@@ -76,11 +76,11 @@ $$</p>
 $$</p>
 <p>The problem is to find all such elements.</p>
 <h3 id="reduction-to-the-idempotent-components">Reduction to the Idempotent Components</h3>
-<p>In the idempotent basis, the square of $\xi = \xi_+ e_+ + \xi_- e_-$ is</p>
+<p>In the idempotent basis, the square of $\xi = \xi_+ \tilde\Pi_+ + \xi_- \tilde\Pi_-$ is</p>
 <p>$$
-\xi^2 = \xi_+^2 e_+ + \xi_-^2 e_-,
+\xi^2 = \xi_+^2 \tilde\Pi_+ + \xi_-^2 \tilde\Pi_-,
 $$</p>
-<p>because the idempotents satisfy $e_+^2 = e_+$, $e_-^2 = e_-$, and $e_+ e_- = e_- e_+ = 0$.</p>
+<p>because the idempotents satisfy $\tilde\Pi_+^2 = \tilde\Pi_+$, $\tilde\Pi_-^2 = \tilde\Pi_-$, and $\tilde\Pi_+ \tilde\Pi_- = \tilde\Pi_- \tilde\Pi_+ = 0$.</p>
 <p>The equation $\xi^2 = -1$ is therefore equivalent to the pair of equations</p>
 <p>$$
 \xi_+^2 = -1, \qquad \xi_-^2 = -1,
@@ -91,14 +91,14 @@ $$</p>
 <p>The problem therefore reduces to the problem of finding the roots of $-1$ in $\mathbb{H}$, which is a solved problem: the roots of $-1$ in $\mathbb{H}$ are exactly the unit pure quaternions, i.e., the elements $\mu \in \mathbb{H}$ with $\mu^2 = -1$ and $\mu \in \mathbb{R}^3_{\mathbb{H}}$.</p>
 <p>So the roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are the elements</p>
 <p>$$
-\xi = \mu_+ e_+ + \mu_- e_-,
+\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-,
 $$</p>
 <p>where $\mu_+, \mu_- \in \mathbb{H}$ are unit pure real quaternions.</p>
 <h2 id="the-classification">The Classification</h2>
 <h3 id="statement_1">Statement</h3>
 <p><strong>Theorem.</strong> The roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form</p>
 <p>$$
-\xi = \mu_+ e_+ + \mu_- e_-,
+\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-,
 $$</p>
 <p>where $\mu_+$ and $\mu_-$ are unit pure real quaternions. Equivalently, in the standard basis,</p>
 <p>$$
@@ -109,7 +109,7 @@ $$</p>
 <h3 id="proof">Proof</h3>
 <p><strong>Step 1: Reduction.</strong> As shown above, the equation $\xi^2 = -1$ is equivalent to the pair of equations $\xi_+^2 = -1$ and $\xi_-^2 = -1$, where $\xi_\pm \in \mathbb{H}$ are the idempotent components of $\xi$.</p>
 <p><strong>Step 2: Quaternion roots.</strong> The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions. This is the standard result: $\mu^2 = -1$ with $\mu \in \mathbb{H}$ implies $\mu$ is pure and $|\mu| = 1$: writing $\mu = a + v$ with $a$ real and $v$ a vector, the vector part of $\mu^2$ is $2av$, which must vanish, so $a = 0$ or $v = 0$; the case $v = 0$ gives $\mu^2 = a^2 \geq 0 \neq -1$, leaving $a = 0$, and then $\mu^2 = -|v|^2 = -1$ gives $|v| = 1$.</p>
-<p><strong>Step 3: Combination.</strong> Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\xi = \mu_+ e_+ + \mu_- e_-$. Conversely, every root arises this way. $\square$</p>
+<p><strong>Step 3: Combination.</strong> Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$. Conversely, every root arises this way. $\square$</p>
 <h3 id="the-scalar-part">The Scalar Part</h3>
 <p>A root $\xi$ of $-1$ in $\mathbb{H}_{\mathbb{D}}$ has the form</p>
 <p>$$
@@ -135,7 +135,7 @@ $$</p>
 $$</p>
 <p>In this case, the root is</p>
 <p>$$
-\xi = \mu_+ e_+ - \mu_+ e_- = \mu_+ (e_+ - e_-) = \mu_+ j.
+\xi = \mu_+ \tilde\Pi_+ - \mu_+ \tilde\Pi_- = \mu_+ (\tilde\Pi_+ - \tilde\Pi_-) = \mu_+ j.
 $$</p>
 <p>So the pure roots of $-1$ are exactly the elements of the form $\mu j$ with $\mu \in \mathbb{H}$ a unit pure real quaternion. This is a two-dimensional family, parametrized by the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$.</p>
 <h3 id="the-scalar-roots">The Scalar Roots</h3>
@@ -145,7 +145,7 @@ $$</p>
 $$</p>
 <p>In this case, the root is</p>
 <p>$$
-\xi = \mu_+ e_+ + \mu_+ e_- = \mu_+ (e_+ + e_-) = \mu_+.
+\xi = \mu_+ \tilde\Pi_+ + \mu_+ \tilde\Pi_- = \mu_+ (\tilde\Pi_+ + \tilde\Pi_-) = \mu_+.
 $$</p>
 <p>So the scalar roots of $-1$ are exactly the unit pure real quaternions $\mu \in \mathbb{H}$. This is a two-dimensional family.</p>
 <p>But wait: the scalar roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are the elements $\xi = \mu$ with $\mu^2 = -1$ in $\mathbb{H}$. These are the quaternion roots of $-1$ embedded in $\mathbb{H}_{\mathbb{D}}$. They are not the "scalar imaginary" $i$ of the biquaternion case; there is no single scalar root, because the split complex algebra $\mathbb{D}$ has no square root of $-1$.</p>
@@ -162,33 +162,33 @@ $$</p>
 <p>The reason for the difference is that the split complex algebra $\mathbb{D}$ has no square root of $-1$, so there is no "scalar imaginary" root. In the biquaternion case, the scalar imaginary $i$ is a root of $-1$, and it generates the non-trivial roots by combination with the quaternion roots. In the split biquaternion case, there is no such scalar root, and the root set is simply the product of two quaternion root sets.</p>
 <h2 id="the-relation-to-the-idempotents">The Relation to the Idempotents</h2>
 <h3 id="the-idempotents-of-math145">The Idempotents of $\mathbb{H}_{\mathbb{D}}$</h3>
-<p>The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde{P}$ with $\tilde{P}^2 = \tilde{P}$. In the idempotent basis, an element $\tilde{P} = \tilde{P}_+ e_+ + \tilde{P}_- e_-$ is idempotent if and only if</p>
+<p>The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde P$ with $\tilde P^2 = \tilde P$. In the idempotent basis, an element $\tilde P = \tilde P_+ \tilde\Pi_+ + \tilde P_- \tilde\Pi_-$ is idempotent if and only if</p>
 <p>$$
-\tilde{P}_+^2 = \tilde{P}_+, \qquad \tilde{P}_-^2 = \tilde{P}_-.
+\tilde P_+^2 = \tilde P_+, \qquad \tilde P_-^2 = \tilde P_-.
 $$</p>
 <p>In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements</p>
 <p>$$
-0, \qquad e_+, \qquad e_-, \qquad e_+ + e_- = 1.
+0, \qquad \tilde\Pi_+, \qquad \tilde\Pi_-, \qquad \tilde\Pi_+ + \tilde\Pi_- = 1.
 $$</p>
-<p>These are the only idempotents. The two nontrivial idempotents $e_+$ and $e_-$ are the ones associated with the two components.</p>
+<p>These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are the ones associated with the two components.</p>
 <h3 id="the-relation-between-roots-and-idempotents">The Relation Between Roots and Idempotents</h3>
 <p>In the biquaternion case, the roots of $-1$ are related to the idempotents by the formula</p>
 <p>$$
-\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
+\tilde P = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
 $$</p>
 <p>where $\xi$ is a root of $-1$ and $i$ is the scalar imaginary. This formula gives all the idempotents of the biquaternion algebra.</p>
-<p>In the split biquaternion case, the idempotents are the fixed elements $0, e_+, e_-, 1$, and they are not obtained from the roots of $-1$ by a similar formula. The reason is that the split complex algebra has no scalar imaginary, so there is no element to multiply the root by to obtain an idempotent.</p>
+<p>In the split biquaternion case, the idempotents are the fixed elements $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and they are not obtained from the roots of $-1$ by a similar formula. The reason is that the split complex algebra has no scalar imaginary, so there is no element to multiply the root by to obtain an idempotent.</p>
 <p>The relation between the roots of $-1$ and the idempotents is therefore different in the two cases:
 - In $\mathbb{B}$, the roots of $-1$ generate the idempotents.
 - In $\mathbb{H}_{\mathbb{D}}$, the roots of $-1$ and the idempotents are independent structures.</p>
 <p>This is a reflection of the fact that the biquaternion algebra is simple (and its idempotents come from the roots of $-1$), while the split biquaternion algebra is semisimple (and its idempotents come from the split complex algebra).</p>
 <h2 id="the-relation-to-the-zero-divisors">The Relation to the Zero Divisors</h2>
 <h3 id="the-roots-are-not-zero-divisors">The Roots Are Not Zero Divisors</h3>
-<p>A root $\xi$ of $-1$ satisfies $\xi^2 = -1$. In the idempotent basis, $\xi = \mu_+ e_+ + \mu_- e_-$ with $\mu_\pm$ unit pure real quaternions. The idempotent components $\xi_\pm = \mu_\pm$ are nonzero (they are unit quaternions). So $\xi$ is invertible, not a zero divisor.</p>
-<p>The inverse of $\xi$ is $\xi^{-1} = -\xi = -\mu_+ e_+ - \mu_- e_-$.</p>
+<p>A root $\xi$ of $-1$ satisfies $\xi^2 = -1$. In the idempotent basis, $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$ with $\mu_\pm$ unit pure real quaternions. The idempotent components $\xi_\pm = \mu_\pm$ are nonzero (they are unit quaternions). So $\xi$ is invertible, not a zero divisor.</p>
+<p>The inverse of $\xi$ is $\xi^{-1} = -\xi = -\mu_+ \tilde\Pi_+ - \mu_- \tilde\Pi_-$.</p>
 <p>So the roots of $-1$ are invertible elements, and they lie in the group of units $\mathbb{H}_{\mathbb{D}}^\times$.</p>
 <h3 id="the-idempotents-are-zero-divisors">The Idempotents Are Zero Divisors</h3>
-<p>The nontrivial idempotents $e_+$ and $e_-$ are zero divisors: $e_+ e_- = 0$ with both $e_+$ and $e_-$ nonzero. So the idempotents lie in the zero divisor set.</p>
+<p>The nontrivial idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are zero divisors: $\tilde\Pi_+ \tilde\Pi_- = 0$ with both $\tilde\Pi_+$ and $\tilde\Pi_-$ nonzero. So the idempotents lie in the zero divisor set.</p>
 <h3 id="the-cones">The Cones</h3>
 <p>The roots of $-1$ form a four-dimensional submanifold of $\mathbb{H}_{\mathbb{D}}$. The idempotents form a finite set of four points. The relation between the two is not a map from roots to idempotents, as in the biquaternion case, but rather the two structures are independent.</p>
 <h2 id="comparison-with-the-biquaternion-case_1">Comparison with the Biquaternion Case</h2>
@@ -234,7 +234,7 @@ $$</p>
 <tr>
 <td>Idempotents</td>
 <td>$\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$</td>
-<td>$0, e_+, e_-, 1$</td>
+<td>$0, \tilde\Pi_+, \tilde\Pi_-, 1$</td>
 </tr>
 </tbody>
 </table></div>
@@ -243,21 +243,21 @@ $$</p>
 <li><strong>No scalar root.</strong> The split biquaternion algebra has no scalar root of $-1$, because the split complex algebra has no square root of $-1$.</li>
 <li><strong>No non-trivial roots.</strong> The biquaternion algebra has a four-dimensional family of non-trivial roots, which arise from the combination of the scalar imaginary with the quaternion roots. The split biquaternion algebra has no such family, because there is no scalar imaginary.</li>
 <li><strong>The root set is a product.</strong> The split biquaternion root set is the product of two copies of the quaternion root set, parametrized by a pair of unit pure real quaternions. The biquaternion root set is more complicated, because the scalar imaginary interacts with the quaternion roots.</li>
-<li><strong>The idempotents are different.</strong> The idempotents of the split biquaternion algebra are the four elements $0, e_+, e_-, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$.</li>
+<li><strong>The idempotents are different.</strong> The idempotents of the split biquaternion algebra are the four elements $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$.</li>
 </ol>
 <h2 id="the-root-set-as-a-manifold">The Root Set as a Manifold</h2>
 <p>The root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is the product of two copies of the unit sphere $\mathbb{S}^2$:</p>
 <p>$$
 \{\xi \in \mathbb{H}_{\mathbb{D}} : \xi^2 = -1\} \cong \mathbb{S}^2 \times \mathbb{S}^2.
 $$</p>
-<p>The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ e_+ + \mu_- e_-$ and $\mu_\pm$ are unit pure real quaternions.</p>
+<p>The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$ and $\mu_\pm$ are unit pure real quaternions.</p>
 <p>So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimensional manifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$.</p>
 <h3 id="comparison-with-the-biquaternion-root-set">Comparison with the Biquaternion Root Set</h3>
 <p>The biquaternion root set has dimension 4 (the non-trivial family is four-dimensional, and the degenerate families are lower-dimensional). So both root sets have dimension 4, but their structures are different: the biquaternion root set is a four-dimensional stratified space with a more complicated topology, while the split biquaternion root set is the product of two two-spheres.</p>
 <h2 id="summary">Summary</h2>
 <p>The roots of $-1$ in the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form</p>
 <p>$$
-\xi = \mu_+ e_+ + \mu_- e_-,
+\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-,
 $$</p>
 <p>where $\mu_+$ and $\mu_-$ are unit pure real quaternions. Equivalently, in the standard basis,</p>
 <p>$$
@@ -266,7 +266,7 @@ $$</p>
 <p>There are no other roots. The proof is by reduction to the idempotent components: the equation $\xi^2 = -1$ is equivalent to the pair of equations $\xi_+^2 = -1$ and $\xi_-^2 = -1$, and the roots of $-1$ in the quaternion algebra are the unit pure real quaternions.</p>
 <p>The root set is parametrized by a pair of unit pure real quaternions, i.e., by a pair of points on the two-sphere $\mathbb{S}^2$. It is therefore a compact four-dimensional manifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$.</p>
 <p>The pure roots (with vanishing scalar part) are the elements $\mu j$ with $\mu$ a unit pure real quaternion. The scalar roots (with vanishing vector part) are the unit pure real quaternions themselves. The general root is a combination of the two.</p>
-<p>The roots of $-1$ are invertible and lie in the group of units. They are not zero divisors. The relation to the idempotents is different from the biquaternion case: in the split biquaternion algebra, the idempotents are the fixed elements $0, e_+, e_-, 1$, and they are not generated by the roots of $-1$.</p>
+<p>The roots of $-1$ are invertible and lie in the group of units. They are not zero divisors. The relation to the idempotents is different from the biquaternion case: in the split biquaternion algebra, the idempotents are the fixed elements $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and they are not generated by the roots of $-1$.</p>
 <p>The split biquaternion root set is simpler than the biquaternion root set, because the split complex algebra has no square root of $-1$, so there is no scalar imaginary root and no non-trivial roots. The root set is the product of two copies of the quaternion root set, which is a clean and simple structure.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -286,7 +286,7 @@ $$</p>
 <td>Root of $-1$</td>
 </tr>
 <tr>
-<td>$\xi_\pm = \xi e_\pm$</td>
+<td>$\xi_\pm = \xi \tilde\Pi_\pm$</td>
 <td>Idempotent components</td>
 </tr>
 <tr>
@@ -294,11 +294,11 @@ $$</p>
 <td>Unit pure real quaternions</td>
 </tr>
 <tr>
-<td>$e_+ = \tfrac{1}{2}(1 + j)$</td>
+<td>$\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$</td>
 <td>Positive idempotent</td>
 </tr>
 <tr>
-<td>$e_- = \tfrac{1}{2}(1 - j)$</td>
+<td>$\tilde\Pi_- = \tfrac{1}{2}(1 - j)$</td>
 <td>Negative idempotent</td>
 </tr>
 <tr>

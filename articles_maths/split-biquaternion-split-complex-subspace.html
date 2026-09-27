@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Biquaternion Split-Complex Subspace — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-biquaternion-split-complex-subspace"><strong>Split-Biquaternion Split-Complex Subspace</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries four linear involutions, and each of them splits $\mathbb{H}_{\mathbb{D}}$ into a fixed space and an anti-fixed space. Four of the resulting spaces — the split complex subspace, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace — are the distinguished real subspaces of the algebra and are the subject of the four single-subspace articles. This article treats the smallest of them, the <strong>split complex subspace</strong> $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, on its own: its definition, its basis, its algebra structure, the restriction of the norm form to it, its idempotents and zero divisors, the action of the four involutions upon it, and its intersections with the other subspaces. The companions are <em>Split-Biquaternion Quaternion Subspace</em>, <em>Split-Biquaternion Hermitian Subspace</em> and <em>Split-Biquaternion Anti-Hermitian Subspace</em>; their relations with one another are collected in <em>Split-Biquaternion Relations Between Subspaces</em>, and the involutions themselves in <em>Split-Biquaternion Involution Lattice</em>.</p>
+<p>The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the split complex algebra $\mathbb{D}$ from the article on split complex algebra, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. The two idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ are assumed known.</p>
+<p>Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (split complex), ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ (Hermitian) and ${}^{\flat} = -{}^{\dagger}$ (anti-Hermitian). The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$.</p>
+<h2 id="definition-and-basis">Definition and Basis</h2>
+<p><strong>Definition.</strong> The <strong>split complex subspace</strong> is the fixed space of quaternion conjugation,</p>
+<p>$$
+\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \bar{\tilde{Q}} = \tilde{Q} \right\},
+$$</p>
+<p>where quaternion conjugation is $\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$.</p>
+<p>Since $\bar{\cdot}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{H}_{\mathbb{D}}$ is the direct sum of its fixed space and its anti-fixed space. The anti-fixed space is the <strong>vector subspace</strong> $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$, the set of elements with vanishing split scalar part, of real dimension $6$; it has no dedicated article in this series, and is mentioned only where a relation requires it.</p>
+<h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
+<p>Comparing the two sides of $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient: the coefficient of $e_0$ gives $Q_0 = Q_0$, no condition; the coefficient of $e_k$ gives $-Q_k = Q_k$, that is $Q_k = 0$, for $k = 1, 2, 3$. The subspace is therefore the set of elements with <strong>vanishing vector part</strong>,</p>
+<p>$$
+\tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{D}.
+$$</p>
+<h3 id="basis-and-dimension">Basis and Dimension</h3>
+<p><strong>Proposition.</strong> The split complex subspace is a real vector space of dimension $2$, with basis $e_0, j$. In real coordinates it is the coordinate plane $q_1 = q_2 = q_3 = q'_1 = q'_2 = q'_3 = 0$, with the two free parameters $q_0$ and $q'_0$.</p>
+<p><strong>Proof.</strong> The four split complex coefficients reduce to $Q_0$ alone, and a split complex number is a real pair $Q_0 = q_0 + j q'_0$; the elements $e_0$ and $j$ are linearly independent over $\mathbb{R}$ and span the set. $\square$</p>
+<p>Of the four distinguished subspaces, $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the only one of dimension $2$; the other three have dimension $4$.</p>
+<h2 id="algebra-structure">Algebra Structure</h2>
+<h3 id="it-is-the-centre-of-the-algebra">It Is the Centre of the Algebra</h3>
+<p><strong>Theorem.</strong> $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the centre of $\mathbb{H}_{\mathbb{D}}$,</p>
+<p>$$
+\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}\tilde{R} = \tilde{R}\tilde{Q} \ \text{for every} \ \tilde{R} \in \mathbb{H}_{\mathbb{D}} \right\}.
+$$</p>
+<p><strong>Proof.</strong> An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$, because $Q_k e_k$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{D}$-multiples of $e_0$, which is the fixed space of $\bar{\cdot}$. $\square$</p>
+<p>The subspace therefore has two descriptions: it is the fixed space of quaternion conjugation, and it is the centre of the algebra. Its elements are the <strong>central elements</strong>, written $z e_0$ with $z \in \mathbb{D}$.</p>
+<h3 id="subalgebra-commutativity-and-the-absence-of-a-field-structure">Subalgebra, Commutativity, and the Absence of a Field Structure</h3>
+<p><strong>Proposition.</strong> $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is a subalgebra of $\mathbb{H}_{\mathbb{D}}$, it is commutative, and as a real algebra it is isomorphic to $\mathbb{D}$ via $Q_0 e_0 \mapsto Q_0$.</p>
+<p><strong>Proof.</strong> For two central elements, $(Q_0 e_0)(R_0 e_0) = (Q_0 R_0) e_0$, which lies in the subspace; commutativity is the commutativity of $\mathbb{D}$; and the displayed map is a bijective ring homomorphism because $e_0$ is the unit. $\square$</p>
+<p>The subspace is a <strong>subalgebra</strong>, and it is one of the two subalgebras among the four distinguished subspaces, the other being the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. It is the only <strong>commutative</strong> one. Unlike the biquaternion centre, however, it is <strong>not a field</strong>: the split complex algebra is not a division algebra, having the zero divisors $\tilde\Pi_+$ and $\tilde\Pi_-$. As a real algebra it is $\mathbb{R} \oplus \mathbb{R}$ through the idempotent basis, and its group of units is the four open quadrants of the plane, not the punctured plane.</p>
+<h3 id="ideals">Ideals</h3>
+<p>Being the centre, $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ acts on $\mathbb{H}_{\mathbb{D}}$ by scalar extension: $\mathbb{H}_{\mathbb{D}}$ has $\mathbb{D}$-basis $e_0, e_1, e_2, e_3$. The subspace is not a proper two-sided ideal of $\mathbb{H}_{\mathbb{D}}$; the two coordinate lines $\mathbb{R} \tilde\Pi_+$ and $\mathbb{R} \tilde\Pi_-$ inside it are two-sided ideals of the subalgebra $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, and they are the intersections with the centre of the minimal ideals $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ of the algebra. The ideal theory of the algebra is developed in <em>Split-Biquaternion Ideals and Peirce Decomposition</em>, and that of the centre is the ideal theory of $\mathbb{R} \oplus \mathbb{R}$.</p>
+<h3 id="multiplication-tables">Multiplication Tables</h3>
+<p>The products within the subspace and with the vector units are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>value</th>
+<th>product</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0 \cdot e_0$</td>
+<td>$e_0$</td>
+<td>$e_0 \cdot e_k$</td>
+<td>$e_k$</td>
+</tr>
+<tr>
+<td>$j \cdot e_0$</td>
+<td>$j$</td>
+<td>$j \cdot e_k$</td>
+<td>$j e_k$</td>
+</tr>
+<tr>
+<td>$e_0 \cdot j$</td>
+<td>$j$</td>
+<td>$e_k \cdot e_0$</td>
+<td>$e_k$</td>
+</tr>
+</tbody>
+</table></div>
+<p>for $k = 1, 2, 3$. The table states that $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ multiplies into every subspace and is multiplied into by every subspace with no sign change: multiplication by a central element is a scalar extension, and the vector subspace is closed under multiplication by $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ in the same way.</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<p><strong>Proposition.</strong> On the split complex subspace the norm form is the square of the coefficient,</p>
+<p>$$
+N(\tilde{Q}) = Q_0^2, \qquad \tilde{Q} = Q_0 e_0.
+$$</p>
+<p><strong>Proof.</strong> $\bar{\tilde{Q}} = \tilde{Q}$ on the subspace, so $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \tilde{Q}^2 = Q_0^2 e_0$, read as the split complex scalar $Q_0^2$. $\square$</p>
+<p>Two features are worth isolating. First, $N$ takes <strong>split complex</strong> values on the subspace: writing $Q_0 = q_0 + j q'_0$, one has $Q_0^2 = (q_0^2 + q'^2_0) + 2 j q_0 q'_0$, real on the lines $q'_0 = 0$ and $q_0 = 0$ separately but not in general. Second, the real restriction in the basis $e_0, j$ has the matrix $\operatorname{diag}(1, 1)$ on the real part and $2 q_0 q'_0$ on the split-imaginary part, so the associated quadratic form is <strong>not</strong> definite: this is the form $N$ restricted to the two-dimensional centre, and its isotropic lines are the light lines $Q_0 = a \tilde\Pi_\pm$.</p>
+<h3 id="units-and-zero-divisors">Units and Zero Divisors</h3>
+<p><strong>Theorem.</strong> For $\tilde{Q} = Q_0 e_0$, the following are equivalent:</p>
+<ol>
+<li>$\tilde{Q}$ is a unit of $\mathbb{H}_{\mathbb{D}}$;</li>
+<li>$N(\tilde{Q}) = Q_0^2$ is a unit of $\mathbb{D}$;</li>
+<li>$Q_0$ is a unit of $\mathbb{D}$, that is $Q_0 = q_0 + j q'_0$ with $q_0^2 \neq q'^2_0$.</li>
+</ol>
+<p>The inverse is $\tilde{Q}^{-1} = Q_0^{-1} e_0 = \dfrac{Q_0^*}{Q_0 Q_0^*} e_0 = \dfrac{q_0 - j q'_0}{q_0^2 - q'^2_0} e_0$.</p>
+<p><strong>Proof.</strong> $N(Q_0 e_0) = Q_0^2$ is a unit of $\mathbb{D}$ exactly when $Q_0$ is, since $\mathbb{D}$ is commutative; a split complex number is a unit precisely when its real form norm $q_0^2 - q'^2_0$ is nonzero. The inverse formula is the standard inverse in $\mathbb{D}$. $\square$</p>
+<p><strong>Corollary.</strong> The zero divisors of the split complex subspace are exactly the nonzero elements of the two <strong>light lines</strong></p>
+<p>$$
+\mathbb{R} \tilde\Pi_+ \cup \mathbb{R} \tilde\Pi_-, \qquad \tilde\Pi_+ = \tfrac{1}{2}(1 + j), \quad \tilde\Pi_- = \tfrac{1}{2}(1 - j),
+$$</p>
+<p>and the annihilator of each light line is the other.</p>
+<p><strong>Proof.</strong> A split complex number $Q_0 = q_0 + j q'_0$ is a zero divisor exactly when $q_0^2 = q'^2_0$, that is $q_0 = \pm q'_0$, which is the union of the lines $\mathbb{R}(1 + j) = \mathbb{R} \tilde\Pi_+$ and $\mathbb{R}(1 - j) = \mathbb{R} \tilde\Pi_-$. Since $\tilde\Pi_+ \tilde\Pi_- = 0$, each line annihilates the other. $\square$</p>
+<p>This is the first sharp difference from the biquaternion centre: there the norm form vanished only at the origin and the subspace was a field, whereas here the norm form degenerates on two lines and the subspace is only a product of fields.</p>
+<h2 id="the-idempotents-of-the-centre">The Idempotents of the Centre</h2>
+<p><strong>Proposition.</strong> The idempotents of $\mathbb{H}_{\mathbb{D}}$ all lie in the split complex subspace, and they are exactly</p>
+<p>$$
+0, \qquad \tilde\Pi_+, \qquad \tilde\Pi_-, \qquad 1.
+$$</p>
+<p><strong>Proof.</strong> Solve $Q_0^2 = Q_0$ in $\mathbb{D}$. In the idempotent basis $Q_0 = \lambda_+ \tilde\Pi_+ + \lambda_- \tilde\Pi_-$, so $Q_0^2 = \lambda_+^2 \tilde\Pi_+ + \lambda_-^2 \tilde\Pi_-$; the equation holds exactly when $\lambda_+, \lambda_- \in \{0, 1\}$. The four combinations are $0, \tilde\Pi_+, \tilde\Pi_-, 1$. Every idempotent of $\mathbb{H}_{\mathbb{D}}$ is one of these, as proved in <em>Split-Biquaternion Idempotents and Projections</em>. $\square$</p>
+<p>The idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are the two nontrivial ones, they are orthogonal and primitive, and they lie in the centre — unlike the biquaternion case, where the nontrivial idempotents are noncentral and lie outside the centre. Since they are central, the decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$ generated by them is a decomposition into two-sided ideals. The idempotents are the only nonzero elements of the light lines that are idempotent; the remaining points of each light line are nilpotent-free zero divisors, and there are no nilpotents in the centre.</p>
+<h2 id="the-four-involutions-on-it">The Four Involutions on It</h2>
+<p>Each of the four involutions preserves the condition $Q_1 = Q_2 = Q_3 = 0$, so the subspace is invariant under all four. Their action in the basis $e_0, j$ is diagonal:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>$\tilde{Q} = Q_0 e_0$</th>
+<th>matrix on $e_0, j$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$Q_0 e_0$</td>
+<td>$\operatorname{diag}(1, 1)$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$Q_0^{*} e_0$</td>
+<td>$\operatorname{diag}(1, -1)$</td>
+</tr>
+<tr>
+<td>${}^{\dagger}$</td>
+<td>$Q_0^{*} e_0$</td>
+<td>$\operatorname{diag}(1, -1)$</td>
+</tr>
+<tr>
+<td>${}^{\flat}$</td>
+<td>$-Q_0^{*} e_0$</td>
+<td>$\operatorname{diag}(-1, 1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Quaternion conjugation fixes the subspace pointwise — it is the defining involution — and Hermitian conjugation agrees with split complex conjugation there, because $\dagger = {}^{*}\circ\bar{\cdot}$ and $\bar{\cdot}$ acts as the identity. Split complex conjugation acts as the exchange $j \mapsto -j$, the non-trivial involution of $\mathbb{D}$, and anti-Hermitian conjugation is its negative. So of the four involutions only $\bar{\cdot}$ acts trivially on the centre, and ${}^{*}$ is the one that swaps the two light lines $\mathbb{R} \tilde\Pi_+$ and $\mathbb{R} \tilde\Pi_-$.</p>
+<h2 id="relations-to-the-other-subspaces">Relations to the Other Subspaces</h2>
+<p>The intersections of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ with the other distinguished subspaces are, with dimensions:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>intersection</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$</td>
+<td>$\mathbb{R}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+$</td>
+<td>$\mathbb{R}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_-$</td>
+<td>$j\mathbb{R}$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two lines $\mathbb{R}$ and $j\mathbb{R}$ are the <strong>coordinate blocks</strong> of the centre, and it is their direct sum:</p>
+<p>$$
+\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{R} \oplus j\mathbb{R}, \qquad \mathbb{R} = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+, \qquad j\mathbb{R} = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_-.
+$$</p>
+<p>The intersection with the vector subspace is the origin, so $\mathbb{H}_{\mathbb{D}} = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ is the split scalar–vector decomposition of the algebra; with each of the other two subspaces the intersection is one-dimensional, so no pair among them spans $\mathbb{H}_{\mathbb{D}}$. The same pattern is recorded for all four subspaces in <em>Split-Biquaternion Relations Between Subspaces</em>.</p>
+<h2 id="the-image-in-the-two-halves">The Image in the Two Halves</h2>
+<p>Under the idempotent-decomposition isomorphism $\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}$, a central element has image the pair of <strong>real scalars</strong></p>
+<p>$$
+\varphi(Q_0 e_0) = (Q_0^+, Q_0^-), \qquad Q_0^\pm = q_0 \pm q'_0 \in \mathbb{R}.
+$$</p>
+<p>The image of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is therefore the set $\mathbb{R} \oplus \mathbb{R}$ of pairs of real scalars, the centre of $\mathbb{H} \oplus \mathbb{H}$. The norm form has the matching description</p>
+<p>$$
+N(Q_0 e_0) = (Q_0^+)^2 \tilde\Pi_+ + (Q_0^-)^2 \tilde\Pi_-,
+$$</p>
+<p>the pair of squares of the two real scalars. The two light lines are the loci $Q_0^- = 0$ and $Q_0^+ = 0$, so the norm form degenerates on the coordinate axes of the pair, exactly as the two-dimensional split complex plane requires.</p>
+<h2 id="summary">Summary</h2>
+<p>The split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_0 e_0$ with vanishing vector part; it is a real vector space of dimension $2$ with basis $e_0, j$. It coincides with the centre of the algebra, is a commutative subalgebra isomorphic to the split complex algebra $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, and is one of the two subalgebras among the four distinguished subspaces. It is <strong>not</strong> a field: the norm form restricts to $N = Q_0^2$, which is split-complex-valued and degenerates on the two light lines $\mathbb{R} \tilde\Pi_\pm$, and these are exactly the zero divisors of the subspace, each annihilating the other. The units are the elements with $Q_0$ a unit of $\mathbb{D}$, that is $Q_0 = q_0 + j q'_0$ with $q_0^2 \neq q'^2_0$, and the inverse is $Q_0^{-1} e_0 = (q_0 - j q'_0)/(q_0^2 - q'^2_0)\, e_0$. All four idempotents $0, \tilde\Pi_+, \tilde\Pi_-, 1$ of the algebra lie in the subspace, unlike the biquaternion case, where the nontrivial idempotents are noncentral. Of the four involutions, quaternion conjugation fixes the subspace pointwise, split complex and Hermitian conjugations act by $j \mapsto -j$ and swap the two light lines, and anti-Hermitian conjugation is the negative of that. The subspace meets the vector subspace only at the origin and meets both the quaternion and Hermitian subspaces in $\mathbb{R}$, the anti-Hermitian subspace in $j\mathbb{R}$, so it is the direct sum of the two coordinate blocks $\mathbb{R}$ and $j\mathbb{R}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>Split biquaternion algebra, real dimension $8$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
+<td>General element, $Q_\mu \in \mathbb{D}$</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + j q'_\mu$</td>
+<td>Real and split-imaginary parts of a coefficient</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>Split complex unit, central, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>Idempotents, giving the light lines $\mathbb{R} \tilde\Pi_\pm$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</td>
+<td>Split complex subspace, the centre, fixed space of $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$</td>
+<td>Vector subspace, the anti-fixed space of $\bar{\cdot}$, $\dim 6$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$</td>
+<td>Quaternion, Hermitian, anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$</td>
+<td>The four conjugations</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
+<td>Norm form, restricting to $Q_0^2$</td>
+</tr>
+<tr>
+<td>$\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$</td>
+<td>Idempotent-decomposition isomorphism</td>
+</tr>
+<tr>
+<td>$\mathbb{R}, j\mathbb{R}$</td>
+<td>The two coordinate blocks of the centre</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the original treatment of the biquaternion algebra and its centre.</li>
+<li>I. L. Kantor and A. S. Solodovnikov, <em>Hypercomplex Numbers: An Elementary Introduction to Algebras</em> (Springer, 1989), for the split complex numbers and the idempotent decomposition of algebras of split signature.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, 1997), for the centre and the idempotent decomposition of the split biquaternion algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for fixed spaces of involutions in Clifford algebras of split signature.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples in the Dual-Number Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-in-the-dual-number-algebra"><strong>Worked Examples in the Dual-Number Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article collects explicit computations in the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, in the spirit of the worked computation that accompanies the algebra of a number system. It follows <em>Dual-Numbers Algebra</em> for the conventions, <em>Dual-Numbers Norm and Invertibility</em> for the norm form and the criterion for invertibility, <em>Dual-Numbers Ideals and the Maximal Ideal</em> for the ideal structure, <em>Dual-Numbers Zero Divisors</em> for the zero-divisor classification. Every computation was recomputed in exact rational arithmetic; where a floating-point value appears it is flagged.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Unless a statement is labelled otherwise, the base is $R = \mathbb{R}$ and the algebra is $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$. A general dual number is</p>
+<p>$$
+Z = a + \varepsilon b, \qquad a, b \in \mathbb{R},
+$$</p>
+<p>with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, norm form $N(Z) = Z\bar{Z} = a^2$, and maximal ideal $\mathfrak{m} = (\varepsilon)$. The two distinguished submodules are $R_{\mathbb{D}'} = \mathbb{R}\cdot 1$ and $\varepsilon R_{\mathbb{D}'} = \varepsilon\mathbb{R}$.</p>
+<p>Each computation below is a worked instance of a general result proved in a companion article; the instance is stated with its reference, so that the article remains a table of examples rather than a second proof of the theory.</p>
+<h2 id="the-algebra-in-coordinates">The Algebra in Coordinates</h2>
+<h3 id="the-basis-and-the-product">The Basis and the Product</h3>
+<p>The algebra has the basis $\{1, \varepsilon\}$ with the multiplication table</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$1$</th>
+<th>$\varepsilon$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>$\varepsilon$</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>$\varepsilon$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Example (product, worked).</strong> For $Z = 2 + 3\varepsilon$ and $W = 4 + 5\varepsilon$,</p>
+<p>$$
+ZW = (2\cdot 4) + (2\cdot 5 + 3\cdot 4)\varepsilon = 8 + 22\varepsilon.
+$$</p>
+<p>The real parts multiply, and the infinitesimal part is $a\,d + b\,c$; the cross terms do not interact, because $\varepsilon^2 = 0$.</p>
+<p><strong>Example (squaring, worked).</strong> For $Z = a + \varepsilon b$, the square is</p>
+<p>$$
+Z^2 = a^2 + 2ab\,\varepsilon.
+$$</p>
+<p>In particular $(2 + 3\varepsilon)^2 = 4 + 12\varepsilon$ and $(\varepsilon)^2 = 0$.</p>
+<h3 id="the-conjugate-and-the-norm">The Conjugate and the Norm</h3>
+<p><strong>Example (worked).</strong> $\overline{2 + 3\varepsilon} = 2 - 3\varepsilon$ and</p>
+<p>$$
+N(2 + 3\varepsilon) = (2 + 3\varepsilon)(2 - 3\varepsilon) = 4.
+$$</p>
+<p>The norm form ignores the infinitesimal part: $N(2 + 3\varepsilon) = N(2) = 4 = 2^2$.</p>
+<h2 id="the-two-involutions">The Two Involutions</h2>
+<h3 id="the-identity-involution">The Identity Involution</h3>
+<p>The identity map $\operatorname{id}(Z) = Z$ is an involutive algebra automorphism. Its fixed-point submodule is the whole algebra $\mathbb{D}'$, and the associated $\pm1$-eigenspace decomposition is the trivial one, with eigenvalue $+1$ everywhere.</p>
+<h3 id="the-dual-conjugation">The Dual Conjugation</h3>
+<p>Dual conjugation is</p>
+<p>$$
+\bar{\cdot} : a + \varepsilon b \longmapsto a - \varepsilon b.
+$$</p>
+<p><strong>Example (worked).</strong> $\overline{2 + 3\varepsilon} = 2 - 3\varepsilon$; applying it twice returns $2 + 3\varepsilon$, so $\bar{\bar{Z}} = Z$. It is an algebra automorphism: $\overline{ZW} = \bar{Z}\bar{W}$, checked on the worked product by $\overline{8 + 22\varepsilon} = 8 - 22\varepsilon$ and $(2 - 3\varepsilon)(4 - 5\varepsilon) = 8 - 22\varepsilon$.</p>
+<h3 id="the-fixed-point-submodules">The Fixed-Point Submodules</h3>
+<p><strong>Proposition.</strong> The $+1$-eigenspace of dual conjugation is the real submodule</p>
+<p>$$
+R_{\mathbb{D}'} = \{Z : \bar{Z} = Z\} = \{a : a \in \mathbb{R}\},
+$$</p>
+<p>and the $-1$-eigenspace is the infinitesimal submodule</p>
+<p>$$
+\varepsilon R_{\mathbb{D}'} = \{Z : \bar{Z} = -Z\} = \{b\varepsilon : b \in \mathbb{R}\}.
+$$</p>
+<p><strong>Proof.</strong> $\bar{a + \varepsilon b} = a - \varepsilon b$ equals $a + \varepsilon b$ exactly when $b = 0$, and equals $-(a + \varepsilon b)$ exactly when $a = 0$; the two sets are as displayed. $\square$</p>
+<p><strong>Example (worked projections).</strong> For $Z = 2 + 3\varepsilon$,</p>
+<p>$$
+\tfrac{1}{2}(Z + \bar{Z}) = 2, \qquad \tfrac{1}{2}(Z - \bar{Z}) = 3\varepsilon,
+$$</p>
+<p>and indeed $2 + 3\varepsilon = 2 + 3\varepsilon$.</p>
+<h3 id="the-intersection">The Intersection</h3>
+<p><strong>Proposition.</strong> $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = \{0\}$, and $\mathbb{D}' = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}$.</p>
+<p><strong>Proof.</strong> An element of the intersection satisfies $b = 0$ and $a = 0$, so it is zero. The sum decomposition is the worked projection identity above. $\square$</p>
+<p>So the algebra has exactly <strong>one</strong> nontrivial involution, and the two submodules are the eigenspaces. The biquaternion algebra, by contrast, carries four conjugations and six eigenspace-type subspaces; here the lattice degenerates to two submodules and the single relation $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = 0$.</p>
+<h2 id="the-nilpotents-and-the-maximal-ideal">The Nilpotents and the Maximal Ideal</h2>
+<h3 id="squaring-the-maximal-ideal">Squaring the Maximal Ideal</h3>
+<p><strong>Example (worked).</strong> Every element of $\mathfrak{m} = \varepsilon\mathbb{R}$ is nilpotent of index two:</p>
+<p>$$
+(3\varepsilon)^2 = 9\varepsilon^2 = 0, \qquad (-5\varepsilon)^2 = 25\varepsilon^2 = 0, \qquad (7\varepsilon)^2 = 0.
+$$</p>
+<p>So $\mathfrak{m}^2 = 0$ and $\mathfrak{m} \neq 0$: the maximal ideal is nilpotent of index exactly two.</p>
+<p><strong>Example (worked).</strong> A mixed element is never nilpotent: $(2 + 3\varepsilon)^2 = 4 + 12\varepsilon \neq 0$, and more generally $(a + \varepsilon b)^n = a^n + na^{n-1}\varepsilon b$, which vanishes only when $a = 0$.</p>
+<h3 id="the-powers-of-an-element">The Powers of an Element</h3>
+<p><strong>Proposition.</strong> For every integer $n \geq 1$, $(a + \varepsilon b)^n = a^n + n\,a^{n-1}\varepsilon b$, interpreted for $n = 1$ as the element itself.</p>
+<p><strong>Proof.</strong> Induction on $n$ using $(a + \varepsilon b)^n(a + \varepsilon b) = a^{n+1} + (n a^{n-1}b\,a + a^n b)\varepsilon = a^{n+1} + (n+1)a^n \varepsilon b$. $\square$</p>
+<p><strong>Example (worked).</strong> $(1 + \varepsilon)^{5} = 1 + 5\varepsilon$, and $(2 + \varepsilon)^3 = 8 + 12\varepsilon$.</p>
+<h2 id="explicit-zero-divisor-pairs">Explicit Zero-Divisor Pairs</h2>
+<h3 id="the-general-pair">The General Pair</h3>
+<p>By <em>Dual-Numbers Zero Divisors</em> the zero divisors are exactly the nonzero elements of $\mathfrak{m}$, that is, the elements $\varepsilon b$ with $b \neq 0$, and any two of them multiply to zero:</p>
+<p>$$
+(\varepsilon b)(\varepsilon d) = bd\,\varepsilon^2 = 0 \qquad \text{for all } b, d.
+$$</p>
+<h3 id="a-table">A Table</h3>
+<p>Each row is a pair of nonzero zero divisors whose product is zero; the product is computed in the last column.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$Z$</th>
+<th>$W$</th>
+<th>$ZW$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varepsilon$</td>
+<td>$\varepsilon$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$2\varepsilon$</td>
+<td>$5\varepsilon$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-3\varepsilon$</td>
+<td>$\varepsilon$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$7\varepsilon$</td>
+<td>$-4\varepsilon$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The point is that the annihilation is not special to any pair: it holds for every pair of nonzero elements of the line $\mathfrak{m}$. Equivalently, $\operatorname{Ann}(\varepsilon b) = \mathfrak{m}$ for every $b \neq 0$, so every nonzero zero divisor annihilates the entire punctured line.</p>
+<p><strong>Example (worked, mixed pair).</strong> The element $2 + 3\varepsilon$ is not a zero divisor and annihilates nothing nonzero:</p>
+<p>$$
+(2 + 3\varepsilon)(c + \varepsilon d) = 2c + (2d + 3c)\varepsilon,
+$$</p>
+<p>which vanishes only when $c = 0$ and $2d + 3c = 0$, that is $c = d = 0$.</p>
+<h2 id="the-norm-criterion-worked">The Norm Criterion Worked</h2>
+<h3 id="units">Units</h3>
+<p><strong>Example (worked).</strong> $Z = 2 + 3\varepsilon$ has real part $2 \neq 0$, so it is a unit, and $N(Z) = 4 \neq 0$. Its inverse is</p>
+<p>$$
+Z^{-1} = \frac{1}{2} - \frac{3}{4}\,\varepsilon,
+$$</p>
+<p>and the check is</p>
+<p>$$
+(2 + 3\varepsilon)\Bigl(\tfrac{1}{2} - \tfrac{3}{4}\varepsilon\Bigr) = 1 + \Bigl(-\tfrac{3}{2} + \tfrac{3}{2}\Bigr)\varepsilon = 1.
+$$</p>
+<h3 id="non-units">Non-Units</h3>
+<p><strong>Example (worked).</strong> $Z = 0 + 3\varepsilon$ has real part $0$, so it is not a unit, and $N(Z) = 0$. Any attempted inverse fails: if $(3\varepsilon)(c + \varepsilon d) = 3c\,\varepsilon = 1$, then $3c = 1$ and $0 = 1$, a contradiction.</p>
+<p><strong>Example (worked).</strong> $Z = -4 + \varepsilon$ has real part $-4 \neq 0$, so it is a unit, since the criterion is $a \neq 0$ and not $a > 0$:</p>
+<p>$$
+(-4 + \varepsilon)^{-1} = -\frac{1}{4} - \frac{1}{16}\varepsilon.
+$$</p>
+<h3 id="the-inverse-worked-in-general">The Inverse Worked, in General</h3>
+<p><strong>Example (worked).</strong> For $Z = a + \varepsilon b$ with $a \neq 0$, the inverse formula gives</p>
+<p>$$
+Z^{-1} = \frac{1}{a} - \frac{b}{a^2}\,\varepsilon,
+$$</p>
+<p>and the general check is</p>
+<p>$$
+(a + \varepsilon b)\Bigl(\frac{1}{a} - \frac{b}{a^2}\varepsilon\Bigr) = 1 + \Bigl(-\frac{b}{a} + \frac{b}{a}\Bigr)\varepsilon = 1.
+$$</p>
+<h2 id="worked-exponential-and-logarithmic-forms">Worked Exponential and Logarithmic Forms</h2>
+<h3 id="the-exponential">The Exponential</h3>
+<p>By <em>Dual-Numbers Exponential and Lie Group Structure</em>, the exponential of a dual number is</p>
+<p>$$
+\exp(a + \varepsilon b) = e^{a}\bigl(1 + \varepsilon b\bigr) = e^{a} + e^{a}\varepsilon b.
+$$</p>
+<p><strong>Example (worked).</strong> $\exp(2 + 3\varepsilon) = e^{2}(1 + 3\varepsilon)$. Numerically, $e^2 = 7.389056\ldots$, so the real part is $7.389056\ldots$ and the infinitesimal part is $3e^2 = 22.167168\ldots$.</p>
+<p><strong>Example (worked).</strong> $\exp(\varepsilon) = 1 + \varepsilon$, $\exp(s\varepsilon) = 1 + s\varepsilon$ for every $s \in \mathbb{R}$; the exponential of a purely infinitesimal element is a shear.</p>
+<h3 id="the-logarithm">The Logarithm</h3>
+<p>The dual logarithm inverts the exponential on the shear group $1 + \mathfrak{m}$:</p>
+<p>$$
+\log(1 + s\varepsilon) = s\varepsilon, \qquad \exp(\log(1 + s\varepsilon)) = 1 + s\varepsilon.
+$$</p>
+<p><strong>Example (worked).</strong> $\log(1 + 5\varepsilon) = 5\varepsilon$ and $\log(1 - \varepsilon) = -\varepsilon$.</p>
+<h2 id="relation-between-the-decompositions">Relation Between the Decompositions</h2>
+<p>The two decompositions of the dual-number algebra coincide, and the worked examples make the coincidence explicit.</p>
+<ul>
+<li>The <strong>conjugate decomposition</strong> is $\mathbb{D}' = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}$, from the eigenspaces of $\bar{\cdot}$; worked for $Z = 2 + 3\varepsilon$ as $Z = 2 + 3\varepsilon$.</li>
+<li>The <strong>real–infinitesimal decomposition</strong> is the same identity written as $Z = \operatorname{Re}(Z) + \operatorname{Inf}(Z)\varepsilon$.</li>
+<li>The <strong>norm form</strong> reads $N(Z) = (\operatorname{Re} Z)^2$ on the first summand and $N(Z) = 0$ on the second.</li>
+</ul>
+<p>There is no third decomposition, and no nontrivial Peirce decomposition: the only idempotents are $0$ and $1$, so the corners of <em>Dual-Numbers Ideals and the Maximal Ideal</em> are trivial. The single relation $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = \{0\}$ is the only intersection of the two submodules, and the worked example $2 + 3\varepsilon = 2 + 3\varepsilon$ is its arithmetic content.</p>
+<h2 id="summary">Summary</h2>
+<p>The worked computations in the dual-number algebra are these. The two involutions are the identity and dual conjugation; the identity has fixed set all of $\mathbb{D}'$, dual conjugation has $+1$-eigenspace $R_{\mathbb{D}'} = \mathbb{R}$ and $-1$-eigenspace $\varepsilon R_{\mathbb{D}'} = \varepsilon\mathbb{R}$, meeting only in $0$. Every element of the maximal ideal is nilpotent of index two, $(\varepsilon b)^2 = 0$, while a mixed element has $(a + \varepsilon b)^n = a^n + na^{n-1}\varepsilon b$ and is never nilpotent unless $a = 0$. The zero divisors are the nonzero elements $\varepsilon b$ of $\mathfrak{m}$, and any two of them multiply to zero; for instance $(2\varepsilon)(5\varepsilon) = 0$. The criterion for a unit is $a \neq 0$, and the inverse is $a^{-1} - a^{-2}\varepsilon b$; the check $(2 + 3\varepsilon)(\tfrac{1}{2} - \tfrac{3}{4}\varepsilon) = 1$ is the worked instance. The exponential is $\exp(a + \varepsilon b) = e^a(1 + \varepsilon b)$ and the dual logarithm is $\log(1 + s\varepsilon) = s\varepsilon$. The two decompositions of the algebra coincide, and no nontrivial Peirce decomposition exists.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>Dual-number algebra; $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$Z = a + \varepsilon b$</td>
+<td>General dual number</td>
+</tr>
+<tr>
+<td>$a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$</td>
+<td>Real and infinitesimal parts</td>
+</tr>
+<tr>
+<td>$\bar{Z} = a - \varepsilon b$</td>
+<td>Dual conjugation, the nontrivial involution</td>
+</tr>
+<tr>
+<td>$R_{\mathbb{D}'}$, $\varepsilon R_{\mathbb{D}'}$</td>
+<td>Real and infinitesimal submodules</td>
+</tr>
+<tr>
+<td>$N(Z) = Z\bar{Z} = a^2$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\mathfrak{m} = (\varepsilon)$</td>
+<td>Maximal ideal, $\mathfrak{m}^2 = 0$</td>
+</tr>
+<tr>
+<td>$\exp(a + \varepsilon b) = e^a(1 + \varepsilon b)$</td>
+<td>Exponential</td>
+</tr>
+<tr>
+<td>$\log(1 + s\varepsilon) = s\varepsilon$</td>
+<td>Dual logarithm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Eduard Study, <em>Geometrie der Dynamen</em> (Teubner, Leipzig, 1903), for the classical coordinate computations in the dual numbers and their geometry.</li>
+<li>I. M. Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, New York, 1968), for worked computations in the dual, complex and split-complex algebras side by side.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, Natick, 2003), for worked examples in the two-dimensional real algebras.</li>
+<li>Andreas Griewank and Andrea Walther, <em>Evaluating Derivatives: Principles and Techniques of Algorithmic Differentiation</em> (SIAM, Philadelphia, 2008), for the computed algebra of nilpotent extensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

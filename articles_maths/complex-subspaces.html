@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Subspaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="complex-subspaces"><strong>Complex Subspaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex algebra $\mathbb{C}$, regarded as a two-dimensional algebra over $\mathbb{R}$, carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Each of the two involutions determines a fixed subspace and an anti-fixed subspace, and the algebra splits as their direct sum. The whole of this article is the analysis of those subspaces: their bases, their dimensions, their closure properties, the quadratic form they inherit, and the sense in which they are the one-dimensional analogue of the six-subspace lattice of the biquaternion algebra $\mathbb{B}$.</p>
+<p>The algebra and its conventions are those of the companion article <em>Complex Algebra</em>: the basis is $1$, $i$ with $i^2 = -1$, a general element is $Z = a + i b$, and the norm form is $N(Z) = Z\bar{Z} = a^2 + b^2$. The algebra is a field, so it has no proper ideals and no zero divisors; the biquaternion algebra $\mathbb{B}$ is the four-dimensional complex algebra whose six distinguished subspaces are the model this article is measured against, and the difference between the two lattices is the point. The two involutions are treated in the article <em>Complex Automorphisms and Derivations</em>, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.</p>
+<h2 id="the-involutions-and-the-two-decompositions">The Involutions and the Two Decompositions</h2>
+<p><strong>Definition.</strong> An <strong>involution</strong> of $\mathbb{C}$ is an $\mathbb{R}$-linear map $\sigma : \mathbb{C} \to \mathbb{C}$ with $\sigma^2 = \operatorname{id}$. Its <strong>fixed subspace</strong> and <strong>anti-fixed subspace</strong> are</p>
+<p>$$
+\mathbb{C}^{\sigma} = \{ Z \in \mathbb{C} : \sigma(Z) = Z \}, \qquad \mathbb{C}^{-\sigma} = \{ Z \in \mathbb{C} : \sigma(Z) = -Z \}.
+$$</p>
+<p>The two natural involutions are the identity and complex conjugation:</p>
+<p>$$
+\operatorname{id}(Z) = Z, \qquad \bar{\cdot}(Z) = \bar{Z} = a - i b .
+$$</p>
+<p><strong>Proposition (eigenspace decomposition).</strong> For any involution $\sigma$ of $\mathbb{C}$,</p>
+<p>$$
+\mathbb{C} = \mathbb{C}^{\sigma} \oplus \mathbb{C}^{-\sigma}, \qquad
+Z = \tfrac{1}{2}\bigl(Z + \sigma(Z)\bigr) + \tfrac{1}{2}\bigl(Z - \sigma(Z)\bigr).
+$$</p>
+<p><strong>Proof.</strong> The element $\tfrac{1}{2}(Z+\sigma Z)$ is fixed because $\sigma^2 = \operatorname{id}$, and $\tfrac{1}{2}(Z-\sigma Z)$ is anti-fixed, so the sum is $Z$ and the two subspaces span. If $Z$ lies in both then $Z = -Z$, hence $2Z = 0$ and $Z = 0$ because $\mathbb{R}$ has characteristic not $2$, so the sum is direct. Equivalently, the decomposition is the spectral decomposition of $\sigma$ into its eigenspaces for the eigenvalues $+1$ and $-1$. $\square$</p>
+<p>The two involutions therefore give two decompositions of the algebra:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>fixed subspace</th>
+<th>anti-fixed subspace</th>
+<th>decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{id}$</td>
+<td>$\mathbb{C}$</td>
+<td>$\{0\}$</td>
+<td>$\mathbb{C} = \mathbb{C} \oplus \{0\}$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>$\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The identity is degenerate: its fixed subspace is the whole algebra and its anti-fixed subspace is the origin. The decomposition of content is the second row, the decomposition of an element into a real part and an imaginary part. It is the only decomposition of the algebra produced by its involutions, and the reason the lattice below has two members rather than six.</p>
+<h2 id="the-two-subspaces-at-a-glance">The Two Subspaces at a Glance</h2>
+<p><strong>Definition.</strong> The <strong>real subspace</strong> and the <strong>imaginary subspace</strong> of $\mathbb{C}$ are</p>
+<p>$$
+\mathbb{R}_{\mathbb{C}} = \{ Z \in \mathbb{C} : \bar{Z} = Z \}, \qquad i\mathbb{R}_{\mathbb{C}} = \{ Z \in \mathbb{C} : \bar{Z} = -Z \}.
+$$</p>
+<p><strong>Proposition (bases and dimensions).</strong> In the basis $1$, $i$,</p>
+<p>$$
+\mathbb{R}_{\mathbb{C}} = \{ a : a \in \mathbb{R} \} = \mathbb{R} 1, \qquad
+i\mathbb{R}_{\mathbb{C}} = \{ i b : b \in \mathbb{R} \} = \mathbb{R} i,
+$$</p>
+<p>so each has real dimension $1$ and $\dim_{\mathbb{R}} \mathbb{C} = 1 + 1 = 2$.</p>
+<p><strong>Proof.</strong> If $Z = a + i b$ is fixed by conjugation then $a - i b = a + i b$, so $b = 0$; if it is anti-fixed then $a - i b = -(a+i b)$, so $a = 0$. The two conditions define the two coordinate axes, of dimension one each. $\square$</p>
+<p>The two subspaces could hardly be more different in their multiplicative behaviour. The real subspace is closed under multiplication and is a field; the imaginary subspace is not closed at all.</p>
+<p><strong>Proposition (the real subspace is a subfield).</strong> $\mathbb{R}_{\mathbb{C}}$ is a subalgebra of $\mathbb{C}$, and the map $a \mapsto a$ is an isomorphism of fields $\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}$. It is an ordered field under the inherited order.</p>
+<p><strong>Proof.</strong> The product of two fixed elements is fixed, since $\overline{ZW} = \bar{Z}\bar{W}$, and the multiplicative identity $1$ is fixed, so $\mathbb{R}_{\mathbb{C}}$ is a subalgebra. The map is a ring isomorphism onto $\mathbb{R}$ by the multiplication rule $(a)(b) = ab$, and the restriction of the ordering of $\mathbb{R}$ makes it ordered. $\square$</p>
+<p><strong>Proposition (the imaginary subspace is not closed).</strong> $i\mathbb{R}_{\mathbb{C}}$ is not closed under multiplication. For $x, y \in i\mathbb{R}_{\mathbb{C}}$ neither $xy$ nor $x^2$ need lie in $i\mathbb{R}_{\mathbb{C}}$; in fact</p>
+<p>$$
+(i b)(i c) = -b c \in \mathbb{R}_{\mathbb{C}}, \qquad (i b)^2 = -b^2 \in \mathbb{R}_{\mathbb{C}},
+$$</p>
+<p>so the product of two anti-fixed elements is fixed.</p>
+<p><strong>Proof.</strong> The rule $i^2 = -1$ gives both displays directly; the right-hand sides are real and nonzero for $b$ and $c$ nonzero, so the product leaves the imaginary subspace. $\square$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>defining condition</th>
+<th>real basis</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>subalgebra</th>
+<th>norm form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>$\bar{Z} = Z$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>yes, $\cong \mathbb{R}$, a field</td>
+<td>$a^2$, definite positive</td>
+</tr>
+<tr>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>$\bar{Z} = -Z$</td>
+<td>$i$</td>
+<td>$1$</td>
+<td>no</td>
+<td>$b^2$, definite positive</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last column records that the norm form is positive on each subspace; this is the degeneracy of the definite two-dimensional case and is developed in the last section but one.</p>
+<h2 id="the-two-coordinate-blocks">The Two Coordinate Blocks</h2>
+<p>Writing $Z = a + i b$, the two real coordinates $(a, b)$ group into the two lines</p>
+<p>$$
+\mathbb{R}_{\mathbb{C}} = \langle 1 \rangle, \qquad i\mathbb{R}_{\mathbb{C}} = \langle i \rangle,
+$$</p>
+<p>and these are the <strong>coordinate blocks</strong> of $\mathbb{C}$. There are two of them, each of dimension one, and each of the two subspaces is a single block; no subspace of the lattice is a sum of two blocks. This is the structural difference from the biquaternion algebra, whose eight real coordinates form four blocks $\langle e_0 \rangle$, $\langle e_1, e_2, e_3 \rangle$, $\langle i e_1, i e_2, i e_3 \rangle$, $\langle i e_0 \rangle$ from which the six subspaces are assembled.</p>
+<p>The block description makes the intersection and sum arithmetic below immediate: two subspaces meet nontrivially only if they share a block, and here the only shared blocks are the blocks they are.</p>
+<h2 id="the-intersections">The Intersections</h2>
+<p>The pairwise intersections of the two subspaces are read off from the blocks:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{R}_{\mathbb{C}}$</th>
+<th>$i\mathbb{R}_{\mathbb{C}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> $\mathbb{R}_{\mathbb{C}} \cap i\mathbb{R}_{\mathbb{C}} = \{0\}$.</p>
+<p><strong>Proof.</strong> An element of the intersection is both fixed and anti-fixed by conjugation, so $Z = -Z$ and $Z = 0$ in characteristic not $2$; alternatively the two subspaces are the coordinate lines $\langle 1 \rangle$ and $\langle i \rangle$, which are independent. $\square$</p>
+<p>The diagonal of the table carries the dimensions $1$ and $1$; the off-diagonal entry is $0$ because the two subspaces are the two members of a direct-sum decomposition. In the biquaternion lattice the analogous entry is also $0$ for the pairs of each decomposition, but there the off-diagonal entries can be $1$ or $3$ because subspaces assembled from several blocks can share a block.</p>
+<h2 id="the-sums">The Sums</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{R}_{\mathbb{C}}$</th>
+<th>$i\mathbb{R}_{\mathbb{C}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> $\mathbb{R}_{\mathbb{C}} + i\mathbb{R}_{\mathbb{C}} = \mathbb{C}$.</p>
+<p><strong>Proof.</strong> Every $Z = a + i b$ is the sum of $a \in \mathbb{R}_{\mathbb{C}}$ and $i b \in i\mathbb{R}_{\mathbb{C}}$, and the sum is direct by the previous proposition. $\square$</p>
+<p>The single off-diagonal entry is $2 = \dim_{\mathbb{R}} \mathbb{C}$: the two subspaces together span the algebra, exactly as the members of each decomposition do in $\mathbb{B}$. There is no second distinct pair and hence no larger body of sum arithmetic.</p>
+<h2 id="the-involutions-as-sign-patterns">The Involutions as Sign Patterns</h2>
+<p>Each involution preserves each subspace and acts on it by a scalar, $+1$ or $-1$. The multiplicities of the sign $-1$ are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>$\mathbb{R}_{\mathbb{C}}$</th>
+<th>$i\mathbb{R}_{\mathbb{C}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{id}$</td>
+<td>$0$ of $1$</td>
+<td>$0$ of $1$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$0$ of $1$</td>
+<td>$1$ of $1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The identity negates nothing; conjugation negates the imaginary line and fixes the real one. The vanishing entries are the definitions of the fixed subspaces, and the full entry is the definition of the anti-fixed one. Because there are only two involutions and two one-dimensional subspaces, the sign pattern carries no mixed restrictions, in contrast with the four-involution table of $\mathbb{B}$ where the mixed entries measure the failure of the involutions to be pointwise equal.</p>
+<h2 id="how-the-operations-act-on-the-splits">How the Operations Act on the Splits</h2>
+<h3 id="multiplication-by-the-imaginary-unit">Multiplication by the Imaginary Unit</h3>
+<p>Multiplication by $i$ exchanges the two subspaces:</p>
+<p>$$
+i\,\mathbb{R}_{\mathbb{C}} = i\mathbb{R}_{\mathbb{C}}, \qquad i\, i\mathbb{R}_{\mathbb{C}} = \mathbb{R}_{\mathbb{C}}.
+$$</p>
+<p>The first identity says that the real axis is carried to the imaginary axis, the second that the imaginary axis is carried back; the operator $Z \mapsto i Z$ is therefore a real-linear map of order four with square $-1$, the complex structure of the algebra. It is the placement, in the two-dimensional case, of the block exchange recorded for $\mathbb{B}$.</p>
+<h3 id="the-product-and-the-brackets">The Product and the Brackets</h3>
+<p><strong>Proposition (product table).</strong> For elements taken from the two subspaces, the product falls as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>$\mathbb{R}_{\mathbb{C}}$</th>
+<th>$i\mathbb{R}_{\mathbb{C}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+</tr>
+<tr>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The products $1\cdot 1 = 1$, $1\cdot i = i$, $i\cdot 1 = i$ and $i^2 = -1$ are the multiplication table of the basis. $\square$</p>
+<p>Since $\mathbb{C}$ is commutative, every commutator vanishes:</p>
+<p>$$
+[Z, W] = ZW - WZ = 0 \qquad (Z, W \in \mathbb{C}),
+$$</p>
+<p>so the commutator bracket produces no subspace, and the symmetrized product $ZW + WZ = 2ZW$ produces no subspace beyond the product itself. The Lie-algebra slot of the biquaternion table, occupied there by the vector subspace $\mathrm{Vect}(\mathbb{B})$ under the commutator, is empty here. This emptiness is a mathematical statement: it is the commutativity of the field, and it is why the derivation space of $\mathbb{C}$ vanishes while that of $\mathbb{B}$ does not.</p>
+<h2 id="worked-verifications">Worked Verifications</h2>
+<p><strong>A generic element.</strong> For $Z = 3 + 4i$ the eigencomponents of conjugation are</p>
+<p>$$
+Z_+ = \tfrac{1}{2}(Z + \bar{Z}) = 3 \in \mathbb{R}_{\mathbb{C}}, \qquad
+Z_- = \tfrac{1}{2}(Z - \bar{Z}) = 4i \in i\mathbb{R}_{\mathbb{C}},
+$$</p>
+<p>with $Z_+ + Z_- = 3 + 4i = Z$, and the norm form on the pieces is $N(Z_+) = 9$ and $N(Z_-) = 16$, whose sum $25 = N(Z)$ is the norm form of $Z$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.</p>
+<p><strong>A product that leaves a subspace.</strong> For $Z_- = 4i$ and $W_- = 5i$, both in $i\mathbb{R}_{\mathbb{C}}$,</p>
+<p>$$
+Z_- W_- = (4i)(5i) = 20\, i^2 = -20 \in \mathbb{R}_{\mathbb{C}},
+$$</p>
+<p>so the product of two anti-fixed elements is fixed and nonzero. The commutator is $Z_- W_- - W_- Z_- = 0$, consistent with the vanishing bracket of the previous section.</p>
+<p><strong>An intersection.</strong> If $Z = a + i b$ lies in both $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$ then $b = 0$ and $a = 0$, so $Z = 0$; the intersection is the origin, as the table records.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex algebra carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Conjugation splits the algebra as $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into its fixed subspace, the real axis $\mathbb{R}_{\mathbb{C}} = \mathbb{R} 1$ of real dimension one, and its anti-fixed subspace, the imaginary axis $i\mathbb{R}_{\mathbb{C}} = \mathbb{R} i$, also of real dimension one. The identity is degenerate, with fixed subspace the whole algebra and anti-fixed subspace the origin.</p>
+<p>The real subspace is closed under multiplication and is a field isomorphic to $\mathbb{R}$; the imaginary subspace is not closed, since the product of two of its elements is real, $(ib)(ic) = -b c$. The two subspaces meet only in the origin and together span the algebra. They are the two coordinate blocks of the real basis, and multiplication by $i$ exchanges them.</p>
+<p>The lattice is the two-member shadow of the six-subspace lattice of the biquaternion algebra: the two blocks $\langle 1 \rangle$ and $\langle i \rangle$ of the two coordinates replace the four blocks of the eight real coordinates of $\mathbb{B}$, and the four involutions of $\mathbb{B}$ collapse to the single nontrivial involution of $\mathbb{C}$. The commutator bracket vanishes identically because the algebra is commutative, so the vector subspace of $\mathbb{B}$ and its Lie-algebra structure have no analogue here; that absent slot is the commutativity of the field.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>the complex algebra, basis $1$, $i$, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$Z = a + i b$</td>
+<td>a complex number</td>
+</tr>
+<tr>
+<td>$\operatorname{id}$, $\bar{\cdot}$</td>
+<td>the identity and the nontrivial involution, complex conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\sigma}$, $\mathbb{C}^{-\sigma}$</td>
+<td>fixed and anti-fixed subspaces of an involution $\sigma$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>real subspace $\{Z : \bar{Z} = Z\} = \mathbb{R} 1$, real dimension $1$</td>
+</tr>
+<tr>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>imaginary subspace $\{Z : \bar{Z} = -Z\} = \mathbb{R} i$, real dimension $1$</td>
+</tr>
+<tr>
+<td>$N(Z) = Z\bar{Z} = a^2 + b^2$</td>
+<td>the norm form</td>
+</tr>
+<tr>
+<td>$i\,\cdot$ (multiplication by $i$)</td>
+<td>exchanges the two subspaces: $\mathbb{R}_{\mathbb{C}} \to i\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}} \to \mathbb{R}_{\mathbb{C}}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the origin of the real and imaginary axes of the plane.</li>
+<li>Carl Friedrich Gauss, <em>Theoria residuorum biquadraticorum, Commentatio secunda</em> (Göttingen, 1831), for the geometric reading of the two coordinates.</li>
+<li>Israel Nathan Herstein, <em>Topics in Algebra</em>, 2nd edition (Wiley, 1975), for involutions, eigenspace decompositions and subfields.</li>
+<li>Serge Lang, <em>Algebra</em>, 3rd edition (Springer, 2002), for the algebraic closure and the real and imaginary parts of a quadratic extension.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd edition (Cambridge University Press, 2001), for the real and imaginary subspaces of a two-dimensional definite algebra and their higher-dimensional analogues.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

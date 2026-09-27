@@ -154,7 +154,7 @@ P_\theta=\tfrac14\Bigl(e_0\otimes e_0-e_3\otimes e_3
 +\sin2\theta\,\bigl(e_2\otimes e_2-e_1\otimes e_1\bigr)
 +i\cos2\theta\,\bigl(e_3\otimes e_0+e_0\otimes e_3\bigr)\Bigr).
 $$</p>
-<p>At $\theta=0$ this reduces to $P_+(\hat{z})\otimes P_+(\hat{z})$, a product idempotent; at $\theta=\tfrac{\pi}{4}$ it reduces to the Bell idempotent $P_{\Phi^+}$. It is therefore the correct one-parameter interpolation between the product state $|\uparrow\uparrow\rangle$ and the maximally entangled $|\Phi^+\rangle$.</p>
+<p>At $\theta=0$ this reduces to $\tilde\Pi_1\otimes \tilde\Pi_1$, a product idempotent; at $\theta=\tfrac{\pi}{4}$ it reduces to the Bell idempotent $P_{\Phi^+}$. It is therefore the correct one-parameter interpolation between the product state $|\uparrow\uparrow\rangle$ and the maximally entangled $|\Phi^+\rangle$.</p>
 <h3 id="the-partial-trace">The partial trace</h3>
 <p>The partial trace over the second factor acts on the tensor basis by</p>
 <p>$$
@@ -199,7 +199,7 @@ $$</p>
 <p>This agrees with the Schmidt route, as it must: the Schmidt coefficients of $|\psi_\theta\rangle$ are $(\cos\theta,\sin\theta)$, and $h(\cos^2\theta)=h(s_1^2)$. The biquaternion route reaches the same number by a different mechanism — it never diagonalises $M$; it reads the Bloch vector off the partial trace and then uses the single-qubit entropy formula on $\mathbb{M}_+$.</p>
 <p>At the endpoints:</p>
 <p>$$
-\theta=0:\quad \rho_1=P_+(\hat{z}),\quad \mathbf{r}=e_3,\quad S=0;
+\theta=0:\quad \rho_1=\tilde\Pi_1,\quad \mathbf{r}=e_3,\quad S=0;
 $$
 $$
 \theta=\tfrac{\pi}{4}:\quad \rho_1=\tfrac12 e_0,\quad \mathbf{r}=0,\quad S=\log2 .
@@ -271,8 +271,8 @@ $$</p>
 <p>So the partial-trace entropy is maximal. But the joint state is <strong>separable</strong>. Using $P_{\Phi^\pm}=\tfrac14(e_0\otimes e_0\mp e_1\otimes e_1\pm e_2\otimes e_2-e_3\otimes e_3)$, the mixture is</p>
 <p>$$
 \rho_{\mathrm{mix}}=\tfrac14\left(e_0\otimes e_0-e_3\otimes e_3\right)
-=\tfrac12\,P_+(\hat{z})\otimes P_+(\hat{z})
-+\tfrac12\,P_-(\hat{z})\otimes P_-(\hat{z}),
+=\tfrac12\,\tilde\Pi_1\otimes \tilde\Pi_1
++\tfrac12\,\tilde\Pi_2\otimes \tilde\Pi_2,
 $$</p>
 <p>a classical mixture of the product states $|\uparrow\uparrow\rangle$ and $|\downarrow\downarrow\rangle$. Its entanglement is zero by any measure; its reduced entropy is maximal. The number $\log2$ here measures the mixedness of the <em>marginal</em>, not the entanglement of the <em>joint state</em>.</p>
 <p>The lesson is not that the partial trace is wrong but that its entropy has two roles that coincide only for pure states. For a pure $|\psi\rangle$, $S(\mathrm{Tr}_2|\psi\rangle\langle\psi|)$ is the entanglement entropy. For a mixed $\rho$, $S(\mathrm{Tr}_2\rho)$ is the entropy of a marginal; it is not an entanglement measure, and no function of $\rho_1$ alone can be one, because many joint states with different entanglement share the same marginals. The mixed-state measure — the entanglement of formation, or the relative entropy of entanglement — requires more than the partial trace, and is not developed in this series. That is a genuine gap, and it is the gap the title of this exercise does not close.</p>
@@ -399,7 +399,7 @@ $$</p>
 <td>Trace equals twice the scalar part</td>
 </tr>
 <tr>
-<td>$P_\pm(\hat{m})=\tfrac12(e_0\pm i\hat{m})$</td>
+<td>$\tilde\Pi(\pm\hat{m})=\tfrac12(e_0\pm i\hat{m})$</td>
 <td>Single-qubit idempotents</td>
 </tr>
 <tr>

@@ -79,17 +79,17 @@ $$</p>
 <h3 id="steering-as-a-conditional-idempotent">Steering as a conditional idempotent</h3>
 <p>The phenomenon of EPR steering — that measuring one particle's spin determines the conditional state of the other — has a particularly clean form in the biquaternion language. Suppose Alice measures particle 1 along $\hat{a}$ and obtains the outcome $+$. The unnormalized post-measurement joint state is</p>
 <p>$$
-\bigl(P_+(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(P_+(\hat{a})\otimes e_0\bigr),
+\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr),
 $$</p>
-<p>where $P_+(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. Computing directly, using $P_+(\hat{a})\,e_k\,P_+(\hat{a}) = \tfrac{1}{2}a_k(\hat{a} - ie_0)$ and $\hat{a} - ie_0 = -2iP_+(\hat{a})$, gives</p>
+<p>where $\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. Computing directly, using $\tilde\Pi(\hat{a})\,e_k\,\tilde\Pi(\hat{a}) = \tfrac{1}{2}a_k(\hat{a} - ie_0)$ and $\hat{a} - ie_0 = -2i\tilde\Pi(\hat{a})$, gives</p>
 <p>$$
-\bigl(P_+(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(P_+(\hat{a})\otimes e_0\bigr) = \tfrac{1}{2}\,P_+(\hat{a})\otimes P_-(\hat{a}),
+\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr) = \tfrac{1}{2}\,\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a}),
 $$</p>
-<p>where $P_-(\hat{a}) = \tfrac{1}{2}(e_0 - i\hat{a})$. The normalized post-measurement state is therefore the product state</p>
+<p>where $\tilde\Pi(-\hat{a}) = \tfrac{1}{2}(e_0 - i\hat{a})$. The normalized post-measurement state is therefore the product state</p>
 <p>$$
-P_+(\hat{a})\otimes P_-(\hat{a}).
+\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a}).
 $$</p>
-<p>The joint state is now a product: particle 1 is in the pure idempotent $P_+(\hat{a})$, and particle 2 is in the pure idempotent $P_-(\hat{a})$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.</p>
+<p>The joint state is now a product: particle 1 is in the pure idempotent $\tilde\Pi(\hat{a})$, and particle 2 is in the pure idempotent $\tilde\Pi(-\hat{a})$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.</p>
 <p>This is the biquaternion expression of EPR steering. The collapse of the joint state under a local projector factorizes the joint idempotent into a product of idempotents, one on each factor. The "spooky" character is that the direction $\hat{a}$ chosen by Alice appears in the conditional state of particle 2; the "non-spooky" character is that this is a <em>conditional</em> statement, not a signal, because the unconditional reduced state of particle 2 is unchanged.</p>
 <h3 id="no-signaling-as-a-partial-trace-identity">No-signaling as a partial-trace identity</h3>
 <p>The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde{U}\otimes e_0$ to the joint state, the reduced state of particle 2 is unchanged:</p>
@@ -144,7 +144,7 @@ $$</p>
 <p><strong>1. The singlet is one algebraic object.</strong> The entangled state is not a pair of systems whose correlation must be explained; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product structure from the start.</p>
 <p><strong>2. The correlation function is a bilinear pairing.</strong> The correlation $E(\hat{a}, \hat{b})$ is the tensor-product trace pairing between the state idempotent and the correlation observable. It is the same algebraic operation that gives the Born rule for a single qubit. There is no additional probabilistic postulate.</p>
 <p><strong>3. The reduced state's mixedness is the algebraic trace of entanglement.</strong> The partial trace of the singlet produces $\tfrac{1}{2}e_0$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.</p>
-<p><strong>4. Steering is a factorization of the joint idempotent.</strong> A local projector applied to the singlet produces a product state $P_+(\hat{a})\otimes P_-(\hat{a})$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.</p>
+<p><strong>4. Steering is a factorization of the joint idempotent.</strong> A local projector applied to the singlet produces a product state $\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a})$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.</p>
 <p><strong>5. No-signaling is cyclicity of the trace.</strong> The invariance of the reduced state under local unitaries is the cyclicity of the trace applied to the partial trace.</p>
 <p><strong>6. The reversible/irreversible dichotomy is algebraic.</strong> Unitary and idempotent elements are two classes of elements of one algebra, not two separate postulates.</p>
 <p><strong>7. The quantum/classical divide has a candidate structural home.</strong> The split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ suggests a structural criterion for where entanglement lives, and the reversible/irreversible dichotomy gives the operational criterion an algebraic home. The development of this criterion is treated in the companion article.</p>
@@ -239,7 +239,7 @@ $$</p>
 <td>Singlet idempotent</td>
 </tr>
 <tr>
-<td>$P_\pm(\hat{a}) = \tfrac{1}{2}(e_0 \pm i\hat{a})$</td>
+<td>$\tilde\Pi(\pm\hat{a}) = \tfrac{1}{2}(e_0 \pm i\hat{a})$</td>
 <td>Single-qubit idempotents along $\hat{a}$</td>
 </tr>
 <tr>

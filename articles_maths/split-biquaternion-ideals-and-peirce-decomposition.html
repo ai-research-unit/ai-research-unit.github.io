@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Biquaternion Ideals and Peirce Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-biquaternion-ideals-and-peirce-decomposition"><strong>Split-Biquaternion Ideals and Peirce Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra article defined the split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ and established the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$. This article treats the <strong>ideals</strong> of $\mathbb{H}_{\mathbb{D}}$, the decomposition of the algebra into its two quaternion halves, and the <strong>Peirce decomposition</strong> attached to the idempotents.</p>
+<p>The treatment is purely mathematical. Every claim is either proved or stated as a definition. No physics is invoked. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, its four conjugations and its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ are assumed from the article on split complex algebra and the basic algebra article, and the quaternion algebra $\mathbb{H}$ is assumed to be a division algebra.</p>
+<p>Throughout, a split biquaternion is written $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu = q_\mu + j q'_\mu$, and the idempotent components are $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$. The four conjugations are $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{\dagger}$.</p>
+<p>The classification and the structure of the <em>idempotents</em> themselves — their orthogonality, completeness and primitivity, their role as projections, and the four-point nature of the idempotent set — belong to <em>Split-Biquaternion Idempotents and Projections</em>. This article takes those facts as given and develops the objects that the idempotents generate: the ideals and the Peirce decomposition. The two articles share the idempotents $\tilde\Pi_\pm$ but not their ownership: the idempotents article owns the idempotents, this article owns the ideals and the splitting.</p>
+<h2 id="ideals-in-an-algebra">Ideals in an Algebra</h2>
+<p>Let $A$ be an associative algebra. A <strong>left ideal</strong> is a subset $I \subseteq A$ closed under addition and under left multiplication by $A$: $AI \subseteq I$. A <strong>right ideal</strong> is closed under right multiplication, $IA \subseteq I$, and a <strong>two-sided ideal</strong> is both. An ideal is <strong>proper</strong> if it is neither $0$ nor $A$, and <strong>minimal</strong> (among nonzero left ideals) if it contains no nonzero proper left ideal. The algebra is <strong>simple</strong> if it has no proper nonzero two-sided ideal, and <strong>semisimple</strong> if it is a direct sum of simple algebras, equivalently if its Jacobson radical is zero.</p>
+<p>The basic mechanism connecting ideals to idempotents is that an idempotent $e$ produces the decompositions</p>
+<p>$$
+A = Ae \oplus A(1 - e) \quad (\text{left}), \qquad A = eA \oplus (1 - e)A \quad (\text{right}),
+$$</p>
+<p>and that $Ae$ is a minimal left ideal exactly when $e$ is primitive.</p>
+<h2 id="the-two-sided-ideals-simplicity-fails">The Two-Sided Ideals: Simplicity Fails</h2>
+<p><strong>Theorem.</strong> The proper nonzero two-sided ideals of $\mathbb{H}_{\mathbb{D}}$ are exactly $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$. Consequently $\mathbb{H}_{\mathbb{D}}$ is not simple.</p>
+<p><strong>Proof.</strong> Let $I$ be a two-sided ideal. In the idempotent basis $I = I_+ \tilde\Pi_+ \oplus I_- \tilde\Pi_-$ with $I_\pm \subseteq \mathbb{H}$. Because $\tilde\Pi_\pm$ is central, $I$ being an ideal is equivalent to each $I_\pm$ being an ideal of the quaternion algebra $\mathbb{H}$. But $\mathbb{H}$ is a division algebra and has no proper nonzero ideal: if $q \neq 0$ lies in an ideal $J$ of $\mathbb{H}$, then $1 = q^{-1} q \in J$, so $J = \mathbb{H}$. Hence for each sign either $I_\pm = 0$ or $I_\pm = \mathbb{H}$. The proper nonzero possibilities are therefore $I = \mathbb{H} \tilde\Pi_+$ and $I = \mathbb{H} \tilde\Pi_-$. Since these are proper and nonzero, $\mathbb{H}_{\mathbb{D}}$ is not simple. $\square$</p>
+<p><strong>Corollary.</strong> $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$ is the unique decomposition of $\mathbb{H}_{\mathbb{D}}$ as a direct sum of two proper nonzero two-sided ideals, and the two summands are isomorphic to $\mathbb{H}$.</p>
+<p><strong>Proof.</strong> The decomposition follows from $\tilde\Pi_+ + \tilde\Pi_- = 1$; uniqueness from the theorem, since any decomposition into two nonzero two-sided ideals must consist of the two listed ideals. Each summand $\mathbb{H} \tilde\Pi_\pm$ is identified with $\mathbb{H}$ by the projection $\tilde{Q} \mapsto \tilde{Q}_\pm$. $\square$</p>
+<h2 id="the-algebra-is-semisimple">The Algebra Is Semisimple</h2>
+<p><strong>Proposition.</strong> The Jacobson radical of $\mathbb{H}_{\mathbb{D}}$ is zero, so $\mathbb{H}_{\mathbb{D}}$ is semisimple.</p>
+<p><strong>Proof.</strong> By the theorem, the only proper nonzero two-sided ideals are $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$; their intersection is $\mathbb{H} \tilde\Pi_+ \cap \mathbb{H} \tilde\Pi_- = 0$, so the radical, being the intersection of the maximal two-sided ideals, is zero. $\square$</p>
+<p>The algebra is thus semisimple but not simple, and its two simple components are both the same division algebra $\mathbb{H}$. This is the algebraic content of the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$: the right-hand side is a product of two division algebras.</p>
+<h2 id="the-idempotents-revisited">The Idempotents Revisited</h2>
+<p>The four idempotents of $\mathbb{H}_{\mathbb{D}}$ are $0$, $\tilde\Pi_+$, $\tilde\Pi_-$ and $1$, and all of them are central; this is proved in <em>Split-Biquaternion Idempotents and Projections</em>. Here only the following facts are used: $\{\tilde\Pi_+, \tilde\Pi_-\}$ is a <strong>complete</strong> family of <strong>orthogonal</strong>, <strong>primitive</strong>, <strong>central</strong> idempotents, with</p>
+<p>$$
+\tilde\Pi_+^2 = \tilde\Pi_+, \qquad \tilde\Pi_-^2 = \tilde\Pi_-, \qquad \tilde\Pi_+ \tilde\Pi_- = \tilde\Pi_- \tilde\Pi_+ = 0, \qquad \tilde\Pi_+ + \tilde\Pi_- = 1.
+$$</p>
+<p>Because they are central, the left, right and two-sided ideals they generate coincide, and the primitivity criterion gives that each of $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ is a minimal ideal.</p>
+<h2 id="the-peirce-decomposition">The Peirce Decomposition</h2>
+<p>Let $e$ be an idempotent of an algebra $A$. Relative to $e$ and its complement $1 - e$, the algebra decomposes as a direct sum of four <strong>Peirce spaces</strong>:</p>
+<p>$$
+A = eAe \oplus eA(1 - e) \oplus (1 - e)Ae \oplus (1 - e)A(1 - e).
+$$</p>
+<p><strong>Theorem.</strong> For $e = \tilde\Pi_+$ in $\mathbb{H}_{\mathbb{D}}$ the Peirce decomposition is</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus 0 \oplus 0 \oplus \mathbb{H} \tilde\Pi_-,
+$$</p>
+<p>the two <strong>off-diagonal</strong> Peirce spaces $\tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_-$ and $\tilde\Pi_- \mathbb{H}_{\mathbb{D}} \tilde\Pi_+$ both vanishing.</p>
+<p><strong>Proof.</strong> Since $\tilde\Pi_+$ is central,</p>
+<p>$$
+\tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_+ = \mathbb{H}_{\mathbb{D}} \tilde\Pi_+ = \mathbb{H} \tilde\Pi_+, \qquad \tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_- = \mathbb{H}_{\mathbb{D}} \tilde\Pi_+ \tilde\Pi_- = 0,
+$$</p>
+<p>and similarly $(1 - \tilde\Pi_+) \mathbb{H}_{\mathbb{D}} (1 - \tilde\Pi_+) = \mathbb{H} \tilde\Pi_-$ and the other off-diagonal space vanishes. The direct sum is the whole algebra because $\tilde\Pi_+ + \tilde\Pi_- = 1$. $\square$</p>
+<p>The vanishing of the off-diagonal Peirce spaces is the algebraic statement that the two halves of $\mathbb{H}_{\mathbb{D}}$ do not mix: no element of one half acts on the other. This is the sharpest contrast with the biquaternion algebra, where the Peirce spaces relative to a noncentral primitive idempotent have nonzero off-diagonal parts and carry off-diagonal elements $E_{12}$, $E_{21}$.</p>
+<h2 id="the-decomposition-into-minimal-ideals">The Decomposition into Minimal Ideals</h2>
+<p>The Peirce decomposition can be read as the sum of the two minimal ideals. For the complete family $\{\tilde\Pi_+, \tilde\Pi_-\}$,</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-,
+$$</p>
+<p>and each summand is a <strong>minimal</strong> two-sided ideal, equivalently a minimal left ideal and a minimal right ideal, isomorphic to $\mathbb{H}$. Summing over the family, the algebra is the direct sum of its minimal ideals, one for each idempotent of the complete family:</p>
+<p><strong>Proposition.</strong> $\mathbb{H}_{\mathbb{D}}$ is the direct sum of its two minimal ideals $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$, and every minimal left ideal of $\mathbb{H}_{\mathbb{D}}$ is one of these two.</p>
+<p><strong>Proof.</strong> The direct-sum statement is the corollary above. For the second statement, let $L$ be a minimal left ideal. If $L$ contains an element with a nonzero $\tilde\Pi_+$-component, then that component lies in $L \cap \mathbb{H} \tilde\Pi_+$, a nonzero left ideal contained in the minimal ideal $\mathbb{H} \tilde\Pi_+$, hence equal to it; otherwise $L \subseteq \mathbb{H} \tilde\Pi_-$. Minimality then forces $L$ to equal $\mathbb{H} \tilde\Pi_+$ or $\mathbb{H} \tilde\Pi_-$. $\square$</p>
+<h2 id="minimal-left-and-right-ideals">Minimal Left and Right Ideals</h2>
+<p>Because the idempotents are central, the left ideal, the right ideal and the two-sided ideal generated by an idempotent coincide. Hence the minimal left ideals, the minimal right ideals and the minimal two-sided ideals of $\mathbb{H}_{\mathbb{D}}$ are the <strong>same two objects</strong>, $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$, each isomorphic to the division algebra $\mathbb{H}$.</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}} \tilde\Pi_+ = \tilde\Pi_+ \mathbb{H}_{\mathbb{D}} = \tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_+ = \mathbb{H} \tilde\Pi_+ \cong \mathbb{H},
+$$</p>
+<p>and likewise for $\tilde\Pi_-$. Each summand is annihilated by the complementary idempotent — $\mathbb{H} \tilde\Pi_+$ by $\tilde\Pi_-$ and $\mathbb{H} \tilde\Pi_-$ by $\tilde\Pi_+$ — so the two ideals are disjoint, and together they fill the algebra: $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_- \cong \mathbb{H} \oplus \mathbb{H}$, both summands isomorphic to the division algebra $\mathbb{H}$ as rings.</p>
+<p>In the biquaternion algebra the corresponding statement is different in every respect: the minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$ are not two-sided, are not right ideals, and are isomorphic to $\mathbb{C}^2$ rather than to a division algebra.</p>
+<h2 id="the-lattice-of-left-ideals">The Lattice of Left Ideals</h2>
+<p><strong>Proposition.</strong> The left ideals of $\mathbb{H}_{\mathbb{D}}$ are exactly</p>
+<p>$$
+0, \qquad \mathbb{H} \tilde\Pi_+, \qquad \mathbb{H} \tilde\Pi_-, \qquad \mathbb{H}_{\mathbb{D}}.
+$$</p>
+<p>They form a lattice that is the diamond: $0$ is contained in $\mathbb{H} \tilde\Pi_\pm$, each of these is contained in $\mathbb{H}_{\mathbb{D}}$, and $\mathbb{H} \tilde\Pi_+$, $\mathbb{H} \tilde\Pi_-$ are incomparable. The same description holds for the right ideals and for the two-sided ideals.</p>
+<p><strong>Proof.</strong> A left ideal $L$ is contained in $\mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$. Its intersections $L \cap \mathbb{H} \tilde\Pi_+$ and $L \cap \mathbb{H} \tilde\Pi_-$ are each either $0$ or the whole summand, since each summand is minimal. The four combinations give the four listed ideals, and no second idempotent pair occurs, so there are no further left ideals. $\square$</p>
+<p><strong>Corollary.</strong> Every left ideal of $\mathbb{H}_{\mathbb{D}}$ is two-sided, and $\mathbb{H}_{\mathbb{D}}$ has exactly two maximal left ideals, $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$.</p>
+<p>The contrast with $\mathbb{B}$ is extreme. In $\mathbb{B} \cong M_2(\mathbb{C})$ the left ideals form a lattice isomorphic to the projective line $\mathbb{P}^1$, with infinitely many maximal left ideals; in $\mathbb{H}_{\mathbb{D}}$ the lattice has four elements and the two maximal left ideals are the two halves. The reduction is a direct consequence of the vanishing of the off-diagonal Peirce spaces.</p>
+<h2 id="the-radical">The Radical</h2>
+<p>The <strong>Jacobson radical</strong> $J(A)$ of a finite-dimensional algebra $A$ is the intersection of its maximal left ideals, equivalently of its maximal right ideals, equivalently the largest nilpotent two-sided ideal; in particular $J(A) = 0$ if and only if $A$ is semisimple.</p>
+<p><strong>Proposition.</strong> $J(\mathbb{H}_{\mathbb{D}}) = 0$. Moreover $J(\mathbb{H}_{\mathbb{D}}) = \mathbb{H} \tilde\Pi_+ \cap \mathbb{H} \tilde\Pi_-$.</p>
+<p><strong>Proof.</strong> The maximal left ideals are $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ by the corollary above, and their intersection is $0$ because $\tilde\Pi_+ \tilde\Pi_- = 0$ and the two ideals are complementary summands. $\square$</p>
+<p>So $\mathbb{H}_{\mathbb{D}}$ is semisimple in the strongest sense: its radical vanishes. This is one of the senses in which $\mathbb{H}_{\mathbb{D}}$ is <em>smaller</em> and better behaved than a general associative algebra — it is a product of two division algebras, and products of division algebras have vanishing radical and only finitely many ideals.</p>
+<h2 id="the-real-structure">The Real Structure</h2>
+<p>The algebra $\mathbb{H}_{\mathbb{D}}$ is an eight-dimensional real algebra and a four-dimensional algebra over $\mathbb{D}$. The ideals $\mathbb{H} \tilde\Pi_\pm$ are real vector subspaces of dimension $4$ and are closed under multiplication by $\mathbb{D}$; neither is a free $\mathbb{D}$-span, since $j - 1$ annihilates $\mathbb{H} \tilde\Pi_+$ and $j + 1$ annihilates $\mathbb{H} \tilde\Pi_-$, whereas a free $\mathbb{D}$-span has no such annihilator. The whole algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$ has $\mathbb{D}$-basis $e_0, e_1, e_2, e_3$.</p>
+<p>The $\mathbb{R}$-automorphisms and $\mathbb{R}$-derivations of $\mathbb{H}_{\mathbb{D}}$ act on this two-term decomposition. Because the two simple factors are isomorphic, the automorphism group contains the exchange of the factors, and the derivations contain the corresponding off-diagonal maps; the precise statements, together with the comparison with the biquaternion case, are the subject of <em>Split-Biquaternion Automorphisms and Derivations</em>. The splitting $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$ established here is the object on which those automorphisms act.</p>
+<h2 id="summary">Summary</h2>
+<p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ has exactly two proper nonzero two-sided ideals, $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$; it is therefore not simple, but it is semisimple, with vanishing radical. The two ideals are the two quaternion halves of the decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_- \cong \mathbb{H} \oplus \mathbb{H}$, each isomorphic to the division algebra $\mathbb{H}$.</p>
+<p>The minimal left ideals, the minimal right ideals and the minimal two-sided ideals coincide and are exactly $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$, because the underlying idempotents are central. The Peirce decomposition relative to $\tilde\Pi_+$ has vanishing off-diagonal spaces,</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}} = \tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_+ \oplus (1 - \tilde\Pi_+) \mathbb{H}_{\mathbb{D}} (1 - \tilde\Pi_+) = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-,
+$$</p>
+<p>so the two halves do not mix. The left ideals are exactly $0$, $\mathbb{H} \tilde\Pi_+$, $\mathbb{H} \tilde\Pi_-$, $\mathbb{H}_{\mathbb{D}}$, forming a diamond lattice with two maximal ideals, in contrast with the projective line of left ideals of the simple biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$. The idempotents themselves, their classification, their role as projections and their relation to the roots of $-1$, are the subject of <em>Split-Biquaternion Idempotents and Projections</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>The complete family of primitive central idempotents</td>
+</tr>
+<tr>
+<td>$\mathbb{H} \tilde\Pi_+, \mathbb{H} \tilde\Pi_-$</td>
+<td>The two minimal (left, right and two-sided) ideals, each $\cong \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$</td>
+<td>Idempotent decomposition, $\tilde{Q}_\pm \in \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$eAe$, $eA(1-e)$, $(1-e)Ae$, $(1-e)A(1-e)$</td>
+<td>Peirce spaces relative to an idempotent $e$</td>
+</tr>
+<tr>
+<td>$J(\mathbb{H}_{\mathbb{D}})$</td>
+<td>Jacobson radical, equal to $0$</td>
+</tr>
+<tr>
+<td>$\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$, simple</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for ideals, minimal left ideals and the Peirce decomposition in semisimple algebras.</li>
+<li>Irving Kaplansky, <em>Fields and Rings</em> (Chicago, 1972), for the structure theory of semisimple algebras and the radical.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the ideal structure of Clifford algebras and their relatives.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, 1997), for the algebraic structure of split biquaternions and their direct-sum decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

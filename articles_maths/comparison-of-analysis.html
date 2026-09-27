@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comparison-of-analysis"><strong>Comparison of Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article compares the analysis of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$: the first-order differential operator and the regularity it defines, the regular functions, the Fueter operator and the axial or slice theory, the harmonic and subharmonic consequences, the convergence of series and the power series, and the several-variable and subspaces theories. It states the situation of the eight algebras on each of these subjects in tables with the eight algebras as columns in the fixed order of <em>The Eight Algebras Compared</em>. Every entry restates a result of the analysis articles cited in the explanations.</p>
+<p>The organising thread is the <strong>type of the first-order operator</strong>, which is read off from the signature of the norm form and from nothing else. Where the form is definite the Cauchy–Riemann operator is elliptic, its principal symbol is invertible everywhere, and the Cauchy theory is global; where the form is indefinite the operator is hyperbolic or ultrahyperbolic, its symbol degenerates on the null cone, and the singular set of the theory is the null cone or the zero-divisor set. The two four-dimensional systems $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ have no single definite form on the whole algebra and are analysed on a four-dimensional real subspace at a time; the failure of the division property there is the obstruction that removes the elliptic theory and with it the analytic continuation off the definite subspace.</p>
+<h2 id="the-differential-operators">The Differential Operators</h2>
+<p>The following table compares the first-order differential operator of the eight algebras: the operator, its second-order companion, the ellipticity of the resulting system and the name of the regular functions. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first-order operator</td>
+<td>$\frac{d}{dx}$</td>
+<td>$\tfrac12(\partial_x+i\partial_y)$</td>
+<td>$\tfrac12(\partial_a-j\partial_b)$</td>
+<td>$\partial_y-\varepsilon\partial_x$</td>
+<td>$D=\sum_\mu e_\mu\partial_\mu$</td>
+<td>$\nabla=\sum_\mu e_\mu\partial_\mu$</td>
+<td>$\tilde\nabla=\sum_\mu e_\mu\partial_{Q_\mu}$</td>
+<td>$\tilde\nabla=\sum_\mu e_\mu\partial_\mu$</td>
+</tr>
+<tr>
+<td>second-order operator</td>
+<td>$d^2/dx^2$</td>
+<td>$\Delta$</td>
+<td>wave operator $\partial_a^2-\partial_b^2$</td>
+<td>$\partial_x^2$</td>
+<td>$\Delta_4$</td>
+<td>$\Box$, ultrahyperbolic $(2,2)$</td>
+<td>$\Box$ (Euclidean on $\mathbb{H}_{\mathbb{B}}$)</td>
+<td>$\Box$ (Euclidean on the quaternion subspace)</td>
+</tr>
+<tr>
+<td>elliptic</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>on $\mathbb{H}_{\mathbb{B}}$</td>
+<td>on the quaternion subspace</td>
+</tr>
+<tr>
+<td>regular functions</td>
+<td>differentiable</td>
+<td>holomorphic</td>
+<td>split differentiable</td>
+<td>dual holomorphic</td>
+<td>monogenic</td>
+<td>split regular</td>
+<td>regular on a subspace</td>
+<td>regular on a subspace</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table records how the type of the operator follows the signature. In $\mathbb{R}$ the Cauchy–Riemann operator of a one-dimensional space is the ordinary derivative and the square is elliptic; in $\mathbb{C}$ the operator $\bar\partial=\tfrac12(\partial_x+i\partial_y)$ has $\bar\partial\partial=\partial\bar\partial=\tfrac14\Delta$, and holomorphy — the vanishing of $\bar\partial f$ — is equivalent to the Cauchy–Riemann equations (<em>Real Analysis</em>; <em>Complex Analysis</em>). In $\mathbb{D}$ the split operator carries the sign of $j^2=+1$, its square is the one-dimensional wave operator, and the split differentiable functions split in the idempotent basis into two independent copies of real differentiable functions, so the system is hyperbolic and not elliptic; in $\mathbb{D}'$ the operator is $\bar\partial=\partial_y-\varepsilon\partial_x$, its conjugate-gradient companion is $\nabla\bar\nabla=\partial_x^2$, and the Euclidean Laplacian is <strong>not</strong> factorised because $\varepsilon^2=0$ annihilates the transverse second derivative (<em>Split Complex Analysis</em>; <em>Dual-Numbers Analysis on Subspaces</em>). In $\mathbb{H}$ the Cauchy–Riemann operator $D=\sum_\mu e_\mu\partial_\mu$ and its conjugate factor the Euclidean Laplacian through the Clifford relation $e_\mu\bar e_\nu+e_\nu\bar e_\mu=2\delta_{\mu\nu}e_0$, and the system is elliptic because the quaternion norm form is definite (<em>Quaternion Regular Functions</em>). In $\mathbb{H}_{\mathrm{s}}$ the same operator now satisfies $\nabla\bar\nabla=\bar\nabla\nabla=\Box$, the ultrahyperbolic operator of signature $(2,2)$, whose symbol vanishes exactly on the null cone: the system is non-elliptic and the zero divisors are its characteristic directions (<em>Split-Quaternion Regular Functions</em>). In $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ the gradient $\tilde\nabla$ is defined with respect to four real coordinates of a chosen four-dimensional subspace, and its square is a $\Box$ of signature $(2,2)$ on the indefinite subspaces; the system is elliptic exactly on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real and the norm form is definite, and degenerates on the null cone of the indefinite subspaces (<em>Biquaternion Analysis</em>; <em>Split-Biquaternion Analysis</em>). The names of the regular functions are recorded in the last row; the operator is named the Cauchy–Riemann operator throughout, and the Cauchy–Riemann–Fueter operator for the quaternionic and higher cases.</p>
+<h2 id="the-function-theories">The Function Theories</h2>
+<p>The following table compares the function theories of the eight algebras: the regular class, its equivalent equations, the harmonic consequence, the subharmonic theory and the power series. The eight algebras are the columns, in the fixed order, with the marker <strong>—</strong> where a notion is not carried.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>regular class</td>
+<td>differentiable</td>
+<td>holomorphic</td>
+<td>split differentiable</td>
+<td>dual holomorphic</td>
+<td>monogenic</td>
+<td>split regular</td>
+<td>regular on a subspace</td>
+<td>regular on a subspace</td>
+</tr>
+<tr>
+<td>equivalent equations</td>
+<td>—</td>
+<td>Cauchy–Riemann</td>
+<td>split Cauchy–Riemann</td>
+<td>$u_y=0$, $v_y=u_x$</td>
+<td>Cauchy–Riemann–Fueter</td>
+<td>split Cauchy–Riemann–Fueter</td>
+<td>Cauchy–Riemann–Fueter</td>
+<td>Cauchy–Riemann–Fueter</td>
+</tr>
+<tr>
+<td>harmonic consequence</td>
+<td>—</td>
+<td>parts harmonic</td>
+<td>components solve the wave equation</td>
+<td>the real line only</td>
+<td>regular $\Rightarrow$ harmonic</td>
+<td>regular $\Rightarrow$ $\Box$-harmonic</td>
+<td>regular $\Rightarrow$ harmonic</td>
+<td>regular $\Rightarrow$ harmonic</td>
+</tr>
+<tr>
+<td>subharmonic</td>
+<td>—</td>
+<td>plurisubharmonic</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>power series</td>
+<td>radius of convergence</td>
+<td>Taylor, Laurent</td>
+<td>componentwise</td>
+<td>on a ball</td>
+<td>on a ball</td>
+<td>on a ball, slice-regular</td>
+<td>on a ball</td>
+<td>on a ball</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table shows the theories side by side. In $\mathbb{C}$ the real and imaginary parts of a holomorphic function are harmonic, and the subharmonic and plurisubharmonic functions are the subject of the several-variable theory; in $\mathbb{H}$ the factorisation $D\bar D=\Delta$ makes every regular function harmonic, and in $\mathbb{H}_{\mathrm{s}}$ the factorisation by $\Box$ makes every regular function $\Box$-harmonic, but in neither case is the converse true (<em>Complex Analysis</em>; <em>Several Complex Variables</em>; <em>Quaternion Regular Functions</em>; <em>Split-Quaternion Regular Functions</em>). In $\mathbb{D}$ the split differentiable functions are exactly $f=F_+(Z_+)\Pi_1+F_-(Z_-)\Pi_2$ for differentiable one-variable functions, so the harmonic consequence is the wave equation satisfied by the components, and the function algebra is the direct product of two copies of the real one; the identity theorem nevertheless fails, because $(F_+\Pi_1)(G_-\Pi_2)=0$ shows that the algebra of functions is not a domain (<em>Split-Complex Analysis on Subspaces</em>). In $\mathbb{D}'$ the structure theorem of dual differentiability makes the infinitesimal part of a dual differentiable function determined by the derivative of its real part, so a dual function carries its own derivative; the whole theory reduces to the real line and its first-order neighbourhood (<em>Dual-Numbers Analysis</em>). In $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ the theory is stated on a four-dimensional subspace at a time: regularity is defined by $\tilde\nabla\tilde F=0$, it is equivalent to a four-equation Cauchy–Riemann–Fueter system, and every regular function is harmonic because $\Box$ is scalar; but because the algebra has zero divisors, the naive inverse and the difference quotient are only local, and the identity theorem, the maximum principle and the Cauchy representation hold only where the division property returns (<em>Biquaternion Regular Functions</em>; <em>Split-Biquaternion Regular Functions</em>). The subharmonic row is empty for seven columns: plurisubharmonicity enters through the several-variable theory of $\mathbb{C}$, and the remaining systems carry a harmonic consequence of regularity but not a subharmonic theory of their own.</p>
+<h2 id="several-variables-and-subspaces">Several Variables and Subspaces</h2>
+<p>The following table compares the several-variable theory and the subspace theory of the eight algebras: the several-variable theory, the distinguished subspaces on which the analysis is built, and what the analysis reduces to there. The eight algebras are the columns, in the fixed order, with the marker <strong>—</strong> where the notion is absent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>several-variable theory</td>
+<td>—</td>
+<td>$\mathbb{C}^n$, $n\geq2$</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>distinguished subspaces</td>
+<td>the line itself</td>
+<td>$\mathbb{R}$, $i\mathbb{R}$</td>
+<td>$\mathbb{R}_{\mathbb{D}}$, $j\mathbb{R}_{\mathbb{D}}$</td>
+<td>$\mathbb{R}$, $\mathfrak{m}$</td>
+<td>slices $\mathbb{C}_I$, $I\in S^2$</td>
+<td>$\mathbb{R}[e_1]$, $\mathbb{D}_2$, $\mathbb{D}_3$, $V$</td>
+<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_\pm$</td>
+<td>quaternion subspace, indefinite sectors</td>
+</tr>
+<tr>
+<td>the analysis reduces to</td>
+<td>one-variable real analysis</td>
+<td>one-variable on each line</td>
+<td>two copies of real analysis</td>
+<td>the real line and its first-order neighbourhood</td>
+<td>Fueter's quaternionic analysis</td>
+<td>elliptic on the definite planes, hyperbolic on the indefinite</td>
+<td>complete on $\mathbb{H}_{\mathbb{B}}$</td>
+<td>complete on the quaternion subspace</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table shows that the analysis is built on distinguished subspaces, and that its completeness is decided by the division property there. In $\mathbb{C}$ the several-variable theory is a genuine enlargement, with the Hartogs extension theorem, the domains of holomorphy and Stein manifolds playing the role that the Cauchy integral and the residue calculus play in one variable; there are no isolated singularities in $n\geq2$ variables, and the natural domains are the pseudoconvex ones (<em>Several Complex Variables</em>). In $\mathbb{D}$ the two one-dimensional real subspaces are the fixed line $\mathbb{R}_{\mathbb{D}}$ and the anti-fixed line $j\mathbb{R}_{\mathbb{D}}$, carrying the ordinary derivatives and combining into the wave operator, and in $\mathbb{D}'$ the two submodules are the real line $\mathbb{R}$ and the maximal ideal $\mathfrak{m}$, which is a first-order neighbourhood of the real line; in both cases the analysis decomposes into one-dimensional real analysis and its first-order thickening (<em>Split-Complex Analysis on Subspaces</em>; <em>Dual-Numbers Analysis on Subspaces</em>). In $\mathbb{H}$ the imaginary units form the two-sphere $S^2$, so every non-real quaternion has a unique slice representation, and the axial representation reduces regularity to two equations in the variables $x_0$ and $\rho$; the Fueter construction sends a holomorphic function of one variable to a regular function of four, with the affine functions as kernel, and the Fueter–Sce theorem extends it to odd dimensions (<em>Fueter Theory for Quaternions</em>). In $\mathbb{H}_{\mathrm{s}}$ the imaginary units are the hyperboloid $\{N(I)=1\}$, the slices are the definite and indefinite planes, and the axial representation is available exactly on the timelike region, degenerating on the null cone; the radial Fueter construction does not transfer, and the slice and Fischer parts survive while the radial and spherical parts do not (<em>Fueter Theory for Split-Quaternions</em>). In $\mathbb{B}$ the four subspaces are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, and the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$; the integral theory is complete on $\mathbb{H}_{\mathbb{B}}$, which is a division ring, and everything that fails on the full algebra fails through the zero divisors, the null cone being the locus on which the principal symbol degenerates (<em>Biquaternion Analysis on Subspaces</em>; <em>Biquaternion Regular Functions</em>). In $\mathbb{H}_{\mathbb{D}}$ the operators have exactly the biquaternion form on four real coordinates, but the algebra is the product of two quaternion algebras, so regularity is the <strong>pair</strong> of quaternionic regularities on the two idempotent components, a splitting with no counterpart in the simple biquaternion algebra; the singular set is the union of the two four-dimensional ideals rather than a quadric, and the slice approach must select one root of $N(I)=1$ at a time because the imaginary units form the four-dimensional manifold $S^2\times S^2$ (<em>Split-Biquaternion Analysis</em>; <em>Fueter Theory for Split-Biquaternions</em>).</p>
+<h2 id="summary">Summary</h2>
+<p>The first-order operator is the ordinary derivative in $\mathbb{R}$, the Cauchy–Riemann operator in $\mathbb{C}$, its split and dual variants in $\mathbb{D}$ and $\mathbb{D}'$, and the Cauchy–Riemann–Fueter operator in the four higher systems; its square is elliptic in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, hyperbolic in $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$, degenerate in $\mathbb{D}'$, and elliptic on the quaternion subspace of $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ and hyperbolic on their indefinite subspaces. The type follows the signature of the norm form and nothing else: the operator is elliptic exactly where the form is definite, and its symbol vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set where the form is indefinite. Regularity is holomorphy in $\mathbb{C}$, split differentiability on two copies of the real line in $\mathbb{D}$, dual differentiability reducing to the real line and its first-order neighbourhood in $\mathbb{D}'$, monogenicity in $\mathbb{H}$ and split regularity in $\mathbb{H}_{\mathrm{s}}$, and regularity on a chosen four-dimensional subspace in $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$; every regular function is harmonic in the definite cases and $\Box$-harmonic in the indefinite ones, and the converses fail. The several-variable theory exists only for $\mathbb{C}$, the slice and Fueter theory exists for $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$, and the identity theorem, the maximum principle and the Cauchy representation hold only where the division property holds — everywhere on $\mathbb{H}$, on the quaternion subspace of $\mathbb{B}$, on the quaternion subspace of $\mathbb{H}_{\mathbb{D}}$, and nowhere on the full algebra of either biquaternion system, since there the zero divisors remove the analytic continuation off the definite subspace.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D,\nabla,\tilde\nabla$</td>
+<td>the Cauchy–Riemann–Fueter operator of the algebra</td>
+</tr>
+<tr>
+<td>$\bar D,\bar\nabla,\bar{\tilde\nabla}$</td>
+<td>its conjugate</td>
+</tr>
+<tr>
+<td>$\Delta,\Delta_4$</td>
+<td>the Euclidean Laplacian</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>the second-order operator factored by the first-order pair; the wave, ultrahyperbolic or Lorentzian operator</td>
+</tr>
+<tr>
+<td>$S^2$</td>
+<td>the sphere of imaginary units of $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_I$</td>
+<td>the slice through the imaginary unit $I$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{D}},j\mathbb{R}_{\mathbb{D}}$</td>
+<td>the fixed and anti-fixed lines of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}=\varepsilon\mathbb{R}$</td>
+<td>the maximal ideal of $\mathbb{D}'$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>the real quaternion subspace of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the Hermitian and anti-Hermitian subspaces of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\Pi_\pm,e_\pm$</td>
+<td>the idempotents of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td><code>—</code></td>
+<td>an empty cell, stated and never filled</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd ed. (McGraw-Hill, 1987), for real analysis, harmonic and subharmonic functions and the Cauchy theory of one complex variable.</li>
+<li>Lars Hörmander, <em>An Introduction to Complex Analysis in Several Variables</em>, 3rd ed. (North-Holland, 1990), for the several-variable theory, the Hartogs extension theorem and plurisubharmonic functions.</li>
+<li>F. Brackx, R. Delanghe and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for monogenic functions, the Cauchy–Riemann operator and the Fischer decomposition.</li>
+<li>Klaus Gürlebeck and Wolfgang Sprößig, <em>Quaternionic and Clifford Calculus for Physicists and Engineers</em> (Wiley, 1997), for the Cauchy–Riemann–Fueter operator, the Axial representation and the Fueter–Sce construction.</li>
+<li>John Ryan, <em>Clifford Algebras in Analysis and Related Topics</em> (CRC Press, 1996), for slice regularity, the Fueter construction and Clifford analysis on indefinite forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

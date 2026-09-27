@@ -73,11 +73,11 @@ $$</p>
 <h3 id="step-2-the-measurement-operators">Step 2: The measurement operators</h3>
 <p>The projector onto spin-up along $\hat{a}$ for particle 1 is</p>
 <p>$$
-P_+(\hat{a}) = \frac{1}{2}\left(I + \hat{a}\cdot\boldsymbol{\sigma}\right),
+\tilde\Pi(\hat{a}) = \frac{1}{2}\left(I + \hat{a}\cdot\boldsymbol{\sigma}\right),
 $$</p>
 <p>and similarly for particle 2 along $\hat{b}$. The joint measurement operator is the tensor product</p>
 <p>$$
-P_{++}(\hat{a},\hat{b}) = P_+(\hat{a})\otimes P_+(\hat{b}) = \frac{1}{4}\left(I + \hat{a}\cdot\boldsymbol{\sigma}_1\right)\otimes\left(I + \hat{b}\cdot\boldsymbol{\sigma}_2\right),
+P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b}) = \frac{1}{4}\left(I + \hat{a}\cdot\boldsymbol{\sigma}_1\right)\otimes\left(I + \hat{b}\cdot\boldsymbol{\sigma}_2\right),
 $$</p>
 <p>where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1, and $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ acts on particle 2.</p>
 <h3 id="step-3-the-probability">Step 3: The probability</h3>
@@ -132,9 +132,9 @@ P_{\mathrm{singlet}}\circ P_{\mathrm{singlet}} = \frac{1}{16}\cdot 4\left(e_0\ot
 $$</p>
 <p><em>Trace.</em> The trace is $\mathrm{Tr}(P_{\mathrm{singlet}}) = \frac{1}{4}\sum_{j=0}^{3}\mathrm{Tr}_\mathbb{B}(e_j)^2$. Each $\mathrm{Tr}_\mathbb{B}(e_j) = 2$ for $j = 0$ (since $\mathrm{Tr}_\mathbb{B}(e_0) = 2$) and $0$ for $j = 1, 2, 3$ (since the trace of a pure quaternion vanishes). So the sum is $4$, and $\mathrm{Tr}(P_{\mathrm{singlet}}) = \frac{1}{4}\cdot 4 = 1$.</p>
 <h3 id="step-2-the-measurement-operators_1">Step 2: The measurement operators</h3>
-<p>The single-qubit projector onto spin-up along $\hat{a}$ is the idempotent $P_+(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. The joint measurement operator is the tensor product</p>
+<p>The single-qubit projector onto spin-up along $\hat{a}$ is the idempotent $\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. The joint measurement operator is the tensor product</p>
 <p>$$
-P_{++}(\hat{a},\hat{b}) = P_+(\hat{a})\otimes P_+(\hat{b}) = \frac{1}{4}\left(e_0 + i\hat{a}\right)\otimes\left(e_0 + i\hat{b}\right).
+P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b}) = \frac{1}{4}\left(e_0 + i\hat{a}\right)\otimes\left(e_0 + i\hat{b}\right).
 $$</p>
 <h3 id="step-3-the-probability_1">Step 3: The probability</h3>
 <p>The joint probability is the trace formula on $\mathbb{B}\otimes\mathbb{B}$:</p>
@@ -186,7 +186,7 @@ $$</p>
 p(+,+) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ P_{++}(\hat{a},\hat{b})\right),
 $$</p>
 <p>the natural pairing between the joint state and the joint measurement operator. The trace is the tensor product of the single-qubit traces, $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.</p>
-<p><strong>3. The correlations arise from the tensor-product structure.</strong> The single-qubit projectors $P_+(\hat{a})$ and $P_+(\hat{b})$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\hat{a}\cdot\hat{b}$ enters through the cross terms $\sum_k e_k\otimes e_k$ in the singlet idempotent, which couple the two qubits.</p>
+<p><strong>3. The correlations arise from the tensor-product structure.</strong> The single-qubit projectors $\tilde\Pi(\hat{a})$ and $\tilde\Pi(\hat{b})$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\hat{a}\cdot\hat{b}$ enters through the cross terms $\sum_k e_k\otimes e_k$ in the singlet idempotent, which couple the two qubits.</p>
 <p><strong>4. The geometry enters through the algebra.</strong> The angle $\theta$ enters through the scalar product $\hat{a}\cdot\hat{b}$, which appears in the trace formula through the products $e_k\hat{a}$ and $e_k\hat{b}$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.</p>
 <p><strong>5. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the singlet idempotent corresponds exactly to the rank-one projector $|\Psi^-\rangle\langle\Psi^-|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the kinematics of two qubits is contained in the tensor product $\mathbb{M}_+\otimes\mathbb{M}_+$, with the Born rule given by the tensor-product trace.</strong></p>
 <h2 id="comparison-with-exercises-measuring-spin-along-an-arbitrary-direction-spin-precession-in-a-magnetic-field-and-successive-measurements-of-spin">Comparison with Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field and Successive Measurements of Spin</h2>
@@ -286,11 +286,11 @@ $$</p>
 <td>Singlet idempotent</td>
 </tr>
 <tr>
-<td>$P_+(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$</td>
+<td>$\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$</td>
 <td>Single-qubit projector</td>
 </tr>
 <tr>
-<td>$P_{++}(\hat{a},\hat{b}) = P_+(\hat{a})\otimes P_+(\hat{b})$</td>
+<td>$P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b})$</td>
 <td>Joint projector</td>
 </tr>
 <tr>

@@ -64,7 +64,7 @@ $$</p>
 <p>$$
 \tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
 $$</p>
-<p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$, with $e_\pm = \tfrac{1}{2}(1 \pm j)$.</p>
+<p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$, with $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$.</p>
 <p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
@@ -154,13 +154,13 @@ $$</p>
 $$</p>
 <h2 id="factorization-into-quaternion-and-complex-fourier-transforms">Factorization into Quaternion and Complex Fourier Transforms</h2>
 <h3 id="the-idempotent-decomposition-of-the-transform">The Idempotent Decomposition of the Transform</h3>
-<p>The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) e_+ + f_-(t) e_-$ and using the fact that the kernel is the same in both components,</p>
+<p>The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) \tilde\Pi_+ + f_-(t) \tilde\Pi_-$ and using the fact that the kernel is the same in both components,</p>
 <p>$$
-F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) e_+ + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) e_-.
+F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) \tilde\Pi_+ + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) \tilde\Pi_-.
 $$</p>
 <p>So the transform is the pair of the <strong>quaternion Fourier transforms</strong> of the two idempotent components:</p>
 <p>$$
-F(\omega) = F_+(\omega) e_+ + F_-(\omega) e_-,
+F(\omega) = F_+(\omega) \tilde\Pi_+ + F_-(\omega) \tilde\Pi_-,
 $$</p>
 <p>where $F_\pm(\omega) = \int_{-\infty}^{\infty} W(t, \omega) f_\pm(t) \, dt$ is the quaternion Fourier transform of the component $f_\pm$.</p>
 <p>This is the fundamental simplification: the split biquaternion Fourier transform reduces to <strong>two independent quaternion Fourier transforms</strong>, one for each idempotent component.</p>
@@ -269,9 +269,9 @@ $$</p>
 <h3 id="the-general-principle">The General Principle</h3>
 <p>The general principle is that the continuous Fourier transform <strong>diagonalizes the constant-coefficient differential operators</strong> on the four-dimensional subspaces. The symbol of the operator is a split-biquaternion-valued function of the frequency variables, and the solutions of the operator equation are determined by the support of the transform on the zero set of the symbol.</p>
 <h3 id="the-operators-in-the-idempotent-basis">The Operators in the Idempotent Basis</h3>
-<p>In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as</p>
+<p>In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as</p>
 <p>$$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) e_+ + (\tilde{\nabla} \tilde{F}_-) e_-,
+\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_+ + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_-,
 $$</p>
 <p>where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.</p>
 <h2 id="the-vanishing-norm-issue">The Vanishing-Norm Issue</h2>
@@ -332,6 +332,65 @@ $$</p>
 <p>The vanishing-norm issue is a genuinely split biquaternion feature: functions that take zero-divisor values on a set of positive measure are not necessarily recoverable from their transform, and the precise invertibility condition is not known.</p>
 <p>The continuous transform is the limit of the discrete transform as the sampling interval tends to zero, and it is related to the discrete transform by the Poisson summation formula and the sampling theorem.</p>
 <p>The key simplification relative to the biquaternion case is the <strong>idempotent decomposition</strong>: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, so the split biquaternion Fourier transform reduces to two quaternion Fourier transforms. The split complex unit $j$ does not appear in the kernel; it only appears in the idempotent decomposition that separates the two components.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>Split complex unit, central, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>Idempotents of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$</td>
+<td>General split biquaternion</td>
+</tr>
+<tr>
+<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$</td>
+<td>Idempotent components</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$</td>
+</tr>
+<tr>
+<td>$K_\rho(\mathbf{x})$</td>
+<td>Split biquaternion Fourier kernel</td>
+</tr>
+<tr>
+<td>$\hat{f}(\xi)$</td>
+<td>Continuous split-biquaternion Fourier transform</td>
+</tr>
+<tr>
+<td>$f * g$</td>
+<td>Convolution</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}, \Box, \tilde{\nabla}^2, \tilde{D}$</td>
+<td>Gradient, d'Alembertian, gradient square, convective derivative</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions.</li>

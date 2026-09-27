@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of Subspaces and Involutions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comparison-of-subspaces-and-involutions"><strong>Comparison of Subspaces and Involutions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article compares the involutions of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$ and the real vector subspaces those involutions cut out. It states the involution group of each algebra and its rank, the fixed and anti-fixed subspaces and their dimensions, the lattice of distinguished subspaces and the inclusion relations among them, which of the subspaces are subalgebras and which are not, and the centre, vector, quaternion and Hermitian subspaces of the two biquaternion systems, in tables with the eight algebras as columns in the fixed order of <em>The Eight Algebras Compared</em>. Every entry restates a result of the subspace articles cited in the explanations, and the empty places of $\mathbb{R}$, which has no non-trivial involution, are stated and explained rather than omitted.</p>
+<p>The organising thread is the <strong>number of involutions</strong>: one for $\mathbb{R}$ (the identity alone), two for each of the two-dimensional algebras, three for the quaternion systems, and four for the two biquaternion systems. The subspace family grows with it: a two-element decomposition in $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$, a two-subspace decomposition in $\mathbb{H}$, a four-subspace family in $\mathbb{H}_{\mathrm{s}}$, a six-subspace lattice in $\mathbb{B}$ and a four-subspace family in $\mathbb{H}_{\mathbb{D}}$. The last rung is where the family does <strong>not</strong> grow further, because the split complex scalar line and the isometric copy of the quaternion subspace replace the complex scalar line and the negative-definite anti-quaternion subspace of $\mathbb{B}$.</p>
+<h2 id="the-involution-groups">The Involution Groups</h2>
+<p>The following table compares the involutions of the eight algebras and the group they generate: the number of conjugations, the abstract group, its rank, a generating set and whether the conjugations commute. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conjugations</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$4$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>involution group</td>
+<td>trivial</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$(\mathbb{Z}/2)^2$</td>
+<td>$(\mathbb{Z}/2)^2$</td>
+<td>$(\mathbb{Z}/2)^2$</td>
+<td>$(\mathbb{Z}/2)^2$</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>generators</td>
+<td>—</td>
+<td>$\bar{\cdot}$</td>
+<td>$\bar{\cdot}$</td>
+<td>$\bar{\cdot}$</td>
+<td>$\bar{\cdot},-\mathrm{id}$</td>
+<td>$\alpha,\rho$</td>
+<td>$\bar{\cdot},{}^{*}$</td>
+<td>$\bar{\cdot},{}^{*}$</td>
+</tr>
+<tr>
+<td>commuting</td>
+<td>trivial</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table records the first structural change of the category. In $\mathbb{R}$ the only conjugation is the identity, so the involution group is trivial and all the subspace rows below are empty for this column. Each two-dimensional algebra carries exactly one non-trivial involution: complex conjugation in $\mathbb{C}$ (<em>Complex Subspaces</em>, §<em>The Involutions and the Two Decompositions</em>), the conjugation $\bar Z = a-jb$ in $\mathbb{D}$, which coincides with the idempotent conjugation (<em>Split-Complex Subspaces</em>, §<em>The Two Involutions</em>), and dual conjugation in $\mathbb{D}'$ (<em>Dual-Number Subspaces</em>, §<em>The Decompositions</em>). The quaternion algebra carries three conjugations — quaternion conjugation $\bar{\cdot}$, vector conjugation $-\bar{\cdot}$ and total conjugation $-\mathrm{id}$ — and they generate the Klein four-group, so that the rank jumps to $2$ (<em>The Scalar and Vector Subspaces of $\mathbb{H}$</em>, §<em>Definition and Basis</em>). The split quaternions carry three involutions in a different configuration: the conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$, related by $\bar{\cdot}=\alpha\rho$, so that $\alpha$ and $\rho$ generate and the group is again $(\mathbb{Z}/2)^2$ (<em>Split-Quaternion Involution Lattice</em>, §<em>The Group They Generate</em>). The last two columns carry four conjugations each — $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and $\flat$ — of which the first three generate a Klein four-group and the fourth is the negative of ${}^{\dagger}$, so that four listed conjugations still give a group of order four (<em>Biquaternion Involution Lattice</em>, §<em>The Four Conjugations</em>; <em>Split-Biquaternion Involution Lattice</em>, §<em>The Four Conjugations</em>). In the last two columns the conjugation group is the same abstract group as in $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$; what grows is not the group but the number of fixed spaces it cuts out, and the scalar line ceases to be the whole centre.</p>
+<h2 id="the-fixed-and-anti-fixed-subspaces">The Fixed and Anti-Fixed Subspaces</h2>
+<p>The following table compares the fixed and anti-fixed subspaces of the main conjugation of each algebra: the subspace, its real dimension, and whether the two together span the algebra. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fixed subspace</td>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>$\mathbb{R}_{\mathbb{D}}$</td>
+<td>$\mathbb{R}_{\mathbb{D}'}$</td>
+<td>$\mathbb{R}_{\mathbb{H}}$</td>
+<td>$S$</td>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</td>
+</tr>
+<tr>
+<td>anti-fixed subspace</td>
+<td>$\{0\}$</td>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>$j\mathbb{R}_{\mathbb{D}}$</td>
+<td>$\varepsilon\mathbb{R}_{\mathbb{D}'}$</td>
+<td>$\operatorname{Im}\mathbb{H}$</td>
+<td>$V$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$</td>
+</tr>
+<tr>
+<td>dimension of the fixed space</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>dimension of the anti-fixed space</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$6$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>the two span the algebra</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table shows the shape of the main decomposition of each algebra. In $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$ the fixed space is one-dimensional, the scalar line; the anti-fixed space is the imaginary line in $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$ and the three-dimensional vector space in $\mathbb{H}$ (<em>Complex Subspaces</em>, §<em>The Two Subspaces at a Glance</em>; <em>Split-Complex Subspaces</em>, §<em>The Distinguished Subspaces at a Glance</em>; <em>Dual-Number Subspaces</em>, §<em>The Two Submodules at a Glance</em>; <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em>, §<em>The Two-Subspace Lattice and the Absence of the Full Lattice</em>). The last two columns are where the fixed space grows: the centre of $\mathbb{B}$ is the complex line $\mathbb{C}_{\mathbb{B}}$, of real dimension two, and the centre of $\mathbb{H}_{\mathbb{D}}$ is the split complex line $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, also of dimension two; correspondingly the anti-fixed space of $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$, of dimension three, is replaced by the complex vector space $\mathrm{Vect}(\mathbb{B})$ of real dimension six in $\mathbb{B}$ and by the split complex vector space $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ of the same real dimension six in $\mathbb{H}_{\mathbb{D}}$ (<em>Biquaternion Relations Between Subspaces</em>, §<em>The Six Subspaces at a Glance</em>; <em>Split-Biquaternion Relations Between Subspaces</em>, §<em>The Four Subspaces at a Glance</em>). The anti-fixed spaces of $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ are the largest of the table, of real dimension six, because the complex or split complex coefficients double each vector coordinate. The empty cell of the anti-fixed row in the column $\mathbb{R}$ is genuine: the identity involution has no anti-fixed element but the origin, and $\mathbb{R}$ has no non-trivial involution from which a second decomposition could be drawn.</p>
+<h2 id="the-distinguished-subspaces">The Distinguished Subspaces</h2>
+<p>The following table compares the lattice of distinguished subspaces of the eight algebras: one row per family and the dimension of the subspace in parentheses, with the marker <strong>—</strong> where the family does not occur. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar / centre</td>
+<td>$\mathbb{R}$ (1)</td>
+<td>$\mathbb{R}_{\mathbb{C}}$ (1)</td>
+<td>$\mathbb{R}_{\mathbb{D}}$ (1)</td>
+<td>$\mathbb{R}_{\mathbb{D}'}$ (1)</td>
+<td>$\mathbb{R}_{\mathbb{H}}$ (1)</td>
+<td>$S$ (1)</td>
+<td>$\mathbb{C}_{\mathbb{B}}$ (2)</td>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ (2)</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>—</td>
+<td>$i\mathbb{R}_{\mathbb{C}}$ (1)</td>
+<td>$j\mathbb{R}_{\mathbb{D}}$ (1)</td>
+<td>$\varepsilon\mathbb{R}_{\mathbb{D}'}$ (1)</td>
+<td>$\operatorname{Im}\mathbb{H}$ (3)</td>
+<td>$V$ (3)</td>
+<td>$\mathrm{Vect}(\mathbb{B})$ (6)</td>
+<td>$\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ (6)</td>
+</tr>
+<tr>
+<td>quaternion</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>$\mathbb{H}$ (4)</td>
+<td>$\mathbb{H}_{\mathrm{s}}$ (4)</td>
+<td>$\mathbb{H}_{\mathbb{B}}$ (4)</td>
+<td>$\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ (4)</td>
+</tr>
+<tr>
+<td>anti-quaternion</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>$i\mathbb{H}_{\mathbb{B}}$ (4)</td>
+<td>$j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ (4)</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>$\mathbb{M}_+$ (4)</td>
+<td>$\mathbb{M}_+$ (4)</td>
+</tr>
+<tr>
+<td>anti-Hermitian</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>$\mathbb{M}_-$ (4)</td>
+<td>$\mathbb{M}_-$ (4)</td>
+</tr>
+<tr>
+<td>extra split-complex subspaces</td>
+<td>—</td>
+<td>—</td>
+<td>$\mathbb{R}\Pi_1,\mathbb{R}\Pi_2$ (1,1)</td>
+<td>—</td>
+<td>—</td>
+<td>$\mathbb{D}_2,\mathbb{D}_3$ (2,2)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the lattice of the category, and it has two halves. The lower-dimensional columns carry only the scalar–vector pair, or, in $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$, additional split-complex planes that are not fixed spaces of any involution: in $\mathbb{D}$ the two isotropic lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, which refine the eigenline decomposition $\mathbb{R}_{\mathbb{D}}\oplus j\mathbb{R}_{\mathbb{D}}$ (<em>Split-Complex Subspaces</em>, §<em>The Four Coordinate Lines</em>), and in $\mathbb{H}_{\mathrm{s}}$ the two planes $\mathbb{D}_2=\langle 1,e_2\rangle$ and $\mathbb{D}_3=\langle 1,e_3\rangle$, each isomorphic to $\mathbb{D}$, alongside the scalar line $S$ and the vector space $V$ (<em>Split-Quaternion Relations Between Subspaces</em>, §<em>The Four Subspaces at a Glance</em>). The four- and eight-dimensional columns carry a quaternion and a Hermitian family as well: in $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$ the whole algebra plays the role of the quaternion space, while in $\mathbb{B}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of ${}^{*}$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ its anti-fixed space, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ are the fixed and anti-fixed spaces of ${}^{\dagger}$ (<em>Biquaternion Relations Between Subspaces</em>, §<em>The Six Subspaces at a Glance</em>). The reduction of the family at the last rung is stated in the table: $\mathbb{H}_{\mathbb{D}}$ names four distinguished subspaces and not six, its vector space $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ being the six-dimensional complement of the centre, fixed by none of the four involutions, and its anti-quaternion space $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ being isometric to the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ under $j^2=+1$, whereas the corresponding space $i\mathbb{H}_{\mathbb{B}}$ of $\mathbb{B}$ is negative definite and genuinely new (<em>Split-Biquaternion Involution Lattice</em>, §<em>The Lattice of Fixed Spaces</em>). The empty cells of $\mathbb{R}$ are the lattice consequence of the trivial involution group: with no non-trivial involution there is no anti-fixed space, no vector space and no Hermitian family, and only the scalar row is occupied.</p>
+<h2 id="subalgebras-ideals-and-products">Subalgebras, Ideals and Products</h2>
+<p>The following table compares which of the distinguished subspaces are subalgebras, which are ideals and which are neither, with the marker <strong>—</strong> where the family does not occur and "not closed" for a subspace whose product leaves it. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>status</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar / centre</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>—</td>
+<td>not closed</td>
+<td>not closed</td>
+<td>ideal, not subalgebra</td>
+<td>not closed</td>
+<td>not closed</td>
+<td>not closed</td>
+<td>not closed</td>
+</tr>
+<tr>
+<td>quaternion</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+<td>subalgebra</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>not closed</td>
+<td>not closed</td>
+</tr>
+<tr>
+<td>anti-Hermitian</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>not closed</td>
+<td>not closed</td>
+</tr>
+<tr>
+<td>extra split-complex subspaces</td>
+<td>—</td>
+<td>—</td>
+<td>subalgebra, ideal</td>
+<td>—</td>
+<td>—</td>
+<td>subalgebra</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table shows that the scalar line is a subalgebra in every column and is the only family that is one throughout. The vector subspace is closed under multiplication in no column: in $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$ the product of two anti-fixed elements is real or scalar, the fundamental instances being $(ib)(ic)=-bc$ in $\mathbb{C}$ and $\mathbf{p}\mathbf{q}=-\langle\mathbf{p},\mathbf{q}\rangle+\mathbf{p}\times\mathbf{q}$ in $\operatorname{Im}\mathbb{H}$ (<em>Complex Subspaces</em>, §<em>How the Operations Act on the Splits</em>; <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em>, §<em>Algebra and Module Structure</em>). The dual case is the exception of a kind: the infinitesimal submodule $\varepsilon\mathbb{R}_{\mathbb{D}'}$ is closed under multiplication because $\varepsilon^2=0$, but it contains no identity and is the maximal ideal $\mathfrak{m}$, so it is an ideal and not a subalgebra (<em>Dual-Number Subspaces</em>, §<em>How the Operations Act on the Splits</em>). The quaternion subspace is a subalgebra wherever it is a proper subspace, a copy of $\mathbb{H}$ in $\mathbb{B}$ and in $\mathbb{H}_{\mathbb{D}}$; the Hermitian and anti-Hermitian subspaces of the two biquaternion systems are not closed, their products landing in $\mathbb{R}\oplus\mathrm{Vect}$ or in $j\mathbb{R}\oplus\mathrm{Vect}$, but each is closed under the symmetrised product and so carries a Jordan algebra structure (<em>Biquaternion Relations Between Subspaces</em>, §<em>How the Operations Act on the Splits</em>; <em>Split-Biquaternion Relations Between Subspaces</em>, §<em>How the Operations Act on the Splits</em>). The additional split-complex planes of $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ are subalgebras isomorphic to $\mathbb{D}$, and those of $\mathbb{D}$ are in addition the two minimal ideals, the algebra being $\mathbb{R}\oplus\mathbb{R}$ (<em>Split-Complex Algebra</em>, §<em>The Idempotent Decomposition</em>; <em>Split-Quaternion Relations Between Subspaces</em>, §<em>How the Product and the Commutator Act</em>).</p>
+<h2 id="the-two-biquaternion-systems">The Two Biquaternion Systems</h2>
+<p>The two biquaternion columns of the lattice are the ones that carry the full family, and their contrast is the content of the last rung. In $\mathbb{B}$ the four conjugations cut out six subspaces over four coordinate blocks — the two scalar lines $\langle e_0\rangle$ and $\langle ie_0\rangle$ and the two vector triples $\langle e_1,e_2,e_3\rangle$ and $\langle ie_1,ie_2,ie_3\rangle$ — and the intersections of the six subspaces are sums of the blocks, of dimension $0$, $1$ or $3$ (<em>Biquaternion Relations Between Subspaces</em>, §<em>The Four Coordinate Blocks</em>; §<em>The Intersections</em>). In $\mathbb{H}_{\mathbb{D}}$ the same conjugation group cuts out four named subspaces over the analogous four blocks, the real and split-imaginary scalar lines and the real and split-imaginary vector triples, and two subspaces meet in the sum of the blocks they share (<em>Split-Biquaternion Relations Between Subspaces</em>, §<em>The Four Coordinate Blocks</em>; §<em>The Intersections</em>). Multiplication by the central unit acts differently in the two systems: in $\mathbb{B}$ multiplication by $i$ preserves the centre and the vector subspace and exchanges the quaternion with the anti-quaternion subspace and the two sectors, while in $\mathbb{H}_{\mathbb{D}}$ the split complex unit $j$ satisfies $j^2=+1$ and the anti-quaternion space is the isometric copy $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ of the quaternion space rather than a new sector. This is the single place where the lattice of the last rung is smaller than the lattice of the rung below, and it is the lattice form of the difference between the central units $i$ and $j$: a complex central unit gives a negative-definite anti-quaternion subspace, a split central unit does not.</p>
+<h2 id="summary">Summary</h2>
+<p>The eight algebras carry a ladder of involution groups: the trivial group for $\mathbb{R}$, a $\mathbb{Z}/2$ for each of $\mathbb{C}, \mathbb{D}, \mathbb{D}'$, and a Klein four-group $(\mathbb{Z}/2)^2$ for $\mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$, generated in the quaternion case by $\bar{\cdot}$ and $-\mathrm{id}$, in the split quaternion case by $\alpha$ and $\rho$, and in the biquaternion cases by $\bar{\cdot}$ and ${}^{*}$, with ${}^{\dagger}={}^{*}\circ\bar{\cdot}$ and $\flat=-{}^{\dagger}$ in both. The fixed space of the main conjugation is one-dimensional up to $\mathbb{H}_{\mathrm{s}}$ and two-dimensional in the two biquaternion systems, where it is the complex and the split complex centre; the anti-fixed space grows from $0$ in $\mathbb{R}$ through $1$ in the two-dimensional systems and $3$ in $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$ to $6$ in $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$. The lattice of distinguished subspaces has two members in $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$ (with the two isotropic lines of $\mathbb{D}$ refining them), two in $\mathbb{H}$, four in $\mathbb{H}_{\mathrm{s}}$, six in $\mathbb{B}$ and four in $\mathbb{H}_{\mathbb{D}}$, the last rung being smaller than the one below because the split anti-quaternion space is isometric to the quaternion space. The scalar line is a subalgebra in every column, the vector subspace is closed in none, the dual infinitesimal submodule is an ideal rather than a subalgebra, the quaternion subspace is a subalgebra wherever it is proper, and the Hermitian and anti-Hermitian subspaces of the two biquaternion systems are not subalgebras but each carries a symmetrised-product Jordan structure. The empty places of $\mathbb{R}$ — the anti-fixed space, the vector subspace and every higher family — are the consequence of its trivial involution group and are stated in each table.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>a general involution, an order-two linear or anti-linear map</td>
+</tr>
+<tr>
+<td>$\operatorname{id}$</td>
+<td>the identity, the sole conjugation of $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>quaternion or complex conjugation, negating the vector part</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>complex or split complex conjugation of coefficients</td>
+</tr>
+<tr>
+<td>${}^{\dagger}=\bar{\cdot}\circ{}^{*}$</td>
+<td>Hermitian conjugation</td>
+</tr>
+<tr>
+<td>$\flat=-{}^{\dagger}$</td>
+<td>reversal, the negative of Hermitian conjugation</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the principal involution of $\mathbb{H}_{\mathrm{s}}$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>the reversal of $\mathbb{H}_{\mathrm{s}}$, $\bar{\cdot}=\alpha\rho$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}},i\mathbb{R}_{\mathbb{C}}$</td>
+<td>real and imaginary subspaces of $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{D}},j\mathbb{R}_{\mathbb{D}},\mathbb{R}\Pi_{1,2}$</td>
+<td>real, split imaginary and idempotent lines of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{D}'},\varepsilon\mathbb{R}_{\mathbb{D}'},\mathfrak{m}$</td>
+<td>real and infinitesimal submodules of $\mathbb{D}'$ and its maximal ideal</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}},\operatorname{Im}\mathbb{H}$</td>
+<td>scalar and vector subspaces of $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$S,V,\mathbb{D}_2,\mathbb{D}_3$</td>
+<td>scalar, vector and split-complex subspaces of $\mathbb{H}_{\mathrm{s}}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_\pm$</td>
+<td>the six subspaces of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}},\mathrm{Vect}(\mathbb{H}_{\mathbb{D}}),\mathbb{H}_{\mathbb{H}_{\mathbb{D}}},j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}},\mathbb{M}_\pm$</td>
+<td>the subspaces of $\mathbb{H}_{\mathbb{D}}$</td>
+</tr>
+<tr>
+<td>$(\mathbb{Z}/2)^2$</td>
+<td>the Klein four-group generated by the conjugations</td>
+</tr>
+<tr>
+<td><code>—</code></td>
+<td>an empty cell, stated and never filled</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the decomposition of an algebra into the eigenspaces of an involution and the Peirce decomposition of it.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em>, American Mathematical Society Colloquium Publications 39 (1968), for the symmetrised product and the Jordan structure of a subspace that is not a subalgebra.</li>
+<li>John Voight, <em>Quaternion Algebras</em>, Graduate Texts in Mathematics 288 (Springer, 2021), for the scalar–vector decomposition, conjugation and the subalgebras of a quaternion algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the grading and the involutions of the low-dimensional Clifford algebras.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the subspace lattices of the split and complexified forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

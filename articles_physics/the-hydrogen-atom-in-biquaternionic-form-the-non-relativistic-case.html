@@ -60,7 +60,7 @@ $$</p>
 <p>This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article <em>Angular Momentum and Spin in Biquaternionic Form</em> supplies the orbital operators $\tilde L_k=\hat L_k e_0$, sitting in the scalar slot, the spin operators $\tilde S_k=\tfrac{\hbar}{2}ie_k$, sitting in the vector slots, and the eigenvalue $\hbar^2 l(l+1)$ through which the angular problem couples to the radial one. The companion article <em>The Schrödinger Equation in Biquaternionic Form</em> supplies the state module $\mathbb{B}\tilde P\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.</p>
 <p>The honest summary can be stated before the derivation, and it is simple. The non-relativistic Coulomb Hamiltonian is a <strong>central scalar</strong> element of $\mathbb{M}_+$: its vector part vanishes. It therefore treats the spin as a spectator, and the biquaternion equation reduces componentwise to the ordinary scalar Schrödinger equation. The genuinely algebraic ingredients are the two-dimensional module $\mathbb{B}\tilde P$ that carries the spin factor and the placement of the orbital and spin operators in complementary slots. What the framework does <strong>not</strong> supply is the space in which the bound states live and an algebraic account of the $n^2$ degeneracy; both gaps are stated where they arise and collected in a section of their own, rather than smoothed over.</p>
 <p>The title covers the non-relativistic case only. The relativistic case begins from the biquaternion Dirac equation with the Coulomb potential, where the Hamiltonian is no longer central, the spin is no longer a spectator, and the $l$-degeneracy is lifted; it is left to its own article and is described only qualitatively at the end.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The isomorphism is $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\Phi(ie_k)=\sigma_k$. The states are spinors in a minimal left ideal $\mathbb{B}\tilde P$, and the idempotents are $\tilde P_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$.</p>
+<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The isomorphism is $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\Phi(ie_k)=\sigma_k$. The states are spinors in a minimal left ideal $\mathbb{B}\tilde P$, and the idempotents are $\tilde \tilde\Pi(\pm\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$.</p>
 <h2 id="the-coulomb-hamiltonian-in-math35">The Coulomb Hamiltonian in $\mathbb{M}_+$</h2>
 <h3 id="the-kinetic-term-and-a-sign">The kinetic term and a sign</h3>
 <p>The momentum operator of the framework is</p>
@@ -131,14 +131,14 @@ $$</p>
 $$</p>
 <p>with $Y_l^m$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\hat n$ has the two eigenspaces</p>
 <p>$$
-\hat n_k\tilde S_k\,\tilde P_\pm(\hat n) = \pm\tfrac{\hbar}{2}\,\tilde P_\pm(\hat n),
+\hat n_k\tilde S_k\,\tilde \tilde\Pi(\pm\hat n) = \pm\tfrac{\hbar}{2}\,\tilde \tilde\Pi(\pm\hat n),
 \qquad
-\tilde P_\pm(\hat n)=\tfrac12(e_0\pm i\hat n),
+\tilde \tilde\Pi(\pm\hat n)=\tfrac12(e_0\pm i\hat n),
 $$</p>
-<p>and for the axis $\hat n=e_3$ the two idempotents $\tilde P_\pm(e_3)=\tfrac12(e_0\pm ie_3)$ are the spin-up and spin-down states.</p>
-<p>The framework's Born rule for the spin factor is the trace formula. For the observable $\tilde S_k$ in the pure state $\tilde P_+(\hat n)=\tfrac12(e_0+i\hat n)$,</p>
+<p>and for the axis $\hat n=e_3$ the two idempotents $\tilde \tilde\Pi(\pme_3)=\tfrac12(e_0\pm ie_3)$ are the spin-up and spin-down states.</p>
+<p>The framework's Born rule for the spin factor is the trace formula. For the observable $\tilde S_k$ in the pure state $\tilde \tilde\Pi(\hat n)=\tfrac12(e_0+i\hat n)$,</p>
 <p>$$
-\mathrm{Tr}\bigl(\tilde P_+(\hat n)\,\tilde S_k\bigr) = 2\,\mathrm{Sc}\bigl(\tilde P_+(\hat n)\,\tilde S_k\bigr) = \frac{\hbar}{2}\hat n_k ,
+\mathrm{Tr}\bigl(\tilde \tilde\Pi(\hat n)\,\tilde S_k\bigr) = 2\,\mathrm{Sc}\bigl(\tilde \tilde\Pi(\hat n)\,\tilde S_k\bigr) = \frac{\hbar}{2}\hat n_k ,
 $$</p>
 <p>which is the standard spin-1/2 expectation value, written as the trace pairing of $\mathbb{M}_+$.</p>
 <h3 id="the-ansatz-and-the-radial-equation">The ansatz and the radial equation</h3>
@@ -190,7 +190,7 @@ $$</p>
 \psi_{100}(\mathbf x) = \frac{1}{\sqrt{\pi a_0^3}}\,e^{-r/a_0}\,\chi_{m_s},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$</p>
-<p>a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde P_\pm(e_3)$. A complete eigenstate is the product $R_{nl}Y_l^m\chi_{m_s}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $\tilde L^2$ and $\tilde L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.</p>
+<p>a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde \tilde\Pi(\pme_3)$. A complete eigenstate is the product $R_{nl}Y_l^m\chi_{m_s}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $\tilde L^2$ and $\tilde L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.</p>
 <h2 id="correspondence-with-the-standard-solution">Correspondence with the Standard Solution</h2>
 <p>Under the isomorphism $\Phi$ the transcription is transparent. The field $\psi$ is a two-component column, the central Hamiltonian acts as $h_0 I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.</p>
 <div class="table-scroll"><table>
@@ -372,7 +372,7 @@ $$</p>
 <td>State module of spinors $\psi$</td>
 </tr>
 <tr>
-<td>$\tilde P_\pm(\hat n)=\tfrac12(e_0\pm i\hat n)$</td>
+<td>$\tilde \tilde\Pi(\pm\hat n)=\tfrac12(e_0\pm i\hat n)$</td>
 <td>Spin eigenstates (idempotents)</td>
 </tr>
 <tr>

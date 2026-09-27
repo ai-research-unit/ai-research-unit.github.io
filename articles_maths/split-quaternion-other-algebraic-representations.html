@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Quaternion Other Algebraic Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternion-other-algebraic-representations"><strong>Split-Quaternion Other Algebraic Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra article defined $\mathbb{H}_{\mathrm{s}}$, its three involutions, its norm form and its distinguished real subspaces $S$, $V$, $\mathbb{D}_2$ and $\mathbb{D}_3$. This article describes the <strong>algebraic realizations</strong> of $\mathbb{H}_{\mathrm{s}}$ that are not the subject of a dedicated article of their own:</p>
+<ol>
+<li><strong>Clifford algebra representation.</strong> A split-quaternion as an element of the Clifford algebra $\mathrm{Cl}_{1,1}$, so that the three involutions of the algebra are the standard Clifford involutions.</li>
+<li><strong>Clifford module representation.</strong> The algebra acting on the split-complex planes and on its two-component module, the split signature analogue of the spinor representation.</li>
+<li><strong>Relations among the split-complex and matrix models.</strong> The identification of the Clifford, split-complex and matrix pictures of the same element.</li>
+</ol>
+<p>The remaining realizations are the subjects of their own articles:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>realization</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>four-vector</td>
+<td><em>Split-Quaternion Four-Vector Representation</em></td>
+</tr>
+<tr>
+<td>$2 \times 2$ matrix</td>
+<td><em>Split-Quaternion Matrix Representations</em></td>
+</tr>
+<tr>
+<td>operator on the algebra</td>
+<td><em>Split-Quaternion Operator Representation</em></td>
+</tr>
+<tr>
+<td>polar</td>
+<td><em>Split-Quaternion Polar Representation</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>and the technical representation theory is the subject of <em>Split-Quaternion Representations</em>. Each of those articles owns its realization; this article records only the relations that involve the three studied here.</p>
+<p>The word <strong>representation</strong> is used in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The word <strong>algebraic</strong> contrasts with <strong>polar</strong>: the realizations here use only the algebra operations and the underlying real vector space, not the exponential or the roots of $-1$.</p>
+<p><strong>Objects and operators.</strong> A realization writes the element as an array and decides nothing about how the array is used. The same $2 \times 2$ matrix $\Phi(\tilde q)$ is the split-quaternion written as an <strong>object</strong> — an array whose entries are its coordinates — and, once a column is placed beside it, the <strong>operator</strong> acting on that column. An operator appears exactly where an action on a carrier is specified; the carrier may be $\mathbb{R}^2$, a plane, or the algebra itself. This article supplies realizations and the module structures they define; the operator reading on the algebra is the subject of <em>Split-Quaternion Operator Representation</em>.</p>
+<p><strong>Notation.</strong> A general split-quaternion is</p>
+<p>$$
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R},
+$$</p>
+<p>with $q_0 = \operatorname{Sc}(\tilde q)$ the scalar part and $q_1 e_1 + q_2 e_2 + q_3 e_3 \in V$ the vector part. The basis satisfies $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$.</p>
+<h2 id="the-clifford-algebra-representation">The Clifford Algebra Representation</h2>
+<p><strong>Theorem.</strong> The split-quaternion algebra is isomorphic to the Clifford algebra $\mathrm{Cl}_{1,1}$ of the form of signature $(1,1)$:</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}} \;\cong\; \mathrm{Cl}_{1,1} \;\cong\; M_2(\mathbb{R}),
+$$</p>
+<p>the isomorphism sending the generators $f_1, f_2$ of $\mathrm{Cl}_{1,1}$ (with $f_1^2 = +1$, $f_2^2 = -1$, $f_1 f_2 = -f_2 f_1$) to $e_2, e_1$ respectively.</p>
+<p><strong>Proof.</strong> The elements $e_2$ and $e_1$ anticommute, with $e_2^2 = +1$ and $e_1^2 = -1$; they therefore satisfy the defining relations of the generators of $\mathrm{Cl}_{1,1}$ under the identification $f_1 = e_2$, $f_2 = e_1$. The products $1, e_1, e_2, e_1 e_2 = e_3$ form a real basis of $\mathbb{H}_{\mathrm{s}}$, matching the four basis monomials $1, f_2, f_1, f_1 f_2$ of $\mathrm{Cl}_{1,1}$; hence the map extends to an isomorphism. Both algebras are four-dimensional central simple and are isomorphic to $M_2(\mathbb{R})$, the unique such algebra of degree two. $\square$</p>
+<p><strong>Proposition (the involutions are the Clifford involutions).</strong> Under this isomorphism the three involutions of $\mathbb{H}_{\mathrm{s}}$ are the standard involutions of the Clifford algebra:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution of $\mathbb{H}_{\mathrm{s}}$</th>
+<th>Clifford involution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>principal involution $\alpha$</td>
+<td>the grade (main) involution, $f_i \mapsto -f_i$ on vectors</td>
+</tr>
+<tr>
+<td>reversal $\rho$</td>
+<td>the reversal (transpose) anti-automorphism</td>
+</tr>
+<tr>
+<td>conjugation $\bar{\cdot}$</td>
+<td>the Clifford conjugation $= \alpha \circ \rho$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The grade involution negates the degree-one part, so it sends $e_1, e_2 \mapsto -e_1, -e_2$ and fixes $e_3 = e_1 e_2$, which is exactly $\alpha$. The reversal reverses each product of vectors, so it fixes $e_1, e_2$ and sends $e_3 = e_1 e_2 \mapsto e_2 e_1 = -e_3$, which is exactly $\rho$. The Clifford conjugation $\alpha\rho$ then negates all of $e_1, e_2, e_3$ and fixes $1$, which is exactly $\bar{\cdot}$. $\square$</p>
+<h3 id="the-even-subalgebra">The Even Subalgebra</h3>
+<p>The <strong>even subalgebra</strong> $\mathrm{Cl}_{1,1}^+$ has basis $1, f_1 f_2 = e_2 e_1 = -e_3$, and is the two-dimensional commutative algebra with $(f_1f_2)^2 = f_1 f_2 f_1 f_2 = -f_1^2 f_2^2 = +1$, i.e. $\mathrm{Cl}_{1,1}^+ \cong \mathbb{D}$, the split-complex numbers. In $\mathbb{H}_{\mathrm{s}}$ this is the plane $\operatorname{span}\{1, e_3\} = \mathbb{D}_3$; the other split-complex plane $\mathbb{D}_2 = \operatorname{span}\{1, e_2\}$ is not generated by the chosen vector generators but is the even subalgebra of a differently based presentation of the same Clifford algebra (the two choices correspond to the two orderings of the generators, see the section on choices).</p>
+<h3 id="the-norm-and-the-clifford-norm">The Norm and the Clifford Norm</h3>
+<p>The <strong>Clifford norm</strong> $\tilde q \mapsto \tilde q\bar{\tilde q}$ is the norm form $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$; it agrees with the norm of $\mathbb{H}_{\mathrm{s}}$ and is the standard norm on $\mathrm{Cl}_{1,1}$. The norm-one elements $U = \{\, g : g\bar{g} = 1 \,\}$ are the group of <strong>versors</strong>, of dimension three, a proper subgroup of the unit group; they act on $V$ by the Lorentz action of <em>Split-Quaternion Rotations and the Lorentz Group</em>. The Clifford condition that $g\bar{g}$ be a scalar is automatic here, since $g\bar{g} = N(g)$ for every $g$, so the whole unit group acts on $V$ and the kernel of the action is the scalar line.</p>
+<h2 id="the-clifford-module-structure">The Clifford Module Structure</h2>
+<p>The algebra acts on itself by left multiplication, and the two minimal left ideals are the two <strong>Clifford modules</strong> of the algebra under this action.</p>
+<p><strong>Definition.</strong> A <strong>left module</strong> for $\mathbb{H}_{\mathrm{s}}$ is a real vector space $M$ with a bilinear map $\mathbb{H}_{\mathrm{s}} \times M \to M$, $(\tilde q, m) \mapsto \tilde q \cdot m$, satisfying $\tilde q \cdot (y \cdot m) = (\tilde q y) \cdot m$ and $1 \cdot m = m$.</p>
+<p><strong>Theorem.</strong> The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has a unique simple left module up to isomorphism, of real dimension $2$, and the algebra is the direct sum of two copies of it as a left module:</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_-, \qquad \tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2),
+$$</p>
+<p>the <strong>minimal left ideals</strong>, each $\mathbb{R}$-isomorphic to $\mathbb{R}^2$.</p>
+<p><strong>Proof.</strong> The classification of simple modules over $M_2(\mathbb{R})$ gives the uniqueness and dimension: $M_2(\mathbb{R})$ acts on the column space $\mathbb{R}^2$, and every simple module is isomorphic to it. The idempotents $\tilde\pi_\pm$ are orthogonal and sum to $1$ (verified from $e_2^2 = +1$), so $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}}\tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}}\tilde\pi_-$ as left modules; each summand is a nonzero left ideal, minimal because it is the image of a primitive idempotent. $\square$</p>
+<p>The module realization is the split, real analogue of the biquaternion spinor representation: the simple module is real two-dimensional (where $\mathbb{B}$'s is complex two-dimensional), and the algebra acts on it by the $2 \times 1$ columns of the matrix model. The minimal left ideals and the idempotents are treated in <em>Split-Quaternion Idempotents and Projections</em> and <em>Split-Quaternion Ideals and Peirce Decomposition</em>.</p>
+<h3 id="module-over-the-split-complex-algebra">Module over the Split-Complex Algebra</h3>
+<p>Each split-complex plane $\mathbb{D}_k$ is a commutative subalgebra, and the algebra is a module over it by restriction of scalars: $\mathbb{D}_k \times \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$, $(z, \tilde q) \mapsto zx$. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, this makes $\mathbb{H}_{\mathrm{s}}$ a free module of rank two over $\mathbb{D}_k$, with basis $\{1, e_1\}$; the idempotent decomposition $\tilde q = \tilde q \tilde\pi_+ + \tilde q \tilde\pi_-$ is the separate decomposition of the regular module over itself into the two minimal left ideals. This is the module-theoretic form of the product-table entries $\mathbb{D}_k \cdot \mathbb{H}_{\mathrm{s}} \subseteq \mathbb{H}_{\mathrm{s}}$ of <em>Split-Quaternion Relations Between Subspaces</em>; the twisted multiplication which makes the plane a left module in a genuinely different way is treated in <em>Split-Quaternion Split-Complex Subspaces</em>.</p>
+<h2 id="relation-to-the-split-complex-and-matrix-models">Relation to the Split-Complex and Matrix Models</h2>
+<p>The three pictures of the same element are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>model</th>
+<th>$1$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clifford $\mathrm{Cl}_{1,1}$</td>
+<td>$1$</td>
+<td>$f_2$</td>
+<td>$f_1$</td>
+<td>$f_1 f_2$</td>
+</tr>
+<tr>
+<td>matrix $\Phi$</td>
+<td>$I_2$</td>
+<td>$\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$</td>
+<td>$\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$</td>
+<td>$\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$</td>
+</tr>
+<tr>
+<td>idempotent components</td>
+<td>$\tilde\pi_+ + \tilde\pi_-$</td>
+<td>$\Phi(e_1)$</td>
+<td>$\tilde\pi_+ - \tilde\pi_-$</td>
+<td>$\Phi(e_3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two rows are the Clifford and matrix models of <em>Split-Quaternion Matrix Representations</em>, where the matrix model is the defining representation $\Phi(q_0+q_1 e_1+q_2 e_2+q_3 e_3) = \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$; the identification $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ is realised concretely by sending $f_1 \mapsto \begin{pmatrix} 0&1\\1&0\end{pmatrix}$ and $f_2 \mapsto \begin{pmatrix} 0&-1\\1&0\end{pmatrix}$, so that the matrix row above is the image of the basis. The third row records the decomposition by the idempotents $\tilde\pi_\pm = \tfrac12(1\pm e_2)$, under which $1$ reads as $\tilde\pi_+ + \tilde\pi_-$ and $e_2$ as $\tilde\pi_+ - \tilde\pi_-$, giving the splitting of the algebra into its two minimal left ideals as left modules; the images under the matrix model are $\Phi(\tilde\pi_+) = \tfrac12\begin{pmatrix} 1&1\\1&1\end{pmatrix}$ and $\Phi(\tilde\pi_-) = \tfrac12\begin{pmatrix} 1&-1\\-1&1\end{pmatrix}$, the two rank-one projections.</p>
+<h2 id="relation-to-the-representations-of-math136">Relation to the Representations of $\mathbb{B}$</h2>
+<p>The biquaternion article <em>Biquaternion Other Algebraic Representations</em> treats the spinor, Clifford ($\mathrm{Cl}_{1,3}^+$) and conjugation-action realizations of $\mathbb{B}$. The split-quaternion list is shorter and differs in kind. First, the Clifford model here is $\mathrm{Cl}_{1,1}$, of split signature, in place of the definite $\mathrm{Cl}_{1,3}^+$; the involutions of the algebra become the standard Clifford involutions without any complex structure. Second, the simple module is real two-dimensional, in place of the complex two-dimensional spinor module of $\mathbb{B}$, and the natural module structure is the direct sum of two minimal left ideals from the idempotents $\tilde\pi_\pm$, which are non-central here whereas in $\mathbb{B}$ the corresponding idempotents are central. Third, the conjugation-action realization of $\mathbb{B}$ is, for $\mathbb{H}_{\mathrm{s}}$, the operator article <em>Split-Quaternion Operator Representation</em>, and is not repeated here. None of the biquaternion-specific structures — the central unit $i$, the Hermitian pairing, the chiral spinor halves — appears in the split-quaternion realization.</p>
+<h2 id="the-role-of-choices">The Role of Choices</h2>
+<p>The realizations above depend on choices, which must be recorded because they fix the correspondence between the abstract algebra and the concrete model.</p>
+<ul>
+<li><strong>The signature.</strong> The identification $\mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1}$ uses the generators with squares $+1$ and $-1$. Because $\mathrm{Cl}_{1,1} \cong \mathrm{Cl}_{2,0} \cong M_2(\mathbb{R})$ as algebras, the same algebra also arises as a Clifford algebra of definite signature; the <em>reflection</em> of the form used here is what makes $e_2^2 = +1$ rather than $-1$, and it is the reflection that produces the zero divisors. Either convention describes the same algebra, but the split signature is the one in which the quadratic form is indefinite and the isotropic structure is visible.</li>
+<li><strong>The naming of the generators.</strong> The assignment $f_1 = e_2$, $f_2 = e_1$ is forced by the requirement that $f_1^2 = +1$; the opposite assignment interchanges the two split-complex planes $\mathbb{D}_2$ and $\mathbb{D}_3$ and the roles of $\tilde\pi_+$ and $\tilde\pi_-$. The basis $1, e_1, e_2, e_3$ of the algebra article is held fixed throughout the corpus.</li>
+<li><strong>The matrix model.</strong> The matrices displayed for $e_1, e_2, e_3$ are one choice among several, related by conjugation; the invariants — the trace, the determinant, and the norm form — are independent of the choice, while the images of the idempotents and of the planes depend on it.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The split-quaternion algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$ of split signature, isomorphic to $M_2(\mathbb{R})$; the isomorphism sends the Clifford generators $f_1, f_2$ to $e_2, e_1$. Under this identification the principal involution $\alpha$ is the grade involution, the reversal $\rho$ is the reversal anti-automorphism, and the conjugation $\bar{\cdot}$ is the Clifford conjugation $\alpha\rho$. The even subalgebra $\mathrm{Cl}_{1,1}^+$ is spanned by $1$ and $-e_3$ and is the split-complex algebra $\mathbb{D}_3$; the norm form is the Clifford norm of signature $(2,2)$.</p>
+<p>As a module over itself the algebra splits as the direct sum of the two minimal left ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_\pm$ built from the idempotents $\tilde\pi_\pm = \tfrac12(1\pm e_2)$, each the unique simple module of real dimension two; each split-complex plane makes the algebra a free module of rank two over $\mathbb{D}$. The Clifford, matrix and split-complex models of an element are tabulated above, and the realization differs from the biquaternion one in signature ($\mathrm{Cl}_{1,1}$ in place of $\mathrm{Cl}_{1,3}^+$), in the reality of the simple module, and in the non-centrality of the idempotents. The realizations depend on the signature convention, the naming of the generators and the matrix choice, all recorded above; the invariants are independent of the choices.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>the split-quaternion algebra</td>
+<td><em>Split-Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{1,1}$</td>
+<td>the Clifford algebra of signature $(1,1)$, $\cong M_2(\mathbb{R})$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$f_1, f_2$</td>
+<td>Clifford generators, $f_1^2 = +1$, $f_2^2 = -1$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{1,1}^+$</td>
+<td>the even subalgebra, $\cong \mathbb{D}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\alpha, \rho, \bar{\cdot}$</td>
+<td>grade involution, reversal, Clifford conjugation</td>
+<td><em>Split-Quaternion Subspaces and the Involutions</em></td>
+</tr>
+<tr>
+<td>$\tilde\pi_\pm = \tfrac12(1\pm e_2)$</td>
+<td>the two idempotents and the minimal left ideals</td>
+<td><em>Split-Quaternion Idempotents and Projections</em></td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$</td>
+<td>the minimal left ideals</td>
+<td><em>Split-Quaternion Ideals and Peirce Decomposition</em></td>
+</tr>
+<tr>
+<td>$N(\tilde q)$</td>
+<td>the norm form / Clifford norm, signature $(2,2)$</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>the $2\times2$ real matrix model</td>
+<td><em>Split-Quaternion Matrix Representations</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}_2, \mathbb{D}_3$</td>
+<td>the split-complex planes</td>
+<td><em>Split-Quaternion Split-Complex Subspaces</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the isomorphism $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, the Clifford involutions and the Clifford group of versors.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the low-dimensional Clifford algebra identifications and their signature choices.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the classification of the real Clifford algebras and the role of the signature.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the simple modules over $M_2(\mathbb{R})$ and the idempotent decomposition of the algebra over itself.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

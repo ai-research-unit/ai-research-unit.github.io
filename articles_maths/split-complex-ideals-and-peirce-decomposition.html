@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split-Complex Ideals and Peirce Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-complex-ideals-and-peirce-decomposition"><strong>Split-Complex Ideals and Peirce Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article treats the ideal theory of the split-complex algebra $\mathbb{D}$ and the Peirce decomposition attached to its idempotents. It is the two-dimensional counterpart of <em>Biquaternion Ideals and Peirce Decomposition</em>, and the contrast is complete: the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is <strong>simple</strong>, with no nontrivial two-sided ideals, while $\mathbb{D}$ is a commutative product $\mathbb{R}\oplus\mathbb{R}$ with two nontrivial two-sided ideals and a finite Boolean lattice of them.</p>
+<p>The article records the definition of an ideal in a commutative algebra, determines the two-sided ideals, exhibits the two minimal ideals $\mathbb{R}\Pi_\pm$, writes the Peirce decomposition of $\mathbb{D}$ with respect to an idempotent, computes the lattice of ideals, and identifies the radical. The failure of simplicity is stated with its reason, and compared throughout with the simplicity of $\mathbb{B}$ over $\mathbb{C}$.</p>
+<p><strong>Placement.</strong> The article is fourth in the Algebra group, after <em>Split-Complex Algebra</em>, <em>Split-Complex Norm and Invertibility</em> and <em>Split-Complex Idempotents and Projections</em>, and before <em>Split-Complex Zero Divisors</em> and <em>Worked Examples in the Split-Complex Algebra</em>. It uses the idempotents of the third article and the invertibility criterion of the second.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$, general element $Z = a+j b$, conjugate $\bar Z = a-j b$, norm form $N(Z) = Z\bar Z = a^2-b^2$, idempotents $\Pi_\pm = \tfrac12(1\pm j)$ and idempotent coordinates $Z = Z_+\Pi_1 + Z_-\Pi_2$. The base is the field $\mathbb{R}$; the algebra is commutative, so no distinction between left, right and two-sided ideals arises for the ambient ring.</p>
+<h2 id="ideals-in-an-algebra">Ideals in an Algebra</h2>
+<p><strong>Definition.</strong> A subset $I \subseteq \mathbb{D}$ is an <strong>ideal</strong> if</p>
+<p>$$
+I \text{ is an additive subgroup}, \qquad W \in I \implies ZW \in I \ \text{and} \ WZ \in I.
+$$</p>
+<p>Since $\mathbb{D}$ is commutative, the two conditions coincide, and every ideal is two-sided; there is no separate theory of left and right ideals. The ideals $\{0\}$ and $\mathbb{D}$ are the <strong>trivial</strong> ideals; an ideal is <strong>proper</strong> if it is neither, and <strong>maximal</strong> if it is proper and contained in no larger proper ideal, <strong>minimal</strong> if it is nonzero and contains no smaller nonzero ideal.</p>
+<p>A <strong>principal</strong> ideal is one generated by a single element, written $(Z) = Z\mathbb{D} = \mathbb{D}Z$. The lattice of all ideals, ordered by inclusion, is denoted $\mathrm{Id}(\mathbb{D})$, with meet $I\cap J$ and join $I+J$.</p>
+<p>Since every ideal is closed under multiplication by $\Pi_1$ and by $\Pi_2$, and $Z = Z\Pi_1 + Z\Pi_2$, every ideal decomposes along the idempotent splitting; this is the mechanism behind the computation below.</p>
+<h2 id="the-two-sided-ideals">The Two-Sided Ideals</h2>
+<p><strong>Theorem.</strong> The ideals of $\mathbb{D}$ are exactly the four sets</p>
+<p>$$
+\{0\}, \qquad \mathbb{R}\Pi_1 = \mathbb{D}\Pi_1, \qquad \mathbb{R}\Pi_2 = \mathbb{D}\Pi_2, \qquad \mathbb{D}.
+$$</p>
+<p><strong>Proof.</strong> Each of the three nontrivial sets listed is an ideal: $\mathbb{R}\Pi_1$ is closed under addition, and $Z(\lambda \Pi_1) = \lambda Z \Pi_1 = \lambda Z_+ \Pi_1 \in \mathbb{R}\Pi_1$ for every $Z$, so it is an ideal; the same argument gives $\mathbb{R}\Pi_2$; and $\mathbb{D}$ is trivially an ideal. Conversely, let $I \neq \{0\}$ be an ideal and choose $x \in I$ nonzero. If $N(x) \neq 0$ then $x$ is a unit by <em>Split-Complex Norm and Invertibility</em>, so $1 = x^{-1}x \in I$ and $I = \mathbb{D}$. If $N(x) = 0$, then $x$ is a nonzero multiple of $\Pi_1$ or of $\Pi_2$ by the idempotent classification; say $x = \lambda \Pi_1$ with $\lambda \neq 0$, so that $\Pi_1 = \lambda^{-1}x \in I$. Now take any $y \in I$. If there is such a $y$ with $y_- \neq 0$, then $y\Pi_2 = y_-\Pi_2 \in I$, so $\Pi_2 = y_-^{-1}y\Pi_2 \in I$, and then $1 = \Pi_1 + \Pi_2 \in I$, giving $I = \mathbb{D}$. If on the other hand every $y \in I$ has $y_- = 0$, then $I \subseteq \mathbb{R}\Pi_1$; since $I \neq 0$ and $\Pi_1 \in I$, we get $I = \mathbb{R}\Pi_1$. The case $x = \lambda \Pi_2$ is the same with the roles of $+$ and $-$ exchanged and gives $I = \mathbb{R}\Pi_2$ or $I = \mathbb{D}$. So the list is complete. $\square$</p>
+<p><strong>Corollary (failure of simplicity).</strong> $\mathbb{D}$ is <strong>not simple</strong>: it has exactly two nontrivial proper ideals, both minimal and both maximal. The algebra is the direct product of the two fields</p>
+<p>$$
+\mathbb{D} \cong \mathbb{R}\Pi_1 \times \mathbb{R}\Pi_2, \qquad \mathbb{R}\Pi_1 \cong \mathbb{R}, \quad \mathbb{R}\Pi_2 \cong \mathbb{R},
+$$</p>
+<p>and each of the two ideals is a field in its own right.</p>
+<p><strong>The reason.</strong> The algebra is commutative and generated by an element $j$ satisfying the reducible polynomial $x^2 - 1 = (x-1)(x+1)$; the generator therefore has two distinct eigenvalues $+1$ and $-1$ already in the base field, and the algebra splits as the product of the corresponding eigencomponents. In the biquaternion algebra the situation is different: $\mathbb{B}\cong M_2(\mathbb{C})$ has no nontrivial two-sided ideal at all, because its complex dimension $4$ is a square and $M_2(\mathbb{C})$ is a full matrix algebra over a field, hence simple. Simplicity of $\mathbb{B}$ and non-simplicity of $\mathbb{D}$ are thus the two ends of the same phenomenon: the split-complex algebra is the commutative, reducible, low-dimensional member of the family, and the biquaternion algebra is its simple matrix quotient in four dimensions.</p>
+<h2 id="artinian-semisimple-length-two">Artinian, Semisimple, Length Two</h2>
+<p>Since $\mathbb{D}$ is finite-dimensional over the field $\mathbb{R}$, it is <strong>Artinian</strong> as a ring: every descending chain of ideals stabilises. It is also <strong>Noetherian</strong> for the same reason.</p>
+<p><strong>Proposition.</strong> $\mathbb{D}$ is <strong>semisimple</strong> in the sense of having zero Jacobson radical, and it is the product of the two simple algebras $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$.</p>
+<p><strong>Proof.</strong> The Jacobson radical of a product of fields is zero, since a field has no nonzero nilpotent elements and is its own maximal ideal; and $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ via the idempotent decomposition. $\square$</p>
+<p><strong>Proposition (length).</strong> As a module over itself, $\mathbb{D}$ has <strong>length two</strong>, with composition series</p>
+<p>$$
+\{0\} \subset \mathbb{R}\Pi_1 \subset \mathbb{D}, \qquad \mathbb{R}\Pi_1 \cong \mathbb{R}, \qquad \mathbb{D}/\mathbb{R}\Pi_1 \cong \mathbb{R}\Pi_2 \cong \mathbb{R}.
+$$</p>
+<p><strong>Proof.</strong> The inclusion is proper at each step, $\mathbb{R}\Pi_1$ is simple as a module because it is a field summand, and the quotient $\mathbb{D}/\mathbb{R}\Pi_1$ is isomorphic to $\mathbb{R}\Pi_2$ through $Z \mapsto Z\Pi_2$, again simple. No shorter or longer chain is possible because the dimension is $2$ and every nonzero proper ideal is one-dimensional. $\square$</p>
+<p>So $\mathbb{D}$ has the same module length as a two-dimensional vector space, in contrast with $\mathbb{B}$, whose regular module has length two with simple constituents of complex dimension two. Both algebras are semisimple of length two; they differ in that the constituents of $\mathbb{D}$ are one-dimensional real, in keeping with its smaller dimension.</p>
+<h2 id="idempotents-and-the-peirce-decomposition">Idempotents and the Peirce Decomposition</h2>
+<p>Let $e$ be an idempotent of $\mathbb{D}$ and write $f = 1-e$ for its complement. Multiplication by $e$ and by $f$ splits the algebra into four additive subgroups,</p>
+<p>$$
+\mathbb{D} = \mathbb{D}_{11}\oplus\mathbb{D}_{12}\oplus\mathbb{D}_{21}\oplus\mathbb{D}_{22},
+$$</p>
+<p>where</p>
+<p>$$
+\mathbb{D}_{11} = e\mathbb{D}e, \qquad \mathbb{D}_{12} = e\mathbb{D}f, \qquad \mathbb{D}_{21} = f\mathbb{D}e, \qquad \mathbb{D}_{22} = f\mathbb{D}f.
+$$</p>
+<p>This is the <strong>Peirce decomposition</strong> of $\mathbb{D}$ with respect to $e$. It is the refinement of the two-term decomposition $\mathbb{D} = \mathbb{D}e\oplus\mathbb{D}f$: the summand $\mathbb{D}e$ is $\mathbb{D}_{11}\oplus\mathbb{D}_{21}$ and the summand $\mathbb{D}f$ is $\mathbb{D}_{12}\oplus\mathbb{D}_{22}$.</p>
+<p>Take $e = \Pi_1$, $f = \Pi_2$, the standard idempotent. Then</p>
+<p>$$
+\Pi_1\mathbb{D}\Pi_1 = \mathbb{R}\Pi_1, \qquad \Pi_2\mathbb{D}\Pi_2 = \mathbb{R}\Pi_2, \qquad \Pi_1\mathbb{D}\Pi_2 = 0, \qquad \Pi_2\mathbb{D}\Pi_1 = 0.
+$$</p>
+<p>The two <strong>off-diagonal</strong> Peirce components vanish, because $\Pi_1\Pi_2 = 0$ annihilates every product alternating between the two idempotents, and the decomposition collapses to</p>
+<p>$$
+\mathbb{D} = \mathbb{D}_{11}\oplus\mathbb{D}_{22} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2,
+$$</p>
+<p>of total dimension $1+1+0+0 = 2$. With respect to the idempotent $0$ or $1$ the Peirce decomposition is trivial: for $e = 1$ the only nonzero component is the whole algebra, and for $e = 0$ it is the zero ideal.</p>
+<p><strong>Definition.</strong> The Peirce components are the four blocks of the multiplication table of $\mathbb{D}$ under the splitting $1 = \Pi_1 + \Pi_2$; the vanishing of the off-diagonal blocks is the statement that the splitting is a direct product decomposition.</p>
+<h2 id="the-lattice-of-ideals">The Lattice of Ideals</h2>
+<p>The four ideals of $\mathbb{D}$ are $\{0\}$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$, $\mathbb{D}$, with the inclusions</p>
+<p>$$
+\{0\} \subset \mathbb{R}\Pi_1 \subset \mathbb{D}, \qquad \{0\} \subset \mathbb{R}\Pi_2 \subset \mathbb{D},
+$$</p>
+<p>and no inclusion between $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$ (they are independent, and their intersection is $\{0\}$).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>meet</th>
+<th>value</th>
+<th>join</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}\Pi_1 \cap \mathbb{R}\Pi_2$</td>
+<td>$\{0\}$</td>
+<td>$\mathbb{R}\Pi_1 + \mathbb{R}\Pi_2$</td>
+<td>$\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\Pi_1 \cap \mathbb{D}$</td>
+<td>$\mathbb{R}\Pi_1$</td>
+<td>$\mathbb{R}\Pi_1 + \mathbb{D}$</td>
+<td>$\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$\{0\} \cap I$</td>
+<td>$\{0\}$</td>
+<td>$\{0\} + I$</td>
+<td>$I$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem.</strong> The lattice $\mathrm{Id}(\mathbb{D})$ is a <strong>Boolean lattice</strong> with four elements, isomorphic to the power set of a two-point set:</p>
+<p>$$
+\mathrm{Id}(\mathbb{D}) \cong \mathcal{P}(\{+,-\}), \qquad \{0\} \leftrightarrow \varnothing, \quad \mathbb{R}\Pi_1 \leftrightarrow \{+\}, \quad \mathbb{R}\Pi_2 \leftrightarrow \{-\}, \quad \mathbb{D} \leftrightarrow \{+,-\}.
+$$</p>
+<p><strong>Proof.</strong> The map is the ideal generated by the indicator subset under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$: the ideal of $\mathbb{R}\oplus\mathbb{R}$ generated by the indicator vector of a subset $S$ is the set of pairs supported on $S$, and these four sets are exactly the ideals. Under this identification the complement of the ideal associated with $S$ is the ideal associated with the complementary subset $S^{\mathrm{c}}$, meets are intersections and joins are unions, so the lattice is the power-set lattice $\mathcal{P}(\{+,-\})$, which is Boolean. $\square$</p>
+<p>The lattice is finite, distributive and complemented. This is a further contrast with $\mathbb{B}$, whose two-sided ideal lattice is the two-element chain $\{0\}\subset\mathbb{B}$ (simplicity), while its one-sided ideal lattice is a projective line over $\mathbb{C}$; in $\mathbb{D}$ the left, right and two-sided ideals coincide, so there is a single finite lattice, and it is the Boolean one above.</p>
+<h2 id="the-radical">The Radical</h2>
+<p><strong>Proposition.</strong> The Jacobson radical, the nilradical and the prime radical of $\mathbb{D}$ all vanish.</p>
+<p><strong>Proof.</strong> The nilradical is the set of nilpotent elements. If $Z^n = 0$ then $N(Z)^n = N(Z^n) = 0$, so $N(Z) = 0$; but a nonzero null element is a multiple of $\Pi_1$ or $\Pi_2$, and $(\lambda \Pi_1)^n = \lambda^n \Pi_1 \neq 0$ for $\lambda \neq 0$, so no nonzero null element is nilpotent. Hence the nilradical is $\{0\}$. The Jacobson radical of the product of fields $\mathbb{R}\times\mathbb{R}$ is zero, since the maximal ideals are the two coordinate ideals and their intersection is zero. $\square$</p>
+<p>So $\mathbb{D}$ is <strong>reduced</strong> (no nonzero nilpotent) and <strong>semiprime</strong>. This is the opposite of the dual-number algebra $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, whose maximal ideal is nonzero and nilpotent, and it is the reason $\mathbb{D}$ is much closer in behaviour to a product of fields than to a local ring.</p>
+<h2 id="the-real-structure-and-comparison-with-math173">The Real Structure and Comparison with $\mathbb{B}$</h2>
+<p>The algebra $\mathbb{D}$ is defined over $\mathbb{R}$, and its two minimal ideals are defined over $\mathbb{R}$: each is the real span of the corresponding idempotent, and the unique non-trivial automorphism of $\mathbb{D}$, the conjugation $\bar{\cdot}$, exchanges them,</p>
+<p>$$
+\overline{\Pi_1} = \Pi_2, \qquad \overline{\Pi_2} = \Pi_1,
+$$</p>
+<p>while fixing neither. So the pair of ideals is a single Galois orbit under the conjugation, and the algebra carries no proper $\mathbb{R}$-subalgebra splitting it into one ideal only. In the biquaternion algebra the analogous real structure is the complex conjugation fixing the quaternion subspace; here it is the exchange of the two components.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>feature</th>
+<th>$\mathbb{B} \cong M_2(\mathbb{C})$</th>
+<th>$\mathbb{D} \cong \mathbb{R}\oplus\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>simple?</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>two-sided ideals</td>
+<td>$\{0\}, \mathbb{B}$</td>
+<td>$\{0\}, \mathbb{R}\Pi_1, \mathbb{R}\Pi_2, \mathbb{D}$</td>
+</tr>
+<tr>
+<td>lattice</td>
+<td>two-element chain</td>
+<td>four-element Boolean lattice</td>
+</tr>
+<tr>
+<td>one-sided ideals</td>
+<td>projective line over $\mathbb{C}$</td>
+<td>the same four ideals</td>
+</tr>
+<tr>
+<td>radical</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>length of the regular module</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>reason for (non-)simplicity</td>
+<td>full matrix algebra over a field</td>
+<td>product of two copies of $\mathbb{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The failure of simplicity in $\mathbb{D}$ is therefore not a defect but the algebraic expression of its defining decomposition: the two minimal ideals are the two summands of $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$, and the four-element Boolean lattice is the lattice of subsets of that two-point spectrum.</p>
+<h2 id="summary">Summary</h2>
+<p>An ideal of the commutative algebra $\mathbb{D}$ is a two-sided ideal, and there are exactly four: $\{0\}$, the two minimal ones $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and $\mathbb{D}$. The two minimal ideals are the two summands of the direct product $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$, and the lattice of ideals is the four-element Boolean lattice of subsets of $\{+,-\}$. The algebra is Artinian, semisimple and reduced, of module length two, with zero Jacobson radical and no nonzero nilpotent.</p>
+<p>With respect to an idempotent $e$, the Peirce decomposition splits $\mathbb{D}$ into the four blocks $e\mathbb{D}e$, $e\mathbb{D}f$, $f\mathbb{D}e$, $f\mathbb{D}f$; for the standard idempotent $\Pi_1$ the two off-diagonal blocks vanish and the decomposition collapses to $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2$. The idempotents $\Pi_\pm$ are central and orthogonal, and no element connects the two components, because the algebra is commutative. This is the failure of simplicity of $\mathbb{D}$, against the simplicity of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ over $\mathbb{C}$; the reason is that $\mathbb{D}$ is generated by an element with two distinct eigenvalues in its base field, so it splits as a product of two copies of $\mathbb{R}$, while $\mathbb{B}$ is a full matrix algebra and has no nontrivial two-sided ideal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra</td>
+</tr>
+<tr>
+<td>$Z = a + j b$</td>
+<td>General split complex number</td>
+</tr>
+<tr>
+<td>$\Pi_\pm = \tfrac12(1\pm j)$</td>
+<td>Standard idempotents</td>
+</tr>
+<tr>
+<td>$I$, $(Z) = Z\mathbb{D}$</td>
+<td>Ideal, principal ideal</td>
+</tr>
+<tr>
+<td>$\mathrm{Id}(\mathbb{D})$</td>
+<td>Lattice of ideals</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$</td>
+<td>The two minimal (and maximal proper) ideals</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{11} = \Pi_1\mathbb{D}\Pi_1$</td>
+<td>Peirce component, $= \mathbb{R}\Pi_1$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{22} = \Pi_2\mathbb{D}\Pi_2$</td>
+<td>Peirce component, $= \mathbb{R}\Pi_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{12}, \mathbb{D}_{21}$</td>
+<td>Off-diagonal Peirce components, both $0$</td>
+</tr>
+<tr>
+<td>$f = 1-e$</td>
+<td>Complement of an idempotent</td>
+</tr>
+<tr>
+<td>$N(Z) = a^2-b^2$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}(\mathbb{D})$</td>
+<td>Jacobson radical of $\mathbb{D}$, $= 0$; the nilradical and prime radical vanish as well</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for Peirce decompositions, idempotents and the structure of products of fields.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for the Jacobson radical, semisimplicity and idempotent lifting.</li>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Carus Mathematical Monographs 15, Mathematical Association of America, 1968), for the ideal theory of finite-dimensional algebras.</li>
+<li>Benson Farb and R. Keith Dennis, <em>Noncommutative Algebra</em> (Springer, 1993), for the Peirce decomposition in the semisimple case.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, Grundlehren der mathematischen Wissenschaften 294, 1991), for reduced algebras and the relation between idempotents and the spectrum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual-Numbers Analysis on Subspaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dual-numbers-analysis-on-subspaces"><strong>Dual-Numbers Analysis on Subspaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The article <em>Dual-Numbers Analysis</em> defined limits, continuity, the dual derivative, the Cauchy–Riemann equations and the Wirtinger derivatives on the dual plane, and <em>Dual-Numbers Integration</em> defined the contour integral and the Cauchy–Goursat theorem there. This article specialises the differential operators to the two distinguished submodules of the dual algebra, the <strong>real submodule</strong> $R_{\mathbb{D}'}$ and the <strong>infinitesimal submodule</strong> $\varepsilon R_{\mathbb{D}'}$, and reduces the analysis to the real line and its first-order neighbourhood. The structural model is <em>Biquaternion Analysis on Subspaces</em>, where six subspaces of $\mathbb{B}$ carry specialisations of one abstract Cauchy–Riemann operator; here only two submodules exist and both are one-dimensional, so the specialisation is correspondingly sharper.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{D}'$ over $\mathbb{R}$, the independent variable is written</p>
+<p>$$
+Z = x + y\varepsilon, \qquad x, y \in \mathbb{R},
+$$</p>
+<p>so that $x$ is the coordinate on the real submodule and $y$ the coordinate on the infinitesimal submodule, and a function is written</p>
+<p>$$
+f(Z) = u(x, y) + v(x, y)\varepsilon, \qquad u, v : U \to \mathbb{R},
+$$</p>
+<p>with $U$ an open subset of the dual plane. The real coordinates identify $\mathbb{D}'$ with $\mathbb{R}^2$. The norm form is $N(Z) = x^2$, the maximal ideal is $\mathfrak{m} = (\varepsilon) = \varepsilon\mathbb{R}$, dual conjugation is $\bar{Z} = x - y\varepsilon$, and the Euclidean structure is $\|Z\|_E^2 = x^2 + y^2$.</p>
+<h2 id="the-differential-operators-on-the-two-submodules">The Differential Operators on the Two Submodules</h2>
+<h3 id="the-coordinate-operators">The Coordinate Operators</h3>
+<p><strong>Definition.</strong> The <strong>coordinate operators</strong> are the ordinary partial derivatives</p>
+<p>$$
+\partial_x = \frac{\partial}{\partial x}, \qquad \partial_y = \frac{\partial}{\partial y},
+$$</p>
+<p>acting on $\mathbb{R}$-valued and $\mathbb{D}'$-valued functions on $U$, together with the operator $M_\varepsilon$ of multiplication by $\varepsilon$.</p>
+<p>The three operators generate the algebra of constant-coefficient differential operators on the dual plane, and their composite relations are governed by $\varepsilon^2 = 0$:</p>
+<p>$$
+M_\varepsilon \circ \partial_x = \partial_x \circ M_\varepsilon, \qquad M_\varepsilon \circ \partial_y = \partial_y \circ M_\varepsilon, \qquad M_\varepsilon^2 = 0.
+$$</p>
+<p><strong>Proposition.</strong> The two partial derivatives commute, $\partial_x\partial_y = \partial_y\partial_x$, and $M_\varepsilon$ commutes with both, so the algebra they generate is commutative.</p>
+<p><strong>Proof.</strong> Partial derivatives commute by the symmetry of second derivatives; $M_\varepsilon$ commutes with $\partial_x, \partial_y$ because $\varepsilon$ is a constant. $\square$</p>
+<h3 id="the-operators-restricted-to-the-submodules">The Operators Restricted to the Submodules</h3>
+<p>The two submodules are the eigenspaces of dual conjugation and they carry different data.</p>
+<p><strong>Definition.</strong> The <strong>real operator</strong> is the derivative along the real submodule,</p>
+<p>$$
+D_{\mathbb{R}} = \partial_x,
+$$</p>
+<p>acting on functions of $x$ alone; the <strong>infinitesimal operator</strong> is the derivative along the infinitesimal submodule,</p>
+<p>$$
+D_{\mathfrak{m}} = \partial_y,
+$$</p>
+<p>acting on the coefficient of $\varepsilon$.</p>
+<p><strong>Proposition.</strong> On a function written $f = u + v\varepsilon$,</p>
+<p>$$
+\partial_x f = u_x + v_x\varepsilon, \qquad \partial_y f = u_y + v_y\varepsilon, \qquad M_\varepsilon f = u\varepsilon.
+$$</p>
+<p>So $\partial_x, \partial_y$ differentiate both components, while $M_\varepsilon$ projects onto the infinitesimal submodule by discarding the real part. In particular $M_\varepsilon$ annihilates the real submodule $R_{\mathbb{D}'}$ and maps the whole algebra onto $\mathfrak{m}$.</p>
+<p><strong>Proof.</strong> The two first formulas are the componentwise partial derivatives; the third uses $\varepsilon^2 = 0$, which kills the term $v\varepsilon^2$. The final statement is $M_\varepsilon(u + v\varepsilon) = u\varepsilon$, which vanishes iff $u = 0$. $\square$</p>
+<h3 id="the-real-and-infinitesimal-components">The Real and Infinitesimal Components</h3>
+<p>The submodules also define the component maps</p>
+<p>$$
+\operatorname{Re} f = u, \qquad \operatorname{Inf} f = v, \qquad \text{so that } f = \operatorname{Re} f + (\operatorname{Inf} f)\varepsilon.
+$$</p>
+<p>The operator $\operatorname{Re}$ is the augmentation $\mathbb{D}' \to \mathbb{R}$ of <em>Dual-Numbers Analysis</em>, and it is a ring homomorphism with kernel $\mathfrak m$; the operator $\operatorname{Inf}$ is a linear map $\mathbb{D}' \to \mathbb{R}$ vanishing on the real submodule.</p>
+<h2 id="the-cauchyriemann-operator-in-dual-coordinates">The Cauchy–Riemann Operator in Dual Coordinates</h2>
+<h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
+<p><strong>Definition.</strong> A function $f = u + v\varepsilon$ is <strong>dual differentiable</strong> (dual holomorphic) at $Z_0$ if the limit</p>
+<p>$$
+f'(Z_0) = \lim_{h \to 0} \frac{f(Z_0 + h) - f(Z_0)}{h},
+$$</p>
+<p>taken along invertible increments $h$, exists as a dual number.</p>
+<p><strong>Theorem (dual Cauchy–Riemann equations).</strong> $f = u + v\varepsilon$ is dual differentiable at $Z_0 = x_0 + y_0\varepsilon$ if and only if $u, v$ are real differentiable near $(x_0, y_0)$ and</p>
+<p>$$
+u_y = 0, \qquad v_y = u_x.
+$$</p>
+<p>In that case</p>
+<p>$$
+f'(Z) = u_x + v_x\varepsilon.
+$$</p>
+<p><strong>Proof.</strong> For $h = h_1 + h_2\varepsilon$ with $h_1 \neq 0$, write $\rho = h_2/h_1$ for the direction of the increment. Since $h^{-1} = h_1^{-1}(1 - \rho\varepsilon)$ and $\varepsilon^2 = 0$, the difference quotient is, to zeroth order in $h$,</p>
+<p>$$
+\frac{f(Z_0 + h) - f(Z_0)}{h} = u_x + u_y\rho + \left(v_x + (v_y - u_x)\rho - u_y\rho^2\right)\varepsilon + O(h).
+$$</p>
+<p>For the limit to be independent of the direction $\rho$, the coefficients of the powers of $\rho$ in each component must vanish, giving $u_y = 0$ and then $v_y = u_x$; the remaining part is $u_x + v_x\varepsilon$. $\square$</p>
+<h3 id="the-cauchyriemann-and-holomorphic-operators">The Cauchy–Riemann and Holomorphic Operators</h3>
+<p><strong>Definition.</strong> The <strong>Cauchy–Riemann operator</strong> and the <strong>holomorphic operator</strong> are</p>
+<p>$$
+\bar\partial = \partial_y - \varepsilon\partial_x, \qquad \partial_Z = \partial_x.
+$$</p>
+<p><strong>Theorem.</strong> $f$ is dual differentiable if and only if $\bar\partial f = 0$, and then $f' = \partial_Z f$.</p>
+<p><strong>Proof.</strong> $\bar\partial f = (\partial_y - \varepsilon\partial_x)(u + v\varepsilon) = u_y + (v_y - u_x)\varepsilon$, using $\varepsilon^2 = 0$. This vanishes exactly when $u_y = 0$ and $v_y = u_x$, which is the Cauchy–Riemann system; and $\partial_Z f = u_x + v_x\varepsilon = f'$. $\square$</p>
+<p><strong>Remark.</strong> The Cauchy–Riemann operator here has the asymmetric shape $\bar\partial = \partial_y - \varepsilon\partial_x$, with the algebra element $\varepsilon$ multiplying the <em>real</em> derivative rather than the infinitesimal one. This is forced by nilpotence: the naive analogue of the complex operator $\partial_x + i\partial_y$, namely $\partial_x + \varepsilon\partial_y$, does <strong>not</strong> annihilate the dual-holomorphic functions, since $(\partial_x + \varepsilon\partial_y)(x + y\varepsilon) = 1 \neq 0$. The complex operator owes its shape to $i^2 = -1$; with $\varepsilon^2 = 0$ the operator must be rearranged into $\partial_y - \varepsilon\partial_x$.</p>
+<h3 id="the-solution-class">The Solution Class</h3>
+<p><strong>Corollary.</strong> A function on a connected domain $U$ is dual differentiable if and only if it has the form</p>
+<p>$$
+f(x + y\varepsilon) = u(x) + \bigl(y\,u'(x) + c(x)\bigr)\varepsilon,
+$$</p>
+<p>for ordinary differentiable functions $u$ and $c$ of the single variable $x$. In particular</p>
+<p>$$
+f'(Z) = u'(x) + \bigl(y\,u''(x) + c'(x)\bigr)\varepsilon.
+$$</p>
+<p><strong>Proof.</strong> $u_y = 0$ gives $u = u(x)$; then $v_y = u'(x)$ integrates to $v = y\,u'(x) + c(x)$. The derivative is $u_x + v_x\varepsilon$ by the theorem. $\square$</p>
+<p>So the dual-holomorphic functions are parametrised by two arbitrary differentiable functions of one variable, $u$ and $c$, in contrast with the complex case, where a holomorphic function is parametrised by one analytic function of one variable and its real and imaginary parts are harmonic. The real part $u(x)$ is in general not harmonic: $\Delta u = u''(x) \neq 0$ unless $u$ is affine.</p>
+<h2 id="the-nilpotent-component-and-the-maximal-ideal">The Nilpotent Component and the Maximal Ideal</h2>
+<h3 id="the-two-components-of-the-cauchyriemann-operator">The Two Components of the Cauchy–Riemann Operator</h3>
+<p><strong>Definition.</strong> Write the Cauchy–Riemann operator as</p>
+<p>$$
+\bar\partial = \underbrace{\partial_y}_{\text{scalar part}} \; \underbrace{-\, \varepsilon\,\partial_x}_{\text{nilpotent part}},
+$$</p>
+<p>its <strong>scalar part</strong> $\partial_y$ and its <strong>nilpotent part</strong> $-\varepsilon\partial_x$, the latter carrying the factor $\varepsilon$.</p>
+<p><strong>Proposition.</strong> Multiplication by $\varepsilon$ kills the nilpotent part:</p>
+<p>$$
+M_\varepsilon \circ \bar\partial = \varepsilon\,\partial_y = \bar\partial \circ M_\varepsilon.
+$$</p>
+<p>So composing with $\varepsilon$ discards the nilpotent part and retains only the scalar part, and the two agree as operators.</p>
+<p><strong>Proof.</strong> $\varepsilon(\partial_y - \varepsilon\partial_x) = \varepsilon\partial_y - \varepsilon^2\partial_x = \varepsilon\partial_y$, and $\varepsilon\partial_y = (\partial_y - \varepsilon\partial_x)\varepsilon$ since $\varepsilon$ is constant. $\square$</p>
+<p><strong>Corollary.</strong> On the nilpotent direction the operator $\bar\partial$ becomes $\varepsilon\partial_y$, an operator of rank one in the algebra: it maps a function to an element of $\mathfrak m$ whose real part is zero. The nilpotent part $-\varepsilon\partial_x$ of $\bar\partial$ is annihilated by multiplication by $\varepsilon$, so it never contributes to the infinitesimal part of $\bar\partial f$.</p>
+<h3 id="the-maximal-ideal-as-the-nilpotent-direction">The Maximal Ideal as the Nilpotent Direction</h3>
+<p><strong>Theorem.</strong> The maximal ideal $\mathfrak{m} = \varepsilon\mathbb{R}$ is exactly the image of $M_\varepsilon$ and exactly the kernel of the augmentation $\operatorname{Re}$. The Cauchy–Riemann operator annihilates the constants and, restricted to the real submodule, is $-\partial_x$ times $\varepsilon$, while every dual-holomorphic function is determined by its restriction to $R_{\mathbb{D}'}$ together with the derivative $u'$.</p>
+<p><strong>Proof.</strong> $M_\varepsilon(\mathbb{D}') = \varepsilon\mathbb{D}' = \mathfrak{m}$ since $\varepsilon^2 = 0$; $\ker\operatorname{Re} = \mathfrak{m}$ by definition; $\bar\partial(\text{const}) = 0$; and the solution class $u(x) + (yu'(x) + c(x))\varepsilon$ is fixed by $u$ and $c$, both functions on $R_{\mathbb{D}'}$. $\square$</p>
+<h3 id="the-second-order-operators-and-the-failure-of-factorisation">The Second-Order Operators and the Failure of Factorisation</h3>
+<p><strong>Definition.</strong> The <strong>algebra-valued gradient</strong> and its <strong>conjugate</strong> are</p>
+<p>$$
+\nabla = \partial_x + \varepsilon\partial_y, \qquad \bar\nabla = \partial_x - \varepsilon\partial_y.
+$$</p>
+<p>They are the specialisations of the model's abstract operator $\tilde\nabla = \sum_\mu e_\mu \partial_\mu$ to the dual basis $(e_0, e_1) = (1, \varepsilon)$.</p>
+<p><strong>Theorem.</strong> $\nabla\bar\nabla = \bar\nabla\nabla = \partial_x^2$. Hence the <strong>algebra-valued d'Alembertian</strong> is</p>
+<p>$$
+\Box = \nabla\bar\nabla = \partial_x^2,
+$$</p>
+<p>the flat second derivative along the real direction.</p>
+<p><strong>Proof.</strong> $\nabla\bar\nabla = (\partial_x + \varepsilon\partial_y)(\partial_x - \varepsilon\partial_y) = \partial_x^2 - \varepsilon\partial_x\partial_y + \varepsilon\partial_y\partial_x - \varepsilon^2\partial_y^2 = \partial_x^2$, the cross terms cancelling by the commutation of partial derivatives and the last term vanishing because $\varepsilon^2 = 0$; the reverse order is identical. $\square$</p>
+<p><strong>Theorem.</strong> The square of the gradient satisfies the model identity</p>
+<p>$$
+\nabla^2 = 2\,\partial_x\nabla - \Box.
+$$</p>
+<p><strong>Proof.</strong> $\nabla^2 = (\partial_x + \varepsilon\partial_y)^2 = \partial_x^2 + 2\varepsilon\partial_x\partial_y$, and $2\partial_x\nabla - \Box = 2\partial_x(\partial_x + \varepsilon\partial_y) - \partial_x^2 = \partial_x^2 + 2\varepsilon\partial_x\partial_y$. $\square$</p>
+<p><strong>Corollary (failure of factorisation).</strong> The Euclidean Laplacian</p>
+<p>$$
+\Delta = \partial_x^2 + \partial_y^2
+$$</p>
+<p>does <strong>not</strong> factor as a product $\nabla\bar\nabla$ of algebra-valued first-order operators; indeed $\nabla\bar\nabla = \partial_x^2$ is missing the term $\partial_y^2$, which is annihilated by $\varepsilon^2 = 0$ in the product. In the complex case the corresponding factorisation $\partial_x^2 + \partial_y^2 = (\partial_x + i\partial_y)(\partial_x - i\partial_y)$ holds because $i^2 = -1$; the dual algebra has no element squaring to $-1$, so no such factorisation exists.</p>
+<p>This is the analytic face of the degeneracy of the norm form: just as $N(Z) = x^2$ fails to register the infinitesimal direction, the algebra-valued d'Alembertian $\Box = \partial_x^2$ fails to register it, and only the unaugmented Euclidean Laplacian $\Delta$ sees both directions. The second-order theory is richer than the product of the first-order operators, and this is the exact obstruction to a dual analogue of the factorised wave operator.</p>
+<h2 id="reduction-to-the-real-line-and-its-first-order-neighbourhood">Reduction to the Real Line and Its First-Order Neighbourhood</h2>
+<h3 id="the-real-line">The Real Line</h3>
+<p><strong>Theorem.</strong> Every dual-holomorphic function $f$ on a connected domain is determined by the pair of ordinary differentiable functions</p>
+<p>$$
+u = \operatorname{Re} f \big|_{\{y = 0\}}, \qquad c = \operatorname{Inf} f \big|_{\{y = 0\}},
+$$</p>
+<p>the real part and the infinitesimal part of the restriction of $f$ to the real line. Explicitly,</p>
+<p>$$
+f(x + y\varepsilon) = u(x) + c(x)\varepsilon + y\,u'(x)\,\varepsilon.
+$$</p>
+<p><strong>Proof.</strong> By the solution class, $f = u(x) + (yu'(x) + c(x))\varepsilon$, so the restriction to the axis $y = 0$ is $u(x) + c(x)\varepsilon$ and the coefficient of $y$ in the infinitesimal part is $u'(x)$. $\square$</p>
+<p>So the analysis on the two-dimensional dual plane reduces completely to analysis on the one-dimensional real line: the data are two functions $u, c$ of $x$, and the whole $y$-dependence of a holomorphic function is the first-order term $y\,u'(x)$. The infinitesimal submodule is the <strong>first-order neighbourhood</strong> of the real line inside the dual plane, and a holomorphic function is affine along it.</p>
+<h3 id="integration-on-the-submodules">Integration on the Submodules</h3>
+<p><strong>Theorem.</strong> A dual-holomorphic $f = u(x) + (yu'(x) + c(x))\varepsilon$ has the primitive</p>
+<p>$$
+F(x + y\varepsilon) = U(x) + \bigl(y\,u(x) + C(x)\bigr)\varepsilon, \qquad U' = u, \quad C' = c,
+$$</p>
+<p>so that $F' = f$. Consequently the contour integral of $f$ along a contour $\gamma$ reduces to the two real contour integrals</p>
+<p>$$
+\oint_\gamma f(Z)\,dZ = \oint_\gamma u\,dx + \left(\oint_\gamma \bigl(u\,dy + v\,dx\bigr)\right)\varepsilon, \qquad v = y\,u'(x) + c(x),
+$$</p>
+<p>and it vanishes for a closed contour in a simply connected domain, the dual Cauchy–Goursat theorem: the real part vanishes because $u_y = 0$, and the infinitesimal part vanishes because $v_y = u_x$, both by Green's theorem.</p>
+<p><strong>Proof.</strong> The primitive is verified componentwise: $\partial_x F = U'(x) + (yu'(x) + C'(x))\varepsilon = u(x) + (yu'(x) + c(x))\varepsilon = f(x + y\varepsilon)$, and $F$ is dual holomorphic because its real part $U$ depends only on $x$ and its infinitesimal part is $yU'(x) + C(x)$. For the contour formula, $dZ = dx + dy\,\varepsilon$ and $\varepsilon^2 = 0$ give $f\,dZ = u\,dx + (u\,dy + v\,dx)\varepsilon$; the real integral $\oint_\gamma u\,dx$ equals $-\iint u_y\,dA = 0$, and the infinitesimal integral $\oint_\gamma(u\,dy + v\,dx)$ equals $\iint(u_x - v_y)\,dA = 0$. $\square$</p>
+<p>So integration too reduces to the real line: the primitive of a dual-holomorphic function is obtained by integrating its two real data functions.</p>
+<h3 id="the-role-of-the-maximal-ideal">The Role of the Maximal Ideal</h3>
+<p><strong>Theorem.</strong> The maximal ideal is the first-order neighbourhood of the real line: for every $h \in \mathfrak{m}$, translation $T_h(Z) = Z + h$ changes the infinitesimal coordinate by $h$ and every dual-holomorphic function is affine along the translates $Z + \mathfrak{m} = \{x + t\varepsilon : t \in \mathbb{R}\}$. The quotient $\mathbb{D}'/\mathfrak{m} \cong R_{\mathbb{D}'}$ is the real line, and the analysis of holomorphic functions is the analysis of their behaviour transverse to the maximal ideal.</p>
+<p><strong>Proof.</strong> $Z + t\varepsilon = x + (y + t)\varepsilon$, and a holomorphic function on that line is $u(x) + ((y+t)u'(x) + c(x))\varepsilon$, affine in $t$ with slope $u'(x)$; the quotient identification is the augmentation. $\square$</p>
+<h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
+<h3 id="the-split-complex-operators">The Split Complex Operators</h3>
+<p>For the split complex algebra $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, write $z = x + yj$ and $f = u + vj$. The Cauchy–Riemann system is</p>
+<p>$$
+u_x = v_y, \qquad u_y = v_x,
+$$</p>
+<p>which factors through the idempotents $\Pi_\pm = \tfrac{1}{2}(1 \pm j)$: on setting $f = \phi \Pi_1 + \psi \Pi_2$, the system is equivalent to the two independent transport equations</p>
+<p>$$
+\partial_x\phi = \partial_y\phi, \qquad \partial_x\psi = -\partial_y\psi,
+$$</p>
+<p>with the general solutions $\phi = \phi(x + y)$ and $\psi = \psi(x - y)$.</p>
+<p><strong>Proposition.</strong> A split-complex holomorphic function is $\phi(x + y)\Pi_1 + \psi(x - y)\Pi_2$ for arbitrary differentiable $\phi, \psi$ of one variable; hence it too is determined by two functions of one variable, but along the characteristics $x + y$ and $x - y$.</p>
+<p><strong>Proof.</strong> Substituting $f = \phi(x+y)\Pi_1 + \psi(x-y)\Pi_2$ into the system gives $u_x = v_y$ and $u_y = v_x$ directly, using $j \Pi_1 = \Pi_1$ and $j \Pi_2 = -\Pi_2$. $\square$</p>
+<h3 id="the-degeneration">The Degeneration</h3>
+<p>The dual case is the contraction of the split-complex case in which the two characteristics $x \pm y$ coalesce to the single characteristic $x$ and the transported functions become polynomial of degree one in the transverse coordinate:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$</th>
+<th>$\mathbb{D}'$, $\varepsilon^2 = 0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cauchy–Riemann system</td>
+<td>$u_x = v_y$, $u_y = v_x$</td>
+<td>$u_y = 0$, $v_y = u_x$</td>
+</tr>
+<tr>
+<td>Idempotents / characteristics</td>
+<td>$\Pi_\pm$ along $x \pm y$</td>
+<td>none; single characteristic $x$</td>
+</tr>
+<tr>
+<td>Solution class</td>
+<td>$\phi(x+y)\Pi_1 + \psi(x-y)\Pi_2$</td>
+<td>$u(x) + (yu'(x) + c(x))\varepsilon$</td>
+</tr>
+<tr>
+<td>Data on the real line</td>
+<td>two functions, transported</td>
+<td>two functions, one differentiated</td>
+</tr>
+<tr>
+<td>Algebra-valued Laplacian</td>
+<td>$\Box = \partial_x^2 - \partial_y^2$, factors</td>
+<td>$\Box = \partial_x^2$, does not factor</td>
+</tr>
+<tr>
+<td>Euclidean Laplacian</td>
+<td>$\partial_x^2 + \partial_y^2$ factors</td>
+<td>$\partial_x^2 + \partial_y^2$ does not factor</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two features of the comparison stand out. First, the split-complex analysis reduces to the two characteristics $x + y$ and $x - y$, while the dual analysis reduces to the single characteristic $x$ with the transverse dependence polynomial of degree one; the parabolic direction is the coincidence limit of the two hyperbolic characteristics. Second, the split-complex algebra-valued Laplacian $\partial_x^2 - \partial_y^2$ factors as $(\partial_x + j\partial_y)(\partial_x - j\partial_y)$, because $j^2 = +1$ cancels the sign in the product; the dual operator $\partial_x^2$ does not factor, because $\varepsilon^2 = 0$ leaves no trace of the transverse second derivative. In both cases the Euclidean Laplacian $\partial_x^2 + \partial_y^2$ is the unaugmented second-order operator that sees the whole plane.</p>
+<h2 id="summary">Summary</h2>
+<p>The two distinguished submodules of the dual numbers, the real submodule $R_{\mathbb{D}'}$ with coordinate operator $\partial_x$ and the infinitesimal submodule $\varepsilon R_{\mathbb{D}'} = \mathfrak{m}$ with coordinate operator $\partial_y$, carry the analysis of the dual plane. The algebra is identified with $\mathbb{R}^2$ by $Z = x + y\varepsilon$, and the three coordinate operators $\partial_x, \partial_y$ and multiplication $M_\varepsilon$ commute, with $M_\varepsilon^2 = 0$; multiplication by $\varepsilon$ projects onto the maximal ideal and kills the real part. The Cauchy–Riemann operator is $\bar\partial = \partial_y - \varepsilon\partial_x$, with holomorphic operator $\partial_Z = \partial_x$; a function $f = u + v\varepsilon$ is dual holomorphic exactly when $u_y = 0$ and $v_y = u_x$, and the holomorphic functions are $f = u(x) + (yu'(x) + c(x))\varepsilon$ with derivative $f' = u' + (yu'' + c')\varepsilon$. The operator $\bar\partial$ splits into a scalar part $\partial_y$ and a nilpotent part $-\varepsilon\partial_x$, and multiplication by $\varepsilon$ annihilates the nilpotent part, leaving $\varepsilon\bar\partial = \varepsilon\partial_y$; the maximal ideal is the first-order neighbourhood of the real line, along which holomorphic functions are affine. The algebra-valued d'Alembertian is $\Box = \nabla\bar\nabla = \partial_x^2$ for $\nabla = \partial_x + \varepsilon\partial_y$, and it satisfies $\nabla^2 = 2\partial_x\nabla - \Box$; it does <strong>not</strong> factorise the Euclidean Laplacian $\partial_x^2 + \partial_y^2$, because $\varepsilon^2 = 0$ annihilates the transverse second derivative. The whole theory reduces to the real line and its first-order neighbourhood: a holomorphic function is two functions $u, c$ of $x$, its primitive is obtained by integrating them, and integration and differentiation commute with the reduction. The comparison with the split complex case shows the dual case as the contraction in which the characteristics $x \pm y$ coalesce to $x$ and the transported data become affine in the transverse coordinate, while the split-complex Laplacian $\partial_x^2 - \partial_y^2$ factorises and the dual $\partial_x^2$ does not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>Dual-number algebra; $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$Z = x + y\varepsilon$</td>
+<td>General dual number in analysis coordinates</td>
+</tr>
+<tr>
+<td>$x$</td>
+<td>Coordinate on the real submodule $R_{\mathbb{D}'}$</td>
+</tr>
+<tr>
+<td>$y$</td>
+<td>Coordinate on the infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$</td>
+</tr>
+<tr>
+<td>$f = u + v\varepsilon$</td>
+<td>Dual-valued function, $u, v : U \to \mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\partial_x, \partial_y$</td>
+<td>Coordinate partial derivatives</td>
+</tr>
+<tr>
+<td>$M_\varepsilon$</td>
+<td>Multiplication by $\varepsilon$; $M_\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$D_{\mathbb{R}} = \partial_x$, $D_{\mathfrak{m}} = \partial_y$</td>
+<td>Real and infinitesimal coordinate operators</td>
+</tr>
+<tr>
+<td>$\operatorname{Re}, \operatorname{Inf}$</td>
+<td>Real-part and infinitesimal-part maps</td>
+</tr>
+<tr>
+<td>$\mathfrak{m} = (\varepsilon)$</td>
+<td>Maximal ideal, first-order neighbourhood</td>
+</tr>
+<tr>
+<td>$\bar\partial = \partial_y - \varepsilon\partial_x$</td>
+<td>Cauchy–Riemann operator</td>
+</tr>
+<tr>
+<td>$\partial_Z = \partial_x$</td>
+<td>Holomorphic operator; $f' = \partial_Z f$</td>
+</tr>
+<tr>
+<td>$u_y = 0$, $v_y = u_x$</td>
+<td>Dual Cauchy–Riemann equations</td>
+</tr>
+<tr>
+<td>$\nabla = \partial_x + \varepsilon\partial_y$, $\bar\nabla = \partial_x - \varepsilon\partial_y$</td>
+<td>Algebra-valued gradient and its conjugate</td>
+</tr>
+<tr>
+<td>$\Box = \nabla\bar\nabla = \partial_x^2$</td>
+<td>Algebra-valued d'Alembertian</td>
+</tr>
+<tr>
+<td>$\Delta = \partial_x^2 + \partial_y^2$</td>
+<td>Euclidean Laplacian, unfactorisable here</td>
+</tr>
+<tr>
+<td>$\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>Split-complex idempotents, in the comparison</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Real and Complex Analysis</em> (McGraw–Hill, New York, 3rd ed. 1987), for the Cauchy–Riemann equations and the Wirtinger operators in the complex case.</li>
+<li>Lars Hörmander, <em>An Introduction to Complex Analysis in Several Variables</em> (North-Holland, Amsterdam, 3rd ed. 1990), for the Cauchy–Riemann operator as a first-order elliptic operator and its factorisation of the Laplacian.</li>
+<li>Richard Delanghe, Frank Sommen and Vladimir Souček, <em>Clifford Algebra and Spinor-Valued Functions</em> (Kluwer, Dordrecht, 1992), for the Cauchy–Riemann operator of a Clifford algebra, its square, and the factorisation of the Laplacian, as the comparison theory.</li>
+<li>Garret Sobczyk, "The generalized Cauchy–Riemann operator and the factorization of the Laplacian", in <em>Clifford Algebras and Their Applications in Mathematical Physics</em> (Kluwer, Dordrecht, 1993), for the factorisation problem and its failure for degenerate forms.</li>
+<li>Andreas Griewank and Andrea Walther, <em>Evaluating Derivatives: Principles and Techniques of Algorithmic Differentiation</em> (SIAM, Philadelphia, 2008), for the dual-number computation of first derivatives and the first-order neighbourhood of a point.</li>
+<li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$</em> (Imperial College Press, London, 2012), for the elliptic–parabolic–hyperbolic trichotomy and the contraction of characteristics.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, Natick, 2003), for the norm forms and the degenerate limits of the number systems of the family.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of Harmonic Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comparison-of-harmonic-analysis"><strong>Comparison of Harmonic Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article compares the harmonic analysis of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$: the Fourier transform of each system and its construction from the character group, the convolution and the convolution theorem, the discrete and the continuous transform of the two biquaternion systems, the factorisation into complex or quaternion Fourier transforms, and the vanishing-norm issue and its effect on inversion. It states the situation of the eight algebras on each of these subjects in tables with the eight algebras as columns in the fixed order of <em>The Eight Algebras Compared</em>. Every entry restates a result of the harmonic-analysis articles cited in the explanations.</p>
+<p>The organising thread is the <strong>place of the algebra as an additive locally compact abelian group</strong>. Every one of the eight is, under addition, a Euclidean space $\mathbb{R}^n$ and hence a locally compact abelian group, so the group Fourier transform — with scalar characters, inversion, Plancherel and the group convolution theorem — exists in all eight columns. The distinction between the columns is whether a second, algebra-kernel transform is introduced: where the algebra is split or has zero divisors the algebra kernel introduces a singular symbol supported on the null cone or the zero-divisor set, and where the exponential truncates the kernel loses its higher terms. The vanishing-norm issue, the failure of inversion on the zero divisors, is the precise form this takes in the two biquaternion systems.</p>
+<h2 id="the-transform-theories">The Transform Theories</h2>
+<p>The following table compares the transform theories of the eight algebras: the additive group, the character group, the kernel of the transform, the convolution theorem, inversion and Plancherel, and the factorisation. The eight algebras are the columns, in the fixed order, with the marker <strong>—</strong> where the notion is not carried.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>additive group</td>
+<td>$\mathbb{R}$, LCA</td>
+<td>$\mathbb{R}^2$, LCA</td>
+<td>$\mathbb{R}^2$, LCA</td>
+<td>$\mathbb{R}^2$, LCA</td>
+<td>$\mathbb{R}^4$, LCA</td>
+<td>$\mathbb{R}^4$, LCA</td>
+<td>$\mathbb{R}^8$, LCA</td>
+<td>$\mathbb{R}^8$, LCA</td>
+</tr>
+<tr>
+<td>group characters</td>
+<td>$e^{2\pi i\xi x}$</td>
+<td>$e^{2\pi i\operatorname{Re}(\bar\xi z)}$</td>
+<td>from $j$, unbounded</td>
+<td>$1+\langle\xi,z\rangle\varepsilon$</td>
+<td>exponentials</td>
+<td>scalar characters</td>
+<td>scalar characters</td>
+<td>scalar characters</td>
+</tr>
+<tr>
+<td>transform kernel</td>
+<td>scalar</td>
+<td>scalar</td>
+<td>split exponential</td>
+<td>truncating</td>
+<td>quaternion exponential</td>
+<td>scalar (group) and algebra exponential</td>
+<td>$\exp(-2\pi\rho\omega t)$</td>
+<td>$\exp(-2\pi\rho\omega t)$, $\rho$ a quaternion root of $-1$</td>
+</tr>
+<tr>
+<td>convolution theorem</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes, with placement</td>
+<td>group transform yes; algebra kernel degenerates on the null cone</td>
+<td>yes, with placement</td>
+<td>yes, inherited</td>
+</tr>
+<tr>
+<td>inversion, Plancherel</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>group transform yes; algebra kernel only off the null cone</td>
+<td>on non-vanishing norm</td>
+<td>on non-vanishing components</td>
+</tr>
+<tr>
+<td>factorisation</td>
+<td>—</td>
+<td>—</td>
+<td>idempotents</td>
+<td>fibres</td>
+<td>four real components</td>
+<td>—</td>
+<td>four complex transforms</td>
+<td>two quaternion transforms</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table records the two layers of the theory. The first layer is the <strong>group transform</strong>: since the additive group of each algebra is $\mathbb{R}$ or $\mathbb{R}^2$ or $\mathbb{R}^4$ or $\mathbb{R}^8$, it is a locally compact abelian group, its dual is the same $\mathbb{R}^n$, its characters are the exponentials, and the group Fourier transform with inversion, Plancherel and the convolution theorem exists in every column; in $\mathbb{C}$ the character is $\chi_\xi(z)=e^{2\pi i\operatorname{Re}(\bar\xi z)}$, in $\mathbb{D}'$ it truncates to $1+\langle\xi,z\rangle\varepsilon$, in $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ the characters built from $j$ are unbounded because $j^2=+1$ (<em>Real Harmonic Analysis</em>; <em>Complex Harmonic Analysis</em>; <em>Split-Complex Harmonic Analysis</em>; <em>Dual-Numbers Harmonic Analysis</em>; <em>Split-Quaternion Harmonic Analysis</em>). The second layer is the <strong>algebra-kernel transform</strong>, defined by the exponential of the algebra as kernel, and its behaviour is decided by the norm form. In $\mathbb{H}$ the kernel is built from the quaternion exponential, the transform is diagonal, and the symbol is invertible at every non-zero frequency because the norm vanishes only at the origin; the convolution theorem holds and there is no exceptional set (<em>Quaternion Harmonic Analysis</em>). In $\mathbb{H}_{\mathrm{s}}$ the two transforms must be kept apart: the group transform is the harmonic analysis of the additive group, complete with inversion, Plancherel and the convolution theorem, and it is <strong>blind to the zero divisors</strong>, whereas the algebra-kernel transform is non-commutative, its inversion requires the reciprocal of a difference variable that exists exactly off the null cone, and the symbol is the frequency vector $\xi$, invertible exactly when $N(\xi)\neq0$; the singular frequencies form the null cone, which is the characteristic variety of the vector operator and the zero-divisor set, and the transformed fundamental solution $\hat E_D=\xi/(2\pi iN(\xi))$ has singular support exactly on the cone (<em>Split-Quaternion Harmonic Analysis</em>). In $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ the kernel is $\exp(-2\pi\rho\omega t)$ with $\rho$ a root of $-1$: in $\mathbb{B}$ the choice of $\rho$ gives the complex, the quaternion or a genuinely biquaternionic transform, and in $\mathbb{H}_{\mathbb{D}}$ the kernel is built from a unit pure real quaternion, so it is the <strong>same</strong> in both idempotent components and the transform decomposes into two independent quaternion transforms (<em>Biquaternion Continuous Harmonic Analysis</em>; <em>Split-Biquaternion Continuous Harmonic Analysis</em>). The factorisation row is the reduction of the transform to lower systems: the idempotent decomposition in $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$, the fibre decomposition in $\mathbb{D}'$, the reduction to the four components of the quaternion transform in $\mathbb{H}$, and the four complex transforms in $\mathbb{B}$. The row is empty for $\mathbb{R}$ and $\mathbb{C}$, which are the building blocks rather than a reduction, and for $\mathbb{H}_{\mathrm{s}}$, whose algebra-valued kernel $e^{-\tilde q\xi}$ is multiplicative only for commuting arguments and therefore does not factor into lower transforms (<em>Split-Quaternion Harmonic Analysis</em>, §<em>The Algebra-Valued Transform and the Vanishing Determinant</em>).</p>
+<h2 id="the-vanishing-norm-issue">The Vanishing-Norm Issue</h2>
+<p>The following table compares the zero-divisor obstruction of the eight algebras and its effect on inversion, together with the discrete transform, which is a subject only of the two biquaternion systems. The eight algebras are the columns, in the fixed order, with the marker <strong>—</strong> where the notion is not carried.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zero-divisor set</td>
+<td>—</td>
+<td>—</td>
+<td>two null lines</td>
+<td>maximal ideal $\mathfrak{m}$</td>
+<td>—</td>
+<td>light cone</td>
+<td>null cone</td>
+<td>the two ideals</td>
+</tr>
+<tr>
+<td>effect on the transform</td>
+<td>none</td>
+<td>none</td>
+<td>kernel unbounded in the null directions</td>
+<td>kernel truncates</td>
+<td>none</td>
+<td>symbol singular on the null cone</td>
+<td>vanishing-norm signals</td>
+<td>vanishing-component signals</td>
+</tr>
+<tr>
+<td>invertibility</td>
+<td>all of $L^2$</td>
+<td>all of $L^2$</td>
+<td>group transform on all of $L^2$; kernel by complexification</td>
+<td>on the units</td>
+<td>all of $L^2$</td>
+<td>group transform yes; kernel off the null cone</td>
+<td>non-vanishing norm; exact condition open</td>
+<td>both components non-zero; exact condition open</td>
+</tr>
+<tr>
+<td>discrete transform</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>kernel $\exp(-2\pi\rho\, n u/N)$</td>
+<td>kernel $\exp(-2\pi\rho\, n u/N)$, two quaternion DFTs</td>
+</tr>
+</tbody>
+</table></div>
+<p>The empty cells of the zero-divisor row in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ mark the absence of zero divisors in the definite columns, and those of the discrete row in the six lower columns mark a subject that only the two biquaternion systems carry; both are stated rather than filled. The table records the vanishing-norm issue. In $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ the transform is invertible on the whole of $L^2$, with inversion and Plancherel, and in $\mathbb{H}_{\mathrm{s}}$ the group transform is invertible on all of $L^2$ although the algebra-kernel transform degenerates on the null cone, where the reciprocal of the difference variable fails. In $\mathbb{D}$ and $\mathbb{D}'$ the obstruction is different in kind: in $\mathbb{D}$ the algebra kernel is never a zero divisor, since $N(e^u)=e^{2\operatorname{Sc}u}>0$, but it is not a unitary character, the transform is the <strong>pair of Laplace transforms</strong> on the two null directions, and the inversion of a Laplace transform requires the complexification of the idempotent components, the characters being unbounded; in $\mathbb{D}'$ the kernel truncates and the theory agrees with the real case on $\mathbb{R}^2$ up to the first-order term in the infinitesimal direction (<em>Split-Complex Harmonic Analysis</em>, §<em>The Split Complex Fourier Transform</em>; <em>Dual-Numbers Harmonic Analysis</em>). In $\mathbb{B}$ the vanishing-norm issue is a genuinely biquaternionic feature: a signal containing zero-divisor samples is not necessarily recoverable from its transform, and the precise invertibility condition is not known; the transform is invertible on the signals of non-vanishing norm, and it factorises into four complex Fourier transforms, which gives a fast algorithm from existing complex FFT libraries (<em>Biquaternion Discrete Harmonic Analysis</em>; <em>Biquaternion Continuous Harmonic Analysis</em>). In $\mathbb{H}_{\mathbb{D}}$ the issue is inherited from the product structure: a signal is recoverable only when both idempotent components of every sample are non-zero, the transform is invertible on the functions where both components are non-zero almost everywhere, it factorises into two quaternion transforms, and the precise invertibility condition is again open (<em>Split-Biquaternion Discrete Harmonic Analysis</em>; <em>Split-Biquaternion Continuous Harmonic Analysis</em>). The discrete row is carried by $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ alone, since the discrete transform with an algebra kernel is the subject of the two biquaternion systems; the continuous transform is the limit of the discrete one as the sampling interval tends to zero, and the two are related by the Poisson summation formula and the sampling theorem.</p>
+<h2 id="summary">Summary</h2>
+<p>Under addition every one of the eight algebras is a locally compact abelian group, $\mathbb{R}$, $\mathbb{R}^2$, $\mathbb{R}^4$ or $\mathbb{R}^8$, so the group Fourier transform with scalar characters, inversion, Plancherel and the group convolution theorem exists in all eight columns; the complex character is $e^{2\pi i\operatorname{Re}(\bar\xi z)}$, the dual character truncates, and the characters built from $j$ are unbounded. The second layer is the algebra-kernel transform, and it is there that the columns divide: it is diagonal with an everywhere-invertible symbol in $\mathbb{H}$, its symbol is the frequency vector and degenerates on the null cone in $\mathbb{H}_{\mathrm{s}}$, it is the $\exp(-2\pi\rho\omega t)$ transform with a choice of root of $-1$ in $\mathbb{B}$ and, with a quaternion root in $\mathbb{H}_{\mathbb{D}}$, it splits into two quaternion transforms. The convolution theorem holds in every column, with the placement of the kernel forced by non-commutativity in $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$, and it holds for the group transform in $\mathbb{H}_{\mathrm{s}}$ while failing for the algebra-kernel transform on the null cone. The vanishing-norm issue appears exactly in the columns with zero divisors: it is absent in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ and, for the group transform, in $\mathbb{D}'$; in $\mathbb{D}$ it is the unboundedness of the characters, which makes the algebra kernel a pair of Laplace transforms, and in $\mathbb{H}_{\mathrm{s}}$ it is the degeneracy of the symbol and the failure of the reciprocal on the null cone, and in $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ it is the open problem of the invertibility of a signal with zero-divisor samples, resolved only on the signals of non-vanishing norm or of non-vanishing idempotent components. The discrete transform is a subject of the two biquaternion systems alone, and it factorises into four complex transforms in $\mathbb{B}$ and into two quaternion transforms in $\mathbb{H}_{\mathbb{D}}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\hat f$</td>
+<td>the Fourier transform of $f$</td>
+</tr>
+<tr>
+<td>$\chi_\xi$</td>
+<td>a character of the additive group</td>
+</tr>
+<tr>
+<td>$f*g$</td>
+<td>the convolution</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>the Fourier transform operator</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>a root of $-1$ used as the kernel generator</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the norm form</td>
+</tr>
+<tr>
+<td>$\hat E_D$</td>
+<td>the transformed fundamental solution of the split-quaternion vector operator</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the frequency variable</td>
+</tr>
+<tr>
+<td>$L^2$</td>
+<td>the Lebesgue space in which inversion and Plancherel hold</td>
+</tr>
+<tr>
+<td><code>—</code></td>
+<td>an empty cell, stated and never filled</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962), for the Fourier transform and the convolution theorem on a locally compact abelian group.</li>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton University Press, 1971), for the Euclidean Fourier transform, the Hardy–Littlewood maximal function and the Calderón–Zygmund theory.</li>
+<li>Elias M. Stein, <em>Harmonic Analysis</em> (Princeton University Press, 1993), for the Littlewood–Paley theory, the Sobolev spaces and the uncertainty principle.</li>
+<li>Todd A. Ell, Nicolas Le Bihan and Stephen J. Sangwine, <em>Quaternion Fourier Transforms for Signal and Image Processing</em> (Wiley, 2014), for the quaternion Fourier transform, its factorisation and the placement of the kernel.</li>
+<li>Eckhard Hitzer, "Quaternion Fourier Transform on Quaternion Fields and Generalizations", <em>Advances in Applied Clifford Algebras</em> 17 (2007), 497–517, for the biquaternion Fourier transform and the choice of root of $-1$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
