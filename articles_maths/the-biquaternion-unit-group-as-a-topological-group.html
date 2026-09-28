@@ -68,10 +68,10 @@ $$</p>
 <p>$$
 \mathbb{B}^\times_1=\{\tilde{Q}\in\mathbb{B}:N(\tilde{Q})=1\}
 $$</p>
-<p>is a closed subgroup of $\mathbb{B}^\times$ of real dimension $6$, the <strong>norm-one group</strong>. It is noncompact, and it deformation retracts onto the unit quaternions $S^3$ (§<em>The Retraction of the Norm-One Group onto Its Maximal Compact Subgroup</em>); hence it is simply connected, of the homotopy type of $S^3$, with $\pi_3\cong\mathbb{Z}$. Its own subgroups — the rotation subgroup $S^3$, the center $\{\pm e_0\}$, and the Lorentz group $\mathbb{B}^\times_1/\{\pm e_0\}$ — are the subject of <em>Biquaternion Lie Group and Exponential Structure</em>, §<em>The Subgroups and the Real Forms</em>.</p>
+<p>is a closed subgroup of $\mathbb{B}^\times$ of real dimension $6$, the <strong>norm-one group</strong>. It is noncompact, and it deformation retracts onto the unit quaternions $S^3$ (§<em>The Retraction of the Norm-One Group onto Its Maximal Compact Subgroup</em>); hence it is simply connected, of the homotopy type of $S^3$, with $\pi_3\cong\mathbb{Z}$. Its subgroups — the unit quaternions $S^3$ and the center $\{\pm e_0\}$ — are the subject of <em>Biquaternion Lie Group and Exponential Structure</em>, §<em>The Subgroups and the Real Forms</em>.</p>
 <p><strong>Two unit spheres.</strong> There are two candidate "unit spheres" in $\mathbb{B}$, and only one of them is a group. The Euclidean sphere $\|\tilde{Q}\|_E=1$ is a genuine sphere $S^7$ but is not a group, since $\|\cdot\|_E$ is not multiplicative and it contains zero divisors (<em>Biquaternion Topology</em>, §<em>The Euclidean unit sphere</em>). The level set $N(\tilde{Q})=1$ is a group but is neither Euclidean nor compact. The condition that makes a level set of a form on $\mathbb{B}$ a subgroup is $N=1$, not $\|\tilde{Q}\|_E=1$.</p>
 <p>The group of units is an open subset of $\mathbb{B}$, hence a manifold of real dimension $8$, but its topology is far from that of a general open set in $\mathbb{R}^8$: it has the homotopy type of a compact group. The polar decomposition exhibits the maximal compact subgroup as a strong deformation retract, and with it determines the homotopy groups and the universal cover. Everything in this part is a statement about $\mathbb{B}^\times$ as a topological group; the topology of the ambient space and of the null cone is in <em>Biquaternion Topology</em>.</p>
-<h2 id="the-retraction-of-math46-onto-its-maximal-compact-subgroup">The Retraction of $\mathbb{B}^\times$ onto Its Maximal Compact Subgroup</h2>
+<h2 id="the-retraction-of-math45-onto-its-maximal-compact-subgroup">The Retraction of $\mathbb{B}^\times$ onto Its Maximal Compact Subgroup</h2>
 <p>Every $\tilde{A} \in \mathbb{B}^\times$ has a unique polar decomposition $\tilde{A} = \tilde{U}\tilde{P}$, where $\tilde{U}$ is unitary ($\tilde{U}^\dagger\tilde{U} = e_0$) and $\tilde{P} = (\tilde{A}^\dagger\tilde{A})^{1/2}$ is Hermitian positive definite. For $t\in[0,1]$ put $\tilde{P}_t=(1-t)\tilde{P}+t e_0$ and</p>
 <p>$$
 \tilde{H}(t,\tilde{A})=\tilde{U}\tilde{P}_t.
@@ -92,17 +92,7 @@ $$</p>
 <p>The denominator is a positive real number, so $\tilde{P}_t$ is Hermitian positive definite of norm $1$. The map $\tilde{H}(t,\tilde{A})=\tilde{U}\tilde{P}_t$ is continuous, lies in $\mathbb{B}^\times_1$ since $N(\tilde{U}\tilde{P}_t)=1$, and satisfies $\tilde{H}(0,\tilde{A})=\tilde{A}$, $\tilde{H}(1,\tilde{A})=\tilde{U}\in S^3$, and $\tilde{H}(t,\tilde{U})=\tilde{U}$ for unitary $\tilde{U}$. Hence $S^3$ is a strong deformation retract of $\mathbb{B}^\times_1$.</p>
 <p>Thus $\mathbb{B}^\times_1\simeq S^3$: it is connected and simply connected with $\pi_3\cong\mathbb{Z}$ and the homotopy type of $S^3$, but is not homeomorphic to $S^3$, being a noncompact real $6$-manifold. The norm-one group $\mathbb{B}^\times_1$ of §<em>The Group of Units</em> is therefore simply connected, of homotopy type $S^3$.</p>
 <h2 id="the-structure-of-the-maximal-compact-subgroup">The Structure of the Maximal Compact Subgroup</h2>
-<p>The unit quaternions form $S^3$; $S^3$ is compact, connected and simply connected, the double cover of the rotation group $SO(3)$.</p>
-<p>A unit quaternion $q\in S^3$ acts on the algebra by the sandwich
-$$
-\tilde{Q}\mapsto q\,\tilde{Q}\,q^{-1},
-$$
-and on the imaginary part this is the rotation of $\mathbb{R}^3$ through the angle $\theta$ when $q=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\hat{n}$. The angle appears <strong>halved</strong> in the rotor, since the rotation is applied once for the left factor and once for the right, and a full turn of the rotor, $q\mapsto-q$, is the identity rotation: the map $S^3\to SO(3)$ is two-to-one, the double cover $SU(2)\to SO(3)$ realised here by the maximal compact subgroup. The construction, with the versor and the sandwich action, is that of <em>Versors, Rotors and the Sandwich Action</em> of Part II.</p>
-<p>A <strong>two-sided</strong> action, $\tilde{Q}\mapsto u\,\tilde{Q}\,v$ with $u,v\in S^3$ independent, is a four-dimensional rotation: the pair $(u,v)$ acts on $\mathbb{B}\cong\mathbb{R}^8$ preserving the Euclidean form, with kernel $\{\pm(e_0,e_0)\}$, so the two-sided action realises
-$$
-(S^3\times S^3)/\{\pm e_0\}\cong SO(4)
-$$
-on the algebra; the one-sided action above is its diagonal restriction, and the Lorentzian motions are obtained from the complexification instead.</p>
+<p>The unit quaternions form $S^3$; $S^3$ is compact, connected and simply connected.</p>
 <p>Every unitary biquaternion $\tilde{U}$ is a scalar multiple of a unit quaternion: if $N(\tilde{U})=z\in S^1$ and $\zeta^2=z$, then $\tilde{A}=\zeta^{-1}\tilde{U}$ has $N(\tilde{A})=1$ and $\tilde{U}=\zeta\tilde{A}$. Hence</p>
 <p>$$
 \mathrm{U}(\mathbb{B})=S^1\cdot S^3,\qquad S^1\cap S^3=\{\pm e_0\},

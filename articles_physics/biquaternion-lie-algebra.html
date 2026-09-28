@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="biquaternion-lie-algebra"><strong>Biquaternion Lie Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a natural bracket, the commutator, and with it the structure of a Lie algebra. This article reads that structure: the algebra as the Lie algebra of the group of units, its centre, the trace-free subalgebra, the derived subalgebra and its identity with the vector subspace, the bracket of two vectors as a cross product, the action of the bracket on the six distinguished subspaces, and the real form of the trace-free part with its two three-dimensional real summands. The adjoint maps close the account as the infinitesimal automorphisms.</p>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a natural bracket, the commutator, and with it the structure of a Lie algebra. This article reads that structure: the algebra as the Lie algebra of the group of units, its centre, the trace-free subalgebra, the derived subalgebra and its identity with the vector subspace, the bracket of two vectors as a cross product, the action of the bracket on the six distinguished subspaces, and the real form of the trace-free part with its two three-dimensional real summands. The adjoint maps close the account.</p>
 <p>The metric identification of the trace-free part with the Lorentz algebra, and of the group it exponentiates to with the spin group of Lorentzian signature, is <em>Biquaternion Lie Group and Exponential Structure</em> and <em>Biquaternion Rotations and Lorentz Transformations</em>; it is metric and is not made here. The topology of the group is <em>The Biquaternion Unit Group as a Topological Group</em>, and the automorphisms are <em>Biquaternion Automorphisms and Derivations</em>.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$. The six distinguished subspaces are those of <em>Biquaternion Algebra</em> and <em>Relations Between Subspaces</em>.</p>
 <h2 id="the-algebra-as-a-lie-algebra">The Algebra as a Lie Algebra</h2>
@@ -83,13 +83,12 @@ $$</p>
 <p>$$
 \mathrm{B}_0=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\;\oplus\;\mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\},
 $$</p>
-<p>with real dimensions $6=3+3$. The first summand is the <strong>rotation subalgebra</strong></p>
+<p>with real dimensions $6=3+3$. The first summand is</p>
 <p>$$
 \mathrm{K}=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\},
 $$</p>
-<p>the Lie algebra of the rotation directions, on which the bracket is twice the cross product; the second, $\mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$, consists of the <strong>hyperbolic-rotation directions</strong>, the boosts. The two are non-isomorphic real Lie algebras; which of them is compact is a topological statement, made in <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
-<p>In the fixed-point subspaces the rotation directions are $e_k\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$ and the hyperbolic-rotation directions are $ie_k\in\mathbb{M}_+$. This is why pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ while pure boosts have rotors in $\mathbb{M}_+$: these are exactly the two real three-dimensional pieces into which $\mathrm{B}_0$ splits, and they are the infinitesimal generators of the two kinds of motion.</p>
-<p><strong>Physical reading.</strong> The split $\mathrm{B}_0=\mathrm{K}\oplus\mathrm{span}_\mathbb{R}\{ie_k\}$ is the split of the Lorentz algebra into <strong>rotations and boosts</strong>: $\mathrm{K}$ is the rotation generator $\mathbf{J}$, with the compact bracket $[J_i,J_j]=\epsilon_{ijk}J_k$ up to the factor two, and the hyperbolic directions are the boost generator $\mathbf{K}$. The boost directions are non-compact and their bracket closes on the rotations, $[K_i,K_j]\propto-\epsilon_{ijk}J_k$, which is the statement that two boosts compose to a rotation; the two pieces are therefore not isomorphic, and neither is an ideal of the other. The two kinds of generator differ in the square of the direction and in what they move: a rotation direction $e_k$ has $e_k^2=-e_0$ and a spacelike plane, while a boost direction $ie_k$ has $(ie_k)^2=+e_0$ and a timelike one. On the material four-position $\tilde{Q}=ict\,e_0+\mathbf{x}$ the rotation acts by rotating $\mathbf{x}$ and leaving the time slot $ict$ alone, and the boost acts by mixing the time slot with the spatial slot $x_k$. A boost is therefore a rotation by an <strong>imaginary angle</strong> in a plane that contains the time direction: the rotation angle $\theta$ of such a plane is $i\psi$ for a boost, with $\psi$ the rapidity. This is the algebraic content of the $ict$ convention, and it is why the boost rotor lies in $\mathbb{M}_+$ while the rotation rotor lies in $\mathbb{H}_{\mathbb{B}}$. The metric that turns this bracket into the Lorentz bracket is imposed in <em>Biquaternion Lie Group and Exponential Structure</em>, and here it is only the split that is claimed.</p>
+<p>on which the bracket is (twice) the cross product; the second is $\mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$. The two are non-isomorphic real Lie algebras; which of them is compact is a topological statement, made in <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
+<p>In the fixed-point subspaces of the basic algebra article the first summand is generated by $e_k\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$ and the second by $ie_k\in\mathbb{M}_+$. These are exactly the two real three-dimensional pieces into which $\mathrm{B}_0$ splits, and the central direction $\mathbb{C}e_0$ completes the picture, $\mathrm{G}=\mathrm{B}_0\oplus\mathbb{C}e_0$.</p>
 <h2 id="the-derived-subalgebra-the-cross-product-and-the-subspaces">The Derived Subalgebra, the Cross Product and the Subspaces</h2>
 <p>The commutator of two biquaternions has vanishing scalar part, since the scalar part commutes with everything, $[\tilde{P},\tilde{Q}]=[\mathbf{P},\mathbf{Q}]$, and the bracket of the basis vectors is $[e_j,e_k]=2\sum_l\epsilon_{jkl}e_l$. Hence the <strong>derived subalgebra</strong> is the complex span of the vector units,</p>
 <p>$$
@@ -104,19 +103,13 @@ $$</p>
 <p>The action of the bracket on each of the six distinguished subspaces — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ — is the commutator row of the tables of <em>Relations Between Subspaces</em>. In brief, the centre is central, $\mathrm{Vect}(\mathbb{B})$ is closed and the bracket on it is the cross product above, $\mathbb{H}_{\mathbb{B}}$ is closed with the bracket of the imaginary quaternions, the bracket carries $\mathbb{M}_+$ to $\mathbb{M}_-$ and $\mathbb{M}_-$ to itself, and the bracket of $\mathbb{M}_+$ with $\mathbb{M}_-$ carries the second back to the first.</p>
 <p><strong>Physical reading.</strong> $[\tilde{P},\tilde{Q}]=2\,\mathbf{P}\times\mathbf{Q}$ is the <strong>commutator of the angular momentum operators</strong>: the algebra of rotations is the cross-product algebra, and the factor two is the factor that the half-angle of the rotor carries. That the derived subalgebra is the whole trace-free part says the algebra is not solvable and has no abelian ideal beyond the phase, so the framework's symmetry is semisimple up to the central $U(1)$ — the algebraic reason its gauge structure has no free abelian factor beyond the phase.</p>
 <h2 id="the-real-structure-and-the-adjoint-maps">The Real Structure and the Adjoint Maps</h2>
-<p>Over $\mathbb{R}$ the algebra is the Lie algebra of the real Lie group $\mathbb{B}^\times$, and the trace-free part $\mathrm{B}_0$, of real dimension $6$, is its real form, with $[\mathrm{G},\mathrm{G}]=\mathrm{B}_0$ as over $\mathbb{C}$. The identification of $\mathrm{B}_0$ with the Lorentz algebra, and of the group it exponentiates to with the spin group of Lorentzian signature, is metric: it is made in <em>Biquaternion Lie Group and Exponential Structure</em> and <em>The Biquaternion Unit Group as a Topological Group</em>, along with <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
-<p>The <strong>adjoint maps</strong> are the inner derivations</p>
+<p>Over $\mathbb{R}$ the algebra is the Lie algebra of the real Lie group $\mathbb{B}^\times$, and the trace-free part $\mathrm{B}_0$, of real dimension $6$, is its real form, with $[\mathrm{G},\mathrm{G}]=\mathrm{B}_0$ as over $\mathbb{C}$. The <strong>adjoint maps</strong> are</p>
 <p>$$
 \operatorname{ad}_{\tilde{Q}}:X\mapsto[\tilde{Q},X],
 $$</p>
-<p>each a derivation of the algebra by the Jacobi identity, and $\tilde{Q}\mapsto\operatorname{ad}_{\tilde{Q}}$ is a Lie algebra homomorphism with kernel the centre $\mathbb{C}e_0$. Since $\mathbb{B}$ is simple, every derivation is inner, so</p>
-<p>$$
-\operatorname{Der}(\mathbb{B})=\operatorname{ad}(\mathbb{B})\cong\mathrm{G}/\mathrm{Z}(\mathrm{G})=\mathrm{SL}(2,\mathbb{C}),
-$$</p>
-<p>the derivations are the infinitesimal automorphisms of the algebra, of complex dimension $3$ and real dimension $6$, and they exponentiate to the inner automorphisms $\operatorname{Inn}(\mathbb{B})=\mathbb{B}^\times/\mathbb{C}^\times$ (<em>Biquaternion Automorphisms and Derivations</em>).</p>
-<p><strong>Physical reading.</strong> The adjoint map $\operatorname{ad}_{\tilde{Q}}$ is the infinitesimal transformation of the algebra under the motion generated by $\tilde{Q}$; that the derivations are exactly the inner ones is the statement that every infinitesimal symmetry of the framework is generated by an element of the algebra, and hence acts in the defining module. It is why the framework has no infinitesimal symmetry that fails to be a motion.</p>
+<p>and $\tilde{Q}\mapsto\operatorname{ad}_{\tilde{Q}}$ is a Lie algebra homomorphism with kernel the centre $\mathbb{C}e_0$. The derivations, the inner automorphisms they exponentiate to and the identification of the derivation algebra are <em>Biquaternion Automorphisms and Derivations</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion algebra, with the commutator bracket, is the complex Lie algebra $\mathrm{G}$ of complex dimension $4$ and real dimension $8$, with centre $\mathbb{C}e_0$ and trace-free part $\mathrm{B}_0=\mathrm{span}_\mathbb{C}\{e_1,e_2,e_3\}$ of complex dimension $3$ and real dimension $6$. The derived subalgebra is the vector subspace itself, $[\mathrm{G},\mathrm{G}]=\mathrm{Vect}(\mathbb{B})$, so the algebra is not solvable; the bracket of two pure vectors is twice their cross product. Over $\mathbb{R}$ the trace-free part splits into the rotation subalgebra $\mathrm{K}=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, on which the bracket is twice the cross product, and the hyperbolic directions $\mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$; these are the infinitesimal rotations and boosts, and the metric identification of the real form with the Lorentz algebra is made in the Lie-group article. The derivations are exactly the inner ones, $\operatorname{Der}(\mathbb{B})=\operatorname{ad}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$, exponentiating to $\operatorname{Inn}(\mathbb{B})=\mathbb{B}^\times/\mathbb{C}^\times$. In the $ict$ convention the split of $\mathrm{B}_0$ is the algebraic origin of the two motions of the material four-position $\tilde{Q}=ict\,e_0+\mathbf{x}$: the rotation directions rotate $\mathbf{x}$ and leave the time slot $ict$ fixed, the boost directions $ie_k$, of square $+e_0$, mix $ict$ with $x_k$, and a boost is a rotation by the imaginary angle $i\psi$ in that plane.</p>
+<p>The biquaternion algebra, with the commutator bracket, is the complex Lie algebra $\mathrm{G}$ of complex dimension $4$ and real dimension $8$, with centre $\mathbb{C}e_0$ and trace-free part $\mathrm{B}_0=\mathrm{span}_\mathbb{C}\{e_1,e_2,e_3\}$ of complex dimension $3$ and real dimension $6$. The derived subalgebra is the vector subspace itself, $[\mathrm{G},\mathrm{G}]=\mathrm{Vect}(\mathbb{B})$, so the algebra is not solvable; the bracket of two pure vectors is twice their cross product. Over $\mathbb{R}$ the trace-free part is the sum of the two three-dimensional real summands $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and $\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, and on the first the bracket is twice the cross product.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -139,22 +132,6 @@ $$</p>
 <td>Trace-free subalgebra; complex dim $3$, real dim $6$</td>
 </tr>
 <tr>
-<td>$\mathrm{K}=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$</td>
-<td>Rotation subalgebra; the generator $\mathbf{J}$</td>
-</tr>
-<tr>
-<td>$\mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$</td>
-<td>Hyperbolic-rotation directions; the boost generator $\mathbf{K}$</td>
-</tr>
-<tr>
-<td>$e_k^2=-e_0$, $(ie_k)^2=+e_0$</td>
-<td>Spacelike rotation plane and timelike boost plane</td>
-</tr>
-<tr>
-<td>$\tilde{Q}=ict\,e_0+\mathbf{x}$</td>
-<td>Material four-position; the scalar slot is the time $ict$, the vector slots the space $\mathbf{x}$</td>
-</tr>
-<tr>
 <td>$[\mathbf{P},\mathbf{Q}]=2\,\mathbf{P}\times\mathbf{Q}$</td>
 <td>Bracket of two pure vectors, twice the cross product</td>
 </tr>
@@ -164,15 +141,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{ad}_{\tilde{Q}}=[\tilde{Q},\cdot]$</td>
-<td>Adjoint maps; the inner derivations</td>
-</tr>
-<tr>
-<td>$\operatorname{Der}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$</td>
-<td>All derivations are inner</td>
-</tr>
-<tr>
-<td>$\operatorname{Inn}(\mathbb{B})=\mathbb{B}^\times/\mathbb{C}^\times$</td>
-<td>Inner automorphisms</td>
+<td>Adjoint maps</td>
 </tr>
 </tbody>
 </table></div>

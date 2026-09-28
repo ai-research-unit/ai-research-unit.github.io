@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="biquaternion-elementary-functions"><strong>Biquaternion Elementary Functions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and to compute them in closed form. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials of the rotation and hyperbolic-rotation directions. Its Lie-group consequences — the group of units, the norm-one group, and the Lorentz group — are in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
+<p>This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and to compute them in closed form. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the trace-free part. Its Lie-group consequences — the group of units and the norm-one group — are in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
 <p>The treatment is purely mathematical. No physics is invoked. No examples are given, except for the explicit counterexamples that establish the failure of the addition formulas in the non-commutative setting. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, and its four conjugations.</p>
 <p>The key structural fact is that the elementary functions of a biquaternion are determined by the <strong>powers</strong> of the biquaternion, and the powers simplify dramatically in two cases: when the vector part has a nonzero <strong>complex norm</strong>, and when the vector part is <strong>nilpotent</strong>. These two cases cover all possibilities, and they lead to two regimes: the <strong>oscillatory regime</strong> and the <strong>nilpotent regime</strong>. The purpose of this article is to develop the elementary functions in both regimes.</p>
 <p>The higher special functions — Bessel, hypergeometric, gamma, zeta, and the functions arising from the analysis — are treated in the companion article on biquaternion higher special functions. Throughout, a biquaternion is written</p>
@@ -206,19 +206,19 @@ $$</p>
 <p>the eigenvalues then being $2\pi i(k\pm j)/2$. If $B = 0$ but $\mathbf{Q} \neq 0$, the matrix is a nonzero nilpotent, hence not diagonalizable and not in the kernel: $\exp(\mathbf{Q}) = e_0 + \mathbf{Q} \neq e_0$.</p>
 <p><strong>Example.</strong> The biquaternion $\tilde{Q} = \pi i\, e_0 + \pi\, e_3$ has $Q_0 = \pi i$, $B = \pi$, so $k = j = 1$ and $\exp(\tilde{Q}) = e^{\pi i}(\cos\pi\, e_0 + \sin\pi\, e_3) = e_0$. Since $N(\tilde{Q}) = 0$, this kernel element is a zero divisor: the kernel is not contained in the group of units.</p>
 <p><strong>On the phrase "eigenvalues differ by a multiple of $2\pi i$".</strong> The condition implies such a difference, but the difference alone is weaker: $\tilde{Q} = e_0$ has equal eigenvalues yet $\exp(e_0) \neq e_0$. Each eigenvalue must be a multiple of $2\pi i$.</p>
-<h3 id="the-exponential-of-a-rotation-and-of-a-hyperbolic-rotation">The Exponential of a Rotation and of a Hyperbolic Rotation</h3>
+<h3 id="the-exponential-in-the-two-real-directions">The Exponential in the Two Real Directions</h3>
 <p>Let $\hat{n}$ be a real unit vector part, so that $\hat{n}^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat{n}$ and the vector directions $\psi\, i\hat{n}$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in <em>Biquaternion Lie Algebra</em>.</p>
-<p><strong>Rotations (the bivector directions).</strong> For real $\theta$,</p>
+<p><strong>The bivector directions.</strong> For real $\theta$,</p>
 <p>$$
 \exp(\theta\hat{n}) = \cos\theta\, e_0 + \sin\theta\, \hat{n},
 $$</p>
-<p>a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. It rotates the vector part: conjugation by $\exp(\theta\hat{n})$ rotates any real vector $\mathbf{v}$ about the axis $\hat{n}$ through $2\theta$, the double-cover relation $S^3 \to SO(3)$. The family $\theta \mapsto \exp(\theta\hat{n})$ has period $2\pi$ in $S^3$, since $\exp(2\pi\hat{n}) = e_0$; the induced rotation of the vector part has angle $2\theta$, so it is the identity already at $\theta = \pi$, where $\exp(\pi\hat{n}) = -e_0$, while the spinor returns to $e_0$ only after a $4\pi$ rotation.</p>
-<p><strong>Hyperbolic rotations (the vector directions).</strong> With $(i\hat{n})^2 = +e_0$ and rapidity $\psi \in \mathbb{R}$,</p>
+<p>a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\hat{n}) = e_0$, and at the half-period $\exp(\pi\hat{n}) = -e_0$.</p>
+<p><strong>The vector directions.</strong> With $(i\hat{n})^2 = +e_0$ and real parameter $\psi \in \mathbb{R}$,</p>
 <p>$$
 \exp(\psi\, i\hat{n}) = \cosh\psi\, e_0 + \sinh\psi\, i\hat{n}.
 $$</p>
-<p>This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the rotation family it is not periodic and is unbounded as $\psi \to \pm\infty$; it is the rotor of a Lorentz transformation along $\hat{n}$ with rapidity $\psi$. The set of hyperbolic rotations is not a subgroup: the product of two hyperbolic rotations in non-parallel directions is a hyperbolic rotation followed by a rotation.</p>
-<p><strong>Comparison.</strong> A general exponent is $\tilde{Q} = q + iq'$ with $q, q'$ real vector parts; the rotation and hyperbolic families commute only when $q$ and $q'$ are parallel, since $[q, iq'] = 2i\,(q \times q')$, and in general the closed form of §<em>The Exponential</em> with $Q_0 = 0$ mixes the two behaviours.</p>
+<p>This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the bivector family it is not periodic and is unbounded as $\psi \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.</p>
+<p><strong>Comparison.</strong> A general exponent is $\tilde{Q} = q + iq'$ with $q, q'$ real vector parts; the two families commute only when $q$ and $q'$ are parallel, since $[q, iq'] = 2i\,(q \times q')$, and in general the closed form of §<em>The Exponential</em> with $Q_0 = 0$ mixes the two families.</p>
 <h2 id="the-trigonometric-and-hyperbolic-functions">The Trigonometric and Hyperbolic Functions</h2>
 <h3 id="definitions">Definitions</h3>
 <p>The trigonometric and hyperbolic functions are defined by the same power series as in the complex case:</p>
@@ -238,7 +238,7 @@ $$</p>
 \sinh(\tilde{Q}) = \frac{\exp(\tilde{Q}) - \exp(-\tilde{Q})}{2}, \qquad \cosh(\tilde{Q}) = \frac{\exp(\tilde{Q}) + \exp(-\tilde{Q})}{2},
 $$</p>
 <p>where $i$ is the scalar imaginary. These identities hold because $i$ commutes with everything, so the standard derivations carry over. They reduce the computation to the exponential formula.</p>
-<h3 id="the-case-math264">The Case $B \neq 0$</h3>
+<h3 id="the-case-math251">The Case $B \neq 0$</h3>
 <p>For $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $B \neq 0$ and $\hat{n} = \mathbf{Q}/B$, we have</p>
 <p>$$
 \exp(\tilde{Q}) = e^{Q_0}(\cos B \, e_0 + \sin B \, \hat{n}), \qquad \exp(-\tilde{Q}) = e^{-Q_0}(\cos B \, e_0 - \sin B \, \hat{n}).
@@ -256,7 +256,7 @@ $$</p>
 <p>$$
 \cosh(\tilde{Q}) = \cosh(Q_0) \cos B \, e_0 + \sinh(Q_0) \sin B \, \hat{n}.
 $$</p>
-<h3 id="the-case-math273">The Case $B = 0$</h3>
+<h3 id="the-case-math260">The Case $B = 0$</h3>
 <p>If $B = 0$, then $\mathbf{Q}^2 = 0$, and the powers of $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ satisfy</p>
 <p>$$
 \tilde{Q}^n = Q_0^n e_0 + n Q_0^{n-1} \mathbf{Q}, \qquad n \geq 1,
@@ -274,7 +274,7 @@ $$</p>
 <p>$$
 \cosh(\tilde{Q}) = \cosh(Q_0) e_0 + \sinh(Q_0) \mathbf{Q}.
 $$</p>
-<h3 id="the-case-math285">The Case $\mathbf{Q} = 0$</h3>
+<h3 id="the-case-math272">The Case $\mathbf{Q} = 0$</h3>
 <p>If $\mathbf{Q} = 0$, both formulas reduce to the ordinary complex trigonometric and hyperbolic functions.</p>
 <h3 id="summary-of-trigonometric-and-hyperbolic-functions">Summary of Trigonometric and Hyperbolic Functions</h3>
 <p>$$
@@ -427,19 +427,19 @@ $$</p>
 \tilde{Q}^\alpha = \exp(\alpha \log \tilde{Q}).
 $$</p>
 <p>The power function inherits the multivaluedness of the logarithm: for non-integer $\alpha$, it is multivalued, and the principal branch is obtained from the principal logarithm. The domain is the group of units $\mathbb{B}^\times$.</p>
-<h3 id="the-case-math406">The Case $B \neq 0$</h3>
+<h3 id="the-case-math393">The Case $B \neq 0$</h3>
 <p>Using the formula for the logarithm and the exponential, we obtain</p>
 <p>$$
 \tilde{Q}^\alpha = R^\alpha \bigl(\cos(\alpha\Theta) \, e_0 + \sin(\alpha\Theta) \, \hat{n}\bigr), \qquad B \neq 0,
 $$</p>
 <p>where $R = \sqrt{Q_0^2 + B^2}$, $\cos\Theta = Q_0/R$, and $\sin\Theta = B/R$.</p>
-<h3 id="the-case-math411-math412">The Case $B = 0$, $\mathbf{Q} \neq 0$</h3>
+<h3 id="the-case-math398-math399">The Case $B = 0$, $\mathbf{Q} \neq 0$</h3>
 <p>In the nilpotent regime,</p>
 <p>$$
 \tilde{Q}^\alpha = Q_0^\alpha e_0 + \alpha Q_0^{\alpha-1} \mathbf{Q}, \qquad B = 0, \quad \mathbf{Q} \neq 0,
 $$</p>
 <p>with $Q_0 \neq 0$ required for invertibility. This involves the linear term $\alpha Q_0^{\alpha-1} \mathbf{Q}$, which is the analogue of the expansion $(1 + x)^\alpha \approx 1 + \alpha x$ for small $x$ with $x^2 = 0$.</p>
-<h3 id="the-case-math419">The Case $\mathbf{Q} = 0$</h3>
+<h3 id="the-case-math406">The Case $\mathbf{Q} = 0$</h3>
 <p>If $\mathbf{Q} = 0$, the power function reduces to the ordinary complex power.</p>
 <h3 id="summary-of-the-power-function">Summary of the Power Function</h3>
 <p>$$

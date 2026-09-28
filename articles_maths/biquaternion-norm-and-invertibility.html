@@ -202,15 +202,6 @@ Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate
 </tbody>
 </table></div>
 <p>Each is a real slice whose complexification is $(\mathbb{B},N)$. The full realification is split; the Lorentzian slice is $\mathbb{M}_+$, and up to sign $\mathbb{M}_-$.</p>
-<p>Either Lorentzian slice is thereby identified with Minkowski space. On $\mathbb{M}_-$, in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3$, the restricted norm reads $N(\tilde{Q})=-(q'_0)^2+q_1^2+q_2^2+q_3^2$, and its null set,
-$$
-N(\tilde{Q})=0\iff(q'_0)^2=q_1^2+q_2^2+q_3^2,
-$$
-is the <strong>light cone</strong>, a double cone with apex at the origin. Intersecting with the unit sphere of $\mathbb{M}_-\cong\mathbb{R}^4$ gives $q'_0=\pm1/\sqrt2$ and $q_1^2+q_2^2+q_3^2=1/2$, so the link of the light cone is the disjoint union
-$$
-S^2\sqcup S^2,
-$$
-one sphere per nappe, and the complement of the light cone in $\mathbb{M}_-$ has exactly three connected components, the future timelike, past timelike and spacelike regions. The complex null cone $\mathcal{N}$ of the whole algebra has real dimension $6$ (<em>Biquaternion Null Quadric and Projective Geometry</em>); its intersection with either Lorentzian slice is this real cone of dimension $3$.</p>
 <h2 id="the-associated-clifford-algebra">The Associated Clifford Algebra</h2>
 <p>With the series convention $v^2=N(v)\cdot1$,
 $$
@@ -313,7 +304,7 @@ $$</p>
 <p>The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is <strong>not</strong> a division algebra. This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The biquaternion algebra $\mathbb{B}$ is an eight-dimensional associative real algebra, but it is not a division algebra, because it contains zero divisors. The zero divisors are studied in the article on biquaternion zero divisors.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
 <p>We now examine how the invertible elements are distributed among the six distinguished subspaces of $\mathbb{B}$ defined in the basic algebra article. The criterion is the same in all cases: an element is invertible if and only if its biquaternion norm is nonzero.</p>
-<h3 id="the-complex-subspace-math238">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-complex-subspace-math226">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>An element of $\mathbb{C}_{\mathbb{B}}$ has the form</p>
 <p>$$
 \tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{C}.
@@ -323,7 +314,7 @@ $$</p>
 N(\tilde{Q}) = Q_0^2.
 $$</p>
 <p>This vanishes if and only if $Q_0 = 0$, i.e. if and only if $\tilde{Q} = 0$. So every nonzero element of $\mathbb{C}_{\mathbb{B}}$ is invertible. This reflects the fact that $\mathbb{C}_{\mathbb{B}}$ is a copy of the field $\mathbb{C}$, in which every nonzero element has an inverse.</p>
-<h3 id="the-vector-subspace-math247">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
+<h3 id="the-vector-subspace-math235">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>An element of $\mathrm{Vect}(\mathbb{B})$ has vanishing scalar part, $\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_k = q_k + i q'_k$. The biquaternion norm is</p>
 <p>$$
 N(\tilde{Q}) = Q_1^2 + Q_2^2 + Q_3^2 = \left(q_1^2 + q_2^2 + q_3^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2\right) + 2i\left(q_1 q'_1 + q_2 q'_2 + q_3 q'_3\right).
@@ -334,7 +325,7 @@ Q_1^2 + Q_2^2 + Q_3^2 = 0.
 $$</p>
 <p>This is the <strong>nilpotent cone</strong>: its nonzero elements square to zero, and they are the pure zero divisors studied in the companion article on biquaternion zero divisors. As a complex cone in $\mathbb{C}^3$ it has complex dimension $2$, that is, real dimension $4$; it therefore has real codimension $2$ in the six-dimensional space $\mathrm{Vect}(\mathbb{B})$. The elements outside the cone are invertible, and their set is <strong>connected</strong>, being the complement of a subset of codimension $2$.</p>
 <p>In particular the intersection $\mathrm{Vect}(\mathbb{B}) \cap \mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\}$ consists entirely of invertible elements away from the origin, since $N$ restricts to the positive-definite form $q_1^2 + q_2^2 + q_3^2$ there.</p>
-<h3 id="the-quaternion-subspace-math264">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-quaternion-subspace-math252">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>An element of $\mathbb{H}_{\mathbb{B}}$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
@@ -344,13 +335,13 @@ $$</p>
 N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2.
 $$</p>
 <p>This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e. if and only if $\tilde{Q} = 0$. So every nonzero element of $\mathbb{H}_{\mathbb{B}}$ is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}}$ is a copy of the division algebra $\mathbb{H}$, in which every nonzero element has an inverse.</p>
-<h3 id="the-anti-quaternion-subspace-math273">The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-anti-quaternion-subspace-math261">The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>An element of $i\mathbb{H}_{\mathbb{B}}$ is $i$ times a real quaternion, $\tilde{Q} = i\tilde{P}$ with $\tilde{P} = p_0 e_0 + p_1 e_1 + p_2 e_2 + p_3 e_3 \in \mathbb{H}_{\mathbb{B}}$. The biquaternion norm is</p>
 <p>$$
 N(i\tilde{P}) = \sum_{\mu=0}^{3} (i p_\mu)^2 = -\sum_{\mu=0}^{3} p_\mu^2 = -\left(p_0^2 + p_1^2 + p_2^2 + p_3^2\right).
 $$</p>
 <p>This is a <strong>negative-definite</strong> quadratic form on the four-dimensional real space $i\mathbb{H}_{\mathbb{B}}$, and it vanishes if and only if $\tilde{P} = 0$. So every nonzero element of $i\mathbb{H}_{\mathbb{B}}$ is invertible, and $i\mathbb{H}_{\mathbb{B}}$ contains no zero divisors. The subspace is not a subalgebra, so it is not itself a division algebra; but its nonzero elements are invertible in $\mathbb{B}$. Its signature is $(0,4)$, the exact negative of the $(4,0)$ of $\mathbb{H}_{\mathbb{B}}$, as the relation $N(i\tilde{Q}) = -N(\tilde{Q})$ requires.</p>
-<h3 id="the-hermitian-subspace-math288">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-hermitian-subspace-math276">The Hermitian Subspace $\mathbb{M}_+$</h3>
 <p>An element of $\mathbb{M}_+$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
@@ -371,7 +362,7 @@ $$</p>
 <li>The <strong>inside region</strong> $q_0^2 < (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) < 0$.</li>
 </ul>
 <p>On all three components, the biquaternion norm is nonzero.</p>
-<h3 id="the-anti-hermitian-subspace-math306">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-anti-hermitian-subspace-math294">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
 <p>An element of $\mathbb{M}_-$ has the form</p>
 <p>$$
 \tilde{Q} = i q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
