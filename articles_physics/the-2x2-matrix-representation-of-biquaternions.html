@@ -149,6 +149,19 @@ $$</p>
 <p><strong>Invertibility.</strong> A biquaternion is invertible exactly when its biquaternion norm is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.</p>
 <p><strong>Multiplicativity.</strong> $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.</p>
 <p><strong>Zero divisors.</strong> The zero divisors of $\mathbb{B}$ are the singular matrices. The null cone $N(\tilde{Q}) = 0$ is the determinant-zero locus. Since $\mathbb{B}$ is not a division algebra, this locus is nonempty, and its elements are exactly the matrices of rank at most one.</p>
+<h2 id="the-rank-one-elements-and-the-outer-product">The Rank-One Elements and the Outer Product</h2>
+<p>The determinant is the norm, so the zero divisors are the nonzero singular matrices; the matrix form also says what such a matrix is.</p>
+<p><strong>Proposition.</strong> For $\tilde{Q}\neq0$ the following are equivalent: $N(\tilde{Q})=0$; $\Phi(\tilde{Q})$ is singular; $\Phi(\tilde{Q})$ is an outer product
+$$
+\Phi(\tilde{Q})=uv^{T},\qquad u=\binom{\alpha}{\beta}\neq0,\quad v=\binom{\gamma}{\delta}\neq0,
+$$
+the pair $(u,v)$ being determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$.</p>
+<p><strong>Proof.</strong> The first two are equivalent by $\det\Phi(\tilde{Q})=N(\tilde{Q})$, and $\tilde{Q}\neq0$ makes the matrix nonzero; a nonzero singular two-by-two matrix has rank one. Let $M=\Phi(\tilde{Q})$ have rank one and let $M_{pq}\neq0$ be an entry. Every two-by-two minor of $M$ vanishes, so $M_{iq}M_{pj}=M_{ij}M_{pq}$ for all $i,j$; hence, with $u$ the $q$-th column and $v^{T}$ the $p$-th row divided by $M_{pq}$,
+$$
+u=\binom{M_{1q}}{M_{2q}},\qquad v^{T}=\frac{1}{M_{pq}}\begin{pmatrix}M_{p1}&M_{p2}\end{pmatrix},
+$$
+one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ because its $p$-th entry is $M_{pq}\neq0$. A different pivot gives a pair differing by precisely the rescaling: the $j$-th columns of $uv^{T}=u'v'^{T}$ give $u'=\lambda u$ for $\lambda=v_{j}/v'_{j}\neq0$, and the remaining entries give $v'=\lambda^{-1}v$. $\square$</p>
+<p><strong>Worked example.</strong> For $\tilde{Q}=e_2+ie_3$ the image is $\Phi(\tilde{Q})=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$, of rank one; the pivot $M_{11}=1$ gives $u=(1,1)^{T}$, $v=(1,-1)^{T}$, and the pivot $M_{12}=-1$ gives $u=(-1,-1)^{T}$, $v=(-1,1)^{T}$, the same pair rescaled by $\lambda=-1$.</p>
 <h2 id="the-six-subspaces">The Six Subspaces</h2>
 <p>Each of the algebra's distinguished subspaces has a description in matrix language, and each description is a statement a physicist recognizes. Following the conventions article, the components of a general biquaternion are written $Q_0, Q_1, Q_2, Q_3$ and are <strong>complex</strong>; the parameters of a real subspace are written in lowercase and are <strong>real</strong>, with the prime recording which slot carries the $i$: $q_\mu$ is the coefficient entering with $e_\mu$ and $q'_\mu$ the one entering with $ie_\mu$, so that $Q_\mu = q_\mu + iq'_\mu$ — unprimed the real part, primed the imaginary part. Every matrix below is the one rule</p>
 <p>$$
@@ -216,7 +229,7 @@ $$</p>
 q_0 = ct', \quad q'_0 = ct, \quad q_1 = x, \quad q_2 = y, \quad q_3 = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
 $$</p>
 <p>the unprimed slot carrying the informational time $ct'$ and the material space $\mathbf{x}$, the primed slot the material time $ct$ and the informational space $\mathbf{x}'$.</p>
-<h3 id="the-center-subspace-math132">The Center Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-center-subspace-math172">The Center Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>The center subspace, the fixed space of quaternion conjugation $\bar{\cdot}$: the elements $Q_0e_0$ with $Q_0$ complex, carried onto the scalar matrices,</p>
 <p>$$
 \Phi(\tilde{Q}) = Q_0\,\Phi(e_0) = \begin{pmatrix} Q_0 & 0 \\ 0 & Q_0 \end{pmatrix}
@@ -228,7 +241,7 @@ $$</p>
 \tilde{Q} = q_0e_0 + q'_0(ie_0) = ct'\,e_0 + ict\,e_0 ,
 $$</p>
 <p>the informational time and the material time. It is the only one of the six of real dimension two, and the only commutative one; the vector subspace and the four four-dimensional ones are the rest.</p>
-<h3 id="the-vector-subspace-math143">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
+<h3 id="the-vector-subspace-math183">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>The complement of the center subspace: the elements with no scalar part, those with $\mathrm{Sc}(\tilde{Q}) = 0$, carried onto the <strong>traceless</strong> matrices,</p>
 <p>$$
 \Phi(\tilde{Q}) = \begin{pmatrix} -iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & iQ_3 \end{pmatrix}
@@ -240,7 +253,7 @@ $$</p>
 \tilde{Q} = q_1e_1 + q_2e_2 + q_3e_3 + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3) = \mathbf{x} + i\mathbf{x}' ,
 $$</p>
 <p>so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the spatial counterpart of the center subspace's two temporal blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the biquaternion norm with the scalar term dropped, $\det = Q_1^2 + Q_2^2 + Q_3^2$.</p>
-<h3 id="the-quaternion-subspace-math160">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-quaternion-subspace-math200">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The real-quaternion subspace, the fixed space of complex conjugation ${}^{*}$: the elements with all four $q_\mu$ real, carried from the basis $\{e_0, e_1, e_2, e_3\}$ onto the four basis images themselves,</p>
 <p>$$
 \big\{\, \Phi(e_0),\ \Phi(e_1),\ \Phi(e_2),\ \Phi(e_3) \,\big\},
@@ -261,7 +274,7 @@ $$</p>
 \det = |z|^2 + |w|^2 = q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$</p>
 <p>a sum of squares, which vanishes only at the zero element. This is a four-<strong>real</strong>-dimensional set, not the four-dimensional complex space of all matrices with $z, w \in \mathbb{C}$, and on it the determinant is <strong>definite</strong> — which is the matrix reason $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not. Removing the complex coefficients from the algebra makes the biquaternion norm positive definite, and that is all that separates the two cases.</p>
-<h3 id="the-antiquaternion-subspace-math184">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-antiquaternion-subspace-math224">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The anti-fixed space of complex conjugation: the elements with all four $q'_\mu$ real, carried from the basis $\{ie_0, ie_1, ie_2, ie_3\}$ onto $i$ times the four basis images,</p>
 <p>$$
 \big\{\, i\Phi(e_0),\ i\Phi(e_1),\ i\Phi(e_2),\ i\Phi(e_3) \,\big\}.
@@ -278,7 +291,7 @@ $$</p>
 $$</p>
 <p>with the same double duty of the letter $z'$, resolved there too by the combination $q'_0 - iq'_3$.</p>
 <p>The determinant changes sign with the factor, $\det = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3)$, <strong>negative definite</strong> — the exact mirror of the definite form on $\mathbb{H}_{\mathbb{B}}$. Together the two images exhaust $M_2(\mathbb{C})$, so the real-and-imaginary split of the algebra is, in matrix language, the split of $M_2(\mathbb{C})$ into the quaternion matrices and $i$ times them.</p>
-<h3 id="the-informational-subspace-math206">The Informational Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-informational-subspace-math246">The Informational Subspace $\mathbb{M}_+$</h3>
 <p>The Hermitian subspace, the fixed space of $\dagger$: the elements with $q_0, q'_1, q'_2, q'_3$ real, carried from the basis $\{e_0, ie_1, ie_2, ie_3\}$ onto the four matrices</p>
 <p>$$
 \big\{\, \Phi(e_0),\ i\Phi(e_1),\ i\Phi(e_2),\ i\Phi(e_3) \,\big\}
@@ -300,7 +313,7 @@ $$</p>
 \det\Phi(\tilde{Q}) = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 ,
 $$</p>
 <p>the mirror interval of signature $(1,3)$, read on the informational coordinate $(ct')\,e_0 + i\,x'\,e_1 + i\,y'\,e_2 + i\,z'\,e_3$, that is $q_0 = ct'$, $q'_1 = x'$, $q'_2 = y'$, $q'_3 = z'$.</p>
-<h3 id="the-material-subspace-math225">The Material Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-material-subspace-math265">The Material Subspace $\mathbb{M}_-$</h3>
 <p>The anti-Hermitian subspace, the fixed space of $\flat$: the elements with $q'_0, q_1, q_2, q_3$ real, carried from the basis $\{ie_0, e_1, e_2, e_3\}$ onto the four matrices</p>
 <p>$$
 \big\{\, i\Phi(e_0),\ \Phi(e_1),\ \Phi(e_2),\ \Phi(e_3) \,\big\}
@@ -435,13 +448,13 @@ $$</p>
 <p>The advantage of the matrix form here is not computational but structural: writing a general unit-norm element as a rotation times a boost is the polar decomposition of its $\mathrm{SL}(2,\mathbb{C})$ matrix into a unitary factor and a positive Hermitian one, and the double cover $SU(2) \to SO(3)$ is the statement that $\pm M$ give the same rotation. In the algebra the double cover has to be argued from the biquaternion norm; in the matrix form it is visible, because $-\Phi(e_0)$ is a unit-norm element acting trivially on the material subspace.</p>
 <p>The identification is structural, and it is not the cheaper route to the numbers. Sangwine &amp; Hitzer note that $\Phi(\tilde{Q})$ carries a four-fold redundancy — the $4\times4$ complex representation of a biquaternion is one of a special form, not an arbitrary complex matrix, and a general numerical polar decomposition of an arbitrary matrix need not preserve that form accurately over a series of computational steps — so the biquaternion algorithm needs less memory and fewer operations. Their algorithm also obtains the hyperbolic factor by dividing out the trigonometric factor, which is cheaper than forming the square root $\sqrt{\tilde{Q}\tilde{Q}^\dagger}$ used above to exhibit the identity and the Hermiticity: the square root is the proof that the factor exists, and the division is how it is computed.</p>
 <h2 id="what-the-matrix-form-makes-visible">What the Matrix Form Makes Visible</h2>
-<p>The representation is a change of coordinates, and its value is what the new coordinates make obvious. Collected: the scalar part is a trace; the biquaternion norm is a determinant; invertibility is nonzero determinant; the informational and material subspaces are the Hermitian and anti-Hermitian matrices; the observables are the Hermitian matrices generated by the images of the Hermitian units; the pure states are rank-one projectors on the null cone; the unit-norm group is $\mathrm{SL}(2,\mathbb{C})$; and the zero divisors are the singular matrices. Each of these is a theorem in the algebra and an inspection in the matrix form.</p>
+<p>The representation is a change of coordinates, and its value is what the new coordinates make obvious. Collected: the scalar part is a trace; the biquaternion norm is a determinant; invertibility is nonzero determinant; the informational and material subspaces are the Hermitian and anti-Hermitian matrices; the observables are the Hermitian matrices generated by the images of the Hermitian units; the pure states are rank-one projectors on the null cone; the unit-norm group is $\mathrm{SL}(2,\mathbb{C})$; and the zero divisors are the rank-one matrices. Each of these is a theorem in the algebra and an inspection in the matrix form.</p>
 <p>The limitation is equally clear. The matrix form is a representation of the <strong>complexified</strong> algebra: it uses $i$ in its entries, so it identifies $\mathbb{B}$ with $M_2(\mathbb{C})$ and does not, by itself, display the real structure that distinguishes the material subspace from the informational one. That structure — the choice of $\flat$, and the physical statement that $\mathbb{M}_-$ is the subspace where mass lives — is a choice of real form, and it is visible in the algebra and in the Hermitian/anti-Hermitian split, but not in the identification $\mathbb{B} \cong M_2(\mathbb{C})$ alone. The matrix form is the computational face of the algebra, not the whole of it.</p>
 <h2 id="summary">Summary</h2>
 <p>The matrix representation of the biquaternion algebra is the isomorphism $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ given by $\Phi(e_0) = I_2$ and the three basis matrices asserted above, with $\Phi(i) = i\,\Phi(e_0)$ on the central scalar. The images of the Hermitian units, $\Phi(ie_k) = i\,\Phi(e_k)$, are the three Hermitian basis matrices named in the remark above.</p>
 <ul>
 <li>The signs are forced: $e_k^2 = -e_0$ requires the factor $i$, and $e_1e_2 = +e_3$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.</li>
-<li>The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant <strong>is</strong> the biquaternion norm, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as singular matrices all follow.</li>
+<li>The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant <strong>is</strong> the biquaternion norm, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\Phi(\tilde{Q}) = uv^{T}$ all follow.</li>
 <li>The subspaces of the algebra are the center subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the only one of the six of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-q'^2_0 - q'^2_1 - q'^2_2 - q'^2_3$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - \mathbf{x}'^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.</li>
 <li>The minimal left ideals are the matrix <strong>columns</strong>: $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.</li>
 <li>Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \Phi(-e_2)$. Hermitian conjugation is the conjugate transpose and $\flat = -\dagger$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.</li>
@@ -488,6 +501,10 @@ $$</p>
 <tr>
 <td>$\det(\tilde{Q}) = N(\tilde{Q})$</td>
 <td>Determinant is the biquaternion norm</td>
+</tr>
+<tr>
+<td>$\Phi(\tilde{Q}) = uv^{T}$</td>
+<td>Rank-one form of a nonzero null element: the columns $u = (\alpha,\beta)^{T}$ and $v = (\gamma,\delta)^{T}$ are nonzero and determined up to $(\lambda u,\lambda^{-1}v)$</td>
 </tr>
 <tr>
 <td>$\bar{\tilde{Q}} \mapsto \mathrm{adj}\,M = \epsilon M^{\mathsf T}\epsilon^{-1}$</td>
