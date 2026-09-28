@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The biquaternion algebra carries integral structures, and the groups of units of those structures are the finite groups attached to the algebra. The real slice $\mathbb{H}_{\mathbb{B}}\cong\mathbb{H}$ contains the classical quaternion orders — the Lipschitz order and the Hurwitz order — whose groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four, the second being the vertex set of the regular $24$-cell. The unit sphere of the real slice has for finite subgroups the cyclic groups, the binary dihedral groups and the three binary polyhedral groups of orders $24$, $48$ and $120$. The complex order, the integral biquaternions, behaves differently: its group of units is infinite, generated along a nilpotent direction, so the finite unit groups are the real ones.
+The biquaternion algebra carries integral structures, and the groups of units of those structures are the finite groups attached to the algebra. The real slice $\mathbb{H}_{\mathbb{B}}\cong\mathbb{H}$ contains the classical quaternion orders — the Lipschitz order and the Hurwitz order — whose groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit sphere of the real slice has for finite subgroups the cyclic groups, the binary dihedral groups and the three binary polyhedral groups of orders $24$, $48$ and $120$. The complex order, the integral biquaternions, behaves differently: its group of units is infinite, generated along a nilpotent direction, so the finite unit groups are the real ones.
 
-This article is the integral and finite-group entry of the Algebra slot. The lattice-theoretic treatment of the quaternion orders — rank, index, covolume, duality, base change — is *Lattices and the Quaternion Lattice*; the order theory of the quaternion algebra over $\mathbb{Q}$, with maximality and the arithmetic of the norm, is *Division Algebras*; the Clifford lift of the finite reflection groups and the McKay correspondence are *Reflection Groups and Clifford Algebras* and *Root Systems and Classification*. Those results are cited, not re-derived, and the present article owns their biquaternion statement: the orders inside $\mathbb{B}$, their finite unit groups, and the infinite unit group of the complex order.
+This article is the integral and finite-group entry of the Topology group. The lattice-theoretic treatment of the quaternion orders — rank, index, covolume, duality, base change — is *Lattices and the Quaternion Lattice*; the order theory of the quaternion algebra over $\mathbb{Q}$, with maximality and the arithmetic of the norm, is *Division Algebras*; the Clifford lift of the finite reflection groups and the McKay correspondence are *Reflection Groups and Clifford Algebras* and *Root Systems and Classification*. Those results are cited, not re-derived, and the present article owns their biquaternion statement: the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, and the infinite unit group of the complex order.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$, so that $e_1e_2e_3=-e_0$. The quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$ is the real slice (*Biquaternion Quaternion Subspace*). The norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$, and on the real slice it is the positive definite form $\sum_\mu q_\mu^2$.
 
@@ -45,8 +45,6 @@ $$
 
 **Remark (the two indices).** The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.
 
-**Remark (the $24$-cell).** The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$. Its full symmetry group is the Weyl group $F_4$ of order $1152$, and the signed permutations of the four coordinates give the Weyl group $B_4$ of order $384$, but these are symmetries of the lattice and are not the unit group (*Root Systems and Classification*, *Lattices and the Quaternion Lattice*). The unit group reaches the lattice only through the maps $\rho_v$ of the rotations article: the twenty-four Hurwitz units give twelve distinct maps $\rho_v(x)=-vxv^{-1}$, each of determinant $+1$ on the algebra and therefore a rotation rather than a reflection, and together they generate the conjugation action of $2T$, namely $2T/\{\pm1\}\cong A_4$ together with the antipodal map, of order $24$ — the unit group is not $F_4$. The root system $A_1$ is present already at one generator: on the line $\mathbb{R}e_1$ the map $\rho_{e_1}$ acts as $-1$ and on the orthogonal complement as the identity, so the Weyl group $W(A_1)=\mathbb{Z}/2$ is realised on a one-dimensional Clifford subspace.
-
 ## The Finite Subgroups of the Unit Sphere
 
 **Theorem.** The finite subgroups of the unit sphere $Sp(1)=S^3\subset\mathbb{H}_{\mathbb{B}}$ are the cyclic groups, the binary dihedral groups, and the three binary polyhedral groups
@@ -55,9 +53,7 @@ $$
 $$
 the binary tetrahedral, octahedral and icosahedral groups.
 
-**Proof.** The unit quaternions form $Sp(1)\cong SU(2)$, whose centre is $\{\pm e_0\}$; passing to the quotient $SO(3)$ identifies the finite subgroups of $Sp(1)$ with the twofold preimages of the finite rotation groups of $\mathbb{R}^3$, which are the cyclic, dihedral and polyhedral groups. The preimage of a cyclic group is cyclic, of a dihedral group binary dihedral, and of the three polyhedral groups are $2T$, $2O$, $2I$, of twice the orders $12$, $24$ and $60$. The Hurwitz order realises $2T$ integrally, as above. $\square$
-
-**Remark.** The correspondence between these three groups and the simply laced root systems of type $A$, $D$, $E$ is the McKay correspondence, and the Clifford realisation of the same groups as the even parts of the lifts of the finite reflection groups is *Reflection Groups and Clifford Algebras*; the classification of the reflection groups is *Root Systems and Classification*. The binary dihedral groups are the preimages of the dihedral rotation groups, of order four times the dihedral order.
+The Clifford realisation of these groups as the even parts of the lifts of the finite reflection groups, and the McKay correspondence, are *Reflection Groups and Clifford Algebras*; the classification of the reflection groups is *Root Systems and Classification*. The binary dihedral groups are the twofold preimages of the dihedral groups, of order four times the dihedral order, and the Hurwitz order realises $2T$ integrally, as above.
 
 ## The Integral Biquaternions
 
@@ -80,7 +76,7 @@ Each of these elements has norm $N(e_0+kn)=1+k^2+(ik)^2=1$, since the coefficien
 
 ## Summary
 
-The quaternion orders inside the biquaternion algebra are the Lipschitz order $\mathcal{L}$ and the Hurwitz order $\mathcal{L}'$, the second containing the first with index two and maximal. Their groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four, the latter the vertex set of the regular $24$-cell; the unit-group index is three, though the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=SU(2)$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders twenty-four, forty-eight and one hundred twenty.
+The quaternion orders inside the biquaternion algebra are the Lipschitz order $\mathcal{L}$ and the Hurwitz order $\mathcal{L}'$, the second containing the first with index two and maximal. Their groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four; the unit-group index is three, though the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=S^3$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders twenty-four, forty-eight and one hundred twenty.
 
 The integral biquaternions, with coefficients in the Gaussian integers, form an order in $\mathbb{B}$ whose group of units is infinite: the nilpotent element $e_1+ie_2$ generates the unipotent family $e_0+k(e_1+ie_2)$ of norm one. The finite unit groups of the theory are thus the groups of the real quaternion orders.
 
@@ -92,9 +88,9 @@ The integral biquaternions, with coefficients in the Gaussian integers, form an 
 | $\mathcal{L}'=\mathcal{L}\oplus\mathbb{Z}\omega$ | Hurwitz order; maximal order of $\mathbb{H}$ |
 | $\omega=\tfrac12(e_0+e_1+e_2+e_3)$ | Half-integral generator of $\mathcal{L}'$ |
 | $\mathcal{L}^{\times}\cong Q_8$ | Lipschitz units, order $8$ |
-| $(\mathcal{L}')^{\times}\cong 2T$ | Hurwitz units, order $24$; vertices of the $24$-cell |
+| $(\mathcal{L}')^{\times}\cong 2T$ | Hurwitz units, order $24$ |
 | $2T,2O,2I$ | Binary tetrahedral, octahedral, icosahedral groups; orders $24,48,120$ |
-| $Sp(1)=S^3$ | Unit quaternions; $SU(2)$; finite subgroups cyclic, binary dihedral, binary polyhedral |
+| $Sp(1)=S^3$ | Unit quaternions; the unit sphere; finite subgroups cyclic, binary dihedral, binary polyhedral |
 | $\Lambda=\mathcal{L}\otimes_{\mathbb{Z}}\mathbb{Z}[i]$ | Integral biquaternions; infinite group of units |
 | $n=e_1+ie_2$, $n^2=0$ | Nilpotent generator of the unipotent family |
 | $e_0+kn$, $N=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
@@ -104,4 +100,3 @@ The integral biquaternions, with coefficients in the Gaussian integers, form an 
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the finite groups of unit quaternions, the $24$-cell and the quaternion orders.
 - John H. Conway and Neil J. A. Sloane, *Sphere Packings, Lattices and Groups* (Springer, 3rd ed. 1999), for the integral quaternion orders, their unit groups and the root systems realised in them.
 - Marie-France Vignéras, *Arithmétique des algèbres de quaternions* (Springer Lecture Notes in Mathematics 800, 1980), for the order theory of the quaternion algebra, maximality and the arithmetic of the norm.
-- John McKay, *Graphs, singularities and finite groups* (Proceedings of Symposia in Pure Mathematics 37, 1980), for the correspondence between the finite subgroups of $SU(2)$ and the simply laced root systems.

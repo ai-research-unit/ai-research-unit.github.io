@@ -166,16 +166,6 @@ Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate
 
 Each is a real slice whose complexification is $(\mathbb{B},N)$. The full realification is split; the Lorentzian slice is $\mathbb{M}_+$, and up to sign $\mathbb{M}_-$.
 
-Either Lorentzian slice is thereby identified with Minkowski space. On $\mathbb{M}_-$, in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3$, the restricted norm reads $N(\tilde{Q})=-(q'_0)^2+q_1^2+q_2^2+q_3^2$, and its null set,
-$$
-N(\tilde{Q})=0\iff(q'_0)^2=q_1^2+q_2^2+q_3^2,
-$$
-is the **light cone**, a double cone with apex at the origin. Intersecting with the unit sphere of $\mathbb{M}_-\cong\mathbb{R}^4$ gives $q'_0=\pm1/\sqrt2$ and $q_1^2+q_2^2+q_3^2=1/2$, so the link of the light cone is the disjoint union
-$$
-S^2\sqcup S^2,
-$$
-one sphere per nappe, and the complement of the light cone in $\mathbb{M}_-$ has exactly three connected components, the future timelike, past timelike and spacelike regions. The complex null cone $\mathcal{N}$ of the whole algebra has real dimension $6$ (*Biquaternion Null Quadric and Projective Geometry*); its intersection with either Lorentzian slice is this real cone of dimension $3$.
-
 ## The Associated Clifford Algebra
 
 With the series convention $v^2=N(v)\cdot1$,

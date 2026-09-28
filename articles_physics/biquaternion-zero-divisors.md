@@ -47,7 +47,7 @@ Combining the invertibility criterion with the criterion above, the elements of 
 
 So the zero divisors are exactly the nonzero elements on which the biquaternion norm vanishes, and the units are exactly the elements on which it does not.
 
-**Physical reading.** This is the framework's causal trichotomy stated algebraically. An element with $N\neq0$ can be inverted, rescaled and boosted: it is a frame. An element with $N = 0$ cannot: it is a light-like direction, and no rescaling of it is a frame. The unit group $\mathbb{B}^\times$ is where the framework's transformations live; the null cone is its boundary.
+**Physical reading.** This is the framework's causal trichotomy stated algebraically. An element with $N\neq0$ can be inverted, rescaled and boosted: it is a frame. An element with $N = 0$ cannot: it is a light-like direction, and no rescaling of it is a frame. The unit group $\mathbb{B}^\times$ is where the framework's transformations live; the null elements are where invertibility fails.
 
 ### The Algebra Is Not a Division Algebra
 
@@ -190,7 +190,7 @@ An element has the form $\tilde{Q} = Q_0e_0$, and $N(\tilde{Q}) = Q_0^2$ vanishe
 
 ### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
-For pure $\tilde{Q} = Q_1e_1+Q_2e_2+Q_3e_3$ the biquaternion norm $Q_1^2+Q_2^2+Q_3^2$ is complex-valued and vanishes on a **complex cone of complex dimension 2** in $\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}^3$ — a real cone of real dimension 4 in a real space of dimension 6. Its nonzero elements are exactly the **pure zero divisors**: vanishing scalar part, square zero, i.e. the nilpotents. The cone has real codimension 2, not the codimension 1 of a double cone as in $\mathbb{M}_\pm$. The complement of the cone is connected.
+For pure $\tilde{Q} = Q_1e_1+Q_2e_2+Q_3e_3$ the biquaternion norm $Q_1^2+Q_2^2+Q_3^2$ is complex-valued and vanishes on a **complex cone of complex dimension 2** in $\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}^3$ — a real cone of real dimension 4 in a real space of dimension 6. Its nonzero elements are exactly the **pure zero divisors**: vanishing scalar part, square zero, i.e. the nilpotents. The cone has real codimension 2, not the codimension 1 of a double cone as in $\mathbb{M}_\pm$.
 
 **Physical reading.** This is the cone of parabolic generators: purely vectorial null elements. Its codimension 2 (rather than 1) is the reason the pure null elements do not split the vector subspace into two causal parts the way the light cone splits the Hermitian sectors.
 
@@ -214,7 +214,7 @@ $$
 N(\tilde{Q}) = q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2 .
 $$
 
-This vanishes for the nonzero elements with $q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2$: a **double cone** in the four-dimensional real space $\mathbb{M}_+$, of dimension 3 as a submanifold. Outside the cone, $N\neq0$ and the elements are invertible, and the complement has **three** connected components:
+This vanishes for the nonzero elements with $q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2$: a **double cone** in the four-dimensional real space $\mathbb{M}_+$. Outside the cone, $N\neq0$ and the elements are invertible, and the outside falls into **three** regions:
 
 - the **future timelike region** ($q_0>0$, $q_0^2>(q'_1)^2+(q'_2)^2+(q'_3)^2$, with $N>0$);
 - the **past timelike region** ($q_0<0$, same inequality, with $N>0$);
@@ -228,13 +228,13 @@ $$
 N(\tilde{Q}) = -(q'_0)^2+q_1^2+q_2^2+q_3^2 .
 $$
 
-Again a **double cone**, defined by $(q'_0)^2 = q_1^2+q_2^2+q_3^2$, with $N\neq0$ and invertibility outside it and **three** connected components:
+Again a **double cone**, defined by $(q'_0)^2 = q_1^2+q_2^2+q_3^2$, with $N\neq0$ and invertibility outside it, and the outside falls into **three** regions:
 
 - the **spacelike region** ($q_1^2+q_2^2+q_3^2>(q'_0)^2$, with $N>0$);
 - the **future timelike region** ($q'_0>0$, $(q'_0)^2>q_1^2+q_2^2+q_3^2$, with $N<0$);
 - the **past timelike region** ($q'_0<0$, same inequality, with $N<0$).
 
-**Physical reading.** The double cones in $\mathbb{M}_\pm$ are the framework's light cones, and the connected components of the complement are the causal regions. The two sectors carry the two coordinate conventions, and the sign of the biquaternion norm records which: the **informational** coordinate $ct'\,e_0+i\mathbf{x}'$ is Hermitian, so it lies in $\mathbb{M}_+$ and a timelike event has $N = c^2t'^2-|\mathbf{x}'|^2>0$, while the **material** coordinate $ict\,e_0+\mathbf{x}$ is anti-Hermitian, lies in $\mathbb{M}_-$, and a timelike event has $N = -c^2t^2+|\mathbf{x}|^2<0$. In both sectors the two timelike components are the two sheets of the causal region, separated by the cone, and the spacelike complement is the third. That the causal structure is the *component structure of a group complement* is the reason the framework can speak of the future and past sheets as group-theoretic objects rather than as conventions.
+**Physical reading.** The double cones in $\mathbb{M}_\pm$ are the framework's light cones, and the three regions outside them are the causal regions. The two sectors carry the two coordinate conventions, and the sign of the biquaternion norm records which: the **informational** coordinate $ct'\,e_0+i\mathbf{x}'$ is Hermitian, so it lies in $\mathbb{M}_+$ and a timelike event has $N = c^2t'^2-|\mathbf{x}'|^2>0$, while the **material** coordinate $ict\,e_0+\mathbf{x}$ is anti-Hermitian, lies in $\mathbb{M}_-$, and a timelike event has $N = -c^2t^2+|\mathbf{x}|^2<0$. In both sectors the two timelike regions are the two sheets of the causal region, separated by the cone, and the spacelike region is the third. That the causal structure is fixed by the sign of the norm is the reason the framework can speak of the future and past sheets as algebraic objects rather than as conventions.
 
 ### Summary of the Distribution
 
@@ -274,7 +274,7 @@ A non-pure $\tilde{Q}$ with $Q_0\neq0$ is a zero divisor if and only if $N(\tild
 
 The zero divisor set is the union of the two families, and they are **disjoint** (they are separated by whether $Q_0$ vanishes, and the origin is excluded from both). Their union is the zero divisor set $\mathcal{Z}$.
 
-As complex cones, the two families have different dimensions: the pure family (the nilpotent cone) is a complex cone of complex dimension 2, real dimension 4, being one complex equation in $(Q_1,Q_2,Q_3)$; the non-pure family is an open dense subset of the full zero divisor cone (the condition $Q_0\neq0$ is open, and its closure is the whole cone), of complex dimension 3, real dimension 6, matching the full set.
+As complex cones, the two families have different dimensions: the pure family (the nilpotent cone) is a complex cone of complex dimension 2, real dimension 4, being one complex equation in $(Q_1,Q_2,Q_3)$; the non-pure family is a complex cone of complex dimension 3, real dimension 6, matching the full set.
 
 ## The Zero Divisor Set
 
@@ -286,21 +286,21 @@ $$
 
 **Basic properties.**
 
-- The closed cone $\{N = 0\}$ is the zero-set of the polynomial map $N:\mathbb{B}\to\mathbb{C}$, hence closed; $\mathcal{Z}$ is that cone with the origin removed, and so is **not** closed — a closed cone minus its apex.
+- $\mathcal{Z}$ is the null cone $\{N = 0\}$ with the origin removed: the nonzero elements on which the norm vanishes.
 - $\mathcal{Z}$ is a cone away from the origin: if $\tilde{Q}\in\mathcal{Z}$ and $\alpha\in\mathbb{C}\setminus\{0\}$, then $\alpha\tilde{Q}\in\mathcal{Z}$, since $N(\alpha\tilde{Q}) = \alpha^2N(\tilde{Q}) = 0$.
 
-**Dimension.** $\mathcal{Z}$ has **real dimension 6** (complex dimension 3). The biquaternion norm is one complex equation in the four complex coefficients — two real equations in eight real coordinates — so its solution set is a complex hypersurface in $\mathbb{C}^4$ of complex dimension 3. The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real 6-manifold away from the origin.
+**Dimension.** $\mathcal{Z}$ has **real dimension 6** (complex dimension 3). The biquaternion norm is one complex equation in the four complex coefficients — two real equations in eight real coordinates — so its solution set is a complex hypersurface in $\mathbb{C}^4$ of complex dimension 3, hence real dimension 6.
 
 ## Summary
 
 The zero divisors of the biquaternion algebra are the nonzero elements on which the biquaternion norm vanishes. They split into two families:
 
 - the **pure zero divisors**, with vanishing scalar part and $Q_1^2+Q_2^2+Q_3^2 = 0$: exactly the nonzero nilpotents, with square zero and annihilator containing themselves; a complex cone of real dimension 4; physically the parabolic generators, the purely vectorial null directions;
-- the **non-pure zero divisors**, with nonzero scalar part and $Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 0$: exactly the nonzero complex multiples of the nontrivial idempotents, with square $2Q_0\tilde{Q}$ and annihilator containing $\tilde{Q}-2Q_0e_0$; an open dense subset of the full cone; physically the light-cone elements of the two sectors, whose normalised form is a pure state direction — the photon's momentum being the instance in point.
+- the **non-pure zero divisors**, with nonzero scalar part and $Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 0$: exactly the nonzero complex multiples of the nontrivial idempotents, with square $2Q_0\tilde{Q}$ and annihilator containing $\tilde{Q}-2Q_0e_0$; a complex cone of real dimension 6; physically the light-cone elements of the two sectors, whose normalised form is a pure state direction — the photon's momentum being the instance in point.
 
 The idempotents appearing here — trivial, Hermitian and general, with their bijection with the roots of $-1$ — are classified in *Biquaternion Idempotents and Projections*.
 
-Of the six distinguished subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors (phases, rotations and pure boosts are never null), while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone — the light cone of the informational and of the material sector, whose complement's three components are the future timelike, past timelike and spacelike regions — and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone of real dimension 4. A generic zero divisor lies in none of the six.
+Of the six distinguished subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors (phases, rotations and pure boosts are never null), while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone — the light cone of the informational and of the material sector, whose three outer regions are the future timelike, past timelike and spacelike regions — and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone of real dimension 4. A generic zero divisor lies in none of the six.
 
 The zero divisor set is a complex cone of complex dimension 3, real dimension 6, in $\mathbb{B}\cong\mathbb{C}^4$, with the origin removed.
 

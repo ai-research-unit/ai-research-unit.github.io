@@ -146,16 +146,6 @@ and their tensor product is the **vector representation** $(\tfrac{1}{2}, \tfrac
 
 Two dualities must be distinguished. The defining module is **self-dual** as a representation of $SL(2,\mathbb{C})$: since $\det = 1$, the alternating form $\varepsilon(u,v) = u_1 v_2 - u_2 v_1$ is invariant and identifies $V_{1/2}^{*}$ with $V_{1/2}$, so $V_{1/2}^{*} \cong V_{1/2}$. The **conjugate** $\overline{V_{1/2}}$, by contrast, is not isomorphic to $V_{1/2}$; it is the other chirality. Finally, $-e_0$ acts as $-1$ on $V_{1/2}$, so the defining representation, and every $(m,n)$ with $m+n$ half-integral, is a genuine spin representation that does not descend to $SO^{+}(1,3)$.
 
-**The algebra as a mixed spinor.** As a module over the complexified Lorentz algebra the algebra itself is the tensor product of the two Weyl spinors,
-$$
-\mathbb{B}\cong\Delta^+\otimes\Delta^-,\qquad \dim_{\mathbb{C}}\Delta^\pm=2,
-$$
-so a biquaternion is a **mixed spinor** with one unprimed and one primed index, $A_\alpha{}^{\dot\beta}$, and the null condition $N(\tilde{Q})=0$ is exactly factorisability,
-$$
-A_\alpha{}^{\dot\beta}=\phi_\alpha\,\pi^{\dot\beta},\qquad \phi\in\Delta^+,\ \pi\in\Delta^- .
-$$
-In the matrix realization $A=uv^{T}$ the column $u$ is the unprimed spinor $\phi$ and the row $v^{T}$ the primed spinor $\pi$; fixing $\phi$ and varying $\pi$ traces $\mathbb{P}(\Delta^-)=\mathbb{P}^1$, fixing $\pi$ and varying $\phi$ traces $\mathbb{P}(\Delta^+)=\mathbb{P}^1$, and these are the two rulings of the projective null quadric. The two rulings correspond to the two chiralities, since the complexified algebra splits into the two chirality eigenspaces; which half-spin module is named $\Delta^+$ is a convention.
-
 ## Tensor Products and the Clebsch–Gordan Rule
 
 Group representations tensor with the diagonal action $g \cdot (v \otimes w) = (gv) \otimes (gw)$. For the polynomial representations of $SL(2,\mathbb{C})$ the Clebsch–Gordan rule is

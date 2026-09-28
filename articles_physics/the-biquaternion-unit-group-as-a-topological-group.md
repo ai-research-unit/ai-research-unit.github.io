@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article describes the group of units $\mathbb{B}^\times$ of the biquaternion algebra as a topological group: its polar decomposition, its retractions onto the compact subgroups, the structure of those subgroups, and its homotopy groups. It uses the algebra and the unitary elements of *Biquaternion Algebra*, the biquaternion norm and the invertibility criterion of *Biquaternion Norm and Invertibility*, and the ambient topology and the null cone of *Biquaternion Topology*. The Lorentz action this group carries is *Biquaternion Rotations and Lorentz Transformations*, and the exponential and the Lie-group correspondence are *Biquaternion Lie Group and Exponential Structure*.
+This article describes the group of units $\mathbb{B}^\times$ of the biquaternion algebra as a topological group: its polar decomposition, its retractions onto the compact subgroups, the structure of those subgroups, and its homotopy groups. It uses the algebra and the unitary elements of *Biquaternion Algebra*, the biquaternion norm and the invertibility criterion of *Biquaternion Norm and Invertibility*, and the ambient topology and the null cone of *Biquaternion Topology*. The exponential and the Lie-group correspondence are *Biquaternion Lie Group and Exponential Structure*, and the motions the group carries are *Biquaternion Rotations and Lorentz Transformations*.
 
 **Scope.** This is the topological part of the Lie-theoretic block. The Lie algebra is in *Biquaternion Lie Algebra*, the topology is here, and the Lie-group theory is in *Biquaternion Lie Group and Exponential Structure*; the motions the group generates are geometry. Nothing here is a statement about the smooth structure, which belongs with the Lie group.
 
@@ -28,7 +28,7 @@ is a subgroup, the **norm-one group**. It is a noncompact real $6$-manifold.
 
 **Two unit spheres.** There are two candidate "unit spheres" in $\mathbb{B}$, and only one of them is a group. The Euclidean sphere $\|\tilde{Q}\|_E=1$ is a genuine sphere $S^7$ but is not a group, since $\|\cdot\|_E$ is not multiplicative and it contains zero divisors (*Biquaternion Topology*, §*The Euclidean unit sphere*). The level set $N(\tilde{Q})=1$ is a group but is neither Euclidean nor compact. The condition that makes a level set of a form on $\mathbb{B}$ a subgroup is $N=1$, not $\|\tilde{Q}\|_E=1$.
 
-**Physical reading.** $\mathbb{B}^\times$ is the group on which the Lorentz action lives: an invertible element is a Lorentz transformation, and the norm-one slice is the slice in which the determinant condition is imposed. The distinction between the two unit spheres is the distinction between the normalisation of a quantum state (Hermitian, $\|\cdot\|_E=1$) and the normalisation of a Lorentz transformation (biquaternion, $N=1$). The units are also what acts on the material four-position $\tilde{Q}=ict\,e_0+\mathbf{x}$: the boundary of $\mathbb{B}^\times$ is the null cone, whose intersection with that sector is the light cone $c^2t^2=\mathbf{x}^2$.
+**Physical reading.** The invertible elements are the objects on which the motions act, and the norm-one slice is the slice in which the norm is normalised. The distinction between the two unit spheres is the distinction between the normalisation of a quantum state (Hermitian, $\|\cdot\|_E=1$) and the normalisation of a motion (biquaternion, $N=1$). The units are also what acts on the material four-position $\tilde{Q}=ict\,e_0+\mathbf{x}$: the boundary of $\mathbb{B}^\times$ is the null cone, whose intersection with that sector is the light cone $c^2t^2=\mathbf{x}^2$.
 
 ## The Retraction of $\mathbb{B}^\times$ onto Its Maximal Compact Subgroup
 
@@ -44,7 +44,7 @@ $$
 \mathrm{U}(\mathbb{B})=\{\tilde{Q}\in\mathbb{B} : \tilde{Q}^\dagger\tilde{Q}=e_0\} .
 $$
 
-**Physical reading.** The deformation is the removal of the boost: the Hermitian positive-definite factor $\tilde{P}$ carries the boost and the unitary factor $\tilde{U}$ the rotation and the phase, so retracting $\tilde{P}$ to the identity leaves the rotation and the phase untouched. This is why the topology of the Lorentz group is the topology of its maximal compact subgroup, and why the boosts contribute no homotopy. In the $ict$ convention the removal is the removal of the time–space mixing: on the material four-position $\tilde{Q}=ict\,e_0+\mathbf{x}$ the factor $\tilde{P}$ is what carries the rapidity and moves $ict$ toward $x_k$, and setting $\tilde{P}=e_0$ sets the rapidity to zero and leaves a pure rotation of $\mathbf{x}$.
+**Physical reading.** The deformation is the removal of the boost: the Hermitian positive-definite factor $\tilde{P}$ carries the boost and the unitary factor $\tilde{U}$ the rotation and the phase, so retracting $\tilde{P}$ to the identity leaves the rotation and the phase untouched. This is why the topology of the motion group is the topology of its maximal compact subgroup, and why the non-compact directions contribute no homotopy. In the $ict$ convention the removal is the removal of the time–space mixing: on the material four-position $\tilde{Q}=ict\,e_0+\mathbf{x}$ the factor $\tilde{P}$ is what carries the rapidity and moves $ict$ toward $x_k$, and setting $\tilde{P}=e_0$ sets the rapidity to zero and leaves a pure rotation of $\mathbf{x}$.
 
 ## The Retraction of the Norm-One Group onto Its Maximal Compact Subgroup
 
@@ -58,11 +58,11 @@ The denominator is a positive real number, so $\tilde{P}_t$ is Hermitian positiv
 
 Thus $\mathbb{B}^\times_1\simeq S^3$: it is connected and simply connected with $\pi_3\cong\mathbb{Z}$ and the homotopy type of $S^3$, but is not homeomorphic to $S^3$, being a noncompact real $6$-manifold. The norm-one group is therefore simply connected, of homotopy type $S^3$.
 
-**Physical reading.** On the norm-one slice the Lorentz transformation is normalised, and the slice retracts onto the unit quaternions: the topology that remains is exactly the topology of the rotation group's double cover. A closed loop in $\mathbb{B}^\times_1$ is contractible, so the norm-one slice carries no winding number; the winding appears only in the full group, through the phase.
+**Physical reading.** On the norm-one slice the norm is normalised, and the slice retracts onto the unit quaternions, so the topology that remains is that of the unit quaternions. A closed loop in $\mathbb{B}^\times_1$ is contractible, so the norm-one slice carries no winding number; the winding appears only in the full group, through the phase.
 
 ## The Structure of the Maximal Compact Subgroup
 
-The unit quaternions form $S^3$; $S^3$ is compact, connected and simply connected, the double cover of the rotation group $SO(3)$.
+The unit quaternions form $S^3$; $S^3$ is compact, connected and simply connected.
 
 Every unitary biquaternion $\tilde{U}$ is a scalar multiple of a unit quaternion: if $N(\tilde{U})=z\in S^1$ and $\zeta^2=z$, then $\tilde{A}=\zeta^{-1}\tilde{U}$ has $N(\tilde{A})=1$ and $\tilde{U}=\zeta\tilde{A}$. Hence
 
@@ -80,7 +80,7 @@ with $\{\pm e_0\}$ acting diagonally. The biquaternion norm $N:\mathrm{U}(\mathb
 
 The central scalars form a maximal torus $T^2\cong S^1\times S^1\subset\mathrm{U}(\mathbb{B})$. It is **not** true that $\mathrm{U}(\mathbb{B})$ deformation retracts onto $T^2$: that would give $\pi_1(\mathrm{U}(\mathbb{B}))\cong\pi_1(T^2)$, but these are $\mathbb{Z}$ and $\mathbb{Z}^2$. Every element of $\mathrm{U}(\mathbb{B})$ does lie in some maximal torus, and the quotient is $\mathrm{U}(\mathbb{B})/T^2\cong P^1\cong S^2$, so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^2$ with fibre $T^2$; and $\mathrm{U}(\mathbb{B})$ is not homotopy equivalent to $T^2$, being homeomorphic to $S^1\times S^3$.
 
-**Physical reading.** The two factors of the maximal compact subgroup are the two things a unitary element carries: the $S^3$ factor is the spatial rotation, the double cover of $SO(3)$ that spin represents, and the $S^1$ factor is the central phase, the global phase of a quantum state, the phase of the scalar line $\mathbb{C}e_0$, which is also the line that carries the two times $ct'$ and $ict$. The identification $\mathrm{U}(\mathbb{B})\cong S^1\times S^3$ therefore says that the compact part of the Lorentz group is a rotation together with a phase, and the two are not independent as a group, only as a space: the quotient by $\{\pm e_0\}$ is what makes the rotation a rotation and not a spinor. The maximal torus is the pair of commuting rotations of the phase and of an axis, and the sphere $\mathrm{U}(\mathbb{B})/T^2\cong S^2$ is the sphere of rotation axes.
+**Physical reading.** The two factors of the maximal compact subgroup are the two things a unitary element carries: the $S^3$ factor is the unit quaternions, and the $S^1$ factor is the central phase, the global phase of a quantum state, the phase of the scalar line $\mathbb{C}e_0$, which is also the line that carries the two times $ct'$ and $ict$. The identification $\mathrm{U}(\mathbb{B})\cong S^1\times S^3$ therefore says that the compact part of the group is a unit quaternion together with a phase, and the two are not independent as a group, only as a space: the quotient by $\{\pm e_0\}$ is what turns the unit quaternion into a rotation and not a spinor. The maximal torus is the pair of commuting factors, of the phase and of an axis, and the sphere $\mathrm{U}(\mathbb{B})/T^2\cong S^2$ is the sphere of axes.
 
 ## Homotopy Groups and Generators
 
@@ -104,7 +104,7 @@ $$
 
 while $S^3$ and $\mathbb{B}^\times_1$ are their own universal covers. By Hurewicz, $H_1(\mathrm{U}(\mathbb{B}))\cong H_1(\mathbb{B}^\times)\cong\mathbb{Z}$ and $H_1(S^3)=H_1(\mathbb{B}^\times_1)=0$; and $\pi_n(\mathrm{U}(\mathbb{B}))\cong\pi_n(S^3)$ for $n\ge2$.
 
-**Physical reading.** The factor $\pi_1(\mathbb{B}^\times)\cong\mathbb{Z}$ is the winding of the phase, the homotopy invariant that a closed loop of transformations can carry, and it is the topological home of the winding numbers the framework uses. The factor $\pi_3\cong\mathbb{Z}$ is the winding of the rotation, the invariant of a Skyrme field, and it is generated by the identity map of the unit quaternions because a unit quaternion *is* a map from the spatial sphere to the group. The universal cover $\mathbb{R}\times S^3$ is the statement that unwinding the phase and unwinding the rotation are independent: the first gives the real line, the second gives the spin cover.
+**Physical reading.** The factor $\pi_1(\mathbb{B}^\times)\cong\mathbb{Z}$ is the winding of the phase, the homotopy invariant that a closed loop of transformations can carry, and it is the topological home of the winding numbers the framework uses. The factor $\pi_3\cong\mathbb{Z}$ is the winding of the unit quaternions, the invariant of a Skyrme field, and it is generated by the identity map of the unit quaternions because a unit quaternion *is* a map from the spatial sphere to the group. The universal cover $\mathbb{R}\times S^3$ is the statement that unwinding the phase and unwinding the rotation are independent: the first gives the real line, the second gives the spin cover.
 
 ## Summary
 
@@ -122,10 +122,10 @@ The group of units $\mathbb{B}^\times$ is the complement of the null cone, of re
 | $\mathrm{U}(\mathbb{B})\cong S^1\times S^3$ | Homeomorphism, not a group isomorphism |
 | $S^1$ factor | Central phase; the phase of the scalar line $\mathbb{C}e_0$ that carries $ct'+ict$ |
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material four-position; its light cone $c^2t^2=\mathbf{x}^2$ is the boundary of $\mathbb{B}^\times$ |
-| $S^3$ factor | Unit quaternions; double cover of the rotation group |
+| $S^3$ factor | Unit quaternions |
 | $T^2\cong S^1\times S^1$ | Maximal torus; not a deformation retract |
 | $\pi_1(\mathbb{B}^\times)\cong\mathbb{Z}$ | Winding of the phase |
-| $\pi_3\cong\mathbb{Z}$ | Winding of the rotation; the Skyrme invariant |
+| $\pi_3\cong\mathbb{Z}$ | Winding of the unit quaternions; the Skyrme invariant |
 | $\widetilde{\mathbb{B}^\times}\cong\mathbb{R}\times S^3$ | Universal cover |
 
 ## Further Reading

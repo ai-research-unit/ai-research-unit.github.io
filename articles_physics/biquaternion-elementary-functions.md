@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article introduces the elementary functions of a biquaternion variable. It follows *Biquaternion Algebra*, which defined the biquaternion algebra $\mathbb{B}$, its conjugations and its six distinguished subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm and the power functions, and to compute them in closed form. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials of the rotation and hyperbolic-rotation directions. Its Lie-group consequences — the group of units, the norm-one group and the Lorentz group — are in *Biquaternion Lie Group and Exponential Structure*.
+This article introduces the elementary functions of a biquaternion variable. It follows *Biquaternion Algebra*, which defined the biquaternion algebra $\mathbb{B}$, its conjugations and its six distinguished subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm and the power functions, and to compute them in closed form. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the trace-free part. Its Lie-group consequences — the group of units and the norm-one group — are in *Biquaternion Lie Group and Exponential Structure*.
 
 The key structural fact is that the elementary functions of a biquaternion are determined by the **powers** of the biquaternion, and the powers simplify dramatically in two cases: when the vector part has a nonzero **complex norm**, and when the vector part is **nilpotent**. These two cases cover all possibilities, and they lead to two regimes, the **oscillatory regime** and the **nilpotent regime**, each of which is one of the three kinds of motion the framework carries.
 
@@ -263,27 +263,27 @@ the eigenvalues then being $2\pi i(k\pm j)/2$. If $B = 0$ but $\mathbf{Q} \neq 0
 
 **Physical reading: the phase ambiguity.** The kernel is the statement that the phase of a field is defined only up to $2\pi i$, and the example $\pi i\,e_0 + \pi e_3$ is the case where a physical representative is a zero divisor — a lightlike element — although its exponential is the identity. This is the algebraic ancestor of the unobservability of the global phase: a field and its exponential differ by an element of the kernel, and no measurement of a phase can detect it. The fact that the kernel contains zero divisors is why the lift of the phase to the algebra, not only to the unit group, has to be watched.
 
-### The Exponential of a Rotation and of a Hyperbolic Rotation
+### The Exponential in the Two Real Directions
 
 Let $\hat{n}$ be a real unit vector part, so that $\hat{n}^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat{n}$ and the vector directions $\psi\, i\hat{n}$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *Biquaternion Lie Algebra*.
 
-**Rotations (the bivector directions).** For real $\theta$,
+**The bivector directions.** For real $\theta$,
 
 $$
 \exp(\theta\hat{n}) = \cos\theta\, e_0 + \sin\theta\, \hat{n},
 $$
 
-a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. It rotates the vector part: conjugation by $\exp(\theta\hat{n})$ rotates any real vector $\mathbf{v}$ about the axis $\hat{n}$ through $2\theta$, the double-cover relation $S^3 \to SO(3)$. The family $\theta \mapsto \exp(\theta\hat{n})$ has period $2\pi$ in $S^3$, since $\exp(2\pi\hat{n}) = e_0$; the induced rotation of the vector part has angle $2\theta$, so it is the identity already at $\theta = \pi$, where $\exp(\pi\hat{n}) = -e_0$, while the spinor returns to $e_0$ only after a $4\pi$ rotation.
+a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\hat{n}) = e_0$, and at the half-period $\exp(\pi\hat{n}) = -e_0$.
 
-**Hyperbolic rotations (the vector directions).** With $(i\hat{n})^2 = +e_0$ and rapidity $\psi \in \mathbb{R}$,
+**The vector directions.** With $(i\hat{n})^2 = +e_0$ and real parameter $\psi \in \mathbb{R}$,
 
 $$
 \exp(\psi\, i\hat{n}) = \cosh\psi\, e_0 + \sinh\psi\, i\hat{n}.
 $$
 
-This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the rotation family it is not periodic and is unbounded as $\psi \to \pm\infty$; it is the rotor of a Lorentz transformation along $\hat{n}$ with rapidity $\psi$. The set of hyperbolic rotations is not a subgroup: the product of two hyperbolic rotations in non-parallel directions is a hyperbolic rotation followed by a rotation.
+This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the bivector family it is not periodic and is unbounded as $\psi \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.
 
-**Comparison.** A general exponent is $\tilde{Q} = q + iq'$ with $q, q'$ real vector parts; the rotation and hyperbolic families commute only when $q$ and $q'$ are parallel, since $[q, iq'] = 2i\,(q \times q')$, and in general the closed form of the exponential with $Q_0 = 0$ mixes the two behaviours.
+**Comparison.** A general exponent is $\tilde{Q} = q + iq'$ with $q, q'$ real vector parts; the two families commute only when $q$ and $q'$ are parallel, since $[q, iq'] = 2i\,(q \times q')$, and in general the closed form of the exponential with $Q_0 = 0$ mixes the two families.
 
 **Physical reading: elliptic and hyperbolic motions.** These two families are the two canonical motions of the framework. The rotation family is the compact one, periodic, exponent of a bivector, and its $4\pi$ return is the spinorial double cover, the fact that a spinor needs a full turn of $4\pi$ to come back; its geometric home is *Biquaternion Spin Geometry* and *Biquaternion Rotations and Lorentz Transformations*. The hyperbolic family is the non-compact one, the exponent of a vector direction, unbounded as the rapidity tends to infinity, and it is the boost of special relativity, the home of *Biquaternion Relativity* and the Lorentz transformations of *Biquaternion Lorentzian and Conformal Geometry*. Both have norm one, so the unit group carries them, and the fact that the product of two non-parallel boosts is a boost times a rotation is the Wigner rotation, the content of the comparison above.
 

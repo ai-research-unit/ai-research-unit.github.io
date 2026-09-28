@@ -2014,7 +2014,7 @@
 <!-- ideals in a commutative algebra; the two-sided ideals and the two minimal ideals $\mathbb{R}e_\pm$; the Peirce decomposition of $\mathbb{D}$; the idempotents as matrix units in the idempotent basis; the lattice of ideals; the failure of simplicity and the reason, against the simplicity of $\mathbb{B}$ over $\mathbb{C}$. -->
 
 ### <a href="articles_maths/split-complex-zero-divisors.html">Split-Complex Zero Divisors</a>
-<!-- definition and criterion; the zero divisor set as the null cone $\{a^2=b^2\}$ and the two null lines $\mathbb{R}(1\pm j)$; the structure of the two families; the relation to the idempotents and to the isotropic cone; the distribution of the zero divisors; comparison with the biquaternion and split-biquaternion cases. The criterion by the vanishing of the norm and the closedness of the set need a distance and are in *Split-Complex Norm and Invertibility*. -->
+<!-- definition and criterion; the zero divisor set as the null cone $\{a^2=b^2\}$ and the two null lines $\mathbb{R}(1\pm j)$; the structure of the two families; the relation to the idempotents and to the isotropic cone; the distribution of the zero divisors; comparison with the biquaternion and split-biquaternion cases. The criterion by the vanishing of the norm needs a distance and is in *Split-Complex Norm and Invertibility*. -->
 
 ### <a href="articles_maths/worked-examples-in-the-split-complex-algebra.html">Worked Examples in the Split-Complex Algebra</a>
 <!-- the computed case: the two involutions and their fixed-point subspaces; the idempotents and the two minimal ideals; explicit zero-divisor pairs $ab=0$ with $a,b\neq0$; worked hyperbolic and parabolic elements. The norm criterion is a form and a distance and belongs to *Split-Complex Norm and Invertibility*. -->
@@ -2367,18 +2367,15 @@
 
 
 ### <a href="articles_maths/biquaternion-roots-of-minus-one.html">Biquaternion Roots of Minus One</a>
-<!-- the problem and its reduction by the vector-part decomposition to two cases; the pure roots; the classification of the solutions of $\xi^2=-1$; the degenerate cases; the relation to the idempotents and to the zero divisors; the dimensions of the two sets; the roots of $+1$. The boundary statement that the real roots are the limit of the non-trivial family is a limit and is made in the topology group. -->
+<!-- the problem and its reduction by the vector-part decomposition to two cases; the pure roots; the classification of the solutions of $\xi^2=-1$; the degenerate cases, with the real roots as the case $d=0$ of the non-trivial formula; the relation to the idempotents and to the zero divisors, with the roots exhibited as units; the free real parameters of the three families; the roots of $+1$. -->
 
 
 ### <a href="articles_maths/biquaternion-zero-divisors.html">Biquaternion Zero Divisors</a>
-<!-- definition; the two families, pure and non-pure; the square of a pure and of a non-pure biquaternion; the criterion in terms of the scalar part, which needs no norm; the associated idempotent; the structure of each family and the comparison table; the union; the zero divisor set. The criterion by the vanishing of the norm, and the closedness of the set, need a distance and are in *Biquaternion Norm and Invertibility*. -->
+<!-- definition; the two families, pure and non-pure; the square of a pure and of a non-pure biquaternion; the criterion in terms of the scalar part, which needs no norm; the associated idempotent; the structure of each family and the comparison table; the union; the zero divisor set. The criterion by the vanishing of the norm needs a distance and is in *Biquaternion Norm and Invertibility*. -->
 
 ### <a href="articles_maths/biquaternion-lie-algebra.html">Biquaternion Lie Algebra</a>
-<!-- the commutator bracket $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$; the trace functional and the trace-free part; $\mathbb{B}$ as $\mathrm{GL}(2,\mathbb{C})$ over $\mathbb{C}$, of complex dimension $4$ and real dimension $8$; the trace-free part as $\mathrm{SL}(2,\mathbb{C})$ of real dimension $6$; the derived subalgebra and its identity with the vector subspace; the bracket of vectors as the cross product $[\mathbf{P},\mathbf{Q}]=2\mathbf{P}\times\mathbf{Q}$; the action of the bracket on each of the six subspaces; the real form and its two three-dimensional real summands; the adjoint maps $\operatorname{ad}_{\tilde{Q}}$ as the infinitesimal automorphisms. The metric identification of the real form with the Lorentz algebra is in *Biquaternion Lie Group and Exponential Structure*; the group and the exponential are there too; the motions are in *Biquaternion Rotations and Lorentz Transformations*. -->
+<!-- the commutator bracket $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$; the trace functional and the trace-free part; $\mathbb{B}$ as $\mathrm{GL}(2,\mathbb{C})$ over $\mathbb{C}$, of complex dimension $4$ and real dimension $8$; the trace-free part as $\mathrm{SL}(2,\mathbb{C})$ of real dimension $6$; the derived subalgebra and its identity with the vector subspace; the bracket of vectors as the cross product $[\mathbf{P},\mathbf{Q}]=2\mathbf{P}\times\mathbf{Q}$; the action of the bracket on each of the six subspaces; the real form and its two three-dimensional real summands; the adjoint maps $\operatorname{ad}_{\tilde{Q}}$. The group and the exponential are in *Biquaternion Lie Group and Exponential Structure*. -->
 
-
-### <a href="articles_maths/biquaternion-orders-and-finite-groups-of-units.html">Biquaternion Orders and Finite Groups of Units</a>
-<!-- the integral structures of the algebra: the Lipschitz and Hurwitz orders, the index two of the second over the first and its maximality; the groups of units $Q_8$ and the binary tetrahedral $2T$; the $24$-cell and its lattice symmetries; the finite subgroups of the sphere $Sp(1)$ — cyclic, binary dihedral and the binary polyhedral $2T$, $2O$, $2I$ of orders $24$, $48$, $120$; the integral biquaternions over the Gaussian integers and their infinite group of units, generated by a nilpotent direction. -->
 
 ### <a href="articles_maths/worked-examples-in-the-biquaternion-algebra.html">Worked Examples in the Biquaternion Algebra</a>
 <!-- the flagship computed case: the basis products of $\mathbb{B}$ written out; the six distinguished subspaces exhibited on a concrete element; the four conjugations on that element; the idempotents and the two minimal left ideals; explicit zero-divisor pairs $ab=0$ with $a,b\neq0$; the centre exhibited; $\mathbb{C}^2$ realised as a left ideal, hence as a $\mathbb{B}$-module. -->
@@ -2399,6 +2396,9 @@
 
 ### <a href="articles_maths/the-biquaternion-unit-group-as-a-topological-group.html">The Biquaternion Unit Group as a Topological Group</a>
 <!-- $\mathbb{B}^\times$ with its group structure and its topology, open and dense as the complement of the null cone; the retraction of $\mathbb{B}^\times$ onto its maximal compact subgroup; the retraction of the norm-one group; the structure of the maximal compact subgroup; the homotopy groups, the generators and the universal cover; the connected components. This is the topological part of the Lie-theoretic block, which the boundary places in three parts: the Lie algebra in *Biquaternion Lie Algebra*, the topology here, the Lie-group theory in *Biquaternion Lie Group and Exponential Structure*. -->
+
+### <a href="articles_maths/biquaternion-orders-and-finite-groups-of-units.html">Biquaternion Orders and Finite Groups of Units</a>
+<!-- the integral structures of the algebra and their groups of units: the Lipschitz and Hurwitz orders, the index two of the second over the first and its maximality; the groups of units $Q_8$ and the binary tetrahedral $2T$; the finite subgroups of the unit sphere $Sp(1)$ — cyclic, binary dihedral and the binary polyhedral $2T$, $2O$, $2I$ of orders $24$, $48$, $120$; the integral biquaternions over the Gaussian integers and their infinite group of units, generated by a nilpotent direction. The unit criterion is the norm, which places this article in Topology. -->
 
 
 ### - Focus on Subspaces
@@ -2460,7 +2460,7 @@
 
 
 ### <a href="articles_maths/biquaternion-lie-group-and-exponential-structure.html">Biquaternion Lie Group and Exponential Structure</a>
-<!-- $\mathbb{B}^\times$, the group of units, as a Lie group over $\mathbb{R}$; the exponential, its definition by the series and its closed form; the cases of the exponential, $\nu^2 = -1, 0, +1$; its properties; the group law, $\exp(a)\exp(b)$ against $\exp(a+b)$; the surjectivity onto $GL(2,\mathbb{C})$ and the kernel; the exponential parametrisation of $\mathbb{B}^\times$ and its domain; the subgroups and the real forms; the correspondence with the Lie algebra. The Lie algebra is *Biquaternion Lie Algebra* in Algebra; the topology of $\mathbb{B}^\times$ is in Topology; the motions this group generates are in Geometry. -->
+<!-- $\mathbb{B}^\times$, the group of units, as a Lie group over $\mathbb{R}$; the exponential, its definition by the series and its closed form; the cases of the exponential, $\nu^2 = -1, 0, +1$; its properties; the group law, $\exp(a)\exp(b)$ against $\exp(a+b)$; the surjectivity onto $GL(2,\mathbb{C})$ and the kernel; the exponential parametrisation of $\mathbb{B}^\times$ and its domain; the subgroups, the centre and the real forms; the correspondence with the Lie algebra. The Lie algebra is *Biquaternion Lie Algebra* in Algebra; the topology of $\mathbb{B}^\times$ is in Topology. -->
 
 
 ### <a href="articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>
@@ -2523,9 +2523,12 @@
 ### <a href="articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>
 <!-- the isometric motions of the form: the unit sphere $Sp(1)$ and its complexification $SL(2,\mathbb{C})$; the double covers $SL(2,\mathbb{C})\to SO^+(1,3)$ and $SU(2)\to SO(3)$; the rotor and the sandwich action, the half-angle and the doubling of the angle; the two-sided action and $SO(4)$; the boosts, or hyperbolic rotations, as the isometries of the indefinite form and the rotations as those of the definite one. The reflection $\rho_v(x)=-vxv^{-1}$ with $N(v)=1$ on the Clifford vector subspace, the anticommutation criterion and the Cartan–Dieudonné generation are stated here; the general statement is *Versors, Rotors and the Sandwich Action* and *The Clifford, Pin and Spin Groups* of Part II, cited and not restated. -->
 
+### <a href="articles_maths/biquaternion-finite-groups-and-figures.html">Biquaternion Finite Groups and Figures</a>
+<!-- the discrete figures of the real slice and the rotation quotient that produces the finite groups: the unit sphere $Sp(1)=S^3$, its centre and the quotient $Sp(1)/\{\pm e_0\}\cong SO(3)$; the finite rotation groups of the plane and the three Platonic figures and their twofold preimages, the cyclic, binary dihedral and binary polyhedral groups $2T$, $2O$, $2I$; the regular $24$-cell with the Hurwitz units as vertices, and its symmetry groups $B_4$ and $F_4$; the realisation of the units as the rotations $\rho_v(x)=-vxv^{-1}$; the McKay correspondence between the five families and the simply laced Dynkin types. The abstract groups are *Biquaternion Orders and Finite Groups of Units*; the continuous motions are *Biquaternion Rotations and Lorentz Transformations*. -->
+
 
 ### <a href="articles_maths/biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>
-<!-- the full symmetry group of the algebra, wider than the isometries: $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ and $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})$; the inner automorphisms $\operatorname{Inn}(\mathbb{B})=\mathbb{B}^\times/\mathbb{C}^\times$ as the isometric motions, and the conjugate-linear outer coset as the reflection that no motion can supply; the identification of $\operatorname{Inn}(\mathbb{H})$ with the rotation group, which needs the form; the Möbius action of the projective group on the projective line and on the null quadric, with its orbits and conjugacy classes; the derivations as the infinitesimal symmetries, defined by the Leibniz rule, with $\operatorname{Der}(\mathbb{B})$ and the exponential from a derivation to an automorphism where it exists, and its failure over a general ring. The bracket and the structure of $\operatorname{Der}(\mathbb{B})$ are in *Biquaternion Lie Algebra*. -->
+<!-- the full symmetry group of the algebra, wider than the isometries: $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ and $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})$; the inner automorphisms $\operatorname{Inn}(\mathbb{B})=\mathbb{B}^\times/\mathbb{C}^\times$ as the isometric motions, and the conjugate-linear outer coset as the reflection that no motion can supply; the identification of $\operatorname{Inn}(\mathbb{H})$ with the rotation group, which needs the form; the Möbius action of the projective group on the projective line and on the null quadric, with its orbits and conjugacy classes; the derivations as the infinitesimal symmetries, defined by the Leibniz rule, with the inner derivations $\operatorname{ad}_{\tilde{Q}}$, $\operatorname{Der}(\mathbb{B})=\operatorname{ad}(\mathbb{B})$, the exponential from a derivation to an automorphism where it exists, and its failure over a general ring. -->
 
 
 ### <a href="articles_maths/biquaternion-lorentzian-and-conformal-geometry.html">Biquaternion Lorentzian and Conformal Geometry</a>
@@ -2537,7 +2540,7 @@
 
 
 ### <a href="articles_maths/biquaternion-geometry.html">Biquaternion Geometry</a>
-<!-- the slot overview: what geometry the biquaternion carries; the sign of the norm and the signature as the organising data; the Cayley–Klein picture, in which a geometry is its group of motions; the map to the five articles above — the figure, the motions, the full transformation group, the geometries and the spin geometry — and to the general articles of Part IV. -->
+<!-- the slot overview: what geometry the biquaternion carries; the sign of the norm and the signature as the organising data; the Cayley–Klein picture, in which a geometry is its group of motions; the map to the articles above — the figure, the discrete figures and their groups, the motions, the full transformation group, the geometries and the spin geometry — and to the general articles of Part IV. -->
 
 
 ## Split-Biquaternions

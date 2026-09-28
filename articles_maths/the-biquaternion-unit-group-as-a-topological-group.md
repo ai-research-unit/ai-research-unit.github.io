@@ -30,7 +30,7 @@ $$
 \mathbb{B}^\times_1=\{\tilde{Q}\in\mathbb{B}:N(\tilde{Q})=1\}
 $$
 
-is a closed subgroup of $\mathbb{B}^\times$ of real dimension $6$, the **norm-one group**. It is noncompact, and it deformation retracts onto the unit quaternions $S^3$ (§*The Retraction of the Norm-One Group onto Its Maximal Compact Subgroup*); hence it is simply connected, of the homotopy type of $S^3$, with $\pi_3\cong\mathbb{Z}$. Its own subgroups — the rotation subgroup $S^3$, the center $\{\pm e_0\}$, and the Lorentz group $\mathbb{B}^\times_1/\{\pm e_0\}$ — are the subject of *Biquaternion Lie Group and Exponential Structure*, §*The Subgroups and the Real Forms*.
+is a closed subgroup of $\mathbb{B}^\times$ of real dimension $6$, the **norm-one group**. It is noncompact, and it deformation retracts onto the unit quaternions $S^3$ (§*The Retraction of the Norm-One Group onto Its Maximal Compact Subgroup*); hence it is simply connected, of the homotopy type of $S^3$, with $\pi_3\cong\mathbb{Z}$. Its subgroups — the unit quaternions $S^3$ and the center $\{\pm e_0\}$ — are the subject of *Biquaternion Lie Group and Exponential Structure*, §*The Subgroups and the Real Forms*.
 
 **Two unit spheres.** There are two candidate "unit spheres" in $\mathbb{B}$, and only one of them is a group. The Euclidean sphere $\|\tilde{Q}\|_E=1$ is a genuine sphere $S^7$ but is not a group, since $\|\cdot\|_E$ is not multiplicative and it contains zero divisors (*Biquaternion Topology*, §*The Euclidean unit sphere*). The level set $N(\tilde{Q})=1$ is a group but is neither Euclidean nor compact. The condition that makes a level set of a form on $\mathbb{B}$ a subgroup is $N=1$, not $\|\tilde{Q}\|_E=1$.
 
@@ -70,19 +70,7 @@ Thus $\mathbb{B}^\times_1\simeq S^3$: it is connected and simply connected with 
 
 ## The Structure of the Maximal Compact Subgroup
 
-The unit quaternions form $S^3$; $S^3$ is compact, connected and simply connected, the double cover of the rotation group $SO(3)$.
-
-A unit quaternion $q\in S^3$ acts on the algebra by the sandwich
-$$
-\tilde{Q}\mapsto q\,\tilde{Q}\,q^{-1},
-$$
-and on the imaginary part this is the rotation of $\mathbb{R}^3$ through the angle $\theta$ when $q=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\hat{n}$. The angle appears **halved** in the rotor, since the rotation is applied once for the left factor and once for the right, and a full turn of the rotor, $q\mapsto-q$, is the identity rotation: the map $S^3\to SO(3)$ is two-to-one, the double cover $SU(2)\to SO(3)$ realised here by the maximal compact subgroup. The construction, with the versor and the sandwich action, is that of *Versors, Rotors and the Sandwich Action* of Part II.
-
-A **two-sided** action, $\tilde{Q}\mapsto u\,\tilde{Q}\,v$ with $u,v\in S^3$ independent, is a four-dimensional rotation: the pair $(u,v)$ acts on $\mathbb{B}\cong\mathbb{R}^8$ preserving the Euclidean form, with kernel $\{\pm(e_0,e_0)\}$, so the two-sided action realises
-$$
-(S^3\times S^3)/\{\pm e_0\}\cong SO(4)
-$$
-on the algebra; the one-sided action above is its diagonal restriction, and the Lorentzian motions are obtained from the complexification instead.
+The unit quaternions form $S^3$; $S^3$ is compact, connected and simply connected.
 
 Every unitary biquaternion $\tilde{U}$ is a scalar multiple of a unit quaternion: if $N(\tilde{U})=z\in S^1$ and $\zeta^2=z$, then $\tilde{A}=\zeta^{-1}\tilde{U}$ has $N(\tilde{A})=1$ and $\tilde{U}=\zeta\tilde{A}$. Hence
 

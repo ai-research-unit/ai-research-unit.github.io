@@ -217,9 +217,7 @@ The non-pure zero divisors are complex multiples of idempotents, and the idempot
 
 ## Distribution of the Zero Divisors
 
-A zero divisor is an element on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes, so which subspaces contain zero divisors is the algebraic question of where that polynomial vanishes. Algebraically: $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain none, since $\tilde{Q}\bar{\tilde{Q}}$ is a sum of squares of real coefficients there and vanishes only at $\tilde{Q}=0$; $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$ contain the nilpotents, on which it vanishes for nonzero $\tilde{Q}$; and $\mathbb{M}_+$ and $\mathbb{M}_-$ contain the null set of the Lorentzian form.
-
-The finer description — the sign of $\tilde{Q}\bar{\tilde{Q}}$ off the null set, the connected components of the invertible elements, the future and past timelike and the spacelike regions — reads a form as a form and is in *Biquaternion Norm and Invertibility*, §*Distribution of the Invertible Elements*.
+A zero divisor is an element on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes, so which subspaces contain zero divisors is the algebraic question of where that polynomial vanishes. Algebraically: $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain none, since $\tilde{Q}\bar{\tilde{Q}}$ is a sum of squares of real coefficients there and vanishes only at $\tilde{Q}=0$; $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$ contain the nilpotents, on which it vanishes for nonzero $\tilde{Q}$; and $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a null cone.
 
 ## Structure of the Zero Divisors
 
@@ -265,7 +263,7 @@ The set of zero divisors of $\mathbb{B}$ is the union of the set of pure zero di
 The two families have different dimensions as complex cones:
 
 - The **pure family** (the nilpotent cone) is a complex cone of complex dimension $2$ — equivalently, real dimension $4$ — since it is defined by one complex equation in the three complex coefficients $(Q_1, Q_2, Q_3)$.
-- The **non-pure family** is an open dense subset of the full zero divisor cone (the condition $Q_0 \neq 0$ is open, and the closure of the resulting family is the whole cone). Its complex dimension is $3$, equivalently real dimension $6$, matching that of the full zero divisor set.
+- The **non-pure family** is a complex cone of complex dimension $3$ — equivalently, real dimension $6$ — since it is defined by the single complex equation $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$ with $Q_0 \neq 0$, the full zero divisor cone with the pure family removed.
 
 ## The Zero Divisor Set
 
@@ -283,35 +281,16 @@ $$
 
 **Basic properties.**
 
-- That the zero set $\{\tilde{Q}\bar{\tilde{Q}} = 0\}$ is closed, and that $\mathcal{Z}$ is that set with the origin removed and therefore not closed, are topological statements and are in *Biquaternion Norm and Invertibility*. What is used here is only that $\mathcal{Z}$ is a cone away from the origin, next.
 - $\mathcal{Z}$ is a cone away from the origin: if $\tilde{Q} \in \mathcal{Z}$ and $\alpha \in \mathbb{C} \setminus \{0\}$, then $\alpha \tilde{Q} \in \mathcal{Z}$, because $(\alpha \tilde{Q})\overline{(\alpha \tilde{Q})} = \alpha^2 \tilde{Q}\bar{\tilde{Q}} = 0$.
 
 **Dimension.** The zero divisor set has **real dimension $6$** (equivalently, **complex dimension $3$** as a complex algebraic cone in $\mathbb{C}^4$). The reasoning is the following. The vanishing $\tilde{Q}\bar{\tilde{Q}} = 0$ is a single complex-valued polynomial equation in the four complex coefficients $(Q_0, Q_1, Q_2, Q_3)$, or equivalently two real equations in the eight real coordinates. The solution set of $\tilde{Q}\bar{\tilde{Q}} = 0$ is therefore a **complex hypersurface** in $\mathbb{C}^4$ of complex dimension $4 - 1 = 3$, hence real dimension $2 \cdot 3 = 6$.
-
-That the set is smooth away from the origin, and its differential structure, are analytic and topological statements and are in *Biquaternion Topology* and *Biquaternion Analysis*. Only the dimension count, which is algebraic, is used here.
-
-## The Factorisation of the Null Elements
-
-In the matrix realization $\mathbb{B}\cong M_2(\mathbb{C})$ the nonzero null elements are exactly the factorisable ones, each an outer product
-$$
-A=uv^{T},\qquad u=\binom{\alpha}{\beta}\neq0,\quad v=\binom{\gamma}{\delta}\neq0,
-$$
-determined by $(u,v)$ up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. Projectivising gives the **Segre embedding**
-$$
-s:\mathbb{P}^1\times\mathbb{P}^1\longrightarrow\mathbb{P}^3,\qquad ([u],[v])\mapsto[uv^{T}]=[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta].
-$$
-The factorisation condition, read in the coordinates $Q_0,\dots,Q_3$ through $A_{11}=Q_0-iQ_3$, $A_{22}=Q_0+iQ_3$, $A_{12}=-iQ_1-Q_2$, $A_{21}=-iQ_1+Q_2$, is
-$$
-(Q_0-iQ_3)(Q_0+iQ_3)=(-iQ_1-Q_2)(-iQ_1+Q_2)\iff Q_0^2+Q_3^2=-Q_1^2-Q_2^2,
-$$
-exactly $N(\tilde{Q})=0$. Hence the projectivised null cone $\mathbb{P}(\mathcal{N})=\{[\tilde{Q}]\in\mathbb{P}^3:N(\tilde{Q})=0\}$ is the image of the Segre embedding, the affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$, and the zero-divisor set is that cone with its apex removed. In particular a null biquaternion is parametrised by a pair of two-component spinors; the two rulings this parametrisation produces, and their reading as the two chiral spinor families, are in *Biquaternion Representation Theory* and *Biquaternion Null Quadric and Projective Geometry*.
 
 ## Summary
 
 The zero divisors of the biquaternion algebra are the nonzero elements on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes. They split into two families:
 
 - The **pure zero divisors**, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero nilpotents: their square is zero, and their annihilator contains themselves. They form a complex cone of real dimension $4$.
-- The **non-pure zero divisors**, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero complex multiples of the nontrivial idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form an open dense subset of the full zero divisor cone.
+- The **non-pure zero divisors**, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero complex multiples of the nontrivial idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form a complex cone of real dimension $6$.
 
 The idempotents that appear here — trivial, Hermitian and general, with their bijection with the roots of $-1$ — are classified in *Biquaternion Idempotents and Projections*.
 

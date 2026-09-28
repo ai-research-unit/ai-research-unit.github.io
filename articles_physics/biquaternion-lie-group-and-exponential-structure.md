@@ -30,7 +30,7 @@ $$
 
 whose elements need not be real quaternions.
 
-**Dimension.** The level set $N = 1$ has complex dimension $3$ and real dimension $6$, the biquaternion norm being a submersion wherever $N(\tilde{Q}) \neq 0$. The group $\mathbb{B}^\times_1$ is connected, simply connected and non-compact, and it is the **complexification of the unit quaternions**: the trace-free subalgebra satisfies $\mathrm{B}_0 = \mathrm{K} \otimes_{\mathbb{R}} \mathbb{C}$ for the compact rotation subalgebra $\mathrm{K}$ below, and $\mathbb{B}^\times_1$ complexifies the compact group $S^3$. Its centre is
+**Dimension.** The level set $N = 1$ has complex dimension $3$ and real dimension $6$, the biquaternion norm being a submersion wherever $N(\tilde{Q}) \neq 0$. The group $\mathbb{B}^\times_1$ is connected, simply connected and non-compact, and it is the **complexification of the unit quaternions**: the trace-free subalgebra satisfies $\mathrm{B}_0 = \mathrm{K} \otimes_{\mathbb{R}} \mathbb{C}$ for the compact subalgebra $\mathrm{K}$ below, and $\mathbb{B}^\times_1$ complexifies the compact group $S^3$. Its centre is
 
 $$
 Z(\mathbb{B}^\times_1) = \{\pm e_0\} \cong \mathbb{Z}/2.
@@ -38,23 +38,9 @@ $$
 
 ## The Subgroups and the Real Forms
 
-The relevant subgroups are: $\mathbb{B}^\times$, the nonzero-norm elements (complex dimension $4$, real dimension $8$); $\mathbb{B}^\times_1$, the unit-norm elements (complex dimension $3$, real dimension $6$); the rotation group $S^3$, the unit-norm real quaternions (real dimension $3$); and the centre $\mathbb{C}^\times e_0$ of nonzero scalars (complex dimension $1$, real dimension $2$).
+The relevant subgroups are: $\mathbb{B}^\times$, the nonzero-norm elements (complex dimension $4$, real dimension $8$); $\mathbb{B}^\times_1$, the unit-norm elements (complex dimension $3$, real dimension $6$); the unit quaternions $S^3$ (real dimension $3$); and the centre $\mathbb{C}^\times e_0$ of nonzero scalars (complex dimension $1$, real dimension $2$).
 
-$S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra the compact rotation subalgebra $\mathrm{K}$ of the section on the trace-free subalgebra. The centre $\{\pm e_0\}$ is discrete, and
-
-$$
-\mathbb{B}^\times_1/\{\pm e_0\} \cong SO^+(1,3),
-$$
-
-the proper orthochronous Lorentz group, of real dimension $6$. Hence $\mathbb{B}^\times_1$ is a two-sheeted cover of $SO^+(1,3)$ and, being simply connected, is its universal cover: it is the spin group of Lorentzian signature,
-
-$$
-\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathfrak{so}(1,3).
-$$
-
-The Lorentz action is rotor conjugation, $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ for $\tilde{\Lambda} \in \mathbb{B}^\times_1$, which preserves $\mathbb{M}_-$ and $N(\tilde{Q})$; its compact part is the rotation family and its non-compact part the hyperbolic rotations, with closed forms in the section on the exponential of a rotation and of a hyperbolic rotation of *Biquaternion Elementary Functions*.
-
-**Physical reading: the double cover.** The quotient by $\{\pm e_0\}$ is the statement that the two elements $\pm\tilde{\Lambda}$ define the same Lorentz transformation, and the simple connectivity of the norm-one group is the statement that it is the *universal* cover: a Lorentz transformation is implemented by a biquaternion only up to sign, and a closed path in the Lorentz group that winds once lifts to a path joining $\tilde{\Lambda}$ to $-\tilde{\Lambda}$. This is the spinorial double cover, the algebraic origin of spin, and it is the reason the framework's spinors are elements of the minimal left ideals rather than vectors — the module-theoretic face of it is *Modules over the Biquaternion Algebra*, the geometric face *Biquaternion Spin Geometry*.
+$S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra the compact subalgebra $\mathrm{K}$ of *Biquaternion Lie Algebra*, §*The Trace-Free Subalgebra*. The center $\{\pm e_0\}$ is discrete, so the quotient $\mathbb{B}^\times_1/\{\pm e_0\}$ is a Lie group of real dimension $6$.
 
 ## The Unitary Subgroup and the Defining Module
 
@@ -70,7 +56,7 @@ $$
 U(2)\cap SL(2,\mathbb{C})=S^3=SU(2),
 $$
 
-consistently with the rotation group being the unitary part of the norm-one group. Every element of $U(2)$ is the product of a unit quaternion and a unit complex scalar, and the two factors meet in $\{\pm e_0\}$:
+consistently with the unit quaternions being the unitary part of the norm-one group. Every element of $U(2)$ is the product of a unit quaternion and a unit complex scalar, and the two factors meet in $\{\pm e_0\}$:
 
 $$
 U(2)=S^3\cdot U(1)\cong (SU(2)\times U(1))/\{\pm(1,1)\}.
@@ -84,11 +70,11 @@ $$
 
 ## Surjectivity and Its Failure for the Subgroups
 
-The exponential of the full unit group is surjective (the section on the logarithm of *Biquaternion Elementary Functions*), but the two distinguished subgroups behave differently.
+The exponential of the full unit group is surjective (*Biquaternion Elementary Functions*, §*The Logarithm*), but the two distinguished subgroups behave differently.
 
-**Rotations: surjective.** Every unit quaternion is $\cos\theta\, e_0 + \sin\theta\,\hat{n} = \exp(\theta\hat{n})$, so $\exp : \mathrm{K} \to S^3$ is surjective; this is the general fact that a connected compact Lie group has a surjective exponential map.
+**The compact subgroup: surjective.** Every unit quaternion is $\cos\theta\, e_0 + \sin\theta\,\hat{n} = \exp(\theta\hat{n})$, so $\exp : \mathrm{K} \to S^3$ is surjective; this is the general fact that a connected compact Lie group has a surjective exponential map.
 
-**Lorentz group: not surjective.** The exponential $\exp : \mathrm{B}_0 \to \mathbb{B}^\times_1$ is **not** surjective: $\mathbb{B}^\times_1$ is not exponential. The element of $\mathbb{B}^\times_1$ with scalar part $-1$ and non-semi-simple behaviour, corresponding to the non-diagonalisable norm-one element with the repeated eigenvalue $-1$, is
+**The full group: not surjective.** The exponential $\exp : \mathrm{B}_0 \to \mathbb{B}^\times_1$ is **not** surjective: $\mathbb{B}^\times_1$ is not exponential. The element of $\mathbb{B}^\times_1$ with scalar part $-1$ and non-semi-simple behaviour, corresponding to the non-diagonalisable norm-one element with the repeated eigenvalue $-1$, is
 
 $$
 \tilde{Q} = -e_0 + \frac{i}{2}e_1 - \frac{1}{2}e_2, \qquad N(\tilde{Q}) = 1 + \left(\frac{i}{2}\right)^2 + \left(-\frac{1}{2}\right)^2 = 1.
@@ -106,7 +92,7 @@ The group of units is an open subset of $\mathbb{B}$, hence a smooth real manifo
 
 ## The Correspondence with the Lie Algebra
 
-The exponential is the correspondence between the group and the algebra. Its differential at the identity is the identity, so it is a local diffeomorphism onto a neighbourhood of $e_0$, and the inverse function theorem makes it a chart of $\mathbb{B}^\times$ near the identity; the tangent space at the identity is the whole algebra, since $\mathbb{B}^\times$ is open, with the commutator as bracket (*Biquaternion Lie Algebra*). The Baker–Campbell–Hausdorff series of the algebra converges near the origin and reproduces the group law there, and the group law $\exp(a)\exp(b)$ against $\exp(a+b)$ of *Biquaternion Elementary Functions* is its first two terms. The subgroups correspond to the subalgebras: the rotation subalgebra $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ to $S^3$, the trace-free part $\mathrm{B}_0$ to the norm-one group $\mathbb{B}^\times_1$, and the centre $\mathbb{C}e_0$ to $\mathbb{C}^\times e_0$.
+The exponential is the correspondence between the group and the algebra. Its differential at the identity is the identity, so it is a local diffeomorphism onto a neighbourhood of $e_0$, and the inverse function theorem makes it a chart of $\mathbb{B}^\times$ near the identity; the tangent space at the identity is the whole algebra, since $\mathbb{B}^\times$ is open, with the commutator as bracket (*Biquaternion Lie Algebra*). The Baker–Campbell–Hausdorff series of the algebra converges near the origin and reproduces the group law there, and the group law $\exp(a)\exp(b)$ against $\exp(a+b)$ of *Biquaternion Elementary Functions* is its first two terms. The subgroups correspond to the subalgebras: the compact subalgebra $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ to $S^3$, the trace-free part $\mathrm{B}_0$ to the norm-one group $\mathbb{B}^\times_1$, and the centre $\mathbb{C}e_0$ to $\mathbb{C}^\times e_0$.
 
 **Physical reading: the generator as an infinitesimal motion.** The correspondence is the statement that an infinitesimal Lorentz transformation — an element of $\mathfrak{so}(1,3)$ — exponentiates to a finite one, and the Baker–Campbell–Hausdorff series is the bookkeeping of how the composition of two motions differs from the motion of the sum. The commutator term is the algebraic origin of the Wigner rotation of two non-collinear boosts, the worked case of *Biquaternion Rotations and Lorentz Transformations* and *The Operator Representation of Biquaternions*.
 
@@ -114,9 +100,9 @@ The exponential is the correspondence between the group and the algebra. Its dif
 
 The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{q\in\mathbb{H}_{\mathbb{B}}:N(q)=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_0\}$.
 
-The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the rotation group $S^3$ and the centre $\mathbb{C}^\times e_0$; the maximal compact subgroup of $\mathbb{B}^\times_1$ is $S^3$, and $\mathbb{B}^\times_1/\{\pm e_0\}\cong SO^+(1,3)$, so $\mathbb{B}^\times_1\cong Spin(1,3)$ is the universal cover of the proper orthochronous Lorentz group. Over the reals these are the real forms of the group, and the correspondence with the Lie algebra attaches each subgroup to its subalgebra: $S^3$ to $\mathrm{K}$, $\mathbb{B}^\times_1$ to $\mathrm{B}_0$, and $\mathbb{C}^\times e_0$ to the centre.
+The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the unit quaternions $S^3$ and the centre $\mathbb{C}^\times e_0$; the maximal compact subgroup of $\mathbb{B}^\times_1$ is $S^3$, and the quotient by the centre $\mathbb{B}^\times_1/\{\pm e_0\}$ is a Lie group of real dimension $6$. Over the reals these are the real forms of the group, and the correspondence with the Lie algebra attaches each subgroup to its subalgebra: $S^3$ to $\mathrm{K}$, $\mathbb{B}^\times_1$ to $\mathrm{B}_0$, and $\mathbb{C}^\times e_0$ to the centre.
 
-Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connected compact group, and not surjective onto $\mathbb{B}^\times_1$: the Lorentz group is not exponential, the obstruction a non-semi-simple element with the repeated eigenvalue $-1$, and the same obstruction occurs in $SL(2,\mathbb{R})$. Physically this is the statement that not every proper orthochronous motion is a finite rotation about, or boost along, a single axis: the exceptional elements are the infinite-rapidity, lightlike limits. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.
+Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connected compact group, and not surjective onto $\mathbb{B}^\times_1$: the norm-one group is not exponential, the obstruction a non-semi-simple element with the repeated eigenvalue $-1$, and the same obstruction occurs in $SL(2,\mathbb{R})$. Physically this is the statement that not every proper orthochronous motion is a finite rotation about, or boost along, a single axis: the exceptional elements are the infinite-rapidity, lightlike limits. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.
 
 ## Summary of Notation
 
@@ -124,14 +110,12 @@ Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connect
 |---|---|
 | $\mathbb{B}^\times$ | Group of units; real Lie group of real dimension $8$ |
 | $\exp$ | Exponential map; closed form in *Biquaternion Elementary Functions* |
-| $S^3=\{q\in\mathbb{H}_{\mathbb{B}}:N(q)=1\}$ | Unit quaternions; compact subgroup of real dimension $3$; the spatial rotations |
+| $S^3=\{q\in\mathbb{H}_{\mathbb{B}}:N(q)=1\}$ | Unit quaternions; compact subgroup of real dimension $3$ |
 | $\mathbb{B}^\times_1=\{N=1\}$ | Norm-one group; complexification of $S^3$; real dimension $6$ |
-| $\{\pm e_0\}$ | Centre of $\mathbb{B}^\times_1$; $\mathbb{B}^\times_1/\{\pm e_0\}\cong SO^+(1,3)$ |
-| $\mathbb{B}^\times_1\cong Spin(1,3)$ | The norm-one group as the spin group of Lorentzian signature; the double cover of the Lorentz group |
-| $\mathrm{B}_0\cong\mathfrak{so}(1,3)$ | Lie algebra of $\mathbb{B}^\times_1$; trace-free part |
-| $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Lie algebra of $S^3$; compact rotation subalgebra |
+| $\{\pm e_0\}$ | Centre of $\mathbb{B}^\times_1$; the quotient is a Lie group of real dimension $6$ |
+| $\mathrm{B}_0$ | Lie algebra of $\mathbb{B}^\times_1$; trace-free part |
+| $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Lie algebra of $S^3$; compact subalgebra |
 | $\mathbb{C}^\times e_0$ | Centre of $\mathbb{B}^\times$; Lie algebra $\mathbb{C}e_0$; the global phase |
-| $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Lorentz action by rotor conjugation |
 
 ## Further Reading
 

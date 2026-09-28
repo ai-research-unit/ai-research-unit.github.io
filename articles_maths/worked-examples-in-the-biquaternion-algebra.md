@@ -101,16 +101,6 @@ Both $a$ and $b$ have two nonzero complex coefficients, $a = e_0 + ie_3$ and $b 
 
 The computations show all the structural features asserted in *Biquaternion Algebra ($\mathbb{B}$)* on a single element and on the standard idempotents: the six subspaces split the element into its centre, vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian parts; the four conjugations act as listed; and the two primitive idempotents produce the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into minimal left ideals.
 
-## The Conjugation Involution and a Rotation Derivation
-
-Complex conjugation $c(\tilde{Q})=\tilde{Q}^{*}$ is an $\mathbb{R}$-algebra automorphism with $c(e_k)=e_k$ for $k=0,1,2,3$ and $c(i)=-i$; it fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise, negates the scalar imaginary, satisfies $c^2=\operatorname{id}$, preserves the product, and is conjugate-linear over $\mathbb{C}$. It is **not** inner, since inner automorphisms fix the centre pointwise whereas $c(i)=-i$; it represents the nontrivial coset of $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ in $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})$ (*Biquaternion Automorphisms and Derivations*).
-
-The derivation $D=D_3=\tfrac12\operatorname{ad}_{e_3}$ has $D(e_1)=e_2$ and $D(e_2)=-e_1$, and its exponential acts by
-$$
-\exp(tD)(e_1)=\cos t\,e_1+\sin t\,e_2,
-$$
-as one checks by summing the series. Equivalently $e^{te_3/2}=\cos(t/2)+\sin(t/2)e_3$, and conjugation by this unit quaternion rotates the $e_1$-$e_2$ plane, matching $\exp(tD)=\operatorname{Ad}_{e^{te_3/2}}$. Every element of $\operatorname{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ gives an inner derivation, and $\operatorname{ad}_a$ depends only on $a$ modulo the centre $\mathbb{C}_{\mathbb{B}}$; for instance $a=e_1+ie_2$ gives a derivation that is not a scalar multiple of any $D_k$ (*Biquaternion Lie Algebra*).
-
 ## Summary
 
 The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2 = -1$. On the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat} = -\dagger$ act on it as listed.

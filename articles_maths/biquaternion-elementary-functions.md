@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and to compute them in closed form. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials of the rotation and hyperbolic-rotation directions. Its Lie-group consequences — the group of units, the norm-one group, and the Lorentz group — are in *Biquaternion Lie Group and Exponential Structure*.
+This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and to compute them in closed form. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the trace-free part. Its Lie-group consequences — the group of units and the norm-one group — are in *Biquaternion Lie Group and Exponential Structure*.
 
 The treatment is purely mathematical. No physics is invoked. No examples are given, except for the explicit counterexamples that establish the failure of the addition formulas in the non-commutative setting. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, and its four conjugations.
 
@@ -245,27 +245,27 @@ the eigenvalues then being $2\pi i(k\pm j)/2$. If $B = 0$ but $\mathbf{Q} \neq 0
 
 **On the phrase "eigenvalues differ by a multiple of $2\pi i$".** The condition implies such a difference, but the difference alone is weaker: $\tilde{Q} = e_0$ has equal eigenvalues yet $\exp(e_0) \neq e_0$. Each eigenvalue must be a multiple of $2\pi i$.
 
-### The Exponential of a Rotation and of a Hyperbolic Rotation
+### The Exponential in the Two Real Directions
 
 Let $\hat{n}$ be a real unit vector part, so that $\hat{n}^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat{n}$ and the vector directions $\psi\, i\hat{n}$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *Biquaternion Lie Algebra*.
 
-**Rotations (the bivector directions).** For real $\theta$,
+**The bivector directions.** For real $\theta$,
 
 $$
 \exp(\theta\hat{n}) = \cos\theta\, e_0 + \sin\theta\, \hat{n},
 $$
 
-a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. It rotates the vector part: conjugation by $\exp(\theta\hat{n})$ rotates any real vector $\mathbf{v}$ about the axis $\hat{n}$ through $2\theta$, the double-cover relation $S^3 \to SO(3)$. The family $\theta \mapsto \exp(\theta\hat{n})$ has period $2\pi$ in $S^3$, since $\exp(2\pi\hat{n}) = e_0$; the induced rotation of the vector part has angle $2\theta$, so it is the identity already at $\theta = \pi$, where $\exp(\pi\hat{n}) = -e_0$, while the spinor returns to $e_0$ only after a $4\pi$ rotation.
+a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\hat{n}) = e_0$, and at the half-period $\exp(\pi\hat{n}) = -e_0$.
 
-**Hyperbolic rotations (the vector directions).** With $(i\hat{n})^2 = +e_0$ and rapidity $\psi \in \mathbb{R}$,
+**The vector directions.** With $(i\hat{n})^2 = +e_0$ and real parameter $\psi \in \mathbb{R}$,
 
 $$
 \exp(\psi\, i\hat{n}) = \cosh\psi\, e_0 + \sinh\psi\, i\hat{n}.
 $$
 
-This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the rotation family it is not periodic and is unbounded as $\psi \to \pm\infty$; it is the rotor of a Lorentz transformation along $\hat{n}$ with rapidity $\psi$. The set of hyperbolic rotations is not a subgroup: the product of two hyperbolic rotations in non-parallel directions is a hyperbolic rotation followed by a rotation.
+This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the bivector family it is not periodic and is unbounded as $\psi \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.
 
-**Comparison.** A general exponent is $\tilde{Q} = q + iq'$ with $q, q'$ real vector parts; the rotation and hyperbolic families commute only when $q$ and $q'$ are parallel, since $[q, iq'] = 2i\,(q \times q')$, and in general the closed form of §*The Exponential* with $Q_0 = 0$ mixes the two behaviours.
+**Comparison.** A general exponent is $\tilde{Q} = q + iq'$ with $q, q'$ real vector parts; the two families commute only when $q$ and $q'$ are parallel, since $[q, iq'] = 2i\,(q \times q')$, and in general the closed form of §*The Exponential* with $Q_0 = 0$ mixes the two families.
 
 ## The Trigonometric and Hyperbolic Functions
 
